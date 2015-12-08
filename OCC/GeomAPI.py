@@ -128,8 +128,9 @@ import OCC.AppCont
 import OCC.AppParCurves
 class geomapi(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
+    def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def To2d(*args) -> "Handle_Geom2d_Curve" :
+    def To2d(*args):
         """
         * To intersect a curve and a surface. This function builds (in the parametric space of the plane P) a 2D curve equivalent to the 3D curve C. The 3D curve C is considered to be located in the plane P. Warning The 3D curve C must be of one of the following types: - a line - a circle - an ellipse - a hyperbola - a parabola - a Bezier curve - a BSpline curve Exceptions Standard_NoSuchObject if C is not a defined type curve.
 
@@ -143,7 +144,7 @@ class geomapi(object):
         return _GeomAPI.geomapi_To2d(*args)
 
     To2d = staticmethod(To2d)
-    def To3d(*args) -> "Handle_Geom_Curve" :
+    def To3d(*args):
         """
         * Builds a 3D curve equivalent to the 2D curve C described in the parametric space defined by the local coordinate system of plane P. The resulting 3D curve is of the same nature as that of the curve C.
 
@@ -157,8 +158,6 @@ class geomapi(object):
         return _GeomAPI.geomapi_To3d(*args)
 
     To3d = staticmethod(To3d)
-    def __init__(self): 
-        _GeomAPI.geomapi_swiginit(self,_GeomAPI.new_geomapi())
     def __del__(self):
     	try:
     		self.thisown = False
@@ -171,7 +170,7 @@ geomapi._kill_pointed = new_instancemethod(_GeomAPI.geomapi__kill_pointed,None,g
 geomapi_swigregister = _GeomAPI.geomapi_swigregister
 geomapi_swigregister(geomapi)
 
-def geomapi_To2d(*args) -> "Handle_Geom2d_Curve" :
+def geomapi_To2d(*args):
   """
     * To intersect a curve and a surface. This function builds (in the parametric space of the plane P) a 2D curve equivalent to the 3D curve C. The 3D curve C is considered to be located in the plane P. Warning The 3D curve C must be of one of the following types: - a line - a circle - an ellipse - a hyperbola - a parabola - a Bezier curve - a BSpline curve Exceptions Standard_NoSuchObject if C is not a defined type curve.
 
@@ -184,7 +183,7 @@ def geomapi_To2d(*args) -> "Handle_Geom2d_Curve" :
     """
   return _GeomAPI.geomapi_To2d(*args)
 
-def geomapi_To3d(*args) -> "Handle_Geom_Curve" :
+def geomapi_To3d(*args):
   """
     * Builds a 3D curve equivalent to the 2D curve C described in the parametric space defined by the local coordinate system of plane P. The resulting 3D curve is of the same nature as that of the curve C.
 
@@ -232,7 +231,7 @@ class GeomAPI_ExtremaCurveCurve(object):
 
         """
         _GeomAPI.GeomAPI_ExtremaCurveCurve_swiginit(self,_GeomAPI.new_GeomAPI_ExtremaCurveCurve(*args))
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
         * Initializes this algorithm with the given arguments and computes the extrema between the curves C1 and C2
 
@@ -261,21 +260,21 @@ class GeomAPI_ExtremaCurveCurve(object):
         """
         return _GeomAPI.GeomAPI_ExtremaCurveCurve_Init(self, *args)
 
-    def NbExtrema(self, *args) -> "Standard_Integer" :
+    def NbExtrema(self):
         """
         * Returns the number of extrema computed by this algorithm. Note: if this algorithm fails, NbExtrema returns 0.
 
         :rtype: int
 
         """
-        return _GeomAPI.GeomAPI_ExtremaCurveCurve_NbExtrema(self, *args)
+        return _GeomAPI.GeomAPI_ExtremaCurveCurve_NbExtrema(self)
 
-    def Points(self, *args) -> "void" :
+    def Points(self, *args):
         """
         * Returns the points P1 on the first curve and P2 on the second curve, which are the ends of the extremum of index Index computed by this algorithm. Exceptions Standard_OutOfRange if Index is not in the range [ 1,NbExtrema ], where NbExtrema is the number of extrema computed by this algorithm.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param P1:
         :type P1: gp_Pnt
         :param P2:
@@ -285,12 +284,12 @@ class GeomAPI_ExtremaCurveCurve(object):
         """
         return _GeomAPI.GeomAPI_ExtremaCurveCurve_Points(self, *args)
 
-    def Parameters(self, *args) -> "void" :
+    def Parameters(self, *args):
         """
         * Returns the parameters U1 of the point on the first curve and U2 of the point on the second curve, which are the ends of the extremum of index Index computed by this algorithm. Exceptions Standard_OutOfRange if Index is not in the range [ 1,NbExtrema ], where NbExtrema is the number of extrema computed by this algorithm.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param U1:
         :type U1: Quantity_Parameter &
         :param U2:
@@ -300,18 +299,18 @@ class GeomAPI_ExtremaCurveCurve(object):
         """
         return _GeomAPI.GeomAPI_ExtremaCurveCurve_Parameters(self, *args)
 
-    def Distance(self, *args) -> "Quantity_Length" :
+    def Distance(self, *args):
         """
         * Computes the distance between the end points of the extremum of index Index computed by this algorithm. Exceptions Standard_OutOfRange if Index is not in the range [ 1,NbExtrema ], where NbExtrema is the number of extrema computed by this algorithm.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Quantity_Length
 
         """
         return _GeomAPI.GeomAPI_ExtremaCurveCurve_Distance(self, *args)
 
-    def NearestPoints(self, *args) -> "void" :
+    def NearestPoints(self, *args):
         """
         * Returns the points P1 on the first curve and P2 on the second curve, which are the ends of the shortest extremum computed by this algorithm. Exceptions StdFail_NotDone if this algorithm fails.
 
@@ -324,7 +323,7 @@ class GeomAPI_ExtremaCurveCurve(object):
         """
         return _GeomAPI.GeomAPI_ExtremaCurveCurve_NearestPoints(self, *args)
 
-    def LowerDistanceParameters(self, *args) -> "void" :
+    def LowerDistanceParameters(self):
         """
         * Returns the parameters U1 of the point on the first curve and U2 of the point on the second curve, which are the ends of the shortest extremum computed by this algorithm. Exceptions StdFail_NotDone if this algorithm fails.
 
@@ -335,27 +334,27 @@ class GeomAPI_ExtremaCurveCurve(object):
         :rtype: None
 
         """
-        return _GeomAPI.GeomAPI_ExtremaCurveCurve_LowerDistanceParameters(self, *args)
+        return _GeomAPI.GeomAPI_ExtremaCurveCurve_LowerDistanceParameters(self)
 
-    def LowerDistance(self, *args) -> "Quantity_Length" :
+    def LowerDistance(self):
         """
         * Computes the distance between the end points of the shortest extremum computed by this algorithm. Exceptions StdFail_NotDone if this algorithm fails.
 
         :rtype: Quantity_Length
 
         """
-        return _GeomAPI.GeomAPI_ExtremaCurveCurve_LowerDistance(self, *args)
+        return _GeomAPI.GeomAPI_ExtremaCurveCurve_LowerDistance(self)
 
-    def Extrema(self, *args) -> "Extrema_ExtCC const &" :
+    def Extrema(self):
         """
         * return the algorithmic object from Extrema
 
         :rtype: Extrema_ExtCC
 
         """
-        return _GeomAPI.GeomAPI_ExtremaCurveCurve_Extrema(self, *args)
+        return _GeomAPI.GeomAPI_ExtremaCurveCurve_Extrema(self)
 
-    def TotalNearestPoints(self, *args) -> "Standard_Boolean" :
+    def TotalNearestPoints(self, *args):
         """
         * set in <P1> and <P2> the couple solution points such a the distance [P1,P2] is the minimum. taking in account extremity points of curves.
 
@@ -368,7 +367,7 @@ class GeomAPI_ExtremaCurveCurve(object):
         """
         return _GeomAPI.GeomAPI_ExtremaCurveCurve_TotalNearestPoints(self, *args)
 
-    def TotalLowerDistanceParameters(self, *args) -> "Standard_Boolean" :
+    def TotalLowerDistanceParameters(self):
         """
         * set in <U1> and <U2> the parameters of the couple solution points which represents the total nearest solution.
 
@@ -379,16 +378,16 @@ class GeomAPI_ExtremaCurveCurve(object):
         :rtype: bool
 
         """
-        return _GeomAPI.GeomAPI_ExtremaCurveCurve_TotalLowerDistanceParameters(self, *args)
+        return _GeomAPI.GeomAPI_ExtremaCurveCurve_TotalLowerDistanceParameters(self)
 
-    def TotalLowerDistance(self, *args) -> "Quantity_Length" :
+    def TotalLowerDistance(self):
         """
         * return the distance of the total nearest couple solution point. if <myExtCC> is not done
 
         :rtype: Quantity_Length
 
         """
-        return _GeomAPI.GeomAPI_ExtremaCurveCurve_TotalLowerDistance(self, *args)
+        return _GeomAPI.GeomAPI_ExtremaCurveCurve_TotalLowerDistance(self)
 
     def __del__(self):
     	try:
@@ -453,7 +452,7 @@ class GeomAPI_ExtremaCurveSurface(object):
 
         """
         _GeomAPI.GeomAPI_ExtremaCurveSurface_swiginit(self,_GeomAPI.new_GeomAPI_ExtremaCurveSurface(*args))
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
         * Computes the extrema distances between the curve <C> and the surface <S>.
 
@@ -486,21 +485,21 @@ class GeomAPI_ExtremaCurveSurface(object):
         """
         return _GeomAPI.GeomAPI_ExtremaCurveSurface_Init(self, *args)
 
-    def NbExtrema(self, *args) -> "Standard_Integer" :
+    def NbExtrema(self):
         """
         * Returns the number of extrema computed by this algorithm. Note: if this algorithm fails, NbExtrema returns 0.
 
         :rtype: int
 
         """
-        return _GeomAPI.GeomAPI_ExtremaCurveSurface_NbExtrema(self, *args)
+        return _GeomAPI.GeomAPI_ExtremaCurveSurface_NbExtrema(self)
 
-    def Points(self, *args) -> "void" :
+    def Points(self, *args):
         """
         * Returns the points P1 on the curve and P2 on the surface, which are the ends of the extremum of index Index computed by this algorithm. Exceptions Standard_OutOfRange if Index is not in the range [ 1,NbExtrema ], where NbExtrema is the number of extrema computed by this algorithm.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param P1:
         :type P1: gp_Pnt
         :param P2:
@@ -510,12 +509,12 @@ class GeomAPI_ExtremaCurveSurface(object):
         """
         return _GeomAPI.GeomAPI_ExtremaCurveSurface_Points(self, *args)
 
-    def Parameters(self, *args) -> "void" :
+    def Parameters(self, *args):
         """
         * Returns the parameters W of the point on the curve, and (U,V) of the point on the surface, which are the ends of the extremum of index Index computed by this algorithm. Exceptions Standard_OutOfRange if Index is not in the range [ 1,NbExtrema ], where NbExtrema is the number of extrema computed by this algorithm.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param W:
         :type W: Quantity_Parameter &
         :param U:
@@ -527,18 +526,18 @@ class GeomAPI_ExtremaCurveSurface(object):
         """
         return _GeomAPI.GeomAPI_ExtremaCurveSurface_Parameters(self, *args)
 
-    def Distance(self, *args) -> "Quantity_Length" :
+    def Distance(self, *args):
         """
         * Computes the distance between the end points of the extremum of index Index computed by this algorithm. Exceptions Standard_OutOfRange if index is not in the range [ 1,NbExtrema ], where NbExtrema is the number of extrema computed by this algorithm.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Quantity_Length
 
         """
         return _GeomAPI.GeomAPI_ExtremaCurveSurface_Distance(self, *args)
 
-    def NearestPoints(self, *args) -> "void" :
+    def NearestPoints(self, *args):
         """
         * Returns the points PC on the curve and PS on the surface, which are the ends of the shortest extremum computed by this algorithm. Exceptions - StdFail_NotDone if this algorithm fails.
 
@@ -551,7 +550,7 @@ class GeomAPI_ExtremaCurveSurface(object):
         """
         return _GeomAPI.GeomAPI_ExtremaCurveSurface_NearestPoints(self, *args)
 
-    def LowerDistanceParameters(self, *args) -> "void" :
+    def LowerDistanceParameters(self):
         """
         * Returns the parameters W of the point on the curve and (U,V) of the point on the surface, which are the ends of the shortest extremum computed by this algorithm. Exceptions - StdFail_NotDone if this algorithm fails.
 
@@ -564,25 +563,25 @@ class GeomAPI_ExtremaCurveSurface(object):
         :rtype: None
 
         """
-        return _GeomAPI.GeomAPI_ExtremaCurveSurface_LowerDistanceParameters(self, *args)
+        return _GeomAPI.GeomAPI_ExtremaCurveSurface_LowerDistanceParameters(self)
 
-    def LowerDistance(self, *args) -> "Quantity_Length" :
+    def LowerDistance(self):
         """
         * Computes the distance between the end points of the shortest extremum computed by this algorithm. Exceptions - StdFail_NotDone if this algorithm fails.
 
         :rtype: Quantity_Length
 
         """
-        return _GeomAPI.GeomAPI_ExtremaCurveSurface_LowerDistance(self, *args)
+        return _GeomAPI.GeomAPI_ExtremaCurveSurface_LowerDistance(self)
 
-    def Extrema(self, *args) -> "Extrema_ExtCS const &" :
+    def Extrema(self):
         """
         * Missing detailed docstringic object from Extrema
 
         :rtype: Extrema_ExtCS
 
         """
-        return _GeomAPI.GeomAPI_ExtremaCurveSurface_Extrema(self, *args)
+        return _GeomAPI.GeomAPI_ExtremaCurveSurface_Extrema(self)
 
     def __del__(self):
     	try:
@@ -648,7 +647,7 @@ class GeomAPI_ExtremaSurfaceSurface(object):
 
         """
         _GeomAPI.GeomAPI_ExtremaSurfaceSurface_swiginit(self,_GeomAPI.new_GeomAPI_ExtremaSurfaceSurface(*args))
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
         * Initializes this algorithm with the given arguments and computes the extrema distances between the surfaces <S1> and <S2>
 
@@ -685,21 +684,21 @@ class GeomAPI_ExtremaSurfaceSurface(object):
         """
         return _GeomAPI.GeomAPI_ExtremaSurfaceSurface_Init(self, *args)
 
-    def NbExtrema(self, *args) -> "Standard_Integer" :
+    def NbExtrema(self):
         """
         * Returns the number of extrema computed by this algorithm. Note: if this algorithm fails, NbExtrema returns 0.
 
         :rtype: int
 
         """
-        return _GeomAPI.GeomAPI_ExtremaSurfaceSurface_NbExtrema(self, *args)
+        return _GeomAPI.GeomAPI_ExtremaSurfaceSurface_NbExtrema(self)
 
-    def Points(self, *args) -> "void" :
+    def Points(self, *args):
         """
         * Returns the points P1 on the first surface and P2 on the second surface, which are the ends of the extremum of index Index computed by this algorithm. Exceptions Standard_OutOfRange if Index is not in the range [ 1,NbExtrema ], where NbExtrema is the number of extrema computed by this algorithm.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param P1:
         :type P1: gp_Pnt
         :param P2:
@@ -709,12 +708,12 @@ class GeomAPI_ExtremaSurfaceSurface(object):
         """
         return _GeomAPI.GeomAPI_ExtremaSurfaceSurface_Points(self, *args)
 
-    def Parameters(self, *args) -> "void" :
+    def Parameters(self, *args):
         """
         * Returns the parameters (U1,V1) of the point on the first surface, and (U2,V2) of the point on the second surface, which are the ends of the extremum of index Index computed by this algorithm. Exceptions Standard_OutOfRange if Index is not in the range [ 1,NbExtrema ], where NbExtrema is the number of extrema computed by this algorithm.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param U1:
         :type U1: Quantity_Parameter &
         :param V1:
@@ -728,18 +727,18 @@ class GeomAPI_ExtremaSurfaceSurface(object):
         """
         return _GeomAPI.GeomAPI_ExtremaSurfaceSurface_Parameters(self, *args)
 
-    def Distance(self, *args) -> "Quantity_Length" :
+    def Distance(self, *args):
         """
         * Computes the distance between the end points of the extremum of index Index computed by this algorithm. Exceptions Standard_OutOfRange if Index is not in the range [ 1,NbExtrema ], where NbExtrema is the number of extrema computed by this algorithm.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Quantity_Length
 
         """
         return _GeomAPI.GeomAPI_ExtremaSurfaceSurface_Distance(self, *args)
 
-    def NearestPoints(self, *args) -> "void" :
+    def NearestPoints(self, *args):
         """
         * Returns the points P1 on the first surface and P2 on the second surface, which are the ends of the shortest extremum computed by this algorithm. Exceptions StdFail_NotDone if this algorithm fails.
 
@@ -752,7 +751,7 @@ class GeomAPI_ExtremaSurfaceSurface(object):
         """
         return _GeomAPI.GeomAPI_ExtremaSurfaceSurface_NearestPoints(self, *args)
 
-    def LowerDistanceParameters(self, *args) -> "void" :
+    def LowerDistanceParameters(self):
         """
         * Returns the parameters (U1,V1) of the point on the first surface and (U2,V2) of the point on the second surface, which are the ends of the shortest extremum computed by this algorithm. Exceptions - StdFail_NotDone if this algorithm fails.
 
@@ -767,25 +766,25 @@ class GeomAPI_ExtremaSurfaceSurface(object):
         :rtype: None
 
         """
-        return _GeomAPI.GeomAPI_ExtremaSurfaceSurface_LowerDistanceParameters(self, *args)
+        return _GeomAPI.GeomAPI_ExtremaSurfaceSurface_LowerDistanceParameters(self)
 
-    def LowerDistance(self, *args) -> "Quantity_Length" :
+    def LowerDistance(self):
         """
         * Computes the distance between the end points of the shortest extremum computed by this algorithm. Exceptions StdFail_NotDone if this algorithm fails.
 
         :rtype: Quantity_Length
 
         """
-        return _GeomAPI.GeomAPI_ExtremaSurfaceSurface_LowerDistance(self, *args)
+        return _GeomAPI.GeomAPI_ExtremaSurfaceSurface_LowerDistance(self)
 
-    def Extrema(self, *args) -> "Extrema_ExtSS const &" :
+    def Extrema(self):
         """
         * return the algorithmic object from Extrema
 
         :rtype: Extrema_ExtSS
 
         """
-        return _GeomAPI.GeomAPI_ExtremaSurfaceSurface_Extrema(self, *args)
+        return _GeomAPI.GeomAPI_ExtremaSurfaceSurface_Extrema(self)
 
     def __del__(self):
     	try:
@@ -827,7 +826,7 @@ class GeomAPI_IntCS(object):
 
         """
         _GeomAPI.GeomAPI_IntCS_swiginit(self,_GeomAPI.new_GeomAPI_IntCS(*args))
-    def Perform(self, *args) -> "void" :
+    def Perform(self, *args):
         """
         * This function Initializes an algorithm with the curve C and the surface S and computes the intersections between C and S. Warning Use function IsDone to verify that the intersections are computed successfully.
 
@@ -840,61 +839,61 @@ class GeomAPI_IntCS(object):
         """
         return _GeomAPI.GeomAPI_IntCS_Perform(self, *args)
 
-    def IsDone(self, *args) -> "Standard_Boolean" :
+    def IsDone(self):
         """
         * Returns true if the intersections are successfully computed.
 
         :rtype: bool
 
         """
-        return _GeomAPI.GeomAPI_IntCS_IsDone(self, *args)
+        return _GeomAPI.GeomAPI_IntCS_IsDone(self)
 
-    def NbPoints(self, *args) -> "Standard_Integer" :
+    def NbPoints(self):
         """
         * Returns the number of Intersection Points if IsDone returns True. else NotDone is raised.
 
         :rtype: int
 
         """
-        return _GeomAPI.GeomAPI_IntCS_NbPoints(self, *args)
+        return _GeomAPI.GeomAPI_IntCS_NbPoints(self)
 
-    def Point(self, *args) -> "gp_Pnt const" :
+    def Point(self, *args):
         """
         * Returns the Intersection Point of range <Index>in case of cross intersection.  Raises NotDone if the computation has failed or if the computation has not been done raises OutOfRange if Index is not in the range <1..NbPoints>
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: gp_Pnt
 
         """
         return _GeomAPI.GeomAPI_IntCS_Point(self, *args)
 
-    def NbSegments(self, *args) -> "Standard_Integer" :
+    def NbSegments(self):
         """
         * Returns the number of computed intersection segments in case of tangential intersection. Exceptions StdFail_NotDone if the intersection algorithm fails or is not initialized.
 
         :rtype: int
 
         """
-        return _GeomAPI.GeomAPI_IntCS_NbSegments(self, *args)
+        return _GeomAPI.GeomAPI_IntCS_NbSegments(self)
 
-    def Segment(self, *args) -> "Handle_Geom_Curve" :
+    def Segment(self, *args):
         """
         * Returns the computed intersection segment of index Index in case of tangential intersection. Intersection segment is a portion of the initial curve tangent to surface. Exceptions StdFail_NotDone if intersection algorithm fails or is not initialized. Standard_OutOfRange if Index is not in the range [ 1,NbSegments ], where NbSegments is the number of computed intersection segments.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Handle_Geom_Curve
 
         """
         return _GeomAPI.GeomAPI_IntCS_Segment(self, *args)
 
-    def Parameters(self, *args) -> "void" :
+    def Parameters(self, *args):
         """
         * Returns parameter W on the curve and (parameters U,V) on the surface of the computed intersection point of index Index in case of cross intersection. Exceptions StdFail_NotDone if intersection algorithm fails or is not initialized. Standard_OutOfRange if Index is not in the range [ 1,NbPoints ], where NbPoints is the number of computed intersection points.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param U:
         :type U: Quantity_Parameter &
         :param V:
@@ -906,7 +905,7 @@ class GeomAPI_IntCS(object):
         * Returns the parameters of the first (U1,V1) and the last (U2,V2) points of curve's segment on the surface in case of tangential intersection. Index is the number of computed intersection segments. Exceptions StdFail_NotDone if intersection algorithm fails or is not initialized. Standard_OutOfRange if Index is not in the range [ 1,NbSegments ], where NbSegments is the number of computed intersection segments.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param U1:
         :type U1: Quantity_Parameter &
         :param V1:
@@ -960,7 +959,7 @@ class GeomAPI_IntSS(object):
 
         """
         _GeomAPI.GeomAPI_IntSS_swiginit(self,_GeomAPI.new_GeomAPI_IntSS(*args))
-    def Perform(self, *args) -> "void" :
+    def Perform(self, *args):
         """
         * Initializes an algorithm with the given arguments and computes the intersection curves between the two surfaces S1 and S2. Parameter Tol defines the precision of curves computation. For most cases the value 1.0e-7 is recommended to use. Warning Use function IsDone to verify that the intersections are successfully computed.
 
@@ -975,30 +974,30 @@ class GeomAPI_IntSS(object):
         """
         return _GeomAPI.GeomAPI_IntSS_Perform(self, *args)
 
-    def IsDone(self, *args) -> "Standard_Boolean" :
+    def IsDone(self):
         """
         * Returns True if the intersection was successful.
 
         :rtype: bool
 
         """
-        return _GeomAPI.GeomAPI_IntSS_IsDone(self, *args)
+        return _GeomAPI.GeomAPI_IntSS_IsDone(self)
 
-    def NbLines(self, *args) -> "Standard_Integer" :
+    def NbLines(self):
         """
         * Returns the number of computed intersection curves. Exceptions StdFail_NotDone if the computation fails.
 
         :rtype: int
 
         """
-        return _GeomAPI.GeomAPI_IntSS_NbLines(self, *args)
+        return _GeomAPI.GeomAPI_IntSS_NbLines(self)
 
-    def Line(self, *args) -> "Handle_Geom_Curve const &" :
+    def Line(self, *args):
         """
         * Returns the computed intersection curve of index Index. Exceptions StdFail_NotDone if the computation fails. Standard_OutOfRange if Index is out of range [1, NbLines] where NbLines is the number of computed intersection curves.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Handle_Geom_Curve
 
         """
@@ -1049,8 +1048,18 @@ class GeomAPI_Interpolate(object):
 
         """
         _GeomAPI.GeomAPI_Interpolate_swiginit(self,_GeomAPI.new_GeomAPI_Interpolate(*args))
-    def Load(self, *args) -> "void" :
+    def Load(self, *args):
         """
+        * Assigns this constrained BSpline curve to be tangential to vectors InitialTangent and FinalTangent at its first and last points respectively (i.e. the first and last points of the table of points through which the curve passes, as defined at the time of initialization).
+
+        :param InitialTangent:
+        :type InitialTangent: gp_Vec
+        :param FinalTangent:
+        :type FinalTangent: gp_Vec
+        :param Scale: default value is Standard_True
+        :type Scale: bool
+        :rtype: None
+
         * Assigns this constrained BSpline curve to be tangential to vectors InitialTangent and FinalTangent at its first and last points respectively (i.e. the first and last points of the table of points through which the curve passes, as defined at the time of initialization).
 
         :param InitialTangent:
@@ -1071,35 +1080,45 @@ class GeomAPI_Interpolate(object):
         :type Scale: bool
         :rtype: None
 
+        * Assigns this constrained BSpline curve to be tangential to vectors defined in the table Tangents, which is parallel to the table of points through which the curve passes, as defined at the time of initialization. Vectors in the table Tangents are defined only if the flag given in the parallel table TangentFlags is true: only these vectors are set as tangency constraints.
+
+        :param Tangents:
+        :type Tangents: TColgp_Array1OfVec
+        :param TangentFlags:
+        :type TangentFlags: Handle_TColStd_HArray1OfBoolean &
+        :param Scale: default value is Standard_True
+        :type Scale: bool
+        :rtype: None
+
         """
         return _GeomAPI.GeomAPI_Interpolate_Load(self, *args)
 
-    def Perform(self, *args) -> "void" :
+    def Perform(self):
         """
         * Computes the constrained BSpline curve. Use the function IsDone to verify that the computation is successful, and then the function Curve to obtain the result.
 
         :rtype: None
 
         """
-        return _GeomAPI.GeomAPI_Interpolate_Perform(self, *args)
+        return _GeomAPI.GeomAPI_Interpolate_Perform(self)
 
-    def Curve(self, *args) -> "Handle_Geom_BSplineCurve const &" :
+    def Curve(self):
         """
         * Returns the computed BSpline curve. Raises StdFail_NotDone if the interpolation fails.
 
         :rtype: Handle_Geom_BSplineCurve
 
         """
-        return _GeomAPI.GeomAPI_Interpolate_Curve(self, *args)
+        return _GeomAPI.GeomAPI_Interpolate_Curve(self)
 
-    def IsDone(self, *args) -> "Standard_Boolean" :
+    def IsDone(self):
         """
         * Returns true if the constrained BSpline curve is successfully constructed. Note: in this case, the result is given by the function Curve.
 
         :rtype: bool
 
         """
-        return _GeomAPI.GeomAPI_Interpolate_IsDone(self, *args)
+        return _GeomAPI.GeomAPI_Interpolate_IsDone(self)
 
     def __del__(self):
     	try:
@@ -1131,9 +1150,65 @@ class GeomAPI_PointsToBSpline(object):
         :param Points:
         :type Points: TColgp_Array1OfPnt
         :param DegMin: default value is 3
-        :type DegMin: int
+        :type DegMin: Standard_Integer
         :param DegMax: default value is 8
-        :type DegMax: int
+        :type DegMax: Standard_Integer
+        :param Continuity: default value is GeomAbs_C2
+        :type Continuity: GeomAbs_Shape
+        :param Tol3D: default value is 1.0e-3
+        :type Tol3D: float
+        :rtype: None
+
+        * Approximate a BSpline Curve passing through an array of Point. The resulting BSpline will have the following properties: 1- his degree will be in the range [Degmin,Degmax] 2- his continuity will be at least <Continuity> 3- the distance from the point <Points> to the BSpline will be lower to Tol3D
+
+        :param Points:
+        :type Points: TColgp_Array1OfPnt
+        :param DegMin: default value is 3
+        :type DegMin: Standard_Integer
+        :param DegMax: default value is 8
+        :type DegMax: Standard_Integer
+        :param Continuity: default value is GeomAbs_C2
+        :type Continuity: GeomAbs_Shape
+        :param Tol3D: default value is 1.0e-3
+        :type Tol3D: float
+        :rtype: None
+
+        * Approximate a BSpline Curve passing through an array of Point. The resulting BSpline will have the following properties: 1- his degree will be in the range [Degmin,Degmax] 2- his continuity will be at least <Continuity> 3- the distance from the point <Points> to the BSpline will be lower to Tol3D
+
+        :param Points:
+        :type Points: TColgp_Array1OfPnt
+        :param DegMin: default value is 3
+        :type DegMin: Standard_Integer
+        :param DegMax: default value is 8
+        :type DegMax: Standard_Integer
+        :param Continuity: default value is GeomAbs_C2
+        :type Continuity: GeomAbs_Shape
+        :param Tol3D: default value is 1.0e-3
+        :type Tol3D: float
+        :rtype: None
+
+        * Approximate a BSpline Curve passing through an array of Point. The resulting BSpline will have the following properties: 1- his degree will be in the range [Degmin,Degmax] 2- his continuity will be at least <Continuity> 3- the distance from the point <Points> to the BSpline will be lower to Tol3D
+
+        :param Points:
+        :type Points: TColgp_Array1OfPnt
+        :param DegMin: default value is 3
+        :type DegMin: Standard_Integer
+        :param DegMax: default value is 8
+        :type DegMax: Standard_Integer
+        :param Continuity: default value is GeomAbs_C2
+        :type Continuity: GeomAbs_Shape
+        :param Tol3D: default value is 1.0e-3
+        :type Tol3D: float
+        :rtype: None
+
+        * Approximate a BSpline Curve passing through an array of Point. The resulting BSpline will have the following properties: 1- his degree will be in the range [Degmin,Degmax] 2- his continuity will be at least <Continuity> 3- the distance from the point <Points> to the BSpline will be lower to Tol3D
+
+        :param Points:
+        :type Points: TColgp_Array1OfPnt
+        :param DegMin: default value is 3
+        :type DegMin: Standard_Integer
+        :param DegMax: default value is 8
+        :type DegMax: Standard_Integer
         :param Continuity: default value is GeomAbs_C2
         :type Continuity: GeomAbs_Shape
         :param Tol3D: default value is 1.0e-3
@@ -1147,9 +1222,73 @@ class GeomAPI_PointsToBSpline(object):
         :param ParType:
         :type ParType: Approx_ParametrizationType
         :param DegMin: default value is 3
-        :type DegMin: int
+        :type DegMin: Standard_Integer
         :param DegMax: default value is 8
-        :type DegMax: int
+        :type DegMax: Standard_Integer
+        :param Continuity: default value is GeomAbs_C2
+        :type Continuity: GeomAbs_Shape
+        :param Tol3D: default value is 1.0e-3
+        :type Tol3D: float
+        :rtype: None
+
+        * Approximate a BSpline Curve passing through an array of Point. The resulting BSpline will have the following properties: 1- his degree will be in the range [Degmin,Degmax] 2- his continuity will be at least <Continuity> 3- the distance from the point <Points> to the BSpline will be lower to Tol3D
+
+        :param Points:
+        :type Points: TColgp_Array1OfPnt
+        :param ParType:
+        :type ParType: Approx_ParametrizationType
+        :param DegMin: default value is 3
+        :type DegMin: Standard_Integer
+        :param DegMax: default value is 8
+        :type DegMax: Standard_Integer
+        :param Continuity: default value is GeomAbs_C2
+        :type Continuity: GeomAbs_Shape
+        :param Tol3D: default value is 1.0e-3
+        :type Tol3D: float
+        :rtype: None
+
+        * Approximate a BSpline Curve passing through an array of Point. The resulting BSpline will have the following properties: 1- his degree will be in the range [Degmin,Degmax] 2- his continuity will be at least <Continuity> 3- the distance from the point <Points> to the BSpline will be lower to Tol3D
+
+        :param Points:
+        :type Points: TColgp_Array1OfPnt
+        :param ParType:
+        :type ParType: Approx_ParametrizationType
+        :param DegMin: default value is 3
+        :type DegMin: Standard_Integer
+        :param DegMax: default value is 8
+        :type DegMax: Standard_Integer
+        :param Continuity: default value is GeomAbs_C2
+        :type Continuity: GeomAbs_Shape
+        :param Tol3D: default value is 1.0e-3
+        :type Tol3D: float
+        :rtype: None
+
+        * Approximate a BSpline Curve passing through an array of Point. The resulting BSpline will have the following properties: 1- his degree will be in the range [Degmin,Degmax] 2- his continuity will be at least <Continuity> 3- the distance from the point <Points> to the BSpline will be lower to Tol3D
+
+        :param Points:
+        :type Points: TColgp_Array1OfPnt
+        :param ParType:
+        :type ParType: Approx_ParametrizationType
+        :param DegMin: default value is 3
+        :type DegMin: Standard_Integer
+        :param DegMax: default value is 8
+        :type DegMax: Standard_Integer
+        :param Continuity: default value is GeomAbs_C2
+        :type Continuity: GeomAbs_Shape
+        :param Tol3D: default value is 1.0e-3
+        :type Tol3D: float
+        :rtype: None
+
+        * Approximate a BSpline Curve passing through an array of Point. The resulting BSpline will have the following properties: 1- his degree will be in the range [Degmin,Degmax] 2- his continuity will be at least <Continuity> 3- the distance from the point <Points> to the BSpline will be lower to Tol3D
+
+        :param Points:
+        :type Points: TColgp_Array1OfPnt
+        :param ParType:
+        :type ParType: Approx_ParametrizationType
+        :param DegMin: default value is 3
+        :type DegMin: Standard_Integer
+        :param DegMax: default value is 8
+        :type DegMax: Standard_Integer
         :param Continuity: default value is GeomAbs_C2
         :type Continuity: GeomAbs_Shape
         :param Tol3D: default value is 1.0e-3
@@ -1163,9 +1302,73 @@ class GeomAPI_PointsToBSpline(object):
         :param Parameters:
         :type Parameters: TColStd_Array1OfReal &
         :param DegMin: default value is 3
-        :type DegMin: int
+        :type DegMin: Standard_Integer
         :param DegMax: default value is 8
-        :type DegMax: int
+        :type DegMax: Standard_Integer
+        :param Continuity: default value is GeomAbs_C2
+        :type Continuity: GeomAbs_Shape
+        :param Tol3D: default value is 1.0e-3
+        :type Tol3D: float
+        :rtype: None
+
+        * Approximate a BSpline Curve passing through an array of Point, which parameters are given by the array <Parameters>. The resulting BSpline will have the following properties: 1- his degree will be in the range [Degmin,Degmax] 2- his continuity will be at least <Continuity> 3- the distance from the point <Points> to the BSpline will be lower to Tol3D
+
+        :param Points:
+        :type Points: TColgp_Array1OfPnt
+        :param Parameters:
+        :type Parameters: TColStd_Array1OfReal &
+        :param DegMin: default value is 3
+        :type DegMin: Standard_Integer
+        :param DegMax: default value is 8
+        :type DegMax: Standard_Integer
+        :param Continuity: default value is GeomAbs_C2
+        :type Continuity: GeomAbs_Shape
+        :param Tol3D: default value is 1.0e-3
+        :type Tol3D: float
+        :rtype: None
+
+        * Approximate a BSpline Curve passing through an array of Point, which parameters are given by the array <Parameters>. The resulting BSpline will have the following properties: 1- his degree will be in the range [Degmin,Degmax] 2- his continuity will be at least <Continuity> 3- the distance from the point <Points> to the BSpline will be lower to Tol3D
+
+        :param Points:
+        :type Points: TColgp_Array1OfPnt
+        :param Parameters:
+        :type Parameters: TColStd_Array1OfReal &
+        :param DegMin: default value is 3
+        :type DegMin: Standard_Integer
+        :param DegMax: default value is 8
+        :type DegMax: Standard_Integer
+        :param Continuity: default value is GeomAbs_C2
+        :type Continuity: GeomAbs_Shape
+        :param Tol3D: default value is 1.0e-3
+        :type Tol3D: float
+        :rtype: None
+
+        * Approximate a BSpline Curve passing through an array of Point, which parameters are given by the array <Parameters>. The resulting BSpline will have the following properties: 1- his degree will be in the range [Degmin,Degmax] 2- his continuity will be at least <Continuity> 3- the distance from the point <Points> to the BSpline will be lower to Tol3D
+
+        :param Points:
+        :type Points: TColgp_Array1OfPnt
+        :param Parameters:
+        :type Parameters: TColStd_Array1OfReal &
+        :param DegMin: default value is 3
+        :type DegMin: Standard_Integer
+        :param DegMax: default value is 8
+        :type DegMax: Standard_Integer
+        :param Continuity: default value is GeomAbs_C2
+        :type Continuity: GeomAbs_Shape
+        :param Tol3D: default value is 1.0e-3
+        :type Tol3D: float
+        :rtype: None
+
+        * Approximate a BSpline Curve passing through an array of Point, which parameters are given by the array <Parameters>. The resulting BSpline will have the following properties: 1- his degree will be in the range [Degmin,Degmax] 2- his continuity will be at least <Continuity> 3- the distance from the point <Points> to the BSpline will be lower to Tol3D
+
+        :param Points:
+        :type Points: TColgp_Array1OfPnt
+        :param Parameters:
+        :type Parameters: TColStd_Array1OfReal &
+        :param DegMin: default value is 3
+        :type DegMin: Standard_Integer
+        :param DegMax: default value is 8
+        :type DegMax: Standard_Integer
         :param Continuity: default value is GeomAbs_C2
         :type Continuity: GeomAbs_Shape
         :param Tol3D: default value is 1.0e-3
@@ -1183,7 +1386,61 @@ class GeomAPI_PointsToBSpline(object):
         :param Weight3:
         :type Weight3: float
         :param DegMax: default value is 8
-        :type DegMax: int
+        :type DegMax: Standard_Integer
+        :param Continuity: default value is GeomAbs_C2
+        :type Continuity: GeomAbs_Shape
+        :param Tol3D: default value is 1.0e-3
+        :type Tol3D: float
+        :rtype: None
+
+        * Approximate a BSpline Curve passing through an array of Point using variational smoothing algorithm, which tries to minimize additional criterium: Weight1*CurveLength + Weight2*Curvature + Weight3*Torsion
+
+        :param Points:
+        :type Points: TColgp_Array1OfPnt
+        :param Weight1:
+        :type Weight1: float
+        :param Weight2:
+        :type Weight2: float
+        :param Weight3:
+        :type Weight3: float
+        :param DegMax: default value is 8
+        :type DegMax: Standard_Integer
+        :param Continuity: default value is GeomAbs_C2
+        :type Continuity: GeomAbs_Shape
+        :param Tol3D: default value is 1.0e-3
+        :type Tol3D: float
+        :rtype: None
+
+        * Approximate a BSpline Curve passing through an array of Point using variational smoothing algorithm, which tries to minimize additional criterium: Weight1*CurveLength + Weight2*Curvature + Weight3*Torsion
+
+        :param Points:
+        :type Points: TColgp_Array1OfPnt
+        :param Weight1:
+        :type Weight1: float
+        :param Weight2:
+        :type Weight2: float
+        :param Weight3:
+        :type Weight3: float
+        :param DegMax: default value is 8
+        :type DegMax: Standard_Integer
+        :param Continuity: default value is GeomAbs_C2
+        :type Continuity: GeomAbs_Shape
+        :param Tol3D: default value is 1.0e-3
+        :type Tol3D: float
+        :rtype: None
+
+        * Approximate a BSpline Curve passing through an array of Point using variational smoothing algorithm, which tries to minimize additional criterium: Weight1*CurveLength + Weight2*Curvature + Weight3*Torsion
+
+        :param Points:
+        :type Points: TColgp_Array1OfPnt
+        :param Weight1:
+        :type Weight1: float
+        :param Weight2:
+        :type Weight2: float
+        :param Weight3:
+        :type Weight3: float
+        :param DegMax: default value is 8
+        :type DegMax: Standard_Integer
         :param Continuity: default value is GeomAbs_C2
         :type Continuity: GeomAbs_Shape
         :param Tol3D: default value is 1.0e-3
@@ -1192,16 +1449,72 @@ class GeomAPI_PointsToBSpline(object):
 
         """
         _GeomAPI.GeomAPI_PointsToBSpline_swiginit(self,_GeomAPI.new_GeomAPI_PointsToBSpline(*args))
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
         * Approximate a BSpline Curve passing through an array of Point. The resulting BSpline will have the following properties: 1- his degree will be in the range [Degmin,Degmax] 2- his continuity will be at least <Continuity> 3- the distance from the point <Points> to the BSpline will be lower to Tol3D
 
         :param Points:
         :type Points: TColgp_Array1OfPnt
         :param DegMin: default value is 3
-        :type DegMin: int
+        :type DegMin: Standard_Integer
         :param DegMax: default value is 8
-        :type DegMax: int
+        :type DegMax: Standard_Integer
+        :param Continuity: default value is GeomAbs_C2
+        :type Continuity: GeomAbs_Shape
+        :param Tol3D: default value is 1.0e-3
+        :type Tol3D: float
+        :rtype: None
+
+        * Approximate a BSpline Curve passing through an array of Point. The resulting BSpline will have the following properties: 1- his degree will be in the range [Degmin,Degmax] 2- his continuity will be at least <Continuity> 3- the distance from the point <Points> to the BSpline will be lower to Tol3D
+
+        :param Points:
+        :type Points: TColgp_Array1OfPnt
+        :param DegMin: default value is 3
+        :type DegMin: Standard_Integer
+        :param DegMax: default value is 8
+        :type DegMax: Standard_Integer
+        :param Continuity: default value is GeomAbs_C2
+        :type Continuity: GeomAbs_Shape
+        :param Tol3D: default value is 1.0e-3
+        :type Tol3D: float
+        :rtype: None
+
+        * Approximate a BSpline Curve passing through an array of Point. The resulting BSpline will have the following properties: 1- his degree will be in the range [Degmin,Degmax] 2- his continuity will be at least <Continuity> 3- the distance from the point <Points> to the BSpline will be lower to Tol3D
+
+        :param Points:
+        :type Points: TColgp_Array1OfPnt
+        :param DegMin: default value is 3
+        :type DegMin: Standard_Integer
+        :param DegMax: default value is 8
+        :type DegMax: Standard_Integer
+        :param Continuity: default value is GeomAbs_C2
+        :type Continuity: GeomAbs_Shape
+        :param Tol3D: default value is 1.0e-3
+        :type Tol3D: float
+        :rtype: None
+
+        * Approximate a BSpline Curve passing through an array of Point. The resulting BSpline will have the following properties: 1- his degree will be in the range [Degmin,Degmax] 2- his continuity will be at least <Continuity> 3- the distance from the point <Points> to the BSpline will be lower to Tol3D
+
+        :param Points:
+        :type Points: TColgp_Array1OfPnt
+        :param DegMin: default value is 3
+        :type DegMin: Standard_Integer
+        :param DegMax: default value is 8
+        :type DegMax: Standard_Integer
+        :param Continuity: default value is GeomAbs_C2
+        :type Continuity: GeomAbs_Shape
+        :param Tol3D: default value is 1.0e-3
+        :type Tol3D: float
+        :rtype: None
+
+        * Approximate a BSpline Curve passing through an array of Point. The resulting BSpline will have the following properties: 1- his degree will be in the range [Degmin,Degmax] 2- his continuity will be at least <Continuity> 3- the distance from the point <Points> to the BSpline will be lower to Tol3D
+
+        :param Points:
+        :type Points: TColgp_Array1OfPnt
+        :param DegMin: default value is 3
+        :type DegMin: Standard_Integer
+        :param DegMax: default value is 8
+        :type DegMax: Standard_Integer
         :param Continuity: default value is GeomAbs_C2
         :type Continuity: GeomAbs_Shape
         :param Tol3D: default value is 1.0e-3
@@ -1215,9 +1528,73 @@ class GeomAPI_PointsToBSpline(object):
         :param ParType:
         :type ParType: Approx_ParametrizationType
         :param DegMin: default value is 3
-        :type DegMin: int
+        :type DegMin: Standard_Integer
         :param DegMax: default value is 8
-        :type DegMax: int
+        :type DegMax: Standard_Integer
+        :param Continuity: default value is GeomAbs_C2
+        :type Continuity: GeomAbs_Shape
+        :param Tol3D: default value is 1.0e-3
+        :type Tol3D: float
+        :rtype: None
+
+        * Approximate a BSpline Curve passing through an array of Point. The resulting BSpline will have the following properties: 1- his degree will be in the range [Degmin,Degmax] 2- his continuity will be at least <Continuity> 3- the distance from the point <Points> to the BSpline will be lower to Tol3D
+
+        :param Points:
+        :type Points: TColgp_Array1OfPnt
+        :param ParType:
+        :type ParType: Approx_ParametrizationType
+        :param DegMin: default value is 3
+        :type DegMin: Standard_Integer
+        :param DegMax: default value is 8
+        :type DegMax: Standard_Integer
+        :param Continuity: default value is GeomAbs_C2
+        :type Continuity: GeomAbs_Shape
+        :param Tol3D: default value is 1.0e-3
+        :type Tol3D: float
+        :rtype: None
+
+        * Approximate a BSpline Curve passing through an array of Point. The resulting BSpline will have the following properties: 1- his degree will be in the range [Degmin,Degmax] 2- his continuity will be at least <Continuity> 3- the distance from the point <Points> to the BSpline will be lower to Tol3D
+
+        :param Points:
+        :type Points: TColgp_Array1OfPnt
+        :param ParType:
+        :type ParType: Approx_ParametrizationType
+        :param DegMin: default value is 3
+        :type DegMin: Standard_Integer
+        :param DegMax: default value is 8
+        :type DegMax: Standard_Integer
+        :param Continuity: default value is GeomAbs_C2
+        :type Continuity: GeomAbs_Shape
+        :param Tol3D: default value is 1.0e-3
+        :type Tol3D: float
+        :rtype: None
+
+        * Approximate a BSpline Curve passing through an array of Point. The resulting BSpline will have the following properties: 1- his degree will be in the range [Degmin,Degmax] 2- his continuity will be at least <Continuity> 3- the distance from the point <Points> to the BSpline will be lower to Tol3D
+
+        :param Points:
+        :type Points: TColgp_Array1OfPnt
+        :param ParType:
+        :type ParType: Approx_ParametrizationType
+        :param DegMin: default value is 3
+        :type DegMin: Standard_Integer
+        :param DegMax: default value is 8
+        :type DegMax: Standard_Integer
+        :param Continuity: default value is GeomAbs_C2
+        :type Continuity: GeomAbs_Shape
+        :param Tol3D: default value is 1.0e-3
+        :type Tol3D: float
+        :rtype: None
+
+        * Approximate a BSpline Curve passing through an array of Point. The resulting BSpline will have the following properties: 1- his degree will be in the range [Degmin,Degmax] 2- his continuity will be at least <Continuity> 3- the distance from the point <Points> to the BSpline will be lower to Tol3D
+
+        :param Points:
+        :type Points: TColgp_Array1OfPnt
+        :param ParType:
+        :type ParType: Approx_ParametrizationType
+        :param DegMin: default value is 3
+        :type DegMin: Standard_Integer
+        :param DegMax: default value is 8
+        :type DegMax: Standard_Integer
         :param Continuity: default value is GeomAbs_C2
         :type Continuity: GeomAbs_Shape
         :param Tol3D: default value is 1.0e-3
@@ -1231,9 +1608,73 @@ class GeomAPI_PointsToBSpline(object):
         :param Parameters:
         :type Parameters: TColStd_Array1OfReal &
         :param DegMin: default value is 3
-        :type DegMin: int
+        :type DegMin: Standard_Integer
         :param DegMax: default value is 8
-        :type DegMax: int
+        :type DegMax: Standard_Integer
+        :param Continuity: default value is GeomAbs_C2
+        :type Continuity: GeomAbs_Shape
+        :param Tol3D: default value is 1.0e-3
+        :type Tol3D: float
+        :rtype: None
+
+        * Approximate a BSpline Curve passing through an array of Point, which parameters are given by the array <Parameters>. The resulting BSpline will have the following properties: 1- his degree will be in the range [Degmin,Degmax] 2- his continuity will be at least <Continuity> 3- the distance from the point <Points> to the BSpline will be lower to Tol3D
+
+        :param Points:
+        :type Points: TColgp_Array1OfPnt
+        :param Parameters:
+        :type Parameters: TColStd_Array1OfReal &
+        :param DegMin: default value is 3
+        :type DegMin: Standard_Integer
+        :param DegMax: default value is 8
+        :type DegMax: Standard_Integer
+        :param Continuity: default value is GeomAbs_C2
+        :type Continuity: GeomAbs_Shape
+        :param Tol3D: default value is 1.0e-3
+        :type Tol3D: float
+        :rtype: None
+
+        * Approximate a BSpline Curve passing through an array of Point, which parameters are given by the array <Parameters>. The resulting BSpline will have the following properties: 1- his degree will be in the range [Degmin,Degmax] 2- his continuity will be at least <Continuity> 3- the distance from the point <Points> to the BSpline will be lower to Tol3D
+
+        :param Points:
+        :type Points: TColgp_Array1OfPnt
+        :param Parameters:
+        :type Parameters: TColStd_Array1OfReal &
+        :param DegMin: default value is 3
+        :type DegMin: Standard_Integer
+        :param DegMax: default value is 8
+        :type DegMax: Standard_Integer
+        :param Continuity: default value is GeomAbs_C2
+        :type Continuity: GeomAbs_Shape
+        :param Tol3D: default value is 1.0e-3
+        :type Tol3D: float
+        :rtype: None
+
+        * Approximate a BSpline Curve passing through an array of Point, which parameters are given by the array <Parameters>. The resulting BSpline will have the following properties: 1- his degree will be in the range [Degmin,Degmax] 2- his continuity will be at least <Continuity> 3- the distance from the point <Points> to the BSpline will be lower to Tol3D
+
+        :param Points:
+        :type Points: TColgp_Array1OfPnt
+        :param Parameters:
+        :type Parameters: TColStd_Array1OfReal &
+        :param DegMin: default value is 3
+        :type DegMin: Standard_Integer
+        :param DegMax: default value is 8
+        :type DegMax: Standard_Integer
+        :param Continuity: default value is GeomAbs_C2
+        :type Continuity: GeomAbs_Shape
+        :param Tol3D: default value is 1.0e-3
+        :type Tol3D: float
+        :rtype: None
+
+        * Approximate a BSpline Curve passing through an array of Point, which parameters are given by the array <Parameters>. The resulting BSpline will have the following properties: 1- his degree will be in the range [Degmin,Degmax] 2- his continuity will be at least <Continuity> 3- the distance from the point <Points> to the BSpline will be lower to Tol3D
+
+        :param Points:
+        :type Points: TColgp_Array1OfPnt
+        :param Parameters:
+        :type Parameters: TColStd_Array1OfReal &
+        :param DegMin: default value is 3
+        :type DegMin: Standard_Integer
+        :param DegMax: default value is 8
+        :type DegMax: Standard_Integer
         :param Continuity: default value is GeomAbs_C2
         :type Continuity: GeomAbs_Shape
         :param Tol3D: default value is 1.0e-3
@@ -1251,7 +1692,61 @@ class GeomAPI_PointsToBSpline(object):
         :param Weight3:
         :type Weight3: float
         :param DegMax: default value is 8
-        :type DegMax: int
+        :type DegMax: Standard_Integer
+        :param Continuity: default value is GeomAbs_C2
+        :type Continuity: GeomAbs_Shape
+        :param Tol3D: default value is 1.0e-3
+        :type Tol3D: float
+        :rtype: None
+
+        * Approximate a BSpline Curve passing through an array of Point using variational smoothing algorithm, which tries to minimize additional criterium: Weight1*CurveLength + Weight2*Curvature + Weight3*Torsion
+
+        :param Points:
+        :type Points: TColgp_Array1OfPnt
+        :param Weight1:
+        :type Weight1: float
+        :param Weight2:
+        :type Weight2: float
+        :param Weight3:
+        :type Weight3: float
+        :param DegMax: default value is 8
+        :type DegMax: Standard_Integer
+        :param Continuity: default value is GeomAbs_C2
+        :type Continuity: GeomAbs_Shape
+        :param Tol3D: default value is 1.0e-3
+        :type Tol3D: float
+        :rtype: None
+
+        * Approximate a BSpline Curve passing through an array of Point using variational smoothing algorithm, which tries to minimize additional criterium: Weight1*CurveLength + Weight2*Curvature + Weight3*Torsion
+
+        :param Points:
+        :type Points: TColgp_Array1OfPnt
+        :param Weight1:
+        :type Weight1: float
+        :param Weight2:
+        :type Weight2: float
+        :param Weight3:
+        :type Weight3: float
+        :param DegMax: default value is 8
+        :type DegMax: Standard_Integer
+        :param Continuity: default value is GeomAbs_C2
+        :type Continuity: GeomAbs_Shape
+        :param Tol3D: default value is 1.0e-3
+        :type Tol3D: float
+        :rtype: None
+
+        * Approximate a BSpline Curve passing through an array of Point using variational smoothing algorithm, which tries to minimize additional criterium: Weight1*CurveLength + Weight2*Curvature + Weight3*Torsion
+
+        :param Points:
+        :type Points: TColgp_Array1OfPnt
+        :param Weight1:
+        :type Weight1: float
+        :param Weight2:
+        :type Weight2: float
+        :param Weight3:
+        :type Weight3: float
+        :param DegMax: default value is 8
+        :type DegMax: Standard_Integer
         :param Continuity: default value is GeomAbs_C2
         :type Continuity: GeomAbs_Shape
         :param Tol3D: default value is 1.0e-3
@@ -1261,21 +1756,21 @@ class GeomAPI_PointsToBSpline(object):
         """
         return _GeomAPI.GeomAPI_PointsToBSpline_Init(self, *args)
 
-    def Curve(self, *args) -> "Handle_Geom_BSplineCurve const &" :
+    def Curve(self):
         """
         * Returns the computed BSpline curve. Raises StdFail_NotDone if the curve is not built.
 
         :rtype: Handle_Geom_BSplineCurve
 
         """
-        return _GeomAPI.GeomAPI_PointsToBSpline_Curve(self, *args)
+        return _GeomAPI.GeomAPI_PointsToBSpline_Curve(self)
 
-    def IsDone(self, *args) -> "Standard_Boolean" :
+    def IsDone(self):
         """
         :rtype: bool
 
         """
-        return _GeomAPI.GeomAPI_PointsToBSpline_IsDone(self, *args)
+        return _GeomAPI.GeomAPI_PointsToBSpline_IsDone(self)
 
     def __del__(self):
     	try:
@@ -1306,9 +1801,65 @@ class GeomAPI_PointsToBSplineSurface(object):
         :param Points:
         :type Points: TColgp_Array2OfPnt
         :param DegMin: default value is 3
-        :type DegMin: int
+        :type DegMin: Standard_Integer
         :param DegMax: default value is 8
-        :type DegMax: int
+        :type DegMax: Standard_Integer
+        :param Continuity: default value is GeomAbs_C2
+        :type Continuity: GeomAbs_Shape
+        :param Tol3D: default value is 1.0e-3
+        :type Tol3D: float
+        :rtype: None
+
+        * Approximates a BSpline Surface passing through an array of Points. The resulting BSpline will have the following properties: 1- his degree will be in the range [Degmin,Degmax] 2- his continuity will be at least <Continuity> 3- the distance from the point <Points> to the BSpline will be lower to Tol3D
+
+        :param Points:
+        :type Points: TColgp_Array2OfPnt
+        :param DegMin: default value is 3
+        :type DegMin: Standard_Integer
+        :param DegMax: default value is 8
+        :type DegMax: Standard_Integer
+        :param Continuity: default value is GeomAbs_C2
+        :type Continuity: GeomAbs_Shape
+        :param Tol3D: default value is 1.0e-3
+        :type Tol3D: float
+        :rtype: None
+
+        * Approximates a BSpline Surface passing through an array of Points. The resulting BSpline will have the following properties: 1- his degree will be in the range [Degmin,Degmax] 2- his continuity will be at least <Continuity> 3- the distance from the point <Points> to the BSpline will be lower to Tol3D
+
+        :param Points:
+        :type Points: TColgp_Array2OfPnt
+        :param DegMin: default value is 3
+        :type DegMin: Standard_Integer
+        :param DegMax: default value is 8
+        :type DegMax: Standard_Integer
+        :param Continuity: default value is GeomAbs_C2
+        :type Continuity: GeomAbs_Shape
+        :param Tol3D: default value is 1.0e-3
+        :type Tol3D: float
+        :rtype: None
+
+        * Approximates a BSpline Surface passing through an array of Points. The resulting BSpline will have the following properties: 1- his degree will be in the range [Degmin,Degmax] 2- his continuity will be at least <Continuity> 3- the distance from the point <Points> to the BSpline will be lower to Tol3D
+
+        :param Points:
+        :type Points: TColgp_Array2OfPnt
+        :param DegMin: default value is 3
+        :type DegMin: Standard_Integer
+        :param DegMax: default value is 8
+        :type DegMax: Standard_Integer
+        :param Continuity: default value is GeomAbs_C2
+        :type Continuity: GeomAbs_Shape
+        :param Tol3D: default value is 1.0e-3
+        :type Tol3D: float
+        :rtype: None
+
+        * Approximates a BSpline Surface passing through an array of Points. The resulting BSpline will have the following properties: 1- his degree will be in the range [Degmin,Degmax] 2- his continuity will be at least <Continuity> 3- the distance from the point <Points> to the BSpline will be lower to Tol3D
+
+        :param Points:
+        :type Points: TColgp_Array2OfPnt
+        :param DegMin: default value is 3
+        :type DegMin: Standard_Integer
+        :param DegMax: default value is 8
+        :type DegMax: Standard_Integer
         :param Continuity: default value is GeomAbs_C2
         :type Continuity: GeomAbs_Shape
         :param Tol3D: default value is 1.0e-3
@@ -1322,9 +1873,73 @@ class GeomAPI_PointsToBSplineSurface(object):
         :param ParType:
         :type ParType: Approx_ParametrizationType
         :param DegMin: default value is 3
-        :type DegMin: int
+        :type DegMin: Standard_Integer
         :param DegMax: default value is 8
-        :type DegMax: int
+        :type DegMax: Standard_Integer
+        :param Continuity: default value is GeomAbs_C2
+        :type Continuity: GeomAbs_Shape
+        :param Tol3D: default value is 1.0e-3
+        :type Tol3D: float
+        :rtype: None
+
+        * Approximates a BSpline Surface passing through an array of Points. The resulting BSpline will have the following properties: 1- his degree will be in the range [Degmin,Degmax] 2- his continuity will be at least <Continuity> 3- the distance from the point <Points> to the BSpline will be lower to Tol3D
+
+        :param Points:
+        :type Points: TColgp_Array2OfPnt
+        :param ParType:
+        :type ParType: Approx_ParametrizationType
+        :param DegMin: default value is 3
+        :type DegMin: Standard_Integer
+        :param DegMax: default value is 8
+        :type DegMax: Standard_Integer
+        :param Continuity: default value is GeomAbs_C2
+        :type Continuity: GeomAbs_Shape
+        :param Tol3D: default value is 1.0e-3
+        :type Tol3D: float
+        :rtype: None
+
+        * Approximates a BSpline Surface passing through an array of Points. The resulting BSpline will have the following properties: 1- his degree will be in the range [Degmin,Degmax] 2- his continuity will be at least <Continuity> 3- the distance from the point <Points> to the BSpline will be lower to Tol3D
+
+        :param Points:
+        :type Points: TColgp_Array2OfPnt
+        :param ParType:
+        :type ParType: Approx_ParametrizationType
+        :param DegMin: default value is 3
+        :type DegMin: Standard_Integer
+        :param DegMax: default value is 8
+        :type DegMax: Standard_Integer
+        :param Continuity: default value is GeomAbs_C2
+        :type Continuity: GeomAbs_Shape
+        :param Tol3D: default value is 1.0e-3
+        :type Tol3D: float
+        :rtype: None
+
+        * Approximates a BSpline Surface passing through an array of Points. The resulting BSpline will have the following properties: 1- his degree will be in the range [Degmin,Degmax] 2- his continuity will be at least <Continuity> 3- the distance from the point <Points> to the BSpline will be lower to Tol3D
+
+        :param Points:
+        :type Points: TColgp_Array2OfPnt
+        :param ParType:
+        :type ParType: Approx_ParametrizationType
+        :param DegMin: default value is 3
+        :type DegMin: Standard_Integer
+        :param DegMax: default value is 8
+        :type DegMax: Standard_Integer
+        :param Continuity: default value is GeomAbs_C2
+        :type Continuity: GeomAbs_Shape
+        :param Tol3D: default value is 1.0e-3
+        :type Tol3D: float
+        :rtype: None
+
+        * Approximates a BSpline Surface passing through an array of Points. The resulting BSpline will have the following properties: 1- his degree will be in the range [Degmin,Degmax] 2- his continuity will be at least <Continuity> 3- the distance from the point <Points> to the BSpline will be lower to Tol3D
+
+        :param Points:
+        :type Points: TColgp_Array2OfPnt
+        :param ParType:
+        :type ParType: Approx_ParametrizationType
+        :param DegMin: default value is 3
+        :type DegMin: Standard_Integer
+        :param DegMax: default value is 8
+        :type DegMax: Standard_Integer
         :param Continuity: default value is GeomAbs_C2
         :type Continuity: GeomAbs_Shape
         :param Tol3D: default value is 1.0e-3
@@ -1342,7 +1957,61 @@ class GeomAPI_PointsToBSplineSurface(object):
         :param Weight3:
         :type Weight3: float
         :param DegMax: default value is 8
-        :type DegMax: int
+        :type DegMax: Standard_Integer
+        :param Continuity: default value is GeomAbs_C2
+        :type Continuity: GeomAbs_Shape
+        :param Tol3D: default value is 1.0e-3
+        :type Tol3D: float
+        :rtype: None
+
+        * Approximates a BSpline Surface passing through an array of points using variational smoothing algorithm, which tries to minimize additional criterium: Weight1*CurveLength + Weight2*Curvature + Weight3*Torsion
+
+        :param Points:
+        :type Points: TColgp_Array2OfPnt
+        :param Weight1:
+        :type Weight1: float
+        :param Weight2:
+        :type Weight2: float
+        :param Weight3:
+        :type Weight3: float
+        :param DegMax: default value is 8
+        :type DegMax: Standard_Integer
+        :param Continuity: default value is GeomAbs_C2
+        :type Continuity: GeomAbs_Shape
+        :param Tol3D: default value is 1.0e-3
+        :type Tol3D: float
+        :rtype: None
+
+        * Approximates a BSpline Surface passing through an array of points using variational smoothing algorithm, which tries to minimize additional criterium: Weight1*CurveLength + Weight2*Curvature + Weight3*Torsion
+
+        :param Points:
+        :type Points: TColgp_Array2OfPnt
+        :param Weight1:
+        :type Weight1: float
+        :param Weight2:
+        :type Weight2: float
+        :param Weight3:
+        :type Weight3: float
+        :param DegMax: default value is 8
+        :type DegMax: Standard_Integer
+        :param Continuity: default value is GeomAbs_C2
+        :type Continuity: GeomAbs_Shape
+        :param Tol3D: default value is 1.0e-3
+        :type Tol3D: float
+        :rtype: None
+
+        * Approximates a BSpline Surface passing through an array of points using variational smoothing algorithm, which tries to minimize additional criterium: Weight1*CurveLength + Weight2*Curvature + Weight3*Torsion
+
+        :param Points:
+        :type Points: TColgp_Array2OfPnt
+        :param Weight1:
+        :type Weight1: float
+        :param Weight2:
+        :type Weight2: float
+        :param Weight3:
+        :type Weight3: float
+        :param DegMax: default value is 8
+        :type DegMax: Standard_Integer
         :param Continuity: default value is GeomAbs_C2
         :type Continuity: GeomAbs_Shape
         :param Tol3D: default value is 1.0e-3
@@ -1362,9 +2031,97 @@ class GeomAPI_PointsToBSplineSurface(object):
         :param dY:
         :type dY: float
         :param DegMin: default value is 3
-        :type DegMin: int
+        :type DegMin: Standard_Integer
         :param DegMax: default value is 8
-        :type DegMax: int
+        :type DegMax: Standard_Integer
+        :param Continuity: default value is GeomAbs_C2
+        :type Continuity: GeomAbs_Shape
+        :param Tol3D: default value is 1.0e-3
+        :type Tol3D: float
+        :rtype: None
+
+        * Approximates a BSpline Surface passing through an array of Points.  The points will be constructed as follow:  P(i,j) = gp_Pnt( X0 + (i-1)*dX ,  Y0 + (j-1)*dY ,  ZPoints(i,j) )  The resulting BSpline will have the following properties: 1- his degree will be in the range [Degmin,Degmax] 2- his continuity will be at least <Continuity> 3- the distance from the point <Points> to the BSpline will be lower to Tol3D 4- the parametrization of the surface will verify:  S->Value( U, V) = gp_Pnt( U, V, Z(U,V) );
+
+        :param ZPoints:
+        :type ZPoints: TColStd_Array2OfReal &
+        :param X0:
+        :type X0: float
+        :param dX:
+        :type dX: float
+        :param Y0:
+        :type Y0: float
+        :param dY:
+        :type dY: float
+        :param DegMin: default value is 3
+        :type DegMin: Standard_Integer
+        :param DegMax: default value is 8
+        :type DegMax: Standard_Integer
+        :param Continuity: default value is GeomAbs_C2
+        :type Continuity: GeomAbs_Shape
+        :param Tol3D: default value is 1.0e-3
+        :type Tol3D: float
+        :rtype: None
+
+        * Approximates a BSpline Surface passing through an array of Points.  The points will be constructed as follow:  P(i,j) = gp_Pnt( X0 + (i-1)*dX ,  Y0 + (j-1)*dY ,  ZPoints(i,j) )  The resulting BSpline will have the following properties: 1- his degree will be in the range [Degmin,Degmax] 2- his continuity will be at least <Continuity> 3- the distance from the point <Points> to the BSpline will be lower to Tol3D 4- the parametrization of the surface will verify:  S->Value( U, V) = gp_Pnt( U, V, Z(U,V) );
+
+        :param ZPoints:
+        :type ZPoints: TColStd_Array2OfReal &
+        :param X0:
+        :type X0: float
+        :param dX:
+        :type dX: float
+        :param Y0:
+        :type Y0: float
+        :param dY:
+        :type dY: float
+        :param DegMin: default value is 3
+        :type DegMin: Standard_Integer
+        :param DegMax: default value is 8
+        :type DegMax: Standard_Integer
+        :param Continuity: default value is GeomAbs_C2
+        :type Continuity: GeomAbs_Shape
+        :param Tol3D: default value is 1.0e-3
+        :type Tol3D: float
+        :rtype: None
+
+        * Approximates a BSpline Surface passing through an array of Points.  The points will be constructed as follow:  P(i,j) = gp_Pnt( X0 + (i-1)*dX ,  Y0 + (j-1)*dY ,  ZPoints(i,j) )  The resulting BSpline will have the following properties: 1- his degree will be in the range [Degmin,Degmax] 2- his continuity will be at least <Continuity> 3- the distance from the point <Points> to the BSpline will be lower to Tol3D 4- the parametrization of the surface will verify:  S->Value( U, V) = gp_Pnt( U, V, Z(U,V) );
+
+        :param ZPoints:
+        :type ZPoints: TColStd_Array2OfReal &
+        :param X0:
+        :type X0: float
+        :param dX:
+        :type dX: float
+        :param Y0:
+        :type Y0: float
+        :param dY:
+        :type dY: float
+        :param DegMin: default value is 3
+        :type DegMin: Standard_Integer
+        :param DegMax: default value is 8
+        :type DegMax: Standard_Integer
+        :param Continuity: default value is GeomAbs_C2
+        :type Continuity: GeomAbs_Shape
+        :param Tol3D: default value is 1.0e-3
+        :type Tol3D: float
+        :rtype: None
+
+        * Approximates a BSpline Surface passing through an array of Points.  The points will be constructed as follow:  P(i,j) = gp_Pnt( X0 + (i-1)*dX ,  Y0 + (j-1)*dY ,  ZPoints(i,j) )  The resulting BSpline will have the following properties: 1- his degree will be in the range [Degmin,Degmax] 2- his continuity will be at least <Continuity> 3- the distance from the point <Points> to the BSpline will be lower to Tol3D 4- the parametrization of the surface will verify:  S->Value( U, V) = gp_Pnt( U, V, Z(U,V) );
+
+        :param ZPoints:
+        :type ZPoints: TColStd_Array2OfReal &
+        :param X0:
+        :type X0: float
+        :param dX:
+        :type dX: float
+        :param Y0:
+        :type Y0: float
+        :param dY:
+        :type dY: float
+        :param DegMin: default value is 3
+        :type DegMin: Standard_Integer
+        :param DegMax: default value is 8
+        :type DegMax: Standard_Integer
         :param Continuity: default value is GeomAbs_C2
         :type Continuity: GeomAbs_Shape
         :param Tol3D: default value is 1.0e-3
@@ -1373,7 +2130,7 @@ class GeomAPI_PointsToBSplineSurface(object):
 
         """
         _GeomAPI.GeomAPI_PointsToBSplineSurface_swiginit(self,_GeomAPI.new_GeomAPI_PointsToBSplineSurface(*args))
-    def Interpolate(self, *args) -> "void" :
+    def Interpolate(self, *args):
         """
         * Interpolates a BSpline Surface passing through an array of Point. The resulting BSpline will have the following properties: 1- his degree will be 3. 2- his continuity will be C2.
 
@@ -1406,16 +2163,72 @@ class GeomAPI_PointsToBSplineSurface(object):
         """
         return _GeomAPI.GeomAPI_PointsToBSplineSurface_Interpolate(self, *args)
 
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
         * Approximates a BSpline Surface passing through an array of Point. The resulting BSpline will have the following properties: 1- his degree will be in the range [Degmin,Degmax] 2- his continuity will be at least <Continuity> 3- the distance from the point <Points> to the BSpline will be lower to Tol3D
 
         :param Points:
         :type Points: TColgp_Array2OfPnt
         :param DegMin: default value is 3
-        :type DegMin: int
+        :type DegMin: Standard_Integer
         :param DegMax: default value is 8
-        :type DegMax: int
+        :type DegMax: Standard_Integer
+        :param Continuity: default value is GeomAbs_C2
+        :type Continuity: GeomAbs_Shape
+        :param Tol3D: default value is 1.0e-3
+        :type Tol3D: float
+        :rtype: None
+
+        * Approximates a BSpline Surface passing through an array of Point. The resulting BSpline will have the following properties: 1- his degree will be in the range [Degmin,Degmax] 2- his continuity will be at least <Continuity> 3- the distance from the point <Points> to the BSpline will be lower to Tol3D
+
+        :param Points:
+        :type Points: TColgp_Array2OfPnt
+        :param DegMin: default value is 3
+        :type DegMin: Standard_Integer
+        :param DegMax: default value is 8
+        :type DegMax: Standard_Integer
+        :param Continuity: default value is GeomAbs_C2
+        :type Continuity: GeomAbs_Shape
+        :param Tol3D: default value is 1.0e-3
+        :type Tol3D: float
+        :rtype: None
+
+        * Approximates a BSpline Surface passing through an array of Point. The resulting BSpline will have the following properties: 1- his degree will be in the range [Degmin,Degmax] 2- his continuity will be at least <Continuity> 3- the distance from the point <Points> to the BSpline will be lower to Tol3D
+
+        :param Points:
+        :type Points: TColgp_Array2OfPnt
+        :param DegMin: default value is 3
+        :type DegMin: Standard_Integer
+        :param DegMax: default value is 8
+        :type DegMax: Standard_Integer
+        :param Continuity: default value is GeomAbs_C2
+        :type Continuity: GeomAbs_Shape
+        :param Tol3D: default value is 1.0e-3
+        :type Tol3D: float
+        :rtype: None
+
+        * Approximates a BSpline Surface passing through an array of Point. The resulting BSpline will have the following properties: 1- his degree will be in the range [Degmin,Degmax] 2- his continuity will be at least <Continuity> 3- the distance from the point <Points> to the BSpline will be lower to Tol3D
+
+        :param Points:
+        :type Points: TColgp_Array2OfPnt
+        :param DegMin: default value is 3
+        :type DegMin: Standard_Integer
+        :param DegMax: default value is 8
+        :type DegMax: Standard_Integer
+        :param Continuity: default value is GeomAbs_C2
+        :type Continuity: GeomAbs_Shape
+        :param Tol3D: default value is 1.0e-3
+        :type Tol3D: float
+        :rtype: None
+
+        * Approximates a BSpline Surface passing through an array of Point. The resulting BSpline will have the following properties: 1- his degree will be in the range [Degmin,Degmax] 2- his continuity will be at least <Continuity> 3- the distance from the point <Points> to the BSpline will be lower to Tol3D
+
+        :param Points:
+        :type Points: TColgp_Array2OfPnt
+        :param DegMin: default value is 3
+        :type DegMin: Standard_Integer
+        :param DegMax: default value is 8
+        :type DegMax: Standard_Integer
         :param Continuity: default value is GeomAbs_C2
         :type Continuity: GeomAbs_Shape
         :param Tol3D: default value is 1.0e-3
@@ -1435,9 +2248,97 @@ class GeomAPI_PointsToBSplineSurface(object):
         :param dY:
         :type dY: float
         :param DegMin: default value is 3
-        :type DegMin: int
+        :type DegMin: Standard_Integer
         :param DegMax: default value is 8
-        :type DegMax: int
+        :type DegMax: Standard_Integer
+        :param Continuity: default value is GeomAbs_C2
+        :type Continuity: GeomAbs_Shape
+        :param Tol3D: default value is 1.0e-3
+        :type Tol3D: float
+        :rtype: None
+
+        * Approximates a BSpline Surface passing through an array of Points.  The points will be constructed as follow:  P(i,j) = gp_Pnt( X0 + (i-1)*dX ,  Y0 + (j-1)*dY ,  ZPoints(i,j) )  The resulting BSpline will have the following properties: 1- his degree will be in the range [Degmin,Degmax] 2- his continuity will be at least <Continuity> 3- the distance from the point <Points> to the BSpline will be lower to Tol3D 4- the parametrization of the surface will verify:  S->Value( U, V) = gp_Pnt( U, V, Z(U,V) );
+
+        :param ZPoints:
+        :type ZPoints: TColStd_Array2OfReal &
+        :param X0:
+        :type X0: float
+        :param dX:
+        :type dX: float
+        :param Y0:
+        :type Y0: float
+        :param dY:
+        :type dY: float
+        :param DegMin: default value is 3
+        :type DegMin: Standard_Integer
+        :param DegMax: default value is 8
+        :type DegMax: Standard_Integer
+        :param Continuity: default value is GeomAbs_C2
+        :type Continuity: GeomAbs_Shape
+        :param Tol3D: default value is 1.0e-3
+        :type Tol3D: float
+        :rtype: None
+
+        * Approximates a BSpline Surface passing through an array of Points.  The points will be constructed as follow:  P(i,j) = gp_Pnt( X0 + (i-1)*dX ,  Y0 + (j-1)*dY ,  ZPoints(i,j) )  The resulting BSpline will have the following properties: 1- his degree will be in the range [Degmin,Degmax] 2- his continuity will be at least <Continuity> 3- the distance from the point <Points> to the BSpline will be lower to Tol3D 4- the parametrization of the surface will verify:  S->Value( U, V) = gp_Pnt( U, V, Z(U,V) );
+
+        :param ZPoints:
+        :type ZPoints: TColStd_Array2OfReal &
+        :param X0:
+        :type X0: float
+        :param dX:
+        :type dX: float
+        :param Y0:
+        :type Y0: float
+        :param dY:
+        :type dY: float
+        :param DegMin: default value is 3
+        :type DegMin: Standard_Integer
+        :param DegMax: default value is 8
+        :type DegMax: Standard_Integer
+        :param Continuity: default value is GeomAbs_C2
+        :type Continuity: GeomAbs_Shape
+        :param Tol3D: default value is 1.0e-3
+        :type Tol3D: float
+        :rtype: None
+
+        * Approximates a BSpline Surface passing through an array of Points.  The points will be constructed as follow:  P(i,j) = gp_Pnt( X0 + (i-1)*dX ,  Y0 + (j-1)*dY ,  ZPoints(i,j) )  The resulting BSpline will have the following properties: 1- his degree will be in the range [Degmin,Degmax] 2- his continuity will be at least <Continuity> 3- the distance from the point <Points> to the BSpline will be lower to Tol3D 4- the parametrization of the surface will verify:  S->Value( U, V) = gp_Pnt( U, V, Z(U,V) );
+
+        :param ZPoints:
+        :type ZPoints: TColStd_Array2OfReal &
+        :param X0:
+        :type X0: float
+        :param dX:
+        :type dX: float
+        :param Y0:
+        :type Y0: float
+        :param dY:
+        :type dY: float
+        :param DegMin: default value is 3
+        :type DegMin: Standard_Integer
+        :param DegMax: default value is 8
+        :type DegMax: Standard_Integer
+        :param Continuity: default value is GeomAbs_C2
+        :type Continuity: GeomAbs_Shape
+        :param Tol3D: default value is 1.0e-3
+        :type Tol3D: float
+        :rtype: None
+
+        * Approximates a BSpline Surface passing through an array of Points.  The points will be constructed as follow:  P(i,j) = gp_Pnt( X0 + (i-1)*dX ,  Y0 + (j-1)*dY ,  ZPoints(i,j) )  The resulting BSpline will have the following properties: 1- his degree will be in the range [Degmin,Degmax] 2- his continuity will be at least <Continuity> 3- the distance from the point <Points> to the BSpline will be lower to Tol3D 4- the parametrization of the surface will verify:  S->Value( U, V) = gp_Pnt( U, V, Z(U,V) );
+
+        :param ZPoints:
+        :type ZPoints: TColStd_Array2OfReal &
+        :param X0:
+        :type X0: float
+        :param dX:
+        :type dX: float
+        :param Y0:
+        :type Y0: float
+        :param dY:
+        :type dY: float
+        :param DegMin: default value is 3
+        :type DegMin: Standard_Integer
+        :param DegMax: default value is 8
+        :type DegMax: Standard_Integer
         :param Continuity: default value is GeomAbs_C2
         :type Continuity: GeomAbs_Shape
         :param Tol3D: default value is 1.0e-3
@@ -1451,9 +2352,73 @@ class GeomAPI_PointsToBSplineSurface(object):
         :param ParType:
         :type ParType: Approx_ParametrizationType
         :param DegMin: default value is 3
-        :type DegMin: int
+        :type DegMin: Standard_Integer
         :param DegMax: default value is 8
-        :type DegMax: int
+        :type DegMax: Standard_Integer
+        :param Continuity: default value is GeomAbs_C2
+        :type Continuity: GeomAbs_Shape
+        :param Tol3D: default value is 1.0e-3
+        :type Tol3D: float
+        :rtype: None
+
+        * Approximates a BSpline Surface passing through an array of Point. The resulting BSpline will have the following properties: 1- his degree will be in the range [Degmin,Degmax] 2- his continuity will be at least <Continuity> 3- the distance from the point <Points> to the BSpline will be lower to Tol3D
+
+        :param Points:
+        :type Points: TColgp_Array2OfPnt
+        :param ParType:
+        :type ParType: Approx_ParametrizationType
+        :param DegMin: default value is 3
+        :type DegMin: Standard_Integer
+        :param DegMax: default value is 8
+        :type DegMax: Standard_Integer
+        :param Continuity: default value is GeomAbs_C2
+        :type Continuity: GeomAbs_Shape
+        :param Tol3D: default value is 1.0e-3
+        :type Tol3D: float
+        :rtype: None
+
+        * Approximates a BSpline Surface passing through an array of Point. The resulting BSpline will have the following properties: 1- his degree will be in the range [Degmin,Degmax] 2- his continuity will be at least <Continuity> 3- the distance from the point <Points> to the BSpline will be lower to Tol3D
+
+        :param Points:
+        :type Points: TColgp_Array2OfPnt
+        :param ParType:
+        :type ParType: Approx_ParametrizationType
+        :param DegMin: default value is 3
+        :type DegMin: Standard_Integer
+        :param DegMax: default value is 8
+        :type DegMax: Standard_Integer
+        :param Continuity: default value is GeomAbs_C2
+        :type Continuity: GeomAbs_Shape
+        :param Tol3D: default value is 1.0e-3
+        :type Tol3D: float
+        :rtype: None
+
+        * Approximates a BSpline Surface passing through an array of Point. The resulting BSpline will have the following properties: 1- his degree will be in the range [Degmin,Degmax] 2- his continuity will be at least <Continuity> 3- the distance from the point <Points> to the BSpline will be lower to Tol3D
+
+        :param Points:
+        :type Points: TColgp_Array2OfPnt
+        :param ParType:
+        :type ParType: Approx_ParametrizationType
+        :param DegMin: default value is 3
+        :type DegMin: Standard_Integer
+        :param DegMax: default value is 8
+        :type DegMax: Standard_Integer
+        :param Continuity: default value is GeomAbs_C2
+        :type Continuity: GeomAbs_Shape
+        :param Tol3D: default value is 1.0e-3
+        :type Tol3D: float
+        :rtype: None
+
+        * Approximates a BSpline Surface passing through an array of Point. The resulting BSpline will have the following properties: 1- his degree will be in the range [Degmin,Degmax] 2- his continuity will be at least <Continuity> 3- the distance from the point <Points> to the BSpline will be lower to Tol3D
+
+        :param Points:
+        :type Points: TColgp_Array2OfPnt
+        :param ParType:
+        :type ParType: Approx_ParametrizationType
+        :param DegMin: default value is 3
+        :type DegMin: Standard_Integer
+        :param DegMax: default value is 8
+        :type DegMax: Standard_Integer
         :param Continuity: default value is GeomAbs_C2
         :type Continuity: GeomAbs_Shape
         :param Tol3D: default value is 1.0e-3
@@ -1471,7 +2436,61 @@ class GeomAPI_PointsToBSplineSurface(object):
         :param Weight3:
         :type Weight3: float
         :param DegMax: default value is 8
-        :type DegMax: int
+        :type DegMax: Standard_Integer
+        :param Continuity: default value is GeomAbs_C2
+        :type Continuity: GeomAbs_Shape
+        :param Tol3D: default value is 1.0e-3
+        :type Tol3D: float
+        :rtype: None
+
+        * Approximates a BSpline Surface passing through an array of point using variational smoothing algorithm, which tries to minimize additional criterium: Weight1*CurveLength + Weight2*Curvature + Weight3*Torsion
+
+        :param Points:
+        :type Points: TColgp_Array2OfPnt
+        :param Weight1:
+        :type Weight1: float
+        :param Weight2:
+        :type Weight2: float
+        :param Weight3:
+        :type Weight3: float
+        :param DegMax: default value is 8
+        :type DegMax: Standard_Integer
+        :param Continuity: default value is GeomAbs_C2
+        :type Continuity: GeomAbs_Shape
+        :param Tol3D: default value is 1.0e-3
+        :type Tol3D: float
+        :rtype: None
+
+        * Approximates a BSpline Surface passing through an array of point using variational smoothing algorithm, which tries to minimize additional criterium: Weight1*CurveLength + Weight2*Curvature + Weight3*Torsion
+
+        :param Points:
+        :type Points: TColgp_Array2OfPnt
+        :param Weight1:
+        :type Weight1: float
+        :param Weight2:
+        :type Weight2: float
+        :param Weight3:
+        :type Weight3: float
+        :param DegMax: default value is 8
+        :type DegMax: Standard_Integer
+        :param Continuity: default value is GeomAbs_C2
+        :type Continuity: GeomAbs_Shape
+        :param Tol3D: default value is 1.0e-3
+        :type Tol3D: float
+        :rtype: None
+
+        * Approximates a BSpline Surface passing through an array of point using variational smoothing algorithm, which tries to minimize additional criterium: Weight1*CurveLength + Weight2*Curvature + Weight3*Torsion
+
+        :param Points:
+        :type Points: TColgp_Array2OfPnt
+        :param Weight1:
+        :type Weight1: float
+        :param Weight2:
+        :type Weight2: float
+        :param Weight3:
+        :type Weight3: float
+        :param DegMax: default value is 8
+        :type DegMax: Standard_Integer
         :param Continuity: default value is GeomAbs_C2
         :type Continuity: GeomAbs_Shape
         :param Tol3D: default value is 1.0e-3
@@ -1481,21 +2500,21 @@ class GeomAPI_PointsToBSplineSurface(object):
         """
         return _GeomAPI.GeomAPI_PointsToBSplineSurface_Init(self, *args)
 
-    def Surface(self, *args) -> "Handle_Geom_BSplineSurface const &" :
+    def Surface(self):
         """
         * Returns the approximate BSpline Surface
 
         :rtype: Handle_Geom_BSplineSurface
 
         """
-        return _GeomAPI.GeomAPI_PointsToBSplineSurface_Surface(self, *args)
+        return _GeomAPI.GeomAPI_PointsToBSplineSurface_Surface(self)
 
-    def IsDone(self, *args) -> "Standard_Boolean" :
+    def IsDone(self):
         """
         :rtype: bool
 
         """
-        return _GeomAPI.GeomAPI_PointsToBSplineSurface_IsDone(self, *args)
+        return _GeomAPI.GeomAPI_PointsToBSplineSurface_IsDone(self)
 
     def __del__(self):
     	try:
@@ -1544,7 +2563,7 @@ class GeomAPI_ProjectPointOnCurve(object):
 
         """
         _GeomAPI.GeomAPI_ProjectPointOnCurve_swiginit(self,_GeomAPI.new_GeomAPI_ProjectPointOnCurve(*args))
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
         * Init the projection of a point <P> on a curve <Curve>
 
@@ -1579,7 +2598,7 @@ class GeomAPI_ProjectPointOnCurve(object):
         """
         return _GeomAPI.GeomAPI_ProjectPointOnCurve_Init(self, *args)
 
-    def Perform(self, *args) -> "void" :
+    def Perform(self, *args):
         """
         * Performs the projection of a point on the current curve.
 
@@ -1590,38 +2609,38 @@ class GeomAPI_ProjectPointOnCurve(object):
         """
         return _GeomAPI.GeomAPI_ProjectPointOnCurve_Perform(self, *args)
 
-    def NbPoints(self, *args) -> "Standard_Integer" :
+    def NbPoints(self):
         """
         * Returns the number of computed orthogonal projection points. Note: if this algorithm fails, NbPoints returns 0.
 
         :rtype: int
 
         """
-        return _GeomAPI.GeomAPI_ProjectPointOnCurve_NbPoints(self, *args)
+        return _GeomAPI.GeomAPI_ProjectPointOnCurve_NbPoints(self)
 
-    def Point(self, *args) -> "gp_Pnt" :
+    def Point(self, *args):
         """
         * Returns the orthogonal projection on the curve. Index is a number of a computed point. Exceptions Standard_OutOfRange if Index is not in the range [ 1,NbPoints ], where NbPoints is the number of solution points.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: gp_Pnt
 
         """
         return _GeomAPI.GeomAPI_ProjectPointOnCurve_Point(self, *args)
 
-    def Parameter(self, *args) -> "void" :
+    def Parameter(self, *args):
         """
         * Returns the parameter on the curve of the point, which is the orthogonal projection. Index is a number of a computed point. Exceptions Standard_OutOfRange if Index is not in the range [ 1,NbPoints ], where NbPoints is the number of solution points.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Quantity_Parameter
 
         * Returns the parameter on the curve of the point, which is the orthogonal projection. Index is a number of a computed point. Exceptions Standard_OutOfRange if Index is not in the range [ 1,NbPoints ], where NbPoints is the number of solution points.-
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param U:
         :type U: Quantity_Parameter &
         :rtype: None
@@ -1629,52 +2648,52 @@ class GeomAPI_ProjectPointOnCurve(object):
         """
         return _GeomAPI.GeomAPI_ProjectPointOnCurve_Parameter(self, *args)
 
-    def Distance(self, *args) -> "Quantity_Length" :
+    def Distance(self, *args):
         """
         * Computes the distance between the point and its orthogonal projection on the curve. Index is a number of a computed point. Exceptions Standard_OutOfRange if Index is not in the range [ 1,NbPoints ], where NbPoints is the number of solution points.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Quantity_Length
 
         """
         return _GeomAPI.GeomAPI_ProjectPointOnCurve_Distance(self, *args)
 
-    def NearestPoint(self, *args) -> "gp_Pnt" :
+    def NearestPoint(self):
         """
         * Returns the nearest orthogonal projection of the point on the curve. Exceptions: StdFail_NotDone if this algorithm fails.
 
         :rtype: gp_Pnt
 
         """
-        return _GeomAPI.GeomAPI_ProjectPointOnCurve_NearestPoint(self, *args)
+        return _GeomAPI.GeomAPI_ProjectPointOnCurve_NearestPoint(self)
 
-    def LowerDistanceParameter(self, *args) -> "Quantity_Parameter" :
+    def LowerDistanceParameter(self):
         """
         * Returns the parameter on the curve of the nearest orthogonal projection of the point. Exceptions: StdFail_NotDone if this algorithm fails.
 
         :rtype: Quantity_Parameter
 
         """
-        return _GeomAPI.GeomAPI_ProjectPointOnCurve_LowerDistanceParameter(self, *args)
+        return _GeomAPI.GeomAPI_ProjectPointOnCurve_LowerDistanceParameter(self)
 
-    def LowerDistance(self, *args) -> "Quantity_Length" :
+    def LowerDistance(self):
         """
         * Computes the distance between the point and its nearest orthogonal projection on the curve. Exceptions: StdFail_NotDone if this algorithm fails.
 
         :rtype: Quantity_Length
 
         """
-        return _GeomAPI.GeomAPI_ProjectPointOnCurve_LowerDistance(self, *args)
+        return _GeomAPI.GeomAPI_ProjectPointOnCurve_LowerDistance(self)
 
-    def Extrema(self, *args) -> "Extrema_ExtPC const &" :
+    def Extrema(self):
         """
         * return the algorithmic object from Extrema
 
         :rtype: Extrema_ExtPC
 
         """
-        return _GeomAPI.GeomAPI_ProjectPointOnCurve_Extrema(self, *args)
+        return _GeomAPI.GeomAPI_ProjectPointOnCurve_Extrema(self)
 
     def __del__(self):
     	try:
@@ -1717,12 +2736,52 @@ class GeomAPI_ProjectPointOnSurf(object):
         :type Algo: Extrema_ExtAlgo
         :rtype: None
 
+        * Create the projection of a point <P> on a surface <Surface>
+
+        :param P:
+        :type P: gp_Pnt
+        :param Surface:
+        :type Surface: Handle_Geom_Surface &
+        :param Algo: default value is Extrema_ExtAlgo_Grad
+        :type Algo: Extrema_ExtAlgo
+        :rtype: None
+
         * Create the projection of a point <P> on a surface <Surface> Create the projection of a point <P> on a surface <Surface>. The solution are computed in the domain [Umin,Usup] [Vmin,Vsup] of the surface.
 
         :param P:
         :type P: gp_Pnt
         :param Surface:
         :type Surface: Handle_Geom_Surface &
+        :param Tolerance:
+        :type Tolerance: float
+        :param Algo: default value is Extrema_ExtAlgo_Grad
+        :type Algo: Extrema_ExtAlgo
+        :rtype: None
+
+        * Create the projection of a point <P> on a surface <Surface> Create the projection of a point <P> on a surface <Surface>. The solution are computed in the domain [Umin,Usup] [Vmin,Vsup] of the surface.
+
+        :param P:
+        :type P: gp_Pnt
+        :param Surface:
+        :type Surface: Handle_Geom_Surface &
+        :param Tolerance:
+        :type Tolerance: float
+        :param Algo: default value is Extrema_ExtAlgo_Grad
+        :type Algo: Extrema_ExtAlgo
+        :rtype: None
+
+        :param P:
+        :type P: gp_Pnt
+        :param Surface:
+        :type Surface: Handle_Geom_Surface &
+        :param Umin:
+        :type Umin: Quantity_Parameter
+        :param Usup:
+        :type Usup: Quantity_Parameter
+        :param Vmin:
+        :type Vmin: Quantity_Parameter
+        :param Vsup:
+        :type Vsup: Quantity_Parameter
         :param Tolerance:
         :type Tolerance: float
         :param Algo: default value is Extrema_ExtAlgo_Grad
@@ -1765,9 +2824,27 @@ class GeomAPI_ProjectPointOnSurf(object):
         :type Algo: Extrema_ExtAlgo
         :rtype: None
 
+        * Init the projection of a point <P> on a surface <Surface>
+
+        :param P:
+        :type P: gp_Pnt
+        :param Surface:
+        :type Surface: Handle_Geom_Surface &
+        :param Umin:
+        :type Umin: Quantity_Parameter
+        :param Usup:
+        :type Usup: Quantity_Parameter
+        :param Vmin:
+        :type Vmin: Quantity_Parameter
+        :param Vsup:
+        :type Vsup: Quantity_Parameter
+        :param Algo: default value is Extrema_ExtAlgo_Grad
+        :type Algo: Extrema_ExtAlgo
+        :rtype: None
+
         """
         _GeomAPI.GeomAPI_ProjectPointOnSurf_swiginit(self,_GeomAPI.new_GeomAPI_ProjectPointOnSurf(*args))
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
         :param P:
         :type P: gp_Pnt
@@ -1775,6 +2852,26 @@ class GeomAPI_ProjectPointOnSurf(object):
         :type Surface: Handle_Geom_Surface &
         :param Tolerance:
         :type Tolerance: float
+        :param Algo: default value is Extrema_ExtAlgo_Grad
+        :type Algo: Extrema_ExtAlgo
+        :rtype: None
+
+        :param P:
+        :type P: gp_Pnt
+        :param Surface:
+        :type Surface: Handle_Geom_Surface &
+        :param Tolerance:
+        :type Tolerance: float
+        :param Algo: default value is Extrema_ExtAlgo_Grad
+        :type Algo: Extrema_ExtAlgo
+        :rtype: None
+
+        * Init the projection of a point <P> on a surface <Surface>. The solution are computed in the domain [Umin,Usup] [Vmin,Vsup] of the surface.
+
+        :param P:
+        :type P: gp_Pnt
+        :param Surface:
+        :type Surface: Handle_Geom_Surface &
         :param Algo: default value is Extrema_ExtAlgo_Grad
         :type Algo: Extrema_ExtAlgo
         :rtype: None
@@ -1803,6 +2900,42 @@ class GeomAPI_ProjectPointOnSurf(object):
         :type Vsup: Quantity_Parameter
         :param Tolerance:
         :type Tolerance: float
+        :param Algo: default value is Extrema_ExtAlgo_Grad
+        :type Algo: Extrema_ExtAlgo
+        :rtype: None
+
+        :param P:
+        :type P: gp_Pnt
+        :param Surface:
+        :type Surface: Handle_Geom_Surface &
+        :param Umin:
+        :type Umin: Quantity_Parameter
+        :param Usup:
+        :type Usup: Quantity_Parameter
+        :param Vmin:
+        :type Vmin: Quantity_Parameter
+        :param Vsup:
+        :type Vsup: Quantity_Parameter
+        :param Tolerance:
+        :type Tolerance: float
+        :param Algo: default value is Extrema_ExtAlgo_Grad
+        :type Algo: Extrema_ExtAlgo
+        :rtype: None
+
+        * Init the projection for many points on a surface <Surface>. The solutions will be computed in the domain [Umin,Usup] [Vmin,Vsup] of the surface.
+
+        :param P:
+        :type P: gp_Pnt
+        :param Surface:
+        :type Surface: Handle_Geom_Surface &
+        :param Umin:
+        :type Umin: Quantity_Parameter
+        :param Usup:
+        :type Usup: Quantity_Parameter
+        :param Vmin:
+        :type Vmin: Quantity_Parameter
+        :param Vsup:
+        :type Vsup: Quantity_Parameter
         :param Algo: default value is Extrema_ExtAlgo_Grad
         :type Algo: Extrema_ExtAlgo
         :rtype: None
@@ -1851,6 +2984,36 @@ class GeomAPI_ProjectPointOnSurf(object):
         :type Vmin: Quantity_Parameter
         :param Vsup:
         :type Vsup: Quantity_Parameter
+        :param Tolerance:
+        :type Tolerance: float
+        :param Algo: default value is Extrema_ExtAlgo_Grad
+        :type Algo: Extrema_ExtAlgo
+        :rtype: None
+
+        :param Surface:
+        :type Surface: Handle_Geom_Surface &
+        :param Umin:
+        :type Umin: Quantity_Parameter
+        :param Usup:
+        :type Usup: Quantity_Parameter
+        :param Vmin:
+        :type Vmin: Quantity_Parameter
+        :param Vsup:
+        :type Vsup: Quantity_Parameter
+        :param Algo: default value is Extrema_ExtAlgo_Grad
+        :type Algo: Extrema_ExtAlgo
+        :rtype: None
+
+        :param Surface:
+        :type Surface: Handle_Geom_Surface &
+        :param Umin:
+        :type Umin: Quantity_Parameter
+        :param Usup:
+        :type Usup: Quantity_Parameter
+        :param Vmin:
+        :type Vmin: Quantity_Parameter
+        :param Vsup:
+        :type Vsup: Quantity_Parameter
         :param Algo: default value is Extrema_ExtAlgo_Grad
         :type Algo: Extrema_ExtAlgo
         :rtype: None
@@ -1858,7 +3021,7 @@ class GeomAPI_ProjectPointOnSurf(object):
         """
         return _GeomAPI.GeomAPI_ProjectPointOnSurf_Init(self, *args)
 
-    def Perform(self, *args) -> "void" :
+    def Perform(self, *args):
         """
         * Performs the projection of a point on the current surface.
 
@@ -1869,39 +3032,39 @@ class GeomAPI_ProjectPointOnSurf(object):
         """
         return _GeomAPI.GeomAPI_ProjectPointOnSurf_Perform(self, *args)
 
-    def IsDone(self, *args) -> "Standard_Boolean" :
+    def IsDone(self):
         """
         :rtype: bool
 
         """
-        return _GeomAPI.GeomAPI_ProjectPointOnSurf_IsDone(self, *args)
+        return _GeomAPI.GeomAPI_ProjectPointOnSurf_IsDone(self)
 
-    def NbPoints(self, *args) -> "Standard_Integer" :
+    def NbPoints(self):
         """
         * Returns the number of computed orthogonal projection points. Note: if projection fails, NbPoints returns 0.
 
         :rtype: int
 
         """
-        return _GeomAPI.GeomAPI_ProjectPointOnSurf_NbPoints(self, *args)
+        return _GeomAPI.GeomAPI_ProjectPointOnSurf_NbPoints(self)
 
-    def Point(self, *args) -> "gp_Pnt" :
+    def Point(self, *args):
         """
         * Returns the orthogonal projection on the surface. Index is a number of a computed point. Exceptions Standard_OutOfRange if Index is not in the range [ 1,NbPoints ], where NbPoints is the number of solution points.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: gp_Pnt
 
         """
         return _GeomAPI.GeomAPI_ProjectPointOnSurf_Point(self, *args)
 
-    def Parameters(self, *args) -> "void" :
+    def Parameters(self, *args):
         """
         * Returns the parameters (U,V) on the surface of the orthogonal projection. Index is a number of a computed point. Exceptions Standard_OutOfRange if Index is not in the range [ 1,NbPoints ], where NbPoints is the number of solution points.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param U:
         :type U: Quantity_Parameter &
         :param V:
@@ -1911,27 +3074,27 @@ class GeomAPI_ProjectPointOnSurf(object):
         """
         return _GeomAPI.GeomAPI_ProjectPointOnSurf_Parameters(self, *args)
 
-    def Distance(self, *args) -> "Quantity_Length" :
+    def Distance(self, *args):
         """
         * Computes the distance between the point and its orthogonal projection on the surface. Index is a number of a computed point. Exceptions Standard_OutOfRange if Index is not in the range [ 1,NbPoints ], where NbPoints is the number of solution points.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Quantity_Length
 
         """
         return _GeomAPI.GeomAPI_ProjectPointOnSurf_Distance(self, *args)
 
-    def NearestPoint(self, *args) -> "gp_Pnt" :
+    def NearestPoint(self):
         """
         * Returns the nearest orthogonal projection of the point on the surface. Exceptions StdFail_NotDone if projection fails.
 
         :rtype: gp_Pnt
 
         """
-        return _GeomAPI.GeomAPI_ProjectPointOnSurf_NearestPoint(self, *args)
+        return _GeomAPI.GeomAPI_ProjectPointOnSurf_NearestPoint(self)
 
-    def LowerDistanceParameters(self, *args) -> "void" :
+    def LowerDistanceParameters(self):
         """
         * Returns the parameters (U,V) on the surface of the nearest computed orthogonal projection of the point. Exceptions StdFail_NotDone if projection fails.
 
@@ -1942,25 +3105,25 @@ class GeomAPI_ProjectPointOnSurf(object):
         :rtype: None
 
         """
-        return _GeomAPI.GeomAPI_ProjectPointOnSurf_LowerDistanceParameters(self, *args)
+        return _GeomAPI.GeomAPI_ProjectPointOnSurf_LowerDistanceParameters(self)
 
-    def LowerDistance(self, *args) -> "Quantity_Length" :
+    def LowerDistance(self):
         """
         * Computes the distance between the point and its nearest orthogonal projection on the surface. Exceptions StdFail_NotDone if projection fails.
 
         :rtype: Quantity_Length
 
         """
-        return _GeomAPI.GeomAPI_ProjectPointOnSurf_LowerDistance(self, *args)
+        return _GeomAPI.GeomAPI_ProjectPointOnSurf_LowerDistance(self)
 
-    def Extrema(self, *args) -> "Extrema_ExtPS const &" :
+    def Extrema(self):
         """
         * return the algorithmic object from Extrema
 
         :rtype: Extrema_ExtPS
 
         """
-        return _GeomAPI.GeomAPI_ProjectPointOnSurf_Extrema(self, *args)
+        return _GeomAPI.GeomAPI_ProjectPointOnSurf_Extrema(self)
 
     def __del__(self):
     	try:

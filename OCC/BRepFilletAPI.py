@@ -162,7 +162,7 @@ class BRepFilletAPI_LocalOperation(OCC.BRepBuilderAPI.BRepBuilderAPI_MakeShape):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def Add(self, *args) -> "void" :
+    def Add(self, *args):
         """
         * Adds a contour in the builder (builds a contour of tangent edges).
 
@@ -173,27 +173,27 @@ class BRepFilletAPI_LocalOperation(OCC.BRepBuilderAPI.BRepBuilderAPI_MakeShape):
         """
         return _BRepFilletAPI.BRepFilletAPI_LocalOperation_Add(self, *args)
 
-    def ResetContour(self, *args) -> "void" :
+    def ResetContour(self, *args):
         """
         * Reset the contour of index IC, there is nomore information in the contour.
 
         :param IC:
-        :type IC: int
+        :type IC: Standard_Integer
         :rtype: void
 
         """
         return _BRepFilletAPI.BRepFilletAPI_LocalOperation_ResetContour(self, *args)
 
-    def NbContours(self, *args) -> "Standard_Integer" :
+    def NbContours(self):
         """
         * Number of contours.
 
         :rtype: int
 
         """
-        return _BRepFilletAPI.BRepFilletAPI_LocalOperation_NbContours(self, *args)
+        return _BRepFilletAPI.BRepFilletAPI_LocalOperation_NbContours(self)
 
-    def Contour(self, *args) -> "Standard_Integer" :
+    def Contour(self, *args):
         """
         * Returns the index of the contour containing the edge E, returns 0 if E doesn't belong to any contour.
 
@@ -204,31 +204,31 @@ class BRepFilletAPI_LocalOperation(OCC.BRepBuilderAPI.BRepBuilderAPI_MakeShape):
         """
         return _BRepFilletAPI.BRepFilletAPI_LocalOperation_Contour(self, *args)
 
-    def NbEdges(self, *args) -> "Standard_Integer" :
+    def NbEdges(self, *args):
         """
         * Number of Edges in the contour I.
 
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :rtype: int
 
         """
         return _BRepFilletAPI.BRepFilletAPI_LocalOperation_NbEdges(self, *args)
 
-    def Edge(self, *args) -> "TopoDS_Edge const" :
+    def Edge(self, *args):
         """
         * Returns the Edge J in the contour I.
 
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :param J:
-        :type J: int
+        :type J: Standard_Integer
         :rtype: TopoDS_Edge
 
         """
         return _BRepFilletAPI.BRepFilletAPI_LocalOperation_Edge(self, *args)
 
-    def Remove(self, *args) -> "void" :
+    def Remove(self, *args):
         """
         * remove the contour containing the Edge E.
 
@@ -239,45 +239,45 @@ class BRepFilletAPI_LocalOperation(OCC.BRepBuilderAPI.BRepBuilderAPI_MakeShape):
         """
         return _BRepFilletAPI.BRepFilletAPI_LocalOperation_Remove(self, *args)
 
-    def Length(self, *args) -> "Standard_Real" :
+    def Length(self, *args):
         """
         * returns the length the contour of index IC.
 
         :param IC:
-        :type IC: int
+        :type IC: Standard_Integer
         :rtype: float
 
         """
         return _BRepFilletAPI.BRepFilletAPI_LocalOperation_Length(self, *args)
 
-    def FirstVertex(self, *args) -> "TopoDS_Vertex" :
+    def FirstVertex(self, *args):
         """
         * Returns the first Vertex of the contour of index IC.
 
         :param IC:
-        :type IC: int
+        :type IC: Standard_Integer
         :rtype: TopoDS_Vertex
 
         """
         return _BRepFilletAPI.BRepFilletAPI_LocalOperation_FirstVertex(self, *args)
 
-    def LastVertex(self, *args) -> "TopoDS_Vertex" :
+    def LastVertex(self, *args):
         """
         * Returns the last Vertex of the contour of index IC.
 
         :param IC:
-        :type IC: int
+        :type IC: Standard_Integer
         :rtype: TopoDS_Vertex
 
         """
         return _BRepFilletAPI.BRepFilletAPI_LocalOperation_LastVertex(self, *args)
 
-    def Abscissa(self, *args) -> "Standard_Real" :
+    def Abscissa(self, *args):
         """
         * returns the abscissa of the vertex V on the contour of index IC.
 
         :param IC:
-        :type IC: int
+        :type IC: Standard_Integer
         :param V:
         :type V: TopoDS_Vertex &
         :rtype: float
@@ -285,12 +285,12 @@ class BRepFilletAPI_LocalOperation(OCC.BRepBuilderAPI.BRepBuilderAPI_MakeShape):
         """
         return _BRepFilletAPI.BRepFilletAPI_LocalOperation_Abscissa(self, *args)
 
-    def RelativeAbscissa(self, *args) -> "Standard_Real" :
+    def RelativeAbscissa(self, *args):
         """
         * returns the relative abscissa([0.,1.]) of the vertex V on the contour of index IC.
 
         :param IC:
-        :type IC: int
+        :type IC: Standard_Integer
         :param V:
         :type V: TopoDS_Vertex &
         :rtype: float
@@ -298,61 +298,61 @@ class BRepFilletAPI_LocalOperation(OCC.BRepBuilderAPI.BRepBuilderAPI_MakeShape):
         """
         return _BRepFilletAPI.BRepFilletAPI_LocalOperation_RelativeAbscissa(self, *args)
 
-    def ClosedAndTangent(self, *args) -> "Standard_Boolean" :
+    def ClosedAndTangent(self, *args):
         """
         * returns true if the contour of index IC is closed an tangent.
 
         :param IC:
-        :type IC: int
+        :type IC: Standard_Integer
         :rtype: bool
 
         """
         return _BRepFilletAPI.BRepFilletAPI_LocalOperation_ClosedAndTangent(self, *args)
 
-    def Closed(self, *args) -> "Standard_Boolean" :
+    def Closed(self, *args):
         """
         * returns true if the contour of index IC is closed
 
         :param IC:
-        :type IC: int
+        :type IC: Standard_Integer
         :rtype: bool
 
         """
         return _BRepFilletAPI.BRepFilletAPI_LocalOperation_Closed(self, *args)
 
-    def Reset(self, *args) -> "void" :
+    def Reset(self):
         """
         * Reset all the fields updated by Build operation and leave the algorithm in the same state than before build call. It allows contours and radius modifications to build the result another time.
 
         :rtype: void
 
         """
-        return _BRepFilletAPI.BRepFilletAPI_LocalOperation_Reset(self, *args)
+        return _BRepFilletAPI.BRepFilletAPI_LocalOperation_Reset(self)
 
-    def Simulate(self, *args) -> "void" :
+    def Simulate(self, *args):
         """
         :param IC:
-        :type IC: int
+        :type IC: Standard_Integer
         :rtype: void
 
         """
         return _BRepFilletAPI.BRepFilletAPI_LocalOperation_Simulate(self, *args)
 
-    def NbSurf(self, *args) -> "Standard_Integer" :
+    def NbSurf(self, *args):
         """
         :param IC:
-        :type IC: int
+        :type IC: Standard_Integer
         :rtype: int
 
         """
         return _BRepFilletAPI.BRepFilletAPI_LocalOperation_NbSurf(self, *args)
 
-    def Sect(self, *args) -> "Handle_ChFiDS_SecHArray1" :
+    def Sect(self, *args):
         """
         :param IC:
-        :type IC: int
+        :type IC: Standard_Integer
         :param IS:
-        :type IS: int
+        :type IS: Standard_Integer
         :rtype: Handle_ChFiDS_SecHArray1
 
         """
@@ -405,7 +405,7 @@ class BRepFilletAPI_MakeFillet2d(OCC.BRepBuilderAPI.BRepBuilderAPI_MakeShape):
 
         """
         _BRepFilletAPI.BRepFilletAPI_MakeFillet2d_swiginit(self,_BRepFilletAPI.new_BRepFilletAPI_MakeFillet2d(*args))
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
         * Initializes this algorithm for constructing fillets or chamfers with the face F. Warning The status of the initialization, as given by the Status function, can be one of the following: - ChFi2d_Ready if the initialization is correct, - ChFi2d_NotPlanar if F is not planar, - ChFi2d_NoFace if F is a null face.
 
@@ -424,7 +424,7 @@ class BRepFilletAPI_MakeFillet2d(OCC.BRepBuilderAPI.BRepBuilderAPI_MakeShape):
         """
         return _BRepFilletAPI.BRepFilletAPI_MakeFillet2d_Init(self, *args)
 
-    def AddFillet(self, *args) -> "TopoDS_Edge" :
+    def AddFillet(self, *args):
         """
         * Adds a fillet of radius Radius between the two edges adjacent to the vertex V on the face modified by this algorithm. The two edges do not need to be rectilinear. This function returns the fillet and builds the resulting face. Warning The status of the construction, as given by the Status function, can be one of the following: - ChFi2d_IsDone if the fillet is built, - ChFi2d_ConnexionError if V does not belong to the initial face, - ChFi2d_ComputationError if Radius is too large to build a fillet between the two adjacent edges, - ChFi2d_NotAuthorized - if one of the two edges connected to V is a fillet or chamfer, or - if a curve other than a straight line or an arc of a circle is used as E, E1 or E2. Do not use the returned fillet if the status of the construction is not ChFi2d_IsDone. Exceptions Standard_NegativeValue if Radius is less than or equal to zero.
 
@@ -437,7 +437,7 @@ class BRepFilletAPI_MakeFillet2d(OCC.BRepBuilderAPI.BRepBuilderAPI_MakeShape):
         """
         return _BRepFilletAPI.BRepFilletAPI_MakeFillet2d_AddFillet(self, *args)
 
-    def ModifyFillet(self, *args) -> "TopoDS_Edge" :
+    def ModifyFillet(self, *args):
         """
         * Assigns the radius Radius to the fillet Fillet already built on the face modified by this algorithm. This function returns the new fillet and modifies the existing face. Warning The status of the construction, as given by the Status function, can be one of the following: - ChFi2d_IsDone if the new fillet is built, - ChFi2d_ConnexionError if Fillet does not belong to the existing face, - ChFi2d_ComputationError if Radius is too large to build a fillet between the two adjacent edges. Do not use the returned fillet if the status of the construction is not ChFi2d_IsDone. Exceptions Standard_NegativeValue if Radius is less than or equal to zero.
 
@@ -450,7 +450,7 @@ class BRepFilletAPI_MakeFillet2d(OCC.BRepBuilderAPI.BRepBuilderAPI_MakeShape):
         """
         return _BRepFilletAPI.BRepFilletAPI_MakeFillet2d_ModifyFillet(self, *args)
 
-    def RemoveFillet(self, *args) -> "TopoDS_Vertex" :
+    def RemoveFillet(self, *args):
         """
         * Removes the fillet Fillet already built on the face modified by this algorithm. This function returns the vertex connecting the two adjacent edges of Fillet and modifies the existing face. Warning - The returned vertex is only valid if the Status function returns ChFi2d_IsDone. - A null vertex is returned if the edge Fillet does not belong to the initial face.
 
@@ -461,7 +461,7 @@ class BRepFilletAPI_MakeFillet2d(OCC.BRepBuilderAPI.BRepBuilderAPI_MakeShape):
         """
         return _BRepFilletAPI.BRepFilletAPI_MakeFillet2d_RemoveFillet(self, *args)
 
-    def AddChamfer(self, *args) -> "TopoDS_Edge" :
+    def AddChamfer(self, *args):
         """
         * Adds a chamfer on the face modified by this algorithm between the two adjacent edges E1 and E2, where the extremities of the chamfer are on E1 and E2 at distances D1 and D2 respectively In cases where the edges are not rectilinear, distances are measured using the curvilinear abscissa of the edges and the angle is measured with respect to the tangent at the corresponding point. The angle Ang is given in radians. This function returns the chamfer and builds the resulting face.
 
@@ -490,7 +490,7 @@ class BRepFilletAPI_MakeFillet2d(OCC.BRepBuilderAPI.BRepBuilderAPI_MakeShape):
         """
         return _BRepFilletAPI.BRepFilletAPI_MakeFillet2d_AddChamfer(self, *args)
 
-    def ModifyChamfer(self, *args) -> "TopoDS_Edge" :
+    def ModifyChamfer(self, *args):
         """
         * Modifies the chamfer Chamfer on the face modified by this algorithm, where: E1 and E2 are the two adjacent edges on which Chamfer is already built; the extremities of the new chamfer are on E1 and E2 at distances D1 and D2 respectively.
 
@@ -521,7 +521,7 @@ class BRepFilletAPI_MakeFillet2d(OCC.BRepBuilderAPI.BRepBuilderAPI_MakeShape):
         """
         return _BRepFilletAPI.BRepFilletAPI_MakeFillet2d_ModifyChamfer(self, *args)
 
-    def RemoveChamfer(self, *args) -> "TopoDS_Vertex" :
+    def RemoveChamfer(self, *args):
         """
         * Removes the chamfer Chamfer already built on the face modified by this algorithm. This function returns the vertex connecting the two adjacent edges of Chamfer and modifies the existing face. Warning - The returned vertex is only valid if the Status function returns ChFi2d_IsDone. - A null vertex is returned if the edge Chamfer does not belong to the initial face.
 
@@ -532,7 +532,7 @@ class BRepFilletAPI_MakeFillet2d(OCC.BRepBuilderAPI.BRepBuilderAPI_MakeShape):
         """
         return _BRepFilletAPI.BRepFilletAPI_MakeFillet2d_RemoveChamfer(self, *args)
 
-    def IsModified(self, *args) -> "Standard_Boolean" :
+    def IsModified(self, *args):
         """
         * Returns true if the edge E on the face modified by this algorithm is chamfered or filleted. Warning Returns false if E does not belong to the face modified by this algorithm.
 
@@ -543,63 +543,63 @@ class BRepFilletAPI_MakeFillet2d(OCC.BRepBuilderAPI.BRepBuilderAPI_MakeShape):
         """
         return _BRepFilletAPI.BRepFilletAPI_MakeFillet2d_IsModified(self, *args)
 
-    def FilletEdges(self, *args) -> "TopTools_SequenceOfShape const &" :
+    def FilletEdges(self):
         """
         * Returns the table of fillets on the face modified by this algorithm.
 
         :rtype: TopTools_SequenceOfShape
 
         """
-        return _BRepFilletAPI.BRepFilletAPI_MakeFillet2d_FilletEdges(self, *args)
+        return _BRepFilletAPI.BRepFilletAPI_MakeFillet2d_FilletEdges(self)
 
-    def NbFillet(self, *args) -> "Standard_Integer" :
+    def NbFillet(self):
         """
         * Returns the number of fillets on the face modified by this algorithm.
 
         :rtype: int
 
         """
-        return _BRepFilletAPI.BRepFilletAPI_MakeFillet2d_NbFillet(self, *args)
+        return _BRepFilletAPI.BRepFilletAPI_MakeFillet2d_NbFillet(self)
 
-    def ChamferEdges(self, *args) -> "TopTools_SequenceOfShape const &" :
+    def ChamferEdges(self):
         """
         * Returns the table of chamfers on the face modified by this algorithm.
 
         :rtype: TopTools_SequenceOfShape
 
         """
-        return _BRepFilletAPI.BRepFilletAPI_MakeFillet2d_ChamferEdges(self, *args)
+        return _BRepFilletAPI.BRepFilletAPI_MakeFillet2d_ChamferEdges(self)
 
-    def NbChamfer(self, *args) -> "Standard_Integer" :
+    def NbChamfer(self):
         """
         * Returns the number of chamfers on the face modified by this algorithm.
 
         :rtype: int
 
         """
-        return _BRepFilletAPI.BRepFilletAPI_MakeFillet2d_NbChamfer(self, *args)
+        return _BRepFilletAPI.BRepFilletAPI_MakeFillet2d_NbChamfer(self)
 
-    def NbCurves(self, *args) -> "Standard_Integer" :
+    def NbCurves(self):
         """
         * returns the number of new curves after the shape creation.
 
         :rtype: int
 
         """
-        return _BRepFilletAPI.BRepFilletAPI_MakeFillet2d_NbCurves(self, *args)
+        return _BRepFilletAPI.BRepFilletAPI_MakeFillet2d_NbCurves(self)
 
-    def NewEdges(self, *args) -> "TopTools_ListOfShape const &" :
+    def NewEdges(self, *args):
         """
         * Return the Edges created for curve I.
 
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :rtype: TopTools_ListOfShape
 
         """
         return _BRepFilletAPI.BRepFilletAPI_MakeFillet2d_NewEdges(self, *args)
 
-    def HasDescendant(self, *args) -> "Standard_Boolean" :
+    def HasDescendant(self, *args):
         """
         :param E:
         :type E: TopoDS_Edge &
@@ -608,7 +608,7 @@ class BRepFilletAPI_MakeFillet2d(OCC.BRepBuilderAPI.BRepBuilderAPI_MakeShape):
         """
         return _BRepFilletAPI.BRepFilletAPI_MakeFillet2d_HasDescendant(self, *args)
 
-    def DescendantEdge(self, *args) -> "TopoDS_Edge const" :
+    def DescendantEdge(self, *args):
         """
         * Returns the chamfered or filleted edge built from the edge E on the face modified by this algorithm. If E has not been modified, this function returns E. Exceptions Standard_NoSuchObject if the edge E does not belong to the initial face.
 
@@ -619,7 +619,7 @@ class BRepFilletAPI_MakeFillet2d(OCC.BRepBuilderAPI.BRepBuilderAPI_MakeShape):
         """
         return _BRepFilletAPI.BRepFilletAPI_MakeFillet2d_DescendantEdge(self, *args)
 
-    def BasisEdge(self, *args) -> "TopoDS_Edge const" :
+    def BasisEdge(self, *args):
         """
         * Returns the basis edge on the face modified by this algorithm from which the chamfered or filleted edge E is built. If E has not been modified, this function returns E. Warning E is returned if it does not belong to the initial face.
 
@@ -630,12 +630,12 @@ class BRepFilletAPI_MakeFillet2d(OCC.BRepBuilderAPI.BRepBuilderAPI_MakeShape):
         """
         return _BRepFilletAPI.BRepFilletAPI_MakeFillet2d_BasisEdge(self, *args)
 
-    def Status(self, *args) -> "ChFi2d_ConstructionError" :
+    def Status(self):
         """
         :rtype: ChFi2d_ConstructionError
 
         """
-        return _BRepFilletAPI.BRepFilletAPI_MakeFillet2d_Status(self, *args)
+        return _BRepFilletAPI.BRepFilletAPI_MakeFillet2d_Status(self)
 
     def __del__(self):
     	try:
@@ -680,14 +680,14 @@ class BRepFilletAPI_MakeChamfer(BRepFilletAPI_LocalOperation):
 
         """
         _BRepFilletAPI.BRepFilletAPI_MakeChamfer_swiginit(self,_BRepFilletAPI.new_BRepFilletAPI_MakeChamfer(*args))
-    def SetDist(self, *args) -> "void" :
+    def SetDist(self, *args):
         """
         * Sets the distances Dis1 and Dis2 which give the parameters of the chamfer along the contour of index IC generated using the Add function in the internal data structure of this algorithm. The face F identifies the side where Dis1 is measured. Warning Nothing is done if either the edge E or the face F does not belong to the initial shape.
 
         :param Dis:
         :type Dis: float
         :param IC:
-        :type IC: int
+        :type IC: Standard_Integer
         :param F:
         :type F: TopoDS_Face &
         :rtype: None
@@ -695,10 +695,10 @@ class BRepFilletAPI_MakeChamfer(BRepFilletAPI_LocalOperation):
         """
         return _BRepFilletAPI.BRepFilletAPI_MakeChamfer_SetDist(self, *args)
 
-    def GetDist(self, *args) -> "void" :
+    def GetDist(self, *args):
         """
         :param IC:
-        :type IC: int
+        :type IC: Standard_Integer
         :param Dis:
         :type Dis: float &
         :rtype: None
@@ -706,7 +706,7 @@ class BRepFilletAPI_MakeChamfer(BRepFilletAPI_LocalOperation):
         """
         return _BRepFilletAPI.BRepFilletAPI_MakeChamfer_GetDist(self, *args)
 
-    def Add(self, *args) -> "void" :
+    def Add(self, *args):
         """
         * Adds edge E to the table of edges used by this algorithm to build chamfers, where the parameters of the chamfer must be set after the
 
@@ -739,7 +739,7 @@ class BRepFilletAPI_MakeChamfer(BRepFilletAPI_LocalOperation):
         """
         return _BRepFilletAPI.BRepFilletAPI_MakeChamfer_Add(self, *args)
 
-    def SetDists(self, *args) -> "void" :
+    def SetDists(self, *args):
         """
         * Sets the distances Dis1 and Dis2 which give the parameters of the chamfer along the contour of index IC generated using the Add function in the internal data structure of this algorithm. The face F identifies the side where Dis1 is measured. Warning Nothing is done if either the edge E or the face F does not belong to the initial shape.
 
@@ -748,7 +748,7 @@ class BRepFilletAPI_MakeChamfer(BRepFilletAPI_LocalOperation):
         :param Dis2:
         :type Dis2: float
         :param IC:
-        :type IC: int
+        :type IC: Standard_Integer
         :param F:
         :type F: TopoDS_Face &
         :rtype: None
@@ -756,12 +756,12 @@ class BRepFilletAPI_MakeChamfer(BRepFilletAPI_LocalOperation):
         """
         return _BRepFilletAPI.BRepFilletAPI_MakeChamfer_SetDists(self, *args)
 
-    def Dists(self, *args) -> "void" :
+    def Dists(self, *args):
         """
         * Returns the distances Dis1 and Dis2 which give the parameters of the chamfer along the contour of index IC in the internal data structure of this algorithm. Warning -1. is returned if IC is outside the bounds of the table of contours.
 
         :param IC:
-        :type IC: int
+        :type IC: Standard_Integer
         :param Dis1:
         :type Dis1: float &
         :param Dis2:
@@ -771,7 +771,7 @@ class BRepFilletAPI_MakeChamfer(BRepFilletAPI_LocalOperation):
         """
         return _BRepFilletAPI.BRepFilletAPI_MakeChamfer_Dists(self, *args)
 
-    def AddDA(self, *args) -> "void" :
+    def AddDA(self, *args):
         """
         * Adds a fillet contour in the builder (builds a contour of tangent edges to <E> and sets the distance <Dis1> and angle <Angle> ( parameters of the chamfer ) ).
 
@@ -788,7 +788,7 @@ class BRepFilletAPI_MakeChamfer(BRepFilletAPI_LocalOperation):
         """
         return _BRepFilletAPI.BRepFilletAPI_MakeChamfer_AddDA(self, *args)
 
-    def SetDistAngle(self, *args) -> "void" :
+    def SetDistAngle(self, *args):
         """
         * set the distance <Dis> and <Angle> of the fillet contour of index <IC> in the DS with <Dis> on <F>. if the face <F> is not one of common faces of an edge of the contour <IC>
 
@@ -797,7 +797,7 @@ class BRepFilletAPI_MakeChamfer(BRepFilletAPI_LocalOperation):
         :param Angle:
         :type Angle: float
         :param IC:
-        :type IC: int
+        :type IC: Standard_Integer
         :param F:
         :type F: TopoDS_Face &
         :rtype: None
@@ -805,12 +805,12 @@ class BRepFilletAPI_MakeChamfer(BRepFilletAPI_LocalOperation):
         """
         return _BRepFilletAPI.BRepFilletAPI_MakeChamfer_SetDistAngle(self, *args)
 
-    def GetDistAngle(self, *args) -> "void" :
+    def GetDistAngle(self, *args):
         """
         * gives the distances <Dis> and <Angle> of the fillet contour of index <IC> in the DS
 
         :param IC:
-        :type IC: int
+        :type IC: Standard_Integer
         :param Dis:
         :type Dis: float &
         :param Angle:
@@ -822,47 +822,47 @@ class BRepFilletAPI_MakeChamfer(BRepFilletAPI_LocalOperation):
         """
         return _BRepFilletAPI.BRepFilletAPI_MakeChamfer_GetDistAngle(self, *args)
 
-    def IsSymetric(self, *args) -> "Standard_Boolean" :
+    def IsSymetric(self, *args):
         """
         * return True if chamfer symetric false else.
 
         :param IC:
-        :type IC: int
+        :type IC: Standard_Integer
         :rtype: bool
 
         """
         return _BRepFilletAPI.BRepFilletAPI_MakeChamfer_IsSymetric(self, *args)
 
-    def IsTwoDistances(self, *args) -> "Standard_Boolean" :
+    def IsTwoDistances(self, *args):
         """
         * return True if chamfer is made with two distances false else.
 
         :param IC:
-        :type IC: int
+        :type IC: Standard_Integer
         :rtype: bool
 
         """
         return _BRepFilletAPI.BRepFilletAPI_MakeChamfer_IsTwoDistances(self, *args)
 
-    def IsDistanceAngle(self, *args) -> "Standard_Boolean" :
+    def IsDistanceAngle(self, *args):
         """
         * return True if chamfer is made with distance and angle false else.
 
         :param IC:
-        :type IC: int
+        :type IC: Standard_Integer
         :rtype: bool
 
         """
         return _BRepFilletAPI.BRepFilletAPI_MakeChamfer_IsDistanceAngle(self, *args)
 
-    def Builder(self, *args) -> "Handle_TopOpeBRepBuild_HBuilder" :
+    def Builder(self):
         """
         * Returns the internal filleting algorithm.
 
         :rtype: Handle_TopOpeBRepBuild_HBuilder
 
         """
-        return _BRepFilletAPI.BRepFilletAPI_MakeChamfer_Builder(self, *args)
+        return _BRepFilletAPI.BRepFilletAPI_MakeChamfer_Builder(self)
 
     def __del__(self):
     	try:
@@ -901,9 +901,17 @@ class BRepFilletAPI_MakeFillet(BRepFilletAPI_LocalOperation):
         :type FShape: ChFi3d_FilletShape
         :rtype: None
 
+        * Initializes the computation of the fillets. <FShape> sets the type of fillet surface. The default value is ChFi3d_Rational (classical nurbs representation of circles). ChFi3d_QuasiAngular corresponds to a nurbs representation of circles which parameterisation matches the circle one. ChFi3d_Polynomial corresponds to a polynomial representation of circles.
+
+        :param S:
+        :type S: TopoDS_Shape &
+        :param FShape: default value is ChFi3d_Rational
+        :type FShape: ChFi3d_FilletShape
+        :rtype: None
+
         """
         _BRepFilletAPI.BRepFilletAPI_MakeFillet_swiginit(self,_BRepFilletAPI.new_BRepFilletAPI_MakeFillet(*args))
-    def SetParams(self, *args) -> "void" :
+    def SetParams(self, *args):
         """
         :param Tang:
         :type Tang: float
@@ -922,7 +930,7 @@ class BRepFilletAPI_MakeFillet(BRepFilletAPI_LocalOperation):
         """
         return _BRepFilletAPI.BRepFilletAPI_MakeFillet_SetParams(self, *args)
 
-    def SetContinuity(self, *args) -> "void" :
+    def SetContinuity(self, *args):
         """
         * Changes the parameters of continiuity InternalContinuity to produce fillet'surfaces with an continuity Ci (i=0,1 or 2). By defaultInternalContinuity = GeomAbs_C1. AngularTolerance is the G1 tolerance between fillet and support'faces.
 
@@ -935,7 +943,7 @@ class BRepFilletAPI_MakeFillet(BRepFilletAPI_LocalOperation):
         """
         return _BRepFilletAPI.BRepFilletAPI_MakeFillet_SetContinuity(self, *args)
 
-    def Add(self, *args) -> "void" :
+    def Add(self, *args):
         """
         * Adds a fillet contour in the builder (builds a contour of tangent edges). The Radius must be set after.
 
@@ -980,18 +988,18 @@ class BRepFilletAPI_MakeFillet(BRepFilletAPI_LocalOperation):
         """
         return _BRepFilletAPI.BRepFilletAPI_MakeFillet_Add(self, *args)
 
-    def IsConstant(self, *args) -> "Standard_Boolean" :
+    def IsConstant(self, *args):
         """
         * Returns true if the radius of the fillet along the contour of index IC in the internal data structure of this algorithm is constant, Warning False is returned if IC is outside the bounds of the table of contours or if E does not belong to the contour of index IC.
 
         :param IC:
-        :type IC: int
+        :type IC: Standard_Integer
         :rtype: bool
 
         * Returns true if the radius of the fillet along the edge E of the contour of index IC in the internal data structure of this algorithm is constant. Warning False is returned if IC is outside the bounds of the table of contours or if E does not belong to the contour of index IC.
 
         :param IC:
-        :type IC: int
+        :type IC: Standard_Integer
         :param E:
         :type E: TopoDS_Edge &
         :rtype: bool
@@ -999,18 +1007,18 @@ class BRepFilletAPI_MakeFillet(BRepFilletAPI_LocalOperation):
         """
         return _BRepFilletAPI.BRepFilletAPI_MakeFillet_IsConstant(self, *args)
 
-    def Radius(self, *args) -> "Standard_Real" :
+    def Radius(self, *args):
         """
         * Returns the radius of the fillet along the contour of index IC in the internal data structure of this algorithm Warning - Use this function only if the radius is constant. - -1. is returned if IC is outside the bounds of the table of contours or if E does not belong to the contour of index IC.
 
         :param IC:
-        :type IC: int
+        :type IC: Standard_Integer
         :rtype: float
 
         * Returns the radius of the fillet along the edge E of the contour of index IC in the internal data structure of this algorithm. Warning - Use this function only if the radius is constant. - -1 is returned if IC is outside the bounds of the table of contours or if E does not belong to the contour of index IC.
 
         :param IC:
-        :type IC: int
+        :type IC: Standard_Integer
         :param E:
         :type E: TopoDS_Edge &
         :rtype: float
@@ -1018,16 +1026,16 @@ class BRepFilletAPI_MakeFillet(BRepFilletAPI_LocalOperation):
         """
         return _BRepFilletAPI.BRepFilletAPI_MakeFillet_Radius(self, *args)
 
-    def SetRadius(self, *args) -> "void" :
+    def SetRadius(self, *args):
         """
         * Sets the parameters of the fillet along the contour of index IC generated using the Add function in the internal data structure of this algorithm, where Radius is the radius of the fillet.
 
         :param Radius:
         :type Radius: float
         :param IC:
-        :type IC: int
+        :type IC: Standard_Integer
         :param IinC:
-        :type IinC: int
+        :type IinC: Standard_Integer
         :rtype: None
 
         * Sets the parameters of the fillet along the contour of index IC generated using the Add function in the internal data structure of this algorithm, where the radius of the fillet evolves according to a linear evolution law defined from R1 to R2, between the first and last vertices of the contour of index IC.
@@ -1037,9 +1045,9 @@ class BRepFilletAPI_MakeFillet(BRepFilletAPI_LocalOperation):
         :param R2:
         :type R2: float
         :param IC:
-        :type IC: int
+        :type IC: Standard_Integer
         :param IinC:
-        :type IinC: int
+        :type IinC: Standard_Integer
         :rtype: None
 
         * Sets the parameters of the fillet along the contour of index IC generated using the Add function in the internal data structure of this algorithm, where the radius of the fillet evolves according to the evolution law L, between the first and last vertices of the contour of index IC.
@@ -1047,9 +1055,9 @@ class BRepFilletAPI_MakeFillet(BRepFilletAPI_LocalOperation):
         :param L:
         :type L: Handle_Law_Function &
         :param IC:
-        :type IC: int
+        :type IC: Standard_Integer
         :param IinC:
-        :type IinC: int
+        :type IinC: Standard_Integer
         :rtype: None
 
         * Sets the parameters of the fillet along the contour of index IC generated using the Add function in the internal data structure of this algorithm, where the radius of the fillet evolves according to the evolution law which interpolates the set of parameter and radius pairs given in the array UandR as follows: - the X coordinate of a point in UandR defines a relative parameter on the contour (i.e. a parameter between 0 and 1), - the Y coordinate of a point in UandR gives the corresponding value of the radius, and the radius evolves between the first and last vertices of the contour of index IC.
@@ -1057,9 +1065,9 @@ class BRepFilletAPI_MakeFillet(BRepFilletAPI_LocalOperation):
         :param UandR:
         :type UandR: TColgp_Array1OfPnt2d
         :param IC:
-        :type IC: int
+        :type IC: Standard_Integer
         :param IinC:
-        :type IinC: int
+        :type IinC: Standard_Integer
         :rtype: None
 
         * Assigns Radius as the radius of the fillet on the edge E
@@ -1067,7 +1075,7 @@ class BRepFilletAPI_MakeFillet(BRepFilletAPI_LocalOperation):
         :param Radius:
         :type Radius: float
         :param IC:
-        :type IC: int
+        :type IC: Standard_Integer
         :param E:
         :type E: TopoDS_Edge &
         :rtype: None
@@ -1075,7 +1083,7 @@ class BRepFilletAPI_MakeFillet(BRepFilletAPI_LocalOperation):
         :param Radius:
         :type Radius: float
         :param IC:
-        :type IC: int
+        :type IC: Standard_Integer
         :param V:
         :type V: TopoDS_Vertex &
         :rtype: None
@@ -1083,10 +1091,10 @@ class BRepFilletAPI_MakeFillet(BRepFilletAPI_LocalOperation):
         """
         return _BRepFilletAPI.BRepFilletAPI_MakeFillet_SetRadius(self, *args)
 
-    def GetBounds(self, *args) -> "Standard_Boolean" :
+    def GetBounds(self, *args):
         """
         :param IC:
-        :type IC: int
+        :type IC: Standard_Integer
         :param E:
         :type E: TopoDS_Edge &
         :param F:
@@ -1098,10 +1106,10 @@ class BRepFilletAPI_MakeFillet(BRepFilletAPI_LocalOperation):
         """
         return _BRepFilletAPI.BRepFilletAPI_MakeFillet_GetBounds(self, *args)
 
-    def GetLaw(self, *args) -> "Handle_Law_Function" :
+    def GetLaw(self, *args):
         """
         :param IC:
-        :type IC: int
+        :type IC: Standard_Integer
         :param E:
         :type E: TopoDS_Edge &
         :rtype: Handle_Law_Function
@@ -1109,10 +1117,10 @@ class BRepFilletAPI_MakeFillet(BRepFilletAPI_LocalOperation):
         """
         return _BRepFilletAPI.BRepFilletAPI_MakeFillet_GetLaw(self, *args)
 
-    def SetLaw(self, *args) -> "void" :
+    def SetLaw(self, *args):
         """
         :param IC:
-        :type IC: int
+        :type IC: Standard_Integer
         :param E:
         :type E: TopoDS_Edge &
         :param L:
@@ -1122,7 +1130,7 @@ class BRepFilletAPI_MakeFillet(BRepFilletAPI_LocalOperation):
         """
         return _BRepFilletAPI.BRepFilletAPI_MakeFillet_SetLaw(self, *args)
 
-    def SetFilletShape(self, *args) -> "void" :
+    def SetFilletShape(self, *args):
         """
         * Assigns FShape as the type of fillet shape built by this algorithm.
 
@@ -1133,132 +1141,132 @@ class BRepFilletAPI_MakeFillet(BRepFilletAPI_LocalOperation):
         """
         return _BRepFilletAPI.BRepFilletAPI_MakeFillet_SetFilletShape(self, *args)
 
-    def GetFilletShape(self, *args) -> "ChFi3d_FilletShape" :
+    def GetFilletShape(self):
         """
         * Returns the type of fillet shape built by this algorithm.
 
         :rtype: ChFi3d_FilletShape
 
         """
-        return _BRepFilletAPI.BRepFilletAPI_MakeFillet_GetFilletShape(self, *args)
+        return _BRepFilletAPI.BRepFilletAPI_MakeFillet_GetFilletShape(self)
 
-    def Builder(self, *args) -> "Handle_TopOpeBRepBuild_HBuilder" :
+    def Builder(self):
         """
         * Returns the internal topology building algorithm.
 
         :rtype: Handle_TopOpeBRepBuild_HBuilder
 
         """
-        return _BRepFilletAPI.BRepFilletAPI_MakeFillet_Builder(self, *args)
+        return _BRepFilletAPI.BRepFilletAPI_MakeFillet_Builder(self)
 
-    def NbSurfaces(self, *args) -> "Standard_Integer" :
+    def NbSurfaces(self):
         """
         * returns the number of surfaces after the shape creation.
 
         :rtype: int
 
         """
-        return _BRepFilletAPI.BRepFilletAPI_MakeFillet_NbSurfaces(self, *args)
+        return _BRepFilletAPI.BRepFilletAPI_MakeFillet_NbSurfaces(self)
 
-    def NewFaces(self, *args) -> "TopTools_ListOfShape const &" :
+    def NewFaces(self, *args):
         """
         * Return the faces created for surface <I>.
 
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :rtype: TopTools_ListOfShape
 
         """
         return _BRepFilletAPI.BRepFilletAPI_MakeFillet_NewFaces(self, *args)
 
-    def NbFaultyContours(self, *args) -> "Standard_Integer" :
+    def NbFaultyContours(self):
         """
         * Returns the number of contours where the computation of the fillet failed
 
         :rtype: int
 
         """
-        return _BRepFilletAPI.BRepFilletAPI_MakeFillet_NbFaultyContours(self, *args)
+        return _BRepFilletAPI.BRepFilletAPI_MakeFillet_NbFaultyContours(self)
 
-    def FaultyContour(self, *args) -> "Standard_Integer" :
+    def FaultyContour(self, *args):
         """
         * for each I in [1.. NbFaultyContours] returns the index IC of the contour where the computation of the fillet failed. the method NbEdges(IC) gives the number of edges in the contour IC the method Edge(IC,ie) gives the edge number ie of the contour IC
 
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :rtype: int
 
         """
         return _BRepFilletAPI.BRepFilletAPI_MakeFillet_FaultyContour(self, *args)
 
-    def NbComputedSurfaces(self, *args) -> "Standard_Integer" :
+    def NbComputedSurfaces(self, *args):
         """
         * returns the number of surfaces which have been computed on the contour IC
 
         :param IC:
-        :type IC: int
+        :type IC: Standard_Integer
         :rtype: int
 
         """
         return _BRepFilletAPI.BRepFilletAPI_MakeFillet_NbComputedSurfaces(self, *args)
 
-    def ComputedSurface(self, *args) -> "Handle_Geom_Surface" :
+    def ComputedSurface(self, *args):
         """
         * returns the surface number IS concerning the contour IC
 
         :param IC:
-        :type IC: int
+        :type IC: Standard_Integer
         :param IS:
-        :type IS: int
+        :type IS: Standard_Integer
         :rtype: Handle_Geom_Surface
 
         """
         return _BRepFilletAPI.BRepFilletAPI_MakeFillet_ComputedSurface(self, *args)
 
-    def NbFaultyVertices(self, *args) -> "Standard_Integer" :
+    def NbFaultyVertices(self):
         """
         * returns the number of vertices where the computation failed
 
         :rtype: int
 
         """
-        return _BRepFilletAPI.BRepFilletAPI_MakeFillet_NbFaultyVertices(self, *args)
+        return _BRepFilletAPI.BRepFilletAPI_MakeFillet_NbFaultyVertices(self)
 
-    def FaultyVertex(self, *args) -> "TopoDS_Vertex" :
+    def FaultyVertex(self, *args):
         """
         * returns the vertex where the computation failed
 
         :param IV:
-        :type IV: int
+        :type IV: Standard_Integer
         :rtype: TopoDS_Vertex
 
         """
         return _BRepFilletAPI.BRepFilletAPI_MakeFillet_FaultyVertex(self, *args)
 
-    def HasResult(self, *args) -> "Standard_Boolean" :
+    def HasResult(self):
         """
         * returns true if a part of the result has been computed if the filling in a corner failed a shape with a hole is returned
 
         :rtype: bool
 
         """
-        return _BRepFilletAPI.BRepFilletAPI_MakeFillet_HasResult(self, *args)
+        return _BRepFilletAPI.BRepFilletAPI_MakeFillet_HasResult(self)
 
-    def BadShape(self, *args) -> "TopoDS_Shape" :
+    def BadShape(self):
         """
         * if (HasResult()) returns the partial result
 
         :rtype: TopoDS_Shape
 
         """
-        return _BRepFilletAPI.BRepFilletAPI_MakeFillet_BadShape(self, *args)
+        return _BRepFilletAPI.BRepFilletAPI_MakeFillet_BadShape(self)
 
-    def StripeStatus(self, *args) -> "ChFiDS_ErrorStatus" :
+    def StripeStatus(self, *args):
         """
         * returns the status concerning the contour IC in case of error ChFiDS_Ok : the computation is Ok ChFiDS_StartsolFailure : the computation can't start, perhaps the  the radius is too big ChFiDS_TwistedSurface : the computation failed because of a twisted  surface ChFiDS_WalkingFailure : there is a problem in the walking ChFiDS_Error: other error different from above
 
         :param IC:
-        :type IC: int
+        :type IC: Standard_Integer
         :rtype: ChFiDS_ErrorStatus
 
         """

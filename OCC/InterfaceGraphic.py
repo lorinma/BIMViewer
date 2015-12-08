@@ -108,18 +108,5 @@ SwigPyIterator.__sub__ = new_instancemethod(_InterfaceGraphic.SwigPyIterator___s
 SwigPyIterator_swigregister = _InterfaceGraphic.SwigPyIterator_swigregister
 SwigPyIterator_swigregister(SwigPyIterator)
 
-TelUnknownArrayType = _InterfaceGraphic.TelUnknownArrayType
-TelPointsArrayType = _InterfaceGraphic.TelPointsArrayType
-TelPolylinesArrayType = _InterfaceGraphic.TelPolylinesArrayType
-TelSegmentsArrayType = _InterfaceGraphic.TelSegmentsArrayType
-TelPolygonsArrayType = _InterfaceGraphic.TelPolygonsArrayType
-TelTrianglesArrayType = _InterfaceGraphic.TelTrianglesArrayType
-TelQuadranglesArrayType = _InterfaceGraphic.TelQuadranglesArrayType
-TelTriangleStripsArrayType = _InterfaceGraphic.TelTriangleStripsArrayType
-TelQuadrangleStripsArrayType = _InterfaceGraphic.TelQuadrangleStripsArrayType
-TelTriangleFansArrayType = _InterfaceGraphic.TelTriangleFansArrayType
-TelCullNone = _InterfaceGraphic.TelCullNone
-TelCullFront = _InterfaceGraphic.TelCullFront
-TelCullBack = _InterfaceGraphic.TelCullBack
 
 

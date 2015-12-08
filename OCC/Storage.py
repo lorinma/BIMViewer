@@ -135,19 +135,18 @@ Storage_WriteSolve = _Storage.Storage_WriteSolve
 Storage_ReadSolve = _Storage.Storage_ReadSolve
 class storage(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
+    def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def Version(*args) -> "TCollection_AsciiString" :
+    def Version():
         """
         * returns the version of Storage's read/write routines
 
         :rtype: TCollection_AsciiString
 
         """
-        return _Storage.storage_Version(*args)
+        return _Storage.storage_Version()
 
     Version = staticmethod(Version)
-    def __init__(self): 
-        _Storage.storage_swiginit(self,_Storage.new_storage())
     def __del__(self):
     	try:
     		self.thisown = False
@@ -160,14 +159,14 @@ storage._kill_pointed = new_instancemethod(_Storage.storage__kill_pointed,None,s
 storage_swigregister = _Storage.storage_swigregister
 storage_swigregister(storage)
 
-def storage_Version(*args) -> "TCollection_AsciiString" :
+def storage_Version():
   """
     * returns the version of Storage's read/write routines
 
     :rtype: TCollection_AsciiString
 
     """
-  return _Storage.storage_Version(*args)
+  return _Storage.storage_Version()
 
 class Storage_ArrayOfCallBack(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
@@ -175,22 +174,22 @@ class Storage_ArrayOfCallBack(object):
     def __init__(self, *args): 
         """
         :param Low:
-        :type Low: int
+        :type Low: Standard_Integer
         :param Up:
-        :type Up: int
+        :type Up: Standard_Integer
         :rtype: None
 
         :param Item:
         :type Item: Handle_Storage_CallBack &
         :param Low:
-        :type Low: int
+        :type Low: Standard_Integer
         :param Up:
-        :type Up: int
+        :type Up: Standard_Integer
         :rtype: None
 
         """
         _Storage.Storage_ArrayOfCallBack_swiginit(self,_Storage.new_Storage_ArrayOfCallBack(*args))
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
         :param V:
         :type V: Handle_Storage_CallBack &
@@ -199,21 +198,21 @@ class Storage_ArrayOfCallBack(object):
         """
         return _Storage.Storage_ArrayOfCallBack_Init(self, *args)
 
-    def Destroy(self, *args) -> "void" :
+    def Destroy(self):
         """
         :rtype: None
 
         """
-        return _Storage.Storage_ArrayOfCallBack_Destroy(self, *args)
+        return _Storage.Storage_ArrayOfCallBack_Destroy(self)
 
-    def IsAllocated(self, *args) -> "Standard_Boolean" :
+    def IsAllocated(self):
         """
         :rtype: bool
 
         """
-        return _Storage.Storage_ArrayOfCallBack_IsAllocated(self, *args)
+        return _Storage.Storage_ArrayOfCallBack_IsAllocated(self)
 
-    def Assign(self, *args) -> "Storage_ArrayOfCallBack const &" :
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: Storage_ArrayOfCallBack &
@@ -222,7 +221,7 @@ class Storage_ArrayOfCallBack(object):
         """
         return _Storage.Storage_ArrayOfCallBack_Assign(self, *args)
 
-    def Set(self, *args) -> "Storage_ArrayOfCallBack const &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: Storage_ArrayOfCallBack &
@@ -231,31 +230,31 @@ class Storage_ArrayOfCallBack(object):
         """
         return _Storage.Storage_ArrayOfCallBack_Set(self, *args)
 
-    def Length(self, *args) -> "Standard_Integer" :
+    def Length(self):
         """
         :rtype: int
 
         """
-        return _Storage.Storage_ArrayOfCallBack_Length(self, *args)
+        return _Storage.Storage_ArrayOfCallBack_Length(self)
 
-    def Lower(self, *args) -> "Standard_Integer" :
+    def Lower(self):
         """
         :rtype: int
 
         """
-        return _Storage.Storage_ArrayOfCallBack_Lower(self, *args)
+        return _Storage.Storage_ArrayOfCallBack_Lower(self)
 
-    def Upper(self, *args) -> "Standard_Integer" :
+    def Upper(self):
         """
         :rtype: int
 
         """
-        return _Storage.Storage_ArrayOfCallBack_Upper(self, *args)
+        return _Storage.Storage_ArrayOfCallBack_Upper(self)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Value:
         :type Value: Handle_Storage_CallBack &
         :rtype: None
@@ -263,19 +262,19 @@ class Storage_ArrayOfCallBack(object):
         """
         return _Storage.Storage_ArrayOfCallBack_SetValue(self, *args)
 
-    def Value(self, *args) -> "Handle_Storage_CallBack const &" :
+    def Value(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Handle_Storage_CallBack
 
         """
         return _Storage.Storage_ArrayOfCallBack_Value(self, *args)
 
-    def ChangeValue(self, *args) -> "Handle_Storage_CallBack &" :
+    def ChangeValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Handle_Storage_CallBack
 
         """
@@ -310,22 +309,22 @@ class Storage_ArrayOfSchema(object):
     def __init__(self, *args): 
         """
         :param Low:
-        :type Low: int
+        :type Low: Standard_Integer
         :param Up:
-        :type Up: int
+        :type Up: Standard_Integer
         :rtype: None
 
         :param Item:
         :type Item: Handle_Storage_Schema &
         :param Low:
-        :type Low: int
+        :type Low: Standard_Integer
         :param Up:
-        :type Up: int
+        :type Up: Standard_Integer
         :rtype: None
 
         """
         _Storage.Storage_ArrayOfSchema_swiginit(self,_Storage.new_Storage_ArrayOfSchema(*args))
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
         :param V:
         :type V: Handle_Storage_Schema &
@@ -334,21 +333,21 @@ class Storage_ArrayOfSchema(object):
         """
         return _Storage.Storage_ArrayOfSchema_Init(self, *args)
 
-    def Destroy(self, *args) -> "void" :
+    def Destroy(self):
         """
         :rtype: None
 
         """
-        return _Storage.Storage_ArrayOfSchema_Destroy(self, *args)
+        return _Storage.Storage_ArrayOfSchema_Destroy(self)
 
-    def IsAllocated(self, *args) -> "Standard_Boolean" :
+    def IsAllocated(self):
         """
         :rtype: bool
 
         """
-        return _Storage.Storage_ArrayOfSchema_IsAllocated(self, *args)
+        return _Storage.Storage_ArrayOfSchema_IsAllocated(self)
 
-    def Assign(self, *args) -> "Storage_ArrayOfSchema const &" :
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: Storage_ArrayOfSchema &
@@ -357,7 +356,7 @@ class Storage_ArrayOfSchema(object):
         """
         return _Storage.Storage_ArrayOfSchema_Assign(self, *args)
 
-    def Set(self, *args) -> "Storage_ArrayOfSchema const &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: Storage_ArrayOfSchema &
@@ -366,31 +365,31 @@ class Storage_ArrayOfSchema(object):
         """
         return _Storage.Storage_ArrayOfSchema_Set(self, *args)
 
-    def Length(self, *args) -> "Standard_Integer" :
+    def Length(self):
         """
         :rtype: int
 
         """
-        return _Storage.Storage_ArrayOfSchema_Length(self, *args)
+        return _Storage.Storage_ArrayOfSchema_Length(self)
 
-    def Lower(self, *args) -> "Standard_Integer" :
+    def Lower(self):
         """
         :rtype: int
 
         """
-        return _Storage.Storage_ArrayOfSchema_Lower(self, *args)
+        return _Storage.Storage_ArrayOfSchema_Lower(self)
 
-    def Upper(self, *args) -> "Standard_Integer" :
+    def Upper(self):
         """
         :rtype: int
 
         """
-        return _Storage.Storage_ArrayOfSchema_Upper(self, *args)
+        return _Storage.Storage_ArrayOfSchema_Upper(self)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Value:
         :type Value: Handle_Storage_Schema &
         :rtype: None
@@ -398,19 +397,19 @@ class Storage_ArrayOfSchema(object):
         """
         return _Storage.Storage_ArrayOfSchema_SetValue(self, *args)
 
-    def Value(self, *args) -> "Handle_Storage_Schema const &" :
+    def Value(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Handle_Storage_Schema
 
         """
         return _Storage.Storage_ArrayOfSchema_Value(self, *args)
 
-    def ChangeValue(self, *args) -> "Handle_Storage_Schema &" :
+    def ChangeValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Handle_Storage_Schema
 
         """
@@ -443,14 +442,14 @@ class Storage_BaseDriver(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def Delete(self, *args) -> "void" :
+    def Delete(self):
         """
         :rtype: None
 
         """
-        return _Storage.Storage_BaseDriver_Delete(self, *args)
+        return _Storage.Storage_BaseDriver_Delete(self)
 
-    def Open(self, *args) -> "Storage_Error" :
+    def Open(self, *args):
         """
         :param aName:
         :type aName: TCollection_AsciiString &
@@ -461,49 +460,49 @@ class Storage_BaseDriver(object):
         """
         return _Storage.Storage_BaseDriver_Open(self, *args)
 
-    def Name(self, *args) -> "TCollection_AsciiString" :
+    def Name(self):
         """
         :rtype: TCollection_AsciiString
 
         """
-        return _Storage.Storage_BaseDriver_Name(self, *args)
+        return _Storage.Storage_BaseDriver_Name(self)
 
-    def OpenMode(self, *args) -> "Storage_OpenMode" :
+    def OpenMode(self):
         """
         :rtype: Storage_OpenMode
 
         """
-        return _Storage.Storage_BaseDriver_OpenMode(self, *args)
+        return _Storage.Storage_BaseDriver_OpenMode(self)
 
-    def IsEnd(self, *args) -> "Standard_Boolean" :
+    def IsEnd(self):
         """
         * returns True if we are at end of the stream
 
         :rtype: bool
 
         """
-        return _Storage.Storage_BaseDriver_IsEnd(self, *args)
+        return _Storage.Storage_BaseDriver_IsEnd(self)
 
-    def Tell(self, *args) -> "Storage_Position" :
+    def Tell(self):
         """
         * return position in the file. Return -1 upon error.
 
         :rtype: Storage_Position
 
         """
-        return _Storage.Storage_BaseDriver_Tell(self, *args)
+        return _Storage.Storage_BaseDriver_Tell(self)
 
-    def BeginWriteInfoSection(self, *args) -> "Storage_Error" :
+    def BeginWriteInfoSection(self):
         """
         :rtype: Storage_Error
 
         """
-        return _Storage.Storage_BaseDriver_BeginWriteInfoSection(self, *args)
+        return _Storage.Storage_BaseDriver_BeginWriteInfoSection(self)
 
-    def WriteInfo(self, *args) -> "void" :
+    def WriteInfo(self, *args):
         """
         :param nbObj:
-        :type nbObj: int
+        :type nbObj: Standard_Integer
         :param dbVersion:
         :type dbVersion: TCollection_AsciiString &
         :param date:
@@ -525,24 +524,24 @@ class Storage_BaseDriver(object):
         """
         return _Storage.Storage_BaseDriver_WriteInfo(self, *args)
 
-    def EndWriteInfoSection(self, *args) -> "Storage_Error" :
+    def EndWriteInfoSection(self):
         """
         :rtype: Storage_Error
 
         """
-        return _Storage.Storage_BaseDriver_EndWriteInfoSection(self, *args)
+        return _Storage.Storage_BaseDriver_EndWriteInfoSection(self)
 
-    def BeginReadInfoSection(self, *args) -> "Storage_Error" :
+    def BeginReadInfoSection(self):
         """
         :rtype: Storage_Error
 
         """
-        return _Storage.Storage_BaseDriver_BeginReadInfoSection(self, *args)
+        return _Storage.Storage_BaseDriver_BeginReadInfoSection(self)
 
-    def ReadInfo(self, *args) -> "void" :
+    def ReadInfo(self, *args):
         """
         :param nbObj:
-        :type nbObj: int &
+        :type nbObj: Standard_Integer &
         :param dbVersion:
         :type dbVersion: TCollection_AsciiString &
         :param date:
@@ -564,21 +563,21 @@ class Storage_BaseDriver(object):
         """
         return _Storage.Storage_BaseDriver_ReadInfo(self, *args)
 
-    def EndReadInfoSection(self, *args) -> "Storage_Error" :
+    def EndReadInfoSection(self):
         """
         :rtype: Storage_Error
 
         """
-        return _Storage.Storage_BaseDriver_EndReadInfoSection(self, *args)
+        return _Storage.Storage_BaseDriver_EndReadInfoSection(self)
 
-    def BeginWriteCommentSection(self, *args) -> "Storage_Error" :
+    def BeginWriteCommentSection(self):
         """
         :rtype: Storage_Error
 
         """
-        return _Storage.Storage_BaseDriver_BeginWriteCommentSection(self, *args)
+        return _Storage.Storage_BaseDriver_BeginWriteCommentSection(self)
 
-    def WriteComment(self, *args) -> "void" :
+    def WriteComment(self, *args):
         """
         :param userComments:
         :type userComments: TColStd_SequenceOfExtendedString &
@@ -587,21 +586,21 @@ class Storage_BaseDriver(object):
         """
         return _Storage.Storage_BaseDriver_WriteComment(self, *args)
 
-    def EndWriteCommentSection(self, *args) -> "Storage_Error" :
+    def EndWriteCommentSection(self):
         """
         :rtype: Storage_Error
 
         """
-        return _Storage.Storage_BaseDriver_EndWriteCommentSection(self, *args)
+        return _Storage.Storage_BaseDriver_EndWriteCommentSection(self)
 
-    def BeginReadCommentSection(self, *args) -> "Storage_Error" :
+    def BeginReadCommentSection(self):
         """
         :rtype: Storage_Error
 
         """
-        return _Storage.Storage_BaseDriver_BeginReadCommentSection(self, *args)
+        return _Storage.Storage_BaseDriver_BeginReadCommentSection(self)
 
-    def ReadComment(self, *args) -> "void" :
+    def ReadComment(self, *args):
         """
         :param userComments:
         :type userComments: TColStd_SequenceOfExtendedString &
@@ -610,33 +609,33 @@ class Storage_BaseDriver(object):
         """
         return _Storage.Storage_BaseDriver_ReadComment(self, *args)
 
-    def EndReadCommentSection(self, *args) -> "Storage_Error" :
+    def EndReadCommentSection(self):
         """
         :rtype: Storage_Error
 
         """
-        return _Storage.Storage_BaseDriver_EndReadCommentSection(self, *args)
+        return _Storage.Storage_BaseDriver_EndReadCommentSection(self)
 
-    def BeginWriteTypeSection(self, *args) -> "Storage_Error" :
+    def BeginWriteTypeSection(self):
         """
         :rtype: Storage_Error
 
         """
-        return _Storage.Storage_BaseDriver_BeginWriteTypeSection(self, *args)
+        return _Storage.Storage_BaseDriver_BeginWriteTypeSection(self)
 
-    def SetTypeSectionSize(self, *args) -> "void" :
+    def SetTypeSectionSize(self, *args):
         """
         :param aSize:
-        :type aSize: int
+        :type aSize: Standard_Integer
         :rtype: void
 
         """
         return _Storage.Storage_BaseDriver_SetTypeSectionSize(self, *args)
 
-    def WriteTypeInformations(self, *args) -> "void" :
+    def WriteTypeInformations(self, *args):
         """
         :param typeNum:
-        :type typeNum: int
+        :type typeNum: Standard_Integer
         :param typeName:
         :type typeName: TCollection_AsciiString &
         :rtype: void
@@ -644,31 +643,31 @@ class Storage_BaseDriver(object):
         """
         return _Storage.Storage_BaseDriver_WriteTypeInformations(self, *args)
 
-    def EndWriteTypeSection(self, *args) -> "Storage_Error" :
+    def EndWriteTypeSection(self):
         """
         :rtype: Storage_Error
 
         """
-        return _Storage.Storage_BaseDriver_EndWriteTypeSection(self, *args)
+        return _Storage.Storage_BaseDriver_EndWriteTypeSection(self)
 
-    def BeginReadTypeSection(self, *args) -> "Storage_Error" :
+    def BeginReadTypeSection(self):
         """
         :rtype: Storage_Error
 
         """
-        return _Storage.Storage_BaseDriver_BeginReadTypeSection(self, *args)
+        return _Storage.Storage_BaseDriver_BeginReadTypeSection(self)
 
-    def TypeSectionSize(self, *args) -> "Standard_Integer" :
+    def TypeSectionSize(self):
         """
         :rtype: int
 
         """
-        return _Storage.Storage_BaseDriver_TypeSectionSize(self, *args)
+        return _Storage.Storage_BaseDriver_TypeSectionSize(self)
 
-    def ReadTypeInformations(self, *args) -> "void" :
+    def ReadTypeInformations(self, *args):
         """
         :param typeNum:
-        :type typeNum: int &
+        :type typeNum: Standard_Integer &
         :param typeName:
         :type typeName: TCollection_AsciiString &
         :rtype: void
@@ -676,35 +675,35 @@ class Storage_BaseDriver(object):
         """
         return _Storage.Storage_BaseDriver_ReadTypeInformations(self, *args)
 
-    def EndReadTypeSection(self, *args) -> "Storage_Error" :
+    def EndReadTypeSection(self):
         """
         :rtype: Storage_Error
 
         """
-        return _Storage.Storage_BaseDriver_EndReadTypeSection(self, *args)
+        return _Storage.Storage_BaseDriver_EndReadTypeSection(self)
 
-    def BeginWriteRootSection(self, *args) -> "Storage_Error" :
+    def BeginWriteRootSection(self):
         """
         :rtype: Storage_Error
 
         """
-        return _Storage.Storage_BaseDriver_BeginWriteRootSection(self, *args)
+        return _Storage.Storage_BaseDriver_BeginWriteRootSection(self)
 
-    def SetRootSectionSize(self, *args) -> "void" :
+    def SetRootSectionSize(self, *args):
         """
         :param aSize:
-        :type aSize: int
+        :type aSize: Standard_Integer
         :rtype: void
 
         """
         return _Storage.Storage_BaseDriver_SetRootSectionSize(self, *args)
 
-    def WriteRoot(self, *args) -> "void" :
+    def WriteRoot(self, *args):
         """
         :param rootName:
         :type rootName: TCollection_AsciiString &
         :param aRef:
-        :type aRef: int
+        :type aRef: Standard_Integer
         :param aType:
         :type aType: TCollection_AsciiString &
         :rtype: void
@@ -712,33 +711,33 @@ class Storage_BaseDriver(object):
         """
         return _Storage.Storage_BaseDriver_WriteRoot(self, *args)
 
-    def EndWriteRootSection(self, *args) -> "Storage_Error" :
+    def EndWriteRootSection(self):
         """
         :rtype: Storage_Error
 
         """
-        return _Storage.Storage_BaseDriver_EndWriteRootSection(self, *args)
+        return _Storage.Storage_BaseDriver_EndWriteRootSection(self)
 
-    def BeginReadRootSection(self, *args) -> "Storage_Error" :
+    def BeginReadRootSection(self):
         """
         :rtype: Storage_Error
 
         """
-        return _Storage.Storage_BaseDriver_BeginReadRootSection(self, *args)
+        return _Storage.Storage_BaseDriver_BeginReadRootSection(self)
 
-    def RootSectionSize(self, *args) -> "Standard_Integer" :
+    def RootSectionSize(self):
         """
         :rtype: int
 
         """
-        return _Storage.Storage_BaseDriver_RootSectionSize(self, *args)
+        return _Storage.Storage_BaseDriver_RootSectionSize(self)
 
-    def ReadRoot(self, *args) -> "void" :
+    def ReadRoot(self, *args):
         """
         :param rootName:
         :type rootName: TCollection_AsciiString &
         :param aRef:
-        :type aRef: int &
+        :type aRef: Standard_Integer &
         :param aType:
         :type aType: TCollection_AsciiString &
         :rtype: void
@@ -746,202 +745,202 @@ class Storage_BaseDriver(object):
         """
         return _Storage.Storage_BaseDriver_ReadRoot(self, *args)
 
-    def EndReadRootSection(self, *args) -> "Storage_Error" :
+    def EndReadRootSection(self):
         """
         :rtype: Storage_Error
 
         """
-        return _Storage.Storage_BaseDriver_EndReadRootSection(self, *args)
+        return _Storage.Storage_BaseDriver_EndReadRootSection(self)
 
-    def BeginWriteRefSection(self, *args) -> "Storage_Error" :
+    def BeginWriteRefSection(self):
         """
         :rtype: Storage_Error
 
         """
-        return _Storage.Storage_BaseDriver_BeginWriteRefSection(self, *args)
+        return _Storage.Storage_BaseDriver_BeginWriteRefSection(self)
 
-    def SetRefSectionSize(self, *args) -> "void" :
+    def SetRefSectionSize(self, *args):
         """
         :param aSize:
-        :type aSize: int
+        :type aSize: Standard_Integer
         :rtype: void
 
         """
         return _Storage.Storage_BaseDriver_SetRefSectionSize(self, *args)
 
-    def WriteReferenceType(self, *args) -> "void" :
+    def WriteReferenceType(self, *args):
         """
         :param reference:
-        :type reference: int
+        :type reference: Standard_Integer
         :param typeNum:
-        :type typeNum: int
+        :type typeNum: Standard_Integer
         :rtype: void
 
         """
         return _Storage.Storage_BaseDriver_WriteReferenceType(self, *args)
 
-    def EndWriteRefSection(self, *args) -> "Storage_Error" :
+    def EndWriteRefSection(self):
         """
         :rtype: Storage_Error
 
         """
-        return _Storage.Storage_BaseDriver_EndWriteRefSection(self, *args)
+        return _Storage.Storage_BaseDriver_EndWriteRefSection(self)
 
-    def BeginReadRefSection(self, *args) -> "Storage_Error" :
+    def BeginReadRefSection(self):
         """
         :rtype: Storage_Error
 
         """
-        return _Storage.Storage_BaseDriver_BeginReadRefSection(self, *args)
+        return _Storage.Storage_BaseDriver_BeginReadRefSection(self)
 
-    def RefSectionSize(self, *args) -> "Standard_Integer" :
+    def RefSectionSize(self):
         """
         :rtype: int
 
         """
-        return _Storage.Storage_BaseDriver_RefSectionSize(self, *args)
+        return _Storage.Storage_BaseDriver_RefSectionSize(self)
 
-    def ReadReferenceType(self, *args) -> "void" :
+    def ReadReferenceType(self):
         """
         :param reference:
-        :type reference: int &
+        :type reference: Standard_Integer &
         :param typeNum:
-        :type typeNum: int &
+        :type typeNum: Standard_Integer &
         :rtype: void
 
         """
-        return _Storage.Storage_BaseDriver_ReadReferenceType(self, *args)
+        return _Storage.Storage_BaseDriver_ReadReferenceType(self)
 
-    def EndReadRefSection(self, *args) -> "Storage_Error" :
+    def EndReadRefSection(self):
         """
         :rtype: Storage_Error
 
         """
-        return _Storage.Storage_BaseDriver_EndReadRefSection(self, *args)
+        return _Storage.Storage_BaseDriver_EndReadRefSection(self)
 
-    def BeginWriteDataSection(self, *args) -> "Storage_Error" :
+    def BeginWriteDataSection(self):
         """
         :rtype: Storage_Error
 
         """
-        return _Storage.Storage_BaseDriver_BeginWriteDataSection(self, *args)
+        return _Storage.Storage_BaseDriver_BeginWriteDataSection(self)
 
-    def WritePersistentObjectHeader(self, *args) -> "void" :
+    def WritePersistentObjectHeader(self, *args):
         """
         :param aRef:
-        :type aRef: int
+        :type aRef: Standard_Integer
         :param aType:
-        :type aType: int
+        :type aType: Standard_Integer
         :rtype: void
 
         """
         return _Storage.Storage_BaseDriver_WritePersistentObjectHeader(self, *args)
 
-    def BeginWritePersistentObjectData(self, *args) -> "void" :
+    def BeginWritePersistentObjectData(self):
         """
         :rtype: void
 
         """
-        return _Storage.Storage_BaseDriver_BeginWritePersistentObjectData(self, *args)
+        return _Storage.Storage_BaseDriver_BeginWritePersistentObjectData(self)
 
-    def BeginWriteObjectData(self, *args) -> "void" :
+    def BeginWriteObjectData(self):
         """
         :rtype: void
 
         """
-        return _Storage.Storage_BaseDriver_BeginWriteObjectData(self, *args)
+        return _Storage.Storage_BaseDriver_BeginWriteObjectData(self)
 
-    def EndWriteObjectData(self, *args) -> "void" :
+    def EndWriteObjectData(self):
         """
         :rtype: void
 
         """
-        return _Storage.Storage_BaseDriver_EndWriteObjectData(self, *args)
+        return _Storage.Storage_BaseDriver_EndWriteObjectData(self)
 
-    def EndWritePersistentObjectData(self, *args) -> "void" :
+    def EndWritePersistentObjectData(self):
         """
         :rtype: void
 
         """
-        return _Storage.Storage_BaseDriver_EndWritePersistentObjectData(self, *args)
+        return _Storage.Storage_BaseDriver_EndWritePersistentObjectData(self)
 
-    def EndWriteDataSection(self, *args) -> "Storage_Error" :
+    def EndWriteDataSection(self):
         """
         :rtype: Storage_Error
 
         """
-        return _Storage.Storage_BaseDriver_EndWriteDataSection(self, *args)
+        return _Storage.Storage_BaseDriver_EndWriteDataSection(self)
 
-    def BeginReadDataSection(self, *args) -> "Storage_Error" :
+    def BeginReadDataSection(self):
         """
         :rtype: Storage_Error
 
         """
-        return _Storage.Storage_BaseDriver_BeginReadDataSection(self, *args)
+        return _Storage.Storage_BaseDriver_BeginReadDataSection(self)
 
-    def ReadPersistentObjectHeader(self, *args) -> "void" :
+    def ReadPersistentObjectHeader(self):
         """
         :param aRef:
-        :type aRef: int &
+        :type aRef: Standard_Integer &
         :param aType:
-        :type aType: int &
+        :type aType: Standard_Integer &
         :rtype: void
 
         """
-        return _Storage.Storage_BaseDriver_ReadPersistentObjectHeader(self, *args)
+        return _Storage.Storage_BaseDriver_ReadPersistentObjectHeader(self)
 
-    def BeginReadPersistentObjectData(self, *args) -> "void" :
-        """
-        :rtype: void
-
-        """
-        return _Storage.Storage_BaseDriver_BeginReadPersistentObjectData(self, *args)
-
-    def BeginReadObjectData(self, *args) -> "void" :
+    def BeginReadPersistentObjectData(self):
         """
         :rtype: void
 
         """
-        return _Storage.Storage_BaseDriver_BeginReadObjectData(self, *args)
+        return _Storage.Storage_BaseDriver_BeginReadPersistentObjectData(self)
 
-    def EndReadObjectData(self, *args) -> "void" :
+    def BeginReadObjectData(self):
         """
         :rtype: void
 
         """
-        return _Storage.Storage_BaseDriver_EndReadObjectData(self, *args)
+        return _Storage.Storage_BaseDriver_BeginReadObjectData(self)
 
-    def EndReadPersistentObjectData(self, *args) -> "void" :
+    def EndReadObjectData(self):
         """
         :rtype: void
 
         """
-        return _Storage.Storage_BaseDriver_EndReadPersistentObjectData(self, *args)
+        return _Storage.Storage_BaseDriver_EndReadObjectData(self)
 
-    def EndReadDataSection(self, *args) -> "Storage_Error" :
+    def EndReadPersistentObjectData(self):
+        """
+        :rtype: void
+
+        """
+        return _Storage.Storage_BaseDriver_EndReadPersistentObjectData(self)
+
+    def EndReadDataSection(self):
         """
         :rtype: Storage_Error
 
         """
-        return _Storage.Storage_BaseDriver_EndReadDataSection(self, *args)
+        return _Storage.Storage_BaseDriver_EndReadDataSection(self)
 
-    def SkipObject(self, *args) -> "void" :
+    def SkipObject(self):
         """
         :rtype: void
 
         """
-        return _Storage.Storage_BaseDriver_SkipObject(self, *args)
+        return _Storage.Storage_BaseDriver_SkipObject(self)
 
-    def PutReference(self, *args) -> "Storage_BaseDriver &" :
+    def PutReference(self, *args):
         """
         :param aValue:
-        :type aValue: int
+        :type aValue: Standard_Integer
         :rtype: Storage_BaseDriver
 
         """
         return _Storage.Storage_BaseDriver_PutReference(self, *args)
 
-    def PutCharacter(self, *args) -> "Storage_BaseDriver &" :
+    def PutCharacter(self, *args):
         """
         :param aValue:
         :type aValue: Standard_Character
@@ -950,7 +949,7 @@ class Storage_BaseDriver(object):
         """
         return _Storage.Storage_BaseDriver_PutCharacter(self, *args)
 
-    def PutExtCharacter(self, *args) -> "Storage_BaseDriver &" :
+    def PutExtCharacter(self, *args):
         """
         :param aValue:
         :type aValue: Standard_ExtCharacter
@@ -959,16 +958,16 @@ class Storage_BaseDriver(object):
         """
         return _Storage.Storage_BaseDriver_PutExtCharacter(self, *args)
 
-    def PutInteger(self, *args) -> "Storage_BaseDriver &" :
+    def PutInteger(self, *args):
         """
         :param aValue:
-        :type aValue: int
+        :type aValue: Standard_Integer
         :rtype: Storage_BaseDriver
 
         """
         return _Storage.Storage_BaseDriver_PutInteger(self, *args)
 
-    def PutBoolean(self, *args) -> "Storage_BaseDriver &" :
+    def PutBoolean(self, *args):
         """
         :param aValue:
         :type aValue: bool
@@ -977,7 +976,7 @@ class Storage_BaseDriver(object):
         """
         return _Storage.Storage_BaseDriver_PutBoolean(self, *args)
 
-    def PutReal(self, *args) -> "Storage_BaseDriver &" :
+    def PutReal(self, *args):
         """
         :param aValue:
         :type aValue: float
@@ -986,7 +985,7 @@ class Storage_BaseDriver(object):
         """
         return _Storage.Storage_BaseDriver_PutReal(self, *args)
 
-    def PutShortReal(self, *args) -> "Storage_BaseDriver &" :
+    def PutShortReal(self, *args):
         """
         :param aValue:
         :type aValue: Standard_ShortReal
@@ -995,16 +994,16 @@ class Storage_BaseDriver(object):
         """
         return _Storage.Storage_BaseDriver_PutShortReal(self, *args)
 
-    def GetReference(self, *args) -> "Storage_BaseDriver &" :
+    def GetReference(self):
         """
         :param aValue:
-        :type aValue: int &
+        :type aValue: Standard_Integer &
         :rtype: Storage_BaseDriver
 
         """
-        return _Storage.Storage_BaseDriver_GetReference(self, *args)
+        return _Storage.Storage_BaseDriver_GetReference(self)
 
-    def GetCharacter(self, *args) -> "Storage_BaseDriver &" :
+    def GetCharacter(self, *args):
         """
         :param aValue:
         :type aValue: Standard_Character &
@@ -1013,7 +1012,7 @@ class Storage_BaseDriver(object):
         """
         return _Storage.Storage_BaseDriver_GetCharacter(self, *args)
 
-    def GetExtCharacter(self, *args) -> "Storage_BaseDriver &" :
+    def GetExtCharacter(self, *args):
         """
         :param aValue:
         :type aValue: Standard_ExtCharacter &
@@ -1022,16 +1021,16 @@ class Storage_BaseDriver(object):
         """
         return _Storage.Storage_BaseDriver_GetExtCharacter(self, *args)
 
-    def GetInteger(self, *args) -> "Storage_BaseDriver &" :
+    def GetInteger(self):
         """
         :param aValue:
-        :type aValue: int &
+        :type aValue: Standard_Integer &
         :rtype: Storage_BaseDriver
 
         """
-        return _Storage.Storage_BaseDriver_GetInteger(self, *args)
+        return _Storage.Storage_BaseDriver_GetInteger(self)
 
-    def GetBoolean(self, *args) -> "Storage_BaseDriver &" :
+    def GetBoolean(self, *args):
         """
         :param aValue:
         :type aValue: bool
@@ -1040,16 +1039,16 @@ class Storage_BaseDriver(object):
         """
         return _Storage.Storage_BaseDriver_GetBoolean(self, *args)
 
-    def GetReal(self, *args) -> "Storage_BaseDriver &" :
+    def GetReal(self):
         """
         :param aValue:
         :type aValue: float &
         :rtype: Storage_BaseDriver
 
         """
-        return _Storage.Storage_BaseDriver_GetReal(self, *args)
+        return _Storage.Storage_BaseDriver_GetReal(self)
 
-    def GetShortReal(self, *args) -> "Storage_BaseDriver &" :
+    def GetShortReal(self, *args):
         """
         :param aValue:
         :type aValue: Standard_ShortReal &
@@ -1058,7 +1057,7 @@ class Storage_BaseDriver(object):
         """
         return _Storage.Storage_BaseDriver_GetShortReal(self, *args)
 
-    def __rshift__(self, *args) -> "Storage_BaseDriver &" :
+    def __rshift__(self, *args):
         """
         :param aValue:
         :type aValue: Standard_Character &
@@ -1069,7 +1068,7 @@ class Storage_BaseDriver(object):
         :rtype: Storage_BaseDriver
 
         :param aValue:
-        :type aValue: int &
+        :type aValue: Standard_Integer &
         :rtype: Storage_BaseDriver
 
         :param aValue:
@@ -1087,12 +1086,12 @@ class Storage_BaseDriver(object):
         """
         return _Storage.Storage_BaseDriver___rshift__(self, *args)
 
-    def Close(self, *args) -> "Storage_Error" :
+    def Close(self):
         """
         :rtype: Storage_Error
 
         """
-        return _Storage.Storage_BaseDriver_Close(self, *args)
+        return _Storage.Storage_BaseDriver_Close(self)
 
     def __del__(self):
     	try:
@@ -1187,17 +1186,17 @@ class Storage_Bucket(object):
         :rtype: None
 
         :param theSpaceSize:
-        :type theSpaceSize: int
+        :type theSpaceSize: Standard_Integer
         :rtype: None
 
         """
         _Storage.Storage_Bucket_swiginit(self,_Storage.new_Storage_Bucket(*args))
-    def Clear(self, *args) -> "void" :
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _Storage.Storage_Bucket_Clear(self, *args)
+        return _Storage.Storage_Bucket_Clear(self)
 
     def __del__(self):
     	try:
@@ -1223,7 +1222,7 @@ class Storage_BucketIterator(object):
 
         """
         _Storage.Storage_BucketIterator_swiginit(self,_Storage.new_Storage_BucketIterator(*args))
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
         :param :
         :type : Storage_BucketOfPersistent *
@@ -1232,33 +1231,33 @@ class Storage_BucketIterator(object):
         """
         return _Storage.Storage_BucketIterator_Init(self, *args)
 
-    def Reset(self, *args) -> "void" :
+    def Reset(self):
         """
         :rtype: None
 
         """
-        return _Storage.Storage_BucketIterator_Reset(self, *args)
+        return _Storage.Storage_BucketIterator_Reset(self)
 
-    def Value(self, *args) -> "Standard_Persistent *" :
+    def Value(self):
         """
         :rtype: Standard_Persistent *
 
         """
-        return _Storage.Storage_BucketIterator_Value(self, *args)
+        return _Storage.Storage_BucketIterator_Value(self)
 
-    def More(self, *args) -> "Standard_Boolean" :
+    def More(self):
         """
         :rtype: bool
 
         """
-        return _Storage.Storage_BucketIterator_More(self, *args)
+        return _Storage.Storage_BucketIterator_More(self)
 
-    def Next(self, *args) -> "void" :
+    def Next(self):
         """
         :rtype: None
 
         """
-        return _Storage.Storage_BucketIterator_Next(self, *args)
+        return _Storage.Storage_BucketIterator_Next(self)
 
     def __del__(self):
     	try:
@@ -1280,24 +1279,36 @@ Storage_BucketIterator_swigregister(Storage_BucketIterator)
 class Storage_BucketOfPersistent(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self, theBucketSize=300000, theBucketNumber=100): 
         """
         :param theBucketSize: default value is 300000
-        :type theBucketSize: int
+        :type theBucketSize: Standard_Integer
         :param theBucketNumber: default value is 100
-        :type theBucketNumber: int
+        :type theBucketNumber: Standard_Integer
+        :rtype: None
+
+        :param theBucketSize: default value is 300000
+        :type theBucketSize: Standard_Integer
+        :param theBucketNumber: default value is 100
+        :type theBucketNumber: Standard_Integer
+        :rtype: None
+
+        :param theBucketSize: default value is 300000
+        :type theBucketSize: Standard_Integer
+        :param theBucketNumber: default value is 100
+        :type theBucketNumber: Standard_Integer
         :rtype: None
 
         """
-        _Storage.Storage_BucketOfPersistent_swiginit(self,_Storage.new_Storage_BucketOfPersistent(*args))
-    def Length(self, *args) -> "Standard_Integer" :
+        _Storage.Storage_BucketOfPersistent_swiginit(self,_Storage.new_Storage_BucketOfPersistent(theBucketSize, theBucketNumber))
+    def Length(self):
         """
         :rtype: int
 
         """
-        return _Storage.Storage_BucketOfPersistent_Length(self, *args)
+        return _Storage.Storage_BucketOfPersistent_Length(self)
 
-    def Append(self, *args) -> "void" :
+    def Append(self, *args):
         """
         :param sp:
         :type sp: Handle_Standard_Persistent &
@@ -1306,21 +1317,21 @@ class Storage_BucketOfPersistent(object):
         """
         return _Storage.Storage_BucketOfPersistent_Append(self, *args)
 
-    def Value(self, *args) -> "Standard_Persistent *" :
+    def Value(self, *args):
         """
         :param theIndex:
-        :type theIndex: int
+        :type theIndex: Standard_Integer
         :rtype: Standard_Persistent *
 
         """
         return _Storage.Storage_BucketOfPersistent_Value(self, *args)
 
-    def Clear(self, *args) -> "void" :
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _Storage.Storage_BucketOfPersistent_Clear(self, *args)
+        return _Storage.Storage_BucketOfPersistent_Clear(self)
 
     def __del__(self):
     	try:
@@ -1342,14 +1353,14 @@ class Storage_CallBack(OCC.MMgt.MMgt_TShared):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def New(self, *args) -> "Handle_Standard_Persistent" :
+    def New(self):
         """
         :rtype: Handle_Standard_Persistent
 
         """
-        return _Storage.Storage_CallBack_New(self, *args)
+        return _Storage.Storage_CallBack_New(self)
 
-    def Add(self, *args) -> "void" :
+    def Add(self, *args):
         """
         :param aPers:
         :type aPers: Handle_Standard_Persistent &
@@ -1360,7 +1371,7 @@ class Storage_CallBack(OCC.MMgt.MMgt_TShared):
         """
         return _Storage.Storage_CallBack_Add(self, *args)
 
-    def Write(self, *args) -> "void" :
+    def Write(self, *args):
         """
         :param aPers:
         :type aPers: Handle_Standard_Persistent &
@@ -1373,7 +1384,7 @@ class Storage_CallBack(OCC.MMgt.MMgt_TShared):
         """
         return _Storage.Storage_CallBack_Write(self, *args)
 
-    def Read(self, *args) -> "void" :
+    def Read(self, *args):
         """
         :param aPers:
         :type aPers: Handle_Standard_Persistent &
@@ -1386,11 +1397,11 @@ class Storage_CallBack(OCC.MMgt.MMgt_TShared):
         """
         return _Storage.Storage_CallBack_Read(self, *args)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Storage_CallBack self)"""
         return _Storage.Storage_CallBack__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Storage_CallBack" :
+    def GetHandle(self):
         """GetHandle(Storage_CallBack self) -> Handle_Storage_CallBack"""
         return _Storage.Storage_CallBack_GetHandle(self)
 
@@ -1432,83 +1443,83 @@ Handle_Storage_CallBack._kill_pointed = new_instancemethod(_Storage.Handle_Stora
 Handle_Storage_CallBack_swigregister = _Storage.Handle_Storage_CallBack_swigregister
 Handle_Storage_CallBack_swigregister(Handle_Storage_CallBack)
 
-def Handle_Storage_CallBack_DownCast(*args) -> "Handle_Storage_CallBack const" :
+def Handle_Storage_CallBack_DownCast(*args):
   return _Storage.Handle_Storage_CallBack_DownCast(*args)
 Handle_Storage_CallBack_DownCast = _Storage.Handle_Storage_CallBack_DownCast
 
 class Storage_Data(OCC.MMgt.MMgt_TShared):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         * Creates an empty set of data. You explicitly create a Storage_Data object when preparing the set of objects to be stored together in a container (for example, in a file). Then use the function AddRoot to add persistent objects to the set of data. A Storage_Data object is also returned by the Read function of a Storage_Schema storage/retrieval algorithm. Use the functions NumberOfRoots and Roots to find the roots which were stored in the read container.
 
         :rtype: None
 
         """
-        _Storage.Storage_Data_swiginit(self,_Storage.new_Storage_Data(*args))
-    def ErrorStatus(self, *args) -> "Storage_Error" :
+        _Storage.Storage_Data_swiginit(self,_Storage.new_Storage_Data())
+    def ErrorStatus(self):
         """
         * Returns Storage_VSOk if - the last storage operation performed with the function Read, or - the last retrieval operation performed with the function Write by a Storage_Schema algorithm, on this set of data was successful. If the storage or retrieval operation was not performed, the returned error status indicates the reason why the operation failed. The algorithm stops its analysis at the first detected error
 
         :rtype: Storage_Error
 
         """
-        return _Storage.Storage_Data_ErrorStatus(self, *args)
+        return _Storage.Storage_Data_ErrorStatus(self)
 
-    def ClearErrorStatus(self, *args) -> "void" :
+    def ClearErrorStatus(self):
         """
         * Clears the error status positioned either by: - the last storage operation performed with the Read function, or - the last retrieval operation performed with the Write function by a Storage_Schema algorithm, on this set of data. This error status may be read by the function ErrorStatus.
 
         :rtype: None
 
         """
-        return _Storage.Storage_Data_ClearErrorStatus(self, *args)
+        return _Storage.Storage_Data_ClearErrorStatus(self)
 
-    def ErrorStatusExtension(self, *args) -> "TCollection_AsciiString" :
+    def ErrorStatusExtension(self):
         """
         :rtype: TCollection_AsciiString
 
         """
-        return _Storage.Storage_Data_ErrorStatusExtension(self, *args)
+        return _Storage.Storage_Data_ErrorStatusExtension(self)
 
-    def CreationDate(self, *args) -> "TCollection_AsciiString" :
+    def CreationDate(self):
         """
         * return the creation date
 
         :rtype: TCollection_AsciiString
 
         """
-        return _Storage.Storage_Data_CreationDate(self, *args)
+        return _Storage.Storage_Data_CreationDate(self)
 
-    def StorageVersion(self, *args) -> "TCollection_AsciiString" :
+    def StorageVersion(self):
         """
         * return the Storage package version
 
         :rtype: TCollection_AsciiString
 
         """
-        return _Storage.Storage_Data_StorageVersion(self, *args)
+        return _Storage.Storage_Data_StorageVersion(self)
 
-    def SchemaVersion(self, *args) -> "TCollection_AsciiString" :
+    def SchemaVersion(self):
         """
         * get the version of the schema
 
         :rtype: TCollection_AsciiString
 
         """
-        return _Storage.Storage_Data_SchemaVersion(self, *args)
+        return _Storage.Storage_Data_SchemaVersion(self)
 
-    def SchemaName(self, *args) -> "TCollection_AsciiString" :
+    def SchemaName(self):
         """
         * get the schema's name
 
         :rtype: TCollection_AsciiString
 
         """
-        return _Storage.Storage_Data_SchemaName(self, *args)
+        return _Storage.Storage_Data_SchemaName(self)
 
-    def SetApplicationVersion(self, *args) -> "void" :
+    def SetApplicationVersion(self, *args):
         """
         * set the version of the application
 
@@ -1519,16 +1530,16 @@ class Storage_Data(OCC.MMgt.MMgt_TShared):
         """
         return _Storage.Storage_Data_SetApplicationVersion(self, *args)
 
-    def ApplicationVersion(self, *args) -> "TCollection_AsciiString" :
+    def ApplicationVersion(self):
         """
         * get the version of the application
 
         :rtype: TCollection_AsciiString
 
         """
-        return _Storage.Storage_Data_ApplicationVersion(self, *args)
+        return _Storage.Storage_Data_ApplicationVersion(self)
 
-    def SetApplicationName(self, *args) -> "void" :
+    def SetApplicationName(self, *args):
         """
         * set the name of the application
 
@@ -1539,16 +1550,16 @@ class Storage_Data(OCC.MMgt.MMgt_TShared):
         """
         return _Storage.Storage_Data_SetApplicationName(self, *args)
 
-    def ApplicationName(self, *args) -> "TCollection_ExtendedString" :
+    def ApplicationName(self):
         """
         * get the name of the application
 
         :rtype: TCollection_ExtendedString
 
         """
-        return _Storage.Storage_Data_ApplicationName(self, *args)
+        return _Storage.Storage_Data_ApplicationName(self)
 
-    def SetDataType(self, *args) -> "void" :
+    def SetDataType(self, *args):
         """
         * set the data type
 
@@ -1559,16 +1570,16 @@ class Storage_Data(OCC.MMgt.MMgt_TShared):
         """
         return _Storage.Storage_Data_SetDataType(self, *args)
 
-    def DataType(self, *args) -> "TCollection_ExtendedString" :
+    def DataType(self):
         """
         * returns data type
 
         :rtype: TCollection_ExtendedString
 
         """
-        return _Storage.Storage_Data_DataType(self, *args)
+        return _Storage.Storage_Data_DataType(self)
 
-    def AddToUserInfo(self, *args) -> "void" :
+    def AddToUserInfo(self, *args):
         """
         * add <theUserInfo> to the user informations
 
@@ -1579,16 +1590,16 @@ class Storage_Data(OCC.MMgt.MMgt_TShared):
         """
         return _Storage.Storage_Data_AddToUserInfo(self, *args)
 
-    def UserInfo(self, *args) -> "TColStd_SequenceOfAsciiString const &" :
+    def UserInfo(self):
         """
         * return the user informations
 
         :rtype: TColStd_SequenceOfAsciiString
 
         """
-        return _Storage.Storage_Data_UserInfo(self, *args)
+        return _Storage.Storage_Data_UserInfo(self)
 
-    def AddToComments(self, *args) -> "void" :
+    def AddToComments(self, *args):
         """
         * add <theUserInfo> to the user informations
 
@@ -1599,34 +1610,34 @@ class Storage_Data(OCC.MMgt.MMgt_TShared):
         """
         return _Storage.Storage_Data_AddToComments(self, *args)
 
-    def Comments(self, *args) -> "TColStd_SequenceOfExtendedString const &" :
+    def Comments(self):
         """
         * return the user informations
 
         :rtype: TColStd_SequenceOfExtendedString
 
         """
-        return _Storage.Storage_Data_Comments(self, *args)
+        return _Storage.Storage_Data_Comments(self)
 
-    def NumberOfObjects(self, *args) -> "Standard_Integer" :
+    def NumberOfObjects(self):
         """
         * the the number of persistent objects Return: the number of persistent objects readed
 
         :rtype: int
 
         """
-        return _Storage.Storage_Data_NumberOfObjects(self, *args)
+        return _Storage.Storage_Data_NumberOfObjects(self)
 
-    def NumberOfRoots(self, *args) -> "Standard_Integer" :
+    def NumberOfRoots(self):
         """
         * Returns the number of root objects in this set of data. - When preparing a storage operation, the result is the number of roots inserted into this set of data with the function AddRoot. - When retrieving an object, the result is the number of roots stored in the read container. Use the Roots function to get these roots in a sequence.
 
         :rtype: int
 
         """
-        return _Storage.Storage_Data_NumberOfRoots(self, *args)
+        return _Storage.Storage_Data_NumberOfRoots(self)
 
-    def AddRoot(self, *args) -> "void" :
+    def AddRoot(self, *args):
         """
         * add a persistent root to write. the name of the root is a driver reference number.
 
@@ -1645,7 +1656,7 @@ class Storage_Data(OCC.MMgt.MMgt_TShared):
         """
         return _Storage.Storage_Data_AddRoot(self, *args)
 
-    def RemoveRoot(self, *args) -> "void" :
+    def RemoveRoot(self, *args):
         """
         * Removes from this set of data the root object named aName. Warning Nothing is done if there is no root object whose name is aName in this set of data.
 
@@ -1656,16 +1667,16 @@ class Storage_Data(OCC.MMgt.MMgt_TShared):
         """
         return _Storage.Storage_Data_RemoveRoot(self, *args)
 
-    def Roots(self, *args) -> "Handle_Storage_HSeqOfRoot" :
+    def Roots(self):
         """
         * Returns the roots of this set of data in a sequence. - When preparing a storage operation, the sequence contains the roots inserted into this set of data with the function AddRoot. - When retrieving an object, the sequence contains the roots stored in the container read. - An empty sequence is returned if there is no root in this set of data.
 
         :rtype: Handle_Storage_HSeqOfRoot
 
         """
-        return _Storage.Storage_Data_Roots(self, *args)
+        return _Storage.Storage_Data_Roots(self)
 
-    def Find(self, *args) -> "Handle_Storage_Root" :
+    def Find(self, *args):
         """
         * Gives the root object whose name is aName in this set of data. The returned object is a Storage_Root object, from which the object it encapsulates may be extracted. Warning A null handle is returned if there is no root object whose name is aName in this set of data.
 
@@ -1676,7 +1687,7 @@ class Storage_Data(OCC.MMgt.MMgt_TShared):
         """
         return _Storage.Storage_Data_Find(self, *args)
 
-    def IsRoot(self, *args) -> "Standard_Boolean" :
+    def IsRoot(self, *args):
         """
         * returns Standard_True if <self> contains a root named <aName>
 
@@ -1687,16 +1698,16 @@ class Storage_Data(OCC.MMgt.MMgt_TShared):
         """
         return _Storage.Storage_Data_IsRoot(self, *args)
 
-    def NumberOfTypes(self, *args) -> "Standard_Integer" :
+    def NumberOfTypes(self):
         """
         * Returns the number of types of objects used in this set of data.
 
         :rtype: int
 
         """
-        return _Storage.Storage_Data_NumberOfTypes(self, *args)
+        return _Storage.Storage_Data_NumberOfTypes(self)
 
-    def IsType(self, *args) -> "Standard_Boolean" :
+    def IsType(self, *args):
         """
         * Returns true if this set of data contains an object of type aName. Persistent objects from this set of data must have types which are recognized by the Storage_Schema algorithm used to store or retrieve them.
 
@@ -1707,20 +1718,20 @@ class Storage_Data(OCC.MMgt.MMgt_TShared):
         """
         return _Storage.Storage_Data_IsType(self, *args)
 
-    def Types(self, *args) -> "Handle_TColStd_HSequenceOfAsciiString" :
+    def Types(self):
         """
         * Gives the list of types of objects used in this set of data in a sequence.
 
         :rtype: Handle_TColStd_HSequenceOfAsciiString
 
         """
-        return _Storage.Storage_Data_Types(self, *args)
+        return _Storage.Storage_Data_Types(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Storage_Data self)"""
         return _Storage.Storage_Data__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Storage_Data" :
+    def GetHandle(self):
         """GetHandle(Storage_Data self) -> Handle_Storage_Data"""
         return _Storage.Storage_Data_GetHandle(self)
 
@@ -1785,7 +1796,7 @@ Handle_Storage_Data._kill_pointed = new_instancemethod(_Storage.Handle_Storage_D
 Handle_Storage_Data_swigregister = _Storage.Handle_Storage_Data_swigregister
 Handle_Storage_Data_swigregister(Handle_Storage_Data)
 
-def Handle_Storage_Data_DownCast(*args) -> "Handle_Storage_Data const" :
+def Handle_Storage_Data_DownCast(*args):
   return _Storage.Handle_Storage_Data_DownCast(*args)
 Handle_Storage_Data_DownCast = _Storage.Handle_Storage_Data_DownCast
 
@@ -1802,7 +1813,7 @@ class Storage_DataMapIteratorOfMapOfCallBack(OCC.TCollection.TCollection_BasicMa
 
         """
         _Storage.Storage_DataMapIteratorOfMapOfCallBack_swiginit(self,_Storage.new_Storage_DataMapIteratorOfMapOfCallBack(*args))
-    def Initialize(self, *args) -> "void" :
+    def Initialize(self, *args):
         """
         :param aMap:
         :type aMap: Storage_MapOfCallBack &
@@ -1811,19 +1822,19 @@ class Storage_DataMapIteratorOfMapOfCallBack(OCC.TCollection.TCollection_BasicMa
         """
         return _Storage.Storage_DataMapIteratorOfMapOfCallBack_Initialize(self, *args)
 
-    def Key(self, *args) -> "TCollection_AsciiString const &" :
+    def Key(self):
         """
         :rtype: TCollection_AsciiString
 
         """
-        return _Storage.Storage_DataMapIteratorOfMapOfCallBack_Key(self, *args)
+        return _Storage.Storage_DataMapIteratorOfMapOfCallBack_Key(self)
 
-    def Value(self, *args) -> "Handle_Storage_TypedCallBack const &" :
+    def Value(self):
         """
         :rtype: Handle_Storage_TypedCallBack
 
         """
-        return _Storage.Storage_DataMapIteratorOfMapOfCallBack_Value(self, *args)
+        return _Storage.Storage_DataMapIteratorOfMapOfCallBack_Value(self)
 
     def __del__(self):
     	try:
@@ -1853,7 +1864,7 @@ class Storage_DataMapIteratorOfMapOfPers(OCC.TCollection.TCollection_BasicMapIte
 
         """
         _Storage.Storage_DataMapIteratorOfMapOfPers_swiginit(self,_Storage.new_Storage_DataMapIteratorOfMapOfPers(*args))
-    def Initialize(self, *args) -> "void" :
+    def Initialize(self, *args):
         """
         :param aMap:
         :type aMap: Storage_MapOfPers &
@@ -1862,19 +1873,19 @@ class Storage_DataMapIteratorOfMapOfPers(OCC.TCollection.TCollection_BasicMapIte
         """
         return _Storage.Storage_DataMapIteratorOfMapOfPers_Initialize(self, *args)
 
-    def Key(self, *args) -> "TCollection_AsciiString const &" :
+    def Key(self):
         """
         :rtype: TCollection_AsciiString
 
         """
-        return _Storage.Storage_DataMapIteratorOfMapOfPers_Key(self, *args)
+        return _Storage.Storage_DataMapIteratorOfMapOfPers_Key(self)
 
-    def Value(self, *args) -> "Handle_Storage_Root const &" :
+    def Value(self):
         """
         :rtype: Handle_Storage_Root
 
         """
-        return _Storage.Storage_DataMapIteratorOfMapOfPers_Value(self, *args)
+        return _Storage.Storage_DataMapIteratorOfMapOfPers_Value(self)
 
     def __del__(self):
     	try:
@@ -1906,25 +1917,25 @@ class Storage_DataMapNodeOfMapOfCallBack(OCC.TCollection.TCollection_MapNode):
 
         """
         _Storage.Storage_DataMapNodeOfMapOfCallBack_swiginit(self,_Storage.new_Storage_DataMapNodeOfMapOfCallBack(*args))
-    def Key(self, *args) -> "TCollection_AsciiString &" :
+    def Key(self):
         """
         :rtype: TCollection_AsciiString
 
         """
-        return _Storage.Storage_DataMapNodeOfMapOfCallBack_Key(self, *args)
+        return _Storage.Storage_DataMapNodeOfMapOfCallBack_Key(self)
 
-    def Value(self, *args) -> "Handle_Storage_TypedCallBack &" :
+    def Value(self):
         """
         :rtype: Handle_Storage_TypedCallBack
 
         """
-        return _Storage.Storage_DataMapNodeOfMapOfCallBack_Value(self, *args)
+        return _Storage.Storage_DataMapNodeOfMapOfCallBack_Value(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Storage_DataMapNodeOfMapOfCallBack self)"""
         return _Storage.Storage_DataMapNodeOfMapOfCallBack__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Storage_DataMapNodeOfMapOfCallBack" :
+    def GetHandle(self):
         """GetHandle(Storage_DataMapNodeOfMapOfCallBack self) -> Handle_Storage_DataMapNodeOfMapOfCallBack"""
         return _Storage.Storage_DataMapNodeOfMapOfCallBack_GetHandle(self)
 
@@ -1964,7 +1975,7 @@ Handle_Storage_DataMapNodeOfMapOfCallBack._kill_pointed = new_instancemethod(_St
 Handle_Storage_DataMapNodeOfMapOfCallBack_swigregister = _Storage.Handle_Storage_DataMapNodeOfMapOfCallBack_swigregister
 Handle_Storage_DataMapNodeOfMapOfCallBack_swigregister(Handle_Storage_DataMapNodeOfMapOfCallBack)
 
-def Handle_Storage_DataMapNodeOfMapOfCallBack_DownCast(*args) -> "Handle_Storage_DataMapNodeOfMapOfCallBack const" :
+def Handle_Storage_DataMapNodeOfMapOfCallBack_DownCast(*args):
   return _Storage.Handle_Storage_DataMapNodeOfMapOfCallBack_DownCast(*args)
 Handle_Storage_DataMapNodeOfMapOfCallBack_DownCast = _Storage.Handle_Storage_DataMapNodeOfMapOfCallBack_DownCast
 
@@ -1983,25 +1994,25 @@ class Storage_DataMapNodeOfMapOfPers(OCC.TCollection.TCollection_MapNode):
 
         """
         _Storage.Storage_DataMapNodeOfMapOfPers_swiginit(self,_Storage.new_Storage_DataMapNodeOfMapOfPers(*args))
-    def Key(self, *args) -> "TCollection_AsciiString &" :
+    def Key(self):
         """
         :rtype: TCollection_AsciiString
 
         """
-        return _Storage.Storage_DataMapNodeOfMapOfPers_Key(self, *args)
+        return _Storage.Storage_DataMapNodeOfMapOfPers_Key(self)
 
-    def Value(self, *args) -> "Handle_Storage_Root &" :
+    def Value(self):
         """
         :rtype: Handle_Storage_Root
 
         """
-        return _Storage.Storage_DataMapNodeOfMapOfPers_Value(self, *args)
+        return _Storage.Storage_DataMapNodeOfMapOfPers_Value(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Storage_DataMapNodeOfMapOfPers self)"""
         return _Storage.Storage_DataMapNodeOfMapOfPers__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Storage_DataMapNodeOfMapOfPers" :
+    def GetHandle(self):
         """GetHandle(Storage_DataMapNodeOfMapOfPers self) -> Handle_Storage_DataMapNodeOfMapOfPers"""
         return _Storage.Storage_DataMapNodeOfMapOfPers_GetHandle(self)
 
@@ -2041,7 +2052,7 @@ Handle_Storage_DataMapNodeOfMapOfPers._kill_pointed = new_instancemethod(_Storag
 Handle_Storage_DataMapNodeOfMapOfPers_swigregister = _Storage.Handle_Storage_DataMapNodeOfMapOfPers_swigregister
 Handle_Storage_DataMapNodeOfMapOfPers_swigregister(Handle_Storage_DataMapNodeOfMapOfPers)
 
-def Handle_Storage_DataMapNodeOfMapOfPers_DownCast(*args) -> "Handle_Storage_DataMapNodeOfMapOfPers const" :
+def Handle_Storage_DataMapNodeOfMapOfPers_DownCast(*args):
   return _Storage.Handle_Storage_DataMapNodeOfMapOfPers_DownCast(*args)
 Handle_Storage_DataMapNodeOfMapOfPers_DownCast = _Storage.Handle_Storage_DataMapNodeOfMapOfPers_DownCast
 
@@ -2051,22 +2062,22 @@ class Storage_HArrayOfCallBack(OCC.MMgt.MMgt_TShared):
     def __init__(self, *args): 
         """
         :param Low:
-        :type Low: int
+        :type Low: Standard_Integer
         :param Up:
-        :type Up: int
+        :type Up: Standard_Integer
         :rtype: None
 
         :param Low:
-        :type Low: int
+        :type Low: Standard_Integer
         :param Up:
-        :type Up: int
+        :type Up: Standard_Integer
         :param V:
         :type V: Handle_Storage_CallBack &
         :rtype: None
 
         """
         _Storage.Storage_HArrayOfCallBack_swiginit(self,_Storage.new_Storage_HArrayOfCallBack(*args))
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
         :param V:
         :type V: Handle_Storage_CallBack &
@@ -2075,31 +2086,31 @@ class Storage_HArrayOfCallBack(OCC.MMgt.MMgt_TShared):
         """
         return _Storage.Storage_HArrayOfCallBack_Init(self, *args)
 
-    def Length(self, *args) -> "Standard_Integer" :
+    def Length(self):
         """
         :rtype: int
 
         """
-        return _Storage.Storage_HArrayOfCallBack_Length(self, *args)
+        return _Storage.Storage_HArrayOfCallBack_Length(self)
 
-    def Lower(self, *args) -> "Standard_Integer" :
+    def Lower(self):
         """
         :rtype: int
 
         """
-        return _Storage.Storage_HArrayOfCallBack_Lower(self, *args)
+        return _Storage.Storage_HArrayOfCallBack_Lower(self)
 
-    def Upper(self, *args) -> "Standard_Integer" :
+    def Upper(self):
         """
         :rtype: int
 
         """
-        return _Storage.Storage_HArrayOfCallBack_Upper(self, *args)
+        return _Storage.Storage_HArrayOfCallBack_Upper(self)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Value:
         :type Value: Handle_Storage_CallBack &
         :rtype: None
@@ -2107,43 +2118,43 @@ class Storage_HArrayOfCallBack(OCC.MMgt.MMgt_TShared):
         """
         return _Storage.Storage_HArrayOfCallBack_SetValue(self, *args)
 
-    def Value(self, *args) -> "Handle_Storage_CallBack const &" :
+    def Value(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Handle_Storage_CallBack
 
         """
         return _Storage.Storage_HArrayOfCallBack_Value(self, *args)
 
-    def ChangeValue(self, *args) -> "Handle_Storage_CallBack &" :
+    def ChangeValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Handle_Storage_CallBack
 
         """
         return _Storage.Storage_HArrayOfCallBack_ChangeValue(self, *args)
 
-    def Array1(self, *args) -> "Storage_ArrayOfCallBack const &" :
+    def Array1(self):
         """
         :rtype: Storage_ArrayOfCallBack
 
         """
-        return _Storage.Storage_HArrayOfCallBack_Array1(self, *args)
+        return _Storage.Storage_HArrayOfCallBack_Array1(self)
 
-    def ChangeArray1(self, *args) -> "Storage_ArrayOfCallBack &" :
+    def ChangeArray1(self):
         """
         :rtype: Storage_ArrayOfCallBack
 
         """
-        return _Storage.Storage_HArrayOfCallBack_ChangeArray1(self, *args)
+        return _Storage.Storage_HArrayOfCallBack_ChangeArray1(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Storage_HArrayOfCallBack self)"""
         return _Storage.Storage_HArrayOfCallBack__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Storage_HArrayOfCallBack" :
+    def GetHandle(self):
         """GetHandle(Storage_HArrayOfCallBack self) -> Handle_Storage_HArrayOfCallBack"""
         return _Storage.Storage_HArrayOfCallBack_GetHandle(self)
 
@@ -2190,7 +2201,7 @@ Handle_Storage_HArrayOfCallBack._kill_pointed = new_instancemethod(_Storage.Hand
 Handle_Storage_HArrayOfCallBack_swigregister = _Storage.Handle_Storage_HArrayOfCallBack_swigregister
 Handle_Storage_HArrayOfCallBack_swigregister(Handle_Storage_HArrayOfCallBack)
 
-def Handle_Storage_HArrayOfCallBack_DownCast(*args) -> "Handle_Storage_HArrayOfCallBack const" :
+def Handle_Storage_HArrayOfCallBack_DownCast(*args):
   return _Storage.Handle_Storage_HArrayOfCallBack_DownCast(*args)
 Handle_Storage_HArrayOfCallBack_DownCast = _Storage.Handle_Storage_HArrayOfCallBack_DownCast
 
@@ -2200,22 +2211,22 @@ class Storage_HArrayOfSchema(OCC.MMgt.MMgt_TShared):
     def __init__(self, *args): 
         """
         :param Low:
-        :type Low: int
+        :type Low: Standard_Integer
         :param Up:
-        :type Up: int
+        :type Up: Standard_Integer
         :rtype: None
 
         :param Low:
-        :type Low: int
+        :type Low: Standard_Integer
         :param Up:
-        :type Up: int
+        :type Up: Standard_Integer
         :param V:
         :type V: Handle_Storage_Schema &
         :rtype: None
 
         """
         _Storage.Storage_HArrayOfSchema_swiginit(self,_Storage.new_Storage_HArrayOfSchema(*args))
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
         :param V:
         :type V: Handle_Storage_Schema &
@@ -2224,31 +2235,31 @@ class Storage_HArrayOfSchema(OCC.MMgt.MMgt_TShared):
         """
         return _Storage.Storage_HArrayOfSchema_Init(self, *args)
 
-    def Length(self, *args) -> "Standard_Integer" :
+    def Length(self):
         """
         :rtype: int
 
         """
-        return _Storage.Storage_HArrayOfSchema_Length(self, *args)
+        return _Storage.Storage_HArrayOfSchema_Length(self)
 
-    def Lower(self, *args) -> "Standard_Integer" :
+    def Lower(self):
         """
         :rtype: int
 
         """
-        return _Storage.Storage_HArrayOfSchema_Lower(self, *args)
+        return _Storage.Storage_HArrayOfSchema_Lower(self)
 
-    def Upper(self, *args) -> "Standard_Integer" :
+    def Upper(self):
         """
         :rtype: int
 
         """
-        return _Storage.Storage_HArrayOfSchema_Upper(self, *args)
+        return _Storage.Storage_HArrayOfSchema_Upper(self)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Value:
         :type Value: Handle_Storage_Schema &
         :rtype: None
@@ -2256,43 +2267,43 @@ class Storage_HArrayOfSchema(OCC.MMgt.MMgt_TShared):
         """
         return _Storage.Storage_HArrayOfSchema_SetValue(self, *args)
 
-    def Value(self, *args) -> "Handle_Storage_Schema const &" :
+    def Value(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Handle_Storage_Schema
 
         """
         return _Storage.Storage_HArrayOfSchema_Value(self, *args)
 
-    def ChangeValue(self, *args) -> "Handle_Storage_Schema &" :
+    def ChangeValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Handle_Storage_Schema
 
         """
         return _Storage.Storage_HArrayOfSchema_ChangeValue(self, *args)
 
-    def Array1(self, *args) -> "Storage_ArrayOfSchema const &" :
+    def Array1(self):
         """
         :rtype: Storage_ArrayOfSchema
 
         """
-        return _Storage.Storage_HArrayOfSchema_Array1(self, *args)
+        return _Storage.Storage_HArrayOfSchema_Array1(self)
 
-    def ChangeArray1(self, *args) -> "Storage_ArrayOfSchema &" :
+    def ChangeArray1(self):
         """
         :rtype: Storage_ArrayOfSchema
 
         """
-        return _Storage.Storage_HArrayOfSchema_ChangeArray1(self, *args)
+        return _Storage.Storage_HArrayOfSchema_ChangeArray1(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Storage_HArrayOfSchema self)"""
         return _Storage.Storage_HArrayOfSchema__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Storage_HArrayOfSchema" :
+    def GetHandle(self):
         """GetHandle(Storage_HArrayOfSchema self) -> Handle_Storage_HArrayOfSchema"""
         return _Storage.Storage_HArrayOfSchema_GetHandle(self)
 
@@ -2339,7 +2350,7 @@ Handle_Storage_HArrayOfSchema._kill_pointed = new_instancemethod(_Storage.Handle
 Handle_Storage_HArrayOfSchema_swigregister = _Storage.Handle_Storage_HArrayOfSchema_swigregister
 Handle_Storage_HArrayOfSchema_swigregister(Handle_Storage_HArrayOfSchema)
 
-def Handle_Storage_HArrayOfSchema_DownCast(*args) -> "Handle_Storage_HArrayOfSchema const" :
+def Handle_Storage_HArrayOfSchema_DownCast(*args):
   return _Storage.Handle_Storage_HArrayOfSchema_DownCast(*args)
 Handle_Storage_HArrayOfSchema_DownCast = _Storage.Handle_Storage_HArrayOfSchema_DownCast
 
@@ -2349,22 +2360,22 @@ class Storage_HPArray(OCC.MMgt.MMgt_TShared):
     def __init__(self, *args): 
         """
         :param Low:
-        :type Low: int
+        :type Low: Standard_Integer
         :param Up:
-        :type Up: int
+        :type Up: Standard_Integer
         :rtype: None
 
         :param Low:
-        :type Low: int
+        :type Low: Standard_Integer
         :param Up:
-        :type Up: int
+        :type Up: Standard_Integer
         :param V:
         :type V: Handle_Standard_Persistent &
         :rtype: None
 
         """
         _Storage.Storage_HPArray_swiginit(self,_Storage.new_Storage_HPArray(*args))
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
         :param V:
         :type V: Handle_Standard_Persistent &
@@ -2373,31 +2384,31 @@ class Storage_HPArray(OCC.MMgt.MMgt_TShared):
         """
         return _Storage.Storage_HPArray_Init(self, *args)
 
-    def Length(self, *args) -> "Standard_Integer" :
+    def Length(self):
         """
         :rtype: int
 
         """
-        return _Storage.Storage_HPArray_Length(self, *args)
+        return _Storage.Storage_HPArray_Length(self)
 
-    def Lower(self, *args) -> "Standard_Integer" :
+    def Lower(self):
         """
         :rtype: int
 
         """
-        return _Storage.Storage_HPArray_Lower(self, *args)
+        return _Storage.Storage_HPArray_Lower(self)
 
-    def Upper(self, *args) -> "Standard_Integer" :
+    def Upper(self):
         """
         :rtype: int
 
         """
-        return _Storage.Storage_HPArray_Upper(self, *args)
+        return _Storage.Storage_HPArray_Upper(self)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Value:
         :type Value: Handle_Standard_Persistent &
         :rtype: None
@@ -2405,43 +2416,43 @@ class Storage_HPArray(OCC.MMgt.MMgt_TShared):
         """
         return _Storage.Storage_HPArray_SetValue(self, *args)
 
-    def Value(self, *args) -> "Handle_Standard_Persistent const &" :
+    def Value(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Handle_Standard_Persistent
 
         """
         return _Storage.Storage_HPArray_Value(self, *args)
 
-    def ChangeValue(self, *args) -> "Handle_Standard_Persistent &" :
+    def ChangeValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Handle_Standard_Persistent
 
         """
         return _Storage.Storage_HPArray_ChangeValue(self, *args)
 
-    def Array1(self, *args) -> "Storage_PArray const &" :
+    def Array1(self):
         """
         :rtype: Storage_PArray
 
         """
-        return _Storage.Storage_HPArray_Array1(self, *args)
+        return _Storage.Storage_HPArray_Array1(self)
 
-    def ChangeArray1(self, *args) -> "Storage_PArray &" :
+    def ChangeArray1(self):
         """
         :rtype: Storage_PArray
 
         """
-        return _Storage.Storage_HPArray_ChangeArray1(self, *args)
+        return _Storage.Storage_HPArray_ChangeArray1(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Storage_HPArray self)"""
         return _Storage.Storage_HPArray__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Storage_HPArray" :
+    def GetHandle(self):
         """GetHandle(Storage_HPArray self) -> Handle_Storage_HPArray"""
         return _Storage.Storage_HPArray_GetHandle(self)
 
@@ -2488,41 +2499,41 @@ Handle_Storage_HPArray._kill_pointed = new_instancemethod(_Storage.Handle_Storag
 Handle_Storage_HPArray_swigregister = _Storage.Handle_Storage_HPArray_swigregister
 Handle_Storage_HPArray_swigregister(Handle_Storage_HPArray)
 
-def Handle_Storage_HPArray_DownCast(*args) -> "Handle_Storage_HPArray const" :
+def Handle_Storage_HPArray_DownCast(*args):
   return _Storage.Handle_Storage_HPArray_DownCast(*args)
 Handle_Storage_HPArray_DownCast = _Storage.Handle_Storage_HPArray_DownCast
 
 class Storage_HSeqOfCallBack(OCC.MMgt.MMgt_TShared):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _Storage.Storage_HSeqOfCallBack_swiginit(self,_Storage.new_Storage_HSeqOfCallBack(*args))
-    def IsEmpty(self, *args) -> "Standard_Boolean" :
+        _Storage.Storage_HSeqOfCallBack_swiginit(self,_Storage.new_Storage_HSeqOfCallBack())
+    def IsEmpty(self):
         """
         :rtype: bool
 
         """
-        return _Storage.Storage_HSeqOfCallBack_IsEmpty(self, *args)
+        return _Storage.Storage_HSeqOfCallBack_IsEmpty(self)
 
-    def Length(self, *args) -> "Standard_Integer" :
+    def Length(self):
         """
         :rtype: int
 
         """
-        return _Storage.Storage_HSeqOfCallBack_Length(self, *args)
+        return _Storage.Storage_HSeqOfCallBack_Length(self)
 
-    def Clear(self, *args) -> "void" :
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _Storage.Storage_HSeqOfCallBack_Clear(self, *args)
+        return _Storage.Storage_HSeqOfCallBack_Clear(self)
 
-    def Append(self, *args) -> "void" :
+    def Append(self, *args):
         """
         :param anItem:
         :type anItem: Handle_Storage_CallBack &
@@ -2535,7 +2546,7 @@ class Storage_HSeqOfCallBack(OCC.MMgt.MMgt_TShared):
         """
         return _Storage.Storage_HSeqOfCallBack_Append(self, *args)
 
-    def Prepend(self, *args) -> "void" :
+    def Prepend(self, *args):
         """
         :param anItem:
         :type anItem: Handle_Storage_CallBack &
@@ -2548,23 +2559,23 @@ class Storage_HSeqOfCallBack(OCC.MMgt.MMgt_TShared):
         """
         return _Storage.Storage_HSeqOfCallBack_Prepend(self, *args)
 
-    def Reverse(self, *args) -> "void" :
+    def Reverse(self):
         """
         :rtype: None
 
         """
-        return _Storage.Storage_HSeqOfCallBack_Reverse(self, *args)
+        return _Storage.Storage_HSeqOfCallBack_Reverse(self)
 
-    def InsertBefore(self, *args) -> "void" :
+    def InsertBefore(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :param anItem:
         :type anItem: Handle_Storage_CallBack &
         :rtype: None
 
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :param aSequence:
         :type aSequence: Handle_Storage_HSeqOfCallBack &
         :rtype: None
@@ -2572,16 +2583,16 @@ class Storage_HSeqOfCallBack(OCC.MMgt.MMgt_TShared):
         """
         return _Storage.Storage_HSeqOfCallBack_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args) -> "void" :
+    def InsertAfter(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :param anItem:
         :type anItem: Handle_Storage_CallBack &
         :rtype: None
 
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :param aSequence:
         :type aSequence: Handle_Storage_HSeqOfCallBack &
         :rtype: None
@@ -2589,30 +2600,30 @@ class Storage_HSeqOfCallBack(OCC.MMgt.MMgt_TShared):
         """
         return _Storage.Storage_HSeqOfCallBack_InsertAfter(self, *args)
 
-    def Exchange(self, *args) -> "void" :
+    def Exchange(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :param anOtherIndex:
-        :type anOtherIndex: int
+        :type anOtherIndex: Standard_Integer
         :rtype: None
 
         """
         return _Storage.Storage_HSeqOfCallBack_Exchange(self, *args)
 
-    def Split(self, *args) -> "Handle_Storage_HSeqOfCallBack" :
+    def Split(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :rtype: Handle_Storage_HSeqOfCallBack
 
         """
         return _Storage.Storage_HSeqOfCallBack_Split(self, *args)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :param anItem:
         :type anItem: Handle_Storage_CallBack &
         :rtype: None
@@ -2620,65 +2631,65 @@ class Storage_HSeqOfCallBack(OCC.MMgt.MMgt_TShared):
         """
         return _Storage.Storage_HSeqOfCallBack_SetValue(self, *args)
 
-    def Value(self, *args) -> "Handle_Storage_CallBack const &" :
+    def Value(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :rtype: Handle_Storage_CallBack
 
         """
         return _Storage.Storage_HSeqOfCallBack_Value(self, *args)
 
-    def ChangeValue(self, *args) -> "Handle_Storage_CallBack &" :
+    def ChangeValue(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :rtype: Handle_Storage_CallBack
 
         """
         return _Storage.Storage_HSeqOfCallBack_ChangeValue(self, *args)
 
-    def Remove(self, *args) -> "void" :
+    def Remove(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :rtype: None
 
         :param fromIndex:
-        :type fromIndex: int
+        :type fromIndex: Standard_Integer
         :param toIndex:
-        :type toIndex: int
+        :type toIndex: Standard_Integer
         :rtype: None
 
         """
         return _Storage.Storage_HSeqOfCallBack_Remove(self, *args)
 
-    def Sequence(self, *args) -> "Storage_SeqOfCallBack const &" :
+    def Sequence(self):
         """
         :rtype: Storage_SeqOfCallBack
 
         """
-        return _Storage.Storage_HSeqOfCallBack_Sequence(self, *args)
+        return _Storage.Storage_HSeqOfCallBack_Sequence(self)
 
-    def ChangeSequence(self, *args) -> "Storage_SeqOfCallBack &" :
+    def ChangeSequence(self):
         """
         :rtype: Storage_SeqOfCallBack
 
         """
-        return _Storage.Storage_HSeqOfCallBack_ChangeSequence(self, *args)
+        return _Storage.Storage_HSeqOfCallBack_ChangeSequence(self)
 
-    def ShallowCopy(self, *args) -> "Handle_Storage_HSeqOfCallBack" :
+    def ShallowCopy(self):
         """
         :rtype: Handle_Storage_HSeqOfCallBack
 
         """
-        return _Storage.Storage_HSeqOfCallBack_ShallowCopy(self, *args)
+        return _Storage.Storage_HSeqOfCallBack_ShallowCopy(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Storage_HSeqOfCallBack self)"""
         return _Storage.Storage_HSeqOfCallBack__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Storage_HSeqOfCallBack" :
+    def GetHandle(self):
         """GetHandle(Storage_HSeqOfCallBack self) -> Handle_Storage_HSeqOfCallBack"""
         return _Storage.Storage_HSeqOfCallBack_GetHandle(self)
 
@@ -2733,41 +2744,41 @@ Handle_Storage_HSeqOfCallBack._kill_pointed = new_instancemethod(_Storage.Handle
 Handle_Storage_HSeqOfCallBack_swigregister = _Storage.Handle_Storage_HSeqOfCallBack_swigregister
 Handle_Storage_HSeqOfCallBack_swigregister(Handle_Storage_HSeqOfCallBack)
 
-def Handle_Storage_HSeqOfCallBack_DownCast(*args) -> "Handle_Storage_HSeqOfCallBack const" :
+def Handle_Storage_HSeqOfCallBack_DownCast(*args):
   return _Storage.Handle_Storage_HSeqOfCallBack_DownCast(*args)
 Handle_Storage_HSeqOfCallBack_DownCast = _Storage.Handle_Storage_HSeqOfCallBack_DownCast
 
 class Storage_HSeqOfPersistent(OCC.MMgt.MMgt_TShared):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _Storage.Storage_HSeqOfPersistent_swiginit(self,_Storage.new_Storage_HSeqOfPersistent(*args))
-    def IsEmpty(self, *args) -> "Standard_Boolean" :
+        _Storage.Storage_HSeqOfPersistent_swiginit(self,_Storage.new_Storage_HSeqOfPersistent())
+    def IsEmpty(self):
         """
         :rtype: bool
 
         """
-        return _Storage.Storage_HSeqOfPersistent_IsEmpty(self, *args)
+        return _Storage.Storage_HSeqOfPersistent_IsEmpty(self)
 
-    def Length(self, *args) -> "Standard_Integer" :
+    def Length(self):
         """
         :rtype: int
 
         """
-        return _Storage.Storage_HSeqOfPersistent_Length(self, *args)
+        return _Storage.Storage_HSeqOfPersistent_Length(self)
 
-    def Clear(self, *args) -> "void" :
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _Storage.Storage_HSeqOfPersistent_Clear(self, *args)
+        return _Storage.Storage_HSeqOfPersistent_Clear(self)
 
-    def Append(self, *args) -> "void" :
+    def Append(self, *args):
         """
         :param anItem:
         :type anItem: Handle_Standard_Persistent &
@@ -2780,7 +2791,7 @@ class Storage_HSeqOfPersistent(OCC.MMgt.MMgt_TShared):
         """
         return _Storage.Storage_HSeqOfPersistent_Append(self, *args)
 
-    def Prepend(self, *args) -> "void" :
+    def Prepend(self, *args):
         """
         :param anItem:
         :type anItem: Handle_Standard_Persistent &
@@ -2793,23 +2804,23 @@ class Storage_HSeqOfPersistent(OCC.MMgt.MMgt_TShared):
         """
         return _Storage.Storage_HSeqOfPersistent_Prepend(self, *args)
 
-    def Reverse(self, *args) -> "void" :
+    def Reverse(self):
         """
         :rtype: None
 
         """
-        return _Storage.Storage_HSeqOfPersistent_Reverse(self, *args)
+        return _Storage.Storage_HSeqOfPersistent_Reverse(self)
 
-    def InsertBefore(self, *args) -> "void" :
+    def InsertBefore(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :param anItem:
         :type anItem: Handle_Standard_Persistent &
         :rtype: None
 
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :param aSequence:
         :type aSequence: Handle_Storage_HSeqOfPersistent &
         :rtype: None
@@ -2817,16 +2828,16 @@ class Storage_HSeqOfPersistent(OCC.MMgt.MMgt_TShared):
         """
         return _Storage.Storage_HSeqOfPersistent_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args) -> "void" :
+    def InsertAfter(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :param anItem:
         :type anItem: Handle_Standard_Persistent &
         :rtype: None
 
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :param aSequence:
         :type aSequence: Handle_Storage_HSeqOfPersistent &
         :rtype: None
@@ -2834,30 +2845,30 @@ class Storage_HSeqOfPersistent(OCC.MMgt.MMgt_TShared):
         """
         return _Storage.Storage_HSeqOfPersistent_InsertAfter(self, *args)
 
-    def Exchange(self, *args) -> "void" :
+    def Exchange(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :param anOtherIndex:
-        :type anOtherIndex: int
+        :type anOtherIndex: Standard_Integer
         :rtype: None
 
         """
         return _Storage.Storage_HSeqOfPersistent_Exchange(self, *args)
 
-    def Split(self, *args) -> "Handle_Storage_HSeqOfPersistent" :
+    def Split(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :rtype: Handle_Storage_HSeqOfPersistent
 
         """
         return _Storage.Storage_HSeqOfPersistent_Split(self, *args)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :param anItem:
         :type anItem: Handle_Standard_Persistent &
         :rtype: None
@@ -2865,65 +2876,65 @@ class Storage_HSeqOfPersistent(OCC.MMgt.MMgt_TShared):
         """
         return _Storage.Storage_HSeqOfPersistent_SetValue(self, *args)
 
-    def Value(self, *args) -> "Handle_Standard_Persistent const &" :
+    def Value(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :rtype: Handle_Standard_Persistent
 
         """
         return _Storage.Storage_HSeqOfPersistent_Value(self, *args)
 
-    def ChangeValue(self, *args) -> "Handle_Standard_Persistent &" :
+    def ChangeValue(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :rtype: Handle_Standard_Persistent
 
         """
         return _Storage.Storage_HSeqOfPersistent_ChangeValue(self, *args)
 
-    def Remove(self, *args) -> "void" :
+    def Remove(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :rtype: None
 
         :param fromIndex:
-        :type fromIndex: int
+        :type fromIndex: Standard_Integer
         :param toIndex:
-        :type toIndex: int
+        :type toIndex: Standard_Integer
         :rtype: None
 
         """
         return _Storage.Storage_HSeqOfPersistent_Remove(self, *args)
 
-    def Sequence(self, *args) -> "Storage_SeqOfPersistent const &" :
+    def Sequence(self):
         """
         :rtype: Storage_SeqOfPersistent
 
         """
-        return _Storage.Storage_HSeqOfPersistent_Sequence(self, *args)
+        return _Storage.Storage_HSeqOfPersistent_Sequence(self)
 
-    def ChangeSequence(self, *args) -> "Storage_SeqOfPersistent &" :
+    def ChangeSequence(self):
         """
         :rtype: Storage_SeqOfPersistent
 
         """
-        return _Storage.Storage_HSeqOfPersistent_ChangeSequence(self, *args)
+        return _Storage.Storage_HSeqOfPersistent_ChangeSequence(self)
 
-    def ShallowCopy(self, *args) -> "Handle_Storage_HSeqOfPersistent" :
+    def ShallowCopy(self):
         """
         :rtype: Handle_Storage_HSeqOfPersistent
 
         """
-        return _Storage.Storage_HSeqOfPersistent_ShallowCopy(self, *args)
+        return _Storage.Storage_HSeqOfPersistent_ShallowCopy(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Storage_HSeqOfPersistent self)"""
         return _Storage.Storage_HSeqOfPersistent__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Storage_HSeqOfPersistent" :
+    def GetHandle(self):
         """GetHandle(Storage_HSeqOfPersistent self) -> Handle_Storage_HSeqOfPersistent"""
         return _Storage.Storage_HSeqOfPersistent_GetHandle(self)
 
@@ -2978,41 +2989,41 @@ Handle_Storage_HSeqOfPersistent._kill_pointed = new_instancemethod(_Storage.Hand
 Handle_Storage_HSeqOfPersistent_swigregister = _Storage.Handle_Storage_HSeqOfPersistent_swigregister
 Handle_Storage_HSeqOfPersistent_swigregister(Handle_Storage_HSeqOfPersistent)
 
-def Handle_Storage_HSeqOfPersistent_DownCast(*args) -> "Handle_Storage_HSeqOfPersistent const" :
+def Handle_Storage_HSeqOfPersistent_DownCast(*args):
   return _Storage.Handle_Storage_HSeqOfPersistent_DownCast(*args)
 Handle_Storage_HSeqOfPersistent_DownCast = _Storage.Handle_Storage_HSeqOfPersistent_DownCast
 
 class Storage_HSeqOfRoot(OCC.MMgt.MMgt_TShared):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _Storage.Storage_HSeqOfRoot_swiginit(self,_Storage.new_Storage_HSeqOfRoot(*args))
-    def IsEmpty(self, *args) -> "Standard_Boolean" :
+        _Storage.Storage_HSeqOfRoot_swiginit(self,_Storage.new_Storage_HSeqOfRoot())
+    def IsEmpty(self):
         """
         :rtype: bool
 
         """
-        return _Storage.Storage_HSeqOfRoot_IsEmpty(self, *args)
+        return _Storage.Storage_HSeqOfRoot_IsEmpty(self)
 
-    def Length(self, *args) -> "Standard_Integer" :
+    def Length(self):
         """
         :rtype: int
 
         """
-        return _Storage.Storage_HSeqOfRoot_Length(self, *args)
+        return _Storage.Storage_HSeqOfRoot_Length(self)
 
-    def Clear(self, *args) -> "void" :
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _Storage.Storage_HSeqOfRoot_Clear(self, *args)
+        return _Storage.Storage_HSeqOfRoot_Clear(self)
 
-    def Append(self, *args) -> "void" :
+    def Append(self, *args):
         """
         :param anItem:
         :type anItem: Handle_Storage_Root &
@@ -3025,7 +3036,7 @@ class Storage_HSeqOfRoot(OCC.MMgt.MMgt_TShared):
         """
         return _Storage.Storage_HSeqOfRoot_Append(self, *args)
 
-    def Prepend(self, *args) -> "void" :
+    def Prepend(self, *args):
         """
         :param anItem:
         :type anItem: Handle_Storage_Root &
@@ -3038,23 +3049,23 @@ class Storage_HSeqOfRoot(OCC.MMgt.MMgt_TShared):
         """
         return _Storage.Storage_HSeqOfRoot_Prepend(self, *args)
 
-    def Reverse(self, *args) -> "void" :
+    def Reverse(self):
         """
         :rtype: None
 
         """
-        return _Storage.Storage_HSeqOfRoot_Reverse(self, *args)
+        return _Storage.Storage_HSeqOfRoot_Reverse(self)
 
-    def InsertBefore(self, *args) -> "void" :
+    def InsertBefore(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :param anItem:
         :type anItem: Handle_Storage_Root &
         :rtype: None
 
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :param aSequence:
         :type aSequence: Handle_Storage_HSeqOfRoot &
         :rtype: None
@@ -3062,16 +3073,16 @@ class Storage_HSeqOfRoot(OCC.MMgt.MMgt_TShared):
         """
         return _Storage.Storage_HSeqOfRoot_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args) -> "void" :
+    def InsertAfter(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :param anItem:
         :type anItem: Handle_Storage_Root &
         :rtype: None
 
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :param aSequence:
         :type aSequence: Handle_Storage_HSeqOfRoot &
         :rtype: None
@@ -3079,30 +3090,30 @@ class Storage_HSeqOfRoot(OCC.MMgt.MMgt_TShared):
         """
         return _Storage.Storage_HSeqOfRoot_InsertAfter(self, *args)
 
-    def Exchange(self, *args) -> "void" :
+    def Exchange(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :param anOtherIndex:
-        :type anOtherIndex: int
+        :type anOtherIndex: Standard_Integer
         :rtype: None
 
         """
         return _Storage.Storage_HSeqOfRoot_Exchange(self, *args)
 
-    def Split(self, *args) -> "Handle_Storage_HSeqOfRoot" :
+    def Split(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :rtype: Handle_Storage_HSeqOfRoot
 
         """
         return _Storage.Storage_HSeqOfRoot_Split(self, *args)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :param anItem:
         :type anItem: Handle_Storage_Root &
         :rtype: None
@@ -3110,65 +3121,65 @@ class Storage_HSeqOfRoot(OCC.MMgt.MMgt_TShared):
         """
         return _Storage.Storage_HSeqOfRoot_SetValue(self, *args)
 
-    def Value(self, *args) -> "Handle_Storage_Root const &" :
+    def Value(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :rtype: Handle_Storage_Root
 
         """
         return _Storage.Storage_HSeqOfRoot_Value(self, *args)
 
-    def ChangeValue(self, *args) -> "Handle_Storage_Root &" :
+    def ChangeValue(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :rtype: Handle_Storage_Root
 
         """
         return _Storage.Storage_HSeqOfRoot_ChangeValue(self, *args)
 
-    def Remove(self, *args) -> "void" :
+    def Remove(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :rtype: None
 
         :param fromIndex:
-        :type fromIndex: int
+        :type fromIndex: Standard_Integer
         :param toIndex:
-        :type toIndex: int
+        :type toIndex: Standard_Integer
         :rtype: None
 
         """
         return _Storage.Storage_HSeqOfRoot_Remove(self, *args)
 
-    def Sequence(self, *args) -> "Storage_SeqOfRoot const &" :
+    def Sequence(self):
         """
         :rtype: Storage_SeqOfRoot
 
         """
-        return _Storage.Storage_HSeqOfRoot_Sequence(self, *args)
+        return _Storage.Storage_HSeqOfRoot_Sequence(self)
 
-    def ChangeSequence(self, *args) -> "Storage_SeqOfRoot &" :
+    def ChangeSequence(self):
         """
         :rtype: Storage_SeqOfRoot
 
         """
-        return _Storage.Storage_HSeqOfRoot_ChangeSequence(self, *args)
+        return _Storage.Storage_HSeqOfRoot_ChangeSequence(self)
 
-    def ShallowCopy(self, *args) -> "Handle_Storage_HSeqOfRoot" :
+    def ShallowCopy(self):
         """
         :rtype: Handle_Storage_HSeqOfRoot
 
         """
-        return _Storage.Storage_HSeqOfRoot_ShallowCopy(self, *args)
+        return _Storage.Storage_HSeqOfRoot_ShallowCopy(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Storage_HSeqOfRoot self)"""
         return _Storage.Storage_HSeqOfRoot__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Storage_HSeqOfRoot" :
+    def GetHandle(self):
         """GetHandle(Storage_HSeqOfRoot self) -> Handle_Storage_HSeqOfRoot"""
         return _Storage.Storage_HSeqOfRoot_GetHandle(self)
 
@@ -3223,56 +3234,56 @@ Handle_Storage_HSeqOfRoot._kill_pointed = new_instancemethod(_Storage.Handle_Sto
 Handle_Storage_HSeqOfRoot_swigregister = _Storage.Handle_Storage_HSeqOfRoot_swigregister
 Handle_Storage_HSeqOfRoot_swigregister(Handle_Storage_HSeqOfRoot)
 
-def Handle_Storage_HSeqOfRoot_DownCast(*args) -> "Handle_Storage_HSeqOfRoot const" :
+def Handle_Storage_HSeqOfRoot_DownCast(*args):
   return _Storage.Handle_Storage_HSeqOfRoot_DownCast(*args)
 Handle_Storage_HSeqOfRoot_DownCast = _Storage.Handle_Storage_HSeqOfRoot_DownCast
 
 class Storage_HeaderData(OCC.MMgt.MMgt_TShared):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _Storage.Storage_HeaderData_swiginit(self,_Storage.new_Storage_HeaderData(*args))
-    def CreationDate(self, *args) -> "TCollection_AsciiString" :
+        _Storage.Storage_HeaderData_swiginit(self,_Storage.new_Storage_HeaderData())
+    def CreationDate(self):
         """
         * return the creation date
 
         :rtype: TCollection_AsciiString
 
         """
-        return _Storage.Storage_HeaderData_CreationDate(self, *args)
+        return _Storage.Storage_HeaderData_CreationDate(self)
 
-    def StorageVersion(self, *args) -> "TCollection_AsciiString" :
+    def StorageVersion(self):
         """
         * return the Storage package version
 
         :rtype: TCollection_AsciiString
 
         """
-        return _Storage.Storage_HeaderData_StorageVersion(self, *args)
+        return _Storage.Storage_HeaderData_StorageVersion(self)
 
-    def SchemaVersion(self, *args) -> "TCollection_AsciiString" :
+    def SchemaVersion(self):
         """
         * get the version of the schema
 
         :rtype: TCollection_AsciiString
 
         """
-        return _Storage.Storage_HeaderData_SchemaVersion(self, *args)
+        return _Storage.Storage_HeaderData_SchemaVersion(self)
 
-    def SchemaName(self, *args) -> "TCollection_AsciiString" :
+    def SchemaName(self):
         """
         * get the schema's name
 
         :rtype: TCollection_AsciiString
 
         """
-        return _Storage.Storage_HeaderData_SchemaName(self, *args)
+        return _Storage.Storage_HeaderData_SchemaName(self)
 
-    def SetApplicationVersion(self, *args) -> "void" :
+    def SetApplicationVersion(self, *args):
         """
         * set the version of the application
 
@@ -3283,16 +3294,16 @@ class Storage_HeaderData(OCC.MMgt.MMgt_TShared):
         """
         return _Storage.Storage_HeaderData_SetApplicationVersion(self, *args)
 
-    def ApplicationVersion(self, *args) -> "TCollection_AsciiString" :
+    def ApplicationVersion(self):
         """
         * get the version of the application
 
         :rtype: TCollection_AsciiString
 
         """
-        return _Storage.Storage_HeaderData_ApplicationVersion(self, *args)
+        return _Storage.Storage_HeaderData_ApplicationVersion(self)
 
-    def SetApplicationName(self, *args) -> "void" :
+    def SetApplicationName(self, *args):
         """
         * set the name of the application
 
@@ -3303,16 +3314,16 @@ class Storage_HeaderData(OCC.MMgt.MMgt_TShared):
         """
         return _Storage.Storage_HeaderData_SetApplicationName(self, *args)
 
-    def ApplicationName(self, *args) -> "TCollection_ExtendedString" :
+    def ApplicationName(self):
         """
         * get the name of the application
 
         :rtype: TCollection_ExtendedString
 
         """
-        return _Storage.Storage_HeaderData_ApplicationName(self, *args)
+        return _Storage.Storage_HeaderData_ApplicationName(self)
 
-    def SetDataType(self, *args) -> "void" :
+    def SetDataType(self, *args):
         """
         * set the data type
 
@@ -3323,16 +3334,16 @@ class Storage_HeaderData(OCC.MMgt.MMgt_TShared):
         """
         return _Storage.Storage_HeaderData_SetDataType(self, *args)
 
-    def DataType(self, *args) -> "TCollection_ExtendedString" :
+    def DataType(self):
         """
         * returns data type
 
         :rtype: TCollection_ExtendedString
 
         """
-        return _Storage.Storage_HeaderData_DataType(self, *args)
+        return _Storage.Storage_HeaderData_DataType(self)
 
-    def AddToUserInfo(self, *args) -> "void" :
+    def AddToUserInfo(self, *args):
         """
         * add <theUserInfo> to the user informations
 
@@ -3343,16 +3354,16 @@ class Storage_HeaderData(OCC.MMgt.MMgt_TShared):
         """
         return _Storage.Storage_HeaderData_AddToUserInfo(self, *args)
 
-    def UserInfo(self, *args) -> "TColStd_SequenceOfAsciiString const &" :
+    def UserInfo(self):
         """
         * return the user informations
 
         :rtype: TColStd_SequenceOfAsciiString
 
         """
-        return _Storage.Storage_HeaderData_UserInfo(self, *args)
+        return _Storage.Storage_HeaderData_UserInfo(self)
 
-    def AddToComments(self, *args) -> "void" :
+    def AddToComments(self, *args):
         """
         * add <theUserInfo> to the user informations
 
@@ -3363,50 +3374,50 @@ class Storage_HeaderData(OCC.MMgt.MMgt_TShared):
         """
         return _Storage.Storage_HeaderData_AddToComments(self, *args)
 
-    def Comments(self, *args) -> "TColStd_SequenceOfExtendedString const &" :
+    def Comments(self):
         """
         * return the user informations
 
         :rtype: TColStd_SequenceOfExtendedString
 
         """
-        return _Storage.Storage_HeaderData_Comments(self, *args)
+        return _Storage.Storage_HeaderData_Comments(self)
 
-    def NumberOfObjects(self, *args) -> "Standard_Integer" :
+    def NumberOfObjects(self):
         """
         * the the number of persistent objects Return: the number of persistent objects readed
 
         :rtype: int
 
         """
-        return _Storage.Storage_HeaderData_NumberOfObjects(self, *args)
+        return _Storage.Storage_HeaderData_NumberOfObjects(self)
 
-    def ErrorStatus(self, *args) -> "Storage_Error" :
+    def ErrorStatus(self):
         """
         :rtype: Storage_Error
 
         """
-        return _Storage.Storage_HeaderData_ErrorStatus(self, *args)
+        return _Storage.Storage_HeaderData_ErrorStatus(self)
 
-    def ErrorStatusExtension(self, *args) -> "TCollection_AsciiString" :
+    def ErrorStatusExtension(self):
         """
         :rtype: TCollection_AsciiString
 
         """
-        return _Storage.Storage_HeaderData_ErrorStatusExtension(self, *args)
+        return _Storage.Storage_HeaderData_ErrorStatusExtension(self)
 
-    def ClearErrorStatus(self, *args) -> "void" :
+    def ClearErrorStatus(self):
         """
         :rtype: None
 
         """
-        return _Storage.Storage_HeaderData_ClearErrorStatus(self, *args)
+        return _Storage.Storage_HeaderData_ClearErrorStatus(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Storage_HeaderData self)"""
         return _Storage.Storage_HeaderData__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Storage_HeaderData" :
+    def GetHandle(self):
         """GetHandle(Storage_HeaderData self) -> Handle_Storage_HeaderData"""
         return _Storage.Storage_HeaderData_GetHandle(self)
 
@@ -3462,7 +3473,7 @@ Handle_Storage_HeaderData._kill_pointed = new_instancemethod(_Storage.Handle_Sto
 Handle_Storage_HeaderData_swigregister = _Storage.Handle_Storage_HeaderData_swigregister
 Handle_Storage_HeaderData_swigregister(Handle_Storage_HeaderData)
 
-def Handle_Storage_HeaderData_DownCast(*args) -> "Handle_Storage_HeaderData const" :
+def Handle_Storage_HeaderData_DownCast(*args):
   return _Storage.Handle_Storage_HeaderData_DownCast(*args)
 Handle_Storage_HeaderData_DownCast = _Storage.Handle_Storage_HeaderData_DownCast
 
@@ -3474,9 +3485,9 @@ class Storage_IndexedDataMapNodeOfPType(OCC.TCollection.TCollection_MapNode):
         :param K1:
         :type K1: TCollection_AsciiString &
         :param K2:
-        :type K2: int
+        :type K2: Standard_Integer
         :param I:
-        :type I: int &
+        :type I: Standard_Integer &
         :param n1:
         :type n1: TCollection_MapNodePtr &
         :param n2:
@@ -3485,41 +3496,41 @@ class Storage_IndexedDataMapNodeOfPType(OCC.TCollection.TCollection_MapNode):
 
         """
         _Storage.Storage_IndexedDataMapNodeOfPType_swiginit(self,_Storage.new_Storage_IndexedDataMapNodeOfPType(*args))
-    def Key1(self, *args) -> "TCollection_AsciiString &" :
+    def Key1(self):
         """
         :rtype: TCollection_AsciiString
 
         """
-        return _Storage.Storage_IndexedDataMapNodeOfPType_Key1(self, *args)
+        return _Storage.Storage_IndexedDataMapNodeOfPType_Key1(self)
 
-    def GetKey2(self) -> "Standard_Integer" :
+    def GetKey2(self):
         """GetKey2(Storage_IndexedDataMapNodeOfPType self) -> Standard_Integer"""
         return _Storage.Storage_IndexedDataMapNodeOfPType_GetKey2(self)
 
-    def SetKey2(self, *args) -> "void" :
+    def SetKey2(self, *args):
         """SetKey2(Storage_IndexedDataMapNodeOfPType self, Standard_Integer value)"""
         return _Storage.Storage_IndexedDataMapNodeOfPType_SetKey2(self, *args)
 
-    def Next2(self, *args) -> "TCollection_MapNodePtr &" :
+    def Next2(self):
         """
         :rtype: TCollection_MapNodePtr
 
         """
-        return _Storage.Storage_IndexedDataMapNodeOfPType_Next2(self, *args)
+        return _Storage.Storage_IndexedDataMapNodeOfPType_Next2(self)
 
-    def GetValue(self) -> "Standard_Integer" :
+    def GetValue(self):
         """GetValue(Storage_IndexedDataMapNodeOfPType self) -> Standard_Integer"""
         return _Storage.Storage_IndexedDataMapNodeOfPType_GetValue(self)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """SetValue(Storage_IndexedDataMapNodeOfPType self, Standard_Integer value)"""
         return _Storage.Storage_IndexedDataMapNodeOfPType_SetValue(self, *args)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Storage_IndexedDataMapNodeOfPType self)"""
         return _Storage.Storage_IndexedDataMapNodeOfPType__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Storage_IndexedDataMapNodeOfPType" :
+    def GetHandle(self):
         """GetHandle(Storage_IndexedDataMapNodeOfPType self) -> Handle_Storage_IndexedDataMapNodeOfPType"""
         return _Storage.Storage_IndexedDataMapNodeOfPType_GetHandle(self)
 
@@ -3563,31 +3574,31 @@ Handle_Storage_IndexedDataMapNodeOfPType._kill_pointed = new_instancemethod(_Sto
 Handle_Storage_IndexedDataMapNodeOfPType_swigregister = _Storage.Handle_Storage_IndexedDataMapNodeOfPType_swigregister
 Handle_Storage_IndexedDataMapNodeOfPType_swigregister(Handle_Storage_IndexedDataMapNodeOfPType)
 
-def Handle_Storage_IndexedDataMapNodeOfPType_DownCast(*args) -> "Handle_Storage_IndexedDataMapNodeOfPType const" :
+def Handle_Storage_IndexedDataMapNodeOfPType_DownCast(*args):
   return _Storage.Handle_Storage_IndexedDataMapNodeOfPType_DownCast(*args)
 Handle_Storage_IndexedDataMapNodeOfPType_DownCast = _Storage.Handle_Storage_IndexedDataMapNodeOfPType_DownCast
 
 class Storage_InternalData(OCC.MMgt.MMgt_TShared):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _Storage.Storage_InternalData_swiginit(self,_Storage.new_Storage_InternalData(*args))
-    def Clear(self, *args) -> "void" :
+        _Storage.Storage_InternalData_swiginit(self,_Storage.new_Storage_InternalData())
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _Storage.Storage_InternalData_Clear(self, *args)
+        return _Storage.Storage_InternalData_Clear(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Storage_InternalData self)"""
         return _Storage.Storage_InternalData__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Storage_InternalData" :
+    def GetHandle(self):
         """GetHandle(Storage_InternalData self) -> Handle_Storage_InternalData"""
         return _Storage.Storage_InternalData_GetHandle(self)
 
@@ -3626,22 +3637,26 @@ Handle_Storage_InternalData._kill_pointed = new_instancemethod(_Storage.Handle_S
 Handle_Storage_InternalData_swigregister = _Storage.Handle_Storage_InternalData_swigregister
 Handle_Storage_InternalData_swigregister(Handle_Storage_InternalData)
 
-def Handle_Storage_InternalData_DownCast(*args) -> "Handle_Storage_InternalData const" :
+def Handle_Storage_InternalData_DownCast(*args):
   return _Storage.Handle_Storage_InternalData_DownCast(*args)
 Handle_Storage_InternalData_DownCast = _Storage.Handle_Storage_InternalData_DownCast
 
 class Storage_MapOfCallBack(OCC.TCollection.TCollection_BasicMap):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self, NbBuckets=1): 
         """
         :param NbBuckets: default value is 1
-        :type NbBuckets: int
+        :type NbBuckets: Standard_Integer
+        :rtype: None
+
+        :param NbBuckets: default value is 1
+        :type NbBuckets: Standard_Integer
         :rtype: None
 
         """
-        _Storage.Storage_MapOfCallBack_swiginit(self,_Storage.new_Storage_MapOfCallBack(*args))
-    def Assign(self, *args) -> "Storage_MapOfCallBack &" :
+        _Storage.Storage_MapOfCallBack_swiginit(self,_Storage.new_Storage_MapOfCallBack(NbBuckets))
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: Storage_MapOfCallBack &
@@ -3650,7 +3665,7 @@ class Storage_MapOfCallBack(OCC.TCollection.TCollection_BasicMap):
         """
         return _Storage.Storage_MapOfCallBack_Assign(self, *args)
 
-    def Set(self, *args) -> "Storage_MapOfCallBack &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: Storage_MapOfCallBack &
@@ -3659,23 +3674,23 @@ class Storage_MapOfCallBack(OCC.TCollection.TCollection_BasicMap):
         """
         return _Storage.Storage_MapOfCallBack_Set(self, *args)
 
-    def ReSize(self, *args) -> "void" :
+    def ReSize(self, *args):
         """
         :param NbBuckets:
-        :type NbBuckets: int
+        :type NbBuckets: Standard_Integer
         :rtype: None
 
         """
         return _Storage.Storage_MapOfCallBack_ReSize(self, *args)
 
-    def Clear(self, *args) -> "void" :
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _Storage.Storage_MapOfCallBack_Clear(self, *args)
+        return _Storage.Storage_MapOfCallBack_Clear(self)
 
-    def Bind(self, *args) -> "Standard_Boolean" :
+    def Bind(self, *args):
         """
         :param K:
         :type K: TCollection_AsciiString &
@@ -3686,7 +3701,7 @@ class Storage_MapOfCallBack(OCC.TCollection.TCollection_BasicMap):
         """
         return _Storage.Storage_MapOfCallBack_Bind(self, *args)
 
-    def IsBound(self, *args) -> "Standard_Boolean" :
+    def IsBound(self, *args):
         """
         :param K:
         :type K: TCollection_AsciiString &
@@ -3695,7 +3710,7 @@ class Storage_MapOfCallBack(OCC.TCollection.TCollection_BasicMap):
         """
         return _Storage.Storage_MapOfCallBack_IsBound(self, *args)
 
-    def UnBind(self, *args) -> "Standard_Boolean" :
+    def UnBind(self, *args):
         """
         :param K:
         :type K: TCollection_AsciiString &
@@ -3704,7 +3719,7 @@ class Storage_MapOfCallBack(OCC.TCollection.TCollection_BasicMap):
         """
         return _Storage.Storage_MapOfCallBack_UnBind(self, *args)
 
-    def Find(self, *args) -> "Handle_Storage_TypedCallBack const &" :
+    def Find(self, *args):
         """
         :param K:
         :type K: TCollection_AsciiString &
@@ -3713,7 +3728,7 @@ class Storage_MapOfCallBack(OCC.TCollection.TCollection_BasicMap):
         """
         return _Storage.Storage_MapOfCallBack_Find(self, *args)
 
-    def ChangeFind(self, *args) -> "Handle_Storage_TypedCallBack &" :
+    def ChangeFind(self, *args):
         """
         :param K:
         :type K: TCollection_AsciiString &
@@ -3722,7 +3737,7 @@ class Storage_MapOfCallBack(OCC.TCollection.TCollection_BasicMap):
         """
         return _Storage.Storage_MapOfCallBack_ChangeFind(self, *args)
 
-    def Find1(self, *args) -> "Standard_Address" :
+    def Find1(self, *args):
         """
         :param K:
         :type K: TCollection_AsciiString &
@@ -3731,7 +3746,7 @@ class Storage_MapOfCallBack(OCC.TCollection.TCollection_BasicMap):
         """
         return _Storage.Storage_MapOfCallBack_Find1(self, *args)
 
-    def ChangeFind1(self, *args) -> "Standard_Address" :
+    def ChangeFind1(self, *args):
         """
         :param K:
         :type K: TCollection_AsciiString &
@@ -3740,7 +3755,7 @@ class Storage_MapOfCallBack(OCC.TCollection.TCollection_BasicMap):
         """
         return _Storage.Storage_MapOfCallBack_ChangeFind1(self, *args)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Storage_MapOfCallBack self)"""
         return _Storage.Storage_MapOfCallBack__kill_pointed(self)
 
@@ -3770,15 +3785,19 @@ Storage_MapOfCallBack_swigregister(Storage_MapOfCallBack)
 class Storage_MapOfPers(OCC.TCollection.TCollection_BasicMap):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self, NbBuckets=1): 
         """
         :param NbBuckets: default value is 1
-        :type NbBuckets: int
+        :type NbBuckets: Standard_Integer
+        :rtype: None
+
+        :param NbBuckets: default value is 1
+        :type NbBuckets: Standard_Integer
         :rtype: None
 
         """
-        _Storage.Storage_MapOfPers_swiginit(self,_Storage.new_Storage_MapOfPers(*args))
-    def Assign(self, *args) -> "Storage_MapOfPers &" :
+        _Storage.Storage_MapOfPers_swiginit(self,_Storage.new_Storage_MapOfPers(NbBuckets))
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: Storage_MapOfPers &
@@ -3787,7 +3806,7 @@ class Storage_MapOfPers(OCC.TCollection.TCollection_BasicMap):
         """
         return _Storage.Storage_MapOfPers_Assign(self, *args)
 
-    def Set(self, *args) -> "Storage_MapOfPers &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: Storage_MapOfPers &
@@ -3796,23 +3815,23 @@ class Storage_MapOfPers(OCC.TCollection.TCollection_BasicMap):
         """
         return _Storage.Storage_MapOfPers_Set(self, *args)
 
-    def ReSize(self, *args) -> "void" :
+    def ReSize(self, *args):
         """
         :param NbBuckets:
-        :type NbBuckets: int
+        :type NbBuckets: Standard_Integer
         :rtype: None
 
         """
         return _Storage.Storage_MapOfPers_ReSize(self, *args)
 
-    def Clear(self, *args) -> "void" :
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _Storage.Storage_MapOfPers_Clear(self, *args)
+        return _Storage.Storage_MapOfPers_Clear(self)
 
-    def Bind(self, *args) -> "Standard_Boolean" :
+    def Bind(self, *args):
         """
         :param K:
         :type K: TCollection_AsciiString &
@@ -3823,7 +3842,7 @@ class Storage_MapOfPers(OCC.TCollection.TCollection_BasicMap):
         """
         return _Storage.Storage_MapOfPers_Bind(self, *args)
 
-    def IsBound(self, *args) -> "Standard_Boolean" :
+    def IsBound(self, *args):
         """
         :param K:
         :type K: TCollection_AsciiString &
@@ -3832,7 +3851,7 @@ class Storage_MapOfPers(OCC.TCollection.TCollection_BasicMap):
         """
         return _Storage.Storage_MapOfPers_IsBound(self, *args)
 
-    def UnBind(self, *args) -> "Standard_Boolean" :
+    def UnBind(self, *args):
         """
         :param K:
         :type K: TCollection_AsciiString &
@@ -3841,7 +3860,7 @@ class Storage_MapOfPers(OCC.TCollection.TCollection_BasicMap):
         """
         return _Storage.Storage_MapOfPers_UnBind(self, *args)
 
-    def Find(self, *args) -> "Handle_Storage_Root const &" :
+    def Find(self, *args):
         """
         :param K:
         :type K: TCollection_AsciiString &
@@ -3850,7 +3869,7 @@ class Storage_MapOfPers(OCC.TCollection.TCollection_BasicMap):
         """
         return _Storage.Storage_MapOfPers_Find(self, *args)
 
-    def ChangeFind(self, *args) -> "Handle_Storage_Root &" :
+    def ChangeFind(self, *args):
         """
         :param K:
         :type K: TCollection_AsciiString &
@@ -3859,7 +3878,7 @@ class Storage_MapOfPers(OCC.TCollection.TCollection_BasicMap):
         """
         return _Storage.Storage_MapOfPers_ChangeFind(self, *args)
 
-    def Find1(self, *args) -> "Standard_Address" :
+    def Find1(self, *args):
         """
         :param K:
         :type K: TCollection_AsciiString &
@@ -3868,7 +3887,7 @@ class Storage_MapOfPers(OCC.TCollection.TCollection_BasicMap):
         """
         return _Storage.Storage_MapOfPers_Find1(self, *args)
 
-    def ChangeFind1(self, *args) -> "Standard_Address" :
+    def ChangeFind1(self, *args):
         """
         :param K:
         :type K: TCollection_AsciiString &
@@ -3877,7 +3896,7 @@ class Storage_MapOfPers(OCC.TCollection.TCollection_BasicMap):
         """
         return _Storage.Storage_MapOfPers_ChangeFind1(self, *args)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Storage_MapOfPers self)"""
         return _Storage.Storage_MapOfPers__kill_pointed(self)
 
@@ -3906,20 +3925,21 @@ Storage_MapOfPers_swigregister(Storage_MapOfPers)
 
 class Storage_MapPSDHasher(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
+    def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def HashCode(*args) -> "Standard_Integer" :
+    def HashCode(*args):
         """
         :param K:
         :type K: Handle_Standard_Persistent &
         :param Upper:
-        :type Upper: int
+        :type Upper: Standard_Integer
         :rtype: int
 
         """
         return _Storage.Storage_MapPSDHasher_HashCode(*args)
 
     HashCode = staticmethod(HashCode)
-    def IsEqual(*args) -> "Standard_Boolean" :
+    def IsEqual(*args):
         """
         :param K1:
         :type K1: Handle_Standard_Persistent &
@@ -3931,8 +3951,6 @@ class Storage_MapPSDHasher(object):
         return _Storage.Storage_MapPSDHasher_IsEqual(*args)
 
     IsEqual = staticmethod(IsEqual)
-    def __init__(self): 
-        _Storage.Storage_MapPSDHasher_swiginit(self,_Storage.new_Storage_MapPSDHasher())
     def __del__(self):
     	try:
     		self.thisown = False
@@ -3945,18 +3963,18 @@ Storage_MapPSDHasher._kill_pointed = new_instancemethod(_Storage.Storage_MapPSDH
 Storage_MapPSDHasher_swigregister = _Storage.Storage_MapPSDHasher_swigregister
 Storage_MapPSDHasher_swigregister(Storage_MapPSDHasher)
 
-def Storage_MapPSDHasher_HashCode(*args) -> "Standard_Integer" :
+def Storage_MapPSDHasher_HashCode(*args):
   """
     :param K:
     :type K: Handle_Standard_Persistent &
     :param Upper:
-    :type Upper: int
+    :type Upper: Standard_Integer
     :rtype: int
 
     """
   return _Storage.Storage_MapPSDHasher_HashCode(*args)
 
-def Storage_MapPSDHasher_IsEqual(*args) -> "Standard_Boolean" :
+def Storage_MapPSDHasher_IsEqual(*args):
   """
     :param K1:
     :type K1: Handle_Standard_Persistent &
@@ -3973,22 +3991,22 @@ class Storage_PArray(object):
     def __init__(self, *args): 
         """
         :param Low:
-        :type Low: int
+        :type Low: Standard_Integer
         :param Up:
-        :type Up: int
+        :type Up: Standard_Integer
         :rtype: None
 
         :param Item:
         :type Item: Handle_Standard_Persistent &
         :param Low:
-        :type Low: int
+        :type Low: Standard_Integer
         :param Up:
-        :type Up: int
+        :type Up: Standard_Integer
         :rtype: None
 
         """
         _Storage.Storage_PArray_swiginit(self,_Storage.new_Storage_PArray(*args))
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
         :param V:
         :type V: Handle_Standard_Persistent &
@@ -3997,21 +4015,21 @@ class Storage_PArray(object):
         """
         return _Storage.Storage_PArray_Init(self, *args)
 
-    def Destroy(self, *args) -> "void" :
+    def Destroy(self):
         """
         :rtype: None
 
         """
-        return _Storage.Storage_PArray_Destroy(self, *args)
+        return _Storage.Storage_PArray_Destroy(self)
 
-    def IsAllocated(self, *args) -> "Standard_Boolean" :
+    def IsAllocated(self):
         """
         :rtype: bool
 
         """
-        return _Storage.Storage_PArray_IsAllocated(self, *args)
+        return _Storage.Storage_PArray_IsAllocated(self)
 
-    def Assign(self, *args) -> "Storage_PArray const &" :
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: Storage_PArray &
@@ -4020,7 +4038,7 @@ class Storage_PArray(object):
         """
         return _Storage.Storage_PArray_Assign(self, *args)
 
-    def Set(self, *args) -> "Storage_PArray const &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: Storage_PArray &
@@ -4029,31 +4047,31 @@ class Storage_PArray(object):
         """
         return _Storage.Storage_PArray_Set(self, *args)
 
-    def Length(self, *args) -> "Standard_Integer" :
+    def Length(self):
         """
         :rtype: int
 
         """
-        return _Storage.Storage_PArray_Length(self, *args)
+        return _Storage.Storage_PArray_Length(self)
 
-    def Lower(self, *args) -> "Standard_Integer" :
+    def Lower(self):
         """
         :rtype: int
 
         """
-        return _Storage.Storage_PArray_Lower(self, *args)
+        return _Storage.Storage_PArray_Lower(self)
 
-    def Upper(self, *args) -> "Standard_Integer" :
+    def Upper(self):
         """
         :rtype: int
 
         """
-        return _Storage.Storage_PArray_Upper(self, *args)
+        return _Storage.Storage_PArray_Upper(self)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Value:
         :type Value: Handle_Standard_Persistent &
         :rtype: None
@@ -4061,19 +4079,19 @@ class Storage_PArray(object):
         """
         return _Storage.Storage_PArray_SetValue(self, *args)
 
-    def Value(self, *args) -> "Handle_Standard_Persistent const &" :
+    def Value(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Handle_Standard_Persistent
 
         """
         return _Storage.Storage_PArray_Value(self, *args)
 
-    def ChangeValue(self, *args) -> "Handle_Standard_Persistent &" :
+    def ChangeValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Handle_Standard_Persistent
 
         """
@@ -4105,15 +4123,19 @@ Storage_PArray_swigregister(Storage_PArray)
 class Storage_PType(OCC.TCollection.TCollection_BasicMap):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self, NbBuckets=1): 
         """
         :param NbBuckets: default value is 1
-        :type NbBuckets: int
+        :type NbBuckets: Standard_Integer
+        :rtype: None
+
+        :param NbBuckets: default value is 1
+        :type NbBuckets: Standard_Integer
         :rtype: None
 
         """
-        _Storage.Storage_PType_swiginit(self,_Storage.new_Storage_PType(*args))
-    def Assign(self, *args) -> "Storage_PType &" :
+        _Storage.Storage_PType_swiginit(self,_Storage.new_Storage_PType(NbBuckets))
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: Storage_PType &
@@ -4122,7 +4144,7 @@ class Storage_PType(OCC.TCollection.TCollection_BasicMap):
         """
         return _Storage.Storage_PType_Assign(self, *args)
 
-    def Set(self, *args) -> "Storage_PType &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: Storage_PType &
@@ -4131,54 +4153,54 @@ class Storage_PType(OCC.TCollection.TCollection_BasicMap):
         """
         return _Storage.Storage_PType_Set(self, *args)
 
-    def ReSize(self, *args) -> "void" :
+    def ReSize(self, *args):
         """
         :param NbBuckets:
-        :type NbBuckets: int
+        :type NbBuckets: Standard_Integer
         :rtype: None
 
         """
         return _Storage.Storage_PType_ReSize(self, *args)
 
-    def Clear(self, *args) -> "void" :
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _Storage.Storage_PType_Clear(self, *args)
+        return _Storage.Storage_PType_Clear(self)
 
-    def Add(self, *args) -> "Standard_Integer" :
+    def Add(self, *args):
         """
         :param K:
         :type K: TCollection_AsciiString &
         :param I:
-        :type I: int &
+        :type I: Standard_Integer &
         :rtype: int
 
         """
         return _Storage.Storage_PType_Add(self, *args)
 
-    def Substitute(self, *args) -> "void" :
+    def Substitute(self, *args):
         """
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :param K:
         :type K: TCollection_AsciiString &
         :param T:
-        :type T: int &
+        :type T: Standard_Integer &
         :rtype: None
 
         """
         return _Storage.Storage_PType_Substitute(self, *args)
 
-    def RemoveLast(self, *args) -> "void" :
+    def RemoveLast(self):
         """
         :rtype: None
 
         """
-        return _Storage.Storage_PType_RemoveLast(self, *args)
+        return _Storage.Storage_PType_RemoveLast(self)
 
-    def Contains(self, *args) -> "Standard_Boolean" :
+    def Contains(self, *args):
         """
         :param K:
         :type K: TCollection_AsciiString &
@@ -4187,34 +4209,34 @@ class Storage_PType(OCC.TCollection.TCollection_BasicMap):
         """
         return _Storage.Storage_PType_Contains(self, *args)
 
-    def FindKey(self, *args) -> "TCollection_AsciiString const &" :
+    def FindKey(self, *args):
         """
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :rtype: TCollection_AsciiString
 
         """
         return _Storage.Storage_PType_FindKey(self, *args)
 
-    def FindFromIndex(self, *args) -> "Standard_Integer const &" :
+    def FindFromIndex(self, *args):
         """
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :rtype: int
 
         """
         return _Storage.Storage_PType_FindFromIndex(self, *args)
 
-    def ChangeFromIndex(self, *args) -> "Standard_Integer &" :
+    def ChangeFromIndex(self, *args):
         """
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :rtype: int
 
         """
         return _Storage.Storage_PType_ChangeFromIndex(self, *args)
 
-    def FindIndex(self, *args) -> "Standard_Integer" :
+    def FindIndex(self, *args):
         """
         :param K:
         :type K: TCollection_AsciiString &
@@ -4223,7 +4245,7 @@ class Storage_PType(OCC.TCollection.TCollection_BasicMap):
         """
         return _Storage.Storage_PType_FindIndex(self, *args)
 
-    def FindFromKey(self, *args) -> "Standard_Integer const &" :
+    def FindFromKey(self, *args):
         """
         :param K:
         :type K: TCollection_AsciiString &
@@ -4232,7 +4254,7 @@ class Storage_PType(OCC.TCollection.TCollection_BasicMap):
         """
         return _Storage.Storage_PType_FindFromKey(self, *args)
 
-    def ChangeFromKey(self, *args) -> "Standard_Integer &" :
+    def ChangeFromKey(self, *args):
         """
         :param K:
         :type K: TCollection_AsciiString &
@@ -4241,7 +4263,7 @@ class Storage_PType(OCC.TCollection.TCollection_BasicMap):
         """
         return _Storage.Storage_PType_ChangeFromKey(self, *args)
 
-    def FindFromKey1(self, *args) -> "Standard_Address" :
+    def FindFromKey1(self, *args):
         """
         :param K:
         :type K: TCollection_AsciiString &
@@ -4250,7 +4272,7 @@ class Storage_PType(OCC.TCollection.TCollection_BasicMap):
         """
         return _Storage.Storage_PType_FindFromKey1(self, *args)
 
-    def ChangeFromKey1(self, *args) -> "Standard_Address" :
+    def ChangeFromKey1(self, *args):
         """
         :param K:
         :type K: TCollection_AsciiString &
@@ -4259,7 +4281,7 @@ class Storage_PType(OCC.TCollection.TCollection_BasicMap):
         """
         return _Storage.Storage_PType_ChangeFromKey1(self, *args)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Storage_PType self)"""
         return _Storage.Storage_PType__kill_pointed(self)
 
@@ -4306,7 +4328,7 @@ class Storage_Root(OCC.MMgt.MMgt_TShared):
 
         """
         _Storage.Storage_Root_swiginit(self,_Storage.new_Storage_Root(*args))
-    def SetName(self, *args) -> "void" :
+    def SetName(self, *args):
         """
         :param aName:
         :type aName: TCollection_AsciiString &
@@ -4315,16 +4337,16 @@ class Storage_Root(OCC.MMgt.MMgt_TShared):
         """
         return _Storage.Storage_Root_SetName(self, *args)
 
-    def Name(self, *args) -> "TCollection_AsciiString" :
+    def Name(self):
         """
         * Returns the name of this root object. The name may have been given explicitly when the root was inserted into the Storage_Data object. If not, the name is a reference number which was assigned automatically by the driver when writing the set of data into the container. When naming the roots, it is easier to retrieve objects by significant references rather than by references without any semantic values. Warning The returned string will be empty if you call this function before having named this root object, either explicitly, or when writing the set of data into the container.
 
         :rtype: TCollection_AsciiString
 
         """
-        return _Storage.Storage_Root_Name(self, *args)
+        return _Storage.Storage_Root_Name(self)
 
-    def SetObject(self, *args) -> "void" :
+    def SetObject(self, *args):
         """
         :param anObject:
         :type anObject: Handle_Standard_Persistent &
@@ -4333,29 +4355,29 @@ class Storage_Root(OCC.MMgt.MMgt_TShared):
         """
         return _Storage.Storage_Root_SetObject(self, *args)
 
-    def Object(self, *args) -> "Handle_Standard_Persistent" :
+    def Object(self):
         """
         * Returns the persistent object encapsulated by this root.
 
         :rtype: Handle_Standard_Persistent
 
         """
-        return _Storage.Storage_Root_Object(self, *args)
+        return _Storage.Storage_Root_Object(self)
 
-    def Type(self, *args) -> "TCollection_AsciiString" :
+    def Type(self):
         """
         * Returns the name of this root type.
 
         :rtype: TCollection_AsciiString
 
         """
-        return _Storage.Storage_Root_Type(self, *args)
+        return _Storage.Storage_Root_Type(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Storage_Root self)"""
         return _Storage.Storage_Root__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Storage_Root" :
+    def GetHandle(self):
         """GetHandle(Storage_Root self) -> Handle_Storage_Root"""
         return _Storage.Storage_Root_GetHandle(self)
 
@@ -4398,29 +4420,29 @@ Handle_Storage_Root._kill_pointed = new_instancemethod(_Storage.Handle_Storage_R
 Handle_Storage_Root_swigregister = _Storage.Handle_Storage_Root_swigregister
 Handle_Storage_Root_swigregister(Handle_Storage_Root)
 
-def Handle_Storage_Root_DownCast(*args) -> "Handle_Storage_Root const" :
+def Handle_Storage_Root_DownCast(*args):
   return _Storage.Handle_Storage_Root_DownCast(*args)
 Handle_Storage_Root_DownCast = _Storage.Handle_Storage_Root_DownCast
 
 class Storage_RootData(OCC.MMgt.MMgt_TShared):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _Storage.Storage_RootData_swiginit(self,_Storage.new_Storage_RootData(*args))
-    def NumberOfRoots(self, *args) -> "Standard_Integer" :
+        _Storage.Storage_RootData_swiginit(self,_Storage.new_Storage_RootData())
+    def NumberOfRoots(self):
         """
         * returns the number of roots.
 
         :rtype: int
 
         """
-        return _Storage.Storage_RootData_NumberOfRoots(self, *args)
+        return _Storage.Storage_RootData_NumberOfRoots(self)
 
-    def AddRoot(self, *args) -> "void" :
+    def AddRoot(self, *args):
         """
         * add a root to <self>. If a root with same name is present, it will be replaced by <aRoot>.
 
@@ -4431,14 +4453,14 @@ class Storage_RootData(OCC.MMgt.MMgt_TShared):
         """
         return _Storage.Storage_RootData_AddRoot(self, *args)
 
-    def Roots(self, *args) -> "Handle_Storage_HSeqOfRoot" :
+    def Roots(self):
         """
         :rtype: Handle_Storage_HSeqOfRoot
 
         """
-        return _Storage.Storage_RootData_Roots(self, *args)
+        return _Storage.Storage_RootData_Roots(self)
 
-    def Find(self, *args) -> "Handle_Storage_Root" :
+    def Find(self, *args):
         """
         * find a root with name <aName>.
 
@@ -4449,7 +4471,7 @@ class Storage_RootData(OCC.MMgt.MMgt_TShared):
         """
         return _Storage.Storage_RootData_Find(self, *args)
 
-    def IsRoot(self, *args) -> "Standard_Boolean" :
+    def IsRoot(self, *args):
         """
         * returns Standard_True if <self> contains a root named <aName>
 
@@ -4460,7 +4482,7 @@ class Storage_RootData(OCC.MMgt.MMgt_TShared):
         """
         return _Storage.Storage_RootData_IsRoot(self, *args)
 
-    def RemoveRoot(self, *args) -> "void" :
+    def RemoveRoot(self, *args):
         """
         * remove the root named <aName>.
 
@@ -4471,32 +4493,32 @@ class Storage_RootData(OCC.MMgt.MMgt_TShared):
         """
         return _Storage.Storage_RootData_RemoveRoot(self, *args)
 
-    def ErrorStatus(self, *args) -> "Storage_Error" :
+    def ErrorStatus(self):
         """
         :rtype: Storage_Error
 
         """
-        return _Storage.Storage_RootData_ErrorStatus(self, *args)
+        return _Storage.Storage_RootData_ErrorStatus(self)
 
-    def ErrorStatusExtension(self, *args) -> "TCollection_AsciiString" :
+    def ErrorStatusExtension(self):
         """
         :rtype: TCollection_AsciiString
 
         """
-        return _Storage.Storage_RootData_ErrorStatusExtension(self, *args)
+        return _Storage.Storage_RootData_ErrorStatusExtension(self)
 
-    def ClearErrorStatus(self, *args) -> "void" :
+    def ClearErrorStatus(self):
         """
         :rtype: None
 
         """
-        return _Storage.Storage_RootData_ClearErrorStatus(self, *args)
+        return _Storage.Storage_RootData_ClearErrorStatus(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Storage_RootData self)"""
         return _Storage.Storage_RootData__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Storage_RootData" :
+    def GetHandle(self):
         """GetHandle(Storage_RootData self) -> Handle_Storage_RootData"""
         return _Storage.Storage_RootData_GetHandle(self)
 
@@ -4543,22 +4565,22 @@ Handle_Storage_RootData._kill_pointed = new_instancemethod(_Storage.Handle_Stora
 Handle_Storage_RootData_swigregister = _Storage.Handle_Storage_RootData_swigregister
 Handle_Storage_RootData_swigregister(Handle_Storage_RootData)
 
-def Handle_Storage_RootData_DownCast(*args) -> "Handle_Storage_RootData const" :
+def Handle_Storage_RootData_DownCast(*args):
   return _Storage.Handle_Storage_RootData_DownCast(*args)
 Handle_Storage_RootData_DownCast = _Storage.Handle_Storage_RootData_DownCast
 
 class Storage_Schema(OCC.MMgt.MMgt_TShared):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         * Builds a storage/retrieval algorithm based on a given data schema. Example For example, if ShapeSchema is the class inheriting from Storage_Schema and containing the description of your application data schema, you create a storage/retrieval algorithm as follows: Handle_ShapeSchema s = new ShapeSchema; -------- -- USER API -- -------------------------------------------------------------- -------- --
 
         :rtype: None
 
         """
-        _Storage.Storage_Schema_swiginit(self,_Storage.new_Storage_Schema(*args))
-    def SetVersion(self, *args) -> "void" :
+        _Storage.Storage_Schema_swiginit(self,_Storage.new_Storage_Schema())
+    def SetVersion(self, *args):
         """
         * returns version of the schema
 
@@ -4569,16 +4591,16 @@ class Storage_Schema(OCC.MMgt.MMgt_TShared):
         """
         return _Storage.Storage_Schema_SetVersion(self, *args)
 
-    def Version(self, *args) -> "TCollection_AsciiString" :
+    def Version(self):
         """
         * returns the version of the schema
 
         :rtype: TCollection_AsciiString
 
         """
-        return _Storage.Storage_Schema_Version(self, *args)
+        return _Storage.Storage_Schema_Version(self)
 
-    def SetName(self, *args) -> "void" :
+    def SetName(self, *args):
         """
         * set the schema's name
 
@@ -4589,16 +4611,16 @@ class Storage_Schema(OCC.MMgt.MMgt_TShared):
         """
         return _Storage.Storage_Schema_SetName(self, *args)
 
-    def Name(self, *args) -> "TCollection_AsciiString" :
+    def Name(self):
         """
         * returns the schema's name
 
         :rtype: TCollection_AsciiString
 
         """
-        return _Storage.Storage_Schema_Name(self, *args)
+        return _Storage.Storage_Schema_Name(self)
 
-    def Write(self, *args) -> "void" :
+    def Write(self, *args):
         """
         * Writes the data aggregated in aData into the container defined by the driver s. The storage operation is performed according to the data schema with which this algorithm is working. Note: aData may aggregate several root objects to be stored together.
 
@@ -4611,7 +4633,7 @@ class Storage_Schema(OCC.MMgt.MMgt_TShared):
         """
         return _Storage.Storage_Schema_Write(self, *args)
 
-    def Read(self, *args) -> "Handle_Storage_Data" :
+    def Read(self, *args):
         """
         * Returns the data read from the container defined by the driver s. The retrieval operation is performed according to the data schema with which this algorithm is working. These data are aggregated in a Storage_Data object which may be browsed in order to extract the root objects from the container.
 
@@ -4622,7 +4644,7 @@ class Storage_Schema(OCC.MMgt.MMgt_TShared):
         """
         return _Storage.Storage_Schema_Read(self, *args)
 
-    def ReadHeaderSection(self, *args) -> "Handle_Storage_HeaderData" :
+    def ReadHeaderSection(self, *args):
         """
         * read the header part of the stream Arguments: s: driver to read
 
@@ -4633,7 +4655,7 @@ class Storage_Schema(OCC.MMgt.MMgt_TShared):
         """
         return _Storage.Storage_Schema_ReadHeaderSection(self, *args)
 
-    def ReadTypeSection(self, *args) -> "Handle_Storage_TypeData" :
+    def ReadTypeSection(self, *args):
         """
         * fill the TypeData with the names of the type used in a stream Arguments: s: driver to read
 
@@ -4644,7 +4666,7 @@ class Storage_Schema(OCC.MMgt.MMgt_TShared):
         """
         return _Storage.Storage_Schema_ReadTypeSection(self, *args)
 
-    def ReadRootSection(self, *args) -> "Handle_Storage_RootData" :
+    def ReadRootSection(self, *args):
         """
         * read root part of the file Arguments: s: driver to read
 
@@ -4655,16 +4677,16 @@ class Storage_Schema(OCC.MMgt.MMgt_TShared):
         """
         return _Storage.Storage_Schema_ReadRootSection(self, *args)
 
-    def SchemaKnownTypes(self, *args) -> "TColStd_SequenceOfAsciiString const &" :
+    def SchemaKnownTypes(self):
         """
         * returns the known types of a schema
 
         :rtype: TColStd_SequenceOfAsciiString
 
         """
-        return _Storage.Storage_Schema_SchemaKnownTypes(self, *args)
+        return _Storage.Storage_Schema_SchemaKnownTypes(self)
 
-    def HasUnknownType(self, *args) -> "Standard_Boolean" :
+    def HasUnknownType(self, *args):
         """
         * indicates whether the are types in the driver which are not known from the schema and for which no callbacks have been set. The unknown types can be read in <theUnknownTypes>.
 
@@ -4677,16 +4699,16 @@ class Storage_Schema(OCC.MMgt.MMgt_TShared):
         """
         return _Storage.Storage_Schema_HasUnknownType(self, *args)
 
-    def GetAllSchemaKnownTypes(self, *args) -> "Handle_TColStd_HSequenceOfAsciiString" :
+    def GetAllSchemaKnownTypes(self):
         """
         * returns the all known types of a schema and their nested schemes.
 
         :rtype: Handle_TColStd_HSequenceOfAsciiString
 
         """
-        return _Storage.Storage_Schema_GetAllSchemaKnownTypes(self, *args)
+        return _Storage.Storage_Schema_GetAllSchemaKnownTypes(self)
 
-    def SetNestedSchemas(self, *args) -> "void" :
+    def SetNestedSchemas(self, *args):
         """
         :param theSchemas:
         :type theSchemas: Handle_Storage_HArrayOfSchema &
@@ -4695,31 +4717,31 @@ class Storage_Schema(OCC.MMgt.MMgt_TShared):
         """
         return _Storage.Storage_Schema_SetNestedSchemas(self, *args)
 
-    def ClearNestedSchemas(self, *args) -> "void" :
+    def ClearNestedSchemas(self):
         """
         :rtype: None
 
         """
-        return _Storage.Storage_Schema_ClearNestedSchemas(self, *args)
+        return _Storage.Storage_Schema_ClearNestedSchemas(self)
 
-    def NestedSchemas(self, *args) -> "Handle_Storage_HArrayOfSchema" :
+    def NestedSchemas(self):
         """
         :rtype: Handle_Storage_HArrayOfSchema
 
         """
-        return _Storage.Storage_Schema_NestedSchemas(self, *args)
+        return _Storage.Storage_Schema_NestedSchemas(self)
 
-    def ICreationDate(*args) -> "TCollection_AsciiString" :
+    def ICreationDate():
         """
         * return a current date string
 
         :rtype: TCollection_AsciiString
 
         """
-        return _Storage.Storage_Schema_ICreationDate(*args)
+        return _Storage.Storage_Schema_ICreationDate()
 
     ICreationDate = staticmethod(ICreationDate)
-    def CheckTypeMigration(*args) -> "Standard_Boolean" :
+    def CheckTypeMigration(*args):
         """
         * returns True if theType migration is identified the callback support provides a way to read a file with a incomplete schema. ex. : A file contains 3 types a,b and c. The application's schema contains only 2 type a and b. If you try to read the file in the application, you will have an error.To bypass this problem you can give to your application's schema a callback used when the schema dosent know how to handle this type.
 
@@ -4733,7 +4755,7 @@ class Storage_Schema(OCC.MMgt.MMgt_TShared):
         return _Storage.Storage_Schema_CheckTypeMigration(*args)
 
     CheckTypeMigration = staticmethod(CheckTypeMigration)
-    def AddReadUnknownTypeCallBack(self, *args) -> "void" :
+    def AddReadUnknownTypeCallBack(self, *args):
         """
         * add two functions to the callback list
 
@@ -4746,7 +4768,7 @@ class Storage_Schema(OCC.MMgt.MMgt_TShared):
         """
         return _Storage.Storage_Schema_AddReadUnknownTypeCallBack(self, *args)
 
-    def RemoveReadUnknownTypeCallBack(self, *args) -> "void" :
+    def RemoveReadUnknownTypeCallBack(self, *args):
         """
         * remove a callback for a type
 
@@ -4757,52 +4779,52 @@ class Storage_Schema(OCC.MMgt.MMgt_TShared):
         """
         return _Storage.Storage_Schema_RemoveReadUnknownTypeCallBack(self, *args)
 
-    def InstalledCallBackList(self, *args) -> "Handle_TColStd_HSequenceOfAsciiString" :
+    def InstalledCallBackList(self):
         """
         * returns a list of type name with installed callback.
 
         :rtype: Handle_TColStd_HSequenceOfAsciiString
 
         """
-        return _Storage.Storage_Schema_InstalledCallBackList(self, *args)
+        return _Storage.Storage_Schema_InstalledCallBackList(self)
 
-    def ClearCallBackList(self, *args) -> "void" :
+    def ClearCallBackList(self):
         """
         * clear all callback from schema instance.
 
         :rtype: None
 
         """
-        return _Storage.Storage_Schema_ClearCallBackList(self, *args)
+        return _Storage.Storage_Schema_ClearCallBackList(self)
 
-    def UseDefaultCallBack(self, *args) -> "void" :
+    def UseDefaultCallBack(self):
         """
         * install a callback for all unknown type. the objects with unknown types will be skipped. (look SkipObject method in BaseDriver)
 
         :rtype: None
 
         """
-        return _Storage.Storage_Schema_UseDefaultCallBack(self, *args)
+        return _Storage.Storage_Schema_UseDefaultCallBack(self)
 
-    def DontUseDefaultCallBack(self, *args) -> "void" :
+    def DontUseDefaultCallBack(self):
         """
         * tells schema to uninstall the default callback.
 
         :rtype: None
 
         """
-        return _Storage.Storage_Schema_DontUseDefaultCallBack(self, *args)
+        return _Storage.Storage_Schema_DontUseDefaultCallBack(self)
 
-    def IsUsingDefaultCallBack(self, *args) -> "Standard_Boolean" :
+    def IsUsingDefaultCallBack(self):
         """
         * ask if the schema is using the default callback.
 
         :rtype: bool
 
         """
-        return _Storage.Storage_Schema_IsUsingDefaultCallBack(self, *args)
+        return _Storage.Storage_Schema_IsUsingDefaultCallBack(self)
 
-    def SetDefaultCallBack(self, *args) -> "void" :
+    def SetDefaultCallBack(self, *args):
         """
         * overload the default function for build.(use to set an error message or skip an object while reading an unknown type).
 
@@ -4813,25 +4835,25 @@ class Storage_Schema(OCC.MMgt.MMgt_TShared):
         """
         return _Storage.Storage_Schema_SetDefaultCallBack(self, *args)
 
-    def ResetDefaultCallBack(self, *args) -> "void" :
+    def ResetDefaultCallBack(self):
         """
         * reset the default function defined by Storage package.
 
         :rtype: None
 
         """
-        return _Storage.Storage_Schema_ResetDefaultCallBack(self, *args)
+        return _Storage.Storage_Schema_ResetDefaultCallBack(self)
 
-    def DefaultCallBack(self, *args) -> "Handle_Storage_CallBack" :
+    def DefaultCallBack(self):
         """
         * returns the read function used when the UseDefaultCallBack() is set.
 
         :rtype: Handle_Storage_CallBack
 
         """
-        return _Storage.Storage_Schema_DefaultCallBack(self, *args)
+        return _Storage.Storage_Schema_DefaultCallBack(self)
 
-    def CallBackSelection(self, *args) -> "Handle_Storage_CallBack" :
+    def CallBackSelection(self, *args):
         """
         :param tName:
         :type tName: TCollection_AsciiString &
@@ -4840,7 +4862,7 @@ class Storage_Schema(OCC.MMgt.MMgt_TShared):
         """
         return _Storage.Storage_Schema_CallBackSelection(self, *args)
 
-    def AddTypeSelection(self, *args) -> "Handle_Storage_CallBack" :
+    def AddTypeSelection(self, *args):
         """
         :param sp:
         :type sp: Handle_Standard_Persistent &
@@ -4849,7 +4871,7 @@ class Storage_Schema(OCC.MMgt.MMgt_TShared):
         """
         return _Storage.Storage_Schema_AddTypeSelection(self, *args)
 
-    def WritePersistentObjectHeader(self, *args) -> "void" :
+    def WritePersistentObjectHeader(self, *args):
         """
         :param sp:
         :type sp: Handle_Standard_Persistent &
@@ -4860,7 +4882,7 @@ class Storage_Schema(OCC.MMgt.MMgt_TShared):
         """
         return _Storage.Storage_Schema_WritePersistentObjectHeader(self, *args)
 
-    def ReadPersistentObjectHeader(self, *args) -> "void" :
+    def ReadPersistentObjectHeader(self, *args):
         """
         :param s:
         :type s: Storage_BaseDriver &
@@ -4869,7 +4891,7 @@ class Storage_Schema(OCC.MMgt.MMgt_TShared):
         """
         return _Storage.Storage_Schema_ReadPersistentObjectHeader(self, *args)
 
-    def WritePersistentReference(self, *args) -> "void" :
+    def WritePersistentReference(self, *args):
         """
         :param sp:
         :type sp: Handle_Standard_Persistent &
@@ -4880,7 +4902,7 @@ class Storage_Schema(OCC.MMgt.MMgt_TShared):
         """
         return _Storage.Storage_Schema_WritePersistentReference(self, *args)
 
-    def ReadPersistentReference(self, *args) -> "void" :
+    def ReadPersistentReference(self, *args):
         """
         :param sp:
         :type sp: Handle_Standard_Persistent &
@@ -4891,7 +4913,7 @@ class Storage_Schema(OCC.MMgt.MMgt_TShared):
         """
         return _Storage.Storage_Schema_ReadPersistentReference(self, *args)
 
-    def AddPersistent(self, *args) -> "Standard_Boolean" :
+    def AddPersistent(self, *args):
         """
         :param sp:
         :type sp: Handle_Standard_Persistent &
@@ -4902,7 +4924,7 @@ class Storage_Schema(OCC.MMgt.MMgt_TShared):
         """
         return _Storage.Storage_Schema_AddPersistent(self, *args)
 
-    def PersistentToAdd(self, *args) -> "Standard_Boolean" :
+    def PersistentToAdd(self, *args):
         """
         :param sp:
         :type sp: Handle_Standard_Persistent &
@@ -4911,11 +4933,11 @@ class Storage_Schema(OCC.MMgt.MMgt_TShared):
         """
         return _Storage.Storage_Schema_PersistentToAdd(self, *args)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Storage_Schema self)"""
         return _Storage.Storage_Schema__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Storage_Schema" :
+    def GetHandle(self):
         """GetHandle(Storage_Schema self) -> Handle_Storage_Schema"""
         return _Storage.Storage_Schema_GetHandle(self)
 
@@ -4965,16 +4987,16 @@ Storage_Schema.GetHandle = new_instancemethod(_Storage.Storage_Schema_GetHandle,
 Storage_Schema_swigregister = _Storage.Storage_Schema_swigregister
 Storage_Schema_swigregister(Storage_Schema)
 
-def Storage_Schema_ICreationDate(*args) -> "TCollection_AsciiString" :
+def Storage_Schema_ICreationDate():
   """
     * return a current date string
 
     :rtype: TCollection_AsciiString
 
     """
-  return _Storage.Storage_Schema_ICreationDate(*args)
+  return _Storage.Storage_Schema_ICreationDate()
 
-def Storage_Schema_CheckTypeMigration(*args) -> "Standard_Boolean" :
+def Storage_Schema_CheckTypeMigration(*args):
   """
     * returns True if theType migration is identified the callback support provides a way to read a file with a incomplete schema. ex. : A file contains 3 types a,b and c. The application's schema contains only 2 type a and b. If you try to read the file in the application, you will have an error.To bypass this problem you can give to your application's schema a callback used when the schema dosent know how to handle this type.
 
@@ -5008,27 +5030,27 @@ Handle_Storage_Schema._kill_pointed = new_instancemethod(_Storage.Handle_Storage
 Handle_Storage_Schema_swigregister = _Storage.Handle_Storage_Schema_swigregister
 Handle_Storage_Schema_swigregister(Handle_Storage_Schema)
 
-def Handle_Storage_Schema_DownCast(*args) -> "Handle_Storage_Schema const" :
+def Handle_Storage_Schema_DownCast(*args):
   return _Storage.Handle_Storage_Schema_DownCast(*args)
 Handle_Storage_Schema_DownCast = _Storage.Handle_Storage_Schema_DownCast
 
 class Storage_SeqOfCallBack(OCC.TCollection.TCollection_BaseSequence):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _Storage.Storage_SeqOfCallBack_swiginit(self,_Storage.new_Storage_SeqOfCallBack(*args))
-    def Clear(self, *args) -> "void" :
+        _Storage.Storage_SeqOfCallBack_swiginit(self,_Storage.new_Storage_SeqOfCallBack())
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _Storage.Storage_SeqOfCallBack_Clear(self, *args)
+        return _Storage.Storage_SeqOfCallBack_Clear(self)
 
-    def Assign(self, *args) -> "Storage_SeqOfCallBack const &" :
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: Storage_SeqOfCallBack &
@@ -5037,7 +5059,7 @@ class Storage_SeqOfCallBack(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Storage.Storage_SeqOfCallBack_Assign(self, *args)
 
-    def Set(self, *args) -> "Storage_SeqOfCallBack const &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: Storage_SeqOfCallBack &
@@ -5046,7 +5068,7 @@ class Storage_SeqOfCallBack(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Storage.Storage_SeqOfCallBack_Set(self, *args)
 
-    def Append(self, *args) -> "void" :
+    def Append(self, *args):
         """
         :param T:
         :type T: Handle_Storage_CallBack &
@@ -5059,7 +5081,7 @@ class Storage_SeqOfCallBack(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Storage.Storage_SeqOfCallBack_Append(self, *args)
 
-    def Prepend(self, *args) -> "void" :
+    def Prepend(self, *args):
         """
         :param T:
         :type T: Handle_Storage_CallBack &
@@ -5072,16 +5094,16 @@ class Storage_SeqOfCallBack(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Storage.Storage_SeqOfCallBack_Prepend(self, *args)
 
-    def InsertBefore(self, *args) -> "void" :
+    def InsertBefore(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param T:
         :type T: Handle_Storage_CallBack &
         :rtype: None
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param S:
         :type S: Storage_SeqOfCallBack &
         :rtype: None
@@ -5089,16 +5111,16 @@ class Storage_SeqOfCallBack(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Storage.Storage_SeqOfCallBack_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args) -> "void" :
+    def InsertAfter(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param T:
         :type T: Handle_Storage_CallBack &
         :rtype: None
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param S:
         :type S: Storage_SeqOfCallBack &
         :rtype: None
@@ -5106,24 +5128,24 @@ class Storage_SeqOfCallBack(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Storage.Storage_SeqOfCallBack_InsertAfter(self, *args)
 
-    def First(self, *args) -> "Handle_Storage_CallBack const &" :
+    def First(self):
         """
         :rtype: Handle_Storage_CallBack
 
         """
-        return _Storage.Storage_SeqOfCallBack_First(self, *args)
+        return _Storage.Storage_SeqOfCallBack_First(self)
 
-    def Last(self, *args) -> "Handle_Storage_CallBack const &" :
+    def Last(self):
         """
         :rtype: Handle_Storage_CallBack
 
         """
-        return _Storage.Storage_SeqOfCallBack_Last(self, *args)
+        return _Storage.Storage_SeqOfCallBack_Last(self)
 
-    def Split(self, *args) -> "void" :
+    def Split(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Sub:
         :type Sub: Storage_SeqOfCallBack &
         :rtype: None
@@ -5131,19 +5153,19 @@ class Storage_SeqOfCallBack(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Storage.Storage_SeqOfCallBack_Split(self, *args)
 
-    def Value(self, *args) -> "Handle_Storage_CallBack const &" :
+    def Value(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Handle_Storage_CallBack
 
         """
         return _Storage.Storage_SeqOfCallBack_Value(self, *args)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param I:
         :type I: Handle_Storage_CallBack &
         :rtype: None
@@ -5151,25 +5173,25 @@ class Storage_SeqOfCallBack(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Storage.Storage_SeqOfCallBack_SetValue(self, *args)
 
-    def ChangeValue(self, *args) -> "Handle_Storage_CallBack &" :
+    def ChangeValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Handle_Storage_CallBack
 
         """
         return _Storage.Storage_SeqOfCallBack_ChangeValue(self, *args)
 
-    def Remove(self, *args) -> "void" :
+    def Remove(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: None
 
         :param FromIndex:
-        :type FromIndex: int
+        :type FromIndex: Standard_Integer
         :param ToIndex:
-        :type ToIndex: int
+        :type ToIndex: Standard_Integer
         :rtype: None
 
         """
@@ -5204,20 +5226,20 @@ Storage_SeqOfCallBack_swigregister(Storage_SeqOfCallBack)
 class Storage_SeqOfPersistent(OCC.TCollection.TCollection_BaseSequence):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _Storage.Storage_SeqOfPersistent_swiginit(self,_Storage.new_Storage_SeqOfPersistent(*args))
-    def Clear(self, *args) -> "void" :
+        _Storage.Storage_SeqOfPersistent_swiginit(self,_Storage.new_Storage_SeqOfPersistent())
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _Storage.Storage_SeqOfPersistent_Clear(self, *args)
+        return _Storage.Storage_SeqOfPersistent_Clear(self)
 
-    def Assign(self, *args) -> "Storage_SeqOfPersistent const &" :
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: Storage_SeqOfPersistent &
@@ -5226,7 +5248,7 @@ class Storage_SeqOfPersistent(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Storage.Storage_SeqOfPersistent_Assign(self, *args)
 
-    def Set(self, *args) -> "Storage_SeqOfPersistent const &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: Storage_SeqOfPersistent &
@@ -5235,7 +5257,7 @@ class Storage_SeqOfPersistent(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Storage.Storage_SeqOfPersistent_Set(self, *args)
 
-    def Append(self, *args) -> "void" :
+    def Append(self, *args):
         """
         :param T:
         :type T: Handle_Standard_Persistent &
@@ -5248,7 +5270,7 @@ class Storage_SeqOfPersistent(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Storage.Storage_SeqOfPersistent_Append(self, *args)
 
-    def Prepend(self, *args) -> "void" :
+    def Prepend(self, *args):
         """
         :param T:
         :type T: Handle_Standard_Persistent &
@@ -5261,16 +5283,16 @@ class Storage_SeqOfPersistent(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Storage.Storage_SeqOfPersistent_Prepend(self, *args)
 
-    def InsertBefore(self, *args) -> "void" :
+    def InsertBefore(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param T:
         :type T: Handle_Standard_Persistent &
         :rtype: None
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param S:
         :type S: Storage_SeqOfPersistent &
         :rtype: None
@@ -5278,16 +5300,16 @@ class Storage_SeqOfPersistent(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Storage.Storage_SeqOfPersistent_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args) -> "void" :
+    def InsertAfter(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param T:
         :type T: Handle_Standard_Persistent &
         :rtype: None
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param S:
         :type S: Storage_SeqOfPersistent &
         :rtype: None
@@ -5295,24 +5317,24 @@ class Storage_SeqOfPersistent(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Storage.Storage_SeqOfPersistent_InsertAfter(self, *args)
 
-    def First(self, *args) -> "Handle_Standard_Persistent const &" :
+    def First(self):
         """
         :rtype: Handle_Standard_Persistent
 
         """
-        return _Storage.Storage_SeqOfPersistent_First(self, *args)
+        return _Storage.Storage_SeqOfPersistent_First(self)
 
-    def Last(self, *args) -> "Handle_Standard_Persistent const &" :
+    def Last(self):
         """
         :rtype: Handle_Standard_Persistent
 
         """
-        return _Storage.Storage_SeqOfPersistent_Last(self, *args)
+        return _Storage.Storage_SeqOfPersistent_Last(self)
 
-    def Split(self, *args) -> "void" :
+    def Split(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Sub:
         :type Sub: Storage_SeqOfPersistent &
         :rtype: None
@@ -5320,19 +5342,19 @@ class Storage_SeqOfPersistent(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Storage.Storage_SeqOfPersistent_Split(self, *args)
 
-    def Value(self, *args) -> "Handle_Standard_Persistent const &" :
+    def Value(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Handle_Standard_Persistent
 
         """
         return _Storage.Storage_SeqOfPersistent_Value(self, *args)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param I:
         :type I: Handle_Standard_Persistent &
         :rtype: None
@@ -5340,25 +5362,25 @@ class Storage_SeqOfPersistent(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Storage.Storage_SeqOfPersistent_SetValue(self, *args)
 
-    def ChangeValue(self, *args) -> "Handle_Standard_Persistent &" :
+    def ChangeValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Handle_Standard_Persistent
 
         """
         return _Storage.Storage_SeqOfPersistent_ChangeValue(self, *args)
 
-    def Remove(self, *args) -> "void" :
+    def Remove(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: None
 
         :param FromIndex:
-        :type FromIndex: int
+        :type FromIndex: Standard_Integer
         :param ToIndex:
-        :type ToIndex: int
+        :type ToIndex: Standard_Integer
         :rtype: None
 
         """
@@ -5393,20 +5415,20 @@ Storage_SeqOfPersistent_swigregister(Storage_SeqOfPersistent)
 class Storage_SeqOfRoot(OCC.TCollection.TCollection_BaseSequence):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _Storage.Storage_SeqOfRoot_swiginit(self,_Storage.new_Storage_SeqOfRoot(*args))
-    def Clear(self, *args) -> "void" :
+        _Storage.Storage_SeqOfRoot_swiginit(self,_Storage.new_Storage_SeqOfRoot())
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _Storage.Storage_SeqOfRoot_Clear(self, *args)
+        return _Storage.Storage_SeqOfRoot_Clear(self)
 
-    def Assign(self, *args) -> "Storage_SeqOfRoot const &" :
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: Storage_SeqOfRoot &
@@ -5415,7 +5437,7 @@ class Storage_SeqOfRoot(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Storage.Storage_SeqOfRoot_Assign(self, *args)
 
-    def Set(self, *args) -> "Storage_SeqOfRoot const &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: Storage_SeqOfRoot &
@@ -5424,7 +5446,7 @@ class Storage_SeqOfRoot(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Storage.Storage_SeqOfRoot_Set(self, *args)
 
-    def Append(self, *args) -> "void" :
+    def Append(self, *args):
         """
         :param T:
         :type T: Handle_Storage_Root &
@@ -5437,7 +5459,7 @@ class Storage_SeqOfRoot(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Storage.Storage_SeqOfRoot_Append(self, *args)
 
-    def Prepend(self, *args) -> "void" :
+    def Prepend(self, *args):
         """
         :param T:
         :type T: Handle_Storage_Root &
@@ -5450,16 +5472,16 @@ class Storage_SeqOfRoot(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Storage.Storage_SeqOfRoot_Prepend(self, *args)
 
-    def InsertBefore(self, *args) -> "void" :
+    def InsertBefore(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param T:
         :type T: Handle_Storage_Root &
         :rtype: None
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param S:
         :type S: Storage_SeqOfRoot &
         :rtype: None
@@ -5467,16 +5489,16 @@ class Storage_SeqOfRoot(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Storage.Storage_SeqOfRoot_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args) -> "void" :
+    def InsertAfter(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param T:
         :type T: Handle_Storage_Root &
         :rtype: None
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param S:
         :type S: Storage_SeqOfRoot &
         :rtype: None
@@ -5484,24 +5506,24 @@ class Storage_SeqOfRoot(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Storage.Storage_SeqOfRoot_InsertAfter(self, *args)
 
-    def First(self, *args) -> "Handle_Storage_Root const &" :
+    def First(self):
         """
         :rtype: Handle_Storage_Root
 
         """
-        return _Storage.Storage_SeqOfRoot_First(self, *args)
+        return _Storage.Storage_SeqOfRoot_First(self)
 
-    def Last(self, *args) -> "Handle_Storage_Root const &" :
+    def Last(self):
         """
         :rtype: Handle_Storage_Root
 
         """
-        return _Storage.Storage_SeqOfRoot_Last(self, *args)
+        return _Storage.Storage_SeqOfRoot_Last(self)
 
-    def Split(self, *args) -> "void" :
+    def Split(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Sub:
         :type Sub: Storage_SeqOfRoot &
         :rtype: None
@@ -5509,19 +5531,19 @@ class Storage_SeqOfRoot(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Storage.Storage_SeqOfRoot_Split(self, *args)
 
-    def Value(self, *args) -> "Handle_Storage_Root const &" :
+    def Value(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Handle_Storage_Root
 
         """
         return _Storage.Storage_SeqOfRoot_Value(self, *args)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param I:
         :type I: Handle_Storage_Root &
         :rtype: None
@@ -5529,25 +5551,25 @@ class Storage_SeqOfRoot(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Storage.Storage_SeqOfRoot_SetValue(self, *args)
 
-    def ChangeValue(self, *args) -> "Handle_Storage_Root &" :
+    def ChangeValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Handle_Storage_Root
 
         """
         return _Storage.Storage_SeqOfRoot_ChangeValue(self, *args)
 
-    def Remove(self, *args) -> "void" :
+    def Remove(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: None
 
         :param FromIndex:
-        :type FromIndex: int
+        :type FromIndex: Standard_Integer
         :param ToIndex:
-        :type ToIndex: int
+        :type ToIndex: Standard_Integer
         :rtype: None
 
         """
@@ -5594,18 +5616,18 @@ class Storage_SequenceNodeOfSeqOfCallBack(OCC.TCollection.TCollection_SeqNode):
 
         """
         _Storage.Storage_SequenceNodeOfSeqOfCallBack_swiginit(self,_Storage.new_Storage_SequenceNodeOfSeqOfCallBack(*args))
-    def Value(self, *args) -> "Handle_Storage_CallBack &" :
+    def Value(self):
         """
         :rtype: Handle_Storage_CallBack
 
         """
-        return _Storage.Storage_SequenceNodeOfSeqOfCallBack_Value(self, *args)
+        return _Storage.Storage_SequenceNodeOfSeqOfCallBack_Value(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Storage_SequenceNodeOfSeqOfCallBack self)"""
         return _Storage.Storage_SequenceNodeOfSeqOfCallBack__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Storage_SequenceNodeOfSeqOfCallBack" :
+    def GetHandle(self):
         """GetHandle(Storage_SequenceNodeOfSeqOfCallBack self) -> Handle_Storage_SequenceNodeOfSeqOfCallBack"""
         return _Storage.Storage_SequenceNodeOfSeqOfCallBack_GetHandle(self)
 
@@ -5644,7 +5666,7 @@ Handle_Storage_SequenceNodeOfSeqOfCallBack._kill_pointed = new_instancemethod(_S
 Handle_Storage_SequenceNodeOfSeqOfCallBack_swigregister = _Storage.Handle_Storage_SequenceNodeOfSeqOfCallBack_swigregister
 Handle_Storage_SequenceNodeOfSeqOfCallBack_swigregister(Handle_Storage_SequenceNodeOfSeqOfCallBack)
 
-def Handle_Storage_SequenceNodeOfSeqOfCallBack_DownCast(*args) -> "Handle_Storage_SequenceNodeOfSeqOfCallBack const" :
+def Handle_Storage_SequenceNodeOfSeqOfCallBack_DownCast(*args):
   return _Storage.Handle_Storage_SequenceNodeOfSeqOfCallBack_DownCast(*args)
 Handle_Storage_SequenceNodeOfSeqOfCallBack_DownCast = _Storage.Handle_Storage_SequenceNodeOfSeqOfCallBack_DownCast
 
@@ -5663,18 +5685,18 @@ class Storage_SequenceNodeOfSeqOfPersistent(OCC.TCollection.TCollection_SeqNode)
 
         """
         _Storage.Storage_SequenceNodeOfSeqOfPersistent_swiginit(self,_Storage.new_Storage_SequenceNodeOfSeqOfPersistent(*args))
-    def Value(self, *args) -> "Handle_Standard_Persistent &" :
+    def Value(self):
         """
         :rtype: Handle_Standard_Persistent
 
         """
-        return _Storage.Storage_SequenceNodeOfSeqOfPersistent_Value(self, *args)
+        return _Storage.Storage_SequenceNodeOfSeqOfPersistent_Value(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Storage_SequenceNodeOfSeqOfPersistent self)"""
         return _Storage.Storage_SequenceNodeOfSeqOfPersistent__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Storage_SequenceNodeOfSeqOfPersistent" :
+    def GetHandle(self):
         """GetHandle(Storage_SequenceNodeOfSeqOfPersistent self) -> Handle_Storage_SequenceNodeOfSeqOfPersistent"""
         return _Storage.Storage_SequenceNodeOfSeqOfPersistent_GetHandle(self)
 
@@ -5713,7 +5735,7 @@ Handle_Storage_SequenceNodeOfSeqOfPersistent._kill_pointed = new_instancemethod(
 Handle_Storage_SequenceNodeOfSeqOfPersistent_swigregister = _Storage.Handle_Storage_SequenceNodeOfSeqOfPersistent_swigregister
 Handle_Storage_SequenceNodeOfSeqOfPersistent_swigregister(Handle_Storage_SequenceNodeOfSeqOfPersistent)
 
-def Handle_Storage_SequenceNodeOfSeqOfPersistent_DownCast(*args) -> "Handle_Storage_SequenceNodeOfSeqOfPersistent const" :
+def Handle_Storage_SequenceNodeOfSeqOfPersistent_DownCast(*args):
   return _Storage.Handle_Storage_SequenceNodeOfSeqOfPersistent_DownCast(*args)
 Handle_Storage_SequenceNodeOfSeqOfPersistent_DownCast = _Storage.Handle_Storage_SequenceNodeOfSeqOfPersistent_DownCast
 
@@ -5732,18 +5754,18 @@ class Storage_SequenceNodeOfSeqOfRoot(OCC.TCollection.TCollection_SeqNode):
 
         """
         _Storage.Storage_SequenceNodeOfSeqOfRoot_swiginit(self,_Storage.new_Storage_SequenceNodeOfSeqOfRoot(*args))
-    def Value(self, *args) -> "Handle_Storage_Root &" :
+    def Value(self):
         """
         :rtype: Handle_Storage_Root
 
         """
-        return _Storage.Storage_SequenceNodeOfSeqOfRoot_Value(self, *args)
+        return _Storage.Storage_SequenceNodeOfSeqOfRoot_Value(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Storage_SequenceNodeOfSeqOfRoot self)"""
         return _Storage.Storage_SequenceNodeOfSeqOfRoot__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Storage_SequenceNodeOfSeqOfRoot" :
+    def GetHandle(self):
         """GetHandle(Storage_SequenceNodeOfSeqOfRoot self) -> Handle_Storage_SequenceNodeOfSeqOfRoot"""
         return _Storage.Storage_SequenceNodeOfSeqOfRoot_GetHandle(self)
 
@@ -5782,27 +5804,27 @@ Handle_Storage_SequenceNodeOfSeqOfRoot._kill_pointed = new_instancemethod(_Stora
 Handle_Storage_SequenceNodeOfSeqOfRoot_swigregister = _Storage.Handle_Storage_SequenceNodeOfSeqOfRoot_swigregister
 Handle_Storage_SequenceNodeOfSeqOfRoot_swigregister(Handle_Storage_SequenceNodeOfSeqOfRoot)
 
-def Handle_Storage_SequenceNodeOfSeqOfRoot_DownCast(*args) -> "Handle_Storage_SequenceNodeOfSeqOfRoot const" :
+def Handle_Storage_SequenceNodeOfSeqOfRoot_DownCast(*args):
   return _Storage.Handle_Storage_SequenceNodeOfSeqOfRoot_DownCast(*args)
 Handle_Storage_SequenceNodeOfSeqOfRoot_DownCast = _Storage.Handle_Storage_SequenceNodeOfSeqOfRoot_DownCast
 
 class Storage_TypeData(OCC.MMgt.MMgt_TShared):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _Storage.Storage_TypeData_swiginit(self,_Storage.new_Storage_TypeData(*args))
-    def NumberOfTypes(self, *args) -> "Standard_Integer" :
+        _Storage.Storage_TypeData_swiginit(self,_Storage.new_Storage_TypeData())
+    def NumberOfTypes(self):
         """
         :rtype: int
 
         """
-        return _Storage.Storage_TypeData_NumberOfTypes(self, *args)
+        return _Storage.Storage_TypeData_NumberOfTypes(self)
 
-    def IsType(self, *args) -> "Standard_Boolean" :
+    def IsType(self, *args):
         """
         :param aName:
         :type aName: TCollection_AsciiString &
@@ -5811,46 +5833,46 @@ class Storage_TypeData(OCC.MMgt.MMgt_TShared):
         """
         return _Storage.Storage_TypeData_IsType(self, *args)
 
-    def Types(self, *args) -> "Handle_TColStd_HSequenceOfAsciiString" :
+    def Types(self):
         """
         :rtype: Handle_TColStd_HSequenceOfAsciiString
 
         """
-        return _Storage.Storage_TypeData_Types(self, *args)
+        return _Storage.Storage_TypeData_Types(self)
 
-    def ErrorStatus(self, *args) -> "Storage_Error" :
+    def ErrorStatus(self):
         """
         :rtype: Storage_Error
 
         """
-        return _Storage.Storage_TypeData_ErrorStatus(self, *args)
+        return _Storage.Storage_TypeData_ErrorStatus(self)
 
-    def ErrorStatusExtension(self, *args) -> "TCollection_AsciiString" :
+    def ErrorStatusExtension(self):
         """
         :rtype: TCollection_AsciiString
 
         """
-        return _Storage.Storage_TypeData_ErrorStatusExtension(self, *args)
+        return _Storage.Storage_TypeData_ErrorStatusExtension(self)
 
-    def ClearErrorStatus(self, *args) -> "void" :
+    def ClearErrorStatus(self):
         """
         :rtype: None
 
         """
-        return _Storage.Storage_TypeData_ClearErrorStatus(self, *args)
+        return _Storage.Storage_TypeData_ClearErrorStatus(self)
 
-    def Clear(self, *args) -> "void" :
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _Storage.Storage_TypeData_Clear(self, *args)
+        return _Storage.Storage_TypeData_Clear(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Storage_TypeData self)"""
         return _Storage.Storage_TypeData__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Storage_TypeData" :
+    def GetHandle(self):
         """GetHandle(Storage_TypeData self) -> Handle_Storage_TypeData"""
         return _Storage.Storage_TypeData_GetHandle(self)
 
@@ -5895,7 +5917,7 @@ Handle_Storage_TypeData._kill_pointed = new_instancemethod(_Storage.Handle_Stora
 Handle_Storage_TypeData_swigregister = _Storage.Handle_Storage_TypeData_swigregister
 Handle_Storage_TypeData_swigregister(Handle_Storage_TypeData)
 
-def Handle_Storage_TypeData_DownCast(*args) -> "Handle_Storage_TypeData const" :
+def Handle_Storage_TypeData_DownCast(*args):
   return _Storage.Handle_Storage_TypeData_DownCast(*args)
 Handle_Storage_TypeData_DownCast = _Storage.Handle_Storage_TypeData_DownCast
 
@@ -5914,7 +5936,7 @@ class Storage_TypedCallBack(OCC.MMgt.MMgt_TShared):
 
         """
         _Storage.Storage_TypedCallBack_swiginit(self,_Storage.new_Storage_TypedCallBack(*args))
-    def SetType(self, *args) -> "void" :
+    def SetType(self, *args):
         """
         :param aType:
         :type aType: TCollection_AsciiString &
@@ -5923,14 +5945,14 @@ class Storage_TypedCallBack(OCC.MMgt.MMgt_TShared):
         """
         return _Storage.Storage_TypedCallBack_SetType(self, *args)
 
-    def Type(self, *args) -> "TCollection_AsciiString" :
+    def Type(self):
         """
         :rtype: TCollection_AsciiString
 
         """
-        return _Storage.Storage_TypedCallBack_Type(self, *args)
+        return _Storage.Storage_TypedCallBack_Type(self)
 
-    def SetCallBack(self, *args) -> "void" :
+    def SetCallBack(self, *args):
         """
         :param aCallBack:
         :type aCallBack: Handle_Storage_CallBack &
@@ -5939,34 +5961,34 @@ class Storage_TypedCallBack(OCC.MMgt.MMgt_TShared):
         """
         return _Storage.Storage_TypedCallBack_SetCallBack(self, *args)
 
-    def CallBack(self, *args) -> "Handle_Storage_CallBack" :
+    def CallBack(self):
         """
         :rtype: Handle_Storage_CallBack
 
         """
-        return _Storage.Storage_TypedCallBack_CallBack(self, *args)
+        return _Storage.Storage_TypedCallBack_CallBack(self)
 
-    def SetIndex(self, *args) -> "void" :
+    def SetIndex(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :rtype: None
 
         """
         return _Storage.Storage_TypedCallBack_SetIndex(self, *args)
 
-    def Index(self, *args) -> "Standard_Integer" :
+    def Index(self):
         """
         :rtype: int
 
         """
-        return _Storage.Storage_TypedCallBack_Index(self, *args)
+        return _Storage.Storage_TypedCallBack_Index(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Storage_TypedCallBack self)"""
         return _Storage.Storage_TypedCallBack__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Storage_TypedCallBack" :
+    def GetHandle(self):
         """GetHandle(Storage_TypedCallBack self) -> Handle_Storage_TypedCallBack"""
         return _Storage.Storage_TypedCallBack_GetHandle(self)
 
@@ -6010,7 +6032,7 @@ Handle_Storage_TypedCallBack._kill_pointed = new_instancemethod(_Storage.Handle_
 Handle_Storage_TypedCallBack_swigregister = _Storage.Handle_Storage_TypedCallBack_swigregister
 Handle_Storage_TypedCallBack_swigregister(Handle_Storage_TypedCallBack)
 
-def Handle_Storage_TypedCallBack_DownCast(*args) -> "Handle_Storage_TypedCallBack const" :
+def Handle_Storage_TypedCallBack_DownCast(*args):
   return _Storage.Handle_Storage_TypedCallBack_DownCast(*args)
 Handle_Storage_TypedCallBack_DownCast = _Storage.Handle_Storage_TypedCallBack_DownCast
 
@@ -6033,17 +6055,17 @@ Storage_stCONSTclCOM_swigregister(Storage_stCONSTclCOM)
 class Storage_DefaultCallBack(Storage_CallBack):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _Storage.Storage_DefaultCallBack_swiginit(self,_Storage.new_Storage_DefaultCallBack(*args))
-    def _kill_pointed(self) -> "void" :
+        _Storage.Storage_DefaultCallBack_swiginit(self,_Storage.new_Storage_DefaultCallBack())
+    def _kill_pointed(self):
         """_kill_pointed(Storage_DefaultCallBack self)"""
         return _Storage.Storage_DefaultCallBack__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Storage_DefaultCallBack" :
+    def GetHandle(self):
         """GetHandle(Storage_DefaultCallBack self) -> Handle_Storage_DefaultCallBack"""
         return _Storage.Storage_DefaultCallBack_GetHandle(self)
 
@@ -6081,7 +6103,7 @@ Handle_Storage_DefaultCallBack._kill_pointed = new_instancemethod(_Storage.Handl
 Handle_Storage_DefaultCallBack_swigregister = _Storage.Handle_Storage_DefaultCallBack_swigregister
 Handle_Storage_DefaultCallBack_swigregister(Handle_Storage_DefaultCallBack)
 
-def Handle_Storage_DefaultCallBack_DownCast(*args) -> "Handle_Storage_DefaultCallBack const" :
+def Handle_Storage_DefaultCallBack_DownCast(*args):
   return _Storage.Handle_Storage_DefaultCallBack_DownCast(*args)
 Handle_Storage_DefaultCallBack_DownCast = _Storage.Handle_Storage_DefaultCallBack_DownCast
 

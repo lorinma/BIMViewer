@@ -16,24 +16,31 @@
 ##along with pythonOCC.  If not, see <http://www.gnu.org/licenses/>.
 
 # Init logging system
-from collections import deque
+import logging
+logging.basicConfig()
+logger = logging.getLogger('GarbageCollector')
+
+
+def set_debug():
+    logger.setLevel(logging.DEBUG)
+
 
 class GarbageCollector(object):
     """ Garbage collector for OCC objects
     """
     def __init__(self):
         #self._collected_objects = []
-        self._handles = deque()
-        self._transients = deque()
-        self._misc = deque()
+        self._handles = []
+        self._transients = []
+        self._misc = []
 
         # The list for the prevented objects
-        self._prevent = deque()
+        self._prevent = []
 
         # define contexts lists
-        self._handles_contexts = deque()
-        self._transients_contexts = deque
-        self._misc_contexts = deque()
+        self._handles_contexts = []
+        self._transients_contexts = []
+        self._misc_contexts = []
 
     def prevent_object(self, obj):
         ''' Prevent an object from being deleted. This object is temporary
@@ -51,9 +58,9 @@ class GarbageCollector(object):
         self._transients_contexts.append(self._transients)
         self._misc_contexts.append(self._misc)
         # Then erase the content of the current lists
-        self._handles = deque()
-        self._transients = deque()
-        self._misc = deque()
+        self._handles = []
+        self._transients = []
+        self._misc = []
 
     def pop_context(self):
         self._handles = self._handles_contexts.pop()
@@ -62,14 +69,18 @@ class GarbageCollector(object):
 
     def collect_object(self, obj_deleted):
         ''' This method is called whenever a pythonOCC instance is deleted.'''
+        #self._collected_objects.append(obj_deleted)
         if hasattr(obj_deleted, 'was_purged'):
             return False
         if obj_deleted.__class__.__name__.startswith('Handle'):
             self._handles.append(obj_deleted)
+            logger.info('collected Handle')
         elif hasattr(obj_deleted, "GetHandle"):
             self._transients.append(obj_deleted)
+            logger.info('collected transient')
         else:
             self._misc.append(obj_deleted)
+            logger.info('collected misc')
 
     def smart_purge(self):
         # TODO: need to reverse the lists first in order

@@ -139,7 +139,7 @@ class BRepTopAdaptor_DataMapIteratorOfMapOfShapeTool(OCC.TCollection.TCollection
 
         """
         _BRepTopAdaptor.BRepTopAdaptor_DataMapIteratorOfMapOfShapeTool_swiginit(self,_BRepTopAdaptor.new_BRepTopAdaptor_DataMapIteratorOfMapOfShapeTool(*args))
-    def Initialize(self, *args) -> "void" :
+    def Initialize(self, *args):
         """
         :param aMap:
         :type aMap: BRepTopAdaptor_MapOfShapeTool &
@@ -148,19 +148,19 @@ class BRepTopAdaptor_DataMapIteratorOfMapOfShapeTool(OCC.TCollection.TCollection
         """
         return _BRepTopAdaptor.BRepTopAdaptor_DataMapIteratorOfMapOfShapeTool_Initialize(self, *args)
 
-    def Key(self, *args) -> "TopoDS_Shape const" :
+    def Key(self):
         """
         :rtype: TopoDS_Shape
 
         """
-        return _BRepTopAdaptor.BRepTopAdaptor_DataMapIteratorOfMapOfShapeTool_Key(self, *args)
+        return _BRepTopAdaptor.BRepTopAdaptor_DataMapIteratorOfMapOfShapeTool_Key(self)
 
-    def Value(self, *args) -> "BRepTopAdaptor_Tool const &" :
+    def Value(self):
         """
         :rtype: BRepTopAdaptor_Tool
 
         """
-        return _BRepTopAdaptor.BRepTopAdaptor_DataMapIteratorOfMapOfShapeTool_Value(self, *args)
+        return _BRepTopAdaptor.BRepTopAdaptor_DataMapIteratorOfMapOfShapeTool_Value(self)
 
     def __del__(self):
     	try:
@@ -192,25 +192,25 @@ class BRepTopAdaptor_DataMapNodeOfMapOfShapeTool(OCC.TCollection.TCollection_Map
 
         """
         _BRepTopAdaptor.BRepTopAdaptor_DataMapNodeOfMapOfShapeTool_swiginit(self,_BRepTopAdaptor.new_BRepTopAdaptor_DataMapNodeOfMapOfShapeTool(*args))
-    def Key(self, *args) -> "TopoDS_Shape" :
+    def Key(self):
         """
         :rtype: TopoDS_Shape
 
         """
-        return _BRepTopAdaptor.BRepTopAdaptor_DataMapNodeOfMapOfShapeTool_Key(self, *args)
+        return _BRepTopAdaptor.BRepTopAdaptor_DataMapNodeOfMapOfShapeTool_Key(self)
 
-    def Value(self, *args) -> "BRepTopAdaptor_Tool &" :
+    def Value(self):
         """
         :rtype: BRepTopAdaptor_Tool
 
         """
-        return _BRepTopAdaptor.BRepTopAdaptor_DataMapNodeOfMapOfShapeTool_Value(self, *args)
+        return _BRepTopAdaptor.BRepTopAdaptor_DataMapNodeOfMapOfShapeTool_Value(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(BRepTopAdaptor_DataMapNodeOfMapOfShapeTool self)"""
         return _BRepTopAdaptor.BRepTopAdaptor_DataMapNodeOfMapOfShapeTool__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_BRepTopAdaptor_DataMapNodeOfMapOfShapeTool" :
+    def GetHandle(self):
         """GetHandle(BRepTopAdaptor_DataMapNodeOfMapOfShapeTool self) -> Handle_BRepTopAdaptor_DataMapNodeOfMapOfShapeTool"""
         return _BRepTopAdaptor.BRepTopAdaptor_DataMapNodeOfMapOfShapeTool_GetHandle(self)
 
@@ -250,7 +250,7 @@ Handle_BRepTopAdaptor_DataMapNodeOfMapOfShapeTool._kill_pointed = new_instanceme
 Handle_BRepTopAdaptor_DataMapNodeOfMapOfShapeTool_swigregister = _BRepTopAdaptor.Handle_BRepTopAdaptor_DataMapNodeOfMapOfShapeTool_swigregister
 Handle_BRepTopAdaptor_DataMapNodeOfMapOfShapeTool_swigregister(Handle_BRepTopAdaptor_DataMapNodeOfMapOfShapeTool)
 
-def Handle_BRepTopAdaptor_DataMapNodeOfMapOfShapeTool_DownCast(*args) -> "Handle_BRepTopAdaptor_DataMapNodeOfMapOfShapeTool const" :
+def Handle_BRepTopAdaptor_DataMapNodeOfMapOfShapeTool_DownCast(*args):
   return _BRepTopAdaptor.Handle_BRepTopAdaptor_DataMapNodeOfMapOfShapeTool_DownCast(*args)
 Handle_BRepTopAdaptor_DataMapNodeOfMapOfShapeTool_DownCast = _BRepTopAdaptor.Handle_BRepTopAdaptor_DataMapNodeOfMapOfShapeTool_DownCast
 
@@ -267,15 +267,21 @@ class BRepTopAdaptor_FClass2d(object):
 
         """
         _BRepTopAdaptor.BRepTopAdaptor_FClass2d_swiginit(self,_BRepTopAdaptor.new_BRepTopAdaptor_FClass2d(*args))
-    def PerformInfinitePoint(self, *args) -> "TopAbs_State" :
+    def PerformInfinitePoint(self):
         """
         :rtype: TopAbs_State
 
         """
-        return _BRepTopAdaptor.BRepTopAdaptor_FClass2d_PerformInfinitePoint(self, *args)
+        return _BRepTopAdaptor.BRepTopAdaptor_FClass2d_PerformInfinitePoint(self)
 
-    def Perform(self, *args) -> "TopAbs_State" :
+    def Perform(self, *args):
         """
+        :param Puv:
+        :type Puv: gp_Pnt2d
+        :param RecadreOnPeriodic: default value is Standard_True
+        :type RecadreOnPeriodic: bool
+        :rtype: TopAbs_State
+
         :param Puv:
         :type Puv: gp_Pnt2d
         :param RecadreOnPeriodic: default value is Standard_True
@@ -285,14 +291,14 @@ class BRepTopAdaptor_FClass2d(object):
         """
         return _BRepTopAdaptor.BRepTopAdaptor_FClass2d_Perform(self, *args)
 
-    def Destroy(self, *args) -> "void" :
+    def Destroy(self):
         """
         :rtype: None
 
         """
-        return _BRepTopAdaptor.BRepTopAdaptor_FClass2d_Destroy(self, *args)
+        return _BRepTopAdaptor.BRepTopAdaptor_FClass2d_Destroy(self)
 
-    def Copy(self, *args) -> "BRepTopAdaptor_FClass2d const &" :
+    def Copy(self, *args):
         """
         :param Other:
         :type Other: BRepTopAdaptor_FClass2d &
@@ -301,7 +307,7 @@ class BRepTopAdaptor_FClass2d(object):
         """
         return _BRepTopAdaptor.BRepTopAdaptor_FClass2d_Copy(self, *args)
 
-    def Set(self, *args) -> "BRepTopAdaptor_FClass2d const &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: BRepTopAdaptor_FClass2d &
@@ -310,8 +316,18 @@ class BRepTopAdaptor_FClass2d(object):
         """
         return _BRepTopAdaptor.BRepTopAdaptor_FClass2d_Set(self, *args)
 
-    def TestOnRestriction(self, *args) -> "TopAbs_State" :
+    def TestOnRestriction(self, *args):
         """
+        * Test a point with +- an offset (Tol) and returns On if some points are OUT an some are IN (Caution: Internal use . see the code for more details)
+
+        :param Puv:
+        :type Puv: gp_Pnt2d
+        :param Tol:
+        :type Tol: float
+        :param RecadreOnPeriodic: default value is Standard_True
+        :type RecadreOnPeriodic: bool
+        :rtype: TopAbs_State
+
         * Test a point with +- an offset (Tol) and returns On if some points are OUT an some are IN (Caution: Internal use . see the code for more details)
 
         :param Puv:
@@ -356,25 +372,25 @@ class BRepTopAdaptor_HVertex(OCC.Adaptor3d.Adaptor3d_HVertex):
 
         """
         _BRepTopAdaptor.BRepTopAdaptor_HVertex_swiginit(self,_BRepTopAdaptor.new_BRepTopAdaptor_HVertex(*args))
-    def Vertex(self, *args) -> "TopoDS_Vertex const" :
+    def Vertex(self):
         """
         :rtype: TopoDS_Vertex
 
         """
-        return _BRepTopAdaptor.BRepTopAdaptor_HVertex_Vertex(self, *args)
+        return _BRepTopAdaptor.BRepTopAdaptor_HVertex_Vertex(self)
 
-    def ChangeVertex(self, *args) -> "TopoDS_Vertex" :
+    def ChangeVertex(self):
         """
         :rtype: TopoDS_Vertex
 
         """
-        return _BRepTopAdaptor.BRepTopAdaptor_HVertex_ChangeVertex(self, *args)
+        return _BRepTopAdaptor.BRepTopAdaptor_HVertex_ChangeVertex(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(BRepTopAdaptor_HVertex self)"""
         return _BRepTopAdaptor.BRepTopAdaptor_HVertex__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_BRepTopAdaptor_HVertex" :
+    def GetHandle(self):
         """GetHandle(BRepTopAdaptor_HVertex self) -> Handle_BRepTopAdaptor_HVertex"""
         return _BRepTopAdaptor.BRepTopAdaptor_HVertex_GetHandle(self)
 
@@ -414,22 +430,26 @@ Handle_BRepTopAdaptor_HVertex._kill_pointed = new_instancemethod(_BRepTopAdaptor
 Handle_BRepTopAdaptor_HVertex_swigregister = _BRepTopAdaptor.Handle_BRepTopAdaptor_HVertex_swigregister
 Handle_BRepTopAdaptor_HVertex_swigregister(Handle_BRepTopAdaptor_HVertex)
 
-def Handle_BRepTopAdaptor_HVertex_DownCast(*args) -> "Handle_BRepTopAdaptor_HVertex const" :
+def Handle_BRepTopAdaptor_HVertex_DownCast(*args):
   return _BRepTopAdaptor.Handle_BRepTopAdaptor_HVertex_DownCast(*args)
 Handle_BRepTopAdaptor_HVertex_DownCast = _BRepTopAdaptor.Handle_BRepTopAdaptor_HVertex_DownCast
 
 class BRepTopAdaptor_MapOfShapeTool(OCC.TCollection.TCollection_BasicMap):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self, NbBuckets=1): 
         """
         :param NbBuckets: default value is 1
-        :type NbBuckets: int
+        :type NbBuckets: Standard_Integer
+        :rtype: None
+
+        :param NbBuckets: default value is 1
+        :type NbBuckets: Standard_Integer
         :rtype: None
 
         """
-        _BRepTopAdaptor.BRepTopAdaptor_MapOfShapeTool_swiginit(self,_BRepTopAdaptor.new_BRepTopAdaptor_MapOfShapeTool(*args))
-    def Assign(self, *args) -> "BRepTopAdaptor_MapOfShapeTool &" :
+        _BRepTopAdaptor.BRepTopAdaptor_MapOfShapeTool_swiginit(self,_BRepTopAdaptor.new_BRepTopAdaptor_MapOfShapeTool(NbBuckets))
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: BRepTopAdaptor_MapOfShapeTool &
@@ -438,7 +458,7 @@ class BRepTopAdaptor_MapOfShapeTool(OCC.TCollection.TCollection_BasicMap):
         """
         return _BRepTopAdaptor.BRepTopAdaptor_MapOfShapeTool_Assign(self, *args)
 
-    def Set(self, *args) -> "BRepTopAdaptor_MapOfShapeTool &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: BRepTopAdaptor_MapOfShapeTool &
@@ -447,23 +467,23 @@ class BRepTopAdaptor_MapOfShapeTool(OCC.TCollection.TCollection_BasicMap):
         """
         return _BRepTopAdaptor.BRepTopAdaptor_MapOfShapeTool_Set(self, *args)
 
-    def ReSize(self, *args) -> "void" :
+    def ReSize(self, *args):
         """
         :param NbBuckets:
-        :type NbBuckets: int
+        :type NbBuckets: Standard_Integer
         :rtype: None
 
         """
         return _BRepTopAdaptor.BRepTopAdaptor_MapOfShapeTool_ReSize(self, *args)
 
-    def Clear(self, *args) -> "void" :
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _BRepTopAdaptor.BRepTopAdaptor_MapOfShapeTool_Clear(self, *args)
+        return _BRepTopAdaptor.BRepTopAdaptor_MapOfShapeTool_Clear(self)
 
-    def Bind(self, *args) -> "Standard_Boolean" :
+    def Bind(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -474,7 +494,7 @@ class BRepTopAdaptor_MapOfShapeTool(OCC.TCollection.TCollection_BasicMap):
         """
         return _BRepTopAdaptor.BRepTopAdaptor_MapOfShapeTool_Bind(self, *args)
 
-    def IsBound(self, *args) -> "Standard_Boolean" :
+    def IsBound(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -483,7 +503,7 @@ class BRepTopAdaptor_MapOfShapeTool(OCC.TCollection.TCollection_BasicMap):
         """
         return _BRepTopAdaptor.BRepTopAdaptor_MapOfShapeTool_IsBound(self, *args)
 
-    def UnBind(self, *args) -> "Standard_Boolean" :
+    def UnBind(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -492,7 +512,7 @@ class BRepTopAdaptor_MapOfShapeTool(OCC.TCollection.TCollection_BasicMap):
         """
         return _BRepTopAdaptor.BRepTopAdaptor_MapOfShapeTool_UnBind(self, *args)
 
-    def Find(self, *args) -> "BRepTopAdaptor_Tool const &" :
+    def Find(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -501,7 +521,7 @@ class BRepTopAdaptor_MapOfShapeTool(OCC.TCollection.TCollection_BasicMap):
         """
         return _BRepTopAdaptor.BRepTopAdaptor_MapOfShapeTool_Find(self, *args)
 
-    def ChangeFind(self, *args) -> "BRepTopAdaptor_Tool &" :
+    def ChangeFind(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -510,7 +530,7 @@ class BRepTopAdaptor_MapOfShapeTool(OCC.TCollection.TCollection_BasicMap):
         """
         return _BRepTopAdaptor.BRepTopAdaptor_MapOfShapeTool_ChangeFind(self, *args)
 
-    def Find1(self, *args) -> "Standard_Address" :
+    def Find1(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -519,7 +539,7 @@ class BRepTopAdaptor_MapOfShapeTool(OCC.TCollection.TCollection_BasicMap):
         """
         return _BRepTopAdaptor.BRepTopAdaptor_MapOfShapeTool_Find1(self, *args)
 
-    def ChangeFind1(self, *args) -> "Standard_Address" :
+    def ChangeFind1(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -528,7 +548,7 @@ class BRepTopAdaptor_MapOfShapeTool(OCC.TCollection.TCollection_BasicMap):
         """
         return _BRepTopAdaptor.BRepTopAdaptor_MapOfShapeTool_ChangeFind1(self, *args)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(BRepTopAdaptor_MapOfShapeTool self)"""
         return _BRepTopAdaptor.BRepTopAdaptor_MapOfShapeTool__kill_pointed(self)
 
@@ -576,7 +596,7 @@ class BRepTopAdaptor_Tool(object):
 
         """
         _BRepTopAdaptor.BRepTopAdaptor_Tool_swiginit(self,_BRepTopAdaptor.new_BRepTopAdaptor_Tool(*args))
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
         :param F:
         :type F: TopoDS_Face &
@@ -593,14 +613,14 @@ class BRepTopAdaptor_Tool(object):
         """
         return _BRepTopAdaptor.BRepTopAdaptor_Tool_Init(self, *args)
 
-    def GetTopolTool(self, *args) -> "Handle_BRepTopAdaptor_TopolTool" :
+    def GetTopolTool(self):
         """
         :rtype: Handle_BRepTopAdaptor_TopolTool
 
         """
-        return _BRepTopAdaptor.BRepTopAdaptor_Tool_GetTopolTool(self, *args)
+        return _BRepTopAdaptor.BRepTopAdaptor_Tool_GetTopolTool(self)
 
-    def SetTopolTool(self, *args) -> "void" :
+    def SetTopolTool(self, *args):
         """
         :param TT:
         :type TT: Handle_BRepTopAdaptor_TopolTool &
@@ -609,19 +629,19 @@ class BRepTopAdaptor_Tool(object):
         """
         return _BRepTopAdaptor.BRepTopAdaptor_Tool_SetTopolTool(self, *args)
 
-    def GetSurface(self, *args) -> "Handle_Adaptor3d_HSurface" :
+    def GetSurface(self):
         """
         :rtype: Handle_Adaptor3d_HSurface
 
         """
-        return _BRepTopAdaptor.BRepTopAdaptor_Tool_GetSurface(self, *args)
+        return _BRepTopAdaptor.BRepTopAdaptor_Tool_GetSurface(self)
 
-    def Destroy(self, *args) -> "void" :
+    def Destroy(self):
         """
         :rtype: None
 
         """
-        return _BRepTopAdaptor.BRepTopAdaptor_Tool_Destroy(self, *args)
+        return _BRepTopAdaptor.BRepTopAdaptor_Tool_Destroy(self)
 
     def __del__(self):
     	try:
@@ -653,7 +673,7 @@ class BRepTopAdaptor_TopolTool(OCC.Adaptor3d.Adaptor3d_TopolTool):
 
         """
         _BRepTopAdaptor.BRepTopAdaptor_TopolTool_swiginit(self,_BRepTopAdaptor.new_BRepTopAdaptor_TopolTool(*args))
-    def Initialize(self, *args) -> "void" :
+    def Initialize(self, *args):
         """
         :rtype: void
 
@@ -668,7 +688,53 @@ class BRepTopAdaptor_TopolTool(OCC.Adaptor3d.Adaptor3d_TopolTool):
         """
         return _BRepTopAdaptor.BRepTopAdaptor_TopolTool_Initialize(self, *args)
 
-    def Orientation(self, *args) -> "TopAbs_Orientation" :
+    def Classify(self, *args):
+        """
+        :param P2d:
+        :type P2d: gp_Pnt2d
+        :param Tol:
+        :type Tol: float
+        :param RecadreOnPeriodic: default value is Standard_True
+        :type RecadreOnPeriodic: bool
+        :rtype: TopAbs_State
+
+        :param P2d:
+        :type P2d: gp_Pnt2d
+        :param Tol:
+        :type Tol: float
+        :param RecadreOnPeriodic: default value is Standard_True
+        :type RecadreOnPeriodic: bool
+        :rtype: TopAbs_State
+
+        """
+        return _BRepTopAdaptor.BRepTopAdaptor_TopolTool_Classify(self, *args)
+
+    def IsThePointOn(self, *args):
+        """
+        * see the code for specifications)
+
+        :param P2d:
+        :type P2d: gp_Pnt2d
+        :param Tol:
+        :type Tol: float
+        :param RecadreOnPeriodic: default value is Standard_True
+        :type RecadreOnPeriodic: bool
+        :rtype: bool
+
+        * see the code for specifications)
+
+        :param P2d:
+        :type P2d: gp_Pnt2d
+        :param Tol:
+        :type Tol: float
+        :param RecadreOnPeriodic: default value is Standard_True
+        :type RecadreOnPeriodic: bool
+        :rtype: bool
+
+        """
+        return _BRepTopAdaptor.BRepTopAdaptor_TopolTool_IsThePointOn(self, *args)
+
+    def Orientation(self, *args):
         """
         * If the function returns the orientation of the arc. If the orientation is FORWARD or REVERSED, the arc is a 'real' limit of the surface. If the orientation is INTERNAL or EXTERNAL, the arc is considered as an arc on the surface.
 
@@ -685,14 +751,14 @@ class BRepTopAdaptor_TopolTool(OCC.Adaptor3d.Adaptor3d_TopolTool):
         """
         return _BRepTopAdaptor.BRepTopAdaptor_TopolTool_Orientation(self, *args)
 
-    def Destroy(self, *args) -> "void" :
+    def Destroy(self):
         """
         :rtype: None
 
         """
-        return _BRepTopAdaptor.BRepTopAdaptor_TopolTool_Destroy(self, *args)
+        return _BRepTopAdaptor.BRepTopAdaptor_TopolTool_Destroy(self)
 
-    def Tol3d(self, *args) -> "Standard_Real" :
+    def Tol3d(self, *args):
         """
         * returns 3d tolerance of the arc C
 
@@ -709,11 +775,11 @@ class BRepTopAdaptor_TopolTool(OCC.Adaptor3d.Adaptor3d_TopolTool):
         """
         return _BRepTopAdaptor.BRepTopAdaptor_TopolTool_Tol3d(self, *args)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(BRepTopAdaptor_TopolTool self)"""
         return _BRepTopAdaptor.BRepTopAdaptor_TopolTool__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_BRepTopAdaptor_TopolTool" :
+    def GetHandle(self):
         """GetHandle(BRepTopAdaptor_TopolTool self) -> Handle_BRepTopAdaptor_TopolTool"""
         return _BRepTopAdaptor.BRepTopAdaptor_TopolTool_GetHandle(self)
 
@@ -726,6 +792,8 @@ class BRepTopAdaptor_TopolTool(OCC.Adaptor3d.Adaptor3d_TopolTool):
 
 
 BRepTopAdaptor_TopolTool.Initialize = new_instancemethod(_BRepTopAdaptor.BRepTopAdaptor_TopolTool_Initialize,None,BRepTopAdaptor_TopolTool)
+BRepTopAdaptor_TopolTool.Classify = new_instancemethod(_BRepTopAdaptor.BRepTopAdaptor_TopolTool_Classify,None,BRepTopAdaptor_TopolTool)
+BRepTopAdaptor_TopolTool.IsThePointOn = new_instancemethod(_BRepTopAdaptor.BRepTopAdaptor_TopolTool_IsThePointOn,None,BRepTopAdaptor_TopolTool)
 BRepTopAdaptor_TopolTool.Orientation = new_instancemethod(_BRepTopAdaptor.BRepTopAdaptor_TopolTool_Orientation,None,BRepTopAdaptor_TopolTool)
 BRepTopAdaptor_TopolTool.Destroy = new_instancemethod(_BRepTopAdaptor.BRepTopAdaptor_TopolTool_Destroy,None,BRepTopAdaptor_TopolTool)
 BRepTopAdaptor_TopolTool.Tol3d = new_instancemethod(_BRepTopAdaptor.BRepTopAdaptor_TopolTool_Tol3d,None,BRepTopAdaptor_TopolTool)
@@ -755,7 +823,7 @@ Handle_BRepTopAdaptor_TopolTool._kill_pointed = new_instancemethod(_BRepTopAdapt
 Handle_BRepTopAdaptor_TopolTool_swigregister = _BRepTopAdaptor.Handle_BRepTopAdaptor_TopolTool_swigregister
 Handle_BRepTopAdaptor_TopolTool_swigregister(Handle_BRepTopAdaptor_TopolTool)
 
-def Handle_BRepTopAdaptor_TopolTool_DownCast(*args) -> "Handle_BRepTopAdaptor_TopolTool const" :
+def Handle_BRepTopAdaptor_TopolTool_DownCast(*args):
   return _BRepTopAdaptor.Handle_BRepTopAdaptor_TopolTool_DownCast(*args)
 Handle_BRepTopAdaptor_TopolTool_DownCast = _BRepTopAdaptor.Handle_BRepTopAdaptor_TopolTool_DownCast
 

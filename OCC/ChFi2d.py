@@ -176,7 +176,7 @@ class ChFi2d_AnaFilletAlgo(object):
 
         """
         _ChFi2d.ChFi2d_AnaFilletAlgo_swiginit(self,_ChFi2d.new_ChFi2d_AnaFilletAlgo(*args))
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
         * Initializes the class by a wire consisting of two edges.
 
@@ -199,7 +199,7 @@ class ChFi2d_AnaFilletAlgo(object):
         """
         return _ChFi2d.ChFi2d_AnaFilletAlgo_Init(self, *args)
 
-    def Perform(self, *args) -> "Standard_Boolean" :
+    def Perform(self, *args):
         """
         * Calculates a fillet.
 
@@ -210,7 +210,7 @@ class ChFi2d_AnaFilletAlgo(object):
         """
         return _ChFi2d.ChFi2d_AnaFilletAlgo_Perform(self, *args)
 
-    def Result(self, *args) -> "TopoDS_Edge const" :
+    def Result(self, *args):
         """
         * Retrieves a result (fillet and shrinked neighbours).
 
@@ -253,7 +253,7 @@ class ChFi2d_Builder(object):
 
         """
         _ChFi2d.ChFi2d_Builder_swiginit(self,_ChFi2d.new_ChFi2d_Builder(*args))
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
         :param F:
         :type F: TopoDS_Face &
@@ -268,7 +268,7 @@ class ChFi2d_Builder(object):
         """
         return _ChFi2d.ChFi2d_Builder_Init(self, *args)
 
-    def AddFillet(self, *args) -> "TopoDS_Edge" :
+    def AddFillet(self, *args):
         """
         * Add a fillet of radius <Radius> on the wire between the two edges connected to the vertex <V>. <AddFillet> returns the fillet edge. The returned edge has sense only if the status <status> is <IsDone>
 
@@ -281,7 +281,7 @@ class ChFi2d_Builder(object):
         """
         return _ChFi2d.ChFi2d_Builder_AddFillet(self, *args)
 
-    def ModifyFillet(self, *args) -> "TopoDS_Edge" :
+    def ModifyFillet(self, *args):
         """
         * modify the fillet radius and return the new fillet edge. this edge has sense only if the status <status> is <IsDone>.
 
@@ -294,7 +294,7 @@ class ChFi2d_Builder(object):
         """
         return _ChFi2d.ChFi2d_Builder_ModifyFillet(self, *args)
 
-    def RemoveFillet(self, *args) -> "TopoDS_Vertex" :
+    def RemoveFillet(self, *args):
         """
         * removes the fillet <Fillet> and returns the vertex connecting the two adjacent edges to this fillet.
 
@@ -305,7 +305,7 @@ class ChFi2d_Builder(object):
         """
         return _ChFi2d.ChFi2d_Builder_RemoveFillet(self, *args)
 
-    def AddChamfer(self, *args) -> "TopoDS_Edge" :
+    def AddChamfer(self, *args):
         """
         * Add a chamfer on the wire between the two edges connected <E1> and <E2>. <AddChamfer> returns the chamfer edge. This edge has sense only if the status <status> is <IsDone>.
 
@@ -334,7 +334,7 @@ class ChFi2d_Builder(object):
         """
         return _ChFi2d.ChFi2d_Builder_AddChamfer(self, *args)
 
-    def ModifyChamfer(self, *args) -> "TopoDS_Edge" :
+    def ModifyChamfer(self, *args):
         """
         * modify the chamfer <Chamfer> and returns the new chamfer edge. This edge as sense only if the status <status> is <IsDone>.
 
@@ -365,7 +365,7 @@ class ChFi2d_Builder(object):
         """
         return _ChFi2d.ChFi2d_Builder_ModifyChamfer(self, *args)
 
-    def RemoveChamfer(self, *args) -> "TopoDS_Vertex" :
+    def RemoveChamfer(self, *args):
         """
         * removes the chamfer <Chamfer> and returns the vertex connecting the two adjacent edges to this chamfer.
 
@@ -376,16 +376,16 @@ class ChFi2d_Builder(object):
         """
         return _ChFi2d.ChFi2d_Builder_RemoveChamfer(self, *args)
 
-    def Result(self, *args) -> "TopoDS_Face" :
+    def Result(self):
         """
         * returns the modified face
 
         :rtype: TopoDS_Face
 
         """
-        return _ChFi2d.ChFi2d_Builder_Result(self, *args)
+        return _ChFi2d.ChFi2d_Builder_Result(self)
 
-    def IsModified(self, *args) -> "Standard_Boolean" :
+    def IsModified(self, *args):
         """
         :param E:
         :type E: TopoDS_Edge &
@@ -394,39 +394,39 @@ class ChFi2d_Builder(object):
         """
         return _ChFi2d.ChFi2d_Builder_IsModified(self, *args)
 
-    def FilletEdges(self, *args) -> "TopTools_SequenceOfShape const &" :
+    def FilletEdges(self):
         """
         * returns the list of new edges
 
         :rtype: TopTools_SequenceOfShape
 
         """
-        return _ChFi2d.ChFi2d_Builder_FilletEdges(self, *args)
+        return _ChFi2d.ChFi2d_Builder_FilletEdges(self)
 
-    def NbFillet(self, *args) -> "Standard_Integer" :
+    def NbFillet(self):
         """
         :rtype: int
 
         """
-        return _ChFi2d.ChFi2d_Builder_NbFillet(self, *args)
+        return _ChFi2d.ChFi2d_Builder_NbFillet(self)
 
-    def ChamferEdges(self, *args) -> "TopTools_SequenceOfShape const &" :
+    def ChamferEdges(self):
         """
         * returns the list of new edges
 
         :rtype: TopTools_SequenceOfShape
 
         """
-        return _ChFi2d.ChFi2d_Builder_ChamferEdges(self, *args)
+        return _ChFi2d.ChFi2d_Builder_ChamferEdges(self)
 
-    def NbChamfer(self, *args) -> "Standard_Integer" :
+    def NbChamfer(self):
         """
         :rtype: int
 
         """
-        return _ChFi2d.ChFi2d_Builder_NbChamfer(self, *args)
+        return _ChFi2d.ChFi2d_Builder_NbChamfer(self)
 
-    def HasDescendant(self, *args) -> "Standard_Boolean" :
+    def HasDescendant(self, *args):
         """
         :param E:
         :type E: TopoDS_Edge &
@@ -435,7 +435,7 @@ class ChFi2d_Builder(object):
         """
         return _ChFi2d.ChFi2d_Builder_HasDescendant(self, *args)
 
-    def DescendantEdge(self, *args) -> "TopoDS_Edge const" :
+    def DescendantEdge(self, *args):
         """
         * returns the modified edge if <E> has descendant or <E> in the other case.
 
@@ -446,7 +446,7 @@ class ChFi2d_Builder(object):
         """
         return _ChFi2d.ChFi2d_Builder_DescendantEdge(self, *args)
 
-    def BasisEdge(self, *args) -> "TopoDS_Edge const" :
+    def BasisEdge(self, *args):
         """
         * Returns the parent edge of <E> Warning: If <E>is a basis edge, the returned edge would be equal to <E>
 
@@ -457,12 +457,12 @@ class ChFi2d_Builder(object):
         """
         return _ChFi2d.ChFi2d_Builder_BasisEdge(self, *args)
 
-    def Status(self, *args) -> "ChFi2d_ConstructionError" :
+    def Status(self):
         """
         :rtype: ChFi2d_ConstructionError
 
         """
-        return _ChFi2d.ChFi2d_Builder_Status(self, *args)
+        return _ChFi2d.ChFi2d_Builder_Status(self)
 
     def __del__(self):
     	try:
@@ -518,7 +518,7 @@ class ChFi2d_ChamferAPI(object):
 
         """
         _ChFi2d.ChFi2d_ChamferAPI_swiginit(self,_ChFi2d.new_ChFi2d_ChamferAPI(*args))
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
         * Initializes the class by a wire consisting of two libear edges.
 
@@ -537,16 +537,16 @@ class ChFi2d_ChamferAPI(object):
         """
         return _ChFi2d.ChFi2d_ChamferAPI_Init(self, *args)
 
-    def Perform(self, *args) -> "Standard_Boolean" :
+    def Perform(self):
         """
         * Constructs a chamfer edge. Returns true if the edge is constructed.
 
         :rtype: bool
 
         """
-        return _ChFi2d.ChFi2d_ChamferAPI_Perform(self, *args)
+        return _ChFi2d.ChFi2d_ChamferAPI_Perform(self)
 
-    def Result(self, *args) -> "TopoDS_Edge" :
+    def Result(self, *args):
         """
         :param theEdge1:
         :type theEdge1: TopoDS_Edge &
@@ -605,7 +605,7 @@ class ChFi2d_FilletAPI(object):
 
         """
         _ChFi2d.ChFi2d_FilletAPI_swiginit(self,_ChFi2d.new_ChFi2d_FilletAPI(*args))
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
         * Initializes a fillet algorithm: accepts a wire consisting of two edges in a plane.
 
@@ -628,7 +628,7 @@ class ChFi2d_FilletAPI(object):
         """
         return _ChFi2d.ChFi2d_FilletAPI_Init(self, *args)
 
-    def Perform(self, *args) -> "Standard_Boolean" :
+    def Perform(self, *args):
         """
         * Constructs a fillet edge. Returns true if at least one result was found.
 
@@ -639,7 +639,7 @@ class ChFi2d_FilletAPI(object):
         """
         return _ChFi2d.ChFi2d_FilletAPI_Perform(self, *args)
 
-    def NbResults(self, *args) -> "Standard_Integer" :
+    def NbResults(self, *args):
         """
         * Returns number of possible solutions. <thePoint> chooses a particular fillet in case of several fillets may be constructed (for example, a circle intersecting a segment in 2 points). Put the intersecting (or common) point of the edges.
 
@@ -650,7 +650,7 @@ class ChFi2d_FilletAPI(object):
         """
         return _ChFi2d.ChFi2d_FilletAPI_NbResults(self, *args)
 
-    def Result(self, *args) -> "TopoDS_Edge" :
+    def Result(self, *args):
         """
         * Returns result (fillet edge, modified edge1, modified edge2), nearest to the given point <thePoint> if iSolution == -1 <thePoint> chooses a particular fillet in case of several fillets may be constructed (for example, a circle intersecting a segment in 2 points). Put the intersecting (or common) point of the edges.
 
@@ -660,8 +660,20 @@ class ChFi2d_FilletAPI(object):
         :type theEdge1: TopoDS_Edge &
         :param theEdge2:
         :type theEdge2: TopoDS_Edge &
-        :param iSolution: default value is -1
-        :type iSolution: int
+        :param iSolution: default value is - 1
+        :type iSolution: Standard_Integer
+        :rtype: TopoDS_Edge
+
+        * Returns result (fillet edge, modified edge1, modified edge2), nearest to the given point <thePoint> if iSolution == -1 <thePoint> chooses a particular fillet in case of several fillets may be constructed (for example, a circle intersecting a segment in 2 points). Put the intersecting (or common) point of the edges.
+
+        :param thePoint:
+        :type thePoint: gp_Pnt
+        :param theEdge1:
+        :type theEdge1: TopoDS_Edge &
+        :param theEdge2:
+        :type theEdge2: TopoDS_Edge &
+        :param iSolution: default value is - 1
+        :type iSolution: Standard_Integer
         :rtype: TopoDS_Edge
 
         """
@@ -712,7 +724,7 @@ class ChFi2d_FilletAlgo(object):
 
         """
         _ChFi2d.ChFi2d_FilletAlgo_swiginit(self,_ChFi2d.new_ChFi2d_FilletAlgo(*args))
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
         * Initializes a fillet algorithm: accepts a wire consisting of two edges in a plane.
 
@@ -735,7 +747,7 @@ class ChFi2d_FilletAlgo(object):
         """
         return _ChFi2d.ChFi2d_FilletAlgo_Init(self, *args)
 
-    def Perform(self, *args) -> "Standard_Boolean" :
+    def Perform(self, *args):
         """
         * Constructs a fillet edge. Returns true, if at least one result was found
 
@@ -746,7 +758,7 @@ class ChFi2d_FilletAlgo(object):
         """
         return _ChFi2d.ChFi2d_FilletAlgo_Perform(self, *args)
 
-    def NbResults(self, *args) -> "Standard_Integer" :
+    def NbResults(self, *args):
         """
         * Returns number of possible solutions. <thePoint> chooses a particular fillet in case of several fillets may be constructed (for example, a circle intersecting a segment in 2 points). Put the intersecting (or common) point of the edges.
 
@@ -757,7 +769,7 @@ class ChFi2d_FilletAlgo(object):
         """
         return _ChFi2d.ChFi2d_FilletAlgo_NbResults(self, *args)
 
-    def Result(self, *args) -> "TopoDS_Edge" :
+    def Result(self, *args):
         """
         * Returns result (fillet edge, modified edge1, modified edge2), neares to the given point <thePoint> if iSolution == -1. <thePoint> chooses a particular fillet in case of several fillets may be constructed (for example, a circle intersecting a segment in 2 points). Put the intersecting (or common) point of the edges.
 
@@ -767,8 +779,20 @@ class ChFi2d_FilletAlgo(object):
         :type theEdge1: TopoDS_Edge &
         :param theEdge2:
         :type theEdge2: TopoDS_Edge &
-        :param iSolution: default value is -1
-        :type iSolution: int
+        :param iSolution: default value is - 1
+        :type iSolution: Standard_Integer
+        :rtype: TopoDS_Edge
+
+        * Returns result (fillet edge, modified edge1, modified edge2), neares to the given point <thePoint> if iSolution == -1. <thePoint> chooses a particular fillet in case of several fillets may be constructed (for example, a circle intersecting a segment in 2 points). Put the intersecting (or common) point of the edges.
+
+        :param thePoint:
+        :type thePoint: gp_Pnt
+        :param theEdge1:
+        :type theEdge1: TopoDS_Edge &
+        :param theEdge2:
+        :type theEdge2: TopoDS_Edge &
+        :param iSolution: default value is - 1
+        :type iSolution: Standard_Integer
         :rtype: TopoDS_Edge
 
         """

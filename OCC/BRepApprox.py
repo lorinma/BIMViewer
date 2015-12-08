@@ -135,24 +135,56 @@ import OCC.ApproxInt
 class BRepApprox_Approx(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _BRepApprox.BRepApprox_Approx_swiginit(self,_BRepApprox.new_BRepApprox_Approx(*args))
-    def SetParameters(self, *args) -> "void" :
+        _BRepApprox.BRepApprox_Approx_swiginit(self,_BRepApprox.new_BRepApprox_Approx())
+    def SetParameters(self, *args):
         """
         :param Tol3d:
         :type Tol3d: float
         :param Tol2d:
         :type Tol2d: float
         :param DegMin:
-        :type DegMin: int
+        :type DegMin: Standard_Integer
         :param DegMax:
-        :type DegMax: int
+        :type DegMax: Standard_Integer
         :param NbIterMax:
-        :type NbIterMax: int
+        :type NbIterMax: Standard_Integer
+        :param ApproxWithTangency: default value is Standard_True
+        :type ApproxWithTangency: bool
+        :param Parametrization: default value is Approx_ChordLength
+        :type Parametrization: Approx_ParametrizationType
+        :rtype: None
+
+        :param Tol3d:
+        :type Tol3d: float
+        :param Tol2d:
+        :type Tol2d: float
+        :param DegMin:
+        :type DegMin: Standard_Integer
+        :param DegMax:
+        :type DegMax: Standard_Integer
+        :param NbIterMax:
+        :type NbIterMax: Standard_Integer
+        :param ApproxWithTangency: default value is Standard_True
+        :type ApproxWithTangency: bool
+        :param Parametrization: default value is Approx_ChordLength
+        :type Parametrization: Approx_ParametrizationType
+        :rtype: None
+
+        :param Tol3d:
+        :type Tol3d: float
+        :param Tol2d:
+        :type Tol2d: float
+        :param DegMin:
+        :type DegMin: Standard_Integer
+        :param DegMax:
+        :type DegMax: Standard_Integer
+        :param NbIterMax:
+        :type NbIterMax: Standard_Integer
         :param ApproxWithTangency: default value is Standard_True
         :type ApproxWithTangency: bool
         :param Parametrization: default value is Approx_ChordLength
@@ -166,13 +198,53 @@ class BRepApprox_Approx(object):
         :param RelativeTol:
         :type RelativeTol: bool
         :param DegMin:
-        :type DegMin: int
+        :type DegMin: Standard_Integer
         :param DegMax:
-        :type DegMax: int
+        :type DegMax: Standard_Integer
         :param NbIterMax:
-        :type NbIterMax: int
+        :type NbIterMax: Standard_Integer
         :param NbPntMax:
-        :type NbPntMax: int
+        :type NbPntMax: Standard_Integer
+        :param ApproxWithTangency: default value is Standard_True
+        :type ApproxWithTangency: bool
+        :param Parametrization: default value is Approx_ChordLength
+        :type Parametrization: Approx_ParametrizationType
+        :rtype: None
+
+        :param Tol3d:
+        :type Tol3d: float
+        :param Tol2d:
+        :type Tol2d: float
+        :param RelativeTol:
+        :type RelativeTol: bool
+        :param DegMin:
+        :type DegMin: Standard_Integer
+        :param DegMax:
+        :type DegMax: Standard_Integer
+        :param NbIterMax:
+        :type NbIterMax: Standard_Integer
+        :param NbPntMax:
+        :type NbPntMax: Standard_Integer
+        :param ApproxWithTangency: default value is Standard_True
+        :type ApproxWithTangency: bool
+        :param Parametrization: default value is Approx_ChordLength
+        :type Parametrization: Approx_ParametrizationType
+        :rtype: None
+
+        :param Tol3d:
+        :type Tol3d: float
+        :param Tol2d:
+        :type Tol2d: float
+        :param RelativeTol:
+        :type RelativeTol: bool
+        :param DegMin:
+        :type DegMin: Standard_Integer
+        :param DegMax:
+        :type DegMax: Standard_Integer
+        :param NbIterMax:
+        :type NbIterMax: Standard_Integer
+        :param NbPntMax:
+        :type NbPntMax: Standard_Integer
         :param ApproxWithTangency: default value is Standard_True
         :type ApproxWithTangency: bool
         :param Parametrization: default value is Approx_ChordLength
@@ -182,38 +254,38 @@ class BRepApprox_Approx(object):
         """
         return _BRepApprox.BRepApprox_Approx_SetParameters(self, *args)
 
-    def TolReached3d(self, *args) -> "Standard_Real" :
+    def TolReached3d(self):
         """
         :rtype: float
 
         """
-        return _BRepApprox.BRepApprox_Approx_TolReached3d(self, *args)
+        return _BRepApprox.BRepApprox_Approx_TolReached3d(self)
 
-    def TolReached2d(self, *args) -> "Standard_Real" :
+    def TolReached2d(self):
         """
         :rtype: float
 
         """
-        return _BRepApprox.BRepApprox_Approx_TolReached2d(self, *args)
+        return _BRepApprox.BRepApprox_Approx_TolReached2d(self)
 
-    def IsDone(self, *args) -> "Standard_Boolean" :
+    def IsDone(self):
         """
         :rtype: bool
 
         """
-        return _BRepApprox.BRepApprox_Approx_IsDone(self, *args)
+        return _BRepApprox.BRepApprox_Approx_IsDone(self)
 
-    def NbMultiCurves(self, *args) -> "Standard_Integer" :
+    def NbMultiCurves(self):
         """
         :rtype: int
 
         """
-        return _BRepApprox.BRepApprox_Approx_NbMultiCurves(self, *args)
+        return _BRepApprox.BRepApprox_Approx_NbMultiCurves(self)
 
-    def Value(self, *args) -> "AppParCurves_MultiBSpCurve const &" :
+    def Value(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: AppParCurves_MultiBSpCurve
 
         """
@@ -258,27 +330,27 @@ class BRepApprox_ApproxLine(OCC.MMgt.MMgt_TShared):
 
         """
         _BRepApprox.BRepApprox_ApproxLine_swiginit(self,_BRepApprox.new_BRepApprox_ApproxLine(*args))
-    def NbPnts(self, *args) -> "Standard_Integer" :
+    def NbPnts(self):
         """
         :rtype: int
 
         """
-        return _BRepApprox.BRepApprox_ApproxLine_NbPnts(self, *args)
+        return _BRepApprox.BRepApprox_ApproxLine_NbPnts(self)
 
-    def Point(self, *args) -> "IntSurf_PntOn2S" :
+    def Point(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: IntSurf_PntOn2S
 
         """
         return _BRepApprox.BRepApprox_ApproxLine_Point(self, *args)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(BRepApprox_ApproxLine self)"""
         return _BRepApprox.BRepApprox_ApproxLine__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_BRepApprox_ApproxLine" :
+    def GetHandle(self):
         """GetHandle(BRepApprox_ApproxLine self) -> Handle_BRepApprox_ApproxLine"""
         return _BRepApprox.BRepApprox_ApproxLine_GetHandle(self)
 
@@ -318,7 +390,7 @@ Handle_BRepApprox_ApproxLine._kill_pointed = new_instancemethod(_BRepApprox.Hand
 Handle_BRepApprox_ApproxLine_swigregister = _BRepApprox.Handle_BRepApprox_ApproxLine_swigregister
 Handle_BRepApprox_ApproxLine_swigregister(Handle_BRepApprox_ApproxLine)
 
-def Handle_BRepApprox_ApproxLine_DownCast(*args) -> "Handle_BRepApprox_ApproxLine const" :
+def Handle_BRepApprox_ApproxLine_DownCast(*args):
   return _BRepApprox.Handle_BRepApprox_ApproxLine_DownCast(*args)
 Handle_BRepApprox_ApproxLine_DownCast = _BRepApprox.Handle_BRepApprox_ApproxLine_DownCast
 
@@ -338,12 +410,26 @@ class BRepApprox_BSpGradient_BFGSOfMyBSplGradientOfTheComputeLineOfApprox(object
         :param Eps:
         :type Eps: float
         :param NbIterations: default value is 200
-        :type NbIterations: int
+        :type NbIterations: Standard_Integer
+        :rtype: None
+
+        :param F:
+        :type F: math_MultipleVarFunctionWithGradient &
+        :param StartingPoint:
+        :type StartingPoint: math_Vector &
+        :param Tolerance3d:
+        :type Tolerance3d: float
+        :param Tolerance2d:
+        :type Tolerance2d: float
+        :param Eps:
+        :type Eps: float
+        :param NbIterations: default value is 200
+        :type NbIterations: Standard_Integer
         :rtype: None
 
         """
         _BRepApprox.BRepApprox_BSpGradient_BFGSOfMyBSplGradientOfTheComputeLineOfApprox_swiginit(self,_BRepApprox.new_BRepApprox_BSpGradient_BFGSOfMyBSplGradientOfTheComputeLineOfApprox(*args))
-    def IsSolutionReached(self, *args) -> "Standard_Boolean" :
+    def IsSolutionReached(self, *args):
         """
         :param F:
         :type F: math_MultipleVarFunctionWithGradient &
@@ -373,9 +459,9 @@ class BRepApprox_BSpParFunctionOfMyBSplGradientOfTheComputeLineOfApprox(object):
         :param SSP:
         :type SSP: BRepApprox_TheMultiLineOfApprox &
         :param FirstPoint:
-        :type FirstPoint: int
+        :type FirstPoint: Standard_Integer
         :param LastPoint:
-        :type LastPoint: int
+        :type LastPoint: Standard_Integer
         :param TheConstraints:
         :type TheConstraints: Handle_AppParCurves_HArray1OfConstraintCouple &
         :param Parameters:
@@ -385,19 +471,19 @@ class BRepApprox_BSpParFunctionOfMyBSplGradientOfTheComputeLineOfApprox(object):
         :param Mults:
         :type Mults: TColStd_Array1OfInteger &
         :param NbPol:
-        :type NbPol: int
+        :type NbPol: Standard_Integer
         :rtype: None
 
         """
         _BRepApprox.BRepApprox_BSpParFunctionOfMyBSplGradientOfTheComputeLineOfApprox_swiginit(self,_BRepApprox.new_BRepApprox_BSpParFunctionOfMyBSplGradientOfTheComputeLineOfApprox(*args))
-    def NbVariables(self, *args) -> "Standard_Integer" :
+    def NbVariables(self):
         """
         :rtype: int
 
         """
-        return _BRepApprox.BRepApprox_BSpParFunctionOfMyBSplGradientOfTheComputeLineOfApprox_NbVariables(self, *args)
+        return _BRepApprox.BRepApprox_BSpParFunctionOfMyBSplGradientOfTheComputeLineOfApprox_NbVariables(self)
 
-    def Value(self, *args) -> "Standard_Boolean" :
+    def Value(self, *args):
         """
         :param X:
         :type X: math_Vector &
@@ -408,7 +494,7 @@ class BRepApprox_BSpParFunctionOfMyBSplGradientOfTheComputeLineOfApprox(object):
         """
         return _BRepApprox.BRepApprox_BSpParFunctionOfMyBSplGradientOfTheComputeLineOfApprox_Value(self, *args)
 
-    def Gradient(self, *args) -> "Standard_Boolean" :
+    def Gradient(self, *args):
         """
         :param X:
         :type X: math_Vector &
@@ -419,7 +505,7 @@ class BRepApprox_BSpParFunctionOfMyBSplGradientOfTheComputeLineOfApprox(object):
         """
         return _BRepApprox.BRepApprox_BSpParFunctionOfMyBSplGradientOfTheComputeLineOfApprox_Gradient(self, *args)
 
-    def Values(self, *args) -> "Standard_Boolean" :
+    def Values(self, *args):
         """
         :param X:
         :type X: math_Vector &
@@ -432,89 +518,89 @@ class BRepApprox_BSpParFunctionOfMyBSplGradientOfTheComputeLineOfApprox(object):
         """
         return _BRepApprox.BRepApprox_BSpParFunctionOfMyBSplGradientOfTheComputeLineOfApprox_Values(self, *args)
 
-    def NewParameters(self, *args) -> "math_Vector const &" :
+    def NewParameters(self):
         """
         :rtype: math_Vector
 
         """
-        return _BRepApprox.BRepApprox_BSpParFunctionOfMyBSplGradientOfTheComputeLineOfApprox_NewParameters(self, *args)
+        return _BRepApprox.BRepApprox_BSpParFunctionOfMyBSplGradientOfTheComputeLineOfApprox_NewParameters(self)
 
-    def CurveValue(self, *args) -> "AppParCurves_MultiBSpCurve" :
+    def CurveValue(self):
         """
         :rtype: AppParCurves_MultiBSpCurve
 
         """
-        return _BRepApprox.BRepApprox_BSpParFunctionOfMyBSplGradientOfTheComputeLineOfApprox_CurveValue(self, *args)
+        return _BRepApprox.BRepApprox_BSpParFunctionOfMyBSplGradientOfTheComputeLineOfApprox_CurveValue(self)
 
-    def Error(self, *args) -> "Standard_Real" :
+    def Error(self, *args):
         """
         :param IPoint:
-        :type IPoint: int
+        :type IPoint: Standard_Integer
         :param CurveIndex:
-        :type CurveIndex: int
+        :type CurveIndex: Standard_Integer
         :rtype: float
 
         """
         return _BRepApprox.BRepApprox_BSpParFunctionOfMyBSplGradientOfTheComputeLineOfApprox_Error(self, *args)
 
-    def MaxError3d(self, *args) -> "Standard_Real" :
+    def MaxError3d(self):
         """
         :rtype: float
 
         """
-        return _BRepApprox.BRepApprox_BSpParFunctionOfMyBSplGradientOfTheComputeLineOfApprox_MaxError3d(self, *args)
+        return _BRepApprox.BRepApprox_BSpParFunctionOfMyBSplGradientOfTheComputeLineOfApprox_MaxError3d(self)
 
-    def MaxError2d(self, *args) -> "Standard_Real" :
+    def MaxError2d(self):
         """
         :rtype: float
 
         """
-        return _BRepApprox.BRepApprox_BSpParFunctionOfMyBSplGradientOfTheComputeLineOfApprox_MaxError2d(self, *args)
+        return _BRepApprox.BRepApprox_BSpParFunctionOfMyBSplGradientOfTheComputeLineOfApprox_MaxError2d(self)
 
-    def FunctionMatrix(self, *args) -> "math_Matrix const &" :
+    def FunctionMatrix(self):
         """
         :rtype: math_Matrix
 
         """
-        return _BRepApprox.BRepApprox_BSpParFunctionOfMyBSplGradientOfTheComputeLineOfApprox_FunctionMatrix(self, *args)
+        return _BRepApprox.BRepApprox_BSpParFunctionOfMyBSplGradientOfTheComputeLineOfApprox_FunctionMatrix(self)
 
-    def DerivativeFunctionMatrix(self, *args) -> "math_Matrix const &" :
+    def DerivativeFunctionMatrix(self):
         """
         :rtype: math_Matrix
 
         """
-        return _BRepApprox.BRepApprox_BSpParFunctionOfMyBSplGradientOfTheComputeLineOfApprox_DerivativeFunctionMatrix(self, *args)
+        return _BRepApprox.BRepApprox_BSpParFunctionOfMyBSplGradientOfTheComputeLineOfApprox_DerivativeFunctionMatrix(self)
 
-    def Index(self, *args) -> "math_IntegerVector const &" :
+    def Index(self):
         """
         :rtype: math_IntegerVector
 
         """
-        return _BRepApprox.BRepApprox_BSpParFunctionOfMyBSplGradientOfTheComputeLineOfApprox_Index(self, *args)
+        return _BRepApprox.BRepApprox_BSpParFunctionOfMyBSplGradientOfTheComputeLineOfApprox_Index(self)
 
-    def FirstConstraint(self, *args) -> "AppParCurves_Constraint" :
+    def FirstConstraint(self, *args):
         """
         :param TheConstraints:
         :type TheConstraints: Handle_AppParCurves_HArray1OfConstraintCouple &
         :param FirstPoint:
-        :type FirstPoint: int
+        :type FirstPoint: Standard_Integer
         :rtype: AppParCurves_Constraint
 
         """
         return _BRepApprox.BRepApprox_BSpParFunctionOfMyBSplGradientOfTheComputeLineOfApprox_FirstConstraint(self, *args)
 
-    def LastConstraint(self, *args) -> "AppParCurves_Constraint" :
+    def LastConstraint(self, *args):
         """
         :param TheConstraints:
         :type TheConstraints: Handle_AppParCurves_HArray1OfConstraintCouple &
         :param LastPoint:
-        :type LastPoint: int
+        :type LastPoint: Standard_Integer
         :rtype: AppParCurves_Constraint
 
         """
         return _BRepApprox.BRepApprox_BSpParFunctionOfMyBSplGradientOfTheComputeLineOfApprox_LastConstraint(self, *args)
 
-    def SetFirstLambda(self, *args) -> "void" :
+    def SetFirstLambda(self, *args):
         """
         :param l1:
         :type l1: float
@@ -523,7 +609,7 @@ class BRepApprox_BSpParFunctionOfMyBSplGradientOfTheComputeLineOfApprox(object):
         """
         return _BRepApprox.BRepApprox_BSpParFunctionOfMyBSplGradientOfTheComputeLineOfApprox_SetFirstLambda(self, *args)
 
-    def SetLastLambda(self, *args) -> "void" :
+    def SetLastLambda(self, *args):
         """
         :param l2:
         :type l2: float
@@ -568,9 +654,9 @@ class BRepApprox_BSpParLeastSquareOfMyBSplGradientOfTheComputeLineOfApprox(objec
         :param SSP:
         :type SSP: BRepApprox_TheMultiLineOfApprox &
         :param FirstPoint:
-        :type FirstPoint: int
+        :type FirstPoint: Standard_Integer
         :param LastPoint:
-        :type LastPoint: int
+        :type LastPoint: Standard_Integer
         :param FirstCons:
         :type FirstCons: AppParCurves_Constraint
         :param LastCons:
@@ -578,21 +664,21 @@ class BRepApprox_BSpParLeastSquareOfMyBSplGradientOfTheComputeLineOfApprox(objec
         :param Parameters:
         :type Parameters: math_Vector &
         :param NbPol:
-        :type NbPol: int
+        :type NbPol: Standard_Integer
         :rtype: None
 
         :param SSP:
         :type SSP: BRepApprox_TheMultiLineOfApprox &
         :param FirstPoint:
-        :type FirstPoint: int
+        :type FirstPoint: Standard_Integer
         :param LastPoint:
-        :type LastPoint: int
+        :type LastPoint: Standard_Integer
         :param FirstCons:
         :type FirstCons: AppParCurves_Constraint
         :param LastCons:
         :type LastCons: AppParCurves_Constraint
         :param NbPol:
-        :type NbPol: int
+        :type NbPol: Standard_Integer
         :rtype: None
 
         :param SSP:
@@ -602,9 +688,9 @@ class BRepApprox_BSpParLeastSquareOfMyBSplGradientOfTheComputeLineOfApprox(objec
         :param Mults:
         :type Mults: TColStd_Array1OfInteger &
         :param FirstPoint:
-        :type FirstPoint: int
+        :type FirstPoint: Standard_Integer
         :param LastPoint:
-        :type LastPoint: int
+        :type LastPoint: Standard_Integer
         :param FirstCons:
         :type FirstCons: AppParCurves_Constraint
         :param LastCons:
@@ -612,7 +698,7 @@ class BRepApprox_BSpParLeastSquareOfMyBSplGradientOfTheComputeLineOfApprox(objec
         :param Parameters:
         :type Parameters: math_Vector &
         :param NbPol:
-        :type NbPol: int
+        :type NbPol: Standard_Integer
         :rtype: None
 
         :param SSP:
@@ -622,20 +708,20 @@ class BRepApprox_BSpParLeastSquareOfMyBSplGradientOfTheComputeLineOfApprox(objec
         :param Mults:
         :type Mults: TColStd_Array1OfInteger &
         :param FirstPoint:
-        :type FirstPoint: int
+        :type FirstPoint: Standard_Integer
         :param LastPoint:
-        :type LastPoint: int
+        :type LastPoint: Standard_Integer
         :param FirstCons:
         :type FirstCons: AppParCurves_Constraint
         :param LastCons:
         :type LastCons: AppParCurves_Constraint
         :param NbPol:
-        :type NbPol: int
+        :type NbPol: Standard_Integer
         :rtype: None
 
         """
         _BRepApprox.BRepApprox_BSpParLeastSquareOfMyBSplGradientOfTheComputeLineOfApprox_swiginit(self,_BRepApprox.new_BRepApprox_BSpParLeastSquareOfMyBSplGradientOfTheComputeLineOfApprox(*args))
-    def Perform(self, *args) -> "void" :
+    def Perform(self, *args):
         """
         :param Parameters:
         :type Parameters: math_Vector &
@@ -680,42 +766,42 @@ class BRepApprox_BSpParLeastSquareOfMyBSplGradientOfTheComputeLineOfApprox(objec
         """
         return _BRepApprox.BRepApprox_BSpParLeastSquareOfMyBSplGradientOfTheComputeLineOfApprox_Perform(self, *args)
 
-    def IsDone(self, *args) -> "Standard_Boolean" :
+    def IsDone(self):
         """
         :rtype: bool
 
         """
-        return _BRepApprox.BRepApprox_BSpParLeastSquareOfMyBSplGradientOfTheComputeLineOfApprox_IsDone(self, *args)
+        return _BRepApprox.BRepApprox_BSpParLeastSquareOfMyBSplGradientOfTheComputeLineOfApprox_IsDone(self)
 
-    def BezierValue(self, *args) -> "AppParCurves_MultiCurve" :
+    def BezierValue(self):
         """
         :rtype: AppParCurves_MultiCurve
 
         """
-        return _BRepApprox.BRepApprox_BSpParLeastSquareOfMyBSplGradientOfTheComputeLineOfApprox_BezierValue(self, *args)
+        return _BRepApprox.BRepApprox_BSpParLeastSquareOfMyBSplGradientOfTheComputeLineOfApprox_BezierValue(self)
 
-    def BSplineValue(self, *args) -> "AppParCurves_MultiBSpCurve const &" :
+    def BSplineValue(self):
         """
         :rtype: AppParCurves_MultiBSpCurve
 
         """
-        return _BRepApprox.BRepApprox_BSpParLeastSquareOfMyBSplGradientOfTheComputeLineOfApprox_BSplineValue(self, *args)
+        return _BRepApprox.BRepApprox_BSpParLeastSquareOfMyBSplGradientOfTheComputeLineOfApprox_BSplineValue(self)
 
-    def FunctionMatrix(self, *args) -> "math_Matrix const &" :
+    def FunctionMatrix(self):
         """
         :rtype: math_Matrix
 
         """
-        return _BRepApprox.BRepApprox_BSpParLeastSquareOfMyBSplGradientOfTheComputeLineOfApprox_FunctionMatrix(self, *args)
+        return _BRepApprox.BRepApprox_BSpParLeastSquareOfMyBSplGradientOfTheComputeLineOfApprox_FunctionMatrix(self)
 
-    def DerivativeFunctionMatrix(self, *args) -> "math_Matrix const &" :
+    def DerivativeFunctionMatrix(self):
         """
         :rtype: math_Matrix
 
         """
-        return _BRepApprox.BRepApprox_BSpParLeastSquareOfMyBSplGradientOfTheComputeLineOfApprox_DerivativeFunctionMatrix(self, *args)
+        return _BRepApprox.BRepApprox_BSpParLeastSquareOfMyBSplGradientOfTheComputeLineOfApprox_DerivativeFunctionMatrix(self)
 
-    def ErrorGradient(self, *args) -> "void" :
+    def ErrorGradient(self, *args):
         """
         :param Grad:
         :type Grad: math_Vector &
@@ -730,14 +816,14 @@ class BRepApprox_BSpParLeastSquareOfMyBSplGradientOfTheComputeLineOfApprox(objec
         """
         return _BRepApprox.BRepApprox_BSpParLeastSquareOfMyBSplGradientOfTheComputeLineOfApprox_ErrorGradient(self, *args)
 
-    def Distance(self, *args) -> "math_Matrix const &" :
+    def Distance(self):
         """
         :rtype: math_Matrix
 
         """
-        return _BRepApprox.BRepApprox_BSpParLeastSquareOfMyBSplGradientOfTheComputeLineOfApprox_Distance(self, *args)
+        return _BRepApprox.BRepApprox_BSpParLeastSquareOfMyBSplGradientOfTheComputeLineOfApprox_Distance(self)
 
-    def Error(self, *args) -> "void" :
+    def Error(self):
         """
         :param F:
         :type F: float &
@@ -748,42 +834,42 @@ class BRepApprox_BSpParLeastSquareOfMyBSplGradientOfTheComputeLineOfApprox(objec
         :rtype: None
 
         """
-        return _BRepApprox.BRepApprox_BSpParLeastSquareOfMyBSplGradientOfTheComputeLineOfApprox_Error(self, *args)
+        return _BRepApprox.BRepApprox_BSpParLeastSquareOfMyBSplGradientOfTheComputeLineOfApprox_Error(self)
 
-    def FirstLambda(self, *args) -> "Standard_Real" :
+    def FirstLambda(self):
         """
         :rtype: float
 
         """
-        return _BRepApprox.BRepApprox_BSpParLeastSquareOfMyBSplGradientOfTheComputeLineOfApprox_FirstLambda(self, *args)
+        return _BRepApprox.BRepApprox_BSpParLeastSquareOfMyBSplGradientOfTheComputeLineOfApprox_FirstLambda(self)
 
-    def LastLambda(self, *args) -> "Standard_Real" :
+    def LastLambda(self):
         """
         :rtype: float
 
         """
-        return _BRepApprox.BRepApprox_BSpParLeastSquareOfMyBSplGradientOfTheComputeLineOfApprox_LastLambda(self, *args)
+        return _BRepApprox.BRepApprox_BSpParLeastSquareOfMyBSplGradientOfTheComputeLineOfApprox_LastLambda(self)
 
-    def Points(self, *args) -> "math_Matrix const &" :
+    def Points(self):
         """
         :rtype: math_Matrix
 
         """
-        return _BRepApprox.BRepApprox_BSpParLeastSquareOfMyBSplGradientOfTheComputeLineOfApprox_Points(self, *args)
+        return _BRepApprox.BRepApprox_BSpParLeastSquareOfMyBSplGradientOfTheComputeLineOfApprox_Points(self)
 
-    def Poles(self, *args) -> "math_Matrix const &" :
+    def Poles(self):
         """
         :rtype: math_Matrix
 
         """
-        return _BRepApprox.BRepApprox_BSpParLeastSquareOfMyBSplGradientOfTheComputeLineOfApprox_Poles(self, *args)
+        return _BRepApprox.BRepApprox_BSpParLeastSquareOfMyBSplGradientOfTheComputeLineOfApprox_Poles(self)
 
-    def KIndex(self, *args) -> "math_IntegerVector const &" :
+    def KIndex(self):
         """
         :rtype: math_IntegerVector
 
         """
-        return _BRepApprox.BRepApprox_BSpParLeastSquareOfMyBSplGradientOfTheComputeLineOfApprox_KIndex(self, *args)
+        return _BRepApprox.BRepApprox_BSpParLeastSquareOfMyBSplGradientOfTheComputeLineOfApprox_KIndex(self)
 
     def __del__(self):
     	try:
@@ -827,12 +913,26 @@ class BRepApprox_Gradient_BFGSOfMyGradientOfTheComputeLineBezierOfApprox(object)
         :param Eps:
         :type Eps: float
         :param NbIterations: default value is 200
-        :type NbIterations: int
+        :type NbIterations: Standard_Integer
+        :rtype: None
+
+        :param F:
+        :type F: math_MultipleVarFunctionWithGradient &
+        :param StartingPoint:
+        :type StartingPoint: math_Vector &
+        :param Tolerance3d:
+        :type Tolerance3d: float
+        :param Tolerance2d:
+        :type Tolerance2d: float
+        :param Eps:
+        :type Eps: float
+        :param NbIterations: default value is 200
+        :type NbIterations: Standard_Integer
         :rtype: None
 
         """
         _BRepApprox.BRepApprox_Gradient_BFGSOfMyGradientOfTheComputeLineBezierOfApprox_swiginit(self,_BRepApprox.new_BRepApprox_Gradient_BFGSOfMyGradientOfTheComputeLineBezierOfApprox(*args))
-    def IsSolutionReached(self, *args) -> "Standard_Boolean" :
+    def IsSolutionReached(self, *args):
         """
         :param F:
         :type F: math_MultipleVarFunctionWithGradient &
@@ -870,12 +970,26 @@ class BRepApprox_Gradient_BFGSOfMyGradientbisOfTheComputeLineOfApprox(object):
         :param Eps:
         :type Eps: float
         :param NbIterations: default value is 200
-        :type NbIterations: int
+        :type NbIterations: Standard_Integer
+        :rtype: None
+
+        :param F:
+        :type F: math_MultipleVarFunctionWithGradient &
+        :param StartingPoint:
+        :type StartingPoint: math_Vector &
+        :param Tolerance3d:
+        :type Tolerance3d: float
+        :param Tolerance2d:
+        :type Tolerance2d: float
+        :param Eps:
+        :type Eps: float
+        :param NbIterations: default value is 200
+        :type NbIterations: Standard_Integer
         :rtype: None
 
         """
         _BRepApprox.BRepApprox_Gradient_BFGSOfMyGradientbisOfTheComputeLineOfApprox_swiginit(self,_BRepApprox.new_BRepApprox_Gradient_BFGSOfMyGradientbisOfTheComputeLineOfApprox(*args))
-    def IsSolutionReached(self, *args) -> "Standard_Boolean" :
+    def IsSolutionReached(self, *args):
         """
         :param F:
         :type F: math_MultipleVarFunctionWithGradient &
@@ -905,9 +1019,9 @@ class BRepApprox_MyBSplGradientOfTheComputeLineOfApprox(object):
         :param SSP:
         :type SSP: BRepApprox_TheMultiLineOfApprox &
         :param FirstPoint:
-        :type FirstPoint: int
+        :type FirstPoint: Standard_Integer
         :param LastPoint:
-        :type LastPoint: int
+        :type LastPoint: Standard_Integer
         :param TheConstraints:
         :type TheConstraints: Handle_AppParCurves_HArray1OfConstraintCouple &
         :param Parameters:
@@ -917,21 +1031,21 @@ class BRepApprox_MyBSplGradientOfTheComputeLineOfApprox(object):
         :param Mults:
         :type Mults: TColStd_Array1OfInteger &
         :param Deg:
-        :type Deg: int
+        :type Deg: Standard_Integer
         :param Tol3d:
         :type Tol3d: float
         :param Tol2d:
         :type Tol2d: float
         :param NbIterations: default value is 1
-        :type NbIterations: int
+        :type NbIterations: Standard_Integer
         :rtype: None
 
         :param SSP:
         :type SSP: BRepApprox_TheMultiLineOfApprox &
         :param FirstPoint:
-        :type FirstPoint: int
+        :type FirstPoint: Standard_Integer
         :param LastPoint:
-        :type LastPoint: int
+        :type LastPoint: Standard_Integer
         :param TheConstraints:
         :type TheConstraints: Handle_AppParCurves_HArray1OfConstraintCouple &
         :param Parameters:
@@ -941,13 +1055,37 @@ class BRepApprox_MyBSplGradientOfTheComputeLineOfApprox(object):
         :param Mults:
         :type Mults: TColStd_Array1OfInteger &
         :param Deg:
-        :type Deg: int
+        :type Deg: Standard_Integer
+        :param Tol3d:
+        :type Tol3d: float
+        :param Tol2d:
+        :type Tol2d: float
+        :param NbIterations: default value is 1
+        :type NbIterations: Standard_Integer
+        :rtype: None
+
+        :param SSP:
+        :type SSP: BRepApprox_TheMultiLineOfApprox &
+        :param FirstPoint:
+        :type FirstPoint: Standard_Integer
+        :param LastPoint:
+        :type LastPoint: Standard_Integer
+        :param TheConstraints:
+        :type TheConstraints: Handle_AppParCurves_HArray1OfConstraintCouple &
+        :param Parameters:
+        :type Parameters: math_Vector &
+        :param Knots:
+        :type Knots: TColStd_Array1OfReal &
+        :param Mults:
+        :type Mults: TColStd_Array1OfInteger &
+        :param Deg:
+        :type Deg: Standard_Integer
         :param Tol3d:
         :type Tol3d: float
         :param Tol2d:
         :type Tol2d: float
         :param NbIterations:
-        :type NbIterations: int
+        :type NbIterations: Standard_Integer
         :param lambda1:
         :type lambda1: float
         :param lambda2:
@@ -956,49 +1094,49 @@ class BRepApprox_MyBSplGradientOfTheComputeLineOfApprox(object):
 
         """
         _BRepApprox.BRepApprox_MyBSplGradientOfTheComputeLineOfApprox_swiginit(self,_BRepApprox.new_BRepApprox_MyBSplGradientOfTheComputeLineOfApprox(*args))
-    def IsDone(self, *args) -> "Standard_Boolean" :
+    def IsDone(self):
         """
         :rtype: bool
 
         """
-        return _BRepApprox.BRepApprox_MyBSplGradientOfTheComputeLineOfApprox_IsDone(self, *args)
+        return _BRepApprox.BRepApprox_MyBSplGradientOfTheComputeLineOfApprox_IsDone(self)
 
-    def Value(self, *args) -> "AppParCurves_MultiBSpCurve" :
+    def Value(self):
         """
         :rtype: AppParCurves_MultiBSpCurve
 
         """
-        return _BRepApprox.BRepApprox_MyBSplGradientOfTheComputeLineOfApprox_Value(self, *args)
+        return _BRepApprox.BRepApprox_MyBSplGradientOfTheComputeLineOfApprox_Value(self)
 
-    def Error(self, *args) -> "Standard_Real" :
+    def Error(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: float
 
         """
         return _BRepApprox.BRepApprox_MyBSplGradientOfTheComputeLineOfApprox_Error(self, *args)
 
-    def MaxError3d(self, *args) -> "Standard_Real" :
+    def MaxError3d(self):
         """
         :rtype: float
 
         """
-        return _BRepApprox.BRepApprox_MyBSplGradientOfTheComputeLineOfApprox_MaxError3d(self, *args)
+        return _BRepApprox.BRepApprox_MyBSplGradientOfTheComputeLineOfApprox_MaxError3d(self)
 
-    def MaxError2d(self, *args) -> "Standard_Real" :
+    def MaxError2d(self):
         """
         :rtype: float
 
         """
-        return _BRepApprox.BRepApprox_MyBSplGradientOfTheComputeLineOfApprox_MaxError2d(self, *args)
+        return _BRepApprox.BRepApprox_MyBSplGradientOfTheComputeLineOfApprox_MaxError2d(self)
 
-    def AverageError(self, *args) -> "Standard_Real" :
+    def AverageError(self):
         """
         :rtype: float
 
         """
-        return _BRepApprox.BRepApprox_MyBSplGradientOfTheComputeLineOfApprox_AverageError(self, *args)
+        return _BRepApprox.BRepApprox_MyBSplGradientOfTheComputeLineOfApprox_AverageError(self)
 
     def __del__(self):
     	try:
@@ -1026,68 +1164,88 @@ class BRepApprox_MyGradientOfTheComputeLineBezierOfApprox(object):
         :param SSP:
         :type SSP: BRepApprox_TheMultiLineOfApprox &
         :param FirstPoint:
-        :type FirstPoint: int
+        :type FirstPoint: Standard_Integer
         :param LastPoint:
-        :type LastPoint: int
+        :type LastPoint: Standard_Integer
         :param TheConstraints:
         :type TheConstraints: Handle_AppParCurves_HArray1OfConstraintCouple &
         :param Parameters:
         :type Parameters: math_Vector &
         :param Deg:
-        :type Deg: int
+        :type Deg: Standard_Integer
         :param Tol3d:
         :type Tol3d: float
         :param Tol2d:
         :type Tol2d: float
         :param NbIterations: default value is 200
-        :type NbIterations: int
+        :type NbIterations: Standard_Integer
+        :rtype: None
+
+        :param SSP:
+        :type SSP: BRepApprox_TheMultiLineOfApprox &
+        :param FirstPoint:
+        :type FirstPoint: Standard_Integer
+        :param LastPoint:
+        :type LastPoint: Standard_Integer
+        :param TheConstraints:
+        :type TheConstraints: Handle_AppParCurves_HArray1OfConstraintCouple &
+        :param Parameters:
+        :type Parameters: math_Vector &
+        :param Deg:
+        :type Deg: Standard_Integer
+        :param Tol3d:
+        :type Tol3d: float
+        :param Tol2d:
+        :type Tol2d: float
+        :param NbIterations: default value is 200
+        :type NbIterations: Standard_Integer
         :rtype: None
 
         """
         _BRepApprox.BRepApprox_MyGradientOfTheComputeLineBezierOfApprox_swiginit(self,_BRepApprox.new_BRepApprox_MyGradientOfTheComputeLineBezierOfApprox(*args))
-    def IsDone(self, *args) -> "Standard_Boolean" :
+    def IsDone(self):
         """
         :rtype: bool
 
         """
-        return _BRepApprox.BRepApprox_MyGradientOfTheComputeLineBezierOfApprox_IsDone(self, *args)
+        return _BRepApprox.BRepApprox_MyGradientOfTheComputeLineBezierOfApprox_IsDone(self)
 
-    def Value(self, *args) -> "AppParCurves_MultiCurve" :
+    def Value(self):
         """
         :rtype: AppParCurves_MultiCurve
 
         """
-        return _BRepApprox.BRepApprox_MyGradientOfTheComputeLineBezierOfApprox_Value(self, *args)
+        return _BRepApprox.BRepApprox_MyGradientOfTheComputeLineBezierOfApprox_Value(self)
 
-    def Error(self, *args) -> "Standard_Real" :
+    def Error(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: float
 
         """
         return _BRepApprox.BRepApprox_MyGradientOfTheComputeLineBezierOfApprox_Error(self, *args)
 
-    def MaxError3d(self, *args) -> "Standard_Real" :
+    def MaxError3d(self):
         """
         :rtype: float
 
         """
-        return _BRepApprox.BRepApprox_MyGradientOfTheComputeLineBezierOfApprox_MaxError3d(self, *args)
+        return _BRepApprox.BRepApprox_MyGradientOfTheComputeLineBezierOfApprox_MaxError3d(self)
 
-    def MaxError2d(self, *args) -> "Standard_Real" :
+    def MaxError2d(self):
         """
         :rtype: float
 
         """
-        return _BRepApprox.BRepApprox_MyGradientOfTheComputeLineBezierOfApprox_MaxError2d(self, *args)
+        return _BRepApprox.BRepApprox_MyGradientOfTheComputeLineBezierOfApprox_MaxError2d(self)
 
-    def AverageError(self, *args) -> "Standard_Real" :
+    def AverageError(self):
         """
         :rtype: float
 
         """
-        return _BRepApprox.BRepApprox_MyGradientOfTheComputeLineBezierOfApprox_AverageError(self, *args)
+        return _BRepApprox.BRepApprox_MyGradientOfTheComputeLineBezierOfApprox_AverageError(self)
 
     def __del__(self):
     	try:
@@ -1115,68 +1273,88 @@ class BRepApprox_MyGradientbisOfTheComputeLineOfApprox(object):
         :param SSP:
         :type SSP: BRepApprox_TheMultiLineOfApprox &
         :param FirstPoint:
-        :type FirstPoint: int
+        :type FirstPoint: Standard_Integer
         :param LastPoint:
-        :type LastPoint: int
+        :type LastPoint: Standard_Integer
         :param TheConstraints:
         :type TheConstraints: Handle_AppParCurves_HArray1OfConstraintCouple &
         :param Parameters:
         :type Parameters: math_Vector &
         :param Deg:
-        :type Deg: int
+        :type Deg: Standard_Integer
         :param Tol3d:
         :type Tol3d: float
         :param Tol2d:
         :type Tol2d: float
         :param NbIterations: default value is 200
-        :type NbIterations: int
+        :type NbIterations: Standard_Integer
+        :rtype: None
+
+        :param SSP:
+        :type SSP: BRepApprox_TheMultiLineOfApprox &
+        :param FirstPoint:
+        :type FirstPoint: Standard_Integer
+        :param LastPoint:
+        :type LastPoint: Standard_Integer
+        :param TheConstraints:
+        :type TheConstraints: Handle_AppParCurves_HArray1OfConstraintCouple &
+        :param Parameters:
+        :type Parameters: math_Vector &
+        :param Deg:
+        :type Deg: Standard_Integer
+        :param Tol3d:
+        :type Tol3d: float
+        :param Tol2d:
+        :type Tol2d: float
+        :param NbIterations: default value is 200
+        :type NbIterations: Standard_Integer
         :rtype: None
 
         """
         _BRepApprox.BRepApprox_MyGradientbisOfTheComputeLineOfApprox_swiginit(self,_BRepApprox.new_BRepApprox_MyGradientbisOfTheComputeLineOfApprox(*args))
-    def IsDone(self, *args) -> "Standard_Boolean" :
+    def IsDone(self):
         """
         :rtype: bool
 
         """
-        return _BRepApprox.BRepApprox_MyGradientbisOfTheComputeLineOfApprox_IsDone(self, *args)
+        return _BRepApprox.BRepApprox_MyGradientbisOfTheComputeLineOfApprox_IsDone(self)
 
-    def Value(self, *args) -> "AppParCurves_MultiCurve" :
+    def Value(self):
         """
         :rtype: AppParCurves_MultiCurve
 
         """
-        return _BRepApprox.BRepApprox_MyGradientbisOfTheComputeLineOfApprox_Value(self, *args)
+        return _BRepApprox.BRepApprox_MyGradientbisOfTheComputeLineOfApprox_Value(self)
 
-    def Error(self, *args) -> "Standard_Real" :
+    def Error(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: float
 
         """
         return _BRepApprox.BRepApprox_MyGradientbisOfTheComputeLineOfApprox_Error(self, *args)
 
-    def MaxError3d(self, *args) -> "Standard_Real" :
+    def MaxError3d(self):
         """
         :rtype: float
 
         """
-        return _BRepApprox.BRepApprox_MyGradientbisOfTheComputeLineOfApprox_MaxError3d(self, *args)
+        return _BRepApprox.BRepApprox_MyGradientbisOfTheComputeLineOfApprox_MaxError3d(self)
 
-    def MaxError2d(self, *args) -> "Standard_Real" :
+    def MaxError2d(self):
         """
         :rtype: float
 
         """
-        return _BRepApprox.BRepApprox_MyGradientbisOfTheComputeLineOfApprox_MaxError2d(self, *args)
+        return _BRepApprox.BRepApprox_MyGradientbisOfTheComputeLineOfApprox_MaxError2d(self)
 
-    def AverageError(self, *args) -> "Standard_Real" :
+    def AverageError(self):
         """
         :rtype: float
 
         """
-        return _BRepApprox.BRepApprox_MyGradientbisOfTheComputeLineOfApprox_AverageError(self, *args)
+        return _BRepApprox.BRepApprox_MyGradientbisOfTheComputeLineOfApprox_AverageError(self)
 
     def __del__(self):
     	try:
@@ -1204,27 +1382,27 @@ class BRepApprox_ParFunctionOfMyGradientOfTheComputeLineBezierOfApprox(object):
         :param SSP:
         :type SSP: BRepApprox_TheMultiLineOfApprox &
         :param FirstPoint:
-        :type FirstPoint: int
+        :type FirstPoint: Standard_Integer
         :param LastPoint:
-        :type LastPoint: int
+        :type LastPoint: Standard_Integer
         :param TheConstraints:
         :type TheConstraints: Handle_AppParCurves_HArray1OfConstraintCouple &
         :param Parameters:
         :type Parameters: math_Vector &
         :param Deg:
-        :type Deg: int
+        :type Deg: Standard_Integer
         :rtype: None
 
         """
         _BRepApprox.BRepApprox_ParFunctionOfMyGradientOfTheComputeLineBezierOfApprox_swiginit(self,_BRepApprox.new_BRepApprox_ParFunctionOfMyGradientOfTheComputeLineBezierOfApprox(*args))
-    def NbVariables(self, *args) -> "Standard_Integer" :
+    def NbVariables(self):
         """
         :rtype: int
 
         """
-        return _BRepApprox.BRepApprox_ParFunctionOfMyGradientOfTheComputeLineBezierOfApprox_NbVariables(self, *args)
+        return _BRepApprox.BRepApprox_ParFunctionOfMyGradientOfTheComputeLineBezierOfApprox_NbVariables(self)
 
-    def Value(self, *args) -> "Standard_Boolean" :
+    def Value(self, *args):
         """
         :param X:
         :type X: math_Vector &
@@ -1235,7 +1413,7 @@ class BRepApprox_ParFunctionOfMyGradientOfTheComputeLineBezierOfApprox(object):
         """
         return _BRepApprox.BRepApprox_ParFunctionOfMyGradientOfTheComputeLineBezierOfApprox_Value(self, *args)
 
-    def Gradient(self, *args) -> "Standard_Boolean" :
+    def Gradient(self, *args):
         """
         :param X:
         :type X: math_Vector &
@@ -1246,7 +1424,7 @@ class BRepApprox_ParFunctionOfMyGradientOfTheComputeLineBezierOfApprox(object):
         """
         return _BRepApprox.BRepApprox_ParFunctionOfMyGradientOfTheComputeLineBezierOfApprox_Gradient(self, *args)
 
-    def Values(self, *args) -> "Standard_Boolean" :
+    def Values(self, *args):
         """
         :param X:
         :type X: math_Vector &
@@ -1259,62 +1437,62 @@ class BRepApprox_ParFunctionOfMyGradientOfTheComputeLineBezierOfApprox(object):
         """
         return _BRepApprox.BRepApprox_ParFunctionOfMyGradientOfTheComputeLineBezierOfApprox_Values(self, *args)
 
-    def NewParameters(self, *args) -> "math_Vector const &" :
+    def NewParameters(self):
         """
         :rtype: math_Vector
 
         """
-        return _BRepApprox.BRepApprox_ParFunctionOfMyGradientOfTheComputeLineBezierOfApprox_NewParameters(self, *args)
+        return _BRepApprox.BRepApprox_ParFunctionOfMyGradientOfTheComputeLineBezierOfApprox_NewParameters(self)
 
-    def CurveValue(self, *args) -> "AppParCurves_MultiCurve const &" :
+    def CurveValue(self):
         """
         :rtype: AppParCurves_MultiCurve
 
         """
-        return _BRepApprox.BRepApprox_ParFunctionOfMyGradientOfTheComputeLineBezierOfApprox_CurveValue(self, *args)
+        return _BRepApprox.BRepApprox_ParFunctionOfMyGradientOfTheComputeLineBezierOfApprox_CurveValue(self)
 
-    def Error(self, *args) -> "Standard_Real" :
+    def Error(self, *args):
         """
         :param IPoint:
-        :type IPoint: int
+        :type IPoint: Standard_Integer
         :param CurveIndex:
-        :type CurveIndex: int
+        :type CurveIndex: Standard_Integer
         :rtype: float
 
         """
         return _BRepApprox.BRepApprox_ParFunctionOfMyGradientOfTheComputeLineBezierOfApprox_Error(self, *args)
 
-    def MaxError3d(self, *args) -> "Standard_Real" :
+    def MaxError3d(self):
         """
         :rtype: float
 
         """
-        return _BRepApprox.BRepApprox_ParFunctionOfMyGradientOfTheComputeLineBezierOfApprox_MaxError3d(self, *args)
+        return _BRepApprox.BRepApprox_ParFunctionOfMyGradientOfTheComputeLineBezierOfApprox_MaxError3d(self)
 
-    def MaxError2d(self, *args) -> "Standard_Real" :
+    def MaxError2d(self):
         """
         :rtype: float
 
         """
-        return _BRepApprox.BRepApprox_ParFunctionOfMyGradientOfTheComputeLineBezierOfApprox_MaxError2d(self, *args)
+        return _BRepApprox.BRepApprox_ParFunctionOfMyGradientOfTheComputeLineBezierOfApprox_MaxError2d(self)
 
-    def FirstConstraint(self, *args) -> "AppParCurves_Constraint" :
+    def FirstConstraint(self, *args):
         """
         :param TheConstraints:
         :type TheConstraints: Handle_AppParCurves_HArray1OfConstraintCouple &
         :param FirstPoint:
-        :type FirstPoint: int
+        :type FirstPoint: Standard_Integer
         :rtype: AppParCurves_Constraint
 
         """
         return _BRepApprox.BRepApprox_ParFunctionOfMyGradientOfTheComputeLineBezierOfApprox_FirstConstraint(self, *args)
 
-    def LastConstraint(self, *args) -> "AppParCurves_Constraint" :
+    def LastConstraint(self, *args):
         """
         :param TheConstraints:
         :type TheConstraints: Handle_AppParCurves_HArray1OfConstraintCouple &
         :param LastPoint:
-        :type LastPoint: int
+        :type LastPoint: Standard_Integer
         :rtype: AppParCurves_Constraint
 
         """
@@ -1351,27 +1529,27 @@ class BRepApprox_ParFunctionOfMyGradientbisOfTheComputeLineOfApprox(object):
         :param SSP:
         :type SSP: BRepApprox_TheMultiLineOfApprox &
         :param FirstPoint:
-        :type FirstPoint: int
+        :type FirstPoint: Standard_Integer
         :param LastPoint:
-        :type LastPoint: int
+        :type LastPoint: Standard_Integer
         :param TheConstraints:
         :type TheConstraints: Handle_AppParCurves_HArray1OfConstraintCouple &
         :param Parameters:
         :type Parameters: math_Vector &
         :param Deg:
-        :type Deg: int
+        :type Deg: Standard_Integer
         :rtype: None
 
         """
         _BRepApprox.BRepApprox_ParFunctionOfMyGradientbisOfTheComputeLineOfApprox_swiginit(self,_BRepApprox.new_BRepApprox_ParFunctionOfMyGradientbisOfTheComputeLineOfApprox(*args))
-    def NbVariables(self, *args) -> "Standard_Integer" :
+    def NbVariables(self):
         """
         :rtype: int
 
         """
-        return _BRepApprox.BRepApprox_ParFunctionOfMyGradientbisOfTheComputeLineOfApprox_NbVariables(self, *args)
+        return _BRepApprox.BRepApprox_ParFunctionOfMyGradientbisOfTheComputeLineOfApprox_NbVariables(self)
 
-    def Value(self, *args) -> "Standard_Boolean" :
+    def Value(self, *args):
         """
         :param X:
         :type X: math_Vector &
@@ -1382,7 +1560,7 @@ class BRepApprox_ParFunctionOfMyGradientbisOfTheComputeLineOfApprox(object):
         """
         return _BRepApprox.BRepApprox_ParFunctionOfMyGradientbisOfTheComputeLineOfApprox_Value(self, *args)
 
-    def Gradient(self, *args) -> "Standard_Boolean" :
+    def Gradient(self, *args):
         """
         :param X:
         :type X: math_Vector &
@@ -1393,7 +1571,7 @@ class BRepApprox_ParFunctionOfMyGradientbisOfTheComputeLineOfApprox(object):
         """
         return _BRepApprox.BRepApprox_ParFunctionOfMyGradientbisOfTheComputeLineOfApprox_Gradient(self, *args)
 
-    def Values(self, *args) -> "Standard_Boolean" :
+    def Values(self, *args):
         """
         :param X:
         :type X: math_Vector &
@@ -1406,62 +1584,62 @@ class BRepApprox_ParFunctionOfMyGradientbisOfTheComputeLineOfApprox(object):
         """
         return _BRepApprox.BRepApprox_ParFunctionOfMyGradientbisOfTheComputeLineOfApprox_Values(self, *args)
 
-    def NewParameters(self, *args) -> "math_Vector const &" :
+    def NewParameters(self):
         """
         :rtype: math_Vector
 
         """
-        return _BRepApprox.BRepApprox_ParFunctionOfMyGradientbisOfTheComputeLineOfApprox_NewParameters(self, *args)
+        return _BRepApprox.BRepApprox_ParFunctionOfMyGradientbisOfTheComputeLineOfApprox_NewParameters(self)
 
-    def CurveValue(self, *args) -> "AppParCurves_MultiCurve const &" :
+    def CurveValue(self):
         """
         :rtype: AppParCurves_MultiCurve
 
         """
-        return _BRepApprox.BRepApprox_ParFunctionOfMyGradientbisOfTheComputeLineOfApprox_CurveValue(self, *args)
+        return _BRepApprox.BRepApprox_ParFunctionOfMyGradientbisOfTheComputeLineOfApprox_CurveValue(self)
 
-    def Error(self, *args) -> "Standard_Real" :
+    def Error(self, *args):
         """
         :param IPoint:
-        :type IPoint: int
+        :type IPoint: Standard_Integer
         :param CurveIndex:
-        :type CurveIndex: int
+        :type CurveIndex: Standard_Integer
         :rtype: float
 
         """
         return _BRepApprox.BRepApprox_ParFunctionOfMyGradientbisOfTheComputeLineOfApprox_Error(self, *args)
 
-    def MaxError3d(self, *args) -> "Standard_Real" :
+    def MaxError3d(self):
         """
         :rtype: float
 
         """
-        return _BRepApprox.BRepApprox_ParFunctionOfMyGradientbisOfTheComputeLineOfApprox_MaxError3d(self, *args)
+        return _BRepApprox.BRepApprox_ParFunctionOfMyGradientbisOfTheComputeLineOfApprox_MaxError3d(self)
 
-    def MaxError2d(self, *args) -> "Standard_Real" :
+    def MaxError2d(self):
         """
         :rtype: float
 
         """
-        return _BRepApprox.BRepApprox_ParFunctionOfMyGradientbisOfTheComputeLineOfApprox_MaxError2d(self, *args)
+        return _BRepApprox.BRepApprox_ParFunctionOfMyGradientbisOfTheComputeLineOfApprox_MaxError2d(self)
 
-    def FirstConstraint(self, *args) -> "AppParCurves_Constraint" :
+    def FirstConstraint(self, *args):
         """
         :param TheConstraints:
         :type TheConstraints: Handle_AppParCurves_HArray1OfConstraintCouple &
         :param FirstPoint:
-        :type FirstPoint: int
+        :type FirstPoint: Standard_Integer
         :rtype: AppParCurves_Constraint
 
         """
         return _BRepApprox.BRepApprox_ParFunctionOfMyGradientbisOfTheComputeLineOfApprox_FirstConstraint(self, *args)
 
-    def LastConstraint(self, *args) -> "AppParCurves_Constraint" :
+    def LastConstraint(self, *args):
         """
         :param TheConstraints:
         :type TheConstraints: Handle_AppParCurves_HArray1OfConstraintCouple &
         :param LastPoint:
-        :type LastPoint: int
+        :type LastPoint: Standard_Integer
         :rtype: AppParCurves_Constraint
 
         """
@@ -1498,9 +1676,9 @@ class BRepApprox_ParLeastSquareOfMyGradientOfTheComputeLineBezierOfApprox(object
         :param SSP:
         :type SSP: BRepApprox_TheMultiLineOfApprox &
         :param FirstPoint:
-        :type FirstPoint: int
+        :type FirstPoint: Standard_Integer
         :param LastPoint:
-        :type LastPoint: int
+        :type LastPoint: Standard_Integer
         :param FirstCons:
         :type FirstCons: AppParCurves_Constraint
         :param LastCons:
@@ -1508,21 +1686,21 @@ class BRepApprox_ParLeastSquareOfMyGradientOfTheComputeLineBezierOfApprox(object
         :param Parameters:
         :type Parameters: math_Vector &
         :param NbPol:
-        :type NbPol: int
+        :type NbPol: Standard_Integer
         :rtype: None
 
         :param SSP:
         :type SSP: BRepApprox_TheMultiLineOfApprox &
         :param FirstPoint:
-        :type FirstPoint: int
+        :type FirstPoint: Standard_Integer
         :param LastPoint:
-        :type LastPoint: int
+        :type LastPoint: Standard_Integer
         :param FirstCons:
         :type FirstCons: AppParCurves_Constraint
         :param LastCons:
         :type LastCons: AppParCurves_Constraint
         :param NbPol:
-        :type NbPol: int
+        :type NbPol: Standard_Integer
         :rtype: None
 
         :param SSP:
@@ -1532,9 +1710,9 @@ class BRepApprox_ParLeastSquareOfMyGradientOfTheComputeLineBezierOfApprox(object
         :param Mults:
         :type Mults: TColStd_Array1OfInteger &
         :param FirstPoint:
-        :type FirstPoint: int
+        :type FirstPoint: Standard_Integer
         :param LastPoint:
-        :type LastPoint: int
+        :type LastPoint: Standard_Integer
         :param FirstCons:
         :type FirstCons: AppParCurves_Constraint
         :param LastCons:
@@ -1542,7 +1720,7 @@ class BRepApprox_ParLeastSquareOfMyGradientOfTheComputeLineBezierOfApprox(object
         :param Parameters:
         :type Parameters: math_Vector &
         :param NbPol:
-        :type NbPol: int
+        :type NbPol: Standard_Integer
         :rtype: None
 
         :param SSP:
@@ -1552,20 +1730,20 @@ class BRepApprox_ParLeastSquareOfMyGradientOfTheComputeLineBezierOfApprox(object
         :param Mults:
         :type Mults: TColStd_Array1OfInteger &
         :param FirstPoint:
-        :type FirstPoint: int
+        :type FirstPoint: Standard_Integer
         :param LastPoint:
-        :type LastPoint: int
+        :type LastPoint: Standard_Integer
         :param FirstCons:
         :type FirstCons: AppParCurves_Constraint
         :param LastCons:
         :type LastCons: AppParCurves_Constraint
         :param NbPol:
-        :type NbPol: int
+        :type NbPol: Standard_Integer
         :rtype: None
 
         """
         _BRepApprox.BRepApprox_ParLeastSquareOfMyGradientOfTheComputeLineBezierOfApprox_swiginit(self,_BRepApprox.new_BRepApprox_ParLeastSquareOfMyGradientOfTheComputeLineBezierOfApprox(*args))
-    def Perform(self, *args) -> "void" :
+    def Perform(self, *args):
         """
         :param Parameters:
         :type Parameters: math_Vector &
@@ -1610,42 +1788,42 @@ class BRepApprox_ParLeastSquareOfMyGradientOfTheComputeLineBezierOfApprox(object
         """
         return _BRepApprox.BRepApprox_ParLeastSquareOfMyGradientOfTheComputeLineBezierOfApprox_Perform(self, *args)
 
-    def IsDone(self, *args) -> "Standard_Boolean" :
+    def IsDone(self):
         """
         :rtype: bool
 
         """
-        return _BRepApprox.BRepApprox_ParLeastSquareOfMyGradientOfTheComputeLineBezierOfApprox_IsDone(self, *args)
+        return _BRepApprox.BRepApprox_ParLeastSquareOfMyGradientOfTheComputeLineBezierOfApprox_IsDone(self)
 
-    def BezierValue(self, *args) -> "AppParCurves_MultiCurve" :
+    def BezierValue(self):
         """
         :rtype: AppParCurves_MultiCurve
 
         """
-        return _BRepApprox.BRepApprox_ParLeastSquareOfMyGradientOfTheComputeLineBezierOfApprox_BezierValue(self, *args)
+        return _BRepApprox.BRepApprox_ParLeastSquareOfMyGradientOfTheComputeLineBezierOfApprox_BezierValue(self)
 
-    def BSplineValue(self, *args) -> "AppParCurves_MultiBSpCurve const &" :
+    def BSplineValue(self):
         """
         :rtype: AppParCurves_MultiBSpCurve
 
         """
-        return _BRepApprox.BRepApprox_ParLeastSquareOfMyGradientOfTheComputeLineBezierOfApprox_BSplineValue(self, *args)
+        return _BRepApprox.BRepApprox_ParLeastSquareOfMyGradientOfTheComputeLineBezierOfApprox_BSplineValue(self)
 
-    def FunctionMatrix(self, *args) -> "math_Matrix const &" :
+    def FunctionMatrix(self):
         """
         :rtype: math_Matrix
 
         """
-        return _BRepApprox.BRepApprox_ParLeastSquareOfMyGradientOfTheComputeLineBezierOfApprox_FunctionMatrix(self, *args)
+        return _BRepApprox.BRepApprox_ParLeastSquareOfMyGradientOfTheComputeLineBezierOfApprox_FunctionMatrix(self)
 
-    def DerivativeFunctionMatrix(self, *args) -> "math_Matrix const &" :
+    def DerivativeFunctionMatrix(self):
         """
         :rtype: math_Matrix
 
         """
-        return _BRepApprox.BRepApprox_ParLeastSquareOfMyGradientOfTheComputeLineBezierOfApprox_DerivativeFunctionMatrix(self, *args)
+        return _BRepApprox.BRepApprox_ParLeastSquareOfMyGradientOfTheComputeLineBezierOfApprox_DerivativeFunctionMatrix(self)
 
-    def ErrorGradient(self, *args) -> "void" :
+    def ErrorGradient(self, *args):
         """
         :param Grad:
         :type Grad: math_Vector &
@@ -1660,14 +1838,14 @@ class BRepApprox_ParLeastSquareOfMyGradientOfTheComputeLineBezierOfApprox(object
         """
         return _BRepApprox.BRepApprox_ParLeastSquareOfMyGradientOfTheComputeLineBezierOfApprox_ErrorGradient(self, *args)
 
-    def Distance(self, *args) -> "math_Matrix const &" :
+    def Distance(self):
         """
         :rtype: math_Matrix
 
         """
-        return _BRepApprox.BRepApprox_ParLeastSquareOfMyGradientOfTheComputeLineBezierOfApprox_Distance(self, *args)
+        return _BRepApprox.BRepApprox_ParLeastSquareOfMyGradientOfTheComputeLineBezierOfApprox_Distance(self)
 
-    def Error(self, *args) -> "void" :
+    def Error(self):
         """
         :param F:
         :type F: float &
@@ -1678,42 +1856,42 @@ class BRepApprox_ParLeastSquareOfMyGradientOfTheComputeLineBezierOfApprox(object
         :rtype: None
 
         """
-        return _BRepApprox.BRepApprox_ParLeastSquareOfMyGradientOfTheComputeLineBezierOfApprox_Error(self, *args)
+        return _BRepApprox.BRepApprox_ParLeastSquareOfMyGradientOfTheComputeLineBezierOfApprox_Error(self)
 
-    def FirstLambda(self, *args) -> "Standard_Real" :
+    def FirstLambda(self):
         """
         :rtype: float
 
         """
-        return _BRepApprox.BRepApprox_ParLeastSquareOfMyGradientOfTheComputeLineBezierOfApprox_FirstLambda(self, *args)
+        return _BRepApprox.BRepApprox_ParLeastSquareOfMyGradientOfTheComputeLineBezierOfApprox_FirstLambda(self)
 
-    def LastLambda(self, *args) -> "Standard_Real" :
+    def LastLambda(self):
         """
         :rtype: float
 
         """
-        return _BRepApprox.BRepApprox_ParLeastSquareOfMyGradientOfTheComputeLineBezierOfApprox_LastLambda(self, *args)
+        return _BRepApprox.BRepApprox_ParLeastSquareOfMyGradientOfTheComputeLineBezierOfApprox_LastLambda(self)
 
-    def Points(self, *args) -> "math_Matrix const &" :
+    def Points(self):
         """
         :rtype: math_Matrix
 
         """
-        return _BRepApprox.BRepApprox_ParLeastSquareOfMyGradientOfTheComputeLineBezierOfApprox_Points(self, *args)
+        return _BRepApprox.BRepApprox_ParLeastSquareOfMyGradientOfTheComputeLineBezierOfApprox_Points(self)
 
-    def Poles(self, *args) -> "math_Matrix const &" :
+    def Poles(self):
         """
         :rtype: math_Matrix
 
         """
-        return _BRepApprox.BRepApprox_ParLeastSquareOfMyGradientOfTheComputeLineBezierOfApprox_Poles(self, *args)
+        return _BRepApprox.BRepApprox_ParLeastSquareOfMyGradientOfTheComputeLineBezierOfApprox_Poles(self)
 
-    def KIndex(self, *args) -> "math_IntegerVector const &" :
+    def KIndex(self):
         """
         :rtype: math_IntegerVector
 
         """
-        return _BRepApprox.BRepApprox_ParLeastSquareOfMyGradientOfTheComputeLineBezierOfApprox_KIndex(self, *args)
+        return _BRepApprox.BRepApprox_ParLeastSquareOfMyGradientOfTheComputeLineBezierOfApprox_KIndex(self)
 
     def __del__(self):
     	try:
@@ -1749,9 +1927,9 @@ class BRepApprox_ParLeastSquareOfMyGradientbisOfTheComputeLineOfApprox(object):
         :param SSP:
         :type SSP: BRepApprox_TheMultiLineOfApprox &
         :param FirstPoint:
-        :type FirstPoint: int
+        :type FirstPoint: Standard_Integer
         :param LastPoint:
-        :type LastPoint: int
+        :type LastPoint: Standard_Integer
         :param FirstCons:
         :type FirstCons: AppParCurves_Constraint
         :param LastCons:
@@ -1759,21 +1937,21 @@ class BRepApprox_ParLeastSquareOfMyGradientbisOfTheComputeLineOfApprox(object):
         :param Parameters:
         :type Parameters: math_Vector &
         :param NbPol:
-        :type NbPol: int
+        :type NbPol: Standard_Integer
         :rtype: None
 
         :param SSP:
         :type SSP: BRepApprox_TheMultiLineOfApprox &
         :param FirstPoint:
-        :type FirstPoint: int
+        :type FirstPoint: Standard_Integer
         :param LastPoint:
-        :type LastPoint: int
+        :type LastPoint: Standard_Integer
         :param FirstCons:
         :type FirstCons: AppParCurves_Constraint
         :param LastCons:
         :type LastCons: AppParCurves_Constraint
         :param NbPol:
-        :type NbPol: int
+        :type NbPol: Standard_Integer
         :rtype: None
 
         :param SSP:
@@ -1783,9 +1961,9 @@ class BRepApprox_ParLeastSquareOfMyGradientbisOfTheComputeLineOfApprox(object):
         :param Mults:
         :type Mults: TColStd_Array1OfInteger &
         :param FirstPoint:
-        :type FirstPoint: int
+        :type FirstPoint: Standard_Integer
         :param LastPoint:
-        :type LastPoint: int
+        :type LastPoint: Standard_Integer
         :param FirstCons:
         :type FirstCons: AppParCurves_Constraint
         :param LastCons:
@@ -1793,7 +1971,7 @@ class BRepApprox_ParLeastSquareOfMyGradientbisOfTheComputeLineOfApprox(object):
         :param Parameters:
         :type Parameters: math_Vector &
         :param NbPol:
-        :type NbPol: int
+        :type NbPol: Standard_Integer
         :rtype: None
 
         :param SSP:
@@ -1803,20 +1981,20 @@ class BRepApprox_ParLeastSquareOfMyGradientbisOfTheComputeLineOfApprox(object):
         :param Mults:
         :type Mults: TColStd_Array1OfInteger &
         :param FirstPoint:
-        :type FirstPoint: int
+        :type FirstPoint: Standard_Integer
         :param LastPoint:
-        :type LastPoint: int
+        :type LastPoint: Standard_Integer
         :param FirstCons:
         :type FirstCons: AppParCurves_Constraint
         :param LastCons:
         :type LastCons: AppParCurves_Constraint
         :param NbPol:
-        :type NbPol: int
+        :type NbPol: Standard_Integer
         :rtype: None
 
         """
         _BRepApprox.BRepApprox_ParLeastSquareOfMyGradientbisOfTheComputeLineOfApprox_swiginit(self,_BRepApprox.new_BRepApprox_ParLeastSquareOfMyGradientbisOfTheComputeLineOfApprox(*args))
-    def Perform(self, *args) -> "void" :
+    def Perform(self, *args):
         """
         :param Parameters:
         :type Parameters: math_Vector &
@@ -1861,42 +2039,42 @@ class BRepApprox_ParLeastSquareOfMyGradientbisOfTheComputeLineOfApprox(object):
         """
         return _BRepApprox.BRepApprox_ParLeastSquareOfMyGradientbisOfTheComputeLineOfApprox_Perform(self, *args)
 
-    def IsDone(self, *args) -> "Standard_Boolean" :
+    def IsDone(self):
         """
         :rtype: bool
 
         """
-        return _BRepApprox.BRepApprox_ParLeastSquareOfMyGradientbisOfTheComputeLineOfApprox_IsDone(self, *args)
+        return _BRepApprox.BRepApprox_ParLeastSquareOfMyGradientbisOfTheComputeLineOfApprox_IsDone(self)
 
-    def BezierValue(self, *args) -> "AppParCurves_MultiCurve" :
+    def BezierValue(self):
         """
         :rtype: AppParCurves_MultiCurve
 
         """
-        return _BRepApprox.BRepApprox_ParLeastSquareOfMyGradientbisOfTheComputeLineOfApprox_BezierValue(self, *args)
+        return _BRepApprox.BRepApprox_ParLeastSquareOfMyGradientbisOfTheComputeLineOfApprox_BezierValue(self)
 
-    def BSplineValue(self, *args) -> "AppParCurves_MultiBSpCurve const &" :
+    def BSplineValue(self):
         """
         :rtype: AppParCurves_MultiBSpCurve
 
         """
-        return _BRepApprox.BRepApprox_ParLeastSquareOfMyGradientbisOfTheComputeLineOfApprox_BSplineValue(self, *args)
+        return _BRepApprox.BRepApprox_ParLeastSquareOfMyGradientbisOfTheComputeLineOfApprox_BSplineValue(self)
 
-    def FunctionMatrix(self, *args) -> "math_Matrix const &" :
+    def FunctionMatrix(self):
         """
         :rtype: math_Matrix
 
         """
-        return _BRepApprox.BRepApprox_ParLeastSquareOfMyGradientbisOfTheComputeLineOfApprox_FunctionMatrix(self, *args)
+        return _BRepApprox.BRepApprox_ParLeastSquareOfMyGradientbisOfTheComputeLineOfApprox_FunctionMatrix(self)
 
-    def DerivativeFunctionMatrix(self, *args) -> "math_Matrix const &" :
+    def DerivativeFunctionMatrix(self):
         """
         :rtype: math_Matrix
 
         """
-        return _BRepApprox.BRepApprox_ParLeastSquareOfMyGradientbisOfTheComputeLineOfApprox_DerivativeFunctionMatrix(self, *args)
+        return _BRepApprox.BRepApprox_ParLeastSquareOfMyGradientbisOfTheComputeLineOfApprox_DerivativeFunctionMatrix(self)
 
-    def ErrorGradient(self, *args) -> "void" :
+    def ErrorGradient(self, *args):
         """
         :param Grad:
         :type Grad: math_Vector &
@@ -1911,14 +2089,14 @@ class BRepApprox_ParLeastSquareOfMyGradientbisOfTheComputeLineOfApprox(object):
         """
         return _BRepApprox.BRepApprox_ParLeastSquareOfMyGradientbisOfTheComputeLineOfApprox_ErrorGradient(self, *args)
 
-    def Distance(self, *args) -> "math_Matrix const &" :
+    def Distance(self):
         """
         :rtype: math_Matrix
 
         """
-        return _BRepApprox.BRepApprox_ParLeastSquareOfMyGradientbisOfTheComputeLineOfApprox_Distance(self, *args)
+        return _BRepApprox.BRepApprox_ParLeastSquareOfMyGradientbisOfTheComputeLineOfApprox_Distance(self)
 
-    def Error(self, *args) -> "void" :
+    def Error(self):
         """
         :param F:
         :type F: float &
@@ -1929,42 +2107,42 @@ class BRepApprox_ParLeastSquareOfMyGradientbisOfTheComputeLineOfApprox(object):
         :rtype: None
 
         """
-        return _BRepApprox.BRepApprox_ParLeastSquareOfMyGradientbisOfTheComputeLineOfApprox_Error(self, *args)
+        return _BRepApprox.BRepApprox_ParLeastSquareOfMyGradientbisOfTheComputeLineOfApprox_Error(self)
 
-    def FirstLambda(self, *args) -> "Standard_Real" :
+    def FirstLambda(self):
         """
         :rtype: float
 
         """
-        return _BRepApprox.BRepApprox_ParLeastSquareOfMyGradientbisOfTheComputeLineOfApprox_FirstLambda(self, *args)
+        return _BRepApprox.BRepApprox_ParLeastSquareOfMyGradientbisOfTheComputeLineOfApprox_FirstLambda(self)
 
-    def LastLambda(self, *args) -> "Standard_Real" :
+    def LastLambda(self):
         """
         :rtype: float
 
         """
-        return _BRepApprox.BRepApprox_ParLeastSquareOfMyGradientbisOfTheComputeLineOfApprox_LastLambda(self, *args)
+        return _BRepApprox.BRepApprox_ParLeastSquareOfMyGradientbisOfTheComputeLineOfApprox_LastLambda(self)
 
-    def Points(self, *args) -> "math_Matrix const &" :
+    def Points(self):
         """
         :rtype: math_Matrix
 
         """
-        return _BRepApprox.BRepApprox_ParLeastSquareOfMyGradientbisOfTheComputeLineOfApprox_Points(self, *args)
+        return _BRepApprox.BRepApprox_ParLeastSquareOfMyGradientbisOfTheComputeLineOfApprox_Points(self)
 
-    def Poles(self, *args) -> "math_Matrix const &" :
+    def Poles(self):
         """
         :rtype: math_Matrix
 
         """
-        return _BRepApprox.BRepApprox_ParLeastSquareOfMyGradientbisOfTheComputeLineOfApprox_Poles(self, *args)
+        return _BRepApprox.BRepApprox_ParLeastSquareOfMyGradientbisOfTheComputeLineOfApprox_Poles(self)
 
-    def KIndex(self, *args) -> "math_IntegerVector const &" :
+    def KIndex(self):
         """
         :rtype: math_IntegerVector
 
         """
-        return _BRepApprox.BRepApprox_ParLeastSquareOfMyGradientbisOfTheComputeLineOfApprox_KIndex(self, *args)
+        return _BRepApprox.BRepApprox_ParLeastSquareOfMyGradientbisOfTheComputeLineOfApprox_KIndex(self)
 
     def __del__(self):
     	try:
@@ -2002,9 +2180,27 @@ class BRepApprox_ResConstraintOfMyGradientOfTheComputeLineBezierOfApprox(object)
         :param SCurv:
         :type SCurv: AppParCurves_MultiCurve &
         :param FirstPoint:
-        :type FirstPoint: int
+        :type FirstPoint: Standard_Integer
         :param LastPoint:
-        :type LastPoint: int
+        :type LastPoint: Standard_Integer
+        :param Constraints:
+        :type Constraints: Handle_AppParCurves_HArray1OfConstraintCouple &
+        :param Bern:
+        :type Bern: math_Matrix &
+        :param DerivativeBern:
+        :type DerivativeBern: math_Matrix &
+        :param Tolerance: default value is 1.0e-10
+        :type Tolerance: float
+        :rtype: None
+
+        :param SSP:
+        :type SSP: BRepApprox_TheMultiLineOfApprox &
+        :param SCurv:
+        :type SCurv: AppParCurves_MultiCurve &
+        :param FirstPoint:
+        :type FirstPoint: Standard_Integer
+        :param LastPoint:
+        :type LastPoint: Standard_Integer
         :param Constraints:
         :type Constraints: Handle_AppParCurves_HArray1OfConstraintCouple &
         :param Bern:
@@ -2017,35 +2213,35 @@ class BRepApprox_ResConstraintOfMyGradientOfTheComputeLineBezierOfApprox(object)
 
         """
         _BRepApprox.BRepApprox_ResConstraintOfMyGradientOfTheComputeLineBezierOfApprox_swiginit(self,_BRepApprox.new_BRepApprox_ResConstraintOfMyGradientOfTheComputeLineBezierOfApprox(*args))
-    def IsDone(self, *args) -> "Standard_Boolean" :
+    def IsDone(self):
         """
         :rtype: bool
 
         """
-        return _BRepApprox.BRepApprox_ResConstraintOfMyGradientOfTheComputeLineBezierOfApprox_IsDone(self, *args)
+        return _BRepApprox.BRepApprox_ResConstraintOfMyGradientOfTheComputeLineBezierOfApprox_IsDone(self)
 
-    def ConstraintMatrix(self, *args) -> "math_Matrix const &" :
+    def ConstraintMatrix(self):
         """
         :rtype: math_Matrix
 
         """
-        return _BRepApprox.BRepApprox_ResConstraintOfMyGradientOfTheComputeLineBezierOfApprox_ConstraintMatrix(self, *args)
+        return _BRepApprox.BRepApprox_ResConstraintOfMyGradientOfTheComputeLineBezierOfApprox_ConstraintMatrix(self)
 
-    def Duale(self, *args) -> "math_Vector const &" :
+    def Duale(self):
         """
         :rtype: math_Vector
 
         """
-        return _BRepApprox.BRepApprox_ResConstraintOfMyGradientOfTheComputeLineBezierOfApprox_Duale(self, *args)
+        return _BRepApprox.BRepApprox_ResConstraintOfMyGradientOfTheComputeLineBezierOfApprox_Duale(self)
 
-    def ConstraintDerivative(self, *args) -> "math_Matrix const &" :
+    def ConstraintDerivative(self, *args):
         """
         :param SSP:
         :type SSP: BRepApprox_TheMultiLineOfApprox &
         :param Parameters:
         :type Parameters: math_Vector &
         :param Deg:
-        :type Deg: int
+        :type Deg: Standard_Integer
         :param DA:
         :type DA: math_Matrix &
         :rtype: math_Matrix
@@ -2053,12 +2249,12 @@ class BRepApprox_ResConstraintOfMyGradientOfTheComputeLineBezierOfApprox(object)
         """
         return _BRepApprox.BRepApprox_ResConstraintOfMyGradientOfTheComputeLineBezierOfApprox_ConstraintDerivative(self, *args)
 
-    def InverseMatrix(self, *args) -> "math_Matrix const &" :
+    def InverseMatrix(self):
         """
         :rtype: math_Matrix
 
         """
-        return _BRepApprox.BRepApprox_ResConstraintOfMyGradientOfTheComputeLineBezierOfApprox_InverseMatrix(self, *args)
+        return _BRepApprox.BRepApprox_ResConstraintOfMyGradientOfTheComputeLineBezierOfApprox_InverseMatrix(self)
 
     def __del__(self):
     	try:
@@ -2087,9 +2283,27 @@ class BRepApprox_ResConstraintOfMyGradientbisOfTheComputeLineOfApprox(object):
         :param SCurv:
         :type SCurv: AppParCurves_MultiCurve &
         :param FirstPoint:
-        :type FirstPoint: int
+        :type FirstPoint: Standard_Integer
         :param LastPoint:
-        :type LastPoint: int
+        :type LastPoint: Standard_Integer
+        :param Constraints:
+        :type Constraints: Handle_AppParCurves_HArray1OfConstraintCouple &
+        :param Bern:
+        :type Bern: math_Matrix &
+        :param DerivativeBern:
+        :type DerivativeBern: math_Matrix &
+        :param Tolerance: default value is 1.0e-10
+        :type Tolerance: float
+        :rtype: None
+
+        :param SSP:
+        :type SSP: BRepApprox_TheMultiLineOfApprox &
+        :param SCurv:
+        :type SCurv: AppParCurves_MultiCurve &
+        :param FirstPoint:
+        :type FirstPoint: Standard_Integer
+        :param LastPoint:
+        :type LastPoint: Standard_Integer
         :param Constraints:
         :type Constraints: Handle_AppParCurves_HArray1OfConstraintCouple &
         :param Bern:
@@ -2102,35 +2316,35 @@ class BRepApprox_ResConstraintOfMyGradientbisOfTheComputeLineOfApprox(object):
 
         """
         _BRepApprox.BRepApprox_ResConstraintOfMyGradientbisOfTheComputeLineOfApprox_swiginit(self,_BRepApprox.new_BRepApprox_ResConstraintOfMyGradientbisOfTheComputeLineOfApprox(*args))
-    def IsDone(self, *args) -> "Standard_Boolean" :
+    def IsDone(self):
         """
         :rtype: bool
 
         """
-        return _BRepApprox.BRepApprox_ResConstraintOfMyGradientbisOfTheComputeLineOfApprox_IsDone(self, *args)
+        return _BRepApprox.BRepApprox_ResConstraintOfMyGradientbisOfTheComputeLineOfApprox_IsDone(self)
 
-    def ConstraintMatrix(self, *args) -> "math_Matrix const &" :
+    def ConstraintMatrix(self):
         """
         :rtype: math_Matrix
 
         """
-        return _BRepApprox.BRepApprox_ResConstraintOfMyGradientbisOfTheComputeLineOfApprox_ConstraintMatrix(self, *args)
+        return _BRepApprox.BRepApprox_ResConstraintOfMyGradientbisOfTheComputeLineOfApprox_ConstraintMatrix(self)
 
-    def Duale(self, *args) -> "math_Vector const &" :
+    def Duale(self):
         """
         :rtype: math_Vector
 
         """
-        return _BRepApprox.BRepApprox_ResConstraintOfMyGradientbisOfTheComputeLineOfApprox_Duale(self, *args)
+        return _BRepApprox.BRepApprox_ResConstraintOfMyGradientbisOfTheComputeLineOfApprox_Duale(self)
 
-    def ConstraintDerivative(self, *args) -> "math_Matrix const &" :
+    def ConstraintDerivative(self, *args):
         """
         :param SSP:
         :type SSP: BRepApprox_TheMultiLineOfApprox &
         :param Parameters:
         :type Parameters: math_Vector &
         :param Deg:
-        :type Deg: int
+        :type Deg: Standard_Integer
         :param DA:
         :type DA: math_Matrix &
         :rtype: math_Matrix
@@ -2138,12 +2352,12 @@ class BRepApprox_ResConstraintOfMyGradientbisOfTheComputeLineOfApprox(object):
         """
         return _BRepApprox.BRepApprox_ResConstraintOfMyGradientbisOfTheComputeLineOfApprox_ConstraintDerivative(self, *args)
 
-    def InverseMatrix(self, *args) -> "math_Matrix const &" :
+    def InverseMatrix(self):
         """
         :rtype: math_Matrix
 
         """
-        return _BRepApprox.BRepApprox_ResConstraintOfMyGradientbisOfTheComputeLineOfApprox_InverseMatrix(self, *args)
+        return _BRepApprox.BRepApprox_ResConstraintOfMyGradientbisOfTheComputeLineOfApprox_InverseMatrix(self)
 
     def __del__(self):
     	try:
@@ -2164,8 +2378,9 @@ BRepApprox_ResConstraintOfMyGradientbisOfTheComputeLineOfApprox_swigregister(BRe
 
 class BRepApprox_SurfaceTool(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
+    def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def FirstUParameter(*args) -> "Standard_Real" :
+    def FirstUParameter(*args):
         """
         :param S:
         :type S: BRepAdaptor_Surface &
@@ -2175,7 +2390,7 @@ class BRepApprox_SurfaceTool(object):
         return _BRepApprox.BRepApprox_SurfaceTool_FirstUParameter(*args)
 
     FirstUParameter = staticmethod(FirstUParameter)
-    def FirstVParameter(*args) -> "Standard_Real" :
+    def FirstVParameter(*args):
         """
         :param S:
         :type S: BRepAdaptor_Surface &
@@ -2185,7 +2400,7 @@ class BRepApprox_SurfaceTool(object):
         return _BRepApprox.BRepApprox_SurfaceTool_FirstVParameter(*args)
 
     FirstVParameter = staticmethod(FirstVParameter)
-    def LastUParameter(*args) -> "Standard_Real" :
+    def LastUParameter(*args):
         """
         :param S:
         :type S: BRepAdaptor_Surface &
@@ -2195,7 +2410,7 @@ class BRepApprox_SurfaceTool(object):
         return _BRepApprox.BRepApprox_SurfaceTool_LastUParameter(*args)
 
     LastUParameter = staticmethod(LastUParameter)
-    def LastVParameter(*args) -> "Standard_Real" :
+    def LastVParameter(*args):
         """
         :param S:
         :type S: BRepAdaptor_Surface &
@@ -2205,7 +2420,7 @@ class BRepApprox_SurfaceTool(object):
         return _BRepApprox.BRepApprox_SurfaceTool_LastVParameter(*args)
 
     LastVParameter = staticmethod(LastVParameter)
-    def NbUIntervals(*args) -> "Standard_Integer" :
+    def NbUIntervals(*args):
         """
         :param S:
         :type S: BRepAdaptor_Surface &
@@ -2217,7 +2432,7 @@ class BRepApprox_SurfaceTool(object):
         return _BRepApprox.BRepApprox_SurfaceTool_NbUIntervals(*args)
 
     NbUIntervals = staticmethod(NbUIntervals)
-    def NbVIntervals(*args) -> "Standard_Integer" :
+    def NbVIntervals(*args):
         """
         :param S:
         :type S: BRepAdaptor_Surface &
@@ -2229,7 +2444,7 @@ class BRepApprox_SurfaceTool(object):
         return _BRepApprox.BRepApprox_SurfaceTool_NbVIntervals(*args)
 
     NbVIntervals = staticmethod(NbVIntervals)
-    def UIntervals(*args) -> "void" :
+    def UIntervals(*args):
         """
         :param S:
         :type S: BRepAdaptor_Surface &
@@ -2243,7 +2458,7 @@ class BRepApprox_SurfaceTool(object):
         return _BRepApprox.BRepApprox_SurfaceTool_UIntervals(*args)
 
     UIntervals = staticmethod(UIntervals)
-    def VIntervals(*args) -> "void" :
+    def VIntervals(*args):
         """
         :param S:
         :type S: BRepAdaptor_Surface &
@@ -2257,7 +2472,7 @@ class BRepApprox_SurfaceTool(object):
         return _BRepApprox.BRepApprox_SurfaceTool_VIntervals(*args)
 
     VIntervals = staticmethod(VIntervals)
-    def UTrim(*args) -> "Handle_Adaptor3d_HSurface" :
+    def UTrim(*args):
         """
         :param S:
         :type S: BRepAdaptor_Surface &
@@ -2273,7 +2488,7 @@ class BRepApprox_SurfaceTool(object):
         return _BRepApprox.BRepApprox_SurfaceTool_UTrim(*args)
 
     UTrim = staticmethod(UTrim)
-    def VTrim(*args) -> "Handle_Adaptor3d_HSurface" :
+    def VTrim(*args):
         """
         :param S:
         :type S: BRepAdaptor_Surface &
@@ -2289,7 +2504,7 @@ class BRepApprox_SurfaceTool(object):
         return _BRepApprox.BRepApprox_SurfaceTool_VTrim(*args)
 
     VTrim = staticmethod(VTrim)
-    def IsUClosed(*args) -> "Standard_Boolean" :
+    def IsUClosed(*args):
         """
         :param S:
         :type S: BRepAdaptor_Surface &
@@ -2299,7 +2514,7 @@ class BRepApprox_SurfaceTool(object):
         return _BRepApprox.BRepApprox_SurfaceTool_IsUClosed(*args)
 
     IsUClosed = staticmethod(IsUClosed)
-    def IsVClosed(*args) -> "Standard_Boolean" :
+    def IsVClosed(*args):
         """
         :param S:
         :type S: BRepAdaptor_Surface &
@@ -2309,7 +2524,7 @@ class BRepApprox_SurfaceTool(object):
         return _BRepApprox.BRepApprox_SurfaceTool_IsVClosed(*args)
 
     IsVClosed = staticmethod(IsVClosed)
-    def IsUPeriodic(*args) -> "Standard_Boolean" :
+    def IsUPeriodic(*args):
         """
         :param S:
         :type S: BRepAdaptor_Surface &
@@ -2319,7 +2534,7 @@ class BRepApprox_SurfaceTool(object):
         return _BRepApprox.BRepApprox_SurfaceTool_IsUPeriodic(*args)
 
     IsUPeriodic = staticmethod(IsUPeriodic)
-    def UPeriod(*args) -> "Standard_Real" :
+    def UPeriod(*args):
         """
         :param S:
         :type S: BRepAdaptor_Surface &
@@ -2329,7 +2544,7 @@ class BRepApprox_SurfaceTool(object):
         return _BRepApprox.BRepApprox_SurfaceTool_UPeriod(*args)
 
     UPeriod = staticmethod(UPeriod)
-    def IsVPeriodic(*args) -> "Standard_Boolean" :
+    def IsVPeriodic(*args):
         """
         :param S:
         :type S: BRepAdaptor_Surface &
@@ -2339,7 +2554,7 @@ class BRepApprox_SurfaceTool(object):
         return _BRepApprox.BRepApprox_SurfaceTool_IsVPeriodic(*args)
 
     IsVPeriodic = staticmethod(IsVPeriodic)
-    def VPeriod(*args) -> "Standard_Real" :
+    def VPeriod(*args):
         """
         :param S:
         :type S: BRepAdaptor_Surface &
@@ -2349,7 +2564,7 @@ class BRepApprox_SurfaceTool(object):
         return _BRepApprox.BRepApprox_SurfaceTool_VPeriod(*args)
 
     VPeriod = staticmethod(VPeriod)
-    def Value(*args) -> "gp_Pnt" :
+    def Value(*args):
         """
         :param S:
         :type S: BRepAdaptor_Surface &
@@ -2363,7 +2578,7 @@ class BRepApprox_SurfaceTool(object):
         return _BRepApprox.BRepApprox_SurfaceTool_Value(*args)
 
     Value = staticmethod(Value)
-    def D0(*args) -> "void" :
+    def D0(*args):
         """
         :param S:
         :type S: BRepAdaptor_Surface &
@@ -2379,7 +2594,7 @@ class BRepApprox_SurfaceTool(object):
         return _BRepApprox.BRepApprox_SurfaceTool_D0(*args)
 
     D0 = staticmethod(D0)
-    def D1(*args) -> "void" :
+    def D1(*args):
         """
         :param S:
         :type S: BRepAdaptor_Surface &
@@ -2399,7 +2614,7 @@ class BRepApprox_SurfaceTool(object):
         return _BRepApprox.BRepApprox_SurfaceTool_D1(*args)
 
     D1 = staticmethod(D1)
-    def D2(*args) -> "void" :
+    def D2(*args):
         """
         :param S:
         :type S: BRepAdaptor_Surface &
@@ -2425,7 +2640,7 @@ class BRepApprox_SurfaceTool(object):
         return _BRepApprox.BRepApprox_SurfaceTool_D2(*args)
 
     D2 = staticmethod(D2)
-    def D3(*args) -> "void" :
+    def D3(*args):
         """
         :param S:
         :type S: BRepAdaptor_Surface &
@@ -2459,7 +2674,7 @@ class BRepApprox_SurfaceTool(object):
         return _BRepApprox.BRepApprox_SurfaceTool_D3(*args)
 
     D3 = staticmethod(D3)
-    def DN(*args) -> "gp_Vec" :
+    def DN(*args):
         """
         :param S:
         :type S: BRepAdaptor_Surface &
@@ -2468,16 +2683,16 @@ class BRepApprox_SurfaceTool(object):
         :param v:
         :type v: float
         :param Nu:
-        :type Nu: int
+        :type Nu: Standard_Integer
         :param Nv:
-        :type Nv: int
+        :type Nv: Standard_Integer
         :rtype: gp_Vec
 
         """
         return _BRepApprox.BRepApprox_SurfaceTool_DN(*args)
 
     DN = staticmethod(DN)
-    def UResolution(*args) -> "Standard_Real" :
+    def UResolution(*args):
         """
         :param S:
         :type S: BRepAdaptor_Surface &
@@ -2489,7 +2704,7 @@ class BRepApprox_SurfaceTool(object):
         return _BRepApprox.BRepApprox_SurfaceTool_UResolution(*args)
 
     UResolution = staticmethod(UResolution)
-    def VResolution(*args) -> "Standard_Real" :
+    def VResolution(*args):
         """
         :param S:
         :type S: BRepAdaptor_Surface &
@@ -2501,7 +2716,7 @@ class BRepApprox_SurfaceTool(object):
         return _BRepApprox.BRepApprox_SurfaceTool_VResolution(*args)
 
     VResolution = staticmethod(VResolution)
-    def GetType(*args) -> "GeomAbs_SurfaceType" :
+    def GetType(*args):
         """
         :param S:
         :type S: BRepAdaptor_Surface &
@@ -2511,7 +2726,7 @@ class BRepApprox_SurfaceTool(object):
         return _BRepApprox.BRepApprox_SurfaceTool_GetType(*args)
 
     GetType = staticmethod(GetType)
-    def Plane(*args) -> "gp_Pln" :
+    def Plane(*args):
         """
         :param S:
         :type S: BRepAdaptor_Surface &
@@ -2521,7 +2736,7 @@ class BRepApprox_SurfaceTool(object):
         return _BRepApprox.BRepApprox_SurfaceTool_Plane(*args)
 
     Plane = staticmethod(Plane)
-    def Cylinder(*args) -> "gp_Cylinder" :
+    def Cylinder(*args):
         """
         :param S:
         :type S: BRepAdaptor_Surface &
@@ -2531,7 +2746,7 @@ class BRepApprox_SurfaceTool(object):
         return _BRepApprox.BRepApprox_SurfaceTool_Cylinder(*args)
 
     Cylinder = staticmethod(Cylinder)
-    def Cone(*args) -> "gp_Cone" :
+    def Cone(*args):
         """
         :param S:
         :type S: BRepAdaptor_Surface &
@@ -2541,7 +2756,7 @@ class BRepApprox_SurfaceTool(object):
         return _BRepApprox.BRepApprox_SurfaceTool_Cone(*args)
 
     Cone = staticmethod(Cone)
-    def Torus(*args) -> "gp_Torus" :
+    def Torus(*args):
         """
         :param S:
         :type S: BRepAdaptor_Surface &
@@ -2551,7 +2766,7 @@ class BRepApprox_SurfaceTool(object):
         return _BRepApprox.BRepApprox_SurfaceTool_Torus(*args)
 
     Torus = staticmethod(Torus)
-    def Sphere(*args) -> "gp_Sphere" :
+    def Sphere(*args):
         """
         :param S:
         :type S: BRepAdaptor_Surface &
@@ -2561,7 +2776,7 @@ class BRepApprox_SurfaceTool(object):
         return _BRepApprox.BRepApprox_SurfaceTool_Sphere(*args)
 
     Sphere = staticmethod(Sphere)
-    def Bezier(*args) -> "Handle_Geom_BezierSurface" :
+    def Bezier(*args):
         """
         :param S:
         :type S: BRepAdaptor_Surface &
@@ -2571,7 +2786,7 @@ class BRepApprox_SurfaceTool(object):
         return _BRepApprox.BRepApprox_SurfaceTool_Bezier(*args)
 
     Bezier = staticmethod(Bezier)
-    def BSpline(*args) -> "Handle_Geom_BSplineSurface" :
+    def BSpline(*args):
         """
         :param S:
         :type S: BRepAdaptor_Surface &
@@ -2581,7 +2796,7 @@ class BRepApprox_SurfaceTool(object):
         return _BRepApprox.BRepApprox_SurfaceTool_BSpline(*args)
 
     BSpline = staticmethod(BSpline)
-    def AxeOfRevolution(*args) -> "gp_Ax1" :
+    def AxeOfRevolution(*args):
         """
         :param S:
         :type S: BRepAdaptor_Surface &
@@ -2591,7 +2806,7 @@ class BRepApprox_SurfaceTool(object):
         return _BRepApprox.BRepApprox_SurfaceTool_AxeOfRevolution(*args)
 
     AxeOfRevolution = staticmethod(AxeOfRevolution)
-    def Direction(*args) -> "gp_Dir" :
+    def Direction(*args):
         """
         :param S:
         :type S: BRepAdaptor_Surface &
@@ -2601,7 +2816,7 @@ class BRepApprox_SurfaceTool(object):
         return _BRepApprox.BRepApprox_SurfaceTool_Direction(*args)
 
     Direction = staticmethod(Direction)
-    def BasisCurve(*args) -> "Handle_Adaptor3d_HCurve" :
+    def BasisCurve(*args):
         """
         :param S:
         :type S: BRepAdaptor_Surface &
@@ -2611,7 +2826,7 @@ class BRepApprox_SurfaceTool(object):
         return _BRepApprox.BRepApprox_SurfaceTool_BasisCurve(*args)
 
     BasisCurve = staticmethod(BasisCurve)
-    def NbSamplesU(*args) -> "Standard_Integer" :
+    def NbSamplesU(*args):
         """
         :param S:
         :type S: BRepAdaptor_Surface &
@@ -2629,7 +2844,7 @@ class BRepApprox_SurfaceTool(object):
         return _BRepApprox.BRepApprox_SurfaceTool_NbSamplesU(*args)
 
     NbSamplesU = staticmethod(NbSamplesU)
-    def NbSamplesV(*args) -> "Standard_Integer" :
+    def NbSamplesV(*args):
         """
         :param S:
         :type S: BRepAdaptor_Surface &
@@ -2647,8 +2862,6 @@ class BRepApprox_SurfaceTool(object):
         return _BRepApprox.BRepApprox_SurfaceTool_NbSamplesV(*args)
 
     NbSamplesV = staticmethod(NbSamplesV)
-    def __init__(self): 
-        _BRepApprox.BRepApprox_SurfaceTool_swiginit(self,_BRepApprox.new_BRepApprox_SurfaceTool())
     def __del__(self):
     	try:
     		self.thisown = False
@@ -2661,7 +2874,7 @@ BRepApprox_SurfaceTool._kill_pointed = new_instancemethod(_BRepApprox.BRepApprox
 BRepApprox_SurfaceTool_swigregister = _BRepApprox.BRepApprox_SurfaceTool_swigregister
 BRepApprox_SurfaceTool_swigregister(BRepApprox_SurfaceTool)
 
-def BRepApprox_SurfaceTool_FirstUParameter(*args) -> "Standard_Real" :
+def BRepApprox_SurfaceTool_FirstUParameter(*args):
   """
     :param S:
     :type S: BRepAdaptor_Surface &
@@ -2670,7 +2883,7 @@ def BRepApprox_SurfaceTool_FirstUParameter(*args) -> "Standard_Real" :
     """
   return _BRepApprox.BRepApprox_SurfaceTool_FirstUParameter(*args)
 
-def BRepApprox_SurfaceTool_FirstVParameter(*args) -> "Standard_Real" :
+def BRepApprox_SurfaceTool_FirstVParameter(*args):
   """
     :param S:
     :type S: BRepAdaptor_Surface &
@@ -2679,7 +2892,7 @@ def BRepApprox_SurfaceTool_FirstVParameter(*args) -> "Standard_Real" :
     """
   return _BRepApprox.BRepApprox_SurfaceTool_FirstVParameter(*args)
 
-def BRepApprox_SurfaceTool_LastUParameter(*args) -> "Standard_Real" :
+def BRepApprox_SurfaceTool_LastUParameter(*args):
   """
     :param S:
     :type S: BRepAdaptor_Surface &
@@ -2688,7 +2901,7 @@ def BRepApprox_SurfaceTool_LastUParameter(*args) -> "Standard_Real" :
     """
   return _BRepApprox.BRepApprox_SurfaceTool_LastUParameter(*args)
 
-def BRepApprox_SurfaceTool_LastVParameter(*args) -> "Standard_Real" :
+def BRepApprox_SurfaceTool_LastVParameter(*args):
   """
     :param S:
     :type S: BRepAdaptor_Surface &
@@ -2697,7 +2910,7 @@ def BRepApprox_SurfaceTool_LastVParameter(*args) -> "Standard_Real" :
     """
   return _BRepApprox.BRepApprox_SurfaceTool_LastVParameter(*args)
 
-def BRepApprox_SurfaceTool_NbUIntervals(*args) -> "Standard_Integer" :
+def BRepApprox_SurfaceTool_NbUIntervals(*args):
   """
     :param S:
     :type S: BRepAdaptor_Surface &
@@ -2708,7 +2921,7 @@ def BRepApprox_SurfaceTool_NbUIntervals(*args) -> "Standard_Integer" :
     """
   return _BRepApprox.BRepApprox_SurfaceTool_NbUIntervals(*args)
 
-def BRepApprox_SurfaceTool_NbVIntervals(*args) -> "Standard_Integer" :
+def BRepApprox_SurfaceTool_NbVIntervals(*args):
   """
     :param S:
     :type S: BRepAdaptor_Surface &
@@ -2719,7 +2932,7 @@ def BRepApprox_SurfaceTool_NbVIntervals(*args) -> "Standard_Integer" :
     """
   return _BRepApprox.BRepApprox_SurfaceTool_NbVIntervals(*args)
 
-def BRepApprox_SurfaceTool_UIntervals(*args) -> "void" :
+def BRepApprox_SurfaceTool_UIntervals(*args):
   """
     :param S:
     :type S: BRepAdaptor_Surface &
@@ -2732,7 +2945,7 @@ def BRepApprox_SurfaceTool_UIntervals(*args) -> "void" :
     """
   return _BRepApprox.BRepApprox_SurfaceTool_UIntervals(*args)
 
-def BRepApprox_SurfaceTool_VIntervals(*args) -> "void" :
+def BRepApprox_SurfaceTool_VIntervals(*args):
   """
     :param S:
     :type S: BRepAdaptor_Surface &
@@ -2745,7 +2958,7 @@ def BRepApprox_SurfaceTool_VIntervals(*args) -> "void" :
     """
   return _BRepApprox.BRepApprox_SurfaceTool_VIntervals(*args)
 
-def BRepApprox_SurfaceTool_UTrim(*args) -> "Handle_Adaptor3d_HSurface" :
+def BRepApprox_SurfaceTool_UTrim(*args):
   """
     :param S:
     :type S: BRepAdaptor_Surface &
@@ -2760,7 +2973,7 @@ def BRepApprox_SurfaceTool_UTrim(*args) -> "Handle_Adaptor3d_HSurface" :
     """
   return _BRepApprox.BRepApprox_SurfaceTool_UTrim(*args)
 
-def BRepApprox_SurfaceTool_VTrim(*args) -> "Handle_Adaptor3d_HSurface" :
+def BRepApprox_SurfaceTool_VTrim(*args):
   """
     :param S:
     :type S: BRepAdaptor_Surface &
@@ -2775,7 +2988,7 @@ def BRepApprox_SurfaceTool_VTrim(*args) -> "Handle_Adaptor3d_HSurface" :
     """
   return _BRepApprox.BRepApprox_SurfaceTool_VTrim(*args)
 
-def BRepApprox_SurfaceTool_IsUClosed(*args) -> "Standard_Boolean" :
+def BRepApprox_SurfaceTool_IsUClosed(*args):
   """
     :param S:
     :type S: BRepAdaptor_Surface &
@@ -2784,7 +2997,7 @@ def BRepApprox_SurfaceTool_IsUClosed(*args) -> "Standard_Boolean" :
     """
   return _BRepApprox.BRepApprox_SurfaceTool_IsUClosed(*args)
 
-def BRepApprox_SurfaceTool_IsVClosed(*args) -> "Standard_Boolean" :
+def BRepApprox_SurfaceTool_IsVClosed(*args):
   """
     :param S:
     :type S: BRepAdaptor_Surface &
@@ -2793,7 +3006,7 @@ def BRepApprox_SurfaceTool_IsVClosed(*args) -> "Standard_Boolean" :
     """
   return _BRepApprox.BRepApprox_SurfaceTool_IsVClosed(*args)
 
-def BRepApprox_SurfaceTool_IsUPeriodic(*args) -> "Standard_Boolean" :
+def BRepApprox_SurfaceTool_IsUPeriodic(*args):
   """
     :param S:
     :type S: BRepAdaptor_Surface &
@@ -2802,7 +3015,7 @@ def BRepApprox_SurfaceTool_IsUPeriodic(*args) -> "Standard_Boolean" :
     """
   return _BRepApprox.BRepApprox_SurfaceTool_IsUPeriodic(*args)
 
-def BRepApprox_SurfaceTool_UPeriod(*args) -> "Standard_Real" :
+def BRepApprox_SurfaceTool_UPeriod(*args):
   """
     :param S:
     :type S: BRepAdaptor_Surface &
@@ -2811,7 +3024,7 @@ def BRepApprox_SurfaceTool_UPeriod(*args) -> "Standard_Real" :
     """
   return _BRepApprox.BRepApprox_SurfaceTool_UPeriod(*args)
 
-def BRepApprox_SurfaceTool_IsVPeriodic(*args) -> "Standard_Boolean" :
+def BRepApprox_SurfaceTool_IsVPeriodic(*args):
   """
     :param S:
     :type S: BRepAdaptor_Surface &
@@ -2820,7 +3033,7 @@ def BRepApprox_SurfaceTool_IsVPeriodic(*args) -> "Standard_Boolean" :
     """
   return _BRepApprox.BRepApprox_SurfaceTool_IsVPeriodic(*args)
 
-def BRepApprox_SurfaceTool_VPeriod(*args) -> "Standard_Real" :
+def BRepApprox_SurfaceTool_VPeriod(*args):
   """
     :param S:
     :type S: BRepAdaptor_Surface &
@@ -2829,7 +3042,7 @@ def BRepApprox_SurfaceTool_VPeriod(*args) -> "Standard_Real" :
     """
   return _BRepApprox.BRepApprox_SurfaceTool_VPeriod(*args)
 
-def BRepApprox_SurfaceTool_Value(*args) -> "gp_Pnt" :
+def BRepApprox_SurfaceTool_Value(*args):
   """
     :param S:
     :type S: BRepAdaptor_Surface &
@@ -2842,7 +3055,7 @@ def BRepApprox_SurfaceTool_Value(*args) -> "gp_Pnt" :
     """
   return _BRepApprox.BRepApprox_SurfaceTool_Value(*args)
 
-def BRepApprox_SurfaceTool_D0(*args) -> "void" :
+def BRepApprox_SurfaceTool_D0(*args):
   """
     :param S:
     :type S: BRepAdaptor_Surface &
@@ -2857,7 +3070,7 @@ def BRepApprox_SurfaceTool_D0(*args) -> "void" :
     """
   return _BRepApprox.BRepApprox_SurfaceTool_D0(*args)
 
-def BRepApprox_SurfaceTool_D1(*args) -> "void" :
+def BRepApprox_SurfaceTool_D1(*args):
   """
     :param S:
     :type S: BRepAdaptor_Surface &
@@ -2876,7 +3089,7 @@ def BRepApprox_SurfaceTool_D1(*args) -> "void" :
     """
   return _BRepApprox.BRepApprox_SurfaceTool_D1(*args)
 
-def BRepApprox_SurfaceTool_D2(*args) -> "void" :
+def BRepApprox_SurfaceTool_D2(*args):
   """
     :param S:
     :type S: BRepAdaptor_Surface &
@@ -2901,7 +3114,7 @@ def BRepApprox_SurfaceTool_D2(*args) -> "void" :
     """
   return _BRepApprox.BRepApprox_SurfaceTool_D2(*args)
 
-def BRepApprox_SurfaceTool_D3(*args) -> "void" :
+def BRepApprox_SurfaceTool_D3(*args):
   """
     :param S:
     :type S: BRepAdaptor_Surface &
@@ -2934,7 +3147,7 @@ def BRepApprox_SurfaceTool_D3(*args) -> "void" :
     """
   return _BRepApprox.BRepApprox_SurfaceTool_D3(*args)
 
-def BRepApprox_SurfaceTool_DN(*args) -> "gp_Vec" :
+def BRepApprox_SurfaceTool_DN(*args):
   """
     :param S:
     :type S: BRepAdaptor_Surface &
@@ -2943,15 +3156,15 @@ def BRepApprox_SurfaceTool_DN(*args) -> "gp_Vec" :
     :param v:
     :type v: float
     :param Nu:
-    :type Nu: int
+    :type Nu: Standard_Integer
     :param Nv:
-    :type Nv: int
+    :type Nv: Standard_Integer
     :rtype: gp_Vec
 
     """
   return _BRepApprox.BRepApprox_SurfaceTool_DN(*args)
 
-def BRepApprox_SurfaceTool_UResolution(*args) -> "Standard_Real" :
+def BRepApprox_SurfaceTool_UResolution(*args):
   """
     :param S:
     :type S: BRepAdaptor_Surface &
@@ -2962,7 +3175,7 @@ def BRepApprox_SurfaceTool_UResolution(*args) -> "Standard_Real" :
     """
   return _BRepApprox.BRepApprox_SurfaceTool_UResolution(*args)
 
-def BRepApprox_SurfaceTool_VResolution(*args) -> "Standard_Real" :
+def BRepApprox_SurfaceTool_VResolution(*args):
   """
     :param S:
     :type S: BRepAdaptor_Surface &
@@ -2973,7 +3186,7 @@ def BRepApprox_SurfaceTool_VResolution(*args) -> "Standard_Real" :
     """
   return _BRepApprox.BRepApprox_SurfaceTool_VResolution(*args)
 
-def BRepApprox_SurfaceTool_GetType(*args) -> "GeomAbs_SurfaceType" :
+def BRepApprox_SurfaceTool_GetType(*args):
   """
     :param S:
     :type S: BRepAdaptor_Surface &
@@ -2982,7 +3195,7 @@ def BRepApprox_SurfaceTool_GetType(*args) -> "GeomAbs_SurfaceType" :
     """
   return _BRepApprox.BRepApprox_SurfaceTool_GetType(*args)
 
-def BRepApprox_SurfaceTool_Plane(*args) -> "gp_Pln" :
+def BRepApprox_SurfaceTool_Plane(*args):
   """
     :param S:
     :type S: BRepAdaptor_Surface &
@@ -2991,7 +3204,7 @@ def BRepApprox_SurfaceTool_Plane(*args) -> "gp_Pln" :
     """
   return _BRepApprox.BRepApprox_SurfaceTool_Plane(*args)
 
-def BRepApprox_SurfaceTool_Cylinder(*args) -> "gp_Cylinder" :
+def BRepApprox_SurfaceTool_Cylinder(*args):
   """
     :param S:
     :type S: BRepAdaptor_Surface &
@@ -3000,7 +3213,7 @@ def BRepApprox_SurfaceTool_Cylinder(*args) -> "gp_Cylinder" :
     """
   return _BRepApprox.BRepApprox_SurfaceTool_Cylinder(*args)
 
-def BRepApprox_SurfaceTool_Cone(*args) -> "gp_Cone" :
+def BRepApprox_SurfaceTool_Cone(*args):
   """
     :param S:
     :type S: BRepAdaptor_Surface &
@@ -3009,7 +3222,7 @@ def BRepApprox_SurfaceTool_Cone(*args) -> "gp_Cone" :
     """
   return _BRepApprox.BRepApprox_SurfaceTool_Cone(*args)
 
-def BRepApprox_SurfaceTool_Torus(*args) -> "gp_Torus" :
+def BRepApprox_SurfaceTool_Torus(*args):
   """
     :param S:
     :type S: BRepAdaptor_Surface &
@@ -3018,7 +3231,7 @@ def BRepApprox_SurfaceTool_Torus(*args) -> "gp_Torus" :
     """
   return _BRepApprox.BRepApprox_SurfaceTool_Torus(*args)
 
-def BRepApprox_SurfaceTool_Sphere(*args) -> "gp_Sphere" :
+def BRepApprox_SurfaceTool_Sphere(*args):
   """
     :param S:
     :type S: BRepAdaptor_Surface &
@@ -3027,7 +3240,7 @@ def BRepApprox_SurfaceTool_Sphere(*args) -> "gp_Sphere" :
     """
   return _BRepApprox.BRepApprox_SurfaceTool_Sphere(*args)
 
-def BRepApprox_SurfaceTool_Bezier(*args) -> "Handle_Geom_BezierSurface" :
+def BRepApprox_SurfaceTool_Bezier(*args):
   """
     :param S:
     :type S: BRepAdaptor_Surface &
@@ -3036,7 +3249,7 @@ def BRepApprox_SurfaceTool_Bezier(*args) -> "Handle_Geom_BezierSurface" :
     """
   return _BRepApprox.BRepApprox_SurfaceTool_Bezier(*args)
 
-def BRepApprox_SurfaceTool_BSpline(*args) -> "Handle_Geom_BSplineSurface" :
+def BRepApprox_SurfaceTool_BSpline(*args):
   """
     :param S:
     :type S: BRepAdaptor_Surface &
@@ -3045,7 +3258,7 @@ def BRepApprox_SurfaceTool_BSpline(*args) -> "Handle_Geom_BSplineSurface" :
     """
   return _BRepApprox.BRepApprox_SurfaceTool_BSpline(*args)
 
-def BRepApprox_SurfaceTool_AxeOfRevolution(*args) -> "gp_Ax1" :
+def BRepApprox_SurfaceTool_AxeOfRevolution(*args):
   """
     :param S:
     :type S: BRepAdaptor_Surface &
@@ -3054,7 +3267,7 @@ def BRepApprox_SurfaceTool_AxeOfRevolution(*args) -> "gp_Ax1" :
     """
   return _BRepApprox.BRepApprox_SurfaceTool_AxeOfRevolution(*args)
 
-def BRepApprox_SurfaceTool_Direction(*args) -> "gp_Dir" :
+def BRepApprox_SurfaceTool_Direction(*args):
   """
     :param S:
     :type S: BRepAdaptor_Surface &
@@ -3063,7 +3276,7 @@ def BRepApprox_SurfaceTool_Direction(*args) -> "gp_Dir" :
     """
   return _BRepApprox.BRepApprox_SurfaceTool_Direction(*args)
 
-def BRepApprox_SurfaceTool_BasisCurve(*args) -> "Handle_Adaptor3d_HCurve" :
+def BRepApprox_SurfaceTool_BasisCurve(*args):
   """
     :param S:
     :type S: BRepAdaptor_Surface &
@@ -3072,7 +3285,7 @@ def BRepApprox_SurfaceTool_BasisCurve(*args) -> "Handle_Adaptor3d_HCurve" :
     """
   return _BRepApprox.BRepApprox_SurfaceTool_BasisCurve(*args)
 
-def BRepApprox_SurfaceTool_NbSamplesU(*args) -> "Standard_Integer" :
+def BRepApprox_SurfaceTool_NbSamplesU(*args):
   """
     :param S:
     :type S: BRepAdaptor_Surface &
@@ -3089,7 +3302,7 @@ def BRepApprox_SurfaceTool_NbSamplesU(*args) -> "Standard_Integer" :
     """
   return _BRepApprox.BRepApprox_SurfaceTool_NbSamplesU(*args)
 
-def BRepApprox_SurfaceTool_NbSamplesV(*args) -> "Standard_Integer" :
+def BRepApprox_SurfaceTool_NbSamplesV(*args):
   """
     :param S:
     :type S: BRepAdaptor_Surface &
@@ -3114,15 +3327,175 @@ class BRepApprox_TheComputeLineBezierOfApprox(object):
         :param Line:
         :type Line: BRepApprox_TheMultiLineOfApprox &
         :param degreemin: default value is 4
-        :type degreemin: int
+        :type degreemin: Standard_Integer
         :param degreemax: default value is 8
-        :type degreemax: int
+        :type degreemax: Standard_Integer
         :param Tolerance3d: default value is 1.0e-3
         :type Tolerance3d: float
         :param Tolerance2d: default value is 1.0e-6
         :type Tolerance2d: float
         :param NbIterations: default value is 5
-        :type NbIterations: int
+        :type NbIterations: Standard_Integer
+        :param cutting: default value is Standard_True
+        :type cutting: bool
+        :param parametrization: default value is Approx_ChordLength
+        :type parametrization: Approx_ParametrizationType
+        :param Squares: default value is Standard_False
+        :type Squares: bool
+        :rtype: None
+
+        :param Line:
+        :type Line: BRepApprox_TheMultiLineOfApprox &
+        :param degreemin: default value is 4
+        :type degreemin: Standard_Integer
+        :param degreemax: default value is 8
+        :type degreemax: Standard_Integer
+        :param Tolerance3d: default value is 1.0e-3
+        :type Tolerance3d: float
+        :param Tolerance2d: default value is 1.0e-6
+        :type Tolerance2d: float
+        :param NbIterations: default value is 5
+        :type NbIterations: Standard_Integer
+        :param cutting: default value is Standard_True
+        :type cutting: bool
+        :param parametrization: default value is Approx_ChordLength
+        :type parametrization: Approx_ParametrizationType
+        :param Squares: default value is Standard_False
+        :type Squares: bool
+        :rtype: None
+
+        :param Line:
+        :type Line: BRepApprox_TheMultiLineOfApprox &
+        :param degreemin: default value is 4
+        :type degreemin: Standard_Integer
+        :param degreemax: default value is 8
+        :type degreemax: Standard_Integer
+        :param Tolerance3d: default value is 1.0e-3
+        :type Tolerance3d: float
+        :param Tolerance2d: default value is 1.0e-6
+        :type Tolerance2d: float
+        :param NbIterations: default value is 5
+        :type NbIterations: Standard_Integer
+        :param cutting: default value is Standard_True
+        :type cutting: bool
+        :param parametrization: default value is Approx_ChordLength
+        :type parametrization: Approx_ParametrizationType
+        :param Squares: default value is Standard_False
+        :type Squares: bool
+        :rtype: None
+
+        :param Line:
+        :type Line: BRepApprox_TheMultiLineOfApprox &
+        :param degreemin: default value is 4
+        :type degreemin: Standard_Integer
+        :param degreemax: default value is 8
+        :type degreemax: Standard_Integer
+        :param Tolerance3d: default value is 1.0e-3
+        :type Tolerance3d: float
+        :param Tolerance2d: default value is 1.0e-6
+        :type Tolerance2d: float
+        :param NbIterations: default value is 5
+        :type NbIterations: Standard_Integer
+        :param cutting: default value is Standard_True
+        :type cutting: bool
+        :param parametrization: default value is Approx_ChordLength
+        :type parametrization: Approx_ParametrizationType
+        :param Squares: default value is Standard_False
+        :type Squares: bool
+        :rtype: None
+
+        :param Line:
+        :type Line: BRepApprox_TheMultiLineOfApprox &
+        :param degreemin: default value is 4
+        :type degreemin: Standard_Integer
+        :param degreemax: default value is 8
+        :type degreemax: Standard_Integer
+        :param Tolerance3d: default value is 1.0e-3
+        :type Tolerance3d: float
+        :param Tolerance2d: default value is 1.0e-6
+        :type Tolerance2d: float
+        :param NbIterations: default value is 5
+        :type NbIterations: Standard_Integer
+        :param cutting: default value is Standard_True
+        :type cutting: bool
+        :param parametrization: default value is Approx_ChordLength
+        :type parametrization: Approx_ParametrizationType
+        :param Squares: default value is Standard_False
+        :type Squares: bool
+        :rtype: None
+
+        :param Line:
+        :type Line: BRepApprox_TheMultiLineOfApprox &
+        :param degreemin: default value is 4
+        :type degreemin: Standard_Integer
+        :param degreemax: default value is 8
+        :type degreemax: Standard_Integer
+        :param Tolerance3d: default value is 1.0e-3
+        :type Tolerance3d: float
+        :param Tolerance2d: default value is 1.0e-6
+        :type Tolerance2d: float
+        :param NbIterations: default value is 5
+        :type NbIterations: Standard_Integer
+        :param cutting: default value is Standard_True
+        :type cutting: bool
+        :param parametrization: default value is Approx_ChordLength
+        :type parametrization: Approx_ParametrizationType
+        :param Squares: default value is Standard_False
+        :type Squares: bool
+        :rtype: None
+
+        :param Line:
+        :type Line: BRepApprox_TheMultiLineOfApprox &
+        :param degreemin: default value is 4
+        :type degreemin: Standard_Integer
+        :param degreemax: default value is 8
+        :type degreemax: Standard_Integer
+        :param Tolerance3d: default value is 1.0e-3
+        :type Tolerance3d: float
+        :param Tolerance2d: default value is 1.0e-6
+        :type Tolerance2d: float
+        :param NbIterations: default value is 5
+        :type NbIterations: Standard_Integer
+        :param cutting: default value is Standard_True
+        :type cutting: bool
+        :param parametrization: default value is Approx_ChordLength
+        :type parametrization: Approx_ParametrizationType
+        :param Squares: default value is Standard_False
+        :type Squares: bool
+        :rtype: None
+
+        :param Line:
+        :type Line: BRepApprox_TheMultiLineOfApprox &
+        :param degreemin: default value is 4
+        :type degreemin: Standard_Integer
+        :param degreemax: default value is 8
+        :type degreemax: Standard_Integer
+        :param Tolerance3d: default value is 1.0e-3
+        :type Tolerance3d: float
+        :param Tolerance2d: default value is 1.0e-6
+        :type Tolerance2d: float
+        :param NbIterations: default value is 5
+        :type NbIterations: Standard_Integer
+        :param cutting: default value is Standard_True
+        :type cutting: bool
+        :param parametrization: default value is Approx_ChordLength
+        :type parametrization: Approx_ParametrizationType
+        :param Squares: default value is Standard_False
+        :type Squares: bool
+        :rtype: None
+
+        :param Line:
+        :type Line: BRepApprox_TheMultiLineOfApprox &
+        :param degreemin: default value is 4
+        :type degreemin: Standard_Integer
+        :param degreemax: default value is 8
+        :type degreemax: Standard_Integer
+        :param Tolerance3d: default value is 1.0e-3
+        :type Tolerance3d: float
+        :param Tolerance2d: default value is 1.0e-6
+        :type Tolerance2d: float
+        :param NbIterations: default value is 5
+        :type NbIterations: Standard_Integer
         :param cutting: default value is Standard_True
         :type cutting: bool
         :param parametrization: default value is Approx_ChordLength
@@ -3136,15 +3509,155 @@ class BRepApprox_TheComputeLineBezierOfApprox(object):
         :param Parameters:
         :type Parameters: math_Vector &
         :param degreemin: default value is 4
-        :type degreemin: int
+        :type degreemin: Standard_Integer
         :param degreemax: default value is 8
-        :type degreemax: int
+        :type degreemax: Standard_Integer
         :param Tolerance3d: default value is 1.0e-03
         :type Tolerance3d: float
         :param Tolerance2d: default value is 1.0e-06
         :type Tolerance2d: float
         :param NbIterations: default value is 5
-        :type NbIterations: int
+        :type NbIterations: Standard_Integer
+        :param cutting: default value is Standard_True
+        :type cutting: bool
+        :param Squares: default value is Standard_False
+        :type Squares: bool
+        :rtype: None
+
+        :param Line:
+        :type Line: BRepApprox_TheMultiLineOfApprox &
+        :param Parameters:
+        :type Parameters: math_Vector &
+        :param degreemin: default value is 4
+        :type degreemin: Standard_Integer
+        :param degreemax: default value is 8
+        :type degreemax: Standard_Integer
+        :param Tolerance3d: default value is 1.0e-03
+        :type Tolerance3d: float
+        :param Tolerance2d: default value is 1.0e-06
+        :type Tolerance2d: float
+        :param NbIterations: default value is 5
+        :type NbIterations: Standard_Integer
+        :param cutting: default value is Standard_True
+        :type cutting: bool
+        :param Squares: default value is Standard_False
+        :type Squares: bool
+        :rtype: None
+
+        :param Line:
+        :type Line: BRepApprox_TheMultiLineOfApprox &
+        :param Parameters:
+        :type Parameters: math_Vector &
+        :param degreemin: default value is 4
+        :type degreemin: Standard_Integer
+        :param degreemax: default value is 8
+        :type degreemax: Standard_Integer
+        :param Tolerance3d: default value is 1.0e-03
+        :type Tolerance3d: float
+        :param Tolerance2d: default value is 1.0e-06
+        :type Tolerance2d: float
+        :param NbIterations: default value is 5
+        :type NbIterations: Standard_Integer
+        :param cutting: default value is Standard_True
+        :type cutting: bool
+        :param Squares: default value is Standard_False
+        :type Squares: bool
+        :rtype: None
+
+        :param Line:
+        :type Line: BRepApprox_TheMultiLineOfApprox &
+        :param Parameters:
+        :type Parameters: math_Vector &
+        :param degreemin: default value is 4
+        :type degreemin: Standard_Integer
+        :param degreemax: default value is 8
+        :type degreemax: Standard_Integer
+        :param Tolerance3d: default value is 1.0e-03
+        :type Tolerance3d: float
+        :param Tolerance2d: default value is 1.0e-06
+        :type Tolerance2d: float
+        :param NbIterations: default value is 5
+        :type NbIterations: Standard_Integer
+        :param cutting: default value is Standard_True
+        :type cutting: bool
+        :param Squares: default value is Standard_False
+        :type Squares: bool
+        :rtype: None
+
+        :param Line:
+        :type Line: BRepApprox_TheMultiLineOfApprox &
+        :param Parameters:
+        :type Parameters: math_Vector &
+        :param degreemin: default value is 4
+        :type degreemin: Standard_Integer
+        :param degreemax: default value is 8
+        :type degreemax: Standard_Integer
+        :param Tolerance3d: default value is 1.0e-03
+        :type Tolerance3d: float
+        :param Tolerance2d: default value is 1.0e-06
+        :type Tolerance2d: float
+        :param NbIterations: default value is 5
+        :type NbIterations: Standard_Integer
+        :param cutting: default value is Standard_True
+        :type cutting: bool
+        :param Squares: default value is Standard_False
+        :type Squares: bool
+        :rtype: None
+
+        :param Line:
+        :type Line: BRepApprox_TheMultiLineOfApprox &
+        :param Parameters:
+        :type Parameters: math_Vector &
+        :param degreemin: default value is 4
+        :type degreemin: Standard_Integer
+        :param degreemax: default value is 8
+        :type degreemax: Standard_Integer
+        :param Tolerance3d: default value is 1.0e-03
+        :type Tolerance3d: float
+        :param Tolerance2d: default value is 1.0e-06
+        :type Tolerance2d: float
+        :param NbIterations: default value is 5
+        :type NbIterations: Standard_Integer
+        :param cutting: default value is Standard_True
+        :type cutting: bool
+        :param Squares: default value is Standard_False
+        :type Squares: bool
+        :rtype: None
+
+        :param Line:
+        :type Line: BRepApprox_TheMultiLineOfApprox &
+        :param Parameters:
+        :type Parameters: math_Vector &
+        :param degreemin: default value is 4
+        :type degreemin: Standard_Integer
+        :param degreemax: default value is 8
+        :type degreemax: Standard_Integer
+        :param Tolerance3d: default value is 1.0e-03
+        :type Tolerance3d: float
+        :param Tolerance2d: default value is 1.0e-06
+        :type Tolerance2d: float
+        :param NbIterations: default value is 5
+        :type NbIterations: Standard_Integer
+        :param cutting: default value is Standard_True
+        :type cutting: bool
+        :param Squares: default value is Standard_False
+        :type Squares: bool
+        :rtype: None
+
+        :param Line:
+        :type Line: BRepApprox_TheMultiLineOfApprox &
+        :param Parameters:
+        :type Parameters: math_Vector &
+        :param degreemin: default value is 4
+        :type degreemin: Standard_Integer
+        :param degreemax: default value is 8
+        :type degreemax: Standard_Integer
+        :param Tolerance3d: default value is 1.0e-03
+        :type Tolerance3d: float
+        :param Tolerance2d: default value is 1.0e-06
+        :type Tolerance2d: float
+        :param NbIterations: default value is 5
+        :type NbIterations: Standard_Integer
         :param cutting: default value is Standard_True
         :type cutting: bool
         :param Squares: default value is Standard_False
@@ -3154,15 +3667,141 @@ class BRepApprox_TheComputeLineBezierOfApprox(object):
         :param Parameters:
         :type Parameters: math_Vector &
         :param degreemin: default value is 4
-        :type degreemin: int
+        :type degreemin: Standard_Integer
         :param degreemax: default value is 8
-        :type degreemax: int
+        :type degreemax: Standard_Integer
         :param Tolerance3d: default value is 1.0e-03
         :type Tolerance3d: float
         :param Tolerance2d: default value is 1.0e-06
         :type Tolerance2d: float
         :param NbIterations: default value is 5
-        :type NbIterations: int
+        :type NbIterations: Standard_Integer
+        :param cutting: default value is Standard_True
+        :type cutting: bool
+        :param Squares: default value is Standard_False
+        :type Squares: bool
+        :rtype: None
+
+        :param Parameters:
+        :type Parameters: math_Vector &
+        :param degreemin: default value is 4
+        :type degreemin: Standard_Integer
+        :param degreemax: default value is 8
+        :type degreemax: Standard_Integer
+        :param Tolerance3d: default value is 1.0e-03
+        :type Tolerance3d: float
+        :param Tolerance2d: default value is 1.0e-06
+        :type Tolerance2d: float
+        :param NbIterations: default value is 5
+        :type NbIterations: Standard_Integer
+        :param cutting: default value is Standard_True
+        :type cutting: bool
+        :param Squares: default value is Standard_False
+        :type Squares: bool
+        :rtype: None
+
+        :param Parameters:
+        :type Parameters: math_Vector &
+        :param degreemin: default value is 4
+        :type degreemin: Standard_Integer
+        :param degreemax: default value is 8
+        :type degreemax: Standard_Integer
+        :param Tolerance3d: default value is 1.0e-03
+        :type Tolerance3d: float
+        :param Tolerance2d: default value is 1.0e-06
+        :type Tolerance2d: float
+        :param NbIterations: default value is 5
+        :type NbIterations: Standard_Integer
+        :param cutting: default value is Standard_True
+        :type cutting: bool
+        :param Squares: default value is Standard_False
+        :type Squares: bool
+        :rtype: None
+
+        :param Parameters:
+        :type Parameters: math_Vector &
+        :param degreemin: default value is 4
+        :type degreemin: Standard_Integer
+        :param degreemax: default value is 8
+        :type degreemax: Standard_Integer
+        :param Tolerance3d: default value is 1.0e-03
+        :type Tolerance3d: float
+        :param Tolerance2d: default value is 1.0e-06
+        :type Tolerance2d: float
+        :param NbIterations: default value is 5
+        :type NbIterations: Standard_Integer
+        :param cutting: default value is Standard_True
+        :type cutting: bool
+        :param Squares: default value is Standard_False
+        :type Squares: bool
+        :rtype: None
+
+        :param Parameters:
+        :type Parameters: math_Vector &
+        :param degreemin: default value is 4
+        :type degreemin: Standard_Integer
+        :param degreemax: default value is 8
+        :type degreemax: Standard_Integer
+        :param Tolerance3d: default value is 1.0e-03
+        :type Tolerance3d: float
+        :param Tolerance2d: default value is 1.0e-06
+        :type Tolerance2d: float
+        :param NbIterations: default value is 5
+        :type NbIterations: Standard_Integer
+        :param cutting: default value is Standard_True
+        :type cutting: bool
+        :param Squares: default value is Standard_False
+        :type Squares: bool
+        :rtype: None
+
+        :param Parameters:
+        :type Parameters: math_Vector &
+        :param degreemin: default value is 4
+        :type degreemin: Standard_Integer
+        :param degreemax: default value is 8
+        :type degreemax: Standard_Integer
+        :param Tolerance3d: default value is 1.0e-03
+        :type Tolerance3d: float
+        :param Tolerance2d: default value is 1.0e-06
+        :type Tolerance2d: float
+        :param NbIterations: default value is 5
+        :type NbIterations: Standard_Integer
+        :param cutting: default value is Standard_True
+        :type cutting: bool
+        :param Squares: default value is Standard_False
+        :type Squares: bool
+        :rtype: None
+
+        :param Parameters:
+        :type Parameters: math_Vector &
+        :param degreemin: default value is 4
+        :type degreemin: Standard_Integer
+        :param degreemax: default value is 8
+        :type degreemax: Standard_Integer
+        :param Tolerance3d: default value is 1.0e-03
+        :type Tolerance3d: float
+        :param Tolerance2d: default value is 1.0e-06
+        :type Tolerance2d: float
+        :param NbIterations: default value is 5
+        :type NbIterations: Standard_Integer
+        :param cutting: default value is Standard_True
+        :type cutting: bool
+        :param Squares: default value is Standard_False
+        :type Squares: bool
+        :rtype: None
+
+        :param Parameters:
+        :type Parameters: math_Vector &
+        :param degreemin: default value is 4
+        :type degreemin: Standard_Integer
+        :param degreemax: default value is 8
+        :type degreemax: Standard_Integer
+        :param Tolerance3d: default value is 1.0e-03
+        :type Tolerance3d: float
+        :param Tolerance2d: default value is 1.0e-06
+        :type Tolerance2d: float
+        :param NbIterations: default value is 5
+        :type NbIterations: Standard_Integer
         :param cutting: default value is Standard_True
         :type cutting: bool
         :param Squares: default value is Standard_False
@@ -3170,15 +3809,159 @@ class BRepApprox_TheComputeLineBezierOfApprox(object):
         :rtype: None
 
         :param degreemin: default value is 4
-        :type degreemin: int
+        :type degreemin: Standard_Integer
         :param degreemax: default value is 8
-        :type degreemax: int
+        :type degreemax: Standard_Integer
         :param Tolerance3d: default value is 1.0e-03
         :type Tolerance3d: float
         :param Tolerance2d: default value is 1.0e-06
         :type Tolerance2d: float
         :param NbIterations: default value is 5
-        :type NbIterations: int
+        :type NbIterations: Standard_Integer
+        :param cutting: default value is Standard_True
+        :type cutting: bool
+        :param parametrization: default value is Approx_ChordLength
+        :type parametrization: Approx_ParametrizationType
+        :param Squares: default value is Standard_False
+        :type Squares: bool
+        :rtype: None
+
+        :param degreemin: default value is 4
+        :type degreemin: Standard_Integer
+        :param degreemax: default value is 8
+        :type degreemax: Standard_Integer
+        :param Tolerance3d: default value is 1.0e-03
+        :type Tolerance3d: float
+        :param Tolerance2d: default value is 1.0e-06
+        :type Tolerance2d: float
+        :param NbIterations: default value is 5
+        :type NbIterations: Standard_Integer
+        :param cutting: default value is Standard_True
+        :type cutting: bool
+        :param parametrization: default value is Approx_ChordLength
+        :type parametrization: Approx_ParametrizationType
+        :param Squares: default value is Standard_False
+        :type Squares: bool
+        :rtype: None
+
+        :param degreemin: default value is 4
+        :type degreemin: Standard_Integer
+        :param degreemax: default value is 8
+        :type degreemax: Standard_Integer
+        :param Tolerance3d: default value is 1.0e-03
+        :type Tolerance3d: float
+        :param Tolerance2d: default value is 1.0e-06
+        :type Tolerance2d: float
+        :param NbIterations: default value is 5
+        :type NbIterations: Standard_Integer
+        :param cutting: default value is Standard_True
+        :type cutting: bool
+        :param parametrization: default value is Approx_ChordLength
+        :type parametrization: Approx_ParametrizationType
+        :param Squares: default value is Standard_False
+        :type Squares: bool
+        :rtype: None
+
+        :param degreemin: default value is 4
+        :type degreemin: Standard_Integer
+        :param degreemax: default value is 8
+        :type degreemax: Standard_Integer
+        :param Tolerance3d: default value is 1.0e-03
+        :type Tolerance3d: float
+        :param Tolerance2d: default value is 1.0e-06
+        :type Tolerance2d: float
+        :param NbIterations: default value is 5
+        :type NbIterations: Standard_Integer
+        :param cutting: default value is Standard_True
+        :type cutting: bool
+        :param parametrization: default value is Approx_ChordLength
+        :type parametrization: Approx_ParametrizationType
+        :param Squares: default value is Standard_False
+        :type Squares: bool
+        :rtype: None
+
+        :param degreemin: default value is 4
+        :type degreemin: Standard_Integer
+        :param degreemax: default value is 8
+        :type degreemax: Standard_Integer
+        :param Tolerance3d: default value is 1.0e-03
+        :type Tolerance3d: float
+        :param Tolerance2d: default value is 1.0e-06
+        :type Tolerance2d: float
+        :param NbIterations: default value is 5
+        :type NbIterations: Standard_Integer
+        :param cutting: default value is Standard_True
+        :type cutting: bool
+        :param parametrization: default value is Approx_ChordLength
+        :type parametrization: Approx_ParametrizationType
+        :param Squares: default value is Standard_False
+        :type Squares: bool
+        :rtype: None
+
+        :param degreemin: default value is 4
+        :type degreemin: Standard_Integer
+        :param degreemax: default value is 8
+        :type degreemax: Standard_Integer
+        :param Tolerance3d: default value is 1.0e-03
+        :type Tolerance3d: float
+        :param Tolerance2d: default value is 1.0e-06
+        :type Tolerance2d: float
+        :param NbIterations: default value is 5
+        :type NbIterations: Standard_Integer
+        :param cutting: default value is Standard_True
+        :type cutting: bool
+        :param parametrization: default value is Approx_ChordLength
+        :type parametrization: Approx_ParametrizationType
+        :param Squares: default value is Standard_False
+        :type Squares: bool
+        :rtype: None
+
+        :param degreemin: default value is 4
+        :type degreemin: Standard_Integer
+        :param degreemax: default value is 8
+        :type degreemax: Standard_Integer
+        :param Tolerance3d: default value is 1.0e-03
+        :type Tolerance3d: float
+        :param Tolerance2d: default value is 1.0e-06
+        :type Tolerance2d: float
+        :param NbIterations: default value is 5
+        :type NbIterations: Standard_Integer
+        :param cutting: default value is Standard_True
+        :type cutting: bool
+        :param parametrization: default value is Approx_ChordLength
+        :type parametrization: Approx_ParametrizationType
+        :param Squares: default value is Standard_False
+        :type Squares: bool
+        :rtype: None
+
+        :param degreemin: default value is 4
+        :type degreemin: Standard_Integer
+        :param degreemax: default value is 8
+        :type degreemax: Standard_Integer
+        :param Tolerance3d: default value is 1.0e-03
+        :type Tolerance3d: float
+        :param Tolerance2d: default value is 1.0e-06
+        :type Tolerance2d: float
+        :param NbIterations: default value is 5
+        :type NbIterations: Standard_Integer
+        :param cutting: default value is Standard_True
+        :type cutting: bool
+        :param parametrization: default value is Approx_ChordLength
+        :type parametrization: Approx_ParametrizationType
+        :param Squares: default value is Standard_False
+        :type Squares: bool
+        :rtype: None
+
+        :param degreemin: default value is 4
+        :type degreemin: Standard_Integer
+        :param degreemax: default value is 8
+        :type degreemax: Standard_Integer
+        :param Tolerance3d: default value is 1.0e-03
+        :type Tolerance3d: float
+        :param Tolerance2d: default value is 1.0e-06
+        :type Tolerance2d: float
+        :param NbIterations: default value is 5
+        :type NbIterations: Standard_Integer
         :param cutting: default value is Standard_True
         :type cutting: bool
         :param parametrization: default value is Approx_ChordLength
@@ -3189,18 +3972,162 @@ class BRepApprox_TheComputeLineBezierOfApprox(object):
 
         """
         _BRepApprox.BRepApprox_TheComputeLineBezierOfApprox_swiginit(self,_BRepApprox.new_BRepApprox_TheComputeLineBezierOfApprox(*args))
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
         :param degreemin: default value is 4
-        :type degreemin: int
+        :type degreemin: Standard_Integer
         :param degreemax: default value is 8
-        :type degreemax: int
+        :type degreemax: Standard_Integer
         :param Tolerance3d: default value is 1.0e-03
         :type Tolerance3d: float
         :param Tolerance2d: default value is 1.0e-06
         :type Tolerance2d: float
         :param NbIterations: default value is 5
-        :type NbIterations: int
+        :type NbIterations: Standard_Integer
+        :param cutting: default value is Standard_True
+        :type cutting: bool
+        :param parametrization: default value is Approx_ChordLength
+        :type parametrization: Approx_ParametrizationType
+        :param Squares: default value is Standard_False
+        :type Squares: bool
+        :rtype: None
+
+        :param degreemin: default value is 4
+        :type degreemin: Standard_Integer
+        :param degreemax: default value is 8
+        :type degreemax: Standard_Integer
+        :param Tolerance3d: default value is 1.0e-03
+        :type Tolerance3d: float
+        :param Tolerance2d: default value is 1.0e-06
+        :type Tolerance2d: float
+        :param NbIterations: default value is 5
+        :type NbIterations: Standard_Integer
+        :param cutting: default value is Standard_True
+        :type cutting: bool
+        :param parametrization: default value is Approx_ChordLength
+        :type parametrization: Approx_ParametrizationType
+        :param Squares: default value is Standard_False
+        :type Squares: bool
+        :rtype: None
+
+        :param degreemin: default value is 4
+        :type degreemin: Standard_Integer
+        :param degreemax: default value is 8
+        :type degreemax: Standard_Integer
+        :param Tolerance3d: default value is 1.0e-03
+        :type Tolerance3d: float
+        :param Tolerance2d: default value is 1.0e-06
+        :type Tolerance2d: float
+        :param NbIterations: default value is 5
+        :type NbIterations: Standard_Integer
+        :param cutting: default value is Standard_True
+        :type cutting: bool
+        :param parametrization: default value is Approx_ChordLength
+        :type parametrization: Approx_ParametrizationType
+        :param Squares: default value is Standard_False
+        :type Squares: bool
+        :rtype: None
+
+        :param degreemin: default value is 4
+        :type degreemin: Standard_Integer
+        :param degreemax: default value is 8
+        :type degreemax: Standard_Integer
+        :param Tolerance3d: default value is 1.0e-03
+        :type Tolerance3d: float
+        :param Tolerance2d: default value is 1.0e-06
+        :type Tolerance2d: float
+        :param NbIterations: default value is 5
+        :type NbIterations: Standard_Integer
+        :param cutting: default value is Standard_True
+        :type cutting: bool
+        :param parametrization: default value is Approx_ChordLength
+        :type parametrization: Approx_ParametrizationType
+        :param Squares: default value is Standard_False
+        :type Squares: bool
+        :rtype: None
+
+        :param degreemin: default value is 4
+        :type degreemin: Standard_Integer
+        :param degreemax: default value is 8
+        :type degreemax: Standard_Integer
+        :param Tolerance3d: default value is 1.0e-03
+        :type Tolerance3d: float
+        :param Tolerance2d: default value is 1.0e-06
+        :type Tolerance2d: float
+        :param NbIterations: default value is 5
+        :type NbIterations: Standard_Integer
+        :param cutting: default value is Standard_True
+        :type cutting: bool
+        :param parametrization: default value is Approx_ChordLength
+        :type parametrization: Approx_ParametrizationType
+        :param Squares: default value is Standard_False
+        :type Squares: bool
+        :rtype: None
+
+        :param degreemin: default value is 4
+        :type degreemin: Standard_Integer
+        :param degreemax: default value is 8
+        :type degreemax: Standard_Integer
+        :param Tolerance3d: default value is 1.0e-03
+        :type Tolerance3d: float
+        :param Tolerance2d: default value is 1.0e-06
+        :type Tolerance2d: float
+        :param NbIterations: default value is 5
+        :type NbIterations: Standard_Integer
+        :param cutting: default value is Standard_True
+        :type cutting: bool
+        :param parametrization: default value is Approx_ChordLength
+        :type parametrization: Approx_ParametrizationType
+        :param Squares: default value is Standard_False
+        :type Squares: bool
+        :rtype: None
+
+        :param degreemin: default value is 4
+        :type degreemin: Standard_Integer
+        :param degreemax: default value is 8
+        :type degreemax: Standard_Integer
+        :param Tolerance3d: default value is 1.0e-03
+        :type Tolerance3d: float
+        :param Tolerance2d: default value is 1.0e-06
+        :type Tolerance2d: float
+        :param NbIterations: default value is 5
+        :type NbIterations: Standard_Integer
+        :param cutting: default value is Standard_True
+        :type cutting: bool
+        :param parametrization: default value is Approx_ChordLength
+        :type parametrization: Approx_ParametrizationType
+        :param Squares: default value is Standard_False
+        :type Squares: bool
+        :rtype: None
+
+        :param degreemin: default value is 4
+        :type degreemin: Standard_Integer
+        :param degreemax: default value is 8
+        :type degreemax: Standard_Integer
+        :param Tolerance3d: default value is 1.0e-03
+        :type Tolerance3d: float
+        :param Tolerance2d: default value is 1.0e-06
+        :type Tolerance2d: float
+        :param NbIterations: default value is 5
+        :type NbIterations: Standard_Integer
+        :param cutting: default value is Standard_True
+        :type cutting: bool
+        :param parametrization: default value is Approx_ChordLength
+        :type parametrization: Approx_ParametrizationType
+        :param Squares: default value is Standard_False
+        :type Squares: bool
+        :rtype: None
+
+        :param degreemin: default value is 4
+        :type degreemin: Standard_Integer
+        :param degreemax: default value is 8
+        :type degreemax: Standard_Integer
+        :param Tolerance3d: default value is 1.0e-03
+        :type Tolerance3d: float
+        :param Tolerance2d: default value is 1.0e-06
+        :type Tolerance2d: float
+        :param NbIterations: default value is 5
+        :type NbIterations: Standard_Integer
         :param cutting: default value is Standard_True
         :type cutting: bool
         :param parametrization: default value is Approx_ChordLength
@@ -3212,7 +4139,7 @@ class BRepApprox_TheComputeLineBezierOfApprox(object):
         """
         return _BRepApprox.BRepApprox_TheComputeLineBezierOfApprox_Init(self, *args)
 
-    def Perform(self, *args) -> "void" :
+    def Perform(self, *args):
         """
         :param Line:
         :type Line: BRepApprox_TheMultiLineOfApprox &
@@ -3221,18 +4148,18 @@ class BRepApprox_TheComputeLineBezierOfApprox(object):
         """
         return _BRepApprox.BRepApprox_TheComputeLineBezierOfApprox_Perform(self, *args)
 
-    def SetDegrees(self, *args) -> "void" :
+    def SetDegrees(self, *args):
         """
         :param degreemin:
-        :type degreemin: int
+        :type degreemin: Standard_Integer
         :param degreemax:
-        :type degreemax: int
+        :type degreemax: Standard_Integer
         :rtype: None
 
         """
         return _BRepApprox.BRepApprox_TheComputeLineBezierOfApprox_SetDegrees(self, *args)
 
-    def SetTolerances(self, *args) -> "void" :
+    def SetTolerances(self, *args):
         """
         :param Tolerance3d:
         :type Tolerance3d: float
@@ -3243,7 +4170,7 @@ class BRepApprox_TheComputeLineBezierOfApprox(object):
         """
         return _BRepApprox.BRepApprox_TheComputeLineBezierOfApprox_SetTolerances(self, *args)
 
-    def SetConstraints(self, *args) -> "void" :
+    def SetConstraints(self, *args):
         """
         :param firstC:
         :type firstC: AppParCurves_Constraint
@@ -3254,24 +4181,24 @@ class BRepApprox_TheComputeLineBezierOfApprox(object):
         """
         return _BRepApprox.BRepApprox_TheComputeLineBezierOfApprox_SetConstraints(self, *args)
 
-    def IsAllApproximated(self, *args) -> "Standard_Boolean" :
+    def IsAllApproximated(self):
         """
         :rtype: bool
 
         """
-        return _BRepApprox.BRepApprox_TheComputeLineBezierOfApprox_IsAllApproximated(self, *args)
+        return _BRepApprox.BRepApprox_TheComputeLineBezierOfApprox_IsAllApproximated(self)
 
-    def IsToleranceReached(self, *args) -> "Standard_Boolean" :
+    def IsToleranceReached(self):
         """
         :rtype: bool
 
         """
-        return _BRepApprox.BRepApprox_TheComputeLineBezierOfApprox_IsToleranceReached(self, *args)
+        return _BRepApprox.BRepApprox_TheComputeLineBezierOfApprox_IsToleranceReached(self)
 
-    def Error(self, *args) -> "void" :
+    def Error(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param tol3d:
         :type tol3d: float &
         :param tol2d:
@@ -3281,39 +4208,47 @@ class BRepApprox_TheComputeLineBezierOfApprox(object):
         """
         return _BRepApprox.BRepApprox_TheComputeLineBezierOfApprox_Error(self, *args)
 
-    def NbMultiCurves(self, *args) -> "Standard_Integer" :
+    def NbMultiCurves(self):
         """
         :rtype: int
 
         """
-        return _BRepApprox.BRepApprox_TheComputeLineBezierOfApprox_NbMultiCurves(self, *args)
+        return _BRepApprox.BRepApprox_TheComputeLineBezierOfApprox_NbMultiCurves(self)
 
-    def Value(self, *args) -> "AppParCurves_MultiCurve const &" :
+    def Value(self, Index=1):
         """
         :param Index: default value is 1
-        :type Index: int
+        :type Index: Standard_Integer
+        :rtype: AppParCurves_MultiCurve
+
+        :param Index: default value is 1
+        :type Index: Standard_Integer
         :rtype: AppParCurves_MultiCurve
 
         """
-        return _BRepApprox.BRepApprox_TheComputeLineBezierOfApprox_Value(self, *args)
+        return _BRepApprox.BRepApprox_TheComputeLineBezierOfApprox_Value(self, Index)
 
-    def ChangeValue(self, *args) -> "AppParCurves_MultiCurve &" :
+    def ChangeValue(self, Index=1):
         """
         :param Index: default value is 1
-        :type Index: int
+        :type Index: Standard_Integer
+        :rtype: AppParCurves_MultiCurve
+
+        :param Index: default value is 1
+        :type Index: Standard_Integer
         :rtype: AppParCurves_MultiCurve
 
         """
-        return _BRepApprox.BRepApprox_TheComputeLineBezierOfApprox_ChangeValue(self, *args)
+        return _BRepApprox.BRepApprox_TheComputeLineBezierOfApprox_ChangeValue(self, Index)
 
-    def SplineValue(self, *args) -> "AppParCurves_MultiBSpCurve const &" :
+    def SplineValue(self):
         """
         :rtype: AppParCurves_MultiBSpCurve
 
         """
-        return _BRepApprox.BRepApprox_TheComputeLineBezierOfApprox_SplineValue(self, *args)
+        return _BRepApprox.BRepApprox_TheComputeLineBezierOfApprox_SplineValue(self)
 
-    def Parametrization(self, *args) -> "void" :
+    def Parametrization(self, *args):
         """
         :param partype:
         :type partype: Approx_ParametrizationType &
@@ -3322,14 +4257,18 @@ class BRepApprox_TheComputeLineBezierOfApprox(object):
         """
         return _BRepApprox.BRepApprox_TheComputeLineBezierOfApprox_Parametrization(self, *args)
 
-    def Parameters(self, *args) -> "TColStd_Array1OfReal const &" :
+    def Parameters(self, Index=1):
         """
         :param Index: default value is 1
-        :type Index: int
+        :type Index: Standard_Integer
+        :rtype: TColStd_Array1OfReal
+
+        :param Index: default value is 1
+        :type Index: Standard_Integer
         :rtype: TColStd_Array1OfReal
 
         """
-        return _BRepApprox.BRepApprox_TheComputeLineBezierOfApprox_Parameters(self, *args)
+        return _BRepApprox.BRepApprox_TheComputeLineBezierOfApprox_Parameters(self, Index)
 
     def __del__(self):
     	try:
@@ -3365,15 +4304,175 @@ class BRepApprox_TheComputeLineOfApprox(object):
         :param Line:
         :type Line: BRepApprox_TheMultiLineOfApprox &
         :param degreemin: default value is 4
-        :type degreemin: int
+        :type degreemin: Standard_Integer
         :param degreemax: default value is 8
-        :type degreemax: int
+        :type degreemax: Standard_Integer
         :param Tolerance3d: default value is 1.0e-3
         :type Tolerance3d: float
         :param Tolerance2d: default value is 1.0e-6
         :type Tolerance2d: float
         :param NbIterations: default value is 5
-        :type NbIterations: int
+        :type NbIterations: Standard_Integer
+        :param cutting: default value is Standard_True
+        :type cutting: bool
+        :param parametrization: default value is Approx_ChordLength
+        :type parametrization: Approx_ParametrizationType
+        :param Squares: default value is Standard_False
+        :type Squares: bool
+        :rtype: None
+
+        :param Line:
+        :type Line: BRepApprox_TheMultiLineOfApprox &
+        :param degreemin: default value is 4
+        :type degreemin: Standard_Integer
+        :param degreemax: default value is 8
+        :type degreemax: Standard_Integer
+        :param Tolerance3d: default value is 1.0e-3
+        :type Tolerance3d: float
+        :param Tolerance2d: default value is 1.0e-6
+        :type Tolerance2d: float
+        :param NbIterations: default value is 5
+        :type NbIterations: Standard_Integer
+        :param cutting: default value is Standard_True
+        :type cutting: bool
+        :param parametrization: default value is Approx_ChordLength
+        :type parametrization: Approx_ParametrizationType
+        :param Squares: default value is Standard_False
+        :type Squares: bool
+        :rtype: None
+
+        :param Line:
+        :type Line: BRepApprox_TheMultiLineOfApprox &
+        :param degreemin: default value is 4
+        :type degreemin: Standard_Integer
+        :param degreemax: default value is 8
+        :type degreemax: Standard_Integer
+        :param Tolerance3d: default value is 1.0e-3
+        :type Tolerance3d: float
+        :param Tolerance2d: default value is 1.0e-6
+        :type Tolerance2d: float
+        :param NbIterations: default value is 5
+        :type NbIterations: Standard_Integer
+        :param cutting: default value is Standard_True
+        :type cutting: bool
+        :param parametrization: default value is Approx_ChordLength
+        :type parametrization: Approx_ParametrizationType
+        :param Squares: default value is Standard_False
+        :type Squares: bool
+        :rtype: None
+
+        :param Line:
+        :type Line: BRepApprox_TheMultiLineOfApprox &
+        :param degreemin: default value is 4
+        :type degreemin: Standard_Integer
+        :param degreemax: default value is 8
+        :type degreemax: Standard_Integer
+        :param Tolerance3d: default value is 1.0e-3
+        :type Tolerance3d: float
+        :param Tolerance2d: default value is 1.0e-6
+        :type Tolerance2d: float
+        :param NbIterations: default value is 5
+        :type NbIterations: Standard_Integer
+        :param cutting: default value is Standard_True
+        :type cutting: bool
+        :param parametrization: default value is Approx_ChordLength
+        :type parametrization: Approx_ParametrizationType
+        :param Squares: default value is Standard_False
+        :type Squares: bool
+        :rtype: None
+
+        :param Line:
+        :type Line: BRepApprox_TheMultiLineOfApprox &
+        :param degreemin: default value is 4
+        :type degreemin: Standard_Integer
+        :param degreemax: default value is 8
+        :type degreemax: Standard_Integer
+        :param Tolerance3d: default value is 1.0e-3
+        :type Tolerance3d: float
+        :param Tolerance2d: default value is 1.0e-6
+        :type Tolerance2d: float
+        :param NbIterations: default value is 5
+        :type NbIterations: Standard_Integer
+        :param cutting: default value is Standard_True
+        :type cutting: bool
+        :param parametrization: default value is Approx_ChordLength
+        :type parametrization: Approx_ParametrizationType
+        :param Squares: default value is Standard_False
+        :type Squares: bool
+        :rtype: None
+
+        :param Line:
+        :type Line: BRepApprox_TheMultiLineOfApprox &
+        :param degreemin: default value is 4
+        :type degreemin: Standard_Integer
+        :param degreemax: default value is 8
+        :type degreemax: Standard_Integer
+        :param Tolerance3d: default value is 1.0e-3
+        :type Tolerance3d: float
+        :param Tolerance2d: default value is 1.0e-6
+        :type Tolerance2d: float
+        :param NbIterations: default value is 5
+        :type NbIterations: Standard_Integer
+        :param cutting: default value is Standard_True
+        :type cutting: bool
+        :param parametrization: default value is Approx_ChordLength
+        :type parametrization: Approx_ParametrizationType
+        :param Squares: default value is Standard_False
+        :type Squares: bool
+        :rtype: None
+
+        :param Line:
+        :type Line: BRepApprox_TheMultiLineOfApprox &
+        :param degreemin: default value is 4
+        :type degreemin: Standard_Integer
+        :param degreemax: default value is 8
+        :type degreemax: Standard_Integer
+        :param Tolerance3d: default value is 1.0e-3
+        :type Tolerance3d: float
+        :param Tolerance2d: default value is 1.0e-6
+        :type Tolerance2d: float
+        :param NbIterations: default value is 5
+        :type NbIterations: Standard_Integer
+        :param cutting: default value is Standard_True
+        :type cutting: bool
+        :param parametrization: default value is Approx_ChordLength
+        :type parametrization: Approx_ParametrizationType
+        :param Squares: default value is Standard_False
+        :type Squares: bool
+        :rtype: None
+
+        :param Line:
+        :type Line: BRepApprox_TheMultiLineOfApprox &
+        :param degreemin: default value is 4
+        :type degreemin: Standard_Integer
+        :param degreemax: default value is 8
+        :type degreemax: Standard_Integer
+        :param Tolerance3d: default value is 1.0e-3
+        :type Tolerance3d: float
+        :param Tolerance2d: default value is 1.0e-6
+        :type Tolerance2d: float
+        :param NbIterations: default value is 5
+        :type NbIterations: Standard_Integer
+        :param cutting: default value is Standard_True
+        :type cutting: bool
+        :param parametrization: default value is Approx_ChordLength
+        :type parametrization: Approx_ParametrizationType
+        :param Squares: default value is Standard_False
+        :type Squares: bool
+        :rtype: None
+
+        :param Line:
+        :type Line: BRepApprox_TheMultiLineOfApprox &
+        :param degreemin: default value is 4
+        :type degreemin: Standard_Integer
+        :param degreemax: default value is 8
+        :type degreemax: Standard_Integer
+        :param Tolerance3d: default value is 1.0e-3
+        :type Tolerance3d: float
+        :param Tolerance2d: default value is 1.0e-6
+        :type Tolerance2d: float
+        :param NbIterations: default value is 5
+        :type NbIterations: Standard_Integer
         :param cutting: default value is Standard_True
         :type cutting: bool
         :param parametrization: default value is Approx_ChordLength
@@ -3387,15 +4486,155 @@ class BRepApprox_TheComputeLineOfApprox(object):
         :param Parameters:
         :type Parameters: math_Vector &
         :param degreemin: default value is 4
-        :type degreemin: int
+        :type degreemin: Standard_Integer
         :param degreemax: default value is 8
-        :type degreemax: int
+        :type degreemax: Standard_Integer
         :param Tolerance3d: default value is 1.0e-03
         :type Tolerance3d: float
         :param Tolerance2d: default value is 1.0e-06
         :type Tolerance2d: float
         :param NbIterations: default value is 5
-        :type NbIterations: int
+        :type NbIterations: Standard_Integer
+        :param cutting: default value is Standard_True
+        :type cutting: bool
+        :param Squares: default value is Standard_False
+        :type Squares: bool
+        :rtype: None
+
+        :param Line:
+        :type Line: BRepApprox_TheMultiLineOfApprox &
+        :param Parameters:
+        :type Parameters: math_Vector &
+        :param degreemin: default value is 4
+        :type degreemin: Standard_Integer
+        :param degreemax: default value is 8
+        :type degreemax: Standard_Integer
+        :param Tolerance3d: default value is 1.0e-03
+        :type Tolerance3d: float
+        :param Tolerance2d: default value is 1.0e-06
+        :type Tolerance2d: float
+        :param NbIterations: default value is 5
+        :type NbIterations: Standard_Integer
+        :param cutting: default value is Standard_True
+        :type cutting: bool
+        :param Squares: default value is Standard_False
+        :type Squares: bool
+        :rtype: None
+
+        :param Line:
+        :type Line: BRepApprox_TheMultiLineOfApprox &
+        :param Parameters:
+        :type Parameters: math_Vector &
+        :param degreemin: default value is 4
+        :type degreemin: Standard_Integer
+        :param degreemax: default value is 8
+        :type degreemax: Standard_Integer
+        :param Tolerance3d: default value is 1.0e-03
+        :type Tolerance3d: float
+        :param Tolerance2d: default value is 1.0e-06
+        :type Tolerance2d: float
+        :param NbIterations: default value is 5
+        :type NbIterations: Standard_Integer
+        :param cutting: default value is Standard_True
+        :type cutting: bool
+        :param Squares: default value is Standard_False
+        :type Squares: bool
+        :rtype: None
+
+        :param Line:
+        :type Line: BRepApprox_TheMultiLineOfApprox &
+        :param Parameters:
+        :type Parameters: math_Vector &
+        :param degreemin: default value is 4
+        :type degreemin: Standard_Integer
+        :param degreemax: default value is 8
+        :type degreemax: Standard_Integer
+        :param Tolerance3d: default value is 1.0e-03
+        :type Tolerance3d: float
+        :param Tolerance2d: default value is 1.0e-06
+        :type Tolerance2d: float
+        :param NbIterations: default value is 5
+        :type NbIterations: Standard_Integer
+        :param cutting: default value is Standard_True
+        :type cutting: bool
+        :param Squares: default value is Standard_False
+        :type Squares: bool
+        :rtype: None
+
+        :param Line:
+        :type Line: BRepApprox_TheMultiLineOfApprox &
+        :param Parameters:
+        :type Parameters: math_Vector &
+        :param degreemin: default value is 4
+        :type degreemin: Standard_Integer
+        :param degreemax: default value is 8
+        :type degreemax: Standard_Integer
+        :param Tolerance3d: default value is 1.0e-03
+        :type Tolerance3d: float
+        :param Tolerance2d: default value is 1.0e-06
+        :type Tolerance2d: float
+        :param NbIterations: default value is 5
+        :type NbIterations: Standard_Integer
+        :param cutting: default value is Standard_True
+        :type cutting: bool
+        :param Squares: default value is Standard_False
+        :type Squares: bool
+        :rtype: None
+
+        :param Line:
+        :type Line: BRepApprox_TheMultiLineOfApprox &
+        :param Parameters:
+        :type Parameters: math_Vector &
+        :param degreemin: default value is 4
+        :type degreemin: Standard_Integer
+        :param degreemax: default value is 8
+        :type degreemax: Standard_Integer
+        :param Tolerance3d: default value is 1.0e-03
+        :type Tolerance3d: float
+        :param Tolerance2d: default value is 1.0e-06
+        :type Tolerance2d: float
+        :param NbIterations: default value is 5
+        :type NbIterations: Standard_Integer
+        :param cutting: default value is Standard_True
+        :type cutting: bool
+        :param Squares: default value is Standard_False
+        :type Squares: bool
+        :rtype: None
+
+        :param Line:
+        :type Line: BRepApprox_TheMultiLineOfApprox &
+        :param Parameters:
+        :type Parameters: math_Vector &
+        :param degreemin: default value is 4
+        :type degreemin: Standard_Integer
+        :param degreemax: default value is 8
+        :type degreemax: Standard_Integer
+        :param Tolerance3d: default value is 1.0e-03
+        :type Tolerance3d: float
+        :param Tolerance2d: default value is 1.0e-06
+        :type Tolerance2d: float
+        :param NbIterations: default value is 5
+        :type NbIterations: Standard_Integer
+        :param cutting: default value is Standard_True
+        :type cutting: bool
+        :param Squares: default value is Standard_False
+        :type Squares: bool
+        :rtype: None
+
+        :param Line:
+        :type Line: BRepApprox_TheMultiLineOfApprox &
+        :param Parameters:
+        :type Parameters: math_Vector &
+        :param degreemin: default value is 4
+        :type degreemin: Standard_Integer
+        :param degreemax: default value is 8
+        :type degreemax: Standard_Integer
+        :param Tolerance3d: default value is 1.0e-03
+        :type Tolerance3d: float
+        :param Tolerance2d: default value is 1.0e-06
+        :type Tolerance2d: float
+        :param NbIterations: default value is 5
+        :type NbIterations: Standard_Integer
         :param cutting: default value is Standard_True
         :type cutting: bool
         :param Squares: default value is Standard_False
@@ -3405,15 +4644,141 @@ class BRepApprox_TheComputeLineOfApprox(object):
         :param Parameters:
         :type Parameters: math_Vector &
         :param degreemin: default value is 4
-        :type degreemin: int
+        :type degreemin: Standard_Integer
         :param degreemax: default value is 8
-        :type degreemax: int
+        :type degreemax: Standard_Integer
         :param Tolerance3d: default value is 1.0e-03
         :type Tolerance3d: float
         :param Tolerance2d: default value is 1.0e-06
         :type Tolerance2d: float
         :param NbIterations: default value is 5
-        :type NbIterations: int
+        :type NbIterations: Standard_Integer
+        :param cutting: default value is Standard_True
+        :type cutting: bool
+        :param Squares: default value is Standard_False
+        :type Squares: bool
+        :rtype: None
+
+        :param Parameters:
+        :type Parameters: math_Vector &
+        :param degreemin: default value is 4
+        :type degreemin: Standard_Integer
+        :param degreemax: default value is 8
+        :type degreemax: Standard_Integer
+        :param Tolerance3d: default value is 1.0e-03
+        :type Tolerance3d: float
+        :param Tolerance2d: default value is 1.0e-06
+        :type Tolerance2d: float
+        :param NbIterations: default value is 5
+        :type NbIterations: Standard_Integer
+        :param cutting: default value is Standard_True
+        :type cutting: bool
+        :param Squares: default value is Standard_False
+        :type Squares: bool
+        :rtype: None
+
+        :param Parameters:
+        :type Parameters: math_Vector &
+        :param degreemin: default value is 4
+        :type degreemin: Standard_Integer
+        :param degreemax: default value is 8
+        :type degreemax: Standard_Integer
+        :param Tolerance3d: default value is 1.0e-03
+        :type Tolerance3d: float
+        :param Tolerance2d: default value is 1.0e-06
+        :type Tolerance2d: float
+        :param NbIterations: default value is 5
+        :type NbIterations: Standard_Integer
+        :param cutting: default value is Standard_True
+        :type cutting: bool
+        :param Squares: default value is Standard_False
+        :type Squares: bool
+        :rtype: None
+
+        :param Parameters:
+        :type Parameters: math_Vector &
+        :param degreemin: default value is 4
+        :type degreemin: Standard_Integer
+        :param degreemax: default value is 8
+        :type degreemax: Standard_Integer
+        :param Tolerance3d: default value is 1.0e-03
+        :type Tolerance3d: float
+        :param Tolerance2d: default value is 1.0e-06
+        :type Tolerance2d: float
+        :param NbIterations: default value is 5
+        :type NbIterations: Standard_Integer
+        :param cutting: default value is Standard_True
+        :type cutting: bool
+        :param Squares: default value is Standard_False
+        :type Squares: bool
+        :rtype: None
+
+        :param Parameters:
+        :type Parameters: math_Vector &
+        :param degreemin: default value is 4
+        :type degreemin: Standard_Integer
+        :param degreemax: default value is 8
+        :type degreemax: Standard_Integer
+        :param Tolerance3d: default value is 1.0e-03
+        :type Tolerance3d: float
+        :param Tolerance2d: default value is 1.0e-06
+        :type Tolerance2d: float
+        :param NbIterations: default value is 5
+        :type NbIterations: Standard_Integer
+        :param cutting: default value is Standard_True
+        :type cutting: bool
+        :param Squares: default value is Standard_False
+        :type Squares: bool
+        :rtype: None
+
+        :param Parameters:
+        :type Parameters: math_Vector &
+        :param degreemin: default value is 4
+        :type degreemin: Standard_Integer
+        :param degreemax: default value is 8
+        :type degreemax: Standard_Integer
+        :param Tolerance3d: default value is 1.0e-03
+        :type Tolerance3d: float
+        :param Tolerance2d: default value is 1.0e-06
+        :type Tolerance2d: float
+        :param NbIterations: default value is 5
+        :type NbIterations: Standard_Integer
+        :param cutting: default value is Standard_True
+        :type cutting: bool
+        :param Squares: default value is Standard_False
+        :type Squares: bool
+        :rtype: None
+
+        :param Parameters:
+        :type Parameters: math_Vector &
+        :param degreemin: default value is 4
+        :type degreemin: Standard_Integer
+        :param degreemax: default value is 8
+        :type degreemax: Standard_Integer
+        :param Tolerance3d: default value is 1.0e-03
+        :type Tolerance3d: float
+        :param Tolerance2d: default value is 1.0e-06
+        :type Tolerance2d: float
+        :param NbIterations: default value is 5
+        :type NbIterations: Standard_Integer
+        :param cutting: default value is Standard_True
+        :type cutting: bool
+        :param Squares: default value is Standard_False
+        :type Squares: bool
+        :rtype: None
+
+        :param Parameters:
+        :type Parameters: math_Vector &
+        :param degreemin: default value is 4
+        :type degreemin: Standard_Integer
+        :param degreemax: default value is 8
+        :type degreemax: Standard_Integer
+        :param Tolerance3d: default value is 1.0e-03
+        :type Tolerance3d: float
+        :param Tolerance2d: default value is 1.0e-06
+        :type Tolerance2d: float
+        :param NbIterations: default value is 5
+        :type NbIterations: Standard_Integer
         :param cutting: default value is Standard_True
         :type cutting: bool
         :param Squares: default value is Standard_False
@@ -3421,15 +4786,159 @@ class BRepApprox_TheComputeLineOfApprox(object):
         :rtype: None
 
         :param degreemin: default value is 4
-        :type degreemin: int
+        :type degreemin: Standard_Integer
         :param degreemax: default value is 8
-        :type degreemax: int
+        :type degreemax: Standard_Integer
         :param Tolerance3d: default value is 1.0e-03
         :type Tolerance3d: float
         :param Tolerance2d: default value is 1.0e-06
         :type Tolerance2d: float
         :param NbIterations: default value is 5
-        :type NbIterations: int
+        :type NbIterations: Standard_Integer
+        :param cutting: default value is Standard_True
+        :type cutting: bool
+        :param parametrization: default value is Approx_ChordLength
+        :type parametrization: Approx_ParametrizationType
+        :param Squares: default value is Standard_False
+        :type Squares: bool
+        :rtype: None
+
+        :param degreemin: default value is 4
+        :type degreemin: Standard_Integer
+        :param degreemax: default value is 8
+        :type degreemax: Standard_Integer
+        :param Tolerance3d: default value is 1.0e-03
+        :type Tolerance3d: float
+        :param Tolerance2d: default value is 1.0e-06
+        :type Tolerance2d: float
+        :param NbIterations: default value is 5
+        :type NbIterations: Standard_Integer
+        :param cutting: default value is Standard_True
+        :type cutting: bool
+        :param parametrization: default value is Approx_ChordLength
+        :type parametrization: Approx_ParametrizationType
+        :param Squares: default value is Standard_False
+        :type Squares: bool
+        :rtype: None
+
+        :param degreemin: default value is 4
+        :type degreemin: Standard_Integer
+        :param degreemax: default value is 8
+        :type degreemax: Standard_Integer
+        :param Tolerance3d: default value is 1.0e-03
+        :type Tolerance3d: float
+        :param Tolerance2d: default value is 1.0e-06
+        :type Tolerance2d: float
+        :param NbIterations: default value is 5
+        :type NbIterations: Standard_Integer
+        :param cutting: default value is Standard_True
+        :type cutting: bool
+        :param parametrization: default value is Approx_ChordLength
+        :type parametrization: Approx_ParametrizationType
+        :param Squares: default value is Standard_False
+        :type Squares: bool
+        :rtype: None
+
+        :param degreemin: default value is 4
+        :type degreemin: Standard_Integer
+        :param degreemax: default value is 8
+        :type degreemax: Standard_Integer
+        :param Tolerance3d: default value is 1.0e-03
+        :type Tolerance3d: float
+        :param Tolerance2d: default value is 1.0e-06
+        :type Tolerance2d: float
+        :param NbIterations: default value is 5
+        :type NbIterations: Standard_Integer
+        :param cutting: default value is Standard_True
+        :type cutting: bool
+        :param parametrization: default value is Approx_ChordLength
+        :type parametrization: Approx_ParametrizationType
+        :param Squares: default value is Standard_False
+        :type Squares: bool
+        :rtype: None
+
+        :param degreemin: default value is 4
+        :type degreemin: Standard_Integer
+        :param degreemax: default value is 8
+        :type degreemax: Standard_Integer
+        :param Tolerance3d: default value is 1.0e-03
+        :type Tolerance3d: float
+        :param Tolerance2d: default value is 1.0e-06
+        :type Tolerance2d: float
+        :param NbIterations: default value is 5
+        :type NbIterations: Standard_Integer
+        :param cutting: default value is Standard_True
+        :type cutting: bool
+        :param parametrization: default value is Approx_ChordLength
+        :type parametrization: Approx_ParametrizationType
+        :param Squares: default value is Standard_False
+        :type Squares: bool
+        :rtype: None
+
+        :param degreemin: default value is 4
+        :type degreemin: Standard_Integer
+        :param degreemax: default value is 8
+        :type degreemax: Standard_Integer
+        :param Tolerance3d: default value is 1.0e-03
+        :type Tolerance3d: float
+        :param Tolerance2d: default value is 1.0e-06
+        :type Tolerance2d: float
+        :param NbIterations: default value is 5
+        :type NbIterations: Standard_Integer
+        :param cutting: default value is Standard_True
+        :type cutting: bool
+        :param parametrization: default value is Approx_ChordLength
+        :type parametrization: Approx_ParametrizationType
+        :param Squares: default value is Standard_False
+        :type Squares: bool
+        :rtype: None
+
+        :param degreemin: default value is 4
+        :type degreemin: Standard_Integer
+        :param degreemax: default value is 8
+        :type degreemax: Standard_Integer
+        :param Tolerance3d: default value is 1.0e-03
+        :type Tolerance3d: float
+        :param Tolerance2d: default value is 1.0e-06
+        :type Tolerance2d: float
+        :param NbIterations: default value is 5
+        :type NbIterations: Standard_Integer
+        :param cutting: default value is Standard_True
+        :type cutting: bool
+        :param parametrization: default value is Approx_ChordLength
+        :type parametrization: Approx_ParametrizationType
+        :param Squares: default value is Standard_False
+        :type Squares: bool
+        :rtype: None
+
+        :param degreemin: default value is 4
+        :type degreemin: Standard_Integer
+        :param degreemax: default value is 8
+        :type degreemax: Standard_Integer
+        :param Tolerance3d: default value is 1.0e-03
+        :type Tolerance3d: float
+        :param Tolerance2d: default value is 1.0e-06
+        :type Tolerance2d: float
+        :param NbIterations: default value is 5
+        :type NbIterations: Standard_Integer
+        :param cutting: default value is Standard_True
+        :type cutting: bool
+        :param parametrization: default value is Approx_ChordLength
+        :type parametrization: Approx_ParametrizationType
+        :param Squares: default value is Standard_False
+        :type Squares: bool
+        :rtype: None
+
+        :param degreemin: default value is 4
+        :type degreemin: Standard_Integer
+        :param degreemax: default value is 8
+        :type degreemax: Standard_Integer
+        :param Tolerance3d: default value is 1.0e-03
+        :type Tolerance3d: float
+        :param Tolerance2d: default value is 1.0e-06
+        :type Tolerance2d: float
+        :param NbIterations: default value is 5
+        :type NbIterations: Standard_Integer
         :param cutting: default value is Standard_True
         :type cutting: bool
         :param parametrization: default value is Approx_ChordLength
@@ -3440,7 +4949,7 @@ class BRepApprox_TheComputeLineOfApprox(object):
 
         """
         _BRepApprox.BRepApprox_TheComputeLineOfApprox_swiginit(self,_BRepApprox.new_BRepApprox_TheComputeLineOfApprox(*args))
-    def Interpol(self, *args) -> "void" :
+    def Interpol(self, *args):
         """
         :param Line:
         :type Line: BRepApprox_TheMultiLineOfApprox &
@@ -3449,18 +4958,162 @@ class BRepApprox_TheComputeLineOfApprox(object):
         """
         return _BRepApprox.BRepApprox_TheComputeLineOfApprox_Interpol(self, *args)
 
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
         :param degreemin: default value is 4
-        :type degreemin: int
+        :type degreemin: Standard_Integer
         :param degreemax: default value is 8
-        :type degreemax: int
+        :type degreemax: Standard_Integer
         :param Tolerance3d: default value is 1.0e-03
         :type Tolerance3d: float
         :param Tolerance2d: default value is 1.0e-06
         :type Tolerance2d: float
         :param NbIterations: default value is 5
-        :type NbIterations: int
+        :type NbIterations: Standard_Integer
+        :param cutting: default value is Standard_True
+        :type cutting: bool
+        :param parametrization: default value is Approx_ChordLength
+        :type parametrization: Approx_ParametrizationType
+        :param Squares: default value is Standard_False
+        :type Squares: bool
+        :rtype: None
+
+        :param degreemin: default value is 4
+        :type degreemin: Standard_Integer
+        :param degreemax: default value is 8
+        :type degreemax: Standard_Integer
+        :param Tolerance3d: default value is 1.0e-03
+        :type Tolerance3d: float
+        :param Tolerance2d: default value is 1.0e-06
+        :type Tolerance2d: float
+        :param NbIterations: default value is 5
+        :type NbIterations: Standard_Integer
+        :param cutting: default value is Standard_True
+        :type cutting: bool
+        :param parametrization: default value is Approx_ChordLength
+        :type parametrization: Approx_ParametrizationType
+        :param Squares: default value is Standard_False
+        :type Squares: bool
+        :rtype: None
+
+        :param degreemin: default value is 4
+        :type degreemin: Standard_Integer
+        :param degreemax: default value is 8
+        :type degreemax: Standard_Integer
+        :param Tolerance3d: default value is 1.0e-03
+        :type Tolerance3d: float
+        :param Tolerance2d: default value is 1.0e-06
+        :type Tolerance2d: float
+        :param NbIterations: default value is 5
+        :type NbIterations: Standard_Integer
+        :param cutting: default value is Standard_True
+        :type cutting: bool
+        :param parametrization: default value is Approx_ChordLength
+        :type parametrization: Approx_ParametrizationType
+        :param Squares: default value is Standard_False
+        :type Squares: bool
+        :rtype: None
+
+        :param degreemin: default value is 4
+        :type degreemin: Standard_Integer
+        :param degreemax: default value is 8
+        :type degreemax: Standard_Integer
+        :param Tolerance3d: default value is 1.0e-03
+        :type Tolerance3d: float
+        :param Tolerance2d: default value is 1.0e-06
+        :type Tolerance2d: float
+        :param NbIterations: default value is 5
+        :type NbIterations: Standard_Integer
+        :param cutting: default value is Standard_True
+        :type cutting: bool
+        :param parametrization: default value is Approx_ChordLength
+        :type parametrization: Approx_ParametrizationType
+        :param Squares: default value is Standard_False
+        :type Squares: bool
+        :rtype: None
+
+        :param degreemin: default value is 4
+        :type degreemin: Standard_Integer
+        :param degreemax: default value is 8
+        :type degreemax: Standard_Integer
+        :param Tolerance3d: default value is 1.0e-03
+        :type Tolerance3d: float
+        :param Tolerance2d: default value is 1.0e-06
+        :type Tolerance2d: float
+        :param NbIterations: default value is 5
+        :type NbIterations: Standard_Integer
+        :param cutting: default value is Standard_True
+        :type cutting: bool
+        :param parametrization: default value is Approx_ChordLength
+        :type parametrization: Approx_ParametrizationType
+        :param Squares: default value is Standard_False
+        :type Squares: bool
+        :rtype: None
+
+        :param degreemin: default value is 4
+        :type degreemin: Standard_Integer
+        :param degreemax: default value is 8
+        :type degreemax: Standard_Integer
+        :param Tolerance3d: default value is 1.0e-03
+        :type Tolerance3d: float
+        :param Tolerance2d: default value is 1.0e-06
+        :type Tolerance2d: float
+        :param NbIterations: default value is 5
+        :type NbIterations: Standard_Integer
+        :param cutting: default value is Standard_True
+        :type cutting: bool
+        :param parametrization: default value is Approx_ChordLength
+        :type parametrization: Approx_ParametrizationType
+        :param Squares: default value is Standard_False
+        :type Squares: bool
+        :rtype: None
+
+        :param degreemin: default value is 4
+        :type degreemin: Standard_Integer
+        :param degreemax: default value is 8
+        :type degreemax: Standard_Integer
+        :param Tolerance3d: default value is 1.0e-03
+        :type Tolerance3d: float
+        :param Tolerance2d: default value is 1.0e-06
+        :type Tolerance2d: float
+        :param NbIterations: default value is 5
+        :type NbIterations: Standard_Integer
+        :param cutting: default value is Standard_True
+        :type cutting: bool
+        :param parametrization: default value is Approx_ChordLength
+        :type parametrization: Approx_ParametrizationType
+        :param Squares: default value is Standard_False
+        :type Squares: bool
+        :rtype: None
+
+        :param degreemin: default value is 4
+        :type degreemin: Standard_Integer
+        :param degreemax: default value is 8
+        :type degreemax: Standard_Integer
+        :param Tolerance3d: default value is 1.0e-03
+        :type Tolerance3d: float
+        :param Tolerance2d: default value is 1.0e-06
+        :type Tolerance2d: float
+        :param NbIterations: default value is 5
+        :type NbIterations: Standard_Integer
+        :param cutting: default value is Standard_True
+        :type cutting: bool
+        :param parametrization: default value is Approx_ChordLength
+        :type parametrization: Approx_ParametrizationType
+        :param Squares: default value is Standard_False
+        :type Squares: bool
+        :rtype: None
+
+        :param degreemin: default value is 4
+        :type degreemin: Standard_Integer
+        :param degreemax: default value is 8
+        :type degreemax: Standard_Integer
+        :param Tolerance3d: default value is 1.0e-03
+        :type Tolerance3d: float
+        :param Tolerance2d: default value is 1.0e-06
+        :type Tolerance2d: float
+        :param NbIterations: default value is 5
+        :type NbIterations: Standard_Integer
         :param cutting: default value is Standard_True
         :type cutting: bool
         :param parametrization: default value is Approx_ChordLength
@@ -3472,7 +5125,7 @@ class BRepApprox_TheComputeLineOfApprox(object):
         """
         return _BRepApprox.BRepApprox_TheComputeLineOfApprox_Init(self, *args)
 
-    def Perform(self, *args) -> "void" :
+    def Perform(self, *args):
         """
         :param Line:
         :type Line: BRepApprox_TheMultiLineOfApprox &
@@ -3481,7 +5134,7 @@ class BRepApprox_TheComputeLineOfApprox(object):
         """
         return _BRepApprox.BRepApprox_TheComputeLineOfApprox_Perform(self, *args)
 
-    def SetParameters(self, *args) -> "void" :
+    def SetParameters(self, *args):
         """
         :param ThePar:
         :type ThePar: math_Vector &
@@ -3490,7 +5143,7 @@ class BRepApprox_TheComputeLineOfApprox(object):
         """
         return _BRepApprox.BRepApprox_TheComputeLineOfApprox_SetParameters(self, *args)
 
-    def SetKnots(self, *args) -> "void" :
+    def SetKnots(self, *args):
         """
         :param Knots:
         :type Knots: TColStd_Array1OfReal &
@@ -3499,7 +5152,7 @@ class BRepApprox_TheComputeLineOfApprox(object):
         """
         return _BRepApprox.BRepApprox_TheComputeLineOfApprox_SetKnots(self, *args)
 
-    def SetKnotsAndMultiplicities(self, *args) -> "void" :
+    def SetKnotsAndMultiplicities(self, *args):
         """
         :param Knots:
         :type Knots: TColStd_Array1OfReal &
@@ -3510,18 +5163,18 @@ class BRepApprox_TheComputeLineOfApprox(object):
         """
         return _BRepApprox.BRepApprox_TheComputeLineOfApprox_SetKnotsAndMultiplicities(self, *args)
 
-    def SetDegrees(self, *args) -> "void" :
+    def SetDegrees(self, *args):
         """
         :param degreemin:
-        :type degreemin: int
+        :type degreemin: Standard_Integer
         :param degreemax:
-        :type degreemax: int
+        :type degreemax: Standard_Integer
         :rtype: None
 
         """
         return _BRepApprox.BRepApprox_TheComputeLineOfApprox_SetDegrees(self, *args)
 
-    def SetTolerances(self, *args) -> "void" :
+    def SetTolerances(self, *args):
         """
         :param Tolerance3d:
         :type Tolerance3d: float
@@ -3532,16 +5185,16 @@ class BRepApprox_TheComputeLineOfApprox(object):
         """
         return _BRepApprox.BRepApprox_TheComputeLineOfApprox_SetTolerances(self, *args)
 
-    def SetContinuity(self, *args) -> "void" :
+    def SetContinuity(self, *args):
         """
         :param C:
-        :type C: int
+        :type C: Standard_Integer
         :rtype: None
 
         """
         return _BRepApprox.BRepApprox_TheComputeLineOfApprox_SetContinuity(self, *args)
 
-    def SetConstraints(self, *args) -> "void" :
+    def SetConstraints(self, *args):
         """
         :param firstC:
         :type firstC: AppParCurves_Constraint
@@ -3552,21 +5205,21 @@ class BRepApprox_TheComputeLineOfApprox(object):
         """
         return _BRepApprox.BRepApprox_TheComputeLineOfApprox_SetConstraints(self, *args)
 
-    def IsAllApproximated(self, *args) -> "Standard_Boolean" :
+    def IsAllApproximated(self):
         """
         :rtype: bool
 
         """
-        return _BRepApprox.BRepApprox_TheComputeLineOfApprox_IsAllApproximated(self, *args)
+        return _BRepApprox.BRepApprox_TheComputeLineOfApprox_IsAllApproximated(self)
 
-    def IsToleranceReached(self, *args) -> "Standard_Boolean" :
+    def IsToleranceReached(self):
         """
         :rtype: bool
 
         """
-        return _BRepApprox.BRepApprox_TheComputeLineOfApprox_IsToleranceReached(self, *args)
+        return _BRepApprox.BRepApprox_TheComputeLineOfApprox_IsToleranceReached(self)
 
-    def Error(self, *args) -> "void" :
+    def Error(self):
         """
         :param tol3d:
         :type tol3d: float &
@@ -3575,28 +5228,28 @@ class BRepApprox_TheComputeLineOfApprox(object):
         :rtype: None
 
         """
-        return _BRepApprox.BRepApprox_TheComputeLineOfApprox_Error(self, *args)
+        return _BRepApprox.BRepApprox_TheComputeLineOfApprox_Error(self)
 
-    def Value(self, *args) -> "AppParCurves_MultiBSpCurve const &" :
+    def Value(self):
         """
         :rtype: AppParCurves_MultiBSpCurve
 
         """
-        return _BRepApprox.BRepApprox_TheComputeLineOfApprox_Value(self, *args)
+        return _BRepApprox.BRepApprox_TheComputeLineOfApprox_Value(self)
 
-    def ChangeValue(self, *args) -> "AppParCurves_MultiBSpCurve &" :
+    def ChangeValue(self):
         """
         :rtype: AppParCurves_MultiBSpCurve
 
         """
-        return _BRepApprox.BRepApprox_TheComputeLineOfApprox_ChangeValue(self, *args)
+        return _BRepApprox.BRepApprox_TheComputeLineOfApprox_ChangeValue(self)
 
-    def Parameters(self, *args) -> "TColStd_Array1OfReal const &" :
+    def Parameters(self):
         """
         :rtype: TColStd_Array1OfReal
 
         """
-        return _BRepApprox.BRepApprox_TheComputeLineOfApprox_Parameters(self, *args)
+        return _BRepApprox.BRepApprox_TheComputeLineOfApprox_Parameters(self)
 
     def __del__(self):
     	try:
@@ -3641,21 +5294,21 @@ class BRepApprox_TheFunctionOfTheInt2SOfThePrmPrmSvSurfacesOfApprox(object):
 
         """
         _BRepApprox.BRepApprox_TheFunctionOfTheInt2SOfThePrmPrmSvSurfacesOfApprox_swiginit(self,_BRepApprox.new_BRepApprox_TheFunctionOfTheInt2SOfThePrmPrmSvSurfacesOfApprox(*args))
-    def NbVariables(self, *args) -> "Standard_Integer" :
+    def NbVariables(self):
         """
         :rtype: int
 
         """
-        return _BRepApprox.BRepApprox_TheFunctionOfTheInt2SOfThePrmPrmSvSurfacesOfApprox_NbVariables(self, *args)
+        return _BRepApprox.BRepApprox_TheFunctionOfTheInt2SOfThePrmPrmSvSurfacesOfApprox_NbVariables(self)
 
-    def NbEquations(self, *args) -> "Standard_Integer" :
+    def NbEquations(self):
         """
         :rtype: int
 
         """
-        return _BRepApprox.BRepApprox_TheFunctionOfTheInt2SOfThePrmPrmSvSurfacesOfApprox_NbEquations(self, *args)
+        return _BRepApprox.BRepApprox_TheFunctionOfTheInt2SOfThePrmPrmSvSurfacesOfApprox_NbEquations(self)
 
-    def Value(self, *args) -> "Standard_Boolean" :
+    def Value(self, *args):
         """
         :param X:
         :type X: math_Vector &
@@ -3666,7 +5319,7 @@ class BRepApprox_TheFunctionOfTheInt2SOfThePrmPrmSvSurfacesOfApprox(object):
         """
         return _BRepApprox.BRepApprox_TheFunctionOfTheInt2SOfThePrmPrmSvSurfacesOfApprox_Value(self, *args)
 
-    def Derivatives(self, *args) -> "Standard_Boolean" :
+    def Derivatives(self, *args):
         """
         :param X:
         :type X: math_Vector &
@@ -3677,7 +5330,7 @@ class BRepApprox_TheFunctionOfTheInt2SOfThePrmPrmSvSurfacesOfApprox(object):
         """
         return _BRepApprox.BRepApprox_TheFunctionOfTheInt2SOfThePrmPrmSvSurfacesOfApprox_Derivatives(self, *args)
 
-    def Values(self, *args) -> "Standard_Boolean" :
+    def Values(self, *args):
         """
         :param X:
         :type X: math_Vector &
@@ -3690,7 +5343,7 @@ class BRepApprox_TheFunctionOfTheInt2SOfThePrmPrmSvSurfacesOfApprox(object):
         """
         return _BRepApprox.BRepApprox_TheFunctionOfTheInt2SOfThePrmPrmSvSurfacesOfApprox_Values(self, *args)
 
-    def ComputeParameters(self, *args) -> "void" :
+    def ComputeParameters(self, *args):
         """
         :param ChoixIso:
         :type ChoixIso: IntImp_ConstIsoparametric
@@ -3709,21 +5362,21 @@ class BRepApprox_TheFunctionOfTheInt2SOfThePrmPrmSvSurfacesOfApprox(object):
         """
         return _BRepApprox.BRepApprox_TheFunctionOfTheInt2SOfThePrmPrmSvSurfacesOfApprox_ComputeParameters(self, *args)
 
-    def Root(self, *args) -> "Standard_Real" :
+    def Root(self):
         """
         :rtype: float
 
         """
-        return _BRepApprox.BRepApprox_TheFunctionOfTheInt2SOfThePrmPrmSvSurfacesOfApprox_Root(self, *args)
+        return _BRepApprox.BRepApprox_TheFunctionOfTheInt2SOfThePrmPrmSvSurfacesOfApprox_Root(self)
 
-    def Point(self, *args) -> "gp_Pnt" :
+    def Point(self):
         """
         :rtype: gp_Pnt
 
         """
-        return _BRepApprox.BRepApprox_TheFunctionOfTheInt2SOfThePrmPrmSvSurfacesOfApprox_Point(self, *args)
+        return _BRepApprox.BRepApprox_TheFunctionOfTheInt2SOfThePrmPrmSvSurfacesOfApprox_Point(self)
 
-    def IsTangent(self, *args) -> "Standard_Boolean" :
+    def IsTangent(self, *args):
         """
         :param UVap:
         :type UVap: math_Vector &
@@ -3736,40 +5389,40 @@ class BRepApprox_TheFunctionOfTheInt2SOfThePrmPrmSvSurfacesOfApprox(object):
         """
         return _BRepApprox.BRepApprox_TheFunctionOfTheInt2SOfThePrmPrmSvSurfacesOfApprox_IsTangent(self, *args)
 
-    def Direction(self, *args) -> "gp_Dir" :
+    def Direction(self):
         """
         :rtype: gp_Dir
 
         """
-        return _BRepApprox.BRepApprox_TheFunctionOfTheInt2SOfThePrmPrmSvSurfacesOfApprox_Direction(self, *args)
+        return _BRepApprox.BRepApprox_TheFunctionOfTheInt2SOfThePrmPrmSvSurfacesOfApprox_Direction(self)
 
-    def DirectionOnS1(self, *args) -> "gp_Dir2d" :
+    def DirectionOnS1(self):
         """
         :rtype: gp_Dir2d
 
         """
-        return _BRepApprox.BRepApprox_TheFunctionOfTheInt2SOfThePrmPrmSvSurfacesOfApprox_DirectionOnS1(self, *args)
+        return _BRepApprox.BRepApprox_TheFunctionOfTheInt2SOfThePrmPrmSvSurfacesOfApprox_DirectionOnS1(self)
 
-    def DirectionOnS2(self, *args) -> "gp_Dir2d" :
+    def DirectionOnS2(self):
         """
         :rtype: gp_Dir2d
 
         """
-        return _BRepApprox.BRepApprox_TheFunctionOfTheInt2SOfThePrmPrmSvSurfacesOfApprox_DirectionOnS2(self, *args)
+        return _BRepApprox.BRepApprox_TheFunctionOfTheInt2SOfThePrmPrmSvSurfacesOfApprox_DirectionOnS2(self)
 
-    def AuxillarSurface1(self, *args) -> "BRepAdaptor_Surface const &" :
+    def AuxillarSurface1(self):
         """
         :rtype: BRepAdaptor_Surface
 
         """
-        return _BRepApprox.BRepApprox_TheFunctionOfTheInt2SOfThePrmPrmSvSurfacesOfApprox_AuxillarSurface1(self, *args)
+        return _BRepApprox.BRepApprox_TheFunctionOfTheInt2SOfThePrmPrmSvSurfacesOfApprox_AuxillarSurface1(self)
 
-    def AuxillarSurface2(self, *args) -> "BRepAdaptor_Surface const &" :
+    def AuxillarSurface2(self):
         """
         :rtype: BRepAdaptor_Surface
 
         """
-        return _BRepApprox.BRepApprox_TheFunctionOfTheInt2SOfThePrmPrmSvSurfacesOfApprox_AuxillarSurface2(self, *args)
+        return _BRepApprox.BRepApprox_TheFunctionOfTheInt2SOfThePrmPrmSvSurfacesOfApprox_AuxillarSurface2(self)
 
     def __del__(self):
     	try:
@@ -3855,7 +5508,7 @@ class BRepApprox_TheInt2SOfThePrmPrmSvSurfacesOfApprox(object):
 
         """
         _BRepApprox.BRepApprox_TheInt2SOfThePrmPrmSvSurfacesOfApprox_swiginit(self,_BRepApprox.new_BRepApprox_TheInt2SOfThePrmPrmSvSurfacesOfApprox(*args))
-    def Perform(self, *args) -> "IntImp_ConstIsoparametric" :
+    def Perform(self, *args):
         """
         :param Param:
         :type Param: TColStd_Array1OfReal &
@@ -3874,61 +5527,61 @@ class BRepApprox_TheInt2SOfThePrmPrmSvSurfacesOfApprox(object):
         """
         return _BRepApprox.BRepApprox_TheInt2SOfThePrmPrmSvSurfacesOfApprox_Perform(self, *args)
 
-    def IsDone(self, *args) -> "Standard_Boolean" :
+    def IsDone(self):
         """
         :rtype: bool
 
         """
-        return _BRepApprox.BRepApprox_TheInt2SOfThePrmPrmSvSurfacesOfApprox_IsDone(self, *args)
+        return _BRepApprox.BRepApprox_TheInt2SOfThePrmPrmSvSurfacesOfApprox_IsDone(self)
 
-    def IsEmpty(self, *args) -> "Standard_Boolean" :
+    def IsEmpty(self):
         """
         :rtype: bool
 
         """
-        return _BRepApprox.BRepApprox_TheInt2SOfThePrmPrmSvSurfacesOfApprox_IsEmpty(self, *args)
+        return _BRepApprox.BRepApprox_TheInt2SOfThePrmPrmSvSurfacesOfApprox_IsEmpty(self)
 
-    def Point(self, *args) -> "IntSurf_PntOn2S const &" :
+    def Point(self):
         """
         :rtype: IntSurf_PntOn2S
 
         """
-        return _BRepApprox.BRepApprox_TheInt2SOfThePrmPrmSvSurfacesOfApprox_Point(self, *args)
+        return _BRepApprox.BRepApprox_TheInt2SOfThePrmPrmSvSurfacesOfApprox_Point(self)
 
-    def IsTangent(self, *args) -> "Standard_Boolean" :
+    def IsTangent(self):
         """
         :rtype: bool
 
         """
-        return _BRepApprox.BRepApprox_TheInt2SOfThePrmPrmSvSurfacesOfApprox_IsTangent(self, *args)
+        return _BRepApprox.BRepApprox_TheInt2SOfThePrmPrmSvSurfacesOfApprox_IsTangent(self)
 
-    def Direction(self, *args) -> "gp_Dir const" :
+    def Direction(self):
         """
         :rtype: gp_Dir
 
         """
-        return _BRepApprox.BRepApprox_TheInt2SOfThePrmPrmSvSurfacesOfApprox_Direction(self, *args)
+        return _BRepApprox.BRepApprox_TheInt2SOfThePrmPrmSvSurfacesOfApprox_Direction(self)
 
-    def DirectionOnS1(self, *args) -> "gp_Dir2d const" :
+    def DirectionOnS1(self):
         """
         :rtype: gp_Dir2d
 
         """
-        return _BRepApprox.BRepApprox_TheInt2SOfThePrmPrmSvSurfacesOfApprox_DirectionOnS1(self, *args)
+        return _BRepApprox.BRepApprox_TheInt2SOfThePrmPrmSvSurfacesOfApprox_DirectionOnS1(self)
 
-    def DirectionOnS2(self, *args) -> "gp_Dir2d const" :
+    def DirectionOnS2(self):
         """
         :rtype: gp_Dir2d
 
         """
-        return _BRepApprox.BRepApprox_TheInt2SOfThePrmPrmSvSurfacesOfApprox_DirectionOnS2(self, *args)
+        return _BRepApprox.BRepApprox_TheInt2SOfThePrmPrmSvSurfacesOfApprox_DirectionOnS2(self)
 
-    def Function(self, *args) -> "BRepApprox_TheFunctionOfTheInt2SOfThePrmPrmSvSurfacesOfApprox &" :
+    def Function(self):
         """
         :rtype: BRepApprox_TheFunctionOfTheInt2SOfThePrmPrmSvSurfacesOfApprox
 
         """
-        return _BRepApprox.BRepApprox_TheInt2SOfThePrmPrmSvSurfacesOfApprox_Function(self, *args)
+        return _BRepApprox.BRepApprox_TheInt2SOfThePrmPrmSvSurfacesOfApprox_Function(self)
 
     def __del__(self):
     	try:
@@ -3961,9 +5614,9 @@ class BRepApprox_TheMultiLineOfApprox(object):
         :param PtrSvSurfaces:
         :type PtrSvSurfaces: Standard_Address
         :param NbP3d:
-        :type NbP3d: int
+        :type NbP3d: Standard_Integer
         :param NbP2d:
-        :type NbP2d: int
+        :type NbP2d: Standard_Integer
         :param xo:
         :type xo: float
         :param ax:
@@ -3995,17 +5648,105 @@ class BRepApprox_TheMultiLineOfApprox(object):
         :param P2DOnFirst:
         :type P2DOnFirst: bool
         :param IndMin: default value is 0
-        :type IndMin: int
+        :type IndMin: Standard_Integer
         :param IndMax: default value is 0
-        :type IndMax: int
+        :type IndMax: Standard_Integer
+        :rtype: None
+
+        :param line:
+        :type line: Handle_BRepApprox_ApproxLine &
+        :param PtrSvSurfaces:
+        :type PtrSvSurfaces: Standard_Address
+        :param NbP3d:
+        :type NbP3d: Standard_Integer
+        :param NbP2d:
+        :type NbP2d: Standard_Integer
+        :param xo:
+        :type xo: float
+        :param ax:
+        :type ax: float
+        :param yo:
+        :type yo: float
+        :param ay:
+        :type ay: float
+        :param zo:
+        :type zo: float
+        :param az:
+        :type az: float
+        :param u1o:
+        :type u1o: float
+        :param a1u:
+        :type a1u: float
+        :param v1o:
+        :type v1o: float
+        :param a1v:
+        :type a1v: float
+        :param u2o:
+        :type u2o: float
+        :param a2u:
+        :type a2u: float
+        :param v2o:
+        :type v2o: float
+        :param a2v:
+        :type a2v: float
+        :param P2DOnFirst:
+        :type P2DOnFirst: bool
+        :param IndMin: default value is 0
+        :type IndMin: Standard_Integer
+        :param IndMax: default value is 0
+        :type IndMax: Standard_Integer
+        :rtype: None
+
+        :param line:
+        :type line: Handle_BRepApprox_ApproxLine &
+        :param PtrSvSurfaces:
+        :type PtrSvSurfaces: Standard_Address
+        :param NbP3d:
+        :type NbP3d: Standard_Integer
+        :param NbP2d:
+        :type NbP2d: Standard_Integer
+        :param xo:
+        :type xo: float
+        :param ax:
+        :type ax: float
+        :param yo:
+        :type yo: float
+        :param ay:
+        :type ay: float
+        :param zo:
+        :type zo: float
+        :param az:
+        :type az: float
+        :param u1o:
+        :type u1o: float
+        :param a1u:
+        :type a1u: float
+        :param v1o:
+        :type v1o: float
+        :param a1v:
+        :type a1v: float
+        :param u2o:
+        :type u2o: float
+        :param a2u:
+        :type a2u: float
+        :param v2o:
+        :type v2o: float
+        :param a2v:
+        :type a2v: float
+        :param P2DOnFirst:
+        :type P2DOnFirst: bool
+        :param IndMin: default value is 0
+        :type IndMin: Standard_Integer
+        :param IndMax: default value is 0
+        :type IndMax: Standard_Integer
         :rtype: None
 
         :param line:
         :type line: Handle_BRepApprox_ApproxLine &
         :param NbP3d:
-        :type NbP3d: int
+        :type NbP3d: Standard_Integer
         :param NbP2d:
-        :type NbP2d: int
+        :type NbP2d: Standard_Integer
         :param xo:
         :type xo: float
         :param ax:
@@ -4037,64 +5778,148 @@ class BRepApprox_TheMultiLineOfApprox(object):
         :param P2DOnFirst:
         :type P2DOnFirst: bool
         :param IndMin: default value is 0
-        :type IndMin: int
+        :type IndMin: Standard_Integer
         :param IndMax: default value is 0
-        :type IndMax: int
+        :type IndMax: Standard_Integer
+        :rtype: None
+
+        :param line:
+        :type line: Handle_BRepApprox_ApproxLine &
+        :param NbP3d:
+        :type NbP3d: Standard_Integer
+        :param NbP2d:
+        :type NbP2d: Standard_Integer
+        :param xo:
+        :type xo: float
+        :param ax:
+        :type ax: float
+        :param yo:
+        :type yo: float
+        :param ay:
+        :type ay: float
+        :param zo:
+        :type zo: float
+        :param az:
+        :type az: float
+        :param u1o:
+        :type u1o: float
+        :param a1u:
+        :type a1u: float
+        :param v1o:
+        :type v1o: float
+        :param a1v:
+        :type a1v: float
+        :param u2o:
+        :type u2o: float
+        :param a2u:
+        :type a2u: float
+        :param v2o:
+        :type v2o: float
+        :param a2v:
+        :type a2v: float
+        :param P2DOnFirst:
+        :type P2DOnFirst: bool
+        :param IndMin: default value is 0
+        :type IndMin: Standard_Integer
+        :param IndMax: default value is 0
+        :type IndMax: Standard_Integer
+        :rtype: None
+
+        :param line:
+        :type line: Handle_BRepApprox_ApproxLine &
+        :param NbP3d:
+        :type NbP3d: Standard_Integer
+        :param NbP2d:
+        :type NbP2d: Standard_Integer
+        :param xo:
+        :type xo: float
+        :param ax:
+        :type ax: float
+        :param yo:
+        :type yo: float
+        :param ay:
+        :type ay: float
+        :param zo:
+        :type zo: float
+        :param az:
+        :type az: float
+        :param u1o:
+        :type u1o: float
+        :param a1u:
+        :type a1u: float
+        :param v1o:
+        :type v1o: float
+        :param a1v:
+        :type a1v: float
+        :param u2o:
+        :type u2o: float
+        :param a2u:
+        :type a2u: float
+        :param v2o:
+        :type v2o: float
+        :param a2v:
+        :type a2v: float
+        :param P2DOnFirst:
+        :type P2DOnFirst: bool
+        :param IndMin: default value is 0
+        :type IndMin: Standard_Integer
+        :param IndMax: default value is 0
+        :type IndMax: Standard_Integer
         :rtype: None
 
         """
         _BRepApprox.BRepApprox_TheMultiLineOfApprox_swiginit(self,_BRepApprox.new_BRepApprox_TheMultiLineOfApprox(*args))
-    def FirstPoint(self, *args) -> "Standard_Integer" :
+    def FirstPoint(self):
         """
         :rtype: int
 
         """
-        return _BRepApprox.BRepApprox_TheMultiLineOfApprox_FirstPoint(self, *args)
+        return _BRepApprox.BRepApprox_TheMultiLineOfApprox_FirstPoint(self)
 
-    def LastPoint(self, *args) -> "Standard_Integer" :
+    def LastPoint(self):
         """
         :rtype: int
 
         """
-        return _BRepApprox.BRepApprox_TheMultiLineOfApprox_LastPoint(self, *args)
+        return _BRepApprox.BRepApprox_TheMultiLineOfApprox_LastPoint(self)
 
-    def NbP2d(self, *args) -> "Standard_Integer" :
+    def NbP2d(self):
         """
         :rtype: int
 
         """
-        return _BRepApprox.BRepApprox_TheMultiLineOfApprox_NbP2d(self, *args)
+        return _BRepApprox.BRepApprox_TheMultiLineOfApprox_NbP2d(self)
 
-    def NbP3d(self, *args) -> "Standard_Integer" :
+    def NbP3d(self):
         """
         :rtype: int
 
         """
-        return _BRepApprox.BRepApprox_TheMultiLineOfApprox_NbP3d(self, *args)
+        return _BRepApprox.BRepApprox_TheMultiLineOfApprox_NbP3d(self)
 
-    def WhatStatus(self, *args) -> "Approx_Status" :
+    def WhatStatus(self):
         """
         :rtype: Approx_Status
 
         """
-        return _BRepApprox.BRepApprox_TheMultiLineOfApprox_WhatStatus(self, *args)
+        return _BRepApprox.BRepApprox_TheMultiLineOfApprox_WhatStatus(self)
 
-    def Value(self, *args) -> "void" :
+    def Value(self, *args):
         """
         :param MPointIndex:
-        :type MPointIndex: int
+        :type MPointIndex: Standard_Integer
         :param tabPt:
         :type tabPt: TColgp_Array1OfPnt
         :rtype: None
 
         :param MPointIndex:
-        :type MPointIndex: int
+        :type MPointIndex: Standard_Integer
         :param tabPt2d:
         :type tabPt2d: TColgp_Array1OfPnt2d
         :rtype: None
 
         :param MPointIndex:
-        :type MPointIndex: int
+        :type MPointIndex: Standard_Integer
         :param tabPt:
         :type tabPt: TColgp_Array1OfPnt
         :param tabPt2d:
@@ -4104,22 +5929,22 @@ class BRepApprox_TheMultiLineOfApprox(object):
         """
         return _BRepApprox.BRepApprox_TheMultiLineOfApprox_Value(self, *args)
 
-    def Tangency(self, *args) -> "Standard_Boolean" :
+    def Tangency(self, *args):
         """
         :param MPointIndex:
-        :type MPointIndex: int
+        :type MPointIndex: Standard_Integer
         :param tabV:
         :type tabV: TColgp_Array1OfVec
         :rtype: bool
 
         :param MPointIndex:
-        :type MPointIndex: int
+        :type MPointIndex: Standard_Integer
         :param tabV2d:
         :type tabV2d: TColgp_Array1OfVec2d
         :rtype: bool
 
         :param MPointIndex:
-        :type MPointIndex: int
+        :type MPointIndex: Standard_Integer
         :param tabV:
         :type tabV: TColgp_Array1OfVec
         :param tabV2d:
@@ -4129,14 +5954,14 @@ class BRepApprox_TheMultiLineOfApprox(object):
         """
         return _BRepApprox.BRepApprox_TheMultiLineOfApprox_Tangency(self, *args)
 
-    def MakeMLBetween(self, *args) -> "BRepApprox_TheMultiLineOfApprox" :
+    def MakeMLBetween(self, *args):
         """
         :param Low:
-        :type Low: int
+        :type Low: Standard_Integer
         :param High:
-        :type High: int
+        :type High: Standard_Integer
         :param NbPointsToInsert:
-        :type NbPointsToInsert: int
+        :type NbPointsToInsert: Standard_Integer
         :rtype: BRepApprox_TheMultiLineOfApprox
 
         """
@@ -4164,8 +5989,9 @@ BRepApprox_TheMultiLineOfApprox_swigregister(BRepApprox_TheMultiLineOfApprox)
 
 class BRepApprox_TheMultiLineToolOfApprox(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
+    def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def FirstPoint(*args) -> "Standard_Integer" :
+    def FirstPoint(*args):
         """
         :param ML:
         :type ML: BRepApprox_TheMultiLineOfApprox &
@@ -4175,7 +6001,7 @@ class BRepApprox_TheMultiLineToolOfApprox(object):
         return _BRepApprox.BRepApprox_TheMultiLineToolOfApprox_FirstPoint(*args)
 
     FirstPoint = staticmethod(FirstPoint)
-    def LastPoint(*args) -> "Standard_Integer" :
+    def LastPoint(*args):
         """
         :param ML:
         :type ML: BRepApprox_TheMultiLineOfApprox &
@@ -4185,7 +6011,7 @@ class BRepApprox_TheMultiLineToolOfApprox(object):
         return _BRepApprox.BRepApprox_TheMultiLineToolOfApprox_LastPoint(*args)
 
     LastPoint = staticmethod(LastPoint)
-    def NbP2d(*args) -> "Standard_Integer" :
+    def NbP2d(*args):
         """
         :param ML:
         :type ML: BRepApprox_TheMultiLineOfApprox &
@@ -4195,7 +6021,7 @@ class BRepApprox_TheMultiLineToolOfApprox(object):
         return _BRepApprox.BRepApprox_TheMultiLineToolOfApprox_NbP2d(*args)
 
     NbP2d = staticmethod(NbP2d)
-    def NbP3d(*args) -> "Standard_Integer" :
+    def NbP3d(*args):
         """
         :param ML:
         :type ML: BRepApprox_TheMultiLineOfApprox &
@@ -4205,12 +6031,12 @@ class BRepApprox_TheMultiLineToolOfApprox(object):
         return _BRepApprox.BRepApprox_TheMultiLineToolOfApprox_NbP3d(*args)
 
     NbP3d = staticmethod(NbP3d)
-    def Value(*args) -> "void" :
+    def Value(*args):
         """
         :param ML:
         :type ML: BRepApprox_TheMultiLineOfApprox &
         :param MPointIndex:
-        :type MPointIndex: int
+        :type MPointIndex: Standard_Integer
         :param tabPt:
         :type tabPt: TColgp_Array1OfPnt
         :rtype: void
@@ -4218,7 +6044,7 @@ class BRepApprox_TheMultiLineToolOfApprox(object):
         :param ML:
         :type ML: BRepApprox_TheMultiLineOfApprox &
         :param MPointIndex:
-        :type MPointIndex: int
+        :type MPointIndex: Standard_Integer
         :param tabPt2d:
         :type tabPt2d: TColgp_Array1OfPnt2d
         :rtype: void
@@ -4226,7 +6052,7 @@ class BRepApprox_TheMultiLineToolOfApprox(object):
         :param ML:
         :type ML: BRepApprox_TheMultiLineOfApprox &
         :param MPointIndex:
-        :type MPointIndex: int
+        :type MPointIndex: Standard_Integer
         :param tabPt:
         :type tabPt: TColgp_Array1OfPnt
         :param tabPt2d:
@@ -4237,12 +6063,12 @@ class BRepApprox_TheMultiLineToolOfApprox(object):
         return _BRepApprox.BRepApprox_TheMultiLineToolOfApprox_Value(*args)
 
     Value = staticmethod(Value)
-    def Tangency(*args) -> "Standard_Boolean" :
+    def Tangency(*args):
         """
         :param ML:
         :type ML: BRepApprox_TheMultiLineOfApprox &
         :param MPointIndex:
-        :type MPointIndex: int
+        :type MPointIndex: Standard_Integer
         :param tabV:
         :type tabV: TColgp_Array1OfVec
         :rtype: bool
@@ -4250,7 +6076,7 @@ class BRepApprox_TheMultiLineToolOfApprox(object):
         :param ML:
         :type ML: BRepApprox_TheMultiLineOfApprox &
         :param MPointIndex:
-        :type MPointIndex: int
+        :type MPointIndex: Standard_Integer
         :param tabV2d:
         :type tabV2d: TColgp_Array1OfVec2d
         :rtype: bool
@@ -4258,7 +6084,7 @@ class BRepApprox_TheMultiLineToolOfApprox(object):
         :param ML:
         :type ML: BRepApprox_TheMultiLineOfApprox &
         :param MPointIndex:
-        :type MPointIndex: int
+        :type MPointIndex: Standard_Integer
         :param tabV:
         :type tabV: TColgp_Array1OfVec
         :param tabV2d:
@@ -4269,12 +6095,12 @@ class BRepApprox_TheMultiLineToolOfApprox(object):
         return _BRepApprox.BRepApprox_TheMultiLineToolOfApprox_Tangency(*args)
 
     Tangency = staticmethod(Tangency)
-    def Curvature(*args) -> "Standard_Boolean" :
+    def Curvature(*args):
         """
         :param ML:
         :type ML: BRepApprox_TheMultiLineOfApprox &
         :param MPointIndex:
-        :type MPointIndex: int
+        :type MPointIndex: Standard_Integer
         :param tabV:
         :type tabV: TColgp_Array1OfVec
         :rtype: bool
@@ -4282,7 +6108,7 @@ class BRepApprox_TheMultiLineToolOfApprox(object):
         :param ML:
         :type ML: BRepApprox_TheMultiLineOfApprox &
         :param MPointIndex:
-        :type MPointIndex: int
+        :type MPointIndex: Standard_Integer
         :param tabV2d:
         :type tabV2d: TColgp_Array1OfVec2d
         :rtype: bool
@@ -4290,7 +6116,7 @@ class BRepApprox_TheMultiLineToolOfApprox(object):
         :param ML:
         :type ML: BRepApprox_TheMultiLineOfApprox &
         :param MPointIndex:
-        :type MPointIndex: int
+        :type MPointIndex: Standard_Integer
         :param tabV:
         :type tabV: TColgp_Array1OfVec
         :param tabV2d:
@@ -4301,38 +6127,36 @@ class BRepApprox_TheMultiLineToolOfApprox(object):
         return _BRepApprox.BRepApprox_TheMultiLineToolOfApprox_Curvature(*args)
 
     Curvature = staticmethod(Curvature)
-    def MakeMLBetween(*args) -> "BRepApprox_TheMultiLineOfApprox" :
+    def MakeMLBetween(*args):
         """
         :param ML:
         :type ML: BRepApprox_TheMultiLineOfApprox &
         :param I1:
-        :type I1: int
+        :type I1: Standard_Integer
         :param I2:
-        :type I2: int
+        :type I2: Standard_Integer
         :param NbPMin:
-        :type NbPMin: int
+        :type NbPMin: Standard_Integer
         :rtype: BRepApprox_TheMultiLineOfApprox
 
         """
         return _BRepApprox.BRepApprox_TheMultiLineToolOfApprox_MakeMLBetween(*args)
 
     MakeMLBetween = staticmethod(MakeMLBetween)
-    def WhatStatus(*args) -> "Approx_Status" :
+    def WhatStatus(*args):
         """
         :param ML:
         :type ML: BRepApprox_TheMultiLineOfApprox &
         :param I1:
-        :type I1: int
+        :type I1: Standard_Integer
         :param I2:
-        :type I2: int
+        :type I2: Standard_Integer
         :rtype: Approx_Status
 
         """
         return _BRepApprox.BRepApprox_TheMultiLineToolOfApprox_WhatStatus(*args)
 
     WhatStatus = staticmethod(WhatStatus)
-    def __init__(self): 
-        _BRepApprox.BRepApprox_TheMultiLineToolOfApprox_swiginit(self,_BRepApprox.new_BRepApprox_TheMultiLineToolOfApprox())
     def __del__(self):
     	try:
     		self.thisown = False
@@ -4345,7 +6169,7 @@ BRepApprox_TheMultiLineToolOfApprox._kill_pointed = new_instancemethod(_BRepAppr
 BRepApprox_TheMultiLineToolOfApprox_swigregister = _BRepApprox.BRepApprox_TheMultiLineToolOfApprox_swigregister
 BRepApprox_TheMultiLineToolOfApprox_swigregister(BRepApprox_TheMultiLineToolOfApprox)
 
-def BRepApprox_TheMultiLineToolOfApprox_FirstPoint(*args) -> "Standard_Integer" :
+def BRepApprox_TheMultiLineToolOfApprox_FirstPoint(*args):
   """
     :param ML:
     :type ML: BRepApprox_TheMultiLineOfApprox &
@@ -4354,7 +6178,7 @@ def BRepApprox_TheMultiLineToolOfApprox_FirstPoint(*args) -> "Standard_Integer" 
     """
   return _BRepApprox.BRepApprox_TheMultiLineToolOfApprox_FirstPoint(*args)
 
-def BRepApprox_TheMultiLineToolOfApprox_LastPoint(*args) -> "Standard_Integer" :
+def BRepApprox_TheMultiLineToolOfApprox_LastPoint(*args):
   """
     :param ML:
     :type ML: BRepApprox_TheMultiLineOfApprox &
@@ -4363,7 +6187,7 @@ def BRepApprox_TheMultiLineToolOfApprox_LastPoint(*args) -> "Standard_Integer" :
     """
   return _BRepApprox.BRepApprox_TheMultiLineToolOfApprox_LastPoint(*args)
 
-def BRepApprox_TheMultiLineToolOfApprox_NbP2d(*args) -> "Standard_Integer" :
+def BRepApprox_TheMultiLineToolOfApprox_NbP2d(*args):
   """
     :param ML:
     :type ML: BRepApprox_TheMultiLineOfApprox &
@@ -4372,7 +6196,7 @@ def BRepApprox_TheMultiLineToolOfApprox_NbP2d(*args) -> "Standard_Integer" :
     """
   return _BRepApprox.BRepApprox_TheMultiLineToolOfApprox_NbP2d(*args)
 
-def BRepApprox_TheMultiLineToolOfApprox_NbP3d(*args) -> "Standard_Integer" :
+def BRepApprox_TheMultiLineToolOfApprox_NbP3d(*args):
   """
     :param ML:
     :type ML: BRepApprox_TheMultiLineOfApprox &
@@ -4381,12 +6205,12 @@ def BRepApprox_TheMultiLineToolOfApprox_NbP3d(*args) -> "Standard_Integer" :
     """
   return _BRepApprox.BRepApprox_TheMultiLineToolOfApprox_NbP3d(*args)
 
-def BRepApprox_TheMultiLineToolOfApprox_Value(*args) -> "void" :
+def BRepApprox_TheMultiLineToolOfApprox_Value(*args):
   """
     :param ML:
     :type ML: BRepApprox_TheMultiLineOfApprox &
     :param MPointIndex:
-    :type MPointIndex: int
+    :type MPointIndex: Standard_Integer
     :param tabPt:
     :type tabPt: TColgp_Array1OfPnt
     :rtype: void
@@ -4394,7 +6218,7 @@ def BRepApprox_TheMultiLineToolOfApprox_Value(*args) -> "void" :
     :param ML:
     :type ML: BRepApprox_TheMultiLineOfApprox &
     :param MPointIndex:
-    :type MPointIndex: int
+    :type MPointIndex: Standard_Integer
     :param tabPt2d:
     :type tabPt2d: TColgp_Array1OfPnt2d
     :rtype: void
@@ -4402,7 +6226,7 @@ def BRepApprox_TheMultiLineToolOfApprox_Value(*args) -> "void" :
     :param ML:
     :type ML: BRepApprox_TheMultiLineOfApprox &
     :param MPointIndex:
-    :type MPointIndex: int
+    :type MPointIndex: Standard_Integer
     :param tabPt:
     :type tabPt: TColgp_Array1OfPnt
     :param tabPt2d:
@@ -4412,12 +6236,12 @@ def BRepApprox_TheMultiLineToolOfApprox_Value(*args) -> "void" :
     """
   return _BRepApprox.BRepApprox_TheMultiLineToolOfApprox_Value(*args)
 
-def BRepApprox_TheMultiLineToolOfApprox_Tangency(*args) -> "Standard_Boolean" :
+def BRepApprox_TheMultiLineToolOfApprox_Tangency(*args):
   """
     :param ML:
     :type ML: BRepApprox_TheMultiLineOfApprox &
     :param MPointIndex:
-    :type MPointIndex: int
+    :type MPointIndex: Standard_Integer
     :param tabV:
     :type tabV: TColgp_Array1OfVec
     :rtype: bool
@@ -4425,7 +6249,7 @@ def BRepApprox_TheMultiLineToolOfApprox_Tangency(*args) -> "Standard_Boolean" :
     :param ML:
     :type ML: BRepApprox_TheMultiLineOfApprox &
     :param MPointIndex:
-    :type MPointIndex: int
+    :type MPointIndex: Standard_Integer
     :param tabV2d:
     :type tabV2d: TColgp_Array1OfVec2d
     :rtype: bool
@@ -4433,7 +6257,7 @@ def BRepApprox_TheMultiLineToolOfApprox_Tangency(*args) -> "Standard_Boolean" :
     :param ML:
     :type ML: BRepApprox_TheMultiLineOfApprox &
     :param MPointIndex:
-    :type MPointIndex: int
+    :type MPointIndex: Standard_Integer
     :param tabV:
     :type tabV: TColgp_Array1OfVec
     :param tabV2d:
@@ -4443,12 +6267,12 @@ def BRepApprox_TheMultiLineToolOfApprox_Tangency(*args) -> "Standard_Boolean" :
     """
   return _BRepApprox.BRepApprox_TheMultiLineToolOfApprox_Tangency(*args)
 
-def BRepApprox_TheMultiLineToolOfApprox_Curvature(*args) -> "Standard_Boolean" :
+def BRepApprox_TheMultiLineToolOfApprox_Curvature(*args):
   """
     :param ML:
     :type ML: BRepApprox_TheMultiLineOfApprox &
     :param MPointIndex:
-    :type MPointIndex: int
+    :type MPointIndex: Standard_Integer
     :param tabV:
     :type tabV: TColgp_Array1OfVec
     :rtype: bool
@@ -4456,7 +6280,7 @@ def BRepApprox_TheMultiLineToolOfApprox_Curvature(*args) -> "Standard_Boolean" :
     :param ML:
     :type ML: BRepApprox_TheMultiLineOfApprox &
     :param MPointIndex:
-    :type MPointIndex: int
+    :type MPointIndex: Standard_Integer
     :param tabV2d:
     :type tabV2d: TColgp_Array1OfVec2d
     :rtype: bool
@@ -4464,7 +6288,7 @@ def BRepApprox_TheMultiLineToolOfApprox_Curvature(*args) -> "Standard_Boolean" :
     :param ML:
     :type ML: BRepApprox_TheMultiLineOfApprox &
     :param MPointIndex:
-    :type MPointIndex: int
+    :type MPointIndex: Standard_Integer
     :param tabV:
     :type tabV: TColgp_Array1OfVec
     :param tabV2d:
@@ -4474,29 +6298,29 @@ def BRepApprox_TheMultiLineToolOfApprox_Curvature(*args) -> "Standard_Boolean" :
     """
   return _BRepApprox.BRepApprox_TheMultiLineToolOfApprox_Curvature(*args)
 
-def BRepApprox_TheMultiLineToolOfApprox_MakeMLBetween(*args) -> "BRepApprox_TheMultiLineOfApprox" :
+def BRepApprox_TheMultiLineToolOfApprox_MakeMLBetween(*args):
   """
     :param ML:
     :type ML: BRepApprox_TheMultiLineOfApprox &
     :param I1:
-    :type I1: int
+    :type I1: Standard_Integer
     :param I2:
-    :type I2: int
+    :type I2: Standard_Integer
     :param NbPMin:
-    :type NbPMin: int
+    :type NbPMin: Standard_Integer
     :rtype: BRepApprox_TheMultiLineOfApprox
 
     """
   return _BRepApprox.BRepApprox_TheMultiLineToolOfApprox_MakeMLBetween(*args)
 
-def BRepApprox_TheMultiLineToolOfApprox_WhatStatus(*args) -> "Approx_Status" :
+def BRepApprox_TheMultiLineToolOfApprox_WhatStatus(*args):
   """
     :param ML:
     :type ML: BRepApprox_TheMultiLineOfApprox &
     :param I1:
-    :type I1: int
+    :type I1: Standard_Integer
     :param I2:
-    :type I2: int
+    :type I2: Standard_Integer
     :rtype: Approx_Status
 
     """
@@ -4546,7 +6370,7 @@ class BRepApprox_TheZerImpFuncOfTheImpPrmSvSurfacesOfApprox(object):
 
         """
         _BRepApprox.BRepApprox_TheZerImpFuncOfTheImpPrmSvSurfacesOfApprox_swiginit(self,_BRepApprox.new_BRepApprox_TheZerImpFuncOfTheImpPrmSvSurfacesOfApprox(*args))
-    def SetImplicitSurface(self, *args) -> "void" :
+    def SetImplicitSurface(self, *args):
         """
         :param IS:
         :type IS: IntSurf_Quadric &
@@ -4555,7 +6379,7 @@ class BRepApprox_TheZerImpFuncOfTheImpPrmSvSurfacesOfApprox(object):
         """
         return _BRepApprox.BRepApprox_TheZerImpFuncOfTheImpPrmSvSurfacesOfApprox_SetImplicitSurface(self, *args)
 
-    def Set(self, *args) -> "void" :
+    def Set(self, *args):
         """
         :param PS:
         :type PS: BRepAdaptor_Surface &
@@ -4568,21 +6392,21 @@ class BRepApprox_TheZerImpFuncOfTheImpPrmSvSurfacesOfApprox(object):
         """
         return _BRepApprox.BRepApprox_TheZerImpFuncOfTheImpPrmSvSurfacesOfApprox_Set(self, *args)
 
-    def NbVariables(self, *args) -> "Standard_Integer" :
+    def NbVariables(self):
         """
         :rtype: int
 
         """
-        return _BRepApprox.BRepApprox_TheZerImpFuncOfTheImpPrmSvSurfacesOfApprox_NbVariables(self, *args)
+        return _BRepApprox.BRepApprox_TheZerImpFuncOfTheImpPrmSvSurfacesOfApprox_NbVariables(self)
 
-    def NbEquations(self, *args) -> "Standard_Integer" :
+    def NbEquations(self):
         """
         :rtype: int
 
         """
-        return _BRepApprox.BRepApprox_TheZerImpFuncOfTheImpPrmSvSurfacesOfApprox_NbEquations(self, *args)
+        return _BRepApprox.BRepApprox_TheZerImpFuncOfTheImpPrmSvSurfacesOfApprox_NbEquations(self)
 
-    def Value(self, *args) -> "Standard_Boolean" :
+    def Value(self, *args):
         """
         :param X:
         :type X: math_Vector &
@@ -4593,7 +6417,7 @@ class BRepApprox_TheZerImpFuncOfTheImpPrmSvSurfacesOfApprox(object):
         """
         return _BRepApprox.BRepApprox_TheZerImpFuncOfTheImpPrmSvSurfacesOfApprox_Value(self, *args)
 
-    def Derivatives(self, *args) -> "Standard_Boolean" :
+    def Derivatives(self, *args):
         """
         :param X:
         :type X: math_Vector &
@@ -4604,7 +6428,7 @@ class BRepApprox_TheZerImpFuncOfTheImpPrmSvSurfacesOfApprox(object):
         """
         return _BRepApprox.BRepApprox_TheZerImpFuncOfTheImpPrmSvSurfacesOfApprox_Derivatives(self, *args)
 
-    def Values(self, *args) -> "Standard_Boolean" :
+    def Values(self, *args):
         """
         :param X:
         :type X: math_Vector &
@@ -4617,61 +6441,61 @@ class BRepApprox_TheZerImpFuncOfTheImpPrmSvSurfacesOfApprox(object):
         """
         return _BRepApprox.BRepApprox_TheZerImpFuncOfTheImpPrmSvSurfacesOfApprox_Values(self, *args)
 
-    def Root(self, *args) -> "Standard_Real" :
+    def Root(self):
         """
         :rtype: float
 
         """
-        return _BRepApprox.BRepApprox_TheZerImpFuncOfTheImpPrmSvSurfacesOfApprox_Root(self, *args)
+        return _BRepApprox.BRepApprox_TheZerImpFuncOfTheImpPrmSvSurfacesOfApprox_Root(self)
 
-    def Tolerance(self, *args) -> "Standard_Real" :
+    def Tolerance(self):
         """
         :rtype: float
 
         """
-        return _BRepApprox.BRepApprox_TheZerImpFuncOfTheImpPrmSvSurfacesOfApprox_Tolerance(self, *args)
+        return _BRepApprox.BRepApprox_TheZerImpFuncOfTheImpPrmSvSurfacesOfApprox_Tolerance(self)
 
-    def Point(self, *args) -> "gp_Pnt const" :
+    def Point(self):
         """
         :rtype: gp_Pnt
 
         """
-        return _BRepApprox.BRepApprox_TheZerImpFuncOfTheImpPrmSvSurfacesOfApprox_Point(self, *args)
+        return _BRepApprox.BRepApprox_TheZerImpFuncOfTheImpPrmSvSurfacesOfApprox_Point(self)
 
-    def IsTangent(self, *args) -> "Standard_Boolean" :
+    def IsTangent(self):
         """
         :rtype: bool
 
         """
-        return _BRepApprox.BRepApprox_TheZerImpFuncOfTheImpPrmSvSurfacesOfApprox_IsTangent(self, *args)
+        return _BRepApprox.BRepApprox_TheZerImpFuncOfTheImpPrmSvSurfacesOfApprox_IsTangent(self)
 
-    def Direction3d(self, *args) -> "gp_Vec const" :
+    def Direction3d(self):
         """
         :rtype: gp_Vec
 
         """
-        return _BRepApprox.BRepApprox_TheZerImpFuncOfTheImpPrmSvSurfacesOfApprox_Direction3d(self, *args)
+        return _BRepApprox.BRepApprox_TheZerImpFuncOfTheImpPrmSvSurfacesOfApprox_Direction3d(self)
 
-    def Direction2d(self, *args) -> "gp_Dir2d const" :
+    def Direction2d(self):
         """
         :rtype: gp_Dir2d
 
         """
-        return _BRepApprox.BRepApprox_TheZerImpFuncOfTheImpPrmSvSurfacesOfApprox_Direction2d(self, *args)
+        return _BRepApprox.BRepApprox_TheZerImpFuncOfTheImpPrmSvSurfacesOfApprox_Direction2d(self)
 
-    def PSurface(self, *args) -> "BRepAdaptor_Surface const &" :
+    def PSurface(self):
         """
         :rtype: BRepAdaptor_Surface
 
         """
-        return _BRepApprox.BRepApprox_TheZerImpFuncOfTheImpPrmSvSurfacesOfApprox_PSurface(self, *args)
+        return _BRepApprox.BRepApprox_TheZerImpFuncOfTheImpPrmSvSurfacesOfApprox_PSurface(self)
 
-    def ISurface(self, *args) -> "IntSurf_Quadric const &" :
+    def ISurface(self):
         """
         :rtype: IntSurf_Quadric
 
         """
-        return _BRepApprox.BRepApprox_TheZerImpFuncOfTheImpPrmSvSurfacesOfApprox_ISurface(self, *args)
+        return _BRepApprox.BRepApprox_TheZerImpFuncOfTheImpPrmSvSurfacesOfApprox_ISurface(self)
 
     def __del__(self):
     	try:

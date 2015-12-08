@@ -131,22 +131,22 @@ class BRepAdaptor_Array1OfCurve(object):
     def __init__(self, *args): 
         """
         :param Low:
-        :type Low: int
+        :type Low: Standard_Integer
         :param Up:
-        :type Up: int
+        :type Up: Standard_Integer
         :rtype: None
 
         :param Item:
         :type Item: BRepAdaptor_Curve &
         :param Low:
-        :type Low: int
+        :type Low: Standard_Integer
         :param Up:
-        :type Up: int
+        :type Up: Standard_Integer
         :rtype: None
 
         """
         _BRepAdaptor.BRepAdaptor_Array1OfCurve_swiginit(self,_BRepAdaptor.new_BRepAdaptor_Array1OfCurve(*args))
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
         :param V:
         :type V: BRepAdaptor_Curve &
@@ -155,21 +155,21 @@ class BRepAdaptor_Array1OfCurve(object):
         """
         return _BRepAdaptor.BRepAdaptor_Array1OfCurve_Init(self, *args)
 
-    def Destroy(self, *args) -> "void" :
+    def Destroy(self):
         """
         :rtype: None
 
         """
-        return _BRepAdaptor.BRepAdaptor_Array1OfCurve_Destroy(self, *args)
+        return _BRepAdaptor.BRepAdaptor_Array1OfCurve_Destroy(self)
 
-    def IsAllocated(self, *args) -> "Standard_Boolean" :
+    def IsAllocated(self):
         """
         :rtype: bool
 
         """
-        return _BRepAdaptor.BRepAdaptor_Array1OfCurve_IsAllocated(self, *args)
+        return _BRepAdaptor.BRepAdaptor_Array1OfCurve_IsAllocated(self)
 
-    def Assign(self, *args) -> "BRepAdaptor_Array1OfCurve const &" :
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: BRepAdaptor_Array1OfCurve &
@@ -178,7 +178,7 @@ class BRepAdaptor_Array1OfCurve(object):
         """
         return _BRepAdaptor.BRepAdaptor_Array1OfCurve_Assign(self, *args)
 
-    def Set(self, *args) -> "BRepAdaptor_Array1OfCurve const &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: BRepAdaptor_Array1OfCurve &
@@ -187,31 +187,31 @@ class BRepAdaptor_Array1OfCurve(object):
         """
         return _BRepAdaptor.BRepAdaptor_Array1OfCurve_Set(self, *args)
 
-    def Length(self, *args) -> "Standard_Integer" :
+    def Length(self):
         """
         :rtype: int
 
         """
-        return _BRepAdaptor.BRepAdaptor_Array1OfCurve_Length(self, *args)
+        return _BRepAdaptor.BRepAdaptor_Array1OfCurve_Length(self)
 
-    def Lower(self, *args) -> "Standard_Integer" :
+    def Lower(self):
         """
         :rtype: int
 
         """
-        return _BRepAdaptor.BRepAdaptor_Array1OfCurve_Lower(self, *args)
+        return _BRepAdaptor.BRepAdaptor_Array1OfCurve_Lower(self)
 
-    def Upper(self, *args) -> "Standard_Integer" :
+    def Upper(self):
         """
         :rtype: int
 
         """
-        return _BRepAdaptor.BRepAdaptor_Array1OfCurve_Upper(self, *args)
+        return _BRepAdaptor.BRepAdaptor_Array1OfCurve_Upper(self)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Value:
         :type Value: BRepAdaptor_Curve &
         :rtype: None
@@ -219,19 +219,19 @@ class BRepAdaptor_Array1OfCurve(object):
         """
         return _BRepAdaptor.BRepAdaptor_Array1OfCurve_SetValue(self, *args)
 
-    def Value(self, *args) -> "BRepAdaptor_Curve const &" :
+    def Value(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: BRepAdaptor_Curve
 
         """
         return _BRepAdaptor.BRepAdaptor_Array1OfCurve_Value(self, *args)
 
-    def ChangeValue(self, *args) -> "BRepAdaptor_Curve &" :
+    def ChangeValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: BRepAdaptor_Curve
 
         """
@@ -275,6 +275,12 @@ class BRepAdaptor_CompCurve(OCC.Adaptor3d.Adaptor3d_Curve):
         :type KnotByCurvilinearAbcissa: bool
         :rtype: None
 
+        :param W:
+        :type W: TopoDS_Wire &
+        :param KnotByCurvilinearAbcissa: default value is Standard_False
+        :type KnotByCurvilinearAbcissa: bool
+        :rtype: None
+
         * Creates a Curve to acces to the geometry of edge <W>.
 
         :param W:
@@ -291,7 +297,7 @@ class BRepAdaptor_CompCurve(OCC.Adaptor3d.Adaptor3d_Curve):
 
         """
         _BRepAdaptor.BRepAdaptor_CompCurve_swiginit(self,_BRepAdaptor.new_BRepAdaptor_CompCurve(*args))
-    def Initialize(self, *args) -> "void" :
+    def Initialize(self, *args):
         """
         * Sets the wire <W>.
 
@@ -318,7 +324,7 @@ class BRepAdaptor_CompCurve(OCC.Adaptor3d.Adaptor3d_Curve):
         """
         return _BRepAdaptor.BRepAdaptor_CompCurve_Initialize(self, *args)
 
-    def SetPeriodic(self, *args) -> "void" :
+    def SetPeriodic(self, *args):
         """
         * Set the flag Periodic. Warning: This method has no effect if the wire is not closed
 
@@ -329,16 +335,16 @@ class BRepAdaptor_CompCurve(OCC.Adaptor3d.Adaptor3d_Curve):
         """
         return _BRepAdaptor.BRepAdaptor_CompCurve_SetPeriodic(self, *args)
 
-    def Wire(self, *args) -> "TopoDS_Wire const" :
+    def Wire(self):
         """
         * Returns the wire.
 
         :rtype: TopoDS_Wire
 
         """
-        return _BRepAdaptor.BRepAdaptor_CompCurve_Wire(self, *args)
+        return _BRepAdaptor.BRepAdaptor_CompCurve_Wire(self)
 
-    def Edge(self, *args) -> "void" :
+    def Edge(self, *args):
         """
         * returns an edge and one parameter on them corresponding to the parameter U.
 
@@ -394,7 +400,7 @@ class BRepAdaptor_Curve(OCC.Adaptor3d.Adaptor3d_Curve):
 
         """
         _BRepAdaptor.BRepAdaptor_Curve_swiginit(self,_BRepAdaptor.new_BRepAdaptor_Curve(*args))
-    def Initialize(self, *args) -> "void" :
+    def Initialize(self, *args):
         """
         * Sets the Curve <self> to acces to the geometry of edge <E>.
 
@@ -413,68 +419,68 @@ class BRepAdaptor_Curve(OCC.Adaptor3d.Adaptor3d_Curve):
         """
         return _BRepAdaptor.BRepAdaptor_Curve_Initialize(self, *args)
 
-    def Trsf(self, *args) -> "gp_Trsf const" :
+    def Trsf(self):
         """
         * Returns the coordinate system of the curve.
 
         :rtype: gp_Trsf
 
         """
-        return _BRepAdaptor.BRepAdaptor_Curve_Trsf(self, *args)
+        return _BRepAdaptor.BRepAdaptor_Curve_Trsf(self)
 
-    def Is3DCurve(self, *args) -> "Standard_Boolean" :
+    def Is3DCurve(self):
         """
         * Returns True if the edge geometry is computed from a 3D curve.
 
         :rtype: bool
 
         """
-        return _BRepAdaptor.BRepAdaptor_Curve_Is3DCurve(self, *args)
+        return _BRepAdaptor.BRepAdaptor_Curve_Is3DCurve(self)
 
-    def IsCurveOnSurface(self, *args) -> "Standard_Boolean" :
+    def IsCurveOnSurface(self):
         """
         * Returns True if the edge geometry is computed from a pcurve on a surface.
 
         :rtype: bool
 
         """
-        return _BRepAdaptor.BRepAdaptor_Curve_IsCurveOnSurface(self, *args)
+        return _BRepAdaptor.BRepAdaptor_Curve_IsCurveOnSurface(self)
 
-    def Curve(self, *args) -> "GeomAdaptor_Curve const &" :
+    def Curve(self):
         """
         * Returns the Curve of the edge.
 
         :rtype: GeomAdaptor_Curve
 
         """
-        return _BRepAdaptor.BRepAdaptor_Curve_Curve(self, *args)
+        return _BRepAdaptor.BRepAdaptor_Curve_Curve(self)
 
-    def CurveOnSurface(self, *args) -> "Adaptor3d_CurveOnSurface const &" :
+    def CurveOnSurface(self):
         """
         * Returns the CurveOnSurface of the edge.
 
         :rtype: Adaptor3d_CurveOnSurface
 
         """
-        return _BRepAdaptor.BRepAdaptor_Curve_CurveOnSurface(self, *args)
+        return _BRepAdaptor.BRepAdaptor_Curve_CurveOnSurface(self)
 
-    def Edge(self, *args) -> "TopoDS_Edge const" :
+    def Edge(self):
         """
         * Returns the edge.
 
         :rtype: TopoDS_Edge
 
         """
-        return _BRepAdaptor.BRepAdaptor_Curve_Edge(self, *args)
+        return _BRepAdaptor.BRepAdaptor_Curve_Edge(self)
 
-    def Tolerance(self, *args) -> "Standard_Real" :
+    def Tolerance(self):
         """
         * Returns the edge tolerance.
 
         :rtype: float
 
         """
-        return _BRepAdaptor.BRepAdaptor_Curve_Tolerance(self, *args)
+        return _BRepAdaptor.BRepAdaptor_Curve_Tolerance(self)
 
     def __del__(self):
     	try:
@@ -515,7 +521,7 @@ class BRepAdaptor_Curve2d(OCC.Geom2dAdaptor.Geom2dAdaptor_Curve):
 
         """
         _BRepAdaptor.BRepAdaptor_Curve2d_swiginit(self,_BRepAdaptor.new_BRepAdaptor_Curve2d(*args))
-    def Initialize(self, *args) -> "void" :
+    def Initialize(self, *args):
         """
         * Initialize with the pcurve of <E> on <F>.
 
@@ -528,23 +534,23 @@ class BRepAdaptor_Curve2d(OCC.Geom2dAdaptor.Geom2dAdaptor_Curve):
         """
         return _BRepAdaptor.BRepAdaptor_Curve2d_Initialize(self, *args)
 
-    def Edge(self, *args) -> "TopoDS_Edge const" :
+    def Edge(self):
         """
         * Returns the Edge.
 
         :rtype: TopoDS_Edge
 
         """
-        return _BRepAdaptor.BRepAdaptor_Curve2d_Edge(self, *args)
+        return _BRepAdaptor.BRepAdaptor_Curve2d_Edge(self)
 
-    def Face(self, *args) -> "TopoDS_Face const" :
+    def Face(self):
         """
         * Returns the Face.
 
         :rtype: TopoDS_Face
 
         """
-        return _BRepAdaptor.BRepAdaptor_Curve2d_Face(self, *args)
+        return _BRepAdaptor.BRepAdaptor_Curve2d_Face(self)
 
     def __del__(self):
     	try:
@@ -567,22 +573,22 @@ class BRepAdaptor_HArray1OfCurve(OCC.MMgt.MMgt_TShared):
     def __init__(self, *args): 
         """
         :param Low:
-        :type Low: int
+        :type Low: Standard_Integer
         :param Up:
-        :type Up: int
+        :type Up: Standard_Integer
         :rtype: None
 
         :param Low:
-        :type Low: int
+        :type Low: Standard_Integer
         :param Up:
-        :type Up: int
+        :type Up: Standard_Integer
         :param V:
         :type V: BRepAdaptor_Curve &
         :rtype: None
 
         """
         _BRepAdaptor.BRepAdaptor_HArray1OfCurve_swiginit(self,_BRepAdaptor.new_BRepAdaptor_HArray1OfCurve(*args))
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
         :param V:
         :type V: BRepAdaptor_Curve &
@@ -591,31 +597,31 @@ class BRepAdaptor_HArray1OfCurve(OCC.MMgt.MMgt_TShared):
         """
         return _BRepAdaptor.BRepAdaptor_HArray1OfCurve_Init(self, *args)
 
-    def Length(self, *args) -> "Standard_Integer" :
+    def Length(self):
         """
         :rtype: int
 
         """
-        return _BRepAdaptor.BRepAdaptor_HArray1OfCurve_Length(self, *args)
+        return _BRepAdaptor.BRepAdaptor_HArray1OfCurve_Length(self)
 
-    def Lower(self, *args) -> "Standard_Integer" :
+    def Lower(self):
         """
         :rtype: int
 
         """
-        return _BRepAdaptor.BRepAdaptor_HArray1OfCurve_Lower(self, *args)
+        return _BRepAdaptor.BRepAdaptor_HArray1OfCurve_Lower(self)
 
-    def Upper(self, *args) -> "Standard_Integer" :
+    def Upper(self):
         """
         :rtype: int
 
         """
-        return _BRepAdaptor.BRepAdaptor_HArray1OfCurve_Upper(self, *args)
+        return _BRepAdaptor.BRepAdaptor_HArray1OfCurve_Upper(self)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Value:
         :type Value: BRepAdaptor_Curve &
         :rtype: None
@@ -623,43 +629,43 @@ class BRepAdaptor_HArray1OfCurve(OCC.MMgt.MMgt_TShared):
         """
         return _BRepAdaptor.BRepAdaptor_HArray1OfCurve_SetValue(self, *args)
 
-    def Value(self, *args) -> "BRepAdaptor_Curve const &" :
+    def Value(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: BRepAdaptor_Curve
 
         """
         return _BRepAdaptor.BRepAdaptor_HArray1OfCurve_Value(self, *args)
 
-    def ChangeValue(self, *args) -> "BRepAdaptor_Curve &" :
+    def ChangeValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: BRepAdaptor_Curve
 
         """
         return _BRepAdaptor.BRepAdaptor_HArray1OfCurve_ChangeValue(self, *args)
 
-    def Array1(self, *args) -> "BRepAdaptor_Array1OfCurve const &" :
+    def Array1(self):
         """
         :rtype: BRepAdaptor_Array1OfCurve
 
         """
-        return _BRepAdaptor.BRepAdaptor_HArray1OfCurve_Array1(self, *args)
+        return _BRepAdaptor.BRepAdaptor_HArray1OfCurve_Array1(self)
 
-    def ChangeArray1(self, *args) -> "BRepAdaptor_Array1OfCurve &" :
+    def ChangeArray1(self):
         """
         :rtype: BRepAdaptor_Array1OfCurve
 
         """
-        return _BRepAdaptor.BRepAdaptor_HArray1OfCurve_ChangeArray1(self, *args)
+        return _BRepAdaptor.BRepAdaptor_HArray1OfCurve_ChangeArray1(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(BRepAdaptor_HArray1OfCurve self)"""
         return _BRepAdaptor.BRepAdaptor_HArray1OfCurve__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_BRepAdaptor_HArray1OfCurve" :
+    def GetHandle(self):
         """GetHandle(BRepAdaptor_HArray1OfCurve self) -> Handle_BRepAdaptor_HArray1OfCurve"""
         return _BRepAdaptor.BRepAdaptor_HArray1OfCurve_GetHandle(self)
 
@@ -706,7 +712,7 @@ Handle_BRepAdaptor_HArray1OfCurve._kill_pointed = new_instancemethod(_BRepAdapto
 Handle_BRepAdaptor_HArray1OfCurve_swigregister = _BRepAdaptor.Handle_BRepAdaptor_HArray1OfCurve_swigregister
 Handle_BRepAdaptor_HArray1OfCurve_swigregister(Handle_BRepAdaptor_HArray1OfCurve)
 
-def Handle_BRepAdaptor_HArray1OfCurve_DownCast(*args) -> "Handle_BRepAdaptor_HArray1OfCurve const" :
+def Handle_BRepAdaptor_HArray1OfCurve_DownCast(*args):
   return _BRepAdaptor.Handle_BRepAdaptor_HArray1OfCurve_DownCast(*args)
 Handle_BRepAdaptor_HArray1OfCurve_DownCast = _BRepAdaptor.Handle_BRepAdaptor_HArray1OfCurve_DownCast
 
@@ -723,7 +729,7 @@ class BRepAdaptor_HCompCurve(OCC.Adaptor3d.Adaptor3d_HCurve):
 
         """
         _BRepAdaptor.BRepAdaptor_HCompCurve_swiginit(self,_BRepAdaptor.new_BRepAdaptor_HCompCurve(*args))
-    def Set(self, *args) -> "void" :
+    def Set(self, *args):
         """
         :param C:
         :type C: BRepAdaptor_CompCurve &
@@ -732,18 +738,18 @@ class BRepAdaptor_HCompCurve(OCC.Adaptor3d.Adaptor3d_HCurve):
         """
         return _BRepAdaptor.BRepAdaptor_HCompCurve_Set(self, *args)
 
-    def ChangeCurve(self, *args) -> "BRepAdaptor_CompCurve &" :
+    def ChangeCurve(self):
         """
         :rtype: BRepAdaptor_CompCurve
 
         """
-        return _BRepAdaptor.BRepAdaptor_HCompCurve_ChangeCurve(self, *args)
+        return _BRepAdaptor.BRepAdaptor_HCompCurve_ChangeCurve(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(BRepAdaptor_HCompCurve self)"""
         return _BRepAdaptor.BRepAdaptor_HCompCurve__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_BRepAdaptor_HCompCurve" :
+    def GetHandle(self):
         """GetHandle(BRepAdaptor_HCompCurve self) -> Handle_BRepAdaptor_HCompCurve"""
         return _BRepAdaptor.BRepAdaptor_HCompCurve_GetHandle(self)
 
@@ -783,7 +789,7 @@ Handle_BRepAdaptor_HCompCurve._kill_pointed = new_instancemethod(_BRepAdaptor.Ha
 Handle_BRepAdaptor_HCompCurve_swigregister = _BRepAdaptor.Handle_BRepAdaptor_HCompCurve_swigregister
 Handle_BRepAdaptor_HCompCurve_swigregister(Handle_BRepAdaptor_HCompCurve)
 
-def Handle_BRepAdaptor_HCompCurve_DownCast(*args) -> "Handle_BRepAdaptor_HCompCurve const" :
+def Handle_BRepAdaptor_HCompCurve_DownCast(*args):
   return _BRepAdaptor.Handle_BRepAdaptor_HCompCurve_DownCast(*args)
 Handle_BRepAdaptor_HCompCurve_DownCast = _BRepAdaptor.Handle_BRepAdaptor_HCompCurve_DownCast
 
@@ -800,7 +806,7 @@ class BRepAdaptor_HCurve(OCC.Adaptor3d.Adaptor3d_HCurve):
 
         """
         _BRepAdaptor.BRepAdaptor_HCurve_swiginit(self,_BRepAdaptor.new_BRepAdaptor_HCurve(*args))
-    def Set(self, *args) -> "void" :
+    def Set(self, *args):
         """
         :param C:
         :type C: BRepAdaptor_Curve &
@@ -809,18 +815,18 @@ class BRepAdaptor_HCurve(OCC.Adaptor3d.Adaptor3d_HCurve):
         """
         return _BRepAdaptor.BRepAdaptor_HCurve_Set(self, *args)
 
-    def ChangeCurve(self, *args) -> "BRepAdaptor_Curve &" :
+    def ChangeCurve(self):
         """
         :rtype: BRepAdaptor_Curve
 
         """
-        return _BRepAdaptor.BRepAdaptor_HCurve_ChangeCurve(self, *args)
+        return _BRepAdaptor.BRepAdaptor_HCurve_ChangeCurve(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(BRepAdaptor_HCurve self)"""
         return _BRepAdaptor.BRepAdaptor_HCurve__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_BRepAdaptor_HCurve" :
+    def GetHandle(self):
         """GetHandle(BRepAdaptor_HCurve self) -> Handle_BRepAdaptor_HCurve"""
         return _BRepAdaptor.BRepAdaptor_HCurve_GetHandle(self)
 
@@ -860,7 +866,7 @@ Handle_BRepAdaptor_HCurve._kill_pointed = new_instancemethod(_BRepAdaptor.Handle
 Handle_BRepAdaptor_HCurve_swigregister = _BRepAdaptor.Handle_BRepAdaptor_HCurve_swigregister
 Handle_BRepAdaptor_HCurve_swigregister(Handle_BRepAdaptor_HCurve)
 
-def Handle_BRepAdaptor_HCurve_DownCast(*args) -> "Handle_BRepAdaptor_HCurve const" :
+def Handle_BRepAdaptor_HCurve_DownCast(*args):
   return _BRepAdaptor.Handle_BRepAdaptor_HCurve_DownCast(*args)
 Handle_BRepAdaptor_HCurve_DownCast = _BRepAdaptor.Handle_BRepAdaptor_HCurve_DownCast
 
@@ -877,7 +883,7 @@ class BRepAdaptor_HCurve2d(OCC.Adaptor2d.Adaptor2d_HCurve2d):
 
         """
         _BRepAdaptor.BRepAdaptor_HCurve2d_swiginit(self,_BRepAdaptor.new_BRepAdaptor_HCurve2d(*args))
-    def Set(self, *args) -> "void" :
+    def Set(self, *args):
         """
         :param C:
         :type C: BRepAdaptor_Curve2d &
@@ -886,18 +892,18 @@ class BRepAdaptor_HCurve2d(OCC.Adaptor2d.Adaptor2d_HCurve2d):
         """
         return _BRepAdaptor.BRepAdaptor_HCurve2d_Set(self, *args)
 
-    def ChangeCurve2d(self, *args) -> "BRepAdaptor_Curve2d &" :
+    def ChangeCurve2d(self):
         """
         :rtype: BRepAdaptor_Curve2d
 
         """
-        return _BRepAdaptor.BRepAdaptor_HCurve2d_ChangeCurve2d(self, *args)
+        return _BRepAdaptor.BRepAdaptor_HCurve2d_ChangeCurve2d(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(BRepAdaptor_HCurve2d self)"""
         return _BRepAdaptor.BRepAdaptor_HCurve2d__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_BRepAdaptor_HCurve2d" :
+    def GetHandle(self):
         """GetHandle(BRepAdaptor_HCurve2d self) -> Handle_BRepAdaptor_HCurve2d"""
         return _BRepAdaptor.BRepAdaptor_HCurve2d_GetHandle(self)
 
@@ -937,7 +943,7 @@ Handle_BRepAdaptor_HCurve2d._kill_pointed = new_instancemethod(_BRepAdaptor.Hand
 Handle_BRepAdaptor_HCurve2d_swigregister = _BRepAdaptor.Handle_BRepAdaptor_HCurve2d_swigregister
 Handle_BRepAdaptor_HCurve2d_swigregister(Handle_BRepAdaptor_HCurve2d)
 
-def Handle_BRepAdaptor_HCurve2d_DownCast(*args) -> "Handle_BRepAdaptor_HCurve2d const" :
+def Handle_BRepAdaptor_HCurve2d_DownCast(*args):
   return _BRepAdaptor.Handle_BRepAdaptor_HCurve2d_DownCast(*args)
 Handle_BRepAdaptor_HCurve2d_DownCast = _BRepAdaptor.Handle_BRepAdaptor_HCurve2d_DownCast
 
@@ -954,7 +960,7 @@ class BRepAdaptor_HSurface(OCC.Adaptor3d.Adaptor3d_HSurface):
 
         """
         _BRepAdaptor.BRepAdaptor_HSurface_swiginit(self,_BRepAdaptor.new_BRepAdaptor_HSurface(*args))
-    def Set(self, *args) -> "void" :
+    def Set(self, *args):
         """
         :param S:
         :type S: BRepAdaptor_Surface &
@@ -963,18 +969,18 @@ class BRepAdaptor_HSurface(OCC.Adaptor3d.Adaptor3d_HSurface):
         """
         return _BRepAdaptor.BRepAdaptor_HSurface_Set(self, *args)
 
-    def ChangeSurface(self, *args) -> "BRepAdaptor_Surface &" :
+    def ChangeSurface(self):
         """
         :rtype: BRepAdaptor_Surface
 
         """
-        return _BRepAdaptor.BRepAdaptor_HSurface_ChangeSurface(self, *args)
+        return _BRepAdaptor.BRepAdaptor_HSurface_ChangeSurface(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(BRepAdaptor_HSurface self)"""
         return _BRepAdaptor.BRepAdaptor_HSurface__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_BRepAdaptor_HSurface" :
+    def GetHandle(self):
         """GetHandle(BRepAdaptor_HSurface self) -> Handle_BRepAdaptor_HSurface"""
         return _BRepAdaptor.BRepAdaptor_HSurface_GetHandle(self)
 
@@ -1014,7 +1020,7 @@ Handle_BRepAdaptor_HSurface._kill_pointed = new_instancemethod(_BRepAdaptor.Hand
 Handle_BRepAdaptor_HSurface_swigregister = _BRepAdaptor.Handle_BRepAdaptor_HSurface_swigregister
 Handle_BRepAdaptor_HSurface_swigregister(Handle_BRepAdaptor_HSurface)
 
-def Handle_BRepAdaptor_HSurface_DownCast(*args) -> "Handle_BRepAdaptor_HSurface const" :
+def Handle_BRepAdaptor_HSurface_DownCast(*args):
   return _BRepAdaptor.Handle_BRepAdaptor_HSurface_DownCast(*args)
 Handle_BRepAdaptor_HSurface_DownCast = _BRepAdaptor.Handle_BRepAdaptor_HSurface_DownCast
 
@@ -1035,10 +1041,26 @@ class BRepAdaptor_Surface(OCC.Adaptor3d.Adaptor3d_Surface):
         :type R: bool
         :rtype: None
 
+        * Creates a surface to access the geometry of <F>. If <Restriction> is true the parameter range is the parameter range in the UV space of the restriction.
+
+        :param F:
+        :type F: TopoDS_Face &
+        :param R: default value is Standard_True
+        :type R: bool
+        :rtype: None
+
         """
         _BRepAdaptor.BRepAdaptor_Surface_swiginit(self,_BRepAdaptor.new_BRepAdaptor_Surface(*args))
-    def Initialize(self, *args) -> "void" :
+    def Initialize(self, *args):
         """
+        * Sets the surface to the geometry of <F>.
+
+        :param F:
+        :type F: TopoDS_Face &
+        :param Restriction: default value is Standard_True
+        :type Restriction: bool
+        :rtype: None
+
         * Sets the surface to the geometry of <F>.
 
         :param F:
@@ -1050,50 +1072,50 @@ class BRepAdaptor_Surface(OCC.Adaptor3d.Adaptor3d_Surface):
         """
         return _BRepAdaptor.BRepAdaptor_Surface_Initialize(self, *args)
 
-    def Surface(self, *args) -> "GeomAdaptor_Surface const &" :
+    def Surface(self):
         """
         * Returns the surface.
 
         :rtype: GeomAdaptor_Surface
 
         """
-        return _BRepAdaptor.BRepAdaptor_Surface_Surface(self, *args)
+        return _BRepAdaptor.BRepAdaptor_Surface_Surface(self)
 
-    def ChangeSurface(self, *args) -> "GeomAdaptor_Surface &" :
+    def ChangeSurface(self):
         """
         * Returns the surface.
 
         :rtype: GeomAdaptor_Surface
 
         """
-        return _BRepAdaptor.BRepAdaptor_Surface_ChangeSurface(self, *args)
+        return _BRepAdaptor.BRepAdaptor_Surface_ChangeSurface(self)
 
-    def Trsf(self, *args) -> "gp_Trsf const" :
+    def Trsf(self):
         """
         * Returns the surface coordinate system.
 
         :rtype: gp_Trsf
 
         """
-        return _BRepAdaptor.BRepAdaptor_Surface_Trsf(self, *args)
+        return _BRepAdaptor.BRepAdaptor_Surface_Trsf(self)
 
-    def Face(self, *args) -> "TopoDS_Face const" :
+    def Face(self):
         """
         * Returns the face.
 
         :rtype: TopoDS_Face
 
         """
-        return _BRepAdaptor.BRepAdaptor_Surface_Face(self, *args)
+        return _BRepAdaptor.BRepAdaptor_Surface_Face(self)
 
-    def Tolerance(self, *args) -> "Standard_Real" :
+    def Tolerance(self):
         """
         * Returns the face tolerance.
 
         :rtype: float
 
         """
-        return _BRepAdaptor.BRepAdaptor_Surface_Tolerance(self, *args)
+        return _BRepAdaptor.BRepAdaptor_Surface_Tolerance(self)
 
     def __del__(self):
     	try:

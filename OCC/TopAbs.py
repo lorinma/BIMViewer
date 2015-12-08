@@ -128,8 +128,9 @@ TopAbs_ON = _TopAbs.TopAbs_ON
 TopAbs_UNKNOWN = _TopAbs.TopAbs_UNKNOWN
 class topabs(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
+    def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def Compose(*args) -> "TopAbs_Orientation" :
+    def Compose(*args):
         """
         * Compose the Orientation <Or1> and <Or2>. This composition is not symmetric (if you switch <Or1> and <Or2> the result is different). It assumes that <Or1> is the Orientation of a Shape S1 containing a Shape S2 of Orientation Or2. The result is the cumulated orientation of S2 in S1. The composition law is :  \ Or2 FORWARD REVERSED INTERNAL EXTERNAL Or1 ------------------------------------- FORWARD | FORWARD REVERSED INTERNAL EXTERNAL  | REVERSED | REVERSED FORWARD INTERNAL EXTERNAL  | INTERNAL | INTERNAL INTERNAL INTERNAL INTERNAL  | EXTERNAL | EXTERNAL EXTERNAL EXTERNAL EXTERNAL Note: The top corner in the table is the most important for the purposes of Open CASCADE topology and shape sharing.
 
@@ -143,7 +144,7 @@ class topabs(object):
         return _TopAbs.topabs_Compose(*args)
 
     Compose = staticmethod(Compose)
-    def Reverse(*args) -> "TopAbs_Orientation" :
+    def Reverse(*args):
         """
         * xchanges the interior/exterior status of the two sides. This is what happens when the sense of direction is reversed. The following rules apply:  FORWARD REVERSED REVERSED FORWARD INTERNAL INTERNAL EXTERNAL EXTERNAL  Reverse exchange the material sides.
 
@@ -155,7 +156,7 @@ class topabs(object):
         return _TopAbs.topabs_Reverse(*args)
 
     Reverse = staticmethod(Reverse)
-    def Complement(*args) -> "TopAbs_Orientation" :
+    def Complement(*args):
         """
         * Reverses the interior/exterior status of each side of the object. So, to take the complement of an object means to reverse the interior/exterior status of its boundary, i.e. inside becomes outside. The method returns the complementary orientation, following the rules in the table below: FORWARD REVERSED REVERSED FORWARD INTERNAL EXTERNAL EXTERNAL INTERNAL  Complement complements the material side. Inside becomes outside.
 
@@ -167,7 +168,7 @@ class topabs(object):
         return _TopAbs.topabs_Complement(*args)
 
     Complement = staticmethod(Complement)
-    def Print(*args) -> "Standard_OStream &" :
+    def Print(*args):
         """
         * Prints the name of Shape <SEq> as a String on the Stream <S> and returns <S>.
 
@@ -197,8 +198,6 @@ class topabs(object):
         return _TopAbs.topabs_Print(*args)
 
     Print = staticmethod(Print)
-    def __init__(self): 
-        _TopAbs.topabs_swiginit(self,_TopAbs.new_topabs())
     def __del__(self):
     	try:
     		self.thisown = False
@@ -211,7 +210,7 @@ topabs._kill_pointed = new_instancemethod(_TopAbs.topabs__kill_pointed,None,topa
 topabs_swigregister = _TopAbs.topabs_swigregister
 topabs_swigregister(topabs)
 
-def topabs_Compose(*args) -> "TopAbs_Orientation" :
+def topabs_Compose(*args):
   """
     * Compose the Orientation <Or1> and <Or2>. This composition is not symmetric (if you switch <Or1> and <Or2> the result is different). It assumes that <Or1> is the Orientation of a Shape S1 containing a Shape S2 of Orientation Or2. The result is the cumulated orientation of S2 in S1. The composition law is :  \ Or2 FORWARD REVERSED INTERNAL EXTERNAL Or1 ------------------------------------- FORWARD | FORWARD REVERSED INTERNAL EXTERNAL  | REVERSED | REVERSED FORWARD INTERNAL EXTERNAL  | INTERNAL | INTERNAL INTERNAL INTERNAL INTERNAL  | EXTERNAL | EXTERNAL EXTERNAL EXTERNAL EXTERNAL Note: The top corner in the table is the most important for the purposes of Open CASCADE topology and shape sharing.
 
@@ -224,7 +223,7 @@ def topabs_Compose(*args) -> "TopAbs_Orientation" :
     """
   return _TopAbs.topabs_Compose(*args)
 
-def topabs_Reverse(*args) -> "TopAbs_Orientation" :
+def topabs_Reverse(*args):
   """
     * xchanges the interior/exterior status of the two sides. This is what happens when the sense of direction is reversed. The following rules apply:  FORWARD REVERSED REVERSED FORWARD INTERNAL INTERNAL EXTERNAL EXTERNAL  Reverse exchange the material sides.
 
@@ -235,7 +234,7 @@ def topabs_Reverse(*args) -> "TopAbs_Orientation" :
     """
   return _TopAbs.topabs_Reverse(*args)
 
-def topabs_Complement(*args) -> "TopAbs_Orientation" :
+def topabs_Complement(*args):
   """
     * Reverses the interior/exterior status of each side of the object. So, to take the complement of an object means to reverse the interior/exterior status of its boundary, i.e. inside becomes outside. The method returns the complementary orientation, following the rules in the table below: FORWARD REVERSED REVERSED FORWARD INTERNAL EXTERNAL EXTERNAL INTERNAL  Complement complements the material side. Inside becomes outside.
 
@@ -246,7 +245,7 @@ def topabs_Complement(*args) -> "TopAbs_Orientation" :
     """
   return _TopAbs.topabs_Complement(*args)
 
-def topabs_Print(*args) -> "Standard_OStream &" :
+def topabs_Print(*args):
   """
     * Prints the name of Shape <SEq> as a String on the Stream <S> and returns <S>.
 

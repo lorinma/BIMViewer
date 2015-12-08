@@ -135,22 +135,22 @@ class Approx_Array1OfAdHSurface(object):
     def __init__(self, *args): 
         """
         :param Low:
-        :type Low: int
+        :type Low: Standard_Integer
         :param Up:
-        :type Up: int
+        :type Up: Standard_Integer
         :rtype: None
 
         :param Item:
         :type Item: Handle_Adaptor3d_HSurface &
         :param Low:
-        :type Low: int
+        :type Low: Standard_Integer
         :param Up:
-        :type Up: int
+        :type Up: Standard_Integer
         :rtype: None
 
         """
         _Approx.Approx_Array1OfAdHSurface_swiginit(self,_Approx.new_Approx_Array1OfAdHSurface(*args))
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
         :param V:
         :type V: Handle_Adaptor3d_HSurface &
@@ -159,21 +159,21 @@ class Approx_Array1OfAdHSurface(object):
         """
         return _Approx.Approx_Array1OfAdHSurface_Init(self, *args)
 
-    def Destroy(self, *args) -> "void" :
+    def Destroy(self):
         """
         :rtype: None
 
         """
-        return _Approx.Approx_Array1OfAdHSurface_Destroy(self, *args)
+        return _Approx.Approx_Array1OfAdHSurface_Destroy(self)
 
-    def IsAllocated(self, *args) -> "Standard_Boolean" :
+    def IsAllocated(self):
         """
         :rtype: bool
 
         """
-        return _Approx.Approx_Array1OfAdHSurface_IsAllocated(self, *args)
+        return _Approx.Approx_Array1OfAdHSurface_IsAllocated(self)
 
-    def Assign(self, *args) -> "Approx_Array1OfAdHSurface const &" :
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: Approx_Array1OfAdHSurface &
@@ -182,7 +182,7 @@ class Approx_Array1OfAdHSurface(object):
         """
         return _Approx.Approx_Array1OfAdHSurface_Assign(self, *args)
 
-    def Set(self, *args) -> "Approx_Array1OfAdHSurface const &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: Approx_Array1OfAdHSurface &
@@ -191,31 +191,31 @@ class Approx_Array1OfAdHSurface(object):
         """
         return _Approx.Approx_Array1OfAdHSurface_Set(self, *args)
 
-    def Length(self, *args) -> "Standard_Integer" :
+    def Length(self):
         """
         :rtype: int
 
         """
-        return _Approx.Approx_Array1OfAdHSurface_Length(self, *args)
+        return _Approx.Approx_Array1OfAdHSurface_Length(self)
 
-    def Lower(self, *args) -> "Standard_Integer" :
+    def Lower(self):
         """
         :rtype: int
 
         """
-        return _Approx.Approx_Array1OfAdHSurface_Lower(self, *args)
+        return _Approx.Approx_Array1OfAdHSurface_Lower(self)
 
-    def Upper(self, *args) -> "Standard_Integer" :
+    def Upper(self):
         """
         :rtype: int
 
         """
-        return _Approx.Approx_Array1OfAdHSurface_Upper(self, *args)
+        return _Approx.Approx_Array1OfAdHSurface_Upper(self)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Value:
         :type Value: Handle_Adaptor3d_HSurface &
         :rtype: None
@@ -223,19 +223,19 @@ class Approx_Array1OfAdHSurface(object):
         """
         return _Approx.Approx_Array1OfAdHSurface_SetValue(self, *args)
 
-    def Value(self, *args) -> "Handle_Adaptor3d_HSurface const &" :
+    def Value(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Handle_Adaptor3d_HSurface
 
         """
         return _Approx.Approx_Array1OfAdHSurface_Value(self, *args)
 
-    def ChangeValue(self, *args) -> "Handle_Adaptor3d_HSurface &" :
+    def ChangeValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Handle_Adaptor3d_HSurface
 
         """
@@ -270,22 +270,22 @@ class Approx_Array1OfGTrsf2d(object):
     def __init__(self, *args): 
         """
         :param Low:
-        :type Low: int
+        :type Low: Standard_Integer
         :param Up:
-        :type Up: int
+        :type Up: Standard_Integer
         :rtype: None
 
         :param Item:
         :type Item: gp_GTrsf2d
         :param Low:
-        :type Low: int
+        :type Low: Standard_Integer
         :param Up:
-        :type Up: int
+        :type Up: Standard_Integer
         :rtype: None
 
         """
         _Approx.Approx_Array1OfGTrsf2d_swiginit(self,_Approx.new_Approx_Array1OfGTrsf2d(*args))
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
         :param V:
         :type V: gp_GTrsf2d
@@ -294,21 +294,21 @@ class Approx_Array1OfGTrsf2d(object):
         """
         return _Approx.Approx_Array1OfGTrsf2d_Init(self, *args)
 
-    def Destroy(self, *args) -> "void" :
+    def Destroy(self):
         """
         :rtype: None
 
         """
-        return _Approx.Approx_Array1OfGTrsf2d_Destroy(self, *args)
+        return _Approx.Approx_Array1OfGTrsf2d_Destroy(self)
 
-    def IsAllocated(self, *args) -> "Standard_Boolean" :
+    def IsAllocated(self):
         """
         :rtype: bool
 
         """
-        return _Approx.Approx_Array1OfGTrsf2d_IsAllocated(self, *args)
+        return _Approx.Approx_Array1OfGTrsf2d_IsAllocated(self)
 
-    def Assign(self, *args) -> "Approx_Array1OfGTrsf2d const &" :
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: Approx_Array1OfGTrsf2d &
@@ -317,7 +317,7 @@ class Approx_Array1OfGTrsf2d(object):
         """
         return _Approx.Approx_Array1OfGTrsf2d_Assign(self, *args)
 
-    def Set(self, *args) -> "Approx_Array1OfGTrsf2d const &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: Approx_Array1OfGTrsf2d &
@@ -326,31 +326,31 @@ class Approx_Array1OfGTrsf2d(object):
         """
         return _Approx.Approx_Array1OfGTrsf2d_Set(self, *args)
 
-    def Length(self, *args) -> "Standard_Integer" :
+    def Length(self):
         """
         :rtype: int
 
         """
-        return _Approx.Approx_Array1OfGTrsf2d_Length(self, *args)
+        return _Approx.Approx_Array1OfGTrsf2d_Length(self)
 
-    def Lower(self, *args) -> "Standard_Integer" :
+    def Lower(self):
         """
         :rtype: int
 
         """
-        return _Approx.Approx_Array1OfGTrsf2d_Lower(self, *args)
+        return _Approx.Approx_Array1OfGTrsf2d_Lower(self)
 
-    def Upper(self, *args) -> "Standard_Integer" :
+    def Upper(self):
         """
         :rtype: int
 
         """
-        return _Approx.Approx_Array1OfGTrsf2d_Upper(self, *args)
+        return _Approx.Approx_Array1OfGTrsf2d_Upper(self)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Value:
         :type Value: gp_GTrsf2d
         :rtype: None
@@ -358,19 +358,19 @@ class Approx_Array1OfGTrsf2d(object):
         """
         return _Approx.Approx_Array1OfGTrsf2d_SetValue(self, *args)
 
-    def Value(self, *args) -> "gp_GTrsf2d const" :
+    def Value(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: gp_GTrsf2d
 
         """
         return _Approx.Approx_Array1OfGTrsf2d_Value(self, *args)
 
-    def ChangeValue(self, *args) -> "gp_GTrsf2d" :
+    def ChangeValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: gp_GTrsf2d
 
         """
@@ -417,47 +417,47 @@ class Approx_Curve2d(object):
         :param Continuity:
         :type Continuity: GeomAbs_Shape
         :param MaxDegree:
-        :type MaxDegree: int
+        :type MaxDegree: Standard_Integer
         :param MaxSegments:
-        :type MaxSegments: int
+        :type MaxSegments: Standard_Integer
         :rtype: None
 
         """
         _Approx.Approx_Curve2d_swiginit(self,_Approx.new_Approx_Curve2d(*args))
-    def IsDone(self, *args) -> "Standard_Boolean" :
+    def IsDone(self):
         """
         :rtype: bool
 
         """
-        return _Approx.Approx_Curve2d_IsDone(self, *args)
+        return _Approx.Approx_Curve2d_IsDone(self)
 
-    def HasResult(self, *args) -> "Standard_Boolean" :
+    def HasResult(self):
         """
         :rtype: bool
 
         """
-        return _Approx.Approx_Curve2d_HasResult(self, *args)
+        return _Approx.Approx_Curve2d_HasResult(self)
 
-    def Curve(self, *args) -> "Handle_Geom2d_BSplineCurve" :
+    def Curve(self):
         """
         :rtype: Handle_Geom2d_BSplineCurve
 
         """
-        return _Approx.Approx_Curve2d_Curve(self, *args)
+        return _Approx.Approx_Curve2d_Curve(self)
 
-    def MaxError2dU(self, *args) -> "Standard_Real" :
+    def MaxError2dU(self):
         """
         :rtype: float
 
         """
-        return _Approx.Approx_Curve2d_MaxError2dU(self, *args)
+        return _Approx.Approx_Curve2d_MaxError2dU(self)
 
-    def MaxError2dV(self, *args) -> "Standard_Real" :
+    def MaxError2dV(self):
         """
         :rtype: float
 
         """
-        return _Approx.Approx_Curve2d_MaxError2dV(self, *args)
+        return _Approx.Approx_Curve2d_MaxError2dV(self)
 
     def __del__(self):
     	try:
@@ -490,52 +490,52 @@ class Approx_Curve3d(object):
         :param Order:
         :type Order: GeomAbs_Shape
         :param MaxSegments:
-        :type MaxSegments: int
+        :type MaxSegments: Standard_Integer
         :param MaxDegree:
-        :type MaxDegree: int
+        :type MaxDegree: Standard_Integer
         :rtype: None
 
         """
         _Approx.Approx_Curve3d_swiginit(self,_Approx.new_Approx_Curve3d(*args))
-    def Curve(self, *args) -> "Handle_Geom_BSplineCurve" :
+    def Curve(self):
         """
         :rtype: Handle_Geom_BSplineCurve
 
         """
-        return _Approx.Approx_Curve3d_Curve(self, *args)
+        return _Approx.Approx_Curve3d_Curve(self)
 
-    def IsDone(self, *args) -> "Standard_Boolean" :
+    def IsDone(self):
         """
         * returns Standard_True if the approximation has been done within requiered tolerance
 
         :rtype: bool
 
         """
-        return _Approx.Approx_Curve3d_IsDone(self, *args)
+        return _Approx.Approx_Curve3d_IsDone(self)
 
-    def HasResult(self, *args) -> "Standard_Boolean" :
+    def HasResult(self):
         """
         * returns Standard_True if the approximation did come out with a result that is not NECESSARELY within the required tolerance
 
         :rtype: bool
 
         """
-        return _Approx.Approx_Curve3d_HasResult(self, *args)
+        return _Approx.Approx_Curve3d_HasResult(self)
 
-    def MaxError(self, *args) -> "Standard_Real" :
+    def MaxError(self):
         """
         * returns the Maximum Error (>0 when an approximation has been done, 0 if no approximation)
 
         :rtype: float
 
         """
-        return _Approx.Approx_Curve3d_MaxError(self, *args)
+        return _Approx.Approx_Curve3d_MaxError(self)
 
-    def DumpToString(self) -> "std::string" :
+    def DumpToString(self):
         """DumpToString(Approx_Curve3d self) -> std::string"""
         return _Approx.Approx_Curve3d_DumpToString(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Approx_Curve3d self)"""
         return _Approx.Approx_Curve3d__kill_pointed(self)
 
@@ -574,9 +574,53 @@ class Approx_CurveOnSurface(object):
         :param Continuity:
         :type Continuity: GeomAbs_Shape
         :param MaxDegree:
-        :type MaxDegree: int
+        :type MaxDegree: Standard_Integer
         :param MaxSegments:
-        :type MaxSegments: int
+        :type MaxSegments: Standard_Integer
+        :param Only3d: default value is Standard_False
+        :type Only3d: bool
+        :param Only2d: default value is Standard_False
+        :type Only2d: bool
+        :rtype: None
+
+        :param C2D:
+        :type C2D: Handle_Adaptor2d_HCurve2d &
+        :param Surf:
+        :type Surf: Handle_Adaptor3d_HSurface &
+        :param First:
+        :type First: float
+        :param Last:
+        :type Last: float
+        :param Tol:
+        :type Tol: float
+        :param Continuity:
+        :type Continuity: GeomAbs_Shape
+        :param MaxDegree:
+        :type MaxDegree: Standard_Integer
+        :param MaxSegments:
+        :type MaxSegments: Standard_Integer
+        :param Only3d: default value is Standard_False
+        :type Only3d: bool
+        :param Only2d: default value is Standard_False
+        :type Only2d: bool
+        :rtype: None
+
+        :param C2D:
+        :type C2D: Handle_Adaptor2d_HCurve2d &
+        :param Surf:
+        :type Surf: Handle_Adaptor3d_HSurface &
+        :param First:
+        :type First: float
+        :param Last:
+        :type Last: float
+        :param Tol:
+        :type Tol: float
+        :param Continuity:
+        :type Continuity: GeomAbs_Shape
+        :param MaxDegree:
+        :type MaxDegree: Standard_Integer
+        :param MaxSegments:
+        :type MaxSegments: Standard_Integer
         :param Only3d: default value is Standard_False
         :type Only3d: bool
         :param Only2d: default value is Standard_False
@@ -585,56 +629,56 @@ class Approx_CurveOnSurface(object):
 
         """
         _Approx.Approx_CurveOnSurface_swiginit(self,_Approx.new_Approx_CurveOnSurface(*args))
-    def IsDone(self, *args) -> "Standard_Boolean" :
+    def IsDone(self):
         """
         :rtype: bool
 
         """
-        return _Approx.Approx_CurveOnSurface_IsDone(self, *args)
+        return _Approx.Approx_CurveOnSurface_IsDone(self)
 
-    def HasResult(self, *args) -> "Standard_Boolean" :
+    def HasResult(self):
         """
         :rtype: bool
 
         """
-        return _Approx.Approx_CurveOnSurface_HasResult(self, *args)
+        return _Approx.Approx_CurveOnSurface_HasResult(self)
 
-    def Curve3d(self, *args) -> "Handle_Geom_BSplineCurve" :
+    def Curve3d(self):
         """
         :rtype: Handle_Geom_BSplineCurve
 
         """
-        return _Approx.Approx_CurveOnSurface_Curve3d(self, *args)
+        return _Approx.Approx_CurveOnSurface_Curve3d(self)
 
-    def MaxError3d(self, *args) -> "Standard_Real" :
+    def MaxError3d(self):
         """
         :rtype: float
 
         """
-        return _Approx.Approx_CurveOnSurface_MaxError3d(self, *args)
+        return _Approx.Approx_CurveOnSurface_MaxError3d(self)
 
-    def Curve2d(self, *args) -> "Handle_Geom2d_BSplineCurve" :
+    def Curve2d(self):
         """
         :rtype: Handle_Geom2d_BSplineCurve
 
         """
-        return _Approx.Approx_CurveOnSurface_Curve2d(self, *args)
+        return _Approx.Approx_CurveOnSurface_Curve2d(self)
 
-    def MaxError2dU(self, *args) -> "Standard_Real" :
+    def MaxError2dU(self):
         """
         :rtype: float
 
         """
-        return _Approx.Approx_CurveOnSurface_MaxError2dU(self, *args)
+        return _Approx.Approx_CurveOnSurface_MaxError2dU(self)
 
-    def MaxError2dV(self, *args) -> "Standard_Real" :
+    def MaxError2dV(self):
         """
         * returns the maximum errors relativly to the U component or the V component of the  2d Curve
 
         :rtype: float
 
         """
-        return _Approx.Approx_CurveOnSurface_MaxError2dV(self, *args)
+        return _Approx.Approx_CurveOnSurface_MaxError2dV(self)
 
     def __del__(self):
     	try:
@@ -669,9 +713,9 @@ class Approx_CurvilinearParameter(object):
         :param Order:
         :type Order: GeomAbs_Shape
         :param MaxDegree:
-        :type MaxDegree: int
+        :type MaxDegree: Standard_Integer
         :param MaxSegments:
-        :type MaxSegments: int
+        :type MaxSegments: Standard_Integer
         :rtype: None
 
         * case of a curve on one surface
@@ -685,9 +729,9 @@ class Approx_CurvilinearParameter(object):
         :param Order:
         :type Order: GeomAbs_Shape
         :param MaxDegree:
-        :type MaxDegree: int
+        :type MaxDegree: Standard_Integer
         :param MaxSegments:
-        :type MaxSegments: int
+        :type MaxSegments: Standard_Integer
         :rtype: None
 
         * case of a curve on two surfaces
@@ -705,86 +749,86 @@ class Approx_CurvilinearParameter(object):
         :param Order:
         :type Order: GeomAbs_Shape
         :param MaxDegree:
-        :type MaxDegree: int
+        :type MaxDegree: Standard_Integer
         :param MaxSegments:
-        :type MaxSegments: int
+        :type MaxSegments: Standard_Integer
         :rtype: None
 
         """
         _Approx.Approx_CurvilinearParameter_swiginit(self,_Approx.new_Approx_CurvilinearParameter(*args))
-    def IsDone(self, *args) -> "Standard_Boolean" :
+    def IsDone(self):
         """
         :rtype: bool
 
         """
-        return _Approx.Approx_CurvilinearParameter_IsDone(self, *args)
+        return _Approx.Approx_CurvilinearParameter_IsDone(self)
 
-    def HasResult(self, *args) -> "Standard_Boolean" :
+    def HasResult(self):
         """
         :rtype: bool
 
         """
-        return _Approx.Approx_CurvilinearParameter_HasResult(self, *args)
+        return _Approx.Approx_CurvilinearParameter_HasResult(self)
 
-    def Curve3d(self, *args) -> "Handle_Geom_BSplineCurve" :
+    def Curve3d(self):
         """
         * returns the Bspline curve corresponding to the reparametrized 3D curve
 
         :rtype: Handle_Geom_BSplineCurve
 
         """
-        return _Approx.Approx_CurvilinearParameter_Curve3d(self, *args)
+        return _Approx.Approx_CurvilinearParameter_Curve3d(self)
 
-    def MaxError3d(self, *args) -> "Standard_Real" :
+    def MaxError3d(self):
         """
         * returns the maximum error on the reparametrized 3D curve
 
         :rtype: float
 
         """
-        return _Approx.Approx_CurvilinearParameter_MaxError3d(self, *args)
+        return _Approx.Approx_CurvilinearParameter_MaxError3d(self)
 
-    def Curve2d1(self, *args) -> "Handle_Geom2d_BSplineCurve" :
+    def Curve2d1(self):
         """
         * returns the BsplineCurve representing the reparametrized 2D curve on the first surface (case of a curve on one or two surfaces)
 
         :rtype: Handle_Geom2d_BSplineCurve
 
         """
-        return _Approx.Approx_CurvilinearParameter_Curve2d1(self, *args)
+        return _Approx.Approx_CurvilinearParameter_Curve2d1(self)
 
-    def MaxError2d1(self, *args) -> "Standard_Real" :
+    def MaxError2d1(self):
         """
         * returns the maximum error on the first reparametrized 2D curve
 
         :rtype: float
 
         """
-        return _Approx.Approx_CurvilinearParameter_MaxError2d1(self, *args)
+        return _Approx.Approx_CurvilinearParameter_MaxError2d1(self)
 
-    def Curve2d2(self, *args) -> "Handle_Geom2d_BSplineCurve" :
+    def Curve2d2(self):
         """
         * returns the BsplineCurve representing the reparametrized 2D curve on the second surface (case of a curve on two surfaces)
 
         :rtype: Handle_Geom2d_BSplineCurve
 
         """
-        return _Approx.Approx_CurvilinearParameter_Curve2d2(self, *args)
+        return _Approx.Approx_CurvilinearParameter_Curve2d2(self)
 
-    def MaxError2d2(self, *args) -> "Standard_Real" :
+    def MaxError2d2(self):
         """
         * returns the maximum error on the second reparametrized 2D curve
 
         :rtype: float
 
         """
-        return _Approx.Approx_CurvilinearParameter_MaxError2d2(self, *args)
+        return _Approx.Approx_CurvilinearParameter_MaxError2d2(self)
 
-    def DumpToString(self) -> "std::string" :
+    def DumpToString(self):
         """DumpToString(Approx_CurvilinearParameter self) -> std::string"""
         return _Approx.Approx_CurvilinearParameter_DumpToString(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Approx_CurvilinearParameter self)"""
         return _Approx.Approx_CurvilinearParameter__kill_pointed(self)
 
@@ -842,7 +886,7 @@ class Approx_CurvlinFunc(OCC.MMgt.MMgt_TShared):
 
         """
         _Approx.Approx_CurvlinFunc_swiginit(self,_Approx.new_Approx_CurvlinFunc(*args))
-    def SetTol(self, *args) -> "void" :
+    def SetTol(self, *args):
         """
         * //!---Purpose Update the tolerance to used
 
@@ -853,21 +897,21 @@ class Approx_CurvlinFunc(OCC.MMgt.MMgt_TShared):
         """
         return _Approx.Approx_CurvlinFunc_SetTol(self, *args)
 
-    def FirstParameter(self, *args) -> "Standard_Real" :
+    def FirstParameter(self):
         """
         :rtype: float
 
         """
-        return _Approx.Approx_CurvlinFunc_FirstParameter(self, *args)
+        return _Approx.Approx_CurvlinFunc_FirstParameter(self)
 
-    def LastParameter(self, *args) -> "Standard_Real" :
+    def LastParameter(self):
         """
         :rtype: float
 
         """
-        return _Approx.Approx_CurvlinFunc_LastParameter(self, *args)
+        return _Approx.Approx_CurvlinFunc_LastParameter(self)
 
-    def NbIntervals(self, *args) -> "Standard_Integer" :
+    def NbIntervals(self, *args):
         """
         * Returns the number of intervals for continuity <S>. May be one if Continuity(me) >= <S>
 
@@ -878,7 +922,7 @@ class Approx_CurvlinFunc(OCC.MMgt.MMgt_TShared):
         """
         return _Approx.Approx_CurvlinFunc_NbIntervals(self, *args)
 
-    def Intervals(self, *args) -> "void" :
+    def Intervals(self, *args):
         """
         * Stores in <T> the parameters bounding the intervals of continuity <S>.  The array must provide enough room to accomodate for the parameters. i.e. T.Length() > NbIntervals()
 
@@ -891,7 +935,7 @@ class Approx_CurvlinFunc(OCC.MMgt.MMgt_TShared):
         """
         return _Approx.Approx_CurvlinFunc_Intervals(self, *args)
 
-    def Trim(self, *args) -> "void" :
+    def Trim(self, *args):
         """
         * if First < 0 or Last > 1
 
@@ -906,7 +950,7 @@ class Approx_CurvlinFunc(OCC.MMgt.MMgt_TShared):
         """
         return _Approx.Approx_CurvlinFunc_Trim(self, *args)
 
-    def Length(self, *args) -> "Standard_Real" :
+    def Length(self, *args):
         """
         * Computes length of the curve.
 
@@ -925,14 +969,14 @@ class Approx_CurvlinFunc(OCC.MMgt.MMgt_TShared):
         """
         return _Approx.Approx_CurvlinFunc_Length(self, *args)
 
-    def GetLength(self, *args) -> "Standard_Real" :
+    def GetLength(self):
         """
         :rtype: float
 
         """
-        return _Approx.Approx_CurvlinFunc_GetLength(self, *args)
+        return _Approx.Approx_CurvlinFunc_GetLength(self)
 
-    def GetUParameter(self, *args) -> "Standard_Real" :
+    def GetUParameter(self, *args):
         """
         * returns original parameter correponding S. if Case == 1 computation is performed on myC2D1 and mySurf1, otherwise it is done on myC2D2 and mySurf2.
 
@@ -941,13 +985,13 @@ class Approx_CurvlinFunc(OCC.MMgt.MMgt_TShared):
         :param S:
         :type S: float
         :param NumberOfCurve:
-        :type NumberOfCurve: int
+        :type NumberOfCurve: Standard_Integer
         :rtype: float
 
         """
         return _Approx.Approx_CurvlinFunc_GetUParameter(self, *args)
 
-    def GetSParameter(self, *args) -> "Standard_Real" :
+    def GetSParameter(self, *args):
         """
         * returns original parameter correponding S.
 
@@ -958,14 +1002,14 @@ class Approx_CurvlinFunc(OCC.MMgt.MMgt_TShared):
         """
         return _Approx.Approx_CurvlinFunc_GetSParameter(self, *args)
 
-    def EvalCase1(self, *args) -> "Standard_Boolean" :
+    def EvalCase1(self, *args):
         """
         * if myCase != 1
 
         :param S:
         :type S: float
         :param Order:
-        :type Order: int
+        :type Order: Standard_Integer
         :param Result:
         :type Result: TColStd_Array1OfReal &
         :rtype: bool
@@ -973,14 +1017,14 @@ class Approx_CurvlinFunc(OCC.MMgt.MMgt_TShared):
         """
         return _Approx.Approx_CurvlinFunc_EvalCase1(self, *args)
 
-    def EvalCase2(self, *args) -> "Standard_Boolean" :
+    def EvalCase2(self, *args):
         """
         * if myCase != 2
 
         :param S:
         :type S: float
         :param Order:
-        :type Order: int
+        :type Order: Standard_Integer
         :param Result:
         :type Result: TColStd_Array1OfReal &
         :rtype: bool
@@ -988,14 +1032,14 @@ class Approx_CurvlinFunc(OCC.MMgt.MMgt_TShared):
         """
         return _Approx.Approx_CurvlinFunc_EvalCase2(self, *args)
 
-    def EvalCase3(self, *args) -> "Standard_Boolean" :
+    def EvalCase3(self, *args):
         """
         * if myCase != 3
 
         :param S:
         :type S: float
         :param Order:
-        :type Order: int
+        :type Order: Standard_Integer
         :param Result:
         :type Result: TColStd_Array1OfReal &
         :rtype: bool
@@ -1003,11 +1047,11 @@ class Approx_CurvlinFunc(OCC.MMgt.MMgt_TShared):
         """
         return _Approx.Approx_CurvlinFunc_EvalCase3(self, *args)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Approx_CurvlinFunc self)"""
         return _Approx.Approx_CurvlinFunc__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Approx_CurvlinFunc" :
+    def GetHandle(self):
         """GetHandle(Approx_CurvlinFunc self) -> Handle_Approx_CurvlinFunc"""
         return _Approx.Approx_CurvlinFunc_GetHandle(self)
 
@@ -1058,7 +1102,7 @@ Handle_Approx_CurvlinFunc._kill_pointed = new_instancemethod(_Approx.Handle_Appr
 Handle_Approx_CurvlinFunc_swigregister = _Approx.Handle_Approx_CurvlinFunc_swigregister
 Handle_Approx_CurvlinFunc_swigregister(Handle_Approx_CurvlinFunc)
 
-def Handle_Approx_CurvlinFunc_DownCast(*args) -> "Handle_Approx_CurvlinFunc const" :
+def Handle_Approx_CurvlinFunc_DownCast(*args):
   return _Approx.Handle_Approx_CurvlinFunc_DownCast(*args)
 Handle_Approx_CurvlinFunc_DownCast = _Approx.Handle_Approx_CurvlinFunc_DownCast
 
@@ -1070,9 +1114,135 @@ class Approx_FitAndDivide(object):
         :param Line:
         :type Line: AppCont_Function &
         :param degreemin: default value is 3
-        :type degreemin: int
+        :type degreemin: Standard_Integer
         :param degreemax: default value is 8
-        :type degreemax: int
+        :type degreemax: Standard_Integer
+        :param Tolerance3d: default value is 1.0e-5
+        :type Tolerance3d: float
+        :param Tolerance2d: default value is 1.0e-5
+        :type Tolerance2d: float
+        :param cutting: default value is Standard_False
+        :type cutting: bool
+        :param FirstC: default value is AppParCurves_TangencyPoint
+        :type FirstC: AppParCurves_Constraint
+        :param LastC: default value is AppParCurves_TangencyPoint
+        :type LastC: AppParCurves_Constraint
+        :rtype: None
+
+        :param Line:
+        :type Line: AppCont_Function &
+        :param degreemin: default value is 3
+        :type degreemin: Standard_Integer
+        :param degreemax: default value is 8
+        :type degreemax: Standard_Integer
+        :param Tolerance3d: default value is 1.0e-5
+        :type Tolerance3d: float
+        :param Tolerance2d: default value is 1.0e-5
+        :type Tolerance2d: float
+        :param cutting: default value is Standard_False
+        :type cutting: bool
+        :param FirstC: default value is AppParCurves_TangencyPoint
+        :type FirstC: AppParCurves_Constraint
+        :param LastC: default value is AppParCurves_TangencyPoint
+        :type LastC: AppParCurves_Constraint
+        :rtype: None
+
+        :param Line:
+        :type Line: AppCont_Function &
+        :param degreemin: default value is 3
+        :type degreemin: Standard_Integer
+        :param degreemax: default value is 8
+        :type degreemax: Standard_Integer
+        :param Tolerance3d: default value is 1.0e-5
+        :type Tolerance3d: float
+        :param Tolerance2d: default value is 1.0e-5
+        :type Tolerance2d: float
+        :param cutting: default value is Standard_False
+        :type cutting: bool
+        :param FirstC: default value is AppParCurves_TangencyPoint
+        :type FirstC: AppParCurves_Constraint
+        :param LastC: default value is AppParCurves_TangencyPoint
+        :type LastC: AppParCurves_Constraint
+        :rtype: None
+
+        :param Line:
+        :type Line: AppCont_Function &
+        :param degreemin: default value is 3
+        :type degreemin: Standard_Integer
+        :param degreemax: default value is 8
+        :type degreemax: Standard_Integer
+        :param Tolerance3d: default value is 1.0e-5
+        :type Tolerance3d: float
+        :param Tolerance2d: default value is 1.0e-5
+        :type Tolerance2d: float
+        :param cutting: default value is Standard_False
+        :type cutting: bool
+        :param FirstC: default value is AppParCurves_TangencyPoint
+        :type FirstC: AppParCurves_Constraint
+        :param LastC: default value is AppParCurves_TangencyPoint
+        :type LastC: AppParCurves_Constraint
+        :rtype: None
+
+        :param Line:
+        :type Line: AppCont_Function &
+        :param degreemin: default value is 3
+        :type degreemin: Standard_Integer
+        :param degreemax: default value is 8
+        :type degreemax: Standard_Integer
+        :param Tolerance3d: default value is 1.0e-5
+        :type Tolerance3d: float
+        :param Tolerance2d: default value is 1.0e-5
+        :type Tolerance2d: float
+        :param cutting: default value is Standard_False
+        :type cutting: bool
+        :param FirstC: default value is AppParCurves_TangencyPoint
+        :type FirstC: AppParCurves_Constraint
+        :param LastC: default value is AppParCurves_TangencyPoint
+        :type LastC: AppParCurves_Constraint
+        :rtype: None
+
+        :param Line:
+        :type Line: AppCont_Function &
+        :param degreemin: default value is 3
+        :type degreemin: Standard_Integer
+        :param degreemax: default value is 8
+        :type degreemax: Standard_Integer
+        :param Tolerance3d: default value is 1.0e-5
+        :type Tolerance3d: float
+        :param Tolerance2d: default value is 1.0e-5
+        :type Tolerance2d: float
+        :param cutting: default value is Standard_False
+        :type cutting: bool
+        :param FirstC: default value is AppParCurves_TangencyPoint
+        :type FirstC: AppParCurves_Constraint
+        :param LastC: default value is AppParCurves_TangencyPoint
+        :type LastC: AppParCurves_Constraint
+        :rtype: None
+
+        :param Line:
+        :type Line: AppCont_Function &
+        :param degreemin: default value is 3
+        :type degreemin: Standard_Integer
+        :param degreemax: default value is 8
+        :type degreemax: Standard_Integer
+        :param Tolerance3d: default value is 1.0e-5
+        :type Tolerance3d: float
+        :param Tolerance2d: default value is 1.0e-5
+        :type Tolerance2d: float
+        :param cutting: default value is Standard_False
+        :type cutting: bool
+        :param FirstC: default value is AppParCurves_TangencyPoint
+        :type FirstC: AppParCurves_Constraint
+        :param LastC: default value is AppParCurves_TangencyPoint
+        :type LastC: AppParCurves_Constraint
+        :rtype: None
+
+        :param Line:
+        :type Line: AppCont_Function &
+        :param degreemin: default value is 3
+        :type degreemin: Standard_Integer
+        :param degreemax: default value is 8
+        :type degreemax: Standard_Integer
         :param Tolerance3d: default value is 1.0e-5
         :type Tolerance3d: float
         :param Tolerance2d: default value is 1.0e-5
@@ -1086,9 +1256,121 @@ class Approx_FitAndDivide(object):
         :rtype: None
 
         :param degreemin: default value is 3
-        :type degreemin: int
+        :type degreemin: Standard_Integer
         :param degreemax: default value is 8
-        :type degreemax: int
+        :type degreemax: Standard_Integer
+        :param Tolerance3d: default value is 1.0e-05
+        :type Tolerance3d: float
+        :param Tolerance2d: default value is 1.0e-05
+        :type Tolerance2d: float
+        :param cutting: default value is Standard_False
+        :type cutting: bool
+        :param FirstC: default value is AppParCurves_TangencyPoint
+        :type FirstC: AppParCurves_Constraint
+        :param LastC: default value is AppParCurves_TangencyPoint
+        :type LastC: AppParCurves_Constraint
+        :rtype: None
+
+        :param degreemin: default value is 3
+        :type degreemin: Standard_Integer
+        :param degreemax: default value is 8
+        :type degreemax: Standard_Integer
+        :param Tolerance3d: default value is 1.0e-05
+        :type Tolerance3d: float
+        :param Tolerance2d: default value is 1.0e-05
+        :type Tolerance2d: float
+        :param cutting: default value is Standard_False
+        :type cutting: bool
+        :param FirstC: default value is AppParCurves_TangencyPoint
+        :type FirstC: AppParCurves_Constraint
+        :param LastC: default value is AppParCurves_TangencyPoint
+        :type LastC: AppParCurves_Constraint
+        :rtype: None
+
+        :param degreemin: default value is 3
+        :type degreemin: Standard_Integer
+        :param degreemax: default value is 8
+        :type degreemax: Standard_Integer
+        :param Tolerance3d: default value is 1.0e-05
+        :type Tolerance3d: float
+        :param Tolerance2d: default value is 1.0e-05
+        :type Tolerance2d: float
+        :param cutting: default value is Standard_False
+        :type cutting: bool
+        :param FirstC: default value is AppParCurves_TangencyPoint
+        :type FirstC: AppParCurves_Constraint
+        :param LastC: default value is AppParCurves_TangencyPoint
+        :type LastC: AppParCurves_Constraint
+        :rtype: None
+
+        :param degreemin: default value is 3
+        :type degreemin: Standard_Integer
+        :param degreemax: default value is 8
+        :type degreemax: Standard_Integer
+        :param Tolerance3d: default value is 1.0e-05
+        :type Tolerance3d: float
+        :param Tolerance2d: default value is 1.0e-05
+        :type Tolerance2d: float
+        :param cutting: default value is Standard_False
+        :type cutting: bool
+        :param FirstC: default value is AppParCurves_TangencyPoint
+        :type FirstC: AppParCurves_Constraint
+        :param LastC: default value is AppParCurves_TangencyPoint
+        :type LastC: AppParCurves_Constraint
+        :rtype: None
+
+        :param degreemin: default value is 3
+        :type degreemin: Standard_Integer
+        :param degreemax: default value is 8
+        :type degreemax: Standard_Integer
+        :param Tolerance3d: default value is 1.0e-05
+        :type Tolerance3d: float
+        :param Tolerance2d: default value is 1.0e-05
+        :type Tolerance2d: float
+        :param cutting: default value is Standard_False
+        :type cutting: bool
+        :param FirstC: default value is AppParCurves_TangencyPoint
+        :type FirstC: AppParCurves_Constraint
+        :param LastC: default value is AppParCurves_TangencyPoint
+        :type LastC: AppParCurves_Constraint
+        :rtype: None
+
+        :param degreemin: default value is 3
+        :type degreemin: Standard_Integer
+        :param degreemax: default value is 8
+        :type degreemax: Standard_Integer
+        :param Tolerance3d: default value is 1.0e-05
+        :type Tolerance3d: float
+        :param Tolerance2d: default value is 1.0e-05
+        :type Tolerance2d: float
+        :param cutting: default value is Standard_False
+        :type cutting: bool
+        :param FirstC: default value is AppParCurves_TangencyPoint
+        :type FirstC: AppParCurves_Constraint
+        :param LastC: default value is AppParCurves_TangencyPoint
+        :type LastC: AppParCurves_Constraint
+        :rtype: None
+
+        :param degreemin: default value is 3
+        :type degreemin: Standard_Integer
+        :param degreemax: default value is 8
+        :type degreemax: Standard_Integer
+        :param Tolerance3d: default value is 1.0e-05
+        :type Tolerance3d: float
+        :param Tolerance2d: default value is 1.0e-05
+        :type Tolerance2d: float
+        :param cutting: default value is Standard_False
+        :type cutting: bool
+        :param FirstC: default value is AppParCurves_TangencyPoint
+        :type FirstC: AppParCurves_Constraint
+        :param LastC: default value is AppParCurves_TangencyPoint
+        :type LastC: AppParCurves_Constraint
+        :rtype: None
+
+        :param degreemin: default value is 3
+        :type degreemin: Standard_Integer
+        :param degreemax: default value is 8
+        :type degreemax: Standard_Integer
         :param Tolerance3d: default value is 1.0e-05
         :type Tolerance3d: float
         :param Tolerance2d: default value is 1.0e-05
@@ -1103,7 +1385,7 @@ class Approx_FitAndDivide(object):
 
         """
         _Approx.Approx_FitAndDivide_swiginit(self,_Approx.new_Approx_FitAndDivide(*args))
-    def Perform(self, *args) -> "void" :
+    def Perform(self, *args):
         """
         :param Line:
         :type Line: AppCont_Function &
@@ -1112,18 +1394,18 @@ class Approx_FitAndDivide(object):
         """
         return _Approx.Approx_FitAndDivide_Perform(self, *args)
 
-    def SetDegrees(self, *args) -> "void" :
+    def SetDegrees(self, *args):
         """
         :param degreemin:
-        :type degreemin: int
+        :type degreemin: Standard_Integer
         :param degreemax:
-        :type degreemax: int
+        :type degreemax: Standard_Integer
         :rtype: None
 
         """
         return _Approx.Approx_FitAndDivide_SetDegrees(self, *args)
 
-    def SetTolerances(self, *args) -> "void" :
+    def SetTolerances(self, *args):
         """
         :param Tolerance3d:
         :type Tolerance3d: float
@@ -1134,7 +1416,7 @@ class Approx_FitAndDivide(object):
         """
         return _Approx.Approx_FitAndDivide_SetTolerances(self, *args)
 
-    def SetConstraints(self, *args) -> "void" :
+    def SetConstraints(self, *args):
         """
         :param FirstC:
         :type FirstC: AppParCurves_Constraint
@@ -1145,24 +1427,24 @@ class Approx_FitAndDivide(object):
         """
         return _Approx.Approx_FitAndDivide_SetConstraints(self, *args)
 
-    def IsAllApproximated(self, *args) -> "Standard_Boolean" :
+    def IsAllApproximated(self):
         """
         :rtype: bool
 
         """
-        return _Approx.Approx_FitAndDivide_IsAllApproximated(self, *args)
+        return _Approx.Approx_FitAndDivide_IsAllApproximated(self)
 
-    def IsToleranceReached(self, *args) -> "Standard_Boolean" :
+    def IsToleranceReached(self):
         """
         :rtype: bool
 
         """
-        return _Approx.Approx_FitAndDivide_IsToleranceReached(self, *args)
+        return _Approx.Approx_FitAndDivide_IsToleranceReached(self)
 
-    def Error(self, *args) -> "void" :
+    def Error(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param tol3d:
         :type tol3d: float &
         :param tol2d:
@@ -1172,26 +1454,30 @@ class Approx_FitAndDivide(object):
         """
         return _Approx.Approx_FitAndDivide_Error(self, *args)
 
-    def NbMultiCurves(self, *args) -> "Standard_Integer" :
+    def NbMultiCurves(self):
         """
         :rtype: int
 
         """
-        return _Approx.Approx_FitAndDivide_NbMultiCurves(self, *args)
+        return _Approx.Approx_FitAndDivide_NbMultiCurves(self)
 
-    def Value(self, *args) -> "AppParCurves_MultiCurve" :
+    def Value(self, Index=1):
         """
         :param Index: default value is 1
-        :type Index: int
+        :type Index: Standard_Integer
+        :rtype: AppParCurves_MultiCurve
+
+        :param Index: default value is 1
+        :type Index: Standard_Integer
         :rtype: AppParCurves_MultiCurve
 
         """
-        return _Approx.Approx_FitAndDivide_Value(self, *args)
+        return _Approx.Approx_FitAndDivide_Value(self, Index)
 
-    def Parameters(self, *args) -> "void" :
+    def Parameters(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param firstp:
         :type firstp: float &
         :param lastp:
@@ -1231,9 +1517,135 @@ class Approx_FitAndDivide2d(object):
         :param Line:
         :type Line: AppCont_Function2d &
         :param degreemin: default value is 3
-        :type degreemin: int
+        :type degreemin: Standard_Integer
         :param degreemax: default value is 8
-        :type degreemax: int
+        :type degreemax: Standard_Integer
+        :param Tolerance3d: default value is 1.0e-5
+        :type Tolerance3d: float
+        :param Tolerance2d: default value is 1.0e-5
+        :type Tolerance2d: float
+        :param cutting: default value is Standard_False
+        :type cutting: bool
+        :param FirstC: default value is AppParCurves_TangencyPoint
+        :type FirstC: AppParCurves_Constraint
+        :param LastC: default value is AppParCurves_TangencyPoint
+        :type LastC: AppParCurves_Constraint
+        :rtype: None
+
+        :param Line:
+        :type Line: AppCont_Function2d &
+        :param degreemin: default value is 3
+        :type degreemin: Standard_Integer
+        :param degreemax: default value is 8
+        :type degreemax: Standard_Integer
+        :param Tolerance3d: default value is 1.0e-5
+        :type Tolerance3d: float
+        :param Tolerance2d: default value is 1.0e-5
+        :type Tolerance2d: float
+        :param cutting: default value is Standard_False
+        :type cutting: bool
+        :param FirstC: default value is AppParCurves_TangencyPoint
+        :type FirstC: AppParCurves_Constraint
+        :param LastC: default value is AppParCurves_TangencyPoint
+        :type LastC: AppParCurves_Constraint
+        :rtype: None
+
+        :param Line:
+        :type Line: AppCont_Function2d &
+        :param degreemin: default value is 3
+        :type degreemin: Standard_Integer
+        :param degreemax: default value is 8
+        :type degreemax: Standard_Integer
+        :param Tolerance3d: default value is 1.0e-5
+        :type Tolerance3d: float
+        :param Tolerance2d: default value is 1.0e-5
+        :type Tolerance2d: float
+        :param cutting: default value is Standard_False
+        :type cutting: bool
+        :param FirstC: default value is AppParCurves_TangencyPoint
+        :type FirstC: AppParCurves_Constraint
+        :param LastC: default value is AppParCurves_TangencyPoint
+        :type LastC: AppParCurves_Constraint
+        :rtype: None
+
+        :param Line:
+        :type Line: AppCont_Function2d &
+        :param degreemin: default value is 3
+        :type degreemin: Standard_Integer
+        :param degreemax: default value is 8
+        :type degreemax: Standard_Integer
+        :param Tolerance3d: default value is 1.0e-5
+        :type Tolerance3d: float
+        :param Tolerance2d: default value is 1.0e-5
+        :type Tolerance2d: float
+        :param cutting: default value is Standard_False
+        :type cutting: bool
+        :param FirstC: default value is AppParCurves_TangencyPoint
+        :type FirstC: AppParCurves_Constraint
+        :param LastC: default value is AppParCurves_TangencyPoint
+        :type LastC: AppParCurves_Constraint
+        :rtype: None
+
+        :param Line:
+        :type Line: AppCont_Function2d &
+        :param degreemin: default value is 3
+        :type degreemin: Standard_Integer
+        :param degreemax: default value is 8
+        :type degreemax: Standard_Integer
+        :param Tolerance3d: default value is 1.0e-5
+        :type Tolerance3d: float
+        :param Tolerance2d: default value is 1.0e-5
+        :type Tolerance2d: float
+        :param cutting: default value is Standard_False
+        :type cutting: bool
+        :param FirstC: default value is AppParCurves_TangencyPoint
+        :type FirstC: AppParCurves_Constraint
+        :param LastC: default value is AppParCurves_TangencyPoint
+        :type LastC: AppParCurves_Constraint
+        :rtype: None
+
+        :param Line:
+        :type Line: AppCont_Function2d &
+        :param degreemin: default value is 3
+        :type degreemin: Standard_Integer
+        :param degreemax: default value is 8
+        :type degreemax: Standard_Integer
+        :param Tolerance3d: default value is 1.0e-5
+        :type Tolerance3d: float
+        :param Tolerance2d: default value is 1.0e-5
+        :type Tolerance2d: float
+        :param cutting: default value is Standard_False
+        :type cutting: bool
+        :param FirstC: default value is AppParCurves_TangencyPoint
+        :type FirstC: AppParCurves_Constraint
+        :param LastC: default value is AppParCurves_TangencyPoint
+        :type LastC: AppParCurves_Constraint
+        :rtype: None
+
+        :param Line:
+        :type Line: AppCont_Function2d &
+        :param degreemin: default value is 3
+        :type degreemin: Standard_Integer
+        :param degreemax: default value is 8
+        :type degreemax: Standard_Integer
+        :param Tolerance3d: default value is 1.0e-5
+        :type Tolerance3d: float
+        :param Tolerance2d: default value is 1.0e-5
+        :type Tolerance2d: float
+        :param cutting: default value is Standard_False
+        :type cutting: bool
+        :param FirstC: default value is AppParCurves_TangencyPoint
+        :type FirstC: AppParCurves_Constraint
+        :param LastC: default value is AppParCurves_TangencyPoint
+        :type LastC: AppParCurves_Constraint
+        :rtype: None
+
+        :param Line:
+        :type Line: AppCont_Function2d &
+        :param degreemin: default value is 3
+        :type degreemin: Standard_Integer
+        :param degreemax: default value is 8
+        :type degreemax: Standard_Integer
         :param Tolerance3d: default value is 1.0e-5
         :type Tolerance3d: float
         :param Tolerance2d: default value is 1.0e-5
@@ -1247,9 +1659,121 @@ class Approx_FitAndDivide2d(object):
         :rtype: None
 
         :param degreemin: default value is 3
-        :type degreemin: int
+        :type degreemin: Standard_Integer
         :param degreemax: default value is 8
-        :type degreemax: int
+        :type degreemax: Standard_Integer
+        :param Tolerance3d: default value is 1.0e-05
+        :type Tolerance3d: float
+        :param Tolerance2d: default value is 1.0e-05
+        :type Tolerance2d: float
+        :param cutting: default value is Standard_False
+        :type cutting: bool
+        :param FirstC: default value is AppParCurves_TangencyPoint
+        :type FirstC: AppParCurves_Constraint
+        :param LastC: default value is AppParCurves_TangencyPoint
+        :type LastC: AppParCurves_Constraint
+        :rtype: None
+
+        :param degreemin: default value is 3
+        :type degreemin: Standard_Integer
+        :param degreemax: default value is 8
+        :type degreemax: Standard_Integer
+        :param Tolerance3d: default value is 1.0e-05
+        :type Tolerance3d: float
+        :param Tolerance2d: default value is 1.0e-05
+        :type Tolerance2d: float
+        :param cutting: default value is Standard_False
+        :type cutting: bool
+        :param FirstC: default value is AppParCurves_TangencyPoint
+        :type FirstC: AppParCurves_Constraint
+        :param LastC: default value is AppParCurves_TangencyPoint
+        :type LastC: AppParCurves_Constraint
+        :rtype: None
+
+        :param degreemin: default value is 3
+        :type degreemin: Standard_Integer
+        :param degreemax: default value is 8
+        :type degreemax: Standard_Integer
+        :param Tolerance3d: default value is 1.0e-05
+        :type Tolerance3d: float
+        :param Tolerance2d: default value is 1.0e-05
+        :type Tolerance2d: float
+        :param cutting: default value is Standard_False
+        :type cutting: bool
+        :param FirstC: default value is AppParCurves_TangencyPoint
+        :type FirstC: AppParCurves_Constraint
+        :param LastC: default value is AppParCurves_TangencyPoint
+        :type LastC: AppParCurves_Constraint
+        :rtype: None
+
+        :param degreemin: default value is 3
+        :type degreemin: Standard_Integer
+        :param degreemax: default value is 8
+        :type degreemax: Standard_Integer
+        :param Tolerance3d: default value is 1.0e-05
+        :type Tolerance3d: float
+        :param Tolerance2d: default value is 1.0e-05
+        :type Tolerance2d: float
+        :param cutting: default value is Standard_False
+        :type cutting: bool
+        :param FirstC: default value is AppParCurves_TangencyPoint
+        :type FirstC: AppParCurves_Constraint
+        :param LastC: default value is AppParCurves_TangencyPoint
+        :type LastC: AppParCurves_Constraint
+        :rtype: None
+
+        :param degreemin: default value is 3
+        :type degreemin: Standard_Integer
+        :param degreemax: default value is 8
+        :type degreemax: Standard_Integer
+        :param Tolerance3d: default value is 1.0e-05
+        :type Tolerance3d: float
+        :param Tolerance2d: default value is 1.0e-05
+        :type Tolerance2d: float
+        :param cutting: default value is Standard_False
+        :type cutting: bool
+        :param FirstC: default value is AppParCurves_TangencyPoint
+        :type FirstC: AppParCurves_Constraint
+        :param LastC: default value is AppParCurves_TangencyPoint
+        :type LastC: AppParCurves_Constraint
+        :rtype: None
+
+        :param degreemin: default value is 3
+        :type degreemin: Standard_Integer
+        :param degreemax: default value is 8
+        :type degreemax: Standard_Integer
+        :param Tolerance3d: default value is 1.0e-05
+        :type Tolerance3d: float
+        :param Tolerance2d: default value is 1.0e-05
+        :type Tolerance2d: float
+        :param cutting: default value is Standard_False
+        :type cutting: bool
+        :param FirstC: default value is AppParCurves_TangencyPoint
+        :type FirstC: AppParCurves_Constraint
+        :param LastC: default value is AppParCurves_TangencyPoint
+        :type LastC: AppParCurves_Constraint
+        :rtype: None
+
+        :param degreemin: default value is 3
+        :type degreemin: Standard_Integer
+        :param degreemax: default value is 8
+        :type degreemax: Standard_Integer
+        :param Tolerance3d: default value is 1.0e-05
+        :type Tolerance3d: float
+        :param Tolerance2d: default value is 1.0e-05
+        :type Tolerance2d: float
+        :param cutting: default value is Standard_False
+        :type cutting: bool
+        :param FirstC: default value is AppParCurves_TangencyPoint
+        :type FirstC: AppParCurves_Constraint
+        :param LastC: default value is AppParCurves_TangencyPoint
+        :type LastC: AppParCurves_Constraint
+        :rtype: None
+
+        :param degreemin: default value is 3
+        :type degreemin: Standard_Integer
+        :param degreemax: default value is 8
+        :type degreemax: Standard_Integer
         :param Tolerance3d: default value is 1.0e-05
         :type Tolerance3d: float
         :param Tolerance2d: default value is 1.0e-05
@@ -1264,7 +1788,7 @@ class Approx_FitAndDivide2d(object):
 
         """
         _Approx.Approx_FitAndDivide2d_swiginit(self,_Approx.new_Approx_FitAndDivide2d(*args))
-    def Perform(self, *args) -> "void" :
+    def Perform(self, *args):
         """
         :param Line:
         :type Line: AppCont_Function2d &
@@ -1273,18 +1797,18 @@ class Approx_FitAndDivide2d(object):
         """
         return _Approx.Approx_FitAndDivide2d_Perform(self, *args)
 
-    def SetDegrees(self, *args) -> "void" :
+    def SetDegrees(self, *args):
         """
         :param degreemin:
-        :type degreemin: int
+        :type degreemin: Standard_Integer
         :param degreemax:
-        :type degreemax: int
+        :type degreemax: Standard_Integer
         :rtype: None
 
         """
         return _Approx.Approx_FitAndDivide2d_SetDegrees(self, *args)
 
-    def SetTolerances(self, *args) -> "void" :
+    def SetTolerances(self, *args):
         """
         :param Tolerance3d:
         :type Tolerance3d: float
@@ -1295,7 +1819,7 @@ class Approx_FitAndDivide2d(object):
         """
         return _Approx.Approx_FitAndDivide2d_SetTolerances(self, *args)
 
-    def SetConstraints(self, *args) -> "void" :
+    def SetConstraints(self, *args):
         """
         :param FirstC:
         :type FirstC: AppParCurves_Constraint
@@ -1306,24 +1830,24 @@ class Approx_FitAndDivide2d(object):
         """
         return _Approx.Approx_FitAndDivide2d_SetConstraints(self, *args)
 
-    def IsAllApproximated(self, *args) -> "Standard_Boolean" :
+    def IsAllApproximated(self):
         """
         :rtype: bool
 
         """
-        return _Approx.Approx_FitAndDivide2d_IsAllApproximated(self, *args)
+        return _Approx.Approx_FitAndDivide2d_IsAllApproximated(self)
 
-    def IsToleranceReached(self, *args) -> "Standard_Boolean" :
+    def IsToleranceReached(self):
         """
         :rtype: bool
 
         """
-        return _Approx.Approx_FitAndDivide2d_IsToleranceReached(self, *args)
+        return _Approx.Approx_FitAndDivide2d_IsToleranceReached(self)
 
-    def Error(self, *args) -> "void" :
+    def Error(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param tol3d:
         :type tol3d: float &
         :param tol2d:
@@ -1333,26 +1857,30 @@ class Approx_FitAndDivide2d(object):
         """
         return _Approx.Approx_FitAndDivide2d_Error(self, *args)
 
-    def NbMultiCurves(self, *args) -> "Standard_Integer" :
+    def NbMultiCurves(self):
         """
         :rtype: int
 
         """
-        return _Approx.Approx_FitAndDivide2d_NbMultiCurves(self, *args)
+        return _Approx.Approx_FitAndDivide2d_NbMultiCurves(self)
 
-    def Value(self, *args) -> "AppParCurves_MultiCurve" :
+    def Value(self, Index=1):
         """
         :param Index: default value is 1
-        :type Index: int
+        :type Index: Standard_Integer
+        :rtype: AppParCurves_MultiCurve
+
+        :param Index: default value is 1
+        :type Index: Standard_Integer
         :rtype: AppParCurves_MultiCurve
 
         """
-        return _Approx.Approx_FitAndDivide2d_Value(self, *args)
+        return _Approx.Approx_FitAndDivide2d_Value(self, Index)
 
-    def Parameters(self, *args) -> "void" :
+    def Parameters(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param firstp:
         :type firstp: float &
         :param lastp:
@@ -1390,22 +1918,22 @@ class Approx_HArray1OfAdHSurface(OCC.MMgt.MMgt_TShared):
     def __init__(self, *args): 
         """
         :param Low:
-        :type Low: int
+        :type Low: Standard_Integer
         :param Up:
-        :type Up: int
+        :type Up: Standard_Integer
         :rtype: None
 
         :param Low:
-        :type Low: int
+        :type Low: Standard_Integer
         :param Up:
-        :type Up: int
+        :type Up: Standard_Integer
         :param V:
         :type V: Handle_Adaptor3d_HSurface &
         :rtype: None
 
         """
         _Approx.Approx_HArray1OfAdHSurface_swiginit(self,_Approx.new_Approx_HArray1OfAdHSurface(*args))
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
         :param V:
         :type V: Handle_Adaptor3d_HSurface &
@@ -1414,31 +1942,31 @@ class Approx_HArray1OfAdHSurface(OCC.MMgt.MMgt_TShared):
         """
         return _Approx.Approx_HArray1OfAdHSurface_Init(self, *args)
 
-    def Length(self, *args) -> "Standard_Integer" :
+    def Length(self):
         """
         :rtype: int
 
         """
-        return _Approx.Approx_HArray1OfAdHSurface_Length(self, *args)
+        return _Approx.Approx_HArray1OfAdHSurface_Length(self)
 
-    def Lower(self, *args) -> "Standard_Integer" :
+    def Lower(self):
         """
         :rtype: int
 
         """
-        return _Approx.Approx_HArray1OfAdHSurface_Lower(self, *args)
+        return _Approx.Approx_HArray1OfAdHSurface_Lower(self)
 
-    def Upper(self, *args) -> "Standard_Integer" :
+    def Upper(self):
         """
         :rtype: int
 
         """
-        return _Approx.Approx_HArray1OfAdHSurface_Upper(self, *args)
+        return _Approx.Approx_HArray1OfAdHSurface_Upper(self)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Value:
         :type Value: Handle_Adaptor3d_HSurface &
         :rtype: None
@@ -1446,43 +1974,43 @@ class Approx_HArray1OfAdHSurface(OCC.MMgt.MMgt_TShared):
         """
         return _Approx.Approx_HArray1OfAdHSurface_SetValue(self, *args)
 
-    def Value(self, *args) -> "Handle_Adaptor3d_HSurface const &" :
+    def Value(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Handle_Adaptor3d_HSurface
 
         """
         return _Approx.Approx_HArray1OfAdHSurface_Value(self, *args)
 
-    def ChangeValue(self, *args) -> "Handle_Adaptor3d_HSurface &" :
+    def ChangeValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Handle_Adaptor3d_HSurface
 
         """
         return _Approx.Approx_HArray1OfAdHSurface_ChangeValue(self, *args)
 
-    def Array1(self, *args) -> "Approx_Array1OfAdHSurface const &" :
+    def Array1(self):
         """
         :rtype: Approx_Array1OfAdHSurface
 
         """
-        return _Approx.Approx_HArray1OfAdHSurface_Array1(self, *args)
+        return _Approx.Approx_HArray1OfAdHSurface_Array1(self)
 
-    def ChangeArray1(self, *args) -> "Approx_Array1OfAdHSurface &" :
+    def ChangeArray1(self):
         """
         :rtype: Approx_Array1OfAdHSurface
 
         """
-        return _Approx.Approx_HArray1OfAdHSurface_ChangeArray1(self, *args)
+        return _Approx.Approx_HArray1OfAdHSurface_ChangeArray1(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Approx_HArray1OfAdHSurface self)"""
         return _Approx.Approx_HArray1OfAdHSurface__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Approx_HArray1OfAdHSurface" :
+    def GetHandle(self):
         """GetHandle(Approx_HArray1OfAdHSurface self) -> Handle_Approx_HArray1OfAdHSurface"""
         return _Approx.Approx_HArray1OfAdHSurface_GetHandle(self)
 
@@ -1529,7 +2057,7 @@ Handle_Approx_HArray1OfAdHSurface._kill_pointed = new_instancemethod(_Approx.Han
 Handle_Approx_HArray1OfAdHSurface_swigregister = _Approx.Handle_Approx_HArray1OfAdHSurface_swigregister
 Handle_Approx_HArray1OfAdHSurface_swigregister(Handle_Approx_HArray1OfAdHSurface)
 
-def Handle_Approx_HArray1OfAdHSurface_DownCast(*args) -> "Handle_Approx_HArray1OfAdHSurface const" :
+def Handle_Approx_HArray1OfAdHSurface_DownCast(*args):
   return _Approx.Handle_Approx_HArray1OfAdHSurface_DownCast(*args)
 Handle_Approx_HArray1OfAdHSurface_DownCast = _Approx.Handle_Approx_HArray1OfAdHSurface_DownCast
 
@@ -1539,22 +2067,22 @@ class Approx_HArray1OfGTrsf2d(OCC.MMgt.MMgt_TShared):
     def __init__(self, *args): 
         """
         :param Low:
-        :type Low: int
+        :type Low: Standard_Integer
         :param Up:
-        :type Up: int
+        :type Up: Standard_Integer
         :rtype: None
 
         :param Low:
-        :type Low: int
+        :type Low: Standard_Integer
         :param Up:
-        :type Up: int
+        :type Up: Standard_Integer
         :param V:
         :type V: gp_GTrsf2d
         :rtype: None
 
         """
         _Approx.Approx_HArray1OfGTrsf2d_swiginit(self,_Approx.new_Approx_HArray1OfGTrsf2d(*args))
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
         :param V:
         :type V: gp_GTrsf2d
@@ -1563,31 +2091,31 @@ class Approx_HArray1OfGTrsf2d(OCC.MMgt.MMgt_TShared):
         """
         return _Approx.Approx_HArray1OfGTrsf2d_Init(self, *args)
 
-    def Length(self, *args) -> "Standard_Integer" :
+    def Length(self):
         """
         :rtype: int
 
         """
-        return _Approx.Approx_HArray1OfGTrsf2d_Length(self, *args)
+        return _Approx.Approx_HArray1OfGTrsf2d_Length(self)
 
-    def Lower(self, *args) -> "Standard_Integer" :
+    def Lower(self):
         """
         :rtype: int
 
         """
-        return _Approx.Approx_HArray1OfGTrsf2d_Lower(self, *args)
+        return _Approx.Approx_HArray1OfGTrsf2d_Lower(self)
 
-    def Upper(self, *args) -> "Standard_Integer" :
+    def Upper(self):
         """
         :rtype: int
 
         """
-        return _Approx.Approx_HArray1OfGTrsf2d_Upper(self, *args)
+        return _Approx.Approx_HArray1OfGTrsf2d_Upper(self)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Value:
         :type Value: gp_GTrsf2d
         :rtype: None
@@ -1595,43 +2123,43 @@ class Approx_HArray1OfGTrsf2d(OCC.MMgt.MMgt_TShared):
         """
         return _Approx.Approx_HArray1OfGTrsf2d_SetValue(self, *args)
 
-    def Value(self, *args) -> "gp_GTrsf2d const" :
+    def Value(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: gp_GTrsf2d
 
         """
         return _Approx.Approx_HArray1OfGTrsf2d_Value(self, *args)
 
-    def ChangeValue(self, *args) -> "gp_GTrsf2d" :
+    def ChangeValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: gp_GTrsf2d
 
         """
         return _Approx.Approx_HArray1OfGTrsf2d_ChangeValue(self, *args)
 
-    def Array1(self, *args) -> "Approx_Array1OfGTrsf2d const &" :
+    def Array1(self):
         """
         :rtype: Approx_Array1OfGTrsf2d
 
         """
-        return _Approx.Approx_HArray1OfGTrsf2d_Array1(self, *args)
+        return _Approx.Approx_HArray1OfGTrsf2d_Array1(self)
 
-    def ChangeArray1(self, *args) -> "Approx_Array1OfGTrsf2d &" :
+    def ChangeArray1(self):
         """
         :rtype: Approx_Array1OfGTrsf2d
 
         """
-        return _Approx.Approx_HArray1OfGTrsf2d_ChangeArray1(self, *args)
+        return _Approx.Approx_HArray1OfGTrsf2d_ChangeArray1(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Approx_HArray1OfGTrsf2d self)"""
         return _Approx.Approx_HArray1OfGTrsf2d__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Approx_HArray1OfGTrsf2d" :
+    def GetHandle(self):
         """GetHandle(Approx_HArray1OfGTrsf2d self) -> Handle_Approx_HArray1OfGTrsf2d"""
         return _Approx.Approx_HArray1OfGTrsf2d_GetHandle(self)
 
@@ -1678,27 +2206,27 @@ Handle_Approx_HArray1OfGTrsf2d._kill_pointed = new_instancemethod(_Approx.Handle
 Handle_Approx_HArray1OfGTrsf2d_swigregister = _Approx.Handle_Approx_HArray1OfGTrsf2d_swigregister
 Handle_Approx_HArray1OfGTrsf2d_swigregister(Handle_Approx_HArray1OfGTrsf2d)
 
-def Handle_Approx_HArray1OfGTrsf2d_DownCast(*args) -> "Handle_Approx_HArray1OfGTrsf2d const" :
+def Handle_Approx_HArray1OfGTrsf2d_DownCast(*args):
   return _Approx.Handle_Approx_HArray1OfGTrsf2d_DownCast(*args)
 Handle_Approx_HArray1OfGTrsf2d_DownCast = _Approx.Handle_Approx_HArray1OfGTrsf2d_DownCast
 
 class Approx_MCurvesToBSpCurve(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _Approx.Approx_MCurvesToBSpCurve_swiginit(self,_Approx.new_Approx_MCurvesToBSpCurve(*args))
-    def Reset(self, *args) -> "void" :
+        _Approx.Approx_MCurvesToBSpCurve_swiginit(self,_Approx.new_Approx_MCurvesToBSpCurve())
+    def Reset(self):
         """
         :rtype: None
 
         """
-        return _Approx.Approx_MCurvesToBSpCurve_Reset(self, *args)
+        return _Approx.Approx_MCurvesToBSpCurve_Reset(self)
 
-    def Append(self, *args) -> "void" :
+    def Append(self, *args):
         """
         :param MC:
         :type MC: AppParCurves_MultiCurve &
@@ -1707,7 +2235,7 @@ class Approx_MCurvesToBSpCurve(object):
         """
         return _Approx.Approx_MCurvesToBSpCurve_Append(self, *args)
 
-    def Perform(self, *args) -> "void" :
+    def Perform(self, *args):
         """
         :rtype: None
 
@@ -1718,23 +2246,23 @@ class Approx_MCurvesToBSpCurve(object):
         """
         return _Approx.Approx_MCurvesToBSpCurve_Perform(self, *args)
 
-    def Value(self, *args) -> "AppParCurves_MultiBSpCurve const &" :
+    def Value(self):
         """
         * return the composite MultiCurves as a MultiBSpCurve.
 
         :rtype: AppParCurves_MultiBSpCurve
 
         """
-        return _Approx.Approx_MCurvesToBSpCurve_Value(self, *args)
+        return _Approx.Approx_MCurvesToBSpCurve_Value(self)
 
-    def ChangeValue(self, *args) -> "AppParCurves_MultiBSpCurve const &" :
+    def ChangeValue(self):
         """
         * return the composite MultiCurves as a MultiBSpCurve.
 
         :rtype: AppParCurves_MultiBSpCurve
 
         """
-        return _Approx.Approx_MCurvesToBSpCurve_ChangeValue(self, *args)
+        return _Approx.Approx_MCurvesToBSpCurve_ChangeValue(self)
 
     def __del__(self):
     	try:
@@ -1769,28 +2297,44 @@ class Approx_MyLeastSquareOfFitAndDivide(object):
         :param LastCons:
         :type LastCons: AppParCurves_Constraint
         :param Deg:
-        :type Deg: int
+        :type Deg: Standard_Integer
         :param NbPoints: default value is 24
-        :type NbPoints: int
+        :type NbPoints: Standard_Integer
+        :rtype: None
+
+        :param SSP:
+        :type SSP: AppCont_Function &
+        :param U0:
+        :type U0: float
+        :param U1:
+        :type U1: float
+        :param FirstCons:
+        :type FirstCons: AppParCurves_Constraint
+        :param LastCons:
+        :type LastCons: AppParCurves_Constraint
+        :param Deg:
+        :type Deg: Standard_Integer
+        :param NbPoints: default value is 24
+        :type NbPoints: Standard_Integer
         :rtype: None
 
         """
         _Approx.Approx_MyLeastSquareOfFitAndDivide_swiginit(self,_Approx.new_Approx_MyLeastSquareOfFitAndDivide(*args))
-    def IsDone(self, *args) -> "Standard_Boolean" :
+    def IsDone(self):
         """
         :rtype: bool
 
         """
-        return _Approx.Approx_MyLeastSquareOfFitAndDivide_IsDone(self, *args)
+        return _Approx.Approx_MyLeastSquareOfFitAndDivide_IsDone(self)
 
-    def Value(self, *args) -> "AppParCurves_MultiCurve const &" :
+    def Value(self):
         """
         :rtype: AppParCurves_MultiCurve
 
         """
-        return _Approx.Approx_MyLeastSquareOfFitAndDivide_Value(self, *args)
+        return _Approx.Approx_MyLeastSquareOfFitAndDivide_Value(self)
 
-    def Error(self, *args) -> "void" :
+    def Error(self):
         """
         :param F:
         :type F: float &
@@ -1801,7 +2345,7 @@ class Approx_MyLeastSquareOfFitAndDivide(object):
         :rtype: None
 
         """
-        return _Approx.Approx_MyLeastSquareOfFitAndDivide_Error(self, *args)
+        return _Approx.Approx_MyLeastSquareOfFitAndDivide_Error(self)
 
     def __del__(self):
     	try:
@@ -1834,28 +2378,44 @@ class Approx_MyLeastSquareOfFitAndDivide2d(object):
         :param LastCons:
         :type LastCons: AppParCurves_Constraint
         :param Deg:
-        :type Deg: int
+        :type Deg: Standard_Integer
         :param NbPoints: default value is 24
-        :type NbPoints: int
+        :type NbPoints: Standard_Integer
+        :rtype: None
+
+        :param SSP:
+        :type SSP: AppCont_Function2d &
+        :param U0:
+        :type U0: float
+        :param U1:
+        :type U1: float
+        :param FirstCons:
+        :type FirstCons: AppParCurves_Constraint
+        :param LastCons:
+        :type LastCons: AppParCurves_Constraint
+        :param Deg:
+        :type Deg: Standard_Integer
+        :param NbPoints: default value is 24
+        :type NbPoints: Standard_Integer
         :rtype: None
 
         """
         _Approx.Approx_MyLeastSquareOfFitAndDivide2d_swiginit(self,_Approx.new_Approx_MyLeastSquareOfFitAndDivide2d(*args))
-    def IsDone(self, *args) -> "Standard_Boolean" :
+    def IsDone(self):
         """
         :rtype: bool
 
         """
-        return _Approx.Approx_MyLeastSquareOfFitAndDivide2d_IsDone(self, *args)
+        return _Approx.Approx_MyLeastSquareOfFitAndDivide2d_IsDone(self)
 
-    def Value(self, *args) -> "AppParCurves_MultiCurve const &" :
+    def Value(self):
         """
         :rtype: AppParCurves_MultiCurve
 
         """
-        return _Approx.Approx_MyLeastSquareOfFitAndDivide2d_Value(self, *args)
+        return _Approx.Approx_MyLeastSquareOfFitAndDivide2d_Value(self)
 
-    def Error(self, *args) -> "void" :
+    def Error(self):
         """
         :param F:
         :type F: float &
@@ -1866,7 +2426,7 @@ class Approx_MyLeastSquareOfFitAndDivide2d(object):
         :rtype: None
 
         """
-        return _Approx.Approx_MyLeastSquareOfFitAndDivide2d_Error(self, *args)
+        return _Approx.Approx_MyLeastSquareOfFitAndDivide2d_Error(self)
 
     def __del__(self):
     	try:
@@ -1924,37 +2484,37 @@ class Approx_SameParameter(object):
 
         """
         _Approx.Approx_SameParameter_swiginit(self,_Approx.new_Approx_SameParameter(*args))
-    def IsDone(self, *args) -> "Standard_Boolean" :
+    def IsDone(self):
         """
         :rtype: bool
 
         """
-        return _Approx.Approx_SameParameter_IsDone(self, *args)
+        return _Approx.Approx_SameParameter_IsDone(self)
 
-    def TolReached(self, *args) -> "Standard_Real" :
+    def TolReached(self):
         """
         :rtype: float
 
         """
-        return _Approx.Approx_SameParameter_TolReached(self, *args)
+        return _Approx.Approx_SameParameter_TolReached(self)
 
-    def IsSameParameter(self, *args) -> "Standard_Boolean" :
+    def IsSameParameter(self):
         """
         * Tells whether the original data had already the same parameter up to the tolerance : in that case nothing is done.
 
         :rtype: bool
 
         """
-        return _Approx.Approx_SameParameter_IsSameParameter(self, *args)
+        return _Approx.Approx_SameParameter_IsSameParameter(self)
 
-    def Curve2d(self, *args) -> "Handle_Geom2d_BSplineCurve" :
+    def Curve2d(self):
         """
         * Returns the 2D curve that has the same parameter as the 3D curve once evaluated on the surface up to the specified tolerance
 
         :rtype: Handle_Geom2d_BSplineCurve
 
         """
-        return _Approx.Approx_SameParameter_Curve2d(self, *args)
+        return _Approx.Approx_SameParameter_Curve2d(self)
 
     def __del__(self):
     	try:
@@ -1987,18 +2547,18 @@ class Approx_SequenceNodeOfSequenceOfHArray1OfReal(OCC.TCollection.TCollection_S
 
         """
         _Approx.Approx_SequenceNodeOfSequenceOfHArray1OfReal_swiginit(self,_Approx.new_Approx_SequenceNodeOfSequenceOfHArray1OfReal(*args))
-    def Value(self, *args) -> "Handle_TColStd_HArray1OfReal &" :
+    def Value(self):
         """
         :rtype: Handle_TColStd_HArray1OfReal
 
         """
-        return _Approx.Approx_SequenceNodeOfSequenceOfHArray1OfReal_Value(self, *args)
+        return _Approx.Approx_SequenceNodeOfSequenceOfHArray1OfReal_Value(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Approx_SequenceNodeOfSequenceOfHArray1OfReal self)"""
         return _Approx.Approx_SequenceNodeOfSequenceOfHArray1OfReal__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Approx_SequenceNodeOfSequenceOfHArray1OfReal" :
+    def GetHandle(self):
         """GetHandle(Approx_SequenceNodeOfSequenceOfHArray1OfReal self) -> Handle_Approx_SequenceNodeOfSequenceOfHArray1OfReal"""
         return _Approx.Approx_SequenceNodeOfSequenceOfHArray1OfReal_GetHandle(self)
 
@@ -2037,27 +2597,27 @@ Handle_Approx_SequenceNodeOfSequenceOfHArray1OfReal._kill_pointed = new_instance
 Handle_Approx_SequenceNodeOfSequenceOfHArray1OfReal_swigregister = _Approx.Handle_Approx_SequenceNodeOfSequenceOfHArray1OfReal_swigregister
 Handle_Approx_SequenceNodeOfSequenceOfHArray1OfReal_swigregister(Handle_Approx_SequenceNodeOfSequenceOfHArray1OfReal)
 
-def Handle_Approx_SequenceNodeOfSequenceOfHArray1OfReal_DownCast(*args) -> "Handle_Approx_SequenceNodeOfSequenceOfHArray1OfReal const" :
+def Handle_Approx_SequenceNodeOfSequenceOfHArray1OfReal_DownCast(*args):
   return _Approx.Handle_Approx_SequenceNodeOfSequenceOfHArray1OfReal_DownCast(*args)
 Handle_Approx_SequenceNodeOfSequenceOfHArray1OfReal_DownCast = _Approx.Handle_Approx_SequenceNodeOfSequenceOfHArray1OfReal_DownCast
 
 class Approx_SequenceOfHArray1OfReal(OCC.TCollection.TCollection_BaseSequence):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _Approx.Approx_SequenceOfHArray1OfReal_swiginit(self,_Approx.new_Approx_SequenceOfHArray1OfReal(*args))
-    def Clear(self, *args) -> "void" :
+        _Approx.Approx_SequenceOfHArray1OfReal_swiginit(self,_Approx.new_Approx_SequenceOfHArray1OfReal())
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _Approx.Approx_SequenceOfHArray1OfReal_Clear(self, *args)
+        return _Approx.Approx_SequenceOfHArray1OfReal_Clear(self)
 
-    def Assign(self, *args) -> "Approx_SequenceOfHArray1OfReal const &" :
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: Approx_SequenceOfHArray1OfReal &
@@ -2066,7 +2626,7 @@ class Approx_SequenceOfHArray1OfReal(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Approx.Approx_SequenceOfHArray1OfReal_Assign(self, *args)
 
-    def Set(self, *args) -> "Approx_SequenceOfHArray1OfReal const &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: Approx_SequenceOfHArray1OfReal &
@@ -2075,7 +2635,7 @@ class Approx_SequenceOfHArray1OfReal(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Approx.Approx_SequenceOfHArray1OfReal_Set(self, *args)
 
-    def Append(self, *args) -> "void" :
+    def Append(self, *args):
         """
         :param T:
         :type T: Handle_TColStd_HArray1OfReal &
@@ -2088,7 +2648,7 @@ class Approx_SequenceOfHArray1OfReal(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Approx.Approx_SequenceOfHArray1OfReal_Append(self, *args)
 
-    def Prepend(self, *args) -> "void" :
+    def Prepend(self, *args):
         """
         :param T:
         :type T: Handle_TColStd_HArray1OfReal &
@@ -2101,16 +2661,16 @@ class Approx_SequenceOfHArray1OfReal(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Approx.Approx_SequenceOfHArray1OfReal_Prepend(self, *args)
 
-    def InsertBefore(self, *args) -> "void" :
+    def InsertBefore(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param T:
         :type T: Handle_TColStd_HArray1OfReal &
         :rtype: None
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param S:
         :type S: Approx_SequenceOfHArray1OfReal &
         :rtype: None
@@ -2118,16 +2678,16 @@ class Approx_SequenceOfHArray1OfReal(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Approx.Approx_SequenceOfHArray1OfReal_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args) -> "void" :
+    def InsertAfter(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param T:
         :type T: Handle_TColStd_HArray1OfReal &
         :rtype: None
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param S:
         :type S: Approx_SequenceOfHArray1OfReal &
         :rtype: None
@@ -2135,24 +2695,24 @@ class Approx_SequenceOfHArray1OfReal(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Approx.Approx_SequenceOfHArray1OfReal_InsertAfter(self, *args)
 
-    def First(self, *args) -> "Handle_TColStd_HArray1OfReal const &" :
+    def First(self):
         """
         :rtype: Handle_TColStd_HArray1OfReal
 
         """
-        return _Approx.Approx_SequenceOfHArray1OfReal_First(self, *args)
+        return _Approx.Approx_SequenceOfHArray1OfReal_First(self)
 
-    def Last(self, *args) -> "Handle_TColStd_HArray1OfReal const &" :
+    def Last(self):
         """
         :rtype: Handle_TColStd_HArray1OfReal
 
         """
-        return _Approx.Approx_SequenceOfHArray1OfReal_Last(self, *args)
+        return _Approx.Approx_SequenceOfHArray1OfReal_Last(self)
 
-    def Split(self, *args) -> "void" :
+    def Split(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Sub:
         :type Sub: Approx_SequenceOfHArray1OfReal &
         :rtype: None
@@ -2160,19 +2720,19 @@ class Approx_SequenceOfHArray1OfReal(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Approx.Approx_SequenceOfHArray1OfReal_Split(self, *args)
 
-    def Value(self, *args) -> "Handle_TColStd_HArray1OfReal const &" :
+    def Value(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Handle_TColStd_HArray1OfReal
 
         """
         return _Approx.Approx_SequenceOfHArray1OfReal_Value(self, *args)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param I:
         :type I: Handle_TColStd_HArray1OfReal &
         :rtype: None
@@ -2180,25 +2740,25 @@ class Approx_SequenceOfHArray1OfReal(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Approx.Approx_SequenceOfHArray1OfReal_SetValue(self, *args)
 
-    def ChangeValue(self, *args) -> "Handle_TColStd_HArray1OfReal &" :
+    def ChangeValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Handle_TColStd_HArray1OfReal
 
         """
         return _Approx.Approx_SequenceOfHArray1OfReal_ChangeValue(self, *args)
 
-    def Remove(self, *args) -> "void" :
+    def Remove(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: None
 
         :param FromIndex:
-        :type FromIndex: int
+        :type FromIndex: Standard_Integer
         :param ToIndex:
-        :type ToIndex: int
+        :type ToIndex: Standard_Integer
         :rtype: None
 
         """
@@ -2241,7 +2801,7 @@ class Approx_SweepApproximation(object):
 
         """
         _Approx.Approx_SweepApproximation_swiginit(self,_Approx.new_Approx_SweepApproximation(*args))
-    def Perform(self, *args) -> "void" :
+    def Perform(self, *args):
         """
         * Perform the Approximation [First, Last] : Approx_SweepApproximation.cdl Tol3d : Tolerance to surface approximation Tol2d : Tolerance used to perform curve approximation  Normaly the 2d curve are approximated with a  tolerance given by the resolution on support surfaces,  but if this tolerance is too large Tol2d is used. TolAngular : Tolerance (in radian) to control the angle  beetween tangents on the section law and  tangent of iso-v on approximed surface Continuity : The continuity in v waiting on the surface Degmax : The maximum degree in v requiered on the surface Segmax : The maximum number of span in v requiered on  the surface Warning : The continuity ci can be obtained only if Ft is Ci
 
@@ -2260,22 +2820,88 @@ class Approx_SweepApproximation(object):
         :param Continuity: default value is GeomAbs_C0
         :type Continuity: GeomAbs_Shape
         :param Degmax: default value is 11
-        :type Degmax: int
+        :type Degmax: Standard_Integer
         :param Segmax: default value is 50
-        :type Segmax: int
+        :type Segmax: Standard_Integer
+        :rtype: None
+
+        * Perform the Approximation [First, Last] : Approx_SweepApproximation.cdl Tol3d : Tolerance to surface approximation Tol2d : Tolerance used to perform curve approximation  Normaly the 2d curve are approximated with a  tolerance given by the resolution on support surfaces,  but if this tolerance is too large Tol2d is used. TolAngular : Tolerance (in radian) to control the angle  beetween tangents on the section law and  tangent of iso-v on approximed surface Continuity : The continuity in v waiting on the surface Degmax : The maximum degree in v requiered on the surface Segmax : The maximum number of span in v requiered on  the surface Warning : The continuity ci can be obtained only if Ft is Ci
+
+        :param First:
+        :type First: float
+        :param Last:
+        :type Last: float
+        :param Tol3d:
+        :type Tol3d: float
+        :param BoundTol:
+        :type BoundTol: float
+        :param Tol2d:
+        :type Tol2d: float
+        :param TolAngular:
+        :type TolAngular: float
+        :param Continuity: default value is GeomAbs_C0
+        :type Continuity: GeomAbs_Shape
+        :param Degmax: default value is 11
+        :type Degmax: Standard_Integer
+        :param Segmax: default value is 50
+        :type Segmax: Standard_Integer
+        :rtype: None
+
+        * Perform the Approximation [First, Last] : Approx_SweepApproximation.cdl Tol3d : Tolerance to surface approximation Tol2d : Tolerance used to perform curve approximation  Normaly the 2d curve are approximated with a  tolerance given by the resolution on support surfaces,  but if this tolerance is too large Tol2d is used. TolAngular : Tolerance (in radian) to control the angle  beetween tangents on the section law and  tangent of iso-v on approximed surface Continuity : The continuity in v waiting on the surface Degmax : The maximum degree in v requiered on the surface Segmax : The maximum number of span in v requiered on  the surface Warning : The continuity ci can be obtained only if Ft is Ci
+
+        :param First:
+        :type First: float
+        :param Last:
+        :type Last: float
+        :param Tol3d:
+        :type Tol3d: float
+        :param BoundTol:
+        :type BoundTol: float
+        :param Tol2d:
+        :type Tol2d: float
+        :param TolAngular:
+        :type TolAngular: float
+        :param Continuity: default value is GeomAbs_C0
+        :type Continuity: GeomAbs_Shape
+        :param Degmax: default value is 11
+        :type Degmax: Standard_Integer
+        :param Segmax: default value is 50
+        :type Segmax: Standard_Integer
+        :rtype: None
+
+        * Perform the Approximation [First, Last] : Approx_SweepApproximation.cdl Tol3d : Tolerance to surface approximation Tol2d : Tolerance used to perform curve approximation  Normaly the 2d curve are approximated with a  tolerance given by the resolution on support surfaces,  but if this tolerance is too large Tol2d is used. TolAngular : Tolerance (in radian) to control the angle  beetween tangents on the section law and  tangent of iso-v on approximed surface Continuity : The continuity in v waiting on the surface Degmax : The maximum degree in v requiered on the surface Segmax : The maximum number of span in v requiered on  the surface Warning : The continuity ci can be obtained only if Ft is Ci
+
+        :param First:
+        :type First: float
+        :param Last:
+        :type Last: float
+        :param Tol3d:
+        :type Tol3d: float
+        :param BoundTol:
+        :type BoundTol: float
+        :param Tol2d:
+        :type Tol2d: float
+        :param TolAngular:
+        :type TolAngular: float
+        :param Continuity: default value is GeomAbs_C0
+        :type Continuity: GeomAbs_Shape
+        :param Degmax: default value is 11
+        :type Degmax: Standard_Integer
+        :param Segmax: default value is 50
+        :type Segmax: Standard_Integer
         :rtype: None
 
         """
         return _Approx.Approx_SweepApproximation_Perform(self, *args)
 
-    def Eval(self, *args) -> "Standard_Integer" :
+    def Eval(self, *args):
         """
         * The EvaluatorFunction from AdvApprox;
 
         :param Parameter:
         :type Parameter: float
         :param DerivativeRequest:
-        :type DerivativeRequest: int
+        :type DerivativeRequest: Standard_Integer
         :param First:
         :type First: float
         :param Last:
@@ -2287,35 +2913,35 @@ class Approx_SweepApproximation(object):
         """
         return _Approx.Approx_SweepApproximation_Eval(self, *args)
 
-    def IsDone(self, *args) -> "Standard_Boolean" :
+    def IsDone(self):
         """
         * returns if we have an result
 
         :rtype: bool
 
         """
-        return _Approx.Approx_SweepApproximation_IsDone(self, *args)
+        return _Approx.Approx_SweepApproximation_IsDone(self)
 
-    def SurfShape(self, *args) -> "void" :
+    def SurfShape(self):
         """
         :param UDegree:
-        :type UDegree: int &
+        :type UDegree: Standard_Integer &
         :param VDegree:
-        :type VDegree: int &
+        :type VDegree: Standard_Integer &
         :param NbUPoles:
-        :type NbUPoles: int &
+        :type NbUPoles: Standard_Integer &
         :param NbVPoles:
-        :type NbVPoles: int &
+        :type NbVPoles: Standard_Integer &
         :param NbUKnots:
-        :type NbUKnots: int &
+        :type NbUKnots: Standard_Integer &
         :param NbVKnots:
-        :type NbVKnots: int &
+        :type NbVKnots: Standard_Integer &
         :rtype: None
 
         """
-        return _Approx.Approx_SweepApproximation_SurfShape(self, *args)
+        return _Approx.Approx_SweepApproximation_SurfShape(self)
 
-    def Surface(self, *args) -> "void" :
+    def Surface(self, *args):
         """
         :param TPoles:
         :type TPoles: TColgp_Array2OfPnt
@@ -2334,104 +2960,104 @@ class Approx_SweepApproximation(object):
         """
         return _Approx.Approx_SweepApproximation_Surface(self, *args)
 
-    def UDegree(self, *args) -> "Standard_Integer" :
+    def UDegree(self):
         """
         :rtype: int
 
         """
-        return _Approx.Approx_SweepApproximation_UDegree(self, *args)
+        return _Approx.Approx_SweepApproximation_UDegree(self)
 
-    def VDegree(self, *args) -> "Standard_Integer" :
+    def VDegree(self):
         """
         :rtype: int
 
         """
-        return _Approx.Approx_SweepApproximation_VDegree(self, *args)
+        return _Approx.Approx_SweepApproximation_VDegree(self)
 
-    def SurfPoles(self, *args) -> "TColgp_Array2OfPnt const &" :
+    def SurfPoles(self):
         """
         :rtype: TColgp_Array2OfPnt
 
         """
-        return _Approx.Approx_SweepApproximation_SurfPoles(self, *args)
+        return _Approx.Approx_SweepApproximation_SurfPoles(self)
 
-    def SurfWeights(self, *args) -> "TColStd_Array2OfReal const &" :
+    def SurfWeights(self):
         """
         :rtype: TColStd_Array2OfReal
 
         """
-        return _Approx.Approx_SweepApproximation_SurfWeights(self, *args)
+        return _Approx.Approx_SweepApproximation_SurfWeights(self)
 
-    def SurfUKnots(self, *args) -> "TColStd_Array1OfReal const &" :
+    def SurfUKnots(self):
         """
         :rtype: TColStd_Array1OfReal
 
         """
-        return _Approx.Approx_SweepApproximation_SurfUKnots(self, *args)
+        return _Approx.Approx_SweepApproximation_SurfUKnots(self)
 
-    def SurfVKnots(self, *args) -> "TColStd_Array1OfReal const &" :
+    def SurfVKnots(self):
         """
         :rtype: TColStd_Array1OfReal
 
         """
-        return _Approx.Approx_SweepApproximation_SurfVKnots(self, *args)
+        return _Approx.Approx_SweepApproximation_SurfVKnots(self)
 
-    def SurfUMults(self, *args) -> "TColStd_Array1OfInteger const &" :
+    def SurfUMults(self):
         """
         :rtype: TColStd_Array1OfInteger
 
         """
-        return _Approx.Approx_SweepApproximation_SurfUMults(self, *args)
+        return _Approx.Approx_SweepApproximation_SurfUMults(self)
 
-    def SurfVMults(self, *args) -> "TColStd_Array1OfInteger const &" :
+    def SurfVMults(self):
         """
         :rtype: TColStd_Array1OfInteger
 
         """
-        return _Approx.Approx_SweepApproximation_SurfVMults(self, *args)
+        return _Approx.Approx_SweepApproximation_SurfVMults(self)
 
-    def MaxErrorOnSurf(self, *args) -> "Standard_Real" :
+    def MaxErrorOnSurf(self):
         """
         * returns the maximum error in the suface approximation.
 
         :rtype: float
 
         """
-        return _Approx.Approx_SweepApproximation_MaxErrorOnSurf(self, *args)
+        return _Approx.Approx_SweepApproximation_MaxErrorOnSurf(self)
 
-    def AverageErrorOnSurf(self, *args) -> "Standard_Real" :
+    def AverageErrorOnSurf(self):
         """
         * returns the average error in the suface approximation.
 
         :rtype: float
 
         """
-        return _Approx.Approx_SweepApproximation_AverageErrorOnSurf(self, *args)
+        return _Approx.Approx_SweepApproximation_AverageErrorOnSurf(self)
 
-    def NbCurves2d(self, *args) -> "Standard_Integer" :
+    def NbCurves2d(self):
         """
         :rtype: int
 
         """
-        return _Approx.Approx_SweepApproximation_NbCurves2d(self, *args)
+        return _Approx.Approx_SweepApproximation_NbCurves2d(self)
 
-    def Curves2dShape(self, *args) -> "void" :
+    def Curves2dShape(self):
         """
         :param Degree:
-        :type Degree: int &
+        :type Degree: Standard_Integer &
         :param NbPoles:
-        :type NbPoles: int &
+        :type NbPoles: Standard_Integer &
         :param NbKnots:
-        :type NbKnots: int &
+        :type NbKnots: Standard_Integer &
         :rtype: None
 
         """
-        return _Approx.Approx_SweepApproximation_Curves2dShape(self, *args)
+        return _Approx.Approx_SweepApproximation_Curves2dShape(self)
 
-    def Curve2d(self, *args) -> "void" :
+    def Curve2d(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param TPoles:
         :type TPoles: TColgp_Array1OfPnt2d
         :param TKnots:
@@ -2443,74 +3069,74 @@ class Approx_SweepApproximation(object):
         """
         return _Approx.Approx_SweepApproximation_Curve2d(self, *args)
 
-    def Curves2dDegree(self, *args) -> "Standard_Integer" :
+    def Curves2dDegree(self):
         """
         :rtype: int
 
         """
-        return _Approx.Approx_SweepApproximation_Curves2dDegree(self, *args)
+        return _Approx.Approx_SweepApproximation_Curves2dDegree(self)
 
-    def Curve2dPoles(self, *args) -> "TColgp_Array1OfPnt2d const &" :
+    def Curve2dPoles(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: TColgp_Array1OfPnt2d
 
         """
         return _Approx.Approx_SweepApproximation_Curve2dPoles(self, *args)
 
-    def Curves2dKnots(self, *args) -> "TColStd_Array1OfReal const &" :
+    def Curves2dKnots(self):
         """
         :rtype: TColStd_Array1OfReal
 
         """
-        return _Approx.Approx_SweepApproximation_Curves2dKnots(self, *args)
+        return _Approx.Approx_SweepApproximation_Curves2dKnots(self)
 
-    def Curves2dMults(self, *args) -> "TColStd_Array1OfInteger const &" :
+    def Curves2dMults(self):
         """
         :rtype: TColStd_Array1OfInteger
 
         """
-        return _Approx.Approx_SweepApproximation_Curves2dMults(self, *args)
+        return _Approx.Approx_SweepApproximation_Curves2dMults(self)
 
-    def Max2dError(self, *args) -> "Standard_Real" :
+    def Max2dError(self, *args):
         """
         * returns the maximum error of the <Index> 2d curve approximation.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: float
 
         """
         return _Approx.Approx_SweepApproximation_Max2dError(self, *args)
 
-    def Average2dError(self, *args) -> "Standard_Real" :
+    def Average2dError(self, *args):
         """
         * returns the average error of the <Index> 2d curve approximation.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: float
 
         """
         return _Approx.Approx_SweepApproximation_Average2dError(self, *args)
 
-    def TolCurveOnSurf(self, *args) -> "Standard_Real" :
+    def TolCurveOnSurf(self, *args):
         """
         * returns the maximum 3d error of the <Index> 2d curve approximation on the Surface.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: float
 
         """
         return _Approx.Approx_SweepApproximation_TolCurveOnSurf(self, *args)
 
-    def DumpToString(self) -> "std::string" :
+    def DumpToString(self):
         """DumpToString(Approx_SweepApproximation self) -> std::string"""
         return _Approx.Approx_SweepApproximation_DumpToString(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Approx_SweepApproximation self)"""
         return _Approx.Approx_SweepApproximation__kill_pointed(self)
 
@@ -2556,7 +3182,7 @@ class Approx_SweepFunction(OCC.MMgt.MMgt_TShared):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def D0(self, *args) -> "Standard_Boolean" :
+    def D0(self, *args):
         """
         * compute the section for v = param
 
@@ -2577,7 +3203,7 @@ class Approx_SweepFunction(OCC.MMgt.MMgt_TShared):
         """
         return _Approx.Approx_SweepFunction_D0(self, *args)
 
-    def D1(self, *args) -> "Standard_Boolean" :
+    def D1(self, *args):
         """
         * compute the first derivative in v direction of the section for v = param Warning : It used only for C1 or C2 aproximation
 
@@ -2604,7 +3230,7 @@ class Approx_SweepFunction(OCC.MMgt.MMgt_TShared):
         """
         return _Approx.Approx_SweepFunction_D1(self, *args)
 
-    def D2(self, *args) -> "Standard_Boolean" :
+    def D2(self, *args):
         """
         * compute the second derivative in v direction of the section for v = param Warning : It used only for C2 aproximation
 
@@ -2637,31 +3263,31 @@ class Approx_SweepFunction(OCC.MMgt.MMgt_TShared):
         """
         return _Approx.Approx_SweepFunction_D2(self, *args)
 
-    def Nb2dCurves(self, *args) -> "Standard_Integer" :
+    def Nb2dCurves(self):
         """
         * get the number of 2d curves to approximate.
 
         :rtype: int
 
         """
-        return _Approx.Approx_SweepFunction_Nb2dCurves(self, *args)
+        return _Approx.Approx_SweepFunction_Nb2dCurves(self)
 
-    def SectionShape(self, *args) -> "void" :
+    def SectionShape(self):
         """
         * get the format of an section
 
         :param NbPoles:
-        :type NbPoles: int &
+        :type NbPoles: Standard_Integer &
         :param NbKnots:
-        :type NbKnots: int &
+        :type NbKnots: Standard_Integer &
         :param Degree:
-        :type Degree: int &
+        :type Degree: Standard_Integer &
         :rtype: void
 
         """
-        return _Approx.Approx_SweepFunction_SectionShape(self, *args)
+        return _Approx.Approx_SweepFunction_SectionShape(self)
 
-    def Knots(self, *args) -> "void" :
+    def Knots(self, *args):
         """
         * get the Knots of the section
 
@@ -2672,7 +3298,7 @@ class Approx_SweepFunction(OCC.MMgt.MMgt_TShared):
         """
         return _Approx.Approx_SweepFunction_Knots(self, *args)
 
-    def Mults(self, *args) -> "void" :
+    def Mults(self, *args):
         """
         * get the Multplicities of the section
 
@@ -2683,16 +3309,16 @@ class Approx_SweepFunction(OCC.MMgt.MMgt_TShared):
         """
         return _Approx.Approx_SweepFunction_Mults(self, *args)
 
-    def IsRational(self, *args) -> "Standard_Boolean" :
+    def IsRational(self):
         """
         * Returns if the sections are rationnal or not
 
         :rtype: bool
 
         """
-        return _Approx.Approx_SweepFunction_IsRational(self, *args)
+        return _Approx.Approx_SweepFunction_IsRational(self)
 
-    def NbIntervals(self, *args) -> "Standard_Integer" :
+    def NbIntervals(self, *args):
         """
         * Returns the number of intervals for continuity <S>. May be one if Continuity(me) >= <S>
 
@@ -2703,7 +3329,7 @@ class Approx_SweepFunction(OCC.MMgt.MMgt_TShared):
         """
         return _Approx.Approx_SweepFunction_NbIntervals(self, *args)
 
-    def Intervals(self, *args) -> "void" :
+    def Intervals(self, *args):
         """
         * Stores in <T> the parameters bounding the intervals of continuity <S>.  The array must provide enough room to accomodate for the parameters. i.e. T.Length() > NbIntervals()
 
@@ -2716,7 +3342,7 @@ class Approx_SweepFunction(OCC.MMgt.MMgt_TShared):
         """
         return _Approx.Approx_SweepFunction_Intervals(self, *args)
 
-    def SetInterval(self, *args) -> "void" :
+    def SetInterval(self, *args):
         """
         * Sets the bounds of the parametric interval on the fonction This determines the derivatives in these values if the function is not Cn.
 
@@ -2729,12 +3355,12 @@ class Approx_SweepFunction(OCC.MMgt.MMgt_TShared):
         """
         return _Approx.Approx_SweepFunction_SetInterval(self, *args)
 
-    def Resolution(self, *args) -> "void" :
+    def Resolution(self, *args):
         """
         * Returns the resolutions in the sub-space 2d <Index> This information is usfull to find an good tolerance in 2d approximation.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Tol:
         :type Tol: float
         :param TolU:
@@ -2746,7 +3372,7 @@ class Approx_SweepFunction(OCC.MMgt.MMgt_TShared):
         """
         return _Approx.Approx_SweepFunction_Resolution(self, *args)
 
-    def GetTolerance(self, *args) -> "void" :
+    def GetTolerance(self, *args):
         """
         * Returns the tolerance to reach in approximation to satisfy. BoundTol error at the Boundary AngleTol tangent error at the Boundary (in radian) SurfTol error inside the surface.
 
@@ -2763,7 +3389,7 @@ class Approx_SweepFunction(OCC.MMgt.MMgt_TShared):
         """
         return _Approx.Approx_SweepFunction_GetTolerance(self, *args)
 
-    def SetTolerance(self, *args) -> "void" :
+    def SetTolerance(self, *args):
         """
         * Is usefull, if (me) have to run numerical algorithm to perform D0, D1 or D2
 
@@ -2776,25 +3402,25 @@ class Approx_SweepFunction(OCC.MMgt.MMgt_TShared):
         """
         return _Approx.Approx_SweepFunction_SetTolerance(self, *args)
 
-    def BarycentreOfSurf(self, *args) -> "gp_Pnt" :
+    def BarycentreOfSurf(self):
         """
         * Get the barycentre of Surface. An very poor estimation is sufficent. This information is usefull to perform well conditioned rational approximation. Warning: Used only if <self> IsRational
 
         :rtype: gp_Pnt
 
         """
-        return _Approx.Approx_SweepFunction_BarycentreOfSurf(self, *args)
+        return _Approx.Approx_SweepFunction_BarycentreOfSurf(self)
 
-    def MaximalSection(self, *args) -> "Standard_Real" :
+    def MaximalSection(self):
         """
         * Returns the length of the greater section. This information is usefull to G1's control. Warning: With an little value, approximation can be slower.
 
         :rtype: float
 
         """
-        return _Approx.Approx_SweepFunction_MaximalSection(self, *args)
+        return _Approx.Approx_SweepFunction_MaximalSection(self)
 
-    def GetMinimalWeight(self, *args) -> "void" :
+    def GetMinimalWeight(self, *args):
         """
         * Compute the minimal value of weight for each poles in all sections. This information is usefull to control error in rational approximation. Warning: Used only if <self> IsRational
 
@@ -2805,11 +3431,11 @@ class Approx_SweepFunction(OCC.MMgt.MMgt_TShared):
         """
         return _Approx.Approx_SweepFunction_GetMinimalWeight(self, *args)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Approx_SweepFunction self)"""
         return _Approx.Approx_SweepFunction__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Approx_SweepFunction" :
+    def GetHandle(self):
         """GetHandle(Approx_SweepFunction self) -> Handle_Approx_SweepFunction"""
         return _Approx.Approx_SweepFunction_GetHandle(self)
 
@@ -2864,7 +3490,7 @@ Handle_Approx_SweepFunction._kill_pointed = new_instancemethod(_Approx.Handle_Ap
 Handle_Approx_SweepFunction_swigregister = _Approx.Handle_Approx_SweepFunction_swigregister
 Handle_Approx_SweepFunction_swigregister(Handle_Approx_SweepFunction)
 
-def Handle_Approx_SweepFunction_DownCast(*args) -> "Handle_Approx_SweepFunction const" :
+def Handle_Approx_SweepFunction_DownCast(*args):
   return _Approx.Handle_Approx_SweepFunction_DownCast(*args)
 Handle_Approx_SweepFunction_DownCast = _Approx.Handle_Approx_SweepFunction_DownCast
 

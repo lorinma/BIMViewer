@@ -129,24 +129,24 @@ class TopLoc_Datum3D(OCC.MMgt.MMgt_TShared):
 
         """
         _TopLoc.TopLoc_Datum3D_swiginit(self,_TopLoc.new_TopLoc_Datum3D(*args))
-    def Transformation(self, *args) -> "gp_Trsf const" :
+    def Transformation(self):
         """
         * Returns a gp_Trsf which, when applied to this datum, produces the default datum.
 
         :rtype: gp_Trsf
 
         """
-        return _TopLoc.TopLoc_Datum3D_Transformation(self, *args)
+        return _TopLoc.TopLoc_Datum3D_Transformation(self)
 
-    def ShallowDumpToString(self) -> "std::string" :
+    def ShallowDumpToString(self):
         """ShallowDumpToString(TopLoc_Datum3D self) -> std::string"""
         return _TopLoc.TopLoc_Datum3D_ShallowDumpToString(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(TopLoc_Datum3D self)"""
         return _TopLoc.TopLoc_Datum3D__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_TopLoc_Datum3D" :
+    def GetHandle(self):
         """GetHandle(TopLoc_Datum3D self) -> Handle_TopLoc_Datum3D"""
         return _TopLoc.TopLoc_Datum3D_GetHandle(self)
 
@@ -186,7 +186,7 @@ Handle_TopLoc_Datum3D._kill_pointed = new_instancemethod(_TopLoc.Handle_TopLoc_D
 Handle_TopLoc_Datum3D_swigregister = _TopLoc.Handle_TopLoc_Datum3D_swigregister
 Handle_TopLoc_Datum3D_swigregister(Handle_TopLoc_Datum3D)
 
-def Handle_TopLoc_Datum3D_DownCast(*args) -> "Handle_TopLoc_Datum3D const" :
+def Handle_TopLoc_Datum3D_DownCast(*args):
   return _TopLoc.Handle_TopLoc_Datum3D_DownCast(*args)
 Handle_TopLoc_Datum3D_DownCast = _TopLoc.Handle_TopLoc_Datum3D_DownCast
 
@@ -198,7 +198,7 @@ class TopLoc_IndexedMapNodeOfIndexedMapOfLocation(OCC.TCollection.TCollection_Ma
         :param K1:
         :type K1: TopLoc_Location &
         :param K2:
-        :type K2: int
+        :type K2: Standard_Integer
         :param n1:
         :type n1: TCollection_MapNodePtr &
         :param n2:
@@ -207,33 +207,33 @@ class TopLoc_IndexedMapNodeOfIndexedMapOfLocation(OCC.TCollection.TCollection_Ma
 
         """
         _TopLoc.TopLoc_IndexedMapNodeOfIndexedMapOfLocation_swiginit(self,_TopLoc.new_TopLoc_IndexedMapNodeOfIndexedMapOfLocation(*args))
-    def Key1(self, *args) -> "TopLoc_Location &" :
+    def Key1(self):
         """
         :rtype: TopLoc_Location
 
         """
-        return _TopLoc.TopLoc_IndexedMapNodeOfIndexedMapOfLocation_Key1(self, *args)
+        return _TopLoc.TopLoc_IndexedMapNodeOfIndexedMapOfLocation_Key1(self)
 
-    def GetKey2(self) -> "Standard_Integer" :
+    def GetKey2(self):
         """GetKey2(TopLoc_IndexedMapNodeOfIndexedMapOfLocation self) -> Standard_Integer"""
         return _TopLoc.TopLoc_IndexedMapNodeOfIndexedMapOfLocation_GetKey2(self)
 
-    def SetKey2(self, *args) -> "void" :
+    def SetKey2(self, *args):
         """SetKey2(TopLoc_IndexedMapNodeOfIndexedMapOfLocation self, Standard_Integer value)"""
         return _TopLoc.TopLoc_IndexedMapNodeOfIndexedMapOfLocation_SetKey2(self, *args)
 
-    def Next2(self, *args) -> "TCollection_MapNodePtr &" :
+    def Next2(self):
         """
         :rtype: TCollection_MapNodePtr
 
         """
-        return _TopLoc.TopLoc_IndexedMapNodeOfIndexedMapOfLocation_Next2(self, *args)
+        return _TopLoc.TopLoc_IndexedMapNodeOfIndexedMapOfLocation_Next2(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(TopLoc_IndexedMapNodeOfIndexedMapOfLocation self)"""
         return _TopLoc.TopLoc_IndexedMapNodeOfIndexedMapOfLocation__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_TopLoc_IndexedMapNodeOfIndexedMapOfLocation" :
+    def GetHandle(self):
         """GetHandle(TopLoc_IndexedMapNodeOfIndexedMapOfLocation self) -> Handle_TopLoc_IndexedMapNodeOfIndexedMapOfLocation"""
         return _TopLoc.TopLoc_IndexedMapNodeOfIndexedMapOfLocation_GetHandle(self)
 
@@ -275,22 +275,26 @@ Handle_TopLoc_IndexedMapNodeOfIndexedMapOfLocation._kill_pointed = new_instancem
 Handle_TopLoc_IndexedMapNodeOfIndexedMapOfLocation_swigregister = _TopLoc.Handle_TopLoc_IndexedMapNodeOfIndexedMapOfLocation_swigregister
 Handle_TopLoc_IndexedMapNodeOfIndexedMapOfLocation_swigregister(Handle_TopLoc_IndexedMapNodeOfIndexedMapOfLocation)
 
-def Handle_TopLoc_IndexedMapNodeOfIndexedMapOfLocation_DownCast(*args) -> "Handle_TopLoc_IndexedMapNodeOfIndexedMapOfLocation const" :
+def Handle_TopLoc_IndexedMapNodeOfIndexedMapOfLocation_DownCast(*args):
   return _TopLoc.Handle_TopLoc_IndexedMapNodeOfIndexedMapOfLocation_DownCast(*args)
 Handle_TopLoc_IndexedMapNodeOfIndexedMapOfLocation_DownCast = _TopLoc.Handle_TopLoc_IndexedMapNodeOfIndexedMapOfLocation_DownCast
 
 class TopLoc_IndexedMapOfLocation(OCC.TCollection.TCollection_BasicMap):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self, NbBuckets=1): 
         """
         :param NbBuckets: default value is 1
-        :type NbBuckets: int
+        :type NbBuckets: Standard_Integer
+        :rtype: None
+
+        :param NbBuckets: default value is 1
+        :type NbBuckets: Standard_Integer
         :rtype: None
 
         """
-        _TopLoc.TopLoc_IndexedMapOfLocation_swiginit(self,_TopLoc.new_TopLoc_IndexedMapOfLocation(*args))
-    def Assign(self, *args) -> "TopLoc_IndexedMapOfLocation &" :
+        _TopLoc.TopLoc_IndexedMapOfLocation_swiginit(self,_TopLoc.new_TopLoc_IndexedMapOfLocation(NbBuckets))
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: TopLoc_IndexedMapOfLocation &
@@ -299,7 +303,7 @@ class TopLoc_IndexedMapOfLocation(OCC.TCollection.TCollection_BasicMap):
         """
         return _TopLoc.TopLoc_IndexedMapOfLocation_Assign(self, *args)
 
-    def Set(self, *args) -> "TopLoc_IndexedMapOfLocation &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: TopLoc_IndexedMapOfLocation &
@@ -308,23 +312,23 @@ class TopLoc_IndexedMapOfLocation(OCC.TCollection.TCollection_BasicMap):
         """
         return _TopLoc.TopLoc_IndexedMapOfLocation_Set(self, *args)
 
-    def ReSize(self, *args) -> "void" :
+    def ReSize(self, *args):
         """
         :param NbBuckets:
-        :type NbBuckets: int
+        :type NbBuckets: Standard_Integer
         :rtype: None
 
         """
         return _TopLoc.TopLoc_IndexedMapOfLocation_ReSize(self, *args)
 
-    def Clear(self, *args) -> "void" :
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _TopLoc.TopLoc_IndexedMapOfLocation_Clear(self, *args)
+        return _TopLoc.TopLoc_IndexedMapOfLocation_Clear(self)
 
-    def Add(self, *args) -> "Standard_Integer" :
+    def Add(self, *args):
         """
         :param K:
         :type K: TopLoc_Location &
@@ -333,10 +337,10 @@ class TopLoc_IndexedMapOfLocation(OCC.TCollection.TCollection_BasicMap):
         """
         return _TopLoc.TopLoc_IndexedMapOfLocation_Add(self, *args)
 
-    def Substitute(self, *args) -> "void" :
+    def Substitute(self, *args):
         """
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :param K:
         :type K: TopLoc_Location &
         :rtype: None
@@ -344,14 +348,14 @@ class TopLoc_IndexedMapOfLocation(OCC.TCollection.TCollection_BasicMap):
         """
         return _TopLoc.TopLoc_IndexedMapOfLocation_Substitute(self, *args)
 
-    def RemoveLast(self, *args) -> "void" :
+    def RemoveLast(self):
         """
         :rtype: None
 
         """
-        return _TopLoc.TopLoc_IndexedMapOfLocation_RemoveLast(self, *args)
+        return _TopLoc.TopLoc_IndexedMapOfLocation_RemoveLast(self)
 
-    def Contains(self, *args) -> "Standard_Boolean" :
+    def Contains(self, *args):
         """
         :param K:
         :type K: TopLoc_Location &
@@ -360,16 +364,16 @@ class TopLoc_IndexedMapOfLocation(OCC.TCollection.TCollection_BasicMap):
         """
         return _TopLoc.TopLoc_IndexedMapOfLocation_Contains(self, *args)
 
-    def FindKey(self, *args) -> "TopLoc_Location const &" :
+    def FindKey(self, *args):
         """
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :rtype: TopLoc_Location
 
         """
         return _TopLoc.TopLoc_IndexedMapOfLocation_FindKey(self, *args)
 
-    def FindIndex(self, *args) -> "Standard_Integer" :
+    def FindIndex(self, *args):
         """
         :param K:
         :type K: TopLoc_Location &
@@ -378,7 +382,7 @@ class TopLoc_IndexedMapOfLocation(OCC.TCollection.TCollection_BasicMap):
         """
         return _TopLoc.TopLoc_IndexedMapOfLocation_FindIndex(self, *args)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(TopLoc_IndexedMapOfLocation self)"""
         return _TopLoc.TopLoc_IndexedMapOfLocation__kill_pointed(self)
 
@@ -414,7 +418,17 @@ class TopLoc_ItemLocation(object):
         :param D:
         :type D: Handle_TopLoc_Datum3D &
         :param P:
-        :type P: int
+        :type P: Standard_Integer
+        :param fromTrsf: default value is Standard_False
+        :type fromTrsf: bool
+        :rtype: None
+
+        * Sets the elementary Datum to <D> Sets the exponent to <P>
+
+        :param D:
+        :type D: Handle_TopLoc_Datum3D &
+        :param P:
+        :type P: Standard_Integer
         :param fromTrsf: default value is Standard_False
         :type fromTrsf: bool
         :rtype: None
@@ -425,7 +439,7 @@ class TopLoc_ItemLocation(object):
 
         """
         _TopLoc.TopLoc_ItemLocation_swiginit(self,_TopLoc.new_TopLoc_ItemLocation(*args))
-    def Assign(self, *args) -> "TopLoc_ItemLocation &" :
+    def Assign(self, *args):
         """
         :param anOther:
         :type anOther: TopLoc_ItemLocation &
@@ -434,7 +448,7 @@ class TopLoc_ItemLocation(object):
         """
         return _TopLoc.TopLoc_ItemLocation_Assign(self, *args)
 
-    def Set(self, *args) -> "TopLoc_ItemLocation &" :
+    def Set(self, *args):
         """
         :param anOther:
         :type anOther: TopLoc_ItemLocation &
@@ -443,12 +457,12 @@ class TopLoc_ItemLocation(object):
         """
         return _TopLoc.TopLoc_ItemLocation_Set(self, *args)
 
-    def Destroy(self, *args) -> "void" :
+    def Destroy(self):
         """
         :rtype: None
 
         """
-        return _TopLoc.TopLoc_ItemLocation_Destroy(self, *args)
+        return _TopLoc.TopLoc_ItemLocation_Destroy(self)
 
     def __del__(self):
     	try:
@@ -488,70 +502,70 @@ class TopLoc_Location(object):
 
         """
         _TopLoc.TopLoc_Location_swiginit(self,_TopLoc.new_TopLoc_Location(*args))
-    def IsIdentity(self, *args) -> "Standard_Boolean" :
+    def IsIdentity(self):
         """
         * Returns true if this location is equal to the Identity transformation.
 
         :rtype: bool
 
         """
-        return _TopLoc.TopLoc_Location_IsIdentity(self, *args)
+        return _TopLoc.TopLoc_Location_IsIdentity(self)
 
-    def Identity(self, *args) -> "void" :
+    def Identity(self):
         """
         * Resets this location to the Identity transformation.
 
         :rtype: None
 
         """
-        return _TopLoc.TopLoc_Location_Identity(self, *args)
+        return _TopLoc.TopLoc_Location_Identity(self)
 
-    def FirstDatum(self, *args) -> "Handle_TopLoc_Datum3D const &" :
+    def FirstDatum(self):
         """
         * Returns the first elementary datum of the Location. Use the NextLocation function recursively to access the other data comprising this location. Exceptions Standard_NoSuchObject if this location is empty.
 
         :rtype: Handle_TopLoc_Datum3D
 
         """
-        return _TopLoc.TopLoc_Location_FirstDatum(self, *args)
+        return _TopLoc.TopLoc_Location_FirstDatum(self)
 
-    def FirstPower(self, *args) -> "Standard_Integer" :
+    def FirstPower(self):
         """
         * Returns the power elevation of the first elementary datum. Exceptions Standard_NoSuchObject if this location is empty.
 
         :rtype: int
 
         """
-        return _TopLoc.TopLoc_Location_FirstPower(self, *args)
+        return _TopLoc.TopLoc_Location_FirstPower(self)
 
-    def NextLocation(self, *args) -> "TopLoc_Location const &" :
+    def NextLocation(self):
         """
         * Returns a Location representing <self> without the first datum. We have the relation : <self> = NextLocation() * FirstDatum() ^ FirstPower() Exceptions Standard_NoSuchObject if this location is empty.
 
         :rtype: TopLoc_Location
 
         """
-        return _TopLoc.TopLoc_Location_NextLocation(self, *args)
+        return _TopLoc.TopLoc_Location_NextLocation(self)
 
-    def Transformation(self, *args) -> "gp_Trsf const" :
+    def Transformation(self):
         """
         * Returns the transformation associated to the coordinate system.
 
         :rtype: gp_Trsf
 
         """
-        return _TopLoc.TopLoc_Location_Transformation(self, *args)
+        return _TopLoc.TopLoc_Location_Transformation(self)
 
-    def Inverted(self, *args) -> "TopLoc_Location" :
+    def Inverted(self):
         """
         * Returns the inverse of <self>.  <self> * Inverted() is an Identity.
 
         :rtype: TopLoc_Location
 
         """
-        return _TopLoc.TopLoc_Location_Inverted(self, *args)
+        return _TopLoc.TopLoc_Location_Inverted(self)
 
-    def Multiplied(self, *args) -> "TopLoc_Location" :
+    def Multiplied(self, *args):
         """
         * Returns <self> * <Other>, the elementary datums are concatenated.
 
@@ -562,7 +576,7 @@ class TopLoc_Location(object):
         """
         return _TopLoc.TopLoc_Location_Multiplied(self, *args)
 
-    def __mul__(self, *args) -> "TopLoc_Location" :
+    def __mul__(self, *args):
         """
         :param Other:
         :type Other: TopLoc_Location &
@@ -571,7 +585,7 @@ class TopLoc_Location(object):
         """
         return _TopLoc.TopLoc_Location___mul__(self, *args)
 
-    def Divided(self, *args) -> "TopLoc_Location" :
+    def Divided(self, *args):
         """
         * Returns <self> / <Other>.
 
@@ -582,7 +596,7 @@ class TopLoc_Location(object):
         """
         return _TopLoc.TopLoc_Location_Divided(self, *args)
 
-    def __div__(self, *args) -> "TopLoc_Location" :
+    def __div__(self, *args):
         """
         :param Other:
         :type Other: TopLoc_Location &
@@ -591,7 +605,7 @@ class TopLoc_Location(object):
         """
         return _TopLoc.TopLoc_Location___div__(self, *args)
 
-    def Predivided(self, *args) -> "TopLoc_Location" :
+    def Predivided(self, *args):
         """
         * Returns <Other>.Inverted() * <self>.
 
@@ -602,29 +616,29 @@ class TopLoc_Location(object):
         """
         return _TopLoc.TopLoc_Location_Predivided(self, *args)
 
-    def Powered(self, *args) -> "TopLoc_Location" :
+    def Powered(self, *args):
         """
         * Returns me at the power <pwr>. If <pwr> is zero returns Identity. <pwr> can be lower than zero (usual meaning for powers).
 
         :param pwr:
-        :type pwr: int
+        :type pwr: Standard_Integer
         :rtype: TopLoc_Location
 
         """
         return _TopLoc.TopLoc_Location_Powered(self, *args)
 
-    def HashCode(self, *args) -> "Standard_Integer" :
+    def HashCode(self, *args):
         """
         * Returns a hashed value for this local coordinate system. This value is used, with map tables, to store and retrieve the object easily, and is in the range [ 1..Upper ].
 
         :param Upper:
-        :type Upper: int
+        :type Upper: Standard_Integer
         :rtype: int
 
         """
         return _TopLoc.TopLoc_Location_HashCode(self, *args)
 
-    def IsEqual(self, *args) -> "Standard_Boolean" :
+    def IsEqual(self, *args):
         """
         * Returns true if this location and the location Other have the same elementary data, i.e. contain the same series of TopLoc_Datum3D and respective powers. This method is an alias for operator ==.
 
@@ -641,7 +655,7 @@ class TopLoc_Location(object):
         except:
             return False
 
-    def IsDifferent(self, *args) -> "Standard_Boolean" :
+    def IsDifferent(self, *args):
         """
         * Returns true if this location and the location Other do not have the same elementary data, i.e. do not contain the same series of TopLoc_Datum3D and respective powers. This method is an alias for operator !=.
 
@@ -658,11 +672,11 @@ class TopLoc_Location(object):
         except:
             return True
 
-    def ShallowDumpToString(self) -> "std::string" :
+    def ShallowDumpToString(self):
         """ShallowDumpToString(TopLoc_Location self) -> std::string"""
         return _TopLoc.TopLoc_Location_ShallowDumpToString(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(TopLoc_Location self)"""
         return _TopLoc.TopLoc_Location__kill_pointed(self)
 
@@ -711,7 +725,7 @@ class TopLoc_MapIteratorOfMapOfLocation(OCC.TCollection.TCollection_BasicMapIter
 
         """
         _TopLoc.TopLoc_MapIteratorOfMapOfLocation_swiginit(self,_TopLoc.new_TopLoc_MapIteratorOfMapOfLocation(*args))
-    def Initialize(self, *args) -> "void" :
+    def Initialize(self, *args):
         """
         :param aMap:
         :type aMap: TopLoc_MapOfLocation &
@@ -720,12 +734,12 @@ class TopLoc_MapIteratorOfMapOfLocation(OCC.TCollection.TCollection_BasicMapIter
         """
         return _TopLoc.TopLoc_MapIteratorOfMapOfLocation_Initialize(self, *args)
 
-    def Key(self, *args) -> "TopLoc_Location const &" :
+    def Key(self):
         """
         :rtype: TopLoc_Location
 
         """
-        return _TopLoc.TopLoc_MapIteratorOfMapOfLocation_Key(self, *args)
+        return _TopLoc.TopLoc_MapIteratorOfMapOfLocation_Key(self)
 
     def __del__(self):
     	try:
@@ -743,20 +757,21 @@ TopLoc_MapIteratorOfMapOfLocation_swigregister(TopLoc_MapIteratorOfMapOfLocation
 
 class TopLoc_MapLocationHasher(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
+    def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def HashCode(*args) -> "Standard_Integer" :
+    def HashCode(*args):
         """
         :param K:
         :type K: TopLoc_Location &
         :param Upper:
-        :type Upper: int
+        :type Upper: Standard_Integer
         :rtype: int
 
         """
         return _TopLoc.TopLoc_MapLocationHasher_HashCode(*args)
 
     HashCode = staticmethod(HashCode)
-    def IsEqual(*args) -> "Standard_Boolean" :
+    def IsEqual(*args):
         """
         :param K1:
         :type K1: TopLoc_Location &
@@ -768,8 +783,6 @@ class TopLoc_MapLocationHasher(object):
         return _TopLoc.TopLoc_MapLocationHasher_IsEqual(*args)
 
     IsEqual = staticmethod(IsEqual)
-    def __init__(self): 
-        _TopLoc.TopLoc_MapLocationHasher_swiginit(self,_TopLoc.new_TopLoc_MapLocationHasher())
     def __del__(self):
     	try:
     		self.thisown = False
@@ -782,18 +795,18 @@ TopLoc_MapLocationHasher._kill_pointed = new_instancemethod(_TopLoc.TopLoc_MapLo
 TopLoc_MapLocationHasher_swigregister = _TopLoc.TopLoc_MapLocationHasher_swigregister
 TopLoc_MapLocationHasher_swigregister(TopLoc_MapLocationHasher)
 
-def TopLoc_MapLocationHasher_HashCode(*args) -> "Standard_Integer" :
+def TopLoc_MapLocationHasher_HashCode(*args):
   """
     :param K:
     :type K: TopLoc_Location &
     :param Upper:
-    :type Upper: int
+    :type Upper: Standard_Integer
     :rtype: int
 
     """
   return _TopLoc.TopLoc_MapLocationHasher_HashCode(*args)
 
-def TopLoc_MapLocationHasher_IsEqual(*args) -> "Standard_Boolean" :
+def TopLoc_MapLocationHasher_IsEqual(*args):
   """
     :param K1:
     :type K1: TopLoc_Location &
@@ -807,15 +820,19 @@ def TopLoc_MapLocationHasher_IsEqual(*args) -> "Standard_Boolean" :
 class TopLoc_MapOfLocation(OCC.TCollection.TCollection_BasicMap):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self, NbBuckets=1): 
         """
         :param NbBuckets: default value is 1
-        :type NbBuckets: int
+        :type NbBuckets: Standard_Integer
+        :rtype: None
+
+        :param NbBuckets: default value is 1
+        :type NbBuckets: Standard_Integer
         :rtype: None
 
         """
-        _TopLoc.TopLoc_MapOfLocation_swiginit(self,_TopLoc.new_TopLoc_MapOfLocation(*args))
-    def Assign(self, *args) -> "TopLoc_MapOfLocation &" :
+        _TopLoc.TopLoc_MapOfLocation_swiginit(self,_TopLoc.new_TopLoc_MapOfLocation(NbBuckets))
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: TopLoc_MapOfLocation &
@@ -824,7 +841,7 @@ class TopLoc_MapOfLocation(OCC.TCollection.TCollection_BasicMap):
         """
         return _TopLoc.TopLoc_MapOfLocation_Assign(self, *args)
 
-    def Set(self, *args) -> "TopLoc_MapOfLocation &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: TopLoc_MapOfLocation &
@@ -833,23 +850,23 @@ class TopLoc_MapOfLocation(OCC.TCollection.TCollection_BasicMap):
         """
         return _TopLoc.TopLoc_MapOfLocation_Set(self, *args)
 
-    def ReSize(self, *args) -> "void" :
+    def ReSize(self, *args):
         """
         :param NbBuckets:
-        :type NbBuckets: int
+        :type NbBuckets: Standard_Integer
         :rtype: None
 
         """
         return _TopLoc.TopLoc_MapOfLocation_ReSize(self, *args)
 
-    def Clear(self, *args) -> "void" :
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _TopLoc.TopLoc_MapOfLocation_Clear(self, *args)
+        return _TopLoc.TopLoc_MapOfLocation_Clear(self)
 
-    def Add(self, *args) -> "Standard_Boolean" :
+    def Add(self, *args):
         """
         :param aKey:
         :type aKey: TopLoc_Location &
@@ -858,7 +875,7 @@ class TopLoc_MapOfLocation(OCC.TCollection.TCollection_BasicMap):
         """
         return _TopLoc.TopLoc_MapOfLocation_Add(self, *args)
 
-    def Contains(self, *args) -> "Standard_Boolean" :
+    def Contains(self, *args):
         """
         :param aKey:
         :type aKey: TopLoc_Location &
@@ -867,7 +884,7 @@ class TopLoc_MapOfLocation(OCC.TCollection.TCollection_BasicMap):
         """
         return _TopLoc.TopLoc_MapOfLocation_Contains(self, *args)
 
-    def Remove(self, *args) -> "Standard_Boolean" :
+    def Remove(self, *args):
         """
         :param aKey:
         :type aKey: TopLoc_Location &
@@ -876,7 +893,7 @@ class TopLoc_MapOfLocation(OCC.TCollection.TCollection_BasicMap):
         """
         return _TopLoc.TopLoc_MapOfLocation_Remove(self, *args)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(TopLoc_MapOfLocation self)"""
         return _TopLoc.TopLoc_MapOfLocation__kill_pointed(self)
 
@@ -912,25 +929,25 @@ class TopLoc_SListNodeOfSListOfItemLocation(OCC.MMgt.MMgt_TShared):
 
         """
         _TopLoc.TopLoc_SListNodeOfSListOfItemLocation_swiginit(self,_TopLoc.new_TopLoc_SListNodeOfSListOfItemLocation(*args))
-    def Tail(self, *args) -> "TopLoc_SListOfItemLocation &" :
+    def Tail(self):
         """
         :rtype: TopLoc_SListOfItemLocation
 
         """
-        return _TopLoc.TopLoc_SListNodeOfSListOfItemLocation_Tail(self, *args)
+        return _TopLoc.TopLoc_SListNodeOfSListOfItemLocation_Tail(self)
 
-    def Value(self, *args) -> "TopLoc_ItemLocation &" :
+    def Value(self):
         """
         :rtype: TopLoc_ItemLocation
 
         """
-        return _TopLoc.TopLoc_SListNodeOfSListOfItemLocation_Value(self, *args)
+        return _TopLoc.TopLoc_SListNodeOfSListOfItemLocation_Value(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(TopLoc_SListNodeOfSListOfItemLocation self)"""
         return _TopLoc.TopLoc_SListNodeOfSListOfItemLocation__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_TopLoc_SListNodeOfSListOfItemLocation" :
+    def GetHandle(self):
         """GetHandle(TopLoc_SListNodeOfSListOfItemLocation self) -> Handle_TopLoc_SListNodeOfSListOfItemLocation"""
         return _TopLoc.TopLoc_SListNodeOfSListOfItemLocation_GetHandle(self)
 
@@ -970,7 +987,7 @@ Handle_TopLoc_SListNodeOfSListOfItemLocation._kill_pointed = new_instancemethod(
 Handle_TopLoc_SListNodeOfSListOfItemLocation_swigregister = _TopLoc.Handle_TopLoc_SListNodeOfSListOfItemLocation_swigregister
 Handle_TopLoc_SListNodeOfSListOfItemLocation_swigregister(Handle_TopLoc_SListNodeOfSListOfItemLocation)
 
-def Handle_TopLoc_SListNodeOfSListOfItemLocation_DownCast(*args) -> "Handle_TopLoc_SListNodeOfSListOfItemLocation const" :
+def Handle_TopLoc_SListNodeOfSListOfItemLocation_DownCast(*args):
   return _TopLoc.Handle_TopLoc_SListNodeOfSListOfItemLocation_DownCast(*args)
 Handle_TopLoc_SListNodeOfSListOfItemLocation_DownCast = _TopLoc.Handle_TopLoc_SListNodeOfSListOfItemLocation_DownCast
 
@@ -993,7 +1010,7 @@ class TopLoc_SListOfItemLocation(object):
 
         """
         _TopLoc.TopLoc_SListOfItemLocation_swiginit(self,_TopLoc.new_TopLoc_SListOfItemLocation(*args))
-    def Assign(self, *args) -> "TopLoc_SListOfItemLocation &" :
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: TopLoc_SListOfItemLocation &
@@ -1002,7 +1019,7 @@ class TopLoc_SListOfItemLocation(object):
         """
         return _TopLoc.TopLoc_SListOfItemLocation_Assign(self, *args)
 
-    def Set(self, *args) -> "TopLoc_SListOfItemLocation &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: TopLoc_SListOfItemLocation &
@@ -1011,35 +1028,35 @@ class TopLoc_SListOfItemLocation(object):
         """
         return _TopLoc.TopLoc_SListOfItemLocation_Set(self, *args)
 
-    def IsEmpty(self, *args) -> "Standard_Boolean" :
+    def IsEmpty(self):
         """
         :rtype: bool
 
         """
-        return _TopLoc.TopLoc_SListOfItemLocation_IsEmpty(self, *args)
+        return _TopLoc.TopLoc_SListOfItemLocation_IsEmpty(self)
 
-    def Clear(self, *args) -> "void" :
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _TopLoc.TopLoc_SListOfItemLocation_Clear(self, *args)
+        return _TopLoc.TopLoc_SListOfItemLocation_Clear(self)
 
-    def Value(self, *args) -> "TopLoc_ItemLocation const &" :
+    def Value(self):
         """
         :rtype: TopLoc_ItemLocation
 
         """
-        return _TopLoc.TopLoc_SListOfItemLocation_Value(self, *args)
+        return _TopLoc.TopLoc_SListOfItemLocation_Value(self)
 
-    def ChangeValue(self, *args) -> "TopLoc_ItemLocation &" :
+    def ChangeValue(self):
         """
         :rtype: TopLoc_ItemLocation
 
         """
-        return _TopLoc.TopLoc_SListOfItemLocation_ChangeValue(self, *args)
+        return _TopLoc.TopLoc_SListOfItemLocation_ChangeValue(self)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param anItem:
         :type anItem: TopLoc_ItemLocation &
@@ -1048,21 +1065,21 @@ class TopLoc_SListOfItemLocation(object):
         """
         return _TopLoc.TopLoc_SListOfItemLocation_SetValue(self, *args)
 
-    def Tail(self, *args) -> "TopLoc_SListOfItemLocation const &" :
+    def Tail(self):
         """
         :rtype: TopLoc_SListOfItemLocation
 
         """
-        return _TopLoc.TopLoc_SListOfItemLocation_Tail(self, *args)
+        return _TopLoc.TopLoc_SListOfItemLocation_Tail(self)
 
-    def ChangeTail(self, *args) -> "TopLoc_SListOfItemLocation &" :
+    def ChangeTail(self):
         """
         :rtype: TopLoc_SListOfItemLocation
 
         """
-        return _TopLoc.TopLoc_SListOfItemLocation_ChangeTail(self, *args)
+        return _TopLoc.TopLoc_SListOfItemLocation_ChangeTail(self)
 
-    def SetTail(self, *args) -> "void" :
+    def SetTail(self, *args):
         """
         :param aList:
         :type aList: TopLoc_SListOfItemLocation &
@@ -1071,7 +1088,7 @@ class TopLoc_SListOfItemLocation(object):
         """
         return _TopLoc.TopLoc_SListOfItemLocation_SetTail(self, *args)
 
-    def Construct(self, *args) -> "void" :
+    def Construct(self, *args):
         """
         :param anItem:
         :type anItem: TopLoc_ItemLocation &
@@ -1080,7 +1097,7 @@ class TopLoc_SListOfItemLocation(object):
         """
         return _TopLoc.TopLoc_SListOfItemLocation_Construct(self, *args)
 
-    def Constructed(self, *args) -> "TopLoc_SListOfItemLocation" :
+    def Constructed(self, *args):
         """
         :param anItem:
         :type anItem: TopLoc_ItemLocation &
@@ -1089,14 +1106,14 @@ class TopLoc_SListOfItemLocation(object):
         """
         return _TopLoc.TopLoc_SListOfItemLocation_Constructed(self, *args)
 
-    def ToTail(self, *args) -> "void" :
+    def ToTail(self):
         """
         :rtype: None
 
         """
-        return _TopLoc.TopLoc_SListOfItemLocation_ToTail(self, *args)
+        return _TopLoc.TopLoc_SListOfItemLocation_ToTail(self)
 
-    def Initialize(self, *args) -> "void" :
+    def Initialize(self, *args):
         """
         :param aList:
         :type aList: TopLoc_SListOfItemLocation &
@@ -1105,19 +1122,19 @@ class TopLoc_SListOfItemLocation(object):
         """
         return _TopLoc.TopLoc_SListOfItemLocation_Initialize(self, *args)
 
-    def More(self, *args) -> "Standard_Boolean" :
+    def More(self):
         """
         :rtype: bool
 
         """
-        return _TopLoc.TopLoc_SListOfItemLocation_More(self, *args)
+        return _TopLoc.TopLoc_SListOfItemLocation_More(self)
 
-    def Next(self, *args) -> "void" :
+    def Next(self):
         """
         :rtype: None
 
         """
-        return _TopLoc.TopLoc_SListOfItemLocation_Next(self, *args)
+        return _TopLoc.TopLoc_SListOfItemLocation_Next(self)
 
     def __del__(self):
     	try:
@@ -1160,18 +1177,18 @@ class TopLoc_StdMapNodeOfMapOfLocation(OCC.TCollection.TCollection_MapNode):
 
         """
         _TopLoc.TopLoc_StdMapNodeOfMapOfLocation_swiginit(self,_TopLoc.new_TopLoc_StdMapNodeOfMapOfLocation(*args))
-    def Key(self, *args) -> "TopLoc_Location &" :
+    def Key(self):
         """
         :rtype: TopLoc_Location
 
         """
-        return _TopLoc.TopLoc_StdMapNodeOfMapOfLocation_Key(self, *args)
+        return _TopLoc.TopLoc_StdMapNodeOfMapOfLocation_Key(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(TopLoc_StdMapNodeOfMapOfLocation self)"""
         return _TopLoc.TopLoc_StdMapNodeOfMapOfLocation__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_TopLoc_StdMapNodeOfMapOfLocation" :
+    def GetHandle(self):
         """GetHandle(TopLoc_StdMapNodeOfMapOfLocation self) -> Handle_TopLoc_StdMapNodeOfMapOfLocation"""
         return _TopLoc.TopLoc_StdMapNodeOfMapOfLocation_GetHandle(self)
 
@@ -1210,7 +1227,7 @@ Handle_TopLoc_StdMapNodeOfMapOfLocation._kill_pointed = new_instancemethod(_TopL
 Handle_TopLoc_StdMapNodeOfMapOfLocation_swigregister = _TopLoc.Handle_TopLoc_StdMapNodeOfMapOfLocation_swigregister
 Handle_TopLoc_StdMapNodeOfMapOfLocation_swigregister(Handle_TopLoc_StdMapNodeOfMapOfLocation)
 
-def Handle_TopLoc_StdMapNodeOfMapOfLocation_DownCast(*args) -> "Handle_TopLoc_StdMapNodeOfMapOfLocation const" :
+def Handle_TopLoc_StdMapNodeOfMapOfLocation_DownCast(*args):
   return _TopLoc.Handle_TopLoc_StdMapNodeOfMapOfLocation_DownCast(*args)
 Handle_TopLoc_StdMapNodeOfMapOfLocation_DownCast = _TopLoc.Handle_TopLoc_StdMapNodeOfMapOfLocation_DownCast
 

@@ -164,7 +164,7 @@ class BOPDS_CommonBlock(OCC.MMgt.MMgt_TShared):
 
         """
         _BOPDS.BOPDS_CommonBlock_swiginit(self,_BOPDS.new_BOPDS_CommonBlock(*args))
-    def AddPaveBlock(self, *args) -> "void" :
+    def AddPaveBlock(self, *args):
         """
         * Modifier Adds the pave block <aPB> to the list of pave blocks of the common block
 
@@ -175,7 +175,7 @@ class BOPDS_CommonBlock(OCC.MMgt.MMgt_TShared):
         """
         return _BOPDS.BOPDS_CommonBlock_AddPaveBlock(self, *args)
 
-    def AddPaveBlocks(self, *args) -> "void" :
+    def AddPaveBlocks(self, *args):
         """
         * Modifier Adds the list of pave blocks <aLPB> to the list of pave blocks of the common block
 
@@ -186,18 +186,18 @@ class BOPDS_CommonBlock(OCC.MMgt.MMgt_TShared):
         """
         return _BOPDS.BOPDS_CommonBlock_AddPaveBlocks(self, *args)
 
-    def AddFace(self, *args) -> "void" :
+    def AddFace(self, *args):
         """
         * Modifier Adds the index of the face <aF> to the list of indices of faces of the common block
 
         :param aF:
-        :type aF: int
+        :type aF: Standard_Integer
         :rtype: None
 
         """
         return _BOPDS.BOPDS_CommonBlock_AddFace(self, *args)
 
-    def AddFaces(self, *args) -> "void" :
+    def AddFaces(self, *args):
         """
         * Modifier Adds the list of indices of faces <aLF> to the list of indices of faces of the common block
 
@@ -208,67 +208,67 @@ class BOPDS_CommonBlock(OCC.MMgt.MMgt_TShared):
         """
         return _BOPDS.BOPDS_CommonBlock_AddFaces(self, *args)
 
-    def PaveBlocks(self, *args) -> "BOPDS_ListOfPaveBlock const &" :
+    def PaveBlocks(self):
         """
         * Selector Returns the list of pave blocks of the common block
 
         :rtype: BOPDS_ListOfPaveBlock
 
         """
-        return _BOPDS.BOPDS_CommonBlock_PaveBlocks(self, *args)
+        return _BOPDS.BOPDS_CommonBlock_PaveBlocks(self)
 
-    def Faces(self, *args) -> "BOPCol_ListOfInteger const &" :
+    def Faces(self):
         """
         * Selector Returns the list of indices of faces of the common block
 
         :rtype: BOPCol_ListOfInteger
 
         """
-        return _BOPDS.BOPDS_CommonBlock_Faces(self, *args)
+        return _BOPDS.BOPDS_CommonBlock_Faces(self)
 
-    def PaveBlock1(self, *args) -> "Handle_BOPDS_PaveBlock const &" :
+    def PaveBlock1(self):
         """
         * Selector Returns the first pave block of the common block
 
         :rtype: Handle_BOPDS_PaveBlock
 
         """
-        return _BOPDS.BOPDS_CommonBlock_PaveBlock1(self, *args)
+        return _BOPDS.BOPDS_CommonBlock_PaveBlock1(self)
 
-    def PaveBlockOnEdge(self, *args) -> "Handle_BOPDS_PaveBlock &" :
+    def PaveBlockOnEdge(self, *args):
         """
         * Selector Returns the pave block that belongs to the edge with index <theIx>
 
         :param theIndex:
-        :type theIndex: int
+        :type theIndex: Standard_Integer
         :rtype: Handle_BOPDS_PaveBlock
 
         """
         return _BOPDS.BOPDS_CommonBlock_PaveBlockOnEdge(self, *args)
 
-    def IsPaveBlockOnFace(self, *args) -> "Standard_Boolean" :
+    def IsPaveBlockOnFace(self, *args):
         """
         * Query Returns true if the common block contains a pave block that belongs to the face with index <theIx>
 
         :param theIndex:
-        :type theIndex: int
+        :type theIndex: Standard_Integer
         :rtype: bool
 
         """
         return _BOPDS.BOPDS_CommonBlock_IsPaveBlockOnFace(self, *args)
 
-    def IsPaveBlockOnEdge(self, *args) -> "Standard_Boolean" :
+    def IsPaveBlockOnEdge(self, *args):
         """
         * Query Returns true if the common block contains a pave block that belongs to the edge with index <theIx>
 
         :param theIndex:
-        :type theIndex: int
+        :type theIndex: Standard_Integer
         :rtype: bool
 
         """
         return _BOPDS.BOPDS_CommonBlock_IsPaveBlockOnEdge(self, *args)
 
-    def Contains(self, *args) -> "Standard_Boolean" :
+    def Contains(self, *args):
         """
         * Query Returns true if the common block contains a pave block that is equal to <thePB>
 
@@ -279,44 +279,44 @@ class BOPDS_CommonBlock(OCC.MMgt.MMgt_TShared):
         * Query Returns true if the common block contains the face with index equal to <theF>
 
         :param theF:
-        :type theF: int
+        :type theF: Standard_Integer
         :rtype: bool
 
         """
         return _BOPDS.BOPDS_CommonBlock_Contains(self, *args)
 
-    def SetEdge(self, *args) -> "void" :
+    def SetEdge(self, *args):
         """
         * Modifier Assign the index <theEdge> as the edge index to all pave blocks of the common block
 
         :param theEdge:
-        :type theEdge: int
+        :type theEdge: Standard_Integer
         :rtype: None
 
         """
         return _BOPDS.BOPDS_CommonBlock_SetEdge(self, *args)
 
-    def Edge(self, *args) -> "Standard_Integer" :
+    def Edge(self):
         """
         * Selector Returns the index of the edge of all pave blocks of the common block
 
         :rtype: int
 
         """
-        return _BOPDS.BOPDS_CommonBlock_Edge(self, *args)
+        return _BOPDS.BOPDS_CommonBlock_Edge(self)
 
-    def Dump(self, *args) -> "void" :
+    def Dump(self):
         """
         :rtype: None
 
         """
-        return _BOPDS.BOPDS_CommonBlock_Dump(self, *args)
+        return _BOPDS.BOPDS_CommonBlock_Dump(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(BOPDS_CommonBlock self)"""
         return _BOPDS.BOPDS_CommonBlock__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_BOPDS_CommonBlock" :
+    def GetHandle(self):
         """GetHandle(BOPDS_CommonBlock self) -> Handle_BOPDS_CommonBlock"""
         return _BOPDS.BOPDS_CommonBlock_GetHandle(self)
 
@@ -368,7 +368,7 @@ Handle_BOPDS_CommonBlock._kill_pointed = new_instancemethod(_BOPDS.Handle_BOPDS_
 Handle_BOPDS_CommonBlock_swigregister = _BOPDS.Handle_BOPDS_CommonBlock_swigregister
 Handle_BOPDS_CommonBlock_swigregister(Handle_BOPDS_CommonBlock)
 
-def Handle_BOPDS_CommonBlock_DownCast(*args) -> "Handle_BOPDS_CommonBlock const" :
+def Handle_BOPDS_CommonBlock_DownCast(*args):
   return _BOPDS.Handle_BOPDS_CommonBlock_DownCast(*args)
 Handle_BOPDS_CommonBlock_DownCast = _BOPDS.Handle_BOPDS_CommonBlock_DownCast
 
@@ -391,47 +391,47 @@ class BOPDS_CoupleOfPaveBlocks(object):
 
         """
         _BOPDS.BOPDS_CoupleOfPaveBlocks_swiginit(self,_BOPDS.new_BOPDS_CoupleOfPaveBlocks(*args))
-    def SetIndex(self, *args) -> "void" :
+    def SetIndex(self, *args):
         """
         * /** * Sets an index * @param theIndex * index */
 
         :param theIndex:
-        :type theIndex: int
+        :type theIndex: Standard_Integer
         :rtype: None
 
         """
         return _BOPDS.BOPDS_CoupleOfPaveBlocks_SetIndex(self, *args)
 
-    def Index(self, *args) -> "Standard_Integer" :
+    def Index(self):
         """
         * /** * Returns the index * returns * index */
 
         :rtype: int
 
         """
-        return _BOPDS.BOPDS_CoupleOfPaveBlocks_Index(self, *args)
+        return _BOPDS.BOPDS_CoupleOfPaveBlocks_Index(self)
 
-    def SetIndexInterf(self, *args) -> "void" :
+    def SetIndexInterf(self, *args):
         """
         * /** * Sets an index of an interference * @param theIndex * index of an interference */
 
         :param theIndex:
-        :type theIndex: int
+        :type theIndex: Standard_Integer
         :rtype: None
 
         """
         return _BOPDS.BOPDS_CoupleOfPaveBlocks_SetIndexInterf(self, *args)
 
-    def IndexInterf(self, *args) -> "Standard_Integer" :
+    def IndexInterf(self):
         """
         * /** * Returns the index of an interference * returns * index of an interference */
 
         :rtype: int
 
         """
-        return _BOPDS.BOPDS_CoupleOfPaveBlocks_IndexInterf(self, *args)
+        return _BOPDS.BOPDS_CoupleOfPaveBlocks_IndexInterf(self)
 
-    def SetPaveBlocks(self, *args) -> "void" :
+    def SetPaveBlocks(self, *args):
         """
         * /** * Sets pave blocks * @param thePB1 * first pave block * @param thePB2 * secondt pave block */
 
@@ -444,7 +444,7 @@ class BOPDS_CoupleOfPaveBlocks(object):
         """
         return _BOPDS.BOPDS_CoupleOfPaveBlocks_SetPaveBlocks(self, *args)
 
-    def PaveBlocks(self, *args) -> "void" :
+    def PaveBlocks(self, *args):
         """
         * /** * Returns pave blocks * @param thePB1 * the first pave block * @param thePB2 * the second pave block */
 
@@ -457,7 +457,7 @@ class BOPDS_CoupleOfPaveBlocks(object):
         """
         return _BOPDS.BOPDS_CoupleOfPaveBlocks_PaveBlocks(self, *args)
 
-    def SetPaveBlock1(self, *args) -> "void" :
+    def SetPaveBlock1(self, *args):
         """
         * /** * Sets the first pave block * @param thePB * the first pave block */
 
@@ -468,16 +468,16 @@ class BOPDS_CoupleOfPaveBlocks(object):
         """
         return _BOPDS.BOPDS_CoupleOfPaveBlocks_SetPaveBlock1(self, *args)
 
-    def PaveBlock1(self, *args) -> "Handle_BOPDS_PaveBlock const &" :
+    def PaveBlock1(self):
         """
         * /** * Returns the first pave block * returns * the first pave block */
 
         :rtype: Handle_BOPDS_PaveBlock
 
         """
-        return _BOPDS.BOPDS_CoupleOfPaveBlocks_PaveBlock1(self, *args)
+        return _BOPDS.BOPDS_CoupleOfPaveBlocks_PaveBlock1(self)
 
-    def SetPaveBlock2(self, *args) -> "void" :
+    def SetPaveBlock2(self, *args):
         """
         * /** * Sets the second pave block * @param thePB * the second pave block */
 
@@ -488,14 +488,14 @@ class BOPDS_CoupleOfPaveBlocks(object):
         """
         return _BOPDS.BOPDS_CoupleOfPaveBlocks_SetPaveBlock2(self, *args)
 
-    def PaveBlock2(self, *args) -> "Handle_BOPDS_PaveBlock const &" :
+    def PaveBlock2(self):
         """
         * /** * Returns the second pave block * returns * the second pave block */
 
         :rtype: Handle_BOPDS_PaveBlock
 
         """
-        return _BOPDS.BOPDS_CoupleOfPaveBlocks_PaveBlock2(self, *args)
+        return _BOPDS.BOPDS_CoupleOfPaveBlocks_PaveBlock2(self)
 
     def __del__(self):
     	try:
@@ -536,7 +536,7 @@ class BOPDS_Curve(object):
 
         """
         _BOPDS.BOPDS_Curve_swiginit(self,_BOPDS.new_BOPDS_Curve(*args))
-    def SetCurve(self, *args) -> "void" :
+    def SetCurve(self, *args):
         """
         * Modifier Sets the curve <theC>
 
@@ -547,16 +547,16 @@ class BOPDS_Curve(object):
         """
         return _BOPDS.BOPDS_Curve_SetCurve(self, *args)
 
-    def Curve(self, *args) -> "IntTools_Curve const &" :
+    def Curve(self):
         """
         * Selector Returns the curve
 
         :rtype: IntTools_Curve
 
         """
-        return _BOPDS.BOPDS_Curve_Curve(self, *args)
+        return _BOPDS.BOPDS_Curve_Curve(self)
 
-    def SetBox(self, *args) -> "void" :
+    def SetBox(self, *args):
         """
         * Modifier Sets the bounding box <theBox> of the curve
 
@@ -567,25 +567,25 @@ class BOPDS_Curve(object):
         """
         return _BOPDS.BOPDS_Curve_SetBox(self, *args)
 
-    def Box(self, *args) -> "Bnd_Box const &" :
+    def Box(self):
         """
         * Selector Returns the bounding box of the curve
 
         :rtype: Bnd_Box
 
         """
-        return _BOPDS.BOPDS_Curve_Box(self, *args)
+        return _BOPDS.BOPDS_Curve_Box(self)
 
-    def ChangeBox(self, *args) -> "Bnd_Box &" :
+    def ChangeBox(self):
         """
         * Selector/Modifier Returns the bounding box of the curve
 
         :rtype: Bnd_Box
 
         """
-        return _BOPDS.BOPDS_Curve_ChangeBox(self, *args)
+        return _BOPDS.BOPDS_Curve_ChangeBox(self)
 
-    def SetPaveBlocks(self, *args) -> "void" :
+    def SetPaveBlocks(self, *args):
         """
         :param theLPB:
         :type theLPB: BOPDS_ListOfPaveBlock &
@@ -594,68 +594,68 @@ class BOPDS_Curve(object):
         """
         return _BOPDS.BOPDS_Curve_SetPaveBlocks(self, *args)
 
-    def PaveBlocks(self, *args) -> "BOPDS_ListOfPaveBlock const &" :
+    def PaveBlocks(self):
         """
         * Selector Returns the list of pave blocks of the curve
 
         :rtype: BOPDS_ListOfPaveBlock
 
         """
-        return _BOPDS.BOPDS_Curve_PaveBlocks(self, *args)
+        return _BOPDS.BOPDS_Curve_PaveBlocks(self)
 
-    def ChangePaveBlocks(self, *args) -> "BOPDS_ListOfPaveBlock &" :
+    def ChangePaveBlocks(self):
         """
         * Selector/Modifier Returns the list of pave blocks of the curve
 
         :rtype: BOPDS_ListOfPaveBlock
 
         """
-        return _BOPDS.BOPDS_Curve_ChangePaveBlocks(self, *args)
+        return _BOPDS.BOPDS_Curve_ChangePaveBlocks(self)
 
-    def InitPaveBlock1(self, *args) -> "void" :
+    def InitPaveBlock1(self):
         """
         * Creates initial pave block of the curve
 
         :rtype: None
 
         """
-        return _BOPDS.BOPDS_Curve_InitPaveBlock1(self, *args)
+        return _BOPDS.BOPDS_Curve_InitPaveBlock1(self)
 
-    def ChangePaveBlock1(self, *args) -> "Handle_BOPDS_PaveBlock &" :
+    def ChangePaveBlock1(self):
         """
         * Selector/Modifier Returns initial pave block of the curve
 
         :rtype: Handle_BOPDS_PaveBlock
 
         """
-        return _BOPDS.BOPDS_Curve_ChangePaveBlock1(self, *args)
+        return _BOPDS.BOPDS_Curve_ChangePaveBlock1(self)
 
-    def TechnoVertices(self, *args) -> "BOPCol_ListOfInteger const &" :
+    def TechnoVertices(self):
         """
         * Selector Returns list of indices of technologic vertices of the curve
 
         :rtype: BOPCol_ListOfInteger
 
         """
-        return _BOPDS.BOPDS_Curve_TechnoVertices(self, *args)
+        return _BOPDS.BOPDS_Curve_TechnoVertices(self)
 
-    def ChangeTechnoVertices(self, *args) -> "BOPCol_ListOfInteger &" :
+    def ChangeTechnoVertices(self):
         """
         * Selector/Modifier Returns list of indices of technologic vertices of the curve
 
         :rtype: BOPCol_ListOfInteger
 
         """
-        return _BOPDS.BOPDS_Curve_ChangeTechnoVertices(self, *args)
+        return _BOPDS.BOPDS_Curve_ChangeTechnoVertices(self)
 
-    def HasEdge(self, *args) -> "Standard_Boolean" :
+    def HasEdge(self):
         """
         * Query Returns true if at least one pave block of the curve has edge
 
         :rtype: bool
 
         """
-        return _BOPDS.BOPDS_Curve_HasEdge(self, *args)
+        return _BOPDS.BOPDS_Curve_HasEdge(self)
 
     def __del__(self):
     	try:
@@ -699,25 +699,25 @@ class BOPDS_DS(object):
 
         """
         _BOPDS.BOPDS_DS_swiginit(self,_BOPDS.new_BOPDS_DS(*args))
-    def Clear(self, *args) -> "void" :
+    def Clear(self):
         """
         * Clears the contents
 
         :rtype: None
 
         """
-        return _BOPDS.BOPDS_DS_Clear(self, *args)
+        return _BOPDS.BOPDS_DS_Clear(self)
 
-    def Allocator(self, *args) -> "BOPCol_BaseAllocator const &" :
+    def Allocator(self):
         """
         * Selector
 
         :rtype: BOPCol_BaseAllocator
 
         """
-        return _BOPDS.BOPDS_DS_Allocator(self, *args)
+        return _BOPDS.BOPDS_DS_Allocator(self)
 
-    def SetArguments(self, *args) -> "void" :
+    def SetArguments(self, *args):
         """
         * Modifier Sets the arguments [theLS] of an operation
 
@@ -728,85 +728,85 @@ class BOPDS_DS(object):
         """
         return _BOPDS.BOPDS_DS_SetArguments(self, *args)
 
-    def Arguments(self, *args) -> "BOPCol_ListOfShape const &" :
+    def Arguments(self):
         """
         * Selector Returns the arguments of an operation
 
         :rtype: BOPCol_ListOfShape
 
         """
-        return _BOPDS.BOPDS_DS_Arguments(self, *args)
+        return _BOPDS.BOPDS_DS_Arguments(self)
 
-    def Init(self, *args) -> "void" :
+    def Init(self):
         """
         * Initializes the data structure for the arguments
 
         :rtype: None
 
         """
-        return _BOPDS.BOPDS_DS_Init(self, *args)
+        return _BOPDS.BOPDS_DS_Init(self)
 
-    def NbShapes(self, *args) -> "Standard_Integer" :
+    def NbShapes(self):
         """
         * Selector Returns the total number of shapes stored
 
         :rtype: int
 
         """
-        return _BOPDS.BOPDS_DS_NbShapes(self, *args)
+        return _BOPDS.BOPDS_DS_NbShapes(self)
 
-    def NbSourceShapes(self, *args) -> "Standard_Integer" :
+    def NbSourceShapes(self):
         """
         * Selector Returns the total number of source shapes stored
 
         :rtype: int
 
         """
-        return _BOPDS.BOPDS_DS_NbSourceShapes(self, *args)
+        return _BOPDS.BOPDS_DS_NbSourceShapes(self)
 
-    def NbRanges(self, *args) -> "Standard_Integer" :
+    def NbRanges(self):
         """
         * Selector Returns the number of index ranges
 
         :rtype: int
 
         """
-        return _BOPDS.BOPDS_DS_NbRanges(self, *args)
+        return _BOPDS.BOPDS_DS_NbRanges(self)
 
-    def Range(self, *args) -> "BOPDS_IndexRange const &" :
+    def Range(self, *args):
         """
         * Selector Returns the index range 'i'
 
         :param theIndex:
-        :type theIndex: int
+        :type theIndex: Standard_Integer
         :rtype: BOPDS_IndexRange
 
         """
         return _BOPDS.BOPDS_DS_Range(self, *args)
 
-    def Rank(self, *args) -> "Standard_Integer" :
+    def Rank(self, *args):
         """
         * Selector Returns the rank of the shape of index 'i'
 
         :param theIndex:
-        :type theIndex: int
+        :type theIndex: Standard_Integer
         :rtype: int
 
         """
         return _BOPDS.BOPDS_DS_Rank(self, *args)
 
-    def IsNewShape(self, *args) -> "Standard_Boolean" :
+    def IsNewShape(self, *args):
         """
         * Returns true if the shape of index 'i' is not the source shape/sub-shape
 
         :param theIndex:
-        :type theIndex: int
+        :type theIndex: Standard_Integer
         :rtype: bool
 
         """
         return _BOPDS.BOPDS_DS_IsNewShape(self, *args)
 
-    def Append(self, *args) -> "Standard_Integer" :
+    def Append(self, *args):
         """
         * Modifier Appends the information about the shape [theSI] to the data structure Returns the index of theSI in the data structure
 
@@ -823,40 +823,40 @@ class BOPDS_DS(object):
         """
         return _BOPDS.BOPDS_DS_Append(self, *args)
 
-    def ShapeInfo(self, *args) -> "BOPDS_ShapeInfo const &" :
+    def ShapeInfo(self, *args):
         """
         * Selector Returns the information about the shape with index theIndex
 
         :param theIndex:
-        :type theIndex: int
+        :type theIndex: Standard_Integer
         :rtype: BOPDS_ShapeInfo
 
         """
         return _BOPDS.BOPDS_DS_ShapeInfo(self, *args)
 
-    def ChangeShapeInfo(self, *args) -> "BOPDS_ShapeInfo &" :
+    def ChangeShapeInfo(self, *args):
         """
         * Selector/Modifier Returns the information about the shape with index theIndex
 
         :param theIndex:
-        :type theIndex: int
+        :type theIndex: Standard_Integer
         :rtype: BOPDS_ShapeInfo
 
         """
         return _BOPDS.BOPDS_DS_ChangeShapeInfo(self, *args)
 
-    def Shape(self, *args) -> "TopoDS_Shape const" :
+    def Shape(self, *args):
         """
         * Selector Returns the shape with index theIndex
 
         :param theIndex:
-        :type theIndex: int
+        :type theIndex: Standard_Integer
         :rtype: TopoDS_Shape
 
         """
         return _BOPDS.BOPDS_DS_Shape(self, *args)
 
-    def Index(self, *args) -> "Standard_Integer" :
+    def Index(self, *args):
         """
         * Selector Returns the index of the shape theS
 
@@ -867,67 +867,67 @@ class BOPDS_DS(object):
         """
         return _BOPDS.BOPDS_DS_Index(self, *args)
 
-    def PaveBlocksPool(self, *args) -> "BOPDS_VectorOfListOfPaveBlock const &" :
+    def PaveBlocksPool(self):
         """
         * Selector Returns the information about pave blocks on source edges
 
         :rtype: BOPDS_VectorOfListOfPaveBlock
 
         """
-        return _BOPDS.BOPDS_DS_PaveBlocksPool(self, *args)
+        return _BOPDS.BOPDS_DS_PaveBlocksPool(self)
 
-    def ChangePaveBlocksPool(self, *args) -> "BOPDS_VectorOfListOfPaveBlock &" :
+    def ChangePaveBlocksPool(self):
         """
         * Selector/Modifier Returns the information about pave blocks on source edges
 
         :rtype: BOPDS_VectorOfListOfPaveBlock
 
         """
-        return _BOPDS.BOPDS_DS_ChangePaveBlocksPool(self, *args)
+        return _BOPDS.BOPDS_DS_ChangePaveBlocksPool(self)
 
-    def HasPaveBlocks(self, *args) -> "Standard_Boolean" :
+    def HasPaveBlocks(self, *args):
         """
         * Query Returns true if the shape with index theIndex has the information about pave blocks
 
         :param theIndex:
-        :type theIndex: int
+        :type theIndex: Standard_Integer
         :rtype: bool
 
         """
         return _BOPDS.BOPDS_DS_HasPaveBlocks(self, *args)
 
-    def PaveBlocks(self, *args) -> "BOPDS_ListOfPaveBlock const &" :
+    def PaveBlocks(self, *args):
         """
         * Selector Returns the pave blocks for the shape with index theIndex
 
         :param theIndex:
-        :type theIndex: int
+        :type theIndex: Standard_Integer
         :rtype: BOPDS_ListOfPaveBlock
 
         """
         return _BOPDS.BOPDS_DS_PaveBlocks(self, *args)
 
-    def ChangePaveBlocks(self, *args) -> "BOPDS_ListOfPaveBlock &" :
+    def ChangePaveBlocks(self, *args):
         """
         * Selector/Modifier Returns the pave blocks for the shape with index theIndex
 
         :param theIndex:
-        :type theIndex: int
+        :type theIndex: Standard_Integer
         :rtype: BOPDS_ListOfPaveBlock
 
         """
         return _BOPDS.BOPDS_DS_ChangePaveBlocks(self, *args)
 
-    def UpdatePaveBlocks(self, *args) -> "void" :
+    def UpdatePaveBlocks(self):
         """
         * Update the pave blocks for the all shapes in data structure
 
         :rtype: None
 
         """
-        return _BOPDS.BOPDS_DS_UpdatePaveBlocks(self, *args)
+        return _BOPDS.BOPDS_DS_UpdatePaveBlocks(self)
 
-    def UpdatePaveBlock(self, *args) -> "void" :
+    def UpdatePaveBlock(self, *args):
         """
         * Update the pave block thePB
 
@@ -938,7 +938,7 @@ class BOPDS_DS(object):
         """
         return _BOPDS.BOPDS_DS_UpdatePaveBlock(self, *args)
 
-    def UpdateCommonBlock(self, *args) -> "void" :
+    def UpdateCommonBlock(self, *args):
         """
         * Update the common block theCB
 
@@ -949,7 +949,7 @@ class BOPDS_DS(object):
         """
         return _BOPDS.BOPDS_DS_UpdateCommonBlock(self, *args)
 
-    def IsCommonBlock(self, *args) -> "Standard_Boolean" :
+    def IsCommonBlock(self, *args):
         """
         * Query Returns true if the pave block is common block
 
@@ -960,7 +960,7 @@ class BOPDS_DS(object):
         """
         return _BOPDS.BOPDS_DS_IsCommonBlock(self, *args)
 
-    def CommonBlock(self, *args) -> "Handle_BOPDS_CommonBlock" :
+    def CommonBlock(self, *args):
         """
         * Selector Returns the common block
 
@@ -971,7 +971,7 @@ class BOPDS_DS(object):
         """
         return _BOPDS.BOPDS_DS_CommonBlock(self, *args)
 
-    def SetCommonBlock(self, *args) -> "void" :
+    def SetCommonBlock(self, *args):
         """
         * Modifier Sets the common block <theCB>
 
@@ -984,7 +984,7 @@ class BOPDS_DS(object):
         """
         return _BOPDS.BOPDS_DS_SetCommonBlock(self, *args)
 
-    def RealPaveBlock(self, *args) -> "Handle_BOPDS_PaveBlock" :
+    def RealPaveBlock(self, *args):
         """
         * Selector Returns the real first pave block
 
@@ -995,7 +995,7 @@ class BOPDS_DS(object):
         """
         return _BOPDS.BOPDS_DS_RealPaveBlock(self, *args)
 
-    def IsCommonBlockOnEdge(self, *args) -> "Standard_Boolean" :
+    def IsCommonBlockOnEdge(self, *args):
         """
         * Query Returns true if common block contains more then one pave block
 
@@ -1006,76 +1006,76 @@ class BOPDS_DS(object):
         """
         return _BOPDS.BOPDS_DS_IsCommonBlockOnEdge(self, *args)
 
-    def FaceInfoPool(self, *args) -> "BOPDS_VectorOfFaceInfo const &" :
+    def FaceInfoPool(self):
         """
         * Selector Returns the information about state of faces
 
         :rtype: BOPDS_VectorOfFaceInfo
 
         """
-        return _BOPDS.BOPDS_DS_FaceInfoPool(self, *args)
+        return _BOPDS.BOPDS_DS_FaceInfoPool(self)
 
-    def HasFaceInfo(self, *args) -> "Standard_Boolean" :
+    def HasFaceInfo(self, *args):
         """
         * Query Returns true if the shape with index theIndex has the information about state of face
 
         :param theIndex:
-        :type theIndex: int
+        :type theIndex: Standard_Integer
         :rtype: bool
 
         """
         return _BOPDS.BOPDS_DS_HasFaceInfo(self, *args)
 
-    def FaceInfo(self, *args) -> "BOPDS_FaceInfo const &" :
+    def FaceInfo(self, *args):
         """
         * Selector Returns the state of face with index theIndex
 
         :param theIndex:
-        :type theIndex: int
+        :type theIndex: Standard_Integer
         :rtype: BOPDS_FaceInfo
 
         """
         return _BOPDS.BOPDS_DS_FaceInfo(self, *args)
 
-    def ChangeFaceInfo(self, *args) -> "BOPDS_FaceInfo &" :
+    def ChangeFaceInfo(self, *args):
         """
         * Selector/Modifier Returns the state of face with index theIndex
 
         :param theIndex:
-        :type theIndex: int
+        :type theIndex: Standard_Integer
         :rtype: BOPDS_FaceInfo
 
         """
         return _BOPDS.BOPDS_DS_ChangeFaceInfo(self, *args)
 
-    def UpdateFaceInfoIn(self, *args) -> "void" :
+    def UpdateFaceInfoIn(self, *args):
         """
         * Update the state In of face with index theIndex
 
         :param theIndex:
-        :type theIndex: int
+        :type theIndex: Standard_Integer
         :rtype: None
 
         """
         return _BOPDS.BOPDS_DS_UpdateFaceInfoIn(self, *args)
 
-    def UpdateFaceInfoOn(self, *args) -> "void" :
+    def UpdateFaceInfoOn(self, *args):
         """
         * Update the state On of face with index theIndex
 
         :param theIndex:
-        :type theIndex: int
+        :type theIndex: Standard_Integer
         :rtype: None
 
         """
         return _BOPDS.BOPDS_DS_UpdateFaceInfoOn(self, *args)
 
-    def FaceInfoOn(self, *args) -> "void" :
+    def FaceInfoOn(self, *args):
         """
         * Selector Returns the state On [theMPB,theMVP] of face with index theIndex
 
         :param theIndex:
-        :type theIndex: int
+        :type theIndex: Standard_Integer
         :param theMPB:
         :type theMPB: BOPDS_IndexedMapOfPaveBlock &
         :param theMVP:
@@ -1085,12 +1085,12 @@ class BOPDS_DS(object):
         """
         return _BOPDS.BOPDS_DS_FaceInfoOn(self, *args)
 
-    def FaceInfoIn(self, *args) -> "void" :
+    def FaceInfoIn(self, *args):
         """
         * Selector Returns the state In [theMPB,theMVP] of face with index theIndex
 
         :param theIndex:
-        :type theIndex: int
+        :type theIndex: Standard_Integer
         :param theMPB:
         :type theMPB: BOPDS_IndexedMapOfPaveBlock &
         :param theMVP:
@@ -1100,12 +1100,12 @@ class BOPDS_DS(object):
         """
         return _BOPDS.BOPDS_DS_FaceInfoIn(self, *args)
 
-    def AloneVertices(self, *args) -> "void" :
+    def AloneVertices(self, *args):
         """
         * Selector Returns the indices of alone vertices for the face with index theIndex
 
         :param theF:
-        :type theF: int
+        :type theF: Standard_Integer
         :param theLI:
         :type theLI: BOPCol_ListOfInteger &
         :rtype: None
@@ -1113,23 +1113,23 @@ class BOPDS_DS(object):
         """
         return _BOPDS.BOPDS_DS_AloneVertices(self, *args)
 
-    def RefineFaceInfoOn(self, *args) -> "void" :
+    def RefineFaceInfoOn(self):
         """
         * Refine the state On for the all faces having state information ++
 
         :rtype: None
 
         """
-        return _BOPDS.BOPDS_DS_RefineFaceInfoOn(self, *args)
+        return _BOPDS.BOPDS_DS_RefineFaceInfoOn(self)
 
-    def VerticesOnIn(self, *args) -> "void" :
+    def VerticesOnIn(self, *args):
         """
         * Returns the indices of vertices and pave blocks that are On/In for the faces with indices theF1, theF2
 
         :param theF1:
-        :type theF1: int
+        :type theF1: Standard_Integer
         :param theF2:
-        :type theF2: int
+        :type theF2: Standard_Integer
         :param theMI:
         :type theMI: BOPCol_MapOfInteger &
         :param aMPB:
@@ -1139,14 +1139,14 @@ class BOPDS_DS(object):
         """
         return _BOPDS.BOPDS_DS_VerticesOnIn(self, *args)
 
-    def SharedEdges(self, *args) -> "void" :
+    def SharedEdges(self, *args):
         """
         * Returns the indices of edges that are shared for the faces with indices theF1, theF2 same domain shapes
 
         :param theF1:
-        :type theF1: int
+        :type theF1: Standard_Integer
         :param theF2:
-        :type theF2: int
+        :type theF2: Standard_Integer
         :param theLI:
         :type theLI: BOPCol_ListOfInteger &
         :param theAllocator:
@@ -1156,181 +1156,191 @@ class BOPDS_DS(object):
         """
         return _BOPDS.BOPDS_DS_SharedEdges(self, *args)
 
-    def ShapesSD(self, *args) -> "BOPCol_DataMapOfIntegerInteger &" :
+    def ShapesSD(self):
         """
         * Selector Returns the collection same domain shapes
 
         :rtype: BOPCol_DataMapOfIntegerInteger
 
         """
-        return _BOPDS.BOPDS_DS_ShapesSD(self, *args)
+        return _BOPDS.BOPDS_DS_ShapesSD(self)
 
-    def AddShapeSD(self, *args) -> "void" :
+    def AddShapeSD(self, *args):
         """
         * Modifier Adds the information about same domain shapes with indices theIndex, theIndexSD
 
         :param theIndex:
-        :type theIndex: int
+        :type theIndex: Standard_Integer
         :param theIndexSD:
-        :type theIndexSD: int
+        :type theIndexSD: Standard_Integer
         :rtype: None
 
         """
         return _BOPDS.BOPDS_DS_AddShapeSD(self, *args)
 
-    def HasShapeSD(self, *args) -> "Standard_Boolean" :
+    def HasShapeSD(self, *args):
         """
         * Query Returns true if the shape with index theIndex has the same domain shape. In this case theIndexSD will contain the index of same domain shape found interferences
 
         :param theIndex:
-        :type theIndex: int
+        :type theIndex: Standard_Integer
         :param theIndexSD:
-        :type theIndexSD: int &
+        :type theIndexSD: Standard_Integer &
         :rtype: bool
 
         """
         return _BOPDS.BOPDS_DS_HasShapeSD(self, *args)
 
-    def InterfVV(self, *args) -> "BOPDS_VectorOfInterfVV &" :
+    def InterfVV(self):
         """
         * Selector/Modifier Returns the collection of interferences Vertex/Vertex
 
         :rtype: BOPDS_VectorOfInterfVV
 
         """
-        return _BOPDS.BOPDS_DS_InterfVV(self, *args)
+        return _BOPDS.BOPDS_DS_InterfVV(self)
 
-    def InterfVE(self, *args) -> "BOPDS_VectorOfInterfVE &" :
+    def InterfVE(self):
         """
         * Selector/Modifier Returns the collection of interferences Vertex/Edge
 
         :rtype: BOPDS_VectorOfInterfVE
 
         """
-        return _BOPDS.BOPDS_DS_InterfVE(self, *args)
+        return _BOPDS.BOPDS_DS_InterfVE(self)
 
-    def InterfVF(self, *args) -> "BOPDS_VectorOfInterfVF &" :
+    def InterfVF(self):
         """
         * Selector/Modifier Returns the collection of interferences Vertex/Face
 
         :rtype: BOPDS_VectorOfInterfVF
 
         """
-        return _BOPDS.BOPDS_DS_InterfVF(self, *args)
+        return _BOPDS.BOPDS_DS_InterfVF(self)
 
-    def InterfEE(self, *args) -> "BOPDS_VectorOfInterfEE &" :
+    def InterfEE(self):
         """
         * Selector/Modifier Returns the collection of interferences Edge/Edge
 
         :rtype: BOPDS_VectorOfInterfEE
 
         """
-        return _BOPDS.BOPDS_DS_InterfEE(self, *args)
+        return _BOPDS.BOPDS_DS_InterfEE(self)
 
-    def InterfEF(self, *args) -> "BOPDS_VectorOfInterfEF &" :
+    def InterfEF(self):
         """
         * Selector/Modifier Returns the collection of interferences Edge/Face
 
         :rtype: BOPDS_VectorOfInterfEF
 
         """
-        return _BOPDS.BOPDS_DS_InterfEF(self, *args)
+        return _BOPDS.BOPDS_DS_InterfEF(self)
 
-    def InterfFF(self, *args) -> "BOPDS_VectorOfInterfFF &" :
+    def InterfFF(self):
         """
         * Selector/Modifier Returns the collection of interferences Face/Face
 
         :rtype: BOPDS_VectorOfInterfFF
 
         """
-        return _BOPDS.BOPDS_DS_InterfFF(self, *args)
+        return _BOPDS.BOPDS_DS_InterfFF(self)
 
-    def InterfVZ(self, *args) -> "BOPDS_VectorOfInterfVZ &" :
+    def InterfVZ(self):
         """
         * Selector/Modifier Returns the collection of interferences Vertex/Solid
 
         :rtype: BOPDS_VectorOfInterfVZ
 
         """
-        return _BOPDS.BOPDS_DS_InterfVZ(self, *args)
+        return _BOPDS.BOPDS_DS_InterfVZ(self)
 
-    def InterfEZ(self, *args) -> "BOPDS_VectorOfInterfEZ &" :
+    def InterfEZ(self):
         """
         * Selector/Modifier Returns the collection of interferences Edge/Solid
 
         :rtype: BOPDS_VectorOfInterfEZ
 
         """
-        return _BOPDS.BOPDS_DS_InterfEZ(self, *args)
+        return _BOPDS.BOPDS_DS_InterfEZ(self)
 
-    def InterfFZ(self, *args) -> "BOPDS_VectorOfInterfFZ &" :
+    def InterfFZ(self):
         """
         * Selector/Modifier Returns the collection of interferences Face/Solid
 
         :rtype: BOPDS_VectorOfInterfFZ
 
         """
-        return _BOPDS.BOPDS_DS_InterfFZ(self, *args)
+        return _BOPDS.BOPDS_DS_InterfFZ(self)
 
-    def InterfZZ(self, *args) -> "BOPDS_VectorOfInterfZZ &" :
+    def InterfZZ(self):
         """
         * Selector/Modifier Returns the collection of interferences Solid/Solid
 
         :rtype: BOPDS_VectorOfInterfZZ
 
         """
-        return _BOPDS.BOPDS_DS_InterfZZ(self, *args)
+        return _BOPDS.BOPDS_DS_InterfZZ(self)
 
-    def NbInterfTypes(*args) -> "Standard_Integer" :
+    def NbInterfTypes():
         """
         * Returns the number of types of the interferences
 
         :rtype: int
 
         """
-        return _BOPDS.BOPDS_DS_NbInterfTypes(*args)
+        return _BOPDS.BOPDS_DS_NbInterfTypes()
 
     NbInterfTypes = staticmethod(NbInterfTypes)
-    def AddInterf(self, *args) -> "void" :
+    def AddInterf(self, *args):
         """
         * Modifier Adds the information about an interference between shapes with indices theI1, theI2 to the summary table of interferences
 
         :param theI1:
-        :type theI1: int
+        :type theI1: Standard_Integer
         :param theI2:
-        :type theI2: int
+        :type theI2: Standard_Integer
         :rtype: None
 
         """
         return _BOPDS.BOPDS_DS_AddInterf(self, *args)
 
-    def HasInterf(self, *args) -> "Standard_Boolean" :
+    def HasInterf(self, *args):
         """
         * Query Returns true if the shape with index theI is interferred
 
         :param theI:
-        :type theI: int
+        :type theI: Standard_Integer
         :rtype: bool
 
         * Query Returns true if the shapes with indices theI1, theI2 are interferred
 
         :param theI1:
-        :type theI1: int
+        :type theI1: Standard_Integer
         :param theI2:
-        :type theI2: int
+        :type theI2: Standard_Integer
         :rtype: bool
 
         """
         return _BOPDS.BOPDS_DS_HasInterf(self, *args)
 
-    def HasInterfShapeSubShapes(self, *args) -> "Standard_Boolean" :
+    def HasInterfShapeSubShapes(self, *args):
         """
         * Query Returns true if the shape with index theI1 is interfered with any sub-shape of the shape with index theI2 (theFlag=true) all sub-shapes of the shape with index theI2 (theFlag=false)
 
         :param theI1:
-        :type theI1: int
+        :type theI1: Standard_Integer
         :param theI2:
-        :type theI2: int
+        :type theI2: Standard_Integer
+        :param theFlag: default value is Standard_True
+        :type theFlag: bool
+        :rtype: bool
+
+        * Query Returns true if the shape with index theI1 is interfered with any sub-shape of the shape with index theI2 (theFlag=true) all sub-shapes of the shape with index theI2 (theFlag=false)
+
+        :param theI1:
+        :type theI1: Standard_Integer
+        :param theI2:
+        :type theI2: Standard_Integer
         :param theFlag: default value is Standard_True
         :type theFlag: bool
         :rtype: bool
@@ -1338,36 +1348,36 @@ class BOPDS_DS(object):
         """
         return _BOPDS.BOPDS_DS_HasInterfShapeSubShapes(self, *args)
 
-    def HasInterfSubShapes(self, *args) -> "Standard_Boolean" :
+    def HasInterfSubShapes(self, *args):
         """
         * Query Returns true if the shapes with indices theI1, theI2 have interferred sub-shapes
 
         :param theI1:
-        :type theI1: int
+        :type theI1: Standard_Integer
         :param theI2:
-        :type theI2: int
+        :type theI2: Standard_Integer
         :rtype: bool
 
         """
         return _BOPDS.BOPDS_DS_HasInterfSubShapes(self, *args)
 
-    def Interferences(self, *args) -> "BOPDS_MapOfPassKey const &" :
+    def Interferences(self):
         """
         * Selector Returns the table of interferences debug
 
         :rtype: BOPDS_MapOfPassKey
 
         """
-        return _BOPDS.BOPDS_DS_Interferences(self, *args)
+        return _BOPDS.BOPDS_DS_Interferences(self)
 
-    def Dump(self, *args) -> "void" :
+    def Dump(self):
         """
         :rtype: None
 
         """
-        return _BOPDS.BOPDS_DS_Dump(self, *args)
+        return _BOPDS.BOPDS_DS_Dump(self)
 
-    def SortPaveBlocks(self, *args) -> "void" :
+    def SortPaveBlocks(self, *args):
         """
         :param theCB:
         :type theCB: Handle_BOPDS_CommonBlock &
@@ -1376,34 +1386,34 @@ class BOPDS_DS(object):
         """
         return _BOPDS.BOPDS_DS_SortPaveBlocks(self, *args)
 
-    def IsToSort(self, *args) -> "Standard_Boolean" :
+    def IsToSort(self, *args):
         """
         :param theCB:
         :type theCB: Handle_BOPDS_CommonBlock &
         :param theI:
-        :type theI: int &
+        :type theI: Standard_Integer &
         :rtype: bool
 
         """
         return _BOPDS.BOPDS_DS_IsToSort(self, *args)
 
-    def IsSubShape(self, *args) -> "Standard_Boolean" :
+    def IsSubShape(self, *args):
         """
         :param theI1:
-        :type theI1: int
+        :type theI1: Standard_Integer
         :param theI2:
-        :type theI2: int
+        :type theI2: Standard_Integer
         :rtype: bool
 
         """
         return _BOPDS.BOPDS_DS_IsSubShape(self, *args)
 
-    def Paves(self, *args) -> "void" :
+    def Paves(self, *args):
         """
         * Fills theLP with sorted paves of the shape with index theIndex
 
         :param theIndex:
-        :type theIndex: int
+        :type theIndex: Standard_Integer
         :param theLP:
         :type theLP: BOPDS_ListOfPave &
         :rtype: None
@@ -1411,12 +1421,12 @@ class BOPDS_DS(object):
         """
         return _BOPDS.BOPDS_DS_Paves(self, *args)
 
-    def UpdateEdgeTolerance(self, *args) -> "void" :
+    def UpdateEdgeTolerance(self, *args):
         """
         * Updates tolerance of the sub-shapes of the shape with index <theIndex>.
 
         :param theIndex:
-        :type theIndex: int
+        :type theIndex: Standard_Integer
         :param theTolerance:
         :type theTolerance: float
         :rtype: None
@@ -1501,14 +1511,14 @@ BOPDS_DS._kill_pointed = new_instancemethod(_BOPDS.BOPDS_DS__kill_pointed,None,B
 BOPDS_DS_swigregister = _BOPDS.BOPDS_DS_swigregister
 BOPDS_DS_swigregister(BOPDS_DS)
 
-def BOPDS_DS_NbInterfTypes(*args) -> "Standard_Integer" :
+def BOPDS_DS_NbInterfTypes():
   """
     * Returns the number of types of the interferences
 
     :rtype: int
 
     """
-  return _BOPDS.BOPDS_DS_NbInterfTypes(*args)
+  return _BOPDS.BOPDS_DS_NbInterfTypes()
 
 class BOPDS_FaceInfo(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
@@ -1527,140 +1537,140 @@ class BOPDS_FaceInfo(object):
 
         """
         _BOPDS.BOPDS_FaceInfo_swiginit(self,_BOPDS.new_BOPDS_FaceInfo(*args))
-    def Clear(self, *args) -> "void" :
+    def Clear(self):
         """
         * Clears the contents
 
         :rtype: None
 
         """
-        return _BOPDS.BOPDS_FaceInfo_Clear(self, *args)
+        return _BOPDS.BOPDS_FaceInfo_Clear(self)
 
-    def SetIndex(self, *args) -> "void" :
+    def SetIndex(self, *args):
         """
         * Modifier Sets the index of the face <theI>
 
         :param theI:
-        :type theI: int
+        :type theI: Standard_Integer
         :rtype: None
 
         """
         return _BOPDS.BOPDS_FaceInfo_SetIndex(self, *args)
 
-    def Index(self, *args) -> "Standard_Integer" :
+    def Index(self):
         """
         * Selector Returns the index of the face In
 
         :rtype: int
 
         """
-        return _BOPDS.BOPDS_FaceInfo_Index(self, *args)
+        return _BOPDS.BOPDS_FaceInfo_Index(self)
 
-    def PaveBlocksIn(self, *args) -> "BOPDS_IndexedMapOfPaveBlock const &" :
+    def PaveBlocksIn(self):
         """
         * Selector Returns the pave blocks of the face that have state In
 
         :rtype: BOPDS_IndexedMapOfPaveBlock
 
         """
-        return _BOPDS.BOPDS_FaceInfo_PaveBlocksIn(self, *args)
+        return _BOPDS.BOPDS_FaceInfo_PaveBlocksIn(self)
 
-    def ChangePaveBlocksIn(self, *args) -> "BOPDS_IndexedMapOfPaveBlock &" :
+    def ChangePaveBlocksIn(self):
         """
         * Selector/Modifier Returns the pave blocks of the face that have state In
 
         :rtype: BOPDS_IndexedMapOfPaveBlock
 
         """
-        return _BOPDS.BOPDS_FaceInfo_ChangePaveBlocksIn(self, *args)
+        return _BOPDS.BOPDS_FaceInfo_ChangePaveBlocksIn(self)
 
-    def VerticesIn(self, *args) -> "BOPCol_MapOfInteger const &" :
+    def VerticesIn(self):
         """
         * Selector Returns the list of indices for vertices of the face that have state In
 
         :rtype: BOPCol_MapOfInteger
 
         """
-        return _BOPDS.BOPDS_FaceInfo_VerticesIn(self, *args)
+        return _BOPDS.BOPDS_FaceInfo_VerticesIn(self)
 
-    def ChangeVerticesIn(self, *args) -> "BOPCol_MapOfInteger &" :
+    def ChangeVerticesIn(self):
         """
         * Selector/Modifier Returns the list of indices for vertices of the face that have state In On
 
         :rtype: BOPCol_MapOfInteger
 
         """
-        return _BOPDS.BOPDS_FaceInfo_ChangeVerticesIn(self, *args)
+        return _BOPDS.BOPDS_FaceInfo_ChangeVerticesIn(self)
 
-    def PaveBlocksOn(self, *args) -> "BOPDS_IndexedMapOfPaveBlock const &" :
+    def PaveBlocksOn(self):
         """
         * Selector Returns the pave blocks of the face that have state On
 
         :rtype: BOPDS_IndexedMapOfPaveBlock
 
         """
-        return _BOPDS.BOPDS_FaceInfo_PaveBlocksOn(self, *args)
+        return _BOPDS.BOPDS_FaceInfo_PaveBlocksOn(self)
 
-    def ChangePaveBlocksOn(self, *args) -> "BOPDS_IndexedMapOfPaveBlock &" :
+    def ChangePaveBlocksOn(self):
         """
         * Selector/Modifier Returns the pave blocks of the face that have state On
 
         :rtype: BOPDS_IndexedMapOfPaveBlock
 
         """
-        return _BOPDS.BOPDS_FaceInfo_ChangePaveBlocksOn(self, *args)
+        return _BOPDS.BOPDS_FaceInfo_ChangePaveBlocksOn(self)
 
-    def VerticesOn(self, *args) -> "BOPCol_MapOfInteger const &" :
+    def VerticesOn(self):
         """
         * Selector Returns the list of indices for vertices of the face that have state On
 
         :rtype: BOPCol_MapOfInteger
 
         """
-        return _BOPDS.BOPDS_FaceInfo_VerticesOn(self, *args)
+        return _BOPDS.BOPDS_FaceInfo_VerticesOn(self)
 
-    def ChangeVerticesOn(self, *args) -> "BOPCol_MapOfInteger &" :
+    def ChangeVerticesOn(self):
         """
         * Selector/Modifier Returns the list of indices for vertices of the face that have state On Sections
 
         :rtype: BOPCol_MapOfInteger
 
         """
-        return _BOPDS.BOPDS_FaceInfo_ChangeVerticesOn(self, *args)
+        return _BOPDS.BOPDS_FaceInfo_ChangeVerticesOn(self)
 
-    def PaveBlocksSc(self, *args) -> "BOPDS_IndexedMapOfPaveBlock const &" :
+    def PaveBlocksSc(self):
         """
         * Selector Returns the pave blocks of the face that are pave blocks of section edges
 
         :rtype: BOPDS_IndexedMapOfPaveBlock
 
         """
-        return _BOPDS.BOPDS_FaceInfo_PaveBlocksSc(self, *args)
+        return _BOPDS.BOPDS_FaceInfo_PaveBlocksSc(self)
 
-    def ChangePaveBlocksSc(self, *args) -> "BOPDS_IndexedMapOfPaveBlock &" :
+    def ChangePaveBlocksSc(self):
         """
         :rtype: BOPDS_IndexedMapOfPaveBlock
 
         """
-        return _BOPDS.BOPDS_FaceInfo_ChangePaveBlocksSc(self, *args)
+        return _BOPDS.BOPDS_FaceInfo_ChangePaveBlocksSc(self)
 
-    def VerticesSc(self, *args) -> "BOPCol_MapOfInteger const &" :
+    def VerticesSc(self):
         """
         * Selector Returns the list of indices for section vertices of the face
 
         :rtype: BOPCol_MapOfInteger
 
         """
-        return _BOPDS.BOPDS_FaceInfo_VerticesSc(self, *args)
+        return _BOPDS.BOPDS_FaceInfo_VerticesSc(self)
 
-    def ChangeVerticesSc(self, *args) -> "BOPCol_MapOfInteger &" :
+    def ChangeVerticesSc(self):
         """
         * Selector/Modifier Returns the list of indices for section vertices of the face Others
 
         :rtype: BOPCol_MapOfInteger
 
         """
-        return _BOPDS.BOPDS_FaceInfo_ChangeVerticesSc(self, *args)
+        return _BOPDS.BOPDS_FaceInfo_ChangeVerticesSc(self)
 
     def __del__(self):
     	try:
@@ -1692,97 +1702,97 @@ BOPDS_FaceInfo_swigregister(BOPDS_FaceInfo)
 class BOPDS_IndexRange(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         * Empty contructor
 
         :rtype: None
 
         """
-        _BOPDS.BOPDS_IndexRange_swiginit(self,_BOPDS.new_BOPDS_IndexRange(*args))
-    def SetFirst(self, *args) -> "void" :
+        _BOPDS.BOPDS_IndexRange_swiginit(self,_BOPDS.new_BOPDS_IndexRange())
+    def SetFirst(self, *args):
         """
         * Modifier Sets the first index <theI1> of the range
 
         :param theI1:
-        :type theI1: int
+        :type theI1: Standard_Integer
         :rtype: None
 
         """
         return _BOPDS.BOPDS_IndexRange_SetFirst(self, *args)
 
-    def SetLast(self, *args) -> "void" :
+    def SetLast(self, *args):
         """
         * Modifier Sets the second index <theI2> of the range
 
         :param theI2:
-        :type theI2: int
+        :type theI2: Standard_Integer
         :rtype: None
 
         """
         return _BOPDS.BOPDS_IndexRange_SetLast(self, *args)
 
-    def First(self, *args) -> "Standard_Integer" :
+    def First(self):
         """
         * Selector Returns the first index of the range
 
         :rtype: int
 
         """
-        return _BOPDS.BOPDS_IndexRange_First(self, *args)
+        return _BOPDS.BOPDS_IndexRange_First(self)
 
-    def Last(self, *args) -> "Standard_Integer" :
+    def Last(self):
         """
         * Selector Returns the second index of the range
 
         :rtype: int
 
         """
-        return _BOPDS.BOPDS_IndexRange_Last(self, *args)
+        return _BOPDS.BOPDS_IndexRange_Last(self)
 
-    def SetIndices(self, *args) -> "void" :
+    def SetIndices(self, *args):
         """
         * Modifier Sets the first index of the range <theI1> Sets the second index of the range <theI2>
 
         :param theI1:
-        :type theI1: int
+        :type theI1: Standard_Integer
         :param theI2:
-        :type theI2: int
+        :type theI2: Standard_Integer
         :rtype: None
 
         """
         return _BOPDS.BOPDS_IndexRange_SetIndices(self, *args)
 
-    def Indices(self, *args) -> "void" :
+    def Indices(self):
         """
         * Selector Returns the first index of the range <theI1> Returns the second index of the range <theI2>
 
         :param theI1:
-        :type theI1: int &
+        :type theI1: Standard_Integer &
         :param theI2:
-        :type theI2: int &
+        :type theI2: Standard_Integer &
         :rtype: None
 
         """
-        return _BOPDS.BOPDS_IndexRange_Indices(self, *args)
+        return _BOPDS.BOPDS_IndexRange_Indices(self)
 
-    def Contains(self, *args) -> "Standard_Boolean" :
+    def Contains(self, *args):
         """
         * Query Returns true if the range contains <theIndex>
 
         :param theIndex:
-        :type theIndex: int
+        :type theIndex: Standard_Integer
         :rtype: bool
 
         """
         return _BOPDS.BOPDS_IndexRange_Contains(self, *args)
 
-    def Dump(self, *args) -> "void" :
+    def Dump(self):
         """
         :rtype: None
 
         """
-        return _BOPDS.BOPDS_IndexRange_Dump(self, *args)
+        return _BOPDS.BOPDS_IndexRange_Dump(self)
 
     def __del__(self):
     	try:
@@ -1821,7 +1831,7 @@ class BOPDS_Iterator(object):
 
         """
         _BOPDS.BOPDS_Iterator_swiginit(self,_BOPDS.new_BOPDS_Iterator(*args))
-    def SetDS(self, *args) -> "void" :
+    def SetDS(self, *args):
         """
         * Modifier Sets the data structure <pDS> to process
 
@@ -1832,16 +1842,16 @@ class BOPDS_Iterator(object):
         """
         return _BOPDS.BOPDS_Iterator_SetDS(self, *args)
 
-    def DS(self, *args) -> "BOPDS_DS const &" :
+    def DS(self):
         """
         * Selector Returns the data structure
 
         :rtype: BOPDS_DS
 
         """
-        return _BOPDS.BOPDS_Iterator_DS(self, *args)
+        return _BOPDS.BOPDS_Iterator_DS(self)
 
-    def Initialize(self, *args) -> "void" :
+    def Initialize(self, *args):
         """
         * Initializes the iterator theType1 - the first type of shape theType2 - the second type of shape
 
@@ -1854,32 +1864,32 @@ class BOPDS_Iterator(object):
         """
         return _BOPDS.BOPDS_Iterator_Initialize(self, *args)
 
-    def More(self, *args) -> "Standard_Boolean" :
+    def More(self):
         """
         * Returns true if still there are pairs of intersected shapes
 
         :rtype: bool
 
         """
-        return _BOPDS.BOPDS_Iterator_More(self, *args)
+        return _BOPDS.BOPDS_Iterator_More(self)
 
-    def Next(self, *args) -> "void" :
+    def Next(self):
         """
         * Moves iterations ahead
 
         :rtype: None
 
         """
-        return _BOPDS.BOPDS_Iterator_Next(self, *args)
+        return _BOPDS.BOPDS_Iterator_Next(self)
 
-    def Value(self, *args) -> "void" :
+    def Value(self, *args):
         """
         * Returns indices (DS) of intersected shapes theIndex1 - the index of the first shape theIndex2 - the index of the second shape theWithSubShape - flag. True if the sub-shapes of shapes are intersected
 
         :param theIndex1:
-        :type theIndex1: int &
+        :type theIndex1: Standard_Integer &
         :param theIndex2:
-        :type theIndex2: int &
+        :type theIndex2: Standard_Integer &
         :param theWithSubShape:
         :type theWithSubShape: bool
         :rtype: None
@@ -1887,32 +1897,32 @@ class BOPDS_Iterator(object):
         """
         return _BOPDS.BOPDS_Iterator_Value(self, *args)
 
-    def Prepare(self, *args) -> "void" :
+    def Prepare(self):
         """
         * Perform the intersection algorithm and prepare the results to be used
 
         :rtype: void
 
         """
-        return _BOPDS.BOPDS_Iterator_Prepare(self, *args)
+        return _BOPDS.BOPDS_Iterator_Prepare(self)
 
-    def ExpectedLength(self, *args) -> "Standard_Integer" :
+    def ExpectedLength(self):
         """
         * Returns the number of intersections founded
 
         :rtype: int
 
         """
-        return _BOPDS.BOPDS_Iterator_ExpectedLength(self, *args)
+        return _BOPDS.BOPDS_Iterator_ExpectedLength(self)
 
-    def BlockLength(self, *args) -> "Standard_Integer" :
+    def BlockLength(self):
         """
         * Returns the block length
 
         :rtype: int
 
         """
-        return _BOPDS.BOPDS_Iterator_BlockLength(self, *args)
+        return _BOPDS.BOPDS_Iterator_BlockLength(self)
 
     def __del__(self):
     	try:
@@ -1958,7 +1968,7 @@ class BOPDS_PassKey(object):
 
         """
         _BOPDS.BOPDS_PassKey_swiginit(self,_BOPDS.new_BOPDS_PassKey(*args))
-    def Set(self, *args) -> "BOPDS_PassKey &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: BOPDS_PassKey &
@@ -1967,51 +1977,51 @@ class BOPDS_PassKey(object):
         """
         return _BOPDS.BOPDS_PassKey_Set(self, *args)
 
-    def Clear(self, *args) -> "void" :
+    def Clear(self):
         """
         * Clear the contents
 
         :rtype: None
 
         """
-        return _BOPDS.BOPDS_PassKey_Clear(self, *args)
+        return _BOPDS.BOPDS_PassKey_Clear(self)
 
-    def SetIds(self, *args) -> "void" :
+    def SetIds(self, *args):
         """
         * Modifier Sets one Id <theI1>
 
         :param theI1:
-        :type theI1: int
+        :type theI1: Standard_Integer
         :rtype: None
 
         * Modifier Sets two Id <theI1>,<theI2>
 
         :param theI1:
-        :type theI1: int
+        :type theI1: Standard_Integer
         :param theI2:
-        :type theI2: int
+        :type theI2: Standard_Integer
         :rtype: None
 
         * Modifier Sets three Id <theI1>,<theI2>,<theI3>
 
         :param theI1:
-        :type theI1: int
+        :type theI1: Standard_Integer
         :param theI2:
-        :type theI2: int
+        :type theI2: Standard_Integer
         :param theI3:
-        :type theI3: int
+        :type theI3: Standard_Integer
         :rtype: None
 
         * Modifier Sets four Id <theI1>,<theI2>,<theI3>,<theI4>
 
         :param theI1:
-        :type theI1: int
+        :type theI1: Standard_Integer
         :param theI2:
-        :type theI2: int
+        :type theI2: Standard_Integer
         :param theI3:
-        :type theI3: int
+        :type theI3: Standard_Integer
         :param theI4:
-        :type theI4: int
+        :type theI4: Standard_Integer
         :rtype: None
 
         * Modifier Sets the list of Id <theLI>
@@ -2023,16 +2033,16 @@ class BOPDS_PassKey(object):
         """
         return _BOPDS.BOPDS_PassKey_SetIds(self, *args)
 
-    def NbIds(self, *args) -> "Standard_Integer" :
+    def NbIds(self):
         """
         * Selector Returns the number of Ids>
 
         :rtype: int
 
         """
-        return _BOPDS.BOPDS_PassKey_NbIds(self, *args)
+        return _BOPDS.BOPDS_PassKey_NbIds(self)
 
-    def IsEqual(self, *args) -> "Standard_Boolean" :
+    def IsEqual(self, *args):
         """
         * Query Returns true if the PassKey is equal to <the theOther>
 
@@ -2043,49 +2053,53 @@ class BOPDS_PassKey(object):
         """
         return _BOPDS.BOPDS_PassKey_IsEqual(self, *args)
 
-    def HashCode(self, *args) -> "Standard_Integer" :
+    def HashCode(self, *args):
         """
         * Query Returns hash code
 
         :param theUpper:
-        :type theUpper: int
+        :type theUpper: Standard_Integer
         :rtype: int
 
         """
         return _BOPDS.BOPDS_PassKey_HashCode(self, *args)
 
-    def Id(self, *args) -> "Standard_Integer" :
+    def Id(self, *args):
         """
         * Selector Returns Id of index <theIndex>
 
         :param theIndex:
-        :type theIndex: int
+        :type theIndex: Standard_Integer
         :rtype: int
 
         """
         return _BOPDS.BOPDS_PassKey_Id(self, *args)
 
-    def Ids(self, *args) -> "void" :
+    def Ids(self):
         """
         * Selector Returns the first two Ids <theI1>,<theI2>
 
         :param theI1:
-        :type theI1: int &
+        :type theI1: Standard_Integer &
         :param theI2:
-        :type theI2: int &
+        :type theI2: Standard_Integer &
         :rtype: None
 
         """
-        return _BOPDS.BOPDS_PassKey_Ids(self, *args)
+        return _BOPDS.BOPDS_PassKey_Ids(self)
 
-    def Dump(self, *args) -> "void" :
+    def Dump(self, aHex=0):
         """
         :param aHex: default value is 0
-        :type aHex: int
+        :type aHex: Standard_Integer
+        :rtype: None
+
+        :param aHex: default value is 0
+        :type aHex: Standard_Integer
         :rtype: None
 
         """
-        return _BOPDS.BOPDS_PassKey_Dump(self, *args)
+        return _BOPDS.BOPDS_PassKey_Dump(self, aHex)
 
     def __del__(self):
     	try:
@@ -2111,20 +2125,21 @@ BOPDS_PassKey_swigregister(BOPDS_PassKey)
 
 class BOPDS_PassKeyMapHasher(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
+    def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def HashCode(*args) -> "Standard_Integer" :
+    def HashCode(*args):
         """
         :param aPKey:
         :type aPKey: BOPDS_PassKey &
         :param Upper:
-        :type Upper: int
+        :type Upper: Standard_Integer
         :rtype: int
 
         """
         return _BOPDS.BOPDS_PassKeyMapHasher_HashCode(*args)
 
     HashCode = staticmethod(HashCode)
-    def IsEqual(*args) -> "Standard_Boolean" :
+    def IsEqual(*args):
         """
         :param aPKey1:
         :type aPKey1: BOPDS_PassKey &
@@ -2136,8 +2151,6 @@ class BOPDS_PassKeyMapHasher(object):
         return _BOPDS.BOPDS_PassKeyMapHasher_IsEqual(*args)
 
     IsEqual = staticmethod(IsEqual)
-    def __init__(self): 
-        _BOPDS.BOPDS_PassKeyMapHasher_swiginit(self,_BOPDS.new_BOPDS_PassKeyMapHasher())
     def __del__(self):
     	try:
     		self.thisown = False
@@ -2150,18 +2163,18 @@ BOPDS_PassKeyMapHasher._kill_pointed = new_instancemethod(_BOPDS.BOPDS_PassKeyMa
 BOPDS_PassKeyMapHasher_swigregister = _BOPDS.BOPDS_PassKeyMapHasher_swigregister
 BOPDS_PassKeyMapHasher_swigregister(BOPDS_PassKeyMapHasher)
 
-def BOPDS_PassKeyMapHasher_HashCode(*args) -> "Standard_Integer" :
+def BOPDS_PassKeyMapHasher_HashCode(*args):
   """
     :param aPKey:
     :type aPKey: BOPDS_PassKey &
     :param Upper:
-    :type Upper: int
+    :type Upper: Standard_Integer
     :rtype: int
 
     """
   return _BOPDS.BOPDS_PassKeyMapHasher_HashCode(*args)
 
-def BOPDS_PassKeyMapHasher_IsEqual(*args) -> "Standard_Boolean" :
+def BOPDS_PassKeyMapHasher_IsEqual(*args):
   """
     :param aPKey1:
     :type aPKey1: BOPDS_PassKey &
@@ -2175,35 +2188,35 @@ def BOPDS_PassKeyMapHasher_IsEqual(*args) -> "Standard_Boolean" :
 class BOPDS_Pave(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         * Empty contructor
 
         :rtype: None
 
         """
-        _BOPDS.BOPDS_Pave_swiginit(self,_BOPDS.new_BOPDS_Pave(*args))
-    def SetIndex(self, *args) -> "void" :
+        _BOPDS.BOPDS_Pave_swiginit(self,_BOPDS.new_BOPDS_Pave())
+    def SetIndex(self, *args):
         """
         * Modifier Sets the index of vertex <theIndex>
 
         :param theIndex:
-        :type theIndex: int
+        :type theIndex: Standard_Integer
         :rtype: None
 
         """
         return _BOPDS.BOPDS_Pave_SetIndex(self, *args)
 
-    def Index(self, *args) -> "Standard_Integer" :
+    def Index(self):
         """
         * Selector Returns the index of vertex
 
         :rtype: int
 
         """
-        return _BOPDS.BOPDS_Pave_Index(self, *args)
+        return _BOPDS.BOPDS_Pave_Index(self)
 
-    def SetParameter(self, *args) -> "void" :
+    def SetParameter(self, *args):
         """
         * Modifier Sets the parameter of vertex <theParameter>
 
@@ -2214,29 +2227,29 @@ class BOPDS_Pave(object):
         """
         return _BOPDS.BOPDS_Pave_SetParameter(self, *args)
 
-    def Parameter(self, *args) -> "Standard_Real" :
+    def Parameter(self):
         """
         * Selector Returns the parameter of vertex
 
         :rtype: float
 
         """
-        return _BOPDS.BOPDS_Pave_Parameter(self, *args)
+        return _BOPDS.BOPDS_Pave_Parameter(self)
 
-    def Contents(self, *args) -> "void" :
+    def Contents(self):
         """
         * Selector Returns the index of vertex <theIndex> Returns the parameter of vertex <theParameter>
 
         :param theIndex:
-        :type theIndex: int &
+        :type theIndex: Standard_Integer &
         :param theParameter:
         :type theParameter: float &
         :rtype: None
 
         """
-        return _BOPDS.BOPDS_Pave_Contents(self, *args)
+        return _BOPDS.BOPDS_Pave_Contents(self)
 
-    def IsLess(self, *args) -> "Standard_Boolean" :
+    def IsLess(self, *args):
         """
         * Query Returns true if thr parameter od this is less than the parameter of <theOther>
 
@@ -2247,7 +2260,7 @@ class BOPDS_Pave(object):
         """
         return _BOPDS.BOPDS_Pave_IsLess(self, *args)
 
-    def __lt__(self, *args) -> "Standard_Boolean" :
+    def __lt__(self, *args):
         """
         :param theOther:
         :type theOther: BOPDS_Pave &
@@ -2256,7 +2269,7 @@ class BOPDS_Pave(object):
         """
         return _BOPDS.BOPDS_Pave___lt__(self, *args)
 
-    def IsEqual(self, *args) -> "Standard_Boolean" :
+    def IsEqual(self, *args):
         """
         * Query Returns true if thr parameter od this is equal to the parameter of <theOther>
 
@@ -2273,12 +2286,12 @@ class BOPDS_Pave(object):
         except:
             return False
 
-    def Dump(self, *args) -> "void" :
+    def Dump(self):
         """
         :rtype: None
 
         """
-        return _BOPDS.BOPDS_Pave_Dump(self, *args)
+        return _BOPDS.BOPDS_Pave_Dump(self)
 
     def __del__(self):
     	try:
@@ -2319,7 +2332,7 @@ class BOPDS_PaveBlock(OCC.MMgt.MMgt_TShared):
 
         """
         _BOPDS.BOPDS_PaveBlock_swiginit(self,_BOPDS.new_BOPDS_PaveBlock(*args))
-    def SetPave1(self, *args) -> "void" :
+    def SetPave1(self, *args):
         """
         * Modifier Sets the first pave <thePave>
 
@@ -2330,16 +2343,16 @@ class BOPDS_PaveBlock(OCC.MMgt.MMgt_TShared):
         """
         return _BOPDS.BOPDS_PaveBlock_SetPave1(self, *args)
 
-    def Pave1(self, *args) -> "BOPDS_Pave const &" :
+    def Pave1(self):
         """
         * Selector Returns the first pave
 
         :rtype: BOPDS_Pave
 
         """
-        return _BOPDS.BOPDS_PaveBlock_Pave1(self, *args)
+        return _BOPDS.BOPDS_PaveBlock_Pave1(self)
 
-    def SetPave2(self, *args) -> "void" :
+    def SetPave2(self, *args):
         """
         * Modifier Sets the second pave <thePave>
 
@@ -2350,36 +2363,36 @@ class BOPDS_PaveBlock(OCC.MMgt.MMgt_TShared):
         """
         return _BOPDS.BOPDS_PaveBlock_SetPave2(self, *args)
 
-    def Pave2(self, *args) -> "BOPDS_Pave const &" :
+    def Pave2(self):
         """
         * Selector Returns the second pave
 
         :rtype: BOPDS_Pave
 
         """
-        return _BOPDS.BOPDS_PaveBlock_Pave2(self, *args)
+        return _BOPDS.BOPDS_PaveBlock_Pave2(self)
 
-    def SetEdge(self, *args) -> "void" :
+    def SetEdge(self, *args):
         """
         * Modifier Sets the index of edge of pave block <theEdge>
 
         :param theEdge:
-        :type theEdge: int
+        :type theEdge: Standard_Integer
         :rtype: None
 
         """
         return _BOPDS.BOPDS_PaveBlock_SetEdge(self, *args)
 
-    def Edge(self, *args) -> "Standard_Integer" :
+    def Edge(self):
         """
         * Selector Returns the index of edge of pave block
 
         :rtype: int
 
         """
-        return _BOPDS.BOPDS_PaveBlock_Edge(self, *args)
+        return _BOPDS.BOPDS_PaveBlock_Edge(self)
 
-    def HasEdge(self, *args) -> "Standard_Boolean" :
+    def HasEdge(self, *args):
         """
         * Query Returns true if the pave block has edge
 
@@ -2388,42 +2401,42 @@ class BOPDS_PaveBlock(OCC.MMgt.MMgt_TShared):
         * Query Returns true if the pave block has edge Returns the index of edge <theEdge>
 
         :param theEdge:
-        :type theEdge: int &
+        :type theEdge: Standard_Integer &
         :rtype: bool
 
         """
         return _BOPDS.BOPDS_PaveBlock_HasEdge(self, *args)
 
-    def SetOriginalEdge(self, *args) -> "void" :
+    def SetOriginalEdge(self, *args):
         """
         * Modifier Sets the index of original edge of the pave block <theEdge>
 
         :param theEdge:
-        :type theEdge: int
+        :type theEdge: Standard_Integer
         :rtype: None
 
         """
         return _BOPDS.BOPDS_PaveBlock_SetOriginalEdge(self, *args)
 
-    def OriginalEdge(self, *args) -> "Standard_Integer" :
+    def OriginalEdge(self):
         """
         * Selector Returns the index of original edge of pave block
 
         :rtype: int
 
         """
-        return _BOPDS.BOPDS_PaveBlock_OriginalEdge(self, *args)
+        return _BOPDS.BOPDS_PaveBlock_OriginalEdge(self)
 
-    def IsSplitEdge(self, *args) -> "Standard_Boolean" :
+    def IsSplitEdge(self):
         """
         * Query Returns true if the edge is equal to the original edge of the pave block
 
         :rtype: bool
 
         """
-        return _BOPDS.BOPDS_PaveBlock_IsSplitEdge(self, *args)
+        return _BOPDS.BOPDS_PaveBlock_IsSplitEdge(self)
 
-    def Range(self, *args) -> "void" :
+    def Range(self):
         """
         * Selector Returns the parametric range <theT1,theT2> of the pave block
 
@@ -2434,9 +2447,9 @@ class BOPDS_PaveBlock(OCC.MMgt.MMgt_TShared):
         :rtype: None
 
         """
-        return _BOPDS.BOPDS_PaveBlock_Range(self, *args)
+        return _BOPDS.BOPDS_PaveBlock_Range(self)
 
-    def HasSameBounds(self, *args) -> "Standard_Boolean" :
+    def HasSameBounds(self, *args):
         """
         * Query Returns true if the pave block has pave indices that equal to the pave indices of the pave block <theOther>
 
@@ -2447,29 +2460,29 @@ class BOPDS_PaveBlock(OCC.MMgt.MMgt_TShared):
         """
         return _BOPDS.BOPDS_PaveBlock_HasSameBounds(self, *args)
 
-    def Indices(self, *args) -> "void" :
+    def Indices(self):
         """
         * Selector Returns the pave indices <theIndex1,theIndex2> of the pave block
 
         :param theIndex1:
-        :type theIndex1: int &
+        :type theIndex1: Standard_Integer &
         :param theIndex2:
-        :type theIndex2: int &
+        :type theIndex2: Standard_Integer &
         :rtype: None
 
         """
-        return _BOPDS.BOPDS_PaveBlock_Indices(self, *args)
+        return _BOPDS.BOPDS_PaveBlock_Indices(self)
 
-    def IsToUpdate(self, *args) -> "Standard_Boolean" :
+    def IsToUpdate(self):
         """
         * Query Returns true if the pave block contains extra paves
 
         :rtype: bool
 
         """
-        return _BOPDS.BOPDS_PaveBlock_IsToUpdate(self, *args)
+        return _BOPDS.BOPDS_PaveBlock_IsToUpdate(self)
 
-    def AppendExtPave(self, *args) -> "void" :
+    def AppendExtPave(self, *args):
         """
         * Modifier Appends extra paves <theLP>
 
@@ -2480,7 +2493,7 @@ class BOPDS_PaveBlock(OCC.MMgt.MMgt_TShared):
         """
         return _BOPDS.BOPDS_PaveBlock_AppendExtPave(self, *args)
 
-    def AppendExtPave1(self, *args) -> "void" :
+    def AppendExtPave1(self, *args):
         """
         * Modifier Appends extra pave <thePave>
 
@@ -2491,26 +2504,34 @@ class BOPDS_PaveBlock(OCC.MMgt.MMgt_TShared):
         """
         return _BOPDS.BOPDS_PaveBlock_AppendExtPave1(self, *args)
 
-    def ExtPaves(self, *args) -> "BOPDS_ListOfPave const &" :
+    def ExtPaves(self):
         """
         * Selector Returns the extra paves
 
         :rtype: BOPDS_ListOfPave
 
         """
-        return _BOPDS.BOPDS_PaveBlock_ExtPaves(self, *args)
+        return _BOPDS.BOPDS_PaveBlock_ExtPaves(self)
 
-    def ChangeExtPaves(self, *args) -> "BOPDS_ListOfPave &" :
+    def ChangeExtPaves(self):
         """
         * Selector / Modifier Returns the extra paves
 
         :rtype: BOPDS_ListOfPave
 
         """
-        return _BOPDS.BOPDS_PaveBlock_ChangeExtPaves(self, *args)
+        return _BOPDS.BOPDS_PaveBlock_ChangeExtPaves(self)
 
-    def Update(self, *args) -> "void" :
+    def Update(self, *args):
         """
+        * Modifier Updates the pave block. The extra paves are used to create new pave blocks <theLPB>. <theFlag> - if true, the first pave and the second pave are used to produce new pave blocks.
+
+        :param theLPB:
+        :type theLPB: BOPDS_ListOfPaveBlock &
+        :param theFlag: default value is Standard_True
+        :type theFlag: bool
+        :rtype: None
+
         * Modifier Updates the pave block. The extra paves are used to create new pave blocks <theLPB>. <theFlag> - if true, the first pave and the second pave are used to produce new pave blocks.
 
         :param theLPB:
@@ -2522,7 +2543,7 @@ class BOPDS_PaveBlock(OCC.MMgt.MMgt_TShared):
         """
         return _BOPDS.BOPDS_PaveBlock_Update(self, *args)
 
-    def ContainsParameter(self, *args) -> "Standard_Boolean" :
+    def ContainsParameter(self, *args):
         """
         * Query Returns true if the extra paves contain the pave with given value of the parameter <thePrm> <theTol> - the value of the tolerance to compare
 
@@ -2535,7 +2556,7 @@ class BOPDS_PaveBlock(OCC.MMgt.MMgt_TShared):
         """
         return _BOPDS.BOPDS_PaveBlock_ContainsParameter(self, *args)
 
-    def SetShrunkData(self, *args) -> "void" :
+    def SetShrunkData(self, *args):
         """
         * Modifier Sets the shrunk data for the pave block <theTS1>, <theTS2> - shrunk range <theBox> - the bounding box
 
@@ -2550,7 +2571,7 @@ class BOPDS_PaveBlock(OCC.MMgt.MMgt_TShared):
         """
         return _BOPDS.BOPDS_PaveBlock_SetShrunkData(self, *args)
 
-    def ShrunkData(self, *args) -> "void" :
+    def ShrunkData(self, *args):
         """
         * Selector Returns the shrunk data for the pave block <theTS1>, <theTS2> - shrunk range <theBox> - the bounding box
 
@@ -2565,27 +2586,27 @@ class BOPDS_PaveBlock(OCC.MMgt.MMgt_TShared):
         """
         return _BOPDS.BOPDS_PaveBlock_ShrunkData(self, *args)
 
-    def HasShrunkData(self, *args) -> "Standard_Boolean" :
+    def HasShrunkData(self):
         """
         * Query Returns true if the pave block contains the shrunk data
 
         :rtype: bool
 
         """
-        return _BOPDS.BOPDS_PaveBlock_HasShrunkData(self, *args)
+        return _BOPDS.BOPDS_PaveBlock_HasShrunkData(self)
 
-    def Dump(self, *args) -> "void" :
+    def Dump(self):
         """
         :rtype: None
 
         """
-        return _BOPDS.BOPDS_PaveBlock_Dump(self, *args)
+        return _BOPDS.BOPDS_PaveBlock_Dump(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(BOPDS_PaveBlock self)"""
         return _BOPDS.BOPDS_PaveBlock__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_BOPDS_PaveBlock" :
+    def GetHandle(self):
         """GetHandle(BOPDS_PaveBlock self) -> Handle_BOPDS_PaveBlock"""
         return _BOPDS.BOPDS_PaveBlock_GetHandle(self)
 
@@ -2647,26 +2668,27 @@ Handle_BOPDS_PaveBlock._kill_pointed = new_instancemethod(_BOPDS.Handle_BOPDS_Pa
 Handle_BOPDS_PaveBlock_swigregister = _BOPDS.Handle_BOPDS_PaveBlock_swigregister
 Handle_BOPDS_PaveBlock_swigregister(Handle_BOPDS_PaveBlock)
 
-def Handle_BOPDS_PaveBlock_DownCast(*args) -> "Handle_BOPDS_PaveBlock const" :
+def Handle_BOPDS_PaveBlock_DownCast(*args):
   return _BOPDS.Handle_BOPDS_PaveBlock_DownCast(*args)
 Handle_BOPDS_PaveBlock_DownCast = _BOPDS.Handle_BOPDS_PaveBlock_DownCast
 
 class BOPDS_PaveMapHasher(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
+    def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def HashCode(*args) -> "Standard_Integer" :
+    def HashCode(*args):
         """
         :param aPave:
         :type aPave: BOPDS_Pave &
         :param Upper:
-        :type Upper: int
+        :type Upper: Standard_Integer
         :rtype: int
 
         """
         return _BOPDS.BOPDS_PaveMapHasher_HashCode(*args)
 
     HashCode = staticmethod(HashCode)
-    def IsEqual(*args) -> "Standard_Boolean" :
+    def IsEqual(*args):
         """
         :param aPave1:
         :type aPave1: BOPDS_Pave &
@@ -2678,8 +2700,6 @@ class BOPDS_PaveMapHasher(object):
         return _BOPDS.BOPDS_PaveMapHasher_IsEqual(*args)
 
     IsEqual = staticmethod(IsEqual)
-    def __init__(self): 
-        _BOPDS.BOPDS_PaveMapHasher_swiginit(self,_BOPDS.new_BOPDS_PaveMapHasher())
     def __del__(self):
     	try:
     		self.thisown = False
@@ -2692,18 +2712,18 @@ BOPDS_PaveMapHasher._kill_pointed = new_instancemethod(_BOPDS.BOPDS_PaveMapHashe
 BOPDS_PaveMapHasher_swigregister = _BOPDS.BOPDS_PaveMapHasher_swigregister
 BOPDS_PaveMapHasher_swigregister(BOPDS_PaveMapHasher)
 
-def BOPDS_PaveMapHasher_HashCode(*args) -> "Standard_Integer" :
+def BOPDS_PaveMapHasher_HashCode(*args):
   """
     :param aPave:
     :type aPave: BOPDS_Pave &
     :param Upper:
-    :type Upper: int
+    :type Upper: Standard_Integer
     :rtype: int
 
     """
   return _BOPDS.BOPDS_PaveMapHasher_HashCode(*args)
 
-def BOPDS_PaveMapHasher_IsEqual(*args) -> "Standard_Boolean" :
+def BOPDS_PaveMapHasher_IsEqual(*args):
   """
     :param aPave1:
     :type aPave1: BOPDS_Pave &
@@ -2717,15 +2737,15 @@ def BOPDS_PaveMapHasher_IsEqual(*args) -> "Standard_Boolean" :
 class BOPDS_Point(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         * Empty contructor
 
         :rtype: None
 
         """
-        _BOPDS.BOPDS_Point_swiginit(self,_BOPDS.new_BOPDS_Point(*args))
-    def SetPnt(self, *args) -> "void" :
+        _BOPDS.BOPDS_Point_swiginit(self,_BOPDS.new_BOPDS_Point())
+    def SetPnt(self, *args):
         """
         * Modifier Sets 3D point <thePnt>
 
@@ -2736,16 +2756,16 @@ class BOPDS_Point(object):
         """
         return _BOPDS.BOPDS_Point_SetPnt(self, *args)
 
-    def Pnt(self, *args) -> "gp_Pnt const" :
+    def Pnt(self):
         """
         * Selector Returns 3D point
 
         :rtype: gp_Pnt
 
         """
-        return _BOPDS.BOPDS_Point_Pnt(self, *args)
+        return _BOPDS.BOPDS_Point_Pnt(self)
 
-    def SetPnt2D1(self, *args) -> "void" :
+    def SetPnt2D1(self, *args):
         """
         * Modifier Sets 2D point on the first face <thePnt>
 
@@ -2756,16 +2776,16 @@ class BOPDS_Point(object):
         """
         return _BOPDS.BOPDS_Point_SetPnt2D1(self, *args)
 
-    def Pnt2D1(self, *args) -> "gp_Pnt2d const" :
+    def Pnt2D1(self):
         """
         * Selector Returns 2D point on the first face <thePnt>
 
         :rtype: gp_Pnt2d
 
         """
-        return _BOPDS.BOPDS_Point_Pnt2D1(self, *args)
+        return _BOPDS.BOPDS_Point_Pnt2D1(self)
 
-    def SetPnt2D2(self, *args) -> "void" :
+    def SetPnt2D2(self, *args):
         """
         * Modifier Sets 2D point on the second face <thePnt>
 
@@ -2776,34 +2796,34 @@ class BOPDS_Point(object):
         """
         return _BOPDS.BOPDS_Point_SetPnt2D2(self, *args)
 
-    def Pnt2D2(self, *args) -> "gp_Pnt2d const" :
+    def Pnt2D2(self):
         """
         * Selector Returns 2D point on the second face <thePnt>
 
         :rtype: gp_Pnt2d
 
         """
-        return _BOPDS.BOPDS_Point_Pnt2D2(self, *args)
+        return _BOPDS.BOPDS_Point_Pnt2D2(self)
 
-    def SetIndex(self, *args) -> "void" :
+    def SetIndex(self, *args):
         """
         * Modifier Sets the index of the vertex <theIndex>
 
         :param theIndex:
-        :type theIndex: int
+        :type theIndex: Standard_Integer
         :rtype: None
 
         """
         return _BOPDS.BOPDS_Point_SetIndex(self, *args)
 
-    def Index(self, *args) -> "Standard_Integer" :
+    def Index(self):
         """
         * Selector Returns index of the vertex
 
         :rtype: int
 
         """
-        return _BOPDS.BOPDS_Point_Index(self, *args)
+        return _BOPDS.BOPDS_Point_Index(self)
 
     def __del__(self):
     	try:
@@ -2842,7 +2862,7 @@ class BOPDS_ShapeInfo(object):
 
         """
         _BOPDS.BOPDS_ShapeInfo_swiginit(self,_BOPDS.new_BOPDS_ShapeInfo(*args))
-    def SetShape(self, *args) -> "void" :
+    def SetShape(self, *args):
         """
         * Modifier Sets the shape <theS>
 
@@ -2853,16 +2873,16 @@ class BOPDS_ShapeInfo(object):
         """
         return _BOPDS.BOPDS_ShapeInfo_SetShape(self, *args)
 
-    def Shape(self, *args) -> "TopoDS_Shape const" :
+    def Shape(self):
         """
         * Selector Returns the shape
 
         :rtype: TopoDS_Shape
 
         """
-        return _BOPDS.BOPDS_ShapeInfo_Shape(self, *args)
+        return _BOPDS.BOPDS_ShapeInfo_Shape(self)
 
-    def SetShapeType(self, *args) -> "void" :
+    def SetShapeType(self, *args):
         """
         * Modifier Sets the type of shape theType
 
@@ -2873,16 +2893,16 @@ class BOPDS_ShapeInfo(object):
         """
         return _BOPDS.BOPDS_ShapeInfo_SetShapeType(self, *args)
 
-    def ShapeType(self, *args) -> "TopAbs_ShapeEnum" :
+    def ShapeType(self):
         """
         * Selector Returns the type of shape
 
         :rtype: TopAbs_ShapeEnum
 
         """
-        return _BOPDS.BOPDS_ShapeInfo_ShapeType(self, *args)
+        return _BOPDS.BOPDS_ShapeInfo_ShapeType(self)
 
-    def SetBox(self, *args) -> "void" :
+    def SetBox(self, *args):
         """
         * Modifier Sets the boundung box of the shape theBox
 
@@ -2893,99 +2913,99 @@ class BOPDS_ShapeInfo(object):
         """
         return _BOPDS.BOPDS_ShapeInfo_SetBox(self, *args)
 
-    def Box(self, *args) -> "Bnd_Box const &" :
+    def Box(self):
         """
         * Selector Returns the boundung box of the shape
 
         :rtype: Bnd_Box
 
         """
-        return _BOPDS.BOPDS_ShapeInfo_Box(self, *args)
+        return _BOPDS.BOPDS_ShapeInfo_Box(self)
 
-    def ChangeBox(self, *args) -> "Bnd_Box &" :
+    def ChangeBox(self):
         """
         * Selector/Modifier Returns the boundung box of the shape
 
         :rtype: Bnd_Box
 
         """
-        return _BOPDS.BOPDS_ShapeInfo_ChangeBox(self, *args)
+        return _BOPDS.BOPDS_ShapeInfo_ChangeBox(self)
 
-    def SubShapes(self, *args) -> "BOPCol_ListOfInteger const &" :
+    def SubShapes(self):
         """
         * Selector Returns the list of indices of sub-shapes
 
         :rtype: BOPCol_ListOfInteger
 
         """
-        return _BOPDS.BOPDS_ShapeInfo_SubShapes(self, *args)
+        return _BOPDS.BOPDS_ShapeInfo_SubShapes(self)
 
-    def ChangeSubShapes(self, *args) -> "BOPCol_ListOfInteger &" :
+    def ChangeSubShapes(self):
         """
         * Selector/ Modifier Returns the list of indices of sub-shapes
 
         :rtype: BOPCol_ListOfInteger
 
         """
-        return _BOPDS.BOPDS_ShapeInfo_ChangeSubShapes(self, *args)
+        return _BOPDS.BOPDS_ShapeInfo_ChangeSubShapes(self)
 
-    def HasSubShape(self, *args) -> "Standard_Boolean" :
+    def HasSubShape(self, *args):
         """
         * Query Returns true if the shape has sub-shape with index theI
 
         :param theI:
-        :type theI: int
+        :type theI: Standard_Integer
         :rtype: bool
 
         """
         return _BOPDS.BOPDS_ShapeInfo_HasSubShape(self, *args)
 
-    def HasReference(self, *args) -> "Standard_Boolean" :
+    def HasReference(self):
         """
         :rtype: bool
 
         """
-        return _BOPDS.BOPDS_ShapeInfo_HasReference(self, *args)
+        return _BOPDS.BOPDS_ShapeInfo_HasReference(self)
 
-    def SetReference(self, *args) -> "void" :
+    def SetReference(self, *args):
         """
         * Modifier Sets the index of a reference information
 
         :param theI:
-        :type theI: int
+        :type theI: Standard_Integer
         :rtype: None
 
         """
         return _BOPDS.BOPDS_ShapeInfo_SetReference(self, *args)
 
-    def Reference(self, *args) -> "Standard_Integer" :
+    def Reference(self):
         """
         * Selector Returns the index of a reference information
 
         :rtype: int
 
         """
-        return _BOPDS.BOPDS_ShapeInfo_Reference(self, *args)
+        return _BOPDS.BOPDS_ShapeInfo_Reference(self)
 
-    def HasBRep(self, *args) -> "Standard_Boolean" :
+    def HasBRep(self):
         """
         * Query Returns true if the shape has boundary representation
 
         :rtype: bool
 
         """
-        return _BOPDS.BOPDS_ShapeInfo_HasBRep(self, *args)
+        return _BOPDS.BOPDS_ShapeInfo_HasBRep(self)
 
-    def IsInterfering(self, *args) -> "Standard_Boolean" :
+    def IsInterfering(self):
         """
         * Returns true if the shape can be participant of an interference Flag
 
         :rtype: bool
 
         """
-        return _BOPDS.BOPDS_ShapeInfo_IsInterfering(self, *args)
+        return _BOPDS.BOPDS_ShapeInfo_IsInterfering(self)
 
-    def HasFlag(self, *args) -> "Standard_Boolean" :
+    def HasFlag(self, *args):
         """
         * Query Returns true if there is flag.
 
@@ -2994,38 +3014,38 @@ class BOPDS_ShapeInfo(object):
         * Query Returns true if there is flag. Returns the the flag theFlag
 
         :param theFlag:
-        :type theFlag: int &
+        :type theFlag: Standard_Integer &
         :rtype: bool
 
         """
         return _BOPDS.BOPDS_ShapeInfo_HasFlag(self, *args)
 
-    def SetFlag(self, *args) -> "void" :
+    def SetFlag(self, *args):
         """
         * Modifier Sets the flag
 
         :param theI:
-        :type theI: int
+        :type theI: Standard_Integer
         :rtype: None
 
         """
         return _BOPDS.BOPDS_ShapeInfo_SetFlag(self, *args)
 
-    def Flag(self, *args) -> "Standard_Integer" :
+    def Flag(self):
         """
         * Returns the flag
 
         :rtype: int
 
         """
-        return _BOPDS.BOPDS_ShapeInfo_Flag(self, *args)
+        return _BOPDS.BOPDS_ShapeInfo_Flag(self)
 
-    def Dump(self, *args) -> "void" :
+    def Dump(self):
         """
         :rtype: None
 
         """
-        return _BOPDS.BOPDS_ShapeInfo_Dump(self, *args)
+        return _BOPDS.BOPDS_ShapeInfo_Dump(self)
 
     def __del__(self):
     	try:
@@ -3075,7 +3095,7 @@ class BOPDS_SubIterator(object):
 
         """
         _BOPDS.BOPDS_SubIterator_swiginit(self,_BOPDS.new_BOPDS_SubIterator(*args))
-    def SetDS(self, *args) -> "void" :
+    def SetDS(self, *args):
         """
         * Modifier Sets the data structure <pDS> to process
 
@@ -3086,16 +3106,16 @@ class BOPDS_SubIterator(object):
         """
         return _BOPDS.BOPDS_SubIterator_SetDS(self, *args)
 
-    def DS(self, *args) -> "BOPDS_DS const &" :
+    def DS(self):
         """
         * Selector Returns the data structure
 
         :rtype: BOPDS_DS
 
         """
-        return _BOPDS.BOPDS_SubIterator_DS(self, *args)
+        return _BOPDS.BOPDS_SubIterator_DS(self)
 
-    def SetSubSet1(self, *args) -> "void" :
+    def SetSubSet1(self, *args):
         """
         * Modifier Sets the first set of indices <theLI> to process
 
@@ -3106,16 +3126,16 @@ class BOPDS_SubIterator(object):
         """
         return _BOPDS.BOPDS_SubIterator_SetSubSet1(self, *args)
 
-    def SubSet1(self, *args) -> "BOPCol_ListOfInteger const &" :
+    def SubSet1(self):
         """
         * Selector Returns the first set of indices to process
 
         :rtype: BOPCol_ListOfInteger
 
         """
-        return _BOPDS.BOPDS_SubIterator_SubSet1(self, *args)
+        return _BOPDS.BOPDS_SubIterator_SubSet1(self)
 
-    def SetSubSet2(self, *args) -> "void" :
+    def SetSubSet2(self, *args):
         """
         * Modifier Sets the second set of indices <theLI> to process
 
@@ -3126,63 +3146,63 @@ class BOPDS_SubIterator(object):
         """
         return _BOPDS.BOPDS_SubIterator_SetSubSet2(self, *args)
 
-    def SubSet2(self, *args) -> "BOPCol_ListOfInteger const &" :
+    def SubSet2(self):
         """
         * Selector Returns the second set of indices to process
 
         :rtype: BOPCol_ListOfInteger
 
         """
-        return _BOPDS.BOPDS_SubIterator_SubSet2(self, *args)
+        return _BOPDS.BOPDS_SubIterator_SubSet2(self)
 
-    def Initialize(self, *args) -> "void" :
+    def Initialize(self):
         """
         * Initializes the iterator
 
         :rtype: None
 
         """
-        return _BOPDS.BOPDS_SubIterator_Initialize(self, *args)
+        return _BOPDS.BOPDS_SubIterator_Initialize(self)
 
-    def More(self, *args) -> "Standard_Boolean" :
+    def More(self):
         """
         * Returns true if still there are pairs of intersected shapes
 
         :rtype: bool
 
         """
-        return _BOPDS.BOPDS_SubIterator_More(self, *args)
+        return _BOPDS.BOPDS_SubIterator_More(self)
 
-    def Next(self, *args) -> "void" :
+    def Next(self):
         """
         * Moves iterations ahead
 
         :rtype: None
 
         """
-        return _BOPDS.BOPDS_SubIterator_Next(self, *args)
+        return _BOPDS.BOPDS_SubIterator_Next(self)
 
-    def Value(self, *args) -> "void" :
+    def Value(self):
         """
         * Returns indices (DS) of intersected shapes theIndex1 - the index of the first shape theIndex2 - the index of the second shape
 
         :param theIndex1:
-        :type theIndex1: int &
+        :type theIndex1: Standard_Integer &
         :param theIndex2:
-        :type theIndex2: int &
+        :type theIndex2: Standard_Integer &
         :rtype: None
 
         """
-        return _BOPDS.BOPDS_SubIterator_Value(self, *args)
+        return _BOPDS.BOPDS_SubIterator_Value(self)
 
-    def Prepare(self, *args) -> "void" :
+    def Prepare(self):
         """
         * Perform the intersection algorithm and prepare the results to be used
 
         :rtype: void
 
         """
-        return _BOPDS.BOPDS_SubIterator_Prepare(self, *args)
+        return _BOPDS.BOPDS_SubIterator_Prepare(self)
 
     def __del__(self):
     	try:
@@ -3209,8 +3229,9 @@ BOPDS_SubIterator_swigregister(BOPDS_SubIterator)
 
 class BOPDS_Tools(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
+    def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def TypeToInteger(*args) -> "Standard_Integer" :
+    def TypeToInteger(*args):
         """
         * Converts the conmbination of two types of shape <theT1>,<theT2> to the one integer value, that is returned
 
@@ -3230,7 +3251,7 @@ class BOPDS_Tools(object):
         return _BOPDS.BOPDS_Tools_TypeToInteger(*args)
 
     TypeToInteger = staticmethod(TypeToInteger)
-    def HasBRep(*args) -> "Standard_Boolean" :
+    def HasBRep(*args):
         """
         * Returns true if the type <theT> correspond to a shape having boundary representation
 
@@ -3242,7 +3263,7 @@ class BOPDS_Tools(object):
         return _BOPDS.BOPDS_Tools_HasBRep(*args)
 
     HasBRep = staticmethod(HasBRep)
-    def IsInterfering(*args) -> "Standard_Boolean" :
+    def IsInterfering(*args):
         """
         * Returns true if the type <theT> can be participant of an interference
 
@@ -3254,8 +3275,6 @@ class BOPDS_Tools(object):
         return _BOPDS.BOPDS_Tools_IsInterfering(*args)
 
     IsInterfering = staticmethod(IsInterfering)
-    def __init__(self): 
-        _BOPDS.BOPDS_Tools_swiginit(self,_BOPDS.new_BOPDS_Tools())
     def __del__(self):
     	try:
     		self.thisown = False
@@ -3268,7 +3287,7 @@ BOPDS_Tools._kill_pointed = new_instancemethod(_BOPDS.BOPDS_Tools__kill_pointed,
 BOPDS_Tools_swigregister = _BOPDS.BOPDS_Tools_swigregister
 BOPDS_Tools_swigregister(BOPDS_Tools)
 
-def BOPDS_Tools_TypeToInteger(*args) -> "Standard_Integer" :
+def BOPDS_Tools_TypeToInteger(*args):
   """
     * Converts the conmbination of two types of shape <theT1>,<theT2> to the one integer value, that is returned
 
@@ -3287,7 +3306,7 @@ def BOPDS_Tools_TypeToInteger(*args) -> "Standard_Integer" :
     """
   return _BOPDS.BOPDS_Tools_TypeToInteger(*args)
 
-def BOPDS_Tools_HasBRep(*args) -> "Standard_Boolean" :
+def BOPDS_Tools_HasBRep(*args):
   """
     * Returns true if the type <theT> correspond to a shape having boundary representation
 
@@ -3298,7 +3317,7 @@ def BOPDS_Tools_HasBRep(*args) -> "Standard_Boolean" :
     """
   return _BOPDS.BOPDS_Tools_HasBRep(*args)
 
-def BOPDS_Tools_IsInterfering(*args) -> "Standard_Boolean" :
+def BOPDS_Tools_IsInterfering(*args):
   """
     * Returns true if the type <theT> can be participant of an interference
 
@@ -3326,7 +3345,7 @@ class BOPDS_InterfEE(object):
 
         """
         _BOPDS.BOPDS_InterfEE_swiginit(self,_BOPDS.new_BOPDS_InterfEE(*args))
-    def SetCommonPart(self, *args) -> "void" :
+    def SetCommonPart(self, *args):
         """
         * /** * Modifier * Sets the info of common part * @param theCP * common part */
 
@@ -3337,14 +3356,14 @@ class BOPDS_InterfEE(object):
         """
         return _BOPDS.BOPDS_InterfEE_SetCommonPart(self, *args)
 
-    def CommonPart(self, *args) -> "IntTools_CommonPrt const &" :
+    def CommonPart(self):
         """
         * /** * Selector * Returns the info of common part * returns * common part */
 
         :rtype: IntTools_CommonPrt
 
         """
-        return _BOPDS.BOPDS_InterfEE_CommonPart(self, *args)
+        return _BOPDS.BOPDS_InterfEE_CommonPart(self)
 
     def __del__(self):
     	try:
@@ -3377,7 +3396,7 @@ class BOPDS_InterfEF(object):
 
         """
         _BOPDS.BOPDS_InterfEF_swiginit(self,_BOPDS.new_BOPDS_InterfEF(*args))
-    def SetCommonPart(self, *args) -> "void" :
+    def SetCommonPart(self, *args):
         """
         * /** * Modifier * Sets the info of common part * @param theCP * common part */
 
@@ -3388,14 +3407,14 @@ class BOPDS_InterfEF(object):
         """
         return _BOPDS.BOPDS_InterfEF_SetCommonPart(self, *args)
 
-    def CommonPart(self, *args) -> "IntTools_CommonPrt const &" :
+    def CommonPart(self):
         """
         * /** * Selector * Returns the info of common part * returns * common part */
 
         :rtype: IntTools_CommonPrt
 
         """
-        return _BOPDS.BOPDS_InterfEF_CommonPart(self, *args)
+        return _BOPDS.BOPDS_InterfEF_CommonPart(self)
 
     def __del__(self):
     	try:
@@ -3443,28 +3462,28 @@ BOPDS_InterfEZ_swigregister(BOPDS_InterfEZ)
 class BOPDS_InterfFF(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         * /** * Constructor */
 
         :rtype: None
 
         """
-        _BOPDS.BOPDS_InterfFF_swiginit(self,_BOPDS.new_BOPDS_InterfFF(*args))
-    def Init(self, *args) -> "void" :
+        _BOPDS.BOPDS_InterfFF_swiginit(self,_BOPDS.new_BOPDS_InterfFF())
+    def Init(self, *args):
         """
         * /** * Initializer * @param theNbCurves * number of intersection curves * @param theNbPoints * number of intersection points */
 
         :param theNbCurves:
-        :type theNbCurves: int
+        :type theNbCurves: Standard_Integer
         :param theNbPoints:
-        :type theNbPoints: int
+        :type theNbPoints: Standard_Integer
         :rtype: None
 
         """
         return _BOPDS.BOPDS_InterfFF_Init(self, *args)
 
-    def SetTangentFaces(self, *args) -> "void" :
+    def SetTangentFaces(self, *args):
         """
         * /** * Modifier * Sets the flag of whether the faces are tangent * @param theFlag * the flag */
 
@@ -3475,16 +3494,16 @@ class BOPDS_InterfFF(object):
         """
         return _BOPDS.BOPDS_InterfFF_SetTangentFaces(self, *args)
 
-    def TangentFaces(self, *args) -> "Standard_Boolean" :
+    def TangentFaces(self):
         """
         * /** * Selector * Returns the flag whether the faces are tangent * returns * the flag */
 
         :rtype: bool
 
         """
-        return _BOPDS.BOPDS_InterfFF_TangentFaces(self, *args)
+        return _BOPDS.BOPDS_InterfFF_TangentFaces(self)
 
-    def SetTolR3D(self, *args) -> "void" :
+    def SetTolR3D(self, *args):
         """
         * /** * Modifier * Sets the value of 3D tolerance * @param theTol * 3D tolerance */
 
@@ -3495,16 +3514,16 @@ class BOPDS_InterfFF(object):
         """
         return _BOPDS.BOPDS_InterfFF_SetTolR3D(self, *args)
 
-    def TolR3D(self, *args) -> "Standard_Real" :
+    def TolR3D(self):
         """
         * /** * Selector * Returns the value of 3D tolerance * returns * 3D tolerance */
 
         :rtype: float
 
         """
-        return _BOPDS.BOPDS_InterfFF_TolR3D(self, *args)
+        return _BOPDS.BOPDS_InterfFF_TolR3D(self)
 
-    def SetTolR2D(self, *args) -> "void" :
+    def SetTolR2D(self, *args):
         """
         * /** * Modifier * Sets the value of 2D tolerance * @param theTol * 2D tolerance */
 
@@ -3515,50 +3534,50 @@ class BOPDS_InterfFF(object):
         """
         return _BOPDS.BOPDS_InterfFF_SetTolR2D(self, *args)
 
-    def TolR2D(self, *args) -> "Standard_Real" :
+    def TolR2D(self):
         """
         * /** * Selector * Returns the value of 2D tolerance * returns * 2D tolerance */
 
         :rtype: float
 
         """
-        return _BOPDS.BOPDS_InterfFF_TolR2D(self, *args)
+        return _BOPDS.BOPDS_InterfFF_TolR2D(self)
 
-    def Curves(self, *args) -> "BOPDS_VectorOfCurve const &" :
+    def Curves(self):
         """
         * /** * Selector * Returns the intersection curves * returns * intersection curves */
 
         :rtype: BOPDS_VectorOfCurve
 
         """
-        return _BOPDS.BOPDS_InterfFF_Curves(self, *args)
+        return _BOPDS.BOPDS_InterfFF_Curves(self)
 
-    def ChangeCurves(self, *args) -> "BOPDS_VectorOfCurve &" :
+    def ChangeCurves(self):
         """
         * /** * Selector/Modifier * Returns the intersection curves * returns * intersection curves */
 
         :rtype: BOPDS_VectorOfCurve
 
         """
-        return _BOPDS.BOPDS_InterfFF_ChangeCurves(self, *args)
+        return _BOPDS.BOPDS_InterfFF_ChangeCurves(self)
 
-    def Points(self, *args) -> "BOPDS_VectorOfPoint const &" :
+    def Points(self):
         """
         * /** * Selector * Returns the intersection points * returns * intersection points */
 
         :rtype: BOPDS_VectorOfPoint
 
         """
-        return _BOPDS.BOPDS_InterfFF_Points(self, *args)
+        return _BOPDS.BOPDS_InterfFF_Points(self)
 
-    def ChangePoints(self, *args) -> "BOPDS_VectorOfPoint &" :
+    def ChangePoints(self):
         """
         * /** * Selector/Modifier * Returns the intersection points * returns * intersection points */
 
         :rtype: BOPDS_VectorOfPoint
 
         """
-        return _BOPDS.BOPDS_InterfFF_ChangePoints(self, *args)
+        return _BOPDS.BOPDS_InterfFF_ChangePoints(self)
 
     def __del__(self):
     	try:
@@ -3629,7 +3648,7 @@ class BOPDS_InterfVE(object):
 
         """
         _BOPDS.BOPDS_InterfVE_swiginit(self,_BOPDS.new_BOPDS_InterfVE(*args))
-    def SetParameter(self, *args) -> "void" :
+    def SetParameter(self, *args):
         """
         * /** * Modifier * Sets the value of parameter * of the point of the vertex * on the curve of the edge * @param theT * value of parameter */
 
@@ -3640,14 +3659,14 @@ class BOPDS_InterfVE(object):
         """
         return _BOPDS.BOPDS_InterfVE_SetParameter(self, *args)
 
-    def Parameter(self, *args) -> "Standard_Real" :
+    def Parameter(self):
         """
         * /** * Selector * Returrns the value of parameter * of the point of the vertex * on the curve of the edge * returns * value of parameter */
 
         :rtype: float
 
         """
-        return _BOPDS.BOPDS_InterfVE_Parameter(self, *args)
+        return _BOPDS.BOPDS_InterfVE_Parameter(self)
 
     def __del__(self):
     	try:
@@ -3680,7 +3699,7 @@ class BOPDS_InterfVF(object):
 
         """
         _BOPDS.BOPDS_InterfVF_swiginit(self,_BOPDS.new_BOPDS_InterfVF(*args))
-    def SetUV(self, *args) -> "void" :
+    def SetUV(self, *args):
         """
         * /** * Modifier * Sets the value of parameters * of the point of the vertex * on the surface of of the face * @param theU * value of U parameter * @param theV * value of U parameter */
 
@@ -3693,7 +3712,7 @@ class BOPDS_InterfVF(object):
         """
         return _BOPDS.BOPDS_InterfVF_SetUV(self, *args)
 
-    def UV(self, *args) -> "void" :
+    def UV(self):
         """
         * /** * Selector * Returns the value of parameters * of the point of the vertex * on the surface of of the face * @param theU * value of U parameter * @param theV * value of U parameter */
 
@@ -3704,7 +3723,7 @@ class BOPDS_InterfVF(object):
         :rtype: None
 
         """
-        return _BOPDS.BOPDS_InterfVF_UV(self, *args)
+        return _BOPDS.BOPDS_InterfVF_UV(self)
 
     def __del__(self):
     	try:
@@ -3824,12 +3843,12 @@ class BOPDS_IteratorSI(BOPDS_Iterator):
 
         """
         _BOPDS.BOPDS_IteratorSI_swiginit(self,_BOPDS.new_BOPDS_IteratorSI(*args))
-    def UpdateByLevelOfCheck(self, *args) -> "void" :
+    def UpdateByLevelOfCheck(self, *args):
         """
         * Updates the lists of possible intersections according to the value of <theLevel>. It defines which interferferences will be checked: 0 - only V/V; 1 - V/V and V/E; 2 - V/V, V/E and E/E; 3 - V/V, V/E, E/E and V/F; 4 - V/V, V/E, E/E, V/F and E/F; other - all interferences.
 
         :param theLevel:
-        :type theLevel: int
+        :type theLevel: Standard_Integer
         :rtype: None
 
         """
@@ -3865,7 +3884,7 @@ class BOPDS_PassKeyBoolean(BOPDS_PassKey):
 
         """
         _BOPDS.BOPDS_PassKeyBoolean_swiginit(self,_BOPDS.new_BOPDS_PassKeyBoolean(*args))
-    def SetFlag(self, *args) -> "void" :
+    def SetFlag(self, *args):
         """
         :param theFlag:
         :type theFlag: bool
@@ -3874,7 +3893,7 @@ class BOPDS_PassKeyBoolean(BOPDS_PassKey):
         """
         return _BOPDS.BOPDS_PassKeyBoolean_SetFlag(self, *args)
 
-    def Set(self, *args) -> "BOPDS_PassKeyBoolean &" :
+    def Set(self, *args):
         """
         :param &:
         :type &: BOPDS_PassKeyBoolean
@@ -3883,12 +3902,12 @@ class BOPDS_PassKeyBoolean(BOPDS_PassKey):
         """
         return _BOPDS.BOPDS_PassKeyBoolean_Set(self, *args)
 
-    def Flag(self, *args) -> "Standard_Boolean" :
+    def Flag(self):
         """
         :rtype: bool
 
         """
-        return _BOPDS.BOPDS_PassKeyBoolean_Flag(self, *args)
+        return _BOPDS.BOPDS_PassKeyBoolean_Flag(self)
 
     def __del__(self):
     	try:

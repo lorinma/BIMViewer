@@ -124,7 +124,7 @@ import OCC.math
 class CPnts_AbscissaPoint(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def Length(*args) -> "Standard_Real" :
+    def Length(*args):
         """
         * Computes the length of the Curve <C>.
 
@@ -260,7 +260,7 @@ class CPnts_AbscissaPoint(object):
 
         """
         _CPnts.CPnts_AbscissaPoint_swiginit(self,_CPnts.new_CPnts_AbscissaPoint(*args))
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
         * Initializes the resolution function with <C>.
 
@@ -337,7 +337,7 @@ class CPnts_AbscissaPoint(object):
         """
         return _CPnts.CPnts_AbscissaPoint_Init(self, *args)
 
-    def Perform(self, *args) -> "void" :
+    def Perform(self, *args):
         """
         * Computes the point at the distance <Abscissa> of the curve.
 
@@ -364,7 +364,7 @@ class CPnts_AbscissaPoint(object):
         """
         return _CPnts.CPnts_AbscissaPoint_Perform(self, *args)
 
-    def AdvPerform(self, *args) -> "void" :
+    def AdvPerform(self, *args):
         """
         * Computes the point at the distance <Abscissa> of the curve; performs more appropriate tolerance managment; to use this method in right way it is necessary to call empty consructor. then call method Init with //!	 Tolerance = Resolution, then call AdvPermorm.
 
@@ -381,25 +381,25 @@ class CPnts_AbscissaPoint(object):
         """
         return _CPnts.CPnts_AbscissaPoint_AdvPerform(self, *args)
 
-    def IsDone(self, *args) -> "Standard_Boolean" :
+    def IsDone(self):
         """
         * True if the computation was successful, False otherwise.
 
         :rtype: bool
 
         """
-        return _CPnts.CPnts_AbscissaPoint_IsDone(self, *args)
+        return _CPnts.CPnts_AbscissaPoint_IsDone(self)
 
-    def Parameter(self, *args) -> "Standard_Real" :
+    def Parameter(self):
         """
         * Returns the parameter of the solution.
 
         :rtype: float
 
         """
-        return _CPnts.CPnts_AbscissaPoint_Parameter(self, *args)
+        return _CPnts.CPnts_AbscissaPoint_Parameter(self)
 
-    def SetParameter(self, *args) -> "void" :
+    def SetParameter(self, *args):
         """
         * Enforce the solution, used by GCPnts.
 
@@ -428,7 +428,7 @@ CPnts_AbscissaPoint._kill_pointed = new_instancemethod(_CPnts.CPnts_AbscissaPoin
 CPnts_AbscissaPoint_swigregister = _CPnts.CPnts_AbscissaPoint_swigregister
 CPnts_AbscissaPoint_swigregister(CPnts_AbscissaPoint)
 
-def CPnts_AbscissaPoint_Length(*args) -> "Standard_Real" :
+def CPnts_AbscissaPoint_Length(*args):
   """
     * Computes the length of the Curve <C>.
 
@@ -508,13 +508,13 @@ def CPnts_AbscissaPoint_Length(*args) -> "Standard_Real" :
 class CPnts_MyGaussFunction(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _CPnts.CPnts_MyGaussFunction_swiginit(self,_CPnts.new_CPnts_MyGaussFunction(*args))
-    def Init(self, *args) -> "void" :
+        _CPnts.CPnts_MyGaussFunction_swiginit(self,_CPnts.new_CPnts_MyGaussFunction())
+    def Init(self, *args):
         """
         * F is a pointer on a function D is a client data  Each value is computed with F(D)
 
@@ -527,7 +527,7 @@ class CPnts_MyGaussFunction(object):
         """
         return _CPnts.CPnts_MyGaussFunction_Init(self, *args)
 
-    def Value(self, *args) -> "Standard_Boolean" :
+    def Value(self, *args):
         """
         :param X:
         :type X: float
@@ -555,13 +555,13 @@ CPnts_MyGaussFunction_swigregister(CPnts_MyGaussFunction)
 class CPnts_MyRootFunction(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _CPnts.CPnts_MyRootFunction_swiginit(self,_CPnts.new_CPnts_MyRootFunction(*args))
-    def Init(self, *args) -> "void" :
+        _CPnts.CPnts_MyRootFunction_swiginit(self,_CPnts.new_CPnts_MyRootFunction())
+    def Init(self, *args):
         """
         * F is a pointer on a function D is a client data Order is the order of integration to use
 
@@ -570,7 +570,7 @@ class CPnts_MyRootFunction(object):
         :param D:
         :type D: Standard_Address
         :param Order:
-        :type Order: int
+        :type Order: Standard_Integer
         :rtype: None
 
         * We want to solve Integral(X0,X,F(X,D)) = L
@@ -594,7 +594,7 @@ class CPnts_MyRootFunction(object):
         """
         return _CPnts.CPnts_MyRootFunction_Init(self, *args)
 
-    def Value(self, *args) -> "Standard_Boolean" :
+    def Value(self, *args):
         """
         * This is Integral(X0,X,F(X,D)) - L
 
@@ -607,7 +607,7 @@ class CPnts_MyRootFunction(object):
         """
         return _CPnts.CPnts_MyRootFunction_Value(self, *args)
 
-    def Derivative(self, *args) -> "Standard_Boolean" :
+    def Derivative(self, *args):
         """
         * This is F(X,D)
 
@@ -620,7 +620,7 @@ class CPnts_MyRootFunction(object):
         """
         return _CPnts.CPnts_MyRootFunction_Derivative(self, *args)
 
-    def Values(self, *args) -> "Standard_Boolean" :
+    def Values(self, *args):
         """
         :param X:
         :type X: float
@@ -716,7 +716,7 @@ class CPnts_UniformDeflection(object):
 
         """
         _CPnts.CPnts_UniformDeflection_swiginit(self,_CPnts.new_CPnts_UniformDeflection(*args))
-    def Initialize(self, *args) -> "void" :
+    def Initialize(self, *args):
         """
         * Initialize the algoritms with <C>, <Deflection>, <UStep>, <Resolution> and <WithControl>
 
@@ -777,50 +777,50 @@ class CPnts_UniformDeflection(object):
         """
         return _CPnts.CPnts_UniformDeflection_Initialize(self, *args)
 
-    def IsAllDone(self, *args) -> "Standard_Boolean" :
+    def IsAllDone(self):
         """
         * To know if all the calculus were done successfully (ie all the points have been computed). The calculus can fail if the Curve is not C1 in the considered domain. Returns True if the calculus was successful.
 
         :rtype: bool
 
         """
-        return _CPnts.CPnts_UniformDeflection_IsAllDone(self, *args)
+        return _CPnts.CPnts_UniformDeflection_IsAllDone(self)
 
-    def Next(self, *args) -> "void" :
+    def Next(self):
         """
         * go to the next Point.
 
         :rtype: None
 
         """
-        return _CPnts.CPnts_UniformDeflection_Next(self, *args)
+        return _CPnts.CPnts_UniformDeflection_Next(self)
 
-    def More(self, *args) -> "Standard_Boolean" :
+    def More(self):
         """
         * returns True if it exists a next Point.
 
         :rtype: bool
 
         """
-        return _CPnts.CPnts_UniformDeflection_More(self, *args)
+        return _CPnts.CPnts_UniformDeflection_More(self)
 
-    def Value(self, *args) -> "Standard_Real" :
+    def Value(self):
         """
         * return the computed parameter
 
         :rtype: float
 
         """
-        return _CPnts.CPnts_UniformDeflection_Value(self, *args)
+        return _CPnts.CPnts_UniformDeflection_Value(self)
 
-    def Point(self, *args) -> "gp_Pnt" :
+    def Point(self):
         """
         * return the computed parameter
 
         :rtype: gp_Pnt
 
         """
-        return _CPnts.CPnts_UniformDeflection_Point(self, *args)
+        return _CPnts.CPnts_UniformDeflection_Point(self)
 
     def __del__(self):
     	try:

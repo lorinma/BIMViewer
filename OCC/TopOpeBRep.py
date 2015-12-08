@@ -156,8 +156,9 @@ TopOpeBRep_HYPERBOLA = _TopOpeBRep.TopOpeBRep_HYPERBOLA
 TopOpeBRep_OTHERTYPE = _TopOpeBRep.TopOpeBRep_OTHERTYPE
 class topopebrep(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
+    def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def Print(*args) -> "Standard_OStream &" :
+    def Print(*args):
         """
         * Prints the name of <TLC> as a String on the Stream <S> and returns <S>.
 
@@ -171,8 +172,6 @@ class topopebrep(object):
         return _TopOpeBRep.topopebrep_Print(*args)
 
     Print = staticmethod(Print)
-    def __init__(self): 
-        _TopOpeBRep.topopebrep_swiginit(self,_TopOpeBRep.new_topopebrep())
     def __del__(self):
     	try:
     		self.thisown = False
@@ -185,7 +184,7 @@ topopebrep._kill_pointed = new_instancemethod(_TopOpeBRep.topopebrep__kill_point
 topopebrep_swigregister = _TopOpeBRep.topopebrep_swigregister
 topopebrep_swigregister(topopebrep)
 
-def topopebrep_Print(*args) -> "Standard_OStream &" :
+def topopebrep_Print(*args):
   """
     * Prints the name of <TLC> as a String on the Stream <S> and returns <S>.
 
@@ -204,22 +203,22 @@ class TopOpeBRep_Array1OfLineInter(object):
     def __init__(self, *args): 
         """
         :param Low:
-        :type Low: int
+        :type Low: Standard_Integer
         :param Up:
-        :type Up: int
+        :type Up: Standard_Integer
         :rtype: None
 
         :param Item:
         :type Item: TopOpeBRep_LineInter &
         :param Low:
-        :type Low: int
+        :type Low: Standard_Integer
         :param Up:
-        :type Up: int
+        :type Up: Standard_Integer
         :rtype: None
 
         """
         _TopOpeBRep.TopOpeBRep_Array1OfLineInter_swiginit(self,_TopOpeBRep.new_TopOpeBRep_Array1OfLineInter(*args))
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
         :param V:
         :type V: TopOpeBRep_LineInter &
@@ -228,21 +227,21 @@ class TopOpeBRep_Array1OfLineInter(object):
         """
         return _TopOpeBRep.TopOpeBRep_Array1OfLineInter_Init(self, *args)
 
-    def Destroy(self, *args) -> "void" :
+    def Destroy(self):
         """
         :rtype: None
 
         """
-        return _TopOpeBRep.TopOpeBRep_Array1OfLineInter_Destroy(self, *args)
+        return _TopOpeBRep.TopOpeBRep_Array1OfLineInter_Destroy(self)
 
-    def IsAllocated(self, *args) -> "Standard_Boolean" :
+    def IsAllocated(self):
         """
         :rtype: bool
 
         """
-        return _TopOpeBRep.TopOpeBRep_Array1OfLineInter_IsAllocated(self, *args)
+        return _TopOpeBRep.TopOpeBRep_Array1OfLineInter_IsAllocated(self)
 
-    def Assign(self, *args) -> "TopOpeBRep_Array1OfLineInter const &" :
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: TopOpeBRep_Array1OfLineInter &
@@ -251,7 +250,7 @@ class TopOpeBRep_Array1OfLineInter(object):
         """
         return _TopOpeBRep.TopOpeBRep_Array1OfLineInter_Assign(self, *args)
 
-    def Set(self, *args) -> "TopOpeBRep_Array1OfLineInter const &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: TopOpeBRep_Array1OfLineInter &
@@ -260,31 +259,31 @@ class TopOpeBRep_Array1OfLineInter(object):
         """
         return _TopOpeBRep.TopOpeBRep_Array1OfLineInter_Set(self, *args)
 
-    def Length(self, *args) -> "Standard_Integer" :
+    def Length(self):
         """
         :rtype: int
 
         """
-        return _TopOpeBRep.TopOpeBRep_Array1OfLineInter_Length(self, *args)
+        return _TopOpeBRep.TopOpeBRep_Array1OfLineInter_Length(self)
 
-    def Lower(self, *args) -> "Standard_Integer" :
+    def Lower(self):
         """
         :rtype: int
 
         """
-        return _TopOpeBRep.TopOpeBRep_Array1OfLineInter_Lower(self, *args)
+        return _TopOpeBRep.TopOpeBRep_Array1OfLineInter_Lower(self)
 
-    def Upper(self, *args) -> "Standard_Integer" :
+    def Upper(self):
         """
         :rtype: int
 
         """
-        return _TopOpeBRep.TopOpeBRep_Array1OfLineInter_Upper(self, *args)
+        return _TopOpeBRep.TopOpeBRep_Array1OfLineInter_Upper(self)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Value:
         :type Value: TopOpeBRep_LineInter &
         :rtype: None
@@ -292,19 +291,19 @@ class TopOpeBRep_Array1OfLineInter(object):
         """
         return _TopOpeBRep.TopOpeBRep_Array1OfLineInter_SetValue(self, *args)
 
-    def Value(self, *args) -> "TopOpeBRep_LineInter const &" :
+    def Value(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: TopOpeBRep_LineInter
 
         """
         return _TopOpeBRep.TopOpeBRep_Array1OfLineInter_Value(self, *args)
 
-    def ChangeValue(self, *args) -> "TopOpeBRep_LineInter &" :
+    def ChangeValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: TopOpeBRep_LineInter
 
         """
@@ -339,22 +338,22 @@ class TopOpeBRep_Array1OfVPointInter(object):
     def __init__(self, *args): 
         """
         :param Low:
-        :type Low: int
+        :type Low: Standard_Integer
         :param Up:
-        :type Up: int
+        :type Up: Standard_Integer
         :rtype: None
 
         :param Item:
         :type Item: TopOpeBRep_VPointInter &
         :param Low:
-        :type Low: int
+        :type Low: Standard_Integer
         :param Up:
-        :type Up: int
+        :type Up: Standard_Integer
         :rtype: None
 
         """
         _TopOpeBRep.TopOpeBRep_Array1OfVPointInter_swiginit(self,_TopOpeBRep.new_TopOpeBRep_Array1OfVPointInter(*args))
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
         :param V:
         :type V: TopOpeBRep_VPointInter &
@@ -363,21 +362,21 @@ class TopOpeBRep_Array1OfVPointInter(object):
         """
         return _TopOpeBRep.TopOpeBRep_Array1OfVPointInter_Init(self, *args)
 
-    def Destroy(self, *args) -> "void" :
+    def Destroy(self):
         """
         :rtype: None
 
         """
-        return _TopOpeBRep.TopOpeBRep_Array1OfVPointInter_Destroy(self, *args)
+        return _TopOpeBRep.TopOpeBRep_Array1OfVPointInter_Destroy(self)
 
-    def IsAllocated(self, *args) -> "Standard_Boolean" :
+    def IsAllocated(self):
         """
         :rtype: bool
 
         """
-        return _TopOpeBRep.TopOpeBRep_Array1OfVPointInter_IsAllocated(self, *args)
+        return _TopOpeBRep.TopOpeBRep_Array1OfVPointInter_IsAllocated(self)
 
-    def Assign(self, *args) -> "TopOpeBRep_Array1OfVPointInter const &" :
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: TopOpeBRep_Array1OfVPointInter &
@@ -386,7 +385,7 @@ class TopOpeBRep_Array1OfVPointInter(object):
         """
         return _TopOpeBRep.TopOpeBRep_Array1OfVPointInter_Assign(self, *args)
 
-    def Set(self, *args) -> "TopOpeBRep_Array1OfVPointInter const &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: TopOpeBRep_Array1OfVPointInter &
@@ -395,31 +394,31 @@ class TopOpeBRep_Array1OfVPointInter(object):
         """
         return _TopOpeBRep.TopOpeBRep_Array1OfVPointInter_Set(self, *args)
 
-    def Length(self, *args) -> "Standard_Integer" :
+    def Length(self):
         """
         :rtype: int
 
         """
-        return _TopOpeBRep.TopOpeBRep_Array1OfVPointInter_Length(self, *args)
+        return _TopOpeBRep.TopOpeBRep_Array1OfVPointInter_Length(self)
 
-    def Lower(self, *args) -> "Standard_Integer" :
+    def Lower(self):
         """
         :rtype: int
 
         """
-        return _TopOpeBRep.TopOpeBRep_Array1OfVPointInter_Lower(self, *args)
+        return _TopOpeBRep.TopOpeBRep_Array1OfVPointInter_Lower(self)
 
-    def Upper(self, *args) -> "Standard_Integer" :
+    def Upper(self):
         """
         :rtype: int
 
         """
-        return _TopOpeBRep.TopOpeBRep_Array1OfVPointInter_Upper(self, *args)
+        return _TopOpeBRep.TopOpeBRep_Array1OfVPointInter_Upper(self)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Value:
         :type Value: TopOpeBRep_VPointInter &
         :rtype: None
@@ -427,19 +426,19 @@ class TopOpeBRep_Array1OfVPointInter(object):
         """
         return _TopOpeBRep.TopOpeBRep_Array1OfVPointInter_SetValue(self, *args)
 
-    def Value(self, *args) -> "TopOpeBRep_VPointInter const &" :
+    def Value(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: TopOpeBRep_VPointInter
 
         """
         return _TopOpeBRep.TopOpeBRep_Array1OfVPointInter_Value(self, *args)
 
-    def ChangeValue(self, *args) -> "TopOpeBRep_VPointInter &" :
+    def ChangeValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: TopOpeBRep_VPointInter
 
         """
@@ -476,26 +475,26 @@ class TopOpeBRep_Bipoint(object):
         :rtype: None
 
         :param I1:
-        :type I1: int
+        :type I1: Standard_Integer
         :param I2:
-        :type I2: int
+        :type I2: Standard_Integer
         :rtype: None
 
         """
         _TopOpeBRep.TopOpeBRep_Bipoint_swiginit(self,_TopOpeBRep.new_TopOpeBRep_Bipoint(*args))
-    def I1(self, *args) -> "Standard_Integer" :
+    def I1(self):
         """
         :rtype: int
 
         """
-        return _TopOpeBRep.TopOpeBRep_Bipoint_I1(self, *args)
+        return _TopOpeBRep.TopOpeBRep_Bipoint_I1(self)
 
-    def I2(self, *args) -> "Standard_Integer" :
+    def I2(self):
         """
         :rtype: int
 
         """
-        return _TopOpeBRep.TopOpeBRep_Bipoint_I2(self, *args)
+        return _TopOpeBRep.TopOpeBRep_Bipoint_I2(self)
 
     def __del__(self):
     	try:
@@ -514,30 +513,42 @@ TopOpeBRep_Bipoint_swigregister(TopOpeBRep_Bipoint)
 class TopOpeBRep_DSFiller(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _TopOpeBRep.TopOpeBRep_DSFiller_swiginit(self,_TopOpeBRep.new_TopOpeBRep_DSFiller(*args))
-    def Destroy(self, *args) -> "void" :
+        _TopOpeBRep.TopOpeBRep_DSFiller_swiginit(self,_TopOpeBRep.new_TopOpeBRep_DSFiller())
+    def Destroy(self):
         """
         :rtype: None
 
         """
-        return _TopOpeBRep.TopOpeBRep_DSFiller_Destroy(self, *args)
+        return _TopOpeBRep.TopOpeBRep_DSFiller_Destroy(self)
 
-    def PShapeClassifier(self, *args) -> "TopOpeBRepTool_PShapeClassifier" :
+    def PShapeClassifier(self):
         """
         * return field myPShapeClassifier. set field myPShapeClassifier.
 
         :rtype: TopOpeBRepTool_PShapeClassifier
 
         """
-        return _TopOpeBRep.TopOpeBRep_DSFiller_PShapeClassifier(self, *args)
+        return _TopOpeBRep.TopOpeBRep_DSFiller_PShapeClassifier(self)
 
-    def Insert(self, *args) -> "void" :
+    def Insert(self, *args):
         """
+        * Stores in <DS> the intersections of <S1> and <S2>. if orientFORWARD = True  S FORWARD,REVERSED --> FORWARD  S EXTERNAL,INTERNAL --> EXTERNAL,INTERNAL
+
+        :param S1:
+        :type S1: TopoDS_Shape &
+        :param S2:
+        :type S2: TopoDS_Shape &
+        :param HDS:
+        :type HDS: Handle_TopOpeBRepDS_HDataStructure &
+        :param orientFORWARD: default value is Standard_True
+        :type orientFORWARD: bool
+        :rtype: None
+
         * Stores in <DS> the intersections of <S1> and <S2>. if orientFORWARD = True  S FORWARD,REVERSED --> FORWARD  S EXTERNAL,INTERNAL --> EXTERNAL,INTERNAL
 
         :param S1:
@@ -553,8 +564,20 @@ class TopOpeBRep_DSFiller(object):
         """
         return _TopOpeBRep.TopOpeBRep_DSFiller_Insert(self, *args)
 
-    def InsertIntersection(self, *args) -> "void" :
+    def InsertIntersection(self, *args):
         """
+        * Stores in <DS> the intersections of <S1> and <S2>. if orientFORWARD = True  S FORWAR,REVERSED --> FORWARD  S EXTERNAL,INTERNAL --> EXTERNAL,INTERNAL
+
+        :param S1:
+        :type S1: TopoDS_Shape &
+        :param S2:
+        :type S2: TopoDS_Shape &
+        :param HDS:
+        :type HDS: Handle_TopOpeBRepDS_HDataStructure &
+        :param orientFORWARD: default value is Standard_True
+        :type orientFORWARD: bool
+        :rtype: None
+
         * Stores in <DS> the intersections of <S1> and <S2>. if orientFORWARD = True  S FORWAR,REVERSED --> FORWARD  S EXTERNAL,INTERNAL --> EXTERNAL,INTERNAL
 
         :param S1:
@@ -570,7 +593,7 @@ class TopOpeBRep_DSFiller(object):
         """
         return _TopOpeBRep.TopOpeBRep_DSFiller_InsertIntersection(self, *args)
 
-    def Complete(self, *args) -> "void" :
+    def Complete(self, *args):
         """
         :param HDS:
         :type HDS: Handle_TopOpeBRepDS_HDataStructure &
@@ -579,7 +602,7 @@ class TopOpeBRep_DSFiller(object):
         """
         return _TopOpeBRep.TopOpeBRep_DSFiller_Complete(self, *args)
 
-    def Insert2d(self, *args) -> "void" :
+    def Insert2d(self, *args):
         """
         * Stores in <DS> the intersections of <S1> and <S2>. S1 et S2 contain only SameDomain Face
 
@@ -594,7 +617,7 @@ class TopOpeBRep_DSFiller(object):
         """
         return _TopOpeBRep.TopOpeBRep_DSFiller_Insert2d(self, *args)
 
-    def InsertIntersection2d(self, *args) -> "void" :
+    def InsertIntersection2d(self, *args):
         """
         * S1, S2 set of tangent face lance les intersections 2d pour coder correctement les faces SameDomain.
 
@@ -609,7 +632,7 @@ class TopOpeBRep_DSFiller(object):
         """
         return _TopOpeBRep.TopOpeBRep_DSFiller_InsertIntersection2d(self, *args)
 
-    def IsMadeOf1d(self, *args) -> "Standard_Boolean" :
+    def IsMadeOf1d(self, *args):
         """
         :param S:
         :type S: TopoDS_Shape &
@@ -618,7 +641,7 @@ class TopOpeBRep_DSFiller(object):
         """
         return _TopOpeBRep.TopOpeBRep_DSFiller_IsMadeOf1d(self, *args)
 
-    def IsContext1d(self, *args) -> "Standard_Boolean" :
+    def IsContext1d(self, *args):
         """
         :param S:
         :type S: TopoDS_Shape &
@@ -627,8 +650,24 @@ class TopOpeBRep_DSFiller(object):
         """
         return _TopOpeBRep.TopOpeBRep_DSFiller_IsContext1d(self, *args)
 
-    def Insert1d(self, *args) -> "void" :
+    def Insert1d(self, *args):
         """
+        * Stores in <DS> the intersections of <S1> and <S2>. S1 and S2 are edges or wires. S1 edges have a 2d representation in face F1 S2 edges have a 2d representation in face F2 F1 is the face which surface is taken as reference for 2d description of S1 and S2 edges. if orientFORWARD = True  S FORWARD,REVERSED --> FORWARD  S EXTERNAL,INTERNAL --> EXTERNAL,INTERNAL
+
+        :param S1:
+        :type S1: TopoDS_Shape &
+        :param S2:
+        :type S2: TopoDS_Shape &
+        :param F1:
+        :type F1: TopoDS_Face &
+        :param F2:
+        :type F2: TopoDS_Face &
+        :param HDS:
+        :type HDS: Handle_TopOpeBRepDS_HDataStructure &
+        :param orientFORWARD: default value is Standard_False
+        :type orientFORWARD: bool
+        :rtype: None
+
         * Stores in <DS> the intersections of <S1> and <S2>. S1 and S2 are edges or wires. S1 edges have a 2d representation in face F1 S2 edges have a 2d representation in face F2 F1 is the face which surface is taken as reference for 2d description of S1 and S2 edges. if orientFORWARD = True  S FORWARD,REVERSED --> FORWARD  S EXTERNAL,INTERNAL --> EXTERNAL,INTERNAL
 
         :param S1:
@@ -648,42 +687,42 @@ class TopOpeBRep_DSFiller(object):
         """
         return _TopOpeBRep.TopOpeBRep_DSFiller_Insert1d(self, *args)
 
-    def ChangeShapeIntersector(self, *args) -> "TopOpeBRep_ShapeIntersector &" :
+    def ChangeShapeIntersector(self):
         """
         :rtype: TopOpeBRep_ShapeIntersector
 
         """
-        return _TopOpeBRep.TopOpeBRep_DSFiller_ChangeShapeIntersector(self, *args)
+        return _TopOpeBRep.TopOpeBRep_DSFiller_ChangeShapeIntersector(self)
 
-    def ChangeShapeIntersector2d(self, *args) -> "TopOpeBRep_ShapeIntersector2d &" :
+    def ChangeShapeIntersector2d(self):
         """
         :rtype: TopOpeBRep_ShapeIntersector2d
 
         """
-        return _TopOpeBRep.TopOpeBRep_DSFiller_ChangeShapeIntersector2d(self, *args)
+        return _TopOpeBRep.TopOpeBRep_DSFiller_ChangeShapeIntersector2d(self)
 
-    def ChangeFacesFiller(self, *args) -> "TopOpeBRep_FacesFiller &" :
+    def ChangeFacesFiller(self):
         """
         :rtype: TopOpeBRep_FacesFiller
 
         """
-        return _TopOpeBRep.TopOpeBRep_DSFiller_ChangeFacesFiller(self, *args)
+        return _TopOpeBRep.TopOpeBRep_DSFiller_ChangeFacesFiller(self)
 
-    def ChangeEdgesFiller(self, *args) -> "TopOpeBRep_EdgesFiller &" :
+    def ChangeEdgesFiller(self):
         """
         :rtype: TopOpeBRep_EdgesFiller
 
         """
-        return _TopOpeBRep.TopOpeBRep_DSFiller_ChangeEdgesFiller(self, *args)
+        return _TopOpeBRep.TopOpeBRep_DSFiller_ChangeEdgesFiller(self)
 
-    def ChangeFaceEdgeFiller(self, *args) -> "TopOpeBRep_FaceEdgeFiller &" :
+    def ChangeFaceEdgeFiller(self):
         """
         :rtype: TopOpeBRep_FaceEdgeFiller
 
         """
-        return _TopOpeBRep.TopOpeBRep_DSFiller_ChangeFaceEdgeFiller(self, *args)
+        return _TopOpeBRep.TopOpeBRep_DSFiller_ChangeFaceEdgeFiller(self)
 
-    def GapFiller(self, *args) -> "void" :
+    def GapFiller(self, *args):
         """
         :param HDS:
         :type HDS: Handle_TopOpeBRepDS_HDataStructure &
@@ -692,7 +731,7 @@ class TopOpeBRep_DSFiller(object):
         """
         return _TopOpeBRep.TopOpeBRep_DSFiller_GapFiller(self, *args)
 
-    def CompleteDS(self, *args) -> "void" :
+    def CompleteDS(self, *args):
         """
         * Update the data structure with relevant informations deduced from the intersections.  Shells containing an intersected face. Wires containing an intersected edge.
 
@@ -703,7 +742,7 @@ class TopOpeBRep_DSFiller(object):
         """
         return _TopOpeBRep.TopOpeBRep_DSFiller_CompleteDS(self, *args)
 
-    def Filter(self, *args) -> "void" :
+    def Filter(self, *args):
         """
         :param HDS:
         :type HDS: Handle_TopOpeBRepDS_HDataStructure &
@@ -712,7 +751,7 @@ class TopOpeBRep_DSFiller(object):
         """
         return _TopOpeBRep.TopOpeBRep_DSFiller_Filter(self, *args)
 
-    def Reducer(self, *args) -> "void" :
+    def Reducer(self, *args):
         """
         :param HDS:
         :type HDS: Handle_TopOpeBRepDS_HDataStructure &
@@ -721,7 +760,7 @@ class TopOpeBRep_DSFiller(object):
         """
         return _TopOpeBRep.TopOpeBRep_DSFiller_Reducer(self, *args)
 
-    def RemoveUnsharedGeometry(self, *args) -> "void" :
+    def RemoveUnsharedGeometry(self, *args):
         """
         :param HDS:
         :type HDS: Handle_TopOpeBRepDS_HDataStructure &
@@ -730,7 +769,7 @@ class TopOpeBRep_DSFiller(object):
         """
         return _TopOpeBRep.TopOpeBRep_DSFiller_RemoveUnsharedGeometry(self, *args)
 
-    def Checker(self, *args) -> "void" :
+    def Checker(self, *args):
         """
         :param HDS:
         :type HDS: Handle_TopOpeBRepDS_HDataStructure &
@@ -739,7 +778,7 @@ class TopOpeBRep_DSFiller(object):
         """
         return _TopOpeBRep.TopOpeBRep_DSFiller_Checker(self, *args)
 
-    def CompleteDS2d(self, *args) -> "void" :
+    def CompleteDS2d(self, *args):
         """
         * Update the data structure with relevant informations deduced from the intersections 2d.  Shells containing an intersected face. Wires containing an intersected edge. search for interference identity using edge connexity //NYI
 
@@ -797,7 +836,7 @@ class TopOpeBRep_DataMapIteratorOfDataMapOfTopolTool(OCC.TCollection.TCollection
 
         """
         _TopOpeBRep.TopOpeBRep_DataMapIteratorOfDataMapOfTopolTool_swiginit(self,_TopOpeBRep.new_TopOpeBRep_DataMapIteratorOfDataMapOfTopolTool(*args))
-    def Initialize(self, *args) -> "void" :
+    def Initialize(self, *args):
         """
         :param aMap:
         :type aMap: TopOpeBRep_DataMapOfTopolTool &
@@ -806,19 +845,19 @@ class TopOpeBRep_DataMapIteratorOfDataMapOfTopolTool(OCC.TCollection.TCollection
         """
         return _TopOpeBRep.TopOpeBRep_DataMapIteratorOfDataMapOfTopolTool_Initialize(self, *args)
 
-    def Key(self, *args) -> "TopoDS_Shape const" :
+    def Key(self):
         """
         :rtype: TopoDS_Shape
 
         """
-        return _TopOpeBRep.TopOpeBRep_DataMapIteratorOfDataMapOfTopolTool_Key(self, *args)
+        return _TopOpeBRep.TopOpeBRep_DataMapIteratorOfDataMapOfTopolTool_Key(self)
 
-    def Value(self, *args) -> "Handle_BRepTopAdaptor_TopolTool const &" :
+    def Value(self):
         """
         :rtype: Handle_BRepTopAdaptor_TopolTool
 
         """
-        return _TopOpeBRep.TopOpeBRep_DataMapIteratorOfDataMapOfTopolTool_Value(self, *args)
+        return _TopOpeBRep.TopOpeBRep_DataMapIteratorOfDataMapOfTopolTool_Value(self)
 
     def __del__(self):
     	try:
@@ -850,25 +889,25 @@ class TopOpeBRep_DataMapNodeOfDataMapOfTopolTool(OCC.TCollection.TCollection_Map
 
         """
         _TopOpeBRep.TopOpeBRep_DataMapNodeOfDataMapOfTopolTool_swiginit(self,_TopOpeBRep.new_TopOpeBRep_DataMapNodeOfDataMapOfTopolTool(*args))
-    def Key(self, *args) -> "TopoDS_Shape" :
+    def Key(self):
         """
         :rtype: TopoDS_Shape
 
         """
-        return _TopOpeBRep.TopOpeBRep_DataMapNodeOfDataMapOfTopolTool_Key(self, *args)
+        return _TopOpeBRep.TopOpeBRep_DataMapNodeOfDataMapOfTopolTool_Key(self)
 
-    def Value(self, *args) -> "Handle_BRepTopAdaptor_TopolTool &" :
+    def Value(self):
         """
         :rtype: Handle_BRepTopAdaptor_TopolTool
 
         """
-        return _TopOpeBRep.TopOpeBRep_DataMapNodeOfDataMapOfTopolTool_Value(self, *args)
+        return _TopOpeBRep.TopOpeBRep_DataMapNodeOfDataMapOfTopolTool_Value(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(TopOpeBRep_DataMapNodeOfDataMapOfTopolTool self)"""
         return _TopOpeBRep.TopOpeBRep_DataMapNodeOfDataMapOfTopolTool__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_TopOpeBRep_DataMapNodeOfDataMapOfTopolTool" :
+    def GetHandle(self):
         """GetHandle(TopOpeBRep_DataMapNodeOfDataMapOfTopolTool self) -> Handle_TopOpeBRep_DataMapNodeOfDataMapOfTopolTool"""
         return _TopOpeBRep.TopOpeBRep_DataMapNodeOfDataMapOfTopolTool_GetHandle(self)
 
@@ -908,22 +947,26 @@ Handle_TopOpeBRep_DataMapNodeOfDataMapOfTopolTool._kill_pointed = new_instanceme
 Handle_TopOpeBRep_DataMapNodeOfDataMapOfTopolTool_swigregister = _TopOpeBRep.Handle_TopOpeBRep_DataMapNodeOfDataMapOfTopolTool_swigregister
 Handle_TopOpeBRep_DataMapNodeOfDataMapOfTopolTool_swigregister(Handle_TopOpeBRep_DataMapNodeOfDataMapOfTopolTool)
 
-def Handle_TopOpeBRep_DataMapNodeOfDataMapOfTopolTool_DownCast(*args) -> "Handle_TopOpeBRep_DataMapNodeOfDataMapOfTopolTool const" :
+def Handle_TopOpeBRep_DataMapNodeOfDataMapOfTopolTool_DownCast(*args):
   return _TopOpeBRep.Handle_TopOpeBRep_DataMapNodeOfDataMapOfTopolTool_DownCast(*args)
 Handle_TopOpeBRep_DataMapNodeOfDataMapOfTopolTool_DownCast = _TopOpeBRep.Handle_TopOpeBRep_DataMapNodeOfDataMapOfTopolTool_DownCast
 
 class TopOpeBRep_DataMapOfTopolTool(OCC.TCollection.TCollection_BasicMap):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self, NbBuckets=1): 
         """
         :param NbBuckets: default value is 1
-        :type NbBuckets: int
+        :type NbBuckets: Standard_Integer
+        :rtype: None
+
+        :param NbBuckets: default value is 1
+        :type NbBuckets: Standard_Integer
         :rtype: None
 
         """
-        _TopOpeBRep.TopOpeBRep_DataMapOfTopolTool_swiginit(self,_TopOpeBRep.new_TopOpeBRep_DataMapOfTopolTool(*args))
-    def Assign(self, *args) -> "TopOpeBRep_DataMapOfTopolTool &" :
+        _TopOpeBRep.TopOpeBRep_DataMapOfTopolTool_swiginit(self,_TopOpeBRep.new_TopOpeBRep_DataMapOfTopolTool(NbBuckets))
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: TopOpeBRep_DataMapOfTopolTool &
@@ -932,7 +975,7 @@ class TopOpeBRep_DataMapOfTopolTool(OCC.TCollection.TCollection_BasicMap):
         """
         return _TopOpeBRep.TopOpeBRep_DataMapOfTopolTool_Assign(self, *args)
 
-    def Set(self, *args) -> "TopOpeBRep_DataMapOfTopolTool &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: TopOpeBRep_DataMapOfTopolTool &
@@ -941,23 +984,23 @@ class TopOpeBRep_DataMapOfTopolTool(OCC.TCollection.TCollection_BasicMap):
         """
         return _TopOpeBRep.TopOpeBRep_DataMapOfTopolTool_Set(self, *args)
 
-    def ReSize(self, *args) -> "void" :
+    def ReSize(self, *args):
         """
         :param NbBuckets:
-        :type NbBuckets: int
+        :type NbBuckets: Standard_Integer
         :rtype: None
 
         """
         return _TopOpeBRep.TopOpeBRep_DataMapOfTopolTool_ReSize(self, *args)
 
-    def Clear(self, *args) -> "void" :
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _TopOpeBRep.TopOpeBRep_DataMapOfTopolTool_Clear(self, *args)
+        return _TopOpeBRep.TopOpeBRep_DataMapOfTopolTool_Clear(self)
 
-    def Bind(self, *args) -> "Standard_Boolean" :
+    def Bind(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -968,7 +1011,7 @@ class TopOpeBRep_DataMapOfTopolTool(OCC.TCollection.TCollection_BasicMap):
         """
         return _TopOpeBRep.TopOpeBRep_DataMapOfTopolTool_Bind(self, *args)
 
-    def IsBound(self, *args) -> "Standard_Boolean" :
+    def IsBound(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -977,7 +1020,7 @@ class TopOpeBRep_DataMapOfTopolTool(OCC.TCollection.TCollection_BasicMap):
         """
         return _TopOpeBRep.TopOpeBRep_DataMapOfTopolTool_IsBound(self, *args)
 
-    def UnBind(self, *args) -> "Standard_Boolean" :
+    def UnBind(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -986,7 +1029,7 @@ class TopOpeBRep_DataMapOfTopolTool(OCC.TCollection.TCollection_BasicMap):
         """
         return _TopOpeBRep.TopOpeBRep_DataMapOfTopolTool_UnBind(self, *args)
 
-    def Find(self, *args) -> "Handle_BRepTopAdaptor_TopolTool const &" :
+    def Find(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -995,7 +1038,7 @@ class TopOpeBRep_DataMapOfTopolTool(OCC.TCollection.TCollection_BasicMap):
         """
         return _TopOpeBRep.TopOpeBRep_DataMapOfTopolTool_Find(self, *args)
 
-    def ChangeFind(self, *args) -> "Handle_BRepTopAdaptor_TopolTool &" :
+    def ChangeFind(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -1004,7 +1047,7 @@ class TopOpeBRep_DataMapOfTopolTool(OCC.TCollection.TCollection_BasicMap):
         """
         return _TopOpeBRep.TopOpeBRep_DataMapOfTopolTool_ChangeFind(self, *args)
 
-    def Find1(self, *args) -> "Standard_Address" :
+    def Find1(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -1013,7 +1056,7 @@ class TopOpeBRep_DataMapOfTopolTool(OCC.TCollection.TCollection_BasicMap):
         """
         return _TopOpeBRep.TopOpeBRep_DataMapOfTopolTool_Find1(self, *args)
 
-    def ChangeFind1(self, *args) -> "Standard_Address" :
+    def ChangeFind1(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -1022,7 +1065,7 @@ class TopOpeBRep_DataMapOfTopolTool(OCC.TCollection.TCollection_BasicMap):
         """
         return _TopOpeBRep.TopOpeBRep_DataMapOfTopolTool_ChangeFind1(self, *args)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(TopOpeBRep_DataMapOfTopolTool self)"""
         return _TopOpeBRep.TopOpeBRep_DataMapOfTopolTool__kill_pointed(self)
 
@@ -1052,13 +1095,13 @@ TopOpeBRep_DataMapOfTopolTool_swigregister(TopOpeBRep_DataMapOfTopolTool)
 class TopOpeBRep_EdgesFiller(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _TopOpeBRep.TopOpeBRep_EdgesFiller_swiginit(self,_TopOpeBRep.new_TopOpeBRep_EdgesFiller(*args))
-    def Insert(self, *args) -> "void" :
+        _TopOpeBRep.TopOpeBRep_EdgesFiller_swiginit(self,_TopOpeBRep.new_TopOpeBRep_EdgesFiller())
+    def Insert(self, *args):
         """
         :param E1:
         :type E1: TopoDS_Shape &
@@ -1073,16 +1116,16 @@ class TopOpeBRep_EdgesFiller(object):
         """
         return _TopOpeBRep.TopOpeBRep_EdgesFiller_Insert(self, *args)
 
-    def Face(self, *args) -> "TopoDS_Shape const" :
+    def Face(self, *args):
         """
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :param F:
         :type F: TopoDS_Shape &
         :rtype: None
 
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :rtype: TopoDS_Shape
 
         """
@@ -1105,20 +1148,20 @@ TopOpeBRep_EdgesFiller_swigregister(TopOpeBRep_EdgesFiller)
 class TopOpeBRep_EdgesIntersector(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _TopOpeBRep.TopOpeBRep_EdgesIntersector_swiginit(self,_TopOpeBRep.new_TopOpeBRep_EdgesIntersector(*args))
-    def Delete(self, *args) -> "void" :
+        _TopOpeBRep.TopOpeBRep_EdgesIntersector_swiginit(self,_TopOpeBRep.new_TopOpeBRep_EdgesIntersector())
+    def Delete(self):
         """
         :rtype: void
 
         """
-        return _TopOpeBRep.TopOpeBRep_EdgesIntersector_Delete(self, *args)
+        return _TopOpeBRep.TopOpeBRep_EdgesIntersector_Delete(self)
 
-    def SetFaces(self, *args) -> "void" :
+    def SetFaces(self, *args):
         """
         :param F1:
         :type F1: TopoDS_Shape &
@@ -1139,7 +1182,7 @@ class TopOpeBRep_EdgesIntersector(object):
         """
         return _TopOpeBRep.TopOpeBRep_EdgesIntersector_SetFaces(self, *args)
 
-    def ForceTolerances(self, *args) -> "void" :
+    def ForceTolerances(self, *args):
         """
         :param Tol1:
         :type Tol1: float
@@ -1150,10 +1193,10 @@ class TopOpeBRep_EdgesIntersector(object):
         """
         return _TopOpeBRep.TopOpeBRep_EdgesIntersector_ForceTolerances(self, *args)
 
-    def Dimension(self, *args) -> "Standard_Integer" :
+    def Dimension(self, *args):
         """
         :param D:
-        :type D: int
+        :type D: Standard_Integer
         :rtype: None
 
         * set working space dimension D = 1 for E &|| W, 2 for E in F
@@ -1163,8 +1206,16 @@ class TopOpeBRep_EdgesIntersector(object):
         """
         return _TopOpeBRep.TopOpeBRep_EdgesIntersector_Dimension(self, *args)
 
-    def Perform(self, *args) -> "void" :
+    def Perform(self, *args):
         """
+        :param E1:
+        :type E1: TopoDS_Shape &
+        :param E2:
+        :type E2: TopoDS_Shape &
+        :param ReduceSegments: default value is Standard_True
+        :type ReduceSegments: bool
+        :rtype: None
+
         :param E1:
         :type E1: TopoDS_Shape &
         :param E2:
@@ -1176,89 +1227,89 @@ class TopOpeBRep_EdgesIntersector(object):
         """
         return _TopOpeBRep.TopOpeBRep_EdgesIntersector_Perform(self, *args)
 
-    def IsEmpty(self, *args) -> "Standard_Boolean" :
+    def IsEmpty(self):
         """
         :rtype: bool
 
         """
-        return _TopOpeBRep.TopOpeBRep_EdgesIntersector_IsEmpty(self, *args)
+        return _TopOpeBRep.TopOpeBRep_EdgesIntersector_IsEmpty(self)
 
-    def HasSegment(self, *args) -> "Standard_Boolean" :
+    def HasSegment(self):
         """
         * true if at least one intersection segment.
 
         :rtype: bool
 
         """
-        return _TopOpeBRep.TopOpeBRep_EdgesIntersector_HasSegment(self, *args)
+        return _TopOpeBRep.TopOpeBRep_EdgesIntersector_HasSegment(self)
 
-    def SameDomain(self, *args) -> "Standard_Boolean" :
+    def SameDomain(self):
         """
         * = mySameDomain.
 
         :rtype: bool
 
         """
-        return _TopOpeBRep.TopOpeBRep_EdgesIntersector_SameDomain(self, *args)
+        return _TopOpeBRep.TopOpeBRep_EdgesIntersector_SameDomain(self)
 
-    def Edge(self, *args) -> "TopoDS_Shape const" :
+    def Edge(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: TopoDS_Shape
 
         """
         return _TopOpeBRep.TopOpeBRep_EdgesIntersector_Edge(self, *args)
 
-    def Curve(self, *args) -> "Geom2dAdaptor_Curve const &" :
+    def Curve(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Geom2dAdaptor_Curve
 
         """
         return _TopOpeBRep.TopOpeBRep_EdgesIntersector_Curve(self, *args)
 
-    def Face(self, *args) -> "TopoDS_Shape const" :
+    def Face(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: TopoDS_Shape
 
         """
         return _TopOpeBRep.TopOpeBRep_EdgesIntersector_Face(self, *args)
 
-    def Surface(self, *args) -> "BRepAdaptor_Surface const &" :
+    def Surface(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: BRepAdaptor_Surface
 
         """
         return _TopOpeBRep.TopOpeBRep_EdgesIntersector_Surface(self, *args)
 
-    def SurfacesSameOriented(self, *args) -> "Standard_Boolean" :
+    def SurfacesSameOriented(self):
         """
         :rtype: bool
 
         """
-        return _TopOpeBRep.TopOpeBRep_EdgesIntersector_SurfacesSameOriented(self, *args)
+        return _TopOpeBRep.TopOpeBRep_EdgesIntersector_SurfacesSameOriented(self)
 
-    def FacesSameOriented(self, *args) -> "Standard_Boolean" :
+    def FacesSameOriented(self):
         """
         :rtype: bool
 
         """
-        return _TopOpeBRep.TopOpeBRep_EdgesIntersector_FacesSameOriented(self, *args)
+        return _TopOpeBRep.TopOpeBRep_EdgesIntersector_FacesSameOriented(self)
 
-    def ToleranceMax(self, *args) -> "Standard_Real" :
+    def ToleranceMax(self):
         """
         :rtype: float
 
         """
-        return _TopOpeBRep.TopOpeBRep_EdgesIntersector_ToleranceMax(self, *args)
+        return _TopOpeBRep.TopOpeBRep_EdgesIntersector_ToleranceMax(self)
 
-    def Tolerances(self, *args) -> "void" :
+    def Tolerances(self):
         """
         :param tol1:
         :type tol1: float &
@@ -1267,37 +1318,57 @@ class TopOpeBRep_EdgesIntersector(object):
         :rtype: None
 
         """
-        return _TopOpeBRep.TopOpeBRep_EdgesIntersector_Tolerances(self, *args)
+        return _TopOpeBRep.TopOpeBRep_EdgesIntersector_Tolerances(self)
 
-    def NbPoints(self, *args) -> "Standard_Integer" :
+    def NbPoints(self):
         """
         :rtype: int
 
         """
-        return _TopOpeBRep.TopOpeBRep_EdgesIntersector_NbPoints(self, *args)
+        return _TopOpeBRep.TopOpeBRep_EdgesIntersector_NbPoints(self)
 
-    def NbSegments(self, *args) -> "Standard_Integer" :
+    def NbSegments(self):
         """
         :rtype: int
 
         """
-        return _TopOpeBRep.TopOpeBRep_EdgesIntersector_NbSegments(self, *args)
+        return _TopOpeBRep.TopOpeBRep_EdgesIntersector_NbSegments(self)
 
-    def Dump(self, *args) -> "void" :
+    def Dump(self, *args):
         """
         :param str:
         :type str: TCollection_AsciiString &
         :param ie1: default value is 0
-        :type ie1: int
+        :type ie1: Standard_Integer
         :param ie2: default value is 0
-        :type ie2: int
+        :type ie2: Standard_Integer
+        :rtype: None
+
+        :param str:
+        :type str: TCollection_AsciiString &
+        :param ie1: default value is 0
+        :type ie1: Standard_Integer
+        :param ie2: default value is 0
+        :type ie2: Standard_Integer
+        :rtype: None
+
+        :param str:
+        :type str: TCollection_AsciiString &
+        :param ie1: default value is 0
+        :type ie1: Standard_Integer
+        :param ie2: default value is 0
+        :type ie2: Standard_Integer
         :rtype: None
 
         """
         return _TopOpeBRep.TopOpeBRep_EdgesIntersector_Dump(self, *args)
 
-    def InitPoint(self, *args) -> "void" :
+    def InitPoint(self, *args):
         """
+        :param selectkeep: default value is Standard_True
+        :type selectkeep: bool
+        :rtype: None
+
         :param selectkeep: default value is Standard_True
         :type selectkeep: bool
         :rtype: None
@@ -1305,39 +1376,39 @@ class TopOpeBRep_EdgesIntersector(object):
         """
         return _TopOpeBRep.TopOpeBRep_EdgesIntersector_InitPoint(self, *args)
 
-    def MorePoint(self, *args) -> "Standard_Boolean" :
+    def MorePoint(self):
         """
         :rtype: bool
 
         """
-        return _TopOpeBRep.TopOpeBRep_EdgesIntersector_MorePoint(self, *args)
+        return _TopOpeBRep.TopOpeBRep_EdgesIntersector_MorePoint(self)
 
-    def NextPoint(self, *args) -> "void" :
+    def NextPoint(self):
         """
         :rtype: None
 
         """
-        return _TopOpeBRep.TopOpeBRep_EdgesIntersector_NextPoint(self, *args)
+        return _TopOpeBRep.TopOpeBRep_EdgesIntersector_NextPoint(self)
 
-    def Points(self, *args) -> "TopOpeBRep_SequenceOfPoint2d const &" :
+    def Points(self):
         """
         :rtype: TopOpeBRep_SequenceOfPoint2d
 
         """
-        return _TopOpeBRep.TopOpeBRep_EdgesIntersector_Points(self, *args)
+        return _TopOpeBRep.TopOpeBRep_EdgesIntersector_Points(self)
 
-    def Point(self, *args) -> "TopOpeBRep_Point2d const &" :
+    def Point(self, *args):
         """
         :rtype: TopOpeBRep_Point2d
 
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :rtype: TopOpeBRep_Point2d
 
         """
         return _TopOpeBRep.TopOpeBRep_EdgesIntersector_Point(self, *args)
 
-    def ReduceSegment(self, *args) -> "Standard_Boolean" :
+    def ReduceSegment(self, *args):
         """
         :param P1:
         :type P1: TopOpeBRep_Point2d &
@@ -1350,12 +1421,12 @@ class TopOpeBRep_EdgesIntersector(object):
         """
         return _TopOpeBRep.TopOpeBRep_EdgesIntersector_ReduceSegment(self, *args)
 
-    def Status1(self, *args) -> "TopOpeBRep_P2Dstatus" :
+    def Status1(self):
         """
         :rtype: TopOpeBRep_P2Dstatus
 
         """
-        return _TopOpeBRep.TopOpeBRep_EdgesIntersector_Status1(self, *args)
+        return _TopOpeBRep.TopOpeBRep_EdgesIntersector_Status1(self)
 
     def __del__(self):
     	try:
@@ -1406,7 +1477,7 @@ class TopOpeBRep_FFDumper(OCC.MMgt.MMgt_TShared):
 
         """
         _TopOpeBRep.TopOpeBRep_FFDumper_swiginit(self,_TopOpeBRep.new_TopOpeBRep_FFDumper(*args))
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
         :param PFF:
         :type PFF: TopOpeBRep_PFacesFiller &
@@ -1415,10 +1486,10 @@ class TopOpeBRep_FFDumper(OCC.MMgt.MMgt_TShared):
         """
         return _TopOpeBRep.TopOpeBRep_FFDumper_Init(self, *args)
 
-    def DumpLine(self, *args) -> "void" :
+    def DumpLine(self, *args):
         """
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :rtype: None
 
         :param L:
@@ -1428,7 +1499,7 @@ class TopOpeBRep_FFDumper(OCC.MMgt.MMgt_TShared):
         """
         return _TopOpeBRep.TopOpeBRep_FFDumper_DumpLine(self, *args)
 
-    def DumpVP(self, *args) -> "void" :
+    def DumpVP(self, *args):
         """
         :param VP:
         :type VP: TopOpeBRep_VPointInter &
@@ -1437,31 +1508,31 @@ class TopOpeBRep_FFDumper(OCC.MMgt.MMgt_TShared):
         :param VP:
         :type VP: TopOpeBRep_VPointInter &
         :param ISI:
-        :type ISI: int
+        :type ISI: Standard_Integer
         :rtype: None
 
         """
         return _TopOpeBRep.TopOpeBRep_FFDumper_DumpVP(self, *args)
 
-    def ExploreIndex(self, *args) -> "Standard_Integer" :
+    def ExploreIndex(self, *args):
         """
         :param S:
         :type S: TopoDS_Shape &
         :param ISI:
-        :type ISI: int
+        :type ISI: Standard_Integer
         :rtype: int
 
         """
         return _TopOpeBRep.TopOpeBRep_FFDumper_ExploreIndex(self, *args)
 
-    def DumpDSP(self, *args) -> "void" :
+    def DumpDSP(self, *args):
         """
         :param VP:
         :type VP: TopOpeBRep_VPointInter &
         :param GK:
         :type GK: TopOpeBRepDS_Kind
         :param G:
-        :type G: int
+        :type G: Standard_Integer
         :param newinDS:
         :type newinDS: bool
         :rtype: None
@@ -1469,18 +1540,18 @@ class TopOpeBRep_FFDumper(OCC.MMgt.MMgt_TShared):
         """
         return _TopOpeBRep.TopOpeBRep_FFDumper_DumpDSP(self, *args)
 
-    def PFacesFillerDummy(self, *args) -> "TopOpeBRep_PFacesFiller" :
+    def PFacesFillerDummy(self):
         """
         :rtype: TopOpeBRep_PFacesFiller
 
         """
-        return _TopOpeBRep.TopOpeBRep_FFDumper_PFacesFillerDummy(self, *args)
+        return _TopOpeBRep.TopOpeBRep_FFDumper_PFacesFillerDummy(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(TopOpeBRep_FFDumper self)"""
         return _TopOpeBRep.TopOpeBRep_FFDumper__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_TopOpeBRep_FFDumper" :
+    def GetHandle(self):
         """GetHandle(TopOpeBRep_FFDumper self) -> Handle_TopOpeBRep_FFDumper"""
         return _TopOpeBRep.TopOpeBRep_FFDumper_GetHandle(self)
 
@@ -1524,19 +1595,20 @@ Handle_TopOpeBRep_FFDumper._kill_pointed = new_instancemethod(_TopOpeBRep.Handle
 Handle_TopOpeBRep_FFDumper_swigregister = _TopOpeBRep.Handle_TopOpeBRep_FFDumper_swigregister
 Handle_TopOpeBRep_FFDumper_swigregister(Handle_TopOpeBRep_FFDumper)
 
-def Handle_TopOpeBRep_FFDumper_DownCast(*args) -> "Handle_TopOpeBRep_FFDumper const" :
+def Handle_TopOpeBRep_FFDumper_DownCast(*args):
   return _TopOpeBRep.Handle_TopOpeBRep_FFDumper_DownCast(*args)
 Handle_TopOpeBRep_FFDumper_DownCast = _TopOpeBRep.Handle_TopOpeBRep_FFDumper_DownCast
 
 class TopOpeBRep_FFTransitionTool(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
+    def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def ProcessLineTransition(*args) -> "TopOpeBRepDS_Transition" :
+    def ProcessLineTransition(*args):
         """
         :param P:
         :type P: TopOpeBRep_VPointInter &
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param EdgeOrientation:
         :type EdgeOrientation: TopAbs_Orientation
         :rtype: TopOpeBRepDS_Transition
@@ -1551,12 +1623,12 @@ class TopOpeBRep_FFTransitionTool(object):
         return _TopOpeBRep.TopOpeBRep_FFTransitionTool_ProcessLineTransition(*args)
 
     ProcessLineTransition = staticmethod(ProcessLineTransition)
-    def ProcessEdgeTransition(*args) -> "TopOpeBRepDS_Transition" :
+    def ProcessEdgeTransition(*args):
         """
         :param P:
         :type P: TopOpeBRep_VPointInter &
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param LineOrientation:
         :type LineOrientation: TopAbs_Orientation
         :rtype: TopOpeBRepDS_Transition
@@ -1565,12 +1637,12 @@ class TopOpeBRep_FFTransitionTool(object):
         return _TopOpeBRep.TopOpeBRep_FFTransitionTool_ProcessEdgeTransition(*args)
 
     ProcessEdgeTransition = staticmethod(ProcessEdgeTransition)
-    def ProcessFaceTransition(*args) -> "TopOpeBRepDS_Transition" :
+    def ProcessFaceTransition(*args):
         """
         :param L:
         :type L: TopOpeBRep_LineInter &
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param FaceOrientation:
         :type FaceOrientation: TopAbs_Orientation
         :rtype: TopOpeBRepDS_Transition
@@ -1579,14 +1651,14 @@ class TopOpeBRep_FFTransitionTool(object):
         return _TopOpeBRep.TopOpeBRep_FFTransitionTool_ProcessFaceTransition(*args)
 
     ProcessFaceTransition = staticmethod(ProcessFaceTransition)
-    def ProcessEdgeONTransition(*args) -> "TopOpeBRepDS_Transition" :
+    def ProcessEdgeONTransition(*args):
         """
         * compute transition on 'IntPatch_Restriction line' edge <R> when crossing edge <E> of face <F> at point <VP>. VP is given on edge <E> of face <F> of index <Index> (1 or 2). <VP> has been classified by FacesFiller as TopAbs_ON an edge <R> of the other face than <F> of current (face/face) intersection. Transition depends on the orientation of E in F. This method should be provided by IntPatch_Line (NYI)
 
         :param VP:
         :type VP: TopOpeBRep_VPointInter &
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param R:
         :type R: TopoDS_Shape &
         :param E:
@@ -1599,8 +1671,6 @@ class TopOpeBRep_FFTransitionTool(object):
         return _TopOpeBRep.TopOpeBRep_FFTransitionTool_ProcessEdgeONTransition(*args)
 
     ProcessEdgeONTransition = staticmethod(ProcessEdgeONTransition)
-    def __init__(self): 
-        _TopOpeBRep.TopOpeBRep_FFTransitionTool_swiginit(self,_TopOpeBRep.new_TopOpeBRep_FFTransitionTool())
     def __del__(self):
     	try:
     		self.thisown = False
@@ -1613,12 +1683,12 @@ TopOpeBRep_FFTransitionTool._kill_pointed = new_instancemethod(_TopOpeBRep.TopOp
 TopOpeBRep_FFTransitionTool_swigregister = _TopOpeBRep.TopOpeBRep_FFTransitionTool_swigregister
 TopOpeBRep_FFTransitionTool_swigregister(TopOpeBRep_FFTransitionTool)
 
-def TopOpeBRep_FFTransitionTool_ProcessLineTransition(*args) -> "TopOpeBRepDS_Transition" :
+def TopOpeBRep_FFTransitionTool_ProcessLineTransition(*args):
   """
     :param P:
     :type P: TopOpeBRep_VPointInter &
     :param Index:
-    :type Index: int
+    :type Index: Standard_Integer
     :param EdgeOrientation:
     :type EdgeOrientation: TopAbs_Orientation
     :rtype: TopOpeBRepDS_Transition
@@ -1632,12 +1702,12 @@ def TopOpeBRep_FFTransitionTool_ProcessLineTransition(*args) -> "TopOpeBRepDS_Tr
     """
   return _TopOpeBRep.TopOpeBRep_FFTransitionTool_ProcessLineTransition(*args)
 
-def TopOpeBRep_FFTransitionTool_ProcessEdgeTransition(*args) -> "TopOpeBRepDS_Transition" :
+def TopOpeBRep_FFTransitionTool_ProcessEdgeTransition(*args):
   """
     :param P:
     :type P: TopOpeBRep_VPointInter &
     :param Index:
-    :type Index: int
+    :type Index: Standard_Integer
     :param LineOrientation:
     :type LineOrientation: TopAbs_Orientation
     :rtype: TopOpeBRepDS_Transition
@@ -1645,12 +1715,12 @@ def TopOpeBRep_FFTransitionTool_ProcessEdgeTransition(*args) -> "TopOpeBRepDS_Tr
     """
   return _TopOpeBRep.TopOpeBRep_FFTransitionTool_ProcessEdgeTransition(*args)
 
-def TopOpeBRep_FFTransitionTool_ProcessFaceTransition(*args) -> "TopOpeBRepDS_Transition" :
+def TopOpeBRep_FFTransitionTool_ProcessFaceTransition(*args):
   """
     :param L:
     :type L: TopOpeBRep_LineInter &
     :param Index:
-    :type Index: int
+    :type Index: Standard_Integer
     :param FaceOrientation:
     :type FaceOrientation: TopAbs_Orientation
     :rtype: TopOpeBRepDS_Transition
@@ -1658,14 +1728,14 @@ def TopOpeBRep_FFTransitionTool_ProcessFaceTransition(*args) -> "TopOpeBRepDS_Tr
     """
   return _TopOpeBRep.TopOpeBRep_FFTransitionTool_ProcessFaceTransition(*args)
 
-def TopOpeBRep_FFTransitionTool_ProcessEdgeONTransition(*args) -> "TopOpeBRepDS_Transition" :
+def TopOpeBRep_FFTransitionTool_ProcessEdgeONTransition(*args):
   """
     * compute transition on 'IntPatch_Restriction line' edge <R> when crossing edge <E> of face <F> at point <VP>. VP is given on edge <E> of face <F> of index <Index> (1 or 2). <VP> has been classified by FacesFiller as TopAbs_ON an edge <R> of the other face than <F> of current (face/face) intersection. Transition depends on the orientation of E in F. This method should be provided by IntPatch_Line (NYI)
 
     :param VP:
     :type VP: TopOpeBRep_VPointInter &
     :param Index:
-    :type Index: int
+    :type Index: Standard_Integer
     :param R:
     :type R: TopoDS_Shape &
     :param E:
@@ -1680,13 +1750,13 @@ def TopOpeBRep_FFTransitionTool_ProcessEdgeONTransition(*args) -> "TopOpeBRepDS_
 class TopOpeBRep_FaceEdgeFiller(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _TopOpeBRep.TopOpeBRep_FaceEdgeFiller_swiginit(self,_TopOpeBRep.new_TopOpeBRep_FaceEdgeFiller(*args))
-    def Insert(self, *args) -> "void" :
+        _TopOpeBRep.TopOpeBRep_FaceEdgeFiller_swiginit(self,_TopOpeBRep.new_TopOpeBRep_FaceEdgeFiller())
+    def Insert(self, *args):
         """
         :param F:
         :type F: TopoDS_Shape &
@@ -1717,13 +1787,13 @@ TopOpeBRep_FaceEdgeFiller_swigregister(TopOpeBRep_FaceEdgeFiller)
 class TopOpeBRep_FaceEdgeIntersector(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _TopOpeBRep.TopOpeBRep_FaceEdgeIntersector_swiginit(self,_TopOpeBRep.new_TopOpeBRep_FaceEdgeIntersector(*args))
-    def Perform(self, *args) -> "void" :
+        _TopOpeBRep.TopOpeBRep_FaceEdgeIntersector_swiginit(self,_TopOpeBRep.new_TopOpeBRep_FaceEdgeIntersector())
+    def Perform(self, *args):
         """
         :param F:
         :type F: TopoDS_Shape &
@@ -1734,25 +1804,25 @@ class TopOpeBRep_FaceEdgeIntersector(object):
         """
         return _TopOpeBRep.TopOpeBRep_FaceEdgeIntersector_Perform(self, *args)
 
-    def IsEmpty(self, *args) -> "Standard_Boolean" :
+    def IsEmpty(self):
         """
         :rtype: bool
 
         """
-        return _TopOpeBRep.TopOpeBRep_FaceEdgeIntersector_IsEmpty(self, *args)
+        return _TopOpeBRep.TopOpeBRep_FaceEdgeIntersector_IsEmpty(self)
 
-    def Shape(self, *args) -> "TopoDS_Shape const" :
+    def Shape(self, *args):
         """
         * returns intersected face or edge according to value of <Index> = 1 or 2
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: TopoDS_Shape
 
         """
         return _TopOpeBRep.TopOpeBRep_FaceEdgeIntersector_Shape(self, *args)
 
-    def ForceTolerance(self, *args) -> "void" :
+    def ForceTolerance(self, *args):
         """
         * Force the tolerance values used by the next Perform(S1,S2) call.
 
@@ -1763,62 +1833,62 @@ class TopOpeBRep_FaceEdgeIntersector(object):
         """
         return _TopOpeBRep.TopOpeBRep_FaceEdgeIntersector_ForceTolerance(self, *args)
 
-    def Tolerance(self, *args) -> "Standard_Real" :
+    def Tolerance(self):
         """
         * Return the tolerance value used in the last Perform() call If ForceTolerance() has been called, return the given value. If not, return value extracted from shapes.
 
         :rtype: float
 
         """
-        return _TopOpeBRep.TopOpeBRep_FaceEdgeIntersector_Tolerance(self, *args)
+        return _TopOpeBRep.TopOpeBRep_FaceEdgeIntersector_Tolerance(self)
 
-    def NbPoints(self, *args) -> "Standard_Integer" :
+    def NbPoints(self):
         """
         :rtype: int
 
         """
-        return _TopOpeBRep.TopOpeBRep_FaceEdgeIntersector_NbPoints(self, *args)
+        return _TopOpeBRep.TopOpeBRep_FaceEdgeIntersector_NbPoints(self)
 
-    def InitPoint(self, *args) -> "void" :
+    def InitPoint(self):
         """
         :rtype: None
 
         """
-        return _TopOpeBRep.TopOpeBRep_FaceEdgeIntersector_InitPoint(self, *args)
+        return _TopOpeBRep.TopOpeBRep_FaceEdgeIntersector_InitPoint(self)
 
-    def MorePoint(self, *args) -> "Standard_Boolean" :
+    def MorePoint(self):
         """
         :rtype: bool
 
         """
-        return _TopOpeBRep.TopOpeBRep_FaceEdgeIntersector_MorePoint(self, *args)
+        return _TopOpeBRep.TopOpeBRep_FaceEdgeIntersector_MorePoint(self)
 
-    def NextPoint(self, *args) -> "void" :
+    def NextPoint(self):
         """
         :rtype: None
 
         """
-        return _TopOpeBRep.TopOpeBRep_FaceEdgeIntersector_NextPoint(self, *args)
+        return _TopOpeBRep.TopOpeBRep_FaceEdgeIntersector_NextPoint(self)
 
-    def Value(self, *args) -> "gp_Pnt" :
+    def Value(self):
         """
         * return the 3D point of the current intersection point.
 
         :rtype: gp_Pnt
 
         """
-        return _TopOpeBRep.TopOpeBRep_FaceEdgeIntersector_Value(self, *args)
+        return _TopOpeBRep.TopOpeBRep_FaceEdgeIntersector_Value(self)
 
-    def Parameter(self, *args) -> "Standard_Real" :
+    def Parameter(self):
         """
         * parametre de Value() sur l'arete
 
         :rtype: float
 
         """
-        return _TopOpeBRep.TopOpeBRep_FaceEdgeIntersector_Parameter(self, *args)
+        return _TopOpeBRep.TopOpeBRep_FaceEdgeIntersector_Parameter(self)
 
-    def UVPoint(self, *args) -> "void" :
+    def UVPoint(self, *args):
         """
         * parametre de Value() sur la face
 
@@ -1829,21 +1899,21 @@ class TopOpeBRep_FaceEdgeIntersector(object):
         """
         return _TopOpeBRep.TopOpeBRep_FaceEdgeIntersector_UVPoint(self, *args)
 
-    def State(self, *args) -> "TopAbs_State" :
+    def State(self):
         """
         * IN ou ON / a la face. Les points OUT ne sont pas retournes.
 
         :rtype: TopAbs_State
 
         """
-        return _TopOpeBRep.TopOpeBRep_FaceEdgeIntersector_State(self, *args)
+        return _TopOpeBRep.TopOpeBRep_FaceEdgeIntersector_State(self)
 
-    def Transition(self, *args) -> "TopOpeBRepDS_Transition" :
+    def Transition(self, *args):
         """
         * Index = 1 transition par rapport a la face, en cheminant sur l'arete
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param FaceOrientation:
         :type FaceOrientation: TopAbs_Orientation
         :rtype: TopOpeBRepDS_Transition
@@ -1851,7 +1921,7 @@ class TopOpeBRep_FaceEdgeIntersector(object):
         """
         return _TopOpeBRep.TopOpeBRep_FaceEdgeIntersector_Transition(self, *args)
 
-    def IsVertex(self, *args) -> "Standard_Boolean" :
+    def IsVertex(self, *args):
         """
         :param S:
         :type S: TopoDS_Shape &
@@ -1864,7 +1934,7 @@ class TopOpeBRep_FaceEdgeIntersector(object):
         :rtype: bool
 
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :param V:
         :type V: TopoDS_Vertex &
         :rtype: bool
@@ -1872,14 +1942,14 @@ class TopOpeBRep_FaceEdgeIntersector(object):
         """
         return _TopOpeBRep.TopOpeBRep_FaceEdgeIntersector_IsVertex(self, *args)
 
-    def Index(self, *args) -> "Standard_Integer" :
+    def Index(self):
         """
         * trace only
 
         :rtype: int
 
         """
-        return _TopOpeBRep.TopOpeBRep_FaceEdgeIntersector_Index(self, *args)
+        return _TopOpeBRep.TopOpeBRep_FaceEdgeIntersector_Index(self)
 
     def __del__(self):
     	try:
@@ -1912,13 +1982,13 @@ TopOpeBRep_FaceEdgeIntersector_swigregister(TopOpeBRep_FaceEdgeIntersector)
 class TopOpeBRep_FacesFiller(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _TopOpeBRep.TopOpeBRep_FacesFiller_swiginit(self,_TopOpeBRep.new_TopOpeBRep_FacesFiller(*args))
-    def Insert(self, *args) -> "void" :
+        _TopOpeBRep.TopOpeBRep_FacesFiller_swiginit(self,_TopOpeBRep.new_TopOpeBRep_FacesFiller())
+    def Insert(self, *args):
         """
         * Stores in <DS> the intersections of <S1> and <S2>.
 
@@ -1935,30 +2005,30 @@ class TopOpeBRep_FacesFiller(object):
         """
         return _TopOpeBRep.TopOpeBRep_FacesFiller_Insert(self, *args)
 
-    def ProcessSectionEdges(self, *args) -> "void" :
+    def ProcessSectionEdges(self):
         """
         :rtype: None
 
         """
-        return _TopOpeBRep.TopOpeBRep_FacesFiller_ProcessSectionEdges(self, *args)
+        return _TopOpeBRep.TopOpeBRep_FacesFiller_ProcessSectionEdges(self)
 
-    def ChangePointClassifier(self, *args) -> "TopOpeBRep_PointClassifier &" :
+    def ChangePointClassifier(self):
         """
         :rtype: TopOpeBRep_PointClassifier
 
         """
-        return _TopOpeBRep.TopOpeBRep_FacesFiller_ChangePointClassifier(self, *args)
+        return _TopOpeBRep.TopOpeBRep_FacesFiller_ChangePointClassifier(self)
 
-    def PShapeClassifier(self, *args) -> "TopOpeBRepTool_PShapeClassifier" :
+    def PShapeClassifier(self):
         """
         * return field myPShapeClassifier.
 
         :rtype: TopOpeBRepTool_PShapeClassifier
 
         """
-        return _TopOpeBRep.TopOpeBRep_FacesFiller_PShapeClassifier(self, *args)
+        return _TopOpeBRep.TopOpeBRep_FacesFiller_PShapeClassifier(self)
 
-    def SetPShapeClassifier(self, *args) -> "void" :
+    def SetPShapeClassifier(self, *args):
         """
         * set field myPShapeClassifier.
 
@@ -1969,7 +2039,7 @@ class TopOpeBRep_FacesFiller(object):
         """
         return _TopOpeBRep.TopOpeBRep_FacesFiller_SetPShapeClassifier(self, *args)
 
-    def LoadLine(self, *args) -> "void" :
+    def LoadLine(self, *args):
         """
         :param L:
         :type L: TopOpeBRep_LineInter &
@@ -1978,7 +2048,7 @@ class TopOpeBRep_FacesFiller(object):
         """
         return _TopOpeBRep.TopOpeBRep_FacesFiller_LoadLine(self, *args)
 
-    def CheckLine(self, *args) -> "Standard_Boolean" :
+    def CheckLine(self, *args):
         """
         :param L:
         :type L: TopOpeBRep_LineInter &
@@ -1987,7 +2057,7 @@ class TopOpeBRep_FacesFiller(object):
         """
         return _TopOpeBRep.TopOpeBRep_FacesFiller_CheckLine(self, *args)
 
-    def VP_PositionOnL(self, *args) -> "void" :
+    def VP_PositionOnL(self, *args):
         """
         * compute position of VPoints of non-restriction line L.
 
@@ -1998,7 +2068,7 @@ class TopOpeBRep_FacesFiller(object):
         """
         return _TopOpeBRep.TopOpeBRep_FacesFiller_VP_PositionOnL(self, *args)
 
-    def VP_PositionOnR(self, *args) -> "void" :
+    def VP_PositionOnR(self, *args):
         """
         * compute position of VPoints of restriction line L.
 
@@ -2009,7 +2079,7 @@ class TopOpeBRep_FacesFiller(object):
         """
         return _TopOpeBRep.TopOpeBRep_FacesFiller_VP_PositionOnR(self, *args)
 
-    def VP_Position(self, *args) -> "void" :
+    def VP_Position(self, *args):
         """
         * compute position of VPoints of lines
 
@@ -2034,57 +2104,57 @@ class TopOpeBRep_FacesFiller(object):
         """
         return _TopOpeBRep.TopOpeBRep_FacesFiller_VP_Position(self, *args)
 
-    def ProcessLine(self, *args) -> "void" :
+    def ProcessLine(self):
         """
         * Process current intersection line (set by LoadLine)
 
         :rtype: None
 
         """
-        return _TopOpeBRep.TopOpeBRep_FacesFiller_ProcessLine(self, *args)
+        return _TopOpeBRep.TopOpeBRep_FacesFiller_ProcessLine(self)
 
-    def ResetDSC(self, *args) -> "void" :
+    def ResetDSC(self):
         """
         :rtype: None
 
         """
-        return _TopOpeBRep.TopOpeBRep_FacesFiller_ResetDSC(self, *args)
+        return _TopOpeBRep.TopOpeBRep_FacesFiller_ResetDSC(self)
 
-    def ProcessRLine(self, *args) -> "void" :
+    def ProcessRLine(self):
         """
         * Process current restriction line, adding restriction edge and computing face/edge interference.
 
         :rtype: None
 
         """
-        return _TopOpeBRep.TopOpeBRep_FacesFiller_ProcessRLine(self, *args)
+        return _TopOpeBRep.TopOpeBRep_FacesFiller_ProcessRLine(self)
 
-    def FillLineVPonR(self, *args) -> "void" :
+    def FillLineVPonR(self):
         """
         * VP processing for restriction line and line sharing same domain with section edges :  - if restriction :  Adds restriction edges as section edges and compute face/edge interference.  - if same domain :  If line share same domain with section edges, compute parts of line IN/IN the two faces, and compute curve/point interference for VP boundaries.
 
         :rtype: None
 
         """
-        return _TopOpeBRep.TopOpeBRep_FacesFiller_FillLineVPonR(self, *args)
+        return _TopOpeBRep.TopOpeBRep_FacesFiller_FillLineVPonR(self)
 
-    def FillLine(self, *args) -> "void" :
+    def FillLine(self):
         """
         :rtype: None
 
         """
-        return _TopOpeBRep.TopOpeBRep_FacesFiller_FillLine(self, *args)
+        return _TopOpeBRep.TopOpeBRep_FacesFiller_FillLine(self)
 
-    def AddShapesLine(self, *args) -> "void" :
+    def AddShapesLine(self):
         """
         * compute 3d curve, pcurves and face/curve interferences for current NDSC. Add them to the DS.
 
         :rtype: None
 
         """
-        return _TopOpeBRep.TopOpeBRep_FacesFiller_AddShapesLine(self, *args)
+        return _TopOpeBRep.TopOpeBRep_FacesFiller_AddShapesLine(self)
 
-    def GetESL(self, *args) -> "void" :
+    def GetESL(self, *args):
         """
         * Get map <mapES > of restriction edges having parts IN one of the 2 faces.
 
@@ -2095,7 +2165,7 @@ class TopOpeBRep_FacesFiller(object):
         """
         return _TopOpeBRep.TopOpeBRep_FacesFiller_GetESL(self, *args)
 
-    def ProcessVPR(self, *args) -> "void" :
+    def ProcessVPR(self, *args):
         """
         * calling the followings ProcessVPIonR and ProcessVPonR.
 
@@ -2108,7 +2178,7 @@ class TopOpeBRep_FacesFiller(object):
         """
         return _TopOpeBRep.TopOpeBRep_FacesFiller_ProcessVPR(self, *args)
 
-    def ProcessVPIonR(self, *args) -> "void" :
+    def ProcessVPIonR(self, *args):
         """
         * processing ProcessVPonR for VPI.
 
@@ -2119,13 +2189,13 @@ class TopOpeBRep_FacesFiller(object):
         :param F1:
         :type F1: TopoDS_Shape &
         :param ShapeIndex:
-        :type ShapeIndex: int
+        :type ShapeIndex: Standard_Integer
         :rtype: None
 
         """
         return _TopOpeBRep.TopOpeBRep_FacesFiller_ProcessVPIonR(self, *args)
 
-    def ProcessVPonR(self, *args) -> "void" :
+    def ProcessVPonR(self, *args):
         """
         * adds <VP>'s geometric point (if not stored) and computes (curve or edge)/(point or vertex) interference.
 
@@ -2136,13 +2206,13 @@ class TopOpeBRep_FacesFiller(object):
         :param F1:
         :type F1: TopoDS_Shape &
         :param ShapeIndex:
-        :type ShapeIndex: int
+        :type ShapeIndex: Standard_Integer
         :rtype: None
 
         """
         return _TopOpeBRep.TopOpeBRep_FacesFiller_ProcessVPonR(self, *args)
 
-    def ProcessVPonclosingR(self, *args) -> "void" :
+    def ProcessVPonclosingR(self, *args):
         """
         * VP processing on closing arc.
 
@@ -2151,13 +2221,13 @@ class TopOpeBRep_FacesFiller(object):
         :param F1:
         :type F1: TopoDS_Shape &
         :param ShapeIndex:
-        :type ShapeIndex: int
+        :type ShapeIndex: Standard_Integer
         :param transEdge:
         :type transEdge: TopOpeBRepDS_Transition &
         :param PVKind:
         :type PVKind: TopOpeBRepDS_Kind
         :param PVIndex:
-        :type PVIndex: int
+        :type PVIndex: Standard_Integer
         :param EPIfound:
         :type EPIfound: bool
         :param IEPI:
@@ -2167,18 +2237,18 @@ class TopOpeBRep_FacesFiller(object):
         """
         return _TopOpeBRep.TopOpeBRep_FacesFiller_ProcessVPonclosingR(self, *args)
 
-    def ProcessVPondgE(self, *args) -> "Standard_Boolean" :
+    def ProcessVPondgE(self, *args):
         """
         * VP processing on degenerated arc.
 
         :param VP:
         :type VP: TopOpeBRep_VPointInter &
         :param ShapeIndex:
-        :type ShapeIndex: int
+        :type ShapeIndex: Standard_Integer
         :param PVKind:
         :type PVKind: TopOpeBRepDS_Kind &
         :param PVIndex:
-        :type PVIndex: int &
+        :type PVIndex: Standard_Integer &
         :param EPIfound:
         :type EPIfound: bool
         :param IEPI:
@@ -2192,7 +2262,7 @@ class TopOpeBRep_FacesFiller(object):
         """
         return _TopOpeBRep.TopOpeBRep_FacesFiller_ProcessVPondgE(self, *args)
 
-    def ProcessVPInotonR(self, *args) -> "void" :
+    def ProcessVPInotonR(self, *args):
         """
         * processing ProcessVPnotonR for VPI.
 
@@ -2203,7 +2273,7 @@ class TopOpeBRep_FacesFiller(object):
         """
         return _TopOpeBRep.TopOpeBRep_FacesFiller_ProcessVPInotonR(self, *args)
 
-    def ProcessVPnotonR(self, *args) -> "void" :
+    def ProcessVPnotonR(self, *args):
         """
         * adds <VP>'s geometrical point to the DS (if not stored) and computes curve point interference.
 
@@ -2214,7 +2284,7 @@ class TopOpeBRep_FacesFiller(object):
         """
         return _TopOpeBRep.TopOpeBRep_FacesFiller_ProcessVPnotonR(self, *args)
 
-    def GetGeometry(self, *args) -> "Standard_Boolean" :
+    def GetGeometry(self, *args):
         """
         * Get the geometry of a DS point <DSP>. Search for it with ScanInterfList (previous method). if found, set <G> to the geometry of the interference found. else, add the point <DSP> in the <DS> and set <G> to the value of the new geometry such created. returns the value of ScanInterfList().
 
@@ -2223,7 +2293,7 @@ class TopOpeBRep_FacesFiller(object):
         :param VP:
         :type VP: TopOpeBRep_VPointInter &
         :param G:
-        :type G: int &
+        :type G: Standard_Integer &
         :param K:
         :type K: TopOpeBRepDS_Kind &
         :rtype: bool
@@ -2231,12 +2301,12 @@ class TopOpeBRep_FacesFiller(object):
         """
         return _TopOpeBRep.TopOpeBRep_FacesFiller_GetGeometry(self, *args)
 
-    def MakeGeometry(self, *args) -> "Standard_Integer" :
+    def MakeGeometry(self, *args):
         """
         :param VP:
         :type VP: TopOpeBRep_VPointInter &
         :param ShapeIndex:
-        :type ShapeIndex: int
+        :type ShapeIndex: Standard_Integer
         :param K:
         :type K: TopOpeBRepDS_Kind &
         :rtype: int
@@ -2244,7 +2314,7 @@ class TopOpeBRep_FacesFiller(object):
         """
         return _TopOpeBRep.TopOpeBRep_FacesFiller_MakeGeometry(self, *args)
 
-    def StoreCurveInterference(self, *args) -> "void" :
+    def StoreCurveInterference(self, *args):
         """
         * Add interference <I> to list myDSCIL. on a given line, at first call, add a new DS curve.
 
@@ -2255,7 +2325,7 @@ class TopOpeBRep_FacesFiller(object):
         """
         return _TopOpeBRep.TopOpeBRep_FacesFiller_StoreCurveInterference(self, *args)
 
-    def GetFFGeometry(self, *args) -> "Standard_Boolean" :
+    def GetFFGeometry(self, *args):
         """
         * search for G = geometry of Point which is identical to <DSP> among the DS Points created in the CURRENT face/face intersection ( current Insert() call).
 
@@ -2264,7 +2334,7 @@ class TopOpeBRep_FacesFiller(object):
         :param K:
         :type K: TopOpeBRepDS_Kind &
         :param G:
-        :type G: int &
+        :type G: Standard_Integer &
         :rtype: bool
 
         * search for G = geometry of Point which is identical to <VP> among the DS Points created in the CURRENT face/face intersection ( current Insert() call).
@@ -2274,101 +2344,101 @@ class TopOpeBRep_FacesFiller(object):
         :param K:
         :type K: TopOpeBRepDS_Kind &
         :param G:
-        :type G: int &
+        :type G: Standard_Integer &
         :rtype: bool
 
         """
         return _TopOpeBRep.TopOpeBRep_FacesFiller_GetFFGeometry(self, *args)
 
-    def ChangeFacesIntersector(self, *args) -> "TopOpeBRep_FacesIntersector &" :
+    def ChangeFacesIntersector(self):
         """
         :rtype: TopOpeBRep_FacesIntersector
 
         """
-        return _TopOpeBRep.TopOpeBRep_FacesFiller_ChangeFacesIntersector(self, *args)
+        return _TopOpeBRep.TopOpeBRep_FacesFiller_ChangeFacesIntersector(self)
 
-    def HDataStructure(self, *args) -> "Handle_TopOpeBRepDS_HDataStructure" :
+    def HDataStructure(self):
         """
         :rtype: Handle_TopOpeBRepDS_HDataStructure
 
         """
-        return _TopOpeBRep.TopOpeBRep_FacesFiller_HDataStructure(self, *args)
+        return _TopOpeBRep.TopOpeBRep_FacesFiller_HDataStructure(self)
 
-    def ChangeDataStructure(self, *args) -> "TopOpeBRepDS_DataStructure &" :
+    def ChangeDataStructure(self):
         """
         :rtype: TopOpeBRepDS_DataStructure
 
         """
-        return _TopOpeBRep.TopOpeBRep_FacesFiller_ChangeDataStructure(self, *args)
+        return _TopOpeBRep.TopOpeBRep_FacesFiller_ChangeDataStructure(self)
 
-    def Face(self, *args) -> "TopoDS_Face const" :
+    def Face(self, *args):
         """
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :rtype: TopoDS_Face
 
         """
         return _TopOpeBRep.TopOpeBRep_FacesFiller_Face(self, *args)
 
-    def FaceFaceTransition(self, *args) -> "TopOpeBRepDS_Transition const &" :
+    def FaceFaceTransition(self, *args):
         """
         :param L:
         :type L: TopOpeBRep_LineInter &
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :rtype: TopOpeBRepDS_Transition
 
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :rtype: TopOpeBRepDS_Transition
 
         """
         return _TopOpeBRep.TopOpeBRep_FacesFiller_FaceFaceTransition(self, *args)
 
-    def PFacesIntersectorDummy(self, *args) -> "TopOpeBRep_PFacesIntersector" :
+    def PFacesIntersectorDummy(self):
         """
         :rtype: TopOpeBRep_PFacesIntersector
 
         """
-        return _TopOpeBRep.TopOpeBRep_FacesFiller_PFacesIntersectorDummy(self, *args)
+        return _TopOpeBRep.TopOpeBRep_FacesFiller_PFacesIntersectorDummy(self)
 
-    def PDataStructureDummy(self, *args) -> "TopOpeBRepDS_PDataStructure" :
+    def PDataStructureDummy(self):
         """
         :rtype: TopOpeBRepDS_PDataStructure
 
         """
-        return _TopOpeBRep.TopOpeBRep_FacesFiller_PDataStructureDummy(self, *args)
+        return _TopOpeBRep.TopOpeBRep_FacesFiller_PDataStructureDummy(self)
 
-    def PLineInterDummy(self, *args) -> "TopOpeBRep_PLineInter" :
+    def PLineInterDummy(self):
         """
         :rtype: TopOpeBRep_PLineInter
 
         """
-        return _TopOpeBRep.TopOpeBRep_FacesFiller_PLineInterDummy(self, *args)
+        return _TopOpeBRep.TopOpeBRep_FacesFiller_PLineInterDummy(self)
 
-    def SetTraceIndex(self, *args) -> "void" :
+    def SetTraceIndex(self, *args):
         """
         :param exF1:
-        :type exF1: int
+        :type exF1: Standard_Integer
         :param exF2:
-        :type exF2: int
+        :type exF2: Standard_Integer
         :rtype: None
 
         """
         return _TopOpeBRep.TopOpeBRep_FacesFiller_SetTraceIndex(self, *args)
 
-    def GetTraceIndex(self, *args) -> "void" :
+    def GetTraceIndex(self):
         """
         :param exF1:
-        :type exF1: int &
+        :type exF1: Standard_Integer &
         :param exF2:
-        :type exF2: int &
+        :type exF2: Standard_Integer &
         :rtype: None
 
         """
-        return _TopOpeBRep.TopOpeBRep_FacesFiller_GetTraceIndex(self, *args)
+        return _TopOpeBRep.TopOpeBRep_FacesFiller_GetTraceIndex(self)
 
-    def Lminmax(*args) -> "Standard_Real &, Standard_Real &" :
+    def Lminmax(*args):
         """
         * Computes <pmin> and <pmax> the upper and lower bounds of <L> enclosing all vpoints.
 
@@ -2384,7 +2454,7 @@ class TopOpeBRep_FacesFiller(object):
         return _TopOpeBRep.TopOpeBRep_FacesFiller_Lminmax(*args)
 
     Lminmax = staticmethod(Lminmax)
-    def LSameDomainERL(*args) -> "Standard_Boolean" :
+    def LSameDomainERL(*args):
         """
         * Returns <True> if <L> shares a same geometric domain with at least one of the section edges of <ERL>.
 
@@ -2398,16 +2468,16 @@ class TopOpeBRep_FacesFiller(object):
         return _TopOpeBRep.TopOpeBRep_FacesFiller_LSameDomainERL(*args)
 
     LSameDomainERL = staticmethod(LSameDomainERL)
-    def IsVPtransLok(*args) -> "Standard_Boolean" :
+    def IsVPtransLok(*args):
         """
         * Computes the transition <T> of the VPoint <iVP> on the edge of <SI12>. Returns <False> if the status is unknown.
 
         :param L:
         :type L: TopOpeBRep_LineInter &
         :param iVP:
-        :type iVP: int
+        :type iVP: Standard_Integer
         :param SI12:
-        :type SI12: int
+        :type SI12: Standard_Integer
         :param T:
         :type T: TopOpeBRepDS_Transition &
         :rtype: bool
@@ -2416,16 +2486,16 @@ class TopOpeBRep_FacesFiller(object):
         return _TopOpeBRep.TopOpeBRep_FacesFiller_IsVPtransLok(*args)
 
     IsVPtransLok = staticmethod(IsVPtransLok)
-    def TransvpOK(*args) -> "Standard_Boolean" :
+    def TransvpOK(*args):
         """
         * Computes transition on line for VP<iVP> on edge restriction of <SI>. If <isINOUT> : returns <true> if transition computed is IN/OUT else : returns <true> if transition computed is OUT/IN.
 
         :param L:
         :type L: TopOpeBRep_LineInter &
         :param iVP:
-        :type iVP: int
+        :type iVP: Standard_Integer
         :param SI:
-        :type SI: int
+        :type SI: Standard_Integer
         :param isINOUT:
         :type isINOUT: bool
         :rtype: bool
@@ -2434,7 +2504,7 @@ class TopOpeBRep_FacesFiller(object):
         return _TopOpeBRep.TopOpeBRep_FacesFiller_TransvpOK(*args)
 
     TransvpOK = staticmethod(TransvpOK)
-    def VPParamOnER(*args) -> "Standard_Real" :
+    def VPParamOnER(*args):
         """
         * Returns parameter u of vp on the restriction edge.
 
@@ -2448,7 +2518,7 @@ class TopOpeBRep_FacesFiller(object):
         return _TopOpeBRep.TopOpeBRep_FacesFiller_VPParamOnER(*args)
 
     VPParamOnER = staticmethod(VPParamOnER)
-    def EqualpPonR(*args) -> "Standard_Boolean" :
+    def EqualpPonR(*args):
         """
         :param Lrest:
         :type Lrest: TopOpeBRep_LineInter &
@@ -2512,7 +2582,7 @@ TopOpeBRep_FacesFiller._kill_pointed = new_instancemethod(_TopOpeBRep.TopOpeBRep
 TopOpeBRep_FacesFiller_swigregister = _TopOpeBRep.TopOpeBRep_FacesFiller_swigregister
 TopOpeBRep_FacesFiller_swigregister(TopOpeBRep_FacesFiller)
 
-def TopOpeBRep_FacesFiller_Lminmax(*args) -> "Standard_Real &, Standard_Real &" :
+def TopOpeBRep_FacesFiller_Lminmax(*args):
   """
     * Computes <pmin> and <pmax> the upper and lower bounds of <L> enclosing all vpoints.
 
@@ -2527,7 +2597,7 @@ def TopOpeBRep_FacesFiller_Lminmax(*args) -> "Standard_Real &, Standard_Real &" 
     """
   return _TopOpeBRep.TopOpeBRep_FacesFiller_Lminmax(*args)
 
-def TopOpeBRep_FacesFiller_LSameDomainERL(*args) -> "Standard_Boolean" :
+def TopOpeBRep_FacesFiller_LSameDomainERL(*args):
   """
     * Returns <True> if <L> shares a same geometric domain with at least one of the section edges of <ERL>.
 
@@ -2540,16 +2610,16 @@ def TopOpeBRep_FacesFiller_LSameDomainERL(*args) -> "Standard_Boolean" :
     """
   return _TopOpeBRep.TopOpeBRep_FacesFiller_LSameDomainERL(*args)
 
-def TopOpeBRep_FacesFiller_IsVPtransLok(*args) -> "Standard_Boolean" :
+def TopOpeBRep_FacesFiller_IsVPtransLok(*args):
   """
     * Computes the transition <T> of the VPoint <iVP> on the edge of <SI12>. Returns <False> if the status is unknown.
 
     :param L:
     :type L: TopOpeBRep_LineInter &
     :param iVP:
-    :type iVP: int
+    :type iVP: Standard_Integer
     :param SI12:
-    :type SI12: int
+    :type SI12: Standard_Integer
     :param T:
     :type T: TopOpeBRepDS_Transition &
     :rtype: bool
@@ -2557,16 +2627,16 @@ def TopOpeBRep_FacesFiller_IsVPtransLok(*args) -> "Standard_Boolean" :
     """
   return _TopOpeBRep.TopOpeBRep_FacesFiller_IsVPtransLok(*args)
 
-def TopOpeBRep_FacesFiller_TransvpOK(*args) -> "Standard_Boolean" :
+def TopOpeBRep_FacesFiller_TransvpOK(*args):
   """
     * Computes transition on line for VP<iVP> on edge restriction of <SI>. If <isINOUT> : returns <true> if transition computed is IN/OUT else : returns <true> if transition computed is OUT/IN.
 
     :param L:
     :type L: TopOpeBRep_LineInter &
     :param iVP:
-    :type iVP: int
+    :type iVP: Standard_Integer
     :param SI:
-    :type SI: int
+    :type SI: Standard_Integer
     :param isINOUT:
     :type isINOUT: bool
     :rtype: bool
@@ -2574,7 +2644,7 @@ def TopOpeBRep_FacesFiller_TransvpOK(*args) -> "Standard_Boolean" :
     """
   return _TopOpeBRep.TopOpeBRep_FacesFiller_TransvpOK(*args)
 
-def TopOpeBRep_FacesFiller_VPParamOnER(*args) -> "Standard_Real" :
+def TopOpeBRep_FacesFiller_VPParamOnER(*args):
   """
     * Returns parameter u of vp on the restriction edge.
 
@@ -2587,7 +2657,7 @@ def TopOpeBRep_FacesFiller_VPParamOnER(*args) -> "Standard_Real" :
     """
   return _TopOpeBRep.TopOpeBRep_FacesFiller_VPParamOnER(*args)
 
-def TopOpeBRep_FacesFiller_EqualpPonR(*args) -> "Standard_Boolean" :
+def TopOpeBRep_FacesFiller_EqualpPonR(*args):
   """
     :param Lrest:
     :type Lrest: TopOpeBRep_LineInter &
@@ -2603,13 +2673,13 @@ def TopOpeBRep_FacesFiller_EqualpPonR(*args) -> "Standard_Boolean" :
 class TopOpeBRep_FacesIntersector(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _TopOpeBRep.TopOpeBRep_FacesIntersector_swiginit(self,_TopOpeBRep.new_TopOpeBRep_FacesIntersector(*args))
-    def Perform(self, *args) -> "void" :
+        _TopOpeBRep.TopOpeBRep_FacesIntersector_swiginit(self,_TopOpeBRep.new_TopOpeBRep_FacesIntersector())
+    def Perform(self, *args):
         """
         * Computes the intersection of faces S1 and S2.
 
@@ -2634,50 +2704,50 @@ class TopOpeBRep_FacesIntersector(object):
         """
         return _TopOpeBRep.TopOpeBRep_FacesIntersector_Perform(self, *args)
 
-    def IsEmpty(self, *args) -> "Standard_Boolean" :
+    def IsEmpty(self):
         """
         :rtype: bool
 
         """
-        return _TopOpeBRep.TopOpeBRep_FacesIntersector_IsEmpty(self, *args)
+        return _TopOpeBRep.TopOpeBRep_FacesIntersector_IsEmpty(self)
 
-    def IsDone(self, *args) -> "Standard_Boolean" :
+    def IsDone(self):
         """
         :rtype: bool
 
         """
-        return _TopOpeBRep.TopOpeBRep_FacesIntersector_IsDone(self, *args)
+        return _TopOpeBRep.TopOpeBRep_FacesIntersector_IsDone(self)
 
-    def SameDomain(self, *args) -> "Standard_Boolean" :
+    def SameDomain(self):
         """
         * Returns True if Perform() arguments are two faces with the same surface.
 
         :rtype: bool
 
         """
-        return _TopOpeBRep.TopOpeBRep_FacesIntersector_SameDomain(self, *args)
+        return _TopOpeBRep.TopOpeBRep_FacesIntersector_SameDomain(self)
 
-    def Face(self, *args) -> "TopoDS_Shape const" :
+    def Face(self, *args):
         """
         * returns first or second intersected face.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: TopoDS_Shape
 
         """
         return _TopOpeBRep.TopOpeBRep_FacesIntersector_Face(self, *args)
 
-    def SurfacesSameOriented(self, *args) -> "Standard_Boolean" :
+    def SurfacesSameOriented(self):
         """
         * Returns True if Perform() arguments are two faces SameDomain() and normals on both side. Raise if SameDomain is False
 
         :rtype: bool
 
         """
-        return _TopOpeBRep.TopOpeBRep_FacesIntersector_SurfacesSameOriented(self, *args)
+        return _TopOpeBRep.TopOpeBRep_FacesIntersector_SurfacesSameOriented(self)
 
-    def IsRestriction(self, *args) -> "Standard_Boolean" :
+    def IsRestriction(self, *args):
         """
         * returns true if edge <E> is found as same as the edge associated with a RESTRICTION line.
 
@@ -2688,81 +2758,81 @@ class TopOpeBRep_FacesIntersector(object):
         """
         return _TopOpeBRep.TopOpeBRep_FacesIntersector_IsRestriction(self, *args)
 
-    def Restrictions(self, *args) -> "TopTools_IndexedMapOfShape const &" :
+    def Restrictions(self):
         """
         * returns the map of edges found as TopeBRepBRep_RESTRICTION
 
         :rtype: TopTools_IndexedMapOfShape
 
         """
-        return _TopOpeBRep.TopOpeBRep_FacesIntersector_Restrictions(self, *args)
+        return _TopOpeBRep.TopOpeBRep_FacesIntersector_Restrictions(self)
 
-    def PrepareLines(self, *args) -> "void" :
+    def PrepareLines(self):
         """
         :rtype: None
 
         """
-        return _TopOpeBRep.TopOpeBRep_FacesIntersector_PrepareLines(self, *args)
+        return _TopOpeBRep.TopOpeBRep_FacesIntersector_PrepareLines(self)
 
-    def Lines(self, *args) -> "Handle_TopOpeBRep_HArray1OfLineInter" :
+    def Lines(self):
         """
         :rtype: Handle_TopOpeBRep_HArray1OfLineInter
 
         """
-        return _TopOpeBRep.TopOpeBRep_FacesIntersector_Lines(self, *args)
+        return _TopOpeBRep.TopOpeBRep_FacesIntersector_Lines(self)
 
-    def NbLines(self, *args) -> "Standard_Integer" :
+    def NbLines(self):
         """
         :rtype: int
 
         """
-        return _TopOpeBRep.TopOpeBRep_FacesIntersector_NbLines(self, *args)
+        return _TopOpeBRep.TopOpeBRep_FacesIntersector_NbLines(self)
 
-    def InitLine(self, *args) -> "void" :
+    def InitLine(self):
         """
         :rtype: None
 
         """
-        return _TopOpeBRep.TopOpeBRep_FacesIntersector_InitLine(self, *args)
+        return _TopOpeBRep.TopOpeBRep_FacesIntersector_InitLine(self)
 
-    def MoreLine(self, *args) -> "Standard_Boolean" :
+    def MoreLine(self):
         """
         :rtype: bool
 
         """
-        return _TopOpeBRep.TopOpeBRep_FacesIntersector_MoreLine(self, *args)
+        return _TopOpeBRep.TopOpeBRep_FacesIntersector_MoreLine(self)
 
-    def NextLine(self, *args) -> "void" :
+    def NextLine(self):
         """
         :rtype: None
 
         """
-        return _TopOpeBRep.TopOpeBRep_FacesIntersector_NextLine(self, *args)
+        return _TopOpeBRep.TopOpeBRep_FacesIntersector_NextLine(self)
 
-    def CurrentLine(self, *args) -> "TopOpeBRep_LineInter &" :
+    def CurrentLine(self):
         """
         :rtype: TopOpeBRep_LineInter
 
         """
-        return _TopOpeBRep.TopOpeBRep_FacesIntersector_CurrentLine(self, *args)
+        return _TopOpeBRep.TopOpeBRep_FacesIntersector_CurrentLine(self)
 
-    def CurrentLineIndex(self, *args) -> "Standard_Integer" :
+    def CurrentLineIndex(self):
         """
         :rtype: int
 
         """
-        return _TopOpeBRep.TopOpeBRep_FacesIntersector_CurrentLineIndex(self, *args)
+        return _TopOpeBRep.TopOpeBRep_FacesIntersector_CurrentLineIndex(self)
 
-    def ChangeLine(self, *args) -> "TopOpeBRep_LineInter &" :
+    def ChangeLine(self, *args):
         """
         :param IL:
-        :type IL: int
+        :type IL: Standard_Integer
         :rtype: TopOpeBRep_LineInter
 
         """
         return _TopOpeBRep.TopOpeBRep_FacesIntersector_ChangeLine(self, *args)
 
-    def ForceTolerances(self, *args) -> "void" :
+    def ForceTolerances(self, *args):
         """
         * Force the tolerance values used by the next Perform(S1,S2) call.
 
@@ -2775,7 +2845,7 @@ class TopOpeBRep_FacesIntersector(object):
         """
         return _TopOpeBRep.TopOpeBRep_FacesIntersector_ForceTolerances(self, *args)
 
-    def GetTolerances(self, *args) -> "void" :
+    def GetTolerances(self):
         """
         * Return the tolerance values used in the last Perform() call If ForceTolerances() has been called, return the given values. If not, return values extracted from shapes.
 
@@ -2786,7 +2856,7 @@ class TopOpeBRep_FacesIntersector(object):
         :rtype: None
 
         """
-        return _TopOpeBRep.TopOpeBRep_FacesIntersector_GetTolerances(self, *args)
+        return _TopOpeBRep.TopOpeBRep_FacesIntersector_GetTolerances(self)
 
     def __del__(self):
     	try:
@@ -2821,8 +2891,9 @@ TopOpeBRep_FacesIntersector_swigregister(TopOpeBRep_FacesIntersector)
 
 class TopOpeBRep_GeomTool(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
+    def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def MakeCurves(*args) -> "void" :
+    def MakeCurves(*args):
         """
         * Make the DS curve <C> and the pcurves <PC1,PC2> from intersection line <L> lying on shapes <S1,S2>. <min,max> = <L> bounds
 
@@ -2848,7 +2919,7 @@ class TopOpeBRep_GeomTool(object):
         return _TopOpeBRep.TopOpeBRep_GeomTool_MakeCurves(*args)
 
     MakeCurves = staticmethod(MakeCurves)
-    def MakeCurve(*args) -> "void" :
+    def MakeCurve(*args):
         """
         :param min:
         :type min: float
@@ -2864,7 +2935,7 @@ class TopOpeBRep_GeomTool(object):
         return _TopOpeBRep.TopOpeBRep_GeomTool_MakeCurve(*args)
 
     MakeCurve = staticmethod(MakeCurve)
-    def MakeBSpline1fromWALKING3d(*args) -> "Handle_Geom_Curve" :
+    def MakeBSpline1fromWALKING3d(*args):
         """
         :param L:
         :type L: TopOpeBRep_LineInter &
@@ -2874,20 +2945,18 @@ class TopOpeBRep_GeomTool(object):
         return _TopOpeBRep.TopOpeBRep_GeomTool_MakeBSpline1fromWALKING3d(*args)
 
     MakeBSpline1fromWALKING3d = staticmethod(MakeBSpline1fromWALKING3d)
-    def MakeBSpline1fromWALKING2d(*args) -> "Handle_Geom2d_Curve" :
+    def MakeBSpline1fromWALKING2d(*args):
         """
         :param L:
         :type L: TopOpeBRep_LineInter &
         :param SI:
-        :type SI: int
+        :type SI: Standard_Integer
         :rtype: Handle_Geom2d_Curve
 
         """
         return _TopOpeBRep.TopOpeBRep_GeomTool_MakeBSpline1fromWALKING2d(*args)
 
     MakeBSpline1fromWALKING2d = staticmethod(MakeBSpline1fromWALKING2d)
-    def __init__(self): 
-        _TopOpeBRep.TopOpeBRep_GeomTool_swiginit(self,_TopOpeBRep.new_TopOpeBRep_GeomTool())
     def __del__(self):
     	try:
     		self.thisown = False
@@ -2900,7 +2969,7 @@ TopOpeBRep_GeomTool._kill_pointed = new_instancemethod(_TopOpeBRep.TopOpeBRep_Ge
 TopOpeBRep_GeomTool_swigregister = _TopOpeBRep.TopOpeBRep_GeomTool_swigregister
 TopOpeBRep_GeomTool_swigregister(TopOpeBRep_GeomTool)
 
-def TopOpeBRep_GeomTool_MakeCurves(*args) -> "void" :
+def TopOpeBRep_GeomTool_MakeCurves(*args):
   """
     * Make the DS curve <C> and the pcurves <PC1,PC2> from intersection line <L> lying on shapes <S1,S2>. <min,max> = <L> bounds
 
@@ -2925,7 +2994,7 @@ def TopOpeBRep_GeomTool_MakeCurves(*args) -> "void" :
     """
   return _TopOpeBRep.TopOpeBRep_GeomTool_MakeCurves(*args)
 
-def TopOpeBRep_GeomTool_MakeCurve(*args) -> "void" :
+def TopOpeBRep_GeomTool_MakeCurve(*args):
   """
     :param min:
     :type min: float
@@ -2940,7 +3009,7 @@ def TopOpeBRep_GeomTool_MakeCurve(*args) -> "void" :
     """
   return _TopOpeBRep.TopOpeBRep_GeomTool_MakeCurve(*args)
 
-def TopOpeBRep_GeomTool_MakeBSpline1fromWALKING3d(*args) -> "Handle_Geom_Curve" :
+def TopOpeBRep_GeomTool_MakeBSpline1fromWALKING3d(*args):
   """
     :param L:
     :type L: TopOpeBRep_LineInter &
@@ -2949,12 +3018,12 @@ def TopOpeBRep_GeomTool_MakeBSpline1fromWALKING3d(*args) -> "Handle_Geom_Curve" 
     """
   return _TopOpeBRep.TopOpeBRep_GeomTool_MakeBSpline1fromWALKING3d(*args)
 
-def TopOpeBRep_GeomTool_MakeBSpline1fromWALKING2d(*args) -> "Handle_Geom2d_Curve" :
+def TopOpeBRep_GeomTool_MakeBSpline1fromWALKING2d(*args):
   """
     :param L:
     :type L: TopOpeBRep_LineInter &
     :param SI:
-    :type SI: int
+    :type SI: Standard_Integer
     :rtype: Handle_Geom2d_Curve
 
     """
@@ -2966,22 +3035,22 @@ class TopOpeBRep_HArray1OfLineInter(OCC.MMgt.MMgt_TShared):
     def __init__(self, *args): 
         """
         :param Low:
-        :type Low: int
+        :type Low: Standard_Integer
         :param Up:
-        :type Up: int
+        :type Up: Standard_Integer
         :rtype: None
 
         :param Low:
-        :type Low: int
+        :type Low: Standard_Integer
         :param Up:
-        :type Up: int
+        :type Up: Standard_Integer
         :param V:
         :type V: TopOpeBRep_LineInter &
         :rtype: None
 
         """
         _TopOpeBRep.TopOpeBRep_HArray1OfLineInter_swiginit(self,_TopOpeBRep.new_TopOpeBRep_HArray1OfLineInter(*args))
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
         :param V:
         :type V: TopOpeBRep_LineInter &
@@ -2990,31 +3059,31 @@ class TopOpeBRep_HArray1OfLineInter(OCC.MMgt.MMgt_TShared):
         """
         return _TopOpeBRep.TopOpeBRep_HArray1OfLineInter_Init(self, *args)
 
-    def Length(self, *args) -> "Standard_Integer" :
+    def Length(self):
         """
         :rtype: int
 
         """
-        return _TopOpeBRep.TopOpeBRep_HArray1OfLineInter_Length(self, *args)
+        return _TopOpeBRep.TopOpeBRep_HArray1OfLineInter_Length(self)
 
-    def Lower(self, *args) -> "Standard_Integer" :
+    def Lower(self):
         """
         :rtype: int
 
         """
-        return _TopOpeBRep.TopOpeBRep_HArray1OfLineInter_Lower(self, *args)
+        return _TopOpeBRep.TopOpeBRep_HArray1OfLineInter_Lower(self)
 
-    def Upper(self, *args) -> "Standard_Integer" :
+    def Upper(self):
         """
         :rtype: int
 
         """
-        return _TopOpeBRep.TopOpeBRep_HArray1OfLineInter_Upper(self, *args)
+        return _TopOpeBRep.TopOpeBRep_HArray1OfLineInter_Upper(self)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Value:
         :type Value: TopOpeBRep_LineInter &
         :rtype: None
@@ -3022,43 +3091,43 @@ class TopOpeBRep_HArray1OfLineInter(OCC.MMgt.MMgt_TShared):
         """
         return _TopOpeBRep.TopOpeBRep_HArray1OfLineInter_SetValue(self, *args)
 
-    def Value(self, *args) -> "TopOpeBRep_LineInter const &" :
+    def Value(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: TopOpeBRep_LineInter
 
         """
         return _TopOpeBRep.TopOpeBRep_HArray1OfLineInter_Value(self, *args)
 
-    def ChangeValue(self, *args) -> "TopOpeBRep_LineInter &" :
+    def ChangeValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: TopOpeBRep_LineInter
 
         """
         return _TopOpeBRep.TopOpeBRep_HArray1OfLineInter_ChangeValue(self, *args)
 
-    def Array1(self, *args) -> "TopOpeBRep_Array1OfLineInter const &" :
+    def Array1(self):
         """
         :rtype: TopOpeBRep_Array1OfLineInter
 
         """
-        return _TopOpeBRep.TopOpeBRep_HArray1OfLineInter_Array1(self, *args)
+        return _TopOpeBRep.TopOpeBRep_HArray1OfLineInter_Array1(self)
 
-    def ChangeArray1(self, *args) -> "TopOpeBRep_Array1OfLineInter &" :
+    def ChangeArray1(self):
         """
         :rtype: TopOpeBRep_Array1OfLineInter
 
         """
-        return _TopOpeBRep.TopOpeBRep_HArray1OfLineInter_ChangeArray1(self, *args)
+        return _TopOpeBRep.TopOpeBRep_HArray1OfLineInter_ChangeArray1(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(TopOpeBRep_HArray1OfLineInter self)"""
         return _TopOpeBRep.TopOpeBRep_HArray1OfLineInter__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_TopOpeBRep_HArray1OfLineInter" :
+    def GetHandle(self):
         """GetHandle(TopOpeBRep_HArray1OfLineInter self) -> Handle_TopOpeBRep_HArray1OfLineInter"""
         return _TopOpeBRep.TopOpeBRep_HArray1OfLineInter_GetHandle(self)
 
@@ -3105,7 +3174,7 @@ Handle_TopOpeBRep_HArray1OfLineInter._kill_pointed = new_instancemethod(_TopOpeB
 Handle_TopOpeBRep_HArray1OfLineInter_swigregister = _TopOpeBRep.Handle_TopOpeBRep_HArray1OfLineInter_swigregister
 Handle_TopOpeBRep_HArray1OfLineInter_swigregister(Handle_TopOpeBRep_HArray1OfLineInter)
 
-def Handle_TopOpeBRep_HArray1OfLineInter_DownCast(*args) -> "Handle_TopOpeBRep_HArray1OfLineInter const" :
+def Handle_TopOpeBRep_HArray1OfLineInter_DownCast(*args):
   return _TopOpeBRep.Handle_TopOpeBRep_HArray1OfLineInter_DownCast(*args)
 Handle_TopOpeBRep_HArray1OfLineInter_DownCast = _TopOpeBRep.Handle_TopOpeBRep_HArray1OfLineInter_DownCast
 
@@ -3115,22 +3184,22 @@ class TopOpeBRep_HArray1OfVPointInter(OCC.MMgt.MMgt_TShared):
     def __init__(self, *args): 
         """
         :param Low:
-        :type Low: int
+        :type Low: Standard_Integer
         :param Up:
-        :type Up: int
+        :type Up: Standard_Integer
         :rtype: None
 
         :param Low:
-        :type Low: int
+        :type Low: Standard_Integer
         :param Up:
-        :type Up: int
+        :type Up: Standard_Integer
         :param V:
         :type V: TopOpeBRep_VPointInter &
         :rtype: None
 
         """
         _TopOpeBRep.TopOpeBRep_HArray1OfVPointInter_swiginit(self,_TopOpeBRep.new_TopOpeBRep_HArray1OfVPointInter(*args))
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
         :param V:
         :type V: TopOpeBRep_VPointInter &
@@ -3139,31 +3208,31 @@ class TopOpeBRep_HArray1OfVPointInter(OCC.MMgt.MMgt_TShared):
         """
         return _TopOpeBRep.TopOpeBRep_HArray1OfVPointInter_Init(self, *args)
 
-    def Length(self, *args) -> "Standard_Integer" :
+    def Length(self):
         """
         :rtype: int
 
         """
-        return _TopOpeBRep.TopOpeBRep_HArray1OfVPointInter_Length(self, *args)
+        return _TopOpeBRep.TopOpeBRep_HArray1OfVPointInter_Length(self)
 
-    def Lower(self, *args) -> "Standard_Integer" :
+    def Lower(self):
         """
         :rtype: int
 
         """
-        return _TopOpeBRep.TopOpeBRep_HArray1OfVPointInter_Lower(self, *args)
+        return _TopOpeBRep.TopOpeBRep_HArray1OfVPointInter_Lower(self)
 
-    def Upper(self, *args) -> "Standard_Integer" :
+    def Upper(self):
         """
         :rtype: int
 
         """
-        return _TopOpeBRep.TopOpeBRep_HArray1OfVPointInter_Upper(self, *args)
+        return _TopOpeBRep.TopOpeBRep_HArray1OfVPointInter_Upper(self)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Value:
         :type Value: TopOpeBRep_VPointInter &
         :rtype: None
@@ -3171,43 +3240,43 @@ class TopOpeBRep_HArray1OfVPointInter(OCC.MMgt.MMgt_TShared):
         """
         return _TopOpeBRep.TopOpeBRep_HArray1OfVPointInter_SetValue(self, *args)
 
-    def Value(self, *args) -> "TopOpeBRep_VPointInter const &" :
+    def Value(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: TopOpeBRep_VPointInter
 
         """
         return _TopOpeBRep.TopOpeBRep_HArray1OfVPointInter_Value(self, *args)
 
-    def ChangeValue(self, *args) -> "TopOpeBRep_VPointInter &" :
+    def ChangeValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: TopOpeBRep_VPointInter
 
         """
         return _TopOpeBRep.TopOpeBRep_HArray1OfVPointInter_ChangeValue(self, *args)
 
-    def Array1(self, *args) -> "TopOpeBRep_Array1OfVPointInter const &" :
+    def Array1(self):
         """
         :rtype: TopOpeBRep_Array1OfVPointInter
 
         """
-        return _TopOpeBRep.TopOpeBRep_HArray1OfVPointInter_Array1(self, *args)
+        return _TopOpeBRep.TopOpeBRep_HArray1OfVPointInter_Array1(self)
 
-    def ChangeArray1(self, *args) -> "TopOpeBRep_Array1OfVPointInter &" :
+    def ChangeArray1(self):
         """
         :rtype: TopOpeBRep_Array1OfVPointInter
 
         """
-        return _TopOpeBRep.TopOpeBRep_HArray1OfVPointInter_ChangeArray1(self, *args)
+        return _TopOpeBRep.TopOpeBRep_HArray1OfVPointInter_ChangeArray1(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(TopOpeBRep_HArray1OfVPointInter self)"""
         return _TopOpeBRep.TopOpeBRep_HArray1OfVPointInter__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_TopOpeBRep_HArray1OfVPointInter" :
+    def GetHandle(self):
         """GetHandle(TopOpeBRep_HArray1OfVPointInter self) -> Handle_TopOpeBRep_HArray1OfVPointInter"""
         return _TopOpeBRep.TopOpeBRep_HArray1OfVPointInter_GetHandle(self)
 
@@ -3254,20 +3323,20 @@ Handle_TopOpeBRep_HArray1OfVPointInter._kill_pointed = new_instancemethod(_TopOp
 Handle_TopOpeBRep_HArray1OfVPointInter_swigregister = _TopOpeBRep.Handle_TopOpeBRep_HArray1OfVPointInter_swigregister
 Handle_TopOpeBRep_HArray1OfVPointInter_swigregister(Handle_TopOpeBRep_HArray1OfVPointInter)
 
-def Handle_TopOpeBRep_HArray1OfVPointInter_DownCast(*args) -> "Handle_TopOpeBRep_HArray1OfVPointInter const" :
+def Handle_TopOpeBRep_HArray1OfVPointInter_DownCast(*args):
   return _TopOpeBRep.Handle_TopOpeBRep_HArray1OfVPointInter_DownCast(*args)
 Handle_TopOpeBRep_HArray1OfVPointInter_DownCast = _TopOpeBRep.Handle_TopOpeBRep_HArray1OfVPointInter_DownCast
 
 class TopOpeBRep_Hctxee2d(OCC.MMgt.MMgt_TShared):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _TopOpeBRep.TopOpeBRep_Hctxee2d_swiginit(self,_TopOpeBRep.new_TopOpeBRep_Hctxee2d(*args))
-    def SetEdges(self, *args) -> "void" :
+        _TopOpeBRep.TopOpeBRep_Hctxee2d_swiginit(self,_TopOpeBRep.new_TopOpeBRep_Hctxee2d())
+    def SetEdges(self, *args):
         """
         :param E1:
         :type E1: TopoDS_Edge &
@@ -3282,38 +3351,38 @@ class TopOpeBRep_Hctxee2d(OCC.MMgt.MMgt_TShared):
         """
         return _TopOpeBRep.TopOpeBRep_Hctxee2d_SetEdges(self, *args)
 
-    def Edge(self, *args) -> "TopoDS_Shape const" :
+    def Edge(self, *args):
         """
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :rtype: TopoDS_Shape
 
         """
         return _TopOpeBRep.TopOpeBRep_Hctxee2d_Edge(self, *args)
 
-    def Curve(self, *args) -> "Geom2dAdaptor_Curve const &" :
+    def Curve(self, *args):
         """
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :rtype: Geom2dAdaptor_Curve
 
         """
         return _TopOpeBRep.TopOpeBRep_Hctxee2d_Curve(self, *args)
 
-    def Domain(self, *args) -> "IntRes2d_Domain const &" :
+    def Domain(self, *args):
         """
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :rtype: IntRes2d_Domain
 
         """
         return _TopOpeBRep.TopOpeBRep_Hctxee2d_Domain(self, *args)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(TopOpeBRep_Hctxee2d self)"""
         return _TopOpeBRep.TopOpeBRep_Hctxee2d__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_TopOpeBRep_Hctxee2d" :
+    def GetHandle(self):
         """GetHandle(TopOpeBRep_Hctxee2d self) -> Handle_TopOpeBRep_Hctxee2d"""
         return _TopOpeBRep.TopOpeBRep_Hctxee2d_GetHandle(self)
 
@@ -3355,20 +3424,20 @@ Handle_TopOpeBRep_Hctxee2d._kill_pointed = new_instancemethod(_TopOpeBRep.Handle
 Handle_TopOpeBRep_Hctxee2d_swigregister = _TopOpeBRep.Handle_TopOpeBRep_Hctxee2d_swigregister
 Handle_TopOpeBRep_Hctxee2d_swigregister(Handle_TopOpeBRep_Hctxee2d)
 
-def Handle_TopOpeBRep_Hctxee2d_DownCast(*args) -> "Handle_TopOpeBRep_Hctxee2d const" :
+def Handle_TopOpeBRep_Hctxee2d_DownCast(*args):
   return _TopOpeBRep.Handle_TopOpeBRep_Hctxee2d_DownCast(*args)
 Handle_TopOpeBRep_Hctxee2d_DownCast = _TopOpeBRep.Handle_TopOpeBRep_Hctxee2d_DownCast
 
 class TopOpeBRep_Hctxff2d(OCC.MMgt.MMgt_TShared):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _TopOpeBRep.TopOpeBRep_Hctxff2d_swiginit(self,_TopOpeBRep.new_TopOpeBRep_Hctxff2d(*args))
-    def SetFaces(self, *args) -> "void" :
+        _TopOpeBRep.TopOpeBRep_Hctxff2d_swiginit(self,_TopOpeBRep.new_TopOpeBRep_Hctxff2d())
+    def SetFaces(self, *args):
         """
         :param F1:
         :type F1: TopoDS_Face &
@@ -3379,7 +3448,7 @@ class TopOpeBRep_Hctxff2d(OCC.MMgt.MMgt_TShared):
         """
         return _TopOpeBRep.TopOpeBRep_Hctxff2d_SetFaces(self, *args)
 
-    def SetHSurfaces(self, *args) -> "void" :
+    def SetHSurfaces(self, *args):
         """
         :param S1:
         :type S1: Handle_BRepAdaptor_HSurface &
@@ -3390,7 +3459,7 @@ class TopOpeBRep_Hctxff2d(OCC.MMgt.MMgt_TShared):
         """
         return _TopOpeBRep.TopOpeBRep_Hctxff2d_SetHSurfaces(self, *args)
 
-    def SetTolerances(self, *args) -> "void" :
+    def SetTolerances(self, *args):
         """
         :param Tol1:
         :type Tol1: float
@@ -3401,7 +3470,7 @@ class TopOpeBRep_Hctxff2d(OCC.MMgt.MMgt_TShared):
         """
         return _TopOpeBRep.TopOpeBRep_Hctxff2d_SetTolerances(self, *args)
 
-    def GetTolerances(self, *args) -> "void" :
+    def GetTolerances(self):
         """
         :param Tol1:
         :type Tol1: float &
@@ -3410,61 +3479,61 @@ class TopOpeBRep_Hctxff2d(OCC.MMgt.MMgt_TShared):
         :rtype: None
 
         """
-        return _TopOpeBRep.TopOpeBRep_Hctxff2d_GetTolerances(self, *args)
+        return _TopOpeBRep.TopOpeBRep_Hctxff2d_GetTolerances(self)
 
-    def GetMaxTolerance(self, *args) -> "Standard_Real" :
+    def GetMaxTolerance(self):
         """
         :rtype: float
 
         """
-        return _TopOpeBRep.TopOpeBRep_Hctxff2d_GetMaxTolerance(self, *args)
+        return _TopOpeBRep.TopOpeBRep_Hctxff2d_GetMaxTolerance(self)
 
-    def Face(self, *args) -> "TopoDS_Face const" :
+    def Face(self, *args):
         """
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :rtype: TopoDS_Face
 
         """
         return _TopOpeBRep.TopOpeBRep_Hctxff2d_Face(self, *args)
 
-    def HSurface(self, *args) -> "Handle_BRepAdaptor_HSurface" :
+    def HSurface(self, *args):
         """
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :rtype: Handle_BRepAdaptor_HSurface
 
         """
         return _TopOpeBRep.TopOpeBRep_Hctxff2d_HSurface(self, *args)
 
-    def SurfacesSameOriented(self, *args) -> "Standard_Boolean" :
+    def SurfacesSameOriented(self):
         """
         :rtype: bool
 
         """
-        return _TopOpeBRep.TopOpeBRep_Hctxff2d_SurfacesSameOriented(self, *args)
+        return _TopOpeBRep.TopOpeBRep_Hctxff2d_SurfacesSameOriented(self)
 
-    def FacesSameOriented(self, *args) -> "Standard_Boolean" :
+    def FacesSameOriented(self):
         """
         :rtype: bool
 
         """
-        return _TopOpeBRep.TopOpeBRep_Hctxff2d_FacesSameOriented(self, *args)
+        return _TopOpeBRep.TopOpeBRep_Hctxff2d_FacesSameOriented(self)
 
-    def FaceSameOrientedWithRef(self, *args) -> "Standard_Boolean" :
+    def FaceSameOrientedWithRef(self, *args):
         """
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :rtype: bool
 
         """
         return _TopOpeBRep.TopOpeBRep_Hctxff2d_FaceSameOrientedWithRef(self, *args)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(TopOpeBRep_Hctxff2d self)"""
         return _TopOpeBRep.TopOpeBRep_Hctxff2d__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_TopOpeBRep_Hctxff2d" :
+    def GetHandle(self):
         """GetHandle(TopOpeBRep_Hctxff2d self) -> Handle_TopOpeBRep_Hctxff2d"""
         return _TopOpeBRep.TopOpeBRep_Hctxff2d_GetHandle(self)
 
@@ -3512,20 +3581,20 @@ Handle_TopOpeBRep_Hctxff2d._kill_pointed = new_instancemethod(_TopOpeBRep.Handle
 Handle_TopOpeBRep_Hctxff2d_swigregister = _TopOpeBRep.Handle_TopOpeBRep_Hctxff2d_swigregister
 Handle_TopOpeBRep_Hctxff2d_swigregister(Handle_TopOpeBRep_Hctxff2d)
 
-def Handle_TopOpeBRep_Hctxff2d_DownCast(*args) -> "Handle_TopOpeBRep_Hctxff2d const" :
+def Handle_TopOpeBRep_Hctxff2d_DownCast(*args):
   return _TopOpeBRep.Handle_TopOpeBRep_Hctxff2d_DownCast(*args)
 Handle_TopOpeBRep_Hctxff2d_DownCast = _TopOpeBRep.Handle_TopOpeBRep_Hctxff2d_DownCast
 
 class TopOpeBRep_LineInter(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _TopOpeBRep.TopOpeBRep_LineInter_swiginit(self,_TopOpeBRep.new_TopOpeBRep_LineInter(*args))
-    def SetLine(self, *args) -> "void" :
+        _TopOpeBRep.TopOpeBRep_LineInter_swiginit(self,_TopOpeBRep.new_TopOpeBRep_LineInter())
+    def SetLine(self, *args):
         """
         :param L:
         :type L: Handle_IntPatch_Line &
@@ -3538,7 +3607,7 @@ class TopOpeBRep_LineInter(object):
         """
         return _TopOpeBRep.TopOpeBRep_LineInter_SetLine(self, *args)
 
-    def SetFaces(self, *args) -> "void" :
+    def SetFaces(self, *args):
         """
         :param F1:
         :type F1: TopoDS_Face &
@@ -3549,67 +3618,67 @@ class TopOpeBRep_LineInter(object):
         """
         return _TopOpeBRep.TopOpeBRep_LineInter_SetFaces(self, *args)
 
-    def TypeLineCurve(self, *args) -> "TopOpeBRep_TypeLineCurve" :
+    def TypeLineCurve(self):
         """
         :rtype: TopOpeBRep_TypeLineCurve
 
         """
-        return _TopOpeBRep.TopOpeBRep_LineInter_TypeLineCurve(self, *args)
+        return _TopOpeBRep.TopOpeBRep_LineInter_TypeLineCurve(self)
 
-    def NbVPoint(self, *args) -> "Standard_Integer" :
+    def NbVPoint(self):
         """
         :rtype: int
 
         """
-        return _TopOpeBRep.TopOpeBRep_LineInter_NbVPoint(self, *args)
+        return _TopOpeBRep.TopOpeBRep_LineInter_NbVPoint(self)
 
-    def VPoint(self, *args) -> "TopOpeBRep_VPointInter const &" :
+    def VPoint(self, *args):
         """
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :rtype: TopOpeBRep_VPointInter
 
         """
         return _TopOpeBRep.TopOpeBRep_LineInter_VPoint(self, *args)
 
-    def ChangeVPoint(self, *args) -> "TopOpeBRep_VPointInter &" :
+    def ChangeVPoint(self, *args):
         """
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :rtype: TopOpeBRep_VPointInter
 
         """
         return _TopOpeBRep.TopOpeBRep_LineInter_ChangeVPoint(self, *args)
 
-    def SetINL(self, *args) -> "void" :
+    def SetINL(self):
         """
         :rtype: None
 
         """
-        return _TopOpeBRep.TopOpeBRep_LineInter_SetINL(self, *args)
+        return _TopOpeBRep.TopOpeBRep_LineInter_SetINL(self)
 
-    def INL(self, *args) -> "Standard_Boolean" :
+    def INL(self):
         """
         :rtype: bool
 
         """
-        return _TopOpeBRep.TopOpeBRep_LineInter_INL(self, *args)
+        return _TopOpeBRep.TopOpeBRep_LineInter_INL(self)
 
-    def SetIsVClosed(self, *args) -> "void" :
+    def SetIsVClosed(self):
         """
         :rtype: None
 
         """
-        return _TopOpeBRep.TopOpeBRep_LineInter_SetIsVClosed(self, *args)
+        return _TopOpeBRep.TopOpeBRep_LineInter_SetIsVClosed(self)
 
-    def IsVClosed(self, *args) -> "Standard_Boolean" :
+    def IsVClosed(self):
         """
         :rtype: bool
 
         """
-        return _TopOpeBRep.TopOpeBRep_LineInter_IsVClosed(self, *args)
+        return _TopOpeBRep.TopOpeBRep_LineInter_IsVClosed(self)
 
-    def SetOK(self, *args) -> "void" :
+    def SetOK(self, *args):
         """
         :param B:
         :type B: bool
@@ -3618,62 +3687,62 @@ class TopOpeBRep_LineInter(object):
         """
         return _TopOpeBRep.TopOpeBRep_LineInter_SetOK(self, *args)
 
-    def OK(self, *args) -> "Standard_Boolean" :
+    def OK(self):
         """
         :rtype: bool
 
         """
-        return _TopOpeBRep.TopOpeBRep_LineInter_OK(self, *args)
+        return _TopOpeBRep.TopOpeBRep_LineInter_OK(self)
 
-    def SetHasVPonR(self, *args) -> "void" :
+    def SetHasVPonR(self):
         """
         :rtype: None
 
         """
-        return _TopOpeBRep.TopOpeBRep_LineInter_SetHasVPonR(self, *args)
+        return _TopOpeBRep.TopOpeBRep_LineInter_SetHasVPonR(self)
 
-    def HasVPonR(self, *args) -> "Standard_Boolean" :
+    def HasVPonR(self):
         """
         :rtype: bool
 
         """
-        return _TopOpeBRep.TopOpeBRep_LineInter_HasVPonR(self, *args)
+        return _TopOpeBRep.TopOpeBRep_LineInter_HasVPonR(self)
 
-    def SetVPBounds(self, *args) -> "void" :
+    def SetVPBounds(self):
         """
         :rtype: None
 
         """
-        return _TopOpeBRep.TopOpeBRep_LineInter_SetVPBounds(self, *args)
+        return _TopOpeBRep.TopOpeBRep_LineInter_SetVPBounds(self)
 
-    def VPBounds(self, *args) -> "void" :
+    def VPBounds(self):
         """
         :param f:
-        :type f: int &
+        :type f: Standard_Integer &
         :param l:
-        :type l: int &
+        :type l: Standard_Integer &
         :param n:
-        :type n: int &
+        :type n: Standard_Integer &
         :rtype: None
 
         """
-        return _TopOpeBRep.TopOpeBRep_LineInter_VPBounds(self, *args)
+        return _TopOpeBRep.TopOpeBRep_LineInter_VPBounds(self)
 
-    def IsPeriodic(self, *args) -> "Standard_Boolean" :
+    def IsPeriodic(self):
         """
         :rtype: bool
 
         """
-        return _TopOpeBRep.TopOpeBRep_LineInter_IsPeriodic(self, *args)
+        return _TopOpeBRep.TopOpeBRep_LineInter_IsPeriodic(self)
 
-    def Period(self, *args) -> "Standard_Real" :
+    def Period(self):
         """
         :rtype: float
 
         """
-        return _TopOpeBRep.TopOpeBRep_LineInter_Period(self, *args)
+        return _TopOpeBRep.TopOpeBRep_LineInter_Period(self)
 
-    def Bounds(self, *args) -> "void" :
+    def Bounds(self):
         """
         :param f:
         :type f: float &
@@ -3682,60 +3751,60 @@ class TopOpeBRep_LineInter(object):
         :rtype: None
 
         """
-        return _TopOpeBRep.TopOpeBRep_LineInter_Bounds(self, *args)
+        return _TopOpeBRep.TopOpeBRep_LineInter_Bounds(self)
 
-    def HasVInternal(self, *args) -> "Standard_Boolean" :
+    def HasVInternal(self):
         """
         :rtype: bool
 
         """
-        return _TopOpeBRep.TopOpeBRep_LineInter_HasVInternal(self, *args)
+        return _TopOpeBRep.TopOpeBRep_LineInter_HasVInternal(self)
 
-    def NbWPoint(self, *args) -> "Standard_Integer" :
+    def NbWPoint(self):
         """
         :rtype: int
 
         """
-        return _TopOpeBRep.TopOpeBRep_LineInter_NbWPoint(self, *args)
+        return _TopOpeBRep.TopOpeBRep_LineInter_NbWPoint(self)
 
-    def WPoint(self, *args) -> "TopOpeBRep_WPointInter const &" :
+    def WPoint(self, *args):
         """
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :rtype: TopOpeBRep_WPointInter
 
         """
         return _TopOpeBRep.TopOpeBRep_LineInter_WPoint(self, *args)
 
-    def TransitionOnS1(self, *args) -> "IntSurf_TypeTrans" :
+    def TransitionOnS1(self):
         """
         :rtype: IntSurf_TypeTrans
 
         """
-        return _TopOpeBRep.TopOpeBRep_LineInter_TransitionOnS1(self, *args)
+        return _TopOpeBRep.TopOpeBRep_LineInter_TransitionOnS1(self)
 
-    def TransitionOnS2(self, *args) -> "IntSurf_TypeTrans" :
+    def TransitionOnS2(self):
         """
         :rtype: IntSurf_TypeTrans
 
         """
-        return _TopOpeBRep.TopOpeBRep_LineInter_TransitionOnS2(self, *args)
+        return _TopOpeBRep.TopOpeBRep_LineInter_TransitionOnS2(self)
 
-    def SituationS1(self, *args) -> "IntSurf_Situation" :
+    def SituationS1(self):
         """
         :rtype: IntSurf_Situation
 
         """
-        return _TopOpeBRep.TopOpeBRep_LineInter_SituationS1(self, *args)
+        return _TopOpeBRep.TopOpeBRep_LineInter_SituationS1(self)
 
-    def SituationS2(self, *args) -> "IntSurf_Situation" :
+    def SituationS2(self):
         """
         :rtype: IntSurf_Situation
 
         """
-        return _TopOpeBRep.TopOpeBRep_LineInter_SituationS2(self, *args)
+        return _TopOpeBRep.TopOpeBRep_LineInter_SituationS2(self)
 
-    def Curve(self, *args) -> "Handle_Geom_Curve" :
+    def Curve(self, *args):
         """
         :rtype: Handle_Geom_Curve
 
@@ -3748,81 +3817,81 @@ class TopOpeBRep_LineInter(object):
         """
         return _TopOpeBRep.TopOpeBRep_LineInter_Curve(self, *args)
 
-    def Arc(self, *args) -> "TopoDS_Shape const" :
+    def Arc(self):
         """
         * returns the edge of a RESTRICTION line (or a null edge).
 
         :rtype: TopoDS_Shape
 
         """
-        return _TopOpeBRep.TopOpeBRep_LineInter_Arc(self, *args)
+        return _TopOpeBRep.TopOpeBRep_LineInter_Arc(self)
 
-    def ArcIsEdge(self, *args) -> "Standard_Boolean" :
+    def ArcIsEdge(self, *args):
         """
         * returns true if Arc() edge (of a RESTRICTION line) is an edge of the original face <Index> (1 or 2).
 
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :rtype: bool
 
         """
         return _TopOpeBRep.TopOpeBRep_LineInter_ArcIsEdge(self, *args)
 
-    def LineW(self, *args) -> "Handle_IntPatch_WLine const &" :
+    def LineW(self):
         """
         :rtype: Handle_IntPatch_WLine
 
         """
-        return _TopOpeBRep.TopOpeBRep_LineInter_LineW(self, *args)
+        return _TopOpeBRep.TopOpeBRep_LineInter_LineW(self)
 
-    def LineG(self, *args) -> "Handle_IntPatch_GLine const &" :
+    def LineG(self):
         """
         :rtype: Handle_IntPatch_GLine
 
         """
-        return _TopOpeBRep.TopOpeBRep_LineInter_LineG(self, *args)
+        return _TopOpeBRep.TopOpeBRep_LineInter_LineG(self)
 
-    def LineR(self, *args) -> "Handle_IntPatch_RLine const &" :
+    def LineR(self):
         """
         :rtype: Handle_IntPatch_RLine
 
         """
-        return _TopOpeBRep.TopOpeBRep_LineInter_LineR(self, *args)
+        return _TopOpeBRep.TopOpeBRep_LineInter_LineR(self)
 
-    def HasFirstPoint(self, *args) -> "Standard_Boolean" :
+    def HasFirstPoint(self):
         """
         :rtype: bool
 
         """
-        return _TopOpeBRep.TopOpeBRep_LineInter_HasFirstPoint(self, *args)
+        return _TopOpeBRep.TopOpeBRep_LineInter_HasFirstPoint(self)
 
-    def HasLastPoint(self, *args) -> "Standard_Boolean" :
+    def HasLastPoint(self):
         """
         :rtype: bool
 
         """
-        return _TopOpeBRep.TopOpeBRep_LineInter_HasLastPoint(self, *args)
+        return _TopOpeBRep.TopOpeBRep_LineInter_HasLastPoint(self)
 
-    def ComputeFaceFaceTransition(self, *args) -> "void" :
+    def ComputeFaceFaceTransition(self):
         """
         :rtype: None
 
         """
-        return _TopOpeBRep.TopOpeBRep_LineInter_ComputeFaceFaceTransition(self, *args)
+        return _TopOpeBRep.TopOpeBRep_LineInter_ComputeFaceFaceTransition(self)
 
-    def FaceFaceTransition(self, *args) -> "TopOpeBRepDS_Transition const &" :
+    def FaceFaceTransition(self, *args):
         """
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :rtype: TopOpeBRepDS_Transition
 
         """
         return _TopOpeBRep.TopOpeBRep_LineInter_FaceFaceTransition(self, *args)
 
-    def Index(self, *args) -> "Standard_Integer" :
+    def Index(self, *args):
         """
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :rtype: None
 
         :rtype: int
@@ -3830,17 +3899,17 @@ class TopOpeBRep_LineInter(object):
         """
         return _TopOpeBRep.TopOpeBRep_LineInter_Index(self, *args)
 
-    def DumpType(self, *args) -> "void" :
+    def DumpType(self):
         """
         :rtype: None
 
         """
-        return _TopOpeBRep.TopOpeBRep_LineInter_DumpType(self, *args)
+        return _TopOpeBRep.TopOpeBRep_LineInter_DumpType(self)
 
-    def DumpVPoint(self, *args) -> "void" :
+    def DumpVPoint(self, *args):
         """
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :param s1:
         :type s1: TCollection_AsciiString &
         :param s2:
@@ -3850,7 +3919,7 @@ class TopOpeBRep_LineInter(object):
         """
         return _TopOpeBRep.TopOpeBRep_LineInter_DumpVPoint(self, *args)
 
-    def DumpBipoint(self, *args) -> "void" :
+    def DumpBipoint(self, *args):
         """
         :param B:
         :type B: TopOpeBRep_Bipoint &
@@ -3863,33 +3932,33 @@ class TopOpeBRep_LineInter(object):
         """
         return _TopOpeBRep.TopOpeBRep_LineInter_DumpBipoint(self, *args)
 
-    def SetTraceIndex(self, *args) -> "void" :
+    def SetTraceIndex(self, *args):
         """
         :param exF1:
-        :type exF1: int
+        :type exF1: Standard_Integer
         :param exF2:
-        :type exF2: int
+        :type exF2: Standard_Integer
         :rtype: None
 
         """
         return _TopOpeBRep.TopOpeBRep_LineInter_SetTraceIndex(self, *args)
 
-    def GetTraceIndex(self, *args) -> "void" :
+    def GetTraceIndex(self):
         """
         :param exF1:
-        :type exF1: int &
+        :type exF1: Standard_Integer &
         :param exF2:
-        :type exF2: int &
+        :type exF2: Standard_Integer &
         :rtype: None
 
         """
-        return _TopOpeBRep.TopOpeBRep_LineInter_GetTraceIndex(self, *args)
+        return _TopOpeBRep.TopOpeBRep_LineInter_GetTraceIndex(self)
 
-    def DumpLineTransitionsToString(self) -> "std::string" :
+    def DumpLineTransitionsToString(self):
         """DumpLineTransitionsToString(TopOpeBRep_LineInter self) -> std::string"""
         return _TopOpeBRep.TopOpeBRep_LineInter_DumpLineTransitionsToString(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(TopOpeBRep_LineInter self)"""
         return _TopOpeBRep.TopOpeBRep_LineInter__kill_pointed(self)
 
@@ -3961,7 +4030,7 @@ class TopOpeBRep_ListIteratorOfListOfBipoint(object):
 
         """
         _TopOpeBRep.TopOpeBRep_ListIteratorOfListOfBipoint_swiginit(self,_TopOpeBRep.new_TopOpeBRep_ListIteratorOfListOfBipoint(*args))
-    def Initialize(self, *args) -> "void" :
+    def Initialize(self, *args):
         """
         :param L:
         :type L: TopOpeBRep_ListOfBipoint &
@@ -3970,26 +4039,26 @@ class TopOpeBRep_ListIteratorOfListOfBipoint(object):
         """
         return _TopOpeBRep.TopOpeBRep_ListIteratorOfListOfBipoint_Initialize(self, *args)
 
-    def More(self, *args) -> "Standard_Boolean" :
+    def More(self):
         """
         :rtype: bool
 
         """
-        return _TopOpeBRep.TopOpeBRep_ListIteratorOfListOfBipoint_More(self, *args)
+        return _TopOpeBRep.TopOpeBRep_ListIteratorOfListOfBipoint_More(self)
 
-    def Next(self, *args) -> "void" :
+    def Next(self):
         """
         :rtype: None
 
         """
-        return _TopOpeBRep.TopOpeBRep_ListIteratorOfListOfBipoint_Next(self, *args)
+        return _TopOpeBRep.TopOpeBRep_ListIteratorOfListOfBipoint_Next(self)
 
-    def Value(self, *args) -> "TopOpeBRep_Bipoint &" :
+    def Value(self):
         """
         :rtype: TopOpeBRep_Bipoint
 
         """
-        return _TopOpeBRep.TopOpeBRep_ListIteratorOfListOfBipoint_Value(self, *args)
+        return _TopOpeBRep.TopOpeBRep_ListIteratorOfListOfBipoint_Value(self)
 
     def __del__(self):
     	try:
@@ -4020,18 +4089,18 @@ class TopOpeBRep_ListNodeOfListOfBipoint(OCC.TCollection.TCollection_MapNode):
 
         """
         _TopOpeBRep.TopOpeBRep_ListNodeOfListOfBipoint_swiginit(self,_TopOpeBRep.new_TopOpeBRep_ListNodeOfListOfBipoint(*args))
-    def Value(self, *args) -> "TopOpeBRep_Bipoint &" :
+    def Value(self):
         """
         :rtype: TopOpeBRep_Bipoint
 
         """
-        return _TopOpeBRep.TopOpeBRep_ListNodeOfListOfBipoint_Value(self, *args)
+        return _TopOpeBRep.TopOpeBRep_ListNodeOfListOfBipoint_Value(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(TopOpeBRep_ListNodeOfListOfBipoint self)"""
         return _TopOpeBRep.TopOpeBRep_ListNodeOfListOfBipoint__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_TopOpeBRep_ListNodeOfListOfBipoint" :
+    def GetHandle(self):
         """GetHandle(TopOpeBRep_ListNodeOfListOfBipoint self) -> Handle_TopOpeBRep_ListNodeOfListOfBipoint"""
         return _TopOpeBRep.TopOpeBRep_ListNodeOfListOfBipoint_GetHandle(self)
 
@@ -4070,20 +4139,20 @@ Handle_TopOpeBRep_ListNodeOfListOfBipoint._kill_pointed = new_instancemethod(_To
 Handle_TopOpeBRep_ListNodeOfListOfBipoint_swigregister = _TopOpeBRep.Handle_TopOpeBRep_ListNodeOfListOfBipoint_swigregister
 Handle_TopOpeBRep_ListNodeOfListOfBipoint_swigregister(Handle_TopOpeBRep_ListNodeOfListOfBipoint)
 
-def Handle_TopOpeBRep_ListNodeOfListOfBipoint_DownCast(*args) -> "Handle_TopOpeBRep_ListNodeOfListOfBipoint const" :
+def Handle_TopOpeBRep_ListNodeOfListOfBipoint_DownCast(*args):
   return _TopOpeBRep.Handle_TopOpeBRep_ListNodeOfListOfBipoint_DownCast(*args)
 Handle_TopOpeBRep_ListNodeOfListOfBipoint_DownCast = _TopOpeBRep.Handle_TopOpeBRep_ListNodeOfListOfBipoint_DownCast
 
 class TopOpeBRep_ListOfBipoint(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _TopOpeBRep.TopOpeBRep_ListOfBipoint_swiginit(self,_TopOpeBRep.new_TopOpeBRep_ListOfBipoint(*args))
-    def Assign(self, *args) -> "void" :
+        _TopOpeBRep.TopOpeBRep_ListOfBipoint_swiginit(self,_TopOpeBRep.new_TopOpeBRep_ListOfBipoint())
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: TopOpeBRep_ListOfBipoint &
@@ -4092,7 +4161,7 @@ class TopOpeBRep_ListOfBipoint(object):
         """
         return _TopOpeBRep.TopOpeBRep_ListOfBipoint_Assign(self, *args)
 
-    def Set(self, *args) -> "void" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: TopOpeBRep_ListOfBipoint &
@@ -4101,28 +4170,28 @@ class TopOpeBRep_ListOfBipoint(object):
         """
         return _TopOpeBRep.TopOpeBRep_ListOfBipoint_Set(self, *args)
 
-    def Extent(self, *args) -> "Standard_Integer" :
+    def Extent(self):
         """
         :rtype: int
 
         """
-        return _TopOpeBRep.TopOpeBRep_ListOfBipoint_Extent(self, *args)
+        return _TopOpeBRep.TopOpeBRep_ListOfBipoint_Extent(self)
 
-    def Clear(self, *args) -> "void" :
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _TopOpeBRep.TopOpeBRep_ListOfBipoint_Clear(self, *args)
+        return _TopOpeBRep.TopOpeBRep_ListOfBipoint_Clear(self)
 
-    def IsEmpty(self, *args) -> "Standard_Boolean" :
+    def IsEmpty(self):
         """
         :rtype: bool
 
         """
-        return _TopOpeBRep.TopOpeBRep_ListOfBipoint_IsEmpty(self, *args)
+        return _TopOpeBRep.TopOpeBRep_ListOfBipoint_IsEmpty(self)
 
-    def Prepend(self, *args) -> "void" :
+    def Prepend(self, *args):
         """
         :param I:
         :type I: TopOpeBRep_Bipoint &
@@ -4141,7 +4210,7 @@ class TopOpeBRep_ListOfBipoint(object):
         """
         return _TopOpeBRep.TopOpeBRep_ListOfBipoint_Prepend(self, *args)
 
-    def Append(self, *args) -> "void" :
+    def Append(self, *args):
         """
         :param I:
         :type I: TopOpeBRep_Bipoint &
@@ -4160,28 +4229,28 @@ class TopOpeBRep_ListOfBipoint(object):
         """
         return _TopOpeBRep.TopOpeBRep_ListOfBipoint_Append(self, *args)
 
-    def First(self, *args) -> "TopOpeBRep_Bipoint &" :
+    def First(self):
         """
         :rtype: TopOpeBRep_Bipoint
 
         """
-        return _TopOpeBRep.TopOpeBRep_ListOfBipoint_First(self, *args)
+        return _TopOpeBRep.TopOpeBRep_ListOfBipoint_First(self)
 
-    def Last(self, *args) -> "TopOpeBRep_Bipoint &" :
+    def Last(self):
         """
         :rtype: TopOpeBRep_Bipoint
 
         """
-        return _TopOpeBRep.TopOpeBRep_ListOfBipoint_Last(self, *args)
+        return _TopOpeBRep.TopOpeBRep_ListOfBipoint_Last(self)
 
-    def RemoveFirst(self, *args) -> "void" :
+    def RemoveFirst(self):
         """
         :rtype: None
 
         """
-        return _TopOpeBRep.TopOpeBRep_ListOfBipoint_RemoveFirst(self, *args)
+        return _TopOpeBRep.TopOpeBRep_ListOfBipoint_RemoveFirst(self)
 
-    def Remove(self, *args) -> "void" :
+    def Remove(self, *args):
         """
         :param It:
         :type It: TopOpeBRep_ListIteratorOfListOfBipoint &
@@ -4190,7 +4259,7 @@ class TopOpeBRep_ListOfBipoint(object):
         """
         return _TopOpeBRep.TopOpeBRep_ListOfBipoint_Remove(self, *args)
 
-    def InsertBefore(self, *args) -> "void" :
+    def InsertBefore(self, *args):
         """
         :param I:
         :type I: TopOpeBRep_Bipoint &
@@ -4207,7 +4276,7 @@ class TopOpeBRep_ListOfBipoint(object):
         """
         return _TopOpeBRep.TopOpeBRep_ListOfBipoint_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args) -> "void" :
+    def InsertAfter(self, *args):
         """
         :param I:
         :type I: TopOpeBRep_Bipoint &
@@ -4252,24 +4321,36 @@ TopOpeBRep_ListOfBipoint_swigregister(TopOpeBRep_ListOfBipoint)
 class TopOpeBRep_Point2d(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _TopOpeBRep.TopOpeBRep_Point2d_swiginit(self,_TopOpeBRep.new_TopOpeBRep_Point2d(*args))
-    def Dump(self, *args) -> "void" :
+        _TopOpeBRep.TopOpeBRep_Point2d_swiginit(self,_TopOpeBRep.new_TopOpeBRep_Point2d())
+    def Dump(self, ie1=0, ie2=0):
         """
         :param ie1: default value is 0
-        :type ie1: int
+        :type ie1: Standard_Integer
         :param ie2: default value is 0
-        :type ie2: int
+        :type ie2: Standard_Integer
+        :rtype: None
+
+        :param ie1: default value is 0
+        :type ie1: Standard_Integer
+        :param ie2: default value is 0
+        :type ie2: Standard_Integer
+        :rtype: None
+
+        :param ie1: default value is 0
+        :type ie1: Standard_Integer
+        :param ie2: default value is 0
+        :type ie2: Standard_Integer
         :rtype: None
 
         """
-        return _TopOpeBRep.TopOpeBRep_Point2d_Dump(self, *args)
+        return _TopOpeBRep.TopOpeBRep_Point2d_Dump(self, ie1, ie2)
 
-    def SetPint(self, *args) -> "void" :
+    def SetPint(self, *args):
         """
         :param P:
         :type P: IntRes2d_IntersectionPoint &
@@ -4278,24 +4359,24 @@ class TopOpeBRep_Point2d(object):
         """
         return _TopOpeBRep.TopOpeBRep_Point2d_SetPint(self, *args)
 
-    def HasPint(self, *args) -> "Standard_Boolean" :
+    def HasPint(self):
         """
         :rtype: bool
 
         """
-        return _TopOpeBRep.TopOpeBRep_Point2d_HasPint(self, *args)
+        return _TopOpeBRep.TopOpeBRep_Point2d_HasPint(self)
 
-    def Pint(self, *args) -> "IntRes2d_IntersectionPoint const &" :
+    def Pint(self):
         """
         :rtype: IntRes2d_IntersectionPoint
 
         """
-        return _TopOpeBRep.TopOpeBRep_Point2d_Pint(self, *args)
+        return _TopOpeBRep.TopOpeBRep_Point2d_Pint(self)
 
-    def SetIsVertex(self, *args) -> "void" :
+    def SetIsVertex(self, *args):
         """
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :param B:
         :type B: bool
         :rtype: None
@@ -4303,19 +4384,19 @@ class TopOpeBRep_Point2d(object):
         """
         return _TopOpeBRep.TopOpeBRep_Point2d_SetIsVertex(self, *args)
 
-    def IsVertex(self, *args) -> "Standard_Boolean" :
+    def IsVertex(self, *args):
         """
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :rtype: bool
 
         """
         return _TopOpeBRep.TopOpeBRep_Point2d_IsVertex(self, *args)
 
-    def SetVertex(self, *args) -> "void" :
+    def SetVertex(self, *args):
         """
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :param V:
         :type V: TopoDS_Vertex &
         :rtype: None
@@ -4323,19 +4404,19 @@ class TopOpeBRep_Point2d(object):
         """
         return _TopOpeBRep.TopOpeBRep_Point2d_SetVertex(self, *args)
 
-    def Vertex(self, *args) -> "TopoDS_Vertex const" :
+    def Vertex(self, *args):
         """
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :rtype: TopoDS_Vertex
 
         """
         return _TopOpeBRep.TopOpeBRep_Point2d_Vertex(self, *args)
 
-    def SetTransition(self, *args) -> "void" :
+    def SetTransition(self, *args):
         """
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :param T:
         :type T: TopOpeBRepDS_Transition &
         :rtype: None
@@ -4343,28 +4424,28 @@ class TopOpeBRep_Point2d(object):
         """
         return _TopOpeBRep.TopOpeBRep_Point2d_SetTransition(self, *args)
 
-    def Transition(self, *args) -> "TopOpeBRepDS_Transition const &" :
+    def Transition(self, *args):
         """
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :rtype: TopOpeBRepDS_Transition
 
         """
         return _TopOpeBRep.TopOpeBRep_Point2d_Transition(self, *args)
 
-    def ChangeTransition(self, *args) -> "TopOpeBRepDS_Transition &" :
+    def ChangeTransition(self, *args):
         """
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :rtype: TopOpeBRepDS_Transition
 
         """
         return _TopOpeBRep.TopOpeBRep_Point2d_ChangeTransition(self, *args)
 
-    def SetParameter(self, *args) -> "void" :
+    def SetParameter(self, *args):
         """
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :param P:
         :type P: float
         :rtype: None
@@ -4372,16 +4453,16 @@ class TopOpeBRep_Point2d(object):
         """
         return _TopOpeBRep.TopOpeBRep_Point2d_SetParameter(self, *args)
 
-    def Parameter(self, *args) -> "Standard_Real" :
+    def Parameter(self, *args):
         """
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :rtype: float
 
         """
         return _TopOpeBRep.TopOpeBRep_Point2d_Parameter(self, *args)
 
-    def SetIsPointOfSegment(self, *args) -> "void" :
+    def SetIsPointOfSegment(self, *args):
         """
         :param B:
         :type B: bool
@@ -4390,36 +4471,36 @@ class TopOpeBRep_Point2d(object):
         """
         return _TopOpeBRep.TopOpeBRep_Point2d_SetIsPointOfSegment(self, *args)
 
-    def IsPointOfSegment(self, *args) -> "Standard_Boolean" :
+    def IsPointOfSegment(self):
         """
         :rtype: bool
 
         """
-        return _TopOpeBRep.TopOpeBRep_Point2d_IsPointOfSegment(self, *args)
+        return _TopOpeBRep.TopOpeBRep_Point2d_IsPointOfSegment(self)
 
-    def SetSegmentAncestors(self, *args) -> "void" :
+    def SetSegmentAncestors(self, *args):
         """
         :param IP1:
-        :type IP1: int
+        :type IP1: Standard_Integer
         :param IP2:
-        :type IP2: int
+        :type IP2: Standard_Integer
         :rtype: None
 
         """
         return _TopOpeBRep.TopOpeBRep_Point2d_SetSegmentAncestors(self, *args)
 
-    def SegmentAncestors(self, *args) -> "Standard_Boolean" :
+    def SegmentAncestors(self):
         """
         :param IP1:
-        :type IP1: int &
+        :type IP1: Standard_Integer &
         :param IP2:
-        :type IP2: int &
+        :type IP2: Standard_Integer &
         :rtype: bool
 
         """
-        return _TopOpeBRep.TopOpeBRep_Point2d_SegmentAncestors(self, *args)
+        return _TopOpeBRep.TopOpeBRep_Point2d_SegmentAncestors(self)
 
-    def SetStatus(self, *args) -> "void" :
+    def SetStatus(self, *args):
         """
         :param S:
         :type S: TopOpeBRep_P2Dstatus
@@ -4428,30 +4509,30 @@ class TopOpeBRep_Point2d(object):
         """
         return _TopOpeBRep.TopOpeBRep_Point2d_SetStatus(self, *args)
 
-    def Status(self, *args) -> "TopOpeBRep_P2Dstatus" :
+    def Status(self):
         """
         :rtype: TopOpeBRep_P2Dstatus
 
         """
-        return _TopOpeBRep.TopOpeBRep_Point2d_Status(self, *args)
+        return _TopOpeBRep.TopOpeBRep_Point2d_Status(self)
 
-    def SetIndex(self, *args) -> "void" :
+    def SetIndex(self, *args):
         """
         :param X:
-        :type X: int
+        :type X: Standard_Integer
         :rtype: None
 
         """
         return _TopOpeBRep.TopOpeBRep_Point2d_SetIndex(self, *args)
 
-    def Index(self, *args) -> "Standard_Integer" :
+    def Index(self):
         """
         :rtype: int
 
         """
-        return _TopOpeBRep.TopOpeBRep_Point2d_Index(self, *args)
+        return _TopOpeBRep.TopOpeBRep_Point2d_Index(self)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param P:
         :type P: gp_Pnt
@@ -4460,14 +4541,14 @@ class TopOpeBRep_Point2d(object):
         """
         return _TopOpeBRep.TopOpeBRep_Point2d_SetValue(self, *args)
 
-    def Value(self, *args) -> "gp_Pnt const" :
+    def Value(self):
         """
         :rtype: gp_Pnt
 
         """
-        return _TopOpeBRep.TopOpeBRep_Point2d_Value(self, *args)
+        return _TopOpeBRep.TopOpeBRep_Point2d_Value(self)
 
-    def SetValue2d(self, *args) -> "void" :
+    def SetValue2d(self, *args):
         """
         :param P:
         :type P: gp_Pnt2d
@@ -4476,14 +4557,14 @@ class TopOpeBRep_Point2d(object):
         """
         return _TopOpeBRep.TopOpeBRep_Point2d_SetValue2d(self, *args)
 
-    def Value2d(self, *args) -> "gp_Pnt2d const" :
+    def Value2d(self):
         """
         :rtype: gp_Pnt2d
 
         """
-        return _TopOpeBRep.TopOpeBRep_Point2d_Value2d(self, *args)
+        return _TopOpeBRep.TopOpeBRep_Point2d_Value2d(self)
 
-    def SetKeep(self, *args) -> "void" :
+    def SetKeep(self, *args):
         """
         :param B:
         :type B: bool
@@ -4492,14 +4573,14 @@ class TopOpeBRep_Point2d(object):
         """
         return _TopOpeBRep.TopOpeBRep_Point2d_SetKeep(self, *args)
 
-    def Keep(self, *args) -> "Standard_Boolean" :
+    def Keep(self):
         """
         :rtype: bool
 
         """
-        return _TopOpeBRep.TopOpeBRep_Point2d_Keep(self, *args)
+        return _TopOpeBRep.TopOpeBRep_Point2d_Keep(self)
 
-    def SetEdgesConfig(self, *args) -> "void" :
+    def SetEdgesConfig(self, *args):
         """
         :param C:
         :type C: TopOpeBRepDS_Config
@@ -4508,14 +4589,14 @@ class TopOpeBRep_Point2d(object):
         """
         return _TopOpeBRep.TopOpeBRep_Point2d_SetEdgesConfig(self, *args)
 
-    def EdgesConfig(self, *args) -> "TopOpeBRepDS_Config" :
+    def EdgesConfig(self):
         """
         :rtype: TopOpeBRepDS_Config
 
         """
-        return _TopOpeBRep.TopOpeBRep_Point2d_EdgesConfig(self, *args)
+        return _TopOpeBRep.TopOpeBRep_Point2d_EdgesConfig(self)
 
-    def SetTolerance(self, *args) -> "void" :
+    def SetTolerance(self, *args):
         """
         :param T:
         :type T: float
@@ -4524,14 +4605,14 @@ class TopOpeBRep_Point2d(object):
         """
         return _TopOpeBRep.TopOpeBRep_Point2d_SetTolerance(self, *args)
 
-    def Tolerance(self, *args) -> "Standard_Real" :
+    def Tolerance(self):
         """
         :rtype: float
 
         """
-        return _TopOpeBRep.TopOpeBRep_Point2d_Tolerance(self, *args)
+        return _TopOpeBRep.TopOpeBRep_Point2d_Tolerance(self)
 
-    def SetHctxff2d(self, *args) -> "void" :
+    def SetHctxff2d(self, *args):
         """
         :param ff2d:
         :type ff2d: Handle_TopOpeBRep_Hctxff2d &
@@ -4540,14 +4621,14 @@ class TopOpeBRep_Point2d(object):
         """
         return _TopOpeBRep.TopOpeBRep_Point2d_SetHctxff2d(self, *args)
 
-    def Hctxff2d(self, *args) -> "Handle_TopOpeBRep_Hctxff2d" :
+    def Hctxff2d(self):
         """
         :rtype: Handle_TopOpeBRep_Hctxff2d
 
         """
-        return _TopOpeBRep.TopOpeBRep_Point2d_Hctxff2d(self, *args)
+        return _TopOpeBRep.TopOpeBRep_Point2d_Hctxff2d(self)
 
-    def SetHctxee2d(self, *args) -> "void" :
+    def SetHctxee2d(self, *args):
         """
         :param ee2d:
         :type ee2d: Handle_TopOpeBRep_Hctxee2d &
@@ -4556,12 +4637,12 @@ class TopOpeBRep_Point2d(object):
         """
         return _TopOpeBRep.TopOpeBRep_Point2d_SetHctxee2d(self, *args)
 
-    def Hctxee2d(self, *args) -> "Handle_TopOpeBRep_Hctxee2d" :
+    def Hctxee2d(self):
         """
         :rtype: Handle_TopOpeBRep_Hctxee2d
 
         """
-        return _TopOpeBRep.TopOpeBRep_Point2d_Hctxee2d(self, *args)
+        return _TopOpeBRep.TopOpeBRep_Point2d_Hctxee2d(self)
 
     def __del__(self):
     	try:
@@ -4613,20 +4694,20 @@ TopOpeBRep_Point2d_swigregister(TopOpeBRep_Point2d)
 class TopOpeBRep_PointClassifier(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _TopOpeBRep.TopOpeBRep_PointClassifier_swiginit(self,_TopOpeBRep.new_TopOpeBRep_PointClassifier(*args))
-    def Init(self, *args) -> "void" :
+        _TopOpeBRep.TopOpeBRep_PointClassifier_swiginit(self,_TopOpeBRep.new_TopOpeBRep_PointClassifier())
+    def Init(self):
         """
         :rtype: None
 
         """
-        return _TopOpeBRep.TopOpeBRep_PointClassifier_Init(self, *args)
+        return _TopOpeBRep.TopOpeBRep_PointClassifier_Init(self)
 
-    def Load(self, *args) -> "void" :
+    def Load(self, *args):
         """
         :param F:
         :type F: TopoDS_Face &
@@ -4635,7 +4716,7 @@ class TopOpeBRep_PointClassifier(object):
         """
         return _TopOpeBRep.TopOpeBRep_PointClassifier_Load(self, *args)
 
-    def Classify(self, *args) -> "TopAbs_State" :
+    def Classify(self, *args):
         """
         * compute position of point <P> regarding with the face <F>.
 
@@ -4650,12 +4731,12 @@ class TopOpeBRep_PointClassifier(object):
         """
         return _TopOpeBRep.TopOpeBRep_PointClassifier_Classify(self, *args)
 
-    def State(self, *args) -> "TopAbs_State" :
+    def State(self):
         """
         :rtype: TopAbs_State
 
         """
-        return _TopOpeBRep.TopOpeBRep_PointClassifier_State(self, *args)
+        return _TopOpeBRep.TopOpeBRep_PointClassifier_State(self)
 
     def __del__(self):
     	try:
@@ -4675,8 +4756,9 @@ TopOpeBRep_PointClassifier_swigregister(TopOpeBRep_PointClassifier)
 
 class TopOpeBRep_PointGeomTool(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
+    def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def MakePoint(*args) -> "TopOpeBRepDS_Point" :
+    def MakePoint(*args):
         """
         :param IP:
         :type IP: TopOpeBRep_VPointInter &
@@ -4698,7 +4780,7 @@ class TopOpeBRep_PointGeomTool(object):
         return _TopOpeBRep.TopOpeBRep_PointGeomTool_MakePoint(*args)
 
     MakePoint = staticmethod(MakePoint)
-    def IsEqual(*args) -> "Standard_Boolean" :
+    def IsEqual(*args):
         """
         :param DSP1:
         :type DSP1: TopOpeBRepDS_Point &
@@ -4710,8 +4792,6 @@ class TopOpeBRep_PointGeomTool(object):
         return _TopOpeBRep.TopOpeBRep_PointGeomTool_IsEqual(*args)
 
     IsEqual = staticmethod(IsEqual)
-    def __init__(self): 
-        _TopOpeBRep.TopOpeBRep_PointGeomTool_swiginit(self,_TopOpeBRep.new_TopOpeBRep_PointGeomTool())
     def __del__(self):
     	try:
     		self.thisown = False
@@ -4724,7 +4804,7 @@ TopOpeBRep_PointGeomTool._kill_pointed = new_instancemethod(_TopOpeBRep.TopOpeBR
 TopOpeBRep_PointGeomTool_swigregister = _TopOpeBRep.TopOpeBRep_PointGeomTool_swigregister
 TopOpeBRep_PointGeomTool_swigregister(TopOpeBRep_PointGeomTool)
 
-def TopOpeBRep_PointGeomTool_MakePoint(*args) -> "TopOpeBRepDS_Point" :
+def TopOpeBRep_PointGeomTool_MakePoint(*args):
   """
     :param IP:
     :type IP: TopOpeBRep_VPointInter &
@@ -4745,7 +4825,7 @@ def TopOpeBRep_PointGeomTool_MakePoint(*args) -> "TopOpeBRepDS_Point" :
     """
   return _TopOpeBRep.TopOpeBRep_PointGeomTool_MakePoint(*args)
 
-def TopOpeBRep_PointGeomTool_IsEqual(*args) -> "Standard_Boolean" :
+def TopOpeBRep_PointGeomTool_IsEqual(*args):
   """
     :param DSP1:
     :type DSP1: TopOpeBRepDS_Point &
@@ -4771,18 +4851,18 @@ class TopOpeBRep_SequenceNodeOfSequenceOfPoint2d(OCC.TCollection.TCollection_Seq
 
         """
         _TopOpeBRep.TopOpeBRep_SequenceNodeOfSequenceOfPoint2d_swiginit(self,_TopOpeBRep.new_TopOpeBRep_SequenceNodeOfSequenceOfPoint2d(*args))
-    def Value(self, *args) -> "TopOpeBRep_Point2d &" :
+    def Value(self):
         """
         :rtype: TopOpeBRep_Point2d
 
         """
-        return _TopOpeBRep.TopOpeBRep_SequenceNodeOfSequenceOfPoint2d_Value(self, *args)
+        return _TopOpeBRep.TopOpeBRep_SequenceNodeOfSequenceOfPoint2d_Value(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(TopOpeBRep_SequenceNodeOfSequenceOfPoint2d self)"""
         return _TopOpeBRep.TopOpeBRep_SequenceNodeOfSequenceOfPoint2d__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_TopOpeBRep_SequenceNodeOfSequenceOfPoint2d" :
+    def GetHandle(self):
         """GetHandle(TopOpeBRep_SequenceNodeOfSequenceOfPoint2d self) -> Handle_TopOpeBRep_SequenceNodeOfSequenceOfPoint2d"""
         return _TopOpeBRep.TopOpeBRep_SequenceNodeOfSequenceOfPoint2d_GetHandle(self)
 
@@ -4821,27 +4901,27 @@ Handle_TopOpeBRep_SequenceNodeOfSequenceOfPoint2d._kill_pointed = new_instanceme
 Handle_TopOpeBRep_SequenceNodeOfSequenceOfPoint2d_swigregister = _TopOpeBRep.Handle_TopOpeBRep_SequenceNodeOfSequenceOfPoint2d_swigregister
 Handle_TopOpeBRep_SequenceNodeOfSequenceOfPoint2d_swigregister(Handle_TopOpeBRep_SequenceNodeOfSequenceOfPoint2d)
 
-def Handle_TopOpeBRep_SequenceNodeOfSequenceOfPoint2d_DownCast(*args) -> "Handle_TopOpeBRep_SequenceNodeOfSequenceOfPoint2d const" :
+def Handle_TopOpeBRep_SequenceNodeOfSequenceOfPoint2d_DownCast(*args):
   return _TopOpeBRep.Handle_TopOpeBRep_SequenceNodeOfSequenceOfPoint2d_DownCast(*args)
 Handle_TopOpeBRep_SequenceNodeOfSequenceOfPoint2d_DownCast = _TopOpeBRep.Handle_TopOpeBRep_SequenceNodeOfSequenceOfPoint2d_DownCast
 
 class TopOpeBRep_SequenceOfPoint2d(OCC.TCollection.TCollection_BaseSequence):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _TopOpeBRep.TopOpeBRep_SequenceOfPoint2d_swiginit(self,_TopOpeBRep.new_TopOpeBRep_SequenceOfPoint2d(*args))
-    def Clear(self, *args) -> "void" :
+        _TopOpeBRep.TopOpeBRep_SequenceOfPoint2d_swiginit(self,_TopOpeBRep.new_TopOpeBRep_SequenceOfPoint2d())
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _TopOpeBRep.TopOpeBRep_SequenceOfPoint2d_Clear(self, *args)
+        return _TopOpeBRep.TopOpeBRep_SequenceOfPoint2d_Clear(self)
 
-    def Assign(self, *args) -> "TopOpeBRep_SequenceOfPoint2d const &" :
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: TopOpeBRep_SequenceOfPoint2d &
@@ -4850,7 +4930,7 @@ class TopOpeBRep_SequenceOfPoint2d(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TopOpeBRep.TopOpeBRep_SequenceOfPoint2d_Assign(self, *args)
 
-    def Set(self, *args) -> "TopOpeBRep_SequenceOfPoint2d const &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: TopOpeBRep_SequenceOfPoint2d &
@@ -4859,7 +4939,7 @@ class TopOpeBRep_SequenceOfPoint2d(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TopOpeBRep.TopOpeBRep_SequenceOfPoint2d_Set(self, *args)
 
-    def Append(self, *args) -> "void" :
+    def Append(self, *args):
         """
         :param T:
         :type T: TopOpeBRep_Point2d &
@@ -4872,7 +4952,7 @@ class TopOpeBRep_SequenceOfPoint2d(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TopOpeBRep.TopOpeBRep_SequenceOfPoint2d_Append(self, *args)
 
-    def Prepend(self, *args) -> "void" :
+    def Prepend(self, *args):
         """
         :param T:
         :type T: TopOpeBRep_Point2d &
@@ -4885,16 +4965,16 @@ class TopOpeBRep_SequenceOfPoint2d(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TopOpeBRep.TopOpeBRep_SequenceOfPoint2d_Prepend(self, *args)
 
-    def InsertBefore(self, *args) -> "void" :
+    def InsertBefore(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param T:
         :type T: TopOpeBRep_Point2d &
         :rtype: None
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param S:
         :type S: TopOpeBRep_SequenceOfPoint2d &
         :rtype: None
@@ -4902,16 +4982,16 @@ class TopOpeBRep_SequenceOfPoint2d(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TopOpeBRep.TopOpeBRep_SequenceOfPoint2d_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args) -> "void" :
+    def InsertAfter(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param T:
         :type T: TopOpeBRep_Point2d &
         :rtype: None
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param S:
         :type S: TopOpeBRep_SequenceOfPoint2d &
         :rtype: None
@@ -4919,24 +4999,24 @@ class TopOpeBRep_SequenceOfPoint2d(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TopOpeBRep.TopOpeBRep_SequenceOfPoint2d_InsertAfter(self, *args)
 
-    def First(self, *args) -> "TopOpeBRep_Point2d const &" :
+    def First(self):
         """
         :rtype: TopOpeBRep_Point2d
 
         """
-        return _TopOpeBRep.TopOpeBRep_SequenceOfPoint2d_First(self, *args)
+        return _TopOpeBRep.TopOpeBRep_SequenceOfPoint2d_First(self)
 
-    def Last(self, *args) -> "TopOpeBRep_Point2d const &" :
+    def Last(self):
         """
         :rtype: TopOpeBRep_Point2d
 
         """
-        return _TopOpeBRep.TopOpeBRep_SequenceOfPoint2d_Last(self, *args)
+        return _TopOpeBRep.TopOpeBRep_SequenceOfPoint2d_Last(self)
 
-    def Split(self, *args) -> "void" :
+    def Split(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Sub:
         :type Sub: TopOpeBRep_SequenceOfPoint2d &
         :rtype: None
@@ -4944,19 +5024,19 @@ class TopOpeBRep_SequenceOfPoint2d(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TopOpeBRep.TopOpeBRep_SequenceOfPoint2d_Split(self, *args)
 
-    def Value(self, *args) -> "TopOpeBRep_Point2d const &" :
+    def Value(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: TopOpeBRep_Point2d
 
         """
         return _TopOpeBRep.TopOpeBRep_SequenceOfPoint2d_Value(self, *args)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param I:
         :type I: TopOpeBRep_Point2d &
         :rtype: None
@@ -4964,25 +5044,25 @@ class TopOpeBRep_SequenceOfPoint2d(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TopOpeBRep.TopOpeBRep_SequenceOfPoint2d_SetValue(self, *args)
 
-    def ChangeValue(self, *args) -> "TopOpeBRep_Point2d &" :
+    def ChangeValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: TopOpeBRep_Point2d
 
         """
         return _TopOpeBRep.TopOpeBRep_SequenceOfPoint2d_ChangeValue(self, *args)
 
-    def Remove(self, *args) -> "void" :
+    def Remove(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: None
 
         :param FromIndex:
-        :type FromIndex: int
+        :type FromIndex: Standard_Integer
         :param ToIndex:
-        :type ToIndex: int
+        :type ToIndex: Standard_Integer
         :rtype: None
 
         """
@@ -5017,13 +5097,13 @@ TopOpeBRep_SequenceOfPoint2d_swigregister(TopOpeBRep_SequenceOfPoint2d)
 class TopOpeBRep_ShapeIntersector(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _TopOpeBRep.TopOpeBRep_ShapeIntersector_swiginit(self,_TopOpeBRep.new_TopOpeBRep_ShapeIntersector(*args))
-    def InitIntersection(self, *args) -> "void" :
+        _TopOpeBRep.TopOpeBRep_ShapeIntersector_swiginit(self,_TopOpeBRep.new_TopOpeBRep_ShapeIntersector())
+    def InitIntersection(self, *args):
         """
         * Initialize the intersection of shapes S1,S2.
 
@@ -5048,74 +5128,74 @@ class TopOpeBRep_ShapeIntersector(object):
         """
         return _TopOpeBRep.TopOpeBRep_ShapeIntersector_InitIntersection(self, *args)
 
-    def Shape(self, *args) -> "TopoDS_Shape const" :
+    def Shape(self, *args):
         """
         * return the shape <Index> ( = 1 or 2) given to InitIntersection(). Index = 1 will return S1, Index = 2 will return S2.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: TopoDS_Shape
 
         """
         return _TopOpeBRep.TopOpeBRep_ShapeIntersector_Shape(self, *args)
 
-    def MoreIntersection(self, *args) -> "Standard_Boolean" :
+    def MoreIntersection(self):
         """
         * returns True if there are more intersection between two the shapes.
 
         :rtype: bool
 
         """
-        return _TopOpeBRep.TopOpeBRep_ShapeIntersector_MoreIntersection(self, *args)
+        return _TopOpeBRep.TopOpeBRep_ShapeIntersector_MoreIntersection(self)
 
-    def NextIntersection(self, *args) -> "void" :
+    def NextIntersection(self):
         """
         * search for the next intersection between the two shapes.
 
         :rtype: None
 
         """
-        return _TopOpeBRep.TopOpeBRep_ShapeIntersector_NextIntersection(self, *args)
+        return _TopOpeBRep.TopOpeBRep_ShapeIntersector_NextIntersection(self)
 
-    def ChangeFacesIntersector(self, *args) -> "TopOpeBRep_FacesIntersector &" :
+    def ChangeFacesIntersector(self):
         """
         * return the current intersection of two Faces.
 
         :rtype: TopOpeBRep_FacesIntersector
 
         """
-        return _TopOpeBRep.TopOpeBRep_ShapeIntersector_ChangeFacesIntersector(self, *args)
+        return _TopOpeBRep.TopOpeBRep_ShapeIntersector_ChangeFacesIntersector(self)
 
-    def ChangeEdgesIntersector(self, *args) -> "TopOpeBRep_EdgesIntersector &" :
+    def ChangeEdgesIntersector(self):
         """
         * return the current intersection of two Edges.
 
         :rtype: TopOpeBRep_EdgesIntersector
 
         """
-        return _TopOpeBRep.TopOpeBRep_ShapeIntersector_ChangeEdgesIntersector(self, *args)
+        return _TopOpeBRep.TopOpeBRep_ShapeIntersector_ChangeEdgesIntersector(self)
 
-    def ChangeFaceEdgeIntersector(self, *args) -> "TopOpeBRep_FaceEdgeIntersector &" :
+    def ChangeFaceEdgeIntersector(self):
         """
         * return the current intersection of a Face and an Edge.
 
         :rtype: TopOpeBRep_FaceEdgeIntersector
 
         """
-        return _TopOpeBRep.TopOpeBRep_ShapeIntersector_ChangeFaceEdgeIntersector(self, *args)
+        return _TopOpeBRep.TopOpeBRep_ShapeIntersector_ChangeFaceEdgeIntersector(self)
 
-    def CurrentGeomShape(self, *args) -> "TopoDS_Shape const" :
+    def CurrentGeomShape(self, *args):
         """
         * return geometric shape <Index> ( = 1 or 2 ) of current intersection.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: TopoDS_Shape
 
         """
         return _TopOpeBRep.TopOpeBRep_ShapeIntersector_CurrentGeomShape(self, *args)
 
-    def GetTolerances(self, *args) -> "void" :
+    def GetTolerances(self):
         """
         * return MAX of intersection tolerances with which FacesIntersector from TopOpeBRep was working.
 
@@ -5126,27 +5206,27 @@ class TopOpeBRep_ShapeIntersector(object):
         :rtype: None
 
         """
-        return _TopOpeBRep.TopOpeBRep_ShapeIntersector_GetTolerances(self, *args)
+        return _TopOpeBRep.TopOpeBRep_ShapeIntersector_GetTolerances(self)
 
-    def DumpCurrent(self, *args) -> "void" :
+    def DumpCurrent(self, *args):
         """
         :param K:
-        :type K: int
+        :type K: Standard_Integer
         :rtype: None
 
         """
         return _TopOpeBRep.TopOpeBRep_ShapeIntersector_DumpCurrent(self, *args)
 
-    def Index(self, *args) -> "Standard_Integer" :
+    def Index(self, *args):
         """
         :param K:
-        :type K: int
+        :type K: Standard_Integer
         :rtype: int
 
         """
         return _TopOpeBRep.TopOpeBRep_ShapeIntersector_Index(self, *args)
 
-    def RejectedFaces(self, *args) -> "void" :
+    def RejectedFaces(self, *args):
         """
         :param anObj:
         :type anObj: TopoDS_Shape &
@@ -5186,13 +5266,13 @@ TopOpeBRep_ShapeIntersector_swigregister(TopOpeBRep_ShapeIntersector)
 class TopOpeBRep_ShapeIntersector2d(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _TopOpeBRep.TopOpeBRep_ShapeIntersector2d_swiginit(self,_TopOpeBRep.new_TopOpeBRep_ShapeIntersector2d(*args))
-    def InitIntersection(self, *args) -> "void" :
+        _TopOpeBRep.TopOpeBRep_ShapeIntersector2d_swiginit(self,_TopOpeBRep.new_TopOpeBRep_ShapeIntersector2d())
+    def InitIntersection(self, *args):
         """
         * Initialize the intersection of shapes S1,S2.
 
@@ -5205,68 +5285,68 @@ class TopOpeBRep_ShapeIntersector2d(object):
         """
         return _TopOpeBRep.TopOpeBRep_ShapeIntersector2d_InitIntersection(self, *args)
 
-    def Shape(self, *args) -> "TopoDS_Shape const" :
+    def Shape(self, *args):
         """
         * return the shape <Index> ( = 1 or 2) given to InitIntersection(). Index = 1 will return S1, Index = 2 will return S2.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: TopoDS_Shape
 
         """
         return _TopOpeBRep.TopOpeBRep_ShapeIntersector2d_Shape(self, *args)
 
-    def MoreIntersection(self, *args) -> "Standard_Boolean" :
+    def MoreIntersection(self):
         """
         * returns True if there are more intersection between two the shapes.
 
         :rtype: bool
 
         """
-        return _TopOpeBRep.TopOpeBRep_ShapeIntersector2d_MoreIntersection(self, *args)
+        return _TopOpeBRep.TopOpeBRep_ShapeIntersector2d_MoreIntersection(self)
 
-    def NextIntersection(self, *args) -> "void" :
+    def NextIntersection(self):
         """
         * search for the next intersection between the two shapes.
 
         :rtype: None
 
         """
-        return _TopOpeBRep.TopOpeBRep_ShapeIntersector2d_NextIntersection(self, *args)
+        return _TopOpeBRep.TopOpeBRep_ShapeIntersector2d_NextIntersection(self)
 
-    def ChangeEdgesIntersector(self, *args) -> "TopOpeBRep_EdgesIntersector &" :
+    def ChangeEdgesIntersector(self):
         """
         * return the current intersection of two Edges.
 
         :rtype: TopOpeBRep_EdgesIntersector
 
         """
-        return _TopOpeBRep.TopOpeBRep_ShapeIntersector2d_ChangeEdgesIntersector(self, *args)
+        return _TopOpeBRep.TopOpeBRep_ShapeIntersector2d_ChangeEdgesIntersector(self)
 
-    def CurrentGeomShape(self, *args) -> "TopoDS_Shape const" :
+    def CurrentGeomShape(self, *args):
         """
         * return geometric shape <Index> ( = 1 or 2 ) of current intersection.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: TopoDS_Shape
 
         """
         return _TopOpeBRep.TopOpeBRep_ShapeIntersector2d_CurrentGeomShape(self, *args)
 
-    def DumpCurrent(self, *args) -> "void" :
+    def DumpCurrent(self, *args):
         """
         :param K:
-        :type K: int
+        :type K: Standard_Integer
         :rtype: None
 
         """
         return _TopOpeBRep.TopOpeBRep_ShapeIntersector2d_DumpCurrent(self, *args)
 
-    def Index(self, *args) -> "Standard_Integer" :
+    def Index(self, *args):
         """
         :param K:
-        :type K: int
+        :type K: Standard_Integer
         :rtype: int
 
         """
@@ -5295,21 +5375,29 @@ TopOpeBRep_ShapeIntersector2d_swigregister(TopOpeBRep_ShapeIntersector2d)
 class TopOpeBRep_ShapeScanner(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _TopOpeBRep.TopOpeBRep_ShapeScanner_swiginit(self,_TopOpeBRep.new_TopOpeBRep_ShapeScanner(*args))
-    def Clear(self, *args) -> "void" :
+        _TopOpeBRep.TopOpeBRep_ShapeScanner_swiginit(self,_TopOpeBRep.new_TopOpeBRep_ShapeScanner())
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _TopOpeBRep.TopOpeBRep_ShapeScanner_Clear(self, *args)
+        return _TopOpeBRep.TopOpeBRep_ShapeScanner_Clear(self)
 
-    def AddBoxesMakeCOB(self, *args) -> "void" :
+    def AddBoxesMakeCOB(self, *args):
         """
+        :param S:
+        :type S: TopoDS_Shape &
+        :param TS:
+        :type TS: TopAbs_ShapeEnum
+        :param TA: default value is TopAbs_SHAPE
+        :type TA: TopAbs_ShapeEnum
+        :rtype: None
+
         :param S:
         :type S: TopoDS_Shape &
         :param TS:
@@ -5321,7 +5409,7 @@ class TopOpeBRep_ShapeScanner(object):
         """
         return _TopOpeBRep.TopOpeBRep_ShapeScanner_AddBoxesMakeCOB(self, *args)
 
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
         :param E:
         :type E: TopoDS_Shape &
@@ -5334,53 +5422,53 @@ class TopOpeBRep_ShapeScanner(object):
         """
         return _TopOpeBRep.TopOpeBRep_ShapeScanner_Init(self, *args)
 
-    def More(self, *args) -> "Standard_Boolean" :
+    def More(self):
         """
         :rtype: bool
 
         """
-        return _TopOpeBRep.TopOpeBRep_ShapeScanner_More(self, *args)
+        return _TopOpeBRep.TopOpeBRep_ShapeScanner_More(self)
 
-    def Next(self, *args) -> "void" :
+    def Next(self):
         """
         :rtype: None
 
         """
-        return _TopOpeBRep.TopOpeBRep_ShapeScanner_Next(self, *args)
+        return _TopOpeBRep.TopOpeBRep_ShapeScanner_Next(self)
 
-    def Current(self, *args) -> "TopoDS_Shape const" :
+    def Current(self):
         """
         :rtype: TopoDS_Shape
 
         """
-        return _TopOpeBRep.TopOpeBRep_ShapeScanner_Current(self, *args)
+        return _TopOpeBRep.TopOpeBRep_ShapeScanner_Current(self)
 
-    def BoxSort(self, *args) -> "TopOpeBRepTool_BoxSort const &" :
+    def BoxSort(self):
         """
         :rtype: TopOpeBRepTool_BoxSort
 
         """
-        return _TopOpeBRep.TopOpeBRep_ShapeScanner_BoxSort(self, *args)
+        return _TopOpeBRep.TopOpeBRep_ShapeScanner_BoxSort(self)
 
-    def ChangeBoxSort(self, *args) -> "TopOpeBRepTool_BoxSort &" :
+    def ChangeBoxSort(self):
         """
         :rtype: TopOpeBRepTool_BoxSort
 
         """
-        return _TopOpeBRep.TopOpeBRep_ShapeScanner_ChangeBoxSort(self, *args)
+        return _TopOpeBRep.TopOpeBRep_ShapeScanner_ChangeBoxSort(self)
 
-    def Index(self, *args) -> "Standard_Integer" :
+    def Index(self):
         """
         :rtype: int
 
         """
-        return _TopOpeBRep.TopOpeBRep_ShapeScanner_Index(self, *args)
+        return _TopOpeBRep.TopOpeBRep_ShapeScanner_Index(self)
 
-    def DumpCurrentToString(self) -> "std::string" :
+    def DumpCurrentToString(self):
         """DumpCurrentToString(TopOpeBRep_ShapeScanner self) -> std::string"""
         return _TopOpeBRep.TopOpeBRep_ShapeScanner_DumpCurrentToString(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(TopOpeBRep_ShapeScanner self)"""
         return _TopOpeBRep.TopOpeBRep_ShapeScanner__kill_pointed(self)
 
@@ -5409,13 +5497,13 @@ TopOpeBRep_ShapeScanner_swigregister(TopOpeBRep_ShapeScanner)
 class TopOpeBRep_VPointInter(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _TopOpeBRep.TopOpeBRep_VPointInter_swiginit(self,_TopOpeBRep.new_TopOpeBRep_VPointInter(*args))
-    def SetPoint(self, *args) -> "void" :
+        _TopOpeBRep.TopOpeBRep_VPointInter_swiginit(self,_TopOpeBRep.new_TopOpeBRep_VPointInter())
+    def SetPoint(self, *args):
         """
         :param P:
         :type P: IntPatch_Point &
@@ -5424,71 +5512,71 @@ class TopOpeBRep_VPointInter(object):
         """
         return _TopOpeBRep.TopOpeBRep_VPointInter_SetPoint(self, *args)
 
-    def SetShapes(self, *args) -> "void" :
+    def SetShapes(self, *args):
         """
         :param I1:
-        :type I1: int
+        :type I1: Standard_Integer
         :param I2:
-        :type I2: int
+        :type I2: Standard_Integer
         :rtype: None
 
         """
         return _TopOpeBRep.TopOpeBRep_VPointInter_SetShapes(self, *args)
 
-    def GetShapes(self, *args) -> "void" :
+    def GetShapes(self):
         """
         :param I1:
-        :type I1: int &
+        :type I1: Standard_Integer &
         :param I2:
-        :type I2: int &
+        :type I2: Standard_Integer &
         :rtype: None
 
         """
-        return _TopOpeBRep.TopOpeBRep_VPointInter_GetShapes(self, *args)
+        return _TopOpeBRep.TopOpeBRep_VPointInter_GetShapes(self)
 
-    def TransitionOnS1(self, *args) -> "IntSurf_Transition" :
+    def TransitionOnS1(self):
         """
         :rtype: IntSurf_Transition
 
         """
-        return _TopOpeBRep.TopOpeBRep_VPointInter_TransitionOnS1(self, *args)
+        return _TopOpeBRep.TopOpeBRep_VPointInter_TransitionOnS1(self)
 
-    def TransitionOnS2(self, *args) -> "IntSurf_Transition" :
+    def TransitionOnS2(self):
         """
         :rtype: IntSurf_Transition
 
         """
-        return _TopOpeBRep.TopOpeBRep_VPointInter_TransitionOnS2(self, *args)
+        return _TopOpeBRep.TopOpeBRep_VPointInter_TransitionOnS2(self)
 
-    def TransitionLineArc1(self, *args) -> "IntSurf_Transition" :
+    def TransitionLineArc1(self):
         """
         :rtype: IntSurf_Transition
 
         """
-        return _TopOpeBRep.TopOpeBRep_VPointInter_TransitionLineArc1(self, *args)
+        return _TopOpeBRep.TopOpeBRep_VPointInter_TransitionLineArc1(self)
 
-    def TransitionLineArc2(self, *args) -> "IntSurf_Transition" :
+    def TransitionLineArc2(self):
         """
         :rtype: IntSurf_Transition
 
         """
-        return _TopOpeBRep.TopOpeBRep_VPointInter_TransitionLineArc2(self, *args)
+        return _TopOpeBRep.TopOpeBRep_VPointInter_TransitionLineArc2(self)
 
-    def IsOnDomS1(self, *args) -> "Standard_Boolean" :
+    def IsOnDomS1(self):
         """
         :rtype: bool
 
         """
-        return _TopOpeBRep.TopOpeBRep_VPointInter_IsOnDomS1(self, *args)
+        return _TopOpeBRep.TopOpeBRep_VPointInter_IsOnDomS1(self)
 
-    def IsOnDomS2(self, *args) -> "Standard_Boolean" :
+    def IsOnDomS2(self):
         """
         :rtype: bool
 
         """
-        return _TopOpeBRep.TopOpeBRep_VPointInter_IsOnDomS2(self, *args)
+        return _TopOpeBRep.TopOpeBRep_VPointInter_IsOnDomS2(self)
 
-    def ParametersOnS1(self, *args) -> "void" :
+    def ParametersOnS1(self):
         """
         :param u:
         :type u: float &
@@ -5497,9 +5585,9 @@ class TopOpeBRep_VPointInter(object):
         :rtype: None
 
         """
-        return _TopOpeBRep.TopOpeBRep_VPointInter_ParametersOnS1(self, *args)
+        return _TopOpeBRep.TopOpeBRep_VPointInter_ParametersOnS1(self)
 
-    def ParametersOnS2(self, *args) -> "void" :
+    def ParametersOnS2(self):
         """
         :param u:
         :type u: float &
@@ -5508,115 +5596,115 @@ class TopOpeBRep_VPointInter(object):
         :rtype: None
 
         """
-        return _TopOpeBRep.TopOpeBRep_VPointInter_ParametersOnS2(self, *args)
+        return _TopOpeBRep.TopOpeBRep_VPointInter_ParametersOnS2(self)
 
-    def Value(self, *args) -> "gp_Pnt const" :
+    def Value(self):
         """
         :rtype: gp_Pnt
 
         """
-        return _TopOpeBRep.TopOpeBRep_VPointInter_Value(self, *args)
+        return _TopOpeBRep.TopOpeBRep_VPointInter_Value(self)
 
-    def Tolerance(self, *args) -> "Standard_Real" :
+    def Tolerance(self):
         """
         :rtype: float
 
         """
-        return _TopOpeBRep.TopOpeBRep_VPointInter_Tolerance(self, *args)
+        return _TopOpeBRep.TopOpeBRep_VPointInter_Tolerance(self)
 
-    def ArcOnS1(self, *args) -> "TopoDS_Shape const" :
+    def ArcOnS1(self):
         """
         :rtype: TopoDS_Shape
 
         """
-        return _TopOpeBRep.TopOpeBRep_VPointInter_ArcOnS1(self, *args)
+        return _TopOpeBRep.TopOpeBRep_VPointInter_ArcOnS1(self)
 
-    def ArcOnS2(self, *args) -> "TopoDS_Shape const" :
+    def ArcOnS2(self):
         """
         :rtype: TopoDS_Shape
 
         """
-        return _TopOpeBRep.TopOpeBRep_VPointInter_ArcOnS2(self, *args)
+        return _TopOpeBRep.TopOpeBRep_VPointInter_ArcOnS2(self)
 
-    def ParameterOnLine(self, *args) -> "Standard_Real" :
+    def ParameterOnLine(self):
         """
         :rtype: float
 
         """
-        return _TopOpeBRep.TopOpeBRep_VPointInter_ParameterOnLine(self, *args)
+        return _TopOpeBRep.TopOpeBRep_VPointInter_ParameterOnLine(self)
 
-    def ParameterOnArc1(self, *args) -> "Standard_Real" :
+    def ParameterOnArc1(self):
         """
         :rtype: float
 
         """
-        return _TopOpeBRep.TopOpeBRep_VPointInter_ParameterOnArc1(self, *args)
+        return _TopOpeBRep.TopOpeBRep_VPointInter_ParameterOnArc1(self)
 
-    def IsVertexOnS1(self, *args) -> "Standard_Boolean" :
+    def IsVertexOnS1(self):
         """
         * Returns True if the point is a vertex on the initial restriction facet of the first surface.
 
         :rtype: bool
 
         """
-        return _TopOpeBRep.TopOpeBRep_VPointInter_IsVertexOnS1(self, *args)
+        return _TopOpeBRep.TopOpeBRep_VPointInter_IsVertexOnS1(self)
 
-    def VertexOnS1(self, *args) -> "TopoDS_Shape const" :
+    def VertexOnS1(self):
         """
         * Returns the information about the point when it is on the domain of the first patch, i-e when the function IsVertexOnS1 returns True. Otherwise, an exception is raised.
 
         :rtype: TopoDS_Shape
 
         """
-        return _TopOpeBRep.TopOpeBRep_VPointInter_VertexOnS1(self, *args)
+        return _TopOpeBRep.TopOpeBRep_VPointInter_VertexOnS1(self)
 
-    def ParameterOnArc2(self, *args) -> "Standard_Real" :
+    def ParameterOnArc2(self):
         """
         :rtype: float
 
         """
-        return _TopOpeBRep.TopOpeBRep_VPointInter_ParameterOnArc2(self, *args)
+        return _TopOpeBRep.TopOpeBRep_VPointInter_ParameterOnArc2(self)
 
-    def IsVertexOnS2(self, *args) -> "Standard_Boolean" :
+    def IsVertexOnS2(self):
         """
         * Returns True if the point is a vertex on the initial restriction facet of the second surface.
 
         :rtype: bool
 
         """
-        return _TopOpeBRep.TopOpeBRep_VPointInter_IsVertexOnS2(self, *args)
+        return _TopOpeBRep.TopOpeBRep_VPointInter_IsVertexOnS2(self)
 
-    def VertexOnS2(self, *args) -> "TopoDS_Shape const" :
+    def VertexOnS2(self):
         """
         * Returns the information about the point when it is on the domain of the second patch, i-e when the function IsVertexOnS2 returns True. Otherwise, an exception is raised.
 
         :rtype: TopoDS_Shape
 
         """
-        return _TopOpeBRep.TopOpeBRep_VPointInter_VertexOnS2(self, *args)
+        return _TopOpeBRep.TopOpeBRep_VPointInter_VertexOnS2(self)
 
-    def IsInternal(self, *args) -> "Standard_Boolean" :
+    def IsInternal(self):
         """
         :rtype: bool
 
         """
-        return _TopOpeBRep.TopOpeBRep_VPointInter_IsInternal(self, *args)
+        return _TopOpeBRep.TopOpeBRep_VPointInter_IsInternal(self)
 
-    def IsMultiple(self, *args) -> "Standard_Boolean" :
+    def IsMultiple(self):
         """
         * Returns True if the point belongs to several intersection lines.
 
         :rtype: bool
 
         """
-        return _TopOpeBRep.TopOpeBRep_VPointInter_IsMultiple(self, *args)
+        return _TopOpeBRep.TopOpeBRep_VPointInter_IsMultiple(self)
 
-    def State(self, *args) -> "void" :
+    def State(self, *args):
         """
         * get state of VPoint within the domain of geometric shape domain <I> (= 1 or 2).
 
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :rtype: TopAbs_State
 
         * Set the state of VPoint within the domain of the geometric shape <I> (= 1 or 2).
@@ -5624,13 +5712,13 @@ class TopOpeBRep_VPointInter(object):
         :param S:
         :type S: TopAbs_State
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :rtype: None
 
         """
         return _TopOpeBRep.TopOpeBRep_VPointInter_State(self, *args)
 
-    def EdgeON(self, *args) -> "TopoDS_Shape const" :
+    def EdgeON(self, *args):
         """
         * set the shape Eon of shape I (1,2) containing the point, and parameter <Par> of point on <Eon>.
 
@@ -5639,30 +5727,30 @@ class TopOpeBRep_VPointInter(object):
         :param Par:
         :type Par: float
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :rtype: None
 
         * get the edge of shape I (1,2) containing the point.
 
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :rtype: TopoDS_Shape
 
         """
         return _TopOpeBRep.TopOpeBRep_VPointInter_EdgeON(self, *args)
 
-    def EdgeONParameter(self, *args) -> "Standard_Real" :
+    def EdgeONParameter(self, *args):
         """
         * get the parameter on edge of shape I (1,2) containing the point.
 
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :rtype: float
 
         """
         return _TopOpeBRep.TopOpeBRep_VPointInter_EdgeONParameter(self, *args)
 
-    def ShapeIndex(self, *args) -> "void" :
+    def ShapeIndex(self, *args):
         """
         * returns value of filed myShapeIndex = 0,1,2,3 0 means the VPoint is on no restriction 1 means the VPoint is on the restriction 1 2 means the VPoint is on the restriction 2 3 means the VPoint is on the restrictions 1 and 2
 
@@ -5671,82 +5759,82 @@ class TopOpeBRep_VPointInter(object):
         * set value of shape supporting me (0,1,2,3).
 
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :rtype: None
 
         """
         return _TopOpeBRep.TopOpeBRep_VPointInter_ShapeIndex(self, *args)
 
-    def Edge(self, *args) -> "TopoDS_Shape const" :
+    def Edge(self, *args):
         """
         * get the edge of shape I (1,2) containing the point. Returned shape is null if the VPoint is not on an edge of shape I (1,2).
 
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :rtype: TopoDS_Shape
 
         """
         return _TopOpeBRep.TopOpeBRep_VPointInter_Edge(self, *args)
 
-    def EdgeParameter(self, *args) -> "Standard_Real" :
+    def EdgeParameter(self, *args):
         """
         * get the parameter on edge of shape I (1,2) containing the point
 
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :rtype: float
 
         """
         return _TopOpeBRep.TopOpeBRep_VPointInter_EdgeParameter(self, *args)
 
-    def SurfaceParameters(self, *args) -> "gp_Pnt2d" :
+    def SurfaceParameters(self, *args):
         """
         * get the parameter on surface of shape I (1,2) containing the point
 
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :rtype: gp_Pnt2d
 
         """
         return _TopOpeBRep.TopOpeBRep_VPointInter_SurfaceParameters(self, *args)
 
-    def IsVertex(self, *args) -> "Standard_Boolean" :
+    def IsVertex(self, *args):
         """
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :rtype: bool
 
         """
         return _TopOpeBRep.TopOpeBRep_VPointInter_IsVertex(self, *args)
 
-    def Vertex(self, *args) -> "TopoDS_Shape const" :
+    def Vertex(self, *args):
         """
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :rtype: TopoDS_Shape
 
         """
         return _TopOpeBRep.TopOpeBRep_VPointInter_Vertex(self, *args)
 
-    def UpdateKeep(self, *args) -> "void" :
+    def UpdateKeep(self):
         """
         * set myKeep value according to current states.
 
         :rtype: None
 
         """
-        return _TopOpeBRep.TopOpeBRep_VPointInter_UpdateKeep(self, *args)
+        return _TopOpeBRep.TopOpeBRep_VPointInter_UpdateKeep(self)
 
-    def Keep(self, *args) -> "Standard_Boolean" :
+    def Keep(self):
         """
         * Returns value of myKeep (does not evaluate states) False at creation of VPoint. Updated by State(State from TopAbs,Integer from Standard)
 
         :rtype: bool
 
         """
-        return _TopOpeBRep.TopOpeBRep_VPointInter_Keep(self, *args)
+        return _TopOpeBRep.TopOpeBRep_VPointInter_Keep(self)
 
-    def ChangeKeep(self, *args) -> "void" :
+    def ChangeKeep(self, *args):
         """
         * updates VPointInter flag 'keep' with <keep>.
 
@@ -5757,7 +5845,7 @@ class TopOpeBRep_VPointInter(object):
         """
         return _TopOpeBRep.TopOpeBRep_VPointInter_ChangeKeep(self, *args)
 
-    def EqualpP(self, *args) -> "Standard_Boolean" :
+    def EqualpP(self, *args):
         """
         * returns <True> if the 3d points and the parameters of the VPoints are same
 
@@ -5768,7 +5856,7 @@ class TopOpeBRep_VPointInter(object):
         """
         return _TopOpeBRep.TopOpeBRep_VPointInter_EqualpP(self, *args)
 
-    def ParonE(self, *args) -> "Standard_Boolean" :
+    def ParonE(self, *args):
         """
         * returns <false> if the vpoint is not given on arc <E>, else returns <par> parameter on <E>
 
@@ -5781,10 +5869,10 @@ class TopOpeBRep_VPointInter(object):
         """
         return _TopOpeBRep.TopOpeBRep_VPointInter_ParonE(self, *args)
 
-    def Index(self, *args) -> "Standard_Integer" :
+    def Index(self, *args):
         """
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :rtype: None
 
         :rtype: int
@@ -5792,10 +5880,10 @@ class TopOpeBRep_VPointInter(object):
         """
         return _TopOpeBRep.TopOpeBRep_VPointInter_Index(self, *args)
 
-    def Dump(self, *args) -> "Standard_OStream &" :
+    def Dump(self, *args):
         """
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :param F:
         :type F: TopoDS_Face &
         :param OS:
@@ -5813,12 +5901,12 @@ class TopOpeBRep_VPointInter(object):
         """
         return _TopOpeBRep.TopOpeBRep_VPointInter_Dump(self, *args)
 
-    def PThePointOfIntersectionDummy(self, *args) -> "TopOpeBRep_PThePointOfIntersection" :
+    def PThePointOfIntersectionDummy(self):
         """
         :rtype: TopOpeBRep_PThePointOfIntersection
 
         """
-        return _TopOpeBRep.TopOpeBRep_VPointInter_PThePointOfIntersectionDummy(self, *args)
+        return _TopOpeBRep.TopOpeBRep_VPointInter_PThePointOfIntersectionDummy(self)
 
     def __del__(self):
     	try:
@@ -5876,13 +5964,13 @@ TopOpeBRep_VPointInter_swigregister(TopOpeBRep_VPointInter)
 class TopOpeBRep_VPointInterClassifier(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _TopOpeBRep.TopOpeBRep_VPointInterClassifier_swiginit(self,_TopOpeBRep.new_TopOpeBRep_VPointInterClassifier(*args))
-    def VPointPosition(self, *args) -> "TopAbs_State" :
+        _TopOpeBRep.TopOpeBRep_VPointInterClassifier_swiginit(self,_TopOpeBRep.new_TopOpeBRep_VPointInterClassifier())
+    def VPointPosition(self, *args):
         """
         * compute position of VPoint <VP> regarding with face <F>. <ShapeIndex> (= 1,2) indicates which (u,v) point of <VP> is used. when state is ON, set VP.EdgeON() with the edge containing <VP> and associated parameter. returns state of VP on ShapeIndex.
 
@@ -5891,7 +5979,7 @@ class TopOpeBRep_VPointInterClassifier(object):
         :param VP:
         :type VP: TopOpeBRep_VPointInter &
         :param ShapeIndex:
-        :type ShapeIndex: int
+        :type ShapeIndex: Standard_Integer
         :param PC:
         :type PC: TopOpeBRep_PointClassifier &
         :param AssumeINON:
@@ -5903,23 +5991,23 @@ class TopOpeBRep_VPointInterClassifier(object):
         """
         return _TopOpeBRep.TopOpeBRep_VPointInterClassifier_VPointPosition(self, *args)
 
-    def Edge(self, *args) -> "TopoDS_Shape const" :
+    def Edge(self):
         """
         * returns the edge containing the VPoint <VP> used in the last VPointPosition() call. Edge is defined if the state previously computed is ON, else Edge is a null shape.
 
         :rtype: TopoDS_Shape
 
         """
-        return _TopOpeBRep.TopOpeBRep_VPointInterClassifier_Edge(self, *args)
+        return _TopOpeBRep.TopOpeBRep_VPointInterClassifier_Edge(self)
 
-    def EdgeParameter(self, *args) -> "Standard_Real" :
+    def EdgeParameter(self):
         """
         * returns the parameter of the VPoint <VP> on Edge()
 
         :rtype: float
 
         """
-        return _TopOpeBRep.TopOpeBRep_VPointInterClassifier_EdgeParameter(self, *args)
+        return _TopOpeBRep.TopOpeBRep_VPointInterClassifier_EdgeParameter(self)
 
     def __del__(self):
     	try:
@@ -5949,8 +6037,14 @@ class TopOpeBRep_VPointInterIterator(object):
 
         """
         _TopOpeBRep.TopOpeBRep_VPointInterIterator_swiginit(self,_TopOpeBRep.new_TopOpeBRep_VPointInterIterator(*args))
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
+        :param LI:
+        :type LI: TopOpeBRep_LineInter &
+        :param checkkeep: default value is Standard_False
+        :type checkkeep: bool
+        :rtype: None
+
         :param LI:
         :type LI: TopOpeBRep_LineInter &
         :param checkkeep: default value is Standard_False
@@ -5962,47 +6056,47 @@ class TopOpeBRep_VPointInterIterator(object):
         """
         return _TopOpeBRep.TopOpeBRep_VPointInterIterator_Init(self, *args)
 
-    def More(self, *args) -> "Standard_Boolean" :
+    def More(self):
         """
         :rtype: bool
 
         """
-        return _TopOpeBRep.TopOpeBRep_VPointInterIterator_More(self, *args)
+        return _TopOpeBRep.TopOpeBRep_VPointInterIterator_More(self)
 
-    def Next(self, *args) -> "void" :
+    def Next(self):
         """
         :rtype: None
 
         """
-        return _TopOpeBRep.TopOpeBRep_VPointInterIterator_Next(self, *args)
+        return _TopOpeBRep.TopOpeBRep_VPointInterIterator_Next(self)
 
-    def CurrentVP(self, *args) -> "TopOpeBRep_VPointInter const &" :
+    def CurrentVP(self):
         """
         :rtype: TopOpeBRep_VPointInter
 
         """
-        return _TopOpeBRep.TopOpeBRep_VPointInterIterator_CurrentVP(self, *args)
+        return _TopOpeBRep.TopOpeBRep_VPointInterIterator_CurrentVP(self)
 
-    def CurrentVPIndex(self, *args) -> "Standard_Integer" :
+    def CurrentVPIndex(self):
         """
         :rtype: int
 
         """
-        return _TopOpeBRep.TopOpeBRep_VPointInterIterator_CurrentVPIndex(self, *args)
+        return _TopOpeBRep.TopOpeBRep_VPointInterIterator_CurrentVPIndex(self)
 
-    def ChangeCurrentVP(self, *args) -> "TopOpeBRep_VPointInter &" :
+    def ChangeCurrentVP(self):
         """
         :rtype: TopOpeBRep_VPointInter
 
         """
-        return _TopOpeBRep.TopOpeBRep_VPointInterIterator_ChangeCurrentVP(self, *args)
+        return _TopOpeBRep.TopOpeBRep_VPointInterIterator_ChangeCurrentVP(self)
 
-    def PLineInterDummy(self, *args) -> "TopOpeBRep_PLineInter" :
+    def PLineInterDummy(self):
         """
         :rtype: TopOpeBRep_PLineInter
 
         """
-        return _TopOpeBRep.TopOpeBRep_VPointInterIterator_PLineInterDummy(self, *args)
+        return _TopOpeBRep.TopOpeBRep_VPointInterIterator_PLineInterDummy(self)
 
     def __del__(self):
     	try:
@@ -6026,13 +6120,13 @@ TopOpeBRep_VPointInterIterator_swigregister(TopOpeBRep_VPointInterIterator)
 class TopOpeBRep_WPointInter(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _TopOpeBRep.TopOpeBRep_WPointInter_swiginit(self,_TopOpeBRep.new_TopOpeBRep_WPointInter(*args))
-    def Set(self, *args) -> "void" :
+        _TopOpeBRep.TopOpeBRep_WPointInter_swiginit(self,_TopOpeBRep.new_TopOpeBRep_WPointInter())
+    def Set(self, *args):
         """
         :param P:
         :type P: IntSurf_PntOn2S &
@@ -6041,7 +6135,7 @@ class TopOpeBRep_WPointInter(object):
         """
         return _TopOpeBRep.TopOpeBRep_WPointInter_Set(self, *args)
 
-    def ParametersOnS1(self, *args) -> "void" :
+    def ParametersOnS1(self):
         """
         :param U:
         :type U: float &
@@ -6050,9 +6144,9 @@ class TopOpeBRep_WPointInter(object):
         :rtype: None
 
         """
-        return _TopOpeBRep.TopOpeBRep_WPointInter_ParametersOnS1(self, *args)
+        return _TopOpeBRep.TopOpeBRep_WPointInter_ParametersOnS1(self)
 
-    def ParametersOnS2(self, *args) -> "void" :
+    def ParametersOnS2(self):
         """
         :param U:
         :type U: float &
@@ -6061,9 +6155,9 @@ class TopOpeBRep_WPointInter(object):
         :rtype: None
 
         """
-        return _TopOpeBRep.TopOpeBRep_WPointInter_ParametersOnS2(self, *args)
+        return _TopOpeBRep.TopOpeBRep_WPointInter_ParametersOnS2(self)
 
-    def Parameters(self, *args) -> "void" :
+    def Parameters(self):
         """
         :param U1:
         :type U1: float &
@@ -6076,35 +6170,35 @@ class TopOpeBRep_WPointInter(object):
         :rtype: None
 
         """
-        return _TopOpeBRep.TopOpeBRep_WPointInter_Parameters(self, *args)
+        return _TopOpeBRep.TopOpeBRep_WPointInter_Parameters(self)
 
-    def ValueOnS1(self, *args) -> "gp_Pnt2d" :
+    def ValueOnS1(self):
         """
         :rtype: gp_Pnt2d
 
         """
-        return _TopOpeBRep.TopOpeBRep_WPointInter_ValueOnS1(self, *args)
+        return _TopOpeBRep.TopOpeBRep_WPointInter_ValueOnS1(self)
 
-    def ValueOnS2(self, *args) -> "gp_Pnt2d" :
+    def ValueOnS2(self):
         """
         :rtype: gp_Pnt2d
 
         """
-        return _TopOpeBRep.TopOpeBRep_WPointInter_ValueOnS2(self, *args)
+        return _TopOpeBRep.TopOpeBRep_WPointInter_ValueOnS2(self)
 
-    def Value(self, *args) -> "gp_Pnt const" :
+    def Value(self):
         """
         :rtype: gp_Pnt
 
         """
-        return _TopOpeBRep.TopOpeBRep_WPointInter_Value(self, *args)
+        return _TopOpeBRep.TopOpeBRep_WPointInter_Value(self)
 
-    def PPntOn2SDummy(self, *args) -> "TopOpeBRep_PPntOn2S" :
+    def PPntOn2SDummy(self):
         """
         :rtype: TopOpeBRep_PPntOn2S
 
         """
-        return _TopOpeBRep.TopOpeBRep_WPointInter_PPntOn2SDummy(self, *args)
+        return _TopOpeBRep.TopOpeBRep_WPointInter_PPntOn2SDummy(self)
 
     def __del__(self):
     	try:
@@ -6139,7 +6233,7 @@ class TopOpeBRep_WPointInterIterator(object):
 
         """
         _TopOpeBRep.TopOpeBRep_WPointInterIterator_swiginit(self,_TopOpeBRep.new_TopOpeBRep_WPointInterIterator(*args))
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
         :param LI:
         :type LI: TopOpeBRep_LineInter &
@@ -6150,33 +6244,33 @@ class TopOpeBRep_WPointInterIterator(object):
         """
         return _TopOpeBRep.TopOpeBRep_WPointInterIterator_Init(self, *args)
 
-    def More(self, *args) -> "Standard_Boolean" :
+    def More(self):
         """
         :rtype: bool
 
         """
-        return _TopOpeBRep.TopOpeBRep_WPointInterIterator_More(self, *args)
+        return _TopOpeBRep.TopOpeBRep_WPointInterIterator_More(self)
 
-    def Next(self, *args) -> "void" :
+    def Next(self):
         """
         :rtype: None
 
         """
-        return _TopOpeBRep.TopOpeBRep_WPointInterIterator_Next(self, *args)
+        return _TopOpeBRep.TopOpeBRep_WPointInterIterator_Next(self)
 
-    def CurrentWP(self, *args) -> "TopOpeBRep_WPointInter const &" :
+    def CurrentWP(self):
         """
         :rtype: TopOpeBRep_WPointInter
 
         """
-        return _TopOpeBRep.TopOpeBRep_WPointInterIterator_CurrentWP(self, *args)
+        return _TopOpeBRep.TopOpeBRep_WPointInterIterator_CurrentWP(self)
 
-    def PLineInterDummy(self, *args) -> "TopOpeBRep_PLineInter" :
+    def PLineInterDummy(self):
         """
         :rtype: TopOpeBRep_PLineInter
 
         """
-        return _TopOpeBRep.TopOpeBRep_WPointInterIterator_PLineInterDummy(self, *args)
+        return _TopOpeBRep.TopOpeBRep_WPointInterIterator_PLineInterDummy(self)
 
     def __del__(self):
     	try:

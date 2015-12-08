@@ -118,8 +118,9 @@ Dynamic_INTERNAL = _Dynamic.Dynamic_INTERNAL
 Dynamic_CONSTANT = _Dynamic.Dynamic_CONSTANT
 class dynamic(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
+    def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def Mode(*args) -> "Dynamic_ModeEnum" :
+    def Mode(*args):
         """
         :param amode:
         :type amode: char *
@@ -129,8 +130,6 @@ class dynamic(object):
         return _Dynamic.dynamic_Mode(*args)
 
     Mode = staticmethod(Mode)
-    def __init__(self): 
-        _Dynamic.dynamic_swiginit(self,_Dynamic.new_dynamic())
     def __del__(self):
     	try:
     		self.thisown = False
@@ -143,7 +142,7 @@ dynamic._kill_pointed = new_instancemethod(_Dynamic.dynamic__kill_pointed,None,d
 dynamic_swigregister = _Dynamic.dynamic_swigregister
 dynamic_swigregister(dynamic)
 
-def dynamic_Mode(*args) -> "Dynamic_ModeEnum" :
+def dynamic_Mode(*args):
   """
     :param amode:
     :type amode: char *
@@ -165,7 +164,7 @@ class Dynamic_DynamicClass(OCC.MMgt.MMgt_TShared):
 
         """
         _Dynamic.Dynamic_DynamicClass_swiginit(self,_Dynamic.new_Dynamic_DynamicClass(*args))
-    def Parameter(self, *args) -> "void" :
+    def Parameter(self, *args):
         """
         * Adds another parameter <aparameter> to the sequence of parameter definitions.
 
@@ -176,7 +175,7 @@ class Dynamic_DynamicClass(OCC.MMgt.MMgt_TShared):
         """
         return _Dynamic.Dynamic_DynamicClass_Parameter(self, *args)
 
-    def CompiledMethod(self, *args) -> "void" :
+    def CompiledMethod(self, *args):
         """
         * Adds another method to the sequence of methods. It has <amethod> as name and <anaddress> as mangled name of the corresponding C++ function which must be called.
 
@@ -189,7 +188,7 @@ class Dynamic_DynamicClass(OCC.MMgt.MMgt_TShared):
         """
         return _Dynamic.Dynamic_DynamicClass_CompiledMethod(self, *args)
 
-    def InterpretedMethod(self, *args) -> "void" :
+    def InterpretedMethod(self, *args):
         """
         * Adds another method to the sequence of methods. It has <amethod> as name and <afile> as interpreted file.
 
@@ -202,7 +201,7 @@ class Dynamic_DynamicClass(OCC.MMgt.MMgt_TShared):
         """
         return _Dynamic.Dynamic_DynamicClass_InterpretedMethod(self, *args)
 
-    def Method(self, *args) -> "Handle_Dynamic_Method" :
+    def Method(self, *args):
         """
         * Returns a reference to the method object identified by the string <amethod>.
 
@@ -213,24 +212,24 @@ class Dynamic_DynamicClass(OCC.MMgt.MMgt_TShared):
         """
         return _Dynamic.Dynamic_DynamicClass_Method(self, *args)
 
-    def Instance(self, *args) -> "Handle_Dynamic_DynamicInstance" :
+    def Instance(self):
         """
         * Returns an instance object of this class.
 
         :rtype: Handle_Dynamic_DynamicInstance
 
         """
-        return _Dynamic.Dynamic_DynamicClass_Instance(self, *args)
+        return _Dynamic.Dynamic_DynamicClass_Instance(self)
 
-    def DumpToString(self) -> "std::string" :
+    def DumpToString(self):
         """DumpToString(Dynamic_DynamicClass self) -> std::string"""
         return _Dynamic.Dynamic_DynamicClass_DumpToString(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Dynamic_DynamicClass self)"""
         return _Dynamic.Dynamic_DynamicClass__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Dynamic_DynamicClass" :
+    def GetHandle(self):
         """GetHandle(Dynamic_DynamicClass self) -> Handle_Dynamic_DynamicClass"""
         return _Dynamic.Dynamic_DynamicClass_GetHandle(self)
 
@@ -274,22 +273,22 @@ Handle_Dynamic_DynamicClass._kill_pointed = new_instancemethod(_Dynamic.Handle_D
 Handle_Dynamic_DynamicClass_swigregister = _Dynamic.Handle_Dynamic_DynamicClass_swigregister
 Handle_Dynamic_DynamicClass_swigregister(Handle_Dynamic_DynamicClass)
 
-def Handle_Dynamic_DynamicClass_DownCast(*args) -> "Handle_Dynamic_DynamicClass const" :
+def Handle_Dynamic_DynamicClass_DownCast(*args):
   return _Dynamic.Handle_Dynamic_DynamicClass_DownCast(*args)
 Handle_Dynamic_DynamicClass_DownCast = _Dynamic.Handle_Dynamic_DynamicClass_DownCast
 
 class Dynamic_DynamicInstance(OCC.MMgt.MMgt_TShared):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         * Creates an empty instance of this class.
 
         :rtype: None
 
         """
-        _Dynamic.Dynamic_DynamicInstance_swiginit(self,_Dynamic.new_Dynamic_DynamicInstance(*args))
-    def Parameter(self, *args) -> "Handle_Dynamic_Parameter" :
+        _Dynamic.Dynamic_DynamicInstance_swiginit(self,_Dynamic.new_Dynamic_DynamicInstance())
+    def Parameter(self, *args):
         """
         * Adds <aparameter> to the sequence of parameters of <self>.
 
@@ -308,7 +307,7 @@ class Dynamic_DynamicInstance(OCC.MMgt.MMgt_TShared):
         :param aparameter:
         :type aparameter: char *
         :param avalue:
-        :type avalue: int
+        :type avalue: Standard_Integer
         :rtype: None
 
         * Puts the real value <avalue> into the parameter object identified by the string <aparameter>.
@@ -344,7 +343,7 @@ class Dynamic_DynamicInstance(OCC.MMgt.MMgt_TShared):
         """
         return _Dynamic.Dynamic_DynamicInstance_Parameter(self, *args)
 
-    def Class(self, *args) -> "void" :
+    def Class(self, *args):
         """
         * Sets the reference of the class.
 
@@ -355,7 +354,7 @@ class Dynamic_DynamicInstance(OCC.MMgt.MMgt_TShared):
         """
         return _Dynamic.Dynamic_DynamicInstance_Class(self, *args)
 
-    def Execute(self, *args) -> "void" :
+    def Execute(self, *args):
         """
         * Calls the method identified by the string <amethod>.
 
@@ -366,11 +365,11 @@ class Dynamic_DynamicInstance(OCC.MMgt.MMgt_TShared):
         """
         return _Dynamic.Dynamic_DynamicInstance_Execute(self, *args)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Dynamic_DynamicInstance self)"""
         return _Dynamic.Dynamic_DynamicInstance__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Dynamic_DynamicInstance" :
+    def GetHandle(self):
         """GetHandle(Dynamic_DynamicInstance self) -> Handle_Dynamic_DynamicInstance"""
         return _Dynamic.Dynamic_DynamicInstance_GetHandle(self)
 
@@ -411,7 +410,7 @@ Handle_Dynamic_DynamicInstance._kill_pointed = new_instancemethod(_Dynamic.Handl
 Handle_Dynamic_DynamicInstance_swigregister = _Dynamic.Handle_Dynamic_DynamicInstance_swigregister
 Handle_Dynamic_DynamicInstance_swigregister(Handle_Dynamic_DynamicInstance)
 
-def Handle_Dynamic_DynamicInstance_DownCast(*args) -> "Handle_Dynamic_DynamicInstance const" :
+def Handle_Dynamic_DynamicInstance_DownCast(*args):
   return _Dynamic.Handle_Dynamic_DynamicInstance_DownCast(*args)
 Handle_Dynamic_DynamicInstance_DownCast = _Dynamic.Handle_Dynamic_DynamicInstance_DownCast
 
@@ -419,25 +418,25 @@ class Dynamic_FuzzyClass(OCC.MMgt.MMgt_TShared):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def Type(self, *args) -> "TCollection_AsciiString" :
+    def Type(self):
         """
         * This deferred method must returns the type of the object. If the instance is of the type FuzzyDefinition the method simply returns the field <thetype>. If the instance is of the type FuzzyInstance the method calls the Type method on the true definition.
 
         :rtype: TCollection_AsciiString
 
         """
-        return _Dynamic.Dynamic_FuzzyClass_Type(self, *args)
+        return _Dynamic.Dynamic_FuzzyClass_Type(self)
 
-    def FirstParameter(self, *args) -> "Handle_Dynamic_ParameterNode" :
+    def FirstParameter(self):
         """
         * Returns the head of the list of parameters. For the FuzzyDefinition class this method returns the head of the exaustive list of parameters defining the object and for the FuzzyInstance it just returns the head of the overloaded values.
 
         :rtype: Handle_Dynamic_ParameterNode
 
         """
-        return _Dynamic.Dynamic_FuzzyClass_FirstParameter(self, *args)
+        return _Dynamic.Dynamic_FuzzyClass_FirstParameter(self)
 
-    def Parameter(self, *args) -> "void" :
+    def Parameter(self, *args):
         """
         * Returns true if there is a parameter with <aparameter> as name, false otherwise.
 
@@ -464,7 +463,7 @@ class Dynamic_FuzzyClass(OCC.MMgt.MMgt_TShared):
         :param aparameter:
         :type aparameter: char *
         :param avalue:
-        :type avalue: int
+        :type avalue: Standard_Integer
         :rtype: void
 
         * Adds to the instance <self> the parameter <aparameter> with the real value <avalue>.
@@ -494,7 +493,7 @@ class Dynamic_FuzzyClass(OCC.MMgt.MMgt_TShared):
         """
         return _Dynamic.Dynamic_FuzzyClass_Parameter(self, *args)
 
-    def Value(self, *args) -> "Standard_Boolean" :
+    def Value(self, *args):
         """
         * Returns True, if there is a parameter <aparameter> previously stored in the instance <self> and there is the corresponding boolean value in the output argument <avalue>, False otherwise.
 
@@ -509,7 +508,7 @@ class Dynamic_FuzzyClass(OCC.MMgt.MMgt_TShared):
         :param aparameter:
         :type aparameter: char *
         :param avalue:
-        :type avalue: int &
+        :type avalue: Standard_Integer &
         :rtype: bool
 
         * Returns True, if there is a parameter <aparameter> previously stored in the instance <self> and there is the corresponding real value in the output argument <avalue>, False otherwise.
@@ -539,15 +538,15 @@ class Dynamic_FuzzyClass(OCC.MMgt.MMgt_TShared):
         """
         return _Dynamic.Dynamic_FuzzyClass_Value(self, *args)
 
-    def DumpToString(self) -> "std::string" :
+    def DumpToString(self):
         """DumpToString(Dynamic_FuzzyClass self) -> std::string"""
         return _Dynamic.Dynamic_FuzzyClass_DumpToString(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Dynamic_FuzzyClass self)"""
         return _Dynamic.Dynamic_FuzzyClass__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Dynamic_FuzzyClass" :
+    def GetHandle(self):
         """GetHandle(Dynamic_FuzzyClass self) -> Handle_Dynamic_FuzzyClass"""
         return _Dynamic.Dynamic_FuzzyClass_GetHandle(self)
 
@@ -590,7 +589,7 @@ Handle_Dynamic_FuzzyClass._kill_pointed = new_instancemethod(_Dynamic.Handle_Dyn
 Handle_Dynamic_FuzzyClass_swigregister = _Dynamic.Handle_Dynamic_FuzzyClass_swigregister
 Handle_Dynamic_FuzzyClass_swigregister(Handle_Dynamic_FuzzyClass)
 
-def Handle_Dynamic_FuzzyClass_DownCast(*args) -> "Handle_Dynamic_FuzzyClass const" :
+def Handle_Dynamic_FuzzyClass_DownCast(*args):
   return _Dynamic.Handle_Dynamic_FuzzyClass_DownCast(*args)
 Handle_Dynamic_FuzzyClass_DownCast = _Dynamic.Handle_Dynamic_FuzzyClass_DownCast
 
@@ -598,7 +597,7 @@ class Dynamic_FuzzyDefinitionsDictionary(OCC.MMgt.MMgt_TShared):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def Creates(self, *args) -> "void" :
+    def Creates(self, *args):
         """
         * Starting with a file named <afilename>, fills the dictionary with all the wishes definitions.
 
@@ -609,7 +608,7 @@ class Dynamic_FuzzyDefinitionsDictionary(OCC.MMgt.MMgt_TShared):
         """
         return _Dynamic.Dynamic_FuzzyDefinitionsDictionary_Creates(self, *args)
 
-    def Switch(self, *args) -> "Handle_Dynamic_Parameter" :
+    def Switch(self, *args):
         """
         * This virtual method allows the user to add recognition of its own parameters when reading the file to fill the dictionary.
 
@@ -624,25 +623,25 @@ class Dynamic_FuzzyDefinitionsDictionary(OCC.MMgt.MMgt_TShared):
         """
         return _Dynamic.Dynamic_FuzzyDefinitionsDictionary_Switch(self, *args)
 
-    def UpToDate(self, *args) -> "Standard_Boolean" :
+    def UpToDate(self):
         """
         * Returns true if there has been no modification of the file fuzzyclasses.dat since the creation of the dictionary object, false otherwise.
 
         :rtype: bool
 
         """
-        return _Dynamic.Dynamic_FuzzyDefinitionsDictionary_UpToDate(self, *args)
+        return _Dynamic.Dynamic_FuzzyDefinitionsDictionary_UpToDate(self)
 
-    def NumberOfDefinitions(self, *args) -> "Standard_Integer" :
+    def NumberOfDefinitions(self):
         """
         * Returns the number of definitions stored in the dictionary.
 
         :rtype: int
 
         """
-        return _Dynamic.Dynamic_FuzzyDefinitionsDictionary_NumberOfDefinitions(self, *args)
+        return _Dynamic.Dynamic_FuzzyDefinitionsDictionary_NumberOfDefinitions(self)
 
-    def Definition(self, *args) -> "Handle_Dynamic_FuzzyClass" :
+    def Definition(self, *args):
         """
         * Returns from the dictionary in the out variable <adefinition> a reference to the right instance of the definition identified by its type <atype>. The method returns true if the definition exist, false otherwise.
 
@@ -655,21 +654,21 @@ class Dynamic_FuzzyDefinitionsDictionary(OCC.MMgt.MMgt_TShared):
         * Returns a reference on the definition identified by the index <anidex>.
 
         :param anindex:
-        :type anindex: int
+        :type anindex: Standard_Integer
         :rtype: Handle_Dynamic_FuzzyClass
 
         """
         return _Dynamic.Dynamic_FuzzyDefinitionsDictionary_Definition(self, *args)
 
-    def DumpToString(self) -> "std::string" :
+    def DumpToString(self):
         """DumpToString(Dynamic_FuzzyDefinitionsDictionary self) -> std::string"""
         return _Dynamic.Dynamic_FuzzyDefinitionsDictionary_DumpToString(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Dynamic_FuzzyDefinitionsDictionary self)"""
         return _Dynamic.Dynamic_FuzzyDefinitionsDictionary__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Dynamic_FuzzyDefinitionsDictionary" :
+    def GetHandle(self):
         """GetHandle(Dynamic_FuzzyDefinitionsDictionary self) -> Handle_Dynamic_FuzzyDefinitionsDictionary"""
         return _Dynamic.Dynamic_FuzzyDefinitionsDictionary_GetHandle(self)
 
@@ -713,7 +712,7 @@ Handle_Dynamic_FuzzyDefinitionsDictionary._kill_pointed = new_instancemethod(_Dy
 Handle_Dynamic_FuzzyDefinitionsDictionary_swigregister = _Dynamic.Handle_Dynamic_FuzzyDefinitionsDictionary_swigregister
 Handle_Dynamic_FuzzyDefinitionsDictionary_swigregister(Handle_Dynamic_FuzzyDefinitionsDictionary)
 
-def Handle_Dynamic_FuzzyDefinitionsDictionary_DownCast(*args) -> "Handle_Dynamic_FuzzyDefinitionsDictionary const" :
+def Handle_Dynamic_FuzzyDefinitionsDictionary_DownCast(*args):
   return _Dynamic.Handle_Dynamic_FuzzyDefinitionsDictionary_DownCast(*args)
 Handle_Dynamic_FuzzyDefinitionsDictionary_DownCast = _Dynamic.Handle_Dynamic_FuzzyDefinitionsDictionary_DownCast
 
@@ -721,25 +720,25 @@ class Dynamic_Method(OCC.MMgt.MMgt_TShared):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def Type(self, *args) -> "TCollection_AsciiString" :
+    def Type(self):
         """
         * Returns the type of object which is the name of the function definition.
 
         :rtype: TCollection_AsciiString
 
         """
-        return _Dynamic.Dynamic_Method_Type(self, *args)
+        return _Dynamic.Dynamic_Method_Type(self)
 
-    def FirstVariableNode(self, *args) -> "Handle_Dynamic_VariableNode" :
+    def FirstVariableNode(self):
         """
         * Returns the first variable node of the Method which contains a variable.
 
         :rtype: Handle_Dynamic_VariableNode
 
         """
-        return _Dynamic.Dynamic_Method_FirstVariableNode(self, *args)
+        return _Dynamic.Dynamic_Method_FirstVariableNode(self)
 
-    def Variable(self, *args) -> "void" :
+    def Variable(self, *args):
         """
         * Returns true if there is a variable with <avariable> as name, false otherwise.
 
@@ -756,7 +755,7 @@ class Dynamic_Method(OCC.MMgt.MMgt_TShared):
         """
         return _Dynamic.Dynamic_Method_Variable(self, *args)
 
-    def Value(self, *args) -> "Standard_Boolean" :
+    def Value(self, *args):
         """
         * Returns True, if there is a variable <avariable> previously stored in the instance <self> and there is the corresponding parameter value in the output argument <aparameter>, False otherwise.
 
@@ -779,15 +778,15 @@ class Dynamic_Method(OCC.MMgt.MMgt_TShared):
         """
         return _Dynamic.Dynamic_Method_Value(self, *args)
 
-    def DumpToString(self) -> "std::string" :
+    def DumpToString(self):
         """DumpToString(Dynamic_Method self) -> std::string"""
         return _Dynamic.Dynamic_Method_DumpToString(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Dynamic_Method self)"""
         return _Dynamic.Dynamic_Method__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Dynamic_Method" :
+    def GetHandle(self):
         """GetHandle(Dynamic_Method self) -> Handle_Dynamic_Method"""
         return _Dynamic.Dynamic_Method_GetHandle(self)
 
@@ -830,7 +829,7 @@ Handle_Dynamic_Method._kill_pointed = new_instancemethod(_Dynamic.Handle_Dynamic
 Handle_Dynamic_Method_swigregister = _Dynamic.Handle_Dynamic_Method_swigregister
 Handle_Dynamic_Method_swigregister(Handle_Dynamic_Method)
 
-def Handle_Dynamic_Method_DownCast(*args) -> "Handle_Dynamic_Method const" :
+def Handle_Dynamic_Method_DownCast(*args):
   return _Dynamic.Handle_Dynamic_Method_DownCast(*args)
 Handle_Dynamic_Method_DownCast = _Dynamic.Handle_Dynamic_Method_DownCast
 
@@ -838,7 +837,7 @@ class Dynamic_MethodDefinitionsDictionary(OCC.Standard.Standard_Transient):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def Creates(self, *args) -> "void" :
+    def Creates(self, *args):
         """
         * Starting with a file named <afilename>, fills the dictionary with all the wishes definitions.
 
@@ -849,7 +848,7 @@ class Dynamic_MethodDefinitionsDictionary(OCC.Standard.Standard_Transient):
         """
         return _Dynamic.Dynamic_MethodDefinitionsDictionary_Creates(self, *args)
 
-    def Switch(self, *args) -> "Handle_Dynamic_Parameter" :
+    def Switch(self, *args):
         """
         * This virtual method allows the user to add recognition of its own parameters when reading the file to fill the dictionary.
 
@@ -864,25 +863,25 @@ class Dynamic_MethodDefinitionsDictionary(OCC.Standard.Standard_Transient):
         """
         return _Dynamic.Dynamic_MethodDefinitionsDictionary_Switch(self, *args)
 
-    def UpToDate(self, *args) -> "Standard_Boolean" :
+    def UpToDate(self):
         """
         * Returns true if there has been no modification of the file method-definitions.dat since the creation of the dictionary object, false otherwise.
 
         :rtype: bool
 
         """
-        return _Dynamic.Dynamic_MethodDefinitionsDictionary_UpToDate(self, *args)
+        return _Dynamic.Dynamic_MethodDefinitionsDictionary_UpToDate(self)
 
-    def NumberOfDefinitions(self, *args) -> "Standard_Integer" :
+    def NumberOfDefinitions(self):
         """
         * Returns the number of definitions stored in the dictionary.
 
         :rtype: int
 
         """
-        return _Dynamic.Dynamic_MethodDefinitionsDictionary_NumberOfDefinitions(self, *args)
+        return _Dynamic.Dynamic_MethodDefinitionsDictionary_NumberOfDefinitions(self)
 
-    def Definition(self, *args) -> "Handle_Dynamic_Method" :
+    def Definition(self, *args):
         """
         * This method sets the new definition <adefinition> in the dictionary. It returns true if the operation is successful, false otherwise.
 
@@ -901,21 +900,21 @@ class Dynamic_MethodDefinitionsDictionary(OCC.Standard.Standard_Transient):
         * Returns a reference on the definition identified by the index <anidex>.
 
         :param anindex:
-        :type anindex: int
+        :type anindex: Standard_Integer
         :rtype: Handle_Dynamic_Method
 
         """
         return _Dynamic.Dynamic_MethodDefinitionsDictionary_Definition(self, *args)
 
-    def DumpToString(self) -> "std::string" :
+    def DumpToString(self):
         """DumpToString(Dynamic_MethodDefinitionsDictionary self) -> std::string"""
         return _Dynamic.Dynamic_MethodDefinitionsDictionary_DumpToString(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Dynamic_MethodDefinitionsDictionary self)"""
         return _Dynamic.Dynamic_MethodDefinitionsDictionary__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Dynamic_MethodDefinitionsDictionary" :
+    def GetHandle(self):
         """GetHandle(Dynamic_MethodDefinitionsDictionary self) -> Handle_Dynamic_MethodDefinitionsDictionary"""
         return _Dynamic.Dynamic_MethodDefinitionsDictionary_GetHandle(self)
 
@@ -959,7 +958,7 @@ Handle_Dynamic_MethodDefinitionsDictionary._kill_pointed = new_instancemethod(_D
 Handle_Dynamic_MethodDefinitionsDictionary_swigregister = _Dynamic.Handle_Dynamic_MethodDefinitionsDictionary_swigregister
 Handle_Dynamic_MethodDefinitionsDictionary_swigregister(Handle_Dynamic_MethodDefinitionsDictionary)
 
-def Handle_Dynamic_MethodDefinitionsDictionary_DownCast(*args) -> "Handle_Dynamic_MethodDefinitionsDictionary const" :
+def Handle_Dynamic_MethodDefinitionsDictionary_DownCast(*args):
   return _Dynamic.Handle_Dynamic_MethodDefinitionsDictionary_DownCast(*args)
 Handle_Dynamic_MethodDefinitionsDictionary_DownCast = _Dynamic.Handle_Dynamic_MethodDefinitionsDictionary_DownCast
 
@@ -967,24 +966,24 @@ class Dynamic_Parameter(OCC.MMgt.MMgt_TShared):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def Name(self, *args) -> "TCollection_AsciiString" :
+    def Name(self):
         """
         * Returns in an AsciiString the name of the parameter.
 
         :rtype: TCollection_AsciiString
 
         """
-        return _Dynamic.Dynamic_Parameter_Name(self, *args)
+        return _Dynamic.Dynamic_Parameter_Name(self)
 
-    def DumpToString(self) -> "std::string" :
+    def DumpToString(self):
         """DumpToString(Dynamic_Parameter self) -> std::string"""
         return _Dynamic.Dynamic_Parameter_DumpToString(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Dynamic_Parameter self)"""
         return _Dynamic.Dynamic_Parameter__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Dynamic_Parameter" :
+    def GetHandle(self):
         """GetHandle(Dynamic_Parameter self) -> Handle_Dynamic_Parameter"""
         return _Dynamic.Dynamic_Parameter_GetHandle(self)
 
@@ -1024,7 +1023,7 @@ Handle_Dynamic_Parameter._kill_pointed = new_instancemethod(_Dynamic.Handle_Dyna
 Handle_Dynamic_Parameter_swigregister = _Dynamic.Handle_Dynamic_Parameter_swigregister
 Handle_Dynamic_Parameter_swigregister(Handle_Dynamic_Parameter)
 
-def Handle_Dynamic_Parameter_DownCast(*args) -> "Handle_Dynamic_Parameter const" :
+def Handle_Dynamic_Parameter_DownCast(*args):
   return _Dynamic.Handle_Dynamic_Parameter_DownCast(*args)
 Handle_Dynamic_Parameter_DownCast = _Dynamic.Handle_Dynamic_Parameter_DownCast
 
@@ -1041,7 +1040,7 @@ class Dynamic_ParameterNode(OCC.MMgt.MMgt_TShared):
 
         """
         _Dynamic.Dynamic_ParameterNode_swiginit(self,_Dynamic.new_Dynamic_ParameterNode(*args))
-    def Object(self, *args) -> "Handle_Dynamic_Parameter" :
+    def Object(self, *args):
         """
         :param anitem:
         :type anitem: Handle_Dynamic_Parameter &
@@ -1052,7 +1051,7 @@ class Dynamic_ParameterNode(OCC.MMgt.MMgt_TShared):
         """
         return _Dynamic.Dynamic_ParameterNode_Object(self, *args)
 
-    def Next(self, *args) -> "Handle_Dynamic_ParameterNode" :
+    def Next(self, *args):
         """
         :param anode:
         :type anode: Handle_Dynamic_ParameterNode &
@@ -1063,11 +1062,11 @@ class Dynamic_ParameterNode(OCC.MMgt.MMgt_TShared):
         """
         return _Dynamic.Dynamic_ParameterNode_Next(self, *args)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Dynamic_ParameterNode self)"""
         return _Dynamic.Dynamic_ParameterNode__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Dynamic_ParameterNode" :
+    def GetHandle(self):
         """GetHandle(Dynamic_ParameterNode self) -> Handle_Dynamic_ParameterNode"""
         return _Dynamic.Dynamic_ParameterNode_GetHandle(self)
 
@@ -1107,27 +1106,27 @@ Handle_Dynamic_ParameterNode._kill_pointed = new_instancemethod(_Dynamic.Handle_
 Handle_Dynamic_ParameterNode_swigregister = _Dynamic.Handle_Dynamic_ParameterNode_swigregister
 Handle_Dynamic_ParameterNode_swigregister(Handle_Dynamic_ParameterNode)
 
-def Handle_Dynamic_ParameterNode_DownCast(*args) -> "Handle_Dynamic_ParameterNode const" :
+def Handle_Dynamic_ParameterNode_DownCast(*args):
   return _Dynamic.Handle_Dynamic_ParameterNode_DownCast(*args)
 Handle_Dynamic_ParameterNode_DownCast = _Dynamic.Handle_Dynamic_ParameterNode_DownCast
 
 class Dynamic_SeqOfClasses(OCC.TCollection.TCollection_BaseSequence):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _Dynamic.Dynamic_SeqOfClasses_swiginit(self,_Dynamic.new_Dynamic_SeqOfClasses(*args))
-    def Clear(self, *args) -> "void" :
+        _Dynamic.Dynamic_SeqOfClasses_swiginit(self,_Dynamic.new_Dynamic_SeqOfClasses())
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _Dynamic.Dynamic_SeqOfClasses_Clear(self, *args)
+        return _Dynamic.Dynamic_SeqOfClasses_Clear(self)
 
-    def Assign(self, *args) -> "Dynamic_SeqOfClasses const &" :
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: Dynamic_SeqOfClasses &
@@ -1136,7 +1135,7 @@ class Dynamic_SeqOfClasses(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Dynamic.Dynamic_SeqOfClasses_Assign(self, *args)
 
-    def Set(self, *args) -> "Dynamic_SeqOfClasses const &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: Dynamic_SeqOfClasses &
@@ -1145,7 +1144,7 @@ class Dynamic_SeqOfClasses(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Dynamic.Dynamic_SeqOfClasses_Set(self, *args)
 
-    def Append(self, *args) -> "void" :
+    def Append(self, *args):
         """
         :param T:
         :type T: Handle_Dynamic_DynamicClass &
@@ -1158,7 +1157,7 @@ class Dynamic_SeqOfClasses(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Dynamic.Dynamic_SeqOfClasses_Append(self, *args)
 
-    def Prepend(self, *args) -> "void" :
+    def Prepend(self, *args):
         """
         :param T:
         :type T: Handle_Dynamic_DynamicClass &
@@ -1171,16 +1170,16 @@ class Dynamic_SeqOfClasses(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Dynamic.Dynamic_SeqOfClasses_Prepend(self, *args)
 
-    def InsertBefore(self, *args) -> "void" :
+    def InsertBefore(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param T:
         :type T: Handle_Dynamic_DynamicClass &
         :rtype: None
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param S:
         :type S: Dynamic_SeqOfClasses &
         :rtype: None
@@ -1188,16 +1187,16 @@ class Dynamic_SeqOfClasses(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Dynamic.Dynamic_SeqOfClasses_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args) -> "void" :
+    def InsertAfter(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param T:
         :type T: Handle_Dynamic_DynamicClass &
         :rtype: None
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param S:
         :type S: Dynamic_SeqOfClasses &
         :rtype: None
@@ -1205,24 +1204,24 @@ class Dynamic_SeqOfClasses(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Dynamic.Dynamic_SeqOfClasses_InsertAfter(self, *args)
 
-    def First(self, *args) -> "Handle_Dynamic_DynamicClass const &" :
+    def First(self):
         """
         :rtype: Handle_Dynamic_DynamicClass
 
         """
-        return _Dynamic.Dynamic_SeqOfClasses_First(self, *args)
+        return _Dynamic.Dynamic_SeqOfClasses_First(self)
 
-    def Last(self, *args) -> "Handle_Dynamic_DynamicClass const &" :
+    def Last(self):
         """
         :rtype: Handle_Dynamic_DynamicClass
 
         """
-        return _Dynamic.Dynamic_SeqOfClasses_Last(self, *args)
+        return _Dynamic.Dynamic_SeqOfClasses_Last(self)
 
-    def Split(self, *args) -> "void" :
+    def Split(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Sub:
         :type Sub: Dynamic_SeqOfClasses &
         :rtype: None
@@ -1230,19 +1229,19 @@ class Dynamic_SeqOfClasses(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Dynamic.Dynamic_SeqOfClasses_Split(self, *args)
 
-    def Value(self, *args) -> "Handle_Dynamic_DynamicClass const &" :
+    def Value(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Handle_Dynamic_DynamicClass
 
         """
         return _Dynamic.Dynamic_SeqOfClasses_Value(self, *args)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param I:
         :type I: Handle_Dynamic_DynamicClass &
         :rtype: None
@@ -1250,25 +1249,25 @@ class Dynamic_SeqOfClasses(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Dynamic.Dynamic_SeqOfClasses_SetValue(self, *args)
 
-    def ChangeValue(self, *args) -> "Handle_Dynamic_DynamicClass &" :
+    def ChangeValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Handle_Dynamic_DynamicClass
 
         """
         return _Dynamic.Dynamic_SeqOfClasses_ChangeValue(self, *args)
 
-    def Remove(self, *args) -> "void" :
+    def Remove(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: None
 
         :param FromIndex:
-        :type FromIndex: int
+        :type FromIndex: Standard_Integer
         :param ToIndex:
-        :type ToIndex: int
+        :type ToIndex: Standard_Integer
         :rtype: None
 
         """
@@ -1303,20 +1302,20 @@ Dynamic_SeqOfClasses_swigregister(Dynamic_SeqOfClasses)
 class Dynamic_SeqOfFuzzyDefinitions(OCC.TCollection.TCollection_BaseSequence):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _Dynamic.Dynamic_SeqOfFuzzyDefinitions_swiginit(self,_Dynamic.new_Dynamic_SeqOfFuzzyDefinitions(*args))
-    def Clear(self, *args) -> "void" :
+        _Dynamic.Dynamic_SeqOfFuzzyDefinitions_swiginit(self,_Dynamic.new_Dynamic_SeqOfFuzzyDefinitions())
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _Dynamic.Dynamic_SeqOfFuzzyDefinitions_Clear(self, *args)
+        return _Dynamic.Dynamic_SeqOfFuzzyDefinitions_Clear(self)
 
-    def Assign(self, *args) -> "Dynamic_SeqOfFuzzyDefinitions const &" :
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: Dynamic_SeqOfFuzzyDefinitions &
@@ -1325,7 +1324,7 @@ class Dynamic_SeqOfFuzzyDefinitions(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Dynamic.Dynamic_SeqOfFuzzyDefinitions_Assign(self, *args)
 
-    def Set(self, *args) -> "Dynamic_SeqOfFuzzyDefinitions const &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: Dynamic_SeqOfFuzzyDefinitions &
@@ -1334,7 +1333,7 @@ class Dynamic_SeqOfFuzzyDefinitions(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Dynamic.Dynamic_SeqOfFuzzyDefinitions_Set(self, *args)
 
-    def Append(self, *args) -> "void" :
+    def Append(self, *args):
         """
         :param T:
         :type T: Handle_Dynamic_FuzzyDefinition &
@@ -1347,7 +1346,7 @@ class Dynamic_SeqOfFuzzyDefinitions(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Dynamic.Dynamic_SeqOfFuzzyDefinitions_Append(self, *args)
 
-    def Prepend(self, *args) -> "void" :
+    def Prepend(self, *args):
         """
         :param T:
         :type T: Handle_Dynamic_FuzzyDefinition &
@@ -1360,16 +1359,16 @@ class Dynamic_SeqOfFuzzyDefinitions(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Dynamic.Dynamic_SeqOfFuzzyDefinitions_Prepend(self, *args)
 
-    def InsertBefore(self, *args) -> "void" :
+    def InsertBefore(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param T:
         :type T: Handle_Dynamic_FuzzyDefinition &
         :rtype: None
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param S:
         :type S: Dynamic_SeqOfFuzzyDefinitions &
         :rtype: None
@@ -1377,16 +1376,16 @@ class Dynamic_SeqOfFuzzyDefinitions(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Dynamic.Dynamic_SeqOfFuzzyDefinitions_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args) -> "void" :
+    def InsertAfter(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param T:
         :type T: Handle_Dynamic_FuzzyDefinition &
         :rtype: None
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param S:
         :type S: Dynamic_SeqOfFuzzyDefinitions &
         :rtype: None
@@ -1394,24 +1393,24 @@ class Dynamic_SeqOfFuzzyDefinitions(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Dynamic.Dynamic_SeqOfFuzzyDefinitions_InsertAfter(self, *args)
 
-    def First(self, *args) -> "Handle_Dynamic_FuzzyDefinition const &" :
+    def First(self):
         """
         :rtype: Handle_Dynamic_FuzzyDefinition
 
         """
-        return _Dynamic.Dynamic_SeqOfFuzzyDefinitions_First(self, *args)
+        return _Dynamic.Dynamic_SeqOfFuzzyDefinitions_First(self)
 
-    def Last(self, *args) -> "Handle_Dynamic_FuzzyDefinition const &" :
+    def Last(self):
         """
         :rtype: Handle_Dynamic_FuzzyDefinition
 
         """
-        return _Dynamic.Dynamic_SeqOfFuzzyDefinitions_Last(self, *args)
+        return _Dynamic.Dynamic_SeqOfFuzzyDefinitions_Last(self)
 
-    def Split(self, *args) -> "void" :
+    def Split(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Sub:
         :type Sub: Dynamic_SeqOfFuzzyDefinitions &
         :rtype: None
@@ -1419,19 +1418,19 @@ class Dynamic_SeqOfFuzzyDefinitions(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Dynamic.Dynamic_SeqOfFuzzyDefinitions_Split(self, *args)
 
-    def Value(self, *args) -> "Handle_Dynamic_FuzzyDefinition const &" :
+    def Value(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Handle_Dynamic_FuzzyDefinition
 
         """
         return _Dynamic.Dynamic_SeqOfFuzzyDefinitions_Value(self, *args)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param I:
         :type I: Handle_Dynamic_FuzzyDefinition &
         :rtype: None
@@ -1439,25 +1438,25 @@ class Dynamic_SeqOfFuzzyDefinitions(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Dynamic.Dynamic_SeqOfFuzzyDefinitions_SetValue(self, *args)
 
-    def ChangeValue(self, *args) -> "Handle_Dynamic_FuzzyDefinition &" :
+    def ChangeValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Handle_Dynamic_FuzzyDefinition
 
         """
         return _Dynamic.Dynamic_SeqOfFuzzyDefinitions_ChangeValue(self, *args)
 
-    def Remove(self, *args) -> "void" :
+    def Remove(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: None
 
         :param FromIndex:
-        :type FromIndex: int
+        :type FromIndex: Standard_Integer
         :param ToIndex:
-        :type ToIndex: int
+        :type ToIndex: Standard_Integer
         :rtype: None
 
         """
@@ -1492,20 +1491,20 @@ Dynamic_SeqOfFuzzyDefinitions_swigregister(Dynamic_SeqOfFuzzyDefinitions)
 class Dynamic_SeqOfMethodDefinitions(OCC.TCollection.TCollection_BaseSequence):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _Dynamic.Dynamic_SeqOfMethodDefinitions_swiginit(self,_Dynamic.new_Dynamic_SeqOfMethodDefinitions(*args))
-    def Clear(self, *args) -> "void" :
+        _Dynamic.Dynamic_SeqOfMethodDefinitions_swiginit(self,_Dynamic.new_Dynamic_SeqOfMethodDefinitions())
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _Dynamic.Dynamic_SeqOfMethodDefinitions_Clear(self, *args)
+        return _Dynamic.Dynamic_SeqOfMethodDefinitions_Clear(self)
 
-    def Assign(self, *args) -> "Dynamic_SeqOfMethodDefinitions const &" :
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: Dynamic_SeqOfMethodDefinitions &
@@ -1514,7 +1513,7 @@ class Dynamic_SeqOfMethodDefinitions(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Dynamic.Dynamic_SeqOfMethodDefinitions_Assign(self, *args)
 
-    def Set(self, *args) -> "Dynamic_SeqOfMethodDefinitions const &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: Dynamic_SeqOfMethodDefinitions &
@@ -1523,7 +1522,7 @@ class Dynamic_SeqOfMethodDefinitions(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Dynamic.Dynamic_SeqOfMethodDefinitions_Set(self, *args)
 
-    def Append(self, *args) -> "void" :
+    def Append(self, *args):
         """
         :param T:
         :type T: Handle_Dynamic_MethodDefinition &
@@ -1536,7 +1535,7 @@ class Dynamic_SeqOfMethodDefinitions(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Dynamic.Dynamic_SeqOfMethodDefinitions_Append(self, *args)
 
-    def Prepend(self, *args) -> "void" :
+    def Prepend(self, *args):
         """
         :param T:
         :type T: Handle_Dynamic_MethodDefinition &
@@ -1549,16 +1548,16 @@ class Dynamic_SeqOfMethodDefinitions(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Dynamic.Dynamic_SeqOfMethodDefinitions_Prepend(self, *args)
 
-    def InsertBefore(self, *args) -> "void" :
+    def InsertBefore(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param T:
         :type T: Handle_Dynamic_MethodDefinition &
         :rtype: None
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param S:
         :type S: Dynamic_SeqOfMethodDefinitions &
         :rtype: None
@@ -1566,16 +1565,16 @@ class Dynamic_SeqOfMethodDefinitions(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Dynamic.Dynamic_SeqOfMethodDefinitions_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args) -> "void" :
+    def InsertAfter(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param T:
         :type T: Handle_Dynamic_MethodDefinition &
         :rtype: None
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param S:
         :type S: Dynamic_SeqOfMethodDefinitions &
         :rtype: None
@@ -1583,24 +1582,24 @@ class Dynamic_SeqOfMethodDefinitions(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Dynamic.Dynamic_SeqOfMethodDefinitions_InsertAfter(self, *args)
 
-    def First(self, *args) -> "Handle_Dynamic_MethodDefinition const &" :
+    def First(self):
         """
         :rtype: Handle_Dynamic_MethodDefinition
 
         """
-        return _Dynamic.Dynamic_SeqOfMethodDefinitions_First(self, *args)
+        return _Dynamic.Dynamic_SeqOfMethodDefinitions_First(self)
 
-    def Last(self, *args) -> "Handle_Dynamic_MethodDefinition const &" :
+    def Last(self):
         """
         :rtype: Handle_Dynamic_MethodDefinition
 
         """
-        return _Dynamic.Dynamic_SeqOfMethodDefinitions_Last(self, *args)
+        return _Dynamic.Dynamic_SeqOfMethodDefinitions_Last(self)
 
-    def Split(self, *args) -> "void" :
+    def Split(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Sub:
         :type Sub: Dynamic_SeqOfMethodDefinitions &
         :rtype: None
@@ -1608,19 +1607,19 @@ class Dynamic_SeqOfMethodDefinitions(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Dynamic.Dynamic_SeqOfMethodDefinitions_Split(self, *args)
 
-    def Value(self, *args) -> "Handle_Dynamic_MethodDefinition const &" :
+    def Value(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Handle_Dynamic_MethodDefinition
 
         """
         return _Dynamic.Dynamic_SeqOfMethodDefinitions_Value(self, *args)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param I:
         :type I: Handle_Dynamic_MethodDefinition &
         :rtype: None
@@ -1628,25 +1627,25 @@ class Dynamic_SeqOfMethodDefinitions(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Dynamic.Dynamic_SeqOfMethodDefinitions_SetValue(self, *args)
 
-    def ChangeValue(self, *args) -> "Handle_Dynamic_MethodDefinition &" :
+    def ChangeValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Handle_Dynamic_MethodDefinition
 
         """
         return _Dynamic.Dynamic_SeqOfMethodDefinitions_ChangeValue(self, *args)
 
-    def Remove(self, *args) -> "void" :
+    def Remove(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: None
 
         :param FromIndex:
-        :type FromIndex: int
+        :type FromIndex: Standard_Integer
         :param ToIndex:
-        :type ToIndex: int
+        :type ToIndex: Standard_Integer
         :rtype: None
 
         """
@@ -1681,20 +1680,20 @@ Dynamic_SeqOfMethodDefinitions_swigregister(Dynamic_SeqOfMethodDefinitions)
 class Dynamic_SeqOfMethods(OCC.TCollection.TCollection_BaseSequence):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _Dynamic.Dynamic_SeqOfMethods_swiginit(self,_Dynamic.new_Dynamic_SeqOfMethods(*args))
-    def Clear(self, *args) -> "void" :
+        _Dynamic.Dynamic_SeqOfMethods_swiginit(self,_Dynamic.new_Dynamic_SeqOfMethods())
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _Dynamic.Dynamic_SeqOfMethods_Clear(self, *args)
+        return _Dynamic.Dynamic_SeqOfMethods_Clear(self)
 
-    def Assign(self, *args) -> "Dynamic_SeqOfMethods const &" :
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: Dynamic_SeqOfMethods &
@@ -1703,7 +1702,7 @@ class Dynamic_SeqOfMethods(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Dynamic.Dynamic_SeqOfMethods_Assign(self, *args)
 
-    def Set(self, *args) -> "Dynamic_SeqOfMethods const &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: Dynamic_SeqOfMethods &
@@ -1712,7 +1711,7 @@ class Dynamic_SeqOfMethods(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Dynamic.Dynamic_SeqOfMethods_Set(self, *args)
 
-    def Append(self, *args) -> "void" :
+    def Append(self, *args):
         """
         :param T:
         :type T: Handle_Dynamic_Method &
@@ -1725,7 +1724,7 @@ class Dynamic_SeqOfMethods(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Dynamic.Dynamic_SeqOfMethods_Append(self, *args)
 
-    def Prepend(self, *args) -> "void" :
+    def Prepend(self, *args):
         """
         :param T:
         :type T: Handle_Dynamic_Method &
@@ -1738,16 +1737,16 @@ class Dynamic_SeqOfMethods(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Dynamic.Dynamic_SeqOfMethods_Prepend(self, *args)
 
-    def InsertBefore(self, *args) -> "void" :
+    def InsertBefore(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param T:
         :type T: Handle_Dynamic_Method &
         :rtype: None
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param S:
         :type S: Dynamic_SeqOfMethods &
         :rtype: None
@@ -1755,16 +1754,16 @@ class Dynamic_SeqOfMethods(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Dynamic.Dynamic_SeqOfMethods_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args) -> "void" :
+    def InsertAfter(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param T:
         :type T: Handle_Dynamic_Method &
         :rtype: None
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param S:
         :type S: Dynamic_SeqOfMethods &
         :rtype: None
@@ -1772,24 +1771,24 @@ class Dynamic_SeqOfMethods(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Dynamic.Dynamic_SeqOfMethods_InsertAfter(self, *args)
 
-    def First(self, *args) -> "Handle_Dynamic_Method const &" :
+    def First(self):
         """
         :rtype: Handle_Dynamic_Method
 
         """
-        return _Dynamic.Dynamic_SeqOfMethods_First(self, *args)
+        return _Dynamic.Dynamic_SeqOfMethods_First(self)
 
-    def Last(self, *args) -> "Handle_Dynamic_Method const &" :
+    def Last(self):
         """
         :rtype: Handle_Dynamic_Method
 
         """
-        return _Dynamic.Dynamic_SeqOfMethods_Last(self, *args)
+        return _Dynamic.Dynamic_SeqOfMethods_Last(self)
 
-    def Split(self, *args) -> "void" :
+    def Split(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Sub:
         :type Sub: Dynamic_SeqOfMethods &
         :rtype: None
@@ -1797,19 +1796,19 @@ class Dynamic_SeqOfMethods(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Dynamic.Dynamic_SeqOfMethods_Split(self, *args)
 
-    def Value(self, *args) -> "Handle_Dynamic_Method const &" :
+    def Value(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Handle_Dynamic_Method
 
         """
         return _Dynamic.Dynamic_SeqOfMethods_Value(self, *args)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param I:
         :type I: Handle_Dynamic_Method &
         :rtype: None
@@ -1817,25 +1816,25 @@ class Dynamic_SeqOfMethods(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Dynamic.Dynamic_SeqOfMethods_SetValue(self, *args)
 
-    def ChangeValue(self, *args) -> "Handle_Dynamic_Method &" :
+    def ChangeValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Handle_Dynamic_Method
 
         """
         return _Dynamic.Dynamic_SeqOfMethods_ChangeValue(self, *args)
 
-    def Remove(self, *args) -> "void" :
+    def Remove(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: None
 
         :param FromIndex:
-        :type FromIndex: int
+        :type FromIndex: Standard_Integer
         :param ToIndex:
-        :type ToIndex: int
+        :type ToIndex: Standard_Integer
         :rtype: None
 
         """
@@ -1882,18 +1881,18 @@ class Dynamic_SequenceNodeOfSeqOfClasses(OCC.TCollection.TCollection_SeqNode):
 
         """
         _Dynamic.Dynamic_SequenceNodeOfSeqOfClasses_swiginit(self,_Dynamic.new_Dynamic_SequenceNodeOfSeqOfClasses(*args))
-    def Value(self, *args) -> "Handle_Dynamic_DynamicClass &" :
+    def Value(self):
         """
         :rtype: Handle_Dynamic_DynamicClass
 
         """
-        return _Dynamic.Dynamic_SequenceNodeOfSeqOfClasses_Value(self, *args)
+        return _Dynamic.Dynamic_SequenceNodeOfSeqOfClasses_Value(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Dynamic_SequenceNodeOfSeqOfClasses self)"""
         return _Dynamic.Dynamic_SequenceNodeOfSeqOfClasses__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Dynamic_SequenceNodeOfSeqOfClasses" :
+    def GetHandle(self):
         """GetHandle(Dynamic_SequenceNodeOfSeqOfClasses self) -> Handle_Dynamic_SequenceNodeOfSeqOfClasses"""
         return _Dynamic.Dynamic_SequenceNodeOfSeqOfClasses_GetHandle(self)
 
@@ -1932,7 +1931,7 @@ Handle_Dynamic_SequenceNodeOfSeqOfClasses._kill_pointed = new_instancemethod(_Dy
 Handle_Dynamic_SequenceNodeOfSeqOfClasses_swigregister = _Dynamic.Handle_Dynamic_SequenceNodeOfSeqOfClasses_swigregister
 Handle_Dynamic_SequenceNodeOfSeqOfClasses_swigregister(Handle_Dynamic_SequenceNodeOfSeqOfClasses)
 
-def Handle_Dynamic_SequenceNodeOfSeqOfClasses_DownCast(*args) -> "Handle_Dynamic_SequenceNodeOfSeqOfClasses const" :
+def Handle_Dynamic_SequenceNodeOfSeqOfClasses_DownCast(*args):
   return _Dynamic.Handle_Dynamic_SequenceNodeOfSeqOfClasses_DownCast(*args)
 Handle_Dynamic_SequenceNodeOfSeqOfClasses_DownCast = _Dynamic.Handle_Dynamic_SequenceNodeOfSeqOfClasses_DownCast
 
@@ -1951,18 +1950,18 @@ class Dynamic_SequenceNodeOfSeqOfFuzzyDefinitions(OCC.TCollection.TCollection_Se
 
         """
         _Dynamic.Dynamic_SequenceNodeOfSeqOfFuzzyDefinitions_swiginit(self,_Dynamic.new_Dynamic_SequenceNodeOfSeqOfFuzzyDefinitions(*args))
-    def Value(self, *args) -> "Handle_Dynamic_FuzzyDefinition &" :
+    def Value(self):
         """
         :rtype: Handle_Dynamic_FuzzyDefinition
 
         """
-        return _Dynamic.Dynamic_SequenceNodeOfSeqOfFuzzyDefinitions_Value(self, *args)
+        return _Dynamic.Dynamic_SequenceNodeOfSeqOfFuzzyDefinitions_Value(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Dynamic_SequenceNodeOfSeqOfFuzzyDefinitions self)"""
         return _Dynamic.Dynamic_SequenceNodeOfSeqOfFuzzyDefinitions__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Dynamic_SequenceNodeOfSeqOfFuzzyDefinitions" :
+    def GetHandle(self):
         """GetHandle(Dynamic_SequenceNodeOfSeqOfFuzzyDefinitions self) -> Handle_Dynamic_SequenceNodeOfSeqOfFuzzyDefinitions"""
         return _Dynamic.Dynamic_SequenceNodeOfSeqOfFuzzyDefinitions_GetHandle(self)
 
@@ -2001,7 +2000,7 @@ Handle_Dynamic_SequenceNodeOfSeqOfFuzzyDefinitions._kill_pointed = new_instancem
 Handle_Dynamic_SequenceNodeOfSeqOfFuzzyDefinitions_swigregister = _Dynamic.Handle_Dynamic_SequenceNodeOfSeqOfFuzzyDefinitions_swigregister
 Handle_Dynamic_SequenceNodeOfSeqOfFuzzyDefinitions_swigregister(Handle_Dynamic_SequenceNodeOfSeqOfFuzzyDefinitions)
 
-def Handle_Dynamic_SequenceNodeOfSeqOfFuzzyDefinitions_DownCast(*args) -> "Handle_Dynamic_SequenceNodeOfSeqOfFuzzyDefinitions const" :
+def Handle_Dynamic_SequenceNodeOfSeqOfFuzzyDefinitions_DownCast(*args):
   return _Dynamic.Handle_Dynamic_SequenceNodeOfSeqOfFuzzyDefinitions_DownCast(*args)
 Handle_Dynamic_SequenceNodeOfSeqOfFuzzyDefinitions_DownCast = _Dynamic.Handle_Dynamic_SequenceNodeOfSeqOfFuzzyDefinitions_DownCast
 
@@ -2020,18 +2019,18 @@ class Dynamic_SequenceNodeOfSeqOfMethodDefinitions(OCC.TCollection.TCollection_S
 
         """
         _Dynamic.Dynamic_SequenceNodeOfSeqOfMethodDefinitions_swiginit(self,_Dynamic.new_Dynamic_SequenceNodeOfSeqOfMethodDefinitions(*args))
-    def Value(self, *args) -> "Handle_Dynamic_MethodDefinition &" :
+    def Value(self):
         """
         :rtype: Handle_Dynamic_MethodDefinition
 
         """
-        return _Dynamic.Dynamic_SequenceNodeOfSeqOfMethodDefinitions_Value(self, *args)
+        return _Dynamic.Dynamic_SequenceNodeOfSeqOfMethodDefinitions_Value(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Dynamic_SequenceNodeOfSeqOfMethodDefinitions self)"""
         return _Dynamic.Dynamic_SequenceNodeOfSeqOfMethodDefinitions__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Dynamic_SequenceNodeOfSeqOfMethodDefinitions" :
+    def GetHandle(self):
         """GetHandle(Dynamic_SequenceNodeOfSeqOfMethodDefinitions self) -> Handle_Dynamic_SequenceNodeOfSeqOfMethodDefinitions"""
         return _Dynamic.Dynamic_SequenceNodeOfSeqOfMethodDefinitions_GetHandle(self)
 
@@ -2070,7 +2069,7 @@ Handle_Dynamic_SequenceNodeOfSeqOfMethodDefinitions._kill_pointed = new_instance
 Handle_Dynamic_SequenceNodeOfSeqOfMethodDefinitions_swigregister = _Dynamic.Handle_Dynamic_SequenceNodeOfSeqOfMethodDefinitions_swigregister
 Handle_Dynamic_SequenceNodeOfSeqOfMethodDefinitions_swigregister(Handle_Dynamic_SequenceNodeOfSeqOfMethodDefinitions)
 
-def Handle_Dynamic_SequenceNodeOfSeqOfMethodDefinitions_DownCast(*args) -> "Handle_Dynamic_SequenceNodeOfSeqOfMethodDefinitions const" :
+def Handle_Dynamic_SequenceNodeOfSeqOfMethodDefinitions_DownCast(*args):
   return _Dynamic.Handle_Dynamic_SequenceNodeOfSeqOfMethodDefinitions_DownCast(*args)
 Handle_Dynamic_SequenceNodeOfSeqOfMethodDefinitions_DownCast = _Dynamic.Handle_Dynamic_SequenceNodeOfSeqOfMethodDefinitions_DownCast
 
@@ -2089,18 +2088,18 @@ class Dynamic_SequenceNodeOfSeqOfMethods(OCC.TCollection.TCollection_SeqNode):
 
         """
         _Dynamic.Dynamic_SequenceNodeOfSeqOfMethods_swiginit(self,_Dynamic.new_Dynamic_SequenceNodeOfSeqOfMethods(*args))
-    def Value(self, *args) -> "Handle_Dynamic_Method &" :
+    def Value(self):
         """
         :rtype: Handle_Dynamic_Method
 
         """
-        return _Dynamic.Dynamic_SequenceNodeOfSeqOfMethods_Value(self, *args)
+        return _Dynamic.Dynamic_SequenceNodeOfSeqOfMethods_Value(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Dynamic_SequenceNodeOfSeqOfMethods self)"""
         return _Dynamic.Dynamic_SequenceNodeOfSeqOfMethods__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Dynamic_SequenceNodeOfSeqOfMethods" :
+    def GetHandle(self):
         """GetHandle(Dynamic_SequenceNodeOfSeqOfMethods self) -> Handle_Dynamic_SequenceNodeOfSeqOfMethods"""
         return _Dynamic.Dynamic_SequenceNodeOfSeqOfMethods_GetHandle(self)
 
@@ -2139,41 +2138,41 @@ Handle_Dynamic_SequenceNodeOfSeqOfMethods._kill_pointed = new_instancemethod(_Dy
 Handle_Dynamic_SequenceNodeOfSeqOfMethods_swigregister = _Dynamic.Handle_Dynamic_SequenceNodeOfSeqOfMethods_swigregister
 Handle_Dynamic_SequenceNodeOfSeqOfMethods_swigregister(Handle_Dynamic_SequenceNodeOfSeqOfMethods)
 
-def Handle_Dynamic_SequenceNodeOfSeqOfMethods_DownCast(*args) -> "Handle_Dynamic_SequenceNodeOfSeqOfMethods const" :
+def Handle_Dynamic_SequenceNodeOfSeqOfMethods_DownCast(*args):
   return _Dynamic.Handle_Dynamic_SequenceNodeOfSeqOfMethods_DownCast(*args)
 Handle_Dynamic_SequenceNodeOfSeqOfMethods_DownCast = _Dynamic.Handle_Dynamic_SequenceNodeOfSeqOfMethods_DownCast
 
 class Dynamic_SequenceOfClasses(OCC.MMgt.MMgt_TShared):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _Dynamic.Dynamic_SequenceOfClasses_swiginit(self,_Dynamic.new_Dynamic_SequenceOfClasses(*args))
-    def IsEmpty(self, *args) -> "Standard_Boolean" :
+        _Dynamic.Dynamic_SequenceOfClasses_swiginit(self,_Dynamic.new_Dynamic_SequenceOfClasses())
+    def IsEmpty(self):
         """
         :rtype: bool
 
         """
-        return _Dynamic.Dynamic_SequenceOfClasses_IsEmpty(self, *args)
+        return _Dynamic.Dynamic_SequenceOfClasses_IsEmpty(self)
 
-    def Length(self, *args) -> "Standard_Integer" :
+    def Length(self):
         """
         :rtype: int
 
         """
-        return _Dynamic.Dynamic_SequenceOfClasses_Length(self, *args)
+        return _Dynamic.Dynamic_SequenceOfClasses_Length(self)
 
-    def Clear(self, *args) -> "void" :
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _Dynamic.Dynamic_SequenceOfClasses_Clear(self, *args)
+        return _Dynamic.Dynamic_SequenceOfClasses_Clear(self)
 
-    def Append(self, *args) -> "void" :
+    def Append(self, *args):
         """
         :param anItem:
         :type anItem: Handle_Dynamic_DynamicClass &
@@ -2186,7 +2185,7 @@ class Dynamic_SequenceOfClasses(OCC.MMgt.MMgt_TShared):
         """
         return _Dynamic.Dynamic_SequenceOfClasses_Append(self, *args)
 
-    def Prepend(self, *args) -> "void" :
+    def Prepend(self, *args):
         """
         :param anItem:
         :type anItem: Handle_Dynamic_DynamicClass &
@@ -2199,23 +2198,23 @@ class Dynamic_SequenceOfClasses(OCC.MMgt.MMgt_TShared):
         """
         return _Dynamic.Dynamic_SequenceOfClasses_Prepend(self, *args)
 
-    def Reverse(self, *args) -> "void" :
+    def Reverse(self):
         """
         :rtype: None
 
         """
-        return _Dynamic.Dynamic_SequenceOfClasses_Reverse(self, *args)
+        return _Dynamic.Dynamic_SequenceOfClasses_Reverse(self)
 
-    def InsertBefore(self, *args) -> "void" :
+    def InsertBefore(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :param anItem:
         :type anItem: Handle_Dynamic_DynamicClass &
         :rtype: None
 
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :param aSequence:
         :type aSequence: Handle_Dynamic_SequenceOfClasses &
         :rtype: None
@@ -2223,16 +2222,16 @@ class Dynamic_SequenceOfClasses(OCC.MMgt.MMgt_TShared):
         """
         return _Dynamic.Dynamic_SequenceOfClasses_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args) -> "void" :
+    def InsertAfter(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :param anItem:
         :type anItem: Handle_Dynamic_DynamicClass &
         :rtype: None
 
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :param aSequence:
         :type aSequence: Handle_Dynamic_SequenceOfClasses &
         :rtype: None
@@ -2240,30 +2239,30 @@ class Dynamic_SequenceOfClasses(OCC.MMgt.MMgt_TShared):
         """
         return _Dynamic.Dynamic_SequenceOfClasses_InsertAfter(self, *args)
 
-    def Exchange(self, *args) -> "void" :
+    def Exchange(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :param anOtherIndex:
-        :type anOtherIndex: int
+        :type anOtherIndex: Standard_Integer
         :rtype: None
 
         """
         return _Dynamic.Dynamic_SequenceOfClasses_Exchange(self, *args)
 
-    def Split(self, *args) -> "Handle_Dynamic_SequenceOfClasses" :
+    def Split(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :rtype: Handle_Dynamic_SequenceOfClasses
 
         """
         return _Dynamic.Dynamic_SequenceOfClasses_Split(self, *args)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :param anItem:
         :type anItem: Handle_Dynamic_DynamicClass &
         :rtype: None
@@ -2271,65 +2270,65 @@ class Dynamic_SequenceOfClasses(OCC.MMgt.MMgt_TShared):
         """
         return _Dynamic.Dynamic_SequenceOfClasses_SetValue(self, *args)
 
-    def Value(self, *args) -> "Handle_Dynamic_DynamicClass const &" :
+    def Value(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :rtype: Handle_Dynamic_DynamicClass
 
         """
         return _Dynamic.Dynamic_SequenceOfClasses_Value(self, *args)
 
-    def ChangeValue(self, *args) -> "Handle_Dynamic_DynamicClass &" :
+    def ChangeValue(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :rtype: Handle_Dynamic_DynamicClass
 
         """
         return _Dynamic.Dynamic_SequenceOfClasses_ChangeValue(self, *args)
 
-    def Remove(self, *args) -> "void" :
+    def Remove(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :rtype: None
 
         :param fromIndex:
-        :type fromIndex: int
+        :type fromIndex: Standard_Integer
         :param toIndex:
-        :type toIndex: int
+        :type toIndex: Standard_Integer
         :rtype: None
 
         """
         return _Dynamic.Dynamic_SequenceOfClasses_Remove(self, *args)
 
-    def Sequence(self, *args) -> "Dynamic_SeqOfClasses const &" :
+    def Sequence(self):
         """
         :rtype: Dynamic_SeqOfClasses
 
         """
-        return _Dynamic.Dynamic_SequenceOfClasses_Sequence(self, *args)
+        return _Dynamic.Dynamic_SequenceOfClasses_Sequence(self)
 
-    def ChangeSequence(self, *args) -> "Dynamic_SeqOfClasses &" :
+    def ChangeSequence(self):
         """
         :rtype: Dynamic_SeqOfClasses
 
         """
-        return _Dynamic.Dynamic_SequenceOfClasses_ChangeSequence(self, *args)
+        return _Dynamic.Dynamic_SequenceOfClasses_ChangeSequence(self)
 
-    def ShallowCopy(self, *args) -> "Handle_Dynamic_SequenceOfClasses" :
+    def ShallowCopy(self):
         """
         :rtype: Handle_Dynamic_SequenceOfClasses
 
         """
-        return _Dynamic.Dynamic_SequenceOfClasses_ShallowCopy(self, *args)
+        return _Dynamic.Dynamic_SequenceOfClasses_ShallowCopy(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Dynamic_SequenceOfClasses self)"""
         return _Dynamic.Dynamic_SequenceOfClasses__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Dynamic_SequenceOfClasses" :
+    def GetHandle(self):
         """GetHandle(Dynamic_SequenceOfClasses self) -> Handle_Dynamic_SequenceOfClasses"""
         return _Dynamic.Dynamic_SequenceOfClasses_GetHandle(self)
 
@@ -2384,41 +2383,41 @@ Handle_Dynamic_SequenceOfClasses._kill_pointed = new_instancemethod(_Dynamic.Han
 Handle_Dynamic_SequenceOfClasses_swigregister = _Dynamic.Handle_Dynamic_SequenceOfClasses_swigregister
 Handle_Dynamic_SequenceOfClasses_swigregister(Handle_Dynamic_SequenceOfClasses)
 
-def Handle_Dynamic_SequenceOfClasses_DownCast(*args) -> "Handle_Dynamic_SequenceOfClasses const" :
+def Handle_Dynamic_SequenceOfClasses_DownCast(*args):
   return _Dynamic.Handle_Dynamic_SequenceOfClasses_DownCast(*args)
 Handle_Dynamic_SequenceOfClasses_DownCast = _Dynamic.Handle_Dynamic_SequenceOfClasses_DownCast
 
 class Dynamic_SequenceOfFuzzyDefinitions(OCC.MMgt.MMgt_TShared):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _Dynamic.Dynamic_SequenceOfFuzzyDefinitions_swiginit(self,_Dynamic.new_Dynamic_SequenceOfFuzzyDefinitions(*args))
-    def IsEmpty(self, *args) -> "Standard_Boolean" :
+        _Dynamic.Dynamic_SequenceOfFuzzyDefinitions_swiginit(self,_Dynamic.new_Dynamic_SequenceOfFuzzyDefinitions())
+    def IsEmpty(self):
         """
         :rtype: bool
 
         """
-        return _Dynamic.Dynamic_SequenceOfFuzzyDefinitions_IsEmpty(self, *args)
+        return _Dynamic.Dynamic_SequenceOfFuzzyDefinitions_IsEmpty(self)
 
-    def Length(self, *args) -> "Standard_Integer" :
+    def Length(self):
         """
         :rtype: int
 
         """
-        return _Dynamic.Dynamic_SequenceOfFuzzyDefinitions_Length(self, *args)
+        return _Dynamic.Dynamic_SequenceOfFuzzyDefinitions_Length(self)
 
-    def Clear(self, *args) -> "void" :
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _Dynamic.Dynamic_SequenceOfFuzzyDefinitions_Clear(self, *args)
+        return _Dynamic.Dynamic_SequenceOfFuzzyDefinitions_Clear(self)
 
-    def Append(self, *args) -> "void" :
+    def Append(self, *args):
         """
         :param anItem:
         :type anItem: Handle_Dynamic_FuzzyDefinition &
@@ -2431,7 +2430,7 @@ class Dynamic_SequenceOfFuzzyDefinitions(OCC.MMgt.MMgt_TShared):
         """
         return _Dynamic.Dynamic_SequenceOfFuzzyDefinitions_Append(self, *args)
 
-    def Prepend(self, *args) -> "void" :
+    def Prepend(self, *args):
         """
         :param anItem:
         :type anItem: Handle_Dynamic_FuzzyDefinition &
@@ -2444,23 +2443,23 @@ class Dynamic_SequenceOfFuzzyDefinitions(OCC.MMgt.MMgt_TShared):
         """
         return _Dynamic.Dynamic_SequenceOfFuzzyDefinitions_Prepend(self, *args)
 
-    def Reverse(self, *args) -> "void" :
+    def Reverse(self):
         """
         :rtype: None
 
         """
-        return _Dynamic.Dynamic_SequenceOfFuzzyDefinitions_Reverse(self, *args)
+        return _Dynamic.Dynamic_SequenceOfFuzzyDefinitions_Reverse(self)
 
-    def InsertBefore(self, *args) -> "void" :
+    def InsertBefore(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :param anItem:
         :type anItem: Handle_Dynamic_FuzzyDefinition &
         :rtype: None
 
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :param aSequence:
         :type aSequence: Handle_Dynamic_SequenceOfFuzzyDefinitions &
         :rtype: None
@@ -2468,16 +2467,16 @@ class Dynamic_SequenceOfFuzzyDefinitions(OCC.MMgt.MMgt_TShared):
         """
         return _Dynamic.Dynamic_SequenceOfFuzzyDefinitions_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args) -> "void" :
+    def InsertAfter(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :param anItem:
         :type anItem: Handle_Dynamic_FuzzyDefinition &
         :rtype: None
 
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :param aSequence:
         :type aSequence: Handle_Dynamic_SequenceOfFuzzyDefinitions &
         :rtype: None
@@ -2485,30 +2484,30 @@ class Dynamic_SequenceOfFuzzyDefinitions(OCC.MMgt.MMgt_TShared):
         """
         return _Dynamic.Dynamic_SequenceOfFuzzyDefinitions_InsertAfter(self, *args)
 
-    def Exchange(self, *args) -> "void" :
+    def Exchange(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :param anOtherIndex:
-        :type anOtherIndex: int
+        :type anOtherIndex: Standard_Integer
         :rtype: None
 
         """
         return _Dynamic.Dynamic_SequenceOfFuzzyDefinitions_Exchange(self, *args)
 
-    def Split(self, *args) -> "Handle_Dynamic_SequenceOfFuzzyDefinitions" :
+    def Split(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :rtype: Handle_Dynamic_SequenceOfFuzzyDefinitions
 
         """
         return _Dynamic.Dynamic_SequenceOfFuzzyDefinitions_Split(self, *args)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :param anItem:
         :type anItem: Handle_Dynamic_FuzzyDefinition &
         :rtype: None
@@ -2516,65 +2515,65 @@ class Dynamic_SequenceOfFuzzyDefinitions(OCC.MMgt.MMgt_TShared):
         """
         return _Dynamic.Dynamic_SequenceOfFuzzyDefinitions_SetValue(self, *args)
 
-    def Value(self, *args) -> "Handle_Dynamic_FuzzyDefinition const &" :
+    def Value(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :rtype: Handle_Dynamic_FuzzyDefinition
 
         """
         return _Dynamic.Dynamic_SequenceOfFuzzyDefinitions_Value(self, *args)
 
-    def ChangeValue(self, *args) -> "Handle_Dynamic_FuzzyDefinition &" :
+    def ChangeValue(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :rtype: Handle_Dynamic_FuzzyDefinition
 
         """
         return _Dynamic.Dynamic_SequenceOfFuzzyDefinitions_ChangeValue(self, *args)
 
-    def Remove(self, *args) -> "void" :
+    def Remove(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :rtype: None
 
         :param fromIndex:
-        :type fromIndex: int
+        :type fromIndex: Standard_Integer
         :param toIndex:
-        :type toIndex: int
+        :type toIndex: Standard_Integer
         :rtype: None
 
         """
         return _Dynamic.Dynamic_SequenceOfFuzzyDefinitions_Remove(self, *args)
 
-    def Sequence(self, *args) -> "Dynamic_SeqOfFuzzyDefinitions const &" :
+    def Sequence(self):
         """
         :rtype: Dynamic_SeqOfFuzzyDefinitions
 
         """
-        return _Dynamic.Dynamic_SequenceOfFuzzyDefinitions_Sequence(self, *args)
+        return _Dynamic.Dynamic_SequenceOfFuzzyDefinitions_Sequence(self)
 
-    def ChangeSequence(self, *args) -> "Dynamic_SeqOfFuzzyDefinitions &" :
+    def ChangeSequence(self):
         """
         :rtype: Dynamic_SeqOfFuzzyDefinitions
 
         """
-        return _Dynamic.Dynamic_SequenceOfFuzzyDefinitions_ChangeSequence(self, *args)
+        return _Dynamic.Dynamic_SequenceOfFuzzyDefinitions_ChangeSequence(self)
 
-    def ShallowCopy(self, *args) -> "Handle_Dynamic_SequenceOfFuzzyDefinitions" :
+    def ShallowCopy(self):
         """
         :rtype: Handle_Dynamic_SequenceOfFuzzyDefinitions
 
         """
-        return _Dynamic.Dynamic_SequenceOfFuzzyDefinitions_ShallowCopy(self, *args)
+        return _Dynamic.Dynamic_SequenceOfFuzzyDefinitions_ShallowCopy(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Dynamic_SequenceOfFuzzyDefinitions self)"""
         return _Dynamic.Dynamic_SequenceOfFuzzyDefinitions__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Dynamic_SequenceOfFuzzyDefinitions" :
+    def GetHandle(self):
         """GetHandle(Dynamic_SequenceOfFuzzyDefinitions self) -> Handle_Dynamic_SequenceOfFuzzyDefinitions"""
         return _Dynamic.Dynamic_SequenceOfFuzzyDefinitions_GetHandle(self)
 
@@ -2629,41 +2628,41 @@ Handle_Dynamic_SequenceOfFuzzyDefinitions._kill_pointed = new_instancemethod(_Dy
 Handle_Dynamic_SequenceOfFuzzyDefinitions_swigregister = _Dynamic.Handle_Dynamic_SequenceOfFuzzyDefinitions_swigregister
 Handle_Dynamic_SequenceOfFuzzyDefinitions_swigregister(Handle_Dynamic_SequenceOfFuzzyDefinitions)
 
-def Handle_Dynamic_SequenceOfFuzzyDefinitions_DownCast(*args) -> "Handle_Dynamic_SequenceOfFuzzyDefinitions const" :
+def Handle_Dynamic_SequenceOfFuzzyDefinitions_DownCast(*args):
   return _Dynamic.Handle_Dynamic_SequenceOfFuzzyDefinitions_DownCast(*args)
 Handle_Dynamic_SequenceOfFuzzyDefinitions_DownCast = _Dynamic.Handle_Dynamic_SequenceOfFuzzyDefinitions_DownCast
 
 class Dynamic_SequenceOfMethodDefinitions(OCC.MMgt.MMgt_TShared):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _Dynamic.Dynamic_SequenceOfMethodDefinitions_swiginit(self,_Dynamic.new_Dynamic_SequenceOfMethodDefinitions(*args))
-    def IsEmpty(self, *args) -> "Standard_Boolean" :
+        _Dynamic.Dynamic_SequenceOfMethodDefinitions_swiginit(self,_Dynamic.new_Dynamic_SequenceOfMethodDefinitions())
+    def IsEmpty(self):
         """
         :rtype: bool
 
         """
-        return _Dynamic.Dynamic_SequenceOfMethodDefinitions_IsEmpty(self, *args)
+        return _Dynamic.Dynamic_SequenceOfMethodDefinitions_IsEmpty(self)
 
-    def Length(self, *args) -> "Standard_Integer" :
+    def Length(self):
         """
         :rtype: int
 
         """
-        return _Dynamic.Dynamic_SequenceOfMethodDefinitions_Length(self, *args)
+        return _Dynamic.Dynamic_SequenceOfMethodDefinitions_Length(self)
 
-    def Clear(self, *args) -> "void" :
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _Dynamic.Dynamic_SequenceOfMethodDefinitions_Clear(self, *args)
+        return _Dynamic.Dynamic_SequenceOfMethodDefinitions_Clear(self)
 
-    def Append(self, *args) -> "void" :
+    def Append(self, *args):
         """
         :param anItem:
         :type anItem: Handle_Dynamic_MethodDefinition &
@@ -2676,7 +2675,7 @@ class Dynamic_SequenceOfMethodDefinitions(OCC.MMgt.MMgt_TShared):
         """
         return _Dynamic.Dynamic_SequenceOfMethodDefinitions_Append(self, *args)
 
-    def Prepend(self, *args) -> "void" :
+    def Prepend(self, *args):
         """
         :param anItem:
         :type anItem: Handle_Dynamic_MethodDefinition &
@@ -2689,23 +2688,23 @@ class Dynamic_SequenceOfMethodDefinitions(OCC.MMgt.MMgt_TShared):
         """
         return _Dynamic.Dynamic_SequenceOfMethodDefinitions_Prepend(self, *args)
 
-    def Reverse(self, *args) -> "void" :
+    def Reverse(self):
         """
         :rtype: None
 
         """
-        return _Dynamic.Dynamic_SequenceOfMethodDefinitions_Reverse(self, *args)
+        return _Dynamic.Dynamic_SequenceOfMethodDefinitions_Reverse(self)
 
-    def InsertBefore(self, *args) -> "void" :
+    def InsertBefore(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :param anItem:
         :type anItem: Handle_Dynamic_MethodDefinition &
         :rtype: None
 
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :param aSequence:
         :type aSequence: Handle_Dynamic_SequenceOfMethodDefinitions &
         :rtype: None
@@ -2713,16 +2712,16 @@ class Dynamic_SequenceOfMethodDefinitions(OCC.MMgt.MMgt_TShared):
         """
         return _Dynamic.Dynamic_SequenceOfMethodDefinitions_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args) -> "void" :
+    def InsertAfter(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :param anItem:
         :type anItem: Handle_Dynamic_MethodDefinition &
         :rtype: None
 
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :param aSequence:
         :type aSequence: Handle_Dynamic_SequenceOfMethodDefinitions &
         :rtype: None
@@ -2730,30 +2729,30 @@ class Dynamic_SequenceOfMethodDefinitions(OCC.MMgt.MMgt_TShared):
         """
         return _Dynamic.Dynamic_SequenceOfMethodDefinitions_InsertAfter(self, *args)
 
-    def Exchange(self, *args) -> "void" :
+    def Exchange(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :param anOtherIndex:
-        :type anOtherIndex: int
+        :type anOtherIndex: Standard_Integer
         :rtype: None
 
         """
         return _Dynamic.Dynamic_SequenceOfMethodDefinitions_Exchange(self, *args)
 
-    def Split(self, *args) -> "Handle_Dynamic_SequenceOfMethodDefinitions" :
+    def Split(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :rtype: Handle_Dynamic_SequenceOfMethodDefinitions
 
         """
         return _Dynamic.Dynamic_SequenceOfMethodDefinitions_Split(self, *args)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :param anItem:
         :type anItem: Handle_Dynamic_MethodDefinition &
         :rtype: None
@@ -2761,65 +2760,65 @@ class Dynamic_SequenceOfMethodDefinitions(OCC.MMgt.MMgt_TShared):
         """
         return _Dynamic.Dynamic_SequenceOfMethodDefinitions_SetValue(self, *args)
 
-    def Value(self, *args) -> "Handle_Dynamic_MethodDefinition const &" :
+    def Value(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :rtype: Handle_Dynamic_MethodDefinition
 
         """
         return _Dynamic.Dynamic_SequenceOfMethodDefinitions_Value(self, *args)
 
-    def ChangeValue(self, *args) -> "Handle_Dynamic_MethodDefinition &" :
+    def ChangeValue(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :rtype: Handle_Dynamic_MethodDefinition
 
         """
         return _Dynamic.Dynamic_SequenceOfMethodDefinitions_ChangeValue(self, *args)
 
-    def Remove(self, *args) -> "void" :
+    def Remove(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :rtype: None
 
         :param fromIndex:
-        :type fromIndex: int
+        :type fromIndex: Standard_Integer
         :param toIndex:
-        :type toIndex: int
+        :type toIndex: Standard_Integer
         :rtype: None
 
         """
         return _Dynamic.Dynamic_SequenceOfMethodDefinitions_Remove(self, *args)
 
-    def Sequence(self, *args) -> "Dynamic_SeqOfMethodDefinitions const &" :
+    def Sequence(self):
         """
         :rtype: Dynamic_SeqOfMethodDefinitions
 
         """
-        return _Dynamic.Dynamic_SequenceOfMethodDefinitions_Sequence(self, *args)
+        return _Dynamic.Dynamic_SequenceOfMethodDefinitions_Sequence(self)
 
-    def ChangeSequence(self, *args) -> "Dynamic_SeqOfMethodDefinitions &" :
+    def ChangeSequence(self):
         """
         :rtype: Dynamic_SeqOfMethodDefinitions
 
         """
-        return _Dynamic.Dynamic_SequenceOfMethodDefinitions_ChangeSequence(self, *args)
+        return _Dynamic.Dynamic_SequenceOfMethodDefinitions_ChangeSequence(self)
 
-    def ShallowCopy(self, *args) -> "Handle_Dynamic_SequenceOfMethodDefinitions" :
+    def ShallowCopy(self):
         """
         :rtype: Handle_Dynamic_SequenceOfMethodDefinitions
 
         """
-        return _Dynamic.Dynamic_SequenceOfMethodDefinitions_ShallowCopy(self, *args)
+        return _Dynamic.Dynamic_SequenceOfMethodDefinitions_ShallowCopy(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Dynamic_SequenceOfMethodDefinitions self)"""
         return _Dynamic.Dynamic_SequenceOfMethodDefinitions__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Dynamic_SequenceOfMethodDefinitions" :
+    def GetHandle(self):
         """GetHandle(Dynamic_SequenceOfMethodDefinitions self) -> Handle_Dynamic_SequenceOfMethodDefinitions"""
         return _Dynamic.Dynamic_SequenceOfMethodDefinitions_GetHandle(self)
 
@@ -2874,41 +2873,41 @@ Handle_Dynamic_SequenceOfMethodDefinitions._kill_pointed = new_instancemethod(_D
 Handle_Dynamic_SequenceOfMethodDefinitions_swigregister = _Dynamic.Handle_Dynamic_SequenceOfMethodDefinitions_swigregister
 Handle_Dynamic_SequenceOfMethodDefinitions_swigregister(Handle_Dynamic_SequenceOfMethodDefinitions)
 
-def Handle_Dynamic_SequenceOfMethodDefinitions_DownCast(*args) -> "Handle_Dynamic_SequenceOfMethodDefinitions const" :
+def Handle_Dynamic_SequenceOfMethodDefinitions_DownCast(*args):
   return _Dynamic.Handle_Dynamic_SequenceOfMethodDefinitions_DownCast(*args)
 Handle_Dynamic_SequenceOfMethodDefinitions_DownCast = _Dynamic.Handle_Dynamic_SequenceOfMethodDefinitions_DownCast
 
 class Dynamic_SequenceOfMethods(OCC.MMgt.MMgt_TShared):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _Dynamic.Dynamic_SequenceOfMethods_swiginit(self,_Dynamic.new_Dynamic_SequenceOfMethods(*args))
-    def IsEmpty(self, *args) -> "Standard_Boolean" :
+        _Dynamic.Dynamic_SequenceOfMethods_swiginit(self,_Dynamic.new_Dynamic_SequenceOfMethods())
+    def IsEmpty(self):
         """
         :rtype: bool
 
         """
-        return _Dynamic.Dynamic_SequenceOfMethods_IsEmpty(self, *args)
+        return _Dynamic.Dynamic_SequenceOfMethods_IsEmpty(self)
 
-    def Length(self, *args) -> "Standard_Integer" :
+    def Length(self):
         """
         :rtype: int
 
         """
-        return _Dynamic.Dynamic_SequenceOfMethods_Length(self, *args)
+        return _Dynamic.Dynamic_SequenceOfMethods_Length(self)
 
-    def Clear(self, *args) -> "void" :
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _Dynamic.Dynamic_SequenceOfMethods_Clear(self, *args)
+        return _Dynamic.Dynamic_SequenceOfMethods_Clear(self)
 
-    def Append(self, *args) -> "void" :
+    def Append(self, *args):
         """
         :param anItem:
         :type anItem: Handle_Dynamic_Method &
@@ -2921,7 +2920,7 @@ class Dynamic_SequenceOfMethods(OCC.MMgt.MMgt_TShared):
         """
         return _Dynamic.Dynamic_SequenceOfMethods_Append(self, *args)
 
-    def Prepend(self, *args) -> "void" :
+    def Prepend(self, *args):
         """
         :param anItem:
         :type anItem: Handle_Dynamic_Method &
@@ -2934,23 +2933,23 @@ class Dynamic_SequenceOfMethods(OCC.MMgt.MMgt_TShared):
         """
         return _Dynamic.Dynamic_SequenceOfMethods_Prepend(self, *args)
 
-    def Reverse(self, *args) -> "void" :
+    def Reverse(self):
         """
         :rtype: None
 
         """
-        return _Dynamic.Dynamic_SequenceOfMethods_Reverse(self, *args)
+        return _Dynamic.Dynamic_SequenceOfMethods_Reverse(self)
 
-    def InsertBefore(self, *args) -> "void" :
+    def InsertBefore(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :param anItem:
         :type anItem: Handle_Dynamic_Method &
         :rtype: None
 
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :param aSequence:
         :type aSequence: Handle_Dynamic_SequenceOfMethods &
         :rtype: None
@@ -2958,16 +2957,16 @@ class Dynamic_SequenceOfMethods(OCC.MMgt.MMgt_TShared):
         """
         return _Dynamic.Dynamic_SequenceOfMethods_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args) -> "void" :
+    def InsertAfter(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :param anItem:
         :type anItem: Handle_Dynamic_Method &
         :rtype: None
 
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :param aSequence:
         :type aSequence: Handle_Dynamic_SequenceOfMethods &
         :rtype: None
@@ -2975,30 +2974,30 @@ class Dynamic_SequenceOfMethods(OCC.MMgt.MMgt_TShared):
         """
         return _Dynamic.Dynamic_SequenceOfMethods_InsertAfter(self, *args)
 
-    def Exchange(self, *args) -> "void" :
+    def Exchange(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :param anOtherIndex:
-        :type anOtherIndex: int
+        :type anOtherIndex: Standard_Integer
         :rtype: None
 
         """
         return _Dynamic.Dynamic_SequenceOfMethods_Exchange(self, *args)
 
-    def Split(self, *args) -> "Handle_Dynamic_SequenceOfMethods" :
+    def Split(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :rtype: Handle_Dynamic_SequenceOfMethods
 
         """
         return _Dynamic.Dynamic_SequenceOfMethods_Split(self, *args)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :param anItem:
         :type anItem: Handle_Dynamic_Method &
         :rtype: None
@@ -3006,65 +3005,65 @@ class Dynamic_SequenceOfMethods(OCC.MMgt.MMgt_TShared):
         """
         return _Dynamic.Dynamic_SequenceOfMethods_SetValue(self, *args)
 
-    def Value(self, *args) -> "Handle_Dynamic_Method const &" :
+    def Value(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :rtype: Handle_Dynamic_Method
 
         """
         return _Dynamic.Dynamic_SequenceOfMethods_Value(self, *args)
 
-    def ChangeValue(self, *args) -> "Handle_Dynamic_Method &" :
+    def ChangeValue(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :rtype: Handle_Dynamic_Method
 
         """
         return _Dynamic.Dynamic_SequenceOfMethods_ChangeValue(self, *args)
 
-    def Remove(self, *args) -> "void" :
+    def Remove(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :rtype: None
 
         :param fromIndex:
-        :type fromIndex: int
+        :type fromIndex: Standard_Integer
         :param toIndex:
-        :type toIndex: int
+        :type toIndex: Standard_Integer
         :rtype: None
 
         """
         return _Dynamic.Dynamic_SequenceOfMethods_Remove(self, *args)
 
-    def Sequence(self, *args) -> "Dynamic_SeqOfMethods const &" :
+    def Sequence(self):
         """
         :rtype: Dynamic_SeqOfMethods
 
         """
-        return _Dynamic.Dynamic_SequenceOfMethods_Sequence(self, *args)
+        return _Dynamic.Dynamic_SequenceOfMethods_Sequence(self)
 
-    def ChangeSequence(self, *args) -> "Dynamic_SeqOfMethods &" :
+    def ChangeSequence(self):
         """
         :rtype: Dynamic_SeqOfMethods
 
         """
-        return _Dynamic.Dynamic_SequenceOfMethods_ChangeSequence(self, *args)
+        return _Dynamic.Dynamic_SequenceOfMethods_ChangeSequence(self)
 
-    def ShallowCopy(self, *args) -> "Handle_Dynamic_SequenceOfMethods" :
+    def ShallowCopy(self):
         """
         :rtype: Handle_Dynamic_SequenceOfMethods
 
         """
-        return _Dynamic.Dynamic_SequenceOfMethods_ShallowCopy(self, *args)
+        return _Dynamic.Dynamic_SequenceOfMethods_ShallowCopy(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Dynamic_SequenceOfMethods self)"""
         return _Dynamic.Dynamic_SequenceOfMethods__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Dynamic_SequenceOfMethods" :
+    def GetHandle(self):
         """GetHandle(Dynamic_SequenceOfMethods self) -> Handle_Dynamic_SequenceOfMethods"""
         return _Dynamic.Dynamic_SequenceOfMethods_GetHandle(self)
 
@@ -3119,22 +3118,22 @@ Handle_Dynamic_SequenceOfMethods._kill_pointed = new_instancemethod(_Dynamic.Han
 Handle_Dynamic_SequenceOfMethods_swigregister = _Dynamic.Handle_Dynamic_SequenceOfMethods_swigregister
 Handle_Dynamic_SequenceOfMethods_swigregister(Handle_Dynamic_SequenceOfMethods)
 
-def Handle_Dynamic_SequenceOfMethods_DownCast(*args) -> "Handle_Dynamic_SequenceOfMethods const" :
+def Handle_Dynamic_SequenceOfMethods_DownCast(*args):
   return _Dynamic.Handle_Dynamic_SequenceOfMethods_DownCast(*args)
 Handle_Dynamic_SequenceOfMethods_DownCast = _Dynamic.Handle_Dynamic_SequenceOfMethods_DownCast
 
 class Dynamic_Variable(OCC.MMgt.MMgt_TShared):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         * Creates and returns an empty instance of this class.
 
         :rtype: None
 
         """
-        _Dynamic.Dynamic_Variable_swiginit(self,_Dynamic.new_Dynamic_Variable(*args))
-    def Parameter(self, *args) -> "Handle_Dynamic_Parameter" :
+        _Dynamic.Dynamic_Variable_swiginit(self,_Dynamic.new_Dynamic_Variable())
+    def Parameter(self, *args):
         """
         * Sets the parameter <aparameter> in <self>. This parameter gives the name, the type of value, and if necessary the default value of the variable.
 
@@ -3149,7 +3148,7 @@ class Dynamic_Variable(OCC.MMgt.MMgt_TShared):
         """
         return _Dynamic.Dynamic_Variable_Parameter(self, *args)
 
-    def Mode(self, *args) -> "Dynamic_ModeEnum" :
+    def Mode(self, *args):
         """
         * Sets the mode to the variable. the mode is to take in the enumeration IN, OUT, INOUT, INTERNAL, CONSTANT, which describes the type of the variable.
 
@@ -3164,15 +3163,15 @@ class Dynamic_Variable(OCC.MMgt.MMgt_TShared):
         """
         return _Dynamic.Dynamic_Variable_Mode(self, *args)
 
-    def DumpToString(self) -> "std::string" :
+    def DumpToString(self):
         """DumpToString(Dynamic_Variable self) -> std::string"""
         return _Dynamic.Dynamic_Variable_DumpToString(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Dynamic_Variable self)"""
         return _Dynamic.Dynamic_Variable__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Dynamic_Variable" :
+    def GetHandle(self):
         """GetHandle(Dynamic_Variable self) -> Handle_Dynamic_Variable"""
         return _Dynamic.Dynamic_Variable_GetHandle(self)
 
@@ -3213,7 +3212,7 @@ Handle_Dynamic_Variable._kill_pointed = new_instancemethod(_Dynamic.Handle_Dynam
 Handle_Dynamic_Variable_swigregister = _Dynamic.Handle_Dynamic_Variable_swigregister
 Handle_Dynamic_Variable_swigregister(Handle_Dynamic_Variable)
 
-def Handle_Dynamic_Variable_DownCast(*args) -> "Handle_Dynamic_Variable const" :
+def Handle_Dynamic_Variable_DownCast(*args):
   return _Dynamic.Handle_Dynamic_Variable_DownCast(*args)
 Handle_Dynamic_Variable_DownCast = _Dynamic.Handle_Dynamic_Variable_DownCast
 
@@ -3230,7 +3229,7 @@ class Dynamic_VariableNode(OCC.MMgt.MMgt_TShared):
 
         """
         _Dynamic.Dynamic_VariableNode_swiginit(self,_Dynamic.new_Dynamic_VariableNode(*args))
-    def Object(self, *args) -> "Handle_Dynamic_Variable" :
+    def Object(self, *args):
         """
         :param anitem:
         :type anitem: Handle_Dynamic_Variable &
@@ -3241,7 +3240,7 @@ class Dynamic_VariableNode(OCC.MMgt.MMgt_TShared):
         """
         return _Dynamic.Dynamic_VariableNode_Object(self, *args)
 
-    def Next(self, *args) -> "Handle_Dynamic_VariableNode" :
+    def Next(self, *args):
         """
         :param anode:
         :type anode: Handle_Dynamic_VariableNode &
@@ -3252,11 +3251,11 @@ class Dynamic_VariableNode(OCC.MMgt.MMgt_TShared):
         """
         return _Dynamic.Dynamic_VariableNode_Next(self, *args)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Dynamic_VariableNode self)"""
         return _Dynamic.Dynamic_VariableNode__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Dynamic_VariableNode" :
+    def GetHandle(self):
         """GetHandle(Dynamic_VariableNode self) -> Handle_Dynamic_VariableNode"""
         return _Dynamic.Dynamic_VariableNode_GetHandle(self)
 
@@ -3296,7 +3295,7 @@ Handle_Dynamic_VariableNode._kill_pointed = new_instancemethod(_Dynamic.Handle_D
 Handle_Dynamic_VariableNode_swigregister = _Dynamic.Handle_Dynamic_VariableNode_swigregister
 Handle_Dynamic_VariableNode_swigregister(Handle_Dynamic_VariableNode)
 
-def Handle_Dynamic_VariableNode_DownCast(*args) -> "Handle_Dynamic_VariableNode const" :
+def Handle_Dynamic_VariableNode_DownCast(*args):
   return _Dynamic.Handle_Dynamic_VariableNode_DownCast(*args)
 Handle_Dynamic_VariableNode_DownCast = _Dynamic.Handle_Dynamic_VariableNode_DownCast
 
@@ -3304,7 +3303,7 @@ class Dynamic_AbstractVariableInstance(Dynamic_Variable):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def Variable(self, *args) -> "void" :
+    def Variable(self, *args):
         """
         * This deferred method must be implemented in the derived classes for setting reference(s) to the corresponding variable(s) which define the signature of the method definition.
 
@@ -3315,11 +3314,11 @@ class Dynamic_AbstractVariableInstance(Dynamic_Variable):
         """
         return _Dynamic.Dynamic_AbstractVariableInstance_Variable(self, *args)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Dynamic_AbstractVariableInstance self)"""
         return _Dynamic.Dynamic_AbstractVariableInstance__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Dynamic_AbstractVariableInstance" :
+    def GetHandle(self):
         """GetHandle(Dynamic_AbstractVariableInstance self) -> Handle_Dynamic_AbstractVariableInstance"""
         return _Dynamic.Dynamic_AbstractVariableInstance_GetHandle(self)
 
@@ -3358,7 +3357,7 @@ Handle_Dynamic_AbstractVariableInstance._kill_pointed = new_instancemethod(_Dyna
 Handle_Dynamic_AbstractVariableInstance_swigregister = _Dynamic.Handle_Dynamic_AbstractVariableInstance_swigregister
 Handle_Dynamic_AbstractVariableInstance_swigregister(Handle_Dynamic_AbstractVariableInstance)
 
-def Handle_Dynamic_AbstractVariableInstance_DownCast(*args) -> "Handle_Dynamic_AbstractVariableInstance const" :
+def Handle_Dynamic_AbstractVariableInstance_DownCast(*args):
   return _Dynamic.Handle_Dynamic_AbstractVariableInstance_DownCast(*args)
 Handle_Dynamic_AbstractVariableInstance_DownCast = _Dynamic.Handle_Dynamic_AbstractVariableInstance_DownCast
 
@@ -3391,7 +3390,7 @@ class Dynamic_BooleanParameter(Dynamic_Parameter):
 
         """
         _Dynamic.Dynamic_BooleanParameter_swiginit(self,_Dynamic.new_Dynamic_BooleanParameter(*args))
-    def Value(self, *args) -> "void" :
+    def Value(self, *args):
         """
         * Returns the boolean value <thevalue>.
 
@@ -3406,15 +3405,15 @@ class Dynamic_BooleanParameter(Dynamic_Parameter):
         """
         return _Dynamic.Dynamic_BooleanParameter_Value(self, *args)
 
-    def DumpToString(self) -> "std::string" :
+    def DumpToString(self):
         """DumpToString(Dynamic_BooleanParameter self) -> std::string"""
         return _Dynamic.Dynamic_BooleanParameter_DumpToString(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Dynamic_BooleanParameter self)"""
         return _Dynamic.Dynamic_BooleanParameter__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Dynamic_BooleanParameter" :
+    def GetHandle(self):
         """GetHandle(Dynamic_BooleanParameter self) -> Handle_Dynamic_BooleanParameter"""
         return _Dynamic.Dynamic_BooleanParameter_GetHandle(self)
 
@@ -3454,7 +3453,7 @@ Handle_Dynamic_BooleanParameter._kill_pointed = new_instancemethod(_Dynamic.Hand
 Handle_Dynamic_BooleanParameter_swigregister = _Dynamic.Handle_Dynamic_BooleanParameter_swigregister
 Handle_Dynamic_BooleanParameter_swigregister(Handle_Dynamic_BooleanParameter)
 
-def Handle_Dynamic_BooleanParameter_DownCast(*args) -> "Handle_Dynamic_BooleanParameter const" :
+def Handle_Dynamic_BooleanParameter_DownCast(*args):
   return _Dynamic.Handle_Dynamic_BooleanParameter_DownCast(*args)
 Handle_Dynamic_BooleanParameter_DownCast = _Dynamic.Handle_Dynamic_BooleanParameter_DownCast
 
@@ -3471,7 +3470,7 @@ class Dynamic_DynamicDerivedClass(Dynamic_DynamicClass):
 
         """
         _Dynamic.Dynamic_DynamicDerivedClass_swiginit(self,_Dynamic.new_Dynamic_DynamicDerivedClass(*args))
-    def AddClass(self, *args) -> "void" :
+    def AddClass(self, *args):
         """
         * Adds another class <aclass> to the sequence of derived classes.
 
@@ -3482,11 +3481,11 @@ class Dynamic_DynamicDerivedClass(Dynamic_DynamicClass):
         """
         return _Dynamic.Dynamic_DynamicDerivedClass_AddClass(self, *args)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Dynamic_DynamicDerivedClass self)"""
         return _Dynamic.Dynamic_DynamicDerivedClass__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Dynamic_DynamicDerivedClass" :
+    def GetHandle(self):
         """GetHandle(Dynamic_DynamicDerivedClass self) -> Handle_Dynamic_DynamicDerivedClass"""
         return _Dynamic.Dynamic_DynamicDerivedClass_GetHandle(self)
 
@@ -3525,7 +3524,7 @@ Handle_Dynamic_DynamicDerivedClass._kill_pointed = new_instancemethod(_Dynamic.H
 Handle_Dynamic_DynamicDerivedClass_swigregister = _Dynamic.Handle_Dynamic_DynamicDerivedClass_swigregister
 Handle_Dynamic_DynamicDerivedClass_swigregister(Handle_Dynamic_DynamicDerivedClass)
 
-def Handle_Dynamic_DynamicDerivedClass_DownCast(*args) -> "Handle_Dynamic_DynamicDerivedClass const" :
+def Handle_Dynamic_DynamicDerivedClass_DownCast(*args):
   return _Dynamic.Handle_Dynamic_DynamicDerivedClass_DownCast(*args)
 Handle_Dynamic_DynamicDerivedClass_DownCast = _Dynamic.Handle_Dynamic_DynamicDerivedClass_DownCast
 
@@ -3542,15 +3541,15 @@ class Dynamic_FuzzyDefinition(Dynamic_FuzzyClass):
 
         """
         _Dynamic.Dynamic_FuzzyDefinition_swiginit(self,_Dynamic.new_Dynamic_FuzzyDefinition(*args))
-    def DumpToString(self) -> "std::string" :
+    def DumpToString(self):
         """DumpToString(Dynamic_FuzzyDefinition self) -> std::string"""
         return _Dynamic.Dynamic_FuzzyDefinition_DumpToString(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Dynamic_FuzzyDefinition self)"""
         return _Dynamic.Dynamic_FuzzyDefinition__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Dynamic_FuzzyDefinition" :
+    def GetHandle(self):
         """GetHandle(Dynamic_FuzzyDefinition self) -> Handle_Dynamic_FuzzyDefinition"""
         return _Dynamic.Dynamic_FuzzyDefinition_GetHandle(self)
 
@@ -3589,7 +3588,7 @@ Handle_Dynamic_FuzzyDefinition._kill_pointed = new_instancemethod(_Dynamic.Handl
 Handle_Dynamic_FuzzyDefinition_swigregister = _Dynamic.Handle_Dynamic_FuzzyDefinition_swigregister
 Handle_Dynamic_FuzzyDefinition_swigregister(Handle_Dynamic_FuzzyDefinition)
 
-def Handle_Dynamic_FuzzyDefinition_DownCast(*args) -> "Handle_Dynamic_FuzzyDefinition const" :
+def Handle_Dynamic_FuzzyDefinition_DownCast(*args):
   return _Dynamic.Handle_Dynamic_FuzzyDefinition_DownCast(*args)
 Handle_Dynamic_FuzzyDefinition_DownCast = _Dynamic.Handle_Dynamic_FuzzyDefinition_DownCast
 
@@ -3614,7 +3613,7 @@ class Dynamic_InstanceParameter(Dynamic_Parameter):
 
         """
         _Dynamic.Dynamic_InstanceParameter_swiginit(self,_Dynamic.new_Dynamic_InstanceParameter(*args))
-    def Value(self, *args) -> "void" :
+    def Value(self, *args):
         """
         * Returns <thevalue>.
 
@@ -3629,15 +3628,15 @@ class Dynamic_InstanceParameter(Dynamic_Parameter):
         """
         return _Dynamic.Dynamic_InstanceParameter_Value(self, *args)
 
-    def DumpToString(self) -> "std::string" :
+    def DumpToString(self):
         """DumpToString(Dynamic_InstanceParameter self) -> std::string"""
         return _Dynamic.Dynamic_InstanceParameter_DumpToString(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Dynamic_InstanceParameter self)"""
         return _Dynamic.Dynamic_InstanceParameter__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Dynamic_InstanceParameter" :
+    def GetHandle(self):
         """GetHandle(Dynamic_InstanceParameter self) -> Handle_Dynamic_InstanceParameter"""
         return _Dynamic.Dynamic_InstanceParameter_GetHandle(self)
 
@@ -3677,7 +3676,7 @@ Handle_Dynamic_InstanceParameter._kill_pointed = new_instancemethod(_Dynamic.Han
 Handle_Dynamic_InstanceParameter_swigregister = _Dynamic.Handle_Dynamic_InstanceParameter_swigregister
 Handle_Dynamic_InstanceParameter_swigregister(Handle_Dynamic_InstanceParameter)
 
-def Handle_Dynamic_InstanceParameter_DownCast(*args) -> "Handle_Dynamic_InstanceParameter const" :
+def Handle_Dynamic_InstanceParameter_DownCast(*args):
   return _Dynamic.Handle_Dynamic_InstanceParameter_DownCast(*args)
 Handle_Dynamic_InstanceParameter_DownCast = _Dynamic.Handle_Dynamic_InstanceParameter_DownCast
 
@@ -3697,12 +3696,12 @@ class Dynamic_IntegerParameter(Dynamic_Parameter):
         :param aparameter:
         :type aparameter: char *
         :param avalue:
-        :type avalue: int
+        :type avalue: Standard_Integer
         :rtype: None
 
         """
         _Dynamic.Dynamic_IntegerParameter_swiginit(self,_Dynamic.new_Dynamic_IntegerParameter(*args))
-    def Value(self, *args) -> "void" :
+    def Value(self, *args):
         """
         * Returns the integer value <thevalue>.
 
@@ -3711,21 +3710,21 @@ class Dynamic_IntegerParameter(Dynamic_Parameter):
         * Sets the field <thevalue> with the integer value <avalue>
 
         :param avalue:
-        :type avalue: int
+        :type avalue: Standard_Integer
         :rtype: None
 
         """
         return _Dynamic.Dynamic_IntegerParameter_Value(self, *args)
 
-    def DumpToString(self) -> "std::string" :
+    def DumpToString(self):
         """DumpToString(Dynamic_IntegerParameter self) -> std::string"""
         return _Dynamic.Dynamic_IntegerParameter_DumpToString(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Dynamic_IntegerParameter self)"""
         return _Dynamic.Dynamic_IntegerParameter__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Dynamic_IntegerParameter" :
+    def GetHandle(self):
         """GetHandle(Dynamic_IntegerParameter self) -> Handle_Dynamic_IntegerParameter"""
         return _Dynamic.Dynamic_IntegerParameter_GetHandle(self)
 
@@ -3765,7 +3764,7 @@ Handle_Dynamic_IntegerParameter._kill_pointed = new_instancemethod(_Dynamic.Hand
 Handle_Dynamic_IntegerParameter_swigregister = _Dynamic.Handle_Dynamic_IntegerParameter_swigregister
 Handle_Dynamic_IntegerParameter_swigregister(Handle_Dynamic_IntegerParameter)
 
-def Handle_Dynamic_IntegerParameter_DownCast(*args) -> "Handle_Dynamic_IntegerParameter const" :
+def Handle_Dynamic_IntegerParameter_DownCast(*args):
   return _Dynamic.Handle_Dynamic_IntegerParameter_DownCast(*args)
 Handle_Dynamic_IntegerParameter_DownCast = _Dynamic.Handle_Dynamic_IntegerParameter_DownCast
 
@@ -3773,8 +3772,18 @@ class Dynamic_MethodDefinition(Dynamic_Method):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def AddVariable(self, *args) -> "void" :
+    def AddVariable(self, *args):
         """
+        * Adds a new variable created from the parameter <aparameter>, which defines the name of the variable its type and if necessary its default value, the mode <amode> which precise if it is an in, out, inout, internal or constant variable and the flag <agroup> for accepting a set of homogeneous variables. with the parameter value <aparameter>.
+
+        :param aparameter:
+        :type aparameter: Handle_Dynamic_Parameter &
+        :param amode:
+        :type amode: Dynamic_ModeEnum
+        :param agroup: default value is Standard_False
+        :type agroup: bool
+        :rtype: None
+
         * Adds a new variable created from the parameter <aparameter>, which defines the name of the variable its type and if necessary its default value, the mode <amode> which precise if it is an in, out, inout, internal or constant variable and the flag <agroup> for accepting a set of homogeneous variables. with the parameter value <aparameter>.
 
         :param aparameter:
@@ -3788,15 +3797,15 @@ class Dynamic_MethodDefinition(Dynamic_Method):
         """
         return _Dynamic.Dynamic_MethodDefinition_AddVariable(self, *args)
 
-    def DumpToString(self) -> "std::string" :
+    def DumpToString(self):
         """DumpToString(Dynamic_MethodDefinition self) -> std::string"""
         return _Dynamic.Dynamic_MethodDefinition_DumpToString(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Dynamic_MethodDefinition self)"""
         return _Dynamic.Dynamic_MethodDefinition__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Dynamic_MethodDefinition" :
+    def GetHandle(self):
         """GetHandle(Dynamic_MethodDefinition self) -> Handle_Dynamic_MethodDefinition"""
         return _Dynamic.Dynamic_MethodDefinition_GetHandle(self)
 
@@ -3836,7 +3845,7 @@ Handle_Dynamic_MethodDefinition._kill_pointed = new_instancemethod(_Dynamic.Hand
 Handle_Dynamic_MethodDefinition_swigregister = _Dynamic.Handle_Dynamic_MethodDefinition_swigregister
 Handle_Dynamic_MethodDefinition_swigregister(Handle_Dynamic_MethodDefinition)
 
-def Handle_Dynamic_MethodDefinition_DownCast(*args) -> "Handle_Dynamic_MethodDefinition const" :
+def Handle_Dynamic_MethodDefinition_DownCast(*args):
   return _Dynamic.Handle_Dynamic_MethodDefinition_DownCast(*args)
 Handle_Dynamic_MethodDefinition_DownCast = _Dynamic.Handle_Dynamic_MethodDefinition_DownCast
 
@@ -3861,7 +3870,7 @@ class Dynamic_ObjectParameter(Dynamic_Parameter):
 
         """
         _Dynamic.Dynamic_ObjectParameter_swiginit(self,_Dynamic.new_Dynamic_ObjectParameter(*args))
-    def Value(self, *args) -> "void" :
+    def Value(self, *args):
         """
         * Returns the value of the parameter which is an object.
 
@@ -3876,15 +3885,15 @@ class Dynamic_ObjectParameter(Dynamic_Parameter):
         """
         return _Dynamic.Dynamic_ObjectParameter_Value(self, *args)
 
-    def DumpToString(self) -> "std::string" :
+    def DumpToString(self):
         """DumpToString(Dynamic_ObjectParameter self) -> std::string"""
         return _Dynamic.Dynamic_ObjectParameter_DumpToString(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Dynamic_ObjectParameter self)"""
         return _Dynamic.Dynamic_ObjectParameter__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Dynamic_ObjectParameter" :
+    def GetHandle(self):
         """GetHandle(Dynamic_ObjectParameter self) -> Handle_Dynamic_ObjectParameter"""
         return _Dynamic.Dynamic_ObjectParameter_GetHandle(self)
 
@@ -3924,7 +3933,7 @@ Handle_Dynamic_ObjectParameter._kill_pointed = new_instancemethod(_Dynamic.Handl
 Handle_Dynamic_ObjectParameter_swigregister = _Dynamic.Handle_Dynamic_ObjectParameter_swigregister
 Handle_Dynamic_ObjectParameter_swigregister(Handle_Dynamic_ObjectParameter)
 
-def Handle_Dynamic_ObjectParameter_DownCast(*args) -> "Handle_Dynamic_ObjectParameter const" :
+def Handle_Dynamic_ObjectParameter_DownCast(*args):
   return _Dynamic.Handle_Dynamic_ObjectParameter_DownCast(*args)
 Handle_Dynamic_ObjectParameter_DownCast = _Dynamic.Handle_Dynamic_ObjectParameter_DownCast
 
@@ -3949,7 +3958,7 @@ class Dynamic_RealParameter(Dynamic_Parameter):
 
         """
         _Dynamic.Dynamic_RealParameter_swiginit(self,_Dynamic.new_Dynamic_RealParameter(*args))
-    def Value(self, *args) -> "void" :
+    def Value(self, *args):
         """
         * Returns the value of the parameter which is a real.
 
@@ -3964,15 +3973,15 @@ class Dynamic_RealParameter(Dynamic_Parameter):
         """
         return _Dynamic.Dynamic_RealParameter_Value(self, *args)
 
-    def DumpToString(self) -> "std::string" :
+    def DumpToString(self):
         """DumpToString(Dynamic_RealParameter self) -> std::string"""
         return _Dynamic.Dynamic_RealParameter_DumpToString(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Dynamic_RealParameter self)"""
         return _Dynamic.Dynamic_RealParameter__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Dynamic_RealParameter" :
+    def GetHandle(self):
         """GetHandle(Dynamic_RealParameter self) -> Handle_Dynamic_RealParameter"""
         return _Dynamic.Dynamic_RealParameter_GetHandle(self)
 
@@ -4012,7 +4021,7 @@ Handle_Dynamic_RealParameter._kill_pointed = new_instancemethod(_Dynamic.Handle_
 Handle_Dynamic_RealParameter_swigregister = _Dynamic.Handle_Dynamic_RealParameter_swigregister
 Handle_Dynamic_RealParameter_swigregister(Handle_Dynamic_RealParameter)
 
-def Handle_Dynamic_RealParameter_DownCast(*args) -> "Handle_Dynamic_RealParameter const" :
+def Handle_Dynamic_RealParameter_DownCast(*args):
   return _Dynamic.Handle_Dynamic_RealParameter_DownCast(*args)
 Handle_Dynamic_RealParameter_DownCast = _Dynamic.Handle_Dynamic_RealParameter_DownCast
 
@@ -4037,7 +4046,7 @@ class Dynamic_StringParameter(Dynamic_Parameter):
 
         """
         _Dynamic.Dynamic_StringParameter_swiginit(self,_Dynamic.new_Dynamic_StringParameter(*args))
-    def Value(self, *args) -> "void" :
+    def Value(self, *args):
         """
         * Returns the value of the parameter which is an AsciiString.
 
@@ -4052,15 +4061,15 @@ class Dynamic_StringParameter(Dynamic_Parameter):
         """
         return _Dynamic.Dynamic_StringParameter_Value(self, *args)
 
-    def DumpToString(self) -> "std::string" :
+    def DumpToString(self):
         """DumpToString(Dynamic_StringParameter self) -> std::string"""
         return _Dynamic.Dynamic_StringParameter_DumpToString(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Dynamic_StringParameter self)"""
         return _Dynamic.Dynamic_StringParameter__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Dynamic_StringParameter" :
+    def GetHandle(self):
         """GetHandle(Dynamic_StringParameter self) -> Handle_Dynamic_StringParameter"""
         return _Dynamic.Dynamic_StringParameter_GetHandle(self)
 
@@ -4100,26 +4109,26 @@ Handle_Dynamic_StringParameter._kill_pointed = new_instancemethod(_Dynamic.Handl
 Handle_Dynamic_StringParameter_swigregister = _Dynamic.Handle_Dynamic_StringParameter_swigregister
 Handle_Dynamic_StringParameter_swigregister(Handle_Dynamic_StringParameter)
 
-def Handle_Dynamic_StringParameter_DownCast(*args) -> "Handle_Dynamic_StringParameter const" :
+def Handle_Dynamic_StringParameter_DownCast(*args):
   return _Dynamic.Handle_Dynamic_StringParameter_DownCast(*args)
 Handle_Dynamic_StringParameter_DownCast = _Dynamic.Handle_Dynamic_StringParameter_DownCast
 
 class Dynamic_VariableGroup(Dynamic_Variable):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         * Creates and Returns a new instance of this class.
 
         :rtype: None
 
         """
-        _Dynamic.Dynamic_VariableGroup_swiginit(self,_Dynamic.new_Dynamic_VariableGroup(*args))
-    def _kill_pointed(self) -> "void" :
+        _Dynamic.Dynamic_VariableGroup_swiginit(self,_Dynamic.new_Dynamic_VariableGroup())
+    def _kill_pointed(self):
         """_kill_pointed(Dynamic_VariableGroup self)"""
         return _Dynamic.Dynamic_VariableGroup__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Dynamic_VariableGroup" :
+    def GetHandle(self):
         """GetHandle(Dynamic_VariableGroup self) -> Handle_Dynamic_VariableGroup"""
         return _Dynamic.Dynamic_VariableGroup_GetHandle(self)
 
@@ -4157,7 +4166,7 @@ Handle_Dynamic_VariableGroup._kill_pointed = new_instancemethod(_Dynamic.Handle_
 Handle_Dynamic_VariableGroup_swigregister = _Dynamic.Handle_Dynamic_VariableGroup_swigregister
 Handle_Dynamic_VariableGroup_swigregister(Handle_Dynamic_VariableGroup)
 
-def Handle_Dynamic_VariableGroup_DownCast(*args) -> "Handle_Dynamic_VariableGroup const" :
+def Handle_Dynamic_VariableGroup_DownCast(*args):
   return _Dynamic.Handle_Dynamic_VariableGroup_DownCast(*args)
 Handle_Dynamic_VariableGroup_DownCast = _Dynamic.Handle_Dynamic_VariableGroup_DownCast
 
@@ -4176,7 +4185,7 @@ class Dynamic_CompiledMethod(Dynamic_MethodDefinition):
 
         """
         _Dynamic.Dynamic_CompiledMethod_swiginit(self,_Dynamic.new_Dynamic_CompiledMethod(*args))
-    def Function(self, *args) -> "TCollection_AsciiString" :
+    def Function(self, *args):
         """
         * Sets the C++ mangled name of the method to the field <thefunction>.
 
@@ -4191,11 +4200,11 @@ class Dynamic_CompiledMethod(Dynamic_MethodDefinition):
         """
         return _Dynamic.Dynamic_CompiledMethod_Function(self, *args)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Dynamic_CompiledMethod self)"""
         return _Dynamic.Dynamic_CompiledMethod__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Dynamic_CompiledMethod" :
+    def GetHandle(self):
         """GetHandle(Dynamic_CompiledMethod self) -> Handle_Dynamic_CompiledMethod"""
         return _Dynamic.Dynamic_CompiledMethod_GetHandle(self)
 
@@ -4234,7 +4243,7 @@ Handle_Dynamic_CompiledMethod._kill_pointed = new_instancemethod(_Dynamic.Handle
 Handle_Dynamic_CompiledMethod_swigregister = _Dynamic.Handle_Dynamic_CompiledMethod_swigregister
 Handle_Dynamic_CompiledMethod_swigregister(Handle_Dynamic_CompiledMethod)
 
-def Handle_Dynamic_CompiledMethod_DownCast(*args) -> "Handle_Dynamic_CompiledMethod const" :
+def Handle_Dynamic_CompiledMethod_DownCast(*args):
   return _Dynamic.Handle_Dynamic_CompiledMethod_DownCast(*args)
 Handle_Dynamic_CompiledMethod_DownCast = _Dynamic.Handle_Dynamic_CompiledMethod_DownCast
 
@@ -4251,16 +4260,16 @@ class Dynamic_CompositMethod(Dynamic_MethodDefinition):
 
         """
         _Dynamic.Dynamic_CompositMethod_swiginit(self,_Dynamic.new_Dynamic_CompositMethod(*args))
-    def NumberOfMethods(self, *args) -> "Standard_Integer" :
+    def NumberOfMethods(self):
         """
         * Returns the number of methods referenced by the composit method <self>.
 
         :rtype: int
 
         """
-        return _Dynamic.Dynamic_CompositMethod_NumberOfMethods(self, *args)
+        return _Dynamic.Dynamic_CompositMethod_NumberOfMethods(self)
 
-    def Method(self, *args) -> "Handle_Dynamic_Method" :
+    def Method(self, *args):
         """
         * Adds <amethod>, which is an elementary or a composit method to <self>.
 
@@ -4271,21 +4280,21 @@ class Dynamic_CompositMethod(Dynamic_MethodDefinition):
         * Returns the method of range <anindex>.
 
         :param anindex:
-        :type anindex: int
+        :type anindex: Standard_Integer
         :rtype: Handle_Dynamic_Method
 
         """
         return _Dynamic.Dynamic_CompositMethod_Method(self, *args)
 
-    def DumpToString(self) -> "std::string" :
+    def DumpToString(self):
         """DumpToString(Dynamic_CompositMethod self) -> std::string"""
         return _Dynamic.Dynamic_CompositMethod_DumpToString(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Dynamic_CompositMethod self)"""
         return _Dynamic.Dynamic_CompositMethod__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Dynamic_CompositMethod" :
+    def GetHandle(self):
         """GetHandle(Dynamic_CompositMethod self) -> Handle_Dynamic_CompositMethod"""
         return _Dynamic.Dynamic_CompositMethod_GetHandle(self)
 
@@ -4326,35 +4335,35 @@ Handle_Dynamic_CompositMethod._kill_pointed = new_instancemethod(_Dynamic.Handle
 Handle_Dynamic_CompositMethod_swigregister = _Dynamic.Handle_Dynamic_CompositMethod_swigregister
 Handle_Dynamic_CompositMethod_swigregister(Handle_Dynamic_CompositMethod)
 
-def Handle_Dynamic_CompositMethod_DownCast(*args) -> "Handle_Dynamic_CompositMethod const" :
+def Handle_Dynamic_CompositMethod_DownCast(*args):
   return _Dynamic.Handle_Dynamic_CompositMethod_DownCast(*args)
 Handle_Dynamic_CompositMethod_DownCast = _Dynamic.Handle_Dynamic_CompositMethod_DownCast
 
 class Dynamic_CompositVariableInstance(Dynamic_AbstractVariableInstance):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         * Creates a new empty instance of CompositVariable- Instance.
 
         :rtype: None
 
         """
-        _Dynamic.Dynamic_CompositVariableInstance_swiginit(self,_Dynamic.new_Dynamic_CompositVariableInstance(*args))
-    def FirstVariableNode(self, *args) -> "Handle_Dynamic_VariableNode" :
+        _Dynamic.Dynamic_CompositVariableInstance_swiginit(self,_Dynamic.new_Dynamic_CompositVariableInstance())
+    def FirstVariableNode(self):
         """
         * Returns the first VariableNode useful to explore the list of variables addressed by <self>.
 
         :rtype: Handle_Dynamic_VariableNode
 
         """
-        return _Dynamic.Dynamic_CompositVariableInstance_FirstVariableNode(self, *args)
+        return _Dynamic.Dynamic_CompositVariableInstance_FirstVariableNode(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Dynamic_CompositVariableInstance self)"""
         return _Dynamic.Dynamic_CompositVariableInstance__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Dynamic_CompositVariableInstance" :
+    def GetHandle(self):
         """GetHandle(Dynamic_CompositVariableInstance self) -> Handle_Dynamic_CompositVariableInstance"""
         return _Dynamic.Dynamic_CompositVariableInstance_GetHandle(self)
 
@@ -4393,7 +4402,7 @@ Handle_Dynamic_CompositVariableInstance._kill_pointed = new_instancemethod(_Dyna
 Handle_Dynamic_CompositVariableInstance_swigregister = _Dynamic.Handle_Dynamic_CompositVariableInstance_swigregister
 Handle_Dynamic_CompositVariableInstance_swigregister(Handle_Dynamic_CompositVariableInstance)
 
-def Handle_Dynamic_CompositVariableInstance_DownCast(*args) -> "Handle_Dynamic_CompositVariableInstance const" :
+def Handle_Dynamic_CompositVariableInstance_DownCast(*args):
   return _Dynamic.Handle_Dynamic_CompositVariableInstance_DownCast(*args)
 Handle_Dynamic_CompositVariableInstance_DownCast = _Dynamic.Handle_Dynamic_CompositVariableInstance_DownCast
 
@@ -4412,7 +4421,7 @@ class Dynamic_InterpretedMethod(Dynamic_MethodDefinition):
 
         """
         _Dynamic.Dynamic_InterpretedMethod_swiginit(self,_Dynamic.new_Dynamic_InterpretedMethod(*args))
-    def Function(self, *args) -> "TCollection_AsciiString" :
+    def Function(self, *args):
         """
         * Sets the the name of the file to be interpreted to <afile>.
 
@@ -4427,11 +4436,11 @@ class Dynamic_InterpretedMethod(Dynamic_MethodDefinition):
         """
         return _Dynamic.Dynamic_InterpretedMethod_Function(self, *args)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Dynamic_InterpretedMethod self)"""
         return _Dynamic.Dynamic_InterpretedMethod__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Dynamic_InterpretedMethod" :
+    def GetHandle(self):
         """GetHandle(Dynamic_InterpretedMethod self) -> Handle_Dynamic_InterpretedMethod"""
         return _Dynamic.Dynamic_InterpretedMethod_GetHandle(self)
 
@@ -4470,22 +4479,22 @@ Handle_Dynamic_InterpretedMethod._kill_pointed = new_instancemethod(_Dynamic.Han
 Handle_Dynamic_InterpretedMethod_swigregister = _Dynamic.Handle_Dynamic_InterpretedMethod_swigregister
 Handle_Dynamic_InterpretedMethod_swigregister(Handle_Dynamic_InterpretedMethod)
 
-def Handle_Dynamic_InterpretedMethod_DownCast(*args) -> "Handle_Dynamic_InterpretedMethod const" :
+def Handle_Dynamic_InterpretedMethod_DownCast(*args):
   return _Dynamic.Handle_Dynamic_InterpretedMethod_DownCast(*args)
 Handle_Dynamic_InterpretedMethod_DownCast = _Dynamic.Handle_Dynamic_InterpretedMethod_DownCast
 
 class Dynamic_VariableInstance(Dynamic_AbstractVariableInstance):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         * Returns a new empty instance of this class.
 
         :rtype: None
 
         """
-        _Dynamic.Dynamic_VariableInstance_swiginit(self,_Dynamic.new_Dynamic_VariableInstance(*args))
-    def Variable(self, *args) -> "Handle_Dynamic_Variable" :
+        _Dynamic.Dynamic_VariableInstance_swiginit(self,_Dynamic.new_Dynamic_VariableInstance())
+    def Variable(self, *args):
         """
         * Sets the variable <avariable> into the VariableInstance <self>.
 
@@ -4500,11 +4509,11 @@ class Dynamic_VariableInstance(Dynamic_AbstractVariableInstance):
         """
         return _Dynamic.Dynamic_VariableInstance_Variable(self, *args)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Dynamic_VariableInstance self)"""
         return _Dynamic.Dynamic_VariableInstance__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Dynamic_VariableInstance" :
+    def GetHandle(self):
         """GetHandle(Dynamic_VariableInstance self) -> Handle_Dynamic_VariableInstance"""
         return _Dynamic.Dynamic_VariableInstance_GetHandle(self)
 
@@ -4543,7 +4552,7 @@ Handle_Dynamic_VariableInstance._kill_pointed = new_instancemethod(_Dynamic.Hand
 Handle_Dynamic_VariableInstance_swigregister = _Dynamic.Handle_Dynamic_VariableInstance_swigregister
 Handle_Dynamic_VariableInstance_swigregister(Handle_Dynamic_VariableInstance)
 
-def Handle_Dynamic_VariableInstance_DownCast(*args) -> "Handle_Dynamic_VariableInstance const" :
+def Handle_Dynamic_VariableInstance_DownCast(*args):
   return _Dynamic.Handle_Dynamic_VariableInstance_DownCast(*args)
 Handle_Dynamic_VariableInstance_DownCast = _Dynamic.Handle_Dynamic_VariableInstance_DownCast
 

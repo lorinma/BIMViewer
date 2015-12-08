@@ -119,7 +119,7 @@ class Geom2d_Geometry(OCC.MMgt.MMgt_TShared):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def Mirror(self, *args) -> "void" :
+    def Mirror(self, *args):
         """
         * Performs the symmetrical transformation of a Geometry with respect to the point P which is the center of the symmetry and assigns the result to this geometric object.
 
@@ -136,7 +136,7 @@ class Geom2d_Geometry(OCC.MMgt.MMgt_TShared):
         """
         return _Geom2d.Geom2d_Geometry_Mirror(self, *args)
 
-    def Rotate(self, *args) -> "void" :
+    def Rotate(self, *args):
         """
         * Rotates a Geometry. P is the center of the rotation. Ang is the angular value of the rotation in radians.
 
@@ -149,7 +149,7 @@ class Geom2d_Geometry(OCC.MMgt.MMgt_TShared):
         """
         return _Geom2d.Geom2d_Geometry_Rotate(self, *args)
 
-    def Scale(self, *args) -> "void" :
+    def Scale(self, *args):
         """
         * Scales a Geometry. S is the scaling value.
 
@@ -162,7 +162,7 @@ class Geom2d_Geometry(OCC.MMgt.MMgt_TShared):
         """
         return _Geom2d.Geom2d_Geometry_Scale(self, *args)
 
-    def Translate(self, *args) -> "void" :
+    def Translate(self, *args):
         """
         * Translates a Geometry. V is the vector of the tanslation.
 
@@ -181,7 +181,7 @@ class Geom2d_Geometry(OCC.MMgt.MMgt_TShared):
         """
         return _Geom2d.Geom2d_Geometry_Translate(self, *args)
 
-    def Transform(self, *args) -> "void" :
+    def Transform(self, *args):
         """
         * Transformation of a geometric object. This tansformation can be a translation, a rotation, a symmetry, a scaling or a complex transformation obtained by combination of the previous elementaries transformations. (see class Transformation of the package Geom2d). The following transformations have the same properties as the previous ones but they don't modified the object itself. A copy of the object is returned.
 
@@ -192,7 +192,7 @@ class Geom2d_Geometry(OCC.MMgt.MMgt_TShared):
         """
         return _Geom2d.Geom2d_Geometry_Transform(self, *args)
 
-    def Mirrored(self, *args) -> "Handle_Geom2d_Geometry" :
+    def Mirrored(self, *args):
         """
         :param P:
         :type P: gp_Pnt2d
@@ -205,7 +205,7 @@ class Geom2d_Geometry(OCC.MMgt.MMgt_TShared):
         """
         return _Geom2d.Geom2d_Geometry_Mirrored(self, *args)
 
-    def Rotated(self, *args) -> "Handle_Geom2d_Geometry" :
+    def Rotated(self, *args):
         """
         :param P:
         :type P: gp_Pnt2d
@@ -216,7 +216,7 @@ class Geom2d_Geometry(OCC.MMgt.MMgt_TShared):
         """
         return _Geom2d.Geom2d_Geometry_Rotated(self, *args)
 
-    def Scaled(self, *args) -> "Handle_Geom2d_Geometry" :
+    def Scaled(self, *args):
         """
         :param P:
         :type P: gp_Pnt2d
@@ -227,7 +227,7 @@ class Geom2d_Geometry(OCC.MMgt.MMgt_TShared):
         """
         return _Geom2d.Geom2d_Geometry_Scaled(self, *args)
 
-    def Transformed(self, *args) -> "Handle_Geom2d_Geometry" :
+    def Transformed(self, *args):
         """
         :param T:
         :type T: gp_Trsf2d
@@ -236,7 +236,7 @@ class Geom2d_Geometry(OCC.MMgt.MMgt_TShared):
         """
         return _Geom2d.Geom2d_Geometry_Transformed(self, *args)
 
-    def Translated(self, *args) -> "Handle_Geom2d_Geometry" :
+    def Translated(self, *args):
         """
         :param V:
         :type V: gp_Vec2d
@@ -251,18 +251,18 @@ class Geom2d_Geometry(OCC.MMgt.MMgt_TShared):
         """
         return _Geom2d.Geom2d_Geometry_Translated(self, *args)
 
-    def Copy(self, *args) -> "Handle_Geom2d_Geometry" :
+    def Copy(self):
         """
         :rtype: Handle_Geom2d_Geometry
 
         """
-        return _Geom2d.Geom2d_Geometry_Copy(self, *args)
+        return _Geom2d.Geom2d_Geometry_Copy(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Geom2d_Geometry self)"""
         return _Geom2d.Geom2d_Geometry__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Geom2d_Geometry" :
+    def GetHandle(self):
         """GetHandle(Geom2d_Geometry self) -> Handle_Geom2d_Geometry"""
         return _Geom2d.Geom2d_Geometry_GetHandle(self)
 
@@ -311,7 +311,7 @@ Handle_Geom2d_Geometry._kill_pointed = new_instancemethod(_Geom2d.Handle_Geom2d_
 Handle_Geom2d_Geometry_swigregister = _Geom2d.Handle_Geom2d_Geometry_swigregister
 Handle_Geom2d_Geometry_swigregister(Handle_Geom2d_Geometry)
 
-def Handle_Geom2d_Geometry_DownCast(*args) -> "Handle_Geom2d_Geometry const" :
+def Handle_Geom2d_Geometry_DownCast(*args):
   return _Geom2d.Handle_Geom2d_Geometry_DownCast(*args)
 Handle_Geom2d_Geometry_DownCast = _Geom2d.Handle_Geom2d_Geometry_DownCast
 
@@ -332,7 +332,7 @@ class Geom2d_Transformation(OCC.MMgt.MMgt_TShared):
 
         """
         _Geom2d.Geom2d_Transformation_swiginit(self,_Geom2d.new_Geom2d_Transformation(*args))
-    def SetMirror(self, *args) -> "void" :
+    def SetMirror(self, *args):
         """
         * Makes the transformation into a symmetrical transformation with respect to a point P. P is the center of the symmetry.
 
@@ -349,7 +349,7 @@ class Geom2d_Transformation(OCC.MMgt.MMgt_TShared):
         """
         return _Geom2d.Geom2d_Transformation_SetMirror(self, *args)
 
-    def SetRotation(self, *args) -> "void" :
+    def SetRotation(self, *args):
         """
         * Assigns to this transformation the geometric properties of a rotation at angle Ang (in radians) about point P.
 
@@ -362,7 +362,7 @@ class Geom2d_Transformation(OCC.MMgt.MMgt_TShared):
         """
         return _Geom2d.Geom2d_Transformation_SetRotation(self, *args)
 
-    def SetScale(self, *args) -> "void" :
+    def SetScale(self, *args):
         """
         * Makes the transformation into a scale. P is the center of the scale and S is the scaling value.
 
@@ -375,7 +375,7 @@ class Geom2d_Transformation(OCC.MMgt.MMgt_TShared):
         """
         return _Geom2d.Geom2d_Transformation_SetScale(self, *args)
 
-    def SetTransformation(self, *args) -> "void" :
+    def SetTransformation(self, *args):
         """
         * Makes a transformation allowing passage from the coordinate system 'FromSystem1' to the coordinate system 'ToSystem2'.
 
@@ -394,7 +394,7 @@ class Geom2d_Transformation(OCC.MMgt.MMgt_TShared):
         """
         return _Geom2d.Geom2d_Transformation_SetTransformation(self, *args)
 
-    def SetTranslation(self, *args) -> "void" :
+    def SetTranslation(self, *args):
         """
         * Makes the transformation into a translation. V is the vector of the translation.
 
@@ -413,7 +413,7 @@ class Geom2d_Transformation(OCC.MMgt.MMgt_TShared):
         """
         return _Geom2d.Geom2d_Transformation_SetTranslation(self, *args)
 
-    def SetTrsf2d(self, *args) -> "void" :
+    def SetTrsf2d(self, *args):
         """
         * Makes the transformation into a transformation T from package gp.
 
@@ -424,74 +424,74 @@ class Geom2d_Transformation(OCC.MMgt.MMgt_TShared):
         """
         return _Geom2d.Geom2d_Transformation_SetTrsf2d(self, *args)
 
-    def IsNegative(self, *args) -> "Standard_Boolean" :
+    def IsNegative(self):
         """
         * Checks whether this transformation is an indirect transformation: returns true if the determinant of the matrix of the vectorial part of the transformation is less than 0.
 
         :rtype: bool
 
         """
-        return _Geom2d.Geom2d_Transformation_IsNegative(self, *args)
+        return _Geom2d.Geom2d_Transformation_IsNegative(self)
 
-    def Form(self, *args) -> "gp_TrsfForm" :
+    def Form(self):
         """
         * Returns the nature of this transformation as a value of the gp_TrsfForm enumeration. Returns the nature of the transformation. It can be Identity, Rotation, Translation, PntMirror, Ax1Mirror, Scale, CompoundTrsf
 
         :rtype: gp_TrsfForm
 
         """
-        return _Geom2d.Geom2d_Transformation_Form(self, *args)
+        return _Geom2d.Geom2d_Transformation_Form(self)
 
-    def ScaleFactor(self, *args) -> "Standard_Real" :
+    def ScaleFactor(self):
         """
         * Returns the scale value of the transformation.
 
         :rtype: float
 
         """
-        return _Geom2d.Geom2d_Transformation_ScaleFactor(self, *args)
+        return _Geom2d.Geom2d_Transformation_ScaleFactor(self)
 
-    def Trsf2d(self, *args) -> "gp_Trsf2d" :
+    def Trsf2d(self):
         """
         * Converts this transformation into a gp_Trsf2d transformation. Returns a non persistent copy of <self>. -C++: return const&
 
         :rtype: gp_Trsf2d
 
         """
-        return _Geom2d.Geom2d_Transformation_Trsf2d(self, *args)
+        return _Geom2d.Geom2d_Transformation_Trsf2d(self)
 
-    def Value(self, *args) -> "Standard_Real" :
+    def Value(self, *args):
         """
         * Returns the coefficients of the global matrix of tranformation. It is a 2 rows X 3 columns matrix. Raised if Row < 1 or Row > 2 or Col < 1 or Col > 2 Computes the reverse transformation.
 
         :param Row:
-        :type Row: int
+        :type Row: Standard_Integer
         :param Col:
-        :type Col: int
+        :type Col: Standard_Integer
         :rtype: float
 
         """
         return _Geom2d.Geom2d_Transformation_Value(self, *args)
 
-    def Invert(self, *args) -> "void" :
+    def Invert(self):
         """
         * Computes the inverse of this transformation. and assigns the result to this transformatio Raised if the the transformation is singular. This means that the ScaleFactor is lower or equal to Resolution from package gp.
 
         :rtype: None
 
         """
-        return _Geom2d.Geom2d_Transformation_Invert(self, *args)
+        return _Geom2d.Geom2d_Transformation_Invert(self)
 
-    def Inverted(self, *args) -> "Handle_Geom2d_Transformation" :
+    def Inverted(self):
         """
         * Computes the inverse of this transformation and creates a new one. Raises ConstructionError if the the transformation is singular. This means that the ScaleFactor is lower or equal to Resolution from package gp.
 
         :rtype: Handle_Geom2d_Transformation
 
         """
-        return _Geom2d.Geom2d_Transformation_Inverted(self, *args)
+        return _Geom2d.Geom2d_Transformation_Inverted(self)
 
-    def Multiplied(self, *args) -> "Handle_Geom2d_Transformation" :
+    def Multiplied(self, *args):
         """
         * Computes the transformation composed with Other and <self>. <self> * Other. Returns a new transformation
 
@@ -502,7 +502,7 @@ class Geom2d_Transformation(OCC.MMgt.MMgt_TShared):
         """
         return _Geom2d.Geom2d_Transformation_Multiplied(self, *args)
 
-    def __mul__(self, *args) -> "Handle_Geom2d_Transformation" :
+    def __mul__(self, *args):
         """
         :param Other:
         :type Other: Handle_Geom2d_Transformation &
@@ -511,7 +511,7 @@ class Geom2d_Transformation(OCC.MMgt.MMgt_TShared):
         """
         return _Geom2d.Geom2d_Transformation___mul__(self, *args)
 
-    def Multiply(self, *args) -> "void" :
+    def Multiply(self, *args):
         """
         * Computes the transformation composed with Other and <self> . <self> = <self> * Other. Computes the following composition of transformations if N > 0 <self> * <self> * .......* <self>. if N = 0 Identity if N < 0 <self>.Invert() * .........* <self>.Invert()
 
@@ -522,7 +522,7 @@ class Geom2d_Transformation(OCC.MMgt.MMgt_TShared):
         """
         return _Geom2d.Geom2d_Transformation_Multiply(self, *args)
 
-    def __imul__(self, *args) -> "void" :
+    def __imul__(self, *args):
         """
         :param Other:
         :type Other: Handle_Geom2d_Transformation &
@@ -531,29 +531,29 @@ class Geom2d_Transformation(OCC.MMgt.MMgt_TShared):
         """
         return _Geom2d.Geom2d_Transformation___imul__(self, *args)
 
-    def Power(self, *args) -> "void" :
+    def Power(self, *args):
         """
         * Raised if N < 0 and if the transformation is not inversible
 
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :rtype: None
 
         """
         return _Geom2d.Geom2d_Transformation_Power(self, *args)
 
-    def Powered(self, *args) -> "Handle_Geom2d_Transformation" :
+    def Powered(self, *args):
         """
         * Raised if N < 0 and if the transformation is not inversible
 
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :rtype: Handle_Geom2d_Transformation
 
         """
         return _Geom2d.Geom2d_Transformation_Powered(self, *args)
 
-    def PreMultiply(self, *args) -> "void" :
+    def PreMultiply(self, *args):
         """
         * Computes the matrix of the transformation composed with <self> and Other. <self> = Other * <self>
 
@@ -564,7 +564,7 @@ class Geom2d_Transformation(OCC.MMgt.MMgt_TShared):
         """
         return _Geom2d.Geom2d_Transformation_PreMultiply(self, *args)
 
-    def Transforms(self, *args) -> "void" :
+    def Transforms(self):
         """
         * Applies the transformation <self> to the triplet {X, Y}.
 
@@ -575,22 +575,22 @@ class Geom2d_Transformation(OCC.MMgt.MMgt_TShared):
         :rtype: None
 
         """
-        return _Geom2d.Geom2d_Transformation_Transforms(self, *args)
+        return _Geom2d.Geom2d_Transformation_Transforms(self)
 
-    def Copy(self, *args) -> "Handle_Geom2d_Transformation" :
+    def Copy(self):
         """
         * Creates a new object, which is a copy of this transformation.
 
         :rtype: Handle_Geom2d_Transformation
 
         """
-        return _Geom2d.Geom2d_Transformation_Copy(self, *args)
+        return _Geom2d.Geom2d_Transformation_Copy(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Geom2d_Transformation self)"""
         return _Geom2d.Geom2d_Transformation__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Geom2d_Transformation" :
+    def GetHandle(self):
         """GetHandle(Geom2d_Transformation self) -> Handle_Geom2d_Transformation"""
         return _Geom2d.Geom2d_Transformation_GetHandle(self)
 
@@ -650,7 +650,7 @@ Handle_Geom2d_Transformation._kill_pointed = new_instancemethod(_Geom2d.Handle_G
 Handle_Geom2d_Transformation_swigregister = _Geom2d.Handle_Geom2d_Transformation_swigregister
 Handle_Geom2d_Transformation_swigregister(Handle_Geom2d_Transformation)
 
-def Handle_Geom2d_Transformation_DownCast(*args) -> "Handle_Geom2d_Transformation const" :
+def Handle_Geom2d_Transformation_DownCast(*args):
   return _Geom2d.Handle_Geom2d_Transformation_DownCast(*args)
 Handle_Geom2d_Transformation_DownCast = _Geom2d.Handle_Geom2d_Transformation_DownCast
 
@@ -675,23 +675,23 @@ class Geom2d_AxisPlacement(Geom2d_Geometry):
 
         """
         _Geom2d.Geom2d_AxisPlacement_swiginit(self,_Geom2d.new_Geom2d_AxisPlacement(*args))
-    def Reverse(self, *args) -> "void" :
+    def Reverse(self):
         """
         :rtype: None
 
         """
-        return _Geom2d.Geom2d_AxisPlacement_Reverse(self, *args)
+        return _Geom2d.Geom2d_AxisPlacement_Reverse(self)
 
-    def Reversed(self, *args) -> "Handle_Geom2d_AxisPlacement" :
+    def Reversed(self):
         """
         * Reverses the unit vector of this axis. Note: - Reverse assigns the result to this axis, while - Reversed creates a new one.
 
         :rtype: Handle_Geom2d_AxisPlacement
 
         """
-        return _Geom2d.Geom2d_AxisPlacement_Reversed(self, *args)
+        return _Geom2d.Geom2d_AxisPlacement_Reversed(self)
 
-    def SetAxis(self, *args) -> "void" :
+    def SetAxis(self, *args):
         """
         * Changes the complete definition of the axis placement.
 
@@ -702,7 +702,7 @@ class Geom2d_AxisPlacement(Geom2d_Geometry):
         """
         return _Geom2d.Geom2d_AxisPlacement_SetAxis(self, *args)
 
-    def SetDirection(self, *args) -> "void" :
+    def SetDirection(self, *args):
         """
         * Changes the 'Direction' of the axis placement.
 
@@ -713,7 +713,7 @@ class Geom2d_AxisPlacement(Geom2d_Geometry):
         """
         return _Geom2d.Geom2d_AxisPlacement_SetDirection(self, *args)
 
-    def SetLocation(self, *args) -> "void" :
+    def SetLocation(self, *args):
         """
         * Changes the 'Location' point (origin) of the axis placement.
 
@@ -724,7 +724,7 @@ class Geom2d_AxisPlacement(Geom2d_Geometry):
         """
         return _Geom2d.Geom2d_AxisPlacement_SetLocation(self, *args)
 
-    def Angle(self, *args) -> "Standard_Real" :
+    def Angle(self, *args):
         """
         * Computes the angle between the 'Direction' of two axis placement in radians. The result is comprised between -Pi and Pi.
 
@@ -735,38 +735,38 @@ class Geom2d_AxisPlacement(Geom2d_Geometry):
         """
         return _Geom2d.Geom2d_AxisPlacement_Angle(self, *args)
 
-    def Ax2d(self, *args) -> "gp_Ax2d" :
+    def Ax2d(self):
         """
         * Converts this axis into a gp_Ax2d axis.
 
         :rtype: gp_Ax2d
 
         """
-        return _Geom2d.Geom2d_AxisPlacement_Ax2d(self, *args)
+        return _Geom2d.Geom2d_AxisPlacement_Ax2d(self)
 
-    def Direction(self, *args) -> "gp_Dir2d" :
+    def Direction(self):
         """
         * Returns the 'Direction' of <self>. -C++: return const&
 
         :rtype: gp_Dir2d
 
         """
-        return _Geom2d.Geom2d_AxisPlacement_Direction(self, *args)
+        return _Geom2d.Geom2d_AxisPlacement_Direction(self)
 
-    def Location(self, *args) -> "gp_Pnt2d" :
+    def Location(self):
         """
         * Returns the 'Location' point (origin) of the axis placement. -C++: return const&
 
         :rtype: gp_Pnt2d
 
         """
-        return _Geom2d.Geom2d_AxisPlacement_Location(self, *args)
+        return _Geom2d.Geom2d_AxisPlacement_Location(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Geom2d_AxisPlacement self)"""
         return _Geom2d.Geom2d_AxisPlacement__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Geom2d_AxisPlacement" :
+    def GetHandle(self):
         """GetHandle(Geom2d_AxisPlacement self) -> Handle_Geom2d_AxisPlacement"""
         return _Geom2d.Geom2d_AxisPlacement_GetHandle(self)
 
@@ -813,7 +813,7 @@ Handle_Geom2d_AxisPlacement._kill_pointed = new_instancemethod(_Geom2d.Handle_Ge
 Handle_Geom2d_AxisPlacement_swigregister = _Geom2d.Handle_Geom2d_AxisPlacement_swigregister
 Handle_Geom2d_AxisPlacement_swigregister(Handle_Geom2d_AxisPlacement)
 
-def Handle_Geom2d_AxisPlacement_DownCast(*args) -> "Handle_Geom2d_AxisPlacement const" :
+def Handle_Geom2d_AxisPlacement_DownCast(*args):
   return _Geom2d.Handle_Geom2d_AxisPlacement_DownCast(*args)
 Handle_Geom2d_AxisPlacement_DownCast = _Geom2d.Handle_Geom2d_AxisPlacement_DownCast
 
@@ -821,16 +821,16 @@ class Geom2d_Curve(Geom2d_Geometry):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def Reverse(self, *args) -> "void" :
+    def Reverse(self):
         """
         * Changes the direction of parametrization of <self>. The 'FirstParameter' and the 'LastParameter' are not changed but the orientation of the curve is modified. If the curve is bounded the StartPoint of the initial curve becomes the EndPoint of the reversed curve and the EndPoint of the initial curve becomes the StartPoint of the reversed curve.
 
         :rtype: void
 
         """
-        return _Geom2d.Geom2d_Curve_Reverse(self, *args)
+        return _Geom2d.Geom2d_Curve_Reverse(self)
 
-    def ReversedParameter(self, *args) -> "Standard_Real" :
+    def ReversedParameter(self, *args):
         """
         * Computes the parameter on the reversed curve for the point of parameter U on this curve. Note: The point of parameter U on this curve is identical to the point of parameter ReversedParameter(U) on the reversed curve.
 
@@ -841,7 +841,7 @@ class Geom2d_Curve(Geom2d_Geometry):
         """
         return _Geom2d.Geom2d_Curve_ReversedParameter(self, *args)
 
-    def TransformedParameter(self, *args) -> "Standard_Real" :
+    def TransformedParameter(self, *args):
         """
         * Computes the parameter on the curve transformed by T for the point of parameter U on this curve. Note: this function generally returns U but it can be redefined (for example, on a line).
 
@@ -854,7 +854,7 @@ class Geom2d_Curve(Geom2d_Geometry):
         """
         return _Geom2d.Geom2d_Curve_TransformedParameter(self, *args)
 
-    def ParametricTransformation(self, *args) -> "Standard_Real" :
+    def ParametricTransformation(self, *args):
         """
         * Returns the coefficient required to compute the parametric transformation of this curve when transformation T is applied. This coefficient is the ratio between the parameter of a point on this curve and the parameter of the transformed point on the new curve transformed by T. Note: this function generally returns 1. but it can be redefined (for example, on a line).
 
@@ -865,81 +865,81 @@ class Geom2d_Curve(Geom2d_Geometry):
         """
         return _Geom2d.Geom2d_Curve_ParametricTransformation(self, *args)
 
-    def Reversed(self, *args) -> "Handle_Geom2d_Curve" :
+    def Reversed(self):
         """
         * Creates a reversed duplicate Changes the orientation of this curve. The first and last parameters are not changed, but the parametric direction of the curve is reversed. If the curve is bounded: - the start point of the initial curve becomes the end point of the reversed curve, and - the end point of the initial curve becomes the start point of the reversed curve. - Reversed creates a new curve.
 
         :rtype: Handle_Geom2d_Curve
 
         """
-        return _Geom2d.Geom2d_Curve_Reversed(self, *args)
+        return _Geom2d.Geom2d_Curve_Reversed(self)
 
-    def FirstParameter(self, *args) -> "Standard_Real" :
+    def FirstParameter(self):
         """
         * Returns the value of the first parameter. Warnings : It can be RealFirst or RealLast from package Standard if the curve is infinite
 
         :rtype: float
 
         """
-        return _Geom2d.Geom2d_Curve_FirstParameter(self, *args)
+        return _Geom2d.Geom2d_Curve_FirstParameter(self)
 
-    def LastParameter(self, *args) -> "Standard_Real" :
+    def LastParameter(self):
         """
         * Value of the last parameter. Warnings : It can be RealFirst or RealLast from package Standard if the curve is infinite
 
         :rtype: float
 
         """
-        return _Geom2d.Geom2d_Curve_LastParameter(self, *args)
+        return _Geom2d.Geom2d_Curve_LastParameter(self)
 
-    def IsClosed(self, *args) -> "Standard_Boolean" :
+    def IsClosed(self):
         """
         * Returns true if the curve is closed. Examples : Some curves such as circle are always closed, others such as line are never closed (by definition). Some Curves such as OffsetCurve can be closed or not. These curves are considered as closed if the distance between the first point and the last point of the curve is lower or equal to the Resolution from package gp wich is a fixed criterion independant of the application.
 
         :rtype: bool
 
         """
-        return _Geom2d.Geom2d_Curve_IsClosed(self, *args)
+        return _Geom2d.Geom2d_Curve_IsClosed(self)
 
-    def IsPeriodic(self, *args) -> "Standard_Boolean" :
+    def IsPeriodic(self):
         """
         * Returns true if the parameter of the curve is periodic. It is possible only if the curve is closed and if the following relation is satisfied : for each parametric value U the distance between the point P(u) and the point P (u + T) is lower or equal to Resolution from package gp, T is the period and must be a constant. There are three possibilities : . the curve is never periodic by definition (SegmentLine) . the curve is always periodic by definition (Circle) . the curve can be defined as periodic (BSpline). In this case a function SetPeriodic allows you to give the shape of the curve. The general rule for this case is : if a curve can be periodic or not the default periodicity set is non periodic and you have to turn (explicitly) the curve into a periodic curve if you want the curve to be periodic.
 
         :rtype: bool
 
         """
-        return _Geom2d.Geom2d_Curve_IsPeriodic(self, *args)
+        return _Geom2d.Geom2d_Curve_IsPeriodic(self)
 
-    def Period(self, *args) -> "Standard_Real" :
+    def Period(self):
         """
         * Returns thne period of this curve. raises if the curve is not periodic
 
         :rtype: float
 
         """
-        return _Geom2d.Geom2d_Curve_Period(self, *args)
+        return _Geom2d.Geom2d_Curve_Period(self)
 
-    def Continuity(self, *args) -> "GeomAbs_Shape" :
+    def Continuity(self):
         """
         * It is the global continuity of the curve : C0 : only geometric continuity, C1 : continuity of the first derivative all along the Curve, C2 : continuity of the second derivative all along the Curve, C3 : continuity of the third derivative all along the Curve, G1 : tangency continuity all along the Curve, G2 : curvature continuity all along the Curve, CN : the order of continuity is infinite.
 
         :rtype: GeomAbs_Shape
 
         """
-        return _Geom2d.Geom2d_Curve_Continuity(self, *args)
+        return _Geom2d.Geom2d_Curve_Continuity(self)
 
-    def IsCN(self, *args) -> "Standard_Boolean" :
+    def IsCN(self, *args):
         """
         * Returns true if the degree of continuity of this curve is at least N. Exceptions Standard_RangeError if N is less than 0.
 
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :rtype: bool
 
         """
         return _Geom2d.Geom2d_Curve_IsCN(self, *args)
 
-    def D0(self, *args) -> "void" :
+    def D0(self, *args):
         """
         * Returns in P the point of parameter U. If the curve is periodic then the returned point is P(U) with U = Ustart + (U - Uend) where Ustart and Uend are the parametric bounds of the curve. Raised only for the 'OffsetCurve' if it is not possible to compute the current point. For example when the first derivative on the basis curve and the offset direction are parallel.
 
@@ -952,7 +952,7 @@ class Geom2d_Curve(Geom2d_Geometry):
         """
         return _Geom2d.Geom2d_Curve_D0(self, *args)
 
-    def D1(self, *args) -> "void" :
+    def D1(self, *args):
         """
         * Returns the point P of parameter U and the first derivative V1. Raised if the continuity of the curve is not C1.
 
@@ -967,7 +967,7 @@ class Geom2d_Curve(Geom2d_Geometry):
         """
         return _Geom2d.Geom2d_Curve_D1(self, *args)
 
-    def D2(self, *args) -> "void" :
+    def D2(self, *args):
         """
         * Returns the point P of parameter U, the first and second derivatives V1 and V2. Raised if the continuity of the curve is not C2.
 
@@ -984,7 +984,7 @@ class Geom2d_Curve(Geom2d_Geometry):
         """
         return _Geom2d.Geom2d_Curve_D2(self, *args)
 
-    def D3(self, *args) -> "void" :
+    def D3(self, *args):
         """
         * Returns the point P of parameter U, the first, the second and the third derivative. Raised if the continuity of the curve is not C3.
 
@@ -1003,20 +1003,20 @@ class Geom2d_Curve(Geom2d_Geometry):
         """
         return _Geom2d.Geom2d_Curve_D3(self, *args)
 
-    def DN(self, *args) -> "gp_Vec2d" :
+    def DN(self, *args):
         """
         * For the point of parameter U of this curve, computes the vector corresponding to the Nth derivative. Exceptions StdFail_UndefinedDerivative if: - the continuity of the curve is not 'CN', or - the derivative vector cannot be computed easily; this is the case with specific types of curve (for example, a rational BSpline curve where N is greater than 3). Standard_RangeError if N is less than 1.
 
         :param U:
         :type U: float
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :rtype: gp_Vec2d
 
         """
         return _Geom2d.Geom2d_Curve_DN(self, *args)
 
-    def Value(self, *args) -> "gp_Pnt2d" :
+    def Value(self, *args):
         """
         * Computes the point of parameter U on <self>. If the curve is periodic then the returned point is P(U) with U = Ustart + (U - Uend) where Ustart and Uend are the parametric bounds of the curve. it is implemented with D0. Raised only for the 'OffsetCurve' if it is not possible to compute the current point. For example when the first derivative on the basis curve and the offset direction are parallel.
 
@@ -1027,11 +1027,11 @@ class Geom2d_Curve(Geom2d_Geometry):
         """
         return _Geom2d.Geom2d_Curve_Value(self, *args)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Geom2d_Curve self)"""
         return _Geom2d.Geom2d_Curve__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Geom2d_Curve" :
+    def GetHandle(self):
         """GetHandle(Geom2d_Curve self) -> Handle_Geom2d_Curve"""
         return _Geom2d.Geom2d_Curve_GetHandle(self)
 
@@ -1087,7 +1087,7 @@ Handle_Geom2d_Curve._kill_pointed = new_instancemethod(_Geom2d.Handle_Geom2d_Cur
 Handle_Geom2d_Curve_swigregister = _Geom2d.Handle_Geom2d_Curve_swigregister
 Handle_Geom2d_Curve_swigregister(Handle_Geom2d_Curve)
 
-def Handle_Geom2d_Curve_DownCast(*args) -> "Handle_Geom2d_Curve const" :
+def Handle_Geom2d_Curve_DownCast(*args):
   return _Geom2d.Handle_Geom2d_Curve_DownCast(*args)
 Handle_Geom2d_Curve_DownCast = _Geom2d.Handle_Geom2d_Curve_DownCast
 
@@ -1095,7 +1095,7 @@ class Geom2d_Point(Geom2d_Geometry):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def Coord(self, *args) -> "void" :
+    def Coord(self):
         """
         * returns the Coordinates of <self>.
 
@@ -1106,36 +1106,36 @@ class Geom2d_Point(Geom2d_Geometry):
         :rtype: void
 
         """
-        return _Geom2d.Geom2d_Point_Coord(self, *args)
+        return _Geom2d.Geom2d_Point_Coord(self)
 
-    def Pnt2d(self, *args) -> "gp_Pnt2d" :
+    def Pnt2d(self):
         """
         * returns a non persistent copy of <self>
 
         :rtype: gp_Pnt2d
 
         """
-        return _Geom2d.Geom2d_Point_Pnt2d(self, *args)
+        return _Geom2d.Geom2d_Point_Pnt2d(self)
 
-    def X(self, *args) -> "Standard_Real" :
+    def X(self):
         """
         * returns the X coordinate of <self>.
 
         :rtype: float
 
         """
-        return _Geom2d.Geom2d_Point_X(self, *args)
+        return _Geom2d.Geom2d_Point_X(self)
 
-    def Y(self, *args) -> "Standard_Real" :
+    def Y(self):
         """
         * returns the Y coordinate of <self>.
 
         :rtype: float
 
         """
-        return _Geom2d.Geom2d_Point_Y(self, *args)
+        return _Geom2d.Geom2d_Point_Y(self)
 
-    def Distance(self, *args) -> "Standard_Real" :
+    def Distance(self, *args):
         """
         * computes the distance between <self> and <Other>.
 
@@ -1146,7 +1146,7 @@ class Geom2d_Point(Geom2d_Geometry):
         """
         return _Geom2d.Geom2d_Point_Distance(self, *args)
 
-    def SquareDistance(self, *args) -> "Standard_Real" :
+    def SquareDistance(self, *args):
         """
         * computes the square distance between <self> and <Other>.
 
@@ -1157,11 +1157,11 @@ class Geom2d_Point(Geom2d_Geometry):
         """
         return _Geom2d.Geom2d_Point_SquareDistance(self, *args)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Geom2d_Point self)"""
         return _Geom2d.Geom2d_Point__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Geom2d_Point" :
+    def GetHandle(self):
         """GetHandle(Geom2d_Point self) -> Handle_Geom2d_Point"""
         return _Geom2d.Geom2d_Point_GetHandle(self)
 
@@ -1205,7 +1205,7 @@ Handle_Geom2d_Point._kill_pointed = new_instancemethod(_Geom2d.Handle_Geom2d_Poi
 Handle_Geom2d_Point_swigregister = _Geom2d.Handle_Geom2d_Point_swigregister
 Handle_Geom2d_Point_swigregister(Handle_Geom2d_Point)
 
-def Handle_Geom2d_Point_DownCast(*args) -> "Handle_Geom2d_Point const" :
+def Handle_Geom2d_Point_DownCast(*args):
   return _Geom2d.Handle_Geom2d_Point_DownCast(*args)
 Handle_Geom2d_Point_DownCast = _Geom2d.Handle_Geom2d_Point_DownCast
 
@@ -1213,25 +1213,25 @@ class Geom2d_Vector(Geom2d_Geometry):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def Reverse(self, *args) -> "void" :
+    def Reverse(self):
         """
         * Reverses the vector <self>.
 
         :rtype: None
 
         """
-        return _Geom2d.Geom2d_Vector_Reverse(self, *args)
+        return _Geom2d.Geom2d_Vector_Reverse(self)
 
-    def Reversed(self, *args) -> "Handle_Geom2d_Vector" :
+    def Reversed(self):
         """
         * Returns a copy of <self> reversed.
 
         :rtype: Handle_Geom2d_Vector
 
         """
-        return _Geom2d.Geom2d_Vector_Reversed(self, *args)
+        return _Geom2d.Geom2d_Vector_Reversed(self)
 
-    def Angle(self, *args) -> "Standard_Real" :
+    def Angle(self, *args):
         """
         * Computes the angular value, in radians, between this vector and vector Other. The result is a value between -Pi and Pi. The orientation is from this vector to vector Other. Raises VectorWithNullMagnitude if one of the two vectors is a vector with null magnitude because the angular value is indefinite.
 
@@ -1242,7 +1242,7 @@ class Geom2d_Vector(Geom2d_Geometry):
         """
         return _Geom2d.Geom2d_Vector_Angle(self, *args)
 
-    def Coord(self, *args) -> "void" :
+    def Coord(self):
         """
         * Returns the coordinates of <self>.
 
@@ -1253,45 +1253,45 @@ class Geom2d_Vector(Geom2d_Geometry):
         :rtype: None
 
         """
-        return _Geom2d.Geom2d_Vector_Coord(self, *args)
+        return _Geom2d.Geom2d_Vector_Coord(self)
 
-    def Magnitude(self, *args) -> "Standard_Real" :
+    def Magnitude(self):
         """
         * Returns the Magnitude of <self>.
 
         :rtype: float
 
         """
-        return _Geom2d.Geom2d_Vector_Magnitude(self, *args)
+        return _Geom2d.Geom2d_Vector_Magnitude(self)
 
-    def SquareMagnitude(self, *args) -> "Standard_Real" :
+    def SquareMagnitude(self):
         """
         * Returns the square magnitude of <self>.
 
         :rtype: float
 
         """
-        return _Geom2d.Geom2d_Vector_SquareMagnitude(self, *args)
+        return _Geom2d.Geom2d_Vector_SquareMagnitude(self)
 
-    def X(self, *args) -> "Standard_Real" :
+    def X(self):
         """
         * Returns the X coordinate of <self>.
 
         :rtype: float
 
         """
-        return _Geom2d.Geom2d_Vector_X(self, *args)
+        return _Geom2d.Geom2d_Vector_X(self)
 
-    def Y(self, *args) -> "Standard_Real" :
+    def Y(self):
         """
         * Returns the Y coordinate of <self>.
 
         :rtype: float
 
         """
-        return _Geom2d.Geom2d_Vector_Y(self, *args)
+        return _Geom2d.Geom2d_Vector_Y(self)
 
-    def Crossed(self, *args) -> "Standard_Real" :
+    def Crossed(self, *args):
         """
         * Cross product of <self> with the vector <Other>.
 
@@ -1302,7 +1302,7 @@ class Geom2d_Vector(Geom2d_Geometry):
         """
         return _Geom2d.Geom2d_Vector_Crossed(self, *args)
 
-    def Dot(self, *args) -> "Standard_Real" :
+    def Dot(self, *args):
         """
         * Returns the scalar product of 2 Vectors.
 
@@ -1313,20 +1313,20 @@ class Geom2d_Vector(Geom2d_Geometry):
         """
         return _Geom2d.Geom2d_Vector_Dot(self, *args)
 
-    def Vec2d(self, *args) -> "gp_Vec2d" :
+    def Vec2d(self):
         """
         * Returns a non persistent copy of <self>.
 
         :rtype: gp_Vec2d
 
         """
-        return _Geom2d.Geom2d_Vector_Vec2d(self, *args)
+        return _Geom2d.Geom2d_Vector_Vec2d(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Geom2d_Vector self)"""
         return _Geom2d.Geom2d_Vector__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Geom2d_Vector" :
+    def GetHandle(self):
         """GetHandle(Geom2d_Vector self) -> Handle_Geom2d_Vector"""
         return _Geom2d.Geom2d_Vector_GetHandle(self)
 
@@ -1375,7 +1375,7 @@ Handle_Geom2d_Vector._kill_pointed = new_instancemethod(_Geom2d.Handle_Geom2d_Ve
 Handle_Geom2d_Vector_swigregister = _Geom2d.Handle_Geom2d_Vector_swigregister
 Handle_Geom2d_Vector_swigregister(Handle_Geom2d_Vector)
 
-def Handle_Geom2d_Vector_DownCast(*args) -> "Handle_Geom2d_Vector const" :
+def Handle_Geom2d_Vector_DownCast(*args):
   return _Geom2d.Handle_Geom2d_Vector_DownCast(*args)
 Handle_Geom2d_Vector_DownCast = _Geom2d.Handle_Geom2d_Vector_DownCast
 
@@ -1383,29 +1383,29 @@ class Geom2d_BoundedCurve(Geom2d_Curve):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def EndPoint(self, *args) -> "gp_Pnt2d" :
+    def EndPoint(self):
         """
         * Returns the end point of the curve. The end point is the value of the curve for the 'LastParameter' of the curve.
 
         :rtype: gp_Pnt2d
 
         """
-        return _Geom2d.Geom2d_BoundedCurve_EndPoint(self, *args)
+        return _Geom2d.Geom2d_BoundedCurve_EndPoint(self)
 
-    def StartPoint(self, *args) -> "gp_Pnt2d" :
+    def StartPoint(self):
         """
         * Returns the start point of the curve. The start point is the value of the curve for the 'FirstParameter' of the curve.
 
         :rtype: gp_Pnt2d
 
         """
-        return _Geom2d.Geom2d_BoundedCurve_StartPoint(self, *args)
+        return _Geom2d.Geom2d_BoundedCurve_StartPoint(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Geom2d_BoundedCurve self)"""
         return _Geom2d.Geom2d_BoundedCurve__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Geom2d_BoundedCurve" :
+    def GetHandle(self):
         """GetHandle(Geom2d_BoundedCurve self) -> Handle_Geom2d_BoundedCurve"""
         return _Geom2d.Geom2d_BoundedCurve_GetHandle(self)
 
@@ -1445,7 +1445,7 @@ Handle_Geom2d_BoundedCurve._kill_pointed = new_instancemethod(_Geom2d.Handle_Geo
 Handle_Geom2d_BoundedCurve_swigregister = _Geom2d.Handle_Geom2d_BoundedCurve_swigregister
 Handle_Geom2d_BoundedCurve_swigregister(Handle_Geom2d_BoundedCurve)
 
-def Handle_Geom2d_BoundedCurve_DownCast(*args) -> "Handle_Geom2d_BoundedCurve const" :
+def Handle_Geom2d_BoundedCurve_DownCast(*args):
   return _Geom2d.Handle_Geom2d_BoundedCurve_DownCast(*args)
 Handle_Geom2d_BoundedCurve_DownCast = _Geom2d.Handle_Geom2d_BoundedCurve_DownCast
 
@@ -1468,7 +1468,7 @@ class Geom2d_CartesianPoint(Geom2d_Point):
 
         """
         _Geom2d.Geom2d_CartesianPoint_swiginit(self,_Geom2d.new_Geom2d_CartesianPoint(*args))
-    def SetCoord(self, *args) -> "void" :
+    def SetCoord(self, *args):
         """
         * Set <self> to X, Y coordinates.
 
@@ -1481,7 +1481,7 @@ class Geom2d_CartesianPoint(Geom2d_Point):
         """
         return _Geom2d.Geom2d_CartesianPoint_SetCoord(self, *args)
 
-    def SetPnt2d(self, *args) -> "void" :
+    def SetPnt2d(self, *args):
         """
         * Set <self> to P.X(), P.Y() coordinates.
 
@@ -1492,7 +1492,7 @@ class Geom2d_CartesianPoint(Geom2d_Point):
         """
         return _Geom2d.Geom2d_CartesianPoint_SetPnt2d(self, *args)
 
-    def SetX(self, *args) -> "void" :
+    def SetX(self, *args):
         """
         * Changes the X coordinate of me.
 
@@ -1503,7 +1503,7 @@ class Geom2d_CartesianPoint(Geom2d_Point):
         """
         return _Geom2d.Geom2d_CartesianPoint_SetX(self, *args)
 
-    def SetY(self, *args) -> "void" :
+    def SetY(self, *args):
         """
         * Changes the Y coordinate of me.
 
@@ -1514,11 +1514,11 @@ class Geom2d_CartesianPoint(Geom2d_Point):
         """
         return _Geom2d.Geom2d_CartesianPoint_SetY(self, *args)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Geom2d_CartesianPoint self)"""
         return _Geom2d.Geom2d_CartesianPoint__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Geom2d_CartesianPoint" :
+    def GetHandle(self):
         """GetHandle(Geom2d_CartesianPoint self) -> Handle_Geom2d_CartesianPoint"""
         return _Geom2d.Geom2d_CartesianPoint_GetHandle(self)
 
@@ -1560,7 +1560,7 @@ Handle_Geom2d_CartesianPoint._kill_pointed = new_instancemethod(_Geom2d.Handle_G
 Handle_Geom2d_CartesianPoint_swigregister = _Geom2d.Handle_Geom2d_CartesianPoint_swigregister
 Handle_Geom2d_CartesianPoint_swigregister(Handle_Geom2d_CartesianPoint)
 
-def Handle_Geom2d_CartesianPoint_DownCast(*args) -> "Handle_Geom2d_CartesianPoint const" :
+def Handle_Geom2d_CartesianPoint_DownCast(*args):
   return _Geom2d.Handle_Geom2d_CartesianPoint_DownCast(*args)
 Handle_Geom2d_CartesianPoint_DownCast = _Geom2d.Handle_Geom2d_CartesianPoint_DownCast
 
@@ -1568,7 +1568,7 @@ class Geom2d_Conic(Geom2d_Curve):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def SetAxis(self, *args) -> "void" :
+    def SetAxis(self, *args):
         """
         * Modifies this conic, redefining its local coordinate system partially, by assigning P as its origin
 
@@ -1579,7 +1579,7 @@ class Geom2d_Conic(Geom2d_Curve):
         """
         return _Geom2d.Geom2d_Conic_SetAxis(self, *args)
 
-    def SetXAxis(self, *args) -> "void" :
+    def SetXAxis(self, *args):
         """
         :param A:
         :type A: gp_Ax2d
@@ -1588,7 +1588,7 @@ class Geom2d_Conic(Geom2d_Curve):
         """
         return _Geom2d.Geom2d_Conic_SetXAxis(self, *args)
 
-    def SetYAxis(self, *args) -> "void" :
+    def SetYAxis(self, *args):
         """
         * Assigns the origin and unit vector of axis A to the origin of the local coordinate system of this conic and either: - its 'X Direction', or - its 'Y Direction'. The other unit vector of the local coordinate system of this conic is recomputed normal to A, without changing the orientation of the local coordinate system (right-handed or left-handed).
 
@@ -1599,7 +1599,7 @@ class Geom2d_Conic(Geom2d_Curve):
         """
         return _Geom2d.Geom2d_Conic_SetYAxis(self, *args)
 
-    def SetLocation(self, *args) -> "void" :
+    def SetLocation(self, *args):
         """
         * Modifies this conic, redefining its local coordinate system fully, by assigning A as this coordinate system.
 
@@ -1610,56 +1610,56 @@ class Geom2d_Conic(Geom2d_Curve):
         """
         return _Geom2d.Geom2d_Conic_SetLocation(self, *args)
 
-    def XAxis(self, *args) -> "gp_Ax2d" :
+    def XAxis(self):
         """
         * Returns the 'XAxis' of the conic. This axis defines the origin of parametrization of the conic. This axis and the 'Yaxis' define the local coordinate system of the conic. -C++: return const&
 
         :rtype: gp_Ax2d
 
         """
-        return _Geom2d.Geom2d_Conic_XAxis(self, *args)
+        return _Geom2d.Geom2d_Conic_XAxis(self)
 
-    def YAxis(self, *args) -> "gp_Ax2d" :
+    def YAxis(self):
         """
         * Returns the 'YAxis' of the conic. The 'YAxis' is perpendicular to the 'Xaxis'.
 
         :rtype: gp_Ax2d
 
         """
-        return _Geom2d.Geom2d_Conic_YAxis(self, *args)
+        return _Geom2d.Geom2d_Conic_YAxis(self)
 
-    def Eccentricity(self, *args) -> "Standard_Real" :
+    def Eccentricity(self):
         """
         * returns the eccentricity value of the conic e. e = 0 for a circle 0 < e < 1 for an ellipse (e = 0 if MajorRadius = MinorRadius) e > 1 for a hyperbola e = 1 for a parabola
 
         :rtype: float
 
         """
-        return _Geom2d.Geom2d_Conic_Eccentricity(self, *args)
+        return _Geom2d.Geom2d_Conic_Eccentricity(self)
 
-    def Location(self, *args) -> "gp_Pnt2d" :
+    def Location(self):
         """
         * Returns the location point of the conic. For the circle, the ellipse and the hyperbola it is the center of the conic. For the parabola it is the vertex of the parabola.
 
         :rtype: gp_Pnt2d
 
         """
-        return _Geom2d.Geom2d_Conic_Location(self, *args)
+        return _Geom2d.Geom2d_Conic_Location(self)
 
-    def Position(self, *args) -> "gp_Ax22d const" :
+    def Position(self):
         """
         * Returns the local coordinates system of the conic.
 
         :rtype: gp_Ax22d
 
         """
-        return _Geom2d.Geom2d_Conic_Position(self, *args)
+        return _Geom2d.Geom2d_Conic_Position(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Geom2d_Conic self)"""
         return _Geom2d.Geom2d_Conic__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Geom2d_Conic" :
+    def GetHandle(self):
         """GetHandle(Geom2d_Conic self) -> Handle_Geom2d_Conic"""
         return _Geom2d.Geom2d_Conic_GetHandle(self)
 
@@ -1706,7 +1706,7 @@ Handle_Geom2d_Conic._kill_pointed = new_instancemethod(_Geom2d.Handle_Geom2d_Con
 Handle_Geom2d_Conic_swigregister = _Geom2d.Handle_Geom2d_Conic_swigregister
 Handle_Geom2d_Conic_swigregister(Handle_Geom2d_Conic)
 
-def Handle_Geom2d_Conic_DownCast(*args) -> "Handle_Geom2d_Conic const" :
+def Handle_Geom2d_Conic_DownCast(*args):
   return _Geom2d.Handle_Geom2d_Conic_DownCast(*args)
 Handle_Geom2d_Conic_DownCast = _Geom2d.Handle_Geom2d_Conic_DownCast
 
@@ -1731,7 +1731,7 @@ class Geom2d_Direction(Geom2d_Vector):
 
         """
         _Geom2d.Geom2d_Direction_swiginit(self,_Geom2d.new_Geom2d_Direction(*args))
-    def SetCoord(self, *args) -> "void" :
+    def SetCoord(self, *args):
         """
         * Assigns the coordinates X and Y to this unit vector, then normalizes it. Exceptions Standard_ConstructionError if Sqrt(X*X + Y*Y) is less than or equal to gp::Resolution().
 
@@ -1744,7 +1744,7 @@ class Geom2d_Direction(Geom2d_Vector):
         """
         return _Geom2d.Geom2d_Direction_SetCoord(self, *args)
 
-    def SetDir2d(self, *args) -> "void" :
+    def SetDir2d(self, *args):
         """
         * Converts the gp_Dir2d unit vector V into this unit vector.
 
@@ -1755,7 +1755,7 @@ class Geom2d_Direction(Geom2d_Vector):
         """
         return _Geom2d.Geom2d_Direction_SetDir2d(self, *args)
 
-    def SetX(self, *args) -> "void" :
+    def SetX(self, *args):
         """
         * Assigns a value to the X coordinate of this unit vector, then normalizes it. Exceptions Standard_ConstructionError if the value assigned causes the magnitude of the vector to become less than or equal to gp::Resolution().
 
@@ -1766,7 +1766,7 @@ class Geom2d_Direction(Geom2d_Vector):
         """
         return _Geom2d.Geom2d_Direction_SetX(self, *args)
 
-    def SetY(self, *args) -> "void" :
+    def SetY(self, *args):
         """
         * Assigns a value to the Y coordinate of this unit vector, then normalizes it. Exceptions Standard_ConstructionError if the value assigned causes the magnitude of the vector to become less than or equal to gp::Resolution().
 
@@ -1777,16 +1777,16 @@ class Geom2d_Direction(Geom2d_Vector):
         """
         return _Geom2d.Geom2d_Direction_SetY(self, *args)
 
-    def Dir2d(self, *args) -> "gp_Dir2d" :
+    def Dir2d(self):
         """
         * Converts this unit vector into a gp_Dir2d unit vector.
 
         :rtype: gp_Dir2d
 
         """
-        return _Geom2d.Geom2d_Direction_Dir2d(self, *args)
+        return _Geom2d.Geom2d_Direction_Dir2d(self)
 
-    def __xor__(self, *args) -> "Standard_Real" :
+    def __xor__(self, *args):
         """
         :param Other:
         :type Other: Handle_Geom2d_Vector &
@@ -1795,11 +1795,11 @@ class Geom2d_Direction(Geom2d_Vector):
         """
         return _Geom2d.Geom2d_Direction___xor__(self, *args)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Geom2d_Direction self)"""
         return _Geom2d.Geom2d_Direction__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Geom2d_Direction" :
+    def GetHandle(self):
         """GetHandle(Geom2d_Direction self) -> Handle_Geom2d_Direction"""
         return _Geom2d.Geom2d_Direction_GetHandle(self)
 
@@ -1843,7 +1843,7 @@ Handle_Geom2d_Direction._kill_pointed = new_instancemethod(_Geom2d.Handle_Geom2d
 Handle_Geom2d_Direction_swigregister = _Geom2d.Handle_Geom2d_Direction_swigregister
 Handle_Geom2d_Direction_swigregister(Handle_Geom2d_Direction)
 
-def Handle_Geom2d_Direction_DownCast(*args) -> "Handle_Geom2d_Direction const" :
+def Handle_Geom2d_Direction_DownCast(*args):
   return _Geom2d.Handle_Geom2d_Direction_DownCast(*args)
 Handle_Geom2d_Direction_DownCast = _Geom2d.Handle_Geom2d_Direction_DownCast
 
@@ -1874,7 +1874,7 @@ class Geom2d_Line(Geom2d_Curve):
 
         """
         _Geom2d.Geom2d_Line_swiginit(self,_Geom2d.new_Geom2d_Line(*args))
-    def SetLin2d(self, *args) -> "void" :
+    def SetLin2d(self, *args):
         """
         * Set <self> so that <self> has the same geometric properties as L.
 
@@ -1885,7 +1885,7 @@ class Geom2d_Line(Geom2d_Curve):
         """
         return _Geom2d.Geom2d_Line_SetLin2d(self, *args)
 
-    def SetDirection(self, *args) -> "void" :
+    def SetDirection(self, *args):
         """
         * changes the direction of the line.
 
@@ -1896,16 +1896,16 @@ class Geom2d_Line(Geom2d_Curve):
         """
         return _Geom2d.Geom2d_Line_SetDirection(self, *args)
 
-    def Direction(self, *args) -> "gp_Dir2d const" :
+    def Direction(self):
         """
         * changes the direction of the line.
 
         :rtype: gp_Dir2d
 
         """
-        return _Geom2d.Geom2d_Line_Direction(self, *args)
+        return _Geom2d.Geom2d_Line_Direction(self)
 
-    def SetLocation(self, *args) -> "void" :
+    def SetLocation(self, *args):
         """
         * Changes the 'Location' point (origin) of the line.
 
@@ -1916,16 +1916,16 @@ class Geom2d_Line(Geom2d_Curve):
         """
         return _Geom2d.Geom2d_Line_SetLocation(self, *args)
 
-    def Location(self, *args) -> "gp_Pnt2d const" :
+    def Location(self):
         """
         * Changes the 'Location' point (origin) of the line.
 
         :rtype: gp_Pnt2d
 
         """
-        return _Geom2d.Geom2d_Line_Location(self, *args)
+        return _Geom2d.Geom2d_Line_Location(self)
 
-    def SetPosition(self, *args) -> "void" :
+    def SetPosition(self, *args):
         """
         * Changes the 'Location' and a the 'Direction' of <self>.
 
@@ -1936,23 +1936,23 @@ class Geom2d_Line(Geom2d_Curve):
         """
         return _Geom2d.Geom2d_Line_SetPosition(self, *args)
 
-    def Position(self, *args) -> "gp_Ax2d const" :
+    def Position(self):
         """
         :rtype: gp_Ax2d
 
         """
-        return _Geom2d.Geom2d_Line_Position(self, *args)
+        return _Geom2d.Geom2d_Line_Position(self)
 
-    def Lin2d(self, *args) -> "gp_Lin2d" :
+    def Lin2d(self):
         """
         * Returns non persistent line from gp with the same geometric properties as <self>
 
         :rtype: gp_Lin2d
 
         """
-        return _Geom2d.Geom2d_Line_Lin2d(self, *args)
+        return _Geom2d.Geom2d_Line_Lin2d(self)
 
-    def Distance(self, *args) -> "Standard_Real" :
+    def Distance(self, *args):
         """
         * Computes the distance between <self> and the point P.
 
@@ -1963,11 +1963,11 @@ class Geom2d_Line(Geom2d_Curve):
         """
         return _Geom2d.Geom2d_Line_Distance(self, *args)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Geom2d_Line self)"""
         return _Geom2d.Geom2d_Line__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Geom2d_Line" :
+    def GetHandle(self):
         """GetHandle(Geom2d_Line self) -> Handle_Geom2d_Line"""
         return _Geom2d.Geom2d_Line_GetHandle(self)
 
@@ -2014,7 +2014,7 @@ Handle_Geom2d_Line._kill_pointed = new_instancemethod(_Geom2d.Handle_Geom2d_Line
 Handle_Geom2d_Line_swigregister = _Geom2d.Handle_Geom2d_Line_swigregister
 Handle_Geom2d_Line_swigregister(Handle_Geom2d_Line)
 
-def Handle_Geom2d_Line_DownCast(*args) -> "Handle_Geom2d_Line const" :
+def Handle_Geom2d_Line_DownCast(*args):
   return _Geom2d.Handle_Geom2d_Line_DownCast(*args)
 Handle_Geom2d_Line_DownCast = _Geom2d.Handle_Geom2d_Line_DownCast
 
@@ -2033,7 +2033,7 @@ class Geom2d_OffsetCurve(Geom2d_Curve):
 
         """
         _Geom2d.Geom2d_OffsetCurve_swiginit(self,_Geom2d.new_Geom2d_OffsetCurve(*args))
-    def SetBasisCurve(self, *args) -> "void" :
+    def SetBasisCurve(self, *args):
         """
         * Changes this offset curve by assigning C as the basis curve from which it is built. Exceptions Standard_ConstructionError if the curve C is not at least 'C1' continuous.
 
@@ -2044,7 +2044,7 @@ class Geom2d_OffsetCurve(Geom2d_Curve):
         """
         return _Geom2d.Geom2d_OffsetCurve_SetBasisCurve(self, *args)
 
-    def SetOffsetValue(self, *args) -> "void" :
+    def SetOffsetValue(self, *args):
         """
         * Changes this offset curve by assigning D as the offset value.
 
@@ -2055,16 +2055,16 @@ class Geom2d_OffsetCurve(Geom2d_Curve):
         """
         return _Geom2d.Geom2d_OffsetCurve_SetOffsetValue(self, *args)
 
-    def BasisCurve(self, *args) -> "Handle_Geom2d_Curve" :
+    def BasisCurve(self):
         """
         * Returns the basis curve of this offset curve. The basis curve can be an offset curve.
 
         :rtype: Handle_Geom2d_Curve
 
         """
-        return _Geom2d.Geom2d_OffsetCurve_BasisCurve(self, *args)
+        return _Geom2d.Geom2d_OffsetCurve_BasisCurve(self)
 
-    def Value(self, *args) -> "void" :
+    def Value(self, *args):
         """
         * Warning! this should not be called if the basis curve is not at least C1. Nevertheless if used on portion where the curve is C1, it is OK
 
@@ -2081,7 +2081,7 @@ class Geom2d_OffsetCurve(Geom2d_Curve):
         """
         return _Geom2d.Geom2d_OffsetCurve_Value(self, *args)
 
-    def D1(self, *args) -> "void" :
+    def D1(self, *args):
         """
         * Warning! this should not be called if the continuity of the basis curve is not C2. Nevertheless, it's OK to use it on portion where the curve is C2
 
@@ -2112,7 +2112,7 @@ class Geom2d_OffsetCurve(Geom2d_Curve):
         """
         return _Geom2d.Geom2d_OffsetCurve_D1(self, *args)
 
-    def D2(self, *args) -> "void" :
+    def D2(self, *args):
         """
         * Warning! This should not be called if the continuity of the basis curve is not C3. Nevertheless, it's OK to use it on portion where the curve is C3
 
@@ -2149,20 +2149,20 @@ class Geom2d_OffsetCurve(Geom2d_Curve):
         """
         return _Geom2d.Geom2d_OffsetCurve_D2(self, *args)
 
-    def Offset(self, *args) -> "Standard_Real" :
+    def Offset(self):
         """
         * Returns the offset value of this offset curve.
 
         :rtype: float
 
         """
-        return _Geom2d.Geom2d_OffsetCurve_Offset(self, *args)
+        return _Geom2d.Geom2d_OffsetCurve_Offset(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Geom2d_OffsetCurve self)"""
         return _Geom2d.Geom2d_OffsetCurve__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Geom2d_OffsetCurve" :
+    def GetHandle(self):
         """GetHandle(Geom2d_OffsetCurve self) -> Handle_Geom2d_OffsetCurve"""
         return _Geom2d.Geom2d_OffsetCurve_GetHandle(self)
 
@@ -2207,7 +2207,7 @@ Handle_Geom2d_OffsetCurve._kill_pointed = new_instancemethod(_Geom2d.Handle_Geom
 Handle_Geom2d_OffsetCurve_swigregister = _Geom2d.Handle_Geom2d_OffsetCurve_swigregister
 Handle_Geom2d_OffsetCurve_swigregister(Handle_Geom2d_OffsetCurve)
 
-def Handle_Geom2d_OffsetCurve_DownCast(*args) -> "Handle_Geom2d_OffsetCurve const" :
+def Handle_Geom2d_OffsetCurve_DownCast(*args):
   return _Geom2d.Handle_Geom2d_OffsetCurve_DownCast(*args)
 Handle_Geom2d_OffsetCurve_DownCast = _Geom2d.Handle_Geom2d_OffsetCurve_DownCast
 
@@ -2240,7 +2240,7 @@ class Geom2d_VectorWithMagnitude(Geom2d_Vector):
 
         """
         _Geom2d.Geom2d_VectorWithMagnitude_swiginit(self,_Geom2d.new_Geom2d_VectorWithMagnitude(*args))
-    def SetCoord(self, *args) -> "void" :
+    def SetCoord(self, *args):
         """
         * Set <self> to X, Y coordinates.
 
@@ -2253,7 +2253,7 @@ class Geom2d_VectorWithMagnitude(Geom2d_Vector):
         """
         return _Geom2d.Geom2d_VectorWithMagnitude_SetCoord(self, *args)
 
-    def SetVec2d(self, *args) -> "void" :
+    def SetVec2d(self, *args):
         """
         :param V:
         :type V: gp_Vec2d
@@ -2262,7 +2262,7 @@ class Geom2d_VectorWithMagnitude(Geom2d_Vector):
         """
         return _Geom2d.Geom2d_VectorWithMagnitude_SetVec2d(self, *args)
 
-    def SetX(self, *args) -> "void" :
+    def SetX(self, *args):
         """
         * Changes the X coordinate of <self>.
 
@@ -2273,7 +2273,7 @@ class Geom2d_VectorWithMagnitude(Geom2d_Vector):
         """
         return _Geom2d.Geom2d_VectorWithMagnitude_SetX(self, *args)
 
-    def SetY(self, *args) -> "void" :
+    def SetY(self, *args):
         """
         * Changes the Y coordinate of <self>
 
@@ -2284,7 +2284,7 @@ class Geom2d_VectorWithMagnitude(Geom2d_Vector):
         """
         return _Geom2d.Geom2d_VectorWithMagnitude_SetY(self, *args)
 
-    def Add(self, *args) -> "void" :
+    def Add(self, *args):
         """
         * Adds the Vector Other to <self>.
 
@@ -2295,7 +2295,7 @@ class Geom2d_VectorWithMagnitude(Geom2d_Vector):
         """
         return _Geom2d.Geom2d_VectorWithMagnitude_Add(self, *args)
 
-    def __iadd__(self, *args) -> "void" :
+    def __iadd__(self, *args):
         """
         :param Other:
         :type Other: Handle_Geom2d_Vector &
@@ -2304,7 +2304,7 @@ class Geom2d_VectorWithMagnitude(Geom2d_Vector):
         """
         return _Geom2d.Geom2d_VectorWithMagnitude___iadd__(self, *args)
 
-    def Added(self, *args) -> "Handle_Geom2d_VectorWithMagnitude" :
+    def Added(self, *args):
         """
         * Adds the vector Other to <self>.
 
@@ -2315,7 +2315,7 @@ class Geom2d_VectorWithMagnitude(Geom2d_Vector):
         """
         return _Geom2d.Geom2d_VectorWithMagnitude_Added(self, *args)
 
-    def __add__(self, *args) -> "Handle_Geom2d_VectorWithMagnitude" :
+    def __add__(self, *args):
         """
         :param Other:
         :type Other: Handle_Geom2d_Vector &
@@ -2324,7 +2324,7 @@ class Geom2d_VectorWithMagnitude(Geom2d_Vector):
         """
         return _Geom2d.Geom2d_VectorWithMagnitude___add__(self, *args)
 
-    def __xor__(self, *args) -> "Standard_Real" :
+    def __xor__(self, *args):
         """
         :param Other:
         :type Other: Handle_Geom2d_Vector &
@@ -2333,7 +2333,7 @@ class Geom2d_VectorWithMagnitude(Geom2d_Vector):
         """
         return _Geom2d.Geom2d_VectorWithMagnitude___xor__(self, *args)
 
-    def Divide(self, *args) -> "void" :
+    def Divide(self, *args):
         """
         * Divides <self> by a scalar.
 
@@ -2344,7 +2344,7 @@ class Geom2d_VectorWithMagnitude(Geom2d_Vector):
         """
         return _Geom2d.Geom2d_VectorWithMagnitude_Divide(self, *args)
 
-    def __idiv__(self, *args) -> "void" :
+    def __idiv__(self, *args):
         """
         :param Scalar:
         :type Scalar: float
@@ -2353,7 +2353,7 @@ class Geom2d_VectorWithMagnitude(Geom2d_Vector):
         """
         return _Geom2d.Geom2d_VectorWithMagnitude___idiv__(self, *args)
 
-    def Divided(self, *args) -> "Handle_Geom2d_VectorWithMagnitude" :
+    def Divided(self, *args):
         """
         * Divides <self> by a scalar. A new vector is returned.
 
@@ -2364,7 +2364,7 @@ class Geom2d_VectorWithMagnitude(Geom2d_Vector):
         """
         return _Geom2d.Geom2d_VectorWithMagnitude_Divided(self, *args)
 
-    def __div__(self, *args) -> "Handle_Geom2d_VectorWithMagnitude" :
+    def __div__(self, *args):
         """
         :param Scalar:
         :type Scalar: float
@@ -2373,7 +2373,7 @@ class Geom2d_VectorWithMagnitude(Geom2d_Vector):
         """
         return _Geom2d.Geom2d_VectorWithMagnitude___div__(self, *args)
 
-    def Multiplied(self, *args) -> "Handle_Geom2d_VectorWithMagnitude" :
+    def Multiplied(self, *args):
         """
         * Computes the product of the vector <self> by a scalar. A new vector is returned. -C++: alias operator * Collision with same operator defined for the class Vector!
 
@@ -2384,7 +2384,7 @@ class Geom2d_VectorWithMagnitude(Geom2d_Vector):
         """
         return _Geom2d.Geom2d_VectorWithMagnitude_Multiplied(self, *args)
 
-    def Multiply(self, *args) -> "void" :
+    def Multiply(self, *args):
         """
         * Computes the product of the vector <self> by a scalar.
 
@@ -2395,7 +2395,7 @@ class Geom2d_VectorWithMagnitude(Geom2d_Vector):
         """
         return _Geom2d.Geom2d_VectorWithMagnitude_Multiply(self, *args)
 
-    def __imul__(self, *args) -> "void" :
+    def __imul__(self, *args):
         """
         :param Scalar:
         :type Scalar: float
@@ -2404,25 +2404,25 @@ class Geom2d_VectorWithMagnitude(Geom2d_Vector):
         """
         return _Geom2d.Geom2d_VectorWithMagnitude___imul__(self, *args)
 
-    def Normalize(self, *args) -> "void" :
+    def Normalize(self):
         """
         * Normalizes <self>. Raised if the magnitude of the vector is lower or equal to Resolution from package gp.
 
         :rtype: None
 
         """
-        return _Geom2d.Geom2d_VectorWithMagnitude_Normalize(self, *args)
+        return _Geom2d.Geom2d_VectorWithMagnitude_Normalize(self)
 
-    def Normalized(self, *args) -> "Handle_Geom2d_VectorWithMagnitude" :
+    def Normalized(self):
         """
         * Returns a copy of <self> Normalized. Raised if the magnitude of the vector is lower or equal to Resolution from package gp.
 
         :rtype: Handle_Geom2d_VectorWithMagnitude
 
         """
-        return _Geom2d.Geom2d_VectorWithMagnitude_Normalized(self, *args)
+        return _Geom2d.Geom2d_VectorWithMagnitude_Normalized(self)
 
-    def Subtract(self, *args) -> "void" :
+    def Subtract(self, *args):
         """
         * Subtracts the Vector Other to <self>.
 
@@ -2433,7 +2433,7 @@ class Geom2d_VectorWithMagnitude(Geom2d_Vector):
         """
         return _Geom2d.Geom2d_VectorWithMagnitude_Subtract(self, *args)
 
-    def __isub__(self, *args) -> "void" :
+    def __isub__(self, *args):
         """
         :param Other:
         :type Other: Handle_Geom2d_Vector &
@@ -2442,7 +2442,7 @@ class Geom2d_VectorWithMagnitude(Geom2d_Vector):
         """
         return _Geom2d.Geom2d_VectorWithMagnitude___isub__(self, *args)
 
-    def Subtracted(self, *args) -> "Handle_Geom2d_VectorWithMagnitude" :
+    def Subtracted(self, *args):
         """
         * Subtracts the vector Other to <self>. A new vector is returned.
 
@@ -2453,7 +2453,7 @@ class Geom2d_VectorWithMagnitude(Geom2d_Vector):
         """
         return _Geom2d.Geom2d_VectorWithMagnitude_Subtracted(self, *args)
 
-    def __sub__(self, *args) -> "Handle_Geom2d_VectorWithMagnitude" :
+    def __sub__(self, *args):
         """
         :param Other:
         :type Other: Handle_Geom2d_Vector &
@@ -2462,11 +2462,11 @@ class Geom2d_VectorWithMagnitude(Geom2d_Vector):
         """
         return _Geom2d.Geom2d_VectorWithMagnitude___sub__(self, *args)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Geom2d_VectorWithMagnitude self)"""
         return _Geom2d.Geom2d_VectorWithMagnitude__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Geom2d_VectorWithMagnitude" :
+    def GetHandle(self):
         """GetHandle(Geom2d_VectorWithMagnitude self) -> Handle_Geom2d_VectorWithMagnitude"""
         return _Geom2d.Geom2d_VectorWithMagnitude_GetHandle(self)
 
@@ -2526,7 +2526,7 @@ Handle_Geom2d_VectorWithMagnitude._kill_pointed = new_instancemethod(_Geom2d.Han
 Handle_Geom2d_VectorWithMagnitude_swigregister = _Geom2d.Handle_Geom2d_VectorWithMagnitude_swigregister
 Handle_Geom2d_VectorWithMagnitude_swigregister(Handle_Geom2d_VectorWithMagnitude)
 
-def Handle_Geom2d_VectorWithMagnitude_DownCast(*args) -> "Handle_Geom2d_VectorWithMagnitude const" :
+def Handle_Geom2d_VectorWithMagnitude_DownCast(*args):
   return _Geom2d.Handle_Geom2d_VectorWithMagnitude_DownCast(*args)
 Handle_Geom2d_VectorWithMagnitude_DownCast = _Geom2d.Handle_Geom2d_VectorWithMagnitude_DownCast
 
@@ -2544,7 +2544,21 @@ class Geom2d_BSplineCurve(Geom2d_BoundedCurve):
         :param Multiplicities:
         :type Multiplicities: TColStd_Array1OfInteger &
         :param Degree:
-        :type Degree: int
+        :type Degree: Standard_Integer
+        :param Periodic: default value is Standard_False
+        :type Periodic: bool
+        :rtype: None
+
+        * Creates a non-rational B_spline curve on the  basis <Knots, Multiplicities> of degree <Degree>. The following conditions must be verified. 0 < Degree <= MaxDegree. Knots.Length() == Mults.Length() >= 2 Knots(i) < Knots(i+1) (Knots are increasing) 1 <= Mults(i) <= Degree On a non periodic curve the first and last multiplicities may be Degree+1 (this is even recommanded if you want the curve to start and finish on the first and last pole). On a periodic curve the first and the last multicities must be the same. on non-periodic curves Poles.Length() == Sum(Mults(i)) - Degree - 1 >= 2 on periodic curves Poles.Length() == Sum(Mults(i)) except the first or last
+
+        :param Poles:
+        :type Poles: TColgp_Array1OfPnt2d
+        :param Knots:
+        :type Knots: TColStd_Array1OfReal &
+        :param Multiplicities:
+        :type Multiplicities: TColStd_Array1OfInteger &
+        :param Degree:
+        :type Degree: Standard_Integer
         :param Periodic: default value is Standard_False
         :type Periodic: bool
         :rtype: None
@@ -2560,70 +2574,106 @@ class Geom2d_BSplineCurve(Geom2d_BoundedCurve):
         :param Multiplicities:
         :type Multiplicities: TColStd_Array1OfInteger &
         :param Degree:
-        :type Degree: int
+        :type Degree: Standard_Integer
+        :param Periodic: default value is Standard_False
+        :type Periodic: bool
+        :rtype: None
+
+        * Creates a rational B_spline curve on the basis  <Knots, Multiplicities> of degree <Degree>. The following conditions must be verified. 0 < Degree <= MaxDegree. Knots.Length() == Mults.Length() >= 2 Knots(i) < Knots(i+1) (Knots are increasing) 1 <= Mults(i) <= Degree On a non periodic curve the first and last multiplicities may be Degree+1 (this is even recommanded if you want the curve to start and finish on the first and last pole). On a periodic curve the first and the last multicities must be the same. on non-periodic curves Poles.Length() == Sum(Mults(i)) - Degree - 1 >= 2 on periodic curves Poles.Length() == Sum(Mults(i)) except the first or last
+
+        :param Poles:
+        :type Poles: TColgp_Array1OfPnt2d
+        :param Weights:
+        :type Weights: TColStd_Array1OfReal &
+        :param Knots:
+        :type Knots: TColStd_Array1OfReal &
+        :param Multiplicities:
+        :type Multiplicities: TColStd_Array1OfInteger &
+        :param Degree:
+        :type Degree: Standard_Integer
         :param Periodic: default value is Standard_False
         :type Periodic: bool
         :rtype: None
 
         """
         _Geom2d.Geom2d_BSplineCurve_swiginit(self,_Geom2d.new_Geom2d_BSplineCurve(*args))
-    def IncreaseDegree(self, *args) -> "void" :
+    def IncreaseDegree(self, *args):
         """
         * Increases the degree of this BSpline curve to Degree. As a result, the poles, weights and multiplicities tables are modified; the knots table is not changed. Nothing is done if Degree is less than or equal to the current degree. Exceptions Standard_ConstructionError if Degree is greater than Geom2d_BSplineCurve::MaxDegree().
 
         :param Degree:
-        :type Degree: int
+        :type Degree: Standard_Integer
         :rtype: None
 
         """
         return _Geom2d.Geom2d_BSplineCurve_IncreaseDegree(self, *args)
 
-    def IncreaseMultiplicity(self, *args) -> "void" :
+    def IncreaseMultiplicity(self, *args):
         """
         * //!Increases the multiplicity of the knot <Index> to  <M>. If <M> is lower or equal to the current  multiplicity nothing is done. If <M> is higher than  the degree the degree is used. If <Index> is not in [FirstUKnotIndex, LastUKnotIndex]
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param M:
-        :type M: int
+        :type M: Standard_Integer
         :rtype: None
 
         * //!Increases the multiplicities of the knots in  [I1,I2] to <M>. For each knot if <M> is lower or equal to the  current multiplicity nothing is done. If <M> is  higher than the degree the degree is used. As a result, the poles and weights tables of this curve are modified. Warning It is forbidden to modify the multiplicity of the first or last knot of a non-periodic curve. Be careful as Geom2d does not protect against this. Exceptions Standard_OutOfRange if either Index, I1 or I2 is outside the bounds of the knots table.
 
         :param I1:
-        :type I1: int
+        :type I1: Standard_Integer
         :param I2:
-        :type I2: int
+        :type I2: Standard_Integer
         :param M:
-        :type M: int
+        :type M: Standard_Integer
         :rtype: None
 
         """
         return _Geom2d.Geom2d_BSplineCurve_IncreaseMultiplicity(self, *args)
 
-    def IncrementMultiplicity(self, *args) -> "void" :
+    def IncrementMultiplicity(self, *args):
         """
         * Increases by M the multiplicity of the knots of indexes I1 to I2 in the knots table of this BSpline curve. For each knot, the resulting multiplicity is limited to the degree of this curve. If M is negative, nothing is done. As a result, the poles and weights tables of this BSpline curve are modified. Warning It is forbidden to modify the multiplicity of the first or last knot of a non-periodic curve. Be careful as Geom2d does not protect against this. Exceptions Standard_OutOfRange if I1 or I2 is outside the bounds of the knots table.
 
         :param I1:
-        :type I1: int
+        :type I1: Standard_Integer
         :param I2:
-        :type I2: int
+        :type I2: Standard_Integer
         :param M:
-        :type M: int
+        :type M: Standard_Integer
         :rtype: None
 
         """
         return _Geom2d.Geom2d_BSplineCurve_IncrementMultiplicity(self, *args)
 
-    def InsertKnot(self, *args) -> "void" :
+    def InsertKnot(self, *args):
         """
         * Inserts a knot value in the sequence of knots. If <U> is an existing knot the multiplicity is increased by <M>.  If U is not on the parameter range nothing is done.  If the multiplicity is negative or null nothing is done. The new multiplicity is limited to the degree.  The tolerance criterion for knots equality is the max of Epsilon(U) and ParametricTolerance. Warning - If U is less than the first parameter or greater than the last parameter of this BSpline curve, nothing is done. - If M is negative or null, nothing is done. - The multiplicity of a knot is limited to the degree of this BSpline curve.
 
         :param U:
         :type U: float
         :param M: default value is 1
-        :type M: int
+        :type M: Standard_Integer
+        :param ParametricTolerance: default value is 0.0
+        :type ParametricTolerance: float
+        :rtype: None
+
+        * Inserts a knot value in the sequence of knots. If <U> is an existing knot the multiplicity is increased by <M>.  If U is not on the parameter range nothing is done.  If the multiplicity is negative or null nothing is done. The new multiplicity is limited to the degree.  The tolerance criterion for knots equality is the max of Epsilon(U) and ParametricTolerance. Warning - If U is less than the first parameter or greater than the last parameter of this BSpline curve, nothing is done. - If M is negative or null, nothing is done. - The multiplicity of a knot is limited to the degree of this BSpline curve.
+
+        :param U:
+        :type U: float
+        :param M: default value is 1
+        :type M: Standard_Integer
+        :param ParametricTolerance: default value is 0.0
+        :type ParametricTolerance: float
+        :rtype: None
+
+        * Inserts a knot value in the sequence of knots. If <U> is an existing knot the multiplicity is increased by <M>.  If U is not on the parameter range nothing is done.  If the multiplicity is negative or null nothing is done. The new multiplicity is limited to the degree.  The tolerance criterion for knots equality is the max of Epsilon(U) and ParametricTolerance. Warning - If U is less than the first parameter or greater than the last parameter of this BSpline curve, nothing is done. - If M is negative or null, nothing is done. - The multiplicity of a knot is limited to the degree of this BSpline curve.
+
+        :param U:
+        :type U: float
+        :param M: default value is 1
+        :type M: Standard_Integer
         :param ParametricTolerance: default value is 0.0
         :type ParametricTolerance: float
         :rtype: None
@@ -2631,8 +2681,32 @@ class Geom2d_BSplineCurve(Geom2d_BoundedCurve):
         """
         return _Geom2d.Geom2d_BSplineCurve_InsertKnot(self, *args)
 
-    def InsertKnots(self, *args) -> "void" :
+    def InsertKnots(self, *args):
         """
+        * Inserts the values of the array Knots, with the respective multiplicities given by the array Mults, into the knots table of this BSpline curve. If a value of the array Knots is an existing knot, its multiplicity is: - increased by M, if Add is true, or - increased to M, if Add is false (default value). The tolerance criterion used for knot equality is the larger of the values ParametricTolerance (defaulted to 0.) and Standard_Real::Epsilon(U), where U is the current knot value. Warning - For a value of the array Knots which is less than the first parameter or greater than the last parameter of this BSpline curve, nothing is done. - For a value of the array Mults which is negative or null, nothing is done. - The multiplicity of a knot is limited to the degree of this BSpline curve.
+
+        :param Knots:
+        :type Knots: TColStd_Array1OfReal &
+        :param Mults:
+        :type Mults: TColStd_Array1OfInteger &
+        :param ParametricTolerance: default value is 0.0
+        :type ParametricTolerance: float
+        :param Add: default value is Standard_False
+        :type Add: bool
+        :rtype: None
+
+        * Inserts the values of the array Knots, with the respective multiplicities given by the array Mults, into the knots table of this BSpline curve. If a value of the array Knots is an existing knot, its multiplicity is: - increased by M, if Add is true, or - increased to M, if Add is false (default value). The tolerance criterion used for knot equality is the larger of the values ParametricTolerance (defaulted to 0.) and Standard_Real::Epsilon(U), where U is the current knot value. Warning - For a value of the array Knots which is less than the first parameter or greater than the last parameter of this BSpline curve, nothing is done. - For a value of the array Mults which is negative or null, nothing is done. - The multiplicity of a knot is limited to the degree of this BSpline curve.
+
+        :param Knots:
+        :type Knots: TColStd_Array1OfReal &
+        :param Mults:
+        :type Mults: TColStd_Array1OfInteger &
+        :param ParametricTolerance: default value is 0.0
+        :type ParametricTolerance: float
+        :param Add: default value is Standard_False
+        :type Add: bool
+        :rtype: None
+
         * Inserts the values of the array Knots, with the respective multiplicities given by the array Mults, into the knots table of this BSpline curve. If a value of the array Knots is an existing knot, its multiplicity is: - increased by M, if Add is true, or - increased to M, if Add is false (default value). The tolerance criterion used for knot equality is the larger of the values ParametricTolerance (defaulted to 0.) and Standard_Real::Epsilon(U), where U is the current knot value. Warning - For a value of the array Knots which is less than the first parameter or greater than the last parameter of this BSpline curve, nothing is done. - For a value of the array Mults which is negative or null, nothing is done. - The multiplicity of a knot is limited to the degree of this BSpline curve.
 
         :param Knots:
@@ -2648,14 +2722,14 @@ class Geom2d_BSplineCurve(Geom2d_BoundedCurve):
         """
         return _Geom2d.Geom2d_BSplineCurve_InsertKnots(self, *args)
 
-    def RemoveKnot(self, *args) -> "Standard_Boolean" :
+    def RemoveKnot(self, *args):
         """
         * Reduces the multiplicity of the knot of index Index to M. If M is equal to 0, the knot is removed. With a modification of this type, the array of poles is also modified. Two different algorithms are systematically used to compute the new poles of the curve. If, for each pole, the distance between the pole calculated using the first algorithm and the same pole calculated using the second algorithm, is less than Tolerance, this ensures that the curve is not modified by more than Tolerance. Under these conditions, true is returned; otherwise, false is returned. A low tolerance is used to prevent modification of the curve. A high tolerance is used to 'smooth' the curve. Exceptions Standard_OutOfRange if Index is outside the bounds of the knots table.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param M:
-        :type M: int
+        :type M: Standard_Integer
         :param Tolerance:
         :type Tolerance: float
         :rtype: bool
@@ -2663,12 +2737,22 @@ class Geom2d_BSplineCurve(Geom2d_BoundedCurve):
         """
         return _Geom2d.Geom2d_BSplineCurve_RemoveKnot(self, *args)
 
-    def InsertPoleAfter(self, *args) -> "void" :
+    def InsertPoleAfter(self, *args):
         """
         * The new pole is inserted after the pole of range Index. If the curve was non rational it can become rational. Raised if the B-spline is NonUniform or PiecewiseBezier or if Weight <= 0.0 Raised if Index is not in the range [1, Number of Poles]
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
+        :param P:
+        :type P: gp_Pnt2d
+        :param Weight: default value is 1.0
+        :type Weight: float
+        :rtype: None
+
+        * The new pole is inserted after the pole of range Index. If the curve was non rational it can become rational. Raised if the B-spline is NonUniform or PiecewiseBezier or if Weight <= 0.0 Raised if Index is not in the range [1, Number of Poles]
+
+        :param Index:
+        :type Index: Standard_Integer
         :param P:
         :type P: gp_Pnt2d
         :param Weight: default value is 1.0
@@ -2678,12 +2762,22 @@ class Geom2d_BSplineCurve(Geom2d_BoundedCurve):
         """
         return _Geom2d.Geom2d_BSplineCurve_InsertPoleAfter(self, *args)
 
-    def InsertPoleBefore(self, *args) -> "void" :
+    def InsertPoleBefore(self, *args):
         """
         * The new pole is inserted before the pole of range Index. If the curve was non rational it can become rational. Raised if the B-spline is NonUniform or PiecewiseBezier or if Weight <= 0.0 Raised if Index is not in the range [1, Number of Poles]
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
+        :param P:
+        :type P: gp_Pnt2d
+        :param Weight: default value is 1.0
+        :type Weight: float
+        :rtype: None
+
+        * The new pole is inserted before the pole of range Index. If the curve was non rational it can become rational. Raised if the B-spline is NonUniform or PiecewiseBezier or if Weight <= 0.0 Raised if Index is not in the range [1, Number of Poles]
+
+        :param Index:
+        :type Index: Standard_Integer
         :param P:
         :type P: gp_Pnt2d
         :param Weight: default value is 1.0
@@ -2693,18 +2787,18 @@ class Geom2d_BSplineCurve(Geom2d_BoundedCurve):
         """
         return _Geom2d.Geom2d_BSplineCurve_InsertPoleBefore(self, *args)
 
-    def RemovePole(self, *args) -> "void" :
+    def RemovePole(self, *args):
         """
         * Removes the pole of range Index If the curve was rational it can become non rational. Raised if the B-spline is NonUniform or PiecewiseBezier. Raised if the number of poles of the B-spline curve is lower or equal to 2 before removing. Raised if Index is not in the range [1, Number of Poles]
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: None
 
         """
         return _Geom2d.Geom2d_BSplineCurve_RemovePole(self, *args)
 
-    def Segment(self, *args) -> "void" :
+    def Segment(self, *args):
         """
         * Modifies this BSpline curve by segmenting it between U1 and U2. Either of these values can be outside the bounds of the curve, but U2 must be greater than U1. All data structure tables of this BSpline curve are modified, but the knots located between U1 and U2 are retained. The degree of the curve is not modified. Warnings : Even if <self> is not closed it can become closed after the segmentation for example if U1 or U2 are out of the bounds of the curve <self> or if the curve makes loop. After the segmentation the length of a curve can be null. - The segmentation of a periodic curve over an interval corresponding to its period generates a non-periodic curve with equivalent geometry. Exceptions Standard_DomainError if U2 is less than U1. raises if U2 < U1.
 
@@ -2717,7 +2811,7 @@ class Geom2d_BSplineCurve(Geom2d_BoundedCurve):
         """
         return _Geom2d.Geom2d_BSplineCurve_Segment(self, *args)
 
-    def SetKnots(self, *args) -> "void" :
+    def SetKnots(self, *args):
         """
         * Modifies this BSpline curve by assigning the array K to its knots table. The multiplicity of the knots is not modified. Exceptions Standard_ConstructionError if the values in the array K are not in ascending order. Standard_OutOfRange if the bounds of the array K are not respectively 1 and the number of knots of this BSpline curve.
 
@@ -2728,12 +2822,12 @@ class Geom2d_BSplineCurve(Geom2d_BoundedCurve):
         """
         return _Geom2d.Geom2d_BSplineCurve_SetKnots(self, *args)
 
-    def SetKnot(self, *args) -> "void" :
+    def SetKnot(self, *args):
         """
         * Modifies this BSpline curve by assigning the value K to the knot of index Index in the knots table. This is a relatively local modification because K must be such that: Knots(Index - 1) < K < Knots(Index + 1) Exceptions Standard_ConstructionError if: - K is not such that: Knots(Index - 1) < K < Knots(Index + 1) - M is greater than the degree of this BSpline curve or lower than the previous multiplicity of knot of index Index in the knots table. Standard_OutOfRange if Index is outside the bounds of the knots table.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param K:
         :type K: float
         :rtype: None
@@ -2741,17 +2835,17 @@ class Geom2d_BSplineCurve(Geom2d_BoundedCurve):
         * Modifies this BSpline curve by assigning the value K to the knot of index Index in the knots table. This is a relatively local modification because K must be such that: Knots(Index - 1) < K < Knots(Index + 1) The second syntax allows you also to increase the multiplicity of the knot to M (but it is not possible to decrease the multiplicity of the knot with this function). Exceptions Standard_ConstructionError if: - K is not such that: Knots(Index - 1) < K < Knots(Index + 1) - M is greater than the degree of this BSpline curve or lower than the previous multiplicity of knot of index Index in the knots table. Standard_OutOfRange if Index is outside the bounds of the knots table.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param K:
         :type K: float
         :param M:
-        :type M: int
+        :type M: Standard_Integer
         :rtype: None
 
         """
         return _Geom2d.Geom2d_BSplineCurve_SetKnot(self, *args)
 
-    def PeriodicNormalization(self, *args) -> "void" :
+    def PeriodicNormalization(self):
         """
         * Computes the parameter normalized within the 'first' period of this BSpline curve, if it is periodic: the returned value is in the range Param1 and Param1 + Period, where: - Param1 is the 'first parameter', and - Period the period of this BSpline curve. Note: If this curve is not periodic, U is not modified.
 
@@ -2760,43 +2854,43 @@ class Geom2d_BSplineCurve(Geom2d_BoundedCurve):
         :rtype: None
 
         """
-        return _Geom2d.Geom2d_BSplineCurve_PeriodicNormalization(self, *args)
+        return _Geom2d.Geom2d_BSplineCurve_PeriodicNormalization(self)
 
-    def SetPeriodic(self, *args) -> "void" :
+    def SetPeriodic(self):
         """
         * //!Changes this BSpline curve into a periodic curve. To become periodic, the curve must first be closed. Next, the knot sequence must be periodic. For this, FirstUKnotIndex and LastUKnotIndex are used to compute I1 and I2, the indexes in the knots array of the knots corresponding to the first and last parameters of this BSpline curve. The period is therefore Knot(I2) - Knot(I1). Consequently, the knots and poles tables are modified. Exceptions Standard_ConstructionError if this BSpline curve is not closed.
 
         :rtype: None
 
         """
-        return _Geom2d.Geom2d_BSplineCurve_SetPeriodic(self, *args)
+        return _Geom2d.Geom2d_BSplineCurve_SetPeriodic(self)
 
-    def SetOrigin(self, *args) -> "void" :
+    def SetOrigin(self, *args):
         """
         * Assigns the knot of index Index in the knots table as the origin of this periodic BSpline curve. As a consequence, the knots and poles tables are modified. Exceptions Standard_NoSuchObject if this curve is not periodic. Standard_DomainError if Index is outside the bounds of the knots table.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: None
 
         """
         return _Geom2d.Geom2d_BSplineCurve_SetOrigin(self, *args)
 
-    def SetNotPeriodic(self, *args) -> "void" :
+    def SetNotPeriodic(self):
         """
         * Changes this BSpline curve into a non-periodic curve. If this curve is already non-periodic, it is not modified. Note that the poles and knots tables are modified. Warning If this curve is periodic, as the multiplicity of the first and last knots is not modified, and is not equal to Degree + 1, where Degree is the degree of this BSpline curve, the start and end points of the curve are not its first and last poles.
 
         :rtype: None
 
         """
-        return _Geom2d.Geom2d_BSplineCurve_SetNotPeriodic(self, *args)
+        return _Geom2d.Geom2d_BSplineCurve_SetNotPeriodic(self)
 
-    def SetPole(self, *args) -> "void" :
+    def SetPole(self, *args):
         """
         * Modifies this BSpline curve by assigning P to the pole of index Index in the poles table. Exceptions Standard_OutOfRange if Index is outside the bounds of the poles table. Standard_ConstructionError if Weight is negative or null.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param P:
         :type P: gp_Pnt2d
         :rtype: None
@@ -2804,7 +2898,7 @@ class Geom2d_BSplineCurve(Geom2d_BoundedCurve):
         * Modifies this BSpline curve by assigning P to the pole of index Index in the poles table. The second syntax also allows you to modify the weight of the modified pole, which becomes Weight. In this case, if this BSpline curve is non-rational, it can become rational and vice versa. Exceptions Standard_OutOfRange if Index is outside the bounds of the poles table. Standard_ConstructionError if Weight is negative or null.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param P:
         :type P: gp_Pnt2d
         :param Weight:
@@ -2814,12 +2908,12 @@ class Geom2d_BSplineCurve(Geom2d_BoundedCurve):
         """
         return _Geom2d.Geom2d_BSplineCurve_SetPole(self, *args)
 
-    def SetWeight(self, *args) -> "void" :
+    def SetWeight(self, *args):
         """
         * Assigns the weight Weight to the pole of index Index of the poles table. If the curve was non rational it can become rational. If the curve was rational it can become non rational. Exceptions Standard_OutOfRange if Index is outside the bounds of the poles table. Standard_ConstructionError if Weight is negative or null.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Weight:
         :type Weight: float
         :rtype: None
@@ -2827,7 +2921,7 @@ class Geom2d_BSplineCurve(Geom2d_BoundedCurve):
         """
         return _Geom2d.Geom2d_BSplineCurve_SetWeight(self, *args)
 
-    def MovePoint(self, *args) -> "void" :
+    def MovePoint(self, *args):
         """
         * Moves the point of parameter U of this BSpline curve to P. Index1 and Index2 are the indexes in the table of poles of this BSpline curve of the first and last poles designated to be moved. FirstModifiedPole and LastModifiedPole are the indexes of the first and last poles, which are effectively modified. In the event of incompatibility between Index1, Index2 and the value U: - no change is made to this BSpline curve, and - the FirstModifiedPole and LastModifiedPole are returned null. Exceptions Standard_OutOfRange if: - Index1 is greater than or equal to Index2, or - Index1 or Index2 is less than 1 or greater than the number of poles of this BSpline curve.
 
@@ -2836,19 +2930,19 @@ class Geom2d_BSplineCurve(Geom2d_BoundedCurve):
         :param P:
         :type P: gp_Pnt2d
         :param Index1:
-        :type Index1: int
+        :type Index1: Standard_Integer
         :param Index2:
-        :type Index2: int
+        :type Index2: Standard_Integer
         :param FirstModifiedPole:
-        :type FirstModifiedPole: int &
+        :type FirstModifiedPole: Standard_Integer &
         :param LastModifiedPole:
-        :type LastModifiedPole: int &
+        :type LastModifiedPole: Standard_Integer &
         :rtype: None
 
         """
         return _Geom2d.Geom2d_BSplineCurve_MovePoint(self, *args)
 
-    def MovePointAndTangent(self, *args) -> "void" :
+    def MovePointAndTangent(self, *args):
         """
         * Move a point with parameter U to P. and makes it tangent at U be Tangent. StartingCondition = -1 means first can move EndingCondition = -1 means last point can move StartingCondition = 0 means the first point cannot move EndingCondition = 0 means the last point cannot move StartingCondition = 1 means the first point and tangent cannot move EndingCondition = 1 means the last point and tangent cannot move and so forth ErrorStatus != 0 means that there are not enought degree of freedom with the constrain to deform the curve accordingly
 
@@ -2861,57 +2955,57 @@ class Geom2d_BSplineCurve(Geom2d_BoundedCurve):
         :param Tolerance:
         :type Tolerance: float
         :param StartingCondition:
-        :type StartingCondition: int
+        :type StartingCondition: Standard_Integer
         :param EndingCondition:
-        :type EndingCondition: int
+        :type EndingCondition: Standard_Integer
         :param ErrorStatus:
-        :type ErrorStatus: int &
+        :type ErrorStatus: Standard_Integer &
         :rtype: None
 
         """
         return _Geom2d.Geom2d_BSplineCurve_MovePointAndTangent(self, *args)
 
-    def IsRational(self, *args) -> "Standard_Boolean" :
+    def IsRational(self):
         """
         * Returns True if the weights are not identical. The tolerance criterion is Epsilon of the class Real.
 
         :rtype: bool
 
         """
-        return _Geom2d.Geom2d_BSplineCurve_IsRational(self, *args)
+        return _Geom2d.Geom2d_BSplineCurve_IsRational(self)
 
-    def Degree(self, *args) -> "Standard_Integer" :
+    def Degree(self):
         """
         * Returns the degree of this BSpline curve. In this class the degree of the basis normalized B-spline functions cannot be greater than 'MaxDegree' Computation of value and derivatives
 
         :rtype: int
 
         """
-        return _Geom2d.Geom2d_BSplineCurve_Degree(self, *args)
+        return _Geom2d.Geom2d_BSplineCurve_Degree(self)
 
-    def LocalValue(self, *args) -> "gp_Pnt2d" :
+    def LocalValue(self, *args):
         """
         * Raised if FromK1 = ToK2. Raised if FromK1 and ToK2 are not in the range [FirstUKnotIndex, LastUKnotIndex].
 
         :param U:
         :type U: float
         :param FromK1:
-        :type FromK1: int
+        :type FromK1: Standard_Integer
         :param ToK2:
-        :type ToK2: int
+        :type ToK2: Standard_Integer
         :rtype: gp_Pnt2d
 
         """
         return _Geom2d.Geom2d_BSplineCurve_LocalValue(self, *args)
 
-    def LocalD0(self, *args) -> "void" :
+    def LocalD0(self, *args):
         """
         :param U:
         :type U: float
         :param FromK1:
-        :type FromK1: int
+        :type FromK1: Standard_Integer
         :param ToK2:
-        :type ToK2: int
+        :type ToK2: Standard_Integer
         :param P:
         :type P: gp_Pnt2d
         :rtype: None
@@ -2919,16 +3013,16 @@ class Geom2d_BSplineCurve(Geom2d_BoundedCurve):
         """
         return _Geom2d.Geom2d_BSplineCurve_LocalD0(self, *args)
 
-    def LocalD1(self, *args) -> "void" :
+    def LocalD1(self, *args):
         """
         * Raised if the local continuity of the curve is not C1 between the knot K1 and the knot K2. Raised if FromK1 = ToK2. Raised if FromK1 and ToK2 are not in the range [FirstUKnotIndex, LastUKnotIndex].
 
         :param U:
         :type U: float
         :param FromK1:
-        :type FromK1: int
+        :type FromK1: Standard_Integer
         :param ToK2:
-        :type ToK2: int
+        :type ToK2: Standard_Integer
         :param P:
         :type P: gp_Pnt2d
         :param V1:
@@ -2938,16 +3032,16 @@ class Geom2d_BSplineCurve(Geom2d_BoundedCurve):
         """
         return _Geom2d.Geom2d_BSplineCurve_LocalD1(self, *args)
 
-    def LocalD2(self, *args) -> "void" :
+    def LocalD2(self, *args):
         """
         * Raised if the local continuity of the curve is not C2 between the knot K1 and the knot K2. Raised if FromK1 = ToK2. Raised if FromK1 and ToK2 are not in the range [FirstUKnotIndex, LastUKnotIndex].
 
         :param U:
         :type U: float
         :param FromK1:
-        :type FromK1: int
+        :type FromK1: Standard_Integer
         :param ToK2:
-        :type ToK2: int
+        :type ToK2: Standard_Integer
         :param P:
         :type P: gp_Pnt2d
         :param V1:
@@ -2959,16 +3053,16 @@ class Geom2d_BSplineCurve(Geom2d_BoundedCurve):
         """
         return _Geom2d.Geom2d_BSplineCurve_LocalD2(self, *args)
 
-    def LocalD3(self, *args) -> "void" :
+    def LocalD3(self, *args):
         """
         * Raised if the local continuity of the curve is not C3 between the knot K1 and the knot K2. Raised if FromK1 = ToK2. Raised if FromK1 and ToK2 are not in the range [FirstUKnotIndex, LastUKnotIndex].
 
         :param U:
         :type U: float
         :param FromK1:
-        :type FromK1: int
+        :type FromK1: Standard_Integer
         :param ToK2:
-        :type ToK2: int
+        :type ToK2: Standard_Integer
         :param P:
         :type P: gp_Pnt2d
         :param V1:
@@ -2982,44 +3076,44 @@ class Geom2d_BSplineCurve(Geom2d_BoundedCurve):
         """
         return _Geom2d.Geom2d_BSplineCurve_LocalD3(self, *args)
 
-    def LocalDN(self, *args) -> "gp_Vec2d" :
+    def LocalDN(self, *args):
         """
         * Raised if the local continuity of the curve is not CN between the knot K1 and the knot K2. Raised if FromK1 = ToK2. Raised if N < 1. Raises if FromK1 and ToK2 are not in the range [FirstUKnotIndex, LastUKnotIndex].
 
         :param U:
         :type U: float
         :param FromK1:
-        :type FromK1: int
+        :type FromK1: Standard_Integer
         :param ToK2:
-        :type ToK2: int
+        :type ToK2: Standard_Integer
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :rtype: gp_Vec2d
 
         """
         return _Geom2d.Geom2d_BSplineCurve_LocalDN(self, *args)
 
-    def FirstUKnotIndex(self, *args) -> "Standard_Integer" :
+    def FirstUKnotIndex(self):
         """
         * For a B-spline curve the first parameter (which gives the start point of the curve) is a knot value but if the multiplicity of the first knot index is lower than Degree + 1 it is not the first knot of the curve. This method computes the index of the knot corresponding to the first parameter.
 
         :rtype: int
 
         """
-        return _Geom2d.Geom2d_BSplineCurve_FirstUKnotIndex(self, *args)
+        return _Geom2d.Geom2d_BSplineCurve_FirstUKnotIndex(self)
 
-    def Knot(self, *args) -> "Standard_Real" :
+    def Knot(self, *args):
         """
         * Returns the knot of range Index. When there is a knot with a multiplicity greater than 1 the knot is not repeated. The method Multiplicity can be used to get the multiplicity of the Knot. Raised if Index < 1 or Index > NbKnots
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: float
 
         """
         return _Geom2d.Geom2d_BSplineCurve_Knot(self, *args)
 
-    def Knots(self, *args) -> "void" :
+    def Knots(self, *args):
         """
         * returns the knot values of the B-spline curve; Raised if the length of K is not equal to the number of knots.
 
@@ -3030,7 +3124,7 @@ class Geom2d_BSplineCurve(Geom2d_BoundedCurve):
         """
         return _Geom2d.Geom2d_BSplineCurve_Knots(self, *args)
 
-    def KnotSequence(self, *args) -> "void" :
+    def KnotSequence(self, *args):
         """
         * Returns the knots sequence. In this sequence the knots with a multiplicity greater than 1 are repeated. Example : K = {k1, k1, k1, k2, k3, k3, k4, k4, k4} Raised if the length of K is not equal to NbPoles + Degree + 1
 
@@ -3041,25 +3135,25 @@ class Geom2d_BSplineCurve(Geom2d_BoundedCurve):
         """
         return _Geom2d.Geom2d_BSplineCurve_KnotSequence(self, *args)
 
-    def KnotDistribution(self, *args) -> "GeomAbs_BSplKnotDistribution" :
+    def KnotDistribution(self):
         """
         * Returns NonUniform or Uniform or QuasiUniform or PiecewiseBezier. If all the knots differ by a positive constant from the preceding knot the BSpline Curve can be : - Uniform if all the knots are of multiplicity 1, - QuasiUniform if all the knots are of multiplicity 1 except for the first and last knot which are of multiplicity Degree + 1, - PiecewiseBezier if the first and last knots have multiplicity Degree + 1 and if interior knots have multiplicity Degree A piecewise Bezier with only two knots is a BezierCurve. else the curve is non uniform. The tolerance criterion is Epsilon from class Real.
 
         :rtype: GeomAbs_BSplKnotDistribution
 
         """
-        return _Geom2d.Geom2d_BSplineCurve_KnotDistribution(self, *args)
+        return _Geom2d.Geom2d_BSplineCurve_KnotDistribution(self)
 
-    def LastUKnotIndex(self, *args) -> "Standard_Integer" :
+    def LastUKnotIndex(self):
         """
         * For a BSpline curve the last parameter (which gives the end point of the curve) is a knot value but if the multiplicity of the last knot index is lower than Degree + 1 it is not the last knot of the curve. This method computes the index of the knot corresponding to the last parameter.
 
         :rtype: int
 
         """
-        return _Geom2d.Geom2d_BSplineCurve_LastUKnotIndex(self, *args)
+        return _Geom2d.Geom2d_BSplineCurve_LastUKnotIndex(self)
 
-    def LocateU(self, *args) -> "void" :
+    def LocateU(self, *args):
         """
         * Locates the parametric value U in the sequence of knots. If 'WithKnotRepetition' is True we consider the knot's representation with repetition of multiple knot value, otherwise we consider the knot's representation with no repetition of multiple knot values. Knots (I1) <= U <= Knots (I2) . if I1 = I2 U is a knot value (the tolerance criterion ParametricTolerance is used). . if I1 < 1 => U < Knots (1) - Abs(ParametricTolerance) . if I2 > NbKnots => U > Knots (NbKnots) + Abs(ParametricTolerance)
 
@@ -3068,9 +3162,23 @@ class Geom2d_BSplineCurve(Geom2d_BoundedCurve):
         :param ParametricTolerance:
         :type ParametricTolerance: float
         :param I1:
-        :type I1: int &
+        :type I1: Standard_Integer &
         :param I2:
-        :type I2: int &
+        :type I2: Standard_Integer &
+        :param WithKnotRepetition: default value is Standard_False
+        :type WithKnotRepetition: bool
+        :rtype: None
+
+        * Locates the parametric value U in the sequence of knots. If 'WithKnotRepetition' is True we consider the knot's representation with repetition of multiple knot value, otherwise we consider the knot's representation with no repetition of multiple knot values. Knots (I1) <= U <= Knots (I2) . if I1 = I2 U is a knot value (the tolerance criterion ParametricTolerance is used). . if I1 < 1 => U < Knots (1) - Abs(ParametricTolerance) . if I2 > NbKnots => U > Knots (NbKnots) + Abs(ParametricTolerance)
+
+        :param U:
+        :type U: float
+        :param ParametricTolerance:
+        :type ParametricTolerance: float
+        :param I1:
+        :type I1: Standard_Integer &
+        :param I2:
+        :type I2: Standard_Integer &
         :param WithKnotRepetition: default value is Standard_False
         :type WithKnotRepetition: bool
         :rtype: None
@@ -3078,18 +3186,18 @@ class Geom2d_BSplineCurve(Geom2d_BoundedCurve):
         """
         return _Geom2d.Geom2d_BSplineCurve_LocateU(self, *args)
 
-    def Multiplicity(self, *args) -> "Standard_Integer" :
+    def Multiplicity(self, *args):
         """
         * Returns the multiplicity of the knots of range Index. Raised if Index < 1 or Index > NbKnots
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: int
 
         """
         return _Geom2d.Geom2d_BSplineCurve_Multiplicity(self, *args)
 
-    def Multiplicities(self, *args) -> "void" :
+    def Multiplicities(self, *args):
         """
         * Returns the multiplicity of the knots of the curve. Raised if the length of M is not equal to NbKnots.
 
@@ -3100,36 +3208,36 @@ class Geom2d_BSplineCurve(Geom2d_BoundedCurve):
         """
         return _Geom2d.Geom2d_BSplineCurve_Multiplicities(self, *args)
 
-    def NbKnots(self, *args) -> "Standard_Integer" :
+    def NbKnots(self):
         """
         * Returns the number of knots. This method returns the number of knot without repetition of multiple knots.
 
         :rtype: int
 
         """
-        return _Geom2d.Geom2d_BSplineCurve_NbKnots(self, *args)
+        return _Geom2d.Geom2d_BSplineCurve_NbKnots(self)
 
-    def NbPoles(self, *args) -> "Standard_Integer" :
+    def NbPoles(self):
         """
         * Returns the number of poles
 
         :rtype: int
 
         """
-        return _Geom2d.Geom2d_BSplineCurve_NbPoles(self, *args)
+        return _Geom2d.Geom2d_BSplineCurve_NbPoles(self)
 
-    def Pole(self, *args) -> "gp_Pnt2d" :
+    def Pole(self, *args):
         """
         * Returns the pole of range Index. Raised if Index < 1 or Index > NbPoles.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: gp_Pnt2d
 
         """
         return _Geom2d.Geom2d_BSplineCurve_Pole(self, *args)
 
-    def Poles(self, *args) -> "void" :
+    def Poles(self, *args):
         """
         * Returns the poles of the B-spline curve; Raised if the length of P is not equal to the number of poles.
 
@@ -3140,18 +3248,18 @@ class Geom2d_BSplineCurve(Geom2d_BoundedCurve):
         """
         return _Geom2d.Geom2d_BSplineCurve_Poles(self, *args)
 
-    def Weight(self, *args) -> "Standard_Real" :
+    def Weight(self, *args):
         """
         * Returns the weight of the pole of range Index . Raised if Index < 1 or Index > NbPoles.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: float
 
         """
         return _Geom2d.Geom2d_BSplineCurve_Weight(self, *args)
 
-    def Weights(self, *args) -> "void" :
+    def Weights(self, *args):
         """
         * Returns the weights of the B-spline curve; Raised if the length of W is not equal to NbPoles.
 
@@ -3162,17 +3270,17 @@ class Geom2d_BSplineCurve(Geom2d_BoundedCurve):
         """
         return _Geom2d.Geom2d_BSplineCurve_Weights(self, *args)
 
-    def MaxDegree(*args) -> "Standard_Integer" :
+    def MaxDegree():
         """
         * Returns the value of the maximum degree of the normalized B-spline basis functions in this package.
 
         :rtype: int
 
         """
-        return _Geom2d.Geom2d_BSplineCurve_MaxDegree(*args)
+        return _Geom2d.Geom2d_BSplineCurve_MaxDegree()
 
     MaxDegree = staticmethod(MaxDegree)
-    def Resolution(self, *args) -> "void" :
+    def Resolution(self, *args):
         """
         * Computes for this BSpline curve the parametric tolerance UTolerance for a given tolerance Tolerance3D (relative to dimensions in the plane). If f(t) is the equation of this BSpline curve, UTolerance ensures that: | t1 - t0| < Utolerance ===> |f(t1) - f(t0)| < ToleranceUV
 
@@ -3185,11 +3293,11 @@ class Geom2d_BSplineCurve(Geom2d_BoundedCurve):
         """
         return _Geom2d.Geom2d_BSplineCurve_Resolution(self, *args)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Geom2d_BSplineCurve self)"""
         return _Geom2d.Geom2d_BSplineCurve__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Geom2d_BSplineCurve" :
+    def GetHandle(self):
         """GetHandle(Geom2d_BSplineCurve self) -> Handle_Geom2d_BSplineCurve"""
         return _Geom2d.Geom2d_BSplineCurve_GetHandle(self)
 
@@ -3250,14 +3358,14 @@ Geom2d_BSplineCurve.GetHandle = new_instancemethod(_Geom2d.Geom2d_BSplineCurve_G
 Geom2d_BSplineCurve_swigregister = _Geom2d.Geom2d_BSplineCurve_swigregister
 Geom2d_BSplineCurve_swigregister(Geom2d_BSplineCurve)
 
-def Geom2d_BSplineCurve_MaxDegree(*args) -> "Standard_Integer" :
+def Geom2d_BSplineCurve_MaxDegree():
   """
     * Returns the value of the maximum degree of the normalized B-spline basis functions in this package.
 
     :rtype: int
 
     """
-  return _Geom2d.Geom2d_BSplineCurve_MaxDegree(*args)
+  return _Geom2d.Geom2d_BSplineCurve_MaxDegree()
 
 class Handle_Geom2d_BSplineCurve(Handle_Geom2d_BoundedCurve):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
@@ -3280,7 +3388,7 @@ Handle_Geom2d_BSplineCurve._kill_pointed = new_instancemethod(_Geom2d.Handle_Geo
 Handle_Geom2d_BSplineCurve_swigregister = _Geom2d.Handle_Geom2d_BSplineCurve_swigregister
 Handle_Geom2d_BSplineCurve_swigregister(Handle_Geom2d_BSplineCurve)
 
-def Handle_Geom2d_BSplineCurve_DownCast(*args) -> "Handle_Geom2d_BSplineCurve const" :
+def Handle_Geom2d_BSplineCurve_DownCast(*args):
   return _Geom2d.Handle_Geom2d_BSplineCurve_DownCast(*args)
 Handle_Geom2d_BSplineCurve_DownCast = _Geom2d.Handle_Geom2d_BSplineCurve_DownCast
 
@@ -3305,23 +3413,33 @@ class Geom2d_BezierCurve(Geom2d_BoundedCurve):
 
         """
         _Geom2d.Geom2d_BezierCurve_swiginit(self,_Geom2d.new_Geom2d_BezierCurve(*args))
-    def Increase(self, *args) -> "void" :
+    def Increase(self, *args):
         """
         * Increases the degree of a bezier curve. Degree is the new degree of <self>. raises ConstructionError if Degree is greater than MaxDegree or lower than 2 or lower than the initial degree of <self>.
 
         :param Degree:
-        :type Degree: int
+        :type Degree: Standard_Integer
         :rtype: None
 
         """
         return _Geom2d.Geom2d_BezierCurve_Increase(self, *args)
 
-    def InsertPoleAfter(self, *args) -> "void" :
+    def InsertPoleAfter(self, *args):
         """
         * Inserts a pole with its weight in the set of poles after the pole of range Index. If the curve was non rational it can become rational if all the weights are not identical. Raised if Index is not in the range [0, NbPoles] Raised if the resulting number of poles is greater than MaxDegree + 1.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
+        :param P:
+        :type P: gp_Pnt2d
+        :param Weight: default value is 1.0
+        :type Weight: float
+        :rtype: None
+
+        * Inserts a pole with its weight in the set of poles after the pole of range Index. If the curve was non rational it can become rational if all the weights are not identical. Raised if Index is not in the range [0, NbPoles] Raised if the resulting number of poles is greater than MaxDegree + 1.
+
+        :param Index:
+        :type Index: Standard_Integer
         :param P:
         :type P: gp_Pnt2d
         :param Weight: default value is 1.0
@@ -3331,12 +3449,22 @@ class Geom2d_BezierCurve(Geom2d_BoundedCurve):
         """
         return _Geom2d.Geom2d_BezierCurve_InsertPoleAfter(self, *args)
 
-    def InsertPoleBefore(self, *args) -> "void" :
+    def InsertPoleBefore(self, *args):
         """
         * Inserts a pole with its weight in the set of poles after the pole of range Index. If the curve was non rational it can become rational if all the weights are not identical. Raised if Index is not in the range [1, NbPoles+1] Raised if the resulting number of poles is greater than MaxDegree + 1.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
+        :param P:
+        :type P: gp_Pnt2d
+        :param Weight: default value is 1.0
+        :type Weight: float
+        :rtype: None
+
+        * Inserts a pole with its weight in the set of poles after the pole of range Index. If the curve was non rational it can become rational if all the weights are not identical. Raised if Index is not in the range [1, NbPoles+1] Raised if the resulting number of poles is greater than MaxDegree + 1.
+
+        :param Index:
+        :type Index: Standard_Integer
         :param P:
         :type P: gp_Pnt2d
         :param Weight: default value is 1.0
@@ -3346,18 +3474,18 @@ class Geom2d_BezierCurve(Geom2d_BoundedCurve):
         """
         return _Geom2d.Geom2d_BezierCurve_InsertPoleBefore(self, *args)
 
-    def RemovePole(self, *args) -> "void" :
+    def RemovePole(self, *args):
         """
         * Removes the pole of range Index. If the curve was rational it can become non rational. Raised if Index is not in the range [1, NbPoles]
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: None
 
         """
         return _Geom2d.Geom2d_BezierCurve_RemovePole(self, *args)
 
-    def Segment(self, *args) -> "void" :
+    def Segment(self, *args):
         """
         * Segments the curve between U1 and U2 which can be out of the bounds of the curve. The curve is oriented from U1 to U2. The control points are modified, the first and the last point are not the same but the parametrization range is [0, 1] else it could not be a Bezier curve. Warnings : Even if <self> is not closed it can become closed after the segmentation for example if U1 or U2 are out of the bounds of the curve <self> or if the curve makes loop. After the segmentation the length of a curve can be null.
 
@@ -3370,12 +3498,12 @@ class Geom2d_BezierCurve(Geom2d_BoundedCurve):
         """
         return _Geom2d.Geom2d_BezierCurve_Segment(self, *args)
 
-    def SetPole(self, *args) -> "void" :
+    def SetPole(self, *args):
         """
         * Substitutes the pole of range index with P. If the curve <self> is rational the weight of range Index is not modified. raiseD if Index is not in the range [1, NbPoles]
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param P:
         :type P: gp_Pnt2d
         :rtype: None
@@ -3383,7 +3511,7 @@ class Geom2d_BezierCurve(Geom2d_BoundedCurve):
         * Substitutes the pole and the weights of range Index. If the curve <self> is not rational it can become rational if all the weights are not identical. If the curve was rational it can become non rational if all the weights are identical. Raised if Index is not in the range [1, NbPoles] Raised if Weight <= Resolution from package gp
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param P:
         :type P: gp_Pnt2d
         :param Weight:
@@ -3393,12 +3521,12 @@ class Geom2d_BezierCurve(Geom2d_BoundedCurve):
         """
         return _Geom2d.Geom2d_BezierCurve_SetPole(self, *args)
 
-    def SetWeight(self, *args) -> "void" :
+    def SetWeight(self, *args):
         """
         * Changes the weight of the pole of range Index. If the curve <self> is not rational it can become rational if all the weights are not identical. If the curve was rational it can become non rational if all the weights are identical. Raised if Index is not in the range [1, NbPoles] Raised if Weight <= Resolution from package gp
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Weight:
         :type Weight: float
         :rtype: None
@@ -3406,45 +3534,45 @@ class Geom2d_BezierCurve(Geom2d_BoundedCurve):
         """
         return _Geom2d.Geom2d_BezierCurve_SetWeight(self, *args)
 
-    def IsRational(self, *args) -> "Standard_Boolean" :
+    def IsRational(self):
         """
         * Returns false if all the weights are identical. The tolerance criterion is Resolution from package gp.
 
         :rtype: bool
 
         """
-        return _Geom2d.Geom2d_BezierCurve_IsRational(self, *args)
+        return _Geom2d.Geom2d_BezierCurve_IsRational(self)
 
-    def Degree(self, *args) -> "Standard_Integer" :
+    def Degree(self):
         """
         * Returns the polynomial degree of the curve. It is the number of poles less one. In this package the Degree of a Bezier curve cannot be greater than 'MaxDegree'.
 
         :rtype: int
 
         """
-        return _Geom2d.Geom2d_BezierCurve_Degree(self, *args)
+        return _Geom2d.Geom2d_BezierCurve_Degree(self)
 
-    def NbPoles(self, *args) -> "Standard_Integer" :
+    def NbPoles(self):
         """
         * Returns the number of poles for this Bezier curve.
 
         :rtype: int
 
         """
-        return _Geom2d.Geom2d_BezierCurve_NbPoles(self, *args)
+        return _Geom2d.Geom2d_BezierCurve_NbPoles(self)
 
-    def Pole(self, *args) -> "gp_Pnt2d" :
+    def Pole(self, *args):
         """
         * Returns the pole of range Index. Raised if Index is not in the range [1, NbPoles]
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: gp_Pnt2d
 
         """
         return _Geom2d.Geom2d_BezierCurve_Pole(self, *args)
 
-    def Poles(self, *args) -> "void" :
+    def Poles(self, *args):
         """
         * Returns all the poles of the curve. Raised if the length of P is not equal to the number of poles.
 
@@ -3455,18 +3583,18 @@ class Geom2d_BezierCurve(Geom2d_BoundedCurve):
         """
         return _Geom2d.Geom2d_BezierCurve_Poles(self, *args)
 
-    def Weight(self, *args) -> "Standard_Real" :
+    def Weight(self, *args):
         """
         * Returns the weight of range Index. Raised if Index is not in the range [1, NbPoles]
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: float
 
         """
         return _Geom2d.Geom2d_BezierCurve_Weight(self, *args)
 
-    def Weights(self, *args) -> "void" :
+    def Weights(self, *args):
         """
         * Returns all the weights of the curve. Raised if the length of W is not equal to the number of poles.
 
@@ -3477,17 +3605,17 @@ class Geom2d_BezierCurve(Geom2d_BoundedCurve):
         """
         return _Geom2d.Geom2d_BezierCurve_Weights(self, *args)
 
-    def MaxDegree(*args) -> "Standard_Integer" :
+    def MaxDegree():
         """
         * Returns the value of the maximum polynomial degree of a BezierCurve. This value is 25.
 
         :rtype: int
 
         """
-        return _Geom2d.Geom2d_BezierCurve_MaxDegree(*args)
+        return _Geom2d.Geom2d_BezierCurve_MaxDegree()
 
     MaxDegree = staticmethod(MaxDegree)
-    def Resolution(self, *args) -> "void" :
+    def Resolution(self, *args):
         """
         * Computes for this Bezier curve the parametric tolerance UTolerance for a given tolerance Tolerance3D (relative to dimensions in the plane). If f(t) is the equation of this Bezier curve, UTolerance ensures that | t1 - t0| < Utolerance ===> |f(t1) - f(t0)| < ToleranceUV
 
@@ -3500,11 +3628,11 @@ class Geom2d_BezierCurve(Geom2d_BoundedCurve):
         """
         return _Geom2d.Geom2d_BezierCurve_Resolution(self, *args)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Geom2d_BezierCurve self)"""
         return _Geom2d.Geom2d_BezierCurve__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Geom2d_BezierCurve" :
+    def GetHandle(self):
         """GetHandle(Geom2d_BezierCurve self) -> Handle_Geom2d_BezierCurve"""
         return _Geom2d.Geom2d_BezierCurve_GetHandle(self)
 
@@ -3536,14 +3664,14 @@ Geom2d_BezierCurve.GetHandle = new_instancemethod(_Geom2d.Geom2d_BezierCurve_Get
 Geom2d_BezierCurve_swigregister = _Geom2d.Geom2d_BezierCurve_swigregister
 Geom2d_BezierCurve_swigregister(Geom2d_BezierCurve)
 
-def Geom2d_BezierCurve_MaxDegree(*args) -> "Standard_Integer" :
+def Geom2d_BezierCurve_MaxDegree():
   """
     * Returns the value of the maximum polynomial degree of a BezierCurve. This value is 25.
 
     :rtype: int
 
     """
-  return _Geom2d.Geom2d_BezierCurve_MaxDegree(*args)
+  return _Geom2d.Geom2d_BezierCurve_MaxDegree()
 
 class Handle_Geom2d_BezierCurve(Handle_Geom2d_BoundedCurve):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
@@ -3566,7 +3694,7 @@ Handle_Geom2d_BezierCurve._kill_pointed = new_instancemethod(_Geom2d.Handle_Geom
 Handle_Geom2d_BezierCurve_swigregister = _Geom2d.Handle_Geom2d_BezierCurve_swigregister
 Handle_Geom2d_BezierCurve_swigregister(Handle_Geom2d_BezierCurve)
 
-def Handle_Geom2d_BezierCurve_DownCast(*args) -> "Handle_Geom2d_BezierCurve const" :
+def Handle_Geom2d_BezierCurve_DownCast(*args):
   return _Geom2d.Handle_Geom2d_BezierCurve_DownCast(*args)
 Handle_Geom2d_BezierCurve_DownCast = _Geom2d.Handle_Geom2d_BezierCurve_DownCast
 
@@ -3591,6 +3719,16 @@ class Geom2d_Circle(Geom2d_Conic):
         :type Sense: bool
         :rtype: None
 
+        * Constructs a circle of radius Radius, whose center is the origin of axis A; A is the 'X Axis' of the local coordinate system of the circle; this coordinate system is direct if Sense is true (default value) or indirect if Sense is false. Note: It is possible to create a circle where Radius is equal to 0.0. Exceptions Standard_ConstructionError if Radius is negative.
+
+        :param A:
+        :type A: gp_Ax2d
+        :param Radius:
+        :type Radius: float
+        :param Sense: default value is Standard_True
+        :type Sense: bool
+        :rtype: None
+
         * Constructs a circle of radius Radius, where the coordinate system A locates the circle and defines its orientation in the plane such that: - the center of the circle is the origin of A, - the orientation (direct or indirect) of A gives the orientation of the circle.
 
         :param A:
@@ -3601,7 +3739,7 @@ class Geom2d_Circle(Geom2d_Conic):
 
         """
         _Geom2d.Geom2d_Circle_swiginit(self,_Geom2d.new_Geom2d_Circle(*args))
-    def SetCirc2d(self, *args) -> "void" :
+    def SetCirc2d(self, *args):
         """
         * Converts the gp_Circ2d circle C into this circle.
 
@@ -3612,7 +3750,7 @@ class Geom2d_Circle(Geom2d_Conic):
         """
         return _Geom2d.Geom2d_Circle_SetCirc2d(self, *args)
 
-    def SetRadius(self, *args) -> "void" :
+    def SetRadius(self, *args):
         """
         :param R:
         :type R: float
@@ -3621,29 +3759,29 @@ class Geom2d_Circle(Geom2d_Conic):
         """
         return _Geom2d.Geom2d_Circle_SetRadius(self, *args)
 
-    def Circ2d(self, *args) -> "gp_Circ2d" :
+    def Circ2d(self):
         """
         * Returns the non persistent circle from gp with the same geometric properties as <self>.
 
         :rtype: gp_Circ2d
 
         """
-        return _Geom2d.Geom2d_Circle_Circ2d(self, *args)
+        return _Geom2d.Geom2d_Circle_Circ2d(self)
 
-    def Radius(self, *args) -> "Standard_Real" :
+    def Radius(self):
         """
         * Returns the radius of this circle.
 
         :rtype: float
 
         """
-        return _Geom2d.Geom2d_Circle_Radius(self, *args)
+        return _Geom2d.Geom2d_Circle_Radius(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Geom2d_Circle self)"""
         return _Geom2d.Geom2d_Circle__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Geom2d_Circle" :
+    def GetHandle(self):
         """GetHandle(Geom2d_Circle self) -> Handle_Geom2d_Circle"""
         return _Geom2d.Geom2d_Circle_GetHandle(self)
 
@@ -3685,7 +3823,7 @@ Handle_Geom2d_Circle._kill_pointed = new_instancemethod(_Geom2d.Handle_Geom2d_Ci
 Handle_Geom2d_Circle_swigregister = _Geom2d.Handle_Geom2d_Circle_swigregister
 Handle_Geom2d_Circle_swigregister(Handle_Geom2d_Circle)
 
-def Handle_Geom2d_Circle_DownCast(*args) -> "Handle_Geom2d_Circle const" :
+def Handle_Geom2d_Circle_DownCast(*args):
   return _Geom2d.Handle_Geom2d_Circle_DownCast(*args)
 Handle_Geom2d_Circle_DownCast = _Geom2d.Handle_Geom2d_Circle_DownCast
 
@@ -3712,6 +3850,18 @@ class Geom2d_Ellipse(Geom2d_Conic):
         :type Sense: bool
         :rtype: None
 
+        * Creates an ellipse defined by its major and minor radii, MajorRadius and MinorRadius, and positioned in the plane by its major axis MajorAxis; the center of the ellipse is the origin of MajorAxis and the unit vector of MajorAxis is the 'X Direction' of the local coordinate system of the ellipse; this coordinate system is direct if Sense is true (default value) or indirect if Sense is false. Warnings : It is not forbidden to create an ellipse with MajorRadius = MinorRadius. Exceptions Standard_ConstructionError if: - MajorRadius is less than MinorRadius, or - MinorRadius is less than 0.
+
+        :param MajorAxis:
+        :type MajorAxis: gp_Ax2d
+        :param MajorRadius:
+        :type MajorRadius: float
+        :param MinorRadius:
+        :type MinorRadius: float
+        :param Sense: default value is Standard_True
+        :type Sense: bool
+        :rtype: None
+
         * Creates an ellipse defined by its major and minor radii, MajorRadius and MinorRadius, where the coordinate system Axis locates the ellipse and defines its orientation in the plane such that: - the center of the ellipse is the origin of Axis, - the 'X Direction' of Axis defines the major axis of the ellipse, - the 'Y Direction' of Axis defines the minor axis of the ellipse, - the orientation of Axis (direct or indirect) gives the orientation of the ellipse. Warnings : It is not forbidden to create an ellipse with MajorRadius = MinorRadius. Exceptions Standard_ConstructionError if: - MajorRadius is less than MinorRadius, or - MinorRadius is less than 0.
 
         :param Axis:
@@ -3724,7 +3874,7 @@ class Geom2d_Ellipse(Geom2d_Conic):
 
         """
         _Geom2d.Geom2d_Ellipse_swiginit(self,_Geom2d.new_Geom2d_Ellipse(*args))
-    def SetElips2d(self, *args) -> "void" :
+    def SetElips2d(self, *args):
         """
         * Converts the gp_Elips2d ellipse E into this ellipse.
 
@@ -3735,7 +3885,7 @@ class Geom2d_Ellipse(Geom2d_Conic):
         """
         return _Geom2d.Geom2d_Ellipse_SetElips2d(self, *args)
 
-    def SetMajorRadius(self, *args) -> "void" :
+    def SetMajorRadius(self, *args):
         """
         * Assigns a value to the major radius of this ellipse. Exceptions Standard_ConstructionError if: - the major radius of this ellipse becomes less than the minor radius, or - MinorRadius is less than 0.
 
@@ -3746,7 +3896,7 @@ class Geom2d_Ellipse(Geom2d_Conic):
         """
         return _Geom2d.Geom2d_Ellipse_SetMajorRadius(self, *args)
 
-    def SetMinorRadius(self, *args) -> "void" :
+    def SetMinorRadius(self, *args):
         """
         * Assigns a value to the minor radius of this ellipse. Exceptions Standard_ConstructionError if: - the major radius of this ellipse becomes less than the minor radius, or - MinorRadius is less than 0.
 
@@ -3757,92 +3907,92 @@ class Geom2d_Ellipse(Geom2d_Conic):
         """
         return _Geom2d.Geom2d_Ellipse_SetMinorRadius(self, *args)
 
-    def Elips2d(self, *args) -> "gp_Elips2d" :
+    def Elips2d(self):
         """
         * Converts this ellipse into a gp_Elips2d ellipse.
 
         :rtype: gp_Elips2d
 
         """
-        return _Geom2d.Geom2d_Ellipse_Elips2d(self, *args)
+        return _Geom2d.Geom2d_Ellipse_Elips2d(self)
 
-    def Directrix1(self, *args) -> "gp_Ax2d" :
+    def Directrix1(self):
         """
         * Computes the directrices of this ellipse. This directrix is the line normal to the XAxis of the ellipse in the local plane (Z = 0) at a distance d = MajorRadius / e from the center of the ellipse, where e is the eccentricity of the ellipse. This line is parallel to the 'YAxis'. The intersection point between directrix1 and the 'XAxis' is the 'Location' point of the directrix1. This point is on the positive side of the 'XAxis'. Raises ConstructionError if Eccentricity = 0.0. (The ellipse degenerates into a circle)
 
         :rtype: gp_Ax2d
 
         """
-        return _Geom2d.Geom2d_Ellipse_Directrix1(self, *args)
+        return _Geom2d.Geom2d_Ellipse_Directrix1(self)
 
-    def Directrix2(self, *args) -> "gp_Ax2d" :
+    def Directrix2(self):
         """
         * This line is obtained by the symmetrical transformation of 'Directrix1' with respect to the 'YAxis' of the ellipse. Raises ConstructionError if Eccentricity = 0.0. (The ellipse degenerates into a circle).
 
         :rtype: gp_Ax2d
 
         """
-        return _Geom2d.Geom2d_Ellipse_Directrix2(self, *args)
+        return _Geom2d.Geom2d_Ellipse_Directrix2(self)
 
-    def Focal(self, *args) -> "Standard_Real" :
+    def Focal(self):
         """
         * Computes the focal distance. The focal distance is the distance between the center and a focus of the ellipse.
 
         :rtype: float
 
         """
-        return _Geom2d.Geom2d_Ellipse_Focal(self, *args)
+        return _Geom2d.Geom2d_Ellipse_Focal(self)
 
-    def Focus1(self, *args) -> "gp_Pnt2d" :
+    def Focus1(self):
         """
         * Returns the first focus of the ellipse. This focus is on the positive side of the 'XAxis' of the ellipse.
 
         :rtype: gp_Pnt2d
 
         """
-        return _Geom2d.Geom2d_Ellipse_Focus1(self, *args)
+        return _Geom2d.Geom2d_Ellipse_Focus1(self)
 
-    def Focus2(self, *args) -> "gp_Pnt2d" :
+    def Focus2(self):
         """
         * Returns the second focus of the ellipse. This focus is on the negative side of the 'XAxis' of the ellipse.
 
         :rtype: gp_Pnt2d
 
         """
-        return _Geom2d.Geom2d_Ellipse_Focus2(self, *args)
+        return _Geom2d.Geom2d_Ellipse_Focus2(self)
 
-    def MajorRadius(self, *args) -> "Standard_Real" :
+    def MajorRadius(self):
         """
         * Returns the major radius of this ellipse.
 
         :rtype: float
 
         """
-        return _Geom2d.Geom2d_Ellipse_MajorRadius(self, *args)
+        return _Geom2d.Geom2d_Ellipse_MajorRadius(self)
 
-    def MinorRadius(self, *args) -> "Standard_Real" :
+    def MinorRadius(self):
         """
         * Returns the minor radius of this ellipse.
 
         :rtype: float
 
         """
-        return _Geom2d.Geom2d_Ellipse_MinorRadius(self, *args)
+        return _Geom2d.Geom2d_Ellipse_MinorRadius(self)
 
-    def Parameter(self, *args) -> "Standard_Real" :
+    def Parameter(self):
         """
         * Computes the parameter of this ellipse. This value is given by the formula p = (1 - e * e) * MajorRadius where e is the eccentricity of the ellipse. Returns 0 if MajorRadius = 0
 
         :rtype: float
 
         """
-        return _Geom2d.Geom2d_Ellipse_Parameter(self, *args)
+        return _Geom2d.Geom2d_Ellipse_Parameter(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Geom2d_Ellipse self)"""
         return _Geom2d.Geom2d_Ellipse__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Geom2d_Ellipse" :
+    def GetHandle(self):
         """GetHandle(Geom2d_Ellipse self) -> Handle_Geom2d_Ellipse"""
         return _Geom2d.Geom2d_Ellipse_GetHandle(self)
 
@@ -3892,7 +4042,7 @@ Handle_Geom2d_Ellipse._kill_pointed = new_instancemethod(_Geom2d.Handle_Geom2d_E
 Handle_Geom2d_Ellipse_swigregister = _Geom2d.Handle_Geom2d_Ellipse_swigregister
 Handle_Geom2d_Ellipse_swigregister(Handle_Geom2d_Ellipse)
 
-def Handle_Geom2d_Ellipse_DownCast(*args) -> "Handle_Geom2d_Ellipse const" :
+def Handle_Geom2d_Ellipse_DownCast(*args):
   return _Geom2d.Handle_Geom2d_Ellipse_DownCast(*args)
 Handle_Geom2d_Ellipse_DownCast = _Geom2d.Handle_Geom2d_Ellipse_DownCast
 
@@ -3919,6 +4069,18 @@ class Geom2d_Hyperbola(Geom2d_Conic):
         :type Sense: bool
         :rtype: None
 
+        * MajorAxis is the 'XAxis' of the hyperbola. The YAxis is in the direct sense if 'Sense' is True; The major radius of the hyperbola is on this 'XAxis' and the minor radius is on the 'YAxis' of the hyperbola. Raised if MajorRadius < 0.0 or if MinorRadius < 0.0
+
+        :param MajorAxis:
+        :type MajorAxis: gp_Ax2d
+        :param MajorRadius:
+        :type MajorRadius: float
+        :param MinorRadius:
+        :type MinorRadius: float
+        :param Sense: default value is Standard_True
+        :type Sense: bool
+        :rtype: None
+
         * The XDirection of 'Axis' is the 'XAxis' of the hyperbola and the YDirection of 'Axis' is the 'YAxis'. The major radius of the hyperbola is on this 'XAxis' and the minor radius is on the 'YAxis' of the hyperbola. Raised if MajorRadius < 0.0 or if MinorRadius < 0.0
 
         :param Axis:
@@ -3931,7 +4093,7 @@ class Geom2d_Hyperbola(Geom2d_Conic):
 
         """
         _Geom2d.Geom2d_Hyperbola_swiginit(self,_Geom2d.new_Geom2d_Hyperbola(*args))
-    def SetHypr2d(self, *args) -> "void" :
+    def SetHypr2d(self, *args):
         """
         * Converts the gp_Hypr2d hyperbola H into this hyperbola.
 
@@ -3942,7 +4104,7 @@ class Geom2d_Hyperbola(Geom2d_Conic):
         """
         return _Geom2d.Geom2d_Hyperbola_SetHypr2d(self, *args)
 
-    def SetMajorRadius(self, *args) -> "void" :
+    def SetMajorRadius(self, *args):
         """
         * Assigns a value to the major or minor radius of this hyperbola. Exceptions Standard_ConstructionError if: - MajorRadius is less than 0.0, - MinorRadius is less than 0.0.
 
@@ -3953,7 +4115,7 @@ class Geom2d_Hyperbola(Geom2d_Conic):
         """
         return _Geom2d.Geom2d_Hyperbola_SetMajorRadius(self, *args)
 
-    def SetMinorRadius(self, *args) -> "void" :
+    def SetMinorRadius(self, *args):
         """
         * Assigns a value to the major or minor radius of this hyperbola. Exceptions Standard_ConstructionError if: - MajorRadius is less than 0.0, - MinorRadius is less than 0.0.
 
@@ -3964,137 +4126,137 @@ class Geom2d_Hyperbola(Geom2d_Conic):
         """
         return _Geom2d.Geom2d_Hyperbola_SetMinorRadius(self, *args)
 
-    def Hypr2d(self, *args) -> "gp_Hypr2d" :
+    def Hypr2d(self):
         """
         * Converts this hyperbola into a gp_Hypr2d one.
 
         :rtype: gp_Hypr2d
 
         """
-        return _Geom2d.Geom2d_Hyperbola_Hypr2d(self, *args)
+        return _Geom2d.Geom2d_Hyperbola_Hypr2d(self)
 
-    def Asymptote1(self, *args) -> "gp_Ax2d" :
+    def Asymptote1(self):
         """
         * In the local coordinate system of the hyperbola the equation of the hyperbola is (X*X)/(A*A) - (Y*Y)/(B*B) = 1.0 and the equation of the first asymptote is Y = (B/A)*X where A is the major radius of the hyperbola and B is the minor radius of the hyperbola. Raised if MajorRadius = 0.0
 
         :rtype: gp_Ax2d
 
         """
-        return _Geom2d.Geom2d_Hyperbola_Asymptote1(self, *args)
+        return _Geom2d.Geom2d_Hyperbola_Asymptote1(self)
 
-    def Asymptote2(self, *args) -> "gp_Ax2d" :
+    def Asymptote2(self):
         """
         * In the local coordinate system of the hyperbola the equation of the hyperbola is (X*X)/(A*A) - (Y*Y)/(B*B) = 1.0 and the equation of the first asymptote is Y = -(B/A)*X. where A is the major radius of the hyperbola and B is the minor radius of the hyperbola. raised if MajorRadius = 0.0
 
         :rtype: gp_Ax2d
 
         """
-        return _Geom2d.Geom2d_Hyperbola_Asymptote2(self, *args)
+        return _Geom2d.Geom2d_Hyperbola_Asymptote2(self)
 
-    def ConjugateBranch1(self, *args) -> "gp_Hypr2d" :
+    def ConjugateBranch1(self):
         """
         * Computes the first conjugate branch relative to this hyperbola. Note: The diagram given under the class purpose indicates where these two branches of hyperbola are positioned in relation to this branch of hyperbola.
 
         :rtype: gp_Hypr2d
 
         """
-        return _Geom2d.Geom2d_Hyperbola_ConjugateBranch1(self, *args)
+        return _Geom2d.Geom2d_Hyperbola_ConjugateBranch1(self)
 
-    def ConjugateBranch2(self, *args) -> "gp_Hypr2d" :
+    def ConjugateBranch2(self):
         """
         * Computes the second conjugate branch relative to this hyperbola. Note: The diagram given under the class purpose indicates where these two branches of hyperbola are positioned in relation to this branch of hyperbola.
 
         :rtype: gp_Hypr2d
 
         """
-        return _Geom2d.Geom2d_Hyperbola_ConjugateBranch2(self, *args)
+        return _Geom2d.Geom2d_Hyperbola_ConjugateBranch2(self)
 
-    def Directrix1(self, *args) -> "gp_Ax2d" :
+    def Directrix1(self):
         """
         * This directrix is the line normal to the XAxis of the hyperbola in the local plane (Z = 0) at a distance d = MajorRadius / e from the center of the hyperbola, where e is the eccentricity of the hyperbola. This line is parallel to the 'YAxis'. The intersection point between directrix1 and the 'XAxis' is the location point of the directrix1. This point is on the positive side of the 'XAxis'.
 
         :rtype: gp_Ax2d
 
         """
-        return _Geom2d.Geom2d_Hyperbola_Directrix1(self, *args)
+        return _Geom2d.Geom2d_Hyperbola_Directrix1(self)
 
-    def Directrix2(self, *args) -> "gp_Ax2d" :
+    def Directrix2(self):
         """
         * This line is obtained by the symmetrical transformation of 'Directrix1' with respect to the 'YAxis' of the hyperbola.
 
         :rtype: gp_Ax2d
 
         """
-        return _Geom2d.Geom2d_Hyperbola_Directrix2(self, *args)
+        return _Geom2d.Geom2d_Hyperbola_Directrix2(self)
 
-    def Focal(self, *args) -> "Standard_Real" :
+    def Focal(self):
         """
         * Computes the focal distance. It is the distance between the two focus of the hyperbola.
 
         :rtype: float
 
         """
-        return _Geom2d.Geom2d_Hyperbola_Focal(self, *args)
+        return _Geom2d.Geom2d_Hyperbola_Focal(self)
 
-    def Focus1(self, *args) -> "gp_Pnt2d" :
+    def Focus1(self):
         """
         * Returns the first focus of the hyperbola. This focus is on the positive side of the 'XAxis' of the hyperbola.
 
         :rtype: gp_Pnt2d
 
         """
-        return _Geom2d.Geom2d_Hyperbola_Focus1(self, *args)
+        return _Geom2d.Geom2d_Hyperbola_Focus1(self)
 
-    def Focus2(self, *args) -> "gp_Pnt2d" :
+    def Focus2(self):
         """
         * Returns the second focus of the hyperbola. This focus is on the negative side of the 'XAxis' of the hyperbola.
 
         :rtype: gp_Pnt2d
 
         """
-        return _Geom2d.Geom2d_Hyperbola_Focus2(self, *args)
+        return _Geom2d.Geom2d_Hyperbola_Focus2(self)
 
-    def MajorRadius(self, *args) -> "Standard_Real" :
+    def MajorRadius(self):
         """
         * Returns the major or minor radius of this hyperbola. The major radius is also the distance between the center of the hyperbola and the apex of the main branch (located on the 'X Axis' of the hyperbola).
 
         :rtype: float
 
         """
-        return _Geom2d.Geom2d_Hyperbola_MajorRadius(self, *args)
+        return _Geom2d.Geom2d_Hyperbola_MajorRadius(self)
 
-    def MinorRadius(self, *args) -> "Standard_Real" :
+    def MinorRadius(self):
         """
         * Returns the major or minor radius of this hyperbola. The minor radius is also the distance between the center of the hyperbola and the apex of a conjugate branch (located on the 'Y Axis' of the hyperbola).
 
         :rtype: float
 
         """
-        return _Geom2d.Geom2d_Hyperbola_MinorRadius(self, *args)
+        return _Geom2d.Geom2d_Hyperbola_MinorRadius(self)
 
-    def OtherBranch(self, *args) -> "gp_Hypr2d" :
+    def OtherBranch(self):
         """
         * Computes the 'other' branch of this hyperbola. This is a symmetrical branch with respect to the center of this hyperbola. Note: The diagram given under the class purpose indicates where the 'other' branch is positioned in relation to this branch of the hyperbola. ^ YAxis | FirstConjugateBranch | Other | Main ---------------------------- C ------------------------------------------&gtXAxis Branch | Branch | | SecondConjugateBranch | Warning The major radius can be less than the minor radius.
 
         :rtype: gp_Hypr2d
 
         """
-        return _Geom2d.Geom2d_Hyperbola_OtherBranch(self, *args)
+        return _Geom2d.Geom2d_Hyperbola_OtherBranch(self)
 
-    def Parameter(self, *args) -> "Standard_Real" :
+    def Parameter(self):
         """
         * Computes the parameter of this hyperbola. The parameter is: p = (e*e - 1) * MajorRadius where e is the eccentricity of this hyperbola and MajorRadius its major radius. Exceptions Standard_DomainError if the major radius of this hyperbola is null.
 
         :rtype: float
 
         """
-        return _Geom2d.Geom2d_Hyperbola_Parameter(self, *args)
+        return _Geom2d.Geom2d_Hyperbola_Parameter(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Geom2d_Hyperbola self)"""
         return _Geom2d.Geom2d_Hyperbola__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Geom2d_Hyperbola" :
+    def GetHandle(self):
         """GetHandle(Geom2d_Hyperbola self) -> Handle_Geom2d_Hyperbola"""
         return _Geom2d.Geom2d_Hyperbola_GetHandle(self)
 
@@ -4149,7 +4311,7 @@ Handle_Geom2d_Hyperbola._kill_pointed = new_instancemethod(_Geom2d.Handle_Geom2d
 Handle_Geom2d_Hyperbola_swigregister = _Geom2d.Handle_Geom2d_Hyperbola_swigregister
 Handle_Geom2d_Hyperbola_swigregister(Handle_Geom2d_Hyperbola)
 
-def Handle_Geom2d_Hyperbola_DownCast(*args) -> "Handle_Geom2d_Hyperbola const" :
+def Handle_Geom2d_Hyperbola_DownCast(*args):
   return _Geom2d.Handle_Geom2d_Hyperbola_DownCast(*args)
 Handle_Geom2d_Hyperbola_DownCast = _Geom2d.Handle_Geom2d_Hyperbola_DownCast
 
@@ -4162,6 +4324,16 @@ class Geom2d_Parabola(Geom2d_Conic):
 
         :param Prb:
         :type Prb: gp_Parab2d
+        :rtype: None
+
+        * Creates a parabola with its 'MirrorAxis' and it's focal length 'Focal'. MirrorAxis is the axis of symmetry of the curve, it is the 'XAxis'. The 'YAxis' is parallel to the directrix of the parabola and is in the direct sense if Sense is True. The 'Location' point of 'MirrorAxis' is the vertex of the parabola Raised if Focal < 0.0
+
+        :param MirrorAxis:
+        :type MirrorAxis: gp_Ax2d
+        :param Focal:
+        :type Focal: float
+        :param Sense: default value is Standard_True
+        :type Sense: bool
         :rtype: None
 
         * Creates a parabola with its 'MirrorAxis' and it's focal length 'Focal'. MirrorAxis is the axis of symmetry of the curve, it is the 'XAxis'. The 'YAxis' is parallel to the directrix of the parabola and is in the direct sense if Sense is True. The 'Location' point of 'MirrorAxis' is the vertex of the parabola Raised if Focal < 0.0
@@ -4192,7 +4364,7 @@ class Geom2d_Parabola(Geom2d_Conic):
 
         """
         _Geom2d.Geom2d_Parabola_swiginit(self,_Geom2d.new_Geom2d_Parabola(*args))
-    def SetFocal(self, *args) -> "void" :
+    def SetFocal(self, *args):
         """
         * Assigns the value Focal to the focal length of this parabola. Exceptions Standard_ConstructionError if Focal is negative.
 
@@ -4203,7 +4375,7 @@ class Geom2d_Parabola(Geom2d_Conic):
         """
         return _Geom2d.Geom2d_Parabola_SetFocal(self, *args)
 
-    def SetParab2d(self, *args) -> "void" :
+    def SetParab2d(self, *args):
         """
         * Converts the gp_Parab2d parabola Prb into this parabola.
 
@@ -4214,56 +4386,56 @@ class Geom2d_Parabola(Geom2d_Conic):
         """
         return _Geom2d.Geom2d_Parabola_SetParab2d(self, *args)
 
-    def Parab2d(self, *args) -> "gp_Parab2d" :
+    def Parab2d(self):
         """
         * Returns the non persistent parabola from gp with the same geometric properties as <self>.
 
         :rtype: gp_Parab2d
 
         """
-        return _Geom2d.Geom2d_Parabola_Parab2d(self, *args)
+        return _Geom2d.Geom2d_Parabola_Parab2d(self)
 
-    def Directrix(self, *args) -> "gp_Ax2d" :
+    def Directrix(self):
         """
         * The directrix is parallel to the 'YAxis' of the parabola. The 'Location' point of the directrix is the intersection point between the directrix and the symmetry axis ('XAxis') of the parabola.
 
         :rtype: gp_Ax2d
 
         """
-        return _Geom2d.Geom2d_Parabola_Directrix(self, *args)
+        return _Geom2d.Geom2d_Parabola_Directrix(self)
 
-    def Focus(self, *args) -> "gp_Pnt2d" :
+    def Focus(self):
         """
         * Computes the focus of this parabola The focus is on the positive side of the 'X Axis' of the local coordinate system of the parabola.
 
         :rtype: gp_Pnt2d
 
         """
-        return _Geom2d.Geom2d_Parabola_Focus(self, *args)
+        return _Geom2d.Geom2d_Parabola_Focus(self)
 
-    def Focal(self, *args) -> "Standard_Real" :
+    def Focal(self):
         """
         * Computes the focal length of this parabola. The focal length is the distance between the apex and the focus of the parabola.
 
         :rtype: float
 
         """
-        return _Geom2d.Geom2d_Parabola_Focal(self, *args)
+        return _Geom2d.Geom2d_Parabola_Focal(self)
 
-    def Parameter(self, *args) -> "Standard_Real" :
+    def Parameter(self):
         """
         * Computes the parameter of this parabola, which is the distance between its focus and its directrix. This distance is twice the focal length. If P is the parameter of the parabola, the equation of the parabola in its local coordinate system is: Y**2 = 2.*P*X.
 
         :rtype: float
 
         """
-        return _Geom2d.Geom2d_Parabola_Parameter(self, *args)
+        return _Geom2d.Geom2d_Parabola_Parameter(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Geom2d_Parabola self)"""
         return _Geom2d.Geom2d_Parabola__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Geom2d_Parabola" :
+    def GetHandle(self):
         """GetHandle(Geom2d_Parabola self) -> Handle_Geom2d_Parabola"""
         return _Geom2d.Geom2d_Parabola_GetHandle(self)
 
@@ -4308,7 +4480,7 @@ Handle_Geom2d_Parabola._kill_pointed = new_instancemethod(_Geom2d.Handle_Geom2d_
 Handle_Geom2d_Parabola_swigregister = _Geom2d.Handle_Geom2d_Parabola_swigregister
 Handle_Geom2d_Parabola_swigregister(Handle_Geom2d_Parabola)
 
-def Handle_Geom2d_Parabola_DownCast(*args) -> "Handle_Geom2d_Parabola const" :
+def Handle_Geom2d_Parabola_DownCast(*args):
   return _Geom2d.Handle_Geom2d_Parabola_DownCast(*args)
 Handle_Geom2d_Parabola_DownCast = _Geom2d.Handle_Geom2d_Parabola_DownCast
 
@@ -4329,10 +4501,32 @@ class Geom2d_TrimmedCurve(Geom2d_BoundedCurve):
         :type Sense: bool
         :rtype: None
 
+        * Creates a trimmed curve from the basis curve C limited between U1 and U2. . U1 can be greater or lower than U2. . The returned curve is oriented from U1 to U2. . If the basis curve C is periodic there is an ambiguity because two parts are available. In this case by default the trimmed curve has the same orientation as the basis curve (Sense = True). If Sense = False then the orientation of the trimmed curve is opposite to the orientation of the basis curve C. If the curve is closed but not periodic it is not possible to keep the part of the curve including the junction point (except if the junction point is at the beginning or at the end of the trimmed curve) because you could lose the fundamental characteristics of the basis curve which are used for example to compute the derivatives of the trimmed curve. So for a closed curve the rules are the same as for a open curve. Warnings : In this package the entities are not shared. The TrimmedCurve is built with a copy of the curve C. So when C is modified the TrimmedCurve is not modified Warnings : If <C> is periodic, parametrics bounds of the TrimmedCurve, can be different to [<U1>;<U2>}, if <U1> or <U2> are not in the principal period. Include : For more explanation see the scheme given with this class. Raises ConstructionError the C is not periodic and U1 or U2 are out of the bounds of C. Raised if U1 = U2.
+
+        :param C:
+        :type C: Handle_Geom2d_Curve &
+        :param U1:
+        :type U1: float
+        :param U2:
+        :type U2: float
+        :param Sense: default value is Standard_True
+        :type Sense: bool
+        :rtype: None
+
         """
         _Geom2d.Geom2d_TrimmedCurve_swiginit(self,_Geom2d.new_Geom2d_TrimmedCurve(*args))
-    def SetTrim(self, *args) -> "void" :
+    def SetTrim(self, *args):
         """
+        * Changes this trimmed curve, by redefining the parameter values U1 and U2, which limit its basis curve. Note: If the basis curve is periodic, the trimmed curve has the same orientation as the basis curve if Sense is true (default value) or the opposite orientation if Sense is false. Warning If the basis curve is periodic, the bounds of the trimmed curve may be different from U1 and U2 if the parametric origin of the basis curve is within the arc of the trimmed curve. In this case, the modified parameter will be equal to U1 or U2 plus or minus the period. Exceptions Standard_ConstructionError if: - the basis curve is not periodic, and either U1 or U2 are outside the bounds of the basis curve, or - U1 is equal to U2.
+
+        :param U1:
+        :type U1: float
+        :param U2:
+        :type U2: float
+        :param Sense: default value is Standard_True
+        :type Sense: bool
+        :rtype: None
+
         * Changes this trimmed curve, by redefining the parameter values U1 and U2, which limit its basis curve. Note: If the basis curve is periodic, the trimmed curve has the same orientation as the basis curve if Sense is true (default value) or the opposite orientation if Sense is false. Warning If the basis curve is periodic, the bounds of the trimmed curve may be different from U1 and U2 if the parametric origin of the basis curve is within the arc of the trimmed curve. In this case, the modified parameter will be equal to U1 or U2 plus or minus the period. Exceptions Standard_ConstructionError if: - the basis curve is not periodic, and either U1 or U2 are outside the bounds of the basis curve, or - U1 is equal to U2.
 
         :param U1:
@@ -4346,20 +4540,20 @@ class Geom2d_TrimmedCurve(Geom2d_BoundedCurve):
         """
         return _Geom2d.Geom2d_TrimmedCurve_SetTrim(self, *args)
 
-    def BasisCurve(self, *args) -> "Handle_Geom2d_Curve" :
+    def BasisCurve(self):
         """
         * Returns the basis curve. Warning This function does not return a constant reference. Consequently, any modification of the returned value directly modifies the trimmed curve.
 
         :rtype: Handle_Geom2d_Curve
 
         """
-        return _Geom2d.Geom2d_TrimmedCurve_BasisCurve(self, *args)
+        return _Geom2d.Geom2d_TrimmedCurve_BasisCurve(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Geom2d_TrimmedCurve self)"""
         return _Geom2d.Geom2d_TrimmedCurve__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Geom2d_TrimmedCurve" :
+    def GetHandle(self):
         """GetHandle(Geom2d_TrimmedCurve self) -> Handle_Geom2d_TrimmedCurve"""
         return _Geom2d.Geom2d_TrimmedCurve_GetHandle(self)
 
@@ -4399,7 +4593,7 @@ Handle_Geom2d_TrimmedCurve._kill_pointed = new_instancemethod(_Geom2d.Handle_Geo
 Handle_Geom2d_TrimmedCurve_swigregister = _Geom2d.Handle_Geom2d_TrimmedCurve_swigregister
 Handle_Geom2d_TrimmedCurve_swigregister(Handle_Geom2d_TrimmedCurve)
 
-def Handle_Geom2d_TrimmedCurve_DownCast(*args) -> "Handle_Geom2d_TrimmedCurve const" :
+def Handle_Geom2d_TrimmedCurve_DownCast(*args):
   return _Geom2d.Handle_Geom2d_TrimmedCurve_DownCast(*args)
 Handle_Geom2d_TrimmedCurve_DownCast = _Geom2d.Handle_Geom2d_TrimmedCurve_DownCast
 

@@ -193,13 +193,6 @@ Aspect_PO_TOPLEFT = _Aspect.Aspect_PO_TOPLEFT
 Aspect_PO_TOPRIGHT = _Aspect.Aspect_PO_TOPRIGHT
 Aspect_PO_BOTTOMRIGHT = _Aspect.Aspect_PO_BOTTOMRIGHT
 Aspect_PO_UNKNOWN = _Aspect.Aspect_PO_UNKNOWN
-Aspect_POM_Off = _Aspect.Aspect_POM_Off
-Aspect_POM_Fill = _Aspect.Aspect_POM_Fill
-Aspect_POM_Line = _Aspect.Aspect_POM_Line
-Aspect_POM_Point = _Aspect.Aspect_POM_Point
-Aspect_POM_All = _Aspect.Aspect_POM_All
-Aspect_POM_None = _Aspect.Aspect_POM_None
-Aspect_POM_Mask = _Aspect.Aspect_POM_Mask
 Aspect_PA_STRETCH = _Aspect.Aspect_PA_STRETCH
 Aspect_PA_TILE = _Aspect.Aspect_PA_TILE
 Aspect_TOC_Generic = _Aspect.Aspect_TOC_Generic
@@ -335,8 +328,9 @@ Aspect_WOL_USERDEFINED = _Aspect.Aspect_WOL_USERDEFINED
 Aspect_XA_DELETE_WINDOW = _Aspect.Aspect_XA_DELETE_WINDOW
 class aspect(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
+    def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def ValuesOfFOSP(*args) -> "Standard_Real &, Standard_Real &" :
+    def ValuesOfFOSP(*args):
         """
         * Returns the format size according to the default LENGTH unit of the required format <aFOSP>. Returns more the normalized format name.
 
@@ -352,7 +346,7 @@ class aspect(object):
         return _Aspect.aspect_ValuesOfFOSP(*args)
 
     ValuesOfFOSP = staticmethod(ValuesOfFOSP)
-    def ToCString(*args) -> "char *" :
+    def ToCString(*args):
         """
         * Translates an ExtendedString to a CString depending of the local format.
 
@@ -364,7 +358,7 @@ class aspect(object):
         return _Aspect.aspect_ToCString(*args)
 
     ToCString = staticmethod(ToCString)
-    def Inverse(*args) -> "Standard_Boolean" :
+    def Inverse(*args):
         """
         * Inverses <aMat> a 4x4 matrix.
 
@@ -378,8 +372,6 @@ class aspect(object):
         return _Aspect.aspect_Inverse(*args)
 
     Inverse = staticmethod(Inverse)
-    def __init__(self): 
-        _Aspect.aspect_swiginit(self,_Aspect.new_aspect())
     def __del__(self):
     	try:
     		self.thisown = False
@@ -392,7 +384,7 @@ aspect._kill_pointed = new_instancemethod(_Aspect.aspect__kill_pointed,None,aspe
 aspect_swigregister = _Aspect.aspect_swigregister
 aspect_swigregister(aspect)
 
-def aspect_ValuesOfFOSP(*args) -> "Standard_Real &, Standard_Real &" :
+def aspect_ValuesOfFOSP(*args):
   """
     * Returns the format size according to the default LENGTH unit of the required format <aFOSP>. Returns more the normalized format name.
 
@@ -407,7 +399,7 @@ def aspect_ValuesOfFOSP(*args) -> "Standard_Real &, Standard_Real &" :
     """
   return _Aspect.aspect_ValuesOfFOSP(*args)
 
-def aspect_ToCString(*args) -> "char *" :
+def aspect_ToCString(*args):
   """
     * Translates an ExtendedString to a CString depending of the local format.
 
@@ -418,7 +410,7 @@ def aspect_ToCString(*args) -> "char *" :
     """
   return _Aspect.aspect_ToCString(*args)
 
-def aspect_Inverse(*args) -> "Standard_Boolean" :
+def aspect_Inverse(*args):
   """
     * Inverses <aMat> a 4x4 matrix.
 
@@ -437,22 +429,22 @@ class Aspect_Array1OfEdge(object):
     def __init__(self, *args): 
         """
         :param Low:
-        :type Low: int
+        :type Low: Standard_Integer
         :param Up:
-        :type Up: int
+        :type Up: Standard_Integer
         :rtype: None
 
         :param Item:
         :type Item: Aspect_Edge &
         :param Low:
-        :type Low: int
+        :type Low: Standard_Integer
         :param Up:
-        :type Up: int
+        :type Up: Standard_Integer
         :rtype: None
 
         """
         _Aspect.Aspect_Array1OfEdge_swiginit(self,_Aspect.new_Aspect_Array1OfEdge(*args))
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
         :param V:
         :type V: Aspect_Edge &
@@ -461,21 +453,21 @@ class Aspect_Array1OfEdge(object):
         """
         return _Aspect.Aspect_Array1OfEdge_Init(self, *args)
 
-    def Destroy(self, *args) -> "void" :
+    def Destroy(self):
         """
         :rtype: None
 
         """
-        return _Aspect.Aspect_Array1OfEdge_Destroy(self, *args)
+        return _Aspect.Aspect_Array1OfEdge_Destroy(self)
 
-    def IsAllocated(self, *args) -> "Standard_Boolean" :
+    def IsAllocated(self):
         """
         :rtype: bool
 
         """
-        return _Aspect.Aspect_Array1OfEdge_IsAllocated(self, *args)
+        return _Aspect.Aspect_Array1OfEdge_IsAllocated(self)
 
-    def Assign(self, *args) -> "Aspect_Array1OfEdge const &" :
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: Aspect_Array1OfEdge &
@@ -484,7 +476,7 @@ class Aspect_Array1OfEdge(object):
         """
         return _Aspect.Aspect_Array1OfEdge_Assign(self, *args)
 
-    def Set(self, *args) -> "Aspect_Array1OfEdge const &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: Aspect_Array1OfEdge &
@@ -493,31 +485,31 @@ class Aspect_Array1OfEdge(object):
         """
         return _Aspect.Aspect_Array1OfEdge_Set(self, *args)
 
-    def Length(self, *args) -> "Standard_Integer" :
+    def Length(self):
         """
         :rtype: int
 
         """
-        return _Aspect.Aspect_Array1OfEdge_Length(self, *args)
+        return _Aspect.Aspect_Array1OfEdge_Length(self)
 
-    def Lower(self, *args) -> "Standard_Integer" :
+    def Lower(self):
         """
         :rtype: int
 
         """
-        return _Aspect.Aspect_Array1OfEdge_Lower(self, *args)
+        return _Aspect.Aspect_Array1OfEdge_Lower(self)
 
-    def Upper(self, *args) -> "Standard_Integer" :
+    def Upper(self):
         """
         :rtype: int
 
         """
-        return _Aspect.Aspect_Array1OfEdge_Upper(self, *args)
+        return _Aspect.Aspect_Array1OfEdge_Upper(self)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Value:
         :type Value: Aspect_Edge &
         :rtype: None
@@ -525,19 +517,19 @@ class Aspect_Array1OfEdge(object):
         """
         return _Aspect.Aspect_Array1OfEdge_SetValue(self, *args)
 
-    def Value(self, *args) -> "Aspect_Edge const &" :
+    def Value(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Aspect_Edge
 
         """
         return _Aspect.Aspect_Array1OfEdge_Value(self, *args)
 
-    def ChangeValue(self, *args) -> "Aspect_Edge &" :
+    def ChangeValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Aspect_Edge
 
         """
@@ -570,7 +562,7 @@ class Aspect_AspectFillArea(OCC.MMgt.MMgt_TShared):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def SetEdgeColor(self, *args) -> "void" :
+    def SetEdgeColor(self, *args):
         """
         * Modifies the colour of the edge of the face
 
@@ -581,7 +573,7 @@ class Aspect_AspectFillArea(OCC.MMgt.MMgt_TShared):
         """
         return _Aspect.Aspect_AspectFillArea_SetEdgeColor(self, *args)
 
-    def SetEdgeLineType(self, *args) -> "void" :
+    def SetEdgeLineType(self, *args):
         """
         * Modifies the edge line type
 
@@ -592,7 +584,7 @@ class Aspect_AspectFillArea(OCC.MMgt.MMgt_TShared):
         """
         return _Aspect.Aspect_AspectFillArea_SetEdgeLineType(self, *args)
 
-    def SetEdgeWidth(self, *args) -> "void" :
+    def SetEdgeWidth(self, *args):
         """
         * Modifies the edge thickness Category: Methods to modify the class definition Warning: Raises AspectFillAreaDefinitionError if the //!	 width is a negative value.
 
@@ -603,7 +595,7 @@ class Aspect_AspectFillArea(OCC.MMgt.MMgt_TShared):
         """
         return _Aspect.Aspect_AspectFillArea_SetEdgeWidth(self, *args)
 
-    def SetHatchStyle(self, *args) -> "void" :
+    def SetHatchStyle(self, *args):
         """
         * Modifies the hatch type used when InteriorStyle //!	 is IS_HATCH
 
@@ -614,7 +606,7 @@ class Aspect_AspectFillArea(OCC.MMgt.MMgt_TShared):
         """
         return _Aspect.Aspect_AspectFillArea_SetHatchStyle(self, *args)
 
-    def SetInteriorColor(self, *args) -> "void" :
+    def SetInteriorColor(self, *args):
         """
         * Modifies the colour of the interior of the face
 
@@ -625,7 +617,7 @@ class Aspect_AspectFillArea(OCC.MMgt.MMgt_TShared):
         """
         return _Aspect.Aspect_AspectFillArea_SetInteriorColor(self, *args)
 
-    def SetBackInteriorColor(self, *args) -> "void" :
+    def SetBackInteriorColor(self, *args):
         """
         * Modifies the colour of the interior of the back face
 
@@ -636,7 +628,7 @@ class Aspect_AspectFillArea(OCC.MMgt.MMgt_TShared):
         """
         return _Aspect.Aspect_AspectFillArea_SetBackInteriorColor(self, *args)
 
-    def SetInteriorStyle(self, *args) -> "void" :
+    def SetInteriorStyle(self, *args):
         """
         * Modifies the interior type used for rendering InteriorStyle : IS_EMPTY	no interior //!		 IS_HOLLOW	display the boundaries of the surface //!		 IS_HATCH	display hatching //!		 IS_SOLID	display interior entirely filled
 
@@ -647,16 +639,16 @@ class Aspect_AspectFillArea(OCC.MMgt.MMgt_TShared):
         """
         return _Aspect.Aspect_AspectFillArea_SetInteriorStyle(self, *args)
 
-    def HatchStyle(self, *args) -> "Aspect_HatchStyle" :
+    def HatchStyle(self):
         """
         * Returns the hatch type used when InteriorStyle //!	 is IS_HATCH
 
         :rtype: Aspect_HatchStyle
 
         """
-        return _Aspect.Aspect_AspectFillArea_HatchStyle(self, *args)
+        return _Aspect.Aspect_AspectFillArea_HatchStyle(self)
 
-    def Values(self, *args) -> "void" :
+    def Values(self, *args):
         """
         :param AStyle:
         :type AStyle: Aspect_InteriorStyle &
@@ -689,11 +681,11 @@ class Aspect_AspectFillArea(OCC.MMgt.MMgt_TShared):
         """
         return _Aspect.Aspect_AspectFillArea_Values(self, *args)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Aspect_AspectFillArea self)"""
         return _Aspect.Aspect_AspectFillArea__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Aspect_AspectFillArea" :
+    def GetHandle(self):
         """GetHandle(Aspect_AspectFillArea self) -> Handle_Aspect_AspectFillArea"""
         return _Aspect.Aspect_AspectFillArea_GetHandle(self)
 
@@ -740,7 +732,7 @@ Handle_Aspect_AspectFillArea._kill_pointed = new_instancemethod(_Aspect.Handle_A
 Handle_Aspect_AspectFillArea_swigregister = _Aspect.Handle_Aspect_AspectFillArea_swigregister
 Handle_Aspect_AspectFillArea_swigregister(Handle_Aspect_AspectFillArea)
 
-def Handle_Aspect_AspectFillArea_DownCast(*args) -> "Handle_Aspect_AspectFillArea const" :
+def Handle_Aspect_AspectFillArea_DownCast(*args):
   return _Aspect.Handle_Aspect_AspectFillArea_DownCast(*args)
 Handle_Aspect_AspectFillArea_DownCast = _Aspect.Handle_Aspect_AspectFillArea_DownCast
 
@@ -748,7 +740,7 @@ class Aspect_AspectLine(OCC.MMgt.MMgt_TShared):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def SetColor(self, *args) -> "void" :
+    def SetColor(self, *args):
         """
         * Modifies the colour of <self>.
 
@@ -759,7 +751,7 @@ class Aspect_AspectLine(OCC.MMgt.MMgt_TShared):
         """
         return _Aspect.Aspect_AspectLine_SetColor(self, *args)
 
-    def SetType(self, *args) -> "void" :
+    def SetType(self, *args):
         """
         * Modifies the type of <self>.
 
@@ -770,7 +762,7 @@ class Aspect_AspectLine(OCC.MMgt.MMgt_TShared):
         """
         return _Aspect.Aspect_AspectLine_SetType(self, *args)
 
-    def SetWidth(self, *args) -> "void" :
+    def SetWidth(self, *args):
         """
         * Modifies the thickness of <self>. Category: Methods to modify the class definition Warning: Raises AspectLineDefinitionError if the //!	 width is a negative value.
 
@@ -781,7 +773,7 @@ class Aspect_AspectLine(OCC.MMgt.MMgt_TShared):
         """
         return _Aspect.Aspect_AspectLine_SetWidth(self, *args)
 
-    def Values(self, *args) -> "void" :
+    def Values(self, *args):
         """
         * Returns the current values of the group <self>.
 
@@ -796,11 +788,11 @@ class Aspect_AspectLine(OCC.MMgt.MMgt_TShared):
         """
         return _Aspect.Aspect_AspectLine_Values(self, *args)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Aspect_AspectLine self)"""
         return _Aspect.Aspect_AspectLine__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Aspect_AspectLine" :
+    def GetHandle(self):
         """GetHandle(Aspect_AspectLine self) -> Handle_Aspect_AspectLine"""
         return _Aspect.Aspect_AspectLine_GetHandle(self)
 
@@ -842,7 +834,7 @@ Handle_Aspect_AspectLine._kill_pointed = new_instancemethod(_Aspect.Handle_Aspec
 Handle_Aspect_AspectLine_swigregister = _Aspect.Handle_Aspect_AspectLine_swigregister
 Handle_Aspect_AspectLine_swigregister(Handle_Aspect_AspectLine)
 
-def Handle_Aspect_AspectLine_DownCast(*args) -> "Handle_Aspect_AspectLine const" :
+def Handle_Aspect_AspectLine_DownCast(*args):
   return _Aspect.Handle_Aspect_AspectLine_DownCast(*args)
 Handle_Aspect_AspectLine_DownCast = _Aspect.Handle_Aspect_AspectLine_DownCast
 
@@ -850,7 +842,7 @@ class Aspect_AspectMarker(OCC.MMgt.MMgt_TShared):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def SetColor(self, *args) -> "void" :
+    def SetColor(self, *args):
         """
         * Modifies the colour of <self>.
 
@@ -861,7 +853,7 @@ class Aspect_AspectMarker(OCC.MMgt.MMgt_TShared):
         """
         return _Aspect.Aspect_AspectMarker_SetColor(self, *args)
 
-    def SetScale(self, *args) -> "void" :
+    def SetScale(self, *args):
         """
         * Modifies the scale factor of <self>. //!	 Marker type Aspect_TOM_POINT is not affected //!	 by the marker size scale factor. It is always //!	 the smallest displayable dot. Warning: Raises AspectMarkerDefinitionError if the //!	 scale is a negative value.
 
@@ -872,7 +864,7 @@ class Aspect_AspectMarker(OCC.MMgt.MMgt_TShared):
         """
         return _Aspect.Aspect_AspectMarker_SetScale(self, *args)
 
-    def SetType(self, *args) -> "void" :
+    def SetType(self, *args):
         """
         * Modifies the type of marker <self>.
 
@@ -883,7 +875,7 @@ class Aspect_AspectMarker(OCC.MMgt.MMgt_TShared):
         """
         return _Aspect.Aspect_AspectMarker_SetType(self, *args)
 
-    def Values(self, *args) -> "void" :
+    def Values(self, *args):
         """
         * Returns the current values of the group <self>.
 
@@ -898,11 +890,11 @@ class Aspect_AspectMarker(OCC.MMgt.MMgt_TShared):
         """
         return _Aspect.Aspect_AspectMarker_Values(self, *args)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Aspect_AspectMarker self)"""
         return _Aspect.Aspect_AspectMarker__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Aspect_AspectMarker" :
+    def GetHandle(self):
         """GetHandle(Aspect_AspectMarker self) -> Handle_Aspect_AspectMarker"""
         return _Aspect.Aspect_AspectMarker_GetHandle(self)
 
@@ -944,7 +936,7 @@ Handle_Aspect_AspectMarker._kill_pointed = new_instancemethod(_Aspect.Handle_Asp
 Handle_Aspect_AspectMarker_swigregister = _Aspect.Handle_Aspect_AspectMarker_swigregister
 Handle_Aspect_AspectMarker_swigregister(Handle_Aspect_AspectMarker)
 
-def Handle_Aspect_AspectMarker_DownCast(*args) -> "Handle_Aspect_AspectMarker const" :
+def Handle_Aspect_AspectMarker_DownCast(*args):
   return _Aspect.Handle_Aspect_AspectMarker_DownCast(*args)
 Handle_Aspect_AspectMarker_DownCast = _Aspect.Handle_Aspect_AspectMarker_DownCast
 
@@ -965,7 +957,7 @@ class Aspect_Background(object):
 
         """
         _Aspect.Aspect_Background_swiginit(self,_Aspect.new_Aspect_Background(*args))
-    def SetColor(self, *args) -> "void" :
+    def SetColor(self, *args):
         """
         * Modifies the colour of the window background <self>.
 
@@ -976,14 +968,14 @@ class Aspect_Background(object):
         """
         return _Aspect.Aspect_Background_SetColor(self, *args)
 
-    def Color(self, *args) -> "Quantity_Color" :
+    def Color(self):
         """
         * Returns the colour of the window background <self>.
 
         :rtype: Quantity_Color
 
         """
-        return _Aspect.Aspect_Background_Color(self, *args)
+        return _Aspect.Aspect_Background_Color(self)
 
     def __del__(self):
     	try:
@@ -1003,74 +995,74 @@ class Aspect_ColorMap(OCC.MMgt.MMgt_TShared):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def Type(self, *args) -> "Aspect_TypeOfColorMap" :
+    def Type(self):
         """
         :rtype: Aspect_TypeOfColorMap
 
         """
-        return _Aspect.Aspect_ColorMap_Type(self, *args)
+        return _Aspect.Aspect_ColorMap_Type(self)
 
-    def Size(self, *args) -> "Standard_Integer" :
+    def Size(self):
         """
         * Returns the Allocated colormap Size
 
         :rtype: int
 
         """
-        return _Aspect.Aspect_ColorMap_Size(self, *args)
+        return _Aspect.Aspect_ColorMap_Size(self)
 
-    def Index(self, *args) -> "Standard_Integer" :
+    def Index(self, *args):
         """
         * Returns the ColorMapEntry.Index of the ColorMap //!	 at rank <aColormapIndex> .
 
         :param aColormapIndex:
-        :type aColormapIndex: int
+        :type aColormapIndex: Standard_Integer
         :rtype: int
 
         """
         return _Aspect.Aspect_ColorMap_Index(self, *args)
 
-    def Dump(self, *args) -> "void" :
+    def Dump(self):
         """
         :rtype: None
 
         """
-        return _Aspect.Aspect_ColorMap_Dump(self, *args)
+        return _Aspect.Aspect_ColorMap_Dump(self)
 
-    def Entry(self, *args) -> "Aspect_ColorMapEntry const &" :
+    def Entry(self, *args):
         """
         * Return the value of the <Index>th element of //!	 the ColorMap
 
         :param AColorMapIndex:
-        :type AColorMapIndex: int
+        :type AColorMapIndex: Standard_Integer
         :rtype: Aspect_ColorMapEntry
 
         """
         return _Aspect.Aspect_ColorMap_Entry(self, *args)
 
-    def FindColorMapIndex(self, *args) -> "Standard_Integer" :
+    def FindColorMapIndex(self, *args):
         """
         * Returns the index in the ColorMap of the //!	 ColorMapEntry.Index() equal to <AnEntryIndex>.
 
         :param AColorMapEntryIndex:
-        :type AColorMapEntryIndex: int
+        :type AColorMapEntryIndex: Standard_Integer
         :rtype: int
 
         """
         return _Aspect.Aspect_ColorMap_FindColorMapIndex(self, *args)
 
-    def FindEntry(self, *args) -> "Aspect_ColorMapEntry const &" :
+    def FindEntry(self, *args):
         """
         * Returns the ColorMapEntry with ColorMapEntry.Index() //!	 equal to <AnEntryIndex>.
 
         :param AColorMapEntryIndex:
-        :type AColorMapEntryIndex: int
+        :type AColorMapEntryIndex: Standard_Integer
         :rtype: Aspect_ColorMapEntry
 
         """
         return _Aspect.Aspect_ColorMap_FindEntry(self, *args)
 
-    def NearestColorMapIndex(self, *args) -> "Standard_Integer" :
+    def NearestColorMapIndex(self, *args):
         """
         * Returns the index in the ColorMap of the //!	 nearest matching ColorMapEntry
 
@@ -1081,7 +1073,7 @@ class Aspect_ColorMap(OCC.MMgt.MMgt_TShared):
         """
         return _Aspect.Aspect_ColorMap_NearestColorMapIndex(self, *args)
 
-    def NearestEntry(self, *args) -> "Aspect_ColorMapEntry const &" :
+    def NearestEntry(self, *args):
         """
         * Returns the nearest ColorMapEntry that match aColor .
 
@@ -1092,7 +1084,7 @@ class Aspect_ColorMap(OCC.MMgt.MMgt_TShared):
         """
         return _Aspect.Aspect_ColorMap_NearestEntry(self, *args)
 
-    def AddEntry(self, *args) -> "Standard_Integer" :
+    def AddEntry(self, *args):
         """
         * Search an identical color entry in the color map <self> and returns the ColorMapEntry Index if exist. Or add a new entry and returns the computed ColorMapEntry index used.
 
@@ -1103,11 +1095,11 @@ class Aspect_ColorMap(OCC.MMgt.MMgt_TShared):
         """
         return _Aspect.Aspect_ColorMap_AddEntry(self, *args)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Aspect_ColorMap self)"""
         return _Aspect.Aspect_ColorMap__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Aspect_ColorMap" :
+    def GetHandle(self):
         """GetHandle(Aspect_ColorMap self) -> Handle_Aspect_ColorMap"""
         return _Aspect.Aspect_ColorMap_GetHandle(self)
 
@@ -1155,7 +1147,7 @@ Handle_Aspect_ColorMap._kill_pointed = new_instancemethod(_Aspect.Handle_Aspect_
 Handle_Aspect_ColorMap_swigregister = _Aspect.Handle_Aspect_ColorMap_swigregister
 Handle_Aspect_ColorMap_swigregister(Handle_Aspect_ColorMap)
 
-def Handle_Aspect_ColorMap_DownCast(*args) -> "Handle_Aspect_ColorMap const" :
+def Handle_Aspect_ColorMap_DownCast(*args):
   return _Aspect.Handle_Aspect_ColorMap_DownCast(*args)
 Handle_Aspect_ColorMap_DownCast = _Aspect.Handle_Aspect_ColorMap_DownCast
 
@@ -1171,7 +1163,7 @@ class Aspect_ColorMapEntry(object):
         * Creates an allocated colormap entry
 
         :param index:
-        :type index: int
+        :type index: Standard_Integer
         :param rgb:
         :type rgb: Quantity_Color &
         :rtype: None
@@ -1184,12 +1176,12 @@ class Aspect_ColorMapEntry(object):
 
         """
         _Aspect.Aspect_ColorMapEntry_swiginit(self,_Aspect.new_Aspect_ColorMapEntry(*args))
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         * Sets colormap entry value and allocates it.
 
         :param index:
-        :type index: int
+        :type index: Standard_Integer
         :param rgb:
         :type rgb: Quantity_Color &
         :rtype: None
@@ -1203,7 +1195,7 @@ class Aspect_ColorMapEntry(object):
         """
         return _Aspect.Aspect_ColorMapEntry_SetValue(self, *args)
 
-    def Set(self, *args) -> "void" :
+    def Set(self, *args):
         """
         :param entry:
         :type entry: Aspect_ColorMapEntry &
@@ -1212,7 +1204,7 @@ class Aspect_ColorMapEntry(object):
         """
         return _Aspect.Aspect_ColorMapEntry_Set(self, *args)
 
-    def SetColor(self, *args) -> "void" :
+    def SetColor(self, *args):
         """
         * Sets color <rgb> of colormap entry.
 
@@ -1223,64 +1215,64 @@ class Aspect_ColorMapEntry(object):
         """
         return _Aspect.Aspect_ColorMapEntry_SetColor(self, *args)
 
-    def Color(self, *args) -> "Quantity_Color const &" :
+    def Color(self):
         """
         :rtype: Quantity_Color
 
         """
-        return _Aspect.Aspect_ColorMapEntry_Color(self, *args)
+        return _Aspect.Aspect_ColorMapEntry_Color(self)
 
-    def SetIndex(self, *args) -> "void" :
+    def SetIndex(self, *args):
         """
         * Sets index value of a colormap entry.
 
         :param index:
-        :type index: int
+        :type index: Standard_Integer
         :rtype: None
 
         """
         return _Aspect.Aspect_ColorMapEntry_SetIndex(self, *args)
 
-    def Index(self, *args) -> "Standard_Integer" :
+    def Index(self):
         """
         :rtype: int
 
         """
-        return _Aspect.Aspect_ColorMapEntry_Index(self, *args)
+        return _Aspect.Aspect_ColorMapEntry_Index(self)
 
-    def Free(self, *args) -> "void" :
+    def Free(self):
         """
         * Unallocates the colormap entry.
 
         :rtype: None
 
         """
-        return _Aspect.Aspect_ColorMapEntry_Free(self, *args)
+        return _Aspect.Aspect_ColorMapEntry_Free(self)
 
-    def IsAllocated(self, *args) -> "Standard_Boolean" :
+    def IsAllocated(self):
         """
         * Returns True if the colormap entry is allocated. Warning: A colormap entry is allocated when the color and //!	 the index is defined.
 
         :rtype: bool
 
         """
-        return _Aspect.Aspect_ColorMapEntry_IsAllocated(self, *args)
+        return _Aspect.Aspect_ColorMapEntry_IsAllocated(self)
 
-    def Dump(self, *args) -> "void" :
+    def Dump(self):
         """
         :rtype: None
 
         """
-        return _Aspect.Aspect_ColorMapEntry_Dump(self, *args)
+        return _Aspect.Aspect_ColorMapEntry_Dump(self)
 
-    def _CSFDB_GetAspect_ColorMapEntryallocated(self, *args) -> "Standard_Boolean" :
+    def _CSFDB_GetAspect_ColorMapEntryallocated(self):
         """
         :rtype: bool
 
         """
-        return _Aspect.Aspect_ColorMapEntry__CSFDB_GetAspect_ColorMapEntryallocated(self, *args)
+        return _Aspect.Aspect_ColorMapEntry__CSFDB_GetAspect_ColorMapEntryallocated(self)
 
-    def _CSFDB_SetAspect_ColorMapEntryallocated(self, *args) -> "void" :
+    def _CSFDB_SetAspect_ColorMapEntryallocated(self, *args):
         """
         :param p:
         :type p: bool
@@ -1289,37 +1281,37 @@ class Aspect_ColorMapEntry(object):
         """
         return _Aspect.Aspect_ColorMapEntry__CSFDB_SetAspect_ColorMapEntryallocated(self, *args)
 
-    def _CSFDB_GetAspect_ColorMapEntrymycolor(self, *args) -> "Quantity_Color const &" :
+    def _CSFDB_GetAspect_ColorMapEntrymycolor(self):
         """
         :rtype: Quantity_Color
 
         """
-        return _Aspect.Aspect_ColorMapEntry__CSFDB_GetAspect_ColorMapEntrymycolor(self, *args)
+        return _Aspect.Aspect_ColorMapEntry__CSFDB_GetAspect_ColorMapEntrymycolor(self)
 
-    def _CSFDB_GetAspect_ColorMapEntrymyindex(self, *args) -> "Standard_Integer" :
+    def _CSFDB_GetAspect_ColorMapEntrymyindex(self):
         """
         :rtype: int
 
         """
-        return _Aspect.Aspect_ColorMapEntry__CSFDB_GetAspect_ColorMapEntrymyindex(self, *args)
+        return _Aspect.Aspect_ColorMapEntry__CSFDB_GetAspect_ColorMapEntrymyindex(self)
 
-    def _CSFDB_SetAspect_ColorMapEntrymyindex(self, *args) -> "void" :
+    def _CSFDB_SetAspect_ColorMapEntrymyindex(self, *args):
         """
         :param p:
-        :type p: int
+        :type p: Standard_Integer
         :rtype: None
 
         """
         return _Aspect.Aspect_ColorMapEntry__CSFDB_SetAspect_ColorMapEntrymyindex(self, *args)
 
-    def _CSFDB_GetAspect_ColorMapEntrymyColorIsDef(self, *args) -> "Standard_Boolean" :
+    def _CSFDB_GetAspect_ColorMapEntrymyColorIsDef(self):
         """
         :rtype: bool
 
         """
-        return _Aspect.Aspect_ColorMapEntry__CSFDB_GetAspect_ColorMapEntrymyColorIsDef(self, *args)
+        return _Aspect.Aspect_ColorMapEntry__CSFDB_GetAspect_ColorMapEntrymyColorIsDef(self)
 
-    def _CSFDB_SetAspect_ColorMapEntrymyColorIsDef(self, *args) -> "void" :
+    def _CSFDB_SetAspect_ColorMapEntrymyColorIsDef(self, *args):
         """
         :param p:
         :type p: bool
@@ -1328,14 +1320,14 @@ class Aspect_ColorMapEntry(object):
         """
         return _Aspect.Aspect_ColorMapEntry__CSFDB_SetAspect_ColorMapEntrymyColorIsDef(self, *args)
 
-    def _CSFDB_GetAspect_ColorMapEntrymyIndexIsDef(self, *args) -> "Standard_Boolean" :
+    def _CSFDB_GetAspect_ColorMapEntrymyIndexIsDef(self):
         """
         :rtype: bool
 
         """
-        return _Aspect.Aspect_ColorMapEntry__CSFDB_GetAspect_ColorMapEntrymyIndexIsDef(self, *args)
+        return _Aspect.Aspect_ColorMapEntry__CSFDB_GetAspect_ColorMapEntrymyIndexIsDef(self)
 
-    def _CSFDB_SetAspect_ColorMapEntrymyIndexIsDef(self, *args) -> "void" :
+    def _CSFDB_SetAspect_ColorMapEntrymyIndexIsDef(self, *args):
         """
         :param p:
         :type p: bool
@@ -1378,7 +1370,7 @@ class Aspect_ColorScale(OCC.MMgt.MMgt_TShared):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def FindColor(*args) -> "Standard_Boolean" :
+    def FindColor(*args):
         """
         * Calculate color according passed value; returns true if value is in range or false, if isn't
 
@@ -1395,7 +1387,7 @@ class Aspect_ColorScale(OCC.MMgt.MMgt_TShared):
         :param Max:
         :type Max: float
         :param ColorsCount:
-        :type ColorsCount: int
+        :type ColorsCount: Standard_Integer
         :param Color:
         :type Color: Quantity_Color &
         :rtype: bool
@@ -1404,25 +1396,25 @@ class Aspect_ColorScale(OCC.MMgt.MMgt_TShared):
         return _Aspect.Aspect_ColorScale_FindColor(*args)
 
     FindColor = staticmethod(FindColor)
-    def GetMin(self, *args) -> "Standard_Real" :
+    def GetMin(self):
         """
         * Returns minimal value of color scale;
 
         :rtype: float
 
         """
-        return _Aspect.Aspect_ColorScale_GetMin(self, *args)
+        return _Aspect.Aspect_ColorScale_GetMin(self)
 
-    def GetMax(self, *args) -> "Standard_Real" :
+    def GetMax(self):
         """
         * Returns maximal value of color scale;
 
         :rtype: float
 
         """
-        return _Aspect.Aspect_ColorScale_GetMax(self, *args)
+        return _Aspect.Aspect_ColorScale_GetMax(self)
 
-    def GetRange(self, *args) -> "void" :
+    def GetRange(self):
         """
         * Returns minimal and maximal values of color scale;
 
@@ -1433,76 +1425,76 @@ class Aspect_ColorScale(OCC.MMgt.MMgt_TShared):
         :rtype: None
 
         """
-        return _Aspect.Aspect_ColorScale_GetRange(self, *args)
+        return _Aspect.Aspect_ColorScale_GetRange(self)
 
-    def GetLabelType(self, *args) -> "Aspect_TypeOfColorScaleData" :
+    def GetLabelType(self):
         """
         * Returns the type of labels;  Aspect_TOCSD_AUTO - labels as boundary values for intervals  Aspect_TOCSD_USER - user specified label is used
 
         :rtype: Aspect_TypeOfColorScaleData
 
         """
-        return _Aspect.Aspect_ColorScale_GetLabelType(self, *args)
+        return _Aspect.Aspect_ColorScale_GetLabelType(self)
 
-    def GetColorType(self, *args) -> "Aspect_TypeOfColorScaleData" :
+    def GetColorType(self):
         """
         * Returns the type of colors;  Aspect_TOCSD_AUTO - value between Red and Blue  Aspect_TOCSD_USER - user specified color from color map
 
         :rtype: Aspect_TypeOfColorScaleData
 
         """
-        return _Aspect.Aspect_ColorScale_GetColorType(self, *args)
+        return _Aspect.Aspect_ColorScale_GetColorType(self)
 
-    def GetNumberOfIntervals(self, *args) -> "Standard_Integer" :
+    def GetNumberOfIntervals(self):
         """
         * Returns the number of color scale intervals;
 
         :rtype: int
 
         """
-        return _Aspect.Aspect_ColorScale_GetNumberOfIntervals(self, *args)
+        return _Aspect.Aspect_ColorScale_GetNumberOfIntervals(self)
 
-    def GetTitle(self, *args) -> "TCollection_ExtendedString" :
+    def GetTitle(self):
         """
         * Returns the color scale title string;
 
         :rtype: TCollection_ExtendedString
 
         """
-        return _Aspect.Aspect_ColorScale_GetTitle(self, *args)
+        return _Aspect.Aspect_ColorScale_GetTitle(self)
 
-    def GetFormat(self, *args) -> "TCollection_AsciiString" :
+    def GetFormat(self):
         """
         * Returns the format for numbers.  The same like format for function printf().  Used if GetLabelType() is TOCSD_AUTO;
 
         :rtype: TCollection_AsciiString
 
         """
-        return _Aspect.Aspect_ColorScale_GetFormat(self, *args)
+        return _Aspect.Aspect_ColorScale_GetFormat(self)
 
-    def GetLabel(self, *args) -> "TCollection_ExtendedString" :
+    def GetLabel(self, *args):
         """
         * Returns the user specified label with index <anIndex>.  Returns empty string if label not defined.
 
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :rtype: TCollection_ExtendedString
 
         """
         return _Aspect.Aspect_ColorScale_GetLabel(self, *args)
 
-    def GetColor(self, *args) -> "Quantity_Color" :
+    def GetColor(self, *args):
         """
         * Returns the user specified color from color map with index <anIndex>.  Returns default color if index out of range in color map.
 
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :rtype: Quantity_Color
 
         """
         return _Aspect.Aspect_ColorScale_GetColor(self, *args)
 
-    def GetLabels(self, *args) -> "void" :
+    def GetLabels(self, *args):
         """
         * Returns the user specified labels.
 
@@ -1513,7 +1505,7 @@ class Aspect_ColorScale(OCC.MMgt.MMgt_TShared):
         """
         return _Aspect.Aspect_ColorScale_GetLabels(self, *args)
 
-    def GetColors(self, *args) -> "void" :
+    def GetColors(self, *args):
         """
         * Returns the user specified colors.
 
@@ -1524,43 +1516,43 @@ class Aspect_ColorScale(OCC.MMgt.MMgt_TShared):
         """
         return _Aspect.Aspect_ColorScale_GetColors(self, *args)
 
-    def GetLabelPosition(self, *args) -> "Aspect_TypeOfColorScalePosition" :
+    def GetLabelPosition(self):
         """
         * Returns the position of labels concerning color filled rectangles.
 
         :rtype: Aspect_TypeOfColorScalePosition
 
         """
-        return _Aspect.Aspect_ColorScale_GetLabelPosition(self, *args)
+        return _Aspect.Aspect_ColorScale_GetLabelPosition(self)
 
-    def GetTitlePosition(self, *args) -> "Aspect_TypeOfColorScalePosition" :
+    def GetTitlePosition(self):
         """
         * Returns the position of color scale title.
 
         :rtype: Aspect_TypeOfColorScalePosition
 
         """
-        return _Aspect.Aspect_ColorScale_GetTitlePosition(self, *args)
+        return _Aspect.Aspect_ColorScale_GetTitlePosition(self)
 
-    def IsReversed(self, *args) -> "Standard_Boolean" :
+    def IsReversed(self):
         """
         * Returns true if the labels and colors used in reversed order.
 
         :rtype: bool
 
         """
-        return _Aspect.Aspect_ColorScale_IsReversed(self, *args)
+        return _Aspect.Aspect_ColorScale_IsReversed(self)
 
-    def IsLabelAtBorder(self, *args) -> "Standard_Boolean" :
+    def IsLabelAtBorder(self):
         """
         * Returns true if the labels placed at border of color filled rectangles.
 
         :rtype: bool
 
         """
-        return _Aspect.Aspect_ColorScale_IsLabelAtBorder(self, *args)
+        return _Aspect.Aspect_ColorScale_IsLabelAtBorder(self)
 
-    def SetMin(self, *args) -> "void" :
+    def SetMin(self, *args):
         """
         * Sets the minimal value of color scale.
 
@@ -1571,7 +1563,7 @@ class Aspect_ColorScale(OCC.MMgt.MMgt_TShared):
         """
         return _Aspect.Aspect_ColorScale_SetMin(self, *args)
 
-    def SetMax(self, *args) -> "void" :
+    def SetMax(self, *args):
         """
         * Sets the maximal value of color scale.
 
@@ -1582,7 +1574,7 @@ class Aspect_ColorScale(OCC.MMgt.MMgt_TShared):
         """
         return _Aspect.Aspect_ColorScale_SetMax(self, *args)
 
-    def SetRange(self, *args) -> "void" :
+    def SetRange(self, *args):
         """
         * Sets the minimal and maximal value of color scale.
 
@@ -1595,7 +1587,7 @@ class Aspect_ColorScale(OCC.MMgt.MMgt_TShared):
         """
         return _Aspect.Aspect_ColorScale_SetRange(self, *args)
 
-    def SetLabelType(self, *args) -> "void" :
+    def SetLabelType(self, *args):
         """
         * Sets the type of labels.  Aspect_TOCSD_AUTO - labels as boundary values for intervals  Aspect_TOCSD_USER - user specified label is used
 
@@ -1606,7 +1598,7 @@ class Aspect_ColorScale(OCC.MMgt.MMgt_TShared):
         """
         return _Aspect.Aspect_ColorScale_SetLabelType(self, *args)
 
-    def SetColorType(self, *args) -> "void" :
+    def SetColorType(self, *args):
         """
         * Sets the type of colors.  Aspect_TOCSD_AUTO - value between Red and Blue  Aspect_TOCSD_USER - user specified color from color map
 
@@ -1617,18 +1609,18 @@ class Aspect_ColorScale(OCC.MMgt.MMgt_TShared):
         """
         return _Aspect.Aspect_ColorScale_SetColorType(self, *args)
 
-    def SetNumberOfIntervals(self, *args) -> "void" :
+    def SetNumberOfIntervals(self, *args):
         """
         * Sets the number of color scale intervals.
 
         :param aNum:
-        :type aNum: int
+        :type aNum: Standard_Integer
         :rtype: None
 
         """
         return _Aspect.Aspect_ColorScale_SetNumberOfIntervals(self, *args)
 
-    def SetTitle(self, *args) -> "void" :
+    def SetTitle(self, *args):
         """
         * Sets the color scale title string.
 
@@ -1639,7 +1631,7 @@ class Aspect_ColorScale(OCC.MMgt.MMgt_TShared):
         """
         return _Aspect.Aspect_ColorScale_SetTitle(self, *args)
 
-    def SetFormat(self, *args) -> "void" :
+    def SetFormat(self, *args):
         """
         * Sets the color scale auto label format specification.
 
@@ -1650,33 +1642,49 @@ class Aspect_ColorScale(OCC.MMgt.MMgt_TShared):
         """
         return _Aspect.Aspect_ColorScale_SetFormat(self, *args)
 
-    def SetLabel(self, *args) -> "void" :
+    def SetLabel(self, *args):
         """
         * Sets the color scale label at index. Index started from 1.
 
         :param aLabel:
         :type aLabel: TCollection_ExtendedString &
-        :param anIndex: default value is -1
-        :type anIndex: int
+        :param anIndex: default value is - 1
+        :type anIndex: Standard_Integer
+        :rtype: None
+
+        * Sets the color scale label at index. Index started from 1.
+
+        :param aLabel:
+        :type aLabel: TCollection_ExtendedString &
+        :param anIndex: default value is - 1
+        :type anIndex: Standard_Integer
         :rtype: None
 
         """
         return _Aspect.Aspect_ColorScale_SetLabel(self, *args)
 
-    def SetColor(self, *args) -> "void" :
+    def SetColor(self, *args):
         """
         * Sets the color scale color at index. Index started from 1.
 
         :param aColor:
         :type aColor: Quantity_Color &
-        :param anIndex: default value is -1
-        :type anIndex: int
+        :param anIndex: default value is - 1
+        :type anIndex: Standard_Integer
+        :rtype: None
+
+        * Sets the color scale color at index. Index started from 1.
+
+        :param aColor:
+        :type aColor: Quantity_Color &
+        :param anIndex: default value is - 1
+        :type anIndex: Standard_Integer
         :rtype: None
 
         """
         return _Aspect.Aspect_ColorScale_SetColor(self, *args)
 
-    def SetLabels(self, *args) -> "void" :
+    def SetLabels(self, *args):
         """
         * Sets the color scale labels.
 
@@ -1687,7 +1695,7 @@ class Aspect_ColorScale(OCC.MMgt.MMgt_TShared):
         """
         return _Aspect.Aspect_ColorScale_SetLabels(self, *args)
 
-    def SetColors(self, *args) -> "void" :
+    def SetColors(self, *args):
         """
         * Sets the color scale colors.
 
@@ -1704,7 +1712,7 @@ class Aspect_ColorScale(OCC.MMgt.MMgt_TShared):
         """
         return _Aspect.Aspect_ColorScale_SetColors(self, *args)
 
-    def SetLabelPosition(self, *args) -> "void" :
+    def SetLabelPosition(self, *args):
         """
         * Sets the color scale labels position concerning color filled rectangles.
 
@@ -1715,7 +1723,7 @@ class Aspect_ColorScale(OCC.MMgt.MMgt_TShared):
         """
         return _Aspect.Aspect_ColorScale_SetLabelPosition(self, *args)
 
-    def SetTitlePosition(self, *args) -> "void" :
+    def SetTitlePosition(self, *args):
         """
         * Sets the color scale title position.
 
@@ -1726,7 +1734,7 @@ class Aspect_ColorScale(OCC.MMgt.MMgt_TShared):
         """
         return _Aspect.Aspect_ColorScale_SetTitlePosition(self, *args)
 
-    def SetReversed(self, *args) -> "void" :
+    def SetReversed(self, *args):
         """
         * Sets true if the labels and colors used in reversed order.
 
@@ -1737,7 +1745,7 @@ class Aspect_ColorScale(OCC.MMgt.MMgt_TShared):
         """
         return _Aspect.Aspect_ColorScale_SetReversed(self, *args)
 
-    def SetLabelAtBorder(self, *args) -> "void" :
+    def SetLabelAtBorder(self, *args):
         """
         * Sets true if the labels placed at border of color filled rectangles.
 
@@ -1748,7 +1756,7 @@ class Aspect_ColorScale(OCC.MMgt.MMgt_TShared):
         """
         return _Aspect.Aspect_ColorScale_SetLabelAtBorder(self, *args)
 
-    def GetSize(self, *args) -> "void" :
+    def GetSize(self):
         """
         * Returns the size of color scale.
 
@@ -1759,27 +1767,27 @@ class Aspect_ColorScale(OCC.MMgt.MMgt_TShared):
         :rtype: None
 
         """
-        return _Aspect.Aspect_ColorScale_GetSize(self, *args)
+        return _Aspect.Aspect_ColorScale_GetSize(self)
 
-    def GetWidth(self, *args) -> "Standard_Real" :
+    def GetWidth(self):
         """
         * Returns the width of color scale.
 
         :rtype: float
 
         """
-        return _Aspect.Aspect_ColorScale_GetWidth(self, *args)
+        return _Aspect.Aspect_ColorScale_GetWidth(self)
 
-    def GetHeight(self, *args) -> "Standard_Real" :
+    def GetHeight(self):
         """
         * Returns the height of color scale.
 
         :rtype: float
 
         """
-        return _Aspect.Aspect_ColorScale_GetHeight(self, *args)
+        return _Aspect.Aspect_ColorScale_GetHeight(self)
 
-    def SetSize(self, *args) -> "void" :
+    def SetSize(self, *args):
         """
         * Sets the size of color scale.
 
@@ -1792,7 +1800,7 @@ class Aspect_ColorScale(OCC.MMgt.MMgt_TShared):
         """
         return _Aspect.Aspect_ColorScale_SetSize(self, *args)
 
-    def SetWidth(self, *args) -> "void" :
+    def SetWidth(self, *args):
         """
         * Sets the width of color scale.
 
@@ -1803,7 +1811,7 @@ class Aspect_ColorScale(OCC.MMgt.MMgt_TShared):
         """
         return _Aspect.Aspect_ColorScale_SetWidth(self, *args)
 
-    def SetHeight(self, *args) -> "void" :
+    def SetHeight(self, *args):
         """
         * Sets the height of color scale.
 
@@ -1814,7 +1822,7 @@ class Aspect_ColorScale(OCC.MMgt.MMgt_TShared):
         """
         return _Aspect.Aspect_ColorScale_SetHeight(self, *args)
 
-    def GetPosition(self, *args) -> "void" :
+    def GetPosition(self):
         """
         * Returns the position of color scale.
 
@@ -1825,27 +1833,27 @@ class Aspect_ColorScale(OCC.MMgt.MMgt_TShared):
         :rtype: None
 
         """
-        return _Aspect.Aspect_ColorScale_GetPosition(self, *args)
+        return _Aspect.Aspect_ColorScale_GetPosition(self)
 
-    def GetXPosition(self, *args) -> "Standard_Real" :
+    def GetXPosition(self):
         """
         * Returns the X position of color scale.
 
         :rtype: float
 
         """
-        return _Aspect.Aspect_ColorScale_GetXPosition(self, *args)
+        return _Aspect.Aspect_ColorScale_GetXPosition(self)
 
-    def GetYPosition(self, *args) -> "Standard_Real" :
+    def GetYPosition(self):
         """
         * Returns the height of color scale.
 
         :rtype: float
 
         """
-        return _Aspect.Aspect_ColorScale_GetYPosition(self, *args)
+        return _Aspect.Aspect_ColorScale_GetYPosition(self)
 
-    def SetPosition(self, *args) -> "void" :
+    def SetPosition(self, *args):
         """
         * Sets the position of color scale.
 
@@ -1858,7 +1866,7 @@ class Aspect_ColorScale(OCC.MMgt.MMgt_TShared):
         """
         return _Aspect.Aspect_ColorScale_SetPosition(self, *args)
 
-    def SetXPosition(self, *args) -> "void" :
+    def SetXPosition(self, *args):
         """
         * Sets the X position of color scale.
 
@@ -1869,7 +1877,7 @@ class Aspect_ColorScale(OCC.MMgt.MMgt_TShared):
         """
         return _Aspect.Aspect_ColorScale_SetXPosition(self, *args)
 
-    def SetYPosition(self, *args) -> "void" :
+    def SetYPosition(self, *args):
         """
         * Sets the Y position of color scale.
 
@@ -1880,32 +1888,46 @@ class Aspect_ColorScale(OCC.MMgt.MMgt_TShared):
         """
         return _Aspect.Aspect_ColorScale_SetYPosition(self, *args)
 
-    def GetTextHeight(self, *args) -> "Standard_Integer" :
+    def GetTextHeight(self):
         """
         :rtype: int
 
         """
-        return _Aspect.Aspect_ColorScale_GetTextHeight(self, *args)
+        return _Aspect.Aspect_ColorScale_GetTextHeight(self)
 
-    def SetTextHeight(self, *args) -> "void" :
+    def SetTextHeight(self, *args):
         """
         :param aHeigh:
-        :type aHeigh: int
+        :type aHeigh: Standard_Integer
         :rtype: None
 
         """
         return _Aspect.Aspect_ColorScale_SetTextHeight(self, *args)
 
-    def PaintRect(self, *args) -> "void" :
+    def PaintRect(self, *args):
         """
         :param X:
-        :type X: int
+        :type X: Standard_Integer
         :param Y:
-        :type Y: int
+        :type Y: Standard_Integer
         :param W:
-        :type W: int
+        :type W: Standard_Integer
         :param H:
-        :type H: int
+        :type H: Standard_Integer
+        :param aColor:
+        :type aColor: Quantity_Color &
+        :param aFilled: default value is Standard_False
+        :type aFilled: bool
+        :rtype: void
+
+        :param X:
+        :type X: Standard_Integer
+        :param Y:
+        :type Y: Standard_Integer
+        :param W:
+        :type W: Standard_Integer
+        :param H:
+        :type H: Standard_Integer
         :param aColor:
         :type aColor: Quantity_Color &
         :param aFilled: default value is Standard_False
@@ -1915,14 +1937,14 @@ class Aspect_ColorScale(OCC.MMgt.MMgt_TShared):
         """
         return _Aspect.Aspect_ColorScale_PaintRect(self, *args)
 
-    def PaintText(self, *args) -> "void" :
+    def PaintText(self, *args):
         """
         :param aText:
         :type aText: TCollection_ExtendedString &
         :param X:
-        :type X: int
+        :type X: Standard_Integer
         :param Y:
-        :type Y: int
+        :type Y: Standard_Integer
         :param aColor:
         :type aColor: Quantity_Color &
         :rtype: void
@@ -1930,7 +1952,7 @@ class Aspect_ColorScale(OCC.MMgt.MMgt_TShared):
         """
         return _Aspect.Aspect_ColorScale_PaintText(self, *args)
 
-    def TextWidth(self, *args) -> "Standard_Integer" :
+    def TextWidth(self, *args):
         """
         :param aText:
         :type aText: TCollection_ExtendedString &
@@ -1939,7 +1961,7 @@ class Aspect_ColorScale(OCC.MMgt.MMgt_TShared):
         """
         return _Aspect.Aspect_ColorScale_TextWidth(self, *args)
 
-    def TextHeight(self, *args) -> "Standard_Integer" :
+    def TextHeight(self, *args):
         """
         :param aText:
         :type aText: TCollection_ExtendedString &
@@ -1948,11 +1970,11 @@ class Aspect_ColorScale(OCC.MMgt.MMgt_TShared):
         """
         return _Aspect.Aspect_ColorScale_TextHeight(self, *args)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Aspect_ColorScale self)"""
         return _Aspect.Aspect_ColorScale__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Aspect_ColorScale" :
+    def GetHandle(self):
         """GetHandle(Aspect_ColorScale self) -> Handle_Aspect_ColorScale"""
         return _Aspect.Aspect_ColorScale_GetHandle(self)
 
@@ -2019,7 +2041,7 @@ Aspect_ColorScale.GetHandle = new_instancemethod(_Aspect.Aspect_ColorScale_GetHa
 Aspect_ColorScale_swigregister = _Aspect.Aspect_ColorScale_swigregister
 Aspect_ColorScale_swigregister(Aspect_ColorScale)
 
-def Aspect_ColorScale_FindColor(*args) -> "Standard_Boolean" :
+def Aspect_ColorScale_FindColor(*args):
   """
     * Calculate color according passed value; returns true if value is in range or false, if isn't
 
@@ -2036,7 +2058,7 @@ def Aspect_ColorScale_FindColor(*args) -> "Standard_Boolean" :
     :param Max:
     :type Max: float
     :param ColorsCount:
-    :type ColorsCount: int
+    :type ColorsCount: Standard_Integer
     :param Color:
     :type Color: Quantity_Color &
     :rtype: bool
@@ -2065,7 +2087,7 @@ Handle_Aspect_ColorScale._kill_pointed = new_instancemethod(_Aspect.Handle_Aspec
 Handle_Aspect_ColorScale_swigregister = _Aspect.Handle_Aspect_ColorScale_swigregister
 Handle_Aspect_ColorScale_swigregister(Handle_Aspect_ColorScale)
 
-def Handle_Aspect_ColorScale_DownCast(*args) -> "Handle_Aspect_ColorScale const" :
+def Handle_Aspect_ColorScale_DownCast(*args):
   return _Aspect.Handle_Aspect_ColorScale_DownCast(*args)
 Handle_Aspect_ColorScale_DownCast = _Aspect.Handle_Aspect_ColorScale_DownCast
 
@@ -2073,8 +2095,14 @@ class Aspect_Driver(OCC.MMgt.MMgt_TShared):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def EndDraw(self, *args) -> "void" :
+    def EndDraw(self, *args):
         """
+        * Flush all graphics and Wait after up to date
+
+        :param Synchronize: default value is Standard_False
+        :type Synchronize: bool
+        :rtype: void
+
         * Flush all graphics and Wait after up to date
 
         :param Synchronize: default value is Standard_False
@@ -2084,7 +2112,7 @@ class Aspect_Driver(OCC.MMgt.MMgt_TShared):
         """
         return _Aspect.Aspect_Driver_EndDraw(self, *args)
 
-    def SetColorMap(self, *args) -> "void" :
+    def SetColorMap(self, *args):
         """
         :param aColorMap:
         :type aColorMap: Handle_Aspect_ColorMap &
@@ -2093,7 +2121,7 @@ class Aspect_Driver(OCC.MMgt.MMgt_TShared):
         """
         return _Aspect.Aspect_Driver_SetColorMap(self, *args)
 
-    def SetTypeMap(self, *args) -> "void" :
+    def SetTypeMap(self, *args):
         """
         :param aTypeMap:
         :type aTypeMap: Handle_Aspect_TypeMap &
@@ -2102,7 +2130,7 @@ class Aspect_Driver(OCC.MMgt.MMgt_TShared):
         """
         return _Aspect.Aspect_Driver_SetTypeMap(self, *args)
 
-    def SetWidthMap(self, *args) -> "void" :
+    def SetWidthMap(self, *args):
         """
         :param aWidthMap:
         :type aWidthMap: Handle_Aspect_WidthMap &
@@ -2111,7 +2139,7 @@ class Aspect_Driver(OCC.MMgt.MMgt_TShared):
         """
         return _Aspect.Aspect_Driver_SetWidthMap(self, *args)
 
-    def SetFontMap(self, *args) -> "void" :
+    def SetFontMap(self, *args):
         """
         * Sets the current font map to this driver and Enable/Disable this driver to use MDTV fonts instead system fonts.
 
@@ -2122,7 +2150,7 @@ class Aspect_Driver(OCC.MMgt.MMgt_TShared):
         """
         return _Aspect.Aspect_Driver_SetFontMap(self, *args)
 
-    def SetMarkMap(self, *args) -> "void" :
+    def SetMarkMap(self, *args):
         """
         :param aMarkMap:
         :type aMarkMap: Handle_Aspect_MarkMap &
@@ -2131,31 +2159,45 @@ class Aspect_Driver(OCC.MMgt.MMgt_TShared):
         """
         return _Aspect.Aspect_Driver_SetMarkMap(self, *args)
 
-    def SetLineAttrib(self, *args) -> "void" :
+    def SetLineAttrib(self, *args):
         """
         :param ColorIndex:
-        :type ColorIndex: int
+        :type ColorIndex: Standard_Integer
         :param TypeIndex:
-        :type TypeIndex: int
+        :type TypeIndex: Standard_Integer
         :param WidthIndex:
-        :type WidthIndex: int
+        :type WidthIndex: Standard_Integer
         :rtype: void
 
         """
         return _Aspect.Aspect_Driver_SetLineAttrib(self, *args)
 
-    def SetTextAttrib(self, *args) -> "void" :
+    def SetTextAttrib(self, *args):
         """
         :param ColorIndex:
-        :type ColorIndex: int
+        :type ColorIndex: Standard_Integer
         :param FontIndex:
-        :type FontIndex: int
+        :type FontIndex: Standard_Integer
         :rtype: void
 
         :param ColorIndex:
-        :type ColorIndex: int
+        :type ColorIndex: Standard_Integer
         :param FontIndex:
-        :type FontIndex: int
+        :type FontIndex: Standard_Integer
+        :param aSlant:
+        :type aSlant: Quantity_PlaneAngle
+        :param aHScale:
+        :type aHScale: Quantity_Factor
+        :param aWScale:
+        :type aWScale: Quantity_Factor
+        :param isUnderlined: default value is Standard_False
+        :type isUnderlined: bool
+        :rtype: void
+
+        :param ColorIndex:
+        :type ColorIndex: Standard_Integer
+        :param FontIndex:
+        :type FontIndex: Standard_Integer
         :param aSlant:
         :type aSlant: Quantity_PlaneAngle
         :param aHScale:
@@ -2169,12 +2211,20 @@ class Aspect_Driver(OCC.MMgt.MMgt_TShared):
         """
         return _Aspect.Aspect_Driver_SetTextAttrib(self, *args)
 
-    def SetPolyAttrib(self, *args) -> "void" :
+    def SetPolyAttrib(self, *args):
         """
         :param ColorIndex:
-        :type ColorIndex: int
+        :type ColorIndex: Standard_Integer
         :param TileIndex:
-        :type TileIndex: int
+        :type TileIndex: Standard_Integer
+        :param DrawEdge: default value is Standard_False
+        :type DrawEdge: bool
+        :rtype: void
+
+        :param ColorIndex:
+        :type ColorIndex: Standard_Integer
+        :param TileIndex:
+        :type TileIndex: Standard_Integer
         :param DrawEdge: default value is Standard_False
         :type DrawEdge: bool
         :rtype: void
@@ -2182,12 +2232,20 @@ class Aspect_Driver(OCC.MMgt.MMgt_TShared):
         """
         return _Aspect.Aspect_Driver_SetPolyAttrib(self, *args)
 
-    def SetMarkerAttrib(self, *args) -> "void" :
+    def SetMarkerAttrib(self, *args):
         """
         :param ColorIndex:
-        :type ColorIndex: int
+        :type ColorIndex: Standard_Integer
         :param WidthIndex:
-        :type WidthIndex: int
+        :type WidthIndex: Standard_Integer
+        :param FillMarker: default value is Standard_False
+        :type FillMarker: bool
+        :rtype: void
+
+        :param ColorIndex:
+        :type ColorIndex: Standard_Integer
+        :param WidthIndex:
+        :type WidthIndex: Standard_Integer
         :param FillMarker: default value is Standard_False
         :type FillMarker: bool
         :rtype: void
@@ -2195,7 +2253,7 @@ class Aspect_Driver(OCC.MMgt.MMgt_TShared):
         """
         return _Aspect.Aspect_Driver_SetMarkerAttrib(self, *args)
 
-    def IsKnownImage(self, *args) -> "Standard_Boolean" :
+    def IsKnownImage(self, *args):
         """
         :param anImage:
         :type anImage: Handle_Standard_Transient &
@@ -2204,20 +2262,20 @@ class Aspect_Driver(OCC.MMgt.MMgt_TShared):
         """
         return _Aspect.Aspect_Driver_IsKnownImage(self, *args)
 
-    def SizeOfImageFile(self, *args) -> "Standard_Boolean" :
+    def SizeOfImageFile(self, *args):
         """
         :param anImageFile:
         :type anImageFile: char *
         :param aWidth:
-        :type aWidth: int &
+        :type aWidth: Standard_Integer &
         :param aHeight:
-        :type aHeight: int &
+        :type aHeight: Standard_Integer &
         :rtype: bool
 
         """
         return _Aspect.Aspect_Driver_SizeOfImageFile(self, *args)
 
-    def ClearImage(self, *args) -> "void" :
+    def ClearImage(self, *args):
         """
         :param anImageId:
         :type anImageId: Handle_Standard_Transient &
@@ -2226,7 +2284,7 @@ class Aspect_Driver(OCC.MMgt.MMgt_TShared):
         """
         return _Aspect.Aspect_Driver_ClearImage(self, *args)
 
-    def ClearImageFile(self, *args) -> "void" :
+    def ClearImageFile(self, *args):
         """
         :param anImageFile:
         :type anImageFile: char *
@@ -2235,7 +2293,7 @@ class Aspect_Driver(OCC.MMgt.MMgt_TShared):
         """
         return _Aspect.Aspect_Driver_ClearImageFile(self, *args)
 
-    def DrawImage(self, *args) -> "void" :
+    def DrawImage(self, *args):
         """
         :param anImageId:
         :type anImageId: Handle_Standard_Transient &
@@ -2248,8 +2306,18 @@ class Aspect_Driver(OCC.MMgt.MMgt_TShared):
         """
         return _Aspect.Aspect_Driver_DrawImage(self, *args)
 
-    def DrawImageFile(self, *args) -> "void" :
+    def DrawImageFile(self, *args):
         """
+        :param anImageFile:
+        :type anImageFile: char *
+        :param aX:
+        :type aX: Standard_ShortReal
+        :param aY:
+        :type aY: Standard_ShortReal
+        :param aScale: default value is 1.0
+        :type aScale: Quantity_Factor
+        :rtype: void
+
         :param anImageFile:
         :type anImageFile: char *
         :param aX:
@@ -2263,7 +2331,7 @@ class Aspect_Driver(OCC.MMgt.MMgt_TShared):
         """
         return _Aspect.Aspect_Driver_DrawImageFile(self, *args)
 
-    def FillAndDrawImage(self, *args) -> "void" :
+    def FillAndDrawImage(self, *args):
         """
         * Fills a complete Image .
 
@@ -2274,9 +2342,9 @@ class Aspect_Driver(OCC.MMgt.MMgt_TShared):
         :param aY:
         :type aY: Standard_ShortReal
         :param aWidth:
-        :type aWidth: int
+        :type aWidth: Standard_Integer
         :param aHeight:
-        :type aHeight: int
+        :type aHeight: Standard_Integer
         :param anArrayOfPixels:
         :type anArrayOfPixels: Standard_Address
         :rtype: void
@@ -2290,11 +2358,11 @@ class Aspect_Driver(OCC.MMgt.MMgt_TShared):
         :param aY:
         :type aY: Standard_ShortReal
         :param anIndexOfLine:
-        :type anIndexOfLine: int
+        :type anIndexOfLine: Standard_Integer
         :param aWidth:
-        :type aWidth: int
+        :type aWidth: Standard_Integer
         :param aHeight:
-        :type aHeight: int
+        :type aHeight: Standard_Integer
         :param anArrayOfPixels:
         :type anArrayOfPixels: Standard_Address
         :rtype: void
@@ -2302,7 +2370,7 @@ class Aspect_Driver(OCC.MMgt.MMgt_TShared):
         """
         return _Aspect.Aspect_Driver_FillAndDrawImage(self, *args)
 
-    def DrawPolyline(self, *args) -> "void" :
+    def DrawPolyline(self, *args):
         """
         * Draw a polyline depending of the SetLineAttrib() attributes.
 
@@ -2315,7 +2383,7 @@ class Aspect_Driver(OCC.MMgt.MMgt_TShared):
         """
         return _Aspect.Aspect_Driver_DrawPolyline(self, *args)
 
-    def DrawPolygon(self, *args) -> "void" :
+    def DrawPolygon(self, *args):
         """
         * Draw a polygon depending of the SetPolyAttrib() attributes.
 
@@ -2328,7 +2396,7 @@ class Aspect_Driver(OCC.MMgt.MMgt_TShared):
         """
         return _Aspect.Aspect_Driver_DrawPolygon(self, *args)
 
-    def DrawSegment(self, *args) -> "void" :
+    def DrawSegment(self, *args):
         """
         * Draw a segment depending of the SetLineAttrib() attributes.
 
@@ -2345,8 +2413,36 @@ class Aspect_Driver(OCC.MMgt.MMgt_TShared):
         """
         return _Aspect.Aspect_Driver_DrawSegment(self, *args)
 
-    def DrawText(self, *args) -> "void" :
+    def DrawText(self, *args):
         """
+        * Draws a text depending of the SetTextAttrib() attributes.
+
+        :param aText:
+        :type aText: TCollection_ExtendedString &
+        :param Xpos:
+        :type Xpos: Standard_ShortReal
+        :param Ypos:
+        :type Ypos: Standard_ShortReal
+        :param anAngle: default value is 0.0
+        :type anAngle: Standard_ShortReal
+        :param aType: default value is Aspect_TOT_SOLID
+        :type aType: Aspect_TypeOfText
+        :rtype: void
+
+        * Draws a text depending of the SetTextAttrib() attributes.
+
+        :param aText:
+        :type aText: TCollection_ExtendedString &
+        :param Xpos:
+        :type Xpos: Standard_ShortReal
+        :param Ypos:
+        :type Ypos: Standard_ShortReal
+        :param anAngle: default value is 0.0
+        :type anAngle: Standard_ShortReal
+        :param aType: default value is Aspect_TOT_SOLID
+        :type aType: Aspect_TypeOfText
+        :rtype: void
+
         * Draws a text depending of the SetTextAttrib() attributes.
 
         :param aText:
@@ -2364,8 +2460,56 @@ class Aspect_Driver(OCC.MMgt.MMgt_TShared):
         """
         return _Aspect.Aspect_Driver_DrawText(self, *args)
 
-    def DrawPolyText(self, *args) -> "void" :
+    def DrawPolyText(self, *args):
         """
+        * Draws an framed text depending of the SetTextAttrib() and SetPolyAttrib() attributes. Warning: Coordinates must be defined in DWU space. //!	 <aMarge> defines the ratio of the space between the //!	 polygon borders and the bounding box of the text and //!	 depending of the height of the text.
+
+        :param aText:
+        :type aText: TCollection_ExtendedString &
+        :param Xpos:
+        :type Xpos: Standard_ShortReal
+        :param Ypos:
+        :type Ypos: Standard_ShortReal
+        :param aMarge: default value is 0.1
+        :type aMarge: Quantity_Ratio
+        :param anAngle: default value is 0.0
+        :type anAngle: Standard_ShortReal
+        :param aType: default value is Aspect_TOT_SOLID
+        :type aType: Aspect_TypeOfText
+        :rtype: void
+
+        * Draws an framed text depending of the SetTextAttrib() and SetPolyAttrib() attributes. Warning: Coordinates must be defined in DWU space. //!	 <aMarge> defines the ratio of the space between the //!	 polygon borders and the bounding box of the text and //!	 depending of the height of the text.
+
+        :param aText:
+        :type aText: TCollection_ExtendedString &
+        :param Xpos:
+        :type Xpos: Standard_ShortReal
+        :param Ypos:
+        :type Ypos: Standard_ShortReal
+        :param aMarge: default value is 0.1
+        :type aMarge: Quantity_Ratio
+        :param anAngle: default value is 0.0
+        :type anAngle: Standard_ShortReal
+        :param aType: default value is Aspect_TOT_SOLID
+        :type aType: Aspect_TypeOfText
+        :rtype: void
+
+        * Draws an framed text depending of the SetTextAttrib() and SetPolyAttrib() attributes. Warning: Coordinates must be defined in DWU space. //!	 <aMarge> defines the ratio of the space between the //!	 polygon borders and the bounding box of the text and //!	 depending of the height of the text.
+
+        :param aText:
+        :type aText: TCollection_ExtendedString &
+        :param Xpos:
+        :type Xpos: Standard_ShortReal
+        :param Ypos:
+        :type Ypos: Standard_ShortReal
+        :param aMarge: default value is 0.1
+        :type aMarge: Quantity_Ratio
+        :param anAngle: default value is 0.0
+        :type anAngle: Standard_ShortReal
+        :param aType: default value is Aspect_TOT_SOLID
+        :type aType: Aspect_TypeOfText
+        :rtype: void
+
         * Draws an framed text depending of the SetTextAttrib() and SetPolyAttrib() attributes. Warning: Coordinates must be defined in DWU space. //!	 <aMarge> defines the ratio of the space between the //!	 polygon borders and the bounding box of the text and //!	 depending of the height of the text.
 
         :param aText:
@@ -2385,7 +2529,7 @@ class Aspect_Driver(OCC.MMgt.MMgt_TShared):
         """
         return _Aspect.Aspect_Driver_DrawPolyText(self, *args)
 
-    def DrawPoint(self, *args) -> "void" :
+    def DrawPoint(self, *args):
         """
         * Draws a 1 PIXEL point depending of the SetMarkerAttrib()
 
@@ -2398,12 +2542,28 @@ class Aspect_Driver(OCC.MMgt.MMgt_TShared):
         """
         return _Aspect.Aspect_Driver_DrawPoint(self, *args)
 
-    def DrawMarker(self, *args) -> "void" :
+    def DrawMarker(self, *args):
         """
         * Draws the prevously defined marker <aMarker>
 
         :param aMarker:
-        :type aMarker: int
+        :type aMarker: Standard_Integer
+        :param Xpos:
+        :type Xpos: Standard_ShortReal
+        :param Ypos:
+        :type Ypos: Standard_ShortReal
+        :param Width:
+        :type Width: Standard_ShortReal
+        :param Height:
+        :type Height: Standard_ShortReal
+        :param Angle: default value is 0.0
+        :type Angle: Standard_ShortReal
+        :rtype: void
+
+        * Draws the prevously defined marker <aMarker>
+
+        :param aMarker:
+        :type aMarker: Standard_Integer
         :param Xpos:
         :type Xpos: Standard_ShortReal
         :param Ypos:
@@ -2419,8 +2579,40 @@ class Aspect_Driver(OCC.MMgt.MMgt_TShared):
         """
         return _Aspect.Aspect_Driver_DrawMarker(self, *args)
 
-    def DrawArc(self, *args) -> "Standard_Boolean" :
+    def DrawArc(self, *args):
         """
+        * Draws an Ellipsoid arc of center <X,Y> and Radius
+
+        :param X:
+        :type X: Standard_ShortReal
+        :param Y:
+        :type Y: Standard_ShortReal
+        :param anXradius:
+        :type anXradius: Standard_ShortReal
+        :param anYradius:
+        :type anYradius: Standard_ShortReal
+        :param aStartAngle: default value is 0.0
+        :type aStartAngle: Standard_ShortReal
+        :param anOpenAngle: default value is 6.283185
+        :type anOpenAngle: Standard_ShortReal
+        :rtype: bool
+
+        * Draws an Ellipsoid arc of center <X,Y> and Radius
+
+        :param X:
+        :type X: Standard_ShortReal
+        :param Y:
+        :type Y: Standard_ShortReal
+        :param anXradius:
+        :type anXradius: Standard_ShortReal
+        :param anYradius:
+        :type anYradius: Standard_ShortReal
+        :param aStartAngle: default value is 0.0
+        :type aStartAngle: Standard_ShortReal
+        :param anOpenAngle: default value is 6.283185
+        :type anOpenAngle: Standard_ShortReal
+        :rtype: bool
+
         * Draws an Ellipsoid arc of center <X,Y> and Radius
 
         :param X:
@@ -2440,8 +2632,40 @@ class Aspect_Driver(OCC.MMgt.MMgt_TShared):
         """
         return _Aspect.Aspect_Driver_DrawArc(self, *args)
 
-    def DrawPolyArc(self, *args) -> "Standard_Boolean" :
+    def DrawPolyArc(self, *args):
         """
+        * Draws an filled Ellipsoid arc of center <X,Y> and Radius
+
+        :param X:
+        :type X: Standard_ShortReal
+        :param Y:
+        :type Y: Standard_ShortReal
+        :param anXradius:
+        :type anXradius: Standard_ShortReal
+        :param anYradius:
+        :type anYradius: Standard_ShortReal
+        :param aStartAngle: default value is 0.0
+        :type aStartAngle: Standard_ShortReal
+        :param anOpenAngle: default value is 6.283185
+        :type anOpenAngle: Standard_ShortReal
+        :rtype: bool
+
+        * Draws an filled Ellipsoid arc of center <X,Y> and Radius
+
+        :param X:
+        :type X: Standard_ShortReal
+        :param Y:
+        :type Y: Standard_ShortReal
+        :param anXradius:
+        :type anXradius: Standard_ShortReal
+        :param anYradius:
+        :type anYradius: Standard_ShortReal
+        :param aStartAngle: default value is 0.0
+        :type aStartAngle: Standard_ShortReal
+        :param anOpenAngle: default value is 6.283185
+        :type anOpenAngle: Standard_ShortReal
+        :rtype: bool
+
         * Draws an filled Ellipsoid arc of center <X,Y> and Radius
 
         :param X:
@@ -2461,118 +2685,118 @@ class Aspect_Driver(OCC.MMgt.MMgt_TShared):
         """
         return _Aspect.Aspect_Driver_DrawPolyArc(self, *args)
 
-    def BeginPolyline(self, *args) -> "void" :
+    def BeginPolyline(self, *args):
         """
         * Begin an incremental polyline primitive of <aNumber> of points . Warning: Points must be added by the the DrawPoint() method.
 
         :param aNumber:
-        :type aNumber: int
+        :type aNumber: Standard_Integer
         :rtype: void
 
         """
         return _Aspect.Aspect_Driver_BeginPolyline(self, *args)
 
-    def BeginPolygon(self, *args) -> "void" :
+    def BeginPolygon(self, *args):
         """
         * Begin an incremental polygon primitive of <aNumber> of points . Warning: Points must be added by the the DrawPoint() method.
 
         :param aNumber:
-        :type aNumber: int
+        :type aNumber: Standard_Integer
         :rtype: void
 
         """
         return _Aspect.Aspect_Driver_BeginPolygon(self, *args)
 
-    def BeginSegments(self, *args) -> "void" :
+    def BeginSegments(self):
         """
         * Begin a set of segments . Warning: Segments must be added by the DrawSegment() method.
 
         :rtype: void
 
         """
-        return _Aspect.Aspect_Driver_BeginSegments(self, *args)
+        return _Aspect.Aspect_Driver_BeginSegments(self)
 
-    def BeginArcs(self, *args) -> "void" :
+    def BeginArcs(self):
         """
         * Begin a set of circles or ellips . Warning: Arcs must be added by the DrawArc() methods.
 
         :rtype: void
 
         """
-        return _Aspect.Aspect_Driver_BeginArcs(self, *args)
+        return _Aspect.Aspect_Driver_BeginArcs(self)
 
-    def BeginPolyArcs(self, *args) -> "void" :
+    def BeginPolyArcs(self):
         """
         * Begin a set of polygon circles or ellips . Warning: Arcs must be added by the DrawPolyArc() methods.
 
         :rtype: void
 
         """
-        return _Aspect.Aspect_Driver_BeginPolyArcs(self, *args)
+        return _Aspect.Aspect_Driver_BeginPolyArcs(self)
 
-    def BeginMarkers(self, *args) -> "void" :
+    def BeginMarkers(self):
         """
         * Begin a set of markers . Warning: Markers must be added by the DrawMarker() method.
 
         :rtype: void
 
         """
-        return _Aspect.Aspect_Driver_BeginMarkers(self, *args)
+        return _Aspect.Aspect_Driver_BeginMarkers(self)
 
-    def BeginPoints(self, *args) -> "void" :
+    def BeginPoints(self):
         """
         * Begin a set of points . Warning: Points must be added by the DrawPoint() method.
 
         :rtype: void
 
         """
-        return _Aspect.Aspect_Driver_BeginPoints(self, *args)
+        return _Aspect.Aspect_Driver_BeginPoints(self)
 
-    def ClosePrimitive(self, *args) -> "void" :
+    def ClosePrimitive(self):
         """
         * Close the last Begining primitive
 
         :rtype: void
 
         """
-        return _Aspect.Aspect_Driver_ClosePrimitive(self, *args)
+        return _Aspect.Aspect_Driver_ClosePrimitive(self)
 
-    def ColorMap(self, *args) -> "Handle_Aspect_ColorMap" :
+    def ColorMap(self):
         """
         :rtype: Handle_Aspect_ColorMap
 
         """
-        return _Aspect.Aspect_Driver_ColorMap(self, *args)
+        return _Aspect.Aspect_Driver_ColorMap(self)
 
-    def TypeMap(self, *args) -> "Handle_Aspect_TypeMap" :
+    def TypeMap(self):
         """
         :rtype: Handle_Aspect_TypeMap
 
         """
-        return _Aspect.Aspect_Driver_TypeMap(self, *args)
+        return _Aspect.Aspect_Driver_TypeMap(self)
 
-    def WidthMap(self, *args) -> "Handle_Aspect_WidthMap" :
+    def WidthMap(self):
         """
         :rtype: Handle_Aspect_WidthMap
 
         """
-        return _Aspect.Aspect_Driver_WidthMap(self, *args)
+        return _Aspect.Aspect_Driver_WidthMap(self)
 
-    def FontMap(self, *args) -> "Handle_Aspect_FontMap" :
+    def FontMap(self):
         """
         :rtype: Handle_Aspect_FontMap
 
         """
-        return _Aspect.Aspect_Driver_FontMap(self, *args)
+        return _Aspect.Aspect_Driver_FontMap(self)
 
-    def MarkMap(self, *args) -> "Handle_Aspect_MarkMap" :
+    def MarkMap(self):
         """
         :rtype: Handle_Aspect_MarkMap
 
         """
-        return _Aspect.Aspect_Driver_MarkMap(self, *args)
+        return _Aspect.Aspect_Driver_MarkMap(self)
 
-    def WorkSpace(self, *args) -> "void" :
+    def WorkSpace(self):
         """
         * Returns the Available WorkSpace in DWU coordinates
 
@@ -2583,14 +2807,14 @@ class Aspect_Driver(OCC.MMgt.MMgt_TShared):
         :rtype: void
 
         """
-        return _Aspect.Aspect_Driver_WorkSpace(self, *args)
+        return _Aspect.Aspect_Driver_WorkSpace(self)
 
-    def Convert(self, *args) -> "void" :
+    def Convert(self, *args):
         """
         * Returns the DWU value depending of the PIXEL value.
 
         :param PV:
-        :type PV: int
+        :type PV: Standard_Integer
         :rtype: Quantity_Length
 
         * Returns the PIXEL value depending of the DWU value.
@@ -2602,9 +2826,9 @@ class Aspect_Driver(OCC.MMgt.MMgt_TShared):
         * Returns the DWU position depending of the PIXEL position .
 
         :param PX:
-        :type PX: int
+        :type PX: Standard_Integer
         :param PY:
-        :type PY: int
+        :type PY: Standard_Integer
         :param DX:
         :type DX: Quantity_Length &
         :param DY:
@@ -2618,19 +2842,19 @@ class Aspect_Driver(OCC.MMgt.MMgt_TShared):
         :param DY:
         :type DY: Quantity_Length
         :param PX:
-        :type PX: int &
+        :type PX: Standard_Integer &
         :param PY:
-        :type PY: int &
+        :type PY: Standard_Integer &
         :rtype: void
 
         """
         return _Aspect.Aspect_Driver_Convert(self, *args)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Aspect_Driver self)"""
         return _Aspect.Aspect_Driver__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Aspect_Driver" :
+    def GetHandle(self):
         """GetHandle(Aspect_Driver self) -> Handle_Aspect_Driver"""
         return _Aspect.Aspect_Driver_GetHandle(self)
 
@@ -2709,7 +2933,7 @@ Handle_Aspect_Driver._kill_pointed = new_instancemethod(_Aspect.Handle_Aspect_Dr
 Handle_Aspect_Driver_swigregister = _Aspect.Handle_Aspect_Driver_swigregister
 Handle_Aspect_Driver_swigregister(Handle_Aspect_Driver)
 
-def Handle_Aspect_Driver_DownCast(*args) -> "Handle_Aspect_Driver const" :
+def Handle_Aspect_Driver_DownCast(*args):
   return _Aspect.Handle_Aspect_Driver_DownCast(*args)
 Handle_Aspect_Driver_DownCast = _Aspect.Handle_Aspect_Driver_DownCast
 
@@ -2725,23 +2949,23 @@ class Aspect_Edge(object):
         * Creates an edge from an index of vertices //!	 in a table of vertices. //!	 <AType> indicates if this edge is seen or not. Warning: Raises EdgeDefinitionError if AIndex1 == AIndex2.
 
         :param AIndex1:
-        :type AIndex1: int
+        :type AIndex1: Standard_Integer
         :param AIndex2:
-        :type AIndex2: int
+        :type AIndex2: Standard_Integer
         :param AType:
         :type AType: Aspect_TypeOfEdge
         :rtype: None
 
         """
         _Aspect.Aspect_Edge_swiginit(self,_Aspect.new_Aspect_Edge(*args))
-    def SetValues(self, *args) -> "void" :
+    def SetValues(self, *args):
         """
         * Updates the values of an edge <self>. Warning: Raises EdgeDefinitionError if AIndex1 == AIndex2.
 
         :param AIndex1:
-        :type AIndex1: int
+        :type AIndex1: Standard_Integer
         :param AIndex2:
-        :type AIndex2: int
+        :type AIndex2: Standard_Integer
         :param AType:
         :type AType: Aspect_TypeOfEdge
         :rtype: None
@@ -2749,14 +2973,14 @@ class Aspect_Edge(object):
         """
         return _Aspect.Aspect_Edge_SetValues(self, *args)
 
-    def Values(self, *args) -> "void" :
+    def Values(self, *args):
         """
         * Returns the index of the vertices and the //!	 type of edge <self>.
 
         :param AIndex1:
-        :type AIndex1: int &
+        :type AIndex1: Standard_Integer &
         :param AIndex2:
-        :type AIndex2: int &
+        :type AIndex2: Standard_Integer &
         :param AType:
         :type AType: Aspect_TypeOfEdge &
         :rtype: None
@@ -2764,32 +2988,32 @@ class Aspect_Edge(object):
         """
         return _Aspect.Aspect_Edge_Values(self, *args)
 
-    def FirstIndex(self, *args) -> "Standard_Integer" :
+    def FirstIndex(self):
         """
         * Returns the index of the begin of the edge <self>.
 
         :rtype: int
 
         """
-        return _Aspect.Aspect_Edge_FirstIndex(self, *args)
+        return _Aspect.Aspect_Edge_FirstIndex(self)
 
-    def LastIndex(self, *args) -> "Standard_Integer" :
+    def LastIndex(self):
         """
         * Returns the index of the end of the edge <self>.
 
         :rtype: int
 
         """
-        return _Aspect.Aspect_Edge_LastIndex(self, *args)
+        return _Aspect.Aspect_Edge_LastIndex(self)
 
-    def Type(self, *args) -> "Aspect_TypeOfEdge" :
+    def Type(self):
         """
         * Returns the type of the edge <self>.
 
         :rtype: Aspect_TypeOfEdge
 
         """
-        return _Aspect.Aspect_Edge_Type(self, *args)
+        return _Aspect.Aspect_Edge_Type(self)
 
     def __del__(self):
     	try:
@@ -2811,13 +3035,13 @@ Aspect_Edge_swigregister(Aspect_Edge)
 class Aspect_FontMap(OCC.MMgt.MMgt_TShared):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _Aspect.Aspect_FontMap_swiginit(self,_Aspect.new_Aspect_FontMap(*args))
-    def AddEntry(self, *args) -> "Standard_Integer" :
+        _Aspect.Aspect_FontMap_swiginit(self,_Aspect.new_Aspect_FontMap())
+    def AddEntry(self, *args):
         """
         * Adds an entry in the font map <self>. Warning: Raises BadAccess if FontMap size is exceeded.
 
@@ -2834,49 +3058,49 @@ class Aspect_FontMap(OCC.MMgt.MMgt_TShared):
         """
         return _Aspect.Aspect_FontMap_AddEntry(self, *args)
 
-    def Size(self, *args) -> "Standard_Integer" :
+    def Size(self):
         """
         * Returns the Allocated fontmap Size
 
         :rtype: int
 
         """
-        return _Aspect.Aspect_FontMap_Size(self, *args)
+        return _Aspect.Aspect_FontMap_Size(self)
 
-    def Index(self, *args) -> "Standard_Integer" :
+    def Index(self, *args):
         """
         * Returns the FontMapEntry.Index of the FontMap at rank <aFontmapIndex> .
 
         :param aFontmapIndex:
-        :type aFontmapIndex: int
+        :type aFontmapIndex: Standard_Integer
         :rtype: int
 
         """
         return _Aspect.Aspect_FontMap_Index(self, *args)
 
-    def Dump(self, *args) -> "void" :
+    def Dump(self):
         """
         :rtype: None
 
         """
-        return _Aspect.Aspect_FontMap_Dump(self, *args)
+        return _Aspect.Aspect_FontMap_Dump(self)
 
-    def Entry(self, *args) -> "Aspect_FontMapEntry" :
+    def Entry(self, *args):
         """
         * Returns the Font map entry with the index <AnIndex>. Warning: Raises BadAccess if the index less than 1 //!	 or greater than Size.
 
         :param AnIndex:
-        :type AnIndex: int
+        :type AnIndex: Standard_Integer
         :rtype: Aspect_FontMapEntry
 
         """
         return _Aspect.Aspect_FontMap_Entry(self, *args)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Aspect_FontMap self)"""
         return _Aspect.Aspect_FontMap__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Aspect_FontMap" :
+    def GetHandle(self):
         """GetHandle(Aspect_FontMap self) -> Handle_Aspect_FontMap"""
         return _Aspect.Aspect_FontMap_GetHandle(self)
 
@@ -2919,7 +3143,7 @@ Handle_Aspect_FontMap._kill_pointed = new_instancemethod(_Aspect.Handle_Aspect_F
 Handle_Aspect_FontMap_swigregister = _Aspect.Handle_Aspect_FontMap_swigregister
 Handle_Aspect_FontMap_swigregister(Handle_Aspect_FontMap)
 
-def Handle_Aspect_FontMap_DownCast(*args) -> "Handle_Aspect_FontMap const" :
+def Handle_Aspect_FontMap_DownCast(*args):
   return _Aspect.Handle_Aspect_FontMap_DownCast(*args)
 Handle_Aspect_FontMap_DownCast = _Aspect.Handle_Aspect_FontMap_DownCast
 
@@ -2935,7 +3159,7 @@ class Aspect_FontMapEntry(object):
         * Creates an allocated fontmap entry
 
         :param index:
-        :type index: int
+        :type index: Standard_Integer
         :param style:
         :type style: Aspect_FontStyle &
         :rtype: None
@@ -2948,12 +3172,12 @@ class Aspect_FontMapEntry(object):
 
         """
         _Aspect.Aspect_FontMapEntry_swiginit(self,_Aspect.new_Aspect_FontMapEntry(*args))
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         * Sets fontmap entry value and allocates it.
 
         :param index:
-        :type index: int
+        :type index: Standard_Integer
         :param style:
         :type style: Aspect_FontStyle &
         :rtype: None
@@ -2967,7 +3191,7 @@ class Aspect_FontMapEntry(object):
         """
         return _Aspect.Aspect_FontMapEntry_SetValue(self, *args)
 
-    def Set(self, *args) -> "void" :
+    def Set(self, *args):
         """
         :param entry:
         :type entry: Aspect_FontMapEntry &
@@ -2976,7 +3200,7 @@ class Aspect_FontMapEntry(object):
         """
         return _Aspect.Aspect_FontMapEntry_Set(self, *args)
 
-    def SetType(self, *args) -> "void" :
+    def SetType(self, *args):
         """
         * Sets the line style of fontmap entry.
 
@@ -2987,55 +3211,55 @@ class Aspect_FontMapEntry(object):
         """
         return _Aspect.Aspect_FontMapEntry_SetType(self, *args)
 
-    def Type(self, *args) -> "Aspect_FontStyle const &" :
+    def Type(self):
         """
         :rtype: Aspect_FontStyle
 
         """
-        return _Aspect.Aspect_FontMapEntry_Type(self, *args)
+        return _Aspect.Aspect_FontMapEntry_Type(self)
 
-    def SetIndex(self, *args) -> "void" :
+    def SetIndex(self, *args):
         """
         * Sets index value of a fontmap entry.
 
         :param index:
-        :type index: int
+        :type index: Standard_Integer
         :rtype: None
 
         """
         return _Aspect.Aspect_FontMapEntry_SetIndex(self, *args)
 
-    def Index(self, *args) -> "Standard_Integer" :
+    def Index(self):
         """
         :rtype: int
 
         """
-        return _Aspect.Aspect_FontMapEntry_Index(self, *args)
+        return _Aspect.Aspect_FontMapEntry_Index(self)
 
-    def Free(self, *args) -> "void" :
+    def Free(self):
         """
         * Unallocates the fontmap entry.
 
         :rtype: None
 
         """
-        return _Aspect.Aspect_FontMapEntry_Free(self, *args)
+        return _Aspect.Aspect_FontMapEntry_Free(self)
 
-    def IsAllocated(self, *args) -> "Standard_Boolean" :
+    def IsAllocated(self):
         """
         * Returns True if the fontmap entry is allocated. Warning: A fontmap entry is allocated when the font and //!	 the index is defined.
 
         :rtype: bool
 
         """
-        return _Aspect.Aspect_FontMapEntry_IsAllocated(self, *args)
+        return _Aspect.Aspect_FontMapEntry_IsAllocated(self)
 
-    def Dump(self, *args) -> "void" :
+    def Dump(self):
         """
         :rtype: None
 
         """
-        return _Aspect.Aspect_FontMapEntry_Dump(self, *args)
+        return _Aspect.Aspect_FontMapEntry_Dump(self)
 
     def __del__(self):
     	try:
@@ -3079,6 +3303,54 @@ class Aspect_FontStyle(object):
         :type CapsHeight: bool
         :rtype: None
 
+        * Creates the font style <Type> depending of //!	 Size given in the basic LENGTH unit and Slant in //!	 the basic PLANE ANGLE unit. //!	 When CapsHeight is True the size defines the //!	 ascent height of the font;if False,the size //!	 defines the ascent+descent part of the font.
+
+        :param Type:
+        :type Type: Aspect_TypeOfFont
+        :param Size:
+        :type Size: Quantity_Length
+        :param Slant: default value is 0.0
+        :type Slant: Quantity_PlaneAngle
+        :param CapsHeight: default value is Standard_False
+        :type CapsHeight: bool
+        :rtype: None
+
+        * Creates the font style <Type> depending of //!	 Size given in the basic LENGTH unit and Slant in //!	 the basic PLANE ANGLE unit. //!	 When CapsHeight is True the size defines the //!	 ascent height of the font;if False,the size //!	 defines the ascent+descent part of the font.
+
+        :param Type:
+        :type Type: Aspect_TypeOfFont
+        :param Size:
+        :type Size: Quantity_Length
+        :param Slant: default value is 0.0
+        :type Slant: Quantity_PlaneAngle
+        :param CapsHeight: default value is Standard_False
+        :type CapsHeight: bool
+        :rtype: None
+
+        * Creates a font style from Adobe font style descriptor //!	 depending of Size given in MM and Slant in RADIAN. //!	 When CapsHeight is True the size defines the //!	 ascent height of the font;if False,the size //!	 defines the ascent+descent part of the font. //!	 Font Style Descriptor must be : //!	 Simple form is 'family' 	Ex: 'helvetica' //!	 More complex form is 'family-weight' Ex: 'helvetica-bold' //!	 Full form is : //!		'-foundry-family-weight-slant-swdth-adstyl-pixelsize' //!		'-pointsize-resx-resy-spacing-avgWidth-registry-encoding' //!		where each field must be replaced by an '*' Warning: create the smalest font size if the foundry height
+
+        :param Style:
+        :type Style: char *
+        :param Size:
+        :type Size: Quantity_Length
+        :param Slant: default value is 0.0
+        :type Slant: Quantity_PlaneAngle
+        :param CapsHeight: default value is Standard_False
+        :type CapsHeight: bool
+        :rtype: None
+
+        * Creates a font style from Adobe font style descriptor //!	 depending of Size given in MM and Slant in RADIAN. //!	 When CapsHeight is True the size defines the //!	 ascent height of the font;if False,the size //!	 defines the ascent+descent part of the font. //!	 Font Style Descriptor must be : //!	 Simple form is 'family' 	Ex: 'helvetica' //!	 More complex form is 'family-weight' Ex: 'helvetica-bold' //!	 Full form is : //!		'-foundry-family-weight-slant-swdth-adstyl-pixelsize' //!		'-pointsize-resx-resy-spacing-avgWidth-registry-encoding' //!		where each field must be replaced by an '*' Warning: create the smalest font size if the foundry height
+
+        :param Style:
+        :type Style: char *
+        :param Size:
+        :type Size: Quantity_Length
+        :param Slant: default value is 0.0
+        :type Slant: Quantity_PlaneAngle
+        :param CapsHeight: default value is Standard_False
+        :type CapsHeight: bool
+        :rtype: None
+
         * Creates a font style from Adobe font style descriptor //!	 depending of Size given in MM and Slant in RADIAN. //!	 When CapsHeight is True the size defines the //!	 ascent height of the font;if False,the size //!	 defines the ascent+descent part of the font. //!	 Font Style Descriptor must be : //!	 Simple form is 'family' 	Ex: 'helvetica' //!	 More complex form is 'family-weight' Ex: 'helvetica-bold' //!	 Full form is : //!		'-foundry-family-weight-slant-swdth-adstyl-pixelsize' //!		'-pointsize-resx-resy-spacing-avgWidth-registry-encoding' //!		where each field must be replaced by an '*' Warning: create the smalest font size if the foundry height
 
         :param Style:
@@ -3099,7 +3371,7 @@ class Aspect_FontStyle(object):
 
         """
         _Aspect.Aspect_FontStyle_swiginit(self,_Aspect.new_Aspect_FontStyle(*args))
-    def Assign(self, *args) -> "Aspect_FontStyle &" :
+    def Assign(self, *args):
         """
         * Updates the font style <self> from the definition of the //!	 font style <Other>.
 
@@ -3110,7 +3382,7 @@ class Aspect_FontStyle(object):
         """
         return _Aspect.Aspect_FontStyle_Assign(self, *args)
 
-    def Set(self, *args) -> "Aspect_FontStyle &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: Aspect_FontStyle &
@@ -3119,12 +3391,60 @@ class Aspect_FontStyle(object):
         """
         return _Aspect.Aspect_FontStyle_Set(self, *args)
 
-    def SetValues(self, *args) -> "void" :
+    def SetValues(self, *args):
         """
         * Updates the font style <self> from the definition of the //!	 font style <Type>.
 
         :param Type:
         :type Type: Aspect_TypeOfFont
+        :param Size:
+        :type Size: Quantity_Length
+        :param Slant: default value is 0.0
+        :type Slant: Quantity_PlaneAngle
+        :param CapsHeight: default value is Standard_False
+        :type CapsHeight: bool
+        :rtype: None
+
+        * Updates the font style <self> from the definition of the //!	 font style <Type>.
+
+        :param Type:
+        :type Type: Aspect_TypeOfFont
+        :param Size:
+        :type Size: Quantity_Length
+        :param Slant: default value is 0.0
+        :type Slant: Quantity_PlaneAngle
+        :param CapsHeight: default value is Standard_False
+        :type CapsHeight: bool
+        :rtype: None
+
+        * Updates the font style <self> from the definition of the //!	 font style <Type>.
+
+        :param Type:
+        :type Type: Aspect_TypeOfFont
+        :param Size:
+        :type Size: Quantity_Length
+        :param Slant: default value is 0.0
+        :type Slant: Quantity_PlaneAngle
+        :param CapsHeight: default value is Standard_False
+        :type CapsHeight: bool
+        :rtype: None
+
+        * Updates a font style with the new Abode font descriptor Warning: create the smalest font size if the foundry height
+
+        :param Style:
+        :type Style: char *
+        :param Size:
+        :type Size: Quantity_Length
+        :param Slant: default value is 0.0
+        :type Slant: Quantity_PlaneAngle
+        :param CapsHeight: default value is Standard_False
+        :type CapsHeight: bool
+        :rtype: None
+
+        * Updates a font style with the new Abode font descriptor Warning: create the smalest font size if the foundry height
+
+        :param Style:
+        :type Style: char *
         :param Size:
         :type Size: Quantity_Length
         :param Slant: default value is 0.0
@@ -3154,7 +3474,7 @@ class Aspect_FontStyle(object):
         """
         return _Aspect.Aspect_FontStyle_SetValues(self, *args)
 
-    def SetFamily(self, *args) -> "void" :
+    def SetFamily(self, *args):
         """
         * Sets the family of the font.
 
@@ -3165,7 +3485,7 @@ class Aspect_FontStyle(object):
         """
         return _Aspect.Aspect_FontStyle_SetFamily(self, *args)
 
-    def SetWeight(self, *args) -> "void" :
+    def SetWeight(self, *args):
         """
         * Sets the weight of the font.
 
@@ -3176,7 +3496,7 @@ class Aspect_FontStyle(object):
         """
         return _Aspect.Aspect_FontStyle_SetWeight(self, *args)
 
-    def SetRegistry(self, *args) -> "void" :
+    def SetRegistry(self, *args):
         """
         * Sets the registry of the font.
 
@@ -3187,7 +3507,7 @@ class Aspect_FontStyle(object):
         """
         return _Aspect.Aspect_FontStyle_SetRegistry(self, *args)
 
-    def SetEncoding(self, *args) -> "void" :
+    def SetEncoding(self, *args):
         """
         * Sets the encoding of the font.
 
@@ -3198,214 +3518,214 @@ class Aspect_FontStyle(object):
         """
         return _Aspect.Aspect_FontStyle_SetEncoding(self, *args)
 
-    def Style(self, *args) -> "Aspect_TypeOfFont" :
+    def Style(self):
         """
         * Returns the type of the font style <self>
 
         :rtype: Aspect_TypeOfFont
 
         """
-        return _Aspect.Aspect_FontStyle_Style(self, *args)
+        return _Aspect.Aspect_FontStyle_Style(self)
 
-    def Length(self, *args) -> "Standard_Integer" :
+    def Length(self):
         """
         * Returns the string components length of the font style descriptor
 
         :rtype: int
 
         """
-        return _Aspect.Aspect_FontStyle_Length(self, *args)
+        return _Aspect.Aspect_FontStyle_Length(self)
 
-    def Value(self, *args) -> "char *" :
+    def Value(self):
         """
         * Returns the String component of a font style
 
         :rtype: char *
 
         """
-        return _Aspect.Aspect_FontStyle_Value(self, *args)
+        return _Aspect.Aspect_FontStyle_Value(self)
 
-    def Size(self, *args) -> "Quantity_Length" :
+    def Size(self):
         """
         * Returns the Size component of a font style
 
         :rtype: Quantity_Length
 
         """
-        return _Aspect.Aspect_FontStyle_Size(self, *args)
+        return _Aspect.Aspect_FontStyle_Size(self)
 
-    def Slant(self, *args) -> "Quantity_PlaneAngle" :
+    def Slant(self):
         """
         * Returns the Slant component of a font style
 
         :rtype: Quantity_PlaneAngle
 
         """
-        return _Aspect.Aspect_FontStyle_Slant(self, *args)
+        return _Aspect.Aspect_FontStyle_Slant(self)
 
-    def CapsHeight(self, *args) -> "Standard_Boolean" :
+    def CapsHeight(self):
         """
         * Returns the CapsHeight component of a font style
 
         :rtype: bool
 
         """
-        return _Aspect.Aspect_FontStyle_CapsHeight(self, *args)
+        return _Aspect.Aspect_FontStyle_CapsHeight(self)
 
-    def AliasName(self, *args) -> "char *" :
+    def AliasName(self):
         """
         * Returns a shorter font name which identify the main characteristics of the fonts.
 
         :rtype: char *
 
         """
-        return _Aspect.Aspect_FontStyle_AliasName(self, *args)
+        return _Aspect.Aspect_FontStyle_AliasName(self)
 
-    def FullName(self, *args) -> "char *" :
+    def FullName(self):
         """
         * Returns the full normalized font name
 
         :rtype: char *
 
         """
-        return _Aspect.Aspect_FontStyle_FullName(self, *args)
+        return _Aspect.Aspect_FontStyle_FullName(self)
 
-    def Foundry(self, *args) -> "char *" :
+    def Foundry(self):
         """
         * Returns the foundry of the font.
 
         :rtype: char *
 
         """
-        return _Aspect.Aspect_FontStyle_Foundry(self, *args)
+        return _Aspect.Aspect_FontStyle_Foundry(self)
 
-    def Family(self, *args) -> "char *" :
+    def Family(self):
         """
         * Returns the family of the font.
 
         :rtype: char *
 
         """
-        return _Aspect.Aspect_FontStyle_Family(self, *args)
+        return _Aspect.Aspect_FontStyle_Family(self)
 
-    def Weight(self, *args) -> "char *" :
+    def Weight(self):
         """
         * Returns the weight of the font.
 
         :rtype: char *
 
         """
-        return _Aspect.Aspect_FontStyle_Weight(self, *args)
+        return _Aspect.Aspect_FontStyle_Weight(self)
 
-    def Registry(self, *args) -> "char *" :
+    def Registry(self):
         """
         * Returns the char set registry of the font.
 
         :rtype: char *
 
         """
-        return _Aspect.Aspect_FontStyle_Registry(self, *args)
+        return _Aspect.Aspect_FontStyle_Registry(self)
 
-    def Encoding(self, *args) -> "char *" :
+    def Encoding(self):
         """
         * Returns the char set encoding of the font.
 
         :rtype: char *
 
         """
-        return _Aspect.Aspect_FontStyle_Encoding(self, *args)
+        return _Aspect.Aspect_FontStyle_Encoding(self)
 
-    def SSlant(self, *args) -> "char *" :
+    def SSlant(self):
         """
         * Returns the slant of the font.
 
         :rtype: char *
 
         """
-        return _Aspect.Aspect_FontStyle_SSlant(self, *args)
+        return _Aspect.Aspect_FontStyle_SSlant(self)
 
-    def SWidth(self, *args) -> "char *" :
+    def SWidth(self):
         """
         * Returns the width name of the font.
 
         :rtype: char *
 
         """
-        return _Aspect.Aspect_FontStyle_SWidth(self, *args)
+        return _Aspect.Aspect_FontStyle_SWidth(self)
 
-    def SStyle(self, *args) -> "char *" :
+    def SStyle(self):
         """
         * Returns the style name of the font.
 
         :rtype: char *
 
         """
-        return _Aspect.Aspect_FontStyle_SStyle(self, *args)
+        return _Aspect.Aspect_FontStyle_SStyle(self)
 
-    def SPixelSize(self, *args) -> "char *" :
+    def SPixelSize(self):
         """
         * Returns the pixel size of the font.
 
         :rtype: char *
 
         """
-        return _Aspect.Aspect_FontStyle_SPixelSize(self, *args)
+        return _Aspect.Aspect_FontStyle_SPixelSize(self)
 
-    def SPointSize(self, *args) -> "char *" :
+    def SPointSize(self):
         """
         * Returns the point size of the font.
 
         :rtype: char *
 
         """
-        return _Aspect.Aspect_FontStyle_SPointSize(self, *args)
+        return _Aspect.Aspect_FontStyle_SPointSize(self)
 
-    def SResolutionX(self, *args) -> "char *" :
+    def SResolutionX(self):
         """
         * Returns the resolution X of the font.
 
         :rtype: char *
 
         """
-        return _Aspect.Aspect_FontStyle_SResolutionX(self, *args)
+        return _Aspect.Aspect_FontStyle_SResolutionX(self)
 
-    def SResolutionY(self, *args) -> "char *" :
+    def SResolutionY(self):
         """
         * Returns the resolution Y of the font.
 
         :rtype: char *
 
         """
-        return _Aspect.Aspect_FontStyle_SResolutionY(self, *args)
+        return _Aspect.Aspect_FontStyle_SResolutionY(self)
 
-    def SSpacing(self, *args) -> "char *" :
+    def SSpacing(self):
         """
         * Returns the spacing of the font.
 
         :rtype: char *
 
         """
-        return _Aspect.Aspect_FontStyle_SSpacing(self, *args)
+        return _Aspect.Aspect_FontStyle_SSpacing(self)
 
-    def SAverageWidth(self, *args) -> "char *" :
+    def SAverageWidth(self):
         """
         * Returns the average width of the font.
 
         :rtype: char *
 
         """
-        return _Aspect.Aspect_FontStyle_SAverageWidth(self, *args)
+        return _Aspect.Aspect_FontStyle_SAverageWidth(self)
 
-    def Dump(self, *args) -> "void" :
+    def Dump(self):
         """
         * Dumps the font attributes.
 
         :rtype: None
 
         """
-        return _Aspect.Aspect_FontStyle_Dump(self, *args)
+        return _Aspect.Aspect_FontStyle_Dump(self)
 
-    def IsEqual(self, *args) -> "Standard_Boolean" :
+    def IsEqual(self, *args):
         """
         :param Other:
         :type Other: Aspect_FontStyle &
@@ -3420,7 +3740,7 @@ class Aspect_FontStyle(object):
         except:
             return False
 
-    def IsNotEqual(self, *args) -> "Standard_Boolean" :
+    def IsNotEqual(self, *args):
         """
         :param Other:
         :type Other: Aspect_FontStyle &
@@ -3493,14 +3813,14 @@ class Aspect_GenId(object):
         * Creates an available set of identifiers with the lower //!	 bound <Low> and the upper bound <Up>. Warning: Raises IdentDefinitionError if <Up> is less than <Low>. Copies the content of <Other> into <self>.
 
         :param Low:
-        :type Low: int
+        :type Low: Standard_Integer
         :param Up:
-        :type Up: int
+        :type Up: Standard_Integer
         :rtype: None
 
         """
         _Aspect.Aspect_GenId_swiginit(self,_Aspect.new_Aspect_GenId(*args))
-    def Free(self, *args) -> "void" :
+    def Free(self, *args):
         """
         * Frees all identifiers of <self>.
 
@@ -3509,47 +3829,47 @@ class Aspect_GenId(object):
         * Frees the identifier <Id> of <self>.
 
         :param Id:
-        :type Id: int
+        :type Id: Standard_Integer
         :rtype: None
 
         """
         return _Aspect.Aspect_GenId_Free(self, *args)
 
-    def Available(self, *args) -> "Standard_Integer" :
+    def Available(self):
         """
         * Returns the number of available identifiers of <self>.
 
         :rtype: int
 
         """
-        return _Aspect.Aspect_GenId_Available(self, *args)
+        return _Aspect.Aspect_GenId_Available(self)
 
-    def Lower(self, *args) -> "Standard_Integer" :
+    def Lower(self):
         """
         * Returns the lower bound of <self>.
 
         :rtype: int
 
         """
-        return _Aspect.Aspect_GenId_Lower(self, *args)
+        return _Aspect.Aspect_GenId_Lower(self)
 
-    def Next(self, *args) -> "Standard_Integer" :
+    def Next(self):
         """
         * Returns an available identifier of <self>. Warning: Raises IdentDefinitionError if all identifiers are busy.
 
         :rtype: int
 
         """
-        return _Aspect.Aspect_GenId_Next(self, *args)
+        return _Aspect.Aspect_GenId_Next(self)
 
-    def Upper(self, *args) -> "Standard_Integer" :
+    def Upper(self):
         """
         * Returns the upper bound of <self>.
 
         :rtype: int
 
         """
-        return _Aspect.Aspect_GenId_Upper(self, *args)
+        return _Aspect.Aspect_GenId_Upper(self)
 
     def __del__(self):
     	try:
@@ -3588,7 +3908,7 @@ class Aspect_Grid(OCC.MMgt.MMgt_TShared):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def SetXOrigin(self, *args) -> "void" :
+    def SetXOrigin(self, *args):
         """
         * defines the x Origin of the grid.
 
@@ -3599,7 +3919,7 @@ class Aspect_Grid(OCC.MMgt.MMgt_TShared):
         """
         return _Aspect.Aspect_Grid_SetXOrigin(self, *args)
 
-    def SetYOrigin(self, *args) -> "void" :
+    def SetYOrigin(self, *args):
         """
         * defines the y Origin of the grid.
 
@@ -3610,7 +3930,7 @@ class Aspect_Grid(OCC.MMgt.MMgt_TShared):
         """
         return _Aspect.Aspect_Grid_SetYOrigin(self, *args)
 
-    def SetRotationAngle(self, *args) -> "void" :
+    def SetRotationAngle(self, *args):
         """
         * defines the orientation of the the grid.
 
@@ -3621,7 +3941,7 @@ class Aspect_Grid(OCC.MMgt.MMgt_TShared):
         """
         return _Aspect.Aspect_Grid_SetRotationAngle(self, *args)
 
-    def Rotate(self, *args) -> "void" :
+    def Rotate(self, *args):
         """
         * Rotate the grid from a relative angle.
 
@@ -3632,7 +3952,7 @@ class Aspect_Grid(OCC.MMgt.MMgt_TShared):
         """
         return _Aspect.Aspect_Grid_Rotate(self, *args)
 
-    def Translate(self, *args) -> "void" :
+    def Translate(self, *args):
         """
         * Translate the grid from a relative distance.
 
@@ -3645,7 +3965,7 @@ class Aspect_Grid(OCC.MMgt.MMgt_TShared):
         """
         return _Aspect.Aspect_Grid_Translate(self, *args)
 
-    def SetColors(self, *args) -> "void" :
+    def SetColors(self, *args):
         """
         * Change the colors of the grid
 
@@ -3658,7 +3978,7 @@ class Aspect_Grid(OCC.MMgt.MMgt_TShared):
         """
         return _Aspect.Aspect_Grid_SetColors(self, *args)
 
-    def Hit(self, *args) -> "void" :
+    def Hit(self, *args):
         """
         * returns the point of the grid the closest to the point X,Y if the grid is active. If the grid is not active returns X,Y.
 
@@ -3675,7 +3995,7 @@ class Aspect_Grid(OCC.MMgt.MMgt_TShared):
         """
         return _Aspect.Aspect_Grid_Hit(self, *args)
 
-    def Compute(self, *args) -> "void" :
+    def Compute(self, *args):
         """
         * returns the point of the grid the closest to the point X,Y
 
@@ -3692,61 +4012,61 @@ class Aspect_Grid(OCC.MMgt.MMgt_TShared):
         """
         return _Aspect.Aspect_Grid_Compute(self, *args)
 
-    def Activate(self, *args) -> "void" :
+    def Activate(self):
         """
         * activates the grid. The Hit method will return gridx and gridx computed according to the steps of the grid.
 
         :rtype: None
 
         """
-        return _Aspect.Aspect_Grid_Activate(self, *args)
+        return _Aspect.Aspect_Grid_Activate(self)
 
-    def Deactivate(self, *args) -> "void" :
+    def Deactivate(self):
         """
         * deactivates the grid. The hit method will return gridx and gridx as the enter value X & Y.
 
         :rtype: None
 
         """
-        return _Aspect.Aspect_Grid_Deactivate(self, *args)
+        return _Aspect.Aspect_Grid_Deactivate(self)
 
-    def XOrigin(self, *args) -> "Quantity_Length" :
+    def XOrigin(self):
         """
         * returns the x Origin of the grid.
 
         :rtype: Quantity_Length
 
         """
-        return _Aspect.Aspect_Grid_XOrigin(self, *args)
+        return _Aspect.Aspect_Grid_XOrigin(self)
 
-    def YOrigin(self, *args) -> "Quantity_Length" :
+    def YOrigin(self):
         """
         * returns the x Origin of the grid.
 
         :rtype: Quantity_Length
 
         """
-        return _Aspect.Aspect_Grid_YOrigin(self, *args)
+        return _Aspect.Aspect_Grid_YOrigin(self)
 
-    def RotationAngle(self, *args) -> "Quantity_PlaneAngle" :
+    def RotationAngle(self):
         """
         * returns the x Angle of the grid.
 
         :rtype: Quantity_PlaneAngle
 
         """
-        return _Aspect.Aspect_Grid_RotationAngle(self, *args)
+        return _Aspect.Aspect_Grid_RotationAngle(self)
 
-    def IsActive(self, *args) -> "Standard_Boolean" :
+    def IsActive(self):
         """
         * Returns True when the grid is active.
 
         :rtype: bool
 
         """
-        return _Aspect.Aspect_Grid_IsActive(self, *args)
+        return _Aspect.Aspect_Grid_IsActive(self)
 
-    def Colors(self, *args) -> "void" :
+    def Colors(self, *args):
         """
         * Returns the colors of the grid.
 
@@ -3759,7 +4079,7 @@ class Aspect_Grid(OCC.MMgt.MMgt_TShared):
         """
         return _Aspect.Aspect_Grid_Colors(self, *args)
 
-    def SetDrawMode(self, *args) -> "void" :
+    def SetDrawMode(self, *args):
         """
         * Change the grid aspect.
 
@@ -3770,54 +4090,54 @@ class Aspect_Grid(OCC.MMgt.MMgt_TShared):
         """
         return _Aspect.Aspect_Grid_SetDrawMode(self, *args)
 
-    def DrawMode(self, *args) -> "Aspect_GridDrawMode" :
+    def DrawMode(self):
         """
         * Returns the grid aspect.
 
         :rtype: Aspect_GridDrawMode
 
         """
-        return _Aspect.Aspect_Grid_DrawMode(self, *args)
+        return _Aspect.Aspect_Grid_DrawMode(self)
 
-    def Display(self, *args) -> "void" :
+    def Display(self):
         """
         * Display the grid at screen.
 
         :rtype: void
 
         """
-        return _Aspect.Aspect_Grid_Display(self, *args)
+        return _Aspect.Aspect_Grid_Display(self)
 
-    def Erase(self, *args) -> "void" :
+    def Erase(self):
         """
         * Erase the grid from screen.
 
         :rtype: void
 
         """
-        return _Aspect.Aspect_Grid_Erase(self, *args)
+        return _Aspect.Aspect_Grid_Erase(self)
 
-    def IsDisplayed(self, *args) -> "Standard_Boolean" :
+    def IsDisplayed(self):
         """
         * Returns True when the grid is displayed at screen.
 
         :rtype: bool
 
         """
-        return _Aspect.Aspect_Grid_IsDisplayed(self, *args)
+        return _Aspect.Aspect_Grid_IsDisplayed(self)
 
-    def Init(self, *args) -> "void" :
+    def Init(self):
         """
         :rtype: void
 
         """
-        return _Aspect.Aspect_Grid_Init(self, *args)
+        return _Aspect.Aspect_Grid_Init(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Aspect_Grid self)"""
         return _Aspect.Aspect_Grid__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Aspect_Grid" :
+    def GetHandle(self):
         """GetHandle(Aspect_Grid self) -> Handle_Aspect_Grid"""
         return _Aspect.Aspect_Grid_GetHandle(self)
 
@@ -3876,7 +4196,7 @@ Handle_Aspect_Grid._kill_pointed = new_instancemethod(_Aspect.Handle_Aspect_Grid
 Handle_Aspect_Grid_swigregister = _Aspect.Handle_Aspect_Grid_swigregister
 Handle_Aspect_Grid_swigregister(Handle_Aspect_Grid)
 
-def Handle_Aspect_Grid_DownCast(*args) -> "Handle_Aspect_Grid const" :
+def Handle_Aspect_Grid_DownCast(*args):
   return _Aspect.Handle_Aspect_Grid_DownCast(*args)
 Handle_Aspect_Grid_DownCast = _Aspect.Handle_Aspect_Grid_DownCast
 
@@ -3903,7 +4223,7 @@ class Aspect_LineStyle(object):
 
         """
         _Aspect.Aspect_LineStyle_swiginit(self,_Aspect.new_Aspect_LineStyle(*args))
-    def Assign(self, *args) -> "Aspect_LineStyle &" :
+    def Assign(self, *args):
         """
         * Updates the line style <self> from the definition of the //!	 line style <Other>.
 
@@ -3914,7 +4234,7 @@ class Aspect_LineStyle(object):
         """
         return _Aspect.Aspect_LineStyle_Assign(self, *args)
 
-    def Set(self, *args) -> "Aspect_LineStyle &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: Aspect_LineStyle &
@@ -3923,7 +4243,7 @@ class Aspect_LineStyle(object):
         """
         return _Aspect.Aspect_LineStyle_Set(self, *args)
 
-    def SetValues(self, *args) -> "void" :
+    def SetValues(self, *args):
         """
         * Updates the line style <self> from the definition of the //!	 line style <Type>.
 
@@ -3940,34 +4260,34 @@ class Aspect_LineStyle(object):
         """
         return _Aspect.Aspect_LineStyle_SetValues(self, *args)
 
-    def Style(self, *args) -> "Aspect_TypeOfLine" :
+    def Style(self):
         """
         * Returns the type of the line style <self>
 
         :rtype: Aspect_TypeOfLine
 
         """
-        return _Aspect.Aspect_LineStyle_Style(self, *args)
+        return _Aspect.Aspect_LineStyle_Style(self)
 
-    def Length(self, *args) -> "Standard_Integer" :
+    def Length(self):
         """
         * Returns the components length of the line style
 
         :rtype: int
 
         """
-        return _Aspect.Aspect_LineStyle_Length(self, *args)
+        return _Aspect.Aspect_LineStyle_Length(self)
 
-    def Values(self, *args) -> "TColQuantity_Array1OfLength const &" :
+    def Values(self):
         """
         * Returns the components of a line style
 
         :rtype: TColQuantity_Array1OfLength
 
         """
-        return _Aspect.Aspect_LineStyle_Values(self, *args)
+        return _Aspect.Aspect_LineStyle_Values(self)
 
-    def IsEqual(self, *args) -> "Standard_Boolean" :
+    def IsEqual(self, *args):
         """
         :param Other:
         :type Other: Aspect_LineStyle &
@@ -3982,7 +4302,7 @@ class Aspect_LineStyle(object):
         except:
             return False
 
-    def IsNotEqual(self, *args) -> "Standard_Boolean" :
+    def IsNotEqual(self, *args):
         """
         :param Other:
         :type Other: Aspect_LineStyle &
@@ -4022,13 +4342,13 @@ Aspect_LineStyle_swigregister(Aspect_LineStyle)
 class Aspect_MarkMap(OCC.MMgt.MMgt_TShared):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _Aspect.Aspect_MarkMap_swiginit(self,_Aspect.new_Aspect_MarkMap(*args))
-    def AddEntry(self, *args) -> "Standard_Integer" :
+        _Aspect.Aspect_MarkMap_swiginit(self,_Aspect.new_Aspect_MarkMap())
+    def AddEntry(self, *args):
         """
         * Adds an entry in the mark map <self>. Warning: Raises BadAccess if MarkMap size is exceeded.
 
@@ -4045,49 +4365,49 @@ class Aspect_MarkMap(OCC.MMgt.MMgt_TShared):
         """
         return _Aspect.Aspect_MarkMap_AddEntry(self, *args)
 
-    def Size(self, *args) -> "Standard_Integer" :
+    def Size(self):
         """
         * Returns the Allocated markmap Size
 
         :rtype: int
 
         """
-        return _Aspect.Aspect_MarkMap_Size(self, *args)
+        return _Aspect.Aspect_MarkMap_Size(self)
 
-    def Index(self, *args) -> "Standard_Integer" :
+    def Index(self, *args):
         """
         * Returns the MarkMapEntry.Index of the MarkMap at rank <aMarkmapIndex> .
 
         :param aMarkmapIndex:
-        :type aMarkmapIndex: int
+        :type aMarkmapIndex: Standard_Integer
         :rtype: int
 
         """
         return _Aspect.Aspect_MarkMap_Index(self, *args)
 
-    def Dump(self, *args) -> "void" :
+    def Dump(self):
         """
         :rtype: None
 
         """
-        return _Aspect.Aspect_MarkMap_Dump(self, *args)
+        return _Aspect.Aspect_MarkMap_Dump(self)
 
-    def Entry(self, *args) -> "Aspect_MarkMapEntry" :
+    def Entry(self, *args):
         """
         * Returns the Mark map entry with the index <AnIndex>. Warning: Raises BadAccess if the index less than 1 or //!	 greater than Size.
 
         :param AnIndex:
-        :type AnIndex: int
+        :type AnIndex: Standard_Integer
         :rtype: Aspect_MarkMapEntry
 
         """
         return _Aspect.Aspect_MarkMap_Entry(self, *args)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Aspect_MarkMap self)"""
         return _Aspect.Aspect_MarkMap__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Aspect_MarkMap" :
+    def GetHandle(self):
         """GetHandle(Aspect_MarkMap self) -> Handle_Aspect_MarkMap"""
         return _Aspect.Aspect_MarkMap_GetHandle(self)
 
@@ -4130,7 +4450,7 @@ Handle_Aspect_MarkMap._kill_pointed = new_instancemethod(_Aspect.Handle_Aspect_M
 Handle_Aspect_MarkMap_swigregister = _Aspect.Handle_Aspect_MarkMap_swigregister
 Handle_Aspect_MarkMap_swigregister(Handle_Aspect_MarkMap)
 
-def Handle_Aspect_MarkMap_DownCast(*args) -> "Handle_Aspect_MarkMap const" :
+def Handle_Aspect_MarkMap_DownCast(*args):
   return _Aspect.Handle_Aspect_MarkMap_DownCast(*args)
 Handle_Aspect_MarkMap_DownCast = _Aspect.Handle_Aspect_MarkMap_DownCast
 
@@ -4146,7 +4466,7 @@ class Aspect_MarkMapEntry(object):
         * Creates an allocated markmap entry
 
         :param index:
-        :type index: int
+        :type index: Standard_Integer
         :param style:
         :type style: Aspect_MarkerStyle &
         :rtype: None
@@ -4159,12 +4479,12 @@ class Aspect_MarkMapEntry(object):
 
         """
         _Aspect.Aspect_MarkMapEntry_swiginit(self,_Aspect.new_Aspect_MarkMapEntry(*args))
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         * Sets markmap entry value and allocates it.
 
         :param index:
-        :type index: int
+        :type index: Standard_Integer
         :param style:
         :type style: Aspect_MarkerStyle &
         :rtype: None
@@ -4178,7 +4498,7 @@ class Aspect_MarkMapEntry(object):
         """
         return _Aspect.Aspect_MarkMapEntry_SetValue(self, *args)
 
-    def Set(self, *args) -> "void" :
+    def Set(self, *args):
         """
         :param entry:
         :type entry: Aspect_MarkMapEntry &
@@ -4187,7 +4507,7 @@ class Aspect_MarkMapEntry(object):
         """
         return _Aspect.Aspect_MarkMapEntry_Set(self, *args)
 
-    def SetStyle(self, *args) -> "void" :
+    def SetStyle(self, *args):
         """
         * Sets the marker style of markmap entry.
 
@@ -4198,57 +4518,57 @@ class Aspect_MarkMapEntry(object):
         """
         return _Aspect.Aspect_MarkMapEntry_SetStyle(self, *args)
 
-    def Style(self, *args) -> "Aspect_MarkerStyle const &" :
+    def Style(self):
         """
         :rtype: Aspect_MarkerStyle
 
         """
-        return _Aspect.Aspect_MarkMapEntry_Style(self, *args)
+        return _Aspect.Aspect_MarkMapEntry_Style(self)
 
-    def SetIndex(self, *args) -> "void" :
+    def SetIndex(self, *args):
         """
         * Sets index value of a markmap entry.
 
         :param index:
-        :type index: int
+        :type index: Standard_Integer
         :rtype: None
 
         """
         return _Aspect.Aspect_MarkMapEntry_SetIndex(self, *args)
 
-    def Index(self, *args) -> "Standard_Integer" :
+    def Index(self):
         """
         * Returns index value of a markmap entry. Warning: Raises error if the markmap entry is unallocated .
 
         :rtype: int
 
         """
-        return _Aspect.Aspect_MarkMapEntry_Index(self, *args)
+        return _Aspect.Aspect_MarkMapEntry_Index(self)
 
-    def Free(self, *args) -> "void" :
+    def Free(self):
         """
         * Unallocates the markmap entry.
 
         :rtype: None
 
         """
-        return _Aspect.Aspect_MarkMapEntry_Free(self, *args)
+        return _Aspect.Aspect_MarkMapEntry_Free(self)
 
-    def IsAllocated(self, *args) -> "Standard_Boolean" :
+    def IsAllocated(self):
         """
         * Returns True if the markmap entry is allocated. Warning: A markmap entry is allocated when the marker and //!	 the index is defined.
 
         :rtype: bool
 
         """
-        return _Aspect.Aspect_MarkMapEntry_IsAllocated(self, *args)
+        return _Aspect.Aspect_MarkMapEntry_IsAllocated(self)
 
-    def Dump(self, *args) -> "void" :
+    def Dump(self):
         """
         :rtype: None
 
         """
-        return _Aspect.Aspect_MarkMapEntry_Dump(self, *args)
+        return _Aspect.Aspect_MarkMapEntry_Dump(self)
 
     def __del__(self):
     	try:
@@ -4306,7 +4626,7 @@ class Aspect_MarkerStyle(object):
 
         """
         _Aspect.Aspect_MarkerStyle_swiginit(self,_Aspect.new_Aspect_MarkerStyle(*args))
-    def Assign(self, *args) -> "Aspect_MarkerStyle &" :
+    def Assign(self, *args):
         """
         * Updates the marker style <self> from the definition of the marker style <Other>.
 
@@ -4317,7 +4637,7 @@ class Aspect_MarkerStyle(object):
         """
         return _Aspect.Aspect_MarkerStyle_Assign(self, *args)
 
-    def Set(self, *args) -> "Aspect_MarkerStyle &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: Aspect_MarkerStyle &
@@ -4326,30 +4646,30 @@ class Aspect_MarkerStyle(object):
         """
         return _Aspect.Aspect_MarkerStyle_Set(self, *args)
 
-    def Type(self, *args) -> "Aspect_TypeOfMarker" :
+    def Type(self):
         """
         * Returns the type of the marker style <self>
 
         :rtype: Aspect_TypeOfMarker
 
         """
-        return _Aspect.Aspect_MarkerStyle_Type(self, *args)
+        return _Aspect.Aspect_MarkerStyle_Type(self)
 
-    def Length(self, *args) -> "Standard_Integer" :
+    def Length(self):
         """
         * Returns the components length of the marker descriptors
 
         :rtype: int
 
         """
-        return _Aspect.Aspect_MarkerStyle_Length(self, *args)
+        return _Aspect.Aspect_MarkerStyle_Length(self)
 
-    def Values(self, *args) -> "Standard_Boolean" :
+    def Values(self, *args):
         """
         * Returns the point and status of a marker style
 
         :param aRank:
-        :type aRank: int
+        :type aRank: Standard_Integer
         :param aX:
         :type aX: float &
         :param aY:
@@ -4359,34 +4679,34 @@ class Aspect_MarkerStyle(object):
         """
         return _Aspect.Aspect_MarkerStyle_Values(self, *args)
 
-    def XValues(self, *args) -> "TShort_Array1OfShortReal const &" :
+    def XValues(self):
         """
         * Returns the X vector of a marker style descriptor
 
         :rtype: TShort_Array1OfShortReal
 
         """
-        return _Aspect.Aspect_MarkerStyle_XValues(self, *args)
+        return _Aspect.Aspect_MarkerStyle_XValues(self)
 
-    def YValues(self, *args) -> "TShort_Array1OfShortReal const &" :
+    def YValues(self):
         """
         * Returns the Y vector of a marker style descriptor
 
         :rtype: TShort_Array1OfShortReal
 
         """
-        return _Aspect.Aspect_MarkerStyle_YValues(self, *args)
+        return _Aspect.Aspect_MarkerStyle_YValues(self)
 
-    def SValues(self, *args) -> "TColStd_Array1OfBoolean const &" :
+    def SValues(self):
         """
         * Returns the State vector of a marker style descriptor
 
         :rtype: TColStd_Array1OfBoolean
 
         """
-        return _Aspect.Aspect_MarkerStyle_SValues(self, *args)
+        return _Aspect.Aspect_MarkerStyle_SValues(self)
 
-    def IsEqual(self, *args) -> "Standard_Boolean" :
+    def IsEqual(self, *args):
         """
         :param Other:
         :type Other: Aspect_MarkerStyle &
@@ -4401,7 +4721,7 @@ class Aspect_MarkerStyle(object):
         except:
             return False
 
-    def IsNotEqual(self, *args) -> "Standard_Boolean" :
+    def IsNotEqual(self, *args):
         """
         :param Other:
         :type Other: Aspect_MarkerStyle &
@@ -4444,11 +4764,11 @@ class Aspect_Pixel(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def PrintToString(self) -> "std::string" :
+    def PrintToString(self):
         """PrintToString(Aspect_Pixel self) -> std::string"""
         return _Aspect.Aspect_Pixel_PrintToString(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Aspect_Pixel self)"""
         return _Aspect.Aspect_Pixel__kill_pointed(self)
 
@@ -4496,18 +4816,18 @@ class Aspect_SequenceNodeOfSequenceOfColor(OCC.TCollection.TCollection_SeqNode):
 
         """
         _Aspect.Aspect_SequenceNodeOfSequenceOfColor_swiginit(self,_Aspect.new_Aspect_SequenceNodeOfSequenceOfColor(*args))
-    def Value(self, *args) -> "Quantity_Color &" :
+    def Value(self):
         """
         :rtype: Quantity_Color
 
         """
-        return _Aspect.Aspect_SequenceNodeOfSequenceOfColor_Value(self, *args)
+        return _Aspect.Aspect_SequenceNodeOfSequenceOfColor_Value(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Aspect_SequenceNodeOfSequenceOfColor self)"""
         return _Aspect.Aspect_SequenceNodeOfSequenceOfColor__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Aspect_SequenceNodeOfSequenceOfColor" :
+    def GetHandle(self):
         """GetHandle(Aspect_SequenceNodeOfSequenceOfColor self) -> Handle_Aspect_SequenceNodeOfSequenceOfColor"""
         return _Aspect.Aspect_SequenceNodeOfSequenceOfColor_GetHandle(self)
 
@@ -4546,7 +4866,7 @@ Handle_Aspect_SequenceNodeOfSequenceOfColor._kill_pointed = new_instancemethod(_
 Handle_Aspect_SequenceNodeOfSequenceOfColor_swigregister = _Aspect.Handle_Aspect_SequenceNodeOfSequenceOfColor_swigregister
 Handle_Aspect_SequenceNodeOfSequenceOfColor_swigregister(Handle_Aspect_SequenceNodeOfSequenceOfColor)
 
-def Handle_Aspect_SequenceNodeOfSequenceOfColor_DownCast(*args) -> "Handle_Aspect_SequenceNodeOfSequenceOfColor const" :
+def Handle_Aspect_SequenceNodeOfSequenceOfColor_DownCast(*args):
   return _Aspect.Handle_Aspect_SequenceNodeOfSequenceOfColor_DownCast(*args)
 Handle_Aspect_SequenceNodeOfSequenceOfColor_DownCast = _Aspect.Handle_Aspect_SequenceNodeOfSequenceOfColor_DownCast
 
@@ -4565,18 +4885,18 @@ class Aspect_SequenceNodeOfSequenceOfColorMapEntry(OCC.TCollection.TCollection_S
 
         """
         _Aspect.Aspect_SequenceNodeOfSequenceOfColorMapEntry_swiginit(self,_Aspect.new_Aspect_SequenceNodeOfSequenceOfColorMapEntry(*args))
-    def Value(self, *args) -> "Aspect_ColorMapEntry &" :
+    def Value(self):
         """
         :rtype: Aspect_ColorMapEntry
 
         """
-        return _Aspect.Aspect_SequenceNodeOfSequenceOfColorMapEntry_Value(self, *args)
+        return _Aspect.Aspect_SequenceNodeOfSequenceOfColorMapEntry_Value(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Aspect_SequenceNodeOfSequenceOfColorMapEntry self)"""
         return _Aspect.Aspect_SequenceNodeOfSequenceOfColorMapEntry__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Aspect_SequenceNodeOfSequenceOfColorMapEntry" :
+    def GetHandle(self):
         """GetHandle(Aspect_SequenceNodeOfSequenceOfColorMapEntry self) -> Handle_Aspect_SequenceNodeOfSequenceOfColorMapEntry"""
         return _Aspect.Aspect_SequenceNodeOfSequenceOfColorMapEntry_GetHandle(self)
 
@@ -4615,7 +4935,7 @@ Handle_Aspect_SequenceNodeOfSequenceOfColorMapEntry._kill_pointed = new_instance
 Handle_Aspect_SequenceNodeOfSequenceOfColorMapEntry_swigregister = _Aspect.Handle_Aspect_SequenceNodeOfSequenceOfColorMapEntry_swigregister
 Handle_Aspect_SequenceNodeOfSequenceOfColorMapEntry_swigregister(Handle_Aspect_SequenceNodeOfSequenceOfColorMapEntry)
 
-def Handle_Aspect_SequenceNodeOfSequenceOfColorMapEntry_DownCast(*args) -> "Handle_Aspect_SequenceNodeOfSequenceOfColorMapEntry const" :
+def Handle_Aspect_SequenceNodeOfSequenceOfColorMapEntry_DownCast(*args):
   return _Aspect.Handle_Aspect_SequenceNodeOfSequenceOfColorMapEntry_DownCast(*args)
 Handle_Aspect_SequenceNodeOfSequenceOfColorMapEntry_DownCast = _Aspect.Handle_Aspect_SequenceNodeOfSequenceOfColorMapEntry_DownCast
 
@@ -4634,18 +4954,18 @@ class Aspect_SequenceNodeOfSequenceOfFontMapEntry(OCC.TCollection.TCollection_Se
 
         """
         _Aspect.Aspect_SequenceNodeOfSequenceOfFontMapEntry_swiginit(self,_Aspect.new_Aspect_SequenceNodeOfSequenceOfFontMapEntry(*args))
-    def Value(self, *args) -> "Aspect_FontMapEntry &" :
+    def Value(self):
         """
         :rtype: Aspect_FontMapEntry
 
         """
-        return _Aspect.Aspect_SequenceNodeOfSequenceOfFontMapEntry_Value(self, *args)
+        return _Aspect.Aspect_SequenceNodeOfSequenceOfFontMapEntry_Value(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Aspect_SequenceNodeOfSequenceOfFontMapEntry self)"""
         return _Aspect.Aspect_SequenceNodeOfSequenceOfFontMapEntry__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Aspect_SequenceNodeOfSequenceOfFontMapEntry" :
+    def GetHandle(self):
         """GetHandle(Aspect_SequenceNodeOfSequenceOfFontMapEntry self) -> Handle_Aspect_SequenceNodeOfSequenceOfFontMapEntry"""
         return _Aspect.Aspect_SequenceNodeOfSequenceOfFontMapEntry_GetHandle(self)
 
@@ -4684,7 +5004,7 @@ Handle_Aspect_SequenceNodeOfSequenceOfFontMapEntry._kill_pointed = new_instancem
 Handle_Aspect_SequenceNodeOfSequenceOfFontMapEntry_swigregister = _Aspect.Handle_Aspect_SequenceNodeOfSequenceOfFontMapEntry_swigregister
 Handle_Aspect_SequenceNodeOfSequenceOfFontMapEntry_swigregister(Handle_Aspect_SequenceNodeOfSequenceOfFontMapEntry)
 
-def Handle_Aspect_SequenceNodeOfSequenceOfFontMapEntry_DownCast(*args) -> "Handle_Aspect_SequenceNodeOfSequenceOfFontMapEntry const" :
+def Handle_Aspect_SequenceNodeOfSequenceOfFontMapEntry_DownCast(*args):
   return _Aspect.Handle_Aspect_SequenceNodeOfSequenceOfFontMapEntry_DownCast(*args)
 Handle_Aspect_SequenceNodeOfSequenceOfFontMapEntry_DownCast = _Aspect.Handle_Aspect_SequenceNodeOfSequenceOfFontMapEntry_DownCast
 
@@ -4703,18 +5023,18 @@ class Aspect_SequenceNodeOfSequenceOfMarkMapEntry(OCC.TCollection.TCollection_Se
 
         """
         _Aspect.Aspect_SequenceNodeOfSequenceOfMarkMapEntry_swiginit(self,_Aspect.new_Aspect_SequenceNodeOfSequenceOfMarkMapEntry(*args))
-    def Value(self, *args) -> "Aspect_MarkMapEntry &" :
+    def Value(self):
         """
         :rtype: Aspect_MarkMapEntry
 
         """
-        return _Aspect.Aspect_SequenceNodeOfSequenceOfMarkMapEntry_Value(self, *args)
+        return _Aspect.Aspect_SequenceNodeOfSequenceOfMarkMapEntry_Value(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Aspect_SequenceNodeOfSequenceOfMarkMapEntry self)"""
         return _Aspect.Aspect_SequenceNodeOfSequenceOfMarkMapEntry__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Aspect_SequenceNodeOfSequenceOfMarkMapEntry" :
+    def GetHandle(self):
         """GetHandle(Aspect_SequenceNodeOfSequenceOfMarkMapEntry self) -> Handle_Aspect_SequenceNodeOfSequenceOfMarkMapEntry"""
         return _Aspect.Aspect_SequenceNodeOfSequenceOfMarkMapEntry_GetHandle(self)
 
@@ -4753,7 +5073,7 @@ Handle_Aspect_SequenceNodeOfSequenceOfMarkMapEntry._kill_pointed = new_instancem
 Handle_Aspect_SequenceNodeOfSequenceOfMarkMapEntry_swigregister = _Aspect.Handle_Aspect_SequenceNodeOfSequenceOfMarkMapEntry_swigregister
 Handle_Aspect_SequenceNodeOfSequenceOfMarkMapEntry_swigregister(Handle_Aspect_SequenceNodeOfSequenceOfMarkMapEntry)
 
-def Handle_Aspect_SequenceNodeOfSequenceOfMarkMapEntry_DownCast(*args) -> "Handle_Aspect_SequenceNodeOfSequenceOfMarkMapEntry const" :
+def Handle_Aspect_SequenceNodeOfSequenceOfMarkMapEntry_DownCast(*args):
   return _Aspect.Handle_Aspect_SequenceNodeOfSequenceOfMarkMapEntry_DownCast(*args)
 Handle_Aspect_SequenceNodeOfSequenceOfMarkMapEntry_DownCast = _Aspect.Handle_Aspect_SequenceNodeOfSequenceOfMarkMapEntry_DownCast
 
@@ -4772,18 +5092,18 @@ class Aspect_SequenceNodeOfSequenceOfTypeMapEntry(OCC.TCollection.TCollection_Se
 
         """
         _Aspect.Aspect_SequenceNodeOfSequenceOfTypeMapEntry_swiginit(self,_Aspect.new_Aspect_SequenceNodeOfSequenceOfTypeMapEntry(*args))
-    def Value(self, *args) -> "Aspect_TypeMapEntry &" :
+    def Value(self):
         """
         :rtype: Aspect_TypeMapEntry
 
         """
-        return _Aspect.Aspect_SequenceNodeOfSequenceOfTypeMapEntry_Value(self, *args)
+        return _Aspect.Aspect_SequenceNodeOfSequenceOfTypeMapEntry_Value(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Aspect_SequenceNodeOfSequenceOfTypeMapEntry self)"""
         return _Aspect.Aspect_SequenceNodeOfSequenceOfTypeMapEntry__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Aspect_SequenceNodeOfSequenceOfTypeMapEntry" :
+    def GetHandle(self):
         """GetHandle(Aspect_SequenceNodeOfSequenceOfTypeMapEntry self) -> Handle_Aspect_SequenceNodeOfSequenceOfTypeMapEntry"""
         return _Aspect.Aspect_SequenceNodeOfSequenceOfTypeMapEntry_GetHandle(self)
 
@@ -4822,7 +5142,7 @@ Handle_Aspect_SequenceNodeOfSequenceOfTypeMapEntry._kill_pointed = new_instancem
 Handle_Aspect_SequenceNodeOfSequenceOfTypeMapEntry_swigregister = _Aspect.Handle_Aspect_SequenceNodeOfSequenceOfTypeMapEntry_swigregister
 Handle_Aspect_SequenceNodeOfSequenceOfTypeMapEntry_swigregister(Handle_Aspect_SequenceNodeOfSequenceOfTypeMapEntry)
 
-def Handle_Aspect_SequenceNodeOfSequenceOfTypeMapEntry_DownCast(*args) -> "Handle_Aspect_SequenceNodeOfSequenceOfTypeMapEntry const" :
+def Handle_Aspect_SequenceNodeOfSequenceOfTypeMapEntry_DownCast(*args):
   return _Aspect.Handle_Aspect_SequenceNodeOfSequenceOfTypeMapEntry_DownCast(*args)
 Handle_Aspect_SequenceNodeOfSequenceOfTypeMapEntry_DownCast = _Aspect.Handle_Aspect_SequenceNodeOfSequenceOfTypeMapEntry_DownCast
 
@@ -4841,18 +5161,18 @@ class Aspect_SequenceNodeOfSequenceOfWidthMapEntry(OCC.TCollection.TCollection_S
 
         """
         _Aspect.Aspect_SequenceNodeOfSequenceOfWidthMapEntry_swiginit(self,_Aspect.new_Aspect_SequenceNodeOfSequenceOfWidthMapEntry(*args))
-    def Value(self, *args) -> "Aspect_WidthMapEntry &" :
+    def Value(self):
         """
         :rtype: Aspect_WidthMapEntry
 
         """
-        return _Aspect.Aspect_SequenceNodeOfSequenceOfWidthMapEntry_Value(self, *args)
+        return _Aspect.Aspect_SequenceNodeOfSequenceOfWidthMapEntry_Value(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Aspect_SequenceNodeOfSequenceOfWidthMapEntry self)"""
         return _Aspect.Aspect_SequenceNodeOfSequenceOfWidthMapEntry__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Aspect_SequenceNodeOfSequenceOfWidthMapEntry" :
+    def GetHandle(self):
         """GetHandle(Aspect_SequenceNodeOfSequenceOfWidthMapEntry self) -> Handle_Aspect_SequenceNodeOfSequenceOfWidthMapEntry"""
         return _Aspect.Aspect_SequenceNodeOfSequenceOfWidthMapEntry_GetHandle(self)
 
@@ -4891,27 +5211,27 @@ Handle_Aspect_SequenceNodeOfSequenceOfWidthMapEntry._kill_pointed = new_instance
 Handle_Aspect_SequenceNodeOfSequenceOfWidthMapEntry_swigregister = _Aspect.Handle_Aspect_SequenceNodeOfSequenceOfWidthMapEntry_swigregister
 Handle_Aspect_SequenceNodeOfSequenceOfWidthMapEntry_swigregister(Handle_Aspect_SequenceNodeOfSequenceOfWidthMapEntry)
 
-def Handle_Aspect_SequenceNodeOfSequenceOfWidthMapEntry_DownCast(*args) -> "Handle_Aspect_SequenceNodeOfSequenceOfWidthMapEntry const" :
+def Handle_Aspect_SequenceNodeOfSequenceOfWidthMapEntry_DownCast(*args):
   return _Aspect.Handle_Aspect_SequenceNodeOfSequenceOfWidthMapEntry_DownCast(*args)
 Handle_Aspect_SequenceNodeOfSequenceOfWidthMapEntry_DownCast = _Aspect.Handle_Aspect_SequenceNodeOfSequenceOfWidthMapEntry_DownCast
 
 class Aspect_SequenceOfColor(OCC.TCollection.TCollection_BaseSequence):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _Aspect.Aspect_SequenceOfColor_swiginit(self,_Aspect.new_Aspect_SequenceOfColor(*args))
-    def Clear(self, *args) -> "void" :
+        _Aspect.Aspect_SequenceOfColor_swiginit(self,_Aspect.new_Aspect_SequenceOfColor())
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _Aspect.Aspect_SequenceOfColor_Clear(self, *args)
+        return _Aspect.Aspect_SequenceOfColor_Clear(self)
 
-    def Assign(self, *args) -> "Aspect_SequenceOfColor const &" :
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: Aspect_SequenceOfColor &
@@ -4920,7 +5240,7 @@ class Aspect_SequenceOfColor(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Aspect.Aspect_SequenceOfColor_Assign(self, *args)
 
-    def Set(self, *args) -> "Aspect_SequenceOfColor const &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: Aspect_SequenceOfColor &
@@ -4929,7 +5249,7 @@ class Aspect_SequenceOfColor(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Aspect.Aspect_SequenceOfColor_Set(self, *args)
 
-    def Append(self, *args) -> "void" :
+    def Append(self, *args):
         """
         :param T:
         :type T: Quantity_Color &
@@ -4942,7 +5262,7 @@ class Aspect_SequenceOfColor(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Aspect.Aspect_SequenceOfColor_Append(self, *args)
 
-    def Prepend(self, *args) -> "void" :
+    def Prepend(self, *args):
         """
         :param T:
         :type T: Quantity_Color &
@@ -4955,16 +5275,16 @@ class Aspect_SequenceOfColor(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Aspect.Aspect_SequenceOfColor_Prepend(self, *args)
 
-    def InsertBefore(self, *args) -> "void" :
+    def InsertBefore(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param T:
         :type T: Quantity_Color &
         :rtype: None
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param S:
         :type S: Aspect_SequenceOfColor &
         :rtype: None
@@ -4972,16 +5292,16 @@ class Aspect_SequenceOfColor(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Aspect.Aspect_SequenceOfColor_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args) -> "void" :
+    def InsertAfter(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param T:
         :type T: Quantity_Color &
         :rtype: None
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param S:
         :type S: Aspect_SequenceOfColor &
         :rtype: None
@@ -4989,24 +5309,24 @@ class Aspect_SequenceOfColor(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Aspect.Aspect_SequenceOfColor_InsertAfter(self, *args)
 
-    def First(self, *args) -> "Quantity_Color const &" :
+    def First(self):
         """
         :rtype: Quantity_Color
 
         """
-        return _Aspect.Aspect_SequenceOfColor_First(self, *args)
+        return _Aspect.Aspect_SequenceOfColor_First(self)
 
-    def Last(self, *args) -> "Quantity_Color const &" :
+    def Last(self):
         """
         :rtype: Quantity_Color
 
         """
-        return _Aspect.Aspect_SequenceOfColor_Last(self, *args)
+        return _Aspect.Aspect_SequenceOfColor_Last(self)
 
-    def Split(self, *args) -> "void" :
+    def Split(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Sub:
         :type Sub: Aspect_SequenceOfColor &
         :rtype: None
@@ -5014,19 +5334,19 @@ class Aspect_SequenceOfColor(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Aspect.Aspect_SequenceOfColor_Split(self, *args)
 
-    def Value(self, *args) -> "Quantity_Color const &" :
+    def Value(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Quantity_Color
 
         """
         return _Aspect.Aspect_SequenceOfColor_Value(self, *args)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param I:
         :type I: Quantity_Color &
         :rtype: None
@@ -5034,25 +5354,25 @@ class Aspect_SequenceOfColor(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Aspect.Aspect_SequenceOfColor_SetValue(self, *args)
 
-    def ChangeValue(self, *args) -> "Quantity_Color &" :
+    def ChangeValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Quantity_Color
 
         """
         return _Aspect.Aspect_SequenceOfColor_ChangeValue(self, *args)
 
-    def Remove(self, *args) -> "void" :
+    def Remove(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: None
 
         :param FromIndex:
-        :type FromIndex: int
+        :type FromIndex: Standard_Integer
         :param ToIndex:
-        :type ToIndex: int
+        :type ToIndex: Standard_Integer
         :rtype: None
 
         """
@@ -5087,20 +5407,20 @@ Aspect_SequenceOfColor_swigregister(Aspect_SequenceOfColor)
 class Aspect_SequenceOfColorMapEntry(OCC.TCollection.TCollection_BaseSequence):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _Aspect.Aspect_SequenceOfColorMapEntry_swiginit(self,_Aspect.new_Aspect_SequenceOfColorMapEntry(*args))
-    def Clear(self, *args) -> "void" :
+        _Aspect.Aspect_SequenceOfColorMapEntry_swiginit(self,_Aspect.new_Aspect_SequenceOfColorMapEntry())
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _Aspect.Aspect_SequenceOfColorMapEntry_Clear(self, *args)
+        return _Aspect.Aspect_SequenceOfColorMapEntry_Clear(self)
 
-    def Assign(self, *args) -> "Aspect_SequenceOfColorMapEntry const &" :
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: Aspect_SequenceOfColorMapEntry &
@@ -5109,7 +5429,7 @@ class Aspect_SequenceOfColorMapEntry(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Aspect.Aspect_SequenceOfColorMapEntry_Assign(self, *args)
 
-    def Set(self, *args) -> "Aspect_SequenceOfColorMapEntry const &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: Aspect_SequenceOfColorMapEntry &
@@ -5118,7 +5438,7 @@ class Aspect_SequenceOfColorMapEntry(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Aspect.Aspect_SequenceOfColorMapEntry_Set(self, *args)
 
-    def Append(self, *args) -> "void" :
+    def Append(self, *args):
         """
         :param T:
         :type T: Aspect_ColorMapEntry &
@@ -5131,7 +5451,7 @@ class Aspect_SequenceOfColorMapEntry(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Aspect.Aspect_SequenceOfColorMapEntry_Append(self, *args)
 
-    def Prepend(self, *args) -> "void" :
+    def Prepend(self, *args):
         """
         :param T:
         :type T: Aspect_ColorMapEntry &
@@ -5144,16 +5464,16 @@ class Aspect_SequenceOfColorMapEntry(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Aspect.Aspect_SequenceOfColorMapEntry_Prepend(self, *args)
 
-    def InsertBefore(self, *args) -> "void" :
+    def InsertBefore(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param T:
         :type T: Aspect_ColorMapEntry &
         :rtype: None
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param S:
         :type S: Aspect_SequenceOfColorMapEntry &
         :rtype: None
@@ -5161,16 +5481,16 @@ class Aspect_SequenceOfColorMapEntry(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Aspect.Aspect_SequenceOfColorMapEntry_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args) -> "void" :
+    def InsertAfter(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param T:
         :type T: Aspect_ColorMapEntry &
         :rtype: None
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param S:
         :type S: Aspect_SequenceOfColorMapEntry &
         :rtype: None
@@ -5178,24 +5498,24 @@ class Aspect_SequenceOfColorMapEntry(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Aspect.Aspect_SequenceOfColorMapEntry_InsertAfter(self, *args)
 
-    def First(self, *args) -> "Aspect_ColorMapEntry const &" :
+    def First(self):
         """
         :rtype: Aspect_ColorMapEntry
 
         """
-        return _Aspect.Aspect_SequenceOfColorMapEntry_First(self, *args)
+        return _Aspect.Aspect_SequenceOfColorMapEntry_First(self)
 
-    def Last(self, *args) -> "Aspect_ColorMapEntry const &" :
+    def Last(self):
         """
         :rtype: Aspect_ColorMapEntry
 
         """
-        return _Aspect.Aspect_SequenceOfColorMapEntry_Last(self, *args)
+        return _Aspect.Aspect_SequenceOfColorMapEntry_Last(self)
 
-    def Split(self, *args) -> "void" :
+    def Split(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Sub:
         :type Sub: Aspect_SequenceOfColorMapEntry &
         :rtype: None
@@ -5203,19 +5523,19 @@ class Aspect_SequenceOfColorMapEntry(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Aspect.Aspect_SequenceOfColorMapEntry_Split(self, *args)
 
-    def Value(self, *args) -> "Aspect_ColorMapEntry const &" :
+    def Value(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Aspect_ColorMapEntry
 
         """
         return _Aspect.Aspect_SequenceOfColorMapEntry_Value(self, *args)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param I:
         :type I: Aspect_ColorMapEntry &
         :rtype: None
@@ -5223,25 +5543,25 @@ class Aspect_SequenceOfColorMapEntry(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Aspect.Aspect_SequenceOfColorMapEntry_SetValue(self, *args)
 
-    def ChangeValue(self, *args) -> "Aspect_ColorMapEntry &" :
+    def ChangeValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Aspect_ColorMapEntry
 
         """
         return _Aspect.Aspect_SequenceOfColorMapEntry_ChangeValue(self, *args)
 
-    def Remove(self, *args) -> "void" :
+    def Remove(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: None
 
         :param FromIndex:
-        :type FromIndex: int
+        :type FromIndex: Standard_Integer
         :param ToIndex:
-        :type ToIndex: int
+        :type ToIndex: Standard_Integer
         :rtype: None
 
         """
@@ -5276,20 +5596,20 @@ Aspect_SequenceOfColorMapEntry_swigregister(Aspect_SequenceOfColorMapEntry)
 class Aspect_SequenceOfFontMapEntry(OCC.TCollection.TCollection_BaseSequence):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _Aspect.Aspect_SequenceOfFontMapEntry_swiginit(self,_Aspect.new_Aspect_SequenceOfFontMapEntry(*args))
-    def Clear(self, *args) -> "void" :
+        _Aspect.Aspect_SequenceOfFontMapEntry_swiginit(self,_Aspect.new_Aspect_SequenceOfFontMapEntry())
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _Aspect.Aspect_SequenceOfFontMapEntry_Clear(self, *args)
+        return _Aspect.Aspect_SequenceOfFontMapEntry_Clear(self)
 
-    def Assign(self, *args) -> "Aspect_SequenceOfFontMapEntry const &" :
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: Aspect_SequenceOfFontMapEntry &
@@ -5298,7 +5618,7 @@ class Aspect_SequenceOfFontMapEntry(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Aspect.Aspect_SequenceOfFontMapEntry_Assign(self, *args)
 
-    def Set(self, *args) -> "Aspect_SequenceOfFontMapEntry const &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: Aspect_SequenceOfFontMapEntry &
@@ -5307,7 +5627,7 @@ class Aspect_SequenceOfFontMapEntry(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Aspect.Aspect_SequenceOfFontMapEntry_Set(self, *args)
 
-    def Append(self, *args) -> "void" :
+    def Append(self, *args):
         """
         :param T:
         :type T: Aspect_FontMapEntry &
@@ -5320,7 +5640,7 @@ class Aspect_SequenceOfFontMapEntry(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Aspect.Aspect_SequenceOfFontMapEntry_Append(self, *args)
 
-    def Prepend(self, *args) -> "void" :
+    def Prepend(self, *args):
         """
         :param T:
         :type T: Aspect_FontMapEntry &
@@ -5333,16 +5653,16 @@ class Aspect_SequenceOfFontMapEntry(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Aspect.Aspect_SequenceOfFontMapEntry_Prepend(self, *args)
 
-    def InsertBefore(self, *args) -> "void" :
+    def InsertBefore(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param T:
         :type T: Aspect_FontMapEntry &
         :rtype: None
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param S:
         :type S: Aspect_SequenceOfFontMapEntry &
         :rtype: None
@@ -5350,16 +5670,16 @@ class Aspect_SequenceOfFontMapEntry(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Aspect.Aspect_SequenceOfFontMapEntry_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args) -> "void" :
+    def InsertAfter(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param T:
         :type T: Aspect_FontMapEntry &
         :rtype: None
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param S:
         :type S: Aspect_SequenceOfFontMapEntry &
         :rtype: None
@@ -5367,24 +5687,24 @@ class Aspect_SequenceOfFontMapEntry(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Aspect.Aspect_SequenceOfFontMapEntry_InsertAfter(self, *args)
 
-    def First(self, *args) -> "Aspect_FontMapEntry const &" :
+    def First(self):
         """
         :rtype: Aspect_FontMapEntry
 
         """
-        return _Aspect.Aspect_SequenceOfFontMapEntry_First(self, *args)
+        return _Aspect.Aspect_SequenceOfFontMapEntry_First(self)
 
-    def Last(self, *args) -> "Aspect_FontMapEntry const &" :
+    def Last(self):
         """
         :rtype: Aspect_FontMapEntry
 
         """
-        return _Aspect.Aspect_SequenceOfFontMapEntry_Last(self, *args)
+        return _Aspect.Aspect_SequenceOfFontMapEntry_Last(self)
 
-    def Split(self, *args) -> "void" :
+    def Split(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Sub:
         :type Sub: Aspect_SequenceOfFontMapEntry &
         :rtype: None
@@ -5392,19 +5712,19 @@ class Aspect_SequenceOfFontMapEntry(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Aspect.Aspect_SequenceOfFontMapEntry_Split(self, *args)
 
-    def Value(self, *args) -> "Aspect_FontMapEntry const &" :
+    def Value(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Aspect_FontMapEntry
 
         """
         return _Aspect.Aspect_SequenceOfFontMapEntry_Value(self, *args)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param I:
         :type I: Aspect_FontMapEntry &
         :rtype: None
@@ -5412,25 +5732,25 @@ class Aspect_SequenceOfFontMapEntry(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Aspect.Aspect_SequenceOfFontMapEntry_SetValue(self, *args)
 
-    def ChangeValue(self, *args) -> "Aspect_FontMapEntry &" :
+    def ChangeValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Aspect_FontMapEntry
 
         """
         return _Aspect.Aspect_SequenceOfFontMapEntry_ChangeValue(self, *args)
 
-    def Remove(self, *args) -> "void" :
+    def Remove(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: None
 
         :param FromIndex:
-        :type FromIndex: int
+        :type FromIndex: Standard_Integer
         :param ToIndex:
-        :type ToIndex: int
+        :type ToIndex: Standard_Integer
         :rtype: None
 
         """
@@ -5465,20 +5785,20 @@ Aspect_SequenceOfFontMapEntry_swigregister(Aspect_SequenceOfFontMapEntry)
 class Aspect_SequenceOfMarkMapEntry(OCC.TCollection.TCollection_BaseSequence):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _Aspect.Aspect_SequenceOfMarkMapEntry_swiginit(self,_Aspect.new_Aspect_SequenceOfMarkMapEntry(*args))
-    def Clear(self, *args) -> "void" :
+        _Aspect.Aspect_SequenceOfMarkMapEntry_swiginit(self,_Aspect.new_Aspect_SequenceOfMarkMapEntry())
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _Aspect.Aspect_SequenceOfMarkMapEntry_Clear(self, *args)
+        return _Aspect.Aspect_SequenceOfMarkMapEntry_Clear(self)
 
-    def Assign(self, *args) -> "Aspect_SequenceOfMarkMapEntry const &" :
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: Aspect_SequenceOfMarkMapEntry &
@@ -5487,7 +5807,7 @@ class Aspect_SequenceOfMarkMapEntry(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Aspect.Aspect_SequenceOfMarkMapEntry_Assign(self, *args)
 
-    def Set(self, *args) -> "Aspect_SequenceOfMarkMapEntry const &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: Aspect_SequenceOfMarkMapEntry &
@@ -5496,7 +5816,7 @@ class Aspect_SequenceOfMarkMapEntry(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Aspect.Aspect_SequenceOfMarkMapEntry_Set(self, *args)
 
-    def Append(self, *args) -> "void" :
+    def Append(self, *args):
         """
         :param T:
         :type T: Aspect_MarkMapEntry &
@@ -5509,7 +5829,7 @@ class Aspect_SequenceOfMarkMapEntry(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Aspect.Aspect_SequenceOfMarkMapEntry_Append(self, *args)
 
-    def Prepend(self, *args) -> "void" :
+    def Prepend(self, *args):
         """
         :param T:
         :type T: Aspect_MarkMapEntry &
@@ -5522,16 +5842,16 @@ class Aspect_SequenceOfMarkMapEntry(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Aspect.Aspect_SequenceOfMarkMapEntry_Prepend(self, *args)
 
-    def InsertBefore(self, *args) -> "void" :
+    def InsertBefore(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param T:
         :type T: Aspect_MarkMapEntry &
         :rtype: None
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param S:
         :type S: Aspect_SequenceOfMarkMapEntry &
         :rtype: None
@@ -5539,16 +5859,16 @@ class Aspect_SequenceOfMarkMapEntry(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Aspect.Aspect_SequenceOfMarkMapEntry_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args) -> "void" :
+    def InsertAfter(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param T:
         :type T: Aspect_MarkMapEntry &
         :rtype: None
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param S:
         :type S: Aspect_SequenceOfMarkMapEntry &
         :rtype: None
@@ -5556,24 +5876,24 @@ class Aspect_SequenceOfMarkMapEntry(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Aspect.Aspect_SequenceOfMarkMapEntry_InsertAfter(self, *args)
 
-    def First(self, *args) -> "Aspect_MarkMapEntry const &" :
+    def First(self):
         """
         :rtype: Aspect_MarkMapEntry
 
         """
-        return _Aspect.Aspect_SequenceOfMarkMapEntry_First(self, *args)
+        return _Aspect.Aspect_SequenceOfMarkMapEntry_First(self)
 
-    def Last(self, *args) -> "Aspect_MarkMapEntry const &" :
+    def Last(self):
         """
         :rtype: Aspect_MarkMapEntry
 
         """
-        return _Aspect.Aspect_SequenceOfMarkMapEntry_Last(self, *args)
+        return _Aspect.Aspect_SequenceOfMarkMapEntry_Last(self)
 
-    def Split(self, *args) -> "void" :
+    def Split(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Sub:
         :type Sub: Aspect_SequenceOfMarkMapEntry &
         :rtype: None
@@ -5581,19 +5901,19 @@ class Aspect_SequenceOfMarkMapEntry(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Aspect.Aspect_SequenceOfMarkMapEntry_Split(self, *args)
 
-    def Value(self, *args) -> "Aspect_MarkMapEntry const &" :
+    def Value(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Aspect_MarkMapEntry
 
         """
         return _Aspect.Aspect_SequenceOfMarkMapEntry_Value(self, *args)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param I:
         :type I: Aspect_MarkMapEntry &
         :rtype: None
@@ -5601,25 +5921,25 @@ class Aspect_SequenceOfMarkMapEntry(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Aspect.Aspect_SequenceOfMarkMapEntry_SetValue(self, *args)
 
-    def ChangeValue(self, *args) -> "Aspect_MarkMapEntry &" :
+    def ChangeValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Aspect_MarkMapEntry
 
         """
         return _Aspect.Aspect_SequenceOfMarkMapEntry_ChangeValue(self, *args)
 
-    def Remove(self, *args) -> "void" :
+    def Remove(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: None
 
         :param FromIndex:
-        :type FromIndex: int
+        :type FromIndex: Standard_Integer
         :param ToIndex:
-        :type ToIndex: int
+        :type ToIndex: Standard_Integer
         :rtype: None
 
         """
@@ -5654,20 +5974,20 @@ Aspect_SequenceOfMarkMapEntry_swigregister(Aspect_SequenceOfMarkMapEntry)
 class Aspect_SequenceOfTypeMapEntry(OCC.TCollection.TCollection_BaseSequence):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _Aspect.Aspect_SequenceOfTypeMapEntry_swiginit(self,_Aspect.new_Aspect_SequenceOfTypeMapEntry(*args))
-    def Clear(self, *args) -> "void" :
+        _Aspect.Aspect_SequenceOfTypeMapEntry_swiginit(self,_Aspect.new_Aspect_SequenceOfTypeMapEntry())
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _Aspect.Aspect_SequenceOfTypeMapEntry_Clear(self, *args)
+        return _Aspect.Aspect_SequenceOfTypeMapEntry_Clear(self)
 
-    def Assign(self, *args) -> "Aspect_SequenceOfTypeMapEntry const &" :
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: Aspect_SequenceOfTypeMapEntry &
@@ -5676,7 +5996,7 @@ class Aspect_SequenceOfTypeMapEntry(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Aspect.Aspect_SequenceOfTypeMapEntry_Assign(self, *args)
 
-    def Set(self, *args) -> "Aspect_SequenceOfTypeMapEntry const &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: Aspect_SequenceOfTypeMapEntry &
@@ -5685,7 +6005,7 @@ class Aspect_SequenceOfTypeMapEntry(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Aspect.Aspect_SequenceOfTypeMapEntry_Set(self, *args)
 
-    def Append(self, *args) -> "void" :
+    def Append(self, *args):
         """
         :param T:
         :type T: Aspect_TypeMapEntry &
@@ -5698,7 +6018,7 @@ class Aspect_SequenceOfTypeMapEntry(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Aspect.Aspect_SequenceOfTypeMapEntry_Append(self, *args)
 
-    def Prepend(self, *args) -> "void" :
+    def Prepend(self, *args):
         """
         :param T:
         :type T: Aspect_TypeMapEntry &
@@ -5711,16 +6031,16 @@ class Aspect_SequenceOfTypeMapEntry(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Aspect.Aspect_SequenceOfTypeMapEntry_Prepend(self, *args)
 
-    def InsertBefore(self, *args) -> "void" :
+    def InsertBefore(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param T:
         :type T: Aspect_TypeMapEntry &
         :rtype: None
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param S:
         :type S: Aspect_SequenceOfTypeMapEntry &
         :rtype: None
@@ -5728,16 +6048,16 @@ class Aspect_SequenceOfTypeMapEntry(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Aspect.Aspect_SequenceOfTypeMapEntry_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args) -> "void" :
+    def InsertAfter(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param T:
         :type T: Aspect_TypeMapEntry &
         :rtype: None
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param S:
         :type S: Aspect_SequenceOfTypeMapEntry &
         :rtype: None
@@ -5745,24 +6065,24 @@ class Aspect_SequenceOfTypeMapEntry(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Aspect.Aspect_SequenceOfTypeMapEntry_InsertAfter(self, *args)
 
-    def First(self, *args) -> "Aspect_TypeMapEntry const &" :
+    def First(self):
         """
         :rtype: Aspect_TypeMapEntry
 
         """
-        return _Aspect.Aspect_SequenceOfTypeMapEntry_First(self, *args)
+        return _Aspect.Aspect_SequenceOfTypeMapEntry_First(self)
 
-    def Last(self, *args) -> "Aspect_TypeMapEntry const &" :
+    def Last(self):
         """
         :rtype: Aspect_TypeMapEntry
 
         """
-        return _Aspect.Aspect_SequenceOfTypeMapEntry_Last(self, *args)
+        return _Aspect.Aspect_SequenceOfTypeMapEntry_Last(self)
 
-    def Split(self, *args) -> "void" :
+    def Split(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Sub:
         :type Sub: Aspect_SequenceOfTypeMapEntry &
         :rtype: None
@@ -5770,19 +6090,19 @@ class Aspect_SequenceOfTypeMapEntry(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Aspect.Aspect_SequenceOfTypeMapEntry_Split(self, *args)
 
-    def Value(self, *args) -> "Aspect_TypeMapEntry const &" :
+    def Value(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Aspect_TypeMapEntry
 
         """
         return _Aspect.Aspect_SequenceOfTypeMapEntry_Value(self, *args)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param I:
         :type I: Aspect_TypeMapEntry &
         :rtype: None
@@ -5790,25 +6110,25 @@ class Aspect_SequenceOfTypeMapEntry(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Aspect.Aspect_SequenceOfTypeMapEntry_SetValue(self, *args)
 
-    def ChangeValue(self, *args) -> "Aspect_TypeMapEntry &" :
+    def ChangeValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Aspect_TypeMapEntry
 
         """
         return _Aspect.Aspect_SequenceOfTypeMapEntry_ChangeValue(self, *args)
 
-    def Remove(self, *args) -> "void" :
+    def Remove(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: None
 
         :param FromIndex:
-        :type FromIndex: int
+        :type FromIndex: Standard_Integer
         :param ToIndex:
-        :type ToIndex: int
+        :type ToIndex: Standard_Integer
         :rtype: None
 
         """
@@ -5843,20 +6163,20 @@ Aspect_SequenceOfTypeMapEntry_swigregister(Aspect_SequenceOfTypeMapEntry)
 class Aspect_SequenceOfWidthMapEntry(OCC.TCollection.TCollection_BaseSequence):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _Aspect.Aspect_SequenceOfWidthMapEntry_swiginit(self,_Aspect.new_Aspect_SequenceOfWidthMapEntry(*args))
-    def Clear(self, *args) -> "void" :
+        _Aspect.Aspect_SequenceOfWidthMapEntry_swiginit(self,_Aspect.new_Aspect_SequenceOfWidthMapEntry())
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _Aspect.Aspect_SequenceOfWidthMapEntry_Clear(self, *args)
+        return _Aspect.Aspect_SequenceOfWidthMapEntry_Clear(self)
 
-    def Assign(self, *args) -> "Aspect_SequenceOfWidthMapEntry const &" :
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: Aspect_SequenceOfWidthMapEntry &
@@ -5865,7 +6185,7 @@ class Aspect_SequenceOfWidthMapEntry(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Aspect.Aspect_SequenceOfWidthMapEntry_Assign(self, *args)
 
-    def Set(self, *args) -> "Aspect_SequenceOfWidthMapEntry const &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: Aspect_SequenceOfWidthMapEntry &
@@ -5874,7 +6194,7 @@ class Aspect_SequenceOfWidthMapEntry(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Aspect.Aspect_SequenceOfWidthMapEntry_Set(self, *args)
 
-    def Append(self, *args) -> "void" :
+    def Append(self, *args):
         """
         :param T:
         :type T: Aspect_WidthMapEntry &
@@ -5887,7 +6207,7 @@ class Aspect_SequenceOfWidthMapEntry(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Aspect.Aspect_SequenceOfWidthMapEntry_Append(self, *args)
 
-    def Prepend(self, *args) -> "void" :
+    def Prepend(self, *args):
         """
         :param T:
         :type T: Aspect_WidthMapEntry &
@@ -5900,16 +6220,16 @@ class Aspect_SequenceOfWidthMapEntry(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Aspect.Aspect_SequenceOfWidthMapEntry_Prepend(self, *args)
 
-    def InsertBefore(self, *args) -> "void" :
+    def InsertBefore(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param T:
         :type T: Aspect_WidthMapEntry &
         :rtype: None
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param S:
         :type S: Aspect_SequenceOfWidthMapEntry &
         :rtype: None
@@ -5917,16 +6237,16 @@ class Aspect_SequenceOfWidthMapEntry(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Aspect.Aspect_SequenceOfWidthMapEntry_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args) -> "void" :
+    def InsertAfter(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param T:
         :type T: Aspect_WidthMapEntry &
         :rtype: None
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param S:
         :type S: Aspect_SequenceOfWidthMapEntry &
         :rtype: None
@@ -5934,24 +6254,24 @@ class Aspect_SequenceOfWidthMapEntry(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Aspect.Aspect_SequenceOfWidthMapEntry_InsertAfter(self, *args)
 
-    def First(self, *args) -> "Aspect_WidthMapEntry const &" :
+    def First(self):
         """
         :rtype: Aspect_WidthMapEntry
 
         """
-        return _Aspect.Aspect_SequenceOfWidthMapEntry_First(self, *args)
+        return _Aspect.Aspect_SequenceOfWidthMapEntry_First(self)
 
-    def Last(self, *args) -> "Aspect_WidthMapEntry const &" :
+    def Last(self):
         """
         :rtype: Aspect_WidthMapEntry
 
         """
-        return _Aspect.Aspect_SequenceOfWidthMapEntry_Last(self, *args)
+        return _Aspect.Aspect_SequenceOfWidthMapEntry_Last(self)
 
-    def Split(self, *args) -> "void" :
+    def Split(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Sub:
         :type Sub: Aspect_SequenceOfWidthMapEntry &
         :rtype: None
@@ -5959,19 +6279,19 @@ class Aspect_SequenceOfWidthMapEntry(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Aspect.Aspect_SequenceOfWidthMapEntry_Split(self, *args)
 
-    def Value(self, *args) -> "Aspect_WidthMapEntry const &" :
+    def Value(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Aspect_WidthMapEntry
 
         """
         return _Aspect.Aspect_SequenceOfWidthMapEntry_Value(self, *args)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param I:
         :type I: Aspect_WidthMapEntry &
         :rtype: None
@@ -5979,25 +6299,25 @@ class Aspect_SequenceOfWidthMapEntry(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Aspect.Aspect_SequenceOfWidthMapEntry_SetValue(self, *args)
 
-    def ChangeValue(self, *args) -> "Aspect_WidthMapEntry &" :
+    def ChangeValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Aspect_WidthMapEntry
 
         """
         return _Aspect.Aspect_SequenceOfWidthMapEntry_ChangeValue(self, *args)
 
-    def Remove(self, *args) -> "void" :
+    def Remove(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: None
 
         :param FromIndex:
-        :type FromIndex: int
+        :type FromIndex: Standard_Integer
         :param ToIndex:
-        :type ToIndex: int
+        :type ToIndex: Standard_Integer
         :rtype: None
 
         """
@@ -6032,13 +6352,13 @@ Aspect_SequenceOfWidthMapEntry_swigregister(Aspect_SequenceOfWidthMapEntry)
 class Aspect_TypeMap(OCC.MMgt.MMgt_TShared):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _Aspect.Aspect_TypeMap_swiginit(self,_Aspect.new_Aspect_TypeMap(*args))
-    def AddEntry(self, *args) -> "Standard_Integer" :
+        _Aspect.Aspect_TypeMap_swiginit(self,_Aspect.new_Aspect_TypeMap())
+    def AddEntry(self, *args):
         """
         * Adds an entry in the type map <self>. Warning: Raises BadAccess if TypeMap size is exceeded.
 
@@ -6055,49 +6375,49 @@ class Aspect_TypeMap(OCC.MMgt.MMgt_TShared):
         """
         return _Aspect.Aspect_TypeMap_AddEntry(self, *args)
 
-    def Size(self, *args) -> "Standard_Integer" :
+    def Size(self):
         """
         * Returns the Allocated typemap Size
 
         :rtype: int
 
         """
-        return _Aspect.Aspect_TypeMap_Size(self, *args)
+        return _Aspect.Aspect_TypeMap_Size(self)
 
-    def Index(self, *args) -> "Standard_Integer" :
+    def Index(self, *args):
         """
         * Returns the TypeMapEntry.Index of the TypeMap at rank <aTypemapIndex> .
 
         :param aTypemapIndex:
-        :type aTypemapIndex: int
+        :type aTypemapIndex: Standard_Integer
         :rtype: int
 
         """
         return _Aspect.Aspect_TypeMap_Index(self, *args)
 
-    def Dump(self, *args) -> "void" :
+    def Dump(self):
         """
         :rtype: None
 
         """
-        return _Aspect.Aspect_TypeMap_Dump(self, *args)
+        return _Aspect.Aspect_TypeMap_Dump(self)
 
-    def Entry(self, *args) -> "Aspect_TypeMapEntry const &" :
+    def Entry(self, *args):
         """
         * Returns the Type map entry with the index <AnIndex>. Warning: Raises BadAccess if the index less than 1 or //!	 greater than Size.
 
         :param AnIndex:
-        :type AnIndex: int
+        :type AnIndex: Standard_Integer
         :rtype: Aspect_TypeMapEntry
 
         """
         return _Aspect.Aspect_TypeMap_Entry(self, *args)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Aspect_TypeMap self)"""
         return _Aspect.Aspect_TypeMap__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Aspect_TypeMap" :
+    def GetHandle(self):
         """GetHandle(Aspect_TypeMap self) -> Handle_Aspect_TypeMap"""
         return _Aspect.Aspect_TypeMap_GetHandle(self)
 
@@ -6140,7 +6460,7 @@ Handle_Aspect_TypeMap._kill_pointed = new_instancemethod(_Aspect.Handle_Aspect_T
 Handle_Aspect_TypeMap_swigregister = _Aspect.Handle_Aspect_TypeMap_swigregister
 Handle_Aspect_TypeMap_swigregister(Handle_Aspect_TypeMap)
 
-def Handle_Aspect_TypeMap_DownCast(*args) -> "Handle_Aspect_TypeMap const" :
+def Handle_Aspect_TypeMap_DownCast(*args):
   return _Aspect.Handle_Aspect_TypeMap_DownCast(*args)
 Handle_Aspect_TypeMap_DownCast = _Aspect.Handle_Aspect_TypeMap_DownCast
 
@@ -6156,7 +6476,7 @@ class Aspect_TypeMapEntry(object):
         * Creates an allocated typemap entry
 
         :param index:
-        :type index: int
+        :type index: Standard_Integer
         :param style:
         :type style: Aspect_LineStyle &
         :rtype: None
@@ -6169,12 +6489,12 @@ class Aspect_TypeMapEntry(object):
 
         """
         _Aspect.Aspect_TypeMapEntry_swiginit(self,_Aspect.new_Aspect_TypeMapEntry(*args))
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         * Sets typemap entry value and allocates it.
 
         :param index:
-        :type index: int
+        :type index: Standard_Integer
         :param style:
         :type style: Aspect_LineStyle &
         :rtype: None
@@ -6188,7 +6508,7 @@ class Aspect_TypeMapEntry(object):
         """
         return _Aspect.Aspect_TypeMapEntry_SetValue(self, *args)
 
-    def Set(self, *args) -> "void" :
+    def Set(self, *args):
         """
         :param entry:
         :type entry: Aspect_TypeMapEntry &
@@ -6197,7 +6517,7 @@ class Aspect_TypeMapEntry(object):
         """
         return _Aspect.Aspect_TypeMapEntry_Set(self, *args)
 
-    def SetType(self, *args) -> "void" :
+    def SetType(self, *args):
         """
         * Sets the line style of typemap entry.
 
@@ -6208,57 +6528,57 @@ class Aspect_TypeMapEntry(object):
         """
         return _Aspect.Aspect_TypeMapEntry_SetType(self, *args)
 
-    def Type(self, *args) -> "Aspect_LineStyle const &" :
+    def Type(self):
         """
         :rtype: Aspect_LineStyle
 
         """
-        return _Aspect.Aspect_TypeMapEntry_Type(self, *args)
+        return _Aspect.Aspect_TypeMapEntry_Type(self)
 
-    def SetIndex(self, *args) -> "void" :
+    def SetIndex(self, *args):
         """
         * Sets index value of a typemap entry.
 
         :param index:
-        :type index: int
+        :type index: Standard_Integer
         :rtype: None
 
         """
         return _Aspect.Aspect_TypeMapEntry_SetIndex(self, *args)
 
-    def Index(self, *args) -> "Standard_Integer" :
+    def Index(self):
         """
         * Returns index value of a typemap entry. Warning: Raises error if the typemap entry is unallocated .
 
         :rtype: int
 
         """
-        return _Aspect.Aspect_TypeMapEntry_Index(self, *args)
+        return _Aspect.Aspect_TypeMapEntry_Index(self)
 
-    def Free(self, *args) -> "void" :
+    def Free(self):
         """
         * Unallocates the typemap entry.
 
         :rtype: None
 
         """
-        return _Aspect.Aspect_TypeMapEntry_Free(self, *args)
+        return _Aspect.Aspect_TypeMapEntry_Free(self)
 
-    def IsAllocated(self, *args) -> "Standard_Boolean" :
+    def IsAllocated(self):
         """
         * Returns True if the typemap entry is allocated. Warning: A typemap entry is allocated when the type and //!	 the index is defined.
 
         :rtype: bool
 
         """
-        return _Aspect.Aspect_TypeMapEntry_IsAllocated(self, *args)
+        return _Aspect.Aspect_TypeMapEntry_IsAllocated(self)
 
-    def Dump(self, *args) -> "void" :
+    def Dump(self):
         """
         :rtype: None
 
         """
-        return _Aspect.Aspect_TypeMapEntry_Dump(self, *args)
+        return _Aspect.Aspect_TypeMapEntry_Dump(self)
 
     def __del__(self):
     	try:
@@ -6284,15 +6604,15 @@ Aspect_TypeMapEntry_swigregister(Aspect_TypeMapEntry)
 class Aspect_WidthMap(OCC.MMgt.MMgt_TShared):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         * Creates a width map.
 
         :rtype: None
 
         """
-        _Aspect.Aspect_WidthMap_swiginit(self,_Aspect.new_Aspect_WidthMap(*args))
-    def AddEntry(self, *args) -> "Standard_Integer" :
+        _Aspect.Aspect_WidthMap_swiginit(self,_Aspect.new_Aspect_WidthMap())
+    def AddEntry(self, *args):
         """
         * Adds an entry in the Width map <self>. Warning: Raises BadAccess if WidthMap size is exceeded.
 
@@ -6315,49 +6635,49 @@ class Aspect_WidthMap(OCC.MMgt.MMgt_TShared):
         """
         return _Aspect.Aspect_WidthMap_AddEntry(self, *args)
 
-    def Size(self, *args) -> "Standard_Integer" :
+    def Size(self):
         """
         * Returns the Allocated widthmap Size
 
         :rtype: int
 
         """
-        return _Aspect.Aspect_WidthMap_Size(self, *args)
+        return _Aspect.Aspect_WidthMap_Size(self)
 
-    def Index(self, *args) -> "Standard_Integer" :
+    def Index(self, *args):
         """
         * Returns the WidthMapEntry.Index of the WidthMap at rank <aWidthmapIndex> .
 
         :param aWidthmapIndex:
-        :type aWidthmapIndex: int
+        :type aWidthmapIndex: Standard_Integer
         :rtype: int
 
         """
         return _Aspect.Aspect_WidthMap_Index(self, *args)
 
-    def Entry(self, *args) -> "Aspect_WidthMapEntry" :
+    def Entry(self, *args):
         """
         * Returns the Width map entry with the index <AnIndex>. Warning: Raises BadAccess if the index less than 1 or //!	 greater than Size.
 
         :param AnIndex:
-        :type AnIndex: int
+        :type AnIndex: Standard_Integer
         :rtype: Aspect_WidthMapEntry
 
         """
         return _Aspect.Aspect_WidthMap_Entry(self, *args)
 
-    def Dump(self, *args) -> "void" :
+    def Dump(self):
         """
         :rtype: None
 
         """
-        return _Aspect.Aspect_WidthMap_Dump(self, *args)
+        return _Aspect.Aspect_WidthMap_Dump(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Aspect_WidthMap self)"""
         return _Aspect.Aspect_WidthMap__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Aspect_WidthMap" :
+    def GetHandle(self):
         """GetHandle(Aspect_WidthMap self) -> Handle_Aspect_WidthMap"""
         return _Aspect.Aspect_WidthMap_GetHandle(self)
 
@@ -6400,7 +6720,7 @@ Handle_Aspect_WidthMap._kill_pointed = new_instancemethod(_Aspect.Handle_Aspect_
 Handle_Aspect_WidthMap_swigregister = _Aspect.Handle_Aspect_WidthMap_swigregister
 Handle_Aspect_WidthMap_swigregister(Handle_Aspect_WidthMap)
 
-def Handle_Aspect_WidthMap_DownCast(*args) -> "Handle_Aspect_WidthMap const" :
+def Handle_Aspect_WidthMap_DownCast(*args):
   return _Aspect.Handle_Aspect_WidthMap_DownCast(*args)
 Handle_Aspect_WidthMap_DownCast = _Aspect.Handle_Aspect_WidthMap_DownCast
 
@@ -6416,7 +6736,7 @@ class Aspect_WidthMapEntry(object):
         * Creates an allocated widthmap entry from width style
 
         :param index:
-        :type index: int
+        :type index: Standard_Integer
         :param style:
         :type style: Aspect_WidthOfLine
         :rtype: None
@@ -6424,7 +6744,7 @@ class Aspect_WidthMapEntry(object):
         * Creates an allocated widthmap entry from width value
 
         :param index:
-        :type index: int
+        :type index: Standard_Integer
         :param width:
         :type width: Quantity_Length
         :rtype: None
@@ -6437,12 +6757,12 @@ class Aspect_WidthMapEntry(object):
 
         """
         _Aspect.Aspect_WidthMapEntry_swiginit(self,_Aspect.new_Aspect_WidthMapEntry(*args))
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         * Sets widthmap entry value from width style //!	 and allocates it.
 
         :param index:
-        :type index: int
+        :type index: Standard_Integer
         :param style:
         :type style: Aspect_WidthOfLine
         :rtype: None
@@ -6450,7 +6770,7 @@ class Aspect_WidthMapEntry(object):
         * Sets widthmap entry value from width value //!	 and allocates it.
 
         :param index:
-        :type index: int
+        :type index: Standard_Integer
         :param width:
         :type width: Quantity_Length
         :rtype: None
@@ -6464,7 +6784,7 @@ class Aspect_WidthMapEntry(object):
         """
         return _Aspect.Aspect_WidthMapEntry_SetValue(self, *args)
 
-    def Set(self, *args) -> "void" :
+    def Set(self, *args):
         """
         :param entry:
         :type entry: Aspect_WidthMapEntry &
@@ -6473,18 +6793,18 @@ class Aspect_WidthMapEntry(object):
         """
         return _Aspect.Aspect_WidthMapEntry_Set(self, *args)
 
-    def SetIndex(self, *args) -> "void" :
+    def SetIndex(self, *args):
         """
         * Sets index value of a widthmap entry.
 
         :param index:
-        :type index: int
+        :type index: Standard_Integer
         :rtype: None
 
         """
         return _Aspect.Aspect_WidthMapEntry_SetIndex(self, *args)
 
-    def SetType(self, *args) -> "void" :
+    def SetType(self, *args):
         """
         * Sets width style of widthmap entry.
 
@@ -6495,7 +6815,7 @@ class Aspect_WidthMapEntry(object):
         """
         return _Aspect.Aspect_WidthMapEntry_SetType(self, *args)
 
-    def SetWidth(self, *args) -> "void" :
+    def SetWidth(self, *args):
         """
         * Sets width value of widthmap entry.
 
@@ -6506,55 +6826,55 @@ class Aspect_WidthMapEntry(object):
         """
         return _Aspect.Aspect_WidthMapEntry_SetWidth(self, *args)
 
-    def Type(self, *args) -> "Aspect_WidthOfLine" :
+    def Type(self):
         """
         :rtype: Aspect_WidthOfLine
 
         """
-        return _Aspect.Aspect_WidthMapEntry_Type(self, *args)
+        return _Aspect.Aspect_WidthMapEntry_Type(self)
 
-    def Width(self, *args) -> "Quantity_Length" :
+    def Width(self):
         """
         * Returns width value of widthmap entry. Warning: Raises error if the widthmap entry is unallocated .
 
         :rtype: Quantity_Length
 
         """
-        return _Aspect.Aspect_WidthMapEntry_Width(self, *args)
+        return _Aspect.Aspect_WidthMapEntry_Width(self)
 
-    def Index(self, *args) -> "Standard_Integer" :
+    def Index(self):
         """
         * Returns index value of a widthmap entry. Warning: Raises error if the widthmap entry is unallocated .
 
         :rtype: int
 
         """
-        return _Aspect.Aspect_WidthMapEntry_Index(self, *args)
+        return _Aspect.Aspect_WidthMapEntry_Index(self)
 
-    def Free(self, *args) -> "void" :
+    def Free(self):
         """
         * Unallocates the widthmap entry.
 
         :rtype: None
 
         """
-        return _Aspect.Aspect_WidthMapEntry_Free(self, *args)
+        return _Aspect.Aspect_WidthMapEntry_Free(self)
 
-    def IsAllocated(self, *args) -> "Standard_Boolean" :
+    def IsAllocated(self):
         """
         * Returns True if the widthmap entry is allocated. Warning: A widthmap entry is allocated when the width and //!	 the index is defined.
 
         :rtype: bool
 
         """
-        return _Aspect.Aspect_WidthMapEntry_IsAllocated(self, *args)
+        return _Aspect.Aspect_WidthMapEntry_IsAllocated(self)
 
-    def Dump(self, *args) -> "void" :
+    def Dump(self):
         """
         :rtype: None
 
         """
-        return _Aspect.Aspect_WidthMapEntry_Dump(self, *args)
+        return _Aspect.Aspect_WidthMapEntry_Dump(self)
 
     def __del__(self):
     	try:
@@ -6583,7 +6903,7 @@ class Aspect_Window(OCC.MMgt.MMgt_TShared):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def SetBackground(self, *args) -> "void" :
+    def SetBackground(self, *args):
         """
         * Modifies the window background.
 
@@ -6622,97 +6942,97 @@ class Aspect_Window(OCC.MMgt.MMgt_TShared):
         """
         return _Aspect.Aspect_Window_SetBackground(self, *args)
 
-    def Map(self, *args) -> "void" :
+    def Map(self):
         """
         * Opens the window <self>.
 
         :rtype: void
 
         """
-        return _Aspect.Aspect_Window_Map(self, *args)
+        return _Aspect.Aspect_Window_Map(self)
 
-    def Unmap(self, *args) -> "void" :
+    def Unmap(self):
         """
         * Closes the window <self>.
 
         :rtype: void
 
         """
-        return _Aspect.Aspect_Window_Unmap(self, *args)
+        return _Aspect.Aspect_Window_Unmap(self)
 
-    def DoResize(self, *args) -> "Aspect_TypeOfResize" :
+    def DoResize(self):
         """
         * Apply the resizing to the window <self>.
 
         :rtype: Aspect_TypeOfResize
 
         """
-        return _Aspect.Aspect_Window_DoResize(self, *args)
+        return _Aspect.Aspect_Window_DoResize(self)
 
-    def DoMapping(self, *args) -> "Standard_Boolean" :
+    def DoMapping(self):
         """
         * Apply the mapping change to the window <self>. and returns True if the window is mapped at screen.
 
         :rtype: bool
 
         """
-        return _Aspect.Aspect_Window_DoMapping(self, *args)
+        return _Aspect.Aspect_Window_DoMapping(self)
 
-    def Destroy(self, *args) -> "void" :
+    def Destroy(self):
         """
         * Destroy the Window
 
         :rtype: void
 
         """
-        return _Aspect.Aspect_Window_Destroy(self, *args)
+        return _Aspect.Aspect_Window_Destroy(self)
 
-    def Background(self, *args) -> "Aspect_Background" :
+    def Background(self):
         """
         * Returns the window background.
 
         :rtype: Aspect_Background
 
         """
-        return _Aspect.Aspect_Window_Background(self, *args)
+        return _Aspect.Aspect_Window_Background(self)
 
-    def BackgroundFillMethod(self, *args) -> "Aspect_FillMethod" :
+    def BackgroundFillMethod(self):
         """
         * Returns the current image background fill mode.
 
         :rtype: Aspect_FillMethod
 
         """
-        return _Aspect.Aspect_Window_BackgroundFillMethod(self, *args)
+        return _Aspect.Aspect_Window_BackgroundFillMethod(self)
 
-    def GradientBackground(self, *args) -> "Aspect_GradientBackground" :
+    def GradientBackground(self):
         """
         * Returns the window gradient background.
 
         :rtype: Aspect_GradientBackground
 
         """
-        return _Aspect.Aspect_Window_GradientBackground(self, *args)
+        return _Aspect.Aspect_Window_GradientBackground(self)
 
-    def IsMapped(self, *args) -> "Standard_Boolean" :
+    def IsMapped(self):
         """
         * Returns True if the window <self> is opened //!	 and False if the window is closed.
 
         :rtype: bool
 
         """
-        return _Aspect.Aspect_Window_IsMapped(self, *args)
+        return _Aspect.Aspect_Window_IsMapped(self)
 
-    def IsVirtual(self, *args) -> "Standard_Boolean" :
+    def IsVirtual(self):
         """
         * Returns True if the window <self> is virtual
 
         :rtype: bool
 
         """
-        return _Aspect.Aspect_Window_IsVirtual(self, *args)
+        return _Aspect.Aspect_Window_IsVirtual(self)
 
-    def SetVirtual(self, *args) -> "void" :
+    def SetVirtual(self, *args):
         """
         * Setup the virtual state
 
@@ -6723,50 +7043,50 @@ class Aspect_Window(OCC.MMgt.MMgt_TShared):
         """
         return _Aspect.Aspect_Window_SetVirtual(self, *args)
 
-    def Ratio(self, *args) -> "Quantity_Ratio" :
+    def Ratio(self):
         """
         * Returns The Window RATIO equal to the physical //!	 WIDTH/HEIGHT dimensions
 
         :rtype: Quantity_Ratio
 
         """
-        return _Aspect.Aspect_Window_Ratio(self, *args)
+        return _Aspect.Aspect_Window_Ratio(self)
 
-    def Position(self, *args) -> "void" :
+    def Position(self):
         """
         * Returns The Window POSITION in PIXEL
 
         :param X1:
-        :type X1: int &
+        :type X1: Standard_Integer &
         :param Y1:
-        :type Y1: int &
+        :type Y1: Standard_Integer &
         :param X2:
-        :type X2: int &
+        :type X2: Standard_Integer &
         :param Y2:
-        :type Y2: int &
+        :type Y2: Standard_Integer &
         :rtype: void
 
         """
-        return _Aspect.Aspect_Window_Position(self, *args)
+        return _Aspect.Aspect_Window_Position(self)
 
-    def Size(self, *args) -> "void" :
+    def Size(self):
         """
         * Returns The Window SIZE in PIXEL
 
         :param Width:
-        :type Width: int &
+        :type Width: Standard_Integer &
         :param Height:
-        :type Height: int &
+        :type Height: Standard_Integer &
         :rtype: void
 
         """
-        return _Aspect.Aspect_Window_Size(self, *args)
+        return _Aspect.Aspect_Window_Size(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Aspect_Window self)"""
         return _Aspect.Aspect_Window__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Aspect_Window" :
+    def GetHandle(self):
         """GetHandle(Aspect_Window self) -> Handle_Aspect_Window"""
         return _Aspect.Aspect_Window_GetHandle(self)
 
@@ -6819,7 +7139,7 @@ Handle_Aspect_Window._kill_pointed = new_instancemethod(_Aspect.Handle_Aspect_Wi
 Handle_Aspect_Window_swigregister = _Aspect.Handle_Aspect_Window_swigregister
 Handle_Aspect_Window_swigregister(Handle_Aspect_Window)
 
-def Handle_Aspect_Window_DownCast(*args) -> "Handle_Aspect_Window const" :
+def Handle_Aspect_Window_DownCast(*args):
   return _Aspect.Handle_Aspect_Window_DownCast(*args)
 Handle_Aspect_Window_DownCast = _Aspect.Handle_Aspect_Window_DownCast
 
@@ -6833,7 +7153,49 @@ class Aspect_CircularGrid(Aspect_Grid):
         :param aRadiusStep:
         :type aRadiusStep: Quantity_Length
         :param aDivisionNumber:
-        :type aDivisionNumber: int
+        :type aDivisionNumber: Standard_Integer
+        :param XOrigin: default value is 0
+        :type XOrigin: Quantity_Length
+        :param anYOrigin: default value is 0
+        :type anYOrigin: Quantity_Length
+        :param aRotationAngle: default value is 0
+        :type aRotationAngle: Quantity_PlaneAngle
+        :rtype: None
+
+        * creates a new grid. By default this grid is not active.
+
+        :param aRadiusStep:
+        :type aRadiusStep: Quantity_Length
+        :param aDivisionNumber:
+        :type aDivisionNumber: Standard_Integer
+        :param XOrigin: default value is 0
+        :type XOrigin: Quantity_Length
+        :param anYOrigin: default value is 0
+        :type anYOrigin: Quantity_Length
+        :param aRotationAngle: default value is 0
+        :type aRotationAngle: Quantity_PlaneAngle
+        :rtype: None
+
+        * creates a new grid. By default this grid is not active.
+
+        :param aRadiusStep:
+        :type aRadiusStep: Quantity_Length
+        :param aDivisionNumber:
+        :type aDivisionNumber: Standard_Integer
+        :param XOrigin: default value is 0
+        :type XOrigin: Quantity_Length
+        :param anYOrigin: default value is 0
+        :type anYOrigin: Quantity_Length
+        :param aRotationAngle: default value is 0
+        :type aRotationAngle: Quantity_PlaneAngle
+        :rtype: None
+
+        * creates a new grid. By default this grid is not active.
+
+        :param aRadiusStep:
+        :type aRadiusStep: Quantity_Length
+        :param aDivisionNumber:
+        :type aDivisionNumber: Standard_Integer
         :param XOrigin: default value is 0
         :type XOrigin: Quantity_Length
         :param anYOrigin: default value is 0
@@ -6844,7 +7206,7 @@ class Aspect_CircularGrid(Aspect_Grid):
 
         """
         _Aspect.Aspect_CircularGrid_swiginit(self,_Aspect.new_Aspect_CircularGrid(*args))
-    def SetRadiusStep(self, *args) -> "void" :
+    def SetRadiusStep(self, *args):
         """
         * defines the x step of the grid.
 
@@ -6855,18 +7217,18 @@ class Aspect_CircularGrid(Aspect_Grid):
         """
         return _Aspect.Aspect_CircularGrid_SetRadiusStep(self, *args)
 
-    def SetDivisionNumber(self, *args) -> "void" :
+    def SetDivisionNumber(self, *args):
         """
         * defines the step of the grid.
 
         :param aNumber:
-        :type aNumber: int
+        :type aNumber: Standard_Integer
         :rtype: None
 
         """
         return _Aspect.Aspect_CircularGrid_SetDivisionNumber(self, *args)
 
-    def SetGridValues(self, *args) -> "void" :
+    def SetGridValues(self, *args):
         """
         :param XOrigin:
         :type XOrigin: Quantity_Length
@@ -6875,7 +7237,7 @@ class Aspect_CircularGrid(Aspect_Grid):
         :param RadiusStep:
         :type RadiusStep: Quantity_Length
         :param DivisionNumber:
-        :type DivisionNumber: int
+        :type DivisionNumber: Standard_Integer
         :param RotationAngle:
         :type RotationAngle: Quantity_PlaneAngle
         :rtype: None
@@ -6883,29 +7245,29 @@ class Aspect_CircularGrid(Aspect_Grid):
         """
         return _Aspect.Aspect_CircularGrid_SetGridValues(self, *args)
 
-    def RadiusStep(self, *args) -> "Quantity_Length" :
+    def RadiusStep(self):
         """
         * returns the x step of the grid.
 
         :rtype: Quantity_Length
 
         """
-        return _Aspect.Aspect_CircularGrid_RadiusStep(self, *args)
+        return _Aspect.Aspect_CircularGrid_RadiusStep(self)
 
-    def DivisionNumber(self, *args) -> "Standard_Integer" :
+    def DivisionNumber(self):
         """
         * returns the x step of the grid.
 
         :rtype: int
 
         """
-        return _Aspect.Aspect_CircularGrid_DivisionNumber(self, *args)
+        return _Aspect.Aspect_CircularGrid_DivisionNumber(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Aspect_CircularGrid self)"""
         return _Aspect.Aspect_CircularGrid__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Aspect_CircularGrid" :
+    def GetHandle(self):
         """GetHandle(Aspect_CircularGrid self) -> Handle_Aspect_CircularGrid"""
         return _Aspect.Aspect_CircularGrid_GetHandle(self)
 
@@ -6948,7 +7310,7 @@ Handle_Aspect_CircularGrid._kill_pointed = new_instancemethod(_Aspect.Handle_Asp
 Handle_Aspect_CircularGrid_swigregister = _Aspect.Handle_Aspect_CircularGrid_swigregister
 Handle_Aspect_CircularGrid_swigregister(Handle_Aspect_CircularGrid)
 
-def Handle_Aspect_CircularGrid_DownCast(*args) -> "Handle_Aspect_CircularGrid const" :
+def Handle_Aspect_CircularGrid_DownCast(*args):
   return _Aspect.Handle_Aspect_CircularGrid_DownCast(*args)
 Handle_Aspect_CircularGrid_DownCast = _Aspect.Handle_Aspect_CircularGrid_DownCast
 
@@ -6960,49 +7322,49 @@ class Aspect_ColorCubeColorMap(Aspect_ColorMap):
         * Create a ColorCube ColorMap.
 
         :param base_pixel:
-        :type base_pixel: int
+        :type base_pixel: Standard_Integer
         :param redmax:
-        :type redmax: int
+        :type redmax: Standard_Integer
         :param redmult:
-        :type redmult: int
+        :type redmult: Standard_Integer
         :param greenmax:
-        :type greenmax: int
+        :type greenmax: Standard_Integer
         :param greenmult:
-        :type greenmult: int
+        :type greenmult: Standard_Integer
         :param bluemax:
-        :type bluemax: int
+        :type bluemax: Standard_Integer
         :param bluemult:
-        :type bluemult: int
+        :type bluemult: Standard_Integer
         :rtype: None
 
         """
         _Aspect.Aspect_ColorCubeColorMap_swiginit(self,_Aspect.new_Aspect_ColorCubeColorMap(*args))
-    def ColorCubeDefinition(self, *args) -> "void" :
+    def ColorCubeDefinition(self):
         """
         :param base_pixel:
-        :type base_pixel: int &
+        :type base_pixel: Standard_Integer &
         :param redmax:
-        :type redmax: int &
+        :type redmax: Standard_Integer &
         :param redmult:
-        :type redmult: int &
+        :type redmult: Standard_Integer &
         :param greenmax:
-        :type greenmax: int &
+        :type greenmax: Standard_Integer &
         :param greenmult:
-        :type greenmult: int &
+        :type greenmult: Standard_Integer &
         :param bluemax:
-        :type bluemax: int &
+        :type bluemax: Standard_Integer &
         :param bluemult:
-        :type bluemult: int &
+        :type bluemult: Standard_Integer &
         :rtype: None
 
         """
-        return _Aspect.Aspect_ColorCubeColorMap_ColorCubeDefinition(self, *args)
+        return _Aspect.Aspect_ColorCubeColorMap_ColorCubeDefinition(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Aspect_ColorCubeColorMap self)"""
         return _Aspect.Aspect_ColorCubeColorMap__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Aspect_ColorCubeColorMap" :
+    def GetHandle(self):
         """GetHandle(Aspect_ColorCubeColorMap self) -> Handle_Aspect_ColorCubeColorMap"""
         return _Aspect.Aspect_ColorCubeColorMap_GetHandle(self)
 
@@ -7041,7 +7403,7 @@ Handle_Aspect_ColorCubeColorMap._kill_pointed = new_instancemethod(_Aspect.Handl
 Handle_Aspect_ColorCubeColorMap_swigregister = _Aspect.Handle_Aspect_ColorCubeColorMap_swigregister
 Handle_Aspect_ColorCubeColorMap_swigregister(Handle_Aspect_ColorCubeColorMap)
 
-def Handle_Aspect_ColorCubeColorMap_DownCast(*args) -> "Handle_Aspect_ColorCubeColorMap const" :
+def Handle_Aspect_ColorCubeColorMap_DownCast(*args):
   return _Aspect.Handle_Aspect_ColorCubeColorMap_DownCast(*args)
 Handle_Aspect_ColorCubeColorMap_DownCast = _Aspect.Handle_Aspect_ColorCubeColorMap_DownCast
 
@@ -7058,14 +7420,14 @@ class Aspect_ColorPixel(Aspect_Pixel):
 
         """
         _Aspect.Aspect_ColorPixel_swiginit(self,_Aspect.new_Aspect_ColorPixel(*args))
-    def Value(self, *args) -> "Quantity_Color const &" :
+    def Value(self):
         """
         :rtype: Quantity_Color
 
         """
-        return _Aspect.Aspect_ColorPixel_Value(self, *args)
+        return _Aspect.Aspect_ColorPixel_Value(self)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param aColor:
         :type aColor: Quantity_Color &
@@ -7074,26 +7436,26 @@ class Aspect_ColorPixel(Aspect_Pixel):
         """
         return _Aspect.Aspect_ColorPixel_SetValue(self, *args)
 
-    def PrintToString(self) -> "std::string" :
+    def PrintToString(self):
         """PrintToString(Aspect_ColorPixel self) -> std::string"""
         return _Aspect.Aspect_ColorPixel_PrintToString(self)
 
-    def HashCode(self, *args) -> "Standard_Integer" :
+    def HashCode(self, *args):
         """
         * Returns a hashed value denoting <self>. This value is in  the range 1..<Upper>.
 
         :param Upper:
-        :type Upper: int
+        :type Upper: Standard_Integer
         :rtype: int
 
         """
         return _Aspect.Aspect_ColorPixel_HashCode(self, *args)
 
-    def __hash__(self) -> "Standard_Integer" :
+    def __hash__(self):
         """__hash__(Aspect_ColorPixel self) -> Standard_Integer"""
         return _Aspect.Aspect_ColorPixel___hash__(self)
 
-    def IsEqual(self, *args) -> "Standard_Boolean" :
+    def IsEqual(self, *args):
         """
         :param Other:
         :type Other: Aspect_ColorPixel &
@@ -7102,7 +7464,7 @@ class Aspect_ColorPixel(Aspect_Pixel):
         """
         return _Aspect.Aspect_ColorPixel_IsEqual(self, *args)
 
-    def __eq_wrapper__(self, *args) -> "bool" :
+    def __eq_wrapper__(self, *args):
         """__eq_wrapper__(Aspect_ColorPixel self, Aspect_ColorPixel other) -> bool"""
         return _Aspect.Aspect_ColorPixel___eq_wrapper__(self, *args)
 
@@ -7112,7 +7474,7 @@ class Aspect_ColorPixel(Aspect_Pixel):
         except:
             return False
 
-    def IsNotEqual(self, *args) -> "Standard_Boolean" :
+    def IsNotEqual(self, *args):
         """
         :param Other:
         :type Other: Aspect_ColorPixel &
@@ -7121,7 +7483,7 @@ class Aspect_ColorPixel(Aspect_Pixel):
         """
         return _Aspect.Aspect_ColorPixel_IsNotEqual(self, *args)
 
-    def __ne_wrapper__(self, *args) -> "bool" :
+    def __ne_wrapper__(self, *args):
         """__ne_wrapper__(Aspect_ColorPixel self, Aspect_ColorPixel other) -> bool"""
         return _Aspect.Aspect_ColorPixel___ne_wrapper__(self, *args)
 
@@ -7131,14 +7493,14 @@ class Aspect_ColorPixel(Aspect_Pixel):
         except:
             return True
 
-    def _CSFDB_GetAspect_ColorPixelmyColor(self, *args) -> "Quantity_Color const &" :
+    def _CSFDB_GetAspect_ColorPixelmyColor(self):
         """
         :rtype: Quantity_Color
 
         """
-        return _Aspect.Aspect_ColorPixel__CSFDB_GetAspect_ColorPixelmyColor(self, *args)
+        return _Aspect.Aspect_ColorPixel__CSFDB_GetAspect_ColorPixelmyColor(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Aspect_ColorPixel self)"""
         return _Aspect.Aspect_ColorPixel__kill_pointed(self)
 
@@ -7172,9 +7534,9 @@ class Aspect_ColorRampColorMap(Aspect_ColorMap):
         * Create a Color Ramp Colormap starting from Black at //!	 basepixel to color at basepixel+dimension-1.
 
         :param basepixel:
-        :type basepixel: int
+        :type basepixel: Standard_Integer
         :param dimension:
-        :type dimension: int
+        :type dimension: Standard_Integer
         :param color:
         :type color: Quantity_Color &
         :rtype: None
@@ -7182,23 +7544,23 @@ class Aspect_ColorRampColorMap(Aspect_ColorMap):
         * Create a Color Ramp Colormap starting from Black at //!	 basepixel to color at basepixel+dimension-1.
 
         :param basepixel:
-        :type basepixel: int
+        :type basepixel: Standard_Integer
         :param dimension:
-        :type dimension: int
+        :type dimension: Standard_Integer
         :param colorName:
         :type colorName: Quantity_NameOfColor
         :rtype: None
 
         """
         _Aspect.Aspect_ColorRampColorMap_swiginit(self,_Aspect.new_Aspect_ColorRampColorMap(*args))
-    def ColorRampDefinition(self, *args) -> "void" :
+    def ColorRampDefinition(self, *args):
         """
         * Get Color Ramp Colormap definition .
 
         :param basepixel:
-        :type basepixel: int &
+        :type basepixel: Standard_Integer &
         :param dimension:
-        :type dimension: int &
+        :type dimension: Standard_Integer &
         :param color:
         :type color: Quantity_Color &
         :rtype: None
@@ -7206,11 +7568,11 @@ class Aspect_ColorRampColorMap(Aspect_ColorMap):
         """
         return _Aspect.Aspect_ColorRampColorMap_ColorRampDefinition(self, *args)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Aspect_ColorRampColorMap self)"""
         return _Aspect.Aspect_ColorRampColorMap__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Aspect_ColorRampColorMap" :
+    def GetHandle(self):
         """GetHandle(Aspect_ColorRampColorMap self) -> Handle_Aspect_ColorRampColorMap"""
         return _Aspect.Aspect_ColorRampColorMap_GetHandle(self)
 
@@ -7249,22 +7611,22 @@ Handle_Aspect_ColorRampColorMap._kill_pointed = new_instancemethod(_Aspect.Handl
 Handle_Aspect_ColorRampColorMap_swigregister = _Aspect.Handle_Aspect_ColorRampColorMap_swigregister
 Handle_Aspect_ColorRampColorMap_swigregister(Handle_Aspect_ColorRampColorMap)
 
-def Handle_Aspect_ColorRampColorMap_DownCast(*args) -> "Handle_Aspect_ColorRampColorMap const" :
+def Handle_Aspect_ColorRampColorMap_DownCast(*args):
   return _Aspect.Handle_Aspect_ColorRampColorMap_DownCast(*args)
 Handle_Aspect_ColorRampColorMap_DownCast = _Aspect.Handle_Aspect_ColorRampColorMap_DownCast
 
 class Aspect_GenericColorMap(Aspect_ColorMap):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         * Creates a generic ColorMap .
 
         :rtype: None
 
         """
-        _Aspect.Aspect_GenericColorMap_swiginit(self,_Aspect.new_Aspect_GenericColorMap(*args))
-    def AddEntry(self, *args) -> "Standard_Integer" :
+        _Aspect.Aspect_GenericColorMap_swiginit(self,_Aspect.new_Aspect_GenericColorMap())
+    def AddEntry(self, *args):
         """
         * Adds an entry in the color map <self>. Warning: Raises BadAccess if the ColorMapEntry index is alreadry defined.
 
@@ -7281,22 +7643,22 @@ class Aspect_GenericColorMap(Aspect_ColorMap):
         """
         return _Aspect.Aspect_GenericColorMap_AddEntry(self, *args)
 
-    def RemoveEntry(self, *args) -> "void" :
+    def RemoveEntry(self, *args):
         """
         * Remove the ColorMapEntry at position index in the ColorMap Warning: Raises BadAccess if the index is not defined in the //!	 ColorMap.
 
         :param AColorMapEntryIndex:
-        :type AColorMapEntryIndex: int
+        :type AColorMapEntryIndex: Standard_Integer
         :rtype: None
 
         """
         return _Aspect.Aspect_GenericColorMap_RemoveEntry(self, *args)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Aspect_GenericColorMap self)"""
         return _Aspect.Aspect_GenericColorMap__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Aspect_GenericColorMap" :
+    def GetHandle(self):
         """GetHandle(Aspect_GenericColorMap self) -> Handle_Aspect_GenericColorMap"""
         return _Aspect.Aspect_GenericColorMap_GetHandle(self)
 
@@ -7336,7 +7698,7 @@ Handle_Aspect_GenericColorMap._kill_pointed = new_instancemethod(_Aspect.Handle_
 Handle_Aspect_GenericColorMap_swigregister = _Aspect.Handle_Aspect_GenericColorMap_swigregister
 Handle_Aspect_GenericColorMap_swigregister(Handle_Aspect_GenericColorMap)
 
-def Handle_Aspect_GenericColorMap_DownCast(*args) -> "Handle_Aspect_GenericColorMap const" :
+def Handle_Aspect_GenericColorMap_DownCast(*args):
   return _Aspect.Handle_Aspect_GenericColorMap_DownCast(*args)
 Handle_Aspect_GenericColorMap_DownCast = _Aspect.Handle_Aspect_GenericColorMap_DownCast
 
@@ -7359,10 +7721,30 @@ class Aspect_GradientBackground(Aspect_Background):
         :type AMethod: Aspect_GradientFillMethod
         :rtype: None
 
+        * Creates a window gradient background with colours <AColor1, AColor2>.
+
+        :param AColor1:
+        :type AColor1: Quantity_Color &
+        :param AColor2:
+        :type AColor2: Quantity_Color &
+        :param AMethod: default value is Aspect_GFM_HOR
+        :type AMethod: Aspect_GradientFillMethod
+        :rtype: None
+
         """
         _Aspect.Aspect_GradientBackground_swiginit(self,_Aspect.new_Aspect_GradientBackground(*args))
-    def SetColors(self, *args) -> "void" :
+    def SetColors(self, *args):
         """
+        * Modifies the colours of the window gradient background <self>.
+
+        :param AColor1:
+        :type AColor1: Quantity_Color &
+        :param AColor2:
+        :type AColor2: Quantity_Color &
+        :param AMethod: default value is Aspect_GFM_HOR
+        :type AMethod: Aspect_GradientFillMethod
+        :rtype: None
+
         * Modifies the colours of the window gradient background <self>.
 
         :param AColor1:
@@ -7376,7 +7758,7 @@ class Aspect_GradientBackground(Aspect_Background):
         """
         return _Aspect.Aspect_GradientBackground_SetColors(self, *args)
 
-    def Colors(self, *args) -> "void" :
+    def Colors(self, *args):
         """
         * Returns colours of the window gradient background <self>.
 
@@ -7389,14 +7771,14 @@ class Aspect_GradientBackground(Aspect_Background):
         """
         return _Aspect.Aspect_GradientBackground_Colors(self, *args)
 
-    def BgGradientFillMethod(self, *args) -> "Aspect_GradientFillMethod" :
+    def BgGradientFillMethod(self):
         """
         * Returns the current gradient background fill mode.
 
         :rtype: Aspect_GradientFillMethod
 
         """
-        return _Aspect.Aspect_GradientBackground_BgGradientFillMethod(self, *args)
+        return _Aspect.Aspect_GradientBackground_BgGradientFillMethod(self)
 
     def __del__(self):
     	try:
@@ -7421,47 +7803,47 @@ class Aspect_IndexPixel(Aspect_Pixel):
         :rtype: None
 
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :rtype: None
 
         """
         _Aspect.Aspect_IndexPixel_swiginit(self,_Aspect.new_Aspect_IndexPixel(*args))
-    def Value(self, *args) -> "Standard_Integer" :
+    def Value(self):
         """
         :rtype: int
 
         """
-        return _Aspect.Aspect_IndexPixel_Value(self, *args)
+        return _Aspect.Aspect_IndexPixel_Value(self)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :rtype: None
 
         """
         return _Aspect.Aspect_IndexPixel_SetValue(self, *args)
 
-    def HashCode(self, *args) -> "Standard_Integer" :
+    def HashCode(self, *args):
         """
         * Returns a hashed value denoting <self>. This value is in  the range 1..<Upper>.
 
         :param Upper:
-        :type Upper: int
+        :type Upper: Standard_Integer
         :rtype: int
 
         """
         return _Aspect.Aspect_IndexPixel_HashCode(self, *args)
 
-    def __hash__(self) -> "Standard_Integer" :
+    def __hash__(self):
         """__hash__(Aspect_IndexPixel self) -> Standard_Integer"""
         return _Aspect.Aspect_IndexPixel___hash__(self)
 
-    def PrintToString(self) -> "std::string" :
+    def PrintToString(self):
         """PrintToString(Aspect_IndexPixel self) -> std::string"""
         return _Aspect.Aspect_IndexPixel_PrintToString(self)
 
-    def IsEqual(self, *args) -> "Standard_Boolean" :
+    def IsEqual(self, *args):
         """
         :param Other:
         :type Other: Aspect_IndexPixel &
@@ -7470,7 +7852,7 @@ class Aspect_IndexPixel(Aspect_Pixel):
         """
         return _Aspect.Aspect_IndexPixel_IsEqual(self, *args)
 
-    def __eq_wrapper__(self, *args) -> "bool" :
+    def __eq_wrapper__(self, *args):
         """__eq_wrapper__(Aspect_IndexPixel self, Aspect_IndexPixel other) -> bool"""
         return _Aspect.Aspect_IndexPixel___eq_wrapper__(self, *args)
 
@@ -7480,7 +7862,7 @@ class Aspect_IndexPixel(Aspect_Pixel):
         except:
             return False
 
-    def IsNotEqual(self, *args) -> "Standard_Boolean" :
+    def IsNotEqual(self, *args):
         """
         :param Other:
         :type Other: Aspect_IndexPixel &
@@ -7489,7 +7871,7 @@ class Aspect_IndexPixel(Aspect_Pixel):
         """
         return _Aspect.Aspect_IndexPixel_IsNotEqual(self, *args)
 
-    def __ne_wrapper__(self, *args) -> "bool" :
+    def __ne_wrapper__(self, *args):
         """__ne_wrapper__(Aspect_IndexPixel self, Aspect_IndexPixel other) -> bool"""
         return _Aspect.Aspect_IndexPixel___ne_wrapper__(self, *args)
 
@@ -7499,23 +7881,23 @@ class Aspect_IndexPixel(Aspect_Pixel):
         except:
             return True
 
-    def _CSFDB_GetAspect_IndexPixelmyIndex(self, *args) -> "Standard_Integer" :
+    def _CSFDB_GetAspect_IndexPixelmyIndex(self):
         """
         :rtype: int
 
         """
-        return _Aspect.Aspect_IndexPixel__CSFDB_GetAspect_IndexPixelmyIndex(self, *args)
+        return _Aspect.Aspect_IndexPixel__CSFDB_GetAspect_IndexPixelmyIndex(self)
 
-    def _CSFDB_SetAspect_IndexPixelmyIndex(self, *args) -> "void" :
+    def _CSFDB_SetAspect_IndexPixelmyIndex(self, *args):
         """
         :param p:
-        :type p: int
+        :type p: Standard_Integer
         :rtype: None
 
         """
         return _Aspect.Aspect_IndexPixel__CSFDB_SetAspect_IndexPixelmyIndex(self, *args)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Aspect_IndexPixel self)"""
         return _Aspect.Aspect_IndexPixel__kill_pointed(self)
 
@@ -7565,9 +7947,99 @@ class Aspect_RectangularGrid(Aspect_Grid):
         :type aRotationAngle: Quantity_PlaneAngle
         :rtype: None
 
+        * creates a new grid. By default this grid is not active. The first angle is given relatively to the horizontal. The second angle is given relatively to the vertical.
+
+        :param aXStep:
+        :type aXStep: Quantity_Length
+        :param aYStep:
+        :type aYStep: Quantity_Length
+        :param anXOrigin: default value is 0
+        :type anXOrigin: Quantity_Length
+        :param anYOrigin: default value is 0
+        :type anYOrigin: Quantity_Length
+        :param aFirstAngle: default value is 0
+        :type aFirstAngle: Quantity_PlaneAngle
+        :param aSecondAngle: default value is 0
+        :type aSecondAngle: Quantity_PlaneAngle
+        :param aRotationAngle: default value is 0
+        :type aRotationAngle: Quantity_PlaneAngle
+        :rtype: None
+
+        * creates a new grid. By default this grid is not active. The first angle is given relatively to the horizontal. The second angle is given relatively to the vertical.
+
+        :param aXStep:
+        :type aXStep: Quantity_Length
+        :param aYStep:
+        :type aYStep: Quantity_Length
+        :param anXOrigin: default value is 0
+        :type anXOrigin: Quantity_Length
+        :param anYOrigin: default value is 0
+        :type anYOrigin: Quantity_Length
+        :param aFirstAngle: default value is 0
+        :type aFirstAngle: Quantity_PlaneAngle
+        :param aSecondAngle: default value is 0
+        :type aSecondAngle: Quantity_PlaneAngle
+        :param aRotationAngle: default value is 0
+        :type aRotationAngle: Quantity_PlaneAngle
+        :rtype: None
+
+        * creates a new grid. By default this grid is not active. The first angle is given relatively to the horizontal. The second angle is given relatively to the vertical.
+
+        :param aXStep:
+        :type aXStep: Quantity_Length
+        :param aYStep:
+        :type aYStep: Quantity_Length
+        :param anXOrigin: default value is 0
+        :type anXOrigin: Quantity_Length
+        :param anYOrigin: default value is 0
+        :type anYOrigin: Quantity_Length
+        :param aFirstAngle: default value is 0
+        :type aFirstAngle: Quantity_PlaneAngle
+        :param aSecondAngle: default value is 0
+        :type aSecondAngle: Quantity_PlaneAngle
+        :param aRotationAngle: default value is 0
+        :type aRotationAngle: Quantity_PlaneAngle
+        :rtype: None
+
+        * creates a new grid. By default this grid is not active. The first angle is given relatively to the horizontal. The second angle is given relatively to the vertical.
+
+        :param aXStep:
+        :type aXStep: Quantity_Length
+        :param aYStep:
+        :type aYStep: Quantity_Length
+        :param anXOrigin: default value is 0
+        :type anXOrigin: Quantity_Length
+        :param anYOrigin: default value is 0
+        :type anYOrigin: Quantity_Length
+        :param aFirstAngle: default value is 0
+        :type aFirstAngle: Quantity_PlaneAngle
+        :param aSecondAngle: default value is 0
+        :type aSecondAngle: Quantity_PlaneAngle
+        :param aRotationAngle: default value is 0
+        :type aRotationAngle: Quantity_PlaneAngle
+        :rtype: None
+
+        * creates a new grid. By default this grid is not active. The first angle is given relatively to the horizontal. The second angle is given relatively to the vertical.
+
+        :param aXStep:
+        :type aXStep: Quantity_Length
+        :param aYStep:
+        :type aYStep: Quantity_Length
+        :param anXOrigin: default value is 0
+        :type anXOrigin: Quantity_Length
+        :param anYOrigin: default value is 0
+        :type anYOrigin: Quantity_Length
+        :param aFirstAngle: default value is 0
+        :type aFirstAngle: Quantity_PlaneAngle
+        :param aSecondAngle: default value is 0
+        :type aSecondAngle: Quantity_PlaneAngle
+        :param aRotationAngle: default value is 0
+        :type aRotationAngle: Quantity_PlaneAngle
+        :rtype: None
+
         """
         _Aspect.Aspect_RectangularGrid_swiginit(self,_Aspect.new_Aspect_RectangularGrid(*args))
-    def SetXStep(self, *args) -> "void" :
+    def SetXStep(self, *args):
         """
         * defines the x step of the grid.
 
@@ -7578,7 +8050,7 @@ class Aspect_RectangularGrid(Aspect_Grid):
         """
         return _Aspect.Aspect_RectangularGrid_SetXStep(self, *args)
 
-    def SetYStep(self, *args) -> "void" :
+    def SetYStep(self, *args):
         """
         * defines the y step of the grid.
 
@@ -7589,7 +8061,7 @@ class Aspect_RectangularGrid(Aspect_Grid):
         """
         return _Aspect.Aspect_RectangularGrid_SetYStep(self, *args)
 
-    def SetAngle(self, *args) -> "void" :
+    def SetAngle(self, *args):
         """
         * defines the angle of the second network the fist angle is given relatively to the horizontal. the second angle is given relatively to the vertical.
 
@@ -7602,7 +8074,7 @@ class Aspect_RectangularGrid(Aspect_Grid):
         """
         return _Aspect.Aspect_RectangularGrid_SetAngle(self, *args)
 
-    def SetGridValues(self, *args) -> "void" :
+    def SetGridValues(self, *args):
         """
         :param XOrigin:
         :type XOrigin: Quantity_Length
@@ -7619,47 +8091,47 @@ class Aspect_RectangularGrid(Aspect_Grid):
         """
         return _Aspect.Aspect_RectangularGrid_SetGridValues(self, *args)
 
-    def XStep(self, *args) -> "Quantity_Length" :
+    def XStep(self):
         """
         * returns the x step of the grid.
 
         :rtype: Quantity_Length
 
         """
-        return _Aspect.Aspect_RectangularGrid_XStep(self, *args)
+        return _Aspect.Aspect_RectangularGrid_XStep(self)
 
-    def YStep(self, *args) -> "Quantity_Length" :
+    def YStep(self):
         """
         * returns the x step of the grid.
 
         :rtype: Quantity_Length
 
         """
-        return _Aspect.Aspect_RectangularGrid_YStep(self, *args)
+        return _Aspect.Aspect_RectangularGrid_YStep(self)
 
-    def FirstAngle(self, *args) -> "Quantity_PlaneAngle" :
+    def FirstAngle(self):
         """
         * returns the x Angle of the grid, relatively to the horizontal.
 
         :rtype: Quantity_PlaneAngle
 
         """
-        return _Aspect.Aspect_RectangularGrid_FirstAngle(self, *args)
+        return _Aspect.Aspect_RectangularGrid_FirstAngle(self)
 
-    def SecondAngle(self, *args) -> "Quantity_PlaneAngle" :
+    def SecondAngle(self):
         """
         * returns the y Angle of the grid, relatively to the vertical.
 
         :rtype: Quantity_PlaneAngle
 
         """
-        return _Aspect.Aspect_RectangularGrid_SecondAngle(self, *args)
+        return _Aspect.Aspect_RectangularGrid_SecondAngle(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Aspect_RectangularGrid self)"""
         return _Aspect.Aspect_RectangularGrid__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Aspect_RectangularGrid" :
+    def GetHandle(self):
         """GetHandle(Aspect_RectangularGrid self) -> Handle_Aspect_RectangularGrid"""
         return _Aspect.Aspect_RectangularGrid_GetHandle(self)
 
@@ -7705,7 +8177,7 @@ Handle_Aspect_RectangularGrid._kill_pointed = new_instancemethod(_Aspect.Handle_
 Handle_Aspect_RectangularGrid_swigregister = _Aspect.Handle_Aspect_RectangularGrid_swigregister
 Handle_Aspect_RectangularGrid_swigregister(Handle_Aspect_RectangularGrid)
 
-def Handle_Aspect_RectangularGrid_DownCast(*args) -> "Handle_Aspect_RectangularGrid const" :
+def Handle_Aspect_RectangularGrid_DownCast(*args):
   return _Aspect.Handle_Aspect_RectangularGrid_DownCast(*args)
 Handle_Aspect_RectangularGrid_DownCast = _Aspect.Handle_Aspect_RectangularGrid_DownCast
 
@@ -7713,34 +8185,50 @@ class Aspect_WindowDriver(Aspect_Driver):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def BeginDraw(self, *args) -> "void" :
+    def BeginDraw(self, *args):
         """
         * Begin graphics and drawn directly to the Window or Pixmap if
 
         :param DoubleBuffer: default value is Standard_True
         :type DoubleBuffer: bool
         :param aRetainBuffer: default value is 0
-        :type aRetainBuffer: int
+        :type aRetainBuffer: Standard_Integer
+        :rtype: void
+
+        * Begin graphics and drawn directly to the Window or Pixmap if
+
+        :param DoubleBuffer: default value is Standard_True
+        :type DoubleBuffer: bool
+        :param aRetainBuffer: default value is 0
+        :type aRetainBuffer: Standard_Integer
+        :rtype: void
+
+        * Begin graphics and drawn directly to the Window or Pixmap if
+
+        :param DoubleBuffer: default value is Standard_True
+        :type DoubleBuffer: bool
+        :param aRetainBuffer: default value is 0
+        :type aRetainBuffer: Standard_Integer
         :rtype: void
 
         """
         return _Aspect.Aspect_WindowDriver_BeginDraw(self, *args)
 
-    def ResizeSpace(self, *args) -> "Aspect_TypeOfResize" :
+    def ResizeSpace(self):
         """
         :rtype: Aspect_TypeOfResize
 
         """
-        return _Aspect.Aspect_WindowDriver_ResizeSpace(self, *args)
+        return _Aspect.Aspect_WindowDriver_ResizeSpace(self)
 
-    def Window(self, *args) -> "Handle_Aspect_Window" :
+    def Window(self):
         """
         :rtype: Handle_Aspect_Window
 
         """
-        return _Aspect.Aspect_WindowDriver_Window(self, *args)
+        return _Aspect.Aspect_WindowDriver_Window(self)
 
-    def SetDrawMode(self, *args) -> "void" :
+    def SetDrawMode(self, *args):
         """
         * Change the current drawing mode of the Driver 	 XW_REPLACE : the primitive is drawn with his defined color. //!	 XW_ERASE : the primitive is erased from the window. //!	 XW_XOR : the primitive is xored to the window. //!	 XW_XORLIGHT: the primitive is xored depending of the current //!			highlight and background colors.
 
@@ -7751,22 +8239,130 @@ class Aspect_WindowDriver(Aspect_Driver):
         """
         return _Aspect.Aspect_WindowDriver_SetDrawMode(self, *args)
 
-    def OpenBuffer(self, *args) -> "Standard_Boolean" :
+    def OpenBuffer(self, *args):
         """
         * Allocate the retain buffer <aRetainBuffer> , Defines the DWU coordinates of the pivot point for all primitives
 
         :param aRetainBuffer:
-        :type aRetainBuffer: int
+        :type aRetainBuffer: Standard_Integer
         :param aPivotX: default value is 0.0
         :type aPivotX: Standard_ShortReal
         :param aPivotY: default value is 0.0
         :type aPivotY: Standard_ShortReal
         :param aWidthIndex: default value is 0
-        :type aWidthIndex: int
+        :type aWidthIndex: Standard_Integer
         :param aColorIndex: default value is 0
-        :type aColorIndex: int
+        :type aColorIndex: Standard_Integer
         :param aFontIndex: default value is 0
-        :type aFontIndex: int
+        :type aFontIndex: Standard_Integer
+        :param aDrawMode: default value is Aspect_TODM_REPLACE
+        :type aDrawMode: Aspect_TypeOfDrawMode
+        :rtype: bool
+
+        * Allocate the retain buffer <aRetainBuffer> , Defines the DWU coordinates of the pivot point for all primitives
+
+        :param aRetainBuffer:
+        :type aRetainBuffer: Standard_Integer
+        :param aPivotX: default value is 0.0
+        :type aPivotX: Standard_ShortReal
+        :param aPivotY: default value is 0.0
+        :type aPivotY: Standard_ShortReal
+        :param aWidthIndex: default value is 0
+        :type aWidthIndex: Standard_Integer
+        :param aColorIndex: default value is 0
+        :type aColorIndex: Standard_Integer
+        :param aFontIndex: default value is 0
+        :type aFontIndex: Standard_Integer
+        :param aDrawMode: default value is Aspect_TODM_REPLACE
+        :type aDrawMode: Aspect_TypeOfDrawMode
+        :rtype: bool
+
+        * Allocate the retain buffer <aRetainBuffer> , Defines the DWU coordinates of the pivot point for all primitives
+
+        :param aRetainBuffer:
+        :type aRetainBuffer: Standard_Integer
+        :param aPivotX: default value is 0.0
+        :type aPivotX: Standard_ShortReal
+        :param aPivotY: default value is 0.0
+        :type aPivotY: Standard_ShortReal
+        :param aWidthIndex: default value is 0
+        :type aWidthIndex: Standard_Integer
+        :param aColorIndex: default value is 0
+        :type aColorIndex: Standard_Integer
+        :param aFontIndex: default value is 0
+        :type aFontIndex: Standard_Integer
+        :param aDrawMode: default value is Aspect_TODM_REPLACE
+        :type aDrawMode: Aspect_TypeOfDrawMode
+        :rtype: bool
+
+        * Allocate the retain buffer <aRetainBuffer> , Defines the DWU coordinates of the pivot point for all primitives
+
+        :param aRetainBuffer:
+        :type aRetainBuffer: Standard_Integer
+        :param aPivotX: default value is 0.0
+        :type aPivotX: Standard_ShortReal
+        :param aPivotY: default value is 0.0
+        :type aPivotY: Standard_ShortReal
+        :param aWidthIndex: default value is 0
+        :type aWidthIndex: Standard_Integer
+        :param aColorIndex: default value is 0
+        :type aColorIndex: Standard_Integer
+        :param aFontIndex: default value is 0
+        :type aFontIndex: Standard_Integer
+        :param aDrawMode: default value is Aspect_TODM_REPLACE
+        :type aDrawMode: Aspect_TypeOfDrawMode
+        :rtype: bool
+
+        * Allocate the retain buffer <aRetainBuffer> , Defines the DWU coordinates of the pivot point for all primitives
+
+        :param aRetainBuffer:
+        :type aRetainBuffer: Standard_Integer
+        :param aPivotX: default value is 0.0
+        :type aPivotX: Standard_ShortReal
+        :param aPivotY: default value is 0.0
+        :type aPivotY: Standard_ShortReal
+        :param aWidthIndex: default value is 0
+        :type aWidthIndex: Standard_Integer
+        :param aColorIndex: default value is 0
+        :type aColorIndex: Standard_Integer
+        :param aFontIndex: default value is 0
+        :type aFontIndex: Standard_Integer
+        :param aDrawMode: default value is Aspect_TODM_REPLACE
+        :type aDrawMode: Aspect_TypeOfDrawMode
+        :rtype: bool
+
+        * Allocate the retain buffer <aRetainBuffer> , Defines the DWU coordinates of the pivot point for all primitives
+
+        :param aRetainBuffer:
+        :type aRetainBuffer: Standard_Integer
+        :param aPivotX: default value is 0.0
+        :type aPivotX: Standard_ShortReal
+        :param aPivotY: default value is 0.0
+        :type aPivotY: Standard_ShortReal
+        :param aWidthIndex: default value is 0
+        :type aWidthIndex: Standard_Integer
+        :param aColorIndex: default value is 0
+        :type aColorIndex: Standard_Integer
+        :param aFontIndex: default value is 0
+        :type aFontIndex: Standard_Integer
+        :param aDrawMode: default value is Aspect_TODM_REPLACE
+        :type aDrawMode: Aspect_TypeOfDrawMode
+        :rtype: bool
+
+        * Allocate the retain buffer <aRetainBuffer> , Defines the DWU coordinates of the pivot point for all primitives
+
+        :param aRetainBuffer:
+        :type aRetainBuffer: Standard_Integer
+        :param aPivotX: default value is 0.0
+        :type aPivotX: Standard_ShortReal
+        :param aPivotY: default value is 0.0
+        :type aPivotY: Standard_ShortReal
+        :param aWidthIndex: default value is 0
+        :type aWidthIndex: Standard_Integer
+        :param aColorIndex: default value is 0
+        :type aColorIndex: Standard_Integer
+        :param aFontIndex: default value is 0
+        :type aFontIndex: Standard_Integer
         :param aDrawMode: default value is Aspect_TODM_REPLACE
         :type aDrawMode: Aspect_TypeOfDrawMode
         :rtype: bool
@@ -7774,56 +8370,76 @@ class Aspect_WindowDriver(Aspect_Driver):
         """
         return _Aspect.Aspect_WindowDriver_OpenBuffer(self, *args)
 
-    def CloseBuffer(self, *args) -> "void" :
+    def CloseBuffer(self, *args):
         """
         * Clear & Deallocate the retain buffer <aRetainBuffer>.
 
         :param aRetainBuffer:
-        :type aRetainBuffer: int
+        :type aRetainBuffer: Standard_Integer
         :rtype: void
 
         """
         return _Aspect.Aspect_WindowDriver_CloseBuffer(self, *args)
 
-    def ClearBuffer(self, *args) -> "void" :
+    def ClearBuffer(self, *args):
         """
         * Erase & Clear ALL primitives retains in the buffer <aRetainBuffer>.
 
         :param aRetainBuffer:
-        :type aRetainBuffer: int
+        :type aRetainBuffer: Standard_Integer
         :rtype: void
 
         """
         return _Aspect.Aspect_WindowDriver_ClearBuffer(self, *args)
 
-    def DrawBuffer(self, *args) -> "void" :
+    def DrawBuffer(self, *args):
         """
         * Draw ALL primitives retains in the buffer <aRetainBuffer>. Warning: Note that the aspect of a retain buffer drawing is mono-colored with the current buffer Attributes and Depending of the DoubleBuffer state flag at the BeginDraw() buffer time, when DB is True,an XOR method is use for drawing and erasing buffers in the same way.In this case,some color side effect can occurs depending of the traversal primitive colors and the supported hardware. when DB is False and the background drawing has been generated with DB at True,no color side effect occurs because the DB is used for restoring the drawing context at EraseBuffer() time,this is more powerfull for the drawing quality excepted for large buffers (flicking) .
 
         :param aRetainBuffer:
-        :type aRetainBuffer: int
+        :type aRetainBuffer: Standard_Integer
         :rtype: void
 
         """
         return _Aspect.Aspect_WindowDriver_DrawBuffer(self, *args)
 
-    def EraseBuffer(self, *args) -> "void" :
+    def EraseBuffer(self, *args):
         """
         * Erase ALL primitives retains in the buffer <aRetainBuffer>.
 
         :param aRetainBuffer:
-        :type aRetainBuffer: int
+        :type aRetainBuffer: Standard_Integer
         :rtype: void
 
         """
         return _Aspect.Aspect_WindowDriver_EraseBuffer(self, *args)
 
-    def MoveBuffer(self, *args) -> "void" :
+    def MoveBuffer(self, *args):
         """
         * Erase , Translate and reDraw ALL primitives retains in the buffer
 
         :param aRetainBuffer:
-        :type aRetainBuffer: int
+        :type aRetainBuffer: Standard_Integer
+        :param aPivotX: default value is 0.0
+        :type aPivotX: Standard_ShortReal
+        :param aPivotY: default value is 0.0
+        :type aPivotY: Standard_ShortReal
+        :rtype: void
+
+        * Erase , Translate and reDraw ALL primitives retains in the buffer
+
+        :param aRetainBuffer:
+        :type aRetainBuffer: Standard_Integer
+        :param aPivotX: default value is 0.0
+        :type aPivotX: Standard_ShortReal
+        :param aPivotY: default value is 0.0
+        :type aPivotY: Standard_ShortReal
+        :rtype: void
+
+        * Erase , Translate and reDraw ALL primitives retains in the buffer
+
+        :param aRetainBuffer:
+        :type aRetainBuffer: Standard_Integer
         :param aPivotX: default value is 0.0
         :type aPivotX: Standard_ShortReal
         :param aPivotY: default value is 0.0
@@ -7833,12 +8449,32 @@ class Aspect_WindowDriver(Aspect_Driver):
         """
         return _Aspect.Aspect_WindowDriver_MoveBuffer(self, *args)
 
-    def ScaleBuffer(self, *args) -> "void" :
+    def ScaleBuffer(self, *args):
         """
         * Erase , Scale the buffer from the Pivot point and reDraw ALL primitives
 
         :param aRetainBuffer:
-        :type aRetainBuffer: int
+        :type aRetainBuffer: Standard_Integer
+        :param aScaleX: default value is 1.0
+        :type aScaleX: Quantity_Factor
+        :param aScaleY: default value is 1.0
+        :type aScaleY: Quantity_Factor
+        :rtype: void
+
+        * Erase , Scale the buffer from the Pivot point and reDraw ALL primitives
+
+        :param aRetainBuffer:
+        :type aRetainBuffer: Standard_Integer
+        :param aScaleX: default value is 1.0
+        :type aScaleX: Quantity_Factor
+        :param aScaleY: default value is 1.0
+        :type aScaleY: Quantity_Factor
+        :rtype: void
+
+        * Erase , Scale the buffer from the Pivot point and reDraw ALL primitives
+
+        :param aRetainBuffer:
+        :type aRetainBuffer: Standard_Integer
         :param aScaleX: default value is 1.0
         :type aScaleX: Quantity_Factor
         :param aScaleY: default value is 1.0
@@ -7848,12 +8484,20 @@ class Aspect_WindowDriver(Aspect_Driver):
         """
         return _Aspect.Aspect_WindowDriver_ScaleBuffer(self, *args)
 
-    def RotateBuffer(self, *args) -> "void" :
+    def RotateBuffer(self, *args):
         """
         * Erase , Rotate the buffer from the Pivot point and reDraw ALL primitives
 
         :param aRetainBuffer:
-        :type aRetainBuffer: int
+        :type aRetainBuffer: Standard_Integer
+        :param anAngle: default value is 0.0
+        :type anAngle: Quantity_PlaneAngle
+        :rtype: void
+
+        * Erase , Rotate the buffer from the Pivot point and reDraw ALL primitives
+
+        :param aRetainBuffer:
+        :type aRetainBuffer: Standard_Integer
         :param anAngle: default value is 0.0
         :type anAngle: Quantity_PlaneAngle
         :rtype: void
@@ -7861,45 +8505,45 @@ class Aspect_WindowDriver(Aspect_Driver):
         """
         return _Aspect.Aspect_WindowDriver_RotateBuffer(self, *args)
 
-    def BufferIsOpen(self, *args) -> "Standard_Boolean" :
+    def BufferIsOpen(self, *args):
         """
         * Returns True if the retain buffer <aRetainBuffer> is enabled
 
         :param aRetainBuffer:
-        :type aRetainBuffer: int
+        :type aRetainBuffer: Standard_Integer
         :rtype: bool
 
         """
         return _Aspect.Aspect_WindowDriver_BufferIsOpen(self, *args)
 
-    def BufferIsEmpty(self, *args) -> "Standard_Boolean" :
+    def BufferIsEmpty(self, *args):
         """
         * Returns True if the retain buffer has not been opened or empty.  Returns False if a lot of primitives have been stored inside  because a BeginDraw(..,<aRetainBuffer>) has been done previously.
 
         :param aRetainBuffer:
-        :type aRetainBuffer: int
+        :type aRetainBuffer: Standard_Integer
         :rtype: bool
 
         """
         return _Aspect.Aspect_WindowDriver_BufferIsEmpty(self, *args)
 
-    def BufferIsDrawn(self, *args) -> "Standard_Boolean" :
+    def BufferIsDrawn(self, *args):
         """
         * Returns True if the retain buffer s actually displayed at screen.
 
         :param aRetainBuffer:
-        :type aRetainBuffer: int
+        :type aRetainBuffer: Standard_Integer
         :rtype: bool
 
         """
         return _Aspect.Aspect_WindowDriver_BufferIsDrawn(self, *args)
 
-    def AngleOfBuffer(self, *args) -> "void" :
+    def AngleOfBuffer(self, *args):
         """
         * Returns the current buffer rotate angle from the X axis.
 
         :param aRetainBuffer:
-        :type aRetainBuffer: int
+        :type aRetainBuffer: Standard_Integer
         :param anAngle:
         :type anAngle: Quantity_PlaneAngle &
         :rtype: void
@@ -7907,12 +8551,12 @@ class Aspect_WindowDriver(Aspect_Driver):
         """
         return _Aspect.Aspect_WindowDriver_AngleOfBuffer(self, *args)
 
-    def ScaleOfBuffer(self, *args) -> "void" :
+    def ScaleOfBuffer(self, *args):
         """
         * Returns the current buffer scale factors.
 
         :param aRetainBuffer:
-        :type aRetainBuffer: int
+        :type aRetainBuffer: Standard_Integer
         :param aScaleX:
         :type aScaleX: Quantity_Factor &
         :param aScaleY:
@@ -7922,12 +8566,12 @@ class Aspect_WindowDriver(Aspect_Driver):
         """
         return _Aspect.Aspect_WindowDriver_ScaleOfBuffer(self, *args)
 
-    def PositionOfBuffer(self, *args) -> "void" :
+    def PositionOfBuffer(self, *args):
         """
         * Returns the current buffer position.
 
         :param aRetainBuffer:
-        :type aRetainBuffer: int
+        :type aRetainBuffer: Standard_Integer
         :param aPivotX:
         :type aPivotX: Standard_ShortReal &
         :param aPivotY:
@@ -7937,7 +8581,7 @@ class Aspect_WindowDriver(Aspect_Driver):
         """
         return _Aspect.Aspect_WindowDriver_PositionOfBuffer(self, *args)
 
-    def TextSize(self, *args) -> "void" :
+    def TextSize(self, *args):
         """
         * Returns the TEXT size in DWU space depending of the required FontIndex if aFontIndex is >= 0 or the current FontIndex if < 0 (default).
 
@@ -7947,8 +8591,20 @@ class Aspect_WindowDriver(Aspect_Driver):
         :type aWidth: Standard_ShortReal &
         :param aHeight:
         :type aHeight: Standard_ShortReal &
-        :param aFontIndex: default value is -1
-        :type aFontIndex: int
+        :param aFontIndex: default value is - 1
+        :type aFontIndex: Standard_Integer
+        :rtype: void
+
+        * Returns the TEXT size in DWU space depending of the required FontIndex if aFontIndex is >= 0 or the current FontIndex if < 0 (default).
+
+        :param aText:
+        :type aText: TCollection_ExtendedString &
+        :param aWidth:
+        :type aWidth: Standard_ShortReal &
+        :param aHeight:
+        :type aHeight: Standard_ShortReal &
+        :param aFontIndex: default value is - 1
+        :type aFontIndex: Standard_Integer
         :rtype: void
 
         * Returns the TEXT size and offsets //!	 in DWU space depending of the required FontIndex if aFontIndex is >= 0 or the current FontIndex if < 0 (default).
@@ -7963,14 +8619,30 @@ class Aspect_WindowDriver(Aspect_Driver):
         :type anXoffset: Standard_ShortReal &
         :param anYoffset:
         :type anYoffset: Standard_ShortReal &
-        :param aFontIndex: default value is -1
-        :type aFontIndex: int
+        :param aFontIndex: default value is - 1
+        :type aFontIndex: Standard_Integer
+        :rtype: void
+
+        * Returns the TEXT size and offsets //!	 in DWU space depending of the required FontIndex if aFontIndex is >= 0 or the current FontIndex if < 0 (default).
+
+        :param aText:
+        :type aText: TCollection_ExtendedString &
+        :param aWidth:
+        :type aWidth: Standard_ShortReal &
+        :param aHeight:
+        :type aHeight: Standard_ShortReal &
+        :param anXoffset:
+        :type anXoffset: Standard_ShortReal &
+        :param anYoffset:
+        :type anYoffset: Standard_ShortReal &
+        :param aFontIndex: default value is - 1
+        :type aFontIndex: Standard_Integer
         :rtype: void
 
         """
         return _Aspect.Aspect_WindowDriver_TextSize(self, *args)
 
-    def FontSize(self, *args) -> "char *" :
+    def FontSize(self, *args):
         """
         * Returns the font string,slant,size and
 
@@ -7980,138 +8652,150 @@ class Aspect_WindowDriver(Aspect_Driver):
         :type aSize: Standard_ShortReal &
         :param aBheight:
         :type aBheight: Standard_ShortReal &
-        :param aFontIndex: default value is -1
-        :type aFontIndex: int
+        :param aFontIndex: default value is - 1
+        :type aFontIndex: Standard_Integer
+        :rtype: char *
+
+        * Returns the font string,slant,size and
+
+        :param aSlant:
+        :type aSlant: Quantity_PlaneAngle &
+        :param aSize:
+        :type aSize: Standard_ShortReal &
+        :param aBheight:
+        :type aBheight: Standard_ShortReal &
+        :param aFontIndex: default value is - 1
+        :type aFontIndex: Standard_Integer
         :rtype: char *
 
         """
         return _Aspect.Aspect_WindowDriver_FontSize(self, *args)
 
-    def ColorBoundIndexs(self, *args) -> "void" :
+    def ColorBoundIndexs(self):
         """
         * Returns the min and max driver virtual color indexs.
 
         :param aMinIndex:
-        :type aMinIndex: int &
+        :type aMinIndex: Standard_Integer &
         :param aMaxIndex:
-        :type aMaxIndex: int &
+        :type aMaxIndex: Standard_Integer &
         :rtype: void
 
         """
-        return _Aspect.Aspect_WindowDriver_ColorBoundIndexs(self, *args)
+        return _Aspect.Aspect_WindowDriver_ColorBoundIndexs(self)
 
-    def LocalColorIndex(self, *args) -> "Standard_Integer" :
+    def LocalColorIndex(self, *args):
         """
         * Returns the local colormap hardware index from a virtual driver color index or returns -1 if the index is not defined.
 
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :rtype: int
 
         """
         return _Aspect.Aspect_WindowDriver_LocalColorIndex(self, *args)
 
-    def FontBoundIndexs(self, *args) -> "void" :
+    def FontBoundIndexs(self):
         """
         * Returns the min and max driver virtual font indexs.
 
         :param aMinIndex:
-        :type aMinIndex: int &
+        :type aMinIndex: Standard_Integer &
         :param aMaxIndex:
-        :type aMaxIndex: int &
+        :type aMaxIndex: Standard_Integer &
         :rtype: void
 
         """
-        return _Aspect.Aspect_WindowDriver_FontBoundIndexs(self, *args)
+        return _Aspect.Aspect_WindowDriver_FontBoundIndexs(self)
 
-    def LocalFontIndex(self, *args) -> "Standard_Integer" :
+    def LocalFontIndex(self, *args):
         """
         * Returns the associated fontmap hardware index from a virtual driver font index or returns -1 if the index is not defined.
 
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :rtype: int
 
         """
         return _Aspect.Aspect_WindowDriver_LocalFontIndex(self, *args)
 
-    def TypeBoundIndexs(self, *args) -> "void" :
+    def TypeBoundIndexs(self):
         """
         * Returns the min and max driver virtual type indexs.
 
         :param aMinIndex:
-        :type aMinIndex: int &
+        :type aMinIndex: Standard_Integer &
         :param aMaxIndex:
-        :type aMaxIndex: int &
+        :type aMaxIndex: Standard_Integer &
         :rtype: void
 
         """
-        return _Aspect.Aspect_WindowDriver_TypeBoundIndexs(self, *args)
+        return _Aspect.Aspect_WindowDriver_TypeBoundIndexs(self)
 
-    def LocalTypeIndex(self, *args) -> "Standard_Integer" :
+    def LocalTypeIndex(self, *args):
         """
         * Returns the associated typemap hardware index from a virtual driver type index or returns -1 if the index is not defined.
 
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :rtype: int
 
         """
         return _Aspect.Aspect_WindowDriver_LocalTypeIndex(self, *args)
 
-    def WidthBoundIndexs(self, *args) -> "void" :
+    def WidthBoundIndexs(self):
         """
         * Returns the min and max driver virtual width indexs.
 
         :param aMinIndex:
-        :type aMinIndex: int &
+        :type aMinIndex: Standard_Integer &
         :param aMaxIndex:
-        :type aMaxIndex: int &
+        :type aMaxIndex: Standard_Integer &
         :rtype: void
 
         """
-        return _Aspect.Aspect_WindowDriver_WidthBoundIndexs(self, *args)
+        return _Aspect.Aspect_WindowDriver_WidthBoundIndexs(self)
 
-    def LocalWidthIndex(self, *args) -> "Standard_Integer" :
+    def LocalWidthIndex(self, *args):
         """
         * Returns the associated widthmap hardware index from a virtual driver width index or returns -1 if the index is not defined.
 
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :rtype: int
 
         """
         return _Aspect.Aspect_WindowDriver_LocalWidthIndex(self, *args)
 
-    def MarkBoundIndexs(self, *args) -> "void" :
+    def MarkBoundIndexs(self):
         """
         * Returns the min and max driver virtual marker indexs.
 
         :param aMinIndex:
-        :type aMinIndex: int &
+        :type aMinIndex: Standard_Integer &
         :param aMaxIndex:
-        :type aMaxIndex: int &
+        :type aMaxIndex: Standard_Integer &
         :rtype: void
 
         """
-        return _Aspect.Aspect_WindowDriver_MarkBoundIndexs(self, *args)
+        return _Aspect.Aspect_WindowDriver_MarkBoundIndexs(self)
 
-    def LocalMarkIndex(self, *args) -> "Standard_Integer" :
+    def LocalMarkIndex(self, *args):
         """
         * Returns the local markmap hardware index from a virtual driver marker index or returns -1 if the index is not defined.
 
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :rtype: int
 
         """
         return _Aspect.Aspect_WindowDriver_LocalMarkIndex(self, *args)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Aspect_WindowDriver self)"""
         return _Aspect.Aspect_WindowDriver__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Aspect_WindowDriver" :
+    def GetHandle(self):
         """GetHandle(Aspect_WindowDriver self) -> Handle_Aspect_WindowDriver"""
         return _Aspect.Aspect_WindowDriver_GetHandle(self)
 
@@ -8179,7 +8863,7 @@ Handle_Aspect_WindowDriver._kill_pointed = new_instancemethod(_Aspect.Handle_Asp
 Handle_Aspect_WindowDriver_swigregister = _Aspect.Handle_Aspect_WindowDriver_swigregister
 Handle_Aspect_WindowDriver_swigregister(Handle_Aspect_WindowDriver)
 
-def Handle_Aspect_WindowDriver_DownCast(*args) -> "Handle_Aspect_WindowDriver const" :
+def Handle_Aspect_WindowDriver_DownCast(*args):
   return _Aspect.Handle_Aspect_WindowDriver_DownCast(*args)
 Handle_Aspect_WindowDriver_DownCast = _Aspect.Handle_Aspect_WindowDriver_DownCast
 

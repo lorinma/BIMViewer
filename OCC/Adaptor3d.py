@@ -122,36 +122,37 @@ import OCC.TopAbs
 import OCC.math
 class Adaptor3d_Curve(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
+    def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def Delete(self, *args) -> "void" :
+    def Delete(self):
         """
         :rtype: void
 
         """
-        return _Adaptor3d.Adaptor3d_Curve_Delete(self, *args)
+        return _Adaptor3d.Adaptor3d_Curve_Delete(self)
 
-    def FirstParameter(self, *args) -> "Standard_Real" :
+    def FirstParameter(self):
         """
         :rtype: float
 
         """
-        return _Adaptor3d.Adaptor3d_Curve_FirstParameter(self, *args)
+        return _Adaptor3d.Adaptor3d_Curve_FirstParameter(self)
 
-    def LastParameter(self, *args) -> "Standard_Real" :
+    def LastParameter(self):
         """
         :rtype: float
 
         """
-        return _Adaptor3d.Adaptor3d_Curve_LastParameter(self, *args)
+        return _Adaptor3d.Adaptor3d_Curve_LastParameter(self)
 
-    def Continuity(self, *args) -> "GeomAbs_Shape" :
+    def Continuity(self):
         """
         :rtype: GeomAbs_Shape
 
         """
-        return _Adaptor3d.Adaptor3d_Curve_Continuity(self, *args)
+        return _Adaptor3d.Adaptor3d_Curve_Continuity(self)
 
-    def NbIntervals(self, *args) -> "Standard_Integer" :
+    def NbIntervals(self, *args):
         """
         * Returns the number of intervals for continuity <S>. May be one if Continuity(me) >= <S>
 
@@ -162,7 +163,7 @@ class Adaptor3d_Curve(object):
         """
         return _Adaptor3d.Adaptor3d_Curve_NbIntervals(self, *args)
 
-    def Intervals(self, *args) -> "void" :
+    def Intervals(self, *args):
         """
         * Stores in <T> the parameters bounding the intervals of continuity <S>.  The array must provide enough room to accomodate for the parameters. i.e. T.Length() > NbIntervals()
 
@@ -175,7 +176,7 @@ class Adaptor3d_Curve(object):
         """
         return _Adaptor3d.Adaptor3d_Curve_Intervals(self, *args)
 
-    def Trim(self, *args) -> "Handle_Adaptor3d_HCurve" :
+    def Trim(self, *args):
         """
         * Returns a curve equivalent of <self> between parameters <First> and <Last>. <Tol> is used to test for 3d points confusion. If <First> >= <Last>
 
@@ -190,28 +191,28 @@ class Adaptor3d_Curve(object):
         """
         return _Adaptor3d.Adaptor3d_Curve_Trim(self, *args)
 
-    def IsClosed(self, *args) -> "Standard_Boolean" :
+    def IsClosed(self):
         """
         :rtype: bool
 
         """
-        return _Adaptor3d.Adaptor3d_Curve_IsClosed(self, *args)
+        return _Adaptor3d.Adaptor3d_Curve_IsClosed(self)
 
-    def IsPeriodic(self, *args) -> "Standard_Boolean" :
+    def IsPeriodic(self):
         """
         :rtype: bool
 
         """
-        return _Adaptor3d.Adaptor3d_Curve_IsPeriodic(self, *args)
+        return _Adaptor3d.Adaptor3d_Curve_IsPeriodic(self)
 
-    def Period(self, *args) -> "Standard_Real" :
+    def Period(self):
         """
         :rtype: float
 
         """
-        return _Adaptor3d.Adaptor3d_Curve_Period(self, *args)
+        return _Adaptor3d.Adaptor3d_Curve_Period(self)
 
-    def Value(self, *args) -> "gp_Pnt" :
+    def Value(self, *args):
         """
         * Computes the point of parameter U on the curve.
 
@@ -222,7 +223,7 @@ class Adaptor3d_Curve(object):
         """
         return _Adaptor3d.Adaptor3d_Curve_Value(self, *args)
 
-    def D0(self, *args) -> "void" :
+    def D0(self, *args):
         """
         * Computes the point of parameter U on the curve.
 
@@ -235,7 +236,7 @@ class Adaptor3d_Curve(object):
         """
         return _Adaptor3d.Adaptor3d_Curve_D0(self, *args)
 
-    def D1(self, *args) -> "void" :
+    def D1(self, *args):
         """
         * Computes the point of parameter U on the curve with its first derivative. Raised if the continuity of the current interval is not C1.
 
@@ -250,7 +251,7 @@ class Adaptor3d_Curve(object):
         """
         return _Adaptor3d.Adaptor3d_Curve_D1(self, *args)
 
-    def D2(self, *args) -> "void" :
+    def D2(self, *args):
         """
         * Returns the point P of parameter U, the first and second derivatives V1 and V2. Raised if the continuity of the current interval is not C2.
 
@@ -267,7 +268,7 @@ class Adaptor3d_Curve(object):
         """
         return _Adaptor3d.Adaptor3d_Curve_D2(self, *args)
 
-    def D3(self, *args) -> "void" :
+    def D3(self, *args):
         """
         * Returns the point P of parameter U, the first, the second and the third derivative. Raised if the continuity of the current interval is not C3.
 
@@ -286,20 +287,20 @@ class Adaptor3d_Curve(object):
         """
         return _Adaptor3d.Adaptor3d_Curve_D3(self, *args)
 
-    def DN(self, *args) -> "gp_Vec" :
+    def DN(self, *args):
         """
         * The returned vector gives the value of the derivative for the order of derivation N. Raised if the continuity of the current interval is not CN. Raised if N < 1.
 
         :param U:
         :type U: float
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :rtype: gp_Vec
 
         """
         return _Adaptor3d.Adaptor3d_Curve_DN(self, *args)
 
-    def Resolution(self, *args) -> "Standard_Real" :
+    def Resolution(self, *args):
         """
         * Returns the parametric resolution corresponding  to the real space resolution <R3d>.
 
@@ -310,94 +311,92 @@ class Adaptor3d_Curve(object):
         """
         return _Adaptor3d.Adaptor3d_Curve_Resolution(self, *args)
 
-    def GetType(self, *args) -> "GeomAbs_CurveType" :
+    def GetType(self):
         """
         * Returns the type of the curve in the current interval : Line, Circle, Ellipse, Hyperbola, Parabola, BezierCurve, BSplineCurve, OtherCurve.
 
         :rtype: GeomAbs_CurveType
 
         """
-        return _Adaptor3d.Adaptor3d_Curve_GetType(self, *args)
+        return _Adaptor3d.Adaptor3d_Curve_GetType(self)
 
-    def Line(self, *args) -> "gp_Lin" :
+    def Line(self):
         """
         :rtype: gp_Lin
 
         """
-        return _Adaptor3d.Adaptor3d_Curve_Line(self, *args)
+        return _Adaptor3d.Adaptor3d_Curve_Line(self)
 
-    def Circle(self, *args) -> "gp_Circ" :
+    def Circle(self):
         """
         :rtype: gp_Circ
 
         """
-        return _Adaptor3d.Adaptor3d_Curve_Circle(self, *args)
+        return _Adaptor3d.Adaptor3d_Curve_Circle(self)
 
-    def Ellipse(self, *args) -> "gp_Elips" :
+    def Ellipse(self):
         """
         :rtype: gp_Elips
 
         """
-        return _Adaptor3d.Adaptor3d_Curve_Ellipse(self, *args)
+        return _Adaptor3d.Adaptor3d_Curve_Ellipse(self)
 
-    def Hyperbola(self, *args) -> "gp_Hypr" :
+    def Hyperbola(self):
         """
         :rtype: gp_Hypr
 
         """
-        return _Adaptor3d.Adaptor3d_Curve_Hyperbola(self, *args)
+        return _Adaptor3d.Adaptor3d_Curve_Hyperbola(self)
 
-    def Parabola(self, *args) -> "gp_Parab" :
+    def Parabola(self):
         """
         :rtype: gp_Parab
 
         """
-        return _Adaptor3d.Adaptor3d_Curve_Parabola(self, *args)
+        return _Adaptor3d.Adaptor3d_Curve_Parabola(self)
 
-    def Degree(self, *args) -> "Standard_Integer" :
+    def Degree(self):
         """
         :rtype: int
 
         """
-        return _Adaptor3d.Adaptor3d_Curve_Degree(self, *args)
+        return _Adaptor3d.Adaptor3d_Curve_Degree(self)
 
-    def IsRational(self, *args) -> "Standard_Boolean" :
+    def IsRational(self):
         """
         :rtype: bool
 
         """
-        return _Adaptor3d.Adaptor3d_Curve_IsRational(self, *args)
+        return _Adaptor3d.Adaptor3d_Curve_IsRational(self)
 
-    def NbPoles(self, *args) -> "Standard_Integer" :
+    def NbPoles(self):
         """
         :rtype: int
 
         """
-        return _Adaptor3d.Adaptor3d_Curve_NbPoles(self, *args)
+        return _Adaptor3d.Adaptor3d_Curve_NbPoles(self)
 
-    def NbKnots(self, *args) -> "Standard_Integer" :
+    def NbKnots(self):
         """
         :rtype: int
 
         """
-        return _Adaptor3d.Adaptor3d_Curve_NbKnots(self, *args)
+        return _Adaptor3d.Adaptor3d_Curve_NbKnots(self)
 
-    def Bezier(self, *args) -> "Handle_Geom_BezierCurve" :
+    def Bezier(self):
         """
         :rtype: Handle_Geom_BezierCurve
 
         """
-        return _Adaptor3d.Adaptor3d_Curve_Bezier(self, *args)
+        return _Adaptor3d.Adaptor3d_Curve_Bezier(self)
 
-    def BSpline(self, *args) -> "Handle_Geom_BSplineCurve" :
+    def BSpline(self):
         """
         :rtype: Handle_Geom_BSplineCurve
 
         """
-        return _Adaptor3d.Adaptor3d_Curve_BSpline(self, *args)
+        return _Adaptor3d.Adaptor3d_Curve_BSpline(self)
 
-    def __init__(self): 
-        _Adaptor3d.Adaptor3d_Curve_swiginit(self,_Adaptor3d.new_Adaptor3d_Curve())
     def __del__(self):
     	try:
     		self.thisown = False
@@ -443,46 +442,46 @@ class Adaptor3d_HCurve(OCC.MMgt.MMgt_TShared):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def Curve(self, *args) -> "Adaptor3d_Curve const &" :
+    def Curve(self):
         """
         * Returns a pointer to the Curve inside the HCurve.
 
         :rtype: Adaptor3d_Curve
 
         """
-        return _Adaptor3d.Adaptor3d_HCurve_Curve(self, *args)
+        return _Adaptor3d.Adaptor3d_HCurve_Curve(self)
 
-    def GetCurve(self, *args) -> "Adaptor3d_Curve &" :
+    def GetCurve(self):
         """
         * Returns a pointer to the Curve inside the HCurve.
 
         :rtype: Adaptor3d_Curve
 
         """
-        return _Adaptor3d.Adaptor3d_HCurve_GetCurve(self, *args)
+        return _Adaptor3d.Adaptor3d_HCurve_GetCurve(self)
 
-    def FirstParameter(self, *args) -> "Standard_Real" :
+    def FirstParameter(self):
         """
         :rtype: float
 
         """
-        return _Adaptor3d.Adaptor3d_HCurve_FirstParameter(self, *args)
+        return _Adaptor3d.Adaptor3d_HCurve_FirstParameter(self)
 
-    def LastParameter(self, *args) -> "Standard_Real" :
+    def LastParameter(self):
         """
         :rtype: float
 
         """
-        return _Adaptor3d.Adaptor3d_HCurve_LastParameter(self, *args)
+        return _Adaptor3d.Adaptor3d_HCurve_LastParameter(self)
 
-    def Continuity(self, *args) -> "GeomAbs_Shape" :
+    def Continuity(self):
         """
         :rtype: GeomAbs_Shape
 
         """
-        return _Adaptor3d.Adaptor3d_HCurve_Continuity(self, *args)
+        return _Adaptor3d.Adaptor3d_HCurve_Continuity(self)
 
-    def NbIntervals(self, *args) -> "Standard_Integer" :
+    def NbIntervals(self, *args):
         """
         :param S:
         :type S: GeomAbs_Shape
@@ -491,7 +490,7 @@ class Adaptor3d_HCurve(OCC.MMgt.MMgt_TShared):
         """
         return _Adaptor3d.Adaptor3d_HCurve_NbIntervals(self, *args)
 
-    def Intervals(self, *args) -> "void" :
+    def Intervals(self, *args):
         """
         * Stores in <T> the parameters bounding the intervals of continuity <S>.  The array must provide enough room to accomodate for the parameters. i.e. T.Length() > NbIntervals()
 
@@ -504,7 +503,7 @@ class Adaptor3d_HCurve(OCC.MMgt.MMgt_TShared):
         """
         return _Adaptor3d.Adaptor3d_HCurve_Intervals(self, *args)
 
-    def Trim(self, *args) -> "Handle_Adaptor3d_HCurve" :
+    def Trim(self, *args):
         """
         * Returns a curve equivalent of <self> between parameters <First> and <Last>. <Tol> is used to test for 3d points confusion. If <First> >= <Last>
 
@@ -519,28 +518,28 @@ class Adaptor3d_HCurve(OCC.MMgt.MMgt_TShared):
         """
         return _Adaptor3d.Adaptor3d_HCurve_Trim(self, *args)
 
-    def IsClosed(self, *args) -> "Standard_Boolean" :
+    def IsClosed(self):
         """
         :rtype: bool
 
         """
-        return _Adaptor3d.Adaptor3d_HCurve_IsClosed(self, *args)
+        return _Adaptor3d.Adaptor3d_HCurve_IsClosed(self)
 
-    def IsPeriodic(self, *args) -> "Standard_Boolean" :
+    def IsPeriodic(self):
         """
         :rtype: bool
 
         """
-        return _Adaptor3d.Adaptor3d_HCurve_IsPeriodic(self, *args)
+        return _Adaptor3d.Adaptor3d_HCurve_IsPeriodic(self)
 
-    def Period(self, *args) -> "Standard_Real" :
+    def Period(self):
         """
         :rtype: float
 
         """
-        return _Adaptor3d.Adaptor3d_HCurve_Period(self, *args)
+        return _Adaptor3d.Adaptor3d_HCurve_Period(self)
 
-    def Value(self, *args) -> "gp_Pnt" :
+    def Value(self, *args):
         """
         :param U:
         :type U: float
@@ -549,7 +548,7 @@ class Adaptor3d_HCurve(OCC.MMgt.MMgt_TShared):
         """
         return _Adaptor3d.Adaptor3d_HCurve_Value(self, *args)
 
-    def D0(self, *args) -> "void" :
+    def D0(self, *args):
         """
         :param U:
         :type U: float
@@ -560,7 +559,7 @@ class Adaptor3d_HCurve(OCC.MMgt.MMgt_TShared):
         """
         return _Adaptor3d.Adaptor3d_HCurve_D0(self, *args)
 
-    def D1(self, *args) -> "void" :
+    def D1(self, *args):
         """
         :param U:
         :type U: float
@@ -573,7 +572,7 @@ class Adaptor3d_HCurve(OCC.MMgt.MMgt_TShared):
         """
         return _Adaptor3d.Adaptor3d_HCurve_D1(self, *args)
 
-    def D2(self, *args) -> "void" :
+    def D2(self, *args):
         """
         :param U:
         :type U: float
@@ -588,7 +587,7 @@ class Adaptor3d_HCurve(OCC.MMgt.MMgt_TShared):
         """
         return _Adaptor3d.Adaptor3d_HCurve_D2(self, *args)
 
-    def D3(self, *args) -> "void" :
+    def D3(self, *args):
         """
         :param U:
         :type U: float
@@ -605,18 +604,18 @@ class Adaptor3d_HCurve(OCC.MMgt.MMgt_TShared):
         """
         return _Adaptor3d.Adaptor3d_HCurve_D3(self, *args)
 
-    def DN(self, *args) -> "gp_Vec" :
+    def DN(self, *args):
         """
         :param U:
         :type U: float
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :rtype: gp_Vec
 
         """
         return _Adaptor3d.Adaptor3d_HCurve_DN(self, *args)
 
-    def Resolution(self, *args) -> "Standard_Real" :
+    def Resolution(self, *args):
         """
         :param R3d:
         :type R3d: float
@@ -625,95 +624,95 @@ class Adaptor3d_HCurve(OCC.MMgt.MMgt_TShared):
         """
         return _Adaptor3d.Adaptor3d_HCurve_Resolution(self, *args)
 
-    def GetType(self, *args) -> "GeomAbs_CurveType" :
+    def GetType(self):
         """
         :rtype: GeomAbs_CurveType
 
         """
-        return _Adaptor3d.Adaptor3d_HCurve_GetType(self, *args)
+        return _Adaptor3d.Adaptor3d_HCurve_GetType(self)
 
-    def Line(self, *args) -> "gp_Lin" :
+    def Line(self):
         """
         :rtype: gp_Lin
 
         """
-        return _Adaptor3d.Adaptor3d_HCurve_Line(self, *args)
+        return _Adaptor3d.Adaptor3d_HCurve_Line(self)
 
-    def Circle(self, *args) -> "gp_Circ" :
+    def Circle(self):
         """
         :rtype: gp_Circ
 
         """
-        return _Adaptor3d.Adaptor3d_HCurve_Circle(self, *args)
+        return _Adaptor3d.Adaptor3d_HCurve_Circle(self)
 
-    def Ellipse(self, *args) -> "gp_Elips" :
+    def Ellipse(self):
         """
         :rtype: gp_Elips
 
         """
-        return _Adaptor3d.Adaptor3d_HCurve_Ellipse(self, *args)
+        return _Adaptor3d.Adaptor3d_HCurve_Ellipse(self)
 
-    def Hyperbola(self, *args) -> "gp_Hypr" :
+    def Hyperbola(self):
         """
         :rtype: gp_Hypr
 
         """
-        return _Adaptor3d.Adaptor3d_HCurve_Hyperbola(self, *args)
+        return _Adaptor3d.Adaptor3d_HCurve_Hyperbola(self)
 
-    def Parabola(self, *args) -> "gp_Parab" :
+    def Parabola(self):
         """
         :rtype: gp_Parab
 
         """
-        return _Adaptor3d.Adaptor3d_HCurve_Parabola(self, *args)
+        return _Adaptor3d.Adaptor3d_HCurve_Parabola(self)
 
-    def Degree(self, *args) -> "Standard_Integer" :
+    def Degree(self):
         """
         :rtype: int
 
         """
-        return _Adaptor3d.Adaptor3d_HCurve_Degree(self, *args)
+        return _Adaptor3d.Adaptor3d_HCurve_Degree(self)
 
-    def IsRational(self, *args) -> "Standard_Boolean" :
+    def IsRational(self):
         """
         :rtype: bool
 
         """
-        return _Adaptor3d.Adaptor3d_HCurve_IsRational(self, *args)
+        return _Adaptor3d.Adaptor3d_HCurve_IsRational(self)
 
-    def NbPoles(self, *args) -> "Standard_Integer" :
+    def NbPoles(self):
         """
         :rtype: int
 
         """
-        return _Adaptor3d.Adaptor3d_HCurve_NbPoles(self, *args)
+        return _Adaptor3d.Adaptor3d_HCurve_NbPoles(self)
 
-    def NbKnots(self, *args) -> "Standard_Integer" :
+    def NbKnots(self):
         """
         :rtype: int
 
         """
-        return _Adaptor3d.Adaptor3d_HCurve_NbKnots(self, *args)
+        return _Adaptor3d.Adaptor3d_HCurve_NbKnots(self)
 
-    def Bezier(self, *args) -> "Handle_Geom_BezierCurve" :
+    def Bezier(self):
         """
         :rtype: Handle_Geom_BezierCurve
 
         """
-        return _Adaptor3d.Adaptor3d_HCurve_Bezier(self, *args)
+        return _Adaptor3d.Adaptor3d_HCurve_Bezier(self)
 
-    def BSpline(self, *args) -> "Handle_Geom_BSplineCurve" :
+    def BSpline(self):
         """
         :rtype: Handle_Geom_BSplineCurve
 
         """
-        return _Adaptor3d.Adaptor3d_HCurve_BSpline(self, *args)
+        return _Adaptor3d.Adaptor3d_HCurve_BSpline(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Adaptor3d_HCurve self)"""
         return _Adaptor3d.Adaptor3d_HCurve__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Adaptor3d_HCurve" :
+    def GetHandle(self):
         """GetHandle(Adaptor3d_HCurve self) -> Handle_Adaptor3d_HCurve"""
         return _Adaptor3d.Adaptor3d_HCurve_GetHandle(self)
 
@@ -781,7 +780,7 @@ Handle_Adaptor3d_HCurve._kill_pointed = new_instancemethod(_Adaptor3d.Handle_Ada
 Handle_Adaptor3d_HCurve_swigregister = _Adaptor3d.Handle_Adaptor3d_HCurve_swigregister
 Handle_Adaptor3d_HCurve_swigregister(Handle_Adaptor3d_HCurve)
 
-def Handle_Adaptor3d_HCurve_DownCast(*args) -> "Handle_Adaptor3d_HCurve const" :
+def Handle_Adaptor3d_HCurve_DownCast(*args):
   return _Adaptor3d.Handle_Adaptor3d_HCurve_DownCast(*args)
 Handle_Adaptor3d_HCurve_DownCast = _Adaptor3d.Handle_Adaptor3d_HCurve_DownCast
 
@@ -798,7 +797,7 @@ class Adaptor3d_HOffsetCurve(OCC.Adaptor2d.Adaptor2d_HCurve2d):
 
         """
         _Adaptor3d.Adaptor3d_HOffsetCurve_swiginit(self,_Adaptor3d.new_Adaptor3d_HOffsetCurve(*args))
-    def Set(self, *args) -> "void" :
+    def Set(self, *args):
         """
         :param C:
         :type C: Adaptor3d_OffsetCurve &
@@ -807,18 +806,18 @@ class Adaptor3d_HOffsetCurve(OCC.Adaptor2d.Adaptor2d_HCurve2d):
         """
         return _Adaptor3d.Adaptor3d_HOffsetCurve_Set(self, *args)
 
-    def ChangeCurve2d(self, *args) -> "Adaptor3d_OffsetCurve &" :
+    def ChangeCurve2d(self):
         """
         :rtype: Adaptor3d_OffsetCurve
 
         """
-        return _Adaptor3d.Adaptor3d_HOffsetCurve_ChangeCurve2d(self, *args)
+        return _Adaptor3d.Adaptor3d_HOffsetCurve_ChangeCurve2d(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Adaptor3d_HOffsetCurve self)"""
         return _Adaptor3d.Adaptor3d_HOffsetCurve__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Adaptor3d_HOffsetCurve" :
+    def GetHandle(self):
         """GetHandle(Adaptor3d_HOffsetCurve self) -> Handle_Adaptor3d_HOffsetCurve"""
         return _Adaptor3d.Adaptor3d_HOffsetCurve_GetHandle(self)
 
@@ -858,7 +857,7 @@ Handle_Adaptor3d_HOffsetCurve._kill_pointed = new_instancemethod(_Adaptor3d.Hand
 Handle_Adaptor3d_HOffsetCurve_swigregister = _Adaptor3d.Handle_Adaptor3d_HOffsetCurve_swigregister
 Handle_Adaptor3d_HOffsetCurve_swigregister(Handle_Adaptor3d_HOffsetCurve)
 
-def Handle_Adaptor3d_HOffsetCurve_DownCast(*args) -> "Handle_Adaptor3d_HOffsetCurve const" :
+def Handle_Adaptor3d_HOffsetCurve_DownCast(*args):
   return _Adaptor3d.Handle_Adaptor3d_HOffsetCurve_DownCast(*args)
 Handle_Adaptor3d_HOffsetCurve_DownCast = _Adaptor3d.Handle_Adaptor3d_HOffsetCurve_DownCast
 
@@ -866,58 +865,58 @@ class Adaptor3d_HSurface(OCC.MMgt.MMgt_TShared):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def Surface(self, *args) -> "Adaptor3d_Surface const &" :
+    def Surface(self):
         """
         * Returns a reference to the Surface inside the HSurface.
 
         :rtype: Adaptor3d_Surface
 
         """
-        return _Adaptor3d.Adaptor3d_HSurface_Surface(self, *args)
+        return _Adaptor3d.Adaptor3d_HSurface_Surface(self)
 
-    def FirstUParameter(self, *args) -> "Standard_Real" :
+    def FirstUParameter(self):
         """
         :rtype: float
 
         """
-        return _Adaptor3d.Adaptor3d_HSurface_FirstUParameter(self, *args)
+        return _Adaptor3d.Adaptor3d_HSurface_FirstUParameter(self)
 
-    def LastUParameter(self, *args) -> "Standard_Real" :
+    def LastUParameter(self):
         """
         :rtype: float
 
         """
-        return _Adaptor3d.Adaptor3d_HSurface_LastUParameter(self, *args)
+        return _Adaptor3d.Adaptor3d_HSurface_LastUParameter(self)
 
-    def FirstVParameter(self, *args) -> "Standard_Real" :
+    def FirstVParameter(self):
         """
         :rtype: float
 
         """
-        return _Adaptor3d.Adaptor3d_HSurface_FirstVParameter(self, *args)
+        return _Adaptor3d.Adaptor3d_HSurface_FirstVParameter(self)
 
-    def LastVParameter(self, *args) -> "Standard_Real" :
+    def LastVParameter(self):
         """
         :rtype: float
 
         """
-        return _Adaptor3d.Adaptor3d_HSurface_LastVParameter(self, *args)
+        return _Adaptor3d.Adaptor3d_HSurface_LastVParameter(self)
 
-    def UContinuity(self, *args) -> "GeomAbs_Shape" :
+    def UContinuity(self):
         """
         :rtype: GeomAbs_Shape
 
         """
-        return _Adaptor3d.Adaptor3d_HSurface_UContinuity(self, *args)
+        return _Adaptor3d.Adaptor3d_HSurface_UContinuity(self)
 
-    def VContinuity(self, *args) -> "GeomAbs_Shape" :
+    def VContinuity(self):
         """
         :rtype: GeomAbs_Shape
 
         """
-        return _Adaptor3d.Adaptor3d_HSurface_VContinuity(self, *args)
+        return _Adaptor3d.Adaptor3d_HSurface_VContinuity(self)
 
-    def NbUIntervals(self, *args) -> "Standard_Integer" :
+    def NbUIntervals(self, *args):
         """
         :param S:
         :type S: GeomAbs_Shape
@@ -926,7 +925,7 @@ class Adaptor3d_HSurface(OCC.MMgt.MMgt_TShared):
         """
         return _Adaptor3d.Adaptor3d_HSurface_NbUIntervals(self, *args)
 
-    def NbVIntervals(self, *args) -> "Standard_Integer" :
+    def NbVIntervals(self, *args):
         """
         :param S:
         :type S: GeomAbs_Shape
@@ -935,7 +934,7 @@ class Adaptor3d_HSurface(OCC.MMgt.MMgt_TShared):
         """
         return _Adaptor3d.Adaptor3d_HSurface_NbVIntervals(self, *args)
 
-    def UIntervals(self, *args) -> "void" :
+    def UIntervals(self, *args):
         """
         :param T:
         :type T: TColStd_Array1OfReal &
@@ -946,7 +945,7 @@ class Adaptor3d_HSurface(OCC.MMgt.MMgt_TShared):
         """
         return _Adaptor3d.Adaptor3d_HSurface_UIntervals(self, *args)
 
-    def VIntervals(self, *args) -> "void" :
+    def VIntervals(self, *args):
         """
         :param T:
         :type T: TColStd_Array1OfReal &
@@ -957,7 +956,7 @@ class Adaptor3d_HSurface(OCC.MMgt.MMgt_TShared):
         """
         return _Adaptor3d.Adaptor3d_HSurface_VIntervals(self, *args)
 
-    def UTrim(self, *args) -> "Handle_Adaptor3d_HSurface" :
+    def UTrim(self, *args):
         """
         :param First:
         :type First: float
@@ -970,7 +969,7 @@ class Adaptor3d_HSurface(OCC.MMgt.MMgt_TShared):
         """
         return _Adaptor3d.Adaptor3d_HSurface_UTrim(self, *args)
 
-    def VTrim(self, *args) -> "Handle_Adaptor3d_HSurface" :
+    def VTrim(self, *args):
         """
         :param First:
         :type First: float
@@ -983,49 +982,49 @@ class Adaptor3d_HSurface(OCC.MMgt.MMgt_TShared):
         """
         return _Adaptor3d.Adaptor3d_HSurface_VTrim(self, *args)
 
-    def IsUClosed(self, *args) -> "Standard_Boolean" :
+    def IsUClosed(self):
         """
         :rtype: bool
 
         """
-        return _Adaptor3d.Adaptor3d_HSurface_IsUClosed(self, *args)
+        return _Adaptor3d.Adaptor3d_HSurface_IsUClosed(self)
 
-    def IsVClosed(self, *args) -> "Standard_Boolean" :
+    def IsVClosed(self):
         """
         :rtype: bool
 
         """
-        return _Adaptor3d.Adaptor3d_HSurface_IsVClosed(self, *args)
+        return _Adaptor3d.Adaptor3d_HSurface_IsVClosed(self)
 
-    def IsUPeriodic(self, *args) -> "Standard_Boolean" :
+    def IsUPeriodic(self):
         """
         :rtype: bool
 
         """
-        return _Adaptor3d.Adaptor3d_HSurface_IsUPeriodic(self, *args)
+        return _Adaptor3d.Adaptor3d_HSurface_IsUPeriodic(self)
 
-    def UPeriod(self, *args) -> "Standard_Real" :
+    def UPeriod(self):
         """
         :rtype: float
 
         """
-        return _Adaptor3d.Adaptor3d_HSurface_UPeriod(self, *args)
+        return _Adaptor3d.Adaptor3d_HSurface_UPeriod(self)
 
-    def IsVPeriodic(self, *args) -> "Standard_Boolean" :
+    def IsVPeriodic(self):
         """
         :rtype: bool
 
         """
-        return _Adaptor3d.Adaptor3d_HSurface_IsVPeriodic(self, *args)
+        return _Adaptor3d.Adaptor3d_HSurface_IsVPeriodic(self)
 
-    def VPeriod(self, *args) -> "Standard_Real" :
+    def VPeriod(self):
         """
         :rtype: float
 
         """
-        return _Adaptor3d.Adaptor3d_HSurface_VPeriod(self, *args)
+        return _Adaptor3d.Adaptor3d_HSurface_VPeriod(self)
 
-    def Value(self, *args) -> "gp_Pnt" :
+    def Value(self, *args):
         """
         :param U:
         :type U: float
@@ -1036,7 +1035,7 @@ class Adaptor3d_HSurface(OCC.MMgt.MMgt_TShared):
         """
         return _Adaptor3d.Adaptor3d_HSurface_Value(self, *args)
 
-    def D0(self, *args) -> "void" :
+    def D0(self, *args):
         """
         :param U:
         :type U: float
@@ -1049,7 +1048,7 @@ class Adaptor3d_HSurface(OCC.MMgt.MMgt_TShared):
         """
         return _Adaptor3d.Adaptor3d_HSurface_D0(self, *args)
 
-    def D1(self, *args) -> "void" :
+    def D1(self, *args):
         """
         :param U:
         :type U: float
@@ -1066,7 +1065,7 @@ class Adaptor3d_HSurface(OCC.MMgt.MMgt_TShared):
         """
         return _Adaptor3d.Adaptor3d_HSurface_D1(self, *args)
 
-    def D2(self, *args) -> "void" :
+    def D2(self, *args):
         """
         :param U:
         :type U: float
@@ -1089,7 +1088,7 @@ class Adaptor3d_HSurface(OCC.MMgt.MMgt_TShared):
         """
         return _Adaptor3d.Adaptor3d_HSurface_D2(self, *args)
 
-    def D3(self, *args) -> "void" :
+    def D3(self, *args):
         """
         :param U:
         :type U: float
@@ -1120,22 +1119,22 @@ class Adaptor3d_HSurface(OCC.MMgt.MMgt_TShared):
         """
         return _Adaptor3d.Adaptor3d_HSurface_D3(self, *args)
 
-    def DN(self, *args) -> "gp_Vec" :
+    def DN(self, *args):
         """
         :param U:
         :type U: float
         :param V:
         :type V: float
         :param Nu:
-        :type Nu: int
+        :type Nu: Standard_Integer
         :param Nv:
-        :type Nv: int
+        :type Nv: Standard_Integer
         :rtype: gp_Vec
 
         """
         return _Adaptor3d.Adaptor3d_HSurface_DN(self, *args)
 
-    def UResolution(self, *args) -> "Standard_Real" :
+    def UResolution(self, *args):
         """
         :param R3d:
         :type R3d: float
@@ -1144,7 +1143,7 @@ class Adaptor3d_HSurface(OCC.MMgt.MMgt_TShared):
         """
         return _Adaptor3d.Adaptor3d_HSurface_UResolution(self, *args)
 
-    def VResolution(self, *args) -> "Standard_Real" :
+    def VResolution(self, *args):
         """
         :param R3d:
         :type R3d: float
@@ -1153,158 +1152,158 @@ class Adaptor3d_HSurface(OCC.MMgt.MMgt_TShared):
         """
         return _Adaptor3d.Adaptor3d_HSurface_VResolution(self, *args)
 
-    def GetType(self, *args) -> "GeomAbs_SurfaceType" :
+    def GetType(self):
         """
         :rtype: GeomAbs_SurfaceType
 
         """
-        return _Adaptor3d.Adaptor3d_HSurface_GetType(self, *args)
+        return _Adaptor3d.Adaptor3d_HSurface_GetType(self)
 
-    def Plane(self, *args) -> "gp_Pln" :
+    def Plane(self):
         """
         :rtype: gp_Pln
 
         """
-        return _Adaptor3d.Adaptor3d_HSurface_Plane(self, *args)
+        return _Adaptor3d.Adaptor3d_HSurface_Plane(self)
 
-    def Cylinder(self, *args) -> "gp_Cylinder" :
+    def Cylinder(self):
         """
         :rtype: gp_Cylinder
 
         """
-        return _Adaptor3d.Adaptor3d_HSurface_Cylinder(self, *args)
+        return _Adaptor3d.Adaptor3d_HSurface_Cylinder(self)
 
-    def Cone(self, *args) -> "gp_Cone" :
+    def Cone(self):
         """
         :rtype: gp_Cone
 
         """
-        return _Adaptor3d.Adaptor3d_HSurface_Cone(self, *args)
+        return _Adaptor3d.Adaptor3d_HSurface_Cone(self)
 
-    def Sphere(self, *args) -> "gp_Sphere" :
+    def Sphere(self):
         """
         :rtype: gp_Sphere
 
         """
-        return _Adaptor3d.Adaptor3d_HSurface_Sphere(self, *args)
+        return _Adaptor3d.Adaptor3d_HSurface_Sphere(self)
 
-    def Torus(self, *args) -> "gp_Torus" :
+    def Torus(self):
         """
         :rtype: gp_Torus
 
         """
-        return _Adaptor3d.Adaptor3d_HSurface_Torus(self, *args)
+        return _Adaptor3d.Adaptor3d_HSurface_Torus(self)
 
-    def UDegree(self, *args) -> "Standard_Integer" :
+    def UDegree(self):
         """
         :rtype: int
 
         """
-        return _Adaptor3d.Adaptor3d_HSurface_UDegree(self, *args)
+        return _Adaptor3d.Adaptor3d_HSurface_UDegree(self)
 
-    def NbUPoles(self, *args) -> "Standard_Integer" :
+    def NbUPoles(self):
         """
         :rtype: int
 
         """
-        return _Adaptor3d.Adaptor3d_HSurface_NbUPoles(self, *args)
+        return _Adaptor3d.Adaptor3d_HSurface_NbUPoles(self)
 
-    def VDegree(self, *args) -> "Standard_Integer" :
+    def VDegree(self):
         """
         :rtype: int
 
         """
-        return _Adaptor3d.Adaptor3d_HSurface_VDegree(self, *args)
+        return _Adaptor3d.Adaptor3d_HSurface_VDegree(self)
 
-    def NbVPoles(self, *args) -> "Standard_Integer" :
+    def NbVPoles(self):
         """
         :rtype: int
 
         """
-        return _Adaptor3d.Adaptor3d_HSurface_NbVPoles(self, *args)
+        return _Adaptor3d.Adaptor3d_HSurface_NbVPoles(self)
 
-    def NbUKnots(self, *args) -> "Standard_Integer" :
+    def NbUKnots(self):
         """
         :rtype: int
 
         """
-        return _Adaptor3d.Adaptor3d_HSurface_NbUKnots(self, *args)
+        return _Adaptor3d.Adaptor3d_HSurface_NbUKnots(self)
 
-    def NbVKnots(self, *args) -> "Standard_Integer" :
+    def NbVKnots(self):
         """
         :rtype: int
 
         """
-        return _Adaptor3d.Adaptor3d_HSurface_NbVKnots(self, *args)
+        return _Adaptor3d.Adaptor3d_HSurface_NbVKnots(self)
 
-    def IsURational(self, *args) -> "Standard_Boolean" :
+    def IsURational(self):
         """
         :rtype: bool
 
         """
-        return _Adaptor3d.Adaptor3d_HSurface_IsURational(self, *args)
+        return _Adaptor3d.Adaptor3d_HSurface_IsURational(self)
 
-    def IsVRational(self, *args) -> "Standard_Boolean" :
+    def IsVRational(self):
         """
         :rtype: bool
 
         """
-        return _Adaptor3d.Adaptor3d_HSurface_IsVRational(self, *args)
+        return _Adaptor3d.Adaptor3d_HSurface_IsVRational(self)
 
-    def Bezier(self, *args) -> "Handle_Geom_BezierSurface" :
+    def Bezier(self):
         """
         :rtype: Handle_Geom_BezierSurface
 
         """
-        return _Adaptor3d.Adaptor3d_HSurface_Bezier(self, *args)
+        return _Adaptor3d.Adaptor3d_HSurface_Bezier(self)
 
-    def BSpline(self, *args) -> "Handle_Geom_BSplineSurface" :
+    def BSpline(self):
         """
         :rtype: Handle_Geom_BSplineSurface
 
         """
-        return _Adaptor3d.Adaptor3d_HSurface_BSpline(self, *args)
+        return _Adaptor3d.Adaptor3d_HSurface_BSpline(self)
 
-    def AxeOfRevolution(self, *args) -> "gp_Ax1" :
+    def AxeOfRevolution(self):
         """
         :rtype: gp_Ax1
 
         """
-        return _Adaptor3d.Adaptor3d_HSurface_AxeOfRevolution(self, *args)
+        return _Adaptor3d.Adaptor3d_HSurface_AxeOfRevolution(self)
 
-    def Direction(self, *args) -> "gp_Dir" :
+    def Direction(self):
         """
         :rtype: gp_Dir
 
         """
-        return _Adaptor3d.Adaptor3d_HSurface_Direction(self, *args)
+        return _Adaptor3d.Adaptor3d_HSurface_Direction(self)
 
-    def BasisCurve(self, *args) -> "Handle_Adaptor3d_HCurve" :
+    def BasisCurve(self):
         """
         :rtype: Handle_Adaptor3d_HCurve
 
         """
-        return _Adaptor3d.Adaptor3d_HSurface_BasisCurve(self, *args)
+        return _Adaptor3d.Adaptor3d_HSurface_BasisCurve(self)
 
-    def BasisSurface(self, *args) -> "Handle_Adaptor3d_HSurface" :
+    def BasisSurface(self):
         """
         :rtype: Handle_Adaptor3d_HSurface
 
         """
-        return _Adaptor3d.Adaptor3d_HSurface_BasisSurface(self, *args)
+        return _Adaptor3d.Adaptor3d_HSurface_BasisSurface(self)
 
-    def OffsetValue(self, *args) -> "Standard_Real" :
+    def OffsetValue(self):
         """
         :rtype: float
 
         """
-        return _Adaptor3d.Adaptor3d_HSurface_OffsetValue(self, *args)
+        return _Adaptor3d.Adaptor3d_HSurface_OffsetValue(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Adaptor3d_HSurface self)"""
         return _Adaptor3d.Adaptor3d_HSurface__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Adaptor3d_HSurface" :
+    def GetHandle(self):
         """GetHandle(Adaptor3d_HSurface self) -> Handle_Adaptor3d_HSurface"""
         return _Adaptor3d.Adaptor3d_HSurface_GetHandle(self)
 
@@ -1390,14 +1389,15 @@ Handle_Adaptor3d_HSurface._kill_pointed = new_instancemethod(_Adaptor3d.Handle_A
 Handle_Adaptor3d_HSurface_swigregister = _Adaptor3d.Handle_Adaptor3d_HSurface_swigregister
 Handle_Adaptor3d_HSurface_swigregister(Handle_Adaptor3d_HSurface)
 
-def Handle_Adaptor3d_HSurface_DownCast(*args) -> "Handle_Adaptor3d_HSurface const" :
+def Handle_Adaptor3d_HSurface_DownCast(*args):
   return _Adaptor3d.Handle_Adaptor3d_HSurface_DownCast(*args)
 Handle_Adaptor3d_HSurface_DownCast = _Adaptor3d.Handle_Adaptor3d_HSurface_DownCast
 
 class Adaptor3d_HSurfaceTool(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
+    def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def FirstUParameter(*args) -> "Standard_Real" :
+    def FirstUParameter(*args):
         """
         :param S:
         :type S: Handle_Adaptor3d_HSurface &
@@ -1407,7 +1407,7 @@ class Adaptor3d_HSurfaceTool(object):
         return _Adaptor3d.Adaptor3d_HSurfaceTool_FirstUParameter(*args)
 
     FirstUParameter = staticmethod(FirstUParameter)
-    def FirstVParameter(*args) -> "Standard_Real" :
+    def FirstVParameter(*args):
         """
         :param S:
         :type S: Handle_Adaptor3d_HSurface &
@@ -1417,7 +1417,7 @@ class Adaptor3d_HSurfaceTool(object):
         return _Adaptor3d.Adaptor3d_HSurfaceTool_FirstVParameter(*args)
 
     FirstVParameter = staticmethod(FirstVParameter)
-    def LastUParameter(*args) -> "Standard_Real" :
+    def LastUParameter(*args):
         """
         :param S:
         :type S: Handle_Adaptor3d_HSurface &
@@ -1427,7 +1427,7 @@ class Adaptor3d_HSurfaceTool(object):
         return _Adaptor3d.Adaptor3d_HSurfaceTool_LastUParameter(*args)
 
     LastUParameter = staticmethod(LastUParameter)
-    def LastVParameter(*args) -> "Standard_Real" :
+    def LastVParameter(*args):
         """
         :param S:
         :type S: Handle_Adaptor3d_HSurface &
@@ -1437,7 +1437,7 @@ class Adaptor3d_HSurfaceTool(object):
         return _Adaptor3d.Adaptor3d_HSurfaceTool_LastVParameter(*args)
 
     LastVParameter = staticmethod(LastVParameter)
-    def NbUIntervals(*args) -> "Standard_Integer" :
+    def NbUIntervals(*args):
         """
         :param S:
         :type S: Handle_Adaptor3d_HSurface &
@@ -1449,7 +1449,7 @@ class Adaptor3d_HSurfaceTool(object):
         return _Adaptor3d.Adaptor3d_HSurfaceTool_NbUIntervals(*args)
 
     NbUIntervals = staticmethod(NbUIntervals)
-    def NbVIntervals(*args) -> "Standard_Integer" :
+    def NbVIntervals(*args):
         """
         :param S:
         :type S: Handle_Adaptor3d_HSurface &
@@ -1461,7 +1461,7 @@ class Adaptor3d_HSurfaceTool(object):
         return _Adaptor3d.Adaptor3d_HSurfaceTool_NbVIntervals(*args)
 
     NbVIntervals = staticmethod(NbVIntervals)
-    def UIntervals(*args) -> "void" :
+    def UIntervals(*args):
         """
         :param S:
         :type S: Handle_Adaptor3d_HSurface &
@@ -1475,7 +1475,7 @@ class Adaptor3d_HSurfaceTool(object):
         return _Adaptor3d.Adaptor3d_HSurfaceTool_UIntervals(*args)
 
     UIntervals = staticmethod(UIntervals)
-    def VIntervals(*args) -> "void" :
+    def VIntervals(*args):
         """
         :param S:
         :type S: Handle_Adaptor3d_HSurface &
@@ -1489,7 +1489,7 @@ class Adaptor3d_HSurfaceTool(object):
         return _Adaptor3d.Adaptor3d_HSurfaceTool_VIntervals(*args)
 
     VIntervals = staticmethod(VIntervals)
-    def UTrim(*args) -> "Handle_Adaptor3d_HSurface" :
+    def UTrim(*args):
         """
         * If <First> >= <Last>
 
@@ -1507,7 +1507,7 @@ class Adaptor3d_HSurfaceTool(object):
         return _Adaptor3d.Adaptor3d_HSurfaceTool_UTrim(*args)
 
     UTrim = staticmethod(UTrim)
-    def VTrim(*args) -> "Handle_Adaptor3d_HSurface" :
+    def VTrim(*args):
         """
         * If <First> >= <Last>
 
@@ -1525,7 +1525,7 @@ class Adaptor3d_HSurfaceTool(object):
         return _Adaptor3d.Adaptor3d_HSurfaceTool_VTrim(*args)
 
     VTrim = staticmethod(VTrim)
-    def IsUClosed(*args) -> "Standard_Boolean" :
+    def IsUClosed(*args):
         """
         :param S:
         :type S: Handle_Adaptor3d_HSurface &
@@ -1535,7 +1535,7 @@ class Adaptor3d_HSurfaceTool(object):
         return _Adaptor3d.Adaptor3d_HSurfaceTool_IsUClosed(*args)
 
     IsUClosed = staticmethod(IsUClosed)
-    def IsVClosed(*args) -> "Standard_Boolean" :
+    def IsVClosed(*args):
         """
         :param S:
         :type S: Handle_Adaptor3d_HSurface &
@@ -1545,7 +1545,7 @@ class Adaptor3d_HSurfaceTool(object):
         return _Adaptor3d.Adaptor3d_HSurfaceTool_IsVClosed(*args)
 
     IsVClosed = staticmethod(IsVClosed)
-    def IsUPeriodic(*args) -> "Standard_Boolean" :
+    def IsUPeriodic(*args):
         """
         :param S:
         :type S: Handle_Adaptor3d_HSurface &
@@ -1555,7 +1555,7 @@ class Adaptor3d_HSurfaceTool(object):
         return _Adaptor3d.Adaptor3d_HSurfaceTool_IsUPeriodic(*args)
 
     IsUPeriodic = staticmethod(IsUPeriodic)
-    def UPeriod(*args) -> "Standard_Real" :
+    def UPeriod(*args):
         """
         :param S:
         :type S: Handle_Adaptor3d_HSurface &
@@ -1565,7 +1565,7 @@ class Adaptor3d_HSurfaceTool(object):
         return _Adaptor3d.Adaptor3d_HSurfaceTool_UPeriod(*args)
 
     UPeriod = staticmethod(UPeriod)
-    def IsVPeriodic(*args) -> "Standard_Boolean" :
+    def IsVPeriodic(*args):
         """
         :param S:
         :type S: Handle_Adaptor3d_HSurface &
@@ -1575,7 +1575,7 @@ class Adaptor3d_HSurfaceTool(object):
         return _Adaptor3d.Adaptor3d_HSurfaceTool_IsVPeriodic(*args)
 
     IsVPeriodic = staticmethod(IsVPeriodic)
-    def VPeriod(*args) -> "Standard_Real" :
+    def VPeriod(*args):
         """
         :param S:
         :type S: Handle_Adaptor3d_HSurface &
@@ -1585,7 +1585,7 @@ class Adaptor3d_HSurfaceTool(object):
         return _Adaptor3d.Adaptor3d_HSurfaceTool_VPeriod(*args)
 
     VPeriod = staticmethod(VPeriod)
-    def Value(*args) -> "gp_Pnt" :
+    def Value(*args):
         """
         :param S:
         :type S: Handle_Adaptor3d_HSurface &
@@ -1599,7 +1599,7 @@ class Adaptor3d_HSurfaceTool(object):
         return _Adaptor3d.Adaptor3d_HSurfaceTool_Value(*args)
 
     Value = staticmethod(Value)
-    def D0(*args) -> "void" :
+    def D0(*args):
         """
         :param S:
         :type S: Handle_Adaptor3d_HSurface &
@@ -1615,7 +1615,7 @@ class Adaptor3d_HSurfaceTool(object):
         return _Adaptor3d.Adaptor3d_HSurfaceTool_D0(*args)
 
     D0 = staticmethod(D0)
-    def D1(*args) -> "void" :
+    def D1(*args):
         """
         :param S:
         :type S: Handle_Adaptor3d_HSurface &
@@ -1635,7 +1635,7 @@ class Adaptor3d_HSurfaceTool(object):
         return _Adaptor3d.Adaptor3d_HSurfaceTool_D1(*args)
 
     D1 = staticmethod(D1)
-    def D2(*args) -> "void" :
+    def D2(*args):
         """
         :param S:
         :type S: Handle_Adaptor3d_HSurface &
@@ -1661,7 +1661,7 @@ class Adaptor3d_HSurfaceTool(object):
         return _Adaptor3d.Adaptor3d_HSurfaceTool_D2(*args)
 
     D2 = staticmethod(D2)
-    def D3(*args) -> "void" :
+    def D3(*args):
         """
         :param S:
         :type S: Handle_Adaptor3d_HSurface &
@@ -1695,7 +1695,7 @@ class Adaptor3d_HSurfaceTool(object):
         return _Adaptor3d.Adaptor3d_HSurfaceTool_D3(*args)
 
     D3 = staticmethod(D3)
-    def DN(*args) -> "gp_Vec" :
+    def DN(*args):
         """
         :param S:
         :type S: Handle_Adaptor3d_HSurface &
@@ -1704,16 +1704,16 @@ class Adaptor3d_HSurfaceTool(object):
         :param v:
         :type v: float
         :param Nu:
-        :type Nu: int
+        :type Nu: Standard_Integer
         :param Nv:
-        :type Nv: int
+        :type Nv: Standard_Integer
         :rtype: gp_Vec
 
         """
         return _Adaptor3d.Adaptor3d_HSurfaceTool_DN(*args)
 
     DN = staticmethod(DN)
-    def UResolution(*args) -> "Standard_Real" :
+    def UResolution(*args):
         """
         :param S:
         :type S: Handle_Adaptor3d_HSurface &
@@ -1725,7 +1725,7 @@ class Adaptor3d_HSurfaceTool(object):
         return _Adaptor3d.Adaptor3d_HSurfaceTool_UResolution(*args)
 
     UResolution = staticmethod(UResolution)
-    def VResolution(*args) -> "Standard_Real" :
+    def VResolution(*args):
         """
         :param S:
         :type S: Handle_Adaptor3d_HSurface &
@@ -1737,7 +1737,7 @@ class Adaptor3d_HSurfaceTool(object):
         return _Adaptor3d.Adaptor3d_HSurfaceTool_VResolution(*args)
 
     VResolution = staticmethod(VResolution)
-    def GetType(*args) -> "GeomAbs_SurfaceType" :
+    def GetType(*args):
         """
         :param S:
         :type S: Handle_Adaptor3d_HSurface &
@@ -1747,7 +1747,7 @@ class Adaptor3d_HSurfaceTool(object):
         return _Adaptor3d.Adaptor3d_HSurfaceTool_GetType(*args)
 
     GetType = staticmethod(GetType)
-    def Plane(*args) -> "gp_Pln" :
+    def Plane(*args):
         """
         :param S:
         :type S: Handle_Adaptor3d_HSurface &
@@ -1757,7 +1757,7 @@ class Adaptor3d_HSurfaceTool(object):
         return _Adaptor3d.Adaptor3d_HSurfaceTool_Plane(*args)
 
     Plane = staticmethod(Plane)
-    def Cylinder(*args) -> "gp_Cylinder" :
+    def Cylinder(*args):
         """
         :param S:
         :type S: Handle_Adaptor3d_HSurface &
@@ -1767,7 +1767,7 @@ class Adaptor3d_HSurfaceTool(object):
         return _Adaptor3d.Adaptor3d_HSurfaceTool_Cylinder(*args)
 
     Cylinder = staticmethod(Cylinder)
-    def Cone(*args) -> "gp_Cone" :
+    def Cone(*args):
         """
         :param S:
         :type S: Handle_Adaptor3d_HSurface &
@@ -1777,7 +1777,7 @@ class Adaptor3d_HSurfaceTool(object):
         return _Adaptor3d.Adaptor3d_HSurfaceTool_Cone(*args)
 
     Cone = staticmethod(Cone)
-    def Torus(*args) -> "gp_Torus" :
+    def Torus(*args):
         """
         :param S:
         :type S: Handle_Adaptor3d_HSurface &
@@ -1787,7 +1787,7 @@ class Adaptor3d_HSurfaceTool(object):
         return _Adaptor3d.Adaptor3d_HSurfaceTool_Torus(*args)
 
     Torus = staticmethod(Torus)
-    def Sphere(*args) -> "gp_Sphere" :
+    def Sphere(*args):
         """
         :param S:
         :type S: Handle_Adaptor3d_HSurface &
@@ -1797,7 +1797,7 @@ class Adaptor3d_HSurfaceTool(object):
         return _Adaptor3d.Adaptor3d_HSurfaceTool_Sphere(*args)
 
     Sphere = staticmethod(Sphere)
-    def Bezier(*args) -> "Handle_Geom_BezierSurface" :
+    def Bezier(*args):
         """
         :param S:
         :type S: Handle_Adaptor3d_HSurface &
@@ -1807,7 +1807,7 @@ class Adaptor3d_HSurfaceTool(object):
         return _Adaptor3d.Adaptor3d_HSurfaceTool_Bezier(*args)
 
     Bezier = staticmethod(Bezier)
-    def BSpline(*args) -> "Handle_Geom_BSplineSurface" :
+    def BSpline(*args):
         """
         :param S:
         :type S: Handle_Adaptor3d_HSurface &
@@ -1817,7 +1817,7 @@ class Adaptor3d_HSurfaceTool(object):
         return _Adaptor3d.Adaptor3d_HSurfaceTool_BSpline(*args)
 
     BSpline = staticmethod(BSpline)
-    def AxeOfRevolution(*args) -> "gp_Ax1" :
+    def AxeOfRevolution(*args):
         """
         :param S:
         :type S: Handle_Adaptor3d_HSurface &
@@ -1827,7 +1827,7 @@ class Adaptor3d_HSurfaceTool(object):
         return _Adaptor3d.Adaptor3d_HSurfaceTool_AxeOfRevolution(*args)
 
     AxeOfRevolution = staticmethod(AxeOfRevolution)
-    def Direction(*args) -> "gp_Dir" :
+    def Direction(*args):
         """
         :param S:
         :type S: Handle_Adaptor3d_HSurface &
@@ -1837,7 +1837,7 @@ class Adaptor3d_HSurfaceTool(object):
         return _Adaptor3d.Adaptor3d_HSurfaceTool_Direction(*args)
 
     Direction = staticmethod(Direction)
-    def BasisCurve(*args) -> "Handle_Adaptor3d_HCurve" :
+    def BasisCurve(*args):
         """
         :param S:
         :type S: Handle_Adaptor3d_HSurface &
@@ -1847,7 +1847,7 @@ class Adaptor3d_HSurfaceTool(object):
         return _Adaptor3d.Adaptor3d_HSurfaceTool_BasisCurve(*args)
 
     BasisCurve = staticmethod(BasisCurve)
-    def BasisSurface(*args) -> "Handle_Adaptor3d_HSurface" :
+    def BasisSurface(*args):
         """
         :param S:
         :type S: Handle_Adaptor3d_HSurface &
@@ -1857,7 +1857,7 @@ class Adaptor3d_HSurfaceTool(object):
         return _Adaptor3d.Adaptor3d_HSurfaceTool_BasisSurface(*args)
 
     BasisSurface = staticmethod(BasisSurface)
-    def OffsetValue(*args) -> "Standard_Real" :
+    def OffsetValue(*args):
         """
         :param S:
         :type S: Handle_Adaptor3d_HSurface &
@@ -1867,7 +1867,7 @@ class Adaptor3d_HSurfaceTool(object):
         return _Adaptor3d.Adaptor3d_HSurfaceTool_OffsetValue(*args)
 
     OffsetValue = staticmethod(OffsetValue)
-    def NbSamplesU(*args) -> "Standard_Integer" :
+    def NbSamplesU(*args):
         """
         :param S:
         :type S: Handle_Adaptor3d_HSurface &
@@ -1885,7 +1885,7 @@ class Adaptor3d_HSurfaceTool(object):
         return _Adaptor3d.Adaptor3d_HSurfaceTool_NbSamplesU(*args)
 
     NbSamplesU = staticmethod(NbSamplesU)
-    def NbSamplesV(*args) -> "Standard_Integer" :
+    def NbSamplesV(*args):
         """
         :param S:
         :type S: Handle_Adaptor3d_HSurface &
@@ -1903,8 +1903,6 @@ class Adaptor3d_HSurfaceTool(object):
         return _Adaptor3d.Adaptor3d_HSurfaceTool_NbSamplesV(*args)
 
     NbSamplesV = staticmethod(NbSamplesV)
-    def __init__(self): 
-        _Adaptor3d.Adaptor3d_HSurfaceTool_swiginit(self,_Adaptor3d.new_Adaptor3d_HSurfaceTool())
     def __del__(self):
     	try:
     		self.thisown = False
@@ -1917,7 +1915,7 @@ Adaptor3d_HSurfaceTool._kill_pointed = new_instancemethod(_Adaptor3d.Adaptor3d_H
 Adaptor3d_HSurfaceTool_swigregister = _Adaptor3d.Adaptor3d_HSurfaceTool_swigregister
 Adaptor3d_HSurfaceTool_swigregister(Adaptor3d_HSurfaceTool)
 
-def Adaptor3d_HSurfaceTool_FirstUParameter(*args) -> "Standard_Real" :
+def Adaptor3d_HSurfaceTool_FirstUParameter(*args):
   """
     :param S:
     :type S: Handle_Adaptor3d_HSurface &
@@ -1926,7 +1924,7 @@ def Adaptor3d_HSurfaceTool_FirstUParameter(*args) -> "Standard_Real" :
     """
   return _Adaptor3d.Adaptor3d_HSurfaceTool_FirstUParameter(*args)
 
-def Adaptor3d_HSurfaceTool_FirstVParameter(*args) -> "Standard_Real" :
+def Adaptor3d_HSurfaceTool_FirstVParameter(*args):
   """
     :param S:
     :type S: Handle_Adaptor3d_HSurface &
@@ -1935,7 +1933,7 @@ def Adaptor3d_HSurfaceTool_FirstVParameter(*args) -> "Standard_Real" :
     """
   return _Adaptor3d.Adaptor3d_HSurfaceTool_FirstVParameter(*args)
 
-def Adaptor3d_HSurfaceTool_LastUParameter(*args) -> "Standard_Real" :
+def Adaptor3d_HSurfaceTool_LastUParameter(*args):
   """
     :param S:
     :type S: Handle_Adaptor3d_HSurface &
@@ -1944,7 +1942,7 @@ def Adaptor3d_HSurfaceTool_LastUParameter(*args) -> "Standard_Real" :
     """
   return _Adaptor3d.Adaptor3d_HSurfaceTool_LastUParameter(*args)
 
-def Adaptor3d_HSurfaceTool_LastVParameter(*args) -> "Standard_Real" :
+def Adaptor3d_HSurfaceTool_LastVParameter(*args):
   """
     :param S:
     :type S: Handle_Adaptor3d_HSurface &
@@ -1953,7 +1951,7 @@ def Adaptor3d_HSurfaceTool_LastVParameter(*args) -> "Standard_Real" :
     """
   return _Adaptor3d.Adaptor3d_HSurfaceTool_LastVParameter(*args)
 
-def Adaptor3d_HSurfaceTool_NbUIntervals(*args) -> "Standard_Integer" :
+def Adaptor3d_HSurfaceTool_NbUIntervals(*args):
   """
     :param S:
     :type S: Handle_Adaptor3d_HSurface &
@@ -1964,7 +1962,7 @@ def Adaptor3d_HSurfaceTool_NbUIntervals(*args) -> "Standard_Integer" :
     """
   return _Adaptor3d.Adaptor3d_HSurfaceTool_NbUIntervals(*args)
 
-def Adaptor3d_HSurfaceTool_NbVIntervals(*args) -> "Standard_Integer" :
+def Adaptor3d_HSurfaceTool_NbVIntervals(*args):
   """
     :param S:
     :type S: Handle_Adaptor3d_HSurface &
@@ -1975,7 +1973,7 @@ def Adaptor3d_HSurfaceTool_NbVIntervals(*args) -> "Standard_Integer" :
     """
   return _Adaptor3d.Adaptor3d_HSurfaceTool_NbVIntervals(*args)
 
-def Adaptor3d_HSurfaceTool_UIntervals(*args) -> "void" :
+def Adaptor3d_HSurfaceTool_UIntervals(*args):
   """
     :param S:
     :type S: Handle_Adaptor3d_HSurface &
@@ -1988,7 +1986,7 @@ def Adaptor3d_HSurfaceTool_UIntervals(*args) -> "void" :
     """
   return _Adaptor3d.Adaptor3d_HSurfaceTool_UIntervals(*args)
 
-def Adaptor3d_HSurfaceTool_VIntervals(*args) -> "void" :
+def Adaptor3d_HSurfaceTool_VIntervals(*args):
   """
     :param S:
     :type S: Handle_Adaptor3d_HSurface &
@@ -2001,7 +1999,7 @@ def Adaptor3d_HSurfaceTool_VIntervals(*args) -> "void" :
     """
   return _Adaptor3d.Adaptor3d_HSurfaceTool_VIntervals(*args)
 
-def Adaptor3d_HSurfaceTool_UTrim(*args) -> "Handle_Adaptor3d_HSurface" :
+def Adaptor3d_HSurfaceTool_UTrim(*args):
   """
     * If <First> >= <Last>
 
@@ -2018,7 +2016,7 @@ def Adaptor3d_HSurfaceTool_UTrim(*args) -> "Handle_Adaptor3d_HSurface" :
     """
   return _Adaptor3d.Adaptor3d_HSurfaceTool_UTrim(*args)
 
-def Adaptor3d_HSurfaceTool_VTrim(*args) -> "Handle_Adaptor3d_HSurface" :
+def Adaptor3d_HSurfaceTool_VTrim(*args):
   """
     * If <First> >= <Last>
 
@@ -2035,7 +2033,7 @@ def Adaptor3d_HSurfaceTool_VTrim(*args) -> "Handle_Adaptor3d_HSurface" :
     """
   return _Adaptor3d.Adaptor3d_HSurfaceTool_VTrim(*args)
 
-def Adaptor3d_HSurfaceTool_IsUClosed(*args) -> "Standard_Boolean" :
+def Adaptor3d_HSurfaceTool_IsUClosed(*args):
   """
     :param S:
     :type S: Handle_Adaptor3d_HSurface &
@@ -2044,7 +2042,7 @@ def Adaptor3d_HSurfaceTool_IsUClosed(*args) -> "Standard_Boolean" :
     """
   return _Adaptor3d.Adaptor3d_HSurfaceTool_IsUClosed(*args)
 
-def Adaptor3d_HSurfaceTool_IsVClosed(*args) -> "Standard_Boolean" :
+def Adaptor3d_HSurfaceTool_IsVClosed(*args):
   """
     :param S:
     :type S: Handle_Adaptor3d_HSurface &
@@ -2053,7 +2051,7 @@ def Adaptor3d_HSurfaceTool_IsVClosed(*args) -> "Standard_Boolean" :
     """
   return _Adaptor3d.Adaptor3d_HSurfaceTool_IsVClosed(*args)
 
-def Adaptor3d_HSurfaceTool_IsUPeriodic(*args) -> "Standard_Boolean" :
+def Adaptor3d_HSurfaceTool_IsUPeriodic(*args):
   """
     :param S:
     :type S: Handle_Adaptor3d_HSurface &
@@ -2062,7 +2060,7 @@ def Adaptor3d_HSurfaceTool_IsUPeriodic(*args) -> "Standard_Boolean" :
     """
   return _Adaptor3d.Adaptor3d_HSurfaceTool_IsUPeriodic(*args)
 
-def Adaptor3d_HSurfaceTool_UPeriod(*args) -> "Standard_Real" :
+def Adaptor3d_HSurfaceTool_UPeriod(*args):
   """
     :param S:
     :type S: Handle_Adaptor3d_HSurface &
@@ -2071,7 +2069,7 @@ def Adaptor3d_HSurfaceTool_UPeriod(*args) -> "Standard_Real" :
     """
   return _Adaptor3d.Adaptor3d_HSurfaceTool_UPeriod(*args)
 
-def Adaptor3d_HSurfaceTool_IsVPeriodic(*args) -> "Standard_Boolean" :
+def Adaptor3d_HSurfaceTool_IsVPeriodic(*args):
   """
     :param S:
     :type S: Handle_Adaptor3d_HSurface &
@@ -2080,7 +2078,7 @@ def Adaptor3d_HSurfaceTool_IsVPeriodic(*args) -> "Standard_Boolean" :
     """
   return _Adaptor3d.Adaptor3d_HSurfaceTool_IsVPeriodic(*args)
 
-def Adaptor3d_HSurfaceTool_VPeriod(*args) -> "Standard_Real" :
+def Adaptor3d_HSurfaceTool_VPeriod(*args):
   """
     :param S:
     :type S: Handle_Adaptor3d_HSurface &
@@ -2089,7 +2087,7 @@ def Adaptor3d_HSurfaceTool_VPeriod(*args) -> "Standard_Real" :
     """
   return _Adaptor3d.Adaptor3d_HSurfaceTool_VPeriod(*args)
 
-def Adaptor3d_HSurfaceTool_Value(*args) -> "gp_Pnt" :
+def Adaptor3d_HSurfaceTool_Value(*args):
   """
     :param S:
     :type S: Handle_Adaptor3d_HSurface &
@@ -2102,7 +2100,7 @@ def Adaptor3d_HSurfaceTool_Value(*args) -> "gp_Pnt" :
     """
   return _Adaptor3d.Adaptor3d_HSurfaceTool_Value(*args)
 
-def Adaptor3d_HSurfaceTool_D0(*args) -> "void" :
+def Adaptor3d_HSurfaceTool_D0(*args):
   """
     :param S:
     :type S: Handle_Adaptor3d_HSurface &
@@ -2117,7 +2115,7 @@ def Adaptor3d_HSurfaceTool_D0(*args) -> "void" :
     """
   return _Adaptor3d.Adaptor3d_HSurfaceTool_D0(*args)
 
-def Adaptor3d_HSurfaceTool_D1(*args) -> "void" :
+def Adaptor3d_HSurfaceTool_D1(*args):
   """
     :param S:
     :type S: Handle_Adaptor3d_HSurface &
@@ -2136,7 +2134,7 @@ def Adaptor3d_HSurfaceTool_D1(*args) -> "void" :
     """
   return _Adaptor3d.Adaptor3d_HSurfaceTool_D1(*args)
 
-def Adaptor3d_HSurfaceTool_D2(*args) -> "void" :
+def Adaptor3d_HSurfaceTool_D2(*args):
   """
     :param S:
     :type S: Handle_Adaptor3d_HSurface &
@@ -2161,7 +2159,7 @@ def Adaptor3d_HSurfaceTool_D2(*args) -> "void" :
     """
   return _Adaptor3d.Adaptor3d_HSurfaceTool_D2(*args)
 
-def Adaptor3d_HSurfaceTool_D3(*args) -> "void" :
+def Adaptor3d_HSurfaceTool_D3(*args):
   """
     :param S:
     :type S: Handle_Adaptor3d_HSurface &
@@ -2194,7 +2192,7 @@ def Adaptor3d_HSurfaceTool_D3(*args) -> "void" :
     """
   return _Adaptor3d.Adaptor3d_HSurfaceTool_D3(*args)
 
-def Adaptor3d_HSurfaceTool_DN(*args) -> "gp_Vec" :
+def Adaptor3d_HSurfaceTool_DN(*args):
   """
     :param S:
     :type S: Handle_Adaptor3d_HSurface &
@@ -2203,15 +2201,15 @@ def Adaptor3d_HSurfaceTool_DN(*args) -> "gp_Vec" :
     :param v:
     :type v: float
     :param Nu:
-    :type Nu: int
+    :type Nu: Standard_Integer
     :param Nv:
-    :type Nv: int
+    :type Nv: Standard_Integer
     :rtype: gp_Vec
 
     """
   return _Adaptor3d.Adaptor3d_HSurfaceTool_DN(*args)
 
-def Adaptor3d_HSurfaceTool_UResolution(*args) -> "Standard_Real" :
+def Adaptor3d_HSurfaceTool_UResolution(*args):
   """
     :param S:
     :type S: Handle_Adaptor3d_HSurface &
@@ -2222,7 +2220,7 @@ def Adaptor3d_HSurfaceTool_UResolution(*args) -> "Standard_Real" :
     """
   return _Adaptor3d.Adaptor3d_HSurfaceTool_UResolution(*args)
 
-def Adaptor3d_HSurfaceTool_VResolution(*args) -> "Standard_Real" :
+def Adaptor3d_HSurfaceTool_VResolution(*args):
   """
     :param S:
     :type S: Handle_Adaptor3d_HSurface &
@@ -2233,7 +2231,7 @@ def Adaptor3d_HSurfaceTool_VResolution(*args) -> "Standard_Real" :
     """
   return _Adaptor3d.Adaptor3d_HSurfaceTool_VResolution(*args)
 
-def Adaptor3d_HSurfaceTool_GetType(*args) -> "GeomAbs_SurfaceType" :
+def Adaptor3d_HSurfaceTool_GetType(*args):
   """
     :param S:
     :type S: Handle_Adaptor3d_HSurface &
@@ -2242,7 +2240,7 @@ def Adaptor3d_HSurfaceTool_GetType(*args) -> "GeomAbs_SurfaceType" :
     """
   return _Adaptor3d.Adaptor3d_HSurfaceTool_GetType(*args)
 
-def Adaptor3d_HSurfaceTool_Plane(*args) -> "gp_Pln" :
+def Adaptor3d_HSurfaceTool_Plane(*args):
   """
     :param S:
     :type S: Handle_Adaptor3d_HSurface &
@@ -2251,7 +2249,7 @@ def Adaptor3d_HSurfaceTool_Plane(*args) -> "gp_Pln" :
     """
   return _Adaptor3d.Adaptor3d_HSurfaceTool_Plane(*args)
 
-def Adaptor3d_HSurfaceTool_Cylinder(*args) -> "gp_Cylinder" :
+def Adaptor3d_HSurfaceTool_Cylinder(*args):
   """
     :param S:
     :type S: Handle_Adaptor3d_HSurface &
@@ -2260,7 +2258,7 @@ def Adaptor3d_HSurfaceTool_Cylinder(*args) -> "gp_Cylinder" :
     """
   return _Adaptor3d.Adaptor3d_HSurfaceTool_Cylinder(*args)
 
-def Adaptor3d_HSurfaceTool_Cone(*args) -> "gp_Cone" :
+def Adaptor3d_HSurfaceTool_Cone(*args):
   """
     :param S:
     :type S: Handle_Adaptor3d_HSurface &
@@ -2269,7 +2267,7 @@ def Adaptor3d_HSurfaceTool_Cone(*args) -> "gp_Cone" :
     """
   return _Adaptor3d.Adaptor3d_HSurfaceTool_Cone(*args)
 
-def Adaptor3d_HSurfaceTool_Torus(*args) -> "gp_Torus" :
+def Adaptor3d_HSurfaceTool_Torus(*args):
   """
     :param S:
     :type S: Handle_Adaptor3d_HSurface &
@@ -2278,7 +2276,7 @@ def Adaptor3d_HSurfaceTool_Torus(*args) -> "gp_Torus" :
     """
   return _Adaptor3d.Adaptor3d_HSurfaceTool_Torus(*args)
 
-def Adaptor3d_HSurfaceTool_Sphere(*args) -> "gp_Sphere" :
+def Adaptor3d_HSurfaceTool_Sphere(*args):
   """
     :param S:
     :type S: Handle_Adaptor3d_HSurface &
@@ -2287,7 +2285,7 @@ def Adaptor3d_HSurfaceTool_Sphere(*args) -> "gp_Sphere" :
     """
   return _Adaptor3d.Adaptor3d_HSurfaceTool_Sphere(*args)
 
-def Adaptor3d_HSurfaceTool_Bezier(*args) -> "Handle_Geom_BezierSurface" :
+def Adaptor3d_HSurfaceTool_Bezier(*args):
   """
     :param S:
     :type S: Handle_Adaptor3d_HSurface &
@@ -2296,7 +2294,7 @@ def Adaptor3d_HSurfaceTool_Bezier(*args) -> "Handle_Geom_BezierSurface" :
     """
   return _Adaptor3d.Adaptor3d_HSurfaceTool_Bezier(*args)
 
-def Adaptor3d_HSurfaceTool_BSpline(*args) -> "Handle_Geom_BSplineSurface" :
+def Adaptor3d_HSurfaceTool_BSpline(*args):
   """
     :param S:
     :type S: Handle_Adaptor3d_HSurface &
@@ -2305,7 +2303,7 @@ def Adaptor3d_HSurfaceTool_BSpline(*args) -> "Handle_Geom_BSplineSurface" :
     """
   return _Adaptor3d.Adaptor3d_HSurfaceTool_BSpline(*args)
 
-def Adaptor3d_HSurfaceTool_AxeOfRevolution(*args) -> "gp_Ax1" :
+def Adaptor3d_HSurfaceTool_AxeOfRevolution(*args):
   """
     :param S:
     :type S: Handle_Adaptor3d_HSurface &
@@ -2314,7 +2312,7 @@ def Adaptor3d_HSurfaceTool_AxeOfRevolution(*args) -> "gp_Ax1" :
     """
   return _Adaptor3d.Adaptor3d_HSurfaceTool_AxeOfRevolution(*args)
 
-def Adaptor3d_HSurfaceTool_Direction(*args) -> "gp_Dir" :
+def Adaptor3d_HSurfaceTool_Direction(*args):
   """
     :param S:
     :type S: Handle_Adaptor3d_HSurface &
@@ -2323,7 +2321,7 @@ def Adaptor3d_HSurfaceTool_Direction(*args) -> "gp_Dir" :
     """
   return _Adaptor3d.Adaptor3d_HSurfaceTool_Direction(*args)
 
-def Adaptor3d_HSurfaceTool_BasisCurve(*args) -> "Handle_Adaptor3d_HCurve" :
+def Adaptor3d_HSurfaceTool_BasisCurve(*args):
   """
     :param S:
     :type S: Handle_Adaptor3d_HSurface &
@@ -2332,7 +2330,7 @@ def Adaptor3d_HSurfaceTool_BasisCurve(*args) -> "Handle_Adaptor3d_HCurve" :
     """
   return _Adaptor3d.Adaptor3d_HSurfaceTool_BasisCurve(*args)
 
-def Adaptor3d_HSurfaceTool_BasisSurface(*args) -> "Handle_Adaptor3d_HSurface" :
+def Adaptor3d_HSurfaceTool_BasisSurface(*args):
   """
     :param S:
     :type S: Handle_Adaptor3d_HSurface &
@@ -2341,7 +2339,7 @@ def Adaptor3d_HSurfaceTool_BasisSurface(*args) -> "Handle_Adaptor3d_HSurface" :
     """
   return _Adaptor3d.Adaptor3d_HSurfaceTool_BasisSurface(*args)
 
-def Adaptor3d_HSurfaceTool_OffsetValue(*args) -> "Standard_Real" :
+def Adaptor3d_HSurfaceTool_OffsetValue(*args):
   """
     :param S:
     :type S: Handle_Adaptor3d_HSurface &
@@ -2350,7 +2348,7 @@ def Adaptor3d_HSurfaceTool_OffsetValue(*args) -> "Standard_Real" :
     """
   return _Adaptor3d.Adaptor3d_HSurfaceTool_OffsetValue(*args)
 
-def Adaptor3d_HSurfaceTool_NbSamplesU(*args) -> "Standard_Integer" :
+def Adaptor3d_HSurfaceTool_NbSamplesU(*args):
   """
     :param S:
     :type S: Handle_Adaptor3d_HSurface &
@@ -2367,7 +2365,7 @@ def Adaptor3d_HSurfaceTool_NbSamplesU(*args) -> "Standard_Integer" :
     """
   return _Adaptor3d.Adaptor3d_HSurfaceTool_NbSamplesU(*args)
 
-def Adaptor3d_HSurfaceTool_NbSamplesV(*args) -> "Standard_Integer" :
+def Adaptor3d_HSurfaceTool_NbSamplesV(*args):
   """
     :param S:
     :type S: Handle_Adaptor3d_HSurface &
@@ -2401,14 +2399,14 @@ class Adaptor3d_HVertex(OCC.MMgt.MMgt_TShared):
 
         """
         _Adaptor3d.Adaptor3d_HVertex_swiginit(self,_Adaptor3d.new_Adaptor3d_HVertex(*args))
-    def Value(self, *args) -> "gp_Pnt2d" :
+    def Value(self):
         """
         :rtype: gp_Pnt2d
 
         """
-        return _Adaptor3d.Adaptor3d_HVertex_Value(self, *args)
+        return _Adaptor3d.Adaptor3d_HVertex_Value(self)
 
-    def Parameter(self, *args) -> "Standard_Real" :
+    def Parameter(self, *args):
         """
         :param C:
         :type C: Handle_Adaptor2d_HCurve2d &
@@ -2417,7 +2415,7 @@ class Adaptor3d_HVertex(OCC.MMgt.MMgt_TShared):
         """
         return _Adaptor3d.Adaptor3d_HVertex_Parameter(self, *args)
 
-    def Resolution(self, *args) -> "Standard_Real" :
+    def Resolution(self, *args):
         """
         * Parametric resolution (2d).
 
@@ -2428,14 +2426,14 @@ class Adaptor3d_HVertex(OCC.MMgt.MMgt_TShared):
         """
         return _Adaptor3d.Adaptor3d_HVertex_Resolution(self, *args)
 
-    def Orientation(self, *args) -> "TopAbs_Orientation" :
+    def Orientation(self):
         """
         :rtype: TopAbs_Orientation
 
         """
-        return _Adaptor3d.Adaptor3d_HVertex_Orientation(self, *args)
+        return _Adaptor3d.Adaptor3d_HVertex_Orientation(self)
 
-    def IsSame(self, *args) -> "Standard_Boolean" :
+    def IsSame(self, *args):
         """
         :param Other:
         :type Other: Handle_Adaptor3d_HVertex &
@@ -2444,11 +2442,11 @@ class Adaptor3d_HVertex(OCC.MMgt.MMgt_TShared):
         """
         return _Adaptor3d.Adaptor3d_HVertex_IsSame(self, *args)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Adaptor3d_HVertex self)"""
         return _Adaptor3d.Adaptor3d_HVertex__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Adaptor3d_HVertex" :
+    def GetHandle(self):
         """GetHandle(Adaptor3d_HVertex self) -> Handle_Adaptor3d_HVertex"""
         return _Adaptor3d.Adaptor3d_HVertex_GetHandle(self)
 
@@ -2491,7 +2489,7 @@ Handle_Adaptor3d_HVertex._kill_pointed = new_instancemethod(_Adaptor3d.Handle_Ad
 Handle_Adaptor3d_HVertex_swigregister = _Adaptor3d.Handle_Adaptor3d_HVertex_swigregister
 Handle_Adaptor3d_HVertex_swigregister(Handle_Adaptor3d_HVertex)
 
-def Handle_Adaptor3d_HVertex_DownCast(*args) -> "Handle_Adaptor3d_HVertex const" :
+def Handle_Adaptor3d_HVertex_DownCast(*args):
   return _Adaptor3d.Handle_Adaptor3d_HVertex_DownCast(*args)
 Handle_Adaptor3d_HVertex_DownCast = _Adaptor3d.Handle_Adaptor3d_HVertex_DownCast
 
@@ -2507,12 +2505,12 @@ class Adaptor3d_InterFunc(object):
         :param FixVal:
         :type FixVal: float
         :param Fix:
-        :type Fix: int
+        :type Fix: Standard_Integer
         :rtype: None
 
         """
         _Adaptor3d.Adaptor3d_InterFunc_swiginit(self,_Adaptor3d.new_Adaptor3d_InterFunc(*args))
-    def Value(self, *args) -> "Standard_Boolean" :
+    def Value(self, *args):
         """
         * computes the value <F>of the function for the variable <X>.  Returns True if the calculation were successfully done, False otherwise.
 
@@ -2525,7 +2523,7 @@ class Adaptor3d_InterFunc(object):
         """
         return _Adaptor3d.Adaptor3d_InterFunc_Value(self, *args)
 
-    def Derivative(self, *args) -> "Standard_Boolean" :
+    def Derivative(self, *args):
         """
         * computes the derivative <D> of the function for the variable <X>. Returns True if the calculation were successfully done, False otherwise.
 
@@ -2538,7 +2536,7 @@ class Adaptor3d_InterFunc(object):
         """
         return _Adaptor3d.Adaptor3d_InterFunc_Derivative(self, *args)
 
-    def Values(self, *args) -> "Standard_Boolean" :
+    def Values(self, *args):
         """
         * computes the value <F> and the derivative <D> of the function for the variable <X>. Returns True if the calculation were successfully done, False otherwise.
 
@@ -2605,7 +2603,7 @@ class Adaptor3d_OffsetCurve(OCC.Adaptor2d.Adaptor2d_Curve2d):
 
         """
         _Adaptor3d.Adaptor3d_OffsetCurve_swiginit(self,_Adaptor3d.new_Adaptor3d_OffsetCurve(*args))
-    def Load(self, *args) -> "void" :
+    def Load(self, *args):
         """
         * Changes the curve. The Offset is reset to 0.
 
@@ -2632,19 +2630,19 @@ class Adaptor3d_OffsetCurve(OCC.Adaptor2d.Adaptor2d_Curve2d):
         """
         return _Adaptor3d.Adaptor3d_OffsetCurve_Load(self, *args)
 
-    def Curve(self, *args) -> "Handle_Adaptor2d_HCurve2d const &" :
+    def Curve(self):
         """
         :rtype: Handle_Adaptor2d_HCurve2d
 
         """
-        return _Adaptor3d.Adaptor3d_OffsetCurve_Curve(self, *args)
+        return _Adaptor3d.Adaptor3d_OffsetCurve_Curve(self)
 
-    def Offset(self, *args) -> "Standard_Real" :
+    def Offset(self):
         """
         :rtype: float
 
         """
-        return _Adaptor3d.Adaptor3d_OffsetCurve_Offset(self, *args)
+        return _Adaptor3d.Adaptor3d_OffsetCurve_Offset(self)
 
     def __del__(self):
     	try:
@@ -2663,57 +2661,58 @@ Adaptor3d_OffsetCurve_swigregister(Adaptor3d_OffsetCurve)
 
 class Adaptor3d_Surface(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
+    def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def Delete(self, *args) -> "void" :
+    def Delete(self):
         """
         :rtype: void
 
         """
-        return _Adaptor3d.Adaptor3d_Surface_Delete(self, *args)
+        return _Adaptor3d.Adaptor3d_Surface_Delete(self)
 
-    def FirstUParameter(self, *args) -> "Standard_Real" :
+    def FirstUParameter(self):
         """
         :rtype: float
 
         """
-        return _Adaptor3d.Adaptor3d_Surface_FirstUParameter(self, *args)
+        return _Adaptor3d.Adaptor3d_Surface_FirstUParameter(self)
 
-    def LastUParameter(self, *args) -> "Standard_Real" :
+    def LastUParameter(self):
         """
         :rtype: float
 
         """
-        return _Adaptor3d.Adaptor3d_Surface_LastUParameter(self, *args)
+        return _Adaptor3d.Adaptor3d_Surface_LastUParameter(self)
 
-    def FirstVParameter(self, *args) -> "Standard_Real" :
+    def FirstVParameter(self):
         """
         :rtype: float
 
         """
-        return _Adaptor3d.Adaptor3d_Surface_FirstVParameter(self, *args)
+        return _Adaptor3d.Adaptor3d_Surface_FirstVParameter(self)
 
-    def LastVParameter(self, *args) -> "Standard_Real" :
+    def LastVParameter(self):
         """
         :rtype: float
 
         """
-        return _Adaptor3d.Adaptor3d_Surface_LastVParameter(self, *args)
+        return _Adaptor3d.Adaptor3d_Surface_LastVParameter(self)
 
-    def UContinuity(self, *args) -> "GeomAbs_Shape" :
+    def UContinuity(self):
         """
         :rtype: GeomAbs_Shape
 
         """
-        return _Adaptor3d.Adaptor3d_Surface_UContinuity(self, *args)
+        return _Adaptor3d.Adaptor3d_Surface_UContinuity(self)
 
-    def VContinuity(self, *args) -> "GeomAbs_Shape" :
+    def VContinuity(self):
         """
         :rtype: GeomAbs_Shape
 
         """
-        return _Adaptor3d.Adaptor3d_Surface_VContinuity(self, *args)
+        return _Adaptor3d.Adaptor3d_Surface_VContinuity(self)
 
-    def NbUIntervals(self, *args) -> "Standard_Integer" :
+    def NbUIntervals(self, *args):
         """
         * Returns the number of U intervals for continuity <S>. May be one if UContinuity(me) >= <S>
 
@@ -2724,7 +2723,7 @@ class Adaptor3d_Surface(object):
         """
         return _Adaptor3d.Adaptor3d_Surface_NbUIntervals(self, *args)
 
-    def NbVIntervals(self, *args) -> "Standard_Integer" :
+    def NbVIntervals(self, *args):
         """
         * Returns the number of V intervals for continuity <S>. May be one if VContinuity(me) >= <S>
 
@@ -2735,7 +2734,7 @@ class Adaptor3d_Surface(object):
         """
         return _Adaptor3d.Adaptor3d_Surface_NbVIntervals(self, *args)
 
-    def UIntervals(self, *args) -> "void" :
+    def UIntervals(self, *args):
         """
         * Returns the intervals with the requested continuity in the U direction.
 
@@ -2748,7 +2747,7 @@ class Adaptor3d_Surface(object):
         """
         return _Adaptor3d.Adaptor3d_Surface_UIntervals(self, *args)
 
-    def VIntervals(self, *args) -> "void" :
+    def VIntervals(self, *args):
         """
         * Returns the intervals with the requested continuity in the V direction.
 
@@ -2761,7 +2760,7 @@ class Adaptor3d_Surface(object):
         """
         return _Adaptor3d.Adaptor3d_Surface_VIntervals(self, *args)
 
-    def UTrim(self, *args) -> "Handle_Adaptor3d_HSurface" :
+    def UTrim(self, *args):
         """
         * Returns a surface trimmed in the U direction equivalent of <self> between parameters <First> and <Last>. <Tol> is used to test for 3d points confusion. If <First> >= <Last>
 
@@ -2776,7 +2775,7 @@ class Adaptor3d_Surface(object):
         """
         return _Adaptor3d.Adaptor3d_Surface_UTrim(self, *args)
 
-    def VTrim(self, *args) -> "Handle_Adaptor3d_HSurface" :
+    def VTrim(self, *args):
         """
         * Returns a surface trimmed in the V direction between parameters <First> and <Last>. <Tol> is used to test for 3d points confusion. If <First> >= <Last>
 
@@ -2791,49 +2790,49 @@ class Adaptor3d_Surface(object):
         """
         return _Adaptor3d.Adaptor3d_Surface_VTrim(self, *args)
 
-    def IsUClosed(self, *args) -> "Standard_Boolean" :
+    def IsUClosed(self):
         """
         :rtype: bool
 
         """
-        return _Adaptor3d.Adaptor3d_Surface_IsUClosed(self, *args)
+        return _Adaptor3d.Adaptor3d_Surface_IsUClosed(self)
 
-    def IsVClosed(self, *args) -> "Standard_Boolean" :
+    def IsVClosed(self):
         """
         :rtype: bool
 
         """
-        return _Adaptor3d.Adaptor3d_Surface_IsVClosed(self, *args)
+        return _Adaptor3d.Adaptor3d_Surface_IsVClosed(self)
 
-    def IsUPeriodic(self, *args) -> "Standard_Boolean" :
+    def IsUPeriodic(self):
         """
         :rtype: bool
 
         """
-        return _Adaptor3d.Adaptor3d_Surface_IsUPeriodic(self, *args)
+        return _Adaptor3d.Adaptor3d_Surface_IsUPeriodic(self)
 
-    def UPeriod(self, *args) -> "Standard_Real" :
+    def UPeriod(self):
         """
         :rtype: float
 
         """
-        return _Adaptor3d.Adaptor3d_Surface_UPeriod(self, *args)
+        return _Adaptor3d.Adaptor3d_Surface_UPeriod(self)
 
-    def IsVPeriodic(self, *args) -> "Standard_Boolean" :
+    def IsVPeriodic(self):
         """
         :rtype: bool
 
         """
-        return _Adaptor3d.Adaptor3d_Surface_IsVPeriodic(self, *args)
+        return _Adaptor3d.Adaptor3d_Surface_IsVPeriodic(self)
 
-    def VPeriod(self, *args) -> "Standard_Real" :
+    def VPeriod(self):
         """
         :rtype: float
 
         """
-        return _Adaptor3d.Adaptor3d_Surface_VPeriod(self, *args)
+        return _Adaptor3d.Adaptor3d_Surface_VPeriod(self)
 
-    def Value(self, *args) -> "gp_Pnt" :
+    def Value(self, *args):
         """
         * Computes the point of parameters U,V on the surface.
 
@@ -2846,7 +2845,7 @@ class Adaptor3d_Surface(object):
         """
         return _Adaptor3d.Adaptor3d_Surface_Value(self, *args)
 
-    def D0(self, *args) -> "void" :
+    def D0(self, *args):
         """
         * Computes the point of parameters U,V on the surface.
 
@@ -2861,7 +2860,7 @@ class Adaptor3d_Surface(object):
         """
         return _Adaptor3d.Adaptor3d_Surface_D0(self, *args)
 
-    def D1(self, *args) -> "void" :
+    def D1(self, *args):
         """
         * Computes the point and the first derivatives on the surface. Raised if the continuity of the current intervals is not C1.
 
@@ -2880,7 +2879,7 @@ class Adaptor3d_Surface(object):
         """
         return _Adaptor3d.Adaptor3d_Surface_D1(self, *args)
 
-    def D2(self, *args) -> "void" :
+    def D2(self, *args):
         """
         * Computes the point, the first and second derivatives on the surface. Raised if the continuity of the current intervals is not C2.
 
@@ -2905,7 +2904,7 @@ class Adaptor3d_Surface(object):
         """
         return _Adaptor3d.Adaptor3d_Surface_D2(self, *args)
 
-    def D3(self, *args) -> "void" :
+    def D3(self, *args):
         """
         * Computes the point, the first, second and third derivatives on the surface. Raised if the continuity of the current intervals is not C3.
 
@@ -2938,7 +2937,7 @@ class Adaptor3d_Surface(object):
         """
         return _Adaptor3d.Adaptor3d_Surface_D3(self, *args)
 
-    def DN(self, *args) -> "gp_Vec" :
+    def DN(self, *args):
         """
         * Computes the derivative of order Nu in the direction U and Nv in the direction V at the point P(U, V). Raised if the current U interval is not not CNu and the current V interval is not CNv. Raised if Nu + Nv < 1 or Nu < 0 or Nv < 0.
 
@@ -2947,15 +2946,15 @@ class Adaptor3d_Surface(object):
         :param V:
         :type V: float
         :param Nu:
-        :type Nu: int
+        :type Nu: Standard_Integer
         :param Nv:
-        :type Nv: int
+        :type Nv: Standard_Integer
         :rtype: gp_Vec
 
         """
         return _Adaptor3d.Adaptor3d_Surface_DN(self, *args)
 
-    def UResolution(self, *args) -> "Standard_Real" :
+    def UResolution(self, *args):
         """
         * Returns the parametric U resolution corresponding  to the real space resolution <R3d>.
 
@@ -2966,7 +2965,7 @@ class Adaptor3d_Surface(object):
         """
         return _Adaptor3d.Adaptor3d_Surface_UResolution(self, *args)
 
-    def VResolution(self, *args) -> "Standard_Real" :
+    def VResolution(self, *args):
         """
         * Returns the parametric V resolution corresponding  to the real space resolution <R3d>.
 
@@ -2977,157 +2976,155 @@ class Adaptor3d_Surface(object):
         """
         return _Adaptor3d.Adaptor3d_Surface_VResolution(self, *args)
 
-    def GetType(self, *args) -> "GeomAbs_SurfaceType" :
+    def GetType(self):
         """
         * Returns the type of the surface : Plane, Cylinder, Cone, Sphere, Torus, BezierSurface, BSplineSurface, SurfaceOfRevolution, SurfaceOfExtrusion, OtherSurface
 
         :rtype: GeomAbs_SurfaceType
 
         """
-        return _Adaptor3d.Adaptor3d_Surface_GetType(self, *args)
+        return _Adaptor3d.Adaptor3d_Surface_GetType(self)
 
-    def Plane(self, *args) -> "gp_Pln" :
+    def Plane(self):
         """
         :rtype: gp_Pln
 
         """
-        return _Adaptor3d.Adaptor3d_Surface_Plane(self, *args)
+        return _Adaptor3d.Adaptor3d_Surface_Plane(self)
 
-    def Cylinder(self, *args) -> "gp_Cylinder" :
+    def Cylinder(self):
         """
         :rtype: gp_Cylinder
 
         """
-        return _Adaptor3d.Adaptor3d_Surface_Cylinder(self, *args)
+        return _Adaptor3d.Adaptor3d_Surface_Cylinder(self)
 
-    def Cone(self, *args) -> "gp_Cone" :
+    def Cone(self):
         """
         :rtype: gp_Cone
 
         """
-        return _Adaptor3d.Adaptor3d_Surface_Cone(self, *args)
+        return _Adaptor3d.Adaptor3d_Surface_Cone(self)
 
-    def Sphere(self, *args) -> "gp_Sphere" :
+    def Sphere(self):
         """
         :rtype: gp_Sphere
 
         """
-        return _Adaptor3d.Adaptor3d_Surface_Sphere(self, *args)
+        return _Adaptor3d.Adaptor3d_Surface_Sphere(self)
 
-    def Torus(self, *args) -> "gp_Torus" :
+    def Torus(self):
         """
         :rtype: gp_Torus
 
         """
-        return _Adaptor3d.Adaptor3d_Surface_Torus(self, *args)
+        return _Adaptor3d.Adaptor3d_Surface_Torus(self)
 
-    def UDegree(self, *args) -> "Standard_Integer" :
+    def UDegree(self):
         """
         :rtype: int
 
         """
-        return _Adaptor3d.Adaptor3d_Surface_UDegree(self, *args)
+        return _Adaptor3d.Adaptor3d_Surface_UDegree(self)
 
-    def NbUPoles(self, *args) -> "Standard_Integer" :
+    def NbUPoles(self):
         """
         :rtype: int
 
         """
-        return _Adaptor3d.Adaptor3d_Surface_NbUPoles(self, *args)
+        return _Adaptor3d.Adaptor3d_Surface_NbUPoles(self)
 
-    def VDegree(self, *args) -> "Standard_Integer" :
+    def VDegree(self):
         """
         :rtype: int
 
         """
-        return _Adaptor3d.Adaptor3d_Surface_VDegree(self, *args)
+        return _Adaptor3d.Adaptor3d_Surface_VDegree(self)
 
-    def NbVPoles(self, *args) -> "Standard_Integer" :
+    def NbVPoles(self):
         """
         :rtype: int
 
         """
-        return _Adaptor3d.Adaptor3d_Surface_NbVPoles(self, *args)
+        return _Adaptor3d.Adaptor3d_Surface_NbVPoles(self)
 
-    def NbUKnots(self, *args) -> "Standard_Integer" :
+    def NbUKnots(self):
         """
         :rtype: int
 
         """
-        return _Adaptor3d.Adaptor3d_Surface_NbUKnots(self, *args)
+        return _Adaptor3d.Adaptor3d_Surface_NbUKnots(self)
 
-    def NbVKnots(self, *args) -> "Standard_Integer" :
+    def NbVKnots(self):
         """
         :rtype: int
 
         """
-        return _Adaptor3d.Adaptor3d_Surface_NbVKnots(self, *args)
+        return _Adaptor3d.Adaptor3d_Surface_NbVKnots(self)
 
-    def IsURational(self, *args) -> "Standard_Boolean" :
+    def IsURational(self):
         """
         :rtype: bool
 
         """
-        return _Adaptor3d.Adaptor3d_Surface_IsURational(self, *args)
+        return _Adaptor3d.Adaptor3d_Surface_IsURational(self)
 
-    def IsVRational(self, *args) -> "Standard_Boolean" :
+    def IsVRational(self):
         """
         :rtype: bool
 
         """
-        return _Adaptor3d.Adaptor3d_Surface_IsVRational(self, *args)
+        return _Adaptor3d.Adaptor3d_Surface_IsVRational(self)
 
-    def Bezier(self, *args) -> "Handle_Geom_BezierSurface" :
+    def Bezier(self):
         """
         :rtype: Handle_Geom_BezierSurface
 
         """
-        return _Adaptor3d.Adaptor3d_Surface_Bezier(self, *args)
+        return _Adaptor3d.Adaptor3d_Surface_Bezier(self)
 
-    def BSpline(self, *args) -> "Handle_Geom_BSplineSurface" :
+    def BSpline(self):
         """
         :rtype: Handle_Geom_BSplineSurface
 
         """
-        return _Adaptor3d.Adaptor3d_Surface_BSpline(self, *args)
+        return _Adaptor3d.Adaptor3d_Surface_BSpline(self)
 
-    def AxeOfRevolution(self, *args) -> "gp_Ax1" :
+    def AxeOfRevolution(self):
         """
         :rtype: gp_Ax1
 
         """
-        return _Adaptor3d.Adaptor3d_Surface_AxeOfRevolution(self, *args)
+        return _Adaptor3d.Adaptor3d_Surface_AxeOfRevolution(self)
 
-    def Direction(self, *args) -> "gp_Dir" :
+    def Direction(self):
         """
         :rtype: gp_Dir
 
         """
-        return _Adaptor3d.Adaptor3d_Surface_Direction(self, *args)
+        return _Adaptor3d.Adaptor3d_Surface_Direction(self)
 
-    def BasisCurve(self, *args) -> "Handle_Adaptor3d_HCurve" :
+    def BasisCurve(self):
         """
         :rtype: Handle_Adaptor3d_HCurve
 
         """
-        return _Adaptor3d.Adaptor3d_Surface_BasisCurve(self, *args)
+        return _Adaptor3d.Adaptor3d_Surface_BasisCurve(self)
 
-    def BasisSurface(self, *args) -> "Handle_Adaptor3d_HSurface" :
+    def BasisSurface(self):
         """
         :rtype: Handle_Adaptor3d_HSurface
 
         """
-        return _Adaptor3d.Adaptor3d_Surface_BasisSurface(self, *args)
+        return _Adaptor3d.Adaptor3d_Surface_BasisSurface(self)
 
-    def OffsetValue(self, *args) -> "Standard_Real" :
+    def OffsetValue(self):
         """
         :rtype: float
 
         """
-        return _Adaptor3d.Adaptor3d_Surface_OffsetValue(self, *args)
+        return _Adaptor3d.Adaptor3d_Surface_OffsetValue(self)
 
-    def __init__(self): 
-        _Adaptor3d.Adaptor3d_Surface_swiginit(self,_Adaptor3d.new_Adaptor3d_Surface())
     def __del__(self):
     	try:
     		self.thisown = False
@@ -3201,7 +3198,7 @@ class Adaptor3d_TopolTool(OCC.MMgt.MMgt_TShared):
 
         """
         _Adaptor3d.Adaptor3d_TopolTool_swiginit(self,_Adaptor3d.new_Adaptor3d_TopolTool(*args))
-    def Initialize(self, *args) -> "void" :
+    def Initialize(self, *args):
         """
         :rtype: void
 
@@ -3216,64 +3213,72 @@ class Adaptor3d_TopolTool(OCC.MMgt.MMgt_TShared):
         """
         return _Adaptor3d.Adaptor3d_TopolTool_Initialize(self, *args)
 
-    def Init(self, *args) -> "void" :
+    def Init(self):
         """
         :rtype: void
 
         """
-        return _Adaptor3d.Adaptor3d_TopolTool_Init(self, *args)
+        return _Adaptor3d.Adaptor3d_TopolTool_Init(self)
 
-    def More(self, *args) -> "Standard_Boolean" :
+    def More(self):
         """
         :rtype: bool
 
         """
-        return _Adaptor3d.Adaptor3d_TopolTool_More(self, *args)
+        return _Adaptor3d.Adaptor3d_TopolTool_More(self)
 
-    def Value(self, *args) -> "Handle_Adaptor2d_HCurve2d" :
+    def Value(self):
         """
         :rtype: Handle_Adaptor2d_HCurve2d
 
         """
-        return _Adaptor3d.Adaptor3d_TopolTool_Value(self, *args)
+        return _Adaptor3d.Adaptor3d_TopolTool_Value(self)
 
-    def Next(self, *args) -> "void" :
+    def Next(self):
         """
         :rtype: void
 
         """
-        return _Adaptor3d.Adaptor3d_TopolTool_Next(self, *args)
+        return _Adaptor3d.Adaptor3d_TopolTool_Next(self)
 
-    def InitVertexIterator(self, *args) -> "void" :
+    def InitVertexIterator(self):
         """
         :rtype: void
 
         """
-        return _Adaptor3d.Adaptor3d_TopolTool_InitVertexIterator(self, *args)
+        return _Adaptor3d.Adaptor3d_TopolTool_InitVertexIterator(self)
 
-    def MoreVertex(self, *args) -> "Standard_Boolean" :
+    def MoreVertex(self):
         """
         :rtype: bool
 
         """
-        return _Adaptor3d.Adaptor3d_TopolTool_MoreVertex(self, *args)
+        return _Adaptor3d.Adaptor3d_TopolTool_MoreVertex(self)
 
-    def Vertex(self, *args) -> "Handle_Adaptor3d_HVertex" :
+    def Vertex(self):
         """
         :rtype: Handle_Adaptor3d_HVertex
 
         """
-        return _Adaptor3d.Adaptor3d_TopolTool_Vertex(self, *args)
+        return _Adaptor3d.Adaptor3d_TopolTool_Vertex(self)
 
-    def NextVertex(self, *args) -> "void" :
+    def NextVertex(self):
         """
         :rtype: void
 
         """
-        return _Adaptor3d.Adaptor3d_TopolTool_NextVertex(self, *args)
+        return _Adaptor3d.Adaptor3d_TopolTool_NextVertex(self)
 
-    def Classify(self, *args) -> "TopAbs_State" :
+    def Classify(self, *args):
         """
+        :param P:
+        :type P: gp_Pnt2d
+        :param Tol:
+        :type Tol: float
+        :param ReacdreOnPeriodic: default value is Standard_True
+        :type ReacdreOnPeriodic: bool
+        :rtype: TopAbs_State
+
         :param P:
         :type P: gp_Pnt2d
         :param Tol:
@@ -3285,8 +3290,16 @@ class Adaptor3d_TopolTool(OCC.MMgt.MMgt_TShared):
         """
         return _Adaptor3d.Adaptor3d_TopolTool_Classify(self, *args)
 
-    def IsThePointOn(self, *args) -> "Standard_Boolean" :
+    def IsThePointOn(self, *args):
         """
+        :param P:
+        :type P: gp_Pnt2d
+        :param Tol:
+        :type Tol: float
+        :param ReacdreOnPeriodic: default value is Standard_True
+        :type ReacdreOnPeriodic: bool
+        :rtype: bool
+
         :param P:
         :type P: gp_Pnt2d
         :param Tol:
@@ -3298,7 +3311,7 @@ class Adaptor3d_TopolTool(OCC.MMgt.MMgt_TShared):
         """
         return _Adaptor3d.Adaptor3d_TopolTool_IsThePointOn(self, *args)
 
-    def Orientation(self, *args) -> "TopAbs_Orientation" :
+    def Orientation(self, *args):
         """
         * If the function returns the orientation of the arc. If the orientation is FORWARD or REVERSED, the arc is a 'real' limit of the surface. If the orientation is INTERNAL or EXTERNAL, the arc is considered as an arc on the surface.
 
@@ -3315,7 +3328,7 @@ class Adaptor3d_TopolTool(OCC.MMgt.MMgt_TShared):
         """
         return _Adaptor3d.Adaptor3d_TopolTool_Orientation(self, *args)
 
-    def Identical(self, *args) -> "Standard_Boolean" :
+    def Identical(self, *args):
         """
         * Returns True if the vertices V1 and V2 are identical. This method does not take the orientation of the vertices in account.
 
@@ -3328,16 +3341,16 @@ class Adaptor3d_TopolTool(OCC.MMgt.MMgt_TShared):
         """
         return _Adaptor3d.Adaptor3d_TopolTool_Identical(self, *args)
 
-    def Has3d(self, *args) -> "Standard_Boolean" :
+    def Has3d(self):
         """
         * answers if arcs and vertices may have 3d representations, so that we could use Tol3d and Pnt methods.
 
         :rtype: bool
 
         """
-        return _Adaptor3d.Adaptor3d_TopolTool_Has3d(self, *args)
+        return _Adaptor3d.Adaptor3d_TopolTool_Has3d(self)
 
-    def Tol3d(self, *args) -> "Standard_Real" :
+    def Tol3d(self, *args):
         """
         * returns 3d tolerance of the arc C
 
@@ -3354,7 +3367,7 @@ class Adaptor3d_TopolTool(OCC.MMgt.MMgt_TShared):
         """
         return _Adaptor3d.Adaptor3d_TopolTool_Tol3d(self, *args)
 
-    def Pnt(self, *args) -> "gp_Pnt" :
+    def Pnt(self, *args):
         """
         * returns 3d point of the vertex V
 
@@ -3365,41 +3378,41 @@ class Adaptor3d_TopolTool(OCC.MMgt.MMgt_TShared):
         """
         return _Adaptor3d.Adaptor3d_TopolTool_Pnt(self, *args)
 
-    def ComputeSamplePoints(self, *args) -> "void" :
+    def ComputeSamplePoints(self):
         """
         :rtype: void
 
         """
-        return _Adaptor3d.Adaptor3d_TopolTool_ComputeSamplePoints(self, *args)
+        return _Adaptor3d.Adaptor3d_TopolTool_ComputeSamplePoints(self)
 
-    def NbSamplesU(self, *args) -> "Standard_Integer" :
+    def NbSamplesU(self):
         """
         * compute the sample-points for the intersections algorithms
 
         :rtype: int
 
         """
-        return _Adaptor3d.Adaptor3d_TopolTool_NbSamplesU(self, *args)
+        return _Adaptor3d.Adaptor3d_TopolTool_NbSamplesU(self)
 
-    def NbSamplesV(self, *args) -> "Standard_Integer" :
+    def NbSamplesV(self):
         """
         * compute the sample-points for the intersections algorithms
 
         :rtype: int
 
         """
-        return _Adaptor3d.Adaptor3d_TopolTool_NbSamplesV(self, *args)
+        return _Adaptor3d.Adaptor3d_TopolTool_NbSamplesV(self)
 
-    def NbSamples(self, *args) -> "Standard_Integer" :
+    def NbSamples(self):
         """
         * compute the sample-points for the intersections algorithms
 
         :rtype: int
 
         """
-        return _Adaptor3d.Adaptor3d_TopolTool_NbSamples(self, *args)
+        return _Adaptor3d.Adaptor3d_TopolTool_NbSamples(self)
 
-    def UParameters(self, *args) -> "void" :
+    def UParameters(self, *args):
         """
         * return the set of U parameters on the surface obtained by the method SamplePnts
 
@@ -3410,7 +3423,7 @@ class Adaptor3d_TopolTool(OCC.MMgt.MMgt_TShared):
         """
         return _Adaptor3d.Adaptor3d_TopolTool_UParameters(self, *args)
 
-    def VParameters(self, *args) -> "void" :
+    def VParameters(self, *args):
         """
         * return the set of V parameters on the surface obtained by the method SamplePnts
 
@@ -3421,10 +3434,10 @@ class Adaptor3d_TopolTool(OCC.MMgt.MMgt_TShared):
         """
         return _Adaptor3d.Adaptor3d_TopolTool_VParameters(self, *args)
 
-    def SamplePoint(self, *args) -> "void" :
+    def SamplePoint(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param P2d:
         :type P2d: gp_Pnt2d
         :param P3d:
@@ -3434,64 +3447,64 @@ class Adaptor3d_TopolTool(OCC.MMgt.MMgt_TShared):
         """
         return _Adaptor3d.Adaptor3d_TopolTool_SamplePoint(self, *args)
 
-    def DomainIsInfinite(self, *args) -> "Standard_Boolean" :
+    def DomainIsInfinite(self):
         """
         :rtype: bool
 
         """
-        return _Adaptor3d.Adaptor3d_TopolTool_DomainIsInfinite(self, *args)
+        return _Adaptor3d.Adaptor3d_TopolTool_DomainIsInfinite(self)
 
-    def Edge(self, *args) -> "Standard_Address" :
+    def Edge(self):
         """
         :rtype: Standard_Address
 
         """
-        return _Adaptor3d.Adaptor3d_TopolTool_Edge(self, *args)
+        return _Adaptor3d.Adaptor3d_TopolTool_Edge(self)
 
-    def SamplePnts(self, *args) -> "void" :
+    def SamplePnts(self, *args):
         """
         * compute the sample-points for the intersections algorithms by adaptive algorithm for BSpline surfaces. For other surfaces algorithm is the same as in method ComputeSamplePoints(), but only fill arrays of U and V sample parameters; theDefl is a requred deflection theNUmin, theNVmin are minimal nb points for U and V.
 
         :param theDefl:
         :type theDefl: float
         :param theNUmin:
-        :type theNUmin: int
+        :type theNUmin: Standard_Integer
         :param theNVmin:
-        :type theNVmin: int
+        :type theNVmin: Standard_Integer
         :rtype: void
 
         """
         return _Adaptor3d.Adaptor3d_TopolTool_SamplePnts(self, *args)
 
-    def BSplSamplePnts(self, *args) -> "void" :
+    def BSplSamplePnts(self, *args):
         """
         * compute the sample-points for the intersections algorithms by adaptive algorithm for BSpline surfaces - is used in SamplePnts theDefl is a requred deflection theNUmin, theNVmin are minimal nb points for U and V.
 
         :param theDefl:
         :type theDefl: float
         :param theNUmin:
-        :type theNUmin: int
+        :type theNUmin: Standard_Integer
         :param theNVmin:
-        :type theNVmin: int
+        :type theNVmin: Standard_Integer
         :rtype: void
 
         """
         return _Adaptor3d.Adaptor3d_TopolTool_BSplSamplePnts(self, *args)
 
-    def IsUniformSampling(self, *args) -> "Standard_Boolean" :
+    def IsUniformSampling(self):
         """
         * Returns true if provide uniform sampling of points.
 
         :rtype: bool
 
         """
-        return _Adaptor3d.Adaptor3d_TopolTool_IsUniformSampling(self, *args)
+        return _Adaptor3d.Adaptor3d_TopolTool_IsUniformSampling(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Adaptor3d_TopolTool self)"""
         return _Adaptor3d.Adaptor3d_TopolTool__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Adaptor3d_TopolTool" :
+    def GetHandle(self):
         """GetHandle(Adaptor3d_TopolTool self) -> Handle_Adaptor3d_TopolTool"""
         return _Adaptor3d.Adaptor3d_TopolTool_GetHandle(self)
 
@@ -3557,7 +3570,7 @@ Handle_Adaptor3d_TopolTool._kill_pointed = new_instancemethod(_Adaptor3d.Handle_
 Handle_Adaptor3d_TopolTool_swigregister = _Adaptor3d.Handle_Adaptor3d_TopolTool_swigregister
 Handle_Adaptor3d_TopolTool_swigregister(Handle_Adaptor3d_TopolTool)
 
-def Handle_Adaptor3d_TopolTool_DownCast(*args) -> "Handle_Adaptor3d_TopolTool const" :
+def Handle_Adaptor3d_TopolTool_DownCast(*args):
   return _Adaptor3d.Handle_Adaptor3d_TopolTool_DownCast(*args)
 Handle_Adaptor3d_TopolTool_DownCast = _Adaptor3d.Handle_Adaptor3d_TopolTool_DownCast
 
@@ -3582,7 +3595,7 @@ class Adaptor3d_CurveOnSurface(Adaptor3d_Curve):
 
         """
         _Adaptor3d.Adaptor3d_CurveOnSurface_swiginit(self,_Adaptor3d.new_Adaptor3d_CurveOnSurface(*args))
-    def Load(self, *args) -> "void" :
+    def Load(self, *args):
         """
         * Changes the surface.
 
@@ -3599,33 +3612,33 @@ class Adaptor3d_CurveOnSurface(Adaptor3d_Curve):
         """
         return _Adaptor3d.Adaptor3d_CurveOnSurface_Load(self, *args)
 
-    def GetCurve(self, *args) -> "Handle_Adaptor2d_HCurve2d const &" :
+    def GetCurve(self):
         """
         :rtype: Handle_Adaptor2d_HCurve2d
 
         """
-        return _Adaptor3d.Adaptor3d_CurveOnSurface_GetCurve(self, *args)
+        return _Adaptor3d.Adaptor3d_CurveOnSurface_GetCurve(self)
 
-    def GetSurface(self, *args) -> "Handle_Adaptor3d_HSurface const &" :
+    def GetSurface(self):
         """
         :rtype: Handle_Adaptor3d_HSurface
 
         """
-        return _Adaptor3d.Adaptor3d_CurveOnSurface_GetSurface(self, *args)
+        return _Adaptor3d.Adaptor3d_CurveOnSurface_GetSurface(self)
 
-    def ChangeCurve(self, *args) -> "Handle_Adaptor2d_HCurve2d &" :
+    def ChangeCurve(self):
         """
         :rtype: Handle_Adaptor2d_HCurve2d
 
         """
-        return _Adaptor3d.Adaptor3d_CurveOnSurface_ChangeCurve(self, *args)
+        return _Adaptor3d.Adaptor3d_CurveOnSurface_ChangeCurve(self)
 
-    def ChangeSurface(self, *args) -> "Handle_Adaptor3d_HSurface &" :
+    def ChangeSurface(self):
         """
         :rtype: Handle_Adaptor3d_HSurface
 
         """
-        return _Adaptor3d.Adaptor3d_CurveOnSurface_ChangeSurface(self, *args)
+        return _Adaptor3d.Adaptor3d_CurveOnSurface_ChangeSurface(self)
 
     def __del__(self):
     	try:
@@ -3657,7 +3670,7 @@ class Adaptor3d_HCurveOnSurface(Adaptor3d_HCurve):
 
         """
         _Adaptor3d.Adaptor3d_HCurveOnSurface_swiginit(self,_Adaptor3d.new_Adaptor3d_HCurveOnSurface(*args))
-    def Set(self, *args) -> "void" :
+    def Set(self, *args):
         """
         :param C:
         :type C: Adaptor3d_CurveOnSurface &
@@ -3666,18 +3679,18 @@ class Adaptor3d_HCurveOnSurface(Adaptor3d_HCurve):
         """
         return _Adaptor3d.Adaptor3d_HCurveOnSurface_Set(self, *args)
 
-    def ChangeCurve(self, *args) -> "Adaptor3d_CurveOnSurface &" :
+    def ChangeCurve(self):
         """
         :rtype: Adaptor3d_CurveOnSurface
 
         """
-        return _Adaptor3d.Adaptor3d_HCurveOnSurface_ChangeCurve(self, *args)
+        return _Adaptor3d.Adaptor3d_HCurveOnSurface_ChangeCurve(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Adaptor3d_HCurveOnSurface self)"""
         return _Adaptor3d.Adaptor3d_HCurveOnSurface__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Adaptor3d_HCurveOnSurface" :
+    def GetHandle(self):
         """GetHandle(Adaptor3d_HCurveOnSurface self) -> Handle_Adaptor3d_HCurveOnSurface"""
         return _Adaptor3d.Adaptor3d_HCurveOnSurface_GetHandle(self)
 
@@ -3717,7 +3730,7 @@ Handle_Adaptor3d_HCurveOnSurface._kill_pointed = new_instancemethod(_Adaptor3d.H
 Handle_Adaptor3d_HCurveOnSurface_swigregister = _Adaptor3d.Handle_Adaptor3d_HCurveOnSurface_swigregister
 Handle_Adaptor3d_HCurveOnSurface_swigregister(Handle_Adaptor3d_HCurveOnSurface)
 
-def Handle_Adaptor3d_HCurveOnSurface_DownCast(*args) -> "Handle_Adaptor3d_HCurveOnSurface const" :
+def Handle_Adaptor3d_HCurveOnSurface_DownCast(*args):
   return _Adaptor3d.Handle_Adaptor3d_HCurveOnSurface_DownCast(*args)
 Handle_Adaptor3d_HCurveOnSurface_DownCast = _Adaptor3d.Handle_Adaptor3d_HCurveOnSurface_DownCast
 
@@ -3734,7 +3747,7 @@ class Adaptor3d_HIsoCurve(Adaptor3d_HCurve):
 
         """
         _Adaptor3d.Adaptor3d_HIsoCurve_swiginit(self,_Adaptor3d.new_Adaptor3d_HIsoCurve(*args))
-    def Set(self, *args) -> "void" :
+    def Set(self, *args):
         """
         :param C:
         :type C: Adaptor3d_IsoCurve &
@@ -3743,18 +3756,18 @@ class Adaptor3d_HIsoCurve(Adaptor3d_HCurve):
         """
         return _Adaptor3d.Adaptor3d_HIsoCurve_Set(self, *args)
 
-    def ChangeCurve(self, *args) -> "Adaptor3d_IsoCurve &" :
+    def ChangeCurve(self):
         """
         :rtype: Adaptor3d_IsoCurve
 
         """
-        return _Adaptor3d.Adaptor3d_HIsoCurve_ChangeCurve(self, *args)
+        return _Adaptor3d.Adaptor3d_HIsoCurve_ChangeCurve(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Adaptor3d_HIsoCurve self)"""
         return _Adaptor3d.Adaptor3d_HIsoCurve__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Adaptor3d_HIsoCurve" :
+    def GetHandle(self):
         """GetHandle(Adaptor3d_HIsoCurve self) -> Handle_Adaptor3d_HIsoCurve"""
         return _Adaptor3d.Adaptor3d_HIsoCurve_GetHandle(self)
 
@@ -3794,7 +3807,7 @@ Handle_Adaptor3d_HIsoCurve._kill_pointed = new_instancemethod(_Adaptor3d.Handle_
 Handle_Adaptor3d_HIsoCurve_swigregister = _Adaptor3d.Handle_Adaptor3d_HIsoCurve_swigregister
 Handle_Adaptor3d_HIsoCurve_swigregister(Handle_Adaptor3d_HIsoCurve)
 
-def Handle_Adaptor3d_HIsoCurve_DownCast(*args) -> "Handle_Adaptor3d_HIsoCurve const" :
+def Handle_Adaptor3d_HIsoCurve_DownCast(*args):
   return _Adaptor3d.Handle_Adaptor3d_HIsoCurve_DownCast(*args)
 Handle_Adaptor3d_HIsoCurve_DownCast = _Adaptor3d.Handle_Adaptor3d_HIsoCurve_DownCast
 
@@ -3811,7 +3824,7 @@ class Adaptor3d_HSurfaceOfLinearExtrusion(Adaptor3d_HSurface):
 
         """
         _Adaptor3d.Adaptor3d_HSurfaceOfLinearExtrusion_swiginit(self,_Adaptor3d.new_Adaptor3d_HSurfaceOfLinearExtrusion(*args))
-    def Set(self, *args) -> "void" :
+    def Set(self, *args):
         """
         :param S:
         :type S: Adaptor3d_SurfaceOfLinearExtrusion &
@@ -3820,18 +3833,18 @@ class Adaptor3d_HSurfaceOfLinearExtrusion(Adaptor3d_HSurface):
         """
         return _Adaptor3d.Adaptor3d_HSurfaceOfLinearExtrusion_Set(self, *args)
 
-    def ChangeSurface(self, *args) -> "Adaptor3d_SurfaceOfLinearExtrusion &" :
+    def ChangeSurface(self):
         """
         :rtype: Adaptor3d_SurfaceOfLinearExtrusion
 
         """
-        return _Adaptor3d.Adaptor3d_HSurfaceOfLinearExtrusion_ChangeSurface(self, *args)
+        return _Adaptor3d.Adaptor3d_HSurfaceOfLinearExtrusion_ChangeSurface(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Adaptor3d_HSurfaceOfLinearExtrusion self)"""
         return _Adaptor3d.Adaptor3d_HSurfaceOfLinearExtrusion__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Adaptor3d_HSurfaceOfLinearExtrusion" :
+    def GetHandle(self):
         """GetHandle(Adaptor3d_HSurfaceOfLinearExtrusion self) -> Handle_Adaptor3d_HSurfaceOfLinearExtrusion"""
         return _Adaptor3d.Adaptor3d_HSurfaceOfLinearExtrusion_GetHandle(self)
 
@@ -3871,7 +3884,7 @@ Handle_Adaptor3d_HSurfaceOfLinearExtrusion._kill_pointed = new_instancemethod(_A
 Handle_Adaptor3d_HSurfaceOfLinearExtrusion_swigregister = _Adaptor3d.Handle_Adaptor3d_HSurfaceOfLinearExtrusion_swigregister
 Handle_Adaptor3d_HSurfaceOfLinearExtrusion_swigregister(Handle_Adaptor3d_HSurfaceOfLinearExtrusion)
 
-def Handle_Adaptor3d_HSurfaceOfLinearExtrusion_DownCast(*args) -> "Handle_Adaptor3d_HSurfaceOfLinearExtrusion const" :
+def Handle_Adaptor3d_HSurfaceOfLinearExtrusion_DownCast(*args):
   return _Adaptor3d.Handle_Adaptor3d_HSurfaceOfLinearExtrusion_DownCast(*args)
 Handle_Adaptor3d_HSurfaceOfLinearExtrusion_DownCast = _Adaptor3d.Handle_Adaptor3d_HSurfaceOfLinearExtrusion_DownCast
 
@@ -3888,7 +3901,7 @@ class Adaptor3d_HSurfaceOfRevolution(Adaptor3d_HSurface):
 
         """
         _Adaptor3d.Adaptor3d_HSurfaceOfRevolution_swiginit(self,_Adaptor3d.new_Adaptor3d_HSurfaceOfRevolution(*args))
-    def Set(self, *args) -> "void" :
+    def Set(self, *args):
         """
         :param S:
         :type S: Adaptor3d_SurfaceOfRevolution &
@@ -3897,18 +3910,18 @@ class Adaptor3d_HSurfaceOfRevolution(Adaptor3d_HSurface):
         """
         return _Adaptor3d.Adaptor3d_HSurfaceOfRevolution_Set(self, *args)
 
-    def ChangeSurface(self, *args) -> "Adaptor3d_SurfaceOfRevolution &" :
+    def ChangeSurface(self):
         """
         :rtype: Adaptor3d_SurfaceOfRevolution
 
         """
-        return _Adaptor3d.Adaptor3d_HSurfaceOfRevolution_ChangeSurface(self, *args)
+        return _Adaptor3d.Adaptor3d_HSurfaceOfRevolution_ChangeSurface(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Adaptor3d_HSurfaceOfRevolution self)"""
         return _Adaptor3d.Adaptor3d_HSurfaceOfRevolution__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Adaptor3d_HSurfaceOfRevolution" :
+    def GetHandle(self):
         """GetHandle(Adaptor3d_HSurfaceOfRevolution self) -> Handle_Adaptor3d_HSurfaceOfRevolution"""
         return _Adaptor3d.Adaptor3d_HSurfaceOfRevolution_GetHandle(self)
 
@@ -3948,7 +3961,7 @@ Handle_Adaptor3d_HSurfaceOfRevolution._kill_pointed = new_instancemethod(_Adapto
 Handle_Adaptor3d_HSurfaceOfRevolution_swigregister = _Adaptor3d.Handle_Adaptor3d_HSurfaceOfRevolution_swigregister
 Handle_Adaptor3d_HSurfaceOfRevolution_swigregister(Handle_Adaptor3d_HSurfaceOfRevolution)
 
-def Handle_Adaptor3d_HSurfaceOfRevolution_DownCast(*args) -> "Handle_Adaptor3d_HSurfaceOfRevolution const" :
+def Handle_Adaptor3d_HSurfaceOfRevolution_DownCast(*args):
   return _Adaptor3d.Handle_Adaptor3d_HSurfaceOfRevolution_DownCast(*args)
 Handle_Adaptor3d_HSurfaceOfRevolution_DownCast = _Adaptor3d.Handle_Adaptor3d_HSurfaceOfRevolution_DownCast
 
@@ -3993,7 +4006,7 @@ class Adaptor3d_IsoCurve(Adaptor3d_Curve):
 
         """
         _Adaptor3d.Adaptor3d_IsoCurve_swiginit(self,_Adaptor3d.new_Adaptor3d_IsoCurve(*args))
-    def Load(self, *args) -> "void" :
+    def Load(self, *args):
         """
         * Changes the surface. The iso is reset to NoneIso.
 
@@ -4024,26 +4037,26 @@ class Adaptor3d_IsoCurve(Adaptor3d_Curve):
         """
         return _Adaptor3d.Adaptor3d_IsoCurve_Load(self, *args)
 
-    def Surface(self, *args) -> "Handle_Adaptor3d_HSurface const &" :
+    def Surface(self):
         """
         :rtype: Handle_Adaptor3d_HSurface
 
         """
-        return _Adaptor3d.Adaptor3d_IsoCurve_Surface(self, *args)
+        return _Adaptor3d.Adaptor3d_IsoCurve_Surface(self)
 
-    def Iso(self, *args) -> "GeomAbs_IsoType" :
+    def Iso(self):
         """
         :rtype: GeomAbs_IsoType
 
         """
-        return _Adaptor3d.Adaptor3d_IsoCurve_Iso(self, *args)
+        return _Adaptor3d.Adaptor3d_IsoCurve_Iso(self)
 
-    def Parameter(self, *args) -> "Standard_Real" :
+    def Parameter(self):
         """
         :rtype: float
 
         """
-        return _Adaptor3d.Adaptor3d_IsoCurve_Parameter(self, *args)
+        return _Adaptor3d.Adaptor3d_IsoCurve_Parameter(self)
 
     def __del__(self):
     	try:
@@ -4084,7 +4097,7 @@ class Adaptor3d_SurfaceOfLinearExtrusion(Adaptor3d_Surface):
 
         """
         _Adaptor3d.Adaptor3d_SurfaceOfLinearExtrusion_swiginit(self,_Adaptor3d.new_Adaptor3d_SurfaceOfLinearExtrusion(*args))
-    def Load(self, *args) -> "void" :
+    def Load(self, *args):
         """
         * Changes the Curve
 
@@ -4137,7 +4150,7 @@ class Adaptor3d_SurfaceOfRevolution(Adaptor3d_Surface):
 
         """
         _Adaptor3d.Adaptor3d_SurfaceOfRevolution_swiginit(self,_Adaptor3d.new_Adaptor3d_SurfaceOfRevolution(*args))
-    def Load(self, *args) -> "void" :
+    def Load(self, *args):
         """
         * Changes the Curve
 
@@ -4154,12 +4167,12 @@ class Adaptor3d_SurfaceOfRevolution(Adaptor3d_Surface):
         """
         return _Adaptor3d.Adaptor3d_SurfaceOfRevolution_Load(self, *args)
 
-    def Axis(self, *args) -> "gp_Ax3" :
+    def Axis(self):
         """
         :rtype: gp_Ax3
 
         """
-        return _Adaptor3d.Adaptor3d_SurfaceOfRevolution_Axis(self, *args)
+        return _Adaptor3d.Adaptor3d_SurfaceOfRevolution_Axis(self)
 
     def __del__(self):
     	try:

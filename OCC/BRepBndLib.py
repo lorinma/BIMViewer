@@ -119,9 +119,20 @@ import OCC.Bnd
 import OCC.TColStd
 class brepbndlib(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
+    def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def Add(*args) -> "void" :
+    def Add(*args):
         """
+        * //!Adds the shape S to the bounding box B. More precisely are successively added to B: - each face of S; the triangulation of the face is used if it exists, - then each edge of S which does not belong to a face, the polygon of the edge is used if it exists - and last each vertex of S which does not belong to an edge. After each elementary operation, the bounding box B is enlarged by the tolerance value of the relative sub-shape. When working with the triangulation of a face this value of enlargement is the sum of the triangulation deflection and the face tolerance. When working with the polygon of an edge this value of enlargement is the sum of the polygon deflection and the edge tolerance. Warning - This algorithm is time consuming if triangulation has not been inserted inside the data structure of the shape S. - The resulting bounding box may be somewhat larger than the object.
+
+        :param S:
+        :type S: TopoDS_Shape &
+        :param B:
+        :type B: Bnd_Box &
+        :param useTriangulation: default value is Standard_True
+        :type useTriangulation: bool
+        :rtype: void
+
         * //!Adds the shape S to the bounding box B. More precisely are successively added to B: - each face of S; the triangulation of the face is used if it exists, - then each edge of S which does not belong to a face, the polygon of the edge is used if it exists - and last each vertex of S which does not belong to an edge. After each elementary operation, the bounding box B is enlarged by the tolerance value of the relative sub-shape. When working with the triangulation of a face this value of enlargement is the sum of the triangulation deflection and the face tolerance. When working with the polygon of an edge this value of enlargement is the sum of the polygon deflection and the edge tolerance. Warning - This algorithm is time consuming if triangulation has not been inserted inside the data structure of the shape S. - The resulting bounding box may be somewhat larger than the object.
 
         :param S:
@@ -136,7 +147,7 @@ class brepbndlib(object):
         return _BRepBndLib.brepbndlib_Add(*args)
 
     Add = staticmethod(Add)
-    def AddClose(*args) -> "void" :
+    def AddClose(*args):
         """
         * Adds the shape S to the bounding box B. This is a quick algorithm but only works if the shape S is composed of polygonal planar faces, as is the case if S is an approached polyhedral representation of an exact shape. Pay particular attention to this because this condition is not checked and, if it not respected, an error may occur in the algorithm for which the bounding box is built. Note that the resulting bounding box is not enlarged by the tolerance value of the sub-shapes as is the case with the Add function. So the added part of the resulting bounding box is closer to the shape S.
 
@@ -150,8 +161,6 @@ class brepbndlib(object):
         return _BRepBndLib.brepbndlib_AddClose(*args)
 
     AddClose = staticmethod(AddClose)
-    def __init__(self): 
-        _BRepBndLib.brepbndlib_swiginit(self,_BRepBndLib.new_brepbndlib())
     def __del__(self):
     	try:
     		self.thisown = False
@@ -164,8 +173,18 @@ brepbndlib._kill_pointed = new_instancemethod(_BRepBndLib.brepbndlib__kill_point
 brepbndlib_swigregister = _BRepBndLib.brepbndlib_swigregister
 brepbndlib_swigregister(brepbndlib)
 
-def brepbndlib_Add(*args) -> "void" :
+def brepbndlib_Add(*args):
   """
+    * //!Adds the shape S to the bounding box B. More precisely are successively added to B: - each face of S; the triangulation of the face is used if it exists, - then each edge of S which does not belong to a face, the polygon of the edge is used if it exists - and last each vertex of S which does not belong to an edge. After each elementary operation, the bounding box B is enlarged by the tolerance value of the relative sub-shape. When working with the triangulation of a face this value of enlargement is the sum of the triangulation deflection and the face tolerance. When working with the polygon of an edge this value of enlargement is the sum of the polygon deflection and the edge tolerance. Warning - This algorithm is time consuming if triangulation has not been inserted inside the data structure of the shape S. - The resulting bounding box may be somewhat larger than the object.
+
+    :param S:
+    :type S: TopoDS_Shape &
+    :param B:
+    :type B: Bnd_Box &
+    :param useTriangulation: default value is Standard_True
+    :type useTriangulation: bool
+    :rtype: void
+
     * //!Adds the shape S to the bounding box B. More precisely are successively added to B: - each face of S; the triangulation of the face is used if it exists, - then each edge of S which does not belong to a face, the polygon of the edge is used if it exists - and last each vertex of S which does not belong to an edge. After each elementary operation, the bounding box B is enlarged by the tolerance value of the relative sub-shape. When working with the triangulation of a face this value of enlargement is the sum of the triangulation deflection and the face tolerance. When working with the polygon of an edge this value of enlargement is the sum of the polygon deflection and the edge tolerance. Warning - This algorithm is time consuming if triangulation has not been inserted inside the data structure of the shape S. - The resulting bounding box may be somewhat larger than the object.
 
     :param S:
@@ -179,7 +198,7 @@ def brepbndlib_Add(*args) -> "void" :
     """
   return _BRepBndLib.brepbndlib_Add(*args)
 
-def brepbndlib_AddClose(*args) -> "void" :
+def brepbndlib_AddClose(*args):
   """
     * Adds the shape S to the bounding box B. This is a quick algorithm but only works if the shape S is composed of polygonal planar faces, as is the case if S is an approached polyhedral representation of an exact shape. Pay particular attention to this because this condition is not checked and, if it not respected, an error may occur in the algorithm for which the bounding box is built. Note that the resulting bounding box is not enlarged by the tolerance value of the sub-shapes as is the case with the Add function. So the added part of the resulting bounding box is closer to the shape S.
 

@@ -131,28 +131,44 @@ class AppCont_FitFunction(object):
         :param LastCons:
         :type LastCons: AppParCurves_Constraint
         :param Deg:
-        :type Deg: int
+        :type Deg: Standard_Integer
         :param NbPoints: default value is 24
-        :type NbPoints: int
+        :type NbPoints: Standard_Integer
+        :rtype: None
+
+        :param SSP:
+        :type SSP: AppCont_Function &
+        :param U0:
+        :type U0: float
+        :param U1:
+        :type U1: float
+        :param FirstCons:
+        :type FirstCons: AppParCurves_Constraint
+        :param LastCons:
+        :type LastCons: AppParCurves_Constraint
+        :param Deg:
+        :type Deg: Standard_Integer
+        :param NbPoints: default value is 24
+        :type NbPoints: Standard_Integer
         :rtype: None
 
         """
         _AppCont.AppCont_FitFunction_swiginit(self,_AppCont.new_AppCont_FitFunction(*args))
-    def IsDone(self, *args) -> "Standard_Boolean" :
+    def IsDone(self):
         """
         :rtype: bool
 
         """
-        return _AppCont.AppCont_FitFunction_IsDone(self, *args)
+        return _AppCont.AppCont_FitFunction_IsDone(self)
 
-    def Value(self, *args) -> "AppParCurves_MultiCurve const &" :
+    def Value(self):
         """
         :rtype: AppParCurves_MultiCurve
 
         """
-        return _AppCont.AppCont_FitFunction_Value(self, *args)
+        return _AppCont.AppCont_FitFunction_Value(self)
 
-    def Error(self, *args) -> "void" :
+    def Error(self):
         """
         :param F:
         :type F: float &
@@ -163,7 +179,7 @@ class AppCont_FitFunction(object):
         :rtype: None
 
         """
-        return _AppCont.AppCont_FitFunction_Error(self, *args)
+        return _AppCont.AppCont_FitFunction_Error(self)
 
     def __del__(self):
     	try:
@@ -196,28 +212,44 @@ class AppCont_FitFunction2d(object):
         :param LastCons:
         :type LastCons: AppParCurves_Constraint
         :param Deg:
-        :type Deg: int
+        :type Deg: Standard_Integer
         :param NbPoints: default value is 24
-        :type NbPoints: int
+        :type NbPoints: Standard_Integer
+        :rtype: None
+
+        :param SSP:
+        :type SSP: AppCont_Function2d &
+        :param U0:
+        :type U0: float
+        :param U1:
+        :type U1: float
+        :param FirstCons:
+        :type FirstCons: AppParCurves_Constraint
+        :param LastCons:
+        :type LastCons: AppParCurves_Constraint
+        :param Deg:
+        :type Deg: Standard_Integer
+        :param NbPoints: default value is 24
+        :type NbPoints: Standard_Integer
         :rtype: None
 
         """
         _AppCont.AppCont_FitFunction2d_swiginit(self,_AppCont.new_AppCont_FitFunction2d(*args))
-    def IsDone(self, *args) -> "Standard_Boolean" :
+    def IsDone(self):
         """
         :rtype: bool
 
         """
-        return _AppCont.AppCont_FitFunction2d_IsDone(self, *args)
+        return _AppCont.AppCont_FitFunction2d_IsDone(self)
 
-    def Value(self, *args) -> "AppParCurves_MultiCurve const &" :
+    def Value(self):
         """
         :rtype: AppParCurves_MultiCurve
 
         """
-        return _AppCont.AppCont_FitFunction2d_Value(self, *args)
+        return _AppCont.AppCont_FitFunction2d_Value(self)
 
-    def Error(self, *args) -> "void" :
+    def Error(self):
         """
         :param F:
         :type F: float &
@@ -228,7 +260,7 @@ class AppCont_FitFunction2d(object):
         :rtype: None
 
         """
-        return _AppCont.AppCont_FitFunction2d_Error(self, *args)
+        return _AppCont.AppCont_FitFunction2d_Error(self)
 
     def __del__(self):
     	try:
@@ -249,32 +281,32 @@ class AppCont_Function(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def Delete(self, *args) -> "void" :
+    def Delete(self):
         """
         :rtype: void
 
         """
-        return _AppCont.AppCont_Function_Delete(self, *args)
+        return _AppCont.AppCont_Function_Delete(self)
 
-    def FirstParameter(self, *args) -> "Standard_Real" :
+    def FirstParameter(self):
         """
         * returns the first parameter of the function.
 
         :rtype: float
 
         """
-        return _AppCont.AppCont_Function_FirstParameter(self, *args)
+        return _AppCont.AppCont_Function_FirstParameter(self)
 
-    def LastParameter(self, *args) -> "Standard_Real" :
+    def LastParameter(self):
         """
         * returns the last parameter of the function.
 
         :rtype: float
 
         """
-        return _AppCont.AppCont_Function_LastParameter(self, *args)
+        return _AppCont.AppCont_Function_LastParameter(self)
 
-    def Value(self, *args) -> "gp_Pnt" :
+    def Value(self, *args):
         """
         * returns the point at parameter <U>.
 
@@ -285,7 +317,7 @@ class AppCont_Function(object):
         """
         return _AppCont.AppCont_Function_Value(self, *args)
 
-    def D1(self, *args) -> "Standard_Boolean" :
+    def D1(self, *args):
         """
         * returns the point and the derivative values at the parameter <U>.
 
@@ -321,32 +353,32 @@ class AppCont_Function2d(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def Delete(self, *args) -> "void" :
+    def Delete(self):
         """
         :rtype: void
 
         """
-        return _AppCont.AppCont_Function2d_Delete(self, *args)
+        return _AppCont.AppCont_Function2d_Delete(self)
 
-    def FirstParameter(self, *args) -> "Standard_Real" :
+    def FirstParameter(self):
         """
         * returns the first parameter of the function.
 
         :rtype: float
 
         """
-        return _AppCont.AppCont_Function2d_FirstParameter(self, *args)
+        return _AppCont.AppCont_Function2d_FirstParameter(self)
 
-    def LastParameter(self, *args) -> "Standard_Real" :
+    def LastParameter(self):
         """
         * returns the last parameter of the function.
 
         :rtype: float
 
         """
-        return _AppCont.AppCont_Function2d_LastParameter(self, *args)
+        return _AppCont.AppCont_Function2d_LastParameter(self)
 
-    def Value(self, *args) -> "gp_Pnt2d" :
+    def Value(self, *args):
         """
         * returns the point at parameter <U>.
 
@@ -357,7 +389,7 @@ class AppCont_Function2d(object):
         """
         return _AppCont.AppCont_Function2d_Value(self, *args)
 
-    def D1(self, *args) -> "Standard_Boolean" :
+    def D1(self, *args):
         """
         * returns the point and the derivative values at the parameter <U>.
 
@@ -391,8 +423,9 @@ AppCont_Function2d_swigregister(AppCont_Function2d)
 
 class AppCont_FunctionTool(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
+    def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def FirstParameter(*args) -> "Standard_Real" :
+    def FirstParameter(*args):
         """
         * returns the first parameter of the Function.
 
@@ -404,7 +437,7 @@ class AppCont_FunctionTool(object):
         return _AppCont.AppCont_FunctionTool_FirstParameter(*args)
 
     FirstParameter = staticmethod(FirstParameter)
-    def LastParameter(*args) -> "Standard_Real" :
+    def LastParameter(*args):
         """
         * returns the last parameter of the Function.
 
@@ -416,7 +449,7 @@ class AppCont_FunctionTool(object):
         return _AppCont.AppCont_FunctionTool_LastParameter(*args)
 
     LastParameter = staticmethod(LastParameter)
-    def NbP2d(*args) -> "Standard_Integer" :
+    def NbP2d(*args):
         """
         * Returns 0.
 
@@ -428,7 +461,7 @@ class AppCont_FunctionTool(object):
         return _AppCont.AppCont_FunctionTool_NbP2d(*args)
 
     NbP2d = staticmethod(NbP2d)
-    def NbP3d(*args) -> "Standard_Integer" :
+    def NbP3d(*args):
         """
         * Returns 1. (the approximation will be done only for one function.
 
@@ -440,7 +473,7 @@ class AppCont_FunctionTool(object):
         return _AppCont.AppCont_FunctionTool_NbP3d(*args)
 
     NbP3d = staticmethod(NbP3d)
-    def Value(*args) -> "void" :
+    def Value(*args):
         """
         * <tabP> is an array of only 1 element, the point value at the parameter <U>.
 
@@ -474,7 +507,7 @@ class AppCont_FunctionTool(object):
         return _AppCont.AppCont_FunctionTool_Value(*args)
 
     Value = staticmethod(Value)
-    def D1(*args) -> "Standard_Boolean" :
+    def D1(*args):
         """
         * <tabV> is an array of only 1 element, the derivative value at the parameter <U>.
 
@@ -508,8 +541,6 @@ class AppCont_FunctionTool(object):
         return _AppCont.AppCont_FunctionTool_D1(*args)
 
     D1 = staticmethod(D1)
-    def __init__(self): 
-        _AppCont.AppCont_FunctionTool_swiginit(self,_AppCont.new_AppCont_FunctionTool())
     def __del__(self):
     	try:
     		self.thisown = False
@@ -522,7 +553,7 @@ AppCont_FunctionTool._kill_pointed = new_instancemethod(_AppCont.AppCont_Functio
 AppCont_FunctionTool_swigregister = _AppCont.AppCont_FunctionTool_swigregister
 AppCont_FunctionTool_swigregister(AppCont_FunctionTool)
 
-def AppCont_FunctionTool_FirstParameter(*args) -> "Standard_Real" :
+def AppCont_FunctionTool_FirstParameter(*args):
   """
     * returns the first parameter of the Function.
 
@@ -533,7 +564,7 @@ def AppCont_FunctionTool_FirstParameter(*args) -> "Standard_Real" :
     """
   return _AppCont.AppCont_FunctionTool_FirstParameter(*args)
 
-def AppCont_FunctionTool_LastParameter(*args) -> "Standard_Real" :
+def AppCont_FunctionTool_LastParameter(*args):
   """
     * returns the last parameter of the Function.
 
@@ -544,7 +575,7 @@ def AppCont_FunctionTool_LastParameter(*args) -> "Standard_Real" :
     """
   return _AppCont.AppCont_FunctionTool_LastParameter(*args)
 
-def AppCont_FunctionTool_NbP2d(*args) -> "Standard_Integer" :
+def AppCont_FunctionTool_NbP2d(*args):
   """
     * Returns 0.
 
@@ -555,7 +586,7 @@ def AppCont_FunctionTool_NbP2d(*args) -> "Standard_Integer" :
     """
   return _AppCont.AppCont_FunctionTool_NbP2d(*args)
 
-def AppCont_FunctionTool_NbP3d(*args) -> "Standard_Integer" :
+def AppCont_FunctionTool_NbP3d(*args):
   """
     * Returns 1. (the approximation will be done only for one function.
 
@@ -566,7 +597,7 @@ def AppCont_FunctionTool_NbP3d(*args) -> "Standard_Integer" :
     """
   return _AppCont.AppCont_FunctionTool_NbP3d(*args)
 
-def AppCont_FunctionTool_Value(*args) -> "void" :
+def AppCont_FunctionTool_Value(*args):
   """
     * <tabP> is an array of only 1 element, the point value at the parameter <U>.
 
@@ -599,7 +630,7 @@ def AppCont_FunctionTool_Value(*args) -> "void" :
     """
   return _AppCont.AppCont_FunctionTool_Value(*args)
 
-def AppCont_FunctionTool_D1(*args) -> "Standard_Boolean" :
+def AppCont_FunctionTool_D1(*args):
   """
     * <tabV> is an array of only 1 element, the derivative value at the parameter <U>.
 
@@ -634,8 +665,9 @@ def AppCont_FunctionTool_D1(*args) -> "Standard_Boolean" :
 
 class AppCont_FunctionTool2d(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
+    def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def FirstParameter(*args) -> "Standard_Real" :
+    def FirstParameter(*args):
         """
         * returns the first parameter of the Function.
 
@@ -647,7 +679,7 @@ class AppCont_FunctionTool2d(object):
         return _AppCont.AppCont_FunctionTool2d_FirstParameter(*args)
 
     FirstParameter = staticmethod(FirstParameter)
-    def LastParameter(*args) -> "Standard_Real" :
+    def LastParameter(*args):
         """
         * returns the last parameter of the Function.
 
@@ -659,7 +691,7 @@ class AppCont_FunctionTool2d(object):
         return _AppCont.AppCont_FunctionTool2d_LastParameter(*args)
 
     LastParameter = staticmethod(LastParameter)
-    def NbP2d(*args) -> "Standard_Integer" :
+    def NbP2d(*args):
         """
         * Returns 1. (the approximation will be done only for one function.
 
@@ -671,7 +703,7 @@ class AppCont_FunctionTool2d(object):
         return _AppCont.AppCont_FunctionTool2d_NbP2d(*args)
 
     NbP2d = staticmethod(NbP2d)
-    def NbP3d(*args) -> "Standard_Integer" :
+    def NbP3d(*args):
         """
         * Returns 0.
 
@@ -683,7 +715,7 @@ class AppCont_FunctionTool2d(object):
         return _AppCont.AppCont_FunctionTool2d_NbP3d(*args)
 
     NbP3d = staticmethod(NbP3d)
-    def Value(*args) -> "void" :
+    def Value(*args):
         """
         * <tabP> is an array of only 1 element, the point value at the parameter <U>.
 
@@ -717,7 +749,7 @@ class AppCont_FunctionTool2d(object):
         return _AppCont.AppCont_FunctionTool2d_Value(*args)
 
     Value = staticmethod(Value)
-    def D1(*args) -> "Standard_Boolean" :
+    def D1(*args):
         """
         * <tabV> is an array of only 1 element, the derivative value at the parameter <U>.
 
@@ -751,8 +783,6 @@ class AppCont_FunctionTool2d(object):
         return _AppCont.AppCont_FunctionTool2d_D1(*args)
 
     D1 = staticmethod(D1)
-    def __init__(self): 
-        _AppCont.AppCont_FunctionTool2d_swiginit(self,_AppCont.new_AppCont_FunctionTool2d())
     def __del__(self):
     	try:
     		self.thisown = False
@@ -765,7 +795,7 @@ AppCont_FunctionTool2d._kill_pointed = new_instancemethod(_AppCont.AppCont_Funct
 AppCont_FunctionTool2d_swigregister = _AppCont.AppCont_FunctionTool2d_swigregister
 AppCont_FunctionTool2d_swigregister(AppCont_FunctionTool2d)
 
-def AppCont_FunctionTool2d_FirstParameter(*args) -> "Standard_Real" :
+def AppCont_FunctionTool2d_FirstParameter(*args):
   """
     * returns the first parameter of the Function.
 
@@ -776,7 +806,7 @@ def AppCont_FunctionTool2d_FirstParameter(*args) -> "Standard_Real" :
     """
   return _AppCont.AppCont_FunctionTool2d_FirstParameter(*args)
 
-def AppCont_FunctionTool2d_LastParameter(*args) -> "Standard_Real" :
+def AppCont_FunctionTool2d_LastParameter(*args):
   """
     * returns the last parameter of the Function.
 
@@ -787,7 +817,7 @@ def AppCont_FunctionTool2d_LastParameter(*args) -> "Standard_Real" :
     """
   return _AppCont.AppCont_FunctionTool2d_LastParameter(*args)
 
-def AppCont_FunctionTool2d_NbP2d(*args) -> "Standard_Integer" :
+def AppCont_FunctionTool2d_NbP2d(*args):
   """
     * Returns 1. (the approximation will be done only for one function.
 
@@ -798,7 +828,7 @@ def AppCont_FunctionTool2d_NbP2d(*args) -> "Standard_Integer" :
     """
   return _AppCont.AppCont_FunctionTool2d_NbP2d(*args)
 
-def AppCont_FunctionTool2d_NbP3d(*args) -> "Standard_Integer" :
+def AppCont_FunctionTool2d_NbP3d(*args):
   """
     * Returns 0.
 
@@ -809,7 +839,7 @@ def AppCont_FunctionTool2d_NbP3d(*args) -> "Standard_Integer" :
     """
   return _AppCont.AppCont_FunctionTool2d_NbP3d(*args)
 
-def AppCont_FunctionTool2d_Value(*args) -> "void" :
+def AppCont_FunctionTool2d_Value(*args):
   """
     * <tabP> is an array of only 1 element, the point value at the parameter <U>.
 
@@ -842,7 +872,7 @@ def AppCont_FunctionTool2d_Value(*args) -> "void" :
     """
   return _AppCont.AppCont_FunctionTool2d_Value(*args)
 
-def AppCont_FunctionTool2d_D1(*args) -> "Standard_Boolean" :
+def AppCont_FunctionTool2d_D1(*args):
   """
     * <tabV> is an array of only 1 element, the derivative value at the parameter <U>.
 

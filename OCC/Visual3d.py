@@ -157,14 +157,14 @@ class Visual3d_ContextPick(object):
         :param Aperture:
         :type Aperture: float
         :param Depth:
-        :type Depth: int
+        :type Depth: Standard_Integer
         :param Order:
         :type Order: Visual3d_TypeOfOrder
         :rtype: None
 
         """
         _Visual3d.Visual3d_ContextPick_swiginit(self,_Visual3d.new_Visual3d_ContextPick(*args))
-    def SetAperture(self, *args) -> "void" :
+    def SetAperture(self, *args):
         """
         * Modifies the size of the pick window. Category: Methods to modifies the class definition Warning: Raises ContextPickDefinitionError if <Aperture> is //!	 a negative value.
 
@@ -175,18 +175,18 @@ class Visual3d_ContextPick(object):
         """
         return _Visual3d.Visual3d_ContextPick_SetAperture(self, *args)
 
-    def SetDepth(self, *args) -> "void" :
+    def SetDepth(self, *args):
         """
         * Modifies the pick depth a priori. Category: Methods to modifies the class definition Warning: Raises ContextPickDefinitionError if <Depth> is //!	 a negative value.
 
         :param Depth:
-        :type Depth: int
+        :type Depth: Standard_Integer
         :rtype: None
 
         """
         return _Visual3d.Visual3d_ContextPick_SetDepth(self, *args)
 
-    def SetOrder(self, *args) -> "void" :
+    def SetOrder(self, *args):
         """
         * Modifies the order of picking. //!	 TypeOfOrder : TOO_TOPFIRST //!			 TOO_BOTTOMFIRST
 
@@ -197,32 +197,32 @@ class Visual3d_ContextPick(object):
         """
         return _Visual3d.Visual3d_ContextPick_SetOrder(self, *args)
 
-    def Aperture(self, *args) -> "Standard_Real" :
+    def Aperture(self):
         """
         * Returns the size of the pick window <self>.
 
         :rtype: float
 
         """
-        return _Visual3d.Visual3d_ContextPick_Aperture(self, *args)
+        return _Visual3d.Visual3d_ContextPick_Aperture(self)
 
-    def Depth(self, *args) -> "Standard_Integer" :
+    def Depth(self):
         """
         * Returns the effective pick depth of <self>.
 
         :rtype: int
 
         """
-        return _Visual3d.Visual3d_ContextPick_Depth(self, *args)
+        return _Visual3d.Visual3d_ContextPick_Depth(self)
 
-    def Order(self, *args) -> "Visual3d_TypeOfOrder" :
+    def Order(self):
         """
         * Returns the order of picking of <self>. //!	 TypeOfOrder	: TOO_TOPFIRST //!			 TOO_BOTTOMFIRST
 
         :rtype: Visual3d_TypeOfOrder
 
         """
-        return _Visual3d.Visual3d_ContextPick_Order(self, *args)
+        return _Visual3d.Visual3d_ContextPick_Order(self)
 
     def __del__(self):
     	try:
@@ -245,15 +245,15 @@ Visual3d_ContextPick_swigregister(Visual3d_ContextPick)
 class Visual3d_ContextView(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         * Creates a context from default values //!	 Aliasing		 : OFF //!	 BackZClipping	 : OFF //!	 FrontZClipping	 : OFF //!	 Depth-cueing	 : OFF //!	 Light source	 : 0 //!	 Clipping plane	 : 0 //!	 Type Of Visualization : TOV_WIREFRAME //!	 Type Of Model	 : TOM_NONE Type Of SurfaceDetail : TOSD_NONE
 
         :rtype: None
 
         """
-        _Visual3d.Visual3d_ContextView_swiginit(self,_Visual3d.new_Visual3d_ContextView(*args))
-    def SetSurfaceDetail(self, *args) -> "void" :
+        _Visual3d.Visual3d_ContextView_swiginit(self,_Visual3d.new_Visual3d_ContextView())
+    def SetSurfaceDetail(self, *args):
         """
         * Selects the kind of rendering default to: TOSD_NONE
 
@@ -264,7 +264,7 @@ class Visual3d_ContextView(object):
         """
         return _Visual3d.Visual3d_ContextView_SetSurfaceDetail(self, *args)
 
-    def SetTextureEnv(self, *args) -> "void" :
+    def SetTextureEnv(self, *args):
         """
         * Sets the environment texture to use no environment texture by default
 
@@ -275,25 +275,25 @@ class Visual3d_ContextView(object):
         """
         return _Visual3d.Visual3d_ContextView_SetTextureEnv(self, *args)
 
-    def SetAliasingOn(self, *args) -> "void" :
+    def SetAliasingOn(self):
         """
         * Activates antialiasing. //!	Antialiasing can be activated on all the structures //!	in the view
 
         :rtype: None
 
         """
-        return _Visual3d.Visual3d_ContextView_SetAliasingOn(self, *args)
+        return _Visual3d.Visual3d_ContextView_SetAliasingOn(self)
 
-    def SetAliasingOff(self, *args) -> "void" :
+    def SetAliasingOff(self):
         """
         * Deactivates the antialiasing.
 
         :rtype: None
 
         """
-        return _Visual3d.Visual3d_ContextView_SetAliasingOff(self, *args)
+        return _Visual3d.Visual3d_ContextView_SetAliasingOff(self)
 
-    def SetDepthCueingBackPlane(self, *args) -> "void" :
+    def SetDepthCueingBackPlane(self, *args):
         """
         * Modifies the back depth-cueing plane. Category: Methods to modify the class definition Warning: Raises DepthCueingDefinitionError if <BackPlane> //!	 is front of <FrontPlane> and DepthCueing is ON.
 
@@ -304,7 +304,7 @@ class Visual3d_ContextView(object):
         """
         return _Visual3d.Visual3d_ContextView_SetDepthCueingBackPlane(self, *args)
 
-    def SetDepthCueingFrontPlane(self, *args) -> "void" :
+    def SetDepthCueingFrontPlane(self, *args):
         """
         * Modifies the front depth-cueing plane. Category: Methods to modify the class definition Warning: Raises DepthCueingDefinitionError if <BackPlane> is //!	 front of <FrontPlane> and DepthCueing is ON.
 
@@ -315,43 +315,43 @@ class Visual3d_ContextView(object):
         """
         return _Visual3d.Visual3d_ContextView_SetDepthCueingFrontPlane(self, *args)
 
-    def SetDepthCueingOn(self, *args) -> "void" :
+    def SetDepthCueingOn(self):
         """
         * Activates the depth-cueing. //!	Depth-cueing can be activated on all structures //!	present in the view. Category: Methods to modify the class definition Warning: Raises DepthCueingDefinitionError if <BackPlane> is //!	 front of <FrontPlane>.
 
         :rtype: None
 
         """
-        return _Visual3d.Visual3d_ContextView_SetDepthCueingOn(self, *args)
+        return _Visual3d.Visual3d_ContextView_SetDepthCueingOn(self)
 
-    def SetDepthCueingOff(self, *args) -> "void" :
+    def SetDepthCueingOff(self):
         """
         * Deactivates the depth-cueing.
 
         :rtype: None
 
         """
-        return _Visual3d.Visual3d_ContextView_SetDepthCueingOff(self, *args)
+        return _Visual3d.Visual3d_ContextView_SetDepthCueingOff(self)
 
-    def ClipPlanes(self, *args) -> "Graphic3d_SequenceOfHClipPlane const &" :
+    def ClipPlanes(self):
         """
         * Returns sequence of clip planes. returns sequence of clip planes.
 
         :rtype: Graphic3d_SequenceOfHClipPlane
 
         """
-        return _Visual3d.Visual3d_ContextView_ClipPlanes(self, *args)
+        return _Visual3d.Visual3d_ContextView_ClipPlanes(self)
 
-    def ChangeClipPlanes(self, *args) -> "Graphic3d_SequenceOfHClipPlane &" :
+    def ChangeClipPlanes(self):
         """
         * Change clip planes. returns sequence of clip planes.
 
         :rtype: Graphic3d_SequenceOfHClipPlane
 
         """
-        return _Visual3d.Visual3d_ContextView_ChangeClipPlanes(self, *args)
+        return _Visual3d.Visual3d_ContextView_ChangeClipPlanes(self)
 
-    def SetLightOn(self, *args) -> "void" :
+    def SetLightOn(self, *args):
         """
         * Activates the light source <ALight>
 
@@ -362,7 +362,7 @@ class Visual3d_ContextView(object):
         """
         return _Visual3d.Visual3d_ContextView_SetLightOn(self, *args)
 
-    def SetLightOff(self, *args) -> "void" :
+    def SetLightOff(self, *args):
         """
         * Deactivates the light source <ALight>
 
@@ -373,7 +373,7 @@ class Visual3d_ContextView(object):
         """
         return _Visual3d.Visual3d_ContextView_SetLightOff(self, *args)
 
-    def SetModel(self, *args) -> "void" :
+    def SetModel(self, *args):
         """
         * Modifies the shading model when the type of //!	 visualization is TOV_SHADING //!	 TypeOfModel	: TOM_NONE //!			 TOM_INTERP_COLOR //!			 TOM_FACET //!			 TOM_VERTEX
 
@@ -384,7 +384,7 @@ class Visual3d_ContextView(object):
         """
         return _Visual3d.Visual3d_ContextView_SetModel(self, *args)
 
-    def SetVisualization(self, *args) -> "void" :
+    def SetVisualization(self, *args):
         """
         * Modifies the mode of visualization. //!	 TypeOfVisualization	: TOV_WIREFRAME //!				 TOV_SHADING
 
@@ -395,7 +395,7 @@ class Visual3d_ContextView(object):
         """
         return _Visual3d.Visual3d_ContextView_SetVisualization(self, *args)
 
-    def SetZClippingBackPlane(self, *args) -> "void" :
+    def SetZClippingBackPlane(self, *args):
         """
         * Modifies the back Z-clipping plane. Category: Methods to modify the class definition Warning: Raises ZClippingDefinitionError if <BackPlane> is //!	 front of <FrontPlane> and ZClipping is ON.
 
@@ -406,7 +406,7 @@ class Visual3d_ContextView(object):
         """
         return _Visual3d.Visual3d_ContextView_SetZClippingBackPlane(self, *args)
 
-    def SetZClippingFrontPlane(self, *args) -> "void" :
+    def SetZClippingFrontPlane(self, *args):
         """
         * Modifies the front Z-clipping plane. Category: Methods to modify the class definition Warning: Raises ZClippingDefinitionError if <BackPlane> is //!	 front of <FrontPlane> and ZClipping is ON.
 
@@ -417,190 +417,190 @@ class Visual3d_ContextView(object):
         """
         return _Visual3d.Visual3d_ContextView_SetZClippingFrontPlane(self, *args)
 
-    def SetZClippingOn(self, *args) -> "void" :
+    def SetZClippingOn(self):
         """
         * Activates the Z-clipping planes defined by //!	 SetZClippingFrontPlane and SetZClippingBackPlane. Category: Methods to modify the class definition Warning: Raises ZClippingDefinitionError if <BackPlane> is //!	 front of <FrontPlane>.
 
         :rtype: None
 
         """
-        return _Visual3d.Visual3d_ContextView_SetZClippingOn(self, *args)
+        return _Visual3d.Visual3d_ContextView_SetZClippingOn(self)
 
-    def SetZClippingOff(self, *args) -> "void" :
+    def SetZClippingOff(self):
         """
         * Deactivates the Z-clipping planes defined by //!	 SetFrontPlane and SetBackPlane.
 
         :rtype: None
 
         """
-        return _Visual3d.Visual3d_ContextView_SetZClippingOff(self, *args)
+        return _Visual3d.Visual3d_ContextView_SetZClippingOff(self)
 
-    def SetFrontZClippingOn(self, *args) -> "void" :
+    def SetFrontZClippingOn(self):
         """
         * Activates the front Z-clipping plane defined by //!	 SetFrontPlane method.
 
         :rtype: None
 
         """
-        return _Visual3d.Visual3d_ContextView_SetFrontZClippingOn(self, *args)
+        return _Visual3d.Visual3d_ContextView_SetFrontZClippingOn(self)
 
-    def SetFrontZClippingOff(self, *args) -> "void" :
+    def SetFrontZClippingOff(self):
         """
         * Deactivates the front Z-clipping plane defined by //!	 SetFrontPlane method.
 
         :rtype: None
 
         """
-        return _Visual3d.Visual3d_ContextView_SetFrontZClippingOff(self, *args)
+        return _Visual3d.Visual3d_ContextView_SetFrontZClippingOff(self)
 
-    def SetBackZClippingOn(self, *args) -> "void" :
+    def SetBackZClippingOn(self):
         """
         * Activates the back Z-clipping plane defined by //!	 SetBackPlane method. Category: Methods to modify the class definition Warning: Raises ZClippingDefinitionError if <BackPlane> is //!	 front of <FrontPlane>.
 
         :rtype: None
 
         """
-        return _Visual3d.Visual3d_ContextView_SetBackZClippingOn(self, *args)
+        return _Visual3d.Visual3d_ContextView_SetBackZClippingOn(self)
 
-    def SetBackZClippingOff(self, *args) -> "void" :
+    def SetBackZClippingOff(self):
         """
         * Deactivates the back Z-clipping plane defined by //!	 SetBackPlane method.
 
         :rtype: None
 
         """
-        return _Visual3d.Visual3d_ContextView_SetBackZClippingOff(self, *args)
+        return _Visual3d.Visual3d_ContextView_SetBackZClippingOff(self)
 
-    def ActivatedLights(self, *args) -> "Handle_Visual3d_HSetOfLight" :
+    def ActivatedLights(self):
         """
         * Returns the group of active light sources //!	 in the view of context <self>.
 
         :rtype: Handle_Visual3d_HSetOfLight
 
         """
-        return _Visual3d.Visual3d_ContextView_ActivatedLights(self, *args)
+        return _Visual3d.Visual3d_ContextView_ActivatedLights(self)
 
-    def NumberOfActivatedLights(self, *args) -> "Standard_Integer" :
+    def NumberOfActivatedLights(self):
         """
         * Returns the number of active light sources //!	 in the view of context <self>.
 
         :rtype: int
 
         """
-        return _Visual3d.Visual3d_ContextView_NumberOfActivatedLights(self, *args)
+        return _Visual3d.Visual3d_ContextView_NumberOfActivatedLights(self)
 
-    def ActivatedLight(self, *args) -> "Handle_Visual3d_Light" :
+    def ActivatedLight(self, *args):
         """
         :param AnIndex:
-        :type AnIndex: int
+        :type AnIndex: Standard_Integer
         :rtype: Handle_Visual3d_Light
 
         """
         return _Visual3d.Visual3d_ContextView_ActivatedLight(self, *args)
 
-    def AliasingIsOn(self, *args) -> "Standard_Boolean" :
+    def AliasingIsOn(self):
         """
         * Returns the activity of the aliasing.
 
         :rtype: bool
 
         """
-        return _Visual3d.Visual3d_ContextView_AliasingIsOn(self, *args)
+        return _Visual3d.Visual3d_ContextView_AliasingIsOn(self)
 
-    def BackZClippingIsOn(self, *args) -> "Standard_Boolean" :
+    def BackZClippingIsOn(self):
         """
         * Returns the activity of the ZClipping.
 
         :rtype: bool
 
         """
-        return _Visual3d.Visual3d_ContextView_BackZClippingIsOn(self, *args)
+        return _Visual3d.Visual3d_ContextView_BackZClippingIsOn(self)
 
-    def DepthCueingBackPlane(self, *args) -> "Standard_Real" :
+    def DepthCueingBackPlane(self):
         """
         * Returns the definition of the back depth-cueing plane.
 
         :rtype: float
 
         """
-        return _Visual3d.Visual3d_ContextView_DepthCueingBackPlane(self, *args)
+        return _Visual3d.Visual3d_ContextView_DepthCueingBackPlane(self)
 
-    def DepthCueingFrontPlane(self, *args) -> "Standard_Real" :
+    def DepthCueingFrontPlane(self):
         """
         * Returns the definition of the front depth-cueing plane.
 
         :rtype: float
 
         """
-        return _Visual3d.Visual3d_ContextView_DepthCueingFrontPlane(self, *args)
+        return _Visual3d.Visual3d_ContextView_DepthCueingFrontPlane(self)
 
-    def DepthCueingIsOn(self, *args) -> "Standard_Boolean" :
+    def DepthCueingIsOn(self):
         """
         * Returns the activity of the depth-cueing.
 
         :rtype: bool
 
         """
-        return _Visual3d.Visual3d_ContextView_DepthCueingIsOn(self, *args)
+        return _Visual3d.Visual3d_ContextView_DepthCueingIsOn(self)
 
-    def FrontZClippingIsOn(self, *args) -> "Standard_Boolean" :
+    def FrontZClippingIsOn(self):
         """
         * Returns the activity of the ZClipping.
 
         :rtype: bool
 
         """
-        return _Visual3d.Visual3d_ContextView_FrontZClippingIsOn(self, *args)
+        return _Visual3d.Visual3d_ContextView_FrontZClippingIsOn(self)
 
-    def Model(self, *args) -> "Visual3d_TypeOfModel" :
+    def Model(self):
         """
         * Returns the shading model.
 
         :rtype: Visual3d_TypeOfModel
 
         """
-        return _Visual3d.Visual3d_ContextView_Model(self, *args)
+        return _Visual3d.Visual3d_ContextView_Model(self)
 
-    def Visualization(self, *args) -> "Visual3d_TypeOfVisualization" :
+    def Visualization(self):
         """
         * Returns the mode of visualization.
 
         :rtype: Visual3d_TypeOfVisualization
 
         """
-        return _Visual3d.Visual3d_ContextView_Visualization(self, *args)
+        return _Visual3d.Visual3d_ContextView_Visualization(self)
 
-    def ZClippingBackPlane(self, *args) -> "Standard_Real" :
+    def ZClippingBackPlane(self):
         """
         * Returns the definition of the back Z-clipping plane.
 
         :rtype: float
 
         """
-        return _Visual3d.Visual3d_ContextView_ZClippingBackPlane(self, *args)
+        return _Visual3d.Visual3d_ContextView_ZClippingBackPlane(self)
 
-    def ZClippingFrontPlane(self, *args) -> "Standard_Real" :
+    def ZClippingFrontPlane(self):
         """
         * Returns the definition of the front Z-clipping plane.
 
         :rtype: float
 
         """
-        return _Visual3d.Visual3d_ContextView_ZClippingFrontPlane(self, *args)
+        return _Visual3d.Visual3d_ContextView_ZClippingFrontPlane(self)
 
-    def SurfaceDetail(self, *args) -> "Visual3d_TypeOfSurfaceDetail" :
+    def SurfaceDetail(self):
         """
         :rtype: Visual3d_TypeOfSurfaceDetail
 
         """
-        return _Visual3d.Visual3d_ContextView_SurfaceDetail(self, *args)
+        return _Visual3d.Visual3d_ContextView_SurfaceDetail(self)
 
-    def TextureEnv(self, *args) -> "Handle_Graphic3d_TextureEnv" :
+    def TextureEnv(self):
         """
         :rtype: Handle_Graphic3d_TextureEnv
 
         """
-        return _Visual3d.Visual3d_ContextView_TextureEnv(self, *args)
+        return _Visual3d.Visual3d_ContextView_TextureEnv(self)
 
     def __del__(self):
     	try:
@@ -654,34 +654,34 @@ Visual3d_ContextView_swigregister(Visual3d_ContextView)
 class Visual3d_HSequenceOfPickPath(OCC.MMgt.MMgt_TShared):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _Visual3d.Visual3d_HSequenceOfPickPath_swiginit(self,_Visual3d.new_Visual3d_HSequenceOfPickPath(*args))
-    def IsEmpty(self, *args) -> "Standard_Boolean" :
+        _Visual3d.Visual3d_HSequenceOfPickPath_swiginit(self,_Visual3d.new_Visual3d_HSequenceOfPickPath())
+    def IsEmpty(self):
         """
         :rtype: bool
 
         """
-        return _Visual3d.Visual3d_HSequenceOfPickPath_IsEmpty(self, *args)
+        return _Visual3d.Visual3d_HSequenceOfPickPath_IsEmpty(self)
 
-    def Length(self, *args) -> "Standard_Integer" :
+    def Length(self):
         """
         :rtype: int
 
         """
-        return _Visual3d.Visual3d_HSequenceOfPickPath_Length(self, *args)
+        return _Visual3d.Visual3d_HSequenceOfPickPath_Length(self)
 
-    def Clear(self, *args) -> "void" :
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _Visual3d.Visual3d_HSequenceOfPickPath_Clear(self, *args)
+        return _Visual3d.Visual3d_HSequenceOfPickPath_Clear(self)
 
-    def Append(self, *args) -> "void" :
+    def Append(self, *args):
         """
         :param anItem:
         :type anItem: Visual3d_PickPath &
@@ -694,7 +694,7 @@ class Visual3d_HSequenceOfPickPath(OCC.MMgt.MMgt_TShared):
         """
         return _Visual3d.Visual3d_HSequenceOfPickPath_Append(self, *args)
 
-    def Prepend(self, *args) -> "void" :
+    def Prepend(self, *args):
         """
         :param anItem:
         :type anItem: Visual3d_PickPath &
@@ -707,23 +707,23 @@ class Visual3d_HSequenceOfPickPath(OCC.MMgt.MMgt_TShared):
         """
         return _Visual3d.Visual3d_HSequenceOfPickPath_Prepend(self, *args)
 
-    def Reverse(self, *args) -> "void" :
+    def Reverse(self):
         """
         :rtype: None
 
         """
-        return _Visual3d.Visual3d_HSequenceOfPickPath_Reverse(self, *args)
+        return _Visual3d.Visual3d_HSequenceOfPickPath_Reverse(self)
 
-    def InsertBefore(self, *args) -> "void" :
+    def InsertBefore(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :param anItem:
         :type anItem: Visual3d_PickPath &
         :rtype: None
 
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :param aSequence:
         :type aSequence: Handle_Visual3d_HSequenceOfPickPath &
         :rtype: None
@@ -731,16 +731,16 @@ class Visual3d_HSequenceOfPickPath(OCC.MMgt.MMgt_TShared):
         """
         return _Visual3d.Visual3d_HSequenceOfPickPath_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args) -> "void" :
+    def InsertAfter(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :param anItem:
         :type anItem: Visual3d_PickPath &
         :rtype: None
 
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :param aSequence:
         :type aSequence: Handle_Visual3d_HSequenceOfPickPath &
         :rtype: None
@@ -748,30 +748,30 @@ class Visual3d_HSequenceOfPickPath(OCC.MMgt.MMgt_TShared):
         """
         return _Visual3d.Visual3d_HSequenceOfPickPath_InsertAfter(self, *args)
 
-    def Exchange(self, *args) -> "void" :
+    def Exchange(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :param anOtherIndex:
-        :type anOtherIndex: int
+        :type anOtherIndex: Standard_Integer
         :rtype: None
 
         """
         return _Visual3d.Visual3d_HSequenceOfPickPath_Exchange(self, *args)
 
-    def Split(self, *args) -> "Handle_Visual3d_HSequenceOfPickPath" :
+    def Split(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :rtype: Handle_Visual3d_HSequenceOfPickPath
 
         """
         return _Visual3d.Visual3d_HSequenceOfPickPath_Split(self, *args)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :param anItem:
         :type anItem: Visual3d_PickPath &
         :rtype: None
@@ -779,65 +779,65 @@ class Visual3d_HSequenceOfPickPath(OCC.MMgt.MMgt_TShared):
         """
         return _Visual3d.Visual3d_HSequenceOfPickPath_SetValue(self, *args)
 
-    def Value(self, *args) -> "Visual3d_PickPath const &" :
+    def Value(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :rtype: Visual3d_PickPath
 
         """
         return _Visual3d.Visual3d_HSequenceOfPickPath_Value(self, *args)
 
-    def ChangeValue(self, *args) -> "Visual3d_PickPath &" :
+    def ChangeValue(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :rtype: Visual3d_PickPath
 
         """
         return _Visual3d.Visual3d_HSequenceOfPickPath_ChangeValue(self, *args)
 
-    def Remove(self, *args) -> "void" :
+    def Remove(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :rtype: None
 
         :param fromIndex:
-        :type fromIndex: int
+        :type fromIndex: Standard_Integer
         :param toIndex:
-        :type toIndex: int
+        :type toIndex: Standard_Integer
         :rtype: None
 
         """
         return _Visual3d.Visual3d_HSequenceOfPickPath_Remove(self, *args)
 
-    def Sequence(self, *args) -> "Visual3d_SequenceOfPickPath const &" :
+    def Sequence(self):
         """
         :rtype: Visual3d_SequenceOfPickPath
 
         """
-        return _Visual3d.Visual3d_HSequenceOfPickPath_Sequence(self, *args)
+        return _Visual3d.Visual3d_HSequenceOfPickPath_Sequence(self)
 
-    def ChangeSequence(self, *args) -> "Visual3d_SequenceOfPickPath &" :
+    def ChangeSequence(self):
         """
         :rtype: Visual3d_SequenceOfPickPath
 
         """
-        return _Visual3d.Visual3d_HSequenceOfPickPath_ChangeSequence(self, *args)
+        return _Visual3d.Visual3d_HSequenceOfPickPath_ChangeSequence(self)
 
-    def ShallowCopy(self, *args) -> "Handle_Visual3d_HSequenceOfPickPath" :
+    def ShallowCopy(self):
         """
         :rtype: Handle_Visual3d_HSequenceOfPickPath
 
         """
-        return _Visual3d.Visual3d_HSequenceOfPickPath_ShallowCopy(self, *args)
+        return _Visual3d.Visual3d_HSequenceOfPickPath_ShallowCopy(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Visual3d_HSequenceOfPickPath self)"""
         return _Visual3d.Visual3d_HSequenceOfPickPath__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Visual3d_HSequenceOfPickPath" :
+    def GetHandle(self):
         """GetHandle(Visual3d_HSequenceOfPickPath self) -> Handle_Visual3d_HSequenceOfPickPath"""
         return _Visual3d.Visual3d_HSequenceOfPickPath_GetHandle(self)
 
@@ -892,41 +892,41 @@ Handle_Visual3d_HSequenceOfPickPath._kill_pointed = new_instancemethod(_Visual3d
 Handle_Visual3d_HSequenceOfPickPath_swigregister = _Visual3d.Handle_Visual3d_HSequenceOfPickPath_swigregister
 Handle_Visual3d_HSequenceOfPickPath_swigregister(Handle_Visual3d_HSequenceOfPickPath)
 
-def Handle_Visual3d_HSequenceOfPickPath_DownCast(*args) -> "Handle_Visual3d_HSequenceOfPickPath const" :
+def Handle_Visual3d_HSequenceOfPickPath_DownCast(*args):
   return _Visual3d.Handle_Visual3d_HSequenceOfPickPath_DownCast(*args)
 Handle_Visual3d_HSequenceOfPickPath_DownCast = _Visual3d.Handle_Visual3d_HSequenceOfPickPath_DownCast
 
 class Visual3d_HSetOfLight(OCC.MMgt.MMgt_TShared):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _Visual3d.Visual3d_HSetOfLight_swiginit(self,_Visual3d.new_Visual3d_HSetOfLight(*args))
-    def Extent(self, *args) -> "Standard_Integer" :
+        _Visual3d.Visual3d_HSetOfLight_swiginit(self,_Visual3d.new_Visual3d_HSetOfLight())
+    def Extent(self):
         """
         :rtype: int
 
         """
-        return _Visual3d.Visual3d_HSetOfLight_Extent(self, *args)
+        return _Visual3d.Visual3d_HSetOfLight_Extent(self)
 
-    def IsEmpty(self, *args) -> "Standard_Boolean" :
+    def IsEmpty(self):
         """
         :rtype: bool
 
         """
-        return _Visual3d.Visual3d_HSetOfLight_IsEmpty(self, *args)
+        return _Visual3d.Visual3d_HSetOfLight_IsEmpty(self)
 
-    def Clear(self, *args) -> "void" :
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _Visual3d.Visual3d_HSetOfLight_Clear(self, *args)
+        return _Visual3d.Visual3d_HSetOfLight_Clear(self)
 
-    def Add(self, *args) -> "Standard_Boolean" :
+    def Add(self, *args):
         """
         :param T:
         :type T: Handle_Visual3d_Light &
@@ -935,7 +935,7 @@ class Visual3d_HSetOfLight(OCC.MMgt.MMgt_TShared):
         """
         return _Visual3d.Visual3d_HSetOfLight_Add(self, *args)
 
-    def Remove(self, *args) -> "Standard_Boolean" :
+    def Remove(self, *args):
         """
         :param T:
         :type T: Handle_Visual3d_Light &
@@ -944,7 +944,7 @@ class Visual3d_HSetOfLight(OCC.MMgt.MMgt_TShared):
         """
         return _Visual3d.Visual3d_HSetOfLight_Remove(self, *args)
 
-    def Union(self, *args) -> "Handle_Visual3d_HSetOfLight" :
+    def Union(self, *args):
         """
         :param B:
         :type B: Handle_Visual3d_HSetOfLight &
@@ -953,7 +953,7 @@ class Visual3d_HSetOfLight(OCC.MMgt.MMgt_TShared):
         """
         return _Visual3d.Visual3d_HSetOfLight_Union(self, *args)
 
-    def Intersection(self, *args) -> "Handle_Visual3d_HSetOfLight" :
+    def Intersection(self, *args):
         """
         :param B:
         :type B: Handle_Visual3d_HSetOfLight &
@@ -962,7 +962,7 @@ class Visual3d_HSetOfLight(OCC.MMgt.MMgt_TShared):
         """
         return _Visual3d.Visual3d_HSetOfLight_Intersection(self, *args)
 
-    def Difference(self, *args) -> "Handle_Visual3d_HSetOfLight" :
+    def Difference(self, *args):
         """
         :param B:
         :type B: Handle_Visual3d_HSetOfLight &
@@ -971,7 +971,7 @@ class Visual3d_HSetOfLight(OCC.MMgt.MMgt_TShared):
         """
         return _Visual3d.Visual3d_HSetOfLight_Difference(self, *args)
 
-    def Contains(self, *args) -> "Standard_Boolean" :
+    def Contains(self, *args):
         """
         :param T:
         :type T: Handle_Visual3d_Light &
@@ -980,7 +980,7 @@ class Visual3d_HSetOfLight(OCC.MMgt.MMgt_TShared):
         """
         return _Visual3d.Visual3d_HSetOfLight_Contains(self, *args)
 
-    def IsASubset(self, *args) -> "Standard_Boolean" :
+    def IsASubset(self, *args):
         """
         :param S:
         :type S: Handle_Visual3d_HSetOfLight &
@@ -989,7 +989,7 @@ class Visual3d_HSetOfLight(OCC.MMgt.MMgt_TShared):
         """
         return _Visual3d.Visual3d_HSetOfLight_IsASubset(self, *args)
 
-    def IsAProperSubset(self, *args) -> "Standard_Boolean" :
+    def IsAProperSubset(self, *args):
         """
         :param S:
         :type S: Handle_Visual3d_HSetOfLight &
@@ -998,32 +998,32 @@ class Visual3d_HSetOfLight(OCC.MMgt.MMgt_TShared):
         """
         return _Visual3d.Visual3d_HSetOfLight_IsAProperSubset(self, *args)
 
-    def ShallowCopy(self, *args) -> "Handle_Visual3d_HSetOfLight" :
+    def ShallowCopy(self):
         """
         :rtype: Handle_Visual3d_HSetOfLight
 
         """
-        return _Visual3d.Visual3d_HSetOfLight_ShallowCopy(self, *args)
+        return _Visual3d.Visual3d_HSetOfLight_ShallowCopy(self)
 
-    def Set(self, *args) -> "Visual3d_SetOfLight const &" :
+    def Set(self):
         """
         :rtype: Visual3d_SetOfLight
 
         """
-        return _Visual3d.Visual3d_HSetOfLight_Set(self, *args)
+        return _Visual3d.Visual3d_HSetOfLight_Set(self)
 
-    def ChangeSet(self, *args) -> "Visual3d_SetOfLight &" :
+    def ChangeSet(self):
         """
         :rtype: Visual3d_SetOfLight
 
         """
-        return _Visual3d.Visual3d_HSetOfLight_ChangeSet(self, *args)
+        return _Visual3d.Visual3d_HSetOfLight_ChangeSet(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Visual3d_HSetOfLight self)"""
         return _Visual3d.Visual3d_HSetOfLight__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Visual3d_HSetOfLight" :
+    def GetHandle(self):
         """GetHandle(Visual3d_HSetOfLight self) -> Handle_Visual3d_HSetOfLight"""
         return _Visual3d.Visual3d_HSetOfLight_GetHandle(self)
 
@@ -1075,41 +1075,41 @@ Handle_Visual3d_HSetOfLight._kill_pointed = new_instancemethod(_Visual3d.Handle_
 Handle_Visual3d_HSetOfLight_swigregister = _Visual3d.Handle_Visual3d_HSetOfLight_swigregister
 Handle_Visual3d_HSetOfLight_swigregister(Handle_Visual3d_HSetOfLight)
 
-def Handle_Visual3d_HSetOfLight_DownCast(*args) -> "Handle_Visual3d_HSetOfLight const" :
+def Handle_Visual3d_HSetOfLight_DownCast(*args):
   return _Visual3d.Handle_Visual3d_HSetOfLight_DownCast(*args)
 Handle_Visual3d_HSetOfLight_DownCast = _Visual3d.Handle_Visual3d_HSetOfLight_DownCast
 
 class Visual3d_HSetOfView(OCC.MMgt.MMgt_TShared):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _Visual3d.Visual3d_HSetOfView_swiginit(self,_Visual3d.new_Visual3d_HSetOfView(*args))
-    def Extent(self, *args) -> "Standard_Integer" :
+        _Visual3d.Visual3d_HSetOfView_swiginit(self,_Visual3d.new_Visual3d_HSetOfView())
+    def Extent(self):
         """
         :rtype: int
 
         """
-        return _Visual3d.Visual3d_HSetOfView_Extent(self, *args)
+        return _Visual3d.Visual3d_HSetOfView_Extent(self)
 
-    def IsEmpty(self, *args) -> "Standard_Boolean" :
+    def IsEmpty(self):
         """
         :rtype: bool
 
         """
-        return _Visual3d.Visual3d_HSetOfView_IsEmpty(self, *args)
+        return _Visual3d.Visual3d_HSetOfView_IsEmpty(self)
 
-    def Clear(self, *args) -> "void" :
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _Visual3d.Visual3d_HSetOfView_Clear(self, *args)
+        return _Visual3d.Visual3d_HSetOfView_Clear(self)
 
-    def Add(self, *args) -> "Standard_Boolean" :
+    def Add(self, *args):
         """
         :param T:
         :type T: Handle_Visual3d_View &
@@ -1118,7 +1118,7 @@ class Visual3d_HSetOfView(OCC.MMgt.MMgt_TShared):
         """
         return _Visual3d.Visual3d_HSetOfView_Add(self, *args)
 
-    def Remove(self, *args) -> "Standard_Boolean" :
+    def Remove(self, *args):
         """
         :param T:
         :type T: Handle_Visual3d_View &
@@ -1127,7 +1127,7 @@ class Visual3d_HSetOfView(OCC.MMgt.MMgt_TShared):
         """
         return _Visual3d.Visual3d_HSetOfView_Remove(self, *args)
 
-    def Union(self, *args) -> "Handle_Visual3d_HSetOfView" :
+    def Union(self, *args):
         """
         :param B:
         :type B: Handle_Visual3d_HSetOfView &
@@ -1136,7 +1136,7 @@ class Visual3d_HSetOfView(OCC.MMgt.MMgt_TShared):
         """
         return _Visual3d.Visual3d_HSetOfView_Union(self, *args)
 
-    def Intersection(self, *args) -> "Handle_Visual3d_HSetOfView" :
+    def Intersection(self, *args):
         """
         :param B:
         :type B: Handle_Visual3d_HSetOfView &
@@ -1145,7 +1145,7 @@ class Visual3d_HSetOfView(OCC.MMgt.MMgt_TShared):
         """
         return _Visual3d.Visual3d_HSetOfView_Intersection(self, *args)
 
-    def Difference(self, *args) -> "Handle_Visual3d_HSetOfView" :
+    def Difference(self, *args):
         """
         :param B:
         :type B: Handle_Visual3d_HSetOfView &
@@ -1154,7 +1154,7 @@ class Visual3d_HSetOfView(OCC.MMgt.MMgt_TShared):
         """
         return _Visual3d.Visual3d_HSetOfView_Difference(self, *args)
 
-    def Contains(self, *args) -> "Standard_Boolean" :
+    def Contains(self, *args):
         """
         :param T:
         :type T: Handle_Visual3d_View &
@@ -1163,7 +1163,7 @@ class Visual3d_HSetOfView(OCC.MMgt.MMgt_TShared):
         """
         return _Visual3d.Visual3d_HSetOfView_Contains(self, *args)
 
-    def IsASubset(self, *args) -> "Standard_Boolean" :
+    def IsASubset(self, *args):
         """
         :param S:
         :type S: Handle_Visual3d_HSetOfView &
@@ -1172,7 +1172,7 @@ class Visual3d_HSetOfView(OCC.MMgt.MMgt_TShared):
         """
         return _Visual3d.Visual3d_HSetOfView_IsASubset(self, *args)
 
-    def IsAProperSubset(self, *args) -> "Standard_Boolean" :
+    def IsAProperSubset(self, *args):
         """
         :param S:
         :type S: Handle_Visual3d_HSetOfView &
@@ -1181,32 +1181,32 @@ class Visual3d_HSetOfView(OCC.MMgt.MMgt_TShared):
         """
         return _Visual3d.Visual3d_HSetOfView_IsAProperSubset(self, *args)
 
-    def ShallowCopy(self, *args) -> "Handle_Visual3d_HSetOfView" :
+    def ShallowCopy(self):
         """
         :rtype: Handle_Visual3d_HSetOfView
 
         """
-        return _Visual3d.Visual3d_HSetOfView_ShallowCopy(self, *args)
+        return _Visual3d.Visual3d_HSetOfView_ShallowCopy(self)
 
-    def Set(self, *args) -> "Visual3d_SetOfView const &" :
+    def Set(self):
         """
         :rtype: Visual3d_SetOfView
 
         """
-        return _Visual3d.Visual3d_HSetOfView_Set(self, *args)
+        return _Visual3d.Visual3d_HSetOfView_Set(self)
 
-    def ChangeSet(self, *args) -> "Visual3d_SetOfView &" :
+    def ChangeSet(self):
         """
         :rtype: Visual3d_SetOfView
 
         """
-        return _Visual3d.Visual3d_HSetOfView_ChangeSet(self, *args)
+        return _Visual3d.Visual3d_HSetOfView_ChangeSet(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Visual3d_HSetOfView self)"""
         return _Visual3d.Visual3d_HSetOfView__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Visual3d_HSetOfView" :
+    def GetHandle(self):
         """GetHandle(Visual3d_HSetOfView self) -> Handle_Visual3d_HSetOfView"""
         return _Visual3d.Visual3d_HSetOfView_GetHandle(self)
 
@@ -1258,7 +1258,7 @@ Handle_Visual3d_HSetOfView._kill_pointed = new_instancemethod(_Visual3d.Handle_V
 Handle_Visual3d_HSetOfView_swigregister = _Visual3d.Handle_Visual3d_HSetOfView_swigregister
 Handle_Visual3d_HSetOfView_swigregister(Handle_Visual3d_HSetOfView)
 
-def Handle_Visual3d_HSetOfView_DownCast(*args) -> "Handle_Visual3d_HSetOfView const" :
+def Handle_Visual3d_HSetOfView_DownCast(*args):
   return _Visual3d.Handle_Visual3d_HSetOfView_DownCast(*args)
 Handle_Visual3d_HSetOfView_DownCast = _Visual3d.Handle_Visual3d_HSetOfView_DownCast
 
@@ -1277,64 +1277,94 @@ class Visual3d_Layer(OCC.MMgt.MMgt_TShared):
         :type AFlag: bool
         :rtype: None
 
+        * Creates a layer with the type <Atype>. if <AFlag> == Standard_True then the layer is 'size dependent'. The mapping of the layer is dependent of each window's size. if <AFlag> == Standard_False then the mapping of the layer is dependent of the highest window and the largest window of all the views of the viewer <AViewer>. When the viewer <AViewer> have only one view, the result will be the same with <AFlag> == Standard_False or <AFlag> == Standard_True.
+
+        :param AViewer:
+        :type AViewer: Handle_Visual3d_ViewManager &
+        :param AType: default value is Aspect_TOL_OVERLAY
+        :type AType: Aspect_TypeOfLayer
+        :param AFlag: default value is Standard_False
+        :type AFlag: bool
+        :rtype: None
+
+        * Creates a layer with the type <Atype>. if <AFlag> == Standard_True then the layer is 'size dependent'. The mapping of the layer is dependent of each window's size. if <AFlag> == Standard_False then the mapping of the layer is dependent of the highest window and the largest window of all the views of the viewer <AViewer>. When the viewer <AViewer> have only one view, the result will be the same with <AFlag> == Standard_False or <AFlag> == Standard_True.
+
+        :param AViewer:
+        :type AViewer: Handle_Visual3d_ViewManager &
+        :param AType: default value is Aspect_TOL_OVERLAY
+        :type AType: Aspect_TypeOfLayer
+        :param AFlag: default value is Standard_False
+        :type AFlag: bool
+        :rtype: None
+
         """
         _Visual3d.Visual3d_Layer_swiginit(self,_Visual3d.new_Visual3d_Layer(*args))
-    def Destroy(self, *args) -> "void" :
+    def Destroy(self):
         """
         * Suppress the layer <self>.
 
         :rtype: None
 
         """
-        return _Visual3d.Visual3d_Layer_Destroy(self, *args)
+        return _Visual3d.Visual3d_Layer_Destroy(self)
 
-    def Begin(self, *args) -> "void" :
+    def Begin(self):
         """
         * Begins the definition of the layer <self> Warning: No default attributes
 
         :rtype: None
 
         """
-        return _Visual3d.Visual3d_Layer_Begin(self, *args)
+        return _Visual3d.Visual3d_Layer_Begin(self)
 
-    def End(self, *args) -> "void" :
+    def End(self):
         """
         * Finishs the definition of the layer <self>.
 
         :rtype: None
 
         """
-        return _Visual3d.Visual3d_Layer_End(self, *args)
+        return _Visual3d.Visual3d_Layer_End(self)
 
-    def Clear(self, *args) -> "void" :
+    def Clear(self):
         """
         * Clear all graphics managed by the layer <self>.
 
         :rtype: None
 
         """
-        return _Visual3d.Visual3d_Layer_Clear(self, *args)
+        return _Visual3d.Visual3d_Layer_Clear(self)
 
-    def BeginPolyline(self, *args) -> "void" :
+    def BeginPolyline(self):
         """
         * After this call, <self> is ready to receive a definition of a polyline with AddVertex().
 
         :rtype: None
 
         """
-        return _Visual3d.Visual3d_Layer_BeginPolyline(self, *args)
+        return _Visual3d.Visual3d_Layer_BeginPolyline(self)
 
-    def BeginPolygon(self, *args) -> "void" :
+    def BeginPolygon(self):
         """
         * After this call, <self> is ready to receive a definition of a polygon with AddEdge().
 
         :rtype: None
 
         """
-        return _Visual3d.Visual3d_Layer_BeginPolygon(self, *args)
+        return _Visual3d.Visual3d_Layer_BeginPolygon(self)
 
-    def AddVertex(self, *args) -> "void" :
+    def AddVertex(self, *args):
         """
+        * Puts <X, Y> as a new point in the current primitive. If <AFlag> then it is a draw between last point and this point else it is a move between last point and this point.
+
+        :param X:
+        :type X: float
+        :param Y:
+        :type Y: float
+        :param AFlag: default value is Standard_True
+        :type AFlag: bool
+        :rtype: None
+
         * Puts <X, Y> as a new point in the current primitive. If <AFlag> then it is a draw between last point and this point else it is a move between last point and this point.
 
         :param X:
@@ -1348,16 +1378,16 @@ class Visual3d_Layer(OCC.MMgt.MMgt_TShared):
         """
         return _Visual3d.Visual3d_Layer_AddVertex(self, *args)
 
-    def ClosePrimitive(self, *args) -> "void" :
+    def ClosePrimitive(self):
         """
         * After this call, <self> stops the reception of a definition of a Begin... primitive.
 
         :rtype: None
 
         """
-        return _Visual3d.Visual3d_Layer_ClosePrimitive(self, *args)
+        return _Visual3d.Visual3d_Layer_ClosePrimitive(self)
 
-    def DrawRectangle(self, *args) -> "void" :
+    def DrawRectangle(self, *args):
         """
         * Draws the rectangle at position <X,Y>.
 
@@ -1374,7 +1404,7 @@ class Visual3d_Layer(OCC.MMgt.MMgt_TShared):
         """
         return _Visual3d.Visual3d_Layer_DrawRectangle(self, *args)
 
-    def TextSize(self, *args) -> "void" :
+    def TextSize(self, *args):
         """
         * Get the size of text. The attributes are given with respect to the plane of projection. <AHeight> : Height of text.  (Relative to the Normalized Projection Coordinates (NPC) Space).
 
@@ -1393,7 +1423,7 @@ class Visual3d_Layer(OCC.MMgt.MMgt_TShared):
         """
         return _Visual3d.Visual3d_Layer_TextSize(self, *args)
 
-    def SetColor(self, *args) -> "void" :
+    def SetColor(self, *args):
         """
         * Modifies the current color. Warning: No default color
 
@@ -1404,7 +1434,7 @@ class Visual3d_Layer(OCC.MMgt.MMgt_TShared):
         """
         return _Visual3d.Visual3d_Layer_SetColor(self, *args)
 
-    def SetTransparency(self, *args) -> "void" :
+    def SetTransparency(self, *args):
         """
         * Modifies the current transparency. Warning: No default transparency
 
@@ -1415,16 +1445,16 @@ class Visual3d_Layer(OCC.MMgt.MMgt_TShared):
         """
         return _Visual3d.Visual3d_Layer_SetTransparency(self, *args)
 
-    def UnsetTransparency(self, *args) -> "void" :
+    def UnsetTransparency(self):
         """
         * Unsets the transparency.
 
         :rtype: None
 
         """
-        return _Visual3d.Visual3d_Layer_UnsetTransparency(self, *args)
+        return _Visual3d.Visual3d_Layer_UnsetTransparency(self)
 
-    def SetLineAttributes(self, *args) -> "void" :
+    def SetLineAttributes(self, *args):
         """
         * Modifies the current lines attributes. Warning: No default attributes
 
@@ -1437,7 +1467,7 @@ class Visual3d_Layer(OCC.MMgt.MMgt_TShared):
         """
         return _Visual3d.Visual3d_Layer_SetLineAttributes(self, *args)
 
-    def SetTextAttributes(self, *args) -> "void" :
+    def SetTextAttributes(self, *args):
         """
         * Modifies the current texts attributes. <AFont> defines the name of the font to be used. <AType> defines the display type of the text. <AColor> defines the color of decal or subtitle background. To set the color of the text you can use the SetColor method. Warning: No default attributes
 
@@ -1452,8 +1482,22 @@ class Visual3d_Layer(OCC.MMgt.MMgt_TShared):
         """
         return _Visual3d.Visual3d_Layer_SetTextAttributes(self, *args)
 
-    def SetOrtho(self, *args) -> "void" :
+    def SetOrtho(self, *args):
         """
+        * Modifies the current coordinates system of the layer <self>.
+
+        :param Left:
+        :type Left: float
+        :param Right:
+        :type Right: float
+        :param Bottom:
+        :type Bottom: float
+        :param Top:
+        :type Top: float
+        :param Attach: default value is Aspect_TOC_BOTTOM_LEFT
+        :type Attach: Aspect_TypeOfConstraint
+        :rtype: None
+
         * Modifies the current coordinates system of the layer <self>.
 
         :param Left:
@@ -1471,38 +1515,38 @@ class Visual3d_Layer(OCC.MMgt.MMgt_TShared):
         """
         return _Visual3d.Visual3d_Layer_SetOrtho(self, *args)
 
-    def SetViewport(self, *args) -> "void" :
+    def SetViewport(self, *args):
         """
         * Modifies the current viewport of the layer <self>.
 
         :param Width:
-        :type Width: int
+        :type Width: Standard_Integer
         :param Height:
-        :type Height: int
+        :type Height: Standard_Integer
         :rtype: None
 
         """
         return _Visual3d.Visual3d_Layer_SetViewport(self, *args)
 
-    def CLayer(self, *args) -> "Aspect_CLayer2d" :
+    def CLayer(self):
         """
         * Returns the associated C structure.
 
         :rtype: Aspect_CLayer2d
 
         """
-        return _Visual3d.Visual3d_Layer_CLayer(self, *args)
+        return _Visual3d.Visual3d_Layer_CLayer(self)
 
-    def Type(self, *args) -> "Aspect_TypeOfLayer" :
+    def Type(self):
         """
         * Returns the type.
 
         :rtype: Aspect_TypeOfLayer
 
         """
-        return _Visual3d.Visual3d_Layer_Type(self, *args)
+        return _Visual3d.Visual3d_Layer_Type(self)
 
-    def AddLayerItem(self, *args) -> "void" :
+    def AddLayerItem(self, *args):
         """
         :param Item:
         :type Item: Handle_Visual3d_LayerItem &
@@ -1511,7 +1555,7 @@ class Visual3d_Layer(OCC.MMgt.MMgt_TShared):
         """
         return _Visual3d.Visual3d_Layer_AddLayerItem(self, *args)
 
-    def RemoveLayerItem(self, *args) -> "void" :
+    def RemoveLayerItem(self, *args):
         """
         :param Item:
         :type Item: Handle_Visual3d_LayerItem &
@@ -1520,32 +1564,32 @@ class Visual3d_Layer(OCC.MMgt.MMgt_TShared):
         """
         return _Visual3d.Visual3d_Layer_RemoveLayerItem(self, *args)
 
-    def RemoveAllLayerItems(self, *args) -> "void" :
+    def RemoveAllLayerItems(self):
         """
         :rtype: None
 
         """
-        return _Visual3d.Visual3d_Layer_RemoveAllLayerItems(self, *args)
+        return _Visual3d.Visual3d_Layer_RemoveAllLayerItems(self)
 
-    def GetLayerItemList(self, *args) -> "Visual3d_NListOfLayerItem const &" :
+    def GetLayerItemList(self):
         """
         :rtype: Visual3d_NListOfLayerItem
 
         """
-        return _Visual3d.Visual3d_Layer_GetLayerItemList(self, *args)
+        return _Visual3d.Visual3d_Layer_GetLayerItemList(self)
 
-    def RenderLayerItems(self, *args) -> "void" :
+    def RenderLayerItems(self):
         """
         :rtype: None
 
         """
-        return _Visual3d.Visual3d_Layer_RenderLayerItems(self, *args)
+        return _Visual3d.Visual3d_Layer_RenderLayerItems(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Visual3d_Layer self)"""
         return _Visual3d.Visual3d_Layer__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Visual3d_Layer" :
+    def GetHandle(self):
         """GetHandle(Visual3d_Layer self) -> Handle_Visual3d_Layer"""
         return _Visual3d.Visual3d_Layer_GetHandle(self)
 
@@ -1607,48 +1651,52 @@ Handle_Visual3d_Layer._kill_pointed = new_instancemethod(_Visual3d.Handle_Visual
 Handle_Visual3d_Layer_swigregister = _Visual3d.Handle_Visual3d_Layer_swigregister
 Handle_Visual3d_Layer_swigregister(Handle_Visual3d_Layer)
 
-def Handle_Visual3d_Layer_DownCast(*args) -> "Handle_Visual3d_Layer const" :
+def Handle_Visual3d_Layer_DownCast(*args):
   return _Visual3d.Handle_Visual3d_Layer_DownCast(*args)
 Handle_Visual3d_Layer_DownCast = _Visual3d.Handle_Visual3d_Layer_DownCast
 
 class Visual3d_LayerItem(OCC.MMgt.MMgt_TShared):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         * Creates a layer item
 
         :rtype: None
 
         """
-        _Visual3d.Visual3d_LayerItem_swiginit(self,_Visual3d.new_Visual3d_LayerItem(*args))
-    def ComputeLayerPrs(self, *args) -> "void" :
+        _Visual3d.Visual3d_LayerItem_swiginit(self,_Visual3d.new_Visual3d_LayerItem())
+    def ComputeLayerPrs(self):
         """
         * virtual function for recompute 2D presentation (empty by default)
 
         :rtype: void
 
         """
-        return _Visual3d.Visual3d_LayerItem_ComputeLayerPrs(self, *args)
+        return _Visual3d.Visual3d_LayerItem_ComputeLayerPrs(self)
 
-    def RedrawLayerPrs(self, *args) -> "void" :
+    def RedrawLayerPrs(self):
         """
         * virtual function for recompute 2D presentation (empty by default)
 
         :rtype: void
 
         """
-        return _Visual3d.Visual3d_LayerItem_RedrawLayerPrs(self, *args)
+        return _Visual3d.Visual3d_LayerItem_RedrawLayerPrs(self)
 
-    def IsNeedToRecompute(self, *args) -> "Standard_Boolean" :
+    def IsNeedToRecompute(self):
         """
         :rtype: bool
 
         """
-        return _Visual3d.Visual3d_LayerItem_IsNeedToRecompute(self, *args)
+        return _Visual3d.Visual3d_LayerItem_IsNeedToRecompute(self)
 
-    def SetNeedToRecompute(self, *args) -> "void" :
+    def SetNeedToRecompute(self, *args):
         """
+        :param NeedToRecompute: default value is Standard_True
+        :type NeedToRecompute: bool
+        :rtype: None
+
         :param NeedToRecompute: default value is Standard_True
         :type NeedToRecompute: bool
         :rtype: None
@@ -1656,11 +1704,11 @@ class Visual3d_LayerItem(OCC.MMgt.MMgt_TShared):
         """
         return _Visual3d.Visual3d_LayerItem_SetNeedToRecompute(self, *args)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Visual3d_LayerItem self)"""
         return _Visual3d.Visual3d_LayerItem__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Visual3d_LayerItem" :
+    def GetHandle(self):
         """GetHandle(Visual3d_LayerItem self) -> Handle_Visual3d_LayerItem"""
         return _Visual3d.Visual3d_LayerItem_GetHandle(self)
 
@@ -1702,7 +1750,7 @@ Handle_Visual3d_LayerItem._kill_pointed = new_instancemethod(_Visual3d.Handle_Vi
 Handle_Visual3d_LayerItem_swigregister = _Visual3d.Handle_Visual3d_LayerItem_swigregister
 Handle_Visual3d_LayerItem_swigregister(Handle_Visual3d_LayerItem)
 
-def Handle_Visual3d_LayerItem_DownCast(*args) -> "Handle_Visual3d_LayerItem const" :
+def Handle_Visual3d_LayerItem_DownCast(*args):
   return _Visual3d.Handle_Visual3d_LayerItem_DownCast(*args)
 Handle_Visual3d_LayerItem_DownCast = _Visual3d.Handle_Visual3d_LayerItem_DownCast
 
@@ -1719,6 +1767,16 @@ class Visual3d_Light(OCC.MMgt.MMgt_TShared):
 
         :param Color:
         :type Color: Quantity_Color &
+        :rtype: None
+
+        * Creates a DIRECTIONAL light source. //!	 Light sources are created in a visualiser //!	 and are activated in one of its views. Warning: Raises LightDefinitionError if <Direction> is null.
+
+        :param Color:
+        :type Color: Quantity_Color &
+        :param Direction:
+        :type Direction: Graphic3d_Vector &
+        :param Headlight: default value is Standard_False
+        :type Headlight: bool
         :rtype: None
 
         * Creates a DIRECTIONAL light source. //!	 Light sources are created in a visualiser //!	 and are activated in one of its views. Warning: Raises LightDefinitionError if <Direction> is null.
@@ -1763,7 +1821,7 @@ class Visual3d_Light(OCC.MMgt.MMgt_TShared):
 
         """
         _Visual3d.Visual3d_Light_swiginit(self,_Visual3d.new_Visual3d_Light(*args))
-    def SetAngle(self, *args) -> "void" :
+    def SetAngle(self, *args):
         """
         * Modifies the angle (radians) of the cone created by the spot. //!	 Works only on TOLS_SPOT lights. Category: Methods to modify the class definition Warning: Raises LightDefinitionError //!	 if the type of the light is not TOLS_SPOT. //!	 if <AngleCone> is a negative value or greater than PI/2.
 
@@ -1774,7 +1832,7 @@ class Visual3d_Light(OCC.MMgt.MMgt_TShared):
         """
         return _Visual3d.Visual3d_Light_SetAngle(self, *args)
 
-    def SetAttenuation1(self, *args) -> "void" :
+    def SetAttenuation1(self, *args):
         """
         * Modifies the attenuation factor of the light. //!	 Works only on the TOLS_POSITIONAL and TOLS_SPOT lights. Category: Methods to modify the class definition Warning: Raises LightDefinitionError //!	 if the type of the light is not TOLS_SPOT or TOLS_POSITIONAL. //!	 if <Fact1> is a negative value or greater than 1.0.
 
@@ -1785,7 +1843,7 @@ class Visual3d_Light(OCC.MMgt.MMgt_TShared):
         """
         return _Visual3d.Visual3d_Light_SetAttenuation1(self, *args)
 
-    def SetAttenuation2(self, *args) -> "void" :
+    def SetAttenuation2(self, *args):
         """
         * Modifies the attenuation factor of the light. //!	 Works only on the TOLS_POSITIONAL and TOLS_SPOT lights. Category: Methods to modify the class definition Warning: Raises LightDefinitionError //!	 if the type of the light is not TOLS_POSITIONAL or TOLS_SPOT. //!	 if <Fact2> is a negative value or greater than 1.0..
 
@@ -1796,7 +1854,7 @@ class Visual3d_Light(OCC.MMgt.MMgt_TShared):
         """
         return _Visual3d.Visual3d_Light_SetAttenuation2(self, *args)
 
-    def SetColor(self, *args) -> "void" :
+    def SetColor(self, *args):
         """
         * Modifies the colour of the light.
 
@@ -1807,7 +1865,7 @@ class Visual3d_Light(OCC.MMgt.MMgt_TShared):
         """
         return _Visual3d.Visual3d_Light_SetColor(self, *args)
 
-    def SetConcentration(self, *args) -> "void" :
+    def SetConcentration(self, *args):
         """
         * Modifies the intensity distribution of the light. //!	 Works only on the TOLS_SPOT lights. Category: Methods to modify the class definition Warning: Raises LightDefinitionError //!	 if the type of the light is not TOLS_SPOT. //!	 if <Concentration> is a negative value or greater than 1.0.
 
@@ -1818,7 +1876,7 @@ class Visual3d_Light(OCC.MMgt.MMgt_TShared):
         """
         return _Visual3d.Visual3d_Light_SetConcentration(self, *args)
 
-    def SetDirection(self, *args) -> "void" :
+    def SetDirection(self, *args):
         """
         * Modifies the light direction. //!	 Works only on the TOLS_DIRECTIONAL and TOLS_SPOT lights. //!	 Default z Category: Methods to modify the class definition Warning: Raises LightDefinitionError //!	 if the type of the light is not TOLS_DIRECTIONAL //!	 or TOLS_SPOT. //!	 if <Direction> is null.
 
@@ -1829,7 +1887,7 @@ class Visual3d_Light(OCC.MMgt.MMgt_TShared):
         """
         return _Visual3d.Visual3d_Light_SetDirection(self, *args)
 
-    def SetPosition(self, *args) -> "void" :
+    def SetPosition(self, *args):
         """
         * Modifies the position of the light. //!	 Works only on the TOLS_POSITIONAL and TOLS_SPOT lights. Category: Methods to modify the class definition Warning: Raises LightDefinitionError //!	 if the type of the light is not TOLS_POSITIONAL or TOLS_SPOT.
 
@@ -1840,16 +1898,16 @@ class Visual3d_Light(OCC.MMgt.MMgt_TShared):
         """
         return _Visual3d.Visual3d_Light_SetPosition(self, *args)
 
-    def Headlight(self, *args) -> "Standard_Boolean" :
+    def Headlight(self):
         """
         * Returns the headlight state of the light <self>
 
         :rtype: bool
 
         """
-        return _Visual3d.Visual3d_Light_Headlight(self, *args)
+        return _Visual3d.Visual3d_Light_Headlight(self)
 
-    def SetHeadlight(self, *args) -> "void" :
+    def SetHeadlight(self, *args):
         """
         * Setup headlight flag.
 
@@ -1860,25 +1918,25 @@ class Visual3d_Light(OCC.MMgt.MMgt_TShared):
         """
         return _Visual3d.Visual3d_Light_SetHeadlight(self, *args)
 
-    def Color(self, *args) -> "Quantity_Color" :
+    def Color(self):
         """
         * Returns the colour of the light <self>.
 
         :rtype: Quantity_Color
 
         """
-        return _Visual3d.Visual3d_Light_Color(self, *args)
+        return _Visual3d.Visual3d_Light_Color(self)
 
-    def LightType(self, *args) -> "Visual3d_TypeOfLightSource" :
+    def LightType(self):
         """
         * Returns the light type of <self>. //!	 TypeOfLightSource = TOLS_AMBIENT //!				TOLS_DIRECTIONAL //!				TOLS_POSITIONAL //!				TOLS_SPOT
 
         :rtype: Visual3d_TypeOfLightSource
 
         """
-        return _Visual3d.Visual3d_Light_LightType(self, *args)
+        return _Visual3d.Visual3d_Light_LightType(self)
 
-    def Values(self, *args) -> "void" :
+    def Values(self, *args):
         """
         * Returns the definition of <self> if <self> is //!	 a light source of the TOLS_AMBIENT type. Category: Inquire methods Warning: Raises LightDefinitionError //!	 if the type of the light is not TOLS_AMBIENT.
 
@@ -1927,20 +1985,20 @@ class Visual3d_Light(OCC.MMgt.MMgt_TShared):
         """
         return _Visual3d.Visual3d_Light_Values(self, *args)
 
-    def CLight(self, *args) -> "Graphic3d_CLight const &" :
+    def CLight(self):
         """
         * Returns the light defintion.
 
         :rtype: Graphic3d_CLight
 
         """
-        return _Visual3d.Visual3d_Light_CLight(self, *args)
+        return _Visual3d.Visual3d_Light_CLight(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Visual3d_Light self)"""
         return _Visual3d.Visual3d_Light__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Visual3d_Light" :
+    def GetHandle(self):
         """GetHandle(Visual3d_Light self) -> Handle_Visual3d_Light"""
         return _Visual3d.Visual3d_Light_GetHandle(self)
 
@@ -1991,7 +2049,7 @@ Handle_Visual3d_Light._kill_pointed = new_instancemethod(_Visual3d.Handle_Visual
 Handle_Visual3d_Light_swigregister = _Visual3d.Handle_Visual3d_Light_swigregister
 Handle_Visual3d_Light_swigregister(Handle_Visual3d_Light)
 
-def Handle_Visual3d_Light_DownCast(*args) -> "Handle_Visual3d_Light const" :
+def Handle_Visual3d_Light_DownCast(*args):
   return _Visual3d.Handle_Visual3d_Light_DownCast(*args)
 Handle_Visual3d_Light_DownCast = _Visual3d.Handle_Visual3d_Light_DownCast
 
@@ -2008,7 +2066,7 @@ class Visual3d_ListIteratorOfSetListOfSetOfLight(object):
 
         """
         _Visual3d.Visual3d_ListIteratorOfSetListOfSetOfLight_swiginit(self,_Visual3d.new_Visual3d_ListIteratorOfSetListOfSetOfLight(*args))
-    def Initialize(self, *args) -> "void" :
+    def Initialize(self, *args):
         """
         :param L:
         :type L: Visual3d_SetListOfSetOfLight &
@@ -2017,26 +2075,26 @@ class Visual3d_ListIteratorOfSetListOfSetOfLight(object):
         """
         return _Visual3d.Visual3d_ListIteratorOfSetListOfSetOfLight_Initialize(self, *args)
 
-    def More(self, *args) -> "Standard_Boolean" :
+    def More(self):
         """
         :rtype: bool
 
         """
-        return _Visual3d.Visual3d_ListIteratorOfSetListOfSetOfLight_More(self, *args)
+        return _Visual3d.Visual3d_ListIteratorOfSetListOfSetOfLight_More(self)
 
-    def Next(self, *args) -> "void" :
+    def Next(self):
         """
         :rtype: None
 
         """
-        return _Visual3d.Visual3d_ListIteratorOfSetListOfSetOfLight_Next(self, *args)
+        return _Visual3d.Visual3d_ListIteratorOfSetListOfSetOfLight_Next(self)
 
-    def Value(self, *args) -> "Handle_Visual3d_Light &" :
+    def Value(self):
         """
         :rtype: Handle_Visual3d_Light
 
         """
-        return _Visual3d.Visual3d_ListIteratorOfSetListOfSetOfLight_Value(self, *args)
+        return _Visual3d.Visual3d_ListIteratorOfSetListOfSetOfLight_Value(self)
 
     def __del__(self):
     	try:
@@ -2067,7 +2125,7 @@ class Visual3d_ListIteratorOfSetListOfSetOfView(object):
 
         """
         _Visual3d.Visual3d_ListIteratorOfSetListOfSetOfView_swiginit(self,_Visual3d.new_Visual3d_ListIteratorOfSetListOfSetOfView(*args))
-    def Initialize(self, *args) -> "void" :
+    def Initialize(self, *args):
         """
         :param L:
         :type L: Visual3d_SetListOfSetOfView &
@@ -2076,26 +2134,26 @@ class Visual3d_ListIteratorOfSetListOfSetOfView(object):
         """
         return _Visual3d.Visual3d_ListIteratorOfSetListOfSetOfView_Initialize(self, *args)
 
-    def More(self, *args) -> "Standard_Boolean" :
+    def More(self):
         """
         :rtype: bool
 
         """
-        return _Visual3d.Visual3d_ListIteratorOfSetListOfSetOfView_More(self, *args)
+        return _Visual3d.Visual3d_ListIteratorOfSetListOfSetOfView_More(self)
 
-    def Next(self, *args) -> "void" :
+    def Next(self):
         """
         :rtype: None
 
         """
-        return _Visual3d.Visual3d_ListIteratorOfSetListOfSetOfView_Next(self, *args)
+        return _Visual3d.Visual3d_ListIteratorOfSetListOfSetOfView_Next(self)
 
-    def Value(self, *args) -> "Handle_Visual3d_View &" :
+    def Value(self):
         """
         :rtype: Handle_Visual3d_View
 
         """
-        return _Visual3d.Visual3d_ListIteratorOfSetListOfSetOfView_Value(self, *args)
+        return _Visual3d.Visual3d_ListIteratorOfSetListOfSetOfView_Value(self)
 
     def __del__(self):
     	try:
@@ -2126,18 +2184,18 @@ class Visual3d_ListNodeOfSetListOfSetOfLight(OCC.TCollection.TCollection_MapNode
 
         """
         _Visual3d.Visual3d_ListNodeOfSetListOfSetOfLight_swiginit(self,_Visual3d.new_Visual3d_ListNodeOfSetListOfSetOfLight(*args))
-    def Value(self, *args) -> "Handle_Visual3d_Light &" :
+    def Value(self):
         """
         :rtype: Handle_Visual3d_Light
 
         """
-        return _Visual3d.Visual3d_ListNodeOfSetListOfSetOfLight_Value(self, *args)
+        return _Visual3d.Visual3d_ListNodeOfSetListOfSetOfLight_Value(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Visual3d_ListNodeOfSetListOfSetOfLight self)"""
         return _Visual3d.Visual3d_ListNodeOfSetListOfSetOfLight__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Visual3d_ListNodeOfSetListOfSetOfLight" :
+    def GetHandle(self):
         """GetHandle(Visual3d_ListNodeOfSetListOfSetOfLight self) -> Handle_Visual3d_ListNodeOfSetListOfSetOfLight"""
         return _Visual3d.Visual3d_ListNodeOfSetListOfSetOfLight_GetHandle(self)
 
@@ -2176,7 +2234,7 @@ Handle_Visual3d_ListNodeOfSetListOfSetOfLight._kill_pointed = new_instancemethod
 Handle_Visual3d_ListNodeOfSetListOfSetOfLight_swigregister = _Visual3d.Handle_Visual3d_ListNodeOfSetListOfSetOfLight_swigregister
 Handle_Visual3d_ListNodeOfSetListOfSetOfLight_swigregister(Handle_Visual3d_ListNodeOfSetListOfSetOfLight)
 
-def Handle_Visual3d_ListNodeOfSetListOfSetOfLight_DownCast(*args) -> "Handle_Visual3d_ListNodeOfSetListOfSetOfLight const" :
+def Handle_Visual3d_ListNodeOfSetListOfSetOfLight_DownCast(*args):
   return _Visual3d.Handle_Visual3d_ListNodeOfSetListOfSetOfLight_DownCast(*args)
 Handle_Visual3d_ListNodeOfSetListOfSetOfLight_DownCast = _Visual3d.Handle_Visual3d_ListNodeOfSetListOfSetOfLight_DownCast
 
@@ -2193,18 +2251,18 @@ class Visual3d_ListNodeOfSetListOfSetOfView(OCC.TCollection.TCollection_MapNode)
 
         """
         _Visual3d.Visual3d_ListNodeOfSetListOfSetOfView_swiginit(self,_Visual3d.new_Visual3d_ListNodeOfSetListOfSetOfView(*args))
-    def Value(self, *args) -> "Handle_Visual3d_View &" :
+    def Value(self):
         """
         :rtype: Handle_Visual3d_View
 
         """
-        return _Visual3d.Visual3d_ListNodeOfSetListOfSetOfView_Value(self, *args)
+        return _Visual3d.Visual3d_ListNodeOfSetListOfSetOfView_Value(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Visual3d_ListNodeOfSetListOfSetOfView self)"""
         return _Visual3d.Visual3d_ListNodeOfSetListOfSetOfView__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Visual3d_ListNodeOfSetListOfSetOfView" :
+    def GetHandle(self):
         """GetHandle(Visual3d_ListNodeOfSetListOfSetOfView self) -> Handle_Visual3d_ListNodeOfSetListOfSetOfView"""
         return _Visual3d.Visual3d_ListNodeOfSetListOfSetOfView_GetHandle(self)
 
@@ -2243,7 +2301,7 @@ Handle_Visual3d_ListNodeOfSetListOfSetOfView._kill_pointed = new_instancemethod(
 Handle_Visual3d_ListNodeOfSetListOfSetOfView_swigregister = _Visual3d.Handle_Visual3d_ListNodeOfSetListOfSetOfView_swigregister
 Handle_Visual3d_ListNodeOfSetListOfSetOfView_swigregister(Handle_Visual3d_ListNodeOfSetListOfSetOfView)
 
-def Handle_Visual3d_ListNodeOfSetListOfSetOfView_DownCast(*args) -> "Handle_Visual3d_ListNodeOfSetListOfSetOfView const" :
+def Handle_Visual3d_ListNodeOfSetListOfSetOfView_DownCast(*args):
   return _Visual3d.Handle_Visual3d_ListNodeOfSetListOfSetOfView_DownCast(*args)
 Handle_Visual3d_ListNodeOfSetListOfSetOfView_DownCast = _Visual3d.Handle_Visual3d_ListNodeOfSetListOfSetOfView_DownCast
 
@@ -2260,7 +2318,7 @@ class Visual3d_PickDescriptor(object):
 
         """
         _Visual3d.Visual3d_PickDescriptor_swiginit(self,_Visual3d.new_Visual3d_PickDescriptor(*args))
-    def AddPickPath(self, *args) -> "void" :
+    def AddPickPath(self, *args):
         """
         * Adds a PickPath to PickDescriptor <self>.
 
@@ -2271,59 +2329,59 @@ class Visual3d_PickDescriptor(object):
         """
         return _Visual3d.Visual3d_PickDescriptor_AddPickPath(self, *args)
 
-    def Clear(self, *args) -> "void" :
+    def Clear(self):
         """
         * Erases all the information in <self>.
 
         :rtype: None
 
         """
-        return _Visual3d.Visual3d_PickDescriptor_Clear(self, *args)
+        return _Visual3d.Visual3d_PickDescriptor_Clear(self)
 
-    def Depth(self, *args) -> "Standard_Integer" :
+    def Depth(self):
         """
         * Returns the pick depth, that is the //!	 number of PickPaths available in the PickDescriptor.
 
         :rtype: int
 
         """
-        return _Visual3d.Visual3d_PickDescriptor_Depth(self, *args)
+        return _Visual3d.Visual3d_PickDescriptor_Depth(self)
 
-    def PickPath(self, *args) -> "Handle_Visual3d_HSequenceOfPickPath" :
+    def PickPath(self):
         """
         * Returns the group of PickPaths of <self>.
 
         :rtype: Handle_Visual3d_HSequenceOfPickPath
 
         """
-        return _Visual3d.Visual3d_PickDescriptor_PickPath(self, *args)
+        return _Visual3d.Visual3d_PickDescriptor_PickPath(self)
 
-    def TopStructure(self, *args) -> "Handle_Graphic3d_Structure" :
+    def TopStructure(self):
         """
         * Returns the root structure. //!	 If the pick order was of the type TOO_TOPFIRST //!	 then it's the first structure. //!	 If the pick order was of the type TOO_BOTTOMFIRST //!	 Then it's the last structure. //!	 The pick order is set by the method SetOrder //!	 from ContextPick. Category: Inquire methods Warning: Raises PickError if Depth == 0 (no picked structure).
 
         :rtype: Handle_Graphic3d_Structure
 
         """
-        return _Visual3d.Visual3d_PickDescriptor_TopStructure(self, *args)
+        return _Visual3d.Visual3d_PickDescriptor_TopStructure(self)
 
-    def TopPickId(self, *args) -> "Standard_Integer" :
+    def TopPickId(self):
         """
         * Returns the root structure pickid. //!	 If the pick order was of the type TOO_TOPFIRST //!	 then it's the first pickid. //!	 If the pick order was of the type TOO_BOTTOMFIRST //!	 then it's the last pickid. //!	 The pick order is set by the method SetOrder //!	 from ContextPick. Category: Inquire methods Warning: Raises PickError if Depth == 0 (no picked structure).
 
         :rtype: int
 
         """
-        return _Visual3d.Visual3d_PickDescriptor_TopPickId(self, *args)
+        return _Visual3d.Visual3d_PickDescriptor_TopPickId(self)
 
-    def TopElementNumber(self, *args) -> "Standard_Integer" :
+    def TopElementNumber(self):
         """
         * Returns the root structure element number. //!	 If the pick order was of the type TOO_TOPFIRST //!	 then it's the first element number. //!	 If the pick order was of the type TOO_BOTTOMFIRST //!	 then it's the last element number. //!	 The pick order is set by the method SetOrder //!	 from ContextPick. Category: Inquire methods Warning: Raises PickError if Depth == 0 (no picked structure).
 
         :rtype: int
 
         """
-        return _Visual3d.Visual3d_PickDescriptor_TopElementNumber(self, *args)
+        return _Visual3d.Visual3d_PickDescriptor_TopElementNumber(self)
 
     def __del__(self):
     	try:
@@ -2356,38 +2414,38 @@ class Visual3d_PickPath(object):
         * Creates a PickPath : //!	 <AElemNumber> : Element number of the structure picked. //!	 <APickId>	 : Pick identifier of the structure picked. //!	 <AStructure> : The picked structure.
 
         :param AElemNumber:
-        :type AElemNumber: int
+        :type AElemNumber: Standard_Integer
         :param APickId:
-        :type APickId: int
+        :type APickId: Standard_Integer
         :param AStructure:
         :type AStructure: Handle_Graphic3d_Structure &
         :rtype: None
 
         """
         _Visual3d.Visual3d_PickPath_swiginit(self,_Visual3d.new_Visual3d_PickPath(*args))
-    def SetElementNumber(self, *args) -> "void" :
+    def SetElementNumber(self, *args):
         """
         * Modifies the PickPath <self>. //!	 <AElemNumber> : Element number of the structure picked.
 
         :param AElemNumber:
-        :type AElemNumber: int
+        :type AElemNumber: Standard_Integer
         :rtype: None
 
         """
         return _Visual3d.Visual3d_PickPath_SetElementNumber(self, *args)
 
-    def SetPickIdentifier(self, *args) -> "void" :
+    def SetPickIdentifier(self, *args):
         """
         * Modifies the PickPath <self>. //!	 <APickId>	 : Pick identifier of the structure picked.
 
         :param APickId:
-        :type APickId: int
+        :type APickId: Standard_Integer
         :rtype: None
 
         """
         return _Visual3d.Visual3d_PickPath_SetPickIdentifier(self, *args)
 
-    def SetStructIdentifier(self, *args) -> "void" :
+    def SetStructIdentifier(self, *args):
         """
         * Modifies the PickPath <self>. //!	 <AStructure>	: Identifier of the structure picked.
 
@@ -2398,32 +2456,32 @@ class Visual3d_PickPath(object):
         """
         return _Visual3d.Visual3d_PickPath_SetStructIdentifier(self, *args)
 
-    def ElementNumber(self, *args) -> "Standard_Integer" :
+    def ElementNumber(self):
         """
         * Returns the element number stocked in the PickPath <self>. Category: Inquire methods Warning: Raises PickError if PickPath is empty (no picked structure).
 
         :rtype: int
 
         """
-        return _Visual3d.Visual3d_PickPath_ElementNumber(self, *args)
+        return _Visual3d.Visual3d_PickPath_ElementNumber(self)
 
-    def PickIdentifier(self, *args) -> "Standard_Integer" :
+    def PickIdentifier(self):
         """
         * Returns the pick identifier stocked in the PickPath <self>. Category: Inquire methods Warning: Raises PickError if PickPath is empty (no picked structure).
 
         :rtype: int
 
         """
-        return _Visual3d.Visual3d_PickPath_PickIdentifier(self, *args)
+        return _Visual3d.Visual3d_PickPath_PickIdentifier(self)
 
-    def StructIdentifier(self, *args) -> "Handle_Graphic3d_Structure" :
+    def StructIdentifier(self):
         """
         * Returns the structure stocked in the PickPath <self>. Category: Inquire methods Warning: Raises PickError if PickPath is empty (no picked structure).
 
         :rtype: Handle_Graphic3d_Structure
 
         """
-        return _Visual3d.Visual3d_PickPath_StructIdentifier(self, *args)
+        return _Visual3d.Visual3d_PickPath_StructIdentifier(self)
 
     def __del__(self):
     	try:
@@ -2458,18 +2516,18 @@ class Visual3d_SequenceNodeOfSequenceOfPickPath(OCC.TCollection.TCollection_SeqN
 
         """
         _Visual3d.Visual3d_SequenceNodeOfSequenceOfPickPath_swiginit(self,_Visual3d.new_Visual3d_SequenceNodeOfSequenceOfPickPath(*args))
-    def Value(self, *args) -> "Visual3d_PickPath &" :
+    def Value(self):
         """
         :rtype: Visual3d_PickPath
 
         """
-        return _Visual3d.Visual3d_SequenceNodeOfSequenceOfPickPath_Value(self, *args)
+        return _Visual3d.Visual3d_SequenceNodeOfSequenceOfPickPath_Value(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Visual3d_SequenceNodeOfSequenceOfPickPath self)"""
         return _Visual3d.Visual3d_SequenceNodeOfSequenceOfPickPath__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Visual3d_SequenceNodeOfSequenceOfPickPath" :
+    def GetHandle(self):
         """GetHandle(Visual3d_SequenceNodeOfSequenceOfPickPath self) -> Handle_Visual3d_SequenceNodeOfSequenceOfPickPath"""
         return _Visual3d.Visual3d_SequenceNodeOfSequenceOfPickPath_GetHandle(self)
 
@@ -2508,27 +2566,27 @@ Handle_Visual3d_SequenceNodeOfSequenceOfPickPath._kill_pointed = new_instancemet
 Handle_Visual3d_SequenceNodeOfSequenceOfPickPath_swigregister = _Visual3d.Handle_Visual3d_SequenceNodeOfSequenceOfPickPath_swigregister
 Handle_Visual3d_SequenceNodeOfSequenceOfPickPath_swigregister(Handle_Visual3d_SequenceNodeOfSequenceOfPickPath)
 
-def Handle_Visual3d_SequenceNodeOfSequenceOfPickPath_DownCast(*args) -> "Handle_Visual3d_SequenceNodeOfSequenceOfPickPath const" :
+def Handle_Visual3d_SequenceNodeOfSequenceOfPickPath_DownCast(*args):
   return _Visual3d.Handle_Visual3d_SequenceNodeOfSequenceOfPickPath_DownCast(*args)
 Handle_Visual3d_SequenceNodeOfSequenceOfPickPath_DownCast = _Visual3d.Handle_Visual3d_SequenceNodeOfSequenceOfPickPath_DownCast
 
 class Visual3d_SequenceOfPickPath(OCC.TCollection.TCollection_BaseSequence):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _Visual3d.Visual3d_SequenceOfPickPath_swiginit(self,_Visual3d.new_Visual3d_SequenceOfPickPath(*args))
-    def Clear(self, *args) -> "void" :
+        _Visual3d.Visual3d_SequenceOfPickPath_swiginit(self,_Visual3d.new_Visual3d_SequenceOfPickPath())
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _Visual3d.Visual3d_SequenceOfPickPath_Clear(self, *args)
+        return _Visual3d.Visual3d_SequenceOfPickPath_Clear(self)
 
-    def Assign(self, *args) -> "Visual3d_SequenceOfPickPath const &" :
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: Visual3d_SequenceOfPickPath &
@@ -2537,7 +2595,7 @@ class Visual3d_SequenceOfPickPath(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Visual3d.Visual3d_SequenceOfPickPath_Assign(self, *args)
 
-    def Set(self, *args) -> "Visual3d_SequenceOfPickPath const &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: Visual3d_SequenceOfPickPath &
@@ -2546,7 +2604,7 @@ class Visual3d_SequenceOfPickPath(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Visual3d.Visual3d_SequenceOfPickPath_Set(self, *args)
 
-    def Append(self, *args) -> "void" :
+    def Append(self, *args):
         """
         :param T:
         :type T: Visual3d_PickPath &
@@ -2559,7 +2617,7 @@ class Visual3d_SequenceOfPickPath(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Visual3d.Visual3d_SequenceOfPickPath_Append(self, *args)
 
-    def Prepend(self, *args) -> "void" :
+    def Prepend(self, *args):
         """
         :param T:
         :type T: Visual3d_PickPath &
@@ -2572,16 +2630,16 @@ class Visual3d_SequenceOfPickPath(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Visual3d.Visual3d_SequenceOfPickPath_Prepend(self, *args)
 
-    def InsertBefore(self, *args) -> "void" :
+    def InsertBefore(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param T:
         :type T: Visual3d_PickPath &
         :rtype: None
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param S:
         :type S: Visual3d_SequenceOfPickPath &
         :rtype: None
@@ -2589,16 +2647,16 @@ class Visual3d_SequenceOfPickPath(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Visual3d.Visual3d_SequenceOfPickPath_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args) -> "void" :
+    def InsertAfter(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param T:
         :type T: Visual3d_PickPath &
         :rtype: None
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param S:
         :type S: Visual3d_SequenceOfPickPath &
         :rtype: None
@@ -2606,24 +2664,24 @@ class Visual3d_SequenceOfPickPath(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Visual3d.Visual3d_SequenceOfPickPath_InsertAfter(self, *args)
 
-    def First(self, *args) -> "Visual3d_PickPath const &" :
+    def First(self):
         """
         :rtype: Visual3d_PickPath
 
         """
-        return _Visual3d.Visual3d_SequenceOfPickPath_First(self, *args)
+        return _Visual3d.Visual3d_SequenceOfPickPath_First(self)
 
-    def Last(self, *args) -> "Visual3d_PickPath const &" :
+    def Last(self):
         """
         :rtype: Visual3d_PickPath
 
         """
-        return _Visual3d.Visual3d_SequenceOfPickPath_Last(self, *args)
+        return _Visual3d.Visual3d_SequenceOfPickPath_Last(self)
 
-    def Split(self, *args) -> "void" :
+    def Split(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Sub:
         :type Sub: Visual3d_SequenceOfPickPath &
         :rtype: None
@@ -2631,19 +2689,19 @@ class Visual3d_SequenceOfPickPath(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Visual3d.Visual3d_SequenceOfPickPath_Split(self, *args)
 
-    def Value(self, *args) -> "Visual3d_PickPath const &" :
+    def Value(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Visual3d_PickPath
 
         """
         return _Visual3d.Visual3d_SequenceOfPickPath_Value(self, *args)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param I:
         :type I: Visual3d_PickPath &
         :rtype: None
@@ -2651,25 +2709,25 @@ class Visual3d_SequenceOfPickPath(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Visual3d.Visual3d_SequenceOfPickPath_SetValue(self, *args)
 
-    def ChangeValue(self, *args) -> "Visual3d_PickPath &" :
+    def ChangeValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Visual3d_PickPath
 
         """
         return _Visual3d.Visual3d_SequenceOfPickPath_ChangeValue(self, *args)
 
-    def Remove(self, *args) -> "void" :
+    def Remove(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: None
 
         :param FromIndex:
-        :type FromIndex: int
+        :type FromIndex: Standard_Integer
         :param ToIndex:
-        :type ToIndex: int
+        :type ToIndex: Standard_Integer
         :rtype: None
 
         """
@@ -2714,7 +2772,7 @@ class Visual3d_SetIteratorOfSetOfLight(object):
 
         """
         _Visual3d.Visual3d_SetIteratorOfSetOfLight_swiginit(self,_Visual3d.new_Visual3d_SetIteratorOfSetOfLight(*args))
-    def Initialize(self, *args) -> "void" :
+    def Initialize(self, *args):
         """
         :param S:
         :type S: Visual3d_SetOfLight &
@@ -2723,26 +2781,26 @@ class Visual3d_SetIteratorOfSetOfLight(object):
         """
         return _Visual3d.Visual3d_SetIteratorOfSetOfLight_Initialize(self, *args)
 
-    def More(self, *args) -> "Standard_Boolean" :
+    def More(self):
         """
         :rtype: bool
 
         """
-        return _Visual3d.Visual3d_SetIteratorOfSetOfLight_More(self, *args)
+        return _Visual3d.Visual3d_SetIteratorOfSetOfLight_More(self)
 
-    def Next(self, *args) -> "void" :
+    def Next(self):
         """
         :rtype: None
 
         """
-        return _Visual3d.Visual3d_SetIteratorOfSetOfLight_Next(self, *args)
+        return _Visual3d.Visual3d_SetIteratorOfSetOfLight_Next(self)
 
-    def Value(self, *args) -> "Handle_Visual3d_Light const &" :
+    def Value(self):
         """
         :rtype: Handle_Visual3d_Light
 
         """
-        return _Visual3d.Visual3d_SetIteratorOfSetOfLight_Value(self, *args)
+        return _Visual3d.Visual3d_SetIteratorOfSetOfLight_Value(self)
 
     def __del__(self):
     	try:
@@ -2773,7 +2831,7 @@ class Visual3d_SetIteratorOfSetOfView(object):
 
         """
         _Visual3d.Visual3d_SetIteratorOfSetOfView_swiginit(self,_Visual3d.new_Visual3d_SetIteratorOfSetOfView(*args))
-    def Initialize(self, *args) -> "void" :
+    def Initialize(self, *args):
         """
         :param S:
         :type S: Visual3d_SetOfView &
@@ -2782,26 +2840,26 @@ class Visual3d_SetIteratorOfSetOfView(object):
         """
         return _Visual3d.Visual3d_SetIteratorOfSetOfView_Initialize(self, *args)
 
-    def More(self, *args) -> "Standard_Boolean" :
+    def More(self):
         """
         :rtype: bool
 
         """
-        return _Visual3d.Visual3d_SetIteratorOfSetOfView_More(self, *args)
+        return _Visual3d.Visual3d_SetIteratorOfSetOfView_More(self)
 
-    def Next(self, *args) -> "void" :
+    def Next(self):
         """
         :rtype: None
 
         """
-        return _Visual3d.Visual3d_SetIteratorOfSetOfView_Next(self, *args)
+        return _Visual3d.Visual3d_SetIteratorOfSetOfView_Next(self)
 
-    def Value(self, *args) -> "Handle_Visual3d_View const &" :
+    def Value(self):
         """
         :rtype: Handle_Visual3d_View
 
         """
-        return _Visual3d.Visual3d_SetIteratorOfSetOfView_Value(self, *args)
+        return _Visual3d.Visual3d_SetIteratorOfSetOfView_Value(self)
 
     def __del__(self):
     	try:
@@ -2822,13 +2880,13 @@ Visual3d_SetIteratorOfSetOfView_swigregister(Visual3d_SetIteratorOfSetOfView)
 class Visual3d_SetListOfSetOfLight(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _Visual3d.Visual3d_SetListOfSetOfLight_swiginit(self,_Visual3d.new_Visual3d_SetListOfSetOfLight(*args))
-    def Assign(self, *args) -> "void" :
+        _Visual3d.Visual3d_SetListOfSetOfLight_swiginit(self,_Visual3d.new_Visual3d_SetListOfSetOfLight())
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: Visual3d_SetListOfSetOfLight &
@@ -2837,7 +2895,7 @@ class Visual3d_SetListOfSetOfLight(object):
         """
         return _Visual3d.Visual3d_SetListOfSetOfLight_Assign(self, *args)
 
-    def Set(self, *args) -> "void" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: Visual3d_SetListOfSetOfLight &
@@ -2846,28 +2904,28 @@ class Visual3d_SetListOfSetOfLight(object):
         """
         return _Visual3d.Visual3d_SetListOfSetOfLight_Set(self, *args)
 
-    def Extent(self, *args) -> "Standard_Integer" :
+    def Extent(self):
         """
         :rtype: int
 
         """
-        return _Visual3d.Visual3d_SetListOfSetOfLight_Extent(self, *args)
+        return _Visual3d.Visual3d_SetListOfSetOfLight_Extent(self)
 
-    def Clear(self, *args) -> "void" :
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _Visual3d.Visual3d_SetListOfSetOfLight_Clear(self, *args)
+        return _Visual3d.Visual3d_SetListOfSetOfLight_Clear(self)
 
-    def IsEmpty(self, *args) -> "Standard_Boolean" :
+    def IsEmpty(self):
         """
         :rtype: bool
 
         """
-        return _Visual3d.Visual3d_SetListOfSetOfLight_IsEmpty(self, *args)
+        return _Visual3d.Visual3d_SetListOfSetOfLight_IsEmpty(self)
 
-    def Prepend(self, *args) -> "void" :
+    def Prepend(self, *args):
         """
         :param I:
         :type I: Handle_Visual3d_Light &
@@ -2886,7 +2944,7 @@ class Visual3d_SetListOfSetOfLight(object):
         """
         return _Visual3d.Visual3d_SetListOfSetOfLight_Prepend(self, *args)
 
-    def Append(self, *args) -> "void" :
+    def Append(self, *args):
         """
         :param I:
         :type I: Handle_Visual3d_Light &
@@ -2905,28 +2963,28 @@ class Visual3d_SetListOfSetOfLight(object):
         """
         return _Visual3d.Visual3d_SetListOfSetOfLight_Append(self, *args)
 
-    def First(self, *args) -> "Handle_Visual3d_Light &" :
+    def First(self):
         """
         :rtype: Handle_Visual3d_Light
 
         """
-        return _Visual3d.Visual3d_SetListOfSetOfLight_First(self, *args)
+        return _Visual3d.Visual3d_SetListOfSetOfLight_First(self)
 
-    def Last(self, *args) -> "Handle_Visual3d_Light &" :
+    def Last(self):
         """
         :rtype: Handle_Visual3d_Light
 
         """
-        return _Visual3d.Visual3d_SetListOfSetOfLight_Last(self, *args)
+        return _Visual3d.Visual3d_SetListOfSetOfLight_Last(self)
 
-    def RemoveFirst(self, *args) -> "void" :
+    def RemoveFirst(self):
         """
         :rtype: None
 
         """
-        return _Visual3d.Visual3d_SetListOfSetOfLight_RemoveFirst(self, *args)
+        return _Visual3d.Visual3d_SetListOfSetOfLight_RemoveFirst(self)
 
-    def Remove(self, *args) -> "void" :
+    def Remove(self, *args):
         """
         :param It:
         :type It: Visual3d_ListIteratorOfSetListOfSetOfLight &
@@ -2935,7 +2993,7 @@ class Visual3d_SetListOfSetOfLight(object):
         """
         return _Visual3d.Visual3d_SetListOfSetOfLight_Remove(self, *args)
 
-    def InsertBefore(self, *args) -> "void" :
+    def InsertBefore(self, *args):
         """
         :param I:
         :type I: Handle_Visual3d_Light &
@@ -2952,7 +3010,7 @@ class Visual3d_SetListOfSetOfLight(object):
         """
         return _Visual3d.Visual3d_SetListOfSetOfLight_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args) -> "void" :
+    def InsertAfter(self, *args):
         """
         :param I:
         :type I: Handle_Visual3d_Light &
@@ -2997,13 +3055,13 @@ Visual3d_SetListOfSetOfLight_swigregister(Visual3d_SetListOfSetOfLight)
 class Visual3d_SetListOfSetOfView(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _Visual3d.Visual3d_SetListOfSetOfView_swiginit(self,_Visual3d.new_Visual3d_SetListOfSetOfView(*args))
-    def Assign(self, *args) -> "void" :
+        _Visual3d.Visual3d_SetListOfSetOfView_swiginit(self,_Visual3d.new_Visual3d_SetListOfSetOfView())
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: Visual3d_SetListOfSetOfView &
@@ -3012,7 +3070,7 @@ class Visual3d_SetListOfSetOfView(object):
         """
         return _Visual3d.Visual3d_SetListOfSetOfView_Assign(self, *args)
 
-    def Set(self, *args) -> "void" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: Visual3d_SetListOfSetOfView &
@@ -3021,28 +3079,28 @@ class Visual3d_SetListOfSetOfView(object):
         """
         return _Visual3d.Visual3d_SetListOfSetOfView_Set(self, *args)
 
-    def Extent(self, *args) -> "Standard_Integer" :
+    def Extent(self):
         """
         :rtype: int
 
         """
-        return _Visual3d.Visual3d_SetListOfSetOfView_Extent(self, *args)
+        return _Visual3d.Visual3d_SetListOfSetOfView_Extent(self)
 
-    def Clear(self, *args) -> "void" :
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _Visual3d.Visual3d_SetListOfSetOfView_Clear(self, *args)
+        return _Visual3d.Visual3d_SetListOfSetOfView_Clear(self)
 
-    def IsEmpty(self, *args) -> "Standard_Boolean" :
+    def IsEmpty(self):
         """
         :rtype: bool
 
         """
-        return _Visual3d.Visual3d_SetListOfSetOfView_IsEmpty(self, *args)
+        return _Visual3d.Visual3d_SetListOfSetOfView_IsEmpty(self)
 
-    def Prepend(self, *args) -> "void" :
+    def Prepend(self, *args):
         """
         :param I:
         :type I: Handle_Visual3d_View &
@@ -3061,7 +3119,7 @@ class Visual3d_SetListOfSetOfView(object):
         """
         return _Visual3d.Visual3d_SetListOfSetOfView_Prepend(self, *args)
 
-    def Append(self, *args) -> "void" :
+    def Append(self, *args):
         """
         :param I:
         :type I: Handle_Visual3d_View &
@@ -3080,28 +3138,28 @@ class Visual3d_SetListOfSetOfView(object):
         """
         return _Visual3d.Visual3d_SetListOfSetOfView_Append(self, *args)
 
-    def First(self, *args) -> "Handle_Visual3d_View &" :
+    def First(self):
         """
         :rtype: Handle_Visual3d_View
 
         """
-        return _Visual3d.Visual3d_SetListOfSetOfView_First(self, *args)
+        return _Visual3d.Visual3d_SetListOfSetOfView_First(self)
 
-    def Last(self, *args) -> "Handle_Visual3d_View &" :
+    def Last(self):
         """
         :rtype: Handle_Visual3d_View
 
         """
-        return _Visual3d.Visual3d_SetListOfSetOfView_Last(self, *args)
+        return _Visual3d.Visual3d_SetListOfSetOfView_Last(self)
 
-    def RemoveFirst(self, *args) -> "void" :
+    def RemoveFirst(self):
         """
         :rtype: None
 
         """
-        return _Visual3d.Visual3d_SetListOfSetOfView_RemoveFirst(self, *args)
+        return _Visual3d.Visual3d_SetListOfSetOfView_RemoveFirst(self)
 
-    def Remove(self, *args) -> "void" :
+    def Remove(self, *args):
         """
         :param It:
         :type It: Visual3d_ListIteratorOfSetListOfSetOfView &
@@ -3110,7 +3168,7 @@ class Visual3d_SetListOfSetOfView(object):
         """
         return _Visual3d.Visual3d_SetListOfSetOfView_Remove(self, *args)
 
-    def InsertBefore(self, *args) -> "void" :
+    def InsertBefore(self, *args):
         """
         :param I:
         :type I: Handle_Visual3d_View &
@@ -3127,7 +3185,7 @@ class Visual3d_SetListOfSetOfView(object):
         """
         return _Visual3d.Visual3d_SetListOfSetOfView_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args) -> "void" :
+    def InsertAfter(self, *args):
         """
         :param I:
         :type I: Handle_Visual3d_View &
@@ -3172,34 +3230,34 @@ Visual3d_SetListOfSetOfView_swigregister(Visual3d_SetListOfSetOfView)
 class Visual3d_SetOfLight(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _Visual3d.Visual3d_SetOfLight_swiginit(self,_Visual3d.new_Visual3d_SetOfLight(*args))
-    def Extent(self, *args) -> "Standard_Integer" :
+        _Visual3d.Visual3d_SetOfLight_swiginit(self,_Visual3d.new_Visual3d_SetOfLight())
+    def Extent(self):
         """
         :rtype: int
 
         """
-        return _Visual3d.Visual3d_SetOfLight_Extent(self, *args)
+        return _Visual3d.Visual3d_SetOfLight_Extent(self)
 
-    def IsEmpty(self, *args) -> "Standard_Boolean" :
+    def IsEmpty(self):
         """
         :rtype: bool
 
         """
-        return _Visual3d.Visual3d_SetOfLight_IsEmpty(self, *args)
+        return _Visual3d.Visual3d_SetOfLight_IsEmpty(self)
 
-    def Clear(self, *args) -> "void" :
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _Visual3d.Visual3d_SetOfLight_Clear(self, *args)
+        return _Visual3d.Visual3d_SetOfLight_Clear(self)
 
-    def Add(self, *args) -> "Standard_Boolean" :
+    def Add(self, *args):
         """
         :param T:
         :type T: Handle_Visual3d_Light &
@@ -3208,7 +3266,7 @@ class Visual3d_SetOfLight(object):
         """
         return _Visual3d.Visual3d_SetOfLight_Add(self, *args)
 
-    def Remove(self, *args) -> "Standard_Boolean" :
+    def Remove(self, *args):
         """
         :param T:
         :type T: Handle_Visual3d_Light &
@@ -3217,7 +3275,7 @@ class Visual3d_SetOfLight(object):
         """
         return _Visual3d.Visual3d_SetOfLight_Remove(self, *args)
 
-    def Union(self, *args) -> "void" :
+    def Union(self, *args):
         """
         :param B:
         :type B: Visual3d_SetOfLight &
@@ -3226,7 +3284,7 @@ class Visual3d_SetOfLight(object):
         """
         return _Visual3d.Visual3d_SetOfLight_Union(self, *args)
 
-    def Intersection(self, *args) -> "void" :
+    def Intersection(self, *args):
         """
         :param B:
         :type B: Visual3d_SetOfLight &
@@ -3235,7 +3293,7 @@ class Visual3d_SetOfLight(object):
         """
         return _Visual3d.Visual3d_SetOfLight_Intersection(self, *args)
 
-    def Difference(self, *args) -> "void" :
+    def Difference(self, *args):
         """
         :param B:
         :type B: Visual3d_SetOfLight &
@@ -3244,7 +3302,7 @@ class Visual3d_SetOfLight(object):
         """
         return _Visual3d.Visual3d_SetOfLight_Difference(self, *args)
 
-    def Contains(self, *args) -> "Standard_Boolean" :
+    def Contains(self, *args):
         """
         :param T:
         :type T: Handle_Visual3d_Light &
@@ -3253,7 +3311,7 @@ class Visual3d_SetOfLight(object):
         """
         return _Visual3d.Visual3d_SetOfLight_Contains(self, *args)
 
-    def IsASubset(self, *args) -> "Standard_Boolean" :
+    def IsASubset(self, *args):
         """
         :param S:
         :type S: Visual3d_SetOfLight &
@@ -3262,7 +3320,7 @@ class Visual3d_SetOfLight(object):
         """
         return _Visual3d.Visual3d_SetOfLight_IsASubset(self, *args)
 
-    def IsAProperSubset(self, *args) -> "Standard_Boolean" :
+    def IsAProperSubset(self, *args):
         """
         :param S:
         :type S: Visual3d_SetOfLight &
@@ -3297,34 +3355,34 @@ Visual3d_SetOfLight_swigregister(Visual3d_SetOfLight)
 class Visual3d_SetOfView(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _Visual3d.Visual3d_SetOfView_swiginit(self,_Visual3d.new_Visual3d_SetOfView(*args))
-    def Extent(self, *args) -> "Standard_Integer" :
+        _Visual3d.Visual3d_SetOfView_swiginit(self,_Visual3d.new_Visual3d_SetOfView())
+    def Extent(self):
         """
         :rtype: int
 
         """
-        return _Visual3d.Visual3d_SetOfView_Extent(self, *args)
+        return _Visual3d.Visual3d_SetOfView_Extent(self)
 
-    def IsEmpty(self, *args) -> "Standard_Boolean" :
+    def IsEmpty(self):
         """
         :rtype: bool
 
         """
-        return _Visual3d.Visual3d_SetOfView_IsEmpty(self, *args)
+        return _Visual3d.Visual3d_SetOfView_IsEmpty(self)
 
-    def Clear(self, *args) -> "void" :
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _Visual3d.Visual3d_SetOfView_Clear(self, *args)
+        return _Visual3d.Visual3d_SetOfView_Clear(self)
 
-    def Add(self, *args) -> "Standard_Boolean" :
+    def Add(self, *args):
         """
         :param T:
         :type T: Handle_Visual3d_View &
@@ -3333,7 +3391,7 @@ class Visual3d_SetOfView(object):
         """
         return _Visual3d.Visual3d_SetOfView_Add(self, *args)
 
-    def Remove(self, *args) -> "Standard_Boolean" :
+    def Remove(self, *args):
         """
         :param T:
         :type T: Handle_Visual3d_View &
@@ -3342,7 +3400,7 @@ class Visual3d_SetOfView(object):
         """
         return _Visual3d.Visual3d_SetOfView_Remove(self, *args)
 
-    def Union(self, *args) -> "void" :
+    def Union(self, *args):
         """
         :param B:
         :type B: Visual3d_SetOfView &
@@ -3351,7 +3409,7 @@ class Visual3d_SetOfView(object):
         """
         return _Visual3d.Visual3d_SetOfView_Union(self, *args)
 
-    def Intersection(self, *args) -> "void" :
+    def Intersection(self, *args):
         """
         :param B:
         :type B: Visual3d_SetOfView &
@@ -3360,7 +3418,7 @@ class Visual3d_SetOfView(object):
         """
         return _Visual3d.Visual3d_SetOfView_Intersection(self, *args)
 
-    def Difference(self, *args) -> "void" :
+    def Difference(self, *args):
         """
         :param B:
         :type B: Visual3d_SetOfView &
@@ -3369,7 +3427,7 @@ class Visual3d_SetOfView(object):
         """
         return _Visual3d.Visual3d_SetOfView_Difference(self, *args)
 
-    def Contains(self, *args) -> "Standard_Boolean" :
+    def Contains(self, *args):
         """
         :param T:
         :type T: Handle_Visual3d_View &
@@ -3378,7 +3436,7 @@ class Visual3d_SetOfView(object):
         """
         return _Visual3d.Visual3d_SetOfView_Contains(self, *args)
 
-    def IsASubset(self, *args) -> "Standard_Boolean" :
+    def IsASubset(self, *args):
         """
         :param S:
         :type S: Visual3d_SetOfView &
@@ -3387,7 +3445,7 @@ class Visual3d_SetOfView(object):
         """
         return _Visual3d.Visual3d_SetOfView_IsASubset(self, *args)
 
-    def IsAProperSubset(self, *args) -> "Standard_Boolean" :
+    def IsAProperSubset(self, *args):
         """
         :param S:
         :type S: Visual3d_SetOfView &
@@ -3422,25 +3480,45 @@ Visual3d_SetOfView_swigregister(Visual3d_SetOfView)
 class Visual3d_TransientManager(OCC.MMgt.MMgt_TShared):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         * Creates a TransientManager <aView>.
 
         :rtype: None
 
         """
-        _Visual3d.Visual3d_TransientManager_swiginit(self,_Visual3d.new_Visual3d_TransientManager(*args))
-    def Destroy(self, *args) -> "void" :
+        _Visual3d.Visual3d_TransientManager_swiginit(self,_Visual3d.new_Visual3d_TransientManager())
+    def Destroy(self):
         """
         * Suppress the TransientManager <self>.
 
         :rtype: None
 
         """
-        return _Visual3d.Visual3d_TransientManager_Destroy(self, *args)
+        return _Visual3d.Visual3d_TransientManager_Destroy(self)
 
-    def BeginDraw(*args) -> "Standard_Integer" :
+    def BeginDraw(*args):
         """
+        * Begins any graphics in the view <aView> Redraw any structured graphics in the back buffer before if <DoubleBuffer> is True. Restore the front buffer from the back before if <DoubleBuffer> is False. if <RetainMode> is True. the graphic managed itself exposure,resizing ... if <RetainMode> is False. the application must managed itself exposure,resizing ... Warning: Returns True if transient drawing is enabled in the associated view. Returns False ,if nothing works because something is wrong for the transient principle : Immediat mode is not implemented depending of the graphic library used.  MBX,PIXMAP double buffering don't works depending of  the graphic board and the visual of the window supporting  the view. Warning: No default attributes Raises TransientDefinitionError from Visual3d; if Drawing is already opened. or the associated view is not mapped on a window.
+
+        :param aView:
+        :type aView: Handle_Visual3d_View &
+        :param DoubleBuffer: default value is Standard_False
+        :type DoubleBuffer: bool
+        :param RetainMode: default value is Standard_False
+        :type RetainMode: bool
+        :rtype: int
+
+        * Begins any graphics in the view <aView> Redraw any structured graphics in the back buffer before if <DoubleBuffer> is True. Restore the front buffer from the back before if <DoubleBuffer> is False. if <RetainMode> is True. the graphic managed itself exposure,resizing ... if <RetainMode> is False. the application must managed itself exposure,resizing ... Warning: Returns True if transient drawing is enabled in the associated view. Returns False ,if nothing works because something is wrong for the transient principle : Immediat mode is not implemented depending of the graphic library used.  MBX,PIXMAP double buffering don't works depending of  the graphic board and the visual of the window supporting  the view. Warning: No default attributes Raises TransientDefinitionError from Visual3d; if Drawing is already opened. or the associated view is not mapped on a window.
+
+        :param aView:
+        :type aView: Handle_Visual3d_View &
+        :param DoubleBuffer: default value is Standard_False
+        :type DoubleBuffer: bool
+        :param RetainMode: default value is Standard_False
+        :type RetainMode: bool
+        :rtype: int
+
         * Begins any graphics in the view <aView> Redraw any structured graphics in the back buffer before if <DoubleBuffer> is True. Restore the front buffer from the back before if <DoubleBuffer> is False. if <RetainMode> is True. the graphic managed itself exposure,resizing ... if <RetainMode> is False. the application must managed itself exposure,resizing ... Warning: Returns True if transient drawing is enabled in the associated view. Returns False ,if nothing works because something is wrong for the transient principle : Immediat mode is not implemented depending of the graphic library used.  MBX,PIXMAP double buffering don't works depending of  the graphic board and the visual of the window supporting  the view. Warning: No default attributes Raises TransientDefinitionError from Visual3d; if Drawing is already opened. or the associated view is not mapped on a window.
 
         :param aView:
@@ -3455,8 +3533,14 @@ class Visual3d_TransientManager(OCC.MMgt.MMgt_TShared):
         return _Visual3d.Visual3d_TransientManager_BeginDraw(*args)
 
     BeginDraw = staticmethod(BeginDraw)
-    def EndDraw(*args) -> "void" :
+    def EndDraw(*args):
         """
+        * Flush all graphics to the front buffer. Synchronize graphics to the screen if <Synchronize> is True (make becarefull to the performances!). Raises TransientDefinitionError from Visual3d; if Drawing is not opened.
+
+        :param Synchronize: default value is Standard_False
+        :type Synchronize: bool
+        :rtype: void
+
         * Flush all graphics to the front buffer. Synchronize graphics to the screen if <Synchronize> is True (make becarefull to the performances!). Raises TransientDefinitionError from Visual3d; if Drawing is not opened.
 
         :param Synchronize: default value is Standard_False
@@ -3467,8 +3551,16 @@ class Visual3d_TransientManager(OCC.MMgt.MMgt_TShared):
         return _Visual3d.Visual3d_TransientManager_EndDraw(*args)
 
     EndDraw = staticmethod(EndDraw)
-    def ClearDraw(*args) -> "void" :
+    def ClearDraw(*args):
         """
+        * Clear all transient graphics in the view <aView>  updates a scene if <aFlush> = true Raises TransientDefinitionError from Visual3d; if Drawing is already opened. or the associated view is not mapped on a window.
+
+        :param aView:
+        :type aView: Handle_Visual3d_View &
+        :param aFlush: default value is Standard_True
+        :type aFlush: bool
+        :rtype: void
+
         * Clear all transient graphics in the view <aView>  updates a scene if <aFlush> = true Raises TransientDefinitionError from Visual3d; if Drawing is already opened. or the associated view is not mapped on a window.
 
         :param aView:
@@ -3481,7 +3573,7 @@ class Visual3d_TransientManager(OCC.MMgt.MMgt_TShared):
         return _Visual3d.Visual3d_TransientManager_ClearDraw(*args)
 
     ClearDraw = staticmethod(ClearDraw)
-    def BeginAddDraw(*args) -> "Standard_Integer" :
+    def BeginAddDraw(*args):
         """
         * Begins any add graphics in the view <aView> the application must managed itself exposure,resizing ... Warning: Returns True if transient drawing is enabled in the associated view. Returns False ,if nothing works because something is wrong for the transient principle : Immediat mode is not implemented depending of the graphic library used.  MBX,PIXMAP double buffering don't works depending of  the graphic board and the visual of the window supporting  the view. Warning: No default attributes Raises TransientDefinitionError from Visual3d; if Drawing is already opened. or the associated view is not mapped on a window.
 
@@ -3493,17 +3585,17 @@ class Visual3d_TransientManager(OCC.MMgt.MMgt_TShared):
         return _Visual3d.Visual3d_TransientManager_BeginAddDraw(*args)
 
     BeginAddDraw = staticmethod(BeginAddDraw)
-    def EndAddDraw(*args) -> "void" :
+    def EndAddDraw():
         """
         * Flush all add graphics to the front buffer. Raises TransientDefinitionError from Visual3d; if Drawing is not opened.
 
         :rtype: void
 
         """
-        return _Visual3d.Visual3d_TransientManager_EndAddDraw(*args)
+        return _Visual3d.Visual3d_TransientManager_EndAddDraw()
 
     EndAddDraw = staticmethod(EndAddDraw)
-    def DrawStructure(*args) -> "void" :
+    def DrawStructure(*args):
         """
         * Drawn the structure <AStructure>. Raises TransientDefinitionError from Visual3d; if Drawing is not opened.
 
@@ -3515,11 +3607,11 @@ class Visual3d_TransientManager(OCC.MMgt.MMgt_TShared):
         return _Visual3d.Visual3d_TransientManager_DrawStructure(*args)
 
     DrawStructure = staticmethod(DrawStructure)
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Visual3d_TransientManager self)"""
         return _Visual3d.Visual3d_TransientManager__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Visual3d_TransientManager" :
+    def GetHandle(self):
         """GetHandle(Visual3d_TransientManager self) -> Handle_Visual3d_TransientManager"""
         return _Visual3d.Visual3d_TransientManager_GetHandle(self)
 
@@ -3537,8 +3629,28 @@ Visual3d_TransientManager.GetHandle = new_instancemethod(_Visual3d.Visual3d_Tran
 Visual3d_TransientManager_swigregister = _Visual3d.Visual3d_TransientManager_swigregister
 Visual3d_TransientManager_swigregister(Visual3d_TransientManager)
 
-def Visual3d_TransientManager_BeginDraw(*args) -> "Standard_Integer" :
+def Visual3d_TransientManager_BeginDraw(*args):
   """
+    * Begins any graphics in the view <aView> Redraw any structured graphics in the back buffer before if <DoubleBuffer> is True. Restore the front buffer from the back before if <DoubleBuffer> is False. if <RetainMode> is True. the graphic managed itself exposure,resizing ... if <RetainMode> is False. the application must managed itself exposure,resizing ... Warning: Returns True if transient drawing is enabled in the associated view. Returns False ,if nothing works because something is wrong for the transient principle : Immediat mode is not implemented depending of the graphic library used.  MBX,PIXMAP double buffering don't works depending of  the graphic board and the visual of the window supporting  the view. Warning: No default attributes Raises TransientDefinitionError from Visual3d; if Drawing is already opened. or the associated view is not mapped on a window.
+
+    :param aView:
+    :type aView: Handle_Visual3d_View &
+    :param DoubleBuffer: default value is Standard_False
+    :type DoubleBuffer: bool
+    :param RetainMode: default value is Standard_False
+    :type RetainMode: bool
+    :rtype: int
+
+    * Begins any graphics in the view <aView> Redraw any structured graphics in the back buffer before if <DoubleBuffer> is True. Restore the front buffer from the back before if <DoubleBuffer> is False. if <RetainMode> is True. the graphic managed itself exposure,resizing ... if <RetainMode> is False. the application must managed itself exposure,resizing ... Warning: Returns True if transient drawing is enabled in the associated view. Returns False ,if nothing works because something is wrong for the transient principle : Immediat mode is not implemented depending of the graphic library used.  MBX,PIXMAP double buffering don't works depending of  the graphic board and the visual of the window supporting  the view. Warning: No default attributes Raises TransientDefinitionError from Visual3d; if Drawing is already opened. or the associated view is not mapped on a window.
+
+    :param aView:
+    :type aView: Handle_Visual3d_View &
+    :param DoubleBuffer: default value is Standard_False
+    :type DoubleBuffer: bool
+    :param RetainMode: default value is Standard_False
+    :type RetainMode: bool
+    :rtype: int
+
     * Begins any graphics in the view <aView> Redraw any structured graphics in the back buffer before if <DoubleBuffer> is True. Restore the front buffer from the back before if <DoubleBuffer> is False. if <RetainMode> is True. the graphic managed itself exposure,resizing ... if <RetainMode> is False. the application must managed itself exposure,resizing ... Warning: Returns True if transient drawing is enabled in the associated view. Returns False ,if nothing works because something is wrong for the transient principle : Immediat mode is not implemented depending of the graphic library used.  MBX,PIXMAP double buffering don't works depending of  the graphic board and the visual of the window supporting  the view. Warning: No default attributes Raises TransientDefinitionError from Visual3d; if Drawing is already opened. or the associated view is not mapped on a window.
 
     :param aView:
@@ -3552,8 +3664,14 @@ def Visual3d_TransientManager_BeginDraw(*args) -> "Standard_Integer" :
     """
   return _Visual3d.Visual3d_TransientManager_BeginDraw(*args)
 
-def Visual3d_TransientManager_EndDraw(*args) -> "void" :
+def Visual3d_TransientManager_EndDraw(*args):
   """
+    * Flush all graphics to the front buffer. Synchronize graphics to the screen if <Synchronize> is True (make becarefull to the performances!). Raises TransientDefinitionError from Visual3d; if Drawing is not opened.
+
+    :param Synchronize: default value is Standard_False
+    :type Synchronize: bool
+    :rtype: void
+
     * Flush all graphics to the front buffer. Synchronize graphics to the screen if <Synchronize> is True (make becarefull to the performances!). Raises TransientDefinitionError from Visual3d; if Drawing is not opened.
 
     :param Synchronize: default value is Standard_False
@@ -3563,8 +3681,16 @@ def Visual3d_TransientManager_EndDraw(*args) -> "void" :
     """
   return _Visual3d.Visual3d_TransientManager_EndDraw(*args)
 
-def Visual3d_TransientManager_ClearDraw(*args) -> "void" :
+def Visual3d_TransientManager_ClearDraw(*args):
   """
+    * Clear all transient graphics in the view <aView>  updates a scene if <aFlush> = true Raises TransientDefinitionError from Visual3d; if Drawing is already opened. or the associated view is not mapped on a window.
+
+    :param aView:
+    :type aView: Handle_Visual3d_View &
+    :param aFlush: default value is Standard_True
+    :type aFlush: bool
+    :rtype: void
+
     * Clear all transient graphics in the view <aView>  updates a scene if <aFlush> = true Raises TransientDefinitionError from Visual3d; if Drawing is already opened. or the associated view is not mapped on a window.
 
     :param aView:
@@ -3576,7 +3702,7 @@ def Visual3d_TransientManager_ClearDraw(*args) -> "void" :
     """
   return _Visual3d.Visual3d_TransientManager_ClearDraw(*args)
 
-def Visual3d_TransientManager_BeginAddDraw(*args) -> "Standard_Integer" :
+def Visual3d_TransientManager_BeginAddDraw(*args):
   """
     * Begins any add graphics in the view <aView> the application must managed itself exposure,resizing ... Warning: Returns True if transient drawing is enabled in the associated view. Returns False ,if nothing works because something is wrong for the transient principle : Immediat mode is not implemented depending of the graphic library used.  MBX,PIXMAP double buffering don't works depending of  the graphic board and the visual of the window supporting  the view. Warning: No default attributes Raises TransientDefinitionError from Visual3d; if Drawing is already opened. or the associated view is not mapped on a window.
 
@@ -3587,16 +3713,16 @@ def Visual3d_TransientManager_BeginAddDraw(*args) -> "Standard_Integer" :
     """
   return _Visual3d.Visual3d_TransientManager_BeginAddDraw(*args)
 
-def Visual3d_TransientManager_EndAddDraw(*args) -> "void" :
+def Visual3d_TransientManager_EndAddDraw():
   """
     * Flush all add graphics to the front buffer. Raises TransientDefinitionError from Visual3d; if Drawing is not opened.
 
     :rtype: void
 
     """
-  return _Visual3d.Visual3d_TransientManager_EndAddDraw(*args)
+  return _Visual3d.Visual3d_TransientManager_EndAddDraw()
 
-def Visual3d_TransientManager_DrawStructure(*args) -> "void" :
+def Visual3d_TransientManager_DrawStructure(*args):
   """
     * Drawn the structure <AStructure>. Raises TransientDefinitionError from Visual3d; if Drawing is not opened.
 
@@ -3628,7 +3754,7 @@ Handle_Visual3d_TransientManager._kill_pointed = new_instancemethod(_Visual3d.Ha
 Handle_Visual3d_TransientManager_swigregister = _Visual3d.Handle_Visual3d_TransientManager_swigregister
 Handle_Visual3d_TransientManager_swigregister(Handle_Visual3d_TransientManager)
 
-def Handle_Visual3d_TransientManager_DownCast(*args) -> "Handle_Visual3d_TransientManager const" :
+def Handle_Visual3d_TransientManager_DownCast(*args):
   return _Visual3d.Handle_Visual3d_TransientManager_DownCast(*args)
 Handle_Visual3d_TransientManager_DownCast = _Visual3d.Handle_Visual3d_TransientManager_DownCast
 
@@ -3657,25 +3783,25 @@ class Visual3d_View(OCC.Graphic3d.Graphic3d_DataStructureManager):
 
         """
         _Visual3d.Visual3d_View_swiginit(self,_Visual3d.new_Visual3d_View(*args))
-    def Activate(self, *args) -> "void" :
+    def Activate(self):
         """
         * Activates the view <self>. //!	 Map the associated window on the screen and //!	 post the view in this window. Category: Methods to modify the class definition Warning: Raises ViewDefinitionError if the associated //!	 window isn't defined.
 
         :rtype: None
 
         """
-        return _Visual3d.Visual3d_View_Activate(self, *args)
+        return _Visual3d.Visual3d_View_Activate(self)
 
-    def Deactivate(self, *args) -> "void" :
+    def Deactivate(self):
         """
         * Deactivates the view <self>. //!	 Unmap the associated window on the screen and //!	 unpost the view in this window. Category: Methods to modify the class definition Warning: Raises ViewDefinitionError if the associated //!	 window isn't defined.
 
         :rtype: None
 
         """
-        return _Visual3d.Visual3d_View_Deactivate(self, *args)
+        return _Visual3d.Visual3d_View_Deactivate(self)
 
-    def Redraw(self, *args) -> "void" :
+    def Redraw(self, *args):
         """
         * Updates screen in all cases.
 
@@ -3684,13 +3810,13 @@ class Visual3d_View(OCC.Graphic3d.Graphic3d_DataStructureManager):
         * Updates screen area in all cases. area is given by his xy min corner and size in pixel coordinates
 
         :param x:
-        :type x: int
+        :type x: Standard_Integer
         :param y:
-        :type y: int
+        :type y: Standard_Integer
         :param width:
-        :type width: int
+        :type width: Standard_Integer
         :param height:
-        :type height: int
+        :type height: Standard_Integer
         :rtype: None
 
         * Updates screen in all cases.
@@ -3708,37 +3834,37 @@ class Visual3d_View(OCC.Graphic3d.Graphic3d_DataStructureManager):
         :param AnOverLayer:
         :type AnOverLayer: Handle_Visual3d_Layer &
         :param x:
-        :type x: int
+        :type x: Standard_Integer
         :param y:
-        :type y: int
+        :type y: Standard_Integer
         :param width:
-        :type width: int
+        :type width: Standard_Integer
         :param height:
-        :type height: int
+        :type height: Standard_Integer
         :rtype: None
 
         """
         return _Visual3d.Visual3d_View_Redraw(self, *args)
 
-    def Remove(self, *args) -> "void" :
+    def Remove(self):
         """
         * Deletes and erases the view <self>. Warning: No more graphic operations in <self> after this call.
 
         :rtype: None
 
         """
-        return _Visual3d.Visual3d_View_Remove(self, *args)
+        return _Visual3d.Visual3d_View_Remove(self)
 
-    def Resized(self, *args) -> "void" :
+    def Resized(self):
         """
         * Updates the view <self> after the modification //!	 of the associated window. Category: Methods to modify the class definition Warning: Raises ViewDefinitionError if the associated //!	 window isn't defined.
 
         :rtype: None
 
         """
-        return _Visual3d.Visual3d_View_Resized(self, *args)
+        return _Visual3d.Visual3d_View_Resized(self)
 
-    def SetBackground(self, *args) -> "void" :
+    def SetBackground(self, *args):
         """
         * Modifies the default window background. Category: Methods to modify the class definition Warning: Raises ViewDefinitionError if the associated //!	 window isn't defined.
 
@@ -3749,7 +3875,7 @@ class Visual3d_View(OCC.Graphic3d.Graphic3d_DataStructureManager):
         """
         return _Visual3d.Visual3d_View_SetBackground(self, *args)
 
-    def SetBackgroundImage(self, *args) -> "void" :
+    def SetBackgroundImage(self, *args):
         """
         * Category: Methods to modify the class definition Warning: Raises ViewDefinitionError if the associated //!	 window isn't defined.
 
@@ -3764,7 +3890,7 @@ class Visual3d_View(OCC.Graphic3d.Graphic3d_DataStructureManager):
         """
         return _Visual3d.Visual3d_View_SetBackgroundImage(self, *args)
 
-    def SetBgImageStyle(self, *args) -> "void" :
+    def SetBgImageStyle(self, *args):
         """
         * Category: Methods to modify the class definition Warning: Raises ViewDefinitionError if the associated //!	 window isn't defined.
 
@@ -3777,7 +3903,7 @@ class Visual3d_View(OCC.Graphic3d.Graphic3d_DataStructureManager):
         """
         return _Visual3d.Visual3d_View_SetBgImageStyle(self, *args)
 
-    def SetGradientBackground(self, *args) -> "void" :
+    def SetGradientBackground(self, *args):
         """
         * Modifies the gradient window background. Category: Methods to modify the class definition Warning: Raises ViewDefinitionError if the associated //!	 window isn't defined.
 
@@ -3790,7 +3916,7 @@ class Visual3d_View(OCC.Graphic3d.Graphic3d_DataStructureManager):
         """
         return _Visual3d.Visual3d_View_SetGradientBackground(self, *args)
 
-    def SetBgGradientStyle(self, *args) -> "void" :
+    def SetBgGradientStyle(self, *args):
         """
         * Category: Methods to modify the class definition Warning: Raises ViewDefinitionError if the associated //!	 window isn't defined.
 
@@ -3803,7 +3929,7 @@ class Visual3d_View(OCC.Graphic3d.Graphic3d_DataStructureManager):
         """
         return _Visual3d.Visual3d_View_SetBgGradientStyle(self, *args)
 
-    def SetBackFacingModel(self, *args) -> "void" :
+    def SetBackFacingModel(self, *args):
         """
         * Manages display of the back faces
 
@@ -3814,16 +3940,16 @@ class Visual3d_View(OCC.Graphic3d.Graphic3d_DataStructureManager):
         """
         return _Visual3d.Visual3d_View_SetBackFacingModel(self, *args)
 
-    def BackFacingModel(self, *args) -> "Visual3d_TypeOfBackfacingModel" :
+    def BackFacingModel(self):
         """
         * Returns current state of the back faces display
 
         :rtype: Visual3d_TypeOfBackfacingModel
 
         """
-        return _Visual3d.Visual3d_View_BackFacingModel(self, *args)
+        return _Visual3d.Visual3d_View_BackFacingModel(self)
 
-    def SetContext(self, *args) -> "void" :
+    def SetContext(self, *args):
         """
         * Sets the context <CTX> in the view <self>.
 
@@ -3834,7 +3960,7 @@ class Visual3d_View(OCC.Graphic3d.Graphic3d_DataStructureManager):
         """
         return _Visual3d.Visual3d_View_SetContext(self, *args)
 
-    def SetTransform(self, *args) -> "void" :
+    def SetTransform(self, *args):
         """
         * Sets the transformation matrix that is applied to <MyViewOrientation> field of the view <self>. //!	 <AMatrix> is defined as a 4*4 real matrix. //!		------------------- //!		| a11 a12 a13 t1 | //!		| a21 a22 a23 t2 | //!		| a31 a32 a33 t3 | //!		| 0 0 0 1 | //!		------------------- Category: Methods to modify the class definition Warning: Raises TransformError if the matrix isn't a 4x4 matrix.
 
@@ -3845,7 +3971,7 @@ class Visual3d_View(OCC.Graphic3d.Graphic3d_DataStructureManager):
         """
         return _Visual3d.Visual3d_View_SetTransform(self, *args)
 
-    def SetViewMapping(self, *args) -> "void" :
+    def SetViewMapping(self, *args):
         """
         * Modifies the mapping of the view <self>.
 
@@ -3856,16 +3982,16 @@ class Visual3d_View(OCC.Graphic3d.Graphic3d_DataStructureManager):
         """
         return _Visual3d.Visual3d_View_SetViewMapping(self, *args)
 
-    def SetViewMappingDefault(self, *args) -> "void" :
+    def SetViewMappingDefault(self):
         """
         * Saves the current mapping which will be the //!	 reference value for the reset of the mapping //!	 done by the ViewmappingReset method.
 
         :rtype: None
 
         """
-        return _Visual3d.Visual3d_View_SetViewMappingDefault(self, *args)
+        return _Visual3d.Visual3d_View_SetViewMappingDefault(self)
 
-    def SetViewOrientation(self, *args) -> "void" :
+    def SetViewOrientation(self, *args):
         """
         * Modifies the orientation of <self>.
 
@@ -3876,16 +4002,16 @@ class Visual3d_View(OCC.Graphic3d.Graphic3d_DataStructureManager):
         """
         return _Visual3d.Visual3d_View_SetViewOrientation(self, *args)
 
-    def SetViewOrientationDefault(self, *args) -> "void" :
+    def SetViewOrientationDefault(self):
         """
         * Saves the current orientation which will be the //!	 reference value for the reset of the orientation //!	 done by the ViewOrientationReset method.
 
         :rtype: None
 
         """
-        return _Visual3d.Visual3d_View_SetViewOrientationDefault(self, *args)
+        return _Visual3d.Visual3d_View_SetViewOrientationDefault(self)
 
-    def SetWindow(self, *args) -> "void" :
+    def SetWindow(self, *args):
         """
         * Associates the window <AWindow> to the view <self>. //!	 No new association if the window is already defined. Category: Methods to modify the class definition Warning: Raises ViewDefinitionError if it is impossible //!	 to associate a view and a window. //!	 (association already done or another problem) //!	 Modifies the viewmapping of the associated view //!	 when it calls the SetRatio method. //!	 After this call, each view is mapped in an unique window. Programming example : An example when we have 1 view and 1 window ------------------------------------------- Handle_Aspect_DisplayConnection aDisplayConnection; // Display connection initialization only needed on Linux platform // and on Mac OS X, in cases when you use Xlib for windows drawing. aDisplayConnection = new Aspect_DisplayConnection(); // Graphic driver initialization Handle_Graphic3d_GraphicDriver aGraphicDriver = Graphic3d::InitGraphicDriver (aDisplayConnection); // Define a view manager Handle_Visual3d_ViewManager aVisualManager = new Visual3d_ViewManager (aGraphicDriver); // Define a view Handle_Visual3d_View aView = new Visual3d_View (aVisaulManager); // Define a window Handle_Xw_Window aWindow = new Xw_Window //!	(aDisplayConnection, 'Graphic View 1', 0.695, 0.695, 0.600, 0.600, Quantity_NOC_MATRAGRAY); // Associate the view and the window aView->SetWindow (aWindow); // Map the window aWindow->Map (); // Activate the view aView->Activate ();
 
@@ -3908,7 +4034,7 @@ class Visual3d_View(OCC.Graphic3d.Graphic3d_DataStructureManager):
         """
         return _Visual3d.Visual3d_View_SetWindow(self, *args)
 
-    def Update(self, *args) -> "void" :
+    def Update(self, *args):
         """
         * Updates screen in function of modifications of //!	 the structures.
 
@@ -3925,25 +4051,25 @@ class Visual3d_View(OCC.Graphic3d.Graphic3d_DataStructureManager):
         """
         return _Visual3d.Visual3d_View_Update(self, *args)
 
-    def ViewMappingReset(self, *args) -> "void" :
+    def ViewMappingReset(self):
         """
         * Sets the value of the mapping to be the same as //!	 the mapping saved by the SetViewMappingDefaut method.
 
         :rtype: None
 
         """
-        return _Visual3d.Visual3d_View_ViewMappingReset(self, *args)
+        return _Visual3d.Visual3d_View_ViewMappingReset(self)
 
-    def ViewOrientationReset(self, *args) -> "void" :
+    def ViewOrientationReset(self):
         """
         * Sets the value of the orientation to be the same as the //!	 orientation saved by the SetViewOrientationDefaut method.
 
         :rtype: None
 
         """
-        return _Visual3d.Visual3d_View_ViewOrientationReset(self, *args)
+        return _Visual3d.Visual3d_View_ViewOrientationReset(self)
 
-    def SetComputedMode(self, *args) -> "void" :
+    def SetComputedMode(self, *args):
         """
         * Switches computed HLR mode in the view
 
@@ -3954,16 +4080,16 @@ class Visual3d_View(OCC.Graphic3d.Graphic3d_DataStructureManager):
         """
         return _Visual3d.Visual3d_View_SetComputedMode(self, *args)
 
-    def ComputedMode(self, *args) -> "Standard_Boolean" :
+    def ComputedMode(self):
         """
         * Returns the computed HLR mode state
 
         :rtype: bool
 
         """
-        return _Visual3d.Visual3d_View_ComputedMode(self, *args)
+        return _Visual3d.Visual3d_View_ComputedMode(self)
 
-    def ZBufferTriedronSetup(self, *args) -> "void" :
+    def ZBufferTriedronSetup(self, *args):
         """
         * Customization of the ZBUFFER Triedron.  Initializes Colors of X Y and axis  Scale ratio defines decreasing of trihedron size when  its position is out of a View
 
@@ -3978,14 +4104,158 @@ class Visual3d_View(OCC.Graphic3d.Graphic3d_DataStructureManager):
         :param AxisDiametr: default value is 0.05
         :type AxisDiametr: float
         :param NbFacettes: default value is 12
-        :type NbFacettes: int
+        :type NbFacettes: Standard_Integer
+        :rtype: None
+
+        * Customization of the ZBUFFER Triedron.  Initializes Colors of X Y and axis  Scale ratio defines decreasing of trihedron size when  its position is out of a View
+
+        :param XColor: default value is Quantity_NOC_RED
+        :type XColor: Quantity_NameOfColor
+        :param YColor: default value is Quantity_NOC_GREEN
+        :type YColor: Quantity_NameOfColor
+        :param ZColor: default value is Quantity_NOC_BLUE1
+        :type ZColor: Quantity_NameOfColor
+        :param SizeRatio: default value is 0.8
+        :type SizeRatio: float
+        :param AxisDiametr: default value is 0.05
+        :type AxisDiametr: float
+        :param NbFacettes: default value is 12
+        :type NbFacettes: Standard_Integer
+        :rtype: None
+
+        * Customization of the ZBUFFER Triedron.  Initializes Colors of X Y and axis  Scale ratio defines decreasing of trihedron size when  its position is out of a View
+
+        :param XColor: default value is Quantity_NOC_RED
+        :type XColor: Quantity_NameOfColor
+        :param YColor: default value is Quantity_NOC_GREEN
+        :type YColor: Quantity_NameOfColor
+        :param ZColor: default value is Quantity_NOC_BLUE1
+        :type ZColor: Quantity_NameOfColor
+        :param SizeRatio: default value is 0.8
+        :type SizeRatio: float
+        :param AxisDiametr: default value is 0.05
+        :type AxisDiametr: float
+        :param NbFacettes: default value is 12
+        :type NbFacettes: Standard_Integer
+        :rtype: None
+
+        * Customization of the ZBUFFER Triedron.  Initializes Colors of X Y and axis  Scale ratio defines decreasing of trihedron size when  its position is out of a View
+
+        :param XColor: default value is Quantity_NOC_RED
+        :type XColor: Quantity_NameOfColor
+        :param YColor: default value is Quantity_NOC_GREEN
+        :type YColor: Quantity_NameOfColor
+        :param ZColor: default value is Quantity_NOC_BLUE1
+        :type ZColor: Quantity_NameOfColor
+        :param SizeRatio: default value is 0.8
+        :type SizeRatio: float
+        :param AxisDiametr: default value is 0.05
+        :type AxisDiametr: float
+        :param NbFacettes: default value is 12
+        :type NbFacettes: Standard_Integer
+        :rtype: None
+
+        * Customization of the ZBUFFER Triedron.  Initializes Colors of X Y and axis  Scale ratio defines decreasing of trihedron size when  its position is out of a View
+
+        :param XColor: default value is Quantity_NOC_RED
+        :type XColor: Quantity_NameOfColor
+        :param YColor: default value is Quantity_NOC_GREEN
+        :type YColor: Quantity_NameOfColor
+        :param ZColor: default value is Quantity_NOC_BLUE1
+        :type ZColor: Quantity_NameOfColor
+        :param SizeRatio: default value is 0.8
+        :type SizeRatio: float
+        :param AxisDiametr: default value is 0.05
+        :type AxisDiametr: float
+        :param NbFacettes: default value is 12
+        :type NbFacettes: Standard_Integer
+        :rtype: None
+
+        * Customization of the ZBUFFER Triedron.  Initializes Colors of X Y and axis  Scale ratio defines decreasing of trihedron size when  its position is out of a View
+
+        :param XColor: default value is Quantity_NOC_RED
+        :type XColor: Quantity_NameOfColor
+        :param YColor: default value is Quantity_NOC_GREEN
+        :type YColor: Quantity_NameOfColor
+        :param ZColor: default value is Quantity_NOC_BLUE1
+        :type ZColor: Quantity_NameOfColor
+        :param SizeRatio: default value is 0.8
+        :type SizeRatio: float
+        :param AxisDiametr: default value is 0.05
+        :type AxisDiametr: float
+        :param NbFacettes: default value is 12
+        :type NbFacettes: Standard_Integer
+        :rtype: None
+
+        * Customization of the ZBUFFER Triedron.  Initializes Colors of X Y and axis  Scale ratio defines decreasing of trihedron size when  its position is out of a View
+
+        :param XColor: default value is Quantity_NOC_RED
+        :type XColor: Quantity_NameOfColor
+        :param YColor: default value is Quantity_NOC_GREEN
+        :type YColor: Quantity_NameOfColor
+        :param ZColor: default value is Quantity_NOC_BLUE1
+        :type ZColor: Quantity_NameOfColor
+        :param SizeRatio: default value is 0.8
+        :type SizeRatio: float
+        :param AxisDiametr: default value is 0.05
+        :type AxisDiametr: float
+        :param NbFacettes: default value is 12
+        :type NbFacettes: Standard_Integer
         :rtype: None
 
         """
         return _Visual3d.Visual3d_View_ZBufferTriedronSetup(self, *args)
 
-    def TriedronDisplay(self, *args) -> "void" :
+    def TriedronDisplay(self, *args):
         """
+        * Display of the Triedron.  Initialize position, color and length of Triedron axes.  The scale is a percent of the window width.  If AsWireframe is False triedron is shown in shaded mode  AColor is not considered for ZBUFFER mode
+
+        :param APosition: default value is Aspect_TOTP_CENTER
+        :type APosition: Aspect_TypeOfTriedronPosition
+        :param AColor: default value is Quantity_NOC_WHITE
+        :type AColor: Quantity_NameOfColor
+        :param AScale: default value is 0.02
+        :type AScale: float
+        :param AsWireframe: default value is Standard_True
+        :type AsWireframe: bool
+        :rtype: None
+
+        * Display of the Triedron.  Initialize position, color and length of Triedron axes.  The scale is a percent of the window width.  If AsWireframe is False triedron is shown in shaded mode  AColor is not considered for ZBUFFER mode
+
+        :param APosition: default value is Aspect_TOTP_CENTER
+        :type APosition: Aspect_TypeOfTriedronPosition
+        :param AColor: default value is Quantity_NOC_WHITE
+        :type AColor: Quantity_NameOfColor
+        :param AScale: default value is 0.02
+        :type AScale: float
+        :param AsWireframe: default value is Standard_True
+        :type AsWireframe: bool
+        :rtype: None
+
+        * Display of the Triedron.  Initialize position, color and length of Triedron axes.  The scale is a percent of the window width.  If AsWireframe is False triedron is shown in shaded mode  AColor is not considered for ZBUFFER mode
+
+        :param APosition: default value is Aspect_TOTP_CENTER
+        :type APosition: Aspect_TypeOfTriedronPosition
+        :param AColor: default value is Quantity_NOC_WHITE
+        :type AColor: Quantity_NameOfColor
+        :param AScale: default value is 0.02
+        :type AScale: float
+        :param AsWireframe: default value is Standard_True
+        :type AsWireframe: bool
+        :rtype: None
+
+        * Display of the Triedron.  Initialize position, color and length of Triedron axes.  The scale is a percent of the window width.  If AsWireframe is False triedron is shown in shaded mode  AColor is not considered for ZBUFFER mode
+
+        :param APosition: default value is Aspect_TOTP_CENTER
+        :type APosition: Aspect_TypeOfTriedronPosition
+        :param AColor: default value is Quantity_NOC_WHITE
+        :type AColor: Quantity_NameOfColor
+        :param AScale: default value is 0.02
+        :type AScale: float
+        :param AsWireframe: default value is Standard_True
+        :type AsWireframe: bool
+        :rtype: None
+
         * Display of the Triedron.  Initialize position, color and length of Triedron axes.  The scale is a percent of the window width.  If AsWireframe is False triedron is shown in shaded mode  AColor is not considered for ZBUFFER mode
 
         :param APosition: default value is Aspect_TOTP_CENTER
@@ -4001,17 +4271,23 @@ class Visual3d_View(OCC.Graphic3d.Graphic3d_DataStructureManager):
         """
         return _Visual3d.Visual3d_View_TriedronDisplay(self, *args)
 
-    def TriedronErase(self, *args) -> "void" :
+    def TriedronErase(self):
         """
         * Erases the Triedron.
 
         :rtype: None
 
         """
-        return _Visual3d.Visual3d_View_TriedronErase(self, *args)
+        return _Visual3d.Visual3d_View_TriedronErase(self)
 
-    def TriedronEcho(self, *args) -> "void" :
+    def TriedronEcho(self, *args):
         """
+        * Highlights the echo zone of the Triedron.
+
+        :param AType: default value is Aspect_TOTE_NONE
+        :type AType: Aspect_TypeOfTriedronEcho
+        :rtype: None
+
         * Highlights the echo zone of the Triedron.
 
         :param AType: default value is Aspect_TOTE_NONE
@@ -4021,7 +4297,7 @@ class Visual3d_View(OCC.Graphic3d.Graphic3d_DataStructureManager):
         """
         return _Visual3d.Visual3d_View_TriedronEcho(self, *args)
 
-    def GetGraduatedTrihedron(self, *args) -> "Standard_Boolean" :
+    def GetGraduatedTrihedron(self, *args):
         """
         * Returns data of a graduated trihedron if displayed (return value is True)
 
@@ -4048,23 +4324,23 @@ class Visual3d_View(OCC.Graphic3d.Graphic3d_DataStructureManager):
         :param drawaxes:
         :type drawaxes: bool
         :param nbx:
-        :type nbx: int &
+        :type nbx: Standard_Integer &
         :param nby:
-        :type nby: int &
+        :type nby: Standard_Integer &
         :param nbz:
-        :type nbz: int &
+        :type nbz: Standard_Integer &
         :param xoffset:
-        :type xoffset: int &
+        :type xoffset: Standard_Integer &
         :param yoffset:
-        :type yoffset: int &
+        :type yoffset: Standard_Integer &
         :param zoffset:
-        :type zoffset: int &
+        :type zoffset: Standard_Integer &
         :param xaxisoffset:
-        :type xaxisoffset: int &
+        :type xaxisoffset: Standard_Integer &
         :param yaxisoffset:
-        :type yaxisoffset: int &
+        :type yaxisoffset: Standard_Integer &
         :param zaxisoffset:
-        :type zaxisoffset: int &
+        :type zaxisoffset: Standard_Integer &
         :param xdrawtickmarks:
         :type xdrawtickmarks: bool
         :param ydrawtickmarks:
@@ -4072,11 +4348,11 @@ class Visual3d_View(OCC.Graphic3d.Graphic3d_DataStructureManager):
         :param zdrawtickmarks:
         :type zdrawtickmarks: bool
         :param xtickmarklength:
-        :type xtickmarklength: int &
+        :type xtickmarklength: Standard_Integer &
         :param ytickmarklength:
-        :type ytickmarklength: int &
+        :type ytickmarklength: Standard_Integer &
         :param ztickmarklength:
-        :type ztickmarklength: int &
+        :type ztickmarklength: Standard_Integer &
         :param gridcolor:
         :type gridcolor: Quantity_Color &
         :param xnamecolor:
@@ -4096,19 +4372,19 @@ class Visual3d_View(OCC.Graphic3d.Graphic3d_DataStructureManager):
         :param styleOfNames:
         :type styleOfNames: Font_FontAspect &
         :param sizeOfNames:
-        :type sizeOfNames: int &
+        :type sizeOfNames: Standard_Integer &
         :param fontOfValues:
         :type fontOfValues: TCollection_AsciiString &
         :param styleOfValues:
         :type styleOfValues: Font_FontAspect &
         :param sizeOfValues:
-        :type sizeOfValues: int &
+        :type sizeOfValues: Standard_Integer &
         :rtype: bool
 
         """
         return _Visual3d.Visual3d_View_GetGraduatedTrihedron(self, *args)
 
-    def GraduatedTrihedronDisplay(self, *args) -> "void" :
+    def GraduatedTrihedronDisplay(self, *args):
         """
         * Displays a graduated trihedron.
 
@@ -4135,23 +4411,23 @@ class Visual3d_View(OCC.Graphic3d.Graphic3d_DataStructureManager):
         :param drawaxes:
         :type drawaxes: bool
         :param nbx:
-        :type nbx: int
+        :type nbx: Standard_Integer
         :param nby:
-        :type nby: int
+        :type nby: Standard_Integer
         :param nbz:
-        :type nbz: int
+        :type nbz: Standard_Integer
         :param xoffset:
-        :type xoffset: int
+        :type xoffset: Standard_Integer
         :param yoffset:
-        :type yoffset: int
+        :type yoffset: Standard_Integer
         :param zoffset:
-        :type zoffset: int
+        :type zoffset: Standard_Integer
         :param xaxisoffset:
-        :type xaxisoffset: int
+        :type xaxisoffset: Standard_Integer
         :param yaxisoffset:
-        :type yaxisoffset: int
+        :type yaxisoffset: Standard_Integer
         :param zaxisoffset:
-        :type zaxisoffset: int
+        :type zaxisoffset: Standard_Integer
         :param xdrawtickmarks:
         :type xdrawtickmarks: bool
         :param ydrawtickmarks:
@@ -4159,11 +4435,11 @@ class Visual3d_View(OCC.Graphic3d.Graphic3d_DataStructureManager):
         :param zdrawtickmarks:
         :type zdrawtickmarks: bool
         :param xtickmarklength:
-        :type xtickmarklength: int
+        :type xtickmarklength: Standard_Integer
         :param ytickmarklength:
-        :type ytickmarklength: int
+        :type ytickmarklength: Standard_Integer
         :param ztickmarklength:
-        :type ztickmarklength: int
+        :type ztickmarklength: Standard_Integer
         :param gridcolor:
         :type gridcolor: Quantity_Color &
         :param xnamecolor:
@@ -4183,46 +4459,46 @@ class Visual3d_View(OCC.Graphic3d.Graphic3d_DataStructureManager):
         :param styleOfNames:
         :type styleOfNames: Font_FontAspect
         :param sizeOfNames:
-        :type sizeOfNames: int
+        :type sizeOfNames: Standard_Integer
         :param fontOfValues:
         :type fontOfValues: TCollection_AsciiString &
         :param styleOfValues:
         :type styleOfValues: Font_FontAspect
         :param sizeOfValues:
-        :type sizeOfValues: int
+        :type sizeOfValues: Standard_Integer
         :rtype: None
 
         """
         return _Visual3d.Visual3d_View_GraduatedTrihedronDisplay(self, *args)
 
-    def GraduatedTrihedronErase(self, *args) -> "void" :
+    def GraduatedTrihedronErase(self):
         """
         * Erases a graduated trihedron from the view.
 
         :rtype: None
 
         """
-        return _Visual3d.Visual3d_View_GraduatedTrihedronErase(self, *args)
+        return _Visual3d.Visual3d_View_GraduatedTrihedronErase(self)
 
-    def Background(self, *args) -> "Aspect_Background" :
+    def Background(self):
         """
         * Returns the value of the default window background.
 
         :rtype: Aspect_Background
 
         """
-        return _Visual3d.Visual3d_View_Background(self, *args)
+        return _Visual3d.Visual3d_View_Background(self)
 
-    def GradientBackground(self, *args) -> "Aspect_GradientBackground" :
+    def GradientBackground(self):
         """
         * Returns the value of the window background.
 
         :rtype: Aspect_GradientBackground
 
         """
-        return _Visual3d.Visual3d_View_GradientBackground(self, *args)
+        return _Visual3d.Visual3d_View_GradientBackground(self)
 
-    def ContainsFacet(self, *args) -> "Standard_Boolean" :
+    def ContainsFacet(self, *args):
         """
         * Returns Standard_True if one of the structures //!	 displayed in the view <self> contains Polygons, //!	 Triangles or Quadrangles.
 
@@ -4237,16 +4513,16 @@ class Visual3d_View(OCC.Graphic3d.Graphic3d_DataStructureManager):
         """
         return _Visual3d.Visual3d_View_ContainsFacet(self, *args)
 
-    def Context(self, *args) -> "Visual3d_ContextView const &" :
+    def Context(self):
         """
         * Returns the current context of the view <self>.
 
         :rtype: Visual3d_ContextView
 
         """
-        return _Visual3d.Visual3d_View_Context(self, *args)
+        return _Visual3d.Visual3d_View_Context(self)
 
-    def DisplayedStructures(self, *args) -> "void" :
+    def DisplayedStructures(self, *args):
         """
         * Returns the set of structures displayed in //!	 the view <self>.
 
@@ -4257,34 +4533,34 @@ class Visual3d_View(OCC.Graphic3d.Graphic3d_DataStructureManager):
         """
         return _Visual3d.Visual3d_View_DisplayedStructures(self, *args)
 
-    def IsActive(self, *args) -> "Standard_Boolean" :
+    def IsActive(self):
         """
         * Returns the activity flag of the view <self>.
 
         :rtype: bool
 
         """
-        return _Visual3d.Visual3d_View_IsActive(self, *args)
+        return _Visual3d.Visual3d_View_IsActive(self)
 
-    def IsDefined(self, *args) -> "Standard_Boolean" :
+    def IsDefined(self):
         """
         * Returns True if the window associated to the view //!	 <self> is defined.
 
         :rtype: bool
 
         """
-        return _Visual3d.Visual3d_View_IsDefined(self, *args)
+        return _Visual3d.Visual3d_View_IsDefined(self)
 
-    def IsDeleted(self, *args) -> "Standard_Boolean" :
+    def IsDeleted(self):
         """
         * Returns Standard_True is the view <self> is deleted. //!	 <self> is deleted after the call Remove (me).
 
         :rtype: bool
 
         """
-        return _Visual3d.Visual3d_View_IsDeleted(self, *args)
+        return _Visual3d.Visual3d_View_IsDeleted(self)
 
-    def MinMaxValues(self, *args) -> "void" :
+    def MinMaxValues(self, *args):
         """
         * Returns the coordinates of the boundary box of all //!	 structures displayed in the view <self>.
 
@@ -4349,16 +4625,16 @@ class Visual3d_View(OCC.Graphic3d.Graphic3d_DataStructureManager):
         """
         return _Visual3d.Visual3d_View_MinMaxValues(self, *args)
 
-    def NumberOfDisplayedStructures(self, *args) -> "Standard_Integer" :
+    def NumberOfDisplayedStructures(self):
         """
         * Returns number of displayed structures in //!	 the view <self>.
 
         :rtype: int
 
         """
-        return _Visual3d.Visual3d_View_NumberOfDisplayedStructures(self, *args)
+        return _Visual3d.Visual3d_View_NumberOfDisplayedStructures(self)
 
-    def Projects(self, *args) -> "void" :
+    def Projects(self, *args):
         """
         * Returns the coordinates of the projection of the //!	 3d coordinates <AX>, <AY>, <AZ>.
 
@@ -4379,88 +4655,88 @@ class Visual3d_View(OCC.Graphic3d.Graphic3d_DataStructureManager):
         """
         return _Visual3d.Visual3d_View_Projects(self, *args)
 
-    def Transform(self, *args) -> "TColStd_Array2OfReal const &" :
+    def Transform(self):
         """
         * Returns the transformation associated to the view <self>
 
         :rtype: TColStd_Array2OfReal
 
         """
-        return _Visual3d.Visual3d_View_Transform(self, *args)
+        return _Visual3d.Visual3d_View_Transform(self)
 
-    def ViewMapping(self, *args) -> "Visual3d_ViewMapping" :
+    def ViewMapping(self):
         """
         * Returns the current mapping of the view <self>.
 
         :rtype: Visual3d_ViewMapping
 
         """
-        return _Visual3d.Visual3d_View_ViewMapping(self, *args)
+        return _Visual3d.Visual3d_View_ViewMapping(self)
 
-    def ViewMappingDefault(self, *args) -> "Visual3d_ViewMapping" :
+    def ViewMappingDefault(self):
         """
         * Returns the current reset mapping of the view <self>.
 
         :rtype: Visual3d_ViewMapping
 
         """
-        return _Visual3d.Visual3d_View_ViewMappingDefault(self, *args)
+        return _Visual3d.Visual3d_View_ViewMappingDefault(self)
 
-    def ViewOrientation(self, *args) -> "Visual3d_ViewOrientation" :
+    def ViewOrientation(self):
         """
         * Returns the current orientation of the view <self>.
 
         :rtype: Visual3d_ViewOrientation
 
         """
-        return _Visual3d.Visual3d_View_ViewOrientation(self, *args)
+        return _Visual3d.Visual3d_View_ViewOrientation(self)
 
-    def ViewOrientationDefault(self, *args) -> "Visual3d_ViewOrientation" :
+    def ViewOrientationDefault(self):
         """
         * Returns the current reset orientation of the view <self>.
 
         :rtype: Visual3d_ViewOrientation
 
         """
-        return _Visual3d.Visual3d_View_ViewOrientationDefault(self, *args)
+        return _Visual3d.Visual3d_View_ViewOrientationDefault(self)
 
-    def Window(self, *args) -> "Handle_Aspect_Window" :
+    def Window(self):
         """
         * Returns the window associated to the view <self>. Warning: Raises ViewDefinitionError if the associated //!	 window isn't defined.
 
         :rtype: Handle_Aspect_Window
 
         """
-        return _Visual3d.Visual3d_View_Window(self, *args)
+        return _Visual3d.Visual3d_View_Window(self)
 
-    def LightLimit(self, *args) -> "Standard_Integer" :
+    def LightLimit(self):
         """
         * Returns the MAX number of light associated to the view <self>.
 
         :rtype: int
 
         """
-        return _Visual3d.Visual3d_View_LightLimit(self, *args)
+        return _Visual3d.Visual3d_View_LightLimit(self)
 
-    def PlaneLimit(self, *args) -> "Standard_Integer" :
+    def PlaneLimit(self):
         """
         * Returns the MAX number of clipping planes associated to the view <self>.
 
         :rtype: int
 
         """
-        return _Visual3d.Visual3d_View_PlaneLimit(self, *args)
+        return _Visual3d.Visual3d_View_PlaneLimit(self)
 
-    def ViewManager(self, *args) -> "Handle_Visual3d_ViewManager" :
+    def ViewManager(self):
         """
         * Returns the view manager handle which manage this view
 
         :rtype: Handle_Visual3d_ViewManager
 
         """
-        return _Visual3d.Visual3d_View_ViewManager(self, *args)
+        return _Visual3d.Visual3d_View_ViewManager(self)
 
-    def ReCompute(self, *args) -> "void" :
+    def ReCompute(self, *args):
         """
         * Computes the new presentation of the //!	 structure <AStructure> displayed in <self> //!	 with the type Graphic3d_TOS_COMPUTED.
 
@@ -4471,52 +4747,52 @@ class Visual3d_View(OCC.Graphic3d.Graphic3d_DataStructureManager):
         """
         return _Visual3d.Visual3d_View_ReCompute(self, *args)
 
-    def Identification(self, *args) -> "Standard_Integer" :
+    def Identification(self):
         """
         * Returns the identification number of the view <self>.
 
         :rtype: int
 
         """
-        return _Visual3d.Visual3d_View_Identification(self, *args)
+        return _Visual3d.Visual3d_View_Identification(self)
 
-    def MatrixOfMapping(self, *args) -> "TColStd_Array2OfReal const &" :
+    def MatrixOfMapping(self):
         """
         * Returns the current matrix of mapping of the view <self>. Warning: Stores the current matrix of mapping.
 
         :rtype: TColStd_Array2OfReal
 
         """
-        return _Visual3d.Visual3d_View_MatrixOfMapping(self, *args)
+        return _Visual3d.Visual3d_View_MatrixOfMapping(self)
 
-    def MatrixOfOrientation(self, *args) -> "TColStd_Array2OfReal const &" :
+    def MatrixOfOrientation(self):
         """
         * Returns the current matrix of orientation of the view <self>. Warning: Stores the current matrix of orientation.
 
         :rtype: TColStd_Array2OfReal
 
         """
-        return _Visual3d.Visual3d_View_MatrixOfOrientation(self, *args)
+        return _Visual3d.Visual3d_View_MatrixOfOrientation(self)
 
-    def CView(self, *args) -> "Standard_Address" :
+    def CView(self):
         """
         * Returns the c structure associated to <self>.
 
         :rtype: Standard_Address
 
         """
-        return _Visual3d.Visual3d_View_CView(self, *args)
+        return _Visual3d.Visual3d_View_CView(self)
 
-    def GraphicDriver(self, *args) -> "Handle_Graphic3d_GraphicDriver const &" :
+    def GraphicDriver(self):
         """
         * Returns the associated GraphicDriver.
 
         :rtype: Handle_Graphic3d_GraphicDriver
 
         """
-        return _Visual3d.Visual3d_View_GraphicDriver(self, *args)
+        return _Visual3d.Visual3d_View_GraphicDriver(self)
 
-    def Plot(self, *args) -> "void" :
+    def Plot(self, *args):
         """
         * Calls the method Plot for each Structure //!	 displayed in <self>.
 
@@ -4527,7 +4803,7 @@ class Visual3d_View(OCC.Graphic3d.Graphic3d_DataStructureManager):
         """
         return _Visual3d.Visual3d_View_Plot(self, *args)
 
-    def SetTransparency(self, *args) -> "void" :
+    def SetTransparency(self, *args):
         """
         * if <AFlag> is Standard_True then the transparency //!	 is managed in the view <self>. //!	 Default Standard_False
 
@@ -4538,45 +4814,45 @@ class Visual3d_View(OCC.Graphic3d.Graphic3d_DataStructureManager):
         """
         return _Visual3d.Visual3d_View_SetTransparency(self, *args)
 
-    def ZBufferIsActivated(self, *args) -> "Standard_Boolean" :
+    def ZBufferIsActivated(self):
         """
         * Returns Standard_True if the ZBuffer is activated //!	 in the view <self> and Standard_False if not.
 
         :rtype: bool
 
         """
-        return _Visual3d.Visual3d_View_ZBufferIsActivated(self, *args)
+        return _Visual3d.Visual3d_View_ZBufferIsActivated(self)
 
-    def SetZBufferActivity(self, *args) -> "void" :
+    def SetZBufferActivity(self, *args):
         """
         * Activates the ZBuffer if the integer <AnActivity> //!	 is equal to 1. //!	 Deactivates the ZBuffer if the integer <AnActivity> //!	 is equal to 0. //!	 If the integer <AnActivity> is equal to -1 then //!	 - the ZBuffer is activated if //!		me->Context ().Visualization () == Visual3d_TOV_SHADING //!	 - the ZBuffer is deactivated if //!		me->Context ().Visualization () == Visual3d_TOV_WIREFRAME
 
         :param AnActivity:
-        :type AnActivity: int
+        :type AnActivity: Standard_Integer
         :rtype: None
 
         """
         return _Visual3d.Visual3d_View_SetZBufferActivity(self, *args)
 
-    def UnderLayer(self, *args) -> "Handle_Visual3d_Layer const &" :
+    def UnderLayer(self):
         """
         * Returns the underlay of the view <self>.
 
         :rtype: Handle_Visual3d_Layer
 
         """
-        return _Visual3d.Visual3d_View_UnderLayer(self, *args)
+        return _Visual3d.Visual3d_View_UnderLayer(self)
 
-    def OverLayer(self, *args) -> "Handle_Visual3d_Layer const &" :
+    def OverLayer(self):
         """
         * Returns the underlay of the view <self>.
 
         :rtype: Handle_Visual3d_Layer
 
         """
-        return _Visual3d.Visual3d_View_OverLayer(self, *args)
+        return _Visual3d.Visual3d_View_OverLayer(self)
 
-    def EnableDepthTest(self, *args) -> "void" :
+    def EnableDepthTest(self, *args):
         """
         * turns on/off opengl depth
 
@@ -4587,27 +4863,27 @@ class Visual3d_View(OCC.Graphic3d.Graphic3d_DataStructureManager):
         """
         return _Visual3d.Visual3d_View_EnableDepthTest(self, *args)
 
-    def IsDepthTestEnabled(self, *args) -> "Standard_Boolean" :
+    def IsDepthTestEnabled(self):
         """
         * returns current state of the opengl depth testing
 
         :rtype: bool
 
         """
-        return _Visual3d.Visual3d_View_IsDepthTestEnabled(self, *args)
+        return _Visual3d.Visual3d_View_IsDepthTestEnabled(self)
 
-    def ReadDepths(self, *args) -> "void" :
+    def ReadDepths(self, *args):
         """
         * Reads depths of shown pixels of the given rectangle
 
         :param x:
-        :type x: int
+        :type x: Standard_Integer
         :param y:
-        :type y: int
+        :type y: Standard_Integer
         :param width:
-        :type width: int
+        :type width: Standard_Integer
         :param height:
-        :type height: int
+        :type height: Standard_Integer
         :param buffer:
         :type buffer: Standard_Address
         :rtype: None
@@ -4615,20 +4891,20 @@ class Visual3d_View(OCC.Graphic3d.Graphic3d_DataStructureManager):
         """
         return _Visual3d.Visual3d_View_ReadDepths(self, *args)
 
-    def FBOCreate(self, *args) -> "Graphic3d_PtrFrameBuffer" :
+    def FBOCreate(self, *args):
         """
         * Generate offscreen FBO in the graphic library
 
         :param width:
-        :type width: int
+        :type width: Standard_Integer
         :param height:
-        :type height: int
+        :type height: Standard_Integer
         :rtype: Graphic3d_PtrFrameBuffer
 
         """
         return _Visual3d.Visual3d_View_FBOCreate(self, *args)
 
-    def FBORelease(self, *args) -> "void" :
+    def FBORelease(self, *args):
         """
         * Remove offscreen FBO from the graphic library
 
@@ -4639,41 +4915,41 @@ class Visual3d_View(OCC.Graphic3d.Graphic3d_DataStructureManager):
         """
         return _Visual3d.Visual3d_View_FBORelease(self, *args)
 
-    def FBOGetDimensions(self, *args) -> "void" :
+    def FBOGetDimensions(self, *args):
         """
         * Read offscreen FBO configuration.
 
         :param fboPtr:
         :type fboPtr: Graphic3d_PtrFrameBuffer
         :param width:
-        :type width: int &
+        :type width: Standard_Integer &
         :param height:
-        :type height: int &
+        :type height: Standard_Integer &
         :param widthMax:
-        :type widthMax: int &
+        :type widthMax: Standard_Integer &
         :param heightMax:
-        :type heightMax: int &
+        :type heightMax: Standard_Integer &
         :rtype: None
 
         """
         return _Visual3d.Visual3d_View_FBOGetDimensions(self, *args)
 
-    def FBOChangeViewport(self, *args) -> "void" :
+    def FBOChangeViewport(self, *args):
         """
         * Change offscreen FBO viewport.
 
         :param fboPtr:
         :type fboPtr: Graphic3d_PtrFrameBuffer &
         :param width:
-        :type width: int
+        :type width: Standard_Integer
         :param height:
-        :type height: int
+        :type height: Standard_Integer
         :rtype: None
 
         """
         return _Visual3d.Visual3d_View_FBOChangeViewport(self, *args)
 
-    def BufferDump(self, *args) -> "Standard_Boolean" :
+    def BufferDump(self, *args):
         """
         * Dump active rendering buffer into specified memory buffer.
 
@@ -4686,7 +4962,7 @@ class Visual3d_View(OCC.Graphic3d.Graphic3d_DataStructureManager):
         """
         return _Visual3d.Visual3d_View_BufferDump(self, *args)
 
-    def EnableGLLight(self, *args) -> "void" :
+    def EnableGLLight(self, *args):
         """
         * turns on/off opengl lighting, currently used in triedron displaying
 
@@ -4697,17 +4973,81 @@ class Visual3d_View(OCC.Graphic3d.Graphic3d_DataStructureManager):
         """
         return _Visual3d.Visual3d_View_EnableGLLight(self, *args)
 
-    def IsGLLightEnabled(self, *args) -> "Standard_Boolean" :
+    def IsGLLightEnabled(self):
         """
         * returns the current state of the gl lighting currently used in triedron displaying
 
         :rtype: bool
 
         """
-        return _Visual3d.Visual3d_View_IsGLLightEnabled(self, *args)
+        return _Visual3d.Visual3d_View_IsGLLightEnabled(self)
 
-    def Export(self, *args) -> "Standard_Boolean" :
+    def Export(self, *args):
         """
+        * Export scene into the one of the Vector graphics formats (SVG, PS, PDF...). In contrast to Bitmaps, Vector graphics is scalable (so you may got quality benefits on printing to laser printer). Notice however that results may differ a lot and do not contain some elements.
+
+        :param theFileName:
+        :type theFileName: char *
+        :param theFormat:
+        :type theFormat: Graphic3d_ExportFormat
+        :param theSortType: default value is Graphic3d_ST_BSP_Tree
+        :type theSortType: Graphic3d_SortType
+        :param thePrecision: default value is 0.005
+        :type thePrecision: float
+        :param theProgressBarFunc: default value is NULL
+        :type theProgressBarFunc: Standard_Address
+        :param theProgressObject: default value is NULL
+        :type theProgressObject: Standard_Address
+        :rtype: bool
+
+        * Export scene into the one of the Vector graphics formats (SVG, PS, PDF...). In contrast to Bitmaps, Vector graphics is scalable (so you may got quality benefits on printing to laser printer). Notice however that results may differ a lot and do not contain some elements.
+
+        :param theFileName:
+        :type theFileName: char *
+        :param theFormat:
+        :type theFormat: Graphic3d_ExportFormat
+        :param theSortType: default value is Graphic3d_ST_BSP_Tree
+        :type theSortType: Graphic3d_SortType
+        :param thePrecision: default value is 0.005
+        :type thePrecision: float
+        :param theProgressBarFunc: default value is NULL
+        :type theProgressBarFunc: Standard_Address
+        :param theProgressObject: default value is NULL
+        :type theProgressObject: Standard_Address
+        :rtype: bool
+
+        * Export scene into the one of the Vector graphics formats (SVG, PS, PDF...). In contrast to Bitmaps, Vector graphics is scalable (so you may got quality benefits on printing to laser printer). Notice however that results may differ a lot and do not contain some elements.
+
+        :param theFileName:
+        :type theFileName: char *
+        :param theFormat:
+        :type theFormat: Graphic3d_ExportFormat
+        :param theSortType: default value is Graphic3d_ST_BSP_Tree
+        :type theSortType: Graphic3d_SortType
+        :param thePrecision: default value is 0.005
+        :type thePrecision: float
+        :param theProgressBarFunc: default value is NULL
+        :type theProgressBarFunc: Standard_Address
+        :param theProgressObject: default value is NULL
+        :type theProgressObject: Standard_Address
+        :rtype: bool
+
+        * Export scene into the one of the Vector graphics formats (SVG, PS, PDF...). In contrast to Bitmaps, Vector graphics is scalable (so you may got quality benefits on printing to laser printer). Notice however that results may differ a lot and do not contain some elements.
+
+        :param theFileName:
+        :type theFileName: char *
+        :param theFormat:
+        :type theFormat: Graphic3d_ExportFormat
+        :param theSortType: default value is Graphic3d_ST_BSP_Tree
+        :type theSortType: Graphic3d_SortType
+        :param thePrecision: default value is 0.005
+        :type thePrecision: float
+        :param theProgressBarFunc: default value is NULL
+        :type theProgressBarFunc: Standard_Address
+        :param theProgressObject: default value is NULL
+        :type theProgressObject: Standard_Address
+        :rtype: bool
+
         * Export scene into the one of the Vector graphics formats (SVG, PS, PDF...). In contrast to Bitmaps, Vector graphics is scalable (so you may got quality benefits on printing to laser printer). Notice however that results may differ a lot and do not contain some elements.
 
         :param theFileName:
@@ -4727,11 +5067,11 @@ class Visual3d_View(OCC.Graphic3d.Graphic3d_DataStructureManager):
         """
         return _Visual3d.Visual3d_View_Export(self, *args)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Visual3d_View self)"""
         return _Visual3d.Visual3d_View__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Visual3d_View" :
+    def GetHandle(self):
         """GetHandle(Visual3d_View self) -> Handle_Visual3d_View"""
         return _Visual3d.Visual3d_View_GetHandle(self)
 
@@ -4843,7 +5183,7 @@ Handle_Visual3d_View._kill_pointed = new_instancemethod(_Visual3d.Handle_Visual3
 Handle_Visual3d_View_swigregister = _Visual3d.Handle_Visual3d_View_swigregister
 Handle_Visual3d_View_swigregister(Handle_Visual3d_View)
 
-def Handle_Visual3d_View_DownCast(*args) -> "Handle_Visual3d_View const" :
+def Handle_Visual3d_View_DownCast(*args):
   return _Visual3d.Handle_Visual3d_View_DownCast(*args)
 Handle_Visual3d_View_DownCast = _Visual3d.Handle_Visual3d_View_DownCast
 
@@ -4860,52 +5200,52 @@ class Visual3d_ViewManager(OCC.Graphic3d.Graphic3d_StructureManager):
 
         """
         _Visual3d.Visual3d_ViewManager_swiginit(self,_Visual3d.new_Visual3d_ViewManager(*args))
-    def Activate(self, *args) -> "void" :
+    def Activate(self):
         """
         * Activates all the views of the manager <self>.
 
         :rtype: None
 
         """
-        return _Visual3d.Visual3d_ViewManager_Activate(self, *args)
+        return _Visual3d.Visual3d_ViewManager_Activate(self)
 
-    def Deactivate(self, *args) -> "void" :
+    def Deactivate(self):
         """
         * Deactivates all the views of the manager <self>.
 
         :rtype: None
 
         """
-        return _Visual3d.Visual3d_ViewManager_Deactivate(self, *args)
+        return _Visual3d.Visual3d_ViewManager_Deactivate(self)
 
-    def Redraw(self, *args) -> "void" :
+    def Redraw(self):
         """
         * Redraws all the displayed structures.
 
         :rtype: None
 
         """
-        return _Visual3d.Visual3d_ViewManager_Redraw(self, *args)
+        return _Visual3d.Visual3d_ViewManager_Redraw(self)
 
-    def Remove(self, *args) -> "void" :
+    def Remove(self):
         """
         * Deletes and erases the 3D visualiser <self>.
 
         :rtype: None
 
         """
-        return _Visual3d.Visual3d_ViewManager_Remove(self, *args)
+        return _Visual3d.Visual3d_ViewManager_Remove(self)
 
-    def ActivatedView(self, *args) -> "Handle_Visual3d_HSetOfView" :
+    def ActivatedView(self):
         """
         * Returns the group of views activated in the visualiser <self>.
 
         :rtype: Handle_Visual3d_HSetOfView
 
         """
-        return _Visual3d.Visual3d_ViewManager_ActivatedView(self, *args)
+        return _Visual3d.Visual3d_ViewManager_ActivatedView(self)
 
-    def ConvertCoord(self, *args) -> "Graphic3d_Vertex" :
+    def ConvertCoord(self, *args):
         """
         * Applies the view orientation transformation, the //!	 view mapping transformation and view clip, the //!	 display transformation to the vertex <AVertex>. //!	 Returns the pixel coordinates <AU>, <AV>. Warning: Returns <AU> = <AV> = IntegerLast () if the //!	 evaluation is impossible. //!	 -- Bad Window, Numeric error...
 
@@ -4914,9 +5254,9 @@ class Visual3d_ViewManager(OCC.Graphic3d.Graphic3d_StructureManager):
         :param AVertex:
         :type AVertex: Graphic3d_Vertex &
         :param AU:
-        :type AU: int &
+        :type AU: Standard_Integer &
         :param AV:
-        :type AV: int &
+        :type AV: Standard_Integer &
         :rtype: None
 
         * Applies the inverse of the display transformation, the //!	 inverse of the view mapping transformation and view clip, //!	 the inverse of the view orientation transformation to //!	 the pixel coordinates <AU>, <AV>. //!	 Returns the world coordinates <AVertex>. Warning: Returns AVertex (X, Y, Z) with X = Y = Z = RealLast () //!	 if the evaluation is impossible. //!	 -- Bad Window, Numeric error...
@@ -4924,24 +5264,24 @@ class Visual3d_ViewManager(OCC.Graphic3d.Graphic3d_StructureManager):
         :param AWindow:
         :type AWindow: Handle_Aspect_Window &
         :param AU:
-        :type AU: int
+        :type AU: Standard_Integer
         :param AV:
-        :type AV: int
+        :type AV: Standard_Integer
         :rtype: Graphic3d_Vertex
 
         """
         return _Visual3d.Visual3d_ViewManager_ConvertCoord(self, *args)
 
-    def ConvertCoordWithProj(self, *args) -> "void" :
+    def ConvertCoordWithProj(self, *args):
         """
         * Applies the inverse of the display transformation, the //!	 inverse of the view mapping transformation and view clip, //!	 the inverse of the view orientation transformation to //!	 the pixel coordinates <AU>, <AV>. //!	 Returns the world coordinates <AVertex> and projection ray <AVector>. Warning: Returns AVertex (X, Y, Z) with X = Y = Z = RealLast () and AVector (VX, VY, VZ) with VX = VY = VZ = 0. //!	 if the evaluation is impossible. //!	 -- Bad Window, Numeric error...
 
         :param AWindow:
         :type AWindow: Handle_Aspect_Window &
         :param AU:
-        :type AU: int
+        :type AU: Standard_Integer
         :param AV:
-        :type AV: int
+        :type AV: Standard_Integer
         :param Point:
         :type Point: Graphic3d_Vertex &
         :param Proj:
@@ -4951,36 +5291,36 @@ class Visual3d_ViewManager(OCC.Graphic3d.Graphic3d_StructureManager):
         """
         return _Visual3d.Visual3d_ViewManager_ConvertCoordWithProj(self, *args)
 
-    def DefinedView(self, *args) -> "Handle_Visual3d_HSetOfView" :
+    def DefinedView(self):
         """
         * Returns the group of views defined in the visualiser <self>.
 
         :rtype: Handle_Visual3d_HSetOfView
 
         """
-        return _Visual3d.Visual3d_ViewManager_DefinedView(self, *args)
+        return _Visual3d.Visual3d_ViewManager_DefinedView(self)
 
-    def MaxNumOfViews(self, *args) -> "Standard_Integer" :
+    def MaxNumOfViews(self):
         """
         * Returns the theoretical maximum number of //!	 definable views in the view manager <self>. Warning: It's not possible to accept an infinite //!	 number of definable views because each //!	 view must have an identification and we //!	 have different view managers.
 
         :rtype: int
 
         """
-        return _Visual3d.Visual3d_ViewManager_MaxNumOfViews(self, *args)
+        return _Visual3d.Visual3d_ViewManager_MaxNumOfViews(self)
 
-    def UnIdentification(self, *args) -> "void" :
+    def UnIdentification(self, *args):
         """
         * Release a unique ID of the view reserved for the view on its creation.
 
         :param aViewId:
-        :type aViewId: int
+        :type aViewId: Standard_Integer
         :rtype: None
 
         """
         return _Visual3d.Visual3d_ViewManager_UnIdentification(self, *args)
 
-    def Identification(self, *args) -> "Standard_Integer" :
+    def Identification(self, *args):
         """
         * Returns : //!	 a new identification number for a new view //!	 in the visualiser.
 
@@ -4991,7 +5331,7 @@ class Visual3d_ViewManager(OCC.Graphic3d.Graphic3d_StructureManager):
         * Returns the structure with the identification number <AId>.
 
         :param AId:
-        :type AId: int
+        :type AId: Standard_Integer
         :rtype: Handle_Graphic3d_Structure
 
         * Returns the identification number of the visualiser.
@@ -5001,7 +5341,7 @@ class Visual3d_ViewManager(OCC.Graphic3d.Graphic3d_StructureManager):
         """
         return _Visual3d.Visual3d_ViewManager_Identification(self, *args)
 
-    def Erase(self, *args) -> "void" :
+    def Erase(self, *args):
         """
         * Erases all of the structures displayed in the //!	 visualiser <self>.
 
@@ -5016,7 +5356,7 @@ class Visual3d_ViewManager(OCC.Graphic3d.Graphic3d_StructureManager):
         """
         return _Visual3d.Visual3d_ViewManager_Erase(self, *args)
 
-    def UnHighlight(self, *args) -> "void" :
+    def UnHighlight(self, *args):
         """
         * Suppress the highlighting on all the structures.
 
@@ -5031,7 +5371,7 @@ class Visual3d_ViewManager(OCC.Graphic3d.Graphic3d_StructureManager):
         """
         return _Visual3d.Visual3d_ViewManager_UnHighlight(self, *args)
 
-    def ViewExists(self, *args) -> "Standard_Boolean" :
+    def ViewExists(self, *args):
         """
         * Returns Standard_True if the view associated to the //!	 window <AWindow> exists and is activated. //!	 <TheViewId> contains the internal identification of //!	 the associated view.
 
@@ -5044,25 +5384,25 @@ class Visual3d_ViewManager(OCC.Graphic3d.Graphic3d_StructureManager):
         """
         return _Visual3d.Visual3d_ViewManager_ViewExists(self, *args)
 
-    def UnderLayer(self, *args) -> "Handle_Visual3d_Layer const &" :
+    def UnderLayer(self):
         """
         * Returns the underlay of the viewer <self>.
 
         :rtype: Handle_Visual3d_Layer
 
         """
-        return _Visual3d.Visual3d_ViewManager_UnderLayer(self, *args)
+        return _Visual3d.Visual3d_ViewManager_UnderLayer(self)
 
-    def OverLayer(self, *args) -> "Handle_Visual3d_Layer const &" :
+    def OverLayer(self):
         """
         * Returns the underlay of the viewer <self>.
 
         :rtype: Handle_Visual3d_Layer
 
         """
-        return _Visual3d.Visual3d_ViewManager_OverLayer(self, *args)
+        return _Visual3d.Visual3d_ViewManager_OverLayer(self)
 
-    def ReCompute(self, *args) -> "void" :
+    def ReCompute(self, *args):
         """
         * Forces a new construction of the structure <AStructure> //!	 if <AStructure> is displayed and TOS_COMPUTED.
 
@@ -5081,16 +5421,16 @@ class Visual3d_ViewManager(OCC.Graphic3d.Graphic3d_StructureManager):
         """
         return _Visual3d.Visual3d_ViewManager_ReCompute(self, *args)
 
-    def Transparency(self, *args) -> "Standard_Boolean" :
+    def Transparency(self):
         """
         * Returns Standard_True if the transparency //!	 is activated in all activated views. //!	 Default Standard_False
 
         :rtype: bool
 
         """
-        return _Visual3d.Visual3d_ViewManager_Transparency(self, *args)
+        return _Visual3d.Visual3d_ViewManager_Transparency(self)
 
-    def SetTransparency(self, *args) -> "void" :
+    def SetTransparency(self, *args):
         """
         * if <AFlag> is Standard_True then the transparency //!	 is managed. //!	 Default Standard_False
 
@@ -5101,16 +5441,16 @@ class Visual3d_ViewManager(OCC.Graphic3d.Graphic3d_StructureManager):
         """
         return _Visual3d.Visual3d_ViewManager_SetTransparency(self, *args)
 
-    def ZBufferAuto(self, *args) -> "Standard_Boolean" :
+    def ZBufferAuto(self):
         """
         * Returns Standard_True if the zbuffer activity //!	 is managed automatically. //!	 Default Standard_False
 
         :rtype: bool
 
         """
-        return _Visual3d.Visual3d_ViewManager_ZBufferAuto(self, *args)
+        return _Visual3d.Visual3d_ViewManager_ZBufferAuto(self)
 
-    def SetZBufferAuto(self, *args) -> "void" :
+    def SetZBufferAuto(self, *args):
         """
         * if <AFlag> is Standard_True then the zbuffer activity //!	 is managed automatically. //!	 Default Standard_False
 
@@ -5121,11 +5461,11 @@ class Visual3d_ViewManager(OCC.Graphic3d.Graphic3d_StructureManager):
         """
         return _Visual3d.Visual3d_ViewManager_SetZBufferAuto(self, *args)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Visual3d_ViewManager self)"""
         return _Visual3d.Visual3d_ViewManager__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Visual3d_ViewManager" :
+    def GetHandle(self):
         """GetHandle(Visual3d_ViewManager self) -> Handle_Visual3d_ViewManager"""
         return _Visual3d.Visual3d_ViewManager_GetHandle(self)
 
@@ -5184,7 +5524,7 @@ Handle_Visual3d_ViewManager._kill_pointed = new_instancemethod(_Visual3d.Handle_
 Handle_Visual3d_ViewManager_swigregister = _Visual3d.Handle_Visual3d_ViewManager_swigregister
 Handle_Visual3d_ViewManager_swigregister(Handle_Visual3d_ViewManager)
 
-def Handle_Visual3d_ViewManager_DownCast(*args) -> "Handle_Visual3d_ViewManager const" :
+def Handle_Visual3d_ViewManager_DownCast(*args):
   return _Visual3d.Handle_Visual3d_ViewManager_DownCast(*args)
 Handle_Visual3d_ViewManager_DownCast = _Visual3d.Handle_Visual3d_ViewManager_DownCast
 
@@ -5221,7 +5561,7 @@ class Visual3d_ViewMapping(object):
 
         """
         _Visual3d.Visual3d_ViewMapping_swiginit(self,_Visual3d.new_Visual3d_ViewMapping(*args))
-    def SetBackPlaneDistance(self, *args) -> "void" :
+    def SetBackPlaneDistance(self, *args):
         """
         * Modifies the back clipping plane. Category: Methods to modify the class definition Warning: Raises ViewMappingDefinitionError //!	 if <PRP> is between the front and back planes. //!	 if <PRP> is positioned on the view plane. //!	 if the back plane is in front of the front plane.
 
@@ -5232,7 +5572,7 @@ class Visual3d_ViewMapping(object):
         """
         return _Visual3d.Visual3d_ViewMapping_SetBackPlaneDistance(self, *args)
 
-    def SetFrontPlaneDistance(self, *args) -> "void" :
+    def SetFrontPlaneDistance(self, *args):
         """
         * Modifies the front clipping plane. Category: Methods to modify the class definition Warning: Raises ViewMappingDefinitionError //!	 if <PRP> is between the front and back planes. //!	 if <PRP> is positioned on the view plane. //!	 if the back plane is in front of the front plane.
 
@@ -5243,7 +5583,7 @@ class Visual3d_ViewMapping(object):
         """
         return _Visual3d.Visual3d_ViewMapping_SetFrontPlaneDistance(self, *args)
 
-    def SetProjection(self, *args) -> "void" :
+    def SetProjection(self, *args):
         """
         * Modifies the type of projection. //!	 TypeOfProjection : TOP_PERSPECTIVE //!			 TOP_PARALLEL
 
@@ -5254,7 +5594,7 @@ class Visual3d_ViewMapping(object):
         """
         return _Visual3d.Visual3d_ViewMapping_SetProjection(self, *args)
 
-    def SetProjectionReferencePoint(self, *args) -> "void" :
+    def SetProjectionReferencePoint(self, *args):
         """
         * Modifies the PRP. Category: Methods to modify the class definition Warning: Raises ViewMappingDefinitionError //!	 if <PRP> is between the front and back planes. //!	 if <PRP> is positioned on the view plane.
 
@@ -5265,7 +5605,7 @@ class Visual3d_ViewMapping(object):
         """
         return _Visual3d.Visual3d_ViewMapping_SetProjectionReferencePoint(self, *args)
 
-    def SetViewPlaneDistance(self, *args) -> "void" :
+    def SetViewPlaneDistance(self, *args):
         """
         * Modifies the distance of the view plane of projection. Category: Methods to modify the class definition Warning: Raises ViewMappingDefinitionError //!	 if <PRP> is positioned on the view plane.
 
@@ -5276,7 +5616,7 @@ class Visual3d_ViewMapping(object):
         """
         return _Visual3d.Visual3d_ViewMapping_SetViewPlaneDistance(self, *args)
 
-    def SetWindowLimit(self, *args) -> "void" :
+    def SetWindowLimit(self, *args):
         """
         * Modifies the visible part of the projection plane. Category: Methods to modify the class definition Warning: Raises ViewMappingDefinitionError if the //!	 specified window is invalid.
 
@@ -5293,7 +5633,7 @@ class Visual3d_ViewMapping(object):
         """
         return _Visual3d.Visual3d_ViewMapping_SetWindowLimit(self, *args)
 
-    def SetCustomProjectionMatrix(self, *args) -> "void" :
+    def SetCustomProjectionMatrix(self, *args):
         """
         * Sets custom PROJECTION matrix for the OpenGl context
 
@@ -5304,52 +5644,52 @@ class Visual3d_ViewMapping(object):
         """
         return _Visual3d.Visual3d_ViewMapping_SetCustomProjectionMatrix(self, *args)
 
-    def BackPlaneDistance(self, *args) -> "Standard_Real" :
+    def BackPlaneDistance(self):
         """
         * Returns the distance from the back clipping plane of this view mapping.
 
         :rtype: float
 
         """
-        return _Visual3d.Visual3d_ViewMapping_BackPlaneDistance(self, *args)
+        return _Visual3d.Visual3d_ViewMapping_BackPlaneDistance(self)
 
-    def FrontPlaneDistance(self, *args) -> "Standard_Real" :
+    def FrontPlaneDistance(self):
         """
         * Returns the distance from the front clipping plane of this view mapping.
 
         :rtype: float
 
         """
-        return _Visual3d.Visual3d_ViewMapping_FrontPlaneDistance(self, *args)
+        return _Visual3d.Visual3d_ViewMapping_FrontPlaneDistance(self)
 
-    def Projection(self, *args) -> "Visual3d_TypeOfProjection" :
+    def Projection(self):
         """
         * Returns the type of projection.
 
         :rtype: Visual3d_TypeOfProjection
 
         """
-        return _Visual3d.Visual3d_ViewMapping_Projection(self, *args)
+        return _Visual3d.Visual3d_ViewMapping_Projection(self)
 
-    def ProjectionReferencePoint(self, *args) -> "Graphic3d_Vertex" :
+    def ProjectionReferencePoint(self):
         """
         * Returns the PRP.
 
         :rtype: Graphic3d_Vertex
 
         """
-        return _Visual3d.Visual3d_ViewMapping_ProjectionReferencePoint(self, *args)
+        return _Visual3d.Visual3d_ViewMapping_ProjectionReferencePoint(self)
 
-    def ViewPlaneDistance(self, *args) -> "Standard_Real" :
+    def ViewPlaneDistance(self):
         """
         * Returns the distance from the projection plane.
 
         :rtype: float
 
         """
-        return _Visual3d.Visual3d_ViewMapping_ViewPlaneDistance(self, *args)
+        return _Visual3d.Visual3d_ViewMapping_ViewPlaneDistance(self)
 
-    def WindowLimit(self, *args) -> "void" :
+    def WindowLimit(self):
         """
         * Returns the visible part of the projection plane.
 
@@ -5364,16 +5704,16 @@ class Visual3d_ViewMapping(object):
         :rtype: None
 
         """
-        return _Visual3d.Visual3d_ViewMapping_WindowLimit(self, *args)
+        return _Visual3d.Visual3d_ViewMapping_WindowLimit(self)
 
-    def IsCustomMatrix(self, *args) -> "Standard_Boolean" :
+    def IsCustomMatrix(self):
         """
         * Returns whether the custom PROJECTION matrix is used.
 
         :rtype: bool
 
         """
-        return _Visual3d.Visual3d_ViewMapping_IsCustomMatrix(self, *args)
+        return _Visual3d.Visual3d_ViewMapping_IsCustomMatrix(self)
 
     def __del__(self):
     	try:
@@ -5444,7 +5784,7 @@ class Visual3d_ViewOrientation(object):
 
         """
         _Visual3d.Visual3d_ViewOrientation_swiginit(self,_Visual3d.new_Visual3d_ViewOrientation(*args))
-    def SetViewReferencePlane(self, *args) -> "void" :
+    def SetViewReferencePlane(self, *args):
         """
         * Modifies the plane of visualisation //!	 defined by a normal vector. Category: Methods to modify the class definition Warning: Raises ViewOrientationDefinitionError if <VPN> is null.
 
@@ -5455,7 +5795,7 @@ class Visual3d_ViewOrientation(object):
         """
         return _Visual3d.Visual3d_ViewOrientation_SetViewReferencePlane(self, *args)
 
-    def SetViewReferencePoint(self, *args) -> "void" :
+    def SetViewReferencePoint(self, *args):
         """
         * Modifies the origin of the VRC coordinate system
 
@@ -5466,7 +5806,7 @@ class Visual3d_ViewOrientation(object):
         """
         return _Visual3d.Visual3d_ViewOrientation_SetViewReferencePoint(self, *args)
 
-    def SetViewReferenceUp(self, *args) -> "void" :
+    def SetViewReferenceUp(self, *args):
         """
         * Modifies the vertical of the observer. Category: Methods to modify the class definition Warning: Raises ViewOrientationDefinitionError if <VUP> is null.
 
@@ -5477,7 +5817,7 @@ class Visual3d_ViewOrientation(object):
         """
         return _Visual3d.Visual3d_ViewOrientation_SetViewReferenceUp(self, *args)
 
-    def SetAxialScale(self, *args) -> "void" :
+    def SetAxialScale(self, *args):
         """
         * Sets axial scale factors of the view
 
@@ -5492,7 +5832,7 @@ class Visual3d_ViewOrientation(object):
         """
         return _Visual3d.Visual3d_ViewOrientation_SetAxialScale(self, *args)
 
-    def SetCustomModelViewMatrix(self, *args) -> "void" :
+    def SetCustomModelViewMatrix(self, *args):
         """
         * Sets custom MODELVIEW matrix for the OpenGl context
 
@@ -5503,43 +5843,43 @@ class Visual3d_ViewOrientation(object):
         """
         return _Visual3d.Visual3d_ViewOrientation_SetCustomModelViewMatrix(self, *args)
 
-    def Twist(self, *args) -> "Standard_Real" :
+    def Twist(self):
         """
         * Returns the angle in radians of the V axis in the VRC //!	 coordinate system with the projection in the plane of //!	 visualisation of the Zm axis in the model space.
 
         :rtype: float
 
         """
-        return _Visual3d.Visual3d_ViewOrientation_Twist(self, *args)
+        return _Visual3d.Visual3d_ViewOrientation_Twist(self)
 
-    def ViewReferencePlane(self, *args) -> "Graphic3d_Vector" :
+    def ViewReferencePlane(self):
         """
         * Returns the normal to the plane of projection.
 
         :rtype: Graphic3d_Vector
 
         """
-        return _Visual3d.Visual3d_ViewOrientation_ViewReferencePlane(self, *args)
+        return _Visual3d.Visual3d_ViewOrientation_ViewReferencePlane(self)
 
-    def ViewReferencePoint(self, *args) -> "Graphic3d_Vertex" :
+    def ViewReferencePoint(self):
         """
         * Returns origin of the VRC coordinate system.
 
         :rtype: Graphic3d_Vertex
 
         """
-        return _Visual3d.Visual3d_ViewOrientation_ViewReferencePoint(self, *args)
+        return _Visual3d.Visual3d_ViewOrientation_ViewReferencePoint(self)
 
-    def ViewReferenceUp(self, *args) -> "Graphic3d_Vector" :
+    def ViewReferenceUp(self):
         """
         * Returns the vertical of the observer.
 
         :rtype: Graphic3d_Vector
 
         """
-        return _Visual3d.Visual3d_ViewOrientation_ViewReferenceUp(self, *args)
+        return _Visual3d.Visual3d_ViewOrientation_ViewReferenceUp(self)
 
-    def AxialScale(self, *args) -> "void" :
+    def AxialScale(self):
         """
         * Returns current values of the axial scale factors.
 
@@ -5552,16 +5892,16 @@ class Visual3d_ViewOrientation(object):
         :rtype: None
 
         """
-        return _Visual3d.Visual3d_ViewOrientation_AxialScale(self, *args)
+        return _Visual3d.Visual3d_ViewOrientation_AxialScale(self)
 
-    def IsCustomMatrix(self, *args) -> "Standard_Boolean" :
+    def IsCustomMatrix(self):
         """
         * Returns whether the custom MODELVIEW matrix is used.
 
         :rtype: bool
 
         """
-        return _Visual3d.Visual3d_ViewOrientation_IsCustomMatrix(self, *args)
+        return _Visual3d.Visual3d_ViewOrientation_IsCustomMatrix(self)
 
     def __del__(self):
     	try:

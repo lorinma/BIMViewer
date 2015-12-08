@@ -129,8 +129,9 @@ import OCC.GeomAdaptor
 import OCC.Geom2dAdaptor
 class brepgprop(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
+    def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def LinearProperties(*args) -> "void" :
+    def LinearProperties(*args):
         """
         * Computes the linear global properties of the shape S, i.e. the global properties induced by each edge of the shape S, and brings them together with the global properties still retained by the framework LProps. If the current system of LProps was empty, its global properties become equal to the linear global properties of S. For this computation no linear density is attached to the edges. So, for example, the added mass corresponds to the sum of the lengths of the edges of S. The density of the composed systems, i.e. that of each component of the current system of LProps, and that of S which is considered to be equal to 1, must be coherent. Note that this coherence cannot be checked. You are advised to use a separate framework for each density, and then to bring these frameworks together into a global one. The point relative to which the inertia of the system is computed is the reference point of the framework LProps. Note: if your programming ensures that the framework LProps retains only linear global properties (brought together for example, by the function LinearProperties) for objects the density of which is equal to 1 (or is not defined), the function Mass will return the total length of edges of the system analysed by LProps. Warning No check is performed to verify that the shape S retains truly linear properties. If S is simply a vertex, it is not considered to present any additional global properties.
 
@@ -144,7 +145,7 @@ class brepgprop(object):
         return _BRepGProp.brepgprop_LinearProperties(*args)
 
     LinearProperties = staticmethod(LinearProperties)
-    def SurfaceProperties(*args) -> "Standard_Real" :
+    def SurfaceProperties(*args):
         """
         * Computes the surface global properties of the shape S, i.e. the global properties induced by each face of the shape S, and brings them together with the global properties still retained by the framework SProps. If the current system of SProps was empty, its global properties become equal to the surface global properties of S. For this computation, no surface density is attached to the faces. Consequently, the added mass corresponds to the sum of the areas of the faces of S. The density of the component systems, i.e. that of each component of the current system of SProps, and that of S which is considered to be equal to 1, must be coherent. Note that this coherence cannot be checked. You are advised to use a framework for each different value of density, and then to bring these frameworks together into a global one. The point relative to which the inertia of the system is computed is the reference point of the framework SProps. Note : if your programming ensures that the framework SProps retains only surface global properties, brought together, for example, by the function SurfaceProperties, for objects the density of which is equal to 1 (or is not defined), the function Mass will return the total area of faces of the system analysed by SProps. Warning No check is performed to verify that the shape S retains truly surface properties. If S is simply a vertex, an edge or a wire, it is not considered to present any additional global properties.
 
@@ -168,8 +169,16 @@ class brepgprop(object):
         return _BRepGProp.brepgprop_SurfaceProperties(*args)
 
     SurfaceProperties = staticmethod(SurfaceProperties)
-    def VolumeProperties(*args) -> "Standard_Real" :
+    def VolumeProperties(*args):
         """
+        :param S:
+        :type S: TopoDS_Shape &
+        :param VProps:
+        :type VProps: GProp_GProps &
+        :param OnlyClosed: default value is Standard_False
+        :type OnlyClosed: bool
+        :rtype: void
+
         :param S:
         :type S: TopoDS_Shape &
         :param VProps:
@@ -190,12 +199,114 @@ class brepgprop(object):
         :type OnlyClosed: bool
         :rtype: float
 
+        * Updates <VProps> with the shape <S>, that contains its pricipal properties. The volume properties of all the FORWARD and REVERSED faces in <S> are computed. If OnlyClosed is True then computed faces must belong to closed Shells. Adaptive 2D Gauss integration is used. Parameter Eps sets maximal relative error of computed mass (volume) for each face. Error is calculated as Abs((M(i+1)-M(i))/M(i+1)), M(i+1) and M(i) are values for two successive steps of adaptive integration. Method returns estimation of relative error reached for whole shape. WARNING: if Eps > 0.001 algorithm performs non-adaptive integration.
+
+        :param S:
+        :type S: TopoDS_Shape &
+        :param VProps:
+        :type VProps: GProp_GProps &
+        :param Eps:
+        :type Eps: float
+        :param OnlyClosed: default value is Standard_False
+        :type OnlyClosed: bool
+        :rtype: float
+
         """
         return _BRepGProp.brepgprop_VolumeProperties(*args)
 
     VolumeProperties = staticmethod(VolumeProperties)
-    def VolumePropertiesGK(*args) -> "Standard_Real" :
+    def VolumePropertiesGK(*args):
         """
+        * Updates <VProps> with the shape <S>, that contains its pricipal properties. The volume properties of all the FORWARD and REVERSED faces in <S> are computed. If OnlyClosed is True then computed faces must belong to closed Shells. Adaptive 2D Gauss integration is used. Parameter IsUseSpan says if it is necessary to define spans on a face. This option has an effect only for BSpline faces. Parameter Eps sets maximal relative error of computed property for each face. Error is delivered by the adaptive Gauss-Kronrod method of integral computation that is used for properties computation. Method returns estimation of relative error reached for whole shape. Returns negative value if the computation is failed.
+
+        :param S:
+        :type S: TopoDS_Shape &
+        :param VProps:
+        :type VProps: GProp_GProps &
+        :param Eps: default value is 0.001
+        :type Eps: float
+        :param OnlyClosed: default value is Standard_False
+        :type OnlyClosed: bool
+        :param IsUseSpan: default value is Standard_False
+        :type IsUseSpan: bool
+        :param CGFlag: default value is Standard_False
+        :type CGFlag: bool
+        :param IFlag: default value is Standard_False
+        :type IFlag: bool
+        :rtype: float
+
+        * Updates <VProps> with the shape <S>, that contains its pricipal properties. The volume properties of all the FORWARD and REVERSED faces in <S> are computed. If OnlyClosed is True then computed faces must belong to closed Shells. Adaptive 2D Gauss integration is used. Parameter IsUseSpan says if it is necessary to define spans on a face. This option has an effect only for BSpline faces. Parameter Eps sets maximal relative error of computed property for each face. Error is delivered by the adaptive Gauss-Kronrod method of integral computation that is used for properties computation. Method returns estimation of relative error reached for whole shape. Returns negative value if the computation is failed.
+
+        :param S:
+        :type S: TopoDS_Shape &
+        :param VProps:
+        :type VProps: GProp_GProps &
+        :param Eps: default value is 0.001
+        :type Eps: float
+        :param OnlyClosed: default value is Standard_False
+        :type OnlyClosed: bool
+        :param IsUseSpan: default value is Standard_False
+        :type IsUseSpan: bool
+        :param CGFlag: default value is Standard_False
+        :type CGFlag: bool
+        :param IFlag: default value is Standard_False
+        :type IFlag: bool
+        :rtype: float
+
+        * Updates <VProps> with the shape <S>, that contains its pricipal properties. The volume properties of all the FORWARD and REVERSED faces in <S> are computed. If OnlyClosed is True then computed faces must belong to closed Shells. Adaptive 2D Gauss integration is used. Parameter IsUseSpan says if it is necessary to define spans on a face. This option has an effect only for BSpline faces. Parameter Eps sets maximal relative error of computed property for each face. Error is delivered by the adaptive Gauss-Kronrod method of integral computation that is used for properties computation. Method returns estimation of relative error reached for whole shape. Returns negative value if the computation is failed.
+
+        :param S:
+        :type S: TopoDS_Shape &
+        :param VProps:
+        :type VProps: GProp_GProps &
+        :param Eps: default value is 0.001
+        :type Eps: float
+        :param OnlyClosed: default value is Standard_False
+        :type OnlyClosed: bool
+        :param IsUseSpan: default value is Standard_False
+        :type IsUseSpan: bool
+        :param CGFlag: default value is Standard_False
+        :type CGFlag: bool
+        :param IFlag: default value is Standard_False
+        :type IFlag: bool
+        :rtype: float
+
+        * Updates <VProps> with the shape <S>, that contains its pricipal properties. The volume properties of all the FORWARD and REVERSED faces in <S> are computed. If OnlyClosed is True then computed faces must belong to closed Shells. Adaptive 2D Gauss integration is used. Parameter IsUseSpan says if it is necessary to define spans on a face. This option has an effect only for BSpline faces. Parameter Eps sets maximal relative error of computed property for each face. Error is delivered by the adaptive Gauss-Kronrod method of integral computation that is used for properties computation. Method returns estimation of relative error reached for whole shape. Returns negative value if the computation is failed.
+
+        :param S:
+        :type S: TopoDS_Shape &
+        :param VProps:
+        :type VProps: GProp_GProps &
+        :param Eps: default value is 0.001
+        :type Eps: float
+        :param OnlyClosed: default value is Standard_False
+        :type OnlyClosed: bool
+        :param IsUseSpan: default value is Standard_False
+        :type IsUseSpan: bool
+        :param CGFlag: default value is Standard_False
+        :type CGFlag: bool
+        :param IFlag: default value is Standard_False
+        :type IFlag: bool
+        :rtype: float
+
+        * Updates <VProps> with the shape <S>, that contains its pricipal properties. The volume properties of all the FORWARD and REVERSED faces in <S> are computed. If OnlyClosed is True then computed faces must belong to closed Shells. Adaptive 2D Gauss integration is used. Parameter IsUseSpan says if it is necessary to define spans on a face. This option has an effect only for BSpline faces. Parameter Eps sets maximal relative error of computed property for each face. Error is delivered by the adaptive Gauss-Kronrod method of integral computation that is used for properties computation. Method returns estimation of relative error reached for whole shape. Returns negative value if the computation is failed.
+
+        :param S:
+        :type S: TopoDS_Shape &
+        :param VProps:
+        :type VProps: GProp_GProps &
+        :param Eps: default value is 0.001
+        :type Eps: float
+        :param OnlyClosed: default value is Standard_False
+        :type OnlyClosed: bool
+        :param IsUseSpan: default value is Standard_False
+        :type IsUseSpan: bool
+        :param CGFlag: default value is Standard_False
+        :type CGFlag: bool
+        :param IFlag: default value is Standard_False
+        :type IFlag: bool
+        :rtype: float
+
         * Updates <VProps> with the shape <S>, that contains its pricipal properties. The volume properties of all the FORWARD and REVERSED faces in <S> are computed. If OnlyClosed is True then computed faces must belong to closed Shells. Adaptive 2D Gauss integration is used. Parameter IsUseSpan says if it is necessary to define spans on a face. This option has an effect only for BSpline faces. Parameter Eps sets maximal relative error of computed property for each face. Error is delivered by the adaptive Gauss-Kronrod method of integral computation that is used for properties computation. Method returns estimation of relative error reached for whole shape. Returns negative value if the computation is failed.
 
         :param S:
@@ -232,12 +343,100 @@ class brepgprop(object):
         :type IFlag: bool
         :rtype: float
 
+        :param S:
+        :type S: TopoDS_Shape &
+        :param VProps:
+        :type VProps: GProp_GProps &
+        :param thePln:
+        :type thePln: gp_Pln
+        :param Eps: default value is 0.001
+        :type Eps: float
+        :param OnlyClosed: default value is Standard_False
+        :type OnlyClosed: bool
+        :param IsUseSpan: default value is Standard_False
+        :type IsUseSpan: bool
+        :param CGFlag: default value is Standard_False
+        :type CGFlag: bool
+        :param IFlag: default value is Standard_False
+        :type IFlag: bool
+        :rtype: float
+
+        :param S:
+        :type S: TopoDS_Shape &
+        :param VProps:
+        :type VProps: GProp_GProps &
+        :param thePln:
+        :type thePln: gp_Pln
+        :param Eps: default value is 0.001
+        :type Eps: float
+        :param OnlyClosed: default value is Standard_False
+        :type OnlyClosed: bool
+        :param IsUseSpan: default value is Standard_False
+        :type IsUseSpan: bool
+        :param CGFlag: default value is Standard_False
+        :type CGFlag: bool
+        :param IFlag: default value is Standard_False
+        :type IFlag: bool
+        :rtype: float
+
+        :param S:
+        :type S: TopoDS_Shape &
+        :param VProps:
+        :type VProps: GProp_GProps &
+        :param thePln:
+        :type thePln: gp_Pln
+        :param Eps: default value is 0.001
+        :type Eps: float
+        :param OnlyClosed: default value is Standard_False
+        :type OnlyClosed: bool
+        :param IsUseSpan: default value is Standard_False
+        :type IsUseSpan: bool
+        :param CGFlag: default value is Standard_False
+        :type CGFlag: bool
+        :param IFlag: default value is Standard_False
+        :type IFlag: bool
+        :rtype: float
+
+        :param S:
+        :type S: TopoDS_Shape &
+        :param VProps:
+        :type VProps: GProp_GProps &
+        :param thePln:
+        :type thePln: gp_Pln
+        :param Eps: default value is 0.001
+        :type Eps: float
+        :param OnlyClosed: default value is Standard_False
+        :type OnlyClosed: bool
+        :param IsUseSpan: default value is Standard_False
+        :type IsUseSpan: bool
+        :param CGFlag: default value is Standard_False
+        :type CGFlag: bool
+        :param IFlag: default value is Standard_False
+        :type IFlag: bool
+        :rtype: float
+
+        :param S:
+        :type S: TopoDS_Shape &
+        :param VProps:
+        :type VProps: GProp_GProps &
+        :param thePln:
+        :type thePln: gp_Pln
+        :param Eps: default value is 0.001
+        :type Eps: float
+        :param OnlyClosed: default value is Standard_False
+        :type OnlyClosed: bool
+        :param IsUseSpan: default value is Standard_False
+        :type IsUseSpan: bool
+        :param CGFlag: default value is Standard_False
+        :type CGFlag: bool
+        :param IFlag: default value is Standard_False
+        :type IFlag: bool
+        :rtype: float
+
         """
         return _BRepGProp.brepgprop_VolumePropertiesGK(*args)
 
     VolumePropertiesGK = staticmethod(VolumePropertiesGK)
-    def __init__(self): 
-        _BRepGProp.brepgprop_swiginit(self,_BRepGProp.new_brepgprop())
     def __del__(self):
     	try:
     		self.thisown = False
@@ -250,7 +449,7 @@ brepgprop._kill_pointed = new_instancemethod(_BRepGProp.brepgprop__kill_pointed,
 brepgprop_swigregister = _BRepGProp.brepgprop_swigregister
 brepgprop_swigregister(brepgprop)
 
-def brepgprop_LinearProperties(*args) -> "void" :
+def brepgprop_LinearProperties(*args):
   """
     * Computes the linear global properties of the shape S, i.e. the global properties induced by each edge of the shape S, and brings them together with the global properties still retained by the framework LProps. If the current system of LProps was empty, its global properties become equal to the linear global properties of S. For this computation no linear density is attached to the edges. So, for example, the added mass corresponds to the sum of the lengths of the edges of S. The density of the composed systems, i.e. that of each component of the current system of LProps, and that of S which is considered to be equal to 1, must be coherent. Note that this coherence cannot be checked. You are advised to use a separate framework for each density, and then to bring these frameworks together into a global one. The point relative to which the inertia of the system is computed is the reference point of the framework LProps. Note: if your programming ensures that the framework LProps retains only linear global properties (brought together for example, by the function LinearProperties) for objects the density of which is equal to 1 (or is not defined), the function Mass will return the total length of edges of the system analysed by LProps. Warning No check is performed to verify that the shape S retains truly linear properties. If S is simply a vertex, it is not considered to present any additional global properties.
 
@@ -263,7 +462,7 @@ def brepgprop_LinearProperties(*args) -> "void" :
     """
   return _BRepGProp.brepgprop_LinearProperties(*args)
 
-def brepgprop_SurfaceProperties(*args) -> "Standard_Real" :
+def brepgprop_SurfaceProperties(*args):
   """
     * Computes the surface global properties of the shape S, i.e. the global properties induced by each face of the shape S, and brings them together with the global properties still retained by the framework SProps. If the current system of SProps was empty, its global properties become equal to the surface global properties of S. For this computation, no surface density is attached to the faces. Consequently, the added mass corresponds to the sum of the areas of the faces of S. The density of the component systems, i.e. that of each component of the current system of SProps, and that of S which is considered to be equal to 1, must be coherent. Note that this coherence cannot be checked. You are advised to use a framework for each different value of density, and then to bring these frameworks together into a global one. The point relative to which the inertia of the system is computed is the reference point of the framework SProps. Note : if your programming ensures that the framework SProps retains only surface global properties, brought together, for example, by the function SurfaceProperties, for objects the density of which is equal to 1 (or is not defined), the function Mass will return the total area of faces of the system analysed by SProps. Warning No check is performed to verify that the shape S retains truly surface properties. If S is simply a vertex, an edge or a wire, it is not considered to present any additional global properties.
 
@@ -286,8 +485,16 @@ def brepgprop_SurfaceProperties(*args) -> "Standard_Real" :
     """
   return _BRepGProp.brepgprop_SurfaceProperties(*args)
 
-def brepgprop_VolumeProperties(*args) -> "Standard_Real" :
+def brepgprop_VolumeProperties(*args):
   """
+    :param S:
+    :type S: TopoDS_Shape &
+    :param VProps:
+    :type VProps: GProp_GProps &
+    :param OnlyClosed: default value is Standard_False
+    :type OnlyClosed: bool
+    :rtype: void
+
     :param S:
     :type S: TopoDS_Shape &
     :param VProps:
@@ -308,10 +515,22 @@ def brepgprop_VolumeProperties(*args) -> "Standard_Real" :
     :type OnlyClosed: bool
     :rtype: float
 
+    * Updates <VProps> with the shape <S>, that contains its pricipal properties. The volume properties of all the FORWARD and REVERSED faces in <S> are computed. If OnlyClosed is True then computed faces must belong to closed Shells. Adaptive 2D Gauss integration is used. Parameter Eps sets maximal relative error of computed mass (volume) for each face. Error is calculated as Abs((M(i+1)-M(i))/M(i+1)), M(i+1) and M(i) are values for two successive steps of adaptive integration. Method returns estimation of relative error reached for whole shape. WARNING: if Eps > 0.001 algorithm performs non-adaptive integration.
+
+    :param S:
+    :type S: TopoDS_Shape &
+    :param VProps:
+    :type VProps: GProp_GProps &
+    :param Eps:
+    :type Eps: float
+    :param OnlyClosed: default value is Standard_False
+    :type OnlyClosed: bool
+    :rtype: float
+
     """
   return _BRepGProp.brepgprop_VolumeProperties(*args)
 
-def brepgprop_VolumePropertiesGK(*args) -> "Standard_Real" :
+def brepgprop_VolumePropertiesGK(*args):
   """
     * Updates <VProps> with the shape <S>, that contains its pricipal properties. The volume properties of all the FORWARD and REVERSED faces in <S> are computed. If OnlyClosed is True then computed faces must belong to closed Shells. Adaptive 2D Gauss integration is used. Parameter IsUseSpan says if it is necessary to define spans on a face. This option has an effect only for BSpline faces. Parameter Eps sets maximal relative error of computed property for each face. Error is delivered by the adaptive Gauss-Kronrod method of integral computation that is used for properties computation. Method returns estimation of relative error reached for whole shape. Returns negative value if the computation is failed.
 
@@ -319,6 +538,186 @@ def brepgprop_VolumePropertiesGK(*args) -> "Standard_Real" :
     :type S: TopoDS_Shape &
     :param VProps:
     :type VProps: GProp_GProps &
+    :param Eps: default value is 0.001
+    :type Eps: float
+    :param OnlyClosed: default value is Standard_False
+    :type OnlyClosed: bool
+    :param IsUseSpan: default value is Standard_False
+    :type IsUseSpan: bool
+    :param CGFlag: default value is Standard_False
+    :type CGFlag: bool
+    :param IFlag: default value is Standard_False
+    :type IFlag: bool
+    :rtype: float
+
+    * Updates <VProps> with the shape <S>, that contains its pricipal properties. The volume properties of all the FORWARD and REVERSED faces in <S> are computed. If OnlyClosed is True then computed faces must belong to closed Shells. Adaptive 2D Gauss integration is used. Parameter IsUseSpan says if it is necessary to define spans on a face. This option has an effect only for BSpline faces. Parameter Eps sets maximal relative error of computed property for each face. Error is delivered by the adaptive Gauss-Kronrod method of integral computation that is used for properties computation. Method returns estimation of relative error reached for whole shape. Returns negative value if the computation is failed.
+
+    :param S:
+    :type S: TopoDS_Shape &
+    :param VProps:
+    :type VProps: GProp_GProps &
+    :param Eps: default value is 0.001
+    :type Eps: float
+    :param OnlyClosed: default value is Standard_False
+    :type OnlyClosed: bool
+    :param IsUseSpan: default value is Standard_False
+    :type IsUseSpan: bool
+    :param CGFlag: default value is Standard_False
+    :type CGFlag: bool
+    :param IFlag: default value is Standard_False
+    :type IFlag: bool
+    :rtype: float
+
+    * Updates <VProps> with the shape <S>, that contains its pricipal properties. The volume properties of all the FORWARD and REVERSED faces in <S> are computed. If OnlyClosed is True then computed faces must belong to closed Shells. Adaptive 2D Gauss integration is used. Parameter IsUseSpan says if it is necessary to define spans on a face. This option has an effect only for BSpline faces. Parameter Eps sets maximal relative error of computed property for each face. Error is delivered by the adaptive Gauss-Kronrod method of integral computation that is used for properties computation. Method returns estimation of relative error reached for whole shape. Returns negative value if the computation is failed.
+
+    :param S:
+    :type S: TopoDS_Shape &
+    :param VProps:
+    :type VProps: GProp_GProps &
+    :param Eps: default value is 0.001
+    :type Eps: float
+    :param OnlyClosed: default value is Standard_False
+    :type OnlyClosed: bool
+    :param IsUseSpan: default value is Standard_False
+    :type IsUseSpan: bool
+    :param CGFlag: default value is Standard_False
+    :type CGFlag: bool
+    :param IFlag: default value is Standard_False
+    :type IFlag: bool
+    :rtype: float
+
+    * Updates <VProps> with the shape <S>, that contains its pricipal properties. The volume properties of all the FORWARD and REVERSED faces in <S> are computed. If OnlyClosed is True then computed faces must belong to closed Shells. Adaptive 2D Gauss integration is used. Parameter IsUseSpan says if it is necessary to define spans on a face. This option has an effect only for BSpline faces. Parameter Eps sets maximal relative error of computed property for each face. Error is delivered by the adaptive Gauss-Kronrod method of integral computation that is used for properties computation. Method returns estimation of relative error reached for whole shape. Returns negative value if the computation is failed.
+
+    :param S:
+    :type S: TopoDS_Shape &
+    :param VProps:
+    :type VProps: GProp_GProps &
+    :param Eps: default value is 0.001
+    :type Eps: float
+    :param OnlyClosed: default value is Standard_False
+    :type OnlyClosed: bool
+    :param IsUseSpan: default value is Standard_False
+    :type IsUseSpan: bool
+    :param CGFlag: default value is Standard_False
+    :type CGFlag: bool
+    :param IFlag: default value is Standard_False
+    :type IFlag: bool
+    :rtype: float
+
+    * Updates <VProps> with the shape <S>, that contains its pricipal properties. The volume properties of all the FORWARD and REVERSED faces in <S> are computed. If OnlyClosed is True then computed faces must belong to closed Shells. Adaptive 2D Gauss integration is used. Parameter IsUseSpan says if it is necessary to define spans on a face. This option has an effect only for BSpline faces. Parameter Eps sets maximal relative error of computed property for each face. Error is delivered by the adaptive Gauss-Kronrod method of integral computation that is used for properties computation. Method returns estimation of relative error reached for whole shape. Returns negative value if the computation is failed.
+
+    :param S:
+    :type S: TopoDS_Shape &
+    :param VProps:
+    :type VProps: GProp_GProps &
+    :param Eps: default value is 0.001
+    :type Eps: float
+    :param OnlyClosed: default value is Standard_False
+    :type OnlyClosed: bool
+    :param IsUseSpan: default value is Standard_False
+    :type IsUseSpan: bool
+    :param CGFlag: default value is Standard_False
+    :type CGFlag: bool
+    :param IFlag: default value is Standard_False
+    :type IFlag: bool
+    :rtype: float
+
+    * Updates <VProps> with the shape <S>, that contains its pricipal properties. The volume properties of all the FORWARD and REVERSED faces in <S> are computed. If OnlyClosed is True then computed faces must belong to closed Shells. Adaptive 2D Gauss integration is used. Parameter IsUseSpan says if it is necessary to define spans on a face. This option has an effect only for BSpline faces. Parameter Eps sets maximal relative error of computed property for each face. Error is delivered by the adaptive Gauss-Kronrod method of integral computation that is used for properties computation. Method returns estimation of relative error reached for whole shape. Returns negative value if the computation is failed.
+
+    :param S:
+    :type S: TopoDS_Shape &
+    :param VProps:
+    :type VProps: GProp_GProps &
+    :param Eps: default value is 0.001
+    :type Eps: float
+    :param OnlyClosed: default value is Standard_False
+    :type OnlyClosed: bool
+    :param IsUseSpan: default value is Standard_False
+    :type IsUseSpan: bool
+    :param CGFlag: default value is Standard_False
+    :type CGFlag: bool
+    :param IFlag: default value is Standard_False
+    :type IFlag: bool
+    :rtype: float
+
+    :param S:
+    :type S: TopoDS_Shape &
+    :param VProps:
+    :type VProps: GProp_GProps &
+    :param thePln:
+    :type thePln: gp_Pln
+    :param Eps: default value is 0.001
+    :type Eps: float
+    :param OnlyClosed: default value is Standard_False
+    :type OnlyClosed: bool
+    :param IsUseSpan: default value is Standard_False
+    :type IsUseSpan: bool
+    :param CGFlag: default value is Standard_False
+    :type CGFlag: bool
+    :param IFlag: default value is Standard_False
+    :type IFlag: bool
+    :rtype: float
+
+    :param S:
+    :type S: TopoDS_Shape &
+    :param VProps:
+    :type VProps: GProp_GProps &
+    :param thePln:
+    :type thePln: gp_Pln
+    :param Eps: default value is 0.001
+    :type Eps: float
+    :param OnlyClosed: default value is Standard_False
+    :type OnlyClosed: bool
+    :param IsUseSpan: default value is Standard_False
+    :type IsUseSpan: bool
+    :param CGFlag: default value is Standard_False
+    :type CGFlag: bool
+    :param IFlag: default value is Standard_False
+    :type IFlag: bool
+    :rtype: float
+
+    :param S:
+    :type S: TopoDS_Shape &
+    :param VProps:
+    :type VProps: GProp_GProps &
+    :param thePln:
+    :type thePln: gp_Pln
+    :param Eps: default value is 0.001
+    :type Eps: float
+    :param OnlyClosed: default value is Standard_False
+    :type OnlyClosed: bool
+    :param IsUseSpan: default value is Standard_False
+    :type IsUseSpan: bool
+    :param CGFlag: default value is Standard_False
+    :type CGFlag: bool
+    :param IFlag: default value is Standard_False
+    :type IFlag: bool
+    :rtype: float
+
+    :param S:
+    :type S: TopoDS_Shape &
+    :param VProps:
+    :type VProps: GProp_GProps &
+    :param thePln:
+    :type thePln: gp_Pln
+    :param Eps: default value is 0.001
+    :type Eps: float
+    :param OnlyClosed: default value is Standard_False
+    :type OnlyClosed: bool
+    :param IsUseSpan: default value is Standard_False
+    :type IsUseSpan: bool
+    :param CGFlag: default value is Standard_False
+    :type CGFlag: bool
+    :param IFlag: default value is Standard_False
+    :type IFlag: bool
+    :rtype: float
+
+    :param S:
+    :type S: TopoDS_Shape &
+    :param VProps:
+    :type VProps: GProp_GProps &
+    :param thePln:
+    :type thePln: gp_Pln
     :param Eps: default value is 0.001
     :type Eps: float
     :param OnlyClosed: default value is Standard_False
@@ -367,7 +766,7 @@ class BRepGProp_Cinert(OCC.GProp.GProp_GProps):
 
         """
         _BRepGProp.BRepGProp_Cinert_swiginit(self,_BRepGProp.new_BRepGProp_Cinert(*args))
-    def SetLocation(self, *args) -> "void" :
+    def SetLocation(self, *args):
         """
         :param CLocation:
         :type CLocation: gp_Pnt
@@ -376,7 +775,7 @@ class BRepGProp_Cinert(OCC.GProp.GProp_GProps):
         """
         return _BRepGProp.BRepGProp_Cinert_SetLocation(self, *args)
 
-    def Perform(self, *args) -> "void" :
+    def Perform(self, *args):
         """
         :param C:
         :type C: BRepAdaptor_Curve &
@@ -416,16 +815,16 @@ class BRepGProp_Domain(object):
 
         """
         _BRepGProp.BRepGProp_Domain_swiginit(self,_BRepGProp.new_BRepGProp_Domain(*args))
-    def More(self, *args) -> "Standard_Boolean" :
+    def More(self):
         """
         * Returns True if there is another arc of curve in the list.
 
         :rtype: bool
 
         """
-        return _BRepGProp.BRepGProp_Domain_More(self, *args)
+        return _BRepGProp.BRepGProp_Domain_More(self)
 
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
         * Initializes the domain with the face.
 
@@ -440,23 +839,23 @@ class BRepGProp_Domain(object):
         """
         return _BRepGProp.BRepGProp_Domain_Init(self, *args)
 
-    def Value(self, *args) -> "TopoDS_Edge const" :
+    def Value(self):
         """
         * Returns the current edge.
 
         :rtype: TopoDS_Edge
 
         """
-        return _BRepGProp.BRepGProp_Domain_Value(self, *args)
+        return _BRepGProp.BRepGProp_Domain_Value(self)
 
-    def Next(self, *args) -> "void" :
+    def Next(self):
         """
         * Sets the index of the arc iterator to the next arc of curve.
 
         :rtype: None
 
         """
-        return _BRepGProp.BRepGProp_Domain_Next(self, *args)
+        return _BRepGProp.BRepGProp_Domain_Next(self)
 
     def __del__(self):
     	try:
@@ -476,8 +875,9 @@ BRepGProp_Domain_swigregister(BRepGProp_Domain)
 
 class BRepGProp_EdgeTool(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
+    def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def FirstParameter(*args) -> "Standard_Real" :
+    def FirstParameter(*args):
         """
         * Returns the parametric value of the start point of the curve. The curve is oriented from the start point to the end point.
 
@@ -489,7 +889,7 @@ class BRepGProp_EdgeTool(object):
         return _BRepGProp.BRepGProp_EdgeTool_FirstParameter(*args)
 
     FirstParameter = staticmethod(FirstParameter)
-    def LastParameter(*args) -> "Standard_Real" :
+    def LastParameter(*args):
         """
         * Returns the parametric value of the end point of the curve. The curve is oriented from the start point to the end point.
 
@@ -501,7 +901,7 @@ class BRepGProp_EdgeTool(object):
         return _BRepGProp.BRepGProp_EdgeTool_LastParameter(*args)
 
     LastParameter = staticmethod(LastParameter)
-    def IntegrationOrder(*args) -> "Standard_Integer" :
+    def IntegrationOrder(*args):
         """
         * Returns the number of Gauss points required to do the integration with a good accuracy using the Gauss method. For a polynomial curve of degree n the maxima of accuracy is obtained with an order of integration equal to 2*n-1.
 
@@ -513,7 +913,7 @@ class BRepGProp_EdgeTool(object):
         return _BRepGProp.BRepGProp_EdgeTool_IntegrationOrder(*args)
 
     IntegrationOrder = staticmethod(IntegrationOrder)
-    def Value(*args) -> "gp_Pnt" :
+    def Value(*args):
         """
         * Returns the point of parameter U on the loaded curve.
 
@@ -527,7 +927,7 @@ class BRepGProp_EdgeTool(object):
         return _BRepGProp.BRepGProp_EdgeTool_Value(*args)
 
     Value = staticmethod(Value)
-    def D1(*args) -> "void" :
+    def D1(*args):
         """
         * Returns the point of parameter U and the first derivative at this point.
 
@@ -545,7 +945,7 @@ class BRepGProp_EdgeTool(object):
         return _BRepGProp.BRepGProp_EdgeTool_D1(*args)
 
     D1 = staticmethod(D1)
-    def NbIntervals(*args) -> "Standard_Integer" :
+    def NbIntervals(*args):
         """
         * Returns the number of intervals for continuity <S>. May be one if Continuity(me) >= <S>
 
@@ -559,7 +959,7 @@ class BRepGProp_EdgeTool(object):
         return _BRepGProp.BRepGProp_EdgeTool_NbIntervals(*args)
 
     NbIntervals = staticmethod(NbIntervals)
-    def Intervals(*args) -> "void" :
+    def Intervals(*args):
         """
         * Stores in <T> the parameters bounding the intervals of continuity <S>.  The array must provide enough room to accomodate for the parameters. i.e. T.Length() > NbIntervals()
 
@@ -575,8 +975,6 @@ class BRepGProp_EdgeTool(object):
         return _BRepGProp.BRepGProp_EdgeTool_Intervals(*args)
 
     Intervals = staticmethod(Intervals)
-    def __init__(self): 
-        _BRepGProp.BRepGProp_EdgeTool_swiginit(self,_BRepGProp.new_BRepGProp_EdgeTool())
     def __del__(self):
     	try:
     		self.thisown = False
@@ -589,7 +987,7 @@ BRepGProp_EdgeTool._kill_pointed = new_instancemethod(_BRepGProp.BRepGProp_EdgeT
 BRepGProp_EdgeTool_swigregister = _BRepGProp.BRepGProp_EdgeTool_swigregister
 BRepGProp_EdgeTool_swigregister(BRepGProp_EdgeTool)
 
-def BRepGProp_EdgeTool_FirstParameter(*args) -> "Standard_Real" :
+def BRepGProp_EdgeTool_FirstParameter(*args):
   """
     * Returns the parametric value of the start point of the curve. The curve is oriented from the start point to the end point.
 
@@ -600,7 +998,7 @@ def BRepGProp_EdgeTool_FirstParameter(*args) -> "Standard_Real" :
     """
   return _BRepGProp.BRepGProp_EdgeTool_FirstParameter(*args)
 
-def BRepGProp_EdgeTool_LastParameter(*args) -> "Standard_Real" :
+def BRepGProp_EdgeTool_LastParameter(*args):
   """
     * Returns the parametric value of the end point of the curve. The curve is oriented from the start point to the end point.
 
@@ -611,7 +1009,7 @@ def BRepGProp_EdgeTool_LastParameter(*args) -> "Standard_Real" :
     """
   return _BRepGProp.BRepGProp_EdgeTool_LastParameter(*args)
 
-def BRepGProp_EdgeTool_IntegrationOrder(*args) -> "Standard_Integer" :
+def BRepGProp_EdgeTool_IntegrationOrder(*args):
   """
     * Returns the number of Gauss points required to do the integration with a good accuracy using the Gauss method. For a polynomial curve of degree n the maxima of accuracy is obtained with an order of integration equal to 2*n-1.
 
@@ -622,7 +1020,7 @@ def BRepGProp_EdgeTool_IntegrationOrder(*args) -> "Standard_Integer" :
     """
   return _BRepGProp.BRepGProp_EdgeTool_IntegrationOrder(*args)
 
-def BRepGProp_EdgeTool_Value(*args) -> "gp_Pnt" :
+def BRepGProp_EdgeTool_Value(*args):
   """
     * Returns the point of parameter U on the loaded curve.
 
@@ -635,7 +1033,7 @@ def BRepGProp_EdgeTool_Value(*args) -> "gp_Pnt" :
     """
   return _BRepGProp.BRepGProp_EdgeTool_Value(*args)
 
-def BRepGProp_EdgeTool_D1(*args) -> "void" :
+def BRepGProp_EdgeTool_D1(*args):
   """
     * Returns the point of parameter U and the first derivative at this point.
 
@@ -652,7 +1050,7 @@ def BRepGProp_EdgeTool_D1(*args) -> "void" :
     """
   return _BRepGProp.BRepGProp_EdgeTool_D1(*args)
 
-def BRepGProp_EdgeTool_NbIntervals(*args) -> "Standard_Integer" :
+def BRepGProp_EdgeTool_NbIntervals(*args):
   """
     * Returns the number of intervals for continuity <S>. May be one if Continuity(me) >= <S>
 
@@ -665,7 +1063,7 @@ def BRepGProp_EdgeTool_NbIntervals(*args) -> "Standard_Integer" :
     """
   return _BRepGProp.BRepGProp_EdgeTool_NbIntervals(*args)
 
-def BRepGProp_EdgeTool_Intervals(*args) -> "void" :
+def BRepGProp_EdgeTool_Intervals(*args):
   """
     * Stores in <T> the parameters bounding the intervals of continuity <S>.  The array must provide enough room to accomodate for the parameters. i.e. T.Length() > NbIntervals()
 
@@ -691,6 +1089,20 @@ class BRepGProp_Face(object):
         :type IsUseSpan: bool
         :rtype: None
 
+        * Constructor. Initializes the object with a flag IsUseSpan that says if it is necessary to define spans on a face. This option has an effect only for BSpline faces. Spans are returned by the methods GetUKnots and GetTKnots.
+
+        :param IsUseSpan: default value is Standard_False
+        :type IsUseSpan: bool
+        :rtype: None
+
+        * Constructor. Initializes the object with the face and the flag IsUseSpan that says if it is necessary to define spans on a face. This option has an effect only for BSpline faces. Spans are returned by the methods GetUKnots and GetTKnots.
+
+        :param F:
+        :type F: TopoDS_Face &
+        :param IsUseSpan: default value is Standard_False
+        :type IsUseSpan: bool
+        :rtype: None
+
         * Constructor. Initializes the object with the face and the flag IsUseSpan that says if it is necessary to define spans on a face. This option has an effect only for BSpline faces. Spans are returned by the methods GetUKnots and GetTKnots.
 
         :param F:
@@ -701,23 +1113,23 @@ class BRepGProp_Face(object):
 
         """
         _BRepGProp.BRepGProp_Face_swiginit(self,_BRepGProp.new_BRepGProp_Face(*args))
-    def VIntegrationOrder(self, *args) -> "Standard_Integer" :
+    def VIntegrationOrder(self):
         """
         :rtype: int
 
         """
-        return _BRepGProp.BRepGProp_Face_VIntegrationOrder(self, *args)
+        return _BRepGProp.BRepGProp_Face_VIntegrationOrder(self)
 
-    def NaturalRestriction(self, *args) -> "Standard_Boolean" :
+    def NaturalRestriction(self):
         """
         * Returns Standard_True if the face is not trimmed.
 
         :rtype: bool
 
         """
-        return _BRepGProp.BRepGProp_Face_NaturalRestriction(self, *args)
+        return _BRepGProp.BRepGProp_Face_NaturalRestriction(self)
 
-    def Value2d(self, *args) -> "gp_Pnt2d" :
+    def Value2d(self, *args):
         """
         * Returns the value of the boundary curve of the face.
 
@@ -728,7 +1140,7 @@ class BRepGProp_Face(object):
         """
         return _BRepGProp.BRepGProp_Face_Value2d(self, *args)
 
-    def SIntOrder(self, *args) -> "Standard_Integer" :
+    def SIntOrder(self, *args):
         """
         :param Eps:
         :type Eps: float
@@ -737,21 +1149,21 @@ class BRepGProp_Face(object):
         """
         return _BRepGProp.BRepGProp_Face_SIntOrder(self, *args)
 
-    def SVIntSubs(self, *args) -> "Standard_Integer" :
+    def SVIntSubs(self):
         """
         :rtype: int
 
         """
-        return _BRepGProp.BRepGProp_Face_SVIntSubs(self, *args)
+        return _BRepGProp.BRepGProp_Face_SVIntSubs(self)
 
-    def SUIntSubs(self, *args) -> "Standard_Integer" :
+    def SUIntSubs(self):
         """
         :rtype: int
 
         """
-        return _BRepGProp.BRepGProp_Face_SUIntSubs(self, *args)
+        return _BRepGProp.BRepGProp_Face_SUIntSubs(self)
 
-    def UKnots(self, *args) -> "void" :
+    def UKnots(self, *args):
         """
         :param Knots:
         :type Knots: TColStd_Array1OfReal &
@@ -760,7 +1172,7 @@ class BRepGProp_Face(object):
         """
         return _BRepGProp.BRepGProp_Face_UKnots(self, *args)
 
-    def VKnots(self, *args) -> "void" :
+    def VKnots(self, *args):
         """
         :param Knots:
         :type Knots: TColStd_Array1OfReal &
@@ -769,7 +1181,7 @@ class BRepGProp_Face(object):
         """
         return _BRepGProp.BRepGProp_Face_VKnots(self, *args)
 
-    def LIntOrder(self, *args) -> "Standard_Integer" :
+    def LIntOrder(self, *args):
         """
         :param Eps:
         :type Eps: float
@@ -778,14 +1190,14 @@ class BRepGProp_Face(object):
         """
         return _BRepGProp.BRepGProp_Face_LIntOrder(self, *args)
 
-    def LIntSubs(self, *args) -> "Standard_Integer" :
+    def LIntSubs(self):
         """
         :rtype: int
 
         """
-        return _BRepGProp.BRepGProp_Face_LIntSubs(self, *args)
+        return _BRepGProp.BRepGProp_Face_LIntSubs(self)
 
-    def LKnots(self, *args) -> "void" :
+    def LKnots(self, *args):
         """
         :param Knots:
         :type Knots: TColStd_Array1OfReal &
@@ -794,16 +1206,16 @@ class BRepGProp_Face(object):
         """
         return _BRepGProp.BRepGProp_Face_LKnots(self, *args)
 
-    def UIntegrationOrder(self, *args) -> "Standard_Integer" :
+    def UIntegrationOrder(self):
         """
         * Returns the number of points required to do the integration in the U parametric direction with a good accuracy.
 
         :rtype: int
 
         """
-        return _BRepGProp.BRepGProp_Face_UIntegrationOrder(self, *args)
+        return _BRepGProp.BRepGProp_Face_UIntegrationOrder(self)
 
-    def Bounds(self, *args) -> "void" :
+    def Bounds(self):
         """
         * Returns the parametric bounds of the Face.
 
@@ -818,9 +1230,9 @@ class BRepGProp_Face(object):
         :rtype: None
 
         """
-        return _BRepGProp.BRepGProp_Face_Bounds(self, *args)
+        return _BRepGProp.BRepGProp_Face_Bounds(self)
 
-    def Normal(self, *args) -> "void" :
+    def Normal(self, *args):
         """
         * Computes the point of parameter U, V on the Face <S> and the normal to the face at this point.
 
@@ -837,34 +1249,34 @@ class BRepGProp_Face(object):
         """
         return _BRepGProp.BRepGProp_Face_Normal(self, *args)
 
-    def FirstParameter(self, *args) -> "Standard_Real" :
+    def FirstParameter(self):
         """
         * Returns the parametric value of the start point of the current arc of curve.
 
         :rtype: float
 
         """
-        return _BRepGProp.BRepGProp_Face_FirstParameter(self, *args)
+        return _BRepGProp.BRepGProp_Face_FirstParameter(self)
 
-    def LastParameter(self, *args) -> "Standard_Real" :
+    def LastParameter(self):
         """
         * Returns the parametric value of the end point of the current arc of curve.
 
         :rtype: float
 
         """
-        return _BRepGProp.BRepGProp_Face_LastParameter(self, *args)
+        return _BRepGProp.BRepGProp_Face_LastParameter(self)
 
-    def IntegrationOrder(self, *args) -> "Standard_Integer" :
+    def IntegrationOrder(self):
         """
         * Returns the number of points required to do the integration along the parameter of curve.
 
         :rtype: int
 
         """
-        return _BRepGProp.BRepGProp_Face_IntegrationOrder(self, *args)
+        return _BRepGProp.BRepGProp_Face_IntegrationOrder(self)
 
-    def D12d(self, *args) -> "void" :
+    def D12d(self, *args):
         """
         * Returns the point of parameter U and the first derivative at this point of a boundary curve.
 
@@ -879,7 +1291,7 @@ class BRepGProp_Face(object):
         """
         return _BRepGProp.BRepGProp_Face_D12d(self, *args)
 
-    def Load(self, *args) -> "void" :
+    def Load(self, *args):
         """
         :param F:
         :type F: TopoDS_Face &
@@ -902,7 +1314,7 @@ class BRepGProp_Face(object):
         """
         return _BRepGProp.BRepGProp_Face_Load(self, *args)
 
-    def GetUKnots(self, *args) -> "void" :
+    def GetUKnots(self, *args):
         """
         * Returns an array of U knots of the face. The first and last elements of the array will be theUMin and theUMax. The middle elements will be the U Knots of the face greater then theUMin and lower then theUMax in increasing order. If the face is not a BSpline, the array initialized with theUMin and theUMax only.
 
@@ -917,7 +1329,7 @@ class BRepGProp_Face(object):
         """
         return _BRepGProp.BRepGProp_Face_GetUKnots(self, *args)
 
-    def GetTKnots(self, *args) -> "void" :
+    def GetTKnots(self, *args):
         """
         * Returns an array of combination of T knots of the arc and V knots of the face. The first and last elements of the array will be theTMin and theTMax. The middle elements will be the Knots of the arc and the values of parameters of arc on which the value points have V coordinates close to V knots of face. All the parameter will be greater then theTMin and lower then theTMax in increasing order. If the face is not a BSpline, the array initialized with theTMin and theTMax only.
 
@@ -1006,7 +1418,7 @@ class BRepGProp_Sinert(OCC.GProp.GProp_GProps):
 
         """
         _BRepGProp.BRepGProp_Sinert_swiginit(self,_BRepGProp.new_BRepGProp_Sinert(*args))
-    def SetLocation(self, *args) -> "void" :
+    def SetLocation(self, *args):
         """
         :param SLocation:
         :type SLocation: gp_Pnt
@@ -1015,7 +1427,7 @@ class BRepGProp_Sinert(OCC.GProp.GProp_GProps):
         """
         return _BRepGProp.BRepGProp_Sinert_SetLocation(self, *args)
 
-    def Perform(self, *args) -> "Standard_Real" :
+    def Perform(self, *args):
         """
         :param S:
         :type S: BRepGProp_Face &
@@ -1044,12 +1456,12 @@ class BRepGProp_Sinert(OCC.GProp.GProp_GProps):
         """
         return _BRepGProp.BRepGProp_Sinert_Perform(self, *args)
 
-    def GetEpsilon(self, *args) -> "Standard_Real" :
+    def GetEpsilon(self):
         """
         :rtype: float
 
         """
-        return _BRepGProp.BRepGProp_Sinert_GetEpsilon(self, *args)
+        return _BRepGProp.BRepGProp_Sinert_GetEpsilon(self)
 
     def __del__(self):
     	try:
@@ -1087,23 +1499,23 @@ class BRepGProp_TFunctionOfVinertGK(object):
 
         """
         _BRepGProp.BRepGProp_TFunctionOfVinertGK_swiginit(self,_BRepGProp.new_BRepGProp_TFunctionOfVinertGK(*args))
-    def Init(self, *args) -> "void" :
+    def Init(self):
         """
         :rtype: None
 
         """
-        return _BRepGProp.BRepGProp_TFunctionOfVinertGK_Init(self, *args)
+        return _BRepGProp.BRepGProp_TFunctionOfVinertGK_Init(self)
 
-    def SetNbKronrodPoints(self, *args) -> "void" :
+    def SetNbKronrodPoints(self, *args):
         """
         :param theNbPoints:
-        :type theNbPoints: int
+        :type theNbPoints: Standard_Integer
         :rtype: None
 
         """
         return _BRepGProp.BRepGProp_TFunctionOfVinertGK_SetNbKronrodPoints(self, *args)
 
-    def SetValueType(self, *args) -> "void" :
+    def SetValueType(self, *args):
         """
         :param aType:
         :type aType: GProp_ValueType
@@ -1112,7 +1524,7 @@ class BRepGProp_TFunctionOfVinertGK(object):
         """
         return _BRepGProp.BRepGProp_TFunctionOfVinertGK_SetValueType(self, *args)
 
-    def SetTolerance(self, *args) -> "void" :
+    def SetTolerance(self, *args):
         """
         :param aTol:
         :type aTol: float
@@ -1121,21 +1533,21 @@ class BRepGProp_TFunctionOfVinertGK(object):
         """
         return _BRepGProp.BRepGProp_TFunctionOfVinertGK_SetTolerance(self, *args)
 
-    def ErrorReached(self, *args) -> "Standard_Real" :
+    def ErrorReached(self):
         """
         :rtype: float
 
         """
-        return _BRepGProp.BRepGProp_TFunctionOfVinertGK_ErrorReached(self, *args)
+        return _BRepGProp.BRepGProp_TFunctionOfVinertGK_ErrorReached(self)
 
-    def AbsolutError(self, *args) -> "Standard_Real" :
+    def AbsolutError(self):
         """
         :rtype: float
 
         """
-        return _BRepGProp.BRepGProp_TFunctionOfVinertGK_AbsolutError(self, *args)
+        return _BRepGProp.BRepGProp_TFunctionOfVinertGK_AbsolutError(self)
 
-    def Value(self, *args) -> "Standard_Boolean" :
+    def Value(self, *args):
         """
         :param X:
         :type X: float
@@ -1146,12 +1558,12 @@ class BRepGProp_TFunctionOfVinertGK(object):
         """
         return _BRepGProp.BRepGProp_TFunctionOfVinertGK_Value(self, *args)
 
-    def GetStateNumber(self, *args) -> "Standard_Integer" :
+    def GetStateNumber(self):
         """
         :rtype: int
 
         """
-        return _BRepGProp.BRepGProp_TFunctionOfVinertGK_GetStateNumber(self, *args)
+        return _BRepGProp.BRepGProp_TFunctionOfVinertGK_GetStateNumber(self)
 
     def __del__(self):
     	try:
@@ -1190,7 +1602,7 @@ class BRepGProp_UFunctionOfVinertGK(object):
 
         """
         _BRepGProp.BRepGProp_UFunctionOfVinertGK_swiginit(self,_BRepGProp.new_BRepGProp_UFunctionOfVinertGK(*args))
-    def SetValueType(self, *args) -> "void" :
+    def SetValueType(self, *args):
         """
         :param theType:
         :type theType: GProp_ValueType
@@ -1199,7 +1611,7 @@ class BRepGProp_UFunctionOfVinertGK(object):
         """
         return _BRepGProp.BRepGProp_UFunctionOfVinertGK_SetValueType(self, *args)
 
-    def SetVParam(self, *args) -> "void" :
+    def SetVParam(self, *args):
         """
         :param theVParam:
         :type theVParam: float
@@ -1208,7 +1620,7 @@ class BRepGProp_UFunctionOfVinertGK(object):
         """
         return _BRepGProp.BRepGProp_UFunctionOfVinertGK_SetVParam(self, *args)
 
-    def Value(self, *args) -> "Standard_Boolean" :
+    def Value(self, *args):
         """
         :param X:
         :type X: float
@@ -1355,7 +1767,7 @@ class BRepGProp_Vinert(OCC.GProp.GProp_GProps):
 
         """
         _BRepGProp.BRepGProp_Vinert_swiginit(self,_BRepGProp.new_BRepGProp_Vinert(*args))
-    def SetLocation(self, *args) -> "void" :
+    def SetLocation(self, *args):
         """
         :param VLocation:
         :type VLocation: gp_Pnt
@@ -1364,7 +1776,7 @@ class BRepGProp_Vinert(OCC.GProp.GProp_GProps):
         """
         return _BRepGProp.BRepGProp_Vinert_SetLocation(self, *args)
 
-    def Perform(self, *args) -> "Standard_Real" :
+    def Perform(self, *args):
         """
         :param S:
         :type S: BRepGProp_Face &
@@ -1457,12 +1869,12 @@ class BRepGProp_Vinert(OCC.GProp.GProp_GProps):
         """
         return _BRepGProp.BRepGProp_Vinert_Perform(self, *args)
 
-    def GetEpsilon(self, *args) -> "Standard_Real" :
+    def GetEpsilon(self):
         """
         :rtype: float
 
         """
-        return _BRepGProp.BRepGProp_Vinert_GetEpsilon(self, *args)
+        return _BRepGProp.BRepGProp_Vinert_GetEpsilon(self)
 
     def __del__(self):
     	try:
@@ -1500,6 +1912,84 @@ class BRepGProp_VinertGK(OCC.GProp.GProp_GProps):
 
         :param theSurface:
         :type theSurface: BRepGProp_Face &
+        :param theLocation:
+        :type theLocation: gp_Pnt
+        :param theTolerance: default value is 0.001
+        :type theTolerance: float
+        :param theCGFlag: default value is Standard_False
+        :type theCGFlag: bool
+        :param theIFlag: default value is Standard_False
+        :type theIFlag: bool
+        :rtype: None
+
+        :param theSurface:
+        :type theSurface: BRepGProp_Face &
+        :param theLocation:
+        :type theLocation: gp_Pnt
+        :param theTolerance: default value is 0.001
+        :type theTolerance: float
+        :param theCGFlag: default value is Standard_False
+        :type theCGFlag: bool
+        :param theIFlag: default value is Standard_False
+        :type theIFlag: bool
+        :rtype: None
+
+        :param theSurface:
+        :type theSurface: BRepGProp_Face &
+        :param theLocation:
+        :type theLocation: gp_Pnt
+        :param theTolerance: default value is 0.001
+        :type theTolerance: float
+        :param theCGFlag: default value is Standard_False
+        :type theCGFlag: bool
+        :param theIFlag: default value is Standard_False
+        :type theIFlag: bool
+        :rtype: None
+
+        :param theSurface:
+        :type theSurface: BRepGProp_Face &
+        :param thePoint:
+        :type thePoint: gp_Pnt
+        :param theLocation:
+        :type theLocation: gp_Pnt
+        :param theTolerance: default value is 0.001
+        :type theTolerance: float
+        :param theCGFlag: default value is Standard_False
+        :type theCGFlag: bool
+        :param theIFlag: default value is Standard_False
+        :type theIFlag: bool
+        :rtype: None
+
+        :param theSurface:
+        :type theSurface: BRepGProp_Face &
+        :param thePoint:
+        :type thePoint: gp_Pnt
+        :param theLocation:
+        :type theLocation: gp_Pnt
+        :param theTolerance: default value is 0.001
+        :type theTolerance: float
+        :param theCGFlag: default value is Standard_False
+        :type theCGFlag: bool
+        :param theIFlag: default value is Standard_False
+        :type theIFlag: bool
+        :rtype: None
+
+        :param theSurface:
+        :type theSurface: BRepGProp_Face &
+        :param thePoint:
+        :type thePoint: gp_Pnt
+        :param theLocation:
+        :type theLocation: gp_Pnt
+        :param theTolerance: default value is 0.001
+        :type theTolerance: float
+        :param theCGFlag: default value is Standard_False
+        :type theCGFlag: bool
+        :param theIFlag: default value is Standard_False
+        :type theIFlag: bool
+        :rtype: None
+
+        :param theSurface:
+        :type theSurface: BRepGProp_Face &
         :param thePoint:
         :type thePoint: gp_Pnt
         :param theLocation:
@@ -1530,6 +2020,48 @@ class BRepGProp_VinertGK(OCC.GProp.GProp_GProps):
         :type theSurface: BRepGProp_Face &
         :param theDomain:
         :type theDomain: BRepGProp_Domain &
+        :param theLocation:
+        :type theLocation: gp_Pnt
+        :param theTolerance: default value is 0.001
+        :type theTolerance: float
+        :param theCGFlag: default value is Standard_False
+        :type theCGFlag: bool
+        :param theIFlag: default value is Standard_False
+        :type theIFlag: bool
+        :rtype: None
+
+        :param theSurface:
+        :type theSurface: BRepGProp_Face &
+        :param theDomain:
+        :type theDomain: BRepGProp_Domain &
+        :param theLocation:
+        :type theLocation: gp_Pnt
+        :param theTolerance: default value is 0.001
+        :type theTolerance: float
+        :param theCGFlag: default value is Standard_False
+        :type theCGFlag: bool
+        :param theIFlag: default value is Standard_False
+        :type theIFlag: bool
+        :rtype: None
+
+        :param theSurface:
+        :type theSurface: BRepGProp_Face &
+        :param theDomain:
+        :type theDomain: BRepGProp_Domain &
+        :param theLocation:
+        :type theLocation: gp_Pnt
+        :param theTolerance: default value is 0.001
+        :type theTolerance: float
+        :param theCGFlag: default value is Standard_False
+        :type theCGFlag: bool
+        :param theIFlag: default value is Standard_False
+        :type theIFlag: bool
+        :rtype: None
+
+        :param theSurface:
+        :type theSurface: BRepGProp_Face &
+        :param theDomain:
+        :type theDomain: BRepGProp_Domain &
         :param thePoint:
         :type thePoint: gp_Pnt
         :param theLocation:
@@ -1544,6 +2076,144 @@ class BRepGProp_VinertGK(OCC.GProp.GProp_GProps):
 
         :param theSurface:
         :type theSurface: BRepGProp_Face &
+        :param theDomain:
+        :type theDomain: BRepGProp_Domain &
+        :param thePoint:
+        :type thePoint: gp_Pnt
+        :param theLocation:
+        :type theLocation: gp_Pnt
+        :param theTolerance: default value is 0.001
+        :type theTolerance: float
+        :param theCGFlag: default value is Standard_False
+        :type theCGFlag: bool
+        :param theIFlag: default value is Standard_False
+        :type theIFlag: bool
+        :rtype: None
+
+        :param theSurface:
+        :type theSurface: BRepGProp_Face &
+        :param theDomain:
+        :type theDomain: BRepGProp_Domain &
+        :param thePoint:
+        :type thePoint: gp_Pnt
+        :param theLocation:
+        :type theLocation: gp_Pnt
+        :param theTolerance: default value is 0.001
+        :type theTolerance: float
+        :param theCGFlag: default value is Standard_False
+        :type theCGFlag: bool
+        :param theIFlag: default value is Standard_False
+        :type theIFlag: bool
+        :rtype: None
+
+        :param theSurface:
+        :type theSurface: BRepGProp_Face &
+        :param theDomain:
+        :type theDomain: BRepGProp_Domain &
+        :param thePoint:
+        :type thePoint: gp_Pnt
+        :param theLocation:
+        :type theLocation: gp_Pnt
+        :param theTolerance: default value is 0.001
+        :type theTolerance: float
+        :param theCGFlag: default value is Standard_False
+        :type theCGFlag: bool
+        :param theIFlag: default value is Standard_False
+        :type theIFlag: bool
+        :rtype: None
+
+        :param theSurface:
+        :type theSurface: BRepGProp_Face &
+        :param thePlane:
+        :type thePlane: gp_Pln
+        :param theLocation:
+        :type theLocation: gp_Pnt
+        :param theTolerance: default value is 0.001
+        :type theTolerance: float
+        :param theCGFlag: default value is Standard_False
+        :type theCGFlag: bool
+        :param theIFlag: default value is Standard_False
+        :type theIFlag: bool
+        :rtype: None
+
+        :param theSurface:
+        :type theSurface: BRepGProp_Face &
+        :param thePlane:
+        :type thePlane: gp_Pln
+        :param theLocation:
+        :type theLocation: gp_Pnt
+        :param theTolerance: default value is 0.001
+        :type theTolerance: float
+        :param theCGFlag: default value is Standard_False
+        :type theCGFlag: bool
+        :param theIFlag: default value is Standard_False
+        :type theIFlag: bool
+        :rtype: None
+
+        :param theSurface:
+        :type theSurface: BRepGProp_Face &
+        :param thePlane:
+        :type thePlane: gp_Pln
+        :param theLocation:
+        :type theLocation: gp_Pnt
+        :param theTolerance: default value is 0.001
+        :type theTolerance: float
+        :param theCGFlag: default value is Standard_False
+        :type theCGFlag: bool
+        :param theIFlag: default value is Standard_False
+        :type theIFlag: bool
+        :rtype: None
+
+        :param theSurface:
+        :type theSurface: BRepGProp_Face &
+        :param thePlane:
+        :type thePlane: gp_Pln
+        :param theLocation:
+        :type theLocation: gp_Pnt
+        :param theTolerance: default value is 0.001
+        :type theTolerance: float
+        :param theCGFlag: default value is Standard_False
+        :type theCGFlag: bool
+        :param theIFlag: default value is Standard_False
+        :type theIFlag: bool
+        :rtype: None
+
+        :param theSurface:
+        :type theSurface: BRepGProp_Face &
+        :param theDomain:
+        :type theDomain: BRepGProp_Domain &
+        :param thePlane:
+        :type thePlane: gp_Pln
+        :param theLocation:
+        :type theLocation: gp_Pnt
+        :param theTolerance: default value is 0.001
+        :type theTolerance: float
+        :param theCGFlag: default value is Standard_False
+        :type theCGFlag: bool
+        :param theIFlag: default value is Standard_False
+        :type theIFlag: bool
+        :rtype: None
+
+        :param theSurface:
+        :type theSurface: BRepGProp_Face &
+        :param theDomain:
+        :type theDomain: BRepGProp_Domain &
+        :param thePlane:
+        :type thePlane: gp_Pln
+        :param theLocation:
+        :type theLocation: gp_Pnt
+        :param theTolerance: default value is 0.001
+        :type theTolerance: float
+        :param theCGFlag: default value is Standard_False
+        :type theCGFlag: bool
+        :param theIFlag: default value is Standard_False
+        :type theIFlag: bool
+        :rtype: None
+
+        :param theSurface:
+        :type theSurface: BRepGProp_Face &
+        :param theDomain:
+        :type theDomain: BRepGProp_Domain &
         :param thePlane:
         :type thePlane: gp_Pln
         :param theLocation:
@@ -1574,7 +2244,7 @@ class BRepGProp_VinertGK(OCC.GProp.GProp_GProps):
 
         """
         _BRepGProp.BRepGProp_VinertGK_swiginit(self,_BRepGProp.new_BRepGProp_VinertGK(*args))
-    def SetLocation(self, *args) -> "void" :
+    def SetLocation(self, *args):
         """
         :param theLocation:
         :type theLocation: gp_Pnt
@@ -1583,7 +2253,7 @@ class BRepGProp_VinertGK(OCC.GProp.GProp_GProps):
         """
         return _BRepGProp.BRepGProp_VinertGK_SetLocation(self, *args)
 
-    def Perform(self, *args) -> "Standard_Real" :
+    def Perform(self, *args):
         """
         :param theSurface:
         :type theSurface: BRepGProp_Face &
@@ -1597,6 +2267,72 @@ class BRepGProp_VinertGK(OCC.GProp.GProp_GProps):
 
         :param theSurface:
         :type theSurface: BRepGProp_Face &
+        :param theTolerance: default value is 0.001
+        :type theTolerance: float
+        :param theCGFlag: default value is Standard_False
+        :type theCGFlag: bool
+        :param theIFlag: default value is Standard_False
+        :type theIFlag: bool
+        :rtype: float
+
+        :param theSurface:
+        :type theSurface: BRepGProp_Face &
+        :param theTolerance: default value is 0.001
+        :type theTolerance: float
+        :param theCGFlag: default value is Standard_False
+        :type theCGFlag: bool
+        :param theIFlag: default value is Standard_False
+        :type theIFlag: bool
+        :rtype: float
+
+        :param theSurface:
+        :type theSurface: BRepGProp_Face &
+        :param theTolerance: default value is 0.001
+        :type theTolerance: float
+        :param theCGFlag: default value is Standard_False
+        :type theCGFlag: bool
+        :param theIFlag: default value is Standard_False
+        :type theIFlag: bool
+        :rtype: float
+
+        :param theSurface:
+        :type theSurface: BRepGProp_Face &
+        :param thePoint:
+        :type thePoint: gp_Pnt
+        :param theTolerance: default value is 0.001
+        :type theTolerance: float
+        :param theCGFlag: default value is Standard_False
+        :type theCGFlag: bool
+        :param theIFlag: default value is Standard_False
+        :type theIFlag: bool
+        :rtype: float
+
+        :param theSurface:
+        :type theSurface: BRepGProp_Face &
+        :param thePoint:
+        :type thePoint: gp_Pnt
+        :param theTolerance: default value is 0.001
+        :type theTolerance: float
+        :param theCGFlag: default value is Standard_False
+        :type theCGFlag: bool
+        :param theIFlag: default value is Standard_False
+        :type theIFlag: bool
+        :rtype: float
+
+        :param theSurface:
+        :type theSurface: BRepGProp_Face &
+        :param thePoint:
+        :type thePoint: gp_Pnt
+        :param theTolerance: default value is 0.001
+        :type theTolerance: float
+        :param theCGFlag: default value is Standard_False
+        :type theCGFlag: bool
+        :param theIFlag: default value is Standard_False
+        :type theIFlag: bool
+        :rtype: float
+
+        :param theSurface:
+        :type theSurface: BRepGProp_Face &
         :param thePoint:
         :type thePoint: gp_Pnt
         :param theTolerance: default value is 0.001
@@ -1623,6 +2359,42 @@ class BRepGProp_VinertGK(OCC.GProp.GProp_GProps):
         :type theSurface: BRepGProp_Face &
         :param theDomain:
         :type theDomain: BRepGProp_Domain &
+        :param theTolerance: default value is 0.001
+        :type theTolerance: float
+        :param theCGFlag: default value is Standard_False
+        :type theCGFlag: bool
+        :param theIFlag: default value is Standard_False
+        :type theIFlag: bool
+        :rtype: float
+
+        :param theSurface:
+        :type theSurface: BRepGProp_Face &
+        :param theDomain:
+        :type theDomain: BRepGProp_Domain &
+        :param theTolerance: default value is 0.001
+        :type theTolerance: float
+        :param theCGFlag: default value is Standard_False
+        :type theCGFlag: bool
+        :param theIFlag: default value is Standard_False
+        :type theIFlag: bool
+        :rtype: float
+
+        :param theSurface:
+        :type theSurface: BRepGProp_Face &
+        :param theDomain:
+        :type theDomain: BRepGProp_Domain &
+        :param theTolerance: default value is 0.001
+        :type theTolerance: float
+        :param theCGFlag: default value is Standard_False
+        :type theCGFlag: bool
+        :param theIFlag: default value is Standard_False
+        :type theIFlag: bool
+        :rtype: float
+
+        :param theSurface:
+        :type theSurface: BRepGProp_Face &
+        :param theDomain:
+        :type theDomain: BRepGProp_Domain &
         :param thePoint:
         :type thePoint: gp_Pnt
         :param theTolerance: default value is 0.001
@@ -1635,6 +2407,126 @@ class BRepGProp_VinertGK(OCC.GProp.GProp_GProps):
 
         :param theSurface:
         :type theSurface: BRepGProp_Face &
+        :param theDomain:
+        :type theDomain: BRepGProp_Domain &
+        :param thePoint:
+        :type thePoint: gp_Pnt
+        :param theTolerance: default value is 0.001
+        :type theTolerance: float
+        :param theCGFlag: default value is Standard_False
+        :type theCGFlag: bool
+        :param theIFlag: default value is Standard_False
+        :type theIFlag: bool
+        :rtype: float
+
+        :param theSurface:
+        :type theSurface: BRepGProp_Face &
+        :param theDomain:
+        :type theDomain: BRepGProp_Domain &
+        :param thePoint:
+        :type thePoint: gp_Pnt
+        :param theTolerance: default value is 0.001
+        :type theTolerance: float
+        :param theCGFlag: default value is Standard_False
+        :type theCGFlag: bool
+        :param theIFlag: default value is Standard_False
+        :type theIFlag: bool
+        :rtype: float
+
+        :param theSurface:
+        :type theSurface: BRepGProp_Face &
+        :param theDomain:
+        :type theDomain: BRepGProp_Domain &
+        :param thePoint:
+        :type thePoint: gp_Pnt
+        :param theTolerance: default value is 0.001
+        :type theTolerance: float
+        :param theCGFlag: default value is Standard_False
+        :type theCGFlag: bool
+        :param theIFlag: default value is Standard_False
+        :type theIFlag: bool
+        :rtype: float
+
+        :param theSurface:
+        :type theSurface: BRepGProp_Face &
+        :param thePlane:
+        :type thePlane: gp_Pln
+        :param theTolerance: default value is 0.001
+        :type theTolerance: float
+        :param theCGFlag: default value is Standard_False
+        :type theCGFlag: bool
+        :param theIFlag: default value is Standard_False
+        :type theIFlag: bool
+        :rtype: float
+
+        :param theSurface:
+        :type theSurface: BRepGProp_Face &
+        :param thePlane:
+        :type thePlane: gp_Pln
+        :param theTolerance: default value is 0.001
+        :type theTolerance: float
+        :param theCGFlag: default value is Standard_False
+        :type theCGFlag: bool
+        :param theIFlag: default value is Standard_False
+        :type theIFlag: bool
+        :rtype: float
+
+        :param theSurface:
+        :type theSurface: BRepGProp_Face &
+        :param thePlane:
+        :type thePlane: gp_Pln
+        :param theTolerance: default value is 0.001
+        :type theTolerance: float
+        :param theCGFlag: default value is Standard_False
+        :type theCGFlag: bool
+        :param theIFlag: default value is Standard_False
+        :type theIFlag: bool
+        :rtype: float
+
+        :param theSurface:
+        :type theSurface: BRepGProp_Face &
+        :param thePlane:
+        :type thePlane: gp_Pln
+        :param theTolerance: default value is 0.001
+        :type theTolerance: float
+        :param theCGFlag: default value is Standard_False
+        :type theCGFlag: bool
+        :param theIFlag: default value is Standard_False
+        :type theIFlag: bool
+        :rtype: float
+
+        :param theSurface:
+        :type theSurface: BRepGProp_Face &
+        :param theDomain:
+        :type theDomain: BRepGProp_Domain &
+        :param thePlane:
+        :type thePlane: gp_Pln
+        :param theTolerance: default value is 0.001
+        :type theTolerance: float
+        :param theCGFlag: default value is Standard_False
+        :type theCGFlag: bool
+        :param theIFlag: default value is Standard_False
+        :type theIFlag: bool
+        :rtype: float
+
+        :param theSurface:
+        :type theSurface: BRepGProp_Face &
+        :param theDomain:
+        :type theDomain: BRepGProp_Domain &
+        :param thePlane:
+        :type thePlane: gp_Pln
+        :param theTolerance: default value is 0.001
+        :type theTolerance: float
+        :param theCGFlag: default value is Standard_False
+        :type theCGFlag: bool
+        :param theIFlag: default value is Standard_False
+        :type theIFlag: bool
+        :rtype: float
+
+        :param theSurface:
+        :type theSurface: BRepGProp_Face &
+        :param theDomain:
+        :type theDomain: BRepGProp_Domain &
         :param thePlane:
         :type thePlane: gp_Pln
         :param theTolerance: default value is 0.001
@@ -1662,12 +2554,12 @@ class BRepGProp_VinertGK(OCC.GProp.GProp_GProps):
         """
         return _BRepGProp.BRepGProp_VinertGK_Perform(self, *args)
 
-    def GetErrorReached(self, *args) -> "Standard_Real" :
+    def GetErrorReached(self):
         """
         :rtype: float
 
         """
-        return _BRepGProp.BRepGProp_VinertGK_GetErrorReached(self, *args)
+        return _BRepGProp.BRepGProp_VinertGK_GetErrorReached(self)
 
     def __del__(self):
     	try:

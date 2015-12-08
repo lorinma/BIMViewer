@@ -121,74 +121,74 @@ class GccInt_Bisec(OCC.MMgt.MMgt_TShared):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def ArcType(self, *args) -> "GccInt_IType" :
+    def ArcType(self):
         """
         * Returns the type of bisecting object (line, circle, parabola, hyperbola, ellipse, point).
 
         :rtype: GccInt_IType
 
         """
-        return _GccInt.GccInt_Bisec_ArcType(self, *args)
+        return _GccInt.GccInt_Bisec_ArcType(self)
 
-    def Point(self, *args) -> "gp_Pnt2d" :
+    def Point(self):
         """
         * Returns the bisecting line when ArcType returns Pnt. An exception DomainError is raised if ArcType is not a Pnt.
 
         :rtype: gp_Pnt2d
 
         """
-        return _GccInt.GccInt_Bisec_Point(self, *args)
+        return _GccInt.GccInt_Bisec_Point(self)
 
-    def Line(self, *args) -> "gp_Lin2d" :
+    def Line(self):
         """
         * Returns the bisecting line when ArcType returns Lin. An exception DomainError is raised if ArcType is not a Lin.
 
         :rtype: gp_Lin2d
 
         """
-        return _GccInt.GccInt_Bisec_Line(self, *args)
+        return _GccInt.GccInt_Bisec_Line(self)
 
-    def Circle(self, *args) -> "gp_Circ2d" :
+    def Circle(self):
         """
         * Returns the bisecting line when ArcType returns Cir. An exception DomainError is raised if ArcType is not a Cir.
 
         :rtype: gp_Circ2d
 
         """
-        return _GccInt.GccInt_Bisec_Circle(self, *args)
+        return _GccInt.GccInt_Bisec_Circle(self)
 
-    def Hyperbola(self, *args) -> "gp_Hypr2d" :
+    def Hyperbola(self):
         """
         * Returns the bisecting line when ArcType returns Hpr. An exception DomainError is raised if ArcType is not a Hpr.
 
         :rtype: gp_Hypr2d
 
         """
-        return _GccInt.GccInt_Bisec_Hyperbola(self, *args)
+        return _GccInt.GccInt_Bisec_Hyperbola(self)
 
-    def Parabola(self, *args) -> "gp_Parab2d" :
+    def Parabola(self):
         """
         * Returns the bisecting line when ArcType returns Par. An exception DomainError is raised if ArcType is not a Par.
 
         :rtype: gp_Parab2d
 
         """
-        return _GccInt.GccInt_Bisec_Parabola(self, *args)
+        return _GccInt.GccInt_Bisec_Parabola(self)
 
-    def Ellipse(self, *args) -> "gp_Elips2d" :
+    def Ellipse(self):
         """
         * Returns the bisecting line when ArcType returns Ell. An exception DomainError is raised if ArcType is not an Ell.
 
         :rtype: gp_Elips2d
 
         """
-        return _GccInt.GccInt_Bisec_Ellipse(self, *args)
+        return _GccInt.GccInt_Bisec_Ellipse(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(GccInt_Bisec self)"""
         return _GccInt.GccInt_Bisec__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_GccInt_Bisec" :
+    def GetHandle(self):
         """GetHandle(GccInt_Bisec self) -> Handle_GccInt_Bisec"""
         return _GccInt.GccInt_Bisec_GetHandle(self)
 
@@ -233,7 +233,7 @@ Handle_GccInt_Bisec._kill_pointed = new_instancemethod(_GccInt.Handle_GccInt_Bis
 Handle_GccInt_Bisec_swigregister = _GccInt.Handle_GccInt_Bisec_swigregister
 Handle_GccInt_Bisec_swigregister(Handle_GccInt_Bisec)
 
-def Handle_GccInt_Bisec_DownCast(*args) -> "Handle_GccInt_Bisec const" :
+def Handle_GccInt_Bisec_DownCast(*args):
   return _GccInt.Handle_GccInt_Bisec_DownCast(*args)
 Handle_GccInt_Bisec_DownCast = _GccInt.Handle_GccInt_Bisec_DownCast
 
@@ -250,11 +250,11 @@ class GccInt_BCirc(GccInt_Bisec):
 
         """
         _GccInt.GccInt_BCirc_swiginit(self,_GccInt.new_GccInt_BCirc(*args))
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(GccInt_BCirc self)"""
         return _GccInt.GccInt_BCirc__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_GccInt_BCirc" :
+    def GetHandle(self):
         """GetHandle(GccInt_BCirc self) -> Handle_GccInt_BCirc"""
         return _GccInt.GccInt_BCirc_GetHandle(self)
 
@@ -292,7 +292,7 @@ Handle_GccInt_BCirc._kill_pointed = new_instancemethod(_GccInt.Handle_GccInt_BCi
 Handle_GccInt_BCirc_swigregister = _GccInt.Handle_GccInt_BCirc_swigregister
 Handle_GccInt_BCirc_swigregister(Handle_GccInt_BCirc)
 
-def Handle_GccInt_BCirc_DownCast(*args) -> "Handle_GccInt_BCirc const" :
+def Handle_GccInt_BCirc_DownCast(*args):
   return _GccInt.Handle_GccInt_BCirc_DownCast(*args)
 Handle_GccInt_BCirc_DownCast = _GccInt.Handle_GccInt_BCirc_DownCast
 
@@ -309,11 +309,11 @@ class GccInt_BElips(GccInt_Bisec):
 
         """
         _GccInt.GccInt_BElips_swiginit(self,_GccInt.new_GccInt_BElips(*args))
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(GccInt_BElips self)"""
         return _GccInt.GccInt_BElips__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_GccInt_BElips" :
+    def GetHandle(self):
         """GetHandle(GccInt_BElips self) -> Handle_GccInt_BElips"""
         return _GccInt.GccInt_BElips_GetHandle(self)
 
@@ -351,7 +351,7 @@ Handle_GccInt_BElips._kill_pointed = new_instancemethod(_GccInt.Handle_GccInt_BE
 Handle_GccInt_BElips_swigregister = _GccInt.Handle_GccInt_BElips_swigregister
 Handle_GccInt_BElips_swigregister(Handle_GccInt_BElips)
 
-def Handle_GccInt_BElips_DownCast(*args) -> "Handle_GccInt_BElips const" :
+def Handle_GccInt_BElips_DownCast(*args):
   return _GccInt.Handle_GccInt_BElips_DownCast(*args)
 Handle_GccInt_BElips_DownCast = _GccInt.Handle_GccInt_BElips_DownCast
 
@@ -368,11 +368,11 @@ class GccInt_BHyper(GccInt_Bisec):
 
         """
         _GccInt.GccInt_BHyper_swiginit(self,_GccInt.new_GccInt_BHyper(*args))
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(GccInt_BHyper self)"""
         return _GccInt.GccInt_BHyper__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_GccInt_BHyper" :
+    def GetHandle(self):
         """GetHandle(GccInt_BHyper self) -> Handle_GccInt_BHyper"""
         return _GccInt.GccInt_BHyper_GetHandle(self)
 
@@ -410,7 +410,7 @@ Handle_GccInt_BHyper._kill_pointed = new_instancemethod(_GccInt.Handle_GccInt_BH
 Handle_GccInt_BHyper_swigregister = _GccInt.Handle_GccInt_BHyper_swigregister
 Handle_GccInt_BHyper_swigregister(Handle_GccInt_BHyper)
 
-def Handle_GccInt_BHyper_DownCast(*args) -> "Handle_GccInt_BHyper const" :
+def Handle_GccInt_BHyper_DownCast(*args):
   return _GccInt.Handle_GccInt_BHyper_DownCast(*args)
 Handle_GccInt_BHyper_DownCast = _GccInt.Handle_GccInt_BHyper_DownCast
 
@@ -427,11 +427,11 @@ class GccInt_BLine(GccInt_Bisec):
 
         """
         _GccInt.GccInt_BLine_swiginit(self,_GccInt.new_GccInt_BLine(*args))
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(GccInt_BLine self)"""
         return _GccInt.GccInt_BLine__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_GccInt_BLine" :
+    def GetHandle(self):
         """GetHandle(GccInt_BLine self) -> Handle_GccInt_BLine"""
         return _GccInt.GccInt_BLine_GetHandle(self)
 
@@ -469,7 +469,7 @@ Handle_GccInt_BLine._kill_pointed = new_instancemethod(_GccInt.Handle_GccInt_BLi
 Handle_GccInt_BLine_swigregister = _GccInt.Handle_GccInt_BLine_swigregister
 Handle_GccInt_BLine_swigregister(Handle_GccInt_BLine)
 
-def Handle_GccInt_BLine_DownCast(*args) -> "Handle_GccInt_BLine const" :
+def Handle_GccInt_BLine_DownCast(*args):
   return _GccInt.Handle_GccInt_BLine_DownCast(*args)
 Handle_GccInt_BLine_DownCast = _GccInt.Handle_GccInt_BLine_DownCast
 
@@ -486,11 +486,11 @@ class GccInt_BParab(GccInt_Bisec):
 
         """
         _GccInt.GccInt_BParab_swiginit(self,_GccInt.new_GccInt_BParab(*args))
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(GccInt_BParab self)"""
         return _GccInt.GccInt_BParab__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_GccInt_BParab" :
+    def GetHandle(self):
         """GetHandle(GccInt_BParab self) -> Handle_GccInt_BParab"""
         return _GccInt.GccInt_BParab_GetHandle(self)
 
@@ -528,7 +528,7 @@ Handle_GccInt_BParab._kill_pointed = new_instancemethod(_GccInt.Handle_GccInt_BP
 Handle_GccInt_BParab_swigregister = _GccInt.Handle_GccInt_BParab_swigregister
 Handle_GccInt_BParab_swigregister(Handle_GccInt_BParab)
 
-def Handle_GccInt_BParab_DownCast(*args) -> "Handle_GccInt_BParab const" :
+def Handle_GccInt_BParab_DownCast(*args):
   return _GccInt.Handle_GccInt_BParab_DownCast(*args)
 Handle_GccInt_BParab_DownCast = _GccInt.Handle_GccInt_BParab_DownCast
 
@@ -545,11 +545,11 @@ class GccInt_BPoint(GccInt_Bisec):
 
         """
         _GccInt.GccInt_BPoint_swiginit(self,_GccInt.new_GccInt_BPoint(*args))
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(GccInt_BPoint self)"""
         return _GccInt.GccInt_BPoint__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_GccInt_BPoint" :
+    def GetHandle(self):
         """GetHandle(GccInt_BPoint self) -> Handle_GccInt_BPoint"""
         return _GccInt.GccInt_BPoint_GetHandle(self)
 
@@ -587,7 +587,7 @@ Handle_GccInt_BPoint._kill_pointed = new_instancemethod(_GccInt.Handle_GccInt_BP
 Handle_GccInt_BPoint_swigregister = _GccInt.Handle_GccInt_BPoint_swigregister
 Handle_GccInt_BPoint_swigregister(Handle_GccInt_BPoint)
 
-def Handle_GccInt_BPoint_DownCast(*args) -> "Handle_GccInt_BPoint const" :
+def Handle_GccInt_BPoint_DownCast(*args):
   return _GccInt.Handle_GccInt_BPoint_DownCast(*args)
 Handle_GccInt_BPoint_DownCast = _GccInt.Handle_GccInt_BPoint_DownCast
 

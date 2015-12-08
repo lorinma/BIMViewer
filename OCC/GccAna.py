@@ -264,41 +264,41 @@ class GccAna_Circ2d2TanOn(object):
 
         """
         _GccAna.GccAna_Circ2d2TanOn_swiginit(self,_GccAna.new_GccAna_Circ2d2TanOn(*args))
-    def IsDone(self, *args) -> "Standard_Boolean" :
+    def IsDone(self):
         """
         * Returns true if the construction algorithm does not fail (even if it finds no solution). Note: IsDone protects against a failure arising from a more internal intersection algorithm, which has reached its numeric limits.
 
         :rtype: bool
 
         """
-        return _GccAna.GccAna_Circ2d2TanOn_IsDone(self, *args)
+        return _GccAna.GccAna_Circ2d2TanOn_IsDone(self)
 
-    def NbSolutions(self, *args) -> "Standard_Integer" :
+    def NbSolutions(self):
         """
         * Returns the number of circles, representing solutions computed by this algorithm. Exceptions StdFail_NotDone if the construction fails.
 
         :rtype: int
 
         """
-        return _GccAna.GccAna_Circ2d2TanOn_NbSolutions(self, *args)
+        return _GccAna.GccAna_Circ2d2TanOn_NbSolutions(self)
 
-    def ThisSolution(self, *args) -> "gp_Circ2d" :
+    def ThisSolution(self, *args):
         """
         * Returns the solution number Index and raises OutOfRange exception if Index is greater than the number of solutions. Be careful: the Index is only a way to get all the solutions, but is not associated to those outside the context of the algorithm-object. Exceptions Standard_OutOfRange if Index is less than zero or greater than the number of solutions computed by this algorithm. StdFail_NotDone if the construction fails.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: gp_Circ2d
 
         """
         return _GccAna.GccAna_Circ2d2TanOn_ThisSolution(self, *args)
 
-    def WhichQualifier(self, *args) -> "void" :
+    def WhichQualifier(self, *args):
         """
         * Returns the qualifiers Qualif1 and Qualif2 of the tangency arguments for the solution of index Index computed by this algorithm. The returned qualifiers are: - those specified at the start of construction when the solutions are defined as enclosed, enclosing or outside with respect to the arguments, or - those computed during construction (i.e. enclosed, enclosing or outside) when the solutions are defined as unqualified with respect to the arguments, or - GccEnt_noqualifier if the tangency argument is a point. Exceptions Standard_OutOfRange if Index is less than zero or greater than the number of solutions computed by this algorithm. StdFail_NotDone if the construction fails.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Qualif1:
         :type Qualif1: GccEnt_Position &
         :param Qualif2:
@@ -308,12 +308,12 @@ class GccAna_Circ2d2TanOn(object):
         """
         return _GccAna.GccAna_Circ2d2TanOn_WhichQualifier(self, *args)
 
-    def Tangency1(self, *args) -> "void" :
+    def Tangency1(self, *args):
         """
         * Returns the informations about the tangency point between the result number Index and the first argument. ParSol is the intrinsic parameter of the point PntSol on the solution ParArg is the intrinsic parameter of the point PntSol on the first argument. Raises OutOfRange if Index is greater than the number of solutions and NotDone if IsDone returns false.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param ParSol:
         :type ParSol: float &
         :param ParArg:
@@ -325,12 +325,12 @@ class GccAna_Circ2d2TanOn(object):
         """
         return _GccAna.GccAna_Circ2d2TanOn_Tangency1(self, *args)
 
-    def Tangency2(self, *args) -> "void" :
+    def Tangency2(self, *args):
         """
         * Returns the informations about the tangency point between the result number Index and the second argument. ParSol is the intrinsic parameter of the point PntSol on the solution. ParArg is the intrinsic parameter of the point PntSol on the second argument. Raises OutOfRange if Index is greater than the number of solutions and NotDone if IsDone returns false.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param ParSol:
         :type ParSol: float &
         :param ParArg:
@@ -342,12 +342,12 @@ class GccAna_Circ2d2TanOn(object):
         """
         return _GccAna.GccAna_Circ2d2TanOn_Tangency2(self, *args)
 
-    def CenterOn3(self, *args) -> "void" :
+    def CenterOn3(self, *args):
         """
         * Returns the informations about the center (on the curv) of the result number Index and the third argument. ParArg is the intrinsic parameter of the point PntArg on the third argument. Exceptions Standard_OutOfRange if Index is less than zero or greater than the number of solutions computed by this algorithm. StdFail_NotDone if the construction fails.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param ParArg:
         :type ParArg: float &
         :param PntArg:
@@ -357,23 +357,23 @@ class GccAna_Circ2d2TanOn(object):
         """
         return _GccAna.GccAna_Circ2d2TanOn_CenterOn3(self, *args)
 
-    def IsTheSame1(self, *args) -> "Standard_Boolean" :
+    def IsTheSame1(self, *args):
         """
         * True if the solution and the first argument are the same (2 circles). If R1 is the radius of the first argument and Rsol the radius of the solution and dist the distance between the two centers, we concider the two circles are identical if R1+dist-Rsol is less than Tolerance. False in the other cases. Raises OutOfRange if Index is greater than the number of solutions and NotDone if IsDone returns false.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: bool
 
         """
         return _GccAna.GccAna_Circ2d2TanOn_IsTheSame1(self, *args)
 
-    def IsTheSame2(self, *args) -> "Standard_Boolean" :
+    def IsTheSame2(self, *args):
         """
         * True if the solution and the second argument are the same (2 circles). If R2 is the radius of the second argument and Rsol the radius of the solution and dist the distance between the two centers, we concider the two circles are identical if R2+dist-Rsol is less than Tolerance. False in the other cases. Raises OutOfRange if Index is greater than the number of solutions and NotDone if IsDone returns false.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: bool
 
         """
@@ -479,41 +479,41 @@ class GccAna_Circ2d2TanRad(object):
 
         """
         _GccAna.GccAna_Circ2d2TanRad_swiginit(self,_GccAna.new_GccAna_Circ2d2TanRad(*args))
-    def IsDone(self, *args) -> "Standard_Boolean" :
+    def IsDone(self):
         """
         * This method returns True if the algorithm succeeded. Note: IsDone protects against a failure arising from a more internal intersection algorithm, which has reached its numeric limits.
 
         :rtype: bool
 
         """
-        return _GccAna.GccAna_Circ2d2TanRad_IsDone(self, *args)
+        return _GccAna.GccAna_Circ2d2TanRad_IsDone(self)
 
-    def NbSolutions(self, *args) -> "Standard_Integer" :
+    def NbSolutions(self):
         """
         * This method returns the number of circles, representing solutions computed by this algorithm. Exceptions StdFail_NotDone if the construction fails. of solutions.
 
         :rtype: int
 
         """
-        return _GccAna.GccAna_Circ2d2TanRad_NbSolutions(self, *args)
+        return _GccAna.GccAna_Circ2d2TanRad_NbSolutions(self)
 
-    def ThisSolution(self, *args) -> "gp_Circ2d" :
+    def ThisSolution(self, *args):
         """
         * Returns the solution number Index. Be careful: the Index is only a way to get all the solutions, but is not associated to those outside the context of the algorithm-object. Raises OutOfRange exception if Index is greater than the number of solutions. It raises NotDone if the construction algorithm did not succeed.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: gp_Circ2d
 
         """
         return _GccAna.GccAna_Circ2d2TanRad_ThisSolution(self, *args)
 
-    def WhichQualifier(self, *args) -> "void" :
+    def WhichQualifier(self, *args):
         """
         * Returns the information about the qualifiers of the tangency arguments concerning the solution number Index. It returns the real qualifiers (the qualifiers given to the constructor method in case of enclosed, enclosing and outside and the qualifiers computedin case of unqualified).
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Qualif1:
         :type Qualif1: GccEnt_Position &
         :param Qualif2:
@@ -523,12 +523,12 @@ class GccAna_Circ2d2TanRad(object):
         """
         return _GccAna.GccAna_Circ2d2TanRad_WhichQualifier(self, *args)
 
-    def Tangency1(self, *args) -> "void" :
+    def Tangency1(self, *args):
         """
         * Returns information about the tangency point between the result number Index and the first argument. ParSol is the intrinsic parameter of the point PntSol on the solution. ParArg is the intrinsic parameter of the point PntSol on the first argument. Raises OutOfRange if Index is greater than the number of solutions. It raises NotDone if the construction algorithm did not succeed
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param ParSol:
         :type ParSol: float &
         :param ParArg:
@@ -540,12 +540,12 @@ class GccAna_Circ2d2TanRad(object):
         """
         return _GccAna.GccAna_Circ2d2TanRad_Tangency1(self, *args)
 
-    def Tangency2(self, *args) -> "void" :
+    def Tangency2(self, *args):
         """
         * Returns information about the tangency point between the result number Index and the second argument. ParSol is the intrinsic parameter of the point PntSol on the solution. ParArg is the intrinsic parameter of the point PntArg on the second argument. Raises OutOfRange if Index is greater than the number of solutions. It raises NotDone if the construction algorithm did not succeed.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param ParSol:
         :type ParSol: float &
         :param ParArg:
@@ -557,23 +557,23 @@ class GccAna_Circ2d2TanRad(object):
         """
         return _GccAna.GccAna_Circ2d2TanRad_Tangency2(self, *args)
 
-    def IsTheSame1(self, *args) -> "Standard_Boolean" :
+    def IsTheSame1(self, *args):
         """
         * Returns True if the solution number Index is equal to the first argument. Raises OutOfRange if Index is greater than the number of solutions. It raises NotDone if the construction algorithm did not succeed.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: bool
 
         """
         return _GccAna.GccAna_Circ2d2TanRad_IsTheSame1(self, *args)
 
-    def IsTheSame2(self, *args) -> "Standard_Boolean" :
+    def IsTheSame2(self, *args):
         """
         * Returns True if the solution number Index is equal to the second argument. Raises OutOfRange if Index is greater than the number of solutions. It raises NotDone if the construction algorithm did not succeed.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: bool
 
         """
@@ -726,41 +726,41 @@ class GccAna_Circ2d3Tan(object):
 
         """
         _GccAna.GccAna_Circ2d3Tan_swiginit(self,_GccAna.new_GccAna_Circ2d3Tan(*args))
-    def IsDone(self, *args) -> "Standard_Boolean" :
+    def IsDone(self):
         """
         * This method returns True if the construction algorithm succeeded. Note: IsDone protects against a failure arising from a more internal intersection algorithm, which has reached its numeric limits.
 
         :rtype: bool
 
         """
-        return _GccAna.GccAna_Circ2d3Tan_IsDone(self, *args)
+        return _GccAna.GccAna_Circ2d3Tan_IsDone(self)
 
-    def NbSolutions(self, *args) -> "Standard_Integer" :
+    def NbSolutions(self):
         """
         * This method returns the number of solutions. Raises NotDone if the construction algorithm didn't succeed.
 
         :rtype: int
 
         """
-        return _GccAna.GccAna_Circ2d3Tan_NbSolutions(self, *args)
+        return _GccAna.GccAna_Circ2d3Tan_NbSolutions(self)
 
-    def ThisSolution(self, *args) -> "gp_Circ2d" :
+    def ThisSolution(self, *args):
         """
         * Returns the solution number Index and raises OutOfRange 	 exception if Index is greater than the number of 	 solutions. Be careful: the Index is only a way to get all the solutions, but is not associated to those outside the context of the algorithm-object. Raises OutOfRange if Index is greater than the number of solutions. It raises NotDone if the algorithm failed.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: gp_Circ2d
 
         """
         return _GccAna.GccAna_Circ2d3Tan_ThisSolution(self, *args)
 
-    def WhichQualifier(self, *args) -> "void" :
+    def WhichQualifier(self, *args):
         """
         * Returns the informations about the qualifiers of the tangency arguments concerning the solution number Index. It returns the real qualifiers (the qualifiers given to the constructor method in case of enclosed, enclosing and outside and the qualifiers computedin case of unqualified).
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Qualif1:
         :type Qualif1: GccEnt_Position &
         :param Qualif2:
@@ -772,12 +772,12 @@ class GccAna_Circ2d3Tan(object):
         """
         return _GccAna.GccAna_Circ2d3Tan_WhichQualifier(self, *args)
 
-    def Tangency1(self, *args) -> "void" :
+    def Tangency1(self, *args):
         """
         * Returns informations about the tangency point between the result number Index and the first argument. ParSol is the intrinsic parameter of the point PntSol on the solution curv. ParArg is the intrinsic parameter of the point PntArg on the argument curv. Raises OutOfRange if Index is greater than the number of solutions. It raises NotDone if the algorithm failed.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param ParSol:
         :type ParSol: float &
         :param ParArg:
@@ -789,12 +789,12 @@ class GccAna_Circ2d3Tan(object):
         """
         return _GccAna.GccAna_Circ2d3Tan_Tangency1(self, *args)
 
-    def Tangency2(self, *args) -> "void" :
+    def Tangency2(self, *args):
         """
         * Returns informations about the tangency point between the result number Index and the first argument. ParSol is the intrinsic parameter of the point PntSol on the solution curv. ParArg is the intrinsic parameter of the point Pntsol on the argument curv. Raises OutOfRange if Index is greater than the number of solutions. It raises NotDone if the algorithm failed.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param ParSol:
         :type ParSol: float &
         :param ParArg:
@@ -806,12 +806,12 @@ class GccAna_Circ2d3Tan(object):
         """
         return _GccAna.GccAna_Circ2d3Tan_Tangency2(self, *args)
 
-    def Tangency3(self, *args) -> "void" :
+    def Tangency3(self, *args):
         """
         * Returns informations about the tangency point between the result number Index and the first argument. ParSol is the intrinsic parameter of the point PntSol on the solution curv. ParArg is the intrinsic parameter of the point Pntsol on the argument curv. Raises OutOfRange if Index is greater than the number of solutions. It raises NotDone if the algorithm failed.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param ParSol:
         :type ParSol: float &
         :param ParArg:
@@ -823,34 +823,34 @@ class GccAna_Circ2d3Tan(object):
         """
         return _GccAna.GccAna_Circ2d3Tan_Tangency3(self, *args)
 
-    def IsTheSame1(self, *args) -> "Standard_Boolean" :
+    def IsTheSame1(self, *args):
         """
         * Returns True if the solution number Index is equal to the first argument. Raises OutOfRange if Index is greater than the number of solutions. It raises NotDone if the algorithm failed.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: bool
 
         """
         return _GccAna.GccAna_Circ2d3Tan_IsTheSame1(self, *args)
 
-    def IsTheSame2(self, *args) -> "Standard_Boolean" :
+    def IsTheSame2(self, *args):
         """
         * Returns True if the solution number Index is equal to the second argument. Raises OutOfRange Index is greater than the number of solutions. It raises NotDone if the algorithm failed.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: bool
 
         """
         return _GccAna.GccAna_Circ2d3Tan_IsTheSame2(self, *args)
 
-    def IsTheSame3(self, *args) -> "Standard_Boolean" :
+    def IsTheSame3(self, *args):
         """
         * Returns True if the solution number Index is equal to the third argument. Raises OutOfRange if Index is greater than the number of solutions. It raises NotDone if the algorithm failed.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: bool
 
         """
@@ -893,30 +893,30 @@ class GccAna_Circ2dBisec(object):
 
         """
         _GccAna.GccAna_Circ2dBisec_swiginit(self,_GccAna.new_GccAna_Circ2dBisec(*args))
-    def IsDone(self, *args) -> "Standard_Boolean" :
+    def IsDone(self):
         """
         * This method returns True if the construction algorithm succeeded.
 
         :rtype: bool
 
         """
-        return _GccAna.GccAna_Circ2dBisec_IsDone(self, *args)
+        return _GccAna.GccAna_Circ2dBisec_IsDone(self)
 
-    def NbSolutions(self, *args) -> "Standard_Integer" :
+    def NbSolutions(self):
         """
         * This method returns the number of solutions. Raises NotDone if the construction algorithm didn't succeed.
 
         :rtype: int
 
         """
-        return _GccAna.GccAna_Circ2dBisec_NbSolutions(self, *args)
+        return _GccAna.GccAna_Circ2dBisec_NbSolutions(self)
 
-    def ThisSolution(self, *args) -> "Handle_GccInt_Bisec" :
+    def ThisSolution(self, *args):
         """
         * Returns the solution number Index Raises OutOfRange exception if Index is greater than the number of solutions. It raises NotDone if the construction algorithm didn't succeed.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Handle_GccInt_Bisec
 
         """
@@ -970,41 +970,41 @@ class GccAna_Circ2dTanCen(object):
 
         """
         _GccAna.GccAna_Circ2dTanCen_swiginit(self,_GccAna.new_GccAna_Circ2dTanCen(*args))
-    def IsDone(self, *args) -> "Standard_Boolean" :
+    def IsDone(self):
         """
         * This method returns True if the construction algorithm succeeded. Note: IsDone protects against a failure arising from a more internal intersection algorithm, which has reached its numeric limits.
 
         :rtype: bool
 
         """
-        return _GccAna.GccAna_Circ2dTanCen_IsDone(self, *args)
+        return _GccAna.GccAna_Circ2dTanCen_IsDone(self)
 
-    def NbSolutions(self, *args) -> "Standard_Integer" :
+    def NbSolutions(self):
         """
         * Returns the number of circles, representing solutions computed by this algorithm and raises NotDone exception if the algorithm didn't succeed.
 
         :rtype: int
 
         """
-        return _GccAna.GccAna_Circ2dTanCen_NbSolutions(self, *args)
+        return _GccAna.GccAna_Circ2dTanCen_NbSolutions(self)
 
-    def ThisSolution(self, *args) -> "gp_Circ2d" :
+    def ThisSolution(self, *args):
         """
         * Returns the circle, representing the solution number Index and raises OutOfRange exception if Index is greater than the number of solutions. Be carefull: the Index is only a way to get all the solutions, but is not associated to theses outside the context of the algorithm-object. Raises NotDone if the construction algorithm didn't succeed. It raises OutOfRange if Index is greater than the number of solutions or less than zer
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: gp_Circ2d
 
         """
         return _GccAna.GccAna_Circ2dTanCen_ThisSolution(self, *args)
 
-    def WhichQualifier(self, *args) -> "void" :
+    def WhichQualifier(self, *args):
         """
         * Returns the qualifier Qualif1 of the tangency argument for the solution of index Index computed by this algorithm. The returned qualifier is: - that specified at the start of construction when the solutions are defined as enclosed, enclosing or It returns the real qualifiers (the qualifiers given to the constructor method in case of enclosed, enclosing and outside and the qualifiers computedin case of unqualified).
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Qualif1:
         :type Qualif1: GccEnt_Position &
         :rtype: None
@@ -1012,12 +1012,12 @@ class GccAna_Circ2dTanCen(object):
         """
         return _GccAna.GccAna_Circ2dTanCen_WhichQualifier(self, *args)
 
-    def Tangency1(self, *args) -> "void" :
+    def Tangency1(self, *args):
         """
         * Returns informations about the tangency point between the result number Index and the first argument. ParSol is the intrinsic parameter of the point PntSol on the solution curv. ParArg is the intrinsic parameter of the point PntArg on the argument curv. It raises NotDone if the construction algorithm didn't succeed. It raises OutOfRange if Index is greater than the number of solutions or less than zero.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param ParSol:
         :type ParSol: float &
         :param ParArg:
@@ -1029,12 +1029,12 @@ class GccAna_Circ2dTanCen(object):
         """
         return _GccAna.GccAna_Circ2dTanCen_Tangency1(self, *args)
 
-    def IsTheSame1(self, *args) -> "Standard_Boolean" :
+    def IsTheSame1(self, *args):
         """
         * Returns True if the solution number Index is equal to the first argument. It raises NotDone if the construction algorithm didn't succeed. It raises OutOfRange if Index is greater than the number of solutions or less than zero.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: bool
 
         """
@@ -1137,41 +1137,41 @@ class GccAna_Circ2dTanOnRad(object):
 
         """
         _GccAna.GccAna_Circ2dTanOnRad_swiginit(self,_GccAna.new_GccAna_Circ2dTanOnRad(*args))
-    def IsDone(self, *args) -> "Standard_Boolean" :
+    def IsDone(self):
         """
         * Returns true if the construction algorithm does not fail (even if it finds no solution). Note: IsDone protects against a failure arising from a more internal intersection algorithm, which has reached its numeric limits.
 
         :rtype: bool
 
         """
-        return _GccAna.GccAna_Circ2dTanOnRad_IsDone(self, *args)
+        return _GccAna.GccAna_Circ2dTanOnRad_IsDone(self)
 
-    def NbSolutions(self, *args) -> "Standard_Integer" :
+    def NbSolutions(self):
         """
         * This method returns the number of circles, representing solutions. Raises NotDone if the construction algorithm didn't succeed.
 
         :rtype: int
 
         """
-        return _GccAna.GccAna_Circ2dTanOnRad_NbSolutions(self, *args)
+        return _GccAna.GccAna_Circ2dTanOnRad_NbSolutions(self)
 
-    def ThisSolution(self, *args) -> "gp_Circ2d" :
+    def ThisSolution(self, *args):
         """
         * Returns the solution number Index and raises OutOfRange 	exception if Index is greater than the number of solutions. Be careful: the Index is only a way to get all the solutions, but is not associated to theses outside the context of the algorithm-object. Raises NotDone if the construction algorithm didn't succeed. It raises OutOfRange if Index is greater than the number of solutions
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: gp_Circ2d
 
         """
         return _GccAna.GccAna_Circ2dTanOnRad_ThisSolution(self, *args)
 
-    def WhichQualifier(self, *args) -> "void" :
+    def WhichQualifier(self, *args):
         """
         * Returns the qualifier Qualif1 of the tangency argument for the solution of index Index computed by this algorithm. The returned qualifier is: - that specified at the start of construction when the solutions are defined as enclosed, enclosing or outside with respect to the argument, or - that computed during construction (i.e. enclosed, enclosing or outside) when the solutions are defined as unqualified with respect to the argument, or - GccEnt_noqualifier if the tangency argument is a point. Exceptions Standard_OutOfRange if Index is less than zero or greater than the number of solutions computed by this algorithm. StdFail_NotDone if the construction fails.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Qualif1:
         :type Qualif1: GccEnt_Position &
         :rtype: None
@@ -1179,12 +1179,12 @@ class GccAna_Circ2dTanOnRad(object):
         """
         return _GccAna.GccAna_Circ2dTanOnRad_WhichQualifier(self, *args)
 
-    def Tangency1(self, *args) -> "void" :
+    def Tangency1(self, *args):
         """
         * Returns informations about the tangency point between the result number Index and the first argument. ParSol is the intrinsic parameter of the point on the solution curv. ParArg is the intrinsic parameter of the point on the argument curv. PntSol is the tangency point on the solution curv. PntArg is the tangency point on the argument curv. Raises NotDone if the construction algorithm didn't succeed. It raises OutOfRange if Index is greater than the number of solutions.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param ParSol:
         :type ParSol: float &
         :param ParArg:
@@ -1196,12 +1196,12 @@ class GccAna_Circ2dTanOnRad(object):
         """
         return _GccAna.GccAna_Circ2dTanOnRad_Tangency1(self, *args)
 
-    def CenterOn3(self, *args) -> "void" :
+    def CenterOn3(self, *args):
         """
         * Returns informations about the center (on the curv) of the result. ParArg is the intrinsic parameter of the point on the argument curv. PntSol is the center point of the solution curv. Raises NotDone if the construction algorithm didn't succeed. It raises OutOfRange if Index is greater than the number of solutions.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param ParArg:
         :type ParArg: float &
         :param PntSol:
@@ -1211,12 +1211,12 @@ class GccAna_Circ2dTanOnRad(object):
         """
         return _GccAna.GccAna_Circ2dTanOnRad_CenterOn3(self, *args)
 
-    def IsTheSame1(self, *args) -> "Standard_Boolean" :
+    def IsTheSame1(self, *args):
         """
         * Returns True if the solution number Index is equal to the first argument and False in the other cases. Raises NotDone if the construction algorithm didn't succeed. It raises OutOfRange if Index is greater than the number of solutions.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: bool
 
         """
@@ -1256,30 +1256,30 @@ class GccAna_CircLin2dBisec(object):
 
         """
         _GccAna.GccAna_CircLin2dBisec_swiginit(self,_GccAna.new_GccAna_CircLin2dBisec(*args))
-    def IsDone(self, *args) -> "Standard_Boolean" :
+    def IsDone(self):
         """
         * Returns true (this construction algorithm never fails).
 
         :rtype: bool
 
         """
-        return _GccAna.GccAna_CircLin2dBisec_IsDone(self, *args)
+        return _GccAna.GccAna_CircLin2dBisec_IsDone(self)
 
-    def NbSolutions(self, *args) -> "Standard_Integer" :
+    def NbSolutions(self):
         """
         * Returns the number of curves, representing solutions computed by this algorithm.
 
         :rtype: int
 
         """
-        return _GccAna.GccAna_CircLin2dBisec_NbSolutions(self, *args)
+        return _GccAna.GccAna_CircLin2dBisec_NbSolutions(self)
 
-    def ThisSolution(self, *args) -> "Handle_GccInt_Bisec" :
+    def ThisSolution(self, *args):
         """
         * Returns the solution number Index and raises OutOfRange  exception if Index is greater than the number of solutions Exceptions Standard_OutOfRange if Index is less than zero or greater than the number of solutions computed by this algorithm.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Handle_GccInt_Bisec
 
         """
@@ -1325,30 +1325,30 @@ class GccAna_CircPnt2dBisec(object):
 
         """
         _GccAna.GccAna_CircPnt2dBisec_swiginit(self,_GccAna.new_GccAna_CircPnt2dBisec(*args))
-    def IsDone(self, *args) -> "Standard_Boolean" :
+    def IsDone(self):
         """
         * Returns true (this construction algorithm never fails).
 
         :rtype: bool
 
         """
-        return _GccAna.GccAna_CircPnt2dBisec_IsDone(self, *args)
+        return _GccAna.GccAna_CircPnt2dBisec_IsDone(self)
 
-    def NbSolutions(self, *args) -> "Standard_Integer" :
+    def NbSolutions(self):
         """
         * Returns the number of curves, representing solutions computed by this algorithm.
 
         :rtype: int
 
         """
-        return _GccAna.GccAna_CircPnt2dBisec_NbSolutions(self, *args)
+        return _GccAna.GccAna_CircPnt2dBisec_NbSolutions(self)
 
-    def ThisSolution(self, *args) -> "Handle_GccInt_Bisec" :
+    def ThisSolution(self, *args):
         """
         * Returns the solution number Index and raises OutOfRange exception if Index is greater than the number of solutions. Exceptions Standard_OutOfRange if Index is less than zero or greater than the number of solutions computed by this algorithm.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Handle_GccInt_Bisec
 
         """
@@ -1406,41 +1406,41 @@ class GccAna_Lin2d2Tan(object):
 
         """
         _GccAna.GccAna_Lin2d2Tan_swiginit(self,_GccAna.new_GccAna_Lin2d2Tan(*args))
-    def IsDone(self, *args) -> "Standard_Boolean" :
+    def IsDone(self):
         """
         * This method returns true when there is a solution and false in the other cases.
 
         :rtype: bool
 
         """
-        return _GccAna.GccAna_Lin2d2Tan_IsDone(self, *args)
+        return _GccAna.GccAna_Lin2d2Tan_IsDone(self)
 
-    def NbSolutions(self, *args) -> "Standard_Integer" :
+    def NbSolutions(self):
         """
         * This method returns the number of solutions. Raises NotDone if the construction algorithm didn't succeed.
 
         :rtype: int
 
         """
-        return _GccAna.GccAna_Lin2d2Tan_NbSolutions(self, *args)
+        return _GccAna.GccAna_Lin2d2Tan_NbSolutions(self)
 
-    def ThisSolution(self, *args) -> "gp_Lin2d" :
+    def ThisSolution(self, *args):
         """
         * Returns the solution number Index and raises OutOfRange exception if Index is greater than the number of solutions. Be carefull: the Index is only a way to get all the solutions, but is not associated to theses outside the context of the algorithm-object. Raises OutOfRange is raised if Index is greater than the number of solutions. It raises NotDone if the algorithm failed.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: gp_Lin2d
 
         """
         return _GccAna.GccAna_Lin2d2Tan_ThisSolution(self, *args)
 
-    def WhichQualifier(self, *args) -> "void" :
+    def WhichQualifier(self, *args):
         """
         * Returns the qualifiers Qualif1 and Qualif2 of the tangency arguments for the solution of index Index computed by this algorithm. The returned qualifiers are: - those specified at the start of construction when the solutions are defined as enclosing or outside with respect to the arguments, or - those computed during construction (i.e. enclosing or outside) when the solutions are defined as unqualified with respect to the arguments, or - GccEnt_noqualifier if the tangency argument is a point. Exceptions Standard_OutOfRange if Index is less than zero or greater than the number of solutions computed by this algorithm. StdFail_NotDone if the construction fails.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Qualif1:
         :type Qualif1: GccEnt_Position &
         :param Qualif2:
@@ -1450,12 +1450,12 @@ class GccAna_Lin2d2Tan(object):
         """
         return _GccAna.GccAna_Lin2d2Tan_WhichQualifier(self, *args)
 
-    def Tangency1(self, *args) -> "void" :
+    def Tangency1(self, *args):
         """
         * Returns informations about the tangency point between the result number Index and the first argument. ParSol is the intrinsic parameter of the point PntSol on the solution curv. ParArg is the intrinsic parameter of the point PntSol on the argument curv. Raises OutOfRange is raised if Index is greater than the number of solutions. It raises NotDone if the algorithm failed.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param ParSol:
         :type ParSol: float &
         :param ParArg:
@@ -1467,12 +1467,12 @@ class GccAna_Lin2d2Tan(object):
         """
         return _GccAna.GccAna_Lin2d2Tan_Tangency1(self, *args)
 
-    def Tangency2(self, *args) -> "void" :
+    def Tangency2(self, *args):
         """
         * Returns informations about the tangency point between the result number Index and the second argument. ParSol is the intrinsic parameter of the point ParSol on the solution curv. ParArg is the intrinsic parameter of the point PntSol on the argument curv. Raises OutOfRange is raised if Index is greater than the number of solutions. It raises NotDone if the algorithm failed.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param ParSol:
         :type ParSol: float &
         :param ParArg:
@@ -1517,41 +1517,41 @@ class GccAna_Lin2dBisec(object):
 
         """
         _GccAna.GccAna_Lin2dBisec_swiginit(self,_GccAna.new_GccAna_Lin2dBisec(*args))
-    def IsDone(self, *args) -> "Standard_Boolean" :
+    def IsDone(self):
         """
         * Returns True when the algorithm succeded.
 
         :rtype: bool
 
         """
-        return _GccAna.GccAna_Lin2dBisec_IsDone(self, *args)
+        return _GccAna.GccAna_Lin2dBisec_IsDone(self)
 
-    def NbSolutions(self, *args) -> "Standard_Integer" :
+    def NbSolutions(self):
         """
         * Returns the number of solutions and raise NotDone if the constructor wasn't called before.
 
         :rtype: int
 
         """
-        return _GccAna.GccAna_Lin2dBisec_NbSolutions(self, *args)
+        return _GccAna.GccAna_Lin2dBisec_NbSolutions(self)
 
-    def ThisSolution(self, *args) -> "gp_Lin2d" :
+    def ThisSolution(self, *args):
         """
         * //!Returns the solution number Index . The first solution is the inside one and the second is the outside one. For the first solution the direction is D1+D2 (D1 is the direction of the first argument and D2 the direction of the second argument). For the second solution the direction is D1-D2. Raises NotDone if the construction algorithm didn't succeed. It raises OutOfRange if Index is greater than the number of solutions.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: gp_Lin2d
 
         """
         return _GccAna.GccAna_Lin2dBisec_ThisSolution(self, *args)
 
-    def Intersection1(self, *args) -> "void" :
+    def Intersection1(self, *args):
         """
         * Returns informations about the intersection point between the result number Index and the first argument. Raises NotDone if the construction algorithm didn't succeed. It raises OutOfRange if Index is greater than the number of solutions.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param ParSol:
         :type ParSol: float &
         :param ParArg:
@@ -1563,12 +1563,12 @@ class GccAna_Lin2dBisec(object):
         """
         return _GccAna.GccAna_Lin2dBisec_Intersection1(self, *args)
 
-    def Intersection2(self, *args) -> "void" :
+    def Intersection2(self, *args):
         """
         * Returns informations about the intersection point between the result number Index and the second argument. Raises NotDone if the construction algorithm didn't succeed. It raises OutOfRange if Index is greater than the number of solutions.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param ParSol:
         :type ParSol: float &
         :param ParArg:
@@ -1624,41 +1624,41 @@ class GccAna_Lin2dTanObl(object):
 
         """
         _GccAna.GccAna_Lin2dTanObl_swiginit(self,_GccAna.new_GccAna_Lin2dTanObl(*args))
-    def IsDone(self, *args) -> "Standard_Boolean" :
+    def IsDone(self):
         """
         * Returns True if the algorithm succeeded. Note: IsDone protects against a failure arising from a more internal intersection algorithm, which has reached its numeric limits.
 
         :rtype: bool
 
         """
-        return _GccAna.GccAna_Lin2dTanObl_IsDone(self, *args)
+        return _GccAna.GccAna_Lin2dTanObl_IsDone(self)
 
-    def NbSolutions(self, *args) -> "Standard_Integer" :
+    def NbSolutions(self):
         """
         * Returns the number of of lines, representing solutions computed by this algorithm. Raises NotDone if the construction algorithm didn't succeed.
 
         :rtype: int
 
         """
-        return _GccAna.GccAna_Lin2dTanObl_NbSolutions(self, *args)
+        return _GccAna.GccAna_Lin2dTanObl_NbSolutions(self)
 
-    def ThisSolution(self, *args) -> "gp_Lin2d" :
+    def ThisSolution(self, *args):
         """
         * Returns the solution number Index. Be careful: the Index is only a way to get all the solutions, but is not associated to theses outside the context of the algorithm-object. raises NotDone if the construction algorithm didn't succeed. It raises OutOfRange if Index is greater than the number of solutions.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: gp_Lin2d
 
         """
         return _GccAna.GccAna_Lin2dTanObl_ThisSolution(self, *args)
 
-    def WhichQualifier(self, *args) -> "void" :
+    def WhichQualifier(self, *args):
         """
         * Returns the qualifier Qualif1 of the tangency argument for the solution of index Index computed by this algorithm. The returned qualifier is: - that specified at the start of construction when the solutions are defined as enclosing or outside with respect to the argument, or - that computed during construction (i.e. enclosing or outside) when the solutions are defined as unqualified with respect to the argument, or - GccEnt_noqualifier if the tangency argument is a point. Exceptions Standard_OutOfRange if Index is less than zero or greater than the number of solutions computed by this algorithm. StdFail_NotDone if the construction fails.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Qualif1:
         :type Qualif1: GccEnt_Position &
         :rtype: None
@@ -1666,12 +1666,12 @@ class GccAna_Lin2dTanObl(object):
         """
         return _GccAna.GccAna_Lin2dTanObl_WhichQualifier(self, *args)
 
-    def Tangency1(self, *args) -> "void" :
+    def Tangency1(self, *args):
         """
         * Returns informations about the tangency point between the result number Index and the first argument. ParSol is the intrinsic parameter of the point ParSol on the solution curv. ParArg is the intrinsic parameter of the point ParArg on the argument curv. Raises NotDone if the construction algorithm didn't succeed. It raises OutOfRange if Index is greater than the number of solutions.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param ParSol:
         :type ParSol: float &
         :param ParArg:
@@ -1683,12 +1683,12 @@ class GccAna_Lin2dTanObl(object):
         """
         return _GccAna.GccAna_Lin2dTanObl_Tangency1(self, *args)
 
-    def Intersection2(self, *args) -> "void" :
+    def Intersection2(self, *args):
         """
         * Returns informations about the intersection between the result number Index and the third argument. Raises NotDone if the construction algorithm didn't succeed. It raises OutOfRange if Index is greater than the number of solutions.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param ParSol:
         :type ParSol: float &
         :param ParArg:
@@ -1741,41 +1741,41 @@ class GccAna_Lin2dTanPar(object):
 
         """
         _GccAna.GccAna_Lin2dTanPar_swiginit(self,_GccAna.new_GccAna_Lin2dTanPar(*args))
-    def IsDone(self, *args) -> "Standard_Boolean" :
+    def IsDone(self):
         """
         * Returns True if the algorithm succeeded.
 
         :rtype: bool
 
         """
-        return _GccAna.GccAna_Lin2dTanPar_IsDone(self, *args)
+        return _GccAna.GccAna_Lin2dTanPar_IsDone(self)
 
-    def NbSolutions(self, *args) -> "Standard_Integer" :
+    def NbSolutions(self):
         """
         * Returns the number of solutions. Raises NotDone if the construction algorithm didn't succeed.
 
         :rtype: int
 
         """
-        return _GccAna.GccAna_Lin2dTanPar_NbSolutions(self, *args)
+        return _GccAna.GccAna_Lin2dTanPar_NbSolutions(self)
 
-    def ThisSolution(self, *args) -> "gp_Lin2d" :
+    def ThisSolution(self, *args):
         """
         * Returns the solution number Index and raises OutOfRange exception if Index is greater than the number of solutions. Be careful: the Index is only a way to get all the solutions, but is not associated to those outside the context of the algorithm-object. raises NotDone if the construction algorithm didn't succeed. It raises OutOfRange if Index is greater than the number of solutions.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: gp_Lin2d
 
         """
         return _GccAna.GccAna_Lin2dTanPar_ThisSolution(self, *args)
 
-    def WhichQualifier(self, *args) -> "void" :
+    def WhichQualifier(self, *args):
         """
         * Returns the informations about the qualifiers of the tangency arguments concerning the solution number Index. It returns the real qualifiers (the qualifiers given to the constructor method in case of enclosed, enclosing and outside and the qualifiers computed in case of unqualified). Raises NotDone if the construction algorithm didn't succeed. It raises OutOfRange if Index is greater than the number of solutions.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Qualif1:
         :type Qualif1: GccEnt_Position &
         :rtype: None
@@ -1783,12 +1783,12 @@ class GccAna_Lin2dTanPar(object):
         """
         return _GccAna.GccAna_Lin2dTanPar_WhichQualifier(self, *args)
 
-    def Tangency1(self, *args) -> "void" :
+    def Tangency1(self, *args):
         """
         * Returns informations about the tangency point between the result number Index and the first argument. ParSol is the intrinsic parameter of the point on the solution curv. ParArg is the intrinsic parameter of the point on the argument curv. ParArg is equal 0 when the solution is passing thrue a point. Raises NotDone if the construction algorithm didn't succeed. It raises OutOfRange if Index is greater than the number of solutions.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param ParSol:
         :type ParSol: float &
         :param ParArg:
@@ -1856,30 +1856,30 @@ class GccAna_Lin2dTanPer(object):
 
         """
         _GccAna.GccAna_Lin2dTanPer_swiginit(self,_GccAna.new_GccAna_Lin2dTanPer(*args))
-    def IsDone(self, *args) -> "Standard_Boolean" :
+    def IsDone(self):
         """
         * Returns True if the algorithm succeeded.
 
         :rtype: bool
 
         """
-        return _GccAna.GccAna_Lin2dTanPer_IsDone(self, *args)
+        return _GccAna.GccAna_Lin2dTanPer_IsDone(self)
 
-    def NbSolutions(self, *args) -> "Standard_Integer" :
+    def NbSolutions(self):
         """
         * Returns the number of solutions. Raises NotDone if the construction algorithm didn't succeed.
 
         :rtype: int
 
         """
-        return _GccAna.GccAna_Lin2dTanPer_NbSolutions(self, *args)
+        return _GccAna.GccAna_Lin2dTanPer_NbSolutions(self)
 
-    def WhichQualifier(self, *args) -> "void" :
+    def WhichQualifier(self, *args):
         """
         * Returns the qualifier Qualif1 of the tangency argument for the solution of index Index computed by this algorithm. The returned qualifier is: - that specified at the start of construction when the solutions are defined as enclosing or outside with respect to the argument, or - that computed during construction (i.e. enclosing or outside) when the solutions are defined as unqualified with respect to the argument, or - GccEnt_noqualifier if the tangency argument is a point. Exceptions Standard_OutOfRange if Index is less than zero or greater than the number of solutions computed by this algorithm. StdFail_NotDone if the construction fails.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Qualif1:
         :type Qualif1: GccEnt_Position &
         :rtype: None
@@ -1887,23 +1887,23 @@ class GccAna_Lin2dTanPer(object):
         """
         return _GccAna.GccAna_Lin2dTanPer_WhichQualifier(self, *args)
 
-    def ThisSolution(self, *args) -> "gp_Lin2d" :
+    def ThisSolution(self, *args):
         """
         * Returns the solution number Index and raises OutOfRange exception if Index is greater than the number of solutions. Be careful: the Index is only a way to get all the solutions, but is not associated to those outside the context of the algorithm-object. Raises NotDone if the construction algorithm didn't succeed. It raises OutOfRange if Index is greater than the number of solutions.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: gp_Lin2d
 
         """
         return _GccAna.GccAna_Lin2dTanPer_ThisSolution(self, *args)
 
-    def Tangency1(self, *args) -> "void" :
+    def Tangency1(self, *args):
         """
         * Returns informations about the tangency point between the result number Index and the first argument. ParSol is the intrinsic parameter of the point on the solution curv. ParArg is the intrinsic parameter of the point on the argument curv. If the first argument is a point ParArg is equal zero. raises NotDone if the construction algorithm didn't succeed. It raises OutOfRange if Index is greater than the number of solutions.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param ParSol:
         :type ParSol: float &
         :param ParArg:
@@ -1915,12 +1915,12 @@ class GccAna_Lin2dTanPer(object):
         """
         return _GccAna.GccAna_Lin2dTanPer_Tangency1(self, *args)
 
-    def Intersection2(self, *args) -> "void" :
+    def Intersection2(self, *args):
         """
         * Returns informations about the intersection between the solution number Index and the second argument. It returns the first intersection in a case of Lin2dTanPer which is perpendicular to a circle . ParSol is the intrinsic parameter of the point on the solution curv. ParArg is the intrinsic parameter of the point on the argument curv. Raises NotDone if the construction algorithm didn't succeed. It raises OutOfRange if Index is greater than the number of solutions.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param ParSol:
         :type ParSol: float &
         :param ParArg:
@@ -1965,23 +1965,23 @@ class GccAna_LinPnt2dBisec(object):
 
         """
         _GccAna.GccAna_LinPnt2dBisec_swiginit(self,_GccAna.new_GccAna_LinPnt2dBisec(*args))
-    def IsDone(self, *args) -> "Standard_Boolean" :
+    def IsDone(self):
         """
         * Returns True if the algorithm succeeded.
 
         :rtype: bool
 
         """
-        return _GccAna.GccAna_LinPnt2dBisec_IsDone(self, *args)
+        return _GccAna.GccAna_LinPnt2dBisec_IsDone(self)
 
-    def ThisSolution(self, *args) -> "Handle_GccInt_Bisec" :
+    def ThisSolution(self):
         """
         * Returns the number of solutions. It raises NotDone if the construction algorithm didn't succeed.
 
         :rtype: Handle_GccInt_Bisec
 
         """
-        return _GccAna.GccAna_LinPnt2dBisec_ThisSolution(self, *args)
+        return _GccAna.GccAna_LinPnt2dBisec_ThisSolution(self)
 
     def __del__(self):
     	try:
@@ -2012,32 +2012,32 @@ class GccAna_Pnt2dBisec(object):
 
         """
         _GccAna.GccAna_Pnt2dBisec_swiginit(self,_GccAna.new_GccAna_Pnt2dBisec(*args))
-    def IsDone(self, *args) -> "Standard_Boolean" :
+    def IsDone(self):
         """
         * Returns true (this construction algorithm never fails).
 
         :rtype: bool
 
         """
-        return _GccAna.GccAna_Pnt2dBisec_IsDone(self, *args)
+        return _GccAna.GccAna_Pnt2dBisec_IsDone(self)
 
-    def HasSolution(self, *args) -> "Standard_Boolean" :
+    def HasSolution(self):
         """
         * Returns true if this algorithm has a solution, i.e. if the two points are not coincident.
 
         :rtype: bool
 
         """
-        return _GccAna.GccAna_Pnt2dBisec_HasSolution(self, *args)
+        return _GccAna.GccAna_Pnt2dBisec_HasSolution(self)
 
-    def ThisSolution(self, *args) -> "gp_Lin2d" :
+    def ThisSolution(self):
         """
         * Returns a line, representing the solution computed by this algorithm.
 
         :rtype: gp_Lin2d
 
         """
-        return _GccAna.GccAna_Pnt2dBisec_ThisSolution(self, *args)
+        return _GccAna.GccAna_Pnt2dBisec_ThisSolution(self)
 
     def __del__(self):
     	try:

@@ -125,13 +125,13 @@ import OCC.TopTools
 class IGESControl_ActorWrite(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _IGESControl.IGESControl_ActorWrite_swiginit(self,_IGESControl.new_IGESControl_ActorWrite(*args))
-    def Recognize(self, *args) -> "Standard_Boolean" :
+        _IGESControl.IGESControl_ActorWrite_swiginit(self,_IGESControl.new_IGESControl_ActorWrite())
+    def Recognize(self, *args):
         """
         * Recognizes a ShapeMapper
 
@@ -142,7 +142,7 @@ class IGESControl_ActorWrite(object):
         """
         return _IGESControl.IGESControl_ActorWrite_Recognize(self, *args)
 
-    def Transfer(self, *args) -> "Handle_Transfer_Binder" :
+    def Transfer(self, *args):
         """
         * Transfers Shape to IGES Entities ModeTrans may be : 0 -> groups of Faces or 1 -> BRep
 
@@ -191,21 +191,21 @@ Handle_IGESControl_ActorWrite._kill_pointed = new_instancemethod(_IGESControl.Ha
 Handle_IGESControl_ActorWrite_swigregister = _IGESControl.Handle_IGESControl_ActorWrite_swigregister
 Handle_IGESControl_ActorWrite_swigregister(Handle_IGESControl_ActorWrite)
 
-def Handle_IGESControl_ActorWrite_DownCast(*args) -> "Handle_IGESControl_ActorWrite const" :
+def Handle_IGESControl_ActorWrite_DownCast(*args):
   return _IGESControl.Handle_IGESControl_ActorWrite_DownCast(*args)
 Handle_IGESControl_ActorWrite_DownCast = _IGESControl.Handle_IGESControl_ActorWrite_DownCast
 
 class IGESControl_AlgoContainer(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         * Empty constructor
 
         :rtype: None
 
         """
-        _IGESControl.IGESControl_AlgoContainer_swiginit(self,_IGESControl.new_IGESControl_AlgoContainer(*args))
+        _IGESControl.IGESControl_AlgoContainer_swiginit(self,_IGESControl.new_IGESControl_AlgoContainer())
     def __del__(self):
     	try:
     		self.thisown = False
@@ -240,7 +240,7 @@ Handle_IGESControl_AlgoContainer._kill_pointed = new_instancemethod(_IGESControl
 Handle_IGESControl_AlgoContainer_swigregister = _IGESControl.Handle_IGESControl_AlgoContainer_swigregister
 Handle_IGESControl_AlgoContainer_swigregister(Handle_IGESControl_AlgoContainer)
 
-def Handle_IGESControl_AlgoContainer_DownCast(*args) -> "Handle_IGESControl_AlgoContainer const" :
+def Handle_IGESControl_AlgoContainer_DownCast(*args):
   return _IGESControl.Handle_IGESControl_AlgoContainer_DownCast(*args)
 Handle_IGESControl_AlgoContainer_DownCast = _IGESControl.Handle_IGESControl_AlgoContainer_DownCast
 
@@ -255,23 +255,58 @@ class IGESControl_Controller(OCC.XSControl.XSControl_Controller):
         :type modefnes: bool
         :rtype: None
 
+        * Initializes the use of IGES Norm (the first time) and returns a Controller for IGES-5.1 If <modefnes> is True, sets it to internal FNES format
+
+        :param modefnes: default value is Standard_False
+        :type modefnes: bool
+        :rtype: None
+
         """
         _IGESControl.IGESControl_Controller_swiginit(self,_IGESControl.new_IGESControl_Controller(*args))
-    def Init(*args) -> "Standard_Boolean" :
+    def TransferWriteShape(self, *args):
+        """
+        * Takes one Shape and transfers it to the InterfaceModel (already created by NewModel for instance) <modetrans> is to be interpreted by each kind of XstepAdaptor Returns a status : 0 OK 1 No result 2 Fail -1 bad modeshape  -2 bad model (requires an IGESModel) modeshape : 0 groupe of face (version < 5.1)  1 BREP-version 5.1 of IGES
+
+        :param shape:
+        :type shape: TopoDS_Shape &
+        :param FP:
+        :type FP: Handle_Transfer_FinderProcess &
+        :param model:
+        :type model: Handle_Interface_InterfaceModel &
+        :param modetrans: default value is 0
+        :type modetrans: Standard_Integer
+        :rtype: IFSelect_ReturnStatus
+
+        * Takes one Shape and transfers it to the InterfaceModel (already created by NewModel for instance) <modetrans> is to be interpreted by each kind of XstepAdaptor Returns a status : 0 OK 1 No result 2 Fail -1 bad modeshape  -2 bad model (requires an IGESModel) modeshape : 0 groupe of face (version < 5.1)  1 BREP-version 5.1 of IGES
+
+        :param shape:
+        :type shape: TopoDS_Shape &
+        :param FP:
+        :type FP: Handle_Transfer_FinderProcess &
+        :param model:
+        :type model: Handle_Interface_InterfaceModel &
+        :param modetrans: default value is 0
+        :type modetrans: Standard_Integer
+        :rtype: IFSelect_ReturnStatus
+
+        """
+        return _IGESControl.IGESControl_Controller_TransferWriteShape(self, *args)
+
+    def Init():
         """
         * Standard Initialisation. It creates a Controller for IGES and records it to various names, available to select it later Returns True when done, False if could not be done Also, it creates and records an Adaptor for FNES
 
         :rtype: bool
 
         """
-        return _IGESControl.IGESControl_Controller_Init(*args)
+        return _IGESControl.IGESControl_Controller_Init()
 
     Init = staticmethod(Init)
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(IGESControl_Controller self)"""
         return _IGESControl.IGESControl_Controller__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_IGESControl_Controller" :
+    def GetHandle(self):
         """GetHandle(IGESControl_Controller self) -> Handle_IGESControl_Controller"""
         return _IGESControl.IGESControl_Controller_GetHandle(self)
 
@@ -283,19 +318,20 @@ class IGESControl_Controller(OCC.XSControl.XSControl_Controller):
     		pass
 
 
+IGESControl_Controller.TransferWriteShape = new_instancemethod(_IGESControl.IGESControl_Controller_TransferWriteShape,None,IGESControl_Controller)
 IGESControl_Controller._kill_pointed = new_instancemethod(_IGESControl.IGESControl_Controller__kill_pointed,None,IGESControl_Controller)
 IGESControl_Controller.GetHandle = new_instancemethod(_IGESControl.IGESControl_Controller_GetHandle,None,IGESControl_Controller)
 IGESControl_Controller_swigregister = _IGESControl.IGESControl_Controller_swigregister
 IGESControl_Controller_swigregister(IGESControl_Controller)
 
-def IGESControl_Controller_Init(*args) -> "Standard_Boolean" :
+def IGESControl_Controller_Init():
   """
     * Standard Initialisation. It creates a Controller for IGES and records it to various names, available to select it later Returns True when done, False if could not be done Also, it creates and records an Adaptor for FNES
 
     :rtype: bool
 
     """
-  return _IGESControl.IGESControl_Controller_Init(*args)
+  return _IGESControl.IGESControl_Controller_Init()
 
 class Handle_IGESControl_Controller(OCC.XSControl.Handle_XSControl_Controller):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
@@ -318,7 +354,7 @@ Handle_IGESControl_Controller._kill_pointed = new_instancemethod(_IGESControl.Ha
 Handle_IGESControl_Controller_swigregister = _IGESControl.Handle_IGESControl_Controller_swigregister
 Handle_IGESControl_Controller_swigregister(Handle_IGESControl_Controller)
 
-def Handle_IGESControl_Controller_DownCast(*args) -> "Handle_IGESControl_Controller const" :
+def Handle_IGESControl_Controller_DownCast(*args):
   return _IGESControl.Handle_IGESControl_Controller_DownCast(*args)
 Handle_IGESControl_Controller_DownCast = _IGESControl.Handle_IGESControl_Controller_DownCast
 
@@ -339,7 +375,7 @@ class IGESControl_IGESBoundary(object):
 
         """
         _IGESControl.IGESControl_IGESBoundary_swiginit(self,_IGESControl.new_IGESControl_IGESBoundary(*args))
-    def Check(self, *args) -> "void" :
+    def Check(self, *args):
         """
         * Checks result of translation of IGES boundary entities (types 141, 142 or 508). Checks consistency of 2D and 3D representations and keeps only one if they are inconsistent. Checks the closure of resulting wire and if it is not closed, checks 2D and 3D representation and updates the resulting wire to contain only closed representation.
 
@@ -391,7 +427,7 @@ Handle_IGESControl_IGESBoundary._kill_pointed = new_instancemethod(_IGESControl.
 Handle_IGESControl_IGESBoundary_swigregister = _IGESControl.Handle_IGESControl_IGESBoundary_swigregister
 Handle_IGESControl_IGESBoundary_swigregister(Handle_IGESControl_IGESBoundary)
 
-def Handle_IGESControl_IGESBoundary_DownCast(*args) -> "Handle_IGESControl_IGESBoundary const" :
+def Handle_IGESControl_IGESBoundary_DownCast(*args):
   return _IGESControl.Handle_IGESControl_IGESBoundary_DownCast(*args)
 Handle_IGESControl_IGESBoundary_DownCast = _IGESControl.Handle_IGESControl_IGESBoundary_DownCast
 
@@ -412,9 +448,17 @@ class IGESControl_Reader(OCC.XSControl.XSControl_Reader):
         :type scratch: bool
         :rtype: None
 
+        * Creates a Reader from an already existing Session
+
+        :param WS:
+        :type WS: Handle_XSControl_WorkSession &
+        :param scratch: default value is Standard_True
+        :type scratch: bool
+        :rtype: None
+
         """
         _IGESControl.IGESControl_Reader_swiginit(self,_IGESControl.new_IGESControl_Reader(*args))
-    def SetReadVisible(self, *args) -> "void" :
+    def SetReadVisible(self, *args):
         """
         * Set the transion of ALL Roots (if theReadOnlyVisible is False) or of Visible Roots (if theReadOnlyVisible is True)
 
@@ -425,23 +469,23 @@ class IGESControl_Reader(OCC.XSControl.XSControl_Reader):
         """
         return _IGESControl.IGESControl_Reader_SetReadVisible(self, *args)
 
-    def GetReadVisible(self, *args) -> "Standard_Boolean" :
+    def GetReadVisible(self):
         """
         :rtype: bool
 
         """
-        return _IGESControl.IGESControl_Reader_GetReadVisible(self, *args)
+        return _IGESControl.IGESControl_Reader_GetReadVisible(self)
 
-    def IGESModel(self, *args) -> "Handle_IGESData_IGESModel" :
+    def IGESModel(self):
         """
         * Returns the model as a IGESModel. It can then be consulted (header, product)
 
         :rtype: Handle_IGESData_IGESModel
 
         """
-        return _IGESControl.IGESControl_Reader_IGESModel(self, *args)
+        return _IGESControl.IGESControl_Reader_IGESModel(self)
 
-    def PrintTransferInfo(self, *args) -> "void" :
+    def PrintTransferInfo(self, *args):
         """
         * Prints Statistics and check list for Transfer
 
@@ -473,22 +517,22 @@ IGESControl_Reader_swigregister(IGESControl_Reader)
 class IGESControl_ToolContainer(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         * Empty constructor
 
         :rtype: None
 
         """
-        _IGESControl.IGESControl_ToolContainer_swiginit(self,_IGESControl.new_IGESControl_ToolContainer(*args))
-    def IGESBoundary(self, *args) -> "Handle_IGESToBRep_IGESBoundary" :
+        _IGESControl.IGESControl_ToolContainer_swiginit(self,_IGESControl.new_IGESControl_ToolContainer())
+    def IGESBoundary(self):
         """
         * Returns IGESControl_IGESBoundary
 
         :rtype: Handle_IGESToBRep_IGESBoundary
 
         """
-        return _IGESControl.IGESControl_ToolContainer_IGESBoundary(self, *args)
+        return _IGESControl.IGESControl_ToolContainer_IGESBoundary(self)
 
     def __del__(self):
     	try:
@@ -525,7 +569,7 @@ Handle_IGESControl_ToolContainer._kill_pointed = new_instancemethod(_IGESControl
 Handle_IGESControl_ToolContainer_swigregister = _IGESControl.Handle_IGESControl_ToolContainer_swigregister
 Handle_IGESControl_ToolContainer_swigregister(Handle_IGESControl_ToolContainer)
 
-def Handle_IGESControl_ToolContainer_DownCast(*args) -> "Handle_IGESControl_ToolContainer const" :
+def Handle_IGESControl_ToolContainer_DownCast(*args):
   return _IGESControl.Handle_IGESControl_ToolContainer_DownCast(*args)
 Handle_IGESControl_ToolContainer_DownCast = _IGESControl.Handle_IGESControl_ToolContainer_DownCast
 
@@ -543,7 +587,15 @@ class IGESControl_Writer(object):
         :param unit:
         :type unit: char *
         :param modecr: default value is 0
-        :type modecr: int
+        :type modecr: Standard_Integer
+        :rtype: None
+
+        * Creates a writer with given values for units and for write mode. unit may be any unit that is accepted by the IGES standard. By default, it is the millimeter. modecr defines the write mode and may be: - 0: Faces (default) - 1: BRep.
+
+        :param unit:
+        :type unit: char *
+        :param modecr: default value is 0
+        :type modecr: Standard_Integer
         :rtype: None
 
         * Creates a writer object with the prepared IGES model model in write mode. modecr defines the write mode and may be: - 0: Faces (default) - 1: BRep.
@@ -551,28 +603,36 @@ class IGESControl_Writer(object):
         :param model:
         :type model: Handle_IGESData_IGESModel &
         :param modecr: default value is 0
-        :type modecr: int
+        :type modecr: Standard_Integer
+        :rtype: None
+
+        * Creates a writer object with the prepared IGES model model in write mode. modecr defines the write mode and may be: - 0: Faces (default) - 1: BRep.
+
+        :param model:
+        :type model: Handle_IGESData_IGESModel &
+        :param modecr: default value is 0
+        :type modecr: Standard_Integer
         :rtype: None
 
         """
         _IGESControl.IGESControl_Writer_swiginit(self,_IGESControl.new_IGESControl_Writer(*args))
-    def Model(self, *args) -> "Handle_IGESData_IGESModel" :
+    def Model(self):
         """
         * Returns the IGES model to be written in output.
 
         :rtype: Handle_IGESData_IGESModel
 
         """
-        return _IGESControl.IGESControl_Writer_Model(self, *args)
+        return _IGESControl.IGESControl_Writer_Model(self)
 
-    def TransferProcess(self, *args) -> "Handle_Transfer_FinderProcess" :
+    def TransferProcess(self):
         """
         :rtype: Handle_Transfer_FinderProcess
 
         """
-        return _IGESControl.IGESControl_Writer_TransferProcess(self, *args)
+        return _IGESControl.IGESControl_Writer_TransferProcess(self)
 
-    def SetTransferProcess(self, *args) -> "void" :
+    def SetTransferProcess(self, *args):
         """
         * Returns/Sets the TransferProcess : it contains final results and if some, check messages
 
@@ -583,7 +643,7 @@ class IGESControl_Writer(object):
         """
         return _IGESControl.IGESControl_Writer_SetTransferProcess(self, *args)
 
-    def AddShape(self, *args) -> "Standard_Boolean" :
+    def AddShape(self, *args):
         """
         * Translates a Shape to IGES Entities and adds them to the model Returns True if done, False if Shape not suitable for IGES or null
 
@@ -594,7 +654,7 @@ class IGESControl_Writer(object):
         """
         return _IGESControl.IGESControl_Writer_AddShape(self, *args)
 
-    def AddGeom(self, *args) -> "Standard_Boolean" :
+    def AddGeom(self, *args):
         """
         * Translates a Geometry (Surface or Curve) to IGES Entities and adds them to the model Returns True if done, False if geom is neither a Surface or a Curve suitable for IGES or is null
 
@@ -605,7 +665,7 @@ class IGESControl_Writer(object):
         """
         return _IGESControl.IGESControl_Writer_AddGeom(self, *args)
 
-    def AddEntity(self, *args) -> "Standard_Boolean" :
+    def AddEntity(self, *args):
         """
         * Adds an IGES entity (and the ones it references) to the model
 
@@ -616,17 +676,25 @@ class IGESControl_Writer(object):
         """
         return _IGESControl.IGESControl_Writer_AddEntity(self, *args)
 
-    def ComputeModel(self, *args) -> "void" :
+    def ComputeModel(self):
         """
         * Computes the entities found in the model, which is ready to be written. This contrasts with the default computation of headers only.
 
         :rtype: None
 
         """
-        return _IGESControl.IGESControl_Writer_ComputeModel(self, *args)
+        return _IGESControl.IGESControl_Writer_ComputeModel(self)
 
-    def Write(self, *args) -> "Standard_Boolean" :
+    def Write(self, *args):
         """
+        * Computes then writes the model to an OStream Returns True when done, false in case of error
+
+        :param S:
+        :type S: Standard_OStream &
+        :param fnes: default value is Standard_False
+        :type fnes: bool
+        :rtype: bool
+
         * Computes then writes the model to an OStream Returns True when done, false in case of error
 
         :param S:
@@ -643,17 +711,33 @@ class IGESControl_Writer(object):
         :type fnes: bool
         :rtype: bool
 
+        * Prepares and writes an IGES model either to an OStream, S or to a file name,CString. Returns True if the operation was performed correctly and False if an error occurred (for instance, if the processor could not create the file).
+
+        :param file:
+        :type file: char *
+        :param fnes: default value is Standard_False
+        :type fnes: bool
+        :rtype: bool
+
         """
         return _IGESControl.IGESControl_Writer_Write(self, *args)
 
-    def PrintStatsTransfer(self, *args) -> "void" :
+    def PrintStatsTransfer(self, *args):
         """
         * Prints Statistics about Transfer
 
         :param what:
-        :type what: int
+        :type what: Standard_Integer
         :param mode: default value is 0
-        :type mode: int
+        :type mode: Standard_Integer
+        :rtype: None
+
+        * Prints Statistics about Transfer
+
+        :param what:
+        :type what: Standard_Integer
+        :param mode: default value is 0
+        :type mode: Standard_Integer
         :rtype: None
 
         """

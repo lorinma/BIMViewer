@@ -112,8 +112,9 @@ import OCC.Standard
 import OCC.gp
 class elslib(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
+    def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def Value(*args) -> "gp_Pnt" :
+    def Value(*args):
         """
         * For elementary surfaces from the gp package (planes, cones, cylinders, spheres and tori), computes the point of parameters (U, V).
 
@@ -161,7 +162,7 @@ class elslib(object):
         return _ElSLib.elslib_Value(*args)
 
     Value = staticmethod(Value)
-    def DN(*args) -> "gp_Vec" :
+    def DN(*args):
         """
         * For elementary surfaces from the gp package (planes, cones, cylinders, spheres and tori), computes the derivative vector of order Nu and Nv in the u and v parametric directions respectively, at the point of parameters (U, V).
 
@@ -172,9 +173,9 @@ class elslib(object):
         :param Pl:
         :type Pl: gp_Pln
         :param Nu:
-        :type Nu: int
+        :type Nu: Standard_Integer
         :param Nv:
-        :type Nv: int
+        :type Nv: Standard_Integer
         :rtype: gp_Vec
 
         :param U:
@@ -184,9 +185,9 @@ class elslib(object):
         :param C:
         :type C: gp_Cone
         :param Nu:
-        :type Nu: int
+        :type Nu: Standard_Integer
         :param Nv:
-        :type Nv: int
+        :type Nv: Standard_Integer
         :rtype: gp_Vec
 
         :param U:
@@ -196,9 +197,9 @@ class elslib(object):
         :param C:
         :type C: gp_Cylinder
         :param Nu:
-        :type Nu: int
+        :type Nu: Standard_Integer
         :param Nv:
-        :type Nv: int
+        :type Nv: Standard_Integer
         :rtype: gp_Vec
 
         :param U:
@@ -208,9 +209,9 @@ class elslib(object):
         :param S:
         :type S: gp_Sphere
         :param Nu:
-        :type Nu: int
+        :type Nu: Standard_Integer
         :param Nv:
-        :type Nv: int
+        :type Nv: Standard_Integer
         :rtype: gp_Vec
 
         :param U:
@@ -220,16 +221,16 @@ class elslib(object):
         :param T:
         :type T: gp_Torus
         :param Nu:
-        :type Nu: int
+        :type Nu: Standard_Integer
         :param Nv:
-        :type Nv: int
+        :type Nv: Standard_Integer
         :rtype: gp_Vec
 
         """
         return _ElSLib.elslib_DN(*args)
 
     DN = staticmethod(DN)
-    def D0(*args) -> "void" :
+    def D0(*args):
         """
         * For elementary surfaces from the gp package (planes, cones, cylinders, spheres and tori), computes the point P of parameters (U, V).inline
 
@@ -287,7 +288,7 @@ class elslib(object):
         return _ElSLib.elslib_D0(*args)
 
     D0 = staticmethod(D0)
-    def D1(*args) -> "void" :
+    def D1(*args):
         """
         * For elementary surfaces from the gp package (planes, cones, cylinders, spheres and tori), computes: - the point P of parameters (U, V), and - the first derivative vectors Vu and Vv at this point in the u and v parametric directions respectively.
 
@@ -365,7 +366,7 @@ class elslib(object):
         return _ElSLib.elslib_D1(*args)
 
     D1 = staticmethod(D1)
-    def D2(*args) -> "void" :
+    def D2(*args):
         """
         * For elementary surfaces from the gp package (cones, cylinders, spheres and tori), computes: - the point P of parameters (U, V), and - the first derivative vectors Vu and Vv at this point in the u and v parametric directions respectively, and - the second derivative vectors Vuu, Vvv and Vuv at this point.
 
@@ -453,7 +454,7 @@ class elslib(object):
         return _ElSLib.elslib_D2(*args)
 
     D2 = staticmethod(D2)
-    def D3(*args) -> "void" :
+    def D3(*args):
         """
         * For elementary surfaces from the gp package (cones, cylinders, spheres and tori), computes: - the point P of parameters (U,V), and - the first derivative vectors Vu and Vv at this point in the u and v parametric directions respectively, and - the second derivative vectors Vuu, Vvv and Vuv at this point, and - the third derivative vectors Vuuu, Vvvv, Vuuv and Vuvv at this point.
 
@@ -575,7 +576,7 @@ class elslib(object):
         return _ElSLib.elslib_D3(*args)
 
     D3 = staticmethod(D3)
-    def PlaneValue(*args) -> "gp_Pnt" :
+    def PlaneValue(*args):
         """
         :param U:
         :type U: float
@@ -589,7 +590,7 @@ class elslib(object):
         return _ElSLib.elslib_PlaneValue(*args)
 
     PlaneValue = staticmethod(PlaneValue)
-    def CylinderValue(*args) -> "gp_Pnt" :
+    def CylinderValue(*args):
         """
         :param U:
         :type U: float
@@ -605,7 +606,7 @@ class elslib(object):
         return _ElSLib.elslib_CylinderValue(*args)
 
     CylinderValue = staticmethod(CylinderValue)
-    def ConeValue(*args) -> "gp_Pnt" :
+    def ConeValue(*args):
         """
         :param U:
         :type U: float
@@ -623,7 +624,7 @@ class elslib(object):
         return _ElSLib.elslib_ConeValue(*args)
 
     ConeValue = staticmethod(ConeValue)
-    def SphereValue(*args) -> "gp_Pnt" :
+    def SphereValue(*args):
         """
         :param U:
         :type U: float
@@ -639,7 +640,7 @@ class elslib(object):
         return _ElSLib.elslib_SphereValue(*args)
 
     SphereValue = staticmethod(SphereValue)
-    def TorusValue(*args) -> "gp_Pnt" :
+    def TorusValue(*args):
         """
         :param U:
         :type U: float
@@ -657,7 +658,7 @@ class elslib(object):
         return _ElSLib.elslib_TorusValue(*args)
 
     TorusValue = staticmethod(TorusValue)
-    def PlaneDN(*args) -> "gp_Vec" :
+    def PlaneDN(*args):
         """
         :param U:
         :type U: float
@@ -666,16 +667,16 @@ class elslib(object):
         :param Pos:
         :type Pos: gp_Ax3
         :param Nu:
-        :type Nu: int
+        :type Nu: Standard_Integer
         :param Nv:
-        :type Nv: int
+        :type Nv: Standard_Integer
         :rtype: gp_Vec
 
         """
         return _ElSLib.elslib_PlaneDN(*args)
 
     PlaneDN = staticmethod(PlaneDN)
-    def CylinderDN(*args) -> "gp_Vec" :
+    def CylinderDN(*args):
         """
         :param U:
         :type U: float
@@ -686,16 +687,16 @@ class elslib(object):
         :param Radius:
         :type Radius: float
         :param Nu:
-        :type Nu: int
+        :type Nu: Standard_Integer
         :param Nv:
-        :type Nv: int
+        :type Nv: Standard_Integer
         :rtype: gp_Vec
 
         """
         return _ElSLib.elslib_CylinderDN(*args)
 
     CylinderDN = staticmethod(CylinderDN)
-    def ConeDN(*args) -> "gp_Vec" :
+    def ConeDN(*args):
         """
         :param U:
         :type U: float
@@ -708,16 +709,16 @@ class elslib(object):
         :param SAngle:
         :type SAngle: float
         :param Nu:
-        :type Nu: int
+        :type Nu: Standard_Integer
         :param Nv:
-        :type Nv: int
+        :type Nv: Standard_Integer
         :rtype: gp_Vec
 
         """
         return _ElSLib.elslib_ConeDN(*args)
 
     ConeDN = staticmethod(ConeDN)
-    def SphereDN(*args) -> "gp_Vec" :
+    def SphereDN(*args):
         """
         :param U:
         :type U: float
@@ -728,16 +729,16 @@ class elslib(object):
         :param Radius:
         :type Radius: float
         :param Nu:
-        :type Nu: int
+        :type Nu: Standard_Integer
         :param Nv:
-        :type Nv: int
+        :type Nv: Standard_Integer
         :rtype: gp_Vec
 
         """
         return _ElSLib.elslib_SphereDN(*args)
 
     SphereDN = staticmethod(SphereDN)
-    def TorusDN(*args) -> "gp_Vec" :
+    def TorusDN(*args):
         """
         :param U:
         :type U: float
@@ -750,16 +751,16 @@ class elslib(object):
         :param MinorRadius:
         :type MinorRadius: float
         :param Nu:
-        :type Nu: int
+        :type Nu: Standard_Integer
         :param Nv:
-        :type Nv: int
+        :type Nv: Standard_Integer
         :rtype: gp_Vec
 
         """
         return _ElSLib.elslib_TorusDN(*args)
 
     TorusDN = staticmethod(TorusDN)
-    def PlaneD0(*args) -> "void" :
+    def PlaneD0(*args):
         """
         :param U:
         :type U: float
@@ -775,7 +776,7 @@ class elslib(object):
         return _ElSLib.elslib_PlaneD0(*args)
 
     PlaneD0 = staticmethod(PlaneD0)
-    def ConeD0(*args) -> "void" :
+    def ConeD0(*args):
         """
         :param U:
         :type U: float
@@ -795,7 +796,7 @@ class elslib(object):
         return _ElSLib.elslib_ConeD0(*args)
 
     ConeD0 = staticmethod(ConeD0)
-    def CylinderD0(*args) -> "void" :
+    def CylinderD0(*args):
         """
         :param U:
         :type U: float
@@ -813,7 +814,7 @@ class elslib(object):
         return _ElSLib.elslib_CylinderD0(*args)
 
     CylinderD0 = staticmethod(CylinderD0)
-    def SphereD0(*args) -> "void" :
+    def SphereD0(*args):
         """
         :param U:
         :type U: float
@@ -831,7 +832,7 @@ class elslib(object):
         return _ElSLib.elslib_SphereD0(*args)
 
     SphereD0 = staticmethod(SphereD0)
-    def TorusD0(*args) -> "void" :
+    def TorusD0(*args):
         """
         :param U:
         :type U: float
@@ -851,7 +852,7 @@ class elslib(object):
         return _ElSLib.elslib_TorusD0(*args)
 
     TorusD0 = staticmethod(TorusD0)
-    def PlaneD1(*args) -> "void" :
+    def PlaneD1(*args):
         """
         :param U:
         :type U: float
@@ -871,7 +872,7 @@ class elslib(object):
         return _ElSLib.elslib_PlaneD1(*args)
 
     PlaneD1 = staticmethod(PlaneD1)
-    def ConeD1(*args) -> "void" :
+    def ConeD1(*args):
         """
         :param U:
         :type U: float
@@ -895,7 +896,7 @@ class elslib(object):
         return _ElSLib.elslib_ConeD1(*args)
 
     ConeD1 = staticmethod(ConeD1)
-    def CylinderD1(*args) -> "void" :
+    def CylinderD1(*args):
         """
         :param U:
         :type U: float
@@ -917,7 +918,7 @@ class elslib(object):
         return _ElSLib.elslib_CylinderD1(*args)
 
     CylinderD1 = staticmethod(CylinderD1)
-    def SphereD1(*args) -> "void" :
+    def SphereD1(*args):
         """
         :param U:
         :type U: float
@@ -939,7 +940,7 @@ class elslib(object):
         return _ElSLib.elslib_SphereD1(*args)
 
     SphereD1 = staticmethod(SphereD1)
-    def TorusD1(*args) -> "void" :
+    def TorusD1(*args):
         """
         :param U:
         :type U: float
@@ -963,7 +964,7 @@ class elslib(object):
         return _ElSLib.elslib_TorusD1(*args)
 
     TorusD1 = staticmethod(TorusD1)
-    def ConeD2(*args) -> "void" :
+    def ConeD2(*args):
         """
         :param U:
         :type U: float
@@ -993,7 +994,7 @@ class elslib(object):
         return _ElSLib.elslib_ConeD2(*args)
 
     ConeD2 = staticmethod(ConeD2)
-    def CylinderD2(*args) -> "void" :
+    def CylinderD2(*args):
         """
         :param U:
         :type U: float
@@ -1021,7 +1022,7 @@ class elslib(object):
         return _ElSLib.elslib_CylinderD2(*args)
 
     CylinderD2 = staticmethod(CylinderD2)
-    def SphereD2(*args) -> "void" :
+    def SphereD2(*args):
         """
         :param U:
         :type U: float
@@ -1049,7 +1050,7 @@ class elslib(object):
         return _ElSLib.elslib_SphereD2(*args)
 
     SphereD2 = staticmethod(SphereD2)
-    def TorusD2(*args) -> "void" :
+    def TorusD2(*args):
         """
         :param U:
         :type U: float
@@ -1079,7 +1080,7 @@ class elslib(object):
         return _ElSLib.elslib_TorusD2(*args)
 
     TorusD2 = staticmethod(TorusD2)
-    def ConeD3(*args) -> "void" :
+    def ConeD3(*args):
         """
         :param U:
         :type U: float
@@ -1117,7 +1118,7 @@ class elslib(object):
         return _ElSLib.elslib_ConeD3(*args)
 
     ConeD3 = staticmethod(ConeD3)
-    def CylinderD3(*args) -> "void" :
+    def CylinderD3(*args):
         """
         :param U:
         :type U: float
@@ -1153,7 +1154,7 @@ class elslib(object):
         return _ElSLib.elslib_CylinderD3(*args)
 
     CylinderD3 = staticmethod(CylinderD3)
-    def SphereD3(*args) -> "void" :
+    def SphereD3(*args):
         """
         :param U:
         :type U: float
@@ -1189,7 +1190,7 @@ class elslib(object):
         return _ElSLib.elslib_SphereD3(*args)
 
     SphereD3 = staticmethod(SphereD3)
-    def TorusD3(*args) -> "void" :
+    def TorusD3(*args):
         """
         * The following functions compute the parametric values corresponding to a given point on a elementary surface. The point should be on the surface.
 
@@ -1229,7 +1230,7 @@ class elslib(object):
         return _ElSLib.elslib_TorusD3(*args)
 
     TorusD3 = staticmethod(TorusD3)
-    def Parameters(*args) -> "Standard_Real &, Standard_Real &" :
+    def Parameters(*args):
         """
         * parametrization P (U, V) = Pl.Location() + U * Pl.XDirection() + V * Pl.YDirection()
 
@@ -1295,7 +1296,7 @@ class elslib(object):
         return _ElSLib.elslib_Parameters(*args)
 
     Parameters = staticmethod(Parameters)
-    def PlaneParameters(*args) -> "Standard_Real &, Standard_Real &" :
+    def PlaneParameters(*args):
         """
         * parametrization P (U, V) = Pl.Location() + U * Pl.XDirection() + V * Pl.YDirection()
 
@@ -1313,7 +1314,7 @@ class elslib(object):
         return _ElSLib.elslib_PlaneParameters(*args)
 
     PlaneParameters = staticmethod(PlaneParameters)
-    def CylinderParameters(*args) -> "Standard_Real &, Standard_Real &" :
+    def CylinderParameters(*args):
         """
         * parametrization P (U, V) = Location + V * ZDirection + Radius * (Cos(U) * XDirection + Sin (U) * YDirection)
 
@@ -1333,7 +1334,7 @@ class elslib(object):
         return _ElSLib.elslib_CylinderParameters(*args)
 
     CylinderParameters = staticmethod(CylinderParameters)
-    def ConeParameters(*args) -> "Standard_Real &, Standard_Real &" :
+    def ConeParameters(*args):
         """
         * parametrization P (U, V) = Location + V * ZDirection + (Radius + V * Tan (SemiAngle)) * (Cos(U) * XDirection + Sin(U) * YDirection)
 
@@ -1355,7 +1356,7 @@ class elslib(object):
         return _ElSLib.elslib_ConeParameters(*args)
 
     ConeParameters = staticmethod(ConeParameters)
-    def SphereParameters(*args) -> "Standard_Real &, Standard_Real &" :
+    def SphereParameters(*args):
         """
         * parametrization P (U, V) = Location + Radius * Cos (V) * (Cos (U) * XDirection + Sin (U) * YDirection) + Radius * Sin (V) * ZDirection
 
@@ -1375,7 +1376,7 @@ class elslib(object):
         return _ElSLib.elslib_SphereParameters(*args)
 
     SphereParameters = staticmethod(SphereParameters)
-    def TorusParameters(*args) -> "Standard_Real &, Standard_Real &" :
+    def TorusParameters(*args):
         """
         * parametrization P (U, V) = Location + (MajorRadius + MinorRadius * Cos(U)) * (Cos(V) * XDirection - Sin(V) * YDirection) + MinorRadius * Sin(U) * ZDirection
 
@@ -1397,7 +1398,7 @@ class elslib(object):
         return _ElSLib.elslib_TorusParameters(*args)
 
     TorusParameters = staticmethod(TorusParameters)
-    def PlaneUIso(*args) -> "gp_Lin" :
+    def PlaneUIso(*args):
         """
         * compute the U Isoparametric gp_Lin of the plane.
 
@@ -1411,7 +1412,7 @@ class elslib(object):
         return _ElSLib.elslib_PlaneUIso(*args)
 
     PlaneUIso = staticmethod(PlaneUIso)
-    def CylinderUIso(*args) -> "gp_Lin" :
+    def CylinderUIso(*args):
         """
         * compute the U Isoparametric gp_Lin of the cylinder.
 
@@ -1427,7 +1428,7 @@ class elslib(object):
         return _ElSLib.elslib_CylinderUIso(*args)
 
     CylinderUIso = staticmethod(CylinderUIso)
-    def ConeUIso(*args) -> "gp_Lin" :
+    def ConeUIso(*args):
         """
         * compute the U Isoparametric gp_Lin of the cone.
 
@@ -1445,7 +1446,7 @@ class elslib(object):
         return _ElSLib.elslib_ConeUIso(*args)
 
     ConeUIso = staticmethod(ConeUIso)
-    def SphereUIso(*args) -> "gp_Circ" :
+    def SphereUIso(*args):
         """
         * compute the U Isoparametric gp_Circ of the sphere, (the meridian is not trimmed).
 
@@ -1461,7 +1462,7 @@ class elslib(object):
         return _ElSLib.elslib_SphereUIso(*args)
 
     SphereUIso = staticmethod(SphereUIso)
-    def TorusUIso(*args) -> "gp_Circ" :
+    def TorusUIso(*args):
         """
         * compute the U Isoparametric gp_Circ of the torus.
 
@@ -1479,7 +1480,7 @@ class elslib(object):
         return _ElSLib.elslib_TorusUIso(*args)
 
     TorusUIso = staticmethod(TorusUIso)
-    def PlaneVIso(*args) -> "gp_Lin" :
+    def PlaneVIso(*args):
         """
         * compute the V Isoparametric gp_Lin of the plane.
 
@@ -1493,7 +1494,7 @@ class elslib(object):
         return _ElSLib.elslib_PlaneVIso(*args)
 
     PlaneVIso = staticmethod(PlaneVIso)
-    def CylinderVIso(*args) -> "gp_Circ" :
+    def CylinderVIso(*args):
         """
         * compute the V Isoparametric gp_Circ of the cylinder.
 
@@ -1509,7 +1510,7 @@ class elslib(object):
         return _ElSLib.elslib_CylinderVIso(*args)
 
     CylinderVIso = staticmethod(CylinderVIso)
-    def ConeVIso(*args) -> "gp_Circ" :
+    def ConeVIso(*args):
         """
         * compute the V Isoparametric gp_Circ of the cone.
 
@@ -1527,7 +1528,7 @@ class elslib(object):
         return _ElSLib.elslib_ConeVIso(*args)
 
     ConeVIso = staticmethod(ConeVIso)
-    def SphereVIso(*args) -> "gp_Circ" :
+    def SphereVIso(*args):
         """
         * compute the V Isoparametric gp_Circ of the sphere, (the meridian is not trimmed).
 
@@ -1543,7 +1544,7 @@ class elslib(object):
         return _ElSLib.elslib_SphereVIso(*args)
 
     SphereVIso = staticmethod(SphereVIso)
-    def TorusVIso(*args) -> "gp_Circ" :
+    def TorusVIso(*args):
         """
         * compute the V Isoparametric gp_Circ of the torus.
 
@@ -1561,8 +1562,6 @@ class elslib(object):
         return _ElSLib.elslib_TorusVIso(*args)
 
     TorusVIso = staticmethod(TorusVIso)
-    def __init__(self): 
-        _ElSLib.elslib_swiginit(self,_ElSLib.new_elslib())
     def __del__(self):
     	try:
     		self.thisown = False
@@ -1575,7 +1574,7 @@ elslib._kill_pointed = new_instancemethod(_ElSLib.elslib__kill_pointed,None,elsl
 elslib_swigregister = _ElSLib.elslib_swigregister
 elslib_swigregister(elslib)
 
-def elslib_Value(*args) -> "gp_Pnt" :
+def elslib_Value(*args):
   """
     * For elementary surfaces from the gp package (planes, cones, cylinders, spheres and tori), computes the point of parameters (U, V).
 
@@ -1622,7 +1621,7 @@ def elslib_Value(*args) -> "gp_Pnt" :
     """
   return _ElSLib.elslib_Value(*args)
 
-def elslib_DN(*args) -> "gp_Vec" :
+def elslib_DN(*args):
   """
     * For elementary surfaces from the gp package (planes, cones, cylinders, spheres and tori), computes the derivative vector of order Nu and Nv in the u and v parametric directions respectively, at the point of parameters (U, V).
 
@@ -1633,9 +1632,9 @@ def elslib_DN(*args) -> "gp_Vec" :
     :param Pl:
     :type Pl: gp_Pln
     :param Nu:
-    :type Nu: int
+    :type Nu: Standard_Integer
     :param Nv:
-    :type Nv: int
+    :type Nv: Standard_Integer
     :rtype: gp_Vec
 
     :param U:
@@ -1645,9 +1644,9 @@ def elslib_DN(*args) -> "gp_Vec" :
     :param C:
     :type C: gp_Cone
     :param Nu:
-    :type Nu: int
+    :type Nu: Standard_Integer
     :param Nv:
-    :type Nv: int
+    :type Nv: Standard_Integer
     :rtype: gp_Vec
 
     :param U:
@@ -1657,9 +1656,9 @@ def elslib_DN(*args) -> "gp_Vec" :
     :param C:
     :type C: gp_Cylinder
     :param Nu:
-    :type Nu: int
+    :type Nu: Standard_Integer
     :param Nv:
-    :type Nv: int
+    :type Nv: Standard_Integer
     :rtype: gp_Vec
 
     :param U:
@@ -1669,9 +1668,9 @@ def elslib_DN(*args) -> "gp_Vec" :
     :param S:
     :type S: gp_Sphere
     :param Nu:
-    :type Nu: int
+    :type Nu: Standard_Integer
     :param Nv:
-    :type Nv: int
+    :type Nv: Standard_Integer
     :rtype: gp_Vec
 
     :param U:
@@ -1681,15 +1680,15 @@ def elslib_DN(*args) -> "gp_Vec" :
     :param T:
     :type T: gp_Torus
     :param Nu:
-    :type Nu: int
+    :type Nu: Standard_Integer
     :param Nv:
-    :type Nv: int
+    :type Nv: Standard_Integer
     :rtype: gp_Vec
 
     """
   return _ElSLib.elslib_DN(*args)
 
-def elslib_D0(*args) -> "void" :
+def elslib_D0(*args):
   """
     * For elementary surfaces from the gp package (planes, cones, cylinders, spheres and tori), computes the point P of parameters (U, V).inline
 
@@ -1746,7 +1745,7 @@ def elslib_D0(*args) -> "void" :
     """
   return _ElSLib.elslib_D0(*args)
 
-def elslib_D1(*args) -> "void" :
+def elslib_D1(*args):
   """
     * For elementary surfaces from the gp package (planes, cones, cylinders, spheres and tori), computes: - the point P of parameters (U, V), and - the first derivative vectors Vu and Vv at this point in the u and v parametric directions respectively.
 
@@ -1823,7 +1822,7 @@ def elslib_D1(*args) -> "void" :
     """
   return _ElSLib.elslib_D1(*args)
 
-def elslib_D2(*args) -> "void" :
+def elslib_D2(*args):
   """
     * For elementary surfaces from the gp package (cones, cylinders, spheres and tori), computes: - the point P of parameters (U, V), and - the first derivative vectors Vu and Vv at this point in the u and v parametric directions respectively, and - the second derivative vectors Vuu, Vvv and Vuv at this point.
 
@@ -1910,7 +1909,7 @@ def elslib_D2(*args) -> "void" :
     """
   return _ElSLib.elslib_D2(*args)
 
-def elslib_D3(*args) -> "void" :
+def elslib_D3(*args):
   """
     * For elementary surfaces from the gp package (cones, cylinders, spheres and tori), computes: - the point P of parameters (U,V), and - the first derivative vectors Vu and Vv at this point in the u and v parametric directions respectively, and - the second derivative vectors Vuu, Vvv and Vuv at this point, and - the third derivative vectors Vuuu, Vvvv, Vuuv and Vuvv at this point.
 
@@ -2031,7 +2030,7 @@ def elslib_D3(*args) -> "void" :
     """
   return _ElSLib.elslib_D3(*args)
 
-def elslib_PlaneValue(*args) -> "gp_Pnt" :
+def elslib_PlaneValue(*args):
   """
     :param U:
     :type U: float
@@ -2044,7 +2043,7 @@ def elslib_PlaneValue(*args) -> "gp_Pnt" :
     """
   return _ElSLib.elslib_PlaneValue(*args)
 
-def elslib_CylinderValue(*args) -> "gp_Pnt" :
+def elslib_CylinderValue(*args):
   """
     :param U:
     :type U: float
@@ -2059,7 +2058,7 @@ def elslib_CylinderValue(*args) -> "gp_Pnt" :
     """
   return _ElSLib.elslib_CylinderValue(*args)
 
-def elslib_ConeValue(*args) -> "gp_Pnt" :
+def elslib_ConeValue(*args):
   """
     :param U:
     :type U: float
@@ -2076,7 +2075,7 @@ def elslib_ConeValue(*args) -> "gp_Pnt" :
     """
   return _ElSLib.elslib_ConeValue(*args)
 
-def elslib_SphereValue(*args) -> "gp_Pnt" :
+def elslib_SphereValue(*args):
   """
     :param U:
     :type U: float
@@ -2091,7 +2090,7 @@ def elslib_SphereValue(*args) -> "gp_Pnt" :
     """
   return _ElSLib.elslib_SphereValue(*args)
 
-def elslib_TorusValue(*args) -> "gp_Pnt" :
+def elslib_TorusValue(*args):
   """
     :param U:
     :type U: float
@@ -2108,7 +2107,7 @@ def elslib_TorusValue(*args) -> "gp_Pnt" :
     """
   return _ElSLib.elslib_TorusValue(*args)
 
-def elslib_PlaneDN(*args) -> "gp_Vec" :
+def elslib_PlaneDN(*args):
   """
     :param U:
     :type U: float
@@ -2117,15 +2116,15 @@ def elslib_PlaneDN(*args) -> "gp_Vec" :
     :param Pos:
     :type Pos: gp_Ax3
     :param Nu:
-    :type Nu: int
+    :type Nu: Standard_Integer
     :param Nv:
-    :type Nv: int
+    :type Nv: Standard_Integer
     :rtype: gp_Vec
 
     """
   return _ElSLib.elslib_PlaneDN(*args)
 
-def elslib_CylinderDN(*args) -> "gp_Vec" :
+def elslib_CylinderDN(*args):
   """
     :param U:
     :type U: float
@@ -2136,15 +2135,15 @@ def elslib_CylinderDN(*args) -> "gp_Vec" :
     :param Radius:
     :type Radius: float
     :param Nu:
-    :type Nu: int
+    :type Nu: Standard_Integer
     :param Nv:
-    :type Nv: int
+    :type Nv: Standard_Integer
     :rtype: gp_Vec
 
     """
   return _ElSLib.elslib_CylinderDN(*args)
 
-def elslib_ConeDN(*args) -> "gp_Vec" :
+def elslib_ConeDN(*args):
   """
     :param U:
     :type U: float
@@ -2157,15 +2156,15 @@ def elslib_ConeDN(*args) -> "gp_Vec" :
     :param SAngle:
     :type SAngle: float
     :param Nu:
-    :type Nu: int
+    :type Nu: Standard_Integer
     :param Nv:
-    :type Nv: int
+    :type Nv: Standard_Integer
     :rtype: gp_Vec
 
     """
   return _ElSLib.elslib_ConeDN(*args)
 
-def elslib_SphereDN(*args) -> "gp_Vec" :
+def elslib_SphereDN(*args):
   """
     :param U:
     :type U: float
@@ -2176,15 +2175,15 @@ def elslib_SphereDN(*args) -> "gp_Vec" :
     :param Radius:
     :type Radius: float
     :param Nu:
-    :type Nu: int
+    :type Nu: Standard_Integer
     :param Nv:
-    :type Nv: int
+    :type Nv: Standard_Integer
     :rtype: gp_Vec
 
     """
   return _ElSLib.elslib_SphereDN(*args)
 
-def elslib_TorusDN(*args) -> "gp_Vec" :
+def elslib_TorusDN(*args):
   """
     :param U:
     :type U: float
@@ -2197,15 +2196,15 @@ def elslib_TorusDN(*args) -> "gp_Vec" :
     :param MinorRadius:
     :type MinorRadius: float
     :param Nu:
-    :type Nu: int
+    :type Nu: Standard_Integer
     :param Nv:
-    :type Nv: int
+    :type Nv: Standard_Integer
     :rtype: gp_Vec
 
     """
   return _ElSLib.elslib_TorusDN(*args)
 
-def elslib_PlaneD0(*args) -> "void" :
+def elslib_PlaneD0(*args):
   """
     :param U:
     :type U: float
@@ -2220,7 +2219,7 @@ def elslib_PlaneD0(*args) -> "void" :
     """
   return _ElSLib.elslib_PlaneD0(*args)
 
-def elslib_ConeD0(*args) -> "void" :
+def elslib_ConeD0(*args):
   """
     :param U:
     :type U: float
@@ -2239,7 +2238,7 @@ def elslib_ConeD0(*args) -> "void" :
     """
   return _ElSLib.elslib_ConeD0(*args)
 
-def elslib_CylinderD0(*args) -> "void" :
+def elslib_CylinderD0(*args):
   """
     :param U:
     :type U: float
@@ -2256,7 +2255,7 @@ def elslib_CylinderD0(*args) -> "void" :
     """
   return _ElSLib.elslib_CylinderD0(*args)
 
-def elslib_SphereD0(*args) -> "void" :
+def elslib_SphereD0(*args):
   """
     :param U:
     :type U: float
@@ -2273,7 +2272,7 @@ def elslib_SphereD0(*args) -> "void" :
     """
   return _ElSLib.elslib_SphereD0(*args)
 
-def elslib_TorusD0(*args) -> "void" :
+def elslib_TorusD0(*args):
   """
     :param U:
     :type U: float
@@ -2292,7 +2291,7 @@ def elslib_TorusD0(*args) -> "void" :
     """
   return _ElSLib.elslib_TorusD0(*args)
 
-def elslib_PlaneD1(*args) -> "void" :
+def elslib_PlaneD1(*args):
   """
     :param U:
     :type U: float
@@ -2311,7 +2310,7 @@ def elslib_PlaneD1(*args) -> "void" :
     """
   return _ElSLib.elslib_PlaneD1(*args)
 
-def elslib_ConeD1(*args) -> "void" :
+def elslib_ConeD1(*args):
   """
     :param U:
     :type U: float
@@ -2334,7 +2333,7 @@ def elslib_ConeD1(*args) -> "void" :
     """
   return _ElSLib.elslib_ConeD1(*args)
 
-def elslib_CylinderD1(*args) -> "void" :
+def elslib_CylinderD1(*args):
   """
     :param U:
     :type U: float
@@ -2355,7 +2354,7 @@ def elslib_CylinderD1(*args) -> "void" :
     """
   return _ElSLib.elslib_CylinderD1(*args)
 
-def elslib_SphereD1(*args) -> "void" :
+def elslib_SphereD1(*args):
   """
     :param U:
     :type U: float
@@ -2376,7 +2375,7 @@ def elslib_SphereD1(*args) -> "void" :
     """
   return _ElSLib.elslib_SphereD1(*args)
 
-def elslib_TorusD1(*args) -> "void" :
+def elslib_TorusD1(*args):
   """
     :param U:
     :type U: float
@@ -2399,7 +2398,7 @@ def elslib_TorusD1(*args) -> "void" :
     """
   return _ElSLib.elslib_TorusD1(*args)
 
-def elslib_ConeD2(*args) -> "void" :
+def elslib_ConeD2(*args):
   """
     :param U:
     :type U: float
@@ -2428,7 +2427,7 @@ def elslib_ConeD2(*args) -> "void" :
     """
   return _ElSLib.elslib_ConeD2(*args)
 
-def elslib_CylinderD2(*args) -> "void" :
+def elslib_CylinderD2(*args):
   """
     :param U:
     :type U: float
@@ -2455,7 +2454,7 @@ def elslib_CylinderD2(*args) -> "void" :
     """
   return _ElSLib.elslib_CylinderD2(*args)
 
-def elslib_SphereD2(*args) -> "void" :
+def elslib_SphereD2(*args):
   """
     :param U:
     :type U: float
@@ -2482,7 +2481,7 @@ def elslib_SphereD2(*args) -> "void" :
     """
   return _ElSLib.elslib_SphereD2(*args)
 
-def elslib_TorusD2(*args) -> "void" :
+def elslib_TorusD2(*args):
   """
     :param U:
     :type U: float
@@ -2511,7 +2510,7 @@ def elslib_TorusD2(*args) -> "void" :
     """
   return _ElSLib.elslib_TorusD2(*args)
 
-def elslib_ConeD3(*args) -> "void" :
+def elslib_ConeD3(*args):
   """
     :param U:
     :type U: float
@@ -2548,7 +2547,7 @@ def elslib_ConeD3(*args) -> "void" :
     """
   return _ElSLib.elslib_ConeD3(*args)
 
-def elslib_CylinderD3(*args) -> "void" :
+def elslib_CylinderD3(*args):
   """
     :param U:
     :type U: float
@@ -2583,7 +2582,7 @@ def elslib_CylinderD3(*args) -> "void" :
     """
   return _ElSLib.elslib_CylinderD3(*args)
 
-def elslib_SphereD3(*args) -> "void" :
+def elslib_SphereD3(*args):
   """
     :param U:
     :type U: float
@@ -2618,7 +2617,7 @@ def elslib_SphereD3(*args) -> "void" :
     """
   return _ElSLib.elslib_SphereD3(*args)
 
-def elslib_TorusD3(*args) -> "void" :
+def elslib_TorusD3(*args):
   """
     * The following functions compute the parametric values corresponding to a given point on a elementary surface. The point should be on the surface.
 
@@ -2657,7 +2656,7 @@ def elslib_TorusD3(*args) -> "void" :
     """
   return _ElSLib.elslib_TorusD3(*args)
 
-def elslib_Parameters(*args) -> "Standard_Real &, Standard_Real &" :
+def elslib_Parameters(*args):
   """
     * parametrization P (U, V) = Pl.Location() + U * Pl.XDirection() + V * Pl.YDirection()
 
@@ -2722,7 +2721,7 @@ def elslib_Parameters(*args) -> "Standard_Real &, Standard_Real &" :
     """
   return _ElSLib.elslib_Parameters(*args)
 
-def elslib_PlaneParameters(*args) -> "Standard_Real &, Standard_Real &" :
+def elslib_PlaneParameters(*args):
   """
     * parametrization P (U, V) = Pl.Location() + U * Pl.XDirection() + V * Pl.YDirection()
 
@@ -2739,7 +2738,7 @@ def elslib_PlaneParameters(*args) -> "Standard_Real &, Standard_Real &" :
     """
   return _ElSLib.elslib_PlaneParameters(*args)
 
-def elslib_CylinderParameters(*args) -> "Standard_Real &, Standard_Real &" :
+def elslib_CylinderParameters(*args):
   """
     * parametrization P (U, V) = Location + V * ZDirection + Radius * (Cos(U) * XDirection + Sin (U) * YDirection)
 
@@ -2758,7 +2757,7 @@ def elslib_CylinderParameters(*args) -> "Standard_Real &, Standard_Real &" :
     """
   return _ElSLib.elslib_CylinderParameters(*args)
 
-def elslib_ConeParameters(*args) -> "Standard_Real &, Standard_Real &" :
+def elslib_ConeParameters(*args):
   """
     * parametrization P (U, V) = Location + V * ZDirection + (Radius + V * Tan (SemiAngle)) * (Cos(U) * XDirection + Sin(U) * YDirection)
 
@@ -2779,7 +2778,7 @@ def elslib_ConeParameters(*args) -> "Standard_Real &, Standard_Real &" :
     """
   return _ElSLib.elslib_ConeParameters(*args)
 
-def elslib_SphereParameters(*args) -> "Standard_Real &, Standard_Real &" :
+def elslib_SphereParameters(*args):
   """
     * parametrization P (U, V) = Location + Radius * Cos (V) * (Cos (U) * XDirection + Sin (U) * YDirection) + Radius * Sin (V) * ZDirection
 
@@ -2798,7 +2797,7 @@ def elslib_SphereParameters(*args) -> "Standard_Real &, Standard_Real &" :
     """
   return _ElSLib.elslib_SphereParameters(*args)
 
-def elslib_TorusParameters(*args) -> "Standard_Real &, Standard_Real &" :
+def elslib_TorusParameters(*args):
   """
     * parametrization P (U, V) = Location + (MajorRadius + MinorRadius * Cos(U)) * (Cos(V) * XDirection - Sin(V) * YDirection) + MinorRadius * Sin(U) * ZDirection
 
@@ -2819,7 +2818,7 @@ def elslib_TorusParameters(*args) -> "Standard_Real &, Standard_Real &" :
     """
   return _ElSLib.elslib_TorusParameters(*args)
 
-def elslib_PlaneUIso(*args) -> "gp_Lin" :
+def elslib_PlaneUIso(*args):
   """
     * compute the U Isoparametric gp_Lin of the plane.
 
@@ -2832,7 +2831,7 @@ def elslib_PlaneUIso(*args) -> "gp_Lin" :
     """
   return _ElSLib.elslib_PlaneUIso(*args)
 
-def elslib_CylinderUIso(*args) -> "gp_Lin" :
+def elslib_CylinderUIso(*args):
   """
     * compute the U Isoparametric gp_Lin of the cylinder.
 
@@ -2847,7 +2846,7 @@ def elslib_CylinderUIso(*args) -> "gp_Lin" :
     """
   return _ElSLib.elslib_CylinderUIso(*args)
 
-def elslib_ConeUIso(*args) -> "gp_Lin" :
+def elslib_ConeUIso(*args):
   """
     * compute the U Isoparametric gp_Lin of the cone.
 
@@ -2864,7 +2863,7 @@ def elslib_ConeUIso(*args) -> "gp_Lin" :
     """
   return _ElSLib.elslib_ConeUIso(*args)
 
-def elslib_SphereUIso(*args) -> "gp_Circ" :
+def elslib_SphereUIso(*args):
   """
     * compute the U Isoparametric gp_Circ of the sphere, (the meridian is not trimmed).
 
@@ -2879,7 +2878,7 @@ def elslib_SphereUIso(*args) -> "gp_Circ" :
     """
   return _ElSLib.elslib_SphereUIso(*args)
 
-def elslib_TorusUIso(*args) -> "gp_Circ" :
+def elslib_TorusUIso(*args):
   """
     * compute the U Isoparametric gp_Circ of the torus.
 
@@ -2896,7 +2895,7 @@ def elslib_TorusUIso(*args) -> "gp_Circ" :
     """
   return _ElSLib.elslib_TorusUIso(*args)
 
-def elslib_PlaneVIso(*args) -> "gp_Lin" :
+def elslib_PlaneVIso(*args):
   """
     * compute the V Isoparametric gp_Lin of the plane.
 
@@ -2909,7 +2908,7 @@ def elslib_PlaneVIso(*args) -> "gp_Lin" :
     """
   return _ElSLib.elslib_PlaneVIso(*args)
 
-def elslib_CylinderVIso(*args) -> "gp_Circ" :
+def elslib_CylinderVIso(*args):
   """
     * compute the V Isoparametric gp_Circ of the cylinder.
 
@@ -2924,7 +2923,7 @@ def elslib_CylinderVIso(*args) -> "gp_Circ" :
     """
   return _ElSLib.elslib_CylinderVIso(*args)
 
-def elslib_ConeVIso(*args) -> "gp_Circ" :
+def elslib_ConeVIso(*args):
   """
     * compute the V Isoparametric gp_Circ of the cone.
 
@@ -2941,7 +2940,7 @@ def elslib_ConeVIso(*args) -> "gp_Circ" :
     """
   return _ElSLib.elslib_ConeVIso(*args)
 
-def elslib_SphereVIso(*args) -> "gp_Circ" :
+def elslib_SphereVIso(*args):
   """
     * compute the V Isoparametric gp_Circ of the sphere, (the meridian is not trimmed).
 
@@ -2956,7 +2955,7 @@ def elslib_SphereVIso(*args) -> "gp_Circ" :
     """
   return _ElSLib.elslib_SphereVIso(*args)
 
-def elslib_TorusVIso(*args) -> "gp_Circ" :
+def elslib_TorusVIso(*args):
   """
     * compute the V Isoparametric gp_Circ of the torus.
 

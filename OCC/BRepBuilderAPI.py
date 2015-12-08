@@ -162,8 +162,9 @@ BRepBuilderAPI_DisconnectedWire = _BRepBuilderAPI.BRepBuilderAPI_DisconnectedWir
 BRepBuilderAPI_NonManifoldWire = _BRepBuilderAPI.BRepBuilderAPI_NonManifoldWire
 class brepbuilderapi(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
+    def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def Plane(*args) -> "Handle_Geom_Plane const &" :
+    def Plane(*args):
         """
         * Sets the current plane.
 
@@ -179,7 +180,7 @@ class brepbuilderapi(object):
         return _BRepBuilderAPI.brepbuilderapi_Plane(*args)
 
     Plane = staticmethod(Plane)
-    def Precision(*args) -> "Standard_Real" :
+    def Precision(*args):
         """
         * Sets the default precision. The current Precision is returned.
 
@@ -195,8 +196,6 @@ class brepbuilderapi(object):
         return _BRepBuilderAPI.brepbuilderapi_Precision(*args)
 
     Precision = staticmethod(Precision)
-    def __init__(self): 
-        _BRepBuilderAPI.brepbuilderapi_swiginit(self,_BRepBuilderAPI.new_brepbuilderapi())
     def __del__(self):
     	try:
     		self.thisown = False
@@ -209,7 +208,7 @@ brepbuilderapi._kill_pointed = new_instancemethod(_BRepBuilderAPI.brepbuilderapi
 brepbuilderapi_swigregister = _BRepBuilderAPI.brepbuilderapi_swigregister
 brepbuilderapi_swigregister(brepbuilderapi)
 
-def brepbuilderapi_Plane(*args) -> "Handle_Geom_Plane const &" :
+def brepbuilderapi_Plane(*args):
   """
     * Sets the current plane.
 
@@ -224,7 +223,7 @@ def brepbuilderapi_Plane(*args) -> "Handle_Geom_Plane const &" :
     """
   return _BRepBuilderAPI.brepbuilderapi_Plane(*args)
 
-def brepbuilderapi_Precision(*args) -> "Standard_Real" :
+def brepbuilderapi_Precision(*args):
   """
     * Sets the default precision. The current Precision is returned.
 
@@ -242,13 +241,13 @@ def brepbuilderapi_Precision(*args) -> "Standard_Real" :
 class BRepBuilderAPI_Collect(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _BRepBuilderAPI.BRepBuilderAPI_Collect_swiginit(self,_BRepBuilderAPI.new_BRepBuilderAPI_Collect(*args))
-    def Add(self, *args) -> "void" :
+        _BRepBuilderAPI.BRepBuilderAPI_Collect_swiginit(self,_BRepBuilderAPI.new_BRepBuilderAPI_Collect())
+    def Add(self, *args):
         """
         :param SI:
         :type SI: TopoDS_Shape &
@@ -259,7 +258,7 @@ class BRepBuilderAPI_Collect(object):
         """
         return _BRepBuilderAPI.BRepBuilderAPI_Collect_Add(self, *args)
 
-    def AddGenerated(self, *args) -> "void" :
+    def AddGenerated(self, *args):
         """
         :param S:
         :type S: TopoDS_Shape &
@@ -270,7 +269,7 @@ class BRepBuilderAPI_Collect(object):
         """
         return _BRepBuilderAPI.BRepBuilderAPI_Collect_AddGenerated(self, *args)
 
-    def AddModif(self, *args) -> "void" :
+    def AddModif(self, *args):
         """
         :param S:
         :type S: TopoDS_Shape &
@@ -281,7 +280,7 @@ class BRepBuilderAPI_Collect(object):
         """
         return _BRepBuilderAPI.BRepBuilderAPI_Collect_AddModif(self, *args)
 
-    def Filter(self, *args) -> "void" :
+    def Filter(self, *args):
         """
         :param SF:
         :type SF: TopoDS_Shape &
@@ -290,19 +289,19 @@ class BRepBuilderAPI_Collect(object):
         """
         return _BRepBuilderAPI.BRepBuilderAPI_Collect_Filter(self, *args)
 
-    def Modification(self, *args) -> "TopTools_DataMapOfShapeListOfShape const &" :
+    def Modification(self):
         """
         :rtype: TopTools_DataMapOfShapeListOfShape
 
         """
-        return _BRepBuilderAPI.BRepBuilderAPI_Collect_Modification(self, *args)
+        return _BRepBuilderAPI.BRepBuilderAPI_Collect_Modification(self)
 
-    def Generated(self, *args) -> "TopTools_DataMapOfShapeListOfShape const &" :
+    def Generated(self):
         """
         :rtype: TopTools_DataMapOfShapeListOfShape
 
         """
-        return _BRepBuilderAPI.BRepBuilderAPI_Collect_Generated(self, *args)
+        return _BRepBuilderAPI.BRepBuilderAPI_Collect_Generated(self)
 
     def __del__(self):
     	try:
@@ -326,28 +325,28 @@ class BRepBuilderAPI_Command(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def Delete(self, *args) -> "void" :
+    def Delete(self):
         """
         :rtype: void
 
         """
-        return _BRepBuilderAPI.BRepBuilderAPI_Command_Delete(self, *args)
+        return _BRepBuilderAPI.BRepBuilderAPI_Command_Delete(self)
 
-    def IsDone(self, *args) -> "Standard_Boolean" :
+    def IsDone(self):
         """
         :rtype: bool
 
         """
-        return _BRepBuilderAPI.BRepBuilderAPI_Command_IsDone(self, *args)
+        return _BRepBuilderAPI.BRepBuilderAPI_Command_IsDone(self)
 
-    def Check(self, *args) -> "void" :
+    def Check(self):
         """
         * Raises NotDone if done is false.
 
         :rtype: None
 
         """
-        return _BRepBuilderAPI.BRepBuilderAPI_Command_Check(self, *args)
+        return _BRepBuilderAPI.BRepBuilderAPI_Command_Check(self)
 
     def __del__(self):
     	try:
@@ -377,42 +376,58 @@ class BRepBuilderAPI_FindPlane(object):
 
         :param S:
         :type S: TopoDS_Shape &
-        :param Tol: default value is -1
+        :param Tol: default value is - 1
+        :type Tol: float
+        :rtype: None
+
+        * Constructs the plane containing the edges of the shape S. A plane is built only if all the edges are within a distance of less than or equal to tolerance from a planar surface. This tolerance value is equal to the larger of the following two values: - Tol, where the default value is negative, or - the largest of the tolerance values assigned to the individual edges of S. Use the function Found to verify that a plane is built. The resulting plane is then retrieved using the function Plane.
+
+        :param S:
+        :type S: TopoDS_Shape &
+        :param Tol: default value is - 1
         :type Tol: float
         :rtype: None
 
         """
         _BRepBuilderAPI.BRepBuilderAPI_FindPlane_swiginit(self,_BRepBuilderAPI.new_BRepBuilderAPI_FindPlane(*args))
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
         * Constructs the plane containing the edges of the shape S. A plane is built only if all the edges are within a distance of less than or equal to tolerance from a planar surface. This tolerance value is equal to the larger of the following two values: - Tol, where the default value is negative, or - the largest of the tolerance values assigned to the individual edges of S. Use the function Found to verify that a plane is built. The resulting plane is then retrieved using the function Plane.
 
         :param S:
         :type S: TopoDS_Shape &
-        :param Tol: default value is -1
+        :param Tol: default value is - 1
+        :type Tol: float
+        :rtype: None
+
+        * Constructs the plane containing the edges of the shape S. A plane is built only if all the edges are within a distance of less than or equal to tolerance from a planar surface. This tolerance value is equal to the larger of the following two values: - Tol, where the default value is negative, or - the largest of the tolerance values assigned to the individual edges of S. Use the function Found to verify that a plane is built. The resulting plane is then retrieved using the function Plane.
+
+        :param S:
+        :type S: TopoDS_Shape &
+        :param Tol: default value is - 1
         :type Tol: float
         :rtype: None
 
         """
         return _BRepBuilderAPI.BRepBuilderAPI_FindPlane_Init(self, *args)
 
-    def Found(self, *args) -> "Standard_Boolean" :
+    def Found(self):
         """
         * Returns true if a plane containing the edges of the shape is found and built. Use the function Plane to consult the result.
 
         :rtype: bool
 
         """
-        return _BRepBuilderAPI.BRepBuilderAPI_FindPlane_Found(self, *args)
+        return _BRepBuilderAPI.BRepBuilderAPI_FindPlane_Found(self)
 
-    def Plane(self, *args) -> "Handle_Geom_Plane" :
+    def Plane(self):
         """
         * Returns the plane containing the edges of the shape. Warning Use the function Found to verify that the plane is built. If a plane is not found, Plane returns a null handle.
 
         :rtype: Handle_Geom_Plane
 
         """
-        return _BRepBuilderAPI.BRepBuilderAPI_FindPlane_Plane(self, *args)
+        return _BRepBuilderAPI.BRepBuilderAPI_FindPlane_Plane(self)
 
     def __del__(self):
     	try:
@@ -448,10 +463,150 @@ class BRepBuilderAPI_Sewing(OCC.MMgt.MMgt_TShared):
         :type option4: bool
         :rtype: None
 
+        * Creates an object with tolerance of connexity option for sewing (if false only control) option for analysis of degenerated shapes option for cutting of free edges. option for non manifold processing
+
+        :param tolerance: default value is 1.0e-06
+        :type tolerance: float
+        :param option1: default value is Standard_True
+        :type option1: bool
+        :param option2: default value is Standard_True
+        :type option2: bool
+        :param option3: default value is Standard_True
+        :type option3: bool
+        :param option4: default value is Standard_False
+        :type option4: bool
+        :rtype: None
+
+        * Creates an object with tolerance of connexity option for sewing (if false only control) option for analysis of degenerated shapes option for cutting of free edges. option for non manifold processing
+
+        :param tolerance: default value is 1.0e-06
+        :type tolerance: float
+        :param option1: default value is Standard_True
+        :type option1: bool
+        :param option2: default value is Standard_True
+        :type option2: bool
+        :param option3: default value is Standard_True
+        :type option3: bool
+        :param option4: default value is Standard_False
+        :type option4: bool
+        :rtype: None
+
+        * Creates an object with tolerance of connexity option for sewing (if false only control) option for analysis of degenerated shapes option for cutting of free edges. option for non manifold processing
+
+        :param tolerance: default value is 1.0e-06
+        :type tolerance: float
+        :param option1: default value is Standard_True
+        :type option1: bool
+        :param option2: default value is Standard_True
+        :type option2: bool
+        :param option3: default value is Standard_True
+        :type option3: bool
+        :param option4: default value is Standard_False
+        :type option4: bool
+        :rtype: None
+
+        * Creates an object with tolerance of connexity option for sewing (if false only control) option for analysis of degenerated shapes option for cutting of free edges. option for non manifold processing
+
+        :param tolerance: default value is 1.0e-06
+        :type tolerance: float
+        :param option1: default value is Standard_True
+        :type option1: bool
+        :param option2: default value is Standard_True
+        :type option2: bool
+        :param option3: default value is Standard_True
+        :type option3: bool
+        :param option4: default value is Standard_False
+        :type option4: bool
+        :rtype: None
+
+        * Creates an object with tolerance of connexity option for sewing (if false only control) option for analysis of degenerated shapes option for cutting of free edges. option for non manifold processing
+
+        :param tolerance: default value is 1.0e-06
+        :type tolerance: float
+        :param option1: default value is Standard_True
+        :type option1: bool
+        :param option2: default value is Standard_True
+        :type option2: bool
+        :param option3: default value is Standard_True
+        :type option3: bool
+        :param option4: default value is Standard_False
+        :type option4: bool
+        :rtype: None
+
         """
         _BRepBuilderAPI.BRepBuilderAPI_Sewing_swiginit(self,_BRepBuilderAPI.new_BRepBuilderAPI_Sewing(*args))
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
+        * initialize the parameters if necessary
+
+        :param tolerance: default value is 1.0e-06
+        :type tolerance: float
+        :param option1: default value is Standard_True
+        :type option1: bool
+        :param option2: default value is Standard_True
+        :type option2: bool
+        :param option3: default value is Standard_True
+        :type option3: bool
+        :param option4: default value is Standard_False
+        :type option4: bool
+        :rtype: None
+
+        * initialize the parameters if necessary
+
+        :param tolerance: default value is 1.0e-06
+        :type tolerance: float
+        :param option1: default value is Standard_True
+        :type option1: bool
+        :param option2: default value is Standard_True
+        :type option2: bool
+        :param option3: default value is Standard_True
+        :type option3: bool
+        :param option4: default value is Standard_False
+        :type option4: bool
+        :rtype: None
+
+        * initialize the parameters if necessary
+
+        :param tolerance: default value is 1.0e-06
+        :type tolerance: float
+        :param option1: default value is Standard_True
+        :type option1: bool
+        :param option2: default value is Standard_True
+        :type option2: bool
+        :param option3: default value is Standard_True
+        :type option3: bool
+        :param option4: default value is Standard_False
+        :type option4: bool
+        :rtype: None
+
+        * initialize the parameters if necessary
+
+        :param tolerance: default value is 1.0e-06
+        :type tolerance: float
+        :param option1: default value is Standard_True
+        :type option1: bool
+        :param option2: default value is Standard_True
+        :type option2: bool
+        :param option3: default value is Standard_True
+        :type option3: bool
+        :param option4: default value is Standard_False
+        :type option4: bool
+        :rtype: None
+
+        * initialize the parameters if necessary
+
+        :param tolerance: default value is 1.0e-06
+        :type tolerance: float
+        :param option1: default value is Standard_True
+        :type option1: bool
+        :param option2: default value is Standard_True
+        :type option2: bool
+        :param option3: default value is Standard_True
+        :type option3: bool
+        :param option4: default value is Standard_False
+        :type option4: bool
+        :rtype: None
+
         * initialize the parameters if necessary
 
         :param tolerance: default value is 1.0e-06
@@ -469,7 +624,7 @@ class BRepBuilderAPI_Sewing(OCC.MMgt.MMgt_TShared):
         """
         return _BRepBuilderAPI.BRepBuilderAPI_Sewing_Init(self, *args)
 
-    def Load(self, *args) -> "void" :
+    def Load(self, *args):
         """
         * Loades the context shape.
 
@@ -480,7 +635,7 @@ class BRepBuilderAPI_Sewing(OCC.MMgt.MMgt_TShared):
         """
         return _BRepBuilderAPI.BRepBuilderAPI_Sewing_Load(self, *args)
 
-    def Add(self, *args) -> "void" :
+    def Add(self, *args):
         """
         * Defines the shapes to be sewed or controlled
 
@@ -491,7 +646,7 @@ class BRepBuilderAPI_Sewing(OCC.MMgt.MMgt_TShared):
         """
         return _BRepBuilderAPI.BRepBuilderAPI_Sewing_Add(self, *args)
 
-    def Perform(self, *args) -> "void" :
+    def Perform(self, thePI=0):
         """
         * Computing thePI - progress indicator of algorithm
 
@@ -499,19 +654,25 @@ class BRepBuilderAPI_Sewing(OCC.MMgt.MMgt_TShared):
         :type thePI: Handle_Message_ProgressIndicator &
         :rtype: None
 
-        """
-        return _BRepBuilderAPI.BRepBuilderAPI_Sewing_Perform(self, *args)
+        * Computing thePI - progress indicator of algorithm
 
-    def SewedShape(self, *args) -> "TopoDS_Shape const" :
+        :param thePI: default value is 0
+        :type thePI: Handle_Message_ProgressIndicator &
+        :rtype: None
+
+        """
+        return _BRepBuilderAPI.BRepBuilderAPI_Sewing_Perform(self, thePI)
+
+    def SewedShape(self):
         """
         * Gives the sewed shape a null shape if nothing constructed may be a face, a shell, a solid or a compound
 
         :rtype: TopoDS_Shape
 
         """
-        return _BRepBuilderAPI.BRepBuilderAPI_Sewing_SewedShape(self, *args)
+        return _BRepBuilderAPI.BRepBuilderAPI_Sewing_SewedShape(self)
 
-    def SetContext(self, *args) -> "void" :
+    def SetContext(self, *args):
         """
         * set context
 
@@ -522,87 +683,87 @@ class BRepBuilderAPI_Sewing(OCC.MMgt.MMgt_TShared):
         """
         return _BRepBuilderAPI.BRepBuilderAPI_Sewing_SetContext(self, *args)
 
-    def GetContext(self, *args) -> "Handle_BRepTools_ReShape const &" :
+    def GetContext(self):
         """
         * return context
 
         :rtype: Handle_BRepTools_ReShape
 
         """
-        return _BRepBuilderAPI.BRepBuilderAPI_Sewing_GetContext(self, *args)
+        return _BRepBuilderAPI.BRepBuilderAPI_Sewing_GetContext(self)
 
-    def NbFreeEdges(self, *args) -> "Standard_Integer" :
+    def NbFreeEdges(self):
         """
         * Gives the number of free edges (edge shared by one face)
 
         :rtype: int
 
         """
-        return _BRepBuilderAPI.BRepBuilderAPI_Sewing_NbFreeEdges(self, *args)
+        return _BRepBuilderAPI.BRepBuilderAPI_Sewing_NbFreeEdges(self)
 
-    def FreeEdge(self, *args) -> "TopoDS_Edge const" :
+    def FreeEdge(self, *args):
         """
         * Gives each free edge
 
         :param index:
-        :type index: int
+        :type index: Standard_Integer
         :rtype: TopoDS_Edge
 
         """
         return _BRepBuilderAPI.BRepBuilderAPI_Sewing_FreeEdge(self, *args)
 
-    def NbMultipleEdges(self, *args) -> "Standard_Integer" :
+    def NbMultipleEdges(self):
         """
         * Gives the number of multiple edges (edge shared by more than two faces)
 
         :rtype: int
 
         """
-        return _BRepBuilderAPI.BRepBuilderAPI_Sewing_NbMultipleEdges(self, *args)
+        return _BRepBuilderAPI.BRepBuilderAPI_Sewing_NbMultipleEdges(self)
 
-    def MultipleEdge(self, *args) -> "TopoDS_Edge const" :
+    def MultipleEdge(self, *args):
         """
         * Gives each multiple edge
 
         :param index:
-        :type index: int
+        :type index: Standard_Integer
         :rtype: TopoDS_Edge
 
         """
         return _BRepBuilderAPI.BRepBuilderAPI_Sewing_MultipleEdge(self, *args)
 
-    def NbContigousEdges(self, *args) -> "Standard_Integer" :
+    def NbContigousEdges(self):
         """
         * Gives the number of contigous edges (edge shared by two faces)
 
         :rtype: int
 
         """
-        return _BRepBuilderAPI.BRepBuilderAPI_Sewing_NbContigousEdges(self, *args)
+        return _BRepBuilderAPI.BRepBuilderAPI_Sewing_NbContigousEdges(self)
 
-    def ContigousEdge(self, *args) -> "TopoDS_Edge const" :
+    def ContigousEdge(self, *args):
         """
         * Gives each contigous edge
 
         :param index:
-        :type index: int
+        :type index: Standard_Integer
         :rtype: TopoDS_Edge
 
         """
         return _BRepBuilderAPI.BRepBuilderAPI_Sewing_ContigousEdge(self, *args)
 
-    def ContigousEdgeCouple(self, *args) -> "TopTools_ListOfShape const &" :
+    def ContigousEdgeCouple(self, *args):
         """
         * Gives the sections (edge) belonging to a contigous edge
 
         :param index:
-        :type index: int
+        :type index: Standard_Integer
         :rtype: TopTools_ListOfShape
 
         """
         return _BRepBuilderAPI.BRepBuilderAPI_Sewing_ContigousEdgeCouple(self, *args)
 
-    def IsSectionBound(self, *args) -> "Standard_Boolean" :
+    def IsSectionBound(self, *args):
         """
         * Indicates if a section is bound (before use SectionToBoundary)
 
@@ -613,7 +774,7 @@ class BRepBuilderAPI_Sewing(OCC.MMgt.MMgt_TShared):
         """
         return _BRepBuilderAPI.BRepBuilderAPI_Sewing_IsSectionBound(self, *args)
 
-    def SectionToBoundary(self, *args) -> "TopoDS_Edge const" :
+    def SectionToBoundary(self, *args):
         """
         * Gives the original edge (free boundary) which becomes the the section. Remember that sections constitute common edges. This imformation is important for control because with original edge we can find the surface to which the section is attached.
 
@@ -624,27 +785,27 @@ class BRepBuilderAPI_Sewing(OCC.MMgt.MMgt_TShared):
         """
         return _BRepBuilderAPI.BRepBuilderAPI_Sewing_SectionToBoundary(self, *args)
 
-    def NbDegeneratedShapes(self, *args) -> "Standard_Integer" :
+    def NbDegeneratedShapes(self):
         """
         * Gives the number of degenerated shapes
 
         :rtype: int
 
         """
-        return _BRepBuilderAPI.BRepBuilderAPI_Sewing_NbDegeneratedShapes(self, *args)
+        return _BRepBuilderAPI.BRepBuilderAPI_Sewing_NbDegeneratedShapes(self)
 
-    def DegeneratedShape(self, *args) -> "TopoDS_Shape const" :
+    def DegeneratedShape(self, *args):
         """
         * Gives each degenerated shape
 
         :param index:
-        :type index: int
+        :type index: Standard_Integer
         :rtype: TopoDS_Shape
 
         """
         return _BRepBuilderAPI.BRepBuilderAPI_Sewing_DegeneratedShape(self, *args)
 
-    def IsDegenerated(self, *args) -> "Standard_Boolean" :
+    def IsDegenerated(self, *args):
         """
         * Indicates if a input shape is degenerated
 
@@ -655,7 +816,7 @@ class BRepBuilderAPI_Sewing(OCC.MMgt.MMgt_TShared):
         """
         return _BRepBuilderAPI.BRepBuilderAPI_Sewing_IsDegenerated(self, *args)
 
-    def IsModified(self, *args) -> "Standard_Boolean" :
+    def IsModified(self, *args):
         """
         * Indicates if a input shape has been modified
 
@@ -666,7 +827,7 @@ class BRepBuilderAPI_Sewing(OCC.MMgt.MMgt_TShared):
         """
         return _BRepBuilderAPI.BRepBuilderAPI_Sewing_IsModified(self, *args)
 
-    def Modified(self, *args) -> "TopoDS_Shape const" :
+    def Modified(self, *args):
         """
         * Gives a modifieded shape
 
@@ -677,7 +838,7 @@ class BRepBuilderAPI_Sewing(OCC.MMgt.MMgt_TShared):
         """
         return _BRepBuilderAPI.BRepBuilderAPI_Sewing_Modified(self, *args)
 
-    def IsModifiedSubShape(self, *args) -> "Standard_Boolean" :
+    def IsModifiedSubShape(self, *args):
         """
         * Indicates if a input subshape has been modified
 
@@ -688,7 +849,7 @@ class BRepBuilderAPI_Sewing(OCC.MMgt.MMgt_TShared):
         """
         return _BRepBuilderAPI.BRepBuilderAPI_Sewing_IsModifiedSubShape(self, *args)
 
-    def ModifiedSubShape(self, *args) -> "TopoDS_Shape" :
+    def ModifiedSubShape(self, *args):
         """
         * Gives a modifieded subshape
 
@@ -699,58 +860,66 @@ class BRepBuilderAPI_Sewing(OCC.MMgt.MMgt_TShared):
         """
         return _BRepBuilderAPI.BRepBuilderAPI_Sewing_ModifiedSubShape(self, *args)
 
-    def Dump(self, *args) -> "void" :
+    def Dump(self):
         """
         * print the informations
 
         :rtype: None
 
         """
-        return _BRepBuilderAPI.BRepBuilderAPI_Sewing_Dump(self, *args)
+        return _BRepBuilderAPI.BRepBuilderAPI_Sewing_Dump(self)
 
-    def NbDeletedFaces(self, *args) -> "Standard_Integer" :
+    def NbDeletedFaces(self):
         """
         * Gives the number of deleted faces (faces smallest than tolerance)
 
         :rtype: int
 
         """
-        return _BRepBuilderAPI.BRepBuilderAPI_Sewing_NbDeletedFaces(self, *args)
+        return _BRepBuilderAPI.BRepBuilderAPI_Sewing_NbDeletedFaces(self)
 
-    def DeletedFace(self, *args) -> "TopoDS_Face const" :
+    def DeletedFace(self, *args):
         """
         * Gives each deleted face
 
         :param index:
-        :type index: int
+        :type index: Standard_Integer
         :rtype: TopoDS_Face
 
         """
         return _BRepBuilderAPI.BRepBuilderAPI_Sewing_DeletedFace(self, *args)
 
-    def WhichFace(self, *args) -> "TopoDS_Face" :
+    def WhichFace(self, *args):
         """
         * Gives a modified shape
 
         :param theEdg:
         :type theEdg: TopoDS_Edge &
         :param index: default value is 1
-        :type index: int
+        :type index: Standard_Integer
+        :rtype: TopoDS_Face
+
+        * Gives a modified shape
+
+        :param theEdg:
+        :type theEdg: TopoDS_Edge &
+        :param index: default value is 1
+        :type index: Standard_Integer
         :rtype: TopoDS_Face
 
         """
         return _BRepBuilderAPI.BRepBuilderAPI_Sewing_WhichFace(self, *args)
 
-    def SameParameterMode(self, *args) -> "Standard_Boolean" :
+    def SameParameterMode(self):
         """
         * Gets same parameter mode.
 
         :rtype: bool
 
         """
-        return _BRepBuilderAPI.BRepBuilderAPI_Sewing_SameParameterMode(self, *args)
+        return _BRepBuilderAPI.BRepBuilderAPI_Sewing_SameParameterMode(self)
 
-    def SetSameParameterMode(self, *args) -> "void" :
+    def SetSameParameterMode(self, *args):
         """
         * Sets same parameter mode.
 
@@ -761,16 +930,16 @@ class BRepBuilderAPI_Sewing(OCC.MMgt.MMgt_TShared):
         """
         return _BRepBuilderAPI.BRepBuilderAPI_Sewing_SetSameParameterMode(self, *args)
 
-    def Tolerance(self, *args) -> "Standard_Real" :
+    def Tolerance(self):
         """
         * Gives set tolerance.
 
         :rtype: float
 
         """
-        return _BRepBuilderAPI.BRepBuilderAPI_Sewing_Tolerance(self, *args)
+        return _BRepBuilderAPI.BRepBuilderAPI_Sewing_Tolerance(self)
 
-    def SetTolerance(self, *args) -> "void" :
+    def SetTolerance(self, *args):
         """
         * Sets tolerance
 
@@ -781,16 +950,16 @@ class BRepBuilderAPI_Sewing(OCC.MMgt.MMgt_TShared):
         """
         return _BRepBuilderAPI.BRepBuilderAPI_Sewing_SetTolerance(self, *args)
 
-    def MinTolerance(self, *args) -> "Standard_Real" :
+    def MinTolerance(self):
         """
         * Gives set min tolerance.
 
         :rtype: float
 
         """
-        return _BRepBuilderAPI.BRepBuilderAPI_Sewing_MinTolerance(self, *args)
+        return _BRepBuilderAPI.BRepBuilderAPI_Sewing_MinTolerance(self)
 
-    def SetMinTolerance(self, *args) -> "void" :
+    def SetMinTolerance(self, *args):
         """
         * Sets min tolerance
 
@@ -801,16 +970,16 @@ class BRepBuilderAPI_Sewing(OCC.MMgt.MMgt_TShared):
         """
         return _BRepBuilderAPI.BRepBuilderAPI_Sewing_SetMinTolerance(self, *args)
 
-    def MaxTolerance(self, *args) -> "Standard_Real" :
+    def MaxTolerance(self):
         """
         * Gives set max tolerance
 
         :rtype: float
 
         """
-        return _BRepBuilderAPI.BRepBuilderAPI_Sewing_MaxTolerance(self, *args)
+        return _BRepBuilderAPI.BRepBuilderAPI_Sewing_MaxTolerance(self)
 
-    def SetMaxTolerance(self, *args) -> "void" :
+    def SetMaxTolerance(self, *args):
         """
         * Sets max tolerance.
 
@@ -821,16 +990,16 @@ class BRepBuilderAPI_Sewing(OCC.MMgt.MMgt_TShared):
         """
         return _BRepBuilderAPI.BRepBuilderAPI_Sewing_SetMaxTolerance(self, *args)
 
-    def FaceMode(self, *args) -> "Standard_Boolean" :
+    def FaceMode(self):
         """
         * Returns mode for sewing faces By default - true.
 
         :rtype: bool
 
         """
-        return _BRepBuilderAPI.BRepBuilderAPI_Sewing_FaceMode(self, *args)
+        return _BRepBuilderAPI.BRepBuilderAPI_Sewing_FaceMode(self)
 
-    def SetFaceMode(self, *args) -> "void" :
+    def SetFaceMode(self, *args):
         """
         * Sets mode for sewing faces By default - true.
 
@@ -841,16 +1010,16 @@ class BRepBuilderAPI_Sewing(OCC.MMgt.MMgt_TShared):
         """
         return _BRepBuilderAPI.BRepBuilderAPI_Sewing_SetFaceMode(self, *args)
 
-    def FloatingEdgesMode(self, *args) -> "Standard_Boolean" :
+    def FloatingEdgesMode(self):
         """
         * Returns mode for sewing floating edges By default - false.
 
         :rtype: bool
 
         """
-        return _BRepBuilderAPI.BRepBuilderAPI_Sewing_FloatingEdgesMode(self, *args)
+        return _BRepBuilderAPI.BRepBuilderAPI_Sewing_FloatingEdgesMode(self)
 
-    def SetFloatingEdgesMode(self, *args) -> "void" :
+    def SetFloatingEdgesMode(self, *args):
         """
         * Sets mode for sewing floating edges By default - false. Returns mode for cutting floating edges By default - false. Sets mode for cutting floating edges By default - false.
 
@@ -861,16 +1030,16 @@ class BRepBuilderAPI_Sewing(OCC.MMgt.MMgt_TShared):
         """
         return _BRepBuilderAPI.BRepBuilderAPI_Sewing_SetFloatingEdgesMode(self, *args)
 
-    def LocalTolerancesMode(self, *args) -> "Standard_Boolean" :
+    def LocalTolerancesMode(self):
         """
         * Returns mode for accounting of local tolerances of edges and vertices during of merging.
 
         :rtype: bool
 
         """
-        return _BRepBuilderAPI.BRepBuilderAPI_Sewing_LocalTolerancesMode(self, *args)
+        return _BRepBuilderAPI.BRepBuilderAPI_Sewing_LocalTolerancesMode(self)
 
-    def SetLocalTolerancesMode(self, *args) -> "void" :
+    def SetLocalTolerancesMode(self, *args):
         """
         * Sets mode for accounting of local tolerances of edges and vertices during of merging in this case WorkTolerance = myTolerance + tolEdge1+ tolEdg2;
 
@@ -881,7 +1050,7 @@ class BRepBuilderAPI_Sewing(OCC.MMgt.MMgt_TShared):
         """
         return _BRepBuilderAPI.BRepBuilderAPI_Sewing_SetLocalTolerancesMode(self, *args)
 
-    def SetNonManifoldMode(self, *args) -> "void" :
+    def SetNonManifoldMode(self, *args):
         """
         * Sets mode for non-manifold sewing.
 
@@ -892,20 +1061,20 @@ class BRepBuilderAPI_Sewing(OCC.MMgt.MMgt_TShared):
         """
         return _BRepBuilderAPI.BRepBuilderAPI_Sewing_SetNonManifoldMode(self, *args)
 
-    def NonManifoldMode(self, *args) -> "Standard_Boolean" :
+    def NonManifoldMode(self):
         """
         * Gets mode for non-manifold sewing. INTERNAL FUCTIONS ---
 
         :rtype: bool
 
         """
-        return _BRepBuilderAPI.BRepBuilderAPI_Sewing_NonManifoldMode(self, *args)
+        return _BRepBuilderAPI.BRepBuilderAPI_Sewing_NonManifoldMode(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(BRepBuilderAPI_Sewing self)"""
         return _BRepBuilderAPI.BRepBuilderAPI_Sewing__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_BRepBuilderAPI_Sewing" :
+    def GetHandle(self):
         """GetHandle(BRepBuilderAPI_Sewing self) -> Handle_BRepBuilderAPI_Sewing"""
         return _BRepBuilderAPI.BRepBuilderAPI_Sewing_GetHandle(self)
 
@@ -986,7 +1155,7 @@ Handle_BRepBuilderAPI_Sewing._kill_pointed = new_instancemethod(_BRepBuilderAPI.
 Handle_BRepBuilderAPI_Sewing_swigregister = _BRepBuilderAPI.Handle_BRepBuilderAPI_Sewing_swigregister
 Handle_BRepBuilderAPI_Sewing_swigregister(Handle_BRepBuilderAPI_Sewing)
 
-def Handle_BRepBuilderAPI_Sewing_DownCast(*args) -> "Handle_BRepBuilderAPI_Sewing const" :
+def Handle_BRepBuilderAPI_Sewing_DownCast(*args):
   return _BRepBuilderAPI.Handle_BRepBuilderAPI_Sewing_DownCast(*args)
 Handle_BRepBuilderAPI_Sewing_DownCast = _BRepBuilderAPI.Handle_BRepBuilderAPI_Sewing_DownCast
 
@@ -1003,7 +1172,7 @@ class BRepBuilderAPI_VertexInspector(object):
 
         """
         _BRepBuilderAPI.BRepBuilderAPI_VertexInspector_swiginit(self,_BRepBuilderAPI.new_BRepBuilderAPI_VertexInspector(*args))
-    def Add(self, *args) -> "void" :
+    def Add(self, *args):
         """
         * Keep the points used for comparison
 
@@ -1014,16 +1183,16 @@ class BRepBuilderAPI_VertexInspector(object):
         """
         return _BRepBuilderAPI.BRepBuilderAPI_VertexInspector_Add(self, *args)
 
-    def ClearResList(self, *args) -> "void" :
+    def ClearResList(self):
         """
         * Clear the list of adjacent points
 
         :rtype: None
 
         """
-        return _BRepBuilderAPI.BRepBuilderAPI_VertexInspector_ClearResList(self, *args)
+        return _BRepBuilderAPI.BRepBuilderAPI_VertexInspector_ClearResList(self)
 
-    def SetCurrent(self, *args) -> "void" :
+    def SetCurrent(self, *args):
         """
         * Set current point to search for coincidence
 
@@ -1034,21 +1203,21 @@ class BRepBuilderAPI_VertexInspector(object):
         """
         return _BRepBuilderAPI.BRepBuilderAPI_VertexInspector_SetCurrent(self, *args)
 
-    def ResInd(self, *args) -> "TColStd_ListOfInteger const &" :
+    def ResInd(self):
         """
         * Get list of indexes of points adjacent with the current
 
         :rtype: TColStd_ListOfInteger
 
         """
-        return _BRepBuilderAPI.BRepBuilderAPI_VertexInspector_ResInd(self, *args)
+        return _BRepBuilderAPI.BRepBuilderAPI_VertexInspector_ResInd(self)
 
-    def Inspect(self, *args) -> "NCollection_CellFilter_Action" :
+    def Inspect(self, *args):
         """
         * Implementation of inspection method
 
         :param theTarget:
-        :type theTarget: int
+        :type theTarget: Standard_Integer
         :rtype: NCollection_CellFilter_Action
 
         """
@@ -1074,15 +1243,15 @@ BRepBuilderAPI_VertexInspector_swigregister(BRepBuilderAPI_VertexInspector)
 class BRepBuilderAPI_BndBoxTreeSelector(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         * Constructor; calls the base class constructor
 
         :rtype: None
 
         """
-        _BRepBuilderAPI.BRepBuilderAPI_BndBoxTreeSelector_swiginit(self,_BRepBuilderAPI.new_BRepBuilderAPI_BndBoxTreeSelector(*args))
-    def Reject(self, *args) -> "Standard_Boolean" :
+        _BRepBuilderAPI.BRepBuilderAPI_BndBoxTreeSelector_swiginit(self,_BRepBuilderAPI.new_BRepBuilderAPI_BndBoxTreeSelector())
+    def Reject(self, *args):
         """
         * Implementation of rejection method returns True if the bounding box does not intersect with the current
 
@@ -1093,27 +1262,27 @@ class BRepBuilderAPI_BndBoxTreeSelector(object):
         """
         return _BRepBuilderAPI.BRepBuilderAPI_BndBoxTreeSelector_Reject(self, *args)
 
-    def Accept(self, *args) -> "Standard_Boolean" :
+    def Accept(self):
         """
         * Implementation of acceptance method This method is called when the bounding box intersect with the current. It stores the object - the index of box in the list of accepted objects. returns True, because the object is accepted
 
         :param theObj:
-        :type theObj: int &
+        :type theObj: Standard_Integer &
         :rtype: bool
 
         """
-        return _BRepBuilderAPI.BRepBuilderAPI_BndBoxTreeSelector_Accept(self, *args)
+        return _BRepBuilderAPI.BRepBuilderAPI_BndBoxTreeSelector_Accept(self)
 
-    def ClearResList(self, *args) -> "void" :
+    def ClearResList(self):
         """
         * Clear the list of intersecting boxes
 
         :rtype: None
 
         """
-        return _BRepBuilderAPI.BRepBuilderAPI_BndBoxTreeSelector_ClearResList(self, *args)
+        return _BRepBuilderAPI.BRepBuilderAPI_BndBoxTreeSelector_ClearResList(self)
 
-    def SetCurrent(self, *args) -> "void" :
+    def SetCurrent(self, *args):
         """
         * Set current box to search for overlapping with him
 
@@ -1124,14 +1293,14 @@ class BRepBuilderAPI_BndBoxTreeSelector(object):
         """
         return _BRepBuilderAPI.BRepBuilderAPI_BndBoxTreeSelector_SetCurrent(self, *args)
 
-    def ResInd(self, *args) -> "TColStd_ListOfInteger const &" :
+    def ResInd(self):
         """
         * Get list of indexes of boxes intersecting with the current box
 
         :rtype: TColStd_ListOfInteger
 
         """
-        return _BRepBuilderAPI.BRepBuilderAPI_BndBoxTreeSelector_ResInd(self, *args)
+        return _BRepBuilderAPI.BRepBuilderAPI_BndBoxTreeSelector_ResInd(self)
 
     def __del__(self):
     	try:
@@ -1154,25 +1323,25 @@ class BRepBuilderAPI_MakeShape(BRepBuilderAPI_Command):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def Build(self, *args) -> "void" :
+    def Build(self):
         """
         * This is called by Shape(). It does nothing but may be redefined.
 
         :rtype: void
 
         """
-        return _BRepBuilderAPI.BRepBuilderAPI_MakeShape_Build(self, *args)
+        return _BRepBuilderAPI.BRepBuilderAPI_MakeShape_Build(self)
 
-    def Shape(self, *args) -> "TopoDS_Shape const" :
+    def Shape(self):
         """
         * Returns a shape built by the shape construction algorithm. Raises exception StdFail_NotDone if the shape was not built.
 
         :rtype: TopoDS_Shape
 
         """
-        return _BRepBuilderAPI.BRepBuilderAPI_MakeShape_Shape(self, *args)
+        return _BRepBuilderAPI.BRepBuilderAPI_MakeShape_Shape(self)
 
-    def Generated(self, *args) -> "TopTools_ListOfShape const &" :
+    def Generated(self, *args):
         """
         * Returns the list of shapes generated from the shape <S>.
 
@@ -1183,7 +1352,7 @@ class BRepBuilderAPI_MakeShape(BRepBuilderAPI_Command):
         """
         return _BRepBuilderAPI.BRepBuilderAPI_MakeShape_Generated(self, *args)
 
-    def Modified(self, *args) -> "TopTools_ListOfShape const &" :
+    def Modified(self, *args):
         """
         * Returns the list of shapes modified from the shape <S>.
 
@@ -1194,7 +1363,7 @@ class BRepBuilderAPI_MakeShape(BRepBuilderAPI_Command):
         """
         return _BRepBuilderAPI.BRepBuilderAPI_MakeShape_Modified(self, *args)
 
-    def IsDeleted(self, *args) -> "Standard_Boolean" :
+    def IsDeleted(self, *args):
         """
         * Returns true if the shape S has been deleted.
 
@@ -1501,7 +1670,7 @@ class BRepBuilderAPI_MakeEdge(BRepBuilderAPI_MakeShape):
 
         """
         _BRepBuilderAPI.BRepBuilderAPI_MakeEdge_swiginit(self,_BRepBuilderAPI.new_BRepBuilderAPI_MakeEdge(*args))
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
         :param C:
         :type C: Handle_Geom_Curve &
@@ -1624,41 +1793,41 @@ class BRepBuilderAPI_MakeEdge(BRepBuilderAPI_MakeShape):
         """
         return _BRepBuilderAPI.BRepBuilderAPI_MakeEdge_Init(self, *args)
 
-    def Error(self, *args) -> "BRepBuilderAPI_EdgeError" :
+    def Error(self):
         """
         * Returns the construction status - BRepBuilderAPI_EdgeDone if the edge is built, or - another value of the BRepBuilderAPI_EdgeError enumeration indicating the reason of construction failure.
 
         :rtype: BRepBuilderAPI_EdgeError
 
         """
-        return _BRepBuilderAPI.BRepBuilderAPI_MakeEdge_Error(self, *args)
+        return _BRepBuilderAPI.BRepBuilderAPI_MakeEdge_Error(self)
 
-    def Edge(self, *args) -> "TopoDS_Edge const" :
+    def Edge(self):
         """
         * Returns the constructed edge. Exceptions StdFail_NotDone if the edge is not built.
 
         :rtype: TopoDS_Edge
 
         """
-        return _BRepBuilderAPI.BRepBuilderAPI_MakeEdge_Edge(self, *args)
+        return _BRepBuilderAPI.BRepBuilderAPI_MakeEdge_Edge(self)
 
-    def Vertex1(self, *args) -> "TopoDS_Vertex const" :
+    def Vertex1(self):
         """
         * Returns the first vertex of the edge. May be Null.
 
         :rtype: TopoDS_Vertex
 
         """
-        return _BRepBuilderAPI.BRepBuilderAPI_MakeEdge_Vertex1(self, *args)
+        return _BRepBuilderAPI.BRepBuilderAPI_MakeEdge_Vertex1(self)
 
-    def Vertex2(self, *args) -> "TopoDS_Vertex const" :
+    def Vertex2(self):
         """
         * Returns the second vertex of the edge. May be Null. Warning The returned vertex in each function corresponds respectively to - the lowest, or - the highest parameter on the curve along which the edge is built. It does not correspond to the first or second vertex given at the time of the construction, if the edge is oriented reversed. Exceptions StdFail_NotDone if the edge is not built.
 
         :rtype: TopoDS_Vertex
 
         """
-        return _BRepBuilderAPI.BRepBuilderAPI_MakeEdge_Vertex2(self, *args)
+        return _BRepBuilderAPI.BRepBuilderAPI_MakeEdge_Vertex2(self)
 
     def __del__(self):
     	try:
@@ -1888,7 +2057,7 @@ class BRepBuilderAPI_MakeEdge2d(BRepBuilderAPI_MakeShape):
 
         """
         _BRepBuilderAPI.BRepBuilderAPI_MakeEdge2d_swiginit(self,_BRepBuilderAPI.new_BRepBuilderAPI_MakeEdge2d(*args))
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
         :param C:
         :type C: Handle_Geom2d_Curve &
@@ -1945,39 +2114,39 @@ class BRepBuilderAPI_MakeEdge2d(BRepBuilderAPI_MakeShape):
         """
         return _BRepBuilderAPI.BRepBuilderAPI_MakeEdge2d_Init(self, *args)
 
-    def Error(self, *args) -> "BRepBuilderAPI_EdgeError" :
+    def Error(self):
         """
         * Returns the error description when NotDone.
 
         :rtype: BRepBuilderAPI_EdgeError
 
         """
-        return _BRepBuilderAPI.BRepBuilderAPI_MakeEdge2d_Error(self, *args)
+        return _BRepBuilderAPI.BRepBuilderAPI_MakeEdge2d_Error(self)
 
-    def Edge(self, *args) -> "TopoDS_Edge const" :
+    def Edge(self):
         """
         :rtype: TopoDS_Edge
 
         """
-        return _BRepBuilderAPI.BRepBuilderAPI_MakeEdge2d_Edge(self, *args)
+        return _BRepBuilderAPI.BRepBuilderAPI_MakeEdge2d_Edge(self)
 
-    def Vertex1(self, *args) -> "TopoDS_Vertex const" :
+    def Vertex1(self):
         """
         * Returns the first vertex of the edge. May be Null.
 
         :rtype: TopoDS_Vertex
 
         """
-        return _BRepBuilderAPI.BRepBuilderAPI_MakeEdge2d_Vertex1(self, *args)
+        return _BRepBuilderAPI.BRepBuilderAPI_MakeEdge2d_Vertex1(self)
 
-    def Vertex2(self, *args) -> "TopoDS_Vertex const" :
+    def Vertex2(self):
         """
         * Returns the second vertex of the edge. May be Null.
 
         :rtype: TopoDS_Vertex
 
         """
-        return _BRepBuilderAPI.BRepBuilderAPI_MakeEdge2d_Vertex2(self, *args)
+        return _BRepBuilderAPI.BRepBuilderAPI_MakeEdge2d_Vertex2(self)
 
     def __del__(self):
     	try:
@@ -2143,10 +2312,38 @@ class BRepBuilderAPI_MakeFace(BRepBuilderAPI_MakeShape):
         :type OnlyPlane: bool
         :rtype: None
 
+        * Find a surface from the wire and make a face. if <OnlyPlane> is true, the computed surface will be a plane. If it is not possible to find a plane, the flag NotDone will be set.
+
+        :param W:
+        :type W: TopoDS_Wire &
+        :param OnlyPlane: default value is Standard_False
+        :type OnlyPlane: bool
+        :rtype: None
+
         * Make a face from a plane and a wire.
 
         :param P:
         :type P: gp_Pln
+        :param W:
+        :type W: TopoDS_Wire &
+        :param Inside: default value is Standard_True
+        :type Inside: bool
+        :rtype: None
+
+        * Make a face from a plane and a wire.
+
+        :param P:
+        :type P: gp_Pln
+        :param W:
+        :type W: TopoDS_Wire &
+        :param Inside: default value is Standard_True
+        :type Inside: bool
+        :rtype: None
+
+        * Make a face from a cylinder and a wire.
+
+        :param C:
+        :type C: gp_Cylinder
         :param W:
         :type W: TopoDS_Wire &
         :param Inside: default value is Standard_True
@@ -2173,10 +2370,40 @@ class BRepBuilderAPI_MakeFace(BRepBuilderAPI_MakeShape):
         :type Inside: bool
         :rtype: None
 
+        * Make a face from a cone and a wire.
+
+        :param C:
+        :type C: gp_Cone
+        :param W:
+        :type W: TopoDS_Wire &
+        :param Inside: default value is Standard_True
+        :type Inside: bool
+        :rtype: None
+
         * Make a face from a sphere and a wire.
 
         :param S:
         :type S: gp_Sphere
+        :param W:
+        :type W: TopoDS_Wire &
+        :param Inside: default value is Standard_True
+        :type Inside: bool
+        :rtype: None
+
+        * Make a face from a sphere and a wire.
+
+        :param S:
+        :type S: gp_Sphere
+        :param W:
+        :type W: TopoDS_Wire &
+        :param Inside: default value is Standard_True
+        :type Inside: bool
+        :rtype: None
+
+        * Make a face from a torus and a wire.
+
+        :param C:
+        :type C: gp_Torus
         :param W:
         :type W: TopoDS_Wire &
         :param Inside: default value is Standard_True
@@ -2203,6 +2430,16 @@ class BRepBuilderAPI_MakeFace(BRepBuilderAPI_MakeShape):
         :type Inside: bool
         :rtype: None
 
+        * Make a face from a Surface and a wire.
+
+        :param S:
+        :type S: Handle_Geom_Surface &
+        :param W:
+        :type W: TopoDS_Wire &
+        :param Inside: default value is Standard_True
+        :type Inside: bool
+        :rtype: None
+
         * Adds the wire <W> in the face <F> A general method to create a face is to give - a surface S as the support (the geometric domain) of the face, - and a wire W to bound it. The bounds of the face can also be defined by four parameter values umin, umax, vmin, vmax which determine isoparametric limitations on the parametric space of the surface. In this way, a patch is defined. The parameter values are optional. If they are omitted, the natural bounds of the surface are used. A wire is automatically built using the defined bounds. Up to four edges and four vertices are created with this wire (no edge is created when the corresponding parameter value is infinite). Wires can then be added using the function Add to define other restrictions on the face. These restrictions represent holes. More than one wire may be added by this way, provided that the wires do not cross each other and that they define only one area on the surface. (Be careful, however, as this is not checked). Forbidden addition of wires Note that in this schema, the third case is valid if edges of the wire W are declared internal to the face. As a result, these edges are no longer bounds of the face. A default tolerance (Precision::Confusion()) is given to the face, this tolerance may be increased during construction of the face using various algorithms. Rules applied to the arguments For the surface: - The surface must not be a 'null handle'. - If the surface is a trimmed surface, the basis surface is used. - For the wire: the wire is composed of connected edges, each edge having a parametric curve description in the parametric domain of the surface; in other words, as a pcurve. For the parameters: - The parameter values must be in the parametric range of the surface (or the basis surface, if the surface is trimmed). If this condition is not satisfied, the face is not built, and the Error function will return BRepBuilderAPI_ParametersOutOfRange. - The bounding parameters p1 and p2 are adjusted on a periodic surface in a given parametric direction by adding or subtracting the period to obtain p1 in the parametric range of the surface and such p2, that p2 - p1 <= Period, where Period is the period of the surface in this parametric direction. - A parameter value may be infinite. There will be no edge and no vertex in the corresponding direction.
 
         :param F:
@@ -2213,7 +2450,7 @@ class BRepBuilderAPI_MakeFace(BRepBuilderAPI_MakeShape):
 
         """
         _BRepBuilderAPI.BRepBuilderAPI_MakeFace_swiginit(self,_BRepBuilderAPI.new_BRepBuilderAPI_MakeFace(*args))
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
         * Initializes (or reinitializes) the construction of a face by creating a new object which is a copy of the face F, in order to add wires to it, using the function Add. Note: this complete copy of the geometry is only required if you want to work on the geometries of the two faces independently.
 
@@ -2250,7 +2487,7 @@ class BRepBuilderAPI_MakeFace(BRepBuilderAPI_MakeShape):
         """
         return _BRepBuilderAPI.BRepBuilderAPI_MakeFace_Init(self, *args)
 
-    def Add(self, *args) -> "void" :
+    def Add(self, *args):
         """
         * Adds the wire W to the constructed face as a hole. Warning W must not cross the other bounds of the face, and all the bounds must define only one area on the surface. (Be careful, however, as this is not checked.) Example // a cylinder gp_Cylinder C = ..; // a wire TopoDS_Wire W = ...; BRepBuilderAPI_MakeFace MF(C); MF.Add(W); TopoDS_Face F = MF;
 
@@ -2261,23 +2498,23 @@ class BRepBuilderAPI_MakeFace(BRepBuilderAPI_MakeShape):
         """
         return _BRepBuilderAPI.BRepBuilderAPI_MakeFace_Add(self, *args)
 
-    def Error(self, *args) -> "BRepBuilderAPI_FaceError" :
+    def Error(self):
         """
         * Returns the construction status BRepBuilderAPI_FaceDone if the face is built, or - another value of the BRepBuilderAPI_FaceError enumeration indicating why the construction failed, in particular when the given parameters are outside the bounds of the surface.
 
         :rtype: BRepBuilderAPI_FaceError
 
         """
-        return _BRepBuilderAPI.BRepBuilderAPI_MakeFace_Error(self, *args)
+        return _BRepBuilderAPI.BRepBuilderAPI_MakeFace_Error(self)
 
-    def Face(self, *args) -> "TopoDS_Face const" :
+    def Face(self):
         """
         * Returns the constructed face. Exceptions StdFail_NotDone if no face is built.
 
         :rtype: TopoDS_Face
 
         """
-        return _BRepBuilderAPI.BRepBuilderAPI_MakeFace_Face(self, *args)
+        return _BRepBuilderAPI.BRepBuilderAPI_MakeFace_Face(self)
 
     def __del__(self):
     	try:
@@ -2320,6 +2557,30 @@ class BRepBuilderAPI_MakePolygon(BRepBuilderAPI_MakeShape):
         :type Close: bool
         :rtype: None
 
+        :param P1:
+        :type P1: gp_Pnt
+        :param P2:
+        :type P2: gp_Pnt
+        :param P3:
+        :type P3: gp_Pnt
+        :param Close: default value is Standard_False
+        :type Close: bool
+        :rtype: None
+
+        * Constructs a polygonal wire from 2, 3 or 4 points. Vertices are automatically created on the given points. The polygonal wire is closed if Close is true; otherwise it is open. Further vertices can be added using the Add function. The polygonal wire under construction can be consulted at any time by using the Wire function. Example //an open polygon from four points TopoDS_Wire W = BRepBuilderAPI_MakePolygon(P1,P2,P3,P4); Warning: The process is equivalent to: - initializing an empty polygonal wire, - and adding the given points in sequence. Consequently, be careful when using this function: if the sequence of points p1 - p2 - p1 is found among the arguments of the constructor, you will create a polygonal wire with two consecutive coincident edges.
+
+        :param P1:
+        :type P1: gp_Pnt
+        :param P2:
+        :type P2: gp_Pnt
+        :param P3:
+        :type P3: gp_Pnt
+        :param P4:
+        :type P4: gp_Pnt
+        :param Close: default value is Standard_False
+        :type Close: bool
+        :rtype: None
+
         * Constructs a polygonal wire from 2, 3 or 4 points. Vertices are automatically created on the given points. The polygonal wire is closed if Close is true; otherwise it is open. Further vertices can be added using the Add function. The polygonal wire under construction can be consulted at any time by using the Wire function. Example //an open polygon from four points TopoDS_Wire W = BRepBuilderAPI_MakePolygon(P1,P2,P3,P4); Warning: The process is equivalent to: - initializing an empty polygonal wire, - and adding the given points in sequence. Consequently, be careful when using this function: if the sequence of points p1 - p2 - p1 is found among the arguments of the constructor, you will create a polygonal wire with two consecutive coincident edges.
 
         :param P1:
@@ -2350,6 +2611,30 @@ class BRepBuilderAPI_MakePolygon(BRepBuilderAPI_MakeShape):
         :type Close: bool
         :rtype: None
 
+        :param V1:
+        :type V1: TopoDS_Vertex &
+        :param V2:
+        :type V2: TopoDS_Vertex &
+        :param V3:
+        :type V3: TopoDS_Vertex &
+        :param Close: default value is Standard_False
+        :type Close: bool
+        :rtype: None
+
+        * Constructs a polygonal wire from 2, 3 or 4 vertices. The polygonal wire is closed if Close is true; otherwise it is open (default value). Further vertices can be added using the Add function. The polygonal wire under construction can be consulted at any time by using the Wire function. Example //a closed triangle from three vertices TopoDS_Wire W = BRepBuilderAPI_MakePolygon(V1,V2,V3,Standard_True); Warning The process is equivalent to: - initializing an empty polygonal wire, - then adding the given points in sequence. So be careful, as when using this function, you could create a polygonal wire with two consecutive coincident edges if the sequence of vertices v1 - v2 - v1 is found among the constructor's arguments.
+
+        :param V1:
+        :type V1: TopoDS_Vertex &
+        :param V2:
+        :type V2: TopoDS_Vertex &
+        :param V3:
+        :type V3: TopoDS_Vertex &
+        :param V4:
+        :type V4: TopoDS_Vertex &
+        :param Close: default value is Standard_False
+        :type Close: bool
+        :rtype: None
+
         * Constructs a polygonal wire from 2, 3 or 4 vertices. The polygonal wire is closed if Close is true; otherwise it is open (default value). Further vertices can be added using the Add function. The polygonal wire under construction can be consulted at any time by using the Wire function. Example //a closed triangle from three vertices TopoDS_Wire W = BRepBuilderAPI_MakePolygon(V1,V2,V3,Standard_True); Warning The process is equivalent to: - initializing an empty polygonal wire, - then adding the given points in sequence. So be careful, as when using this function, you could create a polygonal wire with two consecutive coincident edges if the sequence of vertices v1 - v2 - v1 is found among the constructor's arguments.
 
         :param V1:
@@ -2366,7 +2651,7 @@ class BRepBuilderAPI_MakePolygon(BRepBuilderAPI_MakeShape):
 
         """
         _BRepBuilderAPI.BRepBuilderAPI_MakePolygon_swiginit(self,_BRepBuilderAPI.new_BRepBuilderAPI_MakePolygon(*args))
-    def Add(self, *args) -> "void" :
+    def Add(self, *args):
         """
         :param P:
         :type P: gp_Pnt
@@ -2381,57 +2666,57 @@ class BRepBuilderAPI_MakePolygon(BRepBuilderAPI_MakeShape):
         """
         return _BRepBuilderAPI.BRepBuilderAPI_MakePolygon_Add(self, *args)
 
-    def Added(self, *args) -> "Standard_Boolean" :
+    def Added(self):
         """
         * Returns true if the last vertex added to the constructed polygonal wire is not coincident with the previous one.
 
         :rtype: bool
 
         """
-        return _BRepBuilderAPI.BRepBuilderAPI_MakePolygon_Added(self, *args)
+        return _BRepBuilderAPI.BRepBuilderAPI_MakePolygon_Added(self)
 
-    def Close(self, *args) -> "void" :
+    def Close(self):
         """
         * Closes the polygonal wire under construction. Note - this is equivalent to adding the first vertex to the polygonal wire under construction.
 
         :rtype: None
 
         """
-        return _BRepBuilderAPI.BRepBuilderAPI_MakePolygon_Close(self, *args)
+        return _BRepBuilderAPI.BRepBuilderAPI_MakePolygon_Close(self)
 
-    def FirstVertex(self, *args) -> "TopoDS_Vertex const" :
+    def FirstVertex(self):
         """
         :rtype: TopoDS_Vertex
 
         """
-        return _BRepBuilderAPI.BRepBuilderAPI_MakePolygon_FirstVertex(self, *args)
+        return _BRepBuilderAPI.BRepBuilderAPI_MakePolygon_FirstVertex(self)
 
-    def LastVertex(self, *args) -> "TopoDS_Vertex const" :
+    def LastVertex(self):
         """
         * Returns the first or the last vertex of the polygonal wire under construction. If the constructed polygonal wire is closed, the first and the last vertices are identical.
 
         :rtype: TopoDS_Vertex
 
         """
-        return _BRepBuilderAPI.BRepBuilderAPI_MakePolygon_LastVertex(self, *args)
+        return _BRepBuilderAPI.BRepBuilderAPI_MakePolygon_LastVertex(self)
 
-    def Edge(self, *args) -> "TopoDS_Edge const" :
+    def Edge(self):
         """
         * Returns the edge built between the last two points or vertices added to the constructed polygonal wire under construction. Warning If there is only one vertex in the polygonal wire, the result is a null edge.
 
         :rtype: TopoDS_Edge
 
         """
-        return _BRepBuilderAPI.BRepBuilderAPI_MakePolygon_Edge(self, *args)
+        return _BRepBuilderAPI.BRepBuilderAPI_MakePolygon_Edge(self)
 
-    def Wire(self, *args) -> "TopoDS_Wire const" :
+    def Wire(self):
         """
         * Returns the constructed polygonal wire, or the already built part of the polygonal wire under construction. Exceptions StdFail_NotDone if the wire is not built, i.e. if fewer than two vertices have been chained together by this construction algorithm.
 
         :rtype: TopoDS_Wire
 
         """
-        return _BRepBuilderAPI.BRepBuilderAPI_MakePolygon_Wire(self, *args)
+        return _BRepBuilderAPI.BRepBuilderAPI_MakePolygon_Wire(self)
 
     def __del__(self):
     	try:
@@ -2469,6 +2754,30 @@ class BRepBuilderAPI_MakeShell(BRepBuilderAPI_MakeShape):
         :type Segment: bool
         :rtype: None
 
+        * Constructs a shell from the surface S.
+
+        :param S:
+        :type S: Handle_Geom_Surface &
+        :param Segment: default value is Standard_False
+        :type Segment: bool
+        :rtype: None
+
+        * Constructs a shell from the surface S, limited in the u parametric direction by the two parameter values UMin and UMax, and limited in the v parametric direction by the two parameter values VMin and VMax.
+
+        :param S:
+        :type S: Handle_Geom_Surface &
+        :param UMin:
+        :type UMin: float
+        :param UMax:
+        :type UMax: float
+        :param VMin:
+        :type VMin: float
+        :param VMax:
+        :type VMax: float
+        :param Segment: default value is Standard_False
+        :type Segment: bool
+        :rtype: None
+
         * Constructs a shell from the surface S, limited in the u parametric direction by the two parameter values UMin and UMax, and limited in the v parametric direction by the two parameter values VMin and VMax.
 
         :param S:
@@ -2487,8 +2796,24 @@ class BRepBuilderAPI_MakeShell(BRepBuilderAPI_MakeShape):
 
         """
         _BRepBuilderAPI.BRepBuilderAPI_MakeShell_swiginit(self,_BRepBuilderAPI.new_BRepBuilderAPI_MakeShell(*args))
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
+        * Defines or redefines the arguments for the construction of a shell. The construction is initialized with the surface S, limited in the u parametric direction by the two parameter values UMin and UMax, and in the v parametric direction by the two parameter values VMin and VMax. Warning The function Error returns: - BRepBuilderAPI_ShellParametersOutOfRange when the given parameters are outside the bounds of the surface or the basis surface if S is trimmed
+
+        :param S:
+        :type S: Handle_Geom_Surface &
+        :param UMin:
+        :type UMin: float
+        :param UMax:
+        :type UMax: float
+        :param VMin:
+        :type VMin: float
+        :param VMax:
+        :type VMax: float
+        :param Segment: default value is Standard_False
+        :type Segment: bool
+        :rtype: None
+
         * Defines or redefines the arguments for the construction of a shell. The construction is initialized with the surface S, limited in the u parametric direction by the two parameter values UMin and UMax, and in the v parametric direction by the two parameter values VMin and VMax. Warning The function Error returns: - BRepBuilderAPI_ShellParametersOutOfRange when the given parameters are outside the bounds of the surface or the basis surface if S is trimmed
 
         :param S:
@@ -2508,23 +2833,23 @@ class BRepBuilderAPI_MakeShell(BRepBuilderAPI_MakeShape):
         """
         return _BRepBuilderAPI.BRepBuilderAPI_MakeShell_Init(self, *args)
 
-    def Error(self, *args) -> "BRepBuilderAPI_ShellError" :
+    def Error(self):
         """
         * Returns the construction status: - BRepBuilderAPI_ShellDone if the shell is built, or - another value of the BRepBuilderAPI_ShellError enumeration indicating why the construction failed. This is frequently BRepBuilderAPI_ShellParametersOutOfRange indicating that the given parameters are outside the bounds of the surface.
 
         :rtype: BRepBuilderAPI_ShellError
 
         """
-        return _BRepBuilderAPI.BRepBuilderAPI_MakeShell_Error(self, *args)
+        return _BRepBuilderAPI.BRepBuilderAPI_MakeShell_Error(self)
 
-    def Shell(self, *args) -> "TopoDS_Shell const" :
+    def Shell(self):
         """
         * Returns the new Shell.
 
         :rtype: TopoDS_Shell
 
         """
-        return _BRepBuilderAPI.BRepBuilderAPI_MakeShell_Shell(self, *args)
+        return _BRepBuilderAPI.BRepBuilderAPI_MakeShell_Shell(self)
 
     def __del__(self):
     	try:
@@ -2596,7 +2921,7 @@ class BRepBuilderAPI_MakeSolid(BRepBuilderAPI_MakeShape):
 
         """
         _BRepBuilderAPI.BRepBuilderAPI_MakeSolid_swiginit(self,_BRepBuilderAPI.new_BRepBuilderAPI_MakeSolid(*args))
-    def Add(self, *args) -> "void" :
+    def Add(self, *args):
         """
         * Adds the shell to the current solid. //!	Warning No check is done to verify the conditions of coherence of the resulting solid. In particular, S must not intersect other shells of the solid under construction. Besides, after all shells have been added, one of these shells should constitute the outside skin of the solid. It may be closed (a finite solid) or open (an infinite solid). Other shells form hollows (cavities) in these previous ones. Each must bound a closed volume.
 
@@ -2607,14 +2932,14 @@ class BRepBuilderAPI_MakeSolid(BRepBuilderAPI_MakeShape):
         """
         return _BRepBuilderAPI.BRepBuilderAPI_MakeSolid_Add(self, *args)
 
-    def Solid(self, *args) -> "TopoDS_Solid const" :
+    def Solid(self):
         """
         * Returns the new Solid.
 
         :rtype: TopoDS_Solid
 
         """
-        return _BRepBuilderAPI.BRepBuilderAPI_MakeSolid_Solid(self, *args)
+        return _BRepBuilderAPI.BRepBuilderAPI_MakeSolid_Solid(self)
 
     def __del__(self):
     	try:
@@ -2643,14 +2968,14 @@ class BRepBuilderAPI_MakeVertex(BRepBuilderAPI_MakeShape):
 
         """
         _BRepBuilderAPI.BRepBuilderAPI_MakeVertex_swiginit(self,_BRepBuilderAPI.new_BRepBuilderAPI_MakeVertex(*args))
-    def Vertex(self, *args) -> "TopoDS_Vertex const" :
+    def Vertex(self):
         """
         * Returns the constructed vertex.
 
         :rtype: TopoDS_Vertex
 
         """
-        return _BRepBuilderAPI.BRepBuilderAPI_MakeVertex_Vertex(self, *args)
+        return _BRepBuilderAPI.BRepBuilderAPI_MakeVertex_Vertex(self)
 
     def __del__(self):
     	try:
@@ -2726,7 +3051,7 @@ class BRepBuilderAPI_MakeWire(BRepBuilderAPI_MakeShape):
 
         """
         _BRepBuilderAPI.BRepBuilderAPI_MakeWire_swiginit(self,_BRepBuilderAPI.new_BRepBuilderAPI_MakeWire(*args))
-    def Add(self, *args) -> "void" :
+    def Add(self, *args):
         """
         * Adds the edge E to the wire under construction. E must be connectable to the wire under construction, and, unless it is the first edge of the wire, must satisfy the following condition: one of its vertices must be geometrically coincident with one of the vertices of the wire (provided that the highest tolerance factor is assigned to the two vertices). It could also be the same vertex. Warning If E is not connectable to the wire under construction it is not added. The function Error will return BRepBuilderAPI_DisconnectedWire, the function IsDone will return false and the function Wire will raise an error, until a new connectable edge is added.
 
@@ -2749,41 +3074,41 @@ class BRepBuilderAPI_MakeWire(BRepBuilderAPI_MakeShape):
         """
         return _BRepBuilderAPI.BRepBuilderAPI_MakeWire_Add(self, *args)
 
-    def Error(self, *args) -> "BRepBuilderAPI_WireError" :
+    def Error(self):
         """
         * Returns the construction status - BRepBuilderAPI_WireDone if the wire is built, or - another value of the BRepBuilderAPI_WireError enumeration indicating why the construction failed.
 
         :rtype: BRepBuilderAPI_WireError
 
         """
-        return _BRepBuilderAPI.BRepBuilderAPI_MakeWire_Error(self, *args)
+        return _BRepBuilderAPI.BRepBuilderAPI_MakeWire_Error(self)
 
-    def Wire(self, *args) -> "TopoDS_Wire const" :
+    def Wire(self):
         """
         * Returns the constructed wire; or the part of the wire under construction already built. Exceptions StdFail_NotDone if a wire is not built.
 
         :rtype: TopoDS_Wire
 
         """
-        return _BRepBuilderAPI.BRepBuilderAPI_MakeWire_Wire(self, *args)
+        return _BRepBuilderAPI.BRepBuilderAPI_MakeWire_Wire(self)
 
-    def Edge(self, *args) -> "TopoDS_Edge const" :
+    def Edge(self):
         """
         * Returns the last edge added to the wire under construction. Warning - This edge can be different from the original one (the argument of the function Add, for instance,) - A null edge is returned if there are no edges in the wire under construction, or if the last edge which you tried to add was not connectable..
 
         :rtype: TopoDS_Edge
 
         """
-        return _BRepBuilderAPI.BRepBuilderAPI_MakeWire_Edge(self, *args)
+        return _BRepBuilderAPI.BRepBuilderAPI_MakeWire_Edge(self)
 
-    def Vertex(self, *args) -> "TopoDS_Vertex const" :
+    def Vertex(self):
         """
         * Returns the last vertex of the last edge added to the wire under construction. Warning A null vertex is returned if there are no edges in the wire under construction, or if the last edge which you tried to add was not connectableR
 
         :rtype: TopoDS_Vertex
 
         """
-        return _BRepBuilderAPI.BRepBuilderAPI_MakeWire_Vertex(self, *args)
+        return _BRepBuilderAPI.BRepBuilderAPI_MakeWire_Vertex(self)
 
     def __del__(self):
     	try:
@@ -2806,7 +3131,7 @@ class BRepBuilderAPI_ModifyShape(BRepBuilderAPI_MakeShape):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def ModifiedShape(self, *args) -> "TopoDS_Shape const" :
+    def ModifiedShape(self, *args):
         """
         * Returns the modified shape corresponding to <S>. S can correspond to the entire initial shape or to its subshape. Exceptions Standard_NoSuchObject if S is not the initial shape or a subshape of the initial shape to which the transformation has been applied. Raises NoSuchObject from Standard if S is not the initial shape or a sub-shape of the initial shape.
 
@@ -2847,10 +3172,26 @@ class BRepBuilderAPI_Copy(BRepBuilderAPI_ModifyShape):
         :type copyGeom: bool
         :rtype: None
 
+        * Constructs a copy framework and copies the shape S. Use the function Shape to access the result. If copyGeom is False, only topological objects will be copied, while geometry will be shared with original shape. Note: the constructed framework can be reused to copy other shapes: just specify them with the function Perform.
+
+        :param S:
+        :type S: TopoDS_Shape &
+        :param copyGeom: default value is Standard_True
+        :type copyGeom: bool
+        :rtype: None
+
         """
         _BRepBuilderAPI.BRepBuilderAPI_Copy_swiginit(self,_BRepBuilderAPI.new_BRepBuilderAPI_Copy(*args))
-    def Perform(self, *args) -> "void" :
+    def Perform(self, *args):
         """
+        * Copies the shape S. Use the function Shape to access the result. If copyGeom is False, only topological objects will be copied, while geometry will be shared with original shape.
+
+        :param S:
+        :type S: TopoDS_Shape &
+        :param copyGeom: default value is Standard_True
+        :type copyGeom: bool
+        :rtype: None
+
         * Copies the shape S. Use the function Shape to access the result. If copyGeom is False, only topological objects will be copied, while geometry will be shared with original shape.
 
         :param S:
@@ -2896,10 +3237,28 @@ class BRepBuilderAPI_GTransform(BRepBuilderAPI_ModifyShape):
         :type Copy: bool
         :rtype: None
 
+        * Constructs a framework for applying the geometric transformation T to a shape, and applies it to the shape S. - If the transformation T is direct and isometric (i.e. if the determinant of the vectorial part of T is equal to 1.), and if Copy equals false (default value), the resulting shape is the same as the original but with a new location assigned to it. - In all other cases, the transformation is applied to a duplicate of S. Use the function Shape to access the result. Note: the constructed framework can be reused to apply the same geometric transformation to other shapes: just specify them with the function Perform.
+
+        :param S:
+        :type S: TopoDS_Shape &
+        :param T:
+        :type T: gp_GTrsf
+        :param Copy: default value is Standard_False
+        :type Copy: bool
+        :rtype: None
+
         """
         _BRepBuilderAPI.BRepBuilderAPI_GTransform_swiginit(self,_BRepBuilderAPI.new_BRepBuilderAPI_GTransform(*args))
-    def Perform(self, *args) -> "void" :
+    def Perform(self, *args):
         """
+        * Applies the geometric transformation defined at the time of construction of this framework to the shape S. - If the transformation T is direct and isometric (i.e. if the determinant of the vectorial part of T is equal to 1.), and if Copy equals false (default value), the resulting shape is the same as the original but with a new location assigned to it. - In all other cases, the transformation is applied to a duplicate of S. Use the function Shape to access the result. Note: this framework can be reused to apply the same geometric transformation to other shapes: just specify them by calling the function Perform again.
+
+        :param S:
+        :type S: TopoDS_Shape &
+        :param Copy: default value is Standard_False
+        :type Copy: bool
+        :rtype: None
+
         * Applies the geometric transformation defined at the time of construction of this framework to the shape S. - If the transformation T is direct and isometric (i.e. if the determinant of the vectorial part of T is equal to 1.), and if Copy equals false (default value), the resulting shape is the same as the original but with a new location assigned to it. - In all other cases, the transformation is applied to a duplicate of S. Use the function Shape to access the result. Note: this framework can be reused to apply the same geometric transformation to other shapes: just specify them by calling the function Perform again.
 
         :param S:
@@ -2941,10 +3300,26 @@ class BRepBuilderAPI_NurbsConvert(BRepBuilderAPI_ModifyShape):
         :type Copy: bool
         :rtype: None
 
+        * Builds a new shape by converting the geometry of the shape S into NURBS geometry. Specifically, all curves supporting edges of S are converted into BSpline curves, and all surfaces supporting its faces are converted into BSpline surfaces. Use the function Shape to access the new shape. Note: the constructed framework can be reused to convert other shapes. You specify these with the function Perform.
+
+        :param S:
+        :type S: TopoDS_Shape &
+        :param Copy: default value is Standard_False
+        :type Copy: bool
+        :rtype: None
+
         """
         _BRepBuilderAPI.BRepBuilderAPI_NurbsConvert_swiginit(self,_BRepBuilderAPI.new_BRepBuilderAPI_NurbsConvert(*args))
-    def Perform(self, *args) -> "void" :
+    def Perform(self, *args):
         """
+        * Builds a new shape by converting the geometry of the shape S into NURBS geometry. Specifically, all curves supporting edges of S are converted into BSpline curves, and all surfaces supporting its faces are converted into BSpline surfaces. Use the function Shape to access the new shape. Note: this framework can be reused to convert other shapes: you specify them by calling the function Perform again.
+
+        :param S:
+        :type S: TopoDS_Shape &
+        :param Copy: default value is Standard_False
+        :type Copy: bool
+        :rtype: None
+
         * Builds a new shape by converting the geometry of the shape S into NURBS geometry. Specifically, all curves supporting edges of S are converted into BSpline curves, and all surfaces supporting its faces are converted into BSpline surfaces. Use the function Shape to access the new shape. Note: this framework can be reused to convert other shapes: you specify them by calling the function Perform again.
 
         :param S:
@@ -2990,10 +3365,28 @@ class BRepBuilderAPI_Transform(BRepBuilderAPI_ModifyShape):
         :type Copy: bool
         :rtype: None
 
+        * Creates a transformation from the gp_Trsf <T>, and applies it to the shape <S>. If the transformation is direct and isometric (determinant = 1) and <Copy> = Standard_False, the resulting shape is <S> on which a new location has been set. Otherwise, the transformation is applied on a duplication of <S>.
+
+        :param S:
+        :type S: TopoDS_Shape &
+        :param T:
+        :type T: gp_Trsf
+        :param Copy: default value is Standard_False
+        :type Copy: bool
+        :rtype: None
+
         """
         _BRepBuilderAPI.BRepBuilderAPI_Transform_swiginit(self,_BRepBuilderAPI.new_BRepBuilderAPI_Transform(*args))
-    def Perform(self, *args) -> "void" :
+    def Perform(self, *args):
         """
+        * pplies the geometric transformation defined at the time of construction of this framework to the shape S. - If the transformation T is direct and isometric, in other words, if the determinant of the vectorial part of T is equal to 1., and if Copy equals false (the default value), the resulting shape is the same as the original but with a new location assigned to it. - In all other cases, the transformation is applied to a duplicate of S. Use the function Shape to access the result. Note: this framework can be reused to apply the same geometric transformation to other shapes. You only need to specify them by calling the function Perform again.
+
+        :param S:
+        :type S: TopoDS_Shape &
+        :param Copy: default value is Standard_False
+        :type Copy: bool
+        :rtype: None
+
         * pplies the geometric transformation defined at the time of construction of this framework to the shape S. - If the transformation T is direct and isometric, in other words, if the determinant of the vectorial part of T is equal to 1., and if Copy equals false (the default value), the resulting shape is the same as the original but with a new location assigned to it. - In all other cases, the transformation is applied to a duplicate of S. Use the function Shape to access the result. Note: this framework can be reused to apply the same geometric transformation to other shapes. You only need to specify them by calling the function Perform again.
 
         :param S:

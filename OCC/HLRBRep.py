@@ -141,8 +141,9 @@ import OCC.IntCurve
 import OCC.Extrema
 class hlrbrep(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
+    def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def MakeEdge(*args) -> "TopoDS_Edge" :
+    def MakeEdge(*args):
         """
         :param ec:
         :type ec: HLRBRep_Curve &
@@ -156,7 +157,7 @@ class hlrbrep(object):
         return _HLRBRep.hlrbrep_MakeEdge(*args)
 
     MakeEdge = staticmethod(MakeEdge)
-    def MakeEdge3d(*args) -> "TopoDS_Edge" :
+    def MakeEdge3d(*args):
         """
         :param ec:
         :type ec: HLRBRep_Curve &
@@ -170,7 +171,7 @@ class hlrbrep(object):
         return _HLRBRep.hlrbrep_MakeEdge3d(*args)
 
     MakeEdge3d = staticmethod(MakeEdge3d)
-    def PolyHLRAngleAndDeflection(*args) -> "Standard_Real &, Standard_Real &" :
+    def PolyHLRAngleAndDeflection(*args):
         """
         :param InAngl:
         :type InAngl: float
@@ -184,8 +185,6 @@ class hlrbrep(object):
         return _HLRBRep.hlrbrep_PolyHLRAngleAndDeflection(*args)
 
     PolyHLRAngleAndDeflection = staticmethod(PolyHLRAngleAndDeflection)
-    def __init__(self): 
-        _HLRBRep.hlrbrep_swiginit(self,_HLRBRep.new_hlrbrep())
     def __del__(self):
     	try:
     		self.thisown = False
@@ -198,7 +197,7 @@ hlrbrep._kill_pointed = new_instancemethod(_HLRBRep.hlrbrep__kill_pointed,None,h
 hlrbrep_swigregister = _HLRBRep.hlrbrep_swigregister
 hlrbrep_swigregister(hlrbrep)
 
-def hlrbrep_MakeEdge(*args) -> "TopoDS_Edge" :
+def hlrbrep_MakeEdge(*args):
   """
     :param ec:
     :type ec: HLRBRep_Curve &
@@ -211,7 +210,7 @@ def hlrbrep_MakeEdge(*args) -> "TopoDS_Edge" :
     """
   return _HLRBRep.hlrbrep_MakeEdge(*args)
 
-def hlrbrep_MakeEdge3d(*args) -> "TopoDS_Edge" :
+def hlrbrep_MakeEdge3d(*args):
   """
     :param ec:
     :type ec: HLRBRep_Curve &
@@ -224,7 +223,7 @@ def hlrbrep_MakeEdge3d(*args) -> "TopoDS_Edge" :
     """
   return _HLRBRep.hlrbrep_MakeEdge3d(*args)
 
-def hlrbrep_PolyHLRAngleAndDeflection(*args) -> "Standard_Real &, Standard_Real &" :
+def hlrbrep_PolyHLRAngleAndDeflection(*args):
   """
     :param InAngl:
     :type InAngl: float
@@ -262,28 +261,28 @@ class HLRBRep_AreaLimit(OCC.MMgt.MMgt_TShared):
 
         """
         _HLRBRep.HLRBRep_AreaLimit_swiginit(self,_HLRBRep.new_HLRBRep_AreaLimit(*args))
-    def Vertex(self, *args) -> "HLRAlgo_Intersection const &" :
+    def Vertex(self):
         """
         :rtype: HLRAlgo_Intersection
 
         """
-        return _HLRBRep.HLRBRep_AreaLimit_Vertex(self, *args)
+        return _HLRBRep.HLRBRep_AreaLimit_Vertex(self)
 
-    def IsBoundary(self, *args) -> "Standard_Boolean" :
+    def IsBoundary(self):
         """
         :rtype: bool
 
         """
-        return _HLRBRep.HLRBRep_AreaLimit_IsBoundary(self, *args)
+        return _HLRBRep.HLRBRep_AreaLimit_IsBoundary(self)
 
-    def IsInterference(self, *args) -> "Standard_Boolean" :
+    def IsInterference(self):
         """
         :rtype: bool
 
         """
-        return _HLRBRep.HLRBRep_AreaLimit_IsInterference(self, *args)
+        return _HLRBRep.HLRBRep_AreaLimit_IsInterference(self)
 
-    def StateBefore(self, *args) -> "TopAbs_State" :
+    def StateBefore(self, *args):
         """
         :param St:
         :type St: TopAbs_State
@@ -294,7 +293,7 @@ class HLRBRep_AreaLimit(OCC.MMgt.MMgt_TShared):
         """
         return _HLRBRep.HLRBRep_AreaLimit_StateBefore(self, *args)
 
-    def StateAfter(self, *args) -> "TopAbs_State" :
+    def StateAfter(self, *args):
         """
         :param St:
         :type St: TopAbs_State
@@ -305,7 +304,7 @@ class HLRBRep_AreaLimit(OCC.MMgt.MMgt_TShared):
         """
         return _HLRBRep.HLRBRep_AreaLimit_StateAfter(self, *args)
 
-    def EdgeBefore(self, *args) -> "TopAbs_State" :
+    def EdgeBefore(self, *args):
         """
         :param St:
         :type St: TopAbs_State
@@ -316,7 +315,7 @@ class HLRBRep_AreaLimit(OCC.MMgt.MMgt_TShared):
         """
         return _HLRBRep.HLRBRep_AreaLimit_EdgeBefore(self, *args)
 
-    def EdgeAfter(self, *args) -> "TopAbs_State" :
+    def EdgeAfter(self, *args):
         """
         :param St:
         :type St: TopAbs_State
@@ -327,7 +326,7 @@ class HLRBRep_AreaLimit(OCC.MMgt.MMgt_TShared):
         """
         return _HLRBRep.HLRBRep_AreaLimit_EdgeAfter(self, *args)
 
-    def Previous(self, *args) -> "Handle_HLRBRep_AreaLimit" :
+    def Previous(self, *args):
         """
         :param P:
         :type P: Handle_HLRBRep_AreaLimit &
@@ -338,7 +337,7 @@ class HLRBRep_AreaLimit(OCC.MMgt.MMgt_TShared):
         """
         return _HLRBRep.HLRBRep_AreaLimit_Previous(self, *args)
 
-    def Next(self, *args) -> "Handle_HLRBRep_AreaLimit" :
+    def Next(self, *args):
         """
         :param N:
         :type N: Handle_HLRBRep_AreaLimit &
@@ -349,18 +348,18 @@ class HLRBRep_AreaLimit(OCC.MMgt.MMgt_TShared):
         """
         return _HLRBRep.HLRBRep_AreaLimit_Next(self, *args)
 
-    def Clear(self, *args) -> "void" :
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _HLRBRep.HLRBRep_AreaLimit_Clear(self, *args)
+        return _HLRBRep.HLRBRep_AreaLimit_Clear(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(HLRBRep_AreaLimit self)"""
         return _HLRBRep.HLRBRep_AreaLimit__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_HLRBRep_AreaLimit" :
+    def GetHandle(self):
         """GetHandle(HLRBRep_AreaLimit self) -> Handle_HLRBRep_AreaLimit"""
         return _HLRBRep.HLRBRep_AreaLimit_GetHandle(self)
 
@@ -408,7 +407,7 @@ Handle_HLRBRep_AreaLimit._kill_pointed = new_instancemethod(_HLRBRep.Handle_HLRB
 Handle_HLRBRep_AreaLimit_swigregister = _HLRBRep.Handle_HLRBRep_AreaLimit_swigregister
 Handle_HLRBRep_AreaLimit_swigregister(Handle_HLRBRep_AreaLimit)
 
-def Handle_HLRBRep_AreaLimit_DownCast(*args) -> "Handle_HLRBRep_AreaLimit const" :
+def Handle_HLRBRep_AreaLimit_DownCast(*args):
   return _HLRBRep.Handle_HLRBRep_AreaLimit_DownCast(*args)
 Handle_HLRBRep_AreaLimit_DownCast = _HLRBRep.Handle_HLRBRep_AreaLimit_DownCast
 
@@ -418,22 +417,22 @@ class HLRBRep_Array1OfEData(object):
     def __init__(self, *args): 
         """
         :param Low:
-        :type Low: int
+        :type Low: Standard_Integer
         :param Up:
-        :type Up: int
+        :type Up: Standard_Integer
         :rtype: None
 
         :param Item:
         :type Item: HLRBRep_EdgeData &
         :param Low:
-        :type Low: int
+        :type Low: Standard_Integer
         :param Up:
-        :type Up: int
+        :type Up: Standard_Integer
         :rtype: None
 
         """
         _HLRBRep.HLRBRep_Array1OfEData_swiginit(self,_HLRBRep.new_HLRBRep_Array1OfEData(*args))
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
         :param V:
         :type V: HLRBRep_EdgeData &
@@ -442,21 +441,21 @@ class HLRBRep_Array1OfEData(object):
         """
         return _HLRBRep.HLRBRep_Array1OfEData_Init(self, *args)
 
-    def Destroy(self, *args) -> "void" :
+    def Destroy(self):
         """
         :rtype: None
 
         """
-        return _HLRBRep.HLRBRep_Array1OfEData_Destroy(self, *args)
+        return _HLRBRep.HLRBRep_Array1OfEData_Destroy(self)
 
-    def IsAllocated(self, *args) -> "Standard_Boolean" :
+    def IsAllocated(self):
         """
         :rtype: bool
 
         """
-        return _HLRBRep.HLRBRep_Array1OfEData_IsAllocated(self, *args)
+        return _HLRBRep.HLRBRep_Array1OfEData_IsAllocated(self)
 
-    def Assign(self, *args) -> "HLRBRep_Array1OfEData const &" :
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: HLRBRep_Array1OfEData &
@@ -465,7 +464,7 @@ class HLRBRep_Array1OfEData(object):
         """
         return _HLRBRep.HLRBRep_Array1OfEData_Assign(self, *args)
 
-    def Set(self, *args) -> "HLRBRep_Array1OfEData const &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: HLRBRep_Array1OfEData &
@@ -474,31 +473,31 @@ class HLRBRep_Array1OfEData(object):
         """
         return _HLRBRep.HLRBRep_Array1OfEData_Set(self, *args)
 
-    def Length(self, *args) -> "Standard_Integer" :
+    def Length(self):
         """
         :rtype: int
 
         """
-        return _HLRBRep.HLRBRep_Array1OfEData_Length(self, *args)
+        return _HLRBRep.HLRBRep_Array1OfEData_Length(self)
 
-    def Lower(self, *args) -> "Standard_Integer" :
+    def Lower(self):
         """
         :rtype: int
 
         """
-        return _HLRBRep.HLRBRep_Array1OfEData_Lower(self, *args)
+        return _HLRBRep.HLRBRep_Array1OfEData_Lower(self)
 
-    def Upper(self, *args) -> "Standard_Integer" :
+    def Upper(self):
         """
         :rtype: int
 
         """
-        return _HLRBRep.HLRBRep_Array1OfEData_Upper(self, *args)
+        return _HLRBRep.HLRBRep_Array1OfEData_Upper(self)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Value:
         :type Value: HLRBRep_EdgeData &
         :rtype: None
@@ -506,19 +505,19 @@ class HLRBRep_Array1OfEData(object):
         """
         return _HLRBRep.HLRBRep_Array1OfEData_SetValue(self, *args)
 
-    def Value(self, *args) -> "HLRBRep_EdgeData const &" :
+    def Value(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: HLRBRep_EdgeData
 
         """
         return _HLRBRep.HLRBRep_Array1OfEData_Value(self, *args)
 
-    def ChangeValue(self, *args) -> "HLRBRep_EdgeData &" :
+    def ChangeValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: HLRBRep_EdgeData
 
         """
@@ -553,22 +552,22 @@ class HLRBRep_Array1OfFData(object):
     def __init__(self, *args): 
         """
         :param Low:
-        :type Low: int
+        :type Low: Standard_Integer
         :param Up:
-        :type Up: int
+        :type Up: Standard_Integer
         :rtype: None
 
         :param Item:
         :type Item: HLRBRep_FaceData &
         :param Low:
-        :type Low: int
+        :type Low: Standard_Integer
         :param Up:
-        :type Up: int
+        :type Up: Standard_Integer
         :rtype: None
 
         """
         _HLRBRep.HLRBRep_Array1OfFData_swiginit(self,_HLRBRep.new_HLRBRep_Array1OfFData(*args))
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
         :param V:
         :type V: HLRBRep_FaceData &
@@ -577,21 +576,21 @@ class HLRBRep_Array1OfFData(object):
         """
         return _HLRBRep.HLRBRep_Array1OfFData_Init(self, *args)
 
-    def Destroy(self, *args) -> "void" :
+    def Destroy(self):
         """
         :rtype: None
 
         """
-        return _HLRBRep.HLRBRep_Array1OfFData_Destroy(self, *args)
+        return _HLRBRep.HLRBRep_Array1OfFData_Destroy(self)
 
-    def IsAllocated(self, *args) -> "Standard_Boolean" :
+    def IsAllocated(self):
         """
         :rtype: bool
 
         """
-        return _HLRBRep.HLRBRep_Array1OfFData_IsAllocated(self, *args)
+        return _HLRBRep.HLRBRep_Array1OfFData_IsAllocated(self)
 
-    def Assign(self, *args) -> "HLRBRep_Array1OfFData const &" :
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: HLRBRep_Array1OfFData &
@@ -600,7 +599,7 @@ class HLRBRep_Array1OfFData(object):
         """
         return _HLRBRep.HLRBRep_Array1OfFData_Assign(self, *args)
 
-    def Set(self, *args) -> "HLRBRep_Array1OfFData const &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: HLRBRep_Array1OfFData &
@@ -609,31 +608,31 @@ class HLRBRep_Array1OfFData(object):
         """
         return _HLRBRep.HLRBRep_Array1OfFData_Set(self, *args)
 
-    def Length(self, *args) -> "Standard_Integer" :
+    def Length(self):
         """
         :rtype: int
 
         """
-        return _HLRBRep.HLRBRep_Array1OfFData_Length(self, *args)
+        return _HLRBRep.HLRBRep_Array1OfFData_Length(self)
 
-    def Lower(self, *args) -> "Standard_Integer" :
+    def Lower(self):
         """
         :rtype: int
 
         """
-        return _HLRBRep.HLRBRep_Array1OfFData_Lower(self, *args)
+        return _HLRBRep.HLRBRep_Array1OfFData_Lower(self)
 
-    def Upper(self, *args) -> "Standard_Integer" :
+    def Upper(self):
         """
         :rtype: int
 
         """
-        return _HLRBRep.HLRBRep_Array1OfFData_Upper(self, *args)
+        return _HLRBRep.HLRBRep_Array1OfFData_Upper(self)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Value:
         :type Value: HLRBRep_FaceData &
         :rtype: None
@@ -641,19 +640,19 @@ class HLRBRep_Array1OfFData(object):
         """
         return _HLRBRep.HLRBRep_Array1OfFData_SetValue(self, *args)
 
-    def Value(self, *args) -> "HLRBRep_FaceData const &" :
+    def Value(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: HLRBRep_FaceData
 
         """
         return _HLRBRep.HLRBRep_Array1OfFData_Value(self, *args)
 
-    def ChangeValue(self, *args) -> "HLRBRep_FaceData &" :
+    def ChangeValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: HLRBRep_FaceData
 
         """
@@ -684,8 +683,9 @@ HLRBRep_Array1OfFData_swigregister(HLRBRep_Array1OfFData)
 
 class HLRBRep_BCurveTool(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
+    def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def FirstParameter(*args) -> "Standard_Real" :
+    def FirstParameter(*args):
         """
         :param C:
         :type C: BRepAdaptor_Curve &
@@ -695,7 +695,7 @@ class HLRBRep_BCurveTool(object):
         return _HLRBRep.HLRBRep_BCurveTool_FirstParameter(*args)
 
     FirstParameter = staticmethod(FirstParameter)
-    def LastParameter(*args) -> "Standard_Real" :
+    def LastParameter(*args):
         """
         :param C:
         :type C: BRepAdaptor_Curve &
@@ -705,7 +705,7 @@ class HLRBRep_BCurveTool(object):
         return _HLRBRep.HLRBRep_BCurveTool_LastParameter(*args)
 
     LastParameter = staticmethod(LastParameter)
-    def Continuity(*args) -> "GeomAbs_Shape" :
+    def Continuity(*args):
         """
         :param C:
         :type C: BRepAdaptor_Curve &
@@ -715,7 +715,7 @@ class HLRBRep_BCurveTool(object):
         return _HLRBRep.HLRBRep_BCurveTool_Continuity(*args)
 
     Continuity = staticmethod(Continuity)
-    def NbIntervals(*args) -> "Standard_Integer" :
+    def NbIntervals(*args):
         """
         * Returns the number of intervals for continuity <S>. May be one if Continuity(myclass) >= <S>
 
@@ -729,7 +729,7 @@ class HLRBRep_BCurveTool(object):
         return _HLRBRep.HLRBRep_BCurveTool_NbIntervals(*args)
 
     NbIntervals = staticmethod(NbIntervals)
-    def Intervals(*args) -> "void" :
+    def Intervals(*args):
         """
         * Stores in <T> the parameters bounding the intervals of continuity <S>.  The array must provide enough room to accomodate for the parameters. i.e. T.Length() > NbIntervals()
 
@@ -745,7 +745,7 @@ class HLRBRep_BCurveTool(object):
         return _HLRBRep.HLRBRep_BCurveTool_Intervals(*args)
 
     Intervals = staticmethod(Intervals)
-    def IsClosed(*args) -> "Standard_Boolean" :
+    def IsClosed(*args):
         """
         :param C:
         :type C: BRepAdaptor_Curve &
@@ -755,7 +755,7 @@ class HLRBRep_BCurveTool(object):
         return _HLRBRep.HLRBRep_BCurveTool_IsClosed(*args)
 
     IsClosed = staticmethod(IsClosed)
-    def IsPeriodic(*args) -> "Standard_Boolean" :
+    def IsPeriodic(*args):
         """
         :param C:
         :type C: BRepAdaptor_Curve &
@@ -765,7 +765,7 @@ class HLRBRep_BCurveTool(object):
         return _HLRBRep.HLRBRep_BCurveTool_IsPeriodic(*args)
 
     IsPeriodic = staticmethod(IsPeriodic)
-    def Period(*args) -> "Standard_Real" :
+    def Period(*args):
         """
         :param C:
         :type C: BRepAdaptor_Curve &
@@ -775,7 +775,7 @@ class HLRBRep_BCurveTool(object):
         return _HLRBRep.HLRBRep_BCurveTool_Period(*args)
 
     Period = staticmethod(Period)
-    def Value(*args) -> "gp_Pnt" :
+    def Value(*args):
         """
         * Computes the point of parameter U on the curve.
 
@@ -789,7 +789,7 @@ class HLRBRep_BCurveTool(object):
         return _HLRBRep.HLRBRep_BCurveTool_Value(*args)
 
     Value = staticmethod(Value)
-    def D0(*args) -> "void" :
+    def D0(*args):
         """
         * Computes the point of parameter U on the curve.
 
@@ -805,7 +805,7 @@ class HLRBRep_BCurveTool(object):
         return _HLRBRep.HLRBRep_BCurveTool_D0(*args)
 
     D0 = staticmethod(D0)
-    def D1(*args) -> "void" :
+    def D1(*args):
         """
         * Computes the point of parameter U on the curve with its first derivative. Raised if the continuity of the current interval is not C1.
 
@@ -823,7 +823,7 @@ class HLRBRep_BCurveTool(object):
         return _HLRBRep.HLRBRep_BCurveTool_D1(*args)
 
     D1 = staticmethod(D1)
-    def D2(*args) -> "void" :
+    def D2(*args):
         """
         * Returns the point P of parameter U, the first and second derivatives V1 and V2. Raised if the continuity of the current interval is not C2.
 
@@ -843,7 +843,7 @@ class HLRBRep_BCurveTool(object):
         return _HLRBRep.HLRBRep_BCurveTool_D2(*args)
 
     D2 = staticmethod(D2)
-    def D3(*args) -> "void" :
+    def D3(*args):
         """
         * Returns the point P of parameter U, the first, the second and the third derivative. Raised if the continuity of the current interval is not C3.
 
@@ -865,7 +865,7 @@ class HLRBRep_BCurveTool(object):
         return _HLRBRep.HLRBRep_BCurveTool_D3(*args)
 
     D3 = staticmethod(D3)
-    def DN(*args) -> "gp_Vec" :
+    def DN(*args):
         """
         * The returned vector gives the value of the derivative for the order of derivation N. Raised if the continuity of the current interval is not CN. Raised if N < 1.
 
@@ -874,14 +874,14 @@ class HLRBRep_BCurveTool(object):
         :param U:
         :type U: float
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :rtype: gp_Vec
 
         """
         return _HLRBRep.HLRBRep_BCurveTool_DN(*args)
 
     DN = staticmethod(DN)
-    def Resolution(*args) -> "Standard_Real" :
+    def Resolution(*args):
         """
         * Returns the parametric resolution corresponding  to the real space resolution <R3d>.
 
@@ -895,7 +895,7 @@ class HLRBRep_BCurveTool(object):
         return _HLRBRep.HLRBRep_BCurveTool_Resolution(*args)
 
     Resolution = staticmethod(Resolution)
-    def GetType(*args) -> "GeomAbs_CurveType" :
+    def GetType(*args):
         """
         * Returns the type of the curve in the current interval : Line, Circle, Ellipse, Hyperbola, Parabola, BezierCurve, BSplineCurve, OtherCurve.
 
@@ -907,7 +907,7 @@ class HLRBRep_BCurveTool(object):
         return _HLRBRep.HLRBRep_BCurveTool_GetType(*args)
 
     GetType = staticmethod(GetType)
-    def Line(*args) -> "gp_Lin" :
+    def Line(*args):
         """
         :param C:
         :type C: BRepAdaptor_Curve &
@@ -917,7 +917,7 @@ class HLRBRep_BCurveTool(object):
         return _HLRBRep.HLRBRep_BCurveTool_Line(*args)
 
     Line = staticmethod(Line)
-    def Circle(*args) -> "gp_Circ" :
+    def Circle(*args):
         """
         :param C:
         :type C: BRepAdaptor_Curve &
@@ -927,7 +927,7 @@ class HLRBRep_BCurveTool(object):
         return _HLRBRep.HLRBRep_BCurveTool_Circle(*args)
 
     Circle = staticmethod(Circle)
-    def Ellipse(*args) -> "gp_Elips" :
+    def Ellipse(*args):
         """
         :param C:
         :type C: BRepAdaptor_Curve &
@@ -937,7 +937,7 @@ class HLRBRep_BCurveTool(object):
         return _HLRBRep.HLRBRep_BCurveTool_Ellipse(*args)
 
     Ellipse = staticmethod(Ellipse)
-    def Hyperbola(*args) -> "gp_Hypr" :
+    def Hyperbola(*args):
         """
         :param C:
         :type C: BRepAdaptor_Curve &
@@ -947,7 +947,7 @@ class HLRBRep_BCurveTool(object):
         return _HLRBRep.HLRBRep_BCurveTool_Hyperbola(*args)
 
     Hyperbola = staticmethod(Hyperbola)
-    def Parabola(*args) -> "gp_Parab" :
+    def Parabola(*args):
         """
         :param C:
         :type C: BRepAdaptor_Curve &
@@ -957,7 +957,7 @@ class HLRBRep_BCurveTool(object):
         return _HLRBRep.HLRBRep_BCurveTool_Parabola(*args)
 
     Parabola = staticmethod(Parabola)
-    def Bezier(*args) -> "Handle_Geom_BezierCurve" :
+    def Bezier(*args):
         """
         :param C:
         :type C: BRepAdaptor_Curve &
@@ -967,7 +967,7 @@ class HLRBRep_BCurveTool(object):
         return _HLRBRep.HLRBRep_BCurveTool_Bezier(*args)
 
     Bezier = staticmethod(Bezier)
-    def BSpline(*args) -> "Handle_Geom_BSplineCurve" :
+    def BSpline(*args):
         """
         :param C:
         :type C: BRepAdaptor_Curve &
@@ -977,7 +977,7 @@ class HLRBRep_BCurveTool(object):
         return _HLRBRep.HLRBRep_BCurveTool_BSpline(*args)
 
     BSpline = staticmethod(BSpline)
-    def Degree(*args) -> "Standard_Integer" :
+    def Degree(*args):
         """
         :param C:
         :type C: BRepAdaptor_Curve &
@@ -987,7 +987,7 @@ class HLRBRep_BCurveTool(object):
         return _HLRBRep.HLRBRep_BCurveTool_Degree(*args)
 
     Degree = staticmethod(Degree)
-    def IsRational(*args) -> "Standard_Boolean" :
+    def IsRational(*args):
         """
         :param C:
         :type C: BRepAdaptor_Curve &
@@ -997,7 +997,7 @@ class HLRBRep_BCurveTool(object):
         return _HLRBRep.HLRBRep_BCurveTool_IsRational(*args)
 
     IsRational = staticmethod(IsRational)
-    def NbPoles(*args) -> "Standard_Integer" :
+    def NbPoles(*args):
         """
         :param C:
         :type C: BRepAdaptor_Curve &
@@ -1007,7 +1007,7 @@ class HLRBRep_BCurveTool(object):
         return _HLRBRep.HLRBRep_BCurveTool_NbPoles(*args)
 
     NbPoles = staticmethod(NbPoles)
-    def NbKnots(*args) -> "Standard_Integer" :
+    def NbKnots(*args):
         """
         :param C:
         :type C: BRepAdaptor_Curve &
@@ -1017,7 +1017,7 @@ class HLRBRep_BCurveTool(object):
         return _HLRBRep.HLRBRep_BCurveTool_NbKnots(*args)
 
     NbKnots = staticmethod(NbKnots)
-    def Poles(*args) -> "void" :
+    def Poles(*args):
         """
         :param C:
         :type C: BRepAdaptor_Curve &
@@ -1029,7 +1029,7 @@ class HLRBRep_BCurveTool(object):
         return _HLRBRep.HLRBRep_BCurveTool_Poles(*args)
 
     Poles = staticmethod(Poles)
-    def PolesAndWeights(*args) -> "void" :
+    def PolesAndWeights(*args):
         """
         :param C:
         :type C: BRepAdaptor_Curve &
@@ -1043,7 +1043,7 @@ class HLRBRep_BCurveTool(object):
         return _HLRBRep.HLRBRep_BCurveTool_PolesAndWeights(*args)
 
     PolesAndWeights = staticmethod(PolesAndWeights)
-    def NbSamples(*args) -> "Standard_Integer" :
+    def NbSamples(*args):
         """
         :param C:
         :type C: BRepAdaptor_Curve &
@@ -1057,8 +1057,6 @@ class HLRBRep_BCurveTool(object):
         return _HLRBRep.HLRBRep_BCurveTool_NbSamples(*args)
 
     NbSamples = staticmethod(NbSamples)
-    def __init__(self): 
-        _HLRBRep.HLRBRep_BCurveTool_swiginit(self,_HLRBRep.new_HLRBRep_BCurveTool())
     def __del__(self):
     	try:
     		self.thisown = False
@@ -1071,7 +1069,7 @@ HLRBRep_BCurveTool._kill_pointed = new_instancemethod(_HLRBRep.HLRBRep_BCurveToo
 HLRBRep_BCurveTool_swigregister = _HLRBRep.HLRBRep_BCurveTool_swigregister
 HLRBRep_BCurveTool_swigregister(HLRBRep_BCurveTool)
 
-def HLRBRep_BCurveTool_FirstParameter(*args) -> "Standard_Real" :
+def HLRBRep_BCurveTool_FirstParameter(*args):
   """
     :param C:
     :type C: BRepAdaptor_Curve &
@@ -1080,7 +1078,7 @@ def HLRBRep_BCurveTool_FirstParameter(*args) -> "Standard_Real" :
     """
   return _HLRBRep.HLRBRep_BCurveTool_FirstParameter(*args)
 
-def HLRBRep_BCurveTool_LastParameter(*args) -> "Standard_Real" :
+def HLRBRep_BCurveTool_LastParameter(*args):
   """
     :param C:
     :type C: BRepAdaptor_Curve &
@@ -1089,7 +1087,7 @@ def HLRBRep_BCurveTool_LastParameter(*args) -> "Standard_Real" :
     """
   return _HLRBRep.HLRBRep_BCurveTool_LastParameter(*args)
 
-def HLRBRep_BCurveTool_Continuity(*args) -> "GeomAbs_Shape" :
+def HLRBRep_BCurveTool_Continuity(*args):
   """
     :param C:
     :type C: BRepAdaptor_Curve &
@@ -1098,7 +1096,7 @@ def HLRBRep_BCurveTool_Continuity(*args) -> "GeomAbs_Shape" :
     """
   return _HLRBRep.HLRBRep_BCurveTool_Continuity(*args)
 
-def HLRBRep_BCurveTool_NbIntervals(*args) -> "Standard_Integer" :
+def HLRBRep_BCurveTool_NbIntervals(*args):
   """
     * Returns the number of intervals for continuity <S>. May be one if Continuity(myclass) >= <S>
 
@@ -1111,7 +1109,7 @@ def HLRBRep_BCurveTool_NbIntervals(*args) -> "Standard_Integer" :
     """
   return _HLRBRep.HLRBRep_BCurveTool_NbIntervals(*args)
 
-def HLRBRep_BCurveTool_Intervals(*args) -> "void" :
+def HLRBRep_BCurveTool_Intervals(*args):
   """
     * Stores in <T> the parameters bounding the intervals of continuity <S>.  The array must provide enough room to accomodate for the parameters. i.e. T.Length() > NbIntervals()
 
@@ -1126,7 +1124,7 @@ def HLRBRep_BCurveTool_Intervals(*args) -> "void" :
     """
   return _HLRBRep.HLRBRep_BCurveTool_Intervals(*args)
 
-def HLRBRep_BCurveTool_IsClosed(*args) -> "Standard_Boolean" :
+def HLRBRep_BCurveTool_IsClosed(*args):
   """
     :param C:
     :type C: BRepAdaptor_Curve &
@@ -1135,7 +1133,7 @@ def HLRBRep_BCurveTool_IsClosed(*args) -> "Standard_Boolean" :
     """
   return _HLRBRep.HLRBRep_BCurveTool_IsClosed(*args)
 
-def HLRBRep_BCurveTool_IsPeriodic(*args) -> "Standard_Boolean" :
+def HLRBRep_BCurveTool_IsPeriodic(*args):
   """
     :param C:
     :type C: BRepAdaptor_Curve &
@@ -1144,7 +1142,7 @@ def HLRBRep_BCurveTool_IsPeriodic(*args) -> "Standard_Boolean" :
     """
   return _HLRBRep.HLRBRep_BCurveTool_IsPeriodic(*args)
 
-def HLRBRep_BCurveTool_Period(*args) -> "Standard_Real" :
+def HLRBRep_BCurveTool_Period(*args):
   """
     :param C:
     :type C: BRepAdaptor_Curve &
@@ -1153,7 +1151,7 @@ def HLRBRep_BCurveTool_Period(*args) -> "Standard_Real" :
     """
   return _HLRBRep.HLRBRep_BCurveTool_Period(*args)
 
-def HLRBRep_BCurveTool_Value(*args) -> "gp_Pnt" :
+def HLRBRep_BCurveTool_Value(*args):
   """
     * Computes the point of parameter U on the curve.
 
@@ -1166,7 +1164,7 @@ def HLRBRep_BCurveTool_Value(*args) -> "gp_Pnt" :
     """
   return _HLRBRep.HLRBRep_BCurveTool_Value(*args)
 
-def HLRBRep_BCurveTool_D0(*args) -> "void" :
+def HLRBRep_BCurveTool_D0(*args):
   """
     * Computes the point of parameter U on the curve.
 
@@ -1181,7 +1179,7 @@ def HLRBRep_BCurveTool_D0(*args) -> "void" :
     """
   return _HLRBRep.HLRBRep_BCurveTool_D0(*args)
 
-def HLRBRep_BCurveTool_D1(*args) -> "void" :
+def HLRBRep_BCurveTool_D1(*args):
   """
     * Computes the point of parameter U on the curve with its first derivative. Raised if the continuity of the current interval is not C1.
 
@@ -1198,7 +1196,7 @@ def HLRBRep_BCurveTool_D1(*args) -> "void" :
     """
   return _HLRBRep.HLRBRep_BCurveTool_D1(*args)
 
-def HLRBRep_BCurveTool_D2(*args) -> "void" :
+def HLRBRep_BCurveTool_D2(*args):
   """
     * Returns the point P of parameter U, the first and second derivatives V1 and V2. Raised if the continuity of the current interval is not C2.
 
@@ -1217,7 +1215,7 @@ def HLRBRep_BCurveTool_D2(*args) -> "void" :
     """
   return _HLRBRep.HLRBRep_BCurveTool_D2(*args)
 
-def HLRBRep_BCurveTool_D3(*args) -> "void" :
+def HLRBRep_BCurveTool_D3(*args):
   """
     * Returns the point P of parameter U, the first, the second and the third derivative. Raised if the continuity of the current interval is not C3.
 
@@ -1238,7 +1236,7 @@ def HLRBRep_BCurveTool_D3(*args) -> "void" :
     """
   return _HLRBRep.HLRBRep_BCurveTool_D3(*args)
 
-def HLRBRep_BCurveTool_DN(*args) -> "gp_Vec" :
+def HLRBRep_BCurveTool_DN(*args):
   """
     * The returned vector gives the value of the derivative for the order of derivation N. Raised if the continuity of the current interval is not CN. Raised if N < 1.
 
@@ -1247,13 +1245,13 @@ def HLRBRep_BCurveTool_DN(*args) -> "gp_Vec" :
     :param U:
     :type U: float
     :param N:
-    :type N: int
+    :type N: Standard_Integer
     :rtype: gp_Vec
 
     """
   return _HLRBRep.HLRBRep_BCurveTool_DN(*args)
 
-def HLRBRep_BCurveTool_Resolution(*args) -> "Standard_Real" :
+def HLRBRep_BCurveTool_Resolution(*args):
   """
     * Returns the parametric resolution corresponding  to the real space resolution <R3d>.
 
@@ -1266,7 +1264,7 @@ def HLRBRep_BCurveTool_Resolution(*args) -> "Standard_Real" :
     """
   return _HLRBRep.HLRBRep_BCurveTool_Resolution(*args)
 
-def HLRBRep_BCurveTool_GetType(*args) -> "GeomAbs_CurveType" :
+def HLRBRep_BCurveTool_GetType(*args):
   """
     * Returns the type of the curve in the current interval : Line, Circle, Ellipse, Hyperbola, Parabola, BezierCurve, BSplineCurve, OtherCurve.
 
@@ -1277,7 +1275,7 @@ def HLRBRep_BCurveTool_GetType(*args) -> "GeomAbs_CurveType" :
     """
   return _HLRBRep.HLRBRep_BCurveTool_GetType(*args)
 
-def HLRBRep_BCurveTool_Line(*args) -> "gp_Lin" :
+def HLRBRep_BCurveTool_Line(*args):
   """
     :param C:
     :type C: BRepAdaptor_Curve &
@@ -1286,7 +1284,7 @@ def HLRBRep_BCurveTool_Line(*args) -> "gp_Lin" :
     """
   return _HLRBRep.HLRBRep_BCurveTool_Line(*args)
 
-def HLRBRep_BCurveTool_Circle(*args) -> "gp_Circ" :
+def HLRBRep_BCurveTool_Circle(*args):
   """
     :param C:
     :type C: BRepAdaptor_Curve &
@@ -1295,7 +1293,7 @@ def HLRBRep_BCurveTool_Circle(*args) -> "gp_Circ" :
     """
   return _HLRBRep.HLRBRep_BCurveTool_Circle(*args)
 
-def HLRBRep_BCurveTool_Ellipse(*args) -> "gp_Elips" :
+def HLRBRep_BCurveTool_Ellipse(*args):
   """
     :param C:
     :type C: BRepAdaptor_Curve &
@@ -1304,7 +1302,7 @@ def HLRBRep_BCurveTool_Ellipse(*args) -> "gp_Elips" :
     """
   return _HLRBRep.HLRBRep_BCurveTool_Ellipse(*args)
 
-def HLRBRep_BCurveTool_Hyperbola(*args) -> "gp_Hypr" :
+def HLRBRep_BCurveTool_Hyperbola(*args):
   """
     :param C:
     :type C: BRepAdaptor_Curve &
@@ -1313,7 +1311,7 @@ def HLRBRep_BCurveTool_Hyperbola(*args) -> "gp_Hypr" :
     """
   return _HLRBRep.HLRBRep_BCurveTool_Hyperbola(*args)
 
-def HLRBRep_BCurveTool_Parabola(*args) -> "gp_Parab" :
+def HLRBRep_BCurveTool_Parabola(*args):
   """
     :param C:
     :type C: BRepAdaptor_Curve &
@@ -1322,7 +1320,7 @@ def HLRBRep_BCurveTool_Parabola(*args) -> "gp_Parab" :
     """
   return _HLRBRep.HLRBRep_BCurveTool_Parabola(*args)
 
-def HLRBRep_BCurveTool_Bezier(*args) -> "Handle_Geom_BezierCurve" :
+def HLRBRep_BCurveTool_Bezier(*args):
   """
     :param C:
     :type C: BRepAdaptor_Curve &
@@ -1331,7 +1329,7 @@ def HLRBRep_BCurveTool_Bezier(*args) -> "Handle_Geom_BezierCurve" :
     """
   return _HLRBRep.HLRBRep_BCurveTool_Bezier(*args)
 
-def HLRBRep_BCurveTool_BSpline(*args) -> "Handle_Geom_BSplineCurve" :
+def HLRBRep_BCurveTool_BSpline(*args):
   """
     :param C:
     :type C: BRepAdaptor_Curve &
@@ -1340,7 +1338,7 @@ def HLRBRep_BCurveTool_BSpline(*args) -> "Handle_Geom_BSplineCurve" :
     """
   return _HLRBRep.HLRBRep_BCurveTool_BSpline(*args)
 
-def HLRBRep_BCurveTool_Degree(*args) -> "Standard_Integer" :
+def HLRBRep_BCurveTool_Degree(*args):
   """
     :param C:
     :type C: BRepAdaptor_Curve &
@@ -1349,7 +1347,7 @@ def HLRBRep_BCurveTool_Degree(*args) -> "Standard_Integer" :
     """
   return _HLRBRep.HLRBRep_BCurveTool_Degree(*args)
 
-def HLRBRep_BCurveTool_IsRational(*args) -> "Standard_Boolean" :
+def HLRBRep_BCurveTool_IsRational(*args):
   """
     :param C:
     :type C: BRepAdaptor_Curve &
@@ -1358,7 +1356,7 @@ def HLRBRep_BCurveTool_IsRational(*args) -> "Standard_Boolean" :
     """
   return _HLRBRep.HLRBRep_BCurveTool_IsRational(*args)
 
-def HLRBRep_BCurveTool_NbPoles(*args) -> "Standard_Integer" :
+def HLRBRep_BCurveTool_NbPoles(*args):
   """
     :param C:
     :type C: BRepAdaptor_Curve &
@@ -1367,7 +1365,7 @@ def HLRBRep_BCurveTool_NbPoles(*args) -> "Standard_Integer" :
     """
   return _HLRBRep.HLRBRep_BCurveTool_NbPoles(*args)
 
-def HLRBRep_BCurveTool_NbKnots(*args) -> "Standard_Integer" :
+def HLRBRep_BCurveTool_NbKnots(*args):
   """
     :param C:
     :type C: BRepAdaptor_Curve &
@@ -1376,7 +1374,7 @@ def HLRBRep_BCurveTool_NbKnots(*args) -> "Standard_Integer" :
     """
   return _HLRBRep.HLRBRep_BCurveTool_NbKnots(*args)
 
-def HLRBRep_BCurveTool_Poles(*args) -> "void" :
+def HLRBRep_BCurveTool_Poles(*args):
   """
     :param C:
     :type C: BRepAdaptor_Curve &
@@ -1387,7 +1385,7 @@ def HLRBRep_BCurveTool_Poles(*args) -> "void" :
     """
   return _HLRBRep.HLRBRep_BCurveTool_Poles(*args)
 
-def HLRBRep_BCurveTool_PolesAndWeights(*args) -> "void" :
+def HLRBRep_BCurveTool_PolesAndWeights(*args):
   """
     :param C:
     :type C: BRepAdaptor_Curve &
@@ -1400,7 +1398,7 @@ def HLRBRep_BCurveTool_PolesAndWeights(*args) -> "void" :
     """
   return _HLRBRep.HLRBRep_BCurveTool_PolesAndWeights(*args)
 
-def HLRBRep_BCurveTool_NbSamples(*args) -> "Standard_Integer" :
+def HLRBRep_BCurveTool_NbSamples(*args):
   """
     :param C:
     :type C: BRepAdaptor_Curve &
@@ -1442,21 +1440,21 @@ class HLRBRep_BiPnt2D(object):
 
         """
         _HLRBRep.HLRBRep_BiPnt2D_swiginit(self,_HLRBRep.new_HLRBRep_BiPnt2D(*args))
-    def P1(self, *args) -> "gp_Pnt2d const" :
+    def P1(self):
         """
         :rtype: gp_Pnt2d
 
         """
-        return _HLRBRep.HLRBRep_BiPnt2D_P1(self, *args)
+        return _HLRBRep.HLRBRep_BiPnt2D_P1(self)
 
-    def P2(self, *args) -> "gp_Pnt2d const" :
+    def P2(self):
         """
         :rtype: gp_Pnt2d
 
         """
-        return _HLRBRep.HLRBRep_BiPnt2D_P2(self, *args)
+        return _HLRBRep.HLRBRep_BiPnt2D_P2(self)
 
-    def Shape(self, *args) -> "void" :
+    def Shape(self, *args):
         """
         :rtype: TopoDS_Shape
 
@@ -1467,7 +1465,7 @@ class HLRBRep_BiPnt2D(object):
         """
         return _HLRBRep.HLRBRep_BiPnt2D_Shape(self, *args)
 
-    def Rg1Line(self, *args) -> "void" :
+    def Rg1Line(self, *args):
         """
         :rtype: bool
 
@@ -1478,7 +1476,7 @@ class HLRBRep_BiPnt2D(object):
         """
         return _HLRBRep.HLRBRep_BiPnt2D_Rg1Line(self, *args)
 
-    def RgNLine(self, *args) -> "void" :
+    def RgNLine(self, *args):
         """
         :rtype: bool
 
@@ -1489,7 +1487,7 @@ class HLRBRep_BiPnt2D(object):
         """
         return _HLRBRep.HLRBRep_BiPnt2D_RgNLine(self, *args)
 
-    def OutLine(self, *args) -> "void" :
+    def OutLine(self, *args):
         """
         :rtype: bool
 
@@ -1500,7 +1498,7 @@ class HLRBRep_BiPnt2D(object):
         """
         return _HLRBRep.HLRBRep_BiPnt2D_OutLine(self, *args)
 
-    def IntLine(self, *args) -> "void" :
+    def IntLine(self, *args):
         """
         :rtype: bool
 
@@ -1563,21 +1561,21 @@ class HLRBRep_BiPoint(object):
 
         """
         _HLRBRep.HLRBRep_BiPoint_swiginit(self,_HLRBRep.new_HLRBRep_BiPoint(*args))
-    def P1(self, *args) -> "gp_Pnt const" :
+    def P1(self):
         """
         :rtype: gp_Pnt
 
         """
-        return _HLRBRep.HLRBRep_BiPoint_P1(self, *args)
+        return _HLRBRep.HLRBRep_BiPoint_P1(self)
 
-    def P2(self, *args) -> "gp_Pnt const" :
+    def P2(self):
         """
         :rtype: gp_Pnt
 
         """
-        return _HLRBRep.HLRBRep_BiPoint_P2(self, *args)
+        return _HLRBRep.HLRBRep_BiPoint_P2(self)
 
-    def Shape(self, *args) -> "void" :
+    def Shape(self, *args):
         """
         :rtype: TopoDS_Shape
 
@@ -1588,7 +1586,7 @@ class HLRBRep_BiPoint(object):
         """
         return _HLRBRep.HLRBRep_BiPoint_Shape(self, *args)
 
-    def Rg1Line(self, *args) -> "void" :
+    def Rg1Line(self, *args):
         """
         :rtype: bool
 
@@ -1599,7 +1597,7 @@ class HLRBRep_BiPoint(object):
         """
         return _HLRBRep.HLRBRep_BiPoint_Rg1Line(self, *args)
 
-    def RgNLine(self, *args) -> "void" :
+    def RgNLine(self, *args):
         """
         :rtype: bool
 
@@ -1610,7 +1608,7 @@ class HLRBRep_BiPoint(object):
         """
         return _HLRBRep.HLRBRep_BiPoint_RgNLine(self, *args)
 
-    def OutLine(self, *args) -> "void" :
+    def OutLine(self, *args):
         """
         :rtype: bool
 
@@ -1621,7 +1619,7 @@ class HLRBRep_BiPoint(object):
         """
         return _HLRBRep.HLRBRep_BiPoint_OutLine(self, *args)
 
-    def IntLine(self, *args) -> "void" :
+    def IntLine(self, *args):
         """
         :rtype: bool
 
@@ -1726,7 +1724,7 @@ class HLRBRep_CInter(OCC.IntRes2d.IntRes2d_Intersection):
 
         """
         _HLRBRep.HLRBRep_CInter_swiginit(self,_HLRBRep.new_HLRBRep_CInter(*args))
-    def Perform(self, *args) -> "void" :
+    def Perform(self, *args):
         """
         :param C1:
         :type C1: Standard_Address &
@@ -1797,7 +1795,7 @@ class HLRBRep_CInter(OCC.IntRes2d.IntRes2d_Intersection):
         """
         return _HLRBRep.HLRBRep_CInter_Perform(self, *args)
 
-    def ComputeDomain(self, *args) -> "IntRes2d_Domain" :
+    def ComputeDomain(self, *args):
         """
         :param C1:
         :type C1: Standard_Address &
@@ -1830,7 +1828,7 @@ class HLRBRep_CLProps(object):
         :param C:
         :type C: Standard_Address &
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :param Resolution:
         :type Resolution: float
         :rtype: None
@@ -1840,20 +1838,20 @@ class HLRBRep_CLProps(object):
         :param U:
         :type U: float
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :param Resolution:
         :type Resolution: float
         :rtype: None
 
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :param Resolution:
         :type Resolution: float
         :rtype: None
 
         """
         _HLRBRep.HLRBRep_CLProps_swiginit(self,_HLRBRep.new_HLRBRep_CLProps(*args))
-    def SetParameter(self, *args) -> "void" :
+    def SetParameter(self, *args):
         """
         :param U:
         :type U: float
@@ -1862,7 +1860,7 @@ class HLRBRep_CLProps(object):
         """
         return _HLRBRep.HLRBRep_CLProps_SetParameter(self, *args)
 
-    def SetCurve(self, *args) -> "void" :
+    def SetCurve(self, *args):
         """
         :param C:
         :type C: Standard_Address &
@@ -1871,42 +1869,42 @@ class HLRBRep_CLProps(object):
         """
         return _HLRBRep.HLRBRep_CLProps_SetCurve(self, *args)
 
-    def Value(self, *args) -> "gp_Pnt2d const" :
+    def Value(self):
         """
         :rtype: gp_Pnt2d
 
         """
-        return _HLRBRep.HLRBRep_CLProps_Value(self, *args)
+        return _HLRBRep.HLRBRep_CLProps_Value(self)
 
-    def D1(self, *args) -> "gp_Vec2d const" :
+    def D1(self):
         """
         :rtype: gp_Vec2d
 
         """
-        return _HLRBRep.HLRBRep_CLProps_D1(self, *args)
+        return _HLRBRep.HLRBRep_CLProps_D1(self)
 
-    def D2(self, *args) -> "gp_Vec2d const" :
+    def D2(self):
         """
         :rtype: gp_Vec2d
 
         """
-        return _HLRBRep.HLRBRep_CLProps_D2(self, *args)
+        return _HLRBRep.HLRBRep_CLProps_D2(self)
 
-    def D3(self, *args) -> "gp_Vec2d const" :
+    def D3(self):
         """
         :rtype: gp_Vec2d
 
         """
-        return _HLRBRep.HLRBRep_CLProps_D3(self, *args)
+        return _HLRBRep.HLRBRep_CLProps_D3(self)
 
-    def IsTangentDefined(self, *args) -> "Standard_Boolean" :
+    def IsTangentDefined(self):
         """
         :rtype: bool
 
         """
-        return _HLRBRep.HLRBRep_CLProps_IsTangentDefined(self, *args)
+        return _HLRBRep.HLRBRep_CLProps_IsTangentDefined(self)
 
-    def Tangent(self, *args) -> "void" :
+    def Tangent(self, *args):
         """
         :param D:
         :type D: gp_Dir2d
@@ -1915,14 +1913,14 @@ class HLRBRep_CLProps(object):
         """
         return _HLRBRep.HLRBRep_CLProps_Tangent(self, *args)
 
-    def Curvature(self, *args) -> "Standard_Real" :
+    def Curvature(self):
         """
         :rtype: float
 
         """
-        return _HLRBRep.HLRBRep_CLProps_Curvature(self, *args)
+        return _HLRBRep.HLRBRep_CLProps_Curvature(self)
 
-    def Normal(self, *args) -> "void" :
+    def Normal(self, *args):
         """
         :param N:
         :type N: gp_Dir2d
@@ -1931,7 +1929,7 @@ class HLRBRep_CLProps(object):
         """
         return _HLRBRep.HLRBRep_CLProps_Normal(self, *args)
 
-    def CentreOfCurvature(self, *args) -> "void" :
+    def CentreOfCurvature(self, *args):
         """
         :param P:
         :type P: gp_Pnt2d
@@ -1965,8 +1963,9 @@ HLRBRep_CLProps_swigregister(HLRBRep_CLProps)
 
 class HLRBRep_CLPropsATool(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
+    def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def Value(*args) -> "void" :
+    def Value(*args):
         """
         * Computes the point <P> of parameter <U> on the Curve from HLRBRep <C>.
 
@@ -1982,7 +1981,7 @@ class HLRBRep_CLPropsATool(object):
         return _HLRBRep.HLRBRep_CLPropsATool_Value(*args)
 
     Value = staticmethod(Value)
-    def D1(*args) -> "void" :
+    def D1(*args):
         """
         * Computes the point <P> and first derivative <V1> of parameter <U> on the curve <C>.
 
@@ -2000,7 +1999,7 @@ class HLRBRep_CLPropsATool(object):
         return _HLRBRep.HLRBRep_CLPropsATool_D1(*args)
 
     D1 = staticmethod(D1)
-    def D2(*args) -> "void" :
+    def D2(*args):
         """
         * Computes the point <P>, the first derivative <V1> and second derivative <V2> of parameter <U> on the curve <C>.
 
@@ -2020,7 +2019,7 @@ class HLRBRep_CLPropsATool(object):
         return _HLRBRep.HLRBRep_CLPropsATool_D2(*args)
 
     D2 = staticmethod(D2)
-    def D3(*args) -> "void" :
+    def D3(*args):
         """
         * Computes the point <P>, the first derivative <V1>, the second derivative <V2> and third derivative <V3> of parameter <U> on the curve <C>.
 
@@ -2042,7 +2041,7 @@ class HLRBRep_CLPropsATool(object):
         return _HLRBRep.HLRBRep_CLPropsATool_D3(*args)
 
     D3 = staticmethod(D3)
-    def Continuity(*args) -> "Standard_Integer" :
+    def Continuity(*args):
         """
         * returns the order of continuity of the curve <C>. returns 1 : first derivative only is computable returns 2 : first and second derivative only are computable. returns 3 : first, second and third are computable.
 
@@ -2054,7 +2053,7 @@ class HLRBRep_CLPropsATool(object):
         return _HLRBRep.HLRBRep_CLPropsATool_Continuity(*args)
 
     Continuity = staticmethod(Continuity)
-    def FirstParameter(*args) -> "Standard_Real" :
+    def FirstParameter(*args):
         """
         * returns the first parameter bound of the curve.
 
@@ -2066,7 +2065,7 @@ class HLRBRep_CLPropsATool(object):
         return _HLRBRep.HLRBRep_CLPropsATool_FirstParameter(*args)
 
     FirstParameter = staticmethod(FirstParameter)
-    def LastParameter(*args) -> "Standard_Real" :
+    def LastParameter(*args):
         """
         * returns the last parameter bound of the curve. FirstParameter must be less than LastParamenter.
 
@@ -2078,8 +2077,6 @@ class HLRBRep_CLPropsATool(object):
         return _HLRBRep.HLRBRep_CLPropsATool_LastParameter(*args)
 
     LastParameter = staticmethod(LastParameter)
-    def __init__(self): 
-        _HLRBRep.HLRBRep_CLPropsATool_swiginit(self,_HLRBRep.new_HLRBRep_CLPropsATool())
     def __del__(self):
     	try:
     		self.thisown = False
@@ -2092,7 +2089,7 @@ HLRBRep_CLPropsATool._kill_pointed = new_instancemethod(_HLRBRep.HLRBRep_CLProps
 HLRBRep_CLPropsATool_swigregister = _HLRBRep.HLRBRep_CLPropsATool_swigregister
 HLRBRep_CLPropsATool_swigregister(HLRBRep_CLPropsATool)
 
-def HLRBRep_CLPropsATool_Value(*args) -> "void" :
+def HLRBRep_CLPropsATool_Value(*args):
   """
     * Computes the point <P> of parameter <U> on the Curve from HLRBRep <C>.
 
@@ -2107,7 +2104,7 @@ def HLRBRep_CLPropsATool_Value(*args) -> "void" :
     """
   return _HLRBRep.HLRBRep_CLPropsATool_Value(*args)
 
-def HLRBRep_CLPropsATool_D1(*args) -> "void" :
+def HLRBRep_CLPropsATool_D1(*args):
   """
     * Computes the point <P> and first derivative <V1> of parameter <U> on the curve <C>.
 
@@ -2124,7 +2121,7 @@ def HLRBRep_CLPropsATool_D1(*args) -> "void" :
     """
   return _HLRBRep.HLRBRep_CLPropsATool_D1(*args)
 
-def HLRBRep_CLPropsATool_D2(*args) -> "void" :
+def HLRBRep_CLPropsATool_D2(*args):
   """
     * Computes the point <P>, the first derivative <V1> and second derivative <V2> of parameter <U> on the curve <C>.
 
@@ -2143,7 +2140,7 @@ def HLRBRep_CLPropsATool_D2(*args) -> "void" :
     """
   return _HLRBRep.HLRBRep_CLPropsATool_D2(*args)
 
-def HLRBRep_CLPropsATool_D3(*args) -> "void" :
+def HLRBRep_CLPropsATool_D3(*args):
   """
     * Computes the point <P>, the first derivative <V1>, the second derivative <V2> and third derivative <V3> of parameter <U> on the curve <C>.
 
@@ -2164,7 +2161,7 @@ def HLRBRep_CLPropsATool_D3(*args) -> "void" :
     """
   return _HLRBRep.HLRBRep_CLPropsATool_D3(*args)
 
-def HLRBRep_CLPropsATool_Continuity(*args) -> "Standard_Integer" :
+def HLRBRep_CLPropsATool_Continuity(*args):
   """
     * returns the order of continuity of the curve <C>. returns 1 : first derivative only is computable returns 2 : first and second derivative only are computable. returns 3 : first, second and third are computable.
 
@@ -2175,7 +2172,7 @@ def HLRBRep_CLPropsATool_Continuity(*args) -> "Standard_Integer" :
     """
   return _HLRBRep.HLRBRep_CLPropsATool_Continuity(*args)
 
-def HLRBRep_CLPropsATool_FirstParameter(*args) -> "Standard_Real" :
+def HLRBRep_CLPropsATool_FirstParameter(*args):
   """
     * returns the first parameter bound of the curve.
 
@@ -2186,7 +2183,7 @@ def HLRBRep_CLPropsATool_FirstParameter(*args) -> "Standard_Real" :
     """
   return _HLRBRep.HLRBRep_CLPropsATool_FirstParameter(*args)
 
-def HLRBRep_CLPropsATool_LastParameter(*args) -> "Standard_Real" :
+def HLRBRep_CLPropsATool_LastParameter(*args):
   """
     * returns the last parameter bound of the curve. FirstParameter must be less than LastParamenter.
 
@@ -2200,15 +2197,15 @@ def HLRBRep_CLPropsATool_LastParameter(*args) -> "Standard_Real" :
 class HLRBRep_Curve(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         * Creates an undefined Curve.
 
         :rtype: None
 
         """
-        _HLRBRep.HLRBRep_Curve_swiginit(self,_HLRBRep.new_HLRBRep_Curve(*args))
-    def Projector(self, *args) -> "void" :
+        _HLRBRep.HLRBRep_Curve_swiginit(self,_HLRBRep.new_HLRBRep_Curve())
+    def Projector(self, *args):
         """
         :param Proj:
         :type Proj: Standard_Address
@@ -2217,7 +2214,7 @@ class HLRBRep_Curve(object):
         """
         return _HLRBRep.HLRBRep_Curve_Projector(self, *args)
 
-    def Curve(self, *args) -> "void" :
+    def Curve(self, *args):
         """
         * Returns the 3D curve.
 
@@ -2232,16 +2229,16 @@ class HLRBRep_Curve(object):
         """
         return _HLRBRep.HLRBRep_Curve_Curve(self, *args)
 
-    def GetCurve(self, *args) -> "BRepAdaptor_Curve const &" :
+    def GetCurve(self):
         """
         * Returns the 3D curve.
 
         :rtype: BRepAdaptor_Curve
 
         """
-        return _HLRBRep.HLRBRep_Curve_GetCurve(self, *args)
+        return _HLRBRep.HLRBRep_Curve_GetCurve(self)
 
-    def Parameter2d(self, *args) -> "Standard_Real" :
+    def Parameter2d(self, *args):
         """
         * Returns the parameter on the 2d curve from the parameter on the 3d curve.
 
@@ -2252,7 +2249,7 @@ class HLRBRep_Curve(object):
         """
         return _HLRBRep.HLRBRep_Curve_Parameter2d(self, *args)
 
-    def Parameter3d(self, *args) -> "Standard_Real" :
+    def Parameter3d(self, *args):
         """
         * Returns the parameter on the 3d curve from the parameter on the 2d curve.
 
@@ -2263,7 +2260,7 @@ class HLRBRep_Curve(object):
         """
         return _HLRBRep.HLRBRep_Curve_Parameter3d(self, *args)
 
-    def Update(self, *args) -> "Standard_Real" :
+    def Update(self, *args):
         """
         * Update the minmax and the internal data
 
@@ -2276,7 +2273,7 @@ class HLRBRep_Curve(object):
         """
         return _HLRBRep.HLRBRep_Curve_Update(self, *args)
 
-    def UpdateMinMax(self, *args) -> "Standard_Real" :
+    def UpdateMinMax(self, *args):
         """
         * Update the minmax returns tol for enlarge;
 
@@ -2289,7 +2286,7 @@ class HLRBRep_Curve(object):
         """
         return _HLRBRep.HLRBRep_Curve_UpdateMinMax(self, *args)
 
-    def Z(self, *args) -> "Standard_Real" :
+    def Z(self, *args):
         """
         * Computes the Z coordinate of the point of parameter U on the curve in the viewing coordinate system
 
@@ -2300,7 +2297,7 @@ class HLRBRep_Curve(object):
         """
         return _HLRBRep.HLRBRep_Curve_Z(self, *args)
 
-    def Value3D(self, *args) -> "gp_Pnt" :
+    def Value3D(self, *args):
         """
         * Computes the 3D point of parameter U on the curve.
 
@@ -2311,7 +2308,7 @@ class HLRBRep_Curve(object):
         """
         return _HLRBRep.HLRBRep_Curve_Value3D(self, *args)
 
-    def Tangent(self, *args) -> "void" :
+    def Tangent(self, *args):
         """
         * Depending on <AtStart> computes the 2D point and tangent on the curve at sart (or at end). If the first derivative is null look after at start (or before at end) with the second derivative.
 
@@ -2326,28 +2323,28 @@ class HLRBRep_Curve(object):
         """
         return _HLRBRep.HLRBRep_Curve_Tangent(self, *args)
 
-    def FirstParameter(self, *args) -> "Standard_Real" :
+    def FirstParameter(self):
         """
         :rtype: float
 
         """
-        return _HLRBRep.HLRBRep_Curve_FirstParameter(self, *args)
+        return _HLRBRep.HLRBRep_Curve_FirstParameter(self)
 
-    def LastParameter(self, *args) -> "Standard_Real" :
+    def LastParameter(self):
         """
         :rtype: float
 
         """
-        return _HLRBRep.HLRBRep_Curve_LastParameter(self, *args)
+        return _HLRBRep.HLRBRep_Curve_LastParameter(self)
 
-    def Continuity(self, *args) -> "GeomAbs_Shape" :
+    def Continuity(self):
         """
         :rtype: GeomAbs_Shape
 
         """
-        return _HLRBRep.HLRBRep_Curve_Continuity(self, *args)
+        return _HLRBRep.HLRBRep_Curve_Continuity(self)
 
-    def NbIntervals(self, *args) -> "Standard_Integer" :
+    def NbIntervals(self, *args):
         """
         * If necessary, breaks the curve in intervals of continuity <S>. And returns the number of intervals.
 
@@ -2358,7 +2355,7 @@ class HLRBRep_Curve(object):
         """
         return _HLRBRep.HLRBRep_Curve_NbIntervals(self, *args)
 
-    def Intervals(self, *args) -> "void" :
+    def Intervals(self, *args):
         """
         * Stores in <T> the parameters bounding the intervals of continuity <S>.  The array must provide enough room to accomodate for the parameters. i.e. T.Length() > NbIntervals()
 
@@ -2371,28 +2368,28 @@ class HLRBRep_Curve(object):
         """
         return _HLRBRep.HLRBRep_Curve_Intervals(self, *args)
 
-    def IsClosed(self, *args) -> "Standard_Boolean" :
+    def IsClosed(self):
         """
         :rtype: bool
 
         """
-        return _HLRBRep.HLRBRep_Curve_IsClosed(self, *args)
+        return _HLRBRep.HLRBRep_Curve_IsClosed(self)
 
-    def IsPeriodic(self, *args) -> "Standard_Boolean" :
+    def IsPeriodic(self):
         """
         :rtype: bool
 
         """
-        return _HLRBRep.HLRBRep_Curve_IsPeriodic(self, *args)
+        return _HLRBRep.HLRBRep_Curve_IsPeriodic(self)
 
-    def Period(self, *args) -> "Standard_Real" :
+    def Period(self):
         """
         :rtype: float
 
         """
-        return _HLRBRep.HLRBRep_Curve_Period(self, *args)
+        return _HLRBRep.HLRBRep_Curve_Period(self)
 
-    def Value(self, *args) -> "gp_Pnt2d" :
+    def Value(self, *args):
         """
         * Computes the point of parameter U on the curve.
 
@@ -2403,7 +2400,7 @@ class HLRBRep_Curve(object):
         """
         return _HLRBRep.HLRBRep_Curve_Value(self, *args)
 
-    def D0(self, *args) -> "void" :
+    def D0(self, *args):
         """
         * Computes the 3D point of parameter U on the curve.
 
@@ -2424,7 +2421,7 @@ class HLRBRep_Curve(object):
         """
         return _HLRBRep.HLRBRep_Curve_D0(self, *args)
 
-    def D1(self, *args) -> "void" :
+    def D1(self, *args):
         """
         * Computes the point of parameter U on the curve with its first derivative.
 
@@ -2449,7 +2446,7 @@ class HLRBRep_Curve(object):
         """
         return _HLRBRep.HLRBRep_Curve_D1(self, *args)
 
-    def D2(self, *args) -> "void" :
+    def D2(self, *args):
         """
         * Raised if the continuity of the current interval is not C2.
 
@@ -2466,7 +2463,7 @@ class HLRBRep_Curve(object):
         """
         return _HLRBRep.HLRBRep_Curve_D2(self, *args)
 
-    def D3(self, *args) -> "void" :
+    def D3(self, *args):
         """
         * Returns the point P of parameter U, the first, the second and the third derivative. Raised if the continuity of the current interval is not C3.
 
@@ -2485,20 +2482,20 @@ class HLRBRep_Curve(object):
         """
         return _HLRBRep.HLRBRep_Curve_D3(self, *args)
 
-    def DN(self, *args) -> "gp_Vec2d" :
+    def DN(self, *args):
         """
         * The returned vector gives the value of the derivative for the order of derivation N. Raised if the continuity of the current interval is not CN. Raised if N < 1.
 
         :param U:
         :type U: float
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :rtype: gp_Vec2d
 
         """
         return _HLRBRep.HLRBRep_Curve_DN(self, *args)
 
-    def Resolution(self, *args) -> "Standard_Real" :
+    def Resolution(self, *args):
         """
         * Returns the parametric resolution corresponding  to the real space resolution <R3d>.
 
@@ -2509,72 +2506,72 @@ class HLRBRep_Curve(object):
         """
         return _HLRBRep.HLRBRep_Curve_Resolution(self, *args)
 
-    def GetType(self, *args) -> "GeomAbs_CurveType" :
+    def GetType(self):
         """
         * Returns the type of the curve in the current interval : Line, Circle, Ellipse, Hyperbola, Parabola, BezierCurve, BSplineCurve, OtherCurve.
 
         :rtype: GeomAbs_CurveType
 
         """
-        return _HLRBRep.HLRBRep_Curve_GetType(self, *args)
+        return _HLRBRep.HLRBRep_Curve_GetType(self)
 
-    def Line(self, *args) -> "gp_Lin2d" :
+    def Line(self):
         """
         :rtype: gp_Lin2d
 
         """
-        return _HLRBRep.HLRBRep_Curve_Line(self, *args)
+        return _HLRBRep.HLRBRep_Curve_Line(self)
 
-    def Circle(self, *args) -> "gp_Circ2d" :
+    def Circle(self):
         """
         :rtype: gp_Circ2d
 
         """
-        return _HLRBRep.HLRBRep_Curve_Circle(self, *args)
+        return _HLRBRep.HLRBRep_Curve_Circle(self)
 
-    def Ellipse(self, *args) -> "gp_Elips2d" :
+    def Ellipse(self):
         """
         :rtype: gp_Elips2d
 
         """
-        return _HLRBRep.HLRBRep_Curve_Ellipse(self, *args)
+        return _HLRBRep.HLRBRep_Curve_Ellipse(self)
 
-    def Hyperbola(self, *args) -> "gp_Hypr2d" :
+    def Hyperbola(self):
         """
         :rtype: gp_Hypr2d
 
         """
-        return _HLRBRep.HLRBRep_Curve_Hyperbola(self, *args)
+        return _HLRBRep.HLRBRep_Curve_Hyperbola(self)
 
-    def Parabola(self, *args) -> "gp_Parab2d" :
+    def Parabola(self):
         """
         :rtype: gp_Parab2d
 
         """
-        return _HLRBRep.HLRBRep_Curve_Parabola(self, *args)
+        return _HLRBRep.HLRBRep_Curve_Parabola(self)
 
-    def IsRational(self, *args) -> "Standard_Boolean" :
+    def IsRational(self):
         """
         :rtype: bool
 
         """
-        return _HLRBRep.HLRBRep_Curve_IsRational(self, *args)
+        return _HLRBRep.HLRBRep_Curve_IsRational(self)
 
-    def Degree(self, *args) -> "Standard_Integer" :
+    def Degree(self):
         """
         :rtype: int
 
         """
-        return _HLRBRep.HLRBRep_Curve_Degree(self, *args)
+        return _HLRBRep.HLRBRep_Curve_Degree(self)
 
-    def NbPoles(self, *args) -> "Standard_Integer" :
+    def NbPoles(self):
         """
         :rtype: int
 
         """
-        return _HLRBRep.HLRBRep_Curve_NbPoles(self, *args)
+        return _HLRBRep.HLRBRep_Curve_NbPoles(self)
 
-    def Poles(self, *args) -> "void" :
+    def Poles(self, *args):
         """
         :param TP:
         :type TP: TColgp_Array1OfPnt2d
@@ -2589,7 +2586,7 @@ class HLRBRep_Curve(object):
         """
         return _HLRBRep.HLRBRep_Curve_Poles(self, *args)
 
-    def PolesAndWeights(self, *args) -> "void" :
+    def PolesAndWeights(self, *args):
         """
         :param TP:
         :type TP: TColgp_Array1OfPnt2d
@@ -2608,14 +2605,14 @@ class HLRBRep_Curve(object):
         """
         return _HLRBRep.HLRBRep_Curve_PolesAndWeights(self, *args)
 
-    def NbKnots(self, *args) -> "Standard_Integer" :
+    def NbKnots(self):
         """
         :rtype: int
 
         """
-        return _HLRBRep.HLRBRep_Curve_NbKnots(self, *args)
+        return _HLRBRep.HLRBRep_Curve_NbKnots(self)
 
-    def Knots(self, *args) -> "void" :
+    def Knots(self, *args):
         """
         :param kn:
         :type kn: TColStd_Array1OfReal &
@@ -2624,7 +2621,7 @@ class HLRBRep_Curve(object):
         """
         return _HLRBRep.HLRBRep_Curve_Knots(self, *args)
 
-    def Multiplicities(self, *args) -> "void" :
+    def Multiplicities(self, *args):
         """
         :param mu:
         :type mu: TColStd_Array1OfInteger &
@@ -2686,8 +2683,9 @@ HLRBRep_Curve_swigregister(HLRBRep_Curve)
 
 class HLRBRep_CurveTool(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
+    def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def FirstParameter(*args) -> "Standard_Real" :
+    def FirstParameter(*args):
         """
         :param C:
         :type C: Standard_Address
@@ -2697,7 +2695,7 @@ class HLRBRep_CurveTool(object):
         return _HLRBRep.HLRBRep_CurveTool_FirstParameter(*args)
 
     FirstParameter = staticmethod(FirstParameter)
-    def LastParameter(*args) -> "Standard_Real" :
+    def LastParameter(*args):
         """
         :param C:
         :type C: Standard_Address
@@ -2707,7 +2705,7 @@ class HLRBRep_CurveTool(object):
         return _HLRBRep.HLRBRep_CurveTool_LastParameter(*args)
 
     LastParameter = staticmethod(LastParameter)
-    def Continuity(*args) -> "GeomAbs_Shape" :
+    def Continuity(*args):
         """
         :param C:
         :type C: Standard_Address
@@ -2717,7 +2715,7 @@ class HLRBRep_CurveTool(object):
         return _HLRBRep.HLRBRep_CurveTool_Continuity(*args)
 
     Continuity = staticmethod(Continuity)
-    def NbIntervals(*args) -> "Standard_Integer" :
+    def NbIntervals(*args):
         """
         * Returns the number of intervals for continuity <S>. May be one if Continuity(myclass) >= <S>
 
@@ -2729,7 +2727,7 @@ class HLRBRep_CurveTool(object):
         return _HLRBRep.HLRBRep_CurveTool_NbIntervals(*args)
 
     NbIntervals = staticmethod(NbIntervals)
-    def Intervals(*args) -> "void" :
+    def Intervals(*args):
         """
         * Stores in <T> the parameters bounding the intervals of continuity <S>.  The array must provide enough room to accomodate for the parameters. i.e. T.Length() > NbIntervals()
 
@@ -2743,14 +2741,14 @@ class HLRBRep_CurveTool(object):
         return _HLRBRep.HLRBRep_CurveTool_Intervals(*args)
 
     Intervals = staticmethod(Intervals)
-    def GetInterval(*args) -> "Standard_Real &, Standard_Real &" :
+    def GetInterval(*args):
         """
         * output the bounds of interval of index <Index> used if Type == Composite.
 
         :param C:
         :type C: Standard_Address
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Tab:
         :type Tab: TColStd_Array1OfReal &
         :param U1:
@@ -2763,7 +2761,7 @@ class HLRBRep_CurveTool(object):
         return _HLRBRep.HLRBRep_CurveTool_GetInterval(*args)
 
     GetInterval = staticmethod(GetInterval)
-    def IsClosed(*args) -> "Standard_Boolean" :
+    def IsClosed(*args):
         """
         :param C:
         :type C: Standard_Address
@@ -2773,7 +2771,7 @@ class HLRBRep_CurveTool(object):
         return _HLRBRep.HLRBRep_CurveTool_IsClosed(*args)
 
     IsClosed = staticmethod(IsClosed)
-    def IsPeriodic(*args) -> "Standard_Boolean" :
+    def IsPeriodic(*args):
         """
         :param C:
         :type C: Standard_Address
@@ -2783,7 +2781,7 @@ class HLRBRep_CurveTool(object):
         return _HLRBRep.HLRBRep_CurveTool_IsPeriodic(*args)
 
     IsPeriodic = staticmethod(IsPeriodic)
-    def Period(*args) -> "Standard_Real" :
+    def Period(*args):
         """
         :param C:
         :type C: Standard_Address
@@ -2793,7 +2791,7 @@ class HLRBRep_CurveTool(object):
         return _HLRBRep.HLRBRep_CurveTool_Period(*args)
 
     Period = staticmethod(Period)
-    def Value(*args) -> "gp_Pnt2d" :
+    def Value(*args):
         """
         * Computes the point of parameter U on the curve.
 
@@ -2807,7 +2805,7 @@ class HLRBRep_CurveTool(object):
         return _HLRBRep.HLRBRep_CurveTool_Value(*args)
 
     Value = staticmethod(Value)
-    def D0(*args) -> "void" :
+    def D0(*args):
         """
         * Computes the point of parameter U on the curve.
 
@@ -2823,7 +2821,7 @@ class HLRBRep_CurveTool(object):
         return _HLRBRep.HLRBRep_CurveTool_D0(*args)
 
     D0 = staticmethod(D0)
-    def D1(*args) -> "void" :
+    def D1(*args):
         """
         * Computes the point of parameter U on the curve with its first derivative. Raised if the continuity of the current interval is not C1.
 
@@ -2841,7 +2839,7 @@ class HLRBRep_CurveTool(object):
         return _HLRBRep.HLRBRep_CurveTool_D1(*args)
 
     D1 = staticmethod(D1)
-    def D2(*args) -> "void" :
+    def D2(*args):
         """
         * Returns the point P of parameter U, the first and second derivatives V1 and V2. Raised if the continuity of the current interval is not C2.
 
@@ -2861,7 +2859,7 @@ class HLRBRep_CurveTool(object):
         return _HLRBRep.HLRBRep_CurveTool_D2(*args)
 
     D2 = staticmethod(D2)
-    def D3(*args) -> "void" :
+    def D3(*args):
         """
         * Returns the point P of parameter U, the first, the second and the third derivative. Raised if the continuity of the current interval is not C3.
 
@@ -2883,7 +2881,7 @@ class HLRBRep_CurveTool(object):
         return _HLRBRep.HLRBRep_CurveTool_D3(*args)
 
     D3 = staticmethod(D3)
-    def DN(*args) -> "gp_Vec2d" :
+    def DN(*args):
         """
         * The returned vector gives the value of the derivative for the order of derivation N. Raised if the continuity of the current interval is not CN. Raised if N < 1.
 
@@ -2892,14 +2890,14 @@ class HLRBRep_CurveTool(object):
         :param U:
         :type U: float
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :rtype: gp_Vec2d
 
         """
         return _HLRBRep.HLRBRep_CurveTool_DN(*args)
 
     DN = staticmethod(DN)
-    def Resolution(*args) -> "Standard_Real" :
+    def Resolution(*args):
         """
         * Returns the parametric resolution corresponding  to the real space resolution <R3d>.
 
@@ -2913,7 +2911,7 @@ class HLRBRep_CurveTool(object):
         return _HLRBRep.HLRBRep_CurveTool_Resolution(*args)
 
     Resolution = staticmethod(Resolution)
-    def GetType(*args) -> "GeomAbs_CurveType" :
+    def GetType(*args):
         """
         * Returns the type of the curve in the current interval : Line, Circle, Ellipse, Hyperbola, Parabola, BezierCurve, BSplineCurve, OtherCurve.
 
@@ -2925,7 +2923,7 @@ class HLRBRep_CurveTool(object):
         return _HLRBRep.HLRBRep_CurveTool_GetType(*args)
 
     GetType = staticmethod(GetType)
-    def TheType(*args) -> "GeomAbs_CurveType" :
+    def TheType(*args):
         """
         * Returns the type of the curve in the current interval : Line, Circle, Ellipse, Hyperbola, Parabola, BezierCurve, BSplineCurve, OtherCurve.
 
@@ -2937,7 +2935,7 @@ class HLRBRep_CurveTool(object):
         return _HLRBRep.HLRBRep_CurveTool_TheType(*args)
 
     TheType = staticmethod(TheType)
-    def Line(*args) -> "gp_Lin2d" :
+    def Line(*args):
         """
         :param C:
         :type C: Standard_Address
@@ -2947,7 +2945,7 @@ class HLRBRep_CurveTool(object):
         return _HLRBRep.HLRBRep_CurveTool_Line(*args)
 
     Line = staticmethod(Line)
-    def Circle(*args) -> "gp_Circ2d" :
+    def Circle(*args):
         """
         :param C:
         :type C: Standard_Address
@@ -2957,7 +2955,7 @@ class HLRBRep_CurveTool(object):
         return _HLRBRep.HLRBRep_CurveTool_Circle(*args)
 
     Circle = staticmethod(Circle)
-    def Ellipse(*args) -> "gp_Elips2d" :
+    def Ellipse(*args):
         """
         :param C:
         :type C: Standard_Address
@@ -2967,7 +2965,7 @@ class HLRBRep_CurveTool(object):
         return _HLRBRep.HLRBRep_CurveTool_Ellipse(*args)
 
     Ellipse = staticmethod(Ellipse)
-    def Hyperbola(*args) -> "gp_Hypr2d" :
+    def Hyperbola(*args):
         """
         :param C:
         :type C: Standard_Address
@@ -2977,7 +2975,7 @@ class HLRBRep_CurveTool(object):
         return _HLRBRep.HLRBRep_CurveTool_Hyperbola(*args)
 
     Hyperbola = staticmethod(Hyperbola)
-    def Parabola(*args) -> "gp_Parab2d" :
+    def Parabola(*args):
         """
         :param C:
         :type C: Standard_Address
@@ -2987,7 +2985,7 @@ class HLRBRep_CurveTool(object):
         return _HLRBRep.HLRBRep_CurveTool_Parabola(*args)
 
     Parabola = staticmethod(Parabola)
-    def Bezier(*args) -> "Handle_Geom2d_BezierCurve" :
+    def Bezier(*args):
         """
         :param C:
         :type C: Standard_Address
@@ -2997,7 +2995,7 @@ class HLRBRep_CurveTool(object):
         return _HLRBRep.HLRBRep_CurveTool_Bezier(*args)
 
     Bezier = staticmethod(Bezier)
-    def BSpline(*args) -> "Handle_Geom2d_BSplineCurve" :
+    def BSpline(*args):
         """
         :param C:
         :type C: Standard_Address
@@ -3007,7 +3005,7 @@ class HLRBRep_CurveTool(object):
         return _HLRBRep.HLRBRep_CurveTool_BSpline(*args)
 
     BSpline = staticmethod(BSpline)
-    def EpsX(*args) -> "Standard_Real" :
+    def EpsX(*args):
         """
         :param C:
         :type C: Standard_Address
@@ -3017,7 +3015,7 @@ class HLRBRep_CurveTool(object):
         return _HLRBRep.HLRBRep_CurveTool_EpsX(*args)
 
     EpsX = staticmethod(EpsX)
-    def NbSamples(*args) -> "Standard_Integer" :
+    def NbSamples(*args):
         """
         :param C:
         :type C: Standard_Address
@@ -3035,7 +3033,7 @@ class HLRBRep_CurveTool(object):
         return _HLRBRep.HLRBRep_CurveTool_NbSamples(*args)
 
     NbSamples = staticmethod(NbSamples)
-    def Degree(*args) -> "Standard_Integer" :
+    def Degree(*args):
         """
         :param C:
         :type C: Standard_Address
@@ -3045,8 +3043,6 @@ class HLRBRep_CurveTool(object):
         return _HLRBRep.HLRBRep_CurveTool_Degree(*args)
 
     Degree = staticmethod(Degree)
-    def __init__(self): 
-        _HLRBRep.HLRBRep_CurveTool_swiginit(self,_HLRBRep.new_HLRBRep_CurveTool())
     def __del__(self):
     	try:
     		self.thisown = False
@@ -3059,7 +3055,7 @@ HLRBRep_CurveTool._kill_pointed = new_instancemethod(_HLRBRep.HLRBRep_CurveTool_
 HLRBRep_CurveTool_swigregister = _HLRBRep.HLRBRep_CurveTool_swigregister
 HLRBRep_CurveTool_swigregister(HLRBRep_CurveTool)
 
-def HLRBRep_CurveTool_FirstParameter(*args) -> "Standard_Real" :
+def HLRBRep_CurveTool_FirstParameter(*args):
   """
     :param C:
     :type C: Standard_Address
@@ -3068,7 +3064,7 @@ def HLRBRep_CurveTool_FirstParameter(*args) -> "Standard_Real" :
     """
   return _HLRBRep.HLRBRep_CurveTool_FirstParameter(*args)
 
-def HLRBRep_CurveTool_LastParameter(*args) -> "Standard_Real" :
+def HLRBRep_CurveTool_LastParameter(*args):
   """
     :param C:
     :type C: Standard_Address
@@ -3077,7 +3073,7 @@ def HLRBRep_CurveTool_LastParameter(*args) -> "Standard_Real" :
     """
   return _HLRBRep.HLRBRep_CurveTool_LastParameter(*args)
 
-def HLRBRep_CurveTool_Continuity(*args) -> "GeomAbs_Shape" :
+def HLRBRep_CurveTool_Continuity(*args):
   """
     :param C:
     :type C: Standard_Address
@@ -3086,7 +3082,7 @@ def HLRBRep_CurveTool_Continuity(*args) -> "GeomAbs_Shape" :
     """
   return _HLRBRep.HLRBRep_CurveTool_Continuity(*args)
 
-def HLRBRep_CurveTool_NbIntervals(*args) -> "Standard_Integer" :
+def HLRBRep_CurveTool_NbIntervals(*args):
   """
     * Returns the number of intervals for continuity <S>. May be one if Continuity(myclass) >= <S>
 
@@ -3097,7 +3093,7 @@ def HLRBRep_CurveTool_NbIntervals(*args) -> "Standard_Integer" :
     """
   return _HLRBRep.HLRBRep_CurveTool_NbIntervals(*args)
 
-def HLRBRep_CurveTool_Intervals(*args) -> "void" :
+def HLRBRep_CurveTool_Intervals(*args):
   """
     * Stores in <T> the parameters bounding the intervals of continuity <S>.  The array must provide enough room to accomodate for the parameters. i.e. T.Length() > NbIntervals()
 
@@ -3110,14 +3106,14 @@ def HLRBRep_CurveTool_Intervals(*args) -> "void" :
     """
   return _HLRBRep.HLRBRep_CurveTool_Intervals(*args)
 
-def HLRBRep_CurveTool_GetInterval(*args) -> "Standard_Real &, Standard_Real &" :
+def HLRBRep_CurveTool_GetInterval(*args):
   """
     * output the bounds of interval of index <Index> used if Type == Composite.
 
     :param C:
     :type C: Standard_Address
     :param Index:
-    :type Index: int
+    :type Index: Standard_Integer
     :param Tab:
     :type Tab: TColStd_Array1OfReal &
     :param U1:
@@ -3129,7 +3125,7 @@ def HLRBRep_CurveTool_GetInterval(*args) -> "Standard_Real &, Standard_Real &" :
     """
   return _HLRBRep.HLRBRep_CurveTool_GetInterval(*args)
 
-def HLRBRep_CurveTool_IsClosed(*args) -> "Standard_Boolean" :
+def HLRBRep_CurveTool_IsClosed(*args):
   """
     :param C:
     :type C: Standard_Address
@@ -3138,7 +3134,7 @@ def HLRBRep_CurveTool_IsClosed(*args) -> "Standard_Boolean" :
     """
   return _HLRBRep.HLRBRep_CurveTool_IsClosed(*args)
 
-def HLRBRep_CurveTool_IsPeriodic(*args) -> "Standard_Boolean" :
+def HLRBRep_CurveTool_IsPeriodic(*args):
   """
     :param C:
     :type C: Standard_Address
@@ -3147,7 +3143,7 @@ def HLRBRep_CurveTool_IsPeriodic(*args) -> "Standard_Boolean" :
     """
   return _HLRBRep.HLRBRep_CurveTool_IsPeriodic(*args)
 
-def HLRBRep_CurveTool_Period(*args) -> "Standard_Real" :
+def HLRBRep_CurveTool_Period(*args):
   """
     :param C:
     :type C: Standard_Address
@@ -3156,7 +3152,7 @@ def HLRBRep_CurveTool_Period(*args) -> "Standard_Real" :
     """
   return _HLRBRep.HLRBRep_CurveTool_Period(*args)
 
-def HLRBRep_CurveTool_Value(*args) -> "gp_Pnt2d" :
+def HLRBRep_CurveTool_Value(*args):
   """
     * Computes the point of parameter U on the curve.
 
@@ -3169,7 +3165,7 @@ def HLRBRep_CurveTool_Value(*args) -> "gp_Pnt2d" :
     """
   return _HLRBRep.HLRBRep_CurveTool_Value(*args)
 
-def HLRBRep_CurveTool_D0(*args) -> "void" :
+def HLRBRep_CurveTool_D0(*args):
   """
     * Computes the point of parameter U on the curve.
 
@@ -3184,7 +3180,7 @@ def HLRBRep_CurveTool_D0(*args) -> "void" :
     """
   return _HLRBRep.HLRBRep_CurveTool_D0(*args)
 
-def HLRBRep_CurveTool_D1(*args) -> "void" :
+def HLRBRep_CurveTool_D1(*args):
   """
     * Computes the point of parameter U on the curve with its first derivative. Raised if the continuity of the current interval is not C1.
 
@@ -3201,7 +3197,7 @@ def HLRBRep_CurveTool_D1(*args) -> "void" :
     """
   return _HLRBRep.HLRBRep_CurveTool_D1(*args)
 
-def HLRBRep_CurveTool_D2(*args) -> "void" :
+def HLRBRep_CurveTool_D2(*args):
   """
     * Returns the point P of parameter U, the first and second derivatives V1 and V2. Raised if the continuity of the current interval is not C2.
 
@@ -3220,7 +3216,7 @@ def HLRBRep_CurveTool_D2(*args) -> "void" :
     """
   return _HLRBRep.HLRBRep_CurveTool_D2(*args)
 
-def HLRBRep_CurveTool_D3(*args) -> "void" :
+def HLRBRep_CurveTool_D3(*args):
   """
     * Returns the point P of parameter U, the first, the second and the third derivative. Raised if the continuity of the current interval is not C3.
 
@@ -3241,7 +3237,7 @@ def HLRBRep_CurveTool_D3(*args) -> "void" :
     """
   return _HLRBRep.HLRBRep_CurveTool_D3(*args)
 
-def HLRBRep_CurveTool_DN(*args) -> "gp_Vec2d" :
+def HLRBRep_CurveTool_DN(*args):
   """
     * The returned vector gives the value of the derivative for the order of derivation N. Raised if the continuity of the current interval is not CN. Raised if N < 1.
 
@@ -3250,13 +3246,13 @@ def HLRBRep_CurveTool_DN(*args) -> "gp_Vec2d" :
     :param U:
     :type U: float
     :param N:
-    :type N: int
+    :type N: Standard_Integer
     :rtype: gp_Vec2d
 
     """
   return _HLRBRep.HLRBRep_CurveTool_DN(*args)
 
-def HLRBRep_CurveTool_Resolution(*args) -> "Standard_Real" :
+def HLRBRep_CurveTool_Resolution(*args):
   """
     * Returns the parametric resolution corresponding  to the real space resolution <R3d>.
 
@@ -3269,7 +3265,7 @@ def HLRBRep_CurveTool_Resolution(*args) -> "Standard_Real" :
     """
   return _HLRBRep.HLRBRep_CurveTool_Resolution(*args)
 
-def HLRBRep_CurveTool_GetType(*args) -> "GeomAbs_CurveType" :
+def HLRBRep_CurveTool_GetType(*args):
   """
     * Returns the type of the curve in the current interval : Line, Circle, Ellipse, Hyperbola, Parabola, BezierCurve, BSplineCurve, OtherCurve.
 
@@ -3280,7 +3276,7 @@ def HLRBRep_CurveTool_GetType(*args) -> "GeomAbs_CurveType" :
     """
   return _HLRBRep.HLRBRep_CurveTool_GetType(*args)
 
-def HLRBRep_CurveTool_TheType(*args) -> "GeomAbs_CurveType" :
+def HLRBRep_CurveTool_TheType(*args):
   """
     * Returns the type of the curve in the current interval : Line, Circle, Ellipse, Hyperbola, Parabola, BezierCurve, BSplineCurve, OtherCurve.
 
@@ -3291,7 +3287,7 @@ def HLRBRep_CurveTool_TheType(*args) -> "GeomAbs_CurveType" :
     """
   return _HLRBRep.HLRBRep_CurveTool_TheType(*args)
 
-def HLRBRep_CurveTool_Line(*args) -> "gp_Lin2d" :
+def HLRBRep_CurveTool_Line(*args):
   """
     :param C:
     :type C: Standard_Address
@@ -3300,7 +3296,7 @@ def HLRBRep_CurveTool_Line(*args) -> "gp_Lin2d" :
     """
   return _HLRBRep.HLRBRep_CurveTool_Line(*args)
 
-def HLRBRep_CurveTool_Circle(*args) -> "gp_Circ2d" :
+def HLRBRep_CurveTool_Circle(*args):
   """
     :param C:
     :type C: Standard_Address
@@ -3309,7 +3305,7 @@ def HLRBRep_CurveTool_Circle(*args) -> "gp_Circ2d" :
     """
   return _HLRBRep.HLRBRep_CurveTool_Circle(*args)
 
-def HLRBRep_CurveTool_Ellipse(*args) -> "gp_Elips2d" :
+def HLRBRep_CurveTool_Ellipse(*args):
   """
     :param C:
     :type C: Standard_Address
@@ -3318,7 +3314,7 @@ def HLRBRep_CurveTool_Ellipse(*args) -> "gp_Elips2d" :
     """
   return _HLRBRep.HLRBRep_CurveTool_Ellipse(*args)
 
-def HLRBRep_CurveTool_Hyperbola(*args) -> "gp_Hypr2d" :
+def HLRBRep_CurveTool_Hyperbola(*args):
   """
     :param C:
     :type C: Standard_Address
@@ -3327,7 +3323,7 @@ def HLRBRep_CurveTool_Hyperbola(*args) -> "gp_Hypr2d" :
     """
   return _HLRBRep.HLRBRep_CurveTool_Hyperbola(*args)
 
-def HLRBRep_CurveTool_Parabola(*args) -> "gp_Parab2d" :
+def HLRBRep_CurveTool_Parabola(*args):
   """
     :param C:
     :type C: Standard_Address
@@ -3336,7 +3332,7 @@ def HLRBRep_CurveTool_Parabola(*args) -> "gp_Parab2d" :
     """
   return _HLRBRep.HLRBRep_CurveTool_Parabola(*args)
 
-def HLRBRep_CurveTool_Bezier(*args) -> "Handle_Geom2d_BezierCurve" :
+def HLRBRep_CurveTool_Bezier(*args):
   """
     :param C:
     :type C: Standard_Address
@@ -3345,7 +3341,7 @@ def HLRBRep_CurveTool_Bezier(*args) -> "Handle_Geom2d_BezierCurve" :
     """
   return _HLRBRep.HLRBRep_CurveTool_Bezier(*args)
 
-def HLRBRep_CurveTool_BSpline(*args) -> "Handle_Geom2d_BSplineCurve" :
+def HLRBRep_CurveTool_BSpline(*args):
   """
     :param C:
     :type C: Standard_Address
@@ -3354,7 +3350,7 @@ def HLRBRep_CurveTool_BSpline(*args) -> "Handle_Geom2d_BSplineCurve" :
     """
   return _HLRBRep.HLRBRep_CurveTool_BSpline(*args)
 
-def HLRBRep_CurveTool_EpsX(*args) -> "Standard_Real" :
+def HLRBRep_CurveTool_EpsX(*args):
   """
     :param C:
     :type C: Standard_Address
@@ -3363,7 +3359,7 @@ def HLRBRep_CurveTool_EpsX(*args) -> "Standard_Real" :
     """
   return _HLRBRep.HLRBRep_CurveTool_EpsX(*args)
 
-def HLRBRep_CurveTool_NbSamples(*args) -> "Standard_Integer" :
+def HLRBRep_CurveTool_NbSamples(*args):
   """
     :param C:
     :type C: Standard_Address
@@ -3380,7 +3376,7 @@ def HLRBRep_CurveTool_NbSamples(*args) -> "Standard_Integer" :
     """
   return _HLRBRep.HLRBRep_CurveTool_NbSamples(*args)
 
-def HLRBRep_CurveTool_Degree(*args) -> "Standard_Integer" :
+def HLRBRep_CurveTool_Degree(*args):
   """
     :param C:
     :type C: Standard_Address
@@ -3397,47 +3393,47 @@ class HLRBRep_Data(OCC.MMgt.MMgt_TShared):
         * Create an empty data structure of <NV> vertices, <NE> edges and <NF> faces.
 
         :param NV:
-        :type NV: int
+        :type NV: Standard_Integer
         :param NE:
-        :type NE: int
+        :type NE: Standard_Integer
         :param NF:
-        :type NF: int
+        :type NF: Standard_Integer
         :rtype: None
 
         """
         _HLRBRep.HLRBRep_Data_swiginit(self,_HLRBRep.new_HLRBRep_Data(*args))
-    def Write(self, *args) -> "void" :
+    def Write(self, *args):
         """
         * Write <DS> in me with a translation of <dv>,<de>,<df>.
 
         :param DS:
         :type DS: Handle_HLRBRep_Data &
         :param dv:
-        :type dv: int
+        :type dv: Standard_Integer
         :param de:
-        :type de: int
+        :type de: Standard_Integer
         :param df:
-        :type df: int
+        :type df: Standard_Integer
         :rtype: None
 
         """
         return _HLRBRep.HLRBRep_Data_Write(self, *args)
 
-    def EDataArray(self, *args) -> "HLRBRep_Array1OfEData &" :
+    def EDataArray(self):
         """
         :rtype: HLRBRep_Array1OfEData
 
         """
-        return _HLRBRep.HLRBRep_Data_EDataArray(self, *args)
+        return _HLRBRep.HLRBRep_Data_EDataArray(self)
 
-    def FDataArray(self, *args) -> "HLRBRep_Array1OfFData &" :
+    def FDataArray(self):
         """
         :rtype: HLRBRep_Array1OfFData
 
         """
-        return _HLRBRep.HLRBRep_Data_FDataArray(self, *args)
+        return _HLRBRep.HLRBRep_Data_FDataArray(self)
 
-    def Tolerance(self, *args) -> "Standard_ShortReal" :
+    def Tolerance(self, *args):
         """
         * Set the tolerance for the rejections during the exploration
 
@@ -3452,7 +3448,7 @@ class HLRBRep_Data(OCC.MMgt.MMgt_TShared):
         """
         return _HLRBRep.HLRBRep_Data_Tolerance(self, *args)
 
-    def Update(self, *args) -> "void" :
+    def Update(self, *args):
         """
         * end of building of the Data and updating all the informations linked to the projection.
 
@@ -3463,69 +3459,69 @@ class HLRBRep_Data(OCC.MMgt.MMgt_TShared):
         """
         return _HLRBRep.HLRBRep_Data_Update(self, *args)
 
-    def Projector(self, *args) -> "HLRAlgo_Projector &" :
+    def Projector(self):
         """
         :rtype: HLRAlgo_Projector
 
         """
-        return _HLRBRep.HLRBRep_Data_Projector(self, *args)
+        return _HLRBRep.HLRBRep_Data_Projector(self)
 
-    def NbVertices(self, *args) -> "Standard_Integer" :
+    def NbVertices(self):
         """
         :rtype: int
 
         """
-        return _HLRBRep.HLRBRep_Data_NbVertices(self, *args)
+        return _HLRBRep.HLRBRep_Data_NbVertices(self)
 
-    def NbEdges(self, *args) -> "Standard_Integer" :
+    def NbEdges(self):
         """
         :rtype: int
 
         """
-        return _HLRBRep.HLRBRep_Data_NbEdges(self, *args)
+        return _HLRBRep.HLRBRep_Data_NbEdges(self)
 
-    def NbFaces(self, *args) -> "Standard_Integer" :
+    def NbFaces(self):
         """
         :rtype: int
 
         """
-        return _HLRBRep.HLRBRep_Data_NbFaces(self, *args)
+        return _HLRBRep.HLRBRep_Data_NbFaces(self)
 
-    def EdgeMap(self, *args) -> "TopTools_IndexedMapOfShape &" :
+    def EdgeMap(self):
         """
         :rtype: TopTools_IndexedMapOfShape
 
         """
-        return _HLRBRep.HLRBRep_Data_EdgeMap(self, *args)
+        return _HLRBRep.HLRBRep_Data_EdgeMap(self)
 
-    def FaceMap(self, *args) -> "TopTools_IndexedMapOfShape &" :
+    def FaceMap(self):
         """
         :rtype: TopTools_IndexedMapOfShape
 
         """
-        return _HLRBRep.HLRBRep_Data_FaceMap(self, *args)
+        return _HLRBRep.HLRBRep_Data_FaceMap(self)
 
-    def InitBoundSort(self, *args) -> "void" :
+    def InitBoundSort(self, *args):
         """
         * to compare with only non rejected edges.
 
         :param MinMaxTot:
         :type MinMaxTot: Standard_Address
         :param e1:
-        :type e1: int
+        :type e1: Standard_Integer
         :param e2:
-        :type e2: int
+        :type e2: Standard_Integer
         :rtype: None
 
         """
         return _HLRBRep.HLRBRep_Data_InitBoundSort(self, *args)
 
-    def InitEdge(self, *args) -> "void" :
+    def InitEdge(self, *args):
         """
         * Begin an iteration only on visible Edges crossing the face number <FI>.
 
         :param FI:
-        :type FI: int
+        :type FI: Standard_Integer
         :param MST:
         :type MST: BRepTopAdaptor_MapOfShapeTool &
         :rtype: None
@@ -3533,15 +3529,19 @@ class HLRBRep_Data(OCC.MMgt.MMgt_TShared):
         """
         return _HLRBRep.HLRBRep_Data_InitEdge(self, *args)
 
-    def MoreEdge(self, *args) -> "Standard_Boolean" :
+    def MoreEdge(self):
         """
         :rtype: bool
 
         """
-        return _HLRBRep.HLRBRep_Data_MoreEdge(self, *args)
+        return _HLRBRep.HLRBRep_Data_MoreEdge(self)
 
-    def NextEdge(self, *args) -> "void" :
+    def NextEdge(self, *args):
         """
+        :param skip: default value is Standard_True
+        :type skip: bool
+        :rtype: None
+
         :param skip: default value is Standard_True
         :type skip: bool
         :rtype: None
@@ -3549,82 +3549,82 @@ class HLRBRep_Data(OCC.MMgt.MMgt_TShared):
         """
         return _HLRBRep.HLRBRep_Data_NextEdge(self, *args)
 
-    def Edge(self, *args) -> "Standard_Integer" :
+    def Edge(self):
         """
         * Returns the current Edge
 
         :rtype: int
 
         """
-        return _HLRBRep.HLRBRep_Data_Edge(self, *args)
+        return _HLRBRep.HLRBRep_Data_Edge(self)
 
-    def HidingTheFace(self, *args) -> "Standard_Boolean" :
+    def HidingTheFace(self):
         """
         * Returns true if the current edge to be hidden belongs to the hiding face.
 
         :rtype: bool
 
         """
-        return _HLRBRep.HLRBRep_Data_HidingTheFace(self, *args)
+        return _HLRBRep.HLRBRep_Data_HidingTheFace(self)
 
-    def SimpleHidingFace(self, *args) -> "Standard_Boolean" :
+    def SimpleHidingFace(self):
         """
         * Returns true if the current hiding face is not an auto-intersected one.
 
         :rtype: bool
 
         """
-        return _HLRBRep.HLRBRep_Data_SimpleHidingFace(self, *args)
+        return _HLRBRep.HLRBRep_Data_SimpleHidingFace(self)
 
-    def InitInterference(self, *args) -> "void" :
+    def InitInterference(self):
         """
         * Intersect the current Edge with the boundary of the hiding face. The interferences are given by the More, Next, and Value methods.
 
         :rtype: None
 
         """
-        return _HLRBRep.HLRBRep_Data_InitInterference(self, *args)
+        return _HLRBRep.HLRBRep_Data_InitInterference(self)
 
-    def MoreInterference(self, *args) -> "Standard_Boolean" :
+    def MoreInterference(self):
         """
         :rtype: bool
 
         """
-        return _HLRBRep.HLRBRep_Data_MoreInterference(self, *args)
+        return _HLRBRep.HLRBRep_Data_MoreInterference(self)
 
-    def NextInterference(self, *args) -> "void" :
+    def NextInterference(self):
         """
         :rtype: None
 
         """
-        return _HLRBRep.HLRBRep_Data_NextInterference(self, *args)
+        return _HLRBRep.HLRBRep_Data_NextInterference(self)
 
-    def RejectedInterference(self, *args) -> "Standard_Boolean" :
+    def RejectedInterference(self):
         """
         * Returns True if the interference is rejected.
 
         :rtype: bool
 
         """
-        return _HLRBRep.HLRBRep_Data_RejectedInterference(self, *args)
+        return _HLRBRep.HLRBRep_Data_RejectedInterference(self)
 
-    def AboveInterference(self, *args) -> "Standard_Boolean" :
+    def AboveInterference(self):
         """
         * Returns True if the rejected interference is above the face.
 
         :rtype: bool
 
         """
-        return _HLRBRep.HLRBRep_Data_AboveInterference(self, *args)
+        return _HLRBRep.HLRBRep_Data_AboveInterference(self)
 
-    def Interference(self, *args) -> "HLRAlgo_Interference &" :
+    def Interference(self):
         """
         :rtype: HLRAlgo_Interference
 
         """
-        return _HLRBRep.HLRBRep_Data_Interference(self, *args)
+        return _HLRBRep.HLRBRep_Data_Interference(self)
 
-    def LocalLEGeometry2D(self, *args) -> "void" :
+    def LocalLEGeometry2D(self, *args):
         """
         * Returns the local description of the projection of the current LEdge at parameter <Param>.
 
@@ -3641,12 +3641,12 @@ class HLRBRep_Data(OCC.MMgt.MMgt_TShared):
         """
         return _HLRBRep.HLRBRep_Data_LocalLEGeometry2D(self, *args)
 
-    def LocalFEGeometry2D(self, *args) -> "void" :
+    def LocalFEGeometry2D(self, *args):
         """
         * Returns the local description of the projection of the current FEdge at parameter <Param>.
 
         :param FE:
-        :type FE: int
+        :type FE: Standard_Integer
         :param Param:
         :type Param: float
         :param Tg:
@@ -3660,7 +3660,7 @@ class HLRBRep_Data(OCC.MMgt.MMgt_TShared):
         """
         return _HLRBRep.HLRBRep_Data_LocalFEGeometry2D(self, *args)
 
-    def EdgeState(self, *args) -> "void" :
+    def EdgeState(self, *args):
         """
         * Returns the local 3D state of the intersection between the current edge and the current face at the <p1> and <p2> parameters.
 
@@ -3677,12 +3677,12 @@ class HLRBRep_Data(OCC.MMgt.MMgt_TShared):
         """
         return _HLRBRep.HLRBRep_Data_EdgeState(self, *args)
 
-    def EdgeOfTheHidingFace(self, *args) -> "Standard_Boolean" :
+    def EdgeOfTheHidingFace(self, *args):
         """
         * Returns the true if the Edge <EData> belongs to the Hiding Face.
 
         :param E:
-        :type E: int
+        :type E: Standard_Integer
         :param EData:
         :type EData: HLRBRep_EdgeData &
         :rtype: bool
@@ -3690,12 +3690,12 @@ class HLRBRep_Data(OCC.MMgt.MMgt_TShared):
         """
         return _HLRBRep.HLRBRep_Data_EdgeOfTheHidingFace(self, *args)
 
-    def HidingStartLevel(self, *args) -> "Standard_Integer" :
+    def HidingStartLevel(self, *args):
         """
         * Returns the number of levels of hiding face above the first point of the edge <EData>. The InterferenceList is given to compute far away of the Interferences and then come back.
 
         :param E:
-        :type E: int
+        :type E: Standard_Integer
         :param EData:
         :type EData: HLRBRep_EdgeData &
         :param IL:
@@ -3705,12 +3705,12 @@ class HLRBRep_Data(OCC.MMgt.MMgt_TShared):
         """
         return _HLRBRep.HLRBRep_Data_HidingStartLevel(self, *args)
 
-    def Compare(self, *args) -> "TopAbs_State" :
+    def Compare(self, *args):
         """
         * Returns the state of the Edge <EData> after classification.
 
         :param E:
-        :type E: int
+        :type E: Standard_Integer
         :param EData:
         :type EData: HLRBRep_EdgeData &
         :rtype: TopAbs_State
@@ -3718,16 +3718,16 @@ class HLRBRep_Data(OCC.MMgt.MMgt_TShared):
         """
         return _HLRBRep.HLRBRep_Data_Compare(self, *args)
 
-    def SimplClassify(self, *args) -> "TopAbs_State" :
+    def SimplClassify(self, *args):
         """
         * Simple classification of part of edge [p1, p2] returns OUT if at least 1 of Nbp points of edge is out othewise returns IN It is used to check 'suspision' hided part of edge.
 
         :param E:
-        :type E: int
+        :type E: Standard_Integer
         :param EData:
         :type EData: HLRBRep_EdgeData &
         :param Nbp:
-        :type Nbp: int
+        :type Nbp: Standard_Integer
         :param p1:
         :type p1: float
         :param p2:
@@ -3737,18 +3737,18 @@ class HLRBRep_Data(OCC.MMgt.MMgt_TShared):
         """
         return _HLRBRep.HLRBRep_Data_SimplClassify(self, *args)
 
-    def Classify(self, *args) -> "TopAbs_State" :
+    def Classify(self, *args):
         """
         * Classification of an edge.
 
         :param E:
-        :type E: int
+        :type E: Standard_Integer
         :param EData:
         :type EData: HLRBRep_EdgeData &
         :param LevelFlag:
         :type LevelFlag: bool
         :param Level:
-        :type Level: int &
+        :type Level: Standard_Integer &
         :param param:
         :type param: float
         :rtype: TopAbs_State
@@ -3756,18 +3756,18 @@ class HLRBRep_Data(OCC.MMgt.MMgt_TShared):
         """
         return _HLRBRep.HLRBRep_Data_Classify(self, *args)
 
-    def Destroy(self, *args) -> "void" :
+    def Destroy(self):
         """
         :rtype: None
 
         """
-        return _HLRBRep.HLRBRep_Data_Destroy(self, *args)
+        return _HLRBRep.HLRBRep_Data_Destroy(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(HLRBRep_Data self)"""
         return _HLRBRep.HLRBRep_Data__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_HLRBRep_Data" :
+    def GetHandle(self):
         """GetHandle(HLRBRep_Data self) -> Handle_HLRBRep_Data"""
         return _HLRBRep.HLRBRep_Data_GetHandle(self)
 
@@ -3838,7 +3838,7 @@ Handle_HLRBRep_Data._kill_pointed = new_instancemethod(_HLRBRep.Handle_HLRBRep_D
 Handle_HLRBRep_Data_swigregister = _HLRBRep.Handle_HLRBRep_Data_swigregister
 Handle_HLRBRep_Data_swigregister(Handle_HLRBRep_Data)
 
-def Handle_HLRBRep_Data_DownCast(*args) -> "Handle_HLRBRep_Data const" :
+def Handle_HLRBRep_Data_DownCast(*args):
   return _HLRBRep.Handle_HLRBRep_Data_DownCast(*args)
 Handle_HLRBRep_Data_DownCast = _HLRBRep.Handle_HLRBRep_Data_DownCast
 
@@ -3855,79 +3855,79 @@ class HLRBRep_EdgeBuilder(object):
 
         """
         _HLRBRep.HLRBRep_EdgeBuilder_swiginit(self,_HLRBRep.new_HLRBRep_EdgeBuilder(*args))
-    def InitAreas(self, *args) -> "void" :
+    def InitAreas(self):
         """
         * Initialize an iteration on the areas.
 
         :rtype: None
 
         """
-        return _HLRBRep.HLRBRep_EdgeBuilder_InitAreas(self, *args)
+        return _HLRBRep.HLRBRep_EdgeBuilder_InitAreas(self)
 
-    def NextArea(self, *args) -> "void" :
+    def NextArea(self):
         """
         * Set the current area to the next area.
 
         :rtype: None
 
         """
-        return _HLRBRep.HLRBRep_EdgeBuilder_NextArea(self, *args)
+        return _HLRBRep.HLRBRep_EdgeBuilder_NextArea(self)
 
-    def PreviousArea(self, *args) -> "void" :
+    def PreviousArea(self):
         """
         * Set the current area to the previous area.
 
         :rtype: None
 
         """
-        return _HLRBRep.HLRBRep_EdgeBuilder_PreviousArea(self, *args)
+        return _HLRBRep.HLRBRep_EdgeBuilder_PreviousArea(self)
 
-    def HasArea(self, *args) -> "Standard_Boolean" :
+    def HasArea(self):
         """
         * Returns True if there is a current area.
 
         :rtype: bool
 
         """
-        return _HLRBRep.HLRBRep_EdgeBuilder_HasArea(self, *args)
+        return _HLRBRep.HLRBRep_EdgeBuilder_HasArea(self)
 
-    def AreaState(self, *args) -> "TopAbs_State" :
+    def AreaState(self):
         """
         * Returns the state of the current area.
 
         :rtype: TopAbs_State
 
         """
-        return _HLRBRep.HLRBRep_EdgeBuilder_AreaState(self, *args)
+        return _HLRBRep.HLRBRep_EdgeBuilder_AreaState(self)
 
-    def AreaEdgeState(self, *args) -> "TopAbs_State" :
+    def AreaEdgeState(self):
         """
         * Returns the edge state of the current area.
 
         :rtype: TopAbs_State
 
         """
-        return _HLRBRep.HLRBRep_EdgeBuilder_AreaEdgeState(self, *args)
+        return _HLRBRep.HLRBRep_EdgeBuilder_AreaEdgeState(self)
 
-    def LeftLimit(self, *args) -> "Handle_HLRBRep_AreaLimit" :
+    def LeftLimit(self):
         """
         * Returns the AreaLimit beginning the current area. This is a NULL handle when the area is infinite on the left.
 
         :rtype: Handle_HLRBRep_AreaLimit
 
         """
-        return _HLRBRep.HLRBRep_EdgeBuilder_LeftLimit(self, *args)
+        return _HLRBRep.HLRBRep_EdgeBuilder_LeftLimit(self)
 
-    def RightLimit(self, *args) -> "Handle_HLRBRep_AreaLimit" :
+    def RightLimit(self):
         """
         * Returns the AreaLimit ending the current area. This is a NULL handle when the area is infinite on the right.
 
         :rtype: Handle_HLRBRep_AreaLimit
 
         """
-        return _HLRBRep.HLRBRep_EdgeBuilder_RightLimit(self, *args)
+        return _HLRBRep.HLRBRep_EdgeBuilder_RightLimit(self)
 
-    def Builds(self, *args) -> "void" :
+    def Builds(self, *args):
         """
         * Reinitialize the results iteration to the parts with State <ToBuild>. If this method is not called after construction the default is <ToBuild> = IN.
 
@@ -3938,84 +3938,84 @@ class HLRBRep_EdgeBuilder(object):
         """
         return _HLRBRep.HLRBRep_EdgeBuilder_Builds(self, *args)
 
-    def MoreEdges(self, *args) -> "Standard_Boolean" :
+    def MoreEdges(self):
         """
         * Returns True if there are more new edges to build.
 
         :rtype: bool
 
         """
-        return _HLRBRep.HLRBRep_EdgeBuilder_MoreEdges(self, *args)
+        return _HLRBRep.HLRBRep_EdgeBuilder_MoreEdges(self)
 
-    def NextEdge(self, *args) -> "void" :
+    def NextEdge(self):
         """
         * Proceeds to the next edge to build. Skip all remaining vertices on the current edge.
 
         :rtype: None
 
         """
-        return _HLRBRep.HLRBRep_EdgeBuilder_NextEdge(self, *args)
+        return _HLRBRep.HLRBRep_EdgeBuilder_NextEdge(self)
 
-    def MoreVertices(self, *args) -> "Standard_Boolean" :
+    def MoreVertices(self):
         """
         * True if there are more vertices in the current new edge.
 
         :rtype: bool
 
         """
-        return _HLRBRep.HLRBRep_EdgeBuilder_MoreVertices(self, *args)
+        return _HLRBRep.HLRBRep_EdgeBuilder_MoreVertices(self)
 
-    def NextVertex(self, *args) -> "void" :
+    def NextVertex(self):
         """
         * Proceeds to the next vertex of the current edge.
 
         :rtype: None
 
         """
-        return _HLRBRep.HLRBRep_EdgeBuilder_NextVertex(self, *args)
+        return _HLRBRep.HLRBRep_EdgeBuilder_NextVertex(self)
 
-    def Current(self, *args) -> "HLRAlgo_Intersection const &" :
+    def Current(self):
         """
         * Returns the current vertex of the current edge.
 
         :rtype: HLRAlgo_Intersection
 
         """
-        return _HLRBRep.HLRBRep_EdgeBuilder_Current(self, *args)
+        return _HLRBRep.HLRBRep_EdgeBuilder_Current(self)
 
-    def IsBoundary(self, *args) -> "Standard_Boolean" :
+    def IsBoundary(self):
         """
         * Returns True if the current vertex comes from the boundary of the edge.
 
         :rtype: bool
 
         """
-        return _HLRBRep.HLRBRep_EdgeBuilder_IsBoundary(self, *args)
+        return _HLRBRep.HLRBRep_EdgeBuilder_IsBoundary(self)
 
-    def IsInterference(self, *args) -> "Standard_Boolean" :
+    def IsInterference(self):
         """
         * Returns True if the current vertex was an interference.
 
         :rtype: bool
 
         """
-        return _HLRBRep.HLRBRep_EdgeBuilder_IsInterference(self, *args)
+        return _HLRBRep.HLRBRep_EdgeBuilder_IsInterference(self)
 
-    def Orientation(self, *args) -> "TopAbs_Orientation" :
+    def Orientation(self):
         """
         * Returns the new orientation of the current vertex.
 
         :rtype: TopAbs_Orientation
 
         """
-        return _HLRBRep.HLRBRep_EdgeBuilder_Orientation(self, *args)
+        return _HLRBRep.HLRBRep_EdgeBuilder_Orientation(self)
 
-    def Destroy(self, *args) -> "void" :
+    def Destroy(self):
         """
         :rtype: None
 
         """
-        return _HLRBRep.HLRBRep_EdgeBuilder_Destroy(self, *args)
+        return _HLRBRep.HLRBRep_EdgeBuilder_Destroy(self)
 
     def __del__(self):
     	try:
@@ -4050,13 +4050,13 @@ HLRBRep_EdgeBuilder_swigregister(HLRBRep_EdgeBuilder)
 class HLRBRep_EdgeData(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _HLRBRep.HLRBRep_EdgeData_swiginit(self,_HLRBRep.new_HLRBRep_EdgeData(*args))
-    def Set(self, *args) -> "void" :
+        _HLRBRep.HLRBRep_EdgeData_swiginit(self,_HLRBRep.new_HLRBRep_EdgeData())
+    def Set(self, *args):
         """
         :param Reg1:
         :type Reg1: bool
@@ -4065,9 +4065,9 @@ class HLRBRep_EdgeData(object):
         :param EG:
         :type EG: TopoDS_Edge &
         :param V1:
-        :type V1: int
+        :type V1: Standard_Integer
         :param V2:
-        :type V2: int
+        :type V2: Standard_Integer
         :param Out1:
         :type Out1: bool
         :param Out2:
@@ -4089,7 +4089,7 @@ class HLRBRep_EdgeData(object):
         """
         return _HLRBRep.HLRBRep_EdgeData_Set(self, *args)
 
-    def Selected(self, *args) -> "void" :
+    def Selected(self, *args):
         """
         :rtype: bool
 
@@ -4100,7 +4100,7 @@ class HLRBRep_EdgeData(object):
         """
         return _HLRBRep.HLRBRep_EdgeData_Selected(self, *args)
 
-    def Rg1Line(self, *args) -> "void" :
+    def Rg1Line(self, *args):
         """
         :rtype: bool
 
@@ -4111,7 +4111,7 @@ class HLRBRep_EdgeData(object):
         """
         return _HLRBRep.HLRBRep_EdgeData_Rg1Line(self, *args)
 
-    def RgNLine(self, *args) -> "void" :
+    def RgNLine(self, *args):
         """
         :rtype: bool
 
@@ -4122,7 +4122,7 @@ class HLRBRep_EdgeData(object):
         """
         return _HLRBRep.HLRBRep_EdgeData_RgNLine(self, *args)
 
-    def Vertical(self, *args) -> "void" :
+    def Vertical(self, *args):
         """
         :rtype: bool
 
@@ -4133,7 +4133,7 @@ class HLRBRep_EdgeData(object):
         """
         return _HLRBRep.HLRBRep_EdgeData_Vertical(self, *args)
 
-    def Simple(self, *args) -> "void" :
+    def Simple(self, *args):
         """
         :rtype: bool
 
@@ -4144,7 +4144,7 @@ class HLRBRep_EdgeData(object):
         """
         return _HLRBRep.HLRBRep_EdgeData_Simple(self, *args)
 
-    def OutLVSta(self, *args) -> "void" :
+    def OutLVSta(self, *args):
         """
         :rtype: bool
 
@@ -4155,7 +4155,7 @@ class HLRBRep_EdgeData(object):
         """
         return _HLRBRep.HLRBRep_EdgeData_OutLVSta(self, *args)
 
-    def OutLVEnd(self, *args) -> "void" :
+    def OutLVEnd(self, *args):
         """
         :rtype: bool
 
@@ -4166,7 +4166,7 @@ class HLRBRep_EdgeData(object):
         """
         return _HLRBRep.HLRBRep_EdgeData_OutLVEnd(self, *args)
 
-    def CutAtSta(self, *args) -> "void" :
+    def CutAtSta(self, *args):
         """
         :rtype: bool
 
@@ -4177,7 +4177,7 @@ class HLRBRep_EdgeData(object):
         """
         return _HLRBRep.HLRBRep_EdgeData_CutAtSta(self, *args)
 
-    def CutAtEnd(self, *args) -> "void" :
+    def CutAtEnd(self, *args):
         """
         :rtype: bool
 
@@ -4188,7 +4188,7 @@ class HLRBRep_EdgeData(object):
         """
         return _HLRBRep.HLRBRep_EdgeData_CutAtEnd(self, *args)
 
-    def VerAtSta(self, *args) -> "void" :
+    def VerAtSta(self, *args):
         """
         :rtype: bool
 
@@ -4199,7 +4199,7 @@ class HLRBRep_EdgeData(object):
         """
         return _HLRBRep.HLRBRep_EdgeData_VerAtSta(self, *args)
 
-    def VerAtEnd(self, *args) -> "void" :
+    def VerAtEnd(self, *args):
         """
         :rtype: bool
 
@@ -4210,7 +4210,7 @@ class HLRBRep_EdgeData(object):
         """
         return _HLRBRep.HLRBRep_EdgeData_VerAtEnd(self, *args)
 
-    def AutoIntersectionDone(self, *args) -> "void" :
+    def AutoIntersectionDone(self, *args):
         """
         :rtype: bool
 
@@ -4221,7 +4221,7 @@ class HLRBRep_EdgeData(object):
         """
         return _HLRBRep.HLRBRep_EdgeData_AutoIntersectionDone(self, *args)
 
-    def Used(self, *args) -> "void" :
+    def Used(self, *args):
         """
         :rtype: bool
 
@@ -4232,40 +4232,40 @@ class HLRBRep_EdgeData(object):
         """
         return _HLRBRep.HLRBRep_EdgeData_Used(self, *args)
 
-    def HideCount(self, *args) -> "void" :
+    def HideCount(self, *args):
         """
         :rtype: int
 
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :rtype: None
 
         """
         return _HLRBRep.HLRBRep_EdgeData_HideCount(self, *args)
 
-    def VSta(self, *args) -> "void" :
+    def VSta(self, *args):
         """
         :rtype: int
 
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :rtype: None
 
         """
         return _HLRBRep.HLRBRep_EdgeData_VSta(self, *args)
 
-    def VEnd(self, *args) -> "void" :
+    def VEnd(self, *args):
         """
         :rtype: int
 
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :rtype: None
 
         """
         return _HLRBRep.HLRBRep_EdgeData_VEnd(self, *args)
 
-    def UpdateMinMax(self, *args) -> "void" :
+    def UpdateMinMax(self, *args):
         """
         :param TotMinMax:
         :type TotMinMax: Standard_Address
@@ -4274,47 +4274,47 @@ class HLRBRep_EdgeData(object):
         """
         return _HLRBRep.HLRBRep_EdgeData_UpdateMinMax(self, *args)
 
-    def MinMax(self, *args) -> "Standard_Address" :
+    def MinMax(self):
         """
         :rtype: Standard_Address
 
         """
-        return _HLRBRep.HLRBRep_EdgeData_MinMax(self, *args)
+        return _HLRBRep.HLRBRep_EdgeData_MinMax(self)
 
-    def Status(self, *args) -> "HLRAlgo_EdgeStatus &" :
+    def Status(self):
         """
         :rtype: HLRAlgo_EdgeStatus
 
         """
-        return _HLRBRep.HLRBRep_EdgeData_Status(self, *args)
+        return _HLRBRep.HLRBRep_EdgeData_Status(self)
 
-    def ChangeGeometry(self, *args) -> "HLRBRep_Curve &" :
+    def ChangeGeometry(self):
         """
         :rtype: HLRBRep_Curve
 
         """
-        return _HLRBRep.HLRBRep_EdgeData_ChangeGeometry(self, *args)
+        return _HLRBRep.HLRBRep_EdgeData_ChangeGeometry(self)
 
-    def Geometry(self, *args) -> "HLRBRep_Curve const &" :
+    def Geometry(self):
         """
         :rtype: HLRBRep_Curve
 
         """
-        return _HLRBRep.HLRBRep_EdgeData_Geometry(self, *args)
+        return _HLRBRep.HLRBRep_EdgeData_Geometry(self)
 
-    def Curve(self, *args) -> "Standard_Address" :
+    def Curve(self):
         """
         :rtype: Standard_Address
 
         """
-        return _HLRBRep.HLRBRep_EdgeData_Curve(self, *args)
+        return _HLRBRep.HLRBRep_EdgeData_Curve(self)
 
-    def Tolerance(self, *args) -> "Standard_ShortReal" :
+    def Tolerance(self):
         """
         :rtype: Standard_ShortReal
 
         """
-        return _HLRBRep.HLRBRep_EdgeData_Tolerance(self, *args)
+        return _HLRBRep.HLRBRep_EdgeData_Tolerance(self)
 
     def __del__(self):
     	try:
@@ -4354,8 +4354,9 @@ HLRBRep_EdgeData_swigregister(HLRBRep_EdgeData)
 
 class HLRBRep_EdgeFaceTool(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
+    def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def CurvatureValue(*args) -> "Standard_Real" :
+    def CurvatureValue(*args):
         """
         :param F:
         :type F: Standard_Address
@@ -4371,7 +4372,7 @@ class HLRBRep_EdgeFaceTool(object):
         return _HLRBRep.HLRBRep_EdgeFaceTool_CurvatureValue(*args)
 
     CurvatureValue = staticmethod(CurvatureValue)
-    def UVPoint(*args) -> "Standard_Real &, Standard_Real &" :
+    def UVPoint(*args):
         """
         * return True if U and V are found.
 
@@ -4391,8 +4392,6 @@ class HLRBRep_EdgeFaceTool(object):
         return _HLRBRep.HLRBRep_EdgeFaceTool_UVPoint(*args)
 
     UVPoint = staticmethod(UVPoint)
-    def __init__(self): 
-        _HLRBRep.HLRBRep_EdgeFaceTool_swiginit(self,_HLRBRep.new_HLRBRep_EdgeFaceTool())
     def __del__(self):
     	try:
     		self.thisown = False
@@ -4405,7 +4404,7 @@ HLRBRep_EdgeFaceTool._kill_pointed = new_instancemethod(_HLRBRep.HLRBRep_EdgeFac
 HLRBRep_EdgeFaceTool_swigregister = _HLRBRep.HLRBRep_EdgeFaceTool_swigregister
 HLRBRep_EdgeFaceTool_swigregister(HLRBRep_EdgeFaceTool)
 
-def HLRBRep_EdgeFaceTool_CurvatureValue(*args) -> "Standard_Real" :
+def HLRBRep_EdgeFaceTool_CurvatureValue(*args):
   """
     :param F:
     :type F: Standard_Address
@@ -4420,7 +4419,7 @@ def HLRBRep_EdgeFaceTool_CurvatureValue(*args) -> "Standard_Real" :
     """
   return _HLRBRep.HLRBRep_EdgeFaceTool_CurvatureValue(*args)
 
-def HLRBRep_EdgeFaceTool_UVPoint(*args) -> "Standard_Real &, Standard_Real &" :
+def HLRBRep_EdgeFaceTool_UVPoint(*args):
   """
     * return True if U and V are found.
 
@@ -4441,8 +4440,9 @@ def HLRBRep_EdgeFaceTool_UVPoint(*args) -> "Standard_Real &, Standard_Real &" :
 
 class HLRBRep_EdgeIList(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
+    def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def AddInterference(*args) -> "void" :
+    def AddInterference(*args):
         """
         * Add the interference <I> to the list <IL>.
 
@@ -4458,7 +4458,7 @@ class HLRBRep_EdgeIList(object):
         return _HLRBRep.HLRBRep_EdgeIList_AddInterference(*args)
 
     AddInterference = staticmethod(AddInterference)
-    def ProcessComplex(*args) -> "void" :
+    def ProcessComplex(*args):
         """
         * Process complex transitions on the list IL.
 
@@ -4472,8 +4472,6 @@ class HLRBRep_EdgeIList(object):
         return _HLRBRep.HLRBRep_EdgeIList_ProcessComplex(*args)
 
     ProcessComplex = staticmethod(ProcessComplex)
-    def __init__(self): 
-        _HLRBRep.HLRBRep_EdgeIList_swiginit(self,_HLRBRep.new_HLRBRep_EdgeIList())
     def __del__(self):
     	try:
     		self.thisown = False
@@ -4486,7 +4484,7 @@ HLRBRep_EdgeIList._kill_pointed = new_instancemethod(_HLRBRep.HLRBRep_EdgeIList_
 HLRBRep_EdgeIList_swigregister = _HLRBRep.HLRBRep_EdgeIList_swigregister
 HLRBRep_EdgeIList_swigregister(HLRBRep_EdgeIList)
 
-def HLRBRep_EdgeIList_AddInterference(*args) -> "void" :
+def HLRBRep_EdgeIList_AddInterference(*args):
   """
     * Add the interference <I> to the list <IL>.
 
@@ -4501,7 +4499,7 @@ def HLRBRep_EdgeIList_AddInterference(*args) -> "void" :
     """
   return _HLRBRep.HLRBRep_EdgeIList_AddInterference(*args)
 
-def HLRBRep_EdgeIList_ProcessComplex(*args) -> "void" :
+def HLRBRep_EdgeIList_ProcessComplex(*args):
   """
     * Process complex transitions on the list IL.
 
@@ -4525,63 +4523,63 @@ class HLRBRep_EdgeInterferenceTool(object):
 
         """
         _HLRBRep.HLRBRep_EdgeInterferenceTool_swiginit(self,_HLRBRep.new_HLRBRep_EdgeInterferenceTool(*args))
-    def LoadEdge(self, *args) -> "void" :
+    def LoadEdge(self):
         """
         :rtype: None
 
         """
-        return _HLRBRep.HLRBRep_EdgeInterferenceTool_LoadEdge(self, *args)
+        return _HLRBRep.HLRBRep_EdgeInterferenceTool_LoadEdge(self)
 
-    def InitVertices(self, *args) -> "void" :
+    def InitVertices(self):
         """
         :rtype: None
 
         """
-        return _HLRBRep.HLRBRep_EdgeInterferenceTool_InitVertices(self, *args)
+        return _HLRBRep.HLRBRep_EdgeInterferenceTool_InitVertices(self)
 
-    def MoreVertices(self, *args) -> "Standard_Boolean" :
+    def MoreVertices(self):
         """
         :rtype: bool
 
         """
-        return _HLRBRep.HLRBRep_EdgeInterferenceTool_MoreVertices(self, *args)
+        return _HLRBRep.HLRBRep_EdgeInterferenceTool_MoreVertices(self)
 
-    def NextVertex(self, *args) -> "void" :
+    def NextVertex(self):
         """
         :rtype: None
 
         """
-        return _HLRBRep.HLRBRep_EdgeInterferenceTool_NextVertex(self, *args)
+        return _HLRBRep.HLRBRep_EdgeInterferenceTool_NextVertex(self)
 
-    def CurrentVertex(self, *args) -> "HLRAlgo_Intersection const &" :
+    def CurrentVertex(self):
         """
         :rtype: HLRAlgo_Intersection
 
         """
-        return _HLRBRep.HLRBRep_EdgeInterferenceTool_CurrentVertex(self, *args)
+        return _HLRBRep.HLRBRep_EdgeInterferenceTool_CurrentVertex(self)
 
-    def CurrentOrientation(self, *args) -> "TopAbs_Orientation" :
+    def CurrentOrientation(self):
         """
         :rtype: TopAbs_Orientation
 
         """
-        return _HLRBRep.HLRBRep_EdgeInterferenceTool_CurrentOrientation(self, *args)
+        return _HLRBRep.HLRBRep_EdgeInterferenceTool_CurrentOrientation(self)
 
-    def CurrentParameter(self, *args) -> "Standard_Real" :
+    def CurrentParameter(self):
         """
         :rtype: float
 
         """
-        return _HLRBRep.HLRBRep_EdgeInterferenceTool_CurrentParameter(self, *args)
+        return _HLRBRep.HLRBRep_EdgeInterferenceTool_CurrentParameter(self)
 
-    def IsPeriodic(self, *args) -> "Standard_Boolean" :
+    def IsPeriodic(self):
         """
         :rtype: bool
 
         """
-        return _HLRBRep.HLRBRep_EdgeInterferenceTool_IsPeriodic(self, *args)
+        return _HLRBRep.HLRBRep_EdgeInterferenceTool_IsPeriodic(self)
 
-    def EdgeGeometry(self, *args) -> "void" :
+    def EdgeGeometry(self, *args):
         """
         * Returns local geometric description of the Edge at parameter <Para>. See method Reset of class EdgeFaceTransition from TopCnx for other arguments.
 
@@ -4598,7 +4596,7 @@ class HLRBRep_EdgeInterferenceTool(object):
         """
         return _HLRBRep.HLRBRep_EdgeInterferenceTool_EdgeGeometry(self, *args)
 
-    def ParameterOfInterference(self, *args) -> "Standard_Real" :
+    def ParameterOfInterference(self, *args):
         """
         :param I:
         :type I: HLRAlgo_Interference &
@@ -4607,7 +4605,7 @@ class HLRBRep_EdgeInterferenceTool(object):
         """
         return _HLRBRep.HLRBRep_EdgeInterferenceTool_ParameterOfInterference(self, *args)
 
-    def SameInterferences(self, *args) -> "Standard_Boolean" :
+    def SameInterferences(self, *args):
         """
         * True if the two interferences are on the same geometric locus.
 
@@ -4620,7 +4618,7 @@ class HLRBRep_EdgeInterferenceTool(object):
         """
         return _HLRBRep.HLRBRep_EdgeInterferenceTool_SameInterferences(self, *args)
 
-    def SameVertexAndInterference(self, *args) -> "Standard_Boolean" :
+    def SameVertexAndInterference(self, *args):
         """
         * True if the Interference and the current Vertex are on the same geometric locus.
 
@@ -4631,7 +4629,7 @@ class HLRBRep_EdgeInterferenceTool(object):
         """
         return _HLRBRep.HLRBRep_EdgeInterferenceTool_SameVertexAndInterference(self, *args)
 
-    def InterferenceBoundaryGeometry(self, *args) -> "void" :
+    def InterferenceBoundaryGeometry(self, *args):
         """
         * Returns the geometry of the boundary at the interference <I>. See the AddInterference method of the class EdgeFaceTransition from TopCnx for the other arguments.
 
@@ -4688,16 +4686,16 @@ class HLRBRep_ExactIntersectionPointOfTheIntPCurvePCurveOfCInter(object):
 
         """
         _HLRBRep.HLRBRep_ExactIntersectionPointOfTheIntPCurvePCurveOfCInter_swiginit(self,_HLRBRep.new_HLRBRep_ExactIntersectionPointOfTheIntPCurvePCurveOfCInter(*args))
-    def Perform(self, *args) -> "void" :
+    def Perform(self, *args):
         """
         :param Poly1:
         :type Poly1: HLRBRep_ThePolygon2dOfTheIntPCurvePCurveOfCInter &
         :param Poly2:
         :type Poly2: HLRBRep_ThePolygon2dOfTheIntPCurvePCurveOfCInter &
         :param NumSegOn1:
-        :type NumSegOn1: int &
+        :type NumSegOn1: Standard_Integer &
         :param NumSegOn2:
-        :type NumSegOn2: int &
+        :type NumSegOn2: Standard_Integer &
         :param ParamOnSeg1:
         :type ParamOnSeg1: float &
         :param ParamOnSeg2:
@@ -4721,14 +4719,14 @@ class HLRBRep_ExactIntersectionPointOfTheIntPCurvePCurveOfCInter(object):
         """
         return _HLRBRep.HLRBRep_ExactIntersectionPointOfTheIntPCurvePCurveOfCInter_Perform(self, *args)
 
-    def NbRoots(self, *args) -> "Standard_Integer" :
+    def NbRoots(self):
         """
         :rtype: int
 
         """
-        return _HLRBRep.HLRBRep_ExactIntersectionPointOfTheIntPCurvePCurveOfCInter_NbRoots(self, *args)
+        return _HLRBRep.HLRBRep_ExactIntersectionPointOfTheIntPCurvePCurveOfCInter_NbRoots(self)
 
-    def Roots(self, *args) -> "void" :
+    def Roots(self):
         """
         :param U:
         :type U: float &
@@ -4737,14 +4735,14 @@ class HLRBRep_ExactIntersectionPointOfTheIntPCurvePCurveOfCInter(object):
         :rtype: None
 
         """
-        return _HLRBRep.HLRBRep_ExactIntersectionPointOfTheIntPCurvePCurveOfCInter_Roots(self, *args)
+        return _HLRBRep.HLRBRep_ExactIntersectionPointOfTheIntPCurvePCurveOfCInter_Roots(self)
 
-    def AnErrorOccurred(self, *args) -> "Standard_Boolean" :
+    def AnErrorOccurred(self):
         """
         :rtype: bool
 
         """
-        return _HLRBRep.HLRBRep_ExactIntersectionPointOfTheIntPCurvePCurveOfCInter_AnErrorOccurred(self, *args)
+        return _HLRBRep.HLRBRep_ExactIntersectionPointOfTheIntPCurvePCurveOfCInter_AnErrorOccurred(self)
 
     def __del__(self):
     	try:
@@ -4765,13 +4763,13 @@ HLRBRep_ExactIntersectionPointOfTheIntPCurvePCurveOfCInter_swigregister(HLRBRep_
 class HLRBRep_FaceData(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _HLRBRep.HLRBRep_FaceData_swiginit(self,_HLRBRep.new_HLRBRep_FaceData(*args))
-    def Set(self, *args) -> "void" :
+        _HLRBRep.HLRBRep_FaceData_swiginit(self,_HLRBRep.new_HLRBRep_FaceData())
+    def Set(self, *args):
         """
         * <Or> is the orientation of the face. <Cl> is true if the face belongs to a closed volume. <NW> is the number of wires ( or block of edges ) of the face.
 
@@ -4782,35 +4780,35 @@ class HLRBRep_FaceData(object):
         :param Cl:
         :type Cl: bool
         :param NW:
-        :type NW: int
+        :type NW: Standard_Integer
         :rtype: None
 
         """
         return _HLRBRep.HLRBRep_FaceData_Set(self, *args)
 
-    def SetWire(self, *args) -> "void" :
+    def SetWire(self, *args):
         """
         * Set <NE> the number of edges of the wire number <WI>.
 
         :param WI:
-        :type WI: int
+        :type WI: Standard_Integer
         :param NE:
-        :type NE: int
+        :type NE: Standard_Integer
         :rtype: None
 
         """
         return _HLRBRep.HLRBRep_FaceData_SetWire(self, *args)
 
-    def SetWEdge(self, *args) -> "void" :
+    def SetWEdge(self, *args):
         """
         * Set the edge number <EWI> of the wire <WI>.
 
         :param WI:
-        :type WI: int
+        :type WI: Standard_Integer
         :param EWI:
-        :type EWI: int
+        :type EWI: Standard_Integer
         :param EI:
-        :type EI: int
+        :type EI: Standard_Integer
         :param Or:
         :type Or: TopAbs_Orientation
         :param OutL:
@@ -4826,7 +4824,7 @@ class HLRBRep_FaceData(object):
         """
         return _HLRBRep.HLRBRep_FaceData_SetWEdge(self, *args)
 
-    def Selected(self, *args) -> "void" :
+    def Selected(self, *args):
         """
         :rtype: bool
 
@@ -4837,7 +4835,7 @@ class HLRBRep_FaceData(object):
         """
         return _HLRBRep.HLRBRep_FaceData_Selected(self, *args)
 
-    def Back(self, *args) -> "void" :
+    def Back(self, *args):
         """
         :rtype: bool
 
@@ -4848,7 +4846,7 @@ class HLRBRep_FaceData(object):
         """
         return _HLRBRep.HLRBRep_FaceData_Back(self, *args)
 
-    def Side(self, *args) -> "void" :
+    def Side(self, *args):
         """
         :rtype: bool
 
@@ -4859,7 +4857,7 @@ class HLRBRep_FaceData(object):
         """
         return _HLRBRep.HLRBRep_FaceData_Side(self, *args)
 
-    def Closed(self, *args) -> "void" :
+    def Closed(self, *args):
         """
         :rtype: bool
 
@@ -4870,7 +4868,7 @@ class HLRBRep_FaceData(object):
         """
         return _HLRBRep.HLRBRep_FaceData_Closed(self, *args)
 
-    def Hiding(self, *args) -> "void" :
+    def Hiding(self, *args):
         """
         :rtype: bool
 
@@ -4881,7 +4879,7 @@ class HLRBRep_FaceData(object):
         """
         return _HLRBRep.HLRBRep_FaceData_Hiding(self, *args)
 
-    def Simple(self, *args) -> "void" :
+    def Simple(self, *args):
         """
         :rtype: bool
 
@@ -4892,7 +4890,7 @@ class HLRBRep_FaceData(object):
         """
         return _HLRBRep.HLRBRep_FaceData_Simple(self, *args)
 
-    def Cut(self, *args) -> "void" :
+    def Cut(self, *args):
         """
         :rtype: bool
 
@@ -4903,7 +4901,7 @@ class HLRBRep_FaceData(object):
         """
         return _HLRBRep.HLRBRep_FaceData_Cut(self, *args)
 
-    def WithOutL(self, *args) -> "void" :
+    def WithOutL(self, *args):
         """
         :rtype: bool
 
@@ -4914,7 +4912,7 @@ class HLRBRep_FaceData(object):
         """
         return _HLRBRep.HLRBRep_FaceData_WithOutL(self, *args)
 
-    def Plane(self, *args) -> "void" :
+    def Plane(self, *args):
         """
         :rtype: bool
 
@@ -4925,7 +4923,7 @@ class HLRBRep_FaceData(object):
         """
         return _HLRBRep.HLRBRep_FaceData_Plane(self, *args)
 
-    def Cylinder(self, *args) -> "void" :
+    def Cylinder(self, *args):
         """
         :rtype: bool
 
@@ -4936,7 +4934,7 @@ class HLRBRep_FaceData(object):
         """
         return _HLRBRep.HLRBRep_FaceData_Cylinder(self, *args)
 
-    def Cone(self, *args) -> "void" :
+    def Cone(self, *args):
         """
         :rtype: bool
 
@@ -4947,7 +4945,7 @@ class HLRBRep_FaceData(object):
         """
         return _HLRBRep.HLRBRep_FaceData_Cone(self, *args)
 
-    def Sphere(self, *args) -> "void" :
+    def Sphere(self, *args):
         """
         :rtype: bool
 
@@ -4958,7 +4956,7 @@ class HLRBRep_FaceData(object):
         """
         return _HLRBRep.HLRBRep_FaceData_Sphere(self, *args)
 
-    def Torus(self, *args) -> "void" :
+    def Torus(self, *args):
         """
         :rtype: bool
 
@@ -4969,7 +4967,7 @@ class HLRBRep_FaceData(object):
         """
         return _HLRBRep.HLRBRep_FaceData_Torus(self, *args)
 
-    def Size(self, *args) -> "void" :
+    def Size(self, *args):
         """
         :rtype: float
 
@@ -4980,7 +4978,7 @@ class HLRBRep_FaceData(object):
         """
         return _HLRBRep.HLRBRep_FaceData_Size(self, *args)
 
-    def Orientation(self, *args) -> "void" :
+    def Orientation(self, *args):
         """
         :rtype: TopAbs_Orientation
 
@@ -4991,26 +4989,26 @@ class HLRBRep_FaceData(object):
         """
         return _HLRBRep.HLRBRep_FaceData_Orientation(self, *args)
 
-    def Wires(self, *args) -> "Handle_HLRAlgo_WiresBlock &" :
+    def Wires(self):
         """
         :rtype: Handle_HLRAlgo_WiresBlock
 
         """
-        return _HLRBRep.HLRBRep_FaceData_Wires(self, *args)
+        return _HLRBRep.HLRBRep_FaceData_Wires(self)
 
-    def Geometry(self, *args) -> "HLRBRep_Surface &" :
+    def Geometry(self):
         """
         :rtype: HLRBRep_Surface
 
         """
-        return _HLRBRep.HLRBRep_FaceData_Geometry(self, *args)
+        return _HLRBRep.HLRBRep_FaceData_Geometry(self)
 
-    def Tolerance(self, *args) -> "Standard_ShortReal" :
+    def Tolerance(self):
         """
         :rtype: Standard_ShortReal
 
         """
-        return _HLRBRep.HLRBRep_FaceData_Tolerance(self, *args)
+        return _HLRBRep.HLRBRep_FaceData_Tolerance(self)
 
     def __del__(self):
     	try:
@@ -5048,13 +5046,13 @@ HLRBRep_FaceData_swigregister(HLRBRep_FaceData)
 class HLRBRep_FaceIterator(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _HLRBRep.HLRBRep_FaceIterator_swiginit(self,_HLRBRep.new_HLRBRep_FaceIterator(*args))
-    def InitEdge(self, *args) -> "void" :
+        _HLRBRep.HLRBRep_FaceIterator_swiginit(self,_HLRBRep.new_HLRBRep_FaceIterator())
+    def InitEdge(self, *args):
         """
         * Begin an exploration of the edges of the face <fd>
 
@@ -5065,97 +5063,97 @@ class HLRBRep_FaceIterator(object):
         """
         return _HLRBRep.HLRBRep_FaceIterator_InitEdge(self, *args)
 
-    def MoreEdge(self, *args) -> "Standard_Boolean" :
+    def MoreEdge(self):
         """
         :rtype: bool
 
         """
-        return _HLRBRep.HLRBRep_FaceIterator_MoreEdge(self, *args)
+        return _HLRBRep.HLRBRep_FaceIterator_MoreEdge(self)
 
-    def NextEdge(self, *args) -> "void" :
+    def NextEdge(self):
         """
         :rtype: None
 
         """
-        return _HLRBRep.HLRBRep_FaceIterator_NextEdge(self, *args)
+        return _HLRBRep.HLRBRep_FaceIterator_NextEdge(self)
 
-    def BeginningOfWire(self, *args) -> "Standard_Boolean" :
+    def BeginningOfWire(self):
         """
         * Returns True if the current edge is the first of a wire.
 
         :rtype: bool
 
         """
-        return _HLRBRep.HLRBRep_FaceIterator_BeginningOfWire(self, *args)
+        return _HLRBRep.HLRBRep_FaceIterator_BeginningOfWire(self)
 
-    def EndOfWire(self, *args) -> "Standard_Boolean" :
+    def EndOfWire(self):
         """
         * Returns True if the current edge is the last of a wire.
 
         :rtype: bool
 
         """
-        return _HLRBRep.HLRBRep_FaceIterator_EndOfWire(self, *args)
+        return _HLRBRep.HLRBRep_FaceIterator_EndOfWire(self)
 
-    def SkipWire(self, *args) -> "void" :
+    def SkipWire(self):
         """
         * Skip the current wire in the exploration.
 
         :rtype: None
 
         """
-        return _HLRBRep.HLRBRep_FaceIterator_SkipWire(self, *args)
+        return _HLRBRep.HLRBRep_FaceIterator_SkipWire(self)
 
-    def Wire(self, *args) -> "Handle_HLRAlgo_EdgesBlock" :
+    def Wire(self):
         """
         * Returns the edges of the current wire.
 
         :rtype: Handle_HLRAlgo_EdgesBlock
 
         """
-        return _HLRBRep.HLRBRep_FaceIterator_Wire(self, *args)
+        return _HLRBRep.HLRBRep_FaceIterator_Wire(self)
 
-    def Edge(self, *args) -> "Standard_Integer" :
+    def Edge(self):
         """
         :rtype: int
 
         """
-        return _HLRBRep.HLRBRep_FaceIterator_Edge(self, *args)
+        return _HLRBRep.HLRBRep_FaceIterator_Edge(self)
 
-    def Orientation(self, *args) -> "TopAbs_Orientation" :
+    def Orientation(self):
         """
         :rtype: TopAbs_Orientation
 
         """
-        return _HLRBRep.HLRBRep_FaceIterator_Orientation(self, *args)
+        return _HLRBRep.HLRBRep_FaceIterator_Orientation(self)
 
-    def OutLine(self, *args) -> "Standard_Boolean" :
+    def OutLine(self):
         """
         :rtype: bool
 
         """
-        return _HLRBRep.HLRBRep_FaceIterator_OutLine(self, *args)
+        return _HLRBRep.HLRBRep_FaceIterator_OutLine(self)
 
-    def Internal(self, *args) -> "Standard_Boolean" :
+    def Internal(self):
         """
         :rtype: bool
 
         """
-        return _HLRBRep.HLRBRep_FaceIterator_Internal(self, *args)
+        return _HLRBRep.HLRBRep_FaceIterator_Internal(self)
 
-    def Double(self, *args) -> "Standard_Boolean" :
+    def Double(self):
         """
         :rtype: bool
 
         """
-        return _HLRBRep.HLRBRep_FaceIterator_Double(self, *args)
+        return _HLRBRep.HLRBRep_FaceIterator_Double(self)
 
-    def IsoLine(self, *args) -> "Standard_Boolean" :
+    def IsoLine(self):
         """
         :rtype: bool
 
         """
-        return _HLRBRep.HLRBRep_FaceIterator_IsoLine(self, *args)
+        return _HLRBRep.HLRBRep_FaceIterator_IsoLine(self)
 
     def __del__(self):
     	try:
@@ -5195,7 +5193,7 @@ class HLRBRep_HLRToShape(object):
 
         """
         _HLRBRep.HLRBRep_HLRToShape_swiginit(self,_HLRBRep.new_HLRBRep_HLRToShape(*args))
-    def VCompound(self, *args) -> "TopoDS_Shape" :
+    def VCompound(self, *args):
         """
         :rtype: TopoDS_Shape
 
@@ -5206,7 +5204,7 @@ class HLRBRep_HLRToShape(object):
         """
         return _HLRBRep.HLRBRep_HLRToShape_VCompound(self, *args)
 
-    def Rg1LineVCompound(self, *args) -> "TopoDS_Shape" :
+    def Rg1LineVCompound(self, *args):
         """
         :rtype: TopoDS_Shape
 
@@ -5217,7 +5215,7 @@ class HLRBRep_HLRToShape(object):
         """
         return _HLRBRep.HLRBRep_HLRToShape_Rg1LineVCompound(self, *args)
 
-    def RgNLineVCompound(self, *args) -> "TopoDS_Shape" :
+    def RgNLineVCompound(self, *args):
         """
         :rtype: TopoDS_Shape
 
@@ -5228,14 +5226,14 @@ class HLRBRep_HLRToShape(object):
         """
         return _HLRBRep.HLRBRep_HLRToShape_RgNLineVCompound(self, *args)
 
-    def OutLineVCompound3d(self, *args) -> "TopoDS_Shape" :
+    def OutLineVCompound3d(self):
         """
         :rtype: TopoDS_Shape
 
         """
-        return _HLRBRep.HLRBRep_HLRToShape_OutLineVCompound3d(self, *args)
+        return _HLRBRep.HLRBRep_HLRToShape_OutLineVCompound3d(self)
 
-    def OutLineVCompound(self, *args) -> "TopoDS_Shape" :
+    def OutLineVCompound(self, *args):
         """
         :rtype: TopoDS_Shape
 
@@ -5246,7 +5244,7 @@ class HLRBRep_HLRToShape(object):
         """
         return _HLRBRep.HLRBRep_HLRToShape_OutLineVCompound(self, *args)
 
-    def IsoLineVCompound(self, *args) -> "TopoDS_Shape" :
+    def IsoLineVCompound(self, *args):
         """
         :rtype: TopoDS_Shape
 
@@ -5257,7 +5255,7 @@ class HLRBRep_HLRToShape(object):
         """
         return _HLRBRep.HLRBRep_HLRToShape_IsoLineVCompound(self, *args)
 
-    def HCompound(self, *args) -> "TopoDS_Shape" :
+    def HCompound(self, *args):
         """
         :rtype: TopoDS_Shape
 
@@ -5268,7 +5266,7 @@ class HLRBRep_HLRToShape(object):
         """
         return _HLRBRep.HLRBRep_HLRToShape_HCompound(self, *args)
 
-    def Rg1LineHCompound(self, *args) -> "TopoDS_Shape" :
+    def Rg1LineHCompound(self, *args):
         """
         :rtype: TopoDS_Shape
 
@@ -5279,7 +5277,7 @@ class HLRBRep_HLRToShape(object):
         """
         return _HLRBRep.HLRBRep_HLRToShape_Rg1LineHCompound(self, *args)
 
-    def RgNLineHCompound(self, *args) -> "TopoDS_Shape" :
+    def RgNLineHCompound(self, *args):
         """
         :rtype: TopoDS_Shape
 
@@ -5290,7 +5288,7 @@ class HLRBRep_HLRToShape(object):
         """
         return _HLRBRep.HLRBRep_HLRToShape_RgNLineHCompound(self, *args)
 
-    def OutLineHCompound(self, *args) -> "TopoDS_Shape" :
+    def OutLineHCompound(self, *args):
         """
         :rtype: TopoDS_Shape
 
@@ -5301,7 +5299,7 @@ class HLRBRep_HLRToShape(object):
         """
         return _HLRBRep.HLRBRep_HLRToShape_OutLineHCompound(self, *args)
 
-    def IsoLineHCompound(self, *args) -> "TopoDS_Shape" :
+    def IsoLineHCompound(self, *args):
         """
         :rtype: TopoDS_Shape
 
@@ -5348,23 +5346,23 @@ class HLRBRep_Hider(object):
 
         """
         _HLRBRep.HLRBRep_Hider_swiginit(self,_HLRBRep.new_HLRBRep_Hider(*args))
-    def OwnHiding(self, *args) -> "void" :
+    def OwnHiding(self, *args):
         """
         * own hiding the side face number <FI>.
 
         :param FI:
-        :type FI: int
+        :type FI: Standard_Integer
         :rtype: None
 
         """
         return _HLRBRep.HLRBRep_Hider_OwnHiding(self, *args)
 
-    def Hide(self, *args) -> "void" :
+    def Hide(self, *args):
         """
         * Removes from the edges, the parts hidden by the hiding face number <FI>.
 
         :param FI:
-        :type FI: int
+        :type FI: Standard_Integer
         :param MST:
         :type MST: BRepTopAdaptor_MapOfShapeTool &
         :rtype: None
@@ -5465,7 +5463,7 @@ class HLRBRep_IntConicCurveOfCInter(OCC.IntRes2d.IntRes2d_Intersection):
 
         """
         _HLRBRep.HLRBRep_IntConicCurveOfCInter_swiginit(self,_HLRBRep.new_HLRBRep_IntConicCurveOfCInter(*args))
-    def Perform(self, *args) -> "void" :
+    def Perform(self, *args):
         """
         :param L:
         :type L: gp_Lin2d
@@ -5556,13 +5554,13 @@ HLRBRep_IntConicCurveOfCInter_swigregister(HLRBRep_IntConicCurveOfCInter)
 class HLRBRep_InterCSurf(OCC.IntCurveSurface.IntCurveSurface_Intersection):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _HLRBRep.HLRBRep_InterCSurf_swiginit(self,_HLRBRep.new_HLRBRep_InterCSurf(*args))
-    def Perform(self, *args) -> "void" :
+        _HLRBRep.HLRBRep_InterCSurf_swiginit(self,_HLRBRep.new_HLRBRep_InterCSurf())
+    def Perform(self, *args):
         """
         :param Curve:
         :type Curve: gp_Lin
@@ -5637,7 +5635,7 @@ class HLRBRep_InternalAlgo(OCC.MMgt.MMgt_TShared):
 
         """
         _HLRBRep.HLRBRep_InternalAlgo_swiginit(self,_HLRBRep.new_HLRBRep_InternalAlgo(*args))
-    def Projector(self, *args) -> "HLRAlgo_Projector &" :
+    def Projector(self, *args):
         """
         * set the projector.
 
@@ -5652,16 +5650,16 @@ class HLRBRep_InternalAlgo(OCC.MMgt.MMgt_TShared):
         """
         return _HLRBRep.HLRBRep_InternalAlgo_Projector(self, *args)
 
-    def Update(self, *args) -> "void" :
+    def Update(self):
         """
         * update the DataStructure.
 
         :rtype: None
 
         """
-        return _HLRBRep.HLRBRep_InternalAlgo_Update(self, *args)
+        return _HLRBRep.HLRBRep_InternalAlgo_Update(self)
 
-    def Load(self, *args) -> "void" :
+    def Load(self, *args):
         """
         * add the shape <S>.
 
@@ -5670,7 +5668,17 @@ class HLRBRep_InternalAlgo(OCC.MMgt.MMgt_TShared):
         :param SData:
         :type SData: Handle_MMgt_TShared &
         :param nbIso: default value is 0
-        :type nbIso: int
+        :type nbIso: Standard_Integer
+        :rtype: None
+
+        * add the shape <S>.
+
+        :param S:
+        :type S: Handle_HLRTopoBRep_OutLiner &
+        :param SData:
+        :type SData: Handle_MMgt_TShared &
+        :param nbIso: default value is 0
+        :type nbIso: Standard_Integer
         :rtype: None
 
         * add the shape <S>.
@@ -5678,13 +5686,21 @@ class HLRBRep_InternalAlgo(OCC.MMgt.MMgt_TShared):
         :param S:
         :type S: Handle_HLRTopoBRep_OutLiner &
         :param nbIso: default value is 0
-        :type nbIso: int
+        :type nbIso: Standard_Integer
+        :rtype: None
+
+        * add the shape <S>.
+
+        :param S:
+        :type S: Handle_HLRTopoBRep_OutLiner &
+        :param nbIso: default value is 0
+        :type nbIso: Standard_Integer
         :rtype: None
 
         """
         return _HLRBRep.HLRBRep_InternalAlgo_Load(self, *args)
 
-    def Index(self, *args) -> "Standard_Integer" :
+    def Index(self, *args):
         """
         * return the index of the Shape <S> and return 0 if the Shape <S> is not found.
 
@@ -5695,23 +5711,23 @@ class HLRBRep_InternalAlgo(OCC.MMgt.MMgt_TShared):
         """
         return _HLRBRep.HLRBRep_InternalAlgo_Index(self, *args)
 
-    def Remove(self, *args) -> "void" :
+    def Remove(self, *args):
         """
         * remove the Shape of Index <I>.
 
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :rtype: None
 
         """
         return _HLRBRep.HLRBRep_InternalAlgo_Remove(self, *args)
 
-    def ShapeData(self, *args) -> "void" :
+    def ShapeData(self, *args):
         """
         * Change the Shape Data of the Shape of index <I>.
 
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :param SData:
         :type SData: Handle_MMgt_TShared &
         :rtype: None
@@ -5719,39 +5735,39 @@ class HLRBRep_InternalAlgo(OCC.MMgt.MMgt_TShared):
         """
         return _HLRBRep.HLRBRep_InternalAlgo_ShapeData(self, *args)
 
-    def SeqOfShapeBounds(self, *args) -> "HLRBRep_SeqOfShapeBounds &" :
+    def SeqOfShapeBounds(self):
         """
         :rtype: HLRBRep_SeqOfShapeBounds
 
         """
-        return _HLRBRep.HLRBRep_InternalAlgo_SeqOfShapeBounds(self, *args)
+        return _HLRBRep.HLRBRep_InternalAlgo_SeqOfShapeBounds(self)
 
-    def NbShapes(self, *args) -> "Standard_Integer" :
+    def NbShapes(self):
         """
         :rtype: int
 
         """
-        return _HLRBRep.HLRBRep_InternalAlgo_NbShapes(self, *args)
+        return _HLRBRep.HLRBRep_InternalAlgo_NbShapes(self)
 
-    def ShapeBounds(self, *args) -> "HLRBRep_ShapeBounds &" :
+    def ShapeBounds(self, *args):
         """
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :rtype: HLRBRep_ShapeBounds
 
         """
         return _HLRBRep.HLRBRep_InternalAlgo_ShapeBounds(self, *args)
 
-    def InitEdgeStatus(self, *args) -> "void" :
+    def InitEdgeStatus(self):
         """
         * init the status of the selected edges depending of the back faces of a closed shell.
 
         :rtype: None
 
         """
-        return _HLRBRep.HLRBRep_InternalAlgo_InitEdgeStatus(self, *args)
+        return _HLRBRep.HLRBRep_InternalAlgo_InitEdgeStatus(self)
 
-    def Select(self, *args) -> "void" :
+    def Select(self, *args):
         """
         * select all the DataStructure.
 
@@ -5760,35 +5776,35 @@ class HLRBRep_InternalAlgo(OCC.MMgt.MMgt_TShared):
         * select only the Shape of index <I>.
 
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :rtype: None
 
         """
         return _HLRBRep.HLRBRep_InternalAlgo_Select(self, *args)
 
-    def SelectEdge(self, *args) -> "void" :
+    def SelectEdge(self, *args):
         """
         * select only the edges of the Shape <S>.
 
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :rtype: None
 
         """
         return _HLRBRep.HLRBRep_InternalAlgo_SelectEdge(self, *args)
 
-    def SelectFace(self, *args) -> "void" :
+    def SelectFace(self, *args):
         """
         * select only the faces of the Shape <S>.
 
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :rtype: None
 
         """
         return _HLRBRep.HLRBRep_InternalAlgo_SelectFace(self, *args)
 
-    def ShowAll(self, *args) -> "void" :
+    def ShowAll(self, *args):
         """
         * set to visible all the edges.
 
@@ -5797,13 +5813,13 @@ class HLRBRep_InternalAlgo(OCC.MMgt.MMgt_TShared):
         * set to visible all the edges of the Shape <S>.
 
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :rtype: None
 
         """
         return _HLRBRep.HLRBRep_InternalAlgo_ShowAll(self, *args)
 
-    def HideAll(self, *args) -> "void" :
+    def HideAll(self, *args):
         """
         * set to hide all the edges.
 
@@ -5812,22 +5828,22 @@ class HLRBRep_InternalAlgo(OCC.MMgt.MMgt_TShared):
         * set to hide all the edges of the Shape <S>.
 
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :rtype: None
 
         """
         return _HLRBRep.HLRBRep_InternalAlgo_HideAll(self, *args)
 
-    def PartialHide(self, *args) -> "void" :
+    def PartialHide(self):
         """
         * own hiding of all the shapes of the DataStructure without hiding by each other.
 
         :rtype: None
 
         """
-        return _HLRBRep.HLRBRep_InternalAlgo_PartialHide(self, *args)
+        return _HLRBRep.HLRBRep_InternalAlgo_PartialHide(self)
 
-    def Hide(self, *args) -> "void" :
+    def Hide(self, *args):
         """
         * hide all the DataStructure.
 
@@ -5836,21 +5852,21 @@ class HLRBRep_InternalAlgo(OCC.MMgt.MMgt_TShared):
         * hide the Shape <S> by itself.
 
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :rtype: None
 
         * hide the Shape <S1> by the shape <S2>.
 
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :param J:
-        :type J: int
+        :type J: Standard_Integer
         :rtype: None
 
         """
         return _HLRBRep.HLRBRep_InternalAlgo_Hide(self, *args)
 
-    def Debug(self, *args) -> "Standard_Boolean" :
+    def Debug(self, *args):
         """
         :param deb:
         :type deb: bool
@@ -5861,18 +5877,18 @@ class HLRBRep_InternalAlgo(OCC.MMgt.MMgt_TShared):
         """
         return _HLRBRep.HLRBRep_InternalAlgo_Debug(self, *args)
 
-    def DataStructure(self, *args) -> "Handle_HLRBRep_Data" :
+    def DataStructure(self):
         """
         :rtype: Handle_HLRBRep_Data
 
         """
-        return _HLRBRep.HLRBRep_InternalAlgo_DataStructure(self, *args)
+        return _HLRBRep.HLRBRep_InternalAlgo_DataStructure(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(HLRBRep_InternalAlgo self)"""
         return _HLRBRep.HLRBRep_InternalAlgo__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_HLRBRep_InternalAlgo" :
+    def GetHandle(self):
         """GetHandle(HLRBRep_InternalAlgo self) -> Handle_HLRBRep_InternalAlgo"""
         return _HLRBRep.HLRBRep_InternalAlgo_GetHandle(self)
 
@@ -5929,20 +5945,20 @@ Handle_HLRBRep_InternalAlgo._kill_pointed = new_instancemethod(_HLRBRep.Handle_H
 Handle_HLRBRep_InternalAlgo_swigregister = _HLRBRep.Handle_HLRBRep_InternalAlgo_swigregister
 Handle_HLRBRep_InternalAlgo_swigregister(Handle_HLRBRep_InternalAlgo)
 
-def Handle_HLRBRep_InternalAlgo_DownCast(*args) -> "Handle_HLRBRep_InternalAlgo const" :
+def Handle_HLRBRep_InternalAlgo_DownCast(*args):
   return _HLRBRep.Handle_HLRBRep_InternalAlgo_DownCast(*args)
 Handle_HLRBRep_InternalAlgo_DownCast = _HLRBRep.Handle_HLRBRep_InternalAlgo_DownCast
 
 class HLRBRep_Intersector(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _HLRBRep.HLRBRep_Intersector_swiginit(self,_HLRBRep.new_HLRBRep_Intersector(*args))
-    def SimulateOnePoint(self, *args) -> "void" :
+        _HLRBRep.HLRBRep_Intersector_swiginit(self,_HLRBRep.new_HLRBRep_Intersector())
+    def SimulateOnePoint(self, *args):
         """
         * Create a single IntersectionPoint (U on A1) (V on A2) The point is middle on both curves.
 
@@ -5959,7 +5975,7 @@ class HLRBRep_Intersector(object):
         """
         return _HLRBRep.HLRBRep_Intersector_SimulateOnePoint(self, *args)
 
-    def Load(self, *args) -> "void" :
+    def Load(self, *args):
         """
         :param A:
         :type A: Standard_Address &
@@ -5968,7 +5984,7 @@ class HLRBRep_Intersector(object):
         """
         return _HLRBRep.HLRBRep_Intersector_Load(self, *args)
 
-    def Perform(self, *args) -> "void" :
+    def Perform(self, *args):
         """
         * Performs the auto intersection of an edge. The edge domain is cutted at start with da1*(b-a) and at end with db1*(b-a).
 
@@ -5983,7 +5999,7 @@ class HLRBRep_Intersector(object):
         * Performs the intersection between the two edges. The edges domains are cutted at start with da*(b-a) and at end with db*(b-a).
 
         :param nA:
-        :type nA: int
+        :type nA: Standard_Integer
         :param A1:
         :type A1: Standard_Address
         :param da1:
@@ -5991,7 +6007,7 @@ class HLRBRep_Intersector(object):
         :param db1:
         :type db1: float
         :param nB:
-        :type nB: int
+        :type nB: Standard_Integer
         :param A2:
         :type A2: Standard_Address
         :param da2:
@@ -6011,69 +6027,69 @@ class HLRBRep_Intersector(object):
         """
         return _HLRBRep.HLRBRep_Intersector_Perform(self, *args)
 
-    def IsDone(self, *args) -> "Standard_Boolean" :
+    def IsDone(self):
         """
         :rtype: bool
 
         """
-        return _HLRBRep.HLRBRep_Intersector_IsDone(self, *args)
+        return _HLRBRep.HLRBRep_Intersector_IsDone(self)
 
-    def NbPoints(self, *args) -> "Standard_Integer" :
+    def NbPoints(self):
         """
         :rtype: int
 
         """
-        return _HLRBRep.HLRBRep_Intersector_NbPoints(self, *args)
+        return _HLRBRep.HLRBRep_Intersector_NbPoints(self)
 
-    def Point(self, *args) -> "IntRes2d_IntersectionPoint const &" :
+    def Point(self, *args):
         """
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :rtype: IntRes2d_IntersectionPoint
 
         """
         return _HLRBRep.HLRBRep_Intersector_Point(self, *args)
 
-    def CSPoint(self, *args) -> "IntCurveSurface_IntersectionPoint const &" :
+    def CSPoint(self, *args):
         """
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :rtype: IntCurveSurface_IntersectionPoint
 
         """
         return _HLRBRep.HLRBRep_Intersector_CSPoint(self, *args)
 
-    def NbSegments(self, *args) -> "Standard_Integer" :
+    def NbSegments(self):
         """
         :rtype: int
 
         """
-        return _HLRBRep.HLRBRep_Intersector_NbSegments(self, *args)
+        return _HLRBRep.HLRBRep_Intersector_NbSegments(self)
 
-    def Segment(self, *args) -> "IntRes2d_IntersectionSegment const &" :
+    def Segment(self, *args):
         """
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :rtype: IntRes2d_IntersectionSegment
 
         """
         return _HLRBRep.HLRBRep_Intersector_Segment(self, *args)
 
-    def CSSegment(self, *args) -> "IntCurveSurface_IntersectionSegment const &" :
+    def CSSegment(self, *args):
         """
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :rtype: IntCurveSurface_IntersectionSegment
 
         """
         return _HLRBRep.HLRBRep_Intersector_CSSegment(self, *args)
 
-    def Destroy(self, *args) -> "void" :
+    def Destroy(self):
         """
         :rtype: None
 
         """
-        return _HLRBRep.HLRBRep_Intersector_Destroy(self, *args)
+        return _HLRBRep.HLRBRep_Intersector_Destroy(self)
 
     def __del__(self):
     	try:
@@ -6100,8 +6116,9 @@ HLRBRep_Intersector_swigregister(HLRBRep_Intersector)
 
 class HLRBRep_LineTool(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
+    def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def FirstParameter(*args) -> "Standard_Real" :
+    def FirstParameter(*args):
         """
         :param C:
         :type C: gp_Lin
@@ -6111,7 +6128,7 @@ class HLRBRep_LineTool(object):
         return _HLRBRep.HLRBRep_LineTool_FirstParameter(*args)
 
     FirstParameter = staticmethod(FirstParameter)
-    def LastParameter(*args) -> "Standard_Real" :
+    def LastParameter(*args):
         """
         :param C:
         :type C: gp_Lin
@@ -6121,7 +6138,7 @@ class HLRBRep_LineTool(object):
         return _HLRBRep.HLRBRep_LineTool_LastParameter(*args)
 
     LastParameter = staticmethod(LastParameter)
-    def Continuity(*args) -> "GeomAbs_Shape" :
+    def Continuity(*args):
         """
         :param C:
         :type C: gp_Lin
@@ -6131,7 +6148,7 @@ class HLRBRep_LineTool(object):
         return _HLRBRep.HLRBRep_LineTool_Continuity(*args)
 
     Continuity = staticmethod(Continuity)
-    def NbIntervals(*args) -> "Standard_Integer" :
+    def NbIntervals(*args):
         """
         * If necessary, breaks the line in intervals of continuity <S>. And returns the number of intervals.
 
@@ -6145,7 +6162,7 @@ class HLRBRep_LineTool(object):
         return _HLRBRep.HLRBRep_LineTool_NbIntervals(*args)
 
     NbIntervals = staticmethod(NbIntervals)
-    def Intervals(*args) -> "void" :
+    def Intervals(*args):
         """
         * Sets the current working interval.
 
@@ -6161,7 +6178,7 @@ class HLRBRep_LineTool(object):
         return _HLRBRep.HLRBRep_LineTool_Intervals(*args)
 
     Intervals = staticmethod(Intervals)
-    def IntervalFirst(*args) -> "Standard_Real" :
+    def IntervalFirst(*args):
         """
         * Returns the first parameter of the current interval.
 
@@ -6173,7 +6190,7 @@ class HLRBRep_LineTool(object):
         return _HLRBRep.HLRBRep_LineTool_IntervalFirst(*args)
 
     IntervalFirst = staticmethod(IntervalFirst)
-    def IntervalLast(*args) -> "Standard_Real" :
+    def IntervalLast(*args):
         """
         * Returns the last parameter of the current interval.
 
@@ -6185,7 +6202,7 @@ class HLRBRep_LineTool(object):
         return _HLRBRep.HLRBRep_LineTool_IntervalLast(*args)
 
     IntervalLast = staticmethod(IntervalLast)
-    def IntervalContinuity(*args) -> "GeomAbs_Shape" :
+    def IntervalContinuity(*args):
         """
         :param C:
         :type C: gp_Lin
@@ -6195,7 +6212,7 @@ class HLRBRep_LineTool(object):
         return _HLRBRep.HLRBRep_LineTool_IntervalContinuity(*args)
 
     IntervalContinuity = staticmethod(IntervalContinuity)
-    def IsClosed(*args) -> "Standard_Boolean" :
+    def IsClosed(*args):
         """
         :param C:
         :type C: gp_Lin
@@ -6205,7 +6222,7 @@ class HLRBRep_LineTool(object):
         return _HLRBRep.HLRBRep_LineTool_IsClosed(*args)
 
     IsClosed = staticmethod(IsClosed)
-    def IsPeriodic(*args) -> "Standard_Boolean" :
+    def IsPeriodic(*args):
         """
         :param C:
         :type C: gp_Lin
@@ -6215,7 +6232,7 @@ class HLRBRep_LineTool(object):
         return _HLRBRep.HLRBRep_LineTool_IsPeriodic(*args)
 
     IsPeriodic = staticmethod(IsPeriodic)
-    def Period(*args) -> "Standard_Real" :
+    def Period(*args):
         """
         :param C:
         :type C: gp_Lin
@@ -6225,7 +6242,7 @@ class HLRBRep_LineTool(object):
         return _HLRBRep.HLRBRep_LineTool_Period(*args)
 
     Period = staticmethod(Period)
-    def Value(*args) -> "gp_Pnt" :
+    def Value(*args):
         """
         * Computes the point of parameter U on the line.
 
@@ -6239,7 +6256,7 @@ class HLRBRep_LineTool(object):
         return _HLRBRep.HLRBRep_LineTool_Value(*args)
 
     Value = staticmethod(Value)
-    def D0(*args) -> "void" :
+    def D0(*args):
         """
         * Computes the point of parameter U on the line.
 
@@ -6255,7 +6272,7 @@ class HLRBRep_LineTool(object):
         return _HLRBRep.HLRBRep_LineTool_D0(*args)
 
     D0 = staticmethod(D0)
-    def D1(*args) -> "void" :
+    def D1(*args):
         """
         * Computes the point of parameter U on the line with its first derivative. Raised if the continuity of the current interval is not C1.
 
@@ -6273,7 +6290,7 @@ class HLRBRep_LineTool(object):
         return _HLRBRep.HLRBRep_LineTool_D1(*args)
 
     D1 = staticmethod(D1)
-    def D2(*args) -> "void" :
+    def D2(*args):
         """
         * Returns the point P of parameter U, the first and second derivatives V1 and V2. Raised if the continuity of the current interval is not C2.
 
@@ -6293,7 +6310,7 @@ class HLRBRep_LineTool(object):
         return _HLRBRep.HLRBRep_LineTool_D2(*args)
 
     D2 = staticmethod(D2)
-    def D3(*args) -> "void" :
+    def D3(*args):
         """
         * Returns the point P of parameter U, the first, the second and the third derivative. Raised if the continuity of the current interval is not C3.
 
@@ -6315,7 +6332,7 @@ class HLRBRep_LineTool(object):
         return _HLRBRep.HLRBRep_LineTool_D3(*args)
 
     D3 = staticmethod(D3)
-    def DN(*args) -> "gp_Vec" :
+    def DN(*args):
         """
         * The returned vector gives the value of the derivative for the order of derivation N. Raised if the continuity of the current interval is not CN. Raised if N < 1.
 
@@ -6324,14 +6341,14 @@ class HLRBRep_LineTool(object):
         :param U:
         :type U: float
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :rtype: gp_Vec
 
         """
         return _HLRBRep.HLRBRep_LineTool_DN(*args)
 
     DN = staticmethod(DN)
-    def Resolution(*args) -> "Standard_Real" :
+    def Resolution(*args):
         """
         * Returns the parametric resolution corresponding  to the real space resolution <R3d>.
 
@@ -6345,7 +6362,7 @@ class HLRBRep_LineTool(object):
         return _HLRBRep.HLRBRep_LineTool_Resolution(*args)
 
     Resolution = staticmethod(Resolution)
-    def GetType(*args) -> "GeomAbs_CurveType" :
+    def GetType(*args):
         """
         * Returns the type of the line in the current interval : Line, Circle, Ellipse, Hyperbola, Parabola, BezierCurve, BSplineCurve, OtherCurve.
 
@@ -6357,7 +6374,7 @@ class HLRBRep_LineTool(object):
         return _HLRBRep.HLRBRep_LineTool_GetType(*args)
 
     GetType = staticmethod(GetType)
-    def Line(*args) -> "gp_Lin" :
+    def Line(*args):
         """
         :param C:
         :type C: gp_Lin
@@ -6367,7 +6384,7 @@ class HLRBRep_LineTool(object):
         return _HLRBRep.HLRBRep_LineTool_Line(*args)
 
     Line = staticmethod(Line)
-    def Circle(*args) -> "gp_Circ" :
+    def Circle(*args):
         """
         :param C:
         :type C: gp_Lin
@@ -6377,7 +6394,7 @@ class HLRBRep_LineTool(object):
         return _HLRBRep.HLRBRep_LineTool_Circle(*args)
 
     Circle = staticmethod(Circle)
-    def Ellipse(*args) -> "gp_Elips" :
+    def Ellipse(*args):
         """
         :param C:
         :type C: gp_Lin
@@ -6387,7 +6404,7 @@ class HLRBRep_LineTool(object):
         return _HLRBRep.HLRBRep_LineTool_Ellipse(*args)
 
     Ellipse = staticmethod(Ellipse)
-    def Hyperbola(*args) -> "gp_Hypr" :
+    def Hyperbola(*args):
         """
         :param C:
         :type C: gp_Lin
@@ -6397,7 +6414,7 @@ class HLRBRep_LineTool(object):
         return _HLRBRep.HLRBRep_LineTool_Hyperbola(*args)
 
     Hyperbola = staticmethod(Hyperbola)
-    def Parabola(*args) -> "gp_Parab" :
+    def Parabola(*args):
         """
         :param C:
         :type C: gp_Lin
@@ -6407,7 +6424,7 @@ class HLRBRep_LineTool(object):
         return _HLRBRep.HLRBRep_LineTool_Parabola(*args)
 
     Parabola = staticmethod(Parabola)
-    def Bezier(*args) -> "Handle_Geom_BezierCurve" :
+    def Bezier(*args):
         """
         :param C:
         :type C: gp_Lin
@@ -6417,7 +6434,7 @@ class HLRBRep_LineTool(object):
         return _HLRBRep.HLRBRep_LineTool_Bezier(*args)
 
     Bezier = staticmethod(Bezier)
-    def BSpline(*args) -> "Handle_Geom_BSplineCurve" :
+    def BSpline(*args):
         """
         :param C:
         :type C: gp_Lin
@@ -6427,7 +6444,7 @@ class HLRBRep_LineTool(object):
         return _HLRBRep.HLRBRep_LineTool_BSpline(*args)
 
     BSpline = staticmethod(BSpline)
-    def Degree(*args) -> "Standard_Integer" :
+    def Degree(*args):
         """
         :param C:
         :type C: gp_Lin
@@ -6437,7 +6454,7 @@ class HLRBRep_LineTool(object):
         return _HLRBRep.HLRBRep_LineTool_Degree(*args)
 
     Degree = staticmethod(Degree)
-    def NbPoles(*args) -> "Standard_Integer" :
+    def NbPoles(*args):
         """
         :param C:
         :type C: gp_Lin
@@ -6447,7 +6464,7 @@ class HLRBRep_LineTool(object):
         return _HLRBRep.HLRBRep_LineTool_NbPoles(*args)
 
     NbPoles = staticmethod(NbPoles)
-    def Poles(*args) -> "void" :
+    def Poles(*args):
         """
         :param C:
         :type C: gp_Lin
@@ -6459,7 +6476,7 @@ class HLRBRep_LineTool(object):
         return _HLRBRep.HLRBRep_LineTool_Poles(*args)
 
     Poles = staticmethod(Poles)
-    def IsRational(*args) -> "Standard_Boolean" :
+    def IsRational(*args):
         """
         :param C:
         :type C: gp_Lin
@@ -6469,7 +6486,7 @@ class HLRBRep_LineTool(object):
         return _HLRBRep.HLRBRep_LineTool_IsRational(*args)
 
     IsRational = staticmethod(IsRational)
-    def PolesAndWeights(*args) -> "void" :
+    def PolesAndWeights(*args):
         """
         :param C:
         :type C: gp_Lin
@@ -6483,7 +6500,7 @@ class HLRBRep_LineTool(object):
         return _HLRBRep.HLRBRep_LineTool_PolesAndWeights(*args)
 
     PolesAndWeights = staticmethod(PolesAndWeights)
-    def NbKnots(*args) -> "Standard_Integer" :
+    def NbKnots(*args):
         """
         :param C:
         :type C: gp_Lin
@@ -6493,7 +6510,7 @@ class HLRBRep_LineTool(object):
         return _HLRBRep.HLRBRep_LineTool_NbKnots(*args)
 
     NbKnots = staticmethod(NbKnots)
-    def KnotsAndMultiplicities(*args) -> "void" :
+    def KnotsAndMultiplicities(*args):
         """
         :param C:
         :type C: gp_Lin
@@ -6507,7 +6524,7 @@ class HLRBRep_LineTool(object):
         return _HLRBRep.HLRBRep_LineTool_KnotsAndMultiplicities(*args)
 
     KnotsAndMultiplicities = staticmethod(KnotsAndMultiplicities)
-    def NbSamples(*args) -> "Standard_Integer" :
+    def NbSamples(*args):
         """
         :param C:
         :type C: gp_Lin
@@ -6521,7 +6538,7 @@ class HLRBRep_LineTool(object):
         return _HLRBRep.HLRBRep_LineTool_NbSamples(*args)
 
     NbSamples = staticmethod(NbSamples)
-    def SamplePars(*args) -> "void" :
+    def SamplePars(*args):
         """
         :param C:
         :type C: gp_Lin
@@ -6532,7 +6549,7 @@ class HLRBRep_LineTool(object):
         :param Defl:
         :type Defl: float
         :param NbMin:
-        :type NbMin: int
+        :type NbMin: Standard_Integer
         :param Pars:
         :type Pars: Handle_TColStd_HArray1OfReal &
         :rtype: void
@@ -6541,8 +6558,6 @@ class HLRBRep_LineTool(object):
         return _HLRBRep.HLRBRep_LineTool_SamplePars(*args)
 
     SamplePars = staticmethod(SamplePars)
-    def __init__(self): 
-        _HLRBRep.HLRBRep_LineTool_swiginit(self,_HLRBRep.new_HLRBRep_LineTool())
     def __del__(self):
     	try:
     		self.thisown = False
@@ -6555,7 +6570,7 @@ HLRBRep_LineTool._kill_pointed = new_instancemethod(_HLRBRep.HLRBRep_LineTool__k
 HLRBRep_LineTool_swigregister = _HLRBRep.HLRBRep_LineTool_swigregister
 HLRBRep_LineTool_swigregister(HLRBRep_LineTool)
 
-def HLRBRep_LineTool_FirstParameter(*args) -> "Standard_Real" :
+def HLRBRep_LineTool_FirstParameter(*args):
   """
     :param C:
     :type C: gp_Lin
@@ -6564,7 +6579,7 @@ def HLRBRep_LineTool_FirstParameter(*args) -> "Standard_Real" :
     """
   return _HLRBRep.HLRBRep_LineTool_FirstParameter(*args)
 
-def HLRBRep_LineTool_LastParameter(*args) -> "Standard_Real" :
+def HLRBRep_LineTool_LastParameter(*args):
   """
     :param C:
     :type C: gp_Lin
@@ -6573,7 +6588,7 @@ def HLRBRep_LineTool_LastParameter(*args) -> "Standard_Real" :
     """
   return _HLRBRep.HLRBRep_LineTool_LastParameter(*args)
 
-def HLRBRep_LineTool_Continuity(*args) -> "GeomAbs_Shape" :
+def HLRBRep_LineTool_Continuity(*args):
   """
     :param C:
     :type C: gp_Lin
@@ -6582,7 +6597,7 @@ def HLRBRep_LineTool_Continuity(*args) -> "GeomAbs_Shape" :
     """
   return _HLRBRep.HLRBRep_LineTool_Continuity(*args)
 
-def HLRBRep_LineTool_NbIntervals(*args) -> "Standard_Integer" :
+def HLRBRep_LineTool_NbIntervals(*args):
   """
     * If necessary, breaks the line in intervals of continuity <S>. And returns the number of intervals.
 
@@ -6595,7 +6610,7 @@ def HLRBRep_LineTool_NbIntervals(*args) -> "Standard_Integer" :
     """
   return _HLRBRep.HLRBRep_LineTool_NbIntervals(*args)
 
-def HLRBRep_LineTool_Intervals(*args) -> "void" :
+def HLRBRep_LineTool_Intervals(*args):
   """
     * Sets the current working interval.
 
@@ -6610,7 +6625,7 @@ def HLRBRep_LineTool_Intervals(*args) -> "void" :
     """
   return _HLRBRep.HLRBRep_LineTool_Intervals(*args)
 
-def HLRBRep_LineTool_IntervalFirst(*args) -> "Standard_Real" :
+def HLRBRep_LineTool_IntervalFirst(*args):
   """
     * Returns the first parameter of the current interval.
 
@@ -6621,7 +6636,7 @@ def HLRBRep_LineTool_IntervalFirst(*args) -> "Standard_Real" :
     """
   return _HLRBRep.HLRBRep_LineTool_IntervalFirst(*args)
 
-def HLRBRep_LineTool_IntervalLast(*args) -> "Standard_Real" :
+def HLRBRep_LineTool_IntervalLast(*args):
   """
     * Returns the last parameter of the current interval.
 
@@ -6632,7 +6647,7 @@ def HLRBRep_LineTool_IntervalLast(*args) -> "Standard_Real" :
     """
   return _HLRBRep.HLRBRep_LineTool_IntervalLast(*args)
 
-def HLRBRep_LineTool_IntervalContinuity(*args) -> "GeomAbs_Shape" :
+def HLRBRep_LineTool_IntervalContinuity(*args):
   """
     :param C:
     :type C: gp_Lin
@@ -6641,7 +6656,7 @@ def HLRBRep_LineTool_IntervalContinuity(*args) -> "GeomAbs_Shape" :
     """
   return _HLRBRep.HLRBRep_LineTool_IntervalContinuity(*args)
 
-def HLRBRep_LineTool_IsClosed(*args) -> "Standard_Boolean" :
+def HLRBRep_LineTool_IsClosed(*args):
   """
     :param C:
     :type C: gp_Lin
@@ -6650,7 +6665,7 @@ def HLRBRep_LineTool_IsClosed(*args) -> "Standard_Boolean" :
     """
   return _HLRBRep.HLRBRep_LineTool_IsClosed(*args)
 
-def HLRBRep_LineTool_IsPeriodic(*args) -> "Standard_Boolean" :
+def HLRBRep_LineTool_IsPeriodic(*args):
   """
     :param C:
     :type C: gp_Lin
@@ -6659,7 +6674,7 @@ def HLRBRep_LineTool_IsPeriodic(*args) -> "Standard_Boolean" :
     """
   return _HLRBRep.HLRBRep_LineTool_IsPeriodic(*args)
 
-def HLRBRep_LineTool_Period(*args) -> "Standard_Real" :
+def HLRBRep_LineTool_Period(*args):
   """
     :param C:
     :type C: gp_Lin
@@ -6668,7 +6683,7 @@ def HLRBRep_LineTool_Period(*args) -> "Standard_Real" :
     """
   return _HLRBRep.HLRBRep_LineTool_Period(*args)
 
-def HLRBRep_LineTool_Value(*args) -> "gp_Pnt" :
+def HLRBRep_LineTool_Value(*args):
   """
     * Computes the point of parameter U on the line.
 
@@ -6681,7 +6696,7 @@ def HLRBRep_LineTool_Value(*args) -> "gp_Pnt" :
     """
   return _HLRBRep.HLRBRep_LineTool_Value(*args)
 
-def HLRBRep_LineTool_D0(*args) -> "void" :
+def HLRBRep_LineTool_D0(*args):
   """
     * Computes the point of parameter U on the line.
 
@@ -6696,7 +6711,7 @@ def HLRBRep_LineTool_D0(*args) -> "void" :
     """
   return _HLRBRep.HLRBRep_LineTool_D0(*args)
 
-def HLRBRep_LineTool_D1(*args) -> "void" :
+def HLRBRep_LineTool_D1(*args):
   """
     * Computes the point of parameter U on the line with its first derivative. Raised if the continuity of the current interval is not C1.
 
@@ -6713,7 +6728,7 @@ def HLRBRep_LineTool_D1(*args) -> "void" :
     """
   return _HLRBRep.HLRBRep_LineTool_D1(*args)
 
-def HLRBRep_LineTool_D2(*args) -> "void" :
+def HLRBRep_LineTool_D2(*args):
   """
     * Returns the point P of parameter U, the first and second derivatives V1 and V2. Raised if the continuity of the current interval is not C2.
 
@@ -6732,7 +6747,7 @@ def HLRBRep_LineTool_D2(*args) -> "void" :
     """
   return _HLRBRep.HLRBRep_LineTool_D2(*args)
 
-def HLRBRep_LineTool_D3(*args) -> "void" :
+def HLRBRep_LineTool_D3(*args):
   """
     * Returns the point P of parameter U, the first, the second and the third derivative. Raised if the continuity of the current interval is not C3.
 
@@ -6753,7 +6768,7 @@ def HLRBRep_LineTool_D3(*args) -> "void" :
     """
   return _HLRBRep.HLRBRep_LineTool_D3(*args)
 
-def HLRBRep_LineTool_DN(*args) -> "gp_Vec" :
+def HLRBRep_LineTool_DN(*args):
   """
     * The returned vector gives the value of the derivative for the order of derivation N. Raised if the continuity of the current interval is not CN. Raised if N < 1.
 
@@ -6762,13 +6777,13 @@ def HLRBRep_LineTool_DN(*args) -> "gp_Vec" :
     :param U:
     :type U: float
     :param N:
-    :type N: int
+    :type N: Standard_Integer
     :rtype: gp_Vec
 
     """
   return _HLRBRep.HLRBRep_LineTool_DN(*args)
 
-def HLRBRep_LineTool_Resolution(*args) -> "Standard_Real" :
+def HLRBRep_LineTool_Resolution(*args):
   """
     * Returns the parametric resolution corresponding  to the real space resolution <R3d>.
 
@@ -6781,7 +6796,7 @@ def HLRBRep_LineTool_Resolution(*args) -> "Standard_Real" :
     """
   return _HLRBRep.HLRBRep_LineTool_Resolution(*args)
 
-def HLRBRep_LineTool_GetType(*args) -> "GeomAbs_CurveType" :
+def HLRBRep_LineTool_GetType(*args):
   """
     * Returns the type of the line in the current interval : Line, Circle, Ellipse, Hyperbola, Parabola, BezierCurve, BSplineCurve, OtherCurve.
 
@@ -6792,7 +6807,7 @@ def HLRBRep_LineTool_GetType(*args) -> "GeomAbs_CurveType" :
     """
   return _HLRBRep.HLRBRep_LineTool_GetType(*args)
 
-def HLRBRep_LineTool_Line(*args) -> "gp_Lin" :
+def HLRBRep_LineTool_Line(*args):
   """
     :param C:
     :type C: gp_Lin
@@ -6801,7 +6816,7 @@ def HLRBRep_LineTool_Line(*args) -> "gp_Lin" :
     """
   return _HLRBRep.HLRBRep_LineTool_Line(*args)
 
-def HLRBRep_LineTool_Circle(*args) -> "gp_Circ" :
+def HLRBRep_LineTool_Circle(*args):
   """
     :param C:
     :type C: gp_Lin
@@ -6810,7 +6825,7 @@ def HLRBRep_LineTool_Circle(*args) -> "gp_Circ" :
     """
   return _HLRBRep.HLRBRep_LineTool_Circle(*args)
 
-def HLRBRep_LineTool_Ellipse(*args) -> "gp_Elips" :
+def HLRBRep_LineTool_Ellipse(*args):
   """
     :param C:
     :type C: gp_Lin
@@ -6819,7 +6834,7 @@ def HLRBRep_LineTool_Ellipse(*args) -> "gp_Elips" :
     """
   return _HLRBRep.HLRBRep_LineTool_Ellipse(*args)
 
-def HLRBRep_LineTool_Hyperbola(*args) -> "gp_Hypr" :
+def HLRBRep_LineTool_Hyperbola(*args):
   """
     :param C:
     :type C: gp_Lin
@@ -6828,7 +6843,7 @@ def HLRBRep_LineTool_Hyperbola(*args) -> "gp_Hypr" :
     """
   return _HLRBRep.HLRBRep_LineTool_Hyperbola(*args)
 
-def HLRBRep_LineTool_Parabola(*args) -> "gp_Parab" :
+def HLRBRep_LineTool_Parabola(*args):
   """
     :param C:
     :type C: gp_Lin
@@ -6837,7 +6852,7 @@ def HLRBRep_LineTool_Parabola(*args) -> "gp_Parab" :
     """
   return _HLRBRep.HLRBRep_LineTool_Parabola(*args)
 
-def HLRBRep_LineTool_Bezier(*args) -> "Handle_Geom_BezierCurve" :
+def HLRBRep_LineTool_Bezier(*args):
   """
     :param C:
     :type C: gp_Lin
@@ -6846,7 +6861,7 @@ def HLRBRep_LineTool_Bezier(*args) -> "Handle_Geom_BezierCurve" :
     """
   return _HLRBRep.HLRBRep_LineTool_Bezier(*args)
 
-def HLRBRep_LineTool_BSpline(*args) -> "Handle_Geom_BSplineCurve" :
+def HLRBRep_LineTool_BSpline(*args):
   """
     :param C:
     :type C: gp_Lin
@@ -6855,7 +6870,7 @@ def HLRBRep_LineTool_BSpline(*args) -> "Handle_Geom_BSplineCurve" :
     """
   return _HLRBRep.HLRBRep_LineTool_BSpline(*args)
 
-def HLRBRep_LineTool_Degree(*args) -> "Standard_Integer" :
+def HLRBRep_LineTool_Degree(*args):
   """
     :param C:
     :type C: gp_Lin
@@ -6864,7 +6879,7 @@ def HLRBRep_LineTool_Degree(*args) -> "Standard_Integer" :
     """
   return _HLRBRep.HLRBRep_LineTool_Degree(*args)
 
-def HLRBRep_LineTool_NbPoles(*args) -> "Standard_Integer" :
+def HLRBRep_LineTool_NbPoles(*args):
   """
     :param C:
     :type C: gp_Lin
@@ -6873,7 +6888,7 @@ def HLRBRep_LineTool_NbPoles(*args) -> "Standard_Integer" :
     """
   return _HLRBRep.HLRBRep_LineTool_NbPoles(*args)
 
-def HLRBRep_LineTool_Poles(*args) -> "void" :
+def HLRBRep_LineTool_Poles(*args):
   """
     :param C:
     :type C: gp_Lin
@@ -6884,7 +6899,7 @@ def HLRBRep_LineTool_Poles(*args) -> "void" :
     """
   return _HLRBRep.HLRBRep_LineTool_Poles(*args)
 
-def HLRBRep_LineTool_IsRational(*args) -> "Standard_Boolean" :
+def HLRBRep_LineTool_IsRational(*args):
   """
     :param C:
     :type C: gp_Lin
@@ -6893,7 +6908,7 @@ def HLRBRep_LineTool_IsRational(*args) -> "Standard_Boolean" :
     """
   return _HLRBRep.HLRBRep_LineTool_IsRational(*args)
 
-def HLRBRep_LineTool_PolesAndWeights(*args) -> "void" :
+def HLRBRep_LineTool_PolesAndWeights(*args):
   """
     :param C:
     :type C: gp_Lin
@@ -6906,7 +6921,7 @@ def HLRBRep_LineTool_PolesAndWeights(*args) -> "void" :
     """
   return _HLRBRep.HLRBRep_LineTool_PolesAndWeights(*args)
 
-def HLRBRep_LineTool_NbKnots(*args) -> "Standard_Integer" :
+def HLRBRep_LineTool_NbKnots(*args):
   """
     :param C:
     :type C: gp_Lin
@@ -6915,7 +6930,7 @@ def HLRBRep_LineTool_NbKnots(*args) -> "Standard_Integer" :
     """
   return _HLRBRep.HLRBRep_LineTool_NbKnots(*args)
 
-def HLRBRep_LineTool_KnotsAndMultiplicities(*args) -> "void" :
+def HLRBRep_LineTool_KnotsAndMultiplicities(*args):
   """
     :param C:
     :type C: gp_Lin
@@ -6928,7 +6943,7 @@ def HLRBRep_LineTool_KnotsAndMultiplicities(*args) -> "void" :
     """
   return _HLRBRep.HLRBRep_LineTool_KnotsAndMultiplicities(*args)
 
-def HLRBRep_LineTool_NbSamples(*args) -> "Standard_Integer" :
+def HLRBRep_LineTool_NbSamples(*args):
   """
     :param C:
     :type C: gp_Lin
@@ -6941,7 +6956,7 @@ def HLRBRep_LineTool_NbSamples(*args) -> "Standard_Integer" :
     """
   return _HLRBRep.HLRBRep_LineTool_NbSamples(*args)
 
-def HLRBRep_LineTool_SamplePars(*args) -> "void" :
+def HLRBRep_LineTool_SamplePars(*args):
   """
     :param C:
     :type C: gp_Lin
@@ -6952,7 +6967,7 @@ def HLRBRep_LineTool_SamplePars(*args) -> "void" :
     :param Defl:
     :type Defl: float
     :param NbMin:
-    :type NbMin: int
+    :type NbMin: Standard_Integer
     :param Pars:
     :type Pars: Handle_TColStd_HArray1OfReal &
     :rtype: void
@@ -6973,7 +6988,7 @@ class HLRBRep_ListIteratorOfListOfBPnt2D(object):
 
         """
         _HLRBRep.HLRBRep_ListIteratorOfListOfBPnt2D_swiginit(self,_HLRBRep.new_HLRBRep_ListIteratorOfListOfBPnt2D(*args))
-    def Initialize(self, *args) -> "void" :
+    def Initialize(self, *args):
         """
         :param L:
         :type L: HLRBRep_ListOfBPnt2D &
@@ -6982,26 +6997,26 @@ class HLRBRep_ListIteratorOfListOfBPnt2D(object):
         """
         return _HLRBRep.HLRBRep_ListIteratorOfListOfBPnt2D_Initialize(self, *args)
 
-    def More(self, *args) -> "Standard_Boolean" :
+    def More(self):
         """
         :rtype: bool
 
         """
-        return _HLRBRep.HLRBRep_ListIteratorOfListOfBPnt2D_More(self, *args)
+        return _HLRBRep.HLRBRep_ListIteratorOfListOfBPnt2D_More(self)
 
-    def Next(self, *args) -> "void" :
+    def Next(self):
         """
         :rtype: None
 
         """
-        return _HLRBRep.HLRBRep_ListIteratorOfListOfBPnt2D_Next(self, *args)
+        return _HLRBRep.HLRBRep_ListIteratorOfListOfBPnt2D_Next(self)
 
-    def Value(self, *args) -> "HLRBRep_BiPnt2D &" :
+    def Value(self):
         """
         :rtype: HLRBRep_BiPnt2D
 
         """
-        return _HLRBRep.HLRBRep_ListIteratorOfListOfBPnt2D_Value(self, *args)
+        return _HLRBRep.HLRBRep_ListIteratorOfListOfBPnt2D_Value(self)
 
     def __del__(self):
     	try:
@@ -7032,7 +7047,7 @@ class HLRBRep_ListIteratorOfListOfBPoint(object):
 
         """
         _HLRBRep.HLRBRep_ListIteratorOfListOfBPoint_swiginit(self,_HLRBRep.new_HLRBRep_ListIteratorOfListOfBPoint(*args))
-    def Initialize(self, *args) -> "void" :
+    def Initialize(self, *args):
         """
         :param L:
         :type L: HLRBRep_ListOfBPoint &
@@ -7041,26 +7056,26 @@ class HLRBRep_ListIteratorOfListOfBPoint(object):
         """
         return _HLRBRep.HLRBRep_ListIteratorOfListOfBPoint_Initialize(self, *args)
 
-    def More(self, *args) -> "Standard_Boolean" :
+    def More(self):
         """
         :rtype: bool
 
         """
-        return _HLRBRep.HLRBRep_ListIteratorOfListOfBPoint_More(self, *args)
+        return _HLRBRep.HLRBRep_ListIteratorOfListOfBPoint_More(self)
 
-    def Next(self, *args) -> "void" :
+    def Next(self):
         """
         :rtype: None
 
         """
-        return _HLRBRep.HLRBRep_ListIteratorOfListOfBPoint_Next(self, *args)
+        return _HLRBRep.HLRBRep_ListIteratorOfListOfBPoint_Next(self)
 
-    def Value(self, *args) -> "HLRBRep_BiPoint &" :
+    def Value(self):
         """
         :rtype: HLRBRep_BiPoint
 
         """
-        return _HLRBRep.HLRBRep_ListIteratorOfListOfBPoint_Value(self, *args)
+        return _HLRBRep.HLRBRep_ListIteratorOfListOfBPoint_Value(self)
 
     def __del__(self):
     	try:
@@ -7091,18 +7106,18 @@ class HLRBRep_ListNodeOfListOfBPnt2D(OCC.TCollection.TCollection_MapNode):
 
         """
         _HLRBRep.HLRBRep_ListNodeOfListOfBPnt2D_swiginit(self,_HLRBRep.new_HLRBRep_ListNodeOfListOfBPnt2D(*args))
-    def Value(self, *args) -> "HLRBRep_BiPnt2D &" :
+    def Value(self):
         """
         :rtype: HLRBRep_BiPnt2D
 
         """
-        return _HLRBRep.HLRBRep_ListNodeOfListOfBPnt2D_Value(self, *args)
+        return _HLRBRep.HLRBRep_ListNodeOfListOfBPnt2D_Value(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(HLRBRep_ListNodeOfListOfBPnt2D self)"""
         return _HLRBRep.HLRBRep_ListNodeOfListOfBPnt2D__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_HLRBRep_ListNodeOfListOfBPnt2D" :
+    def GetHandle(self):
         """GetHandle(HLRBRep_ListNodeOfListOfBPnt2D self) -> Handle_HLRBRep_ListNodeOfListOfBPnt2D"""
         return _HLRBRep.HLRBRep_ListNodeOfListOfBPnt2D_GetHandle(self)
 
@@ -7141,7 +7156,7 @@ Handle_HLRBRep_ListNodeOfListOfBPnt2D._kill_pointed = new_instancemethod(_HLRBRe
 Handle_HLRBRep_ListNodeOfListOfBPnt2D_swigregister = _HLRBRep.Handle_HLRBRep_ListNodeOfListOfBPnt2D_swigregister
 Handle_HLRBRep_ListNodeOfListOfBPnt2D_swigregister(Handle_HLRBRep_ListNodeOfListOfBPnt2D)
 
-def Handle_HLRBRep_ListNodeOfListOfBPnt2D_DownCast(*args) -> "Handle_HLRBRep_ListNodeOfListOfBPnt2D const" :
+def Handle_HLRBRep_ListNodeOfListOfBPnt2D_DownCast(*args):
   return _HLRBRep.Handle_HLRBRep_ListNodeOfListOfBPnt2D_DownCast(*args)
 Handle_HLRBRep_ListNodeOfListOfBPnt2D_DownCast = _HLRBRep.Handle_HLRBRep_ListNodeOfListOfBPnt2D_DownCast
 
@@ -7158,18 +7173,18 @@ class HLRBRep_ListNodeOfListOfBPoint(OCC.TCollection.TCollection_MapNode):
 
         """
         _HLRBRep.HLRBRep_ListNodeOfListOfBPoint_swiginit(self,_HLRBRep.new_HLRBRep_ListNodeOfListOfBPoint(*args))
-    def Value(self, *args) -> "HLRBRep_BiPoint &" :
+    def Value(self):
         """
         :rtype: HLRBRep_BiPoint
 
         """
-        return _HLRBRep.HLRBRep_ListNodeOfListOfBPoint_Value(self, *args)
+        return _HLRBRep.HLRBRep_ListNodeOfListOfBPoint_Value(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(HLRBRep_ListNodeOfListOfBPoint self)"""
         return _HLRBRep.HLRBRep_ListNodeOfListOfBPoint__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_HLRBRep_ListNodeOfListOfBPoint" :
+    def GetHandle(self):
         """GetHandle(HLRBRep_ListNodeOfListOfBPoint self) -> Handle_HLRBRep_ListNodeOfListOfBPoint"""
         return _HLRBRep.HLRBRep_ListNodeOfListOfBPoint_GetHandle(self)
 
@@ -7208,20 +7223,20 @@ Handle_HLRBRep_ListNodeOfListOfBPoint._kill_pointed = new_instancemethod(_HLRBRe
 Handle_HLRBRep_ListNodeOfListOfBPoint_swigregister = _HLRBRep.Handle_HLRBRep_ListNodeOfListOfBPoint_swigregister
 Handle_HLRBRep_ListNodeOfListOfBPoint_swigregister(Handle_HLRBRep_ListNodeOfListOfBPoint)
 
-def Handle_HLRBRep_ListNodeOfListOfBPoint_DownCast(*args) -> "Handle_HLRBRep_ListNodeOfListOfBPoint const" :
+def Handle_HLRBRep_ListNodeOfListOfBPoint_DownCast(*args):
   return _HLRBRep.Handle_HLRBRep_ListNodeOfListOfBPoint_DownCast(*args)
 Handle_HLRBRep_ListNodeOfListOfBPoint_DownCast = _HLRBRep.Handle_HLRBRep_ListNodeOfListOfBPoint_DownCast
 
 class HLRBRep_ListOfBPnt2D(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _HLRBRep.HLRBRep_ListOfBPnt2D_swiginit(self,_HLRBRep.new_HLRBRep_ListOfBPnt2D(*args))
-    def Assign(self, *args) -> "void" :
+        _HLRBRep.HLRBRep_ListOfBPnt2D_swiginit(self,_HLRBRep.new_HLRBRep_ListOfBPnt2D())
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: HLRBRep_ListOfBPnt2D &
@@ -7230,7 +7245,7 @@ class HLRBRep_ListOfBPnt2D(object):
         """
         return _HLRBRep.HLRBRep_ListOfBPnt2D_Assign(self, *args)
 
-    def Set(self, *args) -> "void" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: HLRBRep_ListOfBPnt2D &
@@ -7239,28 +7254,28 @@ class HLRBRep_ListOfBPnt2D(object):
         """
         return _HLRBRep.HLRBRep_ListOfBPnt2D_Set(self, *args)
 
-    def Extent(self, *args) -> "Standard_Integer" :
+    def Extent(self):
         """
         :rtype: int
 
         """
-        return _HLRBRep.HLRBRep_ListOfBPnt2D_Extent(self, *args)
+        return _HLRBRep.HLRBRep_ListOfBPnt2D_Extent(self)
 
-    def Clear(self, *args) -> "void" :
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _HLRBRep.HLRBRep_ListOfBPnt2D_Clear(self, *args)
+        return _HLRBRep.HLRBRep_ListOfBPnt2D_Clear(self)
 
-    def IsEmpty(self, *args) -> "Standard_Boolean" :
+    def IsEmpty(self):
         """
         :rtype: bool
 
         """
-        return _HLRBRep.HLRBRep_ListOfBPnt2D_IsEmpty(self, *args)
+        return _HLRBRep.HLRBRep_ListOfBPnt2D_IsEmpty(self)
 
-    def Prepend(self, *args) -> "void" :
+    def Prepend(self, *args):
         """
         :param I:
         :type I: HLRBRep_BiPnt2D &
@@ -7279,7 +7294,7 @@ class HLRBRep_ListOfBPnt2D(object):
         """
         return _HLRBRep.HLRBRep_ListOfBPnt2D_Prepend(self, *args)
 
-    def Append(self, *args) -> "void" :
+    def Append(self, *args):
         """
         :param I:
         :type I: HLRBRep_BiPnt2D &
@@ -7298,28 +7313,28 @@ class HLRBRep_ListOfBPnt2D(object):
         """
         return _HLRBRep.HLRBRep_ListOfBPnt2D_Append(self, *args)
 
-    def First(self, *args) -> "HLRBRep_BiPnt2D &" :
+    def First(self):
         """
         :rtype: HLRBRep_BiPnt2D
 
         """
-        return _HLRBRep.HLRBRep_ListOfBPnt2D_First(self, *args)
+        return _HLRBRep.HLRBRep_ListOfBPnt2D_First(self)
 
-    def Last(self, *args) -> "HLRBRep_BiPnt2D &" :
+    def Last(self):
         """
         :rtype: HLRBRep_BiPnt2D
 
         """
-        return _HLRBRep.HLRBRep_ListOfBPnt2D_Last(self, *args)
+        return _HLRBRep.HLRBRep_ListOfBPnt2D_Last(self)
 
-    def RemoveFirst(self, *args) -> "void" :
+    def RemoveFirst(self):
         """
         :rtype: None
 
         """
-        return _HLRBRep.HLRBRep_ListOfBPnt2D_RemoveFirst(self, *args)
+        return _HLRBRep.HLRBRep_ListOfBPnt2D_RemoveFirst(self)
 
-    def Remove(self, *args) -> "void" :
+    def Remove(self, *args):
         """
         :param It:
         :type It: HLRBRep_ListIteratorOfListOfBPnt2D &
@@ -7328,7 +7343,7 @@ class HLRBRep_ListOfBPnt2D(object):
         """
         return _HLRBRep.HLRBRep_ListOfBPnt2D_Remove(self, *args)
 
-    def InsertBefore(self, *args) -> "void" :
+    def InsertBefore(self, *args):
         """
         :param I:
         :type I: HLRBRep_BiPnt2D &
@@ -7345,7 +7360,7 @@ class HLRBRep_ListOfBPnt2D(object):
         """
         return _HLRBRep.HLRBRep_ListOfBPnt2D_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args) -> "void" :
+    def InsertAfter(self, *args):
         """
         :param I:
         :type I: HLRBRep_BiPnt2D &
@@ -7390,13 +7405,13 @@ HLRBRep_ListOfBPnt2D_swigregister(HLRBRep_ListOfBPnt2D)
 class HLRBRep_ListOfBPoint(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _HLRBRep.HLRBRep_ListOfBPoint_swiginit(self,_HLRBRep.new_HLRBRep_ListOfBPoint(*args))
-    def Assign(self, *args) -> "void" :
+        _HLRBRep.HLRBRep_ListOfBPoint_swiginit(self,_HLRBRep.new_HLRBRep_ListOfBPoint())
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: HLRBRep_ListOfBPoint &
@@ -7405,7 +7420,7 @@ class HLRBRep_ListOfBPoint(object):
         """
         return _HLRBRep.HLRBRep_ListOfBPoint_Assign(self, *args)
 
-    def Set(self, *args) -> "void" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: HLRBRep_ListOfBPoint &
@@ -7414,28 +7429,28 @@ class HLRBRep_ListOfBPoint(object):
         """
         return _HLRBRep.HLRBRep_ListOfBPoint_Set(self, *args)
 
-    def Extent(self, *args) -> "Standard_Integer" :
+    def Extent(self):
         """
         :rtype: int
 
         """
-        return _HLRBRep.HLRBRep_ListOfBPoint_Extent(self, *args)
+        return _HLRBRep.HLRBRep_ListOfBPoint_Extent(self)
 
-    def Clear(self, *args) -> "void" :
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _HLRBRep.HLRBRep_ListOfBPoint_Clear(self, *args)
+        return _HLRBRep.HLRBRep_ListOfBPoint_Clear(self)
 
-    def IsEmpty(self, *args) -> "Standard_Boolean" :
+    def IsEmpty(self):
         """
         :rtype: bool
 
         """
-        return _HLRBRep.HLRBRep_ListOfBPoint_IsEmpty(self, *args)
+        return _HLRBRep.HLRBRep_ListOfBPoint_IsEmpty(self)
 
-    def Prepend(self, *args) -> "void" :
+    def Prepend(self, *args):
         """
         :param I:
         :type I: HLRBRep_BiPoint &
@@ -7454,7 +7469,7 @@ class HLRBRep_ListOfBPoint(object):
         """
         return _HLRBRep.HLRBRep_ListOfBPoint_Prepend(self, *args)
 
-    def Append(self, *args) -> "void" :
+    def Append(self, *args):
         """
         :param I:
         :type I: HLRBRep_BiPoint &
@@ -7473,28 +7488,28 @@ class HLRBRep_ListOfBPoint(object):
         """
         return _HLRBRep.HLRBRep_ListOfBPoint_Append(self, *args)
 
-    def First(self, *args) -> "HLRBRep_BiPoint &" :
+    def First(self):
         """
         :rtype: HLRBRep_BiPoint
 
         """
-        return _HLRBRep.HLRBRep_ListOfBPoint_First(self, *args)
+        return _HLRBRep.HLRBRep_ListOfBPoint_First(self)
 
-    def Last(self, *args) -> "HLRBRep_BiPoint &" :
+    def Last(self):
         """
         :rtype: HLRBRep_BiPoint
 
         """
-        return _HLRBRep.HLRBRep_ListOfBPoint_Last(self, *args)
+        return _HLRBRep.HLRBRep_ListOfBPoint_Last(self)
 
-    def RemoveFirst(self, *args) -> "void" :
+    def RemoveFirst(self):
         """
         :rtype: None
 
         """
-        return _HLRBRep.HLRBRep_ListOfBPoint_RemoveFirst(self, *args)
+        return _HLRBRep.HLRBRep_ListOfBPoint_RemoveFirst(self)
 
-    def Remove(self, *args) -> "void" :
+    def Remove(self, *args):
         """
         :param It:
         :type It: HLRBRep_ListIteratorOfListOfBPoint &
@@ -7503,7 +7518,7 @@ class HLRBRep_ListOfBPoint(object):
         """
         return _HLRBRep.HLRBRep_ListOfBPoint_Remove(self, *args)
 
-    def InsertBefore(self, *args) -> "void" :
+    def InsertBefore(self, *args):
         """
         :param I:
         :type I: HLRBRep_BiPoint &
@@ -7520,7 +7535,7 @@ class HLRBRep_ListOfBPoint(object):
         """
         return _HLRBRep.HLRBRep_ListOfBPoint_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args) -> "void" :
+    def InsertAfter(self, *args):
         """
         :param I:
         :type I: HLRBRep_BiPoint &
@@ -7575,7 +7590,7 @@ class HLRBRep_MyImpParToolOfTheIntersectorOfTheIntConicCurveOfCInter(object):
 
         """
         _HLRBRep.HLRBRep_MyImpParToolOfTheIntersectorOfTheIntConicCurveOfCInter_swiginit(self,_HLRBRep.new_HLRBRep_MyImpParToolOfTheIntersectorOfTheIntConicCurveOfCInter(*args))
-    def Value(self, *args) -> "Standard_Boolean" :
+    def Value(self, *args):
         """
         :param Param:
         :type Param: float
@@ -7586,7 +7601,7 @@ class HLRBRep_MyImpParToolOfTheIntersectorOfTheIntConicCurveOfCInter(object):
         """
         return _HLRBRep.HLRBRep_MyImpParToolOfTheIntersectorOfTheIntConicCurveOfCInter_Value(self, *args)
 
-    def Derivative(self, *args) -> "Standard_Boolean" :
+    def Derivative(self, *args):
         """
         :param Param:
         :type Param: float
@@ -7597,7 +7612,7 @@ class HLRBRep_MyImpParToolOfTheIntersectorOfTheIntConicCurveOfCInter(object):
         """
         return _HLRBRep.HLRBRep_MyImpParToolOfTheIntersectorOfTheIntConicCurveOfCInter_Derivative(self, *args)
 
-    def Values(self, *args) -> "Standard_Boolean" :
+    def Values(self, *args):
         """
         :param Param:
         :type Param: float
@@ -7640,7 +7655,7 @@ class HLRBRep_PCLocFOfTheLocateExtPCOfTheProjPCurOfCInter(object):
 
         """
         _HLRBRep.HLRBRep_PCLocFOfTheLocateExtPCOfTheProjPCurOfCInter_swiginit(self,_HLRBRep.new_HLRBRep_PCLocFOfTheLocateExtPCOfTheProjPCurOfCInter(*args))
-    def Initialize(self, *args) -> "void" :
+    def Initialize(self, *args):
         """
         :param C:
         :type C: Standard_Address &
@@ -7649,7 +7664,7 @@ class HLRBRep_PCLocFOfTheLocateExtPCOfTheProjPCurOfCInter(object):
         """
         return _HLRBRep.HLRBRep_PCLocFOfTheLocateExtPCOfTheProjPCurOfCInter_Initialize(self, *args)
 
-    def SetPoint(self, *args) -> "void" :
+    def SetPoint(self, *args):
         """
         :param P:
         :type P: gp_Pnt2d
@@ -7658,7 +7673,7 @@ class HLRBRep_PCLocFOfTheLocateExtPCOfTheProjPCurOfCInter(object):
         """
         return _HLRBRep.HLRBRep_PCLocFOfTheLocateExtPCOfTheProjPCurOfCInter_SetPoint(self, *args)
 
-    def Value(self, *args) -> "Standard_Boolean" :
+    def Value(self, *args):
         """
         :param U:
         :type U: float
@@ -7669,7 +7684,7 @@ class HLRBRep_PCLocFOfTheLocateExtPCOfTheProjPCurOfCInter(object):
         """
         return _HLRBRep.HLRBRep_PCLocFOfTheLocateExtPCOfTheProjPCurOfCInter_Value(self, *args)
 
-    def Derivative(self, *args) -> "Standard_Boolean" :
+    def Derivative(self, *args):
         """
         :param U:
         :type U: float
@@ -7680,7 +7695,7 @@ class HLRBRep_PCLocFOfTheLocateExtPCOfTheProjPCurOfCInter(object):
         """
         return _HLRBRep.HLRBRep_PCLocFOfTheLocateExtPCOfTheProjPCurOfCInter_Derivative(self, *args)
 
-    def Values(self, *args) -> "Standard_Boolean" :
+    def Values(self, *args):
         """
         :param U:
         :type U: float
@@ -7693,48 +7708,48 @@ class HLRBRep_PCLocFOfTheLocateExtPCOfTheProjPCurOfCInter(object):
         """
         return _HLRBRep.HLRBRep_PCLocFOfTheLocateExtPCOfTheProjPCurOfCInter_Values(self, *args)
 
-    def GetStateNumber(self, *args) -> "Standard_Integer" :
+    def GetStateNumber(self):
         """
         :rtype: int
 
         """
-        return _HLRBRep.HLRBRep_PCLocFOfTheLocateExtPCOfTheProjPCurOfCInter_GetStateNumber(self, *args)
+        return _HLRBRep.HLRBRep_PCLocFOfTheLocateExtPCOfTheProjPCurOfCInter_GetStateNumber(self)
 
-    def NbExt(self, *args) -> "Standard_Integer" :
+    def NbExt(self):
         """
         :rtype: int
 
         """
-        return _HLRBRep.HLRBRep_PCLocFOfTheLocateExtPCOfTheProjPCurOfCInter_NbExt(self, *args)
+        return _HLRBRep.HLRBRep_PCLocFOfTheLocateExtPCOfTheProjPCurOfCInter_NbExt(self)
 
-    def SquareDistance(self, *args) -> "Standard_Real" :
+    def SquareDistance(self, *args):
         """
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :rtype: float
 
         """
         return _HLRBRep.HLRBRep_PCLocFOfTheLocateExtPCOfTheProjPCurOfCInter_SquareDistance(self, *args)
 
-    def IsMin(self, *args) -> "Standard_Boolean" :
+    def IsMin(self, *args):
         """
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :rtype: bool
 
         """
         return _HLRBRep.HLRBRep_PCLocFOfTheLocateExtPCOfTheProjPCurOfCInter_IsMin(self, *args)
 
-    def Point(self, *args) -> "Extrema_POnCurv2d const &" :
+    def Point(self, *args):
         """
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :rtype: Extrema_POnCurv2d
 
         """
         return _HLRBRep.HLRBRep_PCLocFOfTheLocateExtPCOfTheProjPCurOfCInter_Point(self, *args)
 
-    def SubIntervalInitialize(self, *args) -> "void" :
+    def SubIntervalInitialize(self, *args):
         """
         :param theUfirst:
         :type theUfirst: float
@@ -7745,12 +7760,12 @@ class HLRBRep_PCLocFOfTheLocateExtPCOfTheProjPCurOfCInter(object):
         """
         return _HLRBRep.HLRBRep_PCLocFOfTheLocateExtPCOfTheProjPCurOfCInter_SubIntervalInitialize(self, *args)
 
-    def SearchOfTolerance(self, *args) -> "Standard_Real" :
+    def SearchOfTolerance(self):
         """
         :rtype: float
 
         """
-        return _HLRBRep.HLRBRep_PCLocFOfTheLocateExtPCOfTheProjPCurOfCInter_SearchOfTolerance(self, *args)
+        return _HLRBRep.HLRBRep_PCLocFOfTheLocateExtPCOfTheProjPCurOfCInter_SearchOfTolerance(self)
 
     def __del__(self):
     	try:
@@ -7795,34 +7810,34 @@ class HLRBRep_PolyAlgo(OCC.MMgt.MMgt_TShared):
 
         """
         _HLRBRep.HLRBRep_PolyAlgo_swiginit(self,_HLRBRep.new_HLRBRep_PolyAlgo(*args))
-    def NbShapes(self, *args) -> "Standard_Integer" :
+    def NbShapes(self):
         """
         :rtype: int
 
         """
-        return _HLRBRep.HLRBRep_PolyAlgo_NbShapes(self, *args)
+        return _HLRBRep.HLRBRep_PolyAlgo_NbShapes(self)
 
-    def Shape(self, *args) -> "TopoDS_Shape" :
+    def Shape(self, *args):
         """
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :rtype: TopoDS_Shape
 
         """
         return _HLRBRep.HLRBRep_PolyAlgo_Shape(self, *args)
 
-    def Remove(self, *args) -> "void" :
+    def Remove(self, *args):
         """
         * remove the Shape of Index <I>.
 
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :rtype: None
 
         """
         return _HLRBRep.HLRBRep_PolyAlgo_Remove(self, *args)
 
-    def Index(self, *args) -> "Standard_Integer" :
+    def Index(self, *args):
         """
         * return the index of the Shape <S> and return 0 if the Shape <S> is not found.
 
@@ -7833,7 +7848,7 @@ class HLRBRep_PolyAlgo(OCC.MMgt.MMgt_TShared):
         """
         return _HLRBRep.HLRBRep_PolyAlgo_Index(self, *args)
 
-    def Load(self, *args) -> "void" :
+    def Load(self, *args):
         """
         * Loads the shape S into this framework. Warning S must have already been triangulated.
 
@@ -7844,14 +7859,14 @@ class HLRBRep_PolyAlgo(OCC.MMgt.MMgt_TShared):
         """
         return _HLRBRep.HLRBRep_PolyAlgo_Load(self, *args)
 
-    def Algo(self, *args) -> "Handle_HLRAlgo_PolyAlgo" :
+    def Algo(self):
         """
         :rtype: Handle_HLRAlgo_PolyAlgo
 
         """
-        return _HLRBRep.HLRBRep_PolyAlgo_Algo(self, *args)
+        return _HLRBRep.HLRBRep_PolyAlgo_Algo(self)
 
-    def Projector(self, *args) -> "void" :
+    def Projector(self, *args):
         """
         * Sets the parameters of the view for this framework. These parameters are defined by an HLRAlgo_Projector object, which is returned by the Projector function on a Prs3d_Projector object.
 
@@ -7864,7 +7879,7 @@ class HLRBRep_PolyAlgo(OCC.MMgt.MMgt_TShared):
         """
         return _HLRBRep.HLRBRep_PolyAlgo_Projector(self, *args)
 
-    def Angle(self, *args) -> "void" :
+    def Angle(self, *args):
         """
         :rtype: float
 
@@ -7875,7 +7890,7 @@ class HLRBRep_PolyAlgo(OCC.MMgt.MMgt_TShared):
         """
         return _HLRBRep.HLRBRep_PolyAlgo_Angle(self, *args)
 
-    def TolAngular(self, *args) -> "void" :
+    def TolAngular(self, *args):
         """
         :rtype: float
 
@@ -7886,7 +7901,7 @@ class HLRBRep_PolyAlgo(OCC.MMgt.MMgt_TShared):
         """
         return _HLRBRep.HLRBRep_PolyAlgo_TolAngular(self, *args)
 
-    def TolCoef(self, *args) -> "void" :
+    def TolCoef(self, *args):
         """
         :rtype: float
 
@@ -7897,37 +7912,37 @@ class HLRBRep_PolyAlgo(OCC.MMgt.MMgt_TShared):
         """
         return _HLRBRep.HLRBRep_PolyAlgo_TolCoef(self, *args)
 
-    def Update(self, *args) -> "void" :
+    def Update(self):
         """
         * Launches calculation of outlines of the shape visualized by this framework. Used after setting the point of view and defining the shape or shapes to be visualized.
 
         :rtype: None
 
         """
-        return _HLRBRep.HLRBRep_PolyAlgo_Update(self, *args)
+        return _HLRBRep.HLRBRep_PolyAlgo_Update(self)
 
-    def InitHide(self, *args) -> "void" :
+    def InitHide(self):
         """
         :rtype: None
 
         """
-        return _HLRBRep.HLRBRep_PolyAlgo_InitHide(self, *args)
+        return _HLRBRep.HLRBRep_PolyAlgo_InitHide(self)
 
-    def MoreHide(self, *args) -> "Standard_Boolean" :
+    def MoreHide(self):
         """
         :rtype: bool
 
         """
-        return _HLRBRep.HLRBRep_PolyAlgo_MoreHide(self, *args)
+        return _HLRBRep.HLRBRep_PolyAlgo_MoreHide(self)
 
-    def NextHide(self, *args) -> "void" :
+    def NextHide(self):
         """
         :rtype: None
 
         """
-        return _HLRBRep.HLRBRep_PolyAlgo_NextHide(self, *args)
+        return _HLRBRep.HLRBRep_PolyAlgo_NextHide(self)
 
-    def Hide(self, *args) -> "void" :
+    def Hide(self, *args):
         """
         :param Coordinates:
         :type Coordinates: Standard_Address &
@@ -7948,28 +7963,28 @@ class HLRBRep_PolyAlgo(OCC.MMgt.MMgt_TShared):
         """
         return _HLRBRep.HLRBRep_PolyAlgo_Hide(self, *args)
 
-    def InitShow(self, *args) -> "void" :
+    def InitShow(self):
         """
         :rtype: None
 
         """
-        return _HLRBRep.HLRBRep_PolyAlgo_InitShow(self, *args)
+        return _HLRBRep.HLRBRep_PolyAlgo_InitShow(self)
 
-    def MoreShow(self, *args) -> "Standard_Boolean" :
+    def MoreShow(self):
         """
         :rtype: bool
 
         """
-        return _HLRBRep.HLRBRep_PolyAlgo_MoreShow(self, *args)
+        return _HLRBRep.HLRBRep_PolyAlgo_MoreShow(self)
 
-    def NextShow(self, *args) -> "void" :
+    def NextShow(self):
         """
         :rtype: None
 
         """
-        return _HLRBRep.HLRBRep_PolyAlgo_NextShow(self, *args)
+        return _HLRBRep.HLRBRep_PolyAlgo_NextShow(self)
 
-    def Show(self, *args) -> "void" :
+    def Show(self, *args):
         """
         :param Coordinates:
         :type Coordinates: Standard_Address &
@@ -7988,7 +8003,7 @@ class HLRBRep_PolyAlgo(OCC.MMgt.MMgt_TShared):
         """
         return _HLRBRep.HLRBRep_PolyAlgo_Show(self, *args)
 
-    def OutLinedShape(self, *args) -> "TopoDS_Shape" :
+    def OutLinedShape(self, *args):
         """
         * Make a shape with the internal outlines in each face.
 
@@ -7999,7 +8014,7 @@ class HLRBRep_PolyAlgo(OCC.MMgt.MMgt_TShared):
         """
         return _HLRBRep.HLRBRep_PolyAlgo_OutLinedShape(self, *args)
 
-    def Debug(self, *args) -> "void" :
+    def Debug(self, *args):
         """
         :rtype: bool
 
@@ -8010,11 +8025,11 @@ class HLRBRep_PolyAlgo(OCC.MMgt.MMgt_TShared):
         """
         return _HLRBRep.HLRBRep_PolyAlgo_Debug(self, *args)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(HLRBRep_PolyAlgo self)"""
         return _HLRBRep.HLRBRep_PolyAlgo__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_HLRBRep_PolyAlgo" :
+    def GetHandle(self):
         """GetHandle(HLRBRep_PolyAlgo self) -> Handle_HLRBRep_PolyAlgo"""
         return _HLRBRep.HLRBRep_PolyAlgo_GetHandle(self)
 
@@ -8073,22 +8088,22 @@ Handle_HLRBRep_PolyAlgo._kill_pointed = new_instancemethod(_HLRBRep.Handle_HLRBR
 Handle_HLRBRep_PolyAlgo_swigregister = _HLRBRep.Handle_HLRBRep_PolyAlgo_swigregister
 Handle_HLRBRep_PolyAlgo_swigregister(Handle_HLRBRep_PolyAlgo)
 
-def Handle_HLRBRep_PolyAlgo_DownCast(*args) -> "Handle_HLRBRep_PolyAlgo const" :
+def Handle_HLRBRep_PolyAlgo_DownCast(*args):
   return _HLRBRep.Handle_HLRBRep_PolyAlgo_DownCast(*args)
 Handle_HLRBRep_PolyAlgo_DownCast = _HLRBRep.Handle_HLRBRep_PolyAlgo_DownCast
 
 class HLRBRep_PolyHLRToShape(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         * Constructs a framework for filtering the results of the HLRBRep_Algo algorithm, A. Use the extraction filters to obtain the results you want for A.
 
         :rtype: None
 
         """
-        _HLRBRep.HLRBRep_PolyHLRToShape_swiginit(self,_HLRBRep.new_HLRBRep_PolyHLRToShape(*args))
-    def Update(self, *args) -> "void" :
+        _HLRBRep.HLRBRep_PolyHLRToShape_swiginit(self,_HLRBRep.new_HLRBRep_PolyHLRToShape())
+    def Update(self, *args):
         """
         :param A:
         :type A: Handle_HLRBRep_PolyAlgo &
@@ -8097,21 +8112,21 @@ class HLRBRep_PolyHLRToShape(object):
         """
         return _HLRBRep.HLRBRep_PolyHLRToShape_Update(self, *args)
 
-    def Show(self, *args) -> "void" :
+    def Show(self):
         """
         :rtype: None
 
         """
-        return _HLRBRep.HLRBRep_PolyHLRToShape_Show(self, *args)
+        return _HLRBRep.HLRBRep_PolyHLRToShape_Show(self)
 
-    def Hide(self, *args) -> "void" :
+    def Hide(self):
         """
         :rtype: None
 
         """
-        return _HLRBRep.HLRBRep_PolyHLRToShape_Hide(self, *args)
+        return _HLRBRep.HLRBRep_PolyHLRToShape_Hide(self)
 
-    def VCompound(self, *args) -> "TopoDS_Shape" :
+    def VCompound(self, *args):
         """
         :rtype: TopoDS_Shape
 
@@ -8122,7 +8137,7 @@ class HLRBRep_PolyHLRToShape(object):
         """
         return _HLRBRep.HLRBRep_PolyHLRToShape_VCompound(self, *args)
 
-    def Rg1LineVCompound(self, *args) -> "TopoDS_Shape" :
+    def Rg1LineVCompound(self, *args):
         """
         * Sets the extraction filter for visible smooth edges.
 
@@ -8135,7 +8150,7 @@ class HLRBRep_PolyHLRToShape(object):
         """
         return _HLRBRep.HLRBRep_PolyHLRToShape_Rg1LineVCompound(self, *args)
 
-    def RgNLineVCompound(self, *args) -> "TopoDS_Shape" :
+    def RgNLineVCompound(self, *args):
         """
         * Sets the extraction filter for visible sewn edges.
 
@@ -8148,7 +8163,7 @@ class HLRBRep_PolyHLRToShape(object):
         """
         return _HLRBRep.HLRBRep_PolyHLRToShape_RgNLineVCompound(self, *args)
 
-    def OutLineVCompound(self, *args) -> "TopoDS_Shape" :
+    def OutLineVCompound(self, *args):
         """
         :rtype: TopoDS_Shape
 
@@ -8161,7 +8176,7 @@ class HLRBRep_PolyHLRToShape(object):
         """
         return _HLRBRep.HLRBRep_PolyHLRToShape_OutLineVCompound(self, *args)
 
-    def HCompound(self, *args) -> "TopoDS_Shape" :
+    def HCompound(self, *args):
         """
         :rtype: TopoDS_Shape
 
@@ -8172,7 +8187,7 @@ class HLRBRep_PolyHLRToShape(object):
         """
         return _HLRBRep.HLRBRep_PolyHLRToShape_HCompound(self, *args)
 
-    def Rg1LineHCompound(self, *args) -> "TopoDS_Shape" :
+    def Rg1LineHCompound(self, *args):
         """
         :rtype: TopoDS_Shape
 
@@ -8185,7 +8200,7 @@ class HLRBRep_PolyHLRToShape(object):
         """
         return _HLRBRep.HLRBRep_PolyHLRToShape_Rg1LineHCompound(self, *args)
 
-    def RgNLineHCompound(self, *args) -> "TopoDS_Shape" :
+    def RgNLineHCompound(self, *args):
         """
         :rtype: TopoDS_Shape
 
@@ -8198,7 +8213,7 @@ class HLRBRep_PolyHLRToShape(object):
         """
         return _HLRBRep.HLRBRep_PolyHLRToShape_RgNLineHCompound(self, *args)
 
-    def OutLineHCompound(self, *args) -> "TopoDS_Shape" :
+    def OutLineHCompound(self, *args):
         """
         :rtype: TopoDS_Shape
 
@@ -8246,7 +8261,7 @@ class HLRBRep_SLProps(object):
         :param V:
         :type V: float
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :param Resolution:
         :type Resolution: float
         :rtype: None
@@ -8254,20 +8269,20 @@ class HLRBRep_SLProps(object):
         :param S:
         :type S: Standard_Address &
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :param Resolution:
         :type Resolution: float
         :rtype: None
 
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :param Resolution:
         :type Resolution: float
         :rtype: None
 
         """
         _HLRBRep.HLRBRep_SLProps_swiginit(self,_HLRBRep.new_HLRBRep_SLProps(*args))
-    def SetSurface(self, *args) -> "void" :
+    def SetSurface(self, *args):
         """
         :param S:
         :type S: Standard_Address &
@@ -8276,7 +8291,7 @@ class HLRBRep_SLProps(object):
         """
         return _HLRBRep.HLRBRep_SLProps_SetSurface(self, *args)
 
-    def SetParameters(self, *args) -> "void" :
+    def SetParameters(self, *args):
         """
         :param U:
         :type U: float
@@ -8287,56 +8302,56 @@ class HLRBRep_SLProps(object):
         """
         return _HLRBRep.HLRBRep_SLProps_SetParameters(self, *args)
 
-    def Value(self, *args) -> "gp_Pnt const" :
+    def Value(self):
         """
         :rtype: gp_Pnt
 
         """
-        return _HLRBRep.HLRBRep_SLProps_Value(self, *args)
+        return _HLRBRep.HLRBRep_SLProps_Value(self)
 
-    def D1U(self, *args) -> "gp_Vec const" :
+    def D1U(self):
         """
         :rtype: gp_Vec
 
         """
-        return _HLRBRep.HLRBRep_SLProps_D1U(self, *args)
+        return _HLRBRep.HLRBRep_SLProps_D1U(self)
 
-    def D1V(self, *args) -> "gp_Vec const" :
+    def D1V(self):
         """
         :rtype: gp_Vec
 
         """
-        return _HLRBRep.HLRBRep_SLProps_D1V(self, *args)
+        return _HLRBRep.HLRBRep_SLProps_D1V(self)
 
-    def D2U(self, *args) -> "gp_Vec const" :
+    def D2U(self):
         """
         :rtype: gp_Vec
 
         """
-        return _HLRBRep.HLRBRep_SLProps_D2U(self, *args)
+        return _HLRBRep.HLRBRep_SLProps_D2U(self)
 
-    def D2V(self, *args) -> "gp_Vec const" :
+    def D2V(self):
         """
         :rtype: gp_Vec
 
         """
-        return _HLRBRep.HLRBRep_SLProps_D2V(self, *args)
+        return _HLRBRep.HLRBRep_SLProps_D2V(self)
 
-    def DUV(self, *args) -> "gp_Vec const" :
+    def DUV(self):
         """
         :rtype: gp_Vec
 
         """
-        return _HLRBRep.HLRBRep_SLProps_DUV(self, *args)
+        return _HLRBRep.HLRBRep_SLProps_DUV(self)
 
-    def IsTangentUDefined(self, *args) -> "Standard_Boolean" :
+    def IsTangentUDefined(self):
         """
         :rtype: bool
 
         """
-        return _HLRBRep.HLRBRep_SLProps_IsTangentUDefined(self, *args)
+        return _HLRBRep.HLRBRep_SLProps_IsTangentUDefined(self)
 
-    def TangentU(self, *args) -> "void" :
+    def TangentU(self, *args):
         """
         :param D:
         :type D: gp_Dir
@@ -8345,14 +8360,14 @@ class HLRBRep_SLProps(object):
         """
         return _HLRBRep.HLRBRep_SLProps_TangentU(self, *args)
 
-    def IsTangentVDefined(self, *args) -> "Standard_Boolean" :
+    def IsTangentVDefined(self):
         """
         :rtype: bool
 
         """
-        return _HLRBRep.HLRBRep_SLProps_IsTangentVDefined(self, *args)
+        return _HLRBRep.HLRBRep_SLProps_IsTangentVDefined(self)
 
-    def TangentV(self, *args) -> "void" :
+    def TangentV(self, *args):
         """
         :param D:
         :type D: gp_Dir
@@ -8361,49 +8376,49 @@ class HLRBRep_SLProps(object):
         """
         return _HLRBRep.HLRBRep_SLProps_TangentV(self, *args)
 
-    def IsNormalDefined(self, *args) -> "Standard_Boolean" :
+    def IsNormalDefined(self):
         """
         :rtype: bool
 
         """
-        return _HLRBRep.HLRBRep_SLProps_IsNormalDefined(self, *args)
+        return _HLRBRep.HLRBRep_SLProps_IsNormalDefined(self)
 
-    def Normal(self, *args) -> "gp_Dir const" :
+    def Normal(self):
         """
         :rtype: gp_Dir
 
         """
-        return _HLRBRep.HLRBRep_SLProps_Normal(self, *args)
+        return _HLRBRep.HLRBRep_SLProps_Normal(self)
 
-    def IsCurvatureDefined(self, *args) -> "Standard_Boolean" :
+    def IsCurvatureDefined(self):
         """
         :rtype: bool
 
         """
-        return _HLRBRep.HLRBRep_SLProps_IsCurvatureDefined(self, *args)
+        return _HLRBRep.HLRBRep_SLProps_IsCurvatureDefined(self)
 
-    def IsUmbilic(self, *args) -> "Standard_Boolean" :
+    def IsUmbilic(self):
         """
         :rtype: bool
 
         """
-        return _HLRBRep.HLRBRep_SLProps_IsUmbilic(self, *args)
+        return _HLRBRep.HLRBRep_SLProps_IsUmbilic(self)
 
-    def MaxCurvature(self, *args) -> "Standard_Real" :
+    def MaxCurvature(self):
         """
         :rtype: float
 
         """
-        return _HLRBRep.HLRBRep_SLProps_MaxCurvature(self, *args)
+        return _HLRBRep.HLRBRep_SLProps_MaxCurvature(self)
 
-    def MinCurvature(self, *args) -> "Standard_Real" :
+    def MinCurvature(self):
         """
         :rtype: float
 
         """
-        return _HLRBRep.HLRBRep_SLProps_MinCurvature(self, *args)
+        return _HLRBRep.HLRBRep_SLProps_MinCurvature(self)
 
-    def CurvatureDirections(self, *args) -> "void" :
+    def CurvatureDirections(self, *args):
         """
         :param MaxD:
         :type MaxD: gp_Dir
@@ -8414,19 +8429,19 @@ class HLRBRep_SLProps(object):
         """
         return _HLRBRep.HLRBRep_SLProps_CurvatureDirections(self, *args)
 
-    def MeanCurvature(self, *args) -> "Standard_Real" :
+    def MeanCurvature(self):
         """
         :rtype: float
 
         """
-        return _HLRBRep.HLRBRep_SLProps_MeanCurvature(self, *args)
+        return _HLRBRep.HLRBRep_SLProps_MeanCurvature(self)
 
-    def GaussianCurvature(self, *args) -> "Standard_Real" :
+    def GaussianCurvature(self):
         """
         :rtype: float
 
         """
-        return _HLRBRep.HLRBRep_SLProps_GaussianCurvature(self, *args)
+        return _HLRBRep.HLRBRep_SLProps_GaussianCurvature(self)
 
     def __del__(self):
     	try:
@@ -8463,8 +8478,9 @@ HLRBRep_SLProps_swigregister(HLRBRep_SLProps)
 
 class HLRBRep_SLPropsATool(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
+    def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def Value(*args) -> "void" :
+    def Value(*args):
         """
         * Computes the point <P> of 	parameter <U> and <V> on the Surface <A>.
 
@@ -8482,7 +8498,7 @@ class HLRBRep_SLPropsATool(object):
         return _HLRBRep.HLRBRep_SLPropsATool_Value(*args)
 
     Value = staticmethod(Value)
-    def D1(*args) -> "void" :
+    def D1(*args):
         """
         * Computes the point <P> and first derivative <D1*> of parameter <U> and <V> on the Surface <A>.
 
@@ -8504,7 +8520,7 @@ class HLRBRep_SLPropsATool(object):
         return _HLRBRep.HLRBRep_SLPropsATool_D1(*args)
 
     D1 = staticmethod(D1)
-    def D2(*args) -> "void" :
+    def D2(*args):
         """
         * Computes the point <P>, the first derivative <D1*> and second derivative <D2*> of parameter <U> and <V> on the Surface <A>.
 
@@ -8532,7 +8548,7 @@ class HLRBRep_SLPropsATool(object):
         return _HLRBRep.HLRBRep_SLPropsATool_D2(*args)
 
     D2 = staticmethod(D2)
-    def DN(*args) -> "gp_Vec" :
+    def DN(*args):
         """
         :param A:
         :type A: Standard_Address
@@ -8541,16 +8557,16 @@ class HLRBRep_SLPropsATool(object):
         :param V:
         :type V: float
         :param Nu:
-        :type Nu: int
+        :type Nu: Standard_Integer
         :param Nv:
-        :type Nv: int
+        :type Nv: Standard_Integer
         :rtype: gp_Vec
 
         """
         return _HLRBRep.HLRBRep_SLPropsATool_DN(*args)
 
     DN = staticmethod(DN)
-    def Continuity(*args) -> "Standard_Integer" :
+    def Continuity(*args):
         """
         * returns the order of continuity of the Surface <A>. returns 1 : first derivative only is computable returns 2 : first and second derivative only are computable.
 
@@ -8562,7 +8578,7 @@ class HLRBRep_SLPropsATool(object):
         return _HLRBRep.HLRBRep_SLPropsATool_Continuity(*args)
 
     Continuity = staticmethod(Continuity)
-    def Bounds(*args) -> "Standard_Real &, Standard_Real &, Standard_Real &, Standard_Real &" :
+    def Bounds(*args):
         """
         * returns the bounds of the Surface.
 
@@ -8582,8 +8598,6 @@ class HLRBRep_SLPropsATool(object):
         return _HLRBRep.HLRBRep_SLPropsATool_Bounds(*args)
 
     Bounds = staticmethod(Bounds)
-    def __init__(self): 
-        _HLRBRep.HLRBRep_SLPropsATool_swiginit(self,_HLRBRep.new_HLRBRep_SLPropsATool())
     def __del__(self):
     	try:
     		self.thisown = False
@@ -8596,7 +8610,7 @@ HLRBRep_SLPropsATool._kill_pointed = new_instancemethod(_HLRBRep.HLRBRep_SLProps
 HLRBRep_SLPropsATool_swigregister = _HLRBRep.HLRBRep_SLPropsATool_swigregister
 HLRBRep_SLPropsATool_swigregister(HLRBRep_SLPropsATool)
 
-def HLRBRep_SLPropsATool_Value(*args) -> "void" :
+def HLRBRep_SLPropsATool_Value(*args):
   """
     * Computes the point <P> of 	parameter <U> and <V> on the Surface <A>.
 
@@ -8613,7 +8627,7 @@ def HLRBRep_SLPropsATool_Value(*args) -> "void" :
     """
   return _HLRBRep.HLRBRep_SLPropsATool_Value(*args)
 
-def HLRBRep_SLPropsATool_D1(*args) -> "void" :
+def HLRBRep_SLPropsATool_D1(*args):
   """
     * Computes the point <P> and first derivative <D1*> of parameter <U> and <V> on the Surface <A>.
 
@@ -8634,7 +8648,7 @@ def HLRBRep_SLPropsATool_D1(*args) -> "void" :
     """
   return _HLRBRep.HLRBRep_SLPropsATool_D1(*args)
 
-def HLRBRep_SLPropsATool_D2(*args) -> "void" :
+def HLRBRep_SLPropsATool_D2(*args):
   """
     * Computes the point <P>, the first derivative <D1*> and second derivative <D2*> of parameter <U> and <V> on the Surface <A>.
 
@@ -8661,7 +8675,7 @@ def HLRBRep_SLPropsATool_D2(*args) -> "void" :
     """
   return _HLRBRep.HLRBRep_SLPropsATool_D2(*args)
 
-def HLRBRep_SLPropsATool_DN(*args) -> "gp_Vec" :
+def HLRBRep_SLPropsATool_DN(*args):
   """
     :param A:
     :type A: Standard_Address
@@ -8670,15 +8684,15 @@ def HLRBRep_SLPropsATool_DN(*args) -> "gp_Vec" :
     :param V:
     :type V: float
     :param Nu:
-    :type Nu: int
+    :type Nu: Standard_Integer
     :param Nv:
-    :type Nv: int
+    :type Nv: Standard_Integer
     :rtype: gp_Vec
 
     """
   return _HLRBRep.HLRBRep_SLPropsATool_DN(*args)
 
-def HLRBRep_SLPropsATool_Continuity(*args) -> "Standard_Integer" :
+def HLRBRep_SLPropsATool_Continuity(*args):
   """
     * returns the order of continuity of the Surface <A>. returns 1 : first derivative only is computable returns 2 : first and second derivative only are computable.
 
@@ -8689,7 +8703,7 @@ def HLRBRep_SLPropsATool_Continuity(*args) -> "Standard_Integer" :
     """
   return _HLRBRep.HLRBRep_SLPropsATool_Continuity(*args)
 
-def HLRBRep_SLPropsATool_Bounds(*args) -> "Standard_Real &, Standard_Real &, Standard_Real &, Standard_Real &" :
+def HLRBRep_SLPropsATool_Bounds(*args):
   """
     * returns the bounds of the Surface.
 
@@ -8711,20 +8725,20 @@ def HLRBRep_SLPropsATool_Bounds(*args) -> "Standard_Real &, Standard_Real &, Sta
 class HLRBRep_SeqOfShapeBounds(OCC.TCollection.TCollection_BaseSequence):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _HLRBRep.HLRBRep_SeqOfShapeBounds_swiginit(self,_HLRBRep.new_HLRBRep_SeqOfShapeBounds(*args))
-    def Clear(self, *args) -> "void" :
+        _HLRBRep.HLRBRep_SeqOfShapeBounds_swiginit(self,_HLRBRep.new_HLRBRep_SeqOfShapeBounds())
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _HLRBRep.HLRBRep_SeqOfShapeBounds_Clear(self, *args)
+        return _HLRBRep.HLRBRep_SeqOfShapeBounds_Clear(self)
 
-    def Assign(self, *args) -> "HLRBRep_SeqOfShapeBounds const &" :
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: HLRBRep_SeqOfShapeBounds &
@@ -8733,7 +8747,7 @@ class HLRBRep_SeqOfShapeBounds(OCC.TCollection.TCollection_BaseSequence):
         """
         return _HLRBRep.HLRBRep_SeqOfShapeBounds_Assign(self, *args)
 
-    def Set(self, *args) -> "HLRBRep_SeqOfShapeBounds const &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: HLRBRep_SeqOfShapeBounds &
@@ -8742,7 +8756,7 @@ class HLRBRep_SeqOfShapeBounds(OCC.TCollection.TCollection_BaseSequence):
         """
         return _HLRBRep.HLRBRep_SeqOfShapeBounds_Set(self, *args)
 
-    def Append(self, *args) -> "void" :
+    def Append(self, *args):
         """
         :param T:
         :type T: HLRBRep_ShapeBounds &
@@ -8755,7 +8769,7 @@ class HLRBRep_SeqOfShapeBounds(OCC.TCollection.TCollection_BaseSequence):
         """
         return _HLRBRep.HLRBRep_SeqOfShapeBounds_Append(self, *args)
 
-    def Prepend(self, *args) -> "void" :
+    def Prepend(self, *args):
         """
         :param T:
         :type T: HLRBRep_ShapeBounds &
@@ -8768,16 +8782,16 @@ class HLRBRep_SeqOfShapeBounds(OCC.TCollection.TCollection_BaseSequence):
         """
         return _HLRBRep.HLRBRep_SeqOfShapeBounds_Prepend(self, *args)
 
-    def InsertBefore(self, *args) -> "void" :
+    def InsertBefore(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param T:
         :type T: HLRBRep_ShapeBounds &
         :rtype: None
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param S:
         :type S: HLRBRep_SeqOfShapeBounds &
         :rtype: None
@@ -8785,16 +8799,16 @@ class HLRBRep_SeqOfShapeBounds(OCC.TCollection.TCollection_BaseSequence):
         """
         return _HLRBRep.HLRBRep_SeqOfShapeBounds_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args) -> "void" :
+    def InsertAfter(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param T:
         :type T: HLRBRep_ShapeBounds &
         :rtype: None
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param S:
         :type S: HLRBRep_SeqOfShapeBounds &
         :rtype: None
@@ -8802,24 +8816,24 @@ class HLRBRep_SeqOfShapeBounds(OCC.TCollection.TCollection_BaseSequence):
         """
         return _HLRBRep.HLRBRep_SeqOfShapeBounds_InsertAfter(self, *args)
 
-    def First(self, *args) -> "HLRBRep_ShapeBounds const &" :
+    def First(self):
         """
         :rtype: HLRBRep_ShapeBounds
 
         """
-        return _HLRBRep.HLRBRep_SeqOfShapeBounds_First(self, *args)
+        return _HLRBRep.HLRBRep_SeqOfShapeBounds_First(self)
 
-    def Last(self, *args) -> "HLRBRep_ShapeBounds const &" :
+    def Last(self):
         """
         :rtype: HLRBRep_ShapeBounds
 
         """
-        return _HLRBRep.HLRBRep_SeqOfShapeBounds_Last(self, *args)
+        return _HLRBRep.HLRBRep_SeqOfShapeBounds_Last(self)
 
-    def Split(self, *args) -> "void" :
+    def Split(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Sub:
         :type Sub: HLRBRep_SeqOfShapeBounds &
         :rtype: None
@@ -8827,19 +8841,19 @@ class HLRBRep_SeqOfShapeBounds(OCC.TCollection.TCollection_BaseSequence):
         """
         return _HLRBRep.HLRBRep_SeqOfShapeBounds_Split(self, *args)
 
-    def Value(self, *args) -> "HLRBRep_ShapeBounds const &" :
+    def Value(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: HLRBRep_ShapeBounds
 
         """
         return _HLRBRep.HLRBRep_SeqOfShapeBounds_Value(self, *args)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param I:
         :type I: HLRBRep_ShapeBounds &
         :rtype: None
@@ -8847,25 +8861,25 @@ class HLRBRep_SeqOfShapeBounds(OCC.TCollection.TCollection_BaseSequence):
         """
         return _HLRBRep.HLRBRep_SeqOfShapeBounds_SetValue(self, *args)
 
-    def ChangeValue(self, *args) -> "HLRBRep_ShapeBounds &" :
+    def ChangeValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: HLRBRep_ShapeBounds
 
         """
         return _HLRBRep.HLRBRep_SeqOfShapeBounds_ChangeValue(self, *args)
 
-    def Remove(self, *args) -> "void" :
+    def Remove(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: None
 
         :param FromIndex:
-        :type FromIndex: int
+        :type FromIndex: Standard_Integer
         :param ToIndex:
-        :type ToIndex: int
+        :type ToIndex: Standard_Integer
         :rtype: None
 
         """
@@ -8900,20 +8914,20 @@ HLRBRep_SeqOfShapeBounds_swigregister(HLRBRep_SeqOfShapeBounds)
 class HLRBRep_SeqPCOfPCLocFOfTheLocateExtPCOfTheProjPCurOfCInter(OCC.TCollection.TCollection_BaseSequence):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _HLRBRep.HLRBRep_SeqPCOfPCLocFOfTheLocateExtPCOfTheProjPCurOfCInter_swiginit(self,_HLRBRep.new_HLRBRep_SeqPCOfPCLocFOfTheLocateExtPCOfTheProjPCurOfCInter(*args))
-    def Clear(self, *args) -> "void" :
+        _HLRBRep.HLRBRep_SeqPCOfPCLocFOfTheLocateExtPCOfTheProjPCurOfCInter_swiginit(self,_HLRBRep.new_HLRBRep_SeqPCOfPCLocFOfTheLocateExtPCOfTheProjPCurOfCInter())
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _HLRBRep.HLRBRep_SeqPCOfPCLocFOfTheLocateExtPCOfTheProjPCurOfCInter_Clear(self, *args)
+        return _HLRBRep.HLRBRep_SeqPCOfPCLocFOfTheLocateExtPCOfTheProjPCurOfCInter_Clear(self)
 
-    def Assign(self, *args) -> "HLRBRep_SeqPCOfPCLocFOfTheLocateExtPCOfTheProjPCurOfCInter const &" :
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: HLRBRep_SeqPCOfPCLocFOfTheLocateExtPCOfTheProjPCurOfCInter &
@@ -8922,7 +8936,7 @@ class HLRBRep_SeqPCOfPCLocFOfTheLocateExtPCOfTheProjPCurOfCInter(OCC.TCollection
         """
         return _HLRBRep.HLRBRep_SeqPCOfPCLocFOfTheLocateExtPCOfTheProjPCurOfCInter_Assign(self, *args)
 
-    def Set(self, *args) -> "HLRBRep_SeqPCOfPCLocFOfTheLocateExtPCOfTheProjPCurOfCInter const &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: HLRBRep_SeqPCOfPCLocFOfTheLocateExtPCOfTheProjPCurOfCInter &
@@ -8931,7 +8945,7 @@ class HLRBRep_SeqPCOfPCLocFOfTheLocateExtPCOfTheProjPCurOfCInter(OCC.TCollection
         """
         return _HLRBRep.HLRBRep_SeqPCOfPCLocFOfTheLocateExtPCOfTheProjPCurOfCInter_Set(self, *args)
 
-    def Append(self, *args) -> "void" :
+    def Append(self, *args):
         """
         :param T:
         :type T: Extrema_POnCurv2d &
@@ -8944,7 +8958,7 @@ class HLRBRep_SeqPCOfPCLocFOfTheLocateExtPCOfTheProjPCurOfCInter(OCC.TCollection
         """
         return _HLRBRep.HLRBRep_SeqPCOfPCLocFOfTheLocateExtPCOfTheProjPCurOfCInter_Append(self, *args)
 
-    def Prepend(self, *args) -> "void" :
+    def Prepend(self, *args):
         """
         :param T:
         :type T: Extrema_POnCurv2d &
@@ -8957,16 +8971,16 @@ class HLRBRep_SeqPCOfPCLocFOfTheLocateExtPCOfTheProjPCurOfCInter(OCC.TCollection
         """
         return _HLRBRep.HLRBRep_SeqPCOfPCLocFOfTheLocateExtPCOfTheProjPCurOfCInter_Prepend(self, *args)
 
-    def InsertBefore(self, *args) -> "void" :
+    def InsertBefore(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param T:
         :type T: Extrema_POnCurv2d &
         :rtype: None
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param S:
         :type S: HLRBRep_SeqPCOfPCLocFOfTheLocateExtPCOfTheProjPCurOfCInter &
         :rtype: None
@@ -8974,16 +8988,16 @@ class HLRBRep_SeqPCOfPCLocFOfTheLocateExtPCOfTheProjPCurOfCInter(OCC.TCollection
         """
         return _HLRBRep.HLRBRep_SeqPCOfPCLocFOfTheLocateExtPCOfTheProjPCurOfCInter_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args) -> "void" :
+    def InsertAfter(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param T:
         :type T: Extrema_POnCurv2d &
         :rtype: None
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param S:
         :type S: HLRBRep_SeqPCOfPCLocFOfTheLocateExtPCOfTheProjPCurOfCInter &
         :rtype: None
@@ -8991,24 +9005,24 @@ class HLRBRep_SeqPCOfPCLocFOfTheLocateExtPCOfTheProjPCurOfCInter(OCC.TCollection
         """
         return _HLRBRep.HLRBRep_SeqPCOfPCLocFOfTheLocateExtPCOfTheProjPCurOfCInter_InsertAfter(self, *args)
 
-    def First(self, *args) -> "Extrema_POnCurv2d const &" :
+    def First(self):
         """
         :rtype: Extrema_POnCurv2d
 
         """
-        return _HLRBRep.HLRBRep_SeqPCOfPCLocFOfTheLocateExtPCOfTheProjPCurOfCInter_First(self, *args)
+        return _HLRBRep.HLRBRep_SeqPCOfPCLocFOfTheLocateExtPCOfTheProjPCurOfCInter_First(self)
 
-    def Last(self, *args) -> "Extrema_POnCurv2d const &" :
+    def Last(self):
         """
         :rtype: Extrema_POnCurv2d
 
         """
-        return _HLRBRep.HLRBRep_SeqPCOfPCLocFOfTheLocateExtPCOfTheProjPCurOfCInter_Last(self, *args)
+        return _HLRBRep.HLRBRep_SeqPCOfPCLocFOfTheLocateExtPCOfTheProjPCurOfCInter_Last(self)
 
-    def Split(self, *args) -> "void" :
+    def Split(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Sub:
         :type Sub: HLRBRep_SeqPCOfPCLocFOfTheLocateExtPCOfTheProjPCurOfCInter &
         :rtype: None
@@ -9016,19 +9030,19 @@ class HLRBRep_SeqPCOfPCLocFOfTheLocateExtPCOfTheProjPCurOfCInter(OCC.TCollection
         """
         return _HLRBRep.HLRBRep_SeqPCOfPCLocFOfTheLocateExtPCOfTheProjPCurOfCInter_Split(self, *args)
 
-    def Value(self, *args) -> "Extrema_POnCurv2d const &" :
+    def Value(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Extrema_POnCurv2d
 
         """
         return _HLRBRep.HLRBRep_SeqPCOfPCLocFOfTheLocateExtPCOfTheProjPCurOfCInter_Value(self, *args)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param I:
         :type I: Extrema_POnCurv2d &
         :rtype: None
@@ -9036,25 +9050,25 @@ class HLRBRep_SeqPCOfPCLocFOfTheLocateExtPCOfTheProjPCurOfCInter(OCC.TCollection
         """
         return _HLRBRep.HLRBRep_SeqPCOfPCLocFOfTheLocateExtPCOfTheProjPCurOfCInter_SetValue(self, *args)
 
-    def ChangeValue(self, *args) -> "Extrema_POnCurv2d &" :
+    def ChangeValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Extrema_POnCurv2d
 
         """
         return _HLRBRep.HLRBRep_SeqPCOfPCLocFOfTheLocateExtPCOfTheProjPCurOfCInter_ChangeValue(self, *args)
 
-    def Remove(self, *args) -> "void" :
+    def Remove(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: None
 
         :param FromIndex:
-        :type FromIndex: int
+        :type FromIndex: Standard_Integer
         :param ToIndex:
-        :type ToIndex: int
+        :type ToIndex: Standard_Integer
         :rtype: None
 
         """
@@ -9101,18 +9115,18 @@ class HLRBRep_SequenceNodeOfSeqOfShapeBounds(OCC.TCollection.TCollection_SeqNode
 
         """
         _HLRBRep.HLRBRep_SequenceNodeOfSeqOfShapeBounds_swiginit(self,_HLRBRep.new_HLRBRep_SequenceNodeOfSeqOfShapeBounds(*args))
-    def Value(self, *args) -> "HLRBRep_ShapeBounds &" :
+    def Value(self):
         """
         :rtype: HLRBRep_ShapeBounds
 
         """
-        return _HLRBRep.HLRBRep_SequenceNodeOfSeqOfShapeBounds_Value(self, *args)
+        return _HLRBRep.HLRBRep_SequenceNodeOfSeqOfShapeBounds_Value(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(HLRBRep_SequenceNodeOfSeqOfShapeBounds self)"""
         return _HLRBRep.HLRBRep_SequenceNodeOfSeqOfShapeBounds__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_HLRBRep_SequenceNodeOfSeqOfShapeBounds" :
+    def GetHandle(self):
         """GetHandle(HLRBRep_SequenceNodeOfSeqOfShapeBounds self) -> Handle_HLRBRep_SequenceNodeOfSeqOfShapeBounds"""
         return _HLRBRep.HLRBRep_SequenceNodeOfSeqOfShapeBounds_GetHandle(self)
 
@@ -9151,7 +9165,7 @@ Handle_HLRBRep_SequenceNodeOfSeqOfShapeBounds._kill_pointed = new_instancemethod
 Handle_HLRBRep_SequenceNodeOfSeqOfShapeBounds_swigregister = _HLRBRep.Handle_HLRBRep_SequenceNodeOfSeqOfShapeBounds_swigregister
 Handle_HLRBRep_SequenceNodeOfSeqOfShapeBounds_swigregister(Handle_HLRBRep_SequenceNodeOfSeqOfShapeBounds)
 
-def Handle_HLRBRep_SequenceNodeOfSeqOfShapeBounds_DownCast(*args) -> "Handle_HLRBRep_SequenceNodeOfSeqOfShapeBounds const" :
+def Handle_HLRBRep_SequenceNodeOfSeqOfShapeBounds_DownCast(*args):
   return _HLRBRep.Handle_HLRBRep_SequenceNodeOfSeqOfShapeBounds_DownCast(*args)
 Handle_HLRBRep_SequenceNodeOfSeqOfShapeBounds_DownCast = _HLRBRep.Handle_HLRBRep_SequenceNodeOfSeqOfShapeBounds_DownCast
 
@@ -9170,18 +9184,18 @@ class HLRBRep_SequenceNodeOfSeqPCOfPCLocFOfTheLocateExtPCOfTheProjPCurOfCInter(O
 
         """
         _HLRBRep.HLRBRep_SequenceNodeOfSeqPCOfPCLocFOfTheLocateExtPCOfTheProjPCurOfCInter_swiginit(self,_HLRBRep.new_HLRBRep_SequenceNodeOfSeqPCOfPCLocFOfTheLocateExtPCOfTheProjPCurOfCInter(*args))
-    def Value(self, *args) -> "Extrema_POnCurv2d &" :
+    def Value(self):
         """
         :rtype: Extrema_POnCurv2d
 
         """
-        return _HLRBRep.HLRBRep_SequenceNodeOfSeqPCOfPCLocFOfTheLocateExtPCOfTheProjPCurOfCInter_Value(self, *args)
+        return _HLRBRep.HLRBRep_SequenceNodeOfSeqPCOfPCLocFOfTheLocateExtPCOfTheProjPCurOfCInter_Value(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(HLRBRep_SequenceNodeOfSeqPCOfPCLocFOfTheLocateExtPCOfTheProjPCurOfCInter self)"""
         return _HLRBRep.HLRBRep_SequenceNodeOfSeqPCOfPCLocFOfTheLocateExtPCOfTheProjPCurOfCInter__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_HLRBRep_SequenceNodeOfSeqPCOfPCLocFOfTheLocateExtPCOfTheProjPCurOfCInter" :
+    def GetHandle(self):
         """GetHandle(HLRBRep_SequenceNodeOfSeqPCOfPCLocFOfTheLocateExtPCOfTheProjPCurOfCInter self) -> Handle_HLRBRep_SequenceNodeOfSeqPCOfPCLocFOfTheLocateExtPCOfTheProjPCurOfCInter"""
         return _HLRBRep.HLRBRep_SequenceNodeOfSeqPCOfPCLocFOfTheLocateExtPCOfTheProjPCurOfCInter_GetHandle(self)
 
@@ -9220,7 +9234,7 @@ Handle_HLRBRep_SequenceNodeOfSeqPCOfPCLocFOfTheLocateExtPCOfTheProjPCurOfCInter.
 Handle_HLRBRep_SequenceNodeOfSeqPCOfPCLocFOfTheLocateExtPCOfTheProjPCurOfCInter_swigregister = _HLRBRep.Handle_HLRBRep_SequenceNodeOfSeqPCOfPCLocFOfTheLocateExtPCOfTheProjPCurOfCInter_swigregister
 Handle_HLRBRep_SequenceNodeOfSeqPCOfPCLocFOfTheLocateExtPCOfTheProjPCurOfCInter_swigregister(Handle_HLRBRep_SequenceNodeOfSeqPCOfPCLocFOfTheLocateExtPCOfTheProjPCurOfCInter)
 
-def Handle_HLRBRep_SequenceNodeOfSeqPCOfPCLocFOfTheLocateExtPCOfTheProjPCurOfCInter_DownCast(*args) -> "Handle_HLRBRep_SequenceNodeOfSeqPCOfPCLocFOfTheLocateExtPCOfTheProjPCurOfCInter const" :
+def Handle_HLRBRep_SequenceNodeOfSeqPCOfPCLocFOfTheLocateExtPCOfTheProjPCurOfCInter_DownCast(*args):
   return _HLRBRep.Handle_HLRBRep_SequenceNodeOfSeqPCOfPCLocFOfTheLocateExtPCOfTheProjPCurOfCInter_DownCast(*args)
 Handle_HLRBRep_SequenceNodeOfSeqPCOfPCLocFOfTheLocateExtPCOfTheProjPCurOfCInter_DownCast = _HLRBRep.Handle_HLRBRep_SequenceNodeOfSeqPCOfPCLocFOfTheLocateExtPCOfTheProjPCurOfCInter_DownCast
 
@@ -9236,55 +9250,55 @@ class HLRBRep_ShapeBounds(object):
         :param SData:
         :type SData: Handle_MMgt_TShared &
         :param nbIso:
-        :type nbIso: int
+        :type nbIso: Standard_Integer
         :param V1:
-        :type V1: int
+        :type V1: Standard_Integer
         :param V2:
-        :type V2: int
+        :type V2: Standard_Integer
         :param E1:
-        :type E1: int
+        :type E1: Standard_Integer
         :param E2:
-        :type E2: int
+        :type E2: Standard_Integer
         :param F1:
-        :type F1: int
+        :type F1: Standard_Integer
         :param F2:
-        :type F2: int
+        :type F2: Standard_Integer
         :rtype: None
 
         :param S:
         :type S: Handle_HLRTopoBRep_OutLiner &
         :param nbIso:
-        :type nbIso: int
+        :type nbIso: Standard_Integer
         :param V1:
-        :type V1: int
+        :type V1: Standard_Integer
         :param V2:
-        :type V2: int
+        :type V2: Standard_Integer
         :param E1:
-        :type E1: int
+        :type E1: Standard_Integer
         :param E2:
-        :type E2: int
+        :type E2: Standard_Integer
         :param F1:
-        :type F1: int
+        :type F1: Standard_Integer
         :param F2:
-        :type F2: int
+        :type F2: Standard_Integer
         :rtype: None
 
         """
         _HLRBRep.HLRBRep_ShapeBounds_swiginit(self,_HLRBRep.new_HLRBRep_ShapeBounds(*args))
-    def Translate(self, *args) -> "void" :
+    def Translate(self, *args):
         """
         :param NV:
-        :type NV: int
+        :type NV: Standard_Integer
         :param NE:
-        :type NE: int
+        :type NE: Standard_Integer
         :param NF:
-        :type NF: int
+        :type NF: Standard_Integer
         :rtype: None
 
         """
         return _HLRBRep.HLRBRep_ShapeBounds_Translate(self, *args)
 
-    def Shape(self, *args) -> "Handle_HLRTopoBRep_OutLiner const &" :
+    def Shape(self, *args):
         """
         :param S:
         :type S: Handle_HLRTopoBRep_OutLiner &
@@ -9295,7 +9309,7 @@ class HLRBRep_ShapeBounds(object):
         """
         return _HLRBRep.HLRBRep_ShapeBounds_Shape(self, *args)
 
-    def ShapeData(self, *args) -> "Handle_MMgt_TShared const &" :
+    def ShapeData(self, *args):
         """
         :param SD:
         :type SD: Handle_MMgt_TShared &
@@ -9306,10 +9320,10 @@ class HLRBRep_ShapeBounds(object):
         """
         return _HLRBRep.HLRBRep_ShapeBounds_ShapeData(self, *args)
 
-    def NbOfIso(self, *args) -> "Standard_Integer" :
+    def NbOfIso(self, *args):
         """
         :param nbIso:
-        :type nbIso: int
+        :type nbIso: Standard_Integer
         :rtype: None
 
         :rtype: int
@@ -9317,39 +9331,39 @@ class HLRBRep_ShapeBounds(object):
         """
         return _HLRBRep.HLRBRep_ShapeBounds_NbOfIso(self, *args)
 
-    def Sizes(self, *args) -> "void" :
+    def Sizes(self):
         """
         :param NV:
-        :type NV: int &
+        :type NV: Standard_Integer &
         :param NE:
-        :type NE: int &
+        :type NE: Standard_Integer &
         :param NF:
-        :type NF: int &
+        :type NF: Standard_Integer &
         :rtype: None
 
         """
-        return _HLRBRep.HLRBRep_ShapeBounds_Sizes(self, *args)
+        return _HLRBRep.HLRBRep_ShapeBounds_Sizes(self)
 
-    def Bounds(self, *args) -> "void" :
+    def Bounds(self):
         """
         :param V1:
-        :type V1: int &
+        :type V1: Standard_Integer &
         :param V2:
-        :type V2: int &
+        :type V2: Standard_Integer &
         :param E1:
-        :type E1: int &
+        :type E1: Standard_Integer &
         :param E2:
-        :type E2: int &
+        :type E2: Standard_Integer &
         :param F1:
-        :type F1: int &
+        :type F1: Standard_Integer &
         :param F2:
-        :type F2: int &
+        :type F2: Standard_Integer &
         :rtype: None
 
         """
-        return _HLRBRep.HLRBRep_ShapeBounds_Bounds(self, *args)
+        return _HLRBRep.HLRBRep_ShapeBounds_Bounds(self)
 
-    def UpdateMinMax(self, *args) -> "void" :
+    def UpdateMinMax(self, *args):
         """
         :param TotMinMax:
         :type TotMinMax: Standard_Address
@@ -9358,12 +9372,12 @@ class HLRBRep_ShapeBounds(object):
         """
         return _HLRBRep.HLRBRep_ShapeBounds_UpdateMinMax(self, *args)
 
-    def MinMax(self, *args) -> "Standard_Address" :
+    def MinMax(self):
         """
         :rtype: Standard_Address
 
         """
-        return _HLRBRep.HLRBRep_ShapeBounds_MinMax(self, *args)
+        return _HLRBRep.HLRBRep_ShapeBounds_MinMax(self)
 
     def __del__(self):
     	try:
@@ -9387,8 +9401,9 @@ HLRBRep_ShapeBounds_swigregister(HLRBRep_ShapeBounds)
 
 class HLRBRep_ShapeToHLR(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
+    def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def Load(*args) -> "Handle_HLRBRep_Data" :
+    def Load(*args):
         """
         * Creates a DataStructure containing the OutLiner <S> depending on the projector <P> and nbIso.
 
@@ -9399,15 +9414,25 @@ class HLRBRep_ShapeToHLR(object):
         :param MST:
         :type MST: BRepTopAdaptor_MapOfShapeTool &
         :param nbIso: default value is 0
-        :type nbIso: int
+        :type nbIso: Standard_Integer
+        :rtype: Handle_HLRBRep_Data
+
+        * Creates a DataStructure containing the OutLiner <S> depending on the projector <P> and nbIso.
+
+        :param S:
+        :type S: Handle_HLRTopoBRep_OutLiner &
+        :param P:
+        :type P: HLRAlgo_Projector &
+        :param MST:
+        :type MST: BRepTopAdaptor_MapOfShapeTool &
+        :param nbIso: default value is 0
+        :type nbIso: Standard_Integer
         :rtype: Handle_HLRBRep_Data
 
         """
         return _HLRBRep.HLRBRep_ShapeToHLR_Load(*args)
 
     Load = staticmethod(Load)
-    def __init__(self): 
-        _HLRBRep.HLRBRep_ShapeToHLR_swiginit(self,_HLRBRep.new_HLRBRep_ShapeToHLR())
     def __del__(self):
     	try:
     		self.thisown = False
@@ -9420,7 +9445,7 @@ HLRBRep_ShapeToHLR._kill_pointed = new_instancemethod(_HLRBRep.HLRBRep_ShapeToHL
 HLRBRep_ShapeToHLR_swigregister = _HLRBRep.HLRBRep_ShapeToHLR_swigregister
 HLRBRep_ShapeToHLR_swigregister(HLRBRep_ShapeToHLR)
 
-def HLRBRep_ShapeToHLR_Load(*args) -> "Handle_HLRBRep_Data" :
+def HLRBRep_ShapeToHLR_Load(*args):
   """
     * Creates a DataStructure containing the OutLiner <S> depending on the projector <P> and nbIso.
 
@@ -9431,7 +9456,19 @@ def HLRBRep_ShapeToHLR_Load(*args) -> "Handle_HLRBRep_Data" :
     :param MST:
     :type MST: BRepTopAdaptor_MapOfShapeTool &
     :param nbIso: default value is 0
-    :type nbIso: int
+    :type nbIso: Standard_Integer
+    :rtype: Handle_HLRBRep_Data
+
+    * Creates a DataStructure containing the OutLiner <S> depending on the projector <P> and nbIso.
+
+    :param S:
+    :type S: Handle_HLRTopoBRep_OutLiner &
+    :param P:
+    :type P: HLRAlgo_Projector &
+    :param MST:
+    :type MST: BRepTopAdaptor_MapOfShapeTool &
+    :param nbIso: default value is 0
+    :type nbIso: Standard_Integer
     :rtype: Handle_HLRBRep_Data
 
     """
@@ -9439,8 +9476,9 @@ def HLRBRep_ShapeToHLR_Load(*args) -> "Handle_HLRBRep_Data" :
 
 class HLRBRep_SurfaceTool(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
+    def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def FirstUParameter(*args) -> "Standard_Real" :
+    def FirstUParameter(*args):
         """
         :param S:
         :type S: Standard_Address
@@ -9450,7 +9488,7 @@ class HLRBRep_SurfaceTool(object):
         return _HLRBRep.HLRBRep_SurfaceTool_FirstUParameter(*args)
 
     FirstUParameter = staticmethod(FirstUParameter)
-    def FirstVParameter(*args) -> "Standard_Real" :
+    def FirstVParameter(*args):
         """
         :param S:
         :type S: Standard_Address
@@ -9460,7 +9498,7 @@ class HLRBRep_SurfaceTool(object):
         return _HLRBRep.HLRBRep_SurfaceTool_FirstVParameter(*args)
 
     FirstVParameter = staticmethod(FirstVParameter)
-    def LastUParameter(*args) -> "Standard_Real" :
+    def LastUParameter(*args):
         """
         :param S:
         :type S: Standard_Address
@@ -9470,7 +9508,7 @@ class HLRBRep_SurfaceTool(object):
         return _HLRBRep.HLRBRep_SurfaceTool_LastUParameter(*args)
 
     LastUParameter = staticmethod(LastUParameter)
-    def LastVParameter(*args) -> "Standard_Real" :
+    def LastVParameter(*args):
         """
         :param S:
         :type S: Standard_Address
@@ -9480,7 +9518,7 @@ class HLRBRep_SurfaceTool(object):
         return _HLRBRep.HLRBRep_SurfaceTool_LastVParameter(*args)
 
     LastVParameter = staticmethod(LastVParameter)
-    def NbUIntervals(*args) -> "Standard_Integer" :
+    def NbUIntervals(*args):
         """
         :param S:
         :type S: Standard_Address
@@ -9492,7 +9530,7 @@ class HLRBRep_SurfaceTool(object):
         return _HLRBRep.HLRBRep_SurfaceTool_NbUIntervals(*args)
 
     NbUIntervals = staticmethod(NbUIntervals)
-    def NbVIntervals(*args) -> "Standard_Integer" :
+    def NbVIntervals(*args):
         """
         :param S:
         :type S: Standard_Address
@@ -9504,7 +9542,7 @@ class HLRBRep_SurfaceTool(object):
         return _HLRBRep.HLRBRep_SurfaceTool_NbVIntervals(*args)
 
     NbVIntervals = staticmethod(NbVIntervals)
-    def UIntervals(*args) -> "void" :
+    def UIntervals(*args):
         """
         :param S:
         :type S: Standard_Address
@@ -9518,7 +9556,7 @@ class HLRBRep_SurfaceTool(object):
         return _HLRBRep.HLRBRep_SurfaceTool_UIntervals(*args)
 
     UIntervals = staticmethod(UIntervals)
-    def VIntervals(*args) -> "void" :
+    def VIntervals(*args):
         """
         :param S:
         :type S: Standard_Address
@@ -9532,7 +9570,7 @@ class HLRBRep_SurfaceTool(object):
         return _HLRBRep.HLRBRep_SurfaceTool_VIntervals(*args)
 
     VIntervals = staticmethod(VIntervals)
-    def UTrim(*args) -> "Handle_Adaptor3d_HSurface" :
+    def UTrim(*args):
         """
         * If <First> >= <Last>
 
@@ -9550,7 +9588,7 @@ class HLRBRep_SurfaceTool(object):
         return _HLRBRep.HLRBRep_SurfaceTool_UTrim(*args)
 
     UTrim = staticmethod(UTrim)
-    def VTrim(*args) -> "Handle_Adaptor3d_HSurface" :
+    def VTrim(*args):
         """
         * If <First> >= <Last>
 
@@ -9568,7 +9606,7 @@ class HLRBRep_SurfaceTool(object):
         return _HLRBRep.HLRBRep_SurfaceTool_VTrim(*args)
 
     VTrim = staticmethod(VTrim)
-    def IsUClosed(*args) -> "Standard_Boolean" :
+    def IsUClosed(*args):
         """
         :param S:
         :type S: Standard_Address
@@ -9578,7 +9616,7 @@ class HLRBRep_SurfaceTool(object):
         return _HLRBRep.HLRBRep_SurfaceTool_IsUClosed(*args)
 
     IsUClosed = staticmethod(IsUClosed)
-    def IsVClosed(*args) -> "Standard_Boolean" :
+    def IsVClosed(*args):
         """
         :param S:
         :type S: Standard_Address
@@ -9588,7 +9626,7 @@ class HLRBRep_SurfaceTool(object):
         return _HLRBRep.HLRBRep_SurfaceTool_IsVClosed(*args)
 
     IsVClosed = staticmethod(IsVClosed)
-    def IsUPeriodic(*args) -> "Standard_Boolean" :
+    def IsUPeriodic(*args):
         """
         :param S:
         :type S: Standard_Address
@@ -9598,7 +9636,7 @@ class HLRBRep_SurfaceTool(object):
         return _HLRBRep.HLRBRep_SurfaceTool_IsUPeriodic(*args)
 
     IsUPeriodic = staticmethod(IsUPeriodic)
-    def UPeriod(*args) -> "Standard_Real" :
+    def UPeriod(*args):
         """
         :param S:
         :type S: Standard_Address
@@ -9608,7 +9646,7 @@ class HLRBRep_SurfaceTool(object):
         return _HLRBRep.HLRBRep_SurfaceTool_UPeriod(*args)
 
     UPeriod = staticmethod(UPeriod)
-    def IsVPeriodic(*args) -> "Standard_Boolean" :
+    def IsVPeriodic(*args):
         """
         :param S:
         :type S: Standard_Address
@@ -9618,7 +9656,7 @@ class HLRBRep_SurfaceTool(object):
         return _HLRBRep.HLRBRep_SurfaceTool_IsVPeriodic(*args)
 
     IsVPeriodic = staticmethod(IsVPeriodic)
-    def VPeriod(*args) -> "Standard_Real" :
+    def VPeriod(*args):
         """
         :param S:
         :type S: Standard_Address
@@ -9628,7 +9666,7 @@ class HLRBRep_SurfaceTool(object):
         return _HLRBRep.HLRBRep_SurfaceTool_VPeriod(*args)
 
     VPeriod = staticmethod(VPeriod)
-    def Value(*args) -> "gp_Pnt" :
+    def Value(*args):
         """
         :param S:
         :type S: Standard_Address
@@ -9642,7 +9680,7 @@ class HLRBRep_SurfaceTool(object):
         return _HLRBRep.HLRBRep_SurfaceTool_Value(*args)
 
     Value = staticmethod(Value)
-    def D0(*args) -> "void" :
+    def D0(*args):
         """
         :param S:
         :type S: Standard_Address
@@ -9658,7 +9696,7 @@ class HLRBRep_SurfaceTool(object):
         return _HLRBRep.HLRBRep_SurfaceTool_D0(*args)
 
     D0 = staticmethod(D0)
-    def D1(*args) -> "void" :
+    def D1(*args):
         """
         :param S:
         :type S: Standard_Address
@@ -9678,7 +9716,7 @@ class HLRBRep_SurfaceTool(object):
         return _HLRBRep.HLRBRep_SurfaceTool_D1(*args)
 
     D1 = staticmethod(D1)
-    def D2(*args) -> "void" :
+    def D2(*args):
         """
         :param S:
         :type S: Standard_Address
@@ -9704,7 +9742,7 @@ class HLRBRep_SurfaceTool(object):
         return _HLRBRep.HLRBRep_SurfaceTool_D2(*args)
 
     D2 = staticmethod(D2)
-    def D3(*args) -> "void" :
+    def D3(*args):
         """
         :param S:
         :type S: Standard_Address
@@ -9738,7 +9776,7 @@ class HLRBRep_SurfaceTool(object):
         return _HLRBRep.HLRBRep_SurfaceTool_D3(*args)
 
     D3 = staticmethod(D3)
-    def DN(*args) -> "gp_Vec" :
+    def DN(*args):
         """
         :param S:
         :type S: Standard_Address
@@ -9747,16 +9785,16 @@ class HLRBRep_SurfaceTool(object):
         :param v:
         :type v: float
         :param Nu:
-        :type Nu: int
+        :type Nu: Standard_Integer
         :param Nv:
-        :type Nv: int
+        :type Nv: Standard_Integer
         :rtype: gp_Vec
 
         """
         return _HLRBRep.HLRBRep_SurfaceTool_DN(*args)
 
     DN = staticmethod(DN)
-    def UResolution(*args) -> "Standard_Real" :
+    def UResolution(*args):
         """
         :param S:
         :type S: Standard_Address
@@ -9768,7 +9806,7 @@ class HLRBRep_SurfaceTool(object):
         return _HLRBRep.HLRBRep_SurfaceTool_UResolution(*args)
 
     UResolution = staticmethod(UResolution)
-    def VResolution(*args) -> "Standard_Real" :
+    def VResolution(*args):
         """
         :param S:
         :type S: Standard_Address
@@ -9780,7 +9818,7 @@ class HLRBRep_SurfaceTool(object):
         return _HLRBRep.HLRBRep_SurfaceTool_VResolution(*args)
 
     VResolution = staticmethod(VResolution)
-    def GetType(*args) -> "GeomAbs_SurfaceType" :
+    def GetType(*args):
         """
         :param S:
         :type S: Standard_Address
@@ -9790,7 +9828,7 @@ class HLRBRep_SurfaceTool(object):
         return _HLRBRep.HLRBRep_SurfaceTool_GetType(*args)
 
     GetType = staticmethod(GetType)
-    def Plane(*args) -> "gp_Pln" :
+    def Plane(*args):
         """
         :param S:
         :type S: Standard_Address
@@ -9800,7 +9838,7 @@ class HLRBRep_SurfaceTool(object):
         return _HLRBRep.HLRBRep_SurfaceTool_Plane(*args)
 
     Plane = staticmethod(Plane)
-    def Cylinder(*args) -> "gp_Cylinder" :
+    def Cylinder(*args):
         """
         :param S:
         :type S: Standard_Address
@@ -9810,7 +9848,7 @@ class HLRBRep_SurfaceTool(object):
         return _HLRBRep.HLRBRep_SurfaceTool_Cylinder(*args)
 
     Cylinder = staticmethod(Cylinder)
-    def Cone(*args) -> "gp_Cone" :
+    def Cone(*args):
         """
         :param S:
         :type S: Standard_Address
@@ -9820,7 +9858,7 @@ class HLRBRep_SurfaceTool(object):
         return _HLRBRep.HLRBRep_SurfaceTool_Cone(*args)
 
     Cone = staticmethod(Cone)
-    def Torus(*args) -> "gp_Torus" :
+    def Torus(*args):
         """
         :param S:
         :type S: Standard_Address
@@ -9830,7 +9868,7 @@ class HLRBRep_SurfaceTool(object):
         return _HLRBRep.HLRBRep_SurfaceTool_Torus(*args)
 
     Torus = staticmethod(Torus)
-    def Sphere(*args) -> "gp_Sphere" :
+    def Sphere(*args):
         """
         :param S:
         :type S: Standard_Address
@@ -9840,7 +9878,7 @@ class HLRBRep_SurfaceTool(object):
         return _HLRBRep.HLRBRep_SurfaceTool_Sphere(*args)
 
     Sphere = staticmethod(Sphere)
-    def Bezier(*args) -> "Handle_Geom_BezierSurface" :
+    def Bezier(*args):
         """
         :param S:
         :type S: Standard_Address
@@ -9850,7 +9888,7 @@ class HLRBRep_SurfaceTool(object):
         return _HLRBRep.HLRBRep_SurfaceTool_Bezier(*args)
 
     Bezier = staticmethod(Bezier)
-    def BSpline(*args) -> "Handle_Geom_BSplineSurface" :
+    def BSpline(*args):
         """
         :param S:
         :type S: Standard_Address
@@ -9860,7 +9898,7 @@ class HLRBRep_SurfaceTool(object):
         return _HLRBRep.HLRBRep_SurfaceTool_BSpline(*args)
 
     BSpline = staticmethod(BSpline)
-    def AxeOfRevolution(*args) -> "gp_Ax1" :
+    def AxeOfRevolution(*args):
         """
         :param S:
         :type S: Standard_Address
@@ -9870,7 +9908,7 @@ class HLRBRep_SurfaceTool(object):
         return _HLRBRep.HLRBRep_SurfaceTool_AxeOfRevolution(*args)
 
     AxeOfRevolution = staticmethod(AxeOfRevolution)
-    def Direction(*args) -> "gp_Dir" :
+    def Direction(*args):
         """
         :param S:
         :type S: Standard_Address
@@ -9880,7 +9918,7 @@ class HLRBRep_SurfaceTool(object):
         return _HLRBRep.HLRBRep_SurfaceTool_Direction(*args)
 
     Direction = staticmethod(Direction)
-    def BasisCurve(*args) -> "Handle_Adaptor3d_HCurve" :
+    def BasisCurve(*args):
         """
         :param S:
         :type S: Standard_Address
@@ -9890,7 +9928,7 @@ class HLRBRep_SurfaceTool(object):
         return _HLRBRep.HLRBRep_SurfaceTool_BasisCurve(*args)
 
     BasisCurve = staticmethod(BasisCurve)
-    def BasisSurface(*args) -> "Handle_Adaptor3d_HSurface" :
+    def BasisSurface(*args):
         """
         :param S:
         :type S: Standard_Address
@@ -9900,7 +9938,7 @@ class HLRBRep_SurfaceTool(object):
         return _HLRBRep.HLRBRep_SurfaceTool_BasisSurface(*args)
 
     BasisSurface = staticmethod(BasisSurface)
-    def OffsetValue(*args) -> "Standard_Real" :
+    def OffsetValue(*args):
         """
         :param S:
         :type S: Standard_Address
@@ -9910,7 +9948,7 @@ class HLRBRep_SurfaceTool(object):
         return _HLRBRep.HLRBRep_SurfaceTool_OffsetValue(*args)
 
     OffsetValue = staticmethod(OffsetValue)
-    def NbSamplesU(*args) -> "Standard_Integer" :
+    def NbSamplesU(*args):
         """
         :param S:
         :type S: Standard_Address
@@ -9928,7 +9966,7 @@ class HLRBRep_SurfaceTool(object):
         return _HLRBRep.HLRBRep_SurfaceTool_NbSamplesU(*args)
 
     NbSamplesU = staticmethod(NbSamplesU)
-    def NbSamplesV(*args) -> "Standard_Integer" :
+    def NbSamplesV(*args):
         """
         :param S:
         :type S: Standard_Address
@@ -9946,8 +9984,6 @@ class HLRBRep_SurfaceTool(object):
         return _HLRBRep.HLRBRep_SurfaceTool_NbSamplesV(*args)
 
     NbSamplesV = staticmethod(NbSamplesV)
-    def __init__(self): 
-        _HLRBRep.HLRBRep_SurfaceTool_swiginit(self,_HLRBRep.new_HLRBRep_SurfaceTool())
     def __del__(self):
     	try:
     		self.thisown = False
@@ -9960,7 +9996,7 @@ HLRBRep_SurfaceTool._kill_pointed = new_instancemethod(_HLRBRep.HLRBRep_SurfaceT
 HLRBRep_SurfaceTool_swigregister = _HLRBRep.HLRBRep_SurfaceTool_swigregister
 HLRBRep_SurfaceTool_swigregister(HLRBRep_SurfaceTool)
 
-def HLRBRep_SurfaceTool_FirstUParameter(*args) -> "Standard_Real" :
+def HLRBRep_SurfaceTool_FirstUParameter(*args):
   """
     :param S:
     :type S: Standard_Address
@@ -9969,7 +10005,7 @@ def HLRBRep_SurfaceTool_FirstUParameter(*args) -> "Standard_Real" :
     """
   return _HLRBRep.HLRBRep_SurfaceTool_FirstUParameter(*args)
 
-def HLRBRep_SurfaceTool_FirstVParameter(*args) -> "Standard_Real" :
+def HLRBRep_SurfaceTool_FirstVParameter(*args):
   """
     :param S:
     :type S: Standard_Address
@@ -9978,7 +10014,7 @@ def HLRBRep_SurfaceTool_FirstVParameter(*args) -> "Standard_Real" :
     """
   return _HLRBRep.HLRBRep_SurfaceTool_FirstVParameter(*args)
 
-def HLRBRep_SurfaceTool_LastUParameter(*args) -> "Standard_Real" :
+def HLRBRep_SurfaceTool_LastUParameter(*args):
   """
     :param S:
     :type S: Standard_Address
@@ -9987,7 +10023,7 @@ def HLRBRep_SurfaceTool_LastUParameter(*args) -> "Standard_Real" :
     """
   return _HLRBRep.HLRBRep_SurfaceTool_LastUParameter(*args)
 
-def HLRBRep_SurfaceTool_LastVParameter(*args) -> "Standard_Real" :
+def HLRBRep_SurfaceTool_LastVParameter(*args):
   """
     :param S:
     :type S: Standard_Address
@@ -9996,7 +10032,7 @@ def HLRBRep_SurfaceTool_LastVParameter(*args) -> "Standard_Real" :
     """
   return _HLRBRep.HLRBRep_SurfaceTool_LastVParameter(*args)
 
-def HLRBRep_SurfaceTool_NbUIntervals(*args) -> "Standard_Integer" :
+def HLRBRep_SurfaceTool_NbUIntervals(*args):
   """
     :param S:
     :type S: Standard_Address
@@ -10007,7 +10043,7 @@ def HLRBRep_SurfaceTool_NbUIntervals(*args) -> "Standard_Integer" :
     """
   return _HLRBRep.HLRBRep_SurfaceTool_NbUIntervals(*args)
 
-def HLRBRep_SurfaceTool_NbVIntervals(*args) -> "Standard_Integer" :
+def HLRBRep_SurfaceTool_NbVIntervals(*args):
   """
     :param S:
     :type S: Standard_Address
@@ -10018,7 +10054,7 @@ def HLRBRep_SurfaceTool_NbVIntervals(*args) -> "Standard_Integer" :
     """
   return _HLRBRep.HLRBRep_SurfaceTool_NbVIntervals(*args)
 
-def HLRBRep_SurfaceTool_UIntervals(*args) -> "void" :
+def HLRBRep_SurfaceTool_UIntervals(*args):
   """
     :param S:
     :type S: Standard_Address
@@ -10031,7 +10067,7 @@ def HLRBRep_SurfaceTool_UIntervals(*args) -> "void" :
     """
   return _HLRBRep.HLRBRep_SurfaceTool_UIntervals(*args)
 
-def HLRBRep_SurfaceTool_VIntervals(*args) -> "void" :
+def HLRBRep_SurfaceTool_VIntervals(*args):
   """
     :param S:
     :type S: Standard_Address
@@ -10044,7 +10080,7 @@ def HLRBRep_SurfaceTool_VIntervals(*args) -> "void" :
     """
   return _HLRBRep.HLRBRep_SurfaceTool_VIntervals(*args)
 
-def HLRBRep_SurfaceTool_UTrim(*args) -> "Handle_Adaptor3d_HSurface" :
+def HLRBRep_SurfaceTool_UTrim(*args):
   """
     * If <First> >= <Last>
 
@@ -10061,7 +10097,7 @@ def HLRBRep_SurfaceTool_UTrim(*args) -> "Handle_Adaptor3d_HSurface" :
     """
   return _HLRBRep.HLRBRep_SurfaceTool_UTrim(*args)
 
-def HLRBRep_SurfaceTool_VTrim(*args) -> "Handle_Adaptor3d_HSurface" :
+def HLRBRep_SurfaceTool_VTrim(*args):
   """
     * If <First> >= <Last>
 
@@ -10078,7 +10114,7 @@ def HLRBRep_SurfaceTool_VTrim(*args) -> "Handle_Adaptor3d_HSurface" :
     """
   return _HLRBRep.HLRBRep_SurfaceTool_VTrim(*args)
 
-def HLRBRep_SurfaceTool_IsUClosed(*args) -> "Standard_Boolean" :
+def HLRBRep_SurfaceTool_IsUClosed(*args):
   """
     :param S:
     :type S: Standard_Address
@@ -10087,7 +10123,7 @@ def HLRBRep_SurfaceTool_IsUClosed(*args) -> "Standard_Boolean" :
     """
   return _HLRBRep.HLRBRep_SurfaceTool_IsUClosed(*args)
 
-def HLRBRep_SurfaceTool_IsVClosed(*args) -> "Standard_Boolean" :
+def HLRBRep_SurfaceTool_IsVClosed(*args):
   """
     :param S:
     :type S: Standard_Address
@@ -10096,7 +10132,7 @@ def HLRBRep_SurfaceTool_IsVClosed(*args) -> "Standard_Boolean" :
     """
   return _HLRBRep.HLRBRep_SurfaceTool_IsVClosed(*args)
 
-def HLRBRep_SurfaceTool_IsUPeriodic(*args) -> "Standard_Boolean" :
+def HLRBRep_SurfaceTool_IsUPeriodic(*args):
   """
     :param S:
     :type S: Standard_Address
@@ -10105,7 +10141,7 @@ def HLRBRep_SurfaceTool_IsUPeriodic(*args) -> "Standard_Boolean" :
     """
   return _HLRBRep.HLRBRep_SurfaceTool_IsUPeriodic(*args)
 
-def HLRBRep_SurfaceTool_UPeriod(*args) -> "Standard_Real" :
+def HLRBRep_SurfaceTool_UPeriod(*args):
   """
     :param S:
     :type S: Standard_Address
@@ -10114,7 +10150,7 @@ def HLRBRep_SurfaceTool_UPeriod(*args) -> "Standard_Real" :
     """
   return _HLRBRep.HLRBRep_SurfaceTool_UPeriod(*args)
 
-def HLRBRep_SurfaceTool_IsVPeriodic(*args) -> "Standard_Boolean" :
+def HLRBRep_SurfaceTool_IsVPeriodic(*args):
   """
     :param S:
     :type S: Standard_Address
@@ -10123,7 +10159,7 @@ def HLRBRep_SurfaceTool_IsVPeriodic(*args) -> "Standard_Boolean" :
     """
   return _HLRBRep.HLRBRep_SurfaceTool_IsVPeriodic(*args)
 
-def HLRBRep_SurfaceTool_VPeriod(*args) -> "Standard_Real" :
+def HLRBRep_SurfaceTool_VPeriod(*args):
   """
     :param S:
     :type S: Standard_Address
@@ -10132,7 +10168,7 @@ def HLRBRep_SurfaceTool_VPeriod(*args) -> "Standard_Real" :
     """
   return _HLRBRep.HLRBRep_SurfaceTool_VPeriod(*args)
 
-def HLRBRep_SurfaceTool_Value(*args) -> "gp_Pnt" :
+def HLRBRep_SurfaceTool_Value(*args):
   """
     :param S:
     :type S: Standard_Address
@@ -10145,7 +10181,7 @@ def HLRBRep_SurfaceTool_Value(*args) -> "gp_Pnt" :
     """
   return _HLRBRep.HLRBRep_SurfaceTool_Value(*args)
 
-def HLRBRep_SurfaceTool_D0(*args) -> "void" :
+def HLRBRep_SurfaceTool_D0(*args):
   """
     :param S:
     :type S: Standard_Address
@@ -10160,7 +10196,7 @@ def HLRBRep_SurfaceTool_D0(*args) -> "void" :
     """
   return _HLRBRep.HLRBRep_SurfaceTool_D0(*args)
 
-def HLRBRep_SurfaceTool_D1(*args) -> "void" :
+def HLRBRep_SurfaceTool_D1(*args):
   """
     :param S:
     :type S: Standard_Address
@@ -10179,7 +10215,7 @@ def HLRBRep_SurfaceTool_D1(*args) -> "void" :
     """
   return _HLRBRep.HLRBRep_SurfaceTool_D1(*args)
 
-def HLRBRep_SurfaceTool_D2(*args) -> "void" :
+def HLRBRep_SurfaceTool_D2(*args):
   """
     :param S:
     :type S: Standard_Address
@@ -10204,7 +10240,7 @@ def HLRBRep_SurfaceTool_D2(*args) -> "void" :
     """
   return _HLRBRep.HLRBRep_SurfaceTool_D2(*args)
 
-def HLRBRep_SurfaceTool_D3(*args) -> "void" :
+def HLRBRep_SurfaceTool_D3(*args):
   """
     :param S:
     :type S: Standard_Address
@@ -10237,7 +10273,7 @@ def HLRBRep_SurfaceTool_D3(*args) -> "void" :
     """
   return _HLRBRep.HLRBRep_SurfaceTool_D3(*args)
 
-def HLRBRep_SurfaceTool_DN(*args) -> "gp_Vec" :
+def HLRBRep_SurfaceTool_DN(*args):
   """
     :param S:
     :type S: Standard_Address
@@ -10246,15 +10282,15 @@ def HLRBRep_SurfaceTool_DN(*args) -> "gp_Vec" :
     :param v:
     :type v: float
     :param Nu:
-    :type Nu: int
+    :type Nu: Standard_Integer
     :param Nv:
-    :type Nv: int
+    :type Nv: Standard_Integer
     :rtype: gp_Vec
 
     """
   return _HLRBRep.HLRBRep_SurfaceTool_DN(*args)
 
-def HLRBRep_SurfaceTool_UResolution(*args) -> "Standard_Real" :
+def HLRBRep_SurfaceTool_UResolution(*args):
   """
     :param S:
     :type S: Standard_Address
@@ -10265,7 +10301,7 @@ def HLRBRep_SurfaceTool_UResolution(*args) -> "Standard_Real" :
     """
   return _HLRBRep.HLRBRep_SurfaceTool_UResolution(*args)
 
-def HLRBRep_SurfaceTool_VResolution(*args) -> "Standard_Real" :
+def HLRBRep_SurfaceTool_VResolution(*args):
   """
     :param S:
     :type S: Standard_Address
@@ -10276,7 +10312,7 @@ def HLRBRep_SurfaceTool_VResolution(*args) -> "Standard_Real" :
     """
   return _HLRBRep.HLRBRep_SurfaceTool_VResolution(*args)
 
-def HLRBRep_SurfaceTool_GetType(*args) -> "GeomAbs_SurfaceType" :
+def HLRBRep_SurfaceTool_GetType(*args):
   """
     :param S:
     :type S: Standard_Address
@@ -10285,7 +10321,7 @@ def HLRBRep_SurfaceTool_GetType(*args) -> "GeomAbs_SurfaceType" :
     """
   return _HLRBRep.HLRBRep_SurfaceTool_GetType(*args)
 
-def HLRBRep_SurfaceTool_Plane(*args) -> "gp_Pln" :
+def HLRBRep_SurfaceTool_Plane(*args):
   """
     :param S:
     :type S: Standard_Address
@@ -10294,7 +10330,7 @@ def HLRBRep_SurfaceTool_Plane(*args) -> "gp_Pln" :
     """
   return _HLRBRep.HLRBRep_SurfaceTool_Plane(*args)
 
-def HLRBRep_SurfaceTool_Cylinder(*args) -> "gp_Cylinder" :
+def HLRBRep_SurfaceTool_Cylinder(*args):
   """
     :param S:
     :type S: Standard_Address
@@ -10303,7 +10339,7 @@ def HLRBRep_SurfaceTool_Cylinder(*args) -> "gp_Cylinder" :
     """
   return _HLRBRep.HLRBRep_SurfaceTool_Cylinder(*args)
 
-def HLRBRep_SurfaceTool_Cone(*args) -> "gp_Cone" :
+def HLRBRep_SurfaceTool_Cone(*args):
   """
     :param S:
     :type S: Standard_Address
@@ -10312,7 +10348,7 @@ def HLRBRep_SurfaceTool_Cone(*args) -> "gp_Cone" :
     """
   return _HLRBRep.HLRBRep_SurfaceTool_Cone(*args)
 
-def HLRBRep_SurfaceTool_Torus(*args) -> "gp_Torus" :
+def HLRBRep_SurfaceTool_Torus(*args):
   """
     :param S:
     :type S: Standard_Address
@@ -10321,7 +10357,7 @@ def HLRBRep_SurfaceTool_Torus(*args) -> "gp_Torus" :
     """
   return _HLRBRep.HLRBRep_SurfaceTool_Torus(*args)
 
-def HLRBRep_SurfaceTool_Sphere(*args) -> "gp_Sphere" :
+def HLRBRep_SurfaceTool_Sphere(*args):
   """
     :param S:
     :type S: Standard_Address
@@ -10330,7 +10366,7 @@ def HLRBRep_SurfaceTool_Sphere(*args) -> "gp_Sphere" :
     """
   return _HLRBRep.HLRBRep_SurfaceTool_Sphere(*args)
 
-def HLRBRep_SurfaceTool_Bezier(*args) -> "Handle_Geom_BezierSurface" :
+def HLRBRep_SurfaceTool_Bezier(*args):
   """
     :param S:
     :type S: Standard_Address
@@ -10339,7 +10375,7 @@ def HLRBRep_SurfaceTool_Bezier(*args) -> "Handle_Geom_BezierSurface" :
     """
   return _HLRBRep.HLRBRep_SurfaceTool_Bezier(*args)
 
-def HLRBRep_SurfaceTool_BSpline(*args) -> "Handle_Geom_BSplineSurface" :
+def HLRBRep_SurfaceTool_BSpline(*args):
   """
     :param S:
     :type S: Standard_Address
@@ -10348,7 +10384,7 @@ def HLRBRep_SurfaceTool_BSpline(*args) -> "Handle_Geom_BSplineSurface" :
     """
   return _HLRBRep.HLRBRep_SurfaceTool_BSpline(*args)
 
-def HLRBRep_SurfaceTool_AxeOfRevolution(*args) -> "gp_Ax1" :
+def HLRBRep_SurfaceTool_AxeOfRevolution(*args):
   """
     :param S:
     :type S: Standard_Address
@@ -10357,7 +10393,7 @@ def HLRBRep_SurfaceTool_AxeOfRevolution(*args) -> "gp_Ax1" :
     """
   return _HLRBRep.HLRBRep_SurfaceTool_AxeOfRevolution(*args)
 
-def HLRBRep_SurfaceTool_Direction(*args) -> "gp_Dir" :
+def HLRBRep_SurfaceTool_Direction(*args):
   """
     :param S:
     :type S: Standard_Address
@@ -10366,7 +10402,7 @@ def HLRBRep_SurfaceTool_Direction(*args) -> "gp_Dir" :
     """
   return _HLRBRep.HLRBRep_SurfaceTool_Direction(*args)
 
-def HLRBRep_SurfaceTool_BasisCurve(*args) -> "Handle_Adaptor3d_HCurve" :
+def HLRBRep_SurfaceTool_BasisCurve(*args):
   """
     :param S:
     :type S: Standard_Address
@@ -10375,7 +10411,7 @@ def HLRBRep_SurfaceTool_BasisCurve(*args) -> "Handle_Adaptor3d_HCurve" :
     """
   return _HLRBRep.HLRBRep_SurfaceTool_BasisCurve(*args)
 
-def HLRBRep_SurfaceTool_BasisSurface(*args) -> "Handle_Adaptor3d_HSurface" :
+def HLRBRep_SurfaceTool_BasisSurface(*args):
   """
     :param S:
     :type S: Standard_Address
@@ -10384,7 +10420,7 @@ def HLRBRep_SurfaceTool_BasisSurface(*args) -> "Handle_Adaptor3d_HSurface" :
     """
   return _HLRBRep.HLRBRep_SurfaceTool_BasisSurface(*args)
 
-def HLRBRep_SurfaceTool_OffsetValue(*args) -> "Standard_Real" :
+def HLRBRep_SurfaceTool_OffsetValue(*args):
   """
     :param S:
     :type S: Standard_Address
@@ -10393,7 +10429,7 @@ def HLRBRep_SurfaceTool_OffsetValue(*args) -> "Standard_Real" :
     """
   return _HLRBRep.HLRBRep_SurfaceTool_OffsetValue(*args)
 
-def HLRBRep_SurfaceTool_NbSamplesU(*args) -> "Standard_Integer" :
+def HLRBRep_SurfaceTool_NbSamplesU(*args):
   """
     :param S:
     :type S: Standard_Address
@@ -10410,7 +10446,7 @@ def HLRBRep_SurfaceTool_NbSamplesU(*args) -> "Standard_Integer" :
     """
   return _HLRBRep.HLRBRep_SurfaceTool_NbSamplesU(*args)
 
-def HLRBRep_SurfaceTool_NbSamplesV(*args) -> "Standard_Integer" :
+def HLRBRep_SurfaceTool_NbSamplesV(*args):
   """
     :param S:
     :type S: Standard_Address
@@ -10440,21 +10476,21 @@ class HLRBRep_TheCSFunctionOfInterCSurf(object):
 
         """
         _HLRBRep.HLRBRep_TheCSFunctionOfInterCSurf_swiginit(self,_HLRBRep.new_HLRBRep_TheCSFunctionOfInterCSurf(*args))
-    def NbVariables(self, *args) -> "Standard_Integer" :
+    def NbVariables(self):
         """
         :rtype: int
 
         """
-        return _HLRBRep.HLRBRep_TheCSFunctionOfInterCSurf_NbVariables(self, *args)
+        return _HLRBRep.HLRBRep_TheCSFunctionOfInterCSurf_NbVariables(self)
 
-    def NbEquations(self, *args) -> "Standard_Integer" :
+    def NbEquations(self):
         """
         :rtype: int
 
         """
-        return _HLRBRep.HLRBRep_TheCSFunctionOfInterCSurf_NbEquations(self, *args)
+        return _HLRBRep.HLRBRep_TheCSFunctionOfInterCSurf_NbEquations(self)
 
-    def Value(self, *args) -> "Standard_Boolean" :
+    def Value(self, *args):
         """
         :param X:
         :type X: math_Vector &
@@ -10465,7 +10501,7 @@ class HLRBRep_TheCSFunctionOfInterCSurf(object):
         """
         return _HLRBRep.HLRBRep_TheCSFunctionOfInterCSurf_Value(self, *args)
 
-    def Derivatives(self, *args) -> "Standard_Boolean" :
+    def Derivatives(self, *args):
         """
         :param X:
         :type X: math_Vector &
@@ -10476,7 +10512,7 @@ class HLRBRep_TheCSFunctionOfInterCSurf(object):
         """
         return _HLRBRep.HLRBRep_TheCSFunctionOfInterCSurf_Derivatives(self, *args)
 
-    def Values(self, *args) -> "Standard_Boolean" :
+    def Values(self, *args):
         """
         :param X:
         :type X: math_Vector &
@@ -10489,33 +10525,33 @@ class HLRBRep_TheCSFunctionOfInterCSurf(object):
         """
         return _HLRBRep.HLRBRep_TheCSFunctionOfInterCSurf_Values(self, *args)
 
-    def Point(self, *args) -> "gp_Pnt const" :
+    def Point(self):
         """
         :rtype: gp_Pnt
 
         """
-        return _HLRBRep.HLRBRep_TheCSFunctionOfInterCSurf_Point(self, *args)
+        return _HLRBRep.HLRBRep_TheCSFunctionOfInterCSurf_Point(self)
 
-    def Root(self, *args) -> "Standard_Real" :
+    def Root(self):
         """
         :rtype: float
 
         """
-        return _HLRBRep.HLRBRep_TheCSFunctionOfInterCSurf_Root(self, *args)
+        return _HLRBRep.HLRBRep_TheCSFunctionOfInterCSurf_Root(self)
 
-    def AuxillarSurface(self, *args) -> "Standard_Address const &" :
+    def AuxillarSurface(self):
         """
         :rtype: Standard_Address
 
         """
-        return _HLRBRep.HLRBRep_TheCSFunctionOfInterCSurf_AuxillarSurface(self, *args)
+        return _HLRBRep.HLRBRep_TheCSFunctionOfInterCSurf_AuxillarSurface(self)
 
-    def AuxillarCurve(self, *args) -> "gp_Lin const" :
+    def AuxillarCurve(self):
         """
         :rtype: gp_Lin
 
         """
-        return _HLRBRep.HLRBRep_TheCSFunctionOfInterCSurf_AuxillarCurve(self, *args)
+        return _HLRBRep.HLRBRep_TheCSFunctionOfInterCSurf_AuxillarCurve(self)
 
     def __del__(self):
     	try:
@@ -10551,21 +10587,21 @@ class HLRBRep_TheDistBetweenPCurvesOfTheIntPCurvePCurveOfCInter(object):
 
         """
         _HLRBRep.HLRBRep_TheDistBetweenPCurvesOfTheIntPCurvePCurveOfCInter_swiginit(self,_HLRBRep.new_HLRBRep_TheDistBetweenPCurvesOfTheIntPCurvePCurveOfCInter(*args))
-    def NbVariables(self, *args) -> "Standard_Integer" :
+    def NbVariables(self):
         """
         :rtype: int
 
         """
-        return _HLRBRep.HLRBRep_TheDistBetweenPCurvesOfTheIntPCurvePCurveOfCInter_NbVariables(self, *args)
+        return _HLRBRep.HLRBRep_TheDistBetweenPCurvesOfTheIntPCurvePCurveOfCInter_NbVariables(self)
 
-    def NbEquations(self, *args) -> "Standard_Integer" :
+    def NbEquations(self):
         """
         :rtype: int
 
         """
-        return _HLRBRep.HLRBRep_TheDistBetweenPCurvesOfTheIntPCurvePCurveOfCInter_NbEquations(self, *args)
+        return _HLRBRep.HLRBRep_TheDistBetweenPCurvesOfTheIntPCurvePCurveOfCInter_NbEquations(self)
 
-    def Value(self, *args) -> "Standard_Boolean" :
+    def Value(self, *args):
         """
         :param X:
         :type X: math_Vector &
@@ -10576,7 +10612,7 @@ class HLRBRep_TheDistBetweenPCurvesOfTheIntPCurvePCurveOfCInter(object):
         """
         return _HLRBRep.HLRBRep_TheDistBetweenPCurvesOfTheIntPCurvePCurveOfCInter_Value(self, *args)
 
-    def Derivatives(self, *args) -> "Standard_Boolean" :
+    def Derivatives(self, *args):
         """
         :param X:
         :type X: math_Vector &
@@ -10587,7 +10623,7 @@ class HLRBRep_TheDistBetweenPCurvesOfTheIntPCurvePCurveOfCInter(object):
         """
         return _HLRBRep.HLRBRep_TheDistBetweenPCurvesOfTheIntPCurvePCurveOfCInter_Derivatives(self, *args)
 
-    def Values(self, *args) -> "Standard_Boolean" :
+    def Values(self, *args):
         """
         :param X:
         :type X: math_Vector &
@@ -10636,6 +10672,20 @@ class HLRBRep_TheExactInterCSurf(object):
         :type MarginCoef: float
         :rtype: None
 
+        :param U:
+        :type U: float
+        :param V:
+        :type V: float
+        :param W:
+        :type W: float
+        :param F:
+        :type F: HLRBRep_TheCSFunctionOfInterCSurf &
+        :param TolTangency:
+        :type TolTangency: float
+        :param MarginCoef: default value is 0.0
+        :type MarginCoef: float
+        :rtype: None
+
         :param F:
         :type F: HLRBRep_TheCSFunctionOfInterCSurf &
         :param TolTangency:
@@ -10644,7 +10694,7 @@ class HLRBRep_TheExactInterCSurf(object):
 
         """
         _HLRBRep.HLRBRep_TheExactInterCSurf_swiginit(self,_HLRBRep.new_HLRBRep_TheExactInterCSurf(*args))
-    def Perform(self, *args) -> "void" :
+    def Perform(self, *args):
         """
         :param U:
         :type U: float
@@ -10671,35 +10721,35 @@ class HLRBRep_TheExactInterCSurf(object):
         """
         return _HLRBRep.HLRBRep_TheExactInterCSurf_Perform(self, *args)
 
-    def IsDone(self, *args) -> "Standard_Boolean" :
+    def IsDone(self):
         """
         :rtype: bool
 
         """
-        return _HLRBRep.HLRBRep_TheExactInterCSurf_IsDone(self, *args)
+        return _HLRBRep.HLRBRep_TheExactInterCSurf_IsDone(self)
 
-    def IsEmpty(self, *args) -> "Standard_Boolean" :
+    def IsEmpty(self):
         """
         :rtype: bool
 
         """
-        return _HLRBRep.HLRBRep_TheExactInterCSurf_IsEmpty(self, *args)
+        return _HLRBRep.HLRBRep_TheExactInterCSurf_IsEmpty(self)
 
-    def Point(self, *args) -> "gp_Pnt const" :
+    def Point(self):
         """
         :rtype: gp_Pnt
 
         """
-        return _HLRBRep.HLRBRep_TheExactInterCSurf_Point(self, *args)
+        return _HLRBRep.HLRBRep_TheExactInterCSurf_Point(self)
 
-    def ParameterOnCurve(self, *args) -> "Standard_Real" :
+    def ParameterOnCurve(self):
         """
         :rtype: float
 
         """
-        return _HLRBRep.HLRBRep_TheExactInterCSurf_ParameterOnCurve(self, *args)
+        return _HLRBRep.HLRBRep_TheExactInterCSurf_ParameterOnCurve(self)
 
-    def ParameterOnSurface(self, *args) -> "void" :
+    def ParameterOnSurface(self):
         """
         :param U:
         :type U: float &
@@ -10708,14 +10758,14 @@ class HLRBRep_TheExactInterCSurf(object):
         :rtype: None
 
         """
-        return _HLRBRep.HLRBRep_TheExactInterCSurf_ParameterOnSurface(self, *args)
+        return _HLRBRep.HLRBRep_TheExactInterCSurf_ParameterOnSurface(self)
 
-    def Function(self, *args) -> "HLRBRep_TheCSFunctionOfInterCSurf &" :
+    def Function(self):
         """
         :rtype: HLRBRep_TheCSFunctionOfInterCSurf
 
         """
-        return _HLRBRep.HLRBRep_TheExactInterCSurf_Function(self, *args)
+        return _HLRBRep.HLRBRep_TheExactInterCSurf_Function(self)
 
     def __del__(self):
     	try:
@@ -10815,7 +10865,7 @@ class HLRBRep_TheIntConicCurveOfCInter(OCC.IntRes2d.IntRes2d_Intersection):
 
         """
         _HLRBRep.HLRBRep_TheIntConicCurveOfCInter_swiginit(self,_HLRBRep.new_HLRBRep_TheIntConicCurveOfCInter(*args))
-    def Perform(self, *args) -> "void" :
+    def Perform(self, *args):
         """
         :param L:
         :type L: gp_Lin2d
@@ -10906,13 +10956,13 @@ HLRBRep_TheIntConicCurveOfCInter_swigregister(HLRBRep_TheIntConicCurveOfCInter)
 class HLRBRep_TheIntPCurvePCurveOfCInter(OCC.IntRes2d.IntRes2d_Intersection):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _HLRBRep.HLRBRep_TheIntPCurvePCurveOfCInter_swiginit(self,_HLRBRep.new_HLRBRep_TheIntPCurvePCurveOfCInter(*args))
-    def Perform(self, *args) -> "void" :
+        _HLRBRep.HLRBRep_TheIntPCurvePCurveOfCInter_swiginit(self,_HLRBRep.new_HLRBRep_TheIntPCurvePCurveOfCInter())
+    def Perform(self, *args):
         """
         :param Curve1:
         :type Curve1: Standard_Address &
@@ -11005,7 +11055,7 @@ class HLRBRep_TheInterferenceOfInterCSurf(OCC.Intf.Intf_Interference):
 
         """
         _HLRBRep.HLRBRep_TheInterferenceOfInterCSurf_swiginit(self,_HLRBRep.new_HLRBRep_TheInterferenceOfInterCSurf(*args))
-    def Perform(self, *args) -> "void" :
+    def Perform(self, *args):
         """
         :param thePolyg:
         :type thePolyg: HLRBRep_ThePolygonOfInterCSurf &
@@ -11052,7 +11102,7 @@ class HLRBRep_TheInterferenceOfInterCSurf(OCC.Intf.Intf_Interference):
         """
         return _HLRBRep.HLRBRep_TheInterferenceOfInterCSurf_Perform(self, *args)
 
-    def Interference(self, *args) -> "void" :
+    def Interference(self, *args):
         """
         :param thePolyg:
         :type thePolyg: HLRBRep_ThePolygonOfInterCSurf &
@@ -11108,7 +11158,7 @@ class HLRBRep_TheIntersectorOfTheIntConicCurveOfCInter(OCC.IntRes2d.IntRes2d_Int
 
         """
         _HLRBRep.HLRBRep_TheIntersectorOfTheIntConicCurveOfCInter_swiginit(self,_HLRBRep.new_HLRBRep_TheIntersectorOfTheIntConicCurveOfCInter(*args))
-    def Perform(self, *args) -> "void" :
+    def Perform(self, *args):
         """
         :param ITool:
         :type ITool: IntCurve_IConicTool &
@@ -11127,7 +11177,7 @@ class HLRBRep_TheIntersectorOfTheIntConicCurveOfCInter(OCC.IntRes2d.IntRes2d_Int
         """
         return _HLRBRep.HLRBRep_TheIntersectorOfTheIntConicCurveOfCInter_Perform(self, *args)
 
-    def FindU(self, *args) -> "Standard_Real" :
+    def FindU(self, *args):
         """
         :param parameter:
         :type parameter: float
@@ -11142,7 +11192,7 @@ class HLRBRep_TheIntersectorOfTheIntConicCurveOfCInter(OCC.IntRes2d.IntRes2d_Int
         """
         return _HLRBRep.HLRBRep_TheIntersectorOfTheIntConicCurveOfCInter_FindU(self, *args)
 
-    def FindV(self, *args) -> "Standard_Real" :
+    def FindV(self, *args):
         """
         :param parameter:
         :type parameter: float
@@ -11165,7 +11215,7 @@ class HLRBRep_TheIntersectorOfTheIntConicCurveOfCInter(OCC.IntRes2d.IntRes2d_Int
         """
         return _HLRBRep.HLRBRep_TheIntersectorOfTheIntConicCurveOfCInter_FindV(self, *args)
 
-    def And_Domaine_Objet1_Intersections(self, *args) -> "void" :
+    def And_Domaine_Objet1_Intersections(self, *args):
         """
         :param TheImpTool:
         :type TheImpTool: IntCurve_IConicTool &
@@ -11176,7 +11226,7 @@ class HLRBRep_TheIntersectorOfTheIntConicCurveOfCInter(OCC.IntRes2d.IntRes2d_Int
         :param TheParCurveDomain:
         :type TheParCurveDomain: IntRes2d_Domain &
         :param NbResultats:
-        :type NbResultats: int &
+        :type NbResultats: Standard_Integer &
         :param Inter2_And_Domain2:
         :type Inter2_And_Domain2: TColStd_Array1OfReal &
         :param Inter1:
@@ -11241,7 +11291,7 @@ class HLRBRep_TheLocateExtPCOfTheProjPCurOfCInter(object):
 
         """
         _HLRBRep.HLRBRep_TheLocateExtPCOfTheProjPCurOfCInter_swiginit(self,_HLRBRep.new_HLRBRep_TheLocateExtPCOfTheProjPCurOfCInter(*args))
-    def Initialize(self, *args) -> "void" :
+    def Initialize(self, *args):
         """
         :param C:
         :type C: Standard_Address &
@@ -11256,7 +11306,7 @@ class HLRBRep_TheLocateExtPCOfTheProjPCurOfCInter(object):
         """
         return _HLRBRep.HLRBRep_TheLocateExtPCOfTheProjPCurOfCInter_Initialize(self, *args)
 
-    def Perform(self, *args) -> "void" :
+    def Perform(self, *args):
         """
         :param P:
         :type P: gp_Pnt2d
@@ -11267,33 +11317,33 @@ class HLRBRep_TheLocateExtPCOfTheProjPCurOfCInter(object):
         """
         return _HLRBRep.HLRBRep_TheLocateExtPCOfTheProjPCurOfCInter_Perform(self, *args)
 
-    def IsDone(self, *args) -> "Standard_Boolean" :
+    def IsDone(self):
         """
         :rtype: bool
 
         """
-        return _HLRBRep.HLRBRep_TheLocateExtPCOfTheProjPCurOfCInter_IsDone(self, *args)
+        return _HLRBRep.HLRBRep_TheLocateExtPCOfTheProjPCurOfCInter_IsDone(self)
 
-    def SquareDistance(self, *args) -> "Standard_Real" :
+    def SquareDistance(self):
         """
         :rtype: float
 
         """
-        return _HLRBRep.HLRBRep_TheLocateExtPCOfTheProjPCurOfCInter_SquareDistance(self, *args)
+        return _HLRBRep.HLRBRep_TheLocateExtPCOfTheProjPCurOfCInter_SquareDistance(self)
 
-    def IsMin(self, *args) -> "Standard_Boolean" :
+    def IsMin(self):
         """
         :rtype: bool
 
         """
-        return _HLRBRep.HLRBRep_TheLocateExtPCOfTheProjPCurOfCInter_IsMin(self, *args)
+        return _HLRBRep.HLRBRep_TheLocateExtPCOfTheProjPCurOfCInter_IsMin(self)
 
-    def Point(self, *args) -> "Extrema_POnCurv2d const &" :
+    def Point(self):
         """
         :rtype: Extrema_POnCurv2d
 
         """
-        return _HLRBRep.HLRBRep_TheLocateExtPCOfTheProjPCurOfCInter_Point(self, *args)
+        return _HLRBRep.HLRBRep_TheLocateExtPCOfTheProjPCurOfCInter_Point(self)
 
     def __del__(self):
     	try:
@@ -11321,7 +11371,7 @@ class HLRBRep_ThePolygon2dOfTheIntPCurvePCurveOfCInter(OCC.Intf.Intf_Polygon2d):
         :param Curve:
         :type Curve: Standard_Address &
         :param NbPnt:
-        :type NbPnt: int
+        :type NbPnt: Standard_Integer
         :param Domain:
         :type Domain: IntRes2d_Domain &
         :param Tol:
@@ -11331,7 +11381,7 @@ class HLRBRep_ThePolygon2dOfTheIntPCurvePCurveOfCInter(OCC.Intf.Intf_Polygon2d):
         :param Curve:
         :type Curve: Standard_Address &
         :param NbPnt:
-        :type NbPnt: int
+        :type NbPnt: Standard_Integer
         :param Domain:
         :type Domain: IntRes2d_Domain &
         :param Tol:
@@ -11342,7 +11392,7 @@ class HLRBRep_ThePolygon2dOfTheIntPCurvePCurveOfCInter(OCC.Intf.Intf_Polygon2d):
 
         """
         _HLRBRep.HLRBRep_ThePolygon2dOfTheIntPCurvePCurveOfCInter_swiginit(self,_HLRBRep.new_HLRBRep_ThePolygon2dOfTheIntPCurvePCurveOfCInter(*args))
-    def ComputeWithBox(self, *args) -> "void" :
+    def ComputeWithBox(self, *args):
         """
         :param Curve:
         :type Curve: Standard_Address &
@@ -11353,7 +11403,7 @@ class HLRBRep_ThePolygon2dOfTheIntPCurvePCurveOfCInter(OCC.Intf.Intf_Polygon2d):
         """
         return _HLRBRep.HLRBRep_ThePolygon2dOfTheIntPCurvePCurveOfCInter_ComputeWithBox(self, *args)
 
-    def SetDeflectionOverEstimation(self, *args) -> "void" :
+    def SetDeflectionOverEstimation(self, *args):
         """
         :param x:
         :type x: float
@@ -11362,7 +11412,7 @@ class HLRBRep_ThePolygon2dOfTheIntPCurvePCurveOfCInter(OCC.Intf.Intf_Polygon2d):
         """
         return _HLRBRep.HLRBRep_ThePolygon2dOfTheIntPCurvePCurveOfCInter_SetDeflectionOverEstimation(self, *args)
 
-    def Closed(self, *args) -> "void" :
+    def Closed(self, *args):
         """
         :param clos:
         :type clos: bool
@@ -11371,31 +11421,31 @@ class HLRBRep_ThePolygon2dOfTheIntPCurvePCurveOfCInter(OCC.Intf.Intf_Polygon2d):
         """
         return _HLRBRep.HLRBRep_ThePolygon2dOfTheIntPCurvePCurveOfCInter_Closed(self, *args)
 
-    def InfParameter(self, *args) -> "Standard_Real" :
+    def InfParameter(self):
         """
         :rtype: float
 
         """
-        return _HLRBRep.HLRBRep_ThePolygon2dOfTheIntPCurvePCurveOfCInter_InfParameter(self, *args)
+        return _HLRBRep.HLRBRep_ThePolygon2dOfTheIntPCurvePCurveOfCInter_InfParameter(self)
 
-    def SupParameter(self, *args) -> "Standard_Real" :
+    def SupParameter(self):
         """
         :rtype: float
 
         """
-        return _HLRBRep.HLRBRep_ThePolygon2dOfTheIntPCurvePCurveOfCInter_SupParameter(self, *args)
+        return _HLRBRep.HLRBRep_ThePolygon2dOfTheIntPCurvePCurveOfCInter_SupParameter(self)
 
-    def AutoIntersectionIsPossible(self, *args) -> "Standard_Boolean" :
+    def AutoIntersectionIsPossible(self):
         """
         :rtype: bool
 
         """
-        return _HLRBRep.HLRBRep_ThePolygon2dOfTheIntPCurvePCurveOfCInter_AutoIntersectionIsPossible(self, *args)
+        return _HLRBRep.HLRBRep_ThePolygon2dOfTheIntPCurvePCurveOfCInter_AutoIntersectionIsPossible(self)
 
-    def ApproxParamOnCurve(self, *args) -> "Standard_Real" :
+    def ApproxParamOnCurve(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param ParamOnLine:
         :type ParamOnLine: float
         :rtype: float
@@ -11403,7 +11453,7 @@ class HLRBRep_ThePolygon2dOfTheIntPCurvePCurveOfCInter(OCC.Intf.Intf_Polygon2d):
         """
         return _HLRBRep.HLRBRep_ThePolygon2dOfTheIntPCurvePCurveOfCInter_ApproxParamOnCurve(self, *args)
 
-    def CalculRegion(self, *args) -> "Standard_Integer" :
+    def CalculRegion(self, *args):
         """
         :param x:
         :type x: float
@@ -11422,12 +11472,12 @@ class HLRBRep_ThePolygon2dOfTheIntPCurvePCurveOfCInter(OCC.Intf.Intf_Polygon2d):
         """
         return _HLRBRep.HLRBRep_ThePolygon2dOfTheIntPCurvePCurveOfCInter_CalculRegion(self, *args)
 
-    def Dump(self, *args) -> "void" :
+    def Dump(self):
         """
         :rtype: None
 
         """
-        return _HLRBRep.HLRBRep_ThePolygon2dOfTheIntPCurvePCurveOfCInter_Dump(self, *args)
+        return _HLRBRep.HLRBRep_ThePolygon2dOfTheIntPCurvePCurveOfCInter_Dump(self)
 
     def __del__(self):
     	try:
@@ -11458,7 +11508,7 @@ class HLRBRep_ThePolygonOfInterCSurf(object):
         :param Curve:
         :type Curve: gp_Lin
         :param NbPnt:
-        :type NbPnt: int
+        :type NbPnt: Standard_Integer
         :rtype: None
 
         :param Curve:
@@ -11468,7 +11518,7 @@ class HLRBRep_ThePolygonOfInterCSurf(object):
         :param U2:
         :type U2: float
         :param NbPnt:
-        :type NbPnt: int
+        :type NbPnt: Standard_Integer
         :rtype: None
 
         :param Curve:
@@ -11479,21 +11529,21 @@ class HLRBRep_ThePolygonOfInterCSurf(object):
 
         """
         _HLRBRep.HLRBRep_ThePolygonOfInterCSurf_swiginit(self,_HLRBRep.new_HLRBRep_ThePolygonOfInterCSurf(*args))
-    def Bounding(self, *args) -> "Bnd_Box const &" :
+    def Bounding(self):
         """
         :rtype: Bnd_Box
 
         """
-        return _HLRBRep.HLRBRep_ThePolygonOfInterCSurf_Bounding(self, *args)
+        return _HLRBRep.HLRBRep_ThePolygonOfInterCSurf_Bounding(self)
 
-    def DeflectionOverEstimation(self, *args) -> "Standard_Real" :
+    def DeflectionOverEstimation(self):
         """
         :rtype: float
 
         """
-        return _HLRBRep.HLRBRep_ThePolygonOfInterCSurf_DeflectionOverEstimation(self, *args)
+        return _HLRBRep.HLRBRep_ThePolygonOfInterCSurf_DeflectionOverEstimation(self)
 
-    def SetDeflectionOverEstimation(self, *args) -> "void" :
+    def SetDeflectionOverEstimation(self, *args):
         """
         :param x:
         :type x: float
@@ -11502,7 +11552,7 @@ class HLRBRep_ThePolygonOfInterCSurf(object):
         """
         return _HLRBRep.HLRBRep_ThePolygonOfInterCSurf_SetDeflectionOverEstimation(self, *args)
 
-    def Closed(self, *args) -> "Standard_Boolean" :
+    def Closed(self, *args):
         """
         :param clos:
         :type clos: bool
@@ -11513,49 +11563,49 @@ class HLRBRep_ThePolygonOfInterCSurf(object):
         """
         return _HLRBRep.HLRBRep_ThePolygonOfInterCSurf_Closed(self, *args)
 
-    def NbSegments(self, *args) -> "Standard_Integer" :
+    def NbSegments(self):
         """
         :rtype: int
 
         """
-        return _HLRBRep.HLRBRep_ThePolygonOfInterCSurf_NbSegments(self, *args)
+        return _HLRBRep.HLRBRep_ThePolygonOfInterCSurf_NbSegments(self)
 
-    def BeginOfSeg(self, *args) -> "gp_Pnt const" :
+    def BeginOfSeg(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: gp_Pnt
 
         """
         return _HLRBRep.HLRBRep_ThePolygonOfInterCSurf_BeginOfSeg(self, *args)
 
-    def EndOfSeg(self, *args) -> "gp_Pnt const" :
+    def EndOfSeg(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: gp_Pnt
 
         """
         return _HLRBRep.HLRBRep_ThePolygonOfInterCSurf_EndOfSeg(self, *args)
 
-    def InfParameter(self, *args) -> "Standard_Real" :
+    def InfParameter(self):
         """
         :rtype: float
 
         """
-        return _HLRBRep.HLRBRep_ThePolygonOfInterCSurf_InfParameter(self, *args)
+        return _HLRBRep.HLRBRep_ThePolygonOfInterCSurf_InfParameter(self)
 
-    def SupParameter(self, *args) -> "Standard_Real" :
+    def SupParameter(self):
         """
         :rtype: float
 
         """
-        return _HLRBRep.HLRBRep_ThePolygonOfInterCSurf_SupParameter(self, *args)
+        return _HLRBRep.HLRBRep_ThePolygonOfInterCSurf_SupParameter(self)
 
-    def ApproxParamOnCurve(self, *args) -> "Standard_Real" :
+    def ApproxParamOnCurve(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param ParamOnLine:
         :type ParamOnLine: float
         :rtype: float
@@ -11563,12 +11613,12 @@ class HLRBRep_ThePolygonOfInterCSurf(object):
         """
         return _HLRBRep.HLRBRep_ThePolygonOfInterCSurf_ApproxParamOnCurve(self, *args)
 
-    def Dump(self, *args) -> "void" :
+    def Dump(self):
         """
         :rtype: None
 
         """
-        return _HLRBRep.HLRBRep_ThePolygonOfInterCSurf_Dump(self, *args)
+        return _HLRBRep.HLRBRep_ThePolygonOfInterCSurf_Dump(self)
 
     def __del__(self):
     	try:
@@ -11595,8 +11645,9 @@ HLRBRep_ThePolygonOfInterCSurf_swigregister(HLRBRep_ThePolygonOfInterCSurf)
 
 class HLRBRep_ThePolygonToolOfInterCSurf(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
+    def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def Bounding(*args) -> "Bnd_Box const &" :
+    def Bounding(*args):
         """
         :param thePolygon:
         :type thePolygon: HLRBRep_ThePolygonOfInterCSurf &
@@ -11606,7 +11657,7 @@ class HLRBRep_ThePolygonToolOfInterCSurf(object):
         return _HLRBRep.HLRBRep_ThePolygonToolOfInterCSurf_Bounding(*args)
 
     Bounding = staticmethod(Bounding)
-    def DeflectionOverEstimation(*args) -> "Standard_Real" :
+    def DeflectionOverEstimation(*args):
         """
         :param thePolygon:
         :type thePolygon: HLRBRep_ThePolygonOfInterCSurf &
@@ -11616,7 +11667,7 @@ class HLRBRep_ThePolygonToolOfInterCSurf(object):
         return _HLRBRep.HLRBRep_ThePolygonToolOfInterCSurf_DeflectionOverEstimation(*args)
 
     DeflectionOverEstimation = staticmethod(DeflectionOverEstimation)
-    def Closed(*args) -> "Standard_Boolean" :
+    def Closed(*args):
         """
         :param thePolygon:
         :type thePolygon: HLRBRep_ThePolygonOfInterCSurf &
@@ -11626,7 +11677,7 @@ class HLRBRep_ThePolygonToolOfInterCSurf(object):
         return _HLRBRep.HLRBRep_ThePolygonToolOfInterCSurf_Closed(*args)
 
     Closed = staticmethod(Closed)
-    def NbSegments(*args) -> "Standard_Integer" :
+    def NbSegments(*args):
         """
         :param thePolygon:
         :type thePolygon: HLRBRep_ThePolygonOfInterCSurf &
@@ -11636,31 +11687,31 @@ class HLRBRep_ThePolygonToolOfInterCSurf(object):
         return _HLRBRep.HLRBRep_ThePolygonToolOfInterCSurf_NbSegments(*args)
 
     NbSegments = staticmethod(NbSegments)
-    def BeginOfSeg(*args) -> "gp_Pnt const" :
+    def BeginOfSeg(*args):
         """
         :param thePolygon:
         :type thePolygon: HLRBRep_ThePolygonOfInterCSurf &
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: gp_Pnt
 
         """
         return _HLRBRep.HLRBRep_ThePolygonToolOfInterCSurf_BeginOfSeg(*args)
 
     BeginOfSeg = staticmethod(BeginOfSeg)
-    def EndOfSeg(*args) -> "gp_Pnt const" :
+    def EndOfSeg(*args):
         """
         :param thePolygon:
         :type thePolygon: HLRBRep_ThePolygonOfInterCSurf &
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: gp_Pnt
 
         """
         return _HLRBRep.HLRBRep_ThePolygonToolOfInterCSurf_EndOfSeg(*args)
 
     EndOfSeg = staticmethod(EndOfSeg)
-    def Dump(*args) -> "void" :
+    def Dump(*args):
         """
         :param thePolygon:
         :type thePolygon: HLRBRep_ThePolygonOfInterCSurf &
@@ -11670,8 +11721,6 @@ class HLRBRep_ThePolygonToolOfInterCSurf(object):
         return _HLRBRep.HLRBRep_ThePolygonToolOfInterCSurf_Dump(*args)
 
     Dump = staticmethod(Dump)
-    def __init__(self): 
-        _HLRBRep.HLRBRep_ThePolygonToolOfInterCSurf_swiginit(self,_HLRBRep.new_HLRBRep_ThePolygonToolOfInterCSurf())
     def __del__(self):
     	try:
     		self.thisown = False
@@ -11684,7 +11733,7 @@ HLRBRep_ThePolygonToolOfInterCSurf._kill_pointed = new_instancemethod(_HLRBRep.H
 HLRBRep_ThePolygonToolOfInterCSurf_swigregister = _HLRBRep.HLRBRep_ThePolygonToolOfInterCSurf_swigregister
 HLRBRep_ThePolygonToolOfInterCSurf_swigregister(HLRBRep_ThePolygonToolOfInterCSurf)
 
-def HLRBRep_ThePolygonToolOfInterCSurf_Bounding(*args) -> "Bnd_Box const &" :
+def HLRBRep_ThePolygonToolOfInterCSurf_Bounding(*args):
   """
     :param thePolygon:
     :type thePolygon: HLRBRep_ThePolygonOfInterCSurf &
@@ -11693,7 +11742,7 @@ def HLRBRep_ThePolygonToolOfInterCSurf_Bounding(*args) -> "Bnd_Box const &" :
     """
   return _HLRBRep.HLRBRep_ThePolygonToolOfInterCSurf_Bounding(*args)
 
-def HLRBRep_ThePolygonToolOfInterCSurf_DeflectionOverEstimation(*args) -> "Standard_Real" :
+def HLRBRep_ThePolygonToolOfInterCSurf_DeflectionOverEstimation(*args):
   """
     :param thePolygon:
     :type thePolygon: HLRBRep_ThePolygonOfInterCSurf &
@@ -11702,7 +11751,7 @@ def HLRBRep_ThePolygonToolOfInterCSurf_DeflectionOverEstimation(*args) -> "Stand
     """
   return _HLRBRep.HLRBRep_ThePolygonToolOfInterCSurf_DeflectionOverEstimation(*args)
 
-def HLRBRep_ThePolygonToolOfInterCSurf_Closed(*args) -> "Standard_Boolean" :
+def HLRBRep_ThePolygonToolOfInterCSurf_Closed(*args):
   """
     :param thePolygon:
     :type thePolygon: HLRBRep_ThePolygonOfInterCSurf &
@@ -11711,7 +11760,7 @@ def HLRBRep_ThePolygonToolOfInterCSurf_Closed(*args) -> "Standard_Boolean" :
     """
   return _HLRBRep.HLRBRep_ThePolygonToolOfInterCSurf_Closed(*args)
 
-def HLRBRep_ThePolygonToolOfInterCSurf_NbSegments(*args) -> "Standard_Integer" :
+def HLRBRep_ThePolygonToolOfInterCSurf_NbSegments(*args):
   """
     :param thePolygon:
     :type thePolygon: HLRBRep_ThePolygonOfInterCSurf &
@@ -11720,29 +11769,29 @@ def HLRBRep_ThePolygonToolOfInterCSurf_NbSegments(*args) -> "Standard_Integer" :
     """
   return _HLRBRep.HLRBRep_ThePolygonToolOfInterCSurf_NbSegments(*args)
 
-def HLRBRep_ThePolygonToolOfInterCSurf_BeginOfSeg(*args) -> "gp_Pnt const" :
+def HLRBRep_ThePolygonToolOfInterCSurf_BeginOfSeg(*args):
   """
     :param thePolygon:
     :type thePolygon: HLRBRep_ThePolygonOfInterCSurf &
     :param Index:
-    :type Index: int
+    :type Index: Standard_Integer
     :rtype: gp_Pnt
 
     """
   return _HLRBRep.HLRBRep_ThePolygonToolOfInterCSurf_BeginOfSeg(*args)
 
-def HLRBRep_ThePolygonToolOfInterCSurf_EndOfSeg(*args) -> "gp_Pnt const" :
+def HLRBRep_ThePolygonToolOfInterCSurf_EndOfSeg(*args):
   """
     :param thePolygon:
     :type thePolygon: HLRBRep_ThePolygonOfInterCSurf &
     :param Index:
-    :type Index: int
+    :type Index: Standard_Integer
     :rtype: gp_Pnt
 
     """
   return _HLRBRep.HLRBRep_ThePolygonToolOfInterCSurf_EndOfSeg(*args)
 
-def HLRBRep_ThePolygonToolOfInterCSurf_Dump(*args) -> "void" :
+def HLRBRep_ThePolygonToolOfInterCSurf_Dump(*args):
   """
     :param thePolygon:
     :type thePolygon: HLRBRep_ThePolygonOfInterCSurf &
@@ -11753,8 +11802,9 @@ def HLRBRep_ThePolygonToolOfInterCSurf_Dump(*args) -> "void" :
 
 class HLRBRep_ThePolyhedronToolOfInterCSurf(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
+    def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def Bounding(*args) -> "Bnd_Box const &" :
+    def Bounding(*args):
         """
         :param thePolyh:
         :type thePolyh: HLRBRep_ThePolyhedronOfInterCSurf &
@@ -11764,7 +11814,7 @@ class HLRBRep_ThePolyhedronToolOfInterCSurf(object):
         return _HLRBRep.HLRBRep_ThePolyhedronToolOfInterCSurf_Bounding(*args)
 
     Bounding = staticmethod(Bounding)
-    def ComponentsBounding(*args) -> "Handle_Bnd_HArray1OfBox const &" :
+    def ComponentsBounding(*args):
         """
         :param thePolyh:
         :type thePolyh: HLRBRep_ThePolyhedronOfInterCSurf &
@@ -11774,7 +11824,7 @@ class HLRBRep_ThePolyhedronToolOfInterCSurf(object):
         return _HLRBRep.HLRBRep_ThePolyhedronToolOfInterCSurf_ComponentsBounding(*args)
 
     ComponentsBounding = staticmethod(ComponentsBounding)
-    def DeflectionOverEstimation(*args) -> "Standard_Real" :
+    def DeflectionOverEstimation(*args):
         """
         :param thePolyh:
         :type thePolyh: HLRBRep_ThePolyhedronOfInterCSurf &
@@ -11784,7 +11834,7 @@ class HLRBRep_ThePolyhedronToolOfInterCSurf(object):
         return _HLRBRep.HLRBRep_ThePolyhedronToolOfInterCSurf_DeflectionOverEstimation(*args)
 
     DeflectionOverEstimation = staticmethod(DeflectionOverEstimation)
-    def NbTriangles(*args) -> "Standard_Integer" :
+    def NbTriangles(*args):
         """
         :param thePolyh:
         :type thePolyh: HLRBRep_ThePolyhedronOfInterCSurf &
@@ -11794,71 +11844,71 @@ class HLRBRep_ThePolyhedronToolOfInterCSurf(object):
         return _HLRBRep.HLRBRep_ThePolyhedronToolOfInterCSurf_NbTriangles(*args)
 
     NbTriangles = staticmethod(NbTriangles)
-    def Triangle(*args) -> "Standard_Integer &, Standard_Integer &, Standard_Integer &" :
+    def Triangle(*args):
         """
         :param thePolyh:
         :type thePolyh: HLRBRep_ThePolyhedronOfInterCSurf &
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param P1:
-        :type P1: int &
+        :type P1: Standard_Integer &
         :param P2:
-        :type P2: int &
+        :type P2: Standard_Integer &
         :param P3:
-        :type P3: int &
+        :type P3: Standard_Integer &
         :rtype: void
 
         """
         return _HLRBRep.HLRBRep_ThePolyhedronToolOfInterCSurf_Triangle(*args)
 
     Triangle = staticmethod(Triangle)
-    def Point(*args) -> "gp_Pnt const" :
+    def Point(*args):
         """
         :param thePolyh:
         :type thePolyh: HLRBRep_ThePolyhedronOfInterCSurf &
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: gp_Pnt
 
         """
         return _HLRBRep.HLRBRep_ThePolyhedronToolOfInterCSurf_Point(*args)
 
     Point = staticmethod(Point)
-    def TriConnex(*args) -> "Standard_Integer &, Standard_Integer &" :
+    def TriConnex(*args):
         """
         :param thePolyh:
         :type thePolyh: HLRBRep_ThePolyhedronOfInterCSurf &
         :param Triang:
-        :type Triang: int
+        :type Triang: Standard_Integer
         :param Pivot:
-        :type Pivot: int
+        :type Pivot: Standard_Integer
         :param Pedge:
-        :type Pedge: int
+        :type Pedge: Standard_Integer
         :param TriCon:
-        :type TriCon: int &
+        :type TriCon: Standard_Integer &
         :param OtherP:
-        :type OtherP: int &
+        :type OtherP: Standard_Integer &
         :rtype: int
 
         """
         return _HLRBRep.HLRBRep_ThePolyhedronToolOfInterCSurf_TriConnex(*args)
 
     TriConnex = staticmethod(TriConnex)
-    def IsOnBound(*args) -> "Standard_Boolean" :
+    def IsOnBound(*args):
         """
         :param thePolyh:
         :type thePolyh: HLRBRep_ThePolyhedronOfInterCSurf &
         :param Index1:
-        :type Index1: int
+        :type Index1: Standard_Integer
         :param Index2:
-        :type Index2: int
+        :type Index2: Standard_Integer
         :rtype: bool
 
         """
         return _HLRBRep.HLRBRep_ThePolyhedronToolOfInterCSurf_IsOnBound(*args)
 
     IsOnBound = staticmethod(IsOnBound)
-    def GetBorderDeflection(*args) -> "Standard_Real" :
+    def GetBorderDeflection(*args):
         """
         :param thePolyh:
         :type thePolyh: HLRBRep_ThePolyhedronOfInterCSurf &
@@ -11868,7 +11918,7 @@ class HLRBRep_ThePolyhedronToolOfInterCSurf(object):
         return _HLRBRep.HLRBRep_ThePolyhedronToolOfInterCSurf_GetBorderDeflection(*args)
 
     GetBorderDeflection = staticmethod(GetBorderDeflection)
-    def Dump(*args) -> "void" :
+    def Dump(*args):
         """
         :param thePolyh:
         :type thePolyh: HLRBRep_ThePolyhedronOfInterCSurf &
@@ -11878,8 +11928,6 @@ class HLRBRep_ThePolyhedronToolOfInterCSurf(object):
         return _HLRBRep.HLRBRep_ThePolyhedronToolOfInterCSurf_Dump(*args)
 
     Dump = staticmethod(Dump)
-    def __init__(self): 
-        _HLRBRep.HLRBRep_ThePolyhedronToolOfInterCSurf_swiginit(self,_HLRBRep.new_HLRBRep_ThePolyhedronToolOfInterCSurf())
     def __del__(self):
     	try:
     		self.thisown = False
@@ -11892,7 +11940,7 @@ HLRBRep_ThePolyhedronToolOfInterCSurf._kill_pointed = new_instancemethod(_HLRBRe
 HLRBRep_ThePolyhedronToolOfInterCSurf_swigregister = _HLRBRep.HLRBRep_ThePolyhedronToolOfInterCSurf_swigregister
 HLRBRep_ThePolyhedronToolOfInterCSurf_swigregister(HLRBRep_ThePolyhedronToolOfInterCSurf)
 
-def HLRBRep_ThePolyhedronToolOfInterCSurf_Bounding(*args) -> "Bnd_Box const &" :
+def HLRBRep_ThePolyhedronToolOfInterCSurf_Bounding(*args):
   """
     :param thePolyh:
     :type thePolyh: HLRBRep_ThePolyhedronOfInterCSurf &
@@ -11901,7 +11949,7 @@ def HLRBRep_ThePolyhedronToolOfInterCSurf_Bounding(*args) -> "Bnd_Box const &" :
     """
   return _HLRBRep.HLRBRep_ThePolyhedronToolOfInterCSurf_Bounding(*args)
 
-def HLRBRep_ThePolyhedronToolOfInterCSurf_ComponentsBounding(*args) -> "Handle_Bnd_HArray1OfBox const &" :
+def HLRBRep_ThePolyhedronToolOfInterCSurf_ComponentsBounding(*args):
   """
     :param thePolyh:
     :type thePolyh: HLRBRep_ThePolyhedronOfInterCSurf &
@@ -11910,7 +11958,7 @@ def HLRBRep_ThePolyhedronToolOfInterCSurf_ComponentsBounding(*args) -> "Handle_B
     """
   return _HLRBRep.HLRBRep_ThePolyhedronToolOfInterCSurf_ComponentsBounding(*args)
 
-def HLRBRep_ThePolyhedronToolOfInterCSurf_DeflectionOverEstimation(*args) -> "Standard_Real" :
+def HLRBRep_ThePolyhedronToolOfInterCSurf_DeflectionOverEstimation(*args):
   """
     :param thePolyh:
     :type thePolyh: HLRBRep_ThePolyhedronOfInterCSurf &
@@ -11919,7 +11967,7 @@ def HLRBRep_ThePolyhedronToolOfInterCSurf_DeflectionOverEstimation(*args) -> "St
     """
   return _HLRBRep.HLRBRep_ThePolyhedronToolOfInterCSurf_DeflectionOverEstimation(*args)
 
-def HLRBRep_ThePolyhedronToolOfInterCSurf_NbTriangles(*args) -> "Standard_Integer" :
+def HLRBRep_ThePolyhedronToolOfInterCSurf_NbTriangles(*args):
   """
     :param thePolyh:
     :type thePolyh: HLRBRep_ThePolyhedronOfInterCSurf &
@@ -11928,67 +11976,67 @@ def HLRBRep_ThePolyhedronToolOfInterCSurf_NbTriangles(*args) -> "Standard_Intege
     """
   return _HLRBRep.HLRBRep_ThePolyhedronToolOfInterCSurf_NbTriangles(*args)
 
-def HLRBRep_ThePolyhedronToolOfInterCSurf_Triangle(*args) -> "Standard_Integer &, Standard_Integer &, Standard_Integer &" :
+def HLRBRep_ThePolyhedronToolOfInterCSurf_Triangle(*args):
   """
     :param thePolyh:
     :type thePolyh: HLRBRep_ThePolyhedronOfInterCSurf &
     :param Index:
-    :type Index: int
+    :type Index: Standard_Integer
     :param P1:
-    :type P1: int &
+    :type P1: Standard_Integer &
     :param P2:
-    :type P2: int &
+    :type P2: Standard_Integer &
     :param P3:
-    :type P3: int &
+    :type P3: Standard_Integer &
     :rtype: void
 
     """
   return _HLRBRep.HLRBRep_ThePolyhedronToolOfInterCSurf_Triangle(*args)
 
-def HLRBRep_ThePolyhedronToolOfInterCSurf_Point(*args) -> "gp_Pnt const" :
+def HLRBRep_ThePolyhedronToolOfInterCSurf_Point(*args):
   """
     :param thePolyh:
     :type thePolyh: HLRBRep_ThePolyhedronOfInterCSurf &
     :param Index:
-    :type Index: int
+    :type Index: Standard_Integer
     :rtype: gp_Pnt
 
     """
   return _HLRBRep.HLRBRep_ThePolyhedronToolOfInterCSurf_Point(*args)
 
-def HLRBRep_ThePolyhedronToolOfInterCSurf_TriConnex(*args) -> "Standard_Integer &, Standard_Integer &" :
+def HLRBRep_ThePolyhedronToolOfInterCSurf_TriConnex(*args):
   """
     :param thePolyh:
     :type thePolyh: HLRBRep_ThePolyhedronOfInterCSurf &
     :param Triang:
-    :type Triang: int
+    :type Triang: Standard_Integer
     :param Pivot:
-    :type Pivot: int
+    :type Pivot: Standard_Integer
     :param Pedge:
-    :type Pedge: int
+    :type Pedge: Standard_Integer
     :param TriCon:
-    :type TriCon: int &
+    :type TriCon: Standard_Integer &
     :param OtherP:
-    :type OtherP: int &
+    :type OtherP: Standard_Integer &
     :rtype: int
 
     """
   return _HLRBRep.HLRBRep_ThePolyhedronToolOfInterCSurf_TriConnex(*args)
 
-def HLRBRep_ThePolyhedronToolOfInterCSurf_IsOnBound(*args) -> "Standard_Boolean" :
+def HLRBRep_ThePolyhedronToolOfInterCSurf_IsOnBound(*args):
   """
     :param thePolyh:
     :type thePolyh: HLRBRep_ThePolyhedronOfInterCSurf &
     :param Index1:
-    :type Index1: int
+    :type Index1: Standard_Integer
     :param Index2:
-    :type Index2: int
+    :type Index2: Standard_Integer
     :rtype: bool
 
     """
   return _HLRBRep.HLRBRep_ThePolyhedronToolOfInterCSurf_IsOnBound(*args)
 
-def HLRBRep_ThePolyhedronToolOfInterCSurf_GetBorderDeflection(*args) -> "Standard_Real" :
+def HLRBRep_ThePolyhedronToolOfInterCSurf_GetBorderDeflection(*args):
   """
     :param thePolyh:
     :type thePolyh: HLRBRep_ThePolyhedronOfInterCSurf &
@@ -11997,7 +12045,7 @@ def HLRBRep_ThePolyhedronToolOfInterCSurf_GetBorderDeflection(*args) -> "Standar
     """
   return _HLRBRep.HLRBRep_ThePolyhedronToolOfInterCSurf_GetBorderDeflection(*args)
 
-def HLRBRep_ThePolyhedronToolOfInterCSurf_Dump(*args) -> "void" :
+def HLRBRep_ThePolyhedronToolOfInterCSurf_Dump(*args):
   """
     :param thePolyh:
     :type thePolyh: HLRBRep_ThePolyhedronOfInterCSurf &
@@ -12008,8 +12056,9 @@ def HLRBRep_ThePolyhedronToolOfInterCSurf_Dump(*args) -> "void" :
 
 class HLRBRep_TheProjPCurOfCInter(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
+    def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def FindParameter(*args) -> "Standard_Real" :
+    def FindParameter(*args):
         """
         :param C:
         :type C: Standard_Address &
@@ -12035,8 +12084,6 @@ class HLRBRep_TheProjPCurOfCInter(object):
         return _HLRBRep.HLRBRep_TheProjPCurOfCInter_FindParameter(*args)
 
     FindParameter = staticmethod(FindParameter)
-    def __init__(self): 
-        _HLRBRep.HLRBRep_TheProjPCurOfCInter_swiginit(self,_HLRBRep.new_HLRBRep_TheProjPCurOfCInter())
     def __del__(self):
     	try:
     		self.thisown = False
@@ -12049,7 +12096,7 @@ HLRBRep_TheProjPCurOfCInter._kill_pointed = new_instancemethod(_HLRBRep.HLRBRep_
 HLRBRep_TheProjPCurOfCInter_swigregister = _HLRBRep.HLRBRep_TheProjPCurOfCInter_swigregister
 HLRBRep_TheProjPCurOfCInter_swigregister(HLRBRep_TheProjPCurOfCInter)
 
-def HLRBRep_TheProjPCurOfCInter_FindParameter(*args) -> "Standard_Real" :
+def HLRBRep_TheProjPCurOfCInter_FindParameter(*args):
   """
     :param C:
     :type C: Standard_Address &
@@ -12087,40 +12134,40 @@ class HLRBRep_TheQuadCurvExactInterCSurf(object):
 
         """
         _HLRBRep.HLRBRep_TheQuadCurvExactInterCSurf_swiginit(self,_HLRBRep.new_HLRBRep_TheQuadCurvExactInterCSurf(*args))
-    def IsDone(self, *args) -> "Standard_Boolean" :
+    def IsDone(self):
         """
         :rtype: bool
 
         """
-        return _HLRBRep.HLRBRep_TheQuadCurvExactInterCSurf_IsDone(self, *args)
+        return _HLRBRep.HLRBRep_TheQuadCurvExactInterCSurf_IsDone(self)
 
-    def NbRoots(self, *args) -> "Standard_Integer" :
+    def NbRoots(self):
         """
         :rtype: int
 
         """
-        return _HLRBRep.HLRBRep_TheQuadCurvExactInterCSurf_NbRoots(self, *args)
+        return _HLRBRep.HLRBRep_TheQuadCurvExactInterCSurf_NbRoots(self)
 
-    def Root(self, *args) -> "Standard_Real" :
+    def Root(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: float
 
         """
         return _HLRBRep.HLRBRep_TheQuadCurvExactInterCSurf_Root(self, *args)
 
-    def NbIntervals(self, *args) -> "Standard_Integer" :
+    def NbIntervals(self):
         """
         :rtype: int
 
         """
-        return _HLRBRep.HLRBRep_TheQuadCurvExactInterCSurf_NbIntervals(self, *args)
+        return _HLRBRep.HLRBRep_TheQuadCurvExactInterCSurf_NbIntervals(self)
 
-    def Intervals(self, *args) -> "void" :
+    def Intervals(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param U1:
         :type U1: float &
         :param U2:
@@ -12160,7 +12207,7 @@ class HLRBRep_TheQuadCurvFuncOfTheQuadCurvExactInterCSurf(object):
 
         """
         _HLRBRep.HLRBRep_TheQuadCurvFuncOfTheQuadCurvExactInterCSurf_swiginit(self,_HLRBRep.new_HLRBRep_TheQuadCurvFuncOfTheQuadCurvExactInterCSurf(*args))
-    def Value(self, *args) -> "Standard_Boolean" :
+    def Value(self, *args):
         """
         :param Param:
         :type Param: float
@@ -12171,7 +12218,7 @@ class HLRBRep_TheQuadCurvFuncOfTheQuadCurvExactInterCSurf(object):
         """
         return _HLRBRep.HLRBRep_TheQuadCurvFuncOfTheQuadCurvExactInterCSurf_Value(self, *args)
 
-    def Derivative(self, *args) -> "Standard_Boolean" :
+    def Derivative(self, *args):
         """
         :param Param:
         :type Param: float
@@ -12182,7 +12229,7 @@ class HLRBRep_TheQuadCurvFuncOfTheQuadCurvExactInterCSurf(object):
         """
         return _HLRBRep.HLRBRep_TheQuadCurvFuncOfTheQuadCurvExactInterCSurf_Derivative(self, *args)
 
-    def Values(self, *args) -> "Standard_Boolean" :
+    def Values(self, *args):
         """
         :param Param:
         :type Param: float
@@ -12223,86 +12270,86 @@ class HLRBRep_VertexList(object):
 
         """
         _HLRBRep.HLRBRep_VertexList_swiginit(self,_HLRBRep.new_HLRBRep_VertexList(*args))
-    def IsPeriodic(self, *args) -> "Standard_Boolean" :
+    def IsPeriodic(self):
         """
         * Returns True when the curve is periodic.
 
         :rtype: bool
 
         """
-        return _HLRBRep.HLRBRep_VertexList_IsPeriodic(self, *args)
+        return _HLRBRep.HLRBRep_VertexList_IsPeriodic(self)
 
-    def More(self, *args) -> "Standard_Boolean" :
+    def More(self):
         """
         * Returns True when there are more vertices.
 
         :rtype: bool
 
         """
-        return _HLRBRep.HLRBRep_VertexList_More(self, *args)
+        return _HLRBRep.HLRBRep_VertexList_More(self)
 
-    def Next(self, *args) -> "void" :
+    def Next(self):
         """
         * Proceeds to the next vertex.
 
         :rtype: None
 
         """
-        return _HLRBRep.HLRBRep_VertexList_Next(self, *args)
+        return _HLRBRep.HLRBRep_VertexList_Next(self)
 
-    def Current(self, *args) -> "HLRAlgo_Intersection const &" :
+    def Current(self):
         """
         * Returns the current vertex
 
         :rtype: HLRAlgo_Intersection
 
         """
-        return _HLRBRep.HLRBRep_VertexList_Current(self, *args)
+        return _HLRBRep.HLRBRep_VertexList_Current(self)
 
-    def IsBoundary(self, *args) -> "Standard_Boolean" :
+    def IsBoundary(self):
         """
         * Returns True if the current vertex is is on the boundary of the edge.
 
         :rtype: bool
 
         """
-        return _HLRBRep.HLRBRep_VertexList_IsBoundary(self, *args)
+        return _HLRBRep.HLRBRep_VertexList_IsBoundary(self)
 
-    def IsInterference(self, *args) -> "Standard_Boolean" :
+    def IsInterference(self):
         """
         * Returns True if the current vertex is an interference.
 
         :rtype: bool
 
         """
-        return _HLRBRep.HLRBRep_VertexList_IsInterference(self, *args)
+        return _HLRBRep.HLRBRep_VertexList_IsInterference(self)
 
-    def Orientation(self, *args) -> "TopAbs_Orientation" :
+    def Orientation(self):
         """
         * Returns the orientation of the current vertex if it is on the boundary of the edge.
 
         :rtype: TopAbs_Orientation
 
         """
-        return _HLRBRep.HLRBRep_VertexList_Orientation(self, *args)
+        return _HLRBRep.HLRBRep_VertexList_Orientation(self)
 
-    def Transition(self, *args) -> "TopAbs_Orientation" :
+    def Transition(self):
         """
         * Returns the transition of the current vertex if it is an interference.
 
         :rtype: TopAbs_Orientation
 
         """
-        return _HLRBRep.HLRBRep_VertexList_Transition(self, *args)
+        return _HLRBRep.HLRBRep_VertexList_Transition(self)
 
-    def BoundaryTransition(self, *args) -> "TopAbs_Orientation" :
+    def BoundaryTransition(self):
         """
         * Returns the transition of the current vertex relative to the boundary if it is an interference.
 
         :rtype: TopAbs_Orientation
 
         """
-        return _HLRBRep.HLRBRep_VertexList_BoundaryTransition(self, *args)
+        return _HLRBRep.HLRBRep_VertexList_BoundaryTransition(self)
 
     def __del__(self):
     	try:
@@ -12340,7 +12387,7 @@ class HLRBRep_Algo(HLRBRep_InternalAlgo):
 
         """
         _HLRBRep.HLRBRep_Algo_swiginit(self,_HLRBRep.new_HLRBRep_Algo(*args))
-    def Add(self, *args) -> "void" :
+    def Add(self, *args):
         """
         * add the Shape <S>.
 
@@ -12349,7 +12396,17 @@ class HLRBRep_Algo(HLRBRep_InternalAlgo):
         :param SData:
         :type SData: Handle_MMgt_TShared &
         :param nbIso: default value is 0
-        :type nbIso: int
+        :type nbIso: Standard_Integer
+        :rtype: None
+
+        * add the Shape <S>.
+
+        :param S:
+        :type S: TopoDS_Shape &
+        :param SData:
+        :type SData: Handle_MMgt_TShared &
+        :param nbIso: default value is 0
+        :type nbIso: Standard_Integer
         :rtype: None
 
         * Adds the shape S to this framework, and specifies the number of isoparameters nbiso desired in visualizing S. You may add as many shapes as you wish. Use the function Add once for each shape.
@@ -12357,13 +12414,21 @@ class HLRBRep_Algo(HLRBRep_InternalAlgo):
         :param S:
         :type S: TopoDS_Shape &
         :param nbIso: default value is 0
-        :type nbIso: int
+        :type nbIso: Standard_Integer
+        :rtype: None
+
+        * Adds the shape S to this framework, and specifies the number of isoparameters nbiso desired in visualizing S. You may add as many shapes as you wish. Use the function Add once for each shape.
+
+        :param S:
+        :type S: TopoDS_Shape &
+        :param nbIso: default value is 0
+        :type nbIso: Standard_Integer
         :rtype: None
 
         """
         return _HLRBRep.HLRBRep_Algo_Add(self, *args)
 
-    def Index(self, *args) -> "Standard_Integer" :
+    def Index(self, *args):
         """
         * return the index of the Shape <S> and return 0 if the Shape <S> is not found.
 
@@ -12374,20 +12439,20 @@ class HLRBRep_Algo(HLRBRep_InternalAlgo):
         """
         return _HLRBRep.HLRBRep_Algo_Index(self, *args)
 
-    def OutLinedShapeNullify(self, *args) -> "void" :
+    def OutLinedShapeNullify(self):
         """
         * nullify all the results of OutLiner from HLRTopoBRep.
 
         :rtype: None
 
         """
-        return _HLRBRep.HLRBRep_Algo_OutLinedShapeNullify(self, *args)
+        return _HLRBRep.HLRBRep_Algo_OutLinedShapeNullify(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(HLRBRep_Algo self)"""
         return _HLRBRep.HLRBRep_Algo__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_HLRBRep_Algo" :
+    def GetHandle(self):
         """GetHandle(HLRBRep_Algo self) -> Handle_HLRBRep_Algo"""
         return _HLRBRep.HLRBRep_Algo_GetHandle(self)
 
@@ -12428,7 +12493,7 @@ Handle_HLRBRep_Algo._kill_pointed = new_instancemethod(_HLRBRep.Handle_HLRBRep_A
 Handle_HLRBRep_Algo_swigregister = _HLRBRep.Handle_HLRBRep_Algo_swigregister
 Handle_HLRBRep_Algo_swigregister(Handle_HLRBRep_Algo)
 
-def Handle_HLRBRep_Algo_DownCast(*args) -> "Handle_HLRBRep_Algo const" :
+def Handle_HLRBRep_Algo_DownCast(*args):
   return _HLRBRep.Handle_HLRBRep_Algo_DownCast(*args)
 Handle_HLRBRep_Algo_DownCast = _HLRBRep.Handle_HLRBRep_Algo_DownCast
 

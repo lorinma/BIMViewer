@@ -114,8 +114,9 @@ import OCC.TCollection
 import OCC.MMgt
 class SortTools_HeapSortOfInteger(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
+    def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def Sort(*args) -> "void" :
+    def Sort(*args):
         """
         :param TheArray:
         :type TheArray: TColStd_Array1OfInteger &
@@ -127,8 +128,6 @@ class SortTools_HeapSortOfInteger(object):
         return _SortTools.SortTools_HeapSortOfInteger_Sort(*args)
 
     Sort = staticmethod(Sort)
-    def __init__(self): 
-        _SortTools.SortTools_HeapSortOfInteger_swiginit(self,_SortTools.new_SortTools_HeapSortOfInteger())
     def __del__(self):
     	try:
     		self.thisown = False
@@ -141,7 +140,7 @@ SortTools_HeapSortOfInteger._kill_pointed = new_instancemethod(_SortTools.SortTo
 SortTools_HeapSortOfInteger_swigregister = _SortTools.SortTools_HeapSortOfInteger_swigregister
 SortTools_HeapSortOfInteger_swigregister(SortTools_HeapSortOfInteger)
 
-def SortTools_HeapSortOfInteger_Sort(*args) -> "void" :
+def SortTools_HeapSortOfInteger_Sort(*args):
   """
     :param TheArray:
     :type TheArray: TColStd_Array1OfInteger &
@@ -154,8 +153,9 @@ def SortTools_HeapSortOfInteger_Sort(*args) -> "void" :
 
 class SortTools_HeapSortOfReal(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
+    def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def Sort(*args) -> "void" :
+    def Sort(*args):
         """
         :param TheArray:
         :type TheArray: TColStd_Array1OfReal &
@@ -167,8 +167,6 @@ class SortTools_HeapSortOfReal(object):
         return _SortTools.SortTools_HeapSortOfReal_Sort(*args)
 
     Sort = staticmethod(Sort)
-    def __init__(self): 
-        _SortTools.SortTools_HeapSortOfReal_swiginit(self,_SortTools.new_SortTools_HeapSortOfReal())
     def __del__(self):
     	try:
     		self.thisown = False
@@ -181,7 +179,7 @@ SortTools_HeapSortOfReal._kill_pointed = new_instancemethod(_SortTools.SortTools
 SortTools_HeapSortOfReal_swigregister = _SortTools.SortTools_HeapSortOfReal_swigregister
 SortTools_HeapSortOfReal_swigregister(SortTools_HeapSortOfReal)
 
-def SortTools_HeapSortOfReal_Sort(*args) -> "void" :
+def SortTools_HeapSortOfReal_Sort(*args):
   """
     :param TheArray:
     :type TheArray: TColStd_Array1OfReal &
@@ -194,8 +192,9 @@ def SortTools_HeapSortOfReal_Sort(*args) -> "void" :
 
 class SortTools_QuickSortOfInteger(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
+    def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def Sort(*args) -> "void" :
+    def Sort(*args):
         """
         :param TheArray:
         :type TheArray: TColStd_Array1OfInteger &
@@ -207,8 +206,6 @@ class SortTools_QuickSortOfInteger(object):
         return _SortTools.SortTools_QuickSortOfInteger_Sort(*args)
 
     Sort = staticmethod(Sort)
-    def __init__(self): 
-        _SortTools.SortTools_QuickSortOfInteger_swiginit(self,_SortTools.new_SortTools_QuickSortOfInteger())
     def __del__(self):
     	try:
     		self.thisown = False
@@ -221,7 +218,7 @@ SortTools_QuickSortOfInteger._kill_pointed = new_instancemethod(_SortTools.SortT
 SortTools_QuickSortOfInteger_swigregister = _SortTools.SortTools_QuickSortOfInteger_swigregister
 SortTools_QuickSortOfInteger_swigregister(SortTools_QuickSortOfInteger)
 
-def SortTools_QuickSortOfInteger_Sort(*args) -> "void" :
+def SortTools_QuickSortOfInteger_Sort(*args):
   """
     :param TheArray:
     :type TheArray: TColStd_Array1OfInteger &
@@ -234,8 +231,9 @@ def SortTools_QuickSortOfInteger_Sort(*args) -> "void" :
 
 class SortTools_QuickSortOfReal(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
+    def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def Sort(*args) -> "void" :
+    def Sort(*args):
         """
         :param TheArray:
         :type TheArray: TColStd_Array1OfReal &
@@ -247,8 +245,6 @@ class SortTools_QuickSortOfReal(object):
         return _SortTools.SortTools_QuickSortOfReal_Sort(*args)
 
     Sort = staticmethod(Sort)
-    def __init__(self): 
-        _SortTools.SortTools_QuickSortOfReal_swiginit(self,_SortTools.new_SortTools_QuickSortOfReal())
     def __del__(self):
     	try:
     		self.thisown = False
@@ -261,7 +257,7 @@ SortTools_QuickSortOfReal._kill_pointed = new_instancemethod(_SortTools.SortTool
 SortTools_QuickSortOfReal_swigregister = _SortTools.SortTools_QuickSortOfReal_swigregister
 SortTools_QuickSortOfReal_swigregister(SortTools_QuickSortOfReal)
 
-def SortTools_QuickSortOfReal_Sort(*args) -> "void" :
+def SortTools_QuickSortOfReal_Sort(*args):
   """
     :param TheArray:
     :type TheArray: TColStd_Array1OfReal &
@@ -274,8 +270,9 @@ def SortTools_QuickSortOfReal_Sort(*args) -> "void" :
 
 class SortTools_ShellSortOfInteger(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
+    def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def Sort(*args) -> "void" :
+    def Sort(*args):
         """
         :param TheArray:
         :type TheArray: TColStd_Array1OfInteger &
@@ -287,8 +284,6 @@ class SortTools_ShellSortOfInteger(object):
         return _SortTools.SortTools_ShellSortOfInteger_Sort(*args)
 
     Sort = staticmethod(Sort)
-    def __init__(self): 
-        _SortTools.SortTools_ShellSortOfInteger_swiginit(self,_SortTools.new_SortTools_ShellSortOfInteger())
     def __del__(self):
     	try:
     		self.thisown = False
@@ -301,7 +296,7 @@ SortTools_ShellSortOfInteger._kill_pointed = new_instancemethod(_SortTools.SortT
 SortTools_ShellSortOfInteger_swigregister = _SortTools.SortTools_ShellSortOfInteger_swigregister
 SortTools_ShellSortOfInteger_swigregister(SortTools_ShellSortOfInteger)
 
-def SortTools_ShellSortOfInteger_Sort(*args) -> "void" :
+def SortTools_ShellSortOfInteger_Sort(*args):
   """
     :param TheArray:
     :type TheArray: TColStd_Array1OfInteger &
@@ -314,8 +309,9 @@ def SortTools_ShellSortOfInteger_Sort(*args) -> "void" :
 
 class SortTools_ShellSortOfReal(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
+    def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def Sort(*args) -> "void" :
+    def Sort(*args):
         """
         :param TheArray:
         :type TheArray: TColStd_Array1OfReal &
@@ -327,8 +323,6 @@ class SortTools_ShellSortOfReal(object):
         return _SortTools.SortTools_ShellSortOfReal_Sort(*args)
 
     Sort = staticmethod(Sort)
-    def __init__(self): 
-        _SortTools.SortTools_ShellSortOfReal_swiginit(self,_SortTools.new_SortTools_ShellSortOfReal())
     def __del__(self):
     	try:
     		self.thisown = False
@@ -341,7 +335,7 @@ SortTools_ShellSortOfReal._kill_pointed = new_instancemethod(_SortTools.SortTool
 SortTools_ShellSortOfReal_swigregister = _SortTools.SortTools_ShellSortOfReal_swigregister
 SortTools_ShellSortOfReal_swigregister(SortTools_ShellSortOfReal)
 
-def SortTools_ShellSortOfReal_Sort(*args) -> "void" :
+def SortTools_ShellSortOfReal_Sort(*args):
   """
     :param TheArray:
     :type TheArray: TColStd_Array1OfReal &
@@ -354,8 +348,9 @@ def SortTools_ShellSortOfReal_Sort(*args) -> "void" :
 
 class SortTools_StraightInsertionSortOfInteger(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
+    def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def Sort(*args) -> "void" :
+    def Sort(*args):
         """
         :param TheArray:
         :type TheArray: TColStd_Array1OfInteger &
@@ -367,8 +362,6 @@ class SortTools_StraightInsertionSortOfInteger(object):
         return _SortTools.SortTools_StraightInsertionSortOfInteger_Sort(*args)
 
     Sort = staticmethod(Sort)
-    def __init__(self): 
-        _SortTools.SortTools_StraightInsertionSortOfInteger_swiginit(self,_SortTools.new_SortTools_StraightInsertionSortOfInteger())
     def __del__(self):
     	try:
     		self.thisown = False
@@ -381,7 +374,7 @@ SortTools_StraightInsertionSortOfInteger._kill_pointed = new_instancemethod(_Sor
 SortTools_StraightInsertionSortOfInteger_swigregister = _SortTools.SortTools_StraightInsertionSortOfInteger_swigregister
 SortTools_StraightInsertionSortOfInteger_swigregister(SortTools_StraightInsertionSortOfInteger)
 
-def SortTools_StraightInsertionSortOfInteger_Sort(*args) -> "void" :
+def SortTools_StraightInsertionSortOfInteger_Sort(*args):
   """
     :param TheArray:
     :type TheArray: TColStd_Array1OfInteger &
@@ -394,8 +387,9 @@ def SortTools_StraightInsertionSortOfInteger_Sort(*args) -> "void" :
 
 class SortTools_StraightInsertionSortOfReal(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
+    def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def Sort(*args) -> "void" :
+    def Sort(*args):
         """
         :param TheArray:
         :type TheArray: TColStd_Array1OfReal &
@@ -407,8 +401,6 @@ class SortTools_StraightInsertionSortOfReal(object):
         return _SortTools.SortTools_StraightInsertionSortOfReal_Sort(*args)
 
     Sort = staticmethod(Sort)
-    def __init__(self): 
-        _SortTools.SortTools_StraightInsertionSortOfReal_swiginit(self,_SortTools.new_SortTools_StraightInsertionSortOfReal())
     def __del__(self):
     	try:
     		self.thisown = False
@@ -421,7 +413,7 @@ SortTools_StraightInsertionSortOfReal._kill_pointed = new_instancemethod(_SortTo
 SortTools_StraightInsertionSortOfReal_swigregister = _SortTools.SortTools_StraightInsertionSortOfReal_swigregister
 SortTools_StraightInsertionSortOfReal_swigregister(SortTools_StraightInsertionSortOfReal)
 
-def SortTools_StraightInsertionSortOfReal_Sort(*args) -> "void" :
+def SortTools_StraightInsertionSortOfReal_Sort(*args):
   """
     :param TheArray:
     :type TheArray: TColStd_Array1OfReal &

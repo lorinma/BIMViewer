@@ -150,7 +150,7 @@ class HatchGen_Domain(object):
 
         """
         _HatchGen.HatchGen_Domain_swiginit(self,_HatchGen.new_HatchGen_Domain(*args))
-    def SetPoints(self, *args) -> "void" :
+    def SetPoints(self, *args):
         """
         * Sets the first and the second points of the domain.
 
@@ -167,7 +167,7 @@ class HatchGen_Domain(object):
         """
         return _HatchGen.HatchGen_Domain_SetPoints(self, *args)
 
-    def SetFirstPoint(self, *args) -> "void" :
+    def SetFirstPoint(self, *args):
         """
         * Sets the first point of the domain.
 
@@ -182,7 +182,7 @@ class HatchGen_Domain(object):
         """
         return _HatchGen.HatchGen_Domain_SetFirstPoint(self, *args)
 
-    def SetSecondPoint(self, *args) -> "void" :
+    def SetSecondPoint(self, *args):
         """
         * Sets the second point of the domain.
 
@@ -197,52 +197,58 @@ class HatchGen_Domain(object):
         """
         return _HatchGen.HatchGen_Domain_SetSecondPoint(self, *args)
 
-    def HasFirstPoint(self, *args) -> "Standard_Boolean" :
+    def HasFirstPoint(self):
         """
         * Returns True if the domain has a first point.
 
         :rtype: bool
 
         """
-        return _HatchGen.HatchGen_Domain_HasFirstPoint(self, *args)
+        return _HatchGen.HatchGen_Domain_HasFirstPoint(self)
 
-    def FirstPoint(self, *args) -> "HatchGen_PointOnHatching const &" :
+    def FirstPoint(self):
         """
         * Returns the first point of the domain. The exception DomainError is raised if HasFirstPoint returns False.
 
         :rtype: HatchGen_PointOnHatching
 
         """
-        return _HatchGen.HatchGen_Domain_FirstPoint(self, *args)
+        return _HatchGen.HatchGen_Domain_FirstPoint(self)
 
-    def HasSecondPoint(self, *args) -> "Standard_Boolean" :
+    def HasSecondPoint(self):
         """
         * Returns True if the domain has a second point.
 
         :rtype: bool
 
         """
-        return _HatchGen.HatchGen_Domain_HasSecondPoint(self, *args)
+        return _HatchGen.HatchGen_Domain_HasSecondPoint(self)
 
-    def SecondPoint(self, *args) -> "HatchGen_PointOnHatching const &" :
+    def SecondPoint(self):
         """
         * Returns the second point of the domain. The exception DomainError is raised if HasSecondPoint returns False.
 
         :rtype: HatchGen_PointOnHatching
 
         """
-        return _HatchGen.HatchGen_Domain_SecondPoint(self, *args)
+        return _HatchGen.HatchGen_Domain_SecondPoint(self)
 
-    def Dump(self, *args) -> "void" :
+    def Dump(self, Index=0):
         """
         * Dump of the domain.
 
         :param Index: default value is 0
-        :type Index: int
+        :type Index: Standard_Integer
+        :rtype: None
+
+        * Dump of the domain.
+
+        :param Index: default value is 0
+        :type Index: Standard_Integer
         :rtype: None
 
         """
-        return _HatchGen.HatchGen_Domain_Dump(self, *args)
+        return _HatchGen.HatchGen_Domain_Dump(self, Index)
 
     def __del__(self):
     	try:
@@ -267,20 +273,20 @@ HatchGen_Domain_swigregister(HatchGen_Domain)
 class HatchGen_Domains(OCC.TCollection.TCollection_BaseSequence):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _HatchGen.HatchGen_Domains_swiginit(self,_HatchGen.new_HatchGen_Domains(*args))
-    def Clear(self, *args) -> "void" :
+        _HatchGen.HatchGen_Domains_swiginit(self,_HatchGen.new_HatchGen_Domains())
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _HatchGen.HatchGen_Domains_Clear(self, *args)
+        return _HatchGen.HatchGen_Domains_Clear(self)
 
-    def Assign(self, *args) -> "HatchGen_Domains const &" :
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: HatchGen_Domains &
@@ -289,7 +295,7 @@ class HatchGen_Domains(OCC.TCollection.TCollection_BaseSequence):
         """
         return _HatchGen.HatchGen_Domains_Assign(self, *args)
 
-    def Set(self, *args) -> "HatchGen_Domains const &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: HatchGen_Domains &
@@ -298,7 +304,7 @@ class HatchGen_Domains(OCC.TCollection.TCollection_BaseSequence):
         """
         return _HatchGen.HatchGen_Domains_Set(self, *args)
 
-    def Append(self, *args) -> "void" :
+    def Append(self, *args):
         """
         :param T:
         :type T: HatchGen_Domain &
@@ -311,7 +317,7 @@ class HatchGen_Domains(OCC.TCollection.TCollection_BaseSequence):
         """
         return _HatchGen.HatchGen_Domains_Append(self, *args)
 
-    def Prepend(self, *args) -> "void" :
+    def Prepend(self, *args):
         """
         :param T:
         :type T: HatchGen_Domain &
@@ -324,16 +330,16 @@ class HatchGen_Domains(OCC.TCollection.TCollection_BaseSequence):
         """
         return _HatchGen.HatchGen_Domains_Prepend(self, *args)
 
-    def InsertBefore(self, *args) -> "void" :
+    def InsertBefore(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param T:
         :type T: HatchGen_Domain &
         :rtype: None
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param S:
         :type S: HatchGen_Domains &
         :rtype: None
@@ -341,16 +347,16 @@ class HatchGen_Domains(OCC.TCollection.TCollection_BaseSequence):
         """
         return _HatchGen.HatchGen_Domains_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args) -> "void" :
+    def InsertAfter(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param T:
         :type T: HatchGen_Domain &
         :rtype: None
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param S:
         :type S: HatchGen_Domains &
         :rtype: None
@@ -358,24 +364,24 @@ class HatchGen_Domains(OCC.TCollection.TCollection_BaseSequence):
         """
         return _HatchGen.HatchGen_Domains_InsertAfter(self, *args)
 
-    def First(self, *args) -> "HatchGen_Domain const &" :
+    def First(self):
         """
         :rtype: HatchGen_Domain
 
         """
-        return _HatchGen.HatchGen_Domains_First(self, *args)
+        return _HatchGen.HatchGen_Domains_First(self)
 
-    def Last(self, *args) -> "HatchGen_Domain const &" :
+    def Last(self):
         """
         :rtype: HatchGen_Domain
 
         """
-        return _HatchGen.HatchGen_Domains_Last(self, *args)
+        return _HatchGen.HatchGen_Domains_Last(self)
 
-    def Split(self, *args) -> "void" :
+    def Split(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Sub:
         :type Sub: HatchGen_Domains &
         :rtype: None
@@ -383,19 +389,19 @@ class HatchGen_Domains(OCC.TCollection.TCollection_BaseSequence):
         """
         return _HatchGen.HatchGen_Domains_Split(self, *args)
 
-    def Value(self, *args) -> "HatchGen_Domain const &" :
+    def Value(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: HatchGen_Domain
 
         """
         return _HatchGen.HatchGen_Domains_Value(self, *args)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param I:
         :type I: HatchGen_Domain &
         :rtype: None
@@ -403,25 +409,25 @@ class HatchGen_Domains(OCC.TCollection.TCollection_BaseSequence):
         """
         return _HatchGen.HatchGen_Domains_SetValue(self, *args)
 
-    def ChangeValue(self, *args) -> "HatchGen_Domain &" :
+    def ChangeValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: HatchGen_Domain
 
         """
         return _HatchGen.HatchGen_Domains_ChangeValue(self, *args)
 
-    def Remove(self, *args) -> "void" :
+    def Remove(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: None
 
         :param FromIndex:
-        :type FromIndex: int
+        :type FromIndex: Standard_Integer
         :param ToIndex:
-        :type ToIndex: int
+        :type ToIndex: Standard_Integer
         :rtype: None
 
         """
@@ -457,27 +463,27 @@ class HatchGen_IntersectionPoint(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def SetIndex(self, *args) -> "void" :
+    def SetIndex(self, *args):
         """
         * Sets the index of the supporting curve.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: None
 
         """
         return _HatchGen.HatchGen_IntersectionPoint_SetIndex(self, *args)
 
-    def Index(self, *args) -> "Standard_Integer" :
+    def Index(self):
         """
         * Returns the index of the supporting curve.
 
         :rtype: int
 
         """
-        return _HatchGen.HatchGen_IntersectionPoint_Index(self, *args)
+        return _HatchGen.HatchGen_IntersectionPoint_Index(self)
 
-    def SetParameter(self, *args) -> "void" :
+    def SetParameter(self, *args):
         """
         * Sets the parameter on the curve.
 
@@ -488,16 +494,16 @@ class HatchGen_IntersectionPoint(object):
         """
         return _HatchGen.HatchGen_IntersectionPoint_SetParameter(self, *args)
 
-    def Parameter(self, *args) -> "Standard_Real" :
+    def Parameter(self):
         """
         * Returns the parameter on the curve.
 
         :rtype: float
 
         """
-        return _HatchGen.HatchGen_IntersectionPoint_Parameter(self, *args)
+        return _HatchGen.HatchGen_IntersectionPoint_Parameter(self)
 
-    def SetPosition(self, *args) -> "void" :
+    def SetPosition(self, *args):
         """
         * Sets the position of the point on the curve.
 
@@ -508,16 +514,16 @@ class HatchGen_IntersectionPoint(object):
         """
         return _HatchGen.HatchGen_IntersectionPoint_SetPosition(self, *args)
 
-    def Position(self, *args) -> "TopAbs_Orientation" :
+    def Position(self):
         """
         * Returns the position of the point on the curve.
 
         :rtype: TopAbs_Orientation
 
         """
-        return _HatchGen.HatchGen_IntersectionPoint_Position(self, *args)
+        return _HatchGen.HatchGen_IntersectionPoint_Position(self)
 
-    def SetStateBefore(self, *args) -> "void" :
+    def SetStateBefore(self, *args):
         """
         * Sets the transition state before the intersection.
 
@@ -528,16 +534,16 @@ class HatchGen_IntersectionPoint(object):
         """
         return _HatchGen.HatchGen_IntersectionPoint_SetStateBefore(self, *args)
 
-    def StateBefore(self, *args) -> "TopAbs_State" :
+    def StateBefore(self):
         """
         * Returns the transition state before the intersection.
 
         :rtype: TopAbs_State
 
         """
-        return _HatchGen.HatchGen_IntersectionPoint_StateBefore(self, *args)
+        return _HatchGen.HatchGen_IntersectionPoint_StateBefore(self)
 
-    def SetStateAfter(self, *args) -> "void" :
+    def SetStateAfter(self, *args):
         """
         * Sets the transition state after the intersection.
 
@@ -548,17 +554,23 @@ class HatchGen_IntersectionPoint(object):
         """
         return _HatchGen.HatchGen_IntersectionPoint_SetStateAfter(self, *args)
 
-    def StateAfter(self, *args) -> "TopAbs_State" :
+    def StateAfter(self):
         """
         * Returns the transition state after of the intersection.
 
         :rtype: TopAbs_State
 
         """
-        return _HatchGen.HatchGen_IntersectionPoint_StateAfter(self, *args)
+        return _HatchGen.HatchGen_IntersectionPoint_StateAfter(self)
 
-    def SetSegmentBeginning(self, *args) -> "void" :
+    def SetSegmentBeginning(self, *args):
         """
+        * Sets the flag that the point is the beginning of a segment.
+
+        :param State: default value is Standard_True
+        :type State: bool
+        :rtype: None
+
         * Sets the flag that the point is the beginning of a segment.
 
         :param State: default value is Standard_True
@@ -568,17 +580,23 @@ class HatchGen_IntersectionPoint(object):
         """
         return _HatchGen.HatchGen_IntersectionPoint_SetSegmentBeginning(self, *args)
 
-    def SegmentBeginning(self, *args) -> "Standard_Boolean" :
+    def SegmentBeginning(self):
         """
         * Returns the flag that the point is the beginning of a segment.
 
         :rtype: bool
 
         """
-        return _HatchGen.HatchGen_IntersectionPoint_SegmentBeginning(self, *args)
+        return _HatchGen.HatchGen_IntersectionPoint_SegmentBeginning(self)
 
-    def SetSegmentEnd(self, *args) -> "void" :
+    def SetSegmentEnd(self, *args):
         """
+        * Sets the flag that the point is the end of a segment.
+
+        :param State: default value is Standard_True
+        :type State: bool
+        :rtype: None
+
         * Sets the flag that the point is the end of a segment.
 
         :param State: default value is Standard_True
@@ -588,25 +606,31 @@ class HatchGen_IntersectionPoint(object):
         """
         return _HatchGen.HatchGen_IntersectionPoint_SetSegmentEnd(self, *args)
 
-    def SegmentEnd(self, *args) -> "Standard_Boolean" :
+    def SegmentEnd(self):
         """
         * Returns the flag that the point is the end of a segment.
 
         :rtype: bool
 
         """
-        return _HatchGen.HatchGen_IntersectionPoint_SegmentEnd(self, *args)
+        return _HatchGen.HatchGen_IntersectionPoint_SegmentEnd(self)
 
-    def Dump(self, *args) -> "void" :
+    def Dump(self, Index=0):
         """
         * Dump of the point on element.
 
         :param Index: default value is 0
-        :type Index: int
+        :type Index: Standard_Integer
+        :rtype: void
+
+        * Dump of the point on element.
+
+        :param Index: default value is 0
+        :type Index: Standard_Integer
         :rtype: void
 
         """
-        return _HatchGen.HatchGen_IntersectionPoint_Dump(self, *args)
+        return _HatchGen.HatchGen_IntersectionPoint_Dump(self, Index)
 
     def __del__(self):
     	try:
@@ -638,20 +662,20 @@ HatchGen_IntersectionPoint_swigregister(HatchGen_IntersectionPoint)
 class HatchGen_PointsOnElement(OCC.TCollection.TCollection_BaseSequence):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _HatchGen.HatchGen_PointsOnElement_swiginit(self,_HatchGen.new_HatchGen_PointsOnElement(*args))
-    def Clear(self, *args) -> "void" :
+        _HatchGen.HatchGen_PointsOnElement_swiginit(self,_HatchGen.new_HatchGen_PointsOnElement())
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _HatchGen.HatchGen_PointsOnElement_Clear(self, *args)
+        return _HatchGen.HatchGen_PointsOnElement_Clear(self)
 
-    def Assign(self, *args) -> "HatchGen_PointsOnElement const &" :
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: HatchGen_PointsOnElement &
@@ -660,7 +684,7 @@ class HatchGen_PointsOnElement(OCC.TCollection.TCollection_BaseSequence):
         """
         return _HatchGen.HatchGen_PointsOnElement_Assign(self, *args)
 
-    def Set(self, *args) -> "HatchGen_PointsOnElement const &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: HatchGen_PointsOnElement &
@@ -669,7 +693,7 @@ class HatchGen_PointsOnElement(OCC.TCollection.TCollection_BaseSequence):
         """
         return _HatchGen.HatchGen_PointsOnElement_Set(self, *args)
 
-    def Append(self, *args) -> "void" :
+    def Append(self, *args):
         """
         :param T:
         :type T: HatchGen_PointOnElement &
@@ -682,7 +706,7 @@ class HatchGen_PointsOnElement(OCC.TCollection.TCollection_BaseSequence):
         """
         return _HatchGen.HatchGen_PointsOnElement_Append(self, *args)
 
-    def Prepend(self, *args) -> "void" :
+    def Prepend(self, *args):
         """
         :param T:
         :type T: HatchGen_PointOnElement &
@@ -695,16 +719,16 @@ class HatchGen_PointsOnElement(OCC.TCollection.TCollection_BaseSequence):
         """
         return _HatchGen.HatchGen_PointsOnElement_Prepend(self, *args)
 
-    def InsertBefore(self, *args) -> "void" :
+    def InsertBefore(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param T:
         :type T: HatchGen_PointOnElement &
         :rtype: None
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param S:
         :type S: HatchGen_PointsOnElement &
         :rtype: None
@@ -712,16 +736,16 @@ class HatchGen_PointsOnElement(OCC.TCollection.TCollection_BaseSequence):
         """
         return _HatchGen.HatchGen_PointsOnElement_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args) -> "void" :
+    def InsertAfter(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param T:
         :type T: HatchGen_PointOnElement &
         :rtype: None
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param S:
         :type S: HatchGen_PointsOnElement &
         :rtype: None
@@ -729,24 +753,24 @@ class HatchGen_PointsOnElement(OCC.TCollection.TCollection_BaseSequence):
         """
         return _HatchGen.HatchGen_PointsOnElement_InsertAfter(self, *args)
 
-    def First(self, *args) -> "HatchGen_PointOnElement const &" :
+    def First(self):
         """
         :rtype: HatchGen_PointOnElement
 
         """
-        return _HatchGen.HatchGen_PointsOnElement_First(self, *args)
+        return _HatchGen.HatchGen_PointsOnElement_First(self)
 
-    def Last(self, *args) -> "HatchGen_PointOnElement const &" :
+    def Last(self):
         """
         :rtype: HatchGen_PointOnElement
 
         """
-        return _HatchGen.HatchGen_PointsOnElement_Last(self, *args)
+        return _HatchGen.HatchGen_PointsOnElement_Last(self)
 
-    def Split(self, *args) -> "void" :
+    def Split(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Sub:
         :type Sub: HatchGen_PointsOnElement &
         :rtype: None
@@ -754,19 +778,19 @@ class HatchGen_PointsOnElement(OCC.TCollection.TCollection_BaseSequence):
         """
         return _HatchGen.HatchGen_PointsOnElement_Split(self, *args)
 
-    def Value(self, *args) -> "HatchGen_PointOnElement const &" :
+    def Value(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: HatchGen_PointOnElement
 
         """
         return _HatchGen.HatchGen_PointsOnElement_Value(self, *args)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param I:
         :type I: HatchGen_PointOnElement &
         :rtype: None
@@ -774,25 +798,25 @@ class HatchGen_PointsOnElement(OCC.TCollection.TCollection_BaseSequence):
         """
         return _HatchGen.HatchGen_PointsOnElement_SetValue(self, *args)
 
-    def ChangeValue(self, *args) -> "HatchGen_PointOnElement &" :
+    def ChangeValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: HatchGen_PointOnElement
 
         """
         return _HatchGen.HatchGen_PointsOnElement_ChangeValue(self, *args)
 
-    def Remove(self, *args) -> "void" :
+    def Remove(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: None
 
         :param FromIndex:
-        :type FromIndex: int
+        :type FromIndex: Standard_Integer
         :param ToIndex:
-        :type ToIndex: int
+        :type ToIndex: Standard_Integer
         :rtype: None
 
         """
@@ -827,20 +851,20 @@ HatchGen_PointsOnElement_swigregister(HatchGen_PointsOnElement)
 class HatchGen_PointsOnHatching(OCC.TCollection.TCollection_BaseSequence):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _HatchGen.HatchGen_PointsOnHatching_swiginit(self,_HatchGen.new_HatchGen_PointsOnHatching(*args))
-    def Clear(self, *args) -> "void" :
+        _HatchGen.HatchGen_PointsOnHatching_swiginit(self,_HatchGen.new_HatchGen_PointsOnHatching())
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _HatchGen.HatchGen_PointsOnHatching_Clear(self, *args)
+        return _HatchGen.HatchGen_PointsOnHatching_Clear(self)
 
-    def Assign(self, *args) -> "HatchGen_PointsOnHatching const &" :
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: HatchGen_PointsOnHatching &
@@ -849,7 +873,7 @@ class HatchGen_PointsOnHatching(OCC.TCollection.TCollection_BaseSequence):
         """
         return _HatchGen.HatchGen_PointsOnHatching_Assign(self, *args)
 
-    def Set(self, *args) -> "HatchGen_PointsOnHatching const &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: HatchGen_PointsOnHatching &
@@ -858,7 +882,7 @@ class HatchGen_PointsOnHatching(OCC.TCollection.TCollection_BaseSequence):
         """
         return _HatchGen.HatchGen_PointsOnHatching_Set(self, *args)
 
-    def Append(self, *args) -> "void" :
+    def Append(self, *args):
         """
         :param T:
         :type T: HatchGen_PointOnHatching &
@@ -871,7 +895,7 @@ class HatchGen_PointsOnHatching(OCC.TCollection.TCollection_BaseSequence):
         """
         return _HatchGen.HatchGen_PointsOnHatching_Append(self, *args)
 
-    def Prepend(self, *args) -> "void" :
+    def Prepend(self, *args):
         """
         :param T:
         :type T: HatchGen_PointOnHatching &
@@ -884,16 +908,16 @@ class HatchGen_PointsOnHatching(OCC.TCollection.TCollection_BaseSequence):
         """
         return _HatchGen.HatchGen_PointsOnHatching_Prepend(self, *args)
 
-    def InsertBefore(self, *args) -> "void" :
+    def InsertBefore(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param T:
         :type T: HatchGen_PointOnHatching &
         :rtype: None
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param S:
         :type S: HatchGen_PointsOnHatching &
         :rtype: None
@@ -901,16 +925,16 @@ class HatchGen_PointsOnHatching(OCC.TCollection.TCollection_BaseSequence):
         """
         return _HatchGen.HatchGen_PointsOnHatching_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args) -> "void" :
+    def InsertAfter(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param T:
         :type T: HatchGen_PointOnHatching &
         :rtype: None
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param S:
         :type S: HatchGen_PointsOnHatching &
         :rtype: None
@@ -918,24 +942,24 @@ class HatchGen_PointsOnHatching(OCC.TCollection.TCollection_BaseSequence):
         """
         return _HatchGen.HatchGen_PointsOnHatching_InsertAfter(self, *args)
 
-    def First(self, *args) -> "HatchGen_PointOnHatching const &" :
+    def First(self):
         """
         :rtype: HatchGen_PointOnHatching
 
         """
-        return _HatchGen.HatchGen_PointsOnHatching_First(self, *args)
+        return _HatchGen.HatchGen_PointsOnHatching_First(self)
 
-    def Last(self, *args) -> "HatchGen_PointOnHatching const &" :
+    def Last(self):
         """
         :rtype: HatchGen_PointOnHatching
 
         """
-        return _HatchGen.HatchGen_PointsOnHatching_Last(self, *args)
+        return _HatchGen.HatchGen_PointsOnHatching_Last(self)
 
-    def Split(self, *args) -> "void" :
+    def Split(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Sub:
         :type Sub: HatchGen_PointsOnHatching &
         :rtype: None
@@ -943,19 +967,19 @@ class HatchGen_PointsOnHatching(OCC.TCollection.TCollection_BaseSequence):
         """
         return _HatchGen.HatchGen_PointsOnHatching_Split(self, *args)
 
-    def Value(self, *args) -> "HatchGen_PointOnHatching const &" :
+    def Value(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: HatchGen_PointOnHatching
 
         """
         return _HatchGen.HatchGen_PointsOnHatching_Value(self, *args)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param I:
         :type I: HatchGen_PointOnHatching &
         :rtype: None
@@ -963,25 +987,25 @@ class HatchGen_PointsOnHatching(OCC.TCollection.TCollection_BaseSequence):
         """
         return _HatchGen.HatchGen_PointsOnHatching_SetValue(self, *args)
 
-    def ChangeValue(self, *args) -> "HatchGen_PointOnHatching &" :
+    def ChangeValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: HatchGen_PointOnHatching
 
         """
         return _HatchGen.HatchGen_PointsOnHatching_ChangeValue(self, *args)
 
-    def Remove(self, *args) -> "void" :
+    def Remove(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: None
 
         :param FromIndex:
-        :type FromIndex: int
+        :type FromIndex: Standard_Integer
         :param ToIndex:
-        :type ToIndex: int
+        :type ToIndex: Standard_Integer
         :rtype: None
 
         """
@@ -1028,18 +1052,18 @@ class HatchGen_SequenceNodeOfDomains(OCC.TCollection.TCollection_SeqNode):
 
         """
         _HatchGen.HatchGen_SequenceNodeOfDomains_swiginit(self,_HatchGen.new_HatchGen_SequenceNodeOfDomains(*args))
-    def Value(self, *args) -> "HatchGen_Domain &" :
+    def Value(self):
         """
         :rtype: HatchGen_Domain
 
         """
-        return _HatchGen.HatchGen_SequenceNodeOfDomains_Value(self, *args)
+        return _HatchGen.HatchGen_SequenceNodeOfDomains_Value(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(HatchGen_SequenceNodeOfDomains self)"""
         return _HatchGen.HatchGen_SequenceNodeOfDomains__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_HatchGen_SequenceNodeOfDomains" :
+    def GetHandle(self):
         """GetHandle(HatchGen_SequenceNodeOfDomains self) -> Handle_HatchGen_SequenceNodeOfDomains"""
         return _HatchGen.HatchGen_SequenceNodeOfDomains_GetHandle(self)
 
@@ -1078,7 +1102,7 @@ Handle_HatchGen_SequenceNodeOfDomains._kill_pointed = new_instancemethod(_HatchG
 Handle_HatchGen_SequenceNodeOfDomains_swigregister = _HatchGen.Handle_HatchGen_SequenceNodeOfDomains_swigregister
 Handle_HatchGen_SequenceNodeOfDomains_swigregister(Handle_HatchGen_SequenceNodeOfDomains)
 
-def Handle_HatchGen_SequenceNodeOfDomains_DownCast(*args) -> "Handle_HatchGen_SequenceNodeOfDomains const" :
+def Handle_HatchGen_SequenceNodeOfDomains_DownCast(*args):
   return _HatchGen.Handle_HatchGen_SequenceNodeOfDomains_DownCast(*args)
 Handle_HatchGen_SequenceNodeOfDomains_DownCast = _HatchGen.Handle_HatchGen_SequenceNodeOfDomains_DownCast
 
@@ -1097,18 +1121,18 @@ class HatchGen_SequenceNodeOfPointsOnElement(OCC.TCollection.TCollection_SeqNode
 
         """
         _HatchGen.HatchGen_SequenceNodeOfPointsOnElement_swiginit(self,_HatchGen.new_HatchGen_SequenceNodeOfPointsOnElement(*args))
-    def Value(self, *args) -> "HatchGen_PointOnElement &" :
+    def Value(self):
         """
         :rtype: HatchGen_PointOnElement
 
         """
-        return _HatchGen.HatchGen_SequenceNodeOfPointsOnElement_Value(self, *args)
+        return _HatchGen.HatchGen_SequenceNodeOfPointsOnElement_Value(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(HatchGen_SequenceNodeOfPointsOnElement self)"""
         return _HatchGen.HatchGen_SequenceNodeOfPointsOnElement__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_HatchGen_SequenceNodeOfPointsOnElement" :
+    def GetHandle(self):
         """GetHandle(HatchGen_SequenceNodeOfPointsOnElement self) -> Handle_HatchGen_SequenceNodeOfPointsOnElement"""
         return _HatchGen.HatchGen_SequenceNodeOfPointsOnElement_GetHandle(self)
 
@@ -1147,7 +1171,7 @@ Handle_HatchGen_SequenceNodeOfPointsOnElement._kill_pointed = new_instancemethod
 Handle_HatchGen_SequenceNodeOfPointsOnElement_swigregister = _HatchGen.Handle_HatchGen_SequenceNodeOfPointsOnElement_swigregister
 Handle_HatchGen_SequenceNodeOfPointsOnElement_swigregister(Handle_HatchGen_SequenceNodeOfPointsOnElement)
 
-def Handle_HatchGen_SequenceNodeOfPointsOnElement_DownCast(*args) -> "Handle_HatchGen_SequenceNodeOfPointsOnElement const" :
+def Handle_HatchGen_SequenceNodeOfPointsOnElement_DownCast(*args):
   return _HatchGen.Handle_HatchGen_SequenceNodeOfPointsOnElement_DownCast(*args)
 Handle_HatchGen_SequenceNodeOfPointsOnElement_DownCast = _HatchGen.Handle_HatchGen_SequenceNodeOfPointsOnElement_DownCast
 
@@ -1166,18 +1190,18 @@ class HatchGen_SequenceNodeOfPointsOnHatching(OCC.TCollection.TCollection_SeqNod
 
         """
         _HatchGen.HatchGen_SequenceNodeOfPointsOnHatching_swiginit(self,_HatchGen.new_HatchGen_SequenceNodeOfPointsOnHatching(*args))
-    def Value(self, *args) -> "HatchGen_PointOnHatching &" :
+    def Value(self):
         """
         :rtype: HatchGen_PointOnHatching
 
         """
-        return _HatchGen.HatchGen_SequenceNodeOfPointsOnHatching_Value(self, *args)
+        return _HatchGen.HatchGen_SequenceNodeOfPointsOnHatching_Value(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(HatchGen_SequenceNodeOfPointsOnHatching self)"""
         return _HatchGen.HatchGen_SequenceNodeOfPointsOnHatching__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_HatchGen_SequenceNodeOfPointsOnHatching" :
+    def GetHandle(self):
         """GetHandle(HatchGen_SequenceNodeOfPointsOnHatching self) -> Handle_HatchGen_SequenceNodeOfPointsOnHatching"""
         return _HatchGen.HatchGen_SequenceNodeOfPointsOnHatching_GetHandle(self)
 
@@ -1216,7 +1240,7 @@ Handle_HatchGen_SequenceNodeOfPointsOnHatching._kill_pointed = new_instancemetho
 Handle_HatchGen_SequenceNodeOfPointsOnHatching_swigregister = _HatchGen.Handle_HatchGen_SequenceNodeOfPointsOnHatching_swigregister
 Handle_HatchGen_SequenceNodeOfPointsOnHatching_swigregister(Handle_HatchGen_SequenceNodeOfPointsOnHatching)
 
-def Handle_HatchGen_SequenceNodeOfPointsOnHatching_DownCast(*args) -> "Handle_HatchGen_SequenceNodeOfPointsOnHatching const" :
+def Handle_HatchGen_SequenceNodeOfPointsOnHatching_DownCast(*args):
   return _HatchGen.Handle_HatchGen_SequenceNodeOfPointsOnHatching_DownCast(*args)
 Handle_HatchGen_SequenceNodeOfPointsOnHatching_DownCast = _HatchGen.Handle_HatchGen_SequenceNodeOfPointsOnHatching_DownCast
 
@@ -1243,7 +1267,7 @@ class HatchGen_PointOnElement(HatchGen_IntersectionPoint):
 
         """
         _HatchGen.HatchGen_PointOnElement_swiginit(self,_HatchGen.new_HatchGen_PointOnElement(*args))
-    def SetIntersectionType(self, *args) -> "void" :
+    def SetIntersectionType(self, *args):
         """
         * Sets the intersection type at this point.
 
@@ -1254,16 +1278,16 @@ class HatchGen_PointOnElement(HatchGen_IntersectionPoint):
         """
         return _HatchGen.HatchGen_PointOnElement_SetIntersectionType(self, *args)
 
-    def IntersectionType(self, *args) -> "HatchGen_IntersectionType" :
+    def IntersectionType(self):
         """
         * Returns the intersection type at this point.
 
         :rtype: HatchGen_IntersectionType
 
         """
-        return _HatchGen.HatchGen_PointOnElement_IntersectionType(self, *args)
+        return _HatchGen.HatchGen_PointOnElement_IntersectionType(self)
 
-    def IsIdentical(self, *args) -> "Standard_Boolean" :
+    def IsIdentical(self, *args):
         """
         * Tests if the point is identical to an other. That is to say :  P1.myIndex = P2.myIndex  Abs (P1.myParam - P2.myParam) <= Confusion  P1.myPosit = P2.myPosit  P1.myBefore = P2.myBefore  P1.myAfter = P2.myAfter  P1.mySegBeg = P2.mySegBeg  P1.mySegEnd = P2.mySegEnd  P1.myType = P2.myType
 
@@ -1276,7 +1300,7 @@ class HatchGen_PointOnElement(HatchGen_IntersectionPoint):
         """
         return _HatchGen.HatchGen_PointOnElement_IsIdentical(self, *args)
 
-    def IsDifferent(self, *args) -> "Standard_Boolean" :
+    def IsDifferent(self, *args):
         """
         * Tests if the point is different from an other.
 
@@ -1288,6 +1312,23 @@ class HatchGen_PointOnElement(HatchGen_IntersectionPoint):
 
         """
         return _HatchGen.HatchGen_PointOnElement_IsDifferent(self, *args)
+
+    def Dump(self, Index=0):
+        """
+        * Dump of the point on element.
+
+        :param Index: default value is 0
+        :type Index: Standard_Integer
+        :rtype: None
+
+        * Dump of the point on element.
+
+        :param Index: default value is 0
+        :type Index: Standard_Integer
+        :rtype: None
+
+        """
+        return _HatchGen.HatchGen_PointOnElement_Dump(self, Index)
 
     def __del__(self):
     	try:
@@ -1301,6 +1342,7 @@ HatchGen_PointOnElement.SetIntersectionType = new_instancemethod(_HatchGen.Hatch
 HatchGen_PointOnElement.IntersectionType = new_instancemethod(_HatchGen.HatchGen_PointOnElement_IntersectionType,None,HatchGen_PointOnElement)
 HatchGen_PointOnElement.IsIdentical = new_instancemethod(_HatchGen.HatchGen_PointOnElement_IsIdentical,None,HatchGen_PointOnElement)
 HatchGen_PointOnElement.IsDifferent = new_instancemethod(_HatchGen.HatchGen_PointOnElement_IsDifferent,None,HatchGen_PointOnElement)
+HatchGen_PointOnElement.Dump = new_instancemethod(_HatchGen.HatchGen_PointOnElement_Dump,None,HatchGen_PointOnElement)
 HatchGen_PointOnElement._kill_pointed = new_instancemethod(_HatchGen.HatchGen_PointOnElement__kill_pointed,None,HatchGen_PointOnElement)
 HatchGen_PointOnElement_swigregister = _HatchGen.HatchGen_PointOnElement_swigregister
 HatchGen_PointOnElement_swigregister(HatchGen_PointOnElement)
@@ -1328,16 +1370,16 @@ class HatchGen_PointOnHatching(HatchGen_IntersectionPoint):
 
         """
         _HatchGen.HatchGen_PointOnHatching_swiginit(self,_HatchGen.new_HatchGen_PointOnHatching(*args))
-    def Delete(self, *args) -> "void" :
+    def Delete(self):
         """
         * linux porting
 
         :rtype: void
 
         """
-        return _HatchGen.HatchGen_PointOnHatching_Delete(self, *args)
+        return _HatchGen.HatchGen_PointOnHatching_Delete(self)
 
-    def AddPoint(self, *args) -> "void" :
+    def AddPoint(self, *args):
         """
         * Adds a point on element to the point.
 
@@ -1350,47 +1392,47 @@ class HatchGen_PointOnHatching(HatchGen_IntersectionPoint):
         """
         return _HatchGen.HatchGen_PointOnHatching_AddPoint(self, *args)
 
-    def NbPoints(self, *args) -> "Standard_Integer" :
+    def NbPoints(self):
         """
         * Returns the number of elements intersecting the hatching at this point.
 
         :rtype: int
 
         """
-        return _HatchGen.HatchGen_PointOnHatching_NbPoints(self, *args)
+        return _HatchGen.HatchGen_PointOnHatching_NbPoints(self)
 
-    def Point(self, *args) -> "HatchGen_PointOnElement const &" :
+    def Point(self, *args):
         """
         * Returns the Index-th point on element of the point. The exception OutOfRange is raised if Index > NbPoints.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: HatchGen_PointOnElement
 
         """
         return _HatchGen.HatchGen_PointOnHatching_Point(self, *args)
 
-    def RemPoint(self, *args) -> "void" :
+    def RemPoint(self, *args):
         """
         * Removes the Index-th point on element of the point. The exception OutOfRange is raised if Index > NbPoints.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: None
 
         """
         return _HatchGen.HatchGen_PointOnHatching_RemPoint(self, *args)
 
-    def ClrPoints(self, *args) -> "void" :
+    def ClrPoints(self):
         """
         * Removes all the points on element of the point.
 
         :rtype: None
 
         """
-        return _HatchGen.HatchGen_PointOnHatching_ClrPoints(self, *args)
+        return _HatchGen.HatchGen_PointOnHatching_ClrPoints(self)
 
-    def IsLower(self, *args) -> "Standard_Boolean" :
+    def IsLower(self, *args):
         """
         * Tests if the point is lower than an other. A point on hatching P1 is said to be lower than an other P2 if :  P2.myParam - P1.myParam > Confusion
 
@@ -1403,7 +1445,7 @@ class HatchGen_PointOnHatching(HatchGen_IntersectionPoint):
         """
         return _HatchGen.HatchGen_PointOnHatching_IsLower(self, *args)
 
-    def IsEqual(self, *args) -> "Standard_Boolean" :
+    def IsEqual(self, *args):
         """
         * Tests if the point is equal to an other. A point on hatching P1 is said to be equal to an other P2 if :  | P2.myParam - P1.myParam | <= Confusion
 
@@ -1416,7 +1458,7 @@ class HatchGen_PointOnHatching(HatchGen_IntersectionPoint):
         """
         return _HatchGen.HatchGen_PointOnHatching_IsEqual(self, *args)
 
-    def IsGreater(self, *args) -> "Standard_Boolean" :
+    def IsGreater(self, *args):
         """
         * Tests if the point is greater than an other. A point on hatching P1 is said to be greater than an other P2 if :  P1.myParam - P2.myParam > Confusion
 
@@ -1428,6 +1470,23 @@ class HatchGen_PointOnHatching(HatchGen_IntersectionPoint):
 
         """
         return _HatchGen.HatchGen_PointOnHatching_IsGreater(self, *args)
+
+    def Dump(self, Index=0):
+        """
+        * Dump of the point.
+
+        :param Index: default value is 0
+        :type Index: Standard_Integer
+        :rtype: None
+
+        * Dump of the point.
+
+        :param Index: default value is 0
+        :type Index: Standard_Integer
+        :rtype: None
+
+        """
+        return _HatchGen.HatchGen_PointOnHatching_Dump(self, Index)
 
     def __del__(self):
     	try:
@@ -1446,6 +1505,7 @@ HatchGen_PointOnHatching.ClrPoints = new_instancemethod(_HatchGen.HatchGen_Point
 HatchGen_PointOnHatching.IsLower = new_instancemethod(_HatchGen.HatchGen_PointOnHatching_IsLower,None,HatchGen_PointOnHatching)
 HatchGen_PointOnHatching.IsEqual = new_instancemethod(_HatchGen.HatchGen_PointOnHatching_IsEqual,None,HatchGen_PointOnHatching)
 HatchGen_PointOnHatching.IsGreater = new_instancemethod(_HatchGen.HatchGen_PointOnHatching_IsGreater,None,HatchGen_PointOnHatching)
+HatchGen_PointOnHatching.Dump = new_instancemethod(_HatchGen.HatchGen_PointOnHatching_Dump,None,HatchGen_PointOnHatching)
 HatchGen_PointOnHatching._kill_pointed = new_instancemethod(_HatchGen.HatchGen_PointOnHatching__kill_pointed,None,HatchGen_PointOnHatching)
 HatchGen_PointOnHatching_swigregister = _HatchGen.HatchGen_PointOnHatching_swigregister
 HatchGen_PointOnHatching_swigregister(HatchGen_PointOnHatching)

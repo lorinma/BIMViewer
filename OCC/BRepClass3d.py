@@ -133,8 +133,9 @@ import OCC.Geom2dAdaptor
 import OCC.IntCurvesFace
 class brepclass3d(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
+    def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def OuterShell(*args) -> "TopoDS_Shell" :
+    def OuterShell(*args):
         """
         * Returns the outer most shell of <S>. Returns a Null shell if <S> has no outer shell. If <S> has only one shell, then it will return, without checking orientation.
 
@@ -146,8 +147,6 @@ class brepclass3d(object):
         return _BRepClass3d.brepclass3d_OuterShell(*args)
 
     OuterShell = staticmethod(OuterShell)
-    def __init__(self): 
-        _BRepClass3d.brepclass3d_swiginit(self,_BRepClass3d.new_brepclass3d())
     def __del__(self):
     	try:
     		self.thisown = False
@@ -160,7 +159,7 @@ brepclass3d._kill_pointed = new_instancemethod(_BRepClass3d.brepclass3d__kill_po
 brepclass3d_swigregister = _BRepClass3d.brepclass3d_swigregister
 brepclass3d_swigregister(brepclass3d)
 
-def brepclass3d_OuterShell(*args) -> "TopoDS_Shell" :
+def brepclass3d_OuterShell(*args):
   """
     * Returns the outer most shell of <S>. Returns a Null shell if <S> has no outer shell. If <S> has only one shell, then it will return, without checking orientation.
 
@@ -184,7 +183,7 @@ class BRepClass3d_DataMapIteratorOfMapOfInter(OCC.TCollection.TCollection_BasicM
 
         """
         _BRepClass3d.BRepClass3d_DataMapIteratorOfMapOfInter_swiginit(self,_BRepClass3d.new_BRepClass3d_DataMapIteratorOfMapOfInter(*args))
-    def Initialize(self, *args) -> "void" :
+    def Initialize(self, *args):
         """
         :param aMap:
         :type aMap: BRepClass3d_MapOfInter &
@@ -193,19 +192,19 @@ class BRepClass3d_DataMapIteratorOfMapOfInter(OCC.TCollection.TCollection_BasicM
         """
         return _BRepClass3d.BRepClass3d_DataMapIteratorOfMapOfInter_Initialize(self, *args)
 
-    def Key(self, *args) -> "TopoDS_Shape const" :
+    def Key(self):
         """
         :rtype: TopoDS_Shape
 
         """
-        return _BRepClass3d.BRepClass3d_DataMapIteratorOfMapOfInter_Key(self, *args)
+        return _BRepClass3d.BRepClass3d_DataMapIteratorOfMapOfInter_Key(self)
 
-    def Value(self, *args) -> "Standard_Address const &" :
+    def Value(self):
         """
         :rtype: Standard_Address
 
         """
-        return _BRepClass3d.BRepClass3d_DataMapIteratorOfMapOfInter_Value(self, *args)
+        return _BRepClass3d.BRepClass3d_DataMapIteratorOfMapOfInter_Value(self)
 
     def __del__(self):
     	try:
@@ -237,25 +236,25 @@ class BRepClass3d_DataMapNodeOfMapOfInter(OCC.TCollection.TCollection_MapNode):
 
         """
         _BRepClass3d.BRepClass3d_DataMapNodeOfMapOfInter_swiginit(self,_BRepClass3d.new_BRepClass3d_DataMapNodeOfMapOfInter(*args))
-    def Key(self, *args) -> "TopoDS_Shape" :
+    def Key(self):
         """
         :rtype: TopoDS_Shape
 
         """
-        return _BRepClass3d.BRepClass3d_DataMapNodeOfMapOfInter_Key(self, *args)
+        return _BRepClass3d.BRepClass3d_DataMapNodeOfMapOfInter_Key(self)
 
-    def Value(self, *args) -> "Standard_Address &" :
+    def Value(self):
         """
         :rtype: Standard_Address
 
         """
-        return _BRepClass3d.BRepClass3d_DataMapNodeOfMapOfInter_Value(self, *args)
+        return _BRepClass3d.BRepClass3d_DataMapNodeOfMapOfInter_Value(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(BRepClass3d_DataMapNodeOfMapOfInter self)"""
         return _BRepClass3d.BRepClass3d_DataMapNodeOfMapOfInter__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_BRepClass3d_DataMapNodeOfMapOfInter" :
+    def GetHandle(self):
         """GetHandle(BRepClass3d_DataMapNodeOfMapOfInter self) -> Handle_BRepClass3d_DataMapNodeOfMapOfInter"""
         return _BRepClass3d.BRepClass3d_DataMapNodeOfMapOfInter_GetHandle(self)
 
@@ -295,22 +294,22 @@ Handle_BRepClass3d_DataMapNodeOfMapOfInter._kill_pointed = new_instancemethod(_B
 Handle_BRepClass3d_DataMapNodeOfMapOfInter_swigregister = _BRepClass3d.Handle_BRepClass3d_DataMapNodeOfMapOfInter_swigregister
 Handle_BRepClass3d_DataMapNodeOfMapOfInter_swigregister(Handle_BRepClass3d_DataMapNodeOfMapOfInter)
 
-def Handle_BRepClass3d_DataMapNodeOfMapOfInter_DownCast(*args) -> "Handle_BRepClass3d_DataMapNodeOfMapOfInter const" :
+def Handle_BRepClass3d_DataMapNodeOfMapOfInter_DownCast(*args):
   return _BRepClass3d.Handle_BRepClass3d_DataMapNodeOfMapOfInter_DownCast(*args)
 Handle_BRepClass3d_DataMapNodeOfMapOfInter_DownCast = _BRepClass3d.Handle_BRepClass3d_DataMapNodeOfMapOfInter_DownCast
 
 class BRepClass3d_Intersector3d(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         * Empty constructor.
 
         :rtype: None
 
         """
-        _BRepClass3d.BRepClass3d_Intersector3d_swiginit(self,_BRepClass3d.new_BRepClass3d_Intersector3d(*args))
-    def Perform(self, *args) -> "void" :
+        _BRepClass3d.BRepClass3d_Intersector3d_swiginit(self,_BRepClass3d.new_BRepClass3d_Intersector3d())
+    def Perform(self, *args):
         """
         * Perform the intersection between the segment L(0) ... L(Prm) and the Shape <Sh>.  Only the point with the smallest parameter on the line is returned.  The Tolerance <Tol> is used to determine if the first point of the segment is near the face. In that case, the parameter of the intersection point on the line can be a negative value (greater than -Tol).
 
@@ -327,86 +326,86 @@ class BRepClass3d_Intersector3d(object):
         """
         return _BRepClass3d.BRepClass3d_Intersector3d_Perform(self, *args)
 
-    def IsDone(self, *args) -> "Standard_Boolean" :
+    def IsDone(self):
         """
         * True is returned when the intersection have been computed.
 
         :rtype: bool
 
         """
-        return _BRepClass3d.BRepClass3d_Intersector3d_IsDone(self, *args)
+        return _BRepClass3d.BRepClass3d_Intersector3d_IsDone(self)
 
-    def HasAPoint(self, *args) -> "Standard_Boolean" :
+    def HasAPoint(self):
         """
         * True is returned if a point has been found.
 
         :rtype: bool
 
         """
-        return _BRepClass3d.BRepClass3d_Intersector3d_HasAPoint(self, *args)
+        return _BRepClass3d.BRepClass3d_Intersector3d_HasAPoint(self)
 
-    def UParameter(self, *args) -> "Standard_Real" :
+    def UParameter(self):
         """
         * Returns the U parameter of the intersection point on the surface.
 
         :rtype: float
 
         """
-        return _BRepClass3d.BRepClass3d_Intersector3d_UParameter(self, *args)
+        return _BRepClass3d.BRepClass3d_Intersector3d_UParameter(self)
 
-    def VParameter(self, *args) -> "Standard_Real" :
+    def VParameter(self):
         """
         * Returns the V parameter of the intersection point on the surface.
 
         :rtype: float
 
         """
-        return _BRepClass3d.BRepClass3d_Intersector3d_VParameter(self, *args)
+        return _BRepClass3d.BRepClass3d_Intersector3d_VParameter(self)
 
-    def WParameter(self, *args) -> "Standard_Real" :
+    def WParameter(self):
         """
         * Returns the parameter of the intersection point on the line.
 
         :rtype: float
 
         """
-        return _BRepClass3d.BRepClass3d_Intersector3d_WParameter(self, *args)
+        return _BRepClass3d.BRepClass3d_Intersector3d_WParameter(self)
 
-    def Pnt(self, *args) -> "gp_Pnt const" :
+    def Pnt(self):
         """
         * Returns the geometric point of the intersection between the line and the surface.
 
         :rtype: gp_Pnt
 
         """
-        return _BRepClass3d.BRepClass3d_Intersector3d_Pnt(self, *args)
+        return _BRepClass3d.BRepClass3d_Intersector3d_Pnt(self)
 
-    def Transition(self, *args) -> "IntCurveSurface_TransitionOnCurve" :
+    def Transition(self):
         """
         * Returns the transition of the line on the surface.
 
         :rtype: IntCurveSurface_TransitionOnCurve
 
         """
-        return _BRepClass3d.BRepClass3d_Intersector3d_Transition(self, *args)
+        return _BRepClass3d.BRepClass3d_Intersector3d_Transition(self)
 
-    def State(self, *args) -> "TopAbs_State" :
+    def State(self):
         """
         * Returns the state of the point on the face. The values can be either TopAbs_IN ( the point is in the face) or TopAbs_ON ( the point is on a boudary of the face).
 
         :rtype: TopAbs_State
 
         """
-        return _BRepClass3d.BRepClass3d_Intersector3d_State(self, *args)
+        return _BRepClass3d.BRepClass3d_Intersector3d_State(self)
 
-    def Face(self, *args) -> "TopoDS_Face const" :
+    def Face(self):
         """
         * Returns the significant face used to determine the intersection.
 
         :rtype: TopoDS_Face
 
         """
-        return _BRepClass3d.BRepClass3d_Intersector3d_Face(self, *args)
+        return _BRepClass3d.BRepClass3d_Intersector3d_Face(self)
 
     def __del__(self):
     	try:
@@ -433,15 +432,19 @@ BRepClass3d_Intersector3d_swigregister(BRepClass3d_Intersector3d)
 class BRepClass3d_MapOfInter(OCC.TCollection.TCollection_BasicMap):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self, NbBuckets=1): 
         """
         :param NbBuckets: default value is 1
-        :type NbBuckets: int
+        :type NbBuckets: Standard_Integer
+        :rtype: None
+
+        :param NbBuckets: default value is 1
+        :type NbBuckets: Standard_Integer
         :rtype: None
 
         """
-        _BRepClass3d.BRepClass3d_MapOfInter_swiginit(self,_BRepClass3d.new_BRepClass3d_MapOfInter(*args))
-    def Assign(self, *args) -> "BRepClass3d_MapOfInter &" :
+        _BRepClass3d.BRepClass3d_MapOfInter_swiginit(self,_BRepClass3d.new_BRepClass3d_MapOfInter(NbBuckets))
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: BRepClass3d_MapOfInter &
@@ -450,7 +453,7 @@ class BRepClass3d_MapOfInter(OCC.TCollection.TCollection_BasicMap):
         """
         return _BRepClass3d.BRepClass3d_MapOfInter_Assign(self, *args)
 
-    def Set(self, *args) -> "BRepClass3d_MapOfInter &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: BRepClass3d_MapOfInter &
@@ -459,23 +462,23 @@ class BRepClass3d_MapOfInter(OCC.TCollection.TCollection_BasicMap):
         """
         return _BRepClass3d.BRepClass3d_MapOfInter_Set(self, *args)
 
-    def ReSize(self, *args) -> "void" :
+    def ReSize(self, *args):
         """
         :param NbBuckets:
-        :type NbBuckets: int
+        :type NbBuckets: Standard_Integer
         :rtype: None
 
         """
         return _BRepClass3d.BRepClass3d_MapOfInter_ReSize(self, *args)
 
-    def Clear(self, *args) -> "void" :
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _BRepClass3d.BRepClass3d_MapOfInter_Clear(self, *args)
+        return _BRepClass3d.BRepClass3d_MapOfInter_Clear(self)
 
-    def Bind(self, *args) -> "Standard_Boolean" :
+    def Bind(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -486,7 +489,7 @@ class BRepClass3d_MapOfInter(OCC.TCollection.TCollection_BasicMap):
         """
         return _BRepClass3d.BRepClass3d_MapOfInter_Bind(self, *args)
 
-    def IsBound(self, *args) -> "Standard_Boolean" :
+    def IsBound(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -495,7 +498,7 @@ class BRepClass3d_MapOfInter(OCC.TCollection.TCollection_BasicMap):
         """
         return _BRepClass3d.BRepClass3d_MapOfInter_IsBound(self, *args)
 
-    def UnBind(self, *args) -> "Standard_Boolean" :
+    def UnBind(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -504,7 +507,7 @@ class BRepClass3d_MapOfInter(OCC.TCollection.TCollection_BasicMap):
         """
         return _BRepClass3d.BRepClass3d_MapOfInter_UnBind(self, *args)
 
-    def Find(self, *args) -> "Standard_Address const &" :
+    def Find(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -513,7 +516,7 @@ class BRepClass3d_MapOfInter(OCC.TCollection.TCollection_BasicMap):
         """
         return _BRepClass3d.BRepClass3d_MapOfInter_Find(self, *args)
 
-    def ChangeFind(self, *args) -> "Standard_Address &" :
+    def ChangeFind(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -522,7 +525,7 @@ class BRepClass3d_MapOfInter(OCC.TCollection.TCollection_BasicMap):
         """
         return _BRepClass3d.BRepClass3d_MapOfInter_ChangeFind(self, *args)
 
-    def Find1(self, *args) -> "Standard_Address" :
+    def Find1(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -531,7 +534,7 @@ class BRepClass3d_MapOfInter(OCC.TCollection.TCollection_BasicMap):
         """
         return _BRepClass3d.BRepClass3d_MapOfInter_Find1(self, *args)
 
-    def ChangeFind1(self, *args) -> "Standard_Address" :
+    def ChangeFind1(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -540,7 +543,7 @@ class BRepClass3d_MapOfInter(OCC.TCollection.TCollection_BasicMap):
         """
         return _BRepClass3d.BRepClass3d_MapOfInter_ChangeFind1(self, *args)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(BRepClass3d_MapOfInter self)"""
         return _BRepClass3d.BRepClass3d_MapOfInter__kill_pointed(self)
 
@@ -588,7 +591,7 @@ class BRepClass3d_SClassifier(object):
 
         """
         _BRepClass3d.BRepClass3d_SClassifier_swiginit(self,_BRepClass3d.new_BRepClass3d_SClassifier(*args))
-    def Perform(self, *args) -> "void" :
+    def Perform(self, *args):
         """
         * Classify the point P with the tolerance Tol on the solid S.
 
@@ -603,7 +606,7 @@ class BRepClass3d_SClassifier(object):
         """
         return _BRepClass3d.BRepClass3d_SClassifier_Perform(self, *args)
 
-    def PerformInfinitePoint(self, *args) -> "void" :
+    def PerformInfinitePoint(self, *args):
         """
         * Classify an infinite point with the tolerance Tol on the solid S.
 
@@ -616,41 +619,41 @@ class BRepClass3d_SClassifier(object):
         """
         return _BRepClass3d.BRepClass3d_SClassifier_PerformInfinitePoint(self, *args)
 
-    def Rejected(self, *args) -> "Standard_Boolean" :
+    def Rejected(self):
         """
         * Returns True if the classification has been computed by rejection. The State is then OUT.
 
         :rtype: bool
 
         """
-        return _BRepClass3d.BRepClass3d_SClassifier_Rejected(self, *args)
+        return _BRepClass3d.BRepClass3d_SClassifier_Rejected(self)
 
-    def State(self, *args) -> "TopAbs_State" :
+    def State(self):
         """
         * Returns the result of the classification.
 
         :rtype: TopAbs_State
 
         """
-        return _BRepClass3d.BRepClass3d_SClassifier_State(self, *args)
+        return _BRepClass3d.BRepClass3d_SClassifier_State(self)
 
-    def IsOnAFace(self, *args) -> "Standard_Boolean" :
+    def IsOnAFace(self):
         """
         * Returns True when the point is a point of a face.
 
         :rtype: bool
 
         """
-        return _BRepClass3d.BRepClass3d_SClassifier_IsOnAFace(self, *args)
+        return _BRepClass3d.BRepClass3d_SClassifier_IsOnAFace(self)
 
-    def Face(self, *args) -> "TopoDS_Face" :
+    def Face(self):
         """
         * Returns the face used to determine the classification. When the state is ON, this is the face containing the point.  When Rejected() returns True, Face() has no signification.
 
         :rtype: TopoDS_Face
 
         """
-        return _BRepClass3d.BRepClass3d_SClassifier_Face(self, *args)
+        return _BRepClass3d.BRepClass3d_SClassifier_Face(self)
 
     def __del__(self):
     	try:
@@ -689,14 +692,14 @@ class BRepClass3d_SolidExplorer(object):
 
         """
         _BRepClass3d.BRepClass3d_SolidExplorer_swiginit(self,_BRepClass3d.new_BRepClass3d_SolidExplorer(*args))
-    def Delete(self, *args) -> "void" :
+    def Delete(self):
         """
         :rtype: void
 
         """
-        return _BRepClass3d.BRepClass3d_SolidExplorer_Delete(self, *args)
+        return _BRepClass3d.BRepClass3d_SolidExplorer_Delete(self)
 
-    def InitShape(self, *args) -> "void" :
+    def InitShape(self, *args):
         """
         :param S:
         :type S: TopoDS_Shape &
@@ -705,7 +708,7 @@ class BRepClass3d_SolidExplorer(object):
         """
         return _BRepClass3d.BRepClass3d_SolidExplorer_InitShape(self, *args)
 
-    def Reject(self, *args) -> "Standard_Boolean" :
+    def Reject(self, *args):
         """
         * Should return True if P outside of bounding vol. of the shape
 
@@ -716,7 +719,7 @@ class BRepClass3d_SolidExplorer(object):
         """
         return _BRepClass3d.BRepClass3d_SolidExplorer_Reject(self, *args)
 
-    def FindAPointInTheFace(*args) -> "Standard_Real &, Standard_Real &" :
+    def FindAPointInTheFace(*args):
         """
         * compute a point P in the face F. Param is a Real in  ]0,1[ and is used to initialise the algorithm. For  different values , different points are returned.
 
@@ -784,7 +787,7 @@ class BRepClass3d_SolidExplorer(object):
         return _BRepClass3d.BRepClass3d_SolidExplorer_FindAPointInTheFace(*args)
 
     FindAPointInTheFace = staticmethod(FindAPointInTheFace)
-    def PointInTheFace(self, *args) -> "Standard_Boolean" :
+    def PointInTheFace(self, *args):
         """
         :param F:
         :type F: TopoDS_Face &
@@ -797,7 +800,7 @@ class BRepClass3d_SolidExplorer(object):
         :param Param:
         :type Param: float &
         :param Index:
-        :type Index: int &
+        :type Index: Standard_Integer &
         :rtype: bool
 
         :param F:
@@ -811,7 +814,7 @@ class BRepClass3d_SolidExplorer(object):
         :param Param:
         :type Param: float &
         :param Index:
-        :type Index: int &
+        :type Index: Standard_Integer &
         :param surf:
         :type surf: Handle_BRepAdaptor_HSurface &
         :param u1:
@@ -837,7 +840,7 @@ class BRepClass3d_SolidExplorer(object):
         :param Param:
         :type Param: float &
         :param Index:
-        :type Index: int &
+        :type Index: Standard_Integer &
         :param surf:
         :type surf: Handle_BRepAdaptor_HSurface &
         :param u1:
@@ -857,43 +860,43 @@ class BRepClass3d_SolidExplorer(object):
         """
         return _BRepClass3d.BRepClass3d_SolidExplorer_PointInTheFace(self, *args)
 
-    def InitShell(self, *args) -> "void" :
+    def InitShell(self):
         """
         * Starts an exploration of the shells.
 
         :rtype: None
 
         """
-        return _BRepClass3d.BRepClass3d_SolidExplorer_InitShell(self, *args)
+        return _BRepClass3d.BRepClass3d_SolidExplorer_InitShell(self)
 
-    def MoreShell(self, *args) -> "Standard_Boolean" :
+    def MoreShell(self):
         """
         * Returns True if there is a current shell.
 
         :rtype: bool
 
         """
-        return _BRepClass3d.BRepClass3d_SolidExplorer_MoreShell(self, *args)
+        return _BRepClass3d.BRepClass3d_SolidExplorer_MoreShell(self)
 
-    def NextShell(self, *args) -> "void" :
+    def NextShell(self):
         """
         * Sets the explorer to the next shell.
 
         :rtype: None
 
         """
-        return _BRepClass3d.BRepClass3d_SolidExplorer_NextShell(self, *args)
+        return _BRepClass3d.BRepClass3d_SolidExplorer_NextShell(self)
 
-    def CurrentShell(self, *args) -> "TopoDS_Shell" :
+    def CurrentShell(self):
         """
         * Returns the current shell.
 
         :rtype: TopoDS_Shell
 
         """
-        return _BRepClass3d.BRepClass3d_SolidExplorer_CurrentShell(self, *args)
+        return _BRepClass3d.BRepClass3d_SolidExplorer_CurrentShell(self)
 
-    def RejectShell(self, *args) -> "Standard_Boolean" :
+    def RejectShell(self, *args):
         """
         * Returns True if the Shell is rejected.
 
@@ -904,43 +907,43 @@ class BRepClass3d_SolidExplorer(object):
         """
         return _BRepClass3d.BRepClass3d_SolidExplorer_RejectShell(self, *args)
 
-    def InitFace(self, *args) -> "void" :
+    def InitFace(self):
         """
         * Starts an exploration of the faces of the current shell.
 
         :rtype: None
 
         """
-        return _BRepClass3d.BRepClass3d_SolidExplorer_InitFace(self, *args)
+        return _BRepClass3d.BRepClass3d_SolidExplorer_InitFace(self)
 
-    def MoreFace(self, *args) -> "Standard_Boolean" :
+    def MoreFace(self):
         """
         * Returns True if current face in current shell.
 
         :rtype: bool
 
         """
-        return _BRepClass3d.BRepClass3d_SolidExplorer_MoreFace(self, *args)
+        return _BRepClass3d.BRepClass3d_SolidExplorer_MoreFace(self)
 
-    def NextFace(self, *args) -> "void" :
+    def NextFace(self):
         """
         * Sets the explorer to the next Face of the current shell.
 
         :rtype: None
 
         """
-        return _BRepClass3d.BRepClass3d_SolidExplorer_NextFace(self, *args)
+        return _BRepClass3d.BRepClass3d_SolidExplorer_NextFace(self)
 
-    def CurrentFace(self, *args) -> "TopoDS_Face" :
+    def CurrentFace(self):
         """
         * Returns the current face.
 
         :rtype: TopoDS_Face
 
         """
-        return _BRepClass3d.BRepClass3d_SolidExplorer_CurrentFace(self, *args)
+        return _BRepClass3d.BRepClass3d_SolidExplorer_CurrentFace(self)
 
-    def RejectFace(self, *args) -> "Standard_Boolean" :
+    def RejectFace(self, *args):
         """
         * returns True if the face is rejected.
 
@@ -951,7 +954,7 @@ class BRepClass3d_SolidExplorer(object):
         """
         return _BRepClass3d.BRepClass3d_SolidExplorer_RejectFace(self, *args)
 
-    def Segment(self, *args) -> "Standard_Integer" :
+    def Segment(self, *args):
         """
         * Returns in <L>, <Par> a segment having at least one intersection with the shape boundary to compute intersections.
 
@@ -966,7 +969,7 @@ class BRepClass3d_SolidExplorer(object):
         """
         return _BRepClass3d.BRepClass3d_SolidExplorer_Segment(self, *args)
 
-    def OtherSegment(self, *args) -> "Standard_Integer" :
+    def OtherSegment(self, *args):
         """
         * Returns in <L>, <Par> a segment having at least one intersection with the shape boundary to compute intersections.  The First Call to this method returns a line which point to a point of the first face of the shape. The Second Call provide a line to the second face and so on.
 
@@ -981,16 +984,16 @@ class BRepClass3d_SolidExplorer(object):
         """
         return _BRepClass3d.BRepClass3d_SolidExplorer_OtherSegment(self, *args)
 
-    def GetFaceSegmentIndex(self, *args) -> "Standard_Integer" :
+    def GetFaceSegmentIndex(self):
         """
         * Returns the index of face for which last segment is calculated.
 
         :rtype: int
 
         """
-        return _BRepClass3d.BRepClass3d_SolidExplorer_GetFaceSegmentIndex(self, *args)
+        return _BRepClass3d.BRepClass3d_SolidExplorer_GetFaceSegmentIndex(self)
 
-    def DumpSegment(self, *args) -> "void" :
+    def DumpSegment(self, *args):
         """
         :param P:
         :type P: gp_Pnt
@@ -1005,14 +1008,14 @@ class BRepClass3d_SolidExplorer(object):
         """
         return _BRepClass3d.BRepClass3d_SolidExplorer_DumpSegment(self, *args)
 
-    def Box(self, *args) -> "Bnd_Box const &" :
+    def Box(self):
         """
         :rtype: Bnd_Box
 
         """
-        return _BRepClass3d.BRepClass3d_SolidExplorer_Box(self, *args)
+        return _BRepClass3d.BRepClass3d_SolidExplorer_Box(self)
 
-    def Intersector(self, *args) -> "IntCurvesFace_Intersector &" :
+    def Intersector(self, *args):
         """
         :param F:
         :type F: TopoDS_Face &
@@ -1021,12 +1024,12 @@ class BRepClass3d_SolidExplorer(object):
         """
         return _BRepClass3d.BRepClass3d_SolidExplorer_Intersector(self, *args)
 
-    def Destroy(self, *args) -> "void" :
+    def Destroy(self):
         """
         :rtype: None
 
         """
-        return _BRepClass3d.BRepClass3d_SolidExplorer_Destroy(self, *args)
+        return _BRepClass3d.BRepClass3d_SolidExplorer_Destroy(self)
 
     def __del__(self):
     	try:
@@ -1061,7 +1064,7 @@ BRepClass3d_SolidExplorer._kill_pointed = new_instancemethod(_BRepClass3d.BRepCl
 BRepClass3d_SolidExplorer_swigregister = _BRepClass3d.BRepClass3d_SolidExplorer_swigregister
 BRepClass3d_SolidExplorer_swigregister(BRepClass3d_SolidExplorer)
 
-def BRepClass3d_SolidExplorer_FindAPointInTheFace(*args) -> "Standard_Real &, Standard_Real &" :
+def BRepClass3d_SolidExplorer_FindAPointInTheFace(*args):
   """
     * compute a point P in the face F. Param is a Real in  ]0,1[ and is used to initialise the algorithm. For  different values , different points are returned.
 
@@ -1131,13 +1134,13 @@ def BRepClass3d_SolidExplorer_FindAPointInTheFace(*args) -> "Standard_Real &, St
 class BRepClass3d_SolidPassiveClassifier(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _BRepClass3d.BRepClass3d_SolidPassiveClassifier_swiginit(self,_BRepClass3d.new_BRepClass3d_SolidPassiveClassifier(*args))
-    def Reset(self, *args) -> "void" :
+        _BRepClass3d.BRepClass3d_SolidPassiveClassifier_swiginit(self,_BRepClass3d.new_BRepClass3d_SolidPassiveClassifier())
+    def Reset(self, *args):
         """
         :param L:
         :type L: gp_Lin
@@ -1150,7 +1153,7 @@ class BRepClass3d_SolidPassiveClassifier(object):
         """
         return _BRepClass3d.BRepClass3d_SolidPassiveClassifier_Reset(self, *args)
 
-    def Compare(self, *args) -> "void" :
+    def Compare(self, *args):
         """
         :param F:
         :type F: TopoDS_Face &
@@ -1161,33 +1164,33 @@ class BRepClass3d_SolidPassiveClassifier(object):
         """
         return _BRepClass3d.BRepClass3d_SolidPassiveClassifier_Compare(self, *args)
 
-    def Parameter(self, *args) -> "Standard_Real" :
+    def Parameter(self):
         """
         :rtype: float
 
         """
-        return _BRepClass3d.BRepClass3d_SolidPassiveClassifier_Parameter(self, *args)
+        return _BRepClass3d.BRepClass3d_SolidPassiveClassifier_Parameter(self)
 
-    def HasIntersection(self, *args) -> "Standard_Boolean" :
+    def HasIntersection(self):
         """
         :rtype: bool
 
         """
-        return _BRepClass3d.BRepClass3d_SolidPassiveClassifier_HasIntersection(self, *args)
+        return _BRepClass3d.BRepClass3d_SolidPassiveClassifier_HasIntersection(self)
 
-    def Intersector(self, *args) -> "BRepClass3d_Intersector3d &" :
+    def Intersector(self):
         """
         :rtype: BRepClass3d_Intersector3d
 
         """
-        return _BRepClass3d.BRepClass3d_SolidPassiveClassifier_Intersector(self, *args)
+        return _BRepClass3d.BRepClass3d_SolidPassiveClassifier_Intersector(self)
 
-    def State(self, *args) -> "TopAbs_State" :
+    def State(self):
         """
         :rtype: TopAbs_State
 
         """
-        return _BRepClass3d.BRepClass3d_SolidPassiveClassifier_State(self, *args)
+        return _BRepClass3d.BRepClass3d_SolidPassiveClassifier_State(self)
 
     def __del__(self):
     	try:
@@ -1210,7 +1213,7 @@ BRepClass3d_SolidPassiveClassifier_swigregister(BRepClass3d_SolidPassiveClassifi
 class BRepClass3d_SolidClassifier(BRepClass3d_SClassifier):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def Load(self, *args) -> "void" :
+    def Load(self, *args):
         """
         :param S:
         :type S: TopoDS_Shape &
@@ -1243,7 +1246,7 @@ class BRepClass3d_SolidClassifier(BRepClass3d_SClassifier):
 
         """
         _BRepClass3d.BRepClass3d_SolidClassifier_swiginit(self,_BRepClass3d.new_BRepClass3d_SolidClassifier(*args))
-    def Perform(self, *args) -> "void" :
+    def Perform(self, *args):
         """
         * Classify the point P with the tolerance Tol on the solid S.
 
@@ -1256,7 +1259,7 @@ class BRepClass3d_SolidClassifier(BRepClass3d_SClassifier):
         """
         return _BRepClass3d.BRepClass3d_SolidClassifier_Perform(self, *args)
 
-    def PerformInfinitePoint(self, *args) -> "void" :
+    def PerformInfinitePoint(self, *args):
         """
         * Classify an infinite point with the tolerance Tol on the solid S. Useful for compute the orientation of a solid.
 
@@ -1267,12 +1270,12 @@ class BRepClass3d_SolidClassifier(BRepClass3d_SClassifier):
         """
         return _BRepClass3d.BRepClass3d_SolidClassifier_PerformInfinitePoint(self, *args)
 
-    def Destroy(self, *args) -> "void" :
+    def Destroy(self):
         """
         :rtype: None
 
         """
-        return _BRepClass3d.BRepClass3d_SolidClassifier_Destroy(self, *args)
+        return _BRepClass3d.BRepClass3d_SolidClassifier_Destroy(self)
 
     def __del__(self):
     	try:

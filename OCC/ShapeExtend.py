@@ -146,18 +146,19 @@ ShapeExtend_FAIL8 = _ShapeExtend.ShapeExtend_FAIL8
 ShapeExtend_FAIL = _ShapeExtend.ShapeExtend_FAIL
 class shapeextend(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
+    def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def Init(*args) -> "void" :
+    def Init():
         """
         * Inits using of ShapeExtend. Currently, loads messages output by ShapeHealing algorithms.
 
         :rtype: void
 
         """
-        return _ShapeExtend.shapeextend_Init(*args)
+        return _ShapeExtend.shapeextend_Init()
 
     Init = staticmethod(Init)
-    def EncodeStatus(*args) -> "Standard_Integer" :
+    def EncodeStatus(*args):
         """
         * Encodes status (enumeration) to a bit flag
 
@@ -169,12 +170,12 @@ class shapeextend(object):
         return _ShapeExtend.shapeextend_EncodeStatus(*args)
 
     EncodeStatus = staticmethod(EncodeStatus)
-    def DecodeStatus(*args) -> "Standard_Boolean" :
+    def DecodeStatus(*args):
         """
         * Tells if a bit flag contains bit corresponding to enumerated status
 
         :param flag:
-        :type flag: int
+        :type flag: Standard_Integer
         :param status:
         :type status: ShapeExtend_Status
         :rtype: bool
@@ -183,8 +184,6 @@ class shapeextend(object):
         return _ShapeExtend.shapeextend_DecodeStatus(*args)
 
     DecodeStatus = staticmethod(DecodeStatus)
-    def __init__(self): 
-        _ShapeExtend.shapeextend_swiginit(self,_ShapeExtend.new_shapeextend())
     def __del__(self):
     	try:
     		self.thisown = False
@@ -197,16 +196,16 @@ shapeextend._kill_pointed = new_instancemethod(_ShapeExtend.shapeextend__kill_po
 shapeextend_swigregister = _ShapeExtend.shapeextend_swigregister
 shapeextend_swigregister(shapeextend)
 
-def shapeextend_Init(*args) -> "void" :
+def shapeextend_Init():
   """
     * Inits using of ShapeExtend. Currently, loads messages output by ShapeHealing algorithms.
 
     :rtype: void
 
     """
-  return _ShapeExtend.shapeextend_Init(*args)
+  return _ShapeExtend.shapeextend_Init()
 
-def shapeextend_EncodeStatus(*args) -> "Standard_Integer" :
+def shapeextend_EncodeStatus(*args):
   """
     * Encodes status (enumeration) to a bit flag
 
@@ -217,12 +216,12 @@ def shapeextend_EncodeStatus(*args) -> "Standard_Integer" :
     """
   return _ShapeExtend.shapeextend_EncodeStatus(*args)
 
-def shapeextend_DecodeStatus(*args) -> "Standard_Boolean" :
+def shapeextend_DecodeStatus(*args):
   """
     * Tells if a bit flag contains bit corresponding to enumerated status
 
     :param flag:
-    :type flag: int
+    :type flag: Standard_Integer
     :param status:
     :type status: ShapeExtend_Status
     :rtype: bool
@@ -233,15 +232,15 @@ def shapeextend_DecodeStatus(*args) -> "Standard_Boolean" :
 class ShapeExtend_BasicMsgRegistrator(OCC.MMgt.MMgt_TShared):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         * Empty constructor.
 
         :rtype: None
 
         """
-        _ShapeExtend.ShapeExtend_BasicMsgRegistrator_swiginit(self,_ShapeExtend.new_ShapeExtend_BasicMsgRegistrator(*args))
-    def Send(self, *args) -> "void" :
+        _ShapeExtend.ShapeExtend_BasicMsgRegistrator_swiginit(self,_ShapeExtend.new_ShapeExtend_BasicMsgRegistrator())
+    def Send(self, *args):
         """
         * Sends a message to be attached to the object. Object can be of any type interpreted by redefined MsgRegistrator.
 
@@ -274,11 +273,11 @@ class ShapeExtend_BasicMsgRegistrator(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeExtend.ShapeExtend_BasicMsgRegistrator_Send(self, *args)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(ShapeExtend_BasicMsgRegistrator self)"""
         return _ShapeExtend.ShapeExtend_BasicMsgRegistrator__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_ShapeExtend_BasicMsgRegistrator" :
+    def GetHandle(self):
         """GetHandle(ShapeExtend_BasicMsgRegistrator self) -> Handle_ShapeExtend_BasicMsgRegistrator"""
         return _ShapeExtend.ShapeExtend_BasicMsgRegistrator_GetHandle(self)
 
@@ -317,7 +316,7 @@ Handle_ShapeExtend_BasicMsgRegistrator._kill_pointed = new_instancemethod(_Shape
 Handle_ShapeExtend_BasicMsgRegistrator_swigregister = _ShapeExtend.Handle_ShapeExtend_BasicMsgRegistrator_swigregister
 Handle_ShapeExtend_BasicMsgRegistrator_swigregister(Handle_ShapeExtend_BasicMsgRegistrator)
 
-def Handle_ShapeExtend_BasicMsgRegistrator_DownCast(*args) -> "Handle_ShapeExtend_BasicMsgRegistrator const" :
+def Handle_ShapeExtend_BasicMsgRegistrator_DownCast(*args):
   return _ShapeExtend.Handle_ShapeExtend_BasicMsgRegistrator_DownCast(*args)
 Handle_ShapeExtend_BasicMsgRegistrator_DownCast = _ShapeExtend.Handle_ShapeExtend_BasicMsgRegistrator_DownCast
 
@@ -325,27 +324,27 @@ class ShapeExtend_ComplexCurve(OCC.Geom.Geom_Curve):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def NbCurves(self, *args) -> "Standard_Integer" :
+    def NbCurves(self):
         """
         * Returns number of curves
 
         :rtype: int
 
         """
-        return _ShapeExtend.ShapeExtend_ComplexCurve_NbCurves(self, *args)
+        return _ShapeExtend.ShapeExtend_ComplexCurve_NbCurves(self)
 
-    def Curve(self, *args) -> "Handle_Geom_Curve const &" :
+    def Curve(self, *args):
         """
         * Returns curve given by its index
 
         :param index:
-        :type index: int
+        :type index: Standard_Integer
         :rtype: Handle_Geom_Curve
 
         """
         return _ShapeExtend.ShapeExtend_ComplexCurve_Curve(self, *args)
 
-    def LocateParameter(self, *args) -> "Standard_Integer" :
+    def LocateParameter(self, *args):
         """
         * Returns number of the curve for the given parameter U and local paramete r UOut for the found curve
 
@@ -358,12 +357,12 @@ class ShapeExtend_ComplexCurve(OCC.Geom.Geom_Curve):
         """
         return _ShapeExtend.ShapeExtend_ComplexCurve_LocateParameter(self, *args)
 
-    def LocalToGlobal(self, *args) -> "Standard_Real" :
+    def LocalToGlobal(self, *args):
         """
         * Returns global parameter for the whole curve according to the segment and local parameter on it
 
         :param index:
-        :type index: int
+        :type index: Standard_Integer
         :param Ulocal:
         :type Ulocal: float
         :rtype: float
@@ -371,18 +370,18 @@ class ShapeExtend_ComplexCurve(OCC.Geom.Geom_Curve):
         """
         return _ShapeExtend.ShapeExtend_ComplexCurve_LocalToGlobal(self, *args)
 
-    def GetScaleFactor(self, *args) -> "Standard_Real" :
+    def GetScaleFactor(self, *args):
         """
         * Returns scale factor for recomputing of deviatives.
 
         :param ind:
-        :type ind: int
+        :type ind: Standard_Integer
         :rtype: float
 
         """
         return _ShapeExtend.ShapeExtend_ComplexCurve_GetScaleFactor(self, *args)
 
-    def CheckConnectivity(self, *args) -> "Standard_Boolean" :
+    def CheckConnectivity(self, *args):
         """
         * Checks geometrical connectivity of the curves, including closure (sets fields myClosed)
 
@@ -393,11 +392,11 @@ class ShapeExtend_ComplexCurve(OCC.Geom.Geom_Curve):
         """
         return _ShapeExtend.ShapeExtend_ComplexCurve_CheckConnectivity(self, *args)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(ShapeExtend_ComplexCurve self)"""
         return _ShapeExtend.ShapeExtend_ComplexCurve__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_ShapeExtend_ComplexCurve" :
+    def GetHandle(self):
         """GetHandle(ShapeExtend_ComplexCurve self) -> Handle_ShapeExtend_ComplexCurve"""
         return _ShapeExtend.ShapeExtend_ComplexCurve_GetHandle(self)
 
@@ -441,7 +440,7 @@ Handle_ShapeExtend_ComplexCurve._kill_pointed = new_instancemethod(_ShapeExtend.
 Handle_ShapeExtend_ComplexCurve_swigregister = _ShapeExtend.Handle_ShapeExtend_ComplexCurve_swigregister
 Handle_ShapeExtend_ComplexCurve_swigregister(Handle_ShapeExtend_ComplexCurve)
 
-def Handle_ShapeExtend_ComplexCurve_DownCast(*args) -> "Handle_ShapeExtend_ComplexCurve const" :
+def Handle_ShapeExtend_ComplexCurve_DownCast(*args):
   return _ShapeExtend.Handle_ShapeExtend_ComplexCurve_DownCast(*args)
 Handle_ShapeExtend_ComplexCurve_DownCast = _ShapeExtend.Handle_ShapeExtend_ComplexCurve_DownCast
 
@@ -466,6 +465,14 @@ class ShapeExtend_CompositeSurface(OCC.Geom.Geom_Surface):
 
         :param GridSurf:
         :type GridSurf: Handle_TColGeom_HArray2OfSurface &
+        :param param: default value is ShapeExtend_Natural
+        :type param: ShapeExtend_Parametrisation
+        :rtype: None
+
+        * Initializes by a grid of surfaces (calls Init()).
+
+        :param GridSurf:
+        :type GridSurf: Handle_TColGeom_HArray2OfSurface &
         :param UJoints:
         :type UJoints: TColStd_Array1OfReal &
         :param VJoints:
@@ -474,8 +481,16 @@ class ShapeExtend_CompositeSurface(OCC.Geom.Geom_Surface):
 
         """
         _ShapeExtend.ShapeExtend_CompositeSurface_swiginit(self,_ShapeExtend.new_ShapeExtend_CompositeSurface(*args))
-    def Init(self, *args) -> "Standard_Boolean" :
+    def Init(self, *args):
         """
+        * Initializes by a grid of surfaces. All the Surfaces of the grid must have geometrical connectivity as stated above. If geometrical connectivity is not satisfied, method returns False. However, class is initialized even in that case.  Last parameter defines how global parametrisation (joint values) will be computed: ShapeExtend_Natural: U1 = u11min, Ui+1 = Ui + (ui1max-ui1min), etc. ShapeExtend_Uniform: Ui = i-1, Vj = j-1 ShapeExtend_Unitary: Ui = (i-1)/Nu, Vi = (j-1)/Nv
+
+        :param GridSurf:
+        :type GridSurf: Handle_TColGeom_HArray2OfSurface &
+        :param param: default value is ShapeExtend_Natural
+        :type param: ShapeExtend_Parametrisation
+        :rtype: bool
+
         * Initializes by a grid of surfaces. All the Surfaces of the grid must have geometrical connectivity as stated above. If geometrical connectivity is not satisfied, method returns False. However, class is initialized even in that case.  Last parameter defines how global parametrisation (joint values) will be computed: ShapeExtend_Natural: U1 = u11min, Ui+1 = Ui + (ui1max-ui1min), etc. ShapeExtend_Uniform: Ui = i-1, Vj = j-1 ShapeExtend_Unitary: Ui = (i-1)/Nu, Vi = (j-1)/Nv
 
         :param GridSurf:
@@ -497,74 +512,74 @@ class ShapeExtend_CompositeSurface(OCC.Geom.Geom_Surface):
         """
         return _ShapeExtend.ShapeExtend_CompositeSurface_Init(self, *args)
 
-    def NbUPatches(self, *args) -> "Standard_Integer" :
+    def NbUPatches(self):
         """
         * Returns number of patches in U direction.
 
         :rtype: int
 
         """
-        return _ShapeExtend.ShapeExtend_CompositeSurface_NbUPatches(self, *args)
+        return _ShapeExtend.ShapeExtend_CompositeSurface_NbUPatches(self)
 
-    def NbVPatches(self, *args) -> "Standard_Integer" :
+    def NbVPatches(self):
         """
         * Returns number of patches in V direction.
 
         :rtype: int
 
         """
-        return _ShapeExtend.ShapeExtend_CompositeSurface_NbVPatches(self, *args)
+        return _ShapeExtend.ShapeExtend_CompositeSurface_NbVPatches(self)
 
-    def Patches(self, *args) -> "Handle_TColGeom_HArray2OfSurface const &" :
+    def Patches(self):
         """
         * Returns grid of surfaces
 
         :rtype: Handle_TColGeom_HArray2OfSurface
 
         """
-        return _ShapeExtend.ShapeExtend_CompositeSurface_Patches(self, *args)
+        return _ShapeExtend.ShapeExtend_CompositeSurface_Patches(self)
 
-    def UJointValues(self, *args) -> "Handle_TColStd_HArray1OfReal" :
+    def UJointValues(self):
         """
         * Returns the array of U values corresponding to joint points between patches as well as to start and end points, which define global parametrisation of the surface
 
         :rtype: Handle_TColStd_HArray1OfReal
 
         """
-        return _ShapeExtend.ShapeExtend_CompositeSurface_UJointValues(self, *args)
+        return _ShapeExtend.ShapeExtend_CompositeSurface_UJointValues(self)
 
-    def VJointValues(self, *args) -> "Handle_TColStd_HArray1OfReal" :
+    def VJointValues(self):
         """
         * Returns the array of V values corresponding to joint points between patches as well as to start and end points, which define global parametrisation of the surface
 
         :rtype: Handle_TColStd_HArray1OfReal
 
         """
-        return _ShapeExtend.ShapeExtend_CompositeSurface_VJointValues(self, *args)
+        return _ShapeExtend.ShapeExtend_CompositeSurface_VJointValues(self)
 
-    def UJointValue(self, *args) -> "Standard_Real" :
+    def UJointValue(self, *args):
         """
         * Returns i-th joint value in U direction (1-st is global Umin, (NbUPatches()+1)-th is global Umax on the composite surface)
 
         :param i:
-        :type i: int
+        :type i: Standard_Integer
         :rtype: float
 
         """
         return _ShapeExtend.ShapeExtend_CompositeSurface_UJointValue(self, *args)
 
-    def VJointValue(self, *args) -> "Standard_Real" :
+    def VJointValue(self, *args):
         """
         * Returns j-th joint value in V direction (1-st is global Vmin, (NbVPatches()+1)-th is global Vmax on the composite surface)
 
         :param j:
-        :type j: int
+        :type j: Standard_Integer
         :rtype: float
 
         """
         return _ShapeExtend.ShapeExtend_CompositeSurface_VJointValue(self, *args)
 
-    def SetUJointValues(self, *args) -> "Standard_Boolean" :
+    def SetUJointValues(self, *args):
         """
         * Sets the array of U values corresponding to joint points, which define global parametrisation of the surface. Number of values in array should be equal to NbUPatches()+1. All the values should be sorted in increasing order. If this is not satisfied, does nothing and returns False.
 
@@ -575,7 +590,7 @@ class ShapeExtend_CompositeSurface(OCC.Geom.Geom_Surface):
         """
         return _ShapeExtend.ShapeExtend_CompositeSurface_SetUJointValues(self, *args)
 
-    def SetVJointValues(self, *args) -> "Standard_Boolean" :
+    def SetVJointValues(self, *args):
         """
         * Sets the array of V values corresponding to joint points, which define global parametrisation of the surface Number of values in array should be equal to NbVPatches()+1. All the values should be sorted in increasing order. If this is not satisfied, does nothing and returns False.
 
@@ -586,7 +601,7 @@ class ShapeExtend_CompositeSurface(OCC.Geom.Geom_Surface):
         """
         return _ShapeExtend.ShapeExtend_CompositeSurface_SetVJointValues(self, *args)
 
-    def SetUFirstValue(self, *args) -> "void" :
+    def SetUFirstValue(self, *args):
         """
         * Changes starting value for global U parametrisation (all other joint values are shifted accordingly)
 
@@ -597,7 +612,7 @@ class ShapeExtend_CompositeSurface(OCC.Geom.Geom_Surface):
         """
         return _ShapeExtend.ShapeExtend_CompositeSurface_SetUFirstValue(self, *args)
 
-    def SetVFirstValue(self, *args) -> "void" :
+    def SetVFirstValue(self, *args):
         """
         * Changes starting value for global V parametrisation (all other joint values are shifted accordingly)
 
@@ -608,7 +623,7 @@ class ShapeExtend_CompositeSurface(OCC.Geom.Geom_Surface):
         """
         return _ShapeExtend.ShapeExtend_CompositeSurface_SetVFirstValue(self, *args)
 
-    def LocateUParameter(self, *args) -> "Standard_Integer" :
+    def LocateUParameter(self, *args):
         """
         * Returns number of col that contains given (global) parameter
 
@@ -619,7 +634,7 @@ class ShapeExtend_CompositeSurface(OCC.Geom.Geom_Surface):
         """
         return _ShapeExtend.ShapeExtend_CompositeSurface_LocateUParameter(self, *args)
 
-    def LocateVParameter(self, *args) -> "Standard_Integer" :
+    def LocateVParameter(self, *args):
         """
         * Returns number of row that contains given (global) parameter
 
@@ -630,29 +645,29 @@ class ShapeExtend_CompositeSurface(OCC.Geom.Geom_Surface):
         """
         return _ShapeExtend.ShapeExtend_CompositeSurface_LocateVParameter(self, *args)
 
-    def LocateUVPoint(self, *args) -> "void" :
+    def LocateUVPoint(self, *args):
         """
         * Returns number of row and col of surface that contains given point
 
         :param pnt:
         :type pnt: gp_Pnt2d
         :param i:
-        :type i: int &
+        :type i: Standard_Integer &
         :param j:
-        :type j: int &
+        :type j: Standard_Integer &
         :rtype: None
 
         """
         return _ShapeExtend.ShapeExtend_CompositeSurface_LocateUVPoint(self, *args)
 
-    def Patch(self, *args) -> "Handle_Geom_Surface const &" :
+    def Patch(self, *args):
         """
         * Returns one surface patch
 
         :param i:
-        :type i: int
+        :type i: Standard_Integer
         :param j:
-        :type j: int
+        :type j: Standard_Integer
         :rtype: Handle_Geom_Surface
 
         * Returns one surface patch that contains given (global) parameters
@@ -672,14 +687,14 @@ class ShapeExtend_CompositeSurface(OCC.Geom.Geom_Surface):
         """
         return _ShapeExtend.ShapeExtend_CompositeSurface_Patch(self, *args)
 
-    def ULocalToGlobal(self, *args) -> "Standard_Real" :
+    def ULocalToGlobal(self, *args):
         """
         * Converts local parameter u on patch i,j to global parameter U
 
         :param i:
-        :type i: int
+        :type i: Standard_Integer
         :param j:
-        :type j: int
+        :type j: Standard_Integer
         :param u:
         :type u: float
         :rtype: float
@@ -687,14 +702,14 @@ class ShapeExtend_CompositeSurface(OCC.Geom.Geom_Surface):
         """
         return _ShapeExtend.ShapeExtend_CompositeSurface_ULocalToGlobal(self, *args)
 
-    def VLocalToGlobal(self, *args) -> "Standard_Real" :
+    def VLocalToGlobal(self, *args):
         """
         * Converts local parameter v on patch i,j to global parameter V
 
         :param i:
-        :type i: int
+        :type i: Standard_Integer
         :param j:
-        :type j: int
+        :type j: Standard_Integer
         :param v:
         :type v: float
         :rtype: float
@@ -702,14 +717,14 @@ class ShapeExtend_CompositeSurface(OCC.Geom.Geom_Surface):
         """
         return _ShapeExtend.ShapeExtend_CompositeSurface_VLocalToGlobal(self, *args)
 
-    def LocalToGlobal(self, *args) -> "gp_Pnt2d" :
+    def LocalToGlobal(self, *args):
         """
         * Converts local parameters uv on patch i,j to global parameters UV
 
         :param i:
-        :type i: int
+        :type i: Standard_Integer
         :param j:
-        :type j: int
+        :type j: Standard_Integer
         :param uv:
         :type uv: gp_Pnt2d
         :rtype: gp_Pnt2d
@@ -717,14 +732,14 @@ class ShapeExtend_CompositeSurface(OCC.Geom.Geom_Surface):
         """
         return _ShapeExtend.ShapeExtend_CompositeSurface_LocalToGlobal(self, *args)
 
-    def UGlobalToLocal(self, *args) -> "Standard_Real" :
+    def UGlobalToLocal(self, *args):
         """
         * Converts global parameter U to local parameter u on patch i,j
 
         :param i:
-        :type i: int
+        :type i: Standard_Integer
         :param j:
-        :type j: int
+        :type j: Standard_Integer
         :param U:
         :type U: float
         :rtype: float
@@ -732,14 +747,14 @@ class ShapeExtend_CompositeSurface(OCC.Geom.Geom_Surface):
         """
         return _ShapeExtend.ShapeExtend_CompositeSurface_UGlobalToLocal(self, *args)
 
-    def VGlobalToLocal(self, *args) -> "Standard_Real" :
+    def VGlobalToLocal(self, *args):
         """
         * Converts global parameter V to local parameter v on patch i,j
 
         :param i:
-        :type i: int
+        :type i: Standard_Integer
         :param j:
-        :type j: int
+        :type j: Standard_Integer
         :param V:
         :type V: float
         :rtype: float
@@ -747,14 +762,14 @@ class ShapeExtend_CompositeSurface(OCC.Geom.Geom_Surface):
         """
         return _ShapeExtend.ShapeExtend_CompositeSurface_VGlobalToLocal(self, *args)
 
-    def GlobalToLocal(self, *args) -> "gp_Pnt2d" :
+    def GlobalToLocal(self, *args):
         """
         * Converts global parameters UV to local parameters uv on patch i,j
 
         :param i:
-        :type i: int
+        :type i: Standard_Integer
         :param j:
-        :type j: int
+        :type j: Standard_Integer
         :param UV:
         :type UV: gp_Pnt2d
         :rtype: gp_Pnt2d
@@ -762,14 +777,14 @@ class ShapeExtend_CompositeSurface(OCC.Geom.Geom_Surface):
         """
         return _ShapeExtend.ShapeExtend_CompositeSurface_GlobalToLocal(self, *args)
 
-    def GlobalToLocalTransformation(self, *args) -> "Standard_Boolean" :
+    def GlobalToLocalTransformation(self, *args):
         """
         * Computes transformation operator and uFactor descrinbing affine transformation required to convert global parameters on composite surface to local parameters on patch (i,j): uv = ( uFactor, 1. ) X Trsf * UV; NOTE: Thus Trsf contains shift and scale by V, scale by U is stored in uFact. Returns True if transformation is not an identity
 
         :param i:
-        :type i: int
+        :type i: Standard_Integer
         :param j:
-        :type j: int
+        :type j: Standard_Integer
         :param uFact:
         :type uFact: float &
         :param Trsf:
@@ -779,7 +794,7 @@ class ShapeExtend_CompositeSurface(OCC.Geom.Geom_Surface):
         """
         return _ShapeExtend.ShapeExtend_CompositeSurface_GlobalToLocalTransformation(self, *args)
 
-    def Value(self, *args) -> "gp_Pnt" :
+    def Value(self, *args):
         """
         * Computes the point of parameter pnt on the grid.
 
@@ -790,8 +805,14 @@ class ShapeExtend_CompositeSurface(OCC.Geom.Geom_Surface):
         """
         return _ShapeExtend.ShapeExtend_CompositeSurface_Value(self, *args)
 
-    def ComputeJointValues(self, *args) -> "void" :
+    def ComputeJointValues(self, *args):
         """
+        * Computes Joint values according to parameter
+
+        :param param: default value is ShapeExtend_Natural
+        :type param: ShapeExtend_Parametrisation
+        :rtype: None
+
         * Computes Joint values according to parameter
 
         :param param: default value is ShapeExtend_Natural
@@ -801,7 +822,7 @@ class ShapeExtend_CompositeSurface(OCC.Geom.Geom_Surface):
         """
         return _ShapeExtend.ShapeExtend_CompositeSurface_ComputeJointValues(self, *args)
 
-    def CheckConnectivity(self, *args) -> "Standard_Boolean" :
+    def CheckConnectivity(self, *args):
         """
         * Checks geometrical connectivity of the patches, including closedness (sets fields muUClosed and myVClosed)
 
@@ -812,11 +833,11 @@ class ShapeExtend_CompositeSurface(OCC.Geom.Geom_Surface):
         """
         return _ShapeExtend.ShapeExtend_CompositeSurface_CheckConnectivity(self, *args)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(ShapeExtend_CompositeSurface self)"""
         return _ShapeExtend.ShapeExtend_CompositeSurface__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_ShapeExtend_CompositeSurface" :
+    def GetHandle(self):
         """GetHandle(ShapeExtend_CompositeSurface self) -> Handle_ShapeExtend_CompositeSurface"""
         return _ShapeExtend.ShapeExtend_CompositeSurface_GetHandle(self)
 
@@ -880,7 +901,7 @@ Handle_ShapeExtend_CompositeSurface._kill_pointed = new_instancemethod(_ShapeExt
 Handle_ShapeExtend_CompositeSurface_swigregister = _ShapeExtend.Handle_ShapeExtend_CompositeSurface_swigregister
 Handle_ShapeExtend_CompositeSurface_swigregister(Handle_ShapeExtend_CompositeSurface)
 
-def Handle_ShapeExtend_CompositeSurface_DownCast(*args) -> "Handle_ShapeExtend_CompositeSurface const" :
+def Handle_ShapeExtend_CompositeSurface_DownCast(*args):
   return _ShapeExtend.Handle_ShapeExtend_CompositeSurface_DownCast(*args)
 Handle_ShapeExtend_CompositeSurface_DownCast = _ShapeExtend.Handle_ShapeExtend_CompositeSurface_DownCast
 
@@ -897,7 +918,7 @@ class ShapeExtend_DataMapIteratorOfDataMapOfShapeListOfMsg(OCC.TCollection.TColl
 
         """
         _ShapeExtend.ShapeExtend_DataMapIteratorOfDataMapOfShapeListOfMsg_swiginit(self,_ShapeExtend.new_ShapeExtend_DataMapIteratorOfDataMapOfShapeListOfMsg(*args))
-    def Initialize(self, *args) -> "void" :
+    def Initialize(self, *args):
         """
         :param aMap:
         :type aMap: ShapeExtend_DataMapOfShapeListOfMsg &
@@ -906,19 +927,19 @@ class ShapeExtend_DataMapIteratorOfDataMapOfShapeListOfMsg(OCC.TCollection.TColl
         """
         return _ShapeExtend.ShapeExtend_DataMapIteratorOfDataMapOfShapeListOfMsg_Initialize(self, *args)
 
-    def Key(self, *args) -> "TopoDS_Shape const" :
+    def Key(self):
         """
         :rtype: TopoDS_Shape
 
         """
-        return _ShapeExtend.ShapeExtend_DataMapIteratorOfDataMapOfShapeListOfMsg_Key(self, *args)
+        return _ShapeExtend.ShapeExtend_DataMapIteratorOfDataMapOfShapeListOfMsg_Key(self)
 
-    def Value(self, *args) -> "Message_ListOfMsg const &" :
+    def Value(self):
         """
         :rtype: Message_ListOfMsg
 
         """
-        return _ShapeExtend.ShapeExtend_DataMapIteratorOfDataMapOfShapeListOfMsg_Value(self, *args)
+        return _ShapeExtend.ShapeExtend_DataMapIteratorOfDataMapOfShapeListOfMsg_Value(self)
 
     def __del__(self):
     	try:
@@ -948,7 +969,7 @@ class ShapeExtend_DataMapIteratorOfDataMapOfTransientListOfMsg(OCC.TCollection.T
 
         """
         _ShapeExtend.ShapeExtend_DataMapIteratorOfDataMapOfTransientListOfMsg_swiginit(self,_ShapeExtend.new_ShapeExtend_DataMapIteratorOfDataMapOfTransientListOfMsg(*args))
-    def Initialize(self, *args) -> "void" :
+    def Initialize(self, *args):
         """
         :param aMap:
         :type aMap: ShapeExtend_DataMapOfTransientListOfMsg &
@@ -957,19 +978,19 @@ class ShapeExtend_DataMapIteratorOfDataMapOfTransientListOfMsg(OCC.TCollection.T
         """
         return _ShapeExtend.ShapeExtend_DataMapIteratorOfDataMapOfTransientListOfMsg_Initialize(self, *args)
 
-    def Key(self, *args) -> "Handle_Standard_Transient const &" :
+    def Key(self):
         """
         :rtype: Handle_Standard_Transient
 
         """
-        return _ShapeExtend.ShapeExtend_DataMapIteratorOfDataMapOfTransientListOfMsg_Key(self, *args)
+        return _ShapeExtend.ShapeExtend_DataMapIteratorOfDataMapOfTransientListOfMsg_Key(self)
 
-    def Value(self, *args) -> "Message_ListOfMsg const &" :
+    def Value(self):
         """
         :rtype: Message_ListOfMsg
 
         """
-        return _ShapeExtend.ShapeExtend_DataMapIteratorOfDataMapOfTransientListOfMsg_Value(self, *args)
+        return _ShapeExtend.ShapeExtend_DataMapIteratorOfDataMapOfTransientListOfMsg_Value(self)
 
     def __del__(self):
     	try:
@@ -1001,25 +1022,25 @@ class ShapeExtend_DataMapNodeOfDataMapOfShapeListOfMsg(OCC.TCollection.TCollecti
 
         """
         _ShapeExtend.ShapeExtend_DataMapNodeOfDataMapOfShapeListOfMsg_swiginit(self,_ShapeExtend.new_ShapeExtend_DataMapNodeOfDataMapOfShapeListOfMsg(*args))
-    def Key(self, *args) -> "TopoDS_Shape" :
+    def Key(self):
         """
         :rtype: TopoDS_Shape
 
         """
-        return _ShapeExtend.ShapeExtend_DataMapNodeOfDataMapOfShapeListOfMsg_Key(self, *args)
+        return _ShapeExtend.ShapeExtend_DataMapNodeOfDataMapOfShapeListOfMsg_Key(self)
 
-    def Value(self, *args) -> "Message_ListOfMsg &" :
+    def Value(self):
         """
         :rtype: Message_ListOfMsg
 
         """
-        return _ShapeExtend.ShapeExtend_DataMapNodeOfDataMapOfShapeListOfMsg_Value(self, *args)
+        return _ShapeExtend.ShapeExtend_DataMapNodeOfDataMapOfShapeListOfMsg_Value(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(ShapeExtend_DataMapNodeOfDataMapOfShapeListOfMsg self)"""
         return _ShapeExtend.ShapeExtend_DataMapNodeOfDataMapOfShapeListOfMsg__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_ShapeExtend_DataMapNodeOfDataMapOfShapeListOfMsg" :
+    def GetHandle(self):
         """GetHandle(ShapeExtend_DataMapNodeOfDataMapOfShapeListOfMsg self) -> Handle_ShapeExtend_DataMapNodeOfDataMapOfShapeListOfMsg"""
         return _ShapeExtend.ShapeExtend_DataMapNodeOfDataMapOfShapeListOfMsg_GetHandle(self)
 
@@ -1059,7 +1080,7 @@ Handle_ShapeExtend_DataMapNodeOfDataMapOfShapeListOfMsg._kill_pointed = new_inst
 Handle_ShapeExtend_DataMapNodeOfDataMapOfShapeListOfMsg_swigregister = _ShapeExtend.Handle_ShapeExtend_DataMapNodeOfDataMapOfShapeListOfMsg_swigregister
 Handle_ShapeExtend_DataMapNodeOfDataMapOfShapeListOfMsg_swigregister(Handle_ShapeExtend_DataMapNodeOfDataMapOfShapeListOfMsg)
 
-def Handle_ShapeExtend_DataMapNodeOfDataMapOfShapeListOfMsg_DownCast(*args) -> "Handle_ShapeExtend_DataMapNodeOfDataMapOfShapeListOfMsg const" :
+def Handle_ShapeExtend_DataMapNodeOfDataMapOfShapeListOfMsg_DownCast(*args):
   return _ShapeExtend.Handle_ShapeExtend_DataMapNodeOfDataMapOfShapeListOfMsg_DownCast(*args)
 Handle_ShapeExtend_DataMapNodeOfDataMapOfShapeListOfMsg_DownCast = _ShapeExtend.Handle_ShapeExtend_DataMapNodeOfDataMapOfShapeListOfMsg_DownCast
 
@@ -1078,25 +1099,25 @@ class ShapeExtend_DataMapNodeOfDataMapOfTransientListOfMsg(OCC.TCollection.TColl
 
         """
         _ShapeExtend.ShapeExtend_DataMapNodeOfDataMapOfTransientListOfMsg_swiginit(self,_ShapeExtend.new_ShapeExtend_DataMapNodeOfDataMapOfTransientListOfMsg(*args))
-    def Key(self, *args) -> "Handle_Standard_Transient &" :
+    def Key(self):
         """
         :rtype: Handle_Standard_Transient
 
         """
-        return _ShapeExtend.ShapeExtend_DataMapNodeOfDataMapOfTransientListOfMsg_Key(self, *args)
+        return _ShapeExtend.ShapeExtend_DataMapNodeOfDataMapOfTransientListOfMsg_Key(self)
 
-    def Value(self, *args) -> "Message_ListOfMsg &" :
+    def Value(self):
         """
         :rtype: Message_ListOfMsg
 
         """
-        return _ShapeExtend.ShapeExtend_DataMapNodeOfDataMapOfTransientListOfMsg_Value(self, *args)
+        return _ShapeExtend.ShapeExtend_DataMapNodeOfDataMapOfTransientListOfMsg_Value(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(ShapeExtend_DataMapNodeOfDataMapOfTransientListOfMsg self)"""
         return _ShapeExtend.ShapeExtend_DataMapNodeOfDataMapOfTransientListOfMsg__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_ShapeExtend_DataMapNodeOfDataMapOfTransientListOfMsg" :
+    def GetHandle(self):
         """GetHandle(ShapeExtend_DataMapNodeOfDataMapOfTransientListOfMsg self) -> Handle_ShapeExtend_DataMapNodeOfDataMapOfTransientListOfMsg"""
         return _ShapeExtend.ShapeExtend_DataMapNodeOfDataMapOfTransientListOfMsg_GetHandle(self)
 
@@ -1136,22 +1157,26 @@ Handle_ShapeExtend_DataMapNodeOfDataMapOfTransientListOfMsg._kill_pointed = new_
 Handle_ShapeExtend_DataMapNodeOfDataMapOfTransientListOfMsg_swigregister = _ShapeExtend.Handle_ShapeExtend_DataMapNodeOfDataMapOfTransientListOfMsg_swigregister
 Handle_ShapeExtend_DataMapNodeOfDataMapOfTransientListOfMsg_swigregister(Handle_ShapeExtend_DataMapNodeOfDataMapOfTransientListOfMsg)
 
-def Handle_ShapeExtend_DataMapNodeOfDataMapOfTransientListOfMsg_DownCast(*args) -> "Handle_ShapeExtend_DataMapNodeOfDataMapOfTransientListOfMsg const" :
+def Handle_ShapeExtend_DataMapNodeOfDataMapOfTransientListOfMsg_DownCast(*args):
   return _ShapeExtend.Handle_ShapeExtend_DataMapNodeOfDataMapOfTransientListOfMsg_DownCast(*args)
 Handle_ShapeExtend_DataMapNodeOfDataMapOfTransientListOfMsg_DownCast = _ShapeExtend.Handle_ShapeExtend_DataMapNodeOfDataMapOfTransientListOfMsg_DownCast
 
 class ShapeExtend_DataMapOfShapeListOfMsg(OCC.TCollection.TCollection_BasicMap):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self, NbBuckets=1): 
         """
         :param NbBuckets: default value is 1
-        :type NbBuckets: int
+        :type NbBuckets: Standard_Integer
+        :rtype: None
+
+        :param NbBuckets: default value is 1
+        :type NbBuckets: Standard_Integer
         :rtype: None
 
         """
-        _ShapeExtend.ShapeExtend_DataMapOfShapeListOfMsg_swiginit(self,_ShapeExtend.new_ShapeExtend_DataMapOfShapeListOfMsg(*args))
-    def Assign(self, *args) -> "ShapeExtend_DataMapOfShapeListOfMsg &" :
+        _ShapeExtend.ShapeExtend_DataMapOfShapeListOfMsg_swiginit(self,_ShapeExtend.new_ShapeExtend_DataMapOfShapeListOfMsg(NbBuckets))
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: ShapeExtend_DataMapOfShapeListOfMsg &
@@ -1160,7 +1185,7 @@ class ShapeExtend_DataMapOfShapeListOfMsg(OCC.TCollection.TCollection_BasicMap):
         """
         return _ShapeExtend.ShapeExtend_DataMapOfShapeListOfMsg_Assign(self, *args)
 
-    def Set(self, *args) -> "ShapeExtend_DataMapOfShapeListOfMsg &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: ShapeExtend_DataMapOfShapeListOfMsg &
@@ -1169,23 +1194,23 @@ class ShapeExtend_DataMapOfShapeListOfMsg(OCC.TCollection.TCollection_BasicMap):
         """
         return _ShapeExtend.ShapeExtend_DataMapOfShapeListOfMsg_Set(self, *args)
 
-    def ReSize(self, *args) -> "void" :
+    def ReSize(self, *args):
         """
         :param NbBuckets:
-        :type NbBuckets: int
+        :type NbBuckets: Standard_Integer
         :rtype: None
 
         """
         return _ShapeExtend.ShapeExtend_DataMapOfShapeListOfMsg_ReSize(self, *args)
 
-    def Clear(self, *args) -> "void" :
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _ShapeExtend.ShapeExtend_DataMapOfShapeListOfMsg_Clear(self, *args)
+        return _ShapeExtend.ShapeExtend_DataMapOfShapeListOfMsg_Clear(self)
 
-    def Bind(self, *args) -> "Standard_Boolean" :
+    def Bind(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -1196,7 +1221,7 @@ class ShapeExtend_DataMapOfShapeListOfMsg(OCC.TCollection.TCollection_BasicMap):
         """
         return _ShapeExtend.ShapeExtend_DataMapOfShapeListOfMsg_Bind(self, *args)
 
-    def IsBound(self, *args) -> "Standard_Boolean" :
+    def IsBound(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -1205,7 +1230,7 @@ class ShapeExtend_DataMapOfShapeListOfMsg(OCC.TCollection.TCollection_BasicMap):
         """
         return _ShapeExtend.ShapeExtend_DataMapOfShapeListOfMsg_IsBound(self, *args)
 
-    def UnBind(self, *args) -> "Standard_Boolean" :
+    def UnBind(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -1214,7 +1239,7 @@ class ShapeExtend_DataMapOfShapeListOfMsg(OCC.TCollection.TCollection_BasicMap):
         """
         return _ShapeExtend.ShapeExtend_DataMapOfShapeListOfMsg_UnBind(self, *args)
 
-    def Find(self, *args) -> "Message_ListOfMsg const &" :
+    def Find(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -1223,7 +1248,7 @@ class ShapeExtend_DataMapOfShapeListOfMsg(OCC.TCollection.TCollection_BasicMap):
         """
         return _ShapeExtend.ShapeExtend_DataMapOfShapeListOfMsg_Find(self, *args)
 
-    def ChangeFind(self, *args) -> "Message_ListOfMsg &" :
+    def ChangeFind(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -1232,7 +1257,7 @@ class ShapeExtend_DataMapOfShapeListOfMsg(OCC.TCollection.TCollection_BasicMap):
         """
         return _ShapeExtend.ShapeExtend_DataMapOfShapeListOfMsg_ChangeFind(self, *args)
 
-    def Find1(self, *args) -> "Standard_Address" :
+    def Find1(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -1241,7 +1266,7 @@ class ShapeExtend_DataMapOfShapeListOfMsg(OCC.TCollection.TCollection_BasicMap):
         """
         return _ShapeExtend.ShapeExtend_DataMapOfShapeListOfMsg_Find1(self, *args)
 
-    def ChangeFind1(self, *args) -> "Standard_Address" :
+    def ChangeFind1(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -1250,7 +1275,7 @@ class ShapeExtend_DataMapOfShapeListOfMsg(OCC.TCollection.TCollection_BasicMap):
         """
         return _ShapeExtend.ShapeExtend_DataMapOfShapeListOfMsg_ChangeFind1(self, *args)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(ShapeExtend_DataMapOfShapeListOfMsg self)"""
         return _ShapeExtend.ShapeExtend_DataMapOfShapeListOfMsg__kill_pointed(self)
 
@@ -1280,15 +1305,19 @@ ShapeExtend_DataMapOfShapeListOfMsg_swigregister(ShapeExtend_DataMapOfShapeListO
 class ShapeExtend_DataMapOfTransientListOfMsg(OCC.TCollection.TCollection_BasicMap):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self, NbBuckets=1): 
         """
         :param NbBuckets: default value is 1
-        :type NbBuckets: int
+        :type NbBuckets: Standard_Integer
+        :rtype: None
+
+        :param NbBuckets: default value is 1
+        :type NbBuckets: Standard_Integer
         :rtype: None
 
         """
-        _ShapeExtend.ShapeExtend_DataMapOfTransientListOfMsg_swiginit(self,_ShapeExtend.new_ShapeExtend_DataMapOfTransientListOfMsg(*args))
-    def Assign(self, *args) -> "ShapeExtend_DataMapOfTransientListOfMsg &" :
+        _ShapeExtend.ShapeExtend_DataMapOfTransientListOfMsg_swiginit(self,_ShapeExtend.new_ShapeExtend_DataMapOfTransientListOfMsg(NbBuckets))
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: ShapeExtend_DataMapOfTransientListOfMsg &
@@ -1297,7 +1326,7 @@ class ShapeExtend_DataMapOfTransientListOfMsg(OCC.TCollection.TCollection_BasicM
         """
         return _ShapeExtend.ShapeExtend_DataMapOfTransientListOfMsg_Assign(self, *args)
 
-    def Set(self, *args) -> "ShapeExtend_DataMapOfTransientListOfMsg &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: ShapeExtend_DataMapOfTransientListOfMsg &
@@ -1306,23 +1335,23 @@ class ShapeExtend_DataMapOfTransientListOfMsg(OCC.TCollection.TCollection_BasicM
         """
         return _ShapeExtend.ShapeExtend_DataMapOfTransientListOfMsg_Set(self, *args)
 
-    def ReSize(self, *args) -> "void" :
+    def ReSize(self, *args):
         """
         :param NbBuckets:
-        :type NbBuckets: int
+        :type NbBuckets: Standard_Integer
         :rtype: None
 
         """
         return _ShapeExtend.ShapeExtend_DataMapOfTransientListOfMsg_ReSize(self, *args)
 
-    def Clear(self, *args) -> "void" :
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _ShapeExtend.ShapeExtend_DataMapOfTransientListOfMsg_Clear(self, *args)
+        return _ShapeExtend.ShapeExtend_DataMapOfTransientListOfMsg_Clear(self)
 
-    def Bind(self, *args) -> "Standard_Boolean" :
+    def Bind(self, *args):
         """
         :param K:
         :type K: Handle_Standard_Transient &
@@ -1333,7 +1362,7 @@ class ShapeExtend_DataMapOfTransientListOfMsg(OCC.TCollection.TCollection_BasicM
         """
         return _ShapeExtend.ShapeExtend_DataMapOfTransientListOfMsg_Bind(self, *args)
 
-    def IsBound(self, *args) -> "Standard_Boolean" :
+    def IsBound(self, *args):
         """
         :param K:
         :type K: Handle_Standard_Transient &
@@ -1342,7 +1371,7 @@ class ShapeExtend_DataMapOfTransientListOfMsg(OCC.TCollection.TCollection_BasicM
         """
         return _ShapeExtend.ShapeExtend_DataMapOfTransientListOfMsg_IsBound(self, *args)
 
-    def UnBind(self, *args) -> "Standard_Boolean" :
+    def UnBind(self, *args):
         """
         :param K:
         :type K: Handle_Standard_Transient &
@@ -1351,7 +1380,7 @@ class ShapeExtend_DataMapOfTransientListOfMsg(OCC.TCollection.TCollection_BasicM
         """
         return _ShapeExtend.ShapeExtend_DataMapOfTransientListOfMsg_UnBind(self, *args)
 
-    def Find(self, *args) -> "Message_ListOfMsg const &" :
+    def Find(self, *args):
         """
         :param K:
         :type K: Handle_Standard_Transient &
@@ -1360,7 +1389,7 @@ class ShapeExtend_DataMapOfTransientListOfMsg(OCC.TCollection.TCollection_BasicM
         """
         return _ShapeExtend.ShapeExtend_DataMapOfTransientListOfMsg_Find(self, *args)
 
-    def ChangeFind(self, *args) -> "Message_ListOfMsg &" :
+    def ChangeFind(self, *args):
         """
         :param K:
         :type K: Handle_Standard_Transient &
@@ -1369,7 +1398,7 @@ class ShapeExtend_DataMapOfTransientListOfMsg(OCC.TCollection.TCollection_BasicM
         """
         return _ShapeExtend.ShapeExtend_DataMapOfTransientListOfMsg_ChangeFind(self, *args)
 
-    def Find1(self, *args) -> "Standard_Address" :
+    def Find1(self, *args):
         """
         :param K:
         :type K: Handle_Standard_Transient &
@@ -1378,7 +1407,7 @@ class ShapeExtend_DataMapOfTransientListOfMsg(OCC.TCollection.TCollection_BasicM
         """
         return _ShapeExtend.ShapeExtend_DataMapOfTransientListOfMsg_Find1(self, *args)
 
-    def ChangeFind1(self, *args) -> "Standard_Address" :
+    def ChangeFind1(self, *args):
         """
         :param K:
         :type K: Handle_Standard_Transient &
@@ -1387,7 +1416,7 @@ class ShapeExtend_DataMapOfTransientListOfMsg(OCC.TCollection.TCollection_BasicM
         """
         return _ShapeExtend.ShapeExtend_DataMapOfTransientListOfMsg_ChangeFind1(self, *args)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(ShapeExtend_DataMapOfTransientListOfMsg self)"""
         return _ShapeExtend.ShapeExtend_DataMapOfTransientListOfMsg__kill_pointed(self)
 
@@ -1417,15 +1446,15 @@ ShapeExtend_DataMapOfTransientListOfMsg_swigregister(ShapeExtend_DataMapOfTransi
 class ShapeExtend_Explorer(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         * Creates an object Explorer
 
         :rtype: None
 
         """
-        _ShapeExtend.ShapeExtend_Explorer_swiginit(self,_ShapeExtend.new_ShapeExtend_Explorer(*args))
-    def CompoundFromSeq(self, *args) -> "TopoDS_Shape" :
+        _ShapeExtend.ShapeExtend_Explorer_swiginit(self,_ShapeExtend.new_ShapeExtend_Explorer())
+    def CompoundFromSeq(self, *args):
         """
         * Converts a sequence of Shapes to a Compound
 
@@ -1436,7 +1465,7 @@ class ShapeExtend_Explorer(object):
         """
         return _ShapeExtend.ShapeExtend_Explorer_CompoundFromSeq(self, *args)
 
-    def SeqFromCompound(self, *args) -> "Handle_TopTools_HSequenceOfShape" :
+    def SeqFromCompound(self, *args):
         """
         * Converts a Compound to a list of Shapes if <comp> is not a compound, the list contains only <comp> if <comp> is Null, the list is empty if <comp> is a Compound, its sub-shapes are put into the list then if <expcomp> is True, if a sub-shape is a Compound, it is not put to the list but its sub-shapes are (recursive)
 
@@ -1449,8 +1478,18 @@ class ShapeExtend_Explorer(object):
         """
         return _ShapeExtend.ShapeExtend_Explorer_SeqFromCompound(self, *args)
 
-    def ListFromSeq(self, *args) -> "void" :
+    def ListFromSeq(self, *args):
         """
+        * Converts a Sequence of Shapes to a List of Shapes <clear> if True (D), commands the list to start from scratch else, the list is cumulated
+
+        :param seqval:
+        :type seqval: Handle_TopTools_HSequenceOfShape &
+        :param lisval:
+        :type lisval: TopTools_ListOfShape &
+        :param clear: default value is Standard_True
+        :type clear: bool
+        :rtype: None
+
         * Converts a Sequence of Shapes to a List of Shapes <clear> if True (D), commands the list to start from scratch else, the list is cumulated
 
         :param seqval:
@@ -1464,7 +1503,7 @@ class ShapeExtend_Explorer(object):
         """
         return _ShapeExtend.ShapeExtend_Explorer_ListFromSeq(self, *args)
 
-    def SeqFromList(self, *args) -> "Handle_TopTools_HSequenceOfShape" :
+    def SeqFromList(self, *args):
         """
         * Converts a List of Shapes to a Sequence of Shapes
 
@@ -1475,7 +1514,7 @@ class ShapeExtend_Explorer(object):
         """
         return _ShapeExtend.ShapeExtend_Explorer_SeqFromList(self, *args)
 
-    def ShapeType(self, *args) -> "TopAbs_ShapeEnum" :
+    def ShapeType(self, *args):
         """
         * Returns the type of a Shape: true type if <compound> is False If <compound> is True and <shape> is a Compound, iterates on its items. If all are of the same type, returns this type. Else, returns COMPOUND. If it is empty, returns SHAPE For a Null Shape, returns SHAPE
 
@@ -1488,7 +1527,7 @@ class ShapeExtend_Explorer(object):
         """
         return _ShapeExtend.ShapeExtend_Explorer_ShapeType(self, *args)
 
-    def SortedCompound(self, *args) -> "TopoDS_Shape" :
+    def SortedCompound(self, *args):
         """
         * Builds a COMPOUND from the given shape. It explores the shape level by level, according to the <explore> argument. If <explore> is False, only COMPOUND items are explored, else all items are. The following shapes are added to resulting compound: - shapes which comply to <type> - if <type> is WIRE, considers also free edges (and makes wires) - if <type> is SHELL, considers also free faces (and makes shells) If <compound> is True, gathers items in compounds which correspond to starting COMPOUND,SOLID or SHELL containers, or items directly contained in a Compound
 
@@ -1505,7 +1544,7 @@ class ShapeExtend_Explorer(object):
         """
         return _ShapeExtend.ShapeExtend_Explorer_SortedCompound(self, *args)
 
-    def DispatchList(self, *args) -> "void" :
+    def DispatchList(self, *args):
         """
         * Dispatches starting list of shapes according to their type, to the appropriate resulting lists For each of these lists, if it is null, it is firstly created else, new items are appended to the already existing ones
 
@@ -1570,9 +1609,29 @@ class ShapeExtend_WireData(OCC.MMgt.MMgt_TShared):
         :type theManifoldMode: bool
         :rtype: None
 
+        * Constructor initializing the data from TopoDS_Wire. Calls Init(wire,chained).
+
+        :param wire:
+        :type wire: TopoDS_Wire &
+        :param chained: default value is Standard_True
+        :type chained: bool
+        :param theManifoldMode: default value is Standard_True
+        :type theManifoldMode: bool
+        :rtype: None
+
+        * Constructor initializing the data from TopoDS_Wire. Calls Init(wire,chained).
+
+        :param wire:
+        :type wire: TopoDS_Wire &
+        :param chained: default value is Standard_True
+        :type chained: bool
+        :param theManifoldMode: default value is Standard_True
+        :type theManifoldMode: bool
+        :rtype: None
+
         """
         _ShapeExtend.ShapeExtend_WireData_swiginit(self,_ShapeExtend.new_ShapeExtend_WireData(*args))
-    def Init(self, *args) -> "Standard_Boolean" :
+    def Init(self, *args):
         """
         * Copies data from another WireData
 
@@ -1590,20 +1649,46 @@ class ShapeExtend_WireData(OCC.MMgt.MMgt_TShared):
         :type theManifoldMode: bool
         :rtype: bool
 
+        * Loads an already existing wire If <chained> is True (default), edges are added in the sequence as they are explored by TopoDS_Iterator Else, if <chained> is False, wire is explored by BRepTools_WireExplorer and it is guaranteed that edges will be sequencially connected. Remark : In the latter case it can happen that not all edges will be found (because of limitations of BRepTools_WireExplorer for disconnected wires and wires with seam edges).
+
+        :param wire:
+        :type wire: TopoDS_Wire &
+        :param chained: default value is Standard_True
+        :type chained: bool
+        :param theManifoldMode: default value is Standard_True
+        :type theManifoldMode: bool
+        :rtype: bool
+
+        * Loads an already existing wire If <chained> is True (default), edges are added in the sequence as they are explored by TopoDS_Iterator Else, if <chained> is False, wire is explored by BRepTools_WireExplorer and it is guaranteed that edges will be sequencially connected. Remark : In the latter case it can happen that not all edges will be found (because of limitations of BRepTools_WireExplorer for disconnected wires and wires with seam edges).
+
+        :param wire:
+        :type wire: TopoDS_Wire &
+        :param chained: default value is Standard_True
+        :type chained: bool
+        :param theManifoldMode: default value is Standard_True
+        :type theManifoldMode: bool
+        :rtype: bool
+
         """
         return _ShapeExtend.ShapeExtend_WireData_Init(self, *args)
 
-    def Clear(self, *args) -> "void" :
+    def Clear(self):
         """
         * Clears data about Wire.
 
         :rtype: None
 
         """
-        return _ShapeExtend.ShapeExtend_WireData_Clear(self, *args)
+        return _ShapeExtend.ShapeExtend_WireData_Clear(self)
 
-    def ComputeSeams(self, *args) -> "void" :
+    def ComputeSeams(self, *args):
         """
+        * Computes the list of seam edges By default (direct call), computing is enforced For indirect call (from IsSeam) it is redone only if not yet already done or if the list of edges has changed Remark : A Seam Edge is an Edge present twice in the list, once as FORWARD and once as REVERSED Each sense has its own PCurve, the one for FORWARD must be set in first
+
+        :param enforce: default value is Standard_True
+        :type enforce: bool
+        :rtype: None
+
         * Computes the list of seam edges By default (direct call), computing is enforced For indirect call (from IsSeam) it is redone only if not yet already done or if the list of edges has changed Remark : A Seam Edge is an Edge present twice in the list, once as FORWARD and once as REVERSED Each sense has its own PCurve, the one for FORWARD must be set in first
 
         :param enforce: default value is Standard_True
@@ -1613,34 +1698,42 @@ class ShapeExtend_WireData(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeExtend.ShapeExtend_WireData_ComputeSeams(self, *args)
 
-    def SetLast(self, *args) -> "void" :
+    def SetLast(self, *args):
         """
         * Does a circular permutation in order to set <num>th edge last
 
         :param num:
-        :type num: int
+        :type num: Standard_Integer
         :rtype: None
 
         """
         return _ShapeExtend.ShapeExtend_WireData_SetLast(self, *args)
 
-    def SetDegeneratedLast(self, *args) -> "void" :
+    def SetDegeneratedLast(self):
         """
         * When the wire contains at least one degenerated edge, sets it as last one Note : It is useful to process pcurves, for instance, while the pcurve of a DGNR may not be computed from its 3D part (there is none) it is computed after the other edges have been computed and chained.
 
         :rtype: None
 
         """
-        return _ShapeExtend.ShapeExtend_WireData_SetDegeneratedLast(self, *args)
+        return _ShapeExtend.ShapeExtend_WireData_SetDegeneratedLast(self)
 
-    def Add(self, *args) -> "void" :
+    def Add(self, *args):
         """
         * Adds an edge to a wire, being defined (not yet ended) This is the plain, basic, function to add an edge <num> = 0 (D): Appends at end <num> = 1: Preprends at start else, Insert before <num> Remark : Null Edge is simply ignored
 
         :param edge:
         :type edge: TopoDS_Edge &
         :param atnum: default value is 0
-        :type atnum: int
+        :type atnum: Standard_Integer
+        :rtype: None
+
+        * Adds an edge to a wire, being defined (not yet ended) This is the plain, basic, function to add an edge <num> = 0 (D): Appends at end <num> = 1: Preprends at start else, Insert before <num> Remark : Null Edge is simply ignored
+
+        :param edge:
+        :type edge: TopoDS_Edge &
+        :param atnum: default value is 0
+        :type atnum: Standard_Integer
         :rtype: None
 
         * Adds an entire wire, considered as a list of edges Remark : The wire is assumed to be ordered (TopoDS_Iterator is used)
@@ -1648,7 +1741,15 @@ class ShapeExtend_WireData(OCC.MMgt.MMgt_TShared):
         :param wire:
         :type wire: TopoDS_Wire &
         :param atnum: default value is 0
-        :type atnum: int
+        :type atnum: Standard_Integer
+        :rtype: None
+
+        * Adds an entire wire, considered as a list of edges Remark : The wire is assumed to be ordered (TopoDS_Iterator is used)
+
+        :param wire:
+        :type wire: TopoDS_Wire &
+        :param atnum: default value is 0
+        :type atnum: Standard_Integer
         :rtype: None
 
         * Adds a wire in the form of WireData
@@ -1656,7 +1757,15 @@ class ShapeExtend_WireData(OCC.MMgt.MMgt_TShared):
         :param wire:
         :type wire: Handle_ShapeExtend_WireData &
         :param atnum: default value is 0
-        :type atnum: int
+        :type atnum: Standard_Integer
+        :rtype: None
+
+        * Adds a wire in the form of WireData
+
+        :param wire:
+        :type wire: Handle_ShapeExtend_WireData &
+        :param atnum: default value is 0
+        :type atnum: Standard_Integer
         :rtype: None
 
         * Adds an edge or a wire invoking corresponding method Add
@@ -1664,20 +1773,28 @@ class ShapeExtend_WireData(OCC.MMgt.MMgt_TShared):
         :param shape:
         :type shape: TopoDS_Shape &
         :param atnum: default value is 0
-        :type atnum: int
+        :type atnum: Standard_Integer
+        :rtype: None
+
+        * Adds an edge or a wire invoking corresponding method Add
+
+        :param shape:
+        :type shape: TopoDS_Shape &
+        :param atnum: default value is 0
+        :type atnum: Standard_Integer
         :rtype: None
 
         """
         return _ShapeExtend.ShapeExtend_WireData_Add(self, *args)
 
-    def AddOriented(self, *args) -> "void" :
+    def AddOriented(self, *args):
         """
         * Adds an edge to start or end of <self>, according to <mode> 0: at end, as direct 1: at end, as reversed 2: at start, as direct 3: at start, as reversed < 0: no adding
 
         :param edge:
         :type edge: TopoDS_Edge &
         :param mode:
-        :type mode: int
+        :type mode: Standard_Integer
         :rtype: None
 
         * Adds a wire to start or end of <self>, according to <mode> 0: at end, as direct 1: at end, as reversed 2: at start, as direct 3: at start, as reversed < 0: no adding
@@ -1685,7 +1802,7 @@ class ShapeExtend_WireData(OCC.MMgt.MMgt_TShared):
         :param wire:
         :type wire: TopoDS_Wire &
         :param mode:
-        :type mode: int
+        :type mode: Standard_Integer
         :rtype: None
 
         * Adds an edge or a wire invoking corresponding method AddOriented
@@ -1693,37 +1810,51 @@ class ShapeExtend_WireData(OCC.MMgt.MMgt_TShared):
         :param shape:
         :type shape: TopoDS_Shape &
         :param mode:
-        :type mode: int
+        :type mode: Standard_Integer
         :rtype: None
 
         """
         return _ShapeExtend.ShapeExtend_WireData_AddOriented(self, *args)
 
-    def Remove(self, *args) -> "void" :
+    def Remove(self, num=0):
         """
         * Removes an Edge, given its rank. By default removes the last edge.
 
         :param num: default value is 0
-        :type num: int
+        :type num: Standard_Integer
+        :rtype: None
+
+        * Removes an Edge, given its rank. By default removes the last edge.
+
+        :param num: default value is 0
+        :type num: Standard_Integer
         :rtype: None
 
         """
-        return _ShapeExtend.ShapeExtend_WireData_Remove(self, *args)
+        return _ShapeExtend.ShapeExtend_WireData_Remove(self, num)
 
-    def Set(self, *args) -> "void" :
+    def Set(self, *args):
         """
         * Replaces an edge at the given rank number <num> with new one. Default is last edge (<num> = 0).
 
         :param edge:
         :type edge: TopoDS_Edge &
         :param num: default value is 0
-        :type num: int
+        :type num: Standard_Integer
+        :rtype: None
+
+        * Replaces an edge at the given rank number <num> with new one. Default is last edge (<num> = 0).
+
+        :param edge:
+        :type edge: TopoDS_Edge &
+        :param num: default value is 0
+        :type num: Standard_Integer
         :rtype: None
 
         """
         return _ShapeExtend.ShapeExtend_WireData_Set(self, *args)
 
-    def Reverse(self, *args) -> "void" :
+    def Reverse(self, *args):
         """
         * Reverses the sense of the list and the orientation of each Edge This method should be called when either wire has no seam edges or face is not available
 
@@ -1738,64 +1869,64 @@ class ShapeExtend_WireData(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeExtend.ShapeExtend_WireData_Reverse(self, *args)
 
-    def NbEdges(self, *args) -> "Standard_Integer" :
+    def NbEdges(self):
         """
         * Returns the count of currently recorded edges
 
         :rtype: int
 
         """
-        return _ShapeExtend.ShapeExtend_WireData_NbEdges(self, *args)
+        return _ShapeExtend.ShapeExtend_WireData_NbEdges(self)
 
-    def NbNonManifoldEdges(self, *args) -> "Standard_Integer" :
+    def NbNonManifoldEdges(self):
         """
         * Returns the count of currently recorded non-manifold edges
 
         :rtype: int
 
         """
-        return _ShapeExtend.ShapeExtend_WireData_NbNonManifoldEdges(self, *args)
+        return _ShapeExtend.ShapeExtend_WireData_NbNonManifoldEdges(self)
 
-    def NonmanifoldEdge(self, *args) -> "TopoDS_Edge" :
+    def NonmanifoldEdge(self, *args):
         """
         * Returns <num>th nonmanifold Edge
 
         :param num:
-        :type num: int
+        :type num: Standard_Integer
         :rtype: TopoDS_Edge
 
         """
         return _ShapeExtend.ShapeExtend_WireData_NonmanifoldEdge(self, *args)
 
-    def NonmanifoldEdges(self, *args) -> "Handle_TopTools_HSequenceOfShape" :
+    def NonmanifoldEdges(self):
         """
         * Returns sequence of non-manifold edges This sequence can be not empty if wire data set in manifold mode but initial wire has INTERNAL orientation or contains INTERNAL edges
 
         :rtype: Handle_TopTools_HSequenceOfShape
 
         """
-        return _ShapeExtend.ShapeExtend_WireData_NonmanifoldEdges(self, *args)
+        return _ShapeExtend.ShapeExtend_WireData_NonmanifoldEdges(self)
 
-    def GetManifoldMode(self) -> "Standard_Boolean" :
+    def GetManifoldMode(self):
         """GetManifoldMode(ShapeExtend_WireData self) -> Standard_Boolean"""
         return _ShapeExtend.ShapeExtend_WireData_GetManifoldMode(self)
 
-    def SetManifoldMode(self, *args) -> "void" :
+    def SetManifoldMode(self, *args):
         """SetManifoldMode(ShapeExtend_WireData self, Standard_Boolean value)"""
         return _ShapeExtend.ShapeExtend_WireData_SetManifoldMode(self, *args)
 
-    def Edge(self, *args) -> "TopoDS_Edge" :
+    def Edge(self, *args):
         """
         * Returns <num>th Edge
 
         :param num:
-        :type num: int
+        :type num: Standard_Integer
         :rtype: TopoDS_Edge
 
         """
         return _ShapeExtend.ShapeExtend_WireData_Edge(self, *args)
 
-    def Index(self, *args) -> "Standard_Integer" :
+    def Index(self, *args):
         """
         * Returns the index of the edge If the edge is a seam the orientation is also checked Returns 0 if the edge is not found in the list
 
@@ -1806,40 +1937,40 @@ class ShapeExtend_WireData(OCC.MMgt.MMgt_TShared):
         """
         return _ShapeExtend.ShapeExtend_WireData_Index(self, *args)
 
-    def IsSeam(self, *args) -> "Standard_Boolean" :
+    def IsSeam(self, *args):
         """
         * Tells if an Edge is seam (see ComputeSeams) An edge is considered as seam if it presents twice in the edge list, once as FORWARD and once as REVERSED.
 
         :param num:
-        :type num: int
+        :type num: Standard_Integer
         :rtype: bool
 
         """
         return _ShapeExtend.ShapeExtend_WireData_IsSeam(self, *args)
 
-    def Wire(self, *args) -> "TopoDS_Wire" :
+    def Wire(self):
         """
         * Makes TopoDS_Wire using BRep_Builder (just creates the TopoDS_Wire object and adds all edges into it). This method should be called when the wire is correct (for example, after successful fixes by ShapeFix_Wire) and adjacent edges share common vertices. In case if adjacent edges do not share the same vertices the resulting TopoDS_Wire will be invalid.
 
         :rtype: TopoDS_Wire
 
         """
-        return _ShapeExtend.ShapeExtend_WireData_Wire(self, *args)
+        return _ShapeExtend.ShapeExtend_WireData_Wire(self)
 
-    def WireAPIMake(self, *args) -> "TopoDS_Wire" :
+    def WireAPIMake(self):
         """
         * Makes TopoDS_Wire using BRepAPI_MakeWire. Class BRepAPI_MakeWire merges geometrically coincided vertices and can disturb correct order of edges in the wire. If this class fails, null shape is returned.
 
         :rtype: TopoDS_Wire
 
         """
-        return _ShapeExtend.ShapeExtend_WireData_WireAPIMake(self, *args)
+        return _ShapeExtend.ShapeExtend_WireData_WireAPIMake(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(ShapeExtend_WireData self)"""
         return _ShapeExtend.ShapeExtend_WireData__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_ShapeExtend_WireData" :
+    def GetHandle(self):
         """GetHandle(ShapeExtend_WireData self) -> Handle_ShapeExtend_WireData"""
         return _ShapeExtend.ShapeExtend_WireData_GetHandle(self)
 
@@ -1898,22 +2029,22 @@ Handle_ShapeExtend_WireData._kill_pointed = new_instancemethod(_ShapeExtend.Hand
 Handle_ShapeExtend_WireData_swigregister = _ShapeExtend.Handle_ShapeExtend_WireData_swigregister
 Handle_ShapeExtend_WireData_swigregister(Handle_ShapeExtend_WireData)
 
-def Handle_ShapeExtend_WireData_DownCast(*args) -> "Handle_ShapeExtend_WireData const" :
+def Handle_ShapeExtend_WireData_DownCast(*args):
   return _ShapeExtend.Handle_ShapeExtend_WireData_DownCast(*args)
 Handle_ShapeExtend_WireData_DownCast = _ShapeExtend.Handle_ShapeExtend_WireData_DownCast
 
 class ShapeExtend_MsgRegistrator(ShapeExtend_BasicMsgRegistrator):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         * Creates an object.
 
         :rtype: None
 
         """
-        _ShapeExtend.ShapeExtend_MsgRegistrator_swiginit(self,_ShapeExtend.new_ShapeExtend_MsgRegistrator(*args))
-    def Send(self, *args) -> "void" :
+        _ShapeExtend.ShapeExtend_MsgRegistrator_swiginit(self,_ShapeExtend.new_ShapeExtend_MsgRegistrator())
+    def Send(self, *args):
         """
         * Sends a message to be attached to the object. If the object is in the map then the message is added to the list, otherwise the object is firstly added to the map.
 
@@ -1938,29 +2069,29 @@ class ShapeExtend_MsgRegistrator(ShapeExtend_BasicMsgRegistrator):
         """
         return _ShapeExtend.ShapeExtend_MsgRegistrator_Send(self, *args)
 
-    def MapTransient(self, *args) -> "ShapeExtend_DataMapOfTransientListOfMsg const &" :
+    def MapTransient(self):
         """
         * Returns a Map of objects and message list
 
         :rtype: ShapeExtend_DataMapOfTransientListOfMsg
 
         """
-        return _ShapeExtend.ShapeExtend_MsgRegistrator_MapTransient(self, *args)
+        return _ShapeExtend.ShapeExtend_MsgRegistrator_MapTransient(self)
 
-    def MapShape(self, *args) -> "ShapeExtend_DataMapOfShapeListOfMsg const &" :
+    def MapShape(self):
         """
         * Returns a Map of shapes and message list
 
         :rtype: ShapeExtend_DataMapOfShapeListOfMsg
 
         """
-        return _ShapeExtend.ShapeExtend_MsgRegistrator_MapShape(self, *args)
+        return _ShapeExtend.ShapeExtend_MsgRegistrator_MapShape(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(ShapeExtend_MsgRegistrator self)"""
         return _ShapeExtend.ShapeExtend_MsgRegistrator__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_ShapeExtend_MsgRegistrator" :
+    def GetHandle(self):
         """GetHandle(ShapeExtend_MsgRegistrator self) -> Handle_ShapeExtend_MsgRegistrator"""
         return _ShapeExtend.ShapeExtend_MsgRegistrator_GetHandle(self)
 
@@ -2001,7 +2132,7 @@ Handle_ShapeExtend_MsgRegistrator._kill_pointed = new_instancemethod(_ShapeExten
 Handle_ShapeExtend_MsgRegistrator_swigregister = _ShapeExtend.Handle_ShapeExtend_MsgRegistrator_swigregister
 Handle_ShapeExtend_MsgRegistrator_swigregister(Handle_ShapeExtend_MsgRegistrator)
 
-def Handle_ShapeExtend_MsgRegistrator_DownCast(*args) -> "Handle_ShapeExtend_MsgRegistrator const" :
+def Handle_ShapeExtend_MsgRegistrator_DownCast(*args):
   return _ShapeExtend.Handle_ShapeExtend_MsgRegistrator_DownCast(*args)
 Handle_ShapeExtend_MsgRegistrator_DownCast = _ShapeExtend.Handle_ShapeExtend_MsgRegistrator_DownCast
 

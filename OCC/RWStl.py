@@ -119,9 +119,20 @@ import OCC.Message
 import OCC.TColStd
 class rwstl(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
+    def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def WriteBinary(*args) -> "Standard_Boolean" :
+    def WriteBinary(*args):
         """
+        * write the meshing in a file following the  binary format of an STL file.  Returns false if the cannot be opened;
+
+        :param aMesh:
+        :type aMesh: Handle_StlMesh_Mesh &
+        :param aPath:
+        :type aPath: OSD_Path &
+        :param aProgInd: default value is NULL
+        :type aProgInd: Handle_Message_ProgressIndicator &
+        :rtype: bool
+
         * write the meshing in a file following the  binary format of an STL file.  Returns false if the cannot be opened;
 
         :param aMesh:
@@ -136,8 +147,18 @@ class rwstl(object):
         return _RWStl.rwstl_WriteBinary(*args)
 
     WriteBinary = staticmethod(WriteBinary)
-    def WriteAscii(*args) -> "Standard_Boolean" :
+    def WriteAscii(*args):
         """
+        * write the meshing in a file following the  Ascii format of an STL file.  Returns false if the cannot be opened;
+
+        :param aMesh:
+        :type aMesh: Handle_StlMesh_Mesh &
+        :param aPath:
+        :type aPath: OSD_Path &
+        :param aProgInd: default value is NULL
+        :type aProgInd: Handle_Message_ProgressIndicator &
+        :rtype: bool
+
         * write the meshing in a file following the  Ascii format of an STL file.  Returns false if the cannot be opened;
 
         :param aMesh:
@@ -152,8 +173,16 @@ class rwstl(object):
         return _RWStl.rwstl_WriteAscii(*args)
 
     WriteAscii = staticmethod(WriteAscii)
-    def ReadFile(*args) -> "Handle_StlMesh_Mesh" :
+    def ReadFile(*args):
         """
+        * This method will chwck if the file is a binary  file or an AsciiFile testing the 5 first  characters of the file wich are :'solid' in an  ascii file. If we do not find that word we assume  that it is a binary file.
+
+        :param aPath:
+        :type aPath: OSD_Path &
+        :param aProgInd: default value is NULL
+        :type aProgInd: Handle_Message_ProgressIndicator &
+        :rtype: Handle_StlMesh_Mesh
+
         * This method will chwck if the file is a binary  file or an AsciiFile testing the 5 first  characters of the file wich are :'solid' in an  ascii file. If we do not find that word we assume  that it is a binary file.
 
         :param aPath:
@@ -166,8 +195,16 @@ class rwstl(object):
         return _RWStl.rwstl_ReadFile(*args)
 
     ReadFile = staticmethod(ReadFile)
-    def ReadBinary(*args) -> "Handle_StlMesh_Mesh" :
+    def ReadBinary(*args):
         """
+        * Read a meshing from a binary file Raises NoMoreObject from Standard if a statement does not contain the right number of tokens Raises TypeMisMatch if a token has not the good type (often real)
+
+        :param aPath:
+        :type aPath: OSD_Path &
+        :param aProgInd: default value is NULL
+        :type aProgInd: Handle_Message_ProgressIndicator &
+        :rtype: Handle_StlMesh_Mesh
+
         * Read a meshing from a binary file Raises NoMoreObject from Standard if a statement does not contain the right number of tokens Raises TypeMisMatch if a token has not the good type (often real)
 
         :param aPath:
@@ -180,8 +217,16 @@ class rwstl(object):
         return _RWStl.rwstl_ReadBinary(*args)
 
     ReadBinary = staticmethod(ReadBinary)
-    def ReadAscii(*args) -> "Handle_StlMesh_Mesh" :
+    def ReadAscii(*args):
         """
+        * Read a meshing from a binary file Raises NoMoreObject from Standard if a statement does not contain the right number of tokens Raises TypeMisMatch if a token has not the good type (often real) Raises MoMoreObject if a file is finished before having found the word endsolid;
+
+        :param aPath:
+        :type aPath: OSD_Path &
+        :param aProgInd: default value is NULL
+        :type aProgInd: Handle_Message_ProgressIndicator &
+        :rtype: Handle_StlMesh_Mesh
+
         * Read a meshing from a binary file Raises NoMoreObject from Standard if a statement does not contain the right number of tokens Raises TypeMisMatch if a token has not the good type (often real) Raises MoMoreObject if a file is finished before having found the word endsolid;
 
         :param aPath:
@@ -194,8 +239,6 @@ class rwstl(object):
         return _RWStl.rwstl_ReadAscii(*args)
 
     ReadAscii = staticmethod(ReadAscii)
-    def __init__(self): 
-        _RWStl.rwstl_swiginit(self,_RWStl.new_rwstl())
     def __del__(self):
     	try:
     		self.thisown = False
@@ -208,8 +251,18 @@ rwstl._kill_pointed = new_instancemethod(_RWStl.rwstl__kill_pointed,None,rwstl)
 rwstl_swigregister = _RWStl.rwstl_swigregister
 rwstl_swigregister(rwstl)
 
-def rwstl_WriteBinary(*args) -> "Standard_Boolean" :
+def rwstl_WriteBinary(*args):
   """
+    * write the meshing in a file following the  binary format of an STL file.  Returns false if the cannot be opened;
+
+    :param aMesh:
+    :type aMesh: Handle_StlMesh_Mesh &
+    :param aPath:
+    :type aPath: OSD_Path &
+    :param aProgInd: default value is NULL
+    :type aProgInd: Handle_Message_ProgressIndicator &
+    :rtype: bool
+
     * write the meshing in a file following the  binary format of an STL file.  Returns false if the cannot be opened;
 
     :param aMesh:
@@ -223,8 +276,18 @@ def rwstl_WriteBinary(*args) -> "Standard_Boolean" :
     """
   return _RWStl.rwstl_WriteBinary(*args)
 
-def rwstl_WriteAscii(*args) -> "Standard_Boolean" :
+def rwstl_WriteAscii(*args):
   """
+    * write the meshing in a file following the  Ascii format of an STL file.  Returns false if the cannot be opened;
+
+    :param aMesh:
+    :type aMesh: Handle_StlMesh_Mesh &
+    :param aPath:
+    :type aPath: OSD_Path &
+    :param aProgInd: default value is NULL
+    :type aProgInd: Handle_Message_ProgressIndicator &
+    :rtype: bool
+
     * write the meshing in a file following the  Ascii format of an STL file.  Returns false if the cannot be opened;
 
     :param aMesh:
@@ -238,8 +301,16 @@ def rwstl_WriteAscii(*args) -> "Standard_Boolean" :
     """
   return _RWStl.rwstl_WriteAscii(*args)
 
-def rwstl_ReadFile(*args) -> "Handle_StlMesh_Mesh" :
+def rwstl_ReadFile(*args):
   """
+    * This method will chwck if the file is a binary  file or an AsciiFile testing the 5 first  characters of the file wich are :'solid' in an  ascii file. If we do not find that word we assume  that it is a binary file.
+
+    :param aPath:
+    :type aPath: OSD_Path &
+    :param aProgInd: default value is NULL
+    :type aProgInd: Handle_Message_ProgressIndicator &
+    :rtype: Handle_StlMesh_Mesh
+
     * This method will chwck if the file is a binary  file or an AsciiFile testing the 5 first  characters of the file wich are :'solid' in an  ascii file. If we do not find that word we assume  that it is a binary file.
 
     :param aPath:
@@ -251,8 +322,16 @@ def rwstl_ReadFile(*args) -> "Handle_StlMesh_Mesh" :
     """
   return _RWStl.rwstl_ReadFile(*args)
 
-def rwstl_ReadBinary(*args) -> "Handle_StlMesh_Mesh" :
+def rwstl_ReadBinary(*args):
   """
+    * Read a meshing from a binary file Raises NoMoreObject from Standard if a statement does not contain the right number of tokens Raises TypeMisMatch if a token has not the good type (often real)
+
+    :param aPath:
+    :type aPath: OSD_Path &
+    :param aProgInd: default value is NULL
+    :type aProgInd: Handle_Message_ProgressIndicator &
+    :rtype: Handle_StlMesh_Mesh
+
     * Read a meshing from a binary file Raises NoMoreObject from Standard if a statement does not contain the right number of tokens Raises TypeMisMatch if a token has not the good type (often real)
 
     :param aPath:
@@ -264,8 +343,16 @@ def rwstl_ReadBinary(*args) -> "Handle_StlMesh_Mesh" :
     """
   return _RWStl.rwstl_ReadBinary(*args)
 
-def rwstl_ReadAscii(*args) -> "Handle_StlMesh_Mesh" :
+def rwstl_ReadAscii(*args):
   """
+    * Read a meshing from a binary file Raises NoMoreObject from Standard if a statement does not contain the right number of tokens Raises TypeMisMatch if a token has not the good type (often real) Raises MoMoreObject if a file is finished before having found the word endsolid;
+
+    :param aPath:
+    :type aPath: OSD_Path &
+    :param aProgInd: default value is NULL
+    :type aProgInd: Handle_Message_ProgressIndicator &
+    :rtype: Handle_StlMesh_Mesh
+
     * Read a meshing from a binary file Raises NoMoreObject from Standard if a statement does not contain the right number of tokens Raises TypeMisMatch if a token has not the good type (often real) Raises MoMoreObject if a file is finished before having found the word endsolid;
 
     :param aPath:

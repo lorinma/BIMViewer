@@ -144,19 +144,19 @@ class BRepClass_Edge(object):
 
         """
         _BRepClass.BRepClass_Edge_swiginit(self,_BRepClass.new_BRepClass_Edge(*args))
-    def Edge(self, *args) -> "TopoDS_Edge" :
+    def Edge(self):
         """
         :rtype: TopoDS_Edge
 
         """
-        return _BRepClass.BRepClass_Edge_Edge(self, *args)
+        return _BRepClass.BRepClass_Edge_Edge(self)
 
-    def Face(self, *args) -> "TopoDS_Face" :
+    def Face(self):
         """
         :rtype: TopoDS_Face
 
         """
-        return _BRepClass.BRepClass_Edge_Face(self, *args)
+        return _BRepClass.BRepClass_Edge_Face(self)
 
     def __del__(self):
     	try:
@@ -175,13 +175,13 @@ BRepClass_Edge_swigregister(BRepClass_Edge)
 class BRepClass_FClass2dOfFClassifier(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _BRepClass.BRepClass_FClass2dOfFClassifier_swiginit(self,_BRepClass.new_BRepClass_FClass2dOfFClassifier(*args))
-    def Reset(self, *args) -> "void" :
+        _BRepClass.BRepClass_FClass2dOfFClassifier_swiginit(self,_BRepClass.new_BRepClass_FClass2dOfFClassifier())
+    def Reset(self, *args):
         """
         :param L:
         :type L: gp_Lin2d
@@ -194,7 +194,7 @@ class BRepClass_FClass2dOfFClassifier(object):
         """
         return _BRepClass.BRepClass_FClass2dOfFClassifier_Reset(self, *args)
 
-    def Compare(self, *args) -> "void" :
+    def Compare(self, *args):
         """
         :param E:
         :type E: BRepClass_Edge &
@@ -205,40 +205,40 @@ class BRepClass_FClass2dOfFClassifier(object):
         """
         return _BRepClass.BRepClass_FClass2dOfFClassifier_Compare(self, *args)
 
-    def Parameter(self, *args) -> "Standard_Real" :
+    def Parameter(self):
         """
         :rtype: float
 
         """
-        return _BRepClass.BRepClass_FClass2dOfFClassifier_Parameter(self, *args)
+        return _BRepClass.BRepClass_FClass2dOfFClassifier_Parameter(self)
 
-    def Intersector(self, *args) -> "BRepClass_Intersector &" :
+    def Intersector(self):
         """
         :rtype: BRepClass_Intersector
 
         """
-        return _BRepClass.BRepClass_FClass2dOfFClassifier_Intersector(self, *args)
+        return _BRepClass.BRepClass_FClass2dOfFClassifier_Intersector(self)
 
-    def ClosestIntersection(self, *args) -> "Standard_Integer" :
+    def ClosestIntersection(self):
         """
         :rtype: int
 
         """
-        return _BRepClass.BRepClass_FClass2dOfFClassifier_ClosestIntersection(self, *args)
+        return _BRepClass.BRepClass_FClass2dOfFClassifier_ClosestIntersection(self)
 
-    def State(self, *args) -> "TopAbs_State" :
+    def State(self):
         """
         :rtype: TopAbs_State
 
         """
-        return _BRepClass.BRepClass_FClass2dOfFClassifier_State(self, *args)
+        return _BRepClass.BRepClass_FClass2dOfFClassifier_State(self)
 
-    def IsHeadOrEnd(self, *args) -> "Standard_Boolean" :
+    def IsHeadOrEnd(self):
         """
         :rtype: bool
 
         """
-        return _BRepClass.BRepClass_FClass2dOfFClassifier_IsHeadOrEnd(self, *args)
+        return _BRepClass.BRepClass_FClass2dOfFClassifier_IsHeadOrEnd(self)
 
     def __del__(self):
     	try:
@@ -276,7 +276,7 @@ class BRepClass_FClassifier(object):
 
         """
         _BRepClass.BRepClass_FClassifier_swiginit(self,_BRepClass.new_BRepClass_FClassifier(*args))
-    def Perform(self, *args) -> "void" :
+    def Perform(self, *args):
         """
         :param F:
         :type F: BRepClass_FaceExplorer &
@@ -289,47 +289,47 @@ class BRepClass_FClassifier(object):
         """
         return _BRepClass.BRepClass_FClassifier_Perform(self, *args)
 
-    def State(self, *args) -> "TopAbs_State" :
+    def State(self):
         """
         :rtype: TopAbs_State
 
         """
-        return _BRepClass.BRepClass_FClassifier_State(self, *args)
+        return _BRepClass.BRepClass_FClassifier_State(self)
 
-    def Rejected(self, *args) -> "Standard_Boolean" :
+    def Rejected(self):
         """
         :rtype: bool
 
         """
-        return _BRepClass.BRepClass_FClassifier_Rejected(self, *args)
+        return _BRepClass.BRepClass_FClassifier_Rejected(self)
 
-    def NoWires(self, *args) -> "Standard_Boolean" :
+    def NoWires(self):
         """
         :rtype: bool
 
         """
-        return _BRepClass.BRepClass_FClassifier_NoWires(self, *args)
+        return _BRepClass.BRepClass_FClassifier_NoWires(self)
 
-    def Edge(self, *args) -> "BRepClass_Edge const &" :
+    def Edge(self):
         """
         :rtype: BRepClass_Edge
 
         """
-        return _BRepClass.BRepClass_FClassifier_Edge(self, *args)
+        return _BRepClass.BRepClass_FClassifier_Edge(self)
 
-    def EdgeParameter(self, *args) -> "Standard_Real" :
+    def EdgeParameter(self):
         """
         :rtype: float
 
         """
-        return _BRepClass.BRepClass_FClassifier_EdgeParameter(self, *args)
+        return _BRepClass.BRepClass_FClassifier_EdgeParameter(self)
 
-    def Position(self, *args) -> "IntRes2d_Position" :
+    def Position(self):
         """
         :rtype: IntRes2d_Position
 
         """
-        return _BRepClass.BRepClass_FClassifier_Position(self, *args)
+        return _BRepClass.BRepClass_FClassifier_Position(self)
 
     def __del__(self):
     	try:
@@ -361,7 +361,7 @@ class BRepClass_FaceExplorer(object):
 
         """
         _BRepClass.BRepClass_FaceExplorer_swiginit(self,_BRepClass.new_BRepClass_FaceExplorer(*args))
-    def Reject(self, *args) -> "Standard_Boolean" :
+    def Reject(self, *args):
         """
         * Should return True if the point is outside a bounding volume of the face.
 
@@ -372,7 +372,7 @@ class BRepClass_FaceExplorer(object):
         """
         return _BRepClass.BRepClass_FaceExplorer_Reject(self, *args)
 
-    def Segment(self, *args) -> "Standard_Boolean" :
+    def Segment(self, *args):
         """
         * Returns in <L>, <Par> a segment having at least one intersection with the face boundary to compute intersections.
 
@@ -387,7 +387,7 @@ class BRepClass_FaceExplorer(object):
         """
         return _BRepClass.BRepClass_FaceExplorer_Segment(self, *args)
 
-    def OtherSegment(self, *args) -> "Standard_Boolean" :
+    def OtherSegment(self, *args):
         """
         * Returns in <L>, <Par> a segment having at least one intersection with the face boundary to compute intersections. Each call gives another segment.
 
@@ -402,34 +402,34 @@ class BRepClass_FaceExplorer(object):
         """
         return _BRepClass.BRepClass_FaceExplorer_OtherSegment(self, *args)
 
-    def InitWires(self, *args) -> "void" :
+    def InitWires(self):
         """
         * Starts an exploration of the wires.
 
         :rtype: None
 
         """
-        return _BRepClass.BRepClass_FaceExplorer_InitWires(self, *args)
+        return _BRepClass.BRepClass_FaceExplorer_InitWires(self)
 
-    def MoreWires(self, *args) -> "Standard_Boolean" :
+    def MoreWires(self):
         """
         * Returns True if there is a current wire.
 
         :rtype: bool
 
         """
-        return _BRepClass.BRepClass_FaceExplorer_MoreWires(self, *args)
+        return _BRepClass.BRepClass_FaceExplorer_MoreWires(self)
 
-    def NextWire(self, *args) -> "void" :
+    def NextWire(self):
         """
         * Sets the explorer to the next wire.
 
         :rtype: None
 
         """
-        return _BRepClass.BRepClass_FaceExplorer_NextWire(self, *args)
+        return _BRepClass.BRepClass_FaceExplorer_NextWire(self)
 
-    def RejectWire(self, *args) -> "Standard_Boolean" :
+    def RejectWire(self, *args):
         """
         * Returns True if the wire bounding volume does not intersect the segment.
 
@@ -442,34 +442,34 @@ class BRepClass_FaceExplorer(object):
         """
         return _BRepClass.BRepClass_FaceExplorer_RejectWire(self, *args)
 
-    def InitEdges(self, *args) -> "void" :
+    def InitEdges(self):
         """
         * Starts an exploration of the edges of the current wire.
 
         :rtype: None
 
         """
-        return _BRepClass.BRepClass_FaceExplorer_InitEdges(self, *args)
+        return _BRepClass.BRepClass_FaceExplorer_InitEdges(self)
 
-    def MoreEdges(self, *args) -> "Standard_Boolean" :
+    def MoreEdges(self):
         """
         * Returns True if there is a current edge.
 
         :rtype: bool
 
         """
-        return _BRepClass.BRepClass_FaceExplorer_MoreEdges(self, *args)
+        return _BRepClass.BRepClass_FaceExplorer_MoreEdges(self)
 
-    def NextEdge(self, *args) -> "void" :
+    def NextEdge(self):
         """
         * Sets the explorer to the next edge.
 
         :rtype: None
 
         """
-        return _BRepClass.BRepClass_FaceExplorer_NextEdge(self, *args)
+        return _BRepClass.BRepClass_FaceExplorer_NextEdge(self)
 
-    def RejectEdge(self, *args) -> "Standard_Boolean" :
+    def RejectEdge(self, *args):
         """
         * Returns True if the edge bounding volume does not intersect the segment.
 
@@ -482,7 +482,7 @@ class BRepClass_FaceExplorer(object):
         """
         return _BRepClass.BRepClass_FaceExplorer_RejectEdge(self, *args)
 
-    def CurrentEdge(self, *args) -> "void" :
+    def CurrentEdge(self, *args):
         """
         * Current edge in current wire and its orientation.
 
@@ -522,13 +522,13 @@ BRepClass_FaceExplorer_swigregister(BRepClass_FaceExplorer)
 class BRepClass_FacePassiveClassifier(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _BRepClass.BRepClass_FacePassiveClassifier_swiginit(self,_BRepClass.new_BRepClass_FacePassiveClassifier(*args))
-    def Reset(self, *args) -> "void" :
+        _BRepClass.BRepClass_FacePassiveClassifier_swiginit(self,_BRepClass.new_BRepClass_FacePassiveClassifier())
+    def Reset(self, *args):
         """
         :param L:
         :type L: gp_Lin2d
@@ -541,7 +541,7 @@ class BRepClass_FacePassiveClassifier(object):
         """
         return _BRepClass.BRepClass_FacePassiveClassifier_Reset(self, *args)
 
-    def Compare(self, *args) -> "void" :
+    def Compare(self, *args):
         """
         :param E:
         :type E: BRepClass_Edge &
@@ -552,40 +552,40 @@ class BRepClass_FacePassiveClassifier(object):
         """
         return _BRepClass.BRepClass_FacePassiveClassifier_Compare(self, *args)
 
-    def Parameter(self, *args) -> "Standard_Real" :
+    def Parameter(self):
         """
         :rtype: float
 
         """
-        return _BRepClass.BRepClass_FacePassiveClassifier_Parameter(self, *args)
+        return _BRepClass.BRepClass_FacePassiveClassifier_Parameter(self)
 
-    def Intersector(self, *args) -> "BRepClass_Intersector &" :
+    def Intersector(self):
         """
         :rtype: BRepClass_Intersector
 
         """
-        return _BRepClass.BRepClass_FacePassiveClassifier_Intersector(self, *args)
+        return _BRepClass.BRepClass_FacePassiveClassifier_Intersector(self)
 
-    def ClosestIntersection(self, *args) -> "Standard_Integer" :
+    def ClosestIntersection(self):
         """
         :rtype: int
 
         """
-        return _BRepClass.BRepClass_FacePassiveClassifier_ClosestIntersection(self, *args)
+        return _BRepClass.BRepClass_FacePassiveClassifier_ClosestIntersection(self)
 
-    def State(self, *args) -> "TopAbs_State" :
+    def State(self):
         """
         :rtype: TopAbs_State
 
         """
-        return _BRepClass.BRepClass_FacePassiveClassifier_State(self, *args)
+        return _BRepClass.BRepClass_FacePassiveClassifier_State(self)
 
-    def IsHeadOrEnd(self, *args) -> "Standard_Boolean" :
+    def IsHeadOrEnd(self):
         """
         :rtype: bool
 
         """
-        return _BRepClass.BRepClass_FacePassiveClassifier_IsHeadOrEnd(self, *args)
+        return _BRepClass.BRepClass_FacePassiveClassifier_IsHeadOrEnd(self)
 
     def __del__(self):
     	try:
@@ -609,13 +609,13 @@ BRepClass_FacePassiveClassifier_swigregister(BRepClass_FacePassiveClassifier)
 class BRepClass_Intersector(OCC.Geom2dInt.Geom2dInt_IntConicCurveOfGInter):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _BRepClass.BRepClass_Intersector_swiginit(self,_BRepClass.new_BRepClass_Intersector(*args))
-    def Perform(self, *args) -> "void" :
+        _BRepClass.BRepClass_Intersector_swiginit(self,_BRepClass.new_BRepClass_Intersector())
+    def Perform(self, *args):
         """
         * Intersect the line segment and the edge.
 
@@ -632,7 +632,7 @@ class BRepClass_Intersector(OCC.Geom2dInt.Geom2dInt_IntConicCurveOfGInter):
         """
         return _BRepClass.BRepClass_Intersector_Perform(self, *args)
 
-    def LocalGeometry(self, *args) -> "void" :
+    def LocalGeometry(self, *args):
         """
         * Returns in <T>, <N> and <C> the tangent, normal and curvature of the edge <E> at parameter value <U>.
 

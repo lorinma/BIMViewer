@@ -120,8 +120,9 @@ import OCC.math
 import OCC.IntRes2d
 class bisector(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
+    def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def IsConvex(*args) -> "Standard_Boolean" :
+    def IsConvex(*args):
         """
         :param Cu:
         :type Cu: Handle_Geom2d_Curve &
@@ -133,8 +134,6 @@ class bisector(object):
         return _Bisector.bisector_IsConvex(*args)
 
     IsConvex = staticmethod(IsConvex)
-    def __init__(self): 
-        _Bisector.bisector_swiginit(self,_Bisector.new_bisector())
     def __del__(self):
     	try:
     		self.thisown = False
@@ -147,7 +146,7 @@ bisector._kill_pointed = new_instancemethod(_Bisector.bisector__kill_pointed,Non
 bisector_swigregister = _Bisector.bisector_swigregister
 bisector_swigregister(bisector)
 
-def bisector_IsConvex(*args) -> "Standard_Boolean" :
+def bisector_IsConvex(*args):
   """
     :param Cu:
     :type Cu: Handle_Geom2d_Curve &
@@ -161,13 +160,13 @@ def bisector_IsConvex(*args) -> "Standard_Boolean" :
 class Bisector_Bisec(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _Bisector.Bisector_Bisec_swiginit(self,_Bisector.new_Bisector_Bisec(*args))
-    def Perform(self, *args) -> "void" :
+        _Bisector.Bisector_Bisec_swiginit(self,_Bisector.new_Bisector_Bisec())
+    def Perform(self, *args):
         """
         * Performs the bisecting line between the curves  <Cu1> and <Cu2>.  <oncurve> is True if the point <P> is common to <Cu1>  and <Cu2>.
 
@@ -175,6 +174,46 @@ class Bisector_Bisec(object):
         :type Cu1: Handle_Geom2d_Curve &
         :param Cu2:
         :type Cu2: Handle_Geom2d_Curve &
+        :param P:
+        :type P: gp_Pnt2d
+        :param V1:
+        :type V1: gp_Vec2d
+        :param V2:
+        :type V2: gp_Vec2d
+        :param Sense:
+        :type Sense: float
+        :param Tolerance:
+        :type Tolerance: float
+        :param oncurve: default value is Standard_True
+        :type oncurve: bool
+        :rtype: None
+
+        * Performs the bisecting line between the curves  <Cu1> and <Cu2>.  <oncurve> is True if the point <P> is common to <Cu1>  and <Cu2>.
+
+        :param Cu1:
+        :type Cu1: Handle_Geom2d_Curve &
+        :param Cu2:
+        :type Cu2: Handle_Geom2d_Curve &
+        :param P:
+        :type P: gp_Pnt2d
+        :param V1:
+        :type V1: gp_Vec2d
+        :param V2:
+        :type V2: gp_Vec2d
+        :param Sense:
+        :type Sense: float
+        :param Tolerance:
+        :type Tolerance: float
+        :param oncurve: default value is Standard_True
+        :type oncurve: bool
+        :rtype: None
+
+        * Performs the bisecting line between the curve  <Cu1> and the point <Pnt>.  <oncurve> is True if the point <P> is the point <Pnt>.
+
+        :param Cu:
+        :type Cu: Handle_Geom2d_Curve &
+        :param Pnt:
+        :type Pnt: Handle_Geom2d_Point &
         :param P:
         :type P: gp_Pnt2d
         :param V1:
@@ -229,6 +268,66 @@ class Bisector_Bisec(object):
         :type oncurve: bool
         :rtype: None
 
+        * Performs the bisecting line between the curve  <Cu> and the point <Pnt>.  <oncurve> is True if the point <P> is the point <Pnt>.
+
+        :param Pnt:
+        :type Pnt: Handle_Geom2d_Point &
+        :param Cu:
+        :type Cu: Handle_Geom2d_Curve &
+        :param P:
+        :type P: gp_Pnt2d
+        :param V1:
+        :type V1: gp_Vec2d
+        :param V2:
+        :type V2: gp_Vec2d
+        :param Sense:
+        :type Sense: float
+        :param Tolerance:
+        :type Tolerance: float
+        :param oncurve: default value is Standard_True
+        :type oncurve: bool
+        :rtype: None
+
+        * Performs the bisecting line between the two points  <Pnt1> and <Pnt2>.
+
+        :param Pnt1:
+        :type Pnt1: Handle_Geom2d_Point &
+        :param Pnt2:
+        :type Pnt2: Handle_Geom2d_Point &
+        :param P:
+        :type P: gp_Pnt2d
+        :param V1:
+        :type V1: gp_Vec2d
+        :param V2:
+        :type V2: gp_Vec2d
+        :param Sense:
+        :type Sense: float
+        :param Tolerance: default value is 0.0
+        :type Tolerance: float
+        :param oncurve: default value is Standard_True
+        :type oncurve: bool
+        :rtype: None
+
+        * Performs the bisecting line between the two points  <Pnt1> and <Pnt2>.
+
+        :param Pnt1:
+        :type Pnt1: Handle_Geom2d_Point &
+        :param Pnt2:
+        :type Pnt2: Handle_Geom2d_Point &
+        :param P:
+        :type P: gp_Pnt2d
+        :param V1:
+        :type V1: gp_Vec2d
+        :param V2:
+        :type V2: gp_Vec2d
+        :param Sense:
+        :type Sense: float
+        :param Tolerance: default value is 0.0
+        :type Tolerance: float
+        :param oncurve: default value is Standard_True
+        :type oncurve: bool
+        :rtype: None
+
         * Performs the bisecting line between the two points  <Pnt1> and <Pnt2>.
 
         :param Pnt1:
@@ -252,23 +351,23 @@ class Bisector_Bisec(object):
         """
         return _Bisector.Bisector_Bisec_Perform(self, *args)
 
-    def Value(self, *args) -> "Handle_Geom2d_TrimmedCurve const &" :
+    def Value(self):
         """
         * Returns the Curve of <self>.
 
         :rtype: Handle_Geom2d_TrimmedCurve
 
         """
-        return _Bisector.Bisector_Bisec_Value(self, *args)
+        return _Bisector.Bisector_Bisec_Value(self)
 
-    def ChangeValue(self, *args) -> "Handle_Geom2d_TrimmedCurve const &" :
+    def ChangeValue(self):
         """
         * Returns the Curve of <self>.
 
         :rtype: Handle_Geom2d_TrimmedCurve
 
         """
-        return _Bisector.Bisector_Bisec_ChangeValue(self, *args)
+        return _Bisector.Bisector_Bisec_ChangeValue(self)
 
     def __del__(self):
     	try:
@@ -289,7 +388,7 @@ class Bisector_Curve(OCC.Geom2d.Geom2d_Curve):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def Parameter(self, *args) -> "Standard_Real" :
+    def Parameter(self, *args):
         """
         :param P:
         :type P: gp_Pnt2d
@@ -298,56 +397,56 @@ class Bisector_Curve(OCC.Geom2d.Geom2d_Curve):
         """
         return _Bisector.Bisector_Curve_Parameter(self, *args)
 
-    def IsExtendAtStart(self, *args) -> "Standard_Boolean" :
+    def IsExtendAtStart(self):
         """
         :rtype: bool
 
         """
-        return _Bisector.Bisector_Curve_IsExtendAtStart(self, *args)
+        return _Bisector.Bisector_Curve_IsExtendAtStart(self)
 
-    def IsExtendAtEnd(self, *args) -> "Standard_Boolean" :
+    def IsExtendAtEnd(self):
         """
         :rtype: bool
 
         """
-        return _Bisector.Bisector_Curve_IsExtendAtEnd(self, *args)
+        return _Bisector.Bisector_Curve_IsExtendAtEnd(self)
 
-    def NbIntervals(self, *args) -> "Standard_Integer" :
+    def NbIntervals(self):
         """
         * If necessary, breaks the curve in intervals of continuity <C1>. And returns the number of intervals.
 
         :rtype: int
 
         """
-        return _Bisector.Bisector_Curve_NbIntervals(self, *args)
+        return _Bisector.Bisector_Curve_NbIntervals(self)
 
-    def IntervalFirst(self, *args) -> "Standard_Real" :
+    def IntervalFirst(self, *args):
         """
         * Returns the first parameter of the current interval.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: float
 
         """
         return _Bisector.Bisector_Curve_IntervalFirst(self, *args)
 
-    def IntervalLast(self, *args) -> "Standard_Real" :
+    def IntervalLast(self, *args):
         """
         * Returns the last parameter of the current interval.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: float
 
         """
         return _Bisector.Bisector_Curve_IntervalLast(self, *args)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Bisector_Curve self)"""
         return _Bisector.Bisector_Curve__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Bisector_Curve" :
+    def GetHandle(self):
         """GetHandle(Bisector_Curve self) -> Handle_Bisector_Curve"""
         return _Bisector.Bisector_Curve_GetHandle(self)
 
@@ -391,7 +490,7 @@ Handle_Bisector_Curve._kill_pointed = new_instancemethod(_Bisector.Handle_Bisect
 Handle_Bisector_Curve_swigregister = _Bisector.Handle_Bisector_Curve_swigregister
 Handle_Bisector_Curve_swigregister(Handle_Bisector_Curve)
 
-def Handle_Bisector_Curve_DownCast(*args) -> "Handle_Bisector_Curve const" :
+def Handle_Bisector_Curve_DownCast(*args):
   return _Bisector.Handle_Bisector_Curve_DownCast(*args)
 Handle_Bisector_Curve_DownCast = _Bisector.Handle_Bisector_Curve_DownCast
 
@@ -410,7 +509,7 @@ class Bisector_FunctionH(object):
 
         """
         _Bisector.Bisector_FunctionH_swiginit(self,_Bisector.new_Bisector_FunctionH(*args))
-    def Value(self, *args) -> "Standard_Boolean" :
+    def Value(self, *args):
         """
         * Computes the values of the Functions for the variable <X>.
 
@@ -423,7 +522,7 @@ class Bisector_FunctionH(object):
         """
         return _Bisector.Bisector_FunctionH_Value(self, *args)
 
-    def Derivative(self, *args) -> "Standard_Boolean" :
+    def Derivative(self, *args):
         """
         :param X:
         :type X: float
@@ -434,7 +533,7 @@ class Bisector_FunctionH(object):
         """
         return _Bisector.Bisector_FunctionH_Derivative(self, *args)
 
-    def Values(self, *args) -> "Standard_Boolean" :
+    def Values(self, *args):
         """
         * Returns the values of the functions and the derivatives for the variable <X>.
 
@@ -481,7 +580,7 @@ class Bisector_FunctionInter(object):
 
         """
         _Bisector.Bisector_FunctionInter_swiginit(self,_Bisector.new_Bisector_FunctionInter(*args))
-    def Perform(self, *args) -> "void" :
+    def Perform(self, *args):
         """
         :param C:
         :type C: Handle_Geom2d_Curve &
@@ -494,7 +593,7 @@ class Bisector_FunctionInter(object):
         """
         return _Bisector.Bisector_FunctionInter_Perform(self, *args)
 
-    def Value(self, *args) -> "Standard_Boolean" :
+    def Value(self, *args):
         """
         * Computes the values of the Functions for the variable <X>.
 
@@ -507,7 +606,7 @@ class Bisector_FunctionInter(object):
         """
         return _Bisector.Bisector_FunctionInter_Value(self, *args)
 
-    def Derivative(self, *args) -> "Standard_Boolean" :
+    def Derivative(self, *args):
         """
         :param X:
         :type X: float
@@ -518,7 +617,7 @@ class Bisector_FunctionInter(object):
         """
         return _Bisector.Bisector_FunctionInter_Derivative(self, *args)
 
-    def Values(self, *args) -> "Standard_Boolean" :
+    def Values(self, *args):
         """
         * Returns the values of the functions and the derivatives for the variable <X>.
 
@@ -576,7 +675,7 @@ class Bisector_Inter(OCC.IntRes2d.IntRes2d_Intersection):
 
         """
         _Bisector.Bisector_Inter_swiginit(self,_Bisector.new_Bisector_Inter(*args))
-    def Perform(self, *args) -> "void" :
+    def Perform(self, *args):
         """
         * Intersection between 2 curves. C1 separates the element A and B. C2 separates the elements C et D. If B an C have the same geometry. <ComunElement> Has to be True. It Permits an optimiztion of the computation.
 
@@ -633,7 +732,7 @@ class Bisector_PointOnBis(object):
 
         """
         _Bisector.Bisector_PointOnBis_swiginit(self,_Bisector.new_Bisector_PointOnBis(*args))
-    def ParamOnC1(self, *args) -> "Standard_Real" :
+    def ParamOnC1(self, *args):
         """
         :param Param:
         :type Param: float
@@ -644,7 +743,7 @@ class Bisector_PointOnBis(object):
         """
         return _Bisector.Bisector_PointOnBis_ParamOnC1(self, *args)
 
-    def ParamOnC2(self, *args) -> "Standard_Real" :
+    def ParamOnC2(self, *args):
         """
         :param Param:
         :type Param: float
@@ -655,7 +754,7 @@ class Bisector_PointOnBis(object):
         """
         return _Bisector.Bisector_PointOnBis_ParamOnC2(self, *args)
 
-    def ParamOnBis(self, *args) -> "Standard_Real" :
+    def ParamOnBis(self, *args):
         """
         :param Param:
         :type Param: float
@@ -666,7 +765,7 @@ class Bisector_PointOnBis(object):
         """
         return _Bisector.Bisector_PointOnBis_ParamOnBis(self, *args)
 
-    def Distance(self, *args) -> "Standard_Real" :
+    def Distance(self, *args):
         """
         :param Distance:
         :type Distance: float
@@ -677,7 +776,7 @@ class Bisector_PointOnBis(object):
         """
         return _Bisector.Bisector_PointOnBis_Distance(self, *args)
 
-    def Point(self, *args) -> "gp_Pnt2d" :
+    def Point(self, *args):
         """
         :param P:
         :type P: gp_Pnt2d
@@ -688,7 +787,7 @@ class Bisector_PointOnBis(object):
         """
         return _Bisector.Bisector_PointOnBis_Point(self, *args)
 
-    def IsInfinite(self, *args) -> "Standard_Boolean" :
+    def IsInfinite(self, *args):
         """
         :param Infinite:
         :type Infinite: bool
@@ -699,12 +798,12 @@ class Bisector_PointOnBis(object):
         """
         return _Bisector.Bisector_PointOnBis_IsInfinite(self, *args)
 
-    def Dump(self, *args) -> "void" :
+    def Dump(self):
         """
         :rtype: None
 
         """
-        return _Bisector.Bisector_PointOnBis_Dump(self, *args)
+        return _Bisector.Bisector_PointOnBis_Dump(self)
 
     def __del__(self):
     	try:
@@ -728,13 +827,13 @@ Bisector_PointOnBis_swigregister(Bisector_PointOnBis)
 class Bisector_PolyBis(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _Bisector.Bisector_PolyBis_swiginit(self,_Bisector.new_Bisector_PolyBis(*args))
-    def Append(self, *args) -> "void" :
+        _Bisector.Bisector_PolyBis_swiginit(self,_Bisector.new_Bisector_PolyBis())
+    def Append(self, *args):
         """
         :param Point:
         :type Point: Bisector_PointOnBis &
@@ -743,44 +842,44 @@ class Bisector_PolyBis(object):
         """
         return _Bisector.Bisector_PolyBis_Append(self, *args)
 
-    def Length(self, *args) -> "Standard_Integer" :
+    def Length(self):
         """
         :rtype: int
 
         """
-        return _Bisector.Bisector_PolyBis_Length(self, *args)
+        return _Bisector.Bisector_PolyBis_Length(self)
 
-    def IsEmpty(self, *args) -> "Standard_Boolean" :
+    def IsEmpty(self):
         """
         :rtype: bool
 
         """
-        return _Bisector.Bisector_PolyBis_IsEmpty(self, *args)
+        return _Bisector.Bisector_PolyBis_IsEmpty(self)
 
-    def Value(self, *args) -> "Bisector_PointOnBis const &" :
+    def Value(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Bisector_PointOnBis
 
         """
         return _Bisector.Bisector_PolyBis_Value(self, *args)
 
-    def First(self, *args) -> "Bisector_PointOnBis const &" :
+    def First(self):
         """
         :rtype: Bisector_PointOnBis
 
         """
-        return _Bisector.Bisector_PolyBis_First(self, *args)
+        return _Bisector.Bisector_PolyBis_First(self)
 
-    def Last(self, *args) -> "Bisector_PointOnBis const &" :
+    def Last(self):
         """
         :rtype: Bisector_PointOnBis
 
         """
-        return _Bisector.Bisector_PolyBis_Last(self, *args)
+        return _Bisector.Bisector_PolyBis_Last(self)
 
-    def Interval(self, *args) -> "Standard_Integer" :
+    def Interval(self, *args):
         """
         :param U:
         :type U: float
@@ -789,7 +888,7 @@ class Bisector_PolyBis(object):
         """
         return _Bisector.Bisector_PolyBis_Interval(self, *args)
 
-    def Transform(self, *args) -> "void" :
+    def Transform(self, *args):
         """
         :param T:
         :type T: gp_Trsf2d
@@ -821,13 +920,13 @@ Bisector_PolyBis_swigregister(Bisector_PolyBis)
 class Bisector_BisecAna(Bisector_Curve):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _Bisector.Bisector_BisecAna_swiginit(self,_Bisector.new_Bisector_BisecAna(*args))
-    def Perform(self, *args) -> "void" :
+        _Bisector.Bisector_BisecAna_swiginit(self,_Bisector.new_Bisector_BisecAna())
+    def Perform(self, *args):
         """
         * Performs the bisecting line between the curves  <Cu1> and <Cu2>.  <oncurve> is True if the point <P> is common to <Cu1>  and <Cu2>.
 
@@ -835,6 +934,46 @@ class Bisector_BisecAna(Bisector_Curve):
         :type Cu1: Handle_Geom2d_Curve &
         :param Cu2:
         :type Cu2: Handle_Geom2d_Curve &
+        :param P:
+        :type P: gp_Pnt2d
+        :param V1:
+        :type V1: gp_Vec2d
+        :param V2:
+        :type V2: gp_Vec2d
+        :param Sense:
+        :type Sense: float
+        :param Tolerance:
+        :type Tolerance: float
+        :param oncurve: default value is Standard_True
+        :type oncurve: bool
+        :rtype: None
+
+        * Performs the bisecting line between the curves  <Cu1> and <Cu2>.  <oncurve> is True if the point <P> is common to <Cu1>  and <Cu2>.
+
+        :param Cu1:
+        :type Cu1: Handle_Geom2d_Curve &
+        :param Cu2:
+        :type Cu2: Handle_Geom2d_Curve &
+        :param P:
+        :type P: gp_Pnt2d
+        :param V1:
+        :type V1: gp_Vec2d
+        :param V2:
+        :type V2: gp_Vec2d
+        :param Sense:
+        :type Sense: float
+        :param Tolerance:
+        :type Tolerance: float
+        :param oncurve: default value is Standard_True
+        :type oncurve: bool
+        :rtype: None
+
+        * Performs the bisecting line between the curve  <Cu1> and the point <Pnt>.  <oncurve> is True if the point <P> is the point <Pnt>.
+
+        :param Cu:
+        :type Cu: Handle_Geom2d_Curve &
+        :param Pnt:
+        :type Pnt: Handle_Geom2d_Point &
         :param P:
         :type P: gp_Pnt2d
         :param V1:
@@ -889,6 +1028,66 @@ class Bisector_BisecAna(Bisector_Curve):
         :type oncurve: bool
         :rtype: None
 
+        * Performs the bisecting line between the curve  <Cu> and the point <Pnt>.  <oncurve> is True if the point <P> is the point <Pnt>.
+
+        :param Pnt:
+        :type Pnt: Handle_Geom2d_Point &
+        :param Cu:
+        :type Cu: Handle_Geom2d_Curve &
+        :param P:
+        :type P: gp_Pnt2d
+        :param V1:
+        :type V1: gp_Vec2d
+        :param V2:
+        :type V2: gp_Vec2d
+        :param Sense:
+        :type Sense: float
+        :param Tolerance:
+        :type Tolerance: float
+        :param oncurve: default value is Standard_True
+        :type oncurve: bool
+        :rtype: None
+
+        * Performs the bisecting line between the two points  <Pnt1> and <Pnt2>.
+
+        :param Pnt1:
+        :type Pnt1: Handle_Geom2d_Point &
+        :param Pnt2:
+        :type Pnt2: Handle_Geom2d_Point &
+        :param P:
+        :type P: gp_Pnt2d
+        :param V1:
+        :type V1: gp_Vec2d
+        :param V2:
+        :type V2: gp_Vec2d
+        :param Sense:
+        :type Sense: float
+        :param Tolerance: default value is 0.0
+        :type Tolerance: float
+        :param oncurve: default value is Standard_True
+        :type oncurve: bool
+        :rtype: None
+
+        * Performs the bisecting line between the two points  <Pnt1> and <Pnt2>.
+
+        :param Pnt1:
+        :type Pnt1: Handle_Geom2d_Point &
+        :param Pnt2:
+        :type Pnt2: Handle_Geom2d_Point &
+        :param P:
+        :type P: gp_Pnt2d
+        :param V1:
+        :type V1: gp_Vec2d
+        :param V2:
+        :type V2: gp_Vec2d
+        :param Sense:
+        :type Sense: float
+        :param Tolerance: default value is 0.0
+        :type Tolerance: float
+        :param oncurve: default value is Standard_True
+        :type oncurve: bool
+        :rtype: None
+
         * Performs the bisecting line between the two points  <Pnt1> and <Pnt2>.
 
         :param Pnt1:
@@ -912,7 +1111,7 @@ class Bisector_BisecAna(Bisector_Curve):
         """
         return _Bisector.Bisector_BisecAna_Perform(self, *args)
 
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
         :param bisector:
         :type bisector: Handle_Geom2d_TrimmedCurve &
@@ -921,7 +1120,7 @@ class Bisector_BisecAna(Bisector_Curve):
         """
         return _Bisector.Bisector_BisecAna_Init(self, *args)
 
-    def SetTrim(self, *args) -> "void" :
+    def SetTrim(self, *args):
         """
         * Trim <self> by a domain defined by the curve <Cu>.  This domain is the set of the points which are  nearest from <Cu> than the extremitis of <Cu>.
 
@@ -940,43 +1139,55 @@ class Bisector_BisecAna(Bisector_Curve):
         """
         return _Bisector.Bisector_BisecAna_SetTrim(self, *args)
 
-    def Geom2dCurve(self, *args) -> "Handle_Geom2d_Curve" :
+    def Geom2dCurve(self):
         """
         :rtype: Handle_Geom2d_Curve
 
         """
-        return _Bisector.Bisector_BisecAna_Geom2dCurve(self, *args)
+        return _Bisector.Bisector_BisecAna_Geom2dCurve(self)
 
-    def ParameterOfStartPoint(self, *args) -> "Standard_Real" :
+    def ParameterOfStartPoint(self):
         """
         :rtype: float
 
         """
-        return _Bisector.Bisector_BisecAna_ParameterOfStartPoint(self, *args)
+        return _Bisector.Bisector_BisecAna_ParameterOfStartPoint(self)
 
-    def ParameterOfEndPoint(self, *args) -> "Standard_Real" :
+    def ParameterOfEndPoint(self):
         """
         :rtype: float
 
         """
-        return _Bisector.Bisector_BisecAna_ParameterOfEndPoint(self, *args)
+        return _Bisector.Bisector_BisecAna_ParameterOfEndPoint(self)
 
-    def Dump(self, *args) -> "void" :
+    def Dump(self, Deep=0, Offset=0):
         """
         :param Deep: default value is 0
-        :type Deep: int
+        :type Deep: Standard_Integer
         :param Offset: default value is 0
-        :type Offset: int
+        :type Offset: Standard_Integer
+        :rtype: None
+
+        :param Deep: default value is 0
+        :type Deep: Standard_Integer
+        :param Offset: default value is 0
+        :type Offset: Standard_Integer
+        :rtype: None
+
+        :param Deep: default value is 0
+        :type Deep: Standard_Integer
+        :param Offset: default value is 0
+        :type Offset: Standard_Integer
         :rtype: None
 
         """
-        return _Bisector.Bisector_BisecAna_Dump(self, *args)
+        return _Bisector.Bisector_BisecAna_Dump(self, Deep, Offset)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Bisector_BisecAna self)"""
         return _Bisector.Bisector_BisecAna__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Bisector_BisecAna" :
+    def GetHandle(self):
         """GetHandle(Bisector_BisecAna self) -> Handle_Bisector_BisecAna"""
         return _Bisector.Bisector_BisecAna_GetHandle(self)
 
@@ -1021,7 +1232,7 @@ Handle_Bisector_BisecAna._kill_pointed = new_instancemethod(_Bisector.Handle_Bis
 Handle_Bisector_BisecAna_swigregister = _Bisector.Handle_Bisector_BisecAna_swigregister
 Handle_Bisector_BisecAna_swigregister(Handle_Bisector_BisecAna)
 
-def Handle_Bisector_BisecAna_DownCast(*args) -> "Handle_Bisector_BisecAna const" :
+def Handle_Bisector_BisecAna_DownCast(*args):
   return _Bisector.Handle_Bisector_BisecAna_DownCast(*args)
 Handle_Bisector_BisecAna_DownCast = _Bisector.Handle_Bisector_BisecAna_DownCast
 
@@ -1048,10 +1259,42 @@ class Bisector_BisecCC(Bisector_Curve):
         :type DistMax: float
         :rtype: None
 
+        * Constructs the bisector between the curves <Cu1> and <Cu2>.  <Side1> (resp <Side2>) = 1 if the bisector curve is on the left of <Cu1> (resp <Cu2>) else <Side1> (resp <Side2>) = -1.  the Bisector is trimmed by the Point <Origin>. <DistMax> is used to trim the bisector.The distance between the points of the bisector and <Cu> is smaller than <DistMax>.
+
+        :param Cu1:
+        :type Cu1: Handle_Geom2d_Curve &
+        :param Cu2:
+        :type Cu2: Handle_Geom2d_Curve &
+        :param Side1:
+        :type Side1: float
+        :param Side2:
+        :type Side2: float
+        :param Origin:
+        :type Origin: gp_Pnt2d
+        :param DistMax: default value is 500
+        :type DistMax: float
+        :rtype: None
+
         """
         _Bisector.Bisector_BisecCC_swiginit(self,_Bisector.new_Bisector_BisecCC(*args))
-    def Perform(self, *args) -> "void" :
+    def Perform(self, *args):
         """
+        * Computes the bisector between the curves <Cu1> and <Cu2>.  <Side1> (resp <Side2>) = 1 if the bisector curve is on the left of <Cu1> (resp <Cu2>) else <Side1> (resp <Side2>) = -1.  the Bisector is trimmed by the Point <Origin>.  <DistMax> is used to trim the bisector.The distance between the points of the bisector and <Cu> is smaller than <DistMax>.
+
+        :param Cu1:
+        :type Cu1: Handle_Geom2d_Curve &
+        :param Cu2:
+        :type Cu2: Handle_Geom2d_Curve &
+        :param Side1:
+        :type Side1: float
+        :param Side2:
+        :type Side2: float
+        :param Origin:
+        :type Origin: gp_Pnt2d
+        :param DistMax: default value is 500
+        :type DistMax: float
+        :rtype: None
+
         * Computes the bisector between the curves <Cu1> and <Cu2>.  <Side1> (resp <Side2>) = 1 if the bisector curve is on the left of <Cu1> (resp <Cu2>) else <Side1> (resp <Side2>) = -1.  the Bisector is trimmed by the Point <Origin>.  <DistMax> is used to trim the bisector.The distance between the points of the bisector and <Cu> is smaller than <DistMax>.
 
         :param Cu1:
@@ -1071,23 +1314,23 @@ class Bisector_BisecCC(Bisector_Curve):
         """
         return _Bisector.Bisector_BisecCC_Perform(self, *args)
 
-    def ChangeGuide(self, *args) -> "Handle_Bisector_BisecCC" :
+    def ChangeGuide(self):
         """
         * The parameter on <self> is linked to the parameter on the first curve. This method creates the same bisector where the curves are inversed.
 
         :rtype: Handle_Bisector_BisecCC
 
         """
-        return _Bisector.Bisector_BisecCC_ChangeGuide(self, *args)
+        return _Bisector.Bisector_BisecCC_ChangeGuide(self)
 
-    def IntervalContinuity(self, *args) -> "GeomAbs_Shape" :
+    def IntervalContinuity(self):
         """
         :rtype: GeomAbs_Shape
 
         """
-        return _Bisector.Bisector_BisecCC_IntervalContinuity(self, *args)
+        return _Bisector.Bisector_BisecCC_IntervalContinuity(self)
 
-    def ValueAndDist(self, *args) -> "gp_Pnt2d" :
+    def ValueAndDist(self, *args):
         """
         * Returns the point of parameter U. Computes the distance between the current point and the two curves I separate. Computes the parameters on each curve corresponding of the projection of the current point.
 
@@ -1104,7 +1347,7 @@ class Bisector_BisecCC(Bisector_Curve):
         """
         return _Bisector.Bisector_BisecCC_ValueAndDist(self, *args)
 
-    def ValueByInt(self, *args) -> "gp_Pnt2d" :
+    def ValueByInt(self, *args):
         """
         * Returns the point of parameter U. Computes the distance between the current point and the two curves I separate. Computes the parameters on each curve corresponding of the projection of the current point.
 
@@ -1121,14 +1364,14 @@ class Bisector_BisecCC(Bisector_Curve):
         """
         return _Bisector.Bisector_BisecCC_ValueByInt(self, *args)
 
-    def IsEmpty(self, *args) -> "Standard_Boolean" :
+    def IsEmpty(self):
         """
         :rtype: bool
 
         """
-        return _Bisector.Bisector_BisecCC_IsEmpty(self, *args)
+        return _Bisector.Bisector_BisecCC_IsEmpty(self)
 
-    def LinkBisCurve(self, *args) -> "Standard_Real" :
+    def LinkBisCurve(self, *args):
         """
         * Returns the parameter on the curve1 of the projection of the point of parameter U on <self>.
 
@@ -1139,7 +1382,7 @@ class Bisector_BisecCC(Bisector_Curve):
         """
         return _Bisector.Bisector_BisecCC_LinkBisCurve(self, *args)
 
-    def LinkCurveBis(self, *args) -> "Standard_Real" :
+    def LinkCurveBis(self, *args):
         """
         * Returns the reciproque of LinkBisCurve.
 
@@ -1150,38 +1393,50 @@ class Bisector_BisecCC(Bisector_Curve):
         """
         return _Bisector.Bisector_BisecCC_LinkCurveBis(self, *args)
 
-    def Curve(self, *args) -> "Handle_Geom2d_Curve" :
+    def Curve(self, *args):
         """
         :param IndCurve:
-        :type IndCurve: int
+        :type IndCurve: Standard_Integer
         :rtype: Handle_Geom2d_Curve
 
         """
         return _Bisector.Bisector_BisecCC_Curve(self, *args)
 
-    def Polygon(self, *args) -> "Bisector_PolyBis const &" :
+    def Polygon(self):
         """
         :rtype: Bisector_PolyBis
 
         """
-        return _Bisector.Bisector_BisecCC_Polygon(self, *args)
+        return _Bisector.Bisector_BisecCC_Polygon(self)
 
-    def Dump(self, *args) -> "void" :
+    def Dump(self, Deep=0, Offset=0):
         """
         :param Deep: default value is 0
-        :type Deep: int
+        :type Deep: Standard_Integer
         :param Offset: default value is 0
-        :type Offset: int
+        :type Offset: Standard_Integer
+        :rtype: None
+
+        :param Deep: default value is 0
+        :type Deep: Standard_Integer
+        :param Offset: default value is 0
+        :type Offset: Standard_Integer
+        :rtype: None
+
+        :param Deep: default value is 0
+        :type Deep: Standard_Integer
+        :param Offset: default value is 0
+        :type Offset: Standard_Integer
         :rtype: None
 
         """
-        return _Bisector.Bisector_BisecCC_Dump(self, *args)
+        return _Bisector.Bisector_BisecCC_Dump(self, Deep, Offset)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Bisector_BisecCC self)"""
         return _Bisector.Bisector_BisecCC__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Bisector_BisecCC" :
+    def GetHandle(self):
         """GetHandle(Bisector_BisecCC self) -> Handle_Bisector_BisecCC"""
         return _Bisector.Bisector_BisecCC_GetHandle(self)
 
@@ -1230,7 +1485,7 @@ Handle_Bisector_BisecCC._kill_pointed = new_instancemethod(_Bisector.Handle_Bise
 Handle_Bisector_BisecCC_swigregister = _Bisector.Handle_Bisector_BisecCC_swigregister
 Handle_Bisector_BisecCC_swigregister(Handle_Bisector_BisecCC)
 
-def Handle_Bisector_BisecCC_DownCast(*args) -> "Handle_Bisector_BisecCC const" :
+def Handle_Bisector_BisecCC_DownCast(*args):
   return _Bisector.Handle_Bisector_BisecCC_DownCast(*args)
 Handle_Bisector_BisecCC_DownCast = _Bisector.Handle_Bisector_BisecCC_DownCast
 
@@ -1239,6 +1494,18 @@ class Bisector_BisecPC(Bisector_Curve):
     __repr__ = _swig_repr
     def __init__(self, *args): 
         """
+        :rtype: None
+
+        * Constructs the bisector between the point <P> and the curve <Cu>. <Side> = 1. if the bisector curve is on the Left of <Cu> else <Side> = -1. <DistMax> is used to trim the bisector.The distance between the points of the bisector and <Cu> is smaller than <DistMax>.
+
+        :param Cu:
+        :type Cu: Handle_Geom2d_Curve &
+        :param P:
+        :type P: gp_Pnt2d
+        :param Side:
+        :type Side: float
+        :param DistMax: default value is 500
+        :type DistMax: float
         :rtype: None
 
         * Constructs the bisector between the point <P> and the curve <Cu>. <Side> = 1. if the bisector curve is on the Left of <Cu> else <Side> = -1. <DistMax> is used to trim the bisector.The distance between the points of the bisector and <Cu> is smaller than <DistMax>.
@@ -1269,8 +1536,20 @@ class Bisector_BisecPC(Bisector_Curve):
 
         """
         _Bisector.Bisector_BisecPC_swiginit(self,_Bisector.new_Bisector_BisecPC(*args))
-    def Perform(self, *args) -> "void" :
+    def Perform(self, *args):
         """
+        * Construct the bisector between the point <P> and the curve <Cu>. <Side> = 1. if the bisector curve is on the Left of <Cu> else <Side> = -1. <DistMax> is used to trim the bisector.The distance between the points of the bisector and <Cu> is smaller than <DistMax>.
+
+        :param Cu:
+        :type Cu: Handle_Geom2d_Curve &
+        :param P:
+        :type P: gp_Pnt2d
+        :param Side:
+        :type Side: float
+        :param DistMax: default value is 500
+        :type DistMax: float
+        :rtype: None
+
         * Construct the bisector between the point <P> and the curve <Cu>. <Side> = 1. if the bisector curve is on the Left of <Cu> else <Side> = -1. <DistMax> is used to trim the bisector.The distance between the points of the bisector and <Cu> is smaller than <DistMax>.
 
         :param Cu:
@@ -1286,14 +1565,14 @@ class Bisector_BisecPC(Bisector_Curve):
         """
         return _Bisector.Bisector_BisecPC_Perform(self, *args)
 
-    def IntervalContinuity(self, *args) -> "GeomAbs_Shape" :
+    def IntervalContinuity(self):
         """
         :rtype: GeomAbs_Shape
 
         """
-        return _Bisector.Bisector_BisecPC_IntervalContinuity(self, *args)
+        return _Bisector.Bisector_BisecPC_IntervalContinuity(self)
 
-    def Distance(self, *args) -> "Standard_Real" :
+    def Distance(self, *args):
         """
         * Returns the distance between the point of parameter U on <self> and my point or my curve.
 
@@ -1304,18 +1583,30 @@ class Bisector_BisecPC(Bisector_Curve):
         """
         return _Bisector.Bisector_BisecPC_Distance(self, *args)
 
-    def Dump(self, *args) -> "void" :
+    def Dump(self, Deep=0, Offset=0):
         """
         :param Deep: default value is 0
-        :type Deep: int
+        :type Deep: Standard_Integer
         :param Offset: default value is 0
-        :type Offset: int
+        :type Offset: Standard_Integer
+        :rtype: None
+
+        :param Deep: default value is 0
+        :type Deep: Standard_Integer
+        :param Offset: default value is 0
+        :type Offset: Standard_Integer
+        :rtype: None
+
+        :param Deep: default value is 0
+        :type Deep: Standard_Integer
+        :param Offset: default value is 0
+        :type Offset: Standard_Integer
         :rtype: None
 
         """
-        return _Bisector.Bisector_BisecPC_Dump(self, *args)
+        return _Bisector.Bisector_BisecPC_Dump(self, Deep, Offset)
 
-    def LinkBisCurve(self, *args) -> "Standard_Real" :
+    def LinkBisCurve(self, *args):
         """
         * Returns the parameter on the curve1 of the projection of the point of parameter U on <self>.
 
@@ -1326,7 +1617,7 @@ class Bisector_BisecPC(Bisector_Curve):
         """
         return _Bisector.Bisector_BisecPC_LinkBisCurve(self, *args)
 
-    def LinkCurveBis(self, *args) -> "Standard_Real" :
+    def LinkCurveBis(self, *args):
         """
         * Returns the reciproque of LinkBisCurve.
 
@@ -1337,20 +1628,20 @@ class Bisector_BisecPC(Bisector_Curve):
         """
         return _Bisector.Bisector_BisecPC_LinkCurveBis(self, *args)
 
-    def IsEmpty(self, *args) -> "Standard_Boolean" :
+    def IsEmpty(self):
         """
         * Returns <True> if the bisector is empty.
 
         :rtype: bool
 
         """
-        return _Bisector.Bisector_BisecPC_IsEmpty(self, *args)
+        return _Bisector.Bisector_BisecPC_IsEmpty(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Bisector_BisecPC self)"""
         return _Bisector.Bisector_BisecPC__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Bisector_BisecPC" :
+    def GetHandle(self):
         """GetHandle(Bisector_BisecPC self) -> Handle_Bisector_BisecPC"""
         return _Bisector.Bisector_BisecPC_GetHandle(self)
 
@@ -1395,7 +1686,7 @@ Handle_Bisector_BisecPC._kill_pointed = new_instancemethod(_Bisector.Handle_Bise
 Handle_Bisector_BisecPC_swigregister = _Bisector.Handle_Bisector_BisecPC_swigregister
 Handle_Bisector_BisecPC_swigregister(Handle_Bisector_BisecPC)
 
-def Handle_Bisector_BisecPC_DownCast(*args) -> "Handle_Bisector_BisecPC const" :
+def Handle_Bisector_BisecPC_DownCast(*args):
   return _Bisector.Handle_Bisector_BisecPC_DownCast(*args)
 Handle_Bisector_BisecPC_DownCast = _Bisector.Handle_Bisector_BisecPC_DownCast
 

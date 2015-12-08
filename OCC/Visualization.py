@@ -96,8 +96,7 @@ Tesselator.VerticesList = new_instancemethod(_Visualization.Tesselator_VerticesL
 Tesselator.ObjGetTriangleCount = new_instancemethod(_Visualization.Tesselator_ObjGetTriangleCount,None,Tesselator)
 Tesselator.ObjGetVertexCount = new_instancemethod(_Visualization.Tesselator_ObjGetVertexCount,None,Tesselator)
 Tesselator.ObjGetNormalCount = new_instancemethod(_Visualization.Tesselator_ObjGetNormalCount,None,Tesselator)
-Tesselator.ExportShapeToX3DIndexedFaceSet = new_instancemethod(_Visualization.Tesselator_ExportShapeToX3DIndexedFaceSet,None,Tesselator)
-Tesselator.ExportShapeToThreejs = new_instancemethod(_Visualization.Tesselator_ExportShapeToThreejs,None,Tesselator)
+Tesselator.ExportShapeToJSON = new_instancemethod(_Visualization.Tesselator_ExportShapeToJSON,None,Tesselator)
 Tesselator.ExportShapeToX3D = new_instancemethod(_Visualization.Tesselator_ExportShapeToX3D,None,Tesselator)
 Tesselator.SetDeviation = new_instancemethod(_Visualization.Tesselator_SetDeviation,None,Tesselator)
 Tesselator_swigregister = _Visualization.Tesselator_swigregister
@@ -110,23 +109,23 @@ class Display3d(object):
         """__init__(Display3d self) -> Display3d"""
         _Visualization.Display3d_swiginit(self,_Visualization.new_Display3d())
     __swig_destroy__ = _Visualization.delete_Display3d
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """Init(Display3d self, long const handle)"""
         return _Visualization.Display3d_Init(self, *args)
 
-    def GetView(self) -> "Handle_V3d_View &" :
+    def GetView(self):
         """GetView(Display3d self) -> Handle_V3d_View &"""
         return _Visualization.Display3d_GetView(self)
 
-    def GetViewer(self) -> "Handle_V3d_Viewer &" :
+    def GetViewer(self):
         """GetViewer(Display3d self) -> Handle_V3d_Viewer &"""
         return _Visualization.Display3d_GetViewer(self)
 
-    def GetContext(self) -> "Handle_AIS_InteractiveContext" :
+    def GetContext(self):
         """GetContext(Display3d self) -> Handle_AIS_InteractiveContext"""
         return _Visualization.Display3d_GetContext(self)
 
-    def Test(self) -> "void" :
+    def Test(self):
         """Test(Display3d self)"""
         return _Visualization.Display3d_Test(self)
 

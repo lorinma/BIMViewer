@@ -114,15 +114,15 @@ import OCC.TopAbs
 class TopCnx_EdgeFaceTransition(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         * Creates an empty algorithm.
 
         :rtype: None
 
         """
-        _TopCnx.TopCnx_EdgeFaceTransition_swiginit(self,_TopCnx.new_TopCnx_EdgeFaceTransition(*args))
-    def Reset(self, *args) -> "void" :
+        _TopCnx.TopCnx_EdgeFaceTransition_swiginit(self,_TopCnx.new_TopCnx_EdgeFaceTransition())
+    def Reset(self, *args):
         """
         * Initialize the algorithm with the local description of the edge.
 
@@ -143,7 +143,7 @@ class TopCnx_EdgeFaceTransition(object):
         """
         return _TopCnx.TopCnx_EdgeFaceTransition_Reset(self, *args)
 
-    def AddInterference(self, *args) -> "void" :
+    def AddInterference(self, *args):
         """
         * Add a curve element to the boundary. Or is the orientation of the interference on the boundary curve. Tr is the transition of the interference. BTr is the boundary transition of the interference.
 
@@ -166,23 +166,23 @@ class TopCnx_EdgeFaceTransition(object):
         """
         return _TopCnx.TopCnx_EdgeFaceTransition_AddInterference(self, *args)
 
-    def Transition(self, *args) -> "TopAbs_Orientation" :
+    def Transition(self):
         """
         * Returns the current cumulated transition.
 
         :rtype: TopAbs_Orientation
 
         """
-        return _TopCnx.TopCnx_EdgeFaceTransition_Transition(self, *args)
+        return _TopCnx.TopCnx_EdgeFaceTransition_Transition(self)
 
-    def BoundaryTransition(self, *args) -> "TopAbs_Orientation" :
+    def BoundaryTransition(self):
         """
         * Returns the current cumulated BoundaryTransition.
 
         :rtype: TopAbs_Orientation
 
         """
-        return _TopCnx.TopCnx_EdgeFaceTransition_BoundaryTransition(self, *args)
+        return _TopCnx.TopCnx_EdgeFaceTransition_BoundaryTransition(self)
 
     def __del__(self):
     	try:

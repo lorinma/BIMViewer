@@ -128,9 +128,17 @@ class Hatch_Hatcher(object):
         :type Oriented: bool
         :rtype: None
 
+        * Returns a empty hatcher. <Tol> is the tolerance for intersections.
+
+        :param Tol:
+        :type Tol: float
+        :param Oriented: default value is Standard_True
+        :type Oriented: bool
+        :rtype: None
+
         """
         _Hatch.Hatch_Hatcher_swiginit(self,_Hatch.new_Hatch_Hatcher(*args))
-    def Tolerance(self, *args) -> "Standard_Real" :
+    def Tolerance(self, *args):
         """
         :param Tol:
         :type Tol: float
@@ -141,8 +149,16 @@ class Hatch_Hatcher(object):
         """
         return _Hatch.Hatch_Hatcher_Tolerance(self, *args)
 
-    def AddLine(self, *args) -> "void" :
+    def AddLine(self, *args):
         """
+        * Add a line <L> to be trimmed. <T> the type is only kept from information. It is not used in the computation.
+
+        :param L:
+        :type L: gp_Lin2d
+        :param T: default value is Hatch_ANYLINE
+        :type T: Hatch_LineForm
+        :rtype: None
+
         * Add a line <L> to be trimmed. <T> the type is only kept from information. It is not used in the computation.
 
         :param L:
@@ -162,7 +178,7 @@ class Hatch_Hatcher(object):
         """
         return _Hatch.Hatch_Hatcher_AddLine(self, *args)
 
-    def AddXLine(self, *args) -> "void" :
+    def AddXLine(self, *args):
         """
         * Add an infinite line parallel to the Y-axis at abciss <X>.
 
@@ -173,7 +189,7 @@ class Hatch_Hatcher(object):
         """
         return _Hatch.Hatch_Hatcher_AddXLine(self, *args)
 
-    def AddYLine(self, *args) -> "void" :
+    def AddYLine(self, *args):
         """
         * Add an infinite line parallel to the X-axis at ordinate <Y>.
 
@@ -184,14 +200,22 @@ class Hatch_Hatcher(object):
         """
         return _Hatch.Hatch_Hatcher_AddYLine(self, *args)
 
-    def Trim(self, *args) -> "void" :
+    def Trim(self, *args):
         """
         * Trims the lines at intersections with <L>.
 
         :param L:
         :type L: gp_Lin2d
         :param Index: default value is 0
-        :type Index: int
+        :type Index: Standard_Integer
+        :rtype: None
+
+        * Trims the lines at intersections with <L>.
+
+        :param L:
+        :type L: gp_Lin2d
+        :param Index: default value is 0
+        :type Index: Standard_Integer
         :rtype: None
 
         * Trims the lines at intersections with <L> in the parameter range <Start>, <End>
@@ -203,7 +227,19 @@ class Hatch_Hatcher(object):
         :param End:
         :type End: float
         :param Index: default value is 0
-        :type Index: int
+        :type Index: Standard_Integer
+        :rtype: None
+
+        * Trims the lines at intersections with <L> in the parameter range <Start>, <End>
+
+        :param L:
+        :type L: gp_Lin2d
+        :param Start:
+        :type Start: float
+        :param End:
+        :type End: float
+        :param Index: default value is 0
+        :type Index: Standard_Integer
         :rtype: None
 
         * Trims the line at intersection with the oriented segment P1,P2.
@@ -213,77 +249,87 @@ class Hatch_Hatcher(object):
         :param P2:
         :type P2: gp_Pnt2d
         :param Index: default value is 0
-        :type Index: int
+        :type Index: Standard_Integer
+        :rtype: None
+
+        * Trims the line at intersection with the oriented segment P1,P2.
+
+        :param P1:
+        :type P1: gp_Pnt2d
+        :param P2:
+        :type P2: gp_Pnt2d
+        :param Index: default value is 0
+        :type Index: Standard_Integer
         :rtype: None
 
         """
         return _Hatch.Hatch_Hatcher_Trim(self, *args)
 
-    def NbLines(self, *args) -> "Standard_Integer" :
+    def NbLines(self):
         """
         * Returns the number of lines.
 
         :rtype: int
 
         """
-        return _Hatch.Hatch_Hatcher_NbLines(self, *args)
+        return _Hatch.Hatch_Hatcher_NbLines(self)
 
-    def Line(self, *args) -> "gp_Lin2d const" :
+    def Line(self, *args):
         """
         * Returns the line of index <I>.
 
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :rtype: gp_Lin2d
 
         """
         return _Hatch.Hatch_Hatcher_Line(self, *args)
 
-    def LineForm(self, *args) -> "Hatch_LineForm" :
+    def LineForm(self, *args):
         """
         * Returns the type of the line of index <I>.
 
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :rtype: Hatch_LineForm
 
         """
         return _Hatch.Hatch_Hatcher_LineForm(self, *args)
 
-    def IsXLine(self, *args) -> "Standard_Boolean" :
+    def IsXLine(self, *args):
         """
         * Returns True if the line of index <I> has a constant X value.
 
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :rtype: bool
 
         """
         return _Hatch.Hatch_Hatcher_IsXLine(self, *args)
 
-    def IsYLine(self, *args) -> "Standard_Boolean" :
+    def IsYLine(self, *args):
         """
         * Returns True if the line of index <I> has a constant Y value.
 
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :rtype: bool
 
         """
         return _Hatch.Hatch_Hatcher_IsYLine(self, *args)
 
-    def Coordinate(self, *args) -> "Standard_Real" :
+    def Coordinate(self, *args):
         """
         * Returns the X or Y coordinate of the line of index <I> if it is a X or a Y line.
 
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :rtype: float
 
         """
         return _Hatch.Hatch_Hatcher_Coordinate(self, *args)
 
-    def NbIntervals(self, *args) -> "Standard_Integer" :
+    def NbIntervals(self, *args):
         """
         * Returns the total number of intervals on all the lines.
 
@@ -292,35 +338,35 @@ class Hatch_Hatcher(object):
         * Returns the number of intervals on line of index <I>.
 
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :rtype: int
 
         """
         return _Hatch.Hatch_Hatcher_NbIntervals(self, *args)
 
-    def Start(self, *args) -> "Standard_Real" :
+    def Start(self, *args):
         """
         * Returns the first parameter of interval <J> on line <I>.
 
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :param J:
-        :type J: int
+        :type J: Standard_Integer
         :rtype: float
 
         """
         return _Hatch.Hatch_Hatcher_Start(self, *args)
 
-    def StartIndex(self, *args) -> "void" :
+    def StartIndex(self, *args):
         """
         * Returns the first Index and Par2 of interval <J> on line <I>.
 
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :param J:
-        :type J: int
+        :type J: Standard_Integer
         :param Index:
-        :type Index: int &
+        :type Index: Standard_Integer &
         :param Par2:
         :type Par2: float &
         :rtype: None
@@ -328,29 +374,29 @@ class Hatch_Hatcher(object):
         """
         return _Hatch.Hatch_Hatcher_StartIndex(self, *args)
 
-    def End(self, *args) -> "Standard_Real" :
+    def End(self, *args):
         """
         * Returns the last parameter of interval <J> on line <I>.
 
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :param J:
-        :type J: int
+        :type J: Standard_Integer
         :rtype: float
 
         """
         return _Hatch.Hatch_Hatcher_End(self, *args)
 
-    def EndIndex(self, *args) -> "void" :
+    def EndIndex(self, *args):
         """
         * Returns the last Index and Par2 of interval <J> on line <I>.
 
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :param J:
-        :type J: int
+        :type J: Standard_Integer
         :param Index:
-        :type Index: int &
+        :type Index: Standard_Integer &
         :param Par2:
         :type Par2: float &
         :rtype: None
@@ -401,7 +447,7 @@ class Hatch_Line(object):
 
         """
         _Hatch.Hatch_Line_swiginit(self,_Hatch.new_Hatch_Line(*args))
-    def AddIntersection(self, *args) -> "void" :
+    def AddIntersection(self, *args):
         """
         * Insert a new intersection in the sorted list.
 
@@ -410,7 +456,7 @@ class Hatch_Line(object):
         :param Start:
         :type Start: bool
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Par2:
         :type Par2: float
         :param theToler:
@@ -445,7 +491,27 @@ class Hatch_Parameter(object):
         :param Start:
         :type Start: bool
         :param Index: default value is 0
-        :type Index: int
+        :type Index: Standard_Integer
+        :param Par2: default value is 0
+        :type Par2: float
+        :rtype: None
+
+        :param Par1:
+        :type Par1: float
+        :param Start:
+        :type Start: bool
+        :param Index: default value is 0
+        :type Index: Standard_Integer
+        :param Par2: default value is 0
+        :type Par2: float
+        :rtype: None
+
+        :param Par1:
+        :type Par1: float
+        :param Start:
+        :type Start: bool
+        :param Index: default value is 0
+        :type Index: Standard_Integer
         :param Par2: default value is 0
         :type Par2: float
         :rtype: None
@@ -479,18 +545,18 @@ class Hatch_SequenceNodeOfSequenceOfLine(OCC.TCollection.TCollection_SeqNode):
 
         """
         _Hatch.Hatch_SequenceNodeOfSequenceOfLine_swiginit(self,_Hatch.new_Hatch_SequenceNodeOfSequenceOfLine(*args))
-    def Value(self, *args) -> "Hatch_Line &" :
+    def Value(self):
         """
         :rtype: Hatch_Line
 
         """
-        return _Hatch.Hatch_SequenceNodeOfSequenceOfLine_Value(self, *args)
+        return _Hatch.Hatch_SequenceNodeOfSequenceOfLine_Value(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Hatch_SequenceNodeOfSequenceOfLine self)"""
         return _Hatch.Hatch_SequenceNodeOfSequenceOfLine__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Hatch_SequenceNodeOfSequenceOfLine" :
+    def GetHandle(self):
         """GetHandle(Hatch_SequenceNodeOfSequenceOfLine self) -> Handle_Hatch_SequenceNodeOfSequenceOfLine"""
         return _Hatch.Hatch_SequenceNodeOfSequenceOfLine_GetHandle(self)
 
@@ -529,7 +595,7 @@ Handle_Hatch_SequenceNodeOfSequenceOfLine._kill_pointed = new_instancemethod(_Ha
 Handle_Hatch_SequenceNodeOfSequenceOfLine_swigregister = _Hatch.Handle_Hatch_SequenceNodeOfSequenceOfLine_swigregister
 Handle_Hatch_SequenceNodeOfSequenceOfLine_swigregister(Handle_Hatch_SequenceNodeOfSequenceOfLine)
 
-def Handle_Hatch_SequenceNodeOfSequenceOfLine_DownCast(*args) -> "Handle_Hatch_SequenceNodeOfSequenceOfLine const" :
+def Handle_Hatch_SequenceNodeOfSequenceOfLine_DownCast(*args):
   return _Hatch.Handle_Hatch_SequenceNodeOfSequenceOfLine_DownCast(*args)
 Handle_Hatch_SequenceNodeOfSequenceOfLine_DownCast = _Hatch.Handle_Hatch_SequenceNodeOfSequenceOfLine_DownCast
 
@@ -548,18 +614,18 @@ class Hatch_SequenceNodeOfSequenceOfParameter(OCC.TCollection.TCollection_SeqNod
 
         """
         _Hatch.Hatch_SequenceNodeOfSequenceOfParameter_swiginit(self,_Hatch.new_Hatch_SequenceNodeOfSequenceOfParameter(*args))
-    def Value(self, *args) -> "Hatch_Parameter &" :
+    def Value(self):
         """
         :rtype: Hatch_Parameter
 
         """
-        return _Hatch.Hatch_SequenceNodeOfSequenceOfParameter_Value(self, *args)
+        return _Hatch.Hatch_SequenceNodeOfSequenceOfParameter_Value(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Hatch_SequenceNodeOfSequenceOfParameter self)"""
         return _Hatch.Hatch_SequenceNodeOfSequenceOfParameter__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Hatch_SequenceNodeOfSequenceOfParameter" :
+    def GetHandle(self):
         """GetHandle(Hatch_SequenceNodeOfSequenceOfParameter self) -> Handle_Hatch_SequenceNodeOfSequenceOfParameter"""
         return _Hatch.Hatch_SequenceNodeOfSequenceOfParameter_GetHandle(self)
 
@@ -598,27 +664,27 @@ Handle_Hatch_SequenceNodeOfSequenceOfParameter._kill_pointed = new_instancemetho
 Handle_Hatch_SequenceNodeOfSequenceOfParameter_swigregister = _Hatch.Handle_Hatch_SequenceNodeOfSequenceOfParameter_swigregister
 Handle_Hatch_SequenceNodeOfSequenceOfParameter_swigregister(Handle_Hatch_SequenceNodeOfSequenceOfParameter)
 
-def Handle_Hatch_SequenceNodeOfSequenceOfParameter_DownCast(*args) -> "Handle_Hatch_SequenceNodeOfSequenceOfParameter const" :
+def Handle_Hatch_SequenceNodeOfSequenceOfParameter_DownCast(*args):
   return _Hatch.Handle_Hatch_SequenceNodeOfSequenceOfParameter_DownCast(*args)
 Handle_Hatch_SequenceNodeOfSequenceOfParameter_DownCast = _Hatch.Handle_Hatch_SequenceNodeOfSequenceOfParameter_DownCast
 
 class Hatch_SequenceOfLine(OCC.TCollection.TCollection_BaseSequence):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _Hatch.Hatch_SequenceOfLine_swiginit(self,_Hatch.new_Hatch_SequenceOfLine(*args))
-    def Clear(self, *args) -> "void" :
+        _Hatch.Hatch_SequenceOfLine_swiginit(self,_Hatch.new_Hatch_SequenceOfLine())
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _Hatch.Hatch_SequenceOfLine_Clear(self, *args)
+        return _Hatch.Hatch_SequenceOfLine_Clear(self)
 
-    def Assign(self, *args) -> "Hatch_SequenceOfLine const &" :
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: Hatch_SequenceOfLine &
@@ -627,7 +693,7 @@ class Hatch_SequenceOfLine(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Hatch.Hatch_SequenceOfLine_Assign(self, *args)
 
-    def Set(self, *args) -> "Hatch_SequenceOfLine const &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: Hatch_SequenceOfLine &
@@ -636,7 +702,7 @@ class Hatch_SequenceOfLine(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Hatch.Hatch_SequenceOfLine_Set(self, *args)
 
-    def Append(self, *args) -> "void" :
+    def Append(self, *args):
         """
         :param T:
         :type T: Hatch_Line &
@@ -649,7 +715,7 @@ class Hatch_SequenceOfLine(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Hatch.Hatch_SequenceOfLine_Append(self, *args)
 
-    def Prepend(self, *args) -> "void" :
+    def Prepend(self, *args):
         """
         :param T:
         :type T: Hatch_Line &
@@ -662,16 +728,16 @@ class Hatch_SequenceOfLine(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Hatch.Hatch_SequenceOfLine_Prepend(self, *args)
 
-    def InsertBefore(self, *args) -> "void" :
+    def InsertBefore(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param T:
         :type T: Hatch_Line &
         :rtype: None
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param S:
         :type S: Hatch_SequenceOfLine &
         :rtype: None
@@ -679,16 +745,16 @@ class Hatch_SequenceOfLine(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Hatch.Hatch_SequenceOfLine_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args) -> "void" :
+    def InsertAfter(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param T:
         :type T: Hatch_Line &
         :rtype: None
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param S:
         :type S: Hatch_SequenceOfLine &
         :rtype: None
@@ -696,24 +762,24 @@ class Hatch_SequenceOfLine(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Hatch.Hatch_SequenceOfLine_InsertAfter(self, *args)
 
-    def First(self, *args) -> "Hatch_Line const &" :
+    def First(self):
         """
         :rtype: Hatch_Line
 
         """
-        return _Hatch.Hatch_SequenceOfLine_First(self, *args)
+        return _Hatch.Hatch_SequenceOfLine_First(self)
 
-    def Last(self, *args) -> "Hatch_Line const &" :
+    def Last(self):
         """
         :rtype: Hatch_Line
 
         """
-        return _Hatch.Hatch_SequenceOfLine_Last(self, *args)
+        return _Hatch.Hatch_SequenceOfLine_Last(self)
 
-    def Split(self, *args) -> "void" :
+    def Split(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Sub:
         :type Sub: Hatch_SequenceOfLine &
         :rtype: None
@@ -721,19 +787,19 @@ class Hatch_SequenceOfLine(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Hatch.Hatch_SequenceOfLine_Split(self, *args)
 
-    def Value(self, *args) -> "Hatch_Line const &" :
+    def Value(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Hatch_Line
 
         """
         return _Hatch.Hatch_SequenceOfLine_Value(self, *args)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param I:
         :type I: Hatch_Line &
         :rtype: None
@@ -741,25 +807,25 @@ class Hatch_SequenceOfLine(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Hatch.Hatch_SequenceOfLine_SetValue(self, *args)
 
-    def ChangeValue(self, *args) -> "Hatch_Line &" :
+    def ChangeValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Hatch_Line
 
         """
         return _Hatch.Hatch_SequenceOfLine_ChangeValue(self, *args)
 
-    def Remove(self, *args) -> "void" :
+    def Remove(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: None
 
         :param FromIndex:
-        :type FromIndex: int
+        :type FromIndex: Standard_Integer
         :param ToIndex:
-        :type ToIndex: int
+        :type ToIndex: Standard_Integer
         :rtype: None
 
         """
@@ -794,20 +860,20 @@ Hatch_SequenceOfLine_swigregister(Hatch_SequenceOfLine)
 class Hatch_SequenceOfParameter(OCC.TCollection.TCollection_BaseSequence):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _Hatch.Hatch_SequenceOfParameter_swiginit(self,_Hatch.new_Hatch_SequenceOfParameter(*args))
-    def Clear(self, *args) -> "void" :
+        _Hatch.Hatch_SequenceOfParameter_swiginit(self,_Hatch.new_Hatch_SequenceOfParameter())
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _Hatch.Hatch_SequenceOfParameter_Clear(self, *args)
+        return _Hatch.Hatch_SequenceOfParameter_Clear(self)
 
-    def Assign(self, *args) -> "Hatch_SequenceOfParameter const &" :
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: Hatch_SequenceOfParameter &
@@ -816,7 +882,7 @@ class Hatch_SequenceOfParameter(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Hatch.Hatch_SequenceOfParameter_Assign(self, *args)
 
-    def Set(self, *args) -> "Hatch_SequenceOfParameter const &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: Hatch_SequenceOfParameter &
@@ -825,7 +891,7 @@ class Hatch_SequenceOfParameter(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Hatch.Hatch_SequenceOfParameter_Set(self, *args)
 
-    def Append(self, *args) -> "void" :
+    def Append(self, *args):
         """
         :param T:
         :type T: Hatch_Parameter &
@@ -838,7 +904,7 @@ class Hatch_SequenceOfParameter(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Hatch.Hatch_SequenceOfParameter_Append(self, *args)
 
-    def Prepend(self, *args) -> "void" :
+    def Prepend(self, *args):
         """
         :param T:
         :type T: Hatch_Parameter &
@@ -851,16 +917,16 @@ class Hatch_SequenceOfParameter(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Hatch.Hatch_SequenceOfParameter_Prepend(self, *args)
 
-    def InsertBefore(self, *args) -> "void" :
+    def InsertBefore(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param T:
         :type T: Hatch_Parameter &
         :rtype: None
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param S:
         :type S: Hatch_SequenceOfParameter &
         :rtype: None
@@ -868,16 +934,16 @@ class Hatch_SequenceOfParameter(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Hatch.Hatch_SequenceOfParameter_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args) -> "void" :
+    def InsertAfter(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param T:
         :type T: Hatch_Parameter &
         :rtype: None
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param S:
         :type S: Hatch_SequenceOfParameter &
         :rtype: None
@@ -885,24 +951,24 @@ class Hatch_SequenceOfParameter(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Hatch.Hatch_SequenceOfParameter_InsertAfter(self, *args)
 
-    def First(self, *args) -> "Hatch_Parameter const &" :
+    def First(self):
         """
         :rtype: Hatch_Parameter
 
         """
-        return _Hatch.Hatch_SequenceOfParameter_First(self, *args)
+        return _Hatch.Hatch_SequenceOfParameter_First(self)
 
-    def Last(self, *args) -> "Hatch_Parameter const &" :
+    def Last(self):
         """
         :rtype: Hatch_Parameter
 
         """
-        return _Hatch.Hatch_SequenceOfParameter_Last(self, *args)
+        return _Hatch.Hatch_SequenceOfParameter_Last(self)
 
-    def Split(self, *args) -> "void" :
+    def Split(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Sub:
         :type Sub: Hatch_SequenceOfParameter &
         :rtype: None
@@ -910,19 +976,19 @@ class Hatch_SequenceOfParameter(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Hatch.Hatch_SequenceOfParameter_Split(self, *args)
 
-    def Value(self, *args) -> "Hatch_Parameter const &" :
+    def Value(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Hatch_Parameter
 
         """
         return _Hatch.Hatch_SequenceOfParameter_Value(self, *args)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param I:
         :type I: Hatch_Parameter &
         :rtype: None
@@ -930,25 +996,25 @@ class Hatch_SequenceOfParameter(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Hatch.Hatch_SequenceOfParameter_SetValue(self, *args)
 
-    def ChangeValue(self, *args) -> "Hatch_Parameter &" :
+    def ChangeValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Hatch_Parameter
 
         """
         return _Hatch.Hatch_SequenceOfParameter_ChangeValue(self, *args)
 
-    def Remove(self, *args) -> "void" :
+    def Remove(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: None
 
         :param FromIndex:
-        :type FromIndex: int
+        :type FromIndex: Standard_Integer
         :param ToIndex:
-        :type ToIndex: int
+        :type ToIndex: Standard_Integer
         :rtype: None
 
         """

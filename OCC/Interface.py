@@ -143,22 +143,22 @@ class Interface_Array1OfFileParameter(object):
     def __init__(self, *args): 
         """
         :param Low:
-        :type Low: int
+        :type Low: Standard_Integer
         :param Up:
-        :type Up: int
+        :type Up: Standard_Integer
         :rtype: None
 
         :param Item:
         :type Item: Interface_FileParameter &
         :param Low:
-        :type Low: int
+        :type Low: Standard_Integer
         :param Up:
-        :type Up: int
+        :type Up: Standard_Integer
         :rtype: None
 
         """
         _Interface.Interface_Array1OfFileParameter_swiginit(self,_Interface.new_Interface_Array1OfFileParameter(*args))
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
         :param V:
         :type V: Interface_FileParameter &
@@ -167,21 +167,21 @@ class Interface_Array1OfFileParameter(object):
         """
         return _Interface.Interface_Array1OfFileParameter_Init(self, *args)
 
-    def Destroy(self, *args) -> "void" :
+    def Destroy(self):
         """
         :rtype: None
 
         """
-        return _Interface.Interface_Array1OfFileParameter_Destroy(self, *args)
+        return _Interface.Interface_Array1OfFileParameter_Destroy(self)
 
-    def IsAllocated(self, *args) -> "Standard_Boolean" :
+    def IsAllocated(self):
         """
         :rtype: bool
 
         """
-        return _Interface.Interface_Array1OfFileParameter_IsAllocated(self, *args)
+        return _Interface.Interface_Array1OfFileParameter_IsAllocated(self)
 
-    def Assign(self, *args) -> "Interface_Array1OfFileParameter const &" :
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: Interface_Array1OfFileParameter &
@@ -190,7 +190,7 @@ class Interface_Array1OfFileParameter(object):
         """
         return _Interface.Interface_Array1OfFileParameter_Assign(self, *args)
 
-    def Set(self, *args) -> "Interface_Array1OfFileParameter const &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: Interface_Array1OfFileParameter &
@@ -199,31 +199,31 @@ class Interface_Array1OfFileParameter(object):
         """
         return _Interface.Interface_Array1OfFileParameter_Set(self, *args)
 
-    def Length(self, *args) -> "Standard_Integer" :
+    def Length(self):
         """
         :rtype: int
 
         """
-        return _Interface.Interface_Array1OfFileParameter_Length(self, *args)
+        return _Interface.Interface_Array1OfFileParameter_Length(self)
 
-    def Lower(self, *args) -> "Standard_Integer" :
+    def Lower(self):
         """
         :rtype: int
 
         """
-        return _Interface.Interface_Array1OfFileParameter_Lower(self, *args)
+        return _Interface.Interface_Array1OfFileParameter_Lower(self)
 
-    def Upper(self, *args) -> "Standard_Integer" :
+    def Upper(self):
         """
         :rtype: int
 
         """
-        return _Interface.Interface_Array1OfFileParameter_Upper(self, *args)
+        return _Interface.Interface_Array1OfFileParameter_Upper(self)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Value:
         :type Value: Interface_FileParameter &
         :rtype: None
@@ -231,19 +231,19 @@ class Interface_Array1OfFileParameter(object):
         """
         return _Interface.Interface_Array1OfFileParameter_SetValue(self, *args)
 
-    def Value(self, *args) -> "Interface_FileParameter const &" :
+    def Value(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Interface_FileParameter
 
         """
         return _Interface.Interface_Array1OfFileParameter_Value(self, *args)
 
-    def ChangeValue(self, *args) -> "Interface_FileParameter &" :
+    def ChangeValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Interface_FileParameter
 
         """
@@ -278,22 +278,22 @@ class Interface_Array1OfHAsciiString(object):
     def __init__(self, *args): 
         """
         :param Low:
-        :type Low: int
+        :type Low: Standard_Integer
         :param Up:
-        :type Up: int
+        :type Up: Standard_Integer
         :rtype: None
 
         :param Item:
         :type Item: Handle_TCollection_HAsciiString &
         :param Low:
-        :type Low: int
+        :type Low: Standard_Integer
         :param Up:
-        :type Up: int
+        :type Up: Standard_Integer
         :rtype: None
 
         """
         _Interface.Interface_Array1OfHAsciiString_swiginit(self,_Interface.new_Interface_Array1OfHAsciiString(*args))
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
         :param V:
         :type V: Handle_TCollection_HAsciiString &
@@ -302,21 +302,21 @@ class Interface_Array1OfHAsciiString(object):
         """
         return _Interface.Interface_Array1OfHAsciiString_Init(self, *args)
 
-    def Destroy(self, *args) -> "void" :
+    def Destroy(self):
         """
         :rtype: None
 
         """
-        return _Interface.Interface_Array1OfHAsciiString_Destroy(self, *args)
+        return _Interface.Interface_Array1OfHAsciiString_Destroy(self)
 
-    def IsAllocated(self, *args) -> "Standard_Boolean" :
+    def IsAllocated(self):
         """
         :rtype: bool
 
         """
-        return _Interface.Interface_Array1OfHAsciiString_IsAllocated(self, *args)
+        return _Interface.Interface_Array1OfHAsciiString_IsAllocated(self)
 
-    def Assign(self, *args) -> "Interface_Array1OfHAsciiString const &" :
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: Interface_Array1OfHAsciiString &
@@ -325,7 +325,7 @@ class Interface_Array1OfHAsciiString(object):
         """
         return _Interface.Interface_Array1OfHAsciiString_Assign(self, *args)
 
-    def Set(self, *args) -> "Interface_Array1OfHAsciiString const &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: Interface_Array1OfHAsciiString &
@@ -334,31 +334,31 @@ class Interface_Array1OfHAsciiString(object):
         """
         return _Interface.Interface_Array1OfHAsciiString_Set(self, *args)
 
-    def Length(self, *args) -> "Standard_Integer" :
+    def Length(self):
         """
         :rtype: int
 
         """
-        return _Interface.Interface_Array1OfHAsciiString_Length(self, *args)
+        return _Interface.Interface_Array1OfHAsciiString_Length(self)
 
-    def Lower(self, *args) -> "Standard_Integer" :
+    def Lower(self):
         """
         :rtype: int
 
         """
-        return _Interface.Interface_Array1OfHAsciiString_Lower(self, *args)
+        return _Interface.Interface_Array1OfHAsciiString_Lower(self)
 
-    def Upper(self, *args) -> "Standard_Integer" :
+    def Upper(self):
         """
         :rtype: int
 
         """
-        return _Interface.Interface_Array1OfHAsciiString_Upper(self, *args)
+        return _Interface.Interface_Array1OfHAsciiString_Upper(self)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Value:
         :type Value: Handle_TCollection_HAsciiString &
         :rtype: None
@@ -366,19 +366,19 @@ class Interface_Array1OfHAsciiString(object):
         """
         return _Interface.Interface_Array1OfHAsciiString_SetValue(self, *args)
 
-    def Value(self, *args) -> "Handle_TCollection_HAsciiString const &" :
+    def Value(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Handle_TCollection_HAsciiString
 
         """
         return _Interface.Interface_Array1OfHAsciiString_Value(self, *args)
 
-    def ChangeValue(self, *args) -> "Handle_TCollection_HAsciiString &" :
+    def ChangeValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Handle_TCollection_HAsciiString
 
         """
@@ -419,9 +419,25 @@ class Interface_BitMap(object):
         * Creates a BitMap for <nbitems> items One flag is defined, n0 0 <resflags> prepares allocation for <resflags> more flags Flags values start at false
 
         :param nbitems:
-        :type nbitems: int
+        :type nbitems: Standard_Integer
         :param resflags: default value is 0
-        :type resflags: int
+        :type resflags: Standard_Integer
+        :rtype: None
+
+        * Creates a BitMap for <nbitems> items One flag is defined, n0 0 <resflags> prepares allocation for <resflags> more flags Flags values start at false
+
+        :param nbitems:
+        :type nbitems: Standard_Integer
+        :param resflags: default value is 0
+        :type resflags: Standard_Integer
+        :rtype: None
+
+        * Creates a BitMap from another one if <copied> is True, copies data else, data are not copied, only the header object is
+
+        :param other:
+        :type other: Interface_BitMap &
+        :param copied: default value is Standard_False
+        :type copied: bool
         :rtype: None
 
         * Creates a BitMap from another one if <copied> is True, copies data else, data are not copied, only the header object is
@@ -434,14 +450,30 @@ class Interface_BitMap(object):
 
         """
         _Interface.Interface_BitMap_swiginit(self,_Interface.new_Interface_BitMap(*args))
-    def Initialize(self, *args) -> "void" :
+    def Initialize(self, *args):
         """
         * Initialize empty bit by <nbitems> items One flag is defined, n0 0 <resflags> prepares allocation for <resflags> more flags Flags values start at false
 
         :param nbitems:
-        :type nbitems: int
+        :type nbitems: Standard_Integer
         :param resflags: default value is 0
-        :type resflags: int
+        :type resflags: Standard_Integer
+        :rtype: None
+
+        * Initialize empty bit by <nbitems> items One flag is defined, n0 0 <resflags> prepares allocation for <resflags> more flags Flags values start at false
+
+        :param nbitems:
+        :type nbitems: Standard_Integer
+        :param resflags: default value is 0
+        :type resflags: Standard_Integer
+        :rtype: None
+
+        * Initialize a BitMap from another one
+
+        :param other:
+        :type other: Interface_BitMap &
+        :param copied: default value is Standard_False
+        :type copied: bool
         :rtype: None
 
         * Initialize a BitMap from another one
@@ -455,16 +487,16 @@ class Interface_BitMap(object):
         """
         return _Interface.Interface_BitMap_Initialize(self, *args)
 
-    def Internals(self, *args) -> "void" :
+    def Internals(self, *args):
         """
         * Returns internal values, used for copying Flags values start at false
 
         :param nbitems:
-        :type nbitems: int &
+        :type nbitems: Standard_Integer &
         :param nbwords:
-        :type nbwords: int &
+        :type nbwords: Standard_Integer &
         :param nbflags:
-        :type nbflags: int &
+        :type nbflags: Standard_Integer &
         :param flags:
         :type flags: Handle_TColStd_HArray1OfInteger &
         :param names:
@@ -474,29 +506,29 @@ class Interface_BitMap(object):
         """
         return _Interface.Interface_BitMap_Internals(self, *args)
 
-    def Reservate(self, *args) -> "void" :
+    def Reservate(self, *args):
         """
         * Reservates for a count of more flags
 
         :param moreflags:
-        :type moreflags: int
+        :type moreflags: Standard_Integer
         :rtype: None
 
         """
         return _Interface.Interface_BitMap_Reservate(self, *args)
 
-    def SetLength(self, *args) -> "void" :
+    def SetLength(self, *args):
         """
         * Sets for a new count of items, which can be either less or greater than the former one For new items, their flags start at false
 
         :param nbitems:
-        :type nbitems: int
+        :type nbitems: Standard_Integer
         :rtype: None
 
         """
         return _Interface.Interface_BitMap_SetLength(self, *args)
 
-    def AddFlag(self, *args) -> "Standard_Integer" :
+    def AddFlag(self, name=""):
         """
         * Adds a flag, a name can be attached to it Returns its flag number Makes required reservation
 
@@ -504,37 +536,43 @@ class Interface_BitMap(object):
         :type name: char *
         :rtype: int
 
-        """
-        return _Interface.Interface_BitMap_AddFlag(self, *args)
+        * Adds a flag, a name can be attached to it Returns its flag number Makes required reservation
 
-    def AddSomeFlags(self, *args) -> "Standard_Integer" :
+        :param name: default value is 
+        :type name: char *
+        :rtype: int
+
+        """
+        return _Interface.Interface_BitMap_AddFlag(self, name)
+
+    def AddSomeFlags(self, *args):
         """
         * Adds several flags (<more>) with no name Returns the number of last added flag
 
         :param more:
-        :type more: int
+        :type more: Standard_Integer
         :rtype: int
 
         """
         return _Interface.Interface_BitMap_AddSomeFlags(self, *args)
 
-    def RemoveFlag(self, *args) -> "Standard_Boolean" :
+    def RemoveFlag(self, *args):
         """
         * Removes a flag given its number. Returns True if done, false if num is out of range
 
         :param num:
-        :type num: int
+        :type num: Standard_Integer
         :rtype: bool
 
         """
         return _Interface.Interface_BitMap_RemoveFlag(self, *args)
 
-    def SetFlagName(self, *args) -> "Standard_Boolean" :
+    def SetFlagName(self, *args):
         """
         * Sets a name for a flag, given its number name can be empty (to erase the name of a flag) Returns True if done, false if : num is out of range, or name non-empty already set to another flag
 
         :param num:
-        :type num: int
+        :type num: Standard_Integer
         :param name:
         :type name: char *
         :rtype: bool
@@ -542,36 +580,36 @@ class Interface_BitMap(object):
         """
         return _Interface.Interface_BitMap_SetFlagName(self, *args)
 
-    def NbFlags(self, *args) -> "Standard_Integer" :
+    def NbFlags(self):
         """
         * Returns the count of flags (flag 0 not included)
 
         :rtype: int
 
         """
-        return _Interface.Interface_BitMap_NbFlags(self, *args)
+        return _Interface.Interface_BitMap_NbFlags(self)
 
-    def Length(self, *args) -> "Standard_Integer" :
+    def Length(self):
         """
         * Returns the count of items (i.e. the length of the bitmap)
 
         :rtype: int
 
         """
-        return _Interface.Interface_BitMap_Length(self, *args)
+        return _Interface.Interface_BitMap_Length(self)
 
-    def FlagName(self, *args) -> "char *" :
+    def FlagName(self, *args):
         """
         * Returns the name recorded for a flag, or an empty string
 
         :param num:
-        :type num: int
+        :type num: Standard_Integer
         :rtype: char *
 
         """
         return _Interface.Interface_BitMap_FlagName(self, *args)
 
-    def FlagNumber(self, *args) -> "Standard_Integer" :
+    def FlagNumber(self, *args):
         """
         * Returns the number or a flag given its name, or zero
 
@@ -582,107 +620,165 @@ class Interface_BitMap(object):
         """
         return _Interface.Interface_BitMap_FlagNumber(self, *args)
 
-    def Value(self, *args) -> "Standard_Boolean" :
+    def Value(self, *args):
         """
         * Returns the value (true/false) of a flag, from : - the number of the item - the flag number, by default 0
 
         :param item:
-        :type item: int
+        :type item: Standard_Integer
         :param flag: default value is 0
-        :type flag: int
+        :type flag: Standard_Integer
+        :rtype: bool
+
+        * Returns the value (true/false) of a flag, from : - the number of the item - the flag number, by default 0
+
+        :param item:
+        :type item: Standard_Integer
+        :param flag: default value is 0
+        :type flag: Standard_Integer
         :rtype: bool
 
         """
         return _Interface.Interface_BitMap_Value(self, *args)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         * Sets a new value for a flag
 
         :param item:
-        :type item: int
+        :type item: Standard_Integer
         :param val:
         :type val: bool
         :param flag: default value is 0
-        :type flag: int
+        :type flag: Standard_Integer
+        :rtype: None
+
+        * Sets a new value for a flag
+
+        :param item:
+        :type item: Standard_Integer
+        :param val:
+        :type val: bool
+        :param flag: default value is 0
+        :type flag: Standard_Integer
         :rtype: None
 
         """
         return _Interface.Interface_BitMap_SetValue(self, *args)
 
-    def SetTrue(self, *args) -> "void" :
+    def SetTrue(self, *args):
         """
         * Sets a flag to True
 
         :param item:
-        :type item: int
+        :type item: Standard_Integer
         :param flag: default value is 0
-        :type flag: int
+        :type flag: Standard_Integer
+        :rtype: None
+
+        * Sets a flag to True
+
+        :param item:
+        :type item: Standard_Integer
+        :param flag: default value is 0
+        :type flag: Standard_Integer
         :rtype: None
 
         """
         return _Interface.Interface_BitMap_SetTrue(self, *args)
 
-    def SetFalse(self, *args) -> "void" :
+    def SetFalse(self, *args):
         """
         * Sets a flag to False
 
         :param item:
-        :type item: int
+        :type item: Standard_Integer
         :param flag: default value is 0
-        :type flag: int
+        :type flag: Standard_Integer
+        :rtype: None
+
+        * Sets a flag to False
+
+        :param item:
+        :type item: Standard_Integer
+        :param flag: default value is 0
+        :type flag: Standard_Integer
         :rtype: None
 
         """
         return _Interface.Interface_BitMap_SetFalse(self, *args)
 
-    def CTrue(self, *args) -> "Standard_Boolean" :
+    def CTrue(self, *args):
         """
         * Returns the former value for a flag and sets it to True (before : value returned; after : True)
 
         :param item:
-        :type item: int
+        :type item: Standard_Integer
         :param flag: default value is 0
-        :type flag: int
+        :type flag: Standard_Integer
+        :rtype: bool
+
+        * Returns the former value for a flag and sets it to True (before : value returned; after : True)
+
+        :param item:
+        :type item: Standard_Integer
+        :param flag: default value is 0
+        :type flag: Standard_Integer
         :rtype: bool
 
         """
         return _Interface.Interface_BitMap_CTrue(self, *args)
 
-    def CFalse(self, *args) -> "Standard_Boolean" :
+    def CFalse(self, *args):
         """
         * Returns the former value for a flag and sets it to False (before : value returned; after : False)
 
         :param item:
-        :type item: int
+        :type item: Standard_Integer
         :param flag: default value is 0
-        :type flag: int
+        :type flag: Standard_Integer
+        :rtype: bool
+
+        * Returns the former value for a flag and sets it to False (before : value returned; after : False)
+
+        :param item:
+        :type item: Standard_Integer
+        :param flag: default value is 0
+        :type flag: Standard_Integer
         :rtype: bool
 
         """
         return _Interface.Interface_BitMap_CFalse(self, *args)
 
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
         * Initialises all the values of Flag Number <flag> to a given value <val>
 
         :param val:
         :type val: bool
         :param flag: default value is 0
-        :type flag: int
+        :type flag: Standard_Integer
+        :rtype: None
+
+        * Initialises all the values of Flag Number <flag> to a given value <val>
+
+        :param val:
+        :type val: bool
+        :param flag: default value is 0
+        :type flag: Standard_Integer
         :rtype: None
 
         """
         return _Interface.Interface_BitMap_Init(self, *args)
 
-    def Clear(self, *args) -> "void" :
+    def Clear(self):
         """
         * Clear all field of bit map
 
         :rtype: None
 
         """
-        return _Interface.Interface_BitMap_Clear(self, *args)
+        return _Interface.Interface_BitMap_Clear(self)
 
     def __del__(self):
     	try:
@@ -739,7 +835,7 @@ class Interface_Category(object):
 
         """
         _Interface.Interface_Category_swiginit(self,_Interface.new_Interface_Category(*args))
-    def SetProtocol(self, *args) -> "void" :
+    def SetProtocol(self, *args):
         """
         * Sets/Changes Protocol
 
@@ -750,7 +846,7 @@ class Interface_Category(object):
         """
         return _Interface.Interface_Category_SetProtocol(self, *args)
 
-    def CatNum(self, *args) -> "Standard_Integer" :
+    def CatNum(self, *args):
         """
         * Determines the Category Number for an entity in its context, by using general service CategoryNumber
 
@@ -763,16 +859,16 @@ class Interface_Category(object):
         """
         return _Interface.Interface_Category_CatNum(self, *args)
 
-    def ClearNums(self, *args) -> "void" :
+    def ClearNums(self):
         """
         * Clears the recorded list of category numbers for a Model
 
         :rtype: None
 
         """
-        return _Interface.Interface_Category_ClearNums(self, *args)
+        return _Interface.Interface_Category_ClearNums(self)
 
-    def Compute(self, *args) -> "void" :
+    def Compute(self, *args):
         """
         * Computes the Category Number for each entity and records it, in an array (ent.number -> category number) Hence, it can be queried by the method Num. The Model itself is not recorded, this method is intended to be used in a wider context (which detains also a Graph, etc)
 
@@ -785,18 +881,18 @@ class Interface_Category(object):
         """
         return _Interface.Interface_Category_Compute(self, *args)
 
-    def Num(self, *args) -> "Standard_Integer" :
+    def Num(self, *args):
         """
         * Returns the category number recorded for an entity number Returns 0 if out of range
 
         :param nument:
-        :type nument: int
+        :type nument: Standard_Integer
         :rtype: int
 
         """
         return _Interface.Interface_Category_Num(self, *args)
 
-    def AddCategory(*args) -> "Standard_Integer" :
+    def AddCategory(*args):
         """
         * Records a new Category defined by its names, produces a number New if not yet recorded
 
@@ -808,29 +904,29 @@ class Interface_Category(object):
         return _Interface.Interface_Category_AddCategory(*args)
 
     AddCategory = staticmethod(AddCategory)
-    def NbCategories(*args) -> "Standard_Integer" :
+    def NbCategories():
         """
         * Returns the count of recorded categories
 
         :rtype: int
 
         """
-        return _Interface.Interface_Category_NbCategories(*args)
+        return _Interface.Interface_Category_NbCategories()
 
     NbCategories = staticmethod(NbCategories)
-    def Name(*args) -> "char *" :
+    def Name(*args):
         """
         * Returns the name of a category, according to its number
 
         :param num:
-        :type num: int
+        :type num: Standard_Integer
         :rtype: char *
 
         """
         return _Interface.Interface_Category_Name(*args)
 
     Name = staticmethod(Name)
-    def Number(*args) -> "Standard_Integer" :
+    def Number(*args):
         """
         * Returns the number of a category, according to its name
 
@@ -842,14 +938,14 @@ class Interface_Category(object):
         return _Interface.Interface_Category_Number(*args)
 
     Number = staticmethod(Number)
-    def Init(*args) -> "void" :
+    def Init():
         """
         * Default initialisation (protected against several calls : passes only once)
 
         :rtype: void
 
         """
-        return _Interface.Interface_Category_Init(*args)
+        return _Interface.Interface_Category_Init()
 
     Init = staticmethod(Init)
     def __del__(self):
@@ -869,7 +965,7 @@ Interface_Category._kill_pointed = new_instancemethod(_Interface.Interface_Categ
 Interface_Category_swigregister = _Interface.Interface_Category_swigregister
 Interface_Category_swigregister(Interface_Category)
 
-def Interface_Category_AddCategory(*args) -> "Standard_Integer" :
+def Interface_Category_AddCategory(*args):
   """
     * Records a new Category defined by its names, produces a number New if not yet recorded
 
@@ -880,27 +976,27 @@ def Interface_Category_AddCategory(*args) -> "Standard_Integer" :
     """
   return _Interface.Interface_Category_AddCategory(*args)
 
-def Interface_Category_NbCategories(*args) -> "Standard_Integer" :
+def Interface_Category_NbCategories():
   """
     * Returns the count of recorded categories
 
     :rtype: int
 
     """
-  return _Interface.Interface_Category_NbCategories(*args)
+  return _Interface.Interface_Category_NbCategories()
 
-def Interface_Category_Name(*args) -> "char *" :
+def Interface_Category_Name(*args):
   """
     * Returns the name of a category, according to its number
 
     :param num:
-    :type num: int
+    :type num: Standard_Integer
     :rtype: char *
 
     """
   return _Interface.Interface_Category_Name(*args)
 
-def Interface_Category_Number(*args) -> "Standard_Integer" :
+def Interface_Category_Number(*args):
   """
     * Returns the number of a category, according to its name
 
@@ -911,14 +1007,14 @@ def Interface_Category_Number(*args) -> "Standard_Integer" :
     """
   return _Interface.Interface_Category_Number(*args)
 
-def Interface_Category_Init(*args) -> "void" :
+def Interface_Category_Init():
   """
     * Default initialisation (protected against several calls : passes only once)
 
     :rtype: void
 
     """
-  return _Interface.Interface_Category_Init(*args)
+  return _Interface.Interface_Category_Init()
 
 class Interface_Check(OCC.MMgt.MMgt_TShared):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
@@ -937,7 +1033,7 @@ class Interface_Check(OCC.MMgt.MMgt_TShared):
 
         """
         _Interface.Interface_Check_swiginit(self,_Interface.new_Interface_Check(*args))
-    def SendFail(self, *args) -> "void" :
+    def SendFail(self, *args):
         """
         * New name for AddFail (Msg)
 
@@ -948,7 +1044,7 @@ class Interface_Check(OCC.MMgt.MMgt_TShared):
         """
         return _Interface.Interface_Check_SendFail(self, *args)
 
-    def AddFail(self, *args) -> "void" :
+    def AddFail(self, *args):
         """
         * Records a new Fail message
 
@@ -972,6 +1068,14 @@ class Interface_Check(OCC.MMgt.MMgt_TShared):
         :type orig: char *
         :rtype: None
 
+        * Records a new Fail message given as 'error text' directly If <orig> is given, a distinct original form is recorded else (D), the original form equates <amess>
+
+        :param amess:
+        :type amess: char *
+        :param orig: default value is 
+        :type orig: char *
+        :rtype: None
+
         * Records a new Fail from the definition of a Msg (Original+Value)
 
         :param amsg:
@@ -981,30 +1085,38 @@ class Interface_Check(OCC.MMgt.MMgt_TShared):
         """
         return _Interface.Interface_Check_AddFail(self, *args)
 
-    def HasFailed(self, *args) -> "Standard_Boolean" :
+    def HasFailed(self):
         """
         * Returns True if Check brings at least one Fail Message
 
         :rtype: bool
 
         """
-        return _Interface.Interface_Check_HasFailed(self, *args)
+        return _Interface.Interface_Check_HasFailed(self)
 
-    def NbFails(self, *args) -> "Standard_Integer" :
+    def NbFails(self):
         """
         * Returns count of recorded Fails
 
         :rtype: int
 
         """
-        return _Interface.Interface_Check_NbFails(self, *args)
+        return _Interface.Interface_Check_NbFails(self)
 
-    def Fail(self, *args) -> "Handle_TCollection_HAsciiString const &" :
+    def Fail(self, *args):
         """
         * Returns Fail Message as a String Final form by default, Original form if <final> is False
 
         :param num:
-        :type num: int
+        :type num: Standard_Integer
+        :param final: default value is Standard_True
+        :type final: bool
+        :rtype: Handle_TCollection_HAsciiString
+
+        * Returns Fail Message as a String Final form by default, Original form if <final> is False
+
+        :param num:
+        :type num: Standard_Integer
         :param final: default value is Standard_True
         :type final: bool
         :rtype: Handle_TCollection_HAsciiString
@@ -1012,12 +1124,20 @@ class Interface_Check(OCC.MMgt.MMgt_TShared):
         """
         return _Interface.Interface_Check_Fail(self, *args)
 
-    def CFail(self, *args) -> "char *" :
+    def CFail(self, *args):
         """
         * Same as above, but returns a CString (to be printed ...) Final form by default, Original form if <final> is False
 
         :param num:
-        :type num: int
+        :type num: Standard_Integer
+        :param final: default value is Standard_True
+        :type final: bool
+        :rtype: char *
+
+        * Same as above, but returns a CString (to be printed ...) Final form by default, Original form if <final> is False
+
+        :param num:
+        :type num: Standard_Integer
         :param final: default value is Standard_True
         :type final: bool
         :rtype: char *
@@ -1025,8 +1145,14 @@ class Interface_Check(OCC.MMgt.MMgt_TShared):
         """
         return _Interface.Interface_Check_CFail(self, *args)
 
-    def Fails(self, *args) -> "Handle_TColStd_HSequenceOfHAsciiString" :
+    def Fails(self, *args):
         """
+        * Returns the list of Fails, for a frontal-engine logic Final forms by default, Original forms if <final> is False Can be empty
+
+        :param final: default value is Standard_True
+        :type final: bool
+        :rtype: Handle_TColStd_HSequenceOfHAsciiString
+
         * Returns the list of Fails, for a frontal-engine logic Final forms by default, Original forms if <final> is False Can be empty
 
         :param final: default value is Standard_True
@@ -1036,7 +1162,7 @@ class Interface_Check(OCC.MMgt.MMgt_TShared):
         """
         return _Interface.Interface_Check_Fails(self, *args)
 
-    def SendWarning(self, *args) -> "void" :
+    def SendWarning(self, *args):
         """
         * New name for AddWarning
 
@@ -1047,7 +1173,7 @@ class Interface_Check(OCC.MMgt.MMgt_TShared):
         """
         return _Interface.Interface_Check_SendWarning(self, *args)
 
-    def AddWarning(self, *args) -> "void" :
+    def AddWarning(self, *args):
         """
         * Records a new Warning message
 
@@ -1071,6 +1197,14 @@ class Interface_Check(OCC.MMgt.MMgt_TShared):
         :type orig: char *
         :rtype: None
 
+        * Records a Warning message given as 'warning message' directly If <orig> is given, a distinct original form is recorded else (D), the original form equates <amess>
+
+        :param amess:
+        :type amess: char *
+        :param orig: default value is 
+        :type orig: char *
+        :rtype: None
+
         * Records a new Warning from the definition of a Msg (Original+Value)
 
         :param amsg:
@@ -1080,30 +1214,38 @@ class Interface_Check(OCC.MMgt.MMgt_TShared):
         """
         return _Interface.Interface_Check_AddWarning(self, *args)
 
-    def HasWarnings(self, *args) -> "Standard_Boolean" :
+    def HasWarnings(self):
         """
         * Returns True if Check brings at least one Warning Message
 
         :rtype: bool
 
         """
-        return _Interface.Interface_Check_HasWarnings(self, *args)
+        return _Interface.Interface_Check_HasWarnings(self)
 
-    def NbWarnings(self, *args) -> "Standard_Integer" :
+    def NbWarnings(self):
         """
         * Returns count of recorded Warning messages
 
         :rtype: int
 
         """
-        return _Interface.Interface_Check_NbWarnings(self, *args)
+        return _Interface.Interface_Check_NbWarnings(self)
 
-    def Warning(self, *args) -> "Handle_TCollection_HAsciiString const &" :
+    def Warning(self, *args):
         """
         * Returns Warning message as a String Final form by default, Original form if <final> is False
 
         :param num:
-        :type num: int
+        :type num: Standard_Integer
+        :param final: default value is Standard_True
+        :type final: bool
+        :rtype: Handle_TCollection_HAsciiString
+
+        * Returns Warning message as a String Final form by default, Original form if <final> is False
+
+        :param num:
+        :type num: Standard_Integer
         :param final: default value is Standard_True
         :type final: bool
         :rtype: Handle_TCollection_HAsciiString
@@ -1111,12 +1253,20 @@ class Interface_Check(OCC.MMgt.MMgt_TShared):
         """
         return _Interface.Interface_Check_Warning(self, *args)
 
-    def CWarning(self, *args) -> "char *" :
+    def CWarning(self, *args):
         """
         * Same as above, but returns a CString (to be printed ...) Final form by default, Original form if <final> is False
 
         :param num:
-        :type num: int
+        :type num: Standard_Integer
+        :param final: default value is Standard_True
+        :type final: bool
+        :rtype: char *
+
+        * Same as above, but returns a CString (to be printed ...) Final form by default, Original form if <final> is False
+
+        :param num:
+        :type num: Standard_Integer
         :param final: default value is Standard_True
         :type final: bool
         :rtype: char *
@@ -1124,8 +1274,14 @@ class Interface_Check(OCC.MMgt.MMgt_TShared):
         """
         return _Interface.Interface_Check_CWarning(self, *args)
 
-    def Warnings(self, *args) -> "Handle_TColStd_HSequenceOfHAsciiString" :
+    def Warnings(self, *args):
         """
+        * Returns the list of Warnings, for a frontal-engine logic Final forms by default, Original forms if <final> is False Can be empty
+
+        :param final: default value is Standard_True
+        :type final: bool
+        :rtype: Handle_TColStd_HSequenceOfHAsciiString
+
         * Returns the list of Warnings, for a frontal-engine logic Final forms by default, Original forms if <final> is False Can be empty
 
         :param final: default value is Standard_True
@@ -1135,7 +1291,7 @@ class Interface_Check(OCC.MMgt.MMgt_TShared):
         """
         return _Interface.Interface_Check_Warnings(self, *args)
 
-    def SendMsg(self, *args) -> "void" :
+    def SendMsg(self, *args):
         """
         * Records an information message This does not change the status of the Check
 
@@ -1146,21 +1302,29 @@ class Interface_Check(OCC.MMgt.MMgt_TShared):
         """
         return _Interface.Interface_Check_SendMsg(self, *args)
 
-    def NbInfoMsgs(self, *args) -> "Standard_Integer" :
+    def NbInfoMsgs(self):
         """
         * Returns the count of recorded information messages
 
         :rtype: int
 
         """
-        return _Interface.Interface_Check_NbInfoMsgs(self, *args)
+        return _Interface.Interface_Check_NbInfoMsgs(self)
 
-    def InfoMsg(self, *args) -> "Handle_TCollection_HAsciiString const &" :
+    def InfoMsg(self, *args):
         """
         * Returns information message as a String
 
         :param num:
-        :type num: int
+        :type num: Standard_Integer
+        :param final: default value is Standard_True
+        :type final: bool
+        :rtype: Handle_TCollection_HAsciiString
+
+        * Returns information message as a String
+
+        :param num:
+        :type num: Standard_Integer
         :param final: default value is Standard_True
         :type final: bool
         :rtype: Handle_TCollection_HAsciiString
@@ -1168,12 +1332,20 @@ class Interface_Check(OCC.MMgt.MMgt_TShared):
         """
         return _Interface.Interface_Check_InfoMsg(self, *args)
 
-    def CInfoMsg(self, *args) -> "char *" :
+    def CInfoMsg(self, *args):
         """
         * Same as above, but returns a CString (to be printed ...) Final form by default, Original form if <final> is False
 
         :param num:
-        :type num: int
+        :type num: Standard_Integer
+        :param final: default value is Standard_True
+        :type final: bool
+        :rtype: char *
+
+        * Same as above, but returns a CString (to be printed ...) Final form by default, Original form if <final> is False
+
+        :param num:
+        :type num: Standard_Integer
         :param final: default value is Standard_True
         :type final: bool
         :rtype: char *
@@ -1181,8 +1353,14 @@ class Interface_Check(OCC.MMgt.MMgt_TShared):
         """
         return _Interface.Interface_Check_CInfoMsg(self, *args)
 
-    def InfoMsgs(self, *args) -> "Handle_TColStd_HSequenceOfHAsciiString" :
+    def InfoMsgs(self, *args):
         """
+        * Returns the list of Info Msg, for a frontal-engine logic Final forms by default, Original forms if <final> is False Can be empty
+
+        :param final: default value is Standard_True
+        :type final: bool
+        :rtype: Handle_TColStd_HSequenceOfHAsciiString
+
         * Returns the list of Info Msg, for a frontal-engine logic Final forms by default, Original forms if <final> is False Can be empty
 
         :param final: default value is Standard_True
@@ -1192,16 +1370,16 @@ class Interface_Check(OCC.MMgt.MMgt_TShared):
         """
         return _Interface.Interface_Check_InfoMsgs(self, *args)
 
-    def Status(self, *args) -> "Interface_CheckStatus" :
+    def Status(self):
         """
         * Returns the Check Status : OK, Warning or Fail
 
         :rtype: Interface_CheckStatus
 
         """
-        return _Interface.Interface_Check_Status(self, *args)
+        return _Interface.Interface_Check_Status(self)
 
-    def Complies(self, *args) -> "Standard_Boolean" :
+    def Complies(self, *args):
         """
         * Tells if Check Status complies with a given one (i.e. also status for query)
 
@@ -1214,7 +1392,7 @@ class Interface_Check(OCC.MMgt.MMgt_TShared):
         :param mess:
         :type mess: Handle_TCollection_HAsciiString &
         :param incl:
-        :type incl: int
+        :type incl: Standard_Integer
         :param status:
         :type status: Interface_CheckStatus
         :rtype: bool
@@ -1222,68 +1400,68 @@ class Interface_Check(OCC.MMgt.MMgt_TShared):
         """
         return _Interface.Interface_Check_Complies(self, *args)
 
-    def HasEntity(self, *args) -> "Standard_Boolean" :
+    def HasEntity(self):
         """
         * Returns True if a Check is devoted to an entity; else, it is global (for InterfaceModel's storing of global error messages)
 
         :rtype: bool
 
         """
-        return _Interface.Interface_Check_HasEntity(self, *args)
+        return _Interface.Interface_Check_HasEntity(self)
 
-    def Entity(self, *args) -> "Handle_Standard_Transient const &" :
+    def Entity(self):
         """
         * Returns the entity on which the Check has been defined
 
         :rtype: Handle_Standard_Transient
 
         """
-        return _Interface.Interface_Check_Entity(self, *args)
+        return _Interface.Interface_Check_Entity(self)
 
-    def Clear(self, *args) -> "void" :
+    def Clear(self):
         """
         * Clears a check, in order to receive informations from transfer (Messages and Entity)
 
         :rtype: None
 
         """
-        return _Interface.Interface_Check_Clear(self, *args)
+        return _Interface.Interface_Check_Clear(self)
 
-    def ClearFails(self, *args) -> "void" :
+    def ClearFails(self):
         """
         * Clears the Fail Messages (for instance to keep only Warnings)
 
         :rtype: None
 
         """
-        return _Interface.Interface_Check_ClearFails(self, *args)
+        return _Interface.Interface_Check_ClearFails(self)
 
-    def ClearWarnings(self, *args) -> "void" :
+    def ClearWarnings(self):
         """
         * Clears the Warning Messages (for instance to keep only Fails)
 
         :rtype: None
 
         """
-        return _Interface.Interface_Check_ClearWarnings(self, *args)
+        return _Interface.Interface_Check_ClearWarnings(self)
 
-    def ClearInfoMsgs(self, *args) -> "void" :
+    def ClearInfoMsgs(self):
         """
         * Clears the Info Messages
 
         :rtype: None
 
         """
-        return _Interface.Interface_Check_ClearInfoMsgs(self, *args)
+        return _Interface.Interface_Check_ClearInfoMsgs(self)
 
-    def Remove(self, *args) -> "Standard_Boolean" :
+    def Remove(self, *args):
         """
         * Removes the messages which comply with <mess>, as follows : <incl> = 0 : <mess> exactly matches one of the messages <incl> < 0 : <mess> is contained by one of the messages <incl> > 0 : <mess> contains one of the messages For <status> : for CheckWarning and CheckFail, considers only resp. Warning or Check messages. for CheckAny, considers all other values are ignored (nothing is done) Returns True if at least one message has been removed, False else
 
         :param mess:
         :type mess: Handle_TCollection_HAsciiString &
         :param incl:
-        :type incl: int
+        :type incl: Standard_Integer
         :param status:
         :type status: Interface_CheckStatus
         :rtype: bool
@@ -1291,20 +1469,28 @@ class Interface_Check(OCC.MMgt.MMgt_TShared):
         """
         return _Interface.Interface_Check_Remove(self, *args)
 
-    def Mend(self, *args) -> "Standard_Boolean" :
+    def Mend(self, *args):
         """
         * Mends messages, according <pref> and <num> According to <num>, works on the whole list of Fails if = 0(D) or only one Fail message, given its rank If <pref> is empty, converts Fail(s) to Warning(s) Else, does the conversion but prefixes the new Warning(s) but <pref> followed by a semi-column Some reserved values of <pref> are : 'FM' : standard prefix 'Mended' (can be translated) 'CF' : clears Fail(s) 'CW' : clears Warning(s) : here, <num> refers to Warning list 'CA' : clears all messages : here, <num> is ignored
 
         :param pref:
         :type pref: char *
         :param num: default value is 0
-        :type num: int
+        :type num: Standard_Integer
+        :rtype: bool
+
+        * Mends messages, according <pref> and <num> According to <num>, works on the whole list of Fails if = 0(D) or only one Fail message, given its rank If <pref> is empty, converts Fail(s) to Warning(s) Else, does the conversion but prefixes the new Warning(s) but <pref> followed by a semi-column Some reserved values of <pref> are : 'FM' : standard prefix 'Mended' (can be translated) 'CF' : clears Fail(s) 'CW' : clears Warning(s) : here, <num> refers to Warning list 'CA' : clears all messages : here, <num> is ignored
+
+        :param pref:
+        :type pref: char *
+        :param num: default value is 0
+        :type num: Standard_Integer
         :rtype: bool
 
         """
         return _Interface.Interface_Check_Mend(self, *args)
 
-    def SetEntity(self, *args) -> "void" :
+    def SetEntity(self, *args):
         """
         * Receives an entity result of a Transfer
 
@@ -1315,7 +1501,7 @@ class Interface_Check(OCC.MMgt.MMgt_TShared):
         """
         return _Interface.Interface_Check_SetEntity(self, *args)
 
-    def GetEntity(self, *args) -> "void" :
+    def GetEntity(self, *args):
         """
         * same as SetEntity (old form kept for compatibility) Warning : Does nothing if Entity field is not yet clear
 
@@ -1326,7 +1512,7 @@ class Interface_Check(OCC.MMgt.MMgt_TShared):
         """
         return _Interface.Interface_Check_GetEntity(self, *args)
 
-    def GetMessages(self, *args) -> "void" :
+    def GetMessages(self, *args):
         """
         * Copies messages stored in another Check, cumulating Does not regard other's Entity. Used to cumulate messages
 
@@ -1337,7 +1523,7 @@ class Interface_Check(OCC.MMgt.MMgt_TShared):
         """
         return _Interface.Interface_Check_GetMessages(self, *args)
 
-    def GetAsWarning(self, *args) -> "void" :
+    def GetAsWarning(self, *args):
         """
         * Copies messages converted into Warning messages If failsonly is true, only Fails are taken, and converted else, Warnings are taken too. Does not regard Entity Used to keep Fail messages as Warning, after a recovery
 
@@ -1350,39 +1536,65 @@ class Interface_Check(OCC.MMgt.MMgt_TShared):
         """
         return _Interface.Interface_Check_GetAsWarning(self, *args)
 
-    def Print(self, *args) -> "void" :
+    def Print(self, *args):
         """
         * Prints the messages of the check to an Messenger <level> = 1 : only fails <level> = 2 : fails and warnings <level> = 3 : all (fails, warnings, info msg) <final> : if positive (D) prints final values of messages if negative, prints originals if null, prints both forms
 
         :param S:
         :type S: Handle_Message_Messenger &
         :param level:
-        :type level: int
+        :type level: Standard_Integer
         :param final: default value is 1
-        :type final: int
+        :type final: Standard_Integer
+        :rtype: None
+
+        * Prints the messages of the check to an Messenger <level> = 1 : only fails <level> = 2 : fails and warnings <level> = 3 : all (fails, warnings, info msg) <final> : if positive (D) prints final values of messages if negative, prints originals if null, prints both forms
+
+        :param S:
+        :type S: Handle_Message_Messenger &
+        :param level:
+        :type level: Standard_Integer
+        :param final: default value is 1
+        :type final: Standard_Integer
         :rtype: None
 
         """
         return _Interface.Interface_Check_Print(self, *args)
 
-    def Trace(self, *args) -> "void" :
+    def Trace(self, *args):
         """
         * Prints the messages of the check to the default trace file By default, according to the default standard level Else, according level (see method Print)
 
-        :param level: default value is -1
-        :type level: int
+        :param level: default value is - 1
+        :type level: Standard_Integer
         :param final: default value is 1
-        :type final: int
+        :type final: Standard_Integer
+        :rtype: None
+
+        * Prints the messages of the check to the default trace file By default, according to the default standard level Else, according level (see method Print)
+
+        :param level: default value is - 1
+        :type level: Standard_Integer
+        :param final: default value is 1
+        :type final: Standard_Integer
+        :rtype: None
+
+        * Prints the messages of the check to the default trace file By default, according to the default standard level Else, according level (see method Print)
+
+        :param level: default value is - 1
+        :type level: Standard_Integer
+        :param final: default value is 1
+        :type final: Standard_Integer
         :rtype: None
 
         """
         return _Interface.Interface_Check_Trace(self, *args)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Interface_Check self)"""
         return _Interface.Interface_Check__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Interface_Check" :
+    def GetHandle(self):
         """GetHandle(Interface_Check self) -> Handle_Interface_Check"""
         return _Interface.Interface_Check_GetHandle(self)
 
@@ -1455,7 +1667,7 @@ Handle_Interface_Check._kill_pointed = new_instancemethod(_Interface.Handle_Inte
 Handle_Interface_Check_swigregister = _Interface.Handle_Interface_Check_swigregister
 Handle_Interface_Check_swigregister(Handle_Interface_Check)
 
-def Handle_Interface_Check_DownCast(*args) -> "Handle_Interface_Check const" :
+def Handle_Interface_Check_DownCast(*args):
   return _Interface.Handle_Interface_Check_DownCast(*args)
 Handle_Interface_Check_DownCast = _Interface.Handle_Interface_Check_DownCast
 
@@ -1476,7 +1688,7 @@ class Interface_CheckIterator(object):
 
         """
         _Interface.Interface_CheckIterator_swiginit(self,_Interface.new_Interface_CheckIterator(*args))
-    def SetName(self, *args) -> "void" :
+    def SetName(self, *args):
         """
         * Sets / Changes the name
 
@@ -1487,16 +1699,16 @@ class Interface_CheckIterator(object):
         """
         return _Interface.Interface_CheckIterator_SetName(self, *args)
 
-    def Name(self, *args) -> "char *" :
+    def Name(self):
         """
         * Returns the recorded name (can be empty)
 
         :rtype: char *
 
         """
-        return _Interface.Interface_CheckIterator_Name(self, *args)
+        return _Interface.Interface_CheckIterator_Name(self)
 
-    def SetModel(self, *args) -> "void" :
+    def SetModel(self, *args):
         """
         * Defines a Model, used to locate entities (not required, if it is absent, entities are simply less documented)
 
@@ -1507,25 +1719,25 @@ class Interface_CheckIterator(object):
         """
         return _Interface.Interface_CheckIterator_SetModel(self, *args)
 
-    def Model(self, *args) -> "Handle_Interface_InterfaceModel" :
+    def Model(self):
         """
         * Returns the stored model (can be a null handle)
 
         :rtype: Handle_Interface_InterfaceModel
 
         """
-        return _Interface.Interface_CheckIterator_Model(self, *args)
+        return _Interface.Interface_CheckIterator_Model(self)
 
-    def Clear(self, *args) -> "void" :
+    def Clear(self):
         """
         * Clears the list of checks
 
         :rtype: None
 
         """
-        return _Interface.Interface_CheckIterator_Clear(self, *args)
+        return _Interface.Interface_CheckIterator_Clear(self)
 
-    def Merge(self, *args) -> "void" :
+    def Merge(self, *args):
         """
         * Merges another CheckIterator into <self>, i.e. adds each of its Checks. Content of <other> remains unchanged. Takes also the Model but not the Name
 
@@ -1536,25 +1748,33 @@ class Interface_CheckIterator(object):
         """
         return _Interface.Interface_CheckIterator_Merge(self, *args)
 
-    def Add(self, *args) -> "void" :
+    def Add(self, *args):
         """
         * Adds a Check to the list to be iterated This Check is Accompanied by Entity Number in the Model (0 for Global Check or Entity unknown in the Model), if 0 and Model is recorded in <self>, it is computed
 
         :param ach:
         :type ach: Handle_Interface_Check &
         :param num: default value is 0
-        :type num: int
+        :type num: Standard_Integer
+        :rtype: None
+
+        * Adds a Check to the list to be iterated This Check is Accompanied by Entity Number in the Model (0 for Global Check or Entity unknown in the Model), if 0 and Model is recorded in <self>, it is computed
+
+        :param ach:
+        :type ach: Handle_Interface_Check &
+        :param num: default value is 0
+        :type num: Standard_Integer
         :rtype: None
 
         """
         return _Interface.Interface_CheckIterator_Add(self, *args)
 
-    def Check(self, *args) -> "Handle_Interface_Check const &" :
+    def Check(self, *args):
         """
         * Returns the Check which was attached to an Entity given its Number in the Model. <num>=0 is for the Global Check. If no Check was recorded for this Number, returns an empty Check. Remark : Works apart from the iteration methods (no interference)
 
         :param num:
-        :type num: int
+        :type num: Standard_Integer
         :rtype: Handle_Interface_Check
 
         * Returns the Check attached to an Entity If no Check was recorded for this Entity, returns an empty Check. Remark : Works apart from the iteration methods (no interference)
@@ -1566,12 +1786,12 @@ class Interface_CheckIterator(object):
         """
         return _Interface.Interface_CheckIterator_Check(self, *args)
 
-    def CCheck(self, *args) -> "Handle_Interface_Check &" :
+    def CCheck(self, *args):
         """
         * Returns the Check bound to an Entity Number (0 : Global) in order to be consulted or completed on the spot I.e. returns the Check if is already exists, or adds it then returns the new empty Check
 
         :param num:
-        :type num: int
+        :type num: Standard_Integer
         :rtype: Handle_Interface_Check
 
         * Returns the Check bound to an Entity, in order to be consulted or completed on the spot I.e. returns the Check if is already exists, or adds it then returns the new empty Check
@@ -1583,7 +1803,7 @@ class Interface_CheckIterator(object):
         """
         return _Interface.Interface_CheckIterator_CCheck(self, *args)
 
-    def IsEmpty(self, *args) -> "Standard_Boolean" :
+    def IsEmpty(self, *args):
         """
         * Returns True if : no Fail has been recorded if <failsonly> is True, no Check at all if <failsonly> is False
 
@@ -1594,16 +1814,16 @@ class Interface_CheckIterator(object):
         """
         return _Interface.Interface_CheckIterator_IsEmpty(self, *args)
 
-    def Status(self, *args) -> "Interface_CheckStatus" :
+    def Status(self):
         """
         * Returns worst status among : OK, Warning, Fail
 
         :rtype: Interface_CheckStatus
 
         """
-        return _Interface.Interface_CheckIterator_Status(self, *args)
+        return _Interface.Interface_CheckIterator_Status(self)
 
-    def Complies(self, *args) -> "Standard_Boolean" :
+    def Complies(self, *args):
         """
         * Tells if this check list complies with a given status : OK (i.e. empty), Warning (at least one Warning, but no Fail), Fail (at least one), Message (not OK), NoFail, Any
 
@@ -1614,7 +1834,7 @@ class Interface_CheckIterator(object):
         """
         return _Interface.Interface_CheckIterator_Complies(self, *args)
 
-    def Extract(self, *args) -> "Interface_CheckIterator" :
+    def Extract(self, *args):
         """
         * Returns a CheckIterator which contains the checks which comply with a given status Each check is added completely (no split Warning/Fail)
 
@@ -1627,7 +1847,7 @@ class Interface_CheckIterator(object):
         :param mess:
         :type mess: char *
         :param incl:
-        :type incl: int
+        :type incl: Standard_Integer
         :param status:
         :type status: Interface_CheckStatus
         :rtype: Interface_CheckIterator
@@ -1635,14 +1855,14 @@ class Interface_CheckIterator(object):
         """
         return _Interface.Interface_CheckIterator_Extract(self, *args)
 
-    def Remove(self, *args) -> "Standard_Boolean" :
+    def Remove(self, *args):
         """
         * Removes the messages of all Checks, under these conditions : <incl> = 0 : <mess> exactly matches one of the messages <incl> < 0 : <mess> is contained by one of the messages <incl> > 0 : <mess> contains one of the messages For <status> : for CheckWarning and CheckFail, considers only resp. Warning or Check messages. for CheckAny, considers all other values are ignored (nothing is done) Returns True if at least one message has been removed, False else
 
         :param mess:
         :type mess: char *
         :param incl:
-        :type incl: int
+        :type incl: Standard_Integer
         :param status:
         :type status: Interface_CheckStatus
         :rtype: bool
@@ -1650,7 +1870,7 @@ class Interface_CheckIterator(object):
         """
         return _Interface.Interface_CheckIterator_Remove(self, *args)
 
-    def Checkeds(self, *args) -> "Handle_TColStd_HSequenceOfTransient" :
+    def Checkeds(self, *args):
         """
         * Returns the list of entities concerned by a Check Only fails if <failsonly> is True, else all non-empty checks If <global> is true, adds the model for a global check Else, global check is ignored
 
@@ -1663,52 +1883,52 @@ class Interface_CheckIterator(object):
         """
         return _Interface.Interface_CheckIterator_Checkeds(self, *args)
 
-    def Start(self, *args) -> "void" :
+    def Start(self):
         """
         * Starts Iteration. Thus, it is possible to restart it Remark : an iteration may be done with a const Iterator While its content is modified (through a pointer), this allows to give it as a const argument to a function
 
         :rtype: None
 
         """
-        return _Interface.Interface_CheckIterator_Start(self, *args)
+        return _Interface.Interface_CheckIterator_Start(self)
 
-    def More(self, *args) -> "Standard_Boolean" :
+    def More(self):
         """
         * Returns True if there are more Checks to get
 
         :rtype: bool
 
         """
-        return _Interface.Interface_CheckIterator_More(self, *args)
+        return _Interface.Interface_CheckIterator_More(self)
 
-    def Next(self, *args) -> "void" :
+    def Next(self):
         """
         * Sets Iteration to next Item
 
         :rtype: None
 
         """
-        return _Interface.Interface_CheckIterator_Next(self, *args)
+        return _Interface.Interface_CheckIterator_Next(self)
 
-    def Value(self, *args) -> "Handle_Interface_Check const &" :
+    def Value(self):
         """
         * Returns Check currently Iterated It brings all other informations (status, messages, ...) The Number of the Entity in the Model is given by Number below
 
         :rtype: Handle_Interface_Check
 
         """
-        return _Interface.Interface_CheckIterator_Value(self, *args)
+        return _Interface.Interface_CheckIterator_Value(self)
 
-    def Number(self, *args) -> "Standard_Integer" :
+    def Number(self):
         """
         * Returns Number of Entity for the Check currently iterated or 0 for GlobalCheck
 
         :rtype: int
 
         """
-        return _Interface.Interface_CheckIterator_Number(self, *args)
+        return _Interface.Interface_CheckIterator_Number(self)
 
-    def Print(self, *args) -> "void" :
+    def Print(self, *args):
         """
         * Prints the list of Checks with their attached Numbers If <failsonly> is True, prints only Fail messages If <failsonly> is False, prints all messages If <final> = 0 (D), prints also original messages if different If <final> < 0, prints only original messages If <final> > 0, prints only final messages It uses the recorded Model if it is defined Remark : Works apart from the iteration methods (no interference)
 
@@ -1717,7 +1937,17 @@ class Interface_CheckIterator(object):
         :param failsonly:
         :type failsonly: bool
         :param final: default value is 0
-        :type final: int
+        :type final: Standard_Integer
+        :rtype: None
+
+        * Prints the list of Checks with their attached Numbers If <failsonly> is True, prints only Fail messages If <failsonly> is False, prints all messages If <final> = 0 (D), prints also original messages if different If <final> < 0, prints only original messages If <final> > 0, prints only final messages It uses the recorded Model if it is defined Remark : Works apart from the iteration methods (no interference)
+
+        :param S:
+        :type S: Handle_Message_Messenger &
+        :param failsonly:
+        :type failsonly: bool
+        :param final: default value is 0
+        :type final: Standard_Integer
         :rtype: None
 
         * Works as Print without a model, but for entities which have no attached number (Number not positive), tries to compute this Number from <model> and displays 'original' or 'computed'
@@ -1729,20 +1959,32 @@ class Interface_CheckIterator(object):
         :param failsonly:
         :type failsonly: bool
         :param final: default value is 0
-        :type final: int
+        :type final: Standard_Integer
+        :rtype: None
+
+        * Works as Print without a model, but for entities which have no attached number (Number not positive), tries to compute this Number from <model> and displays 'original' or 'computed'
+
+        :param S:
+        :type S: Handle_Message_Messenger &
+        :param model:
+        :type model: Handle_Interface_InterfaceModel &
+        :param failsonly:
+        :type failsonly: bool
+        :param final: default value is 0
+        :type final: Standard_Integer
         :rtype: None
 
         """
         return _Interface.Interface_CheckIterator_Print(self, *args)
 
-    def Destroy(self, *args) -> "void" :
+    def Destroy(self):
         """
         * Clears data of iteration
 
         :rtype: None
 
         """
-        return _Interface.Interface_CheckIterator_Destroy(self, *args)
+        return _Interface.Interface_CheckIterator_Destroy(self)
 
     def __del__(self):
     	try:
@@ -1809,7 +2051,7 @@ class Interface_CheckTool(object):
 
         """
         _Interface.Interface_CheckTool_swiginit(self,_Interface.new_Interface_CheckTool(*args))
-    def FillCheck(self, *args) -> "void" :
+    def FillCheck(self, *args):
         """
         * Fills as required a Check with the Error and Warning messages produced by Checking a given Entity. For an Erroneous or Corrected Entity : Check build at Analyse time; else, Check computed for Entity (Verify integrity), can use a Graph as required to control context
 
@@ -1824,7 +2066,7 @@ class Interface_CheckTool(object):
         """
         return _Interface.Interface_CheckTool_FillCheck(self, *args)
 
-    def Print(self, *args) -> "void" :
+    def Print(self, *args):
         """
         * Utility method which Prints the content of a Check
 
@@ -1845,19 +2087,25 @@ class Interface_CheckTool(object):
         """
         return _Interface.Interface_CheckTool_Print(self, *args)
 
-    def Check(self, *args) -> "Handle_Interface_Check" :
+    def Check(self, *args):
         """
         * Returns the Check associated to an Entity identified by its Number in a Model.
 
         :param num:
-        :type num: int
+        :type num: Standard_Integer
         :rtype: Handle_Interface_Check
 
         """
         return _Interface.Interface_CheckTool_Check(self, *args)
 
-    def CheckSuccess(self, *args) -> "void" :
+    def CheckSuccess(self, *args):
         """
+        * Checks if any Error has been detected (CheckList not empty) Returns normally if none, raises exception if some exists. It reuses the last computations from other checking methods, unless the argument <resest> is given True
+
+        :param reset: default value is Standard_False
+        :type reset: bool
+        :rtype: None
+
         * Checks if any Error has been detected (CheckList not empty) Returns normally if none, raises exception if some exists. It reuses the last computations from other checking methods, unless the argument <resest> is given True
 
         :param reset: default value is Standard_False
@@ -1867,59 +2115,59 @@ class Interface_CheckTool(object):
         """
         return _Interface.Interface_CheckTool_CheckSuccess(self, *args)
 
-    def CompleteCheckList(self, *args) -> "Interface_CheckIterator" :
+    def CompleteCheckList(self):
         """
         * Returns list of all 'remarkable' informations, which include : - GlobalCheck, if not empty - Error Checks, for all Errors (Verify + Analyse) - also Corrected Entities - and Unknown Entities : for those, each Unknown Entity is associated to an empty Check (it is neither an Error nor a Correction, but a remarkable information)
 
         :rtype: Interface_CheckIterator
 
         """
-        return _Interface.Interface_CheckTool_CompleteCheckList(self, *args)
+        return _Interface.Interface_CheckTool_CompleteCheckList(self)
 
-    def CheckList(self, *args) -> "Interface_CheckIterator" :
+    def CheckList(self):
         """
         * Returns list of all Errors detected Note that presence of Unknown Entities is not an error Cumulates : GlobalCheck if error + AnalyseCheckList + VerifyCheckList
 
         :rtype: Interface_CheckIterator
 
         """
-        return _Interface.Interface_CheckTool_CheckList(self, *args)
+        return _Interface.Interface_CheckTool_CheckList(self)
 
-    def AnalyseCheckList(self, *args) -> "Interface_CheckIterator" :
+    def AnalyseCheckList(self):
         """
         * Returns list of errors dectected at Analyse time (syntactic) (note that GlobalCheck is not in this list)
 
         :rtype: Interface_CheckIterator
 
         """
-        return _Interface.Interface_CheckTool_AnalyseCheckList(self, *args)
+        return _Interface.Interface_CheckTool_AnalyseCheckList(self)
 
-    def VerifyCheckList(self, *args) -> "Interface_CheckIterator" :
+    def VerifyCheckList(self):
         """
         * Returns list of integrity constraints errors (semantic) (note that GlobalCheck is not in this list)
 
         :rtype: Interface_CheckIterator
 
         """
-        return _Interface.Interface_CheckTool_VerifyCheckList(self, *args)
+        return _Interface.Interface_CheckTool_VerifyCheckList(self)
 
-    def WarningCheckList(self, *args) -> "Interface_CheckIterator" :
+    def WarningCheckList(self):
         """
         * Returns list of Corrections (includes GlobalCheck if corrected)
 
         :rtype: Interface_CheckIterator
 
         """
-        return _Interface.Interface_CheckTool_WarningCheckList(self, *args)
+        return _Interface.Interface_CheckTool_WarningCheckList(self)
 
-    def UnknownEntities(self, *args) -> "Interface_EntityIterator" :
+    def UnknownEntities(self):
         """
         * Returns list of Unknown Entities Note that Error and Erroneous Entities are not considered as Unknown
 
         :rtype: Interface_EntityIterator
 
         """
-        return _Interface.Interface_CheckTool_UnknownEntities(self, *args)
+        return _Interface.Interface_CheckTool_UnknownEntities(self)
 
     def __del__(self):
     	try:
@@ -1947,16 +2195,16 @@ class Interface_CopyControl(OCC.MMgt.MMgt_TShared):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def Clear(self, *args) -> "void" :
+    def Clear(self):
         """
         * Clears List of Copy Results. Gets Ready to begin another Copy Process.
 
         :rtype: void
 
         """
-        return _Interface.Interface_CopyControl_Clear(self, *args)
+        return _Interface.Interface_CopyControl_Clear(self)
 
-    def Bind(self, *args) -> "void" :
+    def Bind(self, *args):
         """
         * Bind a Result to a Starting Entity identified by its Number
 
@@ -1969,7 +2217,7 @@ class Interface_CopyControl(OCC.MMgt.MMgt_TShared):
         """
         return _Interface.Interface_CopyControl_Bind(self, *args)
 
-    def Search(self, *args) -> "Standard_Boolean" :
+    def Search(self, *args):
         """
         * Searches for the Result bound to a Startingf Entity identified by its Number. If Found, returns True and fills <res> Else, returns False and nullifies <res>
 
@@ -1982,11 +2230,11 @@ class Interface_CopyControl(OCC.MMgt.MMgt_TShared):
         """
         return _Interface.Interface_CopyControl_Search(self, *args)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Interface_CopyControl self)"""
         return _Interface.Interface_CopyControl__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Interface_CopyControl" :
+    def GetHandle(self):
         """GetHandle(Interface_CopyControl self) -> Handle_Interface_CopyControl"""
         return _Interface.Interface_CopyControl_GetHandle(self)
 
@@ -2027,7 +2275,7 @@ Handle_Interface_CopyControl._kill_pointed = new_instancemethod(_Interface.Handl
 Handle_Interface_CopyControl_swigregister = _Interface.Handle_Interface_CopyControl_swigregister
 Handle_Interface_CopyControl_swigregister(Handle_Interface_CopyControl)
 
-def Handle_Interface_CopyControl_DownCast(*args) -> "Handle_Interface_CopyControl const" :
+def Handle_Interface_CopyControl_DownCast(*args):
   return _Interface.Handle_Interface_CopyControl_DownCast(*args)
 Handle_Interface_CopyControl_DownCast = _Interface.Handle_Interface_CopyControl_DownCast
 
@@ -2060,16 +2308,16 @@ class Interface_CopyTool(object):
 
         """
         _Interface.Interface_CopyTool_swiginit(self,_Interface.new_Interface_CopyTool(*args))
-    def Model(self, *args) -> "Handle_Interface_InterfaceModel" :
+    def Model(self):
         """
         * Returns the Model on which the CopyTool works
 
         :rtype: Handle_Interface_InterfaceModel
 
         """
-        return _Interface.Interface_CopyTool_Model(self, *args)
+        return _Interface.Interface_CopyTool_Model(self)
 
-    def SetControl(self, *args) -> "void" :
+    def SetControl(self, *args):
         """
         * Changes the Map of Result for another one. This allows to work with a more sophisticated Mapping Control than the Standard one which is CopyMap (e.g. TransferProcess from Transfer)
 
@@ -2080,25 +2328,25 @@ class Interface_CopyTool(object):
         """
         return _Interface.Interface_CopyTool_SetControl(self, *args)
 
-    def Control(self, *args) -> "Handle_Interface_CopyControl" :
+    def Control(self):
         """
         * Returns the object used for Control
 
         :rtype: Handle_Interface_CopyControl
 
         """
-        return _Interface.Interface_CopyTool_Control(self, *args)
+        return _Interface.Interface_CopyTool_Control(self)
 
-    def Clear(self, *args) -> "void" :
+    def Clear(self):
         """
         * Clears Transfer List. Gets Ready to begin another Transfer
 
         :rtype: void
 
         """
-        return _Interface.Interface_CopyTool_Clear(self, *args)
+        return _Interface.Interface_CopyTool_Clear(self)
 
-    def Copy(self, *args) -> "Standard_Boolean" :
+    def Copy(self, *args):
         """
         * Creates the CounterPart of an Entity (by ShallowCopy), Binds it, then Copies the content of the former Entity to the other one (same Type), by call to the General Service Library It may command the Copy of Referenced Entities Then, its returns True. If <mapped> is True, the Map is used to store the Result Else, the Result is simply produced : it can be used to Copy internal sub-parts of Entities, which are not intended to be shared (Strings, Arrays, etc...) If <errstat> is True, this means that the Entity is recorded in the Model as Erroneous : in this case, the General Service for Deep Copy is not called (this could be dangerous) : hence the Counter-Part is produced but empty, it can be referenced. This method does nothing and returns False if the Protocol does not recognize <ent>. It basically makes a Deep Copy without changing the Types. It can be redefined for special uses.
 
@@ -2115,7 +2363,7 @@ class Interface_CopyTool(object):
         """
         return _Interface.Interface_CopyTool_Copy(self, *args)
 
-    def Transferred(self, *args) -> "Handle_Standard_Transient" :
+    def Transferred(self, *args):
         """
         * Transfers one Entity, if not yet bound to a result Remark : For an Entity which is reported in the Starting Model, the ReportEntity will also be copied with its Content if it has one (at least ShallowCopy; Complete Copy if the Protocol recognizes the Content : see method Copy)
 
@@ -2126,7 +2374,7 @@ class Interface_CopyTool(object):
         """
         return _Interface.Interface_CopyTool_Transferred(self, *args)
 
-    def Bind(self, *args) -> "void" :
+    def Bind(self, *args):
         """
         * Defines a Result for the Transfer of a Starting object. Used by method Transferred (which performs a normal Copy), but can also be called to enforce a result : in the latter case, the enforced result must be compatible with the other Transfers which are performed
 
@@ -2139,7 +2387,7 @@ class Interface_CopyTool(object):
         """
         return _Interface.Interface_CopyTool_Bind(self, *args)
 
-    def Search(self, *args) -> "Standard_Boolean" :
+    def Search(self, *args):
         """
         * Search for the result of a Starting Object (i.e. an Entity) Returns True if a Result is Bound (and fills 'result') Returns False if no result is Bound
 
@@ -2152,21 +2400,21 @@ class Interface_CopyTool(object):
         """
         return _Interface.Interface_CopyTool_Search(self, *args)
 
-    def ClearLastFlags(self, *args) -> "void" :
+    def ClearLastFlags(self):
         """
         * Clears LastFlags only. This allows to know what Entities are copied after its call (see method LastCopiedAfter). It can be used when copies are done by increments, which must be distinghished. ClearLastFlags is also called by Clear.
 
         :rtype: None
 
         """
-        return _Interface.Interface_CopyTool_ClearLastFlags(self, *args)
+        return _Interface.Interface_CopyTool_ClearLastFlags(self)
 
-    def LastCopiedAfter(self, *args) -> "Standard_Integer" :
+    def LastCopiedAfter(self, *args):
         """
         * Returns an copied Entity and its Result which were operated after last call to ClearLastFlags. It returns the first 'Last Copied Entity' which Number follows <numfrom>, Zero if none. It is used in a loop as follow : Integer num = 0; while ( (num = CopyTool.LastCopiedAfter(num,ent,res)) ) {  .. Process Starting <ent> and its Result <res> }
 
         :param numfrom:
-        :type numfrom: int
+        :type numfrom: Standard_Integer
         :param ent:
         :type ent: Handle_Standard_Transient &
         :param res:
@@ -2176,7 +2424,7 @@ class Interface_CopyTool(object):
         """
         return _Interface.Interface_CopyTool_LastCopiedAfter(self, *args)
 
-    def TransferEntity(self, *args) -> "void" :
+    def TransferEntity(self, *args):
         """
         * Transfers one Entity and records result into the Transfer List Calls method Transferred
 
@@ -2187,16 +2435,16 @@ class Interface_CopyTool(object):
         """
         return _Interface.Interface_CopyTool_TransferEntity(self, *args)
 
-    def RenewImpliedRefs(self, *args) -> "void" :
+    def RenewImpliedRefs(self):
         """
         * Renews the Implied References. These References do not involve Copying of referenced Entities. For such a Reference, if the Entity which defines it AND the referenced Entity are both copied, then this Reference is renewed. Else it is deleted in the copied Entities. Remark : this concerns only some specific references, such as 'back pointers'.
 
         :rtype: None
 
         """
-        return _Interface.Interface_CopyTool_RenewImpliedRefs(self, *args)
+        return _Interface.Interface_CopyTool_RenewImpliedRefs(self)
 
-    def FillModel(self, *args) -> "void" :
+    def FillModel(self, *args):
         """
         * Fills a Model with the result of the transfer (TransferList) Commands copy of Header too, and calls RenewImpliedRefs
 
@@ -2207,8 +2455,14 @@ class Interface_CopyTool(object):
         """
         return _Interface.Interface_CopyTool_FillModel(self, *args)
 
-    def CompleteResult(self, *args) -> "Interface_EntityIterator" :
+    def CompleteResult(self, *args):
         """
+        * Returns the complete list of copied Entities If <withreports> is given True, the entities which were reported in the Starting Model are replaced in the list by the copied ReportEntities
+
+        :param withreports: default value is Standard_False
+        :type withreports: bool
+        :rtype: Interface_EntityIterator
+
         * Returns the complete list of copied Entities If <withreports> is given True, the entities which were reported in the Starting Model are replaced in the list by the copied ReportEntities
 
         :param withreports: default value is Standard_False
@@ -2218,8 +2472,14 @@ class Interface_CopyTool(object):
         """
         return _Interface.Interface_CopyTool_CompleteResult(self, *args)
 
-    def RootResult(self, *args) -> "Interface_EntityIterator" :
+    def RootResult(self, *args):
         """
+        * Returns the list of Root copied Entities (those which were asked for copy by the user of CopyTool, not by copying another Entity)
+
+        :param withreports: default value is Standard_False
+        :type withreports: bool
+        :rtype: Interface_EntityIterator
+
         * Returns the list of Root copied Entities (those which were asked for copy by the user of CopyTool, not by copying another Entity)
 
         :param withreports: default value is Standard_False
@@ -2229,12 +2489,12 @@ class Interface_CopyTool(object):
         """
         return _Interface.Interface_CopyTool_RootResult(self, *args)
 
-    def Destroy(self, *args) -> "void" :
+    def Destroy(self):
         """
         :rtype: void
 
         """
-        return _Interface.Interface_CopyTool_Destroy(self, *args)
+        return _Interface.Interface_CopyTool_Destroy(self)
 
     def __del__(self):
     	try:
@@ -2277,7 +2537,7 @@ class Interface_DataMapIteratorOfDataMapOfTransientInteger(OCC.TCollection.TColl
 
         """
         _Interface.Interface_DataMapIteratorOfDataMapOfTransientInteger_swiginit(self,_Interface.new_Interface_DataMapIteratorOfDataMapOfTransientInteger(*args))
-    def Initialize(self, *args) -> "void" :
+    def Initialize(self, *args):
         """
         :param aMap:
         :type aMap: Interface_DataMapOfTransientInteger &
@@ -2286,19 +2546,19 @@ class Interface_DataMapIteratorOfDataMapOfTransientInteger(OCC.TCollection.TColl
         """
         return _Interface.Interface_DataMapIteratorOfDataMapOfTransientInteger_Initialize(self, *args)
 
-    def Key(self, *args) -> "Handle_Standard_Transient const &" :
+    def Key(self):
         """
         :rtype: Handle_Standard_Transient
 
         """
-        return _Interface.Interface_DataMapIteratorOfDataMapOfTransientInteger_Key(self, *args)
+        return _Interface.Interface_DataMapIteratorOfDataMapOfTransientInteger_Key(self)
 
-    def Value(self, *args) -> "Standard_Integer const &" :
+    def Value(self):
         """
         :rtype: int
 
         """
-        return _Interface.Interface_DataMapIteratorOfDataMapOfTransientInteger_Value(self, *args)
+        return _Interface.Interface_DataMapIteratorOfDataMapOfTransientInteger_Value(self)
 
     def __del__(self):
     	try:
@@ -2323,33 +2583,33 @@ class Interface_DataMapNodeOfDataMapOfTransientInteger(OCC.TCollection.TCollecti
         :param K:
         :type K: Handle_Standard_Transient &
         :param I:
-        :type I: int &
+        :type I: Standard_Integer &
         :param n:
         :type n: TCollection_MapNodePtr &
         :rtype: None
 
         """
         _Interface.Interface_DataMapNodeOfDataMapOfTransientInteger_swiginit(self,_Interface.new_Interface_DataMapNodeOfDataMapOfTransientInteger(*args))
-    def Key(self, *args) -> "Handle_Standard_Transient &" :
+    def Key(self):
         """
         :rtype: Handle_Standard_Transient
 
         """
-        return _Interface.Interface_DataMapNodeOfDataMapOfTransientInteger_Key(self, *args)
+        return _Interface.Interface_DataMapNodeOfDataMapOfTransientInteger_Key(self)
 
-    def GetValue(self) -> "Standard_Integer" :
+    def GetValue(self):
         """GetValue(Interface_DataMapNodeOfDataMapOfTransientInteger self) -> Standard_Integer"""
         return _Interface.Interface_DataMapNodeOfDataMapOfTransientInteger_GetValue(self)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """SetValue(Interface_DataMapNodeOfDataMapOfTransientInteger self, Standard_Integer value)"""
         return _Interface.Interface_DataMapNodeOfDataMapOfTransientInteger_SetValue(self, *args)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Interface_DataMapNodeOfDataMapOfTransientInteger self)"""
         return _Interface.Interface_DataMapNodeOfDataMapOfTransientInteger__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Interface_DataMapNodeOfDataMapOfTransientInteger" :
+    def GetHandle(self):
         """GetHandle(Interface_DataMapNodeOfDataMapOfTransientInteger self) -> Handle_Interface_DataMapNodeOfDataMapOfTransientInteger"""
         return _Interface.Interface_DataMapNodeOfDataMapOfTransientInteger_GetHandle(self)
 
@@ -2390,22 +2650,26 @@ Handle_Interface_DataMapNodeOfDataMapOfTransientInteger._kill_pointed = new_inst
 Handle_Interface_DataMapNodeOfDataMapOfTransientInteger_swigregister = _Interface.Handle_Interface_DataMapNodeOfDataMapOfTransientInteger_swigregister
 Handle_Interface_DataMapNodeOfDataMapOfTransientInteger_swigregister(Handle_Interface_DataMapNodeOfDataMapOfTransientInteger)
 
-def Handle_Interface_DataMapNodeOfDataMapOfTransientInteger_DownCast(*args) -> "Handle_Interface_DataMapNodeOfDataMapOfTransientInteger const" :
+def Handle_Interface_DataMapNodeOfDataMapOfTransientInteger_DownCast(*args):
   return _Interface.Handle_Interface_DataMapNodeOfDataMapOfTransientInteger_DownCast(*args)
 Handle_Interface_DataMapNodeOfDataMapOfTransientInteger_DownCast = _Interface.Handle_Interface_DataMapNodeOfDataMapOfTransientInteger_DownCast
 
 class Interface_DataMapOfTransientInteger(OCC.TCollection.TCollection_BasicMap):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self, NbBuckets=1): 
         """
         :param NbBuckets: default value is 1
-        :type NbBuckets: int
+        :type NbBuckets: Standard_Integer
+        :rtype: None
+
+        :param NbBuckets: default value is 1
+        :type NbBuckets: Standard_Integer
         :rtype: None
 
         """
-        _Interface.Interface_DataMapOfTransientInteger_swiginit(self,_Interface.new_Interface_DataMapOfTransientInteger(*args))
-    def Assign(self, *args) -> "Interface_DataMapOfTransientInteger &" :
+        _Interface.Interface_DataMapOfTransientInteger_swiginit(self,_Interface.new_Interface_DataMapOfTransientInteger(NbBuckets))
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: Interface_DataMapOfTransientInteger &
@@ -2414,7 +2678,7 @@ class Interface_DataMapOfTransientInteger(OCC.TCollection.TCollection_BasicMap):
         """
         return _Interface.Interface_DataMapOfTransientInteger_Assign(self, *args)
 
-    def Set(self, *args) -> "Interface_DataMapOfTransientInteger &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: Interface_DataMapOfTransientInteger &
@@ -2423,34 +2687,34 @@ class Interface_DataMapOfTransientInteger(OCC.TCollection.TCollection_BasicMap):
         """
         return _Interface.Interface_DataMapOfTransientInteger_Set(self, *args)
 
-    def ReSize(self, *args) -> "void" :
+    def ReSize(self, *args):
         """
         :param NbBuckets:
-        :type NbBuckets: int
+        :type NbBuckets: Standard_Integer
         :rtype: None
 
         """
         return _Interface.Interface_DataMapOfTransientInteger_ReSize(self, *args)
 
-    def Clear(self, *args) -> "void" :
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _Interface.Interface_DataMapOfTransientInteger_Clear(self, *args)
+        return _Interface.Interface_DataMapOfTransientInteger_Clear(self)
 
-    def Bind(self, *args) -> "Standard_Boolean" :
+    def Bind(self, *args):
         """
         :param K:
         :type K: Handle_Standard_Transient &
         :param I:
-        :type I: int &
+        :type I: Standard_Integer &
         :rtype: bool
 
         """
         return _Interface.Interface_DataMapOfTransientInteger_Bind(self, *args)
 
-    def IsBound(self, *args) -> "Standard_Boolean" :
+    def IsBound(self, *args):
         """
         :param K:
         :type K: Handle_Standard_Transient &
@@ -2459,7 +2723,7 @@ class Interface_DataMapOfTransientInteger(OCC.TCollection.TCollection_BasicMap):
         """
         return _Interface.Interface_DataMapOfTransientInteger_IsBound(self, *args)
 
-    def UnBind(self, *args) -> "Standard_Boolean" :
+    def UnBind(self, *args):
         """
         :param K:
         :type K: Handle_Standard_Transient &
@@ -2468,7 +2732,7 @@ class Interface_DataMapOfTransientInteger(OCC.TCollection.TCollection_BasicMap):
         """
         return _Interface.Interface_DataMapOfTransientInteger_UnBind(self, *args)
 
-    def Find(self, *args) -> "Standard_Integer const &" :
+    def Find(self, *args):
         """
         :param K:
         :type K: Handle_Standard_Transient &
@@ -2477,7 +2741,7 @@ class Interface_DataMapOfTransientInteger(OCC.TCollection.TCollection_BasicMap):
         """
         return _Interface.Interface_DataMapOfTransientInteger_Find(self, *args)
 
-    def ChangeFind(self, *args) -> "Standard_Integer &" :
+    def ChangeFind(self, *args):
         """
         :param K:
         :type K: Handle_Standard_Transient &
@@ -2486,7 +2750,7 @@ class Interface_DataMapOfTransientInteger(OCC.TCollection.TCollection_BasicMap):
         """
         return _Interface.Interface_DataMapOfTransientInteger_ChangeFind(self, *args)
 
-    def Find1(self, *args) -> "Standard_Address" :
+    def Find1(self, *args):
         """
         :param K:
         :type K: Handle_Standard_Transient &
@@ -2495,7 +2759,7 @@ class Interface_DataMapOfTransientInteger(OCC.TCollection.TCollection_BasicMap):
         """
         return _Interface.Interface_DataMapOfTransientInteger_Find1(self, *args)
 
-    def ChangeFind1(self, *args) -> "Standard_Address" :
+    def ChangeFind1(self, *args):
         """
         :param K:
         :type K: Handle_Standard_Transient &
@@ -2504,7 +2768,7 @@ class Interface_DataMapOfTransientInteger(OCC.TCollection.TCollection_BasicMap):
         """
         return _Interface.Interface_DataMapOfTransientInteger_ChangeFind1(self, *args)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Interface_DataMapOfTransientInteger self)"""
         return _Interface.Interface_DataMapOfTransientInteger__kill_pointed(self)
 
@@ -2562,7 +2826,7 @@ class Interface_EntityCluster(OCC.MMgt.MMgt_TShared):
 
         """
         _Interface.Interface_EntityCluster_swiginit(self,_Interface.new_Interface_EntityCluster(*args))
-    def Append(self, *args) -> "void" :
+    def Append(self, *args):
         """
         * Appends an Entity to the Cluster. If it is not full, adds the entity directly inside itself. Else, transmits to its Next and Creates it if it does not yet exist
 
@@ -2573,7 +2837,7 @@ class Interface_EntityCluster(OCC.MMgt.MMgt_TShared):
         """
         return _Interface.Interface_EntityCluster_Append(self, *args)
 
-    def Remove(self, *args) -> "Standard_Boolean" :
+    def Remove(self, *args):
         """
         * Removes an Entity from the Cluster. If it is not found, calls its Next one to do so. Returns True if it becomes itself empty, False else (thus, a Cluster which becomes empty is deleted from the list)
 
@@ -2584,38 +2848,38 @@ class Interface_EntityCluster(OCC.MMgt.MMgt_TShared):
         * Removes an Entity from the Cluster, given its rank. If <num> is greater than NbLocal, calls its Next with (num - NbLocal), Returns True if it becomes itself empty, False else
 
         :param num:
-        :type num: int
+        :type num: Standard_Integer
         :rtype: bool
 
         """
         return _Interface.Interface_EntityCluster_Remove(self, *args)
 
-    def NbEntities(self, *args) -> "Standard_Integer" :
+    def NbEntities(self):
         """
         * Returns total count of Entities (including Next)
 
         :rtype: int
 
         """
-        return _Interface.Interface_EntityCluster_NbEntities(self, *args)
+        return _Interface.Interface_EntityCluster_NbEntities(self)
 
-    def Value(self, *args) -> "Handle_Standard_Transient const &" :
+    def Value(self, *args):
         """
         * Returns the Entity identified by its rank in the list (including Next)
 
         :param num:
-        :type num: int
+        :type num: Standard_Integer
         :rtype: Handle_Standard_Transient
 
         """
         return _Interface.Interface_EntityCluster_Value(self, *args)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         * Changes an Entity given its rank.
 
         :param num:
-        :type num: int
+        :type num: Standard_Integer
         :param ent:
         :type ent: Handle_Standard_Transient &
         :rtype: None
@@ -2623,7 +2887,7 @@ class Interface_EntityCluster(OCC.MMgt.MMgt_TShared):
         """
         return _Interface.Interface_EntityCluster_SetValue(self, *args)
 
-    def FillIterator(self, *args) -> "void" :
+    def FillIterator(self, *args):
         """
         * Fills an Iterator with designated Entities (includes Next)
 
@@ -2634,11 +2898,11 @@ class Interface_EntityCluster(OCC.MMgt.MMgt_TShared):
         """
         return _Interface.Interface_EntityCluster_FillIterator(self, *args)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Interface_EntityCluster self)"""
         return _Interface.Interface_EntityCluster__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Interface_EntityCluster" :
+    def GetHandle(self):
         """GetHandle(Interface_EntityCluster self) -> Handle_Interface_EntityCluster"""
         return _Interface.Interface_EntityCluster_GetHandle(self)
 
@@ -2682,7 +2946,7 @@ Handle_Interface_EntityCluster._kill_pointed = new_instancemethod(_Interface.Han
 Handle_Interface_EntityCluster_swigregister = _Interface.Handle_Interface_EntityCluster_swigregister
 Handle_Interface_EntityCluster_swigregister(Handle_Interface_EntityCluster)
 
-def Handle_Interface_EntityCluster_DownCast(*args) -> "Handle_Interface_EntityCluster const" :
+def Handle_Interface_EntityCluster_DownCast(*args):
   return _Interface.Handle_Interface_EntityCluster_DownCast(*args)
 Handle_Interface_EntityCluster_DownCast = _Interface.Handle_Interface_EntityCluster_DownCast
 
@@ -2703,7 +2967,7 @@ class Interface_EntityIterator(object):
 
         """
         _Interface.Interface_EntityIterator_swiginit(self,_Interface.new_Interface_EntityIterator(*args))
-    def AddList(self, *args) -> "void" :
+    def AddList(self, *args):
         """
         * Gets a list of entities and adds its to the iteration list
 
@@ -2714,7 +2978,7 @@ class Interface_EntityIterator(object):
         """
         return _Interface.Interface_EntityIterator_AddList(self, *args)
 
-    def AddItem(self, *args) -> "void" :
+    def AddItem(self, *args):
         """
         * Adds to the iteration list a defined entity
 
@@ -2725,7 +2989,7 @@ class Interface_EntityIterator(object):
         """
         return _Interface.Interface_EntityIterator_AddItem(self, *args)
 
-    def GetOneItem(self, *args) -> "void" :
+    def GetOneItem(self, *args):
         """
         * same as AddItem (kept for compatibility)
 
@@ -2736,7 +3000,7 @@ class Interface_EntityIterator(object):
         """
         return _Interface.Interface_EntityIterator_GetOneItem(self, *args)
 
-    def SelectType(self, *args) -> "void" :
+    def SelectType(self, *args):
         """
         * Selects entities with are Kind of a given type, keep only them (is keep is True) or reject only them (if keep is False)
 
@@ -2749,16 +3013,16 @@ class Interface_EntityIterator(object):
         """
         return _Interface.Interface_EntityIterator_SelectType(self, *args)
 
-    def NbEntities(self, *args) -> "Standard_Integer" :
+    def NbEntities(self):
         """
         * Returns count of entities which will be iterated on Calls Start if not yet done
 
         :rtype: int
 
         """
-        return _Interface.Interface_EntityIterator_NbEntities(self, *args)
+        return _Interface.Interface_EntityIterator_NbEntities(self)
 
-    def NbTyped(self, *args) -> "Standard_Integer" :
+    def NbTyped(self, *args):
         """
         * Returns count of entities of a given type (kind of)
 
@@ -2769,7 +3033,7 @@ class Interface_EntityIterator(object):
         """
         return _Interface.Interface_EntityIterator_NbTyped(self, *args)
 
-    def Typed(self, *args) -> "Interface_EntityIterator" :
+    def Typed(self, *args):
         """
         * Returns the list of entities of a given type (kind of)
 
@@ -2780,59 +3044,59 @@ class Interface_EntityIterator(object):
         """
         return _Interface.Interface_EntityIterator_Typed(self, *args)
 
-    def Start(self, *args) -> "void" :
+    def Start(self):
         """
         * Allows re-iteration (useless for the first iteration)
 
         :rtype: void
 
         """
-        return _Interface.Interface_EntityIterator_Start(self, *args)
+        return _Interface.Interface_EntityIterator_Start(self)
 
-    def More(self, *args) -> "Standard_Boolean" :
+    def More(self):
         """
         * Says if there are other entities (vertices) to iterate the first time, calls Start
 
         :rtype: bool
 
         """
-        return _Interface.Interface_EntityIterator_More(self, *args)
+        return _Interface.Interface_EntityIterator_More(self)
 
-    def Next(self, *args) -> "void" :
+    def Next(self):
         """
         * Sets iteration to the next entity (vertex) to give
 
         :rtype: None
 
         """
-        return _Interface.Interface_EntityIterator_Next(self, *args)
+        return _Interface.Interface_EntityIterator_Next(self)
 
-    def Value(self, *args) -> "Handle_Standard_Transient const &" :
+    def Value(self):
         """
         * Returns the current Entity iterated, to be used by Interface tools or by GraphTools (where Entity is a Vertex)
 
         :rtype: Handle_Standard_Transient
 
         """
-        return _Interface.Interface_EntityIterator_Value(self, *args)
+        return _Interface.Interface_EntityIterator_Value(self)
 
-    def Content(self, *args) -> "Handle_TColStd_HSequenceOfTransient" :
+    def Content(self):
         """
         * Returns the content of the Iterator, accessed through a Handle to be used by a frontal-engine logic Returns an empty Sequence if the Iterator is empty Calls Start if not yet done
 
         :rtype: Handle_TColStd_HSequenceOfTransient
 
         """
-        return _Interface.Interface_EntityIterator_Content(self, *args)
+        return _Interface.Interface_EntityIterator_Content(self)
 
-    def Destroy(self, *args) -> "void" :
+    def Destroy(self):
         """
         * Clears data of iteration
 
         :rtype: void
 
         """
-        return _Interface.Interface_EntityIterator_Destroy(self, *args)
+        return _Interface.Interface_EntityIterator_Destroy(self)
 
     def __del__(self):
     	try:
@@ -2862,24 +3126,24 @@ Interface_EntityIterator_swigregister(Interface_EntityIterator)
 class Interface_EntityList(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         * Creates a List as beeing empty
 
         :rtype: None
 
         """
-        _Interface.Interface_EntityList_swiginit(self,_Interface.new_Interface_EntityList(*args))
-    def Clear(self, *args) -> "void" :
+        _Interface.Interface_EntityList_swiginit(self,_Interface.new_Interface_EntityList())
+    def Clear(self):
         """
         * Clears the List
 
         :rtype: None
 
         """
-        return _Interface.Interface_EntityList_Clear(self, *args)
+        return _Interface.Interface_EntityList_Clear(self)
 
-    def Append(self, *args) -> "void" :
+    def Append(self, *args):
         """
         * Appends an Entity, that is to the END of the list (keeps order, but works slowerly than Add, see below)
 
@@ -2890,7 +3154,7 @@ class Interface_EntityList(object):
         """
         return _Interface.Interface_EntityList_Append(self, *args)
 
-    def Add(self, *args) -> "void" :
+    def Add(self, *args):
         """
         * Adds an Entity to the list, that is, with NO REGARD about the order (faster than Append if count becomes greater than 10)
 
@@ -2901,7 +3165,7 @@ class Interface_EntityList(object):
         """
         return _Interface.Interface_EntityList_Add(self, *args)
 
-    def Remove(self, *args) -> "void" :
+    def Remove(self, *args):
         """
         * Removes an Entity from the list, if it is there
 
@@ -2912,47 +3176,47 @@ class Interface_EntityList(object):
         * Removes an Entity from the list, given its rank
 
         :param num:
-        :type num: int
+        :type num: Standard_Integer
         :rtype: None
 
         """
         return _Interface.Interface_EntityList_Remove(self, *args)
 
-    def IsEmpty(self, *args) -> "Standard_Boolean" :
+    def IsEmpty(self):
         """
         * Returns True if the list is empty
 
         :rtype: bool
 
         """
-        return _Interface.Interface_EntityList_IsEmpty(self, *args)
+        return _Interface.Interface_EntityList_IsEmpty(self)
 
-    def NbEntities(self, *args) -> "Standard_Integer" :
+    def NbEntities(self):
         """
         * Returns count of recorded Entities
 
         :rtype: int
 
         """
-        return _Interface.Interface_EntityList_NbEntities(self, *args)
+        return _Interface.Interface_EntityList_NbEntities(self)
 
-    def Value(self, *args) -> "Handle_Standard_Transient const &" :
+    def Value(self, *args):
         """
         * Returns an Item given its number. Beware about the way the list was filled (see above, Add and Append)
 
         :param num:
-        :type num: int
+        :type num: Standard_Integer
         :rtype: Handle_Standard_Transient
 
         """
         return _Interface.Interface_EntityList_Value(self, *args)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         * Returns an Item given its number. Beware about the way the list was filled (see above, Add and Append)
 
         :param num:
-        :type num: int
+        :type num: Standard_Integer
         :param ent:
         :type ent: Handle_Standard_Transient &
         :rtype: None
@@ -2960,7 +3224,7 @@ class Interface_EntityList(object):
         """
         return _Interface.Interface_EntityList_SetValue(self, *args)
 
-    def FillIterator(self, *args) -> "void" :
+    def FillIterator(self, *args):
         """
         * fills an Iterator with the content of the list (normal way to consult a list which has been filled with Add)
 
@@ -2971,7 +3235,7 @@ class Interface_EntityList(object):
         """
         return _Interface.Interface_EntityList_FillIterator(self, *args)
 
-    def NbTypedEntities(self, *args) -> "Standard_Integer" :
+    def NbTypedEntities(self, *args):
         """
         * Returns count of Entities of a given Type (0 : none)
 
@@ -2982,14 +3246,22 @@ class Interface_EntityList(object):
         """
         return _Interface.Interface_EntityList_NbTypedEntities(self, *args)
 
-    def TypedEntity(self, *args) -> "Handle_Standard_Transient" :
+    def TypedEntity(self, *args):
         """
         * Returns the Entity which is of a given type. If num = 0 (D), there must be ONE AND ONLY ONE If num > 0, returns the num-th entity of this type
 
         :param atype:
         :type atype: Handle_Standard_Type &
         :param num: default value is 0
-        :type num: int
+        :type num: Standard_Integer
+        :rtype: Handle_Standard_Transient
+
+        * Returns the Entity which is of a given type. If num = 0 (D), there must be ONE AND ONLY ONE If num > 0, returns the num-th entity of this type
+
+        :param atype:
+        :type atype: Handle_Standard_Type &
+        :param num: default value is 0
+        :type num: Standard_Integer
         :rtype: Handle_Standard_Transient
 
         """
@@ -3021,13 +3293,13 @@ Interface_EntityList_swigregister(Interface_EntityList)
 class Interface_FileParameter(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _Interface.Interface_FileParameter_swiginit(self,_Interface.new_Interface_FileParameter(*args))
-    def Init(self, *args) -> "void" :
+        _Interface.Interface_FileParameter_swiginit(self,_Interface.new_Interface_FileParameter())
+    def Init(self, *args):
         """
         * Fills fields (with Entity Number set to zero)
 
@@ -3048,61 +3320,61 @@ class Interface_FileParameter(object):
         """
         return _Interface.Interface_FileParameter_Init(self, *args)
 
-    def CValue(self, *args) -> "char *" :
+    def CValue(self):
         """
         * Same as above, but as a CString (for immediate exploitation) was C++ : return const
 
         :rtype: char *
 
         """
-        return _Interface.Interface_FileParameter_CValue(self, *args)
+        return _Interface.Interface_FileParameter_CValue(self)
 
-    def ParamType(self, *args) -> "Interface_ParamType" :
+    def ParamType(self):
         """
         * Returns the type of the parameter
 
         :rtype: Interface_ParamType
 
         """
-        return _Interface.Interface_FileParameter_ParamType(self, *args)
+        return _Interface.Interface_FileParameter_ParamType(self)
 
-    def SetEntityNumber(self, *args) -> "void" :
+    def SetEntityNumber(self, *args):
         """
         * Allows to set a reference to an Entity in a numbered list
 
         :param num:
-        :type num: int
+        :type num: Standard_Integer
         :rtype: None
 
         """
         return _Interface.Interface_FileParameter_SetEntityNumber(self, *args)
 
-    def EntityNumber(self, *args) -> "Standard_Integer" :
+    def EntityNumber(self):
         """
         * Returns value set by SetEntityNumber
 
         :rtype: int
 
         """
-        return _Interface.Interface_FileParameter_EntityNumber(self, *args)
+        return _Interface.Interface_FileParameter_EntityNumber(self)
 
-    def Clear(self, *args) -> "void" :
+    def Clear(self):
         """
         * Clears stored data : frees memory taken for the String Value
 
         :rtype: None
 
         """
-        return _Interface.Interface_FileParameter_Clear(self, *args)
+        return _Interface.Interface_FileParameter_Clear(self)
 
-    def Destroy(self, *args) -> "void" :
+    def Destroy(self):
         """
         * Destructor. Does nothing because Memory is managed by ParamSet
 
         :rtype: None
 
         """
-        return _Interface.Interface_FileParameter_Destroy(self, *args)
+        return _Interface.Interface_FileParameter_Destroy(self)
 
     def __del__(self):
     	try:
@@ -3127,76 +3399,100 @@ class Interface_FileReaderData(OCC.MMgt.MMgt_TShared):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def NbRecords(self, *args) -> "Standard_Integer" :
+    def NbRecords(self):
         """
         * Returns the count of registered records That is, value given for Initialization (can be redefined)
 
         :rtype: int
 
         """
-        return _Interface.Interface_FileReaderData_NbRecords(self, *args)
+        return _Interface.Interface_FileReaderData_NbRecords(self)
 
-    def NbEntities(self, *args) -> "Standard_Integer" :
+    def NbEntities(self):
         """
         * Returns the count of entities. Depending of each norm, records can be Entities or SubParts (SubList in STEP, SubGroup in SET ...). NbEntities counts only Entities, not Subs Used for memory reservation in InterfaceModel Default implementation uses FindNextRecord Can be redefined into a more performant way
 
         :rtype: int
 
         """
-        return _Interface.Interface_FileReaderData_NbEntities(self, *args)
+        return _Interface.Interface_FileReaderData_NbEntities(self)
 
-    def FindNextRecord(self, *args) -> "Standard_Integer" :
+    def FindNextRecord(self, *args):
         """
         * Determines the record number defining an Entity following a given record number. Specific to each sub-class of FileReaderData. Returning zero means no record found
 
         :param num:
-        :type num: int
+        :type num: Standard_Integer
         :rtype: int
 
         """
         return _Interface.Interface_FileReaderData_FindNextRecord(self, *args)
 
-    def InitParams(self, *args) -> "void" :
+    def InitParams(self, *args):
         """
         * attaches an empty ParamList to a Record
 
         :param num:
-        :type num: int
+        :type num: Standard_Integer
         :rtype: None
 
         """
         return _Interface.Interface_FileReaderData_InitParams(self, *args)
 
-    def AddParam(self, *args) -> "void" :
+    def AddParam(self, *args):
         """
         * Adds a parameter to record no 'num' and fills its fields (EntityNumber is optional) Warning : <aval> is assumed to be memory-managed elsewhere : it is NOT copied. This gives a best speed : strings remain stored in pages of characters
 
         :param num:
-        :type num: int
+        :type num: Standard_Integer
         :param aval:
         :type aval: char *
         :param atype:
         :type atype: Interface_ParamType
         :param nument: default value is 0
-        :type nument: int
+        :type nument: Standard_Integer
+        :rtype: None
+
+        * Adds a parameter to record no 'num' and fills its fields (EntityNumber is optional) Warning : <aval> is assumed to be memory-managed elsewhere : it is NOT copied. This gives a best speed : strings remain stored in pages of characters
+
+        :param num:
+        :type num: Standard_Integer
+        :param aval:
+        :type aval: char *
+        :param atype:
+        :type atype: Interface_ParamType
+        :param nument: default value is 0
+        :type nument: Standard_Integer
         :rtype: None
 
         * Same as above, but gets a AsciiString from TCollection Remark that the content of the AsciiString is locally copied (because its content is most often lost after using)
 
         :param num:
-        :type num: int
+        :type num: Standard_Integer
         :param aval:
         :type aval: TCollection_AsciiString &
         :param atype:
         :type atype: Interface_ParamType
         :param nument: default value is 0
-        :type nument: int
+        :type nument: Standard_Integer
+        :rtype: None
+
+        * Same as above, but gets a AsciiString from TCollection Remark that the content of the AsciiString is locally copied (because its content is most often lost after using)
+
+        :param num:
+        :type num: Standard_Integer
+        :param aval:
+        :type aval: TCollection_AsciiString &
+        :param atype:
+        :type atype: Interface_ParamType
+        :param nument: default value is 0
+        :type nument: Standard_Integer
         :rtype: None
 
         * Same as above, but gets a complete FileParameter Warning : Content of <FP> is NOT copied : its original address and space in memory are assumed to be managed elsewhere (see ParamSet)
 
         :param num:
-        :type num: int
+        :type num: Standard_Integer
         :param FP:
         :type FP: Interface_FileParameter &
         :rtype: None
@@ -3204,14 +3500,14 @@ class Interface_FileReaderData(OCC.MMgt.MMgt_TShared):
         """
         return _Interface.Interface_FileReaderData_AddParam(self, *args)
 
-    def SetParam(self, *args) -> "void" :
+    def SetParam(self, *args):
         """
         * Sets a new value for a parameter of a record, given by : num : record number; nump : parameter number in the record
 
         :param num:
-        :type num: int
+        :type num: Standard_Integer
         :param nump:
-        :type nump: int
+        :type nump: Standard_Integer
         :param FP:
         :type FP: Interface_FileParameter &
         :rtype: None
@@ -3219,147 +3515,147 @@ class Interface_FileReaderData(OCC.MMgt.MMgt_TShared):
         """
         return _Interface.Interface_FileReaderData_SetParam(self, *args)
 
-    def NbParams(self, *args) -> "Standard_Integer" :
+    def NbParams(self, *args):
         """
         * Returns count of parameters attached to record 'num' If <num> = 0, returns the total recorded count of parameters
 
         :param num:
-        :type num: int
+        :type num: Standard_Integer
         :rtype: int
 
         """
         return _Interface.Interface_FileReaderData_NbParams(self, *args)
 
-    def Params(self, *args) -> "Handle_Interface_ParamList" :
+    def Params(self, *args):
         """
         * Returns the complete ParamList of a record (read only) num = 0 to return the whole param list for the file
 
         :param num:
-        :type num: int
+        :type num: Standard_Integer
         :rtype: Handle_Interface_ParamList
 
         """
         return _Interface.Interface_FileReaderData_Params(self, *args)
 
-    def Param(self, *args) -> "Interface_FileParameter const &" :
+    def Param(self, *args):
         """
         * Returns parameter 'nump' of record 'num', as a complete FileParameter
 
         :param num:
-        :type num: int
+        :type num: Standard_Integer
         :param nump:
-        :type nump: int
+        :type nump: Standard_Integer
         :rtype: Interface_FileParameter
 
         """
         return _Interface.Interface_FileReaderData_Param(self, *args)
 
-    def ChangeParam(self, *args) -> "Interface_FileParameter &" :
+    def ChangeParam(self, *args):
         """
         * Same as above, but in order to be modified on place
 
         :param num:
-        :type num: int
+        :type num: Standard_Integer
         :param nump:
-        :type nump: int
+        :type nump: Standard_Integer
         :rtype: Interface_FileParameter
 
         """
         return _Interface.Interface_FileReaderData_ChangeParam(self, *args)
 
-    def ParamType(self, *args) -> "Interface_ParamType" :
+    def ParamType(self, *args):
         """
         * Returns type of parameter 'nump' of record 'num' Returns literal value of parameter 'nump' of record 'num' was C++ : return const &
 
         :param num:
-        :type num: int
+        :type num: Standard_Integer
         :param nump:
-        :type nump: int
+        :type nump: Standard_Integer
         :rtype: Interface_ParamType
 
         """
         return _Interface.Interface_FileReaderData_ParamType(self, *args)
 
-    def ParamCValue(self, *args) -> "char *" :
+    def ParamCValue(self, *args):
         """
         * Same as above, but as a CString was C++ : return const
 
         :param num:
-        :type num: int
+        :type num: Standard_Integer
         :param nump:
-        :type nump: int
+        :type nump: Standard_Integer
         :rtype: char *
 
         """
         return _Interface.Interface_FileReaderData_ParamCValue(self, *args)
 
-    def IsParamDefined(self, *args) -> "Standard_Boolean" :
+    def IsParamDefined(self, *args):
         """
         * Returns True if parameter 'nump' of record 'num' is defined (it is not if its type is ParamVoid)
 
         :param num:
-        :type num: int
+        :type num: Standard_Integer
         :param nump:
-        :type nump: int
+        :type nump: Standard_Integer
         :rtype: bool
 
         """
         return _Interface.Interface_FileReaderData_IsParamDefined(self, *args)
 
-    def ParamNumber(self, *args) -> "Standard_Integer" :
+    def ParamNumber(self, *args):
         """
         * Returns record number of an entity referenced by a parameter of type Ident; 0 if no EntityNumber has been determined Note that it is used to reference Entities but also Sublists (sublists are not objects, but internal descriptions)
 
         :param num:
-        :type num: int
+        :type num: Standard_Integer
         :param nump:
-        :type nump: int
+        :type nump: Standard_Integer
         :rtype: int
 
         """
         return _Interface.Interface_FileReaderData_ParamNumber(self, *args)
 
-    def ParamEntity(self, *args) -> "Handle_Standard_Transient const &" :
+    def ParamEntity(self, *args):
         """
         * Returns the StepEntity referenced by a parameter Error if none
 
         :param num:
-        :type num: int
+        :type num: Standard_Integer
         :param nump:
-        :type nump: int
+        :type nump: Standard_Integer
         :rtype: Handle_Standard_Transient
 
         """
         return _Interface.Interface_FileReaderData_ParamEntity(self, *args)
 
-    def ParamFirstRank(self, *args) -> "Standard_Integer" :
+    def ParamFirstRank(self, *args):
         """
         * Returns the absolute rank of the beginning of a record (its lsit is from ParamFirstRank+1 to ParamFirstRank+NbParams)
 
         :param num:
-        :type num: int
+        :type num: Standard_Integer
         :rtype: int
 
         """
         return _Interface.Interface_FileReaderData_ParamFirstRank(self, *args)
 
-    def BoundEntity(self, *args) -> "Handle_Standard_Transient const &" :
+    def BoundEntity(self, *args):
         """
         * Returns the entity bound to a record, set by SetEntities
 
         :param num:
-        :type num: int
+        :type num: Standard_Integer
         :rtype: Handle_Standard_Transient
 
         """
         return _Interface.Interface_FileReaderData_BoundEntity(self, *args)
 
-    def BindEntity(self, *args) -> "void" :
+    def BindEntity(self, *args):
         """
         * Binds an entity to a record
 
         :param num:
-        :type num: int
+        :type num: Standard_Integer
         :param ent:
         :type ent: Handle_Standard_Transient &
         :rtype: None
@@ -3367,7 +3663,7 @@ class Interface_FileReaderData(OCC.MMgt.MMgt_TShared):
         """
         return _Interface.Interface_FileReaderData_BindEntity(self, *args)
 
-    def SetErrorLoad(self, *args) -> "void" :
+    def SetErrorLoad(self, *args):
         """
         * Sets the status 'Error Load' on, to overside check fails <val> True : declares unloaded <val> False : declares loaded If not called before loading (see FileReaderTool), check fails give the status IsErrorLoad says if SetErrorLoad has been called by user ResetErrorLoad resets it (called by FileReaderTool) This allows to specify that the currently loaded entity remains unloaded (because of syntactic fail)
 
@@ -3378,34 +3674,34 @@ class Interface_FileReaderData(OCC.MMgt.MMgt_TShared):
         """
         return _Interface.Interface_FileReaderData_SetErrorLoad(self, *args)
 
-    def IsErrorLoad(self, *args) -> "Standard_Boolean" :
+    def IsErrorLoad(self):
         """
         * Returns True if the status 'Error Load' has been set (to True or False)
 
         :rtype: bool
 
         """
-        return _Interface.Interface_FileReaderData_IsErrorLoad(self, *args)
+        return _Interface.Interface_FileReaderData_IsErrorLoad(self)
 
-    def ResetErrorLoad(self, *args) -> "Standard_Boolean" :
+    def ResetErrorLoad(self):
         """
         * Returns the former value of status 'Error Load' then resets it Used to read the status then ensure it is reset
 
         :rtype: bool
 
         """
-        return _Interface.Interface_FileReaderData_ResetErrorLoad(self, *args)
+        return _Interface.Interface_FileReaderData_ResetErrorLoad(self)
 
-    def Destroy(self, *args) -> "void" :
+    def Destroy(self):
         """
         * Destructor (waiting for memory management)
 
         :rtype: None
 
         """
-        return _Interface.Interface_FileReaderData_Destroy(self, *args)
+        return _Interface.Interface_FileReaderData_Destroy(self)
 
-    def Fastof(*args) -> "Standard_Real" :
+    def Fastof(*args):
         """
         * Same spec.s as standard <atof> but 5 times faster
 
@@ -3417,11 +3713,11 @@ class Interface_FileReaderData(OCC.MMgt.MMgt_TShared):
         return _Interface.Interface_FileReaderData_Fastof(*args)
 
     Fastof = staticmethod(Fastof)
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Interface_FileReaderData self)"""
         return _Interface.Interface_FileReaderData__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Interface_FileReaderData" :
+    def GetHandle(self):
         """GetHandle(Interface_FileReaderData self) -> Handle_Interface_FileReaderData"""
         return _Interface.Interface_FileReaderData_GetHandle(self)
 
@@ -3460,7 +3756,7 @@ Interface_FileReaderData.GetHandle = new_instancemethod(_Interface.Interface_Fil
 Interface_FileReaderData_swigregister = _Interface.Interface_FileReaderData_swigregister
 Interface_FileReaderData_swigregister(Interface_FileReaderData)
 
-def Interface_FileReaderData_Fastof(*args) -> "Standard_Real" :
+def Interface_FileReaderData_Fastof(*args):
   """
     * Same spec.s as standard <atof> but 5 times faster
 
@@ -3492,7 +3788,7 @@ Handle_Interface_FileReaderData._kill_pointed = new_instancemethod(_Interface.Ha
 Handle_Interface_FileReaderData_swigregister = _Interface.Handle_Interface_FileReaderData_swigregister
 Handle_Interface_FileReaderData_swigregister(Handle_Interface_FileReaderData)
 
-def Handle_Interface_FileReaderData_DownCast(*args) -> "Handle_Interface_FileReaderData const" :
+def Handle_Interface_FileReaderData_DownCast(*args):
   return _Interface.Handle_Interface_FileReaderData_DownCast(*args)
 Handle_Interface_FileReaderData_DownCast = _Interface.Handle_Interface_FileReaderData_DownCast
 
@@ -3500,7 +3796,7 @@ class Interface_FileReaderTool(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def SetData(self, *args) -> "void" :
+    def SetData(self, *args):
         """
         * Sets Data to a FileReaderData. Works with a Protocol
 
@@ -3513,25 +3809,25 @@ class Interface_FileReaderTool(object):
         """
         return _Interface.Interface_FileReaderTool_SetData(self, *args)
 
-    def Protocol(self, *args) -> "Handle_Interface_Protocol" :
+    def Protocol(self):
         """
         * Returns the Protocol given at creation time
 
         :rtype: Handle_Interface_Protocol
 
         """
-        return _Interface.Interface_FileReaderTool_Protocol(self, *args)
+        return _Interface.Interface_FileReaderTool_Protocol(self)
 
-    def Data(self, *args) -> "Handle_Interface_FileReaderData" :
+    def Data(self):
         """
         * Returns the FileReaderData which is used to work
 
         :rtype: Handle_Interface_FileReaderData
 
         """
-        return _Interface.Interface_FileReaderTool_Data(self, *args)
+        return _Interface.Interface_FileReaderTool_Data(self)
 
-    def SetModel(self, *args) -> "void" :
+    def SetModel(self, *args):
         """
         * Stores a Model. Used when the Model has been loaded
 
@@ -3542,16 +3838,16 @@ class Interface_FileReaderTool(object):
         """
         return _Interface.Interface_FileReaderTool_SetModel(self, *args)
 
-    def Model(self, *args) -> "Handle_Interface_InterfaceModel" :
+    def Model(self):
         """
         * Returns the stored Model
 
         :rtype: Handle_Interface_InterfaceModel
 
         """
-        return _Interface.Interface_FileReaderTool_Model(self, *args)
+        return _Interface.Interface_FileReaderTool_Model(self)
 
-    def SetMessenger(self, *args) -> "void" :
+    def SetMessenger(self, *args):
         """
         * Sets Messenger used for outputting messages
 
@@ -3562,50 +3858,50 @@ class Interface_FileReaderTool(object):
         """
         return _Interface.Interface_FileReaderTool_SetMessenger(self, *args)
 
-    def Messenger(self, *args) -> "Handle_Message_Messenger" :
+    def Messenger(self):
         """
         * Returns Messenger used for outputting messages. The returned object is guaranteed to be non-null; default is Message::Messenger().
 
         :rtype: Handle_Message_Messenger
 
         """
-        return _Interface.Interface_FileReaderTool_Messenger(self, *args)
+        return _Interface.Interface_FileReaderTool_Messenger(self)
 
-    def SetTraceLevel(self, *args) -> "void" :
+    def SetTraceLevel(self, *args):
         """
         * Sets trace level used for outputting messages - 0: no trace at all - 1: errors - 2: errors and warnings - 3: all messages Default is 1 : Errors traced
 
         :param tracelev:
-        :type tracelev: int
+        :type tracelev: Standard_Integer
         :rtype: None
 
         """
         return _Interface.Interface_FileReaderTool_SetTraceLevel(self, *args)
 
-    def TraceLevel(self, *args) -> "Standard_Integer" :
+    def TraceLevel(self):
         """
         * Returns trace level used for outputting messages.
 
         :rtype: int
 
         """
-        return _Interface.Interface_FileReaderTool_TraceLevel(self, *args)
+        return _Interface.Interface_FileReaderTool_TraceLevel(self)
 
-    def SetEntities(self, *args) -> "void" :
+    def SetEntities(self):
         """
         * Fills records with empty entities; once done, each entity can ask the FileReaderTool for any entity referenced through an identifier. Calls Recognize which is specific to each specific type of FileReaderTool
 
         :rtype: None
 
         """
-        return _Interface.Interface_FileReaderTool_SetEntities(self, *args)
+        return _Interface.Interface_FileReaderTool_SetEntities(self)
 
-    def Recognize(self, *args) -> "Standard_Boolean" :
+    def Recognize(self, *args):
         """
         * Recognizes a record, given its number. Specific to each Interface; called by SetEntities. It can call the basic method RecognizeByLib. Returns False if recognition has failed, True else. <ach> has not to be filled if simply Recognition has failed : it must record true error messages : RecognizeByLib can generate error messages if NewRead is called Note that it works thru a Recognizer (method Evaluate) which has to be memorized before starting
 
         :param num:
-        :type num: int
+        :type num: Standard_Integer
         :param ach:
         :type ach: Handle_Interface_Check &
         :param ent:
@@ -3615,12 +3911,12 @@ class Interface_FileReaderTool(object):
         """
         return _Interface.Interface_FileReaderTool_Recognize(self, *args)
 
-    def RecognizeByLib(self, *args) -> "Standard_Boolean" :
+    def RecognizeByLib(self, *args):
         """
         * Recognizes a record with the help of Libraries. Can be used to implement the method Recognize. <rlib> is used to find Protocol and CaseNumber to apply <glib> performs the creation (by service NewVoid, or NewRead if NewVoid gave no result) <ach> is a check, which is transmitted to NewRead if it is called, gives a result but which is false <ent> is the result Returns False if recognition has failed, True else
 
         :param num:
-        :type num: int
+        :type num: Standard_Integer
         :param glib:
         :type glib: Interface_GeneralLib &
         :param rlib:
@@ -3634,25 +3930,25 @@ class Interface_FileReaderTool(object):
         """
         return _Interface.Interface_FileReaderTool_RecognizeByLib(self, *args)
 
-    def UnknownEntity(self, *args) -> "Handle_Standard_Transient" :
+    def UnknownEntity(self):
         """
         * Provides an unknown entity, specific to the Interface called by SetEntities when Recognize has failed (Unknown alone) or by LoadModel when an Entity has caused a Fail on reading (to keep at least its literal description) Uses Protocol to do it
 
         :rtype: Handle_Standard_Transient
 
         """
-        return _Interface.Interface_FileReaderTool_UnknownEntity(self, *args)
+        return _Interface.Interface_FileReaderTool_UnknownEntity(self)
 
-    def NewModel(self, *args) -> "Handle_Interface_InterfaceModel" :
+    def NewModel(self):
         """
         * Creates an empty Model of the norm. Uses Protocol to do it
 
         :rtype: Handle_Interface_InterfaceModel
 
         """
-        return _Interface.Interface_FileReaderTool_NewModel(self, *args)
+        return _Interface.Interface_FileReaderTool_NewModel(self)
 
-    def LoadModel(self, *args) -> "void" :
+    def LoadModel(self, *args):
         """
         * Reads and fills Entities from the FileReaderData set by SetData to an InterfaceModel. It enchains required operations, the specific ones correspond to deferred methods (below) to be defined for each Norm. It manages also error recovery and trace. Remark : it calls SetModel. It Can raise any error which can occur during a load operation, unless Error Handling is set. This method can also be redefined if judged necessary.
 
@@ -3663,18 +3959,18 @@ class Interface_FileReaderTool(object):
         """
         return _Interface.Interface_FileReaderTool_LoadModel(self, *args)
 
-    def LoadedEntity(self, *args) -> "Handle_Standard_Transient" :
+    def LoadedEntity(self, *args):
         """
         * Reads, Fills and Returns one Entity read from a Record of the FileReaderData. This Method manages also case of Fail or Warning, by producing a ReportEntyty plus , for a Fail, a literal Content (as an UnknownEntity). Performs also Trace
 
         :param num:
-        :type num: int
+        :type num: Standard_Integer
         :rtype: Handle_Standard_Transient
 
         """
         return _Interface.Interface_FileReaderTool_LoadedEntity(self, *args)
 
-    def BeginRead(self, *args) -> "void" :
+    def BeginRead(self, *args):
         """
         * Fills model's header; each Interface defines for its Model its own file header; this method fills it from FileReaderTool.+ It is called by AnalyseFile from InterfaceModel
 
@@ -3685,12 +3981,12 @@ class Interface_FileReaderTool(object):
         """
         return _Interface.Interface_FileReaderTool_BeginRead(self, *args)
 
-    def AnalyseRecord(self, *args) -> "Standard_Boolean" :
+    def AnalyseRecord(self, *args):
         """
         * Fills an Entity, given record no; specific to each Interface, called by AnalyseFile from InterfaceModel (which manages its calling arguments) To work, each Interface can define a method in its proper Transient class, like this (given as an example) : AnalyseRecord (me : mutable; FR : in out FileReaderTool;  num : Integer; acheck : in out Check)  returns Boolean; and call it from AnalyseRecord Returned Value : True if the entity could be loaded, False else (in case of syntactic fail)
 
         :param num:
-        :type num: int
+        :type num: Standard_Integer
         :param anent:
         :type anent: Handle_Standard_Transient &
         :param acheck:
@@ -3700,14 +3996,14 @@ class Interface_FileReaderTool(object):
         """
         return _Interface.Interface_FileReaderTool_AnalyseRecord(self, *args)
 
-    def Destroy(self, *args) -> "void" :
+    def Destroy(self):
         """
         :rtype: void
 
         """
-        return _Interface.Interface_FileReaderTool_Destroy(self, *args)
+        return _Interface.Interface_FileReaderTool_Destroy(self)
 
-    def EndRead(self, *args) -> "void" :
+    def EndRead(self, *args):
         """
         * Ends file reading after reading all the entities default is doing nothing; redefinable as necessary
 
@@ -3718,14 +4014,14 @@ class Interface_FileReaderTool(object):
         """
         return _Interface.Interface_FileReaderTool_EndRead(self, *args)
 
-    def Clear(self, *args) -> "void" :
+    def Clear(self):
         """
         * Clear filelds
 
         :rtype: None
 
         """
-        return _Interface.Interface_FileReaderTool_Clear(self, *args)
+        return _Interface.Interface_FileReaderTool_Clear(self)
 
     def __del__(self):
     	try:
@@ -3763,18 +4059,32 @@ Interface_FileReaderTool_swigregister(Interface_FileReaderTool)
 class Interface_FloatWriter(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self, chars=0): 
         """
         * Creates a FloatWriter ready to work, with default options - - zero suppress option is set - main format is set to '%E' - secondary format is set to '%f' for values between 0.1 and 1000. in absolute values If <chars> is given (and positive), it will produce options to produce this count of characters : '%<chars>f','%<chars>%E'
 
         :param chars: default value is 0
-        :type chars: int
+        :type chars: Standard_Integer
+        :rtype: None
+
+        * Creates a FloatWriter ready to work, with default options - - zero suppress option is set - main format is set to '%E' - secondary format is set to '%f' for values between 0.1 and 1000. in absolute values If <chars> is given (and positive), it will produce options to produce this count of characters : '%<chars>f','%<chars>%E'
+
+        :param chars: default value is 0
+        :type chars: Standard_Integer
         :rtype: None
 
         """
-        _Interface.Interface_FloatWriter_swiginit(self,_Interface.new_Interface_FloatWriter(*args))
-    def SetFormat(self, *args) -> "void" :
+        _Interface.Interface_FloatWriter_swiginit(self,_Interface.new_Interface_FloatWriter(chars))
+    def SetFormat(self, *args):
         """
+        * Sets a specific Format for Sending Reals (main format) (Default from Creation is '%E') If <reset> is given True (default), this call clears effects of former calls to SetFormatForRange and SetZeroSuppress
+
+        :param form:
+        :type form: char *
+        :param reset: default value is Standard_True
+        :type reset: bool
+        :rtype: None
+
         * Sets a specific Format for Sending Reals (main format) (Default from Creation is '%E') If <reset> is given True (default), this call clears effects of former calls to SetFormatForRange and SetZeroSuppress
 
         :param form:
@@ -3786,7 +4096,7 @@ class Interface_FloatWriter(object):
         """
         return _Interface.Interface_FloatWriter_SetFormat(self, *args)
 
-    def SetFormatForRange(self, *args) -> "void" :
+    def SetFormatForRange(self, *args):
         """
         * Sets a secondary Format for Real, to be applied between R1 and R2 (in absolute values). A Call to SetRealForm cancels this secondary form if <reset> is True. (Default from Creation is '%f' between 0.1 and 1000.) Warning : if the condition (0. <= R1 < R2) is not fulfilled, this secondary form is canceled.
 
@@ -3801,7 +4111,7 @@ class Interface_FloatWriter(object):
         """
         return _Interface.Interface_FloatWriter_SetFormatForRange(self, *args)
 
-    def SetZeroSuppress(self, *args) -> "void" :
+    def SetZeroSuppress(self, *args):
         """
         * Sets Sending Real Parameters to suppress trailing Zeros and Null Exponant ('E+00'), if <mode> is given True, Resets this mode if <mode> is False (in addition to Real Forms) A call to SetRealFrom resets this mode to False ig <reset> is given True (Default from Creation is True)
 
@@ -3812,18 +4122,24 @@ class Interface_FloatWriter(object):
         """
         return _Interface.Interface_FloatWriter_SetZeroSuppress(self, *args)
 
-    def SetDefaults(self, *args) -> "void" :
+    def SetDefaults(self, chars=0):
         """
         * Sets again options to the defaults given by Create
 
         :param chars: default value is 0
-        :type chars: int
+        :type chars: Standard_Integer
+        :rtype: None
+
+        * Sets again options to the defaults given by Create
+
+        :param chars: default value is 0
+        :type chars: Standard_Integer
         :rtype: None
 
         """
-        return _Interface.Interface_FloatWriter_SetDefaults(self, *args)
+        return _Interface.Interface_FloatWriter_SetDefaults(self, chars)
 
-    def Options(self, *args) -> "void" :
+    def Options(self, *args):
         """
         * Returns active options : <zerosup> is the option ZeroSuppress, <range> is True if a range is set, False else R1,R2 give the range (if it is set)
 
@@ -3840,25 +4156,25 @@ class Interface_FloatWriter(object):
         """
         return _Interface.Interface_FloatWriter_Options(self, *args)
 
-    def MainFormat(self, *args) -> "char *" :
+    def MainFormat(self):
         """
         * Returns the main format was C++ : return const
 
         :rtype: char *
 
         """
-        return _Interface.Interface_FloatWriter_MainFormat(self, *args)
+        return _Interface.Interface_FloatWriter_MainFormat(self)
 
-    def FormatForRange(self, *args) -> "char *" :
+    def FormatForRange(self):
         """
         * Returns the format for range, if set Meaningful only if <range> from Options is True was C++ : return const
 
         :rtype: char *
 
         """
-        return _Interface.Interface_FloatWriter_FormatForRange(self, *args)
+        return _Interface.Interface_FloatWriter_FormatForRange(self)
 
-    def Write(self, *args) -> "Standard_Integer" :
+    def Write(self, *args):
         """
         * Writes a Real value <val> to a string <text> by using the options. Returns the useful Length of produced string. It calls the class method Convert. Warning : <text> is assumed to be wide enough (20-30 is correct) And, even if declared in, its content will be modified
 
@@ -3871,7 +4187,7 @@ class Interface_FloatWriter(object):
         """
         return _Interface.Interface_FloatWriter_Write(self, *args)
 
-    def Convert(*args) -> "Standard_Integer" :
+    def Convert(*args):
         """
         * This class method converts a Real Value to a string, given options given as arguments. It can be called independantly. Warning : even if declared in, content of <text> will be modified
 
@@ -3915,7 +4231,7 @@ Interface_FloatWriter._kill_pointed = new_instancemethod(_Interface.Interface_Fl
 Interface_FloatWriter_swigregister = _Interface.Interface_FloatWriter_swigregister
 Interface_FloatWriter_swigregister(Interface_FloatWriter)
 
-def Interface_FloatWriter_Convert(*args) -> "Standard_Integer" :
+def Interface_FloatWriter_Convert(*args):
   """
     * This class method converts a Real Value to a string, given options given as arguments. It can be called independantly. Warning : even if declared in, content of <text> will be modified
 
@@ -3952,12 +4268,20 @@ class Interface_GTool(OCC.MMgt.MMgt_TShared):
         :param proto:
         :type proto: Handle_Interface_Protocol &
         :param nbent: default value is 0
-        :type nbent: int
+        :type nbent: Standard_Integer
+        :rtype: None
+
+        * Creates a GTool from a Protocol Optional starting count of entities
+
+        :param proto:
+        :type proto: Handle_Interface_Protocol &
+        :param nbent: default value is 0
+        :type nbent: Standard_Integer
         :rtype: None
 
         """
         _Interface.Interface_GTool_swiginit(self,_Interface.new_Interface_GTool(*args))
-    def SetSignType(self, *args) -> "void" :
+    def SetSignType(self, *args):
         """
         * Sets a new SignType
 
@@ -3968,16 +4292,16 @@ class Interface_GTool(OCC.MMgt.MMgt_TShared):
         """
         return _Interface.Interface_GTool_SetSignType(self, *args)
 
-    def SignType(self, *args) -> "Handle_Interface_SignType" :
+    def SignType(self):
         """
         * Returns the SignType. Can be null
 
         :rtype: Handle_Interface_SignType
 
         """
-        return _Interface.Interface_GTool_SignType(self, *args)
+        return _Interface.Interface_GTool_SignType(self)
 
-    def SignValue(self, *args) -> "char *" :
+    def SignValue(self, *args):
         """
         * Returns the Signature for a Transient Object in a Model It calls SignType to do that If SignType is not defined, return ClassName of <ent>
 
@@ -3990,17 +4314,25 @@ class Interface_GTool(OCC.MMgt.MMgt_TShared):
         """
         return _Interface.Interface_GTool_SignValue(self, *args)
 
-    def SignName(self, *args) -> "char *" :
+    def SignName(self):
         """
         * Returns the Name of the SignType, or 'Class Name'
 
         :rtype: char *
 
         """
-        return _Interface.Interface_GTool_SignName(self, *args)
+        return _Interface.Interface_GTool_SignName(self)
 
-    def SetProtocol(self, *args) -> "void" :
+    def SetProtocol(self, *args):
         """
+        * Sets a new Protocol if <enforce> is False and the new Protocol equates the old one then nothing is done
+
+        :param proto:
+        :type proto: Handle_Interface_Protocol &
+        :param enforce: default value is Standard_False
+        :type enforce: bool
+        :rtype: None
+
         * Sets a new Protocol if <enforce> is False and the new Protocol equates the old one then nothing is done
 
         :param proto:
@@ -4012,30 +4344,38 @@ class Interface_GTool(OCC.MMgt.MMgt_TShared):
         """
         return _Interface.Interface_GTool_SetProtocol(self, *args)
 
-    def Protocol(self, *args) -> "Handle_Interface_Protocol" :
+    def Protocol(self):
         """
         * Returns the Protocol. Warning : it can be Null
 
         :rtype: Handle_Interface_Protocol
 
         """
-        return _Interface.Interface_GTool_Protocol(self, *args)
+        return _Interface.Interface_GTool_Protocol(self)
 
-    def Lib(self, *args) -> "Interface_GeneralLib &" :
+    def Lib(self):
         """
         * Returns the GeneralLib itself
 
         :rtype: Interface_GeneralLib
 
         """
-        return _Interface.Interface_GTool_Lib(self, *args)
+        return _Interface.Interface_GTool_Lib(self)
 
-    def Reservate(self, *args) -> "void" :
+    def Reservate(self, *args):
         """
         * Reservates maps for a count of entities <enforce> False : minimum count <enforce> True : clears former reservations Does not clear the maps
 
         :param nb:
-        :type nb: int
+        :type nb: Standard_Integer
+        :param enforce: default value is Standard_False
+        :type enforce: bool
+        :rtype: None
+
+        * Reservates maps for a count of entities <enforce> False : minimum count <enforce> True : clears former reservations Does not clear the maps
+
+        :param nb:
+        :type nb: Standard_Integer
         :param enforce: default value is Standard_False
         :type enforce: bool
         :rtype: None
@@ -4043,16 +4383,16 @@ class Interface_GTool(OCC.MMgt.MMgt_TShared):
         """
         return _Interface.Interface_GTool_Reservate(self, *args)
 
-    def ClearEntities(self, *args) -> "void" :
+    def ClearEntities(self):
         """
         * Clears the maps which record, for each already recorded entity its Module and Case Number
 
         :rtype: None
 
         """
-        return _Interface.Interface_GTool_ClearEntities(self, *args)
+        return _Interface.Interface_GTool_ClearEntities(self)
 
-    def Select(self, *args) -> "Standard_Boolean" :
+    def Select(self, *args):
         """
         * Selects for an entity, its Module and Case Number It is optimised : once done for each entity, the result is mapped and the GeneralLib is not longer queried <enforce> True overpasses this optimisation
 
@@ -4061,7 +4401,19 @@ class Interface_GTool(OCC.MMgt.MMgt_TShared):
         :param gmod:
         :type gmod: Handle_Interface_GeneralModule &
         :param CN:
-        :type CN: int &
+        :type CN: Standard_Integer &
+        :param enforce: default value is Standard_False
+        :type enforce: bool
+        :rtype: bool
+
+        * Selects for an entity, its Module and Case Number It is optimised : once done for each entity, the result is mapped and the GeneralLib is not longer queried <enforce> True overpasses this optimisation
+
+        :param ent:
+        :type ent: Handle_Standard_Transient &
+        :param gmod:
+        :type gmod: Handle_Interface_GeneralModule &
+        :param CN:
+        :type CN: Standard_Integer &
         :param enforce: default value is Standard_False
         :type enforce: bool
         :rtype: bool
@@ -4069,11 +4421,11 @@ class Interface_GTool(OCC.MMgt.MMgt_TShared):
         """
         return _Interface.Interface_GTool_Select(self, *args)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Interface_GTool self)"""
         return _Interface.Interface_GTool__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Interface_GTool" :
+    def GetHandle(self):
         """GetHandle(Interface_GTool self) -> Handle_Interface_GTool"""
         return _Interface.Interface_GTool_GetHandle(self)
 
@@ -4121,14 +4473,14 @@ Handle_Interface_GTool._kill_pointed = new_instancemethod(_Interface.Handle_Inte
 Handle_Interface_GTool_swigregister = _Interface.Handle_Interface_GTool_swigregister
 Handle_Interface_GTool_swigregister(Handle_Interface_GTool)
 
-def Handle_Interface_GTool_DownCast(*args) -> "Handle_Interface_GTool const" :
+def Handle_Interface_GTool_DownCast(*args):
   return _Interface.Handle_Interface_GTool_DownCast(*args)
 Handle_Interface_GTool_DownCast = _Interface.Handle_Interface_GTool_DownCast
 
 class Interface_GeneralLib(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def SetGlobal(*args) -> "void" :
+    def SetGlobal(*args):
         """
         :param amodule:
         :type amodule: Handle_Interface_GeneralModule &
@@ -4150,7 +4502,7 @@ class Interface_GeneralLib(object):
 
         """
         _Interface.Interface_GeneralLib_swiginit(self,_Interface.new_Interface_GeneralLib(*args))
-    def AddProtocol(self, *args) -> "void" :
+    def AddProtocol(self, *args):
         """
         :param aprotocol:
         :type aprotocol: Handle_Standard_Transient &
@@ -4159,67 +4511,67 @@ class Interface_GeneralLib(object):
         """
         return _Interface.Interface_GeneralLib_AddProtocol(self, *args)
 
-    def Clear(self, *args) -> "void" :
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _Interface.Interface_GeneralLib_Clear(self, *args)
+        return _Interface.Interface_GeneralLib_Clear(self)
 
-    def SetComplete(self, *args) -> "void" :
+    def SetComplete(self):
         """
         :rtype: None
 
         """
-        return _Interface.Interface_GeneralLib_SetComplete(self, *args)
+        return _Interface.Interface_GeneralLib_SetComplete(self)
 
-    def Select(self, *args) -> "Standard_Boolean" :
+    def Select(self, *args):
         """
         :param obj:
         :type obj: Handle_Standard_Transient &
         :param module:
         :type module: Handle_Interface_GeneralModule &
         :param CN:
-        :type CN: int &
+        :type CN: Standard_Integer &
         :rtype: bool
 
         """
         return _Interface.Interface_GeneralLib_Select(self, *args)
 
-    def Start(self, *args) -> "void" :
+    def Start(self):
         """
         :rtype: None
 
         """
-        return _Interface.Interface_GeneralLib_Start(self, *args)
+        return _Interface.Interface_GeneralLib_Start(self)
 
-    def More(self, *args) -> "Standard_Boolean" :
+    def More(self):
         """
         :rtype: bool
 
         """
-        return _Interface.Interface_GeneralLib_More(self, *args)
+        return _Interface.Interface_GeneralLib_More(self)
 
-    def Next(self, *args) -> "void" :
+    def Next(self):
         """
         :rtype: None
 
         """
-        return _Interface.Interface_GeneralLib_Next(self, *args)
+        return _Interface.Interface_GeneralLib_Next(self)
 
-    def Module(self, *args) -> "Handle_Interface_GeneralModule const &" :
+    def Module(self):
         """
         :rtype: Handle_Interface_GeneralModule
 
         """
-        return _Interface.Interface_GeneralLib_Module(self, *args)
+        return _Interface.Interface_GeneralLib_Module(self)
 
-    def Protocol(self, *args) -> "Handle_Interface_Protocol const &" :
+    def Protocol(self):
         """
         :rtype: Handle_Interface_Protocol
 
         """
-        return _Interface.Interface_GeneralLib_Protocol(self, *args)
+        return _Interface.Interface_GeneralLib_Protocol(self)
 
     def __del__(self):
     	try:
@@ -4242,7 +4594,7 @@ Interface_GeneralLib._kill_pointed = new_instancemethod(_Interface.Interface_Gen
 Interface_GeneralLib_swigregister = _Interface.Interface_GeneralLib_swigregister
 Interface_GeneralLib_swigregister(Interface_GeneralLib)
 
-def Interface_GeneralLib_SetGlobal(*args) -> "void" :
+def Interface_GeneralLib_SetGlobal(*args):
   """
     :param amodule:
     :type amodule: Handle_Interface_GeneralModule &
@@ -4257,14 +4609,14 @@ class Interface_GeneralModule(OCC.MMgt.MMgt_TShared):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def FillShared(self, *args) -> "void" :
+    def FillShared(self, *args):
         """
         * Specific filling of the list of Entities shared by an Entity <ent>, according a Case Number <CN> (formerly computed by CaseNum), considered in the context of a Model <model> Default calls FillSharedCase (i.e., ignores the model) Can be redefined to use the model for working
 
         :param model:
         :type model: Handle_Interface_InterfaceModel &
         :param CN:
-        :type CN: int
+        :type CN: Standard_Integer
         :param ent:
         :type ent: Handle_Standard_Transient &
         :param iter:
@@ -4274,12 +4626,12 @@ class Interface_GeneralModule(OCC.MMgt.MMgt_TShared):
         """
         return _Interface.Interface_GeneralModule_FillShared(self, *args)
 
-    def FillSharedCase(self, *args) -> "void" :
+    def FillSharedCase(self, *args):
         """
         * Specific filling of the list of Entities shared by an Entity <ent>, according a Case Number <CN> (formerly computed by CaseNum). Can use the internal utility method Share, below
 
         :param CN:
-        :type CN: int
+        :type CN: Standard_Integer
         :param ent:
         :type ent: Handle_Standard_Transient &
         :param iter:
@@ -4289,7 +4641,7 @@ class Interface_GeneralModule(OCC.MMgt.MMgt_TShared):
         """
         return _Interface.Interface_GeneralModule_FillSharedCase(self, *args)
 
-    def Share(self, *args) -> "void" :
+    def Share(self, *args):
         """
         * Adds an Entity to a Shared List (uses GetOneItem on <iter>)
 
@@ -4302,14 +4654,14 @@ class Interface_GeneralModule(OCC.MMgt.MMgt_TShared):
         """
         return _Interface.Interface_GeneralModule_Share(self, *args)
 
-    def ListImplied(self, *args) -> "void" :
+    def ListImplied(self, *args):
         """
         * List the Implied References of <ent> considered in the context of a Model <model> : i.e. the Entities which are Referenced while not considered as Shared (not copied if <ent> is, references not renewed by CopyCase but by ImpliedCase, only if referenced Entities have been Copied too) FillShared + ListImplied give the complete list of References Default calls ListImpliedCase (i.e. ignores the model) Can be redefined to use the model for working
 
         :param model:
         :type model: Handle_Interface_InterfaceModel &
         :param CN:
-        :type CN: int
+        :type CN: Standard_Integer
         :param ent:
         :type ent: Handle_Standard_Transient &
         :param iter:
@@ -4319,12 +4671,12 @@ class Interface_GeneralModule(OCC.MMgt.MMgt_TShared):
         """
         return _Interface.Interface_GeneralModule_ListImplied(self, *args)
 
-    def ListImpliedCase(self, *args) -> "void" :
+    def ListImpliedCase(self, *args):
         """
         * List the Implied References of <ent> (see above) are Referenced while not considered as Shared (not copied if <ent> is, references not renewed by CopyCase but by ImpliedCase, only if referenced Entities have been Copied too) FillSharedCase + ListImpliedCase give the complete list of Referenced Entities The provided default method does nothing (Implied References are specific of a little amount of Entity Classes).
 
         :param CN:
-        :type CN: int
+        :type CN: Standard_Integer
         :param ent:
         :type ent: Handle_Standard_Transient &
         :param iter:
@@ -4334,12 +4686,12 @@ class Interface_GeneralModule(OCC.MMgt.MMgt_TShared):
         """
         return _Interface.Interface_GeneralModule_ListImpliedCase(self, *args)
 
-    def CheckCase(self, *args) -> "void" :
+    def CheckCase(self, *args):
         """
         * Specific Checking of an Entity <ent> Can check context queried through a ShareTool, as required
 
         :param CN:
-        :type CN: int
+        :type CN: Standard_Integer
         :param ent:
         :type ent: Handle_Standard_Transient &
         :param shares:
@@ -4351,12 +4703,12 @@ class Interface_GeneralModule(OCC.MMgt.MMgt_TShared):
         """
         return _Interface.Interface_GeneralModule_CheckCase(self, *args)
 
-    def CanCopy(self, *args) -> "Standard_Boolean" :
+    def CanCopy(self, *args):
         """
         * Specific answer to the question 'is Copy properly implemented' Remark that it should be in phase with the implementation of NewVoid+CopyCase/NewCopyCase Default returns always False, can be redefined
 
         :param CN:
-        :type CN: int
+        :type CN: Standard_Integer
         :param ent:
         :type ent: Handle_Standard_Transient &
         :rtype: bool
@@ -4364,12 +4716,12 @@ class Interface_GeneralModule(OCC.MMgt.MMgt_TShared):
         """
         return _Interface.Interface_GeneralModule_CanCopy(self, *args)
 
-    def Dispatch(self, *args) -> "Standard_Boolean" :
+    def Dispatch(self, *args):
         """
         * Dispatches an entity Returns True if it works by copy, False if it just duplicates the starting Handle Dispatching means producing a new entity, image of the starting one, in order to be put into a new Model, this Model being itself the result of a dispatch from an original Model According to the cases, dispatch can either * just return <entto> as equating <entfrom> -> the new model designates the starting entity : it is lighter, but the dispatched entity being shared might not be modified for dispatch * copy <entfrom> to <entto> by calling NewVoid+CopyCase (two steps) or NewCopiedCase (1) -> the dispatched entity is a COPY, hence it can be modified The provided default just duplicates the handle without copying, then returns False. Can be redefined
 
         :param CN:
-        :type CN: int
+        :type CN: Standard_Integer
         :param entfrom:
         :type entfrom: Handle_Standard_Transient &
         :param entto:
@@ -4381,12 +4733,12 @@ class Interface_GeneralModule(OCC.MMgt.MMgt_TShared):
         """
         return _Interface.Interface_GeneralModule_Dispatch(self, *args)
 
-    def NewVoid(self, *args) -> "Standard_Boolean" :
+    def NewVoid(self, *args):
         """
         * Creates a new void entity <entto> according to a Case Number This entity remains to be filled, by reading from a file or by copying from another entity of same type (see CopyCase)
 
         :param CN:
-        :type CN: int
+        :type CN: Standard_Integer
         :param entto:
         :type entto: Handle_Standard_Transient &
         :rtype: bool
@@ -4394,12 +4746,12 @@ class Interface_GeneralModule(OCC.MMgt.MMgt_TShared):
         """
         return _Interface.Interface_GeneralModule_NewVoid(self, *args)
 
-    def CopyCase(self, *args) -> "void" :
+    def CopyCase(self, *args):
         """
         * Specific Copy ('Deep') from <entfrom> to <entto> (same type) by using a CopyTool which provides its working Map. Use method Transferred from CopyTool to work
 
         :param CN:
-        :type CN: int
+        :type CN: Standard_Integer
         :param entfrom:
         :type entfrom: Handle_Standard_Transient &
         :param entto:
@@ -4411,12 +4763,12 @@ class Interface_GeneralModule(OCC.MMgt.MMgt_TShared):
         """
         return _Interface.Interface_GeneralModule_CopyCase(self, *args)
 
-    def NewCopiedCase(self, *args) -> "Standard_Boolean" :
+    def NewCopiedCase(self, *args):
         """
         * Specific operator (create+copy) defaulted to do nothing. It can be redefined : When it is not possible to work in two steps (NewVoid then CopyCase). This can occur when there is no default constructor : hence the result <entto> must be created with an effective definition. Remark : if NewCopiedCase is defined, CopyCase has nothing to do Returns True if it has produced something, false else
 
         :param CN:
-        :type CN: int
+        :type CN: Standard_Integer
         :param entfrom:
         :type entfrom: Handle_Standard_Transient &
         :param entto:
@@ -4428,12 +4780,12 @@ class Interface_GeneralModule(OCC.MMgt.MMgt_TShared):
         """
         return _Interface.Interface_GeneralModule_NewCopiedCase(self, *args)
 
-    def RenewImpliedCase(self, *args) -> "void" :
+    def RenewImpliedCase(self, *args):
         """
         * Specific Copying of Implied References A Default is provided which does nothing (must current case !) Already copied references (by CopyFrom) must remain unchanged Use method Search from CopyTool to work
 
         :param CN:
-        :type CN: int
+        :type CN: Standard_Integer
         :param entfrom:
         :type entfrom: Handle_Standard_Transient &
         :param entto:
@@ -4445,12 +4797,12 @@ class Interface_GeneralModule(OCC.MMgt.MMgt_TShared):
         """
         return _Interface.Interface_GeneralModule_RenewImpliedCase(self, *args)
 
-    def WhenDeleteCase(self, *args) -> "void" :
+    def WhenDeleteCase(self, *args):
         """
         * Prepares an entity to be deleted. What does it mean : Basically, any class of entity may define its own destructor By default, it does nothing but calling destructors on fields With the Memory Manager, it is useless to call destructor, it is done automatically when the Handle is nullified(cleared) BUT this is ineffective in looping structures (whatever these are 'Implied' references or not). THUS : if no loop may appear in definitions, a class which inherits from TShared is correctly managed by automatic way BUT if there can be loops (or simply back pointers), they must be broken, for instance by clearing fields of one of the nodes The default does nothing, to be redefined if a loop can occur (Implied generally requires WhenDelete, but other cases can occur) Warning : <dispatched> tells if the entity to be deleted has been produced by Dispatch or not. Hence WhenDelete must be in coherence with Dispatch Dispatch can either copy or not. If it copies the entity, this one should be deleted If it doesnt (i.e. duplicates the handle) nothing to do If <dispatch> is False, normal deletion is to be performed
 
         :param CN:
-        :type CN: int
+        :type CN: Standard_Integer
         :param ent:
         :type ent: Handle_Standard_Transient &
         :param dispatched:
@@ -4460,12 +4812,12 @@ class Interface_GeneralModule(OCC.MMgt.MMgt_TShared):
         """
         return _Interface.Interface_GeneralModule_WhenDeleteCase(self, *args)
 
-    def CategoryNumber(self, *args) -> "Standard_Integer" :
+    def CategoryNumber(self, *args):
         """
         * Returns a category number which characterizes an entity Category Numbers are managed by the class Category <shares> can be used to evaluate this number in the context Default returns 0 which means 'unspecified'
 
         :param CN:
-        :type CN: int
+        :type CN: Standard_Integer
         :param ent:
         :type ent: Handle_Standard_Transient &
         :param shares:
@@ -4475,12 +4827,12 @@ class Interface_GeneralModule(OCC.MMgt.MMgt_TShared):
         """
         return _Interface.Interface_GeneralModule_CategoryNumber(self, *args)
 
-    def Name(self, *args) -> "Handle_TCollection_HAsciiString" :
+    def Name(self, *args):
         """
         * Determines if an entity brings a Name (or widerly, if a Name can be attached to it, through the ShareTool By default, returns a Null Handle_nonamecanbeproduced Can be redefined Warning : While this string may be edited on the spot, if it is a read field, the returned value must be copied before.
 
         :param CN:
-        :type CN: int
+        :type CN: Standard_Integer
         :param ent:
         :type ent: Handle_Standard_Transient &
         :param shares:
@@ -4490,11 +4842,11 @@ class Interface_GeneralModule(OCC.MMgt.MMgt_TShared):
         """
         return _Interface.Interface_GeneralModule_Name(self, *args)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Interface_GeneralModule self)"""
         return _Interface.Interface_GeneralModule__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Interface_GeneralModule" :
+    def GetHandle(self):
         """GetHandle(Interface_GeneralModule self) -> Handle_Interface_GeneralModule"""
         return _Interface.Interface_GeneralModule_GetHandle(self)
 
@@ -4547,20 +4899,20 @@ Handle_Interface_GeneralModule._kill_pointed = new_instancemethod(_Interface.Han
 Handle_Interface_GeneralModule_swigregister = _Interface.Handle_Interface_GeneralModule_swigregister
 Handle_Interface_GeneralModule_swigregister(Handle_Interface_GeneralModule)
 
-def Handle_Interface_GeneralModule_DownCast(*args) -> "Handle_Interface_GeneralModule const" :
+def Handle_Interface_GeneralModule_DownCast(*args):
   return _Interface.Handle_Interface_GeneralModule_DownCast(*args)
 Handle_Interface_GeneralModule_DownCast = _Interface.Handle_Interface_GeneralModule_DownCast
 
 class Interface_GlobalNodeOfGeneralLib(OCC.Standard.Standard_Transient):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _Interface.Interface_GlobalNodeOfGeneralLib_swiginit(self,_Interface.new_Interface_GlobalNodeOfGeneralLib(*args))
-    def Add(self, *args) -> "void" :
+        _Interface.Interface_GlobalNodeOfGeneralLib_swiginit(self,_Interface.new_Interface_GlobalNodeOfGeneralLib())
+    def Add(self, *args):
         """
         :param amodule:
         :type amodule: Handle_Interface_GeneralModule &
@@ -4571,32 +4923,32 @@ class Interface_GlobalNodeOfGeneralLib(OCC.Standard.Standard_Transient):
         """
         return _Interface.Interface_GlobalNodeOfGeneralLib_Add(self, *args)
 
-    def Module(self, *args) -> "Handle_Interface_GeneralModule const &" :
+    def Module(self):
         """
         :rtype: Handle_Interface_GeneralModule
 
         """
-        return _Interface.Interface_GlobalNodeOfGeneralLib_Module(self, *args)
+        return _Interface.Interface_GlobalNodeOfGeneralLib_Module(self)
 
-    def Protocol(self, *args) -> "Handle_Interface_Protocol const &" :
+    def Protocol(self):
         """
         :rtype: Handle_Interface_Protocol
 
         """
-        return _Interface.Interface_GlobalNodeOfGeneralLib_Protocol(self, *args)
+        return _Interface.Interface_GlobalNodeOfGeneralLib_Protocol(self)
 
-    def Next(self, *args) -> "Handle_Interface_GlobalNodeOfGeneralLib const &" :
+    def Next(self):
         """
         :rtype: Handle_Interface_GlobalNodeOfGeneralLib
 
         """
-        return _Interface.Interface_GlobalNodeOfGeneralLib_Next(self, *args)
+        return _Interface.Interface_GlobalNodeOfGeneralLib_Next(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Interface_GlobalNodeOfGeneralLib self)"""
         return _Interface.Interface_GlobalNodeOfGeneralLib__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Interface_GlobalNodeOfGeneralLib" :
+    def GetHandle(self):
         """GetHandle(Interface_GlobalNodeOfGeneralLib self) -> Handle_Interface_GlobalNodeOfGeneralLib"""
         return _Interface.Interface_GlobalNodeOfGeneralLib_GetHandle(self)
 
@@ -4638,20 +4990,20 @@ Handle_Interface_GlobalNodeOfGeneralLib._kill_pointed = new_instancemethod(_Inte
 Handle_Interface_GlobalNodeOfGeneralLib_swigregister = _Interface.Handle_Interface_GlobalNodeOfGeneralLib_swigregister
 Handle_Interface_GlobalNodeOfGeneralLib_swigregister(Handle_Interface_GlobalNodeOfGeneralLib)
 
-def Handle_Interface_GlobalNodeOfGeneralLib_DownCast(*args) -> "Handle_Interface_GlobalNodeOfGeneralLib const" :
+def Handle_Interface_GlobalNodeOfGeneralLib_DownCast(*args):
   return _Interface.Handle_Interface_GlobalNodeOfGeneralLib_DownCast(*args)
 Handle_Interface_GlobalNodeOfGeneralLib_DownCast = _Interface.Handle_Interface_GlobalNodeOfGeneralLib_DownCast
 
 class Interface_GlobalNodeOfReaderLib(OCC.Standard.Standard_Transient):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _Interface.Interface_GlobalNodeOfReaderLib_swiginit(self,_Interface.new_Interface_GlobalNodeOfReaderLib(*args))
-    def Add(self, *args) -> "void" :
+        _Interface.Interface_GlobalNodeOfReaderLib_swiginit(self,_Interface.new_Interface_GlobalNodeOfReaderLib())
+    def Add(self, *args):
         """
         :param amodule:
         :type amodule: Handle_Interface_ReaderModule &
@@ -4662,32 +5014,32 @@ class Interface_GlobalNodeOfReaderLib(OCC.Standard.Standard_Transient):
         """
         return _Interface.Interface_GlobalNodeOfReaderLib_Add(self, *args)
 
-    def Module(self, *args) -> "Handle_Interface_ReaderModule const &" :
+    def Module(self):
         """
         :rtype: Handle_Interface_ReaderModule
 
         """
-        return _Interface.Interface_GlobalNodeOfReaderLib_Module(self, *args)
+        return _Interface.Interface_GlobalNodeOfReaderLib_Module(self)
 
-    def Protocol(self, *args) -> "Handle_Interface_Protocol const &" :
+    def Protocol(self):
         """
         :rtype: Handle_Interface_Protocol
 
         """
-        return _Interface.Interface_GlobalNodeOfReaderLib_Protocol(self, *args)
+        return _Interface.Interface_GlobalNodeOfReaderLib_Protocol(self)
 
-    def Next(self, *args) -> "Handle_Interface_GlobalNodeOfReaderLib const &" :
+    def Next(self):
         """
         :rtype: Handle_Interface_GlobalNodeOfReaderLib
 
         """
-        return _Interface.Interface_GlobalNodeOfReaderLib_Next(self, *args)
+        return _Interface.Interface_GlobalNodeOfReaderLib_Next(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Interface_GlobalNodeOfReaderLib self)"""
         return _Interface.Interface_GlobalNodeOfReaderLib__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Interface_GlobalNodeOfReaderLib" :
+    def GetHandle(self):
         """GetHandle(Interface_GlobalNodeOfReaderLib self) -> Handle_Interface_GlobalNodeOfReaderLib"""
         return _Interface.Interface_GlobalNodeOfReaderLib_GetHandle(self)
 
@@ -4729,7 +5081,7 @@ Handle_Interface_GlobalNodeOfReaderLib._kill_pointed = new_instancemethod(_Inter
 Handle_Interface_GlobalNodeOfReaderLib_swigregister = _Interface.Handle_Interface_GlobalNodeOfReaderLib_swigregister
 Handle_Interface_GlobalNodeOfReaderLib_swigregister(Handle_Interface_GlobalNodeOfReaderLib)
 
-def Handle_Interface_GlobalNodeOfReaderLib_DownCast(*args) -> "Handle_Interface_GlobalNodeOfReaderLib const" :
+def Handle_Interface_GlobalNodeOfReaderLib_DownCast(*args):
   return _Interface.Handle_Interface_GlobalNodeOfReaderLib_DownCast(*args)
 Handle_Interface_GlobalNodeOfReaderLib_DownCast = _Interface.Handle_Interface_GlobalNodeOfReaderLib_DownCast
 
@@ -4738,6 +5090,16 @@ class Interface_Graph(object):
     __repr__ = _swig_repr
     def __init__(self, *args): 
         """
+        * Creates an empty graph, ready to receive Entities from amodel Note that this way of Creation allows <self> to verify that Entities to work with are contained in <amodel> Basic Shared and Sharing lists are obtained from a General Services Library, given directly as an argument
+
+        :param amodel:
+        :type amodel: Handle_Interface_InterfaceModel &
+        :param lib:
+        :type lib: Interface_GeneralLib &
+        :param theModeStats: default value is Standard_True
+        :type theModeStats: bool
+        :rtype: None
+
         * Creates an empty graph, ready to receive Entities from amodel Note that this way of Creation allows <self> to verify that Entities to work with are contained in <amodel> Basic Shared and Sharing lists are obtained from a General Services Library, given directly as an argument
 
         :param amodel:
@@ -4762,8 +5124,36 @@ class Interface_Graph(object):
 
         :param amodel:
         :type amodel: Handle_Interface_InterfaceModel &
+        :param protocol:
+        :type protocol: Handle_Interface_Protocol &
+        :param theModeStats: default value is Standard_True
+        :type theModeStats: bool
+        :rtype: None
+
+        * Same as above, but the Library is defined through a Protocol
+
+        :param amodel:
+        :type amodel: Handle_Interface_InterfaceModel &
         :param gtool:
         :type gtool: Handle_Interface_GTool &
+        :param theModeStats: default value is Standard_True
+        :type theModeStats: bool
+        :rtype: None
+
+        * Same as above, but the Library is defined through a Protocol
+
+        :param amodel:
+        :type amodel: Handle_Interface_InterfaceModel &
+        :param gtool:
+        :type gtool: Handle_Interface_GTool &
+        :param theModeStats: default value is Standard_True
+        :type theModeStats: bool
+        :rtype: None
+
+        * Same a above but works with the Protocol recorded in the Model
+
+        :param amodel:
+        :type amodel: Handle_Interface_InterfaceModel &
         :param theModeStats: default value is Standard_True
         :type theModeStats: bool
         :rtype: None
@@ -4784,45 +5174,53 @@ class Interface_Graph(object):
         :type copied: bool
         :rtype: None
 
+        * Creates a Graph from another one, getting all its data Remark that status are copied from <agraph>, but the other lists (sharing/shared) are copied only if <copied> = True
+
+        :param agraph:
+        :type agraph: Interface_Graph &
+        :param copied: default value is Standard_False
+        :type copied: bool
+        :rtype: None
+
         """
         _Interface.Interface_Graph_swiginit(self,_Interface.new_Interface_Graph(*args))
-    def Reset(self, *args) -> "void" :
+    def Reset(self):
         """
         * Erases data, making graph ready to rebegin from void (also resets Shared lists redefinitions)
 
         :rtype: None
 
         """
-        return _Interface.Interface_Graph_Reset(self, *args)
+        return _Interface.Interface_Graph_Reset(self)
 
-    def ResetStatus(self, *args) -> "void" :
+    def ResetStatus(self):
         """
         * Erases Status (Values and Flags of Presence), making graph ready to rebegin from void. Does not concerns Shared lists
 
         :rtype: None
 
         """
-        return _Interface.Interface_Graph_ResetStatus(self, *args)
+        return _Interface.Interface_Graph_ResetStatus(self)
 
-    def Size(self, *args) -> "Standard_Integer" :
+    def Size(self):
         """
         * Returns size (max nb of entities, i.e. Model's nb of entities)
 
         :rtype: int
 
         """
-        return _Interface.Interface_Graph_Size(self, *args)
+        return _Interface.Interface_Graph_Size(self)
 
-    def NbStatuses(self, *args) -> "Standard_Integer" :
+    def NbStatuses(self):
         """
         * Returns size of array of statuses
 
         :rtype: int
 
         """
-        return _Interface.Interface_Graph_NbStatuses(self, *args)
+        return _Interface.Interface_Graph_NbStatuses(self)
 
-    def EntityNumber(self, *args) -> "Standard_Integer" :
+    def EntityNumber(self, *args):
         """
         * Returns the Number of the entity in the Map, computed at creation time (Entities loaded from the Model) Returns 0 if <ent> not contained by Model used to create <self> (that is, <ent> is unknown from <self>)
 
@@ -4833,12 +5231,12 @@ class Interface_Graph(object):
         """
         return _Interface.Interface_Graph_EntityNumber(self, *args)
 
-    def IsPresent(self, *args) -> "Standard_Boolean" :
+    def IsPresent(self, *args):
         """
         * Returns True if an Entity is noted as present in the graph (See methods Get... which determine this status) Returns False if <num> is out of range too
 
         :param num:
-        :type num: int
+        :type num: Standard_Integer
         :rtype: bool
 
         * Same as above but directly on an Entity <ent> : if it is not contained in the Model, returns False. Else calls  IsPresent(num) with <num> given by EntityNumber
@@ -4850,113 +5248,113 @@ class Interface_Graph(object):
         """
         return _Interface.Interface_Graph_IsPresent(self, *args)
 
-    def Entity(self, *args) -> "Handle_Standard_Transient const &" :
+    def Entity(self, *args):
         """
         * Returns mapped Entity given its no (if it is present)
 
         :param num:
-        :type num: int
+        :type num: Standard_Integer
         :rtype: Handle_Standard_Transient
 
         """
         return _Interface.Interface_Graph_Entity(self, *args)
 
-    def Status(self, *args) -> "Standard_Integer" :
+    def Status(self, *args):
         """
         * Returns Status associated to a numero (only to read it)
 
         :param num:
-        :type num: int
+        :type num: Standard_Integer
         :rtype: int
 
         """
         return _Interface.Interface_Graph_Status(self, *args)
 
-    def SetStatus(self, *args) -> "void" :
+    def SetStatus(self, *args):
         """
         * Modifies Status associated to a numero
 
         :param num:
-        :type num: int
+        :type num: Standard_Integer
         :param stat:
-        :type stat: int
+        :type stat: Standard_Integer
         :rtype: None
 
         """
         return _Interface.Interface_Graph_SetStatus(self, *args)
 
-    def RemoveItem(self, *args) -> "void" :
+    def RemoveItem(self, *args):
         """
         * Clears Entity and sets Status to 0, for a numero
 
         :param num:
-        :type num: int
+        :type num: Standard_Integer
         :rtype: None
 
         """
         return _Interface.Interface_Graph_RemoveItem(self, *args)
 
-    def ChangeStatus(self, *args) -> "void" :
+    def ChangeStatus(self, *args):
         """
         * Changes all status which value is oldstat to new value newstat
 
         :param oldstat:
-        :type oldstat: int
+        :type oldstat: Standard_Integer
         :param newstat:
-        :type newstat: int
+        :type newstat: Standard_Integer
         :rtype: None
 
         """
         return _Interface.Interface_Graph_ChangeStatus(self, *args)
 
-    def RemoveStatus(self, *args) -> "void" :
+    def RemoveStatus(self, *args):
         """
         * Removes all items of which status has a given value stat
 
         :param stat:
-        :type stat: int
+        :type stat: Standard_Integer
         :rtype: None
 
         """
         return _Interface.Interface_Graph_RemoveStatus(self, *args)
 
-    def BitMap(self, *args) -> "Interface_BitMap const &" :
+    def BitMap(self):
         """
         * Returns the Bit Map in order to read or edit flag values
 
         :rtype: Interface_BitMap
 
         """
-        return _Interface.Interface_Graph_BitMap(self, *args)
+        return _Interface.Interface_Graph_BitMap(self)
 
-    def CBitMap(self, *args) -> "Interface_BitMap &" :
+    def CBitMap(self):
         """
         * Returns the Bit Map in order to edit it (add new flags)
 
         :rtype: Interface_BitMap
 
         """
-        return _Interface.Interface_Graph_CBitMap(self, *args)
+        return _Interface.Interface_Graph_CBitMap(self)
 
-    def Model(self, *args) -> "Handle_Interface_InterfaceModel const &" :
+    def Model(self):
         """
         * Returns the Model with which this Graph was created
 
         :rtype: Handle_Interface_InterfaceModel
 
         """
-        return _Interface.Interface_Graph_Model(self, *args)
+        return _Interface.Interface_Graph_Model(self)
 
-    def GetFromModel(self, *args) -> "void" :
+    def GetFromModel(self):
         """
         * Loads Graph with all Entities contained in the Model
 
         :rtype: None
 
         """
-        return _Interface.Interface_Graph_GetFromModel(self, *args)
+        return _Interface.Interface_Graph_GetFromModel(self)
 
-    def GetFromEntity(self, *args) -> "void" :
+    def GetFromEntity(self, *args):
         """
         * Gets an Entity, plus its shared ones (at every level) if 'shared' is True. New items are set to status 'newstat' Items already present in graph remain unchanged Of course, redefinitions of Shared lists are taken into account if there are some
 
@@ -4965,7 +5363,17 @@ class Interface_Graph(object):
         :param shared:
         :type shared: bool
         :param newstat: default value is 0
-        :type newstat: int
+        :type newstat: Standard_Integer
+        :rtype: None
+
+        * Gets an Entity, plus its shared ones (at every level) if 'shared' is True. New items are set to status 'newstat' Items already present in graph remain unchanged Of course, redefinitions of Shared lists are taken into account if there are some
+
+        :param ent:
+        :type ent: Handle_Standard_Transient &
+        :param shared:
+        :type shared: bool
+        :param newstat: default value is 0
+        :type newstat: Standard_Integer
         :rtype: None
 
         * Gets an Entity, plus its shared ones (at every level) if 'shared' is True. New items are set to status 'newstat'. Items already present in graph are processed as follows : - if they already have status 'newstat', they remain unchanged - if they have another status, this one is modified : if cumul is True, to former status + overlapstat (cumul) if cumul is False, to overlapstat (enforce)
@@ -4975,9 +5383,9 @@ class Interface_Graph(object):
         :param shared:
         :type shared: bool
         :param newstat:
-        :type newstat: int
+        :type newstat: Standard_Integer
         :param overlapstat:
-        :type overlapstat: int
+        :type overlapstat: Standard_Integer
         :param cumul:
         :type cumul: bool
         :rtype: None
@@ -4985,14 +5393,14 @@ class Interface_Graph(object):
         """
         return _Interface.Interface_Graph_GetFromEntity(self, *args)
 
-    def GetFromIter(self, *args) -> "void" :
+    def GetFromIter(self, *args):
         """
         * Gets Entities given by an EntityIterator. Entities which were not yet present in the graph are mapped with status 'newstat' Entities already present remain unchanged
 
         :param iter:
         :type iter: Interface_EntityIterator &
         :param newstat:
-        :type newstat: int
+        :type newstat: Standard_Integer
         :rtype: None
 
         * Gets Entities given by an EntityIterator and distinguishes those already present in the Graph : - new entities added to the Graph with status 'newstst' - entities already present with status = 'newstat' remain unchanged - entities already present with status different form 'newstat' have their status modified : if cumul is True, to former status + overlapstat (cumul) if cumul is False, to overlapstat (enforce) (Note : works as GetEntity, shared = False, for each entity)
@@ -5000,9 +5408,9 @@ class Interface_Graph(object):
         :param iter:
         :type iter: Interface_EntityIterator &
         :param newstat:
-        :type newstat: int
+        :type newstat: Standard_Integer
         :param overlapstat:
-        :type overlapstat: int
+        :type overlapstat: Standard_Integer
         :param cumul:
         :type cumul: bool
         :rtype: None
@@ -5010,7 +5418,7 @@ class Interface_Graph(object):
         """
         return _Interface.Interface_Graph_GetFromIter(self, *args)
 
-    def GetFromGraph(self, *args) -> "void" :
+    def GetFromGraph(self, *args):
         """
         * Gets all present items from another graph
 
@@ -5023,13 +5431,13 @@ class Interface_Graph(object):
         :param agraph:
         :type agraph: Interface_Graph &
         :param stat:
-        :type stat: int
+        :type stat: Standard_Integer
         :rtype: None
 
         """
         return _Interface.Interface_Graph_GetFromGraph(self, *args)
 
-    def HasShareErrors(self, *args) -> "Standard_Boolean" :
+    def HasShareErrors(self, *args):
         """
         * Returns True if <ent> or the list of entities shared by <ent> (not redefined) contains items unknown from this Graph Remark : apart from the status HasShareError, these items are ignored
 
@@ -5040,7 +5448,7 @@ class Interface_Graph(object):
         """
         return _Interface.Interface_Graph_HasShareErrors(self, *args)
 
-    def GetShareds(self, *args) -> "Handle_TColStd_HSequenceOfTransient" :
+    def GetShareds(self, *args):
         """
         * Returns the sequence of Entities Shared by an Entity
 
@@ -5051,7 +5459,7 @@ class Interface_Graph(object):
         """
         return _Interface.Interface_Graph_GetShareds(self, *args)
 
-    def Shareds(self, *args) -> "Interface_EntityIterator" :
+    def Shareds(self, *args):
         """
         * Returns the list of Entities Shared by an Entity, as recorded by the Graph. That is, by default Basic Shared List, else it can be redefined by methods SetShare, SetNoShare ... see below
 
@@ -5062,7 +5470,7 @@ class Interface_Graph(object):
         """
         return _Interface.Interface_Graph_Shareds(self, *args)
 
-    def Sharings(self, *args) -> "Interface_EntityIterator" :
+    def Sharings(self, *args):
         """
         * Returns the list of Entities which Share an Entity, computed from the Basic or Redefined Shared Lists
 
@@ -5073,7 +5481,7 @@ class Interface_Graph(object):
         """
         return _Interface.Interface_Graph_Sharings(self, *args)
 
-    def GetSharings(self, *args) -> "Handle_TColStd_HSequenceOfTransient" :
+    def GetSharings(self, *args):
         """
         * Returns the sequence of Entities Sharings by an Entity
 
@@ -5084,7 +5492,7 @@ class Interface_Graph(object):
         """
         return _Interface.Interface_Graph_GetSharings(self, *args)
 
-    def TypedSharings(self, *args) -> "Interface_EntityIterator" :
+    def TypedSharings(self, *args):
         """
         * Returns the list of sharings entities, AT ANY LEVEL, which are kind of a given type. A sharing entity kind of this type ends the exploration of its branch
 
@@ -5097,16 +5505,16 @@ class Interface_Graph(object):
         """
         return _Interface.Interface_Graph_TypedSharings(self, *args)
 
-    def RootEntities(self, *args) -> "Interface_EntityIterator" :
+    def RootEntities(self):
         """
         * Returns the Entities which are not Shared (their Sharing List is empty) in the Model
 
         :rtype: Interface_EntityIterator
 
         """
-        return _Interface.Interface_Graph_RootEntities(self, *args)
+        return _Interface.Interface_Graph_RootEntities(self)
 
-    def Name(self, *args) -> "Handle_TCollection_HAsciiString" :
+    def Name(self, *args):
         """
         * Determines the name attached to an entity, by using the general service Name in GeneralModule Returns a null handle if no name could be computed or if the entity is not in the model
 
@@ -5117,23 +5525,23 @@ class Interface_Graph(object):
         """
         return _Interface.Interface_Graph_Name(self, *args)
 
-    def SharingTable(self, *args) -> "Handle_TColStd_HArray1OfListOfInteger const &" :
+    def SharingTable(self):
         """
         * Returns the Table of Sharing lists. Used to Create another Graph from <self>
 
         :rtype: Handle_TColStd_HArray1OfListOfInteger
 
         """
-        return _Interface.Interface_Graph_SharingTable(self, *args)
+        return _Interface.Interface_Graph_SharingTable(self)
 
-    def ModeStat(self, *args) -> "Standard_Boolean" :
+    def ModeStat(self):
         """
         * Returns mode resposible for computation of statuses;
 
         :rtype: bool
 
         """
-        return _Interface.Interface_Graph_ModeStat(self, *args)
+        return _Interface.Interface_Graph_ModeStat(self)
 
     def __del__(self):
     	try:
@@ -5182,22 +5590,22 @@ class Interface_HArray1OfHAsciiString(OCC.MMgt.MMgt_TShared):
     def __init__(self, *args): 
         """
         :param Low:
-        :type Low: int
+        :type Low: Standard_Integer
         :param Up:
-        :type Up: int
+        :type Up: Standard_Integer
         :rtype: None
 
         :param Low:
-        :type Low: int
+        :type Low: Standard_Integer
         :param Up:
-        :type Up: int
+        :type Up: Standard_Integer
         :param V:
         :type V: Handle_TCollection_HAsciiString &
         :rtype: None
 
         """
         _Interface.Interface_HArray1OfHAsciiString_swiginit(self,_Interface.new_Interface_HArray1OfHAsciiString(*args))
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
         :param V:
         :type V: Handle_TCollection_HAsciiString &
@@ -5206,31 +5614,31 @@ class Interface_HArray1OfHAsciiString(OCC.MMgt.MMgt_TShared):
         """
         return _Interface.Interface_HArray1OfHAsciiString_Init(self, *args)
 
-    def Length(self, *args) -> "Standard_Integer" :
+    def Length(self):
         """
         :rtype: int
 
         """
-        return _Interface.Interface_HArray1OfHAsciiString_Length(self, *args)
+        return _Interface.Interface_HArray1OfHAsciiString_Length(self)
 
-    def Lower(self, *args) -> "Standard_Integer" :
+    def Lower(self):
         """
         :rtype: int
 
         """
-        return _Interface.Interface_HArray1OfHAsciiString_Lower(self, *args)
+        return _Interface.Interface_HArray1OfHAsciiString_Lower(self)
 
-    def Upper(self, *args) -> "Standard_Integer" :
+    def Upper(self):
         """
         :rtype: int
 
         """
-        return _Interface.Interface_HArray1OfHAsciiString_Upper(self, *args)
+        return _Interface.Interface_HArray1OfHAsciiString_Upper(self)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Value:
         :type Value: Handle_TCollection_HAsciiString &
         :rtype: None
@@ -5238,43 +5646,43 @@ class Interface_HArray1OfHAsciiString(OCC.MMgt.MMgt_TShared):
         """
         return _Interface.Interface_HArray1OfHAsciiString_SetValue(self, *args)
 
-    def Value(self, *args) -> "Handle_TCollection_HAsciiString const &" :
+    def Value(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Handle_TCollection_HAsciiString
 
         """
         return _Interface.Interface_HArray1OfHAsciiString_Value(self, *args)
 
-    def ChangeValue(self, *args) -> "Handle_TCollection_HAsciiString &" :
+    def ChangeValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Handle_TCollection_HAsciiString
 
         """
         return _Interface.Interface_HArray1OfHAsciiString_ChangeValue(self, *args)
 
-    def Array1(self, *args) -> "Interface_Array1OfHAsciiString const &" :
+    def Array1(self):
         """
         :rtype: Interface_Array1OfHAsciiString
 
         """
-        return _Interface.Interface_HArray1OfHAsciiString_Array1(self, *args)
+        return _Interface.Interface_HArray1OfHAsciiString_Array1(self)
 
-    def ChangeArray1(self, *args) -> "Interface_Array1OfHAsciiString &" :
+    def ChangeArray1(self):
         """
         :rtype: Interface_Array1OfHAsciiString
 
         """
-        return _Interface.Interface_HArray1OfHAsciiString_ChangeArray1(self, *args)
+        return _Interface.Interface_HArray1OfHAsciiString_ChangeArray1(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Interface_HArray1OfHAsciiString self)"""
         return _Interface.Interface_HArray1OfHAsciiString__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Interface_HArray1OfHAsciiString" :
+    def GetHandle(self):
         """GetHandle(Interface_HArray1OfHAsciiString self) -> Handle_Interface_HArray1OfHAsciiString"""
         return _Interface.Interface_HArray1OfHAsciiString_GetHandle(self)
 
@@ -5321,7 +5729,7 @@ Handle_Interface_HArray1OfHAsciiString._kill_pointed = new_instancemethod(_Inter
 Handle_Interface_HArray1OfHAsciiString_swigregister = _Interface.Handle_Interface_HArray1OfHAsciiString_swigregister
 Handle_Interface_HArray1OfHAsciiString_swigregister(Handle_Interface_HArray1OfHAsciiString)
 
-def Handle_Interface_HArray1OfHAsciiString_DownCast(*args) -> "Handle_Interface_HArray1OfHAsciiString const" :
+def Handle_Interface_HArray1OfHAsciiString_DownCast(*args):
   return _Interface.Handle_Interface_HArray1OfHAsciiString_DownCast(*args)
 Handle_Interface_HArray1OfHAsciiString_DownCast = _Interface.Handle_Interface_HArray1OfHAsciiString_DownCast
 
@@ -5334,6 +5742,16 @@ class Interface_HGraph(OCC.MMgt.MMgt_TShared):
 
         :param agraph:
         :type agraph: Interface_Graph &
+        :rtype: None
+
+        * Creates an HGraph with a Graph created from <amodel> and <lib>
+
+        :param amodel:
+        :type amodel: Handle_Interface_InterfaceModel &
+        :param lib:
+        :type lib: Interface_GeneralLib &
+        :param theModeStats: default value is Standard_True
+        :type theModeStats: bool
         :rtype: None
 
         * Creates an HGraph with a Graph created from <amodel> and <lib>
@@ -5360,6 +5778,26 @@ class Interface_HGraph(OCC.MMgt.MMgt_TShared):
 
         :param amodel:
         :type amodel: Handle_Interface_InterfaceModel &
+        :param protocol:
+        :type protocol: Handle_Interface_Protocol &
+        :param theModeStats: default value is Standard_True
+        :type theModeStats: bool
+        :rtype: None
+
+        * Creates an HGraph with a graph itself created from <amodel> and <protocol>
+
+        :param amodel:
+        :type amodel: Handle_Interface_InterfaceModel &
+        :param gtool:
+        :type gtool: Handle_Interface_GTool &
+        :param theModeStats: default value is Standard_True
+        :type theModeStats: bool
+        :rtype: None
+
+        * Creates an HGraph with a graph itself created from <amodel> and <protocol>
+
+        :param amodel:
+        :type amodel: Handle_Interface_InterfaceModel &
         :param gtool:
         :type gtool: Handle_Interface_GTool &
         :param theModeStats: default value is Standard_True
@@ -5374,31 +5812,39 @@ class Interface_HGraph(OCC.MMgt.MMgt_TShared):
         :type theModeStats: bool
         :rtype: None
 
+        * Same a above, but works with the GTool in the model
+
+        :param amodel:
+        :type amodel: Handle_Interface_InterfaceModel &
+        :param theModeStats: default value is Standard_True
+        :type theModeStats: bool
+        :rtype: None
+
         """
         _Interface.Interface_HGraph_swiginit(self,_Interface.new_Interface_HGraph(*args))
-    def Graph(self, *args) -> "Interface_Graph const &" :
+    def Graph(self):
         """
         * Returns the Graph contained in <self>, for Read Only Operations Remark that it is returns as 'const &' Getting it in a new variable instead of a reference would be a pitty, because all the graph's content would be duplicated
 
         :rtype: Interface_Graph
 
         """
-        return _Interface.Interface_HGraph_Graph(self, *args)
+        return _Interface.Interface_HGraph_Graph(self)
 
-    def CGraph(self, *args) -> "Interface_Graph &" :
+    def CGraph(self):
         """
         * Same as above, but for Read-Write Operations Then, The Graph will be modified in the HGraph itself
 
         :rtype: Interface_Graph
 
         """
-        return _Interface.Interface_HGraph_CGraph(self, *args)
+        return _Interface.Interface_HGraph_CGraph(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Interface_HGraph self)"""
         return _Interface.Interface_HGraph__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Interface_HGraph" :
+    def GetHandle(self):
         """GetHandle(Interface_HGraph self) -> Handle_Interface_HGraph"""
         return _Interface.Interface_HGraph_GetHandle(self)
 
@@ -5438,41 +5884,41 @@ Handle_Interface_HGraph._kill_pointed = new_instancemethod(_Interface.Handle_Int
 Handle_Interface_HGraph_swigregister = _Interface.Handle_Interface_HGraph_swigregister
 Handle_Interface_HGraph_swigregister(Handle_Interface_HGraph)
 
-def Handle_Interface_HGraph_DownCast(*args) -> "Handle_Interface_HGraph const" :
+def Handle_Interface_HGraph_DownCast(*args):
   return _Interface.Handle_Interface_HGraph_DownCast(*args)
 Handle_Interface_HGraph_DownCast = _Interface.Handle_Interface_HGraph_DownCast
 
 class Interface_HSequenceOfCheck(OCC.MMgt.MMgt_TShared):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _Interface.Interface_HSequenceOfCheck_swiginit(self,_Interface.new_Interface_HSequenceOfCheck(*args))
-    def IsEmpty(self, *args) -> "Standard_Boolean" :
+        _Interface.Interface_HSequenceOfCheck_swiginit(self,_Interface.new_Interface_HSequenceOfCheck())
+    def IsEmpty(self):
         """
         :rtype: bool
 
         """
-        return _Interface.Interface_HSequenceOfCheck_IsEmpty(self, *args)
+        return _Interface.Interface_HSequenceOfCheck_IsEmpty(self)
 
-    def Length(self, *args) -> "Standard_Integer" :
+    def Length(self):
         """
         :rtype: int
 
         """
-        return _Interface.Interface_HSequenceOfCheck_Length(self, *args)
+        return _Interface.Interface_HSequenceOfCheck_Length(self)
 
-    def Clear(self, *args) -> "void" :
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _Interface.Interface_HSequenceOfCheck_Clear(self, *args)
+        return _Interface.Interface_HSequenceOfCheck_Clear(self)
 
-    def Append(self, *args) -> "void" :
+    def Append(self, *args):
         """
         :param anItem:
         :type anItem: Handle_Interface_Check &
@@ -5485,7 +5931,7 @@ class Interface_HSequenceOfCheck(OCC.MMgt.MMgt_TShared):
         """
         return _Interface.Interface_HSequenceOfCheck_Append(self, *args)
 
-    def Prepend(self, *args) -> "void" :
+    def Prepend(self, *args):
         """
         :param anItem:
         :type anItem: Handle_Interface_Check &
@@ -5498,23 +5944,23 @@ class Interface_HSequenceOfCheck(OCC.MMgt.MMgt_TShared):
         """
         return _Interface.Interface_HSequenceOfCheck_Prepend(self, *args)
 
-    def Reverse(self, *args) -> "void" :
+    def Reverse(self):
         """
         :rtype: None
 
         """
-        return _Interface.Interface_HSequenceOfCheck_Reverse(self, *args)
+        return _Interface.Interface_HSequenceOfCheck_Reverse(self)
 
-    def InsertBefore(self, *args) -> "void" :
+    def InsertBefore(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :param anItem:
         :type anItem: Handle_Interface_Check &
         :rtype: None
 
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :param aSequence:
         :type aSequence: Handle_Interface_HSequenceOfCheck &
         :rtype: None
@@ -5522,16 +5968,16 @@ class Interface_HSequenceOfCheck(OCC.MMgt.MMgt_TShared):
         """
         return _Interface.Interface_HSequenceOfCheck_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args) -> "void" :
+    def InsertAfter(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :param anItem:
         :type anItem: Handle_Interface_Check &
         :rtype: None
 
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :param aSequence:
         :type aSequence: Handle_Interface_HSequenceOfCheck &
         :rtype: None
@@ -5539,30 +5985,30 @@ class Interface_HSequenceOfCheck(OCC.MMgt.MMgt_TShared):
         """
         return _Interface.Interface_HSequenceOfCheck_InsertAfter(self, *args)
 
-    def Exchange(self, *args) -> "void" :
+    def Exchange(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :param anOtherIndex:
-        :type anOtherIndex: int
+        :type anOtherIndex: Standard_Integer
         :rtype: None
 
         """
         return _Interface.Interface_HSequenceOfCheck_Exchange(self, *args)
 
-    def Split(self, *args) -> "Handle_Interface_HSequenceOfCheck" :
+    def Split(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :rtype: Handle_Interface_HSequenceOfCheck
 
         """
         return _Interface.Interface_HSequenceOfCheck_Split(self, *args)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :param anItem:
         :type anItem: Handle_Interface_Check &
         :rtype: None
@@ -5570,65 +6016,65 @@ class Interface_HSequenceOfCheck(OCC.MMgt.MMgt_TShared):
         """
         return _Interface.Interface_HSequenceOfCheck_SetValue(self, *args)
 
-    def Value(self, *args) -> "Handle_Interface_Check const &" :
+    def Value(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :rtype: Handle_Interface_Check
 
         """
         return _Interface.Interface_HSequenceOfCheck_Value(self, *args)
 
-    def ChangeValue(self, *args) -> "Handle_Interface_Check &" :
+    def ChangeValue(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :rtype: Handle_Interface_Check
 
         """
         return _Interface.Interface_HSequenceOfCheck_ChangeValue(self, *args)
 
-    def Remove(self, *args) -> "void" :
+    def Remove(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :rtype: None
 
         :param fromIndex:
-        :type fromIndex: int
+        :type fromIndex: Standard_Integer
         :param toIndex:
-        :type toIndex: int
+        :type toIndex: Standard_Integer
         :rtype: None
 
         """
         return _Interface.Interface_HSequenceOfCheck_Remove(self, *args)
 
-    def Sequence(self, *args) -> "Interface_SequenceOfCheck const &" :
+    def Sequence(self):
         """
         :rtype: Interface_SequenceOfCheck
 
         """
-        return _Interface.Interface_HSequenceOfCheck_Sequence(self, *args)
+        return _Interface.Interface_HSequenceOfCheck_Sequence(self)
 
-    def ChangeSequence(self, *args) -> "Interface_SequenceOfCheck &" :
+    def ChangeSequence(self):
         """
         :rtype: Interface_SequenceOfCheck
 
         """
-        return _Interface.Interface_HSequenceOfCheck_ChangeSequence(self, *args)
+        return _Interface.Interface_HSequenceOfCheck_ChangeSequence(self)
 
-    def ShallowCopy(self, *args) -> "Handle_Interface_HSequenceOfCheck" :
+    def ShallowCopy(self):
         """
         :rtype: Handle_Interface_HSequenceOfCheck
 
         """
-        return _Interface.Interface_HSequenceOfCheck_ShallowCopy(self, *args)
+        return _Interface.Interface_HSequenceOfCheck_ShallowCopy(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Interface_HSequenceOfCheck self)"""
         return _Interface.Interface_HSequenceOfCheck__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Interface_HSequenceOfCheck" :
+    def GetHandle(self):
         """GetHandle(Interface_HSequenceOfCheck self) -> Handle_Interface_HSequenceOfCheck"""
         return _Interface.Interface_HSequenceOfCheck_GetHandle(self)
 
@@ -5683,7 +6129,7 @@ Handle_Interface_HSequenceOfCheck._kill_pointed = new_instancemethod(_Interface.
 Handle_Interface_HSequenceOfCheck_swigregister = _Interface.Handle_Interface_HSequenceOfCheck_swigregister
 Handle_Interface_HSequenceOfCheck_swigregister(Handle_Interface_HSequenceOfCheck)
 
-def Handle_Interface_HSequenceOfCheck_DownCast(*args) -> "Handle_Interface_HSequenceOfCheck const" :
+def Handle_Interface_HSequenceOfCheck_DownCast(*args):
   return _Interface.Handle_Interface_HSequenceOfCheck_DownCast(*args)
 Handle_Interface_HSequenceOfCheck_DownCast = _Interface.Handle_Interface_HSequenceOfCheck_DownCast
 
@@ -5695,7 +6141,7 @@ class Interface_IndexedMapNodeOfIndexedMapOfAsciiString(OCC.TCollection.TCollect
         :param K1:
         :type K1: TCollection_AsciiString &
         :param K2:
-        :type K2: int
+        :type K2: Standard_Integer
         :param n1:
         :type n1: TCollection_MapNodePtr &
         :param n2:
@@ -5704,33 +6150,33 @@ class Interface_IndexedMapNodeOfIndexedMapOfAsciiString(OCC.TCollection.TCollect
 
         """
         _Interface.Interface_IndexedMapNodeOfIndexedMapOfAsciiString_swiginit(self,_Interface.new_Interface_IndexedMapNodeOfIndexedMapOfAsciiString(*args))
-    def Key1(self, *args) -> "TCollection_AsciiString &" :
+    def Key1(self):
         """
         :rtype: TCollection_AsciiString
 
         """
-        return _Interface.Interface_IndexedMapNodeOfIndexedMapOfAsciiString_Key1(self, *args)
+        return _Interface.Interface_IndexedMapNodeOfIndexedMapOfAsciiString_Key1(self)
 
-    def GetKey2(self) -> "Standard_Integer" :
+    def GetKey2(self):
         """GetKey2(Interface_IndexedMapNodeOfIndexedMapOfAsciiString self) -> Standard_Integer"""
         return _Interface.Interface_IndexedMapNodeOfIndexedMapOfAsciiString_GetKey2(self)
 
-    def SetKey2(self, *args) -> "void" :
+    def SetKey2(self, *args):
         """SetKey2(Interface_IndexedMapNodeOfIndexedMapOfAsciiString self, Standard_Integer value)"""
         return _Interface.Interface_IndexedMapNodeOfIndexedMapOfAsciiString_SetKey2(self, *args)
 
-    def Next2(self, *args) -> "TCollection_MapNodePtr &" :
+    def Next2(self):
         """
         :rtype: TCollection_MapNodePtr
 
         """
-        return _Interface.Interface_IndexedMapNodeOfIndexedMapOfAsciiString_Next2(self, *args)
+        return _Interface.Interface_IndexedMapNodeOfIndexedMapOfAsciiString_Next2(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Interface_IndexedMapNodeOfIndexedMapOfAsciiString self)"""
         return _Interface.Interface_IndexedMapNodeOfIndexedMapOfAsciiString__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Interface_IndexedMapNodeOfIndexedMapOfAsciiString" :
+    def GetHandle(self):
         """GetHandle(Interface_IndexedMapNodeOfIndexedMapOfAsciiString self) -> Handle_Interface_IndexedMapNodeOfIndexedMapOfAsciiString"""
         return _Interface.Interface_IndexedMapNodeOfIndexedMapOfAsciiString_GetHandle(self)
 
@@ -5772,22 +6218,26 @@ Handle_Interface_IndexedMapNodeOfIndexedMapOfAsciiString._kill_pointed = new_ins
 Handle_Interface_IndexedMapNodeOfIndexedMapOfAsciiString_swigregister = _Interface.Handle_Interface_IndexedMapNodeOfIndexedMapOfAsciiString_swigregister
 Handle_Interface_IndexedMapNodeOfIndexedMapOfAsciiString_swigregister(Handle_Interface_IndexedMapNodeOfIndexedMapOfAsciiString)
 
-def Handle_Interface_IndexedMapNodeOfIndexedMapOfAsciiString_DownCast(*args) -> "Handle_Interface_IndexedMapNodeOfIndexedMapOfAsciiString const" :
+def Handle_Interface_IndexedMapNodeOfIndexedMapOfAsciiString_DownCast(*args):
   return _Interface.Handle_Interface_IndexedMapNodeOfIndexedMapOfAsciiString_DownCast(*args)
 Handle_Interface_IndexedMapNodeOfIndexedMapOfAsciiString_DownCast = _Interface.Handle_Interface_IndexedMapNodeOfIndexedMapOfAsciiString_DownCast
 
 class Interface_IndexedMapOfAsciiString(OCC.TCollection.TCollection_BasicMap):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self, NbBuckets=1): 
         """
         :param NbBuckets: default value is 1
-        :type NbBuckets: int
+        :type NbBuckets: Standard_Integer
+        :rtype: None
+
+        :param NbBuckets: default value is 1
+        :type NbBuckets: Standard_Integer
         :rtype: None
 
         """
-        _Interface.Interface_IndexedMapOfAsciiString_swiginit(self,_Interface.new_Interface_IndexedMapOfAsciiString(*args))
-    def Assign(self, *args) -> "Interface_IndexedMapOfAsciiString &" :
+        _Interface.Interface_IndexedMapOfAsciiString_swiginit(self,_Interface.new_Interface_IndexedMapOfAsciiString(NbBuckets))
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: Interface_IndexedMapOfAsciiString &
@@ -5796,7 +6246,7 @@ class Interface_IndexedMapOfAsciiString(OCC.TCollection.TCollection_BasicMap):
         """
         return _Interface.Interface_IndexedMapOfAsciiString_Assign(self, *args)
 
-    def Set(self, *args) -> "Interface_IndexedMapOfAsciiString &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: Interface_IndexedMapOfAsciiString &
@@ -5805,23 +6255,23 @@ class Interface_IndexedMapOfAsciiString(OCC.TCollection.TCollection_BasicMap):
         """
         return _Interface.Interface_IndexedMapOfAsciiString_Set(self, *args)
 
-    def ReSize(self, *args) -> "void" :
+    def ReSize(self, *args):
         """
         :param NbBuckets:
-        :type NbBuckets: int
+        :type NbBuckets: Standard_Integer
         :rtype: None
 
         """
         return _Interface.Interface_IndexedMapOfAsciiString_ReSize(self, *args)
 
-    def Clear(self, *args) -> "void" :
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _Interface.Interface_IndexedMapOfAsciiString_Clear(self, *args)
+        return _Interface.Interface_IndexedMapOfAsciiString_Clear(self)
 
-    def Add(self, *args) -> "Standard_Integer" :
+    def Add(self, *args):
         """
         :param K:
         :type K: TCollection_AsciiString &
@@ -5830,10 +6280,10 @@ class Interface_IndexedMapOfAsciiString(OCC.TCollection.TCollection_BasicMap):
         """
         return _Interface.Interface_IndexedMapOfAsciiString_Add(self, *args)
 
-    def Substitute(self, *args) -> "void" :
+    def Substitute(self, *args):
         """
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :param K:
         :type K: TCollection_AsciiString &
         :rtype: None
@@ -5841,14 +6291,14 @@ class Interface_IndexedMapOfAsciiString(OCC.TCollection.TCollection_BasicMap):
         """
         return _Interface.Interface_IndexedMapOfAsciiString_Substitute(self, *args)
 
-    def RemoveLast(self, *args) -> "void" :
+    def RemoveLast(self):
         """
         :rtype: None
 
         """
-        return _Interface.Interface_IndexedMapOfAsciiString_RemoveLast(self, *args)
+        return _Interface.Interface_IndexedMapOfAsciiString_RemoveLast(self)
 
-    def Contains(self, *args) -> "Standard_Boolean" :
+    def Contains(self, *args):
         """
         :param K:
         :type K: TCollection_AsciiString &
@@ -5857,16 +6307,16 @@ class Interface_IndexedMapOfAsciiString(OCC.TCollection.TCollection_BasicMap):
         """
         return _Interface.Interface_IndexedMapOfAsciiString_Contains(self, *args)
 
-    def FindKey(self, *args) -> "TCollection_AsciiString const &" :
+    def FindKey(self, *args):
         """
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :rtype: TCollection_AsciiString
 
         """
         return _Interface.Interface_IndexedMapOfAsciiString_FindKey(self, *args)
 
-    def FindIndex(self, *args) -> "Standard_Integer" :
+    def FindIndex(self, *args):
         """
         :param K:
         :type K: TCollection_AsciiString &
@@ -5875,7 +6325,7 @@ class Interface_IndexedMapOfAsciiString(OCC.TCollection.TCollection_BasicMap):
         """
         return _Interface.Interface_IndexedMapOfAsciiString_FindIndex(self, *args)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Interface_IndexedMapOfAsciiString self)"""
         return _Interface.Interface_IndexedMapOfAsciiString__kill_pointed(self)
 
@@ -5913,7 +6363,7 @@ class Interface_IntList(object):
         * Creates an IntList for <nbe> entities
 
         :param nbe:
-        :type nbe: int
+        :type nbe: Standard_Integer
         :rtype: None
 
         * Creates an IntList from another one. if <copied> is True, copies data else, data are not copied, only the header object is
@@ -5926,23 +6376,23 @@ class Interface_IntList(object):
 
         """
         _Interface.Interface_IntList_swiginit(self,_Interface.new_Interface_IntList(*args))
-    def Initialize(self, *args) -> "void" :
+    def Initialize(self, *args):
         """
         * //!Initialize IntList by number of entities.
 
         :param nbe:
-        :type nbe: int
+        :type nbe: Standard_Integer
         :rtype: None
 
         """
         return _Interface.Interface_IntList_Initialize(self, *args)
 
-    def Internals(self, *args) -> "void" :
+    def Internals(self, *args):
         """
         * Returns internal values, used for copying
 
         :param nbrefs:
-        :type nbrefs: int &
+        :type nbrefs: Standard_Integer &
         :param ents:
         :type ents: Handle_TColStd_HArray1OfInteger &
         :param refs:
@@ -5952,52 +6402,60 @@ class Interface_IntList(object):
         """
         return _Interface.Interface_IntList_Internals(self, *args)
 
-    def NbEntities(self, *args) -> "Standard_Integer" :
+    def NbEntities(self):
         """
         * Returns count of entities to be aknowledged
 
         :rtype: int
 
         """
-        return _Interface.Interface_IntList_NbEntities(self, *args)
+        return _Interface.Interface_IntList_NbEntities(self)
 
-    def SetNbEntities(self, *args) -> "void" :
+    def SetNbEntities(self, *args):
         """
         * Changes the count of entities (ignored if decreased)
 
         :param nbe:
-        :type nbe: int
+        :type nbe: Standard_Integer
         :rtype: None
 
         """
         return _Interface.Interface_IntList_SetNbEntities(self, *args)
 
-    def SetNumber(self, *args) -> "void" :
+    def SetNumber(self, *args):
         """
         * Sets an entity number as current (for read and fill)
 
         :param number:
-        :type number: int
+        :type number: Standard_Integer
         :rtype: None
 
         """
         return _Interface.Interface_IntList_SetNumber(self, *args)
 
-    def Number(self, *args) -> "Standard_Integer" :
+    def Number(self):
         """
         * Returns the current entity number
 
         :rtype: int
 
         """
-        return _Interface.Interface_IntList_Number(self, *args)
+        return _Interface.Interface_IntList_Number(self)
 
-    def List(self, *args) -> "Interface_IntList" :
+    def List(self, *args):
         """
         * Returns an IntList, identical to <self> but set to a specified entity Number By default, not copied (in order to be read) Specified <copied> to produce another list and edit it
 
         :param number:
-        :type number: int
+        :type number: Standard_Integer
+        :param copied: default value is Standard_False
+        :type copied: bool
+        :rtype: Interface_IntList
+
+        * Returns an IntList, identical to <self> but set to a specified entity Number By default, not copied (in order to be read) Specified <copied> to produce another list and edit it
+
+        :param number:
+        :type number: Standard_Integer
         :param copied: default value is Standard_False
         :type copied: bool
         :rtype: Interface_IntList
@@ -6005,7 +6463,7 @@ class Interface_IntList(object):
         """
         return _Interface.Interface_IntList_List(self, *args)
 
-    def SetRedefined(self, *args) -> "void" :
+    def SetRedefined(self, *args):
         """
         * Sets current entity list to be redefined or not This is used in a Graph for redefinition list : it can be disable (no redefinition, i.e. list is cleared), or enabled (starts as empty). The original list has not to be 'redefined'
 
@@ -6016,89 +6474,101 @@ class Interface_IntList(object):
         """
         return _Interface.Interface_IntList_SetRedefined(self, *args)
 
-    def Reservate(self, *args) -> "void" :
+    def Reservate(self, *args):
         """
         * Makes a reservation for <count> references to be later attached to the current entity. If required, it increases the size of array used to store refs. Remark that if count is less than two, it does nothing (because immediate storing)
 
         :param count:
-        :type count: int
+        :type count: Standard_Integer
         :rtype: None
 
         """
         return _Interface.Interface_IntList_Reservate(self, *args)
 
-    def Add(self, *args) -> "void" :
+    def Add(self, *args):
         """
         * Adds a reference (as an integer value, an entity number) to the current entity number. Zero is ignored
 
         :param ref:
-        :type ref: int
+        :type ref: Standard_Integer
         :rtype: None
 
         """
         return _Interface.Interface_IntList_Add(self, *args)
 
-    def Length(self, *args) -> "Standard_Integer" :
+    def Length(self):
         """
         * Returns the count of refs attached to current entity number
 
         :rtype: int
 
         """
-        return _Interface.Interface_IntList_Length(self, *args)
+        return _Interface.Interface_IntList_Length(self)
 
-    def IsRedefined(self, *args) -> "Standard_Boolean" :
+    def IsRedefined(self, num=0):
         """
         * Returns True if the list for a number (default is taken as current) is 'redefined' (usefull for empty list)
 
         :param num: default value is 0
-        :type num: int
+        :type num: Standard_Integer
+        :rtype: bool
+
+        * Returns True if the list for a number (default is taken as current) is 'redefined' (usefull for empty list)
+
+        :param num: default value is 0
+        :type num: Standard_Integer
         :rtype: bool
 
         """
-        return _Interface.Interface_IntList_IsRedefined(self, *args)
+        return _Interface.Interface_IntList_IsRedefined(self, num)
 
-    def Value(self, *args) -> "Standard_Integer" :
+    def Value(self, *args):
         """
         * Returns a reference number in the list for current number, according to its rank
 
         :param num:
-        :type num: int
+        :type num: Standard_Integer
         :rtype: int
 
         """
         return _Interface.Interface_IntList_Value(self, *args)
 
-    def Remove(self, *args) -> "Standard_Boolean" :
+    def Remove(self, *args):
         """
         * Removes an item in the list for current number, given its rank Returns True if done, False else
 
         :param num:
-        :type num: int
+        :type num: Standard_Integer
         :rtype: bool
 
         """
         return _Interface.Interface_IntList_Remove(self, *args)
 
-    def Clear(self, *args) -> "void" :
+    def Clear(self):
         """
         * Clears all data, hence each entity number has an empty list
 
         :rtype: None
 
         """
-        return _Interface.Interface_IntList_Clear(self, *args)
+        return _Interface.Interface_IntList_Clear(self)
 
-    def AdjustSize(self, *args) -> "void" :
+    def AdjustSize(self, margin=0):
         """
         * Resizes lists to exact sizes. For list of refs, a positive margin can be added.
 
         :param margin: default value is 0
-        :type margin: int
+        :type margin: Standard_Integer
+        :rtype: None
+
+        * Resizes lists to exact sizes. For list of refs, a positive margin can be added.
+
+        :param margin: default value is 0
+        :type margin: Standard_Integer
         :rtype: None
 
         """
-        return _Interface.Interface_IntList_AdjustSize(self, *args)
+        return _Interface.Interface_IntList_AdjustSize(self, margin)
 
     def __del__(self):
     	try:
@@ -6131,32 +6601,32 @@ Interface_IntList_swigregister(Interface_IntList)
 class Interface_IntVal(OCC.MMgt.MMgt_TShared):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _Interface.Interface_IntVal_swiginit(self,_Interface.new_Interface_IntVal(*args))
-    def Value(self, *args) -> "Standard_Integer" :
+        _Interface.Interface_IntVal_swiginit(self,_Interface.new_Interface_IntVal())
+    def Value(self):
         """
         :rtype: int
 
         """
-        return _Interface.Interface_IntVal_Value(self, *args)
+        return _Interface.Interface_IntVal_Value(self)
 
-    def GetCValue(self) -> "Standard_Integer" :
+    def GetCValue(self):
         """GetCValue(Interface_IntVal self) -> Standard_Integer"""
         return _Interface.Interface_IntVal_GetCValue(self)
 
-    def SetCValue(self, *args) -> "void" :
+    def SetCValue(self, *args):
         """SetCValue(Interface_IntVal self, Standard_Integer value)"""
         return _Interface.Interface_IntVal_SetCValue(self, *args)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Interface_IntVal self)"""
         return _Interface.Interface_IntVal__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Interface_IntVal" :
+    def GetHandle(self):
         """GetHandle(Interface_IntVal self) -> Handle_Interface_IntVal"""
         return _Interface.Interface_IntVal_GetHandle(self)
 
@@ -6197,7 +6667,7 @@ Handle_Interface_IntVal._kill_pointed = new_instancemethod(_Interface.Handle_Int
 Handle_Interface_IntVal_swigregister = _Interface.Handle_Interface_IntVal_swigregister
 Handle_Interface_IntVal_swigregister(Handle_Interface_IntVal)
 
-def Handle_Interface_IntVal_DownCast(*args) -> "Handle_Interface_IntVal const" :
+def Handle_Interface_IntVal_DownCast(*args):
   return _Interface.Handle_Interface_IntVal_DownCast(*args)
 Handle_Interface_IntVal_DownCast = _Interface.Handle_Interface_IntVal_DownCast
 
@@ -6205,16 +6675,16 @@ class Interface_InterfaceModel(OCC.MMgt.MMgt_TShared):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def Destroy(self, *args) -> "void" :
+    def Destroy(self):
         """
         * Clears the list of entities (service WhenDelete)
 
         :rtype: None
 
         """
-        return _Interface.Interface_InterfaceModel_Destroy(self, *args)
+        return _Interface.Interface_InterfaceModel_Destroy(self)
 
-    def SetProtocol(self, *args) -> "void" :
+    def SetProtocol(self, *args):
         """
         * Sets a Protocol for this Model It is also set by a call to AddWithRefs with Protocol It is used for : DumpHeader (as required), ClearEntities ...
 
@@ -6225,16 +6695,16 @@ class Interface_InterfaceModel(OCC.MMgt.MMgt_TShared):
         """
         return _Interface.Interface_InterfaceModel_SetProtocol(self, *args)
 
-    def Protocol(self, *args) -> "Handle_Interface_Protocol" :
+    def Protocol(self):
         """
         * Returns the Protocol which has been set by SetProtocol, or AddWithRefs with Protocol
 
         :rtype: Handle_Interface_Protocol
 
         """
-        return _Interface.Interface_InterfaceModel_Protocol(self, *args)
+        return _Interface.Interface_InterfaceModel_Protocol(self)
 
-    def SetGTool(self, *args) -> "void" :
+    def SetGTool(self, *args):
         """
         * Sets a GTool for this model, which already defines a Protocol
 
@@ -6245,69 +6715,69 @@ class Interface_InterfaceModel(OCC.MMgt.MMgt_TShared):
         """
         return _Interface.Interface_InterfaceModel_SetGTool(self, *args)
 
-    def GTool(self, *args) -> "Handle_Interface_GTool" :
+    def GTool(self):
         """
         * Returns the GTool, set by SetProtocol or by SetGTool
 
         :rtype: Handle_Interface_GTool
 
         """
-        return _Interface.Interface_InterfaceModel_GTool(self, *args)
+        return _Interface.Interface_InterfaceModel_GTool(self)
 
-    def GetDispatchStatus(self) -> "Standard_Boolean" :
+    def GetDispatchStatus(self):
         """GetDispatchStatus(Interface_InterfaceModel self) -> Standard_Boolean"""
         return _Interface.Interface_InterfaceModel_GetDispatchStatus(self)
 
-    def SetDispatchStatus(self, *args) -> "void" :
+    def SetDispatchStatus(self, *args):
         """SetDispatchStatus(Interface_InterfaceModel self, Standard_Boolean value)"""
         return _Interface.Interface_InterfaceModel_SetDispatchStatus(self, *args)
 
-    def Clear(self, *args) -> "void" :
+    def Clear(self):
         """
         * Erases contained data; used when a Model is copied to others : the new copied ones begin from clear Clear calls specific method ClearHeader (see below)
 
         :rtype: void
 
         """
-        return _Interface.Interface_InterfaceModel_Clear(self, *args)
+        return _Interface.Interface_InterfaceModel_Clear(self)
 
-    def ClearEntities(self, *args) -> "void" :
+    def ClearEntities(self):
         """
         * Clears the entities; uses the general service WhenDelete, in addition to the standard Memory Manager; can be redefined
 
         :rtype: void
 
         """
-        return _Interface.Interface_InterfaceModel_ClearEntities(self, *args)
+        return _Interface.Interface_InterfaceModel_ClearEntities(self)
 
-    def ClearLabels(self, *args) -> "void" :
+    def ClearLabels(self):
         """
         * Erases informations about labels, if any : specific to each norm
 
         :rtype: void
 
         """
-        return _Interface.Interface_InterfaceModel_ClearLabels(self, *args)
+        return _Interface.Interface_InterfaceModel_ClearLabels(self)
 
-    def ClearHeader(self, *args) -> "void" :
+    def ClearHeader(self):
         """
         * Clears Model's header : specific to each norm
 
         :rtype: void
 
         """
-        return _Interface.Interface_InterfaceModel_ClearHeader(self, *args)
+        return _Interface.Interface_InterfaceModel_ClearHeader(self)
 
-    def NbEntities(self, *args) -> "Standard_Integer" :
+    def NbEntities(self):
         """
         * Returns count of contained Entities
 
         :rtype: int
 
         """
-        return _Interface.Interface_InterfaceModel_NbEntities(self, *args)
+        return _Interface.Interface_InterfaceModel_NbEntities(self)
 
-    def Contains(self, *args) -> "Standard_Boolean" :
+    def Contains(self, *args):
         """
         * Returns True if a Model contains an Entity (for a ReportEntity, looks for the ReportEntity itself AND its Concerned Entity)
 
@@ -6318,7 +6788,7 @@ class Interface_InterfaceModel(OCC.MMgt.MMgt_TShared):
         """
         return _Interface.Interface_InterfaceModel_Contains(self, *args)
 
-    def Number(self, *args) -> "Standard_Integer" :
+    def Number(self, *args):
         """
         * Returns the Number of an Entity in the Model if it contains it. Else returns 0. For a ReportEntity, looks at Concerned Entity. Returns the Directory entry Number of an Entity in  the Model if it contains it. Else returns 0. For a  ReportEntity, looks at Concerned Entity.
 
@@ -6329,18 +6799,18 @@ class Interface_InterfaceModel(OCC.MMgt.MMgt_TShared):
         """
         return _Interface.Interface_InterfaceModel_Number(self, *args)
 
-    def Value(self, *args) -> "Handle_Standard_Transient const &" :
+    def Value(self, *args):
         """
         * Returns an Entity identified by its number in the Model Each sub-class of InterfaceModel can define its own method Entity to return its specific class of Entity (e.g. for VDA, VDAModel returns a VDAEntity), working by calling Value Remark : For a Reported Entity, (Erroneous, Corrected, Unknown), this 	 method returns this Reported Entity. See ReportEntity for other questions.
 
         :param num:
-        :type num: int
+        :type num: Standard_Integer
         :rtype: Handle_Standard_Transient
 
         """
         return _Interface.Interface_InterfaceModel_Value(self, *args)
 
-    def NbTypes(self, *args) -> "Standard_Integer" :
+    def NbTypes(self, *args):
         """
         * Returns the count of DISTINCT types under which an entity may be processed. Defined by the Protocol, which gives default as 1 (dynamic Type).
 
@@ -6351,21 +6821,37 @@ class Interface_InterfaceModel(OCC.MMgt.MMgt_TShared):
         """
         return _Interface.Interface_InterfaceModel_NbTypes(self, *args)
 
-    def Type(self, *args) -> "Handle_Standard_Type" :
+    def Type(self, *args):
         """
         * Returns a type, given its rank : defined by the Protocol (by default, the first one)
 
         :param ent:
         :type ent: Handle_Standard_Transient &
         :param num: default value is 1
-        :type num: int
+        :type num: Standard_Integer
+        :rtype: Handle_Standard_Type
+
+        * Returns a type, given its rank : defined by the Protocol (by default, the first one)
+
+        :param ent:
+        :type ent: Handle_Standard_Transient &
+        :param num: default value is 1
+        :type num: Standard_Integer
         :rtype: Handle_Standard_Type
 
         """
         return _Interface.Interface_InterfaceModel_Type(self, *args)
 
-    def TypeName(self, *args) -> "char *" :
+    def TypeName(self, *args):
         """
+        * Returns the type name of an entity, from the list of types (one or more ...) <complete> True (D) gives the complete type, else packages are removed WARNING : buffered, to be immediately copied or printed
+
+        :param ent:
+        :type ent: Handle_Standard_Transient &
+        :param complete: default value is Standard_True
+        :type complete: bool
+        :rtype: char *
+
         * Returns the type name of an entity, from the list of types (one or more ...) <complete> True (D) gives the complete type, else packages are removed WARNING : buffered, to be immediately copied or printed
 
         :param ent:
@@ -6377,7 +6863,7 @@ class Interface_InterfaceModel(OCC.MMgt.MMgt_TShared):
         """
         return _Interface.Interface_InterfaceModel_TypeName(self, *args)
 
-    def ClassName(*args) -> "char *" :
+    def ClassName(*args):
         """
         * From a CDL Type Name, returns the Class part (package dropped) WARNING : buffered, to be immediately copied or printed
 
@@ -6389,23 +6875,31 @@ class Interface_InterfaceModel(OCC.MMgt.MMgt_TShared):
         return _Interface.Interface_InterfaceModel_ClassName(*args)
 
     ClassName = staticmethod(ClassName)
-    def EntityState(self, *args) -> "Interface_DataState" :
+    def EntityState(self, *args):
         """
         * Returns the State of an entity, given its number
 
         :param num:
-        :type num: int
+        :type num: Standard_Integer
         :rtype: Interface_DataState
 
         """
         return _Interface.Interface_InterfaceModel_EntityState(self, *args)
 
-    def IsReportEntity(self, *args) -> "Standard_Boolean" :
+    def IsReportEntity(self, *args):
         """
         * Returns True if <num> identifies a ReportEntity in the Model Hence, ReportEntity can be called. By default, queries main report, if <semantic> is True, it queries report for semantic check Remember that a Report Entity can be defined for an Unknown Entity, or a Corrected or Erroneous (at read time) Entity. The ReportEntity is defined before call to method AddEntity.
 
         :param num:
-        :type num: int
+        :type num: Standard_Integer
+        :param semantic: default value is Standard_False
+        :type semantic: bool
+        :rtype: bool
+
+        * Returns True if <num> identifies a ReportEntity in the Model Hence, ReportEntity can be called. By default, queries main report, if <semantic> is True, it queries report for semantic check Remember that a Report Entity can be defined for an Unknown Entity, or a Corrected or Erroneous (at read time) Entity. The ReportEntity is defined before call to method AddEntity.
+
+        :param num:
+        :type num: Standard_Integer
         :param semantic: default value is Standard_False
         :type semantic: bool
         :rtype: bool
@@ -6413,12 +6907,20 @@ class Interface_InterfaceModel(OCC.MMgt.MMgt_TShared):
         """
         return _Interface.Interface_InterfaceModel_IsReportEntity(self, *args)
 
-    def ReportEntity(self, *args) -> "Handle_Interface_ReportEntity" :
+    def ReportEntity(self, *args):
         """
         * Returns a ReportEntity identified by its number in the Model, or a Null Handle If <num> does not identify a ReportEntity. By default, queries main report, if <semantic> is True, it queries report for semantic check
 
         :param num:
-        :type num: int
+        :type num: Standard_Integer
+        :param semantic: default value is Standard_False
+        :type semantic: bool
+        :rtype: Handle_Interface_ReportEntity
+
+        * Returns a ReportEntity identified by its number in the Model, or a Null Handle If <num> does not identify a ReportEntity. By default, queries main report, if <semantic> is True, it queries report for semantic check
+
+        :param num:
+        :type num: Standard_Integer
         :param semantic: default value is Standard_False
         :type semantic: bool
         :rtype: Handle_Interface_ReportEntity
@@ -6426,45 +6928,45 @@ class Interface_InterfaceModel(OCC.MMgt.MMgt_TShared):
         """
         return _Interface.Interface_InterfaceModel_ReportEntity(self, *args)
 
-    def IsErrorEntity(self, *args) -> "Standard_Boolean" :
+    def IsErrorEntity(self, *args):
         """
         * Returns True if <num> identifies an Error Entity : in this case, a ReportEntity brings Fail Messages and possibly an 'undefined' Content, see IsRedefinedEntity
 
         :param num:
-        :type num: int
+        :type num: Standard_Integer
         :rtype: bool
 
         """
         return _Interface.Interface_InterfaceModel_IsErrorEntity(self, *args)
 
-    def IsRedefinedContent(self, *args) -> "Standard_Boolean" :
+    def IsRedefinedContent(self, *args):
         """
         * Returns True if <num> identifies an Entity which content is redefined through a ReportEntity (i.e. with literal data only) This happens when an entity is syntactically erroneous in the way that its basic content remains empty. For more details (such as content itself), see ReportEntity
 
         :param num:
-        :type num: int
+        :type num: Standard_Integer
         :rtype: bool
 
         """
         return _Interface.Interface_InterfaceModel_IsRedefinedContent(self, *args)
 
-    def ClearReportEntity(self, *args) -> "Standard_Boolean" :
+    def ClearReportEntity(self, *args):
         """
         * Removes the ReportEntity attached to Entity <num>. Returns True if done, False if no ReportEntity was attached to <num>. Warning : the caller must assume that this clearing is meaningfull
 
         :param num:
-        :type num: int
+        :type num: Standard_Integer
         :rtype: bool
 
         """
         return _Interface.Interface_InterfaceModel_ClearReportEntity(self, *args)
 
-    def SetReportEntity(self, *args) -> "Standard_Boolean" :
+    def SetReportEntity(self, *args):
         """
         * Sets or Replaces a ReportEntity for the Entity <num>. Returns True if Report is replaced, False if it has been replaced Warning : the caller must assume that this setting is meaningfull
 
         :param num:
-        :type num: int
+        :type num: Standard_Integer
         :param rep:
         :type rep: Handle_Interface_ReportEntity &
         :rtype: bool
@@ -6472,8 +6974,16 @@ class Interface_InterfaceModel(OCC.MMgt.MMgt_TShared):
         """
         return _Interface.Interface_InterfaceModel_SetReportEntity(self, *args)
 
-    def AddReportEntity(self, *args) -> "Standard_Boolean" :
+    def AddReportEntity(self, *args):
         """
+        * Adds a ReportEntity as such. Returns False if the concerned entity is not recorded in the Model Else, adds it into, either the main report list or the list for semantic checks, then returns True
+
+        :param rep:
+        :type rep: Handle_Interface_ReportEntity &
+        :param semantic: default value is Standard_False
+        :type semantic: bool
+        :rtype: bool
+
         * Adds a ReportEntity as such. Returns False if the concerned entity is not recorded in the Model Else, adds it into, either the main report list or the list for semantic checks, then returns True
 
         :param rep:
@@ -6485,19 +6995,27 @@ class Interface_InterfaceModel(OCC.MMgt.MMgt_TShared):
         """
         return _Interface.Interface_InterfaceModel_AddReportEntity(self, *args)
 
-    def IsUnknownEntity(self, *args) -> "Standard_Boolean" :
+    def IsUnknownEntity(self, *args):
         """
         * Returns True if <num> identifies an Unknown Entity : in this case, a ReportEntity with no Check Messages designates it.
 
         :param num:
-        :type num: int
+        :type num: Standard_Integer
         :rtype: bool
 
         """
         return _Interface.Interface_InterfaceModel_IsUnknownEntity(self, *args)
 
-    def FillSemanticChecks(self, *args) -> "void" :
+    def FillSemanticChecks(self, *args):
         """
+        * Fills the list of semantic checks. This list is computed (by CheckTool). Hence, it can be stored in the model for later queries <clear> True (D) : new list replaces <clear> False : new list is cumulated
+
+        :param checks:
+        :type checks: Interface_CheckIterator &
+        :param clear: default value is Standard_True
+        :type clear: bool
+        :rtype: None
+
         * Fills the list of semantic checks. This list is computed (by CheckTool). Hence, it can be stored in the model for later queries <clear> True (D) : new list replaces <clear> False : new list is cumulated
 
         :param checks:
@@ -6509,21 +7027,21 @@ class Interface_InterfaceModel(OCC.MMgt.MMgt_TShared):
         """
         return _Interface.Interface_InterfaceModel_FillSemanticChecks(self, *args)
 
-    def HasSemanticChecks(self, *args) -> "Standard_Boolean" :
+    def HasSemanticChecks(self):
         """
         * Returns True if semantic checks have been filled
 
         :rtype: bool
 
         """
-        return _Interface.Interface_InterfaceModel_HasSemanticChecks(self, *args)
+        return _Interface.Interface_InterfaceModel_HasSemanticChecks(self)
 
-    def Check(self, *args) -> "Handle_Interface_Check const &" :
+    def Check(self, *args):
         """
         * Returns the check attached to an entity, designated by its Number. 0 for global check <semantic> True : recorded semantic check <semantic> False : recorded syntactic check (see ReportEntity) If no check is recorded for <num>, returns an empty Check
 
         :param num:
-        :type num: int
+        :type num: Standard_Integer
         :param syntactic:
         :type syntactic: bool
         :rtype: Handle_Interface_Check
@@ -6531,18 +7049,18 @@ class Interface_InterfaceModel(OCC.MMgt.MMgt_TShared):
         """
         return _Interface.Interface_InterfaceModel_Check(self, *args)
 
-    def Reservate(self, *args) -> "void" :
+    def Reservate(self, *args):
         """
         * Does a reservation for the List of Entities (for optimized storage management). If it is not called, storage management can be less efficient. <nbent> is the expected count of Entities to store
 
         :param nbent:
-        :type nbent: int
+        :type nbent: Standard_Integer
         :rtype: void
 
         """
         return _Interface.Interface_InterfaceModel_Reservate(self, *args)
 
-    def AddEntity(self, *args) -> "void" :
+    def AddEntity(self, *args):
         """
         * Internal method for adding an Entity. Used by file reading (defined by each Interface) and Transfer tools. It adds the entity required to be added, not its refs : see AddWithRefs. If <anentity> is a ReportEntity, it is added to the list of Reports, its Concerned Entity (Erroneous or Corrected, else Unknown) is added to the list of Entities. That is, the ReportEntity must be created before Adding
 
@@ -6553,7 +7071,7 @@ class Interface_InterfaceModel(OCC.MMgt.MMgt_TShared):
         """
         return _Interface.Interface_InterfaceModel_AddEntity(self, *args)
 
-    def AddWithRefs(self, *args) -> "void" :
+    def AddWithRefs(self, *args):
         """
         * Adds to the Model, an Entity with all its References, as they are defined by General Services FillShared and ListImplied. Process is recursive (any sub-levels) if <level> = 0 (Default) Else, adds sub-entities until the required sub-level. Especially, if <level> = 1, adds immediate subs and that's all If <listall> is False (Default), an entity (<anentity> itself or one of its subs at any level) which is already recorded in the Model is not analysed, only the newly added ones are. If <listall> is True, all items are analysed (this allows to ensure the consistency of an adding made by steps)
 
@@ -6562,7 +7080,31 @@ class Interface_InterfaceModel(OCC.MMgt.MMgt_TShared):
         :param proto:
         :type proto: Handle_Interface_Protocol &
         :param level: default value is 0
-        :type level: int
+        :type level: Standard_Integer
+        :param listall: default value is Standard_False
+        :type listall: bool
+        :rtype: None
+
+        * Adds to the Model, an Entity with all its References, as they are defined by General Services FillShared and ListImplied. Process is recursive (any sub-levels) if <level> = 0 (Default) Else, adds sub-entities until the required sub-level. Especially, if <level> = 1, adds immediate subs and that's all If <listall> is False (Default), an entity (<anentity> itself or one of its subs at any level) which is already recorded in the Model is not analysed, only the newly added ones are. If <listall> is True, all items are analysed (this allows to ensure the consistency of an adding made by steps)
+
+        :param anent:
+        :type anent: Handle_Standard_Transient &
+        :param proto:
+        :type proto: Handle_Interface_Protocol &
+        :param level: default value is 0
+        :type level: Standard_Integer
+        :param listall: default value is Standard_False
+        :type listall: bool
+        :rtype: None
+
+        * Adds to the Model, an Entity with all its References, as they are defined by General Services FillShared and ListImplied. Process is recursive (any sub-levels) if <level> = 0 (Default) Else, adds sub-entities until the required sub-level. Especially, if <level> = 1, adds immediate subs and that's all If <listall> is False (Default), an entity (<anentity> itself or one of its subs at any level) which is already recorded in the Model is not analysed, only the newly added ones are. If <listall> is True, all items are analysed (this allows to ensure the consistency of an adding made by steps)
+
+        :param anent:
+        :type anent: Handle_Standard_Transient &
+        :param proto:
+        :type proto: Handle_Interface_Protocol &
+        :param level: default value is 0
+        :type level: Standard_Integer
         :param listall: default value is Standard_False
         :type listall: bool
         :rtype: None
@@ -6572,7 +7114,27 @@ class Interface_InterfaceModel(OCC.MMgt.MMgt_TShared):
         :param anent:
         :type anent: Handle_Standard_Transient &
         :param level: default value is 0
-        :type level: int
+        :type level: Standard_Integer
+        :param listall: default value is Standard_False
+        :type listall: bool
+        :rtype: None
+
+        * Same as above, but works with the Protocol of the Model
+
+        :param anent:
+        :type anent: Handle_Standard_Transient &
+        :param level: default value is 0
+        :type level: Standard_Integer
+        :param listall: default value is Standard_False
+        :type listall: bool
+        :rtype: None
+
+        * Same as above, but works with the Protocol of the Model
+
+        :param anent:
+        :type anent: Handle_Standard_Transient &
+        :param level: default value is 0
+        :type level: Standard_Integer
         :param listall: default value is Standard_False
         :type listall: bool
         :rtype: None
@@ -6584,7 +7146,31 @@ class Interface_InterfaceModel(OCC.MMgt.MMgt_TShared):
         :param lib:
         :type lib: Interface_GeneralLib &
         :param level: default value is 0
-        :type level: int
+        :type level: Standard_Integer
+        :param listall: default value is Standard_False
+        :type listall: bool
+        :rtype: None
+
+        * Same as above, but works with an already created GeneralLib
+
+        :param anent:
+        :type anent: Handle_Standard_Transient &
+        :param lib:
+        :type lib: Interface_GeneralLib &
+        :param level: default value is 0
+        :type level: Standard_Integer
+        :param listall: default value is Standard_False
+        :type listall: bool
+        :rtype: None
+
+        * Same as above, but works with an already created GeneralLib
+
+        :param anent:
+        :type anent: Handle_Standard_Transient &
+        :param lib:
+        :type lib: Interface_GeneralLib &
+        :param level: default value is 0
+        :type level: Standard_Integer
         :param listall: default value is Standard_False
         :type listall: bool
         :rtype: None
@@ -6592,12 +7178,12 @@ class Interface_InterfaceModel(OCC.MMgt.MMgt_TShared):
         """
         return _Interface.Interface_InterfaceModel_AddWithRefs(self, *args)
 
-    def ReplaceEntity(self, *args) -> "void" :
+    def ReplaceEntity(self, *args):
         """
         * Replace Entity with Number=nument on other entity - 'anent'
 
         :param nument:
-        :type nument: int
+        :type nument: Standard_Integer
         :param anent:
         :type anent: Handle_Standard_Transient &
         :rtype: None
@@ -6605,33 +7191,49 @@ class Interface_InterfaceModel(OCC.MMgt.MMgt_TShared):
         """
         return _Interface.Interface_InterfaceModel_ReplaceEntity(self, *args)
 
-    def ReverseOrders(self, *args) -> "void" :
+    def ReverseOrders(self, after=0):
         """
         * Reverses the Numbers of the Entities, between <after> and the total count of Entities. Thus, the entities : 1,2 ... after, after+1 ... nb-1, nb become numbered as : 1,2 ... after, nb, nb-1 ... after+1 By default (after = 0) the whole list of Entities is reversed
 
         :param after: default value is 0
-        :type after: int
+        :type after: Standard_Integer
+        :rtype: None
+
+        * Reverses the Numbers of the Entities, between <after> and the total count of Entities. Thus, the entities : 1,2 ... after, after+1 ... nb-1, nb become numbered as : 1,2 ... after, nb, nb-1 ... after+1 By default (after = 0) the whole list of Entities is reversed
+
+        :param after: default value is 0
+        :type after: Standard_Integer
         :rtype: None
 
         """
-        return _Interface.Interface_InterfaceModel_ReverseOrders(self, *args)
+        return _Interface.Interface_InterfaceModel_ReverseOrders(self, after)
 
-    def ChangeOrder(self, *args) -> "void" :
+    def ChangeOrder(self, *args):
         """
         * Changes the Numbers of some Entities : <oldnum> is moved to <newnum>, same for <count> entities. Thus : 1,2 ... newnum-1 newnum ... oldnum .. oldnum+count oldnum+count+1 .. gives 1,2 ... newnum-1 oldnum .. oldnum+count newnum ... oldnum+count+1 (can be seen as a circular permutation)
 
         :param oldnum:
-        :type oldnum: int
+        :type oldnum: Standard_Integer
         :param newnum:
-        :type newnum: int
+        :type newnum: Standard_Integer
         :param count: default value is 1
-        :type count: int
+        :type count: Standard_Integer
+        :rtype: None
+
+        * Changes the Numbers of some Entities : <oldnum> is moved to <newnum>, same for <count> entities. Thus : 1,2 ... newnum-1 newnum ... oldnum .. oldnum+count oldnum+count+1 .. gives 1,2 ... newnum-1 oldnum .. oldnum+count newnum ... oldnum+count+1 (can be seen as a circular permutation)
+
+        :param oldnum:
+        :type oldnum: Standard_Integer
+        :param newnum:
+        :type newnum: Standard_Integer
+        :param count: default value is 1
+        :type count: Standard_Integer
         :rtype: None
 
         """
         return _Interface.Interface_InterfaceModel_ChangeOrder(self, *args)
 
-    def GetFromTransfer(self, *args) -> "void" :
+    def GetFromTransfer(self, *args):
         """
         * Gets contents from an EntityIterator, prepared by a Transfer tool (e.g TransferCopy). Starts from clear
 
@@ -6642,7 +7244,7 @@ class Interface_InterfaceModel(OCC.MMgt.MMgt_TShared):
         """
         return _Interface.Interface_InterfaceModel_GetFromTransfer(self, *args)
 
-    def GetFromAnother(self, *args) -> "void" :
+    def GetFromAnother(self, *args):
         """
         * Gets header (data specific of a defined Interface) from another InterfaceModel; called from TransferCopy
 
@@ -6653,40 +7255,40 @@ class Interface_InterfaceModel(OCC.MMgt.MMgt_TShared):
         """
         return _Interface.Interface_InterfaceModel_GetFromAnother(self, *args)
 
-    def NewEmptyModel(self, *args) -> "Handle_Interface_InterfaceModel" :
+    def NewEmptyModel(self):
         """
         * Returns a New Empty Model, same type as <self> (whatever its Type); called to Copy parts a Model into other ones, then followed by a call to GetFromAnother (Header) then filling with specified Entities, themselves copied
 
         :rtype: Handle_Interface_InterfaceModel
 
         """
-        return _Interface.Interface_InterfaceModel_NewEmptyModel(self, *args)
+        return _Interface.Interface_InterfaceModel_NewEmptyModel(self)
 
-    def SetCategoryNumber(self, *args) -> "Standard_Boolean" :
+    def SetCategoryNumber(self, *args):
         """
         * Records a category number for an entity number Returns True when done, False if <num> is out of range
 
         :param num:
-        :type num: int
+        :type num: Standard_Integer
         :param val:
-        :type val: int
+        :type val: Standard_Integer
         :rtype: bool
 
         """
         return _Interface.Interface_InterfaceModel_SetCategoryNumber(self, *args)
 
-    def CategoryNumber(self, *args) -> "Standard_Integer" :
+    def CategoryNumber(self, *args):
         """
         * Returns the recorded category number for a given entity number 0 if none was defined for this entity
 
         :param num:
-        :type num: int
+        :type num: Standard_Integer
         :rtype: int
 
         """
         return _Interface.Interface_InterfaceModel_CategoryNumber(self, *args)
 
-    def FillIterator(self, *args) -> "void" :
+    def FillIterator(self, *args):
         """
         * Allows an EntityIterator to get a list of Entities
 
@@ -6697,17 +7299,23 @@ class Interface_InterfaceModel(OCC.MMgt.MMgt_TShared):
         """
         return _Interface.Interface_InterfaceModel_FillIterator(self, *args)
 
-    def Entities(self, *args) -> "Interface_EntityIterator" :
+    def Entities(self):
         """
         * Returns the list of all Entities, as an Iterator on Entities (the Entities themselves, not the Reports)
 
         :rtype: Interface_EntityIterator
 
         """
-        return _Interface.Interface_InterfaceModel_Entities(self, *args)
+        return _Interface.Interface_InterfaceModel_Entities(self)
 
-    def Reports(self, *args) -> "Interface_EntityIterator" :
+    def Reports(self, *args):
         """
+        * Returns the list of all ReportEntities, i.e. data about Entities read with Error or Warning informations (each item has to be casted to Report Entity then it can be queried for Concerned Entity, Content, Check ...) By default, returns the main reports, is <semantic> is True it returns the list for sematic checks
+
+        :param semantic: default value is Standard_False
+        :type semantic: bool
+        :rtype: Interface_EntityIterator
+
         * Returns the list of all ReportEntities, i.e. data about Entities read with Error or Warning informations (each item has to be casted to Report Entity then it can be queried for Concerned Entity, Content, Check ...) By default, returns the main reports, is <semantic> is True it returns the list for sematic checks
 
         :param semantic: default value is Standard_False
@@ -6717,17 +7325,23 @@ class Interface_InterfaceModel(OCC.MMgt.MMgt_TShared):
         """
         return _Interface.Interface_InterfaceModel_Reports(self, *args)
 
-    def Redefineds(self, *args) -> "Interface_EntityIterator" :
+    def Redefineds(self):
         """
         * Returns the list of ReportEntities which redefine data (generally, if concerned entity is 'Error', a literal content is added to it : this is a 'redefined entity'
 
         :rtype: Interface_EntityIterator
 
         """
-        return _Interface.Interface_InterfaceModel_Redefineds(self, *args)
+        return _Interface.Interface_InterfaceModel_Redefineds(self)
 
-    def GlobalCheck(self, *args) -> "Handle_Interface_Check const &" :
+    def GlobalCheck(self, *args):
         """
+        * Returns the GlobalCheck, which memorizes messages global to the file (not specific to an Entity), especially Header
+
+        :param syntactic: default value is Standard_True
+        :type syntactic: bool
+        :rtype: Handle_Interface_Check
+
         * Returns the GlobalCheck, which memorizes messages global to the file (not specific to an Entity), especially Header
 
         :param syntactic: default value is Standard_True
@@ -6737,7 +7351,7 @@ class Interface_InterfaceModel(OCC.MMgt.MMgt_TShared):
         """
         return _Interface.Interface_InterfaceModel_GlobalCheck(self, *args)
 
-    def SetGlobalCheck(self, *args) -> "void" :
+    def SetGlobalCheck(self, *args):
         """
         * Allows to modify GlobalCheck, after getting then completing it Remark : it is SYNTACTIC check. Semantics, see FillChecks
 
@@ -6748,7 +7362,7 @@ class Interface_InterfaceModel(OCC.MMgt.MMgt_TShared):
         """
         return _Interface.Interface_InterfaceModel_SetGlobalCheck(self, *args)
 
-    def VerifyCheck(self, *args) -> "void" :
+    def VerifyCheck(self, *args):
         """
         * Minimum Semantic Global Check on data in model (header) Can only check basic Data. See also GlobalCheck from Protocol for a check which takes the Graph into account Default does nothing, can be redefined
 
@@ -6759,20 +7373,28 @@ class Interface_InterfaceModel(OCC.MMgt.MMgt_TShared):
         """
         return _Interface.Interface_InterfaceModel_VerifyCheck(self, *args)
 
-    def DumpHeader(self, *args) -> "void" :
+    def DumpHeader(self, *args):
         """
         * Dumps Header in a short, easy to read, form, onto a Stream <level> allows to print more or less parts of the header, if necessary. 0 for basic print
 
         :param S:
         :type S: Handle_Message_Messenger &
         :param level: default value is 0
-        :type level: int
+        :type level: Standard_Integer
+        :rtype: void
+
+        * Dumps Header in a short, easy to read, form, onto a Stream <level> allows to print more or less parts of the header, if necessary. 0 for basic print
+
+        :param S:
+        :type S: Handle_Message_Messenger &
+        :param level: default value is 0
+        :type level: Standard_Integer
         :rtype: void
 
         """
         return _Interface.Interface_InterfaceModel_DumpHeader(self, *args)
 
-    def Print(self, *args) -> "void" :
+    def Print(self, *args):
         """
         * Prints identification of a given entity in <self>, in order to be printed in a list or phrase <mode> < 0 : prints only its number <mode> = 1 : just calls PrintLabel <mode> = 0 (D) : prints its number plus '/' plus PrintLabel If <ent> == <self>, simply prints 'Global' If <ent> is unknown, prints '/its type'
 
@@ -6781,13 +7403,23 @@ class Interface_InterfaceModel(OCC.MMgt.MMgt_TShared):
         :param s:
         :type s: Handle_Message_Messenger &
         :param mode: default value is 0
-        :type mode: int
+        :type mode: Standard_Integer
+        :rtype: None
+
+        * Prints identification of a given entity in <self>, in order to be printed in a list or phrase <mode> < 0 : prints only its number <mode> = 1 : just calls PrintLabel <mode> = 0 (D) : prints its number plus '/' plus PrintLabel If <ent> == <self>, simply prints 'Global' If <ent> is unknown, prints '/its type'
+
+        :param ent:
+        :type ent: Handle_Standard_Transient &
+        :param s:
+        :type s: Handle_Message_Messenger &
+        :param mode: default value is 0
+        :type mode: Standard_Integer
         :rtype: None
 
         """
         return _Interface.Interface_InterfaceModel_Print(self, *args)
 
-    def PrintLabel(self, *args) -> "void" :
+    def PrintLabel(self, *args):
         """
         * Prints label specific to each norm, for a given entity. Must only print label itself, in order to be included in a phrase. Can call the result of StringLabel, but not obliged.
 
@@ -6800,7 +7432,7 @@ class Interface_InterfaceModel(OCC.MMgt.MMgt_TShared):
         """
         return _Interface.Interface_InterfaceModel_PrintLabel(self, *args)
 
-    def PrintToLog(self, *args) -> "void" :
+    def PrintToLog(self, *args):
         """
         * Prints label specific to each norm in log format, for  a given entity.  By default, just calls PrintLabel, can be redefined
 
@@ -6813,7 +7445,7 @@ class Interface_InterfaceModel(OCC.MMgt.MMgt_TShared):
         """
         return _Interface.Interface_InterfaceModel_PrintToLog(self, *args)
 
-    def StringLabel(self, *args) -> "Handle_TCollection_HAsciiString" :
+    def StringLabel(self, *args):
         """
         * Returns a string with the label attached to a given entity. Warning : While this string may be edited on the spot, if it is a read field, the returned value must be copied before.
 
@@ -6824,14 +7456,34 @@ class Interface_InterfaceModel(OCC.MMgt.MMgt_TShared):
         """
         return _Interface.Interface_InterfaceModel_StringLabel(self, *args)
 
-    def NextNumberForLabel(self, *args) -> "Standard_Integer" :
+    def NextNumberForLabel(self, *args):
         """
         * Searches a label which matches with one entity. Begins from <lastnum>+1 (default:1) and scans the entities until <NbEntities>. For the first which matches <label>, this method returns its Number. Returns 0 if nothing found Can be called recursively (labels are not specified as unique) <exact> : if True (default), exact match is required else, checks the END of entity label This method is virtual, hence it can be redefined for a more efficient search (if exact is true).
 
         :param label:
         :type label: char *
         :param lastnum: default value is 0
-        :type lastnum: int
+        :type lastnum: Standard_Integer
+        :param exact: default value is Standard_True
+        :type exact: bool
+        :rtype: int
+
+        * Searches a label which matches with one entity. Begins from <lastnum>+1 (default:1) and scans the entities until <NbEntities>. For the first which matches <label>, this method returns its Number. Returns 0 if nothing found Can be called recursively (labels are not specified as unique) <exact> : if True (default), exact match is required else, checks the END of entity label This method is virtual, hence it can be redefined for a more efficient search (if exact is true).
+
+        :param label:
+        :type label: char *
+        :param lastnum: default value is 0
+        :type lastnum: Standard_Integer
+        :param exact: default value is Standard_True
+        :type exact: bool
+        :rtype: int
+
+        * Searches a label which matches with one entity. Begins from <lastnum>+1 (default:1) and scans the entities until <NbEntities>. For the first which matches <label>, this method returns its Number. Returns 0 if nothing found Can be called recursively (labels are not specified as unique) <exact> : if True (default), exact match is required else, checks the END of entity label This method is virtual, hence it can be redefined for a more efficient search (if exact is true).
+
+        :param label:
+        :type label: char *
+        :param lastnum: default value is 0
+        :type lastnum: Standard_Integer
         :param exact: default value is Standard_True
         :type exact: bool
         :rtype: int
@@ -6839,7 +7491,7 @@ class Interface_InterfaceModel(OCC.MMgt.MMgt_TShared):
         """
         return _Interface.Interface_InterfaceModel_NextNumberForLabel(self, *args)
 
-    def HasTemplate(*args) -> "Standard_Boolean" :
+    def HasTemplate(*args):
         """
         * Returns true if a template is attached to a given name
 
@@ -6851,7 +7503,7 @@ class Interface_InterfaceModel(OCC.MMgt.MMgt_TShared):
         return _Interface.Interface_InterfaceModel_HasTemplate(*args)
 
     HasTemplate = staticmethod(HasTemplate)
-    def Template(*args) -> "Handle_Interface_InterfaceModel" :
+    def Template(*args):
         """
         * Returns the template model attached to a name, or a Null Handle
 
@@ -6863,7 +7515,7 @@ class Interface_InterfaceModel(OCC.MMgt.MMgt_TShared):
         return _Interface.Interface_InterfaceModel_Template(*args)
 
     Template = staticmethod(Template)
-    def SetTemplate(*args) -> "Standard_Boolean" :
+    def SetTemplate(*args):
         """
         * Records a new template model with a name. If the name was already recorded, the corresponding template is replaced by the new one. Then, WARNING : test HasTemplate to avoid surprises
 
@@ -6877,21 +7529,21 @@ class Interface_InterfaceModel(OCC.MMgt.MMgt_TShared):
         return _Interface.Interface_InterfaceModel_SetTemplate(*args)
 
     SetTemplate = staticmethod(SetTemplate)
-    def ListTemplates(*args) -> "Handle_TColStd_HSequenceOfHAsciiString" :
+    def ListTemplates():
         """
         * Returns the complete list of names attached to template models
 
         :rtype: Handle_TColStd_HSequenceOfHAsciiString
 
         """
-        return _Interface.Interface_InterfaceModel_ListTemplates(*args)
+        return _Interface.Interface_InterfaceModel_ListTemplates()
 
     ListTemplates = staticmethod(ListTemplates)
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Interface_InterfaceModel self)"""
         return _Interface.Interface_InterfaceModel__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Interface_InterfaceModel" :
+    def GetHandle(self):
         """GetHandle(Interface_InterfaceModel self) -> Handle_Interface_InterfaceModel"""
         return _Interface.Interface_InterfaceModel_GetHandle(self)
 
@@ -6962,7 +7614,7 @@ Interface_InterfaceModel.GetHandle = new_instancemethod(_Interface.Interface_Int
 Interface_InterfaceModel_swigregister = _Interface.Interface_InterfaceModel_swigregister
 Interface_InterfaceModel_swigregister(Interface_InterfaceModel)
 
-def Interface_InterfaceModel_ClassName(*args) -> "char *" :
+def Interface_InterfaceModel_ClassName(*args):
   """
     * From a CDL Type Name, returns the Class part (package dropped) WARNING : buffered, to be immediately copied or printed
 
@@ -6973,7 +7625,7 @@ def Interface_InterfaceModel_ClassName(*args) -> "char *" :
     """
   return _Interface.Interface_InterfaceModel_ClassName(*args)
 
-def Interface_InterfaceModel_HasTemplate(*args) -> "Standard_Boolean" :
+def Interface_InterfaceModel_HasTemplate(*args):
   """
     * Returns true if a template is attached to a given name
 
@@ -6984,7 +7636,7 @@ def Interface_InterfaceModel_HasTemplate(*args) -> "Standard_Boolean" :
     """
   return _Interface.Interface_InterfaceModel_HasTemplate(*args)
 
-def Interface_InterfaceModel_Template(*args) -> "Handle_Interface_InterfaceModel" :
+def Interface_InterfaceModel_Template(*args):
   """
     * Returns the template model attached to a name, or a Null Handle
 
@@ -6995,7 +7647,7 @@ def Interface_InterfaceModel_Template(*args) -> "Handle_Interface_InterfaceModel
     """
   return _Interface.Interface_InterfaceModel_Template(*args)
 
-def Interface_InterfaceModel_SetTemplate(*args) -> "Standard_Boolean" :
+def Interface_InterfaceModel_SetTemplate(*args):
   """
     * Records a new template model with a name. If the name was already recorded, the corresponding template is replaced by the new one. Then, WARNING : test HasTemplate to avoid surprises
 
@@ -7008,14 +7660,14 @@ def Interface_InterfaceModel_SetTemplate(*args) -> "Standard_Boolean" :
     """
   return _Interface.Interface_InterfaceModel_SetTemplate(*args)
 
-def Interface_InterfaceModel_ListTemplates(*args) -> "Handle_TColStd_HSequenceOfHAsciiString" :
+def Interface_InterfaceModel_ListTemplates():
   """
     * Returns the complete list of names attached to template models
 
     :rtype: Handle_TColStd_HSequenceOfHAsciiString
 
     """
-  return _Interface.Interface_InterfaceModel_ListTemplates(*args)
+  return _Interface.Interface_InterfaceModel_ListTemplates()
 
 class Handle_Interface_InterfaceModel(OCC.MMgt.Handle_MMgt_TShared):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
@@ -7038,102 +7690,108 @@ Handle_Interface_InterfaceModel._kill_pointed = new_instancemethod(_Interface.Ha
 Handle_Interface_InterfaceModel_swigregister = _Interface.Handle_Interface_InterfaceModel_swigregister
 Handle_Interface_InterfaceModel_swigregister(Handle_Interface_InterfaceModel)
 
-def Handle_Interface_InterfaceModel_DownCast(*args) -> "Handle_Interface_InterfaceModel const" :
+def Handle_Interface_InterfaceModel_DownCast(*args):
   return _Interface.Handle_Interface_InterfaceModel_DownCast(*args)
 Handle_Interface_InterfaceModel_DownCast = _Interface.Handle_Interface_InterfaceModel_DownCast
 
 class Interface_LineBuffer(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self, size=10): 
         """
         * Creates a LineBuffer with an absolute maximum size (Default value is only to satisfy compiler requirement)
 
         :param size: default value is 10
-        :type size: int
+        :type size: Standard_Integer
+        :rtype: None
+
+        * Creates a LineBuffer with an absolute maximum size (Default value is only to satisfy compiler requirement)
+
+        :param size: default value is 10
+        :type size: Standard_Integer
         :rtype: None
 
         """
-        _Interface.Interface_LineBuffer_swiginit(self,_Interface.new_Interface_LineBuffer(*args))
-    def SetMax(self, *args) -> "void" :
+        _Interface.Interface_LineBuffer_swiginit(self,_Interface.new_Interface_LineBuffer(size))
+    def SetMax(self, *args):
         """
         * Changes Maximum allowed size of Buffer. If <max> is Zero, Maximum size is set to the initial size.
 
         :param max:
-        :type max: int
+        :type max: Standard_Integer
         :rtype: None
 
         """
         return _Interface.Interface_LineBuffer_SetMax(self, *args)
 
-    def SetInitial(self, *args) -> "void" :
+    def SetInitial(self, *args):
         """
         * Sets an Initial reservation for Blank characters (this reservation is counted in the size of the current Line)
 
         :param initial:
-        :type initial: int
+        :type initial: Standard_Integer
         :rtype: None
 
         """
         return _Interface.Interface_LineBuffer_SetInitial(self, *args)
 
-    def SetKeep(self, *args) -> "void" :
+    def SetKeep(self):
         """
         * Sets a Keep Status at current Length. It means that at next Move, the new line will begin by characters between Keep + 1 and current Length
 
         :rtype: None
 
         """
-        return _Interface.Interface_LineBuffer_SetKeep(self, *args)
+        return _Interface.Interface_LineBuffer_SetKeep(self)
 
-    def CanGet(self, *args) -> "Standard_Boolean" :
+    def CanGet(self, *args):
         """
         * Returns True if there is room enough to add <more> characters Else, it is required to Dump the Buffer before refilling it <more> is recorded to manage SetKeep status
 
         :param more:
-        :type more: int
+        :type more: Standard_Integer
         :rtype: bool
 
         """
         return _Interface.Interface_LineBuffer_CanGet(self, *args)
 
-    def Content(self, *args) -> "char *" :
+    def Content(self):
         """
         * Returns the Content of the LineBuffer was C++ : return const
 
         :rtype: char *
 
         """
-        return _Interface.Interface_LineBuffer_Content(self, *args)
+        return _Interface.Interface_LineBuffer_Content(self)
 
-    def Length(self, *args) -> "Standard_Integer" :
+    def Length(self):
         """
         * Returns the Length of the LineBuffer
 
         :rtype: int
 
         """
-        return _Interface.Interface_LineBuffer_Length(self, *args)
+        return _Interface.Interface_LineBuffer_Length(self)
 
-    def Clear(self, *args) -> "void" :
+    def Clear(self):
         """
         * Clears completely the LineBuffer
 
         :rtype: None
 
         """
-        return _Interface.Interface_LineBuffer_Clear(self, *args)
+        return _Interface.Interface_LineBuffer_Clear(self)
 
-    def FreezeInitial(self, *args) -> "void" :
+    def FreezeInitial(self):
         """
         * Inhibits effect of SetInitial until the next Move (i.e. Keep) Then Prepare will not insert initial blanks, but further ones will. This allows to cancel initial blanks on an internal Split A call to SetInitial has no effect on this until Move
 
         :rtype: None
 
         """
-        return _Interface.Interface_LineBuffer_FreezeInitial(self, *args)
+        return _Interface.Interface_LineBuffer_FreezeInitial(self)
 
-    def Move(self, *args) -> "void" :
+    def Move(self, *args):
         """
         * Fills a AsciiString <str> with the Content of the Line Buffer, then Clears the LineBuffer
 
@@ -7150,16 +7808,16 @@ class Interface_LineBuffer(object):
         """
         return _Interface.Interface_LineBuffer_Move(self, *args)
 
-    def Moved(self, *args) -> "Handle_TCollection_HAsciiString" :
+    def Moved(self):
         """
         * Same as above, but generates the HAsciiString
 
         :rtype: Handle_TCollection_HAsciiString
 
         """
-        return _Interface.Interface_LineBuffer_Moved(self, *args)
+        return _Interface.Interface_LineBuffer_Moved(self)
 
-    def Add(self, *args) -> "void" :
+    def Add(self, *args):
         """
         * Adds a text as a CString. Its Length is evaluated from the text (by C function strlen)
 
@@ -7172,7 +7830,7 @@ class Interface_LineBuffer(object):
         :param text:
         :type text: char *
         :param lntext:
-        :type lntext: int
+        :type lntext: Standard_Integer
         :rtype: None
 
         * Adds a text as a AsciiString from TCollection
@@ -7229,7 +7887,7 @@ class Interface_MSG(object):
         :param key:
         :type key: char *
         :param i1:
-        :type i1: int
+        :type i1: Standard_Integer
         :rtype: None
 
         * Translates a message which contains two integer variables As for one integer, it is just a writing help The basic message is intended to be in C-sprintf format with two %d forms in it
@@ -7237,9 +7895,9 @@ class Interface_MSG(object):
         :param key:
         :type key: char *
         :param i1:
-        :type i1: int
+        :type i1: Standard_Integer
         :param i2:
-        :type i2: int
+        :type i2: Standard_Integer
         :rtype: None
 
         * Translates a message which contains one real variable <intervals> if set, commands the variable to be rounded to an interval (see below, method Intervals) As for one integer, it is just a writing help The basic message is intended to be in C-sprintf format with one %f form (or equivalent : %e etc) in it
@@ -7248,8 +7906,18 @@ class Interface_MSG(object):
         :type key: char *
         :param r1:
         :type r1: float
-        :param intervals: default value is -1
-        :type intervals: int
+        :param intervals: default value is - 1
+        :type intervals: Standard_Integer
+        :rtype: None
+
+        * Translates a message which contains one real variable <intervals> if set, commands the variable to be rounded to an interval (see below, method Intervals) As for one integer, it is just a writing help The basic message is intended to be in C-sprintf format with one %f form (or equivalent : %e etc) in it
+
+        :param key:
+        :type key: char *
+        :param r1:
+        :type r1: float
+        :param intervals: default value is - 1
+        :type intervals: Standard_Integer
         :rtype: None
 
         * Translates a message which contains one string variable As for one integer, it is just a writing help The basic message is intended to be in C-sprintf format with one %s form in it
@@ -7265,36 +7933,36 @@ class Interface_MSG(object):
         :param key:
         :type key: char *
         :param ival:
-        :type ival: int
+        :type ival: Standard_Integer
         :param str:
         :type str: char *
         :rtype: None
 
         """
         _Interface.Interface_MSG_swiginit(self,_Interface.new_Interface_MSG(*args))
-    def Destroy(self, *args) -> "void" :
+    def Destroy(self):
         """
         * Optimised destructor (applies for additional forms of Create)
 
         :rtype: None
 
         """
-        return _Interface.Interface_MSG_Destroy(self, *args)
+        return _Interface.Interface_MSG_Destroy(self)
 
-    def Value(self, *args) -> "char *" :
+    def Value(self):
         """
         * Returns the translated message, in a functional form with operator () was C++ : return const
 
         :rtype: char *
 
         """
-        return _Interface.Interface_MSG_Value(self, *args)
+        return _Interface.Interface_MSG_Value(self)
 
-    def ReadFromString(self, *args) -> "void" :
+    def ReadFromString(self, *args):
         """ReadFromString(Interface_MSG self, std::string src)"""
         return _Interface.Interface_MSG_ReadFromString(self, *args)
 
-    def Read(*args) -> "Standard_Integer" :
+    def Read(*args):
         """
         * Reads a list of messages from a file defined by its name
 
@@ -7306,8 +7974,16 @@ class Interface_MSG(object):
         return _Interface.Interface_MSG_Read(*args)
 
     Read = staticmethod(Read)
-    def Write(*args) -> "Standard_Integer" :
+    def Write(*args):
         """
+        * Writes the list of messages recorded to be translated, to a stream. Writes all the list (Default) or only keys which begin by <rootkey>. Returns the count of written messages
+
+        :param S:
+        :type S: Standard_OStream &
+        :param rootkey: default value is 
+        :type rootkey: char *
+        :rtype: int
+
         * Writes the list of messages recorded to be translated, to a stream. Writes all the list (Default) or only keys which begin by <rootkey>. Returns the count of written messages
 
         :param S:
@@ -7320,7 +7996,7 @@ class Interface_MSG(object):
         return _Interface.Interface_MSG_Write(*args)
 
     Write = staticmethod(Write)
-    def IsKey(*args) -> "Standard_Boolean" :
+    def IsKey(*args):
         """
         * Returns True if a given message is surely a key (according to the form adopted for keys) (before activating messages, answer is false)
 
@@ -7332,7 +8008,7 @@ class Interface_MSG(object):
         return _Interface.Interface_MSG_IsKey(*args)
 
     IsKey = staticmethod(IsKey)
-    def Translated(*args) -> "char *" :
+    def Translated(*args):
         """
         * Returns the item recorded for a key. Returns the key itself if : - it is not recorded (then, the trace system is activated) - MSG has been required to be hung on
 
@@ -7344,7 +8020,7 @@ class Interface_MSG(object):
         return _Interface.Interface_MSG_Translated(*args)
 
     Translated = staticmethod(Translated)
-    def Record(*args) -> "void" :
+    def Record(*args):
         """
         * Fills the dictionary with a couple (key-item) If a key is already recorded, it is possible to : - keep the last definition, and activate the trace system
 
@@ -7358,7 +8034,7 @@ class Interface_MSG(object):
         return _Interface.Interface_MSG_Record(*args)
 
     Record = staticmethod(Record)
-    def SetTrace(*args) -> "void" :
+    def SetTrace(*args):
         """
         * Sets the trace system to work when activated, as follow : - if <toprint> is True, print immediately on standard output - if <torecord> is True, record it for further print
 
@@ -7372,7 +8048,7 @@ class Interface_MSG(object):
         return _Interface.Interface_MSG_SetTrace(*args)
 
     SetTrace = staticmethod(SetTrace)
-    def SetMode(*args) -> "void" :
+    def SetMode(*args):
         """
         * Sets the main modes for MSG : - if <running> is True, translation works normally - if <running> is False, translated item equate keys - if <raising> is True, errors (from Record or Translate) cause MSG to raise an exception - if <raising> is False, MSG runs without exception, then see also Trace Modes above
 
@@ -7386,18 +8062,38 @@ class Interface_MSG(object):
         return _Interface.Interface_MSG_SetMode(*args)
 
     SetMode = staticmethod(SetMode)
-    def PrintTraceToString(self) -> "std::string" :
+    def PrintTraceToString(self):
         """PrintTraceToString(Interface_MSG self) -> std::string"""
         return _Interface.Interface_MSG_PrintTraceToString(self)
 
-    def Intervalled(*args) -> "Standard_Real" :
+    def Intervalled(*args):
         """
         * Returns an 'intervalled' value from a starting real <val> : i.e. a value which is rounded on an interval limit Interval limits are defined to be in a coarsely 'geometric' progression (two successive intervals are inside a limit ratio) <order> gives the count of desired intervals in a range <1-10> <upper> False, returns the first lower interval (D) <upper> True, returns the first upper interval Values of Intervals according <order> : 0,1 : 1 10 100 ... 2 : 1 3 10 30 100 ... 3(D): 1 2 5 10 20 50 100 ... 4 : 1 2 3 6 10 20 30 60 100 ... 6 : 1 1.5 2 3 5 7 10 15 20 ... 10 : 1 1.2 1.5 2 2.5 3 4 5 6 8 10 12 15 20 25 ...
 
         :param val:
         :type val: float
         :param order: default value is 3
-        :type order: int
+        :type order: Standard_Integer
+        :param upper: default value is Standard_False
+        :type upper: bool
+        :rtype: float
+
+        * Returns an 'intervalled' value from a starting real <val> : i.e. a value which is rounded on an interval limit Interval limits are defined to be in a coarsely 'geometric' progression (two successive intervals are inside a limit ratio) <order> gives the count of desired intervals in a range <1-10> <upper> False, returns the first lower interval (D) <upper> True, returns the first upper interval Values of Intervals according <order> : 0,1 : 1 10 100 ... 2 : 1 3 10 30 100 ... 3(D): 1 2 5 10 20 50 100 ... 4 : 1 2 3 6 10 20 30 60 100 ... 6 : 1 1.5 2 3 5 7 10 15 20 ... 10 : 1 1.2 1.5 2 2.5 3 4 5 6 8 10 12 15 20 25 ...
+
+        :param val:
+        :type val: float
+        :param order: default value is 3
+        :type order: Standard_Integer
+        :param upper: default value is Standard_False
+        :type upper: bool
+        :rtype: float
+
+        * Returns an 'intervalled' value from a starting real <val> : i.e. a value which is rounded on an interval limit Interval limits are defined to be in a coarsely 'geometric' progression (two successive intervals are inside a limit ratio) <order> gives the count of desired intervals in a range <1-10> <upper> False, returns the first lower interval (D) <upper> True, returns the first upper interval Values of Intervals according <order> : 0,1 : 1 10 100 ... 2 : 1 3 10 30 100 ... 3(D): 1 2 5 10 20 50 100 ... 4 : 1 2 3 6 10 20 30 60 100 ... 6 : 1 1.5 2 3 5 7 10 15 20 ... 10 : 1 1.2 1.5 2 2.5 3 4 5 6 8 10 12 15 20 25 ...
+
+        :param val:
+        :type val: float
+        :param order: default value is 3
+        :type order: Standard_Integer
         :param upper: default value is Standard_False
         :type upper: bool
         :rtype: float
@@ -7406,24 +8102,44 @@ class Interface_MSG(object):
         return _Interface.Interface_MSG_Intervalled(*args)
 
     Intervalled = staticmethod(Intervalled)
-    def TDate(*args) -> "void" :
+    def TDate(*args):
         """
         * Codes a date as a text, from its numeric value (-> seconds) : YYYY-MM-DD:HH-MN-SS fixed format, completed by leading zeros Another format can be provided, as follows : C:%d ... C like format, preceeded by C: S:... format to call system (not yet implemented)
 
         :param text:
         :type text: char *
         :param yy:
-        :type yy: int
+        :type yy: Standard_Integer
         :param mm:
-        :type mm: int
+        :type mm: Standard_Integer
         :param dd:
-        :type dd: int
+        :type dd: Standard_Integer
         :param hh:
-        :type hh: int
+        :type hh: Standard_Integer
         :param mn:
-        :type mn: int
+        :type mn: Standard_Integer
         :param ss:
-        :type ss: int
+        :type ss: Standard_Integer
+        :param format: default value is 
+        :type format: char *
+        :rtype: void
+
+        * Codes a date as a text, from its numeric value (-> seconds) : YYYY-MM-DD:HH-MN-SS fixed format, completed by leading zeros Another format can be provided, as follows : C:%d ... C like format, preceeded by C: S:... format to call system (not yet implemented)
+
+        :param text:
+        :type text: char *
+        :param yy:
+        :type yy: Standard_Integer
+        :param mm:
+        :type mm: Standard_Integer
+        :param dd:
+        :type dd: Standard_Integer
+        :param hh:
+        :type hh: Standard_Integer
+        :param mn:
+        :type mn: Standard_Integer
+        :param ss:
+        :type ss: Standard_Integer
         :param format: default value is 
         :type format: char *
         :rtype: void
@@ -7432,31 +8148,31 @@ class Interface_MSG(object):
         return _Interface.Interface_MSG_TDate(*args)
 
     TDate = staticmethod(TDate)
-    def NDate(*args) -> "Standard_Integer &, Standard_Integer &, Standard_Integer &, Standard_Integer &, Standard_Integer &, Standard_Integer &" :
+    def NDate(*args):
         """
         * Decodes a date to numeric integer values Returns True if OK, False if text does not fit with required format. Incomplete forms are allowed (for instance, for only YYYY-MM-DD, hour is zero)
 
         :param text:
         :type text: char *
         :param yy:
-        :type yy: int &
+        :type yy: Standard_Integer &
         :param mm:
-        :type mm: int &
+        :type mm: Standard_Integer &
         :param dd:
-        :type dd: int &
+        :type dd: Standard_Integer &
         :param hh:
-        :type hh: int &
+        :type hh: Standard_Integer &
         :param mn:
-        :type mn: int &
+        :type mn: Standard_Integer &
         :param ss:
-        :type ss: int &
+        :type ss: Standard_Integer &
         :rtype: bool
 
         """
         return _Interface.Interface_MSG_NDate(*args)
 
     NDate = staticmethod(NDate)
-    def CDate(*args) -> "Standard_Integer" :
+    def CDate(*args):
         """
         * Returns a value about comparison of two dates 0 : equal. <0 text1 anterior. >0 text1 posterior
 
@@ -7470,14 +8186,14 @@ class Interface_MSG(object):
         return _Interface.Interface_MSG_CDate(*args)
 
     CDate = staticmethod(CDate)
-    def Blanks(*args) -> "char *" :
+    def Blanks(*args):
         """
         * Returns a blank string, of length between 0 and <max>, to fill the printing of a numeric value <val>, i.e. : If val < 10 , max-1 blanks If val between 10 and 99, max-2 blanks ... etc...
 
         :param val:
-        :type val: int
+        :type val: Standard_Integer
         :param max:
-        :type max: int
+        :type max: Standard_Integer
         :rtype: char *
 
         * Returns a blank string, to complete a given string <val> up to <max> characters : If strlen(val) is 0, max blanks If strlen(val) is 5, max-5 blanks etc...
@@ -7485,20 +8201,20 @@ class Interface_MSG(object):
         :param val:
         :type val: char *
         :param max:
-        :type max: int
+        :type max: Standard_Integer
         :rtype: char *
 
         * Returns a blank string of <count> blanks (mini 0, maxi 76)
 
         :param count:
-        :type count: int
+        :type count: Standard_Integer
         :rtype: char *
 
         """
         return _Interface.Interface_MSG_Blanks(*args)
 
     Blanks = staticmethod(Blanks)
-    def Print(*args) -> "void" :
+    def Print(*args):
         """
         * Prints a String on an Output Stream, as follows : Accompagned with blanks, to give up to <max> charis at all, justified according just : -1 (D) : left 0 : center 1 : right Maximum 76 characters
 
@@ -7507,16 +8223,28 @@ class Interface_MSG(object):
         :param val:
         :type val: char *
         :param max:
-        :type max: int
-        :param just: default value is -1
-        :type just: int
+        :type max: Standard_Integer
+        :param just: default value is - 1
+        :type just: Standard_Integer
+        :rtype: void
+
+        * Prints a String on an Output Stream, as follows : Accompagned with blanks, to give up to <max> charis at all, justified according just : -1 (D) : left 0 : center 1 : right Maximum 76 characters
+
+        :param S:
+        :type S: Standard_OStream &
+        :param val:
+        :type val: char *
+        :param max:
+        :type max: Standard_Integer
+        :param just: default value is - 1
+        :type just: Standard_Integer
         :rtype: void
 
         """
         return _Interface.Interface_MSG_Print(*args)
 
     Print = staticmethod(Print)
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Interface_MSG self)"""
         return _Interface.Interface_MSG__kill_pointed(self)
 
@@ -7536,7 +8264,7 @@ Interface_MSG._kill_pointed = new_instancemethod(_Interface.Interface_MSG__kill_
 Interface_MSG_swigregister = _Interface.Interface_MSG_swigregister
 Interface_MSG_swigregister(Interface_MSG)
 
-def Interface_MSG_Read(*args) -> "Standard_Integer" :
+def Interface_MSG_Read(*args):
   """
     * Reads a list of messages from a file defined by its name
 
@@ -7547,8 +8275,16 @@ def Interface_MSG_Read(*args) -> "Standard_Integer" :
     """
   return _Interface.Interface_MSG_Read(*args)
 
-def Interface_MSG_Write(*args) -> "Standard_Integer" :
+def Interface_MSG_Write(*args):
   """
+    * Writes the list of messages recorded to be translated, to a stream. Writes all the list (Default) or only keys which begin by <rootkey>. Returns the count of written messages
+
+    :param S:
+    :type S: Standard_OStream &
+    :param rootkey: default value is 
+    :type rootkey: char *
+    :rtype: int
+
     * Writes the list of messages recorded to be translated, to a stream. Writes all the list (Default) or only keys which begin by <rootkey>. Returns the count of written messages
 
     :param S:
@@ -7560,7 +8296,7 @@ def Interface_MSG_Write(*args) -> "Standard_Integer" :
     """
   return _Interface.Interface_MSG_Write(*args)
 
-def Interface_MSG_IsKey(*args) -> "Standard_Boolean" :
+def Interface_MSG_IsKey(*args):
   """
     * Returns True if a given message is surely a key (according to the form adopted for keys) (before activating messages, answer is false)
 
@@ -7571,7 +8307,7 @@ def Interface_MSG_IsKey(*args) -> "Standard_Boolean" :
     """
   return _Interface.Interface_MSG_IsKey(*args)
 
-def Interface_MSG_Translated(*args) -> "char *" :
+def Interface_MSG_Translated(*args):
   """
     * Returns the item recorded for a key. Returns the key itself if : - it is not recorded (then, the trace system is activated) - MSG has been required to be hung on
 
@@ -7582,7 +8318,7 @@ def Interface_MSG_Translated(*args) -> "char *" :
     """
   return _Interface.Interface_MSG_Translated(*args)
 
-def Interface_MSG_Record(*args) -> "void" :
+def Interface_MSG_Record(*args):
   """
     * Fills the dictionary with a couple (key-item) If a key is already recorded, it is possible to : - keep the last definition, and activate the trace system
 
@@ -7595,7 +8331,7 @@ def Interface_MSG_Record(*args) -> "void" :
     """
   return _Interface.Interface_MSG_Record(*args)
 
-def Interface_MSG_SetTrace(*args) -> "void" :
+def Interface_MSG_SetTrace(*args):
   """
     * Sets the trace system to work when activated, as follow : - if <toprint> is True, print immediately on standard output - if <torecord> is True, record it for further print
 
@@ -7608,7 +8344,7 @@ def Interface_MSG_SetTrace(*args) -> "void" :
     """
   return _Interface.Interface_MSG_SetTrace(*args)
 
-def Interface_MSG_SetMode(*args) -> "void" :
+def Interface_MSG_SetMode(*args):
   """
     * Sets the main modes for MSG : - if <running> is True, translation works normally - if <running> is False, translated item equate keys - if <raising> is True, errors (from Record or Translate) cause MSG to raise an exception - if <raising> is False, MSG runs without exception, then see also Trace Modes above
 
@@ -7621,14 +8357,34 @@ def Interface_MSG_SetMode(*args) -> "void" :
     """
   return _Interface.Interface_MSG_SetMode(*args)
 
-def Interface_MSG_Intervalled(*args) -> "Standard_Real" :
+def Interface_MSG_Intervalled(*args):
   """
     * Returns an 'intervalled' value from a starting real <val> : i.e. a value which is rounded on an interval limit Interval limits are defined to be in a coarsely 'geometric' progression (two successive intervals are inside a limit ratio) <order> gives the count of desired intervals in a range <1-10> <upper> False, returns the first lower interval (D) <upper> True, returns the first upper interval Values of Intervals according <order> : 0,1 : 1 10 100 ... 2 : 1 3 10 30 100 ... 3(D): 1 2 5 10 20 50 100 ... 4 : 1 2 3 6 10 20 30 60 100 ... 6 : 1 1.5 2 3 5 7 10 15 20 ... 10 : 1 1.2 1.5 2 2.5 3 4 5 6 8 10 12 15 20 25 ...
 
     :param val:
     :type val: float
     :param order: default value is 3
-    :type order: int
+    :type order: Standard_Integer
+    :param upper: default value is Standard_False
+    :type upper: bool
+    :rtype: float
+
+    * Returns an 'intervalled' value from a starting real <val> : i.e. a value which is rounded on an interval limit Interval limits are defined to be in a coarsely 'geometric' progression (two successive intervals are inside a limit ratio) <order> gives the count of desired intervals in a range <1-10> <upper> False, returns the first lower interval (D) <upper> True, returns the first upper interval Values of Intervals according <order> : 0,1 : 1 10 100 ... 2 : 1 3 10 30 100 ... 3(D): 1 2 5 10 20 50 100 ... 4 : 1 2 3 6 10 20 30 60 100 ... 6 : 1 1.5 2 3 5 7 10 15 20 ... 10 : 1 1.2 1.5 2 2.5 3 4 5 6 8 10 12 15 20 25 ...
+
+    :param val:
+    :type val: float
+    :param order: default value is 3
+    :type order: Standard_Integer
+    :param upper: default value is Standard_False
+    :type upper: bool
+    :rtype: float
+
+    * Returns an 'intervalled' value from a starting real <val> : i.e. a value which is rounded on an interval limit Interval limits are defined to be in a coarsely 'geometric' progression (two successive intervals are inside a limit ratio) <order> gives the count of desired intervals in a range <1-10> <upper> False, returns the first lower interval (D) <upper> True, returns the first upper interval Values of Intervals according <order> : 0,1 : 1 10 100 ... 2 : 1 3 10 30 100 ... 3(D): 1 2 5 10 20 50 100 ... 4 : 1 2 3 6 10 20 30 60 100 ... 6 : 1 1.5 2 3 5 7 10 15 20 ... 10 : 1 1.2 1.5 2 2.5 3 4 5 6 8 10 12 15 20 25 ...
+
+    :param val:
+    :type val: float
+    :param order: default value is 3
+    :type order: Standard_Integer
     :param upper: default value is Standard_False
     :type upper: bool
     :rtype: float
@@ -7636,24 +8392,44 @@ def Interface_MSG_Intervalled(*args) -> "Standard_Real" :
     """
   return _Interface.Interface_MSG_Intervalled(*args)
 
-def Interface_MSG_TDate(*args) -> "void" :
+def Interface_MSG_TDate(*args):
   """
     * Codes a date as a text, from its numeric value (-> seconds) : YYYY-MM-DD:HH-MN-SS fixed format, completed by leading zeros Another format can be provided, as follows : C:%d ... C like format, preceeded by C: S:... format to call system (not yet implemented)
 
     :param text:
     :type text: char *
     :param yy:
-    :type yy: int
+    :type yy: Standard_Integer
     :param mm:
-    :type mm: int
+    :type mm: Standard_Integer
     :param dd:
-    :type dd: int
+    :type dd: Standard_Integer
     :param hh:
-    :type hh: int
+    :type hh: Standard_Integer
     :param mn:
-    :type mn: int
+    :type mn: Standard_Integer
     :param ss:
-    :type ss: int
+    :type ss: Standard_Integer
+    :param format: default value is 
+    :type format: char *
+    :rtype: void
+
+    * Codes a date as a text, from its numeric value (-> seconds) : YYYY-MM-DD:HH-MN-SS fixed format, completed by leading zeros Another format can be provided, as follows : C:%d ... C like format, preceeded by C: S:... format to call system (not yet implemented)
+
+    :param text:
+    :type text: char *
+    :param yy:
+    :type yy: Standard_Integer
+    :param mm:
+    :type mm: Standard_Integer
+    :param dd:
+    :type dd: Standard_Integer
+    :param hh:
+    :type hh: Standard_Integer
+    :param mn:
+    :type mn: Standard_Integer
+    :param ss:
+    :type ss: Standard_Integer
     :param format: default value is 
     :type format: char *
     :rtype: void
@@ -7661,30 +8437,30 @@ def Interface_MSG_TDate(*args) -> "void" :
     """
   return _Interface.Interface_MSG_TDate(*args)
 
-def Interface_MSG_NDate(*args) -> "Standard_Integer &, Standard_Integer &, Standard_Integer &, Standard_Integer &, Standard_Integer &, Standard_Integer &" :
+def Interface_MSG_NDate(*args):
   """
     * Decodes a date to numeric integer values Returns True if OK, False if text does not fit with required format. Incomplete forms are allowed (for instance, for only YYYY-MM-DD, hour is zero)
 
     :param text:
     :type text: char *
     :param yy:
-    :type yy: int &
+    :type yy: Standard_Integer &
     :param mm:
-    :type mm: int &
+    :type mm: Standard_Integer &
     :param dd:
-    :type dd: int &
+    :type dd: Standard_Integer &
     :param hh:
-    :type hh: int &
+    :type hh: Standard_Integer &
     :param mn:
-    :type mn: int &
+    :type mn: Standard_Integer &
     :param ss:
-    :type ss: int &
+    :type ss: Standard_Integer &
     :rtype: bool
 
     """
   return _Interface.Interface_MSG_NDate(*args)
 
-def Interface_MSG_CDate(*args) -> "Standard_Integer" :
+def Interface_MSG_CDate(*args):
   """
     * Returns a value about comparison of two dates 0 : equal. <0 text1 anterior. >0 text1 posterior
 
@@ -7697,14 +8473,14 @@ def Interface_MSG_CDate(*args) -> "Standard_Integer" :
     """
   return _Interface.Interface_MSG_CDate(*args)
 
-def Interface_MSG_Blanks(*args) -> "char *" :
+def Interface_MSG_Blanks(*args):
   """
     * Returns a blank string, of length between 0 and <max>, to fill the printing of a numeric value <val>, i.e. : If val < 10 , max-1 blanks If val between 10 and 99, max-2 blanks ... etc...
 
     :param val:
-    :type val: int
+    :type val: Standard_Integer
     :param max:
-    :type max: int
+    :type max: Standard_Integer
     :rtype: char *
 
     * Returns a blank string, to complete a given string <val> up to <max> characters : If strlen(val) is 0, max blanks If strlen(val) is 5, max-5 blanks etc...
@@ -7712,19 +8488,19 @@ def Interface_MSG_Blanks(*args) -> "char *" :
     :param val:
     :type val: char *
     :param max:
-    :type max: int
+    :type max: Standard_Integer
     :rtype: char *
 
     * Returns a blank string of <count> blanks (mini 0, maxi 76)
 
     :param count:
-    :type count: int
+    :type count: Standard_Integer
     :rtype: char *
 
     """
   return _Interface.Interface_MSG_Blanks(*args)
 
-def Interface_MSG_Print(*args) -> "void" :
+def Interface_MSG_Print(*args):
   """
     * Prints a String on an Output Stream, as follows : Accompagned with blanks, to give up to <max> charis at all, justified according just : -1 (D) : left 0 : center 1 : right Maximum 76 characters
 
@@ -7733,9 +8509,21 @@ def Interface_MSG_Print(*args) -> "void" :
     :param val:
     :type val: char *
     :param max:
-    :type max: int
-    :param just: default value is -1
-    :type just: int
+    :type max: Standard_Integer
+    :param just: default value is - 1
+    :type just: Standard_Integer
+    :rtype: void
+
+    * Prints a String on an Output Stream, as follows : Accompagned with blanks, to give up to <max> charis at all, justified according just : -1 (D) : left 0 : center 1 : right Maximum 76 characters
+
+    :param S:
+    :type S: Standard_OStream &
+    :param val:
+    :type val: char *
+    :param max:
+    :type max: Standard_Integer
+    :param just: default value is - 1
+    :type just: Standard_Integer
     :rtype: void
 
     """
@@ -7743,20 +8531,21 @@ def Interface_MSG_Print(*args) -> "void" :
 
 class Interface_MapAsciiStringHasher(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
+    def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def HashCode(*args) -> "Standard_Integer" :
+    def HashCode(*args):
         """
         :param K:
         :type K: TCollection_AsciiString &
         :param Upper:
-        :type Upper: int
+        :type Upper: Standard_Integer
         :rtype: int
 
         """
         return _Interface.Interface_MapAsciiStringHasher_HashCode(*args)
 
     HashCode = staticmethod(HashCode)
-    def IsEqual(*args) -> "Standard_Boolean" :
+    def IsEqual(*args):
         """
         :param K1:
         :type K1: TCollection_AsciiString &
@@ -7768,8 +8557,6 @@ class Interface_MapAsciiStringHasher(object):
         return _Interface.Interface_MapAsciiStringHasher_IsEqual(*args)
 
     IsEqual = staticmethod(IsEqual)
-    def __init__(self): 
-        _Interface.Interface_MapAsciiStringHasher_swiginit(self,_Interface.new_Interface_MapAsciiStringHasher())
     def __del__(self):
     	try:
     		self.thisown = False
@@ -7782,18 +8569,18 @@ Interface_MapAsciiStringHasher._kill_pointed = new_instancemethod(_Interface.Int
 Interface_MapAsciiStringHasher_swigregister = _Interface.Interface_MapAsciiStringHasher_swigregister
 Interface_MapAsciiStringHasher_swigregister(Interface_MapAsciiStringHasher)
 
-def Interface_MapAsciiStringHasher_HashCode(*args) -> "Standard_Integer" :
+def Interface_MapAsciiStringHasher_HashCode(*args):
   """
     :param K:
     :type K: TCollection_AsciiString &
     :param Upper:
-    :type Upper: int
+    :type Upper: Standard_Integer
     :rtype: int
 
     """
   return _Interface.Interface_MapAsciiStringHasher_HashCode(*args)
 
-def Interface_MapAsciiStringHasher_IsEqual(*args) -> "Standard_Boolean" :
+def Interface_MapAsciiStringHasher_IsEqual(*args):
   """
     :param K1:
     :type K1: TCollection_AsciiString &
@@ -7807,13 +8594,13 @@ def Interface_MapAsciiStringHasher_IsEqual(*args) -> "Standard_Boolean" :
 class Interface_NodeOfGeneralLib(OCC.MMgt.MMgt_TShared):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _Interface.Interface_NodeOfGeneralLib_swiginit(self,_Interface.new_Interface_NodeOfGeneralLib(*args))
-    def AddNode(self, *args) -> "void" :
+        _Interface.Interface_NodeOfGeneralLib_swiginit(self,_Interface.new_Interface_NodeOfGeneralLib())
+    def AddNode(self, *args):
         """
         :param anode:
         :type anode: Handle_Interface_GlobalNodeOfGeneralLib &
@@ -7822,32 +8609,32 @@ class Interface_NodeOfGeneralLib(OCC.MMgt.MMgt_TShared):
         """
         return _Interface.Interface_NodeOfGeneralLib_AddNode(self, *args)
 
-    def Module(self, *args) -> "Handle_Interface_GeneralModule const &" :
+    def Module(self):
         """
         :rtype: Handle_Interface_GeneralModule
 
         """
-        return _Interface.Interface_NodeOfGeneralLib_Module(self, *args)
+        return _Interface.Interface_NodeOfGeneralLib_Module(self)
 
-    def Protocol(self, *args) -> "Handle_Interface_Protocol const &" :
+    def Protocol(self):
         """
         :rtype: Handle_Interface_Protocol
 
         """
-        return _Interface.Interface_NodeOfGeneralLib_Protocol(self, *args)
+        return _Interface.Interface_NodeOfGeneralLib_Protocol(self)
 
-    def Next(self, *args) -> "Handle_Interface_NodeOfGeneralLib const &" :
+    def Next(self):
         """
         :rtype: Handle_Interface_NodeOfGeneralLib
 
         """
-        return _Interface.Interface_NodeOfGeneralLib_Next(self, *args)
+        return _Interface.Interface_NodeOfGeneralLib_Next(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Interface_NodeOfGeneralLib self)"""
         return _Interface.Interface_NodeOfGeneralLib__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Interface_NodeOfGeneralLib" :
+    def GetHandle(self):
         """GetHandle(Interface_NodeOfGeneralLib self) -> Handle_Interface_NodeOfGeneralLib"""
         return _Interface.Interface_NodeOfGeneralLib_GetHandle(self)
 
@@ -7889,20 +8676,20 @@ Handle_Interface_NodeOfGeneralLib._kill_pointed = new_instancemethod(_Interface.
 Handle_Interface_NodeOfGeneralLib_swigregister = _Interface.Handle_Interface_NodeOfGeneralLib_swigregister
 Handle_Interface_NodeOfGeneralLib_swigregister(Handle_Interface_NodeOfGeneralLib)
 
-def Handle_Interface_NodeOfGeneralLib_DownCast(*args) -> "Handle_Interface_NodeOfGeneralLib const" :
+def Handle_Interface_NodeOfGeneralLib_DownCast(*args):
   return _Interface.Handle_Interface_NodeOfGeneralLib_DownCast(*args)
 Handle_Interface_NodeOfGeneralLib_DownCast = _Interface.Handle_Interface_NodeOfGeneralLib_DownCast
 
 class Interface_NodeOfReaderLib(OCC.MMgt.MMgt_TShared):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _Interface.Interface_NodeOfReaderLib_swiginit(self,_Interface.new_Interface_NodeOfReaderLib(*args))
-    def AddNode(self, *args) -> "void" :
+        _Interface.Interface_NodeOfReaderLib_swiginit(self,_Interface.new_Interface_NodeOfReaderLib())
+    def AddNode(self, *args):
         """
         :param anode:
         :type anode: Handle_Interface_GlobalNodeOfReaderLib &
@@ -7911,32 +8698,32 @@ class Interface_NodeOfReaderLib(OCC.MMgt.MMgt_TShared):
         """
         return _Interface.Interface_NodeOfReaderLib_AddNode(self, *args)
 
-    def Module(self, *args) -> "Handle_Interface_ReaderModule const &" :
+    def Module(self):
         """
         :rtype: Handle_Interface_ReaderModule
 
         """
-        return _Interface.Interface_NodeOfReaderLib_Module(self, *args)
+        return _Interface.Interface_NodeOfReaderLib_Module(self)
 
-    def Protocol(self, *args) -> "Handle_Interface_Protocol const &" :
+    def Protocol(self):
         """
         :rtype: Handle_Interface_Protocol
 
         """
-        return _Interface.Interface_NodeOfReaderLib_Protocol(self, *args)
+        return _Interface.Interface_NodeOfReaderLib_Protocol(self)
 
-    def Next(self, *args) -> "Handle_Interface_NodeOfReaderLib const &" :
+    def Next(self):
         """
         :rtype: Handle_Interface_NodeOfReaderLib
 
         """
-        return _Interface.Interface_NodeOfReaderLib_Next(self, *args)
+        return _Interface.Interface_NodeOfReaderLib_Next(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Interface_NodeOfReaderLib self)"""
         return _Interface.Interface_NodeOfReaderLib__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Interface_NodeOfReaderLib" :
+    def GetHandle(self):
         """GetHandle(Interface_NodeOfReaderLib self) -> Handle_Interface_NodeOfReaderLib"""
         return _Interface.Interface_NodeOfReaderLib_GetHandle(self)
 
@@ -7978,56 +8765,62 @@ Handle_Interface_NodeOfReaderLib._kill_pointed = new_instancemethod(_Interface.H
 Handle_Interface_NodeOfReaderLib_swigregister = _Interface.Handle_Interface_NodeOfReaderLib_swigregister
 Handle_Interface_NodeOfReaderLib_swigregister(Handle_Interface_NodeOfReaderLib)
 
-def Handle_Interface_NodeOfReaderLib_DownCast(*args) -> "Handle_Interface_NodeOfReaderLib const" :
+def Handle_Interface_NodeOfReaderLib_DownCast(*args):
   return _Interface.Handle_Interface_NodeOfReaderLib_DownCast(*args)
 Handle_Interface_NodeOfReaderLib_DownCast = _Interface.Handle_Interface_NodeOfReaderLib_DownCast
 
 class Interface_ParamList(OCC.MMgt.MMgt_TShared):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self, theIncrement=256): 
         """
         * Creates an vector with size of memmory blok equal to theIncrement
 
         :param theIncrement: default value is 256
-        :type theIncrement: int
+        :type theIncrement: Standard_Integer
+        :rtype: None
+
+        * Creates an vector with size of memmory blok equal to theIncrement
+
+        :param theIncrement: default value is 256
+        :type theIncrement: Standard_Integer
         :rtype: None
 
         """
-        _Interface.Interface_ParamList_swiginit(self,_Interface.new_Interface_ParamList(*args))
-    def Length(self, *args) -> "Standard_Integer" :
+        _Interface.Interface_ParamList_swiginit(self,_Interface.new_Interface_ParamList(theIncrement))
+    def Length(self):
         """
         * Returns the number of elements of <self>.
 
         :rtype: int
 
         """
-        return _Interface.Interface_ParamList_Length(self, *args)
+        return _Interface.Interface_ParamList_Length(self)
 
-    def Lower(self, *args) -> "Standard_Integer" :
+    def Lower(self):
         """
         * Returns the lower bound. Warning
 
         :rtype: int
 
         """
-        return _Interface.Interface_ParamList_Lower(self, *args)
+        return _Interface.Interface_ParamList_Lower(self)
 
-    def Upper(self, *args) -> "Standard_Integer" :
+    def Upper(self):
         """
         * Returns the upper bound. Warning
 
         :rtype: int
 
         """
-        return _Interface.Interface_ParamList_Upper(self, *args)
+        return _Interface.Interface_ParamList_Upper(self)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         * Assigns the value <Value> to the <Index>-th item of this array.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Value:
         :type Value: Interface_FileParameter &
         :rtype: None
@@ -8035,40 +8828,40 @@ class Interface_ParamList(OCC.MMgt.MMgt_TShared):
         """
         return _Interface.Interface_ParamList_SetValue(self, *args)
 
-    def Value(self, *args) -> "Interface_FileParameter const &" :
+    def Value(self, *args):
         """
         * Return the value of the <Index>th element of the array.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Interface_FileParameter
 
         """
         return _Interface.Interface_ParamList_Value(self, *args)
 
-    def ChangeValue(self, *args) -> "Interface_FileParameter &" :
+    def ChangeValue(self, *args):
         """
         * return the value of the <Index>th element of the array.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Interface_FileParameter
 
         """
         return _Interface.Interface_ParamList_ChangeValue(self, *args)
 
-    def Clear(self, *args) -> "void" :
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _Interface.Interface_ParamList_Clear(self, *args)
+        return _Interface.Interface_ParamList_Clear(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Interface_ParamList self)"""
         return _Interface.Interface_ParamList__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Interface_ParamList" :
+    def GetHandle(self):
         """GetHandle(Interface_ParamList self) -> Handle_Interface_ParamList"""
         return _Interface.Interface_ParamList_GetHandle(self)
 
@@ -8113,7 +8906,7 @@ Handle_Interface_ParamList._kill_pointed = new_instancemethod(_Interface.Handle_
 Handle_Interface_ParamList_swigregister = _Interface.Handle_Interface_ParamList_swigregister
 Handle_Interface_ParamList_swigregister(Handle_Interface_ParamList)
 
-def Handle_Interface_ParamList_DownCast(*args) -> "Handle_Interface_ParamList const" :
+def Handle_Interface_ParamList_DownCast(*args):
   return _Interface.Handle_Interface_ParamList_DownCast(*args)
 Handle_Interface_ParamList_DownCast = _Interface.Handle_Interface_ParamList_DownCast
 
@@ -8125,25 +8918,33 @@ class Interface_ParamSet(OCC.MMgt.MMgt_TShared):
         * Creates an empty ParamSet, beginning at number 'nst' and of initial reservation 'nres' : the 'nres' first parameters which follow 'ndeb' (included) will be put in an Array (a ParamList). The remainders are set in Next(s) ParamSet(s)
 
         :param nres:
-        :type nres: int
+        :type nres: Standard_Integer
         :param nst: default value is 1
-        :type nst: int
+        :type nst: Standard_Integer
+        :rtype: None
+
+        * Creates an empty ParamSet, beginning at number 'nst' and of initial reservation 'nres' : the 'nres' first parameters which follow 'ndeb' (included) will be put in an Array (a ParamList). The remainders are set in Next(s) ParamSet(s)
+
+        :param nres:
+        :type nres: Standard_Integer
+        :param nst: default value is 1
+        :type nst: Standard_Integer
         :rtype: None
 
         """
         _Interface.Interface_ParamSet_swiginit(self,_Interface.new_Interface_ParamSet(*args))
-    def Append(self, *args) -> "Standard_Integer" :
+    def Append(self, *args):
         """
         * Adds a parameter defined as its Value (CString and length) and Type. Optionnal EntityNumber (for FileReaderData) can be given Allows a better memory management than Appending a complete FileParameter If <lnval> < 0, <val> is assumed to be managed elsewhere : its adress is stored as such. Else, <val> is copied in a locally (quickly) managed Page of Characters Returns new count of recorded Parameters
 
         :param val:
         :type val: char *
         :param lnval:
-        :type lnval: int
+        :type lnval: Standard_Integer
         :param typ:
         :type typ: Interface_ParamType
         :param nument:
-        :type nument: int
+        :type nument: Standard_Integer
         :rtype: int
 
         * Adds a parameter at the end of the ParamSet (transparent about reservation and 'Next') Returns new count of recorded Parameters
@@ -8155,43 +8956,43 @@ class Interface_ParamSet(OCC.MMgt.MMgt_TShared):
         """
         return _Interface.Interface_ParamSet_Append(self, *args)
 
-    def NbParams(self, *args) -> "Standard_Integer" :
+    def NbParams(self):
         """
         * Returns the total count of parameters (including nexts)
 
         :rtype: int
 
         """
-        return _Interface.Interface_ParamSet_NbParams(self, *args)
+        return _Interface.Interface_ParamSet_NbParams(self)
 
-    def Param(self, *args) -> "Interface_FileParameter const &" :
+    def Param(self, *args):
         """
         * Returns a parameter identified by its number
 
         :param num:
-        :type num: int
+        :type num: Standard_Integer
         :rtype: Interface_FileParameter
 
         """
         return _Interface.Interface_ParamSet_Param(self, *args)
 
-    def ChangeParam(self, *args) -> "Interface_FileParameter &" :
+    def ChangeParam(self, *args):
         """
         * Same as above, but in order to be modified on place
 
         :param num:
-        :type num: int
+        :type num: Standard_Integer
         :rtype: Interface_FileParameter
 
         """
         return _Interface.Interface_ParamSet_ChangeParam(self, *args)
 
-    def SetParam(self, *args) -> "void" :
+    def SetParam(self, *args):
         """
         * Changes a parameter identified by its number
 
         :param num:
-        :type num: int
+        :type num: Standard_Integer
         :param FP:
         :type FP: Interface_FileParameter &
         :rtype: None
@@ -8199,33 +9000,33 @@ class Interface_ParamSet(OCC.MMgt.MMgt_TShared):
         """
         return _Interface.Interface_ParamSet_SetParam(self, *args)
 
-    def Params(self, *args) -> "Handle_Interface_ParamList" :
+    def Params(self, *args):
         """
         * Builds and returns the sub-list correspinding to parameters, from 'num' included, with count 'nb' If <num> and <nb> are zero, returns the whole list
 
         :param num:
-        :type num: int
+        :type num: Standard_Integer
         :param nb:
-        :type nb: int
+        :type nb: Standard_Integer
         :rtype: Handle_Interface_ParamList
 
         """
         return _Interface.Interface_ParamSet_Params(self, *args)
 
-    def Destroy(self, *args) -> "void" :
+    def Destroy(self):
         """
         * Destructor (waiting for transparent memory management)
 
         :rtype: None
 
         """
-        return _Interface.Interface_ParamSet_Destroy(self, *args)
+        return _Interface.Interface_ParamSet_Destroy(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Interface_ParamSet self)"""
         return _Interface.Interface_ParamSet__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Interface_ParamSet" :
+    def GetHandle(self):
         """GetHandle(Interface_ParamSet self) -> Handle_Interface_ParamSet"""
         return _Interface.Interface_ParamSet_GetHandle(self)
 
@@ -8270,7 +9071,7 @@ Handle_Interface_ParamSet._kill_pointed = new_instancemethod(_Interface.Handle_I
 Handle_Interface_ParamSet_swigregister = _Interface.Handle_Interface_ParamSet_swigregister
 Handle_Interface_ParamSet_swigregister(Handle_Interface_ParamSet)
 
-def Handle_Interface_ParamSet_DownCast(*args) -> "Handle_Interface_ParamSet const" :
+def Handle_Interface_ParamSet_DownCast(*args):
   return _Interface.Handle_Interface_ParamSet_DownCast(*args)
 Handle_Interface_ParamSet_DownCast = _Interface.Handle_Interface_ParamSet_DownCast
 
@@ -8278,17 +9079,17 @@ class Interface_Protocol(OCC.MMgt.MMgt_TShared):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def Active(*args) -> "Handle_Interface_Protocol" :
+    def Active():
         """
         * Returns the Active Protocol, if defined (else, returns a Null Handle, which means 'no defined active protocol')
 
         :rtype: Handle_Interface_Protocol
 
         """
-        return _Interface.Interface_Protocol_Active(*args)
+        return _Interface.Interface_Protocol_Active()
 
     Active = staticmethod(Active)
-    def SetActive(*args) -> "void" :
+    def SetActive(*args):
         """
         * Sets a given Protocol to be the Active one (for the users of Active, see just above). Applies to every sub-type of Protocol
 
@@ -8300,37 +9101,37 @@ class Interface_Protocol(OCC.MMgt.MMgt_TShared):
         return _Interface.Interface_Protocol_SetActive(*args)
 
     SetActive = staticmethod(SetActive)
-    def ClearActive(*args) -> "void" :
+    def ClearActive():
         """
         * Erases the Active Protocol (hence it becomes undefined)
 
         :rtype: void
 
         """
-        return _Interface.Interface_Protocol_ClearActive(*args)
+        return _Interface.Interface_Protocol_ClearActive()
 
     ClearActive = staticmethod(ClearActive)
-    def NbResources(self, *args) -> "Standard_Integer" :
+    def NbResources(self):
         """
         * Returns count of Protocol used as Resources (level one)
 
         :rtype: int
 
         """
-        return _Interface.Interface_Protocol_NbResources(self, *args)
+        return _Interface.Interface_Protocol_NbResources(self)
 
-    def Resource(self, *args) -> "Handle_Interface_Protocol" :
+    def Resource(self, *args):
         """
         * Returns a Resource, given its rank (between 1 and NbResources)
 
         :param num:
-        :type num: int
+        :type num: Standard_Integer
         :rtype: Handle_Interface_Protocol
 
         """
         return _Interface.Interface_Protocol_Resource(self, *args)
 
-    def CaseNumber(self, *args) -> "Standard_Integer" :
+    def CaseNumber(self, *args):
         """
         * Returns a unique positive CaseNumber for each Recognized Object. By default, recognition is based on Type(1) By default, calls the following one which is deferred.
 
@@ -8341,7 +9142,7 @@ class Interface_Protocol(OCC.MMgt.MMgt_TShared):
         """
         return _Interface.Interface_Protocol_CaseNumber(self, *args)
 
-    def IsDynamicType(self, *args) -> "Standard_Boolean" :
+    def IsDynamicType(self, *args):
         """
         * Returns True if type of <obj> is that defined from CDL This is the default but it may change according implementation
 
@@ -8352,7 +9153,7 @@ class Interface_Protocol(OCC.MMgt.MMgt_TShared):
         """
         return _Interface.Interface_Protocol_IsDynamicType(self, *args)
 
-    def NbTypes(self, *args) -> "Standard_Integer" :
+    def NbTypes(self, *args):
         """
         * Returns the count of DISTINCT types under which an entity may be processed. Each one is candidate to be recognized by TypeNumber, <obj> is then processed according it By default, returns 1 (the DynamicType)
 
@@ -8363,20 +9164,28 @@ class Interface_Protocol(OCC.MMgt.MMgt_TShared):
         """
         return _Interface.Interface_Protocol_NbTypes(self, *args)
 
-    def Type(self, *args) -> "Handle_Standard_Type" :
+    def Type(self, *args):
         """
         * Returns a type under which <obj> can be recognized and processed, according its rank in its definition list (see NbTypes). By default, returns DynamicType
 
         :param obj:
         :type obj: Handle_Standard_Transient &
         :param nt: default value is 1
-        :type nt: int
+        :type nt: Standard_Integer
+        :rtype: Handle_Standard_Type
+
+        * Returns a type under which <obj> can be recognized and processed, according its rank in its definition list (see NbTypes). By default, returns DynamicType
+
+        :param obj:
+        :type obj: Handle_Standard_Transient &
+        :param nt: default value is 1
+        :type nt: Standard_Integer
         :rtype: Handle_Standard_Type
 
         """
         return _Interface.Interface_Protocol_Type(self, *args)
 
-    def TypeNumber(self, *args) -> "Standard_Integer" :
+    def TypeNumber(self, *args):
         """
         * Returns a unique positive CaseNumber for each Recognized Type, Returns Zero for '<type> not recognized'
 
@@ -8387,7 +9196,7 @@ class Interface_Protocol(OCC.MMgt.MMgt_TShared):
         """
         return _Interface.Interface_Protocol_TypeNumber(self, *args)
 
-    def GlobalCheck(self, *args) -> "Standard_Boolean" :
+    def GlobalCheck(self, *args):
         """
         * Evaluates a Global Check for a model (with its Graph) Returns True when done, False if data in model do not apply Very specific of each norm, i.e. of each protocol : the uppest level Protocol assumes it, it can call GlobalCheck of its ressources only if it is necessary Default does nothing, can be redefined
 
@@ -8400,16 +9209,16 @@ class Interface_Protocol(OCC.MMgt.MMgt_TShared):
         """
         return _Interface.Interface_Protocol_GlobalCheck(self, *args)
 
-    def NewModel(self, *args) -> "Handle_Interface_InterfaceModel" :
+    def NewModel(self):
         """
         * Creates an empty Model of the considered Norm
 
         :rtype: Handle_Interface_InterfaceModel
 
         """
-        return _Interface.Interface_Protocol_NewModel(self, *args)
+        return _Interface.Interface_Protocol_NewModel(self)
 
-    def IsSuitableModel(self, *args) -> "Standard_Boolean" :
+    def IsSuitableModel(self, *args):
         """
         * Returns True if <model> is a Model of the considered Norm
 
@@ -8420,16 +9229,16 @@ class Interface_Protocol(OCC.MMgt.MMgt_TShared):
         """
         return _Interface.Interface_Protocol_IsSuitableModel(self, *args)
 
-    def UnknownEntity(self, *args) -> "Handle_Standard_Transient" :
+    def UnknownEntity(self):
         """
         * Creates a new Unknown Entity for the considered Norm
 
         :rtype: Handle_Standard_Transient
 
         """
-        return _Interface.Interface_Protocol_UnknownEntity(self, *args)
+        return _Interface.Interface_Protocol_UnknownEntity(self)
 
-    def IsUnknownEntity(self, *args) -> "Standard_Boolean" :
+    def IsUnknownEntity(self, *args):
         """
         * Returns True if <ent> is an Unknown Entity for the Norm, i.e. same Type as them created by method UnknownEntity (for an Entity out of the Norm, answer can be unpredicable)
 
@@ -8440,11 +9249,11 @@ class Interface_Protocol(OCC.MMgt.MMgt_TShared):
         """
         return _Interface.Interface_Protocol_IsUnknownEntity(self, *args)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Interface_Protocol self)"""
         return _Interface.Interface_Protocol__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Interface_Protocol" :
+    def GetHandle(self):
         """GetHandle(Interface_Protocol self) -> Handle_Interface_Protocol"""
         return _Interface.Interface_Protocol_GetHandle(self)
 
@@ -8473,16 +9282,16 @@ Interface_Protocol.GetHandle = new_instancemethod(_Interface.Interface_Protocol_
 Interface_Protocol_swigregister = _Interface.Interface_Protocol_swigregister
 Interface_Protocol_swigregister(Interface_Protocol)
 
-def Interface_Protocol_Active(*args) -> "Handle_Interface_Protocol" :
+def Interface_Protocol_Active():
   """
     * Returns the Active Protocol, if defined (else, returns a Null Handle, which means 'no defined active protocol')
 
     :rtype: Handle_Interface_Protocol
 
     """
-  return _Interface.Interface_Protocol_Active(*args)
+  return _Interface.Interface_Protocol_Active()
 
-def Interface_Protocol_SetActive(*args) -> "void" :
+def Interface_Protocol_SetActive(*args):
   """
     * Sets a given Protocol to be the Active one (for the users of Active, see just above). Applies to every sub-type of Protocol
 
@@ -8493,14 +9302,14 @@ def Interface_Protocol_SetActive(*args) -> "void" :
     """
   return _Interface.Interface_Protocol_SetActive(*args)
 
-def Interface_Protocol_ClearActive(*args) -> "void" :
+def Interface_Protocol_ClearActive():
   """
     * Erases the Active Protocol (hence it becomes undefined)
 
     :rtype: void
 
     """
-  return _Interface.Interface_Protocol_ClearActive(*args)
+  return _Interface.Interface_Protocol_ClearActive()
 
 class Handle_Interface_Protocol(OCC.MMgt.Handle_MMgt_TShared):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
@@ -8523,14 +9332,14 @@ Handle_Interface_Protocol._kill_pointed = new_instancemethod(_Interface.Handle_I
 Handle_Interface_Protocol_swigregister = _Interface.Handle_Interface_Protocol_swigregister
 Handle_Interface_Protocol_swigregister(Handle_Interface_Protocol)
 
-def Handle_Interface_Protocol_DownCast(*args) -> "Handle_Interface_Protocol const" :
+def Handle_Interface_Protocol_DownCast(*args):
   return _Interface.Handle_Interface_Protocol_DownCast(*args)
 Handle_Interface_Protocol_DownCast = _Interface.Handle_Interface_Protocol_DownCast
 
 class Interface_ReaderLib(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def SetGlobal(*args) -> "void" :
+    def SetGlobal(*args):
         """
         :param amodule:
         :type amodule: Handle_Interface_ReaderModule &
@@ -8552,7 +9361,7 @@ class Interface_ReaderLib(object):
 
         """
         _Interface.Interface_ReaderLib_swiginit(self,_Interface.new_Interface_ReaderLib(*args))
-    def AddProtocol(self, *args) -> "void" :
+    def AddProtocol(self, *args):
         """
         :param aprotocol:
         :type aprotocol: Handle_Standard_Transient &
@@ -8561,67 +9370,67 @@ class Interface_ReaderLib(object):
         """
         return _Interface.Interface_ReaderLib_AddProtocol(self, *args)
 
-    def Clear(self, *args) -> "void" :
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _Interface.Interface_ReaderLib_Clear(self, *args)
+        return _Interface.Interface_ReaderLib_Clear(self)
 
-    def SetComplete(self, *args) -> "void" :
+    def SetComplete(self):
         """
         :rtype: None
 
         """
-        return _Interface.Interface_ReaderLib_SetComplete(self, *args)
+        return _Interface.Interface_ReaderLib_SetComplete(self)
 
-    def Select(self, *args) -> "Standard_Boolean" :
+    def Select(self, *args):
         """
         :param obj:
         :type obj: Handle_Standard_Transient &
         :param module:
         :type module: Handle_Interface_ReaderModule &
         :param CN:
-        :type CN: int &
+        :type CN: Standard_Integer &
         :rtype: bool
 
         """
         return _Interface.Interface_ReaderLib_Select(self, *args)
 
-    def Start(self, *args) -> "void" :
+    def Start(self):
         """
         :rtype: None
 
         """
-        return _Interface.Interface_ReaderLib_Start(self, *args)
+        return _Interface.Interface_ReaderLib_Start(self)
 
-    def More(self, *args) -> "Standard_Boolean" :
+    def More(self):
         """
         :rtype: bool
 
         """
-        return _Interface.Interface_ReaderLib_More(self, *args)
+        return _Interface.Interface_ReaderLib_More(self)
 
-    def Next(self, *args) -> "void" :
+    def Next(self):
         """
         :rtype: None
 
         """
-        return _Interface.Interface_ReaderLib_Next(self, *args)
+        return _Interface.Interface_ReaderLib_Next(self)
 
-    def Module(self, *args) -> "Handle_Interface_ReaderModule const &" :
+    def Module(self):
         """
         :rtype: Handle_Interface_ReaderModule
 
         """
-        return _Interface.Interface_ReaderLib_Module(self, *args)
+        return _Interface.Interface_ReaderLib_Module(self)
 
-    def Protocol(self, *args) -> "Handle_Interface_Protocol const &" :
+    def Protocol(self):
         """
         :rtype: Handle_Interface_Protocol
 
         """
-        return _Interface.Interface_ReaderLib_Protocol(self, *args)
+        return _Interface.Interface_ReaderLib_Protocol(self)
 
     def __del__(self):
     	try:
@@ -8644,7 +9453,7 @@ Interface_ReaderLib._kill_pointed = new_instancemethod(_Interface.Interface_Read
 Interface_ReaderLib_swigregister = _Interface.Interface_ReaderLib_swigregister
 Interface_ReaderLib_swigregister(Interface_ReaderLib)
 
-def Interface_ReaderLib_SetGlobal(*args) -> "void" :
+def Interface_ReaderLib_SetGlobal(*args):
   """
     :param amodule:
     :type amodule: Handle_Interface_ReaderModule &
@@ -8659,29 +9468,29 @@ class Interface_ReaderModule(OCC.MMgt.MMgt_TShared):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def CaseNum(self, *args) -> "Standard_Integer" :
+    def CaseNum(self, *args):
         """
         * Translates the type of record <num> in <data> to a positive Case Number. If Recognition fails, must return 0
 
         :param data:
         :type data: Handle_Interface_FileReaderData &
         :param num:
-        :type num: int
+        :type num: Standard_Integer
         :rtype: int
 
         """
         return _Interface.Interface_ReaderModule_CaseNum(self, *args)
 
-    def Read(self, *args) -> "void" :
+    def Read(self, *args):
         """
         * Performs the effective loading from <data>, record <num>, to the Entity <ent> formerly created In case of Error or Warning, fills <ach> with messages Remark that the Case Number comes from translating a record
 
         :param casenum:
-        :type casenum: int
+        :type casenum: Standard_Integer
         :param data:
         :type data: Handle_Interface_FileReaderData &
         :param num:
-        :type num: int
+        :type num: Standard_Integer
         :param ach:
         :type ach: Handle_Interface_Check &
         :param ent:
@@ -8691,16 +9500,16 @@ class Interface_ReaderModule(OCC.MMgt.MMgt_TShared):
         """
         return _Interface.Interface_ReaderModule_Read(self, *args)
 
-    def NewRead(self, *args) -> "Standard_Boolean" :
+    def NewRead(self, *args):
         """
         * Specific operator (create+read) defaulted to do nothing. It can be redefined when it is not possible to work in two steps (NewVoid then Read). This occurs when no default constructor is defined : hence the result <ent> must be created with an effective definition from the reader. Remark : if NewRead is defined, Copy has nothing to do. Returns True if it has produced something, false else. If nothing was produced, <ach> should be filled : it will be treated as 'Unrecognized case' by reader tool.
 
         :param casenum:
-        :type casenum: int
+        :type casenum: Standard_Integer
         :param data:
         :type data: Handle_Interface_FileReaderData &
         :param num:
-        :type num: int
+        :type num: Standard_Integer
         :param ach:
         :type ach: Handle_Interface_Check &
         :param ent:
@@ -8710,11 +9519,11 @@ class Interface_ReaderModule(OCC.MMgt.MMgt_TShared):
         """
         return _Interface.Interface_ReaderModule_NewRead(self, *args)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Interface_ReaderModule self)"""
         return _Interface.Interface_ReaderModule__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Interface_ReaderModule" :
+    def GetHandle(self):
         """GetHandle(Interface_ReaderModule self) -> Handle_Interface_ReaderModule"""
         return _Interface.Interface_ReaderModule_GetHandle(self)
 
@@ -8755,7 +9564,7 @@ Handle_Interface_ReaderModule._kill_pointed = new_instancemethod(_Interface.Hand
 Handle_Interface_ReaderModule_swigregister = _Interface.Handle_Interface_ReaderModule_swigregister
 Handle_Interface_ReaderModule_swigregister(Handle_Interface_ReaderModule)
 
-def Handle_Interface_ReaderModule_DownCast(*args) -> "Handle_Interface_ReaderModule const" :
+def Handle_Interface_ReaderModule_DownCast(*args):
   return _Interface.Handle_Interface_ReaderModule_DownCast(*args)
 Handle_Interface_ReaderModule_DownCast = _Interface.Handle_Interface_ReaderModule_DownCast
 
@@ -8780,7 +9589,7 @@ class Interface_ReportEntity(OCC.MMgt.MMgt_TShared):
 
         """
         _Interface.Interface_ReportEntity_swiginit(self,_Interface.new_Interface_ReportEntity(*args))
-    def SetContent(self, *args) -> "void" :
+    def SetContent(self, *args):
         """
         * Sets a Content : it brings non interpreted data which belong to the Concerned Entity. It can be empty then loaded later. Remark that for an Unknown Entity, Content is set by Create.
 
@@ -8791,83 +9600,83 @@ class Interface_ReportEntity(OCC.MMgt.MMgt_TShared):
         """
         return _Interface.Interface_ReportEntity_SetContent(self, *args)
 
-    def Check(self, *args) -> "Handle_Interface_Check const &" :
+    def Check(self):
         """
         * Returns the stored Check
 
         :rtype: Handle_Interface_Check
 
         """
-        return _Interface.Interface_ReportEntity_Check(self, *args)
+        return _Interface.Interface_ReportEntity_Check(self)
 
-    def CCheck(self, *args) -> "Handle_Interface_Check &" :
+    def CCheck(self):
         """
         * Returns the stored Check in order to change it
 
         :rtype: Handle_Interface_Check
 
         """
-        return _Interface.Interface_ReportEntity_CCheck(self, *args)
+        return _Interface.Interface_ReportEntity_CCheck(self)
 
-    def Concerned(self, *args) -> "Handle_Standard_Transient" :
+    def Concerned(self):
         """
         * Returns the stored Concerned Entity. It equates the Content in the case of an Unknown Entity
 
         :rtype: Handle_Standard_Transient
 
         """
-        return _Interface.Interface_ReportEntity_Concerned(self, *args)
+        return _Interface.Interface_ReportEntity_Concerned(self)
 
-    def HasContent(self, *args) -> "Standard_Boolean" :
+    def HasContent(self):
         """
         * Returns True if a Content is stored (it can equate Concerned)
 
         :rtype: bool
 
         """
-        return _Interface.Interface_ReportEntity_HasContent(self, *args)
+        return _Interface.Interface_ReportEntity_HasContent(self)
 
-    def HasNewContent(self, *args) -> "Standard_Boolean" :
+    def HasNewContent(self):
         """
         * Returns True if a Content is stored AND differs from Concerned (i.e. redefines content) : used when Concerned could not be loaded
 
         :rtype: bool
 
         """
-        return _Interface.Interface_ReportEntity_HasNewContent(self, *args)
+        return _Interface.Interface_ReportEntity_HasNewContent(self)
 
-    def Content(self, *args) -> "Handle_Standard_Transient" :
+    def Content(self):
         """
         * Returns the stored Content, or a Null Handle Remark that it must be an 'Unknown Entity' suitable for the norm of the containing Model
 
         :rtype: Handle_Standard_Transient
 
         """
-        return _Interface.Interface_ReportEntity_Content(self, *args)
+        return _Interface.Interface_ReportEntity_Content(self)
 
-    def IsError(self, *args) -> "Standard_Boolean" :
+    def IsError(self):
         """
         * Returns True for an Error Entity, i.e. if the Check brings at least one Fail message
 
         :rtype: bool
 
         """
-        return _Interface.Interface_ReportEntity_IsError(self, *args)
+        return _Interface.Interface_ReportEntity_IsError(self)
 
-    def IsUnknown(self, *args) -> "Standard_Boolean" :
+    def IsUnknown(self):
         """
         * Returns True for an Unknown Entity, i,e. if the Check is empty and Concerned equates Content
 
         :rtype: bool
 
         """
-        return _Interface.Interface_ReportEntity_IsUnknown(self, *args)
+        return _Interface.Interface_ReportEntity_IsUnknown(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Interface_ReportEntity self)"""
         return _Interface.Interface_ReportEntity__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Interface_ReportEntity" :
+    def GetHandle(self):
         """GetHandle(Interface_ReportEntity self) -> Handle_Interface_ReportEntity"""
         return _Interface.Interface_ReportEntity_GetHandle(self)
 
@@ -8914,7 +9723,7 @@ Handle_Interface_ReportEntity._kill_pointed = new_instancemethod(_Interface.Hand
 Handle_Interface_ReportEntity_swigregister = _Interface.Handle_Interface_ReportEntity_swigregister
 Handle_Interface_ReportEntity_swigregister(Handle_Interface_ReportEntity)
 
-def Handle_Interface_ReportEntity_DownCast(*args) -> "Handle_Interface_ReportEntity const" :
+def Handle_Interface_ReportEntity_DownCast(*args):
   return _Interface.Handle_Interface_ReportEntity_DownCast(*args)
 Handle_Interface_ReportEntity_DownCast = _Interface.Handle_Interface_ReportEntity_DownCast
 
@@ -8933,18 +9742,18 @@ class Interface_SequenceNodeOfSequenceOfCheck(OCC.TCollection.TCollection_SeqNod
 
         """
         _Interface.Interface_SequenceNodeOfSequenceOfCheck_swiginit(self,_Interface.new_Interface_SequenceNodeOfSequenceOfCheck(*args))
-    def Value(self, *args) -> "Handle_Interface_Check &" :
+    def Value(self):
         """
         :rtype: Handle_Interface_Check
 
         """
-        return _Interface.Interface_SequenceNodeOfSequenceOfCheck_Value(self, *args)
+        return _Interface.Interface_SequenceNodeOfSequenceOfCheck_Value(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Interface_SequenceNodeOfSequenceOfCheck self)"""
         return _Interface.Interface_SequenceNodeOfSequenceOfCheck__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Interface_SequenceNodeOfSequenceOfCheck" :
+    def GetHandle(self):
         """GetHandle(Interface_SequenceNodeOfSequenceOfCheck self) -> Handle_Interface_SequenceNodeOfSequenceOfCheck"""
         return _Interface.Interface_SequenceNodeOfSequenceOfCheck_GetHandle(self)
 
@@ -8983,27 +9792,27 @@ Handle_Interface_SequenceNodeOfSequenceOfCheck._kill_pointed = new_instancemetho
 Handle_Interface_SequenceNodeOfSequenceOfCheck_swigregister = _Interface.Handle_Interface_SequenceNodeOfSequenceOfCheck_swigregister
 Handle_Interface_SequenceNodeOfSequenceOfCheck_swigregister(Handle_Interface_SequenceNodeOfSequenceOfCheck)
 
-def Handle_Interface_SequenceNodeOfSequenceOfCheck_DownCast(*args) -> "Handle_Interface_SequenceNodeOfSequenceOfCheck const" :
+def Handle_Interface_SequenceNodeOfSequenceOfCheck_DownCast(*args):
   return _Interface.Handle_Interface_SequenceNodeOfSequenceOfCheck_DownCast(*args)
 Handle_Interface_SequenceNodeOfSequenceOfCheck_DownCast = _Interface.Handle_Interface_SequenceNodeOfSequenceOfCheck_DownCast
 
 class Interface_SequenceOfCheck(OCC.TCollection.TCollection_BaseSequence):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _Interface.Interface_SequenceOfCheck_swiginit(self,_Interface.new_Interface_SequenceOfCheck(*args))
-    def Clear(self, *args) -> "void" :
+        _Interface.Interface_SequenceOfCheck_swiginit(self,_Interface.new_Interface_SequenceOfCheck())
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _Interface.Interface_SequenceOfCheck_Clear(self, *args)
+        return _Interface.Interface_SequenceOfCheck_Clear(self)
 
-    def Assign(self, *args) -> "Interface_SequenceOfCheck const &" :
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: Interface_SequenceOfCheck &
@@ -9012,7 +9821,7 @@ class Interface_SequenceOfCheck(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Interface.Interface_SequenceOfCheck_Assign(self, *args)
 
-    def Set(self, *args) -> "Interface_SequenceOfCheck const &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: Interface_SequenceOfCheck &
@@ -9021,7 +9830,7 @@ class Interface_SequenceOfCheck(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Interface.Interface_SequenceOfCheck_Set(self, *args)
 
-    def Append(self, *args) -> "void" :
+    def Append(self, *args):
         """
         :param T:
         :type T: Handle_Interface_Check &
@@ -9034,7 +9843,7 @@ class Interface_SequenceOfCheck(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Interface.Interface_SequenceOfCheck_Append(self, *args)
 
-    def Prepend(self, *args) -> "void" :
+    def Prepend(self, *args):
         """
         :param T:
         :type T: Handle_Interface_Check &
@@ -9047,16 +9856,16 @@ class Interface_SequenceOfCheck(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Interface.Interface_SequenceOfCheck_Prepend(self, *args)
 
-    def InsertBefore(self, *args) -> "void" :
+    def InsertBefore(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param T:
         :type T: Handle_Interface_Check &
         :rtype: None
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param S:
         :type S: Interface_SequenceOfCheck &
         :rtype: None
@@ -9064,16 +9873,16 @@ class Interface_SequenceOfCheck(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Interface.Interface_SequenceOfCheck_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args) -> "void" :
+    def InsertAfter(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param T:
         :type T: Handle_Interface_Check &
         :rtype: None
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param S:
         :type S: Interface_SequenceOfCheck &
         :rtype: None
@@ -9081,24 +9890,24 @@ class Interface_SequenceOfCheck(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Interface.Interface_SequenceOfCheck_InsertAfter(self, *args)
 
-    def First(self, *args) -> "Handle_Interface_Check const &" :
+    def First(self):
         """
         :rtype: Handle_Interface_Check
 
         """
-        return _Interface.Interface_SequenceOfCheck_First(self, *args)
+        return _Interface.Interface_SequenceOfCheck_First(self)
 
-    def Last(self, *args) -> "Handle_Interface_Check const &" :
+    def Last(self):
         """
         :rtype: Handle_Interface_Check
 
         """
-        return _Interface.Interface_SequenceOfCheck_Last(self, *args)
+        return _Interface.Interface_SequenceOfCheck_Last(self)
 
-    def Split(self, *args) -> "void" :
+    def Split(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Sub:
         :type Sub: Interface_SequenceOfCheck &
         :rtype: None
@@ -9106,19 +9915,19 @@ class Interface_SequenceOfCheck(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Interface.Interface_SequenceOfCheck_Split(self, *args)
 
-    def Value(self, *args) -> "Handle_Interface_Check const &" :
+    def Value(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Handle_Interface_Check
 
         """
         return _Interface.Interface_SequenceOfCheck_Value(self, *args)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param I:
         :type I: Handle_Interface_Check &
         :rtype: None
@@ -9126,25 +9935,25 @@ class Interface_SequenceOfCheck(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Interface.Interface_SequenceOfCheck_SetValue(self, *args)
 
-    def ChangeValue(self, *args) -> "Handle_Interface_Check &" :
+    def ChangeValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Handle_Interface_Check
 
         """
         return _Interface.Interface_SequenceOfCheck_ChangeValue(self, *args)
 
-    def Remove(self, *args) -> "void" :
+    def Remove(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: None
 
         :param FromIndex:
-        :type FromIndex: int
+        :type FromIndex: Standard_Integer
         :param ToIndex:
-        :type ToIndex: int
+        :type ToIndex: Standard_Integer
         :rtype: None
 
         """
@@ -9219,16 +10028,16 @@ class Interface_ShareFlags(object):
 
         """
         _Interface.Interface_ShareFlags_swiginit(self,_Interface.new_Interface_ShareFlags(*args))
-    def Model(self, *args) -> "Handle_Interface_InterfaceModel" :
+    def Model(self):
         """
         * Returns the Model used for the evaluation
 
         :rtype: Handle_Interface_InterfaceModel
 
         """
-        return _Interface.Interface_ShareFlags_Model(self, *args)
+        return _Interface.Interface_ShareFlags_Model(self)
 
-    def IsShared(self, *args) -> "Standard_Boolean" :
+    def IsShared(self, *args):
         """
         * Returns True if <ent> is Shared by one or more other Entity(ies) of the Model
 
@@ -9239,34 +10048,40 @@ class Interface_ShareFlags(object):
         """
         return _Interface.Interface_ShareFlags_IsShared(self, *args)
 
-    def RootEntities(self, *args) -> "Interface_EntityIterator" :
+    def RootEntities(self):
         """
         * Returns the Entities which are not Shared (see their flags)
 
         :rtype: Interface_EntityIterator
 
         """
-        return _Interface.Interface_ShareFlags_RootEntities(self, *args)
+        return _Interface.Interface_ShareFlags_RootEntities(self)
 
-    def NbRoots(self, *args) -> "Standard_Integer" :
+    def NbRoots(self):
         """
         * Returns the count of root entities
 
         :rtype: int
 
         """
-        return _Interface.Interface_ShareFlags_NbRoots(self, *args)
+        return _Interface.Interface_ShareFlags_NbRoots(self)
 
-    def Root(self, *args) -> "Handle_Standard_Transient" :
+    def Root(self, num=1):
         """
         * Returns a root entity according its rank in the list of roots By default, it returns the first one
 
         :param num: default value is 1
-        :type num: int
+        :type num: Standard_Integer
+        :rtype: Handle_Standard_Transient
+
+        * Returns a root entity according its rank in the list of roots By default, it returns the first one
+
+        :param num: default value is 1
+        :type num: Standard_Integer
         :rtype: Handle_Standard_Transient
 
         """
-        return _Interface.Interface_ShareFlags_Root(self, *args)
+        return _Interface.Interface_ShareFlags_Root(self, num)
 
     def __del__(self):
     	try:
@@ -9334,34 +10149,34 @@ class Interface_ShareTool(object):
 
         """
         _Interface.Interface_ShareTool_swiginit(self,_Interface.new_Interface_ShareTool(*args))
-    def Model(self, *args) -> "Handle_Interface_InterfaceModel" :
+    def Model(self):
         """
         * Returns the Model used for Creation (directly or for Graph)
 
         :rtype: Handle_Interface_InterfaceModel
 
         """
-        return _Interface.Interface_ShareTool_Model(self, *args)
+        return _Interface.Interface_ShareTool_Model(self)
 
-    def Graph(self, *args) -> "Interface_Graph const &" :
+    def Graph(self):
         """
         * Returns the data used by the ShareTool to work Can then be used directly (read only)
 
         :rtype: Interface_Graph
 
         """
-        return _Interface.Interface_ShareTool_Graph(self, *args)
+        return _Interface.Interface_ShareTool_Graph(self)
 
-    def RootEntities(self, *args) -> "Interface_EntityIterator" :
+    def RootEntities(self):
         """
         * Returns the Entities which are not Shared (their Sharing List is empty) in the Model
 
         :rtype: Interface_EntityIterator
 
         """
-        return _Interface.Interface_ShareTool_RootEntities(self, *args)
+        return _Interface.Interface_ShareTool_RootEntities(self)
 
-    def IsShared(self, *args) -> "Standard_Boolean" :
+    def IsShared(self, *args):
         """
         * Returns True if <ent> is Shared by other Entities in the Model
 
@@ -9372,7 +10187,7 @@ class Interface_ShareTool(object):
         """
         return _Interface.Interface_ShareTool_IsShared(self, *args)
 
-    def Shareds(self, *args) -> "Interface_EntityIterator" :
+    def Shareds(self, *args):
         """
         * Returns the List of Entities Shared by a given Entity <ent>
 
@@ -9383,7 +10198,7 @@ class Interface_ShareTool(object):
         """
         return _Interface.Interface_ShareTool_Shareds(self, *args)
 
-    def Sharings(self, *args) -> "Interface_EntityIterator" :
+    def Sharings(self, *args):
         """
         * Returns the List of Entities Sharing a given Entity <ent>
 
@@ -9394,7 +10209,7 @@ class Interface_ShareTool(object):
         """
         return _Interface.Interface_ShareTool_Sharings(self, *args)
 
-    def NbTypedSharings(self, *args) -> "Standard_Integer" :
+    def NbTypedSharings(self, *args):
         """
         * Returns the count of Sharing Entities of an Entity, which are Kind of a given Type
 
@@ -9407,7 +10222,7 @@ class Interface_ShareTool(object):
         """
         return _Interface.Interface_ShareTool_NbTypedSharings(self, *args)
 
-    def TypedSharing(self, *args) -> "Handle_Standard_Transient" :
+    def TypedSharing(self, *args):
         """
         * Returns the Sharing Entity of an Entity, which is Kind of a given Type. Allows to access a Sharing Entity of a given type when there is one and only one (current case)
 
@@ -9420,8 +10235,16 @@ class Interface_ShareTool(object):
         """
         return _Interface.Interface_ShareTool_TypedSharing(self, *args)
 
-    def All(self, *args) -> "Interface_EntityIterator" :
+    def All(self, *args):
         """
+        * Returns the complete list of entities shared by <ent> at any level, including <ent> itself If <ent> is the Model, considers the concatenation of AllShared for each root If <rootlast> is True (D), the list starts with lower level entities and ends by the root. Else, the root is first and the lower level entities are at end
+
+        :param ent:
+        :type ent: Handle_Standard_Transient &
+        :param rootlast: default value is Standard_True
+        :type rootlast: bool
+        :rtype: Interface_EntityIterator
+
         * Returns the complete list of entities shared by <ent> at any level, including <ent> itself If <ent> is the Model, considers the concatenation of AllShared for each root If <rootlast> is True (D), the list starts with lower level entities and ends by the root. Else, the root is first and the lower level entities are at end
 
         :param ent:
@@ -9433,7 +10256,7 @@ class Interface_ShareTool(object):
         """
         return _Interface.Interface_ShareTool_All(self, *args)
 
-    def Print(self, *args) -> "void" :
+    def Print(self, *args):
         """
         * Utility method which Prints the content of an iterator (by their Numbers)
 
@@ -9471,22 +10294,22 @@ Interface_ShareTool_swigregister(Interface_ShareTool)
 class Interface_SignLabel(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _Interface.Interface_SignLabel_swiginit(self,_Interface.new_Interface_SignLabel(*args))
-    def Name(self, *args) -> "char *" :
+        _Interface.Interface_SignLabel_swiginit(self,_Interface.new_Interface_SignLabel())
+    def Name(self):
         """
         * Returns 'Entity Label'
 
         :rtype: char *
 
         """
-        return _Interface.Interface_SignLabel_Name(self, *args)
+        return _Interface.Interface_SignLabel_Name(self)
 
-    def Text(self, *args) -> "TCollection_AsciiString" :
+    def Text(self, *args):
         """
         * Considers context as an InterfaceModel and returns the Label computed by it
 
@@ -9535,7 +10358,7 @@ Handle_Interface_SignLabel._kill_pointed = new_instancemethod(_Interface.Handle_
 Handle_Interface_SignLabel_swigregister = _Interface.Handle_Interface_SignLabel_swigregister
 Handle_Interface_SignLabel_swigregister(Handle_Interface_SignLabel)
 
-def Handle_Interface_SignLabel_DownCast(*args) -> "Handle_Interface_SignLabel const" :
+def Handle_Interface_SignLabel_DownCast(*args):
   return _Interface.Handle_Interface_SignLabel_DownCast(*args)
 Handle_Interface_SignLabel_DownCast = _Interface.Handle_Interface_SignLabel_DownCast
 
@@ -9543,7 +10366,7 @@ class Interface_SignType(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def Text(self, *args) -> "TCollection_AsciiString" :
+    def Text(self, *args):
         """
         * Returns an identification of the Signature (a word), given at initialization time Specialised to consider context as an InterfaceModel
 
@@ -9556,7 +10379,7 @@ class Interface_SignType(object):
         """
         return _Interface.Interface_SignType_Text(self, *args)
 
-    def Value(self, *args) -> "char *" :
+    def Value(self, *args):
         """
         * Returns the Signature for a Transient object. It is specific of each sub-class of Signature. For a Null Handle, it should provide '' It can work with the model which contains the entity
 
@@ -9569,7 +10392,7 @@ class Interface_SignType(object):
         """
         return _Interface.Interface_SignType_Value(self, *args)
 
-    def ClassName(*args) -> "char *" :
+    def ClassName(*args):
         """
         * From a CDL Type Name, returns the Class part (package dropped) WARNING : buffered, to be immediately copied or printed
 
@@ -9596,7 +10419,7 @@ Interface_SignType.GetHandle = new_instancemethod(_Interface.Interface_SignType_
 Interface_SignType_swigregister = _Interface.Interface_SignType_swigregister
 Interface_SignType_swigregister(Interface_SignType)
 
-def Interface_SignType_ClassName(*args) -> "char *" :
+def Interface_SignType_ClassName(*args):
   """
     * From a CDL Type Name, returns the Class part (package dropped) WARNING : buffered, to be immediately copied or printed
 
@@ -9628,7 +10451,7 @@ Handle_Interface_SignType._kill_pointed = new_instancemethod(_Interface.Handle_I
 Handle_Interface_SignType_swigregister = _Interface.Handle_Interface_SignType_swigregister
 Handle_Interface_SignType_swigregister(Handle_Interface_SignType)
 
-def Handle_Interface_SignType_DownCast(*args) -> "Handle_Interface_SignType const" :
+def Handle_Interface_SignType_DownCast(*args):
   return _Interface.Handle_Interface_SignType_DownCast(*args)
 Handle_Interface_SignType_DownCast = _Interface.Handle_Interface_SignType_DownCast
 
@@ -9647,18 +10470,38 @@ class Interface_TypedValue(object):
         :type init: char *
         :rtype: None
 
+        * Creates a TypedValue, with a name type gives the type of the parameter, default is free text Also available : Integer, Real, Enum, Entity (i.e. Object) More precise specifications, titles, can be given to the TypedValue once created init gives an initial value. If it is not given, the TypedValue begins as 'not set', its value is empty
+
+        :param name:
+        :type name: char *
+        :param type: default value is Interface_ParamText
+        :type type: Interface_ParamType
+        :param init: default value is 
+        :type init: char *
+        :rtype: None
+
+        * Creates a TypedValue, with a name type gives the type of the parameter, default is free text Also available : Integer, Real, Enum, Entity (i.e. Object) More precise specifications, titles, can be given to the TypedValue once created init gives an initial value. If it is not given, the TypedValue begins as 'not set', its value is empty
+
+        :param name:
+        :type name: char *
+        :param type: default value is Interface_ParamText
+        :type type: Interface_ParamType
+        :param init: default value is 
+        :type init: char *
+        :rtype: None
+
         """
         _Interface.Interface_TypedValue_swiginit(self,_Interface.new_Interface_TypedValue(*args))
-    def Type(self, *args) -> "Interface_ParamType" :
+    def Type(self):
         """
         * Returns the type I.E. calls ValueType then makes correspondance between ParamType from Interface (which remains for compatibility reasons) and ValueType from MoniTool
 
         :rtype: Interface_ParamType
 
         """
-        return _Interface.Interface_TypedValue_Type(self, *args)
+        return _Interface.Interface_TypedValue_Type(self)
 
-    def ParamTypeToValueType(*args) -> "MoniTool_ValueType" :
+    def ParamTypeToValueType(*args):
         """
         * Correspondance ParamType from Interface to  ValueType from MoniTool
 
@@ -9670,7 +10513,7 @@ class Interface_TypedValue(object):
         return _Interface.Interface_TypedValue_ParamTypeToValueType(*args)
 
     ParamTypeToValueType = staticmethod(ParamTypeToValueType)
-    def ValueTypeToParamType(*args) -> "Interface_ParamType" :
+    def ValueTypeToParamType(*args):
         """
         * Correspondance ParamType from Interface to  ValueType from MoniTool
 
@@ -9696,7 +10539,7 @@ Interface_TypedValue.GetHandle = new_instancemethod(_Interface.Interface_TypedVa
 Interface_TypedValue_swigregister = _Interface.Interface_TypedValue_swigregister
 Interface_TypedValue_swigregister(Interface_TypedValue)
 
-def Interface_TypedValue_ParamTypeToValueType(*args) -> "MoniTool_ValueType" :
+def Interface_TypedValue_ParamTypeToValueType(*args):
   """
     * Correspondance ParamType from Interface to  ValueType from MoniTool
 
@@ -9707,7 +10550,7 @@ def Interface_TypedValue_ParamTypeToValueType(*args) -> "MoniTool_ValueType" :
     """
   return _Interface.Interface_TypedValue_ParamTypeToValueType(*args)
 
-def Interface_TypedValue_ValueTypeToParamType(*args) -> "Interface_ParamType" :
+def Interface_TypedValue_ValueTypeToParamType(*args):
   """
     * Correspondance ParamType from Interface to  ValueType from MoniTool
 
@@ -9739,45 +10582,45 @@ Handle_Interface_TypedValue._kill_pointed = new_instancemethod(_Interface.Handle
 Handle_Interface_TypedValue_swigregister = _Interface.Handle_Interface_TypedValue_swigregister
 Handle_Interface_TypedValue_swigregister(Handle_Interface_TypedValue)
 
-def Handle_Interface_TypedValue_DownCast(*args) -> "Handle_Interface_TypedValue const" :
+def Handle_Interface_TypedValue_DownCast(*args):
   return _Interface.Handle_Interface_TypedValue_DownCast(*args)
 Handle_Interface_TypedValue_DownCast = _Interface.Handle_Interface_TypedValue_DownCast
 
 class Interface_UndefinedContent(OCC.MMgt.MMgt_TShared):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         * Defines an empty UndefinedContent
 
         :rtype: None
 
         """
-        _Interface.Interface_UndefinedContent_swiginit(self,_Interface.new_Interface_UndefinedContent(*args))
-    def NbParams(self, *args) -> "Standard_Integer" :
+        _Interface.Interface_UndefinedContent_swiginit(self,_Interface.new_Interface_UndefinedContent())
+    def NbParams(self):
         """
         * Gives count of recorded parameters
 
         :rtype: int
 
         """
-        return _Interface.Interface_UndefinedContent_NbParams(self, *args)
+        return _Interface.Interface_UndefinedContent_NbParams(self)
 
-    def NbLiterals(self, *args) -> "Standard_Integer" :
+    def NbLiterals(self):
         """
         * Gives count of Literal Parameters
 
         :rtype: int
 
         """
-        return _Interface.Interface_UndefinedContent_NbLiterals(self, *args)
+        return _Interface.Interface_UndefinedContent_NbLiterals(self)
 
-    def ParamData(self, *args) -> "Standard_Boolean" :
+    def ParamData(self, *args):
         """
         * Returns data of a Parameter : its type, and the entity if it designates en entity ('ent') or its literal value else ('str') Returned value (Boolean) : True if it is an Entity, False else
 
         :param num:
-        :type num: int
+        :type num: Standard_Integer
         :param ptype:
         :type ptype: Interface_ParamType &
         :param ent:
@@ -9789,64 +10632,64 @@ class Interface_UndefinedContent(OCC.MMgt.MMgt_TShared):
         """
         return _Interface.Interface_UndefinedContent_ParamData(self, *args)
 
-    def ParamType(self, *args) -> "Interface_ParamType" :
+    def ParamType(self, *args):
         """
         * Returns the ParamType of a Param, given its rank Error if num is not between 1 and NbParams
 
         :param num:
-        :type num: int
+        :type num: Standard_Integer
         :rtype: Interface_ParamType
 
         """
         return _Interface.Interface_UndefinedContent_ParamType(self, *args)
 
-    def IsParamEntity(self, *args) -> "Standard_Boolean" :
+    def IsParamEntity(self, *args):
         """
         * Returns True if a Parameter is recorded as an entity Error if num is not between 1 and NbParams
 
         :param num:
-        :type num: int
+        :type num: Standard_Integer
         :rtype: bool
 
         """
         return _Interface.Interface_UndefinedContent_IsParamEntity(self, *args)
 
-    def ParamEntity(self, *args) -> "Handle_Standard_Transient" :
+    def ParamEntity(self, *args):
         """
         * Returns Entity corresponding to a Param, given its rank
 
         :param num:
-        :type num: int
+        :type num: Standard_Integer
         :rtype: Handle_Standard_Transient
 
         """
         return _Interface.Interface_UndefinedContent_ParamEntity(self, *args)
 
-    def ParamValue(self, *args) -> "Handle_TCollection_HAsciiString" :
+    def ParamValue(self, *args):
         """
         * Returns litteral value of a Parameter, given its rank
 
         :param num:
-        :type num: int
+        :type num: Standard_Integer
         :rtype: Handle_TCollection_HAsciiString
 
         """
         return _Interface.Interface_UndefinedContent_ParamValue(self, *args)
 
-    def Reservate(self, *args) -> "void" :
+    def Reservate(self, *args):
         """
         * Manages reservation for parameters (internal use) (nb : total count of parameters, nblit : count of literals)
 
         :param nb:
-        :type nb: int
+        :type nb: Standard_Integer
         :param nblit:
-        :type nblit: int
+        :type nblit: Standard_Integer
         :rtype: None
 
         """
         return _Interface.Interface_UndefinedContent_Reservate(self, *args)
 
-    def AddLiteral(self, *args) -> "void" :
+    def AddLiteral(self, *args):
         """
         * Adds a literal Parameter to the list
 
@@ -9859,7 +10702,7 @@ class Interface_UndefinedContent(OCC.MMgt.MMgt_TShared):
         """
         return _Interface.Interface_UndefinedContent_AddLiteral(self, *args)
 
-    def AddEntity(self, *args) -> "void" :
+    def AddEntity(self, *args):
         """
         * Adds a Parameter which references an Entity
 
@@ -9872,23 +10715,23 @@ class Interface_UndefinedContent(OCC.MMgt.MMgt_TShared):
         """
         return _Interface.Interface_UndefinedContent_AddEntity(self, *args)
 
-    def RemoveParam(self, *args) -> "void" :
+    def RemoveParam(self, *args):
         """
         * Removes a Parameter given its rank
 
         :param num:
-        :type num: int
+        :type num: Standard_Integer
         :rtype: None
 
         """
         return _Interface.Interface_UndefinedContent_RemoveParam(self, *args)
 
-    def SetLiteral(self, *args) -> "void" :
+    def SetLiteral(self, *args):
         """
         * Sets a new value for the Parameter <num>, to a literal value (if it referenced formerly an Entity, this Entity is removed)
 
         :param num:
-        :type num: int
+        :type num: Standard_Integer
         :param ptype:
         :type ptype: Interface_ParamType
         :param val:
@@ -9898,12 +10741,12 @@ class Interface_UndefinedContent(OCC.MMgt.MMgt_TShared):
         """
         return _Interface.Interface_UndefinedContent_SetLiteral(self, *args)
 
-    def SetEntity(self, *args) -> "void" :
+    def SetEntity(self, *args):
         """
         * Sets a new value for the Parameter <num>, to reference an Entity. To simply change the Entity, see the variant below
 
         :param num:
-        :type num: int
+        :type num: Standard_Integer
         :param ptype:
         :type ptype: Interface_ParamType
         :param ent:
@@ -9913,7 +10756,7 @@ class Interface_UndefinedContent(OCC.MMgt.MMgt_TShared):
         * Changes the Entity referenced by the Parameter <num> (with same ParamType)
 
         :param num:
-        :type num: int
+        :type num: Standard_Integer
         :param ent:
         :type ent: Handle_Standard_Transient &
         :rtype: None
@@ -9921,16 +10764,16 @@ class Interface_UndefinedContent(OCC.MMgt.MMgt_TShared):
         """
         return _Interface.Interface_UndefinedContent_SetEntity(self, *args)
 
-    def EntityList(self, *args) -> "Interface_EntityList" :
+    def EntityList(self):
         """
         * Returns globally the list of param entities. Note that it can be used as shared entity list for the UndefinedEntity
 
         :rtype: Interface_EntityList
 
         """
-        return _Interface.Interface_UndefinedContent_EntityList(self, *args)
+        return _Interface.Interface_UndefinedContent_EntityList(self)
 
-    def GetFromAnother(self, *args) -> "void" :
+    def GetFromAnother(self, *args):
         """
         * Copies contents of undefined entities; deigned to be called by GetFromAnother method from Undefined entity of each Interface (the basic operation is the same regardless the norm)
 
@@ -9943,11 +10786,11 @@ class Interface_UndefinedContent(OCC.MMgt.MMgt_TShared):
         """
         return _Interface.Interface_UndefinedContent_GetFromAnother(self, *args)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Interface_UndefinedContent self)"""
         return _Interface.Interface_UndefinedContent__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Interface_UndefinedContent" :
+    def GetHandle(self):
         """GetHandle(Interface_UndefinedContent self) -> Handle_Interface_UndefinedContent"""
         return _Interface.Interface_UndefinedContent_GetHandle(self)
 
@@ -10000,7 +10843,7 @@ Handle_Interface_UndefinedContent._kill_pointed = new_instancemethod(_Interface.
 Handle_Interface_UndefinedContent_swigregister = _Interface.Handle_Interface_UndefinedContent_swigregister
 Handle_Interface_UndefinedContent_swigregister(Handle_Interface_UndefinedContent)
 
-def Handle_Interface_UndefinedContent_DownCast(*args) -> "Handle_Interface_UndefinedContent const" :
+def Handle_Interface_UndefinedContent_DownCast(*args):
   return _Interface.Handle_Interface_UndefinedContent_DownCast(*args)
 Handle_Interface_UndefinedContent_DownCast = _Interface.Handle_Interface_UndefinedContent_DownCast
 
@@ -10017,20 +10860,20 @@ class Interface_CopyMap(Interface_CopyControl):
 
         """
         _Interface.Interface_CopyMap_swiginit(self,_Interface.new_Interface_CopyMap(*args))
-    def Model(self, *args) -> "Handle_Interface_InterfaceModel" :
+    def Model(self):
         """
         * Returns the InterfaceModel used at Creation time
 
         :rtype: Handle_Interface_InterfaceModel
 
         """
-        return _Interface.Interface_CopyMap_Model(self, *args)
+        return _Interface.Interface_CopyMap_Model(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Interface_CopyMap self)"""
         return _Interface.Interface_CopyMap__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Interface_CopyMap" :
+    def GetHandle(self):
         """GetHandle(Interface_CopyMap self) -> Handle_Interface_CopyMap"""
         return _Interface.Interface_CopyMap_GetHandle(self)
 
@@ -10069,7 +10912,7 @@ Handle_Interface_CopyMap._kill_pointed = new_instancemethod(_Interface.Handle_In
 Handle_Interface_CopyMap_swigregister = _Interface.Handle_Interface_CopyMap_swigregister
 Handle_Interface_CopyMap_swigregister(Handle_Interface_CopyMap)
 
-def Handle_Interface_CopyMap_DownCast(*args) -> "Handle_Interface_CopyMap const" :
+def Handle_Interface_CopyMap_DownCast(*args):
   return _Interface.Handle_Interface_CopyMap_DownCast(*args)
 Handle_Interface_CopyMap_DownCast = _Interface.Handle_Interface_CopyMap_DownCast
 
@@ -10093,7 +10936,7 @@ class Interface_GraphContent(Interface_EntityIterator):
         :param agraph:
         :type agraph: Interface_Graph &
         :param stat:
-        :type stat: int
+        :type stat: Standard_Integer
         :rtype: None
 
         * Creates an Iterator with Shared entities of an entity (equivalente to EntityIterator but with a Graph)
@@ -10106,7 +10949,7 @@ class Interface_GraphContent(Interface_EntityIterator):
 
         """
         _Interface.Interface_GraphContent_swiginit(self,_Interface.new_Interface_GraphContent(*args))
-    def GetFromGraph(self, *args) -> "void" :
+    def GetFromGraph(self, *args):
         """
         * Gets all Entities designated by a Graph (once created), adds them to those already recorded
 
@@ -10119,38 +10962,38 @@ class Interface_GraphContent(Interface_EntityIterator):
         :param agraph:
         :type agraph: Interface_Graph &
         :param stat:
-        :type stat: int
+        :type stat: Standard_Integer
         :rtype: None
 
         """
         return _Interface.Interface_GraphContent_GetFromGraph(self, *args)
 
-    def Result(self, *args) -> "Interface_EntityIterator" :
+    def Result(self):
         """
         * Returns Result under the exact form of an EntityIterator : Can be used when EntityIterator itself is required (as a returned value for instance), whitout way for a sub-class
 
         :rtype: Interface_EntityIterator
 
         """
-        return _Interface.Interface_GraphContent_Result(self, *args)
+        return _Interface.Interface_GraphContent_Result(self)
 
-    def Begin(self, *args) -> "void" :
+    def Begin(self):
         """
         * Does the Evaluation before starting the iteration itself (in out)
 
         :rtype: None
 
         """
-        return _Interface.Interface_GraphContent_Begin(self, *args)
+        return _Interface.Interface_GraphContent_Begin(self)
 
-    def Evaluate(self, *args) -> "void" :
+    def Evaluate(self):
         """
         * Evaluates list of Entities to be iterated. Called by Start Default is set to doing nothing : intended to be redefined by each sub-class
 
         :rtype: void
 
         """
-        return _Interface.Interface_GraphContent_Evaluate(self, *args)
+        return _Interface.Interface_GraphContent_Evaluate(self)
 
     def __del__(self):
     	try:
@@ -10185,6 +11028,30 @@ class Interface_Static(Interface_TypedValue):
         :type init: char *
         :rtype: None
 
+        * Creates and records a Static, with a family and a name family can report to a name of ressource or to a system or internal definition. The name must be unique. type gives the type of the parameter, default is free text Also available : Integer, Real, Enum, Entity (i.e. Object) More precise specifications, titles, can be given to the Static once created init gives an initial value. If it is not given, the Static begin as 'not set', its value is empty
+
+        :param family:
+        :type family: char *
+        :param name:
+        :type name: char *
+        :param type: default value is Interface_ParamText
+        :type type: Interface_ParamType
+        :param init: default value is 
+        :type init: char *
+        :rtype: None
+
+        * Creates and records a Static, with a family and a name family can report to a name of ressource or to a system or internal definition. The name must be unique. type gives the type of the parameter, default is free text Also available : Integer, Real, Enum, Entity (i.e. Object) More precise specifications, titles, can be given to the Static once created init gives an initial value. If it is not given, the Static begin as 'not set', its value is empty
+
+        :param family:
+        :type family: char *
+        :param name:
+        :type name: char *
+        :param type: default value is Interface_ParamText
+        :type type: Interface_ParamType
+        :param init: default value is 
+        :type init: char *
+        :rtype: None
+
         * Creates a new Static with same definition as another one (value is copied, except for Entity : it remains null)
 
         :param family:
@@ -10197,7 +11064,7 @@ class Interface_Static(Interface_TypedValue):
 
         """
         _Interface.Interface_Static_swiginit(self,_Interface.new_Interface_Static(*args))
-    def PrintStatic(self, *args) -> "void" :
+    def PrintStatic(self, *args):
         """
         * Writes the properties of a parameter in the diagnostic file. These include: - Name - Family, - Wildcard (if it has one) - Current status (empty string if it was updated or if it is the original one) - Value
 
@@ -10208,16 +11075,16 @@ class Interface_Static(Interface_TypedValue):
         """
         return _Interface.Interface_Static_PrintStatic(self, *args)
 
-    def Family(self, *args) -> "char *" :
+    def Family(self):
         """
         * Returns the family. It can be : a resource name for applis, an internal name between : $e (environment variables), $l (other, purely local)
 
         :rtype: char *
 
         """
-        return _Interface.Interface_Static_Family(self, *args)
+        return _Interface.Interface_Static_Family(self)
 
-    def SetWild(self, *args) -> "void" :
+    def SetWild(self, *args):
         """
         * Sets a 'wild-card' static : its value will be considered if <self> is not properly set. (reset by set a null one)
 
@@ -10228,35 +11095,47 @@ class Interface_Static(Interface_TypedValue):
         """
         return _Interface.Interface_Static_SetWild(self, *args)
 
-    def Wild(self, *args) -> "Handle_Interface_Static" :
+    def Wild(self):
         """
         * Returns the wildcard static, which can be (is most often) null
 
         :rtype: Handle_Interface_Static
 
         """
-        return _Interface.Interface_Static_Wild(self, *args)
+        return _Interface.Interface_Static_Wild(self)
 
-    def SetUptodate(self, *args) -> "void" :
+    def SetUptodate(self):
         """
         * Records a Static has 'uptodate', i.e. its value has been taken into account by a reinitialisation procedure This flag is reset at each successful SetValue
 
         :rtype: None
 
         """
-        return _Interface.Interface_Static_SetUptodate(self, *args)
+        return _Interface.Interface_Static_SetUptodate(self)
 
-    def UpdatedStatus(self, *args) -> "Standard_Boolean" :
+    def UpdatedStatus(self):
         """
         * Returns the status 'uptodate'
 
         :rtype: bool
 
         """
-        return _Interface.Interface_Static_UpdatedStatus(self, *args)
+        return _Interface.Interface_Static_UpdatedStatus(self)
 
-    def Init(*args) -> "Standard_Boolean" :
+    def Init(*args):
         """
+        * Declares a new Static (by calling its constructor) If this name is already taken, does nothing and returns False Else, creates it and returns True For additional definitions, get the Static then edit it
+
+        :param family:
+        :type family: char *
+        :param name:
+        :type name: char *
+        :param type:
+        :type type: Interface_ParamType
+        :param init: default value is 
+        :type init: char *
+        :rtype: bool
+
         * Declares a new Static (by calling its constructor) If this name is already taken, does nothing and returns False Else, creates it and returns True For additional definitions, get the Static then edit it
 
         :param family:
@@ -10281,11 +11160,23 @@ class Interface_Static(Interface_TypedValue):
         :type init: char *
         :rtype: bool
 
+        * As Init with ParamType, but type is given as a character This allows a simpler call Types : 'i' Integer, 'r' Real, 't' Text, 'e' Enum, 'o' Object '=' for same definition as, <init> gives the initial Static Returns False if <type> does not match this list
+
+        :param family:
+        :type family: char *
+        :param name:
+        :type name: char *
+        :param type:
+        :type type: Standard_Character
+        :param init: default value is 
+        :type init: char *
+        :rtype: bool
+
         """
         return _Interface.Interface_Static_Init(*args)
 
     Init = staticmethod(Init)
-    def Static(*args) -> "Handle_Interface_Static" :
+    def Static(*args):
         """
         * Returns a Static from its name. Null Handle if not present
 
@@ -10297,7 +11188,7 @@ class Interface_Static(Interface_TypedValue):
         return _Interface.Interface_Static_Static(*args)
 
     Static = staticmethod(Static)
-    def IsPresent(*args) -> "Standard_Boolean" :
+    def IsPresent(*args):
         """
         * Returns True if a Static named <name> is present, False else
 
@@ -10309,7 +11200,7 @@ class Interface_Static(Interface_TypedValue):
         return _Interface.Interface_Static_IsPresent(*args)
 
     IsPresent = staticmethod(IsPresent)
-    def CDef(*args) -> "char *" :
+    def CDef(*args):
         """
         * Returns a part of the definition of a Static, as a CString The part is designated by its name, as a CString If the required value is not a string, it is converted to a CString then returned If <name> is not present, or <part> not defined for <name>, this function returns an empty string Allowed parts for CDef : family : the family type : the type ('integer','real','text','enum') label : the label satis : satisfy function name if any rmin : minimum real value rmax : maximum real value imin : minimum integer value imax : maximum integer value enum nn (nn : value of an integer) : enum value for nn unit : unit definition for a real
 
@@ -10323,7 +11214,7 @@ class Interface_Static(Interface_TypedValue):
         return _Interface.Interface_Static_CDef(*args)
 
     CDef = staticmethod(CDef)
-    def IDef(*args) -> "Standard_Integer" :
+    def IDef(*args):
         """
         * Returns a part of the definition of a Static, as an Integer The part is designated by its name, as a CString If the required value is not a string, returns zero For a Boolean, 0 for false, 1 for true If <name> is not present, or <part> not defined for <name>, this function returns zero Allowed parts for IDef : imin, imax : minimum or maximum integer value estart : starting number for enum ecount : count of enum values (starting from estart) ematch : exact match status eval val : case determined from a string
 
@@ -10337,8 +11228,16 @@ class Interface_Static(Interface_TypedValue):
         return _Interface.Interface_Static_IDef(*args)
 
     IDef = staticmethod(IDef)
-    def IsSet(*args) -> "Standard_Boolean" :
+    def IsSet(*args):
         """
+        * Returns True if <name> is present AND set <proper> True (D) : considers this item only <proper> False : if not set and attached to a wild-card, considers this wild-card
+
+        :param name:
+        :type name: char *
+        :param proper: default value is Standard_True
+        :type proper: bool
+        :rtype: bool
+
         * Returns True if <name> is present AND set <proper> True (D) : considers this item only <proper> False : if not set and attached to a wild-card, considers this wild-card
 
         :param name:
@@ -10351,7 +11250,7 @@ class Interface_Static(Interface_TypedValue):
         return _Interface.Interface_Static_IsSet(*args)
 
     IsSet = staticmethod(IsSet)
-    def CVal(*args) -> "char *" :
+    def CVal(*args):
         """
         * Returns the value of the parameter identified by the string name. If the specified parameter does not exist, an empty string is returned. Example Interface_Static::CVal('write.step.schema'); which could return: 'AP214'
 
@@ -10363,7 +11262,7 @@ class Interface_Static(Interface_TypedValue):
         return _Interface.Interface_Static_CVal(*args)
 
     CVal = staticmethod(CVal)
-    def IVal(*args) -> "Standard_Integer" :
+    def IVal(*args):
         """
         * Returns the integer value of the translation parameter identified by the string name. Returns the value 0 if the parameter does not exist. Example Interface_Static::IVal('write.step.schema'); which could return: 3
 
@@ -10375,7 +11274,7 @@ class Interface_Static(Interface_TypedValue):
         return _Interface.Interface_Static_IVal(*args)
 
     IVal = staticmethod(IVal)
-    def RVal(*args) -> "Standard_Real" :
+    def RVal(*args):
         """
         * Returns the value of a static translation parameter identified by the string name. Returns the value 0.0 if the parameter does not exist.
 
@@ -10387,7 +11286,7 @@ class Interface_Static(Interface_TypedValue):
         return _Interface.Interface_Static_RVal(*args)
 
     RVal = staticmethod(RVal)
-    def SetCVal(*args) -> "Standard_Boolean" :
+    def SetCVal(*args):
         """
         * Modifies the value of the parameter identified by name. The modification is specified by the string val. false is returned if the parameter does not exist. Example Interface_Static::SetCVal ('write.step.schema','AP203') This syntax specifies a switch from the default STEP 214 mode to STEP 203 mode.
 
@@ -10401,21 +11300,21 @@ class Interface_Static(Interface_TypedValue):
         return _Interface.Interface_Static_SetCVal(*args)
 
     SetCVal = staticmethod(SetCVal)
-    def SetIVal(*args) -> "Standard_Boolean" :
+    def SetIVal(*args):
         """
         * Modifies the value of the parameter identified by name. The modification is specified by the integer value val. false is returned if the parameter does not exist. Example Interface_Static::SetIVal ('write.step.schema', 3) This syntax specifies a switch from the default STEP 214 mode to STEP 203 mode.S
 
         :param name:
         :type name: char *
         :param val:
-        :type val: int
+        :type val: Standard_Integer
         :rtype: bool
 
         """
         return _Interface.Interface_Static_SetIVal(*args)
 
     SetIVal = staticmethod(SetIVal)
-    def SetRVal(*args) -> "Standard_Boolean" :
+    def SetRVal(*args):
         """
         * Modifies the value of a translation parameter. false is returned if the parameter does not exist. The modification is specified by the real number value val.
 
@@ -10429,7 +11328,7 @@ class Interface_Static(Interface_TypedValue):
         return _Interface.Interface_Static_SetRVal(*args)
 
     SetRVal = staticmethod(SetRVal)
-    def Update(*args) -> "Standard_Boolean" :
+    def Update(*args):
         """
         * Sets a Static to be 'uptodate' Returns False if <name> is not present This status can be used by a reinitialisation procedure to rerun if a value has been changed
 
@@ -10441,7 +11340,7 @@ class Interface_Static(Interface_TypedValue):
         return _Interface.Interface_Static_Update(*args)
 
     Update = staticmethod(Update)
-    def IsUpdated(*args) -> "Standard_Boolean" :
+    def IsUpdated(*args):
         """
         * Returns the status 'uptodate' from a Static Returns False if <name> is not present
 
@@ -10453,28 +11352,44 @@ class Interface_Static(Interface_TypedValue):
         return _Interface.Interface_Static_IsUpdated(*args)
 
     IsUpdated = staticmethod(IsUpdated)
-    def Items(*args) -> "Handle_TColStd_HSequenceOfHAsciiString" :
+    def Items(mode=0, criter=""):
         """
         * Returns a list of names of statics : <mode> = 0 (D) : criter is for family <mode> = 1 : criter is regexp on names, takes final items (ignore wild cards) <mode> = 2 : idem but take only wilded, not final items <mode> = 3 : idem, take all items matching criter idem + 100 : takes only non-updated items idem + 200 : takes only updated items criter empty (D) : returns all names else returns names which match the given criter Remark : families beginning by '$' are not listed by criter '' they are listed only by criter '$' This allows for instance to set new values after having loaded or reloaded a resource, then to update them as required
 
         :param mode: default value is 0
-        :type mode: int
+        :type mode: Standard_Integer
+        :param criter: default value is 
+        :type criter: char *
+        :rtype: Handle_TColStd_HSequenceOfHAsciiString
+
+        * Returns a list of names of statics : <mode> = 0 (D) : criter is for family <mode> = 1 : criter is regexp on names, takes final items (ignore wild cards) <mode> = 2 : idem but take only wilded, not final items <mode> = 3 : idem, take all items matching criter idem + 100 : takes only non-updated items idem + 200 : takes only updated items criter empty (D) : returns all names else returns names which match the given criter Remark : families beginning by '$' are not listed by criter '' they are listed only by criter '$' This allows for instance to set new values after having loaded or reloaded a resource, then to update them as required
+
+        :param mode: default value is 0
+        :type mode: Standard_Integer
+        :param criter: default value is 
+        :type criter: char *
+        :rtype: Handle_TColStd_HSequenceOfHAsciiString
+
+        * Returns a list of names of statics : <mode> = 0 (D) : criter is for family <mode> = 1 : criter is regexp on names, takes final items (ignore wild cards) <mode> = 2 : idem but take only wilded, not final items <mode> = 3 : idem, take all items matching criter idem + 100 : takes only non-updated items idem + 200 : takes only updated items criter empty (D) : returns all names else returns names which match the given criter Remark : families beginning by '$' are not listed by criter '' they are listed only by criter '$' This allows for instance to set new values after having loaded or reloaded a resource, then to update them as required
+
+        :param mode: default value is 0
+        :type mode: Standard_Integer
         :param criter: default value is 
         :type criter: char *
         :rtype: Handle_TColStd_HSequenceOfHAsciiString
 
         """
-        return _Interface.Interface_Static_Items(*args)
+        return _Interface.Interface_Static_Items(mode, criter)
 
     Items = staticmethod(Items)
-    def Standards(*args) -> "void" :
+    def Standards():
         """
         * Initializes all standard static parameters, which can be used by every function. statics specific of a norm or a function must be defined around it
 
         :rtype: void
 
         """
-        return _Interface.Interface_Static_Standards(*args)
+        return _Interface.Interface_Static_Standards()
 
     Standards = staticmethod(Standards)
     def __del__(self):
@@ -10496,8 +11411,20 @@ Interface_Static.GetHandle = new_instancemethod(_Interface.Interface_Static_GetH
 Interface_Static_swigregister = _Interface.Interface_Static_swigregister
 Interface_Static_swigregister(Interface_Static)
 
-def Interface_Static_Init(*args) -> "Standard_Boolean" :
+def Interface_Static_Init(*args):
   """
+    * Declares a new Static (by calling its constructor) If this name is already taken, does nothing and returns False Else, creates it and returns True For additional definitions, get the Static then edit it
+
+    :param family:
+    :type family: char *
+    :param name:
+    :type name: char *
+    :param type:
+    :type type: Interface_ParamType
+    :param init: default value is 
+    :type init: char *
+    :rtype: bool
+
     * Declares a new Static (by calling its constructor) If this name is already taken, does nothing and returns False Else, creates it and returns True For additional definitions, get the Static then edit it
 
     :param family:
@@ -10522,10 +11449,22 @@ def Interface_Static_Init(*args) -> "Standard_Boolean" :
     :type init: char *
     :rtype: bool
 
+    * As Init with ParamType, but type is given as a character This allows a simpler call Types : 'i' Integer, 'r' Real, 't' Text, 'e' Enum, 'o' Object '=' for same definition as, <init> gives the initial Static Returns False if <type> does not match this list
+
+    :param family:
+    :type family: char *
+    :param name:
+    :type name: char *
+    :param type:
+    :type type: Standard_Character
+    :param init: default value is 
+    :type init: char *
+    :rtype: bool
+
     """
   return _Interface.Interface_Static_Init(*args)
 
-def Interface_Static_Static(*args) -> "Handle_Interface_Static" :
+def Interface_Static_Static(*args):
   """
     * Returns a Static from its name. Null Handle if not present
 
@@ -10536,7 +11475,7 @@ def Interface_Static_Static(*args) -> "Handle_Interface_Static" :
     """
   return _Interface.Interface_Static_Static(*args)
 
-def Interface_Static_IsPresent(*args) -> "Standard_Boolean" :
+def Interface_Static_IsPresent(*args):
   """
     * Returns True if a Static named <name> is present, False else
 
@@ -10547,7 +11486,7 @@ def Interface_Static_IsPresent(*args) -> "Standard_Boolean" :
     """
   return _Interface.Interface_Static_IsPresent(*args)
 
-def Interface_Static_CDef(*args) -> "char *" :
+def Interface_Static_CDef(*args):
   """
     * Returns a part of the definition of a Static, as a CString The part is designated by its name, as a CString If the required value is not a string, it is converted to a CString then returned If <name> is not present, or <part> not defined for <name>, this function returns an empty string Allowed parts for CDef : family : the family type : the type ('integer','real','text','enum') label : the label satis : satisfy function name if any rmin : minimum real value rmax : maximum real value imin : minimum integer value imax : maximum integer value enum nn (nn : value of an integer) : enum value for nn unit : unit definition for a real
 
@@ -10560,7 +11499,7 @@ def Interface_Static_CDef(*args) -> "char *" :
     """
   return _Interface.Interface_Static_CDef(*args)
 
-def Interface_Static_IDef(*args) -> "Standard_Integer" :
+def Interface_Static_IDef(*args):
   """
     * Returns a part of the definition of a Static, as an Integer The part is designated by its name, as a CString If the required value is not a string, returns zero For a Boolean, 0 for false, 1 for true If <name> is not present, or <part> not defined for <name>, this function returns zero Allowed parts for IDef : imin, imax : minimum or maximum integer value estart : starting number for enum ecount : count of enum values (starting from estart) ematch : exact match status eval val : case determined from a string
 
@@ -10573,8 +11512,16 @@ def Interface_Static_IDef(*args) -> "Standard_Integer" :
     """
   return _Interface.Interface_Static_IDef(*args)
 
-def Interface_Static_IsSet(*args) -> "Standard_Boolean" :
+def Interface_Static_IsSet(*args):
   """
+    * Returns True if <name> is present AND set <proper> True (D) : considers this item only <proper> False : if not set and attached to a wild-card, considers this wild-card
+
+    :param name:
+    :type name: char *
+    :param proper: default value is Standard_True
+    :type proper: bool
+    :rtype: bool
+
     * Returns True if <name> is present AND set <proper> True (D) : considers this item only <proper> False : if not set and attached to a wild-card, considers this wild-card
 
     :param name:
@@ -10586,7 +11533,7 @@ def Interface_Static_IsSet(*args) -> "Standard_Boolean" :
     """
   return _Interface.Interface_Static_IsSet(*args)
 
-def Interface_Static_CVal(*args) -> "char *" :
+def Interface_Static_CVal(*args):
   """
     * Returns the value of the parameter identified by the string name. If the specified parameter does not exist, an empty string is returned. Example Interface_Static::CVal('write.step.schema'); which could return: 'AP214'
 
@@ -10597,7 +11544,7 @@ def Interface_Static_CVal(*args) -> "char *" :
     """
   return _Interface.Interface_Static_CVal(*args)
 
-def Interface_Static_IVal(*args) -> "Standard_Integer" :
+def Interface_Static_IVal(*args):
   """
     * Returns the integer value of the translation parameter identified by the string name. Returns the value 0 if the parameter does not exist. Example Interface_Static::IVal('write.step.schema'); which could return: 3
 
@@ -10608,7 +11555,7 @@ def Interface_Static_IVal(*args) -> "Standard_Integer" :
     """
   return _Interface.Interface_Static_IVal(*args)
 
-def Interface_Static_RVal(*args) -> "Standard_Real" :
+def Interface_Static_RVal(*args):
   """
     * Returns the value of a static translation parameter identified by the string name. Returns the value 0.0 if the parameter does not exist.
 
@@ -10619,7 +11566,7 @@ def Interface_Static_RVal(*args) -> "Standard_Real" :
     """
   return _Interface.Interface_Static_RVal(*args)
 
-def Interface_Static_SetCVal(*args) -> "Standard_Boolean" :
+def Interface_Static_SetCVal(*args):
   """
     * Modifies the value of the parameter identified by name. The modification is specified by the string val. false is returned if the parameter does not exist. Example Interface_Static::SetCVal ('write.step.schema','AP203') This syntax specifies a switch from the default STEP 214 mode to STEP 203 mode.
 
@@ -10632,20 +11579,20 @@ def Interface_Static_SetCVal(*args) -> "Standard_Boolean" :
     """
   return _Interface.Interface_Static_SetCVal(*args)
 
-def Interface_Static_SetIVal(*args) -> "Standard_Boolean" :
+def Interface_Static_SetIVal(*args):
   """
     * Modifies the value of the parameter identified by name. The modification is specified by the integer value val. false is returned if the parameter does not exist. Example Interface_Static::SetIVal ('write.step.schema', 3) This syntax specifies a switch from the default STEP 214 mode to STEP 203 mode.S
 
     :param name:
     :type name: char *
     :param val:
-    :type val: int
+    :type val: Standard_Integer
     :rtype: bool
 
     """
   return _Interface.Interface_Static_SetIVal(*args)
 
-def Interface_Static_SetRVal(*args) -> "Standard_Boolean" :
+def Interface_Static_SetRVal(*args):
   """
     * Modifies the value of a translation parameter. false is returned if the parameter does not exist. The modification is specified by the real number value val.
 
@@ -10658,7 +11605,7 @@ def Interface_Static_SetRVal(*args) -> "Standard_Boolean" :
     """
   return _Interface.Interface_Static_SetRVal(*args)
 
-def Interface_Static_Update(*args) -> "Standard_Boolean" :
+def Interface_Static_Update(*args):
   """
     * Sets a Static to be 'uptodate' Returns False if <name> is not present This status can be used by a reinitialisation procedure to rerun if a value has been changed
 
@@ -10669,7 +11616,7 @@ def Interface_Static_Update(*args) -> "Standard_Boolean" :
     """
   return _Interface.Interface_Static_Update(*args)
 
-def Interface_Static_IsUpdated(*args) -> "Standard_Boolean" :
+def Interface_Static_IsUpdated(*args):
   """
     * Returns the status 'uptodate' from a Static Returns False if <name> is not present
 
@@ -10680,27 +11627,43 @@ def Interface_Static_IsUpdated(*args) -> "Standard_Boolean" :
     """
   return _Interface.Interface_Static_IsUpdated(*args)
 
-def Interface_Static_Items(*args) -> "Handle_TColStd_HSequenceOfHAsciiString" :
+def Interface_Static_Items(mode=0, criter=""):
   """
     * Returns a list of names of statics : <mode> = 0 (D) : criter is for family <mode> = 1 : criter is regexp on names, takes final items (ignore wild cards) <mode> = 2 : idem but take only wilded, not final items <mode> = 3 : idem, take all items matching criter idem + 100 : takes only non-updated items idem + 200 : takes only updated items criter empty (D) : returns all names else returns names which match the given criter Remark : families beginning by '$' are not listed by criter '' they are listed only by criter '$' This allows for instance to set new values after having loaded or reloaded a resource, then to update them as required
 
     :param mode: default value is 0
-    :type mode: int
+    :type mode: Standard_Integer
+    :param criter: default value is 
+    :type criter: char *
+    :rtype: Handle_TColStd_HSequenceOfHAsciiString
+
+    * Returns a list of names of statics : <mode> = 0 (D) : criter is for family <mode> = 1 : criter is regexp on names, takes final items (ignore wild cards) <mode> = 2 : idem but take only wilded, not final items <mode> = 3 : idem, take all items matching criter idem + 100 : takes only non-updated items idem + 200 : takes only updated items criter empty (D) : returns all names else returns names which match the given criter Remark : families beginning by '$' are not listed by criter '' they are listed only by criter '$' This allows for instance to set new values after having loaded or reloaded a resource, then to update them as required
+
+    :param mode: default value is 0
+    :type mode: Standard_Integer
+    :param criter: default value is 
+    :type criter: char *
+    :rtype: Handle_TColStd_HSequenceOfHAsciiString
+
+    * Returns a list of names of statics : <mode> = 0 (D) : criter is for family <mode> = 1 : criter is regexp on names, takes final items (ignore wild cards) <mode> = 2 : idem but take only wilded, not final items <mode> = 3 : idem, take all items matching criter idem + 100 : takes only non-updated items idem + 200 : takes only updated items criter empty (D) : returns all names else returns names which match the given criter Remark : families beginning by '$' are not listed by criter '' they are listed only by criter '$' This allows for instance to set new values after having loaded or reloaded a resource, then to update them as required
+
+    :param mode: default value is 0
+    :type mode: Standard_Integer
     :param criter: default value is 
     :type criter: char *
     :rtype: Handle_TColStd_HSequenceOfHAsciiString
 
     """
-  return _Interface.Interface_Static_Items(*args)
+  return _Interface.Interface_Static_Items(mode, criter)
 
-def Interface_Static_Standards(*args) -> "void" :
+def Interface_Static_Standards():
   """
     * Initializes all standard static parameters, which can be used by every function. statics specific of a norm or a function must be defined around it
 
     :rtype: void
 
     """
-  return _Interface.Interface_Static_Standards(*args)
+  return _Interface.Interface_Static_Standards()
 
 class Handle_Interface_Static(Handle_Interface_TypedValue):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
@@ -10723,7 +11686,7 @@ Handle_Interface_Static._kill_pointed = new_instancemethod(_Interface.Handle_Int
 Handle_Interface_Static_swigregister = _Interface.Handle_Interface_Static_swigregister
 Handle_Interface_Static_swigregister(Handle_Interface_Static)
 
-def Handle_Interface_Static_DownCast(*args) -> "Handle_Interface_Static const" :
+def Handle_Interface_Static_DownCast(*args):
   return _Interface.Handle_Interface_Static_DownCast(*args)
 Handle_Interface_Static_DownCast = _Interface.Handle_Interface_Static_DownCast
 

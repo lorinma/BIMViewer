@@ -163,21 +163,21 @@ class gce_MakeMirror(object):
 
         """
         _gce.gce_MakeMirror_swiginit(self,_gce.new_gce_MakeMirror(*args))
-    def Value(self, *args) -> "gp_Trsf const" :
+    def Value(self):
         """
         * Returns the constructed transformation.
 
         :rtype: gp_Trsf
 
         """
-        return _gce.gce_MakeMirror_Value(self, *args)
+        return _gce.gce_MakeMirror_Value(self)
 
-    def Operator(self, *args) -> "gp_Trsf const" :
+    def Operator(self):
         """
         :rtype: gp_Trsf
 
         """
-        return _gce.gce_MakeMirror_Operator(self, *args)
+        return _gce.gce_MakeMirror_Operator(self)
 
     def __del__(self):
     	try:
@@ -220,21 +220,21 @@ class gce_MakeMirror2d(object):
 
         """
         _gce.gce_MakeMirror2d_swiginit(self,_gce.new_gce_MakeMirror2d(*args))
-    def Value(self, *args) -> "gp_Trsf2d const" :
+    def Value(self):
         """
         * Returns the constructed transformation.
 
         :rtype: gp_Trsf2d
 
         """
-        return _gce.gce_MakeMirror2d_Value(self, *args)
+        return _gce.gce_MakeMirror2d_Value(self)
 
-    def Operator(self, *args) -> "gp_Trsf2d const" :
+    def Operator(self):
         """
         :rtype: gp_Trsf2d
 
         """
-        return _gce.gce_MakeMirror2d_Operator(self, *args)
+        return _gce.gce_MakeMirror2d_Operator(self)
 
     def __del__(self):
     	try:
@@ -283,21 +283,21 @@ class gce_MakeRotation(object):
 
         """
         _gce.gce_MakeRotation_swiginit(self,_gce.new_gce_MakeRotation(*args))
-    def Value(self, *args) -> "gp_Trsf const" :
+    def Value(self):
         """
         * Returns the constructed transformation.
 
         :rtype: gp_Trsf
 
         """
-        return _gce.gce_MakeRotation_Value(self, *args)
+        return _gce.gce_MakeRotation_Value(self)
 
-    def Operator(self, *args) -> "gp_Trsf const" :
+    def Operator(self):
         """
         :rtype: gp_Trsf
 
         """
-        return _gce.gce_MakeRotation_Operator(self, *args)
+        return _gce.gce_MakeRotation_Operator(self)
 
     def __del__(self):
     	try:
@@ -328,21 +328,21 @@ class gce_MakeRotation2d(object):
 
         """
         _gce.gce_MakeRotation2d_swiginit(self,_gce.new_gce_MakeRotation2d(*args))
-    def Value(self, *args) -> "gp_Trsf2d const" :
+    def Value(self):
         """
         * Returns the constructed transformation.
 
         :rtype: gp_Trsf2d
 
         """
-        return _gce.gce_MakeRotation2d_Value(self, *args)
+        return _gce.gce_MakeRotation2d_Value(self)
 
-    def Operator(self, *args) -> "gp_Trsf2d const" :
+    def Operator(self):
         """
         :rtype: gp_Trsf2d
 
         """
-        return _gce.gce_MakeRotation2d_Operator(self, *args)
+        return _gce.gce_MakeRotation2d_Operator(self)
 
     def __del__(self):
     	try:
@@ -373,21 +373,21 @@ class gce_MakeScale(object):
 
         """
         _gce.gce_MakeScale_swiginit(self,_gce.new_gce_MakeScale(*args))
-    def Value(self, *args) -> "gp_Trsf const" :
+    def Value(self):
         """
         * Returns the constructed transformation.
 
         :rtype: gp_Trsf
 
         """
-        return _gce.gce_MakeScale_Value(self, *args)
+        return _gce.gce_MakeScale_Value(self)
 
-    def Operator(self, *args) -> "gp_Trsf const" :
+    def Operator(self):
         """
         :rtype: gp_Trsf
 
         """
-        return _gce.gce_MakeScale_Operator(self, *args)
+        return _gce.gce_MakeScale_Operator(self)
 
     def __del__(self):
     	try:
@@ -418,21 +418,21 @@ class gce_MakeScale2d(object):
 
         """
         _gce.gce_MakeScale2d_swiginit(self,_gce.new_gce_MakeScale2d(*args))
-    def Value(self, *args) -> "gp_Trsf2d const" :
+    def Value(self):
         """
         * Returns the constructed transformation.
 
         :rtype: gp_Trsf2d
 
         """
-        return _gce.gce_MakeScale2d_Value(self, *args)
+        return _gce.gce_MakeScale2d_Value(self)
 
-    def Operator(self, *args) -> "gp_Trsf2d const" :
+    def Operator(self):
         """
         :rtype: gp_Trsf2d
 
         """
-        return _gce.gce_MakeScale2d_Operator(self, *args)
+        return _gce.gce_MakeScale2d_Operator(self)
 
     def __del__(self):
     	try:
@@ -469,21 +469,21 @@ class gce_MakeTranslation(object):
 
         """
         _gce.gce_MakeTranslation_swiginit(self,_gce.new_gce_MakeTranslation(*args))
-    def Value(self, *args) -> "gp_Trsf const" :
+    def Value(self):
         """
         * Returns the constructed transformation.
 
         :rtype: gp_Trsf
 
         """
-        return _gce.gce_MakeTranslation_Value(self, *args)
+        return _gce.gce_MakeTranslation_Value(self)
 
-    def Operator(self, *args) -> "gp_Trsf const" :
+    def Operator(self):
         """
         :rtype: gp_Trsf
 
         """
-        return _gce.gce_MakeTranslation_Operator(self, *args)
+        return _gce.gce_MakeTranslation_Operator(self)
 
     def __del__(self):
     	try:
@@ -520,21 +520,21 @@ class gce_MakeTranslation2d(object):
 
         """
         _gce.gce_MakeTranslation2d_swiginit(self,_gce.new_gce_MakeTranslation2d(*args))
-    def Value(self, *args) -> "gp_Trsf2d const" :
+    def Value(self):
         """
         * Returns the constructed transformation.
 
         :rtype: gp_Trsf2d
 
         """
-        return _gce.gce_MakeTranslation2d_Value(self, *args)
+        return _gce.gce_MakeTranslation2d_Value(self)
 
-    def Operator(self, *args) -> "gp_Trsf2d const" :
+    def Operator(self):
         """
         :rtype: gp_Trsf2d
 
         """
-        return _gce.gce_MakeTranslation2d_Operator(self, *args)
+        return _gce.gce_MakeTranslation2d_Operator(self)
 
     def __del__(self):
     	try:
@@ -552,27 +552,26 @@ gce_MakeTranslation2d_swigregister(gce_MakeTranslation2d)
 
 class gce_Root(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
+    def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def IsDone(self, *args) -> "Standard_Boolean" :
+    def IsDone(self):
         """
         * Returns true if the construction is successful.
 
         :rtype: bool
 
         """
-        return _gce.gce_Root_IsDone(self, *args)
+        return _gce.gce_Root_IsDone(self)
 
-    def Status(self, *args) -> "gce_ErrorType" :
+    def Status(self):
         """
         * Returns the status of the construction: - gce_Done, if the construction is successful, or - another value of the gce_ErrorType enumeration indicating why the construction failed.
 
         :rtype: gce_ErrorType
 
         """
-        return _gce.gce_Root_Status(self, *args)
+        return _gce.gce_Root_Status(self)
 
-    def __init__(self): 
-        _gce.gce_Root_swiginit(self,_gce.new_gce_Root())
     def __del__(self):
     	try:
     		self.thisown = False
@@ -666,21 +665,21 @@ class gce_MakeCirc(gce_Root):
 
         """
         _gce.gce_MakeCirc_swiginit(self,_gce.new_gce_MakeCirc(*args))
-    def Value(self, *args) -> "gp_Circ const" :
+    def Value(self):
         """
         * Returns the constructed circle. Exceptions StdFail_NotDone if no circle is constructed.
 
         :rtype: gp_Circ
 
         """
-        return _gce.gce_MakeCirc_Value(self, *args)
+        return _gce.gce_MakeCirc_Value(self)
 
-    def Operator(self, *args) -> "gp_Circ const" :
+    def Operator(self):
         """
         :rtype: gp_Circ
 
         """
-        return _gce.gce_MakeCirc_Operator(self, *args)
+        return _gce.gce_MakeCirc_Operator(self)
 
     def __del__(self):
     	try:
@@ -701,6 +700,16 @@ class gce_MakeCirc2d(gce_Root):
     __repr__ = _swig_repr
     def __init__(self, *args): 
         """
+        * The location point of XAxis is the center of the circle. Warnings : It is not forbidden to create a circle with Radius = 0.0 If Sense is true the local coordinate system of the solution is direct and non direct in the other case. The status is 'NegativeRadius' if Radius < 0.0.
+
+        :param XAxis:
+        :type XAxis: gp_Ax2d
+        :param Radius:
+        :type Radius: float
+        :param Sense: default value is Standard_True
+        :type Sense: bool
+        :rtype: None
+
         * The location point of XAxis is the center of the circle. Warnings : It is not forbidden to create a circle with Radius = 0.0 If Sense is true the local coordinate system of the solution is direct and non direct in the other case. The status is 'NegativeRadius' if Radius < 0.0.
 
         :param XAxis:
@@ -755,6 +764,26 @@ class gce_MakeCirc2d(gce_Root):
         :type Sense: bool
         :rtype: None
 
+        * Makes a Circ2d from gp <TheCirc> with its center <Center> and its radius <Radius>. If Sense is true the local coordinate system of the solution is direct and non direct in the other case.
+
+        :param Center:
+        :type Center: gp_Pnt2d
+        :param Radius:
+        :type Radius: float
+        :param Sense: default value is Standard_True
+        :type Sense: bool
+        :rtype: None
+
+        * Makes a Circ2d from gp <TheCirc> with its center <Center> and a point giving the radius. If Sense is true the local coordinate system of the solution is direct and non direct in the other case.
+
+        :param Center:
+        :type Center: gp_Pnt2d
+        :param Point:
+        :type Point: gp_Pnt2d
+        :param Sense: default value is Standard_True
+        :type Sense: bool
+        :rtype: None
+
         * Makes a Circ2d from gp <TheCirc> with its center <Center> and a point giving the radius. If Sense is true the local coordinate system of the solution is direct and non direct in the other case.
 
         :param Center:
@@ -767,21 +796,21 @@ class gce_MakeCirc2d(gce_Root):
 
         """
         _gce.gce_MakeCirc2d_swiginit(self,_gce.new_gce_MakeCirc2d(*args))
-    def Value(self, *args) -> "gp_Circ2d const" :
+    def Value(self):
         """
         * Returns the constructed circle. Exceptions StdFail_NotDone if no circle is constructed.
 
         :rtype: gp_Circ2d
 
         """
-        return _gce.gce_MakeCirc2d_Value(self, *args)
+        return _gce.gce_MakeCirc2d_Value(self)
 
-    def Operator(self, *args) -> "gp_Circ2d const" :
+    def Operator(self):
         """
         :rtype: gp_Circ2d
 
         """
-        return _gce.gce_MakeCirc2d_Operator(self, *args)
+        return _gce.gce_MakeCirc2d_Operator(self)
 
     def __del__(self):
     	try:
@@ -874,21 +903,21 @@ class gce_MakeCone(gce_Root):
 
         """
         _gce.gce_MakeCone_swiginit(self,_gce.new_gce_MakeCone(*args))
-    def Value(self, *args) -> "gp_Cone const" :
+    def Value(self):
         """
         * Returns the constructed cone. Exceptions StdFail_NotDone if no cone is constructed.
 
         :rtype: gp_Cone
 
         """
-        return _gce.gce_MakeCone_Value(self, *args)
+        return _gce.gce_MakeCone_Value(self)
 
-    def Operator(self, *args) -> "gp_Cone const" :
+    def Operator(self):
         """
         :rtype: gp_Cone
 
         """
-        return _gce.gce_MakeCone_Operator(self, *args)
+        return _gce.gce_MakeCone_Operator(self)
 
     def __del__(self):
     	try:
@@ -959,21 +988,21 @@ class gce_MakeCylinder(gce_Root):
 
         """
         _gce.gce_MakeCylinder_swiginit(self,_gce.new_gce_MakeCylinder(*args))
-    def Value(self, *args) -> "gp_Cylinder const" :
+    def Value(self):
         """
         * Returns the constructed cylinder. Exceptions StdFail_NotDone if no cylinder is constructed.
 
         :rtype: gp_Cylinder
 
         """
-        return _gce.gce_MakeCylinder_Value(self, *args)
+        return _gce.gce_MakeCylinder_Value(self)
 
-    def Operator(self, *args) -> "gp_Cylinder const" :
+    def Operator(self):
         """
         :rtype: gp_Cylinder
 
         """
-        return _gce.gce_MakeCylinder_Operator(self, *args)
+        return _gce.gce_MakeCylinder_Operator(self)
 
     def __del__(self):
     	try:
@@ -1026,21 +1055,21 @@ class gce_MakeDir(gce_Root):
 
         """
         _gce.gce_MakeDir_swiginit(self,_gce.new_gce_MakeDir(*args))
-    def Value(self, *args) -> "gp_Dir const" :
+    def Value(self):
         """
         * Returns the constructed unit vector. Exceptions StdFail_NotDone if no unit vector is constructed.
 
         :rtype: gp_Dir
 
         """
-        return _gce.gce_MakeDir_Value(self, *args)
+        return _gce.gce_MakeDir_Value(self)
 
-    def Operator(self, *args) -> "gp_Dir const" :
+    def Operator(self):
         """
         :rtype: gp_Dir
 
         """
-        return _gce.gce_MakeDir_Operator(self, *args)
+        return _gce.gce_MakeDir_Operator(self)
 
     def __del__(self):
     	try:
@@ -1091,21 +1120,21 @@ class gce_MakeDir2d(gce_Root):
 
         """
         _gce.gce_MakeDir2d_swiginit(self,_gce.new_gce_MakeDir2d(*args))
-    def Value(self, *args) -> "gp_Dir2d const" :
+    def Value(self):
         """
         * Returns the constructed unit vector. Exceptions StdFail_NotDone if no unit vector is constructed.
 
         :rtype: gp_Dir2d
 
         """
-        return _gce.gce_MakeDir2d_Value(self, *args)
+        return _gce.gce_MakeDir2d_Value(self)
 
-    def Operator(self, *args) -> "gp_Dir2d const" :
+    def Operator(self):
         """
         :rtype: gp_Dir2d
 
         """
-        return _gce.gce_MakeDir2d_Operator(self, *args)
+        return _gce.gce_MakeDir2d_Operator(self)
 
     def __del__(self):
     	try:
@@ -1148,21 +1177,21 @@ class gce_MakeElips(gce_Root):
 
         """
         _gce.gce_MakeElips_swiginit(self,_gce.new_gce_MakeElips(*args))
-    def Value(self, *args) -> "gp_Elips const" :
+    def Value(self):
         """
         * Returns the constructed ellipse. Exceptions StdFail_NotDone if no ellipse is constructed.
 
         :rtype: gp_Elips
 
         """
-        return _gce.gce_MakeElips_Value(self, *args)
+        return _gce.gce_MakeElips_Value(self)
 
-    def Operator(self, *args) -> "gp_Elips const" :
+    def Operator(self):
         """
         :rtype: gp_Elips
 
         """
-        return _gce.gce_MakeElips_Operator(self, *args)
+        return _gce.gce_MakeElips_Operator(self)
 
     def __del__(self):
     	try:
@@ -1183,6 +1212,18 @@ class gce_MakeElips2d(gce_Root):
     __repr__ = _swig_repr
     def __init__(self, *args): 
         """
+        * Creates an ellipse with the major axis, the major and the minor radius. The location of the MajorAxis is the center of the ellipse. The sense of parametrization is given by Sense. It is possible to create an ellipse with MajorRadius = MinorRadius. the status is 'InvertRadius' if MajorRadius < MinorRadius or 'NegativeRadius' if MinorRadius < 0.0
+
+        :param MajorAxis:
+        :type MajorAxis: gp_Ax2d
+        :param MajorRadius:
+        :type MajorRadius: float
+        :param MinorRadius:
+        :type MinorRadius: float
+        :param Sense: default value is Standard_True
+        :type Sense: bool
+        :rtype: None
+
         * Creates an ellipse with the major axis, the major and the minor radius. The location of the MajorAxis is the center of the ellipse. The sense of parametrization is given by Sense. It is possible to create an ellipse with MajorRadius = MinorRadius. the status is 'InvertRadius' if MajorRadius < MinorRadius or 'NegativeRadius' if MinorRadius < 0.0
 
         :param MajorAxis:
@@ -1217,21 +1258,21 @@ class gce_MakeElips2d(gce_Root):
 
         """
         _gce.gce_MakeElips2d_swiginit(self,_gce.new_gce_MakeElips2d(*args))
-    def Value(self, *args) -> "gp_Elips2d const" :
+    def Value(self):
         """
         * Returns the constructed ellipse. Exceptions StdFail_NotDone if no ellipse is constructed.
 
         :rtype: gp_Elips2d
 
         """
-        return _gce.gce_MakeElips2d_Value(self, *args)
+        return _gce.gce_MakeElips2d_Value(self)
 
-    def Operator(self, *args) -> "gp_Elips2d const" :
+    def Operator(self):
         """
         :rtype: gp_Elips2d
 
         """
-        return _gce.gce_MakeElips2d_Operator(self, *args)
+        return _gce.gce_MakeElips2d_Operator(self)
 
     def __del__(self):
     	try:
@@ -1274,21 +1315,21 @@ class gce_MakeHypr(gce_Root):
 
         """
         _gce.gce_MakeHypr_swiginit(self,_gce.new_gce_MakeHypr(*args))
-    def Value(self, *args) -> "gp_Hypr const" :
+    def Value(self):
         """
         * Returns the constructed hyperbola. Exceptions StdFail_NotDone if no hyperbola is constructed.
 
         :rtype: gp_Hypr
 
         """
-        return _gce.gce_MakeHypr_Value(self, *args)
+        return _gce.gce_MakeHypr_Value(self)
 
-    def Operator(self, *args) -> "gp_Hypr const" :
+    def Operator(self):
         """
         :rtype: gp_Hypr
 
         """
-        return _gce.gce_MakeHypr_Operator(self, *args)
+        return _gce.gce_MakeHypr_Operator(self)
 
     def __del__(self):
     	try:
@@ -1343,21 +1384,21 @@ class gce_MakeHypr2d(gce_Root):
 
         """
         _gce.gce_MakeHypr2d_swiginit(self,_gce.new_gce_MakeHypr2d(*args))
-    def Value(self, *args) -> "gp_Hypr2d const" :
+    def Value(self):
         """
         * Returns the constructed hyperbola. Exceptions StdFail_NotDone if no hyperbola is constructed.
 
         :rtype: gp_Hypr2d
 
         """
-        return _gce.gce_MakeHypr2d_Value(self, *args)
+        return _gce.gce_MakeHypr2d_Value(self)
 
-    def Operator(self, *args) -> "gp_Hypr2d const" :
+    def Operator(self):
         """
         :rtype: gp_Hypr2d
 
         """
-        return _gce.gce_MakeHypr2d_Operator(self, *args)
+        return _gce.gce_MakeHypr2d_Operator(self)
 
     def __del__(self):
     	try:
@@ -1410,21 +1451,21 @@ class gce_MakeLin(gce_Root):
 
         """
         _gce.gce_MakeLin_swiginit(self,_gce.new_gce_MakeLin(*args))
-    def Value(self, *args) -> "gp_Lin const" :
+    def Value(self):
         """
         * Returns the constructed line. Exceptions StdFail_NotDone is raised if no line is constructed.
 
         :rtype: gp_Lin
 
         """
-        return _gce.gce_MakeLin_Value(self, *args)
+        return _gce.gce_MakeLin_Value(self)
 
-    def Operator(self, *args) -> "gp_Lin const" :
+    def Operator(self):
         """
         :rtype: gp_Lin
 
         """
-        return _gce.gce_MakeLin_Operator(self, *args)
+        return _gce.gce_MakeLin_Operator(self)
 
     def __del__(self):
     	try:
@@ -1495,21 +1536,21 @@ class gce_MakeLin2d(gce_Root):
 
         """
         _gce.gce_MakeLin2d_swiginit(self,_gce.new_gce_MakeLin2d(*args))
-    def Value(self, *args) -> "gp_Lin2d" :
+    def Value(self):
         """
         * Returns the constructed line. Exceptions StdFail_NotDone if no line is constructed.
 
         :rtype: gp_Lin2d
 
         """
-        return _gce.gce_MakeLin2d_Value(self, *args)
+        return _gce.gce_MakeLin2d_Value(self)
 
-    def Operator(self, *args) -> "gp_Lin2d" :
+    def Operator(self):
         """
         :rtype: gp_Lin2d
 
         """
-        return _gce.gce_MakeLin2d_Operator(self, *args)
+        return _gce.gce_MakeLin2d_Operator(self)
 
     def __del__(self):
     	try:
@@ -1548,21 +1589,21 @@ class gce_MakeParab(gce_Root):
 
         """
         _gce.gce_MakeParab_swiginit(self,_gce.new_gce_MakeParab(*args))
-    def Value(self, *args) -> "gp_Parab const" :
+    def Value(self):
         """
         * Returns the constructed parabola. Exceptions StdFail_NotDone if no parabola is constructed.
 
         :rtype: gp_Parab
 
         """
-        return _gce.gce_MakeParab_Value(self, *args)
+        return _gce.gce_MakeParab_Value(self)
 
-    def Operator(self, *args) -> "gp_Parab const" :
+    def Operator(self):
         """
         :rtype: gp_Parab
 
         """
-        return _gce.gce_MakeParab_Operator(self, *args)
+        return _gce.gce_MakeParab_Operator(self)
 
     def __del__(self):
     	try:
@@ -1593,12 +1634,32 @@ class gce_MakeParab2d(gce_Root):
         :type Sense: bool
         :rtype: None
 
+        * Creates a parabola with its axis of symmetry ('MirrorAxis') and its focal length. Warnings : It is possible to have Focal = 0. The status is 'NullFocalLength' Raised if Focal < 0.0
+
+        :param MirrorAxis:
+        :type MirrorAxis: gp_Ax2d
+        :param Focal:
+        :type Focal: float
+        :param Sense: default value is Standard_True
+        :type Sense: bool
+        :rtype: None
+
         * Creates a parabola with its local coordinate system <A> and its focal length. Warnings : It is possible to have Focal = 0. The status is 'NullFocalLength' Raised if Focal < 0.0
 
         :param A:
         :type A: gp_Ax22d
         :param Focal:
         :type Focal: float
+        :rtype: None
+
+        * Creates a parabola with the directrix and the focus point. The sense of parametrization is given by Sense.
+
+        :param D:
+        :type D: gp_Ax2d
+        :param F:
+        :type F: gp_Pnt2d
+        :param Sense: default value is Standard_True
+        :type Sense: bool
         :rtype: None
 
         * Creates a parabola with the directrix and the focus point. The sense of parametrization is given by Sense.
@@ -1629,23 +1690,33 @@ class gce_MakeParab2d(gce_Root):
         :type Sense: bool
         :rtype: None
 
+        * Make an Parab2d with S1 as the Focal point and Center as the apex of the parabola //!	Warning The MakeParab2d class does not prevent the construction of a parabola with a null focal distance. If an error occurs (that is, when IsDone returns false), the Status function returns: - gce_NullFocusLength if Focal is less than 0.0, or - gce_NullAxis if S1 and Center are coincident.
+
+        :param S1:
+        :type S1: gp_Pnt2d
+        :param Center:
+        :type Center: gp_Pnt2d
+        :param Sense: default value is Standard_True
+        :type Sense: bool
+        :rtype: None
+
         """
         _gce.gce_MakeParab2d_swiginit(self,_gce.new_gce_MakeParab2d(*args))
-    def Value(self, *args) -> "gp_Parab2d const" :
+    def Value(self):
         """
         * Returns the constructed parabola. Exceptions StdFail_NotDone if no parabola is constructed.
 
         :rtype: gp_Parab2d
 
         """
-        return _gce.gce_MakeParab2d_Value(self, *args)
+        return _gce.gce_MakeParab2d_Value(self)
 
-    def Operator(self, *args) -> "gp_Parab2d const" :
+    def Operator(self):
         """
         :rtype: gp_Parab2d
 
         """
-        return _gce.gce_MakeParab2d_Operator(self, *args)
+        return _gce.gce_MakeParab2d_Operator(self)
 
     def __del__(self):
     	try:
@@ -1734,21 +1805,21 @@ class gce_MakePln(gce_Root):
 
         """
         _gce.gce_MakePln_swiginit(self,_gce.new_gce_MakePln(*args))
-    def Value(self, *args) -> "gp_Pln const" :
+    def Value(self):
         """
         * Returns the constructed plane. Exceptions StdFail_NotDone if no plane is constructed.
 
         :rtype: gp_Pln
 
         """
-        return _gce.gce_MakePln_Value(self, *args)
+        return _gce.gce_MakePln_Value(self)
 
-    def Operator(self, *args) -> "gp_Pln const" :
+    def Operator(self):
         """
         :rtype: gp_Pln
 
         """
-        return _gce.gce_MakePln_Operator(self, *args)
+        return _gce.gce_MakePln_Operator(self)
 
     def __del__(self):
     	try:

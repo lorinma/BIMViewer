@@ -148,9 +148,20 @@ BRepAlgo_OK = _BRepAlgo.BRepAlgo_OK
 BRepAlgo_NOK = _BRepAlgo.BRepAlgo_NOK
 class brepalgo(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
+    def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def ConcatenateWire(*args) -> "TopoDS_Wire" :
+    def ConcatenateWire(*args):
         """
+        * this method makes a wire whose edges are C1 from a Wire whose edges could be G1. It removes a vertex between G1 edges. Option can be G1 or C1.
+
+        :param Wire:
+        :type Wire: TopoDS_Wire &
+        :param Option:
+        :type Option: GeomAbs_Shape
+        :param AngularTolerance: default value is 1.0e-4
+        :type AngularTolerance: float
+        :rtype: TopoDS_Wire
+
         * this method makes a wire whose edges are C1 from a Wire whose edges could be G1. It removes a vertex between G1 edges. Option can be G1 or C1.
 
         :param Wire:
@@ -165,7 +176,7 @@ class brepalgo(object):
         return _BRepAlgo.brepalgo_ConcatenateWire(*args)
 
     ConcatenateWire = staticmethod(ConcatenateWire)
-    def ConcatenateWireC0(*args) -> "TopoDS_Edge" :
+    def ConcatenateWireC0(*args):
         """
         * this method makes an edge from a wire. Junction points between edges of wire may be sharp, resulting curve of the resulting edge may be C0.
 
@@ -177,7 +188,7 @@ class brepalgo(object):
         return _BRepAlgo.brepalgo_ConcatenateWireC0(*args)
 
     ConcatenateWireC0 = staticmethod(ConcatenateWireC0)
-    def IsValid(*args) -> "Standard_Boolean" :
+    def IsValid(*args):
         """
         * Checks if the shape is 'correct'. If not, returns <Standard_False>, else returns <Standard_True>.
 
@@ -197,11 +208,35 @@ class brepalgo(object):
         :type GeomCtrl: bool
         :rtype: bool
 
+        * Checks if the Generated and Modified Faces from the shapes <arguments> in the shape <result> are 'correct'. The args may be empty, then all faces will be checked. If <Closed> is True, only closed shape are valid. If <GeomCtrl> is False the geometry of new  vertices and edges are not verified and the auto-intersection of new wires are not searched.
+
+        :param theArgs:
+        :type theArgs: TopTools_ListOfShape &
+        :param theResult:
+        :type theResult: TopoDS_Shape &
+        :param closedSolid: default value is Standard_False
+        :type closedSolid: bool
+        :param GeomCtrl: default value is Standard_True
+        :type GeomCtrl: bool
+        :rtype: bool
+
+        * Checks if the Generated and Modified Faces from the shapes <arguments> in the shape <result> are 'correct'. The args may be empty, then all faces will be checked. If <Closed> is True, only closed shape are valid. If <GeomCtrl> is False the geometry of new  vertices and edges are not verified and the auto-intersection of new wires are not searched.
+
+        :param theArgs:
+        :type theArgs: TopTools_ListOfShape &
+        :param theResult:
+        :type theResult: TopoDS_Shape &
+        :param closedSolid: default value is Standard_False
+        :type closedSolid: bool
+        :param GeomCtrl: default value is Standard_True
+        :type GeomCtrl: bool
+        :rtype: bool
+
         """
         return _BRepAlgo.brepalgo_IsValid(*args)
 
     IsValid = staticmethod(IsValid)
-    def IsTopologicallyValid(*args) -> "Standard_Boolean" :
+    def IsTopologicallyValid(*args):
         """
         * Checks if the shape is 'correct'. If not, returns <Standard_False>, else returns <Standard_True>. This method differs from the previous one in the fact that no geometric contols (intersection of wires, pcurve validity) are performed.
 
@@ -213,8 +248,6 @@ class brepalgo(object):
         return _BRepAlgo.brepalgo_IsTopologicallyValid(*args)
 
     IsTopologicallyValid = staticmethod(IsTopologicallyValid)
-    def __init__(self): 
-        _BRepAlgo.brepalgo_swiginit(self,_BRepAlgo.new_brepalgo())
     def __del__(self):
     	try:
     		self.thisown = False
@@ -227,8 +260,18 @@ brepalgo._kill_pointed = new_instancemethod(_BRepAlgo.brepalgo__kill_pointed,Non
 brepalgo_swigregister = _BRepAlgo.brepalgo_swigregister
 brepalgo_swigregister(brepalgo)
 
-def brepalgo_ConcatenateWire(*args) -> "TopoDS_Wire" :
+def brepalgo_ConcatenateWire(*args):
   """
+    * this method makes a wire whose edges are C1 from a Wire whose edges could be G1. It removes a vertex between G1 edges. Option can be G1 or C1.
+
+    :param Wire:
+    :type Wire: TopoDS_Wire &
+    :param Option:
+    :type Option: GeomAbs_Shape
+    :param AngularTolerance: default value is 1.0e-4
+    :type AngularTolerance: float
+    :rtype: TopoDS_Wire
+
     * this method makes a wire whose edges are C1 from a Wire whose edges could be G1. It removes a vertex between G1 edges. Option can be G1 or C1.
 
     :param Wire:
@@ -242,7 +285,7 @@ def brepalgo_ConcatenateWire(*args) -> "TopoDS_Wire" :
     """
   return _BRepAlgo.brepalgo_ConcatenateWire(*args)
 
-def brepalgo_ConcatenateWireC0(*args) -> "TopoDS_Edge" :
+def brepalgo_ConcatenateWireC0(*args):
   """
     * this method makes an edge from a wire. Junction points between edges of wire may be sharp, resulting curve of the resulting edge may be C0.
 
@@ -253,7 +296,7 @@ def brepalgo_ConcatenateWireC0(*args) -> "TopoDS_Edge" :
     """
   return _BRepAlgo.brepalgo_ConcatenateWireC0(*args)
 
-def brepalgo_IsValid(*args) -> "Standard_Boolean" :
+def brepalgo_IsValid(*args):
   """
     * Checks if the shape is 'correct'. If not, returns <Standard_False>, else returns <Standard_True>.
 
@@ -273,10 +316,34 @@ def brepalgo_IsValid(*args) -> "Standard_Boolean" :
     :type GeomCtrl: bool
     :rtype: bool
 
+    * Checks if the Generated and Modified Faces from the shapes <arguments> in the shape <result> are 'correct'. The args may be empty, then all faces will be checked. If <Closed> is True, only closed shape are valid. If <GeomCtrl> is False the geometry of new  vertices and edges are not verified and the auto-intersection of new wires are not searched.
+
+    :param theArgs:
+    :type theArgs: TopTools_ListOfShape &
+    :param theResult:
+    :type theResult: TopoDS_Shape &
+    :param closedSolid: default value is Standard_False
+    :type closedSolid: bool
+    :param GeomCtrl: default value is Standard_True
+    :type GeomCtrl: bool
+    :rtype: bool
+
+    * Checks if the Generated and Modified Faces from the shapes <arguments> in the shape <result> are 'correct'. The args may be empty, then all faces will be checked. If <Closed> is True, only closed shape are valid. If <GeomCtrl> is False the geometry of new  vertices and edges are not verified and the auto-intersection of new wires are not searched.
+
+    :param theArgs:
+    :type theArgs: TopTools_ListOfShape &
+    :param theResult:
+    :type theResult: TopoDS_Shape &
+    :param closedSolid: default value is Standard_False
+    :type closedSolid: bool
+    :param GeomCtrl: default value is Standard_True
+    :type GeomCtrl: bool
+    :rtype: bool
+
     """
   return _BRepAlgo.brepalgo_IsValid(*args)
 
-def brepalgo_IsTopologicallyValid(*args) -> "Standard_Boolean" :
+def brepalgo_IsTopologicallyValid(*args):
   """
     * Checks if the shape is 'correct'. If not, returns <Standard_False>, else returns <Standard_True>. This method differs from the previous one in the fact that no geometric contols (intersection of wires, pcurve validity) are performed.
 
@@ -290,22 +357,22 @@ def brepalgo_IsTopologicallyValid(*args) -> "Standard_Boolean" :
 class BRepAlgo_AsDes(OCC.MMgt.MMgt_TShared):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         * Creates an empty AsDes.
 
         :rtype: None
 
         """
-        _BRepAlgo.BRepAlgo_AsDes_swiginit(self,_BRepAlgo.new_BRepAlgo_AsDes(*args))
-    def Clear(self, *args) -> "void" :
+        _BRepAlgo.BRepAlgo_AsDes_swiginit(self,_BRepAlgo.new_BRepAlgo_AsDes())
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _BRepAlgo.BRepAlgo_AsDes_Clear(self, *args)
+        return _BRepAlgo.BRepAlgo_AsDes_Clear(self)
 
-    def Add(self, *args) -> "void" :
+    def Add(self, *args):
         """
         * Stores <SS> as a futur subshape of <S>.
 
@@ -326,7 +393,7 @@ class BRepAlgo_AsDes(OCC.MMgt.MMgt_TShared):
         """
         return _BRepAlgo.BRepAlgo_AsDes_Add(self, *args)
 
-    def HasAscendant(self, *args) -> "Standard_Boolean" :
+    def HasAscendant(self, *args):
         """
         :param S:
         :type S: TopoDS_Shape &
@@ -335,7 +402,7 @@ class BRepAlgo_AsDes(OCC.MMgt.MMgt_TShared):
         """
         return _BRepAlgo.BRepAlgo_AsDes_HasAscendant(self, *args)
 
-    def HasDescendant(self, *args) -> "Standard_Boolean" :
+    def HasDescendant(self, *args):
         """
         :param S:
         :type S: TopoDS_Shape &
@@ -344,7 +411,7 @@ class BRepAlgo_AsDes(OCC.MMgt.MMgt_TShared):
         """
         return _BRepAlgo.BRepAlgo_AsDes_HasDescendant(self, *args)
 
-    def Ascendant(self, *args) -> "TopTools_ListOfShape const &" :
+    def Ascendant(self, *args):
         """
         * Returns the Shape containing <S>.
 
@@ -355,7 +422,7 @@ class BRepAlgo_AsDes(OCC.MMgt.MMgt_TShared):
         """
         return _BRepAlgo.BRepAlgo_AsDes_Ascendant(self, *args)
 
-    def Descendant(self, *args) -> "TopTools_ListOfShape const &" :
+    def Descendant(self, *args):
         """
         * Returns futur subhapes of <S>.
 
@@ -366,7 +433,7 @@ class BRepAlgo_AsDes(OCC.MMgt.MMgt_TShared):
         """
         return _BRepAlgo.BRepAlgo_AsDes_Descendant(self, *args)
 
-    def ChangeDescendant(self, *args) -> "TopTools_ListOfShape &" :
+    def ChangeDescendant(self, *args):
         """
         * Returns futur subhapes of <S>.
 
@@ -377,7 +444,7 @@ class BRepAlgo_AsDes(OCC.MMgt.MMgt_TShared):
         """
         return _BRepAlgo.BRepAlgo_AsDes_ChangeDescendant(self, *args)
 
-    def Replace(self, *args) -> "void" :
+    def Replace(self, *args):
         """
         * Replace <OldS> by <NewS>. <OldS> disapear from <self>.
 
@@ -390,7 +457,7 @@ class BRepAlgo_AsDes(OCC.MMgt.MMgt_TShared):
         """
         return _BRepAlgo.BRepAlgo_AsDes_Replace(self, *args)
 
-    def Remove(self, *args) -> "void" :
+    def Remove(self, *args):
         """
         * Remove <S> from me.
 
@@ -401,7 +468,7 @@ class BRepAlgo_AsDes(OCC.MMgt.MMgt_TShared):
         """
         return _BRepAlgo.BRepAlgo_AsDes_Remove(self, *args)
 
-    def HasCommonDescendant(self, *args) -> "Standard_Boolean" :
+    def HasCommonDescendant(self, *args):
         """
         * Returns True if (S1> and <S2> has common Descendants. Stores in <LC> the Commons Descendants.
 
@@ -416,11 +483,11 @@ class BRepAlgo_AsDes(OCC.MMgt.MMgt_TShared):
         """
         return _BRepAlgo.BRepAlgo_AsDes_HasCommonDescendant(self, *args)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(BRepAlgo_AsDes self)"""
         return _BRepAlgo.BRepAlgo_AsDes__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_BRepAlgo_AsDes" :
+    def GetHandle(self):
         """GetHandle(BRepAlgo_AsDes self) -> Handle_BRepAlgo_AsDes"""
         return _BRepAlgo.BRepAlgo_AsDes_GetHandle(self)
 
@@ -468,7 +535,7 @@ Handle_BRepAlgo_AsDes._kill_pointed = new_instancemethod(_BRepAlgo.Handle_BRepAl
 Handle_BRepAlgo_AsDes_swigregister = _BRepAlgo.Handle_BRepAlgo_AsDes_swigregister
 Handle_BRepAlgo_AsDes_swigregister(Handle_BRepAlgo_AsDes)
 
-def Handle_BRepAlgo_AsDes_DownCast(*args) -> "Handle_BRepAlgo_AsDes const" :
+def Handle_BRepAlgo_AsDes_DownCast(*args):
   return _BRepAlgo.Handle_BRepAlgo_AsDes_DownCast(*args)
 Handle_BRepAlgo_AsDes_DownCast = _BRepAlgo.Handle_BRepAlgo_AsDes_DownCast
 
@@ -476,14 +543,14 @@ class BRepAlgo_BooleanOperation(OCC.BRepBuilderAPI.BRepBuilderAPI_MakeShape):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def PerformDS(self, *args) -> "void" :
+    def PerformDS(self):
         """
         :rtype: None
 
         """
-        return _BRepAlgo.BRepAlgo_BooleanOperation_PerformDS(self, *args)
+        return _BRepAlgo.BRepAlgo_BooleanOperation_PerformDS(self)
 
-    def Perform(self, *args) -> "void" :
+    def Perform(self, *args):
         """
         :param St1:
         :type St1: TopAbs_State
@@ -494,30 +561,30 @@ class BRepAlgo_BooleanOperation(OCC.BRepBuilderAPI.BRepBuilderAPI_MakeShape):
         """
         return _BRepAlgo.BRepAlgo_BooleanOperation_Perform(self, *args)
 
-    def Builder(self, *args) -> "Handle_TopOpeBRepBuild_HBuilder" :
+    def Builder(self):
         """
         :rtype: Handle_TopOpeBRepBuild_HBuilder
 
         """
-        return _BRepAlgo.BRepAlgo_BooleanOperation_Builder(self, *args)
+        return _BRepAlgo.BRepAlgo_BooleanOperation_Builder(self)
 
-    def Shape1(self, *args) -> "TopoDS_Shape const" :
+    def Shape1(self):
         """
         * Returns the first shape involved in this Boolean operation.
 
         :rtype: TopoDS_Shape
 
         """
-        return _BRepAlgo.BRepAlgo_BooleanOperation_Shape1(self, *args)
+        return _BRepAlgo.BRepAlgo_BooleanOperation_Shape1(self)
 
-    def Shape2(self, *args) -> "TopoDS_Shape const" :
+    def Shape2(self):
         """
         * Returns the second shape involved in this Boolean operation.
 
         :rtype: TopoDS_Shape
 
         """
-        return _BRepAlgo.BRepAlgo_BooleanOperation_Shape2(self, *args)
+        return _BRepAlgo.BRepAlgo_BooleanOperation_Shape2(self)
 
     def __del__(self):
     	try:
@@ -539,13 +606,13 @@ BRepAlgo_BooleanOperation_swigregister(BRepAlgo_BooleanOperation)
 class BRepAlgo_BooleanOperations(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _BRepAlgo.BRepAlgo_BooleanOperations_swiginit(self,_BRepAlgo.new_BRepAlgo_BooleanOperations(*args))
-    def Shapes2d(self, *args) -> "void" :
+        _BRepAlgo.BRepAlgo_BooleanOperations_swiginit(self,_BRepAlgo.new_BRepAlgo_BooleanOperations())
+    def Shapes2d(self, *args):
         """
         * S1 is a Shell with ALL faces supported by the SAME S2 is an Edge INCLUDED in that surface with pcurve. this avoids a time-consuming 3D operation, compared to Shapes.
 
@@ -558,7 +625,7 @@ class BRepAlgo_BooleanOperations(object):
         """
         return _BRepAlgo.BRepAlgo_BooleanOperations_Shapes2d(self, *args)
 
-    def Shapes(self, *args) -> "void" :
+    def Shapes(self, *args):
         """
         * Defines the arguments.
 
@@ -571,12 +638,12 @@ class BRepAlgo_BooleanOperations(object):
         """
         return _BRepAlgo.BRepAlgo_BooleanOperations_Shapes(self, *args)
 
-    def SetApproxParameters(self, *args) -> "void" :
+    def SetApproxParameters(self, *args):
         """
         * Sets different parameters for the curve approximations : NbPntMax : Maximum number of points to be approximated at  the same time in one curve. Tol3D, Tol2D : Tolerances to be reached by the approximation. RelativeTol : The given tolerances are relative.
 
         :param NbPntMax:
-        :type NbPntMax: int
+        :type NbPntMax: Standard_Integer
         :param Tol3D:
         :type Tol3D: float
         :param Tol2D:
@@ -588,7 +655,7 @@ class BRepAlgo_BooleanOperations(object):
         """
         return _BRepAlgo.BRepAlgo_BooleanOperations_SetApproxParameters(self, *args)
 
-    def Define(self, *args) -> "void" :
+    def Define(self, *args):
         """
         :param S1:
         :type S1: TopoDS_Shape &
@@ -601,52 +668,52 @@ class BRepAlgo_BooleanOperations(object):
         """
         return _BRepAlgo.BRepAlgo_BooleanOperations_Define(self, *args)
 
-    def Common(self, *args) -> "TopoDS_Shape const" :
+    def Common(self):
         """
         * returns the common part of the shapes.
 
         :rtype: TopoDS_Shape
 
         """
-        return _BRepAlgo.BRepAlgo_BooleanOperations_Common(self, *args)
+        return _BRepAlgo.BRepAlgo_BooleanOperations_Common(self)
 
-    def Fus(self, *args) -> "TopoDS_Shape const" :
+    def Fus(self):
         """
         * returns the fuse part of the shapes.
 
         :rtype: TopoDS_Shape
 
         """
-        return _BRepAlgo.BRepAlgo_BooleanOperations_Fus(self, *args)
+        return _BRepAlgo.BRepAlgo_BooleanOperations_Fus(self)
 
-    def Cut(self, *args) -> "TopoDS_Shape const" :
+    def Cut(self):
         """
         * returns the cut part of the shapes.
 
         :rtype: TopoDS_Shape
 
         """
-        return _BRepAlgo.BRepAlgo_BooleanOperations_Cut(self, *args)
+        return _BRepAlgo.BRepAlgo_BooleanOperations_Cut(self)
 
-    def Section(self, *args) -> "TopoDS_Shape const" :
+    def Section(self):
         """
         * returns the intersection of the shapes.
 
         :rtype: TopoDS_Shape
 
         """
-        return _BRepAlgo.BRepAlgo_BooleanOperations_Section(self, *args)
+        return _BRepAlgo.BRepAlgo_BooleanOperations_Section(self)
 
-    def Shape(self, *args) -> "TopoDS_Shape const" :
+    def Shape(self):
         """
         * returns the result of the boolean operation.
 
         :rtype: TopoDS_Shape
 
         """
-        return _BRepAlgo.BRepAlgo_BooleanOperations_Shape(self, *args)
+        return _BRepAlgo.BRepAlgo_BooleanOperations_Shape(self)
 
-    def ShapeFrom(self, *args) -> "TopoDS_Shape const" :
+    def ShapeFrom(self, *args):
         """
         * Returns the shape(s) resulting of the boolean operation issued from the shape <S>.
 
@@ -657,7 +724,7 @@ class BRepAlgo_BooleanOperations(object):
         """
         return _BRepAlgo.BRepAlgo_BooleanOperations_ShapeFrom(self, *args)
 
-    def Modified(self, *args) -> "TopTools_ListOfShape const &" :
+    def Modified(self, *args):
         """
         * Returns the list of the descendant shapes of the shape <S>.
 
@@ -668,7 +735,7 @@ class BRepAlgo_BooleanOperations(object):
         """
         return _BRepAlgo.BRepAlgo_BooleanOperations_Modified(self, *args)
 
-    def IsDeleted(self, *args) -> "Standard_Boolean" :
+    def IsDeleted(self, *args):
         """
         * Returns the fact that the shape <S> has been deleted or not by the boolean operation.
 
@@ -679,42 +746,42 @@ class BRepAlgo_BooleanOperations(object):
         """
         return _BRepAlgo.BRepAlgo_BooleanOperations_IsDeleted(self, *args)
 
-    def DataStructure(self, *args) -> "Handle_TopOpeBRepDS_HDataStructure const &" :
+    def DataStructure(self):
         """
         :rtype: Handle_TopOpeBRepDS_HDataStructure
 
         """
-        return _BRepAlgo.BRepAlgo_BooleanOperations_DataStructure(self, *args)
+        return _BRepAlgo.BRepAlgo_BooleanOperations_DataStructure(self)
 
-    def ChangeDataStructure(self, *args) -> "Handle_TopOpeBRepDS_HDataStructure &" :
+    def ChangeDataStructure(self):
         """
         :rtype: Handle_TopOpeBRepDS_HDataStructure
 
         """
-        return _BRepAlgo.BRepAlgo_BooleanOperations_ChangeDataStructure(self, *args)
+        return _BRepAlgo.BRepAlgo_BooleanOperations_ChangeDataStructure(self)
 
-    def Builder(self, *args) -> "Handle_TopOpeBRepBuild_HBuilder const &" :
+    def Builder(self):
         """
         :rtype: Handle_TopOpeBRepBuild_HBuilder
 
         """
-        return _BRepAlgo.BRepAlgo_BooleanOperations_Builder(self, *args)
+        return _BRepAlgo.BRepAlgo_BooleanOperations_Builder(self)
 
-    def ChangeBuilder(self, *args) -> "Handle_TopOpeBRepBuild_HBuilder &" :
+    def ChangeBuilder(self):
         """
         :rtype: Handle_TopOpeBRepBuild_HBuilder
 
         """
-        return _BRepAlgo.BRepAlgo_BooleanOperations_ChangeBuilder(self, *args)
+        return _BRepAlgo.BRepAlgo_BooleanOperations_ChangeBuilder(self)
 
-    def DataStructureAccess(self, *args) -> "BRepAlgo_DSAccess &" :
+    def DataStructureAccess(self):
         """
         * returns the member myDSA. It is useful to then access the method GetSectionEdgeSet (wich is a member of DSAccess)
 
         :rtype: BRepAlgo_DSAccess
 
         """
-        return _BRepAlgo.BRepAlgo_BooleanOperations_DataStructureAccess(self, *args)
+        return _BRepAlgo.BRepAlgo_BooleanOperations_DataStructureAccess(self)
 
     def __del__(self):
     	try:
@@ -748,22 +815,22 @@ BRepAlgo_BooleanOperations_swigregister(BRepAlgo_BooleanOperations)
 class BRepAlgo_DSAccess(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _BRepAlgo.BRepAlgo_DSAccess_swiginit(self,_BRepAlgo.new_BRepAlgo_DSAccess(*args))
-    def Init(self, *args) -> "void" :
+        _BRepAlgo.BRepAlgo_DSAccess_swiginit(self,_BRepAlgo.new_BRepAlgo_DSAccess())
+    def Init(self):
         """
         * Clears the internal data structure, including the
 
         :rtype: None
 
         """
-        return _BRepAlgo.BRepAlgo_DSAccess_Init(self, *args)
+        return _BRepAlgo.BRepAlgo_DSAccess_Init(self)
 
-    def Load(self, *args) -> "void" :
+    def Load(self, *args):
         """
         * Loads the shape in DS.
 
@@ -782,7 +849,7 @@ class BRepAlgo_DSAccess(object):
         """
         return _BRepAlgo.BRepAlgo_DSAccess_Load(self, *args)
 
-    def Intersect(self, *args) -> "void" :
+    def Intersect(self, *args):
         """
         * Intersects two shapes at input and loads the DS with their intersection. Clears the TopOpeBRepBuild_HBuilder if necessary
 
@@ -799,7 +866,7 @@ class BRepAlgo_DSAccess(object):
         """
         return _BRepAlgo.BRepAlgo_DSAccess_Intersect(self, *args)
 
-    def SameDomain(self, *args) -> "void" :
+    def SameDomain(self, *args):
         """
         * This method does the same thing as the previous, but faster. There is no intersection face/face 3D. The faces have the same support(surface). No test of tangency (that is why it is faster). Intersects in 2d the faces tangent F1 anf F2.
 
@@ -812,7 +879,7 @@ class BRepAlgo_DSAccess(object):
         """
         return _BRepAlgo.BRepAlgo_DSAccess_SameDomain(self, *args)
 
-    def GetSectionEdgeSet(self, *args) -> "TopTools_ListOfShape const &" :
+    def GetSectionEdgeSet(self, *args):
         """
         * returns compounds of Edge connected with section, which contains sections between faces contained in S1 and S2. returns an empty list of Shape if S1 or S2 do not contain face. calls GetSectionEdgeSet() if it has not already been done
 
@@ -829,7 +896,7 @@ class BRepAlgo_DSAccess(object):
         """
         return _BRepAlgo.BRepAlgo_DSAccess_GetSectionEdgeSet(self, *args)
 
-    def IsWire(self, *args) -> "Standard_Boolean" :
+    def IsWire(self, *args):
         """
         * NYI
 
@@ -840,7 +907,7 @@ class BRepAlgo_DSAccess(object):
         """
         return _BRepAlgo.BRepAlgo_DSAccess_IsWire(self, *args)
 
-    def Wire(self, *args) -> "TopoDS_Shape const" :
+    def Wire(self, *args):
         """
         * NYI
 
@@ -851,7 +918,7 @@ class BRepAlgo_DSAccess(object):
         """
         return _BRepAlgo.BRepAlgo_DSAccess_Wire(self, *args)
 
-    def SectionVertex(self, *args) -> "TopTools_ListOfShape const &" :
+    def SectionVertex(self, *args):
         """
         * NYI returns the vertex of section, which contains the section between face S1 and edge S2 (returns an empty Shape if S1 is not a face or if S2 is not an edge)
 
@@ -864,7 +931,7 @@ class BRepAlgo_DSAccess(object):
         """
         return _BRepAlgo.BRepAlgo_DSAccess_SectionVertex(self, *args)
 
-    def SuppressEdgeSet(self, *args) -> "void" :
+    def SuppressEdgeSet(self, *args):
         """
         * Invalidates a complete line of section. All Edges connected by Vertex or a Wire. Can be a group of connected Edges, which do not form a standard Wire.
 
@@ -875,7 +942,7 @@ class BRepAlgo_DSAccess(object):
         """
         return _BRepAlgo.BRepAlgo_DSAccess_SuppressEdgeSet(self, *args)
 
-    def ChangeEdgeSet(self, *args) -> "void" :
+    def ChangeEdgeSet(self, *args):
         """
         * Modifies a line of section. <New> -- should be a Group of Edges connected by Vertex. -- Can be a Wire. Can be a group of connected Edges that do not form a standard Wire. <New> should be sub-groupn of <Old>
 
@@ -888,7 +955,7 @@ class BRepAlgo_DSAccess(object):
         """
         return _BRepAlgo.BRepAlgo_DSAccess_ChangeEdgeSet(self, *args)
 
-    def SuppressSectionVertex(self, *args) -> "void" :
+    def SuppressSectionVertex(self, *args):
         """
         * NYI Make invalid a Vertex of section. The Vertex shoud be reconstructed from a point.
 
@@ -899,7 +966,7 @@ class BRepAlgo_DSAccess(object):
         """
         return _BRepAlgo.BRepAlgo_DSAccess_SuppressSectionVertex(self, *args)
 
-    def Merge(self, *args) -> "TopoDS_Shape const" :
+    def Merge(self, *args):
         """
         :param state1:
         :type state1: TopAbs_State
@@ -914,7 +981,7 @@ class BRepAlgo_DSAccess(object):
         """
         return _BRepAlgo.BRepAlgo_DSAccess_Merge(self, *args)
 
-    def Propagate(self, *args) -> "TopoDS_Shape const" :
+    def Propagate(self, *args):
         """
         * NYI Propagation of a state starting from the shape FromShape = edge or vertex of section, face or Coumpound de section. LoadShape is either S1, or S2 (see the method Load). Propagation from FromShape, on the states <what> of LoadShape. Return a Wire in 2d, a Shell in 3d. Specifications are incomplete, to be redefined for the typologies correpsonding to <FromShape> and the result : exemple : FromShape resultat  vertex  wire (or edge)  edge of section face (or shell)  compound of section shell ... ...
 
@@ -929,7 +996,7 @@ class BRepAlgo_DSAccess(object):
         """
         return _BRepAlgo.BRepAlgo_DSAccess_Propagate(self, *args)
 
-    def PropagateFromSection(self, *args) -> "TopoDS_Shape const" :
+    def PropagateFromSection(self, *args):
         """
         * SectionShape est soit un Vertex de section(NYI), soit une Edge de section. Propagation des shapes de section en partant de SectionShape. return un Compound de section.
 
@@ -940,7 +1007,7 @@ class BRepAlgo_DSAccess(object):
         """
         return _BRepAlgo.BRepAlgo_DSAccess_PropagateFromSection(self, *args)
 
-    def Modified(self, *args) -> "TopTools_ListOfShape const &" :
+    def Modified(self, *args):
         """
         * Returns the list of the descendant shapes of the shape <S>.
 
@@ -951,42 +1018,42 @@ class BRepAlgo_DSAccess(object):
         """
         return _BRepAlgo.BRepAlgo_DSAccess_Modified(self, *args)
 
-    def Check(self, *args) -> "BRepAlgo_CheckStatus" :
+    def Check(self):
         """
         * NYI coherence of the internal Data Structure.
 
         :rtype: BRepAlgo_CheckStatus
 
         """
-        return _BRepAlgo.BRepAlgo_DSAccess_Check(self, *args)
+        return _BRepAlgo.BRepAlgo_DSAccess_Check(self)
 
-    def DS(self, *args) -> "Handle_TopOpeBRepDS_HDataStructure const &" :
+    def DS(self):
         """
         :rtype: Handle_TopOpeBRepDS_HDataStructure
 
         """
-        return _BRepAlgo.BRepAlgo_DSAccess_DS(self, *args)
+        return _BRepAlgo.BRepAlgo_DSAccess_DS(self)
 
-    def ChangeDS(self, *args) -> "Handle_TopOpeBRepDS_HDataStructure &" :
+    def ChangeDS(self):
         """
         :rtype: Handle_TopOpeBRepDS_HDataStructure
 
         """
-        return _BRepAlgo.BRepAlgo_DSAccess_ChangeDS(self, *args)
+        return _BRepAlgo.BRepAlgo_DSAccess_ChangeDS(self)
 
-    def Builder(self, *args) -> "Handle_TopOpeBRepBuild_HBuilder const &" :
+    def Builder(self):
         """
         :rtype: Handle_TopOpeBRepBuild_HBuilder
 
         """
-        return _BRepAlgo.BRepAlgo_DSAccess_Builder(self, *args)
+        return _BRepAlgo.BRepAlgo_DSAccess_Builder(self)
 
-    def ChangeBuilder(self, *args) -> "Handle_TopOpeBRepBuild_HBuilder &" :
+    def ChangeBuilder(self):
         """
         :rtype: Handle_TopOpeBRepBuild_HBuilder
 
         """
-        return _BRepAlgo.BRepAlgo_DSAccess_ChangeBuilder(self, *args)
+        return _BRepAlgo.BRepAlgo_DSAccess_ChangeBuilder(self)
 
     def __del__(self):
     	try:
@@ -1033,7 +1100,7 @@ class BRepAlgo_DataMapIteratorOfDataMapOfShapeBoolean(OCC.TCollection.TCollectio
 
         """
         _BRepAlgo.BRepAlgo_DataMapIteratorOfDataMapOfShapeBoolean_swiginit(self,_BRepAlgo.new_BRepAlgo_DataMapIteratorOfDataMapOfShapeBoolean(*args))
-    def Initialize(self, *args) -> "void" :
+    def Initialize(self, *args):
         """
         :param aMap:
         :type aMap: BRepAlgo_DataMapOfShapeBoolean &
@@ -1042,19 +1109,19 @@ class BRepAlgo_DataMapIteratorOfDataMapOfShapeBoolean(OCC.TCollection.TCollectio
         """
         return _BRepAlgo.BRepAlgo_DataMapIteratorOfDataMapOfShapeBoolean_Initialize(self, *args)
 
-    def Key(self, *args) -> "TopoDS_Shape const" :
+    def Key(self):
         """
         :rtype: TopoDS_Shape
 
         """
-        return _BRepAlgo.BRepAlgo_DataMapIteratorOfDataMapOfShapeBoolean_Key(self, *args)
+        return _BRepAlgo.BRepAlgo_DataMapIteratorOfDataMapOfShapeBoolean_Key(self)
 
-    def Value(self, *args) -> "Standard_Boolean const &" :
+    def Value(self):
         """
         :rtype: bool
 
         """
-        return _BRepAlgo.BRepAlgo_DataMapIteratorOfDataMapOfShapeBoolean_Value(self, *args)
+        return _BRepAlgo.BRepAlgo_DataMapIteratorOfDataMapOfShapeBoolean_Value(self)
 
     def __del__(self):
     	try:
@@ -1084,7 +1151,7 @@ class BRepAlgo_DataMapIteratorOfDataMapOfShapeInterference(OCC.TCollection.TColl
 
         """
         _BRepAlgo.BRepAlgo_DataMapIteratorOfDataMapOfShapeInterference_swiginit(self,_BRepAlgo.new_BRepAlgo_DataMapIteratorOfDataMapOfShapeInterference(*args))
-    def Initialize(self, *args) -> "void" :
+    def Initialize(self, *args):
         """
         :param aMap:
         :type aMap: BRepAlgo_DataMapOfShapeInterference &
@@ -1093,19 +1160,19 @@ class BRepAlgo_DataMapIteratorOfDataMapOfShapeInterference(OCC.TCollection.TColl
         """
         return _BRepAlgo.BRepAlgo_DataMapIteratorOfDataMapOfShapeInterference_Initialize(self, *args)
 
-    def Key(self, *args) -> "TopoDS_Shape const" :
+    def Key(self):
         """
         :rtype: TopoDS_Shape
 
         """
-        return _BRepAlgo.BRepAlgo_DataMapIteratorOfDataMapOfShapeInterference_Key(self, *args)
+        return _BRepAlgo.BRepAlgo_DataMapIteratorOfDataMapOfShapeInterference_Key(self)
 
-    def Value(self, *args) -> "Handle_TopOpeBRepDS_Interference const &" :
+    def Value(self):
         """
         :rtype: Handle_TopOpeBRepDS_Interference
 
         """
-        return _BRepAlgo.BRepAlgo_DataMapIteratorOfDataMapOfShapeInterference_Value(self, *args)
+        return _BRepAlgo.BRepAlgo_DataMapIteratorOfDataMapOfShapeInterference_Value(self)
 
     def __del__(self):
     	try:
@@ -1137,26 +1204,26 @@ class BRepAlgo_DataMapNodeOfDataMapOfShapeBoolean(OCC.TCollection.TCollection_Ma
 
         """
         _BRepAlgo.BRepAlgo_DataMapNodeOfDataMapOfShapeBoolean_swiginit(self,_BRepAlgo.new_BRepAlgo_DataMapNodeOfDataMapOfShapeBoolean(*args))
-    def Key(self, *args) -> "TopoDS_Shape" :
+    def Key(self):
         """
         :rtype: TopoDS_Shape
 
         """
-        return _BRepAlgo.BRepAlgo_DataMapNodeOfDataMapOfShapeBoolean_Key(self, *args)
+        return _BRepAlgo.BRepAlgo_DataMapNodeOfDataMapOfShapeBoolean_Key(self)
 
-    def GetValue(self) -> "Standard_Boolean" :
+    def GetValue(self):
         """GetValue(BRepAlgo_DataMapNodeOfDataMapOfShapeBoolean self) -> Standard_Boolean"""
         return _BRepAlgo.BRepAlgo_DataMapNodeOfDataMapOfShapeBoolean_GetValue(self)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """SetValue(BRepAlgo_DataMapNodeOfDataMapOfShapeBoolean self, Standard_Boolean value)"""
         return _BRepAlgo.BRepAlgo_DataMapNodeOfDataMapOfShapeBoolean_SetValue(self, *args)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(BRepAlgo_DataMapNodeOfDataMapOfShapeBoolean self)"""
         return _BRepAlgo.BRepAlgo_DataMapNodeOfDataMapOfShapeBoolean__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_BRepAlgo_DataMapNodeOfDataMapOfShapeBoolean" :
+    def GetHandle(self):
         """GetHandle(BRepAlgo_DataMapNodeOfDataMapOfShapeBoolean self) -> Handle_BRepAlgo_DataMapNodeOfDataMapOfShapeBoolean"""
         return _BRepAlgo.BRepAlgo_DataMapNodeOfDataMapOfShapeBoolean_GetHandle(self)
 
@@ -1197,7 +1264,7 @@ Handle_BRepAlgo_DataMapNodeOfDataMapOfShapeBoolean._kill_pointed = new_instancem
 Handle_BRepAlgo_DataMapNodeOfDataMapOfShapeBoolean_swigregister = _BRepAlgo.Handle_BRepAlgo_DataMapNodeOfDataMapOfShapeBoolean_swigregister
 Handle_BRepAlgo_DataMapNodeOfDataMapOfShapeBoolean_swigregister(Handle_BRepAlgo_DataMapNodeOfDataMapOfShapeBoolean)
 
-def Handle_BRepAlgo_DataMapNodeOfDataMapOfShapeBoolean_DownCast(*args) -> "Handle_BRepAlgo_DataMapNodeOfDataMapOfShapeBoolean const" :
+def Handle_BRepAlgo_DataMapNodeOfDataMapOfShapeBoolean_DownCast(*args):
   return _BRepAlgo.Handle_BRepAlgo_DataMapNodeOfDataMapOfShapeBoolean_DownCast(*args)
 Handle_BRepAlgo_DataMapNodeOfDataMapOfShapeBoolean_DownCast = _BRepAlgo.Handle_BRepAlgo_DataMapNodeOfDataMapOfShapeBoolean_DownCast
 
@@ -1216,25 +1283,25 @@ class BRepAlgo_DataMapNodeOfDataMapOfShapeInterference(OCC.TCollection.TCollecti
 
         """
         _BRepAlgo.BRepAlgo_DataMapNodeOfDataMapOfShapeInterference_swiginit(self,_BRepAlgo.new_BRepAlgo_DataMapNodeOfDataMapOfShapeInterference(*args))
-    def Key(self, *args) -> "TopoDS_Shape" :
+    def Key(self):
         """
         :rtype: TopoDS_Shape
 
         """
-        return _BRepAlgo.BRepAlgo_DataMapNodeOfDataMapOfShapeInterference_Key(self, *args)
+        return _BRepAlgo.BRepAlgo_DataMapNodeOfDataMapOfShapeInterference_Key(self)
 
-    def Value(self, *args) -> "Handle_TopOpeBRepDS_Interference &" :
+    def Value(self):
         """
         :rtype: Handle_TopOpeBRepDS_Interference
 
         """
-        return _BRepAlgo.BRepAlgo_DataMapNodeOfDataMapOfShapeInterference_Value(self, *args)
+        return _BRepAlgo.BRepAlgo_DataMapNodeOfDataMapOfShapeInterference_Value(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(BRepAlgo_DataMapNodeOfDataMapOfShapeInterference self)"""
         return _BRepAlgo.BRepAlgo_DataMapNodeOfDataMapOfShapeInterference__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_BRepAlgo_DataMapNodeOfDataMapOfShapeInterference" :
+    def GetHandle(self):
         """GetHandle(BRepAlgo_DataMapNodeOfDataMapOfShapeInterference self) -> Handle_BRepAlgo_DataMapNodeOfDataMapOfShapeInterference"""
         return _BRepAlgo.BRepAlgo_DataMapNodeOfDataMapOfShapeInterference_GetHandle(self)
 
@@ -1274,22 +1341,26 @@ Handle_BRepAlgo_DataMapNodeOfDataMapOfShapeInterference._kill_pointed = new_inst
 Handle_BRepAlgo_DataMapNodeOfDataMapOfShapeInterference_swigregister = _BRepAlgo.Handle_BRepAlgo_DataMapNodeOfDataMapOfShapeInterference_swigregister
 Handle_BRepAlgo_DataMapNodeOfDataMapOfShapeInterference_swigregister(Handle_BRepAlgo_DataMapNodeOfDataMapOfShapeInterference)
 
-def Handle_BRepAlgo_DataMapNodeOfDataMapOfShapeInterference_DownCast(*args) -> "Handle_BRepAlgo_DataMapNodeOfDataMapOfShapeInterference const" :
+def Handle_BRepAlgo_DataMapNodeOfDataMapOfShapeInterference_DownCast(*args):
   return _BRepAlgo.Handle_BRepAlgo_DataMapNodeOfDataMapOfShapeInterference_DownCast(*args)
 Handle_BRepAlgo_DataMapNodeOfDataMapOfShapeInterference_DownCast = _BRepAlgo.Handle_BRepAlgo_DataMapNodeOfDataMapOfShapeInterference_DownCast
 
 class BRepAlgo_DataMapOfShapeBoolean(OCC.TCollection.TCollection_BasicMap):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self, NbBuckets=1): 
         """
         :param NbBuckets: default value is 1
-        :type NbBuckets: int
+        :type NbBuckets: Standard_Integer
+        :rtype: None
+
+        :param NbBuckets: default value is 1
+        :type NbBuckets: Standard_Integer
         :rtype: None
 
         """
-        _BRepAlgo.BRepAlgo_DataMapOfShapeBoolean_swiginit(self,_BRepAlgo.new_BRepAlgo_DataMapOfShapeBoolean(*args))
-    def Assign(self, *args) -> "BRepAlgo_DataMapOfShapeBoolean &" :
+        _BRepAlgo.BRepAlgo_DataMapOfShapeBoolean_swiginit(self,_BRepAlgo.new_BRepAlgo_DataMapOfShapeBoolean(NbBuckets))
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: BRepAlgo_DataMapOfShapeBoolean &
@@ -1298,7 +1369,7 @@ class BRepAlgo_DataMapOfShapeBoolean(OCC.TCollection.TCollection_BasicMap):
         """
         return _BRepAlgo.BRepAlgo_DataMapOfShapeBoolean_Assign(self, *args)
 
-    def Set(self, *args) -> "BRepAlgo_DataMapOfShapeBoolean &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: BRepAlgo_DataMapOfShapeBoolean &
@@ -1307,23 +1378,23 @@ class BRepAlgo_DataMapOfShapeBoolean(OCC.TCollection.TCollection_BasicMap):
         """
         return _BRepAlgo.BRepAlgo_DataMapOfShapeBoolean_Set(self, *args)
 
-    def ReSize(self, *args) -> "void" :
+    def ReSize(self, *args):
         """
         :param NbBuckets:
-        :type NbBuckets: int
+        :type NbBuckets: Standard_Integer
         :rtype: None
 
         """
         return _BRepAlgo.BRepAlgo_DataMapOfShapeBoolean_ReSize(self, *args)
 
-    def Clear(self, *args) -> "void" :
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _BRepAlgo.BRepAlgo_DataMapOfShapeBoolean_Clear(self, *args)
+        return _BRepAlgo.BRepAlgo_DataMapOfShapeBoolean_Clear(self)
 
-    def Bind(self, *args) -> "Standard_Boolean" :
+    def Bind(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -1334,7 +1405,7 @@ class BRepAlgo_DataMapOfShapeBoolean(OCC.TCollection.TCollection_BasicMap):
         """
         return _BRepAlgo.BRepAlgo_DataMapOfShapeBoolean_Bind(self, *args)
 
-    def IsBound(self, *args) -> "Standard_Boolean" :
+    def IsBound(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -1343,7 +1414,7 @@ class BRepAlgo_DataMapOfShapeBoolean(OCC.TCollection.TCollection_BasicMap):
         """
         return _BRepAlgo.BRepAlgo_DataMapOfShapeBoolean_IsBound(self, *args)
 
-    def UnBind(self, *args) -> "Standard_Boolean" :
+    def UnBind(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -1352,7 +1423,7 @@ class BRepAlgo_DataMapOfShapeBoolean(OCC.TCollection.TCollection_BasicMap):
         """
         return _BRepAlgo.BRepAlgo_DataMapOfShapeBoolean_UnBind(self, *args)
 
-    def Find(self, *args) -> "Standard_Boolean const &" :
+    def Find(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -1361,7 +1432,7 @@ class BRepAlgo_DataMapOfShapeBoolean(OCC.TCollection.TCollection_BasicMap):
         """
         return _BRepAlgo.BRepAlgo_DataMapOfShapeBoolean_Find(self, *args)
 
-    def ChangeFind(self, *args) -> "Standard_Boolean &" :
+    def ChangeFind(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -1370,7 +1441,7 @@ class BRepAlgo_DataMapOfShapeBoolean(OCC.TCollection.TCollection_BasicMap):
         """
         return _BRepAlgo.BRepAlgo_DataMapOfShapeBoolean_ChangeFind(self, *args)
 
-    def Find1(self, *args) -> "Standard_Address" :
+    def Find1(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -1379,7 +1450,7 @@ class BRepAlgo_DataMapOfShapeBoolean(OCC.TCollection.TCollection_BasicMap):
         """
         return _BRepAlgo.BRepAlgo_DataMapOfShapeBoolean_Find1(self, *args)
 
-    def ChangeFind1(self, *args) -> "Standard_Address" :
+    def ChangeFind1(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -1388,7 +1459,7 @@ class BRepAlgo_DataMapOfShapeBoolean(OCC.TCollection.TCollection_BasicMap):
         """
         return _BRepAlgo.BRepAlgo_DataMapOfShapeBoolean_ChangeFind1(self, *args)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(BRepAlgo_DataMapOfShapeBoolean self)"""
         return _BRepAlgo.BRepAlgo_DataMapOfShapeBoolean__kill_pointed(self)
 
@@ -1418,15 +1489,19 @@ BRepAlgo_DataMapOfShapeBoolean_swigregister(BRepAlgo_DataMapOfShapeBoolean)
 class BRepAlgo_DataMapOfShapeInterference(OCC.TCollection.TCollection_BasicMap):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self, NbBuckets=1): 
         """
         :param NbBuckets: default value is 1
-        :type NbBuckets: int
+        :type NbBuckets: Standard_Integer
+        :rtype: None
+
+        :param NbBuckets: default value is 1
+        :type NbBuckets: Standard_Integer
         :rtype: None
 
         """
-        _BRepAlgo.BRepAlgo_DataMapOfShapeInterference_swiginit(self,_BRepAlgo.new_BRepAlgo_DataMapOfShapeInterference(*args))
-    def Assign(self, *args) -> "BRepAlgo_DataMapOfShapeInterference &" :
+        _BRepAlgo.BRepAlgo_DataMapOfShapeInterference_swiginit(self,_BRepAlgo.new_BRepAlgo_DataMapOfShapeInterference(NbBuckets))
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: BRepAlgo_DataMapOfShapeInterference &
@@ -1435,7 +1510,7 @@ class BRepAlgo_DataMapOfShapeInterference(OCC.TCollection.TCollection_BasicMap):
         """
         return _BRepAlgo.BRepAlgo_DataMapOfShapeInterference_Assign(self, *args)
 
-    def Set(self, *args) -> "BRepAlgo_DataMapOfShapeInterference &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: BRepAlgo_DataMapOfShapeInterference &
@@ -1444,23 +1519,23 @@ class BRepAlgo_DataMapOfShapeInterference(OCC.TCollection.TCollection_BasicMap):
         """
         return _BRepAlgo.BRepAlgo_DataMapOfShapeInterference_Set(self, *args)
 
-    def ReSize(self, *args) -> "void" :
+    def ReSize(self, *args):
         """
         :param NbBuckets:
-        :type NbBuckets: int
+        :type NbBuckets: Standard_Integer
         :rtype: None
 
         """
         return _BRepAlgo.BRepAlgo_DataMapOfShapeInterference_ReSize(self, *args)
 
-    def Clear(self, *args) -> "void" :
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _BRepAlgo.BRepAlgo_DataMapOfShapeInterference_Clear(self, *args)
+        return _BRepAlgo.BRepAlgo_DataMapOfShapeInterference_Clear(self)
 
-    def Bind(self, *args) -> "Standard_Boolean" :
+    def Bind(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -1471,7 +1546,7 @@ class BRepAlgo_DataMapOfShapeInterference(OCC.TCollection.TCollection_BasicMap):
         """
         return _BRepAlgo.BRepAlgo_DataMapOfShapeInterference_Bind(self, *args)
 
-    def IsBound(self, *args) -> "Standard_Boolean" :
+    def IsBound(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -1480,7 +1555,7 @@ class BRepAlgo_DataMapOfShapeInterference(OCC.TCollection.TCollection_BasicMap):
         """
         return _BRepAlgo.BRepAlgo_DataMapOfShapeInterference_IsBound(self, *args)
 
-    def UnBind(self, *args) -> "Standard_Boolean" :
+    def UnBind(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -1489,7 +1564,7 @@ class BRepAlgo_DataMapOfShapeInterference(OCC.TCollection.TCollection_BasicMap):
         """
         return _BRepAlgo.BRepAlgo_DataMapOfShapeInterference_UnBind(self, *args)
 
-    def Find(self, *args) -> "Handle_TopOpeBRepDS_Interference const &" :
+    def Find(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -1498,7 +1573,7 @@ class BRepAlgo_DataMapOfShapeInterference(OCC.TCollection.TCollection_BasicMap):
         """
         return _BRepAlgo.BRepAlgo_DataMapOfShapeInterference_Find(self, *args)
 
-    def ChangeFind(self, *args) -> "Handle_TopOpeBRepDS_Interference &" :
+    def ChangeFind(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -1507,7 +1582,7 @@ class BRepAlgo_DataMapOfShapeInterference(OCC.TCollection.TCollection_BasicMap):
         """
         return _BRepAlgo.BRepAlgo_DataMapOfShapeInterference_ChangeFind(self, *args)
 
-    def Find1(self, *args) -> "Standard_Address" :
+    def Find1(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -1516,7 +1591,7 @@ class BRepAlgo_DataMapOfShapeInterference(OCC.TCollection.TCollection_BasicMap):
         """
         return _BRepAlgo.BRepAlgo_DataMapOfShapeInterference_Find1(self, *args)
 
-    def ChangeFind1(self, *args) -> "Standard_Address" :
+    def ChangeFind1(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -1525,7 +1600,7 @@ class BRepAlgo_DataMapOfShapeInterference(OCC.TCollection.TCollection_BasicMap):
         """
         return _BRepAlgo.BRepAlgo_DataMapOfShapeInterference_ChangeFind1(self, *args)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(BRepAlgo_DataMapOfShapeInterference self)"""
         return _BRepAlgo.BRepAlgo_DataMapOfShapeInterference__kill_pointed(self)
 
@@ -1555,13 +1630,13 @@ BRepAlgo_DataMapOfShapeInterference_swigregister(BRepAlgo_DataMapOfShapeInterfer
 class BRepAlgo_EdgeConnector(OCC.MMgt.MMgt_TShared):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _BRepAlgo.BRepAlgo_EdgeConnector_swiginit(self,_BRepAlgo.new_BRepAlgo_EdgeConnector(*args))
-    def Add(self, *args) -> "void" :
+        _BRepAlgo.BRepAlgo_EdgeConnector_swiginit(self,_BRepAlgo.new_BRepAlgo_EdgeConnector())
+    def Add(self, *args):
         """
         :param e:
         :type e: TopoDS_Edge &
@@ -1574,7 +1649,7 @@ class BRepAlgo_EdgeConnector(OCC.MMgt.MMgt_TShared):
         """
         return _BRepAlgo.BRepAlgo_EdgeConnector_Add(self, *args)
 
-    def AddStart(self, *args) -> "void" :
+    def AddStart(self, *args):
         """
         :param e:
         :type e: TopoDS_Shape &
@@ -1587,39 +1662,39 @@ class BRepAlgo_EdgeConnector(OCC.MMgt.MMgt_TShared):
         """
         return _BRepAlgo.BRepAlgo_EdgeConnector_AddStart(self, *args)
 
-    def ClearStartElement(self, *args) -> "void" :
+    def ClearStartElement(self):
         """
         :rtype: None
 
         """
-        return _BRepAlgo.BRepAlgo_EdgeConnector_ClearStartElement(self, *args)
+        return _BRepAlgo.BRepAlgo_EdgeConnector_ClearStartElement(self)
 
-    def MakeBlock(self, *args) -> "TopTools_ListOfShape &" :
+    def MakeBlock(self):
         """
         * returns a list of wire non standard
 
         :rtype: TopTools_ListOfShape
 
         """
-        return _BRepAlgo.BRepAlgo_EdgeConnector_MakeBlock(self, *args)
+        return _BRepAlgo.BRepAlgo_EdgeConnector_MakeBlock(self)
 
-    def Done(self, *args) -> "void" :
+    def Done(self):
         """
         :rtype: None
 
         """
-        return _BRepAlgo.BRepAlgo_EdgeConnector_Done(self, *args)
+        return _BRepAlgo.BRepAlgo_EdgeConnector_Done(self)
 
-    def IsDone(self, *args) -> "Standard_Boolean" :
+    def IsDone(self):
         """
         * NYI returns true if proceeded to MakeBlock()
 
         :rtype: bool
 
         """
-        return _BRepAlgo.BRepAlgo_EdgeConnector_IsDone(self, *args)
+        return _BRepAlgo.BRepAlgo_EdgeConnector_IsDone(self)
 
-    def IsWire(self, *args) -> "Standard_Boolean" :
+    def IsWire(self, *args):
         """
         * NYI returns true if W is a Wire standard. W must belong to the list returned by MakeBlock.
 
@@ -1630,11 +1705,11 @@ class BRepAlgo_EdgeConnector(OCC.MMgt.MMgt_TShared):
         """
         return _BRepAlgo.BRepAlgo_EdgeConnector_IsWire(self, *args)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(BRepAlgo_EdgeConnector self)"""
         return _BRepAlgo.BRepAlgo_EdgeConnector__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_BRepAlgo_EdgeConnector" :
+    def GetHandle(self):
         """GetHandle(BRepAlgo_EdgeConnector self) -> Handle_BRepAlgo_EdgeConnector"""
         return _BRepAlgo.BRepAlgo_EdgeConnector_GetHandle(self)
 
@@ -1679,21 +1754,41 @@ Handle_BRepAlgo_EdgeConnector._kill_pointed = new_instancemethod(_BRepAlgo.Handl
 Handle_BRepAlgo_EdgeConnector_swigregister = _BRepAlgo.Handle_BRepAlgo_EdgeConnector_swigregister
 Handle_BRepAlgo_EdgeConnector_swigregister(Handle_BRepAlgo_EdgeConnector)
 
-def Handle_BRepAlgo_EdgeConnector_DownCast(*args) -> "Handle_BRepAlgo_EdgeConnector const" :
+def Handle_BRepAlgo_EdgeConnector_DownCast(*args):
   return _BRepAlgo.Handle_BRepAlgo_EdgeConnector_DownCast(*args)
 Handle_BRepAlgo_EdgeConnector_DownCast = _BRepAlgo.Handle_BRepAlgo_EdgeConnector_DownCast
 
 class BRepAlgo_FaceRestrictor(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _BRepAlgo.BRepAlgo_FaceRestrictor_swiginit(self,_BRepAlgo.new_BRepAlgo_FaceRestrictor(*args))
-    def Init(self, *args) -> "void" :
+        _BRepAlgo.BRepAlgo_FaceRestrictor_swiginit(self,_BRepAlgo.new_BRepAlgo_FaceRestrictor())
+    def Init(self, *args):
         """
+        * the surface of <F> will be the the surface of each new faces built. <Proj> is used to update pcurves on edges if necessary. See Add().
+
+        :param F:
+        :type F: TopoDS_Face &
+        :param Proj: default value is Standard_False
+        :type Proj: bool
+        :param ControlOrientation: default value is Standard_False
+        :type ControlOrientation: bool
+        :rtype: None
+
+        * the surface of <F> will be the the surface of each new faces built. <Proj> is used to update pcurves on edges if necessary. See Add().
+
+        :param F:
+        :type F: TopoDS_Face &
+        :param Proj: default value is Standard_False
+        :type Proj: bool
+        :param ControlOrientation: default value is Standard_False
+        :type ControlOrientation: bool
+        :rtype: None
+
         * the surface of <F> will be the the surface of each new faces built. <Proj> is used to update pcurves on edges if necessary. See Add().
 
         :param F:
@@ -1707,7 +1802,7 @@ class BRepAlgo_FaceRestrictor(object):
         """
         return _BRepAlgo.BRepAlgo_FaceRestrictor_Init(self, *args)
 
-    def Add(self, *args) -> "void" :
+    def Add(self, *args):
         """
         * Add the wire <W> to the set of wires. Warning: The Wires must be closed.  The edges of <W> can be modified if they have not pcurves on the surface <S> of <F>. In this case if <Proj> is false the first pcurve of the edge is positionned on <S>. if <Proj> is True ,the Pcurve On <S> is the projection of the curve 3d on <F>.
 
@@ -1718,51 +1813,51 @@ class BRepAlgo_FaceRestrictor(object):
         """
         return _BRepAlgo.BRepAlgo_FaceRestrictor_Add(self, *args)
 
-    def Clear(self, *args) -> "void" :
+    def Clear(self):
         """
         * Removes all the Wires
 
         :rtype: None
 
         """
-        return _BRepAlgo.BRepAlgo_FaceRestrictor_Clear(self, *args)
+        return _BRepAlgo.BRepAlgo_FaceRestrictor_Clear(self)
 
-    def Perform(self, *args) -> "void" :
+    def Perform(self):
         """
         * Evaluate all the faces limited by the set of Wires.
 
         :rtype: None
 
         """
-        return _BRepAlgo.BRepAlgo_FaceRestrictor_Perform(self, *args)
+        return _BRepAlgo.BRepAlgo_FaceRestrictor_Perform(self)
 
-    def IsDone(self, *args) -> "Standard_Boolean" :
+    def IsDone(self):
         """
         :rtype: bool
 
         """
-        return _BRepAlgo.BRepAlgo_FaceRestrictor_IsDone(self, *args)
+        return _BRepAlgo.BRepAlgo_FaceRestrictor_IsDone(self)
 
-    def More(self, *args) -> "Standard_Boolean" :
+    def More(self):
         """
         :rtype: bool
 
         """
-        return _BRepAlgo.BRepAlgo_FaceRestrictor_More(self, *args)
+        return _BRepAlgo.BRepAlgo_FaceRestrictor_More(self)
 
-    def Next(self, *args) -> "void" :
+    def Next(self):
         """
         :rtype: None
 
         """
-        return _BRepAlgo.BRepAlgo_FaceRestrictor_Next(self, *args)
+        return _BRepAlgo.BRepAlgo_FaceRestrictor_Next(self)
 
-    def Current(self, *args) -> "TopoDS_Face" :
+    def Current(self):
         """
         :rtype: TopoDS_Face
 
         """
-        return _BRepAlgo.BRepAlgo_FaceRestrictor_Current(self, *args)
+        return _BRepAlgo.BRepAlgo_FaceRestrictor_Current(self)
 
     def __del__(self):
     	try:
@@ -1787,13 +1882,13 @@ BRepAlgo_FaceRestrictor_swigregister(BRepAlgo_FaceRestrictor)
 class BRepAlgo_Image(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _BRepAlgo.BRepAlgo_Image_swiginit(self,_BRepAlgo.new_BRepAlgo_Image(*args))
-    def SetRoot(self, *args) -> "void" :
+        _BRepAlgo.BRepAlgo_Image_swiginit(self,_BRepAlgo.new_BRepAlgo_Image())
+    def SetRoot(self, *args):
         """
         :param S:
         :type S: TopoDS_Shape &
@@ -1802,7 +1897,7 @@ class BRepAlgo_Image(object):
         """
         return _BRepAlgo.BRepAlgo_Image_SetRoot(self, *args)
 
-    def Bind(self, *args) -> "void" :
+    def Bind(self, *args):
         """
         * Links <NewS> as image of <OldS>.
 
@@ -1823,7 +1918,7 @@ class BRepAlgo_Image(object):
         """
         return _BRepAlgo.BRepAlgo_Image_Bind(self, *args)
 
-    def Add(self, *args) -> "void" :
+    def Add(self, *args):
         """
         * Add <NewS> to the image of <OldS>.
 
@@ -1844,14 +1939,14 @@ class BRepAlgo_Image(object):
         """
         return _BRepAlgo.BRepAlgo_Image_Add(self, *args)
 
-    def Clear(self, *args) -> "void" :
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _BRepAlgo.BRepAlgo_Image_Clear(self, *args)
+        return _BRepAlgo.BRepAlgo_Image_Clear(self)
 
-    def Remove(self, *args) -> "void" :
+    def Remove(self, *args):
         """
         * Remove <S> to set of images.
 
@@ -1862,14 +1957,14 @@ class BRepAlgo_Image(object):
         """
         return _BRepAlgo.BRepAlgo_Image_Remove(self, *args)
 
-    def Roots(self, *args) -> "TopTools_ListOfShape const &" :
+    def Roots(self):
         """
         :rtype: TopTools_ListOfShape
 
         """
-        return _BRepAlgo.BRepAlgo_Image_Roots(self, *args)
+        return _BRepAlgo.BRepAlgo_Image_Roots(self)
 
-    def IsImage(self, *args) -> "Standard_Boolean" :
+    def IsImage(self, *args):
         """
         :param S:
         :type S: TopoDS_Shape &
@@ -1878,7 +1973,7 @@ class BRepAlgo_Image(object):
         """
         return _BRepAlgo.BRepAlgo_Image_IsImage(self, *args)
 
-    def ImageFrom(self, *args) -> "TopoDS_Shape const" :
+    def ImageFrom(self, *args):
         """
         * Returns the generator of <S>
 
@@ -1889,7 +1984,7 @@ class BRepAlgo_Image(object):
         """
         return _BRepAlgo.BRepAlgo_Image_ImageFrom(self, *args)
 
-    def Root(self, *args) -> "TopoDS_Shape const" :
+    def Root(self, *args):
         """
         * Returns the upper generator of <S>
 
@@ -1900,7 +1995,7 @@ class BRepAlgo_Image(object):
         """
         return _BRepAlgo.BRepAlgo_Image_Root(self, *args)
 
-    def HasImage(self, *args) -> "Standard_Boolean" :
+    def HasImage(self, *args):
         """
         :param S:
         :type S: TopoDS_Shape &
@@ -1909,7 +2004,7 @@ class BRepAlgo_Image(object):
         """
         return _BRepAlgo.BRepAlgo_Image_HasImage(self, *args)
 
-    def Image(self, *args) -> "TopTools_ListOfShape const &" :
+    def Image(self, *args):
         """
         * Returns the Image of <S>. Returns <S> in the list if HasImage(S) is false.
 
@@ -1920,7 +2015,7 @@ class BRepAlgo_Image(object):
         """
         return _BRepAlgo.BRepAlgo_Image_Image(self, *args)
 
-    def LastImage(self, *args) -> "void" :
+    def LastImage(self, *args):
         """
         * Stores in <L> the images of images of...images of <S>. <L> contains only <S> if HasImage(S) is false.
 
@@ -1933,16 +2028,16 @@ class BRepAlgo_Image(object):
         """
         return _BRepAlgo.BRepAlgo_Image_LastImage(self, *args)
 
-    def Compact(self, *args) -> "void" :
+    def Compact(self):
         """
         * Keeps only the link between roots and lastimage.
 
         :rtype: None
 
         """
-        return _BRepAlgo.BRepAlgo_Image_Compact(self, *args)
+        return _BRepAlgo.BRepAlgo_Image_Compact(self)
 
-    def Filter(self, *args) -> "void" :
+    def Filter(self, *args):
         """
         * Deletes in the images the shape of type <ShapeType> which are not in <S>. Warning: Compact() must be call before.
 
@@ -1984,13 +2079,13 @@ BRepAlgo_Image_swigregister(BRepAlgo_Image)
 class BRepAlgo_Loop(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _BRepAlgo.BRepAlgo_Loop_swiginit(self,_BRepAlgo.new_BRepAlgo_Loop(*args))
-    def Init(self, *args) -> "void" :
+        _BRepAlgo.BRepAlgo_Loop_swiginit(self,_BRepAlgo.new_BRepAlgo_Loop())
+    def Init(self, *args):
         """
         * Init with <F> the set of edges must have pcurves on <F>.
 
@@ -2001,7 +2096,7 @@ class BRepAlgo_Loop(object):
         """
         return _BRepAlgo.BRepAlgo_Loop_Init(self, *args)
 
-    def AddEdge(self, *args) -> "void" :
+    def AddEdge(self, *args):
         """
         * Add E with <LV>. <E> will be copied and trim by vertices in <LV>.
 
@@ -2014,7 +2109,7 @@ class BRepAlgo_Loop(object):
         """
         return _BRepAlgo.BRepAlgo_Loop_AddEdge(self, *args)
 
-    def AddConstEdge(self, *args) -> "void" :
+    def AddConstEdge(self, *args):
         """
         * Add <E> as const edge, E can be in the result.
 
@@ -2025,7 +2120,7 @@ class BRepAlgo_Loop(object):
         """
         return _BRepAlgo.BRepAlgo_Loop_AddConstEdge(self, *args)
 
-    def AddConstEdges(self, *args) -> "void" :
+    def AddConstEdges(self, *args):
         """
         * Add <LE> as a set of const edges.
 
@@ -2036,16 +2131,16 @@ class BRepAlgo_Loop(object):
         """
         return _BRepAlgo.BRepAlgo_Loop_AddConstEdges(self, *args)
 
-    def Perform(self, *args) -> "void" :
+    def Perform(self):
         """
         * Make loops.
 
         :rtype: None
 
         """
-        return _BRepAlgo.BRepAlgo_Loop_Perform(self, *args)
+        return _BRepAlgo.BRepAlgo_Loop_Perform(self)
 
-    def CutEdge(self, *args) -> "void" :
+    def CutEdge(self, *args):
         """
         * Cut the edge <E> in several edges <NE> on the vertices<VonE>.
 
@@ -2060,34 +2155,34 @@ class BRepAlgo_Loop(object):
         """
         return _BRepAlgo.BRepAlgo_Loop_CutEdge(self, *args)
 
-    def NewWires(self, *args) -> "TopTools_ListOfShape const &" :
+    def NewWires(self):
         """
         * Returns the list of wires performed. can be an empty list.
 
         :rtype: TopTools_ListOfShape
 
         """
-        return _BRepAlgo.BRepAlgo_Loop_NewWires(self, *args)
+        return _BRepAlgo.BRepAlgo_Loop_NewWires(self)
 
-    def WiresToFaces(self, *args) -> "void" :
+    def WiresToFaces(self):
         """
         * Build faces from the wires result.
 
         :rtype: None
 
         """
-        return _BRepAlgo.BRepAlgo_Loop_WiresToFaces(self, *args)
+        return _BRepAlgo.BRepAlgo_Loop_WiresToFaces(self)
 
-    def NewFaces(self, *args) -> "TopTools_ListOfShape const &" :
+    def NewFaces(self):
         """
         * Returns the list of faces. Warning: The method <WiresToFaces> as to be called before. can be an empty list.
 
         :rtype: TopTools_ListOfShape
 
         """
-        return _BRepAlgo.BRepAlgo_Loop_NewFaces(self, *args)
+        return _BRepAlgo.BRepAlgo_Loop_NewFaces(self)
 
-    def NewEdges(self, *args) -> "TopTools_ListOfShape const &" :
+    def NewEdges(self, *args):
         """
         * Returns the list of new edges built from an edge <E> it can be an empty list.
 
@@ -2098,7 +2193,7 @@ class BRepAlgo_Loop(object):
         """
         return _BRepAlgo.BRepAlgo_Loop_NewEdges(self, *args)
 
-    def GetVerticesForSubstitute(self, *args) -> "void" :
+    def GetVerticesForSubstitute(self, *args):
         """
         * Returns the datamap of vertices with their substitutes.
 
@@ -2109,7 +2204,7 @@ class BRepAlgo_Loop(object):
         """
         return _BRepAlgo.BRepAlgo_Loop_GetVerticesForSubstitute(self, *args)
 
-    def VerticesForSubstitute(self, *args) -> "void" :
+    def VerticesForSubstitute(self, *args):
         """
         :param VerVerMap:
         :type VerVerMap: TopTools_DataMapOfShapeShape &
@@ -2155,7 +2250,7 @@ class BRepAlgo_NormalProjection(object):
 
         """
         _BRepAlgo.BRepAlgo_NormalProjection_swiginit(self,_BRepAlgo.new_BRepAlgo_NormalProjection(*args))
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
         :param S:
         :type S: TopoDS_Shape &
@@ -2164,7 +2259,7 @@ class BRepAlgo_NormalProjection(object):
         """
         return _BRepAlgo.BRepAlgo_NormalProjection_Init(self, *args)
 
-    def Add(self, *args) -> "void" :
+    def Add(self, *args):
         """
         * Add an edge or a wire to the list of shape to project
 
@@ -2175,7 +2270,7 @@ class BRepAlgo_NormalProjection(object):
         """
         return _BRepAlgo.BRepAlgo_NormalProjection_Add(self, *args)
 
-    def SetParams(self, *args) -> "void" :
+    def SetParams(self, *args):
         """
         * Set the parameters used for computation Tol3d is the requiered tolerance between the 3d projected curve and its 2d representation InternalContinuity is the order of constraints used for approximation. MaxDeg and MaxSeg are the maximum degree and the maximum number of segment for BSpline resulting of an approximation.
 
@@ -2186,24 +2281,24 @@ class BRepAlgo_NormalProjection(object):
         :param InternalContinuity:
         :type InternalContinuity: GeomAbs_Shape
         :param MaxDegree:
-        :type MaxDegree: int
+        :type MaxDegree: Standard_Integer
         :param MaxSeg:
-        :type MaxSeg: int
+        :type MaxSeg: Standard_Integer
         :rtype: None
 
         """
         return _BRepAlgo.BRepAlgo_NormalProjection_SetParams(self, *args)
 
-    def SetDefaultParams(self, *args) -> "void" :
+    def SetDefaultParams(self):
         """
         * Set the parameters used for computation in their default values
 
         :rtype: None
 
         """
-        return _BRepAlgo.BRepAlgo_NormalProjection_SetDefaultParams(self, *args)
+        return _BRepAlgo.BRepAlgo_NormalProjection_SetDefaultParams(self)
 
-    def SetMaxDistance(self, *args) -> "void" :
+    def SetMaxDistance(self, *args):
         """
         * Sets the maximum distance between target shape and shape to project. If this condition is not satisfied then corresponding part of solution is discarded. if MaxDist < 0 then this method does not affect the algorithm
 
@@ -2214,8 +2309,14 @@ class BRepAlgo_NormalProjection(object):
         """
         return _BRepAlgo.BRepAlgo_NormalProjection_SetMaxDistance(self, *args)
 
-    def Compute3d(self, *args) -> "void" :
+    def Compute3d(self, *args):
         """
+        * if With3d = Standard_False the 3dcurve is not computed the initial 3dcurve is kept to build the resulting edges.
+
+        :param With3d: default value is Standard_True
+        :type With3d: bool
+        :rtype: None
+
         * if With3d = Standard_False the 3dcurve is not computed the initial 3dcurve is kept to build the resulting edges.
 
         :param With3d: default value is Standard_True
@@ -2225,8 +2326,14 @@ class BRepAlgo_NormalProjection(object):
         """
         return _BRepAlgo.BRepAlgo_NormalProjection_Compute3d(self, *args)
 
-    def SetLimit(self, *args) -> "void" :
+    def SetLimit(self, *args):
         """
+        * Manage limitation of projected edges.
+
+        :param FaceBoundaries: default value is Standard_True
+        :type FaceBoundaries: bool
+        :rtype: None
+
         * Manage limitation of projected edges.
 
         :param FaceBoundaries: default value is Standard_True
@@ -2236,32 +2343,32 @@ class BRepAlgo_NormalProjection(object):
         """
         return _BRepAlgo.BRepAlgo_NormalProjection_SetLimit(self, *args)
 
-    def Build(self, *args) -> "void" :
+    def Build(self):
         """
         * Builds the result as a compound.
 
         :rtype: None
 
         """
-        return _BRepAlgo.BRepAlgo_NormalProjection_Build(self, *args)
+        return _BRepAlgo.BRepAlgo_NormalProjection_Build(self)
 
-    def IsDone(self, *args) -> "Standard_Boolean" :
+    def IsDone(self):
         """
         :rtype: bool
 
         """
-        return _BRepAlgo.BRepAlgo_NormalProjection_IsDone(self, *args)
+        return _BRepAlgo.BRepAlgo_NormalProjection_IsDone(self)
 
-    def Projection(self, *args) -> "TopoDS_Shape const" :
+    def Projection(self):
         """
         * returns the result
 
         :rtype: TopoDS_Shape
 
         """
-        return _BRepAlgo.BRepAlgo_NormalProjection_Projection(self, *args)
+        return _BRepAlgo.BRepAlgo_NormalProjection_Projection(self)
 
-    def Ancestor(self, *args) -> "TopoDS_Shape const" :
+    def Ancestor(self, *args):
         """
         * For a resulting edge, returns the corresponding initial edge.
 
@@ -2272,7 +2379,7 @@ class BRepAlgo_NormalProjection(object):
         """
         return _BRepAlgo.BRepAlgo_NormalProjection_Ancestor(self, *args)
 
-    def Couple(self, *args) -> "TopoDS_Shape const" :
+    def Couple(self, *args):
         """
         * For a projected edge, returns the corresponding initial face.
 
@@ -2283,7 +2390,7 @@ class BRepAlgo_NormalProjection(object):
         """
         return _BRepAlgo.BRepAlgo_NormalProjection_Couple(self, *args)
 
-    def Generated(self, *args) -> "TopTools_ListOfShape const &" :
+    def Generated(self, *args):
         """
         * Returns the list of shapes generated from the shape <S>.
 
@@ -2294,7 +2401,7 @@ class BRepAlgo_NormalProjection(object):
         """
         return _BRepAlgo.BRepAlgo_NormalProjection_Generated(self, *args)
 
-    def IsElementary(self, *args) -> "Standard_Boolean" :
+    def IsElementary(self, *args):
         """
         :param C:
         :type C: Adaptor3d_Curve &
@@ -2303,7 +2410,7 @@ class BRepAlgo_NormalProjection(object):
         """
         return _BRepAlgo.BRepAlgo_NormalProjection_IsElementary(self, *args)
 
-    def BuildWire(self, *args) -> "Standard_Boolean" :
+    def BuildWire(self, *args):
         """
         * build the result as a list of wire if possible in -- a first returns a wire only if there is only a wire.
 
@@ -2356,18 +2463,18 @@ class BRepAlgo_SequenceNodeOfSequenceOfSequenceOfInteger(OCC.TCollection.TCollec
 
         """
         _BRepAlgo.BRepAlgo_SequenceNodeOfSequenceOfSequenceOfInteger_swiginit(self,_BRepAlgo.new_BRepAlgo_SequenceNodeOfSequenceOfSequenceOfInteger(*args))
-    def Value(self, *args) -> "TColStd_SequenceOfInteger &" :
+    def Value(self):
         """
         :rtype: TColStd_SequenceOfInteger
 
         """
-        return _BRepAlgo.BRepAlgo_SequenceNodeOfSequenceOfSequenceOfInteger_Value(self, *args)
+        return _BRepAlgo.BRepAlgo_SequenceNodeOfSequenceOfSequenceOfInteger_Value(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(BRepAlgo_SequenceNodeOfSequenceOfSequenceOfInteger self)"""
         return _BRepAlgo.BRepAlgo_SequenceNodeOfSequenceOfSequenceOfInteger__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_BRepAlgo_SequenceNodeOfSequenceOfSequenceOfInteger" :
+    def GetHandle(self):
         """GetHandle(BRepAlgo_SequenceNodeOfSequenceOfSequenceOfInteger self) -> Handle_BRepAlgo_SequenceNodeOfSequenceOfSequenceOfInteger"""
         return _BRepAlgo.BRepAlgo_SequenceNodeOfSequenceOfSequenceOfInteger_GetHandle(self)
 
@@ -2406,27 +2513,27 @@ Handle_BRepAlgo_SequenceNodeOfSequenceOfSequenceOfInteger._kill_pointed = new_in
 Handle_BRepAlgo_SequenceNodeOfSequenceOfSequenceOfInteger_swigregister = _BRepAlgo.Handle_BRepAlgo_SequenceNodeOfSequenceOfSequenceOfInteger_swigregister
 Handle_BRepAlgo_SequenceNodeOfSequenceOfSequenceOfInteger_swigregister(Handle_BRepAlgo_SequenceNodeOfSequenceOfSequenceOfInteger)
 
-def Handle_BRepAlgo_SequenceNodeOfSequenceOfSequenceOfInteger_DownCast(*args) -> "Handle_BRepAlgo_SequenceNodeOfSequenceOfSequenceOfInteger const" :
+def Handle_BRepAlgo_SequenceNodeOfSequenceOfSequenceOfInteger_DownCast(*args):
   return _BRepAlgo.Handle_BRepAlgo_SequenceNodeOfSequenceOfSequenceOfInteger_DownCast(*args)
 Handle_BRepAlgo_SequenceNodeOfSequenceOfSequenceOfInteger_DownCast = _BRepAlgo.Handle_BRepAlgo_SequenceNodeOfSequenceOfSequenceOfInteger_DownCast
 
 class BRepAlgo_SequenceOfSequenceOfInteger(OCC.TCollection.TCollection_BaseSequence):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _BRepAlgo.BRepAlgo_SequenceOfSequenceOfInteger_swiginit(self,_BRepAlgo.new_BRepAlgo_SequenceOfSequenceOfInteger(*args))
-    def Clear(self, *args) -> "void" :
+        _BRepAlgo.BRepAlgo_SequenceOfSequenceOfInteger_swiginit(self,_BRepAlgo.new_BRepAlgo_SequenceOfSequenceOfInteger())
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _BRepAlgo.BRepAlgo_SequenceOfSequenceOfInteger_Clear(self, *args)
+        return _BRepAlgo.BRepAlgo_SequenceOfSequenceOfInteger_Clear(self)
 
-    def Assign(self, *args) -> "BRepAlgo_SequenceOfSequenceOfInteger const &" :
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: BRepAlgo_SequenceOfSequenceOfInteger &
@@ -2435,7 +2542,7 @@ class BRepAlgo_SequenceOfSequenceOfInteger(OCC.TCollection.TCollection_BaseSeque
         """
         return _BRepAlgo.BRepAlgo_SequenceOfSequenceOfInteger_Assign(self, *args)
 
-    def Set(self, *args) -> "BRepAlgo_SequenceOfSequenceOfInteger const &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: BRepAlgo_SequenceOfSequenceOfInteger &
@@ -2444,7 +2551,7 @@ class BRepAlgo_SequenceOfSequenceOfInteger(OCC.TCollection.TCollection_BaseSeque
         """
         return _BRepAlgo.BRepAlgo_SequenceOfSequenceOfInteger_Set(self, *args)
 
-    def Append(self, *args) -> "void" :
+    def Append(self, *args):
         """
         :param T:
         :type T: TColStd_SequenceOfInteger &
@@ -2457,7 +2564,7 @@ class BRepAlgo_SequenceOfSequenceOfInteger(OCC.TCollection.TCollection_BaseSeque
         """
         return _BRepAlgo.BRepAlgo_SequenceOfSequenceOfInteger_Append(self, *args)
 
-    def Prepend(self, *args) -> "void" :
+    def Prepend(self, *args):
         """
         :param T:
         :type T: TColStd_SequenceOfInteger &
@@ -2470,16 +2577,16 @@ class BRepAlgo_SequenceOfSequenceOfInteger(OCC.TCollection.TCollection_BaseSeque
         """
         return _BRepAlgo.BRepAlgo_SequenceOfSequenceOfInteger_Prepend(self, *args)
 
-    def InsertBefore(self, *args) -> "void" :
+    def InsertBefore(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param T:
         :type T: TColStd_SequenceOfInteger &
         :rtype: None
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param S:
         :type S: BRepAlgo_SequenceOfSequenceOfInteger &
         :rtype: None
@@ -2487,16 +2594,16 @@ class BRepAlgo_SequenceOfSequenceOfInteger(OCC.TCollection.TCollection_BaseSeque
         """
         return _BRepAlgo.BRepAlgo_SequenceOfSequenceOfInteger_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args) -> "void" :
+    def InsertAfter(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param T:
         :type T: TColStd_SequenceOfInteger &
         :rtype: None
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param S:
         :type S: BRepAlgo_SequenceOfSequenceOfInteger &
         :rtype: None
@@ -2504,24 +2611,24 @@ class BRepAlgo_SequenceOfSequenceOfInteger(OCC.TCollection.TCollection_BaseSeque
         """
         return _BRepAlgo.BRepAlgo_SequenceOfSequenceOfInteger_InsertAfter(self, *args)
 
-    def First(self, *args) -> "TColStd_SequenceOfInteger const &" :
+    def First(self):
         """
         :rtype: TColStd_SequenceOfInteger
 
         """
-        return _BRepAlgo.BRepAlgo_SequenceOfSequenceOfInteger_First(self, *args)
+        return _BRepAlgo.BRepAlgo_SequenceOfSequenceOfInteger_First(self)
 
-    def Last(self, *args) -> "TColStd_SequenceOfInteger const &" :
+    def Last(self):
         """
         :rtype: TColStd_SequenceOfInteger
 
         """
-        return _BRepAlgo.BRepAlgo_SequenceOfSequenceOfInteger_Last(self, *args)
+        return _BRepAlgo.BRepAlgo_SequenceOfSequenceOfInteger_Last(self)
 
-    def Split(self, *args) -> "void" :
+    def Split(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Sub:
         :type Sub: BRepAlgo_SequenceOfSequenceOfInteger &
         :rtype: None
@@ -2529,19 +2636,19 @@ class BRepAlgo_SequenceOfSequenceOfInteger(OCC.TCollection.TCollection_BaseSeque
         """
         return _BRepAlgo.BRepAlgo_SequenceOfSequenceOfInteger_Split(self, *args)
 
-    def Value(self, *args) -> "TColStd_SequenceOfInteger const &" :
+    def Value(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: TColStd_SequenceOfInteger
 
         """
         return _BRepAlgo.BRepAlgo_SequenceOfSequenceOfInteger_Value(self, *args)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param I:
         :type I: TColStd_SequenceOfInteger &
         :rtype: None
@@ -2549,25 +2656,25 @@ class BRepAlgo_SequenceOfSequenceOfInteger(OCC.TCollection.TCollection_BaseSeque
         """
         return _BRepAlgo.BRepAlgo_SequenceOfSequenceOfInteger_SetValue(self, *args)
 
-    def ChangeValue(self, *args) -> "TColStd_SequenceOfInteger &" :
+    def ChangeValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: TColStd_SequenceOfInteger
 
         """
         return _BRepAlgo.BRepAlgo_SequenceOfSequenceOfInteger_ChangeValue(self, *args)
 
-    def Remove(self, *args) -> "void" :
+    def Remove(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: None
 
         :param FromIndex:
-        :type FromIndex: int
+        :type FromIndex: Standard_Integer
         :param ToIndex:
-        :type ToIndex: int
+        :type ToIndex: Standard_Integer
         :rtype: None
 
         """
@@ -2601,8 +2708,9 @@ BRepAlgo_SequenceOfSequenceOfInteger_swigregister(BRepAlgo_SequenceOfSequenceOfI
 
 class BRepAlgo_Tool(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
+    def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def Deboucle3D(*args) -> "TopoDS_Shape" :
+    def Deboucle3D(*args):
         """
         * Remove the non valid part of an offsetshape 1 - Remove all the free boundary and the faces connex to such edges. 2 - Remove all the shapes not valid in the result (according to the side of offseting) in this verion only the first point is implemented.
 
@@ -2616,8 +2724,6 @@ class BRepAlgo_Tool(object):
         return _BRepAlgo.BRepAlgo_Tool_Deboucle3D(*args)
 
     Deboucle3D = staticmethod(Deboucle3D)
-    def __init__(self): 
-        _BRepAlgo.BRepAlgo_Tool_swiginit(self,_BRepAlgo.new_BRepAlgo_Tool())
     def __del__(self):
     	try:
     		self.thisown = False
@@ -2630,7 +2736,7 @@ BRepAlgo_Tool._kill_pointed = new_instancemethod(_BRepAlgo.BRepAlgo_Tool__kill_p
 BRepAlgo_Tool_swigregister = _BRepAlgo.BRepAlgo_Tool_swigregister
 BRepAlgo_Tool_swigregister(BRepAlgo_Tool)
 
-def BRepAlgo_Tool_Deboucle3D(*args) -> "TopoDS_Shape" :
+def BRepAlgo_Tool_Deboucle3D(*args):
   """
     * Remove the non valid part of an offsetshape 1 - Remove all the free boundary and the faces connex to such edges. 2 - Remove all the shapes not valid in the result (according to the side of offseting) in this verion only the first point is implemented.
 
@@ -2737,6 +2843,22 @@ class BRepAlgo_Section(BRepAlgo_BooleanOperation):
         :type PerformNow: bool
         :rtype: None
 
+        :param Sh1:
+        :type Sh1: TopoDS_Shape &
+        :param Sh2:
+        :type Sh2: TopoDS_Shape &
+        :param PerformNow: default value is Standard_True
+        :type PerformNow: bool
+        :rtype: None
+
+        :param Sh:
+        :type Sh: TopoDS_Shape &
+        :param Pl:
+        :type Pl: gp_Pln
+        :param PerformNow: default value is Standard_True
+        :type PerformNow: bool
+        :rtype: None
+
         :param Sh:
         :type Sh: TopoDS_Shape &
         :param Pl:
@@ -2749,6 +2871,22 @@ class BRepAlgo_Section(BRepAlgo_BooleanOperation):
         :type Sh: TopoDS_Shape &
         :param Sf:
         :type Sf: Handle_Geom_Surface &
+        :param PerformNow: default value is Standard_True
+        :type PerformNow: bool
+        :rtype: None
+
+        :param Sh:
+        :type Sh: TopoDS_Shape &
+        :param Sf:
+        :type Sf: Handle_Geom_Surface &
+        :param PerformNow: default value is Standard_True
+        :type PerformNow: bool
+        :rtype: None
+
+        :param Sf:
+        :type Sf: Handle_Geom_Surface &
+        :param Sh:
+        :type Sh: TopoDS_Shape &
         :param PerformNow: default value is Standard_True
         :type PerformNow: bool
         :rtype: None
@@ -2771,9 +2909,19 @@ class BRepAlgo_Section(BRepAlgo_BooleanOperation):
         :type PerformNow: bool
         :rtype: None
 
+        * This and the above algorithms construct a framework for computing the section lines of - the two shapes Sh1 and Sh2, or - the shape Sh and the plane Pl, or - the shape Sh and the surface Sf, or - the surface Sf and the shape Sh, or - the two surfaces Sf1 and Sf2, and builds the result if PerformNow equals true, its default value. If PerformNow equals false, the intersection will be computed later by the function Build. The constructed shape will be returned by the function Shape. This is a compound object composed of edges. These intersection edges may be built: - on new intersection lines, or - on coincident portions of edges in the two intersected shapes. These intersection edges are independent: they are not chained or grouped in wires. If no intersection edge exists, the result is an empty compound object. Note that other objects than TopoDS_Shape shapes involved in these syntaxes are converted into faces or shells before performing the computation of the intersection. A shape resulting from this conversion can be retrieved with the function Shape1 or Shape2. Parametric 2D curves on intersection edges No parametric 2D curve (pcurve) is defined for each elementary edge of the result. To attach such parametric curves to the constructed edges you may use a constructor with the PerformNow flag equal to false; then you use: - the function ComputePCurveOn1 to ask for the additional computation of a pcurve in the parametric space of the first shape, - the function ComputePCurveOn2 to ask for the additional computation of a pcurve in the parametric space of the second shape, - in the end, the function Build to construct the result. Note that as a result, pcurves will only be added on edges built on new intersection lines. Approximation of intersection edges The underlying 3D geometry attached to each elementary edge of the result is: - analytic where possible, provided the corresponding geometry corresponds to a type of analytic curve defined in the Geom package; for example, the intersection of a cylindrical shape with a plane gives an ellipse or a circle; - or elsewhere, given as a succession of points grouped together in a BSpline curve of degree 1. If you prefer to have an attached 3D geometry which is a BSpline approximation of the computed set of points on computed elementary intersection edges whose underlying geometry is not analytic, you may use a constructor with the PerformNow flag equal to false. Then you use: - the function Approximation to ask for this computation option, and - the function Build to construct the result. Note that as a result, approximations will only be computed on edges built on new intersection lines. Example You may also combine these computation options. In the following example: - each elementary edge of the computed intersection, built on a new intersection line, which does not correspond to an analytic Geom curve, will be approximated by a BSpline curve whose degree is not greater than 8. - each elementary edge built on a new intersection line, will have: - a pcurve in the parametric space of the shape S1, - no pcurve in the parametric space of the shape S2. // TopoDS_Shape S1 = ... , S2 = ... ; Standard_Boolean PerformNow = Standard_False; BRepAlgo_Section S ( S1, S2, PerformNow ); S.ComputePCurveOn1 (Standard_True); S.Approximation (Standard_True); S.Build(); TopoDS_Shape R = S.Shape();
+
+        :param Sf1:
+        :type Sf1: Handle_Geom_Surface &
+        :param Sf2:
+        :type Sf2: Handle_Geom_Surface &
+        :param PerformNow: default value is Standard_True
+        :type PerformNow: bool
+        :rtype: None
+
         """
         _BRepAlgo.BRepAlgo_Section_swiginit(self,_BRepAlgo.new_BRepAlgo_Section(*args))
-    def Init1(self, *args) -> "void" :
+    def Init1(self, *args):
         """
         * Initializes the first part
 
@@ -2796,7 +2944,7 @@ class BRepAlgo_Section(BRepAlgo_BooleanOperation):
         """
         return _BRepAlgo.BRepAlgo_Section_Init1(self, *args)
 
-    def Init2(self, *args) -> "void" :
+    def Init2(self, *args):
         """
         * initialize second part
 
@@ -2819,7 +2967,7 @@ class BRepAlgo_Section(BRepAlgo_BooleanOperation):
         """
         return _BRepAlgo.BRepAlgo_Section_Init2(self, *args)
 
-    def Approximation(self, *args) -> "void" :
+    def Approximation(self, *args):
         """
         * Defines an option for computation of further intersections. This computation will be performed by the function Build in this framework. By default, the underlying 3D geometry attached to each elementary edge of the result of a computed intersection is: - analytic where possible, provided the corresponding geometry corresponds to a type of analytic curve defined in the Geom package; for example the intersection of a cylindrical shape with a plane gives an ellipse or a circle; - or elsewhere, given as a succession of points grouped together in a BSpline curve of degree 1. If Approx equals true, when further computations are performed in this framework with the function Build, these edges will have an attached 3D geometry which is a BSpline approximation of the computed set of points. Note that as a result, approximations will be computed on edges built only on new intersection lines.
 
@@ -2830,7 +2978,7 @@ class BRepAlgo_Section(BRepAlgo_BooleanOperation):
         """
         return _BRepAlgo.BRepAlgo_Section_Approximation(self, *args)
 
-    def ComputePCurveOn1(self, *args) -> "void" :
+    def ComputePCurveOn1(self, *args):
         """
         * Indicates if the Pcurve must be (or not) performed on first part.
 
@@ -2841,7 +2989,7 @@ class BRepAlgo_Section(BRepAlgo_BooleanOperation):
         """
         return _BRepAlgo.BRepAlgo_Section_ComputePCurveOn1(self, *args)
 
-    def ComputePCurveOn2(self, *args) -> "void" :
+    def ComputePCurveOn2(self, *args):
         """
         * Define options for the computation of further intersections which will be performed by the function Build in this framework. By default, no parametric 2D curve (pcurve) is defined for the elementary edges of the result. If ComputePCurve1 equals true, further computations performed in this framework with the function Build will attach an additional pcurve in the parametric space of the first shape to the constructed edges. If ComputePCurve2 equals true, the additional pcurve will be attached to the constructed edges in the parametric space of the second shape. These two functions may be used together. Note that as a result, pcurves will only be added onto edges built on new intersection lines.
 
@@ -2852,7 +3000,7 @@ class BRepAlgo_Section(BRepAlgo_BooleanOperation):
         """
         return _BRepAlgo.BRepAlgo_Section_ComputePCurveOn2(self, *args)
 
-    def HasAncestorFaceOn1(self, *args) -> "Standard_Boolean" :
+    def HasAncestorFaceOn1(self, *args):
         """
         * //!Identifies the ancestor faces of the new intersection edge E resulting from the last computation performed in this framework, that is, the faces of the two original shapes on which the edge E lies: - HasAncestorFaceOn1 gives the ancestor face in the first shape, and These functions return: - true if an ancestor face F is found, or - false if not. An ancestor face is identifiable for the edge E if the three following conditions are satisfied: - the first part on which this algorithm performed its last computation is a shape, that is, it was not given as a surface or a plane at the time of construction of this algorithm or at a later time by the Init1 function, - E is one of the elementary edges built by the last computation of this section algorithm, - the edge E is built on an intersection curve. In other words, E is a new edge built on the intersection curve, not on edges belonging to the intersecting shapes. To use these functions properly, you have to test the returned Boolean value before using the ancestor face: F is significant only if the returned Boolean value equals true.
 
@@ -2865,7 +3013,7 @@ class BRepAlgo_Section(BRepAlgo_BooleanOperation):
         """
         return _BRepAlgo.BRepAlgo_Section_HasAncestorFaceOn1(self, *args)
 
-    def HasAncestorFaceOn2(self, *args) -> "Standard_Boolean" :
+    def HasAncestorFaceOn2(self, *args):
         """
         * Identifies the ancestor faces of the new intersection edge E resulting from the last computation performed in this framework, that is, the faces of the two original shapes on which the edge E lies: - HasAncestorFaceOn2 gives the ancestor face in the second shape. These functions return: - true if an ancestor face F is found, or - false if not. An ancestor face is identifiable for the edge E if the three following conditions are satisfied: - the first part on which this algorithm performed its last computation is a shape, that is, it was not given as a surface or a plane at the time of construction of this algorithm or at a later time by the Init1 function, - E is one of the elementary edges built by the last computation of this section algorithm, - the edge E is built on an intersection curve. In other words, E is a new edge built on the intersection curve, not on edges belonging to the intersecting shapes. To use these functions properly, you have to test the returned Boolean value before using the ancestor face: F is significant only if the returned Boolean value equals true.
 

@@ -156,21 +156,21 @@ class GC_MakeMirror(object):
 
         """
         _GC.GC_MakeMirror_swiginit(self,_GC.new_GC_MakeMirror(*args))
-    def Value(self, *args) -> "Handle_Geom_Transformation const &" :
+    def Value(self):
         """
         * Returns the constructed transformation.
 
         :rtype: Handle_Geom_Transformation
 
         """
-        return _GC.GC_MakeMirror_Value(self, *args)
+        return _GC.GC_MakeMirror_Value(self)
 
-    def Operator(self, *args) -> "Handle_Geom_Transformation const &" :
+    def Operator(self):
         """
         :rtype: Handle_Geom_Transformation
 
         """
-        return _GC.GC_MakeMirror_Operator(self, *args)
+        return _GC.GC_MakeMirror_Operator(self)
 
     def __del__(self):
     	try:
@@ -219,21 +219,21 @@ class GC_MakeRotation(object):
 
         """
         _GC.GC_MakeRotation_swiginit(self,_GC.new_GC_MakeRotation(*args))
-    def Value(self, *args) -> "Handle_Geom_Transformation const &" :
+    def Value(self):
         """
         * Returns the constructed transformation.
 
         :rtype: Handle_Geom_Transformation
 
         """
-        return _GC.GC_MakeRotation_Value(self, *args)
+        return _GC.GC_MakeRotation_Value(self)
 
-    def Operator(self, *args) -> "Handle_Geom_Transformation const &" :
+    def Operator(self):
         """
         :rtype: Handle_Geom_Transformation
 
         """
-        return _GC.GC_MakeRotation_Operator(self, *args)
+        return _GC.GC_MakeRotation_Operator(self)
 
     def __del__(self):
     	try:
@@ -264,21 +264,21 @@ class GC_MakeScale(object):
 
         """
         _GC.GC_MakeScale_swiginit(self,_GC.new_GC_MakeScale(*args))
-    def Value(self, *args) -> "Handle_Geom_Transformation const &" :
+    def Value(self):
         """
         * Returns the constructed transformation.
 
         :rtype: Handle_Geom_Transformation
 
         """
-        return _GC.GC_MakeScale_Value(self, *args)
+        return _GC.GC_MakeScale_Value(self)
 
-    def Operator(self, *args) -> "Handle_Geom_Transformation const &" :
+    def Operator(self):
         """
         :rtype: Handle_Geom_Transformation
 
         """
-        return _GC.GC_MakeScale_Operator(self, *args)
+        return _GC.GC_MakeScale_Operator(self)
 
     def __del__(self):
     	try:
@@ -315,21 +315,21 @@ class GC_MakeTranslation(object):
 
         """
         _GC.GC_MakeTranslation_swiginit(self,_GC.new_GC_MakeTranslation(*args))
-    def Value(self, *args) -> "Handle_Geom_Transformation const &" :
+    def Value(self):
         """
         * Returns the constructed transformation.
 
         :rtype: Handle_Geom_Transformation
 
         """
-        return _GC.GC_MakeTranslation_Value(self, *args)
+        return _GC.GC_MakeTranslation_Value(self)
 
-    def Operator(self, *args) -> "Handle_Geom_Transformation const &" :
+    def Operator(self):
         """
         :rtype: Handle_Geom_Transformation
 
         """
-        return _GC.GC_MakeTranslation_Operator(self, *args)
+        return _GC.GC_MakeTranslation_Operator(self)
 
     def __del__(self):
     	try:
@@ -347,27 +347,26 @@ GC_MakeTranslation_swigregister(GC_MakeTranslation)
 
 class GC_Root(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
+    def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def IsDone(self, *args) -> "Standard_Boolean" :
+    def IsDone(self):
         """
         * Returns true if the construction is successful.
 
         :rtype: bool
 
         """
-        return _GC.GC_Root_IsDone(self, *args)
+        return _GC.GC_Root_IsDone(self)
 
-    def Status(self, *args) -> "gce_ErrorType" :
+    def Status(self):
         """
         * Returns the status of the construction: - gce_Done, if the construction is successful, or - another value of the gce_ErrorType enumeration indicating why the construction failed.
 
         :rtype: gce_ErrorType
 
         """
-        return _GC.GC_Root_Status(self, *args)
+        return _GC.GC_Root_Status(self)
 
-    def __init__(self): 
-        _GC.GC_Root_swiginit(self,_GC.new_GC_Root())
     def __del__(self):
     	try:
     		self.thisown = False
@@ -445,21 +444,21 @@ class GC_MakeArcOfCircle(GC_Root):
 
         """
         _GC.GC_MakeArcOfCircle_swiginit(self,_GC.new_GC_MakeArcOfCircle(*args))
-    def Value(self, *args) -> "Handle_Geom_TrimmedCurve const &" :
+    def Value(self):
         """
         * Returns the constructed arc of circle. Exceptions StdFail_NotDone if no arc of circle is constructed.
 
         :rtype: Handle_Geom_TrimmedCurve
 
         """
-        return _GC.GC_MakeArcOfCircle_Value(self, *args)
+        return _GC.GC_MakeArcOfCircle_Value(self)
 
-    def Operator(self, *args) -> "Handle_Geom_TrimmedCurve const &" :
+    def Operator(self):
         """
         :rtype: Handle_Geom_TrimmedCurve
 
         """
-        return _GC.GC_MakeArcOfCircle_Operator(self, *args)
+        return _GC.GC_MakeArcOfCircle_Operator(self)
 
     def __del__(self):
     	try:
@@ -518,21 +517,21 @@ class GC_MakeArcOfEllipse(GC_Root):
 
         """
         _GC.GC_MakeArcOfEllipse_swiginit(self,_GC.new_GC_MakeArcOfEllipse(*args))
-    def Value(self, *args) -> "Handle_Geom_TrimmedCurve const &" :
+    def Value(self):
         """
         * Returns the constructed arc of ellipse.
 
         :rtype: Handle_Geom_TrimmedCurve
 
         """
-        return _GC.GC_MakeArcOfEllipse_Value(self, *args)
+        return _GC.GC_MakeArcOfEllipse_Value(self)
 
-    def Operator(self, *args) -> "Handle_Geom_TrimmedCurve const &" :
+    def Operator(self):
         """
         :rtype: Handle_Geom_TrimmedCurve
 
         """
-        return _GC.GC_MakeArcOfEllipse_Operator(self, *args)
+        return _GC.GC_MakeArcOfEllipse_Operator(self)
 
     def __del__(self):
     	try:
@@ -591,21 +590,21 @@ class GC_MakeArcOfHyperbola(GC_Root):
 
         """
         _GC.GC_MakeArcOfHyperbola_swiginit(self,_GC.new_GC_MakeArcOfHyperbola(*args))
-    def Value(self, *args) -> "Handle_Geom_TrimmedCurve const &" :
+    def Value(self):
         """
         * Returns the constructed arc of hyperbola.
 
         :rtype: Handle_Geom_TrimmedCurve
 
         """
-        return _GC.GC_MakeArcOfHyperbola_Value(self, *args)
+        return _GC.GC_MakeArcOfHyperbola_Value(self)
 
-    def Operator(self, *args) -> "Handle_Geom_TrimmedCurve const &" :
+    def Operator(self):
         """
         :rtype: Handle_Geom_TrimmedCurve
 
         """
-        return _GC.GC_MakeArcOfHyperbola_Operator(self, *args)
+        return _GC.GC_MakeArcOfHyperbola_Operator(self)
 
     def __del__(self):
     	try:
@@ -664,21 +663,21 @@ class GC_MakeArcOfParabola(GC_Root):
 
         """
         _GC.GC_MakeArcOfParabola_swiginit(self,_GC.new_GC_MakeArcOfParabola(*args))
-    def Value(self, *args) -> "Handle_Geom_TrimmedCurve const &" :
+    def Value(self):
         """
         * Returns the constructed arc of parabola.
 
         :rtype: Handle_Geom_TrimmedCurve
 
         """
-        return _GC.GC_MakeArcOfParabola_Value(self, *args)
+        return _GC.GC_MakeArcOfParabola_Value(self)
 
-    def Operator(self, *args) -> "Handle_Geom_TrimmedCurve const &" :
+    def Operator(self):
         """
         :rtype: Handle_Geom_TrimmedCurve
 
         """
-        return _GC.GC_MakeArcOfParabola_Operator(self, *args)
+        return _GC.GC_MakeArcOfParabola_Operator(self)
 
     def __del__(self):
     	try:
@@ -769,21 +768,21 @@ class GC_MakeCircle(GC_Root):
 
         """
         _GC.GC_MakeCircle_swiginit(self,_GC.new_GC_MakeCircle(*args))
-    def Value(self, *args) -> "Handle_Geom_Circle const &" :
+    def Value(self):
         """
         * Returns the constructed circle. Exceptions StdFail_NotDone if no circle is constructed.
 
         :rtype: Handle_Geom_Circle
 
         """
-        return _GC.GC_MakeCircle_Value(self, *args)
+        return _GC.GC_MakeCircle_Value(self)
 
-    def Operator(self, *args) -> "Handle_Geom_Circle const &" :
+    def Operator(self):
         """
         :rtype: Handle_Geom_Circle
 
         """
-        return _GC.GC_MakeCircle_Operator(self, *args)
+        return _GC.GC_MakeCircle_Operator(self)
 
     def __del__(self):
     	try:
@@ -882,21 +881,21 @@ class GC_MakeConicalSurface(GC_Root):
 
         """
         _GC.GC_MakeConicalSurface_swiginit(self,_GC.new_GC_MakeConicalSurface(*args))
-    def Value(self, *args) -> "Handle_Geom_ConicalSurface const &" :
+    def Value(self):
         """
         * Returns the constructed cone. Exceptions StdFail_NotDone if no cone is constructed.
 
         :rtype: Handle_Geom_ConicalSurface
 
         """
-        return _GC.GC_MakeConicalSurface_Value(self, *args)
+        return _GC.GC_MakeConicalSurface_Value(self)
 
-    def Operator(self, *args) -> "Handle_Geom_ConicalSurface const &" :
+    def Operator(self):
         """
         :rtype: Handle_Geom_ConicalSurface
 
         """
-        return _GC.GC_MakeConicalSurface_Operator(self, *args)
+        return _GC.GC_MakeConicalSurface_Operator(self)
 
     def __del__(self):
     	try:
@@ -973,21 +972,21 @@ class GC_MakeCylindricalSurface(GC_Root):
 
         """
         _GC.GC_MakeCylindricalSurface_swiginit(self,_GC.new_GC_MakeCylindricalSurface(*args))
-    def Value(self, *args) -> "Handle_Geom_CylindricalSurface const &" :
+    def Value(self):
         """
         * Returns the constructed cylinder. Exceptions StdFail_NotDone if no cylinder is constructed.
 
         :rtype: Handle_Geom_CylindricalSurface
 
         """
-        return _GC.GC_MakeCylindricalSurface_Value(self, *args)
+        return _GC.GC_MakeCylindricalSurface_Value(self)
 
-    def Operator(self, *args) -> "Handle_Geom_CylindricalSurface const &" :
+    def Operator(self):
         """
         :rtype: Handle_Geom_CylindricalSurface
 
         """
-        return _GC.GC_MakeCylindricalSurface_Operator(self, *args)
+        return _GC.GC_MakeCylindricalSurface_Operator(self)
 
     def __del__(self):
     	try:
@@ -1036,21 +1035,21 @@ class GC_MakeEllipse(GC_Root):
 
         """
         _GC.GC_MakeEllipse_swiginit(self,_GC.new_GC_MakeEllipse(*args))
-    def Value(self, *args) -> "Handle_Geom_Ellipse const &" :
+    def Value(self):
         """
         * Returns the constructed ellipse. Exceptions StdFail_NotDone if no ellipse is constructed.
 
         :rtype: Handle_Geom_Ellipse
 
         """
-        return _GC.GC_MakeEllipse_Value(self, *args)
+        return _GC.GC_MakeEllipse_Value(self)
 
-    def Operator(self, *args) -> "Handle_Geom_Ellipse const &" :
+    def Operator(self):
         """
         :rtype: Handle_Geom_Ellipse
 
         """
-        return _GC.GC_MakeEllipse_Operator(self, *args)
+        return _GC.GC_MakeEllipse_Operator(self)
 
     def __del__(self):
     	try:
@@ -1099,21 +1098,21 @@ class GC_MakeHyperbola(GC_Root):
 
         """
         _GC.GC_MakeHyperbola_swiginit(self,_GC.new_GC_MakeHyperbola(*args))
-    def Value(self, *args) -> "Handle_Geom_Hyperbola const &" :
+    def Value(self):
         """
         * Returns the constructed hyperbola. Exceptions StdFail_NotDone if no hyperbola is constructed.
 
         :rtype: Handle_Geom_Hyperbola
 
         """
-        return _GC.GC_MakeHyperbola_Value(self, *args)
+        return _GC.GC_MakeHyperbola_Value(self)
 
-    def Operator(self, *args) -> "Handle_Geom_Hyperbola const &" :
+    def Operator(self):
         """
         :rtype: Handle_Geom_Hyperbola
 
         """
-        return _GC.GC_MakeHyperbola_Operator(self, *args)
+        return _GC.GC_MakeHyperbola_Operator(self)
 
     def __del__(self):
     	try:
@@ -1172,21 +1171,21 @@ class GC_MakeLine(GC_Root):
 
         """
         _GC.GC_MakeLine_swiginit(self,_GC.new_GC_MakeLine(*args))
-    def Value(self, *args) -> "Handle_Geom_Line const &" :
+    def Value(self):
         """
         * Returns the constructed line. Exceptions StdFail_NotDone if no line is constructed.
 
         :rtype: Handle_Geom_Line
 
         """
-        return _GC.GC_MakeLine_Value(self, *args)
+        return _GC.GC_MakeLine_Value(self)
 
-    def Operator(self, *args) -> "Handle_Geom_Line const &" :
+    def Operator(self):
         """
         :rtype: Handle_Geom_Line
 
         """
-        return _GC.GC_MakeLine_Operator(self, *args)
+        return _GC.GC_MakeLine_Operator(self)
 
     def __del__(self):
     	try:
@@ -1273,21 +1272,21 @@ class GC_MakePlane(GC_Root):
 
         """
         _GC.GC_MakePlane_swiginit(self,_GC.new_GC_MakePlane(*args))
-    def Value(self, *args) -> "Handle_Geom_Plane const &" :
+    def Value(self):
         """
         * Returns the constructed plane. Exceptions StdFail_NotDone if no plane is constructed.
 
         :rtype: Handle_Geom_Plane
 
         """
-        return _GC.GC_MakePlane_Value(self, *args)
+        return _GC.GC_MakePlane_Value(self)
 
-    def Operator(self, *args) -> "Handle_Geom_Plane const &" :
+    def Operator(self):
         """
         :rtype: Handle_Geom_Plane
 
         """
-        return _GC.GC_MakePlane_Operator(self, *args)
+        return _GC.GC_MakePlane_Operator(self)
 
     def __del__(self):
     	try:
@@ -1348,21 +1347,21 @@ class GC_MakeSegment(GC_Root):
 
         """
         _GC.GC_MakeSegment_swiginit(self,_GC.new_GC_MakeSegment(*args))
-    def Value(self, *args) -> "Handle_Geom_TrimmedCurve const &" :
+    def Value(self):
         """
         * Returns the constructed line segment.
 
         :rtype: Handle_Geom_TrimmedCurve
 
         """
-        return _GC.GC_MakeSegment_Value(self, *args)
+        return _GC.GC_MakeSegment_Value(self)
 
-    def Operator(self, *args) -> "Handle_Geom_TrimmedCurve const &" :
+    def Operator(self):
         """
         :rtype: Handle_Geom_TrimmedCurve
 
         """
-        return _GC.GC_MakeSegment_Operator(self, *args)
+        return _GC.GC_MakeSegment_Operator(self)
 
     def __del__(self):
     	try:
@@ -1409,21 +1408,21 @@ class GC_MakeTrimmedCone(GC_Root):
 
         """
         _GC.GC_MakeTrimmedCone_swiginit(self,_GC.new_GC_MakeTrimmedCone(*args))
-    def Value(self, *args) -> "Handle_Geom_RectangularTrimmedSurface const &" :
+    def Value(self):
         """
         * Returns the constructed trimmed cone. StdFail_NotDone if no trimmed cone is constructed.
 
         :rtype: Handle_Geom_RectangularTrimmedSurface
 
         """
-        return _GC.GC_MakeTrimmedCone_Value(self, *args)
+        return _GC.GC_MakeTrimmedCone_Value(self)
 
-    def Operator(self, *args) -> "Handle_Geom_RectangularTrimmedSurface const &" :
+    def Operator(self):
         """
         :rtype: Handle_Geom_RectangularTrimmedSurface
 
         """
-        return _GC.GC_MakeTrimmedCone_Operator(self, *args)
+        return _GC.GC_MakeTrimmedCone_Operator(self)
 
     def __del__(self):
     	try:
@@ -1494,21 +1493,21 @@ class GC_MakeTrimmedCylinder(GC_Root):
 
         """
         _GC.GC_MakeTrimmedCylinder_swiginit(self,_GC.new_GC_MakeTrimmedCylinder(*args))
-    def Value(self, *args) -> "Handle_Geom_RectangularTrimmedSurface const &" :
+    def Value(self):
         """
         * Returns the constructed trimmed cylinder. Exceptions StdFail_NotDone if no trimmed cylinder is constructed.
 
         :rtype: Handle_Geom_RectangularTrimmedSurface
 
         """
-        return _GC.GC_MakeTrimmedCylinder_Value(self, *args)
+        return _GC.GC_MakeTrimmedCylinder_Value(self)
 
-    def Operator(self, *args) -> "Handle_Geom_RectangularTrimmedSurface const &" :
+    def Operator(self):
         """
         :rtype: Handle_Geom_RectangularTrimmedSurface
 
         """
-        return _GC.GC_MakeTrimmedCylinder_Operator(self, *args)
+        return _GC.GC_MakeTrimmedCylinder_Operator(self)
 
     def __del__(self):
     	try:

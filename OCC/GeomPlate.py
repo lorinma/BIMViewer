@@ -136,9 +136,9 @@ class GeomPlate_Aij(object):
         :rtype: None
 
         :param anInd1:
-        :type anInd1: int
+        :type anInd1: Standard_Integer
         :param anInd2:
-        :type anInd2: int
+        :type anInd2: Standard_Integer
         :param aVec:
         :type aVec: gp_Vec
         :rtype: None
@@ -163,22 +163,22 @@ class GeomPlate_Array1OfHCurveOnSurface(object):
     def __init__(self, *args): 
         """
         :param Low:
-        :type Low: int
+        :type Low: Standard_Integer
         :param Up:
-        :type Up: int
+        :type Up: Standard_Integer
         :rtype: None
 
         :param Item:
         :type Item: Handle_Adaptor3d_HCurveOnSurface &
         :param Low:
-        :type Low: int
+        :type Low: Standard_Integer
         :param Up:
-        :type Up: int
+        :type Up: Standard_Integer
         :rtype: None
 
         """
         _GeomPlate.GeomPlate_Array1OfHCurveOnSurface_swiginit(self,_GeomPlate.new_GeomPlate_Array1OfHCurveOnSurface(*args))
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
         :param V:
         :type V: Handle_Adaptor3d_HCurveOnSurface &
@@ -187,21 +187,21 @@ class GeomPlate_Array1OfHCurveOnSurface(object):
         """
         return _GeomPlate.GeomPlate_Array1OfHCurveOnSurface_Init(self, *args)
 
-    def Destroy(self, *args) -> "void" :
+    def Destroy(self):
         """
         :rtype: None
 
         """
-        return _GeomPlate.GeomPlate_Array1OfHCurveOnSurface_Destroy(self, *args)
+        return _GeomPlate.GeomPlate_Array1OfHCurveOnSurface_Destroy(self)
 
-    def IsAllocated(self, *args) -> "Standard_Boolean" :
+    def IsAllocated(self):
         """
         :rtype: bool
 
         """
-        return _GeomPlate.GeomPlate_Array1OfHCurveOnSurface_IsAllocated(self, *args)
+        return _GeomPlate.GeomPlate_Array1OfHCurveOnSurface_IsAllocated(self)
 
-    def Assign(self, *args) -> "GeomPlate_Array1OfHCurveOnSurface const &" :
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: GeomPlate_Array1OfHCurveOnSurface &
@@ -210,7 +210,7 @@ class GeomPlate_Array1OfHCurveOnSurface(object):
         """
         return _GeomPlate.GeomPlate_Array1OfHCurveOnSurface_Assign(self, *args)
 
-    def Set(self, *args) -> "GeomPlate_Array1OfHCurveOnSurface const &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: GeomPlate_Array1OfHCurveOnSurface &
@@ -219,31 +219,31 @@ class GeomPlate_Array1OfHCurveOnSurface(object):
         """
         return _GeomPlate.GeomPlate_Array1OfHCurveOnSurface_Set(self, *args)
 
-    def Length(self, *args) -> "Standard_Integer" :
+    def Length(self):
         """
         :rtype: int
 
         """
-        return _GeomPlate.GeomPlate_Array1OfHCurveOnSurface_Length(self, *args)
+        return _GeomPlate.GeomPlate_Array1OfHCurveOnSurface_Length(self)
 
-    def Lower(self, *args) -> "Standard_Integer" :
+    def Lower(self):
         """
         :rtype: int
 
         """
-        return _GeomPlate.GeomPlate_Array1OfHCurveOnSurface_Lower(self, *args)
+        return _GeomPlate.GeomPlate_Array1OfHCurveOnSurface_Lower(self)
 
-    def Upper(self, *args) -> "Standard_Integer" :
+    def Upper(self):
         """
         :rtype: int
 
         """
-        return _GeomPlate.GeomPlate_Array1OfHCurveOnSurface_Upper(self, *args)
+        return _GeomPlate.GeomPlate_Array1OfHCurveOnSurface_Upper(self)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Value:
         :type Value: Handle_Adaptor3d_HCurveOnSurface &
         :rtype: None
@@ -251,19 +251,19 @@ class GeomPlate_Array1OfHCurveOnSurface(object):
         """
         return _GeomPlate.GeomPlate_Array1OfHCurveOnSurface_SetValue(self, *args)
 
-    def Value(self, *args) -> "Handle_Adaptor3d_HCurveOnSurface const &" :
+    def Value(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Handle_Adaptor3d_HCurveOnSurface
 
         """
         return _GeomPlate.GeomPlate_Array1OfHCurveOnSurface_Value(self, *args)
 
-    def ChangeValue(self, *args) -> "Handle_Adaptor3d_HCurveOnSurface &" :
+    def ChangeValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Handle_Adaptor3d_HCurveOnSurface
 
         """
@@ -298,22 +298,22 @@ class GeomPlate_Array1OfSequenceOfReal(object):
     def __init__(self, *args): 
         """
         :param Low:
-        :type Low: int
+        :type Low: Standard_Integer
         :param Up:
-        :type Up: int
+        :type Up: Standard_Integer
         :rtype: None
 
         :param Item:
         :type Item: TColStd_SequenceOfReal &
         :param Low:
-        :type Low: int
+        :type Low: Standard_Integer
         :param Up:
-        :type Up: int
+        :type Up: Standard_Integer
         :rtype: None
 
         """
         _GeomPlate.GeomPlate_Array1OfSequenceOfReal_swiginit(self,_GeomPlate.new_GeomPlate_Array1OfSequenceOfReal(*args))
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
         :param V:
         :type V: TColStd_SequenceOfReal &
@@ -322,21 +322,21 @@ class GeomPlate_Array1OfSequenceOfReal(object):
         """
         return _GeomPlate.GeomPlate_Array1OfSequenceOfReal_Init(self, *args)
 
-    def Destroy(self, *args) -> "void" :
+    def Destroy(self):
         """
         :rtype: None
 
         """
-        return _GeomPlate.GeomPlate_Array1OfSequenceOfReal_Destroy(self, *args)
+        return _GeomPlate.GeomPlate_Array1OfSequenceOfReal_Destroy(self)
 
-    def IsAllocated(self, *args) -> "Standard_Boolean" :
+    def IsAllocated(self):
         """
         :rtype: bool
 
         """
-        return _GeomPlate.GeomPlate_Array1OfSequenceOfReal_IsAllocated(self, *args)
+        return _GeomPlate.GeomPlate_Array1OfSequenceOfReal_IsAllocated(self)
 
-    def Assign(self, *args) -> "GeomPlate_Array1OfSequenceOfReal const &" :
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: GeomPlate_Array1OfSequenceOfReal &
@@ -345,7 +345,7 @@ class GeomPlate_Array1OfSequenceOfReal(object):
         """
         return _GeomPlate.GeomPlate_Array1OfSequenceOfReal_Assign(self, *args)
 
-    def Set(self, *args) -> "GeomPlate_Array1OfSequenceOfReal const &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: GeomPlate_Array1OfSequenceOfReal &
@@ -354,31 +354,31 @@ class GeomPlate_Array1OfSequenceOfReal(object):
         """
         return _GeomPlate.GeomPlate_Array1OfSequenceOfReal_Set(self, *args)
 
-    def Length(self, *args) -> "Standard_Integer" :
+    def Length(self):
         """
         :rtype: int
 
         """
-        return _GeomPlate.GeomPlate_Array1OfSequenceOfReal_Length(self, *args)
+        return _GeomPlate.GeomPlate_Array1OfSequenceOfReal_Length(self)
 
-    def Lower(self, *args) -> "Standard_Integer" :
+    def Lower(self):
         """
         :rtype: int
 
         """
-        return _GeomPlate.GeomPlate_Array1OfSequenceOfReal_Lower(self, *args)
+        return _GeomPlate.GeomPlate_Array1OfSequenceOfReal_Lower(self)
 
-    def Upper(self, *args) -> "Standard_Integer" :
+    def Upper(self):
         """
         :rtype: int
 
         """
-        return _GeomPlate.GeomPlate_Array1OfSequenceOfReal_Upper(self, *args)
+        return _GeomPlate.GeomPlate_Array1OfSequenceOfReal_Upper(self)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Value:
         :type Value: TColStd_SequenceOfReal &
         :rtype: None
@@ -386,19 +386,19 @@ class GeomPlate_Array1OfSequenceOfReal(object):
         """
         return _GeomPlate.GeomPlate_Array1OfSequenceOfReal_SetValue(self, *args)
 
-    def Value(self, *args) -> "TColStd_SequenceOfReal const &" :
+    def Value(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: TColStd_SequenceOfReal
 
         """
         return _GeomPlate.GeomPlate_Array1OfSequenceOfReal_Value(self, *args)
 
-    def ChangeValue(self, *args) -> "TColStd_SequenceOfReal &" :
+    def ChangeValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: TColStd_SequenceOfReal
 
         """
@@ -437,13 +437,13 @@ class GeomPlate_BuildAveragePlane(object):
         :param Pts:
         :type Pts: Handle_TColgp_HArray1OfPnt
         :param NbBoundPoints:
-        :type NbBoundPoints: int
+        :type NbBoundPoints: Standard_Integer
         :param Tol:
         :type Tol: float
         :param POption:
-        :type POption: int
+        :type POption: Standard_Integer
         :param NOption:
-        :type NOption: int
+        :type NOption: Standard_Integer
         :rtype: None
 
         * Creates the plane from the 'best vector'
@@ -456,43 +456,43 @@ class GeomPlate_BuildAveragePlane(object):
 
         """
         _GeomPlate.GeomPlate_BuildAveragePlane_swiginit(self,_GeomPlate.new_GeomPlate_BuildAveragePlane(*args))
-    def Plane(self, *args) -> "Handle_Geom_Plane" :
+    def Plane(self):
         """
         * Return the average Plane.
 
         :rtype: Handle_Geom_Plane
 
         """
-        return _GeomPlate.GeomPlate_BuildAveragePlane_Plane(self, *args)
+        return _GeomPlate.GeomPlate_BuildAveragePlane_Plane(self)
 
-    def Line(self, *args) -> "Handle_Geom_Line" :
+    def Line(self):
         """
         * Return a Line when 2 eigenvalues are null.
 
         :rtype: Handle_Geom_Line
 
         """
-        return _GeomPlate.GeomPlate_BuildAveragePlane_Line(self, *args)
+        return _GeomPlate.GeomPlate_BuildAveragePlane_Line(self)
 
-    def IsPlane(self, *args) -> "Standard_Boolean" :
+    def IsPlane(self):
         """
         * return OK if is a plane.
 
         :rtype: bool
 
         """
-        return _GeomPlate.GeomPlate_BuildAveragePlane_IsPlane(self, *args)
+        return _GeomPlate.GeomPlate_BuildAveragePlane_IsPlane(self)
 
-    def IsLine(self, *args) -> "Standard_Boolean" :
+    def IsLine(self):
         """
         * return OK if is a line.
 
         :rtype: bool
 
         """
-        return _GeomPlate.GeomPlate_BuildAveragePlane_IsLine(self, *args)
+        return _GeomPlate.GeomPlate_BuildAveragePlane_IsLine(self)
 
-    def MinMaxBox(self, *args) -> "void" :
+    def MinMaxBox(self):
         """
         * computes the minimal box to include all normal projection points of the initial array on the plane.
 
@@ -507,9 +507,9 @@ class GeomPlate_BuildAveragePlane(object):
         :rtype: None
 
         """
-        return _GeomPlate.GeomPlate_BuildAveragePlane_MinMaxBox(self, *args)
+        return _GeomPlate.GeomPlate_BuildAveragePlane_MinMaxBox(self)
 
-    def HalfSpace(*args) -> "Standard_Boolean" :
+    def HalfSpace(*args):
         """
         :param NewNormals:
         :type NewNormals: TColgp_SequenceOfVec
@@ -544,7 +544,7 @@ GeomPlate_BuildAveragePlane._kill_pointed = new_instancemethod(_GeomPlate.GeomPl
 GeomPlate_BuildAveragePlane_swigregister = _GeomPlate.GeomPlate_BuildAveragePlane_swigregister
 GeomPlate_BuildAveragePlane_swigregister(GeomPlate_BuildAveragePlane)
 
-def GeomPlate_BuildAveragePlane_HalfSpace(*args) -> "Standard_Boolean" :
+def GeomPlate_BuildAveragePlane_HalfSpace(*args):
   """
     :param NewNormals:
     :type NewNormals: TColgp_SequenceOfVec
@@ -575,9 +575,153 @@ class GeomPlate_BuildPlateSurface(object):
         :param Tang:
         :type Tang: Handle_TColStd_HArray1OfInteger &
         :param Degree:
-        :type Degree: int
+        :type Degree: Standard_Integer
         :param NbIter: default value is 3
-        :type NbIter: int
+        :type NbIter: Standard_Integer
+        :param Tol2d: default value is 0.00001
+        :type Tol2d: float
+        :param Tol3d: default value is 0.0001
+        :type Tol3d: float
+        :param TolAng: default value is 0.01
+        :type TolAng: float
+        :param TolCurv: default value is 0.1
+        :type TolCurv: float
+        :param Anisotropie: default value is Standard_False
+        :type Anisotropie: bool
+        :rtype: None
+
+        * Constructor compatible with the old version with this constructor the constraint are given in a Array of Curve on Surface The array NbPoints contains the number of points for each constraint. The Array Tang contains the order of constraint for each Constraint: The possible values for this order has to be -1 , 0 , 1 , 2 . Order i means constraint Gi. NbIter is the maximum number of iteration to optimise the number of points for resolution Degree is the degree of resolution for Plate Tol2d is the tolerance used to test if two points of different constraint are identical in the parametric space of the initial surface Tol3d is used to test if two identical points in the 2d space are identical in 3d space TolAng is used to compare the angle between normal of two identical points in the 2d space Raises ConstructionError;
+
+        :param NPoints:
+        :type NPoints: Handle_TColStd_HArray1OfInteger &
+        :param TabCurve:
+        :type TabCurve: Handle_GeomPlate_HArray1OfHCurveOnSurface &
+        :param Tang:
+        :type Tang: Handle_TColStd_HArray1OfInteger &
+        :param Degree:
+        :type Degree: Standard_Integer
+        :param NbIter: default value is 3
+        :type NbIter: Standard_Integer
+        :param Tol2d: default value is 0.00001
+        :type Tol2d: float
+        :param Tol3d: default value is 0.0001
+        :type Tol3d: float
+        :param TolAng: default value is 0.01
+        :type TolAng: float
+        :param TolCurv: default value is 0.1
+        :type TolCurv: float
+        :param Anisotropie: default value is Standard_False
+        :type Anisotropie: bool
+        :rtype: None
+
+        * Constructor compatible with the old version with this constructor the constraint are given in a Array of Curve on Surface The array NbPoints contains the number of points for each constraint. The Array Tang contains the order of constraint for each Constraint: The possible values for this order has to be -1 , 0 , 1 , 2 . Order i means constraint Gi. NbIter is the maximum number of iteration to optimise the number of points for resolution Degree is the degree of resolution for Plate Tol2d is the tolerance used to test if two points of different constraint are identical in the parametric space of the initial surface Tol3d is used to test if two identical points in the 2d space are identical in 3d space TolAng is used to compare the angle between normal of two identical points in the 2d space Raises ConstructionError;
+
+        :param NPoints:
+        :type NPoints: Handle_TColStd_HArray1OfInteger &
+        :param TabCurve:
+        :type TabCurve: Handle_GeomPlate_HArray1OfHCurveOnSurface &
+        :param Tang:
+        :type Tang: Handle_TColStd_HArray1OfInteger &
+        :param Degree:
+        :type Degree: Standard_Integer
+        :param NbIter: default value is 3
+        :type NbIter: Standard_Integer
+        :param Tol2d: default value is 0.00001
+        :type Tol2d: float
+        :param Tol3d: default value is 0.0001
+        :type Tol3d: float
+        :param TolAng: default value is 0.01
+        :type TolAng: float
+        :param TolCurv: default value is 0.1
+        :type TolCurv: float
+        :param Anisotropie: default value is Standard_False
+        :type Anisotropie: bool
+        :rtype: None
+
+        * Constructor compatible with the old version with this constructor the constraint are given in a Array of Curve on Surface The array NbPoints contains the number of points for each constraint. The Array Tang contains the order of constraint for each Constraint: The possible values for this order has to be -1 , 0 , 1 , 2 . Order i means constraint Gi. NbIter is the maximum number of iteration to optimise the number of points for resolution Degree is the degree of resolution for Plate Tol2d is the tolerance used to test if two points of different constraint are identical in the parametric space of the initial surface Tol3d is used to test if two identical points in the 2d space are identical in 3d space TolAng is used to compare the angle between normal of two identical points in the 2d space Raises ConstructionError;
+
+        :param NPoints:
+        :type NPoints: Handle_TColStd_HArray1OfInteger &
+        :param TabCurve:
+        :type TabCurve: Handle_GeomPlate_HArray1OfHCurveOnSurface &
+        :param Tang:
+        :type Tang: Handle_TColStd_HArray1OfInteger &
+        :param Degree:
+        :type Degree: Standard_Integer
+        :param NbIter: default value is 3
+        :type NbIter: Standard_Integer
+        :param Tol2d: default value is 0.00001
+        :type Tol2d: float
+        :param Tol3d: default value is 0.0001
+        :type Tol3d: float
+        :param TolAng: default value is 0.01
+        :type TolAng: float
+        :param TolCurv: default value is 0.1
+        :type TolCurv: float
+        :param Anisotropie: default value is Standard_False
+        :type Anisotropie: bool
+        :rtype: None
+
+        * Constructor compatible with the old version with this constructor the constraint are given in a Array of Curve on Surface The array NbPoints contains the number of points for each constraint. The Array Tang contains the order of constraint for each Constraint: The possible values for this order has to be -1 , 0 , 1 , 2 . Order i means constraint Gi. NbIter is the maximum number of iteration to optimise the number of points for resolution Degree is the degree of resolution for Plate Tol2d is the tolerance used to test if two points of different constraint are identical in the parametric space of the initial surface Tol3d is used to test if two identical points in the 2d space are identical in 3d space TolAng is used to compare the angle between normal of two identical points in the 2d space Raises ConstructionError;
+
+        :param NPoints:
+        :type NPoints: Handle_TColStd_HArray1OfInteger &
+        :param TabCurve:
+        :type TabCurve: Handle_GeomPlate_HArray1OfHCurveOnSurface &
+        :param Tang:
+        :type Tang: Handle_TColStd_HArray1OfInteger &
+        :param Degree:
+        :type Degree: Standard_Integer
+        :param NbIter: default value is 3
+        :type NbIter: Standard_Integer
+        :param Tol2d: default value is 0.00001
+        :type Tol2d: float
+        :param Tol3d: default value is 0.0001
+        :type Tol3d: float
+        :param TolAng: default value is 0.01
+        :type TolAng: float
+        :param TolCurv: default value is 0.1
+        :type TolCurv: float
+        :param Anisotropie: default value is Standard_False
+        :type Anisotropie: bool
+        :rtype: None
+
+        * Constructor compatible with the old version with this constructor the constraint are given in a Array of Curve on Surface The array NbPoints contains the number of points for each constraint. The Array Tang contains the order of constraint for each Constraint: The possible values for this order has to be -1 , 0 , 1 , 2 . Order i means constraint Gi. NbIter is the maximum number of iteration to optimise the number of points for resolution Degree is the degree of resolution for Plate Tol2d is the tolerance used to test if two points of different constraint are identical in the parametric space of the initial surface Tol3d is used to test if two identical points in the 2d space are identical in 3d space TolAng is used to compare the angle between normal of two identical points in the 2d space Raises ConstructionError;
+
+        :param NPoints:
+        :type NPoints: Handle_TColStd_HArray1OfInteger &
+        :param TabCurve:
+        :type TabCurve: Handle_GeomPlate_HArray1OfHCurveOnSurface &
+        :param Tang:
+        :type Tang: Handle_TColStd_HArray1OfInteger &
+        :param Degree:
+        :type Degree: Standard_Integer
+        :param NbIter: default value is 3
+        :type NbIter: Standard_Integer
+        :param Tol2d: default value is 0.00001
+        :type Tol2d: float
+        :param Tol3d: default value is 0.0001
+        :type Tol3d: float
+        :param TolAng: default value is 0.01
+        :type TolAng: float
+        :param TolCurv: default value is 0.1
+        :type TolCurv: float
+        :param Anisotropie: default value is Standard_False
+        :type Anisotropie: bool
+        :rtype: None
+
+        * Constructor compatible with the old version with this constructor the constraint are given in a Array of Curve on Surface The array NbPoints contains the number of points for each constraint. The Array Tang contains the order of constraint for each Constraint: The possible values for this order has to be -1 , 0 , 1 , 2 . Order i means constraint Gi. NbIter is the maximum number of iteration to optimise the number of points for resolution Degree is the degree of resolution for Plate Tol2d is the tolerance used to test if two points of different constraint are identical in the parametric space of the initial surface Tol3d is used to test if two identical points in the 2d space are identical in 3d space TolAng is used to compare the angle between normal of two identical points in the 2d space Raises ConstructionError;
+
+        :param NPoints:
+        :type NPoints: Handle_TColStd_HArray1OfInteger &
+        :param TabCurve:
+        :type TabCurve: Handle_GeomPlate_HArray1OfHCurveOnSurface &
+        :param Tang:
+        :type Tang: Handle_TColStd_HArray1OfInteger &
+        :param Degree:
+        :type Degree: Standard_Integer
+        :param NbIter: default value is 3
+        :type NbIter: Standard_Integer
         :param Tol2d: default value is 0.00001
         :type Tol2d: float
         :param Tol3d: default value is 0.0001
@@ -593,11 +737,171 @@ class GeomPlate_BuildPlateSurface(object):
         :param Surf:
         :type Surf: Handle_Geom_Surface &
         :param Degree: default value is 3
-        :type Degree: int
+        :type Degree: Standard_Integer
         :param NbPtsOnCur: default value is 10
-        :type NbPtsOnCur: int
+        :type NbPtsOnCur: Standard_Integer
         :param NbIter: default value is 3
-        :type NbIter: int
+        :type NbIter: Standard_Integer
+        :param Tol2d: default value is 0.00001
+        :type Tol2d: float
+        :param Tol3d: default value is 0.0001
+        :type Tol3d: float
+        :param TolAng: default value is 0.01
+        :type TolAng: float
+        :param TolCurv: default value is 0.1
+        :type TolCurv: float
+        :param Anisotropie: default value is Standard_False
+        :type Anisotropie: bool
+        :rtype: None
+
+        :param Surf:
+        :type Surf: Handle_Geom_Surface &
+        :param Degree: default value is 3
+        :type Degree: Standard_Integer
+        :param NbPtsOnCur: default value is 10
+        :type NbPtsOnCur: Standard_Integer
+        :param NbIter: default value is 3
+        :type NbIter: Standard_Integer
+        :param Tol2d: default value is 0.00001
+        :type Tol2d: float
+        :param Tol3d: default value is 0.0001
+        :type Tol3d: float
+        :param TolAng: default value is 0.01
+        :type TolAng: float
+        :param TolCurv: default value is 0.1
+        :type TolCurv: float
+        :param Anisotropie: default value is Standard_False
+        :type Anisotropie: bool
+        :rtype: None
+
+        :param Surf:
+        :type Surf: Handle_Geom_Surface &
+        :param Degree: default value is 3
+        :type Degree: Standard_Integer
+        :param NbPtsOnCur: default value is 10
+        :type NbPtsOnCur: Standard_Integer
+        :param NbIter: default value is 3
+        :type NbIter: Standard_Integer
+        :param Tol2d: default value is 0.00001
+        :type Tol2d: float
+        :param Tol3d: default value is 0.0001
+        :type Tol3d: float
+        :param TolAng: default value is 0.01
+        :type TolAng: float
+        :param TolCurv: default value is 0.1
+        :type TolCurv: float
+        :param Anisotropie: default value is Standard_False
+        :type Anisotropie: bool
+        :rtype: None
+
+        :param Surf:
+        :type Surf: Handle_Geom_Surface &
+        :param Degree: default value is 3
+        :type Degree: Standard_Integer
+        :param NbPtsOnCur: default value is 10
+        :type NbPtsOnCur: Standard_Integer
+        :param NbIter: default value is 3
+        :type NbIter: Standard_Integer
+        :param Tol2d: default value is 0.00001
+        :type Tol2d: float
+        :param Tol3d: default value is 0.0001
+        :type Tol3d: float
+        :param TolAng: default value is 0.01
+        :type TolAng: float
+        :param TolCurv: default value is 0.1
+        :type TolCurv: float
+        :param Anisotropie: default value is Standard_False
+        :type Anisotropie: bool
+        :rtype: None
+
+        :param Surf:
+        :type Surf: Handle_Geom_Surface &
+        :param Degree: default value is 3
+        :type Degree: Standard_Integer
+        :param NbPtsOnCur: default value is 10
+        :type NbPtsOnCur: Standard_Integer
+        :param NbIter: default value is 3
+        :type NbIter: Standard_Integer
+        :param Tol2d: default value is 0.00001
+        :type Tol2d: float
+        :param Tol3d: default value is 0.0001
+        :type Tol3d: float
+        :param TolAng: default value is 0.01
+        :type TolAng: float
+        :param TolCurv: default value is 0.1
+        :type TolCurv: float
+        :param Anisotropie: default value is Standard_False
+        :type Anisotropie: bool
+        :rtype: None
+
+        :param Surf:
+        :type Surf: Handle_Geom_Surface &
+        :param Degree: default value is 3
+        :type Degree: Standard_Integer
+        :param NbPtsOnCur: default value is 10
+        :type NbPtsOnCur: Standard_Integer
+        :param NbIter: default value is 3
+        :type NbIter: Standard_Integer
+        :param Tol2d: default value is 0.00001
+        :type Tol2d: float
+        :param Tol3d: default value is 0.0001
+        :type Tol3d: float
+        :param TolAng: default value is 0.01
+        :type TolAng: float
+        :param TolCurv: default value is 0.1
+        :type TolCurv: float
+        :param Anisotropie: default value is Standard_False
+        :type Anisotropie: bool
+        :rtype: None
+
+        :param Surf:
+        :type Surf: Handle_Geom_Surface &
+        :param Degree: default value is 3
+        :type Degree: Standard_Integer
+        :param NbPtsOnCur: default value is 10
+        :type NbPtsOnCur: Standard_Integer
+        :param NbIter: default value is 3
+        :type NbIter: Standard_Integer
+        :param Tol2d: default value is 0.00001
+        :type Tol2d: float
+        :param Tol3d: default value is 0.0001
+        :type Tol3d: float
+        :param TolAng: default value is 0.01
+        :type TolAng: float
+        :param TolCurv: default value is 0.1
+        :type TolCurv: float
+        :param Anisotropie: default value is Standard_False
+        :type Anisotropie: bool
+        :rtype: None
+
+        :param Surf:
+        :type Surf: Handle_Geom_Surface &
+        :param Degree: default value is 3
+        :type Degree: Standard_Integer
+        :param NbPtsOnCur: default value is 10
+        :type NbPtsOnCur: Standard_Integer
+        :param NbIter: default value is 3
+        :type NbIter: Standard_Integer
+        :param Tol2d: default value is 0.00001
+        :type Tol2d: float
+        :param Tol3d: default value is 0.0001
+        :type Tol3d: float
+        :param TolAng: default value is 0.01
+        :type TolAng: float
+        :param TolCurv: default value is 0.1
+        :type TolCurv: float
+        :param Anisotropie: default value is Standard_False
+        :type Anisotropie: bool
+        :rtype: None
+
+        :param Surf:
+        :type Surf: Handle_Geom_Surface &
+        :param Degree: default value is 3
+        :type Degree: Standard_Integer
+        :param NbPtsOnCur: default value is 10
+        :type NbPtsOnCur: Standard_Integer
+        :param NbIter: default value is 3
+        :type NbIter: Standard_Integer
         :param Tol2d: default value is 0.00001
         :type Tol2d: float
         :param Tol3d: default value is 0.0001
@@ -613,11 +917,171 @@ class GeomPlate_BuildPlateSurface(object):
         * Initializes the BuildPlateSurface framework for deforming plate surfaces using curve and point constraints. You use the first constructor if you have an initial surface to work with at construction time. If not, you use the second. You can add one later by using the method LoadInitSurface. If no initial surface is loaded, one will automatically be computed. The curve and point constraints will be defined by using the method Add. Before the call to the algorithm, the curve constraints will be transformed into sequences of discrete points. Each curve defined as a constraint will be given the value of NbPtsOnCur as the average number of points on it. Several arguments serve to improve performance of the algorithm. NbIter, for example, expresses the number of iterations allowed and is used to control the duration of computation. To optimize resolution, Degree will have the default value of 3. The surface generated must respect several tolerance values: - 2d tolerance given by Tol2d, with a default value of 0.00001 - 3d tolerance expressed by Tol3d, with a default value of 0.0001 - angular tolerance given by TolAng, with a default value of 0.01, defining the greatest angle allowed between the constraint and the target surface. Exceptions Standard_ConstructionError if NbIter is less than 1 or Degree is less than 3.
 
         :param Degree: default value is 3
-        :type Degree: int
+        :type Degree: Standard_Integer
         :param NbPtsOnCur: default value is 10
-        :type NbPtsOnCur: int
+        :type NbPtsOnCur: Standard_Integer
         :param NbIter: default value is 3
-        :type NbIter: int
+        :type NbIter: Standard_Integer
+        :param Tol2d: default value is 0.00001
+        :type Tol2d: float
+        :param Tol3d: default value is 0.0001
+        :type Tol3d: float
+        :param TolAng: default value is 0.01
+        :type TolAng: float
+        :param TolCurv: default value is 0.1
+        :type TolCurv: float
+        :param Anisotropie: default value is Standard_False
+        :type Anisotropie: bool
+        :rtype: None
+
+        * Initializes the BuildPlateSurface framework for deforming plate surfaces using curve and point constraints. You use the first constructor if you have an initial surface to work with at construction time. If not, you use the second. You can add one later by using the method LoadInitSurface. If no initial surface is loaded, one will automatically be computed. The curve and point constraints will be defined by using the method Add. Before the call to the algorithm, the curve constraints will be transformed into sequences of discrete points. Each curve defined as a constraint will be given the value of NbPtsOnCur as the average number of points on it. Several arguments serve to improve performance of the algorithm. NbIter, for example, expresses the number of iterations allowed and is used to control the duration of computation. To optimize resolution, Degree will have the default value of 3. The surface generated must respect several tolerance values: - 2d tolerance given by Tol2d, with a default value of 0.00001 - 3d tolerance expressed by Tol3d, with a default value of 0.0001 - angular tolerance given by TolAng, with a default value of 0.01, defining the greatest angle allowed between the constraint and the target surface. Exceptions Standard_ConstructionError if NbIter is less than 1 or Degree is less than 3.
+
+        :param Degree: default value is 3
+        :type Degree: Standard_Integer
+        :param NbPtsOnCur: default value is 10
+        :type NbPtsOnCur: Standard_Integer
+        :param NbIter: default value is 3
+        :type NbIter: Standard_Integer
+        :param Tol2d: default value is 0.00001
+        :type Tol2d: float
+        :param Tol3d: default value is 0.0001
+        :type Tol3d: float
+        :param TolAng: default value is 0.01
+        :type TolAng: float
+        :param TolCurv: default value is 0.1
+        :type TolCurv: float
+        :param Anisotropie: default value is Standard_False
+        :type Anisotropie: bool
+        :rtype: None
+
+        * Initializes the BuildPlateSurface framework for deforming plate surfaces using curve and point constraints. You use the first constructor if you have an initial surface to work with at construction time. If not, you use the second. You can add one later by using the method LoadInitSurface. If no initial surface is loaded, one will automatically be computed. The curve and point constraints will be defined by using the method Add. Before the call to the algorithm, the curve constraints will be transformed into sequences of discrete points. Each curve defined as a constraint will be given the value of NbPtsOnCur as the average number of points on it. Several arguments serve to improve performance of the algorithm. NbIter, for example, expresses the number of iterations allowed and is used to control the duration of computation. To optimize resolution, Degree will have the default value of 3. The surface generated must respect several tolerance values: - 2d tolerance given by Tol2d, with a default value of 0.00001 - 3d tolerance expressed by Tol3d, with a default value of 0.0001 - angular tolerance given by TolAng, with a default value of 0.01, defining the greatest angle allowed between the constraint and the target surface. Exceptions Standard_ConstructionError if NbIter is less than 1 or Degree is less than 3.
+
+        :param Degree: default value is 3
+        :type Degree: Standard_Integer
+        :param NbPtsOnCur: default value is 10
+        :type NbPtsOnCur: Standard_Integer
+        :param NbIter: default value is 3
+        :type NbIter: Standard_Integer
+        :param Tol2d: default value is 0.00001
+        :type Tol2d: float
+        :param Tol3d: default value is 0.0001
+        :type Tol3d: float
+        :param TolAng: default value is 0.01
+        :type TolAng: float
+        :param TolCurv: default value is 0.1
+        :type TolCurv: float
+        :param Anisotropie: default value is Standard_False
+        :type Anisotropie: bool
+        :rtype: None
+
+        * Initializes the BuildPlateSurface framework for deforming plate surfaces using curve and point constraints. You use the first constructor if you have an initial surface to work with at construction time. If not, you use the second. You can add one later by using the method LoadInitSurface. If no initial surface is loaded, one will automatically be computed. The curve and point constraints will be defined by using the method Add. Before the call to the algorithm, the curve constraints will be transformed into sequences of discrete points. Each curve defined as a constraint will be given the value of NbPtsOnCur as the average number of points on it. Several arguments serve to improve performance of the algorithm. NbIter, for example, expresses the number of iterations allowed and is used to control the duration of computation. To optimize resolution, Degree will have the default value of 3. The surface generated must respect several tolerance values: - 2d tolerance given by Tol2d, with a default value of 0.00001 - 3d tolerance expressed by Tol3d, with a default value of 0.0001 - angular tolerance given by TolAng, with a default value of 0.01, defining the greatest angle allowed between the constraint and the target surface. Exceptions Standard_ConstructionError if NbIter is less than 1 or Degree is less than 3.
+
+        :param Degree: default value is 3
+        :type Degree: Standard_Integer
+        :param NbPtsOnCur: default value is 10
+        :type NbPtsOnCur: Standard_Integer
+        :param NbIter: default value is 3
+        :type NbIter: Standard_Integer
+        :param Tol2d: default value is 0.00001
+        :type Tol2d: float
+        :param Tol3d: default value is 0.0001
+        :type Tol3d: float
+        :param TolAng: default value is 0.01
+        :type TolAng: float
+        :param TolCurv: default value is 0.1
+        :type TolCurv: float
+        :param Anisotropie: default value is Standard_False
+        :type Anisotropie: bool
+        :rtype: None
+
+        * Initializes the BuildPlateSurface framework for deforming plate surfaces using curve and point constraints. You use the first constructor if you have an initial surface to work with at construction time. If not, you use the second. You can add one later by using the method LoadInitSurface. If no initial surface is loaded, one will automatically be computed. The curve and point constraints will be defined by using the method Add. Before the call to the algorithm, the curve constraints will be transformed into sequences of discrete points. Each curve defined as a constraint will be given the value of NbPtsOnCur as the average number of points on it. Several arguments serve to improve performance of the algorithm. NbIter, for example, expresses the number of iterations allowed and is used to control the duration of computation. To optimize resolution, Degree will have the default value of 3. The surface generated must respect several tolerance values: - 2d tolerance given by Tol2d, with a default value of 0.00001 - 3d tolerance expressed by Tol3d, with a default value of 0.0001 - angular tolerance given by TolAng, with a default value of 0.01, defining the greatest angle allowed between the constraint and the target surface. Exceptions Standard_ConstructionError if NbIter is less than 1 or Degree is less than 3.
+
+        :param Degree: default value is 3
+        :type Degree: Standard_Integer
+        :param NbPtsOnCur: default value is 10
+        :type NbPtsOnCur: Standard_Integer
+        :param NbIter: default value is 3
+        :type NbIter: Standard_Integer
+        :param Tol2d: default value is 0.00001
+        :type Tol2d: float
+        :param Tol3d: default value is 0.0001
+        :type Tol3d: float
+        :param TolAng: default value is 0.01
+        :type TolAng: float
+        :param TolCurv: default value is 0.1
+        :type TolCurv: float
+        :param Anisotropie: default value is Standard_False
+        :type Anisotropie: bool
+        :rtype: None
+
+        * Initializes the BuildPlateSurface framework for deforming plate surfaces using curve and point constraints. You use the first constructor if you have an initial surface to work with at construction time. If not, you use the second. You can add one later by using the method LoadInitSurface. If no initial surface is loaded, one will automatically be computed. The curve and point constraints will be defined by using the method Add. Before the call to the algorithm, the curve constraints will be transformed into sequences of discrete points. Each curve defined as a constraint will be given the value of NbPtsOnCur as the average number of points on it. Several arguments serve to improve performance of the algorithm. NbIter, for example, expresses the number of iterations allowed and is used to control the duration of computation. To optimize resolution, Degree will have the default value of 3. The surface generated must respect several tolerance values: - 2d tolerance given by Tol2d, with a default value of 0.00001 - 3d tolerance expressed by Tol3d, with a default value of 0.0001 - angular tolerance given by TolAng, with a default value of 0.01, defining the greatest angle allowed between the constraint and the target surface. Exceptions Standard_ConstructionError if NbIter is less than 1 or Degree is less than 3.
+
+        :param Degree: default value is 3
+        :type Degree: Standard_Integer
+        :param NbPtsOnCur: default value is 10
+        :type NbPtsOnCur: Standard_Integer
+        :param NbIter: default value is 3
+        :type NbIter: Standard_Integer
+        :param Tol2d: default value is 0.00001
+        :type Tol2d: float
+        :param Tol3d: default value is 0.0001
+        :type Tol3d: float
+        :param TolAng: default value is 0.01
+        :type TolAng: float
+        :param TolCurv: default value is 0.1
+        :type TolCurv: float
+        :param Anisotropie: default value is Standard_False
+        :type Anisotropie: bool
+        :rtype: None
+
+        * Initializes the BuildPlateSurface framework for deforming plate surfaces using curve and point constraints. You use the first constructor if you have an initial surface to work with at construction time. If not, you use the second. You can add one later by using the method LoadInitSurface. If no initial surface is loaded, one will automatically be computed. The curve and point constraints will be defined by using the method Add. Before the call to the algorithm, the curve constraints will be transformed into sequences of discrete points. Each curve defined as a constraint will be given the value of NbPtsOnCur as the average number of points on it. Several arguments serve to improve performance of the algorithm. NbIter, for example, expresses the number of iterations allowed and is used to control the duration of computation. To optimize resolution, Degree will have the default value of 3. The surface generated must respect several tolerance values: - 2d tolerance given by Tol2d, with a default value of 0.00001 - 3d tolerance expressed by Tol3d, with a default value of 0.0001 - angular tolerance given by TolAng, with a default value of 0.01, defining the greatest angle allowed between the constraint and the target surface. Exceptions Standard_ConstructionError if NbIter is less than 1 or Degree is less than 3.
+
+        :param Degree: default value is 3
+        :type Degree: Standard_Integer
+        :param NbPtsOnCur: default value is 10
+        :type NbPtsOnCur: Standard_Integer
+        :param NbIter: default value is 3
+        :type NbIter: Standard_Integer
+        :param Tol2d: default value is 0.00001
+        :type Tol2d: float
+        :param Tol3d: default value is 0.0001
+        :type Tol3d: float
+        :param TolAng: default value is 0.01
+        :type TolAng: float
+        :param TolCurv: default value is 0.1
+        :type TolCurv: float
+        :param Anisotropie: default value is Standard_False
+        :type Anisotropie: bool
+        :rtype: None
+
+        * Initializes the BuildPlateSurface framework for deforming plate surfaces using curve and point constraints. You use the first constructor if you have an initial surface to work with at construction time. If not, you use the second. You can add one later by using the method LoadInitSurface. If no initial surface is loaded, one will automatically be computed. The curve and point constraints will be defined by using the method Add. Before the call to the algorithm, the curve constraints will be transformed into sequences of discrete points. Each curve defined as a constraint will be given the value of NbPtsOnCur as the average number of points on it. Several arguments serve to improve performance of the algorithm. NbIter, for example, expresses the number of iterations allowed and is used to control the duration of computation. To optimize resolution, Degree will have the default value of 3. The surface generated must respect several tolerance values: - 2d tolerance given by Tol2d, with a default value of 0.00001 - 3d tolerance expressed by Tol3d, with a default value of 0.0001 - angular tolerance given by TolAng, with a default value of 0.01, defining the greatest angle allowed between the constraint and the target surface. Exceptions Standard_ConstructionError if NbIter is less than 1 or Degree is less than 3.
+
+        :param Degree: default value is 3
+        :type Degree: Standard_Integer
+        :param NbPtsOnCur: default value is 10
+        :type NbPtsOnCur: Standard_Integer
+        :param NbIter: default value is 3
+        :type NbIter: Standard_Integer
+        :param Tol2d: default value is 0.00001
+        :type Tol2d: float
+        :param Tol3d: default value is 0.0001
+        :type Tol3d: float
+        :param TolAng: default value is 0.01
+        :type TolAng: float
+        :param TolCurv: default value is 0.1
+        :type TolCurv: float
+        :param Anisotropie: default value is Standard_False
+        :type Anisotropie: bool
+        :rtype: None
+
+        * Initializes the BuildPlateSurface framework for deforming plate surfaces using curve and point constraints. You use the first constructor if you have an initial surface to work with at construction time. If not, you use the second. You can add one later by using the method LoadInitSurface. If no initial surface is loaded, one will automatically be computed. The curve and point constraints will be defined by using the method Add. Before the call to the algorithm, the curve constraints will be transformed into sequences of discrete points. Each curve defined as a constraint will be given the value of NbPtsOnCur as the average number of points on it. Several arguments serve to improve performance of the algorithm. NbIter, for example, expresses the number of iterations allowed and is used to control the duration of computation. To optimize resolution, Degree will have the default value of 3. The surface generated must respect several tolerance values: - 2d tolerance given by Tol2d, with a default value of 0.00001 - 3d tolerance expressed by Tol3d, with a default value of 0.0001 - angular tolerance given by TolAng, with a default value of 0.01, defining the greatest angle allowed between the constraint and the target surface. Exceptions Standard_ConstructionError if NbIter is less than 1 or Degree is less than 3.
+
+        :param Degree: default value is 3
+        :type Degree: Standard_Integer
+        :param NbPtsOnCur: default value is 10
+        :type NbPtsOnCur: Standard_Integer
+        :param NbIter: default value is 3
+        :type NbIter: Standard_Integer
         :param Tol2d: default value is 0.00001
         :type Tol2d: float
         :param Tol3d: default value is 0.0001
@@ -632,16 +1096,16 @@ class GeomPlate_BuildPlateSurface(object):
 
         """
         _GeomPlate.GeomPlate_BuildPlateSurface_swiginit(self,_GeomPlate.new_GeomPlate_BuildPlateSurface(*args))
-    def Init(self, *args) -> "void" :
+    def Init(self):
         """
         * Resets all constraints
 
         :rtype: None
 
         """
-        return _GeomPlate.GeomPlate_BuildPlateSurface_Init(self, *args)
+        return _GeomPlate.GeomPlate_BuildPlateSurface_Init(self)
 
-    def LoadInitSurface(self, *args) -> "void" :
+    def LoadInitSurface(self, *args):
         """
         * Loads the initial Surface
 
@@ -652,16 +1116,16 @@ class GeomPlate_BuildPlateSurface(object):
         """
         return _GeomPlate.GeomPlate_BuildPlateSurface_LoadInitSurface(self, *args)
 
-    def SetNbBounds(self, *args) -> "void" :
+    def SetNbBounds(self, *args):
         """
         :param NbBounds:
-        :type NbBounds: int
+        :type NbBounds: Standard_Integer
         :rtype: None
 
         """
         return _GeomPlate.GeomPlate_BuildPlateSurface_SetNbBounds(self, *args)
 
-    def Add(self, *args) -> "void" :
+    def Add(self, *args):
         """
         * Adds the linear constraint cont.
 
@@ -678,41 +1142,41 @@ class GeomPlate_BuildPlateSurface(object):
         """
         return _GeomPlate.GeomPlate_BuildPlateSurface_Add(self, *args)
 
-    def Perform(self, *args) -> "void" :
+    def Perform(self):
         """
         * Calls the algorithm and computes the plate surface using the loaded constraints. If no initial surface is given, the algorithm automatically computes one. Exceptions Standard_RangeError if the value of the constraint is null or if plate is not done.
 
         :rtype: None
 
         """
-        return _GeomPlate.GeomPlate_BuildPlateSurface_Perform(self, *args)
+        return _GeomPlate.GeomPlate_BuildPlateSurface_Perform(self)
 
-    def CurveConstraint(self, *args) -> "Handle_GeomPlate_CurveConstraint" :
+    def CurveConstraint(self, *args):
         """
         * returns the CurveConstraints of order order
 
         :param order:
-        :type order: int
+        :type order: Standard_Integer
         :rtype: Handle_GeomPlate_CurveConstraint
 
         """
         return _GeomPlate.GeomPlate_BuildPlateSurface_CurveConstraint(self, *args)
 
-    def PointConstraint(self, *args) -> "Handle_GeomPlate_PointConstraint" :
+    def PointConstraint(self, *args):
         """
         * returns the PointConstraint of order order
 
         :param order:
-        :type order: int
+        :type order: Standard_Integer
         :rtype: Handle_GeomPlate_PointConstraint
 
         """
         return _GeomPlate.GeomPlate_BuildPlateSurface_PointConstraint(self, *args)
 
-    def Disc2dContour(self, *args) -> "void" :
+    def Disc2dContour(self, *args):
         """
         :param nbp:
-        :type nbp: int
+        :type nbp: Standard_Integer
         :param Seq2d:
         :type Seq2d: TColgp_SequenceOfXY
         :rtype: None
@@ -720,12 +1184,12 @@ class GeomPlate_BuildPlateSurface(object):
         """
         return _GeomPlate.GeomPlate_BuildPlateSurface_Disc2dContour(self, *args)
 
-    def Disc3dContour(self, *args) -> "void" :
+    def Disc3dContour(self, *args):
         """
         :param nbp:
-        :type nbp: int
+        :type nbp: Standard_Integer
         :param iordre:
-        :type iordre: int
+        :type iordre: Standard_Integer
         :param Seq3d:
         :type Seq3d: TColgp_SequenceOfXYZ
         :rtype: None
@@ -733,61 +1197,61 @@ class GeomPlate_BuildPlateSurface(object):
         """
         return _GeomPlate.GeomPlate_BuildPlateSurface_Disc3dContour(self, *args)
 
-    def IsDone(self, *args) -> "Standard_Boolean" :
+    def IsDone(self):
         """
         * Tests whether computation of the plate has been completed.
 
         :rtype: bool
 
         """
-        return _GeomPlate.GeomPlate_BuildPlateSurface_IsDone(self, *args)
+        return _GeomPlate.GeomPlate_BuildPlateSurface_IsDone(self)
 
-    def Surface(self, *args) -> "Handle_GeomPlate_Surface" :
+    def Surface(self):
         """
         * Returns the result of the computation. This surface can then be used by GeomPlate_MakeApprox for converting the resulting surface into a BSpline.
 
         :rtype: Handle_GeomPlate_Surface
 
         """
-        return _GeomPlate.GeomPlate_BuildPlateSurface_Surface(self, *args)
+        return _GeomPlate.GeomPlate_BuildPlateSurface_Surface(self)
 
-    def SurfInit(self, *args) -> "Handle_Geom_Surface" :
+    def SurfInit(self):
         """
         * Returns the initial surface
 
         :rtype: Handle_Geom_Surface
 
         """
-        return _GeomPlate.GeomPlate_BuildPlateSurface_SurfInit(self, *args)
+        return _GeomPlate.GeomPlate_BuildPlateSurface_SurfInit(self)
 
-    def Sense(self, *args) -> "Handle_TColStd_HArray1OfInteger" :
+    def Sense(self):
         """
         * Allows you to ensure that the array of curves returned by Curves2d has the correct orientation. Returns the orientation of the curves in the the array returned by Curves2d. Computation changes the orientation of these curves. Consequently, this method returns the orientation prior to computation.
 
         :rtype: Handle_TColStd_HArray1OfInteger
 
         """
-        return _GeomPlate.GeomPlate_BuildPlateSurface_Sense(self, *args)
+        return _GeomPlate.GeomPlate_BuildPlateSurface_Sense(self)
 
-    def Curves2d(self, *args) -> "Handle_TColGeom2d_HArray1OfCurve" :
+    def Curves2d(self):
         """
         * Extracts the array of curves on the plate surface which correspond to the curve constraints set in Add.
 
         :rtype: Handle_TColGeom2d_HArray1OfCurve
 
         """
-        return _GeomPlate.GeomPlate_BuildPlateSurface_Curves2d(self, *args)
+        return _GeomPlate.GeomPlate_BuildPlateSurface_Curves2d(self)
 
-    def Order(self, *args) -> "Handle_TColStd_HArray1OfInteger" :
+    def Order(self):
         """
         * Returns the order of the curves in the array returned by Curves2d. Computation changes this order. Consequently, this method returns the order of the curves prior to computation.
 
         :rtype: Handle_TColStd_HArray1OfInteger
 
         """
-        return _GeomPlate.GeomPlate_BuildPlateSurface_Order(self, *args)
+        return _GeomPlate.GeomPlate_BuildPlateSurface_Order(self)
 
-    def G0Error(self, *args) -> "Standard_Real" :
+    def G0Error(self, *args):
         """
         * Returns the max distance betwen the result and the constraints
 
@@ -796,13 +1260,13 @@ class GeomPlate_BuildPlateSurface(object):
         * Returns the max distance between the result and the constraint Index
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: float
 
         """
         return _GeomPlate.GeomPlate_BuildPlateSurface_G0Error(self, *args)
 
-    def G1Error(self, *args) -> "Standard_Real" :
+    def G1Error(self, *args):
         """
         * Returns the max angle betwen the result and the constraints
 
@@ -811,13 +1275,13 @@ class GeomPlate_BuildPlateSurface(object):
         * Returns the max angle between the result and the constraint Index
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: float
 
         """
         return _GeomPlate.GeomPlate_BuildPlateSurface_G1Error(self, *args)
 
-    def G2Error(self, *args) -> "Standard_Real" :
+    def G2Error(self, *args):
         """
         * Returns the max difference of curvature betwen the result and the constraints
 
@@ -826,7 +1290,7 @@ class GeomPlate_BuildPlateSurface(object):
         * Returns the max difference of curvature between the result and the constraint Index
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: float
 
         """
@@ -876,9 +1340,73 @@ class GeomPlate_CurveConstraint(OCC.MMgt.MMgt_TShared):
         :param Boundary:
         :type Boundary: Handle_Adaptor3d_HCurveOnSurface &
         :param Order:
-        :type Order: int
+        :type Order: Standard_Integer
         :param NPt: default value is 10
-        :type NPt: int
+        :type NPt: Standard_Integer
+        :param TolDist: default value is 0.0001
+        :type TolDist: float
+        :param TolAng: default value is 0.01
+        :type TolAng: float
+        :param TolCurv: default value is 0.1
+        :type TolCurv: float
+        :rtype: None
+
+        * Create a constraint Order is the order of the constraint. The possible values for order are -1,0,1,2. Order i means constraints Gi Npt is the number of points associated with the constraint. TolDist is the maximum error to satisfy for G0 constraints TolAng is the maximum error to satisfy for G1 constraints TolCurv is the maximum error to satisfy for G2 constraints These errors can be replaced by laws of criterion. Raises ConstructionError if Order is not -1 , 0, 1, 2
+
+        :param Boundary:
+        :type Boundary: Handle_Adaptor3d_HCurveOnSurface &
+        :param Order:
+        :type Order: Standard_Integer
+        :param NPt: default value is 10
+        :type NPt: Standard_Integer
+        :param TolDist: default value is 0.0001
+        :type TolDist: float
+        :param TolAng: default value is 0.01
+        :type TolAng: float
+        :param TolCurv: default value is 0.1
+        :type TolCurv: float
+        :rtype: None
+
+        * Create a constraint Order is the order of the constraint. The possible values for order are -1,0,1,2. Order i means constraints Gi Npt is the number of points associated with the constraint. TolDist is the maximum error to satisfy for G0 constraints TolAng is the maximum error to satisfy for G1 constraints TolCurv is the maximum error to satisfy for G2 constraints These errors can be replaced by laws of criterion. Raises ConstructionError if Order is not -1 , 0, 1, 2
+
+        :param Boundary:
+        :type Boundary: Handle_Adaptor3d_HCurveOnSurface &
+        :param Order:
+        :type Order: Standard_Integer
+        :param NPt: default value is 10
+        :type NPt: Standard_Integer
+        :param TolDist: default value is 0.0001
+        :type TolDist: float
+        :param TolAng: default value is 0.01
+        :type TolAng: float
+        :param TolCurv: default value is 0.1
+        :type TolCurv: float
+        :rtype: None
+
+        * Create a constraint Order is the order of the constraint. The possible values for order are -1,0,1,2. Order i means constraints Gi Npt is the number of points associated with the constraint. TolDist is the maximum error to satisfy for G0 constraints TolAng is the maximum error to satisfy for G1 constraints TolCurv is the maximum error to satisfy for G2 constraints These errors can be replaced by laws of criterion. Raises ConstructionError if Order is not -1 , 0, 1, 2
+
+        :param Boundary:
+        :type Boundary: Handle_Adaptor3d_HCurveOnSurface &
+        :param Order:
+        :type Order: Standard_Integer
+        :param NPt: default value is 10
+        :type NPt: Standard_Integer
+        :param TolDist: default value is 0.0001
+        :type TolDist: float
+        :param TolAng: default value is 0.01
+        :type TolAng: float
+        :param TolCurv: default value is 0.1
+        :type TolCurv: float
+        :rtype: None
+
+        * Create a constraint Order is the order of the constraint. The possible values for order are -1,0,1,2. Order i means constraints Gi Npt is the number of points associated with the constraint. TolDist is the maximum error to satisfy for G0 constraints TolAng is the maximum error to satisfy for G1 constraints TolCurv is the maximum error to satisfy for G2 constraints These errors can be replaced by laws of criterion. Raises ConstructionError if Order is not -1 , 0, 1, 2
+
+        :param Boundary:
+        :type Boundary: Handle_Adaptor3d_HCurveOnSurface &
+        :param Order:
+        :type Order: Standard_Integer
+        :param NPt: default value is 10
+        :type NPt: Standard_Integer
         :param TolDist: default value is 0.0001
         :type TolDist: float
         :param TolAng: default value is 0.01
@@ -892,56 +1420,80 @@ class GeomPlate_CurveConstraint(OCC.MMgt.MMgt_TShared):
         :param Boundary:
         :type Boundary: Handle_Adaptor3d_HCurve &
         :param Tang:
-        :type Tang: int
+        :type Tang: Standard_Integer
         :param NPt: default value is 10
-        :type NPt: int
+        :type NPt: Standard_Integer
+        :param TolDist: default value is 0.0001
+        :type TolDist: float
+        :rtype: None
+
+        * Create a constraint Order is the order of the constraint. The possible values for order are -1,0. Order i means constraints Gi Npt is the number of points associated with the constraint. TolDist is the maximum error to satisfy for G0 constraints These errors can be replaced by laws of criterion. Raises ConstructionError if Order is not 0 or -1
+
+        :param Boundary:
+        :type Boundary: Handle_Adaptor3d_HCurve &
+        :param Tang:
+        :type Tang: Standard_Integer
+        :param NPt: default value is 10
+        :type NPt: Standard_Integer
+        :param TolDist: default value is 0.0001
+        :type TolDist: float
+        :rtype: None
+
+        * Create a constraint Order is the order of the constraint. The possible values for order are -1,0. Order i means constraints Gi Npt is the number of points associated with the constraint. TolDist is the maximum error to satisfy for G0 constraints These errors can be replaced by laws of criterion. Raises ConstructionError if Order is not 0 or -1
+
+        :param Boundary:
+        :type Boundary: Handle_Adaptor3d_HCurve &
+        :param Tang:
+        :type Tang: Standard_Integer
+        :param NPt: default value is 10
+        :type NPt: Standard_Integer
         :param TolDist: default value is 0.0001
         :type TolDist: float
         :rtype: None
 
         """
         _GeomPlate.GeomPlate_CurveConstraint_swiginit(self,_GeomPlate.new_GeomPlate_CurveConstraint(*args))
-    def SetOrder(self, *args) -> "void" :
+    def SetOrder(self, *args):
         """
         * Allows you to set the order of continuity required for the constraints: G0, G1, and G2, controlled respectively by G0Criterion G1Criterion and G2Criterion.
 
         :param Order:
-        :type Order: int
+        :type Order: Standard_Integer
         :rtype: None
 
         """
         return _GeomPlate.GeomPlate_CurveConstraint_SetOrder(self, *args)
 
-    def Order(self, *args) -> "Standard_Integer" :
+    def Order(self):
         """
         * Returns the order of constraint, one of G0, G1 or G2.
 
         :rtype: int
 
         """
-        return _GeomPlate.GeomPlate_CurveConstraint_Order(self, *args)
+        return _GeomPlate.GeomPlate_CurveConstraint_Order(self)
 
-    def NbPoints(self, *args) -> "Standard_Integer" :
+    def NbPoints(self):
         """
         * Returns the number of points on the curve used as a constraint. The default setting is 10. This parameter affects computation time, which increases by the cube of the number of points.
 
         :rtype: int
 
         """
-        return _GeomPlate.GeomPlate_CurveConstraint_NbPoints(self, *args)
+        return _GeomPlate.GeomPlate_CurveConstraint_NbPoints(self)
 
-    def SetNbPoints(self, *args) -> "void" :
+    def SetNbPoints(self, *args):
         """
         * Allows you to set the number of points on the curve constraint. The default setting is 10. This parameter affects computation time, which increases by the cube of the number of points.
 
         :param NewNb:
-        :type NewNb: int
+        :type NewNb: Standard_Integer
         :rtype: None
 
         """
         return _GeomPlate.GeomPlate_CurveConstraint_SetNbPoints(self, *args)
 
-    def SetG0Criterion(self, *args) -> "void" :
+    def SetG0Criterion(self, *args):
         """
         * Allows you to set the G0 criterion. This is the law defining the greatest distance allowed between the constraint and the target surface for each point of the constraint. If this criterion is not set, TolDist, the distance tolerance from the constructor, is used.
 
@@ -952,7 +1504,7 @@ class GeomPlate_CurveConstraint(OCC.MMgt.MMgt_TShared):
         """
         return _GeomPlate.GeomPlate_CurveConstraint_SetG0Criterion(self, *args)
 
-    def SetG1Criterion(self, *args) -> "void" :
+    def SetG1Criterion(self, *args):
         """
         * Allows you to set the G1 criterion. This is the law defining the greatest angle allowed between the constraint and the target surface. If this criterion is not set, TolAng, the angular tolerance from the constructor, is used. Raises ConstructionError if the curve is not on a surface
 
@@ -963,7 +1515,7 @@ class GeomPlate_CurveConstraint(OCC.MMgt.MMgt_TShared):
         """
         return _GeomPlate.GeomPlate_CurveConstraint_SetG1Criterion(self, *args)
 
-    def SetG2Criterion(self, *args) -> "void" :
+    def SetG2Criterion(self, *args):
         """
         :param G2Crit:
         :type G2Crit: Handle_Law_Function &
@@ -972,7 +1524,7 @@ class GeomPlate_CurveConstraint(OCC.MMgt.MMgt_TShared):
         """
         return _GeomPlate.GeomPlate_CurveConstraint_SetG2Criterion(self, *args)
 
-    def G0Criterion(self, *args) -> "Standard_Real" :
+    def G0Criterion(self, *args):
         """
         * Returns the G0 criterion at the parametric point U on the curve. This is the greatest distance allowed between the constraint and the target surface at U.
 
@@ -983,7 +1535,7 @@ class GeomPlate_CurveConstraint(OCC.MMgt.MMgt_TShared):
         """
         return _GeomPlate.GeomPlate_CurveConstraint_G0Criterion(self, *args)
 
-    def G1Criterion(self, *args) -> "Standard_Real" :
+    def G1Criterion(self, *args):
         """
         * Returns the G1 criterion at the parametric point U on the curve. This is the greatest angle allowed between the constraint and the target surface at U. Raises ConstructionError if the curve is not on a surface
 
@@ -994,7 +1546,7 @@ class GeomPlate_CurveConstraint(OCC.MMgt.MMgt_TShared):
         """
         return _GeomPlate.GeomPlate_CurveConstraint_G1Criterion(self, *args)
 
-    def G2Criterion(self, *args) -> "Standard_Real" :
+    def G2Criterion(self, *args):
         """
         * Returns the G2 criterion at the parametric point U on the curve. This is the greatest difference in curvature allowed between the constraint and the target surface at U. Raises ConstructionError if the curve is not on a surface
 
@@ -1005,28 +1557,28 @@ class GeomPlate_CurveConstraint(OCC.MMgt.MMgt_TShared):
         """
         return _GeomPlate.GeomPlate_CurveConstraint_G2Criterion(self, *args)
 
-    def FirstParameter(self, *args) -> "Standard_Real" :
+    def FirstParameter(self):
         """
         :rtype: float
 
         """
-        return _GeomPlate.GeomPlate_CurveConstraint_FirstParameter(self, *args)
+        return _GeomPlate.GeomPlate_CurveConstraint_FirstParameter(self)
 
-    def LastParameter(self, *args) -> "Standard_Real" :
+    def LastParameter(self):
         """
         :rtype: float
 
         """
-        return _GeomPlate.GeomPlate_CurveConstraint_LastParameter(self, *args)
+        return _GeomPlate.GeomPlate_CurveConstraint_LastParameter(self)
 
-    def Length(self, *args) -> "Standard_Real" :
+    def Length(self):
         """
         :rtype: float
 
         """
-        return _GeomPlate.GeomPlate_CurveConstraint_Length(self, *args)
+        return _GeomPlate.GeomPlate_CurveConstraint_Length(self)
 
-    def LPropSurf(self, *args) -> "GeomLProp_SLProps &" :
+    def LPropSurf(self, *args):
         """
         :param U:
         :type U: float
@@ -1035,7 +1587,7 @@ class GeomPlate_CurveConstraint(OCC.MMgt.MMgt_TShared):
         """
         return _GeomPlate.GeomPlate_CurveConstraint_LPropSurf(self, *args)
 
-    def D0(self, *args) -> "void" :
+    def D0(self, *args):
         """
         :param U:
         :type U: float
@@ -1046,7 +1598,7 @@ class GeomPlate_CurveConstraint(OCC.MMgt.MMgt_TShared):
         """
         return _GeomPlate.GeomPlate_CurveConstraint_D0(self, *args)
 
-    def D1(self, *args) -> "void" :
+    def D1(self, *args):
         """
         :param U:
         :type U: float
@@ -1061,7 +1613,7 @@ class GeomPlate_CurveConstraint(OCC.MMgt.MMgt_TShared):
         """
         return _GeomPlate.GeomPlate_CurveConstraint_D1(self, *args)
 
-    def D2(self, *args) -> "void" :
+    def D2(self, *args):
         """
         :param U:
         :type U: float
@@ -1082,14 +1634,14 @@ class GeomPlate_CurveConstraint(OCC.MMgt.MMgt_TShared):
         """
         return _GeomPlate.GeomPlate_CurveConstraint_D2(self, *args)
 
-    def Curve3d(self, *args) -> "Handle_Adaptor3d_HCurve" :
+    def Curve3d(self):
         """
         :rtype: Handle_Adaptor3d_HCurve
 
         """
-        return _GeomPlate.GeomPlate_CurveConstraint_Curve3d(self, *args)
+        return _GeomPlate.GeomPlate_CurveConstraint_Curve3d(self)
 
-    def SetCurve2dOnSurf(self, *args) -> "void" :
+    def SetCurve2dOnSurf(self, *args):
         """
         * loads a 2d curve associated the surface resulting of the constraints
 
@@ -1100,16 +1652,16 @@ class GeomPlate_CurveConstraint(OCC.MMgt.MMgt_TShared):
         """
         return _GeomPlate.GeomPlate_CurveConstraint_SetCurve2dOnSurf(self, *args)
 
-    def Curve2dOnSurf(self, *args) -> "Handle_Geom2d_Curve" :
+    def Curve2dOnSurf(self):
         """
         * Returns a 2d curve associated the surface resulting of the constraints
 
         :rtype: Handle_Geom2d_Curve
 
         """
-        return _GeomPlate.GeomPlate_CurveConstraint_Curve2dOnSurf(self, *args)
+        return _GeomPlate.GeomPlate_CurveConstraint_Curve2dOnSurf(self)
 
-    def SetProjectedCurve(self, *args) -> "void" :
+    def SetProjectedCurve(self, *args):
         """
         * loads a 2d curve resulting from the normal projection of the curve on the initial surface
 
@@ -1124,20 +1676,20 @@ class GeomPlate_CurveConstraint(OCC.MMgt.MMgt_TShared):
         """
         return _GeomPlate.GeomPlate_CurveConstraint_SetProjectedCurve(self, *args)
 
-    def ProjectedCurve(self, *args) -> "Handle_Adaptor2d_HCurve2d" :
+    def ProjectedCurve(self):
         """
         * Returns the projected curve resulting from the normal projection of the curve on the initial surface
 
         :rtype: Handle_Adaptor2d_HCurve2d
 
         """
-        return _GeomPlate.GeomPlate_CurveConstraint_ProjectedCurve(self, *args)
+        return _GeomPlate.GeomPlate_CurveConstraint_ProjectedCurve(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(GeomPlate_CurveConstraint self)"""
         return _GeomPlate.GeomPlate_CurveConstraint__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_GeomPlate_CurveConstraint" :
+    def GetHandle(self):
         """GetHandle(GeomPlate_CurveConstraint self) -> Handle_GeomPlate_CurveConstraint"""
         return _GeomPlate.GeomPlate_CurveConstraint_GetHandle(self)
 
@@ -1197,7 +1749,7 @@ Handle_GeomPlate_CurveConstraint._kill_pointed = new_instancemethod(_GeomPlate.H
 Handle_GeomPlate_CurveConstraint_swigregister = _GeomPlate.Handle_GeomPlate_CurveConstraint_swigregister
 Handle_GeomPlate_CurveConstraint_swigregister(Handle_GeomPlate_CurveConstraint)
 
-def Handle_GeomPlate_CurveConstraint_DownCast(*args) -> "Handle_GeomPlate_CurveConstraint const" :
+def Handle_GeomPlate_CurveConstraint_DownCast(*args):
   return _GeomPlate.Handle_GeomPlate_CurveConstraint_DownCast(*args)
 Handle_GeomPlate_CurveConstraint_DownCast = _GeomPlate.Handle_GeomPlate_CurveConstraint_DownCast
 
@@ -1207,22 +1759,22 @@ class GeomPlate_HArray1OfHCurveOnSurface(OCC.MMgt.MMgt_TShared):
     def __init__(self, *args): 
         """
         :param Low:
-        :type Low: int
+        :type Low: Standard_Integer
         :param Up:
-        :type Up: int
+        :type Up: Standard_Integer
         :rtype: None
 
         :param Low:
-        :type Low: int
+        :type Low: Standard_Integer
         :param Up:
-        :type Up: int
+        :type Up: Standard_Integer
         :param V:
         :type V: Handle_Adaptor3d_HCurveOnSurface &
         :rtype: None
 
         """
         _GeomPlate.GeomPlate_HArray1OfHCurveOnSurface_swiginit(self,_GeomPlate.new_GeomPlate_HArray1OfHCurveOnSurface(*args))
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
         :param V:
         :type V: Handle_Adaptor3d_HCurveOnSurface &
@@ -1231,31 +1783,31 @@ class GeomPlate_HArray1OfHCurveOnSurface(OCC.MMgt.MMgt_TShared):
         """
         return _GeomPlate.GeomPlate_HArray1OfHCurveOnSurface_Init(self, *args)
 
-    def Length(self, *args) -> "Standard_Integer" :
+    def Length(self):
         """
         :rtype: int
 
         """
-        return _GeomPlate.GeomPlate_HArray1OfHCurveOnSurface_Length(self, *args)
+        return _GeomPlate.GeomPlate_HArray1OfHCurveOnSurface_Length(self)
 
-    def Lower(self, *args) -> "Standard_Integer" :
+    def Lower(self):
         """
         :rtype: int
 
         """
-        return _GeomPlate.GeomPlate_HArray1OfHCurveOnSurface_Lower(self, *args)
+        return _GeomPlate.GeomPlate_HArray1OfHCurveOnSurface_Lower(self)
 
-    def Upper(self, *args) -> "Standard_Integer" :
+    def Upper(self):
         """
         :rtype: int
 
         """
-        return _GeomPlate.GeomPlate_HArray1OfHCurveOnSurface_Upper(self, *args)
+        return _GeomPlate.GeomPlate_HArray1OfHCurveOnSurface_Upper(self)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Value:
         :type Value: Handle_Adaptor3d_HCurveOnSurface &
         :rtype: None
@@ -1263,43 +1815,43 @@ class GeomPlate_HArray1OfHCurveOnSurface(OCC.MMgt.MMgt_TShared):
         """
         return _GeomPlate.GeomPlate_HArray1OfHCurveOnSurface_SetValue(self, *args)
 
-    def Value(self, *args) -> "Handle_Adaptor3d_HCurveOnSurface const &" :
+    def Value(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Handle_Adaptor3d_HCurveOnSurface
 
         """
         return _GeomPlate.GeomPlate_HArray1OfHCurveOnSurface_Value(self, *args)
 
-    def ChangeValue(self, *args) -> "Handle_Adaptor3d_HCurveOnSurface &" :
+    def ChangeValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Handle_Adaptor3d_HCurveOnSurface
 
         """
         return _GeomPlate.GeomPlate_HArray1OfHCurveOnSurface_ChangeValue(self, *args)
 
-    def Array1(self, *args) -> "GeomPlate_Array1OfHCurveOnSurface const &" :
+    def Array1(self):
         """
         :rtype: GeomPlate_Array1OfHCurveOnSurface
 
         """
-        return _GeomPlate.GeomPlate_HArray1OfHCurveOnSurface_Array1(self, *args)
+        return _GeomPlate.GeomPlate_HArray1OfHCurveOnSurface_Array1(self)
 
-    def ChangeArray1(self, *args) -> "GeomPlate_Array1OfHCurveOnSurface &" :
+    def ChangeArray1(self):
         """
         :rtype: GeomPlate_Array1OfHCurveOnSurface
 
         """
-        return _GeomPlate.GeomPlate_HArray1OfHCurveOnSurface_ChangeArray1(self, *args)
+        return _GeomPlate.GeomPlate_HArray1OfHCurveOnSurface_ChangeArray1(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(GeomPlate_HArray1OfHCurveOnSurface self)"""
         return _GeomPlate.GeomPlate_HArray1OfHCurveOnSurface__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_GeomPlate_HArray1OfHCurveOnSurface" :
+    def GetHandle(self):
         """GetHandle(GeomPlate_HArray1OfHCurveOnSurface self) -> Handle_GeomPlate_HArray1OfHCurveOnSurface"""
         return _GeomPlate.GeomPlate_HArray1OfHCurveOnSurface_GetHandle(self)
 
@@ -1346,7 +1898,7 @@ Handle_GeomPlate_HArray1OfHCurveOnSurface._kill_pointed = new_instancemethod(_Ge
 Handle_GeomPlate_HArray1OfHCurveOnSurface_swigregister = _GeomPlate.Handle_GeomPlate_HArray1OfHCurveOnSurface_swigregister
 Handle_GeomPlate_HArray1OfHCurveOnSurface_swigregister(Handle_GeomPlate_HArray1OfHCurveOnSurface)
 
-def Handle_GeomPlate_HArray1OfHCurveOnSurface_DownCast(*args) -> "Handle_GeomPlate_HArray1OfHCurveOnSurface const" :
+def Handle_GeomPlate_HArray1OfHCurveOnSurface_DownCast(*args):
   return _GeomPlate.Handle_GeomPlate_HArray1OfHCurveOnSurface_DownCast(*args)
 Handle_GeomPlate_HArray1OfHCurveOnSurface_DownCast = _GeomPlate.Handle_GeomPlate_HArray1OfHCurveOnSurface_DownCast
 
@@ -1356,22 +1908,22 @@ class GeomPlate_HArray1OfSequenceOfReal(OCC.MMgt.MMgt_TShared):
     def __init__(self, *args): 
         """
         :param Low:
-        :type Low: int
+        :type Low: Standard_Integer
         :param Up:
-        :type Up: int
+        :type Up: Standard_Integer
         :rtype: None
 
         :param Low:
-        :type Low: int
+        :type Low: Standard_Integer
         :param Up:
-        :type Up: int
+        :type Up: Standard_Integer
         :param V:
         :type V: TColStd_SequenceOfReal &
         :rtype: None
 
         """
         _GeomPlate.GeomPlate_HArray1OfSequenceOfReal_swiginit(self,_GeomPlate.new_GeomPlate_HArray1OfSequenceOfReal(*args))
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
         :param V:
         :type V: TColStd_SequenceOfReal &
@@ -1380,31 +1932,31 @@ class GeomPlate_HArray1OfSequenceOfReal(OCC.MMgt.MMgt_TShared):
         """
         return _GeomPlate.GeomPlate_HArray1OfSequenceOfReal_Init(self, *args)
 
-    def Length(self, *args) -> "Standard_Integer" :
+    def Length(self):
         """
         :rtype: int
 
         """
-        return _GeomPlate.GeomPlate_HArray1OfSequenceOfReal_Length(self, *args)
+        return _GeomPlate.GeomPlate_HArray1OfSequenceOfReal_Length(self)
 
-    def Lower(self, *args) -> "Standard_Integer" :
+    def Lower(self):
         """
         :rtype: int
 
         """
-        return _GeomPlate.GeomPlate_HArray1OfSequenceOfReal_Lower(self, *args)
+        return _GeomPlate.GeomPlate_HArray1OfSequenceOfReal_Lower(self)
 
-    def Upper(self, *args) -> "Standard_Integer" :
+    def Upper(self):
         """
         :rtype: int
 
         """
-        return _GeomPlate.GeomPlate_HArray1OfSequenceOfReal_Upper(self, *args)
+        return _GeomPlate.GeomPlate_HArray1OfSequenceOfReal_Upper(self)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Value:
         :type Value: TColStd_SequenceOfReal &
         :rtype: None
@@ -1412,43 +1964,43 @@ class GeomPlate_HArray1OfSequenceOfReal(OCC.MMgt.MMgt_TShared):
         """
         return _GeomPlate.GeomPlate_HArray1OfSequenceOfReal_SetValue(self, *args)
 
-    def Value(self, *args) -> "TColStd_SequenceOfReal const &" :
+    def Value(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: TColStd_SequenceOfReal
 
         """
         return _GeomPlate.GeomPlate_HArray1OfSequenceOfReal_Value(self, *args)
 
-    def ChangeValue(self, *args) -> "TColStd_SequenceOfReal &" :
+    def ChangeValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: TColStd_SequenceOfReal
 
         """
         return _GeomPlate.GeomPlate_HArray1OfSequenceOfReal_ChangeValue(self, *args)
 
-    def Array1(self, *args) -> "GeomPlate_Array1OfSequenceOfReal const &" :
+    def Array1(self):
         """
         :rtype: GeomPlate_Array1OfSequenceOfReal
 
         """
-        return _GeomPlate.GeomPlate_HArray1OfSequenceOfReal_Array1(self, *args)
+        return _GeomPlate.GeomPlate_HArray1OfSequenceOfReal_Array1(self)
 
-    def ChangeArray1(self, *args) -> "GeomPlate_Array1OfSequenceOfReal &" :
+    def ChangeArray1(self):
         """
         :rtype: GeomPlate_Array1OfSequenceOfReal
 
         """
-        return _GeomPlate.GeomPlate_HArray1OfSequenceOfReal_ChangeArray1(self, *args)
+        return _GeomPlate.GeomPlate_HArray1OfSequenceOfReal_ChangeArray1(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(GeomPlate_HArray1OfSequenceOfReal self)"""
         return _GeomPlate.GeomPlate_HArray1OfSequenceOfReal__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_GeomPlate_HArray1OfSequenceOfReal" :
+    def GetHandle(self):
         """GetHandle(GeomPlate_HArray1OfSequenceOfReal self) -> Handle_GeomPlate_HArray1OfSequenceOfReal"""
         return _GeomPlate.GeomPlate_HArray1OfSequenceOfReal_GetHandle(self)
 
@@ -1495,41 +2047,41 @@ Handle_GeomPlate_HArray1OfSequenceOfReal._kill_pointed = new_instancemethod(_Geo
 Handle_GeomPlate_HArray1OfSequenceOfReal_swigregister = _GeomPlate.Handle_GeomPlate_HArray1OfSequenceOfReal_swigregister
 Handle_GeomPlate_HArray1OfSequenceOfReal_swigregister(Handle_GeomPlate_HArray1OfSequenceOfReal)
 
-def Handle_GeomPlate_HArray1OfSequenceOfReal_DownCast(*args) -> "Handle_GeomPlate_HArray1OfSequenceOfReal const" :
+def Handle_GeomPlate_HArray1OfSequenceOfReal_DownCast(*args):
   return _GeomPlate.Handle_GeomPlate_HArray1OfSequenceOfReal_DownCast(*args)
 Handle_GeomPlate_HArray1OfSequenceOfReal_DownCast = _GeomPlate.Handle_GeomPlate_HArray1OfSequenceOfReal_DownCast
 
 class GeomPlate_HSequenceOfCurveConstraint(OCC.MMgt.MMgt_TShared):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _GeomPlate.GeomPlate_HSequenceOfCurveConstraint_swiginit(self,_GeomPlate.new_GeomPlate_HSequenceOfCurveConstraint(*args))
-    def IsEmpty(self, *args) -> "Standard_Boolean" :
+        _GeomPlate.GeomPlate_HSequenceOfCurveConstraint_swiginit(self,_GeomPlate.new_GeomPlate_HSequenceOfCurveConstraint())
+    def IsEmpty(self):
         """
         :rtype: bool
 
         """
-        return _GeomPlate.GeomPlate_HSequenceOfCurveConstraint_IsEmpty(self, *args)
+        return _GeomPlate.GeomPlate_HSequenceOfCurveConstraint_IsEmpty(self)
 
-    def Length(self, *args) -> "Standard_Integer" :
+    def Length(self):
         """
         :rtype: int
 
         """
-        return _GeomPlate.GeomPlate_HSequenceOfCurveConstraint_Length(self, *args)
+        return _GeomPlate.GeomPlate_HSequenceOfCurveConstraint_Length(self)
 
-    def Clear(self, *args) -> "void" :
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _GeomPlate.GeomPlate_HSequenceOfCurveConstraint_Clear(self, *args)
+        return _GeomPlate.GeomPlate_HSequenceOfCurveConstraint_Clear(self)
 
-    def Append(self, *args) -> "void" :
+    def Append(self, *args):
         """
         :param anItem:
         :type anItem: Handle_GeomPlate_CurveConstraint &
@@ -1542,7 +2094,7 @@ class GeomPlate_HSequenceOfCurveConstraint(OCC.MMgt.MMgt_TShared):
         """
         return _GeomPlate.GeomPlate_HSequenceOfCurveConstraint_Append(self, *args)
 
-    def Prepend(self, *args) -> "void" :
+    def Prepend(self, *args):
         """
         :param anItem:
         :type anItem: Handle_GeomPlate_CurveConstraint &
@@ -1555,23 +2107,23 @@ class GeomPlate_HSequenceOfCurveConstraint(OCC.MMgt.MMgt_TShared):
         """
         return _GeomPlate.GeomPlate_HSequenceOfCurveConstraint_Prepend(self, *args)
 
-    def Reverse(self, *args) -> "void" :
+    def Reverse(self):
         """
         :rtype: None
 
         """
-        return _GeomPlate.GeomPlate_HSequenceOfCurveConstraint_Reverse(self, *args)
+        return _GeomPlate.GeomPlate_HSequenceOfCurveConstraint_Reverse(self)
 
-    def InsertBefore(self, *args) -> "void" :
+    def InsertBefore(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :param anItem:
         :type anItem: Handle_GeomPlate_CurveConstraint &
         :rtype: None
 
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :param aSequence:
         :type aSequence: Handle_GeomPlate_HSequenceOfCurveConstraint &
         :rtype: None
@@ -1579,16 +2131,16 @@ class GeomPlate_HSequenceOfCurveConstraint(OCC.MMgt.MMgt_TShared):
         """
         return _GeomPlate.GeomPlate_HSequenceOfCurveConstraint_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args) -> "void" :
+    def InsertAfter(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :param anItem:
         :type anItem: Handle_GeomPlate_CurveConstraint &
         :rtype: None
 
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :param aSequence:
         :type aSequence: Handle_GeomPlate_HSequenceOfCurveConstraint &
         :rtype: None
@@ -1596,30 +2148,30 @@ class GeomPlate_HSequenceOfCurveConstraint(OCC.MMgt.MMgt_TShared):
         """
         return _GeomPlate.GeomPlate_HSequenceOfCurveConstraint_InsertAfter(self, *args)
 
-    def Exchange(self, *args) -> "void" :
+    def Exchange(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :param anOtherIndex:
-        :type anOtherIndex: int
+        :type anOtherIndex: Standard_Integer
         :rtype: None
 
         """
         return _GeomPlate.GeomPlate_HSequenceOfCurveConstraint_Exchange(self, *args)
 
-    def Split(self, *args) -> "Handle_GeomPlate_HSequenceOfCurveConstraint" :
+    def Split(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :rtype: Handle_GeomPlate_HSequenceOfCurveConstraint
 
         """
         return _GeomPlate.GeomPlate_HSequenceOfCurveConstraint_Split(self, *args)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :param anItem:
         :type anItem: Handle_GeomPlate_CurveConstraint &
         :rtype: None
@@ -1627,65 +2179,65 @@ class GeomPlate_HSequenceOfCurveConstraint(OCC.MMgt.MMgt_TShared):
         """
         return _GeomPlate.GeomPlate_HSequenceOfCurveConstraint_SetValue(self, *args)
 
-    def Value(self, *args) -> "Handle_GeomPlate_CurveConstraint const &" :
+    def Value(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :rtype: Handle_GeomPlate_CurveConstraint
 
         """
         return _GeomPlate.GeomPlate_HSequenceOfCurveConstraint_Value(self, *args)
 
-    def ChangeValue(self, *args) -> "Handle_GeomPlate_CurveConstraint &" :
+    def ChangeValue(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :rtype: Handle_GeomPlate_CurveConstraint
 
         """
         return _GeomPlate.GeomPlate_HSequenceOfCurveConstraint_ChangeValue(self, *args)
 
-    def Remove(self, *args) -> "void" :
+    def Remove(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :rtype: None
 
         :param fromIndex:
-        :type fromIndex: int
+        :type fromIndex: Standard_Integer
         :param toIndex:
-        :type toIndex: int
+        :type toIndex: Standard_Integer
         :rtype: None
 
         """
         return _GeomPlate.GeomPlate_HSequenceOfCurveConstraint_Remove(self, *args)
 
-    def Sequence(self, *args) -> "GeomPlate_SequenceOfCurveConstraint const &" :
+    def Sequence(self):
         """
         :rtype: GeomPlate_SequenceOfCurveConstraint
 
         """
-        return _GeomPlate.GeomPlate_HSequenceOfCurveConstraint_Sequence(self, *args)
+        return _GeomPlate.GeomPlate_HSequenceOfCurveConstraint_Sequence(self)
 
-    def ChangeSequence(self, *args) -> "GeomPlate_SequenceOfCurveConstraint &" :
+    def ChangeSequence(self):
         """
         :rtype: GeomPlate_SequenceOfCurveConstraint
 
         """
-        return _GeomPlate.GeomPlate_HSequenceOfCurveConstraint_ChangeSequence(self, *args)
+        return _GeomPlate.GeomPlate_HSequenceOfCurveConstraint_ChangeSequence(self)
 
-    def ShallowCopy(self, *args) -> "Handle_GeomPlate_HSequenceOfCurveConstraint" :
+    def ShallowCopy(self):
         """
         :rtype: Handle_GeomPlate_HSequenceOfCurveConstraint
 
         """
-        return _GeomPlate.GeomPlate_HSequenceOfCurveConstraint_ShallowCopy(self, *args)
+        return _GeomPlate.GeomPlate_HSequenceOfCurveConstraint_ShallowCopy(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(GeomPlate_HSequenceOfCurveConstraint self)"""
         return _GeomPlate.GeomPlate_HSequenceOfCurveConstraint__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_GeomPlate_HSequenceOfCurveConstraint" :
+    def GetHandle(self):
         """GetHandle(GeomPlate_HSequenceOfCurveConstraint self) -> Handle_GeomPlate_HSequenceOfCurveConstraint"""
         return _GeomPlate.GeomPlate_HSequenceOfCurveConstraint_GetHandle(self)
 
@@ -1740,41 +2292,41 @@ Handle_GeomPlate_HSequenceOfCurveConstraint._kill_pointed = new_instancemethod(_
 Handle_GeomPlate_HSequenceOfCurveConstraint_swigregister = _GeomPlate.Handle_GeomPlate_HSequenceOfCurveConstraint_swigregister
 Handle_GeomPlate_HSequenceOfCurveConstraint_swigregister(Handle_GeomPlate_HSequenceOfCurveConstraint)
 
-def Handle_GeomPlate_HSequenceOfCurveConstraint_DownCast(*args) -> "Handle_GeomPlate_HSequenceOfCurveConstraint const" :
+def Handle_GeomPlate_HSequenceOfCurveConstraint_DownCast(*args):
   return _GeomPlate.Handle_GeomPlate_HSequenceOfCurveConstraint_DownCast(*args)
 Handle_GeomPlate_HSequenceOfCurveConstraint_DownCast = _GeomPlate.Handle_GeomPlate_HSequenceOfCurveConstraint_DownCast
 
 class GeomPlate_HSequenceOfPointConstraint(OCC.MMgt.MMgt_TShared):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _GeomPlate.GeomPlate_HSequenceOfPointConstraint_swiginit(self,_GeomPlate.new_GeomPlate_HSequenceOfPointConstraint(*args))
-    def IsEmpty(self, *args) -> "Standard_Boolean" :
+        _GeomPlate.GeomPlate_HSequenceOfPointConstraint_swiginit(self,_GeomPlate.new_GeomPlate_HSequenceOfPointConstraint())
+    def IsEmpty(self):
         """
         :rtype: bool
 
         """
-        return _GeomPlate.GeomPlate_HSequenceOfPointConstraint_IsEmpty(self, *args)
+        return _GeomPlate.GeomPlate_HSequenceOfPointConstraint_IsEmpty(self)
 
-    def Length(self, *args) -> "Standard_Integer" :
+    def Length(self):
         """
         :rtype: int
 
         """
-        return _GeomPlate.GeomPlate_HSequenceOfPointConstraint_Length(self, *args)
+        return _GeomPlate.GeomPlate_HSequenceOfPointConstraint_Length(self)
 
-    def Clear(self, *args) -> "void" :
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _GeomPlate.GeomPlate_HSequenceOfPointConstraint_Clear(self, *args)
+        return _GeomPlate.GeomPlate_HSequenceOfPointConstraint_Clear(self)
 
-    def Append(self, *args) -> "void" :
+    def Append(self, *args):
         """
         :param anItem:
         :type anItem: Handle_GeomPlate_PointConstraint &
@@ -1787,7 +2339,7 @@ class GeomPlate_HSequenceOfPointConstraint(OCC.MMgt.MMgt_TShared):
         """
         return _GeomPlate.GeomPlate_HSequenceOfPointConstraint_Append(self, *args)
 
-    def Prepend(self, *args) -> "void" :
+    def Prepend(self, *args):
         """
         :param anItem:
         :type anItem: Handle_GeomPlate_PointConstraint &
@@ -1800,23 +2352,23 @@ class GeomPlate_HSequenceOfPointConstraint(OCC.MMgt.MMgt_TShared):
         """
         return _GeomPlate.GeomPlate_HSequenceOfPointConstraint_Prepend(self, *args)
 
-    def Reverse(self, *args) -> "void" :
+    def Reverse(self):
         """
         :rtype: None
 
         """
-        return _GeomPlate.GeomPlate_HSequenceOfPointConstraint_Reverse(self, *args)
+        return _GeomPlate.GeomPlate_HSequenceOfPointConstraint_Reverse(self)
 
-    def InsertBefore(self, *args) -> "void" :
+    def InsertBefore(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :param anItem:
         :type anItem: Handle_GeomPlate_PointConstraint &
         :rtype: None
 
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :param aSequence:
         :type aSequence: Handle_GeomPlate_HSequenceOfPointConstraint &
         :rtype: None
@@ -1824,16 +2376,16 @@ class GeomPlate_HSequenceOfPointConstraint(OCC.MMgt.MMgt_TShared):
         """
         return _GeomPlate.GeomPlate_HSequenceOfPointConstraint_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args) -> "void" :
+    def InsertAfter(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :param anItem:
         :type anItem: Handle_GeomPlate_PointConstraint &
         :rtype: None
 
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :param aSequence:
         :type aSequence: Handle_GeomPlate_HSequenceOfPointConstraint &
         :rtype: None
@@ -1841,30 +2393,30 @@ class GeomPlate_HSequenceOfPointConstraint(OCC.MMgt.MMgt_TShared):
         """
         return _GeomPlate.GeomPlate_HSequenceOfPointConstraint_InsertAfter(self, *args)
 
-    def Exchange(self, *args) -> "void" :
+    def Exchange(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :param anOtherIndex:
-        :type anOtherIndex: int
+        :type anOtherIndex: Standard_Integer
         :rtype: None
 
         """
         return _GeomPlate.GeomPlate_HSequenceOfPointConstraint_Exchange(self, *args)
 
-    def Split(self, *args) -> "Handle_GeomPlate_HSequenceOfPointConstraint" :
+    def Split(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :rtype: Handle_GeomPlate_HSequenceOfPointConstraint
 
         """
         return _GeomPlate.GeomPlate_HSequenceOfPointConstraint_Split(self, *args)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :param anItem:
         :type anItem: Handle_GeomPlate_PointConstraint &
         :rtype: None
@@ -1872,65 +2424,65 @@ class GeomPlate_HSequenceOfPointConstraint(OCC.MMgt.MMgt_TShared):
         """
         return _GeomPlate.GeomPlate_HSequenceOfPointConstraint_SetValue(self, *args)
 
-    def Value(self, *args) -> "Handle_GeomPlate_PointConstraint const &" :
+    def Value(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :rtype: Handle_GeomPlate_PointConstraint
 
         """
         return _GeomPlate.GeomPlate_HSequenceOfPointConstraint_Value(self, *args)
 
-    def ChangeValue(self, *args) -> "Handle_GeomPlate_PointConstraint &" :
+    def ChangeValue(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :rtype: Handle_GeomPlate_PointConstraint
 
         """
         return _GeomPlate.GeomPlate_HSequenceOfPointConstraint_ChangeValue(self, *args)
 
-    def Remove(self, *args) -> "void" :
+    def Remove(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :rtype: None
 
         :param fromIndex:
-        :type fromIndex: int
+        :type fromIndex: Standard_Integer
         :param toIndex:
-        :type toIndex: int
+        :type toIndex: Standard_Integer
         :rtype: None
 
         """
         return _GeomPlate.GeomPlate_HSequenceOfPointConstraint_Remove(self, *args)
 
-    def Sequence(self, *args) -> "GeomPlate_SequenceOfPointConstraint const &" :
+    def Sequence(self):
         """
         :rtype: GeomPlate_SequenceOfPointConstraint
 
         """
-        return _GeomPlate.GeomPlate_HSequenceOfPointConstraint_Sequence(self, *args)
+        return _GeomPlate.GeomPlate_HSequenceOfPointConstraint_Sequence(self)
 
-    def ChangeSequence(self, *args) -> "GeomPlate_SequenceOfPointConstraint &" :
+    def ChangeSequence(self):
         """
         :rtype: GeomPlate_SequenceOfPointConstraint
 
         """
-        return _GeomPlate.GeomPlate_HSequenceOfPointConstraint_ChangeSequence(self, *args)
+        return _GeomPlate.GeomPlate_HSequenceOfPointConstraint_ChangeSequence(self)
 
-    def ShallowCopy(self, *args) -> "Handle_GeomPlate_HSequenceOfPointConstraint" :
+    def ShallowCopy(self):
         """
         :rtype: Handle_GeomPlate_HSequenceOfPointConstraint
 
         """
-        return _GeomPlate.GeomPlate_HSequenceOfPointConstraint_ShallowCopy(self, *args)
+        return _GeomPlate.GeomPlate_HSequenceOfPointConstraint_ShallowCopy(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(GeomPlate_HSequenceOfPointConstraint self)"""
         return _GeomPlate.GeomPlate_HSequenceOfPointConstraint__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_GeomPlate_HSequenceOfPointConstraint" :
+    def GetHandle(self):
         """GetHandle(GeomPlate_HSequenceOfPointConstraint self) -> Handle_GeomPlate_HSequenceOfPointConstraint"""
         return _GeomPlate.GeomPlate_HSequenceOfPointConstraint_GetHandle(self)
 
@@ -1985,7 +2537,7 @@ Handle_GeomPlate_HSequenceOfPointConstraint._kill_pointed = new_instancemethod(_
 Handle_GeomPlate_HSequenceOfPointConstraint_swigregister = _GeomPlate.Handle_GeomPlate_HSequenceOfPointConstraint_swigregister
 Handle_GeomPlate_HSequenceOfPointConstraint_swigregister(Handle_GeomPlate_HSequenceOfPointConstraint)
 
-def Handle_GeomPlate_HSequenceOfPointConstraint_DownCast(*args) -> "Handle_GeomPlate_HSequenceOfPointConstraint const" :
+def Handle_GeomPlate_HSequenceOfPointConstraint_DownCast(*args):
   return _GeomPlate.Handle_GeomPlate_HSequenceOfPointConstraint_DownCast(*args)
 Handle_GeomPlate_HSequenceOfPointConstraint_DownCast = _GeomPlate.Handle_GeomPlate_HSequenceOfPointConstraint_DownCast
 
@@ -2003,9 +2555,45 @@ class GeomPlate_MakeApprox(object):
         :param Tol3d:
         :type Tol3d: float
         :param Nbmax:
-        :type Nbmax: int
+        :type Nbmax: Standard_Integer
         :param dgmax:
-        :type dgmax: int
+        :type dgmax: Standard_Integer
+        :param Continuity: default value is GeomAbs_C1
+        :type Continuity: GeomAbs_Shape
+        :param EnlargeCoeff: default value is 1.1
+        :type EnlargeCoeff: float
+        :rtype: None
+
+        * Converts SurfPlate into a Geom_BSplineSurface with n Bezier pieces (n<=Nbmax) of degree <= dgmax and an approximation error < Tol3d if possible the criterion CritPlate is satisfied if possible
+
+        :param SurfPlate:
+        :type SurfPlate: Handle_GeomPlate_Surface &
+        :param PlateCrit:
+        :type PlateCrit: AdvApp2Var_Criterion &
+        :param Tol3d:
+        :type Tol3d: float
+        :param Nbmax:
+        :type Nbmax: Standard_Integer
+        :param dgmax:
+        :type dgmax: Standard_Integer
+        :param Continuity: default value is GeomAbs_C1
+        :type Continuity: GeomAbs_Shape
+        :param EnlargeCoeff: default value is 1.1
+        :type EnlargeCoeff: float
+        :rtype: None
+
+        * Converts SurfPlate into a Geom_BSplineSurface with n Bezier pieces (n<=Nbmax) of degree <= dgmax and an approximation error < Tol3d if possible the criterion CritPlate is satisfied if possible
+
+        :param SurfPlate:
+        :type SurfPlate: Handle_GeomPlate_Surface &
+        :param PlateCrit:
+        :type PlateCrit: AdvApp2Var_Criterion &
+        :param Tol3d:
+        :type Tol3d: float
+        :param Nbmax:
+        :type Nbmax: Standard_Integer
+        :param dgmax:
+        :type dgmax: Standard_Integer
         :param Continuity: default value is GeomAbs_C1
         :type Continuity: GeomAbs_Shape
         :param EnlargeCoeff: default value is 1.1
@@ -2019,13 +2607,73 @@ class GeomPlate_MakeApprox(object):
         :param Tol3d:
         :type Tol3d: float
         :param Nbmax:
-        :type Nbmax: int
+        :type Nbmax: Standard_Integer
         :param dgmax:
-        :type dgmax: int
+        :type dgmax: Standard_Integer
         :param dmax:
         :type dmax: float
         :param CritOrder: default value is 0
-        :type CritOrder: int
+        :type CritOrder: Standard_Integer
+        :param Continuity: default value is GeomAbs_C1
+        :type Continuity: GeomAbs_Shape
+        :param EnlargeCoeff: default value is 1.1
+        :type EnlargeCoeff: float
+        :rtype: None
+
+        * Converts SurfPlate into a Geom_BSplineSurface with n Bezier pieces (n<=Nbmax) of degree <= dgmax and an approximation error < Tol3d if possible if CritOrder = -1 , no criterion is used if CritOrder = 0 , a PlateG0Criterion is used with max value > 10*dmax if CritOrder = 1 , a PlateG1Criterion is used with max value > 10*dmax WARNING : for CritOrder = 0 or 1, only the constraints points of SurfPlate  are used to evaluate the value of the criterion
+
+        :param SurfPlate:
+        :type SurfPlate: Handle_GeomPlate_Surface &
+        :param Tol3d:
+        :type Tol3d: float
+        :param Nbmax:
+        :type Nbmax: Standard_Integer
+        :param dgmax:
+        :type dgmax: Standard_Integer
+        :param dmax:
+        :type dmax: float
+        :param CritOrder: default value is 0
+        :type CritOrder: Standard_Integer
+        :param Continuity: default value is GeomAbs_C1
+        :type Continuity: GeomAbs_Shape
+        :param EnlargeCoeff: default value is 1.1
+        :type EnlargeCoeff: float
+        :rtype: None
+
+        * Converts SurfPlate into a Geom_BSplineSurface with n Bezier pieces (n<=Nbmax) of degree <= dgmax and an approximation error < Tol3d if possible if CritOrder = -1 , no criterion is used if CritOrder = 0 , a PlateG0Criterion is used with max value > 10*dmax if CritOrder = 1 , a PlateG1Criterion is used with max value > 10*dmax WARNING : for CritOrder = 0 or 1, only the constraints points of SurfPlate  are used to evaluate the value of the criterion
+
+        :param SurfPlate:
+        :type SurfPlate: Handle_GeomPlate_Surface &
+        :param Tol3d:
+        :type Tol3d: float
+        :param Nbmax:
+        :type Nbmax: Standard_Integer
+        :param dgmax:
+        :type dgmax: Standard_Integer
+        :param dmax:
+        :type dmax: float
+        :param CritOrder: default value is 0
+        :type CritOrder: Standard_Integer
+        :param Continuity: default value is GeomAbs_C1
+        :type Continuity: GeomAbs_Shape
+        :param EnlargeCoeff: default value is 1.1
+        :type EnlargeCoeff: float
+        :rtype: None
+
+        * Converts SurfPlate into a Geom_BSplineSurface with n Bezier pieces (n<=Nbmax) of degree <= dgmax and an approximation error < Tol3d if possible if CritOrder = -1 , no criterion is used if CritOrder = 0 , a PlateG0Criterion is used with max value > 10*dmax if CritOrder = 1 , a PlateG1Criterion is used with max value > 10*dmax WARNING : for CritOrder = 0 or 1, only the constraints points of SurfPlate  are used to evaluate the value of the criterion
+
+        :param SurfPlate:
+        :type SurfPlate: Handle_GeomPlate_Surface &
+        :param Tol3d:
+        :type Tol3d: float
+        :param Nbmax:
+        :type Nbmax: Standard_Integer
+        :param dgmax:
+        :type dgmax: Standard_Integer
+        :param dmax:
+        :type dmax: float
+        :param CritOrder: default value is 0
+        :type CritOrder: Standard_Integer
         :param Continuity: default value is GeomAbs_C1
         :type Continuity: GeomAbs_Shape
         :param EnlargeCoeff: default value is 1.1
@@ -2034,32 +2682,32 @@ class GeomPlate_MakeApprox(object):
 
         """
         _GeomPlate.GeomPlate_MakeApprox_swiginit(self,_GeomPlate.new_GeomPlate_MakeApprox(*args))
-    def Surface(self, *args) -> "Handle_Geom_BSplineSurface" :
+    def Surface(self):
         """
         * Returns the BSpline surface extracted from the GeomPlate_MakeApprox object.
 
         :rtype: Handle_Geom_BSplineSurface
 
         """
-        return _GeomPlate.GeomPlate_MakeApprox_Surface(self, *args)
+        return _GeomPlate.GeomPlate_MakeApprox_Surface(self)
 
-    def ApproxError(self, *args) -> "Standard_Real" :
+    def ApproxError(self):
         """
         * Returns the error in computation of the approximation surface. This is the distance between the entire target BSpline surface and the entire original surface generated by BuildPlateSurface and converted by GeomPlate_Surface.
 
         :rtype: float
 
         """
-        return _GeomPlate.GeomPlate_MakeApprox_ApproxError(self, *args)
+        return _GeomPlate.GeomPlate_MakeApprox_ApproxError(self)
 
-    def CriterionError(self, *args) -> "Standard_Real" :
+    def CriterionError(self):
         """
         * Returns the criterion error in computation of the approximation surface. This is estimated relative to the curve and point constraints only.
 
         :rtype: float
 
         """
-        return _GeomPlate.GeomPlate_MakeApprox_CriterionError(self, *args)
+        return _GeomPlate.GeomPlate_MakeApprox_CriterionError(self)
 
     def __del__(self):
     	try:
@@ -2081,6 +2729,30 @@ class GeomPlate_PlateG0Criterion(OCC.AdvApp2Var.AdvApp2Var_Criterion):
     __repr__ = _swig_repr
     def __init__(self, *args): 
         """
+        :param Data:
+        :type Data: TColgp_SequenceOfXY
+        :param G0Data:
+        :type G0Data: TColgp_SequenceOfXYZ
+        :param Maximum:
+        :type Maximum: float
+        :param Type: default value is AdvApp2Var_Absolute
+        :type Type: AdvApp2Var_CriterionType
+        :param Repart: default value is AdvApp2Var_Regular
+        :type Repart: AdvApp2Var_CriterionRepartition
+        :rtype: None
+
+        :param Data:
+        :type Data: TColgp_SequenceOfXY
+        :param G0Data:
+        :type G0Data: TColgp_SequenceOfXYZ
+        :param Maximum:
+        :type Maximum: float
+        :param Type: default value is AdvApp2Var_Absolute
+        :type Type: AdvApp2Var_CriterionType
+        :param Repart: default value is AdvApp2Var_Regular
+        :type Repart: AdvApp2Var_CriterionRepartition
+        :rtype: None
+
         :param Data:
         :type Data: TColgp_SequenceOfXY
         :param G0Data:
@@ -2124,6 +2796,30 @@ class GeomPlate_PlateG1Criterion(OCC.AdvApp2Var.AdvApp2Var_Criterion):
         :type Repart: AdvApp2Var_CriterionRepartition
         :rtype: None
 
+        :param Data:
+        :type Data: TColgp_SequenceOfXY
+        :param G1Data:
+        :type G1Data: TColgp_SequenceOfXYZ
+        :param Maximum:
+        :type Maximum: float
+        :param Type: default value is AdvApp2Var_Absolute
+        :type Type: AdvApp2Var_CriterionType
+        :param Repart: default value is AdvApp2Var_Regular
+        :type Repart: AdvApp2Var_CriterionRepartition
+        :rtype: None
+
+        :param Data:
+        :type Data: TColgp_SequenceOfXY
+        :param G1Data:
+        :type G1Data: TColgp_SequenceOfXYZ
+        :param Maximum:
+        :type Maximum: float
+        :param Type: default value is AdvApp2Var_Absolute
+        :type Type: AdvApp2Var_CriterionType
+        :param Repart: default value is AdvApp2Var_Regular
+        :type Repart: AdvApp2Var_CriterionRepartition
+        :rtype: None
+
         """
         _GeomPlate.GeomPlate_PlateG1Criterion_swiginit(self,_GeomPlate.new_GeomPlate_PlateG1Criterion(*args))
     def __del__(self):
@@ -2148,7 +2844,17 @@ class GeomPlate_PointConstraint(OCC.MMgt.MMgt_TShared):
         :param Pt:
         :type Pt: gp_Pnt
         :param Order:
-        :type Order: int
+        :type Order: Standard_Integer
+        :param TolDist: default value is 0.0001
+        :type TolDist: float
+        :rtype: None
+
+        * Constructs a point constraint object defined by Pt, a 3D point Order gives the order of constraint, one of: - -1 i.e. none, or 0 i.e.G0 when assigned to Pt - -1 i.e. none, 0 i.e. G0, 1 i.e. G1, 2 i.e. G2 when assigned to U, V and Surf. In this constructor, only TolDist is given. Distance tolerance represents the greatest distance allowed between the constraint and the target surface. Angular tolerance represents the largest angle allowed between the constraint and the target surface. Curvature tolerance represents the greatest difference in curvature allowed between the constraint and the target surface. Raises ConstructionError if Order is not 0 or -1
+
+        :param Pt:
+        :type Pt: gp_Pnt
+        :param Order:
+        :type Order: Standard_Integer
         :param TolDist: default value is 0.0001
         :type TolDist: float
         :rtype: None
@@ -2162,7 +2868,61 @@ class GeomPlate_PointConstraint(OCC.MMgt.MMgt_TShared):
         :param Surf:
         :type Surf: Handle_Geom_Surface &
         :param Order:
-        :type Order: int
+        :type Order: Standard_Integer
+        :param TolDist: default value is 0.0001
+        :type TolDist: float
+        :param TolAng: default value is 0.01
+        :type TolAng: float
+        :param TolCurv: default value is 0.1
+        :type TolCurv: float
+        :rtype: None
+
+        * Constructs a point constraint object defined by the intersection point of U and V on the surface Surf. Order gives the order of constraint, one of: - -1 i.e. none, or 0 i.e.G0 when assigned to Pt - -1 i.e. none, 0 i.e. G0, 1 i.e. G1, 2 i.e. G2 when assigned to U, V and Surf. In this constructor the surface to be generated must respect several tolerance values only: - the distance tolerance TolDist - the angular tolerance TolAng - the curvature tolerance, TolCurv. Distance tolerance represents the greatest distance allowed between the constraint and the target surface. Angular tolerance represents the largest angle allowed between the constraint and the target surface. Curvature tolerance represents the greatest difference in curvature allowed between the constraint and the target surface.Creates a punctual constraint.
+
+        :param U:
+        :type U: float
+        :param V:
+        :type V: float
+        :param Surf:
+        :type Surf: Handle_Geom_Surface &
+        :param Order:
+        :type Order: Standard_Integer
+        :param TolDist: default value is 0.0001
+        :type TolDist: float
+        :param TolAng: default value is 0.01
+        :type TolAng: float
+        :param TolCurv: default value is 0.1
+        :type TolCurv: float
+        :rtype: None
+
+        * Constructs a point constraint object defined by the intersection point of U and V on the surface Surf. Order gives the order of constraint, one of: - -1 i.e. none, or 0 i.e.G0 when assigned to Pt - -1 i.e. none, 0 i.e. G0, 1 i.e. G1, 2 i.e. G2 when assigned to U, V and Surf. In this constructor the surface to be generated must respect several tolerance values only: - the distance tolerance TolDist - the angular tolerance TolAng - the curvature tolerance, TolCurv. Distance tolerance represents the greatest distance allowed between the constraint and the target surface. Angular tolerance represents the largest angle allowed between the constraint and the target surface. Curvature tolerance represents the greatest difference in curvature allowed between the constraint and the target surface.Creates a punctual constraint.
+
+        :param U:
+        :type U: float
+        :param V:
+        :type V: float
+        :param Surf:
+        :type Surf: Handle_Geom_Surface &
+        :param Order:
+        :type Order: Standard_Integer
+        :param TolDist: default value is 0.0001
+        :type TolDist: float
+        :param TolAng: default value is 0.01
+        :type TolAng: float
+        :param TolCurv: default value is 0.1
+        :type TolCurv: float
+        :rtype: None
+
+        * Constructs a point constraint object defined by the intersection point of U and V on the surface Surf. Order gives the order of constraint, one of: - -1 i.e. none, or 0 i.e.G0 when assigned to Pt - -1 i.e. none, 0 i.e. G0, 1 i.e. G1, 2 i.e. G2 when assigned to U, V and Surf. In this constructor the surface to be generated must respect several tolerance values only: - the distance tolerance TolDist - the angular tolerance TolAng - the curvature tolerance, TolCurv. Distance tolerance represents the greatest distance allowed between the constraint and the target surface. Angular tolerance represents the largest angle allowed between the constraint and the target surface. Curvature tolerance represents the greatest difference in curvature allowed between the constraint and the target surface.Creates a punctual constraint.
+
+        :param U:
+        :type U: float
+        :param V:
+        :type V: float
+        :param Surf:
+        :type Surf: Handle_Geom_Surface &
+        :param Order:
+        :type Order: Standard_Integer
         :param TolDist: default value is 0.0001
         :type TolDist: float
         :param TolAng: default value is 0.01
@@ -2173,25 +2933,25 @@ class GeomPlate_PointConstraint(OCC.MMgt.MMgt_TShared):
 
         """
         _GeomPlate.GeomPlate_PointConstraint_swiginit(self,_GeomPlate.new_GeomPlate_PointConstraint(*args))
-    def SetOrder(self, *args) -> "void" :
+    def SetOrder(self, *args):
         """
         :param Order:
-        :type Order: int
+        :type Order: Standard_Integer
         :rtype: None
 
         """
         return _GeomPlate.GeomPlate_PointConstraint_SetOrder(self, *args)
 
-    def Order(self, *args) -> "Standard_Integer" :
+    def Order(self):
         """
         * Returns the order of constraint: G0, G1, and G2, controlled respectively by G0Criterion G1Criterion and G2Criterion.
 
         :rtype: int
 
         """
-        return _GeomPlate.GeomPlate_PointConstraint_Order(self, *args)
+        return _GeomPlate.GeomPlate_PointConstraint_Order(self)
 
-    def SetG0Criterion(self, *args) -> "void" :
+    def SetG0Criterion(self, *args):
         """
         * Allows you to set the G0 criterion. This is the law defining the greatest distance allowed between the constraint and the target surface. If this criterion is not set, {TolDist, the distance tolerance from the constructor, is used
 
@@ -2202,7 +2962,7 @@ class GeomPlate_PointConstraint(OCC.MMgt.MMgt_TShared):
         """
         return _GeomPlate.GeomPlate_PointConstraint_SetG0Criterion(self, *args)
 
-    def SetG1Criterion(self, *args) -> "void" :
+    def SetG1Criterion(self, *args):
         """
         * Allows you to set the G1 criterion. This is the law defining the greatest angle allowed between the constraint and the target surface. If this criterion is not set, TolAng, the angular tolerance from the constructor, is used. Raises ConstructionError if the point is not on the surface
 
@@ -2213,7 +2973,7 @@ class GeomPlate_PointConstraint(OCC.MMgt.MMgt_TShared):
         """
         return _GeomPlate.GeomPlate_PointConstraint_SetG1Criterion(self, *args)
 
-    def SetG2Criterion(self, *args) -> "void" :
+    def SetG2Criterion(self, *args):
         """
         * Allows you to set the G2 criterion. This is the law defining the greatest difference in curvature allowed between the constraint and the target surface. If this criterion is not set, TolCurv, the curvature tolerance from the constructor, is used. Raises ConstructionError if the point is not on the surface
 
@@ -2224,34 +2984,34 @@ class GeomPlate_PointConstraint(OCC.MMgt.MMgt_TShared):
         """
         return _GeomPlate.GeomPlate_PointConstraint_SetG2Criterion(self, *args)
 
-    def G0Criterion(self, *args) -> "Standard_Real" :
+    def G0Criterion(self):
         """
         * Returns the G0 criterion. This is the greatest distance allowed between the constraint and the target surface.
 
         :rtype: float
 
         """
-        return _GeomPlate.GeomPlate_PointConstraint_G0Criterion(self, *args)
+        return _GeomPlate.GeomPlate_PointConstraint_G0Criterion(self)
 
-    def G1Criterion(self, *args) -> "Standard_Real" :
+    def G1Criterion(self):
         """
         * Returns the G1 criterion. This is the greatest angle allowed between the constraint and the target surface. Raises ConstructionError if the point is not on the surface.
 
         :rtype: float
 
         """
-        return _GeomPlate.GeomPlate_PointConstraint_G1Criterion(self, *args)
+        return _GeomPlate.GeomPlate_PointConstraint_G1Criterion(self)
 
-    def G2Criterion(self, *args) -> "Standard_Real" :
+    def G2Criterion(self):
         """
         * Returns the G2 criterion. This is the greatest difference in curvature allowed between the constraint and the target surface. Raises ConstructionError if the point is not on the surface
 
         :rtype: float
 
         """
-        return _GeomPlate.GeomPlate_PointConstraint_G2Criterion(self, *args)
+        return _GeomPlate.GeomPlate_PointConstraint_G2Criterion(self)
 
-    def D0(self, *args) -> "void" :
+    def D0(self, *args):
         """
         :param P:
         :type P: gp_Pnt
@@ -2260,7 +3020,7 @@ class GeomPlate_PointConstraint(OCC.MMgt.MMgt_TShared):
         """
         return _GeomPlate.GeomPlate_PointConstraint_D0(self, *args)
 
-    def D1(self, *args) -> "void" :
+    def D1(self, *args):
         """
         :param P:
         :type P: gp_Pnt
@@ -2273,7 +3033,7 @@ class GeomPlate_PointConstraint(OCC.MMgt.MMgt_TShared):
         """
         return _GeomPlate.GeomPlate_PointConstraint_D1(self, *args)
 
-    def D2(self, *args) -> "void" :
+    def D2(self, *args):
         """
         :param P:
         :type P: gp_Pnt
@@ -2292,14 +3052,14 @@ class GeomPlate_PointConstraint(OCC.MMgt.MMgt_TShared):
         """
         return _GeomPlate.GeomPlate_PointConstraint_D2(self, *args)
 
-    def HasPnt2dOnSurf(self, *args) -> "Standard_Boolean" :
+    def HasPnt2dOnSurf(self):
         """
         :rtype: bool
 
         """
-        return _GeomPlate.GeomPlate_PointConstraint_HasPnt2dOnSurf(self, *args)
+        return _GeomPlate.GeomPlate_PointConstraint_HasPnt2dOnSurf(self)
 
-    def SetPnt2dOnSurf(self, *args) -> "void" :
+    def SetPnt2dOnSurf(self, *args):
         """
         :param Pnt:
         :type Pnt: gp_Pnt2d
@@ -2308,25 +3068,25 @@ class GeomPlate_PointConstraint(OCC.MMgt.MMgt_TShared):
         """
         return _GeomPlate.GeomPlate_PointConstraint_SetPnt2dOnSurf(self, *args)
 
-    def Pnt2dOnSurf(self, *args) -> "gp_Pnt2d" :
+    def Pnt2dOnSurf(self):
         """
         :rtype: gp_Pnt2d
 
         """
-        return _GeomPlate.GeomPlate_PointConstraint_Pnt2dOnSurf(self, *args)
+        return _GeomPlate.GeomPlate_PointConstraint_Pnt2dOnSurf(self)
 
-    def LPropSurf(self, *args) -> "GeomLProp_SLProps &" :
+    def LPropSurf(self):
         """
         :rtype: GeomLProp_SLProps
 
         """
-        return _GeomPlate.GeomPlate_PointConstraint_LPropSurf(self, *args)
+        return _GeomPlate.GeomPlate_PointConstraint_LPropSurf(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(GeomPlate_PointConstraint self)"""
         return _GeomPlate.GeomPlate_PointConstraint__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_GeomPlate_PointConstraint" :
+    def GetHandle(self):
         """GetHandle(GeomPlate_PointConstraint self) -> Handle_GeomPlate_PointConstraint"""
         return _GeomPlate.GeomPlate_PointConstraint_GetHandle(self)
 
@@ -2379,7 +3139,7 @@ Handle_GeomPlate_PointConstraint._kill_pointed = new_instancemethod(_GeomPlate.H
 Handle_GeomPlate_PointConstraint_swigregister = _GeomPlate.Handle_GeomPlate_PointConstraint_swigregister
 Handle_GeomPlate_PointConstraint_swigregister(Handle_GeomPlate_PointConstraint)
 
-def Handle_GeomPlate_PointConstraint_DownCast(*args) -> "Handle_GeomPlate_PointConstraint const" :
+def Handle_GeomPlate_PointConstraint_DownCast(*args):
   return _GeomPlate.Handle_GeomPlate_PointConstraint_DownCast(*args)
 Handle_GeomPlate_PointConstraint_DownCast = _GeomPlate.Handle_GeomPlate_PointConstraint_DownCast
 
@@ -2398,18 +3158,18 @@ class GeomPlate_SequenceNodeOfSequenceOfAij(OCC.TCollection.TCollection_SeqNode)
 
         """
         _GeomPlate.GeomPlate_SequenceNodeOfSequenceOfAij_swiginit(self,_GeomPlate.new_GeomPlate_SequenceNodeOfSequenceOfAij(*args))
-    def Value(self, *args) -> "GeomPlate_Aij &" :
+    def Value(self):
         """
         :rtype: GeomPlate_Aij
 
         """
-        return _GeomPlate.GeomPlate_SequenceNodeOfSequenceOfAij_Value(self, *args)
+        return _GeomPlate.GeomPlate_SequenceNodeOfSequenceOfAij_Value(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(GeomPlate_SequenceNodeOfSequenceOfAij self)"""
         return _GeomPlate.GeomPlate_SequenceNodeOfSequenceOfAij__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_GeomPlate_SequenceNodeOfSequenceOfAij" :
+    def GetHandle(self):
         """GetHandle(GeomPlate_SequenceNodeOfSequenceOfAij self) -> Handle_GeomPlate_SequenceNodeOfSequenceOfAij"""
         return _GeomPlate.GeomPlate_SequenceNodeOfSequenceOfAij_GetHandle(self)
 
@@ -2448,7 +3208,7 @@ Handle_GeomPlate_SequenceNodeOfSequenceOfAij._kill_pointed = new_instancemethod(
 Handle_GeomPlate_SequenceNodeOfSequenceOfAij_swigregister = _GeomPlate.Handle_GeomPlate_SequenceNodeOfSequenceOfAij_swigregister
 Handle_GeomPlate_SequenceNodeOfSequenceOfAij_swigregister(Handle_GeomPlate_SequenceNodeOfSequenceOfAij)
 
-def Handle_GeomPlate_SequenceNodeOfSequenceOfAij_DownCast(*args) -> "Handle_GeomPlate_SequenceNodeOfSequenceOfAij const" :
+def Handle_GeomPlate_SequenceNodeOfSequenceOfAij_DownCast(*args):
   return _GeomPlate.Handle_GeomPlate_SequenceNodeOfSequenceOfAij_DownCast(*args)
 Handle_GeomPlate_SequenceNodeOfSequenceOfAij_DownCast = _GeomPlate.Handle_GeomPlate_SequenceNodeOfSequenceOfAij_DownCast
 
@@ -2467,18 +3227,18 @@ class GeomPlate_SequenceNodeOfSequenceOfCurveConstraint(OCC.TCollection.TCollect
 
         """
         _GeomPlate.GeomPlate_SequenceNodeOfSequenceOfCurveConstraint_swiginit(self,_GeomPlate.new_GeomPlate_SequenceNodeOfSequenceOfCurveConstraint(*args))
-    def Value(self, *args) -> "Handle_GeomPlate_CurveConstraint &" :
+    def Value(self):
         """
         :rtype: Handle_GeomPlate_CurveConstraint
 
         """
-        return _GeomPlate.GeomPlate_SequenceNodeOfSequenceOfCurveConstraint_Value(self, *args)
+        return _GeomPlate.GeomPlate_SequenceNodeOfSequenceOfCurveConstraint_Value(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(GeomPlate_SequenceNodeOfSequenceOfCurveConstraint self)"""
         return _GeomPlate.GeomPlate_SequenceNodeOfSequenceOfCurveConstraint__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_GeomPlate_SequenceNodeOfSequenceOfCurveConstraint" :
+    def GetHandle(self):
         """GetHandle(GeomPlate_SequenceNodeOfSequenceOfCurveConstraint self) -> Handle_GeomPlate_SequenceNodeOfSequenceOfCurveConstraint"""
         return _GeomPlate.GeomPlate_SequenceNodeOfSequenceOfCurveConstraint_GetHandle(self)
 
@@ -2517,7 +3277,7 @@ Handle_GeomPlate_SequenceNodeOfSequenceOfCurveConstraint._kill_pointed = new_ins
 Handle_GeomPlate_SequenceNodeOfSequenceOfCurveConstraint_swigregister = _GeomPlate.Handle_GeomPlate_SequenceNodeOfSequenceOfCurveConstraint_swigregister
 Handle_GeomPlate_SequenceNodeOfSequenceOfCurveConstraint_swigregister(Handle_GeomPlate_SequenceNodeOfSequenceOfCurveConstraint)
 
-def Handle_GeomPlate_SequenceNodeOfSequenceOfCurveConstraint_DownCast(*args) -> "Handle_GeomPlate_SequenceNodeOfSequenceOfCurveConstraint const" :
+def Handle_GeomPlate_SequenceNodeOfSequenceOfCurveConstraint_DownCast(*args):
   return _GeomPlate.Handle_GeomPlate_SequenceNodeOfSequenceOfCurveConstraint_DownCast(*args)
 Handle_GeomPlate_SequenceNodeOfSequenceOfCurveConstraint_DownCast = _GeomPlate.Handle_GeomPlate_SequenceNodeOfSequenceOfCurveConstraint_DownCast
 
@@ -2536,18 +3296,18 @@ class GeomPlate_SequenceNodeOfSequenceOfPointConstraint(OCC.TCollection.TCollect
 
         """
         _GeomPlate.GeomPlate_SequenceNodeOfSequenceOfPointConstraint_swiginit(self,_GeomPlate.new_GeomPlate_SequenceNodeOfSequenceOfPointConstraint(*args))
-    def Value(self, *args) -> "Handle_GeomPlate_PointConstraint &" :
+    def Value(self):
         """
         :rtype: Handle_GeomPlate_PointConstraint
 
         """
-        return _GeomPlate.GeomPlate_SequenceNodeOfSequenceOfPointConstraint_Value(self, *args)
+        return _GeomPlate.GeomPlate_SequenceNodeOfSequenceOfPointConstraint_Value(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(GeomPlate_SequenceNodeOfSequenceOfPointConstraint self)"""
         return _GeomPlate.GeomPlate_SequenceNodeOfSequenceOfPointConstraint__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_GeomPlate_SequenceNodeOfSequenceOfPointConstraint" :
+    def GetHandle(self):
         """GetHandle(GeomPlate_SequenceNodeOfSequenceOfPointConstraint self) -> Handle_GeomPlate_SequenceNodeOfSequenceOfPointConstraint"""
         return _GeomPlate.GeomPlate_SequenceNodeOfSequenceOfPointConstraint_GetHandle(self)
 
@@ -2586,27 +3346,27 @@ Handle_GeomPlate_SequenceNodeOfSequenceOfPointConstraint._kill_pointed = new_ins
 Handle_GeomPlate_SequenceNodeOfSequenceOfPointConstraint_swigregister = _GeomPlate.Handle_GeomPlate_SequenceNodeOfSequenceOfPointConstraint_swigregister
 Handle_GeomPlate_SequenceNodeOfSequenceOfPointConstraint_swigregister(Handle_GeomPlate_SequenceNodeOfSequenceOfPointConstraint)
 
-def Handle_GeomPlate_SequenceNodeOfSequenceOfPointConstraint_DownCast(*args) -> "Handle_GeomPlate_SequenceNodeOfSequenceOfPointConstraint const" :
+def Handle_GeomPlate_SequenceNodeOfSequenceOfPointConstraint_DownCast(*args):
   return _GeomPlate.Handle_GeomPlate_SequenceNodeOfSequenceOfPointConstraint_DownCast(*args)
 Handle_GeomPlate_SequenceNodeOfSequenceOfPointConstraint_DownCast = _GeomPlate.Handle_GeomPlate_SequenceNodeOfSequenceOfPointConstraint_DownCast
 
 class GeomPlate_SequenceOfAij(OCC.TCollection.TCollection_BaseSequence):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _GeomPlate.GeomPlate_SequenceOfAij_swiginit(self,_GeomPlate.new_GeomPlate_SequenceOfAij(*args))
-    def Clear(self, *args) -> "void" :
+        _GeomPlate.GeomPlate_SequenceOfAij_swiginit(self,_GeomPlate.new_GeomPlate_SequenceOfAij())
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _GeomPlate.GeomPlate_SequenceOfAij_Clear(self, *args)
+        return _GeomPlate.GeomPlate_SequenceOfAij_Clear(self)
 
-    def Assign(self, *args) -> "GeomPlate_SequenceOfAij const &" :
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: GeomPlate_SequenceOfAij &
@@ -2615,7 +3375,7 @@ class GeomPlate_SequenceOfAij(OCC.TCollection.TCollection_BaseSequence):
         """
         return _GeomPlate.GeomPlate_SequenceOfAij_Assign(self, *args)
 
-    def Set(self, *args) -> "GeomPlate_SequenceOfAij const &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: GeomPlate_SequenceOfAij &
@@ -2624,7 +3384,7 @@ class GeomPlate_SequenceOfAij(OCC.TCollection.TCollection_BaseSequence):
         """
         return _GeomPlate.GeomPlate_SequenceOfAij_Set(self, *args)
 
-    def Append(self, *args) -> "void" :
+    def Append(self, *args):
         """
         :param T:
         :type T: GeomPlate_Aij &
@@ -2637,7 +3397,7 @@ class GeomPlate_SequenceOfAij(OCC.TCollection.TCollection_BaseSequence):
         """
         return _GeomPlate.GeomPlate_SequenceOfAij_Append(self, *args)
 
-    def Prepend(self, *args) -> "void" :
+    def Prepend(self, *args):
         """
         :param T:
         :type T: GeomPlate_Aij &
@@ -2650,16 +3410,16 @@ class GeomPlate_SequenceOfAij(OCC.TCollection.TCollection_BaseSequence):
         """
         return _GeomPlate.GeomPlate_SequenceOfAij_Prepend(self, *args)
 
-    def InsertBefore(self, *args) -> "void" :
+    def InsertBefore(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param T:
         :type T: GeomPlate_Aij &
         :rtype: None
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param S:
         :type S: GeomPlate_SequenceOfAij &
         :rtype: None
@@ -2667,16 +3427,16 @@ class GeomPlate_SequenceOfAij(OCC.TCollection.TCollection_BaseSequence):
         """
         return _GeomPlate.GeomPlate_SequenceOfAij_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args) -> "void" :
+    def InsertAfter(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param T:
         :type T: GeomPlate_Aij &
         :rtype: None
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param S:
         :type S: GeomPlate_SequenceOfAij &
         :rtype: None
@@ -2684,24 +3444,24 @@ class GeomPlate_SequenceOfAij(OCC.TCollection.TCollection_BaseSequence):
         """
         return _GeomPlate.GeomPlate_SequenceOfAij_InsertAfter(self, *args)
 
-    def First(self, *args) -> "GeomPlate_Aij const &" :
+    def First(self):
         """
         :rtype: GeomPlate_Aij
 
         """
-        return _GeomPlate.GeomPlate_SequenceOfAij_First(self, *args)
+        return _GeomPlate.GeomPlate_SequenceOfAij_First(self)
 
-    def Last(self, *args) -> "GeomPlate_Aij const &" :
+    def Last(self):
         """
         :rtype: GeomPlate_Aij
 
         """
-        return _GeomPlate.GeomPlate_SequenceOfAij_Last(self, *args)
+        return _GeomPlate.GeomPlate_SequenceOfAij_Last(self)
 
-    def Split(self, *args) -> "void" :
+    def Split(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Sub:
         :type Sub: GeomPlate_SequenceOfAij &
         :rtype: None
@@ -2709,19 +3469,19 @@ class GeomPlate_SequenceOfAij(OCC.TCollection.TCollection_BaseSequence):
         """
         return _GeomPlate.GeomPlate_SequenceOfAij_Split(self, *args)
 
-    def Value(self, *args) -> "GeomPlate_Aij const &" :
+    def Value(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: GeomPlate_Aij
 
         """
         return _GeomPlate.GeomPlate_SequenceOfAij_Value(self, *args)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param I:
         :type I: GeomPlate_Aij &
         :rtype: None
@@ -2729,25 +3489,25 @@ class GeomPlate_SequenceOfAij(OCC.TCollection.TCollection_BaseSequence):
         """
         return _GeomPlate.GeomPlate_SequenceOfAij_SetValue(self, *args)
 
-    def ChangeValue(self, *args) -> "GeomPlate_Aij &" :
+    def ChangeValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: GeomPlate_Aij
 
         """
         return _GeomPlate.GeomPlate_SequenceOfAij_ChangeValue(self, *args)
 
-    def Remove(self, *args) -> "void" :
+    def Remove(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: None
 
         :param FromIndex:
-        :type FromIndex: int
+        :type FromIndex: Standard_Integer
         :param ToIndex:
-        :type ToIndex: int
+        :type ToIndex: Standard_Integer
         :rtype: None
 
         """
@@ -2782,20 +3542,20 @@ GeomPlate_SequenceOfAij_swigregister(GeomPlate_SequenceOfAij)
 class GeomPlate_SequenceOfCurveConstraint(OCC.TCollection.TCollection_BaseSequence):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _GeomPlate.GeomPlate_SequenceOfCurveConstraint_swiginit(self,_GeomPlate.new_GeomPlate_SequenceOfCurveConstraint(*args))
-    def Clear(self, *args) -> "void" :
+        _GeomPlate.GeomPlate_SequenceOfCurveConstraint_swiginit(self,_GeomPlate.new_GeomPlate_SequenceOfCurveConstraint())
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _GeomPlate.GeomPlate_SequenceOfCurveConstraint_Clear(self, *args)
+        return _GeomPlate.GeomPlate_SequenceOfCurveConstraint_Clear(self)
 
-    def Assign(self, *args) -> "GeomPlate_SequenceOfCurveConstraint const &" :
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: GeomPlate_SequenceOfCurveConstraint &
@@ -2804,7 +3564,7 @@ class GeomPlate_SequenceOfCurveConstraint(OCC.TCollection.TCollection_BaseSequen
         """
         return _GeomPlate.GeomPlate_SequenceOfCurveConstraint_Assign(self, *args)
 
-    def Set(self, *args) -> "GeomPlate_SequenceOfCurveConstraint const &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: GeomPlate_SequenceOfCurveConstraint &
@@ -2813,7 +3573,7 @@ class GeomPlate_SequenceOfCurveConstraint(OCC.TCollection.TCollection_BaseSequen
         """
         return _GeomPlate.GeomPlate_SequenceOfCurveConstraint_Set(self, *args)
 
-    def Append(self, *args) -> "void" :
+    def Append(self, *args):
         """
         :param T:
         :type T: Handle_GeomPlate_CurveConstraint &
@@ -2826,7 +3586,7 @@ class GeomPlate_SequenceOfCurveConstraint(OCC.TCollection.TCollection_BaseSequen
         """
         return _GeomPlate.GeomPlate_SequenceOfCurveConstraint_Append(self, *args)
 
-    def Prepend(self, *args) -> "void" :
+    def Prepend(self, *args):
         """
         :param T:
         :type T: Handle_GeomPlate_CurveConstraint &
@@ -2839,16 +3599,16 @@ class GeomPlate_SequenceOfCurveConstraint(OCC.TCollection.TCollection_BaseSequen
         """
         return _GeomPlate.GeomPlate_SequenceOfCurveConstraint_Prepend(self, *args)
 
-    def InsertBefore(self, *args) -> "void" :
+    def InsertBefore(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param T:
         :type T: Handle_GeomPlate_CurveConstraint &
         :rtype: None
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param S:
         :type S: GeomPlate_SequenceOfCurveConstraint &
         :rtype: None
@@ -2856,16 +3616,16 @@ class GeomPlate_SequenceOfCurveConstraint(OCC.TCollection.TCollection_BaseSequen
         """
         return _GeomPlate.GeomPlate_SequenceOfCurveConstraint_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args) -> "void" :
+    def InsertAfter(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param T:
         :type T: Handle_GeomPlate_CurveConstraint &
         :rtype: None
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param S:
         :type S: GeomPlate_SequenceOfCurveConstraint &
         :rtype: None
@@ -2873,24 +3633,24 @@ class GeomPlate_SequenceOfCurveConstraint(OCC.TCollection.TCollection_BaseSequen
         """
         return _GeomPlate.GeomPlate_SequenceOfCurveConstraint_InsertAfter(self, *args)
 
-    def First(self, *args) -> "Handle_GeomPlate_CurveConstraint const &" :
+    def First(self):
         """
         :rtype: Handle_GeomPlate_CurveConstraint
 
         """
-        return _GeomPlate.GeomPlate_SequenceOfCurveConstraint_First(self, *args)
+        return _GeomPlate.GeomPlate_SequenceOfCurveConstraint_First(self)
 
-    def Last(self, *args) -> "Handle_GeomPlate_CurveConstraint const &" :
+    def Last(self):
         """
         :rtype: Handle_GeomPlate_CurveConstraint
 
         """
-        return _GeomPlate.GeomPlate_SequenceOfCurveConstraint_Last(self, *args)
+        return _GeomPlate.GeomPlate_SequenceOfCurveConstraint_Last(self)
 
-    def Split(self, *args) -> "void" :
+    def Split(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Sub:
         :type Sub: GeomPlate_SequenceOfCurveConstraint &
         :rtype: None
@@ -2898,19 +3658,19 @@ class GeomPlate_SequenceOfCurveConstraint(OCC.TCollection.TCollection_BaseSequen
         """
         return _GeomPlate.GeomPlate_SequenceOfCurveConstraint_Split(self, *args)
 
-    def Value(self, *args) -> "Handle_GeomPlate_CurveConstraint const &" :
+    def Value(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Handle_GeomPlate_CurveConstraint
 
         """
         return _GeomPlate.GeomPlate_SequenceOfCurveConstraint_Value(self, *args)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param I:
         :type I: Handle_GeomPlate_CurveConstraint &
         :rtype: None
@@ -2918,25 +3678,25 @@ class GeomPlate_SequenceOfCurveConstraint(OCC.TCollection.TCollection_BaseSequen
         """
         return _GeomPlate.GeomPlate_SequenceOfCurveConstraint_SetValue(self, *args)
 
-    def ChangeValue(self, *args) -> "Handle_GeomPlate_CurveConstraint &" :
+    def ChangeValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Handle_GeomPlate_CurveConstraint
 
         """
         return _GeomPlate.GeomPlate_SequenceOfCurveConstraint_ChangeValue(self, *args)
 
-    def Remove(self, *args) -> "void" :
+    def Remove(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: None
 
         :param FromIndex:
-        :type FromIndex: int
+        :type FromIndex: Standard_Integer
         :param ToIndex:
-        :type ToIndex: int
+        :type ToIndex: Standard_Integer
         :rtype: None
 
         """
@@ -2971,20 +3731,20 @@ GeomPlate_SequenceOfCurveConstraint_swigregister(GeomPlate_SequenceOfCurveConstr
 class GeomPlate_SequenceOfPointConstraint(OCC.TCollection.TCollection_BaseSequence):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _GeomPlate.GeomPlate_SequenceOfPointConstraint_swiginit(self,_GeomPlate.new_GeomPlate_SequenceOfPointConstraint(*args))
-    def Clear(self, *args) -> "void" :
+        _GeomPlate.GeomPlate_SequenceOfPointConstraint_swiginit(self,_GeomPlate.new_GeomPlate_SequenceOfPointConstraint())
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _GeomPlate.GeomPlate_SequenceOfPointConstraint_Clear(self, *args)
+        return _GeomPlate.GeomPlate_SequenceOfPointConstraint_Clear(self)
 
-    def Assign(self, *args) -> "GeomPlate_SequenceOfPointConstraint const &" :
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: GeomPlate_SequenceOfPointConstraint &
@@ -2993,7 +3753,7 @@ class GeomPlate_SequenceOfPointConstraint(OCC.TCollection.TCollection_BaseSequen
         """
         return _GeomPlate.GeomPlate_SequenceOfPointConstraint_Assign(self, *args)
 
-    def Set(self, *args) -> "GeomPlate_SequenceOfPointConstraint const &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: GeomPlate_SequenceOfPointConstraint &
@@ -3002,7 +3762,7 @@ class GeomPlate_SequenceOfPointConstraint(OCC.TCollection.TCollection_BaseSequen
         """
         return _GeomPlate.GeomPlate_SequenceOfPointConstraint_Set(self, *args)
 
-    def Append(self, *args) -> "void" :
+    def Append(self, *args):
         """
         :param T:
         :type T: Handle_GeomPlate_PointConstraint &
@@ -3015,7 +3775,7 @@ class GeomPlate_SequenceOfPointConstraint(OCC.TCollection.TCollection_BaseSequen
         """
         return _GeomPlate.GeomPlate_SequenceOfPointConstraint_Append(self, *args)
 
-    def Prepend(self, *args) -> "void" :
+    def Prepend(self, *args):
         """
         :param T:
         :type T: Handle_GeomPlate_PointConstraint &
@@ -3028,16 +3788,16 @@ class GeomPlate_SequenceOfPointConstraint(OCC.TCollection.TCollection_BaseSequen
         """
         return _GeomPlate.GeomPlate_SequenceOfPointConstraint_Prepend(self, *args)
 
-    def InsertBefore(self, *args) -> "void" :
+    def InsertBefore(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param T:
         :type T: Handle_GeomPlate_PointConstraint &
         :rtype: None
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param S:
         :type S: GeomPlate_SequenceOfPointConstraint &
         :rtype: None
@@ -3045,16 +3805,16 @@ class GeomPlate_SequenceOfPointConstraint(OCC.TCollection.TCollection_BaseSequen
         """
         return _GeomPlate.GeomPlate_SequenceOfPointConstraint_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args) -> "void" :
+    def InsertAfter(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param T:
         :type T: Handle_GeomPlate_PointConstraint &
         :rtype: None
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param S:
         :type S: GeomPlate_SequenceOfPointConstraint &
         :rtype: None
@@ -3062,24 +3822,24 @@ class GeomPlate_SequenceOfPointConstraint(OCC.TCollection.TCollection_BaseSequen
         """
         return _GeomPlate.GeomPlate_SequenceOfPointConstraint_InsertAfter(self, *args)
 
-    def First(self, *args) -> "Handle_GeomPlate_PointConstraint const &" :
+    def First(self):
         """
         :rtype: Handle_GeomPlate_PointConstraint
 
         """
-        return _GeomPlate.GeomPlate_SequenceOfPointConstraint_First(self, *args)
+        return _GeomPlate.GeomPlate_SequenceOfPointConstraint_First(self)
 
-    def Last(self, *args) -> "Handle_GeomPlate_PointConstraint const &" :
+    def Last(self):
         """
         :rtype: Handle_GeomPlate_PointConstraint
 
         """
-        return _GeomPlate.GeomPlate_SequenceOfPointConstraint_Last(self, *args)
+        return _GeomPlate.GeomPlate_SequenceOfPointConstraint_Last(self)
 
-    def Split(self, *args) -> "void" :
+    def Split(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Sub:
         :type Sub: GeomPlate_SequenceOfPointConstraint &
         :rtype: None
@@ -3087,19 +3847,19 @@ class GeomPlate_SequenceOfPointConstraint(OCC.TCollection.TCollection_BaseSequen
         """
         return _GeomPlate.GeomPlate_SequenceOfPointConstraint_Split(self, *args)
 
-    def Value(self, *args) -> "Handle_GeomPlate_PointConstraint const &" :
+    def Value(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Handle_GeomPlate_PointConstraint
 
         """
         return _GeomPlate.GeomPlate_SequenceOfPointConstraint_Value(self, *args)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param I:
         :type I: Handle_GeomPlate_PointConstraint &
         :rtype: None
@@ -3107,25 +3867,25 @@ class GeomPlate_SequenceOfPointConstraint(OCC.TCollection.TCollection_BaseSequen
         """
         return _GeomPlate.GeomPlate_SequenceOfPointConstraint_SetValue(self, *args)
 
-    def ChangeValue(self, *args) -> "Handle_GeomPlate_PointConstraint &" :
+    def ChangeValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Handle_GeomPlate_PointConstraint
 
         """
         return _GeomPlate.GeomPlate_SequenceOfPointConstraint_ChangeValue(self, *args)
 
-    def Remove(self, *args) -> "void" :
+    def Remove(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: None
 
         :param FromIndex:
-        :type FromIndex: int
+        :type FromIndex: Standard_Integer
         :param ToIndex:
-        :type ToIndex: int
+        :type ToIndex: Standard_Integer
         :rtype: None
 
         """
@@ -3170,14 +3930,14 @@ class GeomPlate_Surface(OCC.Geom.Geom_Surface):
 
         """
         _GeomPlate.GeomPlate_Surface_swiginit(self,_GeomPlate.new_GeomPlate_Surface(*args))
-    def CallSurfinit(self, *args) -> "Handle_Geom_Surface" :
+    def CallSurfinit(self):
         """
         :rtype: Handle_Geom_Surface
 
         """
-        return _GeomPlate.GeomPlate_Surface_CallSurfinit(self, *args)
+        return _GeomPlate.GeomPlate_Surface_CallSurfinit(self)
 
-    def SetBounds(self, *args) -> "void" :
+    def SetBounds(self, *args):
         """
         :param Umin:
         :type Umin: float
@@ -3192,7 +3952,7 @@ class GeomPlate_Surface(OCC.Geom.Geom_Surface):
         """
         return _GeomPlate.GeomPlate_Surface_SetBounds(self, *args)
 
-    def RealBounds(self, *args) -> "void" :
+    def RealBounds(self):
         """
         :param U1:
         :type U1: float &
@@ -3205,9 +3965,9 @@ class GeomPlate_Surface(OCC.Geom.Geom_Surface):
         :rtype: None
 
         """
-        return _GeomPlate.GeomPlate_Surface_RealBounds(self, *args)
+        return _GeomPlate.GeomPlate_Surface_RealBounds(self)
 
-    def Constraints(self, *args) -> "void" :
+    def Constraints(self, *args):
         """
         :param Seq:
         :type Seq: TColgp_SequenceOfXY
@@ -3216,11 +3976,11 @@ class GeomPlate_Surface(OCC.Geom.Geom_Surface):
         """
         return _GeomPlate.GeomPlate_Surface_Constraints(self, *args)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(GeomPlate_Surface self)"""
         return _GeomPlate.GeomPlate_Surface__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_GeomPlate_Surface" :
+    def GetHandle(self):
         """GetHandle(GeomPlate_Surface self) -> Handle_GeomPlate_Surface"""
         return _GeomPlate.GeomPlate_Surface_GetHandle(self)
 
@@ -3262,7 +4022,7 @@ Handle_GeomPlate_Surface._kill_pointed = new_instancemethod(_GeomPlate.Handle_Ge
 Handle_GeomPlate_Surface_swigregister = _GeomPlate.Handle_GeomPlate_Surface_swigregister
 Handle_GeomPlate_Surface_swigregister(Handle_GeomPlate_Surface)
 
-def Handle_GeomPlate_Surface_DownCast(*args) -> "Handle_GeomPlate_Surface const" :
+def Handle_GeomPlate_Surface_DownCast(*args):
   return _GeomPlate.Handle_GeomPlate_Surface_DownCast(*args)
 Handle_GeomPlate_Surface_DownCast = _GeomPlate.Handle_GeomPlate_Surface_DownCast
 

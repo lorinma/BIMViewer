@@ -125,11 +125,11 @@ class AdvApprox_ApproxAFunction(object):
         * Constructs approximator tool. Warning: the Func should be valid reference to object of type inherited from class EvaluatorFunction from Approx with life time longer than that of the approximator tool; //!	 the result should be formatted in the following way : <--Num1DSS--> <--2 * Num2DSS--> <--3 * Num3DSS--> R[0] .... R[Num1DSS].....  R[Dimension-1] the order in which each Subspace appears should be consistent with the tolerances given in the create function and the results will be given in that order as well that is : Curve2d(n) will correspond to the nth entry described by Num2DSS, Curve(n) will correspond to the nth entry described by Num3DSS The same type of schema applies to the Poles1d, Poles2d and Poles.
 
         :param Num1DSS:
-        :type Num1DSS: int
+        :type Num1DSS: Standard_Integer
         :param Num2DSS:
-        :type Num2DSS: int
+        :type Num2DSS: Standard_Integer
         :param Num3DSS:
-        :type Num3DSS: int
+        :type Num3DSS: Standard_Integer
         :param OneDTol:
         :type OneDTol: Handle_TColStd_HArray1OfReal &
         :param TwoDTol:
@@ -143,9 +143,9 @@ class AdvApprox_ApproxAFunction(object):
         :param Continuity:
         :type Continuity: GeomAbs_Shape
         :param MaxDeg:
-        :type MaxDeg: int
+        :type MaxDeg: Standard_Integer
         :param MaxSeg:
-        :type MaxSeg: int
+        :type MaxSeg: Standard_Integer
         :param Func:
         :type Func: AdvApprox_EvaluatorFunction &
         :rtype: None
@@ -153,11 +153,11 @@ class AdvApprox_ApproxAFunction(object):
         * Approximation with user methode of cutting
 
         :param Num1DSS:
-        :type Num1DSS: int
+        :type Num1DSS: Standard_Integer
         :param Num2DSS:
-        :type Num2DSS: int
+        :type Num2DSS: Standard_Integer
         :param Num3DSS:
-        :type Num3DSS: int
+        :type Num3DSS: Standard_Integer
         :param OneDTol:
         :type OneDTol: Handle_TColStd_HArray1OfReal &
         :param TwoDTol:
@@ -171,9 +171,9 @@ class AdvApprox_ApproxAFunction(object):
         :param Continuity:
         :type Continuity: GeomAbs_Shape
         :param MaxDeg:
-        :type MaxDeg: int
+        :type MaxDeg: Standard_Integer
         :param MaxSeg:
-        :type MaxSeg: int
+        :type MaxSeg: Standard_Integer
         :param Func:
         :type Func: AdvApprox_EvaluatorFunction &
         :param CutTool:
@@ -182,12 +182,12 @@ class AdvApprox_ApproxAFunction(object):
 
         """
         _AdvApprox.AdvApprox_ApproxAFunction_swiginit(self,_AdvApprox.new_AdvApprox_ApproxAFunction(*args))
-    def Approximation(*args) -> "Standard_Integer &, Standard_Integer &" :
+    def Approximation(*args):
         """
         :param TotalDimension:
-        :type TotalDimension: int
+        :type TotalDimension: Standard_Integer
         :param TotalNumSS:
-        :type TotalNumSS: int
+        :type TotalNumSS: Standard_Integer
         :param LocalDimension:
         :type LocalDimension: TColStd_Array1OfInteger &
         :param First:
@@ -199,17 +199,17 @@ class AdvApprox_ApproxAFunction(object):
         :param CutTool:
         :type CutTool: AdvApprox_Cutting &
         :param ContinuityOrder:
-        :type ContinuityOrder: int
+        :type ContinuityOrder: Standard_Integer
         :param NumMaxCoeffs:
-        :type NumMaxCoeffs: int
+        :type NumMaxCoeffs: Standard_Integer
         :param MaxSegments:
-        :type MaxSegments: int
+        :type MaxSegments: Standard_Integer
         :param TolerancesArray:
         :type TolerancesArray: TColStd_Array1OfReal &
         :param code_precis:
-        :type code_precis: int
+        :type code_precis: Standard_Integer
         :param NumCurves:
-        :type NumCurves: int &
+        :type NumCurves: Standard_Integer &
         :param NumCoeffPerCurveArray:
         :type NumCoeffPerCurveArray: TColStd_Array1OfInteger &
         :param LocalCoefficientArray:
@@ -221,37 +221,37 @@ class AdvApprox_ApproxAFunction(object):
         :param AverageErrorArray:
         :type AverageErrorArray: TColStd_Array1OfReal &
         :param ErrorCode:
-        :type ErrorCode: int &
+        :type ErrorCode: Standard_Integer &
         :rtype: void
 
         """
         return _AdvApprox.AdvApprox_ApproxAFunction_Approximation(*args)
 
     Approximation = staticmethod(Approximation)
-    def IsDone(self, *args) -> "Standard_Boolean" :
+    def IsDone(self):
         """
         :rtype: bool
 
         """
-        return _AdvApprox.AdvApprox_ApproxAFunction_IsDone(self, *args)
+        return _AdvApprox.AdvApprox_ApproxAFunction_IsDone(self)
 
-    def HasResult(self, *args) -> "Standard_Boolean" :
+    def HasResult(self):
         """
         :rtype: bool
 
         """
-        return _AdvApprox.AdvApprox_ApproxAFunction_HasResult(self, *args)
+        return _AdvApprox.AdvApprox_ApproxAFunction_HasResult(self)
 
-    def NbPoles(self, *args) -> "Standard_Integer" :
+    def NbPoles(self):
         """
         * as the name says
 
         :rtype: int
 
         """
-        return _AdvApprox.AdvApprox_ApproxAFunction_NbPoles(self, *args)
+        return _AdvApprox.AdvApprox_ApproxAFunction_NbPoles(self)
 
-    def Poles1d(self, *args) -> "void" :
+    def Poles1d(self, *args):
         """
         * returns the poles from the algorithms as is
 
@@ -260,7 +260,7 @@ class AdvApprox_ApproxAFunction(object):
         * returns the poles at Index from the 1d subspace
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param P:
         :type P: TColStd_Array1OfReal &
         :rtype: None
@@ -268,7 +268,7 @@ class AdvApprox_ApproxAFunction(object):
         """
         return _AdvApprox.AdvApprox_ApproxAFunction_Poles1d(self, *args)
 
-    def Poles2d(self, *args) -> "void" :
+    def Poles2d(self, *args):
         """
         * returns the poles from the algorithms as is
 
@@ -277,7 +277,7 @@ class AdvApprox_ApproxAFunction(object):
         * returns the poles at Index from the 2d subspace
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param P:
         :type P: TColgp_Array1OfPnt2d
         :rtype: None
@@ -285,7 +285,7 @@ class AdvApprox_ApproxAFunction(object):
         """
         return _AdvApprox.AdvApprox_ApproxAFunction_Poles2d(self, *args)
 
-    def Poles(self, *args) -> "void" :
+    def Poles(self, *args):
         """
         * -- returns the poles from the algorithms as is
 
@@ -294,7 +294,7 @@ class AdvApprox_ApproxAFunction(object):
         * returns the poles at Index from the 3d subspace
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param P:
         :type P: TColgp_Array1OfPnt
         :rtype: None
@@ -302,82 +302,82 @@ class AdvApprox_ApproxAFunction(object):
         """
         return _AdvApprox.AdvApprox_ApproxAFunction_Poles(self, *args)
 
-    def Degree(self, *args) -> "Standard_Integer" :
+    def Degree(self):
         """
         :rtype: int
 
         """
-        return _AdvApprox.AdvApprox_ApproxAFunction_Degree(self, *args)
+        return _AdvApprox.AdvApprox_ApproxAFunction_Degree(self)
 
-    def NbKnots(self, *args) -> "Standard_Integer" :
+    def NbKnots(self):
         """
         :rtype: int
 
         """
-        return _AdvApprox.AdvApprox_ApproxAFunction_NbKnots(self, *args)
+        return _AdvApprox.AdvApprox_ApproxAFunction_NbKnots(self)
 
-    def NumSubSpaces(self, *args) -> "Standard_Integer" :
+    def NumSubSpaces(self, *args):
         """
         :param Dimension:
-        :type Dimension: int
+        :type Dimension: Standard_Integer
         :rtype: int
 
         """
         return _AdvApprox.AdvApprox_ApproxAFunction_NumSubSpaces(self, *args)
 
-    def Knots(self, *args) -> "Handle_TColStd_HArray1OfReal" :
+    def Knots(self):
         """
         :rtype: Handle_TColStd_HArray1OfReal
 
         """
-        return _AdvApprox.AdvApprox_ApproxAFunction_Knots(self, *args)
+        return _AdvApprox.AdvApprox_ApproxAFunction_Knots(self)
 
-    def Multiplicities(self, *args) -> "Handle_TColStd_HArray1OfInteger" :
+    def Multiplicities(self):
         """
         :rtype: Handle_TColStd_HArray1OfInteger
 
         """
-        return _AdvApprox.AdvApprox_ApproxAFunction_Multiplicities(self, *args)
+        return _AdvApprox.AdvApprox_ApproxAFunction_Multiplicities(self)
 
-    def MaxError(self, *args) -> "Standard_Real" :
+    def MaxError(self, *args):
         """
         * returns the error as is in the algorithms
 
         :param Dimension:
-        :type Dimension: int
+        :type Dimension: Standard_Integer
         :rtype: Handle_TColStd_HArray1OfReal
 
         :param Dimension:
-        :type Dimension: int
+        :type Dimension: Standard_Integer
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: float
 
         """
         return _AdvApprox.AdvApprox_ApproxAFunction_MaxError(self, *args)
 
-    def AverageError(self, *args) -> "Standard_Real" :
+    def AverageError(self, *args):
         """
         * returns the error as is in the algorithms
 
         :param Dimension:
-        :type Dimension: int
+        :type Dimension: Standard_Integer
         :rtype: Handle_TColStd_HArray1OfReal
 
         :param Dimension:
-        :type Dimension: int
+        :type Dimension: Standard_Integer
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: float
 
         """
         return _AdvApprox.AdvApprox_ApproxAFunction_AverageError(self, *args)
 
-    def DumpToString(self) -> "std::string" :
+    def DumpToString(self):
         """DumpToString(AdvApprox_ApproxAFunction self) -> std::string"""
         return _AdvApprox.AdvApprox_ApproxAFunction_DumpToString(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(AdvApprox_ApproxAFunction self)"""
         return _AdvApprox.AdvApprox_ApproxAFunction__kill_pointed(self)
 
@@ -407,12 +407,12 @@ AdvApprox_ApproxAFunction._kill_pointed = new_instancemethod(_AdvApprox.AdvAppro
 AdvApprox_ApproxAFunction_swigregister = _AdvApprox.AdvApprox_ApproxAFunction_swigregister
 AdvApprox_ApproxAFunction_swigregister(AdvApprox_ApproxAFunction)
 
-def AdvApprox_ApproxAFunction_Approximation(*args) -> "Standard_Integer &, Standard_Integer &" :
+def AdvApprox_ApproxAFunction_Approximation(*args):
   """
     :param TotalDimension:
-    :type TotalDimension: int
+    :type TotalDimension: Standard_Integer
     :param TotalNumSS:
-    :type TotalNumSS: int
+    :type TotalNumSS: Standard_Integer
     :param LocalDimension:
     :type LocalDimension: TColStd_Array1OfInteger &
     :param First:
@@ -424,17 +424,17 @@ def AdvApprox_ApproxAFunction_Approximation(*args) -> "Standard_Integer &, Stand
     :param CutTool:
     :type CutTool: AdvApprox_Cutting &
     :param ContinuityOrder:
-    :type ContinuityOrder: int
+    :type ContinuityOrder: Standard_Integer
     :param NumMaxCoeffs:
-    :type NumMaxCoeffs: int
+    :type NumMaxCoeffs: Standard_Integer
     :param MaxSegments:
-    :type MaxSegments: int
+    :type MaxSegments: Standard_Integer
     :param TolerancesArray:
     :type TolerancesArray: TColStd_Array1OfReal &
     :param code_precis:
-    :type code_precis: int
+    :type code_precis: Standard_Integer
     :param NumCurves:
-    :type NumCurves: int &
+    :type NumCurves: Standard_Integer &
     :param NumCoeffPerCurveArray:
     :type NumCoeffPerCurveArray: TColStd_Array1OfInteger &
     :param LocalCoefficientArray:
@@ -446,7 +446,7 @@ def AdvApprox_ApproxAFunction_Approximation(*args) -> "Standard_Integer &, Stand
     :param AverageErrorArray:
     :type AverageErrorArray: TColStd_Array1OfReal &
     :param ErrorCode:
-    :type ErrorCode: int &
+    :type ErrorCode: Standard_Integer &
     :rtype: void
 
     """
@@ -456,14 +456,14 @@ class AdvApprox_Cutting(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def Delete(self, *args) -> "void" :
+    def Delete(self):
         """
         :rtype: void
 
         """
-        return _AdvApprox.AdvApprox_Cutting_Delete(self, *args)
+        return _AdvApprox.AdvApprox_Cutting_Delete(self)
 
-    def Value(self, *args) -> "Standard_Boolean" :
+    def Value(self, *args):
         """
         :param a:
         :type a: float
@@ -496,15 +496,15 @@ class AdvApprox_SimpleApprox(object):
     def __init__(self, *args): 
         """
         :param TotalDimension:
-        :type TotalDimension: int
+        :type TotalDimension: Standard_Integer
         :param TotalNumSS:
-        :type TotalNumSS: int
+        :type TotalNumSS: Standard_Integer
         :param Continuity:
         :type Continuity: GeomAbs_Shape
         :param WorkDegree:
-        :type WorkDegree: int
+        :type WorkDegree: Standard_Integer
         :param NbGaussPoints:
-        :type NbGaussPoints: int
+        :type NbGaussPoints: Standard_Integer
         :param JacobiBase:
         :type JacobiBase: Handle_PLib_JacobiPolynomial &
         :param Func:
@@ -513,7 +513,7 @@ class AdvApprox_SimpleApprox(object):
 
         """
         _AdvApprox.AdvApprox_SimpleApprox_swiginit(self,_AdvApprox.new_AdvApprox_SimpleApprox(*args))
-    def Perform(self, *args) -> "void" :
+    def Perform(self, *args):
         """
         * Constructs approximator tool. Warning: the Func should be valid reference to object of type inherited from class EvaluatorFunction from Approx with life time longer than that of the approximator tool;
 
@@ -526,90 +526,90 @@ class AdvApprox_SimpleApprox(object):
         :param Last:
         :type Last: float
         :param MaxDegree:
-        :type MaxDegree: int
+        :type MaxDegree: Standard_Integer
         :rtype: None
 
         """
         return _AdvApprox.AdvApprox_SimpleApprox_Perform(self, *args)
 
-    def IsDone(self, *args) -> "Standard_Boolean" :
+    def IsDone(self):
         """
         :rtype: bool
 
         """
-        return _AdvApprox.AdvApprox_SimpleApprox_IsDone(self, *args)
+        return _AdvApprox.AdvApprox_SimpleApprox_IsDone(self)
 
-    def Degree(self, *args) -> "Standard_Integer" :
+    def Degree(self):
         """
         :rtype: int
 
         """
-        return _AdvApprox.AdvApprox_SimpleApprox_Degree(self, *args)
+        return _AdvApprox.AdvApprox_SimpleApprox_Degree(self)
 
-    def Coefficients(self, *args) -> "Handle_TColStd_HArray1OfReal" :
+    def Coefficients(self):
         """
         * returns the coefficients in the Jacobi Base
 
         :rtype: Handle_TColStd_HArray1OfReal
 
         """
-        return _AdvApprox.AdvApprox_SimpleApprox_Coefficients(self, *args)
+        return _AdvApprox.AdvApprox_SimpleApprox_Coefficients(self)
 
-    def FirstConstr(self, *args) -> "Handle_TColStd_HArray2OfReal" :
+    def FirstConstr(self):
         """
         * returns the constraints at First
 
         :rtype: Handle_TColStd_HArray2OfReal
 
         """
-        return _AdvApprox.AdvApprox_SimpleApprox_FirstConstr(self, *args)
+        return _AdvApprox.AdvApprox_SimpleApprox_FirstConstr(self)
 
-    def LastConstr(self, *args) -> "Handle_TColStd_HArray2OfReal" :
+    def LastConstr(self):
         """
         * returns the constraints at Last
 
         :rtype: Handle_TColStd_HArray2OfReal
 
         """
-        return _AdvApprox.AdvApprox_SimpleApprox_LastConstr(self, *args)
+        return _AdvApprox.AdvApprox_SimpleApprox_LastConstr(self)
 
-    def SomTab(self, *args) -> "Handle_TColStd_HArray1OfReal" :
+    def SomTab(self):
         """
         :rtype: Handle_TColStd_HArray1OfReal
 
         """
-        return _AdvApprox.AdvApprox_SimpleApprox_SomTab(self, *args)
+        return _AdvApprox.AdvApprox_SimpleApprox_SomTab(self)
 
-    def DifTab(self, *args) -> "Handle_TColStd_HArray1OfReal" :
+    def DifTab(self):
         """
         :rtype: Handle_TColStd_HArray1OfReal
 
         """
-        return _AdvApprox.AdvApprox_SimpleApprox_DifTab(self, *args)
+        return _AdvApprox.AdvApprox_SimpleApprox_DifTab(self)
 
-    def MaxError(self, *args) -> "Standard_Real" :
+    def MaxError(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: float
 
         """
         return _AdvApprox.AdvApprox_SimpleApprox_MaxError(self, *args)
 
-    def AverageError(self, *args) -> "Standard_Real" :
+    def AverageError(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: float
 
         """
         return _AdvApprox.AdvApprox_SimpleApprox_AverageError(self, *args)
 
-    def DumpToString(self) -> "std::string" :
+    def DumpToString(self):
         """DumpToString(AdvApprox_SimpleApprox self) -> std::string"""
         return _AdvApprox.AdvApprox_SimpleApprox_DumpToString(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(AdvApprox_SimpleApprox self)"""
         return _AdvApprox.AdvApprox_SimpleApprox__kill_pointed(self)
 
@@ -639,12 +639,12 @@ AdvApprox_SimpleApprox_swigregister(AdvApprox_SimpleApprox)
 class AdvApprox_DichoCutting(AdvApprox_Cutting):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _AdvApprox.AdvApprox_DichoCutting_swiginit(self,_AdvApprox.new_AdvApprox_DichoCutting(*args))
+        _AdvApprox.AdvApprox_DichoCutting_swiginit(self,_AdvApprox.new_AdvApprox_DichoCutting())
     def __del__(self):
     	try:
     		self.thisown = False
@@ -662,6 +662,14 @@ class AdvApprox_PrefAndRec(AdvApprox_Cutting):
     __repr__ = _swig_repr
     def __init__(self, *args): 
         """
+        :param RecomendedCut:
+        :type RecomendedCut: TColStd_Array1OfReal &
+        :param PrefferedCut:
+        :type PrefferedCut: TColStd_Array1OfReal &
+        :param Weight: default value is 5
+        :type Weight: float
+        :rtype: None
+
         :param RecomendedCut:
         :type RecomendedCut: TColStd_Array1OfReal &
         :param PrefferedCut:

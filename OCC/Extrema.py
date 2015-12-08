@@ -136,22 +136,22 @@ class Extrema_Array1OfPOnCurv(object):
     def __init__(self, *args): 
         """
         :param Low:
-        :type Low: int
+        :type Low: Standard_Integer
         :param Up:
-        :type Up: int
+        :type Up: Standard_Integer
         :rtype: None
 
         :param Item:
         :type Item: Extrema_POnCurv &
         :param Low:
-        :type Low: int
+        :type Low: Standard_Integer
         :param Up:
-        :type Up: int
+        :type Up: Standard_Integer
         :rtype: None
 
         """
         _Extrema.Extrema_Array1OfPOnCurv_swiginit(self,_Extrema.new_Extrema_Array1OfPOnCurv(*args))
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
         :param V:
         :type V: Extrema_POnCurv &
@@ -160,21 +160,21 @@ class Extrema_Array1OfPOnCurv(object):
         """
         return _Extrema.Extrema_Array1OfPOnCurv_Init(self, *args)
 
-    def Destroy(self, *args) -> "void" :
+    def Destroy(self):
         """
         :rtype: None
 
         """
-        return _Extrema.Extrema_Array1OfPOnCurv_Destroy(self, *args)
+        return _Extrema.Extrema_Array1OfPOnCurv_Destroy(self)
 
-    def IsAllocated(self, *args) -> "Standard_Boolean" :
+    def IsAllocated(self):
         """
         :rtype: bool
 
         """
-        return _Extrema.Extrema_Array1OfPOnCurv_IsAllocated(self, *args)
+        return _Extrema.Extrema_Array1OfPOnCurv_IsAllocated(self)
 
-    def Assign(self, *args) -> "Extrema_Array1OfPOnCurv const &" :
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: Extrema_Array1OfPOnCurv &
@@ -183,7 +183,7 @@ class Extrema_Array1OfPOnCurv(object):
         """
         return _Extrema.Extrema_Array1OfPOnCurv_Assign(self, *args)
 
-    def Set(self, *args) -> "Extrema_Array1OfPOnCurv const &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: Extrema_Array1OfPOnCurv &
@@ -192,31 +192,31 @@ class Extrema_Array1OfPOnCurv(object):
         """
         return _Extrema.Extrema_Array1OfPOnCurv_Set(self, *args)
 
-    def Length(self, *args) -> "Standard_Integer" :
+    def Length(self):
         """
         :rtype: int
 
         """
-        return _Extrema.Extrema_Array1OfPOnCurv_Length(self, *args)
+        return _Extrema.Extrema_Array1OfPOnCurv_Length(self)
 
-    def Lower(self, *args) -> "Standard_Integer" :
+    def Lower(self):
         """
         :rtype: int
 
         """
-        return _Extrema.Extrema_Array1OfPOnCurv_Lower(self, *args)
+        return _Extrema.Extrema_Array1OfPOnCurv_Lower(self)
 
-    def Upper(self, *args) -> "Standard_Integer" :
+    def Upper(self):
         """
         :rtype: int
 
         """
-        return _Extrema.Extrema_Array1OfPOnCurv_Upper(self, *args)
+        return _Extrema.Extrema_Array1OfPOnCurv_Upper(self)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Value:
         :type Value: Extrema_POnCurv &
         :rtype: None
@@ -224,19 +224,19 @@ class Extrema_Array1OfPOnCurv(object):
         """
         return _Extrema.Extrema_Array1OfPOnCurv_SetValue(self, *args)
 
-    def Value(self, *args) -> "Extrema_POnCurv const &" :
+    def Value(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Extrema_POnCurv
 
         """
         return _Extrema.Extrema_Array1OfPOnCurv_Value(self, *args)
 
-    def ChangeValue(self, *args) -> "Extrema_POnCurv &" :
+    def ChangeValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Extrema_POnCurv
 
         """
@@ -271,22 +271,22 @@ class Extrema_Array1OfPOnCurv2d(object):
     def __init__(self, *args): 
         """
         :param Low:
-        :type Low: int
+        :type Low: Standard_Integer
         :param Up:
-        :type Up: int
+        :type Up: Standard_Integer
         :rtype: None
 
         :param Item:
         :type Item: Extrema_POnCurv2d &
         :param Low:
-        :type Low: int
+        :type Low: Standard_Integer
         :param Up:
-        :type Up: int
+        :type Up: Standard_Integer
         :rtype: None
 
         """
         _Extrema.Extrema_Array1OfPOnCurv2d_swiginit(self,_Extrema.new_Extrema_Array1OfPOnCurv2d(*args))
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
         :param V:
         :type V: Extrema_POnCurv2d &
@@ -295,21 +295,21 @@ class Extrema_Array1OfPOnCurv2d(object):
         """
         return _Extrema.Extrema_Array1OfPOnCurv2d_Init(self, *args)
 
-    def Destroy(self, *args) -> "void" :
+    def Destroy(self):
         """
         :rtype: None
 
         """
-        return _Extrema.Extrema_Array1OfPOnCurv2d_Destroy(self, *args)
+        return _Extrema.Extrema_Array1OfPOnCurv2d_Destroy(self)
 
-    def IsAllocated(self, *args) -> "Standard_Boolean" :
+    def IsAllocated(self):
         """
         :rtype: bool
 
         """
-        return _Extrema.Extrema_Array1OfPOnCurv2d_IsAllocated(self, *args)
+        return _Extrema.Extrema_Array1OfPOnCurv2d_IsAllocated(self)
 
-    def Assign(self, *args) -> "Extrema_Array1OfPOnCurv2d const &" :
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: Extrema_Array1OfPOnCurv2d &
@@ -318,7 +318,7 @@ class Extrema_Array1OfPOnCurv2d(object):
         """
         return _Extrema.Extrema_Array1OfPOnCurv2d_Assign(self, *args)
 
-    def Set(self, *args) -> "Extrema_Array1OfPOnCurv2d const &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: Extrema_Array1OfPOnCurv2d &
@@ -327,31 +327,31 @@ class Extrema_Array1OfPOnCurv2d(object):
         """
         return _Extrema.Extrema_Array1OfPOnCurv2d_Set(self, *args)
 
-    def Length(self, *args) -> "Standard_Integer" :
+    def Length(self):
         """
         :rtype: int
 
         """
-        return _Extrema.Extrema_Array1OfPOnCurv2d_Length(self, *args)
+        return _Extrema.Extrema_Array1OfPOnCurv2d_Length(self)
 
-    def Lower(self, *args) -> "Standard_Integer" :
+    def Lower(self):
         """
         :rtype: int
 
         """
-        return _Extrema.Extrema_Array1OfPOnCurv2d_Lower(self, *args)
+        return _Extrema.Extrema_Array1OfPOnCurv2d_Lower(self)
 
-    def Upper(self, *args) -> "Standard_Integer" :
+    def Upper(self):
         """
         :rtype: int
 
         """
-        return _Extrema.Extrema_Array1OfPOnCurv2d_Upper(self, *args)
+        return _Extrema.Extrema_Array1OfPOnCurv2d_Upper(self)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Value:
         :type Value: Extrema_POnCurv2d &
         :rtype: None
@@ -359,19 +359,19 @@ class Extrema_Array1OfPOnCurv2d(object):
         """
         return _Extrema.Extrema_Array1OfPOnCurv2d_SetValue(self, *args)
 
-    def Value(self, *args) -> "Extrema_POnCurv2d const &" :
+    def Value(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Extrema_POnCurv2d
 
         """
         return _Extrema.Extrema_Array1OfPOnCurv2d_Value(self, *args)
 
-    def ChangeValue(self, *args) -> "Extrema_POnCurv2d &" :
+    def ChangeValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Extrema_POnCurv2d
 
         """
@@ -406,22 +406,22 @@ class Extrema_Array1OfPOnSurf(object):
     def __init__(self, *args): 
         """
         :param Low:
-        :type Low: int
+        :type Low: Standard_Integer
         :param Up:
-        :type Up: int
+        :type Up: Standard_Integer
         :rtype: None
 
         :param Item:
         :type Item: Extrema_POnSurf &
         :param Low:
-        :type Low: int
+        :type Low: Standard_Integer
         :param Up:
-        :type Up: int
+        :type Up: Standard_Integer
         :rtype: None
 
         """
         _Extrema.Extrema_Array1OfPOnSurf_swiginit(self,_Extrema.new_Extrema_Array1OfPOnSurf(*args))
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
         :param V:
         :type V: Extrema_POnSurf &
@@ -430,21 +430,21 @@ class Extrema_Array1OfPOnSurf(object):
         """
         return _Extrema.Extrema_Array1OfPOnSurf_Init(self, *args)
 
-    def Destroy(self, *args) -> "void" :
+    def Destroy(self):
         """
         :rtype: None
 
         """
-        return _Extrema.Extrema_Array1OfPOnSurf_Destroy(self, *args)
+        return _Extrema.Extrema_Array1OfPOnSurf_Destroy(self)
 
-    def IsAllocated(self, *args) -> "Standard_Boolean" :
+    def IsAllocated(self):
         """
         :rtype: bool
 
         """
-        return _Extrema.Extrema_Array1OfPOnSurf_IsAllocated(self, *args)
+        return _Extrema.Extrema_Array1OfPOnSurf_IsAllocated(self)
 
-    def Assign(self, *args) -> "Extrema_Array1OfPOnSurf const &" :
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: Extrema_Array1OfPOnSurf &
@@ -453,7 +453,7 @@ class Extrema_Array1OfPOnSurf(object):
         """
         return _Extrema.Extrema_Array1OfPOnSurf_Assign(self, *args)
 
-    def Set(self, *args) -> "Extrema_Array1OfPOnSurf const &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: Extrema_Array1OfPOnSurf &
@@ -462,31 +462,31 @@ class Extrema_Array1OfPOnSurf(object):
         """
         return _Extrema.Extrema_Array1OfPOnSurf_Set(self, *args)
 
-    def Length(self, *args) -> "Standard_Integer" :
+    def Length(self):
         """
         :rtype: int
 
         """
-        return _Extrema.Extrema_Array1OfPOnSurf_Length(self, *args)
+        return _Extrema.Extrema_Array1OfPOnSurf_Length(self)
 
-    def Lower(self, *args) -> "Standard_Integer" :
+    def Lower(self):
         """
         :rtype: int
 
         """
-        return _Extrema.Extrema_Array1OfPOnSurf_Lower(self, *args)
+        return _Extrema.Extrema_Array1OfPOnSurf_Lower(self)
 
-    def Upper(self, *args) -> "Standard_Integer" :
+    def Upper(self):
         """
         :rtype: int
 
         """
-        return _Extrema.Extrema_Array1OfPOnSurf_Upper(self, *args)
+        return _Extrema.Extrema_Array1OfPOnSurf_Upper(self)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Value:
         :type Value: Extrema_POnSurf &
         :rtype: None
@@ -494,19 +494,19 @@ class Extrema_Array1OfPOnSurf(object):
         """
         return _Extrema.Extrema_Array1OfPOnSurf_SetValue(self, *args)
 
-    def Value(self, *args) -> "Extrema_POnSurf const &" :
+    def Value(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Extrema_POnSurf
 
         """
         return _Extrema.Extrema_Array1OfPOnSurf_Value(self, *args)
 
-    def ChangeValue(self, *args) -> "Extrema_POnSurf &" :
+    def ChangeValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Extrema_POnSurf
 
         """
@@ -541,30 +541,30 @@ class Extrema_Array2OfPOnCurv(object):
     def __init__(self, *args): 
         """
         :param R1:
-        :type R1: int
+        :type R1: Standard_Integer
         :param R2:
-        :type R2: int
+        :type R2: Standard_Integer
         :param C1:
-        :type C1: int
+        :type C1: Standard_Integer
         :param C2:
-        :type C2: int
+        :type C2: Standard_Integer
         :rtype: None
 
         :param Item:
         :type Item: Extrema_POnCurv &
         :param R1:
-        :type R1: int
+        :type R1: Standard_Integer
         :param R2:
-        :type R2: int
+        :type R2: Standard_Integer
         :param C1:
-        :type C1: int
+        :type C1: Standard_Integer
         :param C2:
-        :type C2: int
+        :type C2: Standard_Integer
         :rtype: None
 
         """
         _Extrema.Extrema_Array2OfPOnCurv_swiginit(self,_Extrema.new_Extrema_Array2OfPOnCurv(*args))
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
         :param V:
         :type V: Extrema_POnCurv &
@@ -573,14 +573,14 @@ class Extrema_Array2OfPOnCurv(object):
         """
         return _Extrema.Extrema_Array2OfPOnCurv_Init(self, *args)
 
-    def Destroy(self, *args) -> "void" :
+    def Destroy(self):
         """
         :rtype: None
 
         """
-        return _Extrema.Extrema_Array2OfPOnCurv_Destroy(self, *args)
+        return _Extrema.Extrema_Array2OfPOnCurv_Destroy(self)
 
-    def Assign(self, *args) -> "Extrema_Array2OfPOnCurv const &" :
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: Extrema_Array2OfPOnCurv &
@@ -589,7 +589,7 @@ class Extrema_Array2OfPOnCurv(object):
         """
         return _Extrema.Extrema_Array2OfPOnCurv_Assign(self, *args)
 
-    def Set(self, *args) -> "Extrema_Array2OfPOnCurv const &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: Extrema_Array2OfPOnCurv &
@@ -598,54 +598,54 @@ class Extrema_Array2OfPOnCurv(object):
         """
         return _Extrema.Extrema_Array2OfPOnCurv_Set(self, *args)
 
-    def ColLength(self, *args) -> "Standard_Integer" :
+    def ColLength(self):
         """
         :rtype: int
 
         """
-        return _Extrema.Extrema_Array2OfPOnCurv_ColLength(self, *args)
+        return _Extrema.Extrema_Array2OfPOnCurv_ColLength(self)
 
-    def RowLength(self, *args) -> "Standard_Integer" :
+    def RowLength(self):
         """
         :rtype: int
 
         """
-        return _Extrema.Extrema_Array2OfPOnCurv_RowLength(self, *args)
+        return _Extrema.Extrema_Array2OfPOnCurv_RowLength(self)
 
-    def LowerCol(self, *args) -> "Standard_Integer" :
+    def LowerCol(self):
         """
         :rtype: int
 
         """
-        return _Extrema.Extrema_Array2OfPOnCurv_LowerCol(self, *args)
+        return _Extrema.Extrema_Array2OfPOnCurv_LowerCol(self)
 
-    def LowerRow(self, *args) -> "Standard_Integer" :
+    def LowerRow(self):
         """
         :rtype: int
 
         """
-        return _Extrema.Extrema_Array2OfPOnCurv_LowerRow(self, *args)
+        return _Extrema.Extrema_Array2OfPOnCurv_LowerRow(self)
 
-    def UpperCol(self, *args) -> "Standard_Integer" :
+    def UpperCol(self):
         """
         :rtype: int
 
         """
-        return _Extrema.Extrema_Array2OfPOnCurv_UpperCol(self, *args)
+        return _Extrema.Extrema_Array2OfPOnCurv_UpperCol(self)
 
-    def UpperRow(self, *args) -> "Standard_Integer" :
+    def UpperRow(self):
         """
         :rtype: int
 
         """
-        return _Extrema.Extrema_Array2OfPOnCurv_UpperRow(self, *args)
+        return _Extrema.Extrema_Array2OfPOnCurv_UpperRow(self)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Row:
-        :type Row: int
+        :type Row: Standard_Integer
         :param Col:
-        :type Col: int
+        :type Col: Standard_Integer
         :param Value:
         :type Value: Extrema_POnCurv &
         :rtype: None
@@ -653,23 +653,23 @@ class Extrema_Array2OfPOnCurv(object):
         """
         return _Extrema.Extrema_Array2OfPOnCurv_SetValue(self, *args)
 
-    def Value(self, *args) -> "Extrema_POnCurv const &" :
+    def Value(self, *args):
         """
         :param Row:
-        :type Row: int
+        :type Row: Standard_Integer
         :param Col:
-        :type Col: int
+        :type Col: Standard_Integer
         :rtype: Extrema_POnCurv
 
         """
         return _Extrema.Extrema_Array2OfPOnCurv_Value(self, *args)
 
-    def ChangeValue(self, *args) -> "Extrema_POnCurv &" :
+    def ChangeValue(self, *args):
         """
         :param Row:
-        :type Row: int
+        :type Row: Standard_Integer
         :param Col:
-        :type Col: int
+        :type Col: Standard_Integer
         :rtype: Extrema_POnCurv
 
         """
@@ -706,30 +706,30 @@ class Extrema_Array2OfPOnCurv2d(object):
     def __init__(self, *args): 
         """
         :param R1:
-        :type R1: int
+        :type R1: Standard_Integer
         :param R2:
-        :type R2: int
+        :type R2: Standard_Integer
         :param C1:
-        :type C1: int
+        :type C1: Standard_Integer
         :param C2:
-        :type C2: int
+        :type C2: Standard_Integer
         :rtype: None
 
         :param Item:
         :type Item: Extrema_POnCurv2d &
         :param R1:
-        :type R1: int
+        :type R1: Standard_Integer
         :param R2:
-        :type R2: int
+        :type R2: Standard_Integer
         :param C1:
-        :type C1: int
+        :type C1: Standard_Integer
         :param C2:
-        :type C2: int
+        :type C2: Standard_Integer
         :rtype: None
 
         """
         _Extrema.Extrema_Array2OfPOnCurv2d_swiginit(self,_Extrema.new_Extrema_Array2OfPOnCurv2d(*args))
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
         :param V:
         :type V: Extrema_POnCurv2d &
@@ -738,14 +738,14 @@ class Extrema_Array2OfPOnCurv2d(object):
         """
         return _Extrema.Extrema_Array2OfPOnCurv2d_Init(self, *args)
 
-    def Destroy(self, *args) -> "void" :
+    def Destroy(self):
         """
         :rtype: None
 
         """
-        return _Extrema.Extrema_Array2OfPOnCurv2d_Destroy(self, *args)
+        return _Extrema.Extrema_Array2OfPOnCurv2d_Destroy(self)
 
-    def Assign(self, *args) -> "Extrema_Array2OfPOnCurv2d const &" :
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: Extrema_Array2OfPOnCurv2d &
@@ -754,7 +754,7 @@ class Extrema_Array2OfPOnCurv2d(object):
         """
         return _Extrema.Extrema_Array2OfPOnCurv2d_Assign(self, *args)
 
-    def Set(self, *args) -> "Extrema_Array2OfPOnCurv2d const &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: Extrema_Array2OfPOnCurv2d &
@@ -763,54 +763,54 @@ class Extrema_Array2OfPOnCurv2d(object):
         """
         return _Extrema.Extrema_Array2OfPOnCurv2d_Set(self, *args)
 
-    def ColLength(self, *args) -> "Standard_Integer" :
+    def ColLength(self):
         """
         :rtype: int
 
         """
-        return _Extrema.Extrema_Array2OfPOnCurv2d_ColLength(self, *args)
+        return _Extrema.Extrema_Array2OfPOnCurv2d_ColLength(self)
 
-    def RowLength(self, *args) -> "Standard_Integer" :
+    def RowLength(self):
         """
         :rtype: int
 
         """
-        return _Extrema.Extrema_Array2OfPOnCurv2d_RowLength(self, *args)
+        return _Extrema.Extrema_Array2OfPOnCurv2d_RowLength(self)
 
-    def LowerCol(self, *args) -> "Standard_Integer" :
+    def LowerCol(self):
         """
         :rtype: int
 
         """
-        return _Extrema.Extrema_Array2OfPOnCurv2d_LowerCol(self, *args)
+        return _Extrema.Extrema_Array2OfPOnCurv2d_LowerCol(self)
 
-    def LowerRow(self, *args) -> "Standard_Integer" :
+    def LowerRow(self):
         """
         :rtype: int
 
         """
-        return _Extrema.Extrema_Array2OfPOnCurv2d_LowerRow(self, *args)
+        return _Extrema.Extrema_Array2OfPOnCurv2d_LowerRow(self)
 
-    def UpperCol(self, *args) -> "Standard_Integer" :
+    def UpperCol(self):
         """
         :rtype: int
 
         """
-        return _Extrema.Extrema_Array2OfPOnCurv2d_UpperCol(self, *args)
+        return _Extrema.Extrema_Array2OfPOnCurv2d_UpperCol(self)
 
-    def UpperRow(self, *args) -> "Standard_Integer" :
+    def UpperRow(self):
         """
         :rtype: int
 
         """
-        return _Extrema.Extrema_Array2OfPOnCurv2d_UpperRow(self, *args)
+        return _Extrema.Extrema_Array2OfPOnCurv2d_UpperRow(self)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Row:
-        :type Row: int
+        :type Row: Standard_Integer
         :param Col:
-        :type Col: int
+        :type Col: Standard_Integer
         :param Value:
         :type Value: Extrema_POnCurv2d &
         :rtype: None
@@ -818,23 +818,23 @@ class Extrema_Array2OfPOnCurv2d(object):
         """
         return _Extrema.Extrema_Array2OfPOnCurv2d_SetValue(self, *args)
 
-    def Value(self, *args) -> "Extrema_POnCurv2d const &" :
+    def Value(self, *args):
         """
         :param Row:
-        :type Row: int
+        :type Row: Standard_Integer
         :param Col:
-        :type Col: int
+        :type Col: Standard_Integer
         :rtype: Extrema_POnCurv2d
 
         """
         return _Extrema.Extrema_Array2OfPOnCurv2d_Value(self, *args)
 
-    def ChangeValue(self, *args) -> "Extrema_POnCurv2d &" :
+    def ChangeValue(self, *args):
         """
         :param Row:
-        :type Row: int
+        :type Row: Standard_Integer
         :param Col:
-        :type Col: int
+        :type Col: Standard_Integer
         :rtype: Extrema_POnCurv2d
 
         """
@@ -871,30 +871,30 @@ class Extrema_Array2OfPOnSurf(object):
     def __init__(self, *args): 
         """
         :param R1:
-        :type R1: int
+        :type R1: Standard_Integer
         :param R2:
-        :type R2: int
+        :type R2: Standard_Integer
         :param C1:
-        :type C1: int
+        :type C1: Standard_Integer
         :param C2:
-        :type C2: int
+        :type C2: Standard_Integer
         :rtype: None
 
         :param Item:
         :type Item: Extrema_POnSurf &
         :param R1:
-        :type R1: int
+        :type R1: Standard_Integer
         :param R2:
-        :type R2: int
+        :type R2: Standard_Integer
         :param C1:
-        :type C1: int
+        :type C1: Standard_Integer
         :param C2:
-        :type C2: int
+        :type C2: Standard_Integer
         :rtype: None
 
         """
         _Extrema.Extrema_Array2OfPOnSurf_swiginit(self,_Extrema.new_Extrema_Array2OfPOnSurf(*args))
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
         :param V:
         :type V: Extrema_POnSurf &
@@ -903,14 +903,14 @@ class Extrema_Array2OfPOnSurf(object):
         """
         return _Extrema.Extrema_Array2OfPOnSurf_Init(self, *args)
 
-    def Destroy(self, *args) -> "void" :
+    def Destroy(self):
         """
         :rtype: None
 
         """
-        return _Extrema.Extrema_Array2OfPOnSurf_Destroy(self, *args)
+        return _Extrema.Extrema_Array2OfPOnSurf_Destroy(self)
 
-    def Assign(self, *args) -> "Extrema_Array2OfPOnSurf const &" :
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: Extrema_Array2OfPOnSurf &
@@ -919,7 +919,7 @@ class Extrema_Array2OfPOnSurf(object):
         """
         return _Extrema.Extrema_Array2OfPOnSurf_Assign(self, *args)
 
-    def Set(self, *args) -> "Extrema_Array2OfPOnSurf const &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: Extrema_Array2OfPOnSurf &
@@ -928,54 +928,54 @@ class Extrema_Array2OfPOnSurf(object):
         """
         return _Extrema.Extrema_Array2OfPOnSurf_Set(self, *args)
 
-    def ColLength(self, *args) -> "Standard_Integer" :
+    def ColLength(self):
         """
         :rtype: int
 
         """
-        return _Extrema.Extrema_Array2OfPOnSurf_ColLength(self, *args)
+        return _Extrema.Extrema_Array2OfPOnSurf_ColLength(self)
 
-    def RowLength(self, *args) -> "Standard_Integer" :
+    def RowLength(self):
         """
         :rtype: int
 
         """
-        return _Extrema.Extrema_Array2OfPOnSurf_RowLength(self, *args)
+        return _Extrema.Extrema_Array2OfPOnSurf_RowLength(self)
 
-    def LowerCol(self, *args) -> "Standard_Integer" :
+    def LowerCol(self):
         """
         :rtype: int
 
         """
-        return _Extrema.Extrema_Array2OfPOnSurf_LowerCol(self, *args)
+        return _Extrema.Extrema_Array2OfPOnSurf_LowerCol(self)
 
-    def LowerRow(self, *args) -> "Standard_Integer" :
+    def LowerRow(self):
         """
         :rtype: int
 
         """
-        return _Extrema.Extrema_Array2OfPOnSurf_LowerRow(self, *args)
+        return _Extrema.Extrema_Array2OfPOnSurf_LowerRow(self)
 
-    def UpperCol(self, *args) -> "Standard_Integer" :
+    def UpperCol(self):
         """
         :rtype: int
 
         """
-        return _Extrema.Extrema_Array2OfPOnSurf_UpperCol(self, *args)
+        return _Extrema.Extrema_Array2OfPOnSurf_UpperCol(self)
 
-    def UpperRow(self, *args) -> "Standard_Integer" :
+    def UpperRow(self):
         """
         :rtype: int
 
         """
-        return _Extrema.Extrema_Array2OfPOnSurf_UpperRow(self, *args)
+        return _Extrema.Extrema_Array2OfPOnSurf_UpperRow(self)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Row:
-        :type Row: int
+        :type Row: Standard_Integer
         :param Col:
-        :type Col: int
+        :type Col: Standard_Integer
         :param Value:
         :type Value: Extrema_POnSurf &
         :rtype: None
@@ -983,23 +983,23 @@ class Extrema_Array2OfPOnSurf(object):
         """
         return _Extrema.Extrema_Array2OfPOnSurf_SetValue(self, *args)
 
-    def Value(self, *args) -> "Extrema_POnSurf const &" :
+    def Value(self, *args):
         """
         :param Row:
-        :type Row: int
+        :type Row: Standard_Integer
         :param Col:
-        :type Col: int
+        :type Col: Standard_Integer
         :rtype: Extrema_POnSurf
 
         """
         return _Extrema.Extrema_Array2OfPOnSurf_Value(self, *args)
 
-    def ChangeValue(self, *args) -> "Extrema_POnSurf &" :
+    def ChangeValue(self, *args):
         """
         :param Row:
-        :type Row: int
+        :type Row: Standard_Integer
         :param Col:
-        :type Col: int
+        :type Col: Standard_Integer
         :rtype: Extrema_POnSurf
 
         """
@@ -1036,30 +1036,30 @@ class Extrema_Array2OfPOnSurfParams(object):
     def __init__(self, *args): 
         """
         :param R1:
-        :type R1: int
+        :type R1: Standard_Integer
         :param R2:
-        :type R2: int
+        :type R2: Standard_Integer
         :param C1:
-        :type C1: int
+        :type C1: Standard_Integer
         :param C2:
-        :type C2: int
+        :type C2: Standard_Integer
         :rtype: None
 
         :param Item:
         :type Item: Extrema_POnSurfParams &
         :param R1:
-        :type R1: int
+        :type R1: Standard_Integer
         :param R2:
-        :type R2: int
+        :type R2: Standard_Integer
         :param C1:
-        :type C1: int
+        :type C1: Standard_Integer
         :param C2:
-        :type C2: int
+        :type C2: Standard_Integer
         :rtype: None
 
         """
         _Extrema.Extrema_Array2OfPOnSurfParams_swiginit(self,_Extrema.new_Extrema_Array2OfPOnSurfParams(*args))
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
         :param V:
         :type V: Extrema_POnSurfParams &
@@ -1068,14 +1068,14 @@ class Extrema_Array2OfPOnSurfParams(object):
         """
         return _Extrema.Extrema_Array2OfPOnSurfParams_Init(self, *args)
 
-    def Destroy(self, *args) -> "void" :
+    def Destroy(self):
         """
         :rtype: None
 
         """
-        return _Extrema.Extrema_Array2OfPOnSurfParams_Destroy(self, *args)
+        return _Extrema.Extrema_Array2OfPOnSurfParams_Destroy(self)
 
-    def Assign(self, *args) -> "Extrema_Array2OfPOnSurfParams const &" :
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: Extrema_Array2OfPOnSurfParams &
@@ -1084,7 +1084,7 @@ class Extrema_Array2OfPOnSurfParams(object):
         """
         return _Extrema.Extrema_Array2OfPOnSurfParams_Assign(self, *args)
 
-    def Set(self, *args) -> "Extrema_Array2OfPOnSurfParams const &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: Extrema_Array2OfPOnSurfParams &
@@ -1093,54 +1093,54 @@ class Extrema_Array2OfPOnSurfParams(object):
         """
         return _Extrema.Extrema_Array2OfPOnSurfParams_Set(self, *args)
 
-    def ColLength(self, *args) -> "Standard_Integer" :
+    def ColLength(self):
         """
         :rtype: int
 
         """
-        return _Extrema.Extrema_Array2OfPOnSurfParams_ColLength(self, *args)
+        return _Extrema.Extrema_Array2OfPOnSurfParams_ColLength(self)
 
-    def RowLength(self, *args) -> "Standard_Integer" :
+    def RowLength(self):
         """
         :rtype: int
 
         """
-        return _Extrema.Extrema_Array2OfPOnSurfParams_RowLength(self, *args)
+        return _Extrema.Extrema_Array2OfPOnSurfParams_RowLength(self)
 
-    def LowerCol(self, *args) -> "Standard_Integer" :
+    def LowerCol(self):
         """
         :rtype: int
 
         """
-        return _Extrema.Extrema_Array2OfPOnSurfParams_LowerCol(self, *args)
+        return _Extrema.Extrema_Array2OfPOnSurfParams_LowerCol(self)
 
-    def LowerRow(self, *args) -> "Standard_Integer" :
+    def LowerRow(self):
         """
         :rtype: int
 
         """
-        return _Extrema.Extrema_Array2OfPOnSurfParams_LowerRow(self, *args)
+        return _Extrema.Extrema_Array2OfPOnSurfParams_LowerRow(self)
 
-    def UpperCol(self, *args) -> "Standard_Integer" :
+    def UpperCol(self):
         """
         :rtype: int
 
         """
-        return _Extrema.Extrema_Array2OfPOnSurfParams_UpperCol(self, *args)
+        return _Extrema.Extrema_Array2OfPOnSurfParams_UpperCol(self)
 
-    def UpperRow(self, *args) -> "Standard_Integer" :
+    def UpperRow(self):
         """
         :rtype: int
 
         """
-        return _Extrema.Extrema_Array2OfPOnSurfParams_UpperRow(self, *args)
+        return _Extrema.Extrema_Array2OfPOnSurfParams_UpperRow(self)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Row:
-        :type Row: int
+        :type Row: Standard_Integer
         :param Col:
-        :type Col: int
+        :type Col: Standard_Integer
         :param Value:
         :type Value: Extrema_POnSurfParams &
         :rtype: None
@@ -1148,23 +1148,23 @@ class Extrema_Array2OfPOnSurfParams(object):
         """
         return _Extrema.Extrema_Array2OfPOnSurfParams_SetValue(self, *args)
 
-    def Value(self, *args) -> "Extrema_POnSurfParams const &" :
+    def Value(self, *args):
         """
         :param Row:
-        :type Row: int
+        :type Row: Standard_Integer
         :param Col:
-        :type Col: int
+        :type Col: Standard_Integer
         :rtype: Extrema_POnSurfParams
 
         """
         return _Extrema.Extrema_Array2OfPOnSurfParams_Value(self, *args)
 
-    def ChangeValue(self, *args) -> "Extrema_POnSurfParams &" :
+    def ChangeValue(self, *args):
         """
         :param Row:
-        :type Row: int
+        :type Row: Standard_Integer
         :param Col:
-        :type Col: int
+        :type Col: Standard_Integer
         :rtype: Extrema_POnSurfParams
 
         """
@@ -1204,6 +1204,18 @@ class Extrema_CCFOfECC2dOfExtCC2d(object):
         :type thetol: float
         :rtype: None
 
+        :param thetol: default value is 1.0e-10
+        :type thetol: float
+        :rtype: None
+
+        :param C1:
+        :type C1: Adaptor2d_Curve2d &
+        :param C2:
+        :type C2: Adaptor2d_Curve2d &
+        :param thetol: default value is 1.0e-10
+        :type thetol: float
+        :rtype: None
+
         :param C1:
         :type C1: Adaptor2d_Curve2d &
         :param C2:
@@ -1214,10 +1226,10 @@ class Extrema_CCFOfECC2dOfExtCC2d(object):
 
         """
         _Extrema.Extrema_CCFOfECC2dOfExtCC2d_swiginit(self,_Extrema.new_Extrema_CCFOfECC2dOfExtCC2d(*args))
-    def SetCurve(self, *args) -> "void" :
+    def SetCurve(self, *args):
         """
         :param theRank:
-        :type theRank: int
+        :type theRank: Standard_Integer
         :param C1:
         :type C1: Adaptor2d_Curve2d &
         :rtype: None
@@ -1225,7 +1237,7 @@ class Extrema_CCFOfECC2dOfExtCC2d(object):
         """
         return _Extrema.Extrema_CCFOfECC2dOfExtCC2d_SetCurve(self, *args)
 
-    def SetTolerance(self, *args) -> "void" :
+    def SetTolerance(self, *args):
         """
         :param theTol:
         :type theTol: float
@@ -1234,21 +1246,21 @@ class Extrema_CCFOfECC2dOfExtCC2d(object):
         """
         return _Extrema.Extrema_CCFOfECC2dOfExtCC2d_SetTolerance(self, *args)
 
-    def NbVariables(self, *args) -> "Standard_Integer" :
+    def NbVariables(self):
         """
         :rtype: int
 
         """
-        return _Extrema.Extrema_CCFOfECC2dOfExtCC2d_NbVariables(self, *args)
+        return _Extrema.Extrema_CCFOfECC2dOfExtCC2d_NbVariables(self)
 
-    def NbEquations(self, *args) -> "Standard_Integer" :
+    def NbEquations(self):
         """
         :rtype: int
 
         """
-        return _Extrema.Extrema_CCFOfECC2dOfExtCC2d_NbEquations(self, *args)
+        return _Extrema.Extrema_CCFOfECC2dOfExtCC2d_NbEquations(self)
 
-    def Value(self, *args) -> "Standard_Boolean" :
+    def Value(self, *args):
         """
         :param UV:
         :type UV: math_Vector &
@@ -1259,7 +1271,7 @@ class Extrema_CCFOfECC2dOfExtCC2d(object):
         """
         return _Extrema.Extrema_CCFOfECC2dOfExtCC2d_Value(self, *args)
 
-    def Derivatives(self, *args) -> "Standard_Boolean" :
+    def Derivatives(self, *args):
         """
         :param UV:
         :type UV: math_Vector &
@@ -1270,7 +1282,7 @@ class Extrema_CCFOfECC2dOfExtCC2d(object):
         """
         return _Extrema.Extrema_CCFOfECC2dOfExtCC2d_Derivatives(self, *args)
 
-    def Values(self, *args) -> "Standard_Boolean" :
+    def Values(self, *args):
         """
         :param UV:
         :type UV: math_Vector &
@@ -1283,33 +1295,33 @@ class Extrema_CCFOfECC2dOfExtCC2d(object):
         """
         return _Extrema.Extrema_CCFOfECC2dOfExtCC2d_Values(self, *args)
 
-    def GetStateNumber(self, *args) -> "Standard_Integer" :
+    def GetStateNumber(self):
         """
         :rtype: int
 
         """
-        return _Extrema.Extrema_CCFOfECC2dOfExtCC2d_GetStateNumber(self, *args)
+        return _Extrema.Extrema_CCFOfECC2dOfExtCC2d_GetStateNumber(self)
 
-    def NbExt(self, *args) -> "Standard_Integer" :
+    def NbExt(self):
         """
         :rtype: int
 
         """
-        return _Extrema.Extrema_CCFOfECC2dOfExtCC2d_NbExt(self, *args)
+        return _Extrema.Extrema_CCFOfECC2dOfExtCC2d_NbExt(self)
 
-    def SquareDistance(self, *args) -> "Standard_Real" :
+    def SquareDistance(self, *args):
         """
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :rtype: float
 
         """
         return _Extrema.Extrema_CCFOfECC2dOfExtCC2d_SquareDistance(self, *args)
 
-    def Points(self, *args) -> "void" :
+    def Points(self, *args):
         """
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :param P1:
         :type P1: Extrema_POnCurv2d &
         :param P2:
@@ -1319,23 +1331,23 @@ class Extrema_CCFOfECC2dOfExtCC2d(object):
         """
         return _Extrema.Extrema_CCFOfECC2dOfExtCC2d_Points(self, *args)
 
-    def CurvePtr(self, *args) -> "Standard_Address" :
+    def CurvePtr(self, *args):
         """
         :param theRank:
-        :type theRank: int
+        :type theRank: Standard_Integer
         :rtype: Standard_Address
 
         """
         return _Extrema.Extrema_CCFOfECC2dOfExtCC2d_CurvePtr(self, *args)
 
-    def Tolerance(self, *args) -> "Standard_Real" :
+    def Tolerance(self):
         """
         :rtype: float
 
         """
-        return _Extrema.Extrema_CCFOfECC2dOfExtCC2d_Tolerance(self, *args)
+        return _Extrema.Extrema_CCFOfECC2dOfExtCC2d_Tolerance(self)
 
-    def SubIntervalInitialize(self, *args) -> "void" :
+    def SubIntervalInitialize(self, *args):
         """
         :param theUfirst:
         :type theUfirst: math_Vector &
@@ -1346,7 +1358,7 @@ class Extrema_CCFOfECC2dOfExtCC2d(object):
         """
         return _Extrema.Extrema_CCFOfECC2dOfExtCC2d_SubIntervalInitialize(self, *args)
 
-    def SearchOfTolerance(self, *args) -> "Standard_Real" :
+    def SearchOfTolerance(self, *args):
         """
         :param C:
         :type C: Standard_Address
@@ -1391,6 +1403,18 @@ class Extrema_CCFOfECCOfExtCC(object):
         :type thetol: float
         :rtype: None
 
+        :param thetol: default value is 1.0e-10
+        :type thetol: float
+        :rtype: None
+
+        :param C1:
+        :type C1: Adaptor3d_Curve &
+        :param C2:
+        :type C2: Adaptor3d_Curve &
+        :param thetol: default value is 1.0e-10
+        :type thetol: float
+        :rtype: None
+
         :param C1:
         :type C1: Adaptor3d_Curve &
         :param C2:
@@ -1401,10 +1425,10 @@ class Extrema_CCFOfECCOfExtCC(object):
 
         """
         _Extrema.Extrema_CCFOfECCOfExtCC_swiginit(self,_Extrema.new_Extrema_CCFOfECCOfExtCC(*args))
-    def SetCurve(self, *args) -> "void" :
+    def SetCurve(self, *args):
         """
         :param theRank:
-        :type theRank: int
+        :type theRank: Standard_Integer
         :param C1:
         :type C1: Adaptor3d_Curve &
         :rtype: None
@@ -1412,7 +1436,7 @@ class Extrema_CCFOfECCOfExtCC(object):
         """
         return _Extrema.Extrema_CCFOfECCOfExtCC_SetCurve(self, *args)
 
-    def SetTolerance(self, *args) -> "void" :
+    def SetTolerance(self, *args):
         """
         :param theTol:
         :type theTol: float
@@ -1421,21 +1445,21 @@ class Extrema_CCFOfECCOfExtCC(object):
         """
         return _Extrema.Extrema_CCFOfECCOfExtCC_SetTolerance(self, *args)
 
-    def NbVariables(self, *args) -> "Standard_Integer" :
+    def NbVariables(self):
         """
         :rtype: int
 
         """
-        return _Extrema.Extrema_CCFOfECCOfExtCC_NbVariables(self, *args)
+        return _Extrema.Extrema_CCFOfECCOfExtCC_NbVariables(self)
 
-    def NbEquations(self, *args) -> "Standard_Integer" :
+    def NbEquations(self):
         """
         :rtype: int
 
         """
-        return _Extrema.Extrema_CCFOfECCOfExtCC_NbEquations(self, *args)
+        return _Extrema.Extrema_CCFOfECCOfExtCC_NbEquations(self)
 
-    def Value(self, *args) -> "Standard_Boolean" :
+    def Value(self, *args):
         """
         :param UV:
         :type UV: math_Vector &
@@ -1446,7 +1470,7 @@ class Extrema_CCFOfECCOfExtCC(object):
         """
         return _Extrema.Extrema_CCFOfECCOfExtCC_Value(self, *args)
 
-    def Derivatives(self, *args) -> "Standard_Boolean" :
+    def Derivatives(self, *args):
         """
         :param UV:
         :type UV: math_Vector &
@@ -1457,7 +1481,7 @@ class Extrema_CCFOfECCOfExtCC(object):
         """
         return _Extrema.Extrema_CCFOfECCOfExtCC_Derivatives(self, *args)
 
-    def Values(self, *args) -> "Standard_Boolean" :
+    def Values(self, *args):
         """
         :param UV:
         :type UV: math_Vector &
@@ -1470,33 +1494,33 @@ class Extrema_CCFOfECCOfExtCC(object):
         """
         return _Extrema.Extrema_CCFOfECCOfExtCC_Values(self, *args)
 
-    def GetStateNumber(self, *args) -> "Standard_Integer" :
+    def GetStateNumber(self):
         """
         :rtype: int
 
         """
-        return _Extrema.Extrema_CCFOfECCOfExtCC_GetStateNumber(self, *args)
+        return _Extrema.Extrema_CCFOfECCOfExtCC_GetStateNumber(self)
 
-    def NbExt(self, *args) -> "Standard_Integer" :
+    def NbExt(self):
         """
         :rtype: int
 
         """
-        return _Extrema.Extrema_CCFOfECCOfExtCC_NbExt(self, *args)
+        return _Extrema.Extrema_CCFOfECCOfExtCC_NbExt(self)
 
-    def SquareDistance(self, *args) -> "Standard_Real" :
+    def SquareDistance(self, *args):
         """
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :rtype: float
 
         """
         return _Extrema.Extrema_CCFOfECCOfExtCC_SquareDistance(self, *args)
 
-    def Points(self, *args) -> "void" :
+    def Points(self, *args):
         """
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :param P1:
         :type P1: Extrema_POnCurv &
         :param P2:
@@ -1506,23 +1530,23 @@ class Extrema_CCFOfECCOfExtCC(object):
         """
         return _Extrema.Extrema_CCFOfECCOfExtCC_Points(self, *args)
 
-    def CurvePtr(self, *args) -> "Standard_Address" :
+    def CurvePtr(self, *args):
         """
         :param theRank:
-        :type theRank: int
+        :type theRank: Standard_Integer
         :rtype: Standard_Address
 
         """
         return _Extrema.Extrema_CCFOfECCOfExtCC_CurvePtr(self, *args)
 
-    def Tolerance(self, *args) -> "Standard_Real" :
+    def Tolerance(self):
         """
         :rtype: float
 
         """
-        return _Extrema.Extrema_CCFOfECCOfExtCC_Tolerance(self, *args)
+        return _Extrema.Extrema_CCFOfECCOfExtCC_Tolerance(self)
 
-    def SubIntervalInitialize(self, *args) -> "void" :
+    def SubIntervalInitialize(self, *args):
         """
         :param theUfirst:
         :type theUfirst: math_Vector &
@@ -1533,7 +1557,7 @@ class Extrema_CCFOfECCOfExtCC(object):
         """
         return _Extrema.Extrema_CCFOfECCOfExtCC_SubIntervalInitialize(self, *args)
 
-    def SearchOfTolerance(self, *args) -> "Standard_Real" :
+    def SearchOfTolerance(self, *args):
         """
         :param C:
         :type C: Standard_Address
@@ -1578,6 +1602,18 @@ class Extrema_CCFOfELCC2dOfLocateExtCC2d(object):
         :type thetol: float
         :rtype: None
 
+        :param thetol: default value is 1.0e-10
+        :type thetol: float
+        :rtype: None
+
+        :param C1:
+        :type C1: Adaptor2d_Curve2d &
+        :param C2:
+        :type C2: Adaptor2d_Curve2d &
+        :param thetol: default value is 1.0e-10
+        :type thetol: float
+        :rtype: None
+
         :param C1:
         :type C1: Adaptor2d_Curve2d &
         :param C2:
@@ -1588,10 +1624,10 @@ class Extrema_CCFOfELCC2dOfLocateExtCC2d(object):
 
         """
         _Extrema.Extrema_CCFOfELCC2dOfLocateExtCC2d_swiginit(self,_Extrema.new_Extrema_CCFOfELCC2dOfLocateExtCC2d(*args))
-    def SetCurve(self, *args) -> "void" :
+    def SetCurve(self, *args):
         """
         :param theRank:
-        :type theRank: int
+        :type theRank: Standard_Integer
         :param C1:
         :type C1: Adaptor2d_Curve2d &
         :rtype: None
@@ -1599,7 +1635,7 @@ class Extrema_CCFOfELCC2dOfLocateExtCC2d(object):
         """
         return _Extrema.Extrema_CCFOfELCC2dOfLocateExtCC2d_SetCurve(self, *args)
 
-    def SetTolerance(self, *args) -> "void" :
+    def SetTolerance(self, *args):
         """
         :param theTol:
         :type theTol: float
@@ -1608,21 +1644,21 @@ class Extrema_CCFOfELCC2dOfLocateExtCC2d(object):
         """
         return _Extrema.Extrema_CCFOfELCC2dOfLocateExtCC2d_SetTolerance(self, *args)
 
-    def NbVariables(self, *args) -> "Standard_Integer" :
+    def NbVariables(self):
         """
         :rtype: int
 
         """
-        return _Extrema.Extrema_CCFOfELCC2dOfLocateExtCC2d_NbVariables(self, *args)
+        return _Extrema.Extrema_CCFOfELCC2dOfLocateExtCC2d_NbVariables(self)
 
-    def NbEquations(self, *args) -> "Standard_Integer" :
+    def NbEquations(self):
         """
         :rtype: int
 
         """
-        return _Extrema.Extrema_CCFOfELCC2dOfLocateExtCC2d_NbEquations(self, *args)
+        return _Extrema.Extrema_CCFOfELCC2dOfLocateExtCC2d_NbEquations(self)
 
-    def Value(self, *args) -> "Standard_Boolean" :
+    def Value(self, *args):
         """
         :param UV:
         :type UV: math_Vector &
@@ -1633,7 +1669,7 @@ class Extrema_CCFOfELCC2dOfLocateExtCC2d(object):
         """
         return _Extrema.Extrema_CCFOfELCC2dOfLocateExtCC2d_Value(self, *args)
 
-    def Derivatives(self, *args) -> "Standard_Boolean" :
+    def Derivatives(self, *args):
         """
         :param UV:
         :type UV: math_Vector &
@@ -1644,7 +1680,7 @@ class Extrema_CCFOfELCC2dOfLocateExtCC2d(object):
         """
         return _Extrema.Extrema_CCFOfELCC2dOfLocateExtCC2d_Derivatives(self, *args)
 
-    def Values(self, *args) -> "Standard_Boolean" :
+    def Values(self, *args):
         """
         :param UV:
         :type UV: math_Vector &
@@ -1657,33 +1693,33 @@ class Extrema_CCFOfELCC2dOfLocateExtCC2d(object):
         """
         return _Extrema.Extrema_CCFOfELCC2dOfLocateExtCC2d_Values(self, *args)
 
-    def GetStateNumber(self, *args) -> "Standard_Integer" :
+    def GetStateNumber(self):
         """
         :rtype: int
 
         """
-        return _Extrema.Extrema_CCFOfELCC2dOfLocateExtCC2d_GetStateNumber(self, *args)
+        return _Extrema.Extrema_CCFOfELCC2dOfLocateExtCC2d_GetStateNumber(self)
 
-    def NbExt(self, *args) -> "Standard_Integer" :
+    def NbExt(self):
         """
         :rtype: int
 
         """
-        return _Extrema.Extrema_CCFOfELCC2dOfLocateExtCC2d_NbExt(self, *args)
+        return _Extrema.Extrema_CCFOfELCC2dOfLocateExtCC2d_NbExt(self)
 
-    def SquareDistance(self, *args) -> "Standard_Real" :
+    def SquareDistance(self, *args):
         """
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :rtype: float
 
         """
         return _Extrema.Extrema_CCFOfELCC2dOfLocateExtCC2d_SquareDistance(self, *args)
 
-    def Points(self, *args) -> "void" :
+    def Points(self, *args):
         """
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :param P1:
         :type P1: Extrema_POnCurv2d &
         :param P2:
@@ -1693,23 +1729,23 @@ class Extrema_CCFOfELCC2dOfLocateExtCC2d(object):
         """
         return _Extrema.Extrema_CCFOfELCC2dOfLocateExtCC2d_Points(self, *args)
 
-    def CurvePtr(self, *args) -> "Standard_Address" :
+    def CurvePtr(self, *args):
         """
         :param theRank:
-        :type theRank: int
+        :type theRank: Standard_Integer
         :rtype: Standard_Address
 
         """
         return _Extrema.Extrema_CCFOfELCC2dOfLocateExtCC2d_CurvePtr(self, *args)
 
-    def Tolerance(self, *args) -> "Standard_Real" :
+    def Tolerance(self):
         """
         :rtype: float
 
         """
-        return _Extrema.Extrema_CCFOfELCC2dOfLocateExtCC2d_Tolerance(self, *args)
+        return _Extrema.Extrema_CCFOfELCC2dOfLocateExtCC2d_Tolerance(self)
 
-    def SubIntervalInitialize(self, *args) -> "void" :
+    def SubIntervalInitialize(self, *args):
         """
         :param theUfirst:
         :type theUfirst: math_Vector &
@@ -1720,7 +1756,7 @@ class Extrema_CCFOfELCC2dOfLocateExtCC2d(object):
         """
         return _Extrema.Extrema_CCFOfELCC2dOfLocateExtCC2d_SubIntervalInitialize(self, *args)
 
-    def SearchOfTolerance(self, *args) -> "Standard_Real" :
+    def SearchOfTolerance(self, *args):
         """
         :param C:
         :type C: Standard_Address
@@ -1765,6 +1801,18 @@ class Extrema_CCFOfELCCOfLocateExtCC(object):
         :type thetol: float
         :rtype: None
 
+        :param thetol: default value is 1.0e-10
+        :type thetol: float
+        :rtype: None
+
+        :param C1:
+        :type C1: Adaptor3d_Curve &
+        :param C2:
+        :type C2: Adaptor3d_Curve &
+        :param thetol: default value is 1.0e-10
+        :type thetol: float
+        :rtype: None
+
         :param C1:
         :type C1: Adaptor3d_Curve &
         :param C2:
@@ -1775,10 +1823,10 @@ class Extrema_CCFOfELCCOfLocateExtCC(object):
 
         """
         _Extrema.Extrema_CCFOfELCCOfLocateExtCC_swiginit(self,_Extrema.new_Extrema_CCFOfELCCOfLocateExtCC(*args))
-    def SetCurve(self, *args) -> "void" :
+    def SetCurve(self, *args):
         """
         :param theRank:
-        :type theRank: int
+        :type theRank: Standard_Integer
         :param C1:
         :type C1: Adaptor3d_Curve &
         :rtype: None
@@ -1786,7 +1834,7 @@ class Extrema_CCFOfELCCOfLocateExtCC(object):
         """
         return _Extrema.Extrema_CCFOfELCCOfLocateExtCC_SetCurve(self, *args)
 
-    def SetTolerance(self, *args) -> "void" :
+    def SetTolerance(self, *args):
         """
         :param theTol:
         :type theTol: float
@@ -1795,21 +1843,21 @@ class Extrema_CCFOfELCCOfLocateExtCC(object):
         """
         return _Extrema.Extrema_CCFOfELCCOfLocateExtCC_SetTolerance(self, *args)
 
-    def NbVariables(self, *args) -> "Standard_Integer" :
+    def NbVariables(self):
         """
         :rtype: int
 
         """
-        return _Extrema.Extrema_CCFOfELCCOfLocateExtCC_NbVariables(self, *args)
+        return _Extrema.Extrema_CCFOfELCCOfLocateExtCC_NbVariables(self)
 
-    def NbEquations(self, *args) -> "Standard_Integer" :
+    def NbEquations(self):
         """
         :rtype: int
 
         """
-        return _Extrema.Extrema_CCFOfELCCOfLocateExtCC_NbEquations(self, *args)
+        return _Extrema.Extrema_CCFOfELCCOfLocateExtCC_NbEquations(self)
 
-    def Value(self, *args) -> "Standard_Boolean" :
+    def Value(self, *args):
         """
         :param UV:
         :type UV: math_Vector &
@@ -1820,7 +1868,7 @@ class Extrema_CCFOfELCCOfLocateExtCC(object):
         """
         return _Extrema.Extrema_CCFOfELCCOfLocateExtCC_Value(self, *args)
 
-    def Derivatives(self, *args) -> "Standard_Boolean" :
+    def Derivatives(self, *args):
         """
         :param UV:
         :type UV: math_Vector &
@@ -1831,7 +1879,7 @@ class Extrema_CCFOfELCCOfLocateExtCC(object):
         """
         return _Extrema.Extrema_CCFOfELCCOfLocateExtCC_Derivatives(self, *args)
 
-    def Values(self, *args) -> "Standard_Boolean" :
+    def Values(self, *args):
         """
         :param UV:
         :type UV: math_Vector &
@@ -1844,33 +1892,33 @@ class Extrema_CCFOfELCCOfLocateExtCC(object):
         """
         return _Extrema.Extrema_CCFOfELCCOfLocateExtCC_Values(self, *args)
 
-    def GetStateNumber(self, *args) -> "Standard_Integer" :
+    def GetStateNumber(self):
         """
         :rtype: int
 
         """
-        return _Extrema.Extrema_CCFOfELCCOfLocateExtCC_GetStateNumber(self, *args)
+        return _Extrema.Extrema_CCFOfELCCOfLocateExtCC_GetStateNumber(self)
 
-    def NbExt(self, *args) -> "Standard_Integer" :
+    def NbExt(self):
         """
         :rtype: int
 
         """
-        return _Extrema.Extrema_CCFOfELCCOfLocateExtCC_NbExt(self, *args)
+        return _Extrema.Extrema_CCFOfELCCOfLocateExtCC_NbExt(self)
 
-    def SquareDistance(self, *args) -> "Standard_Real" :
+    def SquareDistance(self, *args):
         """
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :rtype: float
 
         """
         return _Extrema.Extrema_CCFOfELCCOfLocateExtCC_SquareDistance(self, *args)
 
-    def Points(self, *args) -> "void" :
+    def Points(self, *args):
         """
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :param P1:
         :type P1: Extrema_POnCurv &
         :param P2:
@@ -1880,23 +1928,23 @@ class Extrema_CCFOfELCCOfLocateExtCC(object):
         """
         return _Extrema.Extrema_CCFOfELCCOfLocateExtCC_Points(self, *args)
 
-    def CurvePtr(self, *args) -> "Standard_Address" :
+    def CurvePtr(self, *args):
         """
         :param theRank:
-        :type theRank: int
+        :type theRank: Standard_Integer
         :rtype: Standard_Address
 
         """
         return _Extrema.Extrema_CCFOfELCCOfLocateExtCC_CurvePtr(self, *args)
 
-    def Tolerance(self, *args) -> "Standard_Real" :
+    def Tolerance(self):
         """
         :rtype: float
 
         """
-        return _Extrema.Extrema_CCFOfELCCOfLocateExtCC_Tolerance(self, *args)
+        return _Extrema.Extrema_CCFOfELCCOfLocateExtCC_Tolerance(self)
 
-    def SubIntervalInitialize(self, *args) -> "void" :
+    def SubIntervalInitialize(self, *args):
         """
         :param theUfirst:
         :type theUfirst: math_Vector &
@@ -1907,7 +1955,7 @@ class Extrema_CCFOfELCCOfLocateExtCC(object):
         """
         return _Extrema.Extrema_CCFOfELCCOfLocateExtCC_SubIntervalInitialize(self, *args)
 
-    def SearchOfTolerance(self, *args) -> "Standard_Real" :
+    def SearchOfTolerance(self, *args):
         """
         :param C:
         :type C: Standard_Address
@@ -1952,6 +2000,18 @@ class Extrema_CCLocFOfLocECC2dOfLocateExtCC2d(object):
         :type thetol: float
         :rtype: None
 
+        :param thetol: default value is 1.0e-10
+        :type thetol: float
+        :rtype: None
+
+        :param C1:
+        :type C1: Adaptor2d_Curve2d &
+        :param C2:
+        :type C2: Adaptor2d_Curve2d &
+        :param thetol: default value is 1.0e-10
+        :type thetol: float
+        :rtype: None
+
         :param C1:
         :type C1: Adaptor2d_Curve2d &
         :param C2:
@@ -1962,10 +2022,10 @@ class Extrema_CCLocFOfLocECC2dOfLocateExtCC2d(object):
 
         """
         _Extrema.Extrema_CCLocFOfLocECC2dOfLocateExtCC2d_swiginit(self,_Extrema.new_Extrema_CCLocFOfLocECC2dOfLocateExtCC2d(*args))
-    def SetCurve(self, *args) -> "void" :
+    def SetCurve(self, *args):
         """
         :param theRank:
-        :type theRank: int
+        :type theRank: Standard_Integer
         :param C1:
         :type C1: Adaptor2d_Curve2d &
         :rtype: None
@@ -1973,7 +2033,7 @@ class Extrema_CCLocFOfLocECC2dOfLocateExtCC2d(object):
         """
         return _Extrema.Extrema_CCLocFOfLocECC2dOfLocateExtCC2d_SetCurve(self, *args)
 
-    def SetTolerance(self, *args) -> "void" :
+    def SetTolerance(self, *args):
         """
         :param theTol:
         :type theTol: float
@@ -1982,21 +2042,21 @@ class Extrema_CCLocFOfLocECC2dOfLocateExtCC2d(object):
         """
         return _Extrema.Extrema_CCLocFOfLocECC2dOfLocateExtCC2d_SetTolerance(self, *args)
 
-    def NbVariables(self, *args) -> "Standard_Integer" :
+    def NbVariables(self):
         """
         :rtype: int
 
         """
-        return _Extrema.Extrema_CCLocFOfLocECC2dOfLocateExtCC2d_NbVariables(self, *args)
+        return _Extrema.Extrema_CCLocFOfLocECC2dOfLocateExtCC2d_NbVariables(self)
 
-    def NbEquations(self, *args) -> "Standard_Integer" :
+    def NbEquations(self):
         """
         :rtype: int
 
         """
-        return _Extrema.Extrema_CCLocFOfLocECC2dOfLocateExtCC2d_NbEquations(self, *args)
+        return _Extrema.Extrema_CCLocFOfLocECC2dOfLocateExtCC2d_NbEquations(self)
 
-    def Value(self, *args) -> "Standard_Boolean" :
+    def Value(self, *args):
         """
         :param UV:
         :type UV: math_Vector &
@@ -2007,7 +2067,7 @@ class Extrema_CCLocFOfLocECC2dOfLocateExtCC2d(object):
         """
         return _Extrema.Extrema_CCLocFOfLocECC2dOfLocateExtCC2d_Value(self, *args)
 
-    def Derivatives(self, *args) -> "Standard_Boolean" :
+    def Derivatives(self, *args):
         """
         :param UV:
         :type UV: math_Vector &
@@ -2018,7 +2078,7 @@ class Extrema_CCLocFOfLocECC2dOfLocateExtCC2d(object):
         """
         return _Extrema.Extrema_CCLocFOfLocECC2dOfLocateExtCC2d_Derivatives(self, *args)
 
-    def Values(self, *args) -> "Standard_Boolean" :
+    def Values(self, *args):
         """
         :param UV:
         :type UV: math_Vector &
@@ -2031,33 +2091,33 @@ class Extrema_CCLocFOfLocECC2dOfLocateExtCC2d(object):
         """
         return _Extrema.Extrema_CCLocFOfLocECC2dOfLocateExtCC2d_Values(self, *args)
 
-    def GetStateNumber(self, *args) -> "Standard_Integer" :
+    def GetStateNumber(self):
         """
         :rtype: int
 
         """
-        return _Extrema.Extrema_CCLocFOfLocECC2dOfLocateExtCC2d_GetStateNumber(self, *args)
+        return _Extrema.Extrema_CCLocFOfLocECC2dOfLocateExtCC2d_GetStateNumber(self)
 
-    def NbExt(self, *args) -> "Standard_Integer" :
+    def NbExt(self):
         """
         :rtype: int
 
         """
-        return _Extrema.Extrema_CCLocFOfLocECC2dOfLocateExtCC2d_NbExt(self, *args)
+        return _Extrema.Extrema_CCLocFOfLocECC2dOfLocateExtCC2d_NbExt(self)
 
-    def SquareDistance(self, *args) -> "Standard_Real" :
+    def SquareDistance(self, *args):
         """
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :rtype: float
 
         """
         return _Extrema.Extrema_CCLocFOfLocECC2dOfLocateExtCC2d_SquareDistance(self, *args)
 
-    def Points(self, *args) -> "void" :
+    def Points(self, *args):
         """
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :param P1:
         :type P1: Extrema_POnCurv2d &
         :param P2:
@@ -2067,23 +2127,23 @@ class Extrema_CCLocFOfLocECC2dOfLocateExtCC2d(object):
         """
         return _Extrema.Extrema_CCLocFOfLocECC2dOfLocateExtCC2d_Points(self, *args)
 
-    def CurvePtr(self, *args) -> "Standard_Address" :
+    def CurvePtr(self, *args):
         """
         :param theRank:
-        :type theRank: int
+        :type theRank: Standard_Integer
         :rtype: Standard_Address
 
         """
         return _Extrema.Extrema_CCLocFOfLocECC2dOfLocateExtCC2d_CurvePtr(self, *args)
 
-    def Tolerance(self, *args) -> "Standard_Real" :
+    def Tolerance(self):
         """
         :rtype: float
 
         """
-        return _Extrema.Extrema_CCLocFOfLocECC2dOfLocateExtCC2d_Tolerance(self, *args)
+        return _Extrema.Extrema_CCLocFOfLocECC2dOfLocateExtCC2d_Tolerance(self)
 
-    def SubIntervalInitialize(self, *args) -> "void" :
+    def SubIntervalInitialize(self, *args):
         """
         :param theUfirst:
         :type theUfirst: math_Vector &
@@ -2094,7 +2154,7 @@ class Extrema_CCLocFOfLocECC2dOfLocateExtCC2d(object):
         """
         return _Extrema.Extrema_CCLocFOfLocECC2dOfLocateExtCC2d_SubIntervalInitialize(self, *args)
 
-    def SearchOfTolerance(self, *args) -> "Standard_Real" :
+    def SearchOfTolerance(self, *args):
         """
         :param C:
         :type C: Standard_Address
@@ -2139,6 +2199,18 @@ class Extrema_CCLocFOfLocECCOfLocateExtCC(object):
         :type thetol: float
         :rtype: None
 
+        :param thetol: default value is 1.0e-10
+        :type thetol: float
+        :rtype: None
+
+        :param C1:
+        :type C1: Adaptor3d_Curve &
+        :param C2:
+        :type C2: Adaptor3d_Curve &
+        :param thetol: default value is 1.0e-10
+        :type thetol: float
+        :rtype: None
+
         :param C1:
         :type C1: Adaptor3d_Curve &
         :param C2:
@@ -2149,10 +2221,10 @@ class Extrema_CCLocFOfLocECCOfLocateExtCC(object):
 
         """
         _Extrema.Extrema_CCLocFOfLocECCOfLocateExtCC_swiginit(self,_Extrema.new_Extrema_CCLocFOfLocECCOfLocateExtCC(*args))
-    def SetCurve(self, *args) -> "void" :
+    def SetCurve(self, *args):
         """
         :param theRank:
-        :type theRank: int
+        :type theRank: Standard_Integer
         :param C1:
         :type C1: Adaptor3d_Curve &
         :rtype: None
@@ -2160,7 +2232,7 @@ class Extrema_CCLocFOfLocECCOfLocateExtCC(object):
         """
         return _Extrema.Extrema_CCLocFOfLocECCOfLocateExtCC_SetCurve(self, *args)
 
-    def SetTolerance(self, *args) -> "void" :
+    def SetTolerance(self, *args):
         """
         :param theTol:
         :type theTol: float
@@ -2169,21 +2241,21 @@ class Extrema_CCLocFOfLocECCOfLocateExtCC(object):
         """
         return _Extrema.Extrema_CCLocFOfLocECCOfLocateExtCC_SetTolerance(self, *args)
 
-    def NbVariables(self, *args) -> "Standard_Integer" :
+    def NbVariables(self):
         """
         :rtype: int
 
         """
-        return _Extrema.Extrema_CCLocFOfLocECCOfLocateExtCC_NbVariables(self, *args)
+        return _Extrema.Extrema_CCLocFOfLocECCOfLocateExtCC_NbVariables(self)
 
-    def NbEquations(self, *args) -> "Standard_Integer" :
+    def NbEquations(self):
         """
         :rtype: int
 
         """
-        return _Extrema.Extrema_CCLocFOfLocECCOfLocateExtCC_NbEquations(self, *args)
+        return _Extrema.Extrema_CCLocFOfLocECCOfLocateExtCC_NbEquations(self)
 
-    def Value(self, *args) -> "Standard_Boolean" :
+    def Value(self, *args):
         """
         :param UV:
         :type UV: math_Vector &
@@ -2194,7 +2266,7 @@ class Extrema_CCLocFOfLocECCOfLocateExtCC(object):
         """
         return _Extrema.Extrema_CCLocFOfLocECCOfLocateExtCC_Value(self, *args)
 
-    def Derivatives(self, *args) -> "Standard_Boolean" :
+    def Derivatives(self, *args):
         """
         :param UV:
         :type UV: math_Vector &
@@ -2205,7 +2277,7 @@ class Extrema_CCLocFOfLocECCOfLocateExtCC(object):
         """
         return _Extrema.Extrema_CCLocFOfLocECCOfLocateExtCC_Derivatives(self, *args)
 
-    def Values(self, *args) -> "Standard_Boolean" :
+    def Values(self, *args):
         """
         :param UV:
         :type UV: math_Vector &
@@ -2218,33 +2290,33 @@ class Extrema_CCLocFOfLocECCOfLocateExtCC(object):
         """
         return _Extrema.Extrema_CCLocFOfLocECCOfLocateExtCC_Values(self, *args)
 
-    def GetStateNumber(self, *args) -> "Standard_Integer" :
+    def GetStateNumber(self):
         """
         :rtype: int
 
         """
-        return _Extrema.Extrema_CCLocFOfLocECCOfLocateExtCC_GetStateNumber(self, *args)
+        return _Extrema.Extrema_CCLocFOfLocECCOfLocateExtCC_GetStateNumber(self)
 
-    def NbExt(self, *args) -> "Standard_Integer" :
+    def NbExt(self):
         """
         :rtype: int
 
         """
-        return _Extrema.Extrema_CCLocFOfLocECCOfLocateExtCC_NbExt(self, *args)
+        return _Extrema.Extrema_CCLocFOfLocECCOfLocateExtCC_NbExt(self)
 
-    def SquareDistance(self, *args) -> "Standard_Real" :
+    def SquareDistance(self, *args):
         """
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :rtype: float
 
         """
         return _Extrema.Extrema_CCLocFOfLocECCOfLocateExtCC_SquareDistance(self, *args)
 
-    def Points(self, *args) -> "void" :
+    def Points(self, *args):
         """
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :param P1:
         :type P1: Extrema_POnCurv &
         :param P2:
@@ -2254,23 +2326,23 @@ class Extrema_CCLocFOfLocECCOfLocateExtCC(object):
         """
         return _Extrema.Extrema_CCLocFOfLocECCOfLocateExtCC_Points(self, *args)
 
-    def CurvePtr(self, *args) -> "Standard_Address" :
+    def CurvePtr(self, *args):
         """
         :param theRank:
-        :type theRank: int
+        :type theRank: Standard_Integer
         :rtype: Standard_Address
 
         """
         return _Extrema.Extrema_CCLocFOfLocECCOfLocateExtCC_CurvePtr(self, *args)
 
-    def Tolerance(self, *args) -> "Standard_Real" :
+    def Tolerance(self):
         """
         :rtype: float
 
         """
-        return _Extrema.Extrema_CCLocFOfLocECCOfLocateExtCC_Tolerance(self, *args)
+        return _Extrema.Extrema_CCLocFOfLocECCOfLocateExtCC_Tolerance(self)
 
-    def SubIntervalInitialize(self, *args) -> "void" :
+    def SubIntervalInitialize(self, *args):
         """
         :param theUfirst:
         :type theUfirst: math_Vector &
@@ -2281,7 +2353,7 @@ class Extrema_CCLocFOfLocECCOfLocateExtCC(object):
         """
         return _Extrema.Extrema_CCLocFOfLocECCOfLocateExtCC_SubIntervalInitialize(self, *args)
 
-    def SearchOfTolerance(self, *args) -> "Standard_Real" :
+    def SearchOfTolerance(self, *args):
         """
         :param C:
         :type C: Standard_Address
@@ -2331,7 +2403,7 @@ class Extrema_CCache2dOfExtCC2d(OCC.Standard.Standard_Transient):
         :param theULast:
         :type theULast: float
         :param theNbSamples:
-        :type theNbSamples: int
+        :type theNbSamples: Standard_Integer
         :param theToCalculate:
         :type theToCalculate: bool
         :rtype: None
@@ -2345,21 +2417,21 @@ class Extrema_CCache2dOfExtCC2d(OCC.Standard.Standard_Transient):
         :param IntervalsCN:
         :type IntervalsCN: TColStd_Array1OfReal &
         :param StartIndex:
-        :type StartIndex: int
+        :type StartIndex: Standard_Integer
         :param EndIndex:
-        :type EndIndex: int
+        :type EndIndex: Standard_Integer
         :param Coeff:
         :type Coeff: float
         :rtype: None
 
         """
         _Extrema.Extrema_CCache2dOfExtCC2d_swiginit(self,_Extrema.new_Extrema_CCache2dOfExtCC2d(*args))
-    def SetCurve(self, *args) -> "void" :
+    def SetCurve(self, *args):
         """
         :param theC:
         :type theC: Adaptor2d_Curve2d &
         :param theNbSamples:
-        :type theNbSamples: int
+        :type theNbSamples: Standard_Integer
         :param theToCalculate:
         :type theToCalculate: bool
         :rtype: None
@@ -2371,7 +2443,7 @@ class Extrema_CCache2dOfExtCC2d(OCC.Standard.Standard_Transient):
         :param theULast:
         :type theULast: float
         :param theNbSamples:
-        :type theNbSamples: int
+        :type theNbSamples: Standard_Integer
         :param theToCalculate:
         :type theToCalculate: bool
         :rtype: None
@@ -2379,7 +2451,7 @@ class Extrema_CCache2dOfExtCC2d(OCC.Standard.Standard_Transient):
         """
         return _Extrema.Extrema_CCache2dOfExtCC2d_SetCurve(self, *args)
 
-    def SetRange(self, *args) -> "void" :
+    def SetRange(self, *args):
         """
         :param Uinf:
         :type Uinf: float
@@ -2392,81 +2464,81 @@ class Extrema_CCache2dOfExtCC2d(OCC.Standard.Standard_Transient):
         """
         return _Extrema.Extrema_CCache2dOfExtCC2d_SetRange(self, *args)
 
-    def CalculatePoints(self, *args) -> "void" :
+    def CalculatePoints(self):
         """
         :rtype: None
 
         """
-        return _Extrema.Extrema_CCache2dOfExtCC2d_CalculatePoints(self, *args)
+        return _Extrema.Extrema_CCache2dOfExtCC2d_CalculatePoints(self)
 
-    def IsValid(self, *args) -> "Standard_Boolean" :
+    def IsValid(self):
         """
         :rtype: bool
 
         """
-        return _Extrema.Extrema_CCache2dOfExtCC2d_IsValid(self, *args)
+        return _Extrema.Extrema_CCache2dOfExtCC2d_IsValid(self)
 
-    def Parameters(self, *args) -> "Handle_TColStd_HArray1OfReal const &" :
+    def Parameters(self):
         """
         :rtype: Handle_TColStd_HArray1OfReal
 
         """
-        return _Extrema.Extrema_CCache2dOfExtCC2d_Parameters(self, *args)
+        return _Extrema.Extrema_CCache2dOfExtCC2d_Parameters(self)
 
-    def Points(self, *args) -> "Handle_TColgp_HArray1OfPnt2d const &" :
+    def Points(self):
         """
         :rtype: Handle_TColgp_HArray1OfPnt2d
 
         """
-        return _Extrema.Extrema_CCache2dOfExtCC2d_Points(self, *args)
+        return _Extrema.Extrema_CCache2dOfExtCC2d_Points(self)
 
-    def CurvePtr(self, *args) -> "Standard_Address" :
+    def CurvePtr(self):
         """
         :rtype: Standard_Address
 
         """
-        return _Extrema.Extrema_CCache2dOfExtCC2d_CurvePtr(self, *args)
+        return _Extrema.Extrema_CCache2dOfExtCC2d_CurvePtr(self)
 
-    def NbSamples(self, *args) -> "Standard_Integer" :
+    def NbSamples(self):
         """
         :rtype: int
 
         """
-        return _Extrema.Extrema_CCache2dOfExtCC2d_NbSamples(self, *args)
+        return _Extrema.Extrema_CCache2dOfExtCC2d_NbSamples(self)
 
-    def FirstParameter(self, *args) -> "Standard_Real" :
+    def FirstParameter(self):
         """
         :rtype: float
 
         """
-        return _Extrema.Extrema_CCache2dOfExtCC2d_FirstParameter(self, *args)
+        return _Extrema.Extrema_CCache2dOfExtCC2d_FirstParameter(self)
 
-    def LastParameter(self, *args) -> "Standard_Real" :
+    def LastParameter(self):
         """
         :rtype: float
 
         """
-        return _Extrema.Extrema_CCache2dOfExtCC2d_LastParameter(self, *args)
+        return _Extrema.Extrema_CCache2dOfExtCC2d_LastParameter(self)
 
-    def TrimFirstParameter(self, *args) -> "Standard_Real" :
+    def TrimFirstParameter(self):
         """
         :rtype: float
 
         """
-        return _Extrema.Extrema_CCache2dOfExtCC2d_TrimFirstParameter(self, *args)
+        return _Extrema.Extrema_CCache2dOfExtCC2d_TrimFirstParameter(self)
 
-    def TrimLastParameter(self, *args) -> "Standard_Real" :
+    def TrimLastParameter(self):
         """
         :rtype: float
 
         """
-        return _Extrema.Extrema_CCache2dOfExtCC2d_TrimLastParameter(self, *args)
+        return _Extrema.Extrema_CCache2dOfExtCC2d_TrimLastParameter(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Extrema_CCache2dOfExtCC2d self)"""
         return _Extrema.Extrema_CCache2dOfExtCC2d__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Extrema_CCache2dOfExtCC2d" :
+    def GetHandle(self):
         """GetHandle(Extrema_CCache2dOfExtCC2d self) -> Handle_Extrema_CCache2dOfExtCC2d"""
         return _Extrema.Extrema_CCache2dOfExtCC2d_GetHandle(self)
 
@@ -2516,7 +2588,7 @@ Handle_Extrema_CCache2dOfExtCC2d._kill_pointed = new_instancemethod(_Extrema.Han
 Handle_Extrema_CCache2dOfExtCC2d_swigregister = _Extrema.Handle_Extrema_CCache2dOfExtCC2d_swigregister
 Handle_Extrema_CCache2dOfExtCC2d_swigregister(Handle_Extrema_CCache2dOfExtCC2d)
 
-def Handle_Extrema_CCache2dOfExtCC2d_DownCast(*args) -> "Handle_Extrema_CCache2dOfExtCC2d const" :
+def Handle_Extrema_CCache2dOfExtCC2d_DownCast(*args):
   return _Extrema.Handle_Extrema_CCache2dOfExtCC2d_DownCast(*args)
 Handle_Extrema_CCache2dOfExtCC2d_DownCast = _Extrema.Handle_Extrema_CCache2dOfExtCC2d_DownCast
 
@@ -2534,7 +2606,7 @@ class Extrema_CCacheOfExtCC(OCC.Standard.Standard_Transient):
         :param theULast:
         :type theULast: float
         :param theNbSamples:
-        :type theNbSamples: int
+        :type theNbSamples: Standard_Integer
         :param theToCalculate:
         :type theToCalculate: bool
         :rtype: None
@@ -2548,21 +2620,21 @@ class Extrema_CCacheOfExtCC(OCC.Standard.Standard_Transient):
         :param IntervalsCN:
         :type IntervalsCN: TColStd_Array1OfReal &
         :param StartIndex:
-        :type StartIndex: int
+        :type StartIndex: Standard_Integer
         :param EndIndex:
-        :type EndIndex: int
+        :type EndIndex: Standard_Integer
         :param Coeff:
         :type Coeff: float
         :rtype: None
 
         """
         _Extrema.Extrema_CCacheOfExtCC_swiginit(self,_Extrema.new_Extrema_CCacheOfExtCC(*args))
-    def SetCurve(self, *args) -> "void" :
+    def SetCurve(self, *args):
         """
         :param theC:
         :type theC: Adaptor3d_Curve &
         :param theNbSamples:
-        :type theNbSamples: int
+        :type theNbSamples: Standard_Integer
         :param theToCalculate:
         :type theToCalculate: bool
         :rtype: None
@@ -2574,7 +2646,7 @@ class Extrema_CCacheOfExtCC(OCC.Standard.Standard_Transient):
         :param theULast:
         :type theULast: float
         :param theNbSamples:
-        :type theNbSamples: int
+        :type theNbSamples: Standard_Integer
         :param theToCalculate:
         :type theToCalculate: bool
         :rtype: None
@@ -2582,7 +2654,7 @@ class Extrema_CCacheOfExtCC(OCC.Standard.Standard_Transient):
         """
         return _Extrema.Extrema_CCacheOfExtCC_SetCurve(self, *args)
 
-    def SetRange(self, *args) -> "void" :
+    def SetRange(self, *args):
         """
         :param Uinf:
         :type Uinf: float
@@ -2595,81 +2667,81 @@ class Extrema_CCacheOfExtCC(OCC.Standard.Standard_Transient):
         """
         return _Extrema.Extrema_CCacheOfExtCC_SetRange(self, *args)
 
-    def CalculatePoints(self, *args) -> "void" :
+    def CalculatePoints(self):
         """
         :rtype: None
 
         """
-        return _Extrema.Extrema_CCacheOfExtCC_CalculatePoints(self, *args)
+        return _Extrema.Extrema_CCacheOfExtCC_CalculatePoints(self)
 
-    def IsValid(self, *args) -> "Standard_Boolean" :
+    def IsValid(self):
         """
         :rtype: bool
 
         """
-        return _Extrema.Extrema_CCacheOfExtCC_IsValid(self, *args)
+        return _Extrema.Extrema_CCacheOfExtCC_IsValid(self)
 
-    def Parameters(self, *args) -> "Handle_TColStd_HArray1OfReal const &" :
+    def Parameters(self):
         """
         :rtype: Handle_TColStd_HArray1OfReal
 
         """
-        return _Extrema.Extrema_CCacheOfExtCC_Parameters(self, *args)
+        return _Extrema.Extrema_CCacheOfExtCC_Parameters(self)
 
-    def Points(self, *args) -> "Handle_TColgp_HArray1OfPnt const &" :
+    def Points(self):
         """
         :rtype: Handle_TColgp_HArray1OfPnt
 
         """
-        return _Extrema.Extrema_CCacheOfExtCC_Points(self, *args)
+        return _Extrema.Extrema_CCacheOfExtCC_Points(self)
 
-    def CurvePtr(self, *args) -> "Standard_Address" :
+    def CurvePtr(self):
         """
         :rtype: Standard_Address
 
         """
-        return _Extrema.Extrema_CCacheOfExtCC_CurvePtr(self, *args)
+        return _Extrema.Extrema_CCacheOfExtCC_CurvePtr(self)
 
-    def NbSamples(self, *args) -> "Standard_Integer" :
+    def NbSamples(self):
         """
         :rtype: int
 
         """
-        return _Extrema.Extrema_CCacheOfExtCC_NbSamples(self, *args)
+        return _Extrema.Extrema_CCacheOfExtCC_NbSamples(self)
 
-    def FirstParameter(self, *args) -> "Standard_Real" :
+    def FirstParameter(self):
         """
         :rtype: float
 
         """
-        return _Extrema.Extrema_CCacheOfExtCC_FirstParameter(self, *args)
+        return _Extrema.Extrema_CCacheOfExtCC_FirstParameter(self)
 
-    def LastParameter(self, *args) -> "Standard_Real" :
+    def LastParameter(self):
         """
         :rtype: float
 
         """
-        return _Extrema.Extrema_CCacheOfExtCC_LastParameter(self, *args)
+        return _Extrema.Extrema_CCacheOfExtCC_LastParameter(self)
 
-    def TrimFirstParameter(self, *args) -> "Standard_Real" :
+    def TrimFirstParameter(self):
         """
         :rtype: float
 
         """
-        return _Extrema.Extrema_CCacheOfExtCC_TrimFirstParameter(self, *args)
+        return _Extrema.Extrema_CCacheOfExtCC_TrimFirstParameter(self)
 
-    def TrimLastParameter(self, *args) -> "Standard_Real" :
+    def TrimLastParameter(self):
         """
         :rtype: float
 
         """
-        return _Extrema.Extrema_CCacheOfExtCC_TrimLastParameter(self, *args)
+        return _Extrema.Extrema_CCacheOfExtCC_TrimLastParameter(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Extrema_CCacheOfExtCC self)"""
         return _Extrema.Extrema_CCacheOfExtCC__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Extrema_CCacheOfExtCC" :
+    def GetHandle(self):
         """GetHandle(Extrema_CCacheOfExtCC self) -> Handle_Extrema_CCacheOfExtCC"""
         return _Extrema.Extrema_CCacheOfExtCC_GetHandle(self)
 
@@ -2719,14 +2791,15 @@ Handle_Extrema_CCacheOfExtCC._kill_pointed = new_instancemethod(_Extrema.Handle_
 Handle_Extrema_CCacheOfExtCC_swigregister = _Extrema.Handle_Extrema_CCacheOfExtCC_swigregister
 Handle_Extrema_CCacheOfExtCC_swigregister(Handle_Extrema_CCacheOfExtCC)
 
-def Handle_Extrema_CCacheOfExtCC_DownCast(*args) -> "Handle_Extrema_CCacheOfExtCC const" :
+def Handle_Extrema_CCacheOfExtCC_DownCast(*args):
   return _Extrema.Handle_Extrema_CCacheOfExtCC_DownCast(*args)
 Handle_Extrema_CCacheOfExtCC_DownCast = _Extrema.Handle_Extrema_CCacheOfExtCC_DownCast
 
 class Extrema_Curve2dTool(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
+    def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def FirstParameter(*args) -> "Standard_Real" :
+    def FirstParameter(*args):
         """
         :param C:
         :type C: Adaptor2d_Curve2d &
@@ -2736,7 +2809,7 @@ class Extrema_Curve2dTool(object):
         return _Extrema.Extrema_Curve2dTool_FirstParameter(*args)
 
     FirstParameter = staticmethod(FirstParameter)
-    def LastParameter(*args) -> "Standard_Real" :
+    def LastParameter(*args):
         """
         :param C:
         :type C: Adaptor2d_Curve2d &
@@ -2746,7 +2819,7 @@ class Extrema_Curve2dTool(object):
         return _Extrema.Extrema_Curve2dTool_LastParameter(*args)
 
     LastParameter = staticmethod(LastParameter)
-    def Continuity(*args) -> "GeomAbs_Shape" :
+    def Continuity(*args):
         """
         :param C:
         :type C: Adaptor2d_Curve2d &
@@ -2756,7 +2829,7 @@ class Extrema_Curve2dTool(object):
         return _Extrema.Extrema_Curve2dTool_Continuity(*args)
 
     Continuity = staticmethod(Continuity)
-    def NbIntervals(*args) -> "Standard_Integer" :
+    def NbIntervals(*args):
         """
         * If necessary, breaks the curve in intervals of continuity <S>. And returns the number of intervals.
 
@@ -2770,7 +2843,7 @@ class Extrema_Curve2dTool(object):
         return _Extrema.Extrema_Curve2dTool_NbIntervals(*args)
 
     NbIntervals = staticmethod(NbIntervals)
-    def Intervals(*args) -> "void" :
+    def Intervals(*args):
         """
         * Stores in <T> the parameters bounding the intervals of continuity <S>.
 
@@ -2786,7 +2859,7 @@ class Extrema_Curve2dTool(object):
         return _Extrema.Extrema_Curve2dTool_Intervals(*args)
 
     Intervals = staticmethod(Intervals)
-    def IsClosed(*args) -> "Standard_Boolean" :
+    def IsClosed(*args):
         """
         :param C:
         :type C: Adaptor2d_Curve2d &
@@ -2796,7 +2869,7 @@ class Extrema_Curve2dTool(object):
         return _Extrema.Extrema_Curve2dTool_IsClosed(*args)
 
     IsClosed = staticmethod(IsClosed)
-    def IsPeriodic(*args) -> "Standard_Boolean" :
+    def IsPeriodic(*args):
         """
         :param C:
         :type C: Adaptor2d_Curve2d &
@@ -2806,7 +2879,7 @@ class Extrema_Curve2dTool(object):
         return _Extrema.Extrema_Curve2dTool_IsPeriodic(*args)
 
     IsPeriodic = staticmethod(IsPeriodic)
-    def Period(*args) -> "Standard_Real" :
+    def Period(*args):
         """
         :param C:
         :type C: Adaptor2d_Curve2d &
@@ -2816,7 +2889,7 @@ class Extrema_Curve2dTool(object):
         return _Extrema.Extrema_Curve2dTool_Period(*args)
 
     Period = staticmethod(Period)
-    def Value(*args) -> "gp_Pnt2d" :
+    def Value(*args):
         """
         * Computes the point of parameter U on the curve.
 
@@ -2830,7 +2903,7 @@ class Extrema_Curve2dTool(object):
         return _Extrema.Extrema_Curve2dTool_Value(*args)
 
     Value = staticmethod(Value)
-    def D0(*args) -> "void" :
+    def D0(*args):
         """
         * Computes the point of parameter U on the curve.
 
@@ -2846,7 +2919,7 @@ class Extrema_Curve2dTool(object):
         return _Extrema.Extrema_Curve2dTool_D0(*args)
 
     D0 = staticmethod(D0)
-    def D1(*args) -> "void" :
+    def D1(*args):
         """
         * Computes the point of parameter U on the curve with its first derivative.
 
@@ -2864,7 +2937,7 @@ class Extrema_Curve2dTool(object):
         return _Extrema.Extrema_Curve2dTool_D1(*args)
 
     D1 = staticmethod(D1)
-    def D2(*args) -> "void" :
+    def D2(*args):
         """
         * Returns the point P of parameter U, the first and second derivatives V1 and V2.
 
@@ -2884,7 +2957,7 @@ class Extrema_Curve2dTool(object):
         return _Extrema.Extrema_Curve2dTool_D2(*args)
 
     D2 = staticmethod(D2)
-    def D3(*args) -> "void" :
+    def D3(*args):
         """
         * Returns the point P of parameter U, the first, the second and the third derivative.
 
@@ -2906,7 +2979,7 @@ class Extrema_Curve2dTool(object):
         return _Extrema.Extrema_Curve2dTool_D3(*args)
 
     D3 = staticmethod(D3)
-    def DN(*args) -> "gp_Vec2d" :
+    def DN(*args):
         """
         * The returned vector gives the value of the derivative for the order of derivation N.
 
@@ -2915,14 +2988,14 @@ class Extrema_Curve2dTool(object):
         :param U:
         :type U: float
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :rtype: gp_Vec2d
 
         """
         return _Extrema.Extrema_Curve2dTool_DN(*args)
 
     DN = staticmethod(DN)
-    def Resolution(*args) -> "Standard_Real" :
+    def Resolution(*args):
         """
         * Returns the parametric resolution corresponding  to the real space resolution <R3d>.
 
@@ -2936,7 +3009,7 @@ class Extrema_Curve2dTool(object):
         return _Extrema.Extrema_Curve2dTool_Resolution(*args)
 
     Resolution = staticmethod(Resolution)
-    def GetType(*args) -> "GeomAbs_CurveType" :
+    def GetType(*args):
         """
         * Returns the type of the curve in the current interval : Line, Circle, Ellipse, Hyperbola, Parabola, BezierCurve, BSplineCurve, OtherCurve.
 
@@ -2948,7 +3021,7 @@ class Extrema_Curve2dTool(object):
         return _Extrema.Extrema_Curve2dTool_GetType(*args)
 
     GetType = staticmethod(GetType)
-    def Line(*args) -> "gp_Lin2d" :
+    def Line(*args):
         """
         :param C:
         :type C: Adaptor2d_Curve2d &
@@ -2958,7 +3031,7 @@ class Extrema_Curve2dTool(object):
         return _Extrema.Extrema_Curve2dTool_Line(*args)
 
     Line = staticmethod(Line)
-    def Circle(*args) -> "gp_Circ2d" :
+    def Circle(*args):
         """
         :param C:
         :type C: Adaptor2d_Curve2d &
@@ -2968,7 +3041,7 @@ class Extrema_Curve2dTool(object):
         return _Extrema.Extrema_Curve2dTool_Circle(*args)
 
     Circle = staticmethod(Circle)
-    def Ellipse(*args) -> "gp_Elips2d" :
+    def Ellipse(*args):
         """
         :param C:
         :type C: Adaptor2d_Curve2d &
@@ -2978,7 +3051,7 @@ class Extrema_Curve2dTool(object):
         return _Extrema.Extrema_Curve2dTool_Ellipse(*args)
 
     Ellipse = staticmethod(Ellipse)
-    def Hyperbola(*args) -> "gp_Hypr2d" :
+    def Hyperbola(*args):
         """
         :param C:
         :type C: Adaptor2d_Curve2d &
@@ -2988,7 +3061,7 @@ class Extrema_Curve2dTool(object):
         return _Extrema.Extrema_Curve2dTool_Hyperbola(*args)
 
     Hyperbola = staticmethod(Hyperbola)
-    def Parabola(*args) -> "gp_Parab2d" :
+    def Parabola(*args):
         """
         :param C:
         :type C: Adaptor2d_Curve2d &
@@ -2998,7 +3071,7 @@ class Extrema_Curve2dTool(object):
         return _Extrema.Extrema_Curve2dTool_Parabola(*args)
 
     Parabola = staticmethod(Parabola)
-    def Degree(*args) -> "Standard_Integer" :
+    def Degree(*args):
         """
         :param C:
         :type C: Adaptor2d_Curve2d &
@@ -3008,7 +3081,7 @@ class Extrema_Curve2dTool(object):
         return _Extrema.Extrema_Curve2dTool_Degree(*args)
 
     Degree = staticmethod(Degree)
-    def IsRational(*args) -> "Standard_Boolean" :
+    def IsRational(*args):
         """
         :param C:
         :type C: Adaptor2d_Curve2d &
@@ -3018,7 +3091,7 @@ class Extrema_Curve2dTool(object):
         return _Extrema.Extrema_Curve2dTool_IsRational(*args)
 
     IsRational = staticmethod(IsRational)
-    def NbPoles(*args) -> "Standard_Integer" :
+    def NbPoles(*args):
         """
         :param C:
         :type C: Adaptor2d_Curve2d &
@@ -3028,7 +3101,7 @@ class Extrema_Curve2dTool(object):
         return _Extrema.Extrema_Curve2dTool_NbPoles(*args)
 
     NbPoles = staticmethod(NbPoles)
-    def NbKnots(*args) -> "Standard_Integer" :
+    def NbKnots(*args):
         """
         :param C:
         :type C: Adaptor2d_Curve2d &
@@ -3038,7 +3111,7 @@ class Extrema_Curve2dTool(object):
         return _Extrema.Extrema_Curve2dTool_NbKnots(*args)
 
     NbKnots = staticmethod(NbKnots)
-    def Bezier(*args) -> "Handle_Geom2d_BezierCurve" :
+    def Bezier(*args):
         """
         :param C:
         :type C: Adaptor2d_Curve2d &
@@ -3048,7 +3121,7 @@ class Extrema_Curve2dTool(object):
         return _Extrema.Extrema_Curve2dTool_Bezier(*args)
 
     Bezier = staticmethod(Bezier)
-    def BSpline(*args) -> "Handle_Geom2d_BSplineCurve" :
+    def BSpline(*args):
         """
         :param C:
         :type C: Adaptor2d_Curve2d &
@@ -3058,8 +3131,6 @@ class Extrema_Curve2dTool(object):
         return _Extrema.Extrema_Curve2dTool_BSpline(*args)
 
     BSpline = staticmethod(BSpline)
-    def __init__(self): 
-        _Extrema.Extrema_Curve2dTool_swiginit(self,_Extrema.new_Extrema_Curve2dTool())
     def __del__(self):
     	try:
     		self.thisown = False
@@ -3072,7 +3143,7 @@ Extrema_Curve2dTool._kill_pointed = new_instancemethod(_Extrema.Extrema_Curve2dT
 Extrema_Curve2dTool_swigregister = _Extrema.Extrema_Curve2dTool_swigregister
 Extrema_Curve2dTool_swigregister(Extrema_Curve2dTool)
 
-def Extrema_Curve2dTool_FirstParameter(*args) -> "Standard_Real" :
+def Extrema_Curve2dTool_FirstParameter(*args):
   """
     :param C:
     :type C: Adaptor2d_Curve2d &
@@ -3081,7 +3152,7 @@ def Extrema_Curve2dTool_FirstParameter(*args) -> "Standard_Real" :
     """
   return _Extrema.Extrema_Curve2dTool_FirstParameter(*args)
 
-def Extrema_Curve2dTool_LastParameter(*args) -> "Standard_Real" :
+def Extrema_Curve2dTool_LastParameter(*args):
   """
     :param C:
     :type C: Adaptor2d_Curve2d &
@@ -3090,7 +3161,7 @@ def Extrema_Curve2dTool_LastParameter(*args) -> "Standard_Real" :
     """
   return _Extrema.Extrema_Curve2dTool_LastParameter(*args)
 
-def Extrema_Curve2dTool_Continuity(*args) -> "GeomAbs_Shape" :
+def Extrema_Curve2dTool_Continuity(*args):
   """
     :param C:
     :type C: Adaptor2d_Curve2d &
@@ -3099,7 +3170,7 @@ def Extrema_Curve2dTool_Continuity(*args) -> "GeomAbs_Shape" :
     """
   return _Extrema.Extrema_Curve2dTool_Continuity(*args)
 
-def Extrema_Curve2dTool_NbIntervals(*args) -> "Standard_Integer" :
+def Extrema_Curve2dTool_NbIntervals(*args):
   """
     * If necessary, breaks the curve in intervals of continuity <S>. And returns the number of intervals.
 
@@ -3112,7 +3183,7 @@ def Extrema_Curve2dTool_NbIntervals(*args) -> "Standard_Integer" :
     """
   return _Extrema.Extrema_Curve2dTool_NbIntervals(*args)
 
-def Extrema_Curve2dTool_Intervals(*args) -> "void" :
+def Extrema_Curve2dTool_Intervals(*args):
   """
     * Stores in <T> the parameters bounding the intervals of continuity <S>.
 
@@ -3127,7 +3198,7 @@ def Extrema_Curve2dTool_Intervals(*args) -> "void" :
     """
   return _Extrema.Extrema_Curve2dTool_Intervals(*args)
 
-def Extrema_Curve2dTool_IsClosed(*args) -> "Standard_Boolean" :
+def Extrema_Curve2dTool_IsClosed(*args):
   """
     :param C:
     :type C: Adaptor2d_Curve2d &
@@ -3136,7 +3207,7 @@ def Extrema_Curve2dTool_IsClosed(*args) -> "Standard_Boolean" :
     """
   return _Extrema.Extrema_Curve2dTool_IsClosed(*args)
 
-def Extrema_Curve2dTool_IsPeriodic(*args) -> "Standard_Boolean" :
+def Extrema_Curve2dTool_IsPeriodic(*args):
   """
     :param C:
     :type C: Adaptor2d_Curve2d &
@@ -3145,7 +3216,7 @@ def Extrema_Curve2dTool_IsPeriodic(*args) -> "Standard_Boolean" :
     """
   return _Extrema.Extrema_Curve2dTool_IsPeriodic(*args)
 
-def Extrema_Curve2dTool_Period(*args) -> "Standard_Real" :
+def Extrema_Curve2dTool_Period(*args):
   """
     :param C:
     :type C: Adaptor2d_Curve2d &
@@ -3154,7 +3225,7 @@ def Extrema_Curve2dTool_Period(*args) -> "Standard_Real" :
     """
   return _Extrema.Extrema_Curve2dTool_Period(*args)
 
-def Extrema_Curve2dTool_Value(*args) -> "gp_Pnt2d" :
+def Extrema_Curve2dTool_Value(*args):
   """
     * Computes the point of parameter U on the curve.
 
@@ -3167,7 +3238,7 @@ def Extrema_Curve2dTool_Value(*args) -> "gp_Pnt2d" :
     """
   return _Extrema.Extrema_Curve2dTool_Value(*args)
 
-def Extrema_Curve2dTool_D0(*args) -> "void" :
+def Extrema_Curve2dTool_D0(*args):
   """
     * Computes the point of parameter U on the curve.
 
@@ -3182,7 +3253,7 @@ def Extrema_Curve2dTool_D0(*args) -> "void" :
     """
   return _Extrema.Extrema_Curve2dTool_D0(*args)
 
-def Extrema_Curve2dTool_D1(*args) -> "void" :
+def Extrema_Curve2dTool_D1(*args):
   """
     * Computes the point of parameter U on the curve with its first derivative.
 
@@ -3199,7 +3270,7 @@ def Extrema_Curve2dTool_D1(*args) -> "void" :
     """
   return _Extrema.Extrema_Curve2dTool_D1(*args)
 
-def Extrema_Curve2dTool_D2(*args) -> "void" :
+def Extrema_Curve2dTool_D2(*args):
   """
     * Returns the point P of parameter U, the first and second derivatives V1 and V2.
 
@@ -3218,7 +3289,7 @@ def Extrema_Curve2dTool_D2(*args) -> "void" :
     """
   return _Extrema.Extrema_Curve2dTool_D2(*args)
 
-def Extrema_Curve2dTool_D3(*args) -> "void" :
+def Extrema_Curve2dTool_D3(*args):
   """
     * Returns the point P of parameter U, the first, the second and the third derivative.
 
@@ -3239,7 +3310,7 @@ def Extrema_Curve2dTool_D3(*args) -> "void" :
     """
   return _Extrema.Extrema_Curve2dTool_D3(*args)
 
-def Extrema_Curve2dTool_DN(*args) -> "gp_Vec2d" :
+def Extrema_Curve2dTool_DN(*args):
   """
     * The returned vector gives the value of the derivative for the order of derivation N.
 
@@ -3248,13 +3319,13 @@ def Extrema_Curve2dTool_DN(*args) -> "gp_Vec2d" :
     :param U:
     :type U: float
     :param N:
-    :type N: int
+    :type N: Standard_Integer
     :rtype: gp_Vec2d
 
     """
   return _Extrema.Extrema_Curve2dTool_DN(*args)
 
-def Extrema_Curve2dTool_Resolution(*args) -> "Standard_Real" :
+def Extrema_Curve2dTool_Resolution(*args):
   """
     * Returns the parametric resolution corresponding  to the real space resolution <R3d>.
 
@@ -3267,7 +3338,7 @@ def Extrema_Curve2dTool_Resolution(*args) -> "Standard_Real" :
     """
   return _Extrema.Extrema_Curve2dTool_Resolution(*args)
 
-def Extrema_Curve2dTool_GetType(*args) -> "GeomAbs_CurveType" :
+def Extrema_Curve2dTool_GetType(*args):
   """
     * Returns the type of the curve in the current interval : Line, Circle, Ellipse, Hyperbola, Parabola, BezierCurve, BSplineCurve, OtherCurve.
 
@@ -3278,7 +3349,7 @@ def Extrema_Curve2dTool_GetType(*args) -> "GeomAbs_CurveType" :
     """
   return _Extrema.Extrema_Curve2dTool_GetType(*args)
 
-def Extrema_Curve2dTool_Line(*args) -> "gp_Lin2d" :
+def Extrema_Curve2dTool_Line(*args):
   """
     :param C:
     :type C: Adaptor2d_Curve2d &
@@ -3287,7 +3358,7 @@ def Extrema_Curve2dTool_Line(*args) -> "gp_Lin2d" :
     """
   return _Extrema.Extrema_Curve2dTool_Line(*args)
 
-def Extrema_Curve2dTool_Circle(*args) -> "gp_Circ2d" :
+def Extrema_Curve2dTool_Circle(*args):
   """
     :param C:
     :type C: Adaptor2d_Curve2d &
@@ -3296,7 +3367,7 @@ def Extrema_Curve2dTool_Circle(*args) -> "gp_Circ2d" :
     """
   return _Extrema.Extrema_Curve2dTool_Circle(*args)
 
-def Extrema_Curve2dTool_Ellipse(*args) -> "gp_Elips2d" :
+def Extrema_Curve2dTool_Ellipse(*args):
   """
     :param C:
     :type C: Adaptor2d_Curve2d &
@@ -3305,7 +3376,7 @@ def Extrema_Curve2dTool_Ellipse(*args) -> "gp_Elips2d" :
     """
   return _Extrema.Extrema_Curve2dTool_Ellipse(*args)
 
-def Extrema_Curve2dTool_Hyperbola(*args) -> "gp_Hypr2d" :
+def Extrema_Curve2dTool_Hyperbola(*args):
   """
     :param C:
     :type C: Adaptor2d_Curve2d &
@@ -3314,7 +3385,7 @@ def Extrema_Curve2dTool_Hyperbola(*args) -> "gp_Hypr2d" :
     """
   return _Extrema.Extrema_Curve2dTool_Hyperbola(*args)
 
-def Extrema_Curve2dTool_Parabola(*args) -> "gp_Parab2d" :
+def Extrema_Curve2dTool_Parabola(*args):
   """
     :param C:
     :type C: Adaptor2d_Curve2d &
@@ -3323,7 +3394,7 @@ def Extrema_Curve2dTool_Parabola(*args) -> "gp_Parab2d" :
     """
   return _Extrema.Extrema_Curve2dTool_Parabola(*args)
 
-def Extrema_Curve2dTool_Degree(*args) -> "Standard_Integer" :
+def Extrema_Curve2dTool_Degree(*args):
   """
     :param C:
     :type C: Adaptor2d_Curve2d &
@@ -3332,7 +3403,7 @@ def Extrema_Curve2dTool_Degree(*args) -> "Standard_Integer" :
     """
   return _Extrema.Extrema_Curve2dTool_Degree(*args)
 
-def Extrema_Curve2dTool_IsRational(*args) -> "Standard_Boolean" :
+def Extrema_Curve2dTool_IsRational(*args):
   """
     :param C:
     :type C: Adaptor2d_Curve2d &
@@ -3341,7 +3412,7 @@ def Extrema_Curve2dTool_IsRational(*args) -> "Standard_Boolean" :
     """
   return _Extrema.Extrema_Curve2dTool_IsRational(*args)
 
-def Extrema_Curve2dTool_NbPoles(*args) -> "Standard_Integer" :
+def Extrema_Curve2dTool_NbPoles(*args):
   """
     :param C:
     :type C: Adaptor2d_Curve2d &
@@ -3350,7 +3421,7 @@ def Extrema_Curve2dTool_NbPoles(*args) -> "Standard_Integer" :
     """
   return _Extrema.Extrema_Curve2dTool_NbPoles(*args)
 
-def Extrema_Curve2dTool_NbKnots(*args) -> "Standard_Integer" :
+def Extrema_Curve2dTool_NbKnots(*args):
   """
     :param C:
     :type C: Adaptor2d_Curve2d &
@@ -3359,7 +3430,7 @@ def Extrema_Curve2dTool_NbKnots(*args) -> "Standard_Integer" :
     """
   return _Extrema.Extrema_Curve2dTool_NbKnots(*args)
 
-def Extrema_Curve2dTool_Bezier(*args) -> "Handle_Geom2d_BezierCurve" :
+def Extrema_Curve2dTool_Bezier(*args):
   """
     :param C:
     :type C: Adaptor2d_Curve2d &
@@ -3368,7 +3439,7 @@ def Extrema_Curve2dTool_Bezier(*args) -> "Handle_Geom2d_BezierCurve" :
     """
   return _Extrema.Extrema_Curve2dTool_Bezier(*args)
 
-def Extrema_Curve2dTool_BSpline(*args) -> "Handle_Geom2d_BSplineCurve" :
+def Extrema_Curve2dTool_BSpline(*args):
   """
     :param C:
     :type C: Adaptor2d_Curve2d &
@@ -3379,8 +3450,9 @@ def Extrema_Curve2dTool_BSpline(*args) -> "Handle_Geom2d_BSplineCurve" :
 
 class Extrema_CurveTool(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
+    def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def FirstParameter(*args) -> "Standard_Real" :
+    def FirstParameter(*args):
         """
         :param C:
         :type C: Adaptor3d_Curve &
@@ -3390,7 +3462,7 @@ class Extrema_CurveTool(object):
         return _Extrema.Extrema_CurveTool_FirstParameter(*args)
 
     FirstParameter = staticmethod(FirstParameter)
-    def LastParameter(*args) -> "Standard_Real" :
+    def LastParameter(*args):
         """
         :param C:
         :type C: Adaptor3d_Curve &
@@ -3400,7 +3472,7 @@ class Extrema_CurveTool(object):
         return _Extrema.Extrema_CurveTool_LastParameter(*args)
 
     LastParameter = staticmethod(LastParameter)
-    def Continuity(*args) -> "GeomAbs_Shape" :
+    def Continuity(*args):
         """
         :param C:
         :type C: Adaptor3d_Curve &
@@ -3410,7 +3482,7 @@ class Extrema_CurveTool(object):
         return _Extrema.Extrema_CurveTool_Continuity(*args)
 
     Continuity = staticmethod(Continuity)
-    def NbIntervals(*args) -> "Standard_Integer" :
+    def NbIntervals(*args):
         """
         * Returns the number of intervals for continuity <S>. May be one if Continuity(me) >= <S>
 
@@ -3424,7 +3496,7 @@ class Extrema_CurveTool(object):
         return _Extrema.Extrema_CurveTool_NbIntervals(*args)
 
     NbIntervals = staticmethod(NbIntervals)
-    def Intervals(*args) -> "void" :
+    def Intervals(*args):
         """
         * Stores in <T> the parameters bounding the intervals of continuity <S>.  The array must provide enough room to accomodate for the parameters. i.e. T.Length() > NbIntervals()
 
@@ -3440,7 +3512,7 @@ class Extrema_CurveTool(object):
         return _Extrema.Extrema_CurveTool_Intervals(*args)
 
     Intervals = staticmethod(Intervals)
-    def IsPeriodic(*args) -> "Standard_Boolean" :
+    def IsPeriodic(*args):
         """
         :param C:
         :type C: Adaptor3d_Curve &
@@ -3450,7 +3522,7 @@ class Extrema_CurveTool(object):
         return _Extrema.Extrema_CurveTool_IsPeriodic(*args)
 
     IsPeriodic = staticmethod(IsPeriodic)
-    def Period(*args) -> "Standard_Real" :
+    def Period(*args):
         """
         :param C:
         :type C: Adaptor3d_Curve &
@@ -3460,7 +3532,7 @@ class Extrema_CurveTool(object):
         return _Extrema.Extrema_CurveTool_Period(*args)
 
     Period = staticmethod(Period)
-    def Resolution(*args) -> "Standard_Real" :
+    def Resolution(*args):
         """
         :param C:
         :type C: Adaptor3d_Curve &
@@ -3472,7 +3544,7 @@ class Extrema_CurveTool(object):
         return _Extrema.Extrema_CurveTool_Resolution(*args)
 
     Resolution = staticmethod(Resolution)
-    def GetType(*args) -> "GeomAbs_CurveType" :
+    def GetType(*args):
         """
         :param C:
         :type C: Adaptor3d_Curve &
@@ -3482,7 +3554,7 @@ class Extrema_CurveTool(object):
         return _Extrema.Extrema_CurveTool_GetType(*args)
 
     GetType = staticmethod(GetType)
-    def Value(*args) -> "gp_Pnt" :
+    def Value(*args):
         """
         :param C:
         :type C: Adaptor3d_Curve &
@@ -3494,7 +3566,7 @@ class Extrema_CurveTool(object):
         return _Extrema.Extrema_CurveTool_Value(*args)
 
     Value = staticmethod(Value)
-    def D0(*args) -> "void" :
+    def D0(*args):
         """
         :param C:
         :type C: Adaptor3d_Curve &
@@ -3508,7 +3580,7 @@ class Extrema_CurveTool(object):
         return _Extrema.Extrema_CurveTool_D0(*args)
 
     D0 = staticmethod(D0)
-    def D1(*args) -> "void" :
+    def D1(*args):
         """
         :param C:
         :type C: Adaptor3d_Curve &
@@ -3524,7 +3596,7 @@ class Extrema_CurveTool(object):
         return _Extrema.Extrema_CurveTool_D1(*args)
 
     D1 = staticmethod(D1)
-    def D2(*args) -> "void" :
+    def D2(*args):
         """
         :param C:
         :type C: Adaptor3d_Curve &
@@ -3542,7 +3614,7 @@ class Extrema_CurveTool(object):
         return _Extrema.Extrema_CurveTool_D2(*args)
 
     D2 = staticmethod(D2)
-    def D3(*args) -> "void" :
+    def D3(*args):
         """
         :param C:
         :type C: Adaptor3d_Curve &
@@ -3562,21 +3634,21 @@ class Extrema_CurveTool(object):
         return _Extrema.Extrema_CurveTool_D3(*args)
 
     D3 = staticmethod(D3)
-    def DN(*args) -> "gp_Vec" :
+    def DN(*args):
         """
         :param C:
         :type C: Adaptor3d_Curve &
         :param U:
         :type U: float
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :rtype: gp_Vec
 
         """
         return _Extrema.Extrema_CurveTool_DN(*args)
 
     DN = staticmethod(DN)
-    def Line(*args) -> "gp_Lin" :
+    def Line(*args):
         """
         :param C:
         :type C: Adaptor3d_Curve &
@@ -3586,7 +3658,7 @@ class Extrema_CurveTool(object):
         return _Extrema.Extrema_CurveTool_Line(*args)
 
     Line = staticmethod(Line)
-    def Circle(*args) -> "gp_Circ" :
+    def Circle(*args):
         """
         :param C:
         :type C: Adaptor3d_Curve &
@@ -3596,7 +3668,7 @@ class Extrema_CurveTool(object):
         return _Extrema.Extrema_CurveTool_Circle(*args)
 
     Circle = staticmethod(Circle)
-    def Ellipse(*args) -> "gp_Elips" :
+    def Ellipse(*args):
         """
         :param C:
         :type C: Adaptor3d_Curve &
@@ -3606,7 +3678,7 @@ class Extrema_CurveTool(object):
         return _Extrema.Extrema_CurveTool_Ellipse(*args)
 
     Ellipse = staticmethod(Ellipse)
-    def Hyperbola(*args) -> "gp_Hypr" :
+    def Hyperbola(*args):
         """
         :param C:
         :type C: Adaptor3d_Curve &
@@ -3616,7 +3688,7 @@ class Extrema_CurveTool(object):
         return _Extrema.Extrema_CurveTool_Hyperbola(*args)
 
     Hyperbola = staticmethod(Hyperbola)
-    def Parabola(*args) -> "gp_Parab" :
+    def Parabola(*args):
         """
         :param C:
         :type C: Adaptor3d_Curve &
@@ -3626,7 +3698,7 @@ class Extrema_CurveTool(object):
         return _Extrema.Extrema_CurveTool_Parabola(*args)
 
     Parabola = staticmethod(Parabola)
-    def Degree(*args) -> "Standard_Integer" :
+    def Degree(*args):
         """
         :param C:
         :type C: Adaptor3d_Curve &
@@ -3636,7 +3708,7 @@ class Extrema_CurveTool(object):
         return _Extrema.Extrema_CurveTool_Degree(*args)
 
     Degree = staticmethod(Degree)
-    def IsRational(*args) -> "Standard_Boolean" :
+    def IsRational(*args):
         """
         :param C:
         :type C: Adaptor3d_Curve &
@@ -3646,7 +3718,7 @@ class Extrema_CurveTool(object):
         return _Extrema.Extrema_CurveTool_IsRational(*args)
 
     IsRational = staticmethod(IsRational)
-    def NbPoles(*args) -> "Standard_Integer" :
+    def NbPoles(*args):
         """
         :param C:
         :type C: Adaptor3d_Curve &
@@ -3656,7 +3728,7 @@ class Extrema_CurveTool(object):
         return _Extrema.Extrema_CurveTool_NbPoles(*args)
 
     NbPoles = staticmethod(NbPoles)
-    def NbKnots(*args) -> "Standard_Integer" :
+    def NbKnots(*args):
         """
         :param C:
         :type C: Adaptor3d_Curve &
@@ -3666,7 +3738,7 @@ class Extrema_CurveTool(object):
         return _Extrema.Extrema_CurveTool_NbKnots(*args)
 
     NbKnots = staticmethod(NbKnots)
-    def Bezier(*args) -> "Handle_Geom_BezierCurve" :
+    def Bezier(*args):
         """
         :param C:
         :type C: Adaptor3d_Curve &
@@ -3676,7 +3748,7 @@ class Extrema_CurveTool(object):
         return _Extrema.Extrema_CurveTool_Bezier(*args)
 
     Bezier = staticmethod(Bezier)
-    def BSpline(*args) -> "Handle_Geom_BSplineCurve" :
+    def BSpline(*args):
         """
         :param C:
         :type C: Adaptor3d_Curve &
@@ -3686,8 +3758,6 @@ class Extrema_CurveTool(object):
         return _Extrema.Extrema_CurveTool_BSpline(*args)
 
     BSpline = staticmethod(BSpline)
-    def __init__(self): 
-        _Extrema.Extrema_CurveTool_swiginit(self,_Extrema.new_Extrema_CurveTool())
     def __del__(self):
     	try:
     		self.thisown = False
@@ -3700,7 +3770,7 @@ Extrema_CurveTool._kill_pointed = new_instancemethod(_Extrema.Extrema_CurveTool_
 Extrema_CurveTool_swigregister = _Extrema.Extrema_CurveTool_swigregister
 Extrema_CurveTool_swigregister(Extrema_CurveTool)
 
-def Extrema_CurveTool_FirstParameter(*args) -> "Standard_Real" :
+def Extrema_CurveTool_FirstParameter(*args):
   """
     :param C:
     :type C: Adaptor3d_Curve &
@@ -3709,7 +3779,7 @@ def Extrema_CurveTool_FirstParameter(*args) -> "Standard_Real" :
     """
   return _Extrema.Extrema_CurveTool_FirstParameter(*args)
 
-def Extrema_CurveTool_LastParameter(*args) -> "Standard_Real" :
+def Extrema_CurveTool_LastParameter(*args):
   """
     :param C:
     :type C: Adaptor3d_Curve &
@@ -3718,7 +3788,7 @@ def Extrema_CurveTool_LastParameter(*args) -> "Standard_Real" :
     """
   return _Extrema.Extrema_CurveTool_LastParameter(*args)
 
-def Extrema_CurveTool_Continuity(*args) -> "GeomAbs_Shape" :
+def Extrema_CurveTool_Continuity(*args):
   """
     :param C:
     :type C: Adaptor3d_Curve &
@@ -3727,7 +3797,7 @@ def Extrema_CurveTool_Continuity(*args) -> "GeomAbs_Shape" :
     """
   return _Extrema.Extrema_CurveTool_Continuity(*args)
 
-def Extrema_CurveTool_NbIntervals(*args) -> "Standard_Integer" :
+def Extrema_CurveTool_NbIntervals(*args):
   """
     * Returns the number of intervals for continuity <S>. May be one if Continuity(me) >= <S>
 
@@ -3740,7 +3810,7 @@ def Extrema_CurveTool_NbIntervals(*args) -> "Standard_Integer" :
     """
   return _Extrema.Extrema_CurveTool_NbIntervals(*args)
 
-def Extrema_CurveTool_Intervals(*args) -> "void" :
+def Extrema_CurveTool_Intervals(*args):
   """
     * Stores in <T> the parameters bounding the intervals of continuity <S>.  The array must provide enough room to accomodate for the parameters. i.e. T.Length() > NbIntervals()
 
@@ -3755,7 +3825,7 @@ def Extrema_CurveTool_Intervals(*args) -> "void" :
     """
   return _Extrema.Extrema_CurveTool_Intervals(*args)
 
-def Extrema_CurveTool_IsPeriodic(*args) -> "Standard_Boolean" :
+def Extrema_CurveTool_IsPeriodic(*args):
   """
     :param C:
     :type C: Adaptor3d_Curve &
@@ -3764,7 +3834,7 @@ def Extrema_CurveTool_IsPeriodic(*args) -> "Standard_Boolean" :
     """
   return _Extrema.Extrema_CurveTool_IsPeriodic(*args)
 
-def Extrema_CurveTool_Period(*args) -> "Standard_Real" :
+def Extrema_CurveTool_Period(*args):
   """
     :param C:
     :type C: Adaptor3d_Curve &
@@ -3773,7 +3843,7 @@ def Extrema_CurveTool_Period(*args) -> "Standard_Real" :
     """
   return _Extrema.Extrema_CurveTool_Period(*args)
 
-def Extrema_CurveTool_Resolution(*args) -> "Standard_Real" :
+def Extrema_CurveTool_Resolution(*args):
   """
     :param C:
     :type C: Adaptor3d_Curve &
@@ -3784,7 +3854,7 @@ def Extrema_CurveTool_Resolution(*args) -> "Standard_Real" :
     """
   return _Extrema.Extrema_CurveTool_Resolution(*args)
 
-def Extrema_CurveTool_GetType(*args) -> "GeomAbs_CurveType" :
+def Extrema_CurveTool_GetType(*args):
   """
     :param C:
     :type C: Adaptor3d_Curve &
@@ -3793,7 +3863,7 @@ def Extrema_CurveTool_GetType(*args) -> "GeomAbs_CurveType" :
     """
   return _Extrema.Extrema_CurveTool_GetType(*args)
 
-def Extrema_CurveTool_Value(*args) -> "gp_Pnt" :
+def Extrema_CurveTool_Value(*args):
   """
     :param C:
     :type C: Adaptor3d_Curve &
@@ -3804,7 +3874,7 @@ def Extrema_CurveTool_Value(*args) -> "gp_Pnt" :
     """
   return _Extrema.Extrema_CurveTool_Value(*args)
 
-def Extrema_CurveTool_D0(*args) -> "void" :
+def Extrema_CurveTool_D0(*args):
   """
     :param C:
     :type C: Adaptor3d_Curve &
@@ -3817,7 +3887,7 @@ def Extrema_CurveTool_D0(*args) -> "void" :
     """
   return _Extrema.Extrema_CurveTool_D0(*args)
 
-def Extrema_CurveTool_D1(*args) -> "void" :
+def Extrema_CurveTool_D1(*args):
   """
     :param C:
     :type C: Adaptor3d_Curve &
@@ -3832,7 +3902,7 @@ def Extrema_CurveTool_D1(*args) -> "void" :
     """
   return _Extrema.Extrema_CurveTool_D1(*args)
 
-def Extrema_CurveTool_D2(*args) -> "void" :
+def Extrema_CurveTool_D2(*args):
   """
     :param C:
     :type C: Adaptor3d_Curve &
@@ -3849,7 +3919,7 @@ def Extrema_CurveTool_D2(*args) -> "void" :
     """
   return _Extrema.Extrema_CurveTool_D2(*args)
 
-def Extrema_CurveTool_D3(*args) -> "void" :
+def Extrema_CurveTool_D3(*args):
   """
     :param C:
     :type C: Adaptor3d_Curve &
@@ -3868,20 +3938,20 @@ def Extrema_CurveTool_D3(*args) -> "void" :
     """
   return _Extrema.Extrema_CurveTool_D3(*args)
 
-def Extrema_CurveTool_DN(*args) -> "gp_Vec" :
+def Extrema_CurveTool_DN(*args):
   """
     :param C:
     :type C: Adaptor3d_Curve &
     :param U:
     :type U: float
     :param N:
-    :type N: int
+    :type N: Standard_Integer
     :rtype: gp_Vec
 
     """
   return _Extrema.Extrema_CurveTool_DN(*args)
 
-def Extrema_CurveTool_Line(*args) -> "gp_Lin" :
+def Extrema_CurveTool_Line(*args):
   """
     :param C:
     :type C: Adaptor3d_Curve &
@@ -3890,7 +3960,7 @@ def Extrema_CurveTool_Line(*args) -> "gp_Lin" :
     """
   return _Extrema.Extrema_CurveTool_Line(*args)
 
-def Extrema_CurveTool_Circle(*args) -> "gp_Circ" :
+def Extrema_CurveTool_Circle(*args):
   """
     :param C:
     :type C: Adaptor3d_Curve &
@@ -3899,7 +3969,7 @@ def Extrema_CurveTool_Circle(*args) -> "gp_Circ" :
     """
   return _Extrema.Extrema_CurveTool_Circle(*args)
 
-def Extrema_CurveTool_Ellipse(*args) -> "gp_Elips" :
+def Extrema_CurveTool_Ellipse(*args):
   """
     :param C:
     :type C: Adaptor3d_Curve &
@@ -3908,7 +3978,7 @@ def Extrema_CurveTool_Ellipse(*args) -> "gp_Elips" :
     """
   return _Extrema.Extrema_CurveTool_Ellipse(*args)
 
-def Extrema_CurveTool_Hyperbola(*args) -> "gp_Hypr" :
+def Extrema_CurveTool_Hyperbola(*args):
   """
     :param C:
     :type C: Adaptor3d_Curve &
@@ -3917,7 +3987,7 @@ def Extrema_CurveTool_Hyperbola(*args) -> "gp_Hypr" :
     """
   return _Extrema.Extrema_CurveTool_Hyperbola(*args)
 
-def Extrema_CurveTool_Parabola(*args) -> "gp_Parab" :
+def Extrema_CurveTool_Parabola(*args):
   """
     :param C:
     :type C: Adaptor3d_Curve &
@@ -3926,7 +3996,7 @@ def Extrema_CurveTool_Parabola(*args) -> "gp_Parab" :
     """
   return _Extrema.Extrema_CurveTool_Parabola(*args)
 
-def Extrema_CurveTool_Degree(*args) -> "Standard_Integer" :
+def Extrema_CurveTool_Degree(*args):
   """
     :param C:
     :type C: Adaptor3d_Curve &
@@ -3935,7 +4005,7 @@ def Extrema_CurveTool_Degree(*args) -> "Standard_Integer" :
     """
   return _Extrema.Extrema_CurveTool_Degree(*args)
 
-def Extrema_CurveTool_IsRational(*args) -> "Standard_Boolean" :
+def Extrema_CurveTool_IsRational(*args):
   """
     :param C:
     :type C: Adaptor3d_Curve &
@@ -3944,7 +4014,7 @@ def Extrema_CurveTool_IsRational(*args) -> "Standard_Boolean" :
     """
   return _Extrema.Extrema_CurveTool_IsRational(*args)
 
-def Extrema_CurveTool_NbPoles(*args) -> "Standard_Integer" :
+def Extrema_CurveTool_NbPoles(*args):
   """
     :param C:
     :type C: Adaptor3d_Curve &
@@ -3953,7 +4023,7 @@ def Extrema_CurveTool_NbPoles(*args) -> "Standard_Integer" :
     """
   return _Extrema.Extrema_CurveTool_NbPoles(*args)
 
-def Extrema_CurveTool_NbKnots(*args) -> "Standard_Integer" :
+def Extrema_CurveTool_NbKnots(*args):
   """
     :param C:
     :type C: Adaptor3d_Curve &
@@ -3962,7 +4032,7 @@ def Extrema_CurveTool_NbKnots(*args) -> "Standard_Integer" :
     """
   return _Extrema.Extrema_CurveTool_NbKnots(*args)
 
-def Extrema_CurveTool_Bezier(*args) -> "Handle_Geom_BezierCurve" :
+def Extrema_CurveTool_Bezier(*args):
   """
     :param C:
     :type C: Adaptor3d_Curve &
@@ -3971,7 +4041,7 @@ def Extrema_CurveTool_Bezier(*args) -> "Handle_Geom_BezierCurve" :
     """
   return _Extrema.Extrema_CurveTool_Bezier(*args)
 
-def Extrema_CurveTool_BSpline(*args) -> "Handle_Geom_BSplineCurve" :
+def Extrema_CurveTool_BSpline(*args):
   """
     :param C:
     :type C: Adaptor3d_Curve &
@@ -3992,9 +4062,9 @@ class Extrema_ECC2dOfExtCC2d(object):
         :param C2:
         :type C2: Adaptor2d_Curve2d &
         :param NbU:
-        :type NbU: int
+        :type NbU: Standard_Integer
         :param NbV:
-        :type NbV: int
+        :type NbV: Standard_Integer
         :param TolU:
         :type TolU: float
         :param TolV:
@@ -4014,9 +4084,9 @@ class Extrema_ECC2dOfExtCC2d(object):
         :param Vsup:
         :type Vsup: float
         :param NbU:
-        :type NbU: int
+        :type NbU: Standard_Integer
         :param NbV:
-        :type NbV: int
+        :type NbV: Standard_Integer
         :param TolU:
         :type TolU: float
         :param TolV:
@@ -4025,10 +4095,10 @@ class Extrema_ECC2dOfExtCC2d(object):
 
         """
         _Extrema.Extrema_ECC2dOfExtCC2d_swiginit(self,_Extrema.new_Extrema_ECC2dOfExtCC2d(*args))
-    def SetCurveCache(self, *args) -> "void" :
+    def SetCurveCache(self, *args):
         """
         :param theRank:
-        :type theRank: int
+        :type theRank: Standard_Integer
         :param theCache:
         :type theCache: Handle_Extrema_CCache2dOfExtCC2d &
         :rtype: None
@@ -4036,7 +4106,7 @@ class Extrema_ECC2dOfExtCC2d(object):
         """
         return _Extrema.Extrema_ECC2dOfExtCC2d_SetCurveCache(self, *args)
 
-    def SetTolerance(self, *args) -> "void" :
+    def SetTolerance(self, *args):
         """
         :param Tol:
         :type Tol: float
@@ -4045,40 +4115,44 @@ class Extrema_ECC2dOfExtCC2d(object):
         """
         return _Extrema.Extrema_ECC2dOfExtCC2d_SetTolerance(self, *args)
 
-    def Perform(self, *args) -> "void" :
+    def Perform(self):
         """
         :rtype: None
 
         """
-        return _Extrema.Extrema_ECC2dOfExtCC2d_Perform(self, *args)
+        return _Extrema.Extrema_ECC2dOfExtCC2d_Perform(self)
 
-    def IsDone(self, *args) -> "Standard_Boolean" :
+    def IsDone(self):
         """
         :rtype: bool
 
         """
-        return _Extrema.Extrema_ECC2dOfExtCC2d_IsDone(self, *args)
+        return _Extrema.Extrema_ECC2dOfExtCC2d_IsDone(self)
 
-    def NbExt(self, *args) -> "Standard_Integer" :
+    def NbExt(self):
         """
         :rtype: int
 
         """
-        return _Extrema.Extrema_ECC2dOfExtCC2d_NbExt(self, *args)
+        return _Extrema.Extrema_ECC2dOfExtCC2d_NbExt(self)
 
-    def SquareDistance(self, *args) -> "Standard_Real" :
+    def SquareDistance(self, N=1):
         """
         :param N: default value is 1
-        :type N: int
+        :type N: Standard_Integer
+        :rtype: float
+
+        :param N: default value is 1
+        :type N: Standard_Integer
         :rtype: float
 
         """
-        return _Extrema.Extrema_ECC2dOfExtCC2d_SquareDistance(self, *args)
+        return _Extrema.Extrema_ECC2dOfExtCC2d_SquareDistance(self, N)
 
-    def Points(self, *args) -> "void" :
+    def Points(self, *args):
         """
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :param P1:
         :type P1: Extrema_POnCurv2d &
         :param P2:
@@ -4119,9 +4193,9 @@ class Extrema_ECCOfExtCC(object):
         :param C2:
         :type C2: Adaptor3d_Curve &
         :param NbU:
-        :type NbU: int
+        :type NbU: Standard_Integer
         :param NbV:
-        :type NbV: int
+        :type NbV: Standard_Integer
         :param TolU:
         :type TolU: float
         :param TolV:
@@ -4141,9 +4215,9 @@ class Extrema_ECCOfExtCC(object):
         :param Vsup:
         :type Vsup: float
         :param NbU:
-        :type NbU: int
+        :type NbU: Standard_Integer
         :param NbV:
-        :type NbV: int
+        :type NbV: Standard_Integer
         :param TolU:
         :type TolU: float
         :param TolV:
@@ -4152,10 +4226,10 @@ class Extrema_ECCOfExtCC(object):
 
         """
         _Extrema.Extrema_ECCOfExtCC_swiginit(self,_Extrema.new_Extrema_ECCOfExtCC(*args))
-    def SetCurveCache(self, *args) -> "void" :
+    def SetCurveCache(self, *args):
         """
         :param theRank:
-        :type theRank: int
+        :type theRank: Standard_Integer
         :param theCache:
         :type theCache: Handle_Extrema_CCacheOfExtCC &
         :rtype: None
@@ -4163,7 +4237,7 @@ class Extrema_ECCOfExtCC(object):
         """
         return _Extrema.Extrema_ECCOfExtCC_SetCurveCache(self, *args)
 
-    def SetTolerance(self, *args) -> "void" :
+    def SetTolerance(self, *args):
         """
         :param Tol:
         :type Tol: float
@@ -4172,40 +4246,44 @@ class Extrema_ECCOfExtCC(object):
         """
         return _Extrema.Extrema_ECCOfExtCC_SetTolerance(self, *args)
 
-    def Perform(self, *args) -> "void" :
+    def Perform(self):
         """
         :rtype: None
 
         """
-        return _Extrema.Extrema_ECCOfExtCC_Perform(self, *args)
+        return _Extrema.Extrema_ECCOfExtCC_Perform(self)
 
-    def IsDone(self, *args) -> "Standard_Boolean" :
+    def IsDone(self):
         """
         :rtype: bool
 
         """
-        return _Extrema.Extrema_ECCOfExtCC_IsDone(self, *args)
+        return _Extrema.Extrema_ECCOfExtCC_IsDone(self)
 
-    def NbExt(self, *args) -> "Standard_Integer" :
+    def NbExt(self):
         """
         :rtype: int
 
         """
-        return _Extrema.Extrema_ECCOfExtCC_NbExt(self, *args)
+        return _Extrema.Extrema_ECCOfExtCC_NbExt(self)
 
-    def SquareDistance(self, *args) -> "Standard_Real" :
+    def SquareDistance(self, N=1):
         """
         :param N: default value is 1
-        :type N: int
+        :type N: Standard_Integer
+        :rtype: float
+
+        :param N: default value is 1
+        :type N: Standard_Integer
         :rtype: float
 
         """
-        return _Extrema.Extrema_ECCOfExtCC_SquareDistance(self, *args)
+        return _Extrema.Extrema_ECCOfExtCC_SquareDistance(self, N)
 
-    def Points(self, *args) -> "void" :
+    def Points(self, *args):
         """
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :param P1:
         :type P1: Extrema_POnCurv &
         :param P2:
@@ -4246,9 +4324,9 @@ class Extrema_ELCC2dOfLocateExtCC2d(object):
         :param C2:
         :type C2: Adaptor2d_Curve2d &
         :param NbU:
-        :type NbU: int
+        :type NbU: Standard_Integer
         :param NbV:
-        :type NbV: int
+        :type NbV: Standard_Integer
         :param TolU:
         :type TolU: float
         :param TolV:
@@ -4268,9 +4346,9 @@ class Extrema_ELCC2dOfLocateExtCC2d(object):
         :param Vsup:
         :type Vsup: float
         :param NbU:
-        :type NbU: int
+        :type NbU: Standard_Integer
         :param NbV:
-        :type NbV: int
+        :type NbV: Standard_Integer
         :param TolU:
         :type TolU: float
         :param TolV:
@@ -4279,10 +4357,10 @@ class Extrema_ELCC2dOfLocateExtCC2d(object):
 
         """
         _Extrema.Extrema_ELCC2dOfLocateExtCC2d_swiginit(self,_Extrema.new_Extrema_ELCC2dOfLocateExtCC2d(*args))
-    def SetCurveCache(self, *args) -> "void" :
+    def SetCurveCache(self, *args):
         """
         :param theRank:
-        :type theRank: int
+        :type theRank: Standard_Integer
         :param theCache:
         :type theCache: Handle_Extrema_LCCache2dOfLocateExtCC2d &
         :rtype: None
@@ -4290,7 +4368,7 @@ class Extrema_ELCC2dOfLocateExtCC2d(object):
         """
         return _Extrema.Extrema_ELCC2dOfLocateExtCC2d_SetCurveCache(self, *args)
 
-    def SetTolerance(self, *args) -> "void" :
+    def SetTolerance(self, *args):
         """
         :param Tol:
         :type Tol: float
@@ -4299,40 +4377,44 @@ class Extrema_ELCC2dOfLocateExtCC2d(object):
         """
         return _Extrema.Extrema_ELCC2dOfLocateExtCC2d_SetTolerance(self, *args)
 
-    def Perform(self, *args) -> "void" :
+    def Perform(self):
         """
         :rtype: None
 
         """
-        return _Extrema.Extrema_ELCC2dOfLocateExtCC2d_Perform(self, *args)
+        return _Extrema.Extrema_ELCC2dOfLocateExtCC2d_Perform(self)
 
-    def IsDone(self, *args) -> "Standard_Boolean" :
+    def IsDone(self):
         """
         :rtype: bool
 
         """
-        return _Extrema.Extrema_ELCC2dOfLocateExtCC2d_IsDone(self, *args)
+        return _Extrema.Extrema_ELCC2dOfLocateExtCC2d_IsDone(self)
 
-    def NbExt(self, *args) -> "Standard_Integer" :
+    def NbExt(self):
         """
         :rtype: int
 
         """
-        return _Extrema.Extrema_ELCC2dOfLocateExtCC2d_NbExt(self, *args)
+        return _Extrema.Extrema_ELCC2dOfLocateExtCC2d_NbExt(self)
 
-    def SquareDistance(self, *args) -> "Standard_Real" :
+    def SquareDistance(self, N=1):
         """
         :param N: default value is 1
-        :type N: int
+        :type N: Standard_Integer
+        :rtype: float
+
+        :param N: default value is 1
+        :type N: Standard_Integer
         :rtype: float
 
         """
-        return _Extrema.Extrema_ELCC2dOfLocateExtCC2d_SquareDistance(self, *args)
+        return _Extrema.Extrema_ELCC2dOfLocateExtCC2d_SquareDistance(self, N)
 
-    def Points(self, *args) -> "void" :
+    def Points(self, *args):
         """
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :param P1:
         :type P1: Extrema_POnCurv2d &
         :param P2:
@@ -4373,9 +4455,9 @@ class Extrema_ELCCOfLocateExtCC(object):
         :param C2:
         :type C2: Adaptor3d_Curve &
         :param NbU:
-        :type NbU: int
+        :type NbU: Standard_Integer
         :param NbV:
-        :type NbV: int
+        :type NbV: Standard_Integer
         :param TolU:
         :type TolU: float
         :param TolV:
@@ -4395,9 +4477,9 @@ class Extrema_ELCCOfLocateExtCC(object):
         :param Vsup:
         :type Vsup: float
         :param NbU:
-        :type NbU: int
+        :type NbU: Standard_Integer
         :param NbV:
-        :type NbV: int
+        :type NbV: Standard_Integer
         :param TolU:
         :type TolU: float
         :param TolV:
@@ -4406,10 +4488,10 @@ class Extrema_ELCCOfLocateExtCC(object):
 
         """
         _Extrema.Extrema_ELCCOfLocateExtCC_swiginit(self,_Extrema.new_Extrema_ELCCOfLocateExtCC(*args))
-    def SetCurveCache(self, *args) -> "void" :
+    def SetCurveCache(self, *args):
         """
         :param theRank:
-        :type theRank: int
+        :type theRank: Standard_Integer
         :param theCache:
         :type theCache: Handle_Extrema_LCCacheOfLocateExtCC &
         :rtype: None
@@ -4417,7 +4499,7 @@ class Extrema_ELCCOfLocateExtCC(object):
         """
         return _Extrema.Extrema_ELCCOfLocateExtCC_SetCurveCache(self, *args)
 
-    def SetTolerance(self, *args) -> "void" :
+    def SetTolerance(self, *args):
         """
         :param Tol:
         :type Tol: float
@@ -4426,40 +4508,44 @@ class Extrema_ELCCOfLocateExtCC(object):
         """
         return _Extrema.Extrema_ELCCOfLocateExtCC_SetTolerance(self, *args)
 
-    def Perform(self, *args) -> "void" :
+    def Perform(self):
         """
         :rtype: None
 
         """
-        return _Extrema.Extrema_ELCCOfLocateExtCC_Perform(self, *args)
+        return _Extrema.Extrema_ELCCOfLocateExtCC_Perform(self)
 
-    def IsDone(self, *args) -> "Standard_Boolean" :
+    def IsDone(self):
         """
         :rtype: bool
 
         """
-        return _Extrema.Extrema_ELCCOfLocateExtCC_IsDone(self, *args)
+        return _Extrema.Extrema_ELCCOfLocateExtCC_IsDone(self)
 
-    def NbExt(self, *args) -> "Standard_Integer" :
+    def NbExt(self):
         """
         :rtype: int
 
         """
-        return _Extrema.Extrema_ELCCOfLocateExtCC_NbExt(self, *args)
+        return _Extrema.Extrema_ELCCOfLocateExtCC_NbExt(self)
 
-    def SquareDistance(self, *args) -> "Standard_Real" :
+    def SquareDistance(self, N=1):
         """
         :param N: default value is 1
-        :type N: int
+        :type N: Standard_Integer
+        :rtype: float
+
+        :param N: default value is 1
+        :type N: Standard_Integer
         :rtype: float
 
         """
-        return _Extrema.Extrema_ELCCOfLocateExtCC_SquareDistance(self, *args)
+        return _Extrema.Extrema_ELCCOfLocateExtCC_SquareDistance(self, N)
 
-    def Points(self, *args) -> "void" :
+    def Points(self, *args):
         """
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :param P1:
         :type P1: Extrema_POnCurv &
         :param P2:
@@ -4511,14 +4597,44 @@ class Extrema_ELPCOfLocateExtPC(object):
         :type P: gp_Pnt
         :param C:
         :type C: Adaptor3d_Curve &
+        :param Uinf:
+        :type Uinf: float
+        :param Usup:
+        :type Usup: float
+        :param TolF: default value is 1.0e-10
+        :type TolF: float
+        :rtype: None
+
+        :param P:
+        :type P: gp_Pnt
+        :param C:
+        :type C: Adaptor3d_Curve &
+        :param TolF: default value is 1.0e-10
+        :type TolF: float
+        :rtype: None
+
+        :param P:
+        :type P: gp_Pnt
+        :param C:
+        :type C: Adaptor3d_Curve &
         :param TolF: default value is 1.0e-10
         :type TolF: float
         :rtype: None
 
         """
         _Extrema.Extrema_ELPCOfLocateExtPC_swiginit(self,_Extrema.new_Extrema_ELPCOfLocateExtPC(*args))
-    def Initialize(self, *args) -> "void" :
+    def Initialize(self, *args):
         """
+        :param C:
+        :type C: Adaptor3d_Curve &
+        :param Uinf:
+        :type Uinf: float
+        :param Usup:
+        :type Usup: float
+        :param TolF: default value is 1.0e-10
+        :type TolF: float
+        :rtype: None
+
         :param C:
         :type C: Adaptor3d_Curve &
         :param Uinf:
@@ -4532,7 +4648,7 @@ class Extrema_ELPCOfLocateExtPC(object):
         """
         return _Extrema.Extrema_ELPCOfLocateExtPC_Initialize(self, *args)
 
-    def Perform(self, *args) -> "void" :
+    def Perform(self, *args):
         """
         :param P:
         :type P: gp_Pnt
@@ -4541,48 +4657,48 @@ class Extrema_ELPCOfLocateExtPC(object):
         """
         return _Extrema.Extrema_ELPCOfLocateExtPC_Perform(self, *args)
 
-    def IsDone(self, *args) -> "Standard_Boolean" :
+    def IsDone(self):
         """
         :rtype: bool
 
         """
-        return _Extrema.Extrema_ELPCOfLocateExtPC_IsDone(self, *args)
+        return _Extrema.Extrema_ELPCOfLocateExtPC_IsDone(self)
 
-    def SquareDistance(self, *args) -> "Standard_Real" :
+    def SquareDistance(self, *args):
         """
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :rtype: float
 
         """
         return _Extrema.Extrema_ELPCOfLocateExtPC_SquareDistance(self, *args)
 
-    def NbExt(self, *args) -> "Standard_Integer" :
+    def NbExt(self):
         """
         :rtype: int
 
         """
-        return _Extrema.Extrema_ELPCOfLocateExtPC_NbExt(self, *args)
+        return _Extrema.Extrema_ELPCOfLocateExtPC_NbExt(self)
 
-    def IsMin(self, *args) -> "Standard_Boolean" :
+    def IsMin(self, *args):
         """
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :rtype: bool
 
         """
         return _Extrema.Extrema_ELPCOfLocateExtPC_IsMin(self, *args)
 
-    def Point(self, *args) -> "Extrema_POnCurv const &" :
+    def Point(self, *args):
         """
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :rtype: Extrema_POnCurv
 
         """
         return _Extrema.Extrema_ELPCOfLocateExtPC_Point(self, *args)
 
-    def TrimmedSquareDistances(self, *args) -> "void" :
+    def TrimmedSquareDistances(self, *args):
         """
         :param dist1:
         :type dist1: float &
@@ -4640,14 +4756,44 @@ class Extrema_ELPCOfLocateExtPC2d(object):
         :type P: gp_Pnt2d
         :param C:
         :type C: Adaptor2d_Curve2d &
+        :param Uinf:
+        :type Uinf: float
+        :param Usup:
+        :type Usup: float
+        :param TolF: default value is 1.0e-10
+        :type TolF: float
+        :rtype: None
+
+        :param P:
+        :type P: gp_Pnt2d
+        :param C:
+        :type C: Adaptor2d_Curve2d &
+        :param TolF: default value is 1.0e-10
+        :type TolF: float
+        :rtype: None
+
+        :param P:
+        :type P: gp_Pnt2d
+        :param C:
+        :type C: Adaptor2d_Curve2d &
         :param TolF: default value is 1.0e-10
         :type TolF: float
         :rtype: None
 
         """
         _Extrema.Extrema_ELPCOfLocateExtPC2d_swiginit(self,_Extrema.new_Extrema_ELPCOfLocateExtPC2d(*args))
-    def Initialize(self, *args) -> "void" :
+    def Initialize(self, *args):
         """
+        :param C:
+        :type C: Adaptor2d_Curve2d &
+        :param Uinf:
+        :type Uinf: float
+        :param Usup:
+        :type Usup: float
+        :param TolF: default value is 1.0e-10
+        :type TolF: float
+        :rtype: None
+
         :param C:
         :type C: Adaptor2d_Curve2d &
         :param Uinf:
@@ -4661,7 +4807,7 @@ class Extrema_ELPCOfLocateExtPC2d(object):
         """
         return _Extrema.Extrema_ELPCOfLocateExtPC2d_Initialize(self, *args)
 
-    def Perform(self, *args) -> "void" :
+    def Perform(self, *args):
         """
         :param P:
         :type P: gp_Pnt2d
@@ -4670,48 +4816,48 @@ class Extrema_ELPCOfLocateExtPC2d(object):
         """
         return _Extrema.Extrema_ELPCOfLocateExtPC2d_Perform(self, *args)
 
-    def IsDone(self, *args) -> "Standard_Boolean" :
+    def IsDone(self):
         """
         :rtype: bool
 
         """
-        return _Extrema.Extrema_ELPCOfLocateExtPC2d_IsDone(self, *args)
+        return _Extrema.Extrema_ELPCOfLocateExtPC2d_IsDone(self)
 
-    def SquareDistance(self, *args) -> "Standard_Real" :
+    def SquareDistance(self, *args):
         """
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :rtype: float
 
         """
         return _Extrema.Extrema_ELPCOfLocateExtPC2d_SquareDistance(self, *args)
 
-    def NbExt(self, *args) -> "Standard_Integer" :
+    def NbExt(self):
         """
         :rtype: int
 
         """
-        return _Extrema.Extrema_ELPCOfLocateExtPC2d_NbExt(self, *args)
+        return _Extrema.Extrema_ELPCOfLocateExtPC2d_NbExt(self)
 
-    def IsMin(self, *args) -> "Standard_Boolean" :
+    def IsMin(self, *args):
         """
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :rtype: bool
 
         """
         return _Extrema.Extrema_ELPCOfLocateExtPC2d_IsMin(self, *args)
 
-    def Point(self, *args) -> "Extrema_POnCurv2d const &" :
+    def Point(self, *args):
         """
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :rtype: Extrema_POnCurv2d
 
         """
         return _Extrema.Extrema_ELPCOfLocateExtPC2d_Point(self, *args)
 
-    def TrimmedSquareDistances(self, *args) -> "void" :
+    def TrimmedSquareDistances(self, *args):
         """
         :param dist1:
         :type dist1: float &
@@ -4758,7 +4904,7 @@ class Extrema_EPCOfELPCOfLocateExtPC(object):
         :param C:
         :type C: Adaptor3d_Curve &
         :param NbU:
-        :type NbU: int
+        :type NbU: Standard_Integer
         :param TolU:
         :type TolU: float
         :param TolF:
@@ -4770,7 +4916,7 @@ class Extrema_EPCOfELPCOfLocateExtPC(object):
         :param C:
         :type C: Adaptor3d_Curve &
         :param NbU:
-        :type NbU: int
+        :type NbU: Standard_Integer
         :param Umin:
         :type Umin: float
         :param Usup:
@@ -4783,12 +4929,12 @@ class Extrema_EPCOfELPCOfLocateExtPC(object):
 
         """
         _Extrema.Extrema_EPCOfELPCOfLocateExtPC_swiginit(self,_Extrema.new_Extrema_EPCOfELPCOfLocateExtPC(*args))
-    def Initialize(self, *args) -> "void" :
+    def Initialize(self, *args):
         """
         :param C:
         :type C: Adaptor3d_Curve &
         :param NbU:
-        :type NbU: int
+        :type NbU: Standard_Integer
         :param TolU:
         :type TolU: float
         :param TolF:
@@ -4798,7 +4944,7 @@ class Extrema_EPCOfELPCOfLocateExtPC(object):
         :param C:
         :type C: Adaptor3d_Curve &
         :param NbU:
-        :type NbU: int
+        :type NbU: Standard_Integer
         :param Umin:
         :type Umin: float
         :param Usup:
@@ -4814,7 +4960,7 @@ class Extrema_EPCOfELPCOfLocateExtPC(object):
         :rtype: None
 
         :param NbU:
-        :type NbU: int
+        :type NbU: Standard_Integer
         :param Umin:
         :type Umin: float
         :param Usup:
@@ -4828,7 +4974,7 @@ class Extrema_EPCOfELPCOfLocateExtPC(object):
         """
         return _Extrema.Extrema_EPCOfELPCOfLocateExtPC_Initialize(self, *args)
 
-    def Perform(self, *args) -> "void" :
+    def Perform(self, *args):
         """
         :param P:
         :type P: gp_Pnt
@@ -4837,42 +4983,42 @@ class Extrema_EPCOfELPCOfLocateExtPC(object):
         """
         return _Extrema.Extrema_EPCOfELPCOfLocateExtPC_Perform(self, *args)
 
-    def IsDone(self, *args) -> "Standard_Boolean" :
+    def IsDone(self):
         """
         :rtype: bool
 
         """
-        return _Extrema.Extrema_EPCOfELPCOfLocateExtPC_IsDone(self, *args)
+        return _Extrema.Extrema_EPCOfELPCOfLocateExtPC_IsDone(self)
 
-    def NbExt(self, *args) -> "Standard_Integer" :
+    def NbExt(self):
         """
         :rtype: int
 
         """
-        return _Extrema.Extrema_EPCOfELPCOfLocateExtPC_NbExt(self, *args)
+        return _Extrema.Extrema_EPCOfELPCOfLocateExtPC_NbExt(self)
 
-    def SquareDistance(self, *args) -> "Standard_Real" :
+    def SquareDistance(self, *args):
         """
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :rtype: float
 
         """
         return _Extrema.Extrema_EPCOfELPCOfLocateExtPC_SquareDistance(self, *args)
 
-    def IsMin(self, *args) -> "Standard_Boolean" :
+    def IsMin(self, *args):
         """
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :rtype: bool
 
         """
         return _Extrema.Extrema_EPCOfELPCOfLocateExtPC_IsMin(self, *args)
 
-    def Point(self, *args) -> "Extrema_POnCurv const &" :
+    def Point(self, *args):
         """
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :rtype: Extrema_POnCurv
 
         """
@@ -4909,7 +5055,7 @@ class Extrema_EPCOfELPCOfLocateExtPC2d(object):
         :param C:
         :type C: Adaptor2d_Curve2d &
         :param NbU:
-        :type NbU: int
+        :type NbU: Standard_Integer
         :param TolU:
         :type TolU: float
         :param TolF:
@@ -4921,7 +5067,7 @@ class Extrema_EPCOfELPCOfLocateExtPC2d(object):
         :param C:
         :type C: Adaptor2d_Curve2d &
         :param NbU:
-        :type NbU: int
+        :type NbU: Standard_Integer
         :param Umin:
         :type Umin: float
         :param Usup:
@@ -4934,12 +5080,12 @@ class Extrema_EPCOfELPCOfLocateExtPC2d(object):
 
         """
         _Extrema.Extrema_EPCOfELPCOfLocateExtPC2d_swiginit(self,_Extrema.new_Extrema_EPCOfELPCOfLocateExtPC2d(*args))
-    def Initialize(self, *args) -> "void" :
+    def Initialize(self, *args):
         """
         :param C:
         :type C: Adaptor2d_Curve2d &
         :param NbU:
-        :type NbU: int
+        :type NbU: Standard_Integer
         :param TolU:
         :type TolU: float
         :param TolF:
@@ -4949,7 +5095,7 @@ class Extrema_EPCOfELPCOfLocateExtPC2d(object):
         :param C:
         :type C: Adaptor2d_Curve2d &
         :param NbU:
-        :type NbU: int
+        :type NbU: Standard_Integer
         :param Umin:
         :type Umin: float
         :param Usup:
@@ -4965,7 +5111,7 @@ class Extrema_EPCOfELPCOfLocateExtPC2d(object):
         :rtype: None
 
         :param NbU:
-        :type NbU: int
+        :type NbU: Standard_Integer
         :param Umin:
         :type Umin: float
         :param Usup:
@@ -4979,7 +5125,7 @@ class Extrema_EPCOfELPCOfLocateExtPC2d(object):
         """
         return _Extrema.Extrema_EPCOfELPCOfLocateExtPC2d_Initialize(self, *args)
 
-    def Perform(self, *args) -> "void" :
+    def Perform(self, *args):
         """
         :param P:
         :type P: gp_Pnt2d
@@ -4988,42 +5134,42 @@ class Extrema_EPCOfELPCOfLocateExtPC2d(object):
         """
         return _Extrema.Extrema_EPCOfELPCOfLocateExtPC2d_Perform(self, *args)
 
-    def IsDone(self, *args) -> "Standard_Boolean" :
+    def IsDone(self):
         """
         :rtype: bool
 
         """
-        return _Extrema.Extrema_EPCOfELPCOfLocateExtPC2d_IsDone(self, *args)
+        return _Extrema.Extrema_EPCOfELPCOfLocateExtPC2d_IsDone(self)
 
-    def NbExt(self, *args) -> "Standard_Integer" :
+    def NbExt(self):
         """
         :rtype: int
 
         """
-        return _Extrema.Extrema_EPCOfELPCOfLocateExtPC2d_NbExt(self, *args)
+        return _Extrema.Extrema_EPCOfELPCOfLocateExtPC2d_NbExt(self)
 
-    def SquareDistance(self, *args) -> "Standard_Real" :
+    def SquareDistance(self, *args):
         """
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :rtype: float
 
         """
         return _Extrema.Extrema_EPCOfELPCOfLocateExtPC2d_SquareDistance(self, *args)
 
-    def IsMin(self, *args) -> "Standard_Boolean" :
+    def IsMin(self, *args):
         """
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :rtype: bool
 
         """
         return _Extrema.Extrema_EPCOfELPCOfLocateExtPC2d_IsMin(self, *args)
 
-    def Point(self, *args) -> "Extrema_POnCurv2d const &" :
+    def Point(self, *args):
         """
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :rtype: Extrema_POnCurv2d
 
         """
@@ -5060,7 +5206,7 @@ class Extrema_EPCOfExtPC(object):
         :param C:
         :type C: Adaptor3d_Curve &
         :param NbU:
-        :type NbU: int
+        :type NbU: Standard_Integer
         :param TolU:
         :type TolU: float
         :param TolF:
@@ -5072,7 +5218,7 @@ class Extrema_EPCOfExtPC(object):
         :param C:
         :type C: Adaptor3d_Curve &
         :param NbU:
-        :type NbU: int
+        :type NbU: Standard_Integer
         :param Umin:
         :type Umin: float
         :param Usup:
@@ -5085,12 +5231,12 @@ class Extrema_EPCOfExtPC(object):
 
         """
         _Extrema.Extrema_EPCOfExtPC_swiginit(self,_Extrema.new_Extrema_EPCOfExtPC(*args))
-    def Initialize(self, *args) -> "void" :
+    def Initialize(self, *args):
         """
         :param C:
         :type C: Adaptor3d_Curve &
         :param NbU:
-        :type NbU: int
+        :type NbU: Standard_Integer
         :param TolU:
         :type TolU: float
         :param TolF:
@@ -5100,7 +5246,7 @@ class Extrema_EPCOfExtPC(object):
         :param C:
         :type C: Adaptor3d_Curve &
         :param NbU:
-        :type NbU: int
+        :type NbU: Standard_Integer
         :param Umin:
         :type Umin: float
         :param Usup:
@@ -5116,7 +5262,7 @@ class Extrema_EPCOfExtPC(object):
         :rtype: None
 
         :param NbU:
-        :type NbU: int
+        :type NbU: Standard_Integer
         :param Umin:
         :type Umin: float
         :param Usup:
@@ -5130,7 +5276,7 @@ class Extrema_EPCOfExtPC(object):
         """
         return _Extrema.Extrema_EPCOfExtPC_Initialize(self, *args)
 
-    def Perform(self, *args) -> "void" :
+    def Perform(self, *args):
         """
         :param P:
         :type P: gp_Pnt
@@ -5139,42 +5285,42 @@ class Extrema_EPCOfExtPC(object):
         """
         return _Extrema.Extrema_EPCOfExtPC_Perform(self, *args)
 
-    def IsDone(self, *args) -> "Standard_Boolean" :
+    def IsDone(self):
         """
         :rtype: bool
 
         """
-        return _Extrema.Extrema_EPCOfExtPC_IsDone(self, *args)
+        return _Extrema.Extrema_EPCOfExtPC_IsDone(self)
 
-    def NbExt(self, *args) -> "Standard_Integer" :
+    def NbExt(self):
         """
         :rtype: int
 
         """
-        return _Extrema.Extrema_EPCOfExtPC_NbExt(self, *args)
+        return _Extrema.Extrema_EPCOfExtPC_NbExt(self)
 
-    def SquareDistance(self, *args) -> "Standard_Real" :
+    def SquareDistance(self, *args):
         """
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :rtype: float
 
         """
         return _Extrema.Extrema_EPCOfExtPC_SquareDistance(self, *args)
 
-    def IsMin(self, *args) -> "Standard_Boolean" :
+    def IsMin(self, *args):
         """
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :rtype: bool
 
         """
         return _Extrema.Extrema_EPCOfExtPC_IsMin(self, *args)
 
-    def Point(self, *args) -> "Extrema_POnCurv const &" :
+    def Point(self, *args):
         """
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :rtype: Extrema_POnCurv
 
         """
@@ -5211,7 +5357,7 @@ class Extrema_EPCOfExtPC2d(object):
         :param C:
         :type C: Adaptor2d_Curve2d &
         :param NbU:
-        :type NbU: int
+        :type NbU: Standard_Integer
         :param TolU:
         :type TolU: float
         :param TolF:
@@ -5223,7 +5369,7 @@ class Extrema_EPCOfExtPC2d(object):
         :param C:
         :type C: Adaptor2d_Curve2d &
         :param NbU:
-        :type NbU: int
+        :type NbU: Standard_Integer
         :param Umin:
         :type Umin: float
         :param Usup:
@@ -5236,12 +5382,12 @@ class Extrema_EPCOfExtPC2d(object):
 
         """
         _Extrema.Extrema_EPCOfExtPC2d_swiginit(self,_Extrema.new_Extrema_EPCOfExtPC2d(*args))
-    def Initialize(self, *args) -> "void" :
+    def Initialize(self, *args):
         """
         :param C:
         :type C: Adaptor2d_Curve2d &
         :param NbU:
-        :type NbU: int
+        :type NbU: Standard_Integer
         :param TolU:
         :type TolU: float
         :param TolF:
@@ -5251,7 +5397,7 @@ class Extrema_EPCOfExtPC2d(object):
         :param C:
         :type C: Adaptor2d_Curve2d &
         :param NbU:
-        :type NbU: int
+        :type NbU: Standard_Integer
         :param Umin:
         :type Umin: float
         :param Usup:
@@ -5267,7 +5413,7 @@ class Extrema_EPCOfExtPC2d(object):
         :rtype: None
 
         :param NbU:
-        :type NbU: int
+        :type NbU: Standard_Integer
         :param Umin:
         :type Umin: float
         :param Usup:
@@ -5281,7 +5427,7 @@ class Extrema_EPCOfExtPC2d(object):
         """
         return _Extrema.Extrema_EPCOfExtPC2d_Initialize(self, *args)
 
-    def Perform(self, *args) -> "void" :
+    def Perform(self, *args):
         """
         :param P:
         :type P: gp_Pnt2d
@@ -5290,42 +5436,42 @@ class Extrema_EPCOfExtPC2d(object):
         """
         return _Extrema.Extrema_EPCOfExtPC2d_Perform(self, *args)
 
-    def IsDone(self, *args) -> "Standard_Boolean" :
+    def IsDone(self):
         """
         :rtype: bool
 
         """
-        return _Extrema.Extrema_EPCOfExtPC2d_IsDone(self, *args)
+        return _Extrema.Extrema_EPCOfExtPC2d_IsDone(self)
 
-    def NbExt(self, *args) -> "Standard_Integer" :
+    def NbExt(self):
         """
         :rtype: int
 
         """
-        return _Extrema.Extrema_EPCOfExtPC2d_NbExt(self, *args)
+        return _Extrema.Extrema_EPCOfExtPC2d_NbExt(self)
 
-    def SquareDistance(self, *args) -> "Standard_Real" :
+    def SquareDistance(self, *args):
         """
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :rtype: float
 
         """
         return _Extrema.Extrema_EPCOfExtPC2d_SquareDistance(self, *args)
 
-    def IsMin(self, *args) -> "Standard_Boolean" :
+    def IsMin(self, *args):
         """
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :rtype: bool
 
         """
         return _Extrema.Extrema_EPCOfExtPC2d_IsMin(self, *args)
 
-    def Point(self, *args) -> "Extrema_POnCurv2d const &" :
+    def Point(self, *args):
         """
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :rtype: Extrema_POnCurv2d
 
         """
@@ -5361,6 +5507,38 @@ class Extrema_ExtCC(object):
         :type TolC2: float
         :rtype: None
 
+        :param TolC1: default value is 1.0e-10
+        :type TolC1: float
+        :param TolC2: default value is 1.0e-10
+        :type TolC2: float
+        :rtype: None
+
+        :param TolC1: default value is 1.0e-10
+        :type TolC1: float
+        :param TolC2: default value is 1.0e-10
+        :type TolC2: float
+        :rtype: None
+
+        :param C1:
+        :type C1: Adaptor3d_Curve &
+        :param C2:
+        :type C2: Adaptor3d_Curve &
+        :param TolC1: default value is 1.0e-10
+        :type TolC1: float
+        :param TolC2: default value is 1.0e-10
+        :type TolC2: float
+        :rtype: None
+
+        :param C1:
+        :type C1: Adaptor3d_Curve &
+        :param C2:
+        :type C2: Adaptor3d_Curve &
+        :param TolC1: default value is 1.0e-10
+        :type TolC1: float
+        :param TolC2: default value is 1.0e-10
+        :type TolC2: float
+        :rtype: None
+
         :param C1:
         :type C1: Adaptor3d_Curve &
         :param C2:
@@ -5389,18 +5567,54 @@ class Extrema_ExtCC(object):
         :type TolC2: float
         :rtype: None
 
+        :param C1:
+        :type C1: Adaptor3d_Curve &
+        :param C2:
+        :type C2: Adaptor3d_Curve &
+        :param U1:
+        :type U1: float
+        :param U2:
+        :type U2: float
+        :param V1:
+        :type V1: float
+        :param V2:
+        :type V2: float
+        :param TolC1: default value is 1.0e-10
+        :type TolC1: float
+        :param TolC2: default value is 1.0e-10
+        :type TolC2: float
+        :rtype: None
+
+        :param C1:
+        :type C1: Adaptor3d_Curve &
+        :param C2:
+        :type C2: Adaptor3d_Curve &
+        :param U1:
+        :type U1: float
+        :param U2:
+        :type U2: float
+        :param V1:
+        :type V1: float
+        :param V2:
+        :type V2: float
+        :param TolC1: default value is 1.0e-10
+        :type TolC1: float
+        :param TolC2: default value is 1.0e-10
+        :type TolC2: float
+        :rtype: None
+
         """
         _Extrema.Extrema_ExtCC_swiginit(self,_Extrema.new_Extrema_ExtCC(*args))
-    def SetCurve(self, *args) -> "void" :
+    def SetCurve(self, *args):
         """
         :param theRank:
-        :type theRank: int
+        :type theRank: Standard_Integer
         :param C:
         :type C: Adaptor3d_Curve &
         :rtype: None
 
         :param theRank:
-        :type theRank: int
+        :type theRank: Standard_Integer
         :param C:
         :type C: Adaptor3d_Curve &
         :param Uinf:
@@ -5412,10 +5626,10 @@ class Extrema_ExtCC(object):
         """
         return _Extrema.Extrema_ExtCC_SetCurve(self, *args)
 
-    def SetRange(self, *args) -> "void" :
+    def SetRange(self, *args):
         """
         :param theRank:
-        :type theRank: int
+        :type theRank: Standard_Integer
         :param Uinf:
         :type Uinf: float
         :param Usup:
@@ -5425,10 +5639,10 @@ class Extrema_ExtCC(object):
         """
         return _Extrema.Extrema_ExtCC_SetRange(self, *args)
 
-    def SetTolerance(self, *args) -> "void" :
+    def SetTolerance(self, *args):
         """
         :param theRank:
-        :type theRank: int
+        :type theRank: Standard_Integer
         :param Tol:
         :type Tol: float
         :rtype: None
@@ -5436,47 +5650,51 @@ class Extrema_ExtCC(object):
         """
         return _Extrema.Extrema_ExtCC_SetTolerance(self, *args)
 
-    def Perform(self, *args) -> "void" :
+    def Perform(self):
         """
         :rtype: None
 
         """
-        return _Extrema.Extrema_ExtCC_Perform(self, *args)
+        return _Extrema.Extrema_ExtCC_Perform(self)
 
-    def IsDone(self, *args) -> "Standard_Boolean" :
+    def IsDone(self):
         """
         :rtype: bool
 
         """
-        return _Extrema.Extrema_ExtCC_IsDone(self, *args)
+        return _Extrema.Extrema_ExtCC_IsDone(self)
 
-    def NbExt(self, *args) -> "Standard_Integer" :
+    def NbExt(self):
         """
         :rtype: int
 
         """
-        return _Extrema.Extrema_ExtCC_NbExt(self, *args)
+        return _Extrema.Extrema_ExtCC_NbExt(self)
 
-    def IsParallel(self, *args) -> "Standard_Boolean" :
+    def IsParallel(self):
         """
         :rtype: bool
 
         """
-        return _Extrema.Extrema_ExtCC_IsParallel(self, *args)
+        return _Extrema.Extrema_ExtCC_IsParallel(self)
 
-    def SquareDistance(self, *args) -> "Standard_Real" :
+    def SquareDistance(self, N=1):
         """
         :param N: default value is 1
-        :type N: int
+        :type N: Standard_Integer
+        :rtype: float
+
+        :param N: default value is 1
+        :type N: Standard_Integer
         :rtype: float
 
         """
-        return _Extrema.Extrema_ExtCC_SquareDistance(self, *args)
+        return _Extrema.Extrema_ExtCC_SquareDistance(self, N)
 
-    def Points(self, *args) -> "void" :
+    def Points(self, *args):
         """
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :param P1:
         :type P1: Extrema_POnCurv &
         :param P2:
@@ -5486,7 +5704,7 @@ class Extrema_ExtCC(object):
         """
         return _Extrema.Extrema_ExtCC_Points(self, *args)
 
-    def TrimmedSquareDistances(self, *args) -> "void" :
+    def TrimmedSquareDistances(self, *args):
         """
         :param dist11:
         :type dist11: float &
@@ -5552,6 +5770,62 @@ class Extrema_ExtCC2d(object):
         :type C1: Adaptor2d_Curve2d &
         :param C2:
         :type C2: Adaptor2d_Curve2d &
+        :param TolC1: default value is 1.0e-10
+        :type TolC1: float
+        :param TolC2: default value is 1.0e-10
+        :type TolC2: float
+        :rtype: None
+
+        :param C1:
+        :type C1: Adaptor2d_Curve2d &
+        :param C2:
+        :type C2: Adaptor2d_Curve2d &
+        :param TolC1: default value is 1.0e-10
+        :type TolC1: float
+        :param TolC2: default value is 1.0e-10
+        :type TolC2: float
+        :rtype: None
+
+        :param C1:
+        :type C1: Adaptor2d_Curve2d &
+        :param C2:
+        :type C2: Adaptor2d_Curve2d &
+        :param U1:
+        :type U1: float
+        :param U2:
+        :type U2: float
+        :param V1:
+        :type V1: float
+        :param V2:
+        :type V2: float
+        :param TolC1: default value is 1.0e-10
+        :type TolC1: float
+        :param TolC2: default value is 1.0e-10
+        :type TolC2: float
+        :rtype: None
+
+        :param C1:
+        :type C1: Adaptor2d_Curve2d &
+        :param C2:
+        :type C2: Adaptor2d_Curve2d &
+        :param U1:
+        :type U1: float
+        :param U2:
+        :type U2: float
+        :param V1:
+        :type V1: float
+        :param V2:
+        :type V2: float
+        :param TolC1: default value is 1.0e-10
+        :type TolC1: float
+        :param TolC2: default value is 1.0e-10
+        :type TolC2: float
+        :rtype: None
+
+        :param C1:
+        :type C1: Adaptor2d_Curve2d &
+        :param C2:
+        :type C2: Adaptor2d_Curve2d &
         :param U1:
         :type U1: float
         :param U2:
@@ -5568,8 +5842,32 @@ class Extrema_ExtCC2d(object):
 
         """
         _Extrema.Extrema_ExtCC2d_swiginit(self,_Extrema.new_Extrema_ExtCC2d(*args))
-    def Initialize(self, *args) -> "void" :
+    def Initialize(self, *args):
         """
+        :param C2:
+        :type C2: Adaptor2d_Curve2d &
+        :param V1:
+        :type V1: float
+        :param V2:
+        :type V2: float
+        :param TolC1: default value is 1.0e-10
+        :type TolC1: float
+        :param TolC2: default value is 1.0e-10
+        :type TolC2: float
+        :rtype: None
+
+        :param C2:
+        :type C2: Adaptor2d_Curve2d &
+        :param V1:
+        :type V1: float
+        :param V2:
+        :type V2: float
+        :param TolC1: default value is 1.0e-10
+        :type TolC1: float
+        :param TolC2: default value is 1.0e-10
+        :type TolC2: float
+        :rtype: None
+
         :param C2:
         :type C2: Adaptor2d_Curve2d &
         :param V1:
@@ -5585,7 +5883,7 @@ class Extrema_ExtCC2d(object):
         """
         return _Extrema.Extrema_ExtCC2d_Initialize(self, *args)
 
-    def Perform(self, *args) -> "void" :
+    def Perform(self, *args):
         """
         :param C1:
         :type C1: Adaptor2d_Curve2d &
@@ -5598,40 +5896,44 @@ class Extrema_ExtCC2d(object):
         """
         return _Extrema.Extrema_ExtCC2d_Perform(self, *args)
 
-    def IsDone(self, *args) -> "Standard_Boolean" :
+    def IsDone(self):
         """
         :rtype: bool
 
         """
-        return _Extrema.Extrema_ExtCC2d_IsDone(self, *args)
+        return _Extrema.Extrema_ExtCC2d_IsDone(self)
 
-    def NbExt(self, *args) -> "Standard_Integer" :
+    def NbExt(self):
         """
         :rtype: int
 
         """
-        return _Extrema.Extrema_ExtCC2d_NbExt(self, *args)
+        return _Extrema.Extrema_ExtCC2d_NbExt(self)
 
-    def IsParallel(self, *args) -> "Standard_Boolean" :
+    def IsParallel(self):
         """
         :rtype: bool
 
         """
-        return _Extrema.Extrema_ExtCC2d_IsParallel(self, *args)
+        return _Extrema.Extrema_ExtCC2d_IsParallel(self)
 
-    def SquareDistance(self, *args) -> "Standard_Real" :
+    def SquareDistance(self, N=1):
         """
         :param N: default value is 1
-        :type N: int
+        :type N: Standard_Integer
+        :rtype: float
+
+        :param N: default value is 1
+        :type N: Standard_Integer
         :rtype: float
 
         """
-        return _Extrema.Extrema_ExtCC2d_SquareDistance(self, *args)
+        return _Extrema.Extrema_ExtCC2d_SquareDistance(self, N)
 
-    def Points(self, *args) -> "void" :
+    def Points(self, *args):
         """
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :param P1:
         :type P1: Extrema_POnCurv2d &
         :param P2:
@@ -5641,7 +5943,7 @@ class Extrema_ExtCC2d(object):
         """
         return _Extrema.Extrema_ExtCC2d_Points(self, *args)
 
-    def TrimmedSquareDistances(self, *args) -> "void" :
+    def TrimmedSquareDistances(self, *args):
         """
         :param dist11:
         :type dist11: float &
@@ -5729,7 +6031,7 @@ class Extrema_ExtCS(object):
 
         """
         _Extrema.Extrema_ExtCS_swiginit(self,_Extrema.new_Extrema_ExtCS(*args))
-    def Initialize(self, *args) -> "void" :
+    def Initialize(self, *args):
         """
         * Initializes the fields of the algorithm.
 
@@ -5752,7 +6054,7 @@ class Extrema_ExtCS(object):
         """
         return _Extrema.Extrema_ExtCS_Initialize(self, *args)
 
-    def Perform(self, *args) -> "void" :
+    def Perform(self, *args):
         """
         * Computes the distances. An exception is raised if the fieds have not been initialized.
 
@@ -5767,50 +6069,50 @@ class Extrema_ExtCS(object):
         """
         return _Extrema.Extrema_ExtCS_Perform(self, *args)
 
-    def IsDone(self, *args) -> "Standard_Boolean" :
+    def IsDone(self):
         """
         * Returns True if the distances are found.
 
         :rtype: bool
 
         """
-        return _Extrema.Extrema_ExtCS_IsDone(self, *args)
+        return _Extrema.Extrema_ExtCS_IsDone(self)
 
-    def IsParallel(self, *args) -> "Standard_Boolean" :
+    def IsParallel(self):
         """
         * Returns True if the curve is on a parallel surface.
 
         :rtype: bool
 
         """
-        return _Extrema.Extrema_ExtCS_IsParallel(self, *args)
+        return _Extrema.Extrema_ExtCS_IsParallel(self)
 
-    def NbExt(self, *args) -> "Standard_Integer" :
+    def NbExt(self):
         """
         * Returns the number of extremum distances.
 
         :rtype: int
 
         """
-        return _Extrema.Extrema_ExtCS_NbExt(self, *args)
+        return _Extrema.Extrema_ExtCS_NbExt(self)
 
-    def SquareDistance(self, *args) -> "Standard_Real" :
+    def SquareDistance(self, *args):
         """
         * Returns the value of the Nth resulting square distance.
 
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :rtype: float
 
         """
         return _Extrema.Extrema_ExtCS_SquareDistance(self, *args)
 
-    def Points(self, *args) -> "void" :
+    def Points(self, *args):
         """
         * Returns the point of the Nth resulting distance.
 
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :param P1:
         :type P1: Extrema_POnCurv &
         :param P2:
@@ -5972,50 +6274,56 @@ class Extrema_ExtElC(object):
 
         """
         _Extrema.Extrema_ExtElC_swiginit(self,_Extrema.new_Extrema_ExtElC(*args))
-    def IsDone(self, *args) -> "Standard_Boolean" :
+    def IsDone(self):
         """
         * Returns True if the distances are found.
 
         :rtype: bool
 
         """
-        return _Extrema.Extrema_ExtElC_IsDone(self, *args)
+        return _Extrema.Extrema_ExtElC_IsDone(self)
 
-    def IsParallel(self, *args) -> "Standard_Boolean" :
+    def IsParallel(self):
         """
         * Returns True if the two curves are parallel.
 
         :rtype: bool
 
         """
-        return _Extrema.Extrema_ExtElC_IsParallel(self, *args)
+        return _Extrema.Extrema_ExtElC_IsParallel(self)
 
-    def NbExt(self, *args) -> "Standard_Integer" :
+    def NbExt(self):
         """
         * Returns the number of extremum distances.
 
         :rtype: int
 
         """
-        return _Extrema.Extrema_ExtElC_NbExt(self, *args)
+        return _Extrema.Extrema_ExtElC_NbExt(self)
 
-    def SquareDistance(self, *args) -> "Standard_Real" :
+    def SquareDistance(self, N=1):
         """
         * Returns the value of the Nth extremum square distance.
 
         :param N: default value is 1
-        :type N: int
+        :type N: Standard_Integer
+        :rtype: float
+
+        * Returns the value of the Nth extremum square distance.
+
+        :param N: default value is 1
+        :type N: Standard_Integer
         :rtype: float
 
         """
-        return _Extrema.Extrema_ExtElC_SquareDistance(self, *args)
+        return _Extrema.Extrema_ExtElC_SquareDistance(self, N)
 
-    def Points(self, *args) -> "void" :
+    def Points(self, *args):
         """
         * Returns the points of the Nth extremum distance. P1 is on the first curve, P2 on the second one.
 
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :param P1:
         :type P1: Extrema_POnCurv &
         :param P2:
@@ -6175,50 +6483,56 @@ class Extrema_ExtElC2d(object):
 
         """
         _Extrema.Extrema_ExtElC2d_swiginit(self,_Extrema.new_Extrema_ExtElC2d(*args))
-    def IsDone(self, *args) -> "Standard_Boolean" :
+    def IsDone(self):
         """
         * Returns True if the distances are found.
 
         :rtype: bool
 
         """
-        return _Extrema.Extrema_ExtElC2d_IsDone(self, *args)
+        return _Extrema.Extrema_ExtElC2d_IsDone(self)
 
-    def IsParallel(self, *args) -> "Standard_Boolean" :
+    def IsParallel(self):
         """
         * Returns True if the two curves are parallel.
 
         :rtype: bool
 
         """
-        return _Extrema.Extrema_ExtElC2d_IsParallel(self, *args)
+        return _Extrema.Extrema_ExtElC2d_IsParallel(self)
 
-    def NbExt(self, *args) -> "Standard_Integer" :
+    def NbExt(self):
         """
         * Returns the number of extremum distances.
 
         :rtype: int
 
         """
-        return _Extrema.Extrema_ExtElC2d_NbExt(self, *args)
+        return _Extrema.Extrema_ExtElC2d_NbExt(self)
 
-    def SquareDistance(self, *args) -> "Standard_Real" :
+    def SquareDistance(self, N=1):
         """
         * Returns the value of the Nth extremum square distance.
 
         :param N: default value is 1
-        :type N: int
+        :type N: Standard_Integer
+        :rtype: float
+
+        * Returns the value of the Nth extremum square distance.
+
+        :param N: default value is 1
+        :type N: Standard_Integer
         :rtype: float
 
         """
-        return _Extrema.Extrema_ExtElC2d_SquareDistance(self, *args)
+        return _Extrema.Extrema_ExtElC2d_SquareDistance(self, N)
 
-    def Points(self, *args) -> "void" :
+    def Points(self, *args):
         """
         * Returns the points of the Nth extremum distance. P1 is on the first curve, P2 on the second one.
 
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :param P1:
         :type P1: Extrema_POnCurv2d &
         :param P2:
@@ -6342,7 +6656,7 @@ class Extrema_ExtElCS(object):
 
         """
         _Extrema.Extrema_ExtElCS_swiginit(self,_Extrema.new_Extrema_ExtElCS(*args))
-    def Perform(self, *args) -> "void" :
+    def Perform(self, *args):
         """
         :param C:
         :type C: gp_Lin
@@ -6413,50 +6727,56 @@ class Extrema_ExtElCS(object):
         """
         return _Extrema.Extrema_ExtElCS_Perform(self, *args)
 
-    def IsDone(self, *args) -> "Standard_Boolean" :
+    def IsDone(self):
         """
         * Returns True if the distances are found.
 
         :rtype: bool
 
         """
-        return _Extrema.Extrema_ExtElCS_IsDone(self, *args)
+        return _Extrema.Extrema_ExtElCS_IsDone(self)
 
-    def IsParallel(self, *args) -> "Standard_Boolean" :
+    def IsParallel(self):
         """
         * Returns True if the curve is on a parallel surface.
 
         :rtype: bool
 
         """
-        return _Extrema.Extrema_ExtElCS_IsParallel(self, *args)
+        return _Extrema.Extrema_ExtElCS_IsParallel(self)
 
-    def NbExt(self, *args) -> "Standard_Integer" :
+    def NbExt(self):
         """
         * Returns the number of extremum distances.
 
         :rtype: int
 
         """
-        return _Extrema.Extrema_ExtElCS_NbExt(self, *args)
+        return _Extrema.Extrema_ExtElCS_NbExt(self)
 
-    def SquareDistance(self, *args) -> "Standard_Real" :
+    def SquareDistance(self, N=1):
         """
         * Returns the value of the Nth extremum square distance.
 
         :param N: default value is 1
-        :type N: int
+        :type N: Standard_Integer
+        :rtype: float
+
+        * Returns the value of the Nth extremum square distance.
+
+        :param N: default value is 1
+        :type N: Standard_Integer
         :rtype: float
 
         """
-        return _Extrema.Extrema_ExtElCS_SquareDistance(self, *args)
+        return _Extrema.Extrema_ExtElCS_SquareDistance(self, N)
 
-    def Points(self, *args) -> "void" :
+    def Points(self, *args):
         """
         * Returns the points of the Nth extremum distance. P1 is on the curve, P2 on the surface.
 
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :param P1:
         :type P1: Extrema_POnCurv &
         :param P2:
@@ -6541,7 +6861,7 @@ class Extrema_ExtElSS(object):
 
         """
         _Extrema.Extrema_ExtElSS_swiginit(self,_Extrema.new_Extrema_ExtElSS(*args))
-    def Perform(self, *args) -> "void" :
+    def Perform(self, *args):
         """
         :param S1:
         :type S1: gp_Pln
@@ -6582,50 +6902,56 @@ class Extrema_ExtElSS(object):
         """
         return _Extrema.Extrema_ExtElSS_Perform(self, *args)
 
-    def IsDone(self, *args) -> "Standard_Boolean" :
+    def IsDone(self):
         """
         * Returns True if the distances are found.
 
         :rtype: bool
 
         """
-        return _Extrema.Extrema_ExtElSS_IsDone(self, *args)
+        return _Extrema.Extrema_ExtElSS_IsDone(self)
 
-    def IsParallel(self, *args) -> "Standard_Boolean" :
+    def IsParallel(self):
         """
         * Returns True if the two surfaces are parallel.
 
         :rtype: bool
 
         """
-        return _Extrema.Extrema_ExtElSS_IsParallel(self, *args)
+        return _Extrema.Extrema_ExtElSS_IsParallel(self)
 
-    def NbExt(self, *args) -> "Standard_Integer" :
+    def NbExt(self):
         """
         * Returns the number of extremum distances.
 
         :rtype: int
 
         """
-        return _Extrema.Extrema_ExtElSS_NbExt(self, *args)
+        return _Extrema.Extrema_ExtElSS_NbExt(self)
 
-    def SquareDistance(self, *args) -> "Standard_Real" :
+    def SquareDistance(self, N=1):
         """
         * Returns the value of the Nth extremum square distance.
 
         :param N: default value is 1
-        :type N: int
+        :type N: Standard_Integer
+        :rtype: float
+
+        * Returns the value of the Nth extremum square distance.
+
+        :param N: default value is 1
+        :type N: Standard_Integer
         :rtype: float
 
         """
-        return _Extrema.Extrema_ExtElSS_SquareDistance(self, *args)
+        return _Extrema.Extrema_ExtElSS_SquareDistance(self, N)
 
-    def Points(self, *args) -> "void" :
+    def Points(self, *args):
         """
         * Returns the points for the Nth resulting distance. P1 is on the first surface, P2 on the second one.
 
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :param P1:
         :type P1: Extrema_POnSurf &
         :param P2:
@@ -6676,14 +7002,44 @@ class Extrema_ExtPC(object):
         :type P: gp_Pnt
         :param C:
         :type C: Adaptor3d_Curve &
+        :param Uinf:
+        :type Uinf: float
+        :param Usup:
+        :type Usup: float
+        :param TolF: default value is 1.0e-10
+        :type TolF: float
+        :rtype: None
+
+        :param P:
+        :type P: gp_Pnt
+        :param C:
+        :type C: Adaptor3d_Curve &
+        :param TolF: default value is 1.0e-10
+        :type TolF: float
+        :rtype: None
+
+        :param P:
+        :type P: gp_Pnt
+        :param C:
+        :type C: Adaptor3d_Curve &
         :param TolF: default value is 1.0e-10
         :type TolF: float
         :rtype: None
 
         """
         _Extrema.Extrema_ExtPC_swiginit(self,_Extrema.new_Extrema_ExtPC(*args))
-    def Initialize(self, *args) -> "void" :
+    def Initialize(self, *args):
         """
+        :param C:
+        :type C: Adaptor3d_Curve &
+        :param Uinf:
+        :type Uinf: float
+        :param Usup:
+        :type Usup: float
+        :param TolF: default value is 1.0e-10
+        :type TolF: float
+        :rtype: None
+
         :param C:
         :type C: Adaptor3d_Curve &
         :param Uinf:
@@ -6697,7 +7053,7 @@ class Extrema_ExtPC(object):
         """
         return _Extrema.Extrema_ExtPC_Initialize(self, *args)
 
-    def Perform(self, *args) -> "void" :
+    def Perform(self, *args):
         """
         :param P:
         :type P: gp_Pnt
@@ -6706,48 +7062,48 @@ class Extrema_ExtPC(object):
         """
         return _Extrema.Extrema_ExtPC_Perform(self, *args)
 
-    def IsDone(self, *args) -> "Standard_Boolean" :
+    def IsDone(self):
         """
         :rtype: bool
 
         """
-        return _Extrema.Extrema_ExtPC_IsDone(self, *args)
+        return _Extrema.Extrema_ExtPC_IsDone(self)
 
-    def SquareDistance(self, *args) -> "Standard_Real" :
+    def SquareDistance(self, *args):
         """
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :rtype: float
 
         """
         return _Extrema.Extrema_ExtPC_SquareDistance(self, *args)
 
-    def NbExt(self, *args) -> "Standard_Integer" :
+    def NbExt(self):
         """
         :rtype: int
 
         """
-        return _Extrema.Extrema_ExtPC_NbExt(self, *args)
+        return _Extrema.Extrema_ExtPC_NbExt(self)
 
-    def IsMin(self, *args) -> "Standard_Boolean" :
+    def IsMin(self, *args):
         """
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :rtype: bool
 
         """
         return _Extrema.Extrema_ExtPC_IsMin(self, *args)
 
-    def Point(self, *args) -> "Extrema_POnCurv const &" :
+    def Point(self, *args):
         """
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :rtype: Extrema_POnCurv
 
         """
         return _Extrema.Extrema_ExtPC_Point(self, *args)
 
-    def TrimmedSquareDistances(self, *args) -> "void" :
+    def TrimmedSquareDistances(self, *args):
         """
         :param dist1:
         :type dist1: float &
@@ -6805,14 +7161,44 @@ class Extrema_ExtPC2d(object):
         :type P: gp_Pnt2d
         :param C:
         :type C: Adaptor2d_Curve2d &
+        :param Uinf:
+        :type Uinf: float
+        :param Usup:
+        :type Usup: float
+        :param TolF: default value is 1.0e-10
+        :type TolF: float
+        :rtype: None
+
+        :param P:
+        :type P: gp_Pnt2d
+        :param C:
+        :type C: Adaptor2d_Curve2d &
+        :param TolF: default value is 1.0e-10
+        :type TolF: float
+        :rtype: None
+
+        :param P:
+        :type P: gp_Pnt2d
+        :param C:
+        :type C: Adaptor2d_Curve2d &
         :param TolF: default value is 1.0e-10
         :type TolF: float
         :rtype: None
 
         """
         _Extrema.Extrema_ExtPC2d_swiginit(self,_Extrema.new_Extrema_ExtPC2d(*args))
-    def Initialize(self, *args) -> "void" :
+    def Initialize(self, *args):
         """
+        :param C:
+        :type C: Adaptor2d_Curve2d &
+        :param Uinf:
+        :type Uinf: float
+        :param Usup:
+        :type Usup: float
+        :param TolF: default value is 1.0e-10
+        :type TolF: float
+        :rtype: None
+
         :param C:
         :type C: Adaptor2d_Curve2d &
         :param Uinf:
@@ -6826,7 +7212,7 @@ class Extrema_ExtPC2d(object):
         """
         return _Extrema.Extrema_ExtPC2d_Initialize(self, *args)
 
-    def Perform(self, *args) -> "void" :
+    def Perform(self, *args):
         """
         :param P:
         :type P: gp_Pnt2d
@@ -6835,48 +7221,48 @@ class Extrema_ExtPC2d(object):
         """
         return _Extrema.Extrema_ExtPC2d_Perform(self, *args)
 
-    def IsDone(self, *args) -> "Standard_Boolean" :
+    def IsDone(self):
         """
         :rtype: bool
 
         """
-        return _Extrema.Extrema_ExtPC2d_IsDone(self, *args)
+        return _Extrema.Extrema_ExtPC2d_IsDone(self)
 
-    def SquareDistance(self, *args) -> "Standard_Real" :
+    def SquareDistance(self, *args):
         """
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :rtype: float
 
         """
         return _Extrema.Extrema_ExtPC2d_SquareDistance(self, *args)
 
-    def NbExt(self, *args) -> "Standard_Integer" :
+    def NbExt(self):
         """
         :rtype: int
 
         """
-        return _Extrema.Extrema_ExtPC2d_NbExt(self, *args)
+        return _Extrema.Extrema_ExtPC2d_NbExt(self)
 
-    def IsMin(self, *args) -> "Standard_Boolean" :
+    def IsMin(self, *args):
         """
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :rtype: bool
 
         """
         return _Extrema.Extrema_ExtPC2d_IsMin(self, *args)
 
-    def Point(self, *args) -> "Extrema_POnCurv2d const &" :
+    def Point(self, *args):
         """
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :rtype: Extrema_POnCurv2d
 
         """
         return _Extrema.Extrema_ExtPC2d_Point(self, *args)
 
-    def TrimmedSquareDistances(self, *args) -> "void" :
+    def TrimmedSquareDistances(self, *args):
         """
         :param dist1:
         :type dist1: float &
@@ -6990,7 +7376,7 @@ class Extrema_ExtPElC(object):
 
         """
         _Extrema.Extrema_ExtPElC_swiginit(self,_Extrema.new_Extrema_ExtPElC(*args))
-    def Perform(self, *args) -> "void" :
+    def Perform(self, *args):
         """
         :param P:
         :type P: gp_Pnt
@@ -7055,52 +7441,52 @@ class Extrema_ExtPElC(object):
         """
         return _Extrema.Extrema_ExtPElC_Perform(self, *args)
 
-    def IsDone(self, *args) -> "Standard_Boolean" :
+    def IsDone(self):
         """
         * True if the distances are found.
 
         :rtype: bool
 
         """
-        return _Extrema.Extrema_ExtPElC_IsDone(self, *args)
+        return _Extrema.Extrema_ExtPElC_IsDone(self)
 
-    def NbExt(self, *args) -> "Standard_Integer" :
+    def NbExt(self):
         """
         * Returns the number of extremum distances.
 
         :rtype: int
 
         """
-        return _Extrema.Extrema_ExtPElC_NbExt(self, *args)
+        return _Extrema.Extrema_ExtPElC_NbExt(self)
 
-    def SquareDistance(self, *args) -> "Standard_Real" :
+    def SquareDistance(self, *args):
         """
         * Returns the value of the Nth extremum square distance.
 
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :rtype: float
 
         """
         return _Extrema.Extrema_ExtPElC_SquareDistance(self, *args)
 
-    def IsMin(self, *args) -> "Standard_Boolean" :
+    def IsMin(self, *args):
         """
         * Returns True if the Nth extremum distance is a minimum.
 
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :rtype: bool
 
         """
         return _Extrema.Extrema_ExtPElC_IsMin(self, *args)
 
-    def Point(self, *args) -> "Extrema_POnCurv const &" :
+    def Point(self, *args):
         """
         * Returns the point of the Nth extremum distance.
 
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :rtype: Extrema_POnCurv
 
         """
@@ -7203,7 +7589,7 @@ class Extrema_ExtPElC2d(object):
 
         """
         _Extrema.Extrema_ExtPElC2d_swiginit(self,_Extrema.new_Extrema_ExtPElC2d(*args))
-    def Perform(self, *args) -> "void" :
+    def Perform(self, *args):
         """
         :param P:
         :type P: gp_Pnt2d
@@ -7268,52 +7654,52 @@ class Extrema_ExtPElC2d(object):
         """
         return _Extrema.Extrema_ExtPElC2d_Perform(self, *args)
 
-    def IsDone(self, *args) -> "Standard_Boolean" :
+    def IsDone(self):
         """
         * True if the distances are found.
 
         :rtype: bool
 
         """
-        return _Extrema.Extrema_ExtPElC2d_IsDone(self, *args)
+        return _Extrema.Extrema_ExtPElC2d_IsDone(self)
 
-    def NbExt(self, *args) -> "Standard_Integer" :
+    def NbExt(self):
         """
         * Returns the number of extremum distances.
 
         :rtype: int
 
         """
-        return _Extrema.Extrema_ExtPElC2d_NbExt(self, *args)
+        return _Extrema.Extrema_ExtPElC2d_NbExt(self)
 
-    def SquareDistance(self, *args) -> "Standard_Real" :
+    def SquareDistance(self, *args):
         """
         * Returns the value of the Nth extremum square distance.
 
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :rtype: float
 
         """
         return _Extrema.Extrema_ExtPElC2d_SquareDistance(self, *args)
 
-    def IsMin(self, *args) -> "Standard_Boolean" :
+    def IsMin(self, *args):
         """
         * Returns True if the Nth extremum distance is a minimum.
 
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :rtype: bool
 
         """
         return _Extrema.Extrema_ExtPElC2d_IsMin(self, *args)
 
-    def Point(self, *args) -> "Extrema_POnCurv2d const &" :
+    def Point(self, *args):
         """
         * Returns the point of the Nth extremum distance.
 
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :rtype: Extrema_POnCurv2d
 
         """
@@ -7396,7 +7782,7 @@ class Extrema_ExtPElS(object):
 
         """
         _Extrema.Extrema_ExtPElS_swiginit(self,_Extrema.new_Extrema_ExtPElS(*args))
-    def Perform(self, *args) -> "void" :
+    def Perform(self, *args):
         """
         :param P:
         :type P: gp_Pnt
@@ -7441,41 +7827,41 @@ class Extrema_ExtPElS(object):
         """
         return _Extrema.Extrema_ExtPElS_Perform(self, *args)
 
-    def IsDone(self, *args) -> "Standard_Boolean" :
+    def IsDone(self):
         """
         * Returns True if the distances are found.
 
         :rtype: bool
 
         """
-        return _Extrema.Extrema_ExtPElS_IsDone(self, *args)
+        return _Extrema.Extrema_ExtPElS_IsDone(self)
 
-    def NbExt(self, *args) -> "Standard_Integer" :
+    def NbExt(self):
         """
         * Returns the number of extremum distances.
 
         :rtype: int
 
         """
-        return _Extrema.Extrema_ExtPElS_NbExt(self, *args)
+        return _Extrema.Extrema_ExtPElS_NbExt(self)
 
-    def SquareDistance(self, *args) -> "Standard_Real" :
+    def SquareDistance(self, *args):
         """
         * Returns the value of the Nth resulting square distance.
 
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :rtype: float
 
         """
         return _Extrema.Extrema_ExtPElS_SquareDistance(self, *args)
 
-    def Point(self, *args) -> "Extrema_POnSurf const &" :
+    def Point(self, *args):
         """
         * Returns the point of the Nth resulting distance.
 
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :rtype: Extrema_POnSurf
 
         """
@@ -7539,7 +7925,7 @@ class Extrema_ExtPExtS(object):
 
         """
         _Extrema.Extrema_ExtPExtS_swiginit(self,_Extrema.new_Extrema_ExtPExtS(*args))
-    def Initialize(self, *args) -> "void" :
+    def Initialize(self, *args):
         """
         * Initializes the fields of the algorithm.
 
@@ -7562,7 +7948,7 @@ class Extrema_ExtPExtS(object):
         """
         return _Extrema.Extrema_ExtPExtS_Initialize(self, *args)
 
-    def Perform(self, *args) -> "void" :
+    def Perform(self, *args):
         """
         :param P:
         :type P: gp_Pnt
@@ -7571,41 +7957,41 @@ class Extrema_ExtPExtS(object):
         """
         return _Extrema.Extrema_ExtPExtS_Perform(self, *args)
 
-    def IsDone(self, *args) -> "Standard_Boolean" :
+    def IsDone(self):
         """
         * Returns True if the distances are found.
 
         :rtype: bool
 
         """
-        return _Extrema.Extrema_ExtPExtS_IsDone(self, *args)
+        return _Extrema.Extrema_ExtPExtS_IsDone(self)
 
-    def NbExt(self, *args) -> "Standard_Integer" :
+    def NbExt(self):
         """
         * Returns the number of extremum distances.
 
         :rtype: int
 
         """
-        return _Extrema.Extrema_ExtPExtS_NbExt(self, *args)
+        return _Extrema.Extrema_ExtPExtS_NbExt(self)
 
-    def SquareDistance(self, *args) -> "Standard_Real" :
+    def SquareDistance(self, *args):
         """
         * Returns the value of the Nth resulting square distance.
 
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :rtype: float
 
         """
         return _Extrema.Extrema_ExtPExtS_SquareDistance(self, *args)
 
-    def Point(self, *args) -> "Extrema_POnSurf const &" :
+    def Point(self, *args):
         """
         * Returns the point of the Nth resulting distance.
 
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :rtype: Extrema_POnSurf
 
         """
@@ -7670,7 +8056,7 @@ class Extrema_ExtPRevS(object):
 
         """
         _Extrema.Extrema_ExtPRevS_swiginit(self,_Extrema.new_Extrema_ExtPRevS(*args))
-    def Initialize(self, *args) -> "void" :
+    def Initialize(self, *args):
         """
         :param S:
         :type S: Adaptor3d_SurfaceOfRevolution &
@@ -7691,7 +8077,7 @@ class Extrema_ExtPRevS(object):
         """
         return _Extrema.Extrema_ExtPRevS_Initialize(self, *args)
 
-    def Perform(self, *args) -> "void" :
+    def Perform(self, *args):
         """
         :param P:
         :type P: gp_Pnt
@@ -7700,41 +8086,41 @@ class Extrema_ExtPRevS(object):
         """
         return _Extrema.Extrema_ExtPRevS_Perform(self, *args)
 
-    def IsDone(self, *args) -> "Standard_Boolean" :
+    def IsDone(self):
         """
         * Returns True if the distances are found.
 
         :rtype: bool
 
         """
-        return _Extrema.Extrema_ExtPRevS_IsDone(self, *args)
+        return _Extrema.Extrema_ExtPRevS_IsDone(self)
 
-    def NbExt(self, *args) -> "Standard_Integer" :
+    def NbExt(self):
         """
         * Returns the number of extremum distances.
 
         :rtype: int
 
         """
-        return _Extrema.Extrema_ExtPRevS_NbExt(self, *args)
+        return _Extrema.Extrema_ExtPRevS_NbExt(self)
 
-    def SquareDistance(self, *args) -> "Standard_Real" :
+    def SquareDistance(self, *args):
         """
         * Returns the value of the Nth resulting square distance.
 
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :rtype: float
 
         """
         return _Extrema.Extrema_ExtPRevS_SquareDistance(self, *args)
 
-    def Point(self, *args) -> "Extrema_POnSurf const &" :
+    def Point(self, *args):
         """
         * Returns the point of the Nth resulting distance.
 
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :rtype: Extrema_POnSurf
 
         """
@@ -7787,6 +8173,86 @@ class Extrema_ExtPS(object):
         :type P: gp_Pnt
         :param S:
         :type S: Adaptor3d_Surface &
+        :param TolU:
+        :type TolU: float
+        :param TolV:
+        :type TolV: float
+        :param F: default value is Extrema_ExtFlag_MINMAX
+        :type F: Extrema_ExtFlag
+        :param A: default value is Extrema_ExtAlgo_Grad
+        :type A: Extrema_ExtAlgo
+        :rtype: None
+
+        * It calculates all the distances. NbU and NbV are used to locate the close points to find the zeros. They must be great enough such that if there is N extrema, there will be N extrema between P and the grid. TolU et TolV are used to determine the conditions to stop the iterations; at the iteration number n: (Un - Un-1) < TolU and (Vn - Vn-1) < TolV .
+
+        :param P:
+        :type P: gp_Pnt
+        :param S:
+        :type S: Adaptor3d_Surface &
+        :param TolU:
+        :type TolU: float
+        :param TolV:
+        :type TolV: float
+        :param F: default value is Extrema_ExtFlag_MINMAX
+        :type F: Extrema_ExtFlag
+        :param A: default value is Extrema_ExtAlgo_Grad
+        :type A: Extrema_ExtAlgo
+        :rtype: None
+
+        * It calculates all the distances. NbU and NbV are used to locate the close points to find the zeros. They must be great enough such that if there is N extrema, there will be N extrema between P and the grid. TolU et TolV are used to determine the conditions to stop the iterations; at the iteration number n: (Un - Un-1) < TolU and (Vn - Vn-1) < TolV .
+
+        :param P:
+        :type P: gp_Pnt
+        :param S:
+        :type S: Adaptor3d_Surface &
+        :param Uinf:
+        :type Uinf: float
+        :param Usup:
+        :type Usup: float
+        :param Vinf:
+        :type Vinf: float
+        :param Vsup:
+        :type Vsup: float
+        :param TolU:
+        :type TolU: float
+        :param TolV:
+        :type TolV: float
+        :param F: default value is Extrema_ExtFlag_MINMAX
+        :type F: Extrema_ExtFlag
+        :param A: default value is Extrema_ExtAlgo_Grad
+        :type A: Extrema_ExtAlgo
+        :rtype: None
+
+        * It calculates all the distances. NbU and NbV are used to locate the close points to find the zeros. They must be great enough such that if there is N extrema, there will be N extrema between P and the grid. TolU et TolV are used to determine the conditions to stop the iterations; at the iteration number n: (Un - Un-1) < TolU and (Vn - Vn-1) < TolV .
+
+        :param P:
+        :type P: gp_Pnt
+        :param S:
+        :type S: Adaptor3d_Surface &
+        :param Uinf:
+        :type Uinf: float
+        :param Usup:
+        :type Usup: float
+        :param Vinf:
+        :type Vinf: float
+        :param Vsup:
+        :type Vsup: float
+        :param TolU:
+        :type TolU: float
+        :param TolV:
+        :type TolV: float
+        :param F: default value is Extrema_ExtFlag_MINMAX
+        :type F: Extrema_ExtFlag
+        :param A: default value is Extrema_ExtAlgo_Grad
+        :type A: Extrema_ExtAlgo
+        :rtype: None
+
+        * It calculates all the distances. NbU and NbV are used to locate the close points to find the zeros. They must be great enough such that if there is N extrema, there will be N extrema between P and the grid. TolU et TolV are used to determine the conditions to stop the iterations; at the iteration number n: (Un - Un-1) < TolU and (Vn - Vn-1) < TolV .
+
+        :param P:
+        :type P: gp_Pnt
+        :param S:
+        :type S: Adaptor3d_Surface &
         :param Uinf:
         :type Uinf: float
         :param Usup:
@@ -7807,7 +8273,7 @@ class Extrema_ExtPS(object):
 
         """
         _Extrema.Extrema_ExtPS_swiginit(self,_Extrema.new_Extrema_ExtPS(*args))
-    def Initialize(self, *args) -> "void" :
+    def Initialize(self, *args):
         """
         * Initializes the fields of the algorithm.
 
@@ -7830,7 +8296,7 @@ class Extrema_ExtPS(object):
         """
         return _Extrema.Extrema_ExtPS_Initialize(self, *args)
 
-    def Perform(self, *args) -> "void" :
+    def Perform(self, *args):
         """
         * Computes the distances. An exception is raised if the fieds have not been initialized.
 
@@ -7841,47 +8307,47 @@ class Extrema_ExtPS(object):
         """
         return _Extrema.Extrema_ExtPS_Perform(self, *args)
 
-    def IsDone(self, *args) -> "Standard_Boolean" :
+    def IsDone(self):
         """
         * Returns True if the distances are found.
 
         :rtype: bool
 
         """
-        return _Extrema.Extrema_ExtPS_IsDone(self, *args)
+        return _Extrema.Extrema_ExtPS_IsDone(self)
 
-    def NbExt(self, *args) -> "Standard_Integer" :
+    def NbExt(self):
         """
         * Returns the number of extremum distances.
 
         :rtype: int
 
         """
-        return _Extrema.Extrema_ExtPS_NbExt(self, *args)
+        return _Extrema.Extrema_ExtPS_NbExt(self)
 
-    def SquareDistance(self, *args) -> "Standard_Real" :
+    def SquareDistance(self, *args):
         """
         * Returns the value of the Nth resulting square distance.
 
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :rtype: float
 
         """
         return _Extrema.Extrema_ExtPS_SquareDistance(self, *args)
 
-    def Point(self, *args) -> "Extrema_POnSurf const &" :
+    def Point(self, *args):
         """
         * Returns the point of the Nth resulting distance.
 
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :rtype: Extrema_POnSurf
 
         """
         return _Extrema.Extrema_ExtPS_Point(self, *args)
 
-    def TrimmedSquareDistances(self, *args) -> "void" :
+    def TrimmedSquareDistances(self, *args):
         """
         * if the surface is a trimmed surface, dUfVf is a square distance between <P> and the point of parameter FirstUParameter and FirstVParameter <PUfVf>. dUfVl is a square distance between <P> and the point of parameter FirstUParameter and LastVParameter <PUfVl>. dUlVf is a square distance between <P> and the point of parameter LastUParameter and FirstVParameter <PUlVf>. dUlVl is a square distance between <P> and the point of parameter LastUParameter and LastVParameter <PUlVl>.
 
@@ -7906,7 +8372,7 @@ class Extrema_ExtPS(object):
         """
         return _Extrema.Extrema_ExtPS_TrimmedSquareDistances(self, *args)
 
-    def SetFlag(self, *args) -> "void" :
+    def SetFlag(self, *args):
         """
         :param F:
         :type F: Extrema_ExtFlag
@@ -7915,7 +8381,7 @@ class Extrema_ExtPS(object):
         """
         return _Extrema.Extrema_ExtPS_SetFlag(self, *args)
 
-    def SetAlgo(self, *args) -> "void" :
+    def SetAlgo(self, *args):
         """
         :param A:
         :type A: Extrema_ExtAlgo
@@ -7994,7 +8460,7 @@ class Extrema_ExtSS(object):
 
         """
         _Extrema.Extrema_ExtSS_swiginit(self,_Extrema.new_Extrema_ExtSS(*args))
-    def Initialize(self, *args) -> "void" :
+    def Initialize(self, *args):
         """
         * Initializes the fields of the algorithm.
 
@@ -8015,7 +8481,7 @@ class Extrema_ExtSS(object):
         """
         return _Extrema.Extrema_ExtSS_Initialize(self, *args)
 
-    def Perform(self, *args) -> "void" :
+    def Perform(self, *args):
         """
         * Computes the distances. An exception is raised if the fieds have not been initialized.
 
@@ -8036,50 +8502,50 @@ class Extrema_ExtSS(object):
         """
         return _Extrema.Extrema_ExtSS_Perform(self, *args)
 
-    def IsDone(self, *args) -> "Standard_Boolean" :
+    def IsDone(self):
         """
         * Returns True if the distances are found.
 
         :rtype: bool
 
         """
-        return _Extrema.Extrema_ExtSS_IsDone(self, *args)
+        return _Extrema.Extrema_ExtSS_IsDone(self)
 
-    def IsParallel(self, *args) -> "Standard_Boolean" :
+    def IsParallel(self):
         """
         * Returns True if the curve is on a parallel surface.
 
         :rtype: bool
 
         """
-        return _Extrema.Extrema_ExtSS_IsParallel(self, *args)
+        return _Extrema.Extrema_ExtSS_IsParallel(self)
 
-    def NbExt(self, *args) -> "Standard_Integer" :
+    def NbExt(self):
         """
         * Returns the number of extremum distances.
 
         :rtype: int
 
         """
-        return _Extrema.Extrema_ExtSS_NbExt(self, *args)
+        return _Extrema.Extrema_ExtSS_NbExt(self)
 
-    def SquareDistance(self, *args) -> "Standard_Real" :
+    def SquareDistance(self, *args):
         """
         * Returns the value of the Nth resulting square distance.
 
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :rtype: float
 
         """
         return _Extrema.Extrema_ExtSS_SquareDistance(self, *args)
 
-    def Points(self, *args) -> "void" :
+    def Points(self, *args):
         """
         * Returns the point of the Nth resulting distance.
 
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :param P1:
         :type P1: Extrema_POnSurf &
         :param P2:
@@ -8123,7 +8589,7 @@ class Extrema_FuncExtCS(object):
 
         """
         _Extrema.Extrema_FuncExtCS_swiginit(self,_Extrema.new_Extrema_FuncExtCS(*args))
-    def Initialize(self, *args) -> "void" :
+    def Initialize(self, *args):
         """
         * sets the field mysurf of the function.
 
@@ -8136,21 +8602,21 @@ class Extrema_FuncExtCS(object):
         """
         return _Extrema.Extrema_FuncExtCS_Initialize(self, *args)
 
-    def NbVariables(self, *args) -> "Standard_Integer" :
+    def NbVariables(self):
         """
         :rtype: int
 
         """
-        return _Extrema.Extrema_FuncExtCS_NbVariables(self, *args)
+        return _Extrema.Extrema_FuncExtCS_NbVariables(self)
 
-    def NbEquations(self, *args) -> "Standard_Integer" :
+    def NbEquations(self):
         """
         :rtype: int
 
         """
-        return _Extrema.Extrema_FuncExtCS_NbEquations(self, *args)
+        return _Extrema.Extrema_FuncExtCS_NbEquations(self)
 
-    def Value(self, *args) -> "Standard_Boolean" :
+    def Value(self, *args):
         """
         * Calculation of Fi(U,V).
 
@@ -8163,7 +8629,7 @@ class Extrema_FuncExtCS(object):
         """
         return _Extrema.Extrema_FuncExtCS_Value(self, *args)
 
-    def Derivatives(self, *args) -> "Standard_Boolean" :
+    def Derivatives(self, *args):
         """
         * Calculation of Fi'(U,V).
 
@@ -8176,7 +8642,7 @@ class Extrema_FuncExtCS(object):
         """
         return _Extrema.Extrema_FuncExtCS_Derivatives(self, *args)
 
-    def Values(self, *args) -> "Standard_Boolean" :
+    def Values(self, *args):
         """
         * Calculation of Fi(U,V) and Fi'(U,V).
 
@@ -8191,52 +8657,52 @@ class Extrema_FuncExtCS(object):
         """
         return _Extrema.Extrema_FuncExtCS_Values(self, *args)
 
-    def GetStateNumber(self, *args) -> "Standard_Integer" :
+    def GetStateNumber(self):
         """
         * Save the found extremum.
 
         :rtype: int
 
         """
-        return _Extrema.Extrema_FuncExtCS_GetStateNumber(self, *args)
+        return _Extrema.Extrema_FuncExtCS_GetStateNumber(self)
 
-    def NbExt(self, *args) -> "Standard_Integer" :
+    def NbExt(self):
         """
         * Return the number of found extrema.
 
         :rtype: int
 
         """
-        return _Extrema.Extrema_FuncExtCS_NbExt(self, *args)
+        return _Extrema.Extrema_FuncExtCS_NbExt(self)
 
-    def SquareDistance(self, *args) -> "Standard_Real" :
+    def SquareDistance(self, *args):
         """
         * Return the value of the Nth distance.
 
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :rtype: float
 
         """
         return _Extrema.Extrema_FuncExtCS_SquareDistance(self, *args)
 
-    def PointOnCurve(self, *args) -> "Extrema_POnCurv const &" :
+    def PointOnCurve(self, *args):
         """
         * Returns the Nth extremum on C.
 
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :rtype: Extrema_POnCurv
 
         """
         return _Extrema.Extrema_FuncExtCS_PointOnCurve(self, *args)
 
-    def PointOnSurface(self, *args) -> "Extrema_POnSurf const &" :
+    def PointOnSurface(self, *args):
         """
         * Return the Nth extremum on S.
 
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :rtype: Extrema_POnSurf
 
         """
@@ -8280,7 +8746,7 @@ class Extrema_FuncExtPS(object):
 
         """
         _Extrema.Extrema_FuncExtPS_swiginit(self,_Extrema.new_Extrema_FuncExtPS(*args))
-    def Initialize(self, *args) -> "void" :
+    def Initialize(self, *args):
         """
         * sets the field mysurf of the function.
 
@@ -8291,7 +8757,7 @@ class Extrema_FuncExtPS(object):
         """
         return _Extrema.Extrema_FuncExtPS_Initialize(self, *args)
 
-    def SetPoint(self, *args) -> "void" :
+    def SetPoint(self, *args):
         """
         * sets the field mysurf of the function.
 
@@ -8302,21 +8768,21 @@ class Extrema_FuncExtPS(object):
         """
         return _Extrema.Extrema_FuncExtPS_SetPoint(self, *args)
 
-    def NbVariables(self, *args) -> "Standard_Integer" :
+    def NbVariables(self):
         """
         :rtype: int
 
         """
-        return _Extrema.Extrema_FuncExtPS_NbVariables(self, *args)
+        return _Extrema.Extrema_FuncExtPS_NbVariables(self)
 
-    def NbEquations(self, *args) -> "Standard_Integer" :
+    def NbEquations(self):
         """
         :rtype: int
 
         """
-        return _Extrema.Extrema_FuncExtPS_NbEquations(self, *args)
+        return _Extrema.Extrema_FuncExtPS_NbEquations(self)
 
-    def Value(self, *args) -> "Standard_Boolean" :
+    def Value(self, *args):
         """
         * Calculate Fi(U,V).
 
@@ -8329,7 +8795,7 @@ class Extrema_FuncExtPS(object):
         """
         return _Extrema.Extrema_FuncExtPS_Value(self, *args)
 
-    def Derivatives(self, *args) -> "Standard_Boolean" :
+    def Derivatives(self, *args):
         """
         * Calculate Fi'(U,V).
 
@@ -8342,7 +8808,7 @@ class Extrema_FuncExtPS(object):
         """
         return _Extrema.Extrema_FuncExtPS_Derivatives(self, *args)
 
-    def Values(self, *args) -> "Standard_Boolean" :
+    def Values(self, *args):
         """
         * Calculate Fi(U,V) and Fi'(U,V).
 
@@ -8357,41 +8823,41 @@ class Extrema_FuncExtPS(object):
         """
         return _Extrema.Extrema_FuncExtPS_Values(self, *args)
 
-    def GetStateNumber(self, *args) -> "Standard_Integer" :
+    def GetStateNumber(self):
         """
         * Save the found extremum.
 
         :rtype: int
 
         """
-        return _Extrema.Extrema_FuncExtPS_GetStateNumber(self, *args)
+        return _Extrema.Extrema_FuncExtPS_GetStateNumber(self)
 
-    def NbExt(self, *args) -> "Standard_Integer" :
+    def NbExt(self):
         """
         * Return the number of found extrema.
 
         :rtype: int
 
         """
-        return _Extrema.Extrema_FuncExtPS_NbExt(self, *args)
+        return _Extrema.Extrema_FuncExtPS_NbExt(self)
 
-    def SquareDistance(self, *args) -> "Standard_Real" :
+    def SquareDistance(self, *args):
         """
         * Return the value of the Nth distance.
 
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :rtype: float
 
         """
         return _Extrema.Extrema_FuncExtPS_SquareDistance(self, *args)
 
-    def Point(self, *args) -> "Extrema_POnSurf const &" :
+    def Point(self, *args):
         """
         * Returns the Nth extremum.
 
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :rtype: Extrema_POnSurf
 
         """
@@ -8435,7 +8901,7 @@ class Extrema_FuncExtSS(object):
 
         """
         _Extrema.Extrema_FuncExtSS_swiginit(self,_Extrema.new_Extrema_FuncExtSS(*args))
-    def Initialize(self, *args) -> "void" :
+    def Initialize(self, *args):
         """
         * sets the field mysurf of the function.
 
@@ -8448,21 +8914,21 @@ class Extrema_FuncExtSS(object):
         """
         return _Extrema.Extrema_FuncExtSS_Initialize(self, *args)
 
-    def NbVariables(self, *args) -> "Standard_Integer" :
+    def NbVariables(self):
         """
         :rtype: int
 
         """
-        return _Extrema.Extrema_FuncExtSS_NbVariables(self, *args)
+        return _Extrema.Extrema_FuncExtSS_NbVariables(self)
 
-    def NbEquations(self, *args) -> "Standard_Integer" :
+    def NbEquations(self):
         """
         :rtype: int
 
         """
-        return _Extrema.Extrema_FuncExtSS_NbEquations(self, *args)
+        return _Extrema.Extrema_FuncExtSS_NbEquations(self)
 
-    def Value(self, *args) -> "Standard_Boolean" :
+    def Value(self, *args):
         """
         * Calculate Fi(U,V).
 
@@ -8475,7 +8941,7 @@ class Extrema_FuncExtSS(object):
         """
         return _Extrema.Extrema_FuncExtSS_Value(self, *args)
 
-    def Derivatives(self, *args) -> "Standard_Boolean" :
+    def Derivatives(self, *args):
         """
         * Calculate Fi'(U,V).
 
@@ -8488,7 +8954,7 @@ class Extrema_FuncExtSS(object):
         """
         return _Extrema.Extrema_FuncExtSS_Derivatives(self, *args)
 
-    def Values(self, *args) -> "Standard_Boolean" :
+    def Values(self, *args):
         """
         * Calculate Fi(U,V) and Fi'(U,V).
 
@@ -8503,52 +8969,52 @@ class Extrema_FuncExtSS(object):
         """
         return _Extrema.Extrema_FuncExtSS_Values(self, *args)
 
-    def GetStateNumber(self, *args) -> "Standard_Integer" :
+    def GetStateNumber(self):
         """
         * Save the found extremum.
 
         :rtype: int
 
         """
-        return _Extrema.Extrema_FuncExtSS_GetStateNumber(self, *args)
+        return _Extrema.Extrema_FuncExtSS_GetStateNumber(self)
 
-    def NbExt(self, *args) -> "Standard_Integer" :
+    def NbExt(self):
         """
         * Return the number of found extrema.
 
         :rtype: int
 
         """
-        return _Extrema.Extrema_FuncExtSS_NbExt(self, *args)
+        return _Extrema.Extrema_FuncExtSS_NbExt(self)
 
-    def SquareDistance(self, *args) -> "Standard_Real" :
+    def SquareDistance(self, *args):
         """
         * Return the value of the Nth distance.
 
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :rtype: float
 
         """
         return _Extrema.Extrema_FuncExtSS_SquareDistance(self, *args)
 
-    def PointOnS1(self, *args) -> "Extrema_POnSurf const &" :
+    def PointOnS1(self, *args):
         """
         * Return the Nth extremum on S1.
 
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :rtype: Extrema_POnSurf
 
         """
         return _Extrema.Extrema_FuncExtSS_PointOnS1(self, *args)
 
-    def PointOnS2(self, *args) -> "Extrema_POnSurf const &" :
+    def PointOnS2(self, *args):
         """
         * Renvoie le Nieme extremum sur S2.
 
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :rtype: Extrema_POnSurf
 
         """
@@ -8591,11 +9057,11 @@ class Extrema_GenExtCS(object):
         :param S:
         :type S: Adaptor3d_Surface &
         :param NbT:
-        :type NbT: int
+        :type NbT: Standard_Integer
         :param NbU:
-        :type NbU: int
+        :type NbU: Standard_Integer
         :param NbV:
-        :type NbV: int
+        :type NbV: Standard_Integer
         :param Tol1:
         :type Tol1: float
         :param Tol2:
@@ -8609,11 +9075,11 @@ class Extrema_GenExtCS(object):
         :param S:
         :type S: Adaptor3d_Surface &
         :param NbT:
-        :type NbT: int
+        :type NbT: Standard_Integer
         :param NbU:
-        :type NbU: int
+        :type NbU: Standard_Integer
         :param NbV:
-        :type NbV: int
+        :type NbV: Standard_Integer
         :param tmin:
         :type tmin: float
         :param tsup:
@@ -8634,14 +9100,14 @@ class Extrema_GenExtCS(object):
 
         """
         _Extrema.Extrema_GenExtCS_swiginit(self,_Extrema.new_Extrema_GenExtCS(*args))
-    def Initialize(self, *args) -> "void" :
+    def Initialize(self, *args):
         """
         :param S:
         :type S: Adaptor3d_Surface &
         :param NbU:
-        :type NbU: int
+        :type NbU: Standard_Integer
         :param NbV:
-        :type NbV: int
+        :type NbV: Standard_Integer
         :param Tol2:
         :type Tol2: float
         :rtype: None
@@ -8649,9 +9115,9 @@ class Extrema_GenExtCS(object):
         :param S:
         :type S: Adaptor3d_Surface &
         :param NbU:
-        :type NbU: int
+        :type NbU: Standard_Integer
         :param NbV:
-        :type NbV: int
+        :type NbV: Standard_Integer
         :param Umin:
         :type Umin: float
         :param Usup:
@@ -8667,14 +9133,14 @@ class Extrema_GenExtCS(object):
         """
         return _Extrema.Extrema_GenExtCS_Initialize(self, *args)
 
-    def Perform(self, *args) -> "void" :
+    def Perform(self, *args):
         """
         * the algorithm is done with S An exception is raised if the fields have not been initialized.
 
         :param C:
         :type C: Adaptor3d_Curve &
         :param NbT:
-        :type NbT: int
+        :type NbT: Standard_Integer
         :param Tol1:
         :type Tol1: float
         :rtype: None
@@ -8684,7 +9150,7 @@ class Extrema_GenExtCS(object):
         :param C:
         :type C: Adaptor3d_Curve &
         :param NbT:
-        :type NbT: int
+        :type NbT: Standard_Integer
         :param tmin:
         :type tmin: float
         :param tsup:
@@ -8696,52 +9162,52 @@ class Extrema_GenExtCS(object):
         """
         return _Extrema.Extrema_GenExtCS_Perform(self, *args)
 
-    def IsDone(self, *args) -> "Standard_Boolean" :
+    def IsDone(self):
         """
         * Returns True if the distances are found.
 
         :rtype: bool
 
         """
-        return _Extrema.Extrema_GenExtCS_IsDone(self, *args)
+        return _Extrema.Extrema_GenExtCS_IsDone(self)
 
-    def NbExt(self, *args) -> "Standard_Integer" :
+    def NbExt(self):
         """
         * Returns the number of extremum distances.
 
         :rtype: int
 
         """
-        return _Extrema.Extrema_GenExtCS_NbExt(self, *args)
+        return _Extrema.Extrema_GenExtCS_NbExt(self)
 
-    def SquareDistance(self, *args) -> "Standard_Real" :
+    def SquareDistance(self, *args):
         """
         * Returns the value of the Nth resulting square distance.
 
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :rtype: float
 
         """
         return _Extrema.Extrema_GenExtCS_SquareDistance(self, *args)
 
-    def PointOnCurve(self, *args) -> "Extrema_POnCurv const &" :
+    def PointOnCurve(self, *args):
         """
         * Returns the point of the Nth resulting distance.
 
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :rtype: Extrema_POnCurv
 
         """
         return _Extrema.Extrema_GenExtCS_PointOnCurve(self, *args)
 
-    def PointOnSurface(self, *args) -> "Extrema_POnSurf const &" :
+    def PointOnSurface(self, *args):
         """
         * Returns the point of the Nth resulting distance.
 
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :rtype: Extrema_POnSurf
 
         """
@@ -8780,9 +9246,9 @@ class Extrema_GenExtPS(object):
         :param S:
         :type S: Adaptor3d_Surface &
         :param NbU:
-        :type NbU: int
+        :type NbU: Standard_Integer
         :param NbV:
-        :type NbV: int
+        :type NbV: Standard_Integer
         :param TolU:
         :type TolU: float
         :param TolV:
@@ -8800,9 +9266,105 @@ class Extrema_GenExtPS(object):
         :param S:
         :type S: Adaptor3d_Surface &
         :param NbU:
-        :type NbU: int
+        :type NbU: Standard_Integer
         :param NbV:
-        :type NbV: int
+        :type NbV: Standard_Integer
+        :param TolU:
+        :type TolU: float
+        :param TolV:
+        :type TolV: float
+        :param F: default value is Extrema_ExtFlag_MINMAX
+        :type F: Extrema_ExtFlag
+        :param A: default value is Extrema_ExtAlgo_Grad
+        :type A: Extrema_ExtAlgo
+        :rtype: None
+
+        * It calculates all the distances. The function F(u,v)=distance(P,S(u,v)) has an extremum when gradient(F)=0. The algorithm searchs all the zeros inside the definition ranges of the surface. NbU and NbV are used to locate the close points to find the zeros. They must be great enough such that if there is N extrema, there will be N extrema between P and the grid. TolU et TolV are used to determine the conditions to stop the iterations; at the iteration number n: (Un - Un-1) < TolU and (Vn - Vn-1) < TolV .
+
+        :param P:
+        :type P: gp_Pnt
+        :param S:
+        :type S: Adaptor3d_Surface &
+        :param NbU:
+        :type NbU: Standard_Integer
+        :param NbV:
+        :type NbV: Standard_Integer
+        :param TolU:
+        :type TolU: float
+        :param TolV:
+        :type TolV: float
+        :param F: default value is Extrema_ExtFlag_MINMAX
+        :type F: Extrema_ExtFlag
+        :param A: default value is Extrema_ExtAlgo_Grad
+        :type A: Extrema_ExtAlgo
+        :rtype: None
+
+        * It calculates all the distances. The function F(u,v)=distance(P,S(u,v)) has an extremum when gradient(F)=0. The algorithm searchs all the zeros inside the definition ranges of the surface. NbU and NbV are used to locate the close points to find the zeros. They must be great enough such that if there is N extrema, there will be N extrema between P and the grid. TolU et TolV are used to determine the conditions to stop the iterations; at the iteration number n: (Un - Un-1) < TolU and (Vn - Vn-1) < TolV .
+
+        :param P:
+        :type P: gp_Pnt
+        :param S:
+        :type S: Adaptor3d_Surface &
+        :param NbU:
+        :type NbU: Standard_Integer
+        :param NbV:
+        :type NbV: Standard_Integer
+        :param Umin:
+        :type Umin: float
+        :param Usup:
+        :type Usup: float
+        :param Vmin:
+        :type Vmin: float
+        :param Vsup:
+        :type Vsup: float
+        :param TolU:
+        :type TolU: float
+        :param TolV:
+        :type TolV: float
+        :param F: default value is Extrema_ExtFlag_MINMAX
+        :type F: Extrema_ExtFlag
+        :param A: default value is Extrema_ExtAlgo_Grad
+        :type A: Extrema_ExtAlgo
+        :rtype: None
+
+        * It calculates all the distances. The function F(u,v)=distance(P,S(u,v)) has an extremum when gradient(F)=0. The algorithm searchs all the zeros inside the definition ranges of the surface. NbU and NbV are used to locate the close points to find the zeros. They must be great enough such that if there is N extrema, there will be N extrema between P and the grid. TolU et TolV are used to determine the conditions to stop the iterations; at the iteration number n: (Un - Un-1) < TolU and (Vn - Vn-1) < TolV .
+
+        :param P:
+        :type P: gp_Pnt
+        :param S:
+        :type S: Adaptor3d_Surface &
+        :param NbU:
+        :type NbU: Standard_Integer
+        :param NbV:
+        :type NbV: Standard_Integer
+        :param Umin:
+        :type Umin: float
+        :param Usup:
+        :type Usup: float
+        :param Vmin:
+        :type Vmin: float
+        :param Vsup:
+        :type Vsup: float
+        :param TolU:
+        :type TolU: float
+        :param TolV:
+        :type TolV: float
+        :param F: default value is Extrema_ExtFlag_MINMAX
+        :type F: Extrema_ExtFlag
+        :param A: default value is Extrema_ExtAlgo_Grad
+        :type A: Extrema_ExtAlgo
+        :rtype: None
+
+        * It calculates all the distances. The function F(u,v)=distance(P,S(u,v)) has an extremum when gradient(F)=0. The algorithm searchs all the zeros inside the definition ranges of the surface. NbU and NbV are used to locate the close points to find the zeros. They must be great enough such that if there is N extrema, there will be N extrema between P and the grid. TolU et TolV are used to determine the conditions to stop the iterations; at the iteration number n: (Un - Un-1) < TolU and (Vn - Vn-1) < TolV .
+
+        :param P:
+        :type P: gp_Pnt
+        :param S:
+        :type S: Adaptor3d_Surface &
+        :param NbU:
+        :type NbU: Standard_Integer
+        :param NbV:
+        :type NbV: Standard_Integer
         :param Umin:
         :type Umin: float
         :param Usup:
@@ -8823,14 +9385,14 @@ class Extrema_GenExtPS(object):
 
         """
         _Extrema.Extrema_GenExtPS_swiginit(self,_Extrema.new_Extrema_GenExtPS(*args))
-    def Initialize(self, *args) -> "void" :
+    def Initialize(self, *args):
         """
         :param S:
         :type S: Adaptor3d_Surface &
         :param NbU:
-        :type NbU: int
+        :type NbU: Standard_Integer
         :param NbV:
-        :type NbV: int
+        :type NbV: Standard_Integer
         :param TolU:
         :type TolU: float
         :param TolV:
@@ -8840,9 +9402,9 @@ class Extrema_GenExtPS(object):
         :param S:
         :type S: Adaptor3d_Surface &
         :param NbU:
-        :type NbU: int
+        :type NbU: Standard_Integer
         :param NbV:
-        :type NbV: int
+        :type NbV: Standard_Integer
         :param Umin:
         :type Umin: float
         :param Usup:
@@ -8860,7 +9422,7 @@ class Extrema_GenExtPS(object):
         """
         return _Extrema.Extrema_GenExtPS_Initialize(self, *args)
 
-    def Perform(self, *args) -> "void" :
+    def Perform(self, *args):
         """
         * the algorithm is done with the point P. An exception is raised if the fields have not been initialized.
 
@@ -8871,7 +9433,7 @@ class Extrema_GenExtPS(object):
         """
         return _Extrema.Extrema_GenExtPS_Perform(self, *args)
 
-    def SetFlag(self, *args) -> "void" :
+    def SetFlag(self, *args):
         """
         :param F:
         :type F: Extrema_ExtFlag
@@ -8880,7 +9442,7 @@ class Extrema_GenExtPS(object):
         """
         return _Extrema.Extrema_GenExtPS_SetFlag(self, *args)
 
-    def SetAlgo(self, *args) -> "void" :
+    def SetAlgo(self, *args):
         """
         :param A:
         :type A: Extrema_ExtAlgo
@@ -8889,41 +9451,41 @@ class Extrema_GenExtPS(object):
         """
         return _Extrema.Extrema_GenExtPS_SetAlgo(self, *args)
 
-    def IsDone(self, *args) -> "Standard_Boolean" :
+    def IsDone(self):
         """
         * Returns True if the distances are found.
 
         :rtype: bool
 
         """
-        return _Extrema.Extrema_GenExtPS_IsDone(self, *args)
+        return _Extrema.Extrema_GenExtPS_IsDone(self)
 
-    def NbExt(self, *args) -> "Standard_Integer" :
+    def NbExt(self):
         """
         * Returns the number of extremum distances.
 
         :rtype: int
 
         """
-        return _Extrema.Extrema_GenExtPS_NbExt(self, *args)
+        return _Extrema.Extrema_GenExtPS_NbExt(self)
 
-    def SquareDistance(self, *args) -> "Standard_Real" :
+    def SquareDistance(self, *args):
         """
         * Returns the value of the Nth resulting square distance.
 
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :rtype: float
 
         """
         return _Extrema.Extrema_GenExtPS_SquareDistance(self, *args)
 
-    def Point(self, *args) -> "Extrema_POnSurf const &" :
+    def Point(self, *args):
         """
         * Returns the point of the Nth resulting distance.
 
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :rtype: Extrema_POnSurf
 
         """
@@ -8963,9 +9525,9 @@ class Extrema_GenExtSS(object):
         :param S2:
         :type S2: Adaptor3d_Surface &
         :param NbU:
-        :type NbU: int
+        :type NbU: Standard_Integer
         :param NbV:
-        :type NbV: int
+        :type NbV: Standard_Integer
         :param Tol1:
         :type Tol1: float
         :param Tol2:
@@ -8979,9 +9541,9 @@ class Extrema_GenExtSS(object):
         :param S2:
         :type S2: Adaptor3d_Surface &
         :param NbU:
-        :type NbU: int
+        :type NbU: Standard_Integer
         :param NbV:
-        :type NbV: int
+        :type NbV: Standard_Integer
         :param U1min:
         :type U1min: float
         :param U1sup:
@@ -9006,14 +9568,14 @@ class Extrema_GenExtSS(object):
 
         """
         _Extrema.Extrema_GenExtSS_swiginit(self,_Extrema.new_Extrema_GenExtSS(*args))
-    def Initialize(self, *args) -> "void" :
+    def Initialize(self, *args):
         """
         :param S2:
         :type S2: Adaptor3d_Surface &
         :param NbU:
-        :type NbU: int
+        :type NbU: Standard_Integer
         :param NbV:
-        :type NbV: int
+        :type NbV: Standard_Integer
         :param Tol2:
         :type Tol2: float
         :rtype: None
@@ -9021,9 +9583,9 @@ class Extrema_GenExtSS(object):
         :param S2:
         :type S2: Adaptor3d_Surface &
         :param NbU:
-        :type NbU: int
+        :type NbU: Standard_Integer
         :param NbV:
-        :type NbV: int
+        :type NbV: Standard_Integer
         :param U2min:
         :type U2min: float
         :param U2sup:
@@ -9039,7 +9601,7 @@ class Extrema_GenExtSS(object):
         """
         return _Extrema.Extrema_GenExtSS_Initialize(self, *args)
 
-    def Perform(self, *args) -> "void" :
+    def Perform(self, *args):
         """
         * the algorithm is done with S1 An exception is raised if the fields have not been initialized.
 
@@ -9068,52 +9630,52 @@ class Extrema_GenExtSS(object):
         """
         return _Extrema.Extrema_GenExtSS_Perform(self, *args)
 
-    def IsDone(self, *args) -> "Standard_Boolean" :
+    def IsDone(self):
         """
         * Returns True if the distances are found.
 
         :rtype: bool
 
         """
-        return _Extrema.Extrema_GenExtSS_IsDone(self, *args)
+        return _Extrema.Extrema_GenExtSS_IsDone(self)
 
-    def NbExt(self, *args) -> "Standard_Integer" :
+    def NbExt(self):
         """
         * Returns the number of extremum distances.
 
         :rtype: int
 
         """
-        return _Extrema.Extrema_GenExtSS_NbExt(self, *args)
+        return _Extrema.Extrema_GenExtSS_NbExt(self)
 
-    def SquareDistance(self, *args) -> "Standard_Real" :
+    def SquareDistance(self, *args):
         """
         * Returns the value of the Nth resulting square distance.
 
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :rtype: float
 
         """
         return _Extrema.Extrema_GenExtSS_SquareDistance(self, *args)
 
-    def PointOnS1(self, *args) -> "Extrema_POnSurf const &" :
+    def PointOnS1(self, *args):
         """
         * Returns the point of the Nth resulting distance.
 
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :rtype: Extrema_POnSurf
 
         """
         return _Extrema.Extrema_GenExtSS_PointOnS1(self, *args)
 
-    def PointOnS2(self, *args) -> "Extrema_POnSurf const &" :
+    def PointOnS2(self, *args):
         """
         * Returns the point of the Nth resulting distance.
 
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :rtype: Extrema_POnSurf
 
         """
@@ -9165,7 +9727,7 @@ class Extrema_GenLocateExtCS(object):
 
         """
         _Extrema.Extrema_GenLocateExtCS_swiginit(self,_Extrema.new_Extrema_GenLocateExtCS(*args))
-    def Perform(self, *args) -> "void" :
+    def Perform(self, *args):
         """
         :param C:
         :type C: Adaptor3d_Curve &
@@ -9186,41 +9748,41 @@ class Extrema_GenLocateExtCS(object):
         """
         return _Extrema.Extrema_GenLocateExtCS_Perform(self, *args)
 
-    def IsDone(self, *args) -> "Standard_Boolean" :
+    def IsDone(self):
         """
         * Returns True if the distance is found.
 
         :rtype: bool
 
         """
-        return _Extrema.Extrema_GenLocateExtCS_IsDone(self, *args)
+        return _Extrema.Extrema_GenLocateExtCS_IsDone(self)
 
-    def SquareDistance(self, *args) -> "Standard_Real" :
+    def SquareDistance(self):
         """
         * Returns the value of the extremum square distance.
 
         :rtype: float
 
         """
-        return _Extrema.Extrema_GenLocateExtCS_SquareDistance(self, *args)
+        return _Extrema.Extrema_GenLocateExtCS_SquareDistance(self)
 
-    def PointOnCurve(self, *args) -> "Extrema_POnCurv const &" :
+    def PointOnCurve(self):
         """
         * Returns the point of the extremum distance on C.
 
         :rtype: Extrema_POnCurv
 
         """
-        return _Extrema.Extrema_GenLocateExtCS_PointOnCurve(self, *args)
+        return _Extrema.Extrema_GenLocateExtCS_PointOnCurve(self)
 
-    def PointOnSurface(self, *args) -> "Extrema_POnSurf const &" :
+    def PointOnSurface(self):
         """
         * Returns the point of the extremum distance on S.
 
         :rtype: Extrema_POnSurf
 
         """
-        return _Extrema.Extrema_GenLocateExtCS_PointOnSurface(self, *args)
+        return _Extrema.Extrema_GenLocateExtCS_PointOnSurface(self)
 
     def __del__(self):
     	try:
@@ -9264,32 +9826,32 @@ class Extrema_GenLocateExtPS(object):
 
         """
         _Extrema.Extrema_GenLocateExtPS_swiginit(self,_Extrema.new_Extrema_GenLocateExtPS(*args))
-    def IsDone(self, *args) -> "Standard_Boolean" :
+    def IsDone(self):
         """
         * Returns True if the distance is found.
 
         :rtype: bool
 
         """
-        return _Extrema.Extrema_GenLocateExtPS_IsDone(self, *args)
+        return _Extrema.Extrema_GenLocateExtPS_IsDone(self)
 
-    def SquareDistance(self, *args) -> "Standard_Real" :
+    def SquareDistance(self):
         """
         * Returns the value of the extremum square distance.
 
         :rtype: float
 
         """
-        return _Extrema.Extrema_GenLocateExtPS_SquareDistance(self, *args)
+        return _Extrema.Extrema_GenLocateExtPS_SquareDistance(self)
 
-    def Point(self, *args) -> "Extrema_POnSurf const &" :
+    def Point(self):
         """
         * Returns the point of the extremum distance.
 
         :rtype: Extrema_POnSurf
 
         """
-        return _Extrema.Extrema_GenLocateExtPS_Point(self, *args)
+        return _Extrema.Extrema_GenLocateExtPS_Point(self)
 
     def __del__(self):
     	try:
@@ -9335,7 +9897,7 @@ class Extrema_GenLocateExtSS(object):
 
         """
         _Extrema.Extrema_GenLocateExtSS_swiginit(self,_Extrema.new_Extrema_GenLocateExtSS(*args))
-    def Perform(self, *args) -> "void" :
+    def Perform(self, *args):
         """
         :param S1:
         :type S1: Adaptor3d_Surface &
@@ -9358,41 +9920,41 @@ class Extrema_GenLocateExtSS(object):
         """
         return _Extrema.Extrema_GenLocateExtSS_Perform(self, *args)
 
-    def IsDone(self, *args) -> "Standard_Boolean" :
+    def IsDone(self):
         """
         * Returns True if the distance is found.
 
         :rtype: bool
 
         """
-        return _Extrema.Extrema_GenLocateExtSS_IsDone(self, *args)
+        return _Extrema.Extrema_GenLocateExtSS_IsDone(self)
 
-    def SquareDistance(self, *args) -> "Standard_Real" :
+    def SquareDistance(self):
         """
         * Returns the value of the extremum square distance.
 
         :rtype: float
 
         """
-        return _Extrema.Extrema_GenLocateExtSS_SquareDistance(self, *args)
+        return _Extrema.Extrema_GenLocateExtSS_SquareDistance(self)
 
-    def PointOnS1(self, *args) -> "Extrema_POnSurf const &" :
+    def PointOnS1(self):
         """
         * Returns the point of the extremum distance on S1.
 
         :rtype: Extrema_POnSurf
 
         """
-        return _Extrema.Extrema_GenLocateExtSS_PointOnS1(self, *args)
+        return _Extrema.Extrema_GenLocateExtSS_PointOnS1(self)
 
-    def PointOnS2(self, *args) -> "Extrema_POnSurf const &" :
+    def PointOnS2(self):
         """
         * Returns the point of the extremum distance on S2.
 
         :rtype: Extrema_POnSurf
 
         """
-        return _Extrema.Extrema_GenLocateExtSS_PointOnS2(self, *args)
+        return _Extrema.Extrema_GenLocateExtSS_PointOnS2(self)
 
     def __del__(self):
     	try:
@@ -9417,22 +9979,22 @@ class Extrema_HArray1OfPOnCurv(OCC.MMgt.MMgt_TShared):
     def __init__(self, *args): 
         """
         :param Low:
-        :type Low: int
+        :type Low: Standard_Integer
         :param Up:
-        :type Up: int
+        :type Up: Standard_Integer
         :rtype: None
 
         :param Low:
-        :type Low: int
+        :type Low: Standard_Integer
         :param Up:
-        :type Up: int
+        :type Up: Standard_Integer
         :param V:
         :type V: Extrema_POnCurv &
         :rtype: None
 
         """
         _Extrema.Extrema_HArray1OfPOnCurv_swiginit(self,_Extrema.new_Extrema_HArray1OfPOnCurv(*args))
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
         :param V:
         :type V: Extrema_POnCurv &
@@ -9441,31 +10003,31 @@ class Extrema_HArray1OfPOnCurv(OCC.MMgt.MMgt_TShared):
         """
         return _Extrema.Extrema_HArray1OfPOnCurv_Init(self, *args)
 
-    def Length(self, *args) -> "Standard_Integer" :
+    def Length(self):
         """
         :rtype: int
 
         """
-        return _Extrema.Extrema_HArray1OfPOnCurv_Length(self, *args)
+        return _Extrema.Extrema_HArray1OfPOnCurv_Length(self)
 
-    def Lower(self, *args) -> "Standard_Integer" :
+    def Lower(self):
         """
         :rtype: int
 
         """
-        return _Extrema.Extrema_HArray1OfPOnCurv_Lower(self, *args)
+        return _Extrema.Extrema_HArray1OfPOnCurv_Lower(self)
 
-    def Upper(self, *args) -> "Standard_Integer" :
+    def Upper(self):
         """
         :rtype: int
 
         """
-        return _Extrema.Extrema_HArray1OfPOnCurv_Upper(self, *args)
+        return _Extrema.Extrema_HArray1OfPOnCurv_Upper(self)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Value:
         :type Value: Extrema_POnCurv &
         :rtype: None
@@ -9473,43 +10035,43 @@ class Extrema_HArray1OfPOnCurv(OCC.MMgt.MMgt_TShared):
         """
         return _Extrema.Extrema_HArray1OfPOnCurv_SetValue(self, *args)
 
-    def Value(self, *args) -> "Extrema_POnCurv const &" :
+    def Value(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Extrema_POnCurv
 
         """
         return _Extrema.Extrema_HArray1OfPOnCurv_Value(self, *args)
 
-    def ChangeValue(self, *args) -> "Extrema_POnCurv &" :
+    def ChangeValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Extrema_POnCurv
 
         """
         return _Extrema.Extrema_HArray1OfPOnCurv_ChangeValue(self, *args)
 
-    def Array1(self, *args) -> "Extrema_Array1OfPOnCurv const &" :
+    def Array1(self):
         """
         :rtype: Extrema_Array1OfPOnCurv
 
         """
-        return _Extrema.Extrema_HArray1OfPOnCurv_Array1(self, *args)
+        return _Extrema.Extrema_HArray1OfPOnCurv_Array1(self)
 
-    def ChangeArray1(self, *args) -> "Extrema_Array1OfPOnCurv &" :
+    def ChangeArray1(self):
         """
         :rtype: Extrema_Array1OfPOnCurv
 
         """
-        return _Extrema.Extrema_HArray1OfPOnCurv_ChangeArray1(self, *args)
+        return _Extrema.Extrema_HArray1OfPOnCurv_ChangeArray1(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Extrema_HArray1OfPOnCurv self)"""
         return _Extrema.Extrema_HArray1OfPOnCurv__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Extrema_HArray1OfPOnCurv" :
+    def GetHandle(self):
         """GetHandle(Extrema_HArray1OfPOnCurv self) -> Handle_Extrema_HArray1OfPOnCurv"""
         return _Extrema.Extrema_HArray1OfPOnCurv_GetHandle(self)
 
@@ -9556,7 +10118,7 @@ Handle_Extrema_HArray1OfPOnCurv._kill_pointed = new_instancemethod(_Extrema.Hand
 Handle_Extrema_HArray1OfPOnCurv_swigregister = _Extrema.Handle_Extrema_HArray1OfPOnCurv_swigregister
 Handle_Extrema_HArray1OfPOnCurv_swigregister(Handle_Extrema_HArray1OfPOnCurv)
 
-def Handle_Extrema_HArray1OfPOnCurv_DownCast(*args) -> "Handle_Extrema_HArray1OfPOnCurv const" :
+def Handle_Extrema_HArray1OfPOnCurv_DownCast(*args):
   return _Extrema.Handle_Extrema_HArray1OfPOnCurv_DownCast(*args)
 Handle_Extrema_HArray1OfPOnCurv_DownCast = _Extrema.Handle_Extrema_HArray1OfPOnCurv_DownCast
 
@@ -9566,22 +10128,22 @@ class Extrema_HArray1OfPOnCurv2d(OCC.MMgt.MMgt_TShared):
     def __init__(self, *args): 
         """
         :param Low:
-        :type Low: int
+        :type Low: Standard_Integer
         :param Up:
-        :type Up: int
+        :type Up: Standard_Integer
         :rtype: None
 
         :param Low:
-        :type Low: int
+        :type Low: Standard_Integer
         :param Up:
-        :type Up: int
+        :type Up: Standard_Integer
         :param V:
         :type V: Extrema_POnCurv2d &
         :rtype: None
 
         """
         _Extrema.Extrema_HArray1OfPOnCurv2d_swiginit(self,_Extrema.new_Extrema_HArray1OfPOnCurv2d(*args))
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
         :param V:
         :type V: Extrema_POnCurv2d &
@@ -9590,31 +10152,31 @@ class Extrema_HArray1OfPOnCurv2d(OCC.MMgt.MMgt_TShared):
         """
         return _Extrema.Extrema_HArray1OfPOnCurv2d_Init(self, *args)
 
-    def Length(self, *args) -> "Standard_Integer" :
+    def Length(self):
         """
         :rtype: int
 
         """
-        return _Extrema.Extrema_HArray1OfPOnCurv2d_Length(self, *args)
+        return _Extrema.Extrema_HArray1OfPOnCurv2d_Length(self)
 
-    def Lower(self, *args) -> "Standard_Integer" :
+    def Lower(self):
         """
         :rtype: int
 
         """
-        return _Extrema.Extrema_HArray1OfPOnCurv2d_Lower(self, *args)
+        return _Extrema.Extrema_HArray1OfPOnCurv2d_Lower(self)
 
-    def Upper(self, *args) -> "Standard_Integer" :
+    def Upper(self):
         """
         :rtype: int
 
         """
-        return _Extrema.Extrema_HArray1OfPOnCurv2d_Upper(self, *args)
+        return _Extrema.Extrema_HArray1OfPOnCurv2d_Upper(self)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Value:
         :type Value: Extrema_POnCurv2d &
         :rtype: None
@@ -9622,43 +10184,43 @@ class Extrema_HArray1OfPOnCurv2d(OCC.MMgt.MMgt_TShared):
         """
         return _Extrema.Extrema_HArray1OfPOnCurv2d_SetValue(self, *args)
 
-    def Value(self, *args) -> "Extrema_POnCurv2d const &" :
+    def Value(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Extrema_POnCurv2d
 
         """
         return _Extrema.Extrema_HArray1OfPOnCurv2d_Value(self, *args)
 
-    def ChangeValue(self, *args) -> "Extrema_POnCurv2d &" :
+    def ChangeValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Extrema_POnCurv2d
 
         """
         return _Extrema.Extrema_HArray1OfPOnCurv2d_ChangeValue(self, *args)
 
-    def Array1(self, *args) -> "Extrema_Array1OfPOnCurv2d const &" :
+    def Array1(self):
         """
         :rtype: Extrema_Array1OfPOnCurv2d
 
         """
-        return _Extrema.Extrema_HArray1OfPOnCurv2d_Array1(self, *args)
+        return _Extrema.Extrema_HArray1OfPOnCurv2d_Array1(self)
 
-    def ChangeArray1(self, *args) -> "Extrema_Array1OfPOnCurv2d &" :
+    def ChangeArray1(self):
         """
         :rtype: Extrema_Array1OfPOnCurv2d
 
         """
-        return _Extrema.Extrema_HArray1OfPOnCurv2d_ChangeArray1(self, *args)
+        return _Extrema.Extrema_HArray1OfPOnCurv2d_ChangeArray1(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Extrema_HArray1OfPOnCurv2d self)"""
         return _Extrema.Extrema_HArray1OfPOnCurv2d__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Extrema_HArray1OfPOnCurv2d" :
+    def GetHandle(self):
         """GetHandle(Extrema_HArray1OfPOnCurv2d self) -> Handle_Extrema_HArray1OfPOnCurv2d"""
         return _Extrema.Extrema_HArray1OfPOnCurv2d_GetHandle(self)
 
@@ -9705,7 +10267,7 @@ Handle_Extrema_HArray1OfPOnCurv2d._kill_pointed = new_instancemethod(_Extrema.Ha
 Handle_Extrema_HArray1OfPOnCurv2d_swigregister = _Extrema.Handle_Extrema_HArray1OfPOnCurv2d_swigregister
 Handle_Extrema_HArray1OfPOnCurv2d_swigregister(Handle_Extrema_HArray1OfPOnCurv2d)
 
-def Handle_Extrema_HArray1OfPOnCurv2d_DownCast(*args) -> "Handle_Extrema_HArray1OfPOnCurv2d const" :
+def Handle_Extrema_HArray1OfPOnCurv2d_DownCast(*args):
   return _Extrema.Handle_Extrema_HArray1OfPOnCurv2d_DownCast(*args)
 Handle_Extrema_HArray1OfPOnCurv2d_DownCast = _Extrema.Handle_Extrema_HArray1OfPOnCurv2d_DownCast
 
@@ -9715,22 +10277,22 @@ class Extrema_HArray1OfPOnSurf(OCC.MMgt.MMgt_TShared):
     def __init__(self, *args): 
         """
         :param Low:
-        :type Low: int
+        :type Low: Standard_Integer
         :param Up:
-        :type Up: int
+        :type Up: Standard_Integer
         :rtype: None
 
         :param Low:
-        :type Low: int
+        :type Low: Standard_Integer
         :param Up:
-        :type Up: int
+        :type Up: Standard_Integer
         :param V:
         :type V: Extrema_POnSurf &
         :rtype: None
 
         """
         _Extrema.Extrema_HArray1OfPOnSurf_swiginit(self,_Extrema.new_Extrema_HArray1OfPOnSurf(*args))
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
         :param V:
         :type V: Extrema_POnSurf &
@@ -9739,31 +10301,31 @@ class Extrema_HArray1OfPOnSurf(OCC.MMgt.MMgt_TShared):
         """
         return _Extrema.Extrema_HArray1OfPOnSurf_Init(self, *args)
 
-    def Length(self, *args) -> "Standard_Integer" :
+    def Length(self):
         """
         :rtype: int
 
         """
-        return _Extrema.Extrema_HArray1OfPOnSurf_Length(self, *args)
+        return _Extrema.Extrema_HArray1OfPOnSurf_Length(self)
 
-    def Lower(self, *args) -> "Standard_Integer" :
+    def Lower(self):
         """
         :rtype: int
 
         """
-        return _Extrema.Extrema_HArray1OfPOnSurf_Lower(self, *args)
+        return _Extrema.Extrema_HArray1OfPOnSurf_Lower(self)
 
-    def Upper(self, *args) -> "Standard_Integer" :
+    def Upper(self):
         """
         :rtype: int
 
         """
-        return _Extrema.Extrema_HArray1OfPOnSurf_Upper(self, *args)
+        return _Extrema.Extrema_HArray1OfPOnSurf_Upper(self)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Value:
         :type Value: Extrema_POnSurf &
         :rtype: None
@@ -9771,43 +10333,43 @@ class Extrema_HArray1OfPOnSurf(OCC.MMgt.MMgt_TShared):
         """
         return _Extrema.Extrema_HArray1OfPOnSurf_SetValue(self, *args)
 
-    def Value(self, *args) -> "Extrema_POnSurf const &" :
+    def Value(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Extrema_POnSurf
 
         """
         return _Extrema.Extrema_HArray1OfPOnSurf_Value(self, *args)
 
-    def ChangeValue(self, *args) -> "Extrema_POnSurf &" :
+    def ChangeValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Extrema_POnSurf
 
         """
         return _Extrema.Extrema_HArray1OfPOnSurf_ChangeValue(self, *args)
 
-    def Array1(self, *args) -> "Extrema_Array1OfPOnSurf const &" :
+    def Array1(self):
         """
         :rtype: Extrema_Array1OfPOnSurf
 
         """
-        return _Extrema.Extrema_HArray1OfPOnSurf_Array1(self, *args)
+        return _Extrema.Extrema_HArray1OfPOnSurf_Array1(self)
 
-    def ChangeArray1(self, *args) -> "Extrema_Array1OfPOnSurf &" :
+    def ChangeArray1(self):
         """
         :rtype: Extrema_Array1OfPOnSurf
 
         """
-        return _Extrema.Extrema_HArray1OfPOnSurf_ChangeArray1(self, *args)
+        return _Extrema.Extrema_HArray1OfPOnSurf_ChangeArray1(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Extrema_HArray1OfPOnSurf self)"""
         return _Extrema.Extrema_HArray1OfPOnSurf__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Extrema_HArray1OfPOnSurf" :
+    def GetHandle(self):
         """GetHandle(Extrema_HArray1OfPOnSurf self) -> Handle_Extrema_HArray1OfPOnSurf"""
         return _Extrema.Extrema_HArray1OfPOnSurf_GetHandle(self)
 
@@ -9854,7 +10416,7 @@ Handle_Extrema_HArray1OfPOnSurf._kill_pointed = new_instancemethod(_Extrema.Hand
 Handle_Extrema_HArray1OfPOnSurf_swigregister = _Extrema.Handle_Extrema_HArray1OfPOnSurf_swigregister
 Handle_Extrema_HArray1OfPOnSurf_swigregister(Handle_Extrema_HArray1OfPOnSurf)
 
-def Handle_Extrema_HArray1OfPOnSurf_DownCast(*args) -> "Handle_Extrema_HArray1OfPOnSurf const" :
+def Handle_Extrema_HArray1OfPOnSurf_DownCast(*args):
   return _Extrema.Handle_Extrema_HArray1OfPOnSurf_DownCast(*args)
 Handle_Extrema_HArray1OfPOnSurf_DownCast = _Extrema.Handle_Extrema_HArray1OfPOnSurf_DownCast
 
@@ -9864,30 +10426,30 @@ class Extrema_HArray2OfPOnCurv(OCC.MMgt.MMgt_TShared):
     def __init__(self, *args): 
         """
         :param R1:
-        :type R1: int
+        :type R1: Standard_Integer
         :param R2:
-        :type R2: int
+        :type R2: Standard_Integer
         :param C1:
-        :type C1: int
+        :type C1: Standard_Integer
         :param C2:
-        :type C2: int
+        :type C2: Standard_Integer
         :rtype: None
 
         :param R1:
-        :type R1: int
+        :type R1: Standard_Integer
         :param R2:
-        :type R2: int
+        :type R2: Standard_Integer
         :param C1:
-        :type C1: int
+        :type C1: Standard_Integer
         :param C2:
-        :type C2: int
+        :type C2: Standard_Integer
         :param V:
         :type V: Extrema_POnCurv &
         :rtype: None
 
         """
         _Extrema.Extrema_HArray2OfPOnCurv_swiginit(self,_Extrema.new_Extrema_HArray2OfPOnCurv(*args))
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
         :param V:
         :type V: Extrema_POnCurv &
@@ -9896,54 +10458,54 @@ class Extrema_HArray2OfPOnCurv(OCC.MMgt.MMgt_TShared):
         """
         return _Extrema.Extrema_HArray2OfPOnCurv_Init(self, *args)
 
-    def ColLength(self, *args) -> "Standard_Integer" :
+    def ColLength(self):
         """
         :rtype: int
 
         """
-        return _Extrema.Extrema_HArray2OfPOnCurv_ColLength(self, *args)
+        return _Extrema.Extrema_HArray2OfPOnCurv_ColLength(self)
 
-    def RowLength(self, *args) -> "Standard_Integer" :
+    def RowLength(self):
         """
         :rtype: int
 
         """
-        return _Extrema.Extrema_HArray2OfPOnCurv_RowLength(self, *args)
+        return _Extrema.Extrema_HArray2OfPOnCurv_RowLength(self)
 
-    def LowerCol(self, *args) -> "Standard_Integer" :
+    def LowerCol(self):
         """
         :rtype: int
 
         """
-        return _Extrema.Extrema_HArray2OfPOnCurv_LowerCol(self, *args)
+        return _Extrema.Extrema_HArray2OfPOnCurv_LowerCol(self)
 
-    def LowerRow(self, *args) -> "Standard_Integer" :
+    def LowerRow(self):
         """
         :rtype: int
 
         """
-        return _Extrema.Extrema_HArray2OfPOnCurv_LowerRow(self, *args)
+        return _Extrema.Extrema_HArray2OfPOnCurv_LowerRow(self)
 
-    def UpperCol(self, *args) -> "Standard_Integer" :
+    def UpperCol(self):
         """
         :rtype: int
 
         """
-        return _Extrema.Extrema_HArray2OfPOnCurv_UpperCol(self, *args)
+        return _Extrema.Extrema_HArray2OfPOnCurv_UpperCol(self)
 
-    def UpperRow(self, *args) -> "Standard_Integer" :
+    def UpperRow(self):
         """
         :rtype: int
 
         """
-        return _Extrema.Extrema_HArray2OfPOnCurv_UpperRow(self, *args)
+        return _Extrema.Extrema_HArray2OfPOnCurv_UpperRow(self)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Row:
-        :type Row: int
+        :type Row: Standard_Integer
         :param Col:
-        :type Col: int
+        :type Col: Standard_Integer
         :param Value:
         :type Value: Extrema_POnCurv &
         :rtype: None
@@ -9951,47 +10513,47 @@ class Extrema_HArray2OfPOnCurv(OCC.MMgt.MMgt_TShared):
         """
         return _Extrema.Extrema_HArray2OfPOnCurv_SetValue(self, *args)
 
-    def Value(self, *args) -> "Extrema_POnCurv const &" :
+    def Value(self, *args):
         """
         :param Row:
-        :type Row: int
+        :type Row: Standard_Integer
         :param Col:
-        :type Col: int
+        :type Col: Standard_Integer
         :rtype: Extrema_POnCurv
 
         """
         return _Extrema.Extrema_HArray2OfPOnCurv_Value(self, *args)
 
-    def ChangeValue(self, *args) -> "Extrema_POnCurv &" :
+    def ChangeValue(self, *args):
         """
         :param Row:
-        :type Row: int
+        :type Row: Standard_Integer
         :param Col:
-        :type Col: int
+        :type Col: Standard_Integer
         :rtype: Extrema_POnCurv
 
         """
         return _Extrema.Extrema_HArray2OfPOnCurv_ChangeValue(self, *args)
 
-    def Array2(self, *args) -> "Extrema_Array2OfPOnCurv const &" :
+    def Array2(self):
         """
         :rtype: Extrema_Array2OfPOnCurv
 
         """
-        return _Extrema.Extrema_HArray2OfPOnCurv_Array2(self, *args)
+        return _Extrema.Extrema_HArray2OfPOnCurv_Array2(self)
 
-    def ChangeArray2(self, *args) -> "Extrema_Array2OfPOnCurv &" :
+    def ChangeArray2(self):
         """
         :rtype: Extrema_Array2OfPOnCurv
 
         """
-        return _Extrema.Extrema_HArray2OfPOnCurv_ChangeArray2(self, *args)
+        return _Extrema.Extrema_HArray2OfPOnCurv_ChangeArray2(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Extrema_HArray2OfPOnCurv self)"""
         return _Extrema.Extrema_HArray2OfPOnCurv__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Extrema_HArray2OfPOnCurv" :
+    def GetHandle(self):
         """GetHandle(Extrema_HArray2OfPOnCurv self) -> Handle_Extrema_HArray2OfPOnCurv"""
         return _Extrema.Extrema_HArray2OfPOnCurv_GetHandle(self)
 
@@ -10041,7 +10603,7 @@ Handle_Extrema_HArray2OfPOnCurv._kill_pointed = new_instancemethod(_Extrema.Hand
 Handle_Extrema_HArray2OfPOnCurv_swigregister = _Extrema.Handle_Extrema_HArray2OfPOnCurv_swigregister
 Handle_Extrema_HArray2OfPOnCurv_swigregister(Handle_Extrema_HArray2OfPOnCurv)
 
-def Handle_Extrema_HArray2OfPOnCurv_DownCast(*args) -> "Handle_Extrema_HArray2OfPOnCurv const" :
+def Handle_Extrema_HArray2OfPOnCurv_DownCast(*args):
   return _Extrema.Handle_Extrema_HArray2OfPOnCurv_DownCast(*args)
 Handle_Extrema_HArray2OfPOnCurv_DownCast = _Extrema.Handle_Extrema_HArray2OfPOnCurv_DownCast
 
@@ -10051,30 +10613,30 @@ class Extrema_HArray2OfPOnCurv2d(OCC.MMgt.MMgt_TShared):
     def __init__(self, *args): 
         """
         :param R1:
-        :type R1: int
+        :type R1: Standard_Integer
         :param R2:
-        :type R2: int
+        :type R2: Standard_Integer
         :param C1:
-        :type C1: int
+        :type C1: Standard_Integer
         :param C2:
-        :type C2: int
+        :type C2: Standard_Integer
         :rtype: None
 
         :param R1:
-        :type R1: int
+        :type R1: Standard_Integer
         :param R2:
-        :type R2: int
+        :type R2: Standard_Integer
         :param C1:
-        :type C1: int
+        :type C1: Standard_Integer
         :param C2:
-        :type C2: int
+        :type C2: Standard_Integer
         :param V:
         :type V: Extrema_POnCurv2d &
         :rtype: None
 
         """
         _Extrema.Extrema_HArray2OfPOnCurv2d_swiginit(self,_Extrema.new_Extrema_HArray2OfPOnCurv2d(*args))
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
         :param V:
         :type V: Extrema_POnCurv2d &
@@ -10083,54 +10645,54 @@ class Extrema_HArray2OfPOnCurv2d(OCC.MMgt.MMgt_TShared):
         """
         return _Extrema.Extrema_HArray2OfPOnCurv2d_Init(self, *args)
 
-    def ColLength(self, *args) -> "Standard_Integer" :
+    def ColLength(self):
         """
         :rtype: int
 
         """
-        return _Extrema.Extrema_HArray2OfPOnCurv2d_ColLength(self, *args)
+        return _Extrema.Extrema_HArray2OfPOnCurv2d_ColLength(self)
 
-    def RowLength(self, *args) -> "Standard_Integer" :
+    def RowLength(self):
         """
         :rtype: int
 
         """
-        return _Extrema.Extrema_HArray2OfPOnCurv2d_RowLength(self, *args)
+        return _Extrema.Extrema_HArray2OfPOnCurv2d_RowLength(self)
 
-    def LowerCol(self, *args) -> "Standard_Integer" :
+    def LowerCol(self):
         """
         :rtype: int
 
         """
-        return _Extrema.Extrema_HArray2OfPOnCurv2d_LowerCol(self, *args)
+        return _Extrema.Extrema_HArray2OfPOnCurv2d_LowerCol(self)
 
-    def LowerRow(self, *args) -> "Standard_Integer" :
+    def LowerRow(self):
         """
         :rtype: int
 
         """
-        return _Extrema.Extrema_HArray2OfPOnCurv2d_LowerRow(self, *args)
+        return _Extrema.Extrema_HArray2OfPOnCurv2d_LowerRow(self)
 
-    def UpperCol(self, *args) -> "Standard_Integer" :
+    def UpperCol(self):
         """
         :rtype: int
 
         """
-        return _Extrema.Extrema_HArray2OfPOnCurv2d_UpperCol(self, *args)
+        return _Extrema.Extrema_HArray2OfPOnCurv2d_UpperCol(self)
 
-    def UpperRow(self, *args) -> "Standard_Integer" :
+    def UpperRow(self):
         """
         :rtype: int
 
         """
-        return _Extrema.Extrema_HArray2OfPOnCurv2d_UpperRow(self, *args)
+        return _Extrema.Extrema_HArray2OfPOnCurv2d_UpperRow(self)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Row:
-        :type Row: int
+        :type Row: Standard_Integer
         :param Col:
-        :type Col: int
+        :type Col: Standard_Integer
         :param Value:
         :type Value: Extrema_POnCurv2d &
         :rtype: None
@@ -10138,47 +10700,47 @@ class Extrema_HArray2OfPOnCurv2d(OCC.MMgt.MMgt_TShared):
         """
         return _Extrema.Extrema_HArray2OfPOnCurv2d_SetValue(self, *args)
 
-    def Value(self, *args) -> "Extrema_POnCurv2d const &" :
+    def Value(self, *args):
         """
         :param Row:
-        :type Row: int
+        :type Row: Standard_Integer
         :param Col:
-        :type Col: int
+        :type Col: Standard_Integer
         :rtype: Extrema_POnCurv2d
 
         """
         return _Extrema.Extrema_HArray2OfPOnCurv2d_Value(self, *args)
 
-    def ChangeValue(self, *args) -> "Extrema_POnCurv2d &" :
+    def ChangeValue(self, *args):
         """
         :param Row:
-        :type Row: int
+        :type Row: Standard_Integer
         :param Col:
-        :type Col: int
+        :type Col: Standard_Integer
         :rtype: Extrema_POnCurv2d
 
         """
         return _Extrema.Extrema_HArray2OfPOnCurv2d_ChangeValue(self, *args)
 
-    def Array2(self, *args) -> "Extrema_Array2OfPOnCurv2d const &" :
+    def Array2(self):
         """
         :rtype: Extrema_Array2OfPOnCurv2d
 
         """
-        return _Extrema.Extrema_HArray2OfPOnCurv2d_Array2(self, *args)
+        return _Extrema.Extrema_HArray2OfPOnCurv2d_Array2(self)
 
-    def ChangeArray2(self, *args) -> "Extrema_Array2OfPOnCurv2d &" :
+    def ChangeArray2(self):
         """
         :rtype: Extrema_Array2OfPOnCurv2d
 
         """
-        return _Extrema.Extrema_HArray2OfPOnCurv2d_ChangeArray2(self, *args)
+        return _Extrema.Extrema_HArray2OfPOnCurv2d_ChangeArray2(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Extrema_HArray2OfPOnCurv2d self)"""
         return _Extrema.Extrema_HArray2OfPOnCurv2d__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Extrema_HArray2OfPOnCurv2d" :
+    def GetHandle(self):
         """GetHandle(Extrema_HArray2OfPOnCurv2d self) -> Handle_Extrema_HArray2OfPOnCurv2d"""
         return _Extrema.Extrema_HArray2OfPOnCurv2d_GetHandle(self)
 
@@ -10228,7 +10790,7 @@ Handle_Extrema_HArray2OfPOnCurv2d._kill_pointed = new_instancemethod(_Extrema.Ha
 Handle_Extrema_HArray2OfPOnCurv2d_swigregister = _Extrema.Handle_Extrema_HArray2OfPOnCurv2d_swigregister
 Handle_Extrema_HArray2OfPOnCurv2d_swigregister(Handle_Extrema_HArray2OfPOnCurv2d)
 
-def Handle_Extrema_HArray2OfPOnCurv2d_DownCast(*args) -> "Handle_Extrema_HArray2OfPOnCurv2d const" :
+def Handle_Extrema_HArray2OfPOnCurv2d_DownCast(*args):
   return _Extrema.Handle_Extrema_HArray2OfPOnCurv2d_DownCast(*args)
 Handle_Extrema_HArray2OfPOnCurv2d_DownCast = _Extrema.Handle_Extrema_HArray2OfPOnCurv2d_DownCast
 
@@ -10238,30 +10800,30 @@ class Extrema_HArray2OfPOnSurf(OCC.MMgt.MMgt_TShared):
     def __init__(self, *args): 
         """
         :param R1:
-        :type R1: int
+        :type R1: Standard_Integer
         :param R2:
-        :type R2: int
+        :type R2: Standard_Integer
         :param C1:
-        :type C1: int
+        :type C1: Standard_Integer
         :param C2:
-        :type C2: int
+        :type C2: Standard_Integer
         :rtype: None
 
         :param R1:
-        :type R1: int
+        :type R1: Standard_Integer
         :param R2:
-        :type R2: int
+        :type R2: Standard_Integer
         :param C1:
-        :type C1: int
+        :type C1: Standard_Integer
         :param C2:
-        :type C2: int
+        :type C2: Standard_Integer
         :param V:
         :type V: Extrema_POnSurf &
         :rtype: None
 
         """
         _Extrema.Extrema_HArray2OfPOnSurf_swiginit(self,_Extrema.new_Extrema_HArray2OfPOnSurf(*args))
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
         :param V:
         :type V: Extrema_POnSurf &
@@ -10270,54 +10832,54 @@ class Extrema_HArray2OfPOnSurf(OCC.MMgt.MMgt_TShared):
         """
         return _Extrema.Extrema_HArray2OfPOnSurf_Init(self, *args)
 
-    def ColLength(self, *args) -> "Standard_Integer" :
+    def ColLength(self):
         """
         :rtype: int
 
         """
-        return _Extrema.Extrema_HArray2OfPOnSurf_ColLength(self, *args)
+        return _Extrema.Extrema_HArray2OfPOnSurf_ColLength(self)
 
-    def RowLength(self, *args) -> "Standard_Integer" :
+    def RowLength(self):
         """
         :rtype: int
 
         """
-        return _Extrema.Extrema_HArray2OfPOnSurf_RowLength(self, *args)
+        return _Extrema.Extrema_HArray2OfPOnSurf_RowLength(self)
 
-    def LowerCol(self, *args) -> "Standard_Integer" :
+    def LowerCol(self):
         """
         :rtype: int
 
         """
-        return _Extrema.Extrema_HArray2OfPOnSurf_LowerCol(self, *args)
+        return _Extrema.Extrema_HArray2OfPOnSurf_LowerCol(self)
 
-    def LowerRow(self, *args) -> "Standard_Integer" :
+    def LowerRow(self):
         """
         :rtype: int
 
         """
-        return _Extrema.Extrema_HArray2OfPOnSurf_LowerRow(self, *args)
+        return _Extrema.Extrema_HArray2OfPOnSurf_LowerRow(self)
 
-    def UpperCol(self, *args) -> "Standard_Integer" :
+    def UpperCol(self):
         """
         :rtype: int
 
         """
-        return _Extrema.Extrema_HArray2OfPOnSurf_UpperCol(self, *args)
+        return _Extrema.Extrema_HArray2OfPOnSurf_UpperCol(self)
 
-    def UpperRow(self, *args) -> "Standard_Integer" :
+    def UpperRow(self):
         """
         :rtype: int
 
         """
-        return _Extrema.Extrema_HArray2OfPOnSurf_UpperRow(self, *args)
+        return _Extrema.Extrema_HArray2OfPOnSurf_UpperRow(self)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Row:
-        :type Row: int
+        :type Row: Standard_Integer
         :param Col:
-        :type Col: int
+        :type Col: Standard_Integer
         :param Value:
         :type Value: Extrema_POnSurf &
         :rtype: None
@@ -10325,47 +10887,47 @@ class Extrema_HArray2OfPOnSurf(OCC.MMgt.MMgt_TShared):
         """
         return _Extrema.Extrema_HArray2OfPOnSurf_SetValue(self, *args)
 
-    def Value(self, *args) -> "Extrema_POnSurf const &" :
+    def Value(self, *args):
         """
         :param Row:
-        :type Row: int
+        :type Row: Standard_Integer
         :param Col:
-        :type Col: int
+        :type Col: Standard_Integer
         :rtype: Extrema_POnSurf
 
         """
         return _Extrema.Extrema_HArray2OfPOnSurf_Value(self, *args)
 
-    def ChangeValue(self, *args) -> "Extrema_POnSurf &" :
+    def ChangeValue(self, *args):
         """
         :param Row:
-        :type Row: int
+        :type Row: Standard_Integer
         :param Col:
-        :type Col: int
+        :type Col: Standard_Integer
         :rtype: Extrema_POnSurf
 
         """
         return _Extrema.Extrema_HArray2OfPOnSurf_ChangeValue(self, *args)
 
-    def Array2(self, *args) -> "Extrema_Array2OfPOnSurf const &" :
+    def Array2(self):
         """
         :rtype: Extrema_Array2OfPOnSurf
 
         """
-        return _Extrema.Extrema_HArray2OfPOnSurf_Array2(self, *args)
+        return _Extrema.Extrema_HArray2OfPOnSurf_Array2(self)
 
-    def ChangeArray2(self, *args) -> "Extrema_Array2OfPOnSurf &" :
+    def ChangeArray2(self):
         """
         :rtype: Extrema_Array2OfPOnSurf
 
         """
-        return _Extrema.Extrema_HArray2OfPOnSurf_ChangeArray2(self, *args)
+        return _Extrema.Extrema_HArray2OfPOnSurf_ChangeArray2(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Extrema_HArray2OfPOnSurf self)"""
         return _Extrema.Extrema_HArray2OfPOnSurf__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Extrema_HArray2OfPOnSurf" :
+    def GetHandle(self):
         """GetHandle(Extrema_HArray2OfPOnSurf self) -> Handle_Extrema_HArray2OfPOnSurf"""
         return _Extrema.Extrema_HArray2OfPOnSurf_GetHandle(self)
 
@@ -10415,7 +10977,7 @@ Handle_Extrema_HArray2OfPOnSurf._kill_pointed = new_instancemethod(_Extrema.Hand
 Handle_Extrema_HArray2OfPOnSurf_swigregister = _Extrema.Handle_Extrema_HArray2OfPOnSurf_swigregister
 Handle_Extrema_HArray2OfPOnSurf_swigregister(Handle_Extrema_HArray2OfPOnSurf)
 
-def Handle_Extrema_HArray2OfPOnSurf_DownCast(*args) -> "Handle_Extrema_HArray2OfPOnSurf const" :
+def Handle_Extrema_HArray2OfPOnSurf_DownCast(*args):
   return _Extrema.Handle_Extrema_HArray2OfPOnSurf_DownCast(*args)
 Handle_Extrema_HArray2OfPOnSurf_DownCast = _Extrema.Handle_Extrema_HArray2OfPOnSurf_DownCast
 
@@ -10425,30 +10987,30 @@ class Extrema_HArray2OfPOnSurfParams(OCC.MMgt.MMgt_TShared):
     def __init__(self, *args): 
         """
         :param R1:
-        :type R1: int
+        :type R1: Standard_Integer
         :param R2:
-        :type R2: int
+        :type R2: Standard_Integer
         :param C1:
-        :type C1: int
+        :type C1: Standard_Integer
         :param C2:
-        :type C2: int
+        :type C2: Standard_Integer
         :rtype: None
 
         :param R1:
-        :type R1: int
+        :type R1: Standard_Integer
         :param R2:
-        :type R2: int
+        :type R2: Standard_Integer
         :param C1:
-        :type C1: int
+        :type C1: Standard_Integer
         :param C2:
-        :type C2: int
+        :type C2: Standard_Integer
         :param V:
         :type V: Extrema_POnSurfParams &
         :rtype: None
 
         """
         _Extrema.Extrema_HArray2OfPOnSurfParams_swiginit(self,_Extrema.new_Extrema_HArray2OfPOnSurfParams(*args))
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
         :param V:
         :type V: Extrema_POnSurfParams &
@@ -10457,54 +11019,54 @@ class Extrema_HArray2OfPOnSurfParams(OCC.MMgt.MMgt_TShared):
         """
         return _Extrema.Extrema_HArray2OfPOnSurfParams_Init(self, *args)
 
-    def ColLength(self, *args) -> "Standard_Integer" :
+    def ColLength(self):
         """
         :rtype: int
 
         """
-        return _Extrema.Extrema_HArray2OfPOnSurfParams_ColLength(self, *args)
+        return _Extrema.Extrema_HArray2OfPOnSurfParams_ColLength(self)
 
-    def RowLength(self, *args) -> "Standard_Integer" :
+    def RowLength(self):
         """
         :rtype: int
 
         """
-        return _Extrema.Extrema_HArray2OfPOnSurfParams_RowLength(self, *args)
+        return _Extrema.Extrema_HArray2OfPOnSurfParams_RowLength(self)
 
-    def LowerCol(self, *args) -> "Standard_Integer" :
+    def LowerCol(self):
         """
         :rtype: int
 
         """
-        return _Extrema.Extrema_HArray2OfPOnSurfParams_LowerCol(self, *args)
+        return _Extrema.Extrema_HArray2OfPOnSurfParams_LowerCol(self)
 
-    def LowerRow(self, *args) -> "Standard_Integer" :
+    def LowerRow(self):
         """
         :rtype: int
 
         """
-        return _Extrema.Extrema_HArray2OfPOnSurfParams_LowerRow(self, *args)
+        return _Extrema.Extrema_HArray2OfPOnSurfParams_LowerRow(self)
 
-    def UpperCol(self, *args) -> "Standard_Integer" :
+    def UpperCol(self):
         """
         :rtype: int
 
         """
-        return _Extrema.Extrema_HArray2OfPOnSurfParams_UpperCol(self, *args)
+        return _Extrema.Extrema_HArray2OfPOnSurfParams_UpperCol(self)
 
-    def UpperRow(self, *args) -> "Standard_Integer" :
+    def UpperRow(self):
         """
         :rtype: int
 
         """
-        return _Extrema.Extrema_HArray2OfPOnSurfParams_UpperRow(self, *args)
+        return _Extrema.Extrema_HArray2OfPOnSurfParams_UpperRow(self)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Row:
-        :type Row: int
+        :type Row: Standard_Integer
         :param Col:
-        :type Col: int
+        :type Col: Standard_Integer
         :param Value:
         :type Value: Extrema_POnSurfParams &
         :rtype: None
@@ -10512,47 +11074,47 @@ class Extrema_HArray2OfPOnSurfParams(OCC.MMgt.MMgt_TShared):
         """
         return _Extrema.Extrema_HArray2OfPOnSurfParams_SetValue(self, *args)
 
-    def Value(self, *args) -> "Extrema_POnSurfParams const &" :
+    def Value(self, *args):
         """
         :param Row:
-        :type Row: int
+        :type Row: Standard_Integer
         :param Col:
-        :type Col: int
+        :type Col: Standard_Integer
         :rtype: Extrema_POnSurfParams
 
         """
         return _Extrema.Extrema_HArray2OfPOnSurfParams_Value(self, *args)
 
-    def ChangeValue(self, *args) -> "Extrema_POnSurfParams &" :
+    def ChangeValue(self, *args):
         """
         :param Row:
-        :type Row: int
+        :type Row: Standard_Integer
         :param Col:
-        :type Col: int
+        :type Col: Standard_Integer
         :rtype: Extrema_POnSurfParams
 
         """
         return _Extrema.Extrema_HArray2OfPOnSurfParams_ChangeValue(self, *args)
 
-    def Array2(self, *args) -> "Extrema_Array2OfPOnSurfParams const &" :
+    def Array2(self):
         """
         :rtype: Extrema_Array2OfPOnSurfParams
 
         """
-        return _Extrema.Extrema_HArray2OfPOnSurfParams_Array2(self, *args)
+        return _Extrema.Extrema_HArray2OfPOnSurfParams_Array2(self)
 
-    def ChangeArray2(self, *args) -> "Extrema_Array2OfPOnSurfParams &" :
+    def ChangeArray2(self):
         """
         :rtype: Extrema_Array2OfPOnSurfParams
 
         """
-        return _Extrema.Extrema_HArray2OfPOnSurfParams_ChangeArray2(self, *args)
+        return _Extrema.Extrema_HArray2OfPOnSurfParams_ChangeArray2(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Extrema_HArray2OfPOnSurfParams self)"""
         return _Extrema.Extrema_HArray2OfPOnSurfParams__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Extrema_HArray2OfPOnSurfParams" :
+    def GetHandle(self):
         """GetHandle(Extrema_HArray2OfPOnSurfParams self) -> Handle_Extrema_HArray2OfPOnSurfParams"""
         return _Extrema.Extrema_HArray2OfPOnSurfParams_GetHandle(self)
 
@@ -10602,7 +11164,7 @@ Handle_Extrema_HArray2OfPOnSurfParams._kill_pointed = new_instancemethod(_Extrem
 Handle_Extrema_HArray2OfPOnSurfParams_swigregister = _Extrema.Handle_Extrema_HArray2OfPOnSurfParams_swigregister
 Handle_Extrema_HArray2OfPOnSurfParams_swigregister(Handle_Extrema_HArray2OfPOnSurfParams)
 
-def Handle_Extrema_HArray2OfPOnSurfParams_DownCast(*args) -> "Handle_Extrema_HArray2OfPOnSurfParams const" :
+def Handle_Extrema_HArray2OfPOnSurfParams_DownCast(*args):
   return _Extrema.Handle_Extrema_HArray2OfPOnSurfParams_DownCast(*args)
 Handle_Extrema_HArray2OfPOnSurfParams_DownCast = _Extrema.Handle_Extrema_HArray2OfPOnSurfParams_DownCast
 
@@ -10620,7 +11182,7 @@ class Extrema_LCCache2dOfLocateExtCC2d(OCC.Standard.Standard_Transient):
         :param theULast:
         :type theULast: float
         :param theNbSamples:
-        :type theNbSamples: int
+        :type theNbSamples: Standard_Integer
         :param theToCalculate:
         :type theToCalculate: bool
         :rtype: None
@@ -10634,21 +11196,21 @@ class Extrema_LCCache2dOfLocateExtCC2d(OCC.Standard.Standard_Transient):
         :param IntervalsCN:
         :type IntervalsCN: TColStd_Array1OfReal &
         :param StartIndex:
-        :type StartIndex: int
+        :type StartIndex: Standard_Integer
         :param EndIndex:
-        :type EndIndex: int
+        :type EndIndex: Standard_Integer
         :param Coeff:
         :type Coeff: float
         :rtype: None
 
         """
         _Extrema.Extrema_LCCache2dOfLocateExtCC2d_swiginit(self,_Extrema.new_Extrema_LCCache2dOfLocateExtCC2d(*args))
-    def SetCurve(self, *args) -> "void" :
+    def SetCurve(self, *args):
         """
         :param theC:
         :type theC: Adaptor2d_Curve2d &
         :param theNbSamples:
-        :type theNbSamples: int
+        :type theNbSamples: Standard_Integer
         :param theToCalculate:
         :type theToCalculate: bool
         :rtype: None
@@ -10660,7 +11222,7 @@ class Extrema_LCCache2dOfLocateExtCC2d(OCC.Standard.Standard_Transient):
         :param theULast:
         :type theULast: float
         :param theNbSamples:
-        :type theNbSamples: int
+        :type theNbSamples: Standard_Integer
         :param theToCalculate:
         :type theToCalculate: bool
         :rtype: None
@@ -10668,7 +11230,7 @@ class Extrema_LCCache2dOfLocateExtCC2d(OCC.Standard.Standard_Transient):
         """
         return _Extrema.Extrema_LCCache2dOfLocateExtCC2d_SetCurve(self, *args)
 
-    def SetRange(self, *args) -> "void" :
+    def SetRange(self, *args):
         """
         :param Uinf:
         :type Uinf: float
@@ -10681,81 +11243,81 @@ class Extrema_LCCache2dOfLocateExtCC2d(OCC.Standard.Standard_Transient):
         """
         return _Extrema.Extrema_LCCache2dOfLocateExtCC2d_SetRange(self, *args)
 
-    def CalculatePoints(self, *args) -> "void" :
+    def CalculatePoints(self):
         """
         :rtype: None
 
         """
-        return _Extrema.Extrema_LCCache2dOfLocateExtCC2d_CalculatePoints(self, *args)
+        return _Extrema.Extrema_LCCache2dOfLocateExtCC2d_CalculatePoints(self)
 
-    def IsValid(self, *args) -> "Standard_Boolean" :
+    def IsValid(self):
         """
         :rtype: bool
 
         """
-        return _Extrema.Extrema_LCCache2dOfLocateExtCC2d_IsValid(self, *args)
+        return _Extrema.Extrema_LCCache2dOfLocateExtCC2d_IsValid(self)
 
-    def Parameters(self, *args) -> "Handle_TColStd_HArray1OfReal const &" :
+    def Parameters(self):
         """
         :rtype: Handle_TColStd_HArray1OfReal
 
         """
-        return _Extrema.Extrema_LCCache2dOfLocateExtCC2d_Parameters(self, *args)
+        return _Extrema.Extrema_LCCache2dOfLocateExtCC2d_Parameters(self)
 
-    def Points(self, *args) -> "Handle_TColgp_HArray1OfPnt2d const &" :
+    def Points(self):
         """
         :rtype: Handle_TColgp_HArray1OfPnt2d
 
         """
-        return _Extrema.Extrema_LCCache2dOfLocateExtCC2d_Points(self, *args)
+        return _Extrema.Extrema_LCCache2dOfLocateExtCC2d_Points(self)
 
-    def CurvePtr(self, *args) -> "Standard_Address" :
+    def CurvePtr(self):
         """
         :rtype: Standard_Address
 
         """
-        return _Extrema.Extrema_LCCache2dOfLocateExtCC2d_CurvePtr(self, *args)
+        return _Extrema.Extrema_LCCache2dOfLocateExtCC2d_CurvePtr(self)
 
-    def NbSamples(self, *args) -> "Standard_Integer" :
+    def NbSamples(self):
         """
         :rtype: int
 
         """
-        return _Extrema.Extrema_LCCache2dOfLocateExtCC2d_NbSamples(self, *args)
+        return _Extrema.Extrema_LCCache2dOfLocateExtCC2d_NbSamples(self)
 
-    def FirstParameter(self, *args) -> "Standard_Real" :
+    def FirstParameter(self):
         """
         :rtype: float
 
         """
-        return _Extrema.Extrema_LCCache2dOfLocateExtCC2d_FirstParameter(self, *args)
+        return _Extrema.Extrema_LCCache2dOfLocateExtCC2d_FirstParameter(self)
 
-    def LastParameter(self, *args) -> "Standard_Real" :
+    def LastParameter(self):
         """
         :rtype: float
 
         """
-        return _Extrema.Extrema_LCCache2dOfLocateExtCC2d_LastParameter(self, *args)
+        return _Extrema.Extrema_LCCache2dOfLocateExtCC2d_LastParameter(self)
 
-    def TrimFirstParameter(self, *args) -> "Standard_Real" :
+    def TrimFirstParameter(self):
         """
         :rtype: float
 
         """
-        return _Extrema.Extrema_LCCache2dOfLocateExtCC2d_TrimFirstParameter(self, *args)
+        return _Extrema.Extrema_LCCache2dOfLocateExtCC2d_TrimFirstParameter(self)
 
-    def TrimLastParameter(self, *args) -> "Standard_Real" :
+    def TrimLastParameter(self):
         """
         :rtype: float
 
         """
-        return _Extrema.Extrema_LCCache2dOfLocateExtCC2d_TrimLastParameter(self, *args)
+        return _Extrema.Extrema_LCCache2dOfLocateExtCC2d_TrimLastParameter(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Extrema_LCCache2dOfLocateExtCC2d self)"""
         return _Extrema.Extrema_LCCache2dOfLocateExtCC2d__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Extrema_LCCache2dOfLocateExtCC2d" :
+    def GetHandle(self):
         """GetHandle(Extrema_LCCache2dOfLocateExtCC2d self) -> Handle_Extrema_LCCache2dOfLocateExtCC2d"""
         return _Extrema.Extrema_LCCache2dOfLocateExtCC2d_GetHandle(self)
 
@@ -10805,7 +11367,7 @@ Handle_Extrema_LCCache2dOfLocateExtCC2d._kill_pointed = new_instancemethod(_Extr
 Handle_Extrema_LCCache2dOfLocateExtCC2d_swigregister = _Extrema.Handle_Extrema_LCCache2dOfLocateExtCC2d_swigregister
 Handle_Extrema_LCCache2dOfLocateExtCC2d_swigregister(Handle_Extrema_LCCache2dOfLocateExtCC2d)
 
-def Handle_Extrema_LCCache2dOfLocateExtCC2d_DownCast(*args) -> "Handle_Extrema_LCCache2dOfLocateExtCC2d const" :
+def Handle_Extrema_LCCache2dOfLocateExtCC2d_DownCast(*args):
   return _Extrema.Handle_Extrema_LCCache2dOfLocateExtCC2d_DownCast(*args)
 Handle_Extrema_LCCache2dOfLocateExtCC2d_DownCast = _Extrema.Handle_Extrema_LCCache2dOfLocateExtCC2d_DownCast
 
@@ -10823,7 +11385,7 @@ class Extrema_LCCacheOfLocateExtCC(OCC.Standard.Standard_Transient):
         :param theULast:
         :type theULast: float
         :param theNbSamples:
-        :type theNbSamples: int
+        :type theNbSamples: Standard_Integer
         :param theToCalculate:
         :type theToCalculate: bool
         :rtype: None
@@ -10837,21 +11399,21 @@ class Extrema_LCCacheOfLocateExtCC(OCC.Standard.Standard_Transient):
         :param IntervalsCN:
         :type IntervalsCN: TColStd_Array1OfReal &
         :param StartIndex:
-        :type StartIndex: int
+        :type StartIndex: Standard_Integer
         :param EndIndex:
-        :type EndIndex: int
+        :type EndIndex: Standard_Integer
         :param Coeff:
         :type Coeff: float
         :rtype: None
 
         """
         _Extrema.Extrema_LCCacheOfLocateExtCC_swiginit(self,_Extrema.new_Extrema_LCCacheOfLocateExtCC(*args))
-    def SetCurve(self, *args) -> "void" :
+    def SetCurve(self, *args):
         """
         :param theC:
         :type theC: Adaptor3d_Curve &
         :param theNbSamples:
-        :type theNbSamples: int
+        :type theNbSamples: Standard_Integer
         :param theToCalculate:
         :type theToCalculate: bool
         :rtype: None
@@ -10863,7 +11425,7 @@ class Extrema_LCCacheOfLocateExtCC(OCC.Standard.Standard_Transient):
         :param theULast:
         :type theULast: float
         :param theNbSamples:
-        :type theNbSamples: int
+        :type theNbSamples: Standard_Integer
         :param theToCalculate:
         :type theToCalculate: bool
         :rtype: None
@@ -10871,7 +11433,7 @@ class Extrema_LCCacheOfLocateExtCC(OCC.Standard.Standard_Transient):
         """
         return _Extrema.Extrema_LCCacheOfLocateExtCC_SetCurve(self, *args)
 
-    def SetRange(self, *args) -> "void" :
+    def SetRange(self, *args):
         """
         :param Uinf:
         :type Uinf: float
@@ -10884,81 +11446,81 @@ class Extrema_LCCacheOfLocateExtCC(OCC.Standard.Standard_Transient):
         """
         return _Extrema.Extrema_LCCacheOfLocateExtCC_SetRange(self, *args)
 
-    def CalculatePoints(self, *args) -> "void" :
+    def CalculatePoints(self):
         """
         :rtype: None
 
         """
-        return _Extrema.Extrema_LCCacheOfLocateExtCC_CalculatePoints(self, *args)
+        return _Extrema.Extrema_LCCacheOfLocateExtCC_CalculatePoints(self)
 
-    def IsValid(self, *args) -> "Standard_Boolean" :
+    def IsValid(self):
         """
         :rtype: bool
 
         """
-        return _Extrema.Extrema_LCCacheOfLocateExtCC_IsValid(self, *args)
+        return _Extrema.Extrema_LCCacheOfLocateExtCC_IsValid(self)
 
-    def Parameters(self, *args) -> "Handle_TColStd_HArray1OfReal const &" :
+    def Parameters(self):
         """
         :rtype: Handle_TColStd_HArray1OfReal
 
         """
-        return _Extrema.Extrema_LCCacheOfLocateExtCC_Parameters(self, *args)
+        return _Extrema.Extrema_LCCacheOfLocateExtCC_Parameters(self)
 
-    def Points(self, *args) -> "Handle_TColgp_HArray1OfPnt const &" :
+    def Points(self):
         """
         :rtype: Handle_TColgp_HArray1OfPnt
 
         """
-        return _Extrema.Extrema_LCCacheOfLocateExtCC_Points(self, *args)
+        return _Extrema.Extrema_LCCacheOfLocateExtCC_Points(self)
 
-    def CurvePtr(self, *args) -> "Standard_Address" :
+    def CurvePtr(self):
         """
         :rtype: Standard_Address
 
         """
-        return _Extrema.Extrema_LCCacheOfLocateExtCC_CurvePtr(self, *args)
+        return _Extrema.Extrema_LCCacheOfLocateExtCC_CurvePtr(self)
 
-    def NbSamples(self, *args) -> "Standard_Integer" :
+    def NbSamples(self):
         """
         :rtype: int
 
         """
-        return _Extrema.Extrema_LCCacheOfLocateExtCC_NbSamples(self, *args)
+        return _Extrema.Extrema_LCCacheOfLocateExtCC_NbSamples(self)
 
-    def FirstParameter(self, *args) -> "Standard_Real" :
+    def FirstParameter(self):
         """
         :rtype: float
 
         """
-        return _Extrema.Extrema_LCCacheOfLocateExtCC_FirstParameter(self, *args)
+        return _Extrema.Extrema_LCCacheOfLocateExtCC_FirstParameter(self)
 
-    def LastParameter(self, *args) -> "Standard_Real" :
+    def LastParameter(self):
         """
         :rtype: float
 
         """
-        return _Extrema.Extrema_LCCacheOfLocateExtCC_LastParameter(self, *args)
+        return _Extrema.Extrema_LCCacheOfLocateExtCC_LastParameter(self)
 
-    def TrimFirstParameter(self, *args) -> "Standard_Real" :
+    def TrimFirstParameter(self):
         """
         :rtype: float
 
         """
-        return _Extrema.Extrema_LCCacheOfLocateExtCC_TrimFirstParameter(self, *args)
+        return _Extrema.Extrema_LCCacheOfLocateExtCC_TrimFirstParameter(self)
 
-    def TrimLastParameter(self, *args) -> "Standard_Real" :
+    def TrimLastParameter(self):
         """
         :rtype: float
 
         """
-        return _Extrema.Extrema_LCCacheOfLocateExtCC_TrimLastParameter(self, *args)
+        return _Extrema.Extrema_LCCacheOfLocateExtCC_TrimLastParameter(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Extrema_LCCacheOfLocateExtCC self)"""
         return _Extrema.Extrema_LCCacheOfLocateExtCC__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Extrema_LCCacheOfLocateExtCC" :
+    def GetHandle(self):
         """GetHandle(Extrema_LCCacheOfLocateExtCC self) -> Handle_Extrema_LCCacheOfLocateExtCC"""
         return _Extrema.Extrema_LCCacheOfLocateExtCC_GetHandle(self)
 
@@ -11008,7 +11570,7 @@ Handle_Extrema_LCCacheOfLocateExtCC._kill_pointed = new_instancemethod(_Extrema.
 Handle_Extrema_LCCacheOfLocateExtCC_swigregister = _Extrema.Handle_Extrema_LCCacheOfLocateExtCC_swigregister
 Handle_Extrema_LCCacheOfLocateExtCC_swigregister(Handle_Extrema_LCCacheOfLocateExtCC)
 
-def Handle_Extrema_LCCacheOfLocateExtCC_DownCast(*args) -> "Handle_Extrema_LCCacheOfLocateExtCC const" :
+def Handle_Extrema_LCCacheOfLocateExtCC_DownCast(*args):
   return _Extrema.Handle_Extrema_LCCacheOfLocateExtCC_DownCast(*args)
 Handle_Extrema_LCCacheOfLocateExtCC_DownCast = _Extrema.Handle_Extrema_LCCacheOfLocateExtCC_DownCast
 
@@ -11033,21 +11595,21 @@ class Extrema_LocECC2dOfLocateExtCC2d(object):
 
         """
         _Extrema.Extrema_LocECC2dOfLocateExtCC2d_swiginit(self,_Extrema.new_Extrema_LocECC2dOfLocateExtCC2d(*args))
-    def IsDone(self, *args) -> "Standard_Boolean" :
+    def IsDone(self):
         """
         :rtype: bool
 
         """
-        return _Extrema.Extrema_LocECC2dOfLocateExtCC2d_IsDone(self, *args)
+        return _Extrema.Extrema_LocECC2dOfLocateExtCC2d_IsDone(self)
 
-    def SquareDistance(self, *args) -> "Standard_Real" :
+    def SquareDistance(self):
         """
         :rtype: float
 
         """
-        return _Extrema.Extrema_LocECC2dOfLocateExtCC2d_SquareDistance(self, *args)
+        return _Extrema.Extrema_LocECC2dOfLocateExtCC2d_SquareDistance(self)
 
-    def Point(self, *args) -> "void" :
+    def Point(self, *args):
         """
         :param P1:
         :type P1: Extrema_POnCurv2d &
@@ -11094,21 +11656,21 @@ class Extrema_LocECCOfLocateExtCC(object):
 
         """
         _Extrema.Extrema_LocECCOfLocateExtCC_swiginit(self,_Extrema.new_Extrema_LocECCOfLocateExtCC(*args))
-    def IsDone(self, *args) -> "Standard_Boolean" :
+    def IsDone(self):
         """
         :rtype: bool
 
         """
-        return _Extrema.Extrema_LocECCOfLocateExtCC_IsDone(self, *args)
+        return _Extrema.Extrema_LocECCOfLocateExtCC_IsDone(self)
 
-    def SquareDistance(self, *args) -> "Standard_Real" :
+    def SquareDistance(self):
         """
         :rtype: float
 
         """
-        return _Extrema.Extrema_LocECCOfLocateExtCC_SquareDistance(self, *args)
+        return _Extrema.Extrema_LocECCOfLocateExtCC_SquareDistance(self)
 
-    def Point(self, *args) -> "void" :
+    def Point(self, *args):
         """
         :param P1:
         :type P1: Extrema_POnCurv &
@@ -11167,7 +11729,7 @@ class Extrema_LocEPCOfLocateExtPC(object):
 
         """
         _Extrema.Extrema_LocEPCOfLocateExtPC_swiginit(self,_Extrema.new_Extrema_LocEPCOfLocateExtPC(*args))
-    def Initialize(self, *args) -> "void" :
+    def Initialize(self, *args):
         """
         :param C:
         :type C: Adaptor3d_Curve &
@@ -11182,7 +11744,7 @@ class Extrema_LocEPCOfLocateExtPC(object):
         """
         return _Extrema.Extrema_LocEPCOfLocateExtPC_Initialize(self, *args)
 
-    def Perform(self, *args) -> "void" :
+    def Perform(self, *args):
         """
         :param P:
         :type P: gp_Pnt
@@ -11193,33 +11755,33 @@ class Extrema_LocEPCOfLocateExtPC(object):
         """
         return _Extrema.Extrema_LocEPCOfLocateExtPC_Perform(self, *args)
 
-    def IsDone(self, *args) -> "Standard_Boolean" :
+    def IsDone(self):
         """
         :rtype: bool
 
         """
-        return _Extrema.Extrema_LocEPCOfLocateExtPC_IsDone(self, *args)
+        return _Extrema.Extrema_LocEPCOfLocateExtPC_IsDone(self)
 
-    def SquareDistance(self, *args) -> "Standard_Real" :
+    def SquareDistance(self):
         """
         :rtype: float
 
         """
-        return _Extrema.Extrema_LocEPCOfLocateExtPC_SquareDistance(self, *args)
+        return _Extrema.Extrema_LocEPCOfLocateExtPC_SquareDistance(self)
 
-    def IsMin(self, *args) -> "Standard_Boolean" :
+    def IsMin(self):
         """
         :rtype: bool
 
         """
-        return _Extrema.Extrema_LocEPCOfLocateExtPC_IsMin(self, *args)
+        return _Extrema.Extrema_LocEPCOfLocateExtPC_IsMin(self)
 
-    def Point(self, *args) -> "Extrema_POnCurv const &" :
+    def Point(self):
         """
         :rtype: Extrema_POnCurv
 
         """
-        return _Extrema.Extrema_LocEPCOfLocateExtPC_Point(self, *args)
+        return _Extrema.Extrema_LocEPCOfLocateExtPC_Point(self)
 
     def __del__(self):
     	try:
@@ -11272,7 +11834,7 @@ class Extrema_LocEPCOfLocateExtPC2d(object):
 
         """
         _Extrema.Extrema_LocEPCOfLocateExtPC2d_swiginit(self,_Extrema.new_Extrema_LocEPCOfLocateExtPC2d(*args))
-    def Initialize(self, *args) -> "void" :
+    def Initialize(self, *args):
         """
         :param C:
         :type C: Adaptor2d_Curve2d &
@@ -11287,7 +11849,7 @@ class Extrema_LocEPCOfLocateExtPC2d(object):
         """
         return _Extrema.Extrema_LocEPCOfLocateExtPC2d_Initialize(self, *args)
 
-    def Perform(self, *args) -> "void" :
+    def Perform(self, *args):
         """
         :param P:
         :type P: gp_Pnt2d
@@ -11298,33 +11860,33 @@ class Extrema_LocEPCOfLocateExtPC2d(object):
         """
         return _Extrema.Extrema_LocEPCOfLocateExtPC2d_Perform(self, *args)
 
-    def IsDone(self, *args) -> "Standard_Boolean" :
+    def IsDone(self):
         """
         :rtype: bool
 
         """
-        return _Extrema.Extrema_LocEPCOfLocateExtPC2d_IsDone(self, *args)
+        return _Extrema.Extrema_LocEPCOfLocateExtPC2d_IsDone(self)
 
-    def SquareDistance(self, *args) -> "Standard_Real" :
+    def SquareDistance(self):
         """
         :rtype: float
 
         """
-        return _Extrema.Extrema_LocEPCOfLocateExtPC2d_SquareDistance(self, *args)
+        return _Extrema.Extrema_LocEPCOfLocateExtPC2d_SquareDistance(self)
 
-    def IsMin(self, *args) -> "Standard_Boolean" :
+    def IsMin(self):
         """
         :rtype: bool
 
         """
-        return _Extrema.Extrema_LocEPCOfLocateExtPC2d_IsMin(self, *args)
+        return _Extrema.Extrema_LocEPCOfLocateExtPC2d_IsMin(self)
 
-    def Point(self, *args) -> "Extrema_POnCurv2d const &" :
+    def Point(self):
         """
         :rtype: Extrema_POnCurv2d
 
         """
-        return _Extrema.Extrema_LocEPCOfLocateExtPC2d_Point(self, *args)
+        return _Extrema.Extrema_LocEPCOfLocateExtPC2d_Point(self)
 
     def __del__(self):
     	try:
@@ -11361,21 +11923,21 @@ class Extrema_LocateExtCC(object):
 
         """
         _Extrema.Extrema_LocateExtCC_swiginit(self,_Extrema.new_Extrema_LocateExtCC(*args))
-    def IsDone(self, *args) -> "Standard_Boolean" :
+    def IsDone(self):
         """
         :rtype: bool
 
         """
-        return _Extrema.Extrema_LocateExtCC_IsDone(self, *args)
+        return _Extrema.Extrema_LocateExtCC_IsDone(self)
 
-    def SquareDistance(self, *args) -> "Standard_Real" :
+    def SquareDistance(self):
         """
         :rtype: float
 
         """
-        return _Extrema.Extrema_LocateExtCC_SquareDistance(self, *args)
+        return _Extrema.Extrema_LocateExtCC_SquareDistance(self)
 
-    def Point(self, *args) -> "void" :
+    def Point(self, *args):
         """
         :param P1:
         :type P1: Extrema_POnCurv &
@@ -11418,21 +11980,21 @@ class Extrema_LocateExtCC2d(object):
 
         """
         _Extrema.Extrema_LocateExtCC2d_swiginit(self,_Extrema.new_Extrema_LocateExtCC2d(*args))
-    def IsDone(self, *args) -> "Standard_Boolean" :
+    def IsDone(self):
         """
         :rtype: bool
 
         """
-        return _Extrema.Extrema_LocateExtCC2d_IsDone(self, *args)
+        return _Extrema.Extrema_LocateExtCC2d_IsDone(self)
 
-    def SquareDistance(self, *args) -> "Standard_Real" :
+    def SquareDistance(self):
         """
         :rtype: float
 
         """
-        return _Extrema.Extrema_LocateExtCC2d_SquareDistance(self, *args)
+        return _Extrema.Extrema_LocateExtCC2d_SquareDistance(self)
 
-    def Point(self, *args) -> "void" :
+    def Point(self, *args):
         """
         :param P1:
         :type P1: Extrema_POnCurv2d &
@@ -11491,7 +12053,7 @@ class Extrema_LocateExtPC(object):
 
         """
         _Extrema.Extrema_LocateExtPC_swiginit(self,_Extrema.new_Extrema_LocateExtPC(*args))
-    def Initialize(self, *args) -> "void" :
+    def Initialize(self, *args):
         """
         :param C:
         :type C: Adaptor3d_Curve &
@@ -11506,7 +12068,7 @@ class Extrema_LocateExtPC(object):
         """
         return _Extrema.Extrema_LocateExtPC_Initialize(self, *args)
 
-    def Perform(self, *args) -> "void" :
+    def Perform(self, *args):
         """
         :param P:
         :type P: gp_Pnt
@@ -11517,33 +12079,33 @@ class Extrema_LocateExtPC(object):
         """
         return _Extrema.Extrema_LocateExtPC_Perform(self, *args)
 
-    def IsDone(self, *args) -> "Standard_Boolean" :
+    def IsDone(self):
         """
         :rtype: bool
 
         """
-        return _Extrema.Extrema_LocateExtPC_IsDone(self, *args)
+        return _Extrema.Extrema_LocateExtPC_IsDone(self)
 
-    def SquareDistance(self, *args) -> "Standard_Real" :
+    def SquareDistance(self):
         """
         :rtype: float
 
         """
-        return _Extrema.Extrema_LocateExtPC_SquareDistance(self, *args)
+        return _Extrema.Extrema_LocateExtPC_SquareDistance(self)
 
-    def IsMin(self, *args) -> "Standard_Boolean" :
+    def IsMin(self):
         """
         :rtype: bool
 
         """
-        return _Extrema.Extrema_LocateExtPC_IsMin(self, *args)
+        return _Extrema.Extrema_LocateExtPC_IsMin(self)
 
-    def Point(self, *args) -> "Extrema_POnCurv const &" :
+    def Point(self):
         """
         :rtype: Extrema_POnCurv
 
         """
-        return _Extrema.Extrema_LocateExtPC_Point(self, *args)
+        return _Extrema.Extrema_LocateExtPC_Point(self)
 
     def __del__(self):
     	try:
@@ -11596,7 +12158,7 @@ class Extrema_LocateExtPC2d(object):
 
         """
         _Extrema.Extrema_LocateExtPC2d_swiginit(self,_Extrema.new_Extrema_LocateExtPC2d(*args))
-    def Initialize(self, *args) -> "void" :
+    def Initialize(self, *args):
         """
         :param C:
         :type C: Adaptor2d_Curve2d &
@@ -11611,7 +12173,7 @@ class Extrema_LocateExtPC2d(object):
         """
         return _Extrema.Extrema_LocateExtPC2d_Initialize(self, *args)
 
-    def Perform(self, *args) -> "void" :
+    def Perform(self, *args):
         """
         :param P:
         :type P: gp_Pnt2d
@@ -11622,33 +12184,33 @@ class Extrema_LocateExtPC2d(object):
         """
         return _Extrema.Extrema_LocateExtPC2d_Perform(self, *args)
 
-    def IsDone(self, *args) -> "Standard_Boolean" :
+    def IsDone(self):
         """
         :rtype: bool
 
         """
-        return _Extrema.Extrema_LocateExtPC2d_IsDone(self, *args)
+        return _Extrema.Extrema_LocateExtPC2d_IsDone(self)
 
-    def SquareDistance(self, *args) -> "Standard_Real" :
+    def SquareDistance(self):
         """
         :rtype: float
 
         """
-        return _Extrema.Extrema_LocateExtPC2d_SquareDistance(self, *args)
+        return _Extrema.Extrema_LocateExtPC2d_SquareDistance(self)
 
-    def IsMin(self, *args) -> "Standard_Boolean" :
+    def IsMin(self):
         """
         :rtype: bool
 
         """
-        return _Extrema.Extrema_LocateExtPC2d_IsMin(self, *args)
+        return _Extrema.Extrema_LocateExtPC2d_IsMin(self)
 
-    def Point(self, *args) -> "Extrema_POnCurv2d const &" :
+    def Point(self):
         """
         :rtype: Extrema_POnCurv2d
 
         """
-        return _Extrema.Extrema_LocateExtPC2d_Point(self, *args)
+        return _Extrema.Extrema_LocateExtPC2d_Point(self)
 
     def __del__(self):
     	try:
@@ -11683,7 +12245,7 @@ class Extrema_PCFOfEPCOfELPCOfLocateExtPC(object):
 
         """
         _Extrema.Extrema_PCFOfEPCOfELPCOfLocateExtPC_swiginit(self,_Extrema.new_Extrema_PCFOfEPCOfELPCOfLocateExtPC(*args))
-    def Initialize(self, *args) -> "void" :
+    def Initialize(self, *args):
         """
         :param C:
         :type C: Adaptor3d_Curve &
@@ -11692,7 +12254,7 @@ class Extrema_PCFOfEPCOfELPCOfLocateExtPC(object):
         """
         return _Extrema.Extrema_PCFOfEPCOfELPCOfLocateExtPC_Initialize(self, *args)
 
-    def SetPoint(self, *args) -> "void" :
+    def SetPoint(self, *args):
         """
         :param P:
         :type P: gp_Pnt
@@ -11701,7 +12263,7 @@ class Extrema_PCFOfEPCOfELPCOfLocateExtPC(object):
         """
         return _Extrema.Extrema_PCFOfEPCOfELPCOfLocateExtPC_SetPoint(self, *args)
 
-    def Value(self, *args) -> "Standard_Boolean" :
+    def Value(self, *args):
         """
         :param U:
         :type U: float
@@ -11712,7 +12274,7 @@ class Extrema_PCFOfEPCOfELPCOfLocateExtPC(object):
         """
         return _Extrema.Extrema_PCFOfEPCOfELPCOfLocateExtPC_Value(self, *args)
 
-    def Derivative(self, *args) -> "Standard_Boolean" :
+    def Derivative(self, *args):
         """
         :param U:
         :type U: float
@@ -11723,7 +12285,7 @@ class Extrema_PCFOfEPCOfELPCOfLocateExtPC(object):
         """
         return _Extrema.Extrema_PCFOfEPCOfELPCOfLocateExtPC_Derivative(self, *args)
 
-    def Values(self, *args) -> "Standard_Boolean" :
+    def Values(self, *args):
         """
         :param U:
         :type U: float
@@ -11736,48 +12298,48 @@ class Extrema_PCFOfEPCOfELPCOfLocateExtPC(object):
         """
         return _Extrema.Extrema_PCFOfEPCOfELPCOfLocateExtPC_Values(self, *args)
 
-    def GetStateNumber(self, *args) -> "Standard_Integer" :
+    def GetStateNumber(self):
         """
         :rtype: int
 
         """
-        return _Extrema.Extrema_PCFOfEPCOfELPCOfLocateExtPC_GetStateNumber(self, *args)
+        return _Extrema.Extrema_PCFOfEPCOfELPCOfLocateExtPC_GetStateNumber(self)
 
-    def NbExt(self, *args) -> "Standard_Integer" :
+    def NbExt(self):
         """
         :rtype: int
 
         """
-        return _Extrema.Extrema_PCFOfEPCOfELPCOfLocateExtPC_NbExt(self, *args)
+        return _Extrema.Extrema_PCFOfEPCOfELPCOfLocateExtPC_NbExt(self)
 
-    def SquareDistance(self, *args) -> "Standard_Real" :
+    def SquareDistance(self, *args):
         """
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :rtype: float
 
         """
         return _Extrema.Extrema_PCFOfEPCOfELPCOfLocateExtPC_SquareDistance(self, *args)
 
-    def IsMin(self, *args) -> "Standard_Boolean" :
+    def IsMin(self, *args):
         """
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :rtype: bool
 
         """
         return _Extrema.Extrema_PCFOfEPCOfELPCOfLocateExtPC_IsMin(self, *args)
 
-    def Point(self, *args) -> "Extrema_POnCurv const &" :
+    def Point(self, *args):
         """
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :rtype: Extrema_POnCurv
 
         """
         return _Extrema.Extrema_PCFOfEPCOfELPCOfLocateExtPC_Point(self, *args)
 
-    def SubIntervalInitialize(self, *args) -> "void" :
+    def SubIntervalInitialize(self, *args):
         """
         :param theUfirst:
         :type theUfirst: float
@@ -11788,12 +12350,12 @@ class Extrema_PCFOfEPCOfELPCOfLocateExtPC(object):
         """
         return _Extrema.Extrema_PCFOfEPCOfELPCOfLocateExtPC_SubIntervalInitialize(self, *args)
 
-    def SearchOfTolerance(self, *args) -> "Standard_Real" :
+    def SearchOfTolerance(self):
         """
         :rtype: float
 
         """
-        return _Extrema.Extrema_PCFOfEPCOfELPCOfLocateExtPC_SearchOfTolerance(self, *args)
+        return _Extrema.Extrema_PCFOfEPCOfELPCOfLocateExtPC_SearchOfTolerance(self)
 
     def __del__(self):
     	try:
@@ -11834,7 +12396,7 @@ class Extrema_PCFOfEPCOfELPCOfLocateExtPC2d(object):
 
         """
         _Extrema.Extrema_PCFOfEPCOfELPCOfLocateExtPC2d_swiginit(self,_Extrema.new_Extrema_PCFOfEPCOfELPCOfLocateExtPC2d(*args))
-    def Initialize(self, *args) -> "void" :
+    def Initialize(self, *args):
         """
         :param C:
         :type C: Adaptor2d_Curve2d &
@@ -11843,7 +12405,7 @@ class Extrema_PCFOfEPCOfELPCOfLocateExtPC2d(object):
         """
         return _Extrema.Extrema_PCFOfEPCOfELPCOfLocateExtPC2d_Initialize(self, *args)
 
-    def SetPoint(self, *args) -> "void" :
+    def SetPoint(self, *args):
         """
         :param P:
         :type P: gp_Pnt2d
@@ -11852,7 +12414,7 @@ class Extrema_PCFOfEPCOfELPCOfLocateExtPC2d(object):
         """
         return _Extrema.Extrema_PCFOfEPCOfELPCOfLocateExtPC2d_SetPoint(self, *args)
 
-    def Value(self, *args) -> "Standard_Boolean" :
+    def Value(self, *args):
         """
         :param U:
         :type U: float
@@ -11863,7 +12425,7 @@ class Extrema_PCFOfEPCOfELPCOfLocateExtPC2d(object):
         """
         return _Extrema.Extrema_PCFOfEPCOfELPCOfLocateExtPC2d_Value(self, *args)
 
-    def Derivative(self, *args) -> "Standard_Boolean" :
+    def Derivative(self, *args):
         """
         :param U:
         :type U: float
@@ -11874,7 +12436,7 @@ class Extrema_PCFOfEPCOfELPCOfLocateExtPC2d(object):
         """
         return _Extrema.Extrema_PCFOfEPCOfELPCOfLocateExtPC2d_Derivative(self, *args)
 
-    def Values(self, *args) -> "Standard_Boolean" :
+    def Values(self, *args):
         """
         :param U:
         :type U: float
@@ -11887,48 +12449,48 @@ class Extrema_PCFOfEPCOfELPCOfLocateExtPC2d(object):
         """
         return _Extrema.Extrema_PCFOfEPCOfELPCOfLocateExtPC2d_Values(self, *args)
 
-    def GetStateNumber(self, *args) -> "Standard_Integer" :
+    def GetStateNumber(self):
         """
         :rtype: int
 
         """
-        return _Extrema.Extrema_PCFOfEPCOfELPCOfLocateExtPC2d_GetStateNumber(self, *args)
+        return _Extrema.Extrema_PCFOfEPCOfELPCOfLocateExtPC2d_GetStateNumber(self)
 
-    def NbExt(self, *args) -> "Standard_Integer" :
+    def NbExt(self):
         """
         :rtype: int
 
         """
-        return _Extrema.Extrema_PCFOfEPCOfELPCOfLocateExtPC2d_NbExt(self, *args)
+        return _Extrema.Extrema_PCFOfEPCOfELPCOfLocateExtPC2d_NbExt(self)
 
-    def SquareDistance(self, *args) -> "Standard_Real" :
+    def SquareDistance(self, *args):
         """
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :rtype: float
 
         """
         return _Extrema.Extrema_PCFOfEPCOfELPCOfLocateExtPC2d_SquareDistance(self, *args)
 
-    def IsMin(self, *args) -> "Standard_Boolean" :
+    def IsMin(self, *args):
         """
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :rtype: bool
 
         """
         return _Extrema.Extrema_PCFOfEPCOfELPCOfLocateExtPC2d_IsMin(self, *args)
 
-    def Point(self, *args) -> "Extrema_POnCurv2d const &" :
+    def Point(self, *args):
         """
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :rtype: Extrema_POnCurv2d
 
         """
         return _Extrema.Extrema_PCFOfEPCOfELPCOfLocateExtPC2d_Point(self, *args)
 
-    def SubIntervalInitialize(self, *args) -> "void" :
+    def SubIntervalInitialize(self, *args):
         """
         :param theUfirst:
         :type theUfirst: float
@@ -11939,12 +12501,12 @@ class Extrema_PCFOfEPCOfELPCOfLocateExtPC2d(object):
         """
         return _Extrema.Extrema_PCFOfEPCOfELPCOfLocateExtPC2d_SubIntervalInitialize(self, *args)
 
-    def SearchOfTolerance(self, *args) -> "Standard_Real" :
+    def SearchOfTolerance(self):
         """
         :rtype: float
 
         """
-        return _Extrema.Extrema_PCFOfEPCOfELPCOfLocateExtPC2d_SearchOfTolerance(self, *args)
+        return _Extrema.Extrema_PCFOfEPCOfELPCOfLocateExtPC2d_SearchOfTolerance(self)
 
     def __del__(self):
     	try:
@@ -11985,7 +12547,7 @@ class Extrema_PCFOfEPCOfExtPC(object):
 
         """
         _Extrema.Extrema_PCFOfEPCOfExtPC_swiginit(self,_Extrema.new_Extrema_PCFOfEPCOfExtPC(*args))
-    def Initialize(self, *args) -> "void" :
+    def Initialize(self, *args):
         """
         :param C:
         :type C: Adaptor3d_Curve &
@@ -11994,7 +12556,7 @@ class Extrema_PCFOfEPCOfExtPC(object):
         """
         return _Extrema.Extrema_PCFOfEPCOfExtPC_Initialize(self, *args)
 
-    def SetPoint(self, *args) -> "void" :
+    def SetPoint(self, *args):
         """
         :param P:
         :type P: gp_Pnt
@@ -12003,7 +12565,7 @@ class Extrema_PCFOfEPCOfExtPC(object):
         """
         return _Extrema.Extrema_PCFOfEPCOfExtPC_SetPoint(self, *args)
 
-    def Value(self, *args) -> "Standard_Boolean" :
+    def Value(self, *args):
         """
         :param U:
         :type U: float
@@ -12014,7 +12576,7 @@ class Extrema_PCFOfEPCOfExtPC(object):
         """
         return _Extrema.Extrema_PCFOfEPCOfExtPC_Value(self, *args)
 
-    def Derivative(self, *args) -> "Standard_Boolean" :
+    def Derivative(self, *args):
         """
         :param U:
         :type U: float
@@ -12025,7 +12587,7 @@ class Extrema_PCFOfEPCOfExtPC(object):
         """
         return _Extrema.Extrema_PCFOfEPCOfExtPC_Derivative(self, *args)
 
-    def Values(self, *args) -> "Standard_Boolean" :
+    def Values(self, *args):
         """
         :param U:
         :type U: float
@@ -12038,48 +12600,48 @@ class Extrema_PCFOfEPCOfExtPC(object):
         """
         return _Extrema.Extrema_PCFOfEPCOfExtPC_Values(self, *args)
 
-    def GetStateNumber(self, *args) -> "Standard_Integer" :
+    def GetStateNumber(self):
         """
         :rtype: int
 
         """
-        return _Extrema.Extrema_PCFOfEPCOfExtPC_GetStateNumber(self, *args)
+        return _Extrema.Extrema_PCFOfEPCOfExtPC_GetStateNumber(self)
 
-    def NbExt(self, *args) -> "Standard_Integer" :
+    def NbExt(self):
         """
         :rtype: int
 
         """
-        return _Extrema.Extrema_PCFOfEPCOfExtPC_NbExt(self, *args)
+        return _Extrema.Extrema_PCFOfEPCOfExtPC_NbExt(self)
 
-    def SquareDistance(self, *args) -> "Standard_Real" :
+    def SquareDistance(self, *args):
         """
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :rtype: float
 
         """
         return _Extrema.Extrema_PCFOfEPCOfExtPC_SquareDistance(self, *args)
 
-    def IsMin(self, *args) -> "Standard_Boolean" :
+    def IsMin(self, *args):
         """
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :rtype: bool
 
         """
         return _Extrema.Extrema_PCFOfEPCOfExtPC_IsMin(self, *args)
 
-    def Point(self, *args) -> "Extrema_POnCurv const &" :
+    def Point(self, *args):
         """
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :rtype: Extrema_POnCurv
 
         """
         return _Extrema.Extrema_PCFOfEPCOfExtPC_Point(self, *args)
 
-    def SubIntervalInitialize(self, *args) -> "void" :
+    def SubIntervalInitialize(self, *args):
         """
         :param theUfirst:
         :type theUfirst: float
@@ -12090,12 +12652,12 @@ class Extrema_PCFOfEPCOfExtPC(object):
         """
         return _Extrema.Extrema_PCFOfEPCOfExtPC_SubIntervalInitialize(self, *args)
 
-    def SearchOfTolerance(self, *args) -> "Standard_Real" :
+    def SearchOfTolerance(self):
         """
         :rtype: float
 
         """
-        return _Extrema.Extrema_PCFOfEPCOfExtPC_SearchOfTolerance(self, *args)
+        return _Extrema.Extrema_PCFOfEPCOfExtPC_SearchOfTolerance(self)
 
     def __del__(self):
     	try:
@@ -12136,7 +12698,7 @@ class Extrema_PCFOfEPCOfExtPC2d(object):
 
         """
         _Extrema.Extrema_PCFOfEPCOfExtPC2d_swiginit(self,_Extrema.new_Extrema_PCFOfEPCOfExtPC2d(*args))
-    def Initialize(self, *args) -> "void" :
+    def Initialize(self, *args):
         """
         :param C:
         :type C: Adaptor2d_Curve2d &
@@ -12145,7 +12707,7 @@ class Extrema_PCFOfEPCOfExtPC2d(object):
         """
         return _Extrema.Extrema_PCFOfEPCOfExtPC2d_Initialize(self, *args)
 
-    def SetPoint(self, *args) -> "void" :
+    def SetPoint(self, *args):
         """
         :param P:
         :type P: gp_Pnt2d
@@ -12154,7 +12716,7 @@ class Extrema_PCFOfEPCOfExtPC2d(object):
         """
         return _Extrema.Extrema_PCFOfEPCOfExtPC2d_SetPoint(self, *args)
 
-    def Value(self, *args) -> "Standard_Boolean" :
+    def Value(self, *args):
         """
         :param U:
         :type U: float
@@ -12165,7 +12727,7 @@ class Extrema_PCFOfEPCOfExtPC2d(object):
         """
         return _Extrema.Extrema_PCFOfEPCOfExtPC2d_Value(self, *args)
 
-    def Derivative(self, *args) -> "Standard_Boolean" :
+    def Derivative(self, *args):
         """
         :param U:
         :type U: float
@@ -12176,7 +12738,7 @@ class Extrema_PCFOfEPCOfExtPC2d(object):
         """
         return _Extrema.Extrema_PCFOfEPCOfExtPC2d_Derivative(self, *args)
 
-    def Values(self, *args) -> "Standard_Boolean" :
+    def Values(self, *args):
         """
         :param U:
         :type U: float
@@ -12189,48 +12751,48 @@ class Extrema_PCFOfEPCOfExtPC2d(object):
         """
         return _Extrema.Extrema_PCFOfEPCOfExtPC2d_Values(self, *args)
 
-    def GetStateNumber(self, *args) -> "Standard_Integer" :
+    def GetStateNumber(self):
         """
         :rtype: int
 
         """
-        return _Extrema.Extrema_PCFOfEPCOfExtPC2d_GetStateNumber(self, *args)
+        return _Extrema.Extrema_PCFOfEPCOfExtPC2d_GetStateNumber(self)
 
-    def NbExt(self, *args) -> "Standard_Integer" :
+    def NbExt(self):
         """
         :rtype: int
 
         """
-        return _Extrema.Extrema_PCFOfEPCOfExtPC2d_NbExt(self, *args)
+        return _Extrema.Extrema_PCFOfEPCOfExtPC2d_NbExt(self)
 
-    def SquareDistance(self, *args) -> "Standard_Real" :
+    def SquareDistance(self, *args):
         """
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :rtype: float
 
         """
         return _Extrema.Extrema_PCFOfEPCOfExtPC2d_SquareDistance(self, *args)
 
-    def IsMin(self, *args) -> "Standard_Boolean" :
+    def IsMin(self, *args):
         """
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :rtype: bool
 
         """
         return _Extrema.Extrema_PCFOfEPCOfExtPC2d_IsMin(self, *args)
 
-    def Point(self, *args) -> "Extrema_POnCurv2d const &" :
+    def Point(self, *args):
         """
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :rtype: Extrema_POnCurv2d
 
         """
         return _Extrema.Extrema_PCFOfEPCOfExtPC2d_Point(self, *args)
 
-    def SubIntervalInitialize(self, *args) -> "void" :
+    def SubIntervalInitialize(self, *args):
         """
         :param theUfirst:
         :type theUfirst: float
@@ -12241,12 +12803,12 @@ class Extrema_PCFOfEPCOfExtPC2d(object):
         """
         return _Extrema.Extrema_PCFOfEPCOfExtPC2d_SubIntervalInitialize(self, *args)
 
-    def SearchOfTolerance(self, *args) -> "Standard_Real" :
+    def SearchOfTolerance(self):
         """
         :rtype: float
 
         """
-        return _Extrema.Extrema_PCFOfEPCOfExtPC2d_SearchOfTolerance(self, *args)
+        return _Extrema.Extrema_PCFOfEPCOfExtPC2d_SearchOfTolerance(self)
 
     def __del__(self):
     	try:
@@ -12287,7 +12849,7 @@ class Extrema_PCLocFOfLocEPCOfLocateExtPC(object):
 
         """
         _Extrema.Extrema_PCLocFOfLocEPCOfLocateExtPC_swiginit(self,_Extrema.new_Extrema_PCLocFOfLocEPCOfLocateExtPC(*args))
-    def Initialize(self, *args) -> "void" :
+    def Initialize(self, *args):
         """
         :param C:
         :type C: Adaptor3d_Curve &
@@ -12296,7 +12858,7 @@ class Extrema_PCLocFOfLocEPCOfLocateExtPC(object):
         """
         return _Extrema.Extrema_PCLocFOfLocEPCOfLocateExtPC_Initialize(self, *args)
 
-    def SetPoint(self, *args) -> "void" :
+    def SetPoint(self, *args):
         """
         :param P:
         :type P: gp_Pnt
@@ -12305,7 +12867,7 @@ class Extrema_PCLocFOfLocEPCOfLocateExtPC(object):
         """
         return _Extrema.Extrema_PCLocFOfLocEPCOfLocateExtPC_SetPoint(self, *args)
 
-    def Value(self, *args) -> "Standard_Boolean" :
+    def Value(self, *args):
         """
         :param U:
         :type U: float
@@ -12316,7 +12878,7 @@ class Extrema_PCLocFOfLocEPCOfLocateExtPC(object):
         """
         return _Extrema.Extrema_PCLocFOfLocEPCOfLocateExtPC_Value(self, *args)
 
-    def Derivative(self, *args) -> "Standard_Boolean" :
+    def Derivative(self, *args):
         """
         :param U:
         :type U: float
@@ -12327,7 +12889,7 @@ class Extrema_PCLocFOfLocEPCOfLocateExtPC(object):
         """
         return _Extrema.Extrema_PCLocFOfLocEPCOfLocateExtPC_Derivative(self, *args)
 
-    def Values(self, *args) -> "Standard_Boolean" :
+    def Values(self, *args):
         """
         :param U:
         :type U: float
@@ -12340,48 +12902,48 @@ class Extrema_PCLocFOfLocEPCOfLocateExtPC(object):
         """
         return _Extrema.Extrema_PCLocFOfLocEPCOfLocateExtPC_Values(self, *args)
 
-    def GetStateNumber(self, *args) -> "Standard_Integer" :
+    def GetStateNumber(self):
         """
         :rtype: int
 
         """
-        return _Extrema.Extrema_PCLocFOfLocEPCOfLocateExtPC_GetStateNumber(self, *args)
+        return _Extrema.Extrema_PCLocFOfLocEPCOfLocateExtPC_GetStateNumber(self)
 
-    def NbExt(self, *args) -> "Standard_Integer" :
+    def NbExt(self):
         """
         :rtype: int
 
         """
-        return _Extrema.Extrema_PCLocFOfLocEPCOfLocateExtPC_NbExt(self, *args)
+        return _Extrema.Extrema_PCLocFOfLocEPCOfLocateExtPC_NbExt(self)
 
-    def SquareDistance(self, *args) -> "Standard_Real" :
+    def SquareDistance(self, *args):
         """
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :rtype: float
 
         """
         return _Extrema.Extrema_PCLocFOfLocEPCOfLocateExtPC_SquareDistance(self, *args)
 
-    def IsMin(self, *args) -> "Standard_Boolean" :
+    def IsMin(self, *args):
         """
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :rtype: bool
 
         """
         return _Extrema.Extrema_PCLocFOfLocEPCOfLocateExtPC_IsMin(self, *args)
 
-    def Point(self, *args) -> "Extrema_POnCurv const &" :
+    def Point(self, *args):
         """
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :rtype: Extrema_POnCurv
 
         """
         return _Extrema.Extrema_PCLocFOfLocEPCOfLocateExtPC_Point(self, *args)
 
-    def SubIntervalInitialize(self, *args) -> "void" :
+    def SubIntervalInitialize(self, *args):
         """
         :param theUfirst:
         :type theUfirst: float
@@ -12392,12 +12954,12 @@ class Extrema_PCLocFOfLocEPCOfLocateExtPC(object):
         """
         return _Extrema.Extrema_PCLocFOfLocEPCOfLocateExtPC_SubIntervalInitialize(self, *args)
 
-    def SearchOfTolerance(self, *args) -> "Standard_Real" :
+    def SearchOfTolerance(self):
         """
         :rtype: float
 
         """
-        return _Extrema.Extrema_PCLocFOfLocEPCOfLocateExtPC_SearchOfTolerance(self, *args)
+        return _Extrema.Extrema_PCLocFOfLocEPCOfLocateExtPC_SearchOfTolerance(self)
 
     def __del__(self):
     	try:
@@ -12438,7 +13000,7 @@ class Extrema_PCLocFOfLocEPCOfLocateExtPC2d(object):
 
         """
         _Extrema.Extrema_PCLocFOfLocEPCOfLocateExtPC2d_swiginit(self,_Extrema.new_Extrema_PCLocFOfLocEPCOfLocateExtPC2d(*args))
-    def Initialize(self, *args) -> "void" :
+    def Initialize(self, *args):
         """
         :param C:
         :type C: Adaptor2d_Curve2d &
@@ -12447,7 +13009,7 @@ class Extrema_PCLocFOfLocEPCOfLocateExtPC2d(object):
         """
         return _Extrema.Extrema_PCLocFOfLocEPCOfLocateExtPC2d_Initialize(self, *args)
 
-    def SetPoint(self, *args) -> "void" :
+    def SetPoint(self, *args):
         """
         :param P:
         :type P: gp_Pnt2d
@@ -12456,7 +13018,7 @@ class Extrema_PCLocFOfLocEPCOfLocateExtPC2d(object):
         """
         return _Extrema.Extrema_PCLocFOfLocEPCOfLocateExtPC2d_SetPoint(self, *args)
 
-    def Value(self, *args) -> "Standard_Boolean" :
+    def Value(self, *args):
         """
         :param U:
         :type U: float
@@ -12467,7 +13029,7 @@ class Extrema_PCLocFOfLocEPCOfLocateExtPC2d(object):
         """
         return _Extrema.Extrema_PCLocFOfLocEPCOfLocateExtPC2d_Value(self, *args)
 
-    def Derivative(self, *args) -> "Standard_Boolean" :
+    def Derivative(self, *args):
         """
         :param U:
         :type U: float
@@ -12478,7 +13040,7 @@ class Extrema_PCLocFOfLocEPCOfLocateExtPC2d(object):
         """
         return _Extrema.Extrema_PCLocFOfLocEPCOfLocateExtPC2d_Derivative(self, *args)
 
-    def Values(self, *args) -> "Standard_Boolean" :
+    def Values(self, *args):
         """
         :param U:
         :type U: float
@@ -12491,48 +13053,48 @@ class Extrema_PCLocFOfLocEPCOfLocateExtPC2d(object):
         """
         return _Extrema.Extrema_PCLocFOfLocEPCOfLocateExtPC2d_Values(self, *args)
 
-    def GetStateNumber(self, *args) -> "Standard_Integer" :
+    def GetStateNumber(self):
         """
         :rtype: int
 
         """
-        return _Extrema.Extrema_PCLocFOfLocEPCOfLocateExtPC2d_GetStateNumber(self, *args)
+        return _Extrema.Extrema_PCLocFOfLocEPCOfLocateExtPC2d_GetStateNumber(self)
 
-    def NbExt(self, *args) -> "Standard_Integer" :
+    def NbExt(self):
         """
         :rtype: int
 
         """
-        return _Extrema.Extrema_PCLocFOfLocEPCOfLocateExtPC2d_NbExt(self, *args)
+        return _Extrema.Extrema_PCLocFOfLocEPCOfLocateExtPC2d_NbExt(self)
 
-    def SquareDistance(self, *args) -> "Standard_Real" :
+    def SquareDistance(self, *args):
         """
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :rtype: float
 
         """
         return _Extrema.Extrema_PCLocFOfLocEPCOfLocateExtPC2d_SquareDistance(self, *args)
 
-    def IsMin(self, *args) -> "Standard_Boolean" :
+    def IsMin(self, *args):
         """
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :rtype: bool
 
         """
         return _Extrema.Extrema_PCLocFOfLocEPCOfLocateExtPC2d_IsMin(self, *args)
 
-    def Point(self, *args) -> "Extrema_POnCurv2d const &" :
+    def Point(self, *args):
         """
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :rtype: Extrema_POnCurv2d
 
         """
         return _Extrema.Extrema_PCLocFOfLocEPCOfLocateExtPC2d_Point(self, *args)
 
-    def SubIntervalInitialize(self, *args) -> "void" :
+    def SubIntervalInitialize(self, *args):
         """
         :param theUfirst:
         :type theUfirst: float
@@ -12543,12 +13105,12 @@ class Extrema_PCLocFOfLocEPCOfLocateExtPC2d(object):
         """
         return _Extrema.Extrema_PCLocFOfLocEPCOfLocateExtPC2d_SubIntervalInitialize(self, *args)
 
-    def SearchOfTolerance(self, *args) -> "Standard_Real" :
+    def SearchOfTolerance(self):
         """
         :rtype: float
 
         """
-        return _Extrema.Extrema_PCLocFOfLocEPCOfLocateExtPC2d_SearchOfTolerance(self, *args)
+        return _Extrema.Extrema_PCLocFOfLocEPCOfLocateExtPC2d_SearchOfTolerance(self)
 
     def __del__(self):
     	try:
@@ -12589,7 +13151,7 @@ class Extrema_POnCurv(object):
 
         """
         _Extrema.Extrema_POnCurv_swiginit(self,_Extrema.new_Extrema_POnCurv(*args))
-    def SetValues(self, *args) -> "void" :
+    def SetValues(self, *args):
         """
         :param U:
         :type U: float
@@ -12600,28 +13162,28 @@ class Extrema_POnCurv(object):
         """
         return _Extrema.Extrema_POnCurv_SetValues(self, *args)
 
-    def Value(self, *args) -> "gp_Pnt const" :
+    def Value(self):
         """
         :rtype: gp_Pnt
 
         """
-        return _Extrema.Extrema_POnCurv_Value(self, *args)
+        return _Extrema.Extrema_POnCurv_Value(self)
 
-    def Parameter(self, *args) -> "Standard_Real" :
+    def Parameter(self):
         """
         :rtype: float
 
         """
-        return _Extrema.Extrema_POnCurv_Parameter(self, *args)
+        return _Extrema.Extrema_POnCurv_Parameter(self)
 
-    def _CSFDB_GetExtrema_POnCurvmyU(self, *args) -> "Standard_Real" :
+    def _CSFDB_GetExtrema_POnCurvmyU(self):
         """
         :rtype: float
 
         """
-        return _Extrema.Extrema_POnCurv__CSFDB_GetExtrema_POnCurvmyU(self, *args)
+        return _Extrema.Extrema_POnCurv__CSFDB_GetExtrema_POnCurvmyU(self)
 
-    def _CSFDB_SetExtrema_POnCurvmyU(self, *args) -> "void" :
+    def _CSFDB_SetExtrema_POnCurvmyU(self, *args):
         """
         :param p:
         :type p: float
@@ -12630,12 +13192,12 @@ class Extrema_POnCurv(object):
         """
         return _Extrema.Extrema_POnCurv__CSFDB_SetExtrema_POnCurvmyU(self, *args)
 
-    def _CSFDB_GetExtrema_POnCurvmyP(self, *args) -> "gp_Pnt const" :
+    def _CSFDB_GetExtrema_POnCurvmyP(self):
         """
         :rtype: gp_Pnt
 
         """
-        return _Extrema.Extrema_POnCurv__CSFDB_GetExtrema_POnCurvmyP(self, *args)
+        return _Extrema.Extrema_POnCurv__CSFDB_GetExtrema_POnCurvmyP(self)
 
     def __del__(self):
     	try:
@@ -12670,7 +13232,7 @@ class Extrema_POnCurv2d(object):
 
         """
         _Extrema.Extrema_POnCurv2d_swiginit(self,_Extrema.new_Extrema_POnCurv2d(*args))
-    def SetValues(self, *args) -> "void" :
+    def SetValues(self, *args):
         """
         :param U:
         :type U: float
@@ -12681,28 +13243,28 @@ class Extrema_POnCurv2d(object):
         """
         return _Extrema.Extrema_POnCurv2d_SetValues(self, *args)
 
-    def Value(self, *args) -> "gp_Pnt2d const" :
+    def Value(self):
         """
         :rtype: gp_Pnt2d
 
         """
-        return _Extrema.Extrema_POnCurv2d_Value(self, *args)
+        return _Extrema.Extrema_POnCurv2d_Value(self)
 
-    def Parameter(self, *args) -> "Standard_Real" :
+    def Parameter(self):
         """
         :rtype: float
 
         """
-        return _Extrema.Extrema_POnCurv2d_Parameter(self, *args)
+        return _Extrema.Extrema_POnCurv2d_Parameter(self)
 
-    def _CSFDB_GetExtrema_POnCurv2dmyU(self, *args) -> "Standard_Real" :
+    def _CSFDB_GetExtrema_POnCurv2dmyU(self):
         """
         :rtype: float
 
         """
-        return _Extrema.Extrema_POnCurv2d__CSFDB_GetExtrema_POnCurv2dmyU(self, *args)
+        return _Extrema.Extrema_POnCurv2d__CSFDB_GetExtrema_POnCurv2dmyU(self)
 
-    def _CSFDB_SetExtrema_POnCurv2dmyU(self, *args) -> "void" :
+    def _CSFDB_SetExtrema_POnCurv2dmyU(self, *args):
         """
         :param p:
         :type p: float
@@ -12711,12 +13273,12 @@ class Extrema_POnCurv2d(object):
         """
         return _Extrema.Extrema_POnCurv2d__CSFDB_SetExtrema_POnCurv2dmyU(self, *args)
 
-    def _CSFDB_GetExtrema_POnCurv2dmyP(self, *args) -> "gp_Pnt2d const" :
+    def _CSFDB_GetExtrema_POnCurv2dmyP(self):
         """
         :rtype: gp_Pnt2d
 
         """
-        return _Extrema.Extrema_POnCurv2d__CSFDB_GetExtrema_POnCurv2dmyP(self, *args)
+        return _Extrema.Extrema_POnCurv2d__CSFDB_GetExtrema_POnCurv2dmyP(self)
 
     def __del__(self):
     	try:
@@ -12757,16 +13319,16 @@ class Extrema_POnSurf(object):
 
         """
         _Extrema.Extrema_POnSurf_swiginit(self,_Extrema.new_Extrema_POnSurf(*args))
-    def Value(self, *args) -> "gp_Pnt const" :
+    def Value(self):
         """
         * Returns the 3d point.
 
         :rtype: gp_Pnt
 
         """
-        return _Extrema.Extrema_POnSurf_Value(self, *args)
+        return _Extrema.Extrema_POnSurf_Value(self)
 
-    def Parameter(self, *args) -> "void" :
+    def Parameter(self):
         """
         * Returns the parameter values on the surface.
 
@@ -12777,7 +13339,7 @@ class Extrema_POnSurf(object):
         :rtype: None
 
         """
-        return _Extrema.Extrema_POnSurf_Parameter(self, *args)
+        return _Extrema.Extrema_POnSurf_Parameter(self)
 
     def __del__(self):
     	try:
@@ -12796,20 +13358,20 @@ Extrema_POnSurf_swigregister(Extrema_POnSurf)
 class Extrema_SeqPCOfPCFOfEPCOfELPCOfLocateExtPC(OCC.TCollection.TCollection_BaseSequence):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _Extrema.Extrema_SeqPCOfPCFOfEPCOfELPCOfLocateExtPC_swiginit(self,_Extrema.new_Extrema_SeqPCOfPCFOfEPCOfELPCOfLocateExtPC(*args))
-    def Clear(self, *args) -> "void" :
+        _Extrema.Extrema_SeqPCOfPCFOfEPCOfELPCOfLocateExtPC_swiginit(self,_Extrema.new_Extrema_SeqPCOfPCFOfEPCOfELPCOfLocateExtPC())
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _Extrema.Extrema_SeqPCOfPCFOfEPCOfELPCOfLocateExtPC_Clear(self, *args)
+        return _Extrema.Extrema_SeqPCOfPCFOfEPCOfELPCOfLocateExtPC_Clear(self)
 
-    def Assign(self, *args) -> "Extrema_SeqPCOfPCFOfEPCOfELPCOfLocateExtPC const &" :
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: Extrema_SeqPCOfPCFOfEPCOfELPCOfLocateExtPC &
@@ -12818,7 +13380,7 @@ class Extrema_SeqPCOfPCFOfEPCOfELPCOfLocateExtPC(OCC.TCollection.TCollection_Bas
         """
         return _Extrema.Extrema_SeqPCOfPCFOfEPCOfELPCOfLocateExtPC_Assign(self, *args)
 
-    def Set(self, *args) -> "Extrema_SeqPCOfPCFOfEPCOfELPCOfLocateExtPC const &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: Extrema_SeqPCOfPCFOfEPCOfELPCOfLocateExtPC &
@@ -12827,7 +13389,7 @@ class Extrema_SeqPCOfPCFOfEPCOfELPCOfLocateExtPC(OCC.TCollection.TCollection_Bas
         """
         return _Extrema.Extrema_SeqPCOfPCFOfEPCOfELPCOfLocateExtPC_Set(self, *args)
 
-    def Append(self, *args) -> "void" :
+    def Append(self, *args):
         """
         :param T:
         :type T: Extrema_POnCurv &
@@ -12840,7 +13402,7 @@ class Extrema_SeqPCOfPCFOfEPCOfELPCOfLocateExtPC(OCC.TCollection.TCollection_Bas
         """
         return _Extrema.Extrema_SeqPCOfPCFOfEPCOfELPCOfLocateExtPC_Append(self, *args)
 
-    def Prepend(self, *args) -> "void" :
+    def Prepend(self, *args):
         """
         :param T:
         :type T: Extrema_POnCurv &
@@ -12853,16 +13415,16 @@ class Extrema_SeqPCOfPCFOfEPCOfELPCOfLocateExtPC(OCC.TCollection.TCollection_Bas
         """
         return _Extrema.Extrema_SeqPCOfPCFOfEPCOfELPCOfLocateExtPC_Prepend(self, *args)
 
-    def InsertBefore(self, *args) -> "void" :
+    def InsertBefore(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param T:
         :type T: Extrema_POnCurv &
         :rtype: None
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param S:
         :type S: Extrema_SeqPCOfPCFOfEPCOfELPCOfLocateExtPC &
         :rtype: None
@@ -12870,16 +13432,16 @@ class Extrema_SeqPCOfPCFOfEPCOfELPCOfLocateExtPC(OCC.TCollection.TCollection_Bas
         """
         return _Extrema.Extrema_SeqPCOfPCFOfEPCOfELPCOfLocateExtPC_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args) -> "void" :
+    def InsertAfter(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param T:
         :type T: Extrema_POnCurv &
         :rtype: None
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param S:
         :type S: Extrema_SeqPCOfPCFOfEPCOfELPCOfLocateExtPC &
         :rtype: None
@@ -12887,24 +13449,24 @@ class Extrema_SeqPCOfPCFOfEPCOfELPCOfLocateExtPC(OCC.TCollection.TCollection_Bas
         """
         return _Extrema.Extrema_SeqPCOfPCFOfEPCOfELPCOfLocateExtPC_InsertAfter(self, *args)
 
-    def First(self, *args) -> "Extrema_POnCurv const &" :
+    def First(self):
         """
         :rtype: Extrema_POnCurv
 
         """
-        return _Extrema.Extrema_SeqPCOfPCFOfEPCOfELPCOfLocateExtPC_First(self, *args)
+        return _Extrema.Extrema_SeqPCOfPCFOfEPCOfELPCOfLocateExtPC_First(self)
 
-    def Last(self, *args) -> "Extrema_POnCurv const &" :
+    def Last(self):
         """
         :rtype: Extrema_POnCurv
 
         """
-        return _Extrema.Extrema_SeqPCOfPCFOfEPCOfELPCOfLocateExtPC_Last(self, *args)
+        return _Extrema.Extrema_SeqPCOfPCFOfEPCOfELPCOfLocateExtPC_Last(self)
 
-    def Split(self, *args) -> "void" :
+    def Split(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Sub:
         :type Sub: Extrema_SeqPCOfPCFOfEPCOfELPCOfLocateExtPC &
         :rtype: None
@@ -12912,19 +13474,19 @@ class Extrema_SeqPCOfPCFOfEPCOfELPCOfLocateExtPC(OCC.TCollection.TCollection_Bas
         """
         return _Extrema.Extrema_SeqPCOfPCFOfEPCOfELPCOfLocateExtPC_Split(self, *args)
 
-    def Value(self, *args) -> "Extrema_POnCurv const &" :
+    def Value(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Extrema_POnCurv
 
         """
         return _Extrema.Extrema_SeqPCOfPCFOfEPCOfELPCOfLocateExtPC_Value(self, *args)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param I:
         :type I: Extrema_POnCurv &
         :rtype: None
@@ -12932,25 +13494,25 @@ class Extrema_SeqPCOfPCFOfEPCOfELPCOfLocateExtPC(OCC.TCollection.TCollection_Bas
         """
         return _Extrema.Extrema_SeqPCOfPCFOfEPCOfELPCOfLocateExtPC_SetValue(self, *args)
 
-    def ChangeValue(self, *args) -> "Extrema_POnCurv &" :
+    def ChangeValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Extrema_POnCurv
 
         """
         return _Extrema.Extrema_SeqPCOfPCFOfEPCOfELPCOfLocateExtPC_ChangeValue(self, *args)
 
-    def Remove(self, *args) -> "void" :
+    def Remove(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: None
 
         :param FromIndex:
-        :type FromIndex: int
+        :type FromIndex: Standard_Integer
         :param ToIndex:
-        :type ToIndex: int
+        :type ToIndex: Standard_Integer
         :rtype: None
 
         """
@@ -12985,20 +13547,20 @@ Extrema_SeqPCOfPCFOfEPCOfELPCOfLocateExtPC_swigregister(Extrema_SeqPCOfPCFOfEPCO
 class Extrema_SeqPCOfPCFOfEPCOfELPCOfLocateExtPC2d(OCC.TCollection.TCollection_BaseSequence):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _Extrema.Extrema_SeqPCOfPCFOfEPCOfELPCOfLocateExtPC2d_swiginit(self,_Extrema.new_Extrema_SeqPCOfPCFOfEPCOfELPCOfLocateExtPC2d(*args))
-    def Clear(self, *args) -> "void" :
+        _Extrema.Extrema_SeqPCOfPCFOfEPCOfELPCOfLocateExtPC2d_swiginit(self,_Extrema.new_Extrema_SeqPCOfPCFOfEPCOfELPCOfLocateExtPC2d())
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _Extrema.Extrema_SeqPCOfPCFOfEPCOfELPCOfLocateExtPC2d_Clear(self, *args)
+        return _Extrema.Extrema_SeqPCOfPCFOfEPCOfELPCOfLocateExtPC2d_Clear(self)
 
-    def Assign(self, *args) -> "Extrema_SeqPCOfPCFOfEPCOfELPCOfLocateExtPC2d const &" :
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: Extrema_SeqPCOfPCFOfEPCOfELPCOfLocateExtPC2d &
@@ -13007,7 +13569,7 @@ class Extrema_SeqPCOfPCFOfEPCOfELPCOfLocateExtPC2d(OCC.TCollection.TCollection_B
         """
         return _Extrema.Extrema_SeqPCOfPCFOfEPCOfELPCOfLocateExtPC2d_Assign(self, *args)
 
-    def Set(self, *args) -> "Extrema_SeqPCOfPCFOfEPCOfELPCOfLocateExtPC2d const &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: Extrema_SeqPCOfPCFOfEPCOfELPCOfLocateExtPC2d &
@@ -13016,7 +13578,7 @@ class Extrema_SeqPCOfPCFOfEPCOfELPCOfLocateExtPC2d(OCC.TCollection.TCollection_B
         """
         return _Extrema.Extrema_SeqPCOfPCFOfEPCOfELPCOfLocateExtPC2d_Set(self, *args)
 
-    def Append(self, *args) -> "void" :
+    def Append(self, *args):
         """
         :param T:
         :type T: Extrema_POnCurv2d &
@@ -13029,7 +13591,7 @@ class Extrema_SeqPCOfPCFOfEPCOfELPCOfLocateExtPC2d(OCC.TCollection.TCollection_B
         """
         return _Extrema.Extrema_SeqPCOfPCFOfEPCOfELPCOfLocateExtPC2d_Append(self, *args)
 
-    def Prepend(self, *args) -> "void" :
+    def Prepend(self, *args):
         """
         :param T:
         :type T: Extrema_POnCurv2d &
@@ -13042,16 +13604,16 @@ class Extrema_SeqPCOfPCFOfEPCOfELPCOfLocateExtPC2d(OCC.TCollection.TCollection_B
         """
         return _Extrema.Extrema_SeqPCOfPCFOfEPCOfELPCOfLocateExtPC2d_Prepend(self, *args)
 
-    def InsertBefore(self, *args) -> "void" :
+    def InsertBefore(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param T:
         :type T: Extrema_POnCurv2d &
         :rtype: None
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param S:
         :type S: Extrema_SeqPCOfPCFOfEPCOfELPCOfLocateExtPC2d &
         :rtype: None
@@ -13059,16 +13621,16 @@ class Extrema_SeqPCOfPCFOfEPCOfELPCOfLocateExtPC2d(OCC.TCollection.TCollection_B
         """
         return _Extrema.Extrema_SeqPCOfPCFOfEPCOfELPCOfLocateExtPC2d_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args) -> "void" :
+    def InsertAfter(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param T:
         :type T: Extrema_POnCurv2d &
         :rtype: None
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param S:
         :type S: Extrema_SeqPCOfPCFOfEPCOfELPCOfLocateExtPC2d &
         :rtype: None
@@ -13076,24 +13638,24 @@ class Extrema_SeqPCOfPCFOfEPCOfELPCOfLocateExtPC2d(OCC.TCollection.TCollection_B
         """
         return _Extrema.Extrema_SeqPCOfPCFOfEPCOfELPCOfLocateExtPC2d_InsertAfter(self, *args)
 
-    def First(self, *args) -> "Extrema_POnCurv2d const &" :
+    def First(self):
         """
         :rtype: Extrema_POnCurv2d
 
         """
-        return _Extrema.Extrema_SeqPCOfPCFOfEPCOfELPCOfLocateExtPC2d_First(self, *args)
+        return _Extrema.Extrema_SeqPCOfPCFOfEPCOfELPCOfLocateExtPC2d_First(self)
 
-    def Last(self, *args) -> "Extrema_POnCurv2d const &" :
+    def Last(self):
         """
         :rtype: Extrema_POnCurv2d
 
         """
-        return _Extrema.Extrema_SeqPCOfPCFOfEPCOfELPCOfLocateExtPC2d_Last(self, *args)
+        return _Extrema.Extrema_SeqPCOfPCFOfEPCOfELPCOfLocateExtPC2d_Last(self)
 
-    def Split(self, *args) -> "void" :
+    def Split(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Sub:
         :type Sub: Extrema_SeqPCOfPCFOfEPCOfELPCOfLocateExtPC2d &
         :rtype: None
@@ -13101,19 +13663,19 @@ class Extrema_SeqPCOfPCFOfEPCOfELPCOfLocateExtPC2d(OCC.TCollection.TCollection_B
         """
         return _Extrema.Extrema_SeqPCOfPCFOfEPCOfELPCOfLocateExtPC2d_Split(self, *args)
 
-    def Value(self, *args) -> "Extrema_POnCurv2d const &" :
+    def Value(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Extrema_POnCurv2d
 
         """
         return _Extrema.Extrema_SeqPCOfPCFOfEPCOfELPCOfLocateExtPC2d_Value(self, *args)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param I:
         :type I: Extrema_POnCurv2d &
         :rtype: None
@@ -13121,25 +13683,25 @@ class Extrema_SeqPCOfPCFOfEPCOfELPCOfLocateExtPC2d(OCC.TCollection.TCollection_B
         """
         return _Extrema.Extrema_SeqPCOfPCFOfEPCOfELPCOfLocateExtPC2d_SetValue(self, *args)
 
-    def ChangeValue(self, *args) -> "Extrema_POnCurv2d &" :
+    def ChangeValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Extrema_POnCurv2d
 
         """
         return _Extrema.Extrema_SeqPCOfPCFOfEPCOfELPCOfLocateExtPC2d_ChangeValue(self, *args)
 
-    def Remove(self, *args) -> "void" :
+    def Remove(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: None
 
         :param FromIndex:
-        :type FromIndex: int
+        :type FromIndex: Standard_Integer
         :param ToIndex:
-        :type ToIndex: int
+        :type ToIndex: Standard_Integer
         :rtype: None
 
         """
@@ -13174,20 +13736,20 @@ Extrema_SeqPCOfPCFOfEPCOfELPCOfLocateExtPC2d_swigregister(Extrema_SeqPCOfPCFOfEP
 class Extrema_SeqPCOfPCFOfEPCOfExtPC(OCC.TCollection.TCollection_BaseSequence):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _Extrema.Extrema_SeqPCOfPCFOfEPCOfExtPC_swiginit(self,_Extrema.new_Extrema_SeqPCOfPCFOfEPCOfExtPC(*args))
-    def Clear(self, *args) -> "void" :
+        _Extrema.Extrema_SeqPCOfPCFOfEPCOfExtPC_swiginit(self,_Extrema.new_Extrema_SeqPCOfPCFOfEPCOfExtPC())
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _Extrema.Extrema_SeqPCOfPCFOfEPCOfExtPC_Clear(self, *args)
+        return _Extrema.Extrema_SeqPCOfPCFOfEPCOfExtPC_Clear(self)
 
-    def Assign(self, *args) -> "Extrema_SeqPCOfPCFOfEPCOfExtPC const &" :
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: Extrema_SeqPCOfPCFOfEPCOfExtPC &
@@ -13196,7 +13758,7 @@ class Extrema_SeqPCOfPCFOfEPCOfExtPC(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Extrema.Extrema_SeqPCOfPCFOfEPCOfExtPC_Assign(self, *args)
 
-    def Set(self, *args) -> "Extrema_SeqPCOfPCFOfEPCOfExtPC const &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: Extrema_SeqPCOfPCFOfEPCOfExtPC &
@@ -13205,7 +13767,7 @@ class Extrema_SeqPCOfPCFOfEPCOfExtPC(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Extrema.Extrema_SeqPCOfPCFOfEPCOfExtPC_Set(self, *args)
 
-    def Append(self, *args) -> "void" :
+    def Append(self, *args):
         """
         :param T:
         :type T: Extrema_POnCurv &
@@ -13218,7 +13780,7 @@ class Extrema_SeqPCOfPCFOfEPCOfExtPC(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Extrema.Extrema_SeqPCOfPCFOfEPCOfExtPC_Append(self, *args)
 
-    def Prepend(self, *args) -> "void" :
+    def Prepend(self, *args):
         """
         :param T:
         :type T: Extrema_POnCurv &
@@ -13231,16 +13793,16 @@ class Extrema_SeqPCOfPCFOfEPCOfExtPC(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Extrema.Extrema_SeqPCOfPCFOfEPCOfExtPC_Prepend(self, *args)
 
-    def InsertBefore(self, *args) -> "void" :
+    def InsertBefore(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param T:
         :type T: Extrema_POnCurv &
         :rtype: None
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param S:
         :type S: Extrema_SeqPCOfPCFOfEPCOfExtPC &
         :rtype: None
@@ -13248,16 +13810,16 @@ class Extrema_SeqPCOfPCFOfEPCOfExtPC(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Extrema.Extrema_SeqPCOfPCFOfEPCOfExtPC_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args) -> "void" :
+    def InsertAfter(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param T:
         :type T: Extrema_POnCurv &
         :rtype: None
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param S:
         :type S: Extrema_SeqPCOfPCFOfEPCOfExtPC &
         :rtype: None
@@ -13265,24 +13827,24 @@ class Extrema_SeqPCOfPCFOfEPCOfExtPC(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Extrema.Extrema_SeqPCOfPCFOfEPCOfExtPC_InsertAfter(self, *args)
 
-    def First(self, *args) -> "Extrema_POnCurv const &" :
+    def First(self):
         """
         :rtype: Extrema_POnCurv
 
         """
-        return _Extrema.Extrema_SeqPCOfPCFOfEPCOfExtPC_First(self, *args)
+        return _Extrema.Extrema_SeqPCOfPCFOfEPCOfExtPC_First(self)
 
-    def Last(self, *args) -> "Extrema_POnCurv const &" :
+    def Last(self):
         """
         :rtype: Extrema_POnCurv
 
         """
-        return _Extrema.Extrema_SeqPCOfPCFOfEPCOfExtPC_Last(self, *args)
+        return _Extrema.Extrema_SeqPCOfPCFOfEPCOfExtPC_Last(self)
 
-    def Split(self, *args) -> "void" :
+    def Split(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Sub:
         :type Sub: Extrema_SeqPCOfPCFOfEPCOfExtPC &
         :rtype: None
@@ -13290,19 +13852,19 @@ class Extrema_SeqPCOfPCFOfEPCOfExtPC(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Extrema.Extrema_SeqPCOfPCFOfEPCOfExtPC_Split(self, *args)
 
-    def Value(self, *args) -> "Extrema_POnCurv const &" :
+    def Value(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Extrema_POnCurv
 
         """
         return _Extrema.Extrema_SeqPCOfPCFOfEPCOfExtPC_Value(self, *args)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param I:
         :type I: Extrema_POnCurv &
         :rtype: None
@@ -13310,25 +13872,25 @@ class Extrema_SeqPCOfPCFOfEPCOfExtPC(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Extrema.Extrema_SeqPCOfPCFOfEPCOfExtPC_SetValue(self, *args)
 
-    def ChangeValue(self, *args) -> "Extrema_POnCurv &" :
+    def ChangeValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Extrema_POnCurv
 
         """
         return _Extrema.Extrema_SeqPCOfPCFOfEPCOfExtPC_ChangeValue(self, *args)
 
-    def Remove(self, *args) -> "void" :
+    def Remove(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: None
 
         :param FromIndex:
-        :type FromIndex: int
+        :type FromIndex: Standard_Integer
         :param ToIndex:
-        :type ToIndex: int
+        :type ToIndex: Standard_Integer
         :rtype: None
 
         """
@@ -13363,20 +13925,20 @@ Extrema_SeqPCOfPCFOfEPCOfExtPC_swigregister(Extrema_SeqPCOfPCFOfEPCOfExtPC)
 class Extrema_SeqPCOfPCFOfEPCOfExtPC2d(OCC.TCollection.TCollection_BaseSequence):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _Extrema.Extrema_SeqPCOfPCFOfEPCOfExtPC2d_swiginit(self,_Extrema.new_Extrema_SeqPCOfPCFOfEPCOfExtPC2d(*args))
-    def Clear(self, *args) -> "void" :
+        _Extrema.Extrema_SeqPCOfPCFOfEPCOfExtPC2d_swiginit(self,_Extrema.new_Extrema_SeqPCOfPCFOfEPCOfExtPC2d())
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _Extrema.Extrema_SeqPCOfPCFOfEPCOfExtPC2d_Clear(self, *args)
+        return _Extrema.Extrema_SeqPCOfPCFOfEPCOfExtPC2d_Clear(self)
 
-    def Assign(self, *args) -> "Extrema_SeqPCOfPCFOfEPCOfExtPC2d const &" :
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: Extrema_SeqPCOfPCFOfEPCOfExtPC2d &
@@ -13385,7 +13947,7 @@ class Extrema_SeqPCOfPCFOfEPCOfExtPC2d(OCC.TCollection.TCollection_BaseSequence)
         """
         return _Extrema.Extrema_SeqPCOfPCFOfEPCOfExtPC2d_Assign(self, *args)
 
-    def Set(self, *args) -> "Extrema_SeqPCOfPCFOfEPCOfExtPC2d const &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: Extrema_SeqPCOfPCFOfEPCOfExtPC2d &
@@ -13394,7 +13956,7 @@ class Extrema_SeqPCOfPCFOfEPCOfExtPC2d(OCC.TCollection.TCollection_BaseSequence)
         """
         return _Extrema.Extrema_SeqPCOfPCFOfEPCOfExtPC2d_Set(self, *args)
 
-    def Append(self, *args) -> "void" :
+    def Append(self, *args):
         """
         :param T:
         :type T: Extrema_POnCurv2d &
@@ -13407,7 +13969,7 @@ class Extrema_SeqPCOfPCFOfEPCOfExtPC2d(OCC.TCollection.TCollection_BaseSequence)
         """
         return _Extrema.Extrema_SeqPCOfPCFOfEPCOfExtPC2d_Append(self, *args)
 
-    def Prepend(self, *args) -> "void" :
+    def Prepend(self, *args):
         """
         :param T:
         :type T: Extrema_POnCurv2d &
@@ -13420,16 +13982,16 @@ class Extrema_SeqPCOfPCFOfEPCOfExtPC2d(OCC.TCollection.TCollection_BaseSequence)
         """
         return _Extrema.Extrema_SeqPCOfPCFOfEPCOfExtPC2d_Prepend(self, *args)
 
-    def InsertBefore(self, *args) -> "void" :
+    def InsertBefore(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param T:
         :type T: Extrema_POnCurv2d &
         :rtype: None
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param S:
         :type S: Extrema_SeqPCOfPCFOfEPCOfExtPC2d &
         :rtype: None
@@ -13437,16 +13999,16 @@ class Extrema_SeqPCOfPCFOfEPCOfExtPC2d(OCC.TCollection.TCollection_BaseSequence)
         """
         return _Extrema.Extrema_SeqPCOfPCFOfEPCOfExtPC2d_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args) -> "void" :
+    def InsertAfter(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param T:
         :type T: Extrema_POnCurv2d &
         :rtype: None
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param S:
         :type S: Extrema_SeqPCOfPCFOfEPCOfExtPC2d &
         :rtype: None
@@ -13454,24 +14016,24 @@ class Extrema_SeqPCOfPCFOfEPCOfExtPC2d(OCC.TCollection.TCollection_BaseSequence)
         """
         return _Extrema.Extrema_SeqPCOfPCFOfEPCOfExtPC2d_InsertAfter(self, *args)
 
-    def First(self, *args) -> "Extrema_POnCurv2d const &" :
+    def First(self):
         """
         :rtype: Extrema_POnCurv2d
 
         """
-        return _Extrema.Extrema_SeqPCOfPCFOfEPCOfExtPC2d_First(self, *args)
+        return _Extrema.Extrema_SeqPCOfPCFOfEPCOfExtPC2d_First(self)
 
-    def Last(self, *args) -> "Extrema_POnCurv2d const &" :
+    def Last(self):
         """
         :rtype: Extrema_POnCurv2d
 
         """
-        return _Extrema.Extrema_SeqPCOfPCFOfEPCOfExtPC2d_Last(self, *args)
+        return _Extrema.Extrema_SeqPCOfPCFOfEPCOfExtPC2d_Last(self)
 
-    def Split(self, *args) -> "void" :
+    def Split(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Sub:
         :type Sub: Extrema_SeqPCOfPCFOfEPCOfExtPC2d &
         :rtype: None
@@ -13479,19 +14041,19 @@ class Extrema_SeqPCOfPCFOfEPCOfExtPC2d(OCC.TCollection.TCollection_BaseSequence)
         """
         return _Extrema.Extrema_SeqPCOfPCFOfEPCOfExtPC2d_Split(self, *args)
 
-    def Value(self, *args) -> "Extrema_POnCurv2d const &" :
+    def Value(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Extrema_POnCurv2d
 
         """
         return _Extrema.Extrema_SeqPCOfPCFOfEPCOfExtPC2d_Value(self, *args)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param I:
         :type I: Extrema_POnCurv2d &
         :rtype: None
@@ -13499,25 +14061,25 @@ class Extrema_SeqPCOfPCFOfEPCOfExtPC2d(OCC.TCollection.TCollection_BaseSequence)
         """
         return _Extrema.Extrema_SeqPCOfPCFOfEPCOfExtPC2d_SetValue(self, *args)
 
-    def ChangeValue(self, *args) -> "Extrema_POnCurv2d &" :
+    def ChangeValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Extrema_POnCurv2d
 
         """
         return _Extrema.Extrema_SeqPCOfPCFOfEPCOfExtPC2d_ChangeValue(self, *args)
 
-    def Remove(self, *args) -> "void" :
+    def Remove(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: None
 
         :param FromIndex:
-        :type FromIndex: int
+        :type FromIndex: Standard_Integer
         :param ToIndex:
-        :type ToIndex: int
+        :type ToIndex: Standard_Integer
         :rtype: None
 
         """
@@ -13552,20 +14114,20 @@ Extrema_SeqPCOfPCFOfEPCOfExtPC2d_swigregister(Extrema_SeqPCOfPCFOfEPCOfExtPC2d)
 class Extrema_SeqPCOfPCLocFOfLocEPCOfLocateExtPC(OCC.TCollection.TCollection_BaseSequence):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _Extrema.Extrema_SeqPCOfPCLocFOfLocEPCOfLocateExtPC_swiginit(self,_Extrema.new_Extrema_SeqPCOfPCLocFOfLocEPCOfLocateExtPC(*args))
-    def Clear(self, *args) -> "void" :
+        _Extrema.Extrema_SeqPCOfPCLocFOfLocEPCOfLocateExtPC_swiginit(self,_Extrema.new_Extrema_SeqPCOfPCLocFOfLocEPCOfLocateExtPC())
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _Extrema.Extrema_SeqPCOfPCLocFOfLocEPCOfLocateExtPC_Clear(self, *args)
+        return _Extrema.Extrema_SeqPCOfPCLocFOfLocEPCOfLocateExtPC_Clear(self)
 
-    def Assign(self, *args) -> "Extrema_SeqPCOfPCLocFOfLocEPCOfLocateExtPC const &" :
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: Extrema_SeqPCOfPCLocFOfLocEPCOfLocateExtPC &
@@ -13574,7 +14136,7 @@ class Extrema_SeqPCOfPCLocFOfLocEPCOfLocateExtPC(OCC.TCollection.TCollection_Bas
         """
         return _Extrema.Extrema_SeqPCOfPCLocFOfLocEPCOfLocateExtPC_Assign(self, *args)
 
-    def Set(self, *args) -> "Extrema_SeqPCOfPCLocFOfLocEPCOfLocateExtPC const &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: Extrema_SeqPCOfPCLocFOfLocEPCOfLocateExtPC &
@@ -13583,7 +14145,7 @@ class Extrema_SeqPCOfPCLocFOfLocEPCOfLocateExtPC(OCC.TCollection.TCollection_Bas
         """
         return _Extrema.Extrema_SeqPCOfPCLocFOfLocEPCOfLocateExtPC_Set(self, *args)
 
-    def Append(self, *args) -> "void" :
+    def Append(self, *args):
         """
         :param T:
         :type T: Extrema_POnCurv &
@@ -13596,7 +14158,7 @@ class Extrema_SeqPCOfPCLocFOfLocEPCOfLocateExtPC(OCC.TCollection.TCollection_Bas
         """
         return _Extrema.Extrema_SeqPCOfPCLocFOfLocEPCOfLocateExtPC_Append(self, *args)
 
-    def Prepend(self, *args) -> "void" :
+    def Prepend(self, *args):
         """
         :param T:
         :type T: Extrema_POnCurv &
@@ -13609,16 +14171,16 @@ class Extrema_SeqPCOfPCLocFOfLocEPCOfLocateExtPC(OCC.TCollection.TCollection_Bas
         """
         return _Extrema.Extrema_SeqPCOfPCLocFOfLocEPCOfLocateExtPC_Prepend(self, *args)
 
-    def InsertBefore(self, *args) -> "void" :
+    def InsertBefore(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param T:
         :type T: Extrema_POnCurv &
         :rtype: None
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param S:
         :type S: Extrema_SeqPCOfPCLocFOfLocEPCOfLocateExtPC &
         :rtype: None
@@ -13626,16 +14188,16 @@ class Extrema_SeqPCOfPCLocFOfLocEPCOfLocateExtPC(OCC.TCollection.TCollection_Bas
         """
         return _Extrema.Extrema_SeqPCOfPCLocFOfLocEPCOfLocateExtPC_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args) -> "void" :
+    def InsertAfter(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param T:
         :type T: Extrema_POnCurv &
         :rtype: None
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param S:
         :type S: Extrema_SeqPCOfPCLocFOfLocEPCOfLocateExtPC &
         :rtype: None
@@ -13643,24 +14205,24 @@ class Extrema_SeqPCOfPCLocFOfLocEPCOfLocateExtPC(OCC.TCollection.TCollection_Bas
         """
         return _Extrema.Extrema_SeqPCOfPCLocFOfLocEPCOfLocateExtPC_InsertAfter(self, *args)
 
-    def First(self, *args) -> "Extrema_POnCurv const &" :
+    def First(self):
         """
         :rtype: Extrema_POnCurv
 
         """
-        return _Extrema.Extrema_SeqPCOfPCLocFOfLocEPCOfLocateExtPC_First(self, *args)
+        return _Extrema.Extrema_SeqPCOfPCLocFOfLocEPCOfLocateExtPC_First(self)
 
-    def Last(self, *args) -> "Extrema_POnCurv const &" :
+    def Last(self):
         """
         :rtype: Extrema_POnCurv
 
         """
-        return _Extrema.Extrema_SeqPCOfPCLocFOfLocEPCOfLocateExtPC_Last(self, *args)
+        return _Extrema.Extrema_SeqPCOfPCLocFOfLocEPCOfLocateExtPC_Last(self)
 
-    def Split(self, *args) -> "void" :
+    def Split(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Sub:
         :type Sub: Extrema_SeqPCOfPCLocFOfLocEPCOfLocateExtPC &
         :rtype: None
@@ -13668,19 +14230,19 @@ class Extrema_SeqPCOfPCLocFOfLocEPCOfLocateExtPC(OCC.TCollection.TCollection_Bas
         """
         return _Extrema.Extrema_SeqPCOfPCLocFOfLocEPCOfLocateExtPC_Split(self, *args)
 
-    def Value(self, *args) -> "Extrema_POnCurv const &" :
+    def Value(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Extrema_POnCurv
 
         """
         return _Extrema.Extrema_SeqPCOfPCLocFOfLocEPCOfLocateExtPC_Value(self, *args)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param I:
         :type I: Extrema_POnCurv &
         :rtype: None
@@ -13688,25 +14250,25 @@ class Extrema_SeqPCOfPCLocFOfLocEPCOfLocateExtPC(OCC.TCollection.TCollection_Bas
         """
         return _Extrema.Extrema_SeqPCOfPCLocFOfLocEPCOfLocateExtPC_SetValue(self, *args)
 
-    def ChangeValue(self, *args) -> "Extrema_POnCurv &" :
+    def ChangeValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Extrema_POnCurv
 
         """
         return _Extrema.Extrema_SeqPCOfPCLocFOfLocEPCOfLocateExtPC_ChangeValue(self, *args)
 
-    def Remove(self, *args) -> "void" :
+    def Remove(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: None
 
         :param FromIndex:
-        :type FromIndex: int
+        :type FromIndex: Standard_Integer
         :param ToIndex:
-        :type ToIndex: int
+        :type ToIndex: Standard_Integer
         :rtype: None
 
         """
@@ -13741,20 +14303,20 @@ Extrema_SeqPCOfPCLocFOfLocEPCOfLocateExtPC_swigregister(Extrema_SeqPCOfPCLocFOfL
 class Extrema_SeqPCOfPCLocFOfLocEPCOfLocateExtPC2d(OCC.TCollection.TCollection_BaseSequence):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _Extrema.Extrema_SeqPCOfPCLocFOfLocEPCOfLocateExtPC2d_swiginit(self,_Extrema.new_Extrema_SeqPCOfPCLocFOfLocEPCOfLocateExtPC2d(*args))
-    def Clear(self, *args) -> "void" :
+        _Extrema.Extrema_SeqPCOfPCLocFOfLocEPCOfLocateExtPC2d_swiginit(self,_Extrema.new_Extrema_SeqPCOfPCLocFOfLocEPCOfLocateExtPC2d())
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _Extrema.Extrema_SeqPCOfPCLocFOfLocEPCOfLocateExtPC2d_Clear(self, *args)
+        return _Extrema.Extrema_SeqPCOfPCLocFOfLocEPCOfLocateExtPC2d_Clear(self)
 
-    def Assign(self, *args) -> "Extrema_SeqPCOfPCLocFOfLocEPCOfLocateExtPC2d const &" :
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: Extrema_SeqPCOfPCLocFOfLocEPCOfLocateExtPC2d &
@@ -13763,7 +14325,7 @@ class Extrema_SeqPCOfPCLocFOfLocEPCOfLocateExtPC2d(OCC.TCollection.TCollection_B
         """
         return _Extrema.Extrema_SeqPCOfPCLocFOfLocEPCOfLocateExtPC2d_Assign(self, *args)
 
-    def Set(self, *args) -> "Extrema_SeqPCOfPCLocFOfLocEPCOfLocateExtPC2d const &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: Extrema_SeqPCOfPCLocFOfLocEPCOfLocateExtPC2d &
@@ -13772,7 +14334,7 @@ class Extrema_SeqPCOfPCLocFOfLocEPCOfLocateExtPC2d(OCC.TCollection.TCollection_B
         """
         return _Extrema.Extrema_SeqPCOfPCLocFOfLocEPCOfLocateExtPC2d_Set(self, *args)
 
-    def Append(self, *args) -> "void" :
+    def Append(self, *args):
         """
         :param T:
         :type T: Extrema_POnCurv2d &
@@ -13785,7 +14347,7 @@ class Extrema_SeqPCOfPCLocFOfLocEPCOfLocateExtPC2d(OCC.TCollection.TCollection_B
         """
         return _Extrema.Extrema_SeqPCOfPCLocFOfLocEPCOfLocateExtPC2d_Append(self, *args)
 
-    def Prepend(self, *args) -> "void" :
+    def Prepend(self, *args):
         """
         :param T:
         :type T: Extrema_POnCurv2d &
@@ -13798,16 +14360,16 @@ class Extrema_SeqPCOfPCLocFOfLocEPCOfLocateExtPC2d(OCC.TCollection.TCollection_B
         """
         return _Extrema.Extrema_SeqPCOfPCLocFOfLocEPCOfLocateExtPC2d_Prepend(self, *args)
 
-    def InsertBefore(self, *args) -> "void" :
+    def InsertBefore(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param T:
         :type T: Extrema_POnCurv2d &
         :rtype: None
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param S:
         :type S: Extrema_SeqPCOfPCLocFOfLocEPCOfLocateExtPC2d &
         :rtype: None
@@ -13815,16 +14377,16 @@ class Extrema_SeqPCOfPCLocFOfLocEPCOfLocateExtPC2d(OCC.TCollection.TCollection_B
         """
         return _Extrema.Extrema_SeqPCOfPCLocFOfLocEPCOfLocateExtPC2d_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args) -> "void" :
+    def InsertAfter(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param T:
         :type T: Extrema_POnCurv2d &
         :rtype: None
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param S:
         :type S: Extrema_SeqPCOfPCLocFOfLocEPCOfLocateExtPC2d &
         :rtype: None
@@ -13832,24 +14394,24 @@ class Extrema_SeqPCOfPCLocFOfLocEPCOfLocateExtPC2d(OCC.TCollection.TCollection_B
         """
         return _Extrema.Extrema_SeqPCOfPCLocFOfLocEPCOfLocateExtPC2d_InsertAfter(self, *args)
 
-    def First(self, *args) -> "Extrema_POnCurv2d const &" :
+    def First(self):
         """
         :rtype: Extrema_POnCurv2d
 
         """
-        return _Extrema.Extrema_SeqPCOfPCLocFOfLocEPCOfLocateExtPC2d_First(self, *args)
+        return _Extrema.Extrema_SeqPCOfPCLocFOfLocEPCOfLocateExtPC2d_First(self)
 
-    def Last(self, *args) -> "Extrema_POnCurv2d const &" :
+    def Last(self):
         """
         :rtype: Extrema_POnCurv2d
 
         """
-        return _Extrema.Extrema_SeqPCOfPCLocFOfLocEPCOfLocateExtPC2d_Last(self, *args)
+        return _Extrema.Extrema_SeqPCOfPCLocFOfLocEPCOfLocateExtPC2d_Last(self)
 
-    def Split(self, *args) -> "void" :
+    def Split(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Sub:
         :type Sub: Extrema_SeqPCOfPCLocFOfLocEPCOfLocateExtPC2d &
         :rtype: None
@@ -13857,19 +14419,19 @@ class Extrema_SeqPCOfPCLocFOfLocEPCOfLocateExtPC2d(OCC.TCollection.TCollection_B
         """
         return _Extrema.Extrema_SeqPCOfPCLocFOfLocEPCOfLocateExtPC2d_Split(self, *args)
 
-    def Value(self, *args) -> "Extrema_POnCurv2d const &" :
+    def Value(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Extrema_POnCurv2d
 
         """
         return _Extrema.Extrema_SeqPCOfPCLocFOfLocEPCOfLocateExtPC2d_Value(self, *args)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param I:
         :type I: Extrema_POnCurv2d &
         :rtype: None
@@ -13877,25 +14439,25 @@ class Extrema_SeqPCOfPCLocFOfLocEPCOfLocateExtPC2d(OCC.TCollection.TCollection_B
         """
         return _Extrema.Extrema_SeqPCOfPCLocFOfLocEPCOfLocateExtPC2d_SetValue(self, *args)
 
-    def ChangeValue(self, *args) -> "Extrema_POnCurv2d &" :
+    def ChangeValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Extrema_POnCurv2d
 
         """
         return _Extrema.Extrema_SeqPCOfPCLocFOfLocEPCOfLocateExtPC2d_ChangeValue(self, *args)
 
-    def Remove(self, *args) -> "void" :
+    def Remove(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: None
 
         :param FromIndex:
-        :type FromIndex: int
+        :type FromIndex: Standard_Integer
         :param ToIndex:
-        :type ToIndex: int
+        :type ToIndex: Standard_Integer
         :rtype: None
 
         """
@@ -13930,20 +14492,20 @@ Extrema_SeqPCOfPCLocFOfLocEPCOfLocateExtPC2d_swigregister(Extrema_SeqPCOfPCLocFO
 class Extrema_SeqPOnCOfCCFOfECC2dOfExtCC2d(OCC.TCollection.TCollection_BaseSequence):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _Extrema.Extrema_SeqPOnCOfCCFOfECC2dOfExtCC2d_swiginit(self,_Extrema.new_Extrema_SeqPOnCOfCCFOfECC2dOfExtCC2d(*args))
-    def Clear(self, *args) -> "void" :
+        _Extrema.Extrema_SeqPOnCOfCCFOfECC2dOfExtCC2d_swiginit(self,_Extrema.new_Extrema_SeqPOnCOfCCFOfECC2dOfExtCC2d())
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _Extrema.Extrema_SeqPOnCOfCCFOfECC2dOfExtCC2d_Clear(self, *args)
+        return _Extrema.Extrema_SeqPOnCOfCCFOfECC2dOfExtCC2d_Clear(self)
 
-    def Assign(self, *args) -> "Extrema_SeqPOnCOfCCFOfECC2dOfExtCC2d const &" :
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: Extrema_SeqPOnCOfCCFOfECC2dOfExtCC2d &
@@ -13952,7 +14514,7 @@ class Extrema_SeqPOnCOfCCFOfECC2dOfExtCC2d(OCC.TCollection.TCollection_BaseSeque
         """
         return _Extrema.Extrema_SeqPOnCOfCCFOfECC2dOfExtCC2d_Assign(self, *args)
 
-    def Set(self, *args) -> "Extrema_SeqPOnCOfCCFOfECC2dOfExtCC2d const &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: Extrema_SeqPOnCOfCCFOfECC2dOfExtCC2d &
@@ -13961,7 +14523,7 @@ class Extrema_SeqPOnCOfCCFOfECC2dOfExtCC2d(OCC.TCollection.TCollection_BaseSeque
         """
         return _Extrema.Extrema_SeqPOnCOfCCFOfECC2dOfExtCC2d_Set(self, *args)
 
-    def Append(self, *args) -> "void" :
+    def Append(self, *args):
         """
         :param T:
         :type T: Extrema_POnCurv2d &
@@ -13974,7 +14536,7 @@ class Extrema_SeqPOnCOfCCFOfECC2dOfExtCC2d(OCC.TCollection.TCollection_BaseSeque
         """
         return _Extrema.Extrema_SeqPOnCOfCCFOfECC2dOfExtCC2d_Append(self, *args)
 
-    def Prepend(self, *args) -> "void" :
+    def Prepend(self, *args):
         """
         :param T:
         :type T: Extrema_POnCurv2d &
@@ -13987,16 +14549,16 @@ class Extrema_SeqPOnCOfCCFOfECC2dOfExtCC2d(OCC.TCollection.TCollection_BaseSeque
         """
         return _Extrema.Extrema_SeqPOnCOfCCFOfECC2dOfExtCC2d_Prepend(self, *args)
 
-    def InsertBefore(self, *args) -> "void" :
+    def InsertBefore(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param T:
         :type T: Extrema_POnCurv2d &
         :rtype: None
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param S:
         :type S: Extrema_SeqPOnCOfCCFOfECC2dOfExtCC2d &
         :rtype: None
@@ -14004,16 +14566,16 @@ class Extrema_SeqPOnCOfCCFOfECC2dOfExtCC2d(OCC.TCollection.TCollection_BaseSeque
         """
         return _Extrema.Extrema_SeqPOnCOfCCFOfECC2dOfExtCC2d_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args) -> "void" :
+    def InsertAfter(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param T:
         :type T: Extrema_POnCurv2d &
         :rtype: None
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param S:
         :type S: Extrema_SeqPOnCOfCCFOfECC2dOfExtCC2d &
         :rtype: None
@@ -14021,24 +14583,24 @@ class Extrema_SeqPOnCOfCCFOfECC2dOfExtCC2d(OCC.TCollection.TCollection_BaseSeque
         """
         return _Extrema.Extrema_SeqPOnCOfCCFOfECC2dOfExtCC2d_InsertAfter(self, *args)
 
-    def First(self, *args) -> "Extrema_POnCurv2d const &" :
+    def First(self):
         """
         :rtype: Extrema_POnCurv2d
 
         """
-        return _Extrema.Extrema_SeqPOnCOfCCFOfECC2dOfExtCC2d_First(self, *args)
+        return _Extrema.Extrema_SeqPOnCOfCCFOfECC2dOfExtCC2d_First(self)
 
-    def Last(self, *args) -> "Extrema_POnCurv2d const &" :
+    def Last(self):
         """
         :rtype: Extrema_POnCurv2d
 
         """
-        return _Extrema.Extrema_SeqPOnCOfCCFOfECC2dOfExtCC2d_Last(self, *args)
+        return _Extrema.Extrema_SeqPOnCOfCCFOfECC2dOfExtCC2d_Last(self)
 
-    def Split(self, *args) -> "void" :
+    def Split(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Sub:
         :type Sub: Extrema_SeqPOnCOfCCFOfECC2dOfExtCC2d &
         :rtype: None
@@ -14046,19 +14608,19 @@ class Extrema_SeqPOnCOfCCFOfECC2dOfExtCC2d(OCC.TCollection.TCollection_BaseSeque
         """
         return _Extrema.Extrema_SeqPOnCOfCCFOfECC2dOfExtCC2d_Split(self, *args)
 
-    def Value(self, *args) -> "Extrema_POnCurv2d const &" :
+    def Value(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Extrema_POnCurv2d
 
         """
         return _Extrema.Extrema_SeqPOnCOfCCFOfECC2dOfExtCC2d_Value(self, *args)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param I:
         :type I: Extrema_POnCurv2d &
         :rtype: None
@@ -14066,25 +14628,25 @@ class Extrema_SeqPOnCOfCCFOfECC2dOfExtCC2d(OCC.TCollection.TCollection_BaseSeque
         """
         return _Extrema.Extrema_SeqPOnCOfCCFOfECC2dOfExtCC2d_SetValue(self, *args)
 
-    def ChangeValue(self, *args) -> "Extrema_POnCurv2d &" :
+    def ChangeValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Extrema_POnCurv2d
 
         """
         return _Extrema.Extrema_SeqPOnCOfCCFOfECC2dOfExtCC2d_ChangeValue(self, *args)
 
-    def Remove(self, *args) -> "void" :
+    def Remove(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: None
 
         :param FromIndex:
-        :type FromIndex: int
+        :type FromIndex: Standard_Integer
         :param ToIndex:
-        :type ToIndex: int
+        :type ToIndex: Standard_Integer
         :rtype: None
 
         """
@@ -14119,20 +14681,20 @@ Extrema_SeqPOnCOfCCFOfECC2dOfExtCC2d_swigregister(Extrema_SeqPOnCOfCCFOfECC2dOfE
 class Extrema_SeqPOnCOfCCFOfECCOfExtCC(OCC.TCollection.TCollection_BaseSequence):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _Extrema.Extrema_SeqPOnCOfCCFOfECCOfExtCC_swiginit(self,_Extrema.new_Extrema_SeqPOnCOfCCFOfECCOfExtCC(*args))
-    def Clear(self, *args) -> "void" :
+        _Extrema.Extrema_SeqPOnCOfCCFOfECCOfExtCC_swiginit(self,_Extrema.new_Extrema_SeqPOnCOfCCFOfECCOfExtCC())
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _Extrema.Extrema_SeqPOnCOfCCFOfECCOfExtCC_Clear(self, *args)
+        return _Extrema.Extrema_SeqPOnCOfCCFOfECCOfExtCC_Clear(self)
 
-    def Assign(self, *args) -> "Extrema_SeqPOnCOfCCFOfECCOfExtCC const &" :
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: Extrema_SeqPOnCOfCCFOfECCOfExtCC &
@@ -14141,7 +14703,7 @@ class Extrema_SeqPOnCOfCCFOfECCOfExtCC(OCC.TCollection.TCollection_BaseSequence)
         """
         return _Extrema.Extrema_SeqPOnCOfCCFOfECCOfExtCC_Assign(self, *args)
 
-    def Set(self, *args) -> "Extrema_SeqPOnCOfCCFOfECCOfExtCC const &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: Extrema_SeqPOnCOfCCFOfECCOfExtCC &
@@ -14150,7 +14712,7 @@ class Extrema_SeqPOnCOfCCFOfECCOfExtCC(OCC.TCollection.TCollection_BaseSequence)
         """
         return _Extrema.Extrema_SeqPOnCOfCCFOfECCOfExtCC_Set(self, *args)
 
-    def Append(self, *args) -> "void" :
+    def Append(self, *args):
         """
         :param T:
         :type T: Extrema_POnCurv &
@@ -14163,7 +14725,7 @@ class Extrema_SeqPOnCOfCCFOfECCOfExtCC(OCC.TCollection.TCollection_BaseSequence)
         """
         return _Extrema.Extrema_SeqPOnCOfCCFOfECCOfExtCC_Append(self, *args)
 
-    def Prepend(self, *args) -> "void" :
+    def Prepend(self, *args):
         """
         :param T:
         :type T: Extrema_POnCurv &
@@ -14176,16 +14738,16 @@ class Extrema_SeqPOnCOfCCFOfECCOfExtCC(OCC.TCollection.TCollection_BaseSequence)
         """
         return _Extrema.Extrema_SeqPOnCOfCCFOfECCOfExtCC_Prepend(self, *args)
 
-    def InsertBefore(self, *args) -> "void" :
+    def InsertBefore(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param T:
         :type T: Extrema_POnCurv &
         :rtype: None
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param S:
         :type S: Extrema_SeqPOnCOfCCFOfECCOfExtCC &
         :rtype: None
@@ -14193,16 +14755,16 @@ class Extrema_SeqPOnCOfCCFOfECCOfExtCC(OCC.TCollection.TCollection_BaseSequence)
         """
         return _Extrema.Extrema_SeqPOnCOfCCFOfECCOfExtCC_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args) -> "void" :
+    def InsertAfter(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param T:
         :type T: Extrema_POnCurv &
         :rtype: None
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param S:
         :type S: Extrema_SeqPOnCOfCCFOfECCOfExtCC &
         :rtype: None
@@ -14210,24 +14772,24 @@ class Extrema_SeqPOnCOfCCFOfECCOfExtCC(OCC.TCollection.TCollection_BaseSequence)
         """
         return _Extrema.Extrema_SeqPOnCOfCCFOfECCOfExtCC_InsertAfter(self, *args)
 
-    def First(self, *args) -> "Extrema_POnCurv const &" :
+    def First(self):
         """
         :rtype: Extrema_POnCurv
 
         """
-        return _Extrema.Extrema_SeqPOnCOfCCFOfECCOfExtCC_First(self, *args)
+        return _Extrema.Extrema_SeqPOnCOfCCFOfECCOfExtCC_First(self)
 
-    def Last(self, *args) -> "Extrema_POnCurv const &" :
+    def Last(self):
         """
         :rtype: Extrema_POnCurv
 
         """
-        return _Extrema.Extrema_SeqPOnCOfCCFOfECCOfExtCC_Last(self, *args)
+        return _Extrema.Extrema_SeqPOnCOfCCFOfECCOfExtCC_Last(self)
 
-    def Split(self, *args) -> "void" :
+    def Split(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Sub:
         :type Sub: Extrema_SeqPOnCOfCCFOfECCOfExtCC &
         :rtype: None
@@ -14235,19 +14797,19 @@ class Extrema_SeqPOnCOfCCFOfECCOfExtCC(OCC.TCollection.TCollection_BaseSequence)
         """
         return _Extrema.Extrema_SeqPOnCOfCCFOfECCOfExtCC_Split(self, *args)
 
-    def Value(self, *args) -> "Extrema_POnCurv const &" :
+    def Value(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Extrema_POnCurv
 
         """
         return _Extrema.Extrema_SeqPOnCOfCCFOfECCOfExtCC_Value(self, *args)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param I:
         :type I: Extrema_POnCurv &
         :rtype: None
@@ -14255,25 +14817,25 @@ class Extrema_SeqPOnCOfCCFOfECCOfExtCC(OCC.TCollection.TCollection_BaseSequence)
         """
         return _Extrema.Extrema_SeqPOnCOfCCFOfECCOfExtCC_SetValue(self, *args)
 
-    def ChangeValue(self, *args) -> "Extrema_POnCurv &" :
+    def ChangeValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Extrema_POnCurv
 
         """
         return _Extrema.Extrema_SeqPOnCOfCCFOfECCOfExtCC_ChangeValue(self, *args)
 
-    def Remove(self, *args) -> "void" :
+    def Remove(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: None
 
         :param FromIndex:
-        :type FromIndex: int
+        :type FromIndex: Standard_Integer
         :param ToIndex:
-        :type ToIndex: int
+        :type ToIndex: Standard_Integer
         :rtype: None
 
         """
@@ -14308,20 +14870,20 @@ Extrema_SeqPOnCOfCCFOfECCOfExtCC_swigregister(Extrema_SeqPOnCOfCCFOfECCOfExtCC)
 class Extrema_SeqPOnCOfCCFOfELCC2dOfLocateExtCC2d(OCC.TCollection.TCollection_BaseSequence):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _Extrema.Extrema_SeqPOnCOfCCFOfELCC2dOfLocateExtCC2d_swiginit(self,_Extrema.new_Extrema_SeqPOnCOfCCFOfELCC2dOfLocateExtCC2d(*args))
-    def Clear(self, *args) -> "void" :
+        _Extrema.Extrema_SeqPOnCOfCCFOfELCC2dOfLocateExtCC2d_swiginit(self,_Extrema.new_Extrema_SeqPOnCOfCCFOfELCC2dOfLocateExtCC2d())
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _Extrema.Extrema_SeqPOnCOfCCFOfELCC2dOfLocateExtCC2d_Clear(self, *args)
+        return _Extrema.Extrema_SeqPOnCOfCCFOfELCC2dOfLocateExtCC2d_Clear(self)
 
-    def Assign(self, *args) -> "Extrema_SeqPOnCOfCCFOfELCC2dOfLocateExtCC2d const &" :
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: Extrema_SeqPOnCOfCCFOfELCC2dOfLocateExtCC2d &
@@ -14330,7 +14892,7 @@ class Extrema_SeqPOnCOfCCFOfELCC2dOfLocateExtCC2d(OCC.TCollection.TCollection_Ba
         """
         return _Extrema.Extrema_SeqPOnCOfCCFOfELCC2dOfLocateExtCC2d_Assign(self, *args)
 
-    def Set(self, *args) -> "Extrema_SeqPOnCOfCCFOfELCC2dOfLocateExtCC2d const &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: Extrema_SeqPOnCOfCCFOfELCC2dOfLocateExtCC2d &
@@ -14339,7 +14901,7 @@ class Extrema_SeqPOnCOfCCFOfELCC2dOfLocateExtCC2d(OCC.TCollection.TCollection_Ba
         """
         return _Extrema.Extrema_SeqPOnCOfCCFOfELCC2dOfLocateExtCC2d_Set(self, *args)
 
-    def Append(self, *args) -> "void" :
+    def Append(self, *args):
         """
         :param T:
         :type T: Extrema_POnCurv2d &
@@ -14352,7 +14914,7 @@ class Extrema_SeqPOnCOfCCFOfELCC2dOfLocateExtCC2d(OCC.TCollection.TCollection_Ba
         """
         return _Extrema.Extrema_SeqPOnCOfCCFOfELCC2dOfLocateExtCC2d_Append(self, *args)
 
-    def Prepend(self, *args) -> "void" :
+    def Prepend(self, *args):
         """
         :param T:
         :type T: Extrema_POnCurv2d &
@@ -14365,16 +14927,16 @@ class Extrema_SeqPOnCOfCCFOfELCC2dOfLocateExtCC2d(OCC.TCollection.TCollection_Ba
         """
         return _Extrema.Extrema_SeqPOnCOfCCFOfELCC2dOfLocateExtCC2d_Prepend(self, *args)
 
-    def InsertBefore(self, *args) -> "void" :
+    def InsertBefore(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param T:
         :type T: Extrema_POnCurv2d &
         :rtype: None
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param S:
         :type S: Extrema_SeqPOnCOfCCFOfELCC2dOfLocateExtCC2d &
         :rtype: None
@@ -14382,16 +14944,16 @@ class Extrema_SeqPOnCOfCCFOfELCC2dOfLocateExtCC2d(OCC.TCollection.TCollection_Ba
         """
         return _Extrema.Extrema_SeqPOnCOfCCFOfELCC2dOfLocateExtCC2d_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args) -> "void" :
+    def InsertAfter(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param T:
         :type T: Extrema_POnCurv2d &
         :rtype: None
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param S:
         :type S: Extrema_SeqPOnCOfCCFOfELCC2dOfLocateExtCC2d &
         :rtype: None
@@ -14399,24 +14961,24 @@ class Extrema_SeqPOnCOfCCFOfELCC2dOfLocateExtCC2d(OCC.TCollection.TCollection_Ba
         """
         return _Extrema.Extrema_SeqPOnCOfCCFOfELCC2dOfLocateExtCC2d_InsertAfter(self, *args)
 
-    def First(self, *args) -> "Extrema_POnCurv2d const &" :
+    def First(self):
         """
         :rtype: Extrema_POnCurv2d
 
         """
-        return _Extrema.Extrema_SeqPOnCOfCCFOfELCC2dOfLocateExtCC2d_First(self, *args)
+        return _Extrema.Extrema_SeqPOnCOfCCFOfELCC2dOfLocateExtCC2d_First(self)
 
-    def Last(self, *args) -> "Extrema_POnCurv2d const &" :
+    def Last(self):
         """
         :rtype: Extrema_POnCurv2d
 
         """
-        return _Extrema.Extrema_SeqPOnCOfCCFOfELCC2dOfLocateExtCC2d_Last(self, *args)
+        return _Extrema.Extrema_SeqPOnCOfCCFOfELCC2dOfLocateExtCC2d_Last(self)
 
-    def Split(self, *args) -> "void" :
+    def Split(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Sub:
         :type Sub: Extrema_SeqPOnCOfCCFOfELCC2dOfLocateExtCC2d &
         :rtype: None
@@ -14424,19 +14986,19 @@ class Extrema_SeqPOnCOfCCFOfELCC2dOfLocateExtCC2d(OCC.TCollection.TCollection_Ba
         """
         return _Extrema.Extrema_SeqPOnCOfCCFOfELCC2dOfLocateExtCC2d_Split(self, *args)
 
-    def Value(self, *args) -> "Extrema_POnCurv2d const &" :
+    def Value(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Extrema_POnCurv2d
 
         """
         return _Extrema.Extrema_SeqPOnCOfCCFOfELCC2dOfLocateExtCC2d_Value(self, *args)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param I:
         :type I: Extrema_POnCurv2d &
         :rtype: None
@@ -14444,25 +15006,25 @@ class Extrema_SeqPOnCOfCCFOfELCC2dOfLocateExtCC2d(OCC.TCollection.TCollection_Ba
         """
         return _Extrema.Extrema_SeqPOnCOfCCFOfELCC2dOfLocateExtCC2d_SetValue(self, *args)
 
-    def ChangeValue(self, *args) -> "Extrema_POnCurv2d &" :
+    def ChangeValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Extrema_POnCurv2d
 
         """
         return _Extrema.Extrema_SeqPOnCOfCCFOfELCC2dOfLocateExtCC2d_ChangeValue(self, *args)
 
-    def Remove(self, *args) -> "void" :
+    def Remove(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: None
 
         :param FromIndex:
-        :type FromIndex: int
+        :type FromIndex: Standard_Integer
         :param ToIndex:
-        :type ToIndex: int
+        :type ToIndex: Standard_Integer
         :rtype: None
 
         """
@@ -14497,20 +15059,20 @@ Extrema_SeqPOnCOfCCFOfELCC2dOfLocateExtCC2d_swigregister(Extrema_SeqPOnCOfCCFOfE
 class Extrema_SeqPOnCOfCCFOfELCCOfLocateExtCC(OCC.TCollection.TCollection_BaseSequence):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _Extrema.Extrema_SeqPOnCOfCCFOfELCCOfLocateExtCC_swiginit(self,_Extrema.new_Extrema_SeqPOnCOfCCFOfELCCOfLocateExtCC(*args))
-    def Clear(self, *args) -> "void" :
+        _Extrema.Extrema_SeqPOnCOfCCFOfELCCOfLocateExtCC_swiginit(self,_Extrema.new_Extrema_SeqPOnCOfCCFOfELCCOfLocateExtCC())
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _Extrema.Extrema_SeqPOnCOfCCFOfELCCOfLocateExtCC_Clear(self, *args)
+        return _Extrema.Extrema_SeqPOnCOfCCFOfELCCOfLocateExtCC_Clear(self)
 
-    def Assign(self, *args) -> "Extrema_SeqPOnCOfCCFOfELCCOfLocateExtCC const &" :
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: Extrema_SeqPOnCOfCCFOfELCCOfLocateExtCC &
@@ -14519,7 +15081,7 @@ class Extrema_SeqPOnCOfCCFOfELCCOfLocateExtCC(OCC.TCollection.TCollection_BaseSe
         """
         return _Extrema.Extrema_SeqPOnCOfCCFOfELCCOfLocateExtCC_Assign(self, *args)
 
-    def Set(self, *args) -> "Extrema_SeqPOnCOfCCFOfELCCOfLocateExtCC const &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: Extrema_SeqPOnCOfCCFOfELCCOfLocateExtCC &
@@ -14528,7 +15090,7 @@ class Extrema_SeqPOnCOfCCFOfELCCOfLocateExtCC(OCC.TCollection.TCollection_BaseSe
         """
         return _Extrema.Extrema_SeqPOnCOfCCFOfELCCOfLocateExtCC_Set(self, *args)
 
-    def Append(self, *args) -> "void" :
+    def Append(self, *args):
         """
         :param T:
         :type T: Extrema_POnCurv &
@@ -14541,7 +15103,7 @@ class Extrema_SeqPOnCOfCCFOfELCCOfLocateExtCC(OCC.TCollection.TCollection_BaseSe
         """
         return _Extrema.Extrema_SeqPOnCOfCCFOfELCCOfLocateExtCC_Append(self, *args)
 
-    def Prepend(self, *args) -> "void" :
+    def Prepend(self, *args):
         """
         :param T:
         :type T: Extrema_POnCurv &
@@ -14554,16 +15116,16 @@ class Extrema_SeqPOnCOfCCFOfELCCOfLocateExtCC(OCC.TCollection.TCollection_BaseSe
         """
         return _Extrema.Extrema_SeqPOnCOfCCFOfELCCOfLocateExtCC_Prepend(self, *args)
 
-    def InsertBefore(self, *args) -> "void" :
+    def InsertBefore(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param T:
         :type T: Extrema_POnCurv &
         :rtype: None
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param S:
         :type S: Extrema_SeqPOnCOfCCFOfELCCOfLocateExtCC &
         :rtype: None
@@ -14571,16 +15133,16 @@ class Extrema_SeqPOnCOfCCFOfELCCOfLocateExtCC(OCC.TCollection.TCollection_BaseSe
         """
         return _Extrema.Extrema_SeqPOnCOfCCFOfELCCOfLocateExtCC_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args) -> "void" :
+    def InsertAfter(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param T:
         :type T: Extrema_POnCurv &
         :rtype: None
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param S:
         :type S: Extrema_SeqPOnCOfCCFOfELCCOfLocateExtCC &
         :rtype: None
@@ -14588,24 +15150,24 @@ class Extrema_SeqPOnCOfCCFOfELCCOfLocateExtCC(OCC.TCollection.TCollection_BaseSe
         """
         return _Extrema.Extrema_SeqPOnCOfCCFOfELCCOfLocateExtCC_InsertAfter(self, *args)
 
-    def First(self, *args) -> "Extrema_POnCurv const &" :
+    def First(self):
         """
         :rtype: Extrema_POnCurv
 
         """
-        return _Extrema.Extrema_SeqPOnCOfCCFOfELCCOfLocateExtCC_First(self, *args)
+        return _Extrema.Extrema_SeqPOnCOfCCFOfELCCOfLocateExtCC_First(self)
 
-    def Last(self, *args) -> "Extrema_POnCurv const &" :
+    def Last(self):
         """
         :rtype: Extrema_POnCurv
 
         """
-        return _Extrema.Extrema_SeqPOnCOfCCFOfELCCOfLocateExtCC_Last(self, *args)
+        return _Extrema.Extrema_SeqPOnCOfCCFOfELCCOfLocateExtCC_Last(self)
 
-    def Split(self, *args) -> "void" :
+    def Split(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Sub:
         :type Sub: Extrema_SeqPOnCOfCCFOfELCCOfLocateExtCC &
         :rtype: None
@@ -14613,19 +15175,19 @@ class Extrema_SeqPOnCOfCCFOfELCCOfLocateExtCC(OCC.TCollection.TCollection_BaseSe
         """
         return _Extrema.Extrema_SeqPOnCOfCCFOfELCCOfLocateExtCC_Split(self, *args)
 
-    def Value(self, *args) -> "Extrema_POnCurv const &" :
+    def Value(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Extrema_POnCurv
 
         """
         return _Extrema.Extrema_SeqPOnCOfCCFOfELCCOfLocateExtCC_Value(self, *args)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param I:
         :type I: Extrema_POnCurv &
         :rtype: None
@@ -14633,25 +15195,25 @@ class Extrema_SeqPOnCOfCCFOfELCCOfLocateExtCC(OCC.TCollection.TCollection_BaseSe
         """
         return _Extrema.Extrema_SeqPOnCOfCCFOfELCCOfLocateExtCC_SetValue(self, *args)
 
-    def ChangeValue(self, *args) -> "Extrema_POnCurv &" :
+    def ChangeValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Extrema_POnCurv
 
         """
         return _Extrema.Extrema_SeqPOnCOfCCFOfELCCOfLocateExtCC_ChangeValue(self, *args)
 
-    def Remove(self, *args) -> "void" :
+    def Remove(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: None
 
         :param FromIndex:
-        :type FromIndex: int
+        :type FromIndex: Standard_Integer
         :param ToIndex:
-        :type ToIndex: int
+        :type ToIndex: Standard_Integer
         :rtype: None
 
         """
@@ -14686,20 +15248,20 @@ Extrema_SeqPOnCOfCCFOfELCCOfLocateExtCC_swigregister(Extrema_SeqPOnCOfCCFOfELCCO
 class Extrema_SeqPOnCOfCCLocFOfLocECC2dOfLocateExtCC2d(OCC.TCollection.TCollection_BaseSequence):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _Extrema.Extrema_SeqPOnCOfCCLocFOfLocECC2dOfLocateExtCC2d_swiginit(self,_Extrema.new_Extrema_SeqPOnCOfCCLocFOfLocECC2dOfLocateExtCC2d(*args))
-    def Clear(self, *args) -> "void" :
+        _Extrema.Extrema_SeqPOnCOfCCLocFOfLocECC2dOfLocateExtCC2d_swiginit(self,_Extrema.new_Extrema_SeqPOnCOfCCLocFOfLocECC2dOfLocateExtCC2d())
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _Extrema.Extrema_SeqPOnCOfCCLocFOfLocECC2dOfLocateExtCC2d_Clear(self, *args)
+        return _Extrema.Extrema_SeqPOnCOfCCLocFOfLocECC2dOfLocateExtCC2d_Clear(self)
 
-    def Assign(self, *args) -> "Extrema_SeqPOnCOfCCLocFOfLocECC2dOfLocateExtCC2d const &" :
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: Extrema_SeqPOnCOfCCLocFOfLocECC2dOfLocateExtCC2d &
@@ -14708,7 +15270,7 @@ class Extrema_SeqPOnCOfCCLocFOfLocECC2dOfLocateExtCC2d(OCC.TCollection.TCollecti
         """
         return _Extrema.Extrema_SeqPOnCOfCCLocFOfLocECC2dOfLocateExtCC2d_Assign(self, *args)
 
-    def Set(self, *args) -> "Extrema_SeqPOnCOfCCLocFOfLocECC2dOfLocateExtCC2d const &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: Extrema_SeqPOnCOfCCLocFOfLocECC2dOfLocateExtCC2d &
@@ -14717,7 +15279,7 @@ class Extrema_SeqPOnCOfCCLocFOfLocECC2dOfLocateExtCC2d(OCC.TCollection.TCollecti
         """
         return _Extrema.Extrema_SeqPOnCOfCCLocFOfLocECC2dOfLocateExtCC2d_Set(self, *args)
 
-    def Append(self, *args) -> "void" :
+    def Append(self, *args):
         """
         :param T:
         :type T: Extrema_POnCurv2d &
@@ -14730,7 +15292,7 @@ class Extrema_SeqPOnCOfCCLocFOfLocECC2dOfLocateExtCC2d(OCC.TCollection.TCollecti
         """
         return _Extrema.Extrema_SeqPOnCOfCCLocFOfLocECC2dOfLocateExtCC2d_Append(self, *args)
 
-    def Prepend(self, *args) -> "void" :
+    def Prepend(self, *args):
         """
         :param T:
         :type T: Extrema_POnCurv2d &
@@ -14743,16 +15305,16 @@ class Extrema_SeqPOnCOfCCLocFOfLocECC2dOfLocateExtCC2d(OCC.TCollection.TCollecti
         """
         return _Extrema.Extrema_SeqPOnCOfCCLocFOfLocECC2dOfLocateExtCC2d_Prepend(self, *args)
 
-    def InsertBefore(self, *args) -> "void" :
+    def InsertBefore(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param T:
         :type T: Extrema_POnCurv2d &
         :rtype: None
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param S:
         :type S: Extrema_SeqPOnCOfCCLocFOfLocECC2dOfLocateExtCC2d &
         :rtype: None
@@ -14760,16 +15322,16 @@ class Extrema_SeqPOnCOfCCLocFOfLocECC2dOfLocateExtCC2d(OCC.TCollection.TCollecti
         """
         return _Extrema.Extrema_SeqPOnCOfCCLocFOfLocECC2dOfLocateExtCC2d_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args) -> "void" :
+    def InsertAfter(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param T:
         :type T: Extrema_POnCurv2d &
         :rtype: None
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param S:
         :type S: Extrema_SeqPOnCOfCCLocFOfLocECC2dOfLocateExtCC2d &
         :rtype: None
@@ -14777,24 +15339,24 @@ class Extrema_SeqPOnCOfCCLocFOfLocECC2dOfLocateExtCC2d(OCC.TCollection.TCollecti
         """
         return _Extrema.Extrema_SeqPOnCOfCCLocFOfLocECC2dOfLocateExtCC2d_InsertAfter(self, *args)
 
-    def First(self, *args) -> "Extrema_POnCurv2d const &" :
+    def First(self):
         """
         :rtype: Extrema_POnCurv2d
 
         """
-        return _Extrema.Extrema_SeqPOnCOfCCLocFOfLocECC2dOfLocateExtCC2d_First(self, *args)
+        return _Extrema.Extrema_SeqPOnCOfCCLocFOfLocECC2dOfLocateExtCC2d_First(self)
 
-    def Last(self, *args) -> "Extrema_POnCurv2d const &" :
+    def Last(self):
         """
         :rtype: Extrema_POnCurv2d
 
         """
-        return _Extrema.Extrema_SeqPOnCOfCCLocFOfLocECC2dOfLocateExtCC2d_Last(self, *args)
+        return _Extrema.Extrema_SeqPOnCOfCCLocFOfLocECC2dOfLocateExtCC2d_Last(self)
 
-    def Split(self, *args) -> "void" :
+    def Split(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Sub:
         :type Sub: Extrema_SeqPOnCOfCCLocFOfLocECC2dOfLocateExtCC2d &
         :rtype: None
@@ -14802,19 +15364,19 @@ class Extrema_SeqPOnCOfCCLocFOfLocECC2dOfLocateExtCC2d(OCC.TCollection.TCollecti
         """
         return _Extrema.Extrema_SeqPOnCOfCCLocFOfLocECC2dOfLocateExtCC2d_Split(self, *args)
 
-    def Value(self, *args) -> "Extrema_POnCurv2d const &" :
+    def Value(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Extrema_POnCurv2d
 
         """
         return _Extrema.Extrema_SeqPOnCOfCCLocFOfLocECC2dOfLocateExtCC2d_Value(self, *args)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param I:
         :type I: Extrema_POnCurv2d &
         :rtype: None
@@ -14822,25 +15384,25 @@ class Extrema_SeqPOnCOfCCLocFOfLocECC2dOfLocateExtCC2d(OCC.TCollection.TCollecti
         """
         return _Extrema.Extrema_SeqPOnCOfCCLocFOfLocECC2dOfLocateExtCC2d_SetValue(self, *args)
 
-    def ChangeValue(self, *args) -> "Extrema_POnCurv2d &" :
+    def ChangeValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Extrema_POnCurv2d
 
         """
         return _Extrema.Extrema_SeqPOnCOfCCLocFOfLocECC2dOfLocateExtCC2d_ChangeValue(self, *args)
 
-    def Remove(self, *args) -> "void" :
+    def Remove(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: None
 
         :param FromIndex:
-        :type FromIndex: int
+        :type FromIndex: Standard_Integer
         :param ToIndex:
-        :type ToIndex: int
+        :type ToIndex: Standard_Integer
         :rtype: None
 
         """
@@ -14875,20 +15437,20 @@ Extrema_SeqPOnCOfCCLocFOfLocECC2dOfLocateExtCC2d_swigregister(Extrema_SeqPOnCOfC
 class Extrema_SeqPOnCOfCCLocFOfLocECCOfLocateExtCC(OCC.TCollection.TCollection_BaseSequence):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _Extrema.Extrema_SeqPOnCOfCCLocFOfLocECCOfLocateExtCC_swiginit(self,_Extrema.new_Extrema_SeqPOnCOfCCLocFOfLocECCOfLocateExtCC(*args))
-    def Clear(self, *args) -> "void" :
+        _Extrema.Extrema_SeqPOnCOfCCLocFOfLocECCOfLocateExtCC_swiginit(self,_Extrema.new_Extrema_SeqPOnCOfCCLocFOfLocECCOfLocateExtCC())
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _Extrema.Extrema_SeqPOnCOfCCLocFOfLocECCOfLocateExtCC_Clear(self, *args)
+        return _Extrema.Extrema_SeqPOnCOfCCLocFOfLocECCOfLocateExtCC_Clear(self)
 
-    def Assign(self, *args) -> "Extrema_SeqPOnCOfCCLocFOfLocECCOfLocateExtCC const &" :
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: Extrema_SeqPOnCOfCCLocFOfLocECCOfLocateExtCC &
@@ -14897,7 +15459,7 @@ class Extrema_SeqPOnCOfCCLocFOfLocECCOfLocateExtCC(OCC.TCollection.TCollection_B
         """
         return _Extrema.Extrema_SeqPOnCOfCCLocFOfLocECCOfLocateExtCC_Assign(self, *args)
 
-    def Set(self, *args) -> "Extrema_SeqPOnCOfCCLocFOfLocECCOfLocateExtCC const &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: Extrema_SeqPOnCOfCCLocFOfLocECCOfLocateExtCC &
@@ -14906,7 +15468,7 @@ class Extrema_SeqPOnCOfCCLocFOfLocECCOfLocateExtCC(OCC.TCollection.TCollection_B
         """
         return _Extrema.Extrema_SeqPOnCOfCCLocFOfLocECCOfLocateExtCC_Set(self, *args)
 
-    def Append(self, *args) -> "void" :
+    def Append(self, *args):
         """
         :param T:
         :type T: Extrema_POnCurv &
@@ -14919,7 +15481,7 @@ class Extrema_SeqPOnCOfCCLocFOfLocECCOfLocateExtCC(OCC.TCollection.TCollection_B
         """
         return _Extrema.Extrema_SeqPOnCOfCCLocFOfLocECCOfLocateExtCC_Append(self, *args)
 
-    def Prepend(self, *args) -> "void" :
+    def Prepend(self, *args):
         """
         :param T:
         :type T: Extrema_POnCurv &
@@ -14932,16 +15494,16 @@ class Extrema_SeqPOnCOfCCLocFOfLocECCOfLocateExtCC(OCC.TCollection.TCollection_B
         """
         return _Extrema.Extrema_SeqPOnCOfCCLocFOfLocECCOfLocateExtCC_Prepend(self, *args)
 
-    def InsertBefore(self, *args) -> "void" :
+    def InsertBefore(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param T:
         :type T: Extrema_POnCurv &
         :rtype: None
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param S:
         :type S: Extrema_SeqPOnCOfCCLocFOfLocECCOfLocateExtCC &
         :rtype: None
@@ -14949,16 +15511,16 @@ class Extrema_SeqPOnCOfCCLocFOfLocECCOfLocateExtCC(OCC.TCollection.TCollection_B
         """
         return _Extrema.Extrema_SeqPOnCOfCCLocFOfLocECCOfLocateExtCC_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args) -> "void" :
+    def InsertAfter(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param T:
         :type T: Extrema_POnCurv &
         :rtype: None
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param S:
         :type S: Extrema_SeqPOnCOfCCLocFOfLocECCOfLocateExtCC &
         :rtype: None
@@ -14966,24 +15528,24 @@ class Extrema_SeqPOnCOfCCLocFOfLocECCOfLocateExtCC(OCC.TCollection.TCollection_B
         """
         return _Extrema.Extrema_SeqPOnCOfCCLocFOfLocECCOfLocateExtCC_InsertAfter(self, *args)
 
-    def First(self, *args) -> "Extrema_POnCurv const &" :
+    def First(self):
         """
         :rtype: Extrema_POnCurv
 
         """
-        return _Extrema.Extrema_SeqPOnCOfCCLocFOfLocECCOfLocateExtCC_First(self, *args)
+        return _Extrema.Extrema_SeqPOnCOfCCLocFOfLocECCOfLocateExtCC_First(self)
 
-    def Last(self, *args) -> "Extrema_POnCurv const &" :
+    def Last(self):
         """
         :rtype: Extrema_POnCurv
 
         """
-        return _Extrema.Extrema_SeqPOnCOfCCLocFOfLocECCOfLocateExtCC_Last(self, *args)
+        return _Extrema.Extrema_SeqPOnCOfCCLocFOfLocECCOfLocateExtCC_Last(self)
 
-    def Split(self, *args) -> "void" :
+    def Split(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Sub:
         :type Sub: Extrema_SeqPOnCOfCCLocFOfLocECCOfLocateExtCC &
         :rtype: None
@@ -14991,19 +15553,19 @@ class Extrema_SeqPOnCOfCCLocFOfLocECCOfLocateExtCC(OCC.TCollection.TCollection_B
         """
         return _Extrema.Extrema_SeqPOnCOfCCLocFOfLocECCOfLocateExtCC_Split(self, *args)
 
-    def Value(self, *args) -> "Extrema_POnCurv const &" :
+    def Value(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Extrema_POnCurv
 
         """
         return _Extrema.Extrema_SeqPOnCOfCCLocFOfLocECCOfLocateExtCC_Value(self, *args)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param I:
         :type I: Extrema_POnCurv &
         :rtype: None
@@ -15011,25 +15573,25 @@ class Extrema_SeqPOnCOfCCLocFOfLocECCOfLocateExtCC(OCC.TCollection.TCollection_B
         """
         return _Extrema.Extrema_SeqPOnCOfCCLocFOfLocECCOfLocateExtCC_SetValue(self, *args)
 
-    def ChangeValue(self, *args) -> "Extrema_POnCurv &" :
+    def ChangeValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Extrema_POnCurv
 
         """
         return _Extrema.Extrema_SeqPOnCOfCCLocFOfLocECCOfLocateExtCC_ChangeValue(self, *args)
 
-    def Remove(self, *args) -> "void" :
+    def Remove(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: None
 
         :param FromIndex:
-        :type FromIndex: int
+        :type FromIndex: Standard_Integer
         :param ToIndex:
-        :type ToIndex: int
+        :type ToIndex: Standard_Integer
         :rtype: None
 
         """
@@ -15076,18 +15638,18 @@ class Extrema_SequenceNodeOfSeqPCOfPCFOfEPCOfELPCOfLocateExtPC(OCC.TCollection.T
 
         """
         _Extrema.Extrema_SequenceNodeOfSeqPCOfPCFOfEPCOfELPCOfLocateExtPC_swiginit(self,_Extrema.new_Extrema_SequenceNodeOfSeqPCOfPCFOfEPCOfELPCOfLocateExtPC(*args))
-    def Value(self, *args) -> "Extrema_POnCurv &" :
+    def Value(self):
         """
         :rtype: Extrema_POnCurv
 
         """
-        return _Extrema.Extrema_SequenceNodeOfSeqPCOfPCFOfEPCOfELPCOfLocateExtPC_Value(self, *args)
+        return _Extrema.Extrema_SequenceNodeOfSeqPCOfPCFOfEPCOfELPCOfLocateExtPC_Value(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Extrema_SequenceNodeOfSeqPCOfPCFOfEPCOfELPCOfLocateExtPC self)"""
         return _Extrema.Extrema_SequenceNodeOfSeqPCOfPCFOfEPCOfELPCOfLocateExtPC__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Extrema_SequenceNodeOfSeqPCOfPCFOfEPCOfELPCOfLocateExtPC" :
+    def GetHandle(self):
         """GetHandle(Extrema_SequenceNodeOfSeqPCOfPCFOfEPCOfELPCOfLocateExtPC self) -> Handle_Extrema_SequenceNodeOfSeqPCOfPCFOfEPCOfELPCOfLocateExtPC"""
         return _Extrema.Extrema_SequenceNodeOfSeqPCOfPCFOfEPCOfELPCOfLocateExtPC_GetHandle(self)
 
@@ -15126,7 +15688,7 @@ Handle_Extrema_SequenceNodeOfSeqPCOfPCFOfEPCOfELPCOfLocateExtPC._kill_pointed = 
 Handle_Extrema_SequenceNodeOfSeqPCOfPCFOfEPCOfELPCOfLocateExtPC_swigregister = _Extrema.Handle_Extrema_SequenceNodeOfSeqPCOfPCFOfEPCOfELPCOfLocateExtPC_swigregister
 Handle_Extrema_SequenceNodeOfSeqPCOfPCFOfEPCOfELPCOfLocateExtPC_swigregister(Handle_Extrema_SequenceNodeOfSeqPCOfPCFOfEPCOfELPCOfLocateExtPC)
 
-def Handle_Extrema_SequenceNodeOfSeqPCOfPCFOfEPCOfELPCOfLocateExtPC_DownCast(*args) -> "Handle_Extrema_SequenceNodeOfSeqPCOfPCFOfEPCOfELPCOfLocateExtPC const" :
+def Handle_Extrema_SequenceNodeOfSeqPCOfPCFOfEPCOfELPCOfLocateExtPC_DownCast(*args):
   return _Extrema.Handle_Extrema_SequenceNodeOfSeqPCOfPCFOfEPCOfELPCOfLocateExtPC_DownCast(*args)
 Handle_Extrema_SequenceNodeOfSeqPCOfPCFOfEPCOfELPCOfLocateExtPC_DownCast = _Extrema.Handle_Extrema_SequenceNodeOfSeqPCOfPCFOfEPCOfELPCOfLocateExtPC_DownCast
 
@@ -15145,18 +15707,18 @@ class Extrema_SequenceNodeOfSeqPCOfPCFOfEPCOfELPCOfLocateExtPC2d(OCC.TCollection
 
         """
         _Extrema.Extrema_SequenceNodeOfSeqPCOfPCFOfEPCOfELPCOfLocateExtPC2d_swiginit(self,_Extrema.new_Extrema_SequenceNodeOfSeqPCOfPCFOfEPCOfELPCOfLocateExtPC2d(*args))
-    def Value(self, *args) -> "Extrema_POnCurv2d &" :
+    def Value(self):
         """
         :rtype: Extrema_POnCurv2d
 
         """
-        return _Extrema.Extrema_SequenceNodeOfSeqPCOfPCFOfEPCOfELPCOfLocateExtPC2d_Value(self, *args)
+        return _Extrema.Extrema_SequenceNodeOfSeqPCOfPCFOfEPCOfELPCOfLocateExtPC2d_Value(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Extrema_SequenceNodeOfSeqPCOfPCFOfEPCOfELPCOfLocateExtPC2d self)"""
         return _Extrema.Extrema_SequenceNodeOfSeqPCOfPCFOfEPCOfELPCOfLocateExtPC2d__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Extrema_SequenceNodeOfSeqPCOfPCFOfEPCOfELPCOfLocateExtPC2d" :
+    def GetHandle(self):
         """GetHandle(Extrema_SequenceNodeOfSeqPCOfPCFOfEPCOfELPCOfLocateExtPC2d self) -> Handle_Extrema_SequenceNodeOfSeqPCOfPCFOfEPCOfELPCOfLocateExtPC2d"""
         return _Extrema.Extrema_SequenceNodeOfSeqPCOfPCFOfEPCOfELPCOfLocateExtPC2d_GetHandle(self)
 
@@ -15195,7 +15757,7 @@ Handle_Extrema_SequenceNodeOfSeqPCOfPCFOfEPCOfELPCOfLocateExtPC2d._kill_pointed 
 Handle_Extrema_SequenceNodeOfSeqPCOfPCFOfEPCOfELPCOfLocateExtPC2d_swigregister = _Extrema.Handle_Extrema_SequenceNodeOfSeqPCOfPCFOfEPCOfELPCOfLocateExtPC2d_swigregister
 Handle_Extrema_SequenceNodeOfSeqPCOfPCFOfEPCOfELPCOfLocateExtPC2d_swigregister(Handle_Extrema_SequenceNodeOfSeqPCOfPCFOfEPCOfELPCOfLocateExtPC2d)
 
-def Handle_Extrema_SequenceNodeOfSeqPCOfPCFOfEPCOfELPCOfLocateExtPC2d_DownCast(*args) -> "Handle_Extrema_SequenceNodeOfSeqPCOfPCFOfEPCOfELPCOfLocateExtPC2d const" :
+def Handle_Extrema_SequenceNodeOfSeqPCOfPCFOfEPCOfELPCOfLocateExtPC2d_DownCast(*args):
   return _Extrema.Handle_Extrema_SequenceNodeOfSeqPCOfPCFOfEPCOfELPCOfLocateExtPC2d_DownCast(*args)
 Handle_Extrema_SequenceNodeOfSeqPCOfPCFOfEPCOfELPCOfLocateExtPC2d_DownCast = _Extrema.Handle_Extrema_SequenceNodeOfSeqPCOfPCFOfEPCOfELPCOfLocateExtPC2d_DownCast
 
@@ -15214,18 +15776,18 @@ class Extrema_SequenceNodeOfSeqPCOfPCFOfEPCOfExtPC(OCC.TCollection.TCollection_S
 
         """
         _Extrema.Extrema_SequenceNodeOfSeqPCOfPCFOfEPCOfExtPC_swiginit(self,_Extrema.new_Extrema_SequenceNodeOfSeqPCOfPCFOfEPCOfExtPC(*args))
-    def Value(self, *args) -> "Extrema_POnCurv &" :
+    def Value(self):
         """
         :rtype: Extrema_POnCurv
 
         """
-        return _Extrema.Extrema_SequenceNodeOfSeqPCOfPCFOfEPCOfExtPC_Value(self, *args)
+        return _Extrema.Extrema_SequenceNodeOfSeqPCOfPCFOfEPCOfExtPC_Value(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Extrema_SequenceNodeOfSeqPCOfPCFOfEPCOfExtPC self)"""
         return _Extrema.Extrema_SequenceNodeOfSeqPCOfPCFOfEPCOfExtPC__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Extrema_SequenceNodeOfSeqPCOfPCFOfEPCOfExtPC" :
+    def GetHandle(self):
         """GetHandle(Extrema_SequenceNodeOfSeqPCOfPCFOfEPCOfExtPC self) -> Handle_Extrema_SequenceNodeOfSeqPCOfPCFOfEPCOfExtPC"""
         return _Extrema.Extrema_SequenceNodeOfSeqPCOfPCFOfEPCOfExtPC_GetHandle(self)
 
@@ -15264,7 +15826,7 @@ Handle_Extrema_SequenceNodeOfSeqPCOfPCFOfEPCOfExtPC._kill_pointed = new_instance
 Handle_Extrema_SequenceNodeOfSeqPCOfPCFOfEPCOfExtPC_swigregister = _Extrema.Handle_Extrema_SequenceNodeOfSeqPCOfPCFOfEPCOfExtPC_swigregister
 Handle_Extrema_SequenceNodeOfSeqPCOfPCFOfEPCOfExtPC_swigregister(Handle_Extrema_SequenceNodeOfSeqPCOfPCFOfEPCOfExtPC)
 
-def Handle_Extrema_SequenceNodeOfSeqPCOfPCFOfEPCOfExtPC_DownCast(*args) -> "Handle_Extrema_SequenceNodeOfSeqPCOfPCFOfEPCOfExtPC const" :
+def Handle_Extrema_SequenceNodeOfSeqPCOfPCFOfEPCOfExtPC_DownCast(*args):
   return _Extrema.Handle_Extrema_SequenceNodeOfSeqPCOfPCFOfEPCOfExtPC_DownCast(*args)
 Handle_Extrema_SequenceNodeOfSeqPCOfPCFOfEPCOfExtPC_DownCast = _Extrema.Handle_Extrema_SequenceNodeOfSeqPCOfPCFOfEPCOfExtPC_DownCast
 
@@ -15283,18 +15845,18 @@ class Extrema_SequenceNodeOfSeqPCOfPCFOfEPCOfExtPC2d(OCC.TCollection.TCollection
 
         """
         _Extrema.Extrema_SequenceNodeOfSeqPCOfPCFOfEPCOfExtPC2d_swiginit(self,_Extrema.new_Extrema_SequenceNodeOfSeqPCOfPCFOfEPCOfExtPC2d(*args))
-    def Value(self, *args) -> "Extrema_POnCurv2d &" :
+    def Value(self):
         """
         :rtype: Extrema_POnCurv2d
 
         """
-        return _Extrema.Extrema_SequenceNodeOfSeqPCOfPCFOfEPCOfExtPC2d_Value(self, *args)
+        return _Extrema.Extrema_SequenceNodeOfSeqPCOfPCFOfEPCOfExtPC2d_Value(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Extrema_SequenceNodeOfSeqPCOfPCFOfEPCOfExtPC2d self)"""
         return _Extrema.Extrema_SequenceNodeOfSeqPCOfPCFOfEPCOfExtPC2d__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Extrema_SequenceNodeOfSeqPCOfPCFOfEPCOfExtPC2d" :
+    def GetHandle(self):
         """GetHandle(Extrema_SequenceNodeOfSeqPCOfPCFOfEPCOfExtPC2d self) -> Handle_Extrema_SequenceNodeOfSeqPCOfPCFOfEPCOfExtPC2d"""
         return _Extrema.Extrema_SequenceNodeOfSeqPCOfPCFOfEPCOfExtPC2d_GetHandle(self)
 
@@ -15333,7 +15895,7 @@ Handle_Extrema_SequenceNodeOfSeqPCOfPCFOfEPCOfExtPC2d._kill_pointed = new_instan
 Handle_Extrema_SequenceNodeOfSeqPCOfPCFOfEPCOfExtPC2d_swigregister = _Extrema.Handle_Extrema_SequenceNodeOfSeqPCOfPCFOfEPCOfExtPC2d_swigregister
 Handle_Extrema_SequenceNodeOfSeqPCOfPCFOfEPCOfExtPC2d_swigregister(Handle_Extrema_SequenceNodeOfSeqPCOfPCFOfEPCOfExtPC2d)
 
-def Handle_Extrema_SequenceNodeOfSeqPCOfPCFOfEPCOfExtPC2d_DownCast(*args) -> "Handle_Extrema_SequenceNodeOfSeqPCOfPCFOfEPCOfExtPC2d const" :
+def Handle_Extrema_SequenceNodeOfSeqPCOfPCFOfEPCOfExtPC2d_DownCast(*args):
   return _Extrema.Handle_Extrema_SequenceNodeOfSeqPCOfPCFOfEPCOfExtPC2d_DownCast(*args)
 Handle_Extrema_SequenceNodeOfSeqPCOfPCFOfEPCOfExtPC2d_DownCast = _Extrema.Handle_Extrema_SequenceNodeOfSeqPCOfPCFOfEPCOfExtPC2d_DownCast
 
@@ -15352,18 +15914,18 @@ class Extrema_SequenceNodeOfSeqPCOfPCLocFOfLocEPCOfLocateExtPC(OCC.TCollection.T
 
         """
         _Extrema.Extrema_SequenceNodeOfSeqPCOfPCLocFOfLocEPCOfLocateExtPC_swiginit(self,_Extrema.new_Extrema_SequenceNodeOfSeqPCOfPCLocFOfLocEPCOfLocateExtPC(*args))
-    def Value(self, *args) -> "Extrema_POnCurv &" :
+    def Value(self):
         """
         :rtype: Extrema_POnCurv
 
         """
-        return _Extrema.Extrema_SequenceNodeOfSeqPCOfPCLocFOfLocEPCOfLocateExtPC_Value(self, *args)
+        return _Extrema.Extrema_SequenceNodeOfSeqPCOfPCLocFOfLocEPCOfLocateExtPC_Value(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Extrema_SequenceNodeOfSeqPCOfPCLocFOfLocEPCOfLocateExtPC self)"""
         return _Extrema.Extrema_SequenceNodeOfSeqPCOfPCLocFOfLocEPCOfLocateExtPC__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Extrema_SequenceNodeOfSeqPCOfPCLocFOfLocEPCOfLocateExtPC" :
+    def GetHandle(self):
         """GetHandle(Extrema_SequenceNodeOfSeqPCOfPCLocFOfLocEPCOfLocateExtPC self) -> Handle_Extrema_SequenceNodeOfSeqPCOfPCLocFOfLocEPCOfLocateExtPC"""
         return _Extrema.Extrema_SequenceNodeOfSeqPCOfPCLocFOfLocEPCOfLocateExtPC_GetHandle(self)
 
@@ -15402,7 +15964,7 @@ Handle_Extrema_SequenceNodeOfSeqPCOfPCLocFOfLocEPCOfLocateExtPC._kill_pointed = 
 Handle_Extrema_SequenceNodeOfSeqPCOfPCLocFOfLocEPCOfLocateExtPC_swigregister = _Extrema.Handle_Extrema_SequenceNodeOfSeqPCOfPCLocFOfLocEPCOfLocateExtPC_swigregister
 Handle_Extrema_SequenceNodeOfSeqPCOfPCLocFOfLocEPCOfLocateExtPC_swigregister(Handle_Extrema_SequenceNodeOfSeqPCOfPCLocFOfLocEPCOfLocateExtPC)
 
-def Handle_Extrema_SequenceNodeOfSeqPCOfPCLocFOfLocEPCOfLocateExtPC_DownCast(*args) -> "Handle_Extrema_SequenceNodeOfSeqPCOfPCLocFOfLocEPCOfLocateExtPC const" :
+def Handle_Extrema_SequenceNodeOfSeqPCOfPCLocFOfLocEPCOfLocateExtPC_DownCast(*args):
   return _Extrema.Handle_Extrema_SequenceNodeOfSeqPCOfPCLocFOfLocEPCOfLocateExtPC_DownCast(*args)
 Handle_Extrema_SequenceNodeOfSeqPCOfPCLocFOfLocEPCOfLocateExtPC_DownCast = _Extrema.Handle_Extrema_SequenceNodeOfSeqPCOfPCLocFOfLocEPCOfLocateExtPC_DownCast
 
@@ -15421,18 +15983,18 @@ class Extrema_SequenceNodeOfSeqPCOfPCLocFOfLocEPCOfLocateExtPC2d(OCC.TCollection
 
         """
         _Extrema.Extrema_SequenceNodeOfSeqPCOfPCLocFOfLocEPCOfLocateExtPC2d_swiginit(self,_Extrema.new_Extrema_SequenceNodeOfSeqPCOfPCLocFOfLocEPCOfLocateExtPC2d(*args))
-    def Value(self, *args) -> "Extrema_POnCurv2d &" :
+    def Value(self):
         """
         :rtype: Extrema_POnCurv2d
 
         """
-        return _Extrema.Extrema_SequenceNodeOfSeqPCOfPCLocFOfLocEPCOfLocateExtPC2d_Value(self, *args)
+        return _Extrema.Extrema_SequenceNodeOfSeqPCOfPCLocFOfLocEPCOfLocateExtPC2d_Value(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Extrema_SequenceNodeOfSeqPCOfPCLocFOfLocEPCOfLocateExtPC2d self)"""
         return _Extrema.Extrema_SequenceNodeOfSeqPCOfPCLocFOfLocEPCOfLocateExtPC2d__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Extrema_SequenceNodeOfSeqPCOfPCLocFOfLocEPCOfLocateExtPC2d" :
+    def GetHandle(self):
         """GetHandle(Extrema_SequenceNodeOfSeqPCOfPCLocFOfLocEPCOfLocateExtPC2d self) -> Handle_Extrema_SequenceNodeOfSeqPCOfPCLocFOfLocEPCOfLocateExtPC2d"""
         return _Extrema.Extrema_SequenceNodeOfSeqPCOfPCLocFOfLocEPCOfLocateExtPC2d_GetHandle(self)
 
@@ -15471,7 +16033,7 @@ Handle_Extrema_SequenceNodeOfSeqPCOfPCLocFOfLocEPCOfLocateExtPC2d._kill_pointed 
 Handle_Extrema_SequenceNodeOfSeqPCOfPCLocFOfLocEPCOfLocateExtPC2d_swigregister = _Extrema.Handle_Extrema_SequenceNodeOfSeqPCOfPCLocFOfLocEPCOfLocateExtPC2d_swigregister
 Handle_Extrema_SequenceNodeOfSeqPCOfPCLocFOfLocEPCOfLocateExtPC2d_swigregister(Handle_Extrema_SequenceNodeOfSeqPCOfPCLocFOfLocEPCOfLocateExtPC2d)
 
-def Handle_Extrema_SequenceNodeOfSeqPCOfPCLocFOfLocEPCOfLocateExtPC2d_DownCast(*args) -> "Handle_Extrema_SequenceNodeOfSeqPCOfPCLocFOfLocEPCOfLocateExtPC2d const" :
+def Handle_Extrema_SequenceNodeOfSeqPCOfPCLocFOfLocEPCOfLocateExtPC2d_DownCast(*args):
   return _Extrema.Handle_Extrema_SequenceNodeOfSeqPCOfPCLocFOfLocEPCOfLocateExtPC2d_DownCast(*args)
 Handle_Extrema_SequenceNodeOfSeqPCOfPCLocFOfLocEPCOfLocateExtPC2d_DownCast = _Extrema.Handle_Extrema_SequenceNodeOfSeqPCOfPCLocFOfLocEPCOfLocateExtPC2d_DownCast
 
@@ -15490,18 +16052,18 @@ class Extrema_SequenceNodeOfSeqPOnCOfCCFOfECC2dOfExtCC2d(OCC.TCollection.TCollec
 
         """
         _Extrema.Extrema_SequenceNodeOfSeqPOnCOfCCFOfECC2dOfExtCC2d_swiginit(self,_Extrema.new_Extrema_SequenceNodeOfSeqPOnCOfCCFOfECC2dOfExtCC2d(*args))
-    def Value(self, *args) -> "Extrema_POnCurv2d &" :
+    def Value(self):
         """
         :rtype: Extrema_POnCurv2d
 
         """
-        return _Extrema.Extrema_SequenceNodeOfSeqPOnCOfCCFOfECC2dOfExtCC2d_Value(self, *args)
+        return _Extrema.Extrema_SequenceNodeOfSeqPOnCOfCCFOfECC2dOfExtCC2d_Value(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Extrema_SequenceNodeOfSeqPOnCOfCCFOfECC2dOfExtCC2d self)"""
         return _Extrema.Extrema_SequenceNodeOfSeqPOnCOfCCFOfECC2dOfExtCC2d__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Extrema_SequenceNodeOfSeqPOnCOfCCFOfECC2dOfExtCC2d" :
+    def GetHandle(self):
         """GetHandle(Extrema_SequenceNodeOfSeqPOnCOfCCFOfECC2dOfExtCC2d self) -> Handle_Extrema_SequenceNodeOfSeqPOnCOfCCFOfECC2dOfExtCC2d"""
         return _Extrema.Extrema_SequenceNodeOfSeqPOnCOfCCFOfECC2dOfExtCC2d_GetHandle(self)
 
@@ -15540,7 +16102,7 @@ Handle_Extrema_SequenceNodeOfSeqPOnCOfCCFOfECC2dOfExtCC2d._kill_pointed = new_in
 Handle_Extrema_SequenceNodeOfSeqPOnCOfCCFOfECC2dOfExtCC2d_swigregister = _Extrema.Handle_Extrema_SequenceNodeOfSeqPOnCOfCCFOfECC2dOfExtCC2d_swigregister
 Handle_Extrema_SequenceNodeOfSeqPOnCOfCCFOfECC2dOfExtCC2d_swigregister(Handle_Extrema_SequenceNodeOfSeqPOnCOfCCFOfECC2dOfExtCC2d)
 
-def Handle_Extrema_SequenceNodeOfSeqPOnCOfCCFOfECC2dOfExtCC2d_DownCast(*args) -> "Handle_Extrema_SequenceNodeOfSeqPOnCOfCCFOfECC2dOfExtCC2d const" :
+def Handle_Extrema_SequenceNodeOfSeqPOnCOfCCFOfECC2dOfExtCC2d_DownCast(*args):
   return _Extrema.Handle_Extrema_SequenceNodeOfSeqPOnCOfCCFOfECC2dOfExtCC2d_DownCast(*args)
 Handle_Extrema_SequenceNodeOfSeqPOnCOfCCFOfECC2dOfExtCC2d_DownCast = _Extrema.Handle_Extrema_SequenceNodeOfSeqPOnCOfCCFOfECC2dOfExtCC2d_DownCast
 
@@ -15559,18 +16121,18 @@ class Extrema_SequenceNodeOfSeqPOnCOfCCFOfECCOfExtCC(OCC.TCollection.TCollection
 
         """
         _Extrema.Extrema_SequenceNodeOfSeqPOnCOfCCFOfECCOfExtCC_swiginit(self,_Extrema.new_Extrema_SequenceNodeOfSeqPOnCOfCCFOfECCOfExtCC(*args))
-    def Value(self, *args) -> "Extrema_POnCurv &" :
+    def Value(self):
         """
         :rtype: Extrema_POnCurv
 
         """
-        return _Extrema.Extrema_SequenceNodeOfSeqPOnCOfCCFOfECCOfExtCC_Value(self, *args)
+        return _Extrema.Extrema_SequenceNodeOfSeqPOnCOfCCFOfECCOfExtCC_Value(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Extrema_SequenceNodeOfSeqPOnCOfCCFOfECCOfExtCC self)"""
         return _Extrema.Extrema_SequenceNodeOfSeqPOnCOfCCFOfECCOfExtCC__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Extrema_SequenceNodeOfSeqPOnCOfCCFOfECCOfExtCC" :
+    def GetHandle(self):
         """GetHandle(Extrema_SequenceNodeOfSeqPOnCOfCCFOfECCOfExtCC self) -> Handle_Extrema_SequenceNodeOfSeqPOnCOfCCFOfECCOfExtCC"""
         return _Extrema.Extrema_SequenceNodeOfSeqPOnCOfCCFOfECCOfExtCC_GetHandle(self)
 
@@ -15609,7 +16171,7 @@ Handle_Extrema_SequenceNodeOfSeqPOnCOfCCFOfECCOfExtCC._kill_pointed = new_instan
 Handle_Extrema_SequenceNodeOfSeqPOnCOfCCFOfECCOfExtCC_swigregister = _Extrema.Handle_Extrema_SequenceNodeOfSeqPOnCOfCCFOfECCOfExtCC_swigregister
 Handle_Extrema_SequenceNodeOfSeqPOnCOfCCFOfECCOfExtCC_swigregister(Handle_Extrema_SequenceNodeOfSeqPOnCOfCCFOfECCOfExtCC)
 
-def Handle_Extrema_SequenceNodeOfSeqPOnCOfCCFOfECCOfExtCC_DownCast(*args) -> "Handle_Extrema_SequenceNodeOfSeqPOnCOfCCFOfECCOfExtCC const" :
+def Handle_Extrema_SequenceNodeOfSeqPOnCOfCCFOfECCOfExtCC_DownCast(*args):
   return _Extrema.Handle_Extrema_SequenceNodeOfSeqPOnCOfCCFOfECCOfExtCC_DownCast(*args)
 Handle_Extrema_SequenceNodeOfSeqPOnCOfCCFOfECCOfExtCC_DownCast = _Extrema.Handle_Extrema_SequenceNodeOfSeqPOnCOfCCFOfECCOfExtCC_DownCast
 
@@ -15628,18 +16190,18 @@ class Extrema_SequenceNodeOfSeqPOnCOfCCFOfELCC2dOfLocateExtCC2d(OCC.TCollection.
 
         """
         _Extrema.Extrema_SequenceNodeOfSeqPOnCOfCCFOfELCC2dOfLocateExtCC2d_swiginit(self,_Extrema.new_Extrema_SequenceNodeOfSeqPOnCOfCCFOfELCC2dOfLocateExtCC2d(*args))
-    def Value(self, *args) -> "Extrema_POnCurv2d &" :
+    def Value(self):
         """
         :rtype: Extrema_POnCurv2d
 
         """
-        return _Extrema.Extrema_SequenceNodeOfSeqPOnCOfCCFOfELCC2dOfLocateExtCC2d_Value(self, *args)
+        return _Extrema.Extrema_SequenceNodeOfSeqPOnCOfCCFOfELCC2dOfLocateExtCC2d_Value(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Extrema_SequenceNodeOfSeqPOnCOfCCFOfELCC2dOfLocateExtCC2d self)"""
         return _Extrema.Extrema_SequenceNodeOfSeqPOnCOfCCFOfELCC2dOfLocateExtCC2d__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Extrema_SequenceNodeOfSeqPOnCOfCCFOfELCC2dOfLocateExtCC2d" :
+    def GetHandle(self):
         """GetHandle(Extrema_SequenceNodeOfSeqPOnCOfCCFOfELCC2dOfLocateExtCC2d self) -> Handle_Extrema_SequenceNodeOfSeqPOnCOfCCFOfELCC2dOfLocateExtCC2d"""
         return _Extrema.Extrema_SequenceNodeOfSeqPOnCOfCCFOfELCC2dOfLocateExtCC2d_GetHandle(self)
 
@@ -15678,7 +16240,7 @@ Handle_Extrema_SequenceNodeOfSeqPOnCOfCCFOfELCC2dOfLocateExtCC2d._kill_pointed =
 Handle_Extrema_SequenceNodeOfSeqPOnCOfCCFOfELCC2dOfLocateExtCC2d_swigregister = _Extrema.Handle_Extrema_SequenceNodeOfSeqPOnCOfCCFOfELCC2dOfLocateExtCC2d_swigregister
 Handle_Extrema_SequenceNodeOfSeqPOnCOfCCFOfELCC2dOfLocateExtCC2d_swigregister(Handle_Extrema_SequenceNodeOfSeqPOnCOfCCFOfELCC2dOfLocateExtCC2d)
 
-def Handle_Extrema_SequenceNodeOfSeqPOnCOfCCFOfELCC2dOfLocateExtCC2d_DownCast(*args) -> "Handle_Extrema_SequenceNodeOfSeqPOnCOfCCFOfELCC2dOfLocateExtCC2d const" :
+def Handle_Extrema_SequenceNodeOfSeqPOnCOfCCFOfELCC2dOfLocateExtCC2d_DownCast(*args):
   return _Extrema.Handle_Extrema_SequenceNodeOfSeqPOnCOfCCFOfELCC2dOfLocateExtCC2d_DownCast(*args)
 Handle_Extrema_SequenceNodeOfSeqPOnCOfCCFOfELCC2dOfLocateExtCC2d_DownCast = _Extrema.Handle_Extrema_SequenceNodeOfSeqPOnCOfCCFOfELCC2dOfLocateExtCC2d_DownCast
 
@@ -15697,18 +16259,18 @@ class Extrema_SequenceNodeOfSeqPOnCOfCCFOfELCCOfLocateExtCC(OCC.TCollection.TCol
 
         """
         _Extrema.Extrema_SequenceNodeOfSeqPOnCOfCCFOfELCCOfLocateExtCC_swiginit(self,_Extrema.new_Extrema_SequenceNodeOfSeqPOnCOfCCFOfELCCOfLocateExtCC(*args))
-    def Value(self, *args) -> "Extrema_POnCurv &" :
+    def Value(self):
         """
         :rtype: Extrema_POnCurv
 
         """
-        return _Extrema.Extrema_SequenceNodeOfSeqPOnCOfCCFOfELCCOfLocateExtCC_Value(self, *args)
+        return _Extrema.Extrema_SequenceNodeOfSeqPOnCOfCCFOfELCCOfLocateExtCC_Value(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Extrema_SequenceNodeOfSeqPOnCOfCCFOfELCCOfLocateExtCC self)"""
         return _Extrema.Extrema_SequenceNodeOfSeqPOnCOfCCFOfELCCOfLocateExtCC__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Extrema_SequenceNodeOfSeqPOnCOfCCFOfELCCOfLocateExtCC" :
+    def GetHandle(self):
         """GetHandle(Extrema_SequenceNodeOfSeqPOnCOfCCFOfELCCOfLocateExtCC self) -> Handle_Extrema_SequenceNodeOfSeqPOnCOfCCFOfELCCOfLocateExtCC"""
         return _Extrema.Extrema_SequenceNodeOfSeqPOnCOfCCFOfELCCOfLocateExtCC_GetHandle(self)
 
@@ -15747,7 +16309,7 @@ Handle_Extrema_SequenceNodeOfSeqPOnCOfCCFOfELCCOfLocateExtCC._kill_pointed = new
 Handle_Extrema_SequenceNodeOfSeqPOnCOfCCFOfELCCOfLocateExtCC_swigregister = _Extrema.Handle_Extrema_SequenceNodeOfSeqPOnCOfCCFOfELCCOfLocateExtCC_swigregister
 Handle_Extrema_SequenceNodeOfSeqPOnCOfCCFOfELCCOfLocateExtCC_swigregister(Handle_Extrema_SequenceNodeOfSeqPOnCOfCCFOfELCCOfLocateExtCC)
 
-def Handle_Extrema_SequenceNodeOfSeqPOnCOfCCFOfELCCOfLocateExtCC_DownCast(*args) -> "Handle_Extrema_SequenceNodeOfSeqPOnCOfCCFOfELCCOfLocateExtCC const" :
+def Handle_Extrema_SequenceNodeOfSeqPOnCOfCCFOfELCCOfLocateExtCC_DownCast(*args):
   return _Extrema.Handle_Extrema_SequenceNodeOfSeqPOnCOfCCFOfELCCOfLocateExtCC_DownCast(*args)
 Handle_Extrema_SequenceNodeOfSeqPOnCOfCCFOfELCCOfLocateExtCC_DownCast = _Extrema.Handle_Extrema_SequenceNodeOfSeqPOnCOfCCFOfELCCOfLocateExtCC_DownCast
 
@@ -15766,18 +16328,18 @@ class Extrema_SequenceNodeOfSeqPOnCOfCCLocFOfLocECC2dOfLocateExtCC2d(OCC.TCollec
 
         """
         _Extrema.Extrema_SequenceNodeOfSeqPOnCOfCCLocFOfLocECC2dOfLocateExtCC2d_swiginit(self,_Extrema.new_Extrema_SequenceNodeOfSeqPOnCOfCCLocFOfLocECC2dOfLocateExtCC2d(*args))
-    def Value(self, *args) -> "Extrema_POnCurv2d &" :
+    def Value(self):
         """
         :rtype: Extrema_POnCurv2d
 
         """
-        return _Extrema.Extrema_SequenceNodeOfSeqPOnCOfCCLocFOfLocECC2dOfLocateExtCC2d_Value(self, *args)
+        return _Extrema.Extrema_SequenceNodeOfSeqPOnCOfCCLocFOfLocECC2dOfLocateExtCC2d_Value(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Extrema_SequenceNodeOfSeqPOnCOfCCLocFOfLocECC2dOfLocateExtCC2d self)"""
         return _Extrema.Extrema_SequenceNodeOfSeqPOnCOfCCLocFOfLocECC2dOfLocateExtCC2d__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Extrema_SequenceNodeOfSeqPOnCOfCCLocFOfLocECC2dOfLocateExtCC2d" :
+    def GetHandle(self):
         """GetHandle(Extrema_SequenceNodeOfSeqPOnCOfCCLocFOfLocECC2dOfLocateExtCC2d self) -> Handle_Extrema_SequenceNodeOfSeqPOnCOfCCLocFOfLocECC2dOfLocateExtCC2d"""
         return _Extrema.Extrema_SequenceNodeOfSeqPOnCOfCCLocFOfLocECC2dOfLocateExtCC2d_GetHandle(self)
 
@@ -15816,7 +16378,7 @@ Handle_Extrema_SequenceNodeOfSeqPOnCOfCCLocFOfLocECC2dOfLocateExtCC2d._kill_poin
 Handle_Extrema_SequenceNodeOfSeqPOnCOfCCLocFOfLocECC2dOfLocateExtCC2d_swigregister = _Extrema.Handle_Extrema_SequenceNodeOfSeqPOnCOfCCLocFOfLocECC2dOfLocateExtCC2d_swigregister
 Handle_Extrema_SequenceNodeOfSeqPOnCOfCCLocFOfLocECC2dOfLocateExtCC2d_swigregister(Handle_Extrema_SequenceNodeOfSeqPOnCOfCCLocFOfLocECC2dOfLocateExtCC2d)
 
-def Handle_Extrema_SequenceNodeOfSeqPOnCOfCCLocFOfLocECC2dOfLocateExtCC2d_DownCast(*args) -> "Handle_Extrema_SequenceNodeOfSeqPOnCOfCCLocFOfLocECC2dOfLocateExtCC2d const" :
+def Handle_Extrema_SequenceNodeOfSeqPOnCOfCCLocFOfLocECC2dOfLocateExtCC2d_DownCast(*args):
   return _Extrema.Handle_Extrema_SequenceNodeOfSeqPOnCOfCCLocFOfLocECC2dOfLocateExtCC2d_DownCast(*args)
 Handle_Extrema_SequenceNodeOfSeqPOnCOfCCLocFOfLocECC2dOfLocateExtCC2d_DownCast = _Extrema.Handle_Extrema_SequenceNodeOfSeqPOnCOfCCLocFOfLocECC2dOfLocateExtCC2d_DownCast
 
@@ -15835,18 +16397,18 @@ class Extrema_SequenceNodeOfSeqPOnCOfCCLocFOfLocECCOfLocateExtCC(OCC.TCollection
 
         """
         _Extrema.Extrema_SequenceNodeOfSeqPOnCOfCCLocFOfLocECCOfLocateExtCC_swiginit(self,_Extrema.new_Extrema_SequenceNodeOfSeqPOnCOfCCLocFOfLocECCOfLocateExtCC(*args))
-    def Value(self, *args) -> "Extrema_POnCurv &" :
+    def Value(self):
         """
         :rtype: Extrema_POnCurv
 
         """
-        return _Extrema.Extrema_SequenceNodeOfSeqPOnCOfCCLocFOfLocECCOfLocateExtCC_Value(self, *args)
+        return _Extrema.Extrema_SequenceNodeOfSeqPOnCOfCCLocFOfLocECCOfLocateExtCC_Value(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Extrema_SequenceNodeOfSeqPOnCOfCCLocFOfLocECCOfLocateExtCC self)"""
         return _Extrema.Extrema_SequenceNodeOfSeqPOnCOfCCLocFOfLocECCOfLocateExtCC__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Extrema_SequenceNodeOfSeqPOnCOfCCLocFOfLocECCOfLocateExtCC" :
+    def GetHandle(self):
         """GetHandle(Extrema_SequenceNodeOfSeqPOnCOfCCLocFOfLocECCOfLocateExtCC self) -> Handle_Extrema_SequenceNodeOfSeqPOnCOfCCLocFOfLocECCOfLocateExtCC"""
         return _Extrema.Extrema_SequenceNodeOfSeqPOnCOfCCLocFOfLocECCOfLocateExtCC_GetHandle(self)
 
@@ -15885,7 +16447,7 @@ Handle_Extrema_SequenceNodeOfSeqPOnCOfCCLocFOfLocECCOfLocateExtCC._kill_pointed 
 Handle_Extrema_SequenceNodeOfSeqPOnCOfCCLocFOfLocECCOfLocateExtCC_swigregister = _Extrema.Handle_Extrema_SequenceNodeOfSeqPOnCOfCCLocFOfLocECCOfLocateExtCC_swigregister
 Handle_Extrema_SequenceNodeOfSeqPOnCOfCCLocFOfLocECCOfLocateExtCC_swigregister(Handle_Extrema_SequenceNodeOfSeqPOnCOfCCLocFOfLocECCOfLocateExtCC)
 
-def Handle_Extrema_SequenceNodeOfSeqPOnCOfCCLocFOfLocECCOfLocateExtCC_DownCast(*args) -> "Handle_Extrema_SequenceNodeOfSeqPOnCOfCCLocFOfLocECCOfLocateExtCC const" :
+def Handle_Extrema_SequenceNodeOfSeqPOnCOfCCLocFOfLocECCOfLocateExtCC_DownCast(*args):
   return _Extrema.Handle_Extrema_SequenceNodeOfSeqPOnCOfCCLocFOfLocECCOfLocateExtCC_DownCast(*args)
 Handle_Extrema_SequenceNodeOfSeqPOnCOfCCLocFOfLocECCOfLocateExtCC_DownCast = _Extrema.Handle_Extrema_SequenceNodeOfSeqPOnCOfCCLocFOfLocECCOfLocateExtCC_DownCast
 
@@ -15904,18 +16466,18 @@ class Extrema_SequenceNodeOfSequenceOfPOnCurv(OCC.TCollection.TCollection_SeqNod
 
         """
         _Extrema.Extrema_SequenceNodeOfSequenceOfPOnCurv_swiginit(self,_Extrema.new_Extrema_SequenceNodeOfSequenceOfPOnCurv(*args))
-    def Value(self, *args) -> "Extrema_POnCurv &" :
+    def Value(self):
         """
         :rtype: Extrema_POnCurv
 
         """
-        return _Extrema.Extrema_SequenceNodeOfSequenceOfPOnCurv_Value(self, *args)
+        return _Extrema.Extrema_SequenceNodeOfSequenceOfPOnCurv_Value(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Extrema_SequenceNodeOfSequenceOfPOnCurv self)"""
         return _Extrema.Extrema_SequenceNodeOfSequenceOfPOnCurv__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Extrema_SequenceNodeOfSequenceOfPOnCurv" :
+    def GetHandle(self):
         """GetHandle(Extrema_SequenceNodeOfSequenceOfPOnCurv self) -> Handle_Extrema_SequenceNodeOfSequenceOfPOnCurv"""
         return _Extrema.Extrema_SequenceNodeOfSequenceOfPOnCurv_GetHandle(self)
 
@@ -15954,7 +16516,7 @@ Handle_Extrema_SequenceNodeOfSequenceOfPOnCurv._kill_pointed = new_instancemetho
 Handle_Extrema_SequenceNodeOfSequenceOfPOnCurv_swigregister = _Extrema.Handle_Extrema_SequenceNodeOfSequenceOfPOnCurv_swigregister
 Handle_Extrema_SequenceNodeOfSequenceOfPOnCurv_swigregister(Handle_Extrema_SequenceNodeOfSequenceOfPOnCurv)
 
-def Handle_Extrema_SequenceNodeOfSequenceOfPOnCurv_DownCast(*args) -> "Handle_Extrema_SequenceNodeOfSequenceOfPOnCurv const" :
+def Handle_Extrema_SequenceNodeOfSequenceOfPOnCurv_DownCast(*args):
   return _Extrema.Handle_Extrema_SequenceNodeOfSequenceOfPOnCurv_DownCast(*args)
 Handle_Extrema_SequenceNodeOfSequenceOfPOnCurv_DownCast = _Extrema.Handle_Extrema_SequenceNodeOfSequenceOfPOnCurv_DownCast
 
@@ -15973,18 +16535,18 @@ class Extrema_SequenceNodeOfSequenceOfPOnCurv2d(OCC.TCollection.TCollection_SeqN
 
         """
         _Extrema.Extrema_SequenceNodeOfSequenceOfPOnCurv2d_swiginit(self,_Extrema.new_Extrema_SequenceNodeOfSequenceOfPOnCurv2d(*args))
-    def Value(self, *args) -> "Extrema_POnCurv2d &" :
+    def Value(self):
         """
         :rtype: Extrema_POnCurv2d
 
         """
-        return _Extrema.Extrema_SequenceNodeOfSequenceOfPOnCurv2d_Value(self, *args)
+        return _Extrema.Extrema_SequenceNodeOfSequenceOfPOnCurv2d_Value(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Extrema_SequenceNodeOfSequenceOfPOnCurv2d self)"""
         return _Extrema.Extrema_SequenceNodeOfSequenceOfPOnCurv2d__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Extrema_SequenceNodeOfSequenceOfPOnCurv2d" :
+    def GetHandle(self):
         """GetHandle(Extrema_SequenceNodeOfSequenceOfPOnCurv2d self) -> Handle_Extrema_SequenceNodeOfSequenceOfPOnCurv2d"""
         return _Extrema.Extrema_SequenceNodeOfSequenceOfPOnCurv2d_GetHandle(self)
 
@@ -16023,7 +16585,7 @@ Handle_Extrema_SequenceNodeOfSequenceOfPOnCurv2d._kill_pointed = new_instancemet
 Handle_Extrema_SequenceNodeOfSequenceOfPOnCurv2d_swigregister = _Extrema.Handle_Extrema_SequenceNodeOfSequenceOfPOnCurv2d_swigregister
 Handle_Extrema_SequenceNodeOfSequenceOfPOnCurv2d_swigregister(Handle_Extrema_SequenceNodeOfSequenceOfPOnCurv2d)
 
-def Handle_Extrema_SequenceNodeOfSequenceOfPOnCurv2d_DownCast(*args) -> "Handle_Extrema_SequenceNodeOfSequenceOfPOnCurv2d const" :
+def Handle_Extrema_SequenceNodeOfSequenceOfPOnCurv2d_DownCast(*args):
   return _Extrema.Handle_Extrema_SequenceNodeOfSequenceOfPOnCurv2d_DownCast(*args)
 Handle_Extrema_SequenceNodeOfSequenceOfPOnCurv2d_DownCast = _Extrema.Handle_Extrema_SequenceNodeOfSequenceOfPOnCurv2d_DownCast
 
@@ -16042,18 +16604,18 @@ class Extrema_SequenceNodeOfSequenceOfPOnSurf(OCC.TCollection.TCollection_SeqNod
 
         """
         _Extrema.Extrema_SequenceNodeOfSequenceOfPOnSurf_swiginit(self,_Extrema.new_Extrema_SequenceNodeOfSequenceOfPOnSurf(*args))
-    def Value(self, *args) -> "Extrema_POnSurf &" :
+    def Value(self):
         """
         :rtype: Extrema_POnSurf
 
         """
-        return _Extrema.Extrema_SequenceNodeOfSequenceOfPOnSurf_Value(self, *args)
+        return _Extrema.Extrema_SequenceNodeOfSequenceOfPOnSurf_Value(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Extrema_SequenceNodeOfSequenceOfPOnSurf self)"""
         return _Extrema.Extrema_SequenceNodeOfSequenceOfPOnSurf__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Extrema_SequenceNodeOfSequenceOfPOnSurf" :
+    def GetHandle(self):
         """GetHandle(Extrema_SequenceNodeOfSequenceOfPOnSurf self) -> Handle_Extrema_SequenceNodeOfSequenceOfPOnSurf"""
         return _Extrema.Extrema_SequenceNodeOfSequenceOfPOnSurf_GetHandle(self)
 
@@ -16092,27 +16654,27 @@ Handle_Extrema_SequenceNodeOfSequenceOfPOnSurf._kill_pointed = new_instancemetho
 Handle_Extrema_SequenceNodeOfSequenceOfPOnSurf_swigregister = _Extrema.Handle_Extrema_SequenceNodeOfSequenceOfPOnSurf_swigregister
 Handle_Extrema_SequenceNodeOfSequenceOfPOnSurf_swigregister(Handle_Extrema_SequenceNodeOfSequenceOfPOnSurf)
 
-def Handle_Extrema_SequenceNodeOfSequenceOfPOnSurf_DownCast(*args) -> "Handle_Extrema_SequenceNodeOfSequenceOfPOnSurf const" :
+def Handle_Extrema_SequenceNodeOfSequenceOfPOnSurf_DownCast(*args):
   return _Extrema.Handle_Extrema_SequenceNodeOfSequenceOfPOnSurf_DownCast(*args)
 Handle_Extrema_SequenceNodeOfSequenceOfPOnSurf_DownCast = _Extrema.Handle_Extrema_SequenceNodeOfSequenceOfPOnSurf_DownCast
 
 class Extrema_SequenceOfPOnCurv(OCC.TCollection.TCollection_BaseSequence):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _Extrema.Extrema_SequenceOfPOnCurv_swiginit(self,_Extrema.new_Extrema_SequenceOfPOnCurv(*args))
-    def Clear(self, *args) -> "void" :
+        _Extrema.Extrema_SequenceOfPOnCurv_swiginit(self,_Extrema.new_Extrema_SequenceOfPOnCurv())
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _Extrema.Extrema_SequenceOfPOnCurv_Clear(self, *args)
+        return _Extrema.Extrema_SequenceOfPOnCurv_Clear(self)
 
-    def Assign(self, *args) -> "Extrema_SequenceOfPOnCurv const &" :
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: Extrema_SequenceOfPOnCurv &
@@ -16121,7 +16683,7 @@ class Extrema_SequenceOfPOnCurv(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Extrema.Extrema_SequenceOfPOnCurv_Assign(self, *args)
 
-    def Set(self, *args) -> "Extrema_SequenceOfPOnCurv const &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: Extrema_SequenceOfPOnCurv &
@@ -16130,7 +16692,7 @@ class Extrema_SequenceOfPOnCurv(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Extrema.Extrema_SequenceOfPOnCurv_Set(self, *args)
 
-    def Append(self, *args) -> "void" :
+    def Append(self, *args):
         """
         :param T:
         :type T: Extrema_POnCurv &
@@ -16143,7 +16705,7 @@ class Extrema_SequenceOfPOnCurv(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Extrema.Extrema_SequenceOfPOnCurv_Append(self, *args)
 
-    def Prepend(self, *args) -> "void" :
+    def Prepend(self, *args):
         """
         :param T:
         :type T: Extrema_POnCurv &
@@ -16156,16 +16718,16 @@ class Extrema_SequenceOfPOnCurv(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Extrema.Extrema_SequenceOfPOnCurv_Prepend(self, *args)
 
-    def InsertBefore(self, *args) -> "void" :
+    def InsertBefore(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param T:
         :type T: Extrema_POnCurv &
         :rtype: None
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param S:
         :type S: Extrema_SequenceOfPOnCurv &
         :rtype: None
@@ -16173,16 +16735,16 @@ class Extrema_SequenceOfPOnCurv(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Extrema.Extrema_SequenceOfPOnCurv_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args) -> "void" :
+    def InsertAfter(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param T:
         :type T: Extrema_POnCurv &
         :rtype: None
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param S:
         :type S: Extrema_SequenceOfPOnCurv &
         :rtype: None
@@ -16190,24 +16752,24 @@ class Extrema_SequenceOfPOnCurv(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Extrema.Extrema_SequenceOfPOnCurv_InsertAfter(self, *args)
 
-    def First(self, *args) -> "Extrema_POnCurv const &" :
+    def First(self):
         """
         :rtype: Extrema_POnCurv
 
         """
-        return _Extrema.Extrema_SequenceOfPOnCurv_First(self, *args)
+        return _Extrema.Extrema_SequenceOfPOnCurv_First(self)
 
-    def Last(self, *args) -> "Extrema_POnCurv const &" :
+    def Last(self):
         """
         :rtype: Extrema_POnCurv
 
         """
-        return _Extrema.Extrema_SequenceOfPOnCurv_Last(self, *args)
+        return _Extrema.Extrema_SequenceOfPOnCurv_Last(self)
 
-    def Split(self, *args) -> "void" :
+    def Split(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Sub:
         :type Sub: Extrema_SequenceOfPOnCurv &
         :rtype: None
@@ -16215,19 +16777,19 @@ class Extrema_SequenceOfPOnCurv(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Extrema.Extrema_SequenceOfPOnCurv_Split(self, *args)
 
-    def Value(self, *args) -> "Extrema_POnCurv const &" :
+    def Value(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Extrema_POnCurv
 
         """
         return _Extrema.Extrema_SequenceOfPOnCurv_Value(self, *args)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param I:
         :type I: Extrema_POnCurv &
         :rtype: None
@@ -16235,25 +16797,25 @@ class Extrema_SequenceOfPOnCurv(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Extrema.Extrema_SequenceOfPOnCurv_SetValue(self, *args)
 
-    def ChangeValue(self, *args) -> "Extrema_POnCurv &" :
+    def ChangeValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Extrema_POnCurv
 
         """
         return _Extrema.Extrema_SequenceOfPOnCurv_ChangeValue(self, *args)
 
-    def Remove(self, *args) -> "void" :
+    def Remove(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: None
 
         :param FromIndex:
-        :type FromIndex: int
+        :type FromIndex: Standard_Integer
         :param ToIndex:
-        :type ToIndex: int
+        :type ToIndex: Standard_Integer
         :rtype: None
 
         """
@@ -16288,20 +16850,20 @@ Extrema_SequenceOfPOnCurv_swigregister(Extrema_SequenceOfPOnCurv)
 class Extrema_SequenceOfPOnCurv2d(OCC.TCollection.TCollection_BaseSequence):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _Extrema.Extrema_SequenceOfPOnCurv2d_swiginit(self,_Extrema.new_Extrema_SequenceOfPOnCurv2d(*args))
-    def Clear(self, *args) -> "void" :
+        _Extrema.Extrema_SequenceOfPOnCurv2d_swiginit(self,_Extrema.new_Extrema_SequenceOfPOnCurv2d())
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _Extrema.Extrema_SequenceOfPOnCurv2d_Clear(self, *args)
+        return _Extrema.Extrema_SequenceOfPOnCurv2d_Clear(self)
 
-    def Assign(self, *args) -> "Extrema_SequenceOfPOnCurv2d const &" :
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: Extrema_SequenceOfPOnCurv2d &
@@ -16310,7 +16872,7 @@ class Extrema_SequenceOfPOnCurv2d(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Extrema.Extrema_SequenceOfPOnCurv2d_Assign(self, *args)
 
-    def Set(self, *args) -> "Extrema_SequenceOfPOnCurv2d const &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: Extrema_SequenceOfPOnCurv2d &
@@ -16319,7 +16881,7 @@ class Extrema_SequenceOfPOnCurv2d(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Extrema.Extrema_SequenceOfPOnCurv2d_Set(self, *args)
 
-    def Append(self, *args) -> "void" :
+    def Append(self, *args):
         """
         :param T:
         :type T: Extrema_POnCurv2d &
@@ -16332,7 +16894,7 @@ class Extrema_SequenceOfPOnCurv2d(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Extrema.Extrema_SequenceOfPOnCurv2d_Append(self, *args)
 
-    def Prepend(self, *args) -> "void" :
+    def Prepend(self, *args):
         """
         :param T:
         :type T: Extrema_POnCurv2d &
@@ -16345,16 +16907,16 @@ class Extrema_SequenceOfPOnCurv2d(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Extrema.Extrema_SequenceOfPOnCurv2d_Prepend(self, *args)
 
-    def InsertBefore(self, *args) -> "void" :
+    def InsertBefore(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param T:
         :type T: Extrema_POnCurv2d &
         :rtype: None
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param S:
         :type S: Extrema_SequenceOfPOnCurv2d &
         :rtype: None
@@ -16362,16 +16924,16 @@ class Extrema_SequenceOfPOnCurv2d(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Extrema.Extrema_SequenceOfPOnCurv2d_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args) -> "void" :
+    def InsertAfter(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param T:
         :type T: Extrema_POnCurv2d &
         :rtype: None
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param S:
         :type S: Extrema_SequenceOfPOnCurv2d &
         :rtype: None
@@ -16379,24 +16941,24 @@ class Extrema_SequenceOfPOnCurv2d(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Extrema.Extrema_SequenceOfPOnCurv2d_InsertAfter(self, *args)
 
-    def First(self, *args) -> "Extrema_POnCurv2d const &" :
+    def First(self):
         """
         :rtype: Extrema_POnCurv2d
 
         """
-        return _Extrema.Extrema_SequenceOfPOnCurv2d_First(self, *args)
+        return _Extrema.Extrema_SequenceOfPOnCurv2d_First(self)
 
-    def Last(self, *args) -> "Extrema_POnCurv2d const &" :
+    def Last(self):
         """
         :rtype: Extrema_POnCurv2d
 
         """
-        return _Extrema.Extrema_SequenceOfPOnCurv2d_Last(self, *args)
+        return _Extrema.Extrema_SequenceOfPOnCurv2d_Last(self)
 
-    def Split(self, *args) -> "void" :
+    def Split(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Sub:
         :type Sub: Extrema_SequenceOfPOnCurv2d &
         :rtype: None
@@ -16404,19 +16966,19 @@ class Extrema_SequenceOfPOnCurv2d(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Extrema.Extrema_SequenceOfPOnCurv2d_Split(self, *args)
 
-    def Value(self, *args) -> "Extrema_POnCurv2d const &" :
+    def Value(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Extrema_POnCurv2d
 
         """
         return _Extrema.Extrema_SequenceOfPOnCurv2d_Value(self, *args)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param I:
         :type I: Extrema_POnCurv2d &
         :rtype: None
@@ -16424,25 +16986,25 @@ class Extrema_SequenceOfPOnCurv2d(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Extrema.Extrema_SequenceOfPOnCurv2d_SetValue(self, *args)
 
-    def ChangeValue(self, *args) -> "Extrema_POnCurv2d &" :
+    def ChangeValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Extrema_POnCurv2d
 
         """
         return _Extrema.Extrema_SequenceOfPOnCurv2d_ChangeValue(self, *args)
 
-    def Remove(self, *args) -> "void" :
+    def Remove(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: None
 
         :param FromIndex:
-        :type FromIndex: int
+        :type FromIndex: Standard_Integer
         :param ToIndex:
-        :type ToIndex: int
+        :type ToIndex: Standard_Integer
         :rtype: None
 
         """
@@ -16477,20 +17039,20 @@ Extrema_SequenceOfPOnCurv2d_swigregister(Extrema_SequenceOfPOnCurv2d)
 class Extrema_SequenceOfPOnSurf(OCC.TCollection.TCollection_BaseSequence):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _Extrema.Extrema_SequenceOfPOnSurf_swiginit(self,_Extrema.new_Extrema_SequenceOfPOnSurf(*args))
-    def Clear(self, *args) -> "void" :
+        _Extrema.Extrema_SequenceOfPOnSurf_swiginit(self,_Extrema.new_Extrema_SequenceOfPOnSurf())
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _Extrema.Extrema_SequenceOfPOnSurf_Clear(self, *args)
+        return _Extrema.Extrema_SequenceOfPOnSurf_Clear(self)
 
-    def Assign(self, *args) -> "Extrema_SequenceOfPOnSurf const &" :
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: Extrema_SequenceOfPOnSurf &
@@ -16499,7 +17061,7 @@ class Extrema_SequenceOfPOnSurf(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Extrema.Extrema_SequenceOfPOnSurf_Assign(self, *args)
 
-    def Set(self, *args) -> "Extrema_SequenceOfPOnSurf const &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: Extrema_SequenceOfPOnSurf &
@@ -16508,7 +17070,7 @@ class Extrema_SequenceOfPOnSurf(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Extrema.Extrema_SequenceOfPOnSurf_Set(self, *args)
 
-    def Append(self, *args) -> "void" :
+    def Append(self, *args):
         """
         :param T:
         :type T: Extrema_POnSurf &
@@ -16521,7 +17083,7 @@ class Extrema_SequenceOfPOnSurf(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Extrema.Extrema_SequenceOfPOnSurf_Append(self, *args)
 
-    def Prepend(self, *args) -> "void" :
+    def Prepend(self, *args):
         """
         :param T:
         :type T: Extrema_POnSurf &
@@ -16534,16 +17096,16 @@ class Extrema_SequenceOfPOnSurf(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Extrema.Extrema_SequenceOfPOnSurf_Prepend(self, *args)
 
-    def InsertBefore(self, *args) -> "void" :
+    def InsertBefore(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param T:
         :type T: Extrema_POnSurf &
         :rtype: None
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param S:
         :type S: Extrema_SequenceOfPOnSurf &
         :rtype: None
@@ -16551,16 +17113,16 @@ class Extrema_SequenceOfPOnSurf(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Extrema.Extrema_SequenceOfPOnSurf_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args) -> "void" :
+    def InsertAfter(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param T:
         :type T: Extrema_POnSurf &
         :rtype: None
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param S:
         :type S: Extrema_SequenceOfPOnSurf &
         :rtype: None
@@ -16568,24 +17130,24 @@ class Extrema_SequenceOfPOnSurf(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Extrema.Extrema_SequenceOfPOnSurf_InsertAfter(self, *args)
 
-    def First(self, *args) -> "Extrema_POnSurf const &" :
+    def First(self):
         """
         :rtype: Extrema_POnSurf
 
         """
-        return _Extrema.Extrema_SequenceOfPOnSurf_First(self, *args)
+        return _Extrema.Extrema_SequenceOfPOnSurf_First(self)
 
-    def Last(self, *args) -> "Extrema_POnSurf const &" :
+    def Last(self):
         """
         :rtype: Extrema_POnSurf
 
         """
-        return _Extrema.Extrema_SequenceOfPOnSurf_Last(self, *args)
+        return _Extrema.Extrema_SequenceOfPOnSurf_Last(self)
 
-    def Split(self, *args) -> "void" :
+    def Split(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Sub:
         :type Sub: Extrema_SequenceOfPOnSurf &
         :rtype: None
@@ -16593,19 +17155,19 @@ class Extrema_SequenceOfPOnSurf(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Extrema.Extrema_SequenceOfPOnSurf_Split(self, *args)
 
-    def Value(self, *args) -> "Extrema_POnSurf const &" :
+    def Value(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Extrema_POnSurf
 
         """
         return _Extrema.Extrema_SequenceOfPOnSurf_Value(self, *args)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param I:
         :type I: Extrema_POnSurf &
         :rtype: None
@@ -16613,25 +17175,25 @@ class Extrema_SequenceOfPOnSurf(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Extrema.Extrema_SequenceOfPOnSurf_SetValue(self, *args)
 
-    def ChangeValue(self, *args) -> "Extrema_POnSurf &" :
+    def ChangeValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Extrema_POnSurf
 
         """
         return _Extrema.Extrema_SequenceOfPOnSurf_ChangeValue(self, *args)
 
-    def Remove(self, *args) -> "void" :
+    def Remove(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: None
 
         :param FromIndex:
-        :type FromIndex: int
+        :type FromIndex: Standard_Integer
         :param ToIndex:
-        :type ToIndex: int
+        :type ToIndex: Standard_Integer
         :rtype: None
 
         """
@@ -16684,7 +17246,7 @@ class Extrema_POnSurfParams(Extrema_POnSurf):
 
         """
         _Extrema.Extrema_POnSurfParams_swiginit(self,_Extrema.new_Extrema_POnSurfParams(*args))
-    def SetSqrDistance(self, *args) -> "void" :
+    def SetSqrDistance(self, *args):
         """
         * Sets the square distance from this point to another one (e.g. to the point to be projected).
 
@@ -16695,16 +17257,16 @@ class Extrema_POnSurfParams(Extrema_POnSurf):
         """
         return _Extrema.Extrema_POnSurfParams_SetSqrDistance(self, *args)
 
-    def GetSqrDistance(self, *args) -> "Standard_Real" :
+    def GetSqrDistance(self):
         """
         * Query the square distance from this point to another one.
 
         :rtype: float
 
         """
-        return _Extrema.Extrema_POnSurfParams_GetSqrDistance(self, *args)
+        return _Extrema.Extrema_POnSurfParams_GetSqrDistance(self)
 
-    def SetElementType(self, *args) -> "void" :
+    def SetElementType(self, *args):
         """
         * Sets the element type on which this point is situated.
 
@@ -16715,40 +17277,40 @@ class Extrema_POnSurfParams(Extrema_POnSurf):
         """
         return _Extrema.Extrema_POnSurfParams_SetElementType(self, *args)
 
-    def GetElementType(self, *args) -> "Extrema_ElementType" :
+    def GetElementType(self):
         """
         * Query the element type on which this point is situated.
 
         :rtype: Extrema_ElementType
 
         """
-        return _Extrema.Extrema_POnSurfParams_GetElementType(self, *args)
+        return _Extrema.Extrema_POnSurfParams_GetElementType(self)
 
-    def SetIndices(self, *args) -> "void" :
+    def SetIndices(self, *args):
         """
         * Sets the U and V indices of an element that contains this point.
 
         :param theIndexU:
-        :type theIndexU: int
+        :type theIndexU: Standard_Integer
         :param theIndexV:
-        :type theIndexV: int
+        :type theIndexV: Standard_Integer
         :rtype: None
 
         """
         return _Extrema.Extrema_POnSurfParams_SetIndices(self, *args)
 
-    def GetIndices(self, *args) -> "void" :
+    def GetIndices(self):
         """
         * Query the U and V indices of an element that contains this point.
 
         :param theIndexU:
-        :type theIndexU: int &
+        :type theIndexU: Standard_Integer &
         :param theIndexV:
-        :type theIndexV: int &
+        :type theIndexV: Standard_Integer &
         :rtype: None
 
         """
-        return _Extrema.Extrema_POnSurfParams_GetIndices(self, *args)
+        return _Extrema.Extrema_POnSurfParams_GetIndices(self)
 
     def __del__(self):
     	try:

@@ -117,9 +117,20 @@ import OCC.gp
 import OCC.TopAbs
 class stlapi(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
+    def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def Write(*args) -> "void" :
+    def Write(*args):
         """
+        * Convert and write shape to STL format.  file is written in binary if aAsciiMode is False  otherwise it is written in Ascii (by default)
+
+        :param aShape:
+        :type aShape: TopoDS_Shape &
+        :param aFile:
+        :type aFile: char *
+        :param aAsciiMode: default value is Standard_True
+        :type aAsciiMode: bool
+        :rtype: void
+
         * Convert and write shape to STL format.  file is written in binary if aAsciiMode is False  otherwise it is written in Ascii (by default)
 
         :param aShape:
@@ -134,7 +145,7 @@ class stlapi(object):
         return _StlAPI.stlapi_Write(*args)
 
     Write = staticmethod(Write)
-    def Read(*args) -> "void" :
+    def Read(*args):
         """
         * Create a shape from a STL format.
 
@@ -148,8 +159,6 @@ class stlapi(object):
         return _StlAPI.stlapi_Read(*args)
 
     Read = staticmethod(Read)
-    def __init__(self): 
-        _StlAPI.stlapi_swiginit(self,_StlAPI.new_stlapi())
     def __del__(self):
     	try:
     		self.thisown = False
@@ -162,8 +171,18 @@ stlapi._kill_pointed = new_instancemethod(_StlAPI.stlapi__kill_pointed,None,stla
 stlapi_swigregister = _StlAPI.stlapi_swigregister
 stlapi_swigregister(stlapi)
 
-def stlapi_Write(*args) -> "void" :
+def stlapi_Write(*args):
   """
+    * Convert and write shape to STL format.  file is written in binary if aAsciiMode is False  otherwise it is written in Ascii (by default)
+
+    :param aShape:
+    :type aShape: TopoDS_Shape &
+    :param aFile:
+    :type aFile: char *
+    :param aAsciiMode: default value is Standard_True
+    :type aAsciiMode: bool
+    :rtype: void
+
     * Convert and write shape to STL format.  file is written in binary if aAsciiMode is False  otherwise it is written in Ascii (by default)
 
     :param aShape:
@@ -177,7 +196,7 @@ def stlapi_Write(*args) -> "void" :
     """
   return _StlAPI.stlapi_Write(*args)
 
-def stlapi_Read(*args) -> "void" :
+def stlapi_Read(*args):
   """
     * Create a shape from a STL format.
 
@@ -193,13 +212,13 @@ def stlapi_Read(*args) -> "void" :
 class StlAPI_Reader(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _StlAPI.StlAPI_Reader_swiginit(self,_StlAPI.new_StlAPI_Reader(*args))
-    def Read(self, *args) -> "void" :
+        _StlAPI.StlAPI_Reader_swiginit(self,_StlAPI.new_StlAPI_Reader())
+    def Read(self, *args):
         """
         :param aShape:
         :type aShape: TopoDS_Shape &
@@ -226,15 +245,15 @@ StlAPI_Reader_swigregister(StlAPI_Reader)
 class StlAPI_Writer(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         * Creates a writer object with default parameters: ASCIIMode, RelativeMode, SetCoefficent, SetDeflection. These parameters may be modified.
 
         :rtype: None
 
         """
-        _StlAPI.StlAPI_Writer_swiginit(self,_StlAPI.new_StlAPI_Writer(*args))
-    def SetDeflection(self, *args) -> "void" :
+        _StlAPI.StlAPI_Writer_swiginit(self,_StlAPI.new_StlAPI_Writer())
+    def SetDeflection(self, *args):
         """
         * Sets the deflection of the meshing algorithm. Deflection is used, only if relative mode is false
 
@@ -245,7 +264,7 @@ class StlAPI_Writer(object):
         """
         return _StlAPI.StlAPI_Writer_SetDeflection(self, *args)
 
-    def SetCoefficient(self, *args) -> "void" :
+    def SetCoefficient(self, *args):
         """
         * Sets the coeffiecient for computation of deflection through relative size of shape. Default value = 0.001
 
@@ -256,24 +275,34 @@ class StlAPI_Writer(object):
         """
         return _StlAPI.StlAPI_Writer_SetCoefficient(self, *args)
 
-    def GetRelativeMode(self) -> "Standard_Boolean" :
+    def GetRelativeMode(self):
         """GetRelativeMode(StlAPI_Writer self) -> Standard_Boolean"""
         return _StlAPI.StlAPI_Writer_GetRelativeMode(self)
 
-    def SetRelativeMode(self, *args) -> "void" :
+    def SetRelativeMode(self, *args):
         """SetRelativeMode(StlAPI_Writer self, Standard_Boolean value)"""
         return _StlAPI.StlAPI_Writer_SetRelativeMode(self, *args)
 
-    def GetASCIIMode(self) -> "Standard_Boolean" :
+    def GetASCIIMode(self):
         """GetASCIIMode(StlAPI_Writer self) -> Standard_Boolean"""
         return _StlAPI.StlAPI_Writer_GetASCIIMode(self)
 
-    def SetASCIIMode(self, *args) -> "void" :
+    def SetASCIIMode(self, *args):
         """SetASCIIMode(StlAPI_Writer self, Standard_Boolean value)"""
         return _StlAPI.StlAPI_Writer_SetASCIIMode(self, *args)
 
-    def Write(self, *args) -> "void" :
+    def Write(self, *args):
         """
+        * Converts a given shape to STL format and writes it to file with a given filename.
+
+        :param aShape:
+        :type aShape: TopoDS_Shape &
+        :param aFileName:
+        :type aFileName: char *
+        :param InParallel: default value is Standard_False
+        :type InParallel: bool
+        :rtype: None
+
         * Converts a given shape to STL format and writes it to file with a given filename.
 
         :param aShape:
@@ -287,7 +316,7 @@ class StlAPI_Writer(object):
         """
         return _StlAPI.StlAPI_Writer_Write(self, *args)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(StlAPI_Writer self)"""
         return _StlAPI.StlAPI_Writer__kill_pointed(self)
 

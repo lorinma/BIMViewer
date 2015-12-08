@@ -118,8 +118,9 @@ import OCC.TColgp
 import OCC.TColStd
 class geomlprop(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
+    def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def Continuity(*args) -> "GeomAbs_Shape" :
+    def Continuity(*args):
         """
         * Computes the regularity at the junction between C1 and C2. The booleans r1 and r2 are true if the curves must be taken reversed. The point u1 on C1 and the point u2 on C2 must be confused. tl and ta are the linear and angular tolerance used two compare the derivative.
 
@@ -161,8 +162,6 @@ class geomlprop(object):
         return _GeomLProp.geomlprop_Continuity(*args)
 
     Continuity = staticmethod(Continuity)
-    def __init__(self): 
-        _GeomLProp.geomlprop_swiginit(self,_GeomLProp.new_geomlprop())
     def __del__(self):
     	try:
     		self.thisown = False
@@ -175,7 +174,7 @@ geomlprop._kill_pointed = new_instancemethod(_GeomLProp.geomlprop__kill_pointed,
 geomlprop_swigregister = _GeomLProp.geomlprop_swigregister
 geomlprop_swigregister(geomlprop)
 
-def geomlprop_Continuity(*args) -> "GeomAbs_Shape" :
+def geomlprop_Continuity(*args):
   """
     * Computes the regularity at the junction between C1 and C2. The booleans r1 and r2 are true if the curves must be taken reversed. The point u1 on C1 and the point u2 on C2 must be confused. tl and ta are the linear and angular tolerance used two compare the derivative.
 
@@ -224,7 +223,7 @@ class GeomLProp_CLProps(object):
         :param C:
         :type C: Handle_Geom_Curve &
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :param Resolution:
         :type Resolution: float
         :rtype: None
@@ -234,20 +233,20 @@ class GeomLProp_CLProps(object):
         :param U:
         :type U: float
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :param Resolution:
         :type Resolution: float
         :rtype: None
 
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :param Resolution:
         :type Resolution: float
         :rtype: None
 
         """
         _GeomLProp.GeomLProp_CLProps_swiginit(self,_GeomLProp.new_GeomLProp_CLProps(*args))
-    def SetParameter(self, *args) -> "void" :
+    def SetParameter(self, *args):
         """
         :param U:
         :type U: float
@@ -256,7 +255,7 @@ class GeomLProp_CLProps(object):
         """
         return _GeomLProp.GeomLProp_CLProps_SetParameter(self, *args)
 
-    def SetCurve(self, *args) -> "void" :
+    def SetCurve(self, *args):
         """
         :param C:
         :type C: Handle_Geom_Curve &
@@ -265,42 +264,42 @@ class GeomLProp_CLProps(object):
         """
         return _GeomLProp.GeomLProp_CLProps_SetCurve(self, *args)
 
-    def Value(self, *args) -> "gp_Pnt const" :
+    def Value(self):
         """
         :rtype: gp_Pnt
 
         """
-        return _GeomLProp.GeomLProp_CLProps_Value(self, *args)
+        return _GeomLProp.GeomLProp_CLProps_Value(self)
 
-    def D1(self, *args) -> "gp_Vec const" :
+    def D1(self):
         """
         :rtype: gp_Vec
 
         """
-        return _GeomLProp.GeomLProp_CLProps_D1(self, *args)
+        return _GeomLProp.GeomLProp_CLProps_D1(self)
 
-    def D2(self, *args) -> "gp_Vec const" :
+    def D2(self):
         """
         :rtype: gp_Vec
 
         """
-        return _GeomLProp.GeomLProp_CLProps_D2(self, *args)
+        return _GeomLProp.GeomLProp_CLProps_D2(self)
 
-    def D3(self, *args) -> "gp_Vec const" :
+    def D3(self):
         """
         :rtype: gp_Vec
 
         """
-        return _GeomLProp.GeomLProp_CLProps_D3(self, *args)
+        return _GeomLProp.GeomLProp_CLProps_D3(self)
 
-    def IsTangentDefined(self, *args) -> "Standard_Boolean" :
+    def IsTangentDefined(self):
         """
         :rtype: bool
 
         """
-        return _GeomLProp.GeomLProp_CLProps_IsTangentDefined(self, *args)
+        return _GeomLProp.GeomLProp_CLProps_IsTangentDefined(self)
 
-    def Tangent(self, *args) -> "void" :
+    def Tangent(self, *args):
         """
         :param D:
         :type D: gp_Dir
@@ -309,14 +308,14 @@ class GeomLProp_CLProps(object):
         """
         return _GeomLProp.GeomLProp_CLProps_Tangent(self, *args)
 
-    def Curvature(self, *args) -> "Standard_Real" :
+    def Curvature(self):
         """
         :rtype: float
 
         """
-        return _GeomLProp.GeomLProp_CLProps_Curvature(self, *args)
+        return _GeomLProp.GeomLProp_CLProps_Curvature(self)
 
-    def Normal(self, *args) -> "void" :
+    def Normal(self, *args):
         """
         :param N:
         :type N: gp_Dir
@@ -325,7 +324,7 @@ class GeomLProp_CLProps(object):
         """
         return _GeomLProp.GeomLProp_CLProps_Normal(self, *args)
 
-    def CentreOfCurvature(self, *args) -> "void" :
+    def CentreOfCurvature(self, *args):
         """
         :param P:
         :type P: gp_Pnt
@@ -359,8 +358,9 @@ GeomLProp_CLProps_swigregister(GeomLProp_CLProps)
 
 class GeomLProp_CurveTool(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
+    def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def Value(*args) -> "void" :
+    def Value(*args):
         """
         * Computes the point <P> of parameter <U> on the curve <C>.
 
@@ -376,7 +376,7 @@ class GeomLProp_CurveTool(object):
         return _GeomLProp.GeomLProp_CurveTool_Value(*args)
 
     Value = staticmethod(Value)
-    def D1(*args) -> "void" :
+    def D1(*args):
         """
         * Computes the point <P> and first derivative <V1> of parameter <U> on the curve <C>.
 
@@ -394,7 +394,7 @@ class GeomLProp_CurveTool(object):
         return _GeomLProp.GeomLProp_CurveTool_D1(*args)
 
     D1 = staticmethod(D1)
-    def D2(*args) -> "void" :
+    def D2(*args):
         """
         * Computes the point <P>, the first derivative <V1> and second derivative <V2> of parameter <U> on the curve <C>.
 
@@ -414,7 +414,7 @@ class GeomLProp_CurveTool(object):
         return _GeomLProp.GeomLProp_CurveTool_D2(*args)
 
     D2 = staticmethod(D2)
-    def D3(*args) -> "void" :
+    def D3(*args):
         """
         * Computes the point <P>, the first derivative <V1>, the second derivative <V2> and third derivative <V3> of parameter <U> on the curve <C>.
 
@@ -436,7 +436,7 @@ class GeomLProp_CurveTool(object):
         return _GeomLProp.GeomLProp_CurveTool_D3(*args)
 
     D3 = staticmethod(D3)
-    def Continuity(*args) -> "Standard_Integer" :
+    def Continuity(*args):
         """
         * returns the order of continuity of the curve <C>. returns 1 : first derivative only is computable returns 2 : first and second derivative only are computable. returns 3 : first, second and third are computable.
 
@@ -448,7 +448,7 @@ class GeomLProp_CurveTool(object):
         return _GeomLProp.GeomLProp_CurveTool_Continuity(*args)
 
     Continuity = staticmethod(Continuity)
-    def FirstParameter(*args) -> "Standard_Real" :
+    def FirstParameter(*args):
         """
         * returns the first parameter bound of the curve.
 
@@ -460,7 +460,7 @@ class GeomLProp_CurveTool(object):
         return _GeomLProp.GeomLProp_CurveTool_FirstParameter(*args)
 
     FirstParameter = staticmethod(FirstParameter)
-    def LastParameter(*args) -> "Standard_Real" :
+    def LastParameter(*args):
         """
         * returns the last parameter bound of the curve. FirstParameter must be less than LastParamenter.
 
@@ -472,8 +472,6 @@ class GeomLProp_CurveTool(object):
         return _GeomLProp.GeomLProp_CurveTool_LastParameter(*args)
 
     LastParameter = staticmethod(LastParameter)
-    def __init__(self): 
-        _GeomLProp.GeomLProp_CurveTool_swiginit(self,_GeomLProp.new_GeomLProp_CurveTool())
     def __del__(self):
     	try:
     		self.thisown = False
@@ -486,7 +484,7 @@ GeomLProp_CurveTool._kill_pointed = new_instancemethod(_GeomLProp.GeomLProp_Curv
 GeomLProp_CurveTool_swigregister = _GeomLProp.GeomLProp_CurveTool_swigregister
 GeomLProp_CurveTool_swigregister(GeomLProp_CurveTool)
 
-def GeomLProp_CurveTool_Value(*args) -> "void" :
+def GeomLProp_CurveTool_Value(*args):
   """
     * Computes the point <P> of parameter <U> on the curve <C>.
 
@@ -501,7 +499,7 @@ def GeomLProp_CurveTool_Value(*args) -> "void" :
     """
   return _GeomLProp.GeomLProp_CurveTool_Value(*args)
 
-def GeomLProp_CurveTool_D1(*args) -> "void" :
+def GeomLProp_CurveTool_D1(*args):
   """
     * Computes the point <P> and first derivative <V1> of parameter <U> on the curve <C>.
 
@@ -518,7 +516,7 @@ def GeomLProp_CurveTool_D1(*args) -> "void" :
     """
   return _GeomLProp.GeomLProp_CurveTool_D1(*args)
 
-def GeomLProp_CurveTool_D2(*args) -> "void" :
+def GeomLProp_CurveTool_D2(*args):
   """
     * Computes the point <P>, the first derivative <V1> and second derivative <V2> of parameter <U> on the curve <C>.
 
@@ -537,7 +535,7 @@ def GeomLProp_CurveTool_D2(*args) -> "void" :
     """
   return _GeomLProp.GeomLProp_CurveTool_D2(*args)
 
-def GeomLProp_CurveTool_D3(*args) -> "void" :
+def GeomLProp_CurveTool_D3(*args):
   """
     * Computes the point <P>, the first derivative <V1>, the second derivative <V2> and third derivative <V3> of parameter <U> on the curve <C>.
 
@@ -558,7 +556,7 @@ def GeomLProp_CurveTool_D3(*args) -> "void" :
     """
   return _GeomLProp.GeomLProp_CurveTool_D3(*args)
 
-def GeomLProp_CurveTool_Continuity(*args) -> "Standard_Integer" :
+def GeomLProp_CurveTool_Continuity(*args):
   """
     * returns the order of continuity of the curve <C>. returns 1 : first derivative only is computable returns 2 : first and second derivative only are computable. returns 3 : first, second and third are computable.
 
@@ -569,7 +567,7 @@ def GeomLProp_CurveTool_Continuity(*args) -> "Standard_Integer" :
     """
   return _GeomLProp.GeomLProp_CurveTool_Continuity(*args)
 
-def GeomLProp_CurveTool_FirstParameter(*args) -> "Standard_Real" :
+def GeomLProp_CurveTool_FirstParameter(*args):
   """
     * returns the first parameter bound of the curve.
 
@@ -580,7 +578,7 @@ def GeomLProp_CurveTool_FirstParameter(*args) -> "Standard_Real" :
     """
   return _GeomLProp.GeomLProp_CurveTool_FirstParameter(*args)
 
-def GeomLProp_CurveTool_LastParameter(*args) -> "Standard_Real" :
+def GeomLProp_CurveTool_LastParameter(*args):
   """
     * returns the last parameter bound of the curve. FirstParameter must be less than LastParamenter.
 
@@ -603,7 +601,7 @@ class GeomLProp_SLProps(object):
         :param V:
         :type V: float
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :param Resolution:
         :type Resolution: float
         :rtype: None
@@ -611,20 +609,20 @@ class GeomLProp_SLProps(object):
         :param S:
         :type S: Handle_Geom_Surface &
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :param Resolution:
         :type Resolution: float
         :rtype: None
 
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :param Resolution:
         :type Resolution: float
         :rtype: None
 
         """
         _GeomLProp.GeomLProp_SLProps_swiginit(self,_GeomLProp.new_GeomLProp_SLProps(*args))
-    def SetSurface(self, *args) -> "void" :
+    def SetSurface(self, *args):
         """
         :param S:
         :type S: Handle_Geom_Surface &
@@ -633,7 +631,7 @@ class GeomLProp_SLProps(object):
         """
         return _GeomLProp.GeomLProp_SLProps_SetSurface(self, *args)
 
-    def SetParameters(self, *args) -> "void" :
+    def SetParameters(self, *args):
         """
         :param U:
         :type U: float
@@ -644,56 +642,56 @@ class GeomLProp_SLProps(object):
         """
         return _GeomLProp.GeomLProp_SLProps_SetParameters(self, *args)
 
-    def Value(self, *args) -> "gp_Pnt const" :
+    def Value(self):
         """
         :rtype: gp_Pnt
 
         """
-        return _GeomLProp.GeomLProp_SLProps_Value(self, *args)
+        return _GeomLProp.GeomLProp_SLProps_Value(self)
 
-    def D1U(self, *args) -> "gp_Vec const" :
+    def D1U(self):
         """
         :rtype: gp_Vec
 
         """
-        return _GeomLProp.GeomLProp_SLProps_D1U(self, *args)
+        return _GeomLProp.GeomLProp_SLProps_D1U(self)
 
-    def D1V(self, *args) -> "gp_Vec const" :
+    def D1V(self):
         """
         :rtype: gp_Vec
 
         """
-        return _GeomLProp.GeomLProp_SLProps_D1V(self, *args)
+        return _GeomLProp.GeomLProp_SLProps_D1V(self)
 
-    def D2U(self, *args) -> "gp_Vec const" :
+    def D2U(self):
         """
         :rtype: gp_Vec
 
         """
-        return _GeomLProp.GeomLProp_SLProps_D2U(self, *args)
+        return _GeomLProp.GeomLProp_SLProps_D2U(self)
 
-    def D2V(self, *args) -> "gp_Vec const" :
+    def D2V(self):
         """
         :rtype: gp_Vec
 
         """
-        return _GeomLProp.GeomLProp_SLProps_D2V(self, *args)
+        return _GeomLProp.GeomLProp_SLProps_D2V(self)
 
-    def DUV(self, *args) -> "gp_Vec const" :
+    def DUV(self):
         """
         :rtype: gp_Vec
 
         """
-        return _GeomLProp.GeomLProp_SLProps_DUV(self, *args)
+        return _GeomLProp.GeomLProp_SLProps_DUV(self)
 
-    def IsTangentUDefined(self, *args) -> "Standard_Boolean" :
+    def IsTangentUDefined(self):
         """
         :rtype: bool
 
         """
-        return _GeomLProp.GeomLProp_SLProps_IsTangentUDefined(self, *args)
+        return _GeomLProp.GeomLProp_SLProps_IsTangentUDefined(self)
 
-    def TangentU(self, *args) -> "void" :
+    def TangentU(self, *args):
         """
         :param D:
         :type D: gp_Dir
@@ -702,14 +700,14 @@ class GeomLProp_SLProps(object):
         """
         return _GeomLProp.GeomLProp_SLProps_TangentU(self, *args)
 
-    def IsTangentVDefined(self, *args) -> "Standard_Boolean" :
+    def IsTangentVDefined(self):
         """
         :rtype: bool
 
         """
-        return _GeomLProp.GeomLProp_SLProps_IsTangentVDefined(self, *args)
+        return _GeomLProp.GeomLProp_SLProps_IsTangentVDefined(self)
 
-    def TangentV(self, *args) -> "void" :
+    def TangentV(self, *args):
         """
         :param D:
         :type D: gp_Dir
@@ -718,49 +716,49 @@ class GeomLProp_SLProps(object):
         """
         return _GeomLProp.GeomLProp_SLProps_TangentV(self, *args)
 
-    def IsNormalDefined(self, *args) -> "Standard_Boolean" :
+    def IsNormalDefined(self):
         """
         :rtype: bool
 
         """
-        return _GeomLProp.GeomLProp_SLProps_IsNormalDefined(self, *args)
+        return _GeomLProp.GeomLProp_SLProps_IsNormalDefined(self)
 
-    def Normal(self, *args) -> "gp_Dir const" :
+    def Normal(self):
         """
         :rtype: gp_Dir
 
         """
-        return _GeomLProp.GeomLProp_SLProps_Normal(self, *args)
+        return _GeomLProp.GeomLProp_SLProps_Normal(self)
 
-    def IsCurvatureDefined(self, *args) -> "Standard_Boolean" :
+    def IsCurvatureDefined(self):
         """
         :rtype: bool
 
         """
-        return _GeomLProp.GeomLProp_SLProps_IsCurvatureDefined(self, *args)
+        return _GeomLProp.GeomLProp_SLProps_IsCurvatureDefined(self)
 
-    def IsUmbilic(self, *args) -> "Standard_Boolean" :
+    def IsUmbilic(self):
         """
         :rtype: bool
 
         """
-        return _GeomLProp.GeomLProp_SLProps_IsUmbilic(self, *args)
+        return _GeomLProp.GeomLProp_SLProps_IsUmbilic(self)
 
-    def MaxCurvature(self, *args) -> "Standard_Real" :
+    def MaxCurvature(self):
         """
         :rtype: float
 
         """
-        return _GeomLProp.GeomLProp_SLProps_MaxCurvature(self, *args)
+        return _GeomLProp.GeomLProp_SLProps_MaxCurvature(self)
 
-    def MinCurvature(self, *args) -> "Standard_Real" :
+    def MinCurvature(self):
         """
         :rtype: float
 
         """
-        return _GeomLProp.GeomLProp_SLProps_MinCurvature(self, *args)
+        return _GeomLProp.GeomLProp_SLProps_MinCurvature(self)
 
-    def CurvatureDirections(self, *args) -> "void" :
+    def CurvatureDirections(self, *args):
         """
         :param MaxD:
         :type MaxD: gp_Dir
@@ -771,19 +769,19 @@ class GeomLProp_SLProps(object):
         """
         return _GeomLProp.GeomLProp_SLProps_CurvatureDirections(self, *args)
 
-    def MeanCurvature(self, *args) -> "Standard_Real" :
+    def MeanCurvature(self):
         """
         :rtype: float
 
         """
-        return _GeomLProp.GeomLProp_SLProps_MeanCurvature(self, *args)
+        return _GeomLProp.GeomLProp_SLProps_MeanCurvature(self)
 
-    def GaussianCurvature(self, *args) -> "Standard_Real" :
+    def GaussianCurvature(self):
         """
         :rtype: float
 
         """
-        return _GeomLProp.GeomLProp_SLProps_GaussianCurvature(self, *args)
+        return _GeomLProp.GeomLProp_SLProps_GaussianCurvature(self)
 
     def __del__(self):
     	try:
@@ -820,8 +818,9 @@ GeomLProp_SLProps_swigregister(GeomLProp_SLProps)
 
 class GeomLProp_SurfaceTool(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
+    def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def Value(*args) -> "void" :
+    def Value(*args):
         """
         * Computes the point <P> of parameter <U> and <V> on the Surface <S>.
 
@@ -839,7 +838,7 @@ class GeomLProp_SurfaceTool(object):
         return _GeomLProp.GeomLProp_SurfaceTool_Value(*args)
 
     Value = staticmethod(Value)
-    def D1(*args) -> "void" :
+    def D1(*args):
         """
         * Computes the point <P> and first derivative <D1*> of parameter <U> and <V> on the Surface <S>.
 
@@ -861,7 +860,7 @@ class GeomLProp_SurfaceTool(object):
         return _GeomLProp.GeomLProp_SurfaceTool_D1(*args)
 
     D1 = staticmethod(D1)
-    def D2(*args) -> "void" :
+    def D2(*args):
         """
         * Computes the point <P>, the first derivative <D1*> and second derivative <D2*> of parameter <U> and <V> on the Surface <S>.
 
@@ -889,7 +888,7 @@ class GeomLProp_SurfaceTool(object):
         return _GeomLProp.GeomLProp_SurfaceTool_D2(*args)
 
     D2 = staticmethod(D2)
-    def DN(*args) -> "gp_Vec" :
+    def DN(*args):
         """
         :param S:
         :type S: Handle_Geom_Surface &
@@ -898,16 +897,16 @@ class GeomLProp_SurfaceTool(object):
         :param V:
         :type V: float
         :param IU:
-        :type IU: int
+        :type IU: Standard_Integer
         :param IV:
-        :type IV: int
+        :type IV: Standard_Integer
         :rtype: gp_Vec
 
         """
         return _GeomLProp.GeomLProp_SurfaceTool_DN(*args)
 
     DN = staticmethod(DN)
-    def Continuity(*args) -> "Standard_Integer" :
+    def Continuity(*args):
         """
         * returns the order of continuity of the Surface <S>. returns 1 : first derivative only is computable returns 2 : first and second derivative only are computable.
 
@@ -919,7 +918,7 @@ class GeomLProp_SurfaceTool(object):
         return _GeomLProp.GeomLProp_SurfaceTool_Continuity(*args)
 
     Continuity = staticmethod(Continuity)
-    def Bounds(*args) -> "Standard_Real &, Standard_Real &, Standard_Real &, Standard_Real &" :
+    def Bounds(*args):
         """
         * returns the bounds of the Surface.
 
@@ -939,8 +938,6 @@ class GeomLProp_SurfaceTool(object):
         return _GeomLProp.GeomLProp_SurfaceTool_Bounds(*args)
 
     Bounds = staticmethod(Bounds)
-    def __init__(self): 
-        _GeomLProp.GeomLProp_SurfaceTool_swiginit(self,_GeomLProp.new_GeomLProp_SurfaceTool())
     def __del__(self):
     	try:
     		self.thisown = False
@@ -953,7 +950,7 @@ GeomLProp_SurfaceTool._kill_pointed = new_instancemethod(_GeomLProp.GeomLProp_Su
 GeomLProp_SurfaceTool_swigregister = _GeomLProp.GeomLProp_SurfaceTool_swigregister
 GeomLProp_SurfaceTool_swigregister(GeomLProp_SurfaceTool)
 
-def GeomLProp_SurfaceTool_Value(*args) -> "void" :
+def GeomLProp_SurfaceTool_Value(*args):
   """
     * Computes the point <P> of parameter <U> and <V> on the Surface <S>.
 
@@ -970,7 +967,7 @@ def GeomLProp_SurfaceTool_Value(*args) -> "void" :
     """
   return _GeomLProp.GeomLProp_SurfaceTool_Value(*args)
 
-def GeomLProp_SurfaceTool_D1(*args) -> "void" :
+def GeomLProp_SurfaceTool_D1(*args):
   """
     * Computes the point <P> and first derivative <D1*> of parameter <U> and <V> on the Surface <S>.
 
@@ -991,7 +988,7 @@ def GeomLProp_SurfaceTool_D1(*args) -> "void" :
     """
   return _GeomLProp.GeomLProp_SurfaceTool_D1(*args)
 
-def GeomLProp_SurfaceTool_D2(*args) -> "void" :
+def GeomLProp_SurfaceTool_D2(*args):
   """
     * Computes the point <P>, the first derivative <D1*> and second derivative <D2*> of parameter <U> and <V> on the Surface <S>.
 
@@ -1018,7 +1015,7 @@ def GeomLProp_SurfaceTool_D2(*args) -> "void" :
     """
   return _GeomLProp.GeomLProp_SurfaceTool_D2(*args)
 
-def GeomLProp_SurfaceTool_DN(*args) -> "gp_Vec" :
+def GeomLProp_SurfaceTool_DN(*args):
   """
     :param S:
     :type S: Handle_Geom_Surface &
@@ -1027,15 +1024,15 @@ def GeomLProp_SurfaceTool_DN(*args) -> "gp_Vec" :
     :param V:
     :type V: float
     :param IU:
-    :type IU: int
+    :type IU: Standard_Integer
     :param IV:
-    :type IV: int
+    :type IV: Standard_Integer
     :rtype: gp_Vec
 
     """
   return _GeomLProp.GeomLProp_SurfaceTool_DN(*args)
 
-def GeomLProp_SurfaceTool_Continuity(*args) -> "Standard_Integer" :
+def GeomLProp_SurfaceTool_Continuity(*args):
   """
     * returns the order of continuity of the Surface <S>. returns 1 : first derivative only is computable returns 2 : first and second derivative only are computable.
 
@@ -1046,7 +1043,7 @@ def GeomLProp_SurfaceTool_Continuity(*args) -> "Standard_Integer" :
     """
   return _GeomLProp.GeomLProp_SurfaceTool_Continuity(*args)
 
-def GeomLProp_SurfaceTool_Bounds(*args) -> "Standard_Real &, Standard_Real &, Standard_Real &, Standard_Real &" :
+def GeomLProp_SurfaceTool_Bounds(*args):
   """
     * returns the bounds of the Surface.
 

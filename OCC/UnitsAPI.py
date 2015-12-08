@@ -118,8 +118,9 @@ UnitsAPI_SI = _UnitsAPI.UnitsAPI_SI
 UnitsAPI_MDTV = _UnitsAPI.UnitsAPI_MDTV
 class unitsapi(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
+    def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def CurrentToLS(*args) -> "Standard_Real" :
+    def CurrentToLS(*args):
         """
         * Converts the current unit value to the local system units value. Example: CurrentToLS(1.,'LENGTH') returns 1000. if the current length unit is meter and LocalSystem is MDTV.
 
@@ -133,7 +134,7 @@ class unitsapi(object):
         return _UnitsAPI.unitsapi_CurrentToLS(*args)
 
     CurrentToLS = staticmethod(CurrentToLS)
-    def CurrentToSI(*args) -> "Standard_Real" :
+    def CurrentToSI(*args):
         """
         * Converts the current unit value to the SI system units value. Example: CurrentToSI(1.,'LENGTH') returns 0.001 if current length unit is millimeter.
 
@@ -147,7 +148,7 @@ class unitsapi(object):
         return _UnitsAPI.unitsapi_CurrentToSI(*args)
 
     CurrentToSI = staticmethod(CurrentToSI)
-    def CurrentFromLS(*args) -> "Standard_Real" :
+    def CurrentFromLS(*args):
         """
         * Converts the local system units value to the current unit value. Example: CurrentFromLS(1000.,'LENGTH') returns 1. if current length unit is meter and LocalSystem is MDTV.
 
@@ -161,7 +162,7 @@ class unitsapi(object):
         return _UnitsAPI.unitsapi_CurrentFromLS(*args)
 
     CurrentFromLS = staticmethod(CurrentFromLS)
-    def CurrentFromSI(*args) -> "Standard_Real" :
+    def CurrentFromSI(*args):
         """
         * Converts the SI system units value to the current unit value. Example: CurrentFromSI(0.001,'LENGTH') returns 1 if current length unit is millimeter.
 
@@ -175,7 +176,7 @@ class unitsapi(object):
         return _UnitsAPI.unitsapi_CurrentFromSI(*args)
 
     CurrentFromSI = staticmethod(CurrentFromSI)
-    def AnyToLS(*args) -> "Standard_Real" :
+    def AnyToLS(*args):
         """
         * Converts the local unit value to the local system units value. Example: AnyToLS(1.,'in.') returns 25.4 if the LocalSystem is MDTV.
 
@@ -199,7 +200,7 @@ class unitsapi(object):
         return _UnitsAPI.unitsapi_AnyToLS(*args)
 
     AnyToLS = staticmethod(AnyToLS)
-    def AnyToSI(*args) -> "Standard_Real" :
+    def AnyToSI(*args):
         """
         * Converts the local unit value to the SI system units value. Example: AnyToSI(1.,'in.') returns 0.0254
 
@@ -223,7 +224,7 @@ class unitsapi(object):
         return _UnitsAPI.unitsapi_AnyToSI(*args)
 
     AnyToSI = staticmethod(AnyToSI)
-    def AnyFromLS(*args) -> "Standard_Real" :
+    def AnyFromLS(*args):
         """
         * Converts the local system units value to the local unit value. Example: AnyFromLS(25.4,'in.') returns 1. if the LocalSystem is MDTV. Note: aUnit is also used to identify the type of physical quantity to convert.
 
@@ -237,7 +238,7 @@ class unitsapi(object):
         return _UnitsAPI.unitsapi_AnyFromLS(*args)
 
     AnyFromLS = staticmethod(AnyFromLS)
-    def AnyFromSI(*args) -> "Standard_Real" :
+    def AnyFromSI(*args):
         """
         * Converts the SI system units value to the local unit value. Example: AnyFromSI(0.0254,'in.') returns 0.001 Note: aUnit is also used to identify the type of physical quantity to convert.
 
@@ -251,7 +252,7 @@ class unitsapi(object):
         return _UnitsAPI.unitsapi_AnyFromSI(*args)
 
     AnyFromSI = staticmethod(AnyFromSI)
-    def CurrentToAny(*args) -> "Standard_Real" :
+    def CurrentToAny(*args):
         """
         * Converts the aData value expressed in the current unit for the working environment, as defined for the physical quantity aQuantity by the last call to the SetCurrentUnit function, into the unit aUnit.
 
@@ -267,7 +268,7 @@ class unitsapi(object):
         return _UnitsAPI.unitsapi_CurrentToAny(*args)
 
     CurrentToAny = staticmethod(CurrentToAny)
-    def CurrentFromAny(*args) -> "Standard_Real" :
+    def CurrentFromAny(*args):
         """
         * Converts the aData value expressed in the unit aUnit, into the current unit for the working environment, as defined for the physical quantity aQuantity by the last call to the SetCurrentUnit function.
 
@@ -283,7 +284,7 @@ class unitsapi(object):
         return _UnitsAPI.unitsapi_CurrentFromAny(*args)
 
     CurrentFromAny = staticmethod(CurrentFromAny)
-    def AnyToAny(*args) -> "Standard_Real" :
+    def AnyToAny(*args):
         """
         * Converts the local unit value to another local unit value. Example: AnyToAny(0.0254,'in.','millimeter') returns 1. ;
 
@@ -299,7 +300,7 @@ class unitsapi(object):
         return _UnitsAPI.unitsapi_AnyToAny(*args)
 
     AnyToAny = staticmethod(AnyToAny)
-    def LSToSI(*args) -> "Standard_Real" :
+    def LSToSI(*args):
         """
         * Converts the local system units value to the SI system unit value. Example: LSToSI(1.,'LENGTH') returns 0.001 if the local system //!		length unit is millimeter.
 
@@ -313,7 +314,7 @@ class unitsapi(object):
         return _UnitsAPI.unitsapi_LSToSI(*args)
 
     LSToSI = staticmethod(LSToSI)
-    def SIToLS(*args) -> "Standard_Real" :
+    def SIToLS(*args):
         """
         * Converts the SI system unit value to the local system units value. Example: SIToLS(1.,'LENGTH') returns 1000. if the local system //!		length unit is millimeter.
 
@@ -327,8 +328,14 @@ class unitsapi(object):
         return _UnitsAPI.unitsapi_SIToLS(*args)
 
     SIToLS = staticmethod(SIToLS)
-    def SetLocalSystem(*args) -> "void" :
+    def SetLocalSystem(*args):
         """
+        * Sets the local system units. Example: SetLocalSystem(UnitsAPI_MDTV)
+
+        :param aSystemUnit: default value is UnitsAPI_SI
+        :type aSystemUnit: UnitsAPI_SystemUnits
+        :rtype: void
+
         * Sets the local system units. Example: SetLocalSystem(UnitsAPI_MDTV)
 
         :param aSystemUnit: default value is UnitsAPI_SI
@@ -339,17 +346,17 @@ class unitsapi(object):
         return _UnitsAPI.unitsapi_SetLocalSystem(*args)
 
     SetLocalSystem = staticmethod(SetLocalSystem)
-    def LocalSystem(*args) -> "UnitsAPI_SystemUnits" :
+    def LocalSystem():
         """
         * Returns the current local system units.
 
         :rtype: UnitsAPI_SystemUnits
 
         """
-        return _UnitsAPI.unitsapi_LocalSystem(*args)
+        return _UnitsAPI.unitsapi_LocalSystem()
 
     LocalSystem = staticmethod(LocalSystem)
-    def SetCurrentUnit(*args) -> "void" :
+    def SetCurrentUnit(*args):
         """
         * Sets the current unit dimension <aUnit> to the unit quantity <aQuantity>. Example: SetCurrentUnit('LENGTH','millimeter')
 
@@ -363,7 +370,7 @@ class unitsapi(object):
         return _UnitsAPI.unitsapi_SetCurrentUnit(*args)
 
     SetCurrentUnit = staticmethod(SetCurrentUnit)
-    def CurrentUnit(*args) -> "char *" :
+    def CurrentUnit(*args):
         """
         * Returns the current unit dimension <aUnit> from the unit quantity <aQuantity>.
 
@@ -375,25 +382,25 @@ class unitsapi(object):
         return _UnitsAPI.unitsapi_CurrentUnit(*args)
 
     CurrentUnit = staticmethod(CurrentUnit)
-    def Save(*args) -> "void" :
+    def Save():
         """
         * saves the units in the file .CurrentUnits of the directory pointed by the CSF_CurrentUnitsUserDefaults environment variable.
 
         :rtype: void
 
         """
-        return _UnitsAPI.unitsapi_Save(*args)
+        return _UnitsAPI.unitsapi_Save()
 
     Save = staticmethod(Save)
-    def Reload(*args) -> "void" :
+    def Reload():
         """
         :rtype: void
 
         """
-        return _UnitsAPI.unitsapi_Reload(*args)
+        return _UnitsAPI.unitsapi_Reload()
 
     Reload = staticmethod(Reload)
-    def Dimensions(*args) -> "Handle_Units_Dimensions" :
+    def Dimensions(*args):
         """
         * return the dimension associated to the quantity
 
@@ -405,89 +412,89 @@ class unitsapi(object):
         return _UnitsAPI.unitsapi_Dimensions(*args)
 
     Dimensions = staticmethod(Dimensions)
-    def DimensionLess(*args) -> "Handle_Units_Dimensions" :
+    def DimensionLess():
         """
         :rtype: Handle_Units_Dimensions
 
         """
-        return _UnitsAPI.unitsapi_DimensionLess(*args)
+        return _UnitsAPI.unitsapi_DimensionLess()
 
     DimensionLess = staticmethod(DimensionLess)
-    def DimensionMass(*args) -> "Handle_Units_Dimensions" :
+    def DimensionMass():
         """
         :rtype: Handle_Units_Dimensions
 
         """
-        return _UnitsAPI.unitsapi_DimensionMass(*args)
+        return _UnitsAPI.unitsapi_DimensionMass()
 
     DimensionMass = staticmethod(DimensionMass)
-    def DimensionLength(*args) -> "Handle_Units_Dimensions" :
+    def DimensionLength():
         """
         :rtype: Handle_Units_Dimensions
 
         """
-        return _UnitsAPI.unitsapi_DimensionLength(*args)
+        return _UnitsAPI.unitsapi_DimensionLength()
 
     DimensionLength = staticmethod(DimensionLength)
-    def DimensionTime(*args) -> "Handle_Units_Dimensions" :
+    def DimensionTime():
         """
         :rtype: Handle_Units_Dimensions
 
         """
-        return _UnitsAPI.unitsapi_DimensionTime(*args)
+        return _UnitsAPI.unitsapi_DimensionTime()
 
     DimensionTime = staticmethod(DimensionTime)
-    def DimensionElectricCurrent(*args) -> "Handle_Units_Dimensions" :
+    def DimensionElectricCurrent():
         """
         :rtype: Handle_Units_Dimensions
 
         """
-        return _UnitsAPI.unitsapi_DimensionElectricCurrent(*args)
+        return _UnitsAPI.unitsapi_DimensionElectricCurrent()
 
     DimensionElectricCurrent = staticmethod(DimensionElectricCurrent)
-    def DimensionThermodynamicTemperature(*args) -> "Handle_Units_Dimensions" :
+    def DimensionThermodynamicTemperature():
         """
         :rtype: Handle_Units_Dimensions
 
         """
-        return _UnitsAPI.unitsapi_DimensionThermodynamicTemperature(*args)
+        return _UnitsAPI.unitsapi_DimensionThermodynamicTemperature()
 
     DimensionThermodynamicTemperature = staticmethod(DimensionThermodynamicTemperature)
-    def DimensionAmountOfSubstance(*args) -> "Handle_Units_Dimensions" :
+    def DimensionAmountOfSubstance():
         """
         :rtype: Handle_Units_Dimensions
 
         """
-        return _UnitsAPI.unitsapi_DimensionAmountOfSubstance(*args)
+        return _UnitsAPI.unitsapi_DimensionAmountOfSubstance()
 
     DimensionAmountOfSubstance = staticmethod(DimensionAmountOfSubstance)
-    def DimensionLuminousIntensity(*args) -> "Handle_Units_Dimensions" :
+    def DimensionLuminousIntensity():
         """
         :rtype: Handle_Units_Dimensions
 
         """
-        return _UnitsAPI.unitsapi_DimensionLuminousIntensity(*args)
+        return _UnitsAPI.unitsapi_DimensionLuminousIntensity()
 
     DimensionLuminousIntensity = staticmethod(DimensionLuminousIntensity)
-    def DimensionPlaneAngle(*args) -> "Handle_Units_Dimensions" :
+    def DimensionPlaneAngle():
         """
         :rtype: Handle_Units_Dimensions
 
         """
-        return _UnitsAPI.unitsapi_DimensionPlaneAngle(*args)
+        return _UnitsAPI.unitsapi_DimensionPlaneAngle()
 
     DimensionPlaneAngle = staticmethod(DimensionPlaneAngle)
-    def DimensionSolidAngle(*args) -> "Handle_Units_Dimensions" :
+    def DimensionSolidAngle():
         """
         * Returns the basic dimensions.
 
         :rtype: Handle_Units_Dimensions
 
         """
-        return _UnitsAPI.unitsapi_DimensionSolidAngle(*args)
+        return _UnitsAPI.unitsapi_DimensionSolidAngle()
 
     DimensionSolidAngle = staticmethod(DimensionSolidAngle)
-    def Check(*args) -> "Standard_Boolean" :
+    def Check(*args):
         """
         * Checks the coherence between the quantity <aQuantity> 	and the unit <aUnits> in the current system and //!		returns False when it's WRONG.
 
@@ -501,8 +508,6 @@ class unitsapi(object):
         return _UnitsAPI.unitsapi_Check(*args)
 
     Check = staticmethod(Check)
-    def __init__(self): 
-        _UnitsAPI.unitsapi_swiginit(self,_UnitsAPI.new_unitsapi())
     def __del__(self):
     	try:
     		self.thisown = False
@@ -515,7 +520,7 @@ unitsapi._kill_pointed = new_instancemethod(_UnitsAPI.unitsapi__kill_pointed,Non
 unitsapi_swigregister = _UnitsAPI.unitsapi_swigregister
 unitsapi_swigregister(unitsapi)
 
-def unitsapi_CurrentToLS(*args) -> "Standard_Real" :
+def unitsapi_CurrentToLS(*args):
   """
     * Converts the current unit value to the local system units value. Example: CurrentToLS(1.,'LENGTH') returns 1000. if the current length unit is meter and LocalSystem is MDTV.
 
@@ -528,7 +533,7 @@ def unitsapi_CurrentToLS(*args) -> "Standard_Real" :
     """
   return _UnitsAPI.unitsapi_CurrentToLS(*args)
 
-def unitsapi_CurrentToSI(*args) -> "Standard_Real" :
+def unitsapi_CurrentToSI(*args):
   """
     * Converts the current unit value to the SI system units value. Example: CurrentToSI(1.,'LENGTH') returns 0.001 if current length unit is millimeter.
 
@@ -541,7 +546,7 @@ def unitsapi_CurrentToSI(*args) -> "Standard_Real" :
     """
   return _UnitsAPI.unitsapi_CurrentToSI(*args)
 
-def unitsapi_CurrentFromLS(*args) -> "Standard_Real" :
+def unitsapi_CurrentFromLS(*args):
   """
     * Converts the local system units value to the current unit value. Example: CurrentFromLS(1000.,'LENGTH') returns 1. if current length unit is meter and LocalSystem is MDTV.
 
@@ -554,7 +559,7 @@ def unitsapi_CurrentFromLS(*args) -> "Standard_Real" :
     """
   return _UnitsAPI.unitsapi_CurrentFromLS(*args)
 
-def unitsapi_CurrentFromSI(*args) -> "Standard_Real" :
+def unitsapi_CurrentFromSI(*args):
   """
     * Converts the SI system units value to the current unit value. Example: CurrentFromSI(0.001,'LENGTH') returns 1 if current length unit is millimeter.
 
@@ -567,7 +572,7 @@ def unitsapi_CurrentFromSI(*args) -> "Standard_Real" :
     """
   return _UnitsAPI.unitsapi_CurrentFromSI(*args)
 
-def unitsapi_AnyToLS(*args) -> "Standard_Real" :
+def unitsapi_AnyToLS(*args):
   """
     * Converts the local unit value to the local system units value. Example: AnyToLS(1.,'in.') returns 25.4 if the LocalSystem is MDTV.
 
@@ -590,7 +595,7 @@ def unitsapi_AnyToLS(*args) -> "Standard_Real" :
     """
   return _UnitsAPI.unitsapi_AnyToLS(*args)
 
-def unitsapi_AnyToSI(*args) -> "Standard_Real" :
+def unitsapi_AnyToSI(*args):
   """
     * Converts the local unit value to the SI system units value. Example: AnyToSI(1.,'in.') returns 0.0254
 
@@ -613,7 +618,7 @@ def unitsapi_AnyToSI(*args) -> "Standard_Real" :
     """
   return _UnitsAPI.unitsapi_AnyToSI(*args)
 
-def unitsapi_AnyFromLS(*args) -> "Standard_Real" :
+def unitsapi_AnyFromLS(*args):
   """
     * Converts the local system units value to the local unit value. Example: AnyFromLS(25.4,'in.') returns 1. if the LocalSystem is MDTV. Note: aUnit is also used to identify the type of physical quantity to convert.
 
@@ -626,7 +631,7 @@ def unitsapi_AnyFromLS(*args) -> "Standard_Real" :
     """
   return _UnitsAPI.unitsapi_AnyFromLS(*args)
 
-def unitsapi_AnyFromSI(*args) -> "Standard_Real" :
+def unitsapi_AnyFromSI(*args):
   """
     * Converts the SI system units value to the local unit value. Example: AnyFromSI(0.0254,'in.') returns 0.001 Note: aUnit is also used to identify the type of physical quantity to convert.
 
@@ -639,7 +644,7 @@ def unitsapi_AnyFromSI(*args) -> "Standard_Real" :
     """
   return _UnitsAPI.unitsapi_AnyFromSI(*args)
 
-def unitsapi_CurrentToAny(*args) -> "Standard_Real" :
+def unitsapi_CurrentToAny(*args):
   """
     * Converts the aData value expressed in the current unit for the working environment, as defined for the physical quantity aQuantity by the last call to the SetCurrentUnit function, into the unit aUnit.
 
@@ -654,7 +659,7 @@ def unitsapi_CurrentToAny(*args) -> "Standard_Real" :
     """
   return _UnitsAPI.unitsapi_CurrentToAny(*args)
 
-def unitsapi_CurrentFromAny(*args) -> "Standard_Real" :
+def unitsapi_CurrentFromAny(*args):
   """
     * Converts the aData value expressed in the unit aUnit, into the current unit for the working environment, as defined for the physical quantity aQuantity by the last call to the SetCurrentUnit function.
 
@@ -669,7 +674,7 @@ def unitsapi_CurrentFromAny(*args) -> "Standard_Real" :
     """
   return _UnitsAPI.unitsapi_CurrentFromAny(*args)
 
-def unitsapi_AnyToAny(*args) -> "Standard_Real" :
+def unitsapi_AnyToAny(*args):
   """
     * Converts the local unit value to another local unit value. Example: AnyToAny(0.0254,'in.','millimeter') returns 1. ;
 
@@ -684,7 +689,7 @@ def unitsapi_AnyToAny(*args) -> "Standard_Real" :
     """
   return _UnitsAPI.unitsapi_AnyToAny(*args)
 
-def unitsapi_LSToSI(*args) -> "Standard_Real" :
+def unitsapi_LSToSI(*args):
   """
     * Converts the local system units value to the SI system unit value. Example: LSToSI(1.,'LENGTH') returns 0.001 if the local system //!		length unit is millimeter.
 
@@ -697,7 +702,7 @@ def unitsapi_LSToSI(*args) -> "Standard_Real" :
     """
   return _UnitsAPI.unitsapi_LSToSI(*args)
 
-def unitsapi_SIToLS(*args) -> "Standard_Real" :
+def unitsapi_SIToLS(*args):
   """
     * Converts the SI system unit value to the local system units value. Example: SIToLS(1.,'LENGTH') returns 1000. if the local system //!		length unit is millimeter.
 
@@ -710,8 +715,14 @@ def unitsapi_SIToLS(*args) -> "Standard_Real" :
     """
   return _UnitsAPI.unitsapi_SIToLS(*args)
 
-def unitsapi_SetLocalSystem(*args) -> "void" :
+def unitsapi_SetLocalSystem(*args):
   """
+    * Sets the local system units. Example: SetLocalSystem(UnitsAPI_MDTV)
+
+    :param aSystemUnit: default value is UnitsAPI_SI
+    :type aSystemUnit: UnitsAPI_SystemUnits
+    :rtype: void
+
     * Sets the local system units. Example: SetLocalSystem(UnitsAPI_MDTV)
 
     :param aSystemUnit: default value is UnitsAPI_SI
@@ -721,16 +732,16 @@ def unitsapi_SetLocalSystem(*args) -> "void" :
     """
   return _UnitsAPI.unitsapi_SetLocalSystem(*args)
 
-def unitsapi_LocalSystem(*args) -> "UnitsAPI_SystemUnits" :
+def unitsapi_LocalSystem():
   """
     * Returns the current local system units.
 
     :rtype: UnitsAPI_SystemUnits
 
     """
-  return _UnitsAPI.unitsapi_LocalSystem(*args)
+  return _UnitsAPI.unitsapi_LocalSystem()
 
-def unitsapi_SetCurrentUnit(*args) -> "void" :
+def unitsapi_SetCurrentUnit(*args):
   """
     * Sets the current unit dimension <aUnit> to the unit quantity <aQuantity>. Example: SetCurrentUnit('LENGTH','millimeter')
 
@@ -743,7 +754,7 @@ def unitsapi_SetCurrentUnit(*args) -> "void" :
     """
   return _UnitsAPI.unitsapi_SetCurrentUnit(*args)
 
-def unitsapi_CurrentUnit(*args) -> "char *" :
+def unitsapi_CurrentUnit(*args):
   """
     * Returns the current unit dimension <aUnit> from the unit quantity <aQuantity>.
 
@@ -754,23 +765,23 @@ def unitsapi_CurrentUnit(*args) -> "char *" :
     """
   return _UnitsAPI.unitsapi_CurrentUnit(*args)
 
-def unitsapi_Save(*args) -> "void" :
+def unitsapi_Save():
   """
     * saves the units in the file .CurrentUnits of the directory pointed by the CSF_CurrentUnitsUserDefaults environment variable.
 
     :rtype: void
 
     """
-  return _UnitsAPI.unitsapi_Save(*args)
+  return _UnitsAPI.unitsapi_Save()
 
-def unitsapi_Reload(*args) -> "void" :
+def unitsapi_Reload():
   """
     :rtype: void
 
     """
-  return _UnitsAPI.unitsapi_Reload(*args)
+  return _UnitsAPI.unitsapi_Reload()
 
-def unitsapi_Dimensions(*args) -> "Handle_Units_Dimensions" :
+def unitsapi_Dimensions(*args):
   """
     * return the dimension associated to the quantity
 
@@ -781,79 +792,79 @@ def unitsapi_Dimensions(*args) -> "Handle_Units_Dimensions" :
     """
   return _UnitsAPI.unitsapi_Dimensions(*args)
 
-def unitsapi_DimensionLess(*args) -> "Handle_Units_Dimensions" :
+def unitsapi_DimensionLess():
   """
     :rtype: Handle_Units_Dimensions
 
     """
-  return _UnitsAPI.unitsapi_DimensionLess(*args)
+  return _UnitsAPI.unitsapi_DimensionLess()
 
-def unitsapi_DimensionMass(*args) -> "Handle_Units_Dimensions" :
+def unitsapi_DimensionMass():
   """
     :rtype: Handle_Units_Dimensions
 
     """
-  return _UnitsAPI.unitsapi_DimensionMass(*args)
+  return _UnitsAPI.unitsapi_DimensionMass()
 
-def unitsapi_DimensionLength(*args) -> "Handle_Units_Dimensions" :
+def unitsapi_DimensionLength():
   """
     :rtype: Handle_Units_Dimensions
 
     """
-  return _UnitsAPI.unitsapi_DimensionLength(*args)
+  return _UnitsAPI.unitsapi_DimensionLength()
 
-def unitsapi_DimensionTime(*args) -> "Handle_Units_Dimensions" :
+def unitsapi_DimensionTime():
   """
     :rtype: Handle_Units_Dimensions
 
     """
-  return _UnitsAPI.unitsapi_DimensionTime(*args)
+  return _UnitsAPI.unitsapi_DimensionTime()
 
-def unitsapi_DimensionElectricCurrent(*args) -> "Handle_Units_Dimensions" :
+def unitsapi_DimensionElectricCurrent():
   """
     :rtype: Handle_Units_Dimensions
 
     """
-  return _UnitsAPI.unitsapi_DimensionElectricCurrent(*args)
+  return _UnitsAPI.unitsapi_DimensionElectricCurrent()
 
-def unitsapi_DimensionThermodynamicTemperature(*args) -> "Handle_Units_Dimensions" :
+def unitsapi_DimensionThermodynamicTemperature():
   """
     :rtype: Handle_Units_Dimensions
 
     """
-  return _UnitsAPI.unitsapi_DimensionThermodynamicTemperature(*args)
+  return _UnitsAPI.unitsapi_DimensionThermodynamicTemperature()
 
-def unitsapi_DimensionAmountOfSubstance(*args) -> "Handle_Units_Dimensions" :
+def unitsapi_DimensionAmountOfSubstance():
   """
     :rtype: Handle_Units_Dimensions
 
     """
-  return _UnitsAPI.unitsapi_DimensionAmountOfSubstance(*args)
+  return _UnitsAPI.unitsapi_DimensionAmountOfSubstance()
 
-def unitsapi_DimensionLuminousIntensity(*args) -> "Handle_Units_Dimensions" :
+def unitsapi_DimensionLuminousIntensity():
   """
     :rtype: Handle_Units_Dimensions
 
     """
-  return _UnitsAPI.unitsapi_DimensionLuminousIntensity(*args)
+  return _UnitsAPI.unitsapi_DimensionLuminousIntensity()
 
-def unitsapi_DimensionPlaneAngle(*args) -> "Handle_Units_Dimensions" :
+def unitsapi_DimensionPlaneAngle():
   """
     :rtype: Handle_Units_Dimensions
 
     """
-  return _UnitsAPI.unitsapi_DimensionPlaneAngle(*args)
+  return _UnitsAPI.unitsapi_DimensionPlaneAngle()
 
-def unitsapi_DimensionSolidAngle(*args) -> "Handle_Units_Dimensions" :
+def unitsapi_DimensionSolidAngle():
   """
     * Returns the basic dimensions.
 
     :rtype: Handle_Units_Dimensions
 
     """
-  return _UnitsAPI.unitsapi_DimensionSolidAngle(*args)
+  return _UnitsAPI.unitsapi_DimensionSolidAngle()
 
-def unitsapi_Check(*args) -> "Standard_Boolean" :
+def unitsapi_Check(*args):
   """
     * Checks the coherence between the quantity <aQuantity> 	and the unit <aUnits> in the current system and //!		returns False when it's WRONG.
 

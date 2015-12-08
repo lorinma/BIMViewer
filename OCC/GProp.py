@@ -132,8 +132,9 @@ GProp_InertiaYZ = _GProp.GProp_InertiaYZ
 GProp_Unknown = _GProp.GProp_Unknown
 class gprop(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
+    def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def HOperator(*args) -> "void" :
+    def HOperator(*args):
         """
         * methods of package Computes the matrix Operator, referred to as the 'Huyghens Operator' of a geometric system at the point Q of the space, using the following data : - Mass, i.e. the mass of the system, - G, the center of mass of the system. The 'Huyghens Operator' is used to compute Inertia/Q, the matrix of inertia of the system at the point Q using Huyghens' theorem : Inertia/Q = Inertia/G + HOperator (Q, G, Mass) where Inertia/G is the matrix of inertia of the system relative to its center of mass as returned by the function MatrixOfInertia on any GProp_GProps object.
 
@@ -151,8 +152,6 @@ class gprop(object):
         return _GProp.gprop_HOperator(*args)
 
     HOperator = staticmethod(HOperator)
-    def __init__(self): 
-        _GProp.gprop_swiginit(self,_GProp.new_gprop())
     def __del__(self):
     	try:
     		self.thisown = False
@@ -165,7 +164,7 @@ gprop._kill_pointed = new_instancemethod(_GProp.gprop__kill_pointed,None,gprop)
 gprop_swigregister = _GProp.gprop_swigregister
 gprop_swigregister(gprop)
 
-def gprop_HOperator(*args) -> "void" :
+def gprop_HOperator(*args):
   """
     * methods of package Computes the matrix Operator, referred to as the 'Huyghens Operator' of a geometric system at the point Q of the space, using the following data : - Mass, i.e. the mass of the system, - G, the center of mass of the system. The 'Huyghens Operator' is used to compute Inertia/Q, the matrix of inertia of the system at the point Q using Huyghens' theorem : Inertia/Q = Inertia/G + HOperator (Q, G, Mass) where Inertia/G is the matrix of inertia of the system relative to its center of mass as returned by the function MatrixOfInertia on any GProp_GProps object.
 
@@ -199,8 +198,16 @@ class GProp_GProps(object):
 
         """
         _GProp.GProp_GProps_swiginit(self,_GProp.new_GProp_GProps(*args))
-    def Add(self, *args) -> "void" :
+    def Add(self, *args):
         """
+        * Either - initializes the global properties retained by this framework from those retained by the framework Item, or - brings together the global properties still retained by this framework with those retained by the framework Item. The value Density, which is 1.0 by default, is used as the density of the system analysed by Item. Sometimes the density will have already been given at the time of construction of the framework Item. This may be the case for example, if Item is a GProp_PGProps framework built to compute the global properties of a set of points ; or another GProp_GProps object which already retains composite global properties. In these cases the real density was perhaps already taken into account at the time of construction of Item. Note that this is not checked: if the density of parts of the system is taken into account two or more times, results of the computation will be false. Notes : - The point relative to which the inertia of Item is computed (i.e. the reference point of Item) may be different from the reference point in this framework. Huygens' theorem is applied automatically to transfer inertia values to the reference point in this framework. - The function Add is used once per component of the system. After that, you use the interrogation functions available to access values computed for the system. - The system whose global properties are already brought together by this framework is referred to as the current system. However, the current system is not retained by this framework, which maintains only its global properties. Exceptions Standard_DomainError if Density is less than or equal to gp::Resolution().
+
+        :param Item:
+        :type Item: GProp_GProps &
+        :param Density: default value is 1.0
+        :type Density: float
+        :rtype: None
+
         * Either - initializes the global properties retained by this framework from those retained by the framework Item, or - brings together the global properties still retained by this framework with those retained by the framework Item. The value Density, which is 1.0 by default, is used as the density of the system analysed by Item. Sometimes the density will have already been given at the time of construction of the framework Item. This may be the case for example, if Item is a GProp_PGProps framework built to compute the global properties of a set of points ; or another GProp_GProps object which already retains composite global properties. In these cases the real density was perhaps already taken into account at the time of construction of Item. Note that this is not checked: if the density of parts of the system is taken into account two or more times, results of the computation will be false. Notes : - The point relative to which the inertia of Item is computed (i.e. the reference point of Item) may be different from the reference point in this framework. Huygens' theorem is applied automatically to transfer inertia values to the reference point in this framework. - The function Add is used once per component of the system. After that, you use the interrogation functions available to access values computed for the system. - The system whose global properties are already brought together by this framework is referred to as the current system. However, the current system is not retained by this framework, which maintains only its global properties. Exceptions Standard_DomainError if Density is less than or equal to gp::Resolution().
 
         :param Item:
@@ -212,34 +219,34 @@ class GProp_GProps(object):
         """
         return _GProp.GProp_GProps_Add(self, *args)
 
-    def Mass(self, *args) -> "Standard_Real" :
+    def Mass(self):
         """
         * Returns the mass of the current system. If no density is attached to the components of the current system the returned value corresponds to : - the total length of the edges of the current system if this framework retains only linear properties, as is the case for example, when using only the LinearProperties function to combine properties of lines from shapes, or - the total area of the faces of the current system if this framework retains only surface properties, as is the case for example, when using only the SurfaceProperties function to combine properties of surfaces from shapes, or - the total volume of the solids of the current system if this framework retains only volume properties, as is the case for example, when using only the VolumeProperties function to combine properties of volumes from solids. Warning A length, an area, or a volume is computed in the current data unit system. The mass of a single object is obtained by multiplying its length, its area or its volume by the given density. You must be consistent with respect to the units used.
 
         :rtype: float
 
         """
-        return _GProp.GProp_GProps_Mass(self, *args)
+        return _GProp.GProp_GProps_Mass(self)
 
-    def CentreOfMass(self, *args) -> "gp_Pnt" :
+    def CentreOfMass(self):
         """
         * Returns the center of mass of the current system. If the gravitational field is uniform, it is the center of gravity. The coordinates returned for the center of mass are expressed in the absolute Cartesian coordinate system.
 
         :rtype: gp_Pnt
 
         """
-        return _GProp.GProp_GProps_CentreOfMass(self, *args)
+        return _GProp.GProp_GProps_CentreOfMass(self)
 
-    def MatrixOfInertia(self, *args) -> "gp_Mat" :
+    def MatrixOfInertia(self):
         """
         * returns the matrix of inertia. It is a symmetrical matrix. The coefficients of the matrix are the quadratic moments of inertia.  | Ixx Ixy Ixz | matrix = | Ixy Iyy Iyz |  | Ixz Iyz Izz | The moments of inertia are denoted by Ixx, Iyy, Izz. The products of inertia are denoted by Ixy, Ixz, Iyz. The matrix of inertia is returned in the central coordinate system (G, Gx, Gy, Gz) where G is the centre of mass of the system and Gx, Gy, Gz the directions parallel to the X(1,0,0) Y(0,1,0) Z(0,0,1) directions of the absolute cartesian coordinate system. It is possible to compute the matrix of inertia at another location point using the Huyghens theorem (you can use the method of package GProp : HOperator).
 
         :rtype: gp_Mat
 
         """
-        return _GProp.GProp_GProps_MatrixOfInertia(self, *args)
+        return _GProp.GProp_GProps_MatrixOfInertia(self)
 
-    def StaticMoments(self, *args) -> "void" :
+    def StaticMoments(self):
         """
         * Returns Ix, Iy, Iz, the static moments of inertia of the current system; i.e. the moments of inertia about the three axes of the Cartesian coordinate system.
 
@@ -252,9 +259,9 @@ class GProp_GProps(object):
         :rtype: None
 
         """
-        return _GProp.GProp_GProps_StaticMoments(self, *args)
+        return _GProp.GProp_GProps_StaticMoments(self)
 
-    def MomentOfInertia(self, *args) -> "Standard_Real" :
+    def MomentOfInertia(self, *args):
         """
         * computes the moment of inertia of the material system about the axis A.
 
@@ -265,16 +272,16 @@ class GProp_GProps(object):
         """
         return _GProp.GProp_GProps_MomentOfInertia(self, *args)
 
-    def PrincipalProperties(self, *args) -> "GProp_PrincipalProps" :
+    def PrincipalProperties(self):
         """
         * Computes the principal properties of inertia of the current system. There is always a set of axes for which the products of inertia of a geometric system are equal to 0; i.e. the matrix of inertia of the system is diagonal. These axes are the principal axes of inertia. Their origin is coincident with the center of mass of the system. The associated moments are called the principal moments of inertia. This function computes the eigen values and the eigen vectors of the matrix of inertia of the system. Results are stored by using a presentation framework of principal properties of inertia (GProp_PrincipalProps object) which may be queried to access the value sought.
 
         :rtype: GProp_PrincipalProps
 
         """
-        return _GProp.GProp_GProps_PrincipalProperties(self, *args)
+        return _GProp.GProp_GProps_PrincipalProperties(self)
 
-    def RadiusOfGyration(self, *args) -> "Standard_Real" :
+    def RadiusOfGyration(self, *args):
         """
         * Returns the radius of gyration of the current system about the axis A.
 
@@ -320,70 +327,70 @@ class GProp_PEquation(object):
 
         """
         _GProp.GProp_PEquation_swiginit(self,_GProp.new_GProp_PEquation(*args))
-    def IsPlanar(self, *args) -> "Standard_Boolean" :
+    def IsPlanar(self):
         """
         * Returns true if, according to the given tolerance, the points analyzed by this framework are coplanar. Use the function Plane to access the computed result.
 
         :rtype: bool
 
         """
-        return _GProp.GProp_PEquation_IsPlanar(self, *args)
+        return _GProp.GProp_PEquation_IsPlanar(self)
 
-    def IsLinear(self, *args) -> "Standard_Boolean" :
+    def IsLinear(self):
         """
         * Returns true if, according to the given tolerance, the points analyzed by this framework are colinear. Use the function Line to access the computed result.
 
         :rtype: bool
 
         """
-        return _GProp.GProp_PEquation_IsLinear(self, *args)
+        return _GProp.GProp_PEquation_IsLinear(self)
 
-    def IsPoint(self, *args) -> "Standard_Boolean" :
+    def IsPoint(self):
         """
         * Returns true if, according to the given tolerance, the points analyzed by this framework are coincident. Use the function Point to access the computed result.
 
         :rtype: bool
 
         """
-        return _GProp.GProp_PEquation_IsPoint(self, *args)
+        return _GProp.GProp_PEquation_IsPoint(self)
 
-    def IsSpace(self, *args) -> "Standard_Boolean" :
+    def IsSpace(self):
         """
         * Returns true if, according to the given tolerance value, the points analyzed by this framework are neither coincident, nor collinear, nor coplanar. Use the function Box to query the smallest box that includes the collection of points.
 
         :rtype: bool
 
         """
-        return _GProp.GProp_PEquation_IsSpace(self, *args)
+        return _GProp.GProp_PEquation_IsSpace(self)
 
-    def Plane(self, *args) -> "gp_Pln" :
+    def Plane(self):
         """
         * Returns the mean plane passing near all the points analyzed by this framework if, according to the given precision, the points are considered to be coplanar. Exceptions Standard_NoSuchObject if, according to the given precision value, the points analyzed by this framework are considered to be: - coincident, or - collinear, or - not coplanar.
 
         :rtype: gp_Pln
 
         """
-        return _GProp.GProp_PEquation_Plane(self, *args)
+        return _GProp.GProp_PEquation_Plane(self)
 
-    def Line(self, *args) -> "gp_Lin" :
+    def Line(self):
         """
         * Returns the mean line passing near all the points analyzed by this framework if, according to the given precision value, the points are considered to be collinear. Exceptions Standard_NoSuchObject if, according to the given precision, the points analyzed by this framework are considered to be: - coincident, or - not collinear.
 
         :rtype: gp_Lin
 
         """
-        return _GProp.GProp_PEquation_Line(self, *args)
+        return _GProp.GProp_PEquation_Line(self)
 
-    def Point(self, *args) -> "gp_Pnt" :
+    def Point(self):
         """
         * Returns the mean point of all the points analyzed by this framework if, according to the given precision, the points are considered to be coincident. Exceptions Standard_NoSuchObject if, according to the given precision, the points analyzed by this framework are not considered to be coincident.
 
         :rtype: gp_Pnt
 
         """
-        return _GProp.GProp_PEquation_Point(self, *args)
+        return _GProp.GProp_PEquation_Point(self)
 
-    def Box(self, *args) -> "void" :
+    def Box(self, *args):
         """
         * Returns the definition of the smallest box which contains all the points analyzed by this framework if, according to the given precision value, the points are considered to be neither coincident, nor collinear and nor coplanar. This box is centered on the barycenter P of the collection of points. Its sides are parallel to the three vectors V1, V2 and V3, the length of which is the length of the box in the corresponding direction. Note: Vectors V1, V2 and V3 are parallel to the three axes of principal inertia of the system composed of the collection of points where each point is of equal mass. Exceptions Standard_NoSuchObject if, according to the given precision, the points analyzed by this framework are considered to be coincident, collinear or coplanar.
 
@@ -423,15 +430,15 @@ GProp_PEquation_swigregister(GProp_PEquation)
 class GProp_PrincipalProps(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         * creates an undefined PrincipalProps.
 
         :rtype: None
 
         """
-        _GProp.GProp_PrincipalProps_swiginit(self,_GProp.new_GProp_PrincipalProps(*args))
-    def HasSymmetryAxis(self, *args) -> "Standard_Boolean" :
+        _GProp.GProp_PrincipalProps_swiginit(self,_GProp.new_GProp_PrincipalProps())
+    def HasSymmetryAxis(self, *args):
         """
         * returns true if the geometric system has an axis of symmetry. For comparing moments relative tolerance 1.e-10 is used. Usually it is enough for objects, restricted by faces with analitycal geometry.
 
@@ -446,7 +453,7 @@ class GProp_PrincipalProps(object):
         """
         return _GProp.GProp_PrincipalProps_HasSymmetryAxis(self, *args)
 
-    def HasSymmetryPoint(self, *args) -> "Standard_Boolean" :
+    def HasSymmetryPoint(self, *args):
         """
         * returns true if the geometric system has a point of symmetry. For comparing moments relative tolerance 1.e-10 is used. Usually it is enough for objects, restricted by faces with analitycal geometry.
 
@@ -461,7 +468,7 @@ class GProp_PrincipalProps(object):
         """
         return _GProp.GProp_PrincipalProps_HasSymmetryPoint(self, *args)
 
-    def Moments(self, *args) -> "void" :
+    def Moments(self):
         """
         * Ixx, Iyy and Izz return the principal moments of inertia in the current system. Notes : - If the current system has an axis of symmetry, two of the three values Ixx, Iyy and Izz are equal. They indicate which eigen vectors define an infinity of axes of principal inertia. - If the current system has a center of symmetry, Ixx, Iyy and Izz are equal.
 
@@ -474,36 +481,36 @@ class GProp_PrincipalProps(object):
         :rtype: None
 
         """
-        return _GProp.GProp_PrincipalProps_Moments(self, *args)
+        return _GProp.GProp_PrincipalProps_Moments(self)
 
-    def FirstAxisOfInertia(self, *args) -> "gp_Vec const" :
+    def FirstAxisOfInertia(self):
         """
         * returns the first axis of inertia. if the system has a point of symmetry there is an infinity of solutions. It is not possible to defines the three axis of inertia.
 
         :rtype: gp_Vec
 
         """
-        return _GProp.GProp_PrincipalProps_FirstAxisOfInertia(self, *args)
+        return _GProp.GProp_PrincipalProps_FirstAxisOfInertia(self)
 
-    def SecondAxisOfInertia(self, *args) -> "gp_Vec const" :
+    def SecondAxisOfInertia(self):
         """
         * returns the second axis of inertia. if the system has a point of symmetry or an axis of symmetry the second and the third axis of symmetry are undefined.
 
         :rtype: gp_Vec
 
         """
-        return _GProp.GProp_PrincipalProps_SecondAxisOfInertia(self, *args)
+        return _GProp.GProp_PrincipalProps_SecondAxisOfInertia(self)
 
-    def ThirdAxisOfInertia(self, *args) -> "gp_Vec const" :
+    def ThirdAxisOfInertia(self):
         """
         * returns the third axis of inertia. This and the above functions return the first, second or third eigen vector of the matrix of inertia of the current system. The first, second and third principal axis of inertia pass through the center of mass of the current system. They are respectively parallel to these three eigen vectors. Note that: - If the current system has an axis of symmetry, any axis is an axis of principal inertia if it passes through the center of mass of the system, and runs parallel to a linear combination of the two eigen vectors of the matrix of inertia, corresponding to the two eigen values which are equal. If the current system has a center of symmetry, any axis passing through the center of mass of the system is an axis of principal inertia. Use the functions HasSymmetryAxis and HasSymmetryPoint to check these particular cases, where the returned eigen vectors define an infinity of principal axis of inertia. - The Moments function can be used to know which of the three eigen vectors corresponds to the two eigen values which are equal. if the system has a point of symmetry or an axis of symmetry the second and the third axis of symmetry are undefined.
 
         :rtype: gp_Vec
 
         """
-        return _GProp.GProp_PrincipalProps_ThirdAxisOfInertia(self, *args)
+        return _GProp.GProp_PrincipalProps_ThirdAxisOfInertia(self)
 
-    def RadiusOfGyration(self, *args) -> "void" :
+    def RadiusOfGyration(self):
         """
         * Returns the principal radii of gyration Rxx, Ryy and Rzz are the radii of gyration of the current system about its three principal axes of inertia. Note that: - If the current system has an axis of symmetry, two of the three values Rxx, Ryy and Rzz are equal. - If the current system has a center of symmetry, Rxx, Ryy and Rzz are equal.
 
@@ -516,7 +523,7 @@ class GProp_PrincipalProps(object):
         :rtype: None
 
         """
-        return _GProp.GProp_PrincipalProps_RadiusOfGyration(self, *args)
+        return _GProp.GProp_PrincipalProps_RadiusOfGyration(self)
 
     def __del__(self):
     	try:
@@ -572,7 +579,7 @@ class GProp_CelGProps(GProp_GProps):
 
         """
         _GProp.GProp_CelGProps_swiginit(self,_GProp.new_GProp_CelGProps(*args))
-    def SetLocation(self, *args) -> "void" :
+    def SetLocation(self, *args):
         """
         :param CLocation:
         :type CLocation: gp_Pnt
@@ -581,7 +588,7 @@ class GProp_CelGProps(GProp_GProps):
         """
         return _GProp.GProp_CelGProps_SetLocation(self, *args)
 
-    def Perform(self, *args) -> "void" :
+    def Perform(self, *args):
         """
         :param C:
         :type C: gp_Circ
@@ -619,7 +626,7 @@ GProp_CelGProps_swigregister(GProp_CelGProps)
 class GProp_PGProps(GProp_GProps):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def AddPoint(self, *args) -> "void" :
+    def AddPoint(self, *args):
         """
         * Brings together the global properties already retained by this framework with those induced by the point Pnt. Pnt may be the first point of the current system. A point mass is attached to the point Pnt, it is either equal to 1. or to Density.
 
@@ -674,7 +681,7 @@ class GProp_PGProps(GProp_GProps):
 
         """
         _GProp.GProp_PGProps_swiginit(self,_GProp.new_GProp_PGProps(*args))
-    def Barycentre(*args) -> "Standard_Real &" :
+    def Barycentre(*args):
         """
         * Computes the barycentre of a set of points. The density of the points is defaulted to 1.
 
@@ -729,7 +736,7 @@ GProp_PGProps._kill_pointed = new_instancemethod(_GProp.GProp_PGProps__kill_poin
 GProp_PGProps_swigregister = _GProp.GProp_PGProps_swigregister
 GProp_PGProps_swigregister(GProp_PGProps)
 
-def GProp_PGProps_Barycentre(*args) -> "Standard_Real &" :
+def GProp_PGProps_Barycentre(*args):
   """
     * Computes the barycentre of a set of points. The density of the points is defaulted to 1.
 
@@ -835,7 +842,7 @@ class GProp_SelGProps(GProp_GProps):
 
         """
         _GProp.GProp_SelGProps_swiginit(self,_GProp.new_GProp_SelGProps(*args))
-    def SetLocation(self, *args) -> "void" :
+    def SetLocation(self, *args):
         """
         :param SLocation:
         :type SLocation: gp_Pnt
@@ -844,7 +851,7 @@ class GProp_SelGProps(GProp_GProps):
         """
         return _GProp.GProp_SelGProps_SetLocation(self, *args)
 
-    def Perform(self, *args) -> "void" :
+    def Perform(self, *args):
         """
         :param S:
         :type S: gp_Cylinder
@@ -976,7 +983,7 @@ class GProp_VelGProps(GProp_GProps):
 
         """
         _GProp.GProp_VelGProps_swiginit(self,_GProp.new_GProp_VelGProps(*args))
-    def SetLocation(self, *args) -> "void" :
+    def SetLocation(self, *args):
         """
         :param VLocation:
         :type VLocation: gp_Pnt
@@ -985,7 +992,7 @@ class GProp_VelGProps(GProp_GProps):
         """
         return _GProp.GProp_VelGProps_SetLocation(self, *args)
 
-    def Perform(self, *args) -> "void" :
+    def Perform(self, *args):
         """
         :param S:
         :type S: gp_Cylinder

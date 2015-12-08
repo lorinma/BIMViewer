@@ -125,7 +125,7 @@ class xscontrol(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def Session(*args) -> "Handle_XSControl_WorkSession" :
+    def Session(*args):
         """
         Args:
         	pilot(Handle_IFSelect_SessionPilot)
@@ -139,7 +139,7 @@ class xscontrol(object):
         return _XSControl.xscontrol_Session(*args)
 
     Session = staticmethod(Session)
-    def Vars(*args) -> "Handle_XSControl_Vars" :
+    def Vars(*args):
         """
         Args:
         	pilot(Handle_IFSelect_SessionPilot)
@@ -165,7 +165,7 @@ xscontrol._kill_pointed = new_instancemethod(_XSControl.xscontrol__kill_pointed,
 xscontrol_swigregister = _XSControl.xscontrol_swigregister
 xscontrol_swigregister(xscontrol)
 
-def xscontrol_Session(*args) -> "Handle_XSControl_WorkSession" :
+def xscontrol_Session(*args):
   """
     Args:
     	pilot(Handle_IFSelect_SessionPilot)
@@ -178,7 +178,7 @@ def xscontrol_Session(*args) -> "Handle_XSControl_WorkSession" :
     """
   return _XSControl.xscontrol_Session(*args)
 
-def xscontrol_Vars(*args) -> "Handle_XSControl_Vars" :
+def xscontrol_Vars(*args):
   """
     Args:
     	pilot(Handle_IFSelect_SessionPilot)
@@ -213,7 +213,7 @@ class XSControl_ConnectedShapes(OCC.IFSelect.IFSelect_SelectExplore):
                   current TransferProcess brought by the TransferReader
         """
         _XSControl.XSControl_ConnectedShapes_swiginit(self,_XSControl.new_XSControl_ConnectedShapes(*args))
-    def SetReader(self, *args) -> "void" :
+    def SetReader(self, *args):
         """
         Args:
         	TR(Handle_XSControl_TransferReader)
@@ -226,7 +226,7 @@ class XSControl_ConnectedShapes(OCC.IFSelect.IFSelect_SelectExplore):
         """
         return _XSControl.XSControl_ConnectedShapes_SetReader(self, *args)
 
-    def AdjacentEntities(*args) -> "Handle_TColStd_HSequenceOfTransient" :
+    def AdjacentEntities(*args):
         """
         Args:
         	ashape(TopoDS_Shape)
@@ -242,11 +242,11 @@ class XSControl_ConnectedShapes(OCC.IFSelect.IFSelect_SelectExplore):
         return _XSControl.XSControl_ConnectedShapes_AdjacentEntities(*args)
 
     AdjacentEntities = staticmethod(AdjacentEntities)
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(XSControl_ConnectedShapes self)"""
         return _XSControl.XSControl_ConnectedShapes__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_XSControl_ConnectedShapes" :
+    def GetHandle(self):
         """GetHandle(XSControl_ConnectedShapes self) -> Handle_XSControl_ConnectedShapes"""
         return _XSControl.XSControl_ConnectedShapes_GetHandle(self)
 
@@ -264,7 +264,7 @@ XSControl_ConnectedShapes.GetHandle = new_instancemethod(_XSControl.XSControl_Co
 XSControl_ConnectedShapes_swigregister = _XSControl.XSControl_ConnectedShapes_swigregister
 XSControl_ConnectedShapes_swigregister(XSControl_ConnectedShapes)
 
-def XSControl_ConnectedShapes_AdjacentEntities(*args) -> "Handle_TColStd_HSequenceOfTransient" :
+def XSControl_ConnectedShapes_AdjacentEntities(*args):
   """
     Args:
     	ashape(TopoDS_Shape)
@@ -300,7 +300,7 @@ Handle_XSControl_ConnectedShapes._kill_pointed = new_instancemethod(_XSControl.H
 Handle_XSControl_ConnectedShapes_swigregister = _XSControl.Handle_XSControl_ConnectedShapes_swigregister
 Handle_XSControl_ConnectedShapes_swigregister(Handle_XSControl_ConnectedShapes)
 
-def Handle_XSControl_ConnectedShapes_DownCast(*args) -> "Handle_XSControl_ConnectedShapes const" :
+def Handle_XSControl_ConnectedShapes_DownCast(*args):
   return _XSControl.Handle_XSControl_ConnectedShapes_DownCast(*args)
 Handle_XSControl_ConnectedShapes_DownCast = _XSControl.Handle_XSControl_ConnectedShapes_DownCast
 
@@ -308,7 +308,7 @@ class XSControl_Controller(OCC.MMgt.MMgt_TShared):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def SetNames(self, *args) -> "void" :
+    def SetNames(self, *args):
         """
         Args:
         	longname(char *)
@@ -323,7 +323,7 @@ class XSControl_Controller(OCC.MMgt.MMgt_TShared):
         """
         return _XSControl.XSControl_Controller_SetNames(self, *args)
 
-    def AutoRecord(self) -> "void" :
+    def AutoRecord(self):
         """
         Args:
         	None
@@ -335,7 +335,7 @@ class XSControl_Controller(OCC.MMgt.MMgt_TShared):
         """
         return _XSControl.XSControl_Controller_AutoRecord(self)
 
-    def Record(self, *args) -> "void" :
+    def Record(self, *args):
         """
         Args:
         	name(char *)
@@ -348,7 +348,7 @@ class XSControl_Controller(OCC.MMgt.MMgt_TShared):
         """
         return _XSControl.XSControl_Controller_Record(self, *args)
 
-    def Recorded(*args) -> "Handle_XSControl_Controller" :
+    def Recorded(*args):
         """
         Args:
         	name(char *)
@@ -362,7 +362,7 @@ class XSControl_Controller(OCC.MMgt.MMgt_TShared):
         return _XSControl.XSControl_Controller_Recorded(*args)
 
     Recorded = staticmethod(Recorded)
-    def ListRecorded(mode : 'Standard_Integer const'=0) -> "Handle_TColStd_HSequenceOfHAsciiString" :
+    def ListRecorded(mode=0):
         """
         Args:
         	mode(Standard_Integer)=0
@@ -388,7 +388,7 @@ class XSControl_Controller(OCC.MMgt.MMgt_TShared):
         return _XSControl.XSControl_Controller_ListRecorded(mode)
 
     ListRecorded = staticmethod(ListRecorded)
-    def Name(self, *args) -> "char *" :
+    def Name(self, *args):
         """
         Args:
         	rsc(Standard_Boolean)=Standard_False
@@ -411,7 +411,7 @@ class XSControl_Controller(OCC.MMgt.MMgt_TShared):
         """
         return _XSControl.XSControl_Controller_Name(self, *args)
 
-    def Profile(self) -> "Handle_IFSelect_Profile" :
+    def Profile(self):
         """
         Args:
         	None
@@ -429,7 +429,7 @@ class XSControl_Controller(OCC.MMgt.MMgt_TShared):
         """
         return _XSControl.XSControl_Controller_Profile(self)
 
-    def DefineProfile(self, *args) -> "void" :
+    def DefineProfile(self, *args):
         """
         Args:
         	confname(char *)
@@ -442,7 +442,7 @@ class XSControl_Controller(OCC.MMgt.MMgt_TShared):
         """
         return _XSControl.XSControl_Controller_DefineProfile(self, *args)
 
-    def SetProfile(self, *args) -> "Standard_Boolean" :
+    def SetProfile(self, *args):
         """
         Args:
         	confname(char *)
@@ -457,7 +457,7 @@ class XSControl_Controller(OCC.MMgt.MMgt_TShared):
         """
         return _XSControl.XSControl_Controller_SetProfile(self, *args)
 
-    def SettingProfile(self, *args) -> "Standard_Boolean" :
+    def SettingProfile(self, *args):
         """
         Args:
         	confname(char *)
@@ -471,7 +471,7 @@ class XSControl_Controller(OCC.MMgt.MMgt_TShared):
         """
         return _XSControl.XSControl_Controller_SettingProfile(self, *args)
 
-    def ApplyProfile(self, *args) -> "Standard_Boolean" :
+    def ApplyProfile(self, *args):
         """
         Args:
         	WS(Handle_XSControl_WorkSession)
@@ -485,7 +485,7 @@ class XSControl_Controller(OCC.MMgt.MMgt_TShared):
         """
         return _XSControl.XSControl_Controller_ApplyProfile(self, *args)
 
-    def ApplyingProfile(self, *args) -> "Standard_Boolean" :
+    def ApplyingProfile(self, *args):
         """
         Args:
         	WS(Handle_XSControl_WorkSession)
@@ -500,7 +500,7 @@ class XSControl_Controller(OCC.MMgt.MMgt_TShared):
         """
         return _XSControl.XSControl_Controller_ApplyingProfile(self, *args)
 
-    def Protocol(self) -> "Handle_Interface_Protocol" :
+    def Protocol(self):
         """
         Args:
         	None
@@ -511,7 +511,7 @@ class XSControl_Controller(OCC.MMgt.MMgt_TShared):
         """
         return _XSControl.XSControl_Controller_Protocol(self)
 
-    def SignType(self) -> "Handle_IFSelect_Signature" :
+    def SignType(self):
         """
         Args:
         	None
@@ -522,7 +522,7 @@ class XSControl_Controller(OCC.MMgt.MMgt_TShared):
         """
         return _XSControl.XSControl_Controller_SignType(self)
 
-    def WorkLibrary(self) -> "Handle_IFSelect_WorkLibrary" :
+    def WorkLibrary(self):
         """
         Args:
         	None
@@ -534,7 +534,7 @@ class XSControl_Controller(OCC.MMgt.MMgt_TShared):
         """
         return _XSControl.XSControl_Controller_WorkLibrary(self)
 
-    def NewModel(self) -> "Handle_Interface_InterfaceModel" :
+    def NewModel(self):
         """
         Args:
         	None
@@ -546,7 +546,7 @@ class XSControl_Controller(OCC.MMgt.MMgt_TShared):
         """
         return _XSControl.XSControl_Controller_NewModel(self)
 
-    def ActorRead(self, *args) -> "Handle_Transfer_ActorOfTransientProcess" :
+    def ActorRead(self, *args):
         """
         Args:
         	model(Handle_Interface_InterfaceModel)
@@ -560,7 +560,7 @@ class XSControl_Controller(OCC.MMgt.MMgt_TShared):
         """
         return _XSControl.XSControl_Controller_ActorRead(self, *args)
 
-    def ActorWrite(self) -> "Handle_Transfer_ActorOfFinderProcess" :
+    def ActorWrite(self):
         """
         Args:
         	None
@@ -572,7 +572,7 @@ class XSControl_Controller(OCC.MMgt.MMgt_TShared):
         """
         return _XSControl.XSControl_Controller_ActorWrite(self)
 
-    def UpdateStatics(self, *args) -> "void" :
+    def UpdateStatics(self, *args):
         """
         Args:
         	mode(Standard_Integer)
@@ -607,7 +607,7 @@ class XSControl_Controller(OCC.MMgt.MMgt_TShared):
         """
         return _XSControl.XSControl_Controller_UpdateStatics(self, *args)
 
-    def SetModeWrite(self, *args) -> "void" :
+    def SetModeWrite(self, *args):
         """
         Args:
         	modemin(Standard_Integer)
@@ -636,7 +636,7 @@ class XSControl_Controller(OCC.MMgt.MMgt_TShared):
         """
         return _XSControl.XSControl_Controller_SetModeWrite(self, *args)
 
-    def SetModeWriteHelp(self, *args) -> "void" :
+    def SetModeWriteHelp(self, *args):
         """
         Args:
         	modetrans(Standard_Integer)
@@ -659,7 +659,7 @@ class XSControl_Controller(OCC.MMgt.MMgt_TShared):
         """
         return _XSControl.XSControl_Controller_SetModeWriteHelp(self, *args)
 
-    def ModeWriteBounds(self, *args) -> "Standard_Boolean" :
+    def ModeWriteBounds(self, *args):
         """
         Args:
         	modemin(Standard_Integer)
@@ -686,7 +686,7 @@ class XSControl_Controller(OCC.MMgt.MMgt_TShared):
         """
         return _XSControl.XSControl_Controller_ModeWriteBounds(self, *args)
 
-    def IsModeWrite(self, *args) -> "Standard_Boolean" :
+    def IsModeWrite(self, *args):
         """
         Args:
         	modetrans(Standard_Integer)
@@ -709,7 +709,7 @@ class XSControl_Controller(OCC.MMgt.MMgt_TShared):
         """
         return _XSControl.XSControl_Controller_IsModeWrite(self, *args)
 
-    def ModeWriteHelp(self, *args) -> "char *" :
+    def ModeWriteHelp(self, *args):
         """
         Args:
         	modetrans(Standard_Integer)
@@ -732,7 +732,7 @@ class XSControl_Controller(OCC.MMgt.MMgt_TShared):
         """
         return _XSControl.XSControl_Controller_ModeWriteHelp(self, *args)
 
-    def RecognizeWriteTransient(self, *args) -> "Standard_Boolean" :
+    def RecognizeWriteTransient(self, *args):
         """
         Args:
         	obj(Handle_Standard_Transient)
@@ -759,7 +759,7 @@ class XSControl_Controller(OCC.MMgt.MMgt_TShared):
         """
         return _XSControl.XSControl_Controller_RecognizeWriteTransient(self, *args)
 
-    def TransferWriteTransient(self, *args) -> "IFSelect_ReturnStatus" :
+    def TransferWriteTransient(self, *args):
         """
         Args:
         	obj(Handle_Standard_Transient)
@@ -802,7 +802,7 @@ class XSControl_Controller(OCC.MMgt.MMgt_TShared):
         """
         return _XSControl.XSControl_Controller_TransferWriteTransient(self, *args)
 
-    def RecognizeWriteShape(self, *args) -> "Standard_Boolean" :
+    def RecognizeWriteShape(self, *args):
         """
         Args:
         	shape(TopoDS_Shape)
@@ -825,7 +825,7 @@ class XSControl_Controller(OCC.MMgt.MMgt_TShared):
         """
         return _XSControl.XSControl_Controller_RecognizeWriteShape(self, *args)
 
-    def TransferWriteShape(self, *args) -> "IFSelect_ReturnStatus" :
+    def TransferWriteShape(self, *args):
         """
         Args:
         	shape(TopoDS_Shape)
@@ -876,7 +876,7 @@ class XSControl_Controller(OCC.MMgt.MMgt_TShared):
         """
         return _XSControl.XSControl_Controller_TransferWriteShape(self, *args)
 
-    def ClusterContext(self, *args) -> "Handle_Standard_Transient" :
+    def ClusterContext(self, *args):
         """
         Args:
         	WS(Handle_XSControl_WorkSession)
@@ -897,7 +897,7 @@ class XSControl_Controller(OCC.MMgt.MMgt_TShared):
         """
         return _XSControl.XSControl_Controller_ClusterContext(self, *args)
 
-    def ResolveCluster(self, *args) -> "Interface_CheckIterator" :
+    def ResolveCluster(self, *args):
         """
         Args:
         	WS(Handle_XSControl_WorkSession)
@@ -916,7 +916,7 @@ class XSControl_Controller(OCC.MMgt.MMgt_TShared):
         """
         return _XSControl.XSControl_Controller_ResolveCluster(self, *args)
 
-    def AddControlItem(self, *args) -> "void" :
+    def AddControlItem(self, *args):
         """
         Args:
         	item(Handle_Standard_Transient)
@@ -932,7 +932,7 @@ class XSControl_Controller(OCC.MMgt.MMgt_TShared):
         """
         return _XSControl.XSControl_Controller_AddControlItem(self, *args)
 
-    def ControlItem(self, *args) -> "Handle_Standard_Transient" :
+    def ControlItem(self, *args):
         """
         Args:
         	name(char *)
@@ -945,7 +945,7 @@ class XSControl_Controller(OCC.MMgt.MMgt_TShared):
         """
         return _XSControl.XSControl_Controller_ControlItem(self, *args)
 
-    def TraceStatic(self, *args) -> "void" :
+    def TraceStatic(self, *args):
         """
         Args:
         	name(char *)
@@ -958,7 +958,7 @@ class XSControl_Controller(OCC.MMgt.MMgt_TShared):
         """
         return _XSControl.XSControl_Controller_TraceStatic(self, *args)
 
-    def AddSessionItem(self, *args) -> "void" :
+    def AddSessionItem(self, *args):
         """
         Args:
         	item(Handle_Standard_Transient)
@@ -997,7 +997,7 @@ class XSControl_Controller(OCC.MMgt.MMgt_TShared):
         """
         return _XSControl.XSControl_Controller_AddSessionItem(self, *args)
 
-    def SessionItem(self, *args) -> "Handle_Standard_Transient" :
+    def SessionItem(self, *args):
         """
         Args:
         	name(char *)
@@ -1010,7 +1010,7 @@ class XSControl_Controller(OCC.MMgt.MMgt_TShared):
         """
         return _XSControl.XSControl_Controller_SessionItem(self, *args)
 
-    def IsApplied(self, *args) -> "Standard_Boolean" :
+    def IsApplied(self, *args):
         """
         Args:
         	item(Handle_Standard_Transient)
@@ -1022,7 +1022,7 @@ class XSControl_Controller(OCC.MMgt.MMgt_TShared):
         """
         return _XSControl.XSControl_Controller_IsApplied(self, *args)
 
-    def Customise(self, *args) -> "void" :
+    def Customise(self, *args):
         """
         Args:
         	WS(Handle_XSControl_WorkSession)
@@ -1036,7 +1036,7 @@ class XSControl_Controller(OCC.MMgt.MMgt_TShared):
         """
         return _XSControl.XSControl_Controller_Customise(self, *args)
 
-    def Customising(self, *args) -> "void" :
+    def Customising(self, *args):
         """
         Args:
         	WS(Handle_XSControl_WorkSession)
@@ -1049,7 +1049,7 @@ class XSControl_Controller(OCC.MMgt.MMgt_TShared):
         """
         return _XSControl.XSControl_Controller_Customising(self, *args)
 
-    def AdaptorSession(self) -> "Handle_Dico_DictionaryOfTransient" :
+    def AdaptorSession(self):
         """
         Args:
         	None
@@ -1060,11 +1060,11 @@ class XSControl_Controller(OCC.MMgt.MMgt_TShared):
         """
         return _XSControl.XSControl_Controller_AdaptorSession(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(XSControl_Controller self)"""
         return _XSControl.XSControl_Controller__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_XSControl_Controller" :
+    def GetHandle(self):
         """GetHandle(XSControl_Controller self) -> Handle_XSControl_Controller"""
         return _XSControl.XSControl_Controller_GetHandle(self)
 
@@ -1118,7 +1118,7 @@ XSControl_Controller.GetHandle = new_instancemethod(_XSControl.XSControl_Control
 XSControl_Controller_swigregister = _XSControl.XSControl_Controller_swigregister
 XSControl_Controller_swigregister(XSControl_Controller)
 
-def XSControl_Controller_Recorded(*args) -> "Handle_XSControl_Controller" :
+def XSControl_Controller_Recorded(*args):
   """
     Args:
     	name(char *)
@@ -1131,7 +1131,7 @@ def XSControl_Controller_Recorded(*args) -> "Handle_XSControl_Controller" :
     """
   return _XSControl.XSControl_Controller_Recorded(*args)
 
-def XSControl_Controller_ListRecorded(mode : 'Standard_Integer const'=0) -> "Handle_TColStd_HSequenceOfHAsciiString" :
+def XSControl_Controller_ListRecorded(mode=0):
   """
     Args:
     	mode(Standard_Integer)=0
@@ -1177,7 +1177,7 @@ Handle_XSControl_Controller._kill_pointed = new_instancemethod(_XSControl.Handle
 Handle_XSControl_Controller_swigregister = _XSControl.Handle_XSControl_Controller_swigregister
 Handle_XSControl_Controller_swigregister(Handle_XSControl_Controller)
 
-def Handle_XSControl_Controller_DownCast(*args) -> "Handle_XSControl_Controller const" :
+def Handle_XSControl_Controller_DownCast(*args):
   return _XSControl.Handle_XSControl_Controller_DownCast(*args)
 Handle_XSControl_Controller_DownCast = _XSControl.Handle_XSControl_Controller_DownCast
 
@@ -1185,7 +1185,7 @@ class XSControl_FuncShape(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def Init() -> "void" :
+    def Init():
         """
         Args:
         	None
@@ -1197,7 +1197,7 @@ class XSControl_FuncShape(object):
         return _XSControl.XSControl_FuncShape_Init()
 
     Init = staticmethod(Init)
-    def MoreShapes(*args) -> "Standard_Integer" :
+    def MoreShapes(*args):
         """
         Args:
         	session(Handle_XSControl_WorkSession)
@@ -1221,7 +1221,7 @@ class XSControl_FuncShape(object):
         return _XSControl.XSControl_FuncShape_MoreShapes(*args)
 
     MoreShapes = staticmethod(MoreShapes)
-    def FileAndVar(*args) -> "Standard_Boolean" :
+    def FileAndVar(*args):
         """
         Args:
         	session(Handle_XSControl_WorkSession)
@@ -1261,7 +1261,7 @@ XSControl_FuncShape._kill_pointed = new_instancemethod(_XSControl.XSControl_Func
 XSControl_FuncShape_swigregister = _XSControl.XSControl_FuncShape_swigregister
 XSControl_FuncShape_swigregister(XSControl_FuncShape)
 
-def XSControl_FuncShape_Init() -> "void" :
+def XSControl_FuncShape_Init():
   """
     Args:
     	None
@@ -1272,7 +1272,7 @@ def XSControl_FuncShape_Init() -> "void" :
     """
   return _XSControl.XSControl_FuncShape_Init()
 
-def XSControl_FuncShape_MoreShapes(*args) -> "Standard_Integer" :
+def XSControl_FuncShape_MoreShapes(*args):
   """
     Args:
     	session(Handle_XSControl_WorkSession)
@@ -1295,7 +1295,7 @@ def XSControl_FuncShape_MoreShapes(*args) -> "Standard_Integer" :
     """
   return _XSControl.XSControl_FuncShape_MoreShapes(*args)
 
-def XSControl_FuncShape_FileAndVar(*args) -> "Standard_Boolean" :
+def XSControl_FuncShape_FileAndVar(*args):
   """
     Args:
     	session(Handle_XSControl_WorkSession)
@@ -1326,7 +1326,7 @@ class XSControl_Functions(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def Init() -> "void" :
+    def Init():
         """
         Args:
         	None
@@ -1350,7 +1350,7 @@ XSControl_Functions._kill_pointed = new_instancemethod(_XSControl.XSControl_Func
 XSControl_Functions_swigregister = _XSControl.XSControl_Functions_swigregister
 XSControl_Functions_swigregister(XSControl_Functions)
 
-def XSControl_Functions_Init() -> "void" :
+def XSControl_Functions_Init():
   """
     Args:
     	None
@@ -1401,7 +1401,7 @@ class XSControl_Reader(object):
                   Controller already set  Virtual destructor
         """
         _XSControl.XSControl_Reader_swiginit(self,_XSControl.new_XSControl_Reader(*args))
-    def SetNorm(self, *args) -> "Standard_Boolean" :
+    def SetNorm(self, *args):
         """
         Args:
         	norm(char *)
@@ -1414,7 +1414,7 @@ class XSControl_Reader(object):
         """
         return _XSControl.XSControl_Reader_SetNorm(self, *args)
 
-    def SetWS(self, *args) -> "void" :
+    def SetWS(self, *args):
         """
         Args:
         	WS(Handle_XSControl_WorkSession)
@@ -1435,7 +1435,7 @@ class XSControl_Reader(object):
         """
         return _XSControl.XSControl_Reader_SetWS(self, *args)
 
-    def WS(self) -> "Handle_XSControl_WorkSession" :
+    def WS(self):
         """
         Args:
         	None
@@ -1446,7 +1446,7 @@ class XSControl_Reader(object):
         """
         return _XSControl.XSControl_Reader_WS(self)
 
-    def ReadFile(self, *args) -> "IFSelect_ReturnStatus" :
+    def ReadFile(self, *args):
         """
         Args:
         	filename(char *)
@@ -1459,7 +1459,7 @@ class XSControl_Reader(object):
         """
         return _XSControl.XSControl_Reader_ReadFile(self, *args)
 
-    def Model(self) -> "Handle_Interface_InterfaceModel" :
+    def Model(self):
         """
         Args:
         	None
@@ -1470,7 +1470,7 @@ class XSControl_Reader(object):
         """
         return _XSControl.XSControl_Reader_Model(self)
 
-    def GiveList(self, *args) -> "Handle_TColStd_HSequenceOfTransient" :
+    def GiveList(self, *args):
         """
         Args:
         	first(char *)=
@@ -1583,7 +1583,7 @@ class XSControl_Reader(object):
         """
         return _XSControl.XSControl_Reader_GiveList(self, *args)
 
-    def NbRootsForTransfer(self) -> "Standard_Integer" :
+    def NbRootsForTransfer(self):
         """
         Args:
         	None
@@ -1596,7 +1596,7 @@ class XSControl_Reader(object):
         """
         return _XSControl.XSControl_Reader_NbRootsForTransfer(self)
 
-    def RootForTransfer(self, num : 'Standard_Integer const'=1) -> "Handle_Standard_Transient" :
+    def RootForTransfer(self, num=1):
         """
         Args:
         	num(Standard_Integer)=1
@@ -1619,7 +1619,7 @@ class XSControl_Reader(object):
         """
         return _XSControl.XSControl_Reader_RootForTransfer(self, num)
 
-    def TransferOneRoot(self, num : 'Standard_Integer const'=1) -> "Standard_Boolean" :
+    def TransferOneRoot(self, num=1):
         """
         Args:
         	num(Standard_Integer)=1
@@ -1640,7 +1640,7 @@ class XSControl_Reader(object):
         """
         return _XSControl.XSControl_Reader_TransferOneRoot(self, num)
 
-    def TransferOne(self, *args) -> "Standard_Boolean" :
+    def TransferOne(self, *args):
         """
         Args:
         	num(Standard_Integer)
@@ -1654,7 +1654,7 @@ class XSControl_Reader(object):
         """
         return _XSControl.XSControl_Reader_TransferOne(self, *args)
 
-    def TransferEntity(self, *args) -> "Standard_Boolean" :
+    def TransferEntity(self, *args):
         """
         Args:
         	start(Handle_Standard_Transient)
@@ -1668,7 +1668,7 @@ class XSControl_Reader(object):
         """
         return _XSControl.XSControl_Reader_TransferEntity(self, *args)
 
-    def TransferList(self, *args) -> "Standard_Integer" :
+    def TransferList(self, *args):
         """
         Args:
         	list(Handle_TColStd_HSequenceOfTransient)
@@ -1683,7 +1683,7 @@ class XSControl_Reader(object):
         """
         return _XSControl.XSControl_Reader_TransferList(self, *args)
 
-    def TransferRoots(self) -> "Standard_Integer" :
+    def TransferRoots(self):
         """
         Args:
         	None
@@ -1696,7 +1696,7 @@ class XSControl_Reader(object):
         """
         return _XSControl.XSControl_Reader_TransferRoots(self)
 
-    def ClearShapes(self) -> "void" :
+    def ClearShapes(self):
         """
         Args:
         	None
@@ -1708,7 +1708,7 @@ class XSControl_Reader(object):
         """
         return _XSControl.XSControl_Reader_ClearShapes(self)
 
-    def NbShapes(self) -> "Standard_Integer" :
+    def NbShapes(self):
         """
         Args:
         	None
@@ -1719,7 +1719,7 @@ class XSControl_Reader(object):
         """
         return _XSControl.XSControl_Reader_NbShapes(self)
 
-    def Shape(self, num : 'Standard_Integer const'=1) -> "TopoDS_Shape" :
+    def Shape(self, num=1):
         """
         Args:
         	num(Standard_Integer)=1
@@ -1744,7 +1744,7 @@ class XSControl_Reader(object):
         """
         return _XSControl.XSControl_Reader_Shape(self, num)
 
-    def OneShape(self) -> "TopoDS_Shape" :
+    def OneShape(self):
         """
         Args:
         	None
@@ -1759,7 +1759,7 @@ class XSControl_Reader(object):
         """
         return _XSControl.XSControl_Reader_OneShape(self)
 
-    def PrintCheckLoad(self, *args) -> "void" :
+    def PrintCheckLoad(self, *args):
         """
         Args:
         	failsonly(Standard_Boolean)
@@ -1777,7 +1777,7 @@ class XSControl_Reader(object):
         """
         return _XSControl.XSControl_Reader_PrintCheckLoad(self, *args)
 
-    def PrintCheckTransfer(self, *args) -> "void" :
+    def PrintCheckTransfer(self, *args):
         """
         Args:
         	failsonly(Standard_Boolean)
@@ -1795,7 +1795,7 @@ class XSControl_Reader(object):
         """
         return _XSControl.XSControl_Reader_PrintCheckTransfer(self, *args)
 
-    def PrintStatsTransfer(self, *args) -> "void" :
+    def PrintStatsTransfer(self, *args):
         """
         Args:
         	what(Standard_Integer)
@@ -1868,7 +1868,7 @@ class XSControl_Reader(object):
         """
         return _XSControl.XSControl_Reader_PrintStatsTransfer(self, *args)
 
-    def GetStatsTransfer(self, *args) -> "void" :
+    def GetStatsTransfer(self, *args):
         """
         Args:
         	list(Handle_TColStd_HSequenceOfTransient)
@@ -1938,7 +1938,7 @@ class XSControl_SelectForTransfer(OCC.IFSelect.IFSelect_SelectExtract):
                   currently defined Actor brought by the TransferReader
         """
         _XSControl.XSControl_SelectForTransfer_swiginit(self,_XSControl.new_XSControl_SelectForTransfer(*args))
-    def SetReader(self, *args) -> "void" :
+    def SetReader(self, *args):
         """
         Args:
         	TR(Handle_XSControl_TransferReader)
@@ -1951,7 +1951,7 @@ class XSControl_SelectForTransfer(OCC.IFSelect.IFSelect_SelectExtract):
         """
         return _XSControl.XSControl_SelectForTransfer_SetReader(self, *args)
 
-    def SetActor(self, *args) -> "void" :
+    def SetActor(self, *args):
         """
         Args:
         	act(Handle_Transfer_ActorOfTransientProcess)
@@ -1964,7 +1964,7 @@ class XSControl_SelectForTransfer(OCC.IFSelect.IFSelect_SelectExtract):
         """
         return _XSControl.XSControl_SelectForTransfer_SetActor(self, *args)
 
-    def Actor(self) -> "Handle_Transfer_ActorOfTransientProcess" :
+    def Actor(self):
         """
         Args:
         	None
@@ -1977,7 +1977,7 @@ class XSControl_SelectForTransfer(OCC.IFSelect.IFSelect_SelectExtract):
         """
         return _XSControl.XSControl_SelectForTransfer_Actor(self)
 
-    def Reader(self) -> "Handle_XSControl_TransferReader" :
+    def Reader(self):
         """
         Args:
         	None
@@ -1989,11 +1989,11 @@ class XSControl_SelectForTransfer(OCC.IFSelect.IFSelect_SelectExtract):
         """
         return _XSControl.XSControl_SelectForTransfer_Reader(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(XSControl_SelectForTransfer self)"""
         return _XSControl.XSControl_SelectForTransfer__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_XSControl_SelectForTransfer" :
+    def GetHandle(self):
         """GetHandle(XSControl_SelectForTransfer self) -> Handle_XSControl_SelectForTransfer"""
         return _XSControl.XSControl_SelectForTransfer_GetHandle(self)
 
@@ -2035,7 +2035,7 @@ Handle_XSControl_SelectForTransfer._kill_pointed = new_instancemethod(_XSControl
 Handle_XSControl_SelectForTransfer_swigregister = _XSControl.Handle_XSControl_SelectForTransfer_swigregister
 Handle_XSControl_SelectForTransfer_swigregister(Handle_XSControl_SelectForTransfer)
 
-def Handle_XSControl_SelectForTransfer_DownCast(*args) -> "Handle_XSControl_SelectForTransfer const" :
+def Handle_XSControl_SelectForTransfer_DownCast(*args):
   return _XSControl.Handle_XSControl_SelectForTransfer_DownCast(*args)
 Handle_XSControl_SelectForTransfer_DownCast = _XSControl.Handle_XSControl_SelectForTransfer_DownCast
 
@@ -2061,7 +2061,7 @@ class XSControl_SignTransferStatus(OCC.IFSelect.IFSelect_Signature):
                   TransientProcess brought by the TransferReader (its MapReader)
         """
         _XSControl.XSControl_SignTransferStatus_swiginit(self,_XSControl.new_XSControl_SignTransferStatus(*args))
-    def SetReader(self, *args) -> "void" :
+    def SetReader(self, *args):
         """
         Args:
         	TR(Handle_XSControl_TransferReader)
@@ -2073,7 +2073,7 @@ class XSControl_SignTransferStatus(OCC.IFSelect.IFSelect_Signature):
         """
         return _XSControl.XSControl_SignTransferStatus_SetReader(self, *args)
 
-    def SetMap(self, *args) -> "void" :
+    def SetMap(self, *args):
         """
         Args:
         	TP(Handle_Transfer_TransientProcess)
@@ -2086,7 +2086,7 @@ class XSControl_SignTransferStatus(OCC.IFSelect.IFSelect_Signature):
         """
         return _XSControl.XSControl_SignTransferStatus_SetMap(self, *args)
 
-    def Map(self) -> "Handle_Transfer_TransientProcess" :
+    def Map(self):
         """
         Args:
         	None
@@ -2099,7 +2099,7 @@ class XSControl_SignTransferStatus(OCC.IFSelect.IFSelect_Signature):
         """
         return _XSControl.XSControl_SignTransferStatus_Map(self)
 
-    def Reader(self) -> "Handle_XSControl_TransferReader" :
+    def Reader(self):
         """
         Args:
         	None
@@ -2149,7 +2149,7 @@ Handle_XSControl_SignTransferStatus._kill_pointed = new_instancemethod(_XSContro
 Handle_XSControl_SignTransferStatus_swigregister = _XSControl.Handle_XSControl_SignTransferStatus_swigregister
 Handle_XSControl_SignTransferStatus_swigregister(Handle_XSControl_SignTransferStatus)
 
-def Handle_XSControl_SignTransferStatus_DownCast(*args) -> "Handle_XSControl_SignTransferStatus const" :
+def Handle_XSControl_SignTransferStatus_DownCast(*args):
   return _XSControl.Handle_XSControl_SignTransferStatus_DownCast(*args)
 Handle_XSControl_SignTransferStatus_DownCast = _XSControl.Handle_XSControl_SignTransferStatus_DownCast
 
@@ -2166,7 +2166,7 @@ class XSControl_TransferReader(OCC.MMgt.MMgt_TShared):
         Creates a TransferReader, empty
         """
         _XSControl.XSControl_TransferReader_swiginit(self,_XSControl.new_XSControl_TransferReader())
-    def SetController(self, *args) -> "void" :
+    def SetController(self, *args):
         """
         Args:
         	control(Handle_XSControl_Controller)
@@ -2179,7 +2179,7 @@ class XSControl_TransferReader(OCC.MMgt.MMgt_TShared):
         """
         return _XSControl.XSControl_TransferReader_SetController(self, *args)
 
-    def SetActor(self, *args) -> "void" :
+    def SetActor(self, *args):
         """
         Args:
         	actor(Handle_Transfer_ActorOfTransientProcess)
@@ -2192,7 +2192,7 @@ class XSControl_TransferReader(OCC.MMgt.MMgt_TShared):
         """
         return _XSControl.XSControl_TransferReader_SetActor(self, *args)
 
-    def Actor(self) -> "Handle_Transfer_ActorOfTransientProcess" :
+    def Actor(self):
         """
         Args:
         	None
@@ -2205,7 +2205,7 @@ class XSControl_TransferReader(OCC.MMgt.MMgt_TShared):
         """
         return _XSControl.XSControl_TransferReader_Actor(self)
 
-    def SetModel(self, *args) -> "void" :
+    def SetModel(self, *args):
         """
         Args:
         	model(Handle_Interface_InterfaceModel)
@@ -2218,7 +2218,7 @@ class XSControl_TransferReader(OCC.MMgt.MMgt_TShared):
         """
         return _XSControl.XSControl_TransferReader_SetModel(self, *args)
 
-    def SetGraph(self, *args) -> "void" :
+    def SetGraph(self, *args):
         """
         Args:
         	graph(Handle_Interface_HGraph)
@@ -2230,7 +2230,7 @@ class XSControl_TransferReader(OCC.MMgt.MMgt_TShared):
         """
         return _XSControl.XSControl_TransferReader_SetGraph(self, *args)
 
-    def Model(self) -> "Handle_Interface_InterfaceModel" :
+    def Model(self):
         """
         Args:
         	None
@@ -2241,7 +2241,7 @@ class XSControl_TransferReader(OCC.MMgt.MMgt_TShared):
         """
         return _XSControl.XSControl_TransferReader_Model(self)
 
-    def SetContext(self, *args) -> "void" :
+    def SetContext(self, *args):
         """
         Args:
         	name(char *)
@@ -2255,7 +2255,7 @@ class XSControl_TransferReader(OCC.MMgt.MMgt_TShared):
         """
         return _XSControl.XSControl_TransferReader_SetContext(self, *args)
 
-    def GetContext(self, *args) -> "Standard_Boolean" :
+    def GetContext(self, *args):
         """
         Args:
         	name(char *)
@@ -2271,7 +2271,7 @@ class XSControl_TransferReader(OCC.MMgt.MMgt_TShared):
         """
         return _XSControl.XSControl_TransferReader_GetContext(self, *args)
 
-    def Context(self) -> "Handle_Dico_DictionaryOfTransient &" :
+    def Context(self):
         """
         Args:
         	None
@@ -2283,7 +2283,7 @@ class XSControl_TransferReader(OCC.MMgt.MMgt_TShared):
         """
         return _XSControl.XSControl_TransferReader_Context(self)
 
-    def SetFileName(self, *args) -> "void" :
+    def SetFileName(self, *args):
         """
         Args:
         	name(char *)
@@ -2295,7 +2295,7 @@ class XSControl_TransferReader(OCC.MMgt.MMgt_TShared):
         """
         return _XSControl.XSControl_TransferReader_SetFileName(self, *args)
 
-    def FileName(self) -> "char *" :
+    def FileName(self):
         """
         Args:
         	None
@@ -2306,7 +2306,7 @@ class XSControl_TransferReader(OCC.MMgt.MMgt_TShared):
         """
         return _XSControl.XSControl_TransferReader_FileName(self)
 
-    def Clear(self, *args) -> "void" :
+    def Clear(self, *args):
         """
         Args:
         	mode(Standard_Integer)
@@ -2322,7 +2322,7 @@ class XSControl_TransferReader(OCC.MMgt.MMgt_TShared):
         """
         return _XSControl.XSControl_TransferReader_Clear(self, *args)
 
-    def TransientProcess(self) -> "Handle_Transfer_TransientProcess" :
+    def TransientProcess(self):
         """
         Args:
         	None
@@ -2335,7 +2335,7 @@ class XSControl_TransferReader(OCC.MMgt.MMgt_TShared):
         """
         return _XSControl.XSControl_TransferReader_TransientProcess(self)
 
-    def SetTransientProcess(self, *args) -> "void" :
+    def SetTransientProcess(self, *args):
         """
         Args:
         	TP(Handle_Transfer_TransientProcess)
@@ -2349,7 +2349,7 @@ class XSControl_TransferReader(OCC.MMgt.MMgt_TShared):
         """
         return _XSControl.XSControl_TransferReader_SetTransientProcess(self, *args)
 
-    def RecordResult(self, *args) -> "Standard_Boolean" :
+    def RecordResult(self, *args):
         """
         Args:
         	ent(Handle_Standard_Transient)
@@ -2364,7 +2364,7 @@ class XSControl_TransferReader(OCC.MMgt.MMgt_TShared):
         """
         return _XSControl.XSControl_TransferReader_RecordResult(self, *args)
 
-    def IsRecorded(self, *args) -> "Standard_Boolean" :
+    def IsRecorded(self, *args):
         """
         Args:
         	ent(Handle_Standard_Transient)
@@ -2378,7 +2378,7 @@ class XSControl_TransferReader(OCC.MMgt.MMgt_TShared):
         """
         return _XSControl.XSControl_TransferReader_IsRecorded(self, *args)
 
-    def HasResult(self, *args) -> "Standard_Boolean" :
+    def HasResult(self, *args):
         """
         Args:
         	ent(Handle_Standard_Transient)
@@ -2391,7 +2391,7 @@ class XSControl_TransferReader(OCC.MMgt.MMgt_TShared):
         """
         return _XSControl.XSControl_TransferReader_HasResult(self, *args)
 
-    def RecordedList(self) -> "Handle_TColStd_HSequenceOfTransient" :
+    def RecordedList(self):
         """
         Args:
         	None
@@ -2403,7 +2403,7 @@ class XSControl_TransferReader(OCC.MMgt.MMgt_TShared):
         """
         return _XSControl.XSControl_TransferReader_RecordedList(self)
 
-    def Skip(self, *args) -> "Standard_Boolean" :
+    def Skip(self, *args):
         """
         Args:
         	ent(Handle_Standard_Transient)
@@ -2418,7 +2418,7 @@ class XSControl_TransferReader(OCC.MMgt.MMgt_TShared):
         """
         return _XSControl.XSControl_TransferReader_Skip(self, *args)
 
-    def IsSkipped(self, *args) -> "Standard_Boolean" :
+    def IsSkipped(self, *args):
         """
         Args:
         	ent(Handle_Standard_Transient)
@@ -2430,7 +2430,7 @@ class XSControl_TransferReader(OCC.MMgt.MMgt_TShared):
         """
         return _XSControl.XSControl_TransferReader_IsSkipped(self, *args)
 
-    def IsMarked(self, *args) -> "Standard_Boolean" :
+    def IsMarked(self, *args):
         """
         Args:
         	ent(Handle_Standard_Transient)
@@ -2444,7 +2444,7 @@ class XSControl_TransferReader(OCC.MMgt.MMgt_TShared):
         """
         return _XSControl.XSControl_TransferReader_IsMarked(self, *args)
 
-    def FinalResult(self, *args) -> "Handle_Transfer_ResultFromModel" :
+    def FinalResult(self, *args):
         """
         Args:
         	ent(Handle_Standard_Transient)
@@ -2456,7 +2456,7 @@ class XSControl_TransferReader(OCC.MMgt.MMgt_TShared):
         """
         return _XSControl.XSControl_TransferReader_FinalResult(self, *args)
 
-    def FinalEntityLabel(self, *args) -> "char *" :
+    def FinalEntityLabel(self, *args):
         """
         Args:
         	ent(Handle_Standard_Transient)
@@ -2469,7 +2469,7 @@ class XSControl_TransferReader(OCC.MMgt.MMgt_TShared):
         """
         return _XSControl.XSControl_TransferReader_FinalEntityLabel(self, *args)
 
-    def FinalEntityNumber(self, *args) -> "Standard_Integer" :
+    def FinalEntityNumber(self, *args):
         """
         Args:
         	ent(Handle_Standard_Transient)
@@ -2482,7 +2482,7 @@ class XSControl_TransferReader(OCC.MMgt.MMgt_TShared):
         """
         return _XSControl.XSControl_TransferReader_FinalEntityNumber(self, *args)
 
-    def ResultFromNumber(self, *args) -> "Handle_Transfer_ResultFromModel" :
+    def ResultFromNumber(self, *args):
         """
         Args:
         	num(Standard_Integer)
@@ -2495,7 +2495,7 @@ class XSControl_TransferReader(OCC.MMgt.MMgt_TShared):
         """
         return _XSControl.XSControl_TransferReader_ResultFromNumber(self, *args)
 
-    def TransientResult(self, *args) -> "Handle_Standard_Transient" :
+    def TransientResult(self, *args):
         """
         Args:
         	ent(Handle_Standard_Transient)
@@ -2508,7 +2508,7 @@ class XSControl_TransferReader(OCC.MMgt.MMgt_TShared):
         """
         return _XSControl.XSControl_TransferReader_TransientResult(self, *args)
 
-    def ShapeResult(self, *args) -> "TopoDS_Shape" :
+    def ShapeResult(self, *args):
         """
         Args:
         	ent(Handle_Standard_Transient)
@@ -2521,7 +2521,7 @@ class XSControl_TransferReader(OCC.MMgt.MMgt_TShared):
         """
         return _XSControl.XSControl_TransferReader_ShapeResult(self, *args)
 
-    def ClearResult(self, *args) -> "Standard_Boolean" :
+    def ClearResult(self, *args):
         """
         Args:
         	ent(Handle_Standard_Transient)
@@ -2540,7 +2540,7 @@ class XSControl_TransferReader(OCC.MMgt.MMgt_TShared):
         """
         return _XSControl.XSControl_TransferReader_ClearResult(self, *args)
 
-    def EntityFromResult(self, *args) -> "Handle_Standard_Transient" :
+    def EntityFromResult(self, *args):
         """
         Args:
         	res(Handle_Standard_Transient)
@@ -2575,7 +2575,7 @@ class XSControl_TransferReader(OCC.MMgt.MMgt_TShared):
         """
         return _XSControl.XSControl_TransferReader_EntityFromResult(self, *args)
 
-    def EntityFromShapeResult(self, *args) -> "Handle_Standard_Transient" :
+    def EntityFromShapeResult(self, *args):
         """
         Args:
         	res(TopoDS_Shape)
@@ -2598,7 +2598,7 @@ class XSControl_TransferReader(OCC.MMgt.MMgt_TShared):
         """
         return _XSControl.XSControl_TransferReader_EntityFromShapeResult(self, *args)
 
-    def EntitiesFromShapeList(self, *args) -> "Handle_TColStd_HSequenceOfTransient" :
+    def EntitiesFromShapeList(self, *args):
         """
         Args:
         	res(Handle_TopTools_HSequenceOfShape)
@@ -2623,7 +2623,7 @@ class XSControl_TransferReader(OCC.MMgt.MMgt_TShared):
         """
         return _XSControl.XSControl_TransferReader_EntitiesFromShapeList(self, *args)
 
-    def CheckList(self, *args) -> "Interface_CheckIterator" :
+    def CheckList(self, *args):
         """
         Args:
         	ent(Handle_Standard_Transient)
@@ -2666,7 +2666,7 @@ class XSControl_TransferReader(OCC.MMgt.MMgt_TShared):
         """
         return _XSControl.XSControl_TransferReader_CheckList(self, *args)
 
-    def HasChecks(self, *args) -> "Standard_Boolean" :
+    def HasChecks(self, *args):
         """
         Args:
         	ent(Handle_Standard_Transient)
@@ -2682,7 +2682,7 @@ class XSControl_TransferReader(OCC.MMgt.MMgt_TShared):
         """
         return _XSControl.XSControl_TransferReader_HasChecks(self, *args)
 
-    def CheckedList(self, *args) -> "Handle_TColStd_HSequenceOfTransient" :
+    def CheckedList(self, *args):
         """
         Args:
         	ent(Handle_Standard_Transient)
@@ -2750,7 +2750,7 @@ class XSControl_TransferReader(OCC.MMgt.MMgt_TShared):
         """
         return _XSControl.XSControl_TransferReader_CheckedList(self, *args)
 
-    def BeginTransfer(self) -> "Standard_Boolean" :
+    def BeginTransfer(self):
         """
         Args:
         	None
@@ -2763,7 +2763,7 @@ class XSControl_TransferReader(OCC.MMgt.MMgt_TShared):
         """
         return _XSControl.XSControl_TransferReader_BeginTransfer(self)
 
-    def Recognize(self, *args) -> "Standard_Boolean" :
+    def Recognize(self, *args):
         """
         Args:
         	ent(Handle_Standard_Transient)
@@ -2776,7 +2776,7 @@ class XSControl_TransferReader(OCC.MMgt.MMgt_TShared):
         """
         return _XSControl.XSControl_TransferReader_Recognize(self, *args)
 
-    def TransferOne(self, *args) -> "Standard_Integer" :
+    def TransferOne(self, *args):
         """
         Args:
         	ent(Handle_Standard_Transient)
@@ -2803,7 +2803,7 @@ class XSControl_TransferReader(OCC.MMgt.MMgt_TShared):
         """
         return _XSControl.XSControl_TransferReader_TransferOne(self, *args)
 
-    def TransferList(self, *args) -> "Standard_Integer" :
+    def TransferList(self, *args):
         """
         Args:
         	list(Handle_TColStd_HSequenceOfTransient)
@@ -2830,7 +2830,7 @@ class XSControl_TransferReader(OCC.MMgt.MMgt_TShared):
         """
         return _XSControl.XSControl_TransferReader_TransferList(self, *args)
 
-    def TransferRoots(self, *args) -> "Standard_Integer" :
+    def TransferRoots(self, *args):
         """
         Args:
         	G(Interface_Graph)
@@ -2846,7 +2846,7 @@ class XSControl_TransferReader(OCC.MMgt.MMgt_TShared):
         """
         return _XSControl.XSControl_TransferReader_TransferRoots(self, *args)
 
-    def TransferClear(self, *args) -> "void" :
+    def TransferClear(self, *args):
         """
         Args:
         	ent(Handle_Standard_Transient)
@@ -2869,7 +2869,7 @@ class XSControl_TransferReader(OCC.MMgt.MMgt_TShared):
         """
         return _XSControl.XSControl_TransferReader_TransferClear(self, *args)
 
-    def PrintStats(self, *args) -> "void" :
+    def PrintStats(self, *args):
         """
         Args:
         	what(Standard_Integer)
@@ -2892,7 +2892,7 @@ class XSControl_TransferReader(OCC.MMgt.MMgt_TShared):
         """
         return _XSControl.XSControl_TransferReader_PrintStats(self, *args)
 
-    def LastCheckList(self) -> "Interface_CheckIterator" :
+    def LastCheckList(self):
         """
         Args:
         	None
@@ -2904,7 +2904,7 @@ class XSControl_TransferReader(OCC.MMgt.MMgt_TShared):
         """
         return _XSControl.XSControl_TransferReader_LastCheckList(self)
 
-    def LastTransferList(self, *args) -> "Handle_TColStd_HSequenceOfTransient" :
+    def LastTransferList(self, *args):
         """
         Args:
         	roots(Standard_Boolean)
@@ -2919,7 +2919,7 @@ class XSControl_TransferReader(OCC.MMgt.MMgt_TShared):
         """
         return _XSControl.XSControl_TransferReader_LastTransferList(self, *args)
 
-    def ShapeResultList(self, *args) -> "Handle_TopTools_HSequenceOfShape" :
+    def ShapeResultList(self, *args):
         """
         Args:
         	rec(Standard_Boolean)
@@ -2935,7 +2935,7 @@ class XSControl_TransferReader(OCC.MMgt.MMgt_TShared):
         """
         return _XSControl.XSControl_TransferReader_ShapeResultList(self, *args)
 
-    def PrintStatsProcess(*args) -> "void" :
+    def PrintStatsProcess(*args):
         """
         Args:
         	TP(Handle_Transfer_TransientProcess)
@@ -3017,7 +3017,7 @@ class XSControl_TransferReader(OCC.MMgt.MMgt_TShared):
         return _XSControl.XSControl_TransferReader_PrintStatsProcess(*args)
 
     PrintStatsProcess = staticmethod(PrintStatsProcess)
-    def PrintStatsOnList(*args) -> "void" :
+    def PrintStatsOnList(*args):
         """
         Args:
         	TP(Handle_Transfer_TransientProcess)
@@ -3045,11 +3045,11 @@ class XSControl_TransferReader(OCC.MMgt.MMgt_TShared):
         return _XSControl.XSControl_TransferReader_PrintStatsOnList(*args)
 
     PrintStatsOnList = staticmethod(PrintStatsOnList)
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(XSControl_TransferReader self)"""
         return _XSControl.XSControl_TransferReader__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_XSControl_TransferReader" :
+    def GetHandle(self):
         """GetHandle(XSControl_TransferReader self) -> Handle_XSControl_TransferReader"""
         return _XSControl.XSControl_TransferReader_GetHandle(self)
 
@@ -3110,7 +3110,7 @@ XSControl_TransferReader.GetHandle = new_instancemethod(_XSControl.XSControl_Tra
 XSControl_TransferReader_swigregister = _XSControl.XSControl_TransferReader_swigregister
 XSControl_TransferReader_swigregister(XSControl_TransferReader)
 
-def XSControl_TransferReader_PrintStatsProcess(*args) -> "void" :
+def XSControl_TransferReader_PrintStatsProcess(*args):
   """
     Args:
     	TP(Handle_Transfer_TransientProcess)
@@ -3191,7 +3191,7 @@ def XSControl_TransferReader_PrintStatsProcess(*args) -> "void" :
     """
   return _XSControl.XSControl_TransferReader_PrintStatsProcess(*args)
 
-def XSControl_TransferReader_PrintStatsOnList(*args) -> "void" :
+def XSControl_TransferReader_PrintStatsOnList(*args):
   """
     Args:
     	TP(Handle_Transfer_TransientProcess)
@@ -3239,7 +3239,7 @@ Handle_XSControl_TransferReader._kill_pointed = new_instancemethod(_XSControl.Ha
 Handle_XSControl_TransferReader_swigregister = _XSControl.Handle_XSControl_TransferReader_swigregister
 Handle_XSControl_TransferReader_swigregister(Handle_XSControl_TransferReader)
 
-def Handle_XSControl_TransferReader_DownCast(*args) -> "Handle_XSControl_TransferReader const" :
+def Handle_XSControl_TransferReader_DownCast(*args):
   return _XSControl.Handle_XSControl_TransferReader_DownCast(*args)
 Handle_XSControl_TransferReader_DownCast = _XSControl.Handle_XSControl_TransferReader_DownCast
 
@@ -3257,7 +3257,7 @@ class XSControl_TransferWriter(OCC.MMgt.MMgt_TShared):
                   with an empty FinderProcess (but no controller, etc)
         """
         _XSControl.XSControl_TransferWriter_swiginit(self,_XSControl.new_XSControl_TransferWriter())
-    def FinderProcess(self) -> "Handle_Transfer_FinderProcess" :
+    def FinderProcess(self):
         """
         Args:
         	None
@@ -3268,7 +3268,7 @@ class XSControl_TransferWriter(OCC.MMgt.MMgt_TShared):
         """
         return _XSControl.XSControl_TransferWriter_FinderProcess(self)
 
-    def SetFinderProcess(self, *args) -> "void" :
+    def SetFinderProcess(self, *args):
         """
         Args:
         	FP(Handle_Transfer_FinderProcess)
@@ -3280,7 +3280,7 @@ class XSControl_TransferWriter(OCC.MMgt.MMgt_TShared):
         """
         return _XSControl.XSControl_TransferWriter_SetFinderProcess(self, *args)
 
-    def Controller(self) -> "Handle_XSControl_Controller" :
+    def Controller(self):
         """
         Args:
         	None
@@ -3291,7 +3291,7 @@ class XSControl_TransferWriter(OCC.MMgt.MMgt_TShared):
         """
         return _XSControl.XSControl_TransferWriter_Controller(self)
 
-    def SetController(self, *args) -> "void" :
+    def SetController(self, *args):
         """
         Args:
         	ctl(Handle_XSControl_Controller)
@@ -3303,7 +3303,7 @@ class XSControl_TransferWriter(OCC.MMgt.MMgt_TShared):
         """
         return _XSControl.XSControl_TransferWriter_SetController(self, *args)
 
-    def Clear(self, *args) -> "void" :
+    def Clear(self, *args):
         """
         Args:
         	mode(Standard_Integer)
@@ -3317,7 +3317,7 @@ class XSControl_TransferWriter(OCC.MMgt.MMgt_TShared):
         """
         return _XSControl.XSControl_TransferWriter_Clear(self, *args)
 
-    def TransferMode(self) -> "Standard_Integer" :
+    def TransferMode(self):
         """
         Args:
         	None
@@ -3331,7 +3331,7 @@ class XSControl_TransferWriter(OCC.MMgt.MMgt_TShared):
         """
         return _XSControl.XSControl_TransferWriter_TransferMode(self)
 
-    def SetTransferMode(self, *args) -> "void" :
+    def SetTransferMode(self, *args):
         """
         Args:
         	mode(Standard_Integer)
@@ -3343,7 +3343,7 @@ class XSControl_TransferWriter(OCC.MMgt.MMgt_TShared):
         """
         return _XSControl.XSControl_TransferWriter_SetTransferMode(self, *args)
 
-    def PrintStats(self, *args) -> "void" :
+    def PrintStats(self, *args):
         """
         Args:
         	what(Standard_Integer)
@@ -3366,7 +3366,7 @@ class XSControl_TransferWriter(OCC.MMgt.MMgt_TShared):
         """
         return _XSControl.XSControl_TransferWriter_PrintStats(self, *args)
 
-    def RecognizeTransient(self, *args) -> "Standard_Boolean" :
+    def RecognizeTransient(self, *args):
         """
         Args:
         	obj(Handle_Standard_Transient)
@@ -3381,7 +3381,7 @@ class XSControl_TransferWriter(OCC.MMgt.MMgt_TShared):
         """
         return _XSControl.XSControl_TransferWriter_RecognizeTransient(self, *args)
 
-    def TransferWriteTransient(self, *args) -> "IFSelect_ReturnStatus" :
+    def TransferWriteTransient(self, *args):
         """
         Args:
         	model(Handle_Interface_InterfaceModel)
@@ -3398,7 +3398,7 @@ class XSControl_TransferWriter(OCC.MMgt.MMgt_TShared):
         """
         return _XSControl.XSControl_TransferWriter_TransferWriteTransient(self, *args)
 
-    def RecognizeShape(self, *args) -> "Standard_Boolean" :
+    def RecognizeShape(self, *args):
         """
         Args:
         	shape(TopoDS_Shape)
@@ -3411,7 +3411,7 @@ class XSControl_TransferWriter(OCC.MMgt.MMgt_TShared):
         """
         return _XSControl.XSControl_TransferWriter_RecognizeShape(self, *args)
 
-    def TransferWriteShape(self, *args) -> "IFSelect_ReturnStatus" :
+    def TransferWriteShape(self, *args):
         """
         Args:
         	model(Handle_Interface_InterfaceModel)
@@ -3428,7 +3428,7 @@ class XSControl_TransferWriter(OCC.MMgt.MMgt_TShared):
         """
         return _XSControl.XSControl_TransferWriter_TransferWriteShape(self, *args)
 
-    def CheckList(self) -> "Interface_CheckIterator" :
+    def CheckList(self):
         """
         Args:
         	None
@@ -3440,7 +3440,7 @@ class XSControl_TransferWriter(OCC.MMgt.MMgt_TShared):
         """
         return _XSControl.XSControl_TransferWriter_CheckList(self)
 
-    def ResultCheckList(self, *args) -> "Interface_CheckIterator" :
+    def ResultCheckList(self, *args):
         """
         Args:
         	model(Handle_Interface_InterfaceModel)
@@ -3454,7 +3454,7 @@ class XSControl_TransferWriter(OCC.MMgt.MMgt_TShared):
         """
         return _XSControl.XSControl_TransferWriter_ResultCheckList(self, *args)
 
-    def PrintStatsProcess(*args) -> "void" :
+    def PrintStatsProcess(*args):
         """
         Args:
         	TP(Handle_Transfer_FinderProcess)
@@ -3478,11 +3478,11 @@ class XSControl_TransferWriter(OCC.MMgt.MMgt_TShared):
         return _XSControl.XSControl_TransferWriter_PrintStatsProcess(*args)
 
     PrintStatsProcess = staticmethod(PrintStatsProcess)
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(XSControl_TransferWriter self)"""
         return _XSControl.XSControl_TransferWriter__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_XSControl_TransferWriter" :
+    def GetHandle(self):
         """GetHandle(XSControl_TransferWriter self) -> Handle_XSControl_TransferWriter"""
         return _XSControl.XSControl_TransferWriter_GetHandle(self)
 
@@ -3513,7 +3513,7 @@ XSControl_TransferWriter.GetHandle = new_instancemethod(_XSControl.XSControl_Tra
 XSControl_TransferWriter_swigregister = _XSControl.XSControl_TransferWriter_swigregister
 XSControl_TransferWriter_swigregister(XSControl_TransferWriter)
 
-def XSControl_TransferWriter_PrintStatsProcess(*args) -> "void" :
+def XSControl_TransferWriter_PrintStatsProcess(*args):
   """
     Args:
     	TP(Handle_Transfer_FinderProcess)
@@ -3557,7 +3557,7 @@ Handle_XSControl_TransferWriter._kill_pointed = new_instancemethod(_XSControl.Ha
 Handle_XSControl_TransferWriter_swigregister = _XSControl.Handle_XSControl_TransferWriter_swigregister
 Handle_XSControl_TransferWriter_swigregister(Handle_XSControl_TransferWriter)
 
-def Handle_XSControl_TransferWriter_DownCast(*args) -> "Handle_XSControl_TransferWriter const" :
+def Handle_XSControl_TransferWriter_DownCast(*args):
   return _XSControl.Handle_XSControl_TransferWriter_DownCast(*args)
 Handle_XSControl_TransferWriter_DownCast = _XSControl.Handle_XSControl_TransferWriter_DownCast
 
@@ -3575,7 +3575,7 @@ class XSControl_Utils(object):
                   distinct 'Utils' set per separate engine
         """
         _XSControl.XSControl_Utils_swiginit(self,_XSControl.new_XSControl_Utils())
-    def TraceLine(self, *args) -> "void" :
+    def TraceLine(self, *args):
         """
         Args:
         	line(char *)
@@ -3588,7 +3588,7 @@ class XSControl_Utils(object):
         """
         return _XSControl.XSControl_Utils_TraceLine(self, *args)
 
-    def TraceLines(self, *args) -> "void" :
+    def TraceLines(self, *args):
         """
         Args:
         	lines(Handle_Standard_Transient)
@@ -3603,7 +3603,7 @@ class XSControl_Utils(object):
         """
         return _XSControl.XSControl_Utils_TraceLines(self, *args)
 
-    def IsKind(self, *args) -> "Standard_Boolean" :
+    def IsKind(self, *args):
         """
         Args:
         	item(Handle_Standard_Transient)
@@ -3616,7 +3616,7 @@ class XSControl_Utils(object):
         """
         return _XSControl.XSControl_Utils_IsKind(self, *args)
 
-    def TypeName(self, *args) -> "char *" :
+    def TypeName(self, *args):
         """
         Args:
         	item(Handle_Standard_Transient)
@@ -3647,7 +3647,7 @@ class XSControl_Utils(object):
         """
         return _XSControl.XSControl_Utils_TypeName(self, *args)
 
-    def TraValue(self, *args) -> "Handle_Standard_Transient" :
+    def TraValue(self, *args):
         """
         Args:
         	list(Handle_Standard_Transient)
@@ -3660,7 +3660,7 @@ class XSControl_Utils(object):
         """
         return _XSControl.XSControl_Utils_TraValue(self, *args)
 
-    def NewSeqTra(self) -> "Handle_TColStd_HSequenceOfTransient" :
+    def NewSeqTra(self):
         """
         Args:
         	None
@@ -3671,7 +3671,7 @@ class XSControl_Utils(object):
         """
         return _XSControl.XSControl_Utils_NewSeqTra(self)
 
-    def AppendTra(self, *args) -> "void" :
+    def AppendTra(self, *args):
         """
         Args:
         	seqval(Handle_TColStd_HSequenceOfTransient)
@@ -3684,7 +3684,7 @@ class XSControl_Utils(object):
         """
         return _XSControl.XSControl_Utils_AppendTra(self, *args)
 
-    def DateString(self, *args) -> "char *" :
+    def DateString(self, *args):
         """
         Args:
         	yy(Standard_Integer)
@@ -3701,7 +3701,7 @@ class XSControl_Utils(object):
         """
         return _XSControl.XSControl_Utils_DateString(self, *args)
 
-    def DateValues(self, *args) -> "void" :
+    def DateValues(self, *args):
         """
         Args:
         	text(char *)
@@ -3719,7 +3719,7 @@ class XSControl_Utils(object):
         """
         return _XSControl.XSControl_Utils_DateValues(self, *args)
 
-    def ToCString(self, *args) -> "char *" :
+    def ToCString(self, *args):
         """
         Args:
         	strval(Handle_TCollection_HAsciiString)
@@ -3738,7 +3738,7 @@ class XSControl_Utils(object):
         """
         return _XSControl.XSControl_Utils_ToCString(self, *args)
 
-    def ToAString(self, *args) -> "TCollection_AsciiString" :
+    def ToAString(self, *args):
         """
         Args:
         	strcon(char *)
@@ -3750,7 +3750,7 @@ class XSControl_Utils(object):
         """
         return _XSControl.XSControl_Utils_ToAString(self, *args)
 
-    def ToEString(self, *args) -> "Standard_ExtString" :
+    def ToEString(self, *args):
         """
         Args:
         	strval(Handle_TCollection_HExtendedString)
@@ -3769,7 +3769,7 @@ class XSControl_Utils(object):
         """
         return _XSControl.XSControl_Utils_ToEString(self, *args)
 
-    def ToHString(self, *args) -> "Handle_TCollection_HExtendedString" :
+    def ToHString(self, *args):
         """
         Args:
         	strcon(char *)
@@ -3788,7 +3788,7 @@ class XSControl_Utils(object):
         """
         return _XSControl.XSControl_Utils_ToHString(self, *args)
 
-    def ToXString(self, *args) -> "TCollection_ExtendedString" :
+    def ToXString(self, *args):
         """
         Args:
         	strcon(Standard_ExtString)
@@ -3800,7 +3800,7 @@ class XSControl_Utils(object):
         """
         return _XSControl.XSControl_Utils_ToXString(self, *args)
 
-    def AsciiToExtended(self, *args) -> "Standard_ExtString" :
+    def AsciiToExtended(self, *args):
         """
         Args:
         	str(char *)
@@ -3812,7 +3812,7 @@ class XSControl_Utils(object):
         """
         return _XSControl.XSControl_Utils_AsciiToExtended(self, *args)
 
-    def IsAscii(self, *args) -> "Standard_Boolean" :
+    def IsAscii(self, *args):
         """
         Args:
         	str(Standard_ExtString)
@@ -3824,7 +3824,7 @@ class XSControl_Utils(object):
         """
         return _XSControl.XSControl_Utils_IsAscii(self, *args)
 
-    def ExtendedToAscii(self, *args) -> "char *" :
+    def ExtendedToAscii(self, *args):
         """
         Args:
         	str(Standard_ExtString)
@@ -3836,7 +3836,7 @@ class XSControl_Utils(object):
         """
         return _XSControl.XSControl_Utils_ExtendedToAscii(self, *args)
 
-    def CStrValue(self, *args) -> "char *" :
+    def CStrValue(self, *args):
         """
         Args:
         	list(Handle_Standard_Transient)
@@ -3849,7 +3849,7 @@ class XSControl_Utils(object):
         """
         return _XSControl.XSControl_Utils_CStrValue(self, *args)
 
-    def EStrValue(self, *args) -> "Standard_ExtString" :
+    def EStrValue(self, *args):
         """
         Args:
         	list(Handle_Standard_Transient)
@@ -3862,7 +3862,7 @@ class XSControl_Utils(object):
         """
         return _XSControl.XSControl_Utils_EStrValue(self, *args)
 
-    def NewSeqCStr(self) -> "Handle_TColStd_HSequenceOfHAsciiString" :
+    def NewSeqCStr(self):
         """
         Args:
         	None
@@ -3873,7 +3873,7 @@ class XSControl_Utils(object):
         """
         return _XSControl.XSControl_Utils_NewSeqCStr(self)
 
-    def AppendCStr(self, *args) -> "void" :
+    def AppendCStr(self, *args):
         """
         Args:
         	seqval(Handle_TColStd_HSequenceOfHAsciiString)
@@ -3886,7 +3886,7 @@ class XSControl_Utils(object):
         """
         return _XSControl.XSControl_Utils_AppendCStr(self, *args)
 
-    def NewSeqEStr(self) -> "Handle_TColStd_HSequenceOfHExtendedString" :
+    def NewSeqEStr(self):
         """
         Args:
         	None
@@ -3897,7 +3897,7 @@ class XSControl_Utils(object):
         """
         return _XSControl.XSControl_Utils_NewSeqEStr(self)
 
-    def AppendEStr(self, *args) -> "void" :
+    def AppendEStr(self, *args):
         """
         Args:
         	seqval(Handle_TColStd_HSequenceOfHExtendedString)
@@ -3910,7 +3910,7 @@ class XSControl_Utils(object):
         """
         return _XSControl.XSControl_Utils_AppendEStr(self, *args)
 
-    def WriteShape(self, *args) -> "Standard_Boolean" :
+    def WriteShape(self, *args):
         """
         Args:
         	shape(TopoDS_Shape)
@@ -3925,7 +3925,7 @@ class XSControl_Utils(object):
         """
         return _XSControl.XSControl_Utils_WriteShape(self, *args)
 
-    def NewShape(self) -> "TopoDS_Shape" :
+    def NewShape(self):
         """
         Args:
         	None
@@ -3937,7 +3937,7 @@ class XSControl_Utils(object):
         """
         return _XSControl.XSControl_Utils_NewShape(self)
 
-    def ReadShape(self, *args) -> "Standard_Boolean" :
+    def ReadShape(self, *args):
         """
         Args:
         	shape(TopoDS_Shape)
@@ -3952,7 +3952,7 @@ class XSControl_Utils(object):
         """
         return _XSControl.XSControl_Utils_ReadShape(self, *args)
 
-    def IsNullShape(self, *args) -> "Standard_Boolean" :
+    def IsNullShape(self, *args):
         """
         Args:
         	shape(TopoDS_Shape)
@@ -3964,7 +3964,7 @@ class XSControl_Utils(object):
         """
         return _XSControl.XSControl_Utils_IsNullShape(self, *args)
 
-    def CompoundFromSeq(self, *args) -> "TopoDS_Shape" :
+    def CompoundFromSeq(self, *args):
         """
         Args:
         	seqval(Handle_TopTools_HSequenceOfShape)
@@ -3976,7 +3976,7 @@ class XSControl_Utils(object):
         """
         return _XSControl.XSControl_Utils_CompoundFromSeq(self, *args)
 
-    def ShapeType(self, *args) -> "TopAbs_ShapeEnum" :
+    def ShapeType(self, *args):
         """
         Args:
         	shape(TopoDS_Shape)
@@ -3993,7 +3993,7 @@ class XSControl_Utils(object):
         """
         return _XSControl.XSControl_Utils_ShapeType(self, *args)
 
-    def SortedCompound(self, *args) -> "TopoDS_Shape" :
+    def SortedCompound(self, *args):
         """
         Args:
         	shape(TopoDS_Shape)
@@ -4016,7 +4016,7 @@ class XSControl_Utils(object):
         """
         return _XSControl.XSControl_Utils_SortedCompound(self, *args)
 
-    def ShapeValue(self, *args) -> "TopoDS_Shape" :
+    def ShapeValue(self, *args):
         """
         Args:
         	seqv(Handle_TopTools_HSequenceOfShape)
@@ -4029,7 +4029,7 @@ class XSControl_Utils(object):
         """
         return _XSControl.XSControl_Utils_ShapeValue(self, *args)
 
-    def NewSeqShape(self) -> "Handle_TopTools_HSequenceOfShape" :
+    def NewSeqShape(self):
         """
         Args:
         	None
@@ -4040,7 +4040,7 @@ class XSControl_Utils(object):
         """
         return _XSControl.XSControl_Utils_NewSeqShape(self)
 
-    def AppendShape(self, *args) -> "void" :
+    def AppendShape(self, *args):
         """
         Args:
         	seqv(Handle_TopTools_HSequenceOfShape)
@@ -4053,7 +4053,7 @@ class XSControl_Utils(object):
         """
         return _XSControl.XSControl_Utils_AppendShape(self, *args)
 
-    def ShapeBinder(self, *args) -> "Handle_Standard_Transient" :
+    def ShapeBinder(self, *args):
         """
         Args:
         	shape(TopoDS_Shape)
@@ -4080,7 +4080,7 @@ class XSControl_Utils(object):
         """
         return _XSControl.XSControl_Utils_ShapeBinder(self, *args)
 
-    def BinderShape(self, *args) -> "TopoDS_Shape" :
+    def BinderShape(self, *args):
         """
         Args:
         	tr(Handle_Standard_Transient)
@@ -4093,7 +4093,7 @@ class XSControl_Utils(object):
         """
         return _XSControl.XSControl_Utils_BinderShape(self, *args)
 
-    def SeqLength(self, *args) -> "Standard_Integer" :
+    def SeqLength(self, *args):
         """
         Args:
         	list(Handle_Standard_Transient)
@@ -4105,7 +4105,7 @@ class XSControl_Utils(object):
         """
         return _XSControl.XSControl_Utils_SeqLength(self, *args)
 
-    def SeqToArr(self, *args) -> "Handle_Standard_Transient" :
+    def SeqToArr(self, *args):
         """
         Args:
         	seq(Handle_Standard_Transient)
@@ -4126,7 +4126,7 @@ class XSControl_Utils(object):
         """
         return _XSControl.XSControl_Utils_SeqToArr(self, *args)
 
-    def ArrToSeq(self, *args) -> "Handle_Standard_Transient" :
+    def ArrToSeq(self, *args):
         """
         Args:
         	arr(Handle_Standard_Transient)
@@ -4138,7 +4138,7 @@ class XSControl_Utils(object):
         """
         return _XSControl.XSControl_Utils_ArrToSeq(self, *args)
 
-    def SeqIntValue(self, *args) -> "Standard_Integer" :
+    def SeqIntValue(self, *args):
         """
         Args:
         	list(Handle_TColStd_HSequenceOfInteger)
@@ -4215,7 +4215,7 @@ class XSControl_WorkSession(OCC.IFSelect.IFSelect_WorkSession):
         No detailed docstring for this function.
         """
         _XSControl.XSControl_WorkSession_swiginit(self,_XSControl.new_XSControl_WorkSession())
-    def SelectNorm(self, *args) -> "Standard_Boolean" :
+    def SelectNorm(self, *args):
         """
         Args:
         	normname(char *)
@@ -4250,7 +4250,7 @@ class XSControl_WorkSession(OCC.IFSelect.IFSelect_WorkSession):
         """
         return _XSControl.XSControl_WorkSession_SelectNorm(self, *args)
 
-    def SelectProfile(self, *args) -> "Standard_Boolean" :
+    def SelectProfile(self, *args):
         """
         Args:
         	profile(char *)
@@ -4265,7 +4265,7 @@ class XSControl_WorkSession(OCC.IFSelect.IFSelect_WorkSession):
         """
         return _XSControl.XSControl_WorkSession_SelectProfile(self, *args)
 
-    def SetController(self, *args) -> "void" :
+    def SetController(self, *args):
         """
         Args:
         	ctl(Handle_XSControl_Controller)
@@ -4277,7 +4277,7 @@ class XSControl_WorkSession(OCC.IFSelect.IFSelect_WorkSession):
         """
         return _XSControl.XSControl_WorkSession_SetController(self, *args)
 
-    def AdaptNorm(self) -> "void" :
+    def AdaptNorm(self):
         """
         Args:
         	None
@@ -4289,7 +4289,7 @@ class XSControl_WorkSession(OCC.IFSelect.IFSelect_WorkSession):
         """
         return _XSControl.XSControl_WorkSession_AdaptNorm(self)
 
-    def SelectedNorm(self, *args) -> "char *" :
+    def SelectedNorm(self, *args):
         """
         Args:
         	rsc(Standard_Boolean)=Standard_False
@@ -4314,7 +4314,7 @@ class XSControl_WorkSession(OCC.IFSelect.IFSelect_WorkSession):
         """
         return _XSControl.XSControl_WorkSession_SelectedNorm(self, *args)
 
-    def NormAdaptor(self) -> "Handle_XSControl_Controller" :
+    def NormAdaptor(self):
         """
         Args:
         	None
@@ -4325,7 +4325,7 @@ class XSControl_WorkSession(OCC.IFSelect.IFSelect_WorkSession):
         """
         return _XSControl.XSControl_WorkSession_NormAdaptor(self)
 
-    def Context(self) -> "Handle_Dico_DictionaryOfTransient" :
+    def Context(self):
         """
         Args:
         	None
@@ -4337,7 +4337,7 @@ class XSControl_WorkSession(OCC.IFSelect.IFSelect_WorkSession):
         """
         return _XSControl.XSControl_WorkSession_Context(self)
 
-    def SetAllContext(self, *args) -> "void" :
+    def SetAllContext(self, *args):
         """
         Args:
         	context(Handle_Dico_DictionaryOfTransient)
@@ -4350,7 +4350,7 @@ class XSControl_WorkSession(OCC.IFSelect.IFSelect_WorkSession):
         """
         return _XSControl.XSControl_WorkSession_SetAllContext(self, *args)
 
-    def ClearContext(self) -> "void" :
+    def ClearContext(self):
         """
         Args:
         	None
@@ -4361,7 +4361,7 @@ class XSControl_WorkSession(OCC.IFSelect.IFSelect_WorkSession):
         """
         return _XSControl.XSControl_WorkSession_ClearContext(self)
 
-    def PrintTransferStatus(self, *args) -> "Standard_Boolean" :
+    def PrintTransferStatus(self, *args):
         """
         Args:
         	num(Standard_Integer)
@@ -4378,7 +4378,7 @@ class XSControl_WorkSession(OCC.IFSelect.IFSelect_WorkSession):
         """
         return _XSControl.XSControl_WorkSession_PrintTransferStatus(self, *args)
 
-    def InitTransferReader(self, *args) -> "void" :
+    def InitTransferReader(self, *args):
         """
         Args:
         	mode(Standard_Integer)
@@ -4395,7 +4395,7 @@ class XSControl_WorkSession(OCC.IFSelect.IFSelect_WorkSession):
         """
         return _XSControl.XSControl_WorkSession_InitTransferReader(self, *args)
 
-    def SetTransferReader(self, *args) -> "void" :
+    def SetTransferReader(self, *args):
         """
         Args:
         	TR(Handle_XSControl_TransferReader)
@@ -4407,7 +4407,7 @@ class XSControl_WorkSession(OCC.IFSelect.IFSelect_WorkSession):
         """
         return _XSControl.XSControl_WorkSession_SetTransferReader(self, *args)
 
-    def TransferReader(self) -> "Handle_XSControl_TransferReader" :
+    def TransferReader(self):
         """
         Args:
         	None
@@ -4418,7 +4418,7 @@ class XSControl_WorkSession(OCC.IFSelect.IFSelect_WorkSession):
         """
         return _XSControl.XSControl_WorkSession_TransferReader(self)
 
-    def MapReader(self) -> "Handle_Transfer_TransientProcess" :
+    def MapReader(self):
         """
         Args:
         	None
@@ -4429,7 +4429,7 @@ class XSControl_WorkSession(OCC.IFSelect.IFSelect_WorkSession):
         """
         return _XSControl.XSControl_WorkSession_MapReader(self)
 
-    def SetMapReader(self, *args) -> "Standard_Boolean" :
+    def SetMapReader(self, *args):
         """
         Args:
         	TP(Handle_Transfer_TransientProcess)
@@ -4444,7 +4444,7 @@ class XSControl_WorkSession(OCC.IFSelect.IFSelect_WorkSession):
         """
         return _XSControl.XSControl_WorkSession_SetMapReader(self, *args)
 
-    def Result(self, *args) -> "Handle_Standard_Transient" :
+    def Result(self, *args):
         """
         Args:
         	ent(Handle_Standard_Transient)
@@ -4465,7 +4465,7 @@ class XSControl_WorkSession(OCC.IFSelect.IFSelect_WorkSession):
         """
         return _XSControl.XSControl_WorkSession_Result(self, *args)
 
-    def TransferReadOne(self, *args) -> "Standard_Integer" :
+    def TransferReadOne(self, *args):
         """
         Args:
         	ents(Handle_Standard_Transient)
@@ -4484,7 +4484,7 @@ class XSControl_WorkSession(OCC.IFSelect.IFSelect_WorkSession):
         """
         return _XSControl.XSControl_WorkSession_TransferReadOne(self, *args)
 
-    def TransferReadRoots(self) -> "Standard_Integer" :
+    def TransferReadRoots(self):
         """
         Args:
         	None
@@ -4497,7 +4497,7 @@ class XSControl_WorkSession(OCC.IFSelect.IFSelect_WorkSession):
         """
         return _XSControl.XSControl_WorkSession_TransferReadRoots(self)
 
-    def NewModel(self) -> "Handle_Interface_InterfaceModel" :
+    def NewModel(self):
         """
         Args:
         	None
@@ -4510,7 +4510,7 @@ class XSControl_WorkSession(OCC.IFSelect.IFSelect_WorkSession):
         """
         return _XSControl.XSControl_WorkSession_NewModel(self)
 
-    def TransferWriter(self) -> "Handle_XSControl_TransferWriter" :
+    def TransferWriter(self):
         """
         Args:
         	None
@@ -4521,7 +4521,7 @@ class XSControl_WorkSession(OCC.IFSelect.IFSelect_WorkSession):
         """
         return _XSControl.XSControl_WorkSession_TransferWriter(self)
 
-    def MapWriter(self) -> "Handle_Transfer_FinderProcess" :
+    def MapWriter(self):
         """
         Args:
         	None
@@ -4532,7 +4532,7 @@ class XSControl_WorkSession(OCC.IFSelect.IFSelect_WorkSession):
         """
         return _XSControl.XSControl_WorkSession_MapWriter(self)
 
-    def SetMapWriter(self, *args) -> "Standard_Boolean" :
+    def SetMapWriter(self, *args):
         """
         Args:
         	FP(Handle_Transfer_FinderProcess)
@@ -4546,7 +4546,7 @@ class XSControl_WorkSession(OCC.IFSelect.IFSelect_WorkSession):
         """
         return _XSControl.XSControl_WorkSession_SetMapWriter(self, *args)
 
-    def SetModeWriteShape(self, *args) -> "void" :
+    def SetModeWriteShape(self, *args):
         """
         Args:
         	mode(Standard_Integer)
@@ -4560,7 +4560,7 @@ class XSControl_WorkSession(OCC.IFSelect.IFSelect_WorkSession):
         """
         return _XSControl.XSControl_WorkSession_SetModeWriteShape(self, *args)
 
-    def ModeWriteShape(self) -> "Standard_Integer" :
+    def ModeWriteShape(self):
         """
         Args:
         	None
@@ -4571,7 +4571,7 @@ class XSControl_WorkSession(OCC.IFSelect.IFSelect_WorkSession):
         """
         return _XSControl.XSControl_WorkSession_ModeWriteShape(self)
 
-    def TransferWriteShape(self, *args) -> "IFSelect_ReturnStatus" :
+    def TransferWriteShape(self, *args):
         """
         Args:
         	shape(TopoDS_Shape)
@@ -4598,7 +4598,7 @@ class XSControl_WorkSession(OCC.IFSelect.IFSelect_WorkSession):
         """
         return _XSControl.XSControl_WorkSession_TransferWriteShape(self, *args)
 
-    def TransferWriteCheckList(self) -> "Interface_CheckIterator" :
+    def TransferWriteCheckList(self):
         """
         Args:
         	None
@@ -4612,7 +4612,7 @@ class XSControl_WorkSession(OCC.IFSelect.IFSelect_WorkSession):
         """
         return _XSControl.XSControl_WorkSession_TransferWriteCheckList(self)
 
-    def Vars(self) -> "Handle_XSControl_Vars" :
+    def Vars(self):
         """
         Args:
         	None
@@ -4623,7 +4623,7 @@ class XSControl_WorkSession(OCC.IFSelect.IFSelect_WorkSession):
         """
         return _XSControl.XSControl_WorkSession_Vars(self)
 
-    def SetVars(self, *args) -> "void" :
+    def SetVars(self, *args):
         """
         Args:
         	newvars(Handle_XSControl_Vars)
@@ -4635,7 +4635,7 @@ class XSControl_WorkSession(OCC.IFSelect.IFSelect_WorkSession):
         """
         return _XSControl.XSControl_WorkSession_SetVars(self, *args)
 
-    def ClearBinders(self) -> "void" :
+    def ClearBinders(self):
         """
         Args:
         	None
@@ -4646,7 +4646,7 @@ class XSControl_WorkSession(OCC.IFSelect.IFSelect_WorkSession):
         """
         return _XSControl.XSControl_WorkSession_ClearBinders(self)
 
-    def Destroy(self) -> "void" :
+    def Destroy(self):
         """
         Args:
         	None
@@ -4657,11 +4657,11 @@ class XSControl_WorkSession(OCC.IFSelect.IFSelect_WorkSession):
         """
         return _XSControl.XSControl_WorkSession_Destroy(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(XSControl_WorkSession self)"""
         return _XSControl.XSControl_WorkSession__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_XSControl_WorkSession" :
+    def GetHandle(self):
         """GetHandle(XSControl_WorkSession self) -> Handle_XSControl_WorkSession"""
         return _XSControl.XSControl_WorkSession_GetHandle(self)
 
@@ -4729,7 +4729,7 @@ Handle_XSControl_WorkSession._kill_pointed = new_instancemethod(_XSControl.Handl
 Handle_XSControl_WorkSession_swigregister = _XSControl.Handle_XSControl_WorkSession_swigregister
 Handle_XSControl_WorkSession_swigregister(Handle_XSControl_WorkSession)
 
-def Handle_XSControl_WorkSession_DownCast(*args) -> "Handle_XSControl_WorkSession const" :
+def Handle_XSControl_WorkSession_DownCast(*args):
   return _XSControl.Handle_XSControl_WorkSession_DownCast(*args)
 Handle_XSControl_WorkSession_DownCast = _XSControl.Handle_XSControl_WorkSession_DownCast
 
@@ -4772,7 +4772,7 @@ class XSControl_Writer(object):
                   If <scratch> is True (D), clears already recorded data
         """
         _XSControl.XSControl_Writer_swiginit(self,_XSControl.new_XSControl_Writer(*args))
-    def SetNorm(self, *args) -> "Standard_Boolean" :
+    def SetNorm(self, *args):
         """
         Args:
         	norm(char *)
@@ -4785,7 +4785,7 @@ class XSControl_Writer(object):
         """
         return _XSControl.XSControl_Writer_SetNorm(self, *args)
 
-    def SetWS(self, *args) -> "void" :
+    def SetWS(self, *args):
         """
         Args:
         	WS(Handle_XSControl_WorkSession)
@@ -4806,7 +4806,7 @@ class XSControl_Writer(object):
         """
         return _XSControl.XSControl_Writer_SetWS(self, *args)
 
-    def WS(self) -> "Handle_XSControl_WorkSession" :
+    def WS(self):
         """
         Args:
         	None
@@ -4817,7 +4817,7 @@ class XSControl_Writer(object):
         """
         return _XSControl.XSControl_Writer_WS(self)
 
-    def Model(self, *args) -> "Handle_Interface_InterfaceModel" :
+    def Model(self, *args):
         """
         Args:
         	newone(Standard_Boolean)=Standard_False
@@ -4842,7 +4842,7 @@ class XSControl_Writer(object):
         """
         return _XSControl.XSControl_Writer_Model(self, *args)
 
-    def TransferShape(self, *args) -> "IFSelect_ReturnStatus" :
+    def TransferShape(self, *args):
         """
         Args:
         	sh(TopoDS_Shape)
@@ -4863,7 +4863,7 @@ class XSControl_Writer(object):
         """
         return _XSControl.XSControl_Writer_TransferShape(self, *args)
 
-    def WriteFile(self, *args) -> "IFSelect_ReturnStatus" :
+    def WriteFile(self, *args):
         """
         Args:
         	filename(char *)
@@ -4875,7 +4875,7 @@ class XSControl_Writer(object):
         """
         return _XSControl.XSControl_Writer_WriteFile(self, *args)
 
-    def PrintStatsTransfer(self, *args) -> "void" :
+    def PrintStatsTransfer(self, *args):
         """
         Args:
         	what(Standard_Integer)

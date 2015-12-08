@@ -119,22 +119,22 @@ class Bnd_Array1OfBox(object):
     def __init__(self, *args): 
         """
         :param Low:
-        :type Low: int
+        :type Low: Standard_Integer
         :param Up:
-        :type Up: int
+        :type Up: Standard_Integer
         :rtype: None
 
         :param Item:
         :type Item: Bnd_Box &
         :param Low:
-        :type Low: int
+        :type Low: Standard_Integer
         :param Up:
-        :type Up: int
+        :type Up: Standard_Integer
         :rtype: None
 
         """
         _Bnd.Bnd_Array1OfBox_swiginit(self,_Bnd.new_Bnd_Array1OfBox(*args))
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
         :param V:
         :type V: Bnd_Box &
@@ -143,21 +143,21 @@ class Bnd_Array1OfBox(object):
         """
         return _Bnd.Bnd_Array1OfBox_Init(self, *args)
 
-    def Destroy(self, *args) -> "void" :
+    def Destroy(self):
         """
         :rtype: None
 
         """
-        return _Bnd.Bnd_Array1OfBox_Destroy(self, *args)
+        return _Bnd.Bnd_Array1OfBox_Destroy(self)
 
-    def IsAllocated(self, *args) -> "Standard_Boolean" :
+    def IsAllocated(self):
         """
         :rtype: bool
 
         """
-        return _Bnd.Bnd_Array1OfBox_IsAllocated(self, *args)
+        return _Bnd.Bnd_Array1OfBox_IsAllocated(self)
 
-    def Assign(self, *args) -> "Bnd_Array1OfBox const &" :
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: Bnd_Array1OfBox &
@@ -166,7 +166,7 @@ class Bnd_Array1OfBox(object):
         """
         return _Bnd.Bnd_Array1OfBox_Assign(self, *args)
 
-    def Set(self, *args) -> "Bnd_Array1OfBox const &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: Bnd_Array1OfBox &
@@ -175,31 +175,31 @@ class Bnd_Array1OfBox(object):
         """
         return _Bnd.Bnd_Array1OfBox_Set(self, *args)
 
-    def Length(self, *args) -> "Standard_Integer" :
+    def Length(self):
         """
         :rtype: int
 
         """
-        return _Bnd.Bnd_Array1OfBox_Length(self, *args)
+        return _Bnd.Bnd_Array1OfBox_Length(self)
 
-    def Lower(self, *args) -> "Standard_Integer" :
+    def Lower(self):
         """
         :rtype: int
 
         """
-        return _Bnd.Bnd_Array1OfBox_Lower(self, *args)
+        return _Bnd.Bnd_Array1OfBox_Lower(self)
 
-    def Upper(self, *args) -> "Standard_Integer" :
+    def Upper(self):
         """
         :rtype: int
 
         """
-        return _Bnd.Bnd_Array1OfBox_Upper(self, *args)
+        return _Bnd.Bnd_Array1OfBox_Upper(self)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Value:
         :type Value: Bnd_Box &
         :rtype: None
@@ -207,19 +207,19 @@ class Bnd_Array1OfBox(object):
         """
         return _Bnd.Bnd_Array1OfBox_SetValue(self, *args)
 
-    def Value(self, *args) -> "Bnd_Box const &" :
+    def Value(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Bnd_Box
 
         """
         return _Bnd.Bnd_Array1OfBox_Value(self, *args)
 
-    def ChangeValue(self, *args) -> "Bnd_Box &" :
+    def ChangeValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Bnd_Box
 
         """
@@ -254,22 +254,22 @@ class Bnd_Array1OfBox2d(object):
     def __init__(self, *args): 
         """
         :param Low:
-        :type Low: int
+        :type Low: Standard_Integer
         :param Up:
-        :type Up: int
+        :type Up: Standard_Integer
         :rtype: None
 
         :param Item:
         :type Item: Bnd_Box2d &
         :param Low:
-        :type Low: int
+        :type Low: Standard_Integer
         :param Up:
-        :type Up: int
+        :type Up: Standard_Integer
         :rtype: None
 
         """
         _Bnd.Bnd_Array1OfBox2d_swiginit(self,_Bnd.new_Bnd_Array1OfBox2d(*args))
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
         :param V:
         :type V: Bnd_Box2d &
@@ -278,21 +278,21 @@ class Bnd_Array1OfBox2d(object):
         """
         return _Bnd.Bnd_Array1OfBox2d_Init(self, *args)
 
-    def Destroy(self, *args) -> "void" :
+    def Destroy(self):
         """
         :rtype: None
 
         """
-        return _Bnd.Bnd_Array1OfBox2d_Destroy(self, *args)
+        return _Bnd.Bnd_Array1OfBox2d_Destroy(self)
 
-    def IsAllocated(self, *args) -> "Standard_Boolean" :
+    def IsAllocated(self):
         """
         :rtype: bool
 
         """
-        return _Bnd.Bnd_Array1OfBox2d_IsAllocated(self, *args)
+        return _Bnd.Bnd_Array1OfBox2d_IsAllocated(self)
 
-    def Assign(self, *args) -> "Bnd_Array1OfBox2d const &" :
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: Bnd_Array1OfBox2d &
@@ -301,7 +301,7 @@ class Bnd_Array1OfBox2d(object):
         """
         return _Bnd.Bnd_Array1OfBox2d_Assign(self, *args)
 
-    def Set(self, *args) -> "Bnd_Array1OfBox2d const &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: Bnd_Array1OfBox2d &
@@ -310,31 +310,31 @@ class Bnd_Array1OfBox2d(object):
         """
         return _Bnd.Bnd_Array1OfBox2d_Set(self, *args)
 
-    def Length(self, *args) -> "Standard_Integer" :
+    def Length(self):
         """
         :rtype: int
 
         """
-        return _Bnd.Bnd_Array1OfBox2d_Length(self, *args)
+        return _Bnd.Bnd_Array1OfBox2d_Length(self)
 
-    def Lower(self, *args) -> "Standard_Integer" :
+    def Lower(self):
         """
         :rtype: int
 
         """
-        return _Bnd.Bnd_Array1OfBox2d_Lower(self, *args)
+        return _Bnd.Bnd_Array1OfBox2d_Lower(self)
 
-    def Upper(self, *args) -> "Standard_Integer" :
+    def Upper(self):
         """
         :rtype: int
 
         """
-        return _Bnd.Bnd_Array1OfBox2d_Upper(self, *args)
+        return _Bnd.Bnd_Array1OfBox2d_Upper(self)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Value:
         :type Value: Bnd_Box2d &
         :rtype: None
@@ -342,19 +342,19 @@ class Bnd_Array1OfBox2d(object):
         """
         return _Bnd.Bnd_Array1OfBox2d_SetValue(self, *args)
 
-    def Value(self, *args) -> "Bnd_Box2d const &" :
+    def Value(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Bnd_Box2d
 
         """
         return _Bnd.Bnd_Array1OfBox2d_Value(self, *args)
 
-    def ChangeValue(self, *args) -> "Bnd_Box2d &" :
+    def ChangeValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Bnd_Box2d
 
         """
@@ -389,22 +389,22 @@ class Bnd_Array1OfSphere(object):
     def __init__(self, *args): 
         """
         :param Low:
-        :type Low: int
+        :type Low: Standard_Integer
         :param Up:
-        :type Up: int
+        :type Up: Standard_Integer
         :rtype: None
 
         :param Item:
         :type Item: Bnd_Sphere &
         :param Low:
-        :type Low: int
+        :type Low: Standard_Integer
         :param Up:
-        :type Up: int
+        :type Up: Standard_Integer
         :rtype: None
 
         """
         _Bnd.Bnd_Array1OfSphere_swiginit(self,_Bnd.new_Bnd_Array1OfSphere(*args))
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
         :param V:
         :type V: Bnd_Sphere &
@@ -413,21 +413,21 @@ class Bnd_Array1OfSphere(object):
         """
         return _Bnd.Bnd_Array1OfSphere_Init(self, *args)
 
-    def Destroy(self, *args) -> "void" :
+    def Destroy(self):
         """
         :rtype: None
 
         """
-        return _Bnd.Bnd_Array1OfSphere_Destroy(self, *args)
+        return _Bnd.Bnd_Array1OfSphere_Destroy(self)
 
-    def IsAllocated(self, *args) -> "Standard_Boolean" :
+    def IsAllocated(self):
         """
         :rtype: bool
 
         """
-        return _Bnd.Bnd_Array1OfSphere_IsAllocated(self, *args)
+        return _Bnd.Bnd_Array1OfSphere_IsAllocated(self)
 
-    def Assign(self, *args) -> "Bnd_Array1OfSphere const &" :
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: Bnd_Array1OfSphere &
@@ -436,7 +436,7 @@ class Bnd_Array1OfSphere(object):
         """
         return _Bnd.Bnd_Array1OfSphere_Assign(self, *args)
 
-    def Set(self, *args) -> "Bnd_Array1OfSphere const &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: Bnd_Array1OfSphere &
@@ -445,31 +445,31 @@ class Bnd_Array1OfSphere(object):
         """
         return _Bnd.Bnd_Array1OfSphere_Set(self, *args)
 
-    def Length(self, *args) -> "Standard_Integer" :
+    def Length(self):
         """
         :rtype: int
 
         """
-        return _Bnd.Bnd_Array1OfSphere_Length(self, *args)
+        return _Bnd.Bnd_Array1OfSphere_Length(self)
 
-    def Lower(self, *args) -> "Standard_Integer" :
+    def Lower(self):
         """
         :rtype: int
 
         """
-        return _Bnd.Bnd_Array1OfSphere_Lower(self, *args)
+        return _Bnd.Bnd_Array1OfSphere_Lower(self)
 
-    def Upper(self, *args) -> "Standard_Integer" :
+    def Upper(self):
         """
         :rtype: int
 
         """
-        return _Bnd.Bnd_Array1OfSphere_Upper(self, *args)
+        return _Bnd.Bnd_Array1OfSphere_Upper(self)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Value:
         :type Value: Bnd_Sphere &
         :rtype: None
@@ -477,19 +477,19 @@ class Bnd_Array1OfSphere(object):
         """
         return _Bnd.Bnd_Array1OfSphere_SetValue(self, *args)
 
-    def Value(self, *args) -> "Bnd_Sphere const &" :
+    def Value(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Bnd_Sphere
 
         """
         return _Bnd.Bnd_Array1OfSphere_Value(self, *args)
 
-    def ChangeValue(self, *args) -> "Bnd_Sphere &" :
+    def ChangeValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Bnd_Sphere
 
         """
@@ -533,21 +533,21 @@ class Bnd_B2d(object):
 
         """
         _Bnd.Bnd_B2d_swiginit(self,_Bnd.new_Bnd_B2d(*args))
-    def IsVoid(self, *args) -> "Standard_Boolean" :
+    def IsVoid(self):
         """
         :rtype: bool
 
         """
-        return _Bnd.Bnd_B2d_IsVoid(self, *args)
+        return _Bnd.Bnd_B2d_IsVoid(self)
 
-    def Clear(self, *args) -> "void" :
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _Bnd.Bnd_B2d_Clear(self, *args)
+        return _Bnd.Bnd_B2d_Clear(self)
 
-    def Add(self, *args) -> "void" :
+    def Add(self, *args):
         """
         :param thePnt:
         :type thePnt: gp_XY
@@ -564,28 +564,28 @@ class Bnd_B2d(object):
         """
         return _Bnd.Bnd_B2d_Add(self, *args)
 
-    def CornerMin(self, *args) -> "gp_XY" :
+    def CornerMin(self):
         """
         :rtype: gp_XY
 
         """
-        return _Bnd.Bnd_B2d_CornerMin(self, *args)
+        return _Bnd.Bnd_B2d_CornerMin(self)
 
-    def CornerMax(self, *args) -> "gp_XY" :
+    def CornerMax(self):
         """
         :rtype: gp_XY
 
         """
-        return _Bnd.Bnd_B2d_CornerMax(self, *args)
+        return _Bnd.Bnd_B2d_CornerMax(self)
 
-    def SquareExtent(self, *args) -> "Standard_Real" :
+    def SquareExtent(self):
         """
         :rtype: float
 
         """
-        return _Bnd.Bnd_B2d_SquareExtent(self, *args)
+        return _Bnd.Bnd_B2d_SquareExtent(self)
 
-    def Enlarge(self, *args) -> "void" :
+    def Enlarge(self, *args):
         """
         :param theDiff:
         :type theDiff: float
@@ -594,7 +594,7 @@ class Bnd_B2d(object):
         """
         return _Bnd.Bnd_B2d_Enlarge(self, *args)
 
-    def Limit(self, *args) -> "Standard_Boolean" :
+    def Limit(self, *args):
         """
         :param theOtherBox:
         :type theOtherBox: Bnd_B2d &
@@ -603,7 +603,7 @@ class Bnd_B2d(object):
         """
         return _Bnd.Bnd_B2d_Limit(self, *args)
 
-    def Transformed(self, *args) -> "Bnd_B2d" :
+    def Transformed(self, *args):
         """
         :param theTrsf:
         :type theTrsf: gp_Trsf2d
@@ -612,10 +612,18 @@ class Bnd_B2d(object):
         """
         return _Bnd.Bnd_B2d_Transformed(self, *args)
 
-    def IsOut(self, *args) -> "Standard_Boolean" :
+    def IsOut(self, *args):
         """
         :param thePnt:
         :type thePnt: gp_XY
+        :rtype: bool
+
+        :param theCenter:
+        :type theCenter: gp_XY
+        :param theRadius:
+        :type theRadius: float
+        :param isCircleHollow: default value is Standard_False
+        :type isCircleHollow: bool
         :rtype: bool
 
         :param theCenter:
@@ -649,7 +657,7 @@ class Bnd_B2d(object):
         """
         return _Bnd.Bnd_B2d_IsOut(self, *args)
 
-    def IsIn(self, *args) -> "Standard_Boolean" :
+    def IsIn(self, *args):
         """
         :param theBox:
         :type theBox: Bnd_B2d &
@@ -664,7 +672,7 @@ class Bnd_B2d(object):
         """
         return _Bnd.Bnd_B2d_IsIn(self, *args)
 
-    def SetCenter(self, *args) -> "void" :
+    def SetCenter(self, *args):
         """
         :param theCenter:
         :type theCenter: gp_XY
@@ -673,7 +681,7 @@ class Bnd_B2d(object):
         """
         return _Bnd.Bnd_B2d_SetCenter(self, *args)
 
-    def SetHSize(self, *args) -> "void" :
+    def SetHSize(self, *args):
         """
         :param theHSize:
         :type theHSize: gp_XY
@@ -722,21 +730,21 @@ class Bnd_B2f(object):
 
         """
         _Bnd.Bnd_B2f_swiginit(self,_Bnd.new_Bnd_B2f(*args))
-    def IsVoid(self, *args) -> "Standard_Boolean" :
+    def IsVoid(self):
         """
         :rtype: bool
 
         """
-        return _Bnd.Bnd_B2f_IsVoid(self, *args)
+        return _Bnd.Bnd_B2f_IsVoid(self)
 
-    def Clear(self, *args) -> "void" :
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _Bnd.Bnd_B2f_Clear(self, *args)
+        return _Bnd.Bnd_B2f_Clear(self)
 
-    def Add(self, *args) -> "void" :
+    def Add(self, *args):
         """
         :param thePnt:
         :type thePnt: gp_XY
@@ -753,28 +761,28 @@ class Bnd_B2f(object):
         """
         return _Bnd.Bnd_B2f_Add(self, *args)
 
-    def CornerMin(self, *args) -> "gp_XY" :
+    def CornerMin(self):
         """
         :rtype: gp_XY
 
         """
-        return _Bnd.Bnd_B2f_CornerMin(self, *args)
+        return _Bnd.Bnd_B2f_CornerMin(self)
 
-    def CornerMax(self, *args) -> "gp_XY" :
+    def CornerMax(self):
         """
         :rtype: gp_XY
 
         """
-        return _Bnd.Bnd_B2f_CornerMax(self, *args)
+        return _Bnd.Bnd_B2f_CornerMax(self)
 
-    def SquareExtent(self, *args) -> "Standard_Real" :
+    def SquareExtent(self):
         """
         :rtype: float
 
         """
-        return _Bnd.Bnd_B2f_SquareExtent(self, *args)
+        return _Bnd.Bnd_B2f_SquareExtent(self)
 
-    def Enlarge(self, *args) -> "void" :
+    def Enlarge(self, *args):
         """
         :param theDiff:
         :type theDiff: float
@@ -783,7 +791,7 @@ class Bnd_B2f(object):
         """
         return _Bnd.Bnd_B2f_Enlarge(self, *args)
 
-    def Limit(self, *args) -> "Standard_Boolean" :
+    def Limit(self, *args):
         """
         :param theOtherBox:
         :type theOtherBox: Bnd_B2f &
@@ -792,7 +800,7 @@ class Bnd_B2f(object):
         """
         return _Bnd.Bnd_B2f_Limit(self, *args)
 
-    def Transformed(self, *args) -> "Bnd_B2f" :
+    def Transformed(self, *args):
         """
         :param theTrsf:
         :type theTrsf: gp_Trsf2d
@@ -801,10 +809,18 @@ class Bnd_B2f(object):
         """
         return _Bnd.Bnd_B2f_Transformed(self, *args)
 
-    def IsOut(self, *args) -> "Standard_Boolean" :
+    def IsOut(self, *args):
         """
         :param thePnt:
         :type thePnt: gp_XY
+        :rtype: bool
+
+        :param theCenter:
+        :type theCenter: gp_XY
+        :param theRadius:
+        :type theRadius: float
+        :param isCircleHollow: default value is Standard_False
+        :type isCircleHollow: bool
         :rtype: bool
 
         :param theCenter:
@@ -838,7 +854,7 @@ class Bnd_B2f(object):
         """
         return _Bnd.Bnd_B2f_IsOut(self, *args)
 
-    def IsIn(self, *args) -> "Standard_Boolean" :
+    def IsIn(self, *args):
         """
         :param theBox:
         :type theBox: Bnd_B2f &
@@ -853,7 +869,7 @@ class Bnd_B2f(object):
         """
         return _Bnd.Bnd_B2f_IsIn(self, *args)
 
-    def SetCenter(self, *args) -> "void" :
+    def SetCenter(self, *args):
         """
         :param theCenter:
         :type theCenter: gp_XY
@@ -862,7 +878,7 @@ class Bnd_B2f(object):
         """
         return _Bnd.Bnd_B2f_SetCenter(self, *args)
 
-    def SetHSize(self, *args) -> "void" :
+    def SetHSize(self, *args):
         """
         :param theHSize:
         :type theHSize: gp_XY
@@ -911,21 +927,21 @@ class Bnd_B3d(object):
 
         """
         _Bnd.Bnd_B3d_swiginit(self,_Bnd.new_Bnd_B3d(*args))
-    def IsVoid(self, *args) -> "Standard_Boolean" :
+    def IsVoid(self):
         """
         :rtype: bool
 
         """
-        return _Bnd.Bnd_B3d_IsVoid(self, *args)
+        return _Bnd.Bnd_B3d_IsVoid(self)
 
-    def Clear(self, *args) -> "void" :
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _Bnd.Bnd_B3d_Clear(self, *args)
+        return _Bnd.Bnd_B3d_Clear(self)
 
-    def Add(self, *args) -> "void" :
+    def Add(self, *args):
         """
         :param thePnt:
         :type thePnt: gp_XYZ
@@ -942,28 +958,28 @@ class Bnd_B3d(object):
         """
         return _Bnd.Bnd_B3d_Add(self, *args)
 
-    def CornerMin(self, *args) -> "gp_XYZ" :
+    def CornerMin(self):
         """
         :rtype: gp_XYZ
 
         """
-        return _Bnd.Bnd_B3d_CornerMin(self, *args)
+        return _Bnd.Bnd_B3d_CornerMin(self)
 
-    def CornerMax(self, *args) -> "gp_XYZ" :
+    def CornerMax(self):
         """
         :rtype: gp_XYZ
 
         """
-        return _Bnd.Bnd_B3d_CornerMax(self, *args)
+        return _Bnd.Bnd_B3d_CornerMax(self)
 
-    def SquareExtent(self, *args) -> "Standard_Real" :
+    def SquareExtent(self):
         """
         :rtype: float
 
         """
-        return _Bnd.Bnd_B3d_SquareExtent(self, *args)
+        return _Bnd.Bnd_B3d_SquareExtent(self)
 
-    def Enlarge(self, *args) -> "void" :
+    def Enlarge(self, *args):
         """
         :param theDiff:
         :type theDiff: float
@@ -972,7 +988,7 @@ class Bnd_B3d(object):
         """
         return _Bnd.Bnd_B3d_Enlarge(self, *args)
 
-    def Limit(self, *args) -> "Standard_Boolean" :
+    def Limit(self, *args):
         """
         :param theOtherBox:
         :type theOtherBox: Bnd_B3d &
@@ -981,7 +997,7 @@ class Bnd_B3d(object):
         """
         return _Bnd.Bnd_B3d_Limit(self, *args)
 
-    def Transformed(self, *args) -> "Bnd_B3d" :
+    def Transformed(self, *args):
         """
         :param theTrsf:
         :type theTrsf: gp_Trsf
@@ -990,10 +1006,18 @@ class Bnd_B3d(object):
         """
         return _Bnd.Bnd_B3d_Transformed(self, *args)
 
-    def IsOut(self, *args) -> "Standard_Boolean" :
+    def IsOut(self, *args):
         """
         :param thePnt:
         :type thePnt: gp_XYZ
+        :rtype: bool
+
+        :param theCenter:
+        :type theCenter: gp_XYZ
+        :param theRadius:
+        :type theRadius: float
+        :param isSphereHollow: default value is Standard_False
+        :type isSphereHollow: bool
         :rtype: bool
 
         :param theCenter:
@@ -1022,6 +1046,22 @@ class Bnd_B3d(object):
         :type theOverthickness: float
         :rtype: bool
 
+        :param theLine:
+        :type theLine: gp_Ax1
+        :param isRay: default value is Standard_False
+        :type isRay: bool
+        :param theOverthickness: default value is 0.0
+        :type theOverthickness: float
+        :rtype: bool
+
+        :param theLine:
+        :type theLine: gp_Ax1
+        :param isRay: default value is Standard_False
+        :type isRay: bool
+        :param theOverthickness: default value is 0.0
+        :type theOverthickness: float
+        :rtype: bool
+
         :param thePlane:
         :type thePlane: gp_Ax3
         :rtype: bool
@@ -1029,7 +1069,7 @@ class Bnd_B3d(object):
         """
         return _Bnd.Bnd_B3d_IsOut(self, *args)
 
-    def IsIn(self, *args) -> "Standard_Boolean" :
+    def IsIn(self, *args):
         """
         :param theBox:
         :type theBox: Bnd_B3d &
@@ -1044,7 +1084,7 @@ class Bnd_B3d(object):
         """
         return _Bnd.Bnd_B3d_IsIn(self, *args)
 
-    def SetCenter(self, *args) -> "void" :
+    def SetCenter(self, *args):
         """
         :param theCenter:
         :type theCenter: gp_XYZ
@@ -1053,7 +1093,7 @@ class Bnd_B3d(object):
         """
         return _Bnd.Bnd_B3d_SetCenter(self, *args)
 
-    def SetHSize(self, *args) -> "void" :
+    def SetHSize(self, *args):
         """
         :param theHSize:
         :type theHSize: gp_XYZ
@@ -1102,21 +1142,21 @@ class Bnd_B3f(object):
 
         """
         _Bnd.Bnd_B3f_swiginit(self,_Bnd.new_Bnd_B3f(*args))
-    def IsVoid(self, *args) -> "Standard_Boolean" :
+    def IsVoid(self):
         """
         :rtype: bool
 
         """
-        return _Bnd.Bnd_B3f_IsVoid(self, *args)
+        return _Bnd.Bnd_B3f_IsVoid(self)
 
-    def Clear(self, *args) -> "void" :
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _Bnd.Bnd_B3f_Clear(self, *args)
+        return _Bnd.Bnd_B3f_Clear(self)
 
-    def Add(self, *args) -> "void" :
+    def Add(self, *args):
         """
         :param thePnt:
         :type thePnt: gp_XYZ
@@ -1133,28 +1173,28 @@ class Bnd_B3f(object):
         """
         return _Bnd.Bnd_B3f_Add(self, *args)
 
-    def CornerMin(self, *args) -> "gp_XYZ" :
+    def CornerMin(self):
         """
         :rtype: gp_XYZ
 
         """
-        return _Bnd.Bnd_B3f_CornerMin(self, *args)
+        return _Bnd.Bnd_B3f_CornerMin(self)
 
-    def CornerMax(self, *args) -> "gp_XYZ" :
+    def CornerMax(self):
         """
         :rtype: gp_XYZ
 
         """
-        return _Bnd.Bnd_B3f_CornerMax(self, *args)
+        return _Bnd.Bnd_B3f_CornerMax(self)
 
-    def SquareExtent(self, *args) -> "Standard_Real" :
+    def SquareExtent(self):
         """
         :rtype: float
 
         """
-        return _Bnd.Bnd_B3f_SquareExtent(self, *args)
+        return _Bnd.Bnd_B3f_SquareExtent(self)
 
-    def Enlarge(self, *args) -> "void" :
+    def Enlarge(self, *args):
         """
         :param theDiff:
         :type theDiff: float
@@ -1163,7 +1203,7 @@ class Bnd_B3f(object):
         """
         return _Bnd.Bnd_B3f_Enlarge(self, *args)
 
-    def Limit(self, *args) -> "Standard_Boolean" :
+    def Limit(self, *args):
         """
         :param theOtherBox:
         :type theOtherBox: Bnd_B3f &
@@ -1172,7 +1212,7 @@ class Bnd_B3f(object):
         """
         return _Bnd.Bnd_B3f_Limit(self, *args)
 
-    def Transformed(self, *args) -> "Bnd_B3f" :
+    def Transformed(self, *args):
         """
         :param theTrsf:
         :type theTrsf: gp_Trsf
@@ -1181,10 +1221,18 @@ class Bnd_B3f(object):
         """
         return _Bnd.Bnd_B3f_Transformed(self, *args)
 
-    def IsOut(self, *args) -> "Standard_Boolean" :
+    def IsOut(self, *args):
         """
         :param thePnt:
         :type thePnt: gp_XYZ
+        :rtype: bool
+
+        :param theCenter:
+        :type theCenter: gp_XYZ
+        :param theRadius:
+        :type theRadius: float
+        :param isSphereHollow: default value is Standard_False
+        :type isSphereHollow: bool
         :rtype: bool
 
         :param theCenter:
@@ -1213,6 +1261,22 @@ class Bnd_B3f(object):
         :type theOverthickness: float
         :rtype: bool
 
+        :param theLine:
+        :type theLine: gp_Ax1
+        :param isRay: default value is Standard_False
+        :type isRay: bool
+        :param theOverthickness: default value is 0.0
+        :type theOverthickness: float
+        :rtype: bool
+
+        :param theLine:
+        :type theLine: gp_Ax1
+        :param isRay: default value is Standard_False
+        :type isRay: bool
+        :param theOverthickness: default value is 0.0
+        :type theOverthickness: float
+        :rtype: bool
+
         :param thePlane:
         :type thePlane: gp_Ax3
         :rtype: bool
@@ -1220,7 +1284,7 @@ class Bnd_B3f(object):
         """
         return _Bnd.Bnd_B3f_IsOut(self, *args)
 
-    def IsIn(self, *args) -> "Standard_Boolean" :
+    def IsIn(self, *args):
         """
         :param theBox:
         :type theBox: Bnd_B3f &
@@ -1235,7 +1299,7 @@ class Bnd_B3f(object):
         """
         return _Bnd.Bnd_B3f_IsIn(self, *args)
 
-    def SetCenter(self, *args) -> "void" :
+    def SetCenter(self, *args):
         """
         :param theCenter:
         :type theCenter: gp_XYZ
@@ -1244,7 +1308,7 @@ class Bnd_B3f(object):
         """
         return _Bnd.Bnd_B3f_SetCenter(self, *args)
 
-    def SetHSize(self, *args) -> "void" :
+    def SetHSize(self, *args):
         """
         :param theHSize:
         :type theHSize: gp_XYZ
@@ -1281,15 +1345,15 @@ Bnd_B3f_swigregister(Bnd_B3f)
 class Bnd_BoundSortBox(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         * Constructs an empty comparison algorithm for bounding boxes. The bounding boxes are then defined using the Initialize function.
 
         :rtype: None
 
         """
-        _Bnd.Bnd_BoundSortBox_swiginit(self,_Bnd.new_Bnd_BoundSortBox(*args))
-    def Initialize(self, *args) -> "void" :
+        _Bnd.Bnd_BoundSortBox_swiginit(self,_Bnd.new_Bnd_BoundSortBox())
+    def Initialize(self, *args):
         """
         * Initializes this comparison algorithm with - the set of bounding boxes SetOfBox.
 
@@ -1310,26 +1374,26 @@ class Bnd_BoundSortBox(object):
         :param CompleteBox:
         :type CompleteBox: Bnd_Box &
         :param nbComponents:
-        :type nbComponents: int
+        :type nbComponents: Standard_Integer
         :rtype: None
 
         """
         return _Bnd.Bnd_BoundSortBox_Initialize(self, *args)
 
-    def Add(self, *args) -> "void" :
+    def Add(self, *args):
         """
         * Adds the bounding box theBox at position boxIndex in the array of boxes to be sorted by this comparison algorithm. This function is used only in conjunction with the third syntax described in the synopsis of Initialize. Exceptions: - Standard_OutOfRange if boxIndex is not in the range [ 1,nbComponents ] where nbComponents is the maximum number of bounding boxes declared for this comparison algorithm at initialization. - Standard_MultiplyDefined if a box already exists at position boxIndex in the array of boxes to be sorted by this comparison algorithm.
 
         :param theBox:
         :type theBox: Bnd_Box &
         :param boxIndex:
-        :type boxIndex: int
+        :type boxIndex: Standard_Integer
         :rtype: None
 
         """
         return _Bnd.Bnd_BoundSortBox_Add(self, *args)
 
-    def Compare(self, *args) -> "TColStd_ListOfInteger const &" :
+    def Compare(self, *args):
         """
         * Compares the bounding box theBox, with the set of bounding boxes to be sorted by this comparison algorithm, and returns the list of intersecting bounding boxes as a list of indexes on the array of bounding boxes used by this algorithm.
 
@@ -1346,19 +1410,19 @@ class Bnd_BoundSortBox(object):
         """
         return _Bnd.Bnd_BoundSortBox_Compare(self, *args)
 
-    def Dump(self, *args) -> "void" :
+    def Dump(self):
         """
         :rtype: None
 
         """
-        return _Bnd.Bnd_BoundSortBox_Dump(self, *args)
+        return _Bnd.Bnd_BoundSortBox_Dump(self)
 
-    def Destroy(self, *args) -> "void" :
+    def Destroy(self):
         """
         :rtype: None
 
         """
-        return _Bnd.Bnd_BoundSortBox_Destroy(self, *args)
+        return _Bnd.Bnd_BoundSortBox_Destroy(self)
 
     def __del__(self):
     	try:
@@ -1380,15 +1444,15 @@ Bnd_BoundSortBox_swigregister(Bnd_BoundSortBox)
 class Bnd_BoundSortBox2d(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         * Constructs an empty comparison algorithm for 2D bounding boxes. The bounding boxes are then defined using the Initialize function.
 
         :rtype: None
 
         """
-        _Bnd.Bnd_BoundSortBox2d_swiginit(self,_Bnd.new_Bnd_BoundSortBox2d(*args))
-    def Initialize(self, *args) -> "void" :
+        _Bnd.Bnd_BoundSortBox2d_swiginit(self,_Bnd.new_Bnd_BoundSortBox2d())
+    def Initialize(self, *args):
         """
         * Initializes this comparison algorithm with - the set of 2D bounding boxes SetOfBox
 
@@ -1409,26 +1473,26 @@ class Bnd_BoundSortBox2d(object):
         :param CompleteBox:
         :type CompleteBox: Bnd_Box2d &
         :param nbComponents:
-        :type nbComponents: int
+        :type nbComponents: Standard_Integer
         :rtype: None
 
         """
         return _Bnd.Bnd_BoundSortBox2d_Initialize(self, *args)
 
-    def Add(self, *args) -> "void" :
+    def Add(self, *args):
         """
         * Adds the 2D bounding box theBox at position boxIndex in the array of boxes to be sorted by this comparison algorithm. This function is used only in conjunction with the third syntax described in the synopsis of Initialize. Exceptions - Standard_OutOfRange if boxIndex is not in the range [ 1,nbComponents ] where nbComponents is the maximum number of bounding boxes declared for this comparison algorithm at initialization. - Standard_MultiplyDefined if a box still exists at position boxIndex in the array of boxes to be sorted by this comparison algorithm.
 
         :param theBox:
         :type theBox: Bnd_Box2d &
         :param boxIndex:
-        :type boxIndex: int
+        :type boxIndex: Standard_Integer
         :rtype: None
 
         """
         return _Bnd.Bnd_BoundSortBox2d_Add(self, *args)
 
-    def Compare(self, *args) -> "TColStd_ListOfInteger const &" :
+    def Compare(self, *args):
         """
         * Compares the 2D bounding box theBox with the set of bounding boxes to be sorted by this comparison algorithm, and returns the list of intersecting bounding boxes as a list of indexes on the array of bounding boxes used by this algorithm.
 
@@ -1439,12 +1503,12 @@ class Bnd_BoundSortBox2d(object):
         """
         return _Bnd.Bnd_BoundSortBox2d_Compare(self, *args)
 
-    def Dump(self, *args) -> "void" :
+    def Dump(self):
         """
         :rtype: None
 
         """
-        return _Bnd.Bnd_BoundSortBox2d_Dump(self, *args)
+        return _Bnd.Bnd_BoundSortBox2d_Dump(self)
 
     def __del__(self):
     	try:
@@ -1465,33 +1529,33 @@ Bnd_BoundSortBox2d_swigregister(Bnd_BoundSortBox2d)
 class Bnd_Box(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         * Creates an empty Box. The constructed box is qualified Void. Its gap is null.
 
         :rtype: None
 
         """
-        _Bnd.Bnd_Box_swiginit(self,_Bnd.new_Bnd_Box(*args))
-    def SetWhole(self, *args) -> "void" :
+        _Bnd.Bnd_Box_swiginit(self,_Bnd.new_Bnd_Box())
+    def SetWhole(self):
         """
         * Sets this bounding box so that it covers the whole of 3D space. It is infinitely long in all directions.
 
         :rtype: None
 
         """
-        return _Bnd.Bnd_Box_SetWhole(self, *args)
+        return _Bnd.Bnd_Box_SetWhole(self)
 
-    def SetVoid(self, *args) -> "void" :
+    def SetVoid(self):
         """
         * Sets this bounding box so that it is empty. All points are outside a void box.
 
         :rtype: None
 
         """
-        return _Bnd.Bnd_Box_SetVoid(self, *args)
+        return _Bnd.Bnd_Box_SetVoid(self)
 
-    def Set(self, *args) -> "void" :
+    def Set(self, *args):
         """
         * Sets this bounding box so that it bounds - the point P. This involves first setting this bounding box to be void and then adding the point P.
 
@@ -1510,7 +1574,7 @@ class Bnd_Box(object):
         """
         return _Bnd.Bnd_Box_Set(self, *args)
 
-    def Update(self, *args) -> "void" :
+    def Update(self, *args):
         """
         * Enlarges this bounding box, if required, so that it contains at least: - interval [ aXmin,aXmax ] in the 'X Direction', - interval [ aYmin,aYmax ] in the 'Y Direction', - interval [ aZmin,aZmax ] in the 'Z Direction';
 
@@ -1541,16 +1605,16 @@ class Bnd_Box(object):
         """
         return _Bnd.Bnd_Box_Update(self, *args)
 
-    def GetGap(self, *args) -> "Standard_Real" :
+    def GetGap(self):
         """
         * Returns the gap of this bounding box.
 
         :rtype: float
 
         """
-        return _Bnd.Bnd_Box_GetGap(self, *args)
+        return _Bnd.Bnd_Box_GetGap(self)
 
-    def SetGap(self, *args) -> "void" :
+    def SetGap(self, *args):
         """
         * Set the gap of this bounding box to abs(Tol).
 
@@ -1561,7 +1625,7 @@ class Bnd_Box(object):
         """
         return _Bnd.Bnd_Box_SetGap(self, *args)
 
-    def Enlarge(self, *args) -> "void" :
+    def Enlarge(self, *args):
         """
         * Enlarges the box with a tolerance value. (minvalues-Abs(<tol>) and maxvalues+Abs(<tol>)) //!	This means that the minimum values of its X, Y and Z intervals of definition, when they are finite, are reduced by the absolute value of Tol, while the maximum values are increased by the same amount.
 
@@ -1572,7 +1636,7 @@ class Bnd_Box(object):
         """
         return _Bnd.Bnd_Box_Enlarge(self, *args)
 
-    def Get(self, *args) -> "void" :
+    def Get(self):
         """
         * Returns the bounds of this bounding box. The gap is included. If this bounding box is infinite (i.e. 'open'), returned values may be equal to +/- Precision::Infinite(). if IsVoid()
 
@@ -1591,135 +1655,135 @@ class Bnd_Box(object):
         :rtype: None
 
         """
-        return _Bnd.Bnd_Box_Get(self, *args)
+        return _Bnd.Bnd_Box_Get(self)
 
-    def OpenXmin(self, *args) -> "void" :
+    def OpenXmin(self):
         """
         * The Box will be infinitely long in the Xmin direction.
 
         :rtype: None
 
         """
-        return _Bnd.Bnd_Box_OpenXmin(self, *args)
+        return _Bnd.Bnd_Box_OpenXmin(self)
 
-    def OpenXmax(self, *args) -> "void" :
+    def OpenXmax(self):
         """
         * The Box will be infinitely long in the Xmax direction.
 
         :rtype: None
 
         """
-        return _Bnd.Bnd_Box_OpenXmax(self, *args)
+        return _Bnd.Bnd_Box_OpenXmax(self)
 
-    def OpenYmin(self, *args) -> "void" :
+    def OpenYmin(self):
         """
         * The Box will be infinitely long in the Ymin direction.
 
         :rtype: None
 
         """
-        return _Bnd.Bnd_Box_OpenYmin(self, *args)
+        return _Bnd.Bnd_Box_OpenYmin(self)
 
-    def OpenYmax(self, *args) -> "void" :
+    def OpenYmax(self):
         """
         * The Box will be infinitely long in the Ymax direction.
 
         :rtype: None
 
         """
-        return _Bnd.Bnd_Box_OpenYmax(self, *args)
+        return _Bnd.Bnd_Box_OpenYmax(self)
 
-    def OpenZmin(self, *args) -> "void" :
+    def OpenZmin(self):
         """
         * The Box will be infinitely long in the Zmin direction.
 
         :rtype: None
 
         """
-        return _Bnd.Bnd_Box_OpenZmin(self, *args)
+        return _Bnd.Bnd_Box_OpenZmin(self)
 
-    def OpenZmax(self, *args) -> "void" :
+    def OpenZmax(self):
         """
         * The Box will be infinitely long in the Zmax direction.
 
         :rtype: None
 
         """
-        return _Bnd.Bnd_Box_OpenZmax(self, *args)
+        return _Bnd.Bnd_Box_OpenZmax(self)
 
-    def IsOpenXmin(self, *args) -> "Standard_Boolean" :
+    def IsOpenXmin(self):
         """
         * Returns true if this bounding box is open in the Xmin direction.
 
         :rtype: bool
 
         """
-        return _Bnd.Bnd_Box_IsOpenXmin(self, *args)
+        return _Bnd.Bnd_Box_IsOpenXmin(self)
 
-    def IsOpenXmax(self, *args) -> "Standard_Boolean" :
+    def IsOpenXmax(self):
         """
         * Returns true if this bounding box is open in the Xmax direction.
 
         :rtype: bool
 
         """
-        return _Bnd.Bnd_Box_IsOpenXmax(self, *args)
+        return _Bnd.Bnd_Box_IsOpenXmax(self)
 
-    def IsOpenYmin(self, *args) -> "Standard_Boolean" :
+    def IsOpenYmin(self):
         """
         * Returns true if this bounding box is open in the Ymix direction.
 
         :rtype: bool
 
         """
-        return _Bnd.Bnd_Box_IsOpenYmin(self, *args)
+        return _Bnd.Bnd_Box_IsOpenYmin(self)
 
-    def IsOpenYmax(self, *args) -> "Standard_Boolean" :
+    def IsOpenYmax(self):
         """
         * Returns true if this bounding box is open in the Ymax direction.
 
         :rtype: bool
 
         """
-        return _Bnd.Bnd_Box_IsOpenYmax(self, *args)
+        return _Bnd.Bnd_Box_IsOpenYmax(self)
 
-    def IsOpenZmin(self, *args) -> "Standard_Boolean" :
+    def IsOpenZmin(self):
         """
         * Returns true if this bounding box is open in the Zmin direction.
 
         :rtype: bool
 
         """
-        return _Bnd.Bnd_Box_IsOpenZmin(self, *args)
+        return _Bnd.Bnd_Box_IsOpenZmin(self)
 
-    def IsOpenZmax(self, *args) -> "Standard_Boolean" :
+    def IsOpenZmax(self):
         """
         * Returns true if this bounding box is open in the Zmax direction.
 
         :rtype: bool
 
         """
-        return _Bnd.Bnd_Box_IsOpenZmax(self, *args)
+        return _Bnd.Bnd_Box_IsOpenZmax(self)
 
-    def IsWhole(self, *args) -> "Standard_Boolean" :
+    def IsWhole(self):
         """
         * Returns true if this bounding box is infinite in all 6 directions (WholeSpace flag).
 
         :rtype: bool
 
         """
-        return _Bnd.Bnd_Box_IsWhole(self, *args)
+        return _Bnd.Bnd_Box_IsWhole(self)
 
-    def IsVoid(self, *args) -> "Standard_Boolean" :
+    def IsVoid(self):
         """
         * Returns true if this bounding box is empty (Void flag).
 
         :rtype: bool
 
         """
-        return _Bnd.Bnd_Box_IsVoid(self, *args)
+        return _Bnd.Bnd_Box_IsVoid(self)
 
-    def IsXThin(self, *args) -> "Standard_Boolean" :
+    def IsXThin(self, *args):
         """
         * true if xmax-xmin < tol.
 
@@ -1730,7 +1794,7 @@ class Bnd_Box(object):
         """
         return _Bnd.Bnd_Box_IsXThin(self, *args)
 
-    def IsYThin(self, *args) -> "Standard_Boolean" :
+    def IsYThin(self, *args):
         """
         * true if ymax-ymin < tol.
 
@@ -1741,7 +1805,7 @@ class Bnd_Box(object):
         """
         return _Bnd.Bnd_Box_IsYThin(self, *args)
 
-    def IsZThin(self, *args) -> "Standard_Boolean" :
+    def IsZThin(self, *args):
         """
         * true if zmax-zmin < tol.
 
@@ -1752,7 +1816,7 @@ class Bnd_Box(object):
         """
         return _Bnd.Bnd_Box_IsZThin(self, *args)
 
-    def IsThin(self, *args) -> "Standard_Boolean" :
+    def IsThin(self, *args):
         """
         * Returns true if IsXThin, IsYThin and IsZThin are all true, i.e. if the box is thin in all three dimensions.
 
@@ -1763,7 +1827,7 @@ class Bnd_Box(object):
         """
         return _Bnd.Bnd_Box_IsThin(self, *args)
 
-    def Transformed(self, *args) -> "Bnd_Box" :
+    def Transformed(self, *args):
         """
         * Returns a bounding box which is the result of applying the transformation T to this bounding box. Warning Applying a geometric transformation (for example, a rotation) to a bounding box generally increases its dimensions. This is not optimal for algorithms which use it.
 
@@ -1774,7 +1838,7 @@ class Bnd_Box(object):
         """
         return _Bnd.Bnd_Box_Transformed(self, *args)
 
-    def Add(self, *args) -> "void" :
+    def Add(self, *args):
         """
         * Adds the box <Other> to <self>.
 
@@ -1805,7 +1869,7 @@ class Bnd_Box(object):
         """
         return _Bnd.Bnd_Box_Add(self, *args)
 
-    def IsOut(self, *args) -> "Standard_Boolean" :
+    def IsOut(self, *args):
         """
         * Returns True if the Pnt is out the box.
 
@@ -1862,7 +1926,7 @@ class Bnd_Box(object):
         """
         return _Bnd.Bnd_Box_IsOut(self, *args)
 
-    def Distance(self, *args) -> "Standard_Real" :
+    def Distance(self, *args):
         """
         * Computes the minimum distance between two boxes.
 
@@ -1873,21 +1937,21 @@ class Bnd_Box(object):
         """
         return _Bnd.Bnd_Box_Distance(self, *args)
 
-    def Dump(self, *args) -> "void" :
+    def Dump(self):
         """
         :rtype: None
 
         """
-        return _Bnd.Bnd_Box_Dump(self, *args)
+        return _Bnd.Bnd_Box_Dump(self)
 
-    def SquareExtent(self, *args) -> "Standard_Real" :
+    def SquareExtent(self):
         """
         * Computes the squared diagonal of me.
 
         :rtype: float
 
         """
-        return _Bnd.Bnd_Box_SquareExtent(self, *args)
+        return _Bnd.Bnd_Box_SquareExtent(self)
 
     def __del__(self):
     	try:
@@ -1936,33 +2000,33 @@ Bnd_Box_swigregister(Bnd_Box)
 class Bnd_Box2d(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         * Creates an empty 2D bounding box. The constructed box is qualified Void. Its gap is null.
 
         :rtype: None
 
         """
-        _Bnd.Bnd_Box2d_swiginit(self,_Bnd.new_Bnd_Box2d(*args))
-    def SetWhole(self, *args) -> "void" :
+        _Bnd.Bnd_Box2d_swiginit(self,_Bnd.new_Bnd_Box2d())
+    def SetWhole(self):
         """
         * Sets this bounding box so that it covers the whole 2D space, i.e. it is infinite in all directions.
 
         :rtype: None
 
         """
-        return _Bnd.Bnd_Box2d_SetWhole(self, *args)
+        return _Bnd.Bnd_Box2d_SetWhole(self)
 
-    def SetVoid(self, *args) -> "void" :
+    def SetVoid(self):
         """
         * Sets this 2D bounding box so that it is empty. All points are outside a void box.
 
         :rtype: None
 
         """
-        return _Bnd.Bnd_Box2d_SetVoid(self, *args)
+        return _Bnd.Bnd_Box2d_SetVoid(self)
 
-    def Set(self, *args) -> "void" :
+    def Set(self, *args):
         """
         * Sets this 2D bounding box so that it bounds the point P. This involves first setting this bounding box to be void and then adding the point PThe rectangle bounds the point <P>.
 
@@ -1981,7 +2045,7 @@ class Bnd_Box2d(object):
         """
         return _Bnd.Bnd_Box2d_Set(self, *args)
 
-    def Update(self, *args) -> "void" :
+    def Update(self, *args):
         """
         * Enlarges this 2D bounding box, if required, so that it contains at least: - interval [ aXmin,aXmax ] in the 'X Direction', - interval [ aYmin,aYmax ] in the 'Y Direction'
 
@@ -2006,16 +2070,16 @@ class Bnd_Box2d(object):
         """
         return _Bnd.Bnd_Box2d_Update(self, *args)
 
-    def GetGap(self, *args) -> "Standard_Real" :
+    def GetGap(self):
         """
         * Returns the gap of this 2D bounding box.
 
         :rtype: float
 
         """
-        return _Bnd.Bnd_Box2d_GetGap(self, *args)
+        return _Bnd.Bnd_Box2d_GetGap(self)
 
-    def SetGap(self, *args) -> "void" :
+    def SetGap(self, *args):
         """
         * Set the gap of this 2D bounding box to abs(Tol).
 
@@ -2026,7 +2090,7 @@ class Bnd_Box2d(object):
         """
         return _Bnd.Bnd_Box2d_SetGap(self, *args)
 
-    def Enlarge(self, *args) -> "void" :
+    def Enlarge(self, *args):
         """
         * Enlarges the box with a tolerance value. This means that the minimum values of its X and Y intervals of definition, when they are finite, are reduced by the absolute value of Tol, while the maximum values are increased by the same amount.
 
@@ -2037,7 +2101,7 @@ class Bnd_Box2d(object):
         """
         return _Bnd.Bnd_Box2d_Enlarge(self, *args)
 
-    def Get(self, *args) -> "void" :
+    def Get(self):
         """
         * Returns the bounds of this 2D bounding box. The gap is included. If this bounding box is infinite (i.e. 'open'), returned values may be equal to +/- Precision::Infinite(). if IsVoid()
 
@@ -2052,99 +2116,99 @@ class Bnd_Box2d(object):
         :rtype: None
 
         """
-        return _Bnd.Bnd_Box2d_Get(self, *args)
+        return _Bnd.Bnd_Box2d_Get(self)
 
-    def OpenXmin(self, *args) -> "void" :
+    def OpenXmin(self):
         """
         * The Box will be infinitely long in the Xmin direction.
 
         :rtype: None
 
         """
-        return _Bnd.Bnd_Box2d_OpenXmin(self, *args)
+        return _Bnd.Bnd_Box2d_OpenXmin(self)
 
-    def OpenXmax(self, *args) -> "void" :
+    def OpenXmax(self):
         """
         * The Box will be infinitely long in the Xmax direction.
 
         :rtype: None
 
         """
-        return _Bnd.Bnd_Box2d_OpenXmax(self, *args)
+        return _Bnd.Bnd_Box2d_OpenXmax(self)
 
-    def OpenYmin(self, *args) -> "void" :
+    def OpenYmin(self):
         """
         * The Box will be infinitely long in the Ymin direction.
 
         :rtype: None
 
         """
-        return _Bnd.Bnd_Box2d_OpenYmin(self, *args)
+        return _Bnd.Bnd_Box2d_OpenYmin(self)
 
-    def OpenYmax(self, *args) -> "void" :
+    def OpenYmax(self):
         """
         * The Box will be infinitely long in the Ymax direction.
 
         :rtype: None
 
         """
-        return _Bnd.Bnd_Box2d_OpenYmax(self, *args)
+        return _Bnd.Bnd_Box2d_OpenYmax(self)
 
-    def IsOpenXmin(self, *args) -> "Standard_Boolean" :
+    def IsOpenXmin(self):
         """
         * Returns true if this bounding box is open in the Xmin direction.
 
         :rtype: bool
 
         """
-        return _Bnd.Bnd_Box2d_IsOpenXmin(self, *args)
+        return _Bnd.Bnd_Box2d_IsOpenXmin(self)
 
-    def IsOpenXmax(self, *args) -> "Standard_Boolean" :
+    def IsOpenXmax(self):
         """
         * Returns true if this bounding box is open in the Xmax direction.
 
         :rtype: bool
 
         """
-        return _Bnd.Bnd_Box2d_IsOpenXmax(self, *args)
+        return _Bnd.Bnd_Box2d_IsOpenXmax(self)
 
-    def IsOpenYmin(self, *args) -> "Standard_Boolean" :
+    def IsOpenYmin(self):
         """
         * Returns true if this bounding box is open in the Ymin direction.
 
         :rtype: bool
 
         """
-        return _Bnd.Bnd_Box2d_IsOpenYmin(self, *args)
+        return _Bnd.Bnd_Box2d_IsOpenYmin(self)
 
-    def IsOpenYmax(self, *args) -> "Standard_Boolean" :
+    def IsOpenYmax(self):
         """
         * Returns true if this bounding box is open in the Ymax direction.
 
         :rtype: bool
 
         """
-        return _Bnd.Bnd_Box2d_IsOpenYmax(self, *args)
+        return _Bnd.Bnd_Box2d_IsOpenYmax(self)
 
-    def IsWhole(self, *args) -> "Standard_Boolean" :
+    def IsWhole(self):
         """
         * Returns true if this bounding box is infinite in all 4 directions (Whole Space flag).
 
         :rtype: bool
 
         """
-        return _Bnd.Bnd_Box2d_IsWhole(self, *args)
+        return _Bnd.Bnd_Box2d_IsWhole(self)
 
-    def IsVoid(self, *args) -> "Standard_Boolean" :
+    def IsVoid(self):
         """
         * Returns true if this 2D bounding box is empty (Void flag).
 
         :rtype: bool
 
         """
-        return _Bnd.Bnd_Box2d_IsVoid(self, *args)
+        return _Bnd.Bnd_Box2d_IsVoid(self)
 
-    def Transformed(self, *args) -> "Bnd_Box2d" :
+    def Transformed(self, *args):
         """
         * Returns a bounding box which is the result of applying the transformation T to this bounding box. Warning Applying a geometric transformation (for example, a rotation) to a bounding box generally increases its dimensions. This is not optimal for algorithms which use it.
 
@@ -2155,7 +2219,7 @@ class Bnd_Box2d(object):
         """
         return _Bnd.Bnd_Box2d_Transformed(self, *args)
 
-    def Add(self, *args) -> "void" :
+    def Add(self, *args):
         """
         * Adds the 2d box <Other> to <self>.
 
@@ -2186,7 +2250,7 @@ class Bnd_Box2d(object):
         """
         return _Bnd.Bnd_Box2d_Add(self, *args)
 
-    def IsOut(self, *args) -> "Standard_Boolean" :
+    def IsOut(self, *args):
         """
         * Returns True if the 2d pnt <P> is out <self>.
 
@@ -2221,21 +2285,21 @@ class Bnd_Box2d(object):
         """
         return _Bnd.Bnd_Box2d_IsOut(self, *args)
 
-    def Dump(self, *args) -> "void" :
+    def Dump(self):
         """
         :rtype: None
 
         """
-        return _Bnd.Bnd_Box2d_Dump(self, *args)
+        return _Bnd.Bnd_Box2d_Dump(self)
 
-    def SquareExtent(self, *args) -> "Standard_Real" :
+    def SquareExtent(self):
         """
         * Computes the squared diagonal of me.
 
         :rtype: float
 
         """
-        return _Bnd.Bnd_Box2d_SquareExtent(self, *args)
+        return _Bnd.Bnd_Box2d_SquareExtent(self)
 
     def __del__(self):
     	try:
@@ -2278,22 +2342,22 @@ class Bnd_HArray1OfBox(OCC.MMgt.MMgt_TShared):
     def __init__(self, *args): 
         """
         :param Low:
-        :type Low: int
+        :type Low: Standard_Integer
         :param Up:
-        :type Up: int
+        :type Up: Standard_Integer
         :rtype: None
 
         :param Low:
-        :type Low: int
+        :type Low: Standard_Integer
         :param Up:
-        :type Up: int
+        :type Up: Standard_Integer
         :param V:
         :type V: Bnd_Box &
         :rtype: None
 
         """
         _Bnd.Bnd_HArray1OfBox_swiginit(self,_Bnd.new_Bnd_HArray1OfBox(*args))
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
         :param V:
         :type V: Bnd_Box &
@@ -2302,31 +2366,31 @@ class Bnd_HArray1OfBox(OCC.MMgt.MMgt_TShared):
         """
         return _Bnd.Bnd_HArray1OfBox_Init(self, *args)
 
-    def Length(self, *args) -> "Standard_Integer" :
+    def Length(self):
         """
         :rtype: int
 
         """
-        return _Bnd.Bnd_HArray1OfBox_Length(self, *args)
+        return _Bnd.Bnd_HArray1OfBox_Length(self)
 
-    def Lower(self, *args) -> "Standard_Integer" :
+    def Lower(self):
         """
         :rtype: int
 
         """
-        return _Bnd.Bnd_HArray1OfBox_Lower(self, *args)
+        return _Bnd.Bnd_HArray1OfBox_Lower(self)
 
-    def Upper(self, *args) -> "Standard_Integer" :
+    def Upper(self):
         """
         :rtype: int
 
         """
-        return _Bnd.Bnd_HArray1OfBox_Upper(self, *args)
+        return _Bnd.Bnd_HArray1OfBox_Upper(self)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Value:
         :type Value: Bnd_Box &
         :rtype: None
@@ -2334,43 +2398,43 @@ class Bnd_HArray1OfBox(OCC.MMgt.MMgt_TShared):
         """
         return _Bnd.Bnd_HArray1OfBox_SetValue(self, *args)
 
-    def Value(self, *args) -> "Bnd_Box const &" :
+    def Value(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Bnd_Box
 
         """
         return _Bnd.Bnd_HArray1OfBox_Value(self, *args)
 
-    def ChangeValue(self, *args) -> "Bnd_Box &" :
+    def ChangeValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Bnd_Box
 
         """
         return _Bnd.Bnd_HArray1OfBox_ChangeValue(self, *args)
 
-    def Array1(self, *args) -> "Bnd_Array1OfBox const &" :
+    def Array1(self):
         """
         :rtype: Bnd_Array1OfBox
 
         """
-        return _Bnd.Bnd_HArray1OfBox_Array1(self, *args)
+        return _Bnd.Bnd_HArray1OfBox_Array1(self)
 
-    def ChangeArray1(self, *args) -> "Bnd_Array1OfBox &" :
+    def ChangeArray1(self):
         """
         :rtype: Bnd_Array1OfBox
 
         """
-        return _Bnd.Bnd_HArray1OfBox_ChangeArray1(self, *args)
+        return _Bnd.Bnd_HArray1OfBox_ChangeArray1(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Bnd_HArray1OfBox self)"""
         return _Bnd.Bnd_HArray1OfBox__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Bnd_HArray1OfBox" :
+    def GetHandle(self):
         """GetHandle(Bnd_HArray1OfBox self) -> Handle_Bnd_HArray1OfBox"""
         return _Bnd.Bnd_HArray1OfBox_GetHandle(self)
 
@@ -2417,7 +2481,7 @@ Handle_Bnd_HArray1OfBox._kill_pointed = new_instancemethod(_Bnd.Handle_Bnd_HArra
 Handle_Bnd_HArray1OfBox_swigregister = _Bnd.Handle_Bnd_HArray1OfBox_swigregister
 Handle_Bnd_HArray1OfBox_swigregister(Handle_Bnd_HArray1OfBox)
 
-def Handle_Bnd_HArray1OfBox_DownCast(*args) -> "Handle_Bnd_HArray1OfBox const" :
+def Handle_Bnd_HArray1OfBox_DownCast(*args):
   return _Bnd.Handle_Bnd_HArray1OfBox_DownCast(*args)
 Handle_Bnd_HArray1OfBox_DownCast = _Bnd.Handle_Bnd_HArray1OfBox_DownCast
 
@@ -2427,22 +2491,22 @@ class Bnd_HArray1OfBox2d(OCC.MMgt.MMgt_TShared):
     def __init__(self, *args): 
         """
         :param Low:
-        :type Low: int
+        :type Low: Standard_Integer
         :param Up:
-        :type Up: int
+        :type Up: Standard_Integer
         :rtype: None
 
         :param Low:
-        :type Low: int
+        :type Low: Standard_Integer
         :param Up:
-        :type Up: int
+        :type Up: Standard_Integer
         :param V:
         :type V: Bnd_Box2d &
         :rtype: None
 
         """
         _Bnd.Bnd_HArray1OfBox2d_swiginit(self,_Bnd.new_Bnd_HArray1OfBox2d(*args))
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
         :param V:
         :type V: Bnd_Box2d &
@@ -2451,31 +2515,31 @@ class Bnd_HArray1OfBox2d(OCC.MMgt.MMgt_TShared):
         """
         return _Bnd.Bnd_HArray1OfBox2d_Init(self, *args)
 
-    def Length(self, *args) -> "Standard_Integer" :
+    def Length(self):
         """
         :rtype: int
 
         """
-        return _Bnd.Bnd_HArray1OfBox2d_Length(self, *args)
+        return _Bnd.Bnd_HArray1OfBox2d_Length(self)
 
-    def Lower(self, *args) -> "Standard_Integer" :
+    def Lower(self):
         """
         :rtype: int
 
         """
-        return _Bnd.Bnd_HArray1OfBox2d_Lower(self, *args)
+        return _Bnd.Bnd_HArray1OfBox2d_Lower(self)
 
-    def Upper(self, *args) -> "Standard_Integer" :
+    def Upper(self):
         """
         :rtype: int
 
         """
-        return _Bnd.Bnd_HArray1OfBox2d_Upper(self, *args)
+        return _Bnd.Bnd_HArray1OfBox2d_Upper(self)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Value:
         :type Value: Bnd_Box2d &
         :rtype: None
@@ -2483,43 +2547,43 @@ class Bnd_HArray1OfBox2d(OCC.MMgt.MMgt_TShared):
         """
         return _Bnd.Bnd_HArray1OfBox2d_SetValue(self, *args)
 
-    def Value(self, *args) -> "Bnd_Box2d const &" :
+    def Value(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Bnd_Box2d
 
         """
         return _Bnd.Bnd_HArray1OfBox2d_Value(self, *args)
 
-    def ChangeValue(self, *args) -> "Bnd_Box2d &" :
+    def ChangeValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Bnd_Box2d
 
         """
         return _Bnd.Bnd_HArray1OfBox2d_ChangeValue(self, *args)
 
-    def Array1(self, *args) -> "Bnd_Array1OfBox2d const &" :
+    def Array1(self):
         """
         :rtype: Bnd_Array1OfBox2d
 
         """
-        return _Bnd.Bnd_HArray1OfBox2d_Array1(self, *args)
+        return _Bnd.Bnd_HArray1OfBox2d_Array1(self)
 
-    def ChangeArray1(self, *args) -> "Bnd_Array1OfBox2d &" :
+    def ChangeArray1(self):
         """
         :rtype: Bnd_Array1OfBox2d
 
         """
-        return _Bnd.Bnd_HArray1OfBox2d_ChangeArray1(self, *args)
+        return _Bnd.Bnd_HArray1OfBox2d_ChangeArray1(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Bnd_HArray1OfBox2d self)"""
         return _Bnd.Bnd_HArray1OfBox2d__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Bnd_HArray1OfBox2d" :
+    def GetHandle(self):
         """GetHandle(Bnd_HArray1OfBox2d self) -> Handle_Bnd_HArray1OfBox2d"""
         return _Bnd.Bnd_HArray1OfBox2d_GetHandle(self)
 
@@ -2566,7 +2630,7 @@ Handle_Bnd_HArray1OfBox2d._kill_pointed = new_instancemethod(_Bnd.Handle_Bnd_HAr
 Handle_Bnd_HArray1OfBox2d_swigregister = _Bnd.Handle_Bnd_HArray1OfBox2d_swigregister
 Handle_Bnd_HArray1OfBox2d_swigregister(Handle_Bnd_HArray1OfBox2d)
 
-def Handle_Bnd_HArray1OfBox2d_DownCast(*args) -> "Handle_Bnd_HArray1OfBox2d const" :
+def Handle_Bnd_HArray1OfBox2d_DownCast(*args):
   return _Bnd.Handle_Bnd_HArray1OfBox2d_DownCast(*args)
 Handle_Bnd_HArray1OfBox2d_DownCast = _Bnd.Handle_Bnd_HArray1OfBox2d_DownCast
 
@@ -2576,22 +2640,22 @@ class Bnd_HArray1OfSphere(OCC.MMgt.MMgt_TShared):
     def __init__(self, *args): 
         """
         :param Low:
-        :type Low: int
+        :type Low: Standard_Integer
         :param Up:
-        :type Up: int
+        :type Up: Standard_Integer
         :rtype: None
 
         :param Low:
-        :type Low: int
+        :type Low: Standard_Integer
         :param Up:
-        :type Up: int
+        :type Up: Standard_Integer
         :param V:
         :type V: Bnd_Sphere &
         :rtype: None
 
         """
         _Bnd.Bnd_HArray1OfSphere_swiginit(self,_Bnd.new_Bnd_HArray1OfSphere(*args))
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
         :param V:
         :type V: Bnd_Sphere &
@@ -2600,31 +2664,31 @@ class Bnd_HArray1OfSphere(OCC.MMgt.MMgt_TShared):
         """
         return _Bnd.Bnd_HArray1OfSphere_Init(self, *args)
 
-    def Length(self, *args) -> "Standard_Integer" :
+    def Length(self):
         """
         :rtype: int
 
         """
-        return _Bnd.Bnd_HArray1OfSphere_Length(self, *args)
+        return _Bnd.Bnd_HArray1OfSphere_Length(self)
 
-    def Lower(self, *args) -> "Standard_Integer" :
+    def Lower(self):
         """
         :rtype: int
 
         """
-        return _Bnd.Bnd_HArray1OfSphere_Lower(self, *args)
+        return _Bnd.Bnd_HArray1OfSphere_Lower(self)
 
-    def Upper(self, *args) -> "Standard_Integer" :
+    def Upper(self):
         """
         :rtype: int
 
         """
-        return _Bnd.Bnd_HArray1OfSphere_Upper(self, *args)
+        return _Bnd.Bnd_HArray1OfSphere_Upper(self)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Value:
         :type Value: Bnd_Sphere &
         :rtype: None
@@ -2632,43 +2696,43 @@ class Bnd_HArray1OfSphere(OCC.MMgt.MMgt_TShared):
         """
         return _Bnd.Bnd_HArray1OfSphere_SetValue(self, *args)
 
-    def Value(self, *args) -> "Bnd_Sphere const &" :
+    def Value(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Bnd_Sphere
 
         """
         return _Bnd.Bnd_HArray1OfSphere_Value(self, *args)
 
-    def ChangeValue(self, *args) -> "Bnd_Sphere &" :
+    def ChangeValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Bnd_Sphere
 
         """
         return _Bnd.Bnd_HArray1OfSphere_ChangeValue(self, *args)
 
-    def Array1(self, *args) -> "Bnd_Array1OfSphere const &" :
+    def Array1(self):
         """
         :rtype: Bnd_Array1OfSphere
 
         """
-        return _Bnd.Bnd_HArray1OfSphere_Array1(self, *args)
+        return _Bnd.Bnd_HArray1OfSphere_Array1(self)
 
-    def ChangeArray1(self, *args) -> "Bnd_Array1OfSphere &" :
+    def ChangeArray1(self):
         """
         :rtype: Bnd_Array1OfSphere
 
         """
-        return _Bnd.Bnd_HArray1OfSphere_ChangeArray1(self, *args)
+        return _Bnd.Bnd_HArray1OfSphere_ChangeArray1(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Bnd_HArray1OfSphere self)"""
         return _Bnd.Bnd_HArray1OfSphere__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Bnd_HArray1OfSphere" :
+    def GetHandle(self):
         """GetHandle(Bnd_HArray1OfSphere self) -> Handle_Bnd_HArray1OfSphere"""
         return _Bnd.Bnd_HArray1OfSphere_GetHandle(self)
 
@@ -2715,27 +2779,27 @@ Handle_Bnd_HArray1OfSphere._kill_pointed = new_instancemethod(_Bnd.Handle_Bnd_HA
 Handle_Bnd_HArray1OfSphere_swigregister = _Bnd.Handle_Bnd_HArray1OfSphere_swigregister
 Handle_Bnd_HArray1OfSphere_swigregister(Handle_Bnd_HArray1OfSphere)
 
-def Handle_Bnd_HArray1OfSphere_DownCast(*args) -> "Handle_Bnd_HArray1OfSphere const" :
+def Handle_Bnd_HArray1OfSphere_DownCast(*args):
   return _Bnd.Handle_Bnd_HArray1OfSphere_DownCast(*args)
 Handle_Bnd_HArray1OfSphere_DownCast = _Bnd.Handle_Bnd_HArray1OfSphere_DownCast
 
 class Bnd_SeqOfBox(OCC.TCollection.TCollection_BaseSequence):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _Bnd.Bnd_SeqOfBox_swiginit(self,_Bnd.new_Bnd_SeqOfBox(*args))
-    def Clear(self, *args) -> "void" :
+        _Bnd.Bnd_SeqOfBox_swiginit(self,_Bnd.new_Bnd_SeqOfBox())
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _Bnd.Bnd_SeqOfBox_Clear(self, *args)
+        return _Bnd.Bnd_SeqOfBox_Clear(self)
 
-    def Assign(self, *args) -> "Bnd_SeqOfBox const &" :
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: Bnd_SeqOfBox &
@@ -2744,7 +2808,7 @@ class Bnd_SeqOfBox(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Bnd.Bnd_SeqOfBox_Assign(self, *args)
 
-    def Set(self, *args) -> "Bnd_SeqOfBox const &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: Bnd_SeqOfBox &
@@ -2753,7 +2817,7 @@ class Bnd_SeqOfBox(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Bnd.Bnd_SeqOfBox_Set(self, *args)
 
-    def Append(self, *args) -> "void" :
+    def Append(self, *args):
         """
         :param T:
         :type T: Bnd_Box &
@@ -2766,7 +2830,7 @@ class Bnd_SeqOfBox(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Bnd.Bnd_SeqOfBox_Append(self, *args)
 
-    def Prepend(self, *args) -> "void" :
+    def Prepend(self, *args):
         """
         :param T:
         :type T: Bnd_Box &
@@ -2779,16 +2843,16 @@ class Bnd_SeqOfBox(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Bnd.Bnd_SeqOfBox_Prepend(self, *args)
 
-    def InsertBefore(self, *args) -> "void" :
+    def InsertBefore(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param T:
         :type T: Bnd_Box &
         :rtype: None
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param S:
         :type S: Bnd_SeqOfBox &
         :rtype: None
@@ -2796,16 +2860,16 @@ class Bnd_SeqOfBox(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Bnd.Bnd_SeqOfBox_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args) -> "void" :
+    def InsertAfter(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param T:
         :type T: Bnd_Box &
         :rtype: None
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param S:
         :type S: Bnd_SeqOfBox &
         :rtype: None
@@ -2813,24 +2877,24 @@ class Bnd_SeqOfBox(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Bnd.Bnd_SeqOfBox_InsertAfter(self, *args)
 
-    def First(self, *args) -> "Bnd_Box const &" :
+    def First(self):
         """
         :rtype: Bnd_Box
 
         """
-        return _Bnd.Bnd_SeqOfBox_First(self, *args)
+        return _Bnd.Bnd_SeqOfBox_First(self)
 
-    def Last(self, *args) -> "Bnd_Box const &" :
+    def Last(self):
         """
         :rtype: Bnd_Box
 
         """
-        return _Bnd.Bnd_SeqOfBox_Last(self, *args)
+        return _Bnd.Bnd_SeqOfBox_Last(self)
 
-    def Split(self, *args) -> "void" :
+    def Split(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Sub:
         :type Sub: Bnd_SeqOfBox &
         :rtype: None
@@ -2838,19 +2902,19 @@ class Bnd_SeqOfBox(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Bnd.Bnd_SeqOfBox_Split(self, *args)
 
-    def Value(self, *args) -> "Bnd_Box const &" :
+    def Value(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Bnd_Box
 
         """
         return _Bnd.Bnd_SeqOfBox_Value(self, *args)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param I:
         :type I: Bnd_Box &
         :rtype: None
@@ -2858,25 +2922,25 @@ class Bnd_SeqOfBox(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Bnd.Bnd_SeqOfBox_SetValue(self, *args)
 
-    def ChangeValue(self, *args) -> "Bnd_Box &" :
+    def ChangeValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Bnd_Box
 
         """
         return _Bnd.Bnd_SeqOfBox_ChangeValue(self, *args)
 
-    def Remove(self, *args) -> "void" :
+    def Remove(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: None
 
         :param FromIndex:
-        :type FromIndex: int
+        :type FromIndex: Standard_Integer
         :param ToIndex:
-        :type ToIndex: int
+        :type ToIndex: Standard_Integer
         :rtype: None
 
         """
@@ -2923,18 +2987,18 @@ class Bnd_SequenceNodeOfSeqOfBox(OCC.TCollection.TCollection_SeqNode):
 
         """
         _Bnd.Bnd_SequenceNodeOfSeqOfBox_swiginit(self,_Bnd.new_Bnd_SequenceNodeOfSeqOfBox(*args))
-    def Value(self, *args) -> "Bnd_Box &" :
+    def Value(self):
         """
         :rtype: Bnd_Box
 
         """
-        return _Bnd.Bnd_SequenceNodeOfSeqOfBox_Value(self, *args)
+        return _Bnd.Bnd_SequenceNodeOfSeqOfBox_Value(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Bnd_SequenceNodeOfSeqOfBox self)"""
         return _Bnd.Bnd_SequenceNodeOfSeqOfBox__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Bnd_SequenceNodeOfSeqOfBox" :
+    def GetHandle(self):
         """GetHandle(Bnd_SequenceNodeOfSeqOfBox self) -> Handle_Bnd_SequenceNodeOfSeqOfBox"""
         return _Bnd.Bnd_SequenceNodeOfSeqOfBox_GetHandle(self)
 
@@ -2973,7 +3037,7 @@ Handle_Bnd_SequenceNodeOfSeqOfBox._kill_pointed = new_instancemethod(_Bnd.Handle
 Handle_Bnd_SequenceNodeOfSeqOfBox_swigregister = _Bnd.Handle_Bnd_SequenceNodeOfSeqOfBox_swigregister
 Handle_Bnd_SequenceNodeOfSeqOfBox_swigregister(Handle_Bnd_SequenceNodeOfSeqOfBox)
 
-def Handle_Bnd_SequenceNodeOfSeqOfBox_DownCast(*args) -> "Handle_Bnd_SequenceNodeOfSeqOfBox const" :
+def Handle_Bnd_SequenceNodeOfSeqOfBox_DownCast(*args):
   return _Bnd.Handle_Bnd_SequenceNodeOfSeqOfBox_DownCast(*args)
 Handle_Bnd_SequenceNodeOfSeqOfBox_DownCast = _Bnd.Handle_Bnd_SequenceNodeOfSeqOfBox_DownCast
 
@@ -2993,41 +3057,41 @@ class Bnd_Sphere(object):
         :param theRad:
         :type theRad: float
         :param theU:
-        :type theU: int
+        :type theU: Standard_Integer
         :param theV:
-        :type theV: int
+        :type theV: Standard_Integer
         :rtype: None
 
         """
         _Bnd.Bnd_Sphere_swiginit(self,_Bnd.new_Bnd_Sphere(*args))
-    def U(self, *args) -> "Standard_Integer" :
+    def U(self):
         """
         * Returns the U parameter on shape
 
         :rtype: int
 
         """
-        return _Bnd.Bnd_Sphere_U(self, *args)
+        return _Bnd.Bnd_Sphere_U(self)
 
-    def V(self, *args) -> "Standard_Integer" :
+    def V(self):
         """
         * Returns the V parameter on shape
 
         :rtype: int
 
         """
-        return _Bnd.Bnd_Sphere_V(self, *args)
+        return _Bnd.Bnd_Sphere_V(self)
 
-    def IsValid(self, *args) -> "Standard_Boolean" :
+    def IsValid(self):
         """
         * Returns validity status, indicating that this //!		sphere corresponds to a real entity
 
         :rtype: bool
 
         """
-        return _Bnd.Bnd_Sphere_IsValid(self, *args)
+        return _Bnd.Bnd_Sphere_IsValid(self)
 
-    def SetValid(self, *args) -> "void" :
+    def SetValid(self, *args):
         """
         :param isValid:
         :type isValid: bool
@@ -3036,25 +3100,25 @@ class Bnd_Sphere(object):
         """
         return _Bnd.Bnd_Sphere_SetValid(self, *args)
 
-    def Center(self, *args) -> "gp_XYZ const" :
+    def Center(self):
         """
         * Returns center of sphere object
 
         :rtype: gp_XYZ
 
         """
-        return _Bnd.Bnd_Sphere_Center(self, *args)
+        return _Bnd.Bnd_Sphere_Center(self)
 
-    def Radius(self, *args) -> "Standard_Real" :
+    def Radius(self):
         """
         * Returns the radius value
 
         :rtype: float
 
         """
-        return _Bnd.Bnd_Sphere_Radius(self, *args)
+        return _Bnd.Bnd_Sphere_Radius(self)
 
-    def Distances(self, *args) -> "void" :
+    def Distances(self, *args):
         """
         * Calculate and return minimal and maximal distance to sphere. //!		NOTE: This function is tightly optimized; any modifications //!		may affect performance!
 
@@ -3069,7 +3133,7 @@ class Bnd_Sphere(object):
         """
         return _Bnd.Bnd_Sphere_Distances(self, *args)
 
-    def SquareDistances(self, *args) -> "void" :
+    def SquareDistances(self, *args):
         """
         * Calculate and return minimal and maximal distance to sphere. //!		NOTE: This function is tightly optimized; any modifications //!		may affect performance!
 
@@ -3084,7 +3148,7 @@ class Bnd_Sphere(object):
         """
         return _Bnd.Bnd_Sphere_SquareDistances(self, *args)
 
-    def Project(self, *args) -> "Standard_Boolean" :
+    def Project(self, *args):
         """
         * Projects a point on entity. //!		 Returns true if success
 
@@ -3101,7 +3165,7 @@ class Bnd_Sphere(object):
         """
         return _Bnd.Bnd_Sphere_Project(self, *args)
 
-    def Distance(self, *args) -> "Standard_Real" :
+    def Distance(self, *args):
         """
         :param theNode:
         :type theNode: gp_XYZ
@@ -3110,7 +3174,7 @@ class Bnd_Sphere(object):
         """
         return _Bnd.Bnd_Sphere_Distance(self, *args)
 
-    def SquareDistance(self, *args) -> "Standard_Real" :
+    def SquareDistance(self, *args):
         """
         :param theNode:
         :type theNode: gp_XYZ
@@ -3119,7 +3183,7 @@ class Bnd_Sphere(object):
         """
         return _Bnd.Bnd_Sphere_SquareDistance(self, *args)
 
-    def Add(self, *args) -> "void" :
+    def Add(self, *args):
         """
         :param theOther:
         :type theOther: Bnd_Sphere &
@@ -3128,7 +3192,7 @@ class Bnd_Sphere(object):
         """
         return _Bnd.Bnd_Sphere_Add(self, *args)
 
-    def IsOut(self, *args) -> "Standard_Boolean" :
+    def IsOut(self, *args):
         """
         :param theOther:
         :type theOther: Bnd_Sphere &
@@ -3143,12 +3207,12 @@ class Bnd_Sphere(object):
         """
         return _Bnd.Bnd_Sphere_IsOut(self, *args)
 
-    def SquareExtent(self, *args) -> "Standard_Real" :
+    def SquareExtent(self):
         """
         :rtype: float
 
         """
-        return _Bnd.Bnd_Sphere_SquareExtent(self, *args)
+        return _Bnd.Bnd_Sphere_SquareExtent(self)
 
     def __del__(self):
     	try:

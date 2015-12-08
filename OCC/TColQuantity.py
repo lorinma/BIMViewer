@@ -118,22 +118,22 @@ class TColQuantity_Array1OfLength(object):
     def __init__(self, *args): 
         """
         :param Low:
-        :type Low: int
+        :type Low: Standard_Integer
         :param Up:
-        :type Up: int
+        :type Up: Standard_Integer
         :rtype: None
 
         :param Item:
         :type Item: Quantity_Length &
         :param Low:
-        :type Low: int
+        :type Low: Standard_Integer
         :param Up:
-        :type Up: int
+        :type Up: Standard_Integer
         :rtype: None
 
         """
         _TColQuantity.TColQuantity_Array1OfLength_swiginit(self,_TColQuantity.new_TColQuantity_Array1OfLength(*args))
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
         :param V:
         :type V: Quantity_Length &
@@ -142,21 +142,21 @@ class TColQuantity_Array1OfLength(object):
         """
         return _TColQuantity.TColQuantity_Array1OfLength_Init(self, *args)
 
-    def Destroy(self, *args) -> "void" :
+    def Destroy(self):
         """
         :rtype: None
 
         """
-        return _TColQuantity.TColQuantity_Array1OfLength_Destroy(self, *args)
+        return _TColQuantity.TColQuantity_Array1OfLength_Destroy(self)
 
-    def IsAllocated(self, *args) -> "Standard_Boolean" :
+    def IsAllocated(self):
         """
         :rtype: bool
 
         """
-        return _TColQuantity.TColQuantity_Array1OfLength_IsAllocated(self, *args)
+        return _TColQuantity.TColQuantity_Array1OfLength_IsAllocated(self)
 
-    def Assign(self, *args) -> "TColQuantity_Array1OfLength const &" :
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: TColQuantity_Array1OfLength &
@@ -165,7 +165,7 @@ class TColQuantity_Array1OfLength(object):
         """
         return _TColQuantity.TColQuantity_Array1OfLength_Assign(self, *args)
 
-    def Set(self, *args) -> "TColQuantity_Array1OfLength const &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: TColQuantity_Array1OfLength &
@@ -174,31 +174,31 @@ class TColQuantity_Array1OfLength(object):
         """
         return _TColQuantity.TColQuantity_Array1OfLength_Set(self, *args)
 
-    def Length(self, *args) -> "Standard_Integer" :
+    def Length(self):
         """
         :rtype: int
 
         """
-        return _TColQuantity.TColQuantity_Array1OfLength_Length(self, *args)
+        return _TColQuantity.TColQuantity_Array1OfLength_Length(self)
 
-    def Lower(self, *args) -> "Standard_Integer" :
+    def Lower(self):
         """
         :rtype: int
 
         """
-        return _TColQuantity.TColQuantity_Array1OfLength_Lower(self, *args)
+        return _TColQuantity.TColQuantity_Array1OfLength_Lower(self)
 
-    def Upper(self, *args) -> "Standard_Integer" :
+    def Upper(self):
         """
         :rtype: int
 
         """
-        return _TColQuantity.TColQuantity_Array1OfLength_Upper(self, *args)
+        return _TColQuantity.TColQuantity_Array1OfLength_Upper(self)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Value:
         :type Value: Quantity_Length &
         :rtype: None
@@ -206,19 +206,19 @@ class TColQuantity_Array1OfLength(object):
         """
         return _TColQuantity.TColQuantity_Array1OfLength_SetValue(self, *args)
 
-    def Value(self, *args) -> "Quantity_Length const &" :
+    def Value(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Quantity_Length
 
         """
         return _TColQuantity.TColQuantity_Array1OfLength_Value(self, *args)
 
-    def ChangeValue(self, *args) -> "Quantity_Length &" :
+    def ChangeValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Quantity_Length
 
         """
@@ -253,30 +253,30 @@ class TColQuantity_Array2OfLength(object):
     def __init__(self, *args): 
         """
         :param R1:
-        :type R1: int
+        :type R1: Standard_Integer
         :param R2:
-        :type R2: int
+        :type R2: Standard_Integer
         :param C1:
-        :type C1: int
+        :type C1: Standard_Integer
         :param C2:
-        :type C2: int
+        :type C2: Standard_Integer
         :rtype: None
 
         :param Item:
         :type Item: Quantity_Length &
         :param R1:
-        :type R1: int
+        :type R1: Standard_Integer
         :param R2:
-        :type R2: int
+        :type R2: Standard_Integer
         :param C1:
-        :type C1: int
+        :type C1: Standard_Integer
         :param C2:
-        :type C2: int
+        :type C2: Standard_Integer
         :rtype: None
 
         """
         _TColQuantity.TColQuantity_Array2OfLength_swiginit(self,_TColQuantity.new_TColQuantity_Array2OfLength(*args))
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
         :param V:
         :type V: Quantity_Length &
@@ -285,14 +285,14 @@ class TColQuantity_Array2OfLength(object):
         """
         return _TColQuantity.TColQuantity_Array2OfLength_Init(self, *args)
 
-    def Destroy(self, *args) -> "void" :
+    def Destroy(self):
         """
         :rtype: None
 
         """
-        return _TColQuantity.TColQuantity_Array2OfLength_Destroy(self, *args)
+        return _TColQuantity.TColQuantity_Array2OfLength_Destroy(self)
 
-    def Assign(self, *args) -> "TColQuantity_Array2OfLength const &" :
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: TColQuantity_Array2OfLength &
@@ -301,7 +301,7 @@ class TColQuantity_Array2OfLength(object):
         """
         return _TColQuantity.TColQuantity_Array2OfLength_Assign(self, *args)
 
-    def Set(self, *args) -> "TColQuantity_Array2OfLength const &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: TColQuantity_Array2OfLength &
@@ -310,54 +310,54 @@ class TColQuantity_Array2OfLength(object):
         """
         return _TColQuantity.TColQuantity_Array2OfLength_Set(self, *args)
 
-    def ColLength(self, *args) -> "Standard_Integer" :
+    def ColLength(self):
         """
         :rtype: int
 
         """
-        return _TColQuantity.TColQuantity_Array2OfLength_ColLength(self, *args)
+        return _TColQuantity.TColQuantity_Array2OfLength_ColLength(self)
 
-    def RowLength(self, *args) -> "Standard_Integer" :
+    def RowLength(self):
         """
         :rtype: int
 
         """
-        return _TColQuantity.TColQuantity_Array2OfLength_RowLength(self, *args)
+        return _TColQuantity.TColQuantity_Array2OfLength_RowLength(self)
 
-    def LowerCol(self, *args) -> "Standard_Integer" :
+    def LowerCol(self):
         """
         :rtype: int
 
         """
-        return _TColQuantity.TColQuantity_Array2OfLength_LowerCol(self, *args)
+        return _TColQuantity.TColQuantity_Array2OfLength_LowerCol(self)
 
-    def LowerRow(self, *args) -> "Standard_Integer" :
+    def LowerRow(self):
         """
         :rtype: int
 
         """
-        return _TColQuantity.TColQuantity_Array2OfLength_LowerRow(self, *args)
+        return _TColQuantity.TColQuantity_Array2OfLength_LowerRow(self)
 
-    def UpperCol(self, *args) -> "Standard_Integer" :
+    def UpperCol(self):
         """
         :rtype: int
 
         """
-        return _TColQuantity.TColQuantity_Array2OfLength_UpperCol(self, *args)
+        return _TColQuantity.TColQuantity_Array2OfLength_UpperCol(self)
 
-    def UpperRow(self, *args) -> "Standard_Integer" :
+    def UpperRow(self):
         """
         :rtype: int
 
         """
-        return _TColQuantity.TColQuantity_Array2OfLength_UpperRow(self, *args)
+        return _TColQuantity.TColQuantity_Array2OfLength_UpperRow(self)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Row:
-        :type Row: int
+        :type Row: Standard_Integer
         :param Col:
-        :type Col: int
+        :type Col: Standard_Integer
         :param Value:
         :type Value: Quantity_Length &
         :rtype: None
@@ -365,23 +365,23 @@ class TColQuantity_Array2OfLength(object):
         """
         return _TColQuantity.TColQuantity_Array2OfLength_SetValue(self, *args)
 
-    def Value(self, *args) -> "Quantity_Length const &" :
+    def Value(self, *args):
         """
         :param Row:
-        :type Row: int
+        :type Row: Standard_Integer
         :param Col:
-        :type Col: int
+        :type Col: Standard_Integer
         :rtype: Quantity_Length
 
         """
         return _TColQuantity.TColQuantity_Array2OfLength_Value(self, *args)
 
-    def ChangeValue(self, *args) -> "Quantity_Length &" :
+    def ChangeValue(self, *args):
         """
         :param Row:
-        :type Row: int
+        :type Row: Standard_Integer
         :param Col:
-        :type Col: int
+        :type Col: Standard_Integer
         :rtype: Quantity_Length
 
         """
@@ -418,22 +418,22 @@ class TColQuantity_HArray1OfLength(OCC.MMgt.MMgt_TShared):
     def __init__(self, *args): 
         """
         :param Low:
-        :type Low: int
+        :type Low: Standard_Integer
         :param Up:
-        :type Up: int
+        :type Up: Standard_Integer
         :rtype: None
 
         :param Low:
-        :type Low: int
+        :type Low: Standard_Integer
         :param Up:
-        :type Up: int
+        :type Up: Standard_Integer
         :param V:
         :type V: Quantity_Length &
         :rtype: None
 
         """
         _TColQuantity.TColQuantity_HArray1OfLength_swiginit(self,_TColQuantity.new_TColQuantity_HArray1OfLength(*args))
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
         :param V:
         :type V: Quantity_Length &
@@ -442,31 +442,31 @@ class TColQuantity_HArray1OfLength(OCC.MMgt.MMgt_TShared):
         """
         return _TColQuantity.TColQuantity_HArray1OfLength_Init(self, *args)
 
-    def Length(self, *args) -> "Standard_Integer" :
+    def Length(self):
         """
         :rtype: int
 
         """
-        return _TColQuantity.TColQuantity_HArray1OfLength_Length(self, *args)
+        return _TColQuantity.TColQuantity_HArray1OfLength_Length(self)
 
-    def Lower(self, *args) -> "Standard_Integer" :
+    def Lower(self):
         """
         :rtype: int
 
         """
-        return _TColQuantity.TColQuantity_HArray1OfLength_Lower(self, *args)
+        return _TColQuantity.TColQuantity_HArray1OfLength_Lower(self)
 
-    def Upper(self, *args) -> "Standard_Integer" :
+    def Upper(self):
         """
         :rtype: int
 
         """
-        return _TColQuantity.TColQuantity_HArray1OfLength_Upper(self, *args)
+        return _TColQuantity.TColQuantity_HArray1OfLength_Upper(self)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Value:
         :type Value: Quantity_Length &
         :rtype: None
@@ -474,43 +474,43 @@ class TColQuantity_HArray1OfLength(OCC.MMgt.MMgt_TShared):
         """
         return _TColQuantity.TColQuantity_HArray1OfLength_SetValue(self, *args)
 
-    def Value(self, *args) -> "Quantity_Length const &" :
+    def Value(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Quantity_Length
 
         """
         return _TColQuantity.TColQuantity_HArray1OfLength_Value(self, *args)
 
-    def ChangeValue(self, *args) -> "Quantity_Length &" :
+    def ChangeValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Quantity_Length
 
         """
         return _TColQuantity.TColQuantity_HArray1OfLength_ChangeValue(self, *args)
 
-    def Array1(self, *args) -> "TColQuantity_Array1OfLength const &" :
+    def Array1(self):
         """
         :rtype: TColQuantity_Array1OfLength
 
         """
-        return _TColQuantity.TColQuantity_HArray1OfLength_Array1(self, *args)
+        return _TColQuantity.TColQuantity_HArray1OfLength_Array1(self)
 
-    def ChangeArray1(self, *args) -> "TColQuantity_Array1OfLength &" :
+    def ChangeArray1(self):
         """
         :rtype: TColQuantity_Array1OfLength
 
         """
-        return _TColQuantity.TColQuantity_HArray1OfLength_ChangeArray1(self, *args)
+        return _TColQuantity.TColQuantity_HArray1OfLength_ChangeArray1(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(TColQuantity_HArray1OfLength self)"""
         return _TColQuantity.TColQuantity_HArray1OfLength__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_TColQuantity_HArray1OfLength" :
+    def GetHandle(self):
         """GetHandle(TColQuantity_HArray1OfLength self) -> Handle_TColQuantity_HArray1OfLength"""
         return _TColQuantity.TColQuantity_HArray1OfLength_GetHandle(self)
 
@@ -557,7 +557,7 @@ Handle_TColQuantity_HArray1OfLength._kill_pointed = new_instancemethod(_TColQuan
 Handle_TColQuantity_HArray1OfLength_swigregister = _TColQuantity.Handle_TColQuantity_HArray1OfLength_swigregister
 Handle_TColQuantity_HArray1OfLength_swigregister(Handle_TColQuantity_HArray1OfLength)
 
-def Handle_TColQuantity_HArray1OfLength_DownCast(*args) -> "Handle_TColQuantity_HArray1OfLength const" :
+def Handle_TColQuantity_HArray1OfLength_DownCast(*args):
   return _TColQuantity.Handle_TColQuantity_HArray1OfLength_DownCast(*args)
 Handle_TColQuantity_HArray1OfLength_DownCast = _TColQuantity.Handle_TColQuantity_HArray1OfLength_DownCast
 
@@ -567,30 +567,30 @@ class TColQuantity_HArray2OfLength(OCC.MMgt.MMgt_TShared):
     def __init__(self, *args): 
         """
         :param R1:
-        :type R1: int
+        :type R1: Standard_Integer
         :param R2:
-        :type R2: int
+        :type R2: Standard_Integer
         :param C1:
-        :type C1: int
+        :type C1: Standard_Integer
         :param C2:
-        :type C2: int
+        :type C2: Standard_Integer
         :rtype: None
 
         :param R1:
-        :type R1: int
+        :type R1: Standard_Integer
         :param R2:
-        :type R2: int
+        :type R2: Standard_Integer
         :param C1:
-        :type C1: int
+        :type C1: Standard_Integer
         :param C2:
-        :type C2: int
+        :type C2: Standard_Integer
         :param V:
         :type V: Quantity_Length &
         :rtype: None
 
         """
         _TColQuantity.TColQuantity_HArray2OfLength_swiginit(self,_TColQuantity.new_TColQuantity_HArray2OfLength(*args))
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
         :param V:
         :type V: Quantity_Length &
@@ -599,54 +599,54 @@ class TColQuantity_HArray2OfLength(OCC.MMgt.MMgt_TShared):
         """
         return _TColQuantity.TColQuantity_HArray2OfLength_Init(self, *args)
 
-    def ColLength(self, *args) -> "Standard_Integer" :
+    def ColLength(self):
         """
         :rtype: int
 
         """
-        return _TColQuantity.TColQuantity_HArray2OfLength_ColLength(self, *args)
+        return _TColQuantity.TColQuantity_HArray2OfLength_ColLength(self)
 
-    def RowLength(self, *args) -> "Standard_Integer" :
+    def RowLength(self):
         """
         :rtype: int
 
         """
-        return _TColQuantity.TColQuantity_HArray2OfLength_RowLength(self, *args)
+        return _TColQuantity.TColQuantity_HArray2OfLength_RowLength(self)
 
-    def LowerCol(self, *args) -> "Standard_Integer" :
+    def LowerCol(self):
         """
         :rtype: int
 
         """
-        return _TColQuantity.TColQuantity_HArray2OfLength_LowerCol(self, *args)
+        return _TColQuantity.TColQuantity_HArray2OfLength_LowerCol(self)
 
-    def LowerRow(self, *args) -> "Standard_Integer" :
+    def LowerRow(self):
         """
         :rtype: int
 
         """
-        return _TColQuantity.TColQuantity_HArray2OfLength_LowerRow(self, *args)
+        return _TColQuantity.TColQuantity_HArray2OfLength_LowerRow(self)
 
-    def UpperCol(self, *args) -> "Standard_Integer" :
+    def UpperCol(self):
         """
         :rtype: int
 
         """
-        return _TColQuantity.TColQuantity_HArray2OfLength_UpperCol(self, *args)
+        return _TColQuantity.TColQuantity_HArray2OfLength_UpperCol(self)
 
-    def UpperRow(self, *args) -> "Standard_Integer" :
+    def UpperRow(self):
         """
         :rtype: int
 
         """
-        return _TColQuantity.TColQuantity_HArray2OfLength_UpperRow(self, *args)
+        return _TColQuantity.TColQuantity_HArray2OfLength_UpperRow(self)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Row:
-        :type Row: int
+        :type Row: Standard_Integer
         :param Col:
-        :type Col: int
+        :type Col: Standard_Integer
         :param Value:
         :type Value: Quantity_Length &
         :rtype: None
@@ -654,47 +654,47 @@ class TColQuantity_HArray2OfLength(OCC.MMgt.MMgt_TShared):
         """
         return _TColQuantity.TColQuantity_HArray2OfLength_SetValue(self, *args)
 
-    def Value(self, *args) -> "Quantity_Length const &" :
+    def Value(self, *args):
         """
         :param Row:
-        :type Row: int
+        :type Row: Standard_Integer
         :param Col:
-        :type Col: int
+        :type Col: Standard_Integer
         :rtype: Quantity_Length
 
         """
         return _TColQuantity.TColQuantity_HArray2OfLength_Value(self, *args)
 
-    def ChangeValue(self, *args) -> "Quantity_Length &" :
+    def ChangeValue(self, *args):
         """
         :param Row:
-        :type Row: int
+        :type Row: Standard_Integer
         :param Col:
-        :type Col: int
+        :type Col: Standard_Integer
         :rtype: Quantity_Length
 
         """
         return _TColQuantity.TColQuantity_HArray2OfLength_ChangeValue(self, *args)
 
-    def Array2(self, *args) -> "TColQuantity_Array2OfLength const &" :
+    def Array2(self):
         """
         :rtype: TColQuantity_Array2OfLength
 
         """
-        return _TColQuantity.TColQuantity_HArray2OfLength_Array2(self, *args)
+        return _TColQuantity.TColQuantity_HArray2OfLength_Array2(self)
 
-    def ChangeArray2(self, *args) -> "TColQuantity_Array2OfLength &" :
+    def ChangeArray2(self):
         """
         :rtype: TColQuantity_Array2OfLength
 
         """
-        return _TColQuantity.TColQuantity_HArray2OfLength_ChangeArray2(self, *args)
+        return _TColQuantity.TColQuantity_HArray2OfLength_ChangeArray2(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(TColQuantity_HArray2OfLength self)"""
         return _TColQuantity.TColQuantity_HArray2OfLength__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_TColQuantity_HArray2OfLength" :
+    def GetHandle(self):
         """GetHandle(TColQuantity_HArray2OfLength self) -> Handle_TColQuantity_HArray2OfLength"""
         return _TColQuantity.TColQuantity_HArray2OfLength_GetHandle(self)
 
@@ -744,7 +744,7 @@ Handle_TColQuantity_HArray2OfLength._kill_pointed = new_instancemethod(_TColQuan
 Handle_TColQuantity_HArray2OfLength_swigregister = _TColQuantity.Handle_TColQuantity_HArray2OfLength_swigregister
 Handle_TColQuantity_HArray2OfLength_swigregister(Handle_TColQuantity_HArray2OfLength)
 
-def Handle_TColQuantity_HArray2OfLength_DownCast(*args) -> "Handle_TColQuantity_HArray2OfLength const" :
+def Handle_TColQuantity_HArray2OfLength_DownCast(*args):
   return _TColQuantity.Handle_TColQuantity_HArray2OfLength_DownCast(*args)
 Handle_TColQuantity_HArray2OfLength_DownCast = _TColQuantity.Handle_TColQuantity_HArray2OfLength_DownCast
 

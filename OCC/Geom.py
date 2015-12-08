@@ -119,7 +119,7 @@ class Geom_Geometry(OCC.MMgt.MMgt_TShared):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def Mirror(self, *args) -> "void" :
+    def Mirror(self, *args):
         """
         * Performs the symmetrical transformation of a Geometry with respect to the point P which is the center of the symmetry.
 
@@ -142,7 +142,7 @@ class Geom_Geometry(OCC.MMgt.MMgt_TShared):
         """
         return _Geom.Geom_Geometry_Mirror(self, *args)
 
-    def Rotate(self, *args) -> "void" :
+    def Rotate(self, *args):
         """
         * Rotates a Geometry. A1 is the axis of the rotation. Ang is the angular value of the rotation in radians.
 
@@ -155,7 +155,7 @@ class Geom_Geometry(OCC.MMgt.MMgt_TShared):
         """
         return _Geom.Geom_Geometry_Rotate(self, *args)
 
-    def Scale(self, *args) -> "void" :
+    def Scale(self, *args):
         """
         * Scales a Geometry. S is the scaling value.
 
@@ -168,7 +168,7 @@ class Geom_Geometry(OCC.MMgt.MMgt_TShared):
         """
         return _Geom.Geom_Geometry_Scale(self, *args)
 
-    def Translate(self, *args) -> "void" :
+    def Translate(self, *args):
         """
         * Translates a Geometry. V is the vector of the tanslation.
 
@@ -187,7 +187,7 @@ class Geom_Geometry(OCC.MMgt.MMgt_TShared):
         """
         return _Geom.Geom_Geometry_Translate(self, *args)
 
-    def Transform(self, *args) -> "void" :
+    def Transform(self, *args):
         """
         * Transformation of a geometric object. This tansformation can be a translation, a rotation, a symmetry, a scaling or a complex transformation obtained by combination of the previous elementaries transformations. (see class Transformation of the package Geom).
 
@@ -198,7 +198,7 @@ class Geom_Geometry(OCC.MMgt.MMgt_TShared):
         """
         return _Geom.Geom_Geometry_Transform(self, *args)
 
-    def Mirrored(self, *args) -> "Handle_Geom_Geometry" :
+    def Mirrored(self, *args):
         """
         :param P:
         :type P: gp_Pnt
@@ -215,7 +215,7 @@ class Geom_Geometry(OCC.MMgt.MMgt_TShared):
         """
         return _Geom.Geom_Geometry_Mirrored(self, *args)
 
-    def Rotated(self, *args) -> "Handle_Geom_Geometry" :
+    def Rotated(self, *args):
         """
         :param A1:
         :type A1: gp_Ax1
@@ -226,7 +226,7 @@ class Geom_Geometry(OCC.MMgt.MMgt_TShared):
         """
         return _Geom.Geom_Geometry_Rotated(self, *args)
 
-    def Scaled(self, *args) -> "Handle_Geom_Geometry" :
+    def Scaled(self, *args):
         """
         :param P:
         :type P: gp_Pnt
@@ -237,7 +237,7 @@ class Geom_Geometry(OCC.MMgt.MMgt_TShared):
         """
         return _Geom.Geom_Geometry_Scaled(self, *args)
 
-    def Transformed(self, *args) -> "Handle_Geom_Geometry" :
+    def Transformed(self, *args):
         """
         :param T:
         :type T: gp_Trsf
@@ -246,7 +246,7 @@ class Geom_Geometry(OCC.MMgt.MMgt_TShared):
         """
         return _Geom.Geom_Geometry_Transformed(self, *args)
 
-    def Translated(self, *args) -> "Handle_Geom_Geometry" :
+    def Translated(self, *args):
         """
         :param V:
         :type V: gp_Vec
@@ -261,20 +261,20 @@ class Geom_Geometry(OCC.MMgt.MMgt_TShared):
         """
         return _Geom.Geom_Geometry_Translated(self, *args)
 
-    def Copy(self, *args) -> "Handle_Geom_Geometry" :
+    def Copy(self):
         """
         * Creates a new object which is a copy of this geometric object.
 
         :rtype: Handle_Geom_Geometry
 
         """
-        return _Geom.Geom_Geometry_Copy(self, *args)
+        return _Geom.Geom_Geometry_Copy(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Geom_Geometry self)"""
         return _Geom.Geom_Geometry__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Geom_Geometry" :
+    def GetHandle(self):
         """GetHandle(Geom_Geometry self) -> Handle_Geom_Geometry"""
         return _Geom.Geom_Geometry_GetHandle(self)
 
@@ -323,41 +323,41 @@ Handle_Geom_Geometry._kill_pointed = new_instancemethod(_Geom.Handle_Geom_Geomet
 Handle_Geom_Geometry_swigregister = _Geom.Handle_Geom_Geometry_swigregister
 Handle_Geom_Geometry_swigregister(Handle_Geom_Geometry)
 
-def Handle_Geom_Geometry_DownCast(*args) -> "Handle_Geom_Geometry const" :
+def Handle_Geom_Geometry_DownCast(*args):
   return _Geom.Handle_Geom_Geometry_DownCast(*args)
 Handle_Geom_Geometry_DownCast = _Geom.Handle_Geom_Geometry_DownCast
 
 class Geom_HSequenceOfBSplineSurface(OCC.MMgt.MMgt_TShared):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _Geom.Geom_HSequenceOfBSplineSurface_swiginit(self,_Geom.new_Geom_HSequenceOfBSplineSurface(*args))
-    def IsEmpty(self, *args) -> "Standard_Boolean" :
+        _Geom.Geom_HSequenceOfBSplineSurface_swiginit(self,_Geom.new_Geom_HSequenceOfBSplineSurface())
+    def IsEmpty(self):
         """
         :rtype: bool
 
         """
-        return _Geom.Geom_HSequenceOfBSplineSurface_IsEmpty(self, *args)
+        return _Geom.Geom_HSequenceOfBSplineSurface_IsEmpty(self)
 
-    def Length(self, *args) -> "Standard_Integer" :
+    def Length(self):
         """
         :rtype: int
 
         """
-        return _Geom.Geom_HSequenceOfBSplineSurface_Length(self, *args)
+        return _Geom.Geom_HSequenceOfBSplineSurface_Length(self)
 
-    def Clear(self, *args) -> "void" :
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _Geom.Geom_HSequenceOfBSplineSurface_Clear(self, *args)
+        return _Geom.Geom_HSequenceOfBSplineSurface_Clear(self)
 
-    def Append(self, *args) -> "void" :
+    def Append(self, *args):
         """
         :param anItem:
         :type anItem: Handle_Geom_BSplineSurface &
@@ -370,7 +370,7 @@ class Geom_HSequenceOfBSplineSurface(OCC.MMgt.MMgt_TShared):
         """
         return _Geom.Geom_HSequenceOfBSplineSurface_Append(self, *args)
 
-    def Prepend(self, *args) -> "void" :
+    def Prepend(self, *args):
         """
         :param anItem:
         :type anItem: Handle_Geom_BSplineSurface &
@@ -383,23 +383,23 @@ class Geom_HSequenceOfBSplineSurface(OCC.MMgt.MMgt_TShared):
         """
         return _Geom.Geom_HSequenceOfBSplineSurface_Prepend(self, *args)
 
-    def Reverse(self, *args) -> "void" :
+    def Reverse(self):
         """
         :rtype: None
 
         """
-        return _Geom.Geom_HSequenceOfBSplineSurface_Reverse(self, *args)
+        return _Geom.Geom_HSequenceOfBSplineSurface_Reverse(self)
 
-    def InsertBefore(self, *args) -> "void" :
+    def InsertBefore(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :param anItem:
         :type anItem: Handle_Geom_BSplineSurface &
         :rtype: None
 
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :param aSequence:
         :type aSequence: Handle_Geom_HSequenceOfBSplineSurface &
         :rtype: None
@@ -407,16 +407,16 @@ class Geom_HSequenceOfBSplineSurface(OCC.MMgt.MMgt_TShared):
         """
         return _Geom.Geom_HSequenceOfBSplineSurface_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args) -> "void" :
+    def InsertAfter(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :param anItem:
         :type anItem: Handle_Geom_BSplineSurface &
         :rtype: None
 
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :param aSequence:
         :type aSequence: Handle_Geom_HSequenceOfBSplineSurface &
         :rtype: None
@@ -424,30 +424,30 @@ class Geom_HSequenceOfBSplineSurface(OCC.MMgt.MMgt_TShared):
         """
         return _Geom.Geom_HSequenceOfBSplineSurface_InsertAfter(self, *args)
 
-    def Exchange(self, *args) -> "void" :
+    def Exchange(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :param anOtherIndex:
-        :type anOtherIndex: int
+        :type anOtherIndex: Standard_Integer
         :rtype: None
 
         """
         return _Geom.Geom_HSequenceOfBSplineSurface_Exchange(self, *args)
 
-    def Split(self, *args) -> "Handle_Geom_HSequenceOfBSplineSurface" :
+    def Split(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :rtype: Handle_Geom_HSequenceOfBSplineSurface
 
         """
         return _Geom.Geom_HSequenceOfBSplineSurface_Split(self, *args)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :param anItem:
         :type anItem: Handle_Geom_BSplineSurface &
         :rtype: None
@@ -455,65 +455,65 @@ class Geom_HSequenceOfBSplineSurface(OCC.MMgt.MMgt_TShared):
         """
         return _Geom.Geom_HSequenceOfBSplineSurface_SetValue(self, *args)
 
-    def Value(self, *args) -> "Handle_Geom_BSplineSurface const &" :
+    def Value(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :rtype: Handle_Geom_BSplineSurface
 
         """
         return _Geom.Geom_HSequenceOfBSplineSurface_Value(self, *args)
 
-    def ChangeValue(self, *args) -> "Handle_Geom_BSplineSurface &" :
+    def ChangeValue(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :rtype: Handle_Geom_BSplineSurface
 
         """
         return _Geom.Geom_HSequenceOfBSplineSurface_ChangeValue(self, *args)
 
-    def Remove(self, *args) -> "void" :
+    def Remove(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :rtype: None
 
         :param fromIndex:
-        :type fromIndex: int
+        :type fromIndex: Standard_Integer
         :param toIndex:
-        :type toIndex: int
+        :type toIndex: Standard_Integer
         :rtype: None
 
         """
         return _Geom.Geom_HSequenceOfBSplineSurface_Remove(self, *args)
 
-    def Sequence(self, *args) -> "Geom_SequenceOfBSplineSurface const &" :
+    def Sequence(self):
         """
         :rtype: Geom_SequenceOfBSplineSurface
 
         """
-        return _Geom.Geom_HSequenceOfBSplineSurface_Sequence(self, *args)
+        return _Geom.Geom_HSequenceOfBSplineSurface_Sequence(self)
 
-    def ChangeSequence(self, *args) -> "Geom_SequenceOfBSplineSurface &" :
+    def ChangeSequence(self):
         """
         :rtype: Geom_SequenceOfBSplineSurface
 
         """
-        return _Geom.Geom_HSequenceOfBSplineSurface_ChangeSequence(self, *args)
+        return _Geom.Geom_HSequenceOfBSplineSurface_ChangeSequence(self)
 
-    def ShallowCopy(self, *args) -> "Handle_Geom_HSequenceOfBSplineSurface" :
+    def ShallowCopy(self):
         """
         :rtype: Handle_Geom_HSequenceOfBSplineSurface
 
         """
-        return _Geom.Geom_HSequenceOfBSplineSurface_ShallowCopy(self, *args)
+        return _Geom.Geom_HSequenceOfBSplineSurface_ShallowCopy(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Geom_HSequenceOfBSplineSurface self)"""
         return _Geom.Geom_HSequenceOfBSplineSurface__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Geom_HSequenceOfBSplineSurface" :
+    def GetHandle(self):
         """GetHandle(Geom_HSequenceOfBSplineSurface self) -> Handle_Geom_HSequenceOfBSplineSurface"""
         return _Geom.Geom_HSequenceOfBSplineSurface_GetHandle(self)
 
@@ -568,41 +568,41 @@ Handle_Geom_HSequenceOfBSplineSurface._kill_pointed = new_instancemethod(_Geom.H
 Handle_Geom_HSequenceOfBSplineSurface_swigregister = _Geom.Handle_Geom_HSequenceOfBSplineSurface_swigregister
 Handle_Geom_HSequenceOfBSplineSurface_swigregister(Handle_Geom_HSequenceOfBSplineSurface)
 
-def Handle_Geom_HSequenceOfBSplineSurface_DownCast(*args) -> "Handle_Geom_HSequenceOfBSplineSurface const" :
+def Handle_Geom_HSequenceOfBSplineSurface_DownCast(*args):
   return _Geom.Handle_Geom_HSequenceOfBSplineSurface_DownCast(*args)
 Handle_Geom_HSequenceOfBSplineSurface_DownCast = _Geom.Handle_Geom_HSequenceOfBSplineSurface_DownCast
 
 class Geom_HSequenceOfSurface(OCC.MMgt.MMgt_TShared):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _Geom.Geom_HSequenceOfSurface_swiginit(self,_Geom.new_Geom_HSequenceOfSurface(*args))
-    def IsEmpty(self, *args) -> "Standard_Boolean" :
+        _Geom.Geom_HSequenceOfSurface_swiginit(self,_Geom.new_Geom_HSequenceOfSurface())
+    def IsEmpty(self):
         """
         :rtype: bool
 
         """
-        return _Geom.Geom_HSequenceOfSurface_IsEmpty(self, *args)
+        return _Geom.Geom_HSequenceOfSurface_IsEmpty(self)
 
-    def Length(self, *args) -> "Standard_Integer" :
+    def Length(self):
         """
         :rtype: int
 
         """
-        return _Geom.Geom_HSequenceOfSurface_Length(self, *args)
+        return _Geom.Geom_HSequenceOfSurface_Length(self)
 
-    def Clear(self, *args) -> "void" :
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _Geom.Geom_HSequenceOfSurface_Clear(self, *args)
+        return _Geom.Geom_HSequenceOfSurface_Clear(self)
 
-    def Append(self, *args) -> "void" :
+    def Append(self, *args):
         """
         :param anItem:
         :type anItem: Handle_Geom_Surface &
@@ -615,7 +615,7 @@ class Geom_HSequenceOfSurface(OCC.MMgt.MMgt_TShared):
         """
         return _Geom.Geom_HSequenceOfSurface_Append(self, *args)
 
-    def Prepend(self, *args) -> "void" :
+    def Prepend(self, *args):
         """
         :param anItem:
         :type anItem: Handle_Geom_Surface &
@@ -628,23 +628,23 @@ class Geom_HSequenceOfSurface(OCC.MMgt.MMgt_TShared):
         """
         return _Geom.Geom_HSequenceOfSurface_Prepend(self, *args)
 
-    def Reverse(self, *args) -> "void" :
+    def Reverse(self):
         """
         :rtype: None
 
         """
-        return _Geom.Geom_HSequenceOfSurface_Reverse(self, *args)
+        return _Geom.Geom_HSequenceOfSurface_Reverse(self)
 
-    def InsertBefore(self, *args) -> "void" :
+    def InsertBefore(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :param anItem:
         :type anItem: Handle_Geom_Surface &
         :rtype: None
 
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :param aSequence:
         :type aSequence: Handle_Geom_HSequenceOfSurface &
         :rtype: None
@@ -652,16 +652,16 @@ class Geom_HSequenceOfSurface(OCC.MMgt.MMgt_TShared):
         """
         return _Geom.Geom_HSequenceOfSurface_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args) -> "void" :
+    def InsertAfter(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :param anItem:
         :type anItem: Handle_Geom_Surface &
         :rtype: None
 
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :param aSequence:
         :type aSequence: Handle_Geom_HSequenceOfSurface &
         :rtype: None
@@ -669,30 +669,30 @@ class Geom_HSequenceOfSurface(OCC.MMgt.MMgt_TShared):
         """
         return _Geom.Geom_HSequenceOfSurface_InsertAfter(self, *args)
 
-    def Exchange(self, *args) -> "void" :
+    def Exchange(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :param anOtherIndex:
-        :type anOtherIndex: int
+        :type anOtherIndex: Standard_Integer
         :rtype: None
 
         """
         return _Geom.Geom_HSequenceOfSurface_Exchange(self, *args)
 
-    def Split(self, *args) -> "Handle_Geom_HSequenceOfSurface" :
+    def Split(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :rtype: Handle_Geom_HSequenceOfSurface
 
         """
         return _Geom.Geom_HSequenceOfSurface_Split(self, *args)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :param anItem:
         :type anItem: Handle_Geom_Surface &
         :rtype: None
@@ -700,65 +700,65 @@ class Geom_HSequenceOfSurface(OCC.MMgt.MMgt_TShared):
         """
         return _Geom.Geom_HSequenceOfSurface_SetValue(self, *args)
 
-    def Value(self, *args) -> "Handle_Geom_Surface const &" :
+    def Value(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :rtype: Handle_Geom_Surface
 
         """
         return _Geom.Geom_HSequenceOfSurface_Value(self, *args)
 
-    def ChangeValue(self, *args) -> "Handle_Geom_Surface &" :
+    def ChangeValue(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :rtype: Handle_Geom_Surface
 
         """
         return _Geom.Geom_HSequenceOfSurface_ChangeValue(self, *args)
 
-    def Remove(self, *args) -> "void" :
+    def Remove(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :rtype: None
 
         :param fromIndex:
-        :type fromIndex: int
+        :type fromIndex: Standard_Integer
         :param toIndex:
-        :type toIndex: int
+        :type toIndex: Standard_Integer
         :rtype: None
 
         """
         return _Geom.Geom_HSequenceOfSurface_Remove(self, *args)
 
-    def Sequence(self, *args) -> "Geom_SequenceOfSurface const &" :
+    def Sequence(self):
         """
         :rtype: Geom_SequenceOfSurface
 
         """
-        return _Geom.Geom_HSequenceOfSurface_Sequence(self, *args)
+        return _Geom.Geom_HSequenceOfSurface_Sequence(self)
 
-    def ChangeSequence(self, *args) -> "Geom_SequenceOfSurface &" :
+    def ChangeSequence(self):
         """
         :rtype: Geom_SequenceOfSurface
 
         """
-        return _Geom.Geom_HSequenceOfSurface_ChangeSequence(self, *args)
+        return _Geom.Geom_HSequenceOfSurface_ChangeSequence(self)
 
-    def ShallowCopy(self, *args) -> "Handle_Geom_HSequenceOfSurface" :
+    def ShallowCopy(self):
         """
         :rtype: Handle_Geom_HSequenceOfSurface
 
         """
-        return _Geom.Geom_HSequenceOfSurface_ShallowCopy(self, *args)
+        return _Geom.Geom_HSequenceOfSurface_ShallowCopy(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Geom_HSequenceOfSurface self)"""
         return _Geom.Geom_HSequenceOfSurface__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Geom_HSequenceOfSurface" :
+    def GetHandle(self):
         """GetHandle(Geom_HSequenceOfSurface self) -> Handle_Geom_HSequenceOfSurface"""
         return _Geom.Geom_HSequenceOfSurface_GetHandle(self)
 
@@ -813,7 +813,7 @@ Handle_Geom_HSequenceOfSurface._kill_pointed = new_instancemethod(_Geom.Handle_G
 Handle_Geom_HSequenceOfSurface_swigregister = _Geom.Handle_Geom_HSequenceOfSurface_swigregister
 Handle_Geom_HSequenceOfSurface_swigregister(Handle_Geom_HSequenceOfSurface)
 
-def Handle_Geom_HSequenceOfSurface_DownCast(*args) -> "Handle_Geom_HSequenceOfSurface const" :
+def Handle_Geom_HSequenceOfSurface_DownCast(*args):
   return _Geom.Handle_Geom_HSequenceOfSurface_DownCast(*args)
 Handle_Geom_HSequenceOfSurface_DownCast = _Geom.Handle_Geom_HSequenceOfSurface_DownCast
 
@@ -834,7 +834,7 @@ class Geom_OsculatingSurface(object):
 
         """
         _Geom.Geom_OsculatingSurface_swiginit(self,_Geom.new_Geom_OsculatingSurface(*args))
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
         :param BS:
         :type BS: Handle_Geom_Surface &
@@ -845,21 +845,21 @@ class Geom_OsculatingSurface(object):
         """
         return _Geom.Geom_OsculatingSurface_Init(self, *args)
 
-    def BasisSurface(self, *args) -> "Handle_Geom_Surface" :
+    def BasisSurface(self):
         """
         :rtype: Handle_Geom_Surface
 
         """
-        return _Geom.Geom_OsculatingSurface_BasisSurface(self, *args)
+        return _Geom.Geom_OsculatingSurface_BasisSurface(self)
 
-    def Tolerance(self, *args) -> "Standard_Real" :
+    def Tolerance(self):
         """
         :rtype: float
 
         """
-        return _Geom.Geom_OsculatingSurface_Tolerance(self, *args)
+        return _Geom.Geom_OsculatingSurface_Tolerance(self)
 
-    def UOscSurf(self, *args) -> "Standard_Boolean" :
+    def UOscSurf(self, *args):
         """
         * if Standard_True, L is the local osculating surface along U at the point U,V.
 
@@ -876,7 +876,7 @@ class Geom_OsculatingSurface(object):
         """
         return _Geom.Geom_OsculatingSurface_UOscSurf(self, *args)
 
-    def VOscSurf(self, *args) -> "Standard_Boolean" :
+    def VOscSurf(self, *args):
         """
         * if Standard_True, L is the local osculating surface along V at the point U,V.
 
@@ -925,18 +925,18 @@ class Geom_SequenceNodeOfSequenceOfBSplineSurface(OCC.TCollection.TCollection_Se
 
         """
         _Geom.Geom_SequenceNodeOfSequenceOfBSplineSurface_swiginit(self,_Geom.new_Geom_SequenceNodeOfSequenceOfBSplineSurface(*args))
-    def Value(self, *args) -> "Handle_Geom_BSplineSurface &" :
+    def Value(self):
         """
         :rtype: Handle_Geom_BSplineSurface
 
         """
-        return _Geom.Geom_SequenceNodeOfSequenceOfBSplineSurface_Value(self, *args)
+        return _Geom.Geom_SequenceNodeOfSequenceOfBSplineSurface_Value(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Geom_SequenceNodeOfSequenceOfBSplineSurface self)"""
         return _Geom.Geom_SequenceNodeOfSequenceOfBSplineSurface__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Geom_SequenceNodeOfSequenceOfBSplineSurface" :
+    def GetHandle(self):
         """GetHandle(Geom_SequenceNodeOfSequenceOfBSplineSurface self) -> Handle_Geom_SequenceNodeOfSequenceOfBSplineSurface"""
         return _Geom.Geom_SequenceNodeOfSequenceOfBSplineSurface_GetHandle(self)
 
@@ -975,7 +975,7 @@ Handle_Geom_SequenceNodeOfSequenceOfBSplineSurface._kill_pointed = new_instancem
 Handle_Geom_SequenceNodeOfSequenceOfBSplineSurface_swigregister = _Geom.Handle_Geom_SequenceNodeOfSequenceOfBSplineSurface_swigregister
 Handle_Geom_SequenceNodeOfSequenceOfBSplineSurface_swigregister(Handle_Geom_SequenceNodeOfSequenceOfBSplineSurface)
 
-def Handle_Geom_SequenceNodeOfSequenceOfBSplineSurface_DownCast(*args) -> "Handle_Geom_SequenceNodeOfSequenceOfBSplineSurface const" :
+def Handle_Geom_SequenceNodeOfSequenceOfBSplineSurface_DownCast(*args):
   return _Geom.Handle_Geom_SequenceNodeOfSequenceOfBSplineSurface_DownCast(*args)
 Handle_Geom_SequenceNodeOfSequenceOfBSplineSurface_DownCast = _Geom.Handle_Geom_SequenceNodeOfSequenceOfBSplineSurface_DownCast
 
@@ -994,18 +994,18 @@ class Geom_SequenceNodeOfSequenceOfSurface(OCC.TCollection.TCollection_SeqNode):
 
         """
         _Geom.Geom_SequenceNodeOfSequenceOfSurface_swiginit(self,_Geom.new_Geom_SequenceNodeOfSequenceOfSurface(*args))
-    def Value(self, *args) -> "Handle_Geom_Surface &" :
+    def Value(self):
         """
         :rtype: Handle_Geom_Surface
 
         """
-        return _Geom.Geom_SequenceNodeOfSequenceOfSurface_Value(self, *args)
+        return _Geom.Geom_SequenceNodeOfSequenceOfSurface_Value(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Geom_SequenceNodeOfSequenceOfSurface self)"""
         return _Geom.Geom_SequenceNodeOfSequenceOfSurface__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Geom_SequenceNodeOfSequenceOfSurface" :
+    def GetHandle(self):
         """GetHandle(Geom_SequenceNodeOfSequenceOfSurface self) -> Handle_Geom_SequenceNodeOfSequenceOfSurface"""
         return _Geom.Geom_SequenceNodeOfSequenceOfSurface_GetHandle(self)
 
@@ -1044,27 +1044,27 @@ Handle_Geom_SequenceNodeOfSequenceOfSurface._kill_pointed = new_instancemethod(_
 Handle_Geom_SequenceNodeOfSequenceOfSurface_swigregister = _Geom.Handle_Geom_SequenceNodeOfSequenceOfSurface_swigregister
 Handle_Geom_SequenceNodeOfSequenceOfSurface_swigregister(Handle_Geom_SequenceNodeOfSequenceOfSurface)
 
-def Handle_Geom_SequenceNodeOfSequenceOfSurface_DownCast(*args) -> "Handle_Geom_SequenceNodeOfSequenceOfSurface const" :
+def Handle_Geom_SequenceNodeOfSequenceOfSurface_DownCast(*args):
   return _Geom.Handle_Geom_SequenceNodeOfSequenceOfSurface_DownCast(*args)
 Handle_Geom_SequenceNodeOfSequenceOfSurface_DownCast = _Geom.Handle_Geom_SequenceNodeOfSequenceOfSurface_DownCast
 
 class Geom_SequenceOfBSplineSurface(OCC.TCollection.TCollection_BaseSequence):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _Geom.Geom_SequenceOfBSplineSurface_swiginit(self,_Geom.new_Geom_SequenceOfBSplineSurface(*args))
-    def Clear(self, *args) -> "void" :
+        _Geom.Geom_SequenceOfBSplineSurface_swiginit(self,_Geom.new_Geom_SequenceOfBSplineSurface())
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _Geom.Geom_SequenceOfBSplineSurface_Clear(self, *args)
+        return _Geom.Geom_SequenceOfBSplineSurface_Clear(self)
 
-    def Assign(self, *args) -> "Geom_SequenceOfBSplineSurface const &" :
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: Geom_SequenceOfBSplineSurface &
@@ -1073,7 +1073,7 @@ class Geom_SequenceOfBSplineSurface(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Geom.Geom_SequenceOfBSplineSurface_Assign(self, *args)
 
-    def Set(self, *args) -> "Geom_SequenceOfBSplineSurface const &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: Geom_SequenceOfBSplineSurface &
@@ -1082,7 +1082,7 @@ class Geom_SequenceOfBSplineSurface(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Geom.Geom_SequenceOfBSplineSurface_Set(self, *args)
 
-    def Append(self, *args) -> "void" :
+    def Append(self, *args):
         """
         :param T:
         :type T: Handle_Geom_BSplineSurface &
@@ -1095,7 +1095,7 @@ class Geom_SequenceOfBSplineSurface(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Geom.Geom_SequenceOfBSplineSurface_Append(self, *args)
 
-    def Prepend(self, *args) -> "void" :
+    def Prepend(self, *args):
         """
         :param T:
         :type T: Handle_Geom_BSplineSurface &
@@ -1108,16 +1108,16 @@ class Geom_SequenceOfBSplineSurface(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Geom.Geom_SequenceOfBSplineSurface_Prepend(self, *args)
 
-    def InsertBefore(self, *args) -> "void" :
+    def InsertBefore(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param T:
         :type T: Handle_Geom_BSplineSurface &
         :rtype: None
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param S:
         :type S: Geom_SequenceOfBSplineSurface &
         :rtype: None
@@ -1125,16 +1125,16 @@ class Geom_SequenceOfBSplineSurface(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Geom.Geom_SequenceOfBSplineSurface_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args) -> "void" :
+    def InsertAfter(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param T:
         :type T: Handle_Geom_BSplineSurface &
         :rtype: None
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param S:
         :type S: Geom_SequenceOfBSplineSurface &
         :rtype: None
@@ -1142,24 +1142,24 @@ class Geom_SequenceOfBSplineSurface(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Geom.Geom_SequenceOfBSplineSurface_InsertAfter(self, *args)
 
-    def First(self, *args) -> "Handle_Geom_BSplineSurface const &" :
+    def First(self):
         """
         :rtype: Handle_Geom_BSplineSurface
 
         """
-        return _Geom.Geom_SequenceOfBSplineSurface_First(self, *args)
+        return _Geom.Geom_SequenceOfBSplineSurface_First(self)
 
-    def Last(self, *args) -> "Handle_Geom_BSplineSurface const &" :
+    def Last(self):
         """
         :rtype: Handle_Geom_BSplineSurface
 
         """
-        return _Geom.Geom_SequenceOfBSplineSurface_Last(self, *args)
+        return _Geom.Geom_SequenceOfBSplineSurface_Last(self)
 
-    def Split(self, *args) -> "void" :
+    def Split(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Sub:
         :type Sub: Geom_SequenceOfBSplineSurface &
         :rtype: None
@@ -1167,19 +1167,19 @@ class Geom_SequenceOfBSplineSurface(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Geom.Geom_SequenceOfBSplineSurface_Split(self, *args)
 
-    def Value(self, *args) -> "Handle_Geom_BSplineSurface const &" :
+    def Value(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Handle_Geom_BSplineSurface
 
         """
         return _Geom.Geom_SequenceOfBSplineSurface_Value(self, *args)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param I:
         :type I: Handle_Geom_BSplineSurface &
         :rtype: None
@@ -1187,25 +1187,25 @@ class Geom_SequenceOfBSplineSurface(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Geom.Geom_SequenceOfBSplineSurface_SetValue(self, *args)
 
-    def ChangeValue(self, *args) -> "Handle_Geom_BSplineSurface &" :
+    def ChangeValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Handle_Geom_BSplineSurface
 
         """
         return _Geom.Geom_SequenceOfBSplineSurface_ChangeValue(self, *args)
 
-    def Remove(self, *args) -> "void" :
+    def Remove(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: None
 
         :param FromIndex:
-        :type FromIndex: int
+        :type FromIndex: Standard_Integer
         :param ToIndex:
-        :type ToIndex: int
+        :type ToIndex: Standard_Integer
         :rtype: None
 
         """
@@ -1240,20 +1240,20 @@ Geom_SequenceOfBSplineSurface_swigregister(Geom_SequenceOfBSplineSurface)
 class Geom_SequenceOfSurface(OCC.TCollection.TCollection_BaseSequence):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _Geom.Geom_SequenceOfSurface_swiginit(self,_Geom.new_Geom_SequenceOfSurface(*args))
-    def Clear(self, *args) -> "void" :
+        _Geom.Geom_SequenceOfSurface_swiginit(self,_Geom.new_Geom_SequenceOfSurface())
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _Geom.Geom_SequenceOfSurface_Clear(self, *args)
+        return _Geom.Geom_SequenceOfSurface_Clear(self)
 
-    def Assign(self, *args) -> "Geom_SequenceOfSurface const &" :
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: Geom_SequenceOfSurface &
@@ -1262,7 +1262,7 @@ class Geom_SequenceOfSurface(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Geom.Geom_SequenceOfSurface_Assign(self, *args)
 
-    def Set(self, *args) -> "Geom_SequenceOfSurface const &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: Geom_SequenceOfSurface &
@@ -1271,7 +1271,7 @@ class Geom_SequenceOfSurface(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Geom.Geom_SequenceOfSurface_Set(self, *args)
 
-    def Append(self, *args) -> "void" :
+    def Append(self, *args):
         """
         :param T:
         :type T: Handle_Geom_Surface &
@@ -1284,7 +1284,7 @@ class Geom_SequenceOfSurface(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Geom.Geom_SequenceOfSurface_Append(self, *args)
 
-    def Prepend(self, *args) -> "void" :
+    def Prepend(self, *args):
         """
         :param T:
         :type T: Handle_Geom_Surface &
@@ -1297,16 +1297,16 @@ class Geom_SequenceOfSurface(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Geom.Geom_SequenceOfSurface_Prepend(self, *args)
 
-    def InsertBefore(self, *args) -> "void" :
+    def InsertBefore(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param T:
         :type T: Handle_Geom_Surface &
         :rtype: None
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param S:
         :type S: Geom_SequenceOfSurface &
         :rtype: None
@@ -1314,16 +1314,16 @@ class Geom_SequenceOfSurface(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Geom.Geom_SequenceOfSurface_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args) -> "void" :
+    def InsertAfter(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param T:
         :type T: Handle_Geom_Surface &
         :rtype: None
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param S:
         :type S: Geom_SequenceOfSurface &
         :rtype: None
@@ -1331,24 +1331,24 @@ class Geom_SequenceOfSurface(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Geom.Geom_SequenceOfSurface_InsertAfter(self, *args)
 
-    def First(self, *args) -> "Handle_Geom_Surface const &" :
+    def First(self):
         """
         :rtype: Handle_Geom_Surface
 
         """
-        return _Geom.Geom_SequenceOfSurface_First(self, *args)
+        return _Geom.Geom_SequenceOfSurface_First(self)
 
-    def Last(self, *args) -> "Handle_Geom_Surface const &" :
+    def Last(self):
         """
         :rtype: Handle_Geom_Surface
 
         """
-        return _Geom.Geom_SequenceOfSurface_Last(self, *args)
+        return _Geom.Geom_SequenceOfSurface_Last(self)
 
-    def Split(self, *args) -> "void" :
+    def Split(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Sub:
         :type Sub: Geom_SequenceOfSurface &
         :rtype: None
@@ -1356,19 +1356,19 @@ class Geom_SequenceOfSurface(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Geom.Geom_SequenceOfSurface_Split(self, *args)
 
-    def Value(self, *args) -> "Handle_Geom_Surface const &" :
+    def Value(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Handle_Geom_Surface
 
         """
         return _Geom.Geom_SequenceOfSurface_Value(self, *args)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param I:
         :type I: Handle_Geom_Surface &
         :rtype: None
@@ -1376,25 +1376,25 @@ class Geom_SequenceOfSurface(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Geom.Geom_SequenceOfSurface_SetValue(self, *args)
 
-    def ChangeValue(self, *args) -> "Handle_Geom_Surface &" :
+    def ChangeValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Handle_Geom_Surface
 
         """
         return _Geom.Geom_SequenceOfSurface_ChangeValue(self, *args)
 
-    def Remove(self, *args) -> "void" :
+    def Remove(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: None
 
         :param FromIndex:
-        :type FromIndex: int
+        :type FromIndex: Standard_Integer
         :param ToIndex:
-        :type ToIndex: int
+        :type ToIndex: Standard_Integer
         :rtype: None
 
         """
@@ -1443,7 +1443,7 @@ class Geom_Transformation(OCC.MMgt.MMgt_TShared):
 
         """
         _Geom.Geom_Transformation_swiginit(self,_Geom.new_Geom_Transformation(*args))
-    def SetMirror(self, *args) -> "void" :
+    def SetMirror(self, *args):
         """
         * Makes the transformation into a symmetrical transformation with respect to a point P. P is the center of the symmetry.
 
@@ -1466,7 +1466,7 @@ class Geom_Transformation(OCC.MMgt.MMgt_TShared):
         """
         return _Geom.Geom_Transformation_SetMirror(self, *args)
 
-    def SetRotation(self, *args) -> "void" :
+    def SetRotation(self, *args):
         """
         * Makes the transformation into a rotation. A1 is the axis rotation and Ang is the angular value of the rotation in radians.
 
@@ -1479,7 +1479,7 @@ class Geom_Transformation(OCC.MMgt.MMgt_TShared):
         """
         return _Geom.Geom_Transformation_SetRotation(self, *args)
 
-    def SetScale(self, *args) -> "void" :
+    def SetScale(self, *args):
         """
         * Makes the transformation into a scale. P is the center of the scale and S is the scaling value.
 
@@ -1492,7 +1492,7 @@ class Geom_Transformation(OCC.MMgt.MMgt_TShared):
         """
         return _Geom.Geom_Transformation_SetScale(self, *args)
 
-    def SetTransformation(self, *args) -> "void" :
+    def SetTransformation(self, *args):
         """
         * Makes a transformation allowing passage from the coordinate system 'FromSystem1' to the coordinate system 'ToSystem2'. Example : In a C++ implementation : Real x1, y1, z1; // are the coordinates of a point in the  // local system FromSystem1 Real x2, y2, z2; // are the coordinates of a point in the  // local system ToSystem2 gp_Pnt P1 (x1, y1, z1) Geom_Transformation T; T.SetTransformation (FromSystem1, ToSystem2); gp_Pnt P2 = P1.Transformed (T); P2.Coord (x2, y2, z2);
 
@@ -1511,7 +1511,7 @@ class Geom_Transformation(OCC.MMgt.MMgt_TShared):
         """
         return _Geom.Geom_Transformation_SetTransformation(self, *args)
 
-    def SetTranslation(self, *args) -> "void" :
+    def SetTranslation(self, *args):
         """
         * Makes the transformation into a translation. V is the vector of the translation.
 
@@ -1530,7 +1530,7 @@ class Geom_Transformation(OCC.MMgt.MMgt_TShared):
         """
         return _Geom.Geom_Transformation_SetTranslation(self, *args)
 
-    def SetTrsf(self, *args) -> "void" :
+    def SetTrsf(self, *args):
         """
         * Converts the gp_Trsf transformation T into this transformation.
 
@@ -1541,74 +1541,74 @@ class Geom_Transformation(OCC.MMgt.MMgt_TShared):
         """
         return _Geom.Geom_Transformation_SetTrsf(self, *args)
 
-    def IsNegative(self, *args) -> "Standard_Boolean" :
+    def IsNegative(self):
         """
         * Checks whether this transformation is an indirect transformation: returns true if the determinant of the matrix of the vectorial part of the transformation is less than 0.
 
         :rtype: bool
 
         """
-        return _Geom.Geom_Transformation_IsNegative(self, *args)
+        return _Geom.Geom_Transformation_IsNegative(self)
 
-    def Form(self, *args) -> "gp_TrsfForm" :
+    def Form(self):
         """
         * Returns the nature of this transformation as a value of the gp_TrsfForm enumeration.
 
         :rtype: gp_TrsfForm
 
         """
-        return _Geom.Geom_Transformation_Form(self, *args)
+        return _Geom.Geom_Transformation_Form(self)
 
-    def ScaleFactor(self, *args) -> "Standard_Real" :
+    def ScaleFactor(self):
         """
         * Returns the scale value of the transformation.
 
         :rtype: float
 
         """
-        return _Geom.Geom_Transformation_ScaleFactor(self, *args)
+        return _Geom.Geom_Transformation_ScaleFactor(self)
 
-    def Trsf(self, *args) -> "gp_Trsf const" :
+    def Trsf(self):
         """
         * Returns a non transient copy of <self>.
 
         :rtype: gp_Trsf
 
         """
-        return _Geom.Geom_Transformation_Trsf(self, *args)
+        return _Geom.Geom_Transformation_Trsf(self)
 
-    def Value(self, *args) -> "Standard_Real" :
+    def Value(self, *args):
         """
         * Returns the coefficients of the global matrix of tranformation. It is a 3 rows X 4 columns matrix. Raised if Row < 1 or Row > 3 or Col < 1 or Col > 4 Computes the reverse transformation.
 
         :param Row:
-        :type Row: int
+        :type Row: Standard_Integer
         :param Col:
-        :type Col: int
+        :type Col: Standard_Integer
         :rtype: float
 
         """
         return _Geom.Geom_Transformation_Value(self, *args)
 
-    def Invert(self, *args) -> "void" :
+    def Invert(self):
         """
         * Raised if the the transformation is singular. This means that the ScaleFactor is lower or equal to Resolution from package gp.
 
         :rtype: None
 
         """
-        return _Geom.Geom_Transformation_Invert(self, *args)
+        return _Geom.Geom_Transformation_Invert(self)
 
-    def Inverted(self, *args) -> "Handle_Geom_Transformation" :
+    def Inverted(self):
         """
         * Raised if the the transformation is singular. This means that the ScaleFactor is lower or equal to Resolution from package gp.
 
         :rtype: Handle_Geom_Transformation
 
         """
-        return _Geom.Geom_Transformation_Inverted(self, *args)
+        return _Geom.Geom_Transformation_Inverted(self)
 
-    def Multiplied(self, *args) -> "Handle_Geom_Transformation" :
+    def Multiplied(self, *args):
         """
         * Computes the transformation composed with Other and <self>. <self> * Other. Returns a new transformation
 
@@ -1619,7 +1619,7 @@ class Geom_Transformation(OCC.MMgt.MMgt_TShared):
         """
         return _Geom.Geom_Transformation_Multiplied(self, *args)
 
-    def Multiply(self, *args) -> "void" :
+    def Multiply(self, *args):
         """
         * Computes the transformation composed with Other and <self> . <self> = <self> * Other.
 
@@ -1630,29 +1630,29 @@ class Geom_Transformation(OCC.MMgt.MMgt_TShared):
         """
         return _Geom.Geom_Transformation_Multiply(self, *args)
 
-    def Power(self, *args) -> "void" :
+    def Power(self, *args):
         """
         * Computes the following composition of transformations if N > 0 <self> * <self> * .......* <self>. if N = 0 Identity if N < 0 <self>.Invert() * .........* <self>.Invert() Raised if N < 0 and if the transformation is not inversible
 
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :rtype: None
 
         """
         return _Geom.Geom_Transformation_Power(self, *args)
 
-    def Powered(self, *args) -> "Handle_Geom_Transformation" :
+    def Powered(self, *args):
         """
         * Raised if N < 0 and if the transformation is not inversible
 
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :rtype: Handle_Geom_Transformation
 
         """
         return _Geom.Geom_Transformation_Powered(self, *args)
 
-    def PreMultiply(self, *args) -> "void" :
+    def PreMultiply(self, *args):
         """
         * Computes the matrix of the transformation composed with <self> and Other. <self> = Other * <self>
 
@@ -1663,7 +1663,7 @@ class Geom_Transformation(OCC.MMgt.MMgt_TShared):
         """
         return _Geom.Geom_Transformation_PreMultiply(self, *args)
 
-    def Transforms(self, *args) -> "void" :
+    def Transforms(self):
         """
         * Applies the transformation <self> to the triplet {X, Y, Z}.
 
@@ -1676,22 +1676,22 @@ class Geom_Transformation(OCC.MMgt.MMgt_TShared):
         :rtype: None
 
         """
-        return _Geom.Geom_Transformation_Transforms(self, *args)
+        return _Geom.Geom_Transformation_Transforms(self)
 
-    def Copy(self, *args) -> "Handle_Geom_Transformation" :
+    def Copy(self):
         """
         * Creates a new object which is a copy of this transformation.
 
         :rtype: Handle_Geom_Transformation
 
         """
-        return _Geom.Geom_Transformation_Copy(self, *args)
+        return _Geom.Geom_Transformation_Copy(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Geom_Transformation self)"""
         return _Geom.Geom_Transformation__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Geom_Transformation" :
+    def GetHandle(self):
         """GetHandle(Geom_Transformation self) -> Handle_Geom_Transformation"""
         return _Geom.Geom_Transformation_GetHandle(self)
 
@@ -1749,7 +1749,7 @@ Handle_Geom_Transformation._kill_pointed = new_instancemethod(_Geom.Handle_Geom_
 Handle_Geom_Transformation_swigregister = _Geom.Handle_Geom_Transformation_swigregister
 Handle_Geom_Transformation_swigregister(Handle_Geom_Transformation)
 
-def Handle_Geom_Transformation_DownCast(*args) -> "Handle_Geom_Transformation const" :
+def Handle_Geom_Transformation_DownCast(*args):
   return _Geom.Handle_Geom_Transformation_DownCast(*args)
 Handle_Geom_Transformation_DownCast = _Geom.Handle_Geom_Transformation_DownCast
 
@@ -1757,7 +1757,7 @@ class Geom_AxisPlacement(Geom_Geometry):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def SetAxis(self, *args) -> "void" :
+    def SetAxis(self, *args):
         """
         * Assigns A1 as the 'main Axis' of this positioning system. This modifies - its origin, and - its 'main Direction'. If this positioning system is a Geom_Axis2Placement, then its 'X Direction' and 'Y Direction' are recomputed. Exceptions For a Geom_Axis2Placement: Standard_ConstructionError if A1 and the previous 'X Direction' of the coordinate system are parallel.
 
@@ -1768,7 +1768,7 @@ class Geom_AxisPlacement(Geom_Geometry):
         """
         return _Geom.Geom_AxisPlacement_SetAxis(self, *args)
 
-    def SetDirection(self, *args) -> "void" :
+    def SetDirection(self, *args):
         """
         * Changes the direction of the axis placement. If <self> is an axis placement two axis the main 'Direction' is modified and the 'XDirection' and 'YDirection' are recomputed. Raises ConstructionError only for an axis placement two axis if V and the previous 'XDirection' are parallel because it is not possible to calculate the new 'XDirection' and the new 'YDirection'.
 
@@ -1779,7 +1779,7 @@ class Geom_AxisPlacement(Geom_Geometry):
         """
         return _Geom.Geom_AxisPlacement_SetDirection(self, *args)
 
-    def SetLocation(self, *args) -> "void" :
+    def SetLocation(self, *args):
         """
         * Assigns the point P as the origin of this positioning system.
 
@@ -1790,7 +1790,7 @@ class Geom_AxisPlacement(Geom_Geometry):
         """
         return _Geom.Geom_AxisPlacement_SetLocation(self, *args)
 
-    def Angle(self, *args) -> "Standard_Real" :
+    def Angle(self, *args):
         """
         * Computes the angular value, in radians, between the 'main Direction' of this positioning system and that of positioning system Other. The result is a value between 0 and Pi.
 
@@ -1801,38 +1801,38 @@ class Geom_AxisPlacement(Geom_Geometry):
         """
         return _Geom.Geom_AxisPlacement_Angle(self, *args)
 
-    def Axis(self, *args) -> "gp_Ax1 const" :
+    def Axis(self):
         """
         * Returns the main axis of the axis placement. For an 'Axis2placement' it is the main axis (Location, Direction ). For an 'Axis1Placement' this method returns a copy of <self>.
 
         :rtype: gp_Ax1
 
         """
-        return _Geom.Geom_AxisPlacement_Axis(self, *args)
+        return _Geom.Geom_AxisPlacement_Axis(self)
 
-    def Direction(self, *args) -> "gp_Dir" :
+    def Direction(self):
         """
         * Returns the main 'Direction' of an axis placement.
 
         :rtype: gp_Dir
 
         """
-        return _Geom.Geom_AxisPlacement_Direction(self, *args)
+        return _Geom.Geom_AxisPlacement_Direction(self)
 
-    def Location(self, *args) -> "gp_Pnt" :
+    def Location(self):
         """
         * Returns the Location point (origin) of the axis placement.
 
         :rtype: gp_Pnt
 
         """
-        return _Geom.Geom_AxisPlacement_Location(self, *args)
+        return _Geom.Geom_AxisPlacement_Location(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Geom_AxisPlacement self)"""
         return _Geom.Geom_AxisPlacement__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Geom_AxisPlacement" :
+    def GetHandle(self):
         """GetHandle(Geom_AxisPlacement self) -> Handle_Geom_AxisPlacement"""
         return _Geom.Geom_AxisPlacement_GetHandle(self)
 
@@ -1877,7 +1877,7 @@ Handle_Geom_AxisPlacement._kill_pointed = new_instancemethod(_Geom.Handle_Geom_A
 Handle_Geom_AxisPlacement_swigregister = _Geom.Handle_Geom_AxisPlacement_swigregister
 Handle_Geom_AxisPlacement_swigregister(Handle_Geom_AxisPlacement)
 
-def Handle_Geom_AxisPlacement_DownCast(*args) -> "Handle_Geom_AxisPlacement const" :
+def Handle_Geom_AxisPlacement_DownCast(*args):
   return _Geom.Handle_Geom_AxisPlacement_DownCast(*args)
 Handle_Geom_AxisPlacement_DownCast = _Geom.Handle_Geom_AxisPlacement_DownCast
 
@@ -1885,16 +1885,16 @@ class Geom_Curve(Geom_Geometry):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def Reverse(self, *args) -> "void" :
+    def Reverse(self):
         """
         * Changes the direction of parametrization of <self>. The 'FirstParameter' and the 'LastParameter' are not changed but the orientation of the curve is modified. If the curve is bounded the StartPoint of the initial curve becomes the EndPoint of the reversed curve and the EndPoint of the initial curve becomes the StartPoint of the reversed curve.
 
         :rtype: void
 
         """
-        return _Geom.Geom_Curve_Reverse(self, *args)
+        return _Geom.Geom_Curve_Reverse(self)
 
-    def ReversedParameter(self, *args) -> "Standard_Real" :
+    def ReversedParameter(self, *args):
         """
         * Returns the parameter on the reversed curve for the point of parameter U on <self>.  me->Reversed()->Value(me->ReversedParameter(U))  is the same point as  me->Value(U)
 
@@ -1905,7 +1905,7 @@ class Geom_Curve(Geom_Geometry):
         """
         return _Geom.Geom_Curve_ReversedParameter(self, *args)
 
-    def TransformedParameter(self, *args) -> "Standard_Real" :
+    def TransformedParameter(self, *args):
         """
         * Returns the parameter on the transformed curve for the transform of the point of parameter U on <self>.  me->Transformed(T)->Value(me->TransformedParameter(U,T))  is the same point as  me->Value(U).Transformed(T)  This methods returns <U>  It can be redefined. For example on the Line.
 
@@ -1918,7 +1918,7 @@ class Geom_Curve(Geom_Geometry):
         """
         return _Geom.Geom_Curve_TransformedParameter(self, *args)
 
-    def ParametricTransformation(self, *args) -> "Standard_Real" :
+    def ParametricTransformation(self, *args):
         """
         * Returns a coefficient to compute the parameter on the transformed curve for the transform of the point on <self>.  Transformed(T)->Value(U * ParametricTransformation(T))  is the same point as  Value(U).Transformed(T)  This methods returns 1.  It can be redefined. For example on the Line.
 
@@ -1929,81 +1929,81 @@ class Geom_Curve(Geom_Geometry):
         """
         return _Geom.Geom_Curve_ParametricTransformation(self, *args)
 
-    def Reversed(self, *args) -> "Handle_Geom_Curve" :
+    def Reversed(self):
         """
         * Returns a copy of <self> reversed.
 
         :rtype: Handle_Geom_Curve
 
         """
-        return _Geom.Geom_Curve_Reversed(self, *args)
+        return _Geom.Geom_Curve_Reversed(self)
 
-    def FirstParameter(self, *args) -> "Standard_Real" :
+    def FirstParameter(self):
         """
         * Returns the value of the first parameter. Warnings : It can be RealFirst from package Standard if the curve is infinite
 
         :rtype: float
 
         """
-        return _Geom.Geom_Curve_FirstParameter(self, *args)
+        return _Geom.Geom_Curve_FirstParameter(self)
 
-    def LastParameter(self, *args) -> "Standard_Real" :
+    def LastParameter(self):
         """
         * Returns the value of the last parameter. Warnings : It can be RealLast from package Standard if the curve is infinite
 
         :rtype: float
 
         """
-        return _Geom.Geom_Curve_LastParameter(self, *args)
+        return _Geom.Geom_Curve_LastParameter(self)
 
-    def IsClosed(self, *args) -> "Standard_Boolean" :
+    def IsClosed(self):
         """
         * Returns true if the curve is closed. Some curves such as circle are always closed, others such as line are never closed (by definition). Some Curves such as OffsetCurve can be closed or not. These curves are considered as closed if the distance between the first point and the last point of the curve is lower or equal to the Resolution from package gp wich is a fixed criterion independant of the application.
 
         :rtype: bool
 
         """
-        return _Geom.Geom_Curve_IsClosed(self, *args)
+        return _Geom.Geom_Curve_IsClosed(self)
 
-    def IsPeriodic(self, *args) -> "Standard_Boolean" :
+    def IsPeriodic(self):
         """
         * Is the parametrization of the curve periodic ? It is possible only if the curve is closed and if the following relation is satisfied : for each parametric value U the distance between the point P(u) and the point P (u + T) is lower or equal to Resolution from package gp, T is the period and must be a constant. There are three possibilities : . the curve is never periodic by definition (SegmentLine) . the curve is always periodic by definition (Circle) . the curve can be defined as periodic (BSpline). In this case a function SetPeriodic allows you to give the shape of the curve. The general rule for this case is : if a curve can be periodic or not the default periodicity set is non periodic and you have to turn (explicitly) the curve into a periodic curve if you want the curve to be periodic.
 
         :rtype: bool
 
         """
-        return _Geom.Geom_Curve_IsPeriodic(self, *args)
+        return _Geom.Geom_Curve_IsPeriodic(self)
 
-    def Period(self, *args) -> "Standard_Real" :
+    def Period(self):
         """
         * Returns the period of this curve. Exceptions Standard_NoSuchObject if this curve is not periodic.
 
         :rtype: float
 
         """
-        return _Geom.Geom_Curve_Period(self, *args)
+        return _Geom.Geom_Curve_Period(self)
 
-    def Continuity(self, *args) -> "GeomAbs_Shape" :
+    def Continuity(self):
         """
         * It is the global continuity of the curve C0 : only geometric continuity, C1 : continuity of the first derivative all along the Curve, C2 : continuity of the second derivative all along the Curve, C3 : continuity of the third derivative all along the Curve, G1 : tangency continuity all along the Curve, G2 : curvature continuity all along the Curve, CN : the order of continuity is infinite.
 
         :rtype: GeomAbs_Shape
 
         """
-        return _Geom.Geom_Curve_Continuity(self, *args)
+        return _Geom.Geom_Curve_Continuity(self)
 
-    def IsCN(self, *args) -> "Standard_Boolean" :
+    def IsCN(self, *args):
         """
         * Returns true if the degree of continuity of this curve is at least N. Exceptions - Standard_RangeError if N is less than 0.
 
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :rtype: bool
 
         """
         return _Geom.Geom_Curve_IsCN(self, *args)
 
-    def D0(self, *args) -> "void" :
+    def D0(self, *args):
         """
         * Returns in P the point of parameter U. If the curve is periodic then the returned point is P(U) with U = Ustart + (U - Uend) where Ustart and Uend are the parametric bounds of the curve. Raised only for the 'OffsetCurve' if it is not possible to compute the current point. For example when the first derivative on the basis curve and the offset direction are parallel.
 
@@ -2016,7 +2016,7 @@ class Geom_Curve(Geom_Geometry):
         """
         return _Geom.Geom_Curve_D0(self, *args)
 
-    def D1(self, *args) -> "void" :
+    def D1(self, *args):
         """
         * Returns the point P of parameter U and the first derivative V1. Raised if the continuity of the curve is not C1.
 
@@ -2031,7 +2031,7 @@ class Geom_Curve(Geom_Geometry):
         """
         return _Geom.Geom_Curve_D1(self, *args)
 
-    def D2(self, *args) -> "void" :
+    def D2(self, *args):
         """
         * Returns the point P of parameter U, the first and second derivatives V1 and V2. Raised if the continuity of the curve is not C2.
 
@@ -2048,7 +2048,7 @@ class Geom_Curve(Geom_Geometry):
         """
         return _Geom.Geom_Curve_D2(self, *args)
 
-    def D3(self, *args) -> "void" :
+    def D3(self, *args):
         """
         * Returns the point P of parameter U, the first, the second and the third derivative. Raised if the continuity of the curve is not C3.
 
@@ -2067,20 +2067,20 @@ class Geom_Curve(Geom_Geometry):
         """
         return _Geom.Geom_Curve_D3(self, *args)
 
-    def DN(self, *args) -> "gp_Vec" :
+    def DN(self, *args):
         """
         * The returned vector gives the value of the derivative for the order of derivation N. Raised if the continuity of the curve is not CN. Raised if the derivative cannot be computed  easily. e.g. rational bspline and n > 3. Raised if N < 1.
 
         :param U:
         :type U: float
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :rtype: gp_Vec
 
         """
         return _Geom.Geom_Curve_DN(self, *args)
 
-    def Value(self, *args) -> "gp_Pnt" :
+    def Value(self, *args):
         """
         * Computes the point of parameter U on <self>. If the curve is periodic then the returned point is P(U) with U = Ustart + (U - Uend) where Ustart and Uend are the parametric bounds of the curve. it is implemented with D0. Raised only for the 'OffsetCurve' if it is not possible to compute the current point. For example when the first derivative on the basis curve and the offset direction are parallel.
 
@@ -2091,11 +2091,11 @@ class Geom_Curve(Geom_Geometry):
         """
         return _Geom.Geom_Curve_Value(self, *args)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Geom_Curve self)"""
         return _Geom.Geom_Curve__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Geom_Curve" :
+    def GetHandle(self):
         """GetHandle(Geom_Curve self) -> Handle_Geom_Curve"""
         return _Geom.Geom_Curve_GetHandle(self)
 
@@ -2151,7 +2151,7 @@ Handle_Geom_Curve._kill_pointed = new_instancemethod(_Geom.Handle_Geom_Curve__ki
 Handle_Geom_Curve_swigregister = _Geom.Handle_Geom_Curve_swigregister
 Handle_Geom_Curve_swigregister(Handle_Geom_Curve)
 
-def Handle_Geom_Curve_DownCast(*args) -> "Handle_Geom_Curve const" :
+def Handle_Geom_Curve_DownCast(*args):
   return _Geom.Handle_Geom_Curve_DownCast(*args)
 Handle_Geom_Curve_DownCast = _Geom.Handle_Geom_Curve_DownCast
 
@@ -2159,7 +2159,7 @@ class Geom_Point(Geom_Geometry):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def Coord(self, *args) -> "void" :
+    def Coord(self):
         """
         * returns the Coordinates of <self>.
 
@@ -2172,45 +2172,45 @@ class Geom_Point(Geom_Geometry):
         :rtype: void
 
         """
-        return _Geom.Geom_Point_Coord(self, *args)
+        return _Geom.Geom_Point_Coord(self)
 
-    def Pnt(self, *args) -> "gp_Pnt" :
+    def Pnt(self):
         """
         * returns a non transient copy of <self>
 
         :rtype: gp_Pnt
 
         """
-        return _Geom.Geom_Point_Pnt(self, *args)
+        return _Geom.Geom_Point_Pnt(self)
 
-    def X(self, *args) -> "Standard_Real" :
+    def X(self):
         """
         * returns the X coordinate of <self>.
 
         :rtype: float
 
         """
-        return _Geom.Geom_Point_X(self, *args)
+        return _Geom.Geom_Point_X(self)
 
-    def Y(self, *args) -> "Standard_Real" :
+    def Y(self):
         """
         * returns the Y coordinate of <self>.
 
         :rtype: float
 
         """
-        return _Geom.Geom_Point_Y(self, *args)
+        return _Geom.Geom_Point_Y(self)
 
-    def Z(self, *args) -> "Standard_Real" :
+    def Z(self):
         """
         * returns the Z coordinate of <self>.
 
         :rtype: float
 
         """
-        return _Geom.Geom_Point_Z(self, *args)
+        return _Geom.Geom_Point_Z(self)
 
-    def Distance(self, *args) -> "Standard_Real" :
+    def Distance(self, *args):
         """
         * Computes the distance between <self> and <Other>.
 
@@ -2221,7 +2221,7 @@ class Geom_Point(Geom_Geometry):
         """
         return _Geom.Geom_Point_Distance(self, *args)
 
-    def SquareDistance(self, *args) -> "Standard_Real" :
+    def SquareDistance(self, *args):
         """
         * Computes the square distance between <self> and <Other>.
 
@@ -2232,11 +2232,11 @@ class Geom_Point(Geom_Geometry):
         """
         return _Geom.Geom_Point_SquareDistance(self, *args)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Geom_Point self)"""
         return _Geom.Geom_Point__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Geom_Point" :
+    def GetHandle(self):
         """GetHandle(Geom_Point self) -> Handle_Geom_Point"""
         return _Geom.Geom_Point_GetHandle(self)
 
@@ -2281,7 +2281,7 @@ Handle_Geom_Point._kill_pointed = new_instancemethod(_Geom.Handle_Geom_Point__ki
 Handle_Geom_Point_swigregister = _Geom.Handle_Geom_Point_swigregister
 Handle_Geom_Point_swigregister(Handle_Geom_Point)
 
-def Handle_Geom_Point_DownCast(*args) -> "Handle_Geom_Point const" :
+def Handle_Geom_Point_DownCast(*args):
   return _Geom.Handle_Geom_Point_DownCast(*args)
 Handle_Geom_Point_DownCast = _Geom.Handle_Geom_Point_DownCast
 
@@ -2289,25 +2289,25 @@ class Geom_Surface(Geom_Geometry):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def UReverse(self, *args) -> "void" :
+    def UReverse(self):
         """
         * Reverses the U direction of parametrization of <self>. The bounds of the surface are not modified.
 
         :rtype: void
 
         """
-        return _Geom.Geom_Surface_UReverse(self, *args)
+        return _Geom.Geom_Surface_UReverse(self)
 
-    def UReversed(self, *args) -> "Handle_Geom_Surface" :
+    def UReversed(self):
         """
         * Reverses the U direction of parametrization of <self>. The bounds of the surface are not modified. A copy of <self> is returned.
 
         :rtype: Handle_Geom_Surface
 
         """
-        return _Geom.Geom_Surface_UReversed(self, *args)
+        return _Geom.Geom_Surface_UReversed(self)
 
-    def UReversedParameter(self, *args) -> "Standard_Real" :
+    def UReversedParameter(self, *args):
         """
         * Returns the parameter on the Ureversed surface for the point of parameter U on <self>.  me->UReversed()->Value(me->UReversedParameter(U),V)  is the same point as  me->Value(U,V)
 
@@ -2318,25 +2318,25 @@ class Geom_Surface(Geom_Geometry):
         """
         return _Geom.Geom_Surface_UReversedParameter(self, *args)
 
-    def VReverse(self, *args) -> "void" :
+    def VReverse(self):
         """
         * Reverses the V direction of parametrization of <self>. The bounds of the surface are not modified.
 
         :rtype: void
 
         """
-        return _Geom.Geom_Surface_VReverse(self, *args)
+        return _Geom.Geom_Surface_VReverse(self)
 
-    def VReversed(self, *args) -> "Handle_Geom_Surface" :
+    def VReversed(self):
         """
         * Reverses the V direction of parametrization of <self>. The bounds of the surface are not modified. A copy of <self> is returned.
 
         :rtype: Handle_Geom_Surface
 
         """
-        return _Geom.Geom_Surface_VReversed(self, *args)
+        return _Geom.Geom_Surface_VReversed(self)
 
-    def VReversedParameter(self, *args) -> "Standard_Real" :
+    def VReversedParameter(self, *args):
         """
         * Returns the parameter on the Vreversed surface for the point of parameter V on <self>.  me->VReversed()->Value(U,me->VReversedParameter(V))  is the same point as  me->Value(U,V)
 
@@ -2347,7 +2347,7 @@ class Geom_Surface(Geom_Geometry):
         """
         return _Geom.Geom_Surface_VReversedParameter(self, *args)
 
-    def TransformParameters(self, *args) -> "void" :
+    def TransformParameters(self, *args):
         """
         * Computes the parameters on the transformed surface for the transform of the point of parameters U,V on <self>.  me->Transformed(T)->Value(U',V')  is the same point as  me->Value(U,V).Transformed(T)  Where U',V' are the new values of U,V after calling  me->TranformParameters(U,V,T)  This methods does not change <U> and <V>  It can be redefined. For example on the Plane, Cylinder, Cone, Revolved and Extruded surfaces.
 
@@ -2362,7 +2362,7 @@ class Geom_Surface(Geom_Geometry):
         """
         return _Geom.Geom_Surface_TransformParameters(self, *args)
 
-    def ParametricTransformation(self, *args) -> "gp_GTrsf2d" :
+    def ParametricTransformation(self, *args):
         """
         * Returns a 2d transformation used to find the new parameters of a point on the transformed surface.  me->Transformed(T)->Value(U',V')  is the same point as  me->Value(U,V).Transformed(T)  Where U',V' are obtained by transforming U,V with th 2d transformation returned by  me->ParametricTransformation(T)  This methods returns an identity transformation  It can be redefined. For example on the Plane, Cylinder, Cone, Revolved and Extruded surfaces.
 
@@ -2373,7 +2373,7 @@ class Geom_Surface(Geom_Geometry):
         """
         return _Geom.Geom_Surface_ParametricTransformation(self, *args)
 
-    def Bounds(self, *args) -> "void" :
+    def Bounds(self):
         """
         * Returns the parametric bounds U1, U2, V1 and V2 of this surface. If the surface is infinite, this function can return a value equal to Precision::Infinite: instead of Standard_Real::LastReal.
 
@@ -2388,63 +2388,63 @@ class Geom_Surface(Geom_Geometry):
         :rtype: void
 
         """
-        return _Geom.Geom_Surface_Bounds(self, *args)
+        return _Geom.Geom_Surface_Bounds(self)
 
-    def IsUClosed(self, *args) -> "Standard_Boolean" :
+    def IsUClosed(self):
         """
         * Checks whether this surface is closed in the u parametric direction. Returns true if, in the u parametric direction: taking uFirst and uLast as the parametric bounds in the u parametric direction, for each parameter v, the distance between the points P(uFirst, v) and P(uLast, v) is less than or equal to gp::Resolution().
 
         :rtype: bool
 
         """
-        return _Geom.Geom_Surface_IsUClosed(self, *args)
+        return _Geom.Geom_Surface_IsUClosed(self)
 
-    def IsVClosed(self, *args) -> "Standard_Boolean" :
+    def IsVClosed(self):
         """
         * Checks whether this surface is closed in the u parametric direction. Returns true if, in the v parametric direction: taking vFirst and vLast as the parametric bounds in the v parametric direction, for each parameter u, the distance between the points P(u, vFirst) and P(u, vLast) is less than or equal to gp::Resolution().
 
         :rtype: bool
 
         """
-        return _Geom.Geom_Surface_IsVClosed(self, *args)
+        return _Geom.Geom_Surface_IsVClosed(self)
 
-    def IsUPeriodic(self, *args) -> "Standard_Boolean" :
+    def IsUPeriodic(self):
         """
         * Checks if this surface is periodic in the u parametric direction. Returns true if: - this surface is closed in the u parametric direction, and - there is a constant T such that the distance between the points P (u, v) and P (u + T, v) (or the points P (u, v) and P (u, v + T)) is less than or equal to gp::Resolution(). Note: T is the parametric period in the u parametric direction.
 
         :rtype: bool
 
         """
-        return _Geom.Geom_Surface_IsUPeriodic(self, *args)
+        return _Geom.Geom_Surface_IsUPeriodic(self)
 
-    def UPeriod(self, *args) -> "Standard_Real" :
+    def UPeriod(self):
         """
         * Returns the period of this surface in the u parametric direction. raises if the surface is not uperiodic.
 
         :rtype: float
 
         """
-        return _Geom.Geom_Surface_UPeriod(self, *args)
+        return _Geom.Geom_Surface_UPeriod(self)
 
-    def IsVPeriodic(self, *args) -> "Standard_Boolean" :
+    def IsVPeriodic(self):
         """
         * Checks if this surface is periodic in the v parametric direction. Returns true if: - this surface is closed in the v parametric direction, and - there is a constant T such that the distance between the points P (u, v) and P (u + T, v) (or the points P (u, v) and P (u, v + T)) is less than or equal to gp::Resolution(). Note: T is the parametric period in the v parametric direction.
 
         :rtype: bool
 
         """
-        return _Geom.Geom_Surface_IsVPeriodic(self, *args)
+        return _Geom.Geom_Surface_IsVPeriodic(self)
 
-    def VPeriod(self, *args) -> "Standard_Real" :
+    def VPeriod(self):
         """
         * Returns the period of this surface in the v parametric direction. raises if the surface is not vperiodic.
 
         :rtype: float
 
         """
-        return _Geom.Geom_Surface_VPeriod(self, *args)
+        return _Geom.Geom_Surface_VPeriod(self)
 
-    def UIso(self, *args) -> "Handle_Geom_Curve" :
+    def UIso(self, *args):
         """
         * Computes the U isoparametric curve.
 
@@ -2455,7 +2455,7 @@ class Geom_Surface(Geom_Geometry):
         """
         return _Geom.Geom_Surface_UIso(self, *args)
 
-    def VIso(self, *args) -> "Handle_Geom_Curve" :
+    def VIso(self, *args):
         """
         * Computes the V isoparametric curve.
 
@@ -2466,38 +2466,38 @@ class Geom_Surface(Geom_Geometry):
         """
         return _Geom.Geom_Surface_VIso(self, *args)
 
-    def Continuity(self, *args) -> "GeomAbs_Shape" :
+    def Continuity(self):
         """
         * Returns the Global Continuity of the surface in direction U and V : C0 : only geometric continuity, C1 : continuity of the first derivative all along the surface, C2 : continuity of the second derivative all along the surface, C3 : continuity of the third derivative all along the surface, G1 : tangency continuity all along the surface, G2 : curvature continuity all along the surface, CN : the order of continuity is infinite. Example : If the surface is C1 in the V parametric direction and C2 in the U parametric direction Shape = C1.
 
         :rtype: GeomAbs_Shape
 
         """
-        return _Geom.Geom_Surface_Continuity(self, *args)
+        return _Geom.Geom_Surface_Continuity(self)
 
-    def IsCNu(self, *args) -> "Standard_Boolean" :
+    def IsCNu(self, *args):
         """
         * Returns the order of continuity of the surface in the U parametric direction. Raised if N < 0.
 
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :rtype: bool
 
         """
         return _Geom.Geom_Surface_IsCNu(self, *args)
 
-    def IsCNv(self, *args) -> "Standard_Boolean" :
+    def IsCNv(self, *args):
         """
         * Returns the order of continuity of the surface in the V parametric direction. Raised if N < 0.
 
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :rtype: bool
 
         """
         return _Geom.Geom_Surface_IsCNv(self, *args)
 
-    def D0(self, *args) -> "void" :
+    def D0(self, *args):
         """
         * Computes the point of parameter U,V on the surface. Raised only for an 'OffsetSurface' if it is not possible to compute the current point.
 
@@ -2512,7 +2512,7 @@ class Geom_Surface(Geom_Geometry):
         """
         return _Geom.Geom_Surface_D0(self, *args)
 
-    def D1(self, *args) -> "void" :
+    def D1(self, *args):
         """
         * Computes the point P and the first derivatives in the directions U and V at this point. Raised if the continuity of the surface is not C1.
 
@@ -2531,7 +2531,7 @@ class Geom_Surface(Geom_Geometry):
         """
         return _Geom.Geom_Surface_D1(self, *args)
 
-    def D2(self, *args) -> "void" :
+    def D2(self, *args):
         """
         * Computes the point P, the first and the second derivatives in the directions U and V at this point. Raised if the continuity of the surface is not C2.
 
@@ -2556,7 +2556,7 @@ class Geom_Surface(Geom_Geometry):
         """
         return _Geom.Geom_Surface_D2(self, *args)
 
-    def D3(self, *args) -> "void" :
+    def D3(self, *args):
         """
         * Computes the point P, the first,the second and the third derivatives in the directions U and V at this point. Raised if the continuity of the surface is not C2.
 
@@ -2589,7 +2589,7 @@ class Geom_Surface(Geom_Geometry):
         """
         return _Geom.Geom_Surface_D3(self, *args)
 
-    def DN(self, *args) -> "gp_Vec" :
+    def DN(self, *args):
         """
         * //!---Purpose ; Computes the derivative of order Nu in the direction U and Nv in the direction V at the point P(U, V). Raised if the continuity of the surface is not CNu in the U direction or not CNv in the V direction. Raised if Nu + Nv < 1 or Nu < 0 or Nv < 0.
 
@@ -2598,15 +2598,15 @@ class Geom_Surface(Geom_Geometry):
         :param V:
         :type V: float
         :param Nu:
-        :type Nu: int
+        :type Nu: Standard_Integer
         :param Nv:
-        :type Nv: int
+        :type Nv: Standard_Integer
         :rtype: gp_Vec
 
         """
         return _Geom.Geom_Surface_DN(self, *args)
 
-    def Value(self, *args) -> "gp_Pnt" :
+    def Value(self, *args):
         """
         * Computes the point of parameter U on the surface. It is implemented with D0 Raised only for an 'OffsetSurface' if it is not possible to compute the current point.
 
@@ -2619,11 +2619,11 @@ class Geom_Surface(Geom_Geometry):
         """
         return _Geom.Geom_Surface_Value(self, *args)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Geom_Surface self)"""
         return _Geom.Geom_Surface__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Geom_Surface" :
+    def GetHandle(self):
         """GetHandle(Geom_Surface self) -> Handle_Geom_Surface"""
         return _Geom.Geom_Surface_GetHandle(self)
 
@@ -2687,7 +2687,7 @@ Handle_Geom_Surface._kill_pointed = new_instancemethod(_Geom.Handle_Geom_Surface
 Handle_Geom_Surface_swigregister = _Geom.Handle_Geom_Surface_swigregister
 Handle_Geom_Surface_swigregister(Handle_Geom_Surface)
 
-def Handle_Geom_Surface_DownCast(*args) -> "Handle_Geom_Surface const" :
+def Handle_Geom_Surface_DownCast(*args):
   return _Geom.Handle_Geom_Surface_DownCast(*args)
 Handle_Geom_Surface_DownCast = _Geom.Handle_Geom_Surface_DownCast
 
@@ -2695,25 +2695,25 @@ class Geom_Vector(Geom_Geometry):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def Reverse(self, *args) -> "void" :
+    def Reverse(self):
         """
         * Reverses the vector <self>.
 
         :rtype: None
 
         """
-        return _Geom.Geom_Vector_Reverse(self, *args)
+        return _Geom.Geom_Vector_Reverse(self)
 
-    def Reversed(self, *args) -> "Handle_Geom_Vector" :
+    def Reversed(self):
         """
         * Returns a copy of <self> reversed.
 
         :rtype: Handle_Geom_Vector
 
         """
-        return _Geom.Geom_Vector_Reversed(self, *args)
+        return _Geom.Geom_Vector_Reversed(self)
 
-    def Angle(self, *args) -> "Standard_Real" :
+    def Angle(self, *args):
         """
         * Computes the angular value, in radians, between this vector and vector Other. The result is a value between 0 and Pi. Exceptions gp_VectorWithNullMagnitude if: - the magnitude of this vector is less than or equal to gp::Resolution(), or - the magnitude of vector Other is less than or equal to gp::Resolution().
 
@@ -2724,7 +2724,7 @@ class Geom_Vector(Geom_Geometry):
         """
         return _Geom.Geom_Vector_Angle(self, *args)
 
-    def AngleWithRef(self, *args) -> "Standard_Real" :
+    def AngleWithRef(self, *args):
         """
         * Computes the angular value, in radians, between this vector and vector Other. The result is a value between -Pi and Pi. The vector VRef defines the positive sense of rotation: the angular value is positive if the cross product this ^ Other has the same orientation as VRef (in relation to the plane defined by this vector and vector Other). Otherwise, it is negative. Exceptions Standard_DomainError if this vector, vector Other and vector VRef are coplanar, except if this vector and vector Other are parallel. gp_VectorWithNullMagnitude if the magnitude of this vector, vector Other or vector VRef is less than or equal to gp::Resolution().
 
@@ -2737,7 +2737,7 @@ class Geom_Vector(Geom_Geometry):
         """
         return _Geom.Geom_Vector_AngleWithRef(self, *args)
 
-    def Coord(self, *args) -> "void" :
+    def Coord(self):
         """
         * Returns the coordinates X, Y and Z of this vector.
 
@@ -2750,54 +2750,54 @@ class Geom_Vector(Geom_Geometry):
         :rtype: None
 
         """
-        return _Geom.Geom_Vector_Coord(self, *args)
+        return _Geom.Geom_Vector_Coord(self)
 
-    def Magnitude(self, *args) -> "Standard_Real" :
+    def Magnitude(self):
         """
         * Returns the Magnitude of <self>.
 
         :rtype: float
 
         """
-        return _Geom.Geom_Vector_Magnitude(self, *args)
+        return _Geom.Geom_Vector_Magnitude(self)
 
-    def SquareMagnitude(self, *args) -> "Standard_Real" :
+    def SquareMagnitude(self):
         """
         * Returns the square magnitude of <self>.
 
         :rtype: float
 
         """
-        return _Geom.Geom_Vector_SquareMagnitude(self, *args)
+        return _Geom.Geom_Vector_SquareMagnitude(self)
 
-    def X(self, *args) -> "Standard_Real" :
+    def X(self):
         """
         * Returns the X coordinate of <self>.
 
         :rtype: float
 
         """
-        return _Geom.Geom_Vector_X(self, *args)
+        return _Geom.Geom_Vector_X(self)
 
-    def Y(self, *args) -> "Standard_Real" :
+    def Y(self):
         """
         * Returns the Y coordinate of <self>.
 
         :rtype: float
 
         """
-        return _Geom.Geom_Vector_Y(self, *args)
+        return _Geom.Geom_Vector_Y(self)
 
-    def Z(self, *args) -> "Standard_Real" :
+    def Z(self):
         """
         * Returns the Z coordinate of <self>.
 
         :rtype: float
 
         """
-        return _Geom.Geom_Vector_Z(self, *args)
+        return _Geom.Geom_Vector_Z(self)
 
-    def Cross(self, *args) -> "void" :
+    def Cross(self, *args):
         """
         * Computes the cross product between <self> and <Other>. Raised if <self> is a 'Direction' and if <self> and <Other> are parallel because it is not possible to build a 'Direction' with null length.
 
@@ -2808,7 +2808,7 @@ class Geom_Vector(Geom_Geometry):
         """
         return _Geom.Geom_Vector_Cross(self, *args)
 
-    def Crossed(self, *args) -> "Handle_Geom_Vector" :
+    def Crossed(self, *args):
         """
         * Computes the cross product between <self> and <Other>. A new direction is returned. Raised if <self> is a 'Direction' and if the two vectors are parallel because it is not possible to create a 'Direction' with null length.
 
@@ -2819,7 +2819,7 @@ class Geom_Vector(Geom_Geometry):
         """
         return _Geom.Geom_Vector_Crossed(self, *args)
 
-    def CrossCross(self, *args) -> "void" :
+    def CrossCross(self, *args):
         """
         * Computes the triple vector product <self> ^(V1 ^ V2). Raised if <self> is a 'Direction' and if V1 and V2 are parallel or <self> and (V1 ^ V2) are parallel
 
@@ -2832,7 +2832,7 @@ class Geom_Vector(Geom_Geometry):
         """
         return _Geom.Geom_Vector_CrossCross(self, *args)
 
-    def CrossCrossed(self, *args) -> "Handle_Geom_Vector" :
+    def CrossCrossed(self, *args):
         """
         * Computes the triple vector product <self> ^(V1 ^ V2). Raised if <self> is a direction and if V1 and V2 are parallel or <self> and (V1 ^ V2) are parallel
 
@@ -2845,7 +2845,7 @@ class Geom_Vector(Geom_Geometry):
         """
         return _Geom.Geom_Vector_CrossCrossed(self, *args)
 
-    def Dot(self, *args) -> "Standard_Real" :
+    def Dot(self, *args):
         """
         * Computes the scalar product of this vector and vector Other.
 
@@ -2856,7 +2856,7 @@ class Geom_Vector(Geom_Geometry):
         """
         return _Geom.Geom_Vector_Dot(self, *args)
 
-    def DotCross(self, *args) -> "Standard_Real" :
+    def DotCross(self, *args):
         """
         * Computes the triple scalar product. Returns me . (V1 ^ V2)
 
@@ -2869,20 +2869,20 @@ class Geom_Vector(Geom_Geometry):
         """
         return _Geom.Geom_Vector_DotCross(self, *args)
 
-    def Vec(self, *args) -> "gp_Vec const" :
+    def Vec(self):
         """
         * Converts this vector into a gp_Vec vector.
 
         :rtype: gp_Vec
 
         """
-        return _Geom.Geom_Vector_Vec(self, *args)
+        return _Geom.Geom_Vector_Vec(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Geom_Vector self)"""
         return _Geom.Geom_Vector__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Geom_Vector" :
+    def GetHandle(self):
         """GetHandle(Geom_Vector self) -> Handle_Geom_Vector"""
         return _Geom.Geom_Vector_GetHandle(self)
 
@@ -2937,7 +2937,7 @@ Handle_Geom_Vector._kill_pointed = new_instancemethod(_Geom.Handle_Geom_Vector__
 Handle_Geom_Vector_swigregister = _Geom.Handle_Geom_Vector_swigregister
 Handle_Geom_Vector_swigregister(Handle_Geom_Vector)
 
-def Handle_Geom_Vector_DownCast(*args) -> "Handle_Geom_Vector const" :
+def Handle_Geom_Vector_DownCast(*args):
   return _Geom.Handle_Geom_Vector_DownCast(*args)
 Handle_Geom_Vector_DownCast = _Geom.Handle_Geom_Vector_DownCast
 
@@ -2962,38 +2962,38 @@ class Geom_Axis1Placement(Geom_AxisPlacement):
 
         """
         _Geom.Geom_Axis1Placement_swiginit(self,_Geom.new_Geom_Axis1Placement(*args))
-    def Ax1(self, *args) -> "gp_Ax1 const" :
+    def Ax1(self):
         """
         * Returns a non transient copy of <self>.
 
         :rtype: gp_Ax1
 
         """
-        return _Geom.Geom_Axis1Placement_Ax1(self, *args)
+        return _Geom.Geom_Axis1Placement_Ax1(self)
 
-    def Reverse(self, *args) -> "void" :
+    def Reverse(self):
         """
         * Reverses the direction of the axis placement.
 
         :rtype: None
 
         """
-        return _Geom.Geom_Axis1Placement_Reverse(self, *args)
+        return _Geom.Geom_Axis1Placement_Reverse(self)
 
-    def Reversed(self, *args) -> "Handle_Geom_Axis1Placement" :
+    def Reversed(self):
         """
         * Returns a copy of <self> reversed.
 
         :rtype: Handle_Geom_Axis1Placement
 
         """
-        return _Geom.Geom_Axis1Placement_Reversed(self, *args)
+        return _Geom.Geom_Axis1Placement_Reversed(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Geom_Axis1Placement self)"""
         return _Geom.Geom_Axis1Placement__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Geom_Axis1Placement" :
+    def GetHandle(self):
         """GetHandle(Geom_Axis1Placement self) -> Handle_Geom_Axis1Placement"""
         return _Geom.Geom_Axis1Placement_GetHandle(self)
 
@@ -3034,7 +3034,7 @@ Handle_Geom_Axis1Placement._kill_pointed = new_instancemethod(_Geom.Handle_Geom_
 Handle_Geom_Axis1Placement_swigregister = _Geom.Handle_Geom_Axis1Placement_swigregister
 Handle_Geom_Axis1Placement_swigregister(Handle_Geom_Axis1Placement)
 
-def Handle_Geom_Axis1Placement_DownCast(*args) -> "Handle_Geom_Axis1Placement const" :
+def Handle_Geom_Axis1Placement_DownCast(*args):
   return _Geom.Handle_Geom_Axis1Placement_DownCast(*args)
 Handle_Geom_Axis1Placement_DownCast = _Geom.Handle_Geom_Axis1Placement_DownCast
 
@@ -3061,7 +3061,7 @@ class Geom_Axis2Placement(Geom_AxisPlacement):
 
         """
         _Geom.Geom_Axis2Placement_swiginit(self,_Geom.new_Geom_Axis2Placement(*args))
-    def SetAx2(self, *args) -> "void" :
+    def SetAx2(self, *args):
         """
         * Assigns the origin and the three unit vectors of A2 to this coordinate system.
 
@@ -3072,7 +3072,7 @@ class Geom_Axis2Placement(Geom_AxisPlacement):
         """
         return _Geom.Geom_Axis2Placement_SetAx2(self, *args)
 
-    def SetXDirection(self, *args) -> "void" :
+    def SetXDirection(self, *args):
         """
         * Changes the 'XDirection' of the axis placement, Vx is the new 'XDirection'. If Vx is not normal to the main direction then 'XDirection' is computed as follow : XDirection = Direction ^ ( Vx ^ Direction). The main direction is not modified. Raised if Vx and 'Direction' are parallel.
 
@@ -3083,7 +3083,7 @@ class Geom_Axis2Placement(Geom_AxisPlacement):
         """
         return _Geom.Geom_Axis2Placement_SetXDirection(self, *args)
 
-    def SetYDirection(self, *args) -> "void" :
+    def SetYDirection(self, *args):
         """
         * Changes the 'YDirection' of the axis placement, Vy is the new 'YDirection'. If Vy is not normal to the main direction then 'YDirection' is computed as follow : YDirection = Direction ^ ( Vy ^ Direction). The main direction is not modified. The 'XDirection' is modified. Raised if Vy and the main direction are parallel.
 
@@ -3094,38 +3094,38 @@ class Geom_Axis2Placement(Geom_AxisPlacement):
         """
         return _Geom.Geom_Axis2Placement_SetYDirection(self, *args)
 
-    def Ax2(self, *args) -> "gp_Ax2" :
+    def Ax2(self):
         """
         * Returns a non transient copy of <self>.
 
         :rtype: gp_Ax2
 
         """
-        return _Geom.Geom_Axis2Placement_Ax2(self, *args)
+        return _Geom.Geom_Axis2Placement_Ax2(self)
 
-    def XDirection(self, *args) -> "gp_Dir const" :
+    def XDirection(self):
         """
         * Returns the 'XDirection'. This is a unit vector.
 
         :rtype: gp_Dir
 
         """
-        return _Geom.Geom_Axis2Placement_XDirection(self, *args)
+        return _Geom.Geom_Axis2Placement_XDirection(self)
 
-    def YDirection(self, *args) -> "gp_Dir const" :
+    def YDirection(self):
         """
         * Returns the 'YDirection'. This is a unit vector.
 
         :rtype: gp_Dir
 
         """
-        return _Geom.Geom_Axis2Placement_YDirection(self, *args)
+        return _Geom.Geom_Axis2Placement_YDirection(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Geom_Axis2Placement self)"""
         return _Geom.Geom_Axis2Placement__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Geom_Axis2Placement" :
+    def GetHandle(self):
         """GetHandle(Geom_Axis2Placement self) -> Handle_Geom_Axis2Placement"""
         return _Geom.Geom_Axis2Placement_GetHandle(self)
 
@@ -3169,7 +3169,7 @@ Handle_Geom_Axis2Placement._kill_pointed = new_instancemethod(_Geom.Handle_Geom_
 Handle_Geom_Axis2Placement_swigregister = _Geom.Handle_Geom_Axis2Placement_swigregister
 Handle_Geom_Axis2Placement_swigregister(Handle_Geom_Axis2Placement)
 
-def Handle_Geom_Axis2Placement_DownCast(*args) -> "Handle_Geom_Axis2Placement const" :
+def Handle_Geom_Axis2Placement_DownCast(*args):
   return _Geom.Handle_Geom_Axis2Placement_DownCast(*args)
 Handle_Geom_Axis2Placement_DownCast = _Geom.Handle_Geom_Axis2Placement_DownCast
 
@@ -3177,29 +3177,29 @@ class Geom_BoundedCurve(Geom_Curve):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def EndPoint(self, *args) -> "gp_Pnt" :
+    def EndPoint(self):
         """
         * Returns the end point of the curve.
 
         :rtype: gp_Pnt
 
         """
-        return _Geom.Geom_BoundedCurve_EndPoint(self, *args)
+        return _Geom.Geom_BoundedCurve_EndPoint(self)
 
-    def StartPoint(self, *args) -> "gp_Pnt" :
+    def StartPoint(self):
         """
         * Returns the start point of the curve.
 
         :rtype: gp_Pnt
 
         """
-        return _Geom.Geom_BoundedCurve_StartPoint(self, *args)
+        return _Geom.Geom_BoundedCurve_StartPoint(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Geom_BoundedCurve self)"""
         return _Geom.Geom_BoundedCurve__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Geom_BoundedCurve" :
+    def GetHandle(self):
         """GetHandle(Geom_BoundedCurve self) -> Handle_Geom_BoundedCurve"""
         return _Geom.Geom_BoundedCurve_GetHandle(self)
 
@@ -3239,7 +3239,7 @@ Handle_Geom_BoundedCurve._kill_pointed = new_instancemethod(_Geom.Handle_Geom_Bo
 Handle_Geom_BoundedCurve_swigregister = _Geom.Handle_Geom_BoundedCurve_swigregister
 Handle_Geom_BoundedCurve_swigregister(Handle_Geom_BoundedCurve)
 
-def Handle_Geom_BoundedCurve_DownCast(*args) -> "Handle_Geom_BoundedCurve const" :
+def Handle_Geom_BoundedCurve_DownCast(*args):
   return _Geom.Handle_Geom_BoundedCurve_DownCast(*args)
 Handle_Geom_BoundedCurve_DownCast = _Geom.Handle_Geom_BoundedCurve_DownCast
 
@@ -3247,11 +3247,11 @@ class Geom_BoundedSurface(Geom_Surface):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Geom_BoundedSurface self)"""
         return _Geom.Geom_BoundedSurface__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Geom_BoundedSurface" :
+    def GetHandle(self):
         """GetHandle(Geom_BoundedSurface self) -> Handle_Geom_BoundedSurface"""
         return _Geom.Geom_BoundedSurface_GetHandle(self)
 
@@ -3289,7 +3289,7 @@ Handle_Geom_BoundedSurface._kill_pointed = new_instancemethod(_Geom.Handle_Geom_
 Handle_Geom_BoundedSurface_swigregister = _Geom.Handle_Geom_BoundedSurface_swigregister
 Handle_Geom_BoundedSurface_swigregister(Handle_Geom_BoundedSurface)
 
-def Handle_Geom_BoundedSurface_DownCast(*args) -> "Handle_Geom_BoundedSurface const" :
+def Handle_Geom_BoundedSurface_DownCast(*args):
   return _Geom.Handle_Geom_BoundedSurface_DownCast(*args)
 Handle_Geom_BoundedSurface_DownCast = _Geom.Handle_Geom_BoundedSurface_DownCast
 
@@ -3316,7 +3316,7 @@ class Geom_CartesianPoint(Geom_Point):
 
         """
         _Geom.Geom_CartesianPoint_swiginit(self,_Geom.new_Geom_CartesianPoint(*args))
-    def SetCoord(self, *args) -> "void" :
+    def SetCoord(self, *args):
         """
         * Assigns the coordinates X, Y and Z to this point.
 
@@ -3331,7 +3331,7 @@ class Geom_CartesianPoint(Geom_Point):
         """
         return _Geom.Geom_CartesianPoint_SetCoord(self, *args)
 
-    def SetPnt(self, *args) -> "void" :
+    def SetPnt(self, *args):
         """
         * Set <self> to P.X(), P.Y(), P.Z() coordinates.
 
@@ -3342,7 +3342,7 @@ class Geom_CartesianPoint(Geom_Point):
         """
         return _Geom.Geom_CartesianPoint_SetPnt(self, *args)
 
-    def SetX(self, *args) -> "void" :
+    def SetX(self, *args):
         """
         * Changes the X coordinate of me.
 
@@ -3353,7 +3353,7 @@ class Geom_CartesianPoint(Geom_Point):
         """
         return _Geom.Geom_CartesianPoint_SetX(self, *args)
 
-    def SetY(self, *args) -> "void" :
+    def SetY(self, *args):
         """
         * Changes the Y coordinate of me.
 
@@ -3364,7 +3364,7 @@ class Geom_CartesianPoint(Geom_Point):
         """
         return _Geom.Geom_CartesianPoint_SetY(self, *args)
 
-    def SetZ(self, *args) -> "void" :
+    def SetZ(self, *args):
         """
         * Changes the Z coordinate of me.
 
@@ -3375,11 +3375,11 @@ class Geom_CartesianPoint(Geom_Point):
         """
         return _Geom.Geom_CartesianPoint_SetZ(self, *args)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Geom_CartesianPoint self)"""
         return _Geom.Geom_CartesianPoint__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Geom_CartesianPoint" :
+    def GetHandle(self):
         """GetHandle(Geom_CartesianPoint self) -> Handle_Geom_CartesianPoint"""
         return _Geom.Geom_CartesianPoint_GetHandle(self)
 
@@ -3422,7 +3422,7 @@ Handle_Geom_CartesianPoint._kill_pointed = new_instancemethod(_Geom.Handle_Geom_
 Handle_Geom_CartesianPoint_swigregister = _Geom.Handle_Geom_CartesianPoint_swigregister
 Handle_Geom_CartesianPoint_swigregister(Handle_Geom_CartesianPoint)
 
-def Handle_Geom_CartesianPoint_DownCast(*args) -> "Handle_Geom_CartesianPoint const" :
+def Handle_Geom_CartesianPoint_DownCast(*args):
   return _Geom.Handle_Geom_CartesianPoint_DownCast(*args)
 Handle_Geom_CartesianPoint_DownCast = _Geom.Handle_Geom_CartesianPoint_DownCast
 
@@ -3430,7 +3430,7 @@ class Geom_Conic(Geom_Curve):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def SetAxis(self, *args) -> "void" :
+    def SetAxis(self, *args):
         """
         * Changes the orientation of the conic's plane. The normal axis to the plane is A1. The XAxis and the YAxis are recomputed. raised if the A1 is parallel to the XAxis of the conic.
 
@@ -3441,7 +3441,7 @@ class Geom_Conic(Geom_Curve):
         """
         return _Geom.Geom_Conic_SetAxis(self, *args)
 
-    def SetLocation(self, *args) -> "void" :
+    def SetLocation(self, *args):
         """
         * changes the location point of the conic.
 
@@ -3452,7 +3452,7 @@ class Geom_Conic(Geom_Curve):
         """
         return _Geom.Geom_Conic_SetLocation(self, *args)
 
-    def SetPosition(self, *args) -> "void" :
+    def SetPosition(self, *args):
         """
         * changes the local coordinate system of the conic.
 
@@ -3463,65 +3463,65 @@ class Geom_Conic(Geom_Curve):
         """
         return _Geom.Geom_Conic_SetPosition(self, *args)
 
-    def Axis(self, *args) -> "gp_Ax1" :
+    def Axis(self):
         """
         * Returns the 'main Axis' of this conic. This axis is normal to the plane of the conic.
 
         :rtype: gp_Ax1
 
         """
-        return _Geom.Geom_Conic_Axis(self, *args)
+        return _Geom.Geom_Conic_Axis(self)
 
-    def Eccentricity(self, *args) -> "Standard_Real" :
+    def Eccentricity(self):
         """
         * Returns the eccentricity value of the conic e. e = 0 for a circle 0 < e < 1 for an ellipse (e = 0 if MajorRadius = MinorRadius) e > 1 for a hyperbola e = 1 for a parabola Exceptions Standard_DomainError in the case of a hyperbola if its major radius is null.
 
         :rtype: float
 
         """
-        return _Geom.Geom_Conic_Eccentricity(self, *args)
+        return _Geom.Geom_Conic_Eccentricity(self)
 
-    def Location(self, *args) -> "gp_Pnt" :
+    def Location(self):
         """
         * Returns the location point of the conic. For the circle, the ellipse and the hyperbola it is the center of the conic. For the parabola it is the Apex of the parabola.
 
         :rtype: gp_Pnt
 
         """
-        return _Geom.Geom_Conic_Location(self, *args)
+        return _Geom.Geom_Conic_Location(self)
 
-    def Position(self, *args) -> "gp_Ax2 const" :
+    def Position(self):
         """
         * Returns the local coordinates system of the conic. The main direction of the Axis2Placement is normal to the plane of the conic. The X direction of the Axis2placement is in the plane of the conic and corresponds to the origin for the conic's parametric value u.
 
         :rtype: gp_Ax2
 
         """
-        return _Geom.Geom_Conic_Position(self, *args)
+        return _Geom.Geom_Conic_Position(self)
 
-    def XAxis(self, *args) -> "gp_Ax1" :
+    def XAxis(self):
         """
         * Returns the XAxis of the conic. This axis defines the origin of parametrization of the conic. This axis is perpendicular to the Axis of the conic. This axis and the Yaxis define the plane of the conic.
 
         :rtype: gp_Ax1
 
         """
-        return _Geom.Geom_Conic_XAxis(self, *args)
+        return _Geom.Geom_Conic_XAxis(self)
 
-    def YAxis(self, *args) -> "gp_Ax1" :
+    def YAxis(self):
         """
         * Returns the YAxis of the conic. The YAxis is perpendicular to the Xaxis. This axis and the Xaxis define the plane of the conic.
 
         :rtype: gp_Ax1
 
         """
-        return _Geom.Geom_Conic_YAxis(self, *args)
+        return _Geom.Geom_Conic_YAxis(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Geom_Conic self)"""
         return _Geom.Geom_Conic__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Geom_Conic" :
+    def GetHandle(self):
         """GetHandle(Geom_Conic self) -> Handle_Geom_Conic"""
         return _Geom.Geom_Conic_GetHandle(self)
 
@@ -3568,7 +3568,7 @@ Handle_Geom_Conic._kill_pointed = new_instancemethod(_Geom.Handle_Geom_Conic__ki
 Handle_Geom_Conic_swigregister = _Geom.Handle_Geom_Conic_swigregister
 Handle_Geom_Conic_swigregister(Handle_Geom_Conic)
 
-def Handle_Geom_Conic_DownCast(*args) -> "Handle_Geom_Conic const" :
+def Handle_Geom_Conic_DownCast(*args):
   return _Geom.Handle_Geom_Conic_DownCast(*args)
 Handle_Geom_Conic_DownCast = _Geom.Handle_Geom_Conic_DownCast
 
@@ -3595,7 +3595,7 @@ class Geom_Direction(Geom_Vector):
 
         """
         _Geom.Geom_Direction_swiginit(self,_Geom.new_Geom_Direction(*args))
-    def SetCoord(self, *args) -> "void" :
+    def SetCoord(self, *args):
         """
         * Sets <self> to X,Y,Z coordinates. Raised if Sqrt( X*X + Y*Y + Z*Z) <= Resolution from gp.
 
@@ -3610,7 +3610,7 @@ class Geom_Direction(Geom_Vector):
         """
         return _Geom.Geom_Direction_SetCoord(self, *args)
 
-    def SetDir(self, *args) -> "void" :
+    def SetDir(self, *args):
         """
         * Converts the gp_Dir unit vector V into this unit vector.
 
@@ -3621,7 +3621,7 @@ class Geom_Direction(Geom_Vector):
         """
         return _Geom.Geom_Direction_SetDir(self, *args)
 
-    def SetX(self, *args) -> "void" :
+    def SetX(self, *args):
         """
         * Changes the X coordinate of <self>. Raised if Sqrt( X*X + Y*Y + Z*Z) <= Resolution from gp.
 
@@ -3632,7 +3632,7 @@ class Geom_Direction(Geom_Vector):
         """
         return _Geom.Geom_Direction_SetX(self, *args)
 
-    def SetY(self, *args) -> "void" :
+    def SetY(self, *args):
         """
         * Changes the Y coordinate of <self>. Raised if Sqrt( X*X + Y*Y + Z*Z) <= Resolution from gp.
 
@@ -3643,7 +3643,7 @@ class Geom_Direction(Geom_Vector):
         """
         return _Geom.Geom_Direction_SetY(self, *args)
 
-    def SetZ(self, *args) -> "void" :
+    def SetZ(self, *args):
         """
         * Changes the Z coordinate of <self>. Raised if Sqrt( X*X + Y*Y + Z*Z) <= Resolution from gp.
 
@@ -3654,20 +3654,20 @@ class Geom_Direction(Geom_Vector):
         """
         return _Geom.Geom_Direction_SetZ(self, *args)
 
-    def Dir(self, *args) -> "gp_Dir" :
+    def Dir(self):
         """
         * Returns the non transient direction with the same coordinates as <self>.
 
         :rtype: gp_Dir
 
         """
-        return _Geom.Geom_Direction_Dir(self, *args)
+        return _Geom.Geom_Direction_Dir(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Geom_Direction self)"""
         return _Geom.Geom_Direction__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Geom_Direction" :
+    def GetHandle(self):
         """GetHandle(Geom_Direction self) -> Handle_Geom_Direction"""
         return _Geom.Geom_Direction_GetHandle(self)
 
@@ -3711,7 +3711,7 @@ Handle_Geom_Direction._kill_pointed = new_instancemethod(_Geom.Handle_Geom_Direc
 Handle_Geom_Direction_swigregister = _Geom.Handle_Geom_Direction_swigregister
 Handle_Geom_Direction_swigregister(Handle_Geom_Direction)
 
-def Handle_Geom_Direction_DownCast(*args) -> "Handle_Geom_Direction const" :
+def Handle_Geom_Direction_DownCast(*args):
   return _Geom.Handle_Geom_Direction_DownCast(*args)
 Handle_Geom_Direction_DownCast = _Geom.Handle_Geom_Direction_DownCast
 
@@ -3719,7 +3719,7 @@ class Geom_ElementarySurface(Geom_Surface):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def SetAxis(self, *args) -> "void" :
+    def SetAxis(self, *args):
         """
         * Changes the main axis (ZAxis) of the elementary surface. Raised if the direction of A1 is parallel to the XAxis of the coordinate system of the surface.
 
@@ -3730,7 +3730,7 @@ class Geom_ElementarySurface(Geom_Surface):
         """
         return _Geom.Geom_ElementarySurface_SetAxis(self, *args)
 
-    def SetLocation(self, *args) -> "void" :
+    def SetLocation(self, *args):
         """
         * Changes the location of the local coordinates system of the surface.
 
@@ -3741,7 +3741,7 @@ class Geom_ElementarySurface(Geom_Surface):
         """
         return _Geom.Geom_ElementarySurface_SetLocation(self, *args)
 
-    def SetPosition(self, *args) -> "void" :
+    def SetPosition(self, *args):
         """
         * Changes the local coordinates system of the surface.
 
@@ -3752,38 +3752,38 @@ class Geom_ElementarySurface(Geom_Surface):
         """
         return _Geom.Geom_ElementarySurface_SetPosition(self, *args)
 
-    def Axis(self, *args) -> "gp_Ax1" :
+    def Axis(self):
         """
         * Returns the main axis of the surface (ZAxis).
 
         :rtype: gp_Ax1
 
         """
-        return _Geom.Geom_ElementarySurface_Axis(self, *args)
+        return _Geom.Geom_ElementarySurface_Axis(self)
 
-    def Location(self, *args) -> "gp_Pnt" :
+    def Location(self):
         """
         * Returns the location point of the local coordinate system of the surface.
 
         :rtype: gp_Pnt
 
         """
-        return _Geom.Geom_ElementarySurface_Location(self, *args)
+        return _Geom.Geom_ElementarySurface_Location(self)
 
-    def Position(self, *args) -> "gp_Ax3 const" :
+    def Position(self):
         """
         * Returns the local coordinates system of the surface.
 
         :rtype: gp_Ax3
 
         """
-        return _Geom.Geom_ElementarySurface_Position(self, *args)
+        return _Geom.Geom_ElementarySurface_Position(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Geom_ElementarySurface self)"""
         return _Geom.Geom_ElementarySurface__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Geom_ElementarySurface" :
+    def GetHandle(self):
         """GetHandle(Geom_ElementarySurface self) -> Handle_Geom_ElementarySurface"""
         return _Geom.Geom_ElementarySurface_GetHandle(self)
 
@@ -3827,7 +3827,7 @@ Handle_Geom_ElementarySurface._kill_pointed = new_instancemethod(_Geom.Handle_Ge
 Handle_Geom_ElementarySurface_swigregister = _Geom.Handle_Geom_ElementarySurface_swigregister
 Handle_Geom_ElementarySurface_swigregister(Handle_Geom_ElementarySurface)
 
-def Handle_Geom_ElementarySurface_DownCast(*args) -> "Handle_Geom_ElementarySurface const" :
+def Handle_Geom_ElementarySurface_DownCast(*args):
   return _Geom.Handle_Geom_ElementarySurface_DownCast(*args)
 Handle_Geom_ElementarySurface_DownCast = _Geom.Handle_Geom_ElementarySurface_DownCast
 
@@ -3858,7 +3858,7 @@ class Geom_Line(Geom_Curve):
 
         """
         _Geom.Geom_Line_swiginit(self,_Geom.new_Geom_Line(*args))
-    def SetLin(self, *args) -> "void" :
+    def SetLin(self, *args):
         """
         * Set <self> so that <self> has the same geometric properties as L.
 
@@ -3869,7 +3869,7 @@ class Geom_Line(Geom_Curve):
         """
         return _Geom.Geom_Line_SetLin(self, *args)
 
-    def SetDirection(self, *args) -> "void" :
+    def SetDirection(self, *args):
         """
         * changes the direction of the line.
 
@@ -3880,7 +3880,7 @@ class Geom_Line(Geom_Curve):
         """
         return _Geom.Geom_Line_SetDirection(self, *args)
 
-    def SetLocation(self, *args) -> "void" :
+    def SetLocation(self, *args):
         """
         * changes the 'Location' point (origin) of the line.
 
@@ -3891,7 +3891,7 @@ class Geom_Line(Geom_Curve):
         """
         return _Geom.Geom_Line_SetLocation(self, *args)
 
-    def SetPosition(self, *args) -> "void" :
+    def SetPosition(self, *args):
         """
         * changes the 'Location' and a the 'Direction' of <self>.
 
@@ -3902,29 +3902,29 @@ class Geom_Line(Geom_Curve):
         """
         return _Geom.Geom_Line_SetPosition(self, *args)
 
-    def Lin(self, *args) -> "gp_Lin" :
+    def Lin(self):
         """
         * Returns non transient line from gp with the same geometric properties as <self>
 
         :rtype: gp_Lin
 
         """
-        return _Geom.Geom_Line_Lin(self, *args)
+        return _Geom.Geom_Line_Lin(self)
 
-    def Position(self, *args) -> "gp_Ax1 const" :
+    def Position(self):
         """
         * Returns the positioning axis of this line; this is also its local coordinate system.
 
         :rtype: gp_Ax1
 
         """
-        return _Geom.Geom_Line_Position(self, *args)
+        return _Geom.Geom_Line_Position(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Geom_Line self)"""
         return _Geom.Geom_Line__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Geom_Line" :
+    def GetHandle(self):
         """GetHandle(Geom_Line self) -> Handle_Geom_Line"""
         return _Geom.Geom_Line_GetHandle(self)
 
@@ -3968,7 +3968,7 @@ Handle_Geom_Line._kill_pointed = new_instancemethod(_Geom.Handle_Geom_Line__kill
 Handle_Geom_Line_swigregister = _Geom.Handle_Geom_Line_swigregister
 Handle_Geom_Line_swigregister(Handle_Geom_Line)
 
-def Handle_Geom_Line_DownCast(*args) -> "Handle_Geom_Line const" :
+def Handle_Geom_Line_DownCast(*args):
   return _Geom.Handle_Geom_Line_DownCast(*args)
 Handle_Geom_Line_DownCast = _Geom.Handle_Geom_Line_DownCast
 
@@ -3989,7 +3989,7 @@ class Geom_OffsetCurve(Geom_Curve):
 
         """
         _Geom.Geom_OffsetCurve_swiginit(self,_Geom.new_Geom_OffsetCurve(*args))
-    def SetBasisCurve(self, *args) -> "void" :
+    def SetBasisCurve(self, *args):
         """
         * Changes this offset curve by assigning C as the basis curve from which it is built. Exceptions Standard_ConstructionError if the curve C is not at least 'C1' continuous.
 
@@ -4000,7 +4000,7 @@ class Geom_OffsetCurve(Geom_Curve):
         """
         return _Geom.Geom_OffsetCurve_SetBasisCurve(self, *args)
 
-    def SetDirection(self, *args) -> "void" :
+    def SetDirection(self, *args):
         """
         * Changes this offset curve by assigning V as the reference vector used to compute the offset direction.
 
@@ -4011,7 +4011,7 @@ class Geom_OffsetCurve(Geom_Curve):
         """
         return _Geom.Geom_OffsetCurve_SetDirection(self, *args)
 
-    def SetOffsetValue(self, *args) -> "void" :
+    def SetOffsetValue(self, *args):
         """
         * Changes this offset curve by assigning D as the offset value.
 
@@ -4022,25 +4022,25 @@ class Geom_OffsetCurve(Geom_Curve):
         """
         return _Geom.Geom_OffsetCurve_SetOffsetValue(self, *args)
 
-    def BasisCurve(self, *args) -> "Handle_Geom_Curve" :
+    def BasisCurve(self):
         """
         * Returns the basis curve of this offset curve. Note: The basis curve can be an offset curve.
 
         :rtype: Handle_Geom_Curve
 
         """
-        return _Geom.Geom_OffsetCurve_BasisCurve(self, *args)
+        return _Geom.Geom_OffsetCurve_BasisCurve(self)
 
-    def Direction(self, *args) -> "gp_Dir const" :
+    def Direction(self):
         """
         * Returns the reference vector of this offset curve. Value and derivatives Warnings : The exception UndefinedValue or UndefinedDerivative is raised if it is not possible to compute a unique offset direction. If T is the first derivative with not null length and V the offset direction the relation ||T(U) ^ V|| != 0 must be satisfied to evaluate the offset curve. No check is done at the creation time and we suppose in this package that the offset curve is well defined.
 
         :rtype: gp_Dir
 
         """
-        return _Geom.Geom_OffsetCurve_Direction(self, *args)
+        return _Geom.Geom_OffsetCurve_Direction(self)
 
-    def Value(self, *args) -> "void" :
+    def Value(self, *args):
         """
         * Warning! this should not be called if the basis curve is not at least C1. Nevertheless if used on portion where the curve is C1, it is OK
 
@@ -4057,7 +4057,7 @@ class Geom_OffsetCurve(Geom_Curve):
         """
         return _Geom.Geom_OffsetCurve_Value(self, *args)
 
-    def D0(self, *args) -> "void" :
+    def D0(self, *args):
         """
         * Warning! this should not be called if the basis curve is not at least C1. Nevertheless if used on portion where the curve is C1, it is OK
 
@@ -4082,7 +4082,7 @@ class Geom_OffsetCurve(Geom_Curve):
         """
         return _Geom.Geom_OffsetCurve_D0(self, *args)
 
-    def D1(self, *args) -> "void" :
+    def D1(self, *args):
         """
         * Warning! this should not be called if the continuity of the basis curve is not C2. Nevertheless, it's OK to use it on portion where the curve is C2
 
@@ -4113,7 +4113,7 @@ class Geom_OffsetCurve(Geom_Curve):
         """
         return _Geom.Geom_OffsetCurve_D1(self, *args)
 
-    def D2(self, *args) -> "void" :
+    def D2(self, *args):
         """
         * Warning! this should not be called if the continuity of the basis curve is not C3. Nevertheless, it's OK to use it on portion where the curve is C3
 
@@ -4150,20 +4150,20 @@ class Geom_OffsetCurve(Geom_Curve):
         """
         return _Geom.Geom_OffsetCurve_D2(self, *args)
 
-    def Offset(self, *args) -> "Standard_Real" :
+    def Offset(self):
         """
         * Returns the offset value of this offset curve.
 
         :rtype: float
 
         """
-        return _Geom.Geom_OffsetCurve_Offset(self, *args)
+        return _Geom.Geom_OffsetCurve_Offset(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Geom_OffsetCurve self)"""
         return _Geom.Geom_OffsetCurve__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Geom_OffsetCurve" :
+    def GetHandle(self):
         """GetHandle(Geom_OffsetCurve self) -> Handle_Geom_OffsetCurve"""
         return _Geom.Geom_OffsetCurve_GetHandle(self)
 
@@ -4211,7 +4211,7 @@ Handle_Geom_OffsetCurve._kill_pointed = new_instancemethod(_Geom.Handle_Geom_Off
 Handle_Geom_OffsetCurve_swigregister = _Geom.Handle_Geom_OffsetCurve_swigregister
 Handle_Geom_OffsetCurve_swigregister(Handle_Geom_OffsetCurve)
 
-def Handle_Geom_OffsetCurve_DownCast(*args) -> "Handle_Geom_OffsetCurve const" :
+def Handle_Geom_OffsetCurve_DownCast(*args):
   return _Geom.Handle_Geom_OffsetCurve_DownCast(*args)
 Handle_Geom_OffsetCurve_DownCast = _Geom.Handle_Geom_OffsetCurve_DownCast
 
@@ -4230,7 +4230,7 @@ class Geom_OffsetSurface(Geom_Surface):
 
         """
         _Geom.Geom_OffsetSurface_swiginit(self,_Geom.new_Geom_OffsetSurface(*args))
-    def SetBasisSurface(self, *args) -> "void" :
+    def SetBasisSurface(self, *args):
         """
         * Raised if S is not at least C1. Warnings : No check is done to verify that a unique normal direction is defined at any point of the basis surface S. Exceptions Standard_ConstructionError if the surface S is not at least 'C1' continuous.
 
@@ -4241,7 +4241,7 @@ class Geom_OffsetSurface(Geom_Surface):
         """
         return _Geom.Geom_OffsetSurface_SetBasisSurface(self, *args)
 
-    def SetOffsetValue(self, *args) -> "void" :
+    def SetOffsetValue(self, *args):
         """
         * Changes this offset surface by assigning D as the offset value.
 
@@ -4252,25 +4252,25 @@ class Geom_OffsetSurface(Geom_Surface):
         """
         return _Geom.Geom_OffsetSurface_SetOffsetValue(self, *args)
 
-    def Offset(self, *args) -> "Standard_Real" :
+    def Offset(self):
         """
         * Returns the offset value of this offset surface.
 
         :rtype: float
 
         """
-        return _Geom.Geom_OffsetSurface_Offset(self, *args)
+        return _Geom.Geom_OffsetSurface_Offset(self)
 
-    def BasisSurface(self, *args) -> "Handle_Geom_Surface" :
+    def BasisSurface(self):
         """
         * Returns the basis surface of this offset surface. Note: The basis surface can be an offset surface.
 
         :rtype: Handle_Geom_Surface
 
         """
-        return _Geom.Geom_OffsetSurface_BasisSurface(self, *args)
+        return _Geom.Geom_OffsetSurface_BasisSurface(self)
 
-    def Value(self, *args) -> "void" :
+    def Value(self, *args):
         """
         * P (U, V) = Pbasis + Offset * Ndir where Ndir = D1Ubasis ^ D1Vbasis / ||D1Ubasis ^ D1Vbasis|| is the normal direction of the surface. If Ndir is undefined this method computes an approched normal direction using the following limited development : Ndir = N0 + DNdir/DU + DNdir/DV + Eps with Eps->0 which requires to compute the second derivatives on the basis surface. If the normal direction cannot be approximate for this order of derivation the exception UndefinedValue is raised. Raised if the continuity of the basis surface is not C1. Raised if the order of derivation required to compute the normal direction is greater than the second order.
 
@@ -4291,7 +4291,7 @@ class Geom_OffsetSurface(Geom_Surface):
         """
         return _Geom.Geom_OffsetSurface_Value(self, *args)
 
-    def D1(self, *args) -> "void" :
+    def D1(self, *args):
         """
         * Raised if the continuity of the basis surface is not C2.
 
@@ -4336,7 +4336,7 @@ class Geom_OffsetSurface(Geom_Surface):
         """
         return _Geom.Geom_OffsetSurface_D1(self, *args)
 
-    def D2(self, *args) -> "void" :
+    def D2(self, *args):
         """
         * //!---Purpose ; Raised if the continuity of the basis surface is not C3.
 
@@ -4401,16 +4401,16 @@ class Geom_OffsetSurface(Geom_Surface):
         """
         return _Geom.Geom_OffsetSurface_D2(self, *args)
 
-    def LocalD0(self, *args) -> "void" :
+    def LocalD0(self, *args):
         """
         :param U:
         :type U: float
         :param V:
         :type V: float
         :param USide:
-        :type USide: int
+        :type USide: Standard_Integer
         :param VSide:
-        :type VSide: int
+        :type VSide: Standard_Integer
         :param P:
         :type P: gp_Pnt
         :rtype: None
@@ -4418,16 +4418,16 @@ class Geom_OffsetSurface(Geom_Surface):
         """
         return _Geom.Geom_OffsetSurface_LocalD0(self, *args)
 
-    def LocalD1(self, *args) -> "void" :
+    def LocalD1(self, *args):
         """
         :param U:
         :type U: float
         :param V:
         :type V: float
         :param USide:
-        :type USide: int
+        :type USide: Standard_Integer
         :param VSide:
-        :type VSide: int
+        :type VSide: Standard_Integer
         :param P:
         :type P: gp_Pnt
         :param D1U:
@@ -4439,16 +4439,16 @@ class Geom_OffsetSurface(Geom_Surface):
         """
         return _Geom.Geom_OffsetSurface_LocalD1(self, *args)
 
-    def LocalD2(self, *args) -> "void" :
+    def LocalD2(self, *args):
         """
         :param U:
         :type U: float
         :param V:
         :type V: float
         :param USide:
-        :type USide: int
+        :type USide: Standard_Integer
         :param VSide:
-        :type VSide: int
+        :type VSide: Standard_Integer
         :param P:
         :type P: gp_Pnt
         :param D1U:
@@ -4466,16 +4466,16 @@ class Geom_OffsetSurface(Geom_Surface):
         """
         return _Geom.Geom_OffsetSurface_LocalD2(self, *args)
 
-    def LocalD3(self, *args) -> "void" :
+    def LocalD3(self, *args):
         """
         :param U:
         :type U: float
         :param V:
         :type V: float
         :param USide:
-        :type USide: int
+        :type USide: Standard_Integer
         :param VSide:
-        :type VSide: int
+        :type VSide: Standard_Integer
         :param P:
         :type P: gp_Pnt
         :param D1U:
@@ -4501,35 +4501,35 @@ class Geom_OffsetSurface(Geom_Surface):
         """
         return _Geom.Geom_OffsetSurface_LocalD3(self, *args)
 
-    def LocalDN(self, *args) -> "gp_Vec" :
+    def LocalDN(self, *args):
         """
         :param U:
         :type U: float
         :param V:
         :type V: float
         :param USide:
-        :type USide: int
+        :type USide: Standard_Integer
         :param VSide:
-        :type VSide: int
+        :type VSide: Standard_Integer
         :param Nu:
-        :type Nu: int
+        :type Nu: Standard_Integer
         :param Nv:
-        :type Nv: int
+        :type Nv: Standard_Integer
         :rtype: gp_Vec
 
         """
         return _Geom.Geom_OffsetSurface_LocalDN(self, *args)
 
-    def Surface(self, *args) -> "Handle_Geom_Surface" :
+    def Surface(self):
         """
         * returns an equivalent surface of the offset surface when the basis surface is a canonic surface or a rectangular limited surface on canonic surface or if the offset is null.
 
         :rtype: Handle_Geom_Surface
 
         """
-        return _Geom.Geom_OffsetSurface_Surface(self, *args)
+        return _Geom.Geom_OffsetSurface_Surface(self)
 
-    def UOsculatingSurface(self, *args) -> "Standard_Boolean" :
+    def UOsculatingSurface(self, *args):
         """
         * if Standard_True, L is the local osculating surface along U at the point U,V. It means that DL/DU is collinear to DS/DU . If IsOpposite == Standard_True these vectors have opposite direction.
 
@@ -4546,7 +4546,7 @@ class Geom_OffsetSurface(Geom_Surface):
         """
         return _Geom.Geom_OffsetSurface_UOsculatingSurface(self, *args)
 
-    def VOsculatingSurface(self, *args) -> "Standard_Boolean" :
+    def VOsculatingSurface(self, *args):
         """
         * if Standard_True, L is the local osculating surface along V at the point U,V. It means that DL/DV is collinear to DS/DV . If IsOpposite == Standard_True these vectors have opposite direction.
 
@@ -4563,11 +4563,11 @@ class Geom_OffsetSurface(Geom_Surface):
         """
         return _Geom.Geom_OffsetSurface_VOsculatingSurface(self, *args)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Geom_OffsetSurface self)"""
         return _Geom.Geom_OffsetSurface__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Geom_OffsetSurface" :
+    def GetHandle(self):
         """GetHandle(Geom_OffsetSurface self) -> Handle_Geom_OffsetSurface"""
         return _Geom.Geom_OffsetSurface_GetHandle(self)
 
@@ -4620,7 +4620,7 @@ Handle_Geom_OffsetSurface._kill_pointed = new_instancemethod(_Geom.Handle_Geom_O
 Handle_Geom_OffsetSurface_swigregister = _Geom.Handle_Geom_OffsetSurface_swigregister
 Handle_Geom_OffsetSurface_swigregister(Handle_Geom_OffsetSurface)
 
-def Handle_Geom_OffsetSurface_DownCast(*args) -> "Handle_Geom_OffsetSurface const" :
+def Handle_Geom_OffsetSurface_DownCast(*args):
   return _Geom.Handle_Geom_OffsetSurface_DownCast(*args)
 Handle_Geom_OffsetSurface_DownCast = _Geom.Handle_Geom_OffsetSurface_DownCast
 
@@ -4628,29 +4628,29 @@ class Geom_SweptSurface(Geom_Surface):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def Direction(self, *args) -> "gp_Dir const" :
+    def Direction(self):
         """
         * Returns the reference direction of the swept surface. For a surface of revolution it is the direction of the revolution axis, for a surface of linear extrusion it is the direction of extrusion.
 
         :rtype: gp_Dir
 
         """
-        return _Geom.Geom_SweptSurface_Direction(self, *args)
+        return _Geom.Geom_SweptSurface_Direction(self)
 
-    def BasisCurve(self, *args) -> "Handle_Geom_Curve" :
+    def BasisCurve(self):
         """
         * Returns the referenced curve of the surface. For a surface of revolution it is the revolution curve, for a surface of linear extrusion it is the extruded curve.
 
         :rtype: Handle_Geom_Curve
 
         """
-        return _Geom.Geom_SweptSurface_BasisCurve(self, *args)
+        return _Geom.Geom_SweptSurface_BasisCurve(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Geom_SweptSurface self)"""
         return _Geom.Geom_SweptSurface__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Geom_SweptSurface" :
+    def GetHandle(self):
         """GetHandle(Geom_SweptSurface self) -> Handle_Geom_SweptSurface"""
         return _Geom.Geom_SweptSurface_GetHandle(self)
 
@@ -4690,7 +4690,7 @@ Handle_Geom_SweptSurface._kill_pointed = new_instancemethod(_Geom.Handle_Geom_Sw
 Handle_Geom_SweptSurface_swigregister = _Geom.Handle_Geom_SweptSurface_swigregister
 Handle_Geom_SweptSurface_swigregister(Handle_Geom_SweptSurface)
 
-def Handle_Geom_SweptSurface_DownCast(*args) -> "Handle_Geom_SweptSurface const" :
+def Handle_Geom_SweptSurface_DownCast(*args):
   return _Geom.Handle_Geom_SweptSurface_DownCast(*args)
 Handle_Geom_SweptSurface_DownCast = _Geom.Handle_Geom_SweptSurface_DownCast
 
@@ -4725,7 +4725,7 @@ class Geom_VectorWithMagnitude(Geom_Vector):
 
         """
         _Geom.Geom_VectorWithMagnitude_swiginit(self,_Geom.new_Geom_VectorWithMagnitude(*args))
-    def SetCoord(self, *args) -> "void" :
+    def SetCoord(self, *args):
         """
         * Assigns the values X, Y and Z to the coordinates of this vector.
 
@@ -4740,7 +4740,7 @@ class Geom_VectorWithMagnitude(Geom_Vector):
         """
         return _Geom.Geom_VectorWithMagnitude_SetCoord(self, *args)
 
-    def SetVec(self, *args) -> "void" :
+    def SetVec(self, *args):
         """
         * Converts the gp_Vec vector V into this vector.
 
@@ -4751,7 +4751,7 @@ class Geom_VectorWithMagnitude(Geom_Vector):
         """
         return _Geom.Geom_VectorWithMagnitude_SetVec(self, *args)
 
-    def SetX(self, *args) -> "void" :
+    def SetX(self, *args):
         """
         * Changes the X coordinate of <self>.
 
@@ -4762,7 +4762,7 @@ class Geom_VectorWithMagnitude(Geom_Vector):
         """
         return _Geom.Geom_VectorWithMagnitude_SetX(self, *args)
 
-    def SetY(self, *args) -> "void" :
+    def SetY(self, *args):
         """
         * Changes the Y coordinate of <self>
 
@@ -4773,7 +4773,7 @@ class Geom_VectorWithMagnitude(Geom_Vector):
         """
         return _Geom.Geom_VectorWithMagnitude_SetY(self, *args)
 
-    def SetZ(self, *args) -> "void" :
+    def SetZ(self, *args):
         """
         * Changes the Z coordinate of <self>.
 
@@ -4784,7 +4784,7 @@ class Geom_VectorWithMagnitude(Geom_Vector):
         """
         return _Geom.Geom_VectorWithMagnitude_SetZ(self, *args)
 
-    def Add(self, *args) -> "void" :
+    def Add(self, *args):
         """
         * Adds the Vector Other to <self>.
 
@@ -4795,7 +4795,7 @@ class Geom_VectorWithMagnitude(Geom_Vector):
         """
         return _Geom.Geom_VectorWithMagnitude_Add(self, *args)
 
-    def Added(self, *args) -> "Handle_Geom_VectorWithMagnitude" :
+    def Added(self, *args):
         """
         * Adds the vector Other to <self>.
 
@@ -4806,7 +4806,7 @@ class Geom_VectorWithMagnitude(Geom_Vector):
         """
         return _Geom.Geom_VectorWithMagnitude_Added(self, *args)
 
-    def Divide(self, *args) -> "void" :
+    def Divide(self, *args):
         """
         * Divides <self> by a scalar.
 
@@ -4817,7 +4817,7 @@ class Geom_VectorWithMagnitude(Geom_Vector):
         """
         return _Geom.Geom_VectorWithMagnitude_Divide(self, *args)
 
-    def Divided(self, *args) -> "Handle_Geom_VectorWithMagnitude" :
+    def Divided(self, *args):
         """
         * Divides <self> by a scalar. A new vector is returned.
 
@@ -4828,7 +4828,7 @@ class Geom_VectorWithMagnitude(Geom_Vector):
         """
         return _Geom.Geom_VectorWithMagnitude_Divided(self, *args)
 
-    def Multiplied(self, *args) -> "Handle_Geom_VectorWithMagnitude" :
+    def Multiplied(self, *args):
         """
         * Computes the product of the vector <self> by a scalar. A new vector is returned.
 
@@ -4839,7 +4839,7 @@ class Geom_VectorWithMagnitude(Geom_Vector):
         """
         return _Geom.Geom_VectorWithMagnitude_Multiplied(self, *args)
 
-    def Multiply(self, *args) -> "void" :
+    def Multiply(self, *args):
         """
         * Computes the product of the vector <self> by a scalar.
 
@@ -4850,25 +4850,25 @@ class Geom_VectorWithMagnitude(Geom_Vector):
         """
         return _Geom.Geom_VectorWithMagnitude_Multiply(self, *args)
 
-    def Normalize(self, *args) -> "void" :
+    def Normalize(self):
         """
         * Normalizes <self>. Raised if the magnitude of the vector is lower or equal to Resolution from package gp.
 
         :rtype: None
 
         """
-        return _Geom.Geom_VectorWithMagnitude_Normalize(self, *args)
+        return _Geom.Geom_VectorWithMagnitude_Normalize(self)
 
-    def Normalized(self, *args) -> "Handle_Geom_VectorWithMagnitude" :
+    def Normalized(self):
         """
         * Returns a copy of <self> Normalized. Raised if the magnitude of the vector is lower or equal to Resolution from package gp.
 
         :rtype: Handle_Geom_VectorWithMagnitude
 
         """
-        return _Geom.Geom_VectorWithMagnitude_Normalized(self, *args)
+        return _Geom.Geom_VectorWithMagnitude_Normalized(self)
 
-    def Subtract(self, *args) -> "void" :
+    def Subtract(self, *args):
         """
         * Subtracts the Vector Other to <self>.
 
@@ -4879,7 +4879,7 @@ class Geom_VectorWithMagnitude(Geom_Vector):
         """
         return _Geom.Geom_VectorWithMagnitude_Subtract(self, *args)
 
-    def Subtracted(self, *args) -> "Handle_Geom_VectorWithMagnitude" :
+    def Subtracted(self, *args):
         """
         * Subtracts the vector Other to <self>. A new vector is returned.
 
@@ -4890,11 +4890,11 @@ class Geom_VectorWithMagnitude(Geom_Vector):
         """
         return _Geom.Geom_VectorWithMagnitude_Subtracted(self, *args)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Geom_VectorWithMagnitude self)"""
         return _Geom.Geom_VectorWithMagnitude__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Geom_VectorWithMagnitude" :
+    def GetHandle(self):
         """GetHandle(Geom_VectorWithMagnitude self) -> Handle_Geom_VectorWithMagnitude"""
         return _Geom.Geom_VectorWithMagnitude_GetHandle(self)
 
@@ -4947,7 +4947,7 @@ Handle_Geom_VectorWithMagnitude._kill_pointed = new_instancemethod(_Geom.Handle_
 Handle_Geom_VectorWithMagnitude_swigregister = _Geom.Handle_Geom_VectorWithMagnitude_swigregister
 Handle_Geom_VectorWithMagnitude_swigregister(Handle_Geom_VectorWithMagnitude)
 
-def Handle_Geom_VectorWithMagnitude_DownCast(*args) -> "Handle_Geom_VectorWithMagnitude const" :
+def Handle_Geom_VectorWithMagnitude_DownCast(*args):
   return _Geom.Handle_Geom_VectorWithMagnitude_DownCast(*args)
 Handle_Geom_VectorWithMagnitude_DownCast = _Geom.Handle_Geom_VectorWithMagnitude_DownCast
 
@@ -4965,7 +4965,21 @@ class Geom_BSplineCurve(Geom_BoundedCurve):
         :param Multiplicities:
         :type Multiplicities: TColStd_Array1OfInteger &
         :param Degree:
-        :type Degree: int
+        :type Degree: Standard_Integer
+        :param Periodic: default value is Standard_False
+        :type Periodic: bool
+        :rtype: None
+
+        * Creates a non-rational B_spline curve on the  basis <Knots, Multiplicities> of degree <Degree>.
+
+        :param Poles:
+        :type Poles: TColgp_Array1OfPnt
+        :param Knots:
+        :type Knots: TColStd_Array1OfReal &
+        :param Multiplicities:
+        :type Multiplicities: TColStd_Array1OfInteger &
+        :param Degree:
+        :type Degree: Standard_Integer
         :param Periodic: default value is Standard_False
         :type Periodic: bool
         :rtype: None
@@ -4981,7 +4995,43 @@ class Geom_BSplineCurve(Geom_BoundedCurve):
         :param Multiplicities:
         :type Multiplicities: TColStd_Array1OfInteger &
         :param Degree:
-        :type Degree: int
+        :type Degree: Standard_Integer
+        :param Periodic: default value is Standard_False
+        :type Periodic: bool
+        :param CheckRational: default value is Standard_True
+        :type CheckRational: bool
+        :rtype: None
+
+        * Creates a rational B_spline curve on the basis  <Knots, Multiplicities> of degree <Degree>. Raises ConstructionError subject to the following conditions 0 < Degree <= MaxDegree. Weights.Length() == Poles.Length() Knots.Length() == Mults.Length() >= 2 Knots(i) < Knots(i+1) (Knots are increasing) 1 <= Mults(i) <= Degree On a non periodic curve the first and last multiplicities may be Degree+1 (this is even recommanded if you want the curve to start and finish on the first and last pole). On a periodic curve the first and the last multicities must be the same. on non-periodic curves Poles.Length() == Sum(Mults(i)) - Degree - 1 >= 2 on periodic curves Poles.Length() == Sum(Mults(i)) except the first or last
+
+        :param Poles:
+        :type Poles: TColgp_Array1OfPnt
+        :param Weights:
+        :type Weights: TColStd_Array1OfReal &
+        :param Knots:
+        :type Knots: TColStd_Array1OfReal &
+        :param Multiplicities:
+        :type Multiplicities: TColStd_Array1OfInteger &
+        :param Degree:
+        :type Degree: Standard_Integer
+        :param Periodic: default value is Standard_False
+        :type Periodic: bool
+        :param CheckRational: default value is Standard_True
+        :type CheckRational: bool
+        :rtype: None
+
+        * Creates a rational B_spline curve on the basis  <Knots, Multiplicities> of degree <Degree>. Raises ConstructionError subject to the following conditions 0 < Degree <= MaxDegree. Weights.Length() == Poles.Length() Knots.Length() == Mults.Length() >= 2 Knots(i) < Knots(i+1) (Knots are increasing) 1 <= Mults(i) <= Degree On a non periodic curve the first and last multiplicities may be Degree+1 (this is even recommanded if you want the curve to start and finish on the first and last pole). On a periodic curve the first and the last multicities must be the same. on non-periodic curves Poles.Length() == Sum(Mults(i)) - Degree - 1 >= 2 on periodic curves Poles.Length() == Sum(Mults(i)) except the first or last
+
+        :param Poles:
+        :type Poles: TColgp_Array1OfPnt
+        :param Weights:
+        :type Weights: TColStd_Array1OfReal &
+        :param Knots:
+        :type Knots: TColStd_Array1OfReal &
+        :param Multiplicities:
+        :type Multiplicities: TColStd_Array1OfInteger &
+        :param Degree:
+        :type Degree: Standard_Integer
         :param Periodic: default value is Standard_False
         :type Periodic: bool
         :param CheckRational: default value is Standard_True
@@ -4990,63 +5040,99 @@ class Geom_BSplineCurve(Geom_BoundedCurve):
 
         """
         _Geom.Geom_BSplineCurve_swiginit(self,_Geom.new_Geom_BSplineCurve(*args))
-    def IncreaseDegree(self, *args) -> "void" :
+    def IncreaseDegree(self, *args):
         """
         * Increases the degree of this BSpline curve to Degree. As a result, the poles, weights and multiplicities tables are modified; the knots table is not changed. Nothing is done if Degree is less than or equal to the current degree. Exceptions Standard_ConstructionError if Degree is greater than Geom_BSplineCurve::MaxDegree().
 
         :param Degree:
-        :type Degree: int
+        :type Degree: Standard_Integer
         :rtype: None
 
         """
         return _Geom.Geom_BSplineCurve_IncreaseDegree(self, *args)
 
-    def IncreaseMultiplicity(self, *args) -> "void" :
+    def IncreaseMultiplicity(self, *args):
         """
         * //!Increases the multiplicity of the knot <Index> to  <M>. If <M> is lower or equal to the current  multiplicity nothing is done. If <M> is higher than  the degree the degree is used. If <Index> is not in [FirstUKnotIndex, LastUKnotIndex]
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param M:
-        :type M: int
+        :type M: Standard_Integer
         :rtype: None
 
         * //!Increases the multiplicities of the knots in  [I1,I2] to <M>. For each knot if <M> is lower or equal to the  current multiplicity nothing is done. If <M> is  higher than the degree the degree is used. If <I1,I2> are not in [FirstUKnotIndex, LastUKnotIndex]
 
         :param I1:
-        :type I1: int
+        :type I1: Standard_Integer
         :param I2:
-        :type I2: int
+        :type I2: Standard_Integer
         :param M:
-        :type M: int
+        :type M: Standard_Integer
         :rtype: None
 
         """
         return _Geom.Geom_BSplineCurve_IncreaseMultiplicity(self, *args)
 
-    def IncrementMultiplicity(self, *args) -> "void" :
+    def IncrementMultiplicity(self, *args):
         """
         * //!Increment the multiplicities of the knots in  [I1,I2] by <M>. If <M> is not positive nithing is done. For each knot the resulting multiplicity is  limited to the Degree. If <I1,I2> are not in [FirstUKnotIndex, LastUKnotIndex]
 
         :param I1:
-        :type I1: int
+        :type I1: Standard_Integer
         :param I2:
-        :type I2: int
+        :type I2: Standard_Integer
         :param M:
-        :type M: int
+        :type M: Standard_Integer
         :rtype: None
 
         """
         return _Geom.Geom_BSplineCurve_IncrementMultiplicity(self, *args)
 
-    def InsertKnot(self, *args) -> "void" :
+    def InsertKnot(self, *args):
         """
         * Inserts a knot value in the sequence of knots. If <U> is an existing knot the multiplicity is increased by <M>.  If U is not on the parameter range nothing is done.  If the multiplicity is negative or null nothing is done. The new multiplicity is limited to the degree.  The tolerance criterion for knots equality is the max of Epsilon(U) and ParametricTolerance.
 
         :param U:
         :type U: float
         :param M: default value is 1
-        :type M: int
+        :type M: Standard_Integer
+        :param ParametricTolerance: default value is 0.0
+        :type ParametricTolerance: float
+        :param Add: default value is Standard_True
+        :type Add: bool
+        :rtype: None
+
+        * Inserts a knot value in the sequence of knots. If <U> is an existing knot the multiplicity is increased by <M>.  If U is not on the parameter range nothing is done.  If the multiplicity is negative or null nothing is done. The new multiplicity is limited to the degree.  The tolerance criterion for knots equality is the max of Epsilon(U) and ParametricTolerance.
+
+        :param U:
+        :type U: float
+        :param M: default value is 1
+        :type M: Standard_Integer
+        :param ParametricTolerance: default value is 0.0
+        :type ParametricTolerance: float
+        :param Add: default value is Standard_True
+        :type Add: bool
+        :rtype: None
+
+        * Inserts a knot value in the sequence of knots. If <U> is an existing knot the multiplicity is increased by <M>.  If U is not on the parameter range nothing is done.  If the multiplicity is negative or null nothing is done. The new multiplicity is limited to the degree.  The tolerance criterion for knots equality is the max of Epsilon(U) and ParametricTolerance.
+
+        :param U:
+        :type U: float
+        :param M: default value is 1
+        :type M: Standard_Integer
+        :param ParametricTolerance: default value is 0.0
+        :type ParametricTolerance: float
+        :param Add: default value is Standard_True
+        :type Add: bool
+        :rtype: None
+
+        * Inserts a knot value in the sequence of knots. If <U> is an existing knot the multiplicity is increased by <M>.  If U is not on the parameter range nothing is done.  If the multiplicity is negative or null nothing is done. The new multiplicity is limited to the degree.  The tolerance criterion for knots equality is the max of Epsilon(U) and ParametricTolerance.
+
+        :param U:
+        :type U: float
+        :param M: default value is 1
+        :type M: Standard_Integer
         :param ParametricTolerance: default value is 0.0
         :type ParametricTolerance: float
         :param Add: default value is Standard_True
@@ -5056,8 +5142,32 @@ class Geom_BSplineCurve(Geom_BoundedCurve):
         """
         return _Geom.Geom_BSplineCurve_InsertKnot(self, *args)
 
-    def InsertKnots(self, *args) -> "void" :
+    def InsertKnots(self, *args):
         """
+        * Inserts a set of knots values in the sequence of knots.  For each U = Knots(i), M = Mults(i)  If <U> is an existing knot the multiplicity is increased by <M> if <Add> is True, increased to <M> if <Add> is False.  If U is not on the parameter range nothing is done.  If the multiplicity is negative or null nothing is done. The new multiplicity is limited to the degree.  The tolerance criterion for knots equality is the max of Epsilon(U) and ParametricTolerance.
+
+        :param Knots:
+        :type Knots: TColStd_Array1OfReal &
+        :param Mults:
+        :type Mults: TColStd_Array1OfInteger &
+        :param ParametricTolerance: default value is 0.0
+        :type ParametricTolerance: float
+        :param Add: default value is Standard_False
+        :type Add: bool
+        :rtype: None
+
+        * Inserts a set of knots values in the sequence of knots.  For each U = Knots(i), M = Mults(i)  If <U> is an existing knot the multiplicity is increased by <M> if <Add> is True, increased to <M> if <Add> is False.  If U is not on the parameter range nothing is done.  If the multiplicity is negative or null nothing is done. The new multiplicity is limited to the degree.  The tolerance criterion for knots equality is the max of Epsilon(U) and ParametricTolerance.
+
+        :param Knots:
+        :type Knots: TColStd_Array1OfReal &
+        :param Mults:
+        :type Mults: TColStd_Array1OfInteger &
+        :param ParametricTolerance: default value is 0.0
+        :type ParametricTolerance: float
+        :param Add: default value is Standard_False
+        :type Add: bool
+        :rtype: None
+
         * Inserts a set of knots values in the sequence of knots.  For each U = Knots(i), M = Mults(i)  If <U> is an existing knot the multiplicity is increased by <M> if <Add> is True, increased to <M> if <Add> is False.  If U is not on the parameter range nothing is done.  If the multiplicity is negative or null nothing is done. The new multiplicity is limited to the degree.  The tolerance criterion for knots equality is the max of Epsilon(U) and ParametricTolerance.
 
         :param Knots:
@@ -5073,14 +5183,14 @@ class Geom_BSplineCurve(Geom_BoundedCurve):
         """
         return _Geom.Geom_BSplineCurve_InsertKnots(self, *args)
 
-    def RemoveKnot(self, *args) -> "Standard_Boolean" :
+    def RemoveKnot(self, *args):
         """
         * Reduces the multiplicity of the knot of index Index to M. If M is equal to 0, the knot is removed. With a modification of this type, the array of poles is also modified. Two different algorithms are systematically used to compute the new poles of the curve. If, for each pole, the distance between the pole calculated using the first algorithm and the same pole calculated using the second algorithm, is less than Tolerance, this ensures that the curve is not modified by more than Tolerance. Under these conditions, true is returned; otherwise, false is returned. A low tolerance is used to prevent modification of the curve. A high tolerance is used to 'smooth' the curve. Exceptions Standard_OutOfRange if Index is outside the bounds of the knots table. pole insertion and pole removing this operation is limited to the Uniform or QuasiUniform BSplineCurve. The knot values are modified . If the BSpline is NonUniform or Piecewise Bezier an exception Construction error is raised.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param M:
-        :type M: int
+        :type M: Standard_Integer
         :param Tolerance:
         :type Tolerance: float
         :rtype: bool
@@ -5088,7 +5198,7 @@ class Geom_BSplineCurve(Geom_BoundedCurve):
         """
         return _Geom.Geom_BSplineCurve_RemoveKnot(self, *args)
 
-    def Segment(self, *args) -> "void" :
+    def Segment(self, *args):
         """
         * Modifies this BSpline curve by segmenting it between U1 and U2. Either of these values can be outside the bounds of the curve, but U2 must be greater than U1. All data structure tables of this BSpline curve are modified, but the knots located between U1 and U2 are retained. The degree of the curve is not modified. Warnings : Even if <self> is not closed it can become closed after the segmentation for example if U1 or U2 are out of the bounds of the curve <self> or if the curve makes loop. After the segmentation the length of a curve can be null. raises if U2 < U1.
 
@@ -5101,7 +5211,7 @@ class Geom_BSplineCurve(Geom_BoundedCurve):
         """
         return _Geom.Geom_BSplineCurve_Segment(self, *args)
 
-    def SetKnots(self, *args) -> "void" :
+    def SetKnots(self, *args):
         """
         * Modifies this BSpline curve by assigning the array K to its knots table. The multiplicity of the knots is not modified. Exceptions Standard_ConstructionError if the values in the array K are not in ascending order. Standard_OutOfRange if the bounds of the array K are not respectively 1 and the number of knots of this BSpline curve.
 
@@ -5112,12 +5222,12 @@ class Geom_BSplineCurve(Geom_BoundedCurve):
         """
         return _Geom.Geom_BSplineCurve_SetKnots(self, *args)
 
-    def SetKnot(self, *args) -> "void" :
+    def SetKnot(self, *args):
         """
         * Modifies this BSpline curve by assigning the value K to the knot of index Index in the knots table. This is a relatively local modification because K must be such that: Knots(Index - 1) < K < Knots(Index + 1) The second syntax allows you also to increase the multiplicity of the knot to M (but it is not possible to decrease the multiplicity of the knot with this function). Standard_ConstructionError if: - K is not such that: Knots(Index - 1) < K < Knots(Index + 1) - M is greater than the degree of this BSpline curve or lower than the previous multiplicity of knot of index Index in the knots table. Standard_OutOfRange if Index is outside the bounds of the knots table.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param K:
         :type K: float
         :rtype: None
@@ -5125,17 +5235,17 @@ class Geom_BSplineCurve(Geom_BoundedCurve):
         * Changes the knot of range Index with its multiplicity. You can increase the multiplicity of a knot but it is not allowed to decrease the multiplicity of an existing knot. Raised if K >= Knots(Index+1) or K <= Knots(Index-1). Raised if M is greater than Degree or lower than the previous multiplicity of knot of range Index. Raised if Index < 1 || Index > NbKnots
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param K:
         :type K: float
         :param M:
-        :type M: int
+        :type M: Standard_Integer
         :rtype: None
 
         """
         return _Geom.Geom_BSplineCurve_SetKnot(self, *args)
 
-    def PeriodicNormalization(self, *args) -> "void" :
+    def PeriodicNormalization(self):
         """
         * returns the parameter normalized within  the period if the curve is periodic : otherwise  does not do anything
 
@@ -5144,23 +5254,23 @@ class Geom_BSplineCurve(Geom_BoundedCurve):
         :rtype: None
 
         """
-        return _Geom.Geom_BSplineCurve_PeriodicNormalization(self, *args)
+        return _Geom.Geom_BSplineCurve_PeriodicNormalization(self)
 
-    def SetPeriodic(self, *args) -> "void" :
+    def SetPeriodic(self):
         """
         * Changes this BSpline curve into a periodic curve. To become periodic, the curve must first be closed. Next, the knot sequence must be periodic. For this, FirstUKnotIndex and LastUKnotIndex are used to compute I1 and I2, the indexes in the knots array of the knots corresponding to the first and last parameters of this BSpline curve. The period is therefore: Knots(I2) - Knots(I1). Consequently, the knots and poles tables are modified. Exceptions Standard_ConstructionError if this BSpline curve is not closed.
 
         :rtype: None
 
         """
-        return _Geom.Geom_BSplineCurve_SetPeriodic(self, *args)
+        return _Geom.Geom_BSplineCurve_SetPeriodic(self)
 
-    def SetOrigin(self, *args) -> "void" :
+    def SetOrigin(self, *args):
         """
         * Assigns the knot of index Index in the knots table as the origin of this periodic BSpline curve. As a consequence, the knots and poles tables are modified. Exceptions Standard_NoSuchObject if this curve is not periodic. Standard_DomainError if Index is outside the bounds of the knots table.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: None
 
         * Set the origin of a periodic curve at Knot U. If U is not a knot of the BSpline a new knot is inseted. KnotVector and poles are modified. Raised if the curve is not periodic
@@ -5174,21 +5284,21 @@ class Geom_BSplineCurve(Geom_BoundedCurve):
         """
         return _Geom.Geom_BSplineCurve_SetOrigin(self, *args)
 
-    def SetNotPeriodic(self, *args) -> "void" :
+    def SetNotPeriodic(self):
         """
         * Changes this BSpline curve into a non-periodic curve. If this curve is already non-periodic, it is not modified. Note: the poles and knots tables are modified. Warning If this curve is periodic, as the multiplicity of the first and last knots is not modified, and is not equal to Degree + 1, where Degree is the degree of this BSpline curve, the start and end points of the curve are not its first and last poles.
 
         :rtype: None
 
         """
-        return _Geom.Geom_BSplineCurve_SetNotPeriodic(self, *args)
+        return _Geom.Geom_BSplineCurve_SetNotPeriodic(self)
 
-    def SetPole(self, *args) -> "void" :
+    def SetPole(self, *args):
         """
         * Modifies this BSpline curve by assigning P to the pole of index Index in the poles table. Exceptions Standard_OutOfRange if Index is outside the bounds of the poles table. Standard_ConstructionError if Weight is negative or null.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param P:
         :type P: gp_Pnt
         :rtype: None
@@ -5196,7 +5306,7 @@ class Geom_BSplineCurve(Geom_BoundedCurve):
         * Modifies this BSpline curve by assigning P to the pole of index Index in the poles table. This syntax also allows you to modify the weight of the modified pole, which becomes Weight. In this case, if this BSpline curve is non-rational, it can become rational and vice versa. Exceptions Standard_OutOfRange if Index is outside the bounds of the poles table. Standard_ConstructionError if Weight is negative or null.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param P:
         :type P: gp_Pnt
         :param Weight:
@@ -5206,12 +5316,12 @@ class Geom_BSplineCurve(Geom_BoundedCurve):
         """
         return _Geom.Geom_BSplineCurve_SetPole(self, *args)
 
-    def SetWeight(self, *args) -> "void" :
+    def SetWeight(self, *args):
         """
         * Changes the weight for the pole of range Index. If the curve was non rational it can become rational. If the curve was rational it can become non rational. Raised if Index < 1 || Index > NbPoles Raised if Weight <= 0.0
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Weight:
         :type Weight: float
         :rtype: None
@@ -5219,7 +5329,7 @@ class Geom_BSplineCurve(Geom_BoundedCurve):
         """
         return _Geom.Geom_BSplineCurve_SetWeight(self, *args)
 
-    def MovePoint(self, *args) -> "void" :
+    def MovePoint(self, *args):
         """
         * Moves the point of parameter U of this BSpline curve to P. Index1 and Index2 are the indexes in the table of poles of this BSpline curve of the first and last poles designated to be moved. FirstModifiedPole and LastModifiedPole are the indexes of the first and last poles which are effectively modified. In the event of incompatibility between Index1, Index2 and the value U: - no change is made to this BSpline curve, and - the FirstModifiedPole and LastModifiedPole are returned null. Exceptions Standard_OutOfRange if: - Index1 is greater than or equal to Index2, or - Index1 or Index2 is less than 1 or greater than the number of poles of this BSpline curve.
 
@@ -5228,19 +5338,19 @@ class Geom_BSplineCurve(Geom_BoundedCurve):
         :param P:
         :type P: gp_Pnt
         :param Index1:
-        :type Index1: int
+        :type Index1: Standard_Integer
         :param Index2:
-        :type Index2: int
+        :type Index2: Standard_Integer
         :param FirstModifiedPole:
-        :type FirstModifiedPole: int &
+        :type FirstModifiedPole: Standard_Integer &
         :param LastModifiedPole:
-        :type LastModifiedPole: int &
+        :type LastModifiedPole: Standard_Integer &
         :rtype: None
 
         """
         return _Geom.Geom_BSplineCurve_MovePoint(self, *args)
 
-    def MovePointAndTangent(self, *args) -> "void" :
+    def MovePointAndTangent(self, *args):
         """
         * Move a point with parameter U to P. and makes it tangent at U be Tangent. StartingCondition = -1 means first can move EndingCondition = -1 means last point can move StartingCondition = 0 means the first point cannot move EndingCondition = 0 means the last point cannot move StartingCondition = 1 means the first point and tangent cannot move EndingCondition = 1 means the last point and tangent cannot move and so forth ErrorStatus != 0 means that there are not enought degree of freedom with the constrain to deform the curve accordingly
 
@@ -5253,59 +5363,59 @@ class Geom_BSplineCurve(Geom_BoundedCurve):
         :param Tolerance:
         :type Tolerance: float
         :param StartingCondition:
-        :type StartingCondition: int
+        :type StartingCondition: Standard_Integer
         :param EndingCondition:
-        :type EndingCondition: int
+        :type EndingCondition: Standard_Integer
         :param ErrorStatus:
-        :type ErrorStatus: int &
+        :type ErrorStatus: Standard_Integer &
         :rtype: None
 
         """
         return _Geom.Geom_BSplineCurve_MovePointAndTangent(self, *args)
 
-    def IsRational(self, *args) -> "Standard_Boolean" :
+    def IsRational(self):
         """
         * Returns True if the weights are not identical. The tolerance criterion is Epsilon of the class Real.
 
         :rtype: bool
 
         """
-        return _Geom.Geom_BSplineCurve_IsRational(self, *args)
+        return _Geom.Geom_BSplineCurve_IsRational(self)
 
-    def Degree(self, *args) -> "Standard_Integer" :
+    def Degree(self):
         """
         * Returns the degree of this BSpline curve. The degree of a Geom_BSplineCurve curve cannot be greater than Geom_BSplineCurve::MaxDegree(). Computation of value and derivatives
 
         :rtype: int
 
         """
-        return _Geom.Geom_BSplineCurve_Degree(self, *args)
+        return _Geom.Geom_BSplineCurve_Degree(self)
 
-    def LocalValue(self, *args) -> "gp_Pnt" :
+    def LocalValue(self, *args):
         """
         * Raised if FromK1 = ToK2. Raised if FromK1 and ToK2 are not in the range [FirstUKnotIndex, LastUKnotIndex].
 
         :param U:
         :type U: float
         :param FromK1:
-        :type FromK1: int
+        :type FromK1: Standard_Integer
         :param ToK2:
-        :type ToK2: int
+        :type ToK2: Standard_Integer
         :rtype: gp_Pnt
 
         """
         return _Geom.Geom_BSplineCurve_LocalValue(self, *args)
 
-    def LocalD0(self, *args) -> "void" :
+    def LocalD0(self, *args):
         """
         * Raised if FromK1 = ToK2. Raised if FromK1 and ToK2 are not in the range [FirstUKnotIndex, LastUKnotIndex].
 
         :param U:
         :type U: float
         :param FromK1:
-        :type FromK1: int
+        :type FromK1: Standard_Integer
         :param ToK2:
-        :type ToK2: int
+        :type ToK2: Standard_Integer
         :param P:
         :type P: gp_Pnt
         :rtype: None
@@ -5313,16 +5423,16 @@ class Geom_BSplineCurve(Geom_BoundedCurve):
         """
         return _Geom.Geom_BSplineCurve_LocalD0(self, *args)
 
-    def LocalD1(self, *args) -> "void" :
+    def LocalD1(self, *args):
         """
         * Raised if the local continuity of the curve is not C1 between the knot K1 and the knot K2. Raised if FromK1 = ToK2. Raised if FromK1 and ToK2 are not in the range [FirstUKnotIndex, LastUKnotIndex].
 
         :param U:
         :type U: float
         :param FromK1:
-        :type FromK1: int
+        :type FromK1: Standard_Integer
         :param ToK2:
-        :type ToK2: int
+        :type ToK2: Standard_Integer
         :param P:
         :type P: gp_Pnt
         :param V1:
@@ -5332,16 +5442,16 @@ class Geom_BSplineCurve(Geom_BoundedCurve):
         """
         return _Geom.Geom_BSplineCurve_LocalD1(self, *args)
 
-    def LocalD2(self, *args) -> "void" :
+    def LocalD2(self, *args):
         """
         * Raised if the local continuity of the curve is not C2 between the knot K1 and the knot K2. Raised if FromK1 = ToK2. Raised if FromK1 and ToK2 are not in the range [FirstUKnotIndex, LastUKnotIndex].
 
         :param U:
         :type U: float
         :param FromK1:
-        :type FromK1: int
+        :type FromK1: Standard_Integer
         :param ToK2:
-        :type ToK2: int
+        :type ToK2: Standard_Integer
         :param P:
         :type P: gp_Pnt
         :param V1:
@@ -5353,16 +5463,16 @@ class Geom_BSplineCurve(Geom_BoundedCurve):
         """
         return _Geom.Geom_BSplineCurve_LocalD2(self, *args)
 
-    def LocalD3(self, *args) -> "void" :
+    def LocalD3(self, *args):
         """
         * Raised if the local continuity of the curve is not C3 between the knot K1 and the knot K2. Raised if FromK1 = ToK2. Raised if FromK1 and ToK2 are not in the range [FirstUKnotIndex, LastUKnotIndex].
 
         :param U:
         :type U: float
         :param FromK1:
-        :type FromK1: int
+        :type FromK1: Standard_Integer
         :param ToK2:
-        :type ToK2: int
+        :type ToK2: Standard_Integer
         :param P:
         :type P: gp_Pnt
         :param V1:
@@ -5376,44 +5486,44 @@ class Geom_BSplineCurve(Geom_BoundedCurve):
         """
         return _Geom.Geom_BSplineCurve_LocalD3(self, *args)
 
-    def LocalDN(self, *args) -> "gp_Vec" :
+    def LocalDN(self, *args):
         """
         * Raised if the local continuity of the curve is not CN between the knot K1 and the knot K2. Raised if FromK1 = ToK2. Raised if N < 1. Raises if FromK1 and ToK2 are not in the range [FirstUKnotIndex, LastUKnotIndex].
 
         :param U:
         :type U: float
         :param FromK1:
-        :type FromK1: int
+        :type FromK1: Standard_Integer
         :param ToK2:
-        :type ToK2: int
+        :type ToK2: Standard_Integer
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :rtype: gp_Vec
 
         """
         return _Geom.Geom_BSplineCurve_LocalDN(self, *args)
 
-    def FirstUKnotIndex(self, *args) -> "Standard_Integer" :
+    def FirstUKnotIndex(self):
         """
         * Returns the index in the knot array of the knot corresponding to the first or last parameter of this BSpline curve. For a BSpline curve, the first (or last) parameter (which gives the start (or end) point of the curve) is a knot value. However, if the multiplicity of the first (or last) knot is less than Degree + 1, where Degree is the degree of the curve, it is not the first (or last) knot of the curve.
 
         :rtype: int
 
         """
-        return _Geom.Geom_BSplineCurve_FirstUKnotIndex(self, *args)
+        return _Geom.Geom_BSplineCurve_FirstUKnotIndex(self)
 
-    def Knot(self, *args) -> "Standard_Real" :
+    def Knot(self, *args):
         """
         * Returns the knot of range Index. When there is a knot with a multiplicity greater than 1 the knot is not repeated. The method Multiplicity can be used to get the multiplicity of the Knot. Raised if Index < 1 or Index > NbKnots
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: float
 
         """
         return _Geom.Geom_BSplineCurve_Knot(self, *args)
 
-    def Knots(self, *args) -> "void" :
+    def Knots(self, *args):
         """
         * returns the knot values of the B-spline curve; Warning A knot with a multiplicity greater than 1 is not repeated in the knot table. The Multiplicity function can be used to obtain the multiplicity of each knot. Raised if the length of K is not equal to the number of knots.
 
@@ -5424,7 +5534,7 @@ class Geom_BSplineCurve(Geom_BoundedCurve):
         """
         return _Geom.Geom_BSplineCurve_Knots(self, *args)
 
-    def KnotSequence(self, *args) -> "void" :
+    def KnotSequence(self, *args):
         """
         * Returns K, the knots sequence of this BSpline curve. In this sequence, knots with a multiplicity greater than 1 are repeated. In the case of a non-periodic curve the length of the sequence must be equal to the sum of the NbKnots multiplicities of the knots of the curve (where NbKnots is the number of knots of this BSpline curve). This sum is also equal to : NbPoles + Degree + 1 where NbPoles is the number of poles and Degree the degree of this BSpline curve. In the case of a periodic curve, if there are k periodic knots, the period is Knot(k+1) - Knot(1). The initial sequence is built by writing knots 1 to k+1, which are repeated according to their corresponding multiplicities. If Degree is the degree of the curve, the degree of continuity of the curve at the knot of index 1 (or k+1) is equal to c = Degree + 1 - Mult(1). c knots are then inserted at the beginning and end of the initial sequence: - the c values of knots preceding the first item Knot(k+1) in the initial sequence are inserted at the beginning; the period is subtracted from these c values; - the c values of knots following the last item Knot(1) in the initial sequence are inserted at the end; the period is added to these c values. The length of the sequence must therefore be equal to: NbPoles + 2*Degree - Mult(1) + 2. Example For a non-periodic BSpline curve of degree 2 where: - the array of knots is: { k1 k2 k3 k4 }, - with associated multiplicities: { 3 1 2 3 }, the knot sequence is: K = { k1 k1 k1 k2 k3 k3 k4 k4 k4 } For a periodic BSpline curve of degree 4 , which is 'C1' continuous at the first knot, and where : - the periodic knots are: { k1 k2 k3 (k4) } (3 periodic knots: the points of parameter k1 and k4 are identical, the period is p = k4 - k1), - with associated multiplicities: { 3 1 2 (3) }, the degree of continuity at knots k1 and k4 is: Degree + 1 - Mult(i) = 2. 2 supplementary knots are added at the beginning and end of the sequence: - at the beginning: the 2 knots preceding k4 minus the period; in this example, this is k3 - p both times; - at the end: the 2 knots following k1 plus the period; in this example, this is k2 + p and k3 + p. The knot sequence is therefore: K = { k3-p k3-p k1 k1 k1 k2 k3 k3 k4 k4 k4 k2+p k3+p } Exceptions Standard_DimensionError if the array K is not of the appropriate length.Returns the knots sequence.
 
@@ -5435,25 +5545,25 @@ class Geom_BSplineCurve(Geom_BoundedCurve):
         """
         return _Geom.Geom_BSplineCurve_KnotSequence(self, *args)
 
-    def KnotDistribution(self, *args) -> "GeomAbs_BSplKnotDistribution" :
+    def KnotDistribution(self):
         """
         * Returns NonUniform or Uniform or QuasiUniform or PiecewiseBezier. If all the knots differ by a positive constant from the preceding knot the BSpline Curve can be : - Uniform if all the knots are of multiplicity 1, - QuasiUniform if all the knots are of multiplicity 1 except for the first and last knot which are of multiplicity Degree + 1, - PiecewiseBezier if the first and last knots have multiplicity Degree + 1 and if interior knots have multiplicity Degree A piecewise Bezier with only two knots is a BezierCurve. else the curve is non uniform. The tolerance criterion is Epsilon from class Real.
 
         :rtype: GeomAbs_BSplKnotDistribution
 
         """
-        return _Geom.Geom_BSplineCurve_KnotDistribution(self, *args)
+        return _Geom.Geom_BSplineCurve_KnotDistribution(self)
 
-    def LastUKnotIndex(self, *args) -> "Standard_Integer" :
+    def LastUKnotIndex(self):
         """
         * For a BSpline curve the last parameter (which gives the end point of the curve) is a knot value but if the multiplicity of the last knot index is lower than Degree + 1 it is not the last knot of the curve. This method computes the index of the knot corresponding to the last parameter.
 
         :rtype: int
 
         """
-        return _Geom.Geom_BSplineCurve_LastUKnotIndex(self, *args)
+        return _Geom.Geom_BSplineCurve_LastUKnotIndex(self)
 
-    def LocateU(self, *args) -> "void" :
+    def LocateU(self, *args):
         """
         * Locates the parametric value U in the sequence of knots. If 'WithKnotRepetition' is True we consider the knot's representation with repetition of multiple knot value, otherwise we consider the knot's representation with no repetition of multiple knot values. Knots (I1) <= U <= Knots (I2) . if I1 = I2 U is a knot value (the tolerance criterion ParametricTolerance is used). . if I1 < 1 => U < Knots (1) - Abs(ParametricTolerance) . if I2 > NbKnots => U > Knots (NbKnots) + Abs(ParametricTolerance)
 
@@ -5462,9 +5572,23 @@ class Geom_BSplineCurve(Geom_BoundedCurve):
         :param ParametricTolerance:
         :type ParametricTolerance: float
         :param I1:
-        :type I1: int &
+        :type I1: Standard_Integer &
         :param I2:
-        :type I2: int &
+        :type I2: Standard_Integer &
+        :param WithKnotRepetition: default value is Standard_False
+        :type WithKnotRepetition: bool
+        :rtype: None
+
+        * Locates the parametric value U in the sequence of knots. If 'WithKnotRepetition' is True we consider the knot's representation with repetition of multiple knot value, otherwise we consider the knot's representation with no repetition of multiple knot values. Knots (I1) <= U <= Knots (I2) . if I1 = I2 U is a knot value (the tolerance criterion ParametricTolerance is used). . if I1 < 1 => U < Knots (1) - Abs(ParametricTolerance) . if I2 > NbKnots => U > Knots (NbKnots) + Abs(ParametricTolerance)
+
+        :param U:
+        :type U: float
+        :param ParametricTolerance:
+        :type ParametricTolerance: float
+        :param I1:
+        :type I1: Standard_Integer &
+        :param I2:
+        :type I2: Standard_Integer &
         :param WithKnotRepetition: default value is Standard_False
         :type WithKnotRepetition: bool
         :rtype: None
@@ -5472,18 +5596,18 @@ class Geom_BSplineCurve(Geom_BoundedCurve):
         """
         return _Geom.Geom_BSplineCurve_LocateU(self, *args)
 
-    def Multiplicity(self, *args) -> "Standard_Integer" :
+    def Multiplicity(self, *args):
         """
         * Returns the multiplicity of the knots of range Index. Raised if Index < 1 or Index > NbKnots
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: int
 
         """
         return _Geom.Geom_BSplineCurve_Multiplicity(self, *args)
 
-    def Multiplicities(self, *args) -> "void" :
+    def Multiplicities(self, *args):
         """
         * Returns the multiplicity of the knots of the curve. Raised if the length of M is not equal to NbKnots.
 
@@ -5494,36 +5618,36 @@ class Geom_BSplineCurve(Geom_BoundedCurve):
         """
         return _Geom.Geom_BSplineCurve_Multiplicities(self, *args)
 
-    def NbKnots(self, *args) -> "Standard_Integer" :
+    def NbKnots(self):
         """
         * Returns the number of knots. This method returns the number of knot without repetition of multiple knots.
 
         :rtype: int
 
         """
-        return _Geom.Geom_BSplineCurve_NbKnots(self, *args)
+        return _Geom.Geom_BSplineCurve_NbKnots(self)
 
-    def NbPoles(self, *args) -> "Standard_Integer" :
+    def NbPoles(self):
         """
         * Returns the number of poles
 
         :rtype: int
 
         """
-        return _Geom.Geom_BSplineCurve_NbPoles(self, *args)
+        return _Geom.Geom_BSplineCurve_NbPoles(self)
 
-    def Pole(self, *args) -> "gp_Pnt" :
+    def Pole(self, *args):
         """
         * Returns the pole of range Index. Raised if Index < 1 or Index > NbPoles.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: gp_Pnt
 
         """
         return _Geom.Geom_BSplineCurve_Pole(self, *args)
 
-    def Poles(self, *args) -> "void" :
+    def Poles(self, *args):
         """
         * Returns the poles of the B-spline curve; Raised if the length of P is not equal to the number of poles.
 
@@ -5534,18 +5658,18 @@ class Geom_BSplineCurve(Geom_BoundedCurve):
         """
         return _Geom.Geom_BSplineCurve_Poles(self, *args)
 
-    def Weight(self, *args) -> "Standard_Real" :
+    def Weight(self, *args):
         """
         * Returns the weight of the pole of range Index . Raised if Index < 1 or Index > NbPoles.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: float
 
         """
         return _Geom.Geom_BSplineCurve_Weight(self, *args)
 
-    def Weights(self, *args) -> "void" :
+    def Weights(self, *args):
         """
         * Returns the weights of the B-spline curve; Raised if the length of W is not equal to NbPoles.
 
@@ -5556,17 +5680,17 @@ class Geom_BSplineCurve(Geom_BoundedCurve):
         """
         return _Geom.Geom_BSplineCurve_Weights(self, *args)
 
-    def MaxDegree(*args) -> "Standard_Integer" :
+    def MaxDegree():
         """
         * Returns the value of the maximum degree of the normalized B-spline basis functions in this package.
 
         :rtype: int
 
         """
-        return _Geom.Geom_BSplineCurve_MaxDegree(*args)
+        return _Geom.Geom_BSplineCurve_MaxDegree()
 
     MaxDegree = staticmethod(MaxDegree)
-    def Resolution(self, *args) -> "void" :
+    def Resolution(self, *args):
         """
         * Computes for this BSpline curve the parametric tolerance UTolerance for a given 3D tolerance Tolerance3D. If f(t) is the equation of this BSpline curve, UTolerance ensures that: | t1 - t0| < Utolerance ===> |f(t1) - f(t0)| < Tolerance3D
 
@@ -5579,7 +5703,7 @@ class Geom_BSplineCurve(Geom_BoundedCurve):
         """
         return _Geom.Geom_BSplineCurve_Resolution(self, *args)
 
-    def IsEqual(self, *args) -> "Standard_Boolean" :
+    def IsEqual(self, *args):
         """
         * Comapare two Bspline curve on identity;
 
@@ -5592,11 +5716,11 @@ class Geom_BSplineCurve(Geom_BoundedCurve):
         """
         return _Geom.Geom_BSplineCurve_IsEqual(self, *args)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Geom_BSplineCurve self)"""
         return _Geom.Geom_BSplineCurve__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Geom_BSplineCurve" :
+    def GetHandle(self):
         """GetHandle(Geom_BSplineCurve self) -> Handle_Geom_BSplineCurve"""
         return _Geom.Geom_BSplineCurve_GetHandle(self)
 
@@ -5655,14 +5779,14 @@ Geom_BSplineCurve.GetHandle = new_instancemethod(_Geom.Geom_BSplineCurve_GetHand
 Geom_BSplineCurve_swigregister = _Geom.Geom_BSplineCurve_swigregister
 Geom_BSplineCurve_swigregister(Geom_BSplineCurve)
 
-def Geom_BSplineCurve_MaxDegree(*args) -> "Standard_Integer" :
+def Geom_BSplineCurve_MaxDegree():
   """
     * Returns the value of the maximum degree of the normalized B-spline basis functions in this package.
 
     :rtype: int
 
     """
-  return _Geom.Geom_BSplineCurve_MaxDegree(*args)
+  return _Geom.Geom_BSplineCurve_MaxDegree()
 
 class Handle_Geom_BSplineCurve(Handle_Geom_BoundedCurve):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
@@ -5685,7 +5809,7 @@ Handle_Geom_BSplineCurve._kill_pointed = new_instancemethod(_Geom.Handle_Geom_BS
 Handle_Geom_BSplineCurve_swigregister = _Geom.Handle_Geom_BSplineCurve_swigregister
 Handle_Geom_BSplineCurve_swigregister(Handle_Geom_BSplineCurve)
 
-def Handle_Geom_BSplineCurve_DownCast(*args) -> "Handle_Geom_BSplineCurve const" :
+def Handle_Geom_BSplineCurve_DownCast(*args):
   return _Geom.Handle_Geom_BSplineCurve_DownCast(*args)
 Handle_Geom_BSplineCurve_DownCast = _Geom.Handle_Geom_BSplineCurve_DownCast
 
@@ -5707,9 +5831,53 @@ class Geom_BSplineSurface(Geom_BoundedSurface):
         :param VMults:
         :type VMults: TColStd_Array1OfInteger &
         :param UDegree:
-        :type UDegree: int
+        :type UDegree: Standard_Integer
         :param VDegree:
-        :type VDegree: int
+        :type VDegree: Standard_Integer
+        :param UPeriodic: default value is Standard_False
+        :type UPeriodic: bool
+        :param VPeriodic: default value is Standard_False
+        :type VPeriodic: bool
+        :rtype: None
+
+        * Creates a non-rational b-spline surface (weights  default value is 1.). The following conditions must be verified. 0 < UDegree <= MaxDegree. UKnots.Length() == UMults.Length() >= 2 UKnots(i) < UKnots(i+1) (Knots are increasing) 1 <= UMults(i) <= UDegree On a non uperiodic surface the first and last umultiplicities may be UDegree+1 (this is even recommanded if you want the curve to start and finish on the first and last pole). On a uperiodic surface the first and the last umultiplicities must be the same. on non-uperiodic surfaces Poles.ColLength() == Sum(UMults(i)) - UDegree - 1 >= 2 on uperiodic surfaces Poles.ColLength() == Sum(UMults(i)) except the first or last The previous conditions for U holds also for V, with the RowLength of the poles.
+
+        :param Poles:
+        :type Poles: TColgp_Array2OfPnt
+        :param UKnots:
+        :type UKnots: TColStd_Array1OfReal &
+        :param VKnots:
+        :type VKnots: TColStd_Array1OfReal &
+        :param UMults:
+        :type UMults: TColStd_Array1OfInteger &
+        :param VMults:
+        :type VMults: TColStd_Array1OfInteger &
+        :param UDegree:
+        :type UDegree: Standard_Integer
+        :param VDegree:
+        :type VDegree: Standard_Integer
+        :param UPeriodic: default value is Standard_False
+        :type UPeriodic: bool
+        :param VPeriodic: default value is Standard_False
+        :type VPeriodic: bool
+        :rtype: None
+
+        * Creates a non-rational b-spline surface (weights  default value is 1.). The following conditions must be verified. 0 < UDegree <= MaxDegree. UKnots.Length() == UMults.Length() >= 2 UKnots(i) < UKnots(i+1) (Knots are increasing) 1 <= UMults(i) <= UDegree On a non uperiodic surface the first and last umultiplicities may be UDegree+1 (this is even recommanded if you want the curve to start and finish on the first and last pole). On a uperiodic surface the first and the last umultiplicities must be the same. on non-uperiodic surfaces Poles.ColLength() == Sum(UMults(i)) - UDegree - 1 >= 2 on uperiodic surfaces Poles.ColLength() == Sum(UMults(i)) except the first or last The previous conditions for U holds also for V, with the RowLength of the poles.
+
+        :param Poles:
+        :type Poles: TColgp_Array2OfPnt
+        :param UKnots:
+        :type UKnots: TColStd_Array1OfReal &
+        :param VKnots:
+        :type VKnots: TColStd_Array1OfReal &
+        :param UMults:
+        :type UMults: TColStd_Array1OfInteger &
+        :param VMults:
+        :type VMults: TColStd_Array1OfInteger &
+        :param UDegree:
+        :type UDegree: Standard_Integer
+        :param VDegree:
+        :type VDegree: Standard_Integer
         :param UPeriodic: default value is Standard_False
         :type UPeriodic: bool
         :param VPeriodic: default value is Standard_False
@@ -5731,9 +5899,57 @@ class Geom_BSplineSurface(Geom_BoundedSurface):
         :param VMults:
         :type VMults: TColStd_Array1OfInteger &
         :param UDegree:
-        :type UDegree: int
+        :type UDegree: Standard_Integer
         :param VDegree:
-        :type VDegree: int
+        :type VDegree: Standard_Integer
+        :param UPeriodic: default value is Standard_False
+        :type UPeriodic: bool
+        :param VPeriodic: default value is Standard_False
+        :type VPeriodic: bool
+        :rtype: None
+
+        * Creates a non-rational b-spline surface (weights  default value is 1.). The following conditions must be verified. 0 < UDegree <= MaxDegree. UKnots.Length() == UMults.Length() >= 2 UKnots(i) < UKnots(i+1) (Knots are increasing) 1 <= UMults(i) <= UDegree On a non uperiodic surface the first and last umultiplicities may be UDegree+1 (this is even recommanded if you want the curve to start and finish on the first and last pole). On a uperiodic surface the first and the last umultiplicities must be the same. on non-uperiodic surfaces Poles.ColLength() == Sum(UMults(i)) - UDegree - 1 >= 2 on uperiodic surfaces Poles.ColLength() == Sum(UMults(i)) except the first or last The previous conditions for U holds also for V, with the RowLength of the poles.
+
+        :param Poles:
+        :type Poles: TColgp_Array2OfPnt
+        :param Weights:
+        :type Weights: TColStd_Array2OfReal &
+        :param UKnots:
+        :type UKnots: TColStd_Array1OfReal &
+        :param VKnots:
+        :type VKnots: TColStd_Array1OfReal &
+        :param UMults:
+        :type UMults: TColStd_Array1OfInteger &
+        :param VMults:
+        :type VMults: TColStd_Array1OfInteger &
+        :param UDegree:
+        :type UDegree: Standard_Integer
+        :param VDegree:
+        :type VDegree: Standard_Integer
+        :param UPeriodic: default value is Standard_False
+        :type UPeriodic: bool
+        :param VPeriodic: default value is Standard_False
+        :type VPeriodic: bool
+        :rtype: None
+
+        * Creates a non-rational b-spline surface (weights  default value is 1.). The following conditions must be verified. 0 < UDegree <= MaxDegree. UKnots.Length() == UMults.Length() >= 2 UKnots(i) < UKnots(i+1) (Knots are increasing) 1 <= UMults(i) <= UDegree On a non uperiodic surface the first and last umultiplicities may be UDegree+1 (this is even recommanded if you want the curve to start and finish on the first and last pole). On a uperiodic surface the first and the last umultiplicities must be the same. on non-uperiodic surfaces Poles.ColLength() == Sum(UMults(i)) - UDegree - 1 >= 2 on uperiodic surfaces Poles.ColLength() == Sum(UMults(i)) except the first or last The previous conditions for U holds also for V, with the RowLength of the poles.
+
+        :param Poles:
+        :type Poles: TColgp_Array2OfPnt
+        :param Weights:
+        :type Weights: TColStd_Array2OfReal &
+        :param UKnots:
+        :type UKnots: TColStd_Array1OfReal &
+        :param VKnots:
+        :type VKnots: TColStd_Array1OfReal &
+        :param UMults:
+        :type UMults: TColStd_Array1OfInteger &
+        :param VMults:
+        :type VMults: TColStd_Array1OfInteger &
+        :param UDegree:
+        :type UDegree: Standard_Integer
+        :param VDegree:
+        :type VDegree: Standard_Integer
         :param UPeriodic: default value is Standard_False
         :type UPeriodic: bool
         :param VPeriodic: default value is Standard_False
@@ -5742,34 +5958,34 @@ class Geom_BSplineSurface(Geom_BoundedSurface):
 
         """
         _Geom.Geom_BSplineSurface_swiginit(self,_Geom.new_Geom_BSplineSurface(*args))
-    def ExchangeUV(self, *args) -> "void" :
+    def ExchangeUV(self):
         """
         * Exchanges the u and v parametric directions on this BSpline surface. As a consequence: - the poles and weights tables are transposed, - the knots and multiplicities tables are exchanged, - degrees of continuity, and rational, periodic and uniform characteristics are exchanged, and - the orientation of the surface is inverted.
 
         :rtype: None
 
         """
-        return _Geom.Geom_BSplineSurface_ExchangeUV(self, *args)
+        return _Geom.Geom_BSplineSurface_ExchangeUV(self)
 
-    def SetUPeriodic(self, *args) -> "void" :
+    def SetUPeriodic(self):
         """
         * Sets the surface U periodic.
 
         :rtype: None
 
         """
-        return _Geom.Geom_BSplineSurface_SetUPeriodic(self, *args)
+        return _Geom.Geom_BSplineSurface_SetUPeriodic(self)
 
-    def SetVPeriodic(self, *args) -> "void" :
+    def SetVPeriodic(self):
         """
         * Modifies this surface to be periodic in the u (or v) parametric direction. To become periodic in a given parametric direction a surface must be closed in that parametric direction, and the knot sequence relative to that direction must be periodic. To generate this periodic sequence of knots, the functions FirstUKnotIndex and LastUKnotIndex (or FirstVKnotIndex and LastVKnotIndex) are used to compute I1 and I2. These are the indexes, in the knot array associated with the given parametric direction, of the knots that correspond to the first and last parameters of this BSpline surface in the given parametric direction. Hence the period is: Knots(I1) - Knots(I2) As a result, the knots and poles tables are modified. Exceptions Standard_ConstructionError if the surface is not closed in the given parametric direction.
 
         :rtype: None
 
         """
-        return _Geom.Geom_BSplineSurface_SetVPeriodic(self, *args)
+        return _Geom.Geom_BSplineSurface_SetVPeriodic(self)
 
-    def PeriodicNormalization(self, *args) -> "void" :
+    def PeriodicNormalization(self):
         """
         * returns the parameter normalized within  the period if the surface is periodic : otherwise  does not do anything
 
@@ -5780,61 +5996,81 @@ class Geom_BSplineSurface(Geom_BoundedSurface):
         :rtype: None
 
         """
-        return _Geom.Geom_BSplineSurface_PeriodicNormalization(self, *args)
+        return _Geom.Geom_BSplineSurface_PeriodicNormalization(self)
 
-    def SetUOrigin(self, *args) -> "void" :
+    def SetUOrigin(self, *args):
         """
         * Assigns the knot of index Index in the knots table in the corresponding parametric direction to be the origin of this periodic BSpline surface. As a consequence, the knots and poles tables are modified. Exceptions Standard_NoSuchObject if this BSpline surface is not periodic in the given parametric direction. Standard_DomainError if Index is outside the bounds of the knots table in the given parametric direction.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: None
 
         """
         return _Geom.Geom_BSplineSurface_SetUOrigin(self, *args)
 
-    def SetVOrigin(self, *args) -> "void" :
+    def SetVOrigin(self, *args):
         """
         * Assigns the knot of index Index in the knots table in the corresponding parametric direction to be the origin of this periodic BSpline surface. As a consequence, the knots and poles tables are modified. Exceptions Standard_NoSuchObject if this BSpline surface is not periodic in the given parametric direction. Standard_DomainError if Index is outside the bounds of the knots table in the given parametric direction.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: None
 
         """
         return _Geom.Geom_BSplineSurface_SetVOrigin(self, *args)
 
-    def SetUNotPeriodic(self, *args) -> "void" :
+    def SetUNotPeriodic(self):
         """
         :rtype: None
 
         """
-        return _Geom.Geom_BSplineSurface_SetUNotPeriodic(self, *args)
+        return _Geom.Geom_BSplineSurface_SetUNotPeriodic(self)
 
-    def SetVNotPeriodic(self, *args) -> "void" :
+    def SetVNotPeriodic(self):
         """
         * Modifies this surface to be periodic in the u (or v) parametric direction. To become periodic in a given parametric direction a surface must be closed in that parametric direction, and the knot sequence relative to that direction must be periodic. To generate this periodic sequence of knots, the functions FirstUKnotIndex and LastUKnotIndex (or FirstVKnotIndex and LastVKnotIndex) are used to compute I1 and I2. These are the indexes, in the knot array associated with the given parametric direction, of the knots that correspond to the first and last parameters of this BSpline surface in the given parametric direction. Hence the period is: Knots(I1) - Knots(I2) As a result, the knots and poles tables are modified. Exceptions Standard_ConstructionError if the surface is not closed in the given parametric direction.
 
         :rtype: None
 
         """
-        return _Geom.Geom_BSplineSurface_SetVNotPeriodic(self, *args)
+        return _Geom.Geom_BSplineSurface_SetVNotPeriodic(self)
 
-    def IncreaseDegree(self, *args) -> "void" :
+    def IncreaseDegree(self, *args):
         """
         * Increases the degrees of this BSpline surface to UDegree and VDegree in the u and v parametric directions respectively. As a result, the tables of poles, weights and multiplicities are modified. The tables of knots is not changed. Note: Nothing is done if the given degree is less than or equal to the current degree in the corresponding parametric direction. Exceptions Standard_ConstructionError if UDegree or VDegree is greater than Geom_BSplineSurface::MaxDegree().
 
         :param UDegree:
-        :type UDegree: int
+        :type UDegree: Standard_Integer
         :param VDegree:
-        :type VDegree: int
+        :type VDegree: Standard_Integer
         :rtype: None
 
         """
         return _Geom.Geom_BSplineSurface_IncreaseDegree(self, *args)
 
-    def InsertUKnots(self, *args) -> "void" :
+    def InsertUKnots(self, *args):
         """
+        :param Knots:
+        :type Knots: TColStd_Array1OfReal &
+        :param Mults:
+        :type Mults: TColStd_Array1OfInteger &
+        :param ParametricTolerance: default value is 0.0
+        :type ParametricTolerance: float
+        :param Add: default value is Standard_True
+        :type Add: bool
+        :rtype: None
+
+        :param Knots:
+        :type Knots: TColStd_Array1OfReal &
+        :param Mults:
+        :type Mults: TColStd_Array1OfInteger &
+        :param ParametricTolerance: default value is 0.0
+        :type ParametricTolerance: float
+        :param Add: default value is Standard_True
+        :type Add: bool
+        :rtype: None
+
         :param Knots:
         :type Knots: TColStd_Array1OfReal &
         :param Mults:
@@ -5848,8 +6084,32 @@ class Geom_BSplineSurface(Geom_BoundedSurface):
         """
         return _Geom.Geom_BSplineSurface_InsertUKnots(self, *args)
 
-    def InsertVKnots(self, *args) -> "void" :
+    def InsertVKnots(self, *args):
         """
+        * Inserts into the knots table for the corresponding parametric direction of this BSpline surface: - the value U, or V, with the multiplicity M (defaulted to 1), or - the values of the array Knots, with their respective multiplicities, Mults. If the knot value to insert already exists in the table, its multiplicity is: - increased by M, if Add is true (the default), or - increased to M, if Add is false. The tolerance criterion used to check the equality of the knots is the larger of the values ParametricTolerance and Standard_Real::Epsilon(val), where val is the knot value to be inserted. Warning - If a given multiplicity coefficient is null, or negative, nothing is done. - The new multiplicity of a knot is limited to the degree of this BSpline surface in the corresponding parametric direction. Exceptions Standard_ConstructionError if a knot value to insert is outside the bounds of this BSpline surface in the specified parametric direction. The comparison uses the precision criterion ParametricTolerance.
+
+        :param Knots:
+        :type Knots: TColStd_Array1OfReal &
+        :param Mults:
+        :type Mults: TColStd_Array1OfInteger &
+        :param ParametricTolerance: default value is 0.0
+        :type ParametricTolerance: float
+        :param Add: default value is Standard_True
+        :type Add: bool
+        :rtype: None
+
+        * Inserts into the knots table for the corresponding parametric direction of this BSpline surface: - the value U, or V, with the multiplicity M (defaulted to 1), or - the values of the array Knots, with their respective multiplicities, Mults. If the knot value to insert already exists in the table, its multiplicity is: - increased by M, if Add is true (the default), or - increased to M, if Add is false. The tolerance criterion used to check the equality of the knots is the larger of the values ParametricTolerance and Standard_Real::Epsilon(val), where val is the knot value to be inserted. Warning - If a given multiplicity coefficient is null, or negative, nothing is done. - The new multiplicity of a knot is limited to the degree of this BSpline surface in the corresponding parametric direction. Exceptions Standard_ConstructionError if a knot value to insert is outside the bounds of this BSpline surface in the specified parametric direction. The comparison uses the precision criterion ParametricTolerance.
+
+        :param Knots:
+        :type Knots: TColStd_Array1OfReal &
+        :param Mults:
+        :type Mults: TColStd_Array1OfInteger &
+        :param ParametricTolerance: default value is 0.0
+        :type ParametricTolerance: float
+        :param Add: default value is Standard_True
+        :type Add: bool
+        :rtype: None
+
         * Inserts into the knots table for the corresponding parametric direction of this BSpline surface: - the value U, or V, with the multiplicity M (defaulted to 1), or - the values of the array Knots, with their respective multiplicities, Mults. If the knot value to insert already exists in the table, its multiplicity is: - increased by M, if Add is true (the default), or - increased to M, if Add is false. The tolerance criterion used to check the equality of the knots is the larger of the values ParametricTolerance and Standard_Real::Epsilon(val), where val is the knot value to be inserted. Warning - If a given multiplicity coefficient is null, or negative, nothing is done. - The new multiplicity of a knot is limited to the degree of this BSpline surface in the corresponding parametric direction. Exceptions Standard_ConstructionError if a knot value to insert is outside the bounds of this BSpline surface in the specified parametric direction. The comparison uses the precision criterion ParametricTolerance.
 
         :param Knots:
@@ -5865,12 +6125,12 @@ class Geom_BSplineSurface(Geom_BoundedSurface):
         """
         return _Geom.Geom_BSplineSurface_InsertVKnots(self, *args)
 
-    def RemoveUKnot(self, *args) -> "Standard_Boolean" :
+    def RemoveUKnot(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param M:
-        :type M: int
+        :type M: Standard_Integer
         :param Tolerance:
         :type Tolerance: float
         :rtype: bool
@@ -5878,14 +6138,14 @@ class Geom_BSplineSurface(Geom_BoundedSurface):
         """
         return _Geom.Geom_BSplineSurface_RemoveUKnot(self, *args)
 
-    def RemoveVKnot(self, *args) -> "Standard_Boolean" :
+    def RemoveVKnot(self, *args):
         """
         * Reduces to M the multiplicity of the knot of index Index in the given parametric direction. If M is 0, the knot is removed. With a modification of this type, the table of poles is also modified. Two different algorithms are used systematically to compute the new poles of the surface. For each pole, the distance between the pole calculated using the first algorithm and the same pole calculated using the second algorithm, is checked. If this distance is less than Tolerance it ensures that the surface is not modified by more than Tolerance. Under these conditions, the function returns true; otherwise, it returns false. A low tolerance prevents modification of the surface. A high tolerance 'smoothes' the surface. Exceptions Standard_OutOfRange if Index is outside the bounds of the knots table of this BSpline surface.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param M:
-        :type M: int
+        :type M: Standard_Integer
         :param Tolerance:
         :type Tolerance: float
         :rtype: bool
@@ -5893,90 +6153,102 @@ class Geom_BSplineSurface(Geom_BoundedSurface):
         """
         return _Geom.Geom_BSplineSurface_RemoveVKnot(self, *args)
 
-    def IncreaseUMultiplicity(self, *args) -> "void" :
+    def IncreaseUMultiplicity(self, *args):
         """
         * Increases the multiplicity of the knot of range UIndex in the UKnots sequence. M is the new multiplicity. M must be greater than the previous multiplicity and lower or equal to the degree of the surface in the U parametric direction. Raised if M is not in the range [1, UDegree] Raised if UIndex is not in the range [FirstUKnotIndex, LastUKnotIndex] given by the methods with the same name.
 
         :param UIndex:
-        :type UIndex: int
+        :type UIndex: Standard_Integer
         :param M:
-        :type M: int
+        :type M: Standard_Integer
         :rtype: None
 
         * Increases until order M the multiplicity of the set of knots FromI1,...., ToI2 in the U direction. This method can be used to make a B_spline surface into a PiecewiseBezier B_spline surface. If <self> was uniform, it can become non uniform. Raised if FromI1 or ToI2 is out of the range [FirstUKnotIndex, LastUKnotIndex]. M should be greater than the previous multiplicity of the all the knots FromI1,..., ToI2 and lower or equal to the Degree of the surface in the U parametric direction.
 
         :param FromI1:
-        :type FromI1: int
+        :type FromI1: Standard_Integer
         :param ToI2:
-        :type ToI2: int
+        :type ToI2: Standard_Integer
         :param M:
-        :type M: int
+        :type M: Standard_Integer
         :rtype: None
 
         """
         return _Geom.Geom_BSplineSurface_IncreaseUMultiplicity(self, *args)
 
-    def IncrementUMultiplicity(self, *args) -> "void" :
+    def IncrementUMultiplicity(self, *args):
         """
         * Increments the multiplicity of the consecutives uknots FromI1..ToI2 by step. The multiplicity of each knot FromI1,.....,ToI2 must be lower or equal to the UDegree of the B_spline. Raised if FromI1 or ToI2 is not in the range [FirstUKnotIndex, LastUKnotIndex] Raised if one knot has a multiplicity greater than UDegree.
 
         :param FromI1:
-        :type FromI1: int
+        :type FromI1: Standard_Integer
         :param ToI2:
-        :type ToI2: int
+        :type ToI2: Standard_Integer
         :param Step:
-        :type Step: int
+        :type Step: Standard_Integer
         :rtype: None
 
         """
         return _Geom.Geom_BSplineSurface_IncrementUMultiplicity(self, *args)
 
-    def IncreaseVMultiplicity(self, *args) -> "void" :
+    def IncreaseVMultiplicity(self, *args):
         """
         * Increases the multiplicity of a knot in the V direction. M is the new multiplicity. M should be greater than the previous multiplicity and lower than the degree of the surface in the V parametric direction. Raised if VIndex is not in the range [FirstVKnotIndex, LastVKnotIndex] given by the methods with the same name.
 
         :param VIndex:
-        :type VIndex: int
+        :type VIndex: Standard_Integer
         :param M:
-        :type M: int
+        :type M: Standard_Integer
         :rtype: None
 
         * Increases until order M the multiplicity of the set of knots FromI1,...., ToI2 in the V direction. This method can be used to make a BSplineSurface into a PiecewiseBezier B_spline surface. If <self> was uniform, it can become non-uniform. Raised if FromI1 or ToI2 is out of the range [FirstVKnotIndex, LastVKnotIndex] given by the methods with the same name. M should be greater than the previous multiplicity of the all the knots FromI1,..., ToI2 and lower or equal to the Degree of the surface in the V parametric direction.
 
         :param FromI1:
-        :type FromI1: int
+        :type FromI1: Standard_Integer
         :param ToI2:
-        :type ToI2: int
+        :type ToI2: Standard_Integer
         :param M:
-        :type M: int
+        :type M: Standard_Integer
         :rtype: None
 
         """
         return _Geom.Geom_BSplineSurface_IncreaseVMultiplicity(self, *args)
 
-    def IncrementVMultiplicity(self, *args) -> "void" :
+    def IncrementVMultiplicity(self, *args):
         """
         * Increments the multiplicity of the consecutives vknots FromI1..ToI2 by step. The multiplicity of each knot FromI1,.....,ToI2 must be lower or equal to the VDegree of the B_spline. Raised if FromI1 or ToI2 is not in the range [FirstVKnotIndex, LastVKnotIndex] Raised if one knot has a multiplicity greater than VDegree.
 
         :param FromI1:
-        :type FromI1: int
+        :type FromI1: Standard_Integer
         :param ToI2:
-        :type ToI2: int
+        :type ToI2: Standard_Integer
         :param Step:
-        :type Step: int
+        :type Step: Standard_Integer
         :rtype: None
 
         """
         return _Geom.Geom_BSplineSurface_IncrementVMultiplicity(self, *args)
 
-    def InsertUKnot(self, *args) -> "void" :
+    def InsertUKnot(self, *args):
         """
         * Inserts a knot value in the sequence of UKnots. If U is a knot value this method increases the multiplicity of the knot if the previous multiplicity was lower than M else it does nothing. The tolerance criterion is ParametricTolerance. ParametricTolerance should be greater or equal than Resolution from package gp. Raised if U is out of the bounds [U1, U2] given by the methods Bounds, the criterion ParametricTolerance is used. Raised if M is not in the range [1, UDegree].
 
         :param U:
         :type U: float
         :param M:
-        :type M: int
+        :type M: Standard_Integer
+        :param ParametricTolerance:
+        :type ParametricTolerance: float
+        :param Add: default value is Standard_True
+        :type Add: bool
+        :rtype: None
+
+        * Inserts a knot value in the sequence of UKnots. If U is a knot value this method increases the multiplicity of the knot if the previous multiplicity was lower than M else it does nothing. The tolerance criterion is ParametricTolerance. ParametricTolerance should be greater or equal than Resolution from package gp. Raised if U is out of the bounds [U1, U2] given by the methods Bounds, the criterion ParametricTolerance is used. Raised if M is not in the range [1, UDegree].
+
+        :param U:
+        :type U: float
+        :param M:
+        :type M: Standard_Integer
         :param ParametricTolerance:
         :type ParametricTolerance: float
         :param Add: default value is Standard_True
@@ -5986,14 +6258,26 @@ class Geom_BSplineSurface(Geom_BoundedSurface):
         """
         return _Geom.Geom_BSplineSurface_InsertUKnot(self, *args)
 
-    def InsertVKnot(self, *args) -> "void" :
+    def InsertVKnot(self, *args):
         """
         * Inserts a knot value in the sequence of VKnots. If V is a knot value this method increases the multiplicity of the knot if the previous multiplicity was lower than M otherwise it does nothing. The tolerance criterion is ParametricTolerance. ParametricTolerance should be greater or equal than Resolution from package gp. raises if V is out of the Bounds [V1, V2] given by the methods Bounds, the criterion ParametricTolerance is used. raises if M is not in the range [1, VDegree].
 
         :param V:
         :type V: float
         :param M:
-        :type M: int
+        :type M: Standard_Integer
+        :param ParametricTolerance:
+        :type ParametricTolerance: float
+        :param Add: default value is Standard_True
+        :type Add: bool
+        :rtype: None
+
+        * Inserts a knot value in the sequence of VKnots. If V is a knot value this method increases the multiplicity of the knot if the previous multiplicity was lower than M otherwise it does nothing. The tolerance criterion is ParametricTolerance. ParametricTolerance should be greater or equal than Resolution from package gp. raises if V is out of the Bounds [V1, V2] given by the methods Bounds, the criterion ParametricTolerance is used. raises if M is not in the range [1, VDegree].
+
+        :param V:
+        :type V: float
+        :param M:
+        :type M: Standard_Integer
         :param ParametricTolerance:
         :type ParametricTolerance: float
         :param Add: default value is Standard_True
@@ -6003,7 +6287,7 @@ class Geom_BSplineSurface(Geom_BoundedSurface):
         """
         return _Geom.Geom_BSplineSurface_InsertVKnot(self, *args)
 
-    def Segment(self, *args) -> "void" :
+    def Segment(self, *args):
         """
         * Segments the surface between U1 and U2 in the U-Direction.  between V1 and V2 in the V-Direction. The control points are modified, the first and the last point are not the same. Warnings : Even if <self> is not closed it can become closed after the segmentation for example if U1 or U2 are out of the bounds of the surface <self> or if the surface makes loop. raises if U2 < U1 or V2 < V1
 
@@ -6020,7 +6304,7 @@ class Geom_BSplineSurface(Geom_BoundedSurface):
         """
         return _Geom.Geom_BSplineSurface_Segment(self, *args)
 
-    def CheckAndSegment(self, *args) -> "void" :
+    def CheckAndSegment(self, *args):
         """
         * Segments the surface between U1 and U2 in the U-Direction.  between V1 and V2 in the V-Direction. same as Segment but do nothing if U1 and U2 (resp. V1 and V2) are equal to the bounds in U (resp. in V) of <self>. For example, if <self> is periodic in V, it will be always periodic in V after the segmentation if the bounds in V are unchanged Warnings : Even if <self> is not closed it can become closed after the segmentation for example if U1 or U2 are out of the bounds of the surface <self> or if the surface makes loop. raises if U2 < U1 or V2 < V1
 
@@ -6037,7 +6321,7 @@ class Geom_BSplineSurface(Geom_BoundedSurface):
         """
         return _Geom.Geom_BSplineSurface_CheckAndSegment(self, *args)
 
-    def SetUKnots(self, *args) -> "void" :
+    def SetUKnots(self, *args):
         """
         * Changes all the U-knots of the surface. The multiplicity of the knots are not modified. Raised if there is an index such that UK (Index+1) <= UK (Index). Raised if UK.Lower() < 1 or UK.Upper() > NbUKnots
 
@@ -6048,12 +6332,12 @@ class Geom_BSplineSurface(Geom_BoundedSurface):
         """
         return _Geom.Geom_BSplineSurface_SetUKnots(self, *args)
 
-    def SetUKnot(self, *args) -> "void" :
+    def SetUKnot(self, *args):
         """
         * Substitutes the UKnots of range UIndex with K. Raised if UIndex < 1 or UIndex > NbUKnots Raised if K >= UKnots(UIndex+1) or K <= UKnots(UIndex-1)
 
         :param UIndex:
-        :type UIndex: int
+        :type UIndex: Standard_Integer
         :param K:
         :type K: float
         :rtype: None
@@ -6061,17 +6345,17 @@ class Geom_BSplineSurface(Geom_BoundedSurface):
         * Changes the value of the UKnots of range UIndex and increases its multiplicity. Raised if UIndex is not in the range [FirstUKnotIndex, LastUKnotIndex] given by the methods with the same name. Raised if K >= UKnots(UIndex+1) or K <= UKnots(UIndex-1) M must be lower than UDegree and greater than the previous multiplicity of the knot of range UIndex.
 
         :param UIndex:
-        :type UIndex: int
+        :type UIndex: Standard_Integer
         :param K:
         :type K: float
         :param M:
-        :type M: int
+        :type M: Standard_Integer
         :rtype: None
 
         """
         return _Geom.Geom_BSplineSurface_SetUKnot(self, *args)
 
-    def SetVKnots(self, *args) -> "void" :
+    def SetVKnots(self, *args):
         """
         * Changes all the V-knots of the surface. The multiplicity of the knots are not modified. Raised if there is an index such that VK (Index+1) <= VK (Index). Raised if VK.Lower() < 1 or VK.Upper() > NbVKnots
 
@@ -6082,12 +6366,12 @@ class Geom_BSplineSurface(Geom_BoundedSurface):
         """
         return _Geom.Geom_BSplineSurface_SetVKnots(self, *args)
 
-    def SetVKnot(self, *args) -> "void" :
+    def SetVKnot(self, *args):
         """
         * Substitutes the VKnots of range VIndex with K. Raised if VIndex < 1 or VIndex > NbVKnots Raised if K >= VKnots(VIndex+1) or K <= VKnots(VIndex-1)
 
         :param VIndex:
-        :type VIndex: int
+        :type VIndex: Standard_Integer
         :param K:
         :type K: float
         :rtype: None
@@ -6095,17 +6379,17 @@ class Geom_BSplineSurface(Geom_BoundedSurface):
         * Changes the value of the VKnots of range VIndex and increases its multiplicity. Raised if VIndex is not in the range [FirstVKnotIndex, LastVKnotIndex] given by the methods with the same name. Raised if K >= VKnots(VIndex+1) or K <= VKnots(VIndex-1) M must be lower than VDegree and greater than the previous multiplicity of the knot of range VIndex.
 
         :param VIndex:
-        :type VIndex: int
+        :type VIndex: Standard_Integer
         :param K:
         :type K: float
         :param M:
-        :type M: int
+        :type M: Standard_Integer
         :rtype: None
 
         """
         return _Geom.Geom_BSplineSurface_SetVKnot(self, *args)
 
-    def LocateU(self, *args) -> "void" :
+    def LocateU(self, *args):
         """
         * Locates the parametric value U in the sequence of UKnots. If 'WithKnotRepetition' is True we consider the knot's representation with repetition of multiple knot value, otherwise we consider the knot's representation with no repetition of multiple knot values. UKnots (I1) <= U <= UKnots (I2) . if I1 = I2 U is a knot value (the tolerance criterion ParametricTolerance is used). . if I1 < 1 => U < UKnots(1) - Abs(ParametricTolerance) . if I2 > NbUKnots => U > UKnots(NbUKnots)+Abs(ParametricTolerance)
 
@@ -6114,9 +6398,23 @@ class Geom_BSplineSurface(Geom_BoundedSurface):
         :param ParametricTolerance:
         :type ParametricTolerance: float
         :param I1:
-        :type I1: int &
+        :type I1: Standard_Integer &
         :param I2:
-        :type I2: int &
+        :type I2: Standard_Integer &
+        :param WithKnotRepetition: default value is Standard_False
+        :type WithKnotRepetition: bool
+        :rtype: None
+
+        * Locates the parametric value U in the sequence of UKnots. If 'WithKnotRepetition' is True we consider the knot's representation with repetition of multiple knot value, otherwise we consider the knot's representation with no repetition of multiple knot values. UKnots (I1) <= U <= UKnots (I2) . if I1 = I2 U is a knot value (the tolerance criterion ParametricTolerance is used). . if I1 < 1 => U < UKnots(1) - Abs(ParametricTolerance) . if I2 > NbUKnots => U > UKnots(NbUKnots)+Abs(ParametricTolerance)
+
+        :param U:
+        :type U: float
+        :param ParametricTolerance:
+        :type ParametricTolerance: float
+        :param I1:
+        :type I1: Standard_Integer &
+        :param I2:
+        :type I2: Standard_Integer &
         :param WithKnotRepetition: default value is Standard_False
         :type WithKnotRepetition: bool
         :rtype: None
@@ -6124,7 +6422,7 @@ class Geom_BSplineSurface(Geom_BoundedSurface):
         """
         return _Geom.Geom_BSplineSurface_LocateU(self, *args)
 
-    def LocateV(self, *args) -> "void" :
+    def LocateV(self, *args):
         """
         * Locates the parametric value U in the sequence of knots. If 'WithKnotRepetition' is True we consider the knot's representation with repetition of multiple knot value, otherwise we consider the knot's representation with no repetition of multiple knot values. VKnots (I1) <= V <= VKnots (I2) . if I1 = I2 V is a knot value (the tolerance criterion ParametricTolerance is used). . if I1 < 1 => V < VKnots(1) - Abs(ParametricTolerance) . if I2 > NbVKnots => V > VKnots(NbVKnots)+Abs(ParametricTolerance) poles insertion and removing The following methods are available only if the surface is Uniform or QuasiUniform in the considered direction The knot repartition is modified.
 
@@ -6133,9 +6431,23 @@ class Geom_BSplineSurface(Geom_BoundedSurface):
         :param ParametricTolerance:
         :type ParametricTolerance: float
         :param I1:
-        :type I1: int &
+        :type I1: Standard_Integer &
         :param I2:
-        :type I2: int &
+        :type I2: Standard_Integer &
+        :param WithKnotRepetition: default value is Standard_False
+        :type WithKnotRepetition: bool
+        :rtype: None
+
+        * Locates the parametric value U in the sequence of knots. If 'WithKnotRepetition' is True we consider the knot's representation with repetition of multiple knot value, otherwise we consider the knot's representation with no repetition of multiple knot values. VKnots (I1) <= V <= VKnots (I2) . if I1 = I2 V is a knot value (the tolerance criterion ParametricTolerance is used). . if I1 < 1 => V < VKnots(1) - Abs(ParametricTolerance) . if I2 > NbVKnots => V > VKnots(NbVKnots)+Abs(ParametricTolerance) poles insertion and removing The following methods are available only if the surface is Uniform or QuasiUniform in the considered direction The knot repartition is modified.
+
+        :param V:
+        :type V: float
+        :param ParametricTolerance:
+        :type ParametricTolerance: float
+        :param I1:
+        :type I1: Standard_Integer &
+        :param I2:
+        :type I2: Standard_Integer &
         :param WithKnotRepetition: default value is Standard_False
         :type WithKnotRepetition: bool
         :rtype: None
@@ -6143,14 +6455,14 @@ class Geom_BSplineSurface(Geom_BoundedSurface):
         """
         return _Geom.Geom_BSplineSurface_LocateV(self, *args)
 
-    def SetPole(self, *args) -> "void" :
+    def SetPole(self, *args):
         """
         * Substitutes the pole of range (UIndex, VIndex) with P. If the surface is rational the weight of range (UIndex, VIndex) is not modified. Raised if UIndex < 1 or UIndex > NbUPoles or VIndex < 1 or VIndex > NbVPoles.
 
         :param UIndex:
-        :type UIndex: int
+        :type UIndex: Standard_Integer
         :param VIndex:
-        :type VIndex: int
+        :type VIndex: Standard_Integer
         :param P:
         :type P: gp_Pnt
         :rtype: None
@@ -6158,9 +6470,9 @@ class Geom_BSplineSurface(Geom_BoundedSurface):
         * Substitutes the pole and the weight of range (UIndex, VIndex) with P and W. Raised if UIndex < 1 or UIndex > NbUPoles or VIndex < 1 or VIndex > NbVPoles. Raised if Weight <= Resolution from package gp.
 
         :param UIndex:
-        :type UIndex: int
+        :type UIndex: Standard_Integer
         :param VIndex:
-        :type VIndex: int
+        :type VIndex: Standard_Integer
         :param P:
         :type P: gp_Pnt
         :param Weight:
@@ -6170,12 +6482,12 @@ class Geom_BSplineSurface(Geom_BoundedSurface):
         """
         return _Geom.Geom_BSplineSurface_SetPole(self, *args)
 
-    def SetPoleCol(self, *args) -> "void" :
+    def SetPoleCol(self, *args):
         """
         * Changes a column of poles or a part of this column. Raised if Vindex < 1 or VIndex > NbVPoles. Raised if CPoles.Lower() < 1 or CPoles.Upper() > NbUPoles.
 
         :param VIndex:
-        :type VIndex: int
+        :type VIndex: Standard_Integer
         :param CPoles:
         :type CPoles: TColgp_Array1OfPnt
         :rtype: None
@@ -6183,7 +6495,7 @@ class Geom_BSplineSurface(Geom_BoundedSurface):
         * Changes a column of poles or a part of this column with the corresponding weights. If the surface was rational it can become non rational. If the surface was non rational it can become rational. Raised if Vindex < 1 or VIndex > NbVPoles. Raised if CPoles.Lower() < 1 or CPoles.Upper() > NbUPoles Raised if the bounds of CPoleWeights are not the same as the bounds of CPoles. Raised if one of the weight value of CPoleWeights is lower or equal to Resolution from package gp.
 
         :param VIndex:
-        :type VIndex: int
+        :type VIndex: Standard_Integer
         :param CPoles:
         :type CPoles: TColgp_Array1OfPnt
         :param CPoleWeights:
@@ -6193,12 +6505,12 @@ class Geom_BSplineSurface(Geom_BoundedSurface):
         """
         return _Geom.Geom_BSplineSurface_SetPoleCol(self, *args)
 
-    def SetPoleRow(self, *args) -> "void" :
+    def SetPoleRow(self, *args):
         """
         * Changes a row of poles or a part of this row with the corresponding weights. If the surface was rational it can become non rational. If the surface was non rational it can become rational. Raised if Uindex < 1 or UIndex > NbUPoles. Raised if CPoles.Lower() < 1 or CPoles.Upper() > NbVPoles raises if the bounds of CPoleWeights are not the same as the bounds of CPoles. Raised if one of the weight value of CPoleWeights is lower or equal to Resolution from package gp.
 
         :param UIndex:
-        :type UIndex: int
+        :type UIndex: Standard_Integer
         :param CPoles:
         :type CPoles: TColgp_Array1OfPnt
         :param CPoleWeights:
@@ -6208,7 +6520,7 @@ class Geom_BSplineSurface(Geom_BoundedSurface):
         * Changes a row of poles or a part of this row. Raised if Uindex < 1 or UIndex > NbUPoles. Raised if CPoles.Lower() < 1 or CPoles.Upper() > NbVPoles.
 
         :param UIndex:
-        :type UIndex: int
+        :type UIndex: Standard_Integer
         :param CPoles:
         :type CPoles: TColgp_Array1OfPnt
         :rtype: None
@@ -6216,14 +6528,14 @@ class Geom_BSplineSurface(Geom_BoundedSurface):
         """
         return _Geom.Geom_BSplineSurface_SetPoleRow(self, *args)
 
-    def SetWeight(self, *args) -> "void" :
+    def SetWeight(self, *args):
         """
         * Changes the weight of the pole of range UIndex, VIndex. If the surface was non rational it can become rational. If the surface was rational it can become non rational. Raised if UIndex < 1 or UIndex > NbUPoles or VIndex < 1 or VIndex > NbVPoles Raised if weight is lower or equal to Resolution from package gp
 
         :param UIndex:
-        :type UIndex: int
+        :type UIndex: Standard_Integer
         :param VIndex:
-        :type VIndex: int
+        :type VIndex: Standard_Integer
         :param Weight:
         :type Weight: float
         :rtype: None
@@ -6231,12 +6543,12 @@ class Geom_BSplineSurface(Geom_BoundedSurface):
         """
         return _Geom.Geom_BSplineSurface_SetWeight(self, *args)
 
-    def SetWeightCol(self, *args) -> "void" :
+    def SetWeightCol(self, *args):
         """
         * Changes a column of weights of a part of this column. Raised if VIndex < 1 or VIndex > NbVPoles Raised if CPoleWeights.Lower() < 1 or  CPoleWeights.Upper() > NbUPoles. Raised if a weight value is lower or equal to Resolution from package gp.
 
         :param VIndex:
-        :type VIndex: int
+        :type VIndex: Standard_Integer
         :param CPoleWeights:
         :type CPoleWeights: TColStd_Array1OfReal &
         :rtype: None
@@ -6244,12 +6556,12 @@ class Geom_BSplineSurface(Geom_BoundedSurface):
         """
         return _Geom.Geom_BSplineSurface_SetWeightCol(self, *args)
 
-    def SetWeightRow(self, *args) -> "void" :
+    def SetWeightRow(self, *args):
         """
         * Changes a row of weights or a part of this row. Raised if UIndex < 1 or UIndex > NbUPoles Raised if CPoleWeights.Lower() < 1 or  CPoleWeights.Upper() > NbVPoles. Raised if a weight value is lower or equal to Resolution from package gp.
 
         :param UIndex:
-        :type UIndex: int
+        :type UIndex: Standard_Integer
         :param CPoleWeights:
         :type CPoleWeights: TColStd_Array1OfReal &
         :rtype: None
@@ -6257,7 +6569,7 @@ class Geom_BSplineSurface(Geom_BoundedSurface):
         """
         return _Geom.Geom_BSplineSurface_SetWeightRow(self, *args)
 
-    def MovePoint(self, *args) -> "void" :
+    def MovePoint(self, *args):
         """
         * Move a point with parameter U and V to P. given u,v as parameters) to reach a new position UIndex1, UIndex2, VIndex1, VIndex2:  indicates the poles which can be moved if Problem in BSplineBasis calculation, no change for the curve and UFirstIndex, VLastIndex = 0 VFirstIndex, VLastIndex = 0 Raised if UIndex1 < UIndex2 or VIndex1 < VIndex2 or  UIndex1 < 1 || UIndex1 > NbUPoles or  UIndex2 < 1 || UIndex2 > NbUPoles  VIndex1 < 1 || VIndex1 > NbVPoles or  VIndex2 < 1 || VIndex2 > NbVPoles characteristics of the surface
 
@@ -6268,45 +6580,45 @@ class Geom_BSplineSurface(Geom_BoundedSurface):
         :param P:
         :type P: gp_Pnt
         :param UIndex1:
-        :type UIndex1: int
+        :type UIndex1: Standard_Integer
         :param UIndex2:
-        :type UIndex2: int
+        :type UIndex2: Standard_Integer
         :param VIndex1:
-        :type VIndex1: int
+        :type VIndex1: Standard_Integer
         :param VIndex2:
-        :type VIndex2: int
+        :type VIndex2: Standard_Integer
         :param UFirstIndex:
-        :type UFirstIndex: int &
+        :type UFirstIndex: Standard_Integer &
         :param ULastIndex:
-        :type ULastIndex: int &
+        :type ULastIndex: Standard_Integer &
         :param VFirstIndex:
-        :type VFirstIndex: int &
+        :type VFirstIndex: Standard_Integer &
         :param VLastIndex:
-        :type VLastIndex: int &
+        :type VLastIndex: Standard_Integer &
         :rtype: None
 
         """
         return _Geom.Geom_BSplineSurface_MovePoint(self, *args)
 
-    def IsURational(self, *args) -> "Standard_Boolean" :
+    def IsURational(self):
         """
         * Returns False if for each row of weights all the weights are identical. The tolerance criterion is resolution from package gp. Example :  |1.0, 1.0, 1.0| if Weights = |0.5, 0.5, 0.5| returns False  |2.0, 2.0, 2.0|
 
         :rtype: bool
 
         """
-        return _Geom.Geom_BSplineSurface_IsURational(self, *args)
+        return _Geom.Geom_BSplineSurface_IsURational(self)
 
-    def IsVRational(self, *args) -> "Standard_Boolean" :
+    def IsVRational(self):
         """
         * Returns False if for each column of weights all the weights are identical. The tolerance criterion is resolution from package gp. Examples :  |1.0, 2.0, 0.5| if Weights = |1.0, 2.0, 0.5| returns False  |1.0, 2.0, 0.5|
 
         :rtype: bool
 
         """
-        return _Geom.Geom_BSplineSurface_IsVRational(self, *args)
+        return _Geom.Geom_BSplineSurface_IsVRational(self)
 
-    def IsCacheValid(self, *args) -> "Standard_Boolean" :
+    def IsCacheValid(self, *args):
         """
         * Tells whether the Cache is valid for the given parameter Warnings : the parameter must be normalized within the period if the curve is periodic. Otherwise the answer will be false
 
@@ -6319,92 +6631,92 @@ class Geom_BSplineSurface(Geom_BoundedSurface):
         """
         return _Geom.Geom_BSplineSurface_IsCacheValid(self, *args)
 
-    def FirstUKnotIndex(self, *args) -> "Standard_Integer" :
+    def FirstUKnotIndex(self):
         """
         * Computes the Index of the UKnots which gives the first parametric value of the surface in the U direction. The UIso curve corresponding to this value is a boundary curve of the surface.
 
         :rtype: int
 
         """
-        return _Geom.Geom_BSplineSurface_FirstUKnotIndex(self, *args)
+        return _Geom.Geom_BSplineSurface_FirstUKnotIndex(self)
 
-    def FirstVKnotIndex(self, *args) -> "Standard_Integer" :
+    def FirstVKnotIndex(self):
         """
         * Computes the Index of the VKnots which gives the first parametric value of the surface in the V direction. The VIso curve corresponding to this knot is a boundary curve of the surface.
 
         :rtype: int
 
         """
-        return _Geom.Geom_BSplineSurface_FirstVKnotIndex(self, *args)
+        return _Geom.Geom_BSplineSurface_FirstVKnotIndex(self)
 
-    def LastUKnotIndex(self, *args) -> "Standard_Integer" :
+    def LastUKnotIndex(self):
         """
         * Computes the Index of the UKnots which gives the last parametric value of the surface in the U direction. The UIso curve corresponding to this knot is a boundary curve of the surface.
 
         :rtype: int
 
         """
-        return _Geom.Geom_BSplineSurface_LastUKnotIndex(self, *args)
+        return _Geom.Geom_BSplineSurface_LastUKnotIndex(self)
 
-    def LastVKnotIndex(self, *args) -> "Standard_Integer" :
+    def LastVKnotIndex(self):
         """
         * Computes the Index of the VKnots which gives the last parametric value of the surface in the V direction. The VIso curve corresponding to this knot is a boundary curve of the surface.
 
         :rtype: int
 
         """
-        return _Geom.Geom_BSplineSurface_LastVKnotIndex(self, *args)
+        return _Geom.Geom_BSplineSurface_LastVKnotIndex(self)
 
-    def NbUKnots(self, *args) -> "Standard_Integer" :
+    def NbUKnots(self):
         """
         * Returns the number of knots in the U direction.
 
         :rtype: int
 
         """
-        return _Geom.Geom_BSplineSurface_NbUKnots(self, *args)
+        return _Geom.Geom_BSplineSurface_NbUKnots(self)
 
-    def NbUPoles(self, *args) -> "Standard_Integer" :
+    def NbUPoles(self):
         """
         * Returns number of poles in the U direction.
 
         :rtype: int
 
         """
-        return _Geom.Geom_BSplineSurface_NbUPoles(self, *args)
+        return _Geom.Geom_BSplineSurface_NbUPoles(self)
 
-    def NbVKnots(self, *args) -> "Standard_Integer" :
+    def NbVKnots(self):
         """
         * Returns the number of knots in the V direction.
 
         :rtype: int
 
         """
-        return _Geom.Geom_BSplineSurface_NbVKnots(self, *args)
+        return _Geom.Geom_BSplineSurface_NbVKnots(self)
 
-    def NbVPoles(self, *args) -> "Standard_Integer" :
+    def NbVPoles(self):
         """
         * Returns the number of poles in the V direction.
 
         :rtype: int
 
         """
-        return _Geom.Geom_BSplineSurface_NbVPoles(self, *args)
+        return _Geom.Geom_BSplineSurface_NbVPoles(self)
 
-    def Pole(self, *args) -> "gp_Pnt" :
+    def Pole(self, *args):
         """
         * Returns the pole of range (UIndex, VIndex). Raised if UIndex < 1 or UIndex > NbUPoles or VIndex < 1 or VIndex > NbVPoles.
 
         :param UIndex:
-        :type UIndex: int
+        :type UIndex: Standard_Integer
         :param VIndex:
-        :type VIndex: int
+        :type VIndex: Standard_Integer
         :rtype: gp_Pnt
 
         """
         return _Geom.Geom_BSplineSurface_Pole(self, *args)
 
-    def Poles(self, *args) -> "void" :
+    def Poles(self, *args):
         """
         * Returns the poles of the B-spline surface. Raised if the length of P in the U and V direction is not equal to NbUpoles and NbVPoles.
 
@@ -6415,36 +6727,36 @@ class Geom_BSplineSurface(Geom_BoundedSurface):
         """
         return _Geom.Geom_BSplineSurface_Poles(self, *args)
 
-    def UDegree(self, *args) -> "Standard_Integer" :
+    def UDegree(self):
         """
         * Returns the degree of the normalized B-splines Ni,n in the U direction.
 
         :rtype: int
 
         """
-        return _Geom.Geom_BSplineSurface_UDegree(self, *args)
+        return _Geom.Geom_BSplineSurface_UDegree(self)
 
-    def UKnot(self, *args) -> "Standard_Real" :
+    def UKnot(self, *args):
         """
         * Returns the Knot value of range UIndex. Raised if UIndex < 1 or UIndex > NbUKnots
 
         :param UIndex:
-        :type UIndex: int
+        :type UIndex: Standard_Integer
         :rtype: float
 
         """
         return _Geom.Geom_BSplineSurface_UKnot(self, *args)
 
-    def UKnotDistribution(self, *args) -> "GeomAbs_BSplKnotDistribution" :
+    def UKnotDistribution(self):
         """
         * Returns NonUniform or Uniform or QuasiUniform or PiecewiseBezier. If all the knots differ by a positive constant from the preceding knot in the U direction the B-spline surface can be : - Uniform if all the knots are of multiplicity 1, - QuasiUniform if all the knots are of multiplicity 1 except for the first and last knot which are of multiplicity Degree + 1, - PiecewiseBezier if the first and last knots have multiplicity Degree + 1 and if interior knots have multiplicity Degree otherwise the surface is non uniform in the U direction The tolerance criterion is Resolution from package gp.
 
         :rtype: GeomAbs_BSplKnotDistribution
 
         """
-        return _Geom.Geom_BSplineSurface_UKnotDistribution(self, *args)
+        return _Geom.Geom_BSplineSurface_UKnotDistribution(self)
 
-    def UKnots(self, *args) -> "void" :
+    def UKnots(self, *args):
         """
         * Returns the knots in the U direction. Raised if the length of Ku is not equal to the number of knots in the U direction.
 
@@ -6455,7 +6767,7 @@ class Geom_BSplineSurface(Geom_BoundedSurface):
         """
         return _Geom.Geom_BSplineSurface_UKnots(self, *args)
 
-    def UKnotSequence(self, *args) -> "void" :
+    def UKnotSequence(self, *args):
         """
         * Returns the uknots sequence. In this sequence the knots with a multiplicity greater than 1 are repeated. Example : Ku = {k1, k1, k1, k2, k3, k3, k4, k4, k4} Raised if the length of Ku is not equal to NbUPoles + UDegree + 1
 
@@ -6466,18 +6778,18 @@ class Geom_BSplineSurface(Geom_BoundedSurface):
         """
         return _Geom.Geom_BSplineSurface_UKnotSequence(self, *args)
 
-    def UMultiplicity(self, *args) -> "Standard_Integer" :
+    def UMultiplicity(self, *args):
         """
         * Returns the multiplicity value of knot of range UIndex in the u direction. Raised if UIndex < 1 or UIndex > NbUKnots.
 
         :param UIndex:
-        :type UIndex: int
+        :type UIndex: Standard_Integer
         :rtype: int
 
         """
         return _Geom.Geom_BSplineSurface_UMultiplicity(self, *args)
 
-    def UMultiplicities(self, *args) -> "void" :
+    def UMultiplicities(self, *args):
         """
         * Returns the multiplicities of the knots in the U direction. Raised if the length of Mu is not equal to the number of knots in the U direction.
 
@@ -6488,36 +6800,36 @@ class Geom_BSplineSurface(Geom_BoundedSurface):
         """
         return _Geom.Geom_BSplineSurface_UMultiplicities(self, *args)
 
-    def VDegree(self, *args) -> "Standard_Integer" :
+    def VDegree(self):
         """
         * Returns the degree of the normalized B-splines Ni,d in the V direction.
 
         :rtype: int
 
         """
-        return _Geom.Geom_BSplineSurface_VDegree(self, *args)
+        return _Geom.Geom_BSplineSurface_VDegree(self)
 
-    def VKnot(self, *args) -> "Standard_Real" :
+    def VKnot(self, *args):
         """
         * Returns the Knot value of range VIndex.
 
         :param VIndex:
-        :type VIndex: int
+        :type VIndex: Standard_Integer
         :rtype: float
 
         """
         return _Geom.Geom_BSplineSurface_VKnot(self, *args)
 
-    def VKnotDistribution(self, *args) -> "GeomAbs_BSplKnotDistribution" :
+    def VKnotDistribution(self):
         """
         * Returns NonUniform or Uniform or QuasiUniform or PiecewiseBezier. If all the knots differ by a positive constant from the preceding knot in the V direction the B-spline surface can be : - Uniform if all the knots are of multiplicity 1, - QuasiUniform if all the knots are of multiplicity 1 except for the first and last knot which are of multiplicity Degree + 1, - PiecewiseBezier if the first and last knots have multiplicity Degree + 1 and if interior knots have multiplicity Degree otherwise the surface is non uniform in the V direction. The tolerance criterion is Resolution from package gp.
 
         :rtype: GeomAbs_BSplKnotDistribution
 
         """
-        return _Geom.Geom_BSplineSurface_VKnotDistribution(self, *args)
+        return _Geom.Geom_BSplineSurface_VKnotDistribution(self)
 
-    def VKnots(self, *args) -> "void" :
+    def VKnots(self, *args):
         """
         * Returns the knots in the V direction. Raised if the length of Kv is not equal to the number of knots in the V direction.
 
@@ -6528,7 +6840,7 @@ class Geom_BSplineSurface(Geom_BoundedSurface):
         """
         return _Geom.Geom_BSplineSurface_VKnots(self, *args)
 
-    def VKnotSequence(self, *args) -> "void" :
+    def VKnotSequence(self, *args):
         """
         * Returns the vknots sequence. In this sequence the knots with a multiplicity greater than 1 are repeated. Example : Kv = {k1, k1, k1, k2, k3, k3, k4, k4, k4} Raised if the length of Kv is not equal to NbVPoles + VDegree + 1
 
@@ -6539,18 +6851,18 @@ class Geom_BSplineSurface(Geom_BoundedSurface):
         """
         return _Geom.Geom_BSplineSurface_VKnotSequence(self, *args)
 
-    def VMultiplicity(self, *args) -> "Standard_Integer" :
+    def VMultiplicity(self, *args):
         """
         * Returns the multiplicity value of knot of range VIndex in the v direction. Raised if VIndex < 1 or VIndex > NbVKnots
 
         :param VIndex:
-        :type VIndex: int
+        :type VIndex: Standard_Integer
         :rtype: int
 
         """
         return _Geom.Geom_BSplineSurface_VMultiplicity(self, *args)
 
-    def VMultiplicities(self, *args) -> "void" :
+    def VMultiplicities(self, *args):
         """
         * Returns the multiplicities of the knots in the V direction. Raised if the length of Mv is not equal to the number of knots in the V direction.
 
@@ -6561,20 +6873,20 @@ class Geom_BSplineSurface(Geom_BoundedSurface):
         """
         return _Geom.Geom_BSplineSurface_VMultiplicities(self, *args)
 
-    def Weight(self, *args) -> "Standard_Real" :
+    def Weight(self, *args):
         """
         * Returns the weight value of range UIndex, VIndex. Raised if UIndex < 1 or UIndex > NbUPoles or VIndex < 1 or VIndex > NbVPoles.
 
         :param UIndex:
-        :type UIndex: int
+        :type UIndex: Standard_Integer
         :param VIndex:
-        :type VIndex: int
+        :type VIndex: Standard_Integer
         :rtype: float
 
         """
         return _Geom.Geom_BSplineSurface_Weight(self, *args)
 
-    def Weights(self, *args) -> "void" :
+    def Weights(self, *args):
         """
         * Returns the weights of the B-spline surface. Raised if the length of W in the U and V direction is not equal to NbUPoles and NbVPoles. value and derivatives computation
 
@@ -6585,7 +6897,7 @@ class Geom_BSplineSurface(Geom_BoundedSurface):
         """
         return _Geom.Geom_BSplineSurface_Weights(self, *args)
 
-    def LocalD0(self, *args) -> "void" :
+    def LocalD0(self, *args):
         """
         * Raised if FromUK1 = ToUK2 or FromVK1 = ToVK2. Raised if FromUK1, ToUK2 are not in the range [FirstUKnotIndex, LastUKnotIndex] or if FromVK1, ToVK2 are not in the range [FirstVKnotIndex, LastVKnotIndex]
 
@@ -6594,13 +6906,13 @@ class Geom_BSplineSurface(Geom_BoundedSurface):
         :param V:
         :type V: float
         :param FromUK1:
-        :type FromUK1: int
+        :type FromUK1: Standard_Integer
         :param ToUK2:
-        :type ToUK2: int
+        :type ToUK2: Standard_Integer
         :param FromVK1:
-        :type FromVK1: int
+        :type FromVK1: Standard_Integer
         :param ToVK2:
-        :type ToVK2: int
+        :type ToVK2: Standard_Integer
         :param P:
         :type P: gp_Pnt
         :rtype: None
@@ -6608,7 +6920,7 @@ class Geom_BSplineSurface(Geom_BoundedSurface):
         """
         return _Geom.Geom_BSplineSurface_LocalD0(self, *args)
 
-    def LocalD1(self, *args) -> "void" :
+    def LocalD1(self, *args):
         """
         * Raised if the local continuity of the surface is not C1 between the knots FromUK1, ToUK2 and FromVK1, ToVK2. Raised if FromUK1 = ToUK2 or FromVK1 = ToVK2. Raised if FromUK1, ToUK2 are not in the range [FirstUKnotIndex, LastUKnotIndex] or if FromVK1, ToVK2 are not in the range [FirstVKnotIndex, LastVKnotIndex]
 
@@ -6617,13 +6929,13 @@ class Geom_BSplineSurface(Geom_BoundedSurface):
         :param V:
         :type V: float
         :param FromUK1:
-        :type FromUK1: int
+        :type FromUK1: Standard_Integer
         :param ToUK2:
-        :type ToUK2: int
+        :type ToUK2: Standard_Integer
         :param FromVK1:
-        :type FromVK1: int
+        :type FromVK1: Standard_Integer
         :param ToVK2:
-        :type ToVK2: int
+        :type ToVK2: Standard_Integer
         :param P:
         :type P: gp_Pnt
         :param D1U:
@@ -6635,7 +6947,7 @@ class Geom_BSplineSurface(Geom_BoundedSurface):
         """
         return _Geom.Geom_BSplineSurface_LocalD1(self, *args)
 
-    def LocalD2(self, *args) -> "void" :
+    def LocalD2(self, *args):
         """
         * Raised if the local continuity of the surface is not C2 between the knots FromUK1, ToUK2 and FromVK1, ToVK2. Raised if FromUK1 = ToUK2 or FromVK1 = ToVK2. Raised if FromUK1, ToUK2 are not in the range [FirstUKnotIndex, LastUKnotIndex] or if FromVK1, ToVK2 are not in the range [FirstVKnotIndex, LastVKnotIndex]
 
@@ -6644,13 +6956,13 @@ class Geom_BSplineSurface(Geom_BoundedSurface):
         :param V:
         :type V: float
         :param FromUK1:
-        :type FromUK1: int
+        :type FromUK1: Standard_Integer
         :param ToUK2:
-        :type ToUK2: int
+        :type ToUK2: Standard_Integer
         :param FromVK1:
-        :type FromVK1: int
+        :type FromVK1: Standard_Integer
         :param ToVK2:
-        :type ToVK2: int
+        :type ToVK2: Standard_Integer
         :param P:
         :type P: gp_Pnt
         :param D1U:
@@ -6668,7 +6980,7 @@ class Geom_BSplineSurface(Geom_BoundedSurface):
         """
         return _Geom.Geom_BSplineSurface_LocalD2(self, *args)
 
-    def LocalD3(self, *args) -> "void" :
+    def LocalD3(self, *args):
         """
         * Raised if the local continuity of the surface is not C3 between the knots FromUK1, ToUK2 and FromVK1, ToVK2. Raised if FromUK1 = ToUK2 or FromVK1 = ToVK2. Raised if FromUK1, ToUK2 are not in the range [FirstUKnotIndex, LastUKnotIndex] or if FromVK1, ToVK2 are not in the range [FirstVKnotIndex, LastVKnotIndex]
 
@@ -6677,13 +6989,13 @@ class Geom_BSplineSurface(Geom_BoundedSurface):
         :param V:
         :type V: float
         :param FromUK1:
-        :type FromUK1: int
+        :type FromUK1: Standard_Integer
         :param ToUK2:
-        :type ToUK2: int
+        :type ToUK2: Standard_Integer
         :param FromVK1:
-        :type FromVK1: int
+        :type FromVK1: Standard_Integer
         :param ToVK2:
-        :type ToVK2: int
+        :type ToVK2: Standard_Integer
         :param P:
         :type P: gp_Pnt
         :param D1U:
@@ -6709,7 +7021,7 @@ class Geom_BSplineSurface(Geom_BoundedSurface):
         """
         return _Geom.Geom_BSplineSurface_LocalD3(self, *args)
 
-    def LocalDN(self, *args) -> "gp_Vec" :
+    def LocalDN(self, *args):
         """
         * Raised if the local continuity of the surface is not CNu between the knots FromUK1, ToUK2 and CNv between the knots FromVK1, ToVK2. Raised if FromUK1 = ToUK2 or FromVK1 = ToVK2. Raised if FromUK1, ToUK2 are not in the range [FirstUKnotIndex, LastUKnotIndex] or if FromVK1, ToVK2 are not in the range [FirstVKnotIndex, LastVKnotIndex]
 
@@ -6718,23 +7030,23 @@ class Geom_BSplineSurface(Geom_BoundedSurface):
         :param V:
         :type V: float
         :param FromUK1:
-        :type FromUK1: int
+        :type FromUK1: Standard_Integer
         :param ToUK2:
-        :type ToUK2: int
+        :type ToUK2: Standard_Integer
         :param FromVK1:
-        :type FromVK1: int
+        :type FromVK1: Standard_Integer
         :param ToVK2:
-        :type ToVK2: int
+        :type ToVK2: Standard_Integer
         :param Nu:
-        :type Nu: int
+        :type Nu: Standard_Integer
         :param Nv:
-        :type Nv: int
+        :type Nv: Standard_Integer
         :rtype: gp_Vec
 
         """
         return _Geom.Geom_BSplineSurface_LocalDN(self, *args)
 
-    def LocalValue(self, *args) -> "gp_Pnt" :
+    def LocalValue(self, *args):
         """
         * Computes the point of parameter U, V on the BSpline surface patch defines between the knots UK1 UK2, VK1, VK2. U can be out of the bounds [Knot UK1, Knot UK2] and V can be outof the bounds [Knot VK1, Knot VK2] but for the computation we only use the definition of the surface between these knot values. Raises if FromUK1 = ToUK2 or FromVK1 = ToVK2. Raises if FromUK1, ToUK2 are not in the range [FirstUKnotIndex, LastUKnotIndex] or if FromVK1, ToVK2 are not in the range [FirstVKnotIndex, LastVKnotIndex]
 
@@ -6743,19 +7055,19 @@ class Geom_BSplineSurface(Geom_BoundedSurface):
         :param V:
         :type V: float
         :param FromUK1:
-        :type FromUK1: int
+        :type FromUK1: Standard_Integer
         :param ToUK2:
-        :type ToUK2: int
+        :type ToUK2: Standard_Integer
         :param FromVK1:
-        :type FromVK1: int
+        :type FromVK1: Standard_Integer
         :param ToVK2:
-        :type ToVK2: int
+        :type ToVK2: Standard_Integer
         :rtype: gp_Pnt
 
         """
         return _Geom.Geom_BSplineSurface_LocalValue(self, *args)
 
-    def UIso(self, *args) -> "Handle_Geom_Curve" :
+    def UIso(self, *args):
         """
         * Computes the U isoparametric curve. A B-spline curve is returned.
 
@@ -6774,7 +7086,7 @@ class Geom_BSplineSurface(Geom_BoundedSurface):
         """
         return _Geom.Geom_BSplineSurface_UIso(self, *args)
 
-    def VIso(self, *args) -> "Handle_Geom_Curve" :
+    def VIso(self, *args):
         """
         * Computes the V isoparametric curve. A B-spline curve is returned.
 
@@ -6793,17 +7105,17 @@ class Geom_BSplineSurface(Geom_BoundedSurface):
         """
         return _Geom.Geom_BSplineSurface_VIso(self, *args)
 
-    def MaxDegree(*args) -> "Standard_Integer" :
+    def MaxDegree():
         """
         * Returns the value of the maximum degree of the normalized B-spline basis functions in the u and v directions.
 
         :rtype: int
 
         """
-        return _Geom.Geom_BSplineSurface_MaxDegree(*args)
+        return _Geom.Geom_BSplineSurface_MaxDegree()
 
     MaxDegree = staticmethod(MaxDegree)
-    def Resolution(self, *args) -> "void" :
+    def Resolution(self, *args):
         """
         * Computes two tolerance values for this BSpline surface, based on the given tolerance in 3D space Tolerance3D. The tolerances computed are: - UTolerance in the u parametric direction, and - VTolerance in the v parametric direction. If f(u,v) is the equation of this BSpline surface, UTolerance and VTolerance guarantee that : | u1 - u0 | < UTolerance and | v1 - v0 | < VTolerance ====> |f (u1,v1) - f (u0,v0)| < Tolerance3D
 
@@ -6818,11 +7130,11 @@ class Geom_BSplineSurface(Geom_BoundedSurface):
         """
         return _Geom.Geom_BSplineSurface_Resolution(self, *args)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Geom_BSplineSurface self)"""
         return _Geom.Geom_BSplineSurface__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Geom_BSplineSurface" :
+    def GetHandle(self):
         """GetHandle(Geom_BSplineSurface self) -> Handle_Geom_BSplineSurface"""
         return _Geom.Geom_BSplineSurface_GetHandle(self)
 
@@ -6911,14 +7223,14 @@ Geom_BSplineSurface.GetHandle = new_instancemethod(_Geom.Geom_BSplineSurface_Get
 Geom_BSplineSurface_swigregister = _Geom.Geom_BSplineSurface_swigregister
 Geom_BSplineSurface_swigregister(Geom_BSplineSurface)
 
-def Geom_BSplineSurface_MaxDegree(*args) -> "Standard_Integer" :
+def Geom_BSplineSurface_MaxDegree():
   """
     * Returns the value of the maximum degree of the normalized B-spline basis functions in the u and v directions.
 
     :rtype: int
 
     """
-  return _Geom.Geom_BSplineSurface_MaxDegree(*args)
+  return _Geom.Geom_BSplineSurface_MaxDegree()
 
 class Handle_Geom_BSplineSurface(Handle_Geom_BoundedSurface):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
@@ -6941,7 +7253,7 @@ Handle_Geom_BSplineSurface._kill_pointed = new_instancemethod(_Geom.Handle_Geom_
 Handle_Geom_BSplineSurface_swigregister = _Geom.Handle_Geom_BSplineSurface_swigregister
 Handle_Geom_BSplineSurface_swigregister(Handle_Geom_BSplineSurface)
 
-def Handle_Geom_BSplineSurface_DownCast(*args) -> "Handle_Geom_BSplineSurface const" :
+def Handle_Geom_BSplineSurface_DownCast(*args):
   return _Geom.Handle_Geom_BSplineSurface_DownCast(*args)
 Handle_Geom_BSplineSurface_DownCast = _Geom.Handle_Geom_BSplineSurface_DownCast
 
@@ -6966,23 +7278,23 @@ class Geom_BezierCurve(Geom_BoundedCurve):
 
         """
         _Geom.Geom_BezierCurve_swiginit(self,_Geom.new_Geom_BezierCurve(*args))
-    def Increase(self, *args) -> "void" :
+    def Increase(self, *args):
         """
         * Increases the degree of a bezier curve. Degree is the new degree of <self>. Raises ConstructionError if Degree is greater than MaxDegree or lower than 2 or lower than the initial degree of <self>.
 
         :param Degree:
-        :type Degree: int
+        :type Degree: Standard_Integer
         :rtype: None
 
         """
         return _Geom.Geom_BezierCurve_Increase(self, *args)
 
-    def InsertPoleAfter(self, *args) -> "void" :
+    def InsertPoleAfter(self, *args):
         """
         * Inserts a pole P after the pole of range Index. If the curve <self> is rational the weight value for the new pole of range Index is 1.0. raised if Index is not in the range [1, NbPoles] raised if the resulting number of poles is greater than MaxDegree + 1.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param P:
         :type P: gp_Pnt
         :rtype: None
@@ -6990,7 +7302,7 @@ class Geom_BezierCurve(Geom_BoundedCurve):
         * Inserts a pole with its weight in the set of poles after the pole of range Index. If the curve was non rational it can become rational if all the weights are not identical. Raised if Index is not in the range [1, NbPoles] Raised if the resulting number of poles is greater than MaxDegree + 1. Raised if Weight is lower or equal to Resolution from package gp.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param P:
         :type P: gp_Pnt
         :param Weight:
@@ -7000,12 +7312,12 @@ class Geom_BezierCurve(Geom_BoundedCurve):
         """
         return _Geom.Geom_BezierCurve_InsertPoleAfter(self, *args)
 
-    def InsertPoleBefore(self, *args) -> "void" :
+    def InsertPoleBefore(self, *args):
         """
         * Inserts a pole P before the pole of range Index. If the curve <self> is rational the weight value for the new pole of range Index is 1.0. Raised if Index is not in the range [1, NbPoles] Raised if the resulting number of poles is greater than MaxDegree + 1.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param P:
         :type P: gp_Pnt
         :rtype: None
@@ -7013,7 +7325,7 @@ class Geom_BezierCurve(Geom_BoundedCurve):
         * Inserts a pole with its weight in the set of poles after the pole of range Index. If the curve was non rational it can become rational if all the weights are not identical. Raised if Index is not in the range [1, NbPoles] Raised if the resulting number of poles is greater than MaxDegree + 1. Raised if Weight is lower or equal to Resolution from package gp.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param P:
         :type P: gp_Pnt
         :param Weight:
@@ -7023,18 +7335,18 @@ class Geom_BezierCurve(Geom_BoundedCurve):
         """
         return _Geom.Geom_BezierCurve_InsertPoleBefore(self, *args)
 
-    def RemovePole(self, *args) -> "void" :
+    def RemovePole(self, *args):
         """
         * Removes the pole of range Index. If the curve was rational it can become non rational. Raised if Index is not in the range [1, NbPoles] Raised if Degree is lower than 2.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: None
 
         """
         return _Geom.Geom_BezierCurve_RemovePole(self, *args)
 
-    def Segment(self, *args) -> "void" :
+    def Segment(self, *args):
         """
         * Segments the curve between U1 and U2 which can be out of the bounds of the curve. The curve is oriented from U1 to U2. The control points are modified, the first and the last point are not the same but the parametrization range is [0, 1] else it could not be a Bezier curve. Warnings : Even if <self> is not closed it can become closed after the segmentation for example if U1 or U2 are out of the bounds of the curve <self> or if the curve makes loop. After the segmentation the length of a curve can be null.
 
@@ -7047,12 +7359,12 @@ class Geom_BezierCurve(Geom_BoundedCurve):
         """
         return _Geom.Geom_BezierCurve_Segment(self, *args)
 
-    def SetPole(self, *args) -> "void" :
+    def SetPole(self, *args):
         """
         * Substitutes the pole of range index with P. If the curve <self> is rational the weight of range Index is not modified. raiseD if Index is not in the range [1, NbPoles]
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param P:
         :type P: gp_Pnt
         :rtype: None
@@ -7060,7 +7372,7 @@ class Geom_BezierCurve(Geom_BoundedCurve):
         * Substitutes the pole and the weights of range Index. If the curve <self> is not rational it can become rational if all the weights are not identical. If the curve was rational it can become non rational if all the weights are identical. Raised if Index is not in the range [1, NbPoles] Raised if Weight <= Resolution from package gp
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param P:
         :type P: gp_Pnt
         :param Weight:
@@ -7070,12 +7382,12 @@ class Geom_BezierCurve(Geom_BoundedCurve):
         """
         return _Geom.Geom_BezierCurve_SetPole(self, *args)
 
-    def SetWeight(self, *args) -> "void" :
+    def SetWeight(self, *args):
         """
         * Changes the weight of the pole of range Index. If the curve <self> is not rational it can become rational if all the weights are not identical. If the curve was rational it can become non rational if all the weights are identical. Raised if Index is not in the range [1, NbPoles] Raised if Weight <= Resolution from package gp
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Weight:
         :type Weight: float
         :rtype: None
@@ -7083,45 +7395,45 @@ class Geom_BezierCurve(Geom_BoundedCurve):
         """
         return _Geom.Geom_BezierCurve_SetWeight(self, *args)
 
-    def IsRational(self, *args) -> "Standard_Boolean" :
+    def IsRational(self):
         """
         * Returns false if all the weights are identical. The tolerance criterion is Resolution from package gp.
 
         :rtype: bool
 
         """
-        return _Geom.Geom_BezierCurve_IsRational(self, *args)
+        return _Geom.Geom_BezierCurve_IsRational(self)
 
-    def Degree(self, *args) -> "Standard_Integer" :
+    def Degree(self):
         """
         * Returns the polynomial degree of the curve. it is the number of poles - 1 point P and derivatives (V1, V2, V3) computation The Bezier Curve has a Polynomial representation so the parameter U can be out of the bounds of the curve.
 
         :rtype: int
 
         """
-        return _Geom.Geom_BezierCurve_Degree(self, *args)
+        return _Geom.Geom_BezierCurve_Degree(self)
 
-    def NbPoles(self, *args) -> "Standard_Integer" :
+    def NbPoles(self):
         """
         * Returns the number of poles of this Bezier curve.
 
         :rtype: int
 
         """
-        return _Geom.Geom_BezierCurve_NbPoles(self, *args)
+        return _Geom.Geom_BezierCurve_NbPoles(self)
 
-    def Pole(self, *args) -> "gp_Pnt" :
+    def Pole(self, *args):
         """
         * Returns the pole of range Index. Raised if Index is not in the range [1, NbPoles]
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: gp_Pnt
 
         """
         return _Geom.Geom_BezierCurve_Pole(self, *args)
 
-    def Poles(self, *args) -> "void" :
+    def Poles(self, *args):
         """
         * Returns all the poles of the curve. Raised if the length of P is not equal to the number of poles.
 
@@ -7132,18 +7444,18 @@ class Geom_BezierCurve(Geom_BoundedCurve):
         """
         return _Geom.Geom_BezierCurve_Poles(self, *args)
 
-    def Weight(self, *args) -> "Standard_Real" :
+    def Weight(self, *args):
         """
         * Returns the weight of range Index. Raised if Index is not in the range [1, NbPoles]
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: float
 
         """
         return _Geom.Geom_BezierCurve_Weight(self, *args)
 
-    def Weights(self, *args) -> "void" :
+    def Weights(self, *args):
         """
         * Returns all the weights of the curve. Raised if the length of W is not equal to the number of poles.
 
@@ -7154,17 +7466,17 @@ class Geom_BezierCurve(Geom_BoundedCurve):
         """
         return _Geom.Geom_BezierCurve_Weights(self, *args)
 
-    def MaxDegree(*args) -> "Standard_Integer" :
+    def MaxDegree():
         """
         * Returns the value of the maximum polynomial degree of any Geom_BezierCurve curve. This value is 25.
 
         :rtype: int
 
         """
-        return _Geom.Geom_BezierCurve_MaxDegree(*args)
+        return _Geom.Geom_BezierCurve_MaxDegree()
 
     MaxDegree = staticmethod(MaxDegree)
-    def Resolution(self, *args) -> "void" :
+    def Resolution(self, *args):
         """
         * Computes for this Bezier curve the parametric tolerance UTolerance for a given 3D tolerance Tolerance3D. If f(t) is the equation of this Bezier curve, UTolerance ensures that: |t1-t0| < UTolerance ===> |f(t1)-f(t0)| < Tolerance3D
 
@@ -7177,11 +7489,11 @@ class Geom_BezierCurve(Geom_BoundedCurve):
         """
         return _Geom.Geom_BezierCurve_Resolution(self, *args)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Geom_BezierCurve self)"""
         return _Geom.Geom_BezierCurve__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Geom_BezierCurve" :
+    def GetHandle(self):
         """GetHandle(Geom_BezierCurve self) -> Handle_Geom_BezierCurve"""
         return _Geom.Geom_BezierCurve_GetHandle(self)
 
@@ -7213,14 +7525,14 @@ Geom_BezierCurve.GetHandle = new_instancemethod(_Geom.Geom_BezierCurve_GetHandle
 Geom_BezierCurve_swigregister = _Geom.Geom_BezierCurve_swigregister
 Geom_BezierCurve_swigregister(Geom_BezierCurve)
 
-def Geom_BezierCurve_MaxDegree(*args) -> "Standard_Integer" :
+def Geom_BezierCurve_MaxDegree():
   """
     * Returns the value of the maximum polynomial degree of any Geom_BezierCurve curve. This value is 25.
 
     :rtype: int
 
     """
-  return _Geom.Geom_BezierCurve_MaxDegree(*args)
+  return _Geom.Geom_BezierCurve_MaxDegree()
 
 class Handle_Geom_BezierCurve(Handle_Geom_BoundedCurve):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
@@ -7243,7 +7555,7 @@ Handle_Geom_BezierCurve._kill_pointed = new_instancemethod(_Geom.Handle_Geom_Bez
 Handle_Geom_BezierCurve_swigregister = _Geom.Handle_Geom_BezierCurve_swigregister
 Handle_Geom_BezierCurve_swigregister(Handle_Geom_BezierCurve)
 
-def Handle_Geom_BezierCurve_DownCast(*args) -> "Handle_Geom_BezierCurve const" :
+def Handle_Geom_BezierCurve_DownCast(*args):
   return _Geom.Handle_Geom_BezierCurve_DownCast(*args)
 Handle_Geom_BezierCurve_DownCast = _Geom.Handle_Geom_BezierCurve_DownCast
 
@@ -7268,34 +7580,34 @@ class Geom_BezierSurface(Geom_BoundedSurface):
 
         """
         _Geom.Geom_BezierSurface_swiginit(self,_Geom.new_Geom_BezierSurface(*args))
-    def ExchangeUV(self, *args) -> "void" :
+    def ExchangeUV(self):
         """
         * Exchanges the direction U and V on a Bezier surface As a consequence: - the poles and weights tables are transposed, - degrees, rational characteristics and so on are exchanged between the two parametric directions, and - the orientation of the surface is reversed.
 
         :rtype: None
 
         """
-        return _Geom.Geom_BezierSurface_ExchangeUV(self, *args)
+        return _Geom.Geom_BezierSurface_ExchangeUV(self)
 
-    def Increase(self, *args) -> "void" :
+    def Increase(self, *args):
         """
         * Increases the degree of this Bezier surface in the two parametric directions. Raised if UDegree < UDegree <self> or VDegree < VDegree <self> Raised if the degree of the surface is greater than MaxDegree in one of the two directions U or V.
 
         :param UDeg:
-        :type UDeg: int
+        :type UDeg: Standard_Integer
         :param VDeg:
-        :type VDeg: int
+        :type VDeg: Standard_Integer
         :rtype: None
 
         """
         return _Geom.Geom_BezierSurface_Increase(self, *args)
 
-    def InsertPoleColAfter(self, *args) -> "void" :
+    def InsertPoleColAfter(self, *args):
         """
         * Inserts a column of poles. If the surface is rational the weights values associated with CPoles are equal defaulted to 1. Raised if Vindex < 1 or VIndex > NbVPoles. raises if VDegree is greater than MaxDegree. raises if the Length of CPoles is not equal to NbUPoles
 
         :param VIndex:
-        :type VIndex: int
+        :type VIndex: Standard_Integer
         :param CPoles:
         :type CPoles: TColgp_Array1OfPnt
         :rtype: None
@@ -7303,7 +7615,7 @@ class Geom_BezierSurface(Geom_BoundedSurface):
         * Inserts a column of poles and weights. If the surface was non-rational it can become rational. Raised if Vindex < 1 or VIndex > NbVPoles. Raised if . VDegree is greater than MaxDegree. . the Length of CPoles is not equal to NbUPoles . a weight value is lower or equal to Resolution from package gp
 
         :param VIndex:
-        :type VIndex: int
+        :type VIndex: Standard_Integer
         :param CPoles:
         :type CPoles: TColgp_Array1OfPnt
         :param CPoleWeights:
@@ -7313,12 +7625,12 @@ class Geom_BezierSurface(Geom_BoundedSurface):
         """
         return _Geom.Geom_BezierSurface_InsertPoleColAfter(self, *args)
 
-    def InsertPoleColBefore(self, *args) -> "void" :
+    def InsertPoleColBefore(self, *args):
         """
         * Inserts a column of poles. If the surface is rational the weights values associated with CPoles are equal defaulted to 1. Raised if Vindex < 1 or VIndex > NbVPoles. Raised if VDegree is greater than MaxDegree. Raised if the Length of CPoles is not equal to NbUPoles
 
         :param VIndex:
-        :type VIndex: int
+        :type VIndex: Standard_Integer
         :param CPoles:
         :type CPoles: TColgp_Array1OfPnt
         :rtype: None
@@ -7326,7 +7638,7 @@ class Geom_BezierSurface(Geom_BoundedSurface):
         * Inserts a column of poles and weights. If the surface was non-rational it can become rational. Raised if Vindex < 1 or VIndex > NbVPoles. Raised if : . VDegree is greater than MaxDegree. . the Length of CPoles is not equal to NbUPoles . a weight value is lower or equal to Resolution from package gp
 
         :param VIndex:
-        :type VIndex: int
+        :type VIndex: Standard_Integer
         :param CPoles:
         :type CPoles: TColgp_Array1OfPnt
         :param CPoleWeights:
@@ -7336,12 +7648,12 @@ class Geom_BezierSurface(Geom_BoundedSurface):
         """
         return _Geom.Geom_BezierSurface_InsertPoleColBefore(self, *args)
 
-    def InsertPoleRowAfter(self, *args) -> "void" :
+    def InsertPoleRowAfter(self, *args):
         """
         * Inserts a row of poles. If the surface is rational the weights values associated with CPoles are equal defaulted to 1. Raised if Uindex < 1 or UIndex > NbUPoles. Raised if UDegree is greater than MaxDegree. Raised if the Length of CPoles is not equal to NbVPoles
 
         :param UIndex:
-        :type UIndex: int
+        :type UIndex: Standard_Integer
         :param CPoles:
         :type CPoles: TColgp_Array1OfPnt
         :rtype: None
@@ -7349,7 +7661,7 @@ class Geom_BezierSurface(Geom_BoundedSurface):
         * Inserts a row of poles and weights. If the surface was non-rational it can become rational. Raised if Uindex < 1 or UIndex > NbUPoles. Raised if : . UDegree is greater than MaxDegree. . the Length of CPoles is not equal to NbVPoles . a weight value is lower or equal to Resolution from package gp
 
         :param UIndex:
-        :type UIndex: int
+        :type UIndex: Standard_Integer
         :param CPoles:
         :type CPoles: TColgp_Array1OfPnt
         :param CPoleWeights:
@@ -7359,12 +7671,12 @@ class Geom_BezierSurface(Geom_BoundedSurface):
         """
         return _Geom.Geom_BezierSurface_InsertPoleRowAfter(self, *args)
 
-    def InsertPoleRowBefore(self, *args) -> "void" :
+    def InsertPoleRowBefore(self, *args):
         """
         * Inserts a row of poles. If the surface is rational the weights values associated with CPoles are equal defaulted to 1. Raised if Uindex < 1 or UIndex > NbUPoles. Raised if UDegree is greater than MaxDegree. Raised if the Length of CPoles is not equal to NbVPoles
 
         :param UIndex:
-        :type UIndex: int
+        :type UIndex: Standard_Integer
         :param CPoles:
         :type CPoles: TColgp_Array1OfPnt
         :rtype: None
@@ -7372,7 +7684,7 @@ class Geom_BezierSurface(Geom_BoundedSurface):
         * Inserts a row of poles and weights. If the surface was non-rational it can become rational. Raised if Uindex < 1 or UIndex > NbUPoles. Raised if : . UDegree is greater than MaxDegree. . the Length of CPoles is not equal to NbVPoles . a weight value is lower or equal to Resolution from pacakage gp
 
         :param UIndex:
-        :type UIndex: int
+        :type UIndex: Standard_Integer
         :param CPoles:
         :type CPoles: TColgp_Array1OfPnt
         :param CPoleWeights:
@@ -7382,29 +7694,29 @@ class Geom_BezierSurface(Geom_BoundedSurface):
         """
         return _Geom.Geom_BezierSurface_InsertPoleRowBefore(self, *args)
 
-    def RemovePoleCol(self, *args) -> "void" :
+    def RemovePoleCol(self, *args):
         """
         * Removes a column of poles. If the surface was rational it can become non-rational. Raised if NbVPoles <= 2 after removing, a Bezier surface must have at least two columns of poles. Raised if Vindex < 1 or VIndex > NbVPoles
 
         :param VIndex:
-        :type VIndex: int
+        :type VIndex: Standard_Integer
         :rtype: None
 
         """
         return _Geom.Geom_BezierSurface_RemovePoleCol(self, *args)
 
-    def RemovePoleRow(self, *args) -> "void" :
+    def RemovePoleRow(self, *args):
         """
         * Removes a row of poles. If the surface was rational it can become non-rational. Raised if NbUPoles <= 2 after removing, a Bezier surface must have at least two rows of poles. Raised if Uindex < 1 or UIndex > NbUPoles
 
         :param UIndex:
-        :type UIndex: int
+        :type UIndex: Standard_Integer
         :rtype: None
 
         """
         return _Geom.Geom_BezierSurface_RemovePoleRow(self, *args)
 
-    def Segment(self, *args) -> "void" :
+    def Segment(self, *args):
         """
         * Modifies this Bezier surface by segmenting it between U1 and U2 in the u parametric direction, and between V1 and V2 in the v parametric direction. U1, U2, V1, and V2 can be outside the bounds of this surface. - U1 and U2 isoparametric Bezier curves, segmented between V1 and V2, become the two bounds of the surface in the v parametric direction (0. and 1. u isoparametric curves). - V1 and V2 isoparametric Bezier curves, segmented between U1 and U2, become the two bounds of the surface in the u parametric direction (0. and 1. v isoparametric curves). The poles and weights tables are modified, but the degree of this surface in the u and v parametric directions does not change. U1 can be greater than U2, and V1 can be greater than V2. In these cases, the corresponding parametric direction is inverted. The orientation of the surface is inverted if one (and only one) parametric direction is inverted.
 
@@ -7421,14 +7733,14 @@ class Geom_BezierSurface(Geom_BoundedSurface):
         """
         return _Geom.Geom_BezierSurface_Segment(self, *args)
 
-    def SetPole(self, *args) -> "void" :
+    def SetPole(self, *args):
         """
         * Modifies a pole value. If the surface is rational the weight of range (UIndex, VIndex) is not modified. Raised if UIndex < 1 or UIndex > NbUPoles or VIndex < 1 or VIndex > NbVPoles.
 
         :param UIndex:
-        :type UIndex: int
+        :type UIndex: Standard_Integer
         :param VIndex:
-        :type VIndex: int
+        :type VIndex: Standard_Integer
         :param P:
         :type P: gp_Pnt
         :rtype: None
@@ -7436,9 +7748,9 @@ class Geom_BezierSurface(Geom_BoundedSurface):
         * Substitutes the pole and the weight of range UIndex, VIndex. If the surface <self> is not rational it can become rational. if the surface was rational it can become non-rational. raises if UIndex < 1 or UIndex > NbUPoles or VIndex < 1 or VIndex > NbVPoles. Raised if Weight <= Resolution from package gp.
 
         :param UIndex:
-        :type UIndex: int
+        :type UIndex: Standard_Integer
         :param VIndex:
-        :type VIndex: int
+        :type VIndex: Standard_Integer
         :param P:
         :type P: gp_Pnt
         :param Weight:
@@ -7448,12 +7760,12 @@ class Geom_BezierSurface(Geom_BoundedSurface):
         """
         return _Geom.Geom_BezierSurface_SetPole(self, *args)
 
-    def SetPoleCol(self, *args) -> "void" :
+    def SetPoleCol(self, *args):
         """
         * Modifies a column of poles. The length of CPoles can be lower but not greater than NbUPoles so you can modify just a part of the column. Raised if VIndex < 1 or VIndex > NbVPoles Raised if CPoles.Lower() < 1 or CPoles.Upper() > NbUPoles
 
         :param VIndex:
-        :type VIndex: int
+        :type VIndex: Standard_Integer
         :param CPoles:
         :type CPoles: TColgp_Array1OfPnt
         :rtype: None
@@ -7461,7 +7773,7 @@ class Geom_BezierSurface(Geom_BoundedSurface):
         * Modifies a column of poles. If the surface was rational it can become non-rational If the surface was non-rational it can become rational. The length of CPoles can be lower but not greater than NbUPoles so you can modify just a part of the column. Raised if VIndex < 1 or VIndex > NbVPoles Raised if CPoles.Lower() < 1 or CPoles.Upper() > NbUPoles Raised if CPoleWeights and CPoles have not the same bounds. Raised if one of the weight value CPoleWeights (i) is lower or equal to Resolution from package gp.
 
         :param VIndex:
-        :type VIndex: int
+        :type VIndex: Standard_Integer
         :param CPoles:
         :type CPoles: TColgp_Array1OfPnt
         :param CPoleWeights:
@@ -7471,12 +7783,12 @@ class Geom_BezierSurface(Geom_BoundedSurface):
         """
         return _Geom.Geom_BezierSurface_SetPoleCol(self, *args)
 
-    def SetPoleRow(self, *args) -> "void" :
+    def SetPoleRow(self, *args):
         """
         * Modifies a row of poles. The length of CPoles can be lower but not greater than NbVPoles so you can modify just a part of the row. Raised if UIndex < 1 or UIndex > NbUPoles Raised if CPoles.Lower() < 1 or CPoles.Upper() > NbVPoles
 
         :param UIndex:
-        :type UIndex: int
+        :type UIndex: Standard_Integer
         :param CPoles:
         :type CPoles: TColgp_Array1OfPnt
         :rtype: None
@@ -7484,7 +7796,7 @@ class Geom_BezierSurface(Geom_BoundedSurface):
         * Modifies a row of poles and weights. If the surface was rational it can become non-rational. If the surface was non-rational it can become rational. The length of CPoles can be lower but not greater than NbVPoles so you can modify just a part of the row. Raised if UIndex < 1 or UIndex > NbUPoles Raised if CPoles.Lower() < 1 or CPoles.Upper() > NbVPoles Raised if CPoleWeights and CPoles have not the same bounds. Raised if one of the weight value CPoleWeights (i) is lower or equal to Resolution from gp.
 
         :param UIndex:
-        :type UIndex: int
+        :type UIndex: Standard_Integer
         :param CPoles:
         :type CPoles: TColgp_Array1OfPnt
         :param CPoleWeights:
@@ -7494,14 +7806,14 @@ class Geom_BezierSurface(Geom_BoundedSurface):
         """
         return _Geom.Geom_BezierSurface_SetPoleRow(self, *args)
 
-    def SetWeight(self, *args) -> "void" :
+    def SetWeight(self, *args):
         """
         * Modifies the weight of the pole of range UIndex, VIndex. If the surface was non-rational it can become rational. If the surface was rational it can become non-rational. Raised if UIndex < 1 or UIndex > NbUPoles or VIndex < 1 or VIndex > NbVPoles. Raised if Weight <= Resolution from package gp.
 
         :param UIndex:
-        :type UIndex: int
+        :type UIndex: Standard_Integer
         :param VIndex:
-        :type VIndex: int
+        :type VIndex: Standard_Integer
         :param Weight:
         :type Weight: float
         :rtype: None
@@ -7509,12 +7821,12 @@ class Geom_BezierSurface(Geom_BoundedSurface):
         """
         return _Geom.Geom_BezierSurface_SetWeight(self, *args)
 
-    def SetWeightCol(self, *args) -> "void" :
+    def SetWeightCol(self, *args):
         """
         * Modifies a column of weights. If the surface was rational it can become non-rational. If the surface was non-rational it can become rational. The length of CPoleWeights can be lower but not greater than NbUPoles. Raised if VIndex < 1 or VIndex > NbVPoles Raised if CPoleWeights.Lower() < 1 or CPoleWeights.Upper() > NbUPoles Raised if one of the weight value CPoleWeights (i) is lower or equal to Resolution from package gp.
 
         :param VIndex:
-        :type VIndex: int
+        :type VIndex: Standard_Integer
         :param CPoleWeights:
         :type CPoleWeights: TColStd_Array1OfReal &
         :rtype: None
@@ -7522,12 +7834,12 @@ class Geom_BezierSurface(Geom_BoundedSurface):
         """
         return _Geom.Geom_BezierSurface_SetWeightCol(self, *args)
 
-    def SetWeightRow(self, *args) -> "void" :
+    def SetWeightRow(self, *args):
         """
         * Modifies a row of weights. If the surface was rational it can become non-rational. If the surface was non-rational it can become rational. The length of CPoleWeights can be lower but not greater than NbVPoles. Raised if UIndex < 1 or UIndex > NbUPoles Raised if CPoleWeights.Lower() < 1 or CPoleWeights.Upper() > NbVPoles Raised if one of the weight value CPoleWeights (i) is lower or equal to Resolution from package gp.
 
         :param UIndex:
-        :type UIndex: int
+        :type UIndex: Standard_Integer
         :param CPoleWeights:
         :type CPoleWeights: TColStd_Array1OfReal &
         :rtype: None
@@ -7535,38 +7847,38 @@ class Geom_BezierSurface(Geom_BoundedSurface):
         """
         return _Geom.Geom_BezierSurface_SetWeightRow(self, *args)
 
-    def NbUPoles(self, *args) -> "Standard_Integer" :
+    def NbUPoles(self):
         """
         * Returns the number of poles in the U direction.
 
         :rtype: int
 
         """
-        return _Geom.Geom_BezierSurface_NbUPoles(self, *args)
+        return _Geom.Geom_BezierSurface_NbUPoles(self)
 
-    def NbVPoles(self, *args) -> "Standard_Integer" :
+    def NbVPoles(self):
         """
         * Returns the number of poles in the V direction.
 
         :rtype: int
 
         """
-        return _Geom.Geom_BezierSurface_NbVPoles(self, *args)
+        return _Geom.Geom_BezierSurface_NbVPoles(self)
 
-    def Pole(self, *args) -> "gp_Pnt" :
+    def Pole(self, *args):
         """
         * Returns the pole of range UIndex, VIndex Raised if UIndex < 1 or UIndex > NbUPoles, or VIndex < 1 or VIndex > NbVPoles.
 
         :param UIndex:
-        :type UIndex: int
+        :type UIndex: Standard_Integer
         :param VIndex:
-        :type VIndex: int
+        :type VIndex: Standard_Integer
         :rtype: gp_Pnt
 
         """
         return _Geom.Geom_BezierSurface_Pole(self, *args)
 
-    def Poles(self, *args) -> "void" :
+    def Poles(self, *args):
         """
         * Returns the poles of the Bezier surface. Raised if the length of P in the U an V direction is not equal to NbUPoles and NbVPoles.
 
@@ -7577,38 +7889,38 @@ class Geom_BezierSurface(Geom_BoundedSurface):
         """
         return _Geom.Geom_BezierSurface_Poles(self, *args)
 
-    def UDegree(self, *args) -> "Standard_Integer" :
+    def UDegree(self):
         """
         * Returns the degree of the surface in the U direction it is NbUPoles - 1
 
         :rtype: int
 
         """
-        return _Geom.Geom_BezierSurface_UDegree(self, *args)
+        return _Geom.Geom_BezierSurface_UDegree(self)
 
-    def VDegree(self, *args) -> "Standard_Integer" :
+    def VDegree(self):
         """
         * Returns the degree of the surface in the V direction it is NbVPoles - 1
 
         :rtype: int
 
         """
-        return _Geom.Geom_BezierSurface_VDegree(self, *args)
+        return _Geom.Geom_BezierSurface_VDegree(self)
 
-    def Weight(self, *args) -> "Standard_Real" :
+    def Weight(self, *args):
         """
         * Returns the weight of range UIndex, VIndex Raised if UIndex < 1 or UIndex > NbUPoles, or  VIndex < 1 or VIndex > NbVPoles.
 
         :param UIndex:
-        :type UIndex: int
+        :type UIndex: Standard_Integer
         :param VIndex:
-        :type VIndex: int
+        :type VIndex: Standard_Integer
         :rtype: float
 
         """
         return _Geom.Geom_BezierSurface_Weight(self, *args)
 
-    def Weights(self, *args) -> "void" :
+    def Weights(self, *args):
         """
         * Returns the weights of the Bezier surface. Raised if the length of W in the U an V direction is not equal to NbUPoles and NbVPoles.
 
@@ -7619,35 +7931,35 @@ class Geom_BezierSurface(Geom_BoundedSurface):
         """
         return _Geom.Geom_BezierSurface_Weights(self, *args)
 
-    def IsURational(self, *args) -> "Standard_Boolean" :
+    def IsURational(self):
         """
         * Returns False if the weights are identical in the U direction, The tolerance criterion is Resolution from package gp. Example :  |1.0, 1.0, 1.0| if Weights = |0.5, 0.5, 0.5| returns False  |2.0, 2.0, 2.0|
 
         :rtype: bool
 
         """
-        return _Geom.Geom_BezierSurface_IsURational(self, *args)
+        return _Geom.Geom_BezierSurface_IsURational(self)
 
-    def IsVRational(self, *args) -> "Standard_Boolean" :
+    def IsVRational(self):
         """
         * Returns False if the weights are identical in the V direction, The tolerance criterion is Resolution from package gp. Example :  |1.0, 2.0, 0.5| if Weights = |1.0, 2.0, 0.5| returns False  |1.0, 2.0, 0.5|
 
         :rtype: bool
 
         """
-        return _Geom.Geom_BezierSurface_IsVRational(self, *args)
+        return _Geom.Geom_BezierSurface_IsVRational(self)
 
-    def MaxDegree(*args) -> "Standard_Integer" :
+    def MaxDegree():
         """
         * Returns the value of the maximum polynomial degree of a Bezier surface. This value is 25.
 
         :rtype: int
 
         """
-        return _Geom.Geom_BezierSurface_MaxDegree(*args)
+        return _Geom.Geom_BezierSurface_MaxDegree()
 
     MaxDegree = staticmethod(MaxDegree)
-    def Resolution(self, *args) -> "void" :
+    def Resolution(self, *args):
         """
         * Computes two tolerance values for this Bezier surface, based on the given tolerance in 3D space Tolerance3D. The tolerances computed are: - UTolerance in the u parametric direction, and - VTolerance in the v parametric direction. If f(u,v) is the equation of this Bezier surface, UTolerance and VTolerance guarantee that: | u1 - u0 | < UTolerance and | v1 - v0 | < VTolerance ====> |f (u1,v1) - f (u0,v0)| < Tolerance3D
 
@@ -7662,11 +7974,11 @@ class Geom_BezierSurface(Geom_BoundedSurface):
         """
         return _Geom.Geom_BezierSurface_Resolution(self, *args)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Geom_BezierSurface self)"""
         return _Geom.Geom_BezierSurface__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Geom_BezierSurface" :
+    def GetHandle(self):
         """GetHandle(Geom_BezierSurface self) -> Handle_Geom_BezierSurface"""
         return _Geom.Geom_BezierSurface_GetHandle(self)
 
@@ -7709,14 +8021,14 @@ Geom_BezierSurface.GetHandle = new_instancemethod(_Geom.Geom_BezierSurface_GetHa
 Geom_BezierSurface_swigregister = _Geom.Geom_BezierSurface_swigregister
 Geom_BezierSurface_swigregister(Geom_BezierSurface)
 
-def Geom_BezierSurface_MaxDegree(*args) -> "Standard_Integer" :
+def Geom_BezierSurface_MaxDegree():
   """
     * Returns the value of the maximum polynomial degree of a Bezier surface. This value is 25.
 
     :rtype: int
 
     """
-  return _Geom.Geom_BezierSurface_MaxDegree(*args)
+  return _Geom.Geom_BezierSurface_MaxDegree()
 
 class Handle_Geom_BezierSurface(Handle_Geom_BoundedSurface):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
@@ -7739,7 +8051,7 @@ Handle_Geom_BezierSurface._kill_pointed = new_instancemethod(_Geom.Handle_Geom_B
 Handle_Geom_BezierSurface_swigregister = _Geom.Handle_Geom_BezierSurface_swigregister
 Handle_Geom_BezierSurface_swigregister(Handle_Geom_BezierSurface)
 
-def Handle_Geom_BezierSurface_DownCast(*args) -> "Handle_Geom_BezierSurface const" :
+def Handle_Geom_BezierSurface_DownCast(*args):
   return _Geom.Handle_Geom_BezierSurface_DownCast(*args)
 Handle_Geom_BezierSurface_DownCast = _Geom.Handle_Geom_BezierSurface_DownCast
 
@@ -7764,7 +8076,7 @@ class Geom_Circle(Geom_Conic):
 
         """
         _Geom.Geom_Circle_swiginit(self,_Geom.new_Geom_Circle(*args))
-    def SetCirc(self, *args) -> "void" :
+    def SetCirc(self, *args):
         """
         * Set <self> so that <self> has the same geometric properties as C.
 
@@ -7775,7 +8087,7 @@ class Geom_Circle(Geom_Conic):
         """
         return _Geom.Geom_Circle_SetCirc(self, *args)
 
-    def SetRadius(self, *args) -> "void" :
+    def SetRadius(self, *args):
         """
         * Assigns the value R to the radius of this circle. Note: it is possible to have a circle with a radius equal to 0.0. Exceptions - Standard_ConstructionError if R is negative.
 
@@ -7786,29 +8098,29 @@ class Geom_Circle(Geom_Conic):
         """
         return _Geom.Geom_Circle_SetRadius(self, *args)
 
-    def Circ(self, *args) -> "gp_Circ" :
+    def Circ(self):
         """
         * returns the non transient circle from gp with the same geometric properties as <self>.
 
         :rtype: gp_Circ
 
         """
-        return _Geom.Geom_Circle_Circ(self, *args)
+        return _Geom.Geom_Circle_Circ(self)
 
-    def Radius(self, *args) -> "Standard_Real" :
+    def Radius(self):
         """
         * Returns the radius of this circle.
 
         :rtype: float
 
         """
-        return _Geom.Geom_Circle_Radius(self, *args)
+        return _Geom.Geom_Circle_Radius(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Geom_Circle self)"""
         return _Geom.Geom_Circle__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Geom_Circle" :
+    def GetHandle(self):
         """GetHandle(Geom_Circle self) -> Handle_Geom_Circle"""
         return _Geom.Geom_Circle_GetHandle(self)
 
@@ -7850,7 +8162,7 @@ Handle_Geom_Circle._kill_pointed = new_instancemethod(_Geom.Handle_Geom_Circle__
 Handle_Geom_Circle_swigregister = _Geom.Handle_Geom_Circle_swigregister
 Handle_Geom_Circle_swigregister(Handle_Geom_Circle)
 
-def Handle_Geom_Circle_DownCast(*args) -> "Handle_Geom_Circle const" :
+def Handle_Geom_Circle_DownCast(*args):
   return _Geom.Handle_Geom_Circle_DownCast(*args)
 Handle_Geom_Circle_DownCast = _Geom.Handle_Geom_Circle_DownCast
 
@@ -7877,7 +8189,7 @@ class Geom_ConicalSurface(Geom_ElementarySurface):
 
         """
         _Geom.Geom_ConicalSurface_swiginit(self,_Geom.new_Geom_ConicalSurface(*args))
-    def SetCone(self, *args) -> "void" :
+    def SetCone(self, *args):
         """
         * Set <self> so that <self> has the same geometric properties as C.
 
@@ -7888,7 +8200,7 @@ class Geom_ConicalSurface(Geom_ElementarySurface):
         """
         return _Geom.Geom_ConicalSurface_SetCone(self, *args)
 
-    def SetRadius(self, *args) -> "void" :
+    def SetRadius(self, *args):
         """
         * Changes the radius of the conical surface in the placement plane (Z = 0, V = 0). The local coordinate system is not modified. Raised if R < 0.0
 
@@ -7899,7 +8211,7 @@ class Geom_ConicalSurface(Geom_ElementarySurface):
         """
         return _Geom.Geom_ConicalSurface_SetRadius(self, *args)
 
-    def SetSemiAngle(self, *args) -> "void" :
+    def SetSemiAngle(self, *args):
         """
         * Changes the semi angle of the conical surface. Raised if Ang < Resolution or Ang >= PI/2 - Resolution
 
@@ -7910,25 +8222,25 @@ class Geom_ConicalSurface(Geom_ElementarySurface):
         """
         return _Geom.Geom_ConicalSurface_SetSemiAngle(self, *args)
 
-    def Cone(self, *args) -> "gp_Cone" :
+    def Cone(self):
         """
         * returns a non transient cone with the same geometric properties as <self>.
 
         :rtype: gp_Cone
 
         """
-        return _Geom.Geom_ConicalSurface_Cone(self, *args)
+        return _Geom.Geom_ConicalSurface_Cone(self)
 
-    def Apex(self, *args) -> "gp_Pnt" :
+    def Apex(self):
         """
         * Computes the apex of this cone. It is on the negative side of the axis of revolution of this cone if the half-angle at the apex is positive, and on the positive side of the 'main Axis' if the half-angle is negative.
 
         :rtype: gp_Pnt
 
         """
-        return _Geom.Geom_ConicalSurface_Apex(self, *args)
+        return _Geom.Geom_ConicalSurface_Apex(self)
 
-    def Coefficients(self, *args) -> "void" :
+    def Coefficients(self):
         """
         * Returns the coefficients of the implicit equation of the quadric in the absolute cartesian coordinate system : These coefficients are normalized. A1.X**2 + A2.Y**2 + A3.Z**2 + 2.(B1.X.Y + B2.X.Z + B3.Y.Z) + 2.(C1.X + C2.Y + C3.Z) + D = 0.0
 
@@ -7955,31 +8267,31 @@ class Geom_ConicalSurface(Geom_ElementarySurface):
         :rtype: None
 
         """
-        return _Geom.Geom_ConicalSurface_Coefficients(self, *args)
+        return _Geom.Geom_ConicalSurface_Coefficients(self)
 
-    def RefRadius(self, *args) -> "Standard_Real" :
+    def RefRadius(self):
         """
         * Returns the reference radius of this cone. The reference radius is the radius of the circle formed by the intersection of this cone and its reference plane (i.e. the plane defined by the origin, 'X Direction' and 'Y Direction' of the local coordinate system of this cone). If the apex of this cone is on the origin of the local coordinate system of this cone, the returned value is 0.
 
         :rtype: float
 
         """
-        return _Geom.Geom_ConicalSurface_RefRadius(self, *args)
+        return _Geom.Geom_ConicalSurface_RefRadius(self)
 
-    def SemiAngle(self, *args) -> "Standard_Real" :
+    def SemiAngle(self):
         """
         * returns the semi-angle of the conical surface ]0.0, PI/2[.
 
         :rtype: float
 
         """
-        return _Geom.Geom_ConicalSurface_SemiAngle(self, *args)
+        return _Geom.Geom_ConicalSurface_SemiAngle(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Geom_ConicalSurface self)"""
         return _Geom.Geom_ConicalSurface__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Geom_ConicalSurface" :
+    def GetHandle(self):
         """GetHandle(Geom_ConicalSurface self) -> Handle_Geom_ConicalSurface"""
         return _Geom.Geom_ConicalSurface_GetHandle(self)
 
@@ -8025,7 +8337,7 @@ Handle_Geom_ConicalSurface._kill_pointed = new_instancemethod(_Geom.Handle_Geom_
 Handle_Geom_ConicalSurface_swigregister = _Geom.Handle_Geom_ConicalSurface_swigregister
 Handle_Geom_ConicalSurface_swigregister(Handle_Geom_ConicalSurface)
 
-def Handle_Geom_ConicalSurface_DownCast(*args) -> "Handle_Geom_ConicalSurface const" :
+def Handle_Geom_ConicalSurface_DownCast(*args):
   return _Geom.Handle_Geom_ConicalSurface_DownCast(*args)
 Handle_Geom_ConicalSurface_DownCast = _Geom.Handle_Geom_ConicalSurface_DownCast
 
@@ -8050,7 +8362,7 @@ class Geom_CylindricalSurface(Geom_ElementarySurface):
 
         """
         _Geom.Geom_CylindricalSurface_swiginit(self,_Geom.new_Geom_CylindricalSurface(*args))
-    def SetCylinder(self, *args) -> "void" :
+    def SetCylinder(self, *args):
         """
         * Set <self> so that <self> has the same geometric properties as C.
 
@@ -8061,7 +8373,7 @@ class Geom_CylindricalSurface(Geom_ElementarySurface):
         """
         return _Geom.Geom_CylindricalSurface_SetCylinder(self, *args)
 
-    def SetRadius(self, *args) -> "void" :
+    def SetRadius(self, *args):
         """
         * Changes the radius of the cylinder. Raised if R < 0.0
 
@@ -8072,16 +8384,16 @@ class Geom_CylindricalSurface(Geom_ElementarySurface):
         """
         return _Geom.Geom_CylindricalSurface_SetRadius(self, *args)
 
-    def Cylinder(self, *args) -> "gp_Cylinder" :
+    def Cylinder(self):
         """
         * returns a non transient cylinder with the same geometric properties as <self>.
 
         :rtype: gp_Cylinder
 
         """
-        return _Geom.Geom_CylindricalSurface_Cylinder(self, *args)
+        return _Geom.Geom_CylindricalSurface_Cylinder(self)
 
-    def Coefficients(self, *args) -> "void" :
+    def Coefficients(self):
         """
         * Returns the coefficients of the implicit equation of the quadric in the absolute cartesian coordinate system : These coefficients are normalized. A1.X**2 + A2.Y**2 + A3.Z**2 + 2.(B1.X.Y + B2.X.Z + B3.Y.Z) + 2.(C1.X + C2.Y + C3.Z) + D = 0.0
 
@@ -8108,22 +8420,22 @@ class Geom_CylindricalSurface(Geom_ElementarySurface):
         :rtype: None
 
         """
-        return _Geom.Geom_CylindricalSurface_Coefficients(self, *args)
+        return _Geom.Geom_CylindricalSurface_Coefficients(self)
 
-    def Radius(self, *args) -> "Standard_Real" :
+    def Radius(self):
         """
         * Returns the radius of this cylinder.
 
         :rtype: float
 
         """
-        return _Geom.Geom_CylindricalSurface_Radius(self, *args)
+        return _Geom.Geom_CylindricalSurface_Radius(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Geom_CylindricalSurface self)"""
         return _Geom.Geom_CylindricalSurface__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Geom_CylindricalSurface" :
+    def GetHandle(self):
         """GetHandle(Geom_CylindricalSurface self) -> Handle_Geom_CylindricalSurface"""
         return _Geom.Geom_CylindricalSurface_GetHandle(self)
 
@@ -8166,7 +8478,7 @@ Handle_Geom_CylindricalSurface._kill_pointed = new_instancemethod(_Geom.Handle_G
 Handle_Geom_CylindricalSurface_swigregister = _Geom.Handle_Geom_CylindricalSurface_swigregister
 Handle_Geom_CylindricalSurface_swigregister(Handle_Geom_CylindricalSurface)
 
-def Handle_Geom_CylindricalSurface_DownCast(*args) -> "Handle_Geom_CylindricalSurface const" :
+def Handle_Geom_CylindricalSurface_DownCast(*args):
   return _Geom.Handle_Geom_CylindricalSurface_DownCast(*args)
 Handle_Geom_CylindricalSurface_DownCast = _Geom.Handle_Geom_CylindricalSurface_DownCast
 
@@ -8193,7 +8505,7 @@ class Geom_Ellipse(Geom_Conic):
 
         """
         _Geom.Geom_Ellipse_swiginit(self,_Geom.new_Geom_Ellipse(*args))
-    def SetElips(self, *args) -> "void" :
+    def SetElips(self, *args):
         """
         * Converts the gp_Elips ellipse E into this ellipse.
 
@@ -8204,7 +8516,7 @@ class Geom_Ellipse(Geom_Conic):
         """
         return _Geom.Geom_Ellipse_SetElips(self, *args)
 
-    def SetMajorRadius(self, *args) -> "void" :
+    def SetMajorRadius(self, *args):
         """
         * Assigns a value to the major radius of this ellipse. ConstructionError raised if MajorRadius < MinorRadius.
 
@@ -8215,7 +8527,7 @@ class Geom_Ellipse(Geom_Conic):
         """
         return _Geom.Geom_Ellipse_SetMajorRadius(self, *args)
 
-    def SetMinorRadius(self, *args) -> "void" :
+    def SetMinorRadius(self, *args):
         """
         * Assigns a value to the minor radius of this ellipse. ConstructionError raised if MajorRadius < MinorRadius or if MinorRadius < 0.
 
@@ -8226,92 +8538,92 @@ class Geom_Ellipse(Geom_Conic):
         """
         return _Geom.Geom_Ellipse_SetMinorRadius(self, *args)
 
-    def Elips(self, *args) -> "gp_Elips" :
+    def Elips(self):
         """
         * returns the non transient ellipse from gp with the same
 
         :rtype: gp_Elips
 
         """
-        return _Geom.Geom_Ellipse_Elips(self, *args)
+        return _Geom.Geom_Ellipse_Elips(self)
 
-    def Directrix1(self, *args) -> "gp_Ax1" :
+    def Directrix1(self):
         """
         * This directrix is the line normal to the XAxis of the ellipse in the local plane (Z = 0) at a distance d = MajorRadius / e from the center of the ellipse, where e is the eccentricity of the ellipse. This line is parallel to the 'YAxis'. The intersection point between directrix1 and the 'XAxis' is the 'Location' point of the directrix1. This point is on the positive side of the 'XAxis'. Raised if Eccentricity = 0.0. (The ellipse degenerates into a circle)
 
         :rtype: gp_Ax1
 
         """
-        return _Geom.Geom_Ellipse_Directrix1(self, *args)
+        return _Geom.Geom_Ellipse_Directrix1(self)
 
-    def Directrix2(self, *args) -> "gp_Ax1" :
+    def Directrix2(self):
         """
         * This line is obtained by the symmetrical transformation of 'Directrix1' with respect to the 'YAxis' of the ellipse. Raised if Eccentricity = 0.0. (The ellipse degenerates into a circle).
 
         :rtype: gp_Ax1
 
         """
-        return _Geom.Geom_Ellipse_Directrix2(self, *args)
+        return _Geom.Geom_Ellipse_Directrix2(self)
 
-    def Focal(self, *args) -> "Standard_Real" :
+    def Focal(self):
         """
         * Computes the focal distance. It is the distance between the the two focus of the ellipse.
 
         :rtype: float
 
         """
-        return _Geom.Geom_Ellipse_Focal(self, *args)
+        return _Geom.Geom_Ellipse_Focal(self)
 
-    def Focus1(self, *args) -> "gp_Pnt" :
+    def Focus1(self):
         """
         * Returns the first focus of the ellipse. This focus is on the positive side of the 'XAxis' of the ellipse.
 
         :rtype: gp_Pnt
 
         """
-        return _Geom.Geom_Ellipse_Focus1(self, *args)
+        return _Geom.Geom_Ellipse_Focus1(self)
 
-    def Focus2(self, *args) -> "gp_Pnt" :
+    def Focus2(self):
         """
         * Returns the second focus of the ellipse. This focus is on the negative side of the 'XAxis' of the ellipse.
 
         :rtype: gp_Pnt
 
         """
-        return _Geom.Geom_Ellipse_Focus2(self, *args)
+        return _Geom.Geom_Ellipse_Focus2(self)
 
-    def MajorRadius(self, *args) -> "Standard_Real" :
+    def MajorRadius(self):
         """
         * Returns the major radius of this ellipse.
 
         :rtype: float
 
         """
-        return _Geom.Geom_Ellipse_MajorRadius(self, *args)
+        return _Geom.Geom_Ellipse_MajorRadius(self)
 
-    def MinorRadius(self, *args) -> "Standard_Real" :
+    def MinorRadius(self):
         """
         * Returns the minor radius of this ellipse.
 
         :rtype: float
 
         """
-        return _Geom.Geom_Ellipse_MinorRadius(self, *args)
+        return _Geom.Geom_Ellipse_MinorRadius(self)
 
-    def Parameter(self, *args) -> "Standard_Real" :
+    def Parameter(self):
         """
         * Returns p = (1 - e * e) * MajorRadius where e is the eccentricity of the ellipse. Returns 0 if MajorRadius = 0
 
         :rtype: float
 
         """
-        return _Geom.Geom_Ellipse_Parameter(self, *args)
+        return _Geom.Geom_Ellipse_Parameter(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Geom_Ellipse self)"""
         return _Geom.Geom_Ellipse__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Geom_Ellipse" :
+    def GetHandle(self):
         """GetHandle(Geom_Ellipse self) -> Handle_Geom_Ellipse"""
         return _Geom.Geom_Ellipse_GetHandle(self)
 
@@ -8361,7 +8673,7 @@ Handle_Geom_Ellipse._kill_pointed = new_instancemethod(_Geom.Handle_Geom_Ellipse
 Handle_Geom_Ellipse_swigregister = _Geom.Handle_Geom_Ellipse_swigregister
 Handle_Geom_Ellipse_swigregister(Handle_Geom_Ellipse)
 
-def Handle_Geom_Ellipse_DownCast(*args) -> "Handle_Geom_Ellipse const" :
+def Handle_Geom_Ellipse_DownCast(*args):
   return _Geom.Handle_Geom_Ellipse_DownCast(*args)
 Handle_Geom_Ellipse_DownCast = _Geom.Handle_Geom_Ellipse_DownCast
 
@@ -8388,7 +8700,7 @@ class Geom_Hyperbola(Geom_Conic):
 
         """
         _Geom.Geom_Hyperbola_swiginit(self,_Geom.new_Geom_Hyperbola(*args))
-    def SetHypr(self, *args) -> "void" :
+    def SetHypr(self, *args):
         """
         * Converts the gp_Hypr hyperbola H into this hyperbola.
 
@@ -8399,7 +8711,7 @@ class Geom_Hyperbola(Geom_Conic):
         """
         return _Geom.Geom_Hyperbola_SetHypr(self, *args)
 
-    def SetMajorRadius(self, *args) -> "void" :
+    def SetMajorRadius(self, *args):
         """
         * Assigns a value to the major radius of this hyperbola. Exceptions Standard_ConstructionError if: - MajorRadius is less than 0.0, or - MinorRadius is less than 0.0.Raised if MajorRadius < 0.0
 
@@ -8410,7 +8722,7 @@ class Geom_Hyperbola(Geom_Conic):
         """
         return _Geom.Geom_Hyperbola_SetMajorRadius(self, *args)
 
-    def SetMinorRadius(self, *args) -> "void" :
+    def SetMinorRadius(self, *args):
         """
         * Assigns a value to the minor radius of this hyperbola. Exceptions Standard_ConstructionError if: - MajorRadius is less than 0.0, or - MinorRadius is less than 0.0.Raised if MajorRadius < 0.0
 
@@ -8421,137 +8733,137 @@ class Geom_Hyperbola(Geom_Conic):
         """
         return _Geom.Geom_Hyperbola_SetMinorRadius(self, *args)
 
-    def Hypr(self, *args) -> "gp_Hypr" :
+    def Hypr(self):
         """
         * returns the non transient parabola from gp with the same geometric properties as <self>.
 
         :rtype: gp_Hypr
 
         """
-        return _Geom.Geom_Hyperbola_Hypr(self, *args)
+        return _Geom.Geom_Hyperbola_Hypr(self)
 
-    def Asymptote1(self, *args) -> "gp_Ax1" :
+    def Asymptote1(self):
         """
         * In the local coordinate system of the hyperbola the equation of the hyperbola is (X*X)/(A*A) - (Y*Y)/(B*B) = 1.0 and the equation of the first asymptote is Y = (B/A)*X. Raises ConstructionError if MajorRadius = 0.0
 
         :rtype: gp_Ax1
 
         """
-        return _Geom.Geom_Hyperbola_Asymptote1(self, *args)
+        return _Geom.Geom_Hyperbola_Asymptote1(self)
 
-    def Asymptote2(self, *args) -> "gp_Ax1" :
+    def Asymptote2(self):
         """
         * In the local coordinate system of the hyperbola the equation of the hyperbola is (X*X)/(A*A) - (Y*Y)/(B*B) = 1.0 and the equation of the first asymptote is Y = -(B/A)*X. Raises ConstructionError if MajorRadius = 0.0
 
         :rtype: gp_Ax1
 
         """
-        return _Geom.Geom_Hyperbola_Asymptote2(self, *args)
+        return _Geom.Geom_Hyperbola_Asymptote2(self)
 
-    def ConjugateBranch1(self, *args) -> "gp_Hypr" :
+    def ConjugateBranch1(self):
         """
         * This branch of hyperbola is on the positive side of the YAxis of <self>.
 
         :rtype: gp_Hypr
 
         """
-        return _Geom.Geom_Hyperbola_ConjugateBranch1(self, *args)
+        return _Geom.Geom_Hyperbola_ConjugateBranch1(self)
 
-    def ConjugateBranch2(self, *args) -> "gp_Hypr" :
+    def ConjugateBranch2(self):
         """
         * This branch of hyperbola is on the negative side of the YAxis of <self>. Note: The diagram given under the class purpose indicates where these two branches of hyperbola are positioned in relation to this branch of hyperbola.
 
         :rtype: gp_Hypr
 
         """
-        return _Geom.Geom_Hyperbola_ConjugateBranch2(self, *args)
+        return _Geom.Geom_Hyperbola_ConjugateBranch2(self)
 
-    def Directrix1(self, *args) -> "gp_Ax1" :
+    def Directrix1(self):
         """
         * This directrix is the line normal to the XAxis of the hyperbola in the local plane (Z = 0) at a distance d = MajorRadius / e from the center of the hyperbola, where e is the eccentricity of the hyperbola. This line is parallel to the YAxis. The intersection point between directrix1 and the XAxis is the location point of the directrix1. This point is on the positive side of the XAxis.
 
         :rtype: gp_Ax1
 
         """
-        return _Geom.Geom_Hyperbola_Directrix1(self, *args)
+        return _Geom.Geom_Hyperbola_Directrix1(self)
 
-    def Directrix2(self, *args) -> "gp_Ax1" :
+    def Directrix2(self):
         """
         * This line is obtained by the symmetrical transformation of 'directrix1' with respect to the YAxis of the hyperbola.
 
         :rtype: gp_Ax1
 
         """
-        return _Geom.Geom_Hyperbola_Directrix2(self, *args)
+        return _Geom.Geom_Hyperbola_Directrix2(self)
 
-    def Focal(self, *args) -> "Standard_Real" :
+    def Focal(self):
         """
         * Computes the focal distance. It is the distance between the two focus of the hyperbola.
 
         :rtype: float
 
         """
-        return _Geom.Geom_Hyperbola_Focal(self, *args)
+        return _Geom.Geom_Hyperbola_Focal(self)
 
-    def Focus1(self, *args) -> "gp_Pnt" :
+    def Focus1(self):
         """
         * Returns the first focus of the hyperbola. This focus is on the positive side of the XAxis of the hyperbola.
 
         :rtype: gp_Pnt
 
         """
-        return _Geom.Geom_Hyperbola_Focus1(self, *args)
+        return _Geom.Geom_Hyperbola_Focus1(self)
 
-    def Focus2(self, *args) -> "gp_Pnt" :
+    def Focus2(self):
         """
         * Returns the second focus of the hyperbola. This focus is on the negative side of the XAxis of the hyperbola.
 
         :rtype: gp_Pnt
 
         """
-        return _Geom.Geom_Hyperbola_Focus2(self, *args)
+        return _Geom.Geom_Hyperbola_Focus2(self)
 
-    def MajorRadius(self, *args) -> "Standard_Real" :
+    def MajorRadius(self):
         """
         * Returns the major or minor radius of this hyperbola. The major radius is also the distance between the center of the hyperbola and the apex of the main branch (located on the 'X Axis' of the hyperbola).
 
         :rtype: float
 
         """
-        return _Geom.Geom_Hyperbola_MajorRadius(self, *args)
+        return _Geom.Geom_Hyperbola_MajorRadius(self)
 
-    def MinorRadius(self, *args) -> "Standard_Real" :
+    def MinorRadius(self):
         """
         * Returns the major or minor radius of this hyperbola. The minor radius is also the distance between the center of the hyperbola and the apex of a conjugate branch (located on the 'Y Axis' of the hyperbola).
 
         :rtype: float
 
         """
-        return _Geom.Geom_Hyperbola_MinorRadius(self, *args)
+        return _Geom.Geom_Hyperbola_MinorRadius(self)
 
-    def OtherBranch(self, *args) -> "gp_Hypr" :
+    def OtherBranch(self):
         """
         * Computes the 'other' branch of this hyperbola. This is the symmetrical branch with respect to the center of this hyperbola. Note: The diagram given under the class purpose indicates where the 'other' branch is positioned in relation to this branch of the hyperbola.
 
         :rtype: gp_Hypr
 
         """
-        return _Geom.Geom_Hyperbola_OtherBranch(self, *args)
+        return _Geom.Geom_Hyperbola_OtherBranch(self)
 
-    def Parameter(self, *args) -> "Standard_Real" :
+    def Parameter(self):
         """
         * Returns p = (e * e - 1) * MajorRadius where e is the eccentricity of the hyperbola. raised if MajorRadius = 0.0
 
         :rtype: float
 
         """
-        return _Geom.Geom_Hyperbola_Parameter(self, *args)
+        return _Geom.Geom_Hyperbola_Parameter(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Geom_Hyperbola self)"""
         return _Geom.Geom_Hyperbola__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Geom_Hyperbola" :
+    def GetHandle(self):
         """GetHandle(Geom_Hyperbola self) -> Handle_Geom_Hyperbola"""
         return _Geom.Geom_Hyperbola_GetHandle(self)
 
@@ -8606,7 +8918,7 @@ Handle_Geom_Hyperbola._kill_pointed = new_instancemethod(_Geom.Handle_Geom_Hyper
 Handle_Geom_Hyperbola_swigregister = _Geom.Handle_Geom_Hyperbola_swigregister
 Handle_Geom_Hyperbola_swigregister(Handle_Geom_Hyperbola)
 
-def Handle_Geom_Hyperbola_DownCast(*args) -> "Handle_Geom_Hyperbola const" :
+def Handle_Geom_Hyperbola_DownCast(*args):
   return _Geom.Handle_Geom_Hyperbola_DownCast(*args)
 Handle_Geom_Hyperbola_DownCast = _Geom.Handle_Geom_Hyperbola_DownCast
 
@@ -8639,7 +8951,7 @@ class Geom_Parabola(Geom_Conic):
 
         """
         _Geom.Geom_Parabola_swiginit(self,_Geom.new_Geom_Parabola(*args))
-    def SetFocal(self, *args) -> "void" :
+    def SetFocal(self, *args):
         """
         * Assigns the value Focal to the focal distance of this parabola. Exceptions Standard_ConstructionError if Focal is negative.
 
@@ -8650,7 +8962,7 @@ class Geom_Parabola(Geom_Conic):
         """
         return _Geom.Geom_Parabola_SetFocal(self, *args)
 
-    def SetParab(self, *args) -> "void" :
+    def SetParab(self, *args):
         """
         * Converts the gp_Parab parabola Prb into this parabola.
 
@@ -8661,56 +8973,56 @@ class Geom_Parabola(Geom_Conic):
         """
         return _Geom.Geom_Parabola_SetParab(self, *args)
 
-    def Parab(self, *args) -> "gp_Parab" :
+    def Parab(self):
         """
         * Returns the non transient parabola from gp with the same geometric properties as <self>.
 
         :rtype: gp_Parab
 
         """
-        return _Geom.Geom_Parabola_Parab(self, *args)
+        return _Geom.Geom_Parabola_Parab(self)
 
-    def Directrix(self, *args) -> "gp_Ax1" :
+    def Directrix(self):
         """
         * Computes the directrix of this parabola. This is a line normal to the axis of symmetry, in the plane of this parabola, located on the negative side of its axis of symmetry, at a distance from the apex equal to the focal length. The directrix is returned as an axis (gp_Ax1 object), where the origin is located on the 'X Axis' of this parabola.
 
         :rtype: gp_Ax1
 
         """
-        return _Geom.Geom_Parabola_Directrix(self, *args)
+        return _Geom.Geom_Parabola_Directrix(self)
 
-    def Focus(self, *args) -> "gp_Pnt" :
+    def Focus(self):
         """
         * Computes the focus of this parabola. The focus is on the positive side of the 'X Axis' of the local coordinate system of the parabola.
 
         :rtype: gp_Pnt
 
         """
-        return _Geom.Geom_Parabola_Focus(self, *args)
+        return _Geom.Geom_Parabola_Focus(self)
 
-    def Focal(self, *args) -> "Standard_Real" :
+    def Focal(self):
         """
         * Computes the focal distance of this parabola The focal distance is the distance between the apex and the focus of the parabola.
 
         :rtype: float
 
         """
-        return _Geom.Geom_Parabola_Focal(self, *args)
+        return _Geom.Geom_Parabola_Focal(self)
 
-    def Parameter(self, *args) -> "Standard_Real" :
+    def Parameter(self):
         """
         * Computes the parameter of this parabola which is the distance between its focus and its directrix. This distance is twice the focal length. If P is the parameter of the parabola, the equation of the parabola in its local coordinate system is: Y**2 = 2.*P*X.
 
         :rtype: float
 
         """
-        return _Geom.Geom_Parabola_Parameter(self, *args)
+        return _Geom.Geom_Parabola_Parameter(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Geom_Parabola self)"""
         return _Geom.Geom_Parabola__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Geom_Parabola" :
+    def GetHandle(self):
         """GetHandle(Geom_Parabola self) -> Handle_Geom_Parabola"""
         return _Geom.Geom_Parabola_GetHandle(self)
 
@@ -8755,7 +9067,7 @@ Handle_Geom_Parabola._kill_pointed = new_instancemethod(_Geom.Handle_Geom_Parabo
 Handle_Geom_Parabola_swigregister = _Geom.Handle_Geom_Parabola_swigregister
 Handle_Geom_Parabola_swigregister(Handle_Geom_Parabola)
 
-def Handle_Geom_Parabola_DownCast(*args) -> "Handle_Geom_Parabola const" :
+def Handle_Geom_Parabola_DownCast(*args):
   return _Geom.Handle_Geom_Parabola_DownCast(*args)
 Handle_Geom_Parabola_DownCast = _Geom.Handle_Geom_Parabola_DownCast
 
@@ -8798,7 +9110,7 @@ class Geom_Plane(Geom_ElementarySurface):
 
         """
         _Geom.Geom_Plane_swiginit(self,_Geom.new_Geom_Plane(*args))
-    def SetPln(self, *args) -> "void" :
+    def SetPln(self, *args):
         """
         * Set <self> so that <self> has the same geometric properties as Pl.
 
@@ -8809,16 +9121,16 @@ class Geom_Plane(Geom_ElementarySurface):
         """
         return _Geom.Geom_Plane_SetPln(self, *args)
 
-    def Pln(self, *args) -> "gp_Pln" :
+    def Pln(self):
         """
         * Converts this plane into a gp_Pln plane.
 
         :rtype: gp_Pln
 
         """
-        return _Geom.Geom_Plane_Pln(self, *args)
+        return _Geom.Geom_Plane_Pln(self)
 
-    def Coefficients(self, *args) -> "void" :
+    def Coefficients(self):
         """
         * Computes the normalized coefficients of the plane's cartesian equation : Ax + By + Cz + D = 0.0
 
@@ -8833,13 +9145,13 @@ class Geom_Plane(Geom_ElementarySurface):
         :rtype: None
 
         """
-        return _Geom.Geom_Plane_Coefficients(self, *args)
+        return _Geom.Geom_Plane_Coefficients(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Geom_Plane self)"""
         return _Geom.Geom_Plane__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Geom_Plane" :
+    def GetHandle(self):
         """GetHandle(Geom_Plane self) -> Handle_Geom_Plane"""
         return _Geom.Geom_Plane_GetHandle(self)
 
@@ -8880,7 +9192,7 @@ Handle_Geom_Plane._kill_pointed = new_instancemethod(_Geom.Handle_Geom_Plane__ki
 Handle_Geom_Plane_swigregister = _Geom.Handle_Geom_Plane_swigregister
 Handle_Geom_Plane_swigregister(Handle_Geom_Plane)
 
-def Handle_Geom_Plane_DownCast(*args) -> "Handle_Geom_Plane const" :
+def Handle_Geom_Plane_DownCast(*args):
   return _Geom.Handle_Geom_Plane_DownCast(*args)
 Handle_Geom_Plane_DownCast = _Geom.Handle_Geom_Plane_DownCast
 
@@ -8889,6 +9201,42 @@ class Geom_RectangularTrimmedSurface(Geom_BoundedSurface):
     __repr__ = _swig_repr
     def __init__(self, *args): 
         """
+        * The U parametric direction of the surface is oriented from U1 to U2. The V parametric direction of the surface is oriented from V1 to V2. These two directions define the orientation of the surface (normal). If the surface is not periodic USense and VSense are not used for the construction. If the surface S is periodic in one direction USense and VSense give the available part of the surface. By default in this case the surface has the same orientation as the basis surface S. The returned surface is not closed and not periodic. ConstructionError Raised if S is not periodic in the UDirection and U1 or U2 are out of the bounds of S. S is not periodic in the VDirection and V1 or V2 are out of the bounds of S. U1 = U2 or V1 = V2
+
+        :param S:
+        :type S: Handle_Geom_Surface &
+        :param U1:
+        :type U1: float
+        :param U2:
+        :type U2: float
+        :param V1:
+        :type V1: float
+        :param V2:
+        :type V2: float
+        :param USense: default value is Standard_True
+        :type USense: bool
+        :param VSense: default value is Standard_True
+        :type VSense: bool
+        :rtype: None
+
+        * The U parametric direction of the surface is oriented from U1 to U2. The V parametric direction of the surface is oriented from V1 to V2. These two directions define the orientation of the surface (normal). If the surface is not periodic USense and VSense are not used for the construction. If the surface S is periodic in one direction USense and VSense give the available part of the surface. By default in this case the surface has the same orientation as the basis surface S. The returned surface is not closed and not periodic. ConstructionError Raised if S is not periodic in the UDirection and U1 or U2 are out of the bounds of S. S is not periodic in the VDirection and V1 or V2 are out of the bounds of S. U1 = U2 or V1 = V2
+
+        :param S:
+        :type S: Handle_Geom_Surface &
+        :param U1:
+        :type U1: float
+        :param U2:
+        :type U2: float
+        :param V1:
+        :type V1: float
+        :param V2:
+        :type V2: float
+        :param USense: default value is Standard_True
+        :type USense: bool
+        :param VSense: default value is Standard_True
+        :type VSense: bool
+        :rtype: None
+
         * The U parametric direction of the surface is oriented from U1 to U2. The V parametric direction of the surface is oriented from V1 to V2. These two directions define the orientation of the surface (normal). If the surface is not periodic USense and VSense are not used for the construction. If the surface S is periodic in one direction USense and VSense give the available part of the surface. By default in this case the surface has the same orientation as the basis surface S. The returned surface is not closed and not periodic. ConstructionError Raised if S is not periodic in the UDirection and U1 or U2 are out of the bounds of S. S is not periodic in the VDirection and V1 or V2 are out of the bounds of S. U1 = U2 or V1 = V2
 
         :param S:
@@ -8921,10 +9269,56 @@ class Geom_RectangularTrimmedSurface(Geom_BoundedSurface):
         :type Sense: bool
         :rtype: None
 
+        * The basis surface S is only trim in one parametric direction. If UTrim = True the surface is trimmed in the U parametric direction else the surface is trimmed in the V parametric direction. In the considered parametric direction the resulting surface is oriented from Param1 to Param2. If S is periodic Sense gives the available part of the surface. By default the trimmed surface has the same orientation as the basis surface S in the considered parametric direction (Sense = True). If the basis surface S is closed or periodic in the parametric direction opposite to the trimming direction the trimmed surface has the same characteristics as the surface S in this direction. Warnings : In this package the entities are not shared. The RectangularTrimmedSurface is built with a copy of the surface S. So when S is modified the RectangularTrimmedSurface is not modified Raised if S is not periodic in the considered parametric direction and Param1 or Param2 are out of the bounds of S. Param1 = Param2
+
+        :param S:
+        :type S: Handle_Geom_Surface &
+        :param Param1:
+        :type Param1: float
+        :param Param2:
+        :type Param2: float
+        :param UTrim:
+        :type UTrim: bool
+        :param Sense: default value is Standard_True
+        :type Sense: bool
+        :rtype: None
+
         """
         _Geom.Geom_RectangularTrimmedSurface_swiginit(self,_Geom.new_Geom_RectangularTrimmedSurface(*args))
-    def SetTrim(self, *args) -> "void" :
+    def SetTrim(self, *args):
         """
+        * Modifies this patch by changing the trim values applied to the original surface The u parametric direction of this patch is oriented from U1 to U2. The v parametric direction of this patch is oriented from V1 to V2. USense and VSense are used for the construction only if the surface is periodic in the corresponding parametric direction, and define the available part of the surface; by default in this case, this patch has the same orientation as the basis surface. Raised if The BasisSurface is not periodic in the UDirection and U1 or U2 are out of the bounds of the BasisSurface. The BasisSurface is not periodic in the VDirection and V1 or V2 are out of the bounds of the BasisSurface. U1 = U2 or V1 = V2
+
+        :param U1:
+        :type U1: float
+        :param U2:
+        :type U2: float
+        :param V1:
+        :type V1: float
+        :param V2:
+        :type V2: float
+        :param USense: default value is Standard_True
+        :type USense: bool
+        :param VSense: default value is Standard_True
+        :type VSense: bool
+        :rtype: None
+
+        * Modifies this patch by changing the trim values applied to the original surface The u parametric direction of this patch is oriented from U1 to U2. The v parametric direction of this patch is oriented from V1 to V2. USense and VSense are used for the construction only if the surface is periodic in the corresponding parametric direction, and define the available part of the surface; by default in this case, this patch has the same orientation as the basis surface. Raised if The BasisSurface is not periodic in the UDirection and U1 or U2 are out of the bounds of the BasisSurface. The BasisSurface is not periodic in the VDirection and V1 or V2 are out of the bounds of the BasisSurface. U1 = U2 or V1 = V2
+
+        :param U1:
+        :type U1: float
+        :param U2:
+        :type U2: float
+        :param V1:
+        :type V1: float
+        :param V2:
+        :type V2: float
+        :param USense: default value is Standard_True
+        :type USense: bool
+        :param VSense: default value is Standard_True
+        :type VSense: bool
+        :rtype: None
+
         * Modifies this patch by changing the trim values applied to the original surface The u parametric direction of this patch is oriented from U1 to U2. The v parametric direction of this patch is oriented from V1 to V2. USense and VSense are used for the construction only if the surface is periodic in the corresponding parametric direction, and define the available part of the surface; by default in this case, this patch has the same orientation as the basis surface. Raised if The BasisSurface is not periodic in the UDirection and U1 or U2 are out of the bounds of the BasisSurface. The BasisSurface is not periodic in the VDirection and V1 or V2 are out of the bounds of the BasisSurface. U1 = U2 or V1 = V2
 
         :param U1:
@@ -8953,23 +9347,35 @@ class Geom_RectangularTrimmedSurface(Geom_BoundedSurface):
         :type Sense: bool
         :rtype: None
 
+        * Modifies this patch by changing the trim values applied to the original surface The basis surface is trimmed only in one parametric direction: if UTrim is true, the surface is trimmed in the u parametric direction; if it is false, it is trimmed in the v parametric direction. In the 'trimmed' direction, this patch is oriented from Param1 to Param2. If the basis surface is periodic in the 'trimmed' direction, Sense defines its available part. By default in this case, this patch has the same orientation as the basis surface in this parametric direction. If the basis surface is closed or periodic in the other parametric direction (i.e. not the 'trimmed' direction), this patch has the same characteristics as the basis surface in that parametric direction. Raised if The BasisSurface is not periodic in the considered direction and Param1 or Param2 are out of the bounds of the BasisSurface. Param1 = Param2
+
+        :param Param1:
+        :type Param1: float
+        :param Param2:
+        :type Param2: float
+        :param UTrim:
+        :type UTrim: bool
+        :param Sense: default value is Standard_True
+        :type Sense: bool
+        :rtype: None
+
         """
         return _Geom.Geom_RectangularTrimmedSurface_SetTrim(self, *args)
 
-    def BasisSurface(self, *args) -> "Handle_Geom_Surface" :
+    def BasisSurface(self):
         """
         * Returns the Basis surface of <self>.
 
         :rtype: Handle_Geom_Surface
 
         """
-        return _Geom.Geom_RectangularTrimmedSurface_BasisSurface(self, *args)
+        return _Geom.Geom_RectangularTrimmedSurface_BasisSurface(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Geom_RectangularTrimmedSurface self)"""
         return _Geom.Geom_RectangularTrimmedSurface__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Geom_RectangularTrimmedSurface" :
+    def GetHandle(self):
         """GetHandle(Geom_RectangularTrimmedSurface self) -> Handle_Geom_RectangularTrimmedSurface"""
         return _Geom.Geom_RectangularTrimmedSurface_GetHandle(self)
 
@@ -9009,7 +9415,7 @@ Handle_Geom_RectangularTrimmedSurface._kill_pointed = new_instancemethod(_Geom.H
 Handle_Geom_RectangularTrimmedSurface_swigregister = _Geom.Handle_Geom_RectangularTrimmedSurface_swigregister
 Handle_Geom_RectangularTrimmedSurface_swigregister(Handle_Geom_RectangularTrimmedSurface)
 
-def Handle_Geom_RectangularTrimmedSurface_DownCast(*args) -> "Handle_Geom_RectangularTrimmedSurface const" :
+def Handle_Geom_RectangularTrimmedSurface_DownCast(*args):
   return _Geom.Handle_Geom_RectangularTrimmedSurface_DownCast(*args)
 Handle_Geom_RectangularTrimmedSurface_DownCast = _Geom.Handle_Geom_RectangularTrimmedSurface_DownCast
 
@@ -9034,7 +9440,7 @@ class Geom_SphericalSurface(Geom_ElementarySurface):
 
         """
         _Geom.Geom_SphericalSurface_swiginit(self,_Geom.new_Geom_SphericalSurface(*args))
-    def SetRadius(self, *args) -> "void" :
+    def SetRadius(self, *args):
         """
         * Assigns the value R to the radius of this sphere. Exceptions Standard_ConstructionError if R is less than 0.0.
 
@@ -9045,7 +9451,7 @@ class Geom_SphericalSurface(Geom_ElementarySurface):
         """
         return _Geom.Geom_SphericalSurface_SetRadius(self, *args)
 
-    def SetSphere(self, *args) -> "void" :
+    def SetSphere(self, *args):
         """
         * Converts the gp_Sphere S into this sphere.
 
@@ -9056,25 +9462,25 @@ class Geom_SphericalSurface(Geom_ElementarySurface):
         """
         return _Geom.Geom_SphericalSurface_SetSphere(self, *args)
 
-    def Sphere(self, *args) -> "gp_Sphere" :
+    def Sphere(self):
         """
         * Returns a non persistent sphere with the same geometric properties as <self>.
 
         :rtype: gp_Sphere
 
         """
-        return _Geom.Geom_SphericalSurface_Sphere(self, *args)
+        return _Geom.Geom_SphericalSurface_Sphere(self)
 
-    def Area(self, *args) -> "Standard_Real" :
+    def Area(self):
         """
         * Computes the aera of the spherical surface.
 
         :rtype: float
 
         """
-        return _Geom.Geom_SphericalSurface_Area(self, *args)
+        return _Geom.Geom_SphericalSurface_Area(self)
 
-    def Coefficients(self, *args) -> "void" :
+    def Coefficients(self):
         """
         * Returns the coefficients of the implicit equation of the quadric in the absolute cartesian coordinates system : These coefficients are normalized. A1.X**2 + A2.Y**2 + A3.Z**2 + 2.(B1.X.Y + B2.X.Z + B3.Y.Z) + 2.(C1.X + C2.Y + C3.Z) + D = 0.0
 
@@ -9101,31 +9507,31 @@ class Geom_SphericalSurface(Geom_ElementarySurface):
         :rtype: None
 
         """
-        return _Geom.Geom_SphericalSurface_Coefficients(self, *args)
+        return _Geom.Geom_SphericalSurface_Coefficients(self)
 
-    def Radius(self, *args) -> "Standard_Real" :
+    def Radius(self):
         """
         * Computes the coefficients of the implicit equation of this quadric in the absolute Cartesian coordinate system: A1.X**2 + A2.Y**2 + A3.Z**2 + 2.(B1.X.Y + B2.X.Z + B3.Y.Z) + 2.(C1.X + C2.Y + C3.Z) + D = 0.0 An implicit normalization is applied (i.e. A1 = A2 = 1. in the local coordinate system of this sphere).
 
         :rtype: float
 
         """
-        return _Geom.Geom_SphericalSurface_Radius(self, *args)
+        return _Geom.Geom_SphericalSurface_Radius(self)
 
-    def Volume(self, *args) -> "Standard_Real" :
+    def Volume(self):
         """
         * Computes the volume of the spherical surface.
 
         :rtype: float
 
         """
-        return _Geom.Geom_SphericalSurface_Volume(self, *args)
+        return _Geom.Geom_SphericalSurface_Volume(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Geom_SphericalSurface self)"""
         return _Geom.Geom_SphericalSurface__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Geom_SphericalSurface" :
+    def GetHandle(self):
         """GetHandle(Geom_SphericalSurface self) -> Handle_Geom_SphericalSurface"""
         return _Geom.Geom_SphericalSurface_GetHandle(self)
 
@@ -9170,7 +9576,7 @@ Handle_Geom_SphericalSurface._kill_pointed = new_instancemethod(_Geom.Handle_Geo
 Handle_Geom_SphericalSurface_swigregister = _Geom.Handle_Geom_SphericalSurface_swigregister
 Handle_Geom_SphericalSurface_swigregister(Handle_Geom_SphericalSurface)
 
-def Handle_Geom_SphericalSurface_DownCast(*args) -> "Handle_Geom_SphericalSurface const" :
+def Handle_Geom_SphericalSurface_DownCast(*args):
   return _Geom.Handle_Geom_SphericalSurface_DownCast(*args)
 Handle_Geom_SphericalSurface_DownCast = _Geom.Handle_Geom_SphericalSurface_DownCast
 
@@ -9189,7 +9595,7 @@ class Geom_SurfaceOfLinearExtrusion(Geom_SweptSurface):
 
         """
         _Geom.Geom_SurfaceOfLinearExtrusion_swiginit(self,_Geom.new_Geom_SurfaceOfLinearExtrusion(*args))
-    def SetDirection(self, *args) -> "void" :
+    def SetDirection(self, *args):
         """
         * Assigns V as the 'direction of extrusion' for this surface of linear extrusion.
 
@@ -9200,7 +9606,7 @@ class Geom_SurfaceOfLinearExtrusion(Geom_SweptSurface):
         """
         return _Geom.Geom_SurfaceOfLinearExtrusion_SetDirection(self, *args)
 
-    def SetBasisCurve(self, *args) -> "void" :
+    def SetBasisCurve(self, *args):
         """
         * Modifies this surface of linear extrusion by redefining its 'basis curve' (the 'extruded curve').
 
@@ -9211,7 +9617,7 @@ class Geom_SurfaceOfLinearExtrusion(Geom_SweptSurface):
         """
         return _Geom.Geom_SurfaceOfLinearExtrusion_SetBasisCurve(self, *args)
 
-    def LocalD0(self, *args) -> "void" :
+    def LocalD0(self, *args):
         """
         * The following functions evaluates the local derivatives on surface. Useful to manage discontinuities on the surface. if Side = 1 -> P = S( U+,V ) if Side = -1 -> P = S( U-,V ) else P is betveen discontinuities can be evaluated using methods of global evaluations P = S( U ,V )
 
@@ -9220,7 +9626,7 @@ class Geom_SurfaceOfLinearExtrusion(Geom_SweptSurface):
         :param V:
         :type V: float
         :param USide:
-        :type USide: int
+        :type USide: Standard_Integer
         :param P:
         :type P: gp_Pnt
         :rtype: None
@@ -9228,14 +9634,14 @@ class Geom_SurfaceOfLinearExtrusion(Geom_SweptSurface):
         """
         return _Geom.Geom_SurfaceOfLinearExtrusion_LocalD0(self, *args)
 
-    def LocalD1(self, *args) -> "void" :
+    def LocalD1(self, *args):
         """
         :param U:
         :type U: float
         :param V:
         :type V: float
         :param USide:
-        :type USide: int
+        :type USide: Standard_Integer
         :param P:
         :type P: gp_Pnt
         :param D1U:
@@ -9247,14 +9653,14 @@ class Geom_SurfaceOfLinearExtrusion(Geom_SweptSurface):
         """
         return _Geom.Geom_SurfaceOfLinearExtrusion_LocalD1(self, *args)
 
-    def LocalD2(self, *args) -> "void" :
+    def LocalD2(self, *args):
         """
         :param U:
         :type U: float
         :param V:
         :type V: float
         :param USide:
-        :type USide: int
+        :type USide: Standard_Integer
         :param P:
         :type P: gp_Pnt
         :param D1U:
@@ -9272,14 +9678,14 @@ class Geom_SurfaceOfLinearExtrusion(Geom_SweptSurface):
         """
         return _Geom.Geom_SurfaceOfLinearExtrusion_LocalD2(self, *args)
 
-    def LocalD3(self, *args) -> "void" :
+    def LocalD3(self, *args):
         """
         :param U:
         :type U: float
         :param V:
         :type V: float
         :param USide:
-        :type USide: int
+        :type USide: Standard_Integer
         :param P:
         :type P: gp_Pnt
         :param D1U:
@@ -9305,28 +9711,28 @@ class Geom_SurfaceOfLinearExtrusion(Geom_SweptSurface):
         """
         return _Geom.Geom_SurfaceOfLinearExtrusion_LocalD3(self, *args)
 
-    def LocalDN(self, *args) -> "gp_Vec" :
+    def LocalDN(self, *args):
         """
         :param U:
         :type U: float
         :param V:
         :type V: float
         :param USide:
-        :type USide: int
+        :type USide: Standard_Integer
         :param Nu:
-        :type Nu: int
+        :type Nu: Standard_Integer
         :param Nv:
-        :type Nv: int
+        :type Nv: Standard_Integer
         :rtype: gp_Vec
 
         """
         return _Geom.Geom_SurfaceOfLinearExtrusion_LocalDN(self, *args)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Geom_SurfaceOfLinearExtrusion self)"""
         return _Geom.Geom_SurfaceOfLinearExtrusion__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Geom_SurfaceOfLinearExtrusion" :
+    def GetHandle(self):
         """GetHandle(Geom_SurfaceOfLinearExtrusion self) -> Handle_Geom_SurfaceOfLinearExtrusion"""
         return _Geom.Geom_SurfaceOfLinearExtrusion_GetHandle(self)
 
@@ -9371,7 +9777,7 @@ Handle_Geom_SurfaceOfLinearExtrusion._kill_pointed = new_instancemethod(_Geom.Ha
 Handle_Geom_SurfaceOfLinearExtrusion_swigregister = _Geom.Handle_Geom_SurfaceOfLinearExtrusion_swigregister
 Handle_Geom_SurfaceOfLinearExtrusion_swigregister(Handle_Geom_SurfaceOfLinearExtrusion)
 
-def Handle_Geom_SurfaceOfLinearExtrusion_DownCast(*args) -> "Handle_Geom_SurfaceOfLinearExtrusion const" :
+def Handle_Geom_SurfaceOfLinearExtrusion_DownCast(*args):
   return _Geom.Handle_Geom_SurfaceOfLinearExtrusion_DownCast(*args)
 Handle_Geom_SurfaceOfLinearExtrusion_DownCast = _Geom.Handle_Geom_SurfaceOfLinearExtrusion_DownCast
 
@@ -9390,7 +9796,7 @@ class Geom_SurfaceOfRevolution(Geom_SweptSurface):
 
         """
         _Geom.Geom_SurfaceOfRevolution_swiginit(self,_Geom.new_Geom_SurfaceOfRevolution(*args))
-    def SetAxis(self, *args) -> "void" :
+    def SetAxis(self, *args):
         """
         * Changes the axis of revolution. Warnings : It is not checked that the axis is in the plane of the revolved curve.
 
@@ -9401,7 +9807,7 @@ class Geom_SurfaceOfRevolution(Geom_SweptSurface):
         """
         return _Geom.Geom_SurfaceOfRevolution_SetAxis(self, *args)
 
-    def SetDirection(self, *args) -> "void" :
+    def SetDirection(self, *args):
         """
         * Changes the direction of the revolution axis. Warnings : It is not checked that the axis is in the plane of the revolved curve.
 
@@ -9412,7 +9818,7 @@ class Geom_SurfaceOfRevolution(Geom_SweptSurface):
         """
         return _Geom.Geom_SurfaceOfRevolution_SetDirection(self, *args)
 
-    def SetBasisCurve(self, *args) -> "void" :
+    def SetBasisCurve(self, *args):
         """
         * Changes the revolved curve of the surface. Warnings : It is not checked that the curve C is planar and that the surface axis is in the plane of the curve. It is not checked that the revolved curve C doesn't self-intersects.
 
@@ -9423,7 +9829,7 @@ class Geom_SurfaceOfRevolution(Geom_SweptSurface):
         """
         return _Geom.Geom_SurfaceOfRevolution_SetBasisCurve(self, *args)
 
-    def SetLocation(self, *args) -> "void" :
+    def SetLocation(self, *args):
         """
         * Changes the location point of the revolution axis. Warnings : It is not checked that the axis is in the plane of the revolved curve.
 
@@ -9434,41 +9840,41 @@ class Geom_SurfaceOfRevolution(Geom_SweptSurface):
         """
         return _Geom.Geom_SurfaceOfRevolution_SetLocation(self, *args)
 
-    def Axis(self, *args) -> "gp_Ax1" :
+    def Axis(self):
         """
         * Returns the revolution axis of the surface.
 
         :rtype: gp_Ax1
 
         """
-        return _Geom.Geom_SurfaceOfRevolution_Axis(self, *args)
+        return _Geom.Geom_SurfaceOfRevolution_Axis(self)
 
-    def Location(self, *args) -> "gp_Pnt const" :
+    def Location(self):
         """
         * Returns the location point of the axis of revolution.
 
         :rtype: gp_Pnt
 
         """
-        return _Geom.Geom_SurfaceOfRevolution_Location(self, *args)
+        return _Geom.Geom_SurfaceOfRevolution_Location(self)
 
-    def ReferencePlane(self, *args) -> "gp_Ax2" :
+    def ReferencePlane(self):
         """
         * Computes the position of the reference plane of the surface defined by the basis curve and the symmetry axis. The location point is the location point of the revolution's axis, the XDirection of the plane is given by the revolution's axis and the orientation of the normal to the plane is given by the sense of revolution. Raised if the revolved curve is not planar or if the revolved curve and the symmetry axis are not in the same plane or if the maximum of distance between the axis and the revolved curve is lower or equal to Resolution from gp.
 
         :rtype: gp_Ax2
 
         """
-        return _Geom.Geom_SurfaceOfRevolution_ReferencePlane(self, *args)
+        return _Geom.Geom_SurfaceOfRevolution_ReferencePlane(self)
 
-    def LocalD0(self, *args) -> "void" :
+    def LocalD0(self, *args):
         """
         :param U:
         :type U: float
         :param V:
         :type V: float
         :param USide:
-        :type USide: int
+        :type USide: Standard_Integer
         :param P:
         :type P: gp_Pnt
         :rtype: None
@@ -9476,14 +9882,14 @@ class Geom_SurfaceOfRevolution(Geom_SweptSurface):
         """
         return _Geom.Geom_SurfaceOfRevolution_LocalD0(self, *args)
 
-    def LocalD1(self, *args) -> "void" :
+    def LocalD1(self, *args):
         """
         :param U:
         :type U: float
         :param V:
         :type V: float
         :param USide:
-        :type USide: int
+        :type USide: Standard_Integer
         :param P:
         :type P: gp_Pnt
         :param D1U:
@@ -9495,14 +9901,14 @@ class Geom_SurfaceOfRevolution(Geom_SweptSurface):
         """
         return _Geom.Geom_SurfaceOfRevolution_LocalD1(self, *args)
 
-    def LocalD2(self, *args) -> "void" :
+    def LocalD2(self, *args):
         """
         :param U:
         :type U: float
         :param V:
         :type V: float
         :param USide:
-        :type USide: int
+        :type USide: Standard_Integer
         :param P:
         :type P: gp_Pnt
         :param D1U:
@@ -9520,14 +9926,14 @@ class Geom_SurfaceOfRevolution(Geom_SweptSurface):
         """
         return _Geom.Geom_SurfaceOfRevolution_LocalD2(self, *args)
 
-    def LocalD3(self, *args) -> "void" :
+    def LocalD3(self, *args):
         """
         :param U:
         :type U: float
         :param V:
         :type V: float
         :param USide:
-        :type USide: int
+        :type USide: Standard_Integer
         :param P:
         :type P: gp_Pnt
         :param D1U:
@@ -9553,28 +9959,28 @@ class Geom_SurfaceOfRevolution(Geom_SweptSurface):
         """
         return _Geom.Geom_SurfaceOfRevolution_LocalD3(self, *args)
 
-    def LocalDN(self, *args) -> "gp_Vec" :
+    def LocalDN(self, *args):
         """
         :param U:
         :type U: float
         :param V:
         :type V: float
         :param USide:
-        :type USide: int
+        :type USide: Standard_Integer
         :param Nu:
-        :type Nu: int
+        :type Nu: Standard_Integer
         :param Nv:
-        :type Nv: int
+        :type Nv: Standard_Integer
         :rtype: gp_Vec
 
         """
         return _Geom.Geom_SurfaceOfRevolution_LocalDN(self, *args)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Geom_SurfaceOfRevolution self)"""
         return _Geom.Geom_SurfaceOfRevolution__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Geom_SurfaceOfRevolution" :
+    def GetHandle(self):
         """GetHandle(Geom_SurfaceOfRevolution self) -> Handle_Geom_SurfaceOfRevolution"""
         return _Geom.Geom_SurfaceOfRevolution_GetHandle(self)
 
@@ -9624,7 +10030,7 @@ Handle_Geom_SurfaceOfRevolution._kill_pointed = new_instancemethod(_Geom.Handle_
 Handle_Geom_SurfaceOfRevolution_swigregister = _Geom.Handle_Geom_SurfaceOfRevolution_swigregister
 Handle_Geom_SurfaceOfRevolution_swigregister(Handle_Geom_SurfaceOfRevolution)
 
-def Handle_Geom_SurfaceOfRevolution_DownCast(*args) -> "Handle_Geom_SurfaceOfRevolution const" :
+def Handle_Geom_SurfaceOfRevolution_DownCast(*args):
   return _Geom.Handle_Geom_SurfaceOfRevolution_DownCast(*args)
 Handle_Geom_SurfaceOfRevolution_DownCast = _Geom.Handle_Geom_SurfaceOfRevolution_DownCast
 
@@ -9651,7 +10057,7 @@ class Geom_ToroidalSurface(Geom_ElementarySurface):
 
         """
         _Geom.Geom_ToroidalSurface_swiginit(self,_Geom.new_Geom_ToroidalSurface(*args))
-    def SetMajorRadius(self, *args) -> "void" :
+    def SetMajorRadius(self, *args):
         """
         * Modifies this torus by changing its major radius. Exceptions Standard_ConstructionError if: - MajorRadius is negative, or - MajorRadius - r is less than or equal to gp::Resolution(), where r is the minor radius of this torus.
 
@@ -9662,7 +10068,7 @@ class Geom_ToroidalSurface(Geom_ElementarySurface):
         """
         return _Geom.Geom_ToroidalSurface_SetMajorRadius(self, *args)
 
-    def SetMinorRadius(self, *args) -> "void" :
+    def SetMinorRadius(self, *args):
         """
         * Modifies this torus by changing its minor radius. Exceptions Standard_ConstructionError if: - MinorRadius is negative, or - R - MinorRadius is less than or equal to gp::Resolution(), where R is the major radius of this torus.
 
@@ -9673,7 +10079,7 @@ class Geom_ToroidalSurface(Geom_ElementarySurface):
         """
         return _Geom.Geom_ToroidalSurface_SetMinorRadius(self, *args)
 
-    def SetTorus(self, *args) -> "void" :
+    def SetTorus(self, *args):
         """
         * Converts the gp_Torus torus T into this torus.
 
@@ -9684,25 +10090,25 @@ class Geom_ToroidalSurface(Geom_ElementarySurface):
         """
         return _Geom.Geom_ToroidalSurface_SetTorus(self, *args)
 
-    def Torus(self, *args) -> "gp_Torus" :
+    def Torus(self):
         """
         * Returns the non transient torus with the same geometric properties as <self>.
 
         :rtype: gp_Torus
 
         """
-        return _Geom.Geom_ToroidalSurface_Torus(self, *args)
+        return _Geom.Geom_ToroidalSurface_Torus(self)
 
-    def Area(self, *args) -> "Standard_Real" :
+    def Area(self):
         """
         * Computes the aera of the surface.
 
         :rtype: float
 
         """
-        return _Geom.Geom_ToroidalSurface_Area(self, *args)
+        return _Geom.Geom_ToroidalSurface_Area(self)
 
-    def Coefficients(self, *args) -> "void" :
+    def Coefficients(self, *args):
         """
         * Returns the coefficients of the implicit equation of the surface in the absolute cartesian coordinate system : Coef(1) * X**4 + Coef(2) * Y**4 + Coef(3) * Z**4 + Coef(4) * X**3 * Y + Coef(5) * X**3 * Z + Coef(6) * Y**3 * X + Coef(7) * Y**3 * Z + Coef(8) * Z**3 * X + Coef(9) * Z**3 * Y + Coef(10) * X**2 * Y**2 + Coef(11) * X**2 * Z**2 + Coef(12) * Y**2 * Z**2 + Coef(13) * X**3 + Coef(14) * Y**3 + Coef(15) * Z**3 + Coef(16) * X**2 * Y + Coef(17) * X**2 * Z + Coef(18) * Y**2 * X + Coef(19) * Y**2 * Z + Coef(20) * Z**2 * X + Coef(21) * Z**2 * Y + Coef(22) * X**2 + Coef(23) * Y**2 + Coef(24) * Z**2 + Coef(25) * X * Y + Coef(26) * X * Z + Coef(27) * Y * Z + Coef(28) * X + Coef(29) * Y + Coef(30) * Z + Coef(31) = 0.0 Raised if the length of Coef is lower than 31.
 
@@ -9713,38 +10119,38 @@ class Geom_ToroidalSurface(Geom_ElementarySurface):
         """
         return _Geom.Geom_ToroidalSurface_Coefficients(self, *args)
 
-    def MajorRadius(self, *args) -> "Standard_Real" :
+    def MajorRadius(self):
         """
         * Returns the major radius, or the minor radius, of this torus.
 
         :rtype: float
 
         """
-        return _Geom.Geom_ToroidalSurface_MajorRadius(self, *args)
+        return _Geom.Geom_ToroidalSurface_MajorRadius(self)
 
-    def MinorRadius(self, *args) -> "Standard_Real" :
+    def MinorRadius(self):
         """
         * Returns the major radius, or the minor radius, of this torus.
 
         :rtype: float
 
         """
-        return _Geom.Geom_ToroidalSurface_MinorRadius(self, *args)
+        return _Geom.Geom_ToroidalSurface_MinorRadius(self)
 
-    def Volume(self, *args) -> "Standard_Real" :
+    def Volume(self):
         """
         * Computes the volume.
 
         :rtype: float
 
         """
-        return _Geom.Geom_ToroidalSurface_Volume(self, *args)
+        return _Geom.Geom_ToroidalSurface_Volume(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Geom_ToroidalSurface self)"""
         return _Geom.Geom_ToroidalSurface__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Geom_ToroidalSurface" :
+    def GetHandle(self):
         """GetHandle(Geom_ToroidalSurface self) -> Handle_Geom_ToroidalSurface"""
         return _Geom.Geom_ToroidalSurface_GetHandle(self)
 
@@ -9791,7 +10197,7 @@ Handle_Geom_ToroidalSurface._kill_pointed = new_instancemethod(_Geom.Handle_Geom
 Handle_Geom_ToroidalSurface_swigregister = _Geom.Handle_Geom_ToroidalSurface_swigregister
 Handle_Geom_ToroidalSurface_swigregister(Handle_Geom_ToroidalSurface)
 
-def Handle_Geom_ToroidalSurface_DownCast(*args) -> "Handle_Geom_ToroidalSurface const" :
+def Handle_Geom_ToroidalSurface_DownCast(*args):
   return _Geom.Handle_Geom_ToroidalSurface_DownCast(*args)
 Handle_Geom_ToroidalSurface_DownCast = _Geom.Handle_Geom_ToroidalSurface_DownCast
 
@@ -9812,10 +10218,32 @@ class Geom_TrimmedCurve(Geom_BoundedCurve):
         :type Sense: bool
         :rtype: None
 
+        * Constructs a trimmed curve from the basis curve C which is limited between parameter values U1 and U2. Note: - U1 can be greater or less than U2; in both cases, the returned curve is oriented from U1 to U2. - If the basis curve C is periodic, there is an ambiguity because two parts are available. In this case, the trimmed curve has the same orientation as the basis curve if Sense is true (default value) or the opposite orientation if Sense is false. - If the curve is closed but not periodic, it is not possible to keep the part of the curve which includes the junction point (except if the junction point is at the beginning or at the end of the trimmed curve). If you tried to do this, you could alter the fundamental characteristics of the basis curve, which are used, for example, to compute the derivatives of the trimmed curve. The rules for a closed curve are therefore the same as those for an open curve. Warning: The trimmed curve is built from a copy of curve C. Therefore, when C is modified, the trimmed curve is not modified. - If the basis curve is periodic, the bounds of the trimmed curve may be different from U1 and U2 if the parametric origin of the basis curve is within the arc of the trimmed curve. In this case, the modified parameter will be equal to U1 or U2 plus or minus the period. Exceptions Standard_ConstructionError if: - C is not periodic and U1 or U2 is outside the bounds of C, or - U1 is equal to U2.
+
+        :param C:
+        :type C: Handle_Geom_Curve &
+        :param U1:
+        :type U1: float
+        :param U2:
+        :type U2: float
+        :param Sense: default value is Standard_True
+        :type Sense: bool
+        :rtype: None
+
         """
         _Geom.Geom_TrimmedCurve_swiginit(self,_Geom.new_Geom_TrimmedCurve(*args))
-    def SetTrim(self, *args) -> "void" :
+    def SetTrim(self, *args):
         """
+        * Changes this trimmed curve, by redefining the parameter values U1 and U2 which limit its basis curve. Note: If the basis curve is periodic, the trimmed curve has the same orientation as the basis curve if Sense is true (default value) or the opposite orientation if Sense is false. Warning If the basis curve is periodic, the bounds of the trimmed curve may be different from U1 and U2 if the parametric origin of the basis curve is within the arc of the trimmed curve. In this case, the modified parameter will be equal to U1 or U2 plus or minus the period. Exceptions Standard_ConstructionError if: - the basis curve is not periodic, and either U1 or U2 are outside the bounds of the basis curve, or - U1 is equal to U2.
+
+        :param U1:
+        :type U1: float
+        :param U2:
+        :type U2: float
+        :param Sense: default value is Standard_True
+        :type Sense: bool
+        :rtype: None
+
         * Changes this trimmed curve, by redefining the parameter values U1 and U2 which limit its basis curve. Note: If the basis curve is periodic, the trimmed curve has the same orientation as the basis curve if Sense is true (default value) or the opposite orientation if Sense is false. Warning If the basis curve is periodic, the bounds of the trimmed curve may be different from U1 and U2 if the parametric origin of the basis curve is within the arc of the trimmed curve. In this case, the modified parameter will be equal to U1 or U2 plus or minus the period. Exceptions Standard_ConstructionError if: - the basis curve is not periodic, and either U1 or U2 are outside the bounds of the basis curve, or - U1 is equal to U2.
 
         :param U1:
@@ -9829,20 +10257,20 @@ class Geom_TrimmedCurve(Geom_BoundedCurve):
         """
         return _Geom.Geom_TrimmedCurve_SetTrim(self, *args)
 
-    def BasisCurve(self, *args) -> "Handle_Geom_Curve" :
+    def BasisCurve(self):
         """
         * Returns the basis curve. Warning This function does not return a constant reference. Consequently, any modification of the returned value directly modifies the trimmed curve.
 
         :rtype: Handle_Geom_Curve
 
         """
-        return _Geom.Geom_TrimmedCurve_BasisCurve(self, *args)
+        return _Geom.Geom_TrimmedCurve_BasisCurve(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Geom_TrimmedCurve self)"""
         return _Geom.Geom_TrimmedCurve__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Geom_TrimmedCurve" :
+    def GetHandle(self):
         """GetHandle(Geom_TrimmedCurve self) -> Handle_Geom_TrimmedCurve"""
         return _Geom.Geom_TrimmedCurve_GetHandle(self)
 
@@ -9882,7 +10310,7 @@ Handle_Geom_TrimmedCurve._kill_pointed = new_instancemethod(_Geom.Handle_Geom_Tr
 Handle_Geom_TrimmedCurve_swigregister = _Geom.Handle_Geom_TrimmedCurve_swigregister
 Handle_Geom_TrimmedCurve_swigregister(Handle_Geom_TrimmedCurve)
 
-def Handle_Geom_TrimmedCurve_DownCast(*args) -> "Handle_Geom_TrimmedCurve const" :
+def Handle_Geom_TrimmedCurve_DownCast(*args):
   return _Geom.Handle_Geom_TrimmedCurve_DownCast(*args)
 Handle_Geom_TrimmedCurve_DownCast = _Geom.Handle_Geom_TrimmedCurve_DownCast
 

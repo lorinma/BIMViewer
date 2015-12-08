@@ -120,8 +120,9 @@ Intf_EDGE = _Intf.Intf_EDGE
 Intf_VERTEX = _Intf.Intf_VERTEX
 class intf(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
+    def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def PlaneEquation(*args) -> "Standard_Real &" :
+    def PlaneEquation(*args):
         """
         * Computes the interference between two polygons in 2d. Result : points of intersections and zones of tangence. Computes the interference between two polygon in 3d. Section points, common perpendicular and projections. Computes the interference between a polygon or a straight line and a polyhedron. Points of intersection and zones of tangence. Compute the interference between two polyhedron. Points of intersection , polylines of intersection and zones of tangence. Give the plane equation of the triangle <P1> <P2> <P3>.
 
@@ -141,7 +142,7 @@ class intf(object):
         return _Intf.intf_PlaneEquation(*args)
 
     PlaneEquation = staticmethod(PlaneEquation)
-    def Contain(*args) -> "Standard_Boolean" :
+    def Contain(*args):
         """
         * Compute if the triangle <P1> <P2> <P3> contain <ThePnt>.
 
@@ -159,8 +160,6 @@ class intf(object):
         return _Intf.intf_Contain(*args)
 
     Contain = staticmethod(Contain)
-    def __init__(self): 
-        _Intf.intf_swiginit(self,_Intf.new_intf())
     def __del__(self):
     	try:
     		self.thisown = False
@@ -173,7 +172,7 @@ intf._kill_pointed = new_instancemethod(_Intf.intf__kill_pointed,None,intf)
 intf_swigregister = _Intf.intf_swigregister
 intf_swigregister(intf)
 
-def intf_PlaneEquation(*args) -> "Standard_Real &" :
+def intf_PlaneEquation(*args):
   """
     * Computes the interference between two polygons in 2d. Result : points of intersections and zones of tangence. Computes the interference between two polygon in 3d. Section points, common perpendicular and projections. Computes the interference between a polygon or a straight line and a polyhedron. Points of intersection and zones of tangence. Compute the interference between two polyhedron. Points of intersection , polylines of intersection and zones of tangence. Give the plane equation of the triangle <P1> <P2> <P3>.
 
@@ -192,7 +191,7 @@ def intf_PlaneEquation(*args) -> "Standard_Real &" :
     """
   return _Intf.intf_PlaneEquation(*args)
 
-def intf_Contain(*args) -> "Standard_Boolean" :
+def intf_Contain(*args):
   """
     * Compute if the triangle <P1> <P2> <P3> contain <ThePnt>.
 
@@ -215,22 +214,22 @@ class Intf_Array1OfLin(object):
     def __init__(self, *args): 
         """
         :param Low:
-        :type Low: int
+        :type Low: Standard_Integer
         :param Up:
-        :type Up: int
+        :type Up: Standard_Integer
         :rtype: None
 
         :param Item:
         :type Item: gp_Lin
         :param Low:
-        :type Low: int
+        :type Low: Standard_Integer
         :param Up:
-        :type Up: int
+        :type Up: Standard_Integer
         :rtype: None
 
         """
         _Intf.Intf_Array1OfLin_swiginit(self,_Intf.new_Intf_Array1OfLin(*args))
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
         :param V:
         :type V: gp_Lin
@@ -239,21 +238,21 @@ class Intf_Array1OfLin(object):
         """
         return _Intf.Intf_Array1OfLin_Init(self, *args)
 
-    def Destroy(self, *args) -> "void" :
+    def Destroy(self):
         """
         :rtype: None
 
         """
-        return _Intf.Intf_Array1OfLin_Destroy(self, *args)
+        return _Intf.Intf_Array1OfLin_Destroy(self)
 
-    def IsAllocated(self, *args) -> "Standard_Boolean" :
+    def IsAllocated(self):
         """
         :rtype: bool
 
         """
-        return _Intf.Intf_Array1OfLin_IsAllocated(self, *args)
+        return _Intf.Intf_Array1OfLin_IsAllocated(self)
 
-    def Assign(self, *args) -> "Intf_Array1OfLin const &" :
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: Intf_Array1OfLin &
@@ -262,7 +261,7 @@ class Intf_Array1OfLin(object):
         """
         return _Intf.Intf_Array1OfLin_Assign(self, *args)
 
-    def Set(self, *args) -> "Intf_Array1OfLin const &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: Intf_Array1OfLin &
@@ -271,31 +270,31 @@ class Intf_Array1OfLin(object):
         """
         return _Intf.Intf_Array1OfLin_Set(self, *args)
 
-    def Length(self, *args) -> "Standard_Integer" :
+    def Length(self):
         """
         :rtype: int
 
         """
-        return _Intf.Intf_Array1OfLin_Length(self, *args)
+        return _Intf.Intf_Array1OfLin_Length(self)
 
-    def Lower(self, *args) -> "Standard_Integer" :
+    def Lower(self):
         """
         :rtype: int
 
         """
-        return _Intf.Intf_Array1OfLin_Lower(self, *args)
+        return _Intf.Intf_Array1OfLin_Lower(self)
 
-    def Upper(self, *args) -> "Standard_Integer" :
+    def Upper(self):
         """
         :rtype: int
 
         """
-        return _Intf.Intf_Array1OfLin_Upper(self, *args)
+        return _Intf.Intf_Array1OfLin_Upper(self)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Value:
         :type Value: gp_Lin
         :rtype: None
@@ -303,19 +302,19 @@ class Intf_Array1OfLin(object):
         """
         return _Intf.Intf_Array1OfLin_SetValue(self, *args)
 
-    def Value(self, *args) -> "gp_Lin const" :
+    def Value(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: gp_Lin
 
         """
         return _Intf.Intf_Array1OfLin_Value(self, *args)
 
-    def ChangeValue(self, *args) -> "gp_Lin" :
+    def ChangeValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: gp_Lin
 
         """
@@ -348,76 +347,76 @@ class Intf_Interference(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def NbSectionPoints(self, *args) -> "Standard_Integer" :
+    def NbSectionPoints(self):
         """
         * Gives the number of points of intersection in the interference.
 
         :rtype: int
 
         """
-        return _Intf.Intf_Interference_NbSectionPoints(self, *args)
+        return _Intf.Intf_Interference_NbSectionPoints(self)
 
-    def PntValue(self, *args) -> "Intf_SectionPoint const &" :
+    def PntValue(self, *args):
         """
         * Gives the point of intersection of address Index in the interference.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Intf_SectionPoint
 
         """
         return _Intf.Intf_Interference_PntValue(self, *args)
 
-    def NbSectionLines(self, *args) -> "Standard_Integer" :
+    def NbSectionLines(self):
         """
         * Gives the number of polylines of intersection in the interference.
 
         :rtype: int
 
         """
-        return _Intf.Intf_Interference_NbSectionLines(self, *args)
+        return _Intf.Intf_Interference_NbSectionLines(self)
 
-    def LineValue(self, *args) -> "Intf_SectionLine const &" :
+    def LineValue(self, *args):
         """
         * Gives the polyline of intersection at address <Index> in the interference.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Intf_SectionLine
 
         """
         return _Intf.Intf_Interference_LineValue(self, *args)
 
-    def NbTangentZones(self, *args) -> "Standard_Integer" :
+    def NbTangentZones(self):
         """
         * Gives the number of zones of tangence in the interference.
 
         :rtype: int
 
         """
-        return _Intf.Intf_Interference_NbTangentZones(self, *args)
+        return _Intf.Intf_Interference_NbTangentZones(self)
 
-    def ZoneValue(self, *args) -> "Intf_TangentZone const &" :
+    def ZoneValue(self, *args):
         """
         * Gives the zone of tangence at address Index in the interference.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Intf_TangentZone
 
         """
         return _Intf.Intf_Interference_ZoneValue(self, *args)
 
-    def GetTolerance(self, *args) -> "Standard_Real" :
+    def GetTolerance(self):
         """
         * Gives the tolerance used for the calculation.
 
         :rtype: float
 
         """
-        return _Intf.Intf_Interference_GetTolerance(self, *args)
+        return _Intf.Intf_Interference_GetTolerance(self)
 
-    def Contains(self, *args) -> "Standard_Boolean" :
+    def Contains(self, *args):
         """
         * Tests if the polylines of intersection or the zones of tangence contain the point of intersection <ThePnt>.
 
@@ -428,7 +427,7 @@ class Intf_Interference(object):
         """
         return _Intf.Intf_Interference_Contains(self, *args)
 
-    def Insert(self, *args) -> "void" :
+    def Insert(self, *args):
         """
         * Inserts a new zone of tangence in the current list of tangent zones of the interference and returns True when done.
 
@@ -447,12 +446,12 @@ class Intf_Interference(object):
         """
         return _Intf.Intf_Interference_Insert(self, *args)
 
-    def Dump(self, *args) -> "void" :
+    def Dump(self):
         """
         :rtype: None
 
         """
-        return _Intf.Intf_Interference_Dump(self, *args)
+        return _Intf.Intf_Interference_Dump(self)
 
     def __del__(self):
     	try:
@@ -480,48 +479,48 @@ class Intf_Polygon2d(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def Bounding(self, *args) -> "Bnd_Box2d const &" :
+    def Bounding(self):
         """
         * Returns the bounding box of the polygon.
 
         :rtype: Bnd_Box2d
 
         """
-        return _Intf.Intf_Polygon2d_Bounding(self, *args)
+        return _Intf.Intf_Polygon2d_Bounding(self)
 
-    def Closed(self, *args) -> "Standard_Boolean" :
+    def Closed(self):
         """
         * Returns True if the polyline is closed.
 
         :rtype: bool
 
         """
-        return _Intf.Intf_Polygon2d_Closed(self, *args)
+        return _Intf.Intf_Polygon2d_Closed(self)
 
-    def DeflectionOverEstimation(self, *args) -> "Standard_Real" :
+    def DeflectionOverEstimation(self):
         """
         * Returns the tolerance of the polygon.
 
         :rtype: float
 
         """
-        return _Intf.Intf_Polygon2d_DeflectionOverEstimation(self, *args)
+        return _Intf.Intf_Polygon2d_DeflectionOverEstimation(self)
 
-    def NbSegments(self, *args) -> "Standard_Integer" :
+    def NbSegments(self):
         """
         * Returns the number of Segments in the polyline.
 
         :rtype: int
 
         """
-        return _Intf.Intf_Polygon2d_NbSegments(self, *args)
+        return _Intf.Intf_Polygon2d_NbSegments(self)
 
-    def Segment(self, *args) -> "void" :
+    def Segment(self, *args):
         """
         * Returns the points of the segment <Index> in the Polygon.
 
         :param theIndex:
-        :type theIndex: int
+        :type theIndex: Standard_Integer
         :param theBegin:
         :type theBegin: gp_Pnt2d
         :param theEnd:
@@ -551,36 +550,36 @@ Intf_Polygon2d_swigregister(Intf_Polygon2d)
 class Intf_SectionLine(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def NumberOfPoints(self, *args) -> "Standard_Integer" :
+    def NumberOfPoints(self):
         """
         * Returns number of points in this SectionLine.
 
         :rtype: int
 
         """
-        return _Intf.Intf_SectionLine_NumberOfPoints(self, *args)
+        return _Intf.Intf_SectionLine_NumberOfPoints(self)
 
-    def GetPoint(self, *args) -> "Intf_SectionPoint const &" :
+    def GetPoint(self, *args):
         """
         * Gives the point of intersection of address <Index> in the SectionLine.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Intf_SectionPoint
 
         """
         return _Intf.Intf_SectionLine_GetPoint(self, *args)
 
-    def IsClosed(self, *args) -> "Standard_Boolean" :
+    def IsClosed(self):
         """
         * Returns True if the SectionLine is closed.
 
         :rtype: bool
 
         """
-        return _Intf.Intf_SectionLine_IsClosed(self, *args)
+        return _Intf.Intf_SectionLine_IsClosed(self)
 
-    def Contains(self, *args) -> "Standard_Boolean" :
+    def Contains(self, *args):
         """
         * Returns True if ThePI is in the SectionLine <self>.
 
@@ -591,7 +590,7 @@ class Intf_SectionLine(object):
         """
         return _Intf.Intf_SectionLine_Contains(self, *args)
 
-    def IsEnd(self, *args) -> "Standard_Integer" :
+    def IsEnd(self, *args):
         """
         * Checks if <ThePI> is an end of the SectionLine. Returns 1 for the beginning, 2 for the end, otherwise 0.
 
@@ -602,7 +601,7 @@ class Intf_SectionLine(object):
         """
         return _Intf.Intf_SectionLine_IsEnd(self, *args)
 
-    def IsEqual(self, *args) -> "Standard_Boolean" :
+    def IsEqual(self, *args):
         """
         * Compares two SectionLines.
 
@@ -633,7 +632,7 @@ class Intf_SectionLine(object):
 
         """
         _Intf.Intf_SectionLine_swiginit(self,_Intf.new_Intf_SectionLine(*args))
-    def Append(self, *args) -> "void" :
+    def Append(self, *args):
         """
         * Adds a point at the end of the SectionLine.
 
@@ -650,7 +649,7 @@ class Intf_SectionLine(object):
         """
         return _Intf.Intf_SectionLine_Append(self, *args)
 
-    def Prepend(self, *args) -> "void" :
+    def Prepend(self, *args):
         """
         * Adds a point to the beginning of the SectionLine <self>.
 
@@ -667,28 +666,28 @@ class Intf_SectionLine(object):
         """
         return _Intf.Intf_SectionLine_Prepend(self, *args)
 
-    def Reverse(self, *args) -> "void" :
+    def Reverse(self):
         """
         * Reverses the order of the elements of the SectionLine.
 
         :rtype: None
 
         """
-        return _Intf.Intf_SectionLine_Reverse(self, *args)
+        return _Intf.Intf_SectionLine_Reverse(self)
 
-    def Close(self, *args) -> "void" :
+    def Close(self):
         """
         * Closes the SectionLine.
 
         :rtype: None
 
         """
-        return _Intf.Intf_SectionLine_Close(self, *args)
+        return _Intf.Intf_SectionLine_Close(self)
 
-    def Dump(self, *args) -> "void" :
+    def Dump(self, *args):
         """
         :param Indent:
-        :type Indent: int
+        :type Indent: Standard_Integer
         :rtype: None
 
         """
@@ -721,59 +720,59 @@ Intf_SectionLine_swigregister(Intf_SectionLine)
 class Intf_SectionPoint(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def Pnt(self, *args) -> "gp_Pnt const" :
+    def Pnt(self):
         """
         * Returns the location of the SectionPoint.
 
         :rtype: gp_Pnt
 
         """
-        return _Intf.Intf_SectionPoint_Pnt(self, *args)
+        return _Intf.Intf_SectionPoint_Pnt(self)
 
-    def ParamOnFirst(self, *args) -> "Standard_Real" :
+    def ParamOnFirst(self):
         """
         * Returns the cumulated Parameter of the SectionPoint on the first element.
 
         :rtype: float
 
         """
-        return _Intf.Intf_SectionPoint_ParamOnFirst(self, *args)
+        return _Intf.Intf_SectionPoint_ParamOnFirst(self)
 
-    def ParamOnSecond(self, *args) -> "Standard_Real" :
+    def ParamOnSecond(self):
         """
         * Returns the cumulated Parameter of the section point on the second element.
 
         :rtype: float
 
         """
-        return _Intf.Intf_SectionPoint_ParamOnSecond(self, *args)
+        return _Intf.Intf_SectionPoint_ParamOnSecond(self)
 
-    def TypeOnFirst(self, *args) -> "Intf_PIType" :
+    def TypeOnFirst(self):
         """
         * Returns the type of the section point on the first element.
 
         :rtype: Intf_PIType
 
         """
-        return _Intf.Intf_SectionPoint_TypeOnFirst(self, *args)
+        return _Intf.Intf_SectionPoint_TypeOnFirst(self)
 
-    def TypeOnSecond(self, *args) -> "Intf_PIType" :
+    def TypeOnSecond(self):
         """
         * Returns the type of the section point on the second element.
 
         :rtype: Intf_PIType
 
         """
-        return _Intf.Intf_SectionPoint_TypeOnSecond(self, *args)
+        return _Intf.Intf_SectionPoint_TypeOnSecond(self)
 
-    def InfoFirst(self, *args) -> "void" :
+    def InfoFirst(self, *args):
         """
         :param Dim:
         :type Dim: Intf_PIType &
         :param Add1:
-        :type Add1: int &
+        :type Add1: Standard_Integer &
         :param Add2:
-        :type Add2: int &
+        :type Add2: Standard_Integer &
         :param Param:
         :type Param: float &
         :rtype: None
@@ -783,7 +782,7 @@ class Intf_SectionPoint(object):
         :param Dim:
         :type Dim: Intf_PIType &
         :param Addr:
-        :type Addr: int &
+        :type Addr: Standard_Integer &
         :param Param:
         :type Param: float &
         :rtype: None
@@ -791,14 +790,14 @@ class Intf_SectionPoint(object):
         """
         return _Intf.Intf_SectionPoint_InfoFirst(self, *args)
 
-    def InfoSecond(self, *args) -> "void" :
+    def InfoSecond(self, *args):
         """
         :param Dim:
         :type Dim: Intf_PIType &
         :param Add1:
-        :type Add1: int &
+        :type Add1: Standard_Integer &
         :param Add2:
-        :type Add2: int &
+        :type Add2: Standard_Integer &
         :param Param:
         :type Param: float &
         :rtype: None
@@ -808,7 +807,7 @@ class Intf_SectionPoint(object):
         :param Dim:
         :type Dim: Intf_PIType &
         :param Addr:
-        :type Addr: int &
+        :type Addr: Standard_Integer &
         :param Param:
         :type Param: float &
         :rtype: None
@@ -816,16 +815,16 @@ class Intf_SectionPoint(object):
         """
         return _Intf.Intf_SectionPoint_InfoSecond(self, *args)
 
-    def Incidence(self, *args) -> "Standard_Real" :
+    def Incidence(self):
         """
         * Gives the incidence at this section point. The incidence between the two triangles is given by the cosine. The best incidence is 0. (PI/2). The worst is 1. (null angle).
 
         :rtype: float
 
         """
-        return _Intf.Intf_SectionPoint_Incidence(self, *args)
+        return _Intf.Intf_SectionPoint_Incidence(self)
 
-    def IsEqual(self, *args) -> "Standard_Boolean" :
+    def IsEqual(self, *args):
         """
         * Returns True if the two SectionPoint have the same logical informations.
 
@@ -842,7 +841,7 @@ class Intf_SectionPoint(object):
         except:
             return False
 
-    def IsOnSameEdge(self, *args) -> "Standard_Boolean" :
+    def IsOnSameEdge(self, *args):
         """
         * Returns True if the two SectionPoints are on the same edge of the first or the second element.
 
@@ -864,17 +863,17 @@ class Intf_SectionPoint(object):
         :param DimeO:
         :type DimeO: Intf_PIType
         :param AddrO1:
-        :type AddrO1: int
+        :type AddrO1: Standard_Integer
         :param AddrO2:
-        :type AddrO2: int
+        :type AddrO2: Standard_Integer
         :param ParamO:
         :type ParamO: float
         :param DimeT:
         :type DimeT: Intf_PIType
         :param AddrT1:
-        :type AddrT1: int
+        :type AddrT1: Standard_Integer
         :param AddrT2:
-        :type AddrT2: int
+        :type AddrT2: Standard_Integer
         :param ParamT:
         :type ParamT: float
         :param Incid:
@@ -888,13 +887,13 @@ class Intf_SectionPoint(object):
         :param DimeO:
         :type DimeO: Intf_PIType
         :param AddrO1:
-        :type AddrO1: int
+        :type AddrO1: Standard_Integer
         :param ParamO:
         :type ParamO: float
         :param DimeT:
         :type DimeT: Intf_PIType
         :param AddrT1:
-        :type AddrT1: int
+        :type AddrT1: Standard_Integer
         :param ParamT:
         :type ParamT: float
         :param Incid:
@@ -903,7 +902,7 @@ class Intf_SectionPoint(object):
 
         """
         _Intf.Intf_SectionPoint_swiginit(self,_Intf.new_Intf_SectionPoint(*args))
-    def Merge(self, *args) -> "void" :
+    def Merge(self, *args):
         """
         * Merges two SectionPoints.
 
@@ -914,10 +913,10 @@ class Intf_SectionPoint(object):
         """
         return _Intf.Intf_SectionPoint_Merge(self, *args)
 
-    def Dump(self, *args) -> "void" :
+    def Dump(self, *args):
         """
         :param Indent:
-        :type Indent: int
+        :type Indent: Standard_Integer
         :rtype: None
 
         """
@@ -951,20 +950,20 @@ Intf_SectionPoint_swigregister(Intf_SectionPoint)
 class Intf_SeqOfSectionLine(OCC.TCollection.TCollection_BaseSequence):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _Intf.Intf_SeqOfSectionLine_swiginit(self,_Intf.new_Intf_SeqOfSectionLine(*args))
-    def Clear(self, *args) -> "void" :
+        _Intf.Intf_SeqOfSectionLine_swiginit(self,_Intf.new_Intf_SeqOfSectionLine())
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _Intf.Intf_SeqOfSectionLine_Clear(self, *args)
+        return _Intf.Intf_SeqOfSectionLine_Clear(self)
 
-    def Assign(self, *args) -> "Intf_SeqOfSectionLine const &" :
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: Intf_SeqOfSectionLine &
@@ -973,7 +972,7 @@ class Intf_SeqOfSectionLine(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Intf.Intf_SeqOfSectionLine_Assign(self, *args)
 
-    def Set(self, *args) -> "Intf_SeqOfSectionLine const &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: Intf_SeqOfSectionLine &
@@ -982,7 +981,7 @@ class Intf_SeqOfSectionLine(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Intf.Intf_SeqOfSectionLine_Set(self, *args)
 
-    def Append(self, *args) -> "void" :
+    def Append(self, *args):
         """
         :param T:
         :type T: Intf_SectionLine &
@@ -995,7 +994,7 @@ class Intf_SeqOfSectionLine(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Intf.Intf_SeqOfSectionLine_Append(self, *args)
 
-    def Prepend(self, *args) -> "void" :
+    def Prepend(self, *args):
         """
         :param T:
         :type T: Intf_SectionLine &
@@ -1008,16 +1007,16 @@ class Intf_SeqOfSectionLine(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Intf.Intf_SeqOfSectionLine_Prepend(self, *args)
 
-    def InsertBefore(self, *args) -> "void" :
+    def InsertBefore(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param T:
         :type T: Intf_SectionLine &
         :rtype: None
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param S:
         :type S: Intf_SeqOfSectionLine &
         :rtype: None
@@ -1025,16 +1024,16 @@ class Intf_SeqOfSectionLine(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Intf.Intf_SeqOfSectionLine_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args) -> "void" :
+    def InsertAfter(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param T:
         :type T: Intf_SectionLine &
         :rtype: None
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param S:
         :type S: Intf_SeqOfSectionLine &
         :rtype: None
@@ -1042,24 +1041,24 @@ class Intf_SeqOfSectionLine(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Intf.Intf_SeqOfSectionLine_InsertAfter(self, *args)
 
-    def First(self, *args) -> "Intf_SectionLine const &" :
+    def First(self):
         """
         :rtype: Intf_SectionLine
 
         """
-        return _Intf.Intf_SeqOfSectionLine_First(self, *args)
+        return _Intf.Intf_SeqOfSectionLine_First(self)
 
-    def Last(self, *args) -> "Intf_SectionLine const &" :
+    def Last(self):
         """
         :rtype: Intf_SectionLine
 
         """
-        return _Intf.Intf_SeqOfSectionLine_Last(self, *args)
+        return _Intf.Intf_SeqOfSectionLine_Last(self)
 
-    def Split(self, *args) -> "void" :
+    def Split(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Sub:
         :type Sub: Intf_SeqOfSectionLine &
         :rtype: None
@@ -1067,19 +1066,19 @@ class Intf_SeqOfSectionLine(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Intf.Intf_SeqOfSectionLine_Split(self, *args)
 
-    def Value(self, *args) -> "Intf_SectionLine const &" :
+    def Value(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Intf_SectionLine
 
         """
         return _Intf.Intf_SeqOfSectionLine_Value(self, *args)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param I:
         :type I: Intf_SectionLine &
         :rtype: None
@@ -1087,25 +1086,25 @@ class Intf_SeqOfSectionLine(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Intf.Intf_SeqOfSectionLine_SetValue(self, *args)
 
-    def ChangeValue(self, *args) -> "Intf_SectionLine &" :
+    def ChangeValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Intf_SectionLine
 
         """
         return _Intf.Intf_SeqOfSectionLine_ChangeValue(self, *args)
 
-    def Remove(self, *args) -> "void" :
+    def Remove(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: None
 
         :param FromIndex:
-        :type FromIndex: int
+        :type FromIndex: Standard_Integer
         :param ToIndex:
-        :type ToIndex: int
+        :type ToIndex: Standard_Integer
         :rtype: None
 
         """
@@ -1140,20 +1139,20 @@ Intf_SeqOfSectionLine_swigregister(Intf_SeqOfSectionLine)
 class Intf_SeqOfSectionPoint(OCC.TCollection.TCollection_BaseSequence):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _Intf.Intf_SeqOfSectionPoint_swiginit(self,_Intf.new_Intf_SeqOfSectionPoint(*args))
-    def Clear(self, *args) -> "void" :
+        _Intf.Intf_SeqOfSectionPoint_swiginit(self,_Intf.new_Intf_SeqOfSectionPoint())
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _Intf.Intf_SeqOfSectionPoint_Clear(self, *args)
+        return _Intf.Intf_SeqOfSectionPoint_Clear(self)
 
-    def Assign(self, *args) -> "Intf_SeqOfSectionPoint const &" :
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: Intf_SeqOfSectionPoint &
@@ -1162,7 +1161,7 @@ class Intf_SeqOfSectionPoint(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Intf.Intf_SeqOfSectionPoint_Assign(self, *args)
 
-    def Set(self, *args) -> "Intf_SeqOfSectionPoint const &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: Intf_SeqOfSectionPoint &
@@ -1171,7 +1170,7 @@ class Intf_SeqOfSectionPoint(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Intf.Intf_SeqOfSectionPoint_Set(self, *args)
 
-    def Append(self, *args) -> "void" :
+    def Append(self, *args):
         """
         :param T:
         :type T: Intf_SectionPoint &
@@ -1184,7 +1183,7 @@ class Intf_SeqOfSectionPoint(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Intf.Intf_SeqOfSectionPoint_Append(self, *args)
 
-    def Prepend(self, *args) -> "void" :
+    def Prepend(self, *args):
         """
         :param T:
         :type T: Intf_SectionPoint &
@@ -1197,16 +1196,16 @@ class Intf_SeqOfSectionPoint(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Intf.Intf_SeqOfSectionPoint_Prepend(self, *args)
 
-    def InsertBefore(self, *args) -> "void" :
+    def InsertBefore(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param T:
         :type T: Intf_SectionPoint &
         :rtype: None
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param S:
         :type S: Intf_SeqOfSectionPoint &
         :rtype: None
@@ -1214,16 +1213,16 @@ class Intf_SeqOfSectionPoint(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Intf.Intf_SeqOfSectionPoint_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args) -> "void" :
+    def InsertAfter(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param T:
         :type T: Intf_SectionPoint &
         :rtype: None
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param S:
         :type S: Intf_SeqOfSectionPoint &
         :rtype: None
@@ -1231,24 +1230,24 @@ class Intf_SeqOfSectionPoint(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Intf.Intf_SeqOfSectionPoint_InsertAfter(self, *args)
 
-    def First(self, *args) -> "Intf_SectionPoint const &" :
+    def First(self):
         """
         :rtype: Intf_SectionPoint
 
         """
-        return _Intf.Intf_SeqOfSectionPoint_First(self, *args)
+        return _Intf.Intf_SeqOfSectionPoint_First(self)
 
-    def Last(self, *args) -> "Intf_SectionPoint const &" :
+    def Last(self):
         """
         :rtype: Intf_SectionPoint
 
         """
-        return _Intf.Intf_SeqOfSectionPoint_Last(self, *args)
+        return _Intf.Intf_SeqOfSectionPoint_Last(self)
 
-    def Split(self, *args) -> "void" :
+    def Split(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Sub:
         :type Sub: Intf_SeqOfSectionPoint &
         :rtype: None
@@ -1256,19 +1255,19 @@ class Intf_SeqOfSectionPoint(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Intf.Intf_SeqOfSectionPoint_Split(self, *args)
 
-    def Value(self, *args) -> "Intf_SectionPoint const &" :
+    def Value(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Intf_SectionPoint
 
         """
         return _Intf.Intf_SeqOfSectionPoint_Value(self, *args)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param I:
         :type I: Intf_SectionPoint &
         :rtype: None
@@ -1276,25 +1275,25 @@ class Intf_SeqOfSectionPoint(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Intf.Intf_SeqOfSectionPoint_SetValue(self, *args)
 
-    def ChangeValue(self, *args) -> "Intf_SectionPoint &" :
+    def ChangeValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Intf_SectionPoint
 
         """
         return _Intf.Intf_SeqOfSectionPoint_ChangeValue(self, *args)
 
-    def Remove(self, *args) -> "void" :
+    def Remove(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: None
 
         :param FromIndex:
-        :type FromIndex: int
+        :type FromIndex: Standard_Integer
         :param ToIndex:
-        :type ToIndex: int
+        :type ToIndex: Standard_Integer
         :rtype: None
 
         """
@@ -1329,20 +1328,20 @@ Intf_SeqOfSectionPoint_swigregister(Intf_SeqOfSectionPoint)
 class Intf_SeqOfTangentZone(OCC.TCollection.TCollection_BaseSequence):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _Intf.Intf_SeqOfTangentZone_swiginit(self,_Intf.new_Intf_SeqOfTangentZone(*args))
-    def Clear(self, *args) -> "void" :
+        _Intf.Intf_SeqOfTangentZone_swiginit(self,_Intf.new_Intf_SeqOfTangentZone())
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _Intf.Intf_SeqOfTangentZone_Clear(self, *args)
+        return _Intf.Intf_SeqOfTangentZone_Clear(self)
 
-    def Assign(self, *args) -> "Intf_SeqOfTangentZone const &" :
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: Intf_SeqOfTangentZone &
@@ -1351,7 +1350,7 @@ class Intf_SeqOfTangentZone(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Intf.Intf_SeqOfTangentZone_Assign(self, *args)
 
-    def Set(self, *args) -> "Intf_SeqOfTangentZone const &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: Intf_SeqOfTangentZone &
@@ -1360,7 +1359,7 @@ class Intf_SeqOfTangentZone(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Intf.Intf_SeqOfTangentZone_Set(self, *args)
 
-    def Append(self, *args) -> "void" :
+    def Append(self, *args):
         """
         :param T:
         :type T: Intf_TangentZone &
@@ -1373,7 +1372,7 @@ class Intf_SeqOfTangentZone(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Intf.Intf_SeqOfTangentZone_Append(self, *args)
 
-    def Prepend(self, *args) -> "void" :
+    def Prepend(self, *args):
         """
         :param T:
         :type T: Intf_TangentZone &
@@ -1386,16 +1385,16 @@ class Intf_SeqOfTangentZone(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Intf.Intf_SeqOfTangentZone_Prepend(self, *args)
 
-    def InsertBefore(self, *args) -> "void" :
+    def InsertBefore(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param T:
         :type T: Intf_TangentZone &
         :rtype: None
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param S:
         :type S: Intf_SeqOfTangentZone &
         :rtype: None
@@ -1403,16 +1402,16 @@ class Intf_SeqOfTangentZone(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Intf.Intf_SeqOfTangentZone_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args) -> "void" :
+    def InsertAfter(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param T:
         :type T: Intf_TangentZone &
         :rtype: None
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param S:
         :type S: Intf_SeqOfTangentZone &
         :rtype: None
@@ -1420,24 +1419,24 @@ class Intf_SeqOfTangentZone(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Intf.Intf_SeqOfTangentZone_InsertAfter(self, *args)
 
-    def First(self, *args) -> "Intf_TangentZone const &" :
+    def First(self):
         """
         :rtype: Intf_TangentZone
 
         """
-        return _Intf.Intf_SeqOfTangentZone_First(self, *args)
+        return _Intf.Intf_SeqOfTangentZone_First(self)
 
-    def Last(self, *args) -> "Intf_TangentZone const &" :
+    def Last(self):
         """
         :rtype: Intf_TangentZone
 
         """
-        return _Intf.Intf_SeqOfTangentZone_Last(self, *args)
+        return _Intf.Intf_SeqOfTangentZone_Last(self)
 
-    def Split(self, *args) -> "void" :
+    def Split(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Sub:
         :type Sub: Intf_SeqOfTangentZone &
         :rtype: None
@@ -1445,19 +1444,19 @@ class Intf_SeqOfTangentZone(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Intf.Intf_SeqOfTangentZone_Split(self, *args)
 
-    def Value(self, *args) -> "Intf_TangentZone const &" :
+    def Value(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Intf_TangentZone
 
         """
         return _Intf.Intf_SeqOfTangentZone_Value(self, *args)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param I:
         :type I: Intf_TangentZone &
         :rtype: None
@@ -1465,25 +1464,25 @@ class Intf_SeqOfTangentZone(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Intf.Intf_SeqOfTangentZone_SetValue(self, *args)
 
-    def ChangeValue(self, *args) -> "Intf_TangentZone &" :
+    def ChangeValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Intf_TangentZone
 
         """
         return _Intf.Intf_SeqOfTangentZone_ChangeValue(self, *args)
 
-    def Remove(self, *args) -> "void" :
+    def Remove(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: None
 
         :param FromIndex:
-        :type FromIndex: int
+        :type FromIndex: Standard_Integer
         :param ToIndex:
-        :type ToIndex: int
+        :type ToIndex: Standard_Integer
         :rtype: None
 
         """
@@ -1530,18 +1529,18 @@ class Intf_SequenceNodeOfSeqOfSectionLine(OCC.TCollection.TCollection_SeqNode):
 
         """
         _Intf.Intf_SequenceNodeOfSeqOfSectionLine_swiginit(self,_Intf.new_Intf_SequenceNodeOfSeqOfSectionLine(*args))
-    def Value(self, *args) -> "Intf_SectionLine &" :
+    def Value(self):
         """
         :rtype: Intf_SectionLine
 
         """
-        return _Intf.Intf_SequenceNodeOfSeqOfSectionLine_Value(self, *args)
+        return _Intf.Intf_SequenceNodeOfSeqOfSectionLine_Value(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Intf_SequenceNodeOfSeqOfSectionLine self)"""
         return _Intf.Intf_SequenceNodeOfSeqOfSectionLine__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Intf_SequenceNodeOfSeqOfSectionLine" :
+    def GetHandle(self):
         """GetHandle(Intf_SequenceNodeOfSeqOfSectionLine self) -> Handle_Intf_SequenceNodeOfSeqOfSectionLine"""
         return _Intf.Intf_SequenceNodeOfSeqOfSectionLine_GetHandle(self)
 
@@ -1580,7 +1579,7 @@ Handle_Intf_SequenceNodeOfSeqOfSectionLine._kill_pointed = new_instancemethod(_I
 Handle_Intf_SequenceNodeOfSeqOfSectionLine_swigregister = _Intf.Handle_Intf_SequenceNodeOfSeqOfSectionLine_swigregister
 Handle_Intf_SequenceNodeOfSeqOfSectionLine_swigregister(Handle_Intf_SequenceNodeOfSeqOfSectionLine)
 
-def Handle_Intf_SequenceNodeOfSeqOfSectionLine_DownCast(*args) -> "Handle_Intf_SequenceNodeOfSeqOfSectionLine const" :
+def Handle_Intf_SequenceNodeOfSeqOfSectionLine_DownCast(*args):
   return _Intf.Handle_Intf_SequenceNodeOfSeqOfSectionLine_DownCast(*args)
 Handle_Intf_SequenceNodeOfSeqOfSectionLine_DownCast = _Intf.Handle_Intf_SequenceNodeOfSeqOfSectionLine_DownCast
 
@@ -1599,18 +1598,18 @@ class Intf_SequenceNodeOfSeqOfSectionPoint(OCC.TCollection.TCollection_SeqNode):
 
         """
         _Intf.Intf_SequenceNodeOfSeqOfSectionPoint_swiginit(self,_Intf.new_Intf_SequenceNodeOfSeqOfSectionPoint(*args))
-    def Value(self, *args) -> "Intf_SectionPoint &" :
+    def Value(self):
         """
         :rtype: Intf_SectionPoint
 
         """
-        return _Intf.Intf_SequenceNodeOfSeqOfSectionPoint_Value(self, *args)
+        return _Intf.Intf_SequenceNodeOfSeqOfSectionPoint_Value(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Intf_SequenceNodeOfSeqOfSectionPoint self)"""
         return _Intf.Intf_SequenceNodeOfSeqOfSectionPoint__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Intf_SequenceNodeOfSeqOfSectionPoint" :
+    def GetHandle(self):
         """GetHandle(Intf_SequenceNodeOfSeqOfSectionPoint self) -> Handle_Intf_SequenceNodeOfSeqOfSectionPoint"""
         return _Intf.Intf_SequenceNodeOfSeqOfSectionPoint_GetHandle(self)
 
@@ -1649,7 +1648,7 @@ Handle_Intf_SequenceNodeOfSeqOfSectionPoint._kill_pointed = new_instancemethod(_
 Handle_Intf_SequenceNodeOfSeqOfSectionPoint_swigregister = _Intf.Handle_Intf_SequenceNodeOfSeqOfSectionPoint_swigregister
 Handle_Intf_SequenceNodeOfSeqOfSectionPoint_swigregister(Handle_Intf_SequenceNodeOfSeqOfSectionPoint)
 
-def Handle_Intf_SequenceNodeOfSeqOfSectionPoint_DownCast(*args) -> "Handle_Intf_SequenceNodeOfSeqOfSectionPoint const" :
+def Handle_Intf_SequenceNodeOfSeqOfSectionPoint_DownCast(*args):
   return _Intf.Handle_Intf_SequenceNodeOfSeqOfSectionPoint_DownCast(*args)
 Handle_Intf_SequenceNodeOfSeqOfSectionPoint_DownCast = _Intf.Handle_Intf_SequenceNodeOfSeqOfSectionPoint_DownCast
 
@@ -1668,18 +1667,18 @@ class Intf_SequenceNodeOfSeqOfTangentZone(OCC.TCollection.TCollection_SeqNode):
 
         """
         _Intf.Intf_SequenceNodeOfSeqOfTangentZone_swiginit(self,_Intf.new_Intf_SequenceNodeOfSeqOfTangentZone(*args))
-    def Value(self, *args) -> "Intf_TangentZone &" :
+    def Value(self):
         """
         :rtype: Intf_TangentZone
 
         """
-        return _Intf.Intf_SequenceNodeOfSeqOfTangentZone_Value(self, *args)
+        return _Intf.Intf_SequenceNodeOfSeqOfTangentZone_Value(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Intf_SequenceNodeOfSeqOfTangentZone self)"""
         return _Intf.Intf_SequenceNodeOfSeqOfTangentZone__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Intf_SequenceNodeOfSeqOfTangentZone" :
+    def GetHandle(self):
         """GetHandle(Intf_SequenceNodeOfSeqOfTangentZone self) -> Handle_Intf_SequenceNodeOfSeqOfTangentZone"""
         return _Intf.Intf_SequenceNodeOfSeqOfTangentZone_GetHandle(self)
 
@@ -1718,34 +1717,34 @@ Handle_Intf_SequenceNodeOfSeqOfTangentZone._kill_pointed = new_instancemethod(_I
 Handle_Intf_SequenceNodeOfSeqOfTangentZone_swigregister = _Intf.Handle_Intf_SequenceNodeOfSeqOfTangentZone_swigregister
 Handle_Intf_SequenceNodeOfSeqOfTangentZone_swigregister(Handle_Intf_SequenceNodeOfSeqOfTangentZone)
 
-def Handle_Intf_SequenceNodeOfSeqOfTangentZone_DownCast(*args) -> "Handle_Intf_SequenceNodeOfSeqOfTangentZone const" :
+def Handle_Intf_SequenceNodeOfSeqOfTangentZone_DownCast(*args):
   return _Intf.Handle_Intf_SequenceNodeOfSeqOfTangentZone_DownCast(*args)
 Handle_Intf_SequenceNodeOfSeqOfTangentZone_DownCast = _Intf.Handle_Intf_SequenceNodeOfSeqOfTangentZone_DownCast
 
 class Intf_TangentZone(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def NumberOfPoints(self, *args) -> "Standard_Integer" :
+    def NumberOfPoints(self):
         """
         * Returns number of SectionPoint in this TangentZone.
 
         :rtype: int
 
         """
-        return _Intf.Intf_TangentZone_NumberOfPoints(self, *args)
+        return _Intf.Intf_TangentZone_NumberOfPoints(self)
 
-    def GetPoint(self, *args) -> "Intf_SectionPoint const &" :
+    def GetPoint(self, *args):
         """
         * Gives the SectionPoint of address <Index> in the TangentZone.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Intf_SectionPoint
 
         """
         return _Intf.Intf_TangentZone_GetPoint(self, *args)
 
-    def IsEqual(self, *args) -> "Standard_Boolean" :
+    def IsEqual(self, *args):
         """
         * Compares two TangentZones.
 
@@ -1762,7 +1761,7 @@ class Intf_TangentZone(object):
         except:
             return False
 
-    def Contains(self, *args) -> "Standard_Boolean" :
+    def Contains(self, *args):
         """
         * Checks if <ThePI> is in TangentZone.
 
@@ -1773,7 +1772,7 @@ class Intf_TangentZone(object):
         """
         return _Intf.Intf_TangentZone_Contains(self, *args)
 
-    def ParamOnFirst(self, *args) -> "void" :
+    def ParamOnFirst(self):
         """
         * Gives the parameter range of the TangentZone on the first argument of the Interference. (Usable only for polygon)
 
@@ -1784,9 +1783,9 @@ class Intf_TangentZone(object):
         :rtype: None
 
         """
-        return _Intf.Intf_TangentZone_ParamOnFirst(self, *args)
+        return _Intf.Intf_TangentZone_ParamOnFirst(self)
 
-    def ParamOnSecond(self, *args) -> "void" :
+    def ParamOnSecond(self):
         """
         * Gives the parameter range of the TangentZone on the second argument of the Interference. (Usable only for polygon)
 
@@ -1797,43 +1796,43 @@ class Intf_TangentZone(object):
         :rtype: None
 
         """
-        return _Intf.Intf_TangentZone_ParamOnSecond(self, *args)
+        return _Intf.Intf_TangentZone_ParamOnSecond(self)
 
-    def InfoFirst(self, *args) -> "void" :
+    def InfoFirst(self):
         """
         * Gives information about the first argument of the Interference. (Usable only for polygon)
 
         :param segMin:
-        :type segMin: int &
+        :type segMin: Standard_Integer &
         :param paraMin:
         :type paraMin: float &
         :param segMax:
-        :type segMax: int &
+        :type segMax: Standard_Integer &
         :param paraMax:
         :type paraMax: float &
         :rtype: None
 
         """
-        return _Intf.Intf_TangentZone_InfoFirst(self, *args)
+        return _Intf.Intf_TangentZone_InfoFirst(self)
 
-    def InfoSecond(self, *args) -> "void" :
+    def InfoSecond(self):
         """
         * Gives informations about the second argument of the Interference. (Usable only for polygon)
 
         :param segMin:
-        :type segMin: int &
+        :type segMin: Standard_Integer &
         :param paraMin:
         :type paraMin: float &
         :param segMax:
-        :type segMax: int &
+        :type segMax: Standard_Integer &
         :param paraMax:
         :type paraMax: float &
         :rtype: None
 
         """
-        return _Intf.Intf_TangentZone_InfoSecond(self, *args)
+        return _Intf.Intf_TangentZone_InfoSecond(self)
 
-    def RangeContains(self, *args) -> "Standard_Boolean" :
+    def RangeContains(self, *args):
         """
         * Returns True if <ThePI> is in the parameter range of the TangentZone.
 
@@ -1844,7 +1843,7 @@ class Intf_TangentZone(object):
         """
         return _Intf.Intf_TangentZone_RangeContains(self, *args)
 
-    def HasCommonRange(self, *args) -> "Standard_Boolean" :
+    def HasCommonRange(self, *args):
         """
         * Returns True if the TangentZone <Other> has a common part with <self>.
 
@@ -1869,7 +1868,7 @@ class Intf_TangentZone(object):
 
         """
         _Intf.Intf_TangentZone_swiginit(self,_Intf.new_Intf_TangentZone(*args))
-    def Append(self, *args) -> "void" :
+    def Append(self, *args):
         """
         * Adds a SectionPoint to the TangentZone.
 
@@ -1886,7 +1885,7 @@ class Intf_TangentZone(object):
         """
         return _Intf.Intf_TangentZone_Append(self, *args)
 
-    def Insert(self, *args) -> "Standard_Boolean" :
+    def Insert(self, *args):
         """
         * Inserts a SectionPoint in the TangentZone.
 
@@ -1897,7 +1896,7 @@ class Intf_TangentZone(object):
         """
         return _Intf.Intf_TangentZone_Insert(self, *args)
 
-    def PolygonInsert(self, *args) -> "void" :
+    def PolygonInsert(self, *args):
         """
         * Inserts a point in the polygonal TangentZone.
 
@@ -1908,12 +1907,12 @@ class Intf_TangentZone(object):
         """
         return _Intf.Intf_TangentZone_PolygonInsert(self, *args)
 
-    def InsertBefore(self, *args) -> "void" :
+    def InsertBefore(self, *args):
         """
         * Inserts a SectionPoint before <Index> in the TangentZone.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Pi:
         :type Pi: Intf_SectionPoint &
         :rtype: None
@@ -1921,12 +1920,12 @@ class Intf_TangentZone(object):
         """
         return _Intf.Intf_TangentZone_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args) -> "void" :
+    def InsertAfter(self, *args):
         """
         * Inserts a SectionPoint after <Index> in the TangentZone.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Pi:
         :type Pi: Intf_SectionPoint &
         :rtype: None
@@ -1934,10 +1933,10 @@ class Intf_TangentZone(object):
         """
         return _Intf.Intf_TangentZone_InsertAfter(self, *args)
 
-    def Dump(self, *args) -> "void" :
+    def Dump(self, *args):
         """
         :param Indent:
-        :type Indent: int
+        :type Indent: Standard_Integer
         :rtype: None
 
         """
@@ -1975,13 +1974,13 @@ Intf_TangentZone_swigregister(Intf_TangentZone)
 class Intf_Tool(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _Intf.Intf_Tool_swiginit(self,_Intf.new_Intf_Tool(*args))
-    def Lin2dBox(self, *args) -> "void" :
+        _Intf.Intf_Tool_swiginit(self,_Intf.new_Intf_Tool())
+    def Lin2dBox(self, *args):
         """
         :param theLin2d:
         :type theLin2d: gp_Lin2d
@@ -1994,7 +1993,7 @@ class Intf_Tool(object):
         """
         return _Intf.Intf_Tool_Lin2dBox(self, *args)
 
-    def Hypr2dBox(self, *args) -> "void" :
+    def Hypr2dBox(self, *args):
         """
         :param theHypr2d:
         :type theHypr2d: gp_Hypr2d
@@ -2007,7 +2006,7 @@ class Intf_Tool(object):
         """
         return _Intf.Intf_Tool_Hypr2dBox(self, *args)
 
-    def Parab2dBox(self, *args) -> "void" :
+    def Parab2dBox(self, *args):
         """
         :param theParab2d:
         :type theParab2d: gp_Parab2d
@@ -2020,7 +2019,7 @@ class Intf_Tool(object):
         """
         return _Intf.Intf_Tool_Parab2dBox(self, *args)
 
-    def LinBox(self, *args) -> "void" :
+    def LinBox(self, *args):
         """
         :param theLin:
         :type theLin: gp_Lin
@@ -2033,7 +2032,7 @@ class Intf_Tool(object):
         """
         return _Intf.Intf_Tool_LinBox(self, *args)
 
-    def HyprBox(self, *args) -> "void" :
+    def HyprBox(self, *args):
         """
         :param theHypr:
         :type theHypr: gp_Hypr
@@ -2046,7 +2045,7 @@ class Intf_Tool(object):
         """
         return _Intf.Intf_Tool_HyprBox(self, *args)
 
-    def ParabBox(self, *args) -> "void" :
+    def ParabBox(self, *args):
         """
         :param theParab:
         :type theParab: gp_Parab
@@ -2059,26 +2058,26 @@ class Intf_Tool(object):
         """
         return _Intf.Intf_Tool_ParabBox(self, *args)
 
-    def NbSegments(self, *args) -> "Standard_Integer" :
+    def NbSegments(self):
         """
         :rtype: int
 
         """
-        return _Intf.Intf_Tool_NbSegments(self, *args)
+        return _Intf.Intf_Tool_NbSegments(self)
 
-    def BeginParam(self, *args) -> "Standard_Real" :
+    def BeginParam(self, *args):
         """
         :param SegmentNum:
-        :type SegmentNum: int
+        :type SegmentNum: Standard_Integer
         :rtype: float
 
         """
         return _Intf.Intf_Tool_BeginParam(self, *args)
 
-    def EndParam(self, *args) -> "Standard_Real" :
+    def EndParam(self, *args):
         """
         :param SegmentNum:
-        :type SegmentNum: int
+        :type SegmentNum: Standard_Integer
         :rtype: float
 
         """
@@ -2130,7 +2129,7 @@ class Intf_InterferencePolygon2d(Intf_Interference):
 
         """
         _Intf.Intf_InterferencePolygon2d_swiginit(self,_Intf.new_Intf_InterferencePolygon2d(*args))
-    def Perform(self, *args) -> "void" :
+    def Perform(self, *args):
         """
         * Computes an interference between two Polygons.
 
@@ -2149,12 +2148,12 @@ class Intf_InterferencePolygon2d(Intf_Interference):
         """
         return _Intf.Intf_InterferencePolygon2d_Perform(self, *args)
 
-    def Pnt2dValue(self, *args) -> "gp_Pnt2d" :
+    def Pnt2dValue(self, *args):
         """
         * Gives the geometrical 2d point of the intersection point at address <Index> in the interference.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: gp_Pnt2d
 
         """

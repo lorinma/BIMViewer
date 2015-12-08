@@ -120,8 +120,9 @@ import OCC.TColStd
 import OCC.Message
 class topexp(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
+    def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def MapShapes(*args) -> "void" :
+    def MapShapes(*args):
         """
         * Tool to explore a topological data structure. Stores in the map <M> all the sub-shapes of <S> of type <T>. Warning: The map is not cleared at first.
 
@@ -145,7 +146,7 @@ class topexp(object):
         return _TopExp.topexp_MapShapes(*args)
 
     MapShapes = staticmethod(MapShapes)
-    def MapShapesAndAncestors(*args) -> "void" :
+    def MapShapesAndAncestors(*args):
         """
         * Stores in the map <M> all the subshape of <S> of type <TS> for each one append to the list all the ancestors of type <TA>. For example map all the edges and bind the list of faces. Warning: The map is not cleared at first.
 
@@ -163,8 +164,16 @@ class topexp(object):
         return _TopExp.topexp_MapShapesAndAncestors(*args)
 
     MapShapesAndAncestors = staticmethod(MapShapesAndAncestors)
-    def FirstVertex(*args) -> "TopoDS_Vertex" :
+    def FirstVertex(*args):
         """
+        * Returns the Vertex of orientation FORWARD in E. If there is none returns a Null Shape. CumOri = True : taking account the edge orientation
+
+        :param E:
+        :type E: TopoDS_Edge &
+        :param CumOri: default value is Standard_False
+        :type CumOri: bool
+        :rtype: TopoDS_Vertex
+
         * Returns the Vertex of orientation FORWARD in E. If there is none returns a Null Shape. CumOri = True : taking account the edge orientation
 
         :param E:
@@ -177,8 +186,16 @@ class topexp(object):
         return _TopExp.topexp_FirstVertex(*args)
 
     FirstVertex = staticmethod(FirstVertex)
-    def LastVertex(*args) -> "TopoDS_Vertex" :
+    def LastVertex(*args):
         """
+        * Returns the Vertex of orientation REVERSED in E. If there is none returns a Null Shape. CumOri = True : taking account the edge orientation
+
+        :param E:
+        :type E: TopoDS_Edge &
+        :param CumOri: default value is Standard_False
+        :type CumOri: bool
+        :rtype: TopoDS_Vertex
+
         * Returns the Vertex of orientation REVERSED in E. If there is none returns a Null Shape. CumOri = True : taking account the edge orientation
 
         :param E:
@@ -191,8 +208,20 @@ class topexp(object):
         return _TopExp.topexp_LastVertex(*args)
 
     LastVertex = staticmethod(LastVertex)
-    def Vertices(*args) -> "void" :
+    def Vertices(*args):
         """
+        * Returns in Vfirst, Vlast the FORWARD and REVERSED vertices of the edge <E>. May be null shapes. CumOri = True : taking account the edge orientation
+
+        :param E:
+        :type E: TopoDS_Edge &
+        :param Vfirst:
+        :type Vfirst: TopoDS_Vertex &
+        :param Vlast:
+        :type Vlast: TopoDS_Vertex &
+        :param CumOri: default value is Standard_False
+        :type CumOri: bool
+        :rtype: void
+
         * Returns in Vfirst, Vlast the FORWARD and REVERSED vertices of the edge <E>. May be null shapes. CumOri = True : taking account the edge orientation
 
         :param E:
@@ -219,7 +248,7 @@ class topexp(object):
         return _TopExp.topexp_Vertices(*args)
 
     Vertices = staticmethod(Vertices)
-    def CommonVertex(*args) -> "Standard_Boolean" :
+    def CommonVertex(*args):
         """
         * Finds the vertex <V> common to the two edges <E1,E2>, returns True if this vertex exists. Warning: <V> has sense only if the value <True> is returned
 
@@ -235,8 +264,6 @@ class topexp(object):
         return _TopExp.topexp_CommonVertex(*args)
 
     CommonVertex = staticmethod(CommonVertex)
-    def __init__(self): 
-        _TopExp.topexp_swiginit(self,_TopExp.new_topexp())
     def __del__(self):
     	try:
     		self.thisown = False
@@ -249,7 +276,7 @@ topexp._kill_pointed = new_instancemethod(_TopExp.topexp__kill_pointed,None,tope
 topexp_swigregister = _TopExp.topexp_swigregister
 topexp_swigregister(topexp)
 
-def topexp_MapShapes(*args) -> "void" :
+def topexp_MapShapes(*args):
   """
     * Tool to explore a topological data structure. Stores in the map <M> all the sub-shapes of <S> of type <T>. Warning: The map is not cleared at first.
 
@@ -272,7 +299,7 @@ def topexp_MapShapes(*args) -> "void" :
     """
   return _TopExp.topexp_MapShapes(*args)
 
-def topexp_MapShapesAndAncestors(*args) -> "void" :
+def topexp_MapShapesAndAncestors(*args):
   """
     * Stores in the map <M> all the subshape of <S> of type <TS> for each one append to the list all the ancestors of type <TA>. For example map all the edges and bind the list of faces. Warning: The map is not cleared at first.
 
@@ -289,8 +316,16 @@ def topexp_MapShapesAndAncestors(*args) -> "void" :
     """
   return _TopExp.topexp_MapShapesAndAncestors(*args)
 
-def topexp_FirstVertex(*args) -> "TopoDS_Vertex" :
+def topexp_FirstVertex(*args):
   """
+    * Returns the Vertex of orientation FORWARD in E. If there is none returns a Null Shape. CumOri = True : taking account the edge orientation
+
+    :param E:
+    :type E: TopoDS_Edge &
+    :param CumOri: default value is Standard_False
+    :type CumOri: bool
+    :rtype: TopoDS_Vertex
+
     * Returns the Vertex of orientation FORWARD in E. If there is none returns a Null Shape. CumOri = True : taking account the edge orientation
 
     :param E:
@@ -302,8 +337,16 @@ def topexp_FirstVertex(*args) -> "TopoDS_Vertex" :
     """
   return _TopExp.topexp_FirstVertex(*args)
 
-def topexp_LastVertex(*args) -> "TopoDS_Vertex" :
+def topexp_LastVertex(*args):
   """
+    * Returns the Vertex of orientation REVERSED in E. If there is none returns a Null Shape. CumOri = True : taking account the edge orientation
+
+    :param E:
+    :type E: TopoDS_Edge &
+    :param CumOri: default value is Standard_False
+    :type CumOri: bool
+    :rtype: TopoDS_Vertex
+
     * Returns the Vertex of orientation REVERSED in E. If there is none returns a Null Shape. CumOri = True : taking account the edge orientation
 
     :param E:
@@ -315,8 +358,20 @@ def topexp_LastVertex(*args) -> "TopoDS_Vertex" :
     """
   return _TopExp.topexp_LastVertex(*args)
 
-def topexp_Vertices(*args) -> "void" :
+def topexp_Vertices(*args):
   """
+    * Returns in Vfirst, Vlast the FORWARD and REVERSED vertices of the edge <E>. May be null shapes. CumOri = True : taking account the edge orientation
+
+    :param E:
+    :type E: TopoDS_Edge &
+    :param Vfirst:
+    :type Vfirst: TopoDS_Vertex &
+    :param Vlast:
+    :type Vlast: TopoDS_Vertex &
+    :param CumOri: default value is Standard_False
+    :type CumOri: bool
+    :rtype: void
+
     * Returns in Vfirst, Vlast the FORWARD and REVERSED vertices of the edge <E>. May be null shapes. CumOri = True : taking account the edge orientation
 
     :param E:
@@ -342,7 +397,7 @@ def topexp_Vertices(*args) -> "void" :
     """
   return _TopExp.topexp_Vertices(*args)
 
-def topexp_CommonVertex(*args) -> "Standard_Boolean" :
+def topexp_CommonVertex(*args):
   """
     * Finds the vertex <V> common to the two edges <E1,E2>, returns True if this vertex exists. Warning: <V> has sense only if the value <True> is returned
 
@@ -376,10 +431,30 @@ class TopExp_Explorer(object):
         :type ToAvoid: TopAbs_ShapeEnum
         :rtype: None
 
+        * Creates an Explorer on the Shape <S>.  <ToFind> is the type of shapes to search. TopAbs_VERTEX, TopAbs_EDGE, ...  <ToAvoid> is the type of shape to skip in the exploration. If <ToAvoid> is equal or less complex than <ToFind> or if <ToAVoid> is SHAPE it has no effect on the exploration.
+
+        :param S:
+        :type S: TopoDS_Shape &
+        :param ToFind:
+        :type ToFind: TopAbs_ShapeEnum
+        :param ToAvoid: default value is TopAbs_SHAPE
+        :type ToAvoid: TopAbs_ShapeEnum
+        :rtype: None
+
         """
         _TopExp.TopExp_Explorer_swiginit(self,_TopExp.new_TopExp_Explorer(*args))
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
+        * Resets this explorer on the shape S. It is initialized to search the shape S, for shapes of type ToFind, that are not part of a shape ToAvoid. If the shape ToAvoid is equal to TopAbs_SHAPE, or if it is the same as, or less complex than, the shape ToFind it has no effect on the search.
+
+        :param S:
+        :type S: TopoDS_Shape &
+        :param ToFind:
+        :type ToFind: TopAbs_ShapeEnum
+        :param ToAvoid: default value is TopAbs_SHAPE
+        :type ToAvoid: TopAbs_ShapeEnum
+        :rtype: None
+
         * Resets this explorer on the shape S. It is initialized to search the shape S, for shapes of type ToFind, that are not part of a shape ToAvoid. If the shape ToAvoid is equal to TopAbs_SHAPE, or if it is the same as, or less complex than, the shape ToFind it has no effect on the search.
 
         :param S:
@@ -393,66 +468,66 @@ class TopExp_Explorer(object):
         """
         return _TopExp.TopExp_Explorer_Init(self, *args)
 
-    def More(self, *args) -> "Standard_Boolean" :
+    def More(self):
         """
         * Returns True if there are more shapes in the exploration.
 
         :rtype: bool
 
         """
-        return _TopExp.TopExp_Explorer_More(self, *args)
+        return _TopExp.TopExp_Explorer_More(self)
 
-    def Next(self, *args) -> "void" :
+    def Next(self):
         """
         * Moves to the next Shape in the exploration. Exceptions Standard_NoMoreObject if there are no more shapes to explore.
 
         :rtype: None
 
         """
-        return _TopExp.TopExp_Explorer_Next(self, *args)
+        return _TopExp.TopExp_Explorer_Next(self)
 
-    def Current(self, *args) -> "TopoDS_Shape const" :
+    def Current(self):
         """
         * Returns the current shape in the exploration. Exceptions Standard_NoSuchObject if this explorer has no more shapes to explore.
 
         :rtype: TopoDS_Shape
 
         """
-        return _TopExp.TopExp_Explorer_Current(self, *args)
+        return _TopExp.TopExp_Explorer_Current(self)
 
-    def ReInit(self, *args) -> "void" :
+    def ReInit(self):
         """
         * Reinitialize the exploration with the original arguments.
 
         :rtype: None
 
         """
-        return _TopExp.TopExp_Explorer_ReInit(self, *args)
+        return _TopExp.TopExp_Explorer_ReInit(self)
 
-    def Depth(self, *args) -> "Standard_Integer" :
+    def Depth(self):
         """
         * Returns the current depth of the exploration. 0 is the shape to explore itself.
 
         :rtype: int
 
         """
-        return _TopExp.TopExp_Explorer_Depth(self, *args)
+        return _TopExp.TopExp_Explorer_Depth(self)
 
-    def Clear(self, *args) -> "void" :
+    def Clear(self):
         """
         * Clears the content of the explorer. It will return False on More().
 
         :rtype: None
 
         """
-        return _TopExp.TopExp_Explorer_Clear(self, *args)
+        return _TopExp.TopExp_Explorer_Clear(self)
 
-    def Destroy(self, *args) -> "void" :
+    def Destroy(self):
         """
         :rtype: None
 
         """
-        return _TopExp.TopExp_Explorer_Destroy(self, *args)
+        return _TopExp.TopExp_Explorer_Destroy(self)
 
     def __del__(self):
     	try:
@@ -487,7 +562,7 @@ class TopExp_StackIteratorOfStackOfIterator(object):
 
         """
         _TopExp.TopExp_StackIteratorOfStackOfIterator_swiginit(self,_TopExp.new_TopExp_StackIteratorOfStackOfIterator(*args))
-    def Initialize(self, *args) -> "void" :
+    def Initialize(self, *args):
         """
         :param S:
         :type S: TopExp_StackOfIterator &
@@ -496,26 +571,26 @@ class TopExp_StackIteratorOfStackOfIterator(object):
         """
         return _TopExp.TopExp_StackIteratorOfStackOfIterator_Initialize(self, *args)
 
-    def More(self, *args) -> "Standard_Boolean" :
+    def More(self):
         """
         :rtype: bool
 
         """
-        return _TopExp.TopExp_StackIteratorOfStackOfIterator_More(self, *args)
+        return _TopExp.TopExp_StackIteratorOfStackOfIterator_More(self)
 
-    def Next(self, *args) -> "void" :
+    def Next(self):
         """
         :rtype: None
 
         """
-        return _TopExp.TopExp_StackIteratorOfStackOfIterator_Next(self, *args)
+        return _TopExp.TopExp_StackIteratorOfStackOfIterator_Next(self)
 
-    def Value(self, *args) -> "TopoDS_Iterator const" :
+    def Value(self):
         """
         :rtype: TopoDS_Iterator
 
         """
-        return _TopExp.TopExp_StackIteratorOfStackOfIterator_Value(self, *args)
+        return _TopExp.TopExp_StackIteratorOfStackOfIterator_Value(self)
 
     def __del__(self):
     	try:
@@ -546,18 +621,18 @@ class TopExp_StackNodeOfStackOfIterator(OCC.TCollection.TCollection_MapNode):
 
         """
         _TopExp.TopExp_StackNodeOfStackOfIterator_swiginit(self,_TopExp.new_TopExp_StackNodeOfStackOfIterator(*args))
-    def Value(self, *args) -> "TopoDS_Iterator" :
+    def Value(self):
         """
         :rtype: TopoDS_Iterator
 
         """
-        return _TopExp.TopExp_StackNodeOfStackOfIterator_Value(self, *args)
+        return _TopExp.TopExp_StackNodeOfStackOfIterator_Value(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(TopExp_StackNodeOfStackOfIterator self)"""
         return _TopExp.TopExp_StackNodeOfStackOfIterator__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_TopExp_StackNodeOfStackOfIterator" :
+    def GetHandle(self):
         """GetHandle(TopExp_StackNodeOfStackOfIterator self) -> Handle_TopExp_StackNodeOfStackOfIterator"""
         return _TopExp.TopExp_StackNodeOfStackOfIterator_GetHandle(self)
 
@@ -596,20 +671,20 @@ Handle_TopExp_StackNodeOfStackOfIterator._kill_pointed = new_instancemethod(_Top
 Handle_TopExp_StackNodeOfStackOfIterator_swigregister = _TopExp.Handle_TopExp_StackNodeOfStackOfIterator_swigregister
 Handle_TopExp_StackNodeOfStackOfIterator_swigregister(Handle_TopExp_StackNodeOfStackOfIterator)
 
-def Handle_TopExp_StackNodeOfStackOfIterator_DownCast(*args) -> "Handle_TopExp_StackNodeOfStackOfIterator const" :
+def Handle_TopExp_StackNodeOfStackOfIterator_DownCast(*args):
   return _TopExp.Handle_TopExp_StackNodeOfStackOfIterator_DownCast(*args)
 Handle_TopExp_StackNodeOfStackOfIterator_DownCast = _TopExp.Handle_TopExp_StackNodeOfStackOfIterator_DownCast
 
 class TopExp_StackOfIterator(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _TopExp.TopExp_StackOfIterator_swiginit(self,_TopExp.new_TopExp_StackOfIterator(*args))
-    def Assign(self, *args) -> "TopExp_StackOfIterator const &" :
+        _TopExp.TopExp_StackOfIterator_swiginit(self,_TopExp.new_TopExp_StackOfIterator())
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: TopExp_StackOfIterator &
@@ -618,7 +693,7 @@ class TopExp_StackOfIterator(object):
         """
         return _TopExp.TopExp_StackOfIterator_Assign(self, *args)
 
-    def Set(self, *args) -> "TopExp_StackOfIterator const &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: TopExp_StackOfIterator &
@@ -627,28 +702,28 @@ class TopExp_StackOfIterator(object):
         """
         return _TopExp.TopExp_StackOfIterator_Set(self, *args)
 
-    def IsEmpty(self, *args) -> "Standard_Boolean" :
+    def IsEmpty(self):
         """
         :rtype: bool
 
         """
-        return _TopExp.TopExp_StackOfIterator_IsEmpty(self, *args)
+        return _TopExp.TopExp_StackOfIterator_IsEmpty(self)
 
-    def Depth(self, *args) -> "Standard_Integer" :
+    def Depth(self):
         """
         :rtype: int
 
         """
-        return _TopExp.TopExp_StackOfIterator_Depth(self, *args)
+        return _TopExp.TopExp_StackOfIterator_Depth(self)
 
-    def Top(self, *args) -> "TopoDS_Iterator const" :
+    def Top(self):
         """
         :rtype: TopoDS_Iterator
 
         """
-        return _TopExp.TopExp_StackOfIterator_Top(self, *args)
+        return _TopExp.TopExp_StackOfIterator_Top(self)
 
-    def Push(self, *args) -> "void" :
+    def Push(self, *args):
         """
         :param I:
         :type I: TopoDS_Iterator &
@@ -657,26 +732,26 @@ class TopExp_StackOfIterator(object):
         """
         return _TopExp.TopExp_StackOfIterator_Push(self, *args)
 
-    def Pop(self, *args) -> "void" :
+    def Pop(self):
         """
         :rtype: None
 
         """
-        return _TopExp.TopExp_StackOfIterator_Pop(self, *args)
+        return _TopExp.TopExp_StackOfIterator_Pop(self)
 
-    def Clear(self, *args) -> "void" :
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _TopExp.TopExp_StackOfIterator_Clear(self, *args)
+        return _TopExp.TopExp_StackOfIterator_Clear(self)
 
-    def ChangeTop(self, *args) -> "TopoDS_Iterator" :
+    def ChangeTop(self):
         """
         :rtype: TopoDS_Iterator
 
         """
-        return _TopExp.TopExp_StackOfIterator_ChangeTop(self, *args)
+        return _TopExp.TopExp_StackOfIterator_ChangeTop(self)
 
     def __del__(self):
     	try:

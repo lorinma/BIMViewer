@@ -117,22 +117,22 @@ class TShort_Array1OfShortReal(object):
     def __init__(self, *args): 
         """
         :param Low:
-        :type Low: int
+        :type Low: Standard_Integer
         :param Up:
-        :type Up: int
+        :type Up: Standard_Integer
         :rtype: None
 
         :param Item:
         :type Item: Standard_ShortReal &
         :param Low:
-        :type Low: int
+        :type Low: Standard_Integer
         :param Up:
-        :type Up: int
+        :type Up: Standard_Integer
         :rtype: None
 
         """
         _TShort.TShort_Array1OfShortReal_swiginit(self,_TShort.new_TShort_Array1OfShortReal(*args))
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
         :param V:
         :type V: Standard_ShortReal &
@@ -141,21 +141,21 @@ class TShort_Array1OfShortReal(object):
         """
         return _TShort.TShort_Array1OfShortReal_Init(self, *args)
 
-    def Destroy(self, *args) -> "void" :
+    def Destroy(self):
         """
         :rtype: None
 
         """
-        return _TShort.TShort_Array1OfShortReal_Destroy(self, *args)
+        return _TShort.TShort_Array1OfShortReal_Destroy(self)
 
-    def IsAllocated(self, *args) -> "Standard_Boolean" :
+    def IsAllocated(self):
         """
         :rtype: bool
 
         """
-        return _TShort.TShort_Array1OfShortReal_IsAllocated(self, *args)
+        return _TShort.TShort_Array1OfShortReal_IsAllocated(self)
 
-    def Assign(self, *args) -> "TShort_Array1OfShortReal const &" :
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: TShort_Array1OfShortReal &
@@ -164,7 +164,7 @@ class TShort_Array1OfShortReal(object):
         """
         return _TShort.TShort_Array1OfShortReal_Assign(self, *args)
 
-    def Set(self, *args) -> "TShort_Array1OfShortReal const &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: TShort_Array1OfShortReal &
@@ -173,31 +173,31 @@ class TShort_Array1OfShortReal(object):
         """
         return _TShort.TShort_Array1OfShortReal_Set(self, *args)
 
-    def Length(self, *args) -> "Standard_Integer" :
+    def Length(self):
         """
         :rtype: int
 
         """
-        return _TShort.TShort_Array1OfShortReal_Length(self, *args)
+        return _TShort.TShort_Array1OfShortReal_Length(self)
 
-    def Lower(self, *args) -> "Standard_Integer" :
+    def Lower(self):
         """
         :rtype: int
 
         """
-        return _TShort.TShort_Array1OfShortReal_Lower(self, *args)
+        return _TShort.TShort_Array1OfShortReal_Lower(self)
 
-    def Upper(self, *args) -> "Standard_Integer" :
+    def Upper(self):
         """
         :rtype: int
 
         """
-        return _TShort.TShort_Array1OfShortReal_Upper(self, *args)
+        return _TShort.TShort_Array1OfShortReal_Upper(self)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Value:
         :type Value: Standard_ShortReal &
         :rtype: None
@@ -205,19 +205,19 @@ class TShort_Array1OfShortReal(object):
         """
         return _TShort.TShort_Array1OfShortReal_SetValue(self, *args)
 
-    def Value(self, *args) -> "Standard_ShortReal const &" :
+    def Value(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Standard_ShortReal
 
         """
         return _TShort.TShort_Array1OfShortReal_Value(self, *args)
 
-    def ChangeValue(self, *args) -> "Standard_ShortReal &" :
+    def ChangeValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Standard_ShortReal
 
         """
@@ -252,30 +252,30 @@ class TShort_Array2OfShortReal(object):
     def __init__(self, *args): 
         """
         :param R1:
-        :type R1: int
+        :type R1: Standard_Integer
         :param R2:
-        :type R2: int
+        :type R2: Standard_Integer
         :param C1:
-        :type C1: int
+        :type C1: Standard_Integer
         :param C2:
-        :type C2: int
+        :type C2: Standard_Integer
         :rtype: None
 
         :param Item:
         :type Item: Standard_ShortReal &
         :param R1:
-        :type R1: int
+        :type R1: Standard_Integer
         :param R2:
-        :type R2: int
+        :type R2: Standard_Integer
         :param C1:
-        :type C1: int
+        :type C1: Standard_Integer
         :param C2:
-        :type C2: int
+        :type C2: Standard_Integer
         :rtype: None
 
         """
         _TShort.TShort_Array2OfShortReal_swiginit(self,_TShort.new_TShort_Array2OfShortReal(*args))
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
         :param V:
         :type V: Standard_ShortReal &
@@ -284,14 +284,14 @@ class TShort_Array2OfShortReal(object):
         """
         return _TShort.TShort_Array2OfShortReal_Init(self, *args)
 
-    def Destroy(self, *args) -> "void" :
+    def Destroy(self):
         """
         :rtype: None
 
         """
-        return _TShort.TShort_Array2OfShortReal_Destroy(self, *args)
+        return _TShort.TShort_Array2OfShortReal_Destroy(self)
 
-    def Assign(self, *args) -> "TShort_Array2OfShortReal const &" :
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: TShort_Array2OfShortReal &
@@ -300,7 +300,7 @@ class TShort_Array2OfShortReal(object):
         """
         return _TShort.TShort_Array2OfShortReal_Assign(self, *args)
 
-    def Set(self, *args) -> "TShort_Array2OfShortReal const &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: TShort_Array2OfShortReal &
@@ -309,54 +309,54 @@ class TShort_Array2OfShortReal(object):
         """
         return _TShort.TShort_Array2OfShortReal_Set(self, *args)
 
-    def ColLength(self, *args) -> "Standard_Integer" :
+    def ColLength(self):
         """
         :rtype: int
 
         """
-        return _TShort.TShort_Array2OfShortReal_ColLength(self, *args)
+        return _TShort.TShort_Array2OfShortReal_ColLength(self)
 
-    def RowLength(self, *args) -> "Standard_Integer" :
+    def RowLength(self):
         """
         :rtype: int
 
         """
-        return _TShort.TShort_Array2OfShortReal_RowLength(self, *args)
+        return _TShort.TShort_Array2OfShortReal_RowLength(self)
 
-    def LowerCol(self, *args) -> "Standard_Integer" :
+    def LowerCol(self):
         """
         :rtype: int
 
         """
-        return _TShort.TShort_Array2OfShortReal_LowerCol(self, *args)
+        return _TShort.TShort_Array2OfShortReal_LowerCol(self)
 
-    def LowerRow(self, *args) -> "Standard_Integer" :
+    def LowerRow(self):
         """
         :rtype: int
 
         """
-        return _TShort.TShort_Array2OfShortReal_LowerRow(self, *args)
+        return _TShort.TShort_Array2OfShortReal_LowerRow(self)
 
-    def UpperCol(self, *args) -> "Standard_Integer" :
+    def UpperCol(self):
         """
         :rtype: int
 
         """
-        return _TShort.TShort_Array2OfShortReal_UpperCol(self, *args)
+        return _TShort.TShort_Array2OfShortReal_UpperCol(self)
 
-    def UpperRow(self, *args) -> "Standard_Integer" :
+    def UpperRow(self):
         """
         :rtype: int
 
         """
-        return _TShort.TShort_Array2OfShortReal_UpperRow(self, *args)
+        return _TShort.TShort_Array2OfShortReal_UpperRow(self)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Row:
-        :type Row: int
+        :type Row: Standard_Integer
         :param Col:
-        :type Col: int
+        :type Col: Standard_Integer
         :param Value:
         :type Value: Standard_ShortReal &
         :rtype: None
@@ -364,23 +364,23 @@ class TShort_Array2OfShortReal(object):
         """
         return _TShort.TShort_Array2OfShortReal_SetValue(self, *args)
 
-    def Value(self, *args) -> "Standard_ShortReal const &" :
+    def Value(self, *args):
         """
         :param Row:
-        :type Row: int
+        :type Row: Standard_Integer
         :param Col:
-        :type Col: int
+        :type Col: Standard_Integer
         :rtype: Standard_ShortReal
 
         """
         return _TShort.TShort_Array2OfShortReal_Value(self, *args)
 
-    def ChangeValue(self, *args) -> "Standard_ShortReal &" :
+    def ChangeValue(self, *args):
         """
         :param Row:
-        :type Row: int
+        :type Row: Standard_Integer
         :param Col:
-        :type Col: int
+        :type Col: Standard_Integer
         :rtype: Standard_ShortReal
 
         """
@@ -417,22 +417,22 @@ class TShort_HArray1OfShortReal(OCC.MMgt.MMgt_TShared):
     def __init__(self, *args): 
         """
         :param Low:
-        :type Low: int
+        :type Low: Standard_Integer
         :param Up:
-        :type Up: int
+        :type Up: Standard_Integer
         :rtype: None
 
         :param Low:
-        :type Low: int
+        :type Low: Standard_Integer
         :param Up:
-        :type Up: int
+        :type Up: Standard_Integer
         :param V:
         :type V: Standard_ShortReal &
         :rtype: None
 
         """
         _TShort.TShort_HArray1OfShortReal_swiginit(self,_TShort.new_TShort_HArray1OfShortReal(*args))
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
         :param V:
         :type V: Standard_ShortReal &
@@ -441,31 +441,31 @@ class TShort_HArray1OfShortReal(OCC.MMgt.MMgt_TShared):
         """
         return _TShort.TShort_HArray1OfShortReal_Init(self, *args)
 
-    def Length(self, *args) -> "Standard_Integer" :
+    def Length(self):
         """
         :rtype: int
 
         """
-        return _TShort.TShort_HArray1OfShortReal_Length(self, *args)
+        return _TShort.TShort_HArray1OfShortReal_Length(self)
 
-    def Lower(self, *args) -> "Standard_Integer" :
+    def Lower(self):
         """
         :rtype: int
 
         """
-        return _TShort.TShort_HArray1OfShortReal_Lower(self, *args)
+        return _TShort.TShort_HArray1OfShortReal_Lower(self)
 
-    def Upper(self, *args) -> "Standard_Integer" :
+    def Upper(self):
         """
         :rtype: int
 
         """
-        return _TShort.TShort_HArray1OfShortReal_Upper(self, *args)
+        return _TShort.TShort_HArray1OfShortReal_Upper(self)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Value:
         :type Value: Standard_ShortReal &
         :rtype: None
@@ -473,43 +473,43 @@ class TShort_HArray1OfShortReal(OCC.MMgt.MMgt_TShared):
         """
         return _TShort.TShort_HArray1OfShortReal_SetValue(self, *args)
 
-    def Value(self, *args) -> "Standard_ShortReal const &" :
+    def Value(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Standard_ShortReal
 
         """
         return _TShort.TShort_HArray1OfShortReal_Value(self, *args)
 
-    def ChangeValue(self, *args) -> "Standard_ShortReal &" :
+    def ChangeValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Standard_ShortReal
 
         """
         return _TShort.TShort_HArray1OfShortReal_ChangeValue(self, *args)
 
-    def Array1(self, *args) -> "TShort_Array1OfShortReal const &" :
+    def Array1(self):
         """
         :rtype: TShort_Array1OfShortReal
 
         """
-        return _TShort.TShort_HArray1OfShortReal_Array1(self, *args)
+        return _TShort.TShort_HArray1OfShortReal_Array1(self)
 
-    def ChangeArray1(self, *args) -> "TShort_Array1OfShortReal &" :
+    def ChangeArray1(self):
         """
         :rtype: TShort_Array1OfShortReal
 
         """
-        return _TShort.TShort_HArray1OfShortReal_ChangeArray1(self, *args)
+        return _TShort.TShort_HArray1OfShortReal_ChangeArray1(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(TShort_HArray1OfShortReal self)"""
         return _TShort.TShort_HArray1OfShortReal__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_TShort_HArray1OfShortReal" :
+    def GetHandle(self):
         """GetHandle(TShort_HArray1OfShortReal self) -> Handle_TShort_HArray1OfShortReal"""
         return _TShort.TShort_HArray1OfShortReal_GetHandle(self)
 
@@ -556,7 +556,7 @@ Handle_TShort_HArray1OfShortReal._kill_pointed = new_instancemethod(_TShort.Hand
 Handle_TShort_HArray1OfShortReal_swigregister = _TShort.Handle_TShort_HArray1OfShortReal_swigregister
 Handle_TShort_HArray1OfShortReal_swigregister(Handle_TShort_HArray1OfShortReal)
 
-def Handle_TShort_HArray1OfShortReal_DownCast(*args) -> "Handle_TShort_HArray1OfShortReal const" :
+def Handle_TShort_HArray1OfShortReal_DownCast(*args):
   return _TShort.Handle_TShort_HArray1OfShortReal_DownCast(*args)
 Handle_TShort_HArray1OfShortReal_DownCast = _TShort.Handle_TShort_HArray1OfShortReal_DownCast
 
@@ -566,30 +566,30 @@ class TShort_HArray2OfShortReal(OCC.MMgt.MMgt_TShared):
     def __init__(self, *args): 
         """
         :param R1:
-        :type R1: int
+        :type R1: Standard_Integer
         :param R2:
-        :type R2: int
+        :type R2: Standard_Integer
         :param C1:
-        :type C1: int
+        :type C1: Standard_Integer
         :param C2:
-        :type C2: int
+        :type C2: Standard_Integer
         :rtype: None
 
         :param R1:
-        :type R1: int
+        :type R1: Standard_Integer
         :param R2:
-        :type R2: int
+        :type R2: Standard_Integer
         :param C1:
-        :type C1: int
+        :type C1: Standard_Integer
         :param C2:
-        :type C2: int
+        :type C2: Standard_Integer
         :param V:
         :type V: Standard_ShortReal &
         :rtype: None
 
         """
         _TShort.TShort_HArray2OfShortReal_swiginit(self,_TShort.new_TShort_HArray2OfShortReal(*args))
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
         :param V:
         :type V: Standard_ShortReal &
@@ -598,54 +598,54 @@ class TShort_HArray2OfShortReal(OCC.MMgt.MMgt_TShared):
         """
         return _TShort.TShort_HArray2OfShortReal_Init(self, *args)
 
-    def ColLength(self, *args) -> "Standard_Integer" :
+    def ColLength(self):
         """
         :rtype: int
 
         """
-        return _TShort.TShort_HArray2OfShortReal_ColLength(self, *args)
+        return _TShort.TShort_HArray2OfShortReal_ColLength(self)
 
-    def RowLength(self, *args) -> "Standard_Integer" :
+    def RowLength(self):
         """
         :rtype: int
 
         """
-        return _TShort.TShort_HArray2OfShortReal_RowLength(self, *args)
+        return _TShort.TShort_HArray2OfShortReal_RowLength(self)
 
-    def LowerCol(self, *args) -> "Standard_Integer" :
+    def LowerCol(self):
         """
         :rtype: int
 
         """
-        return _TShort.TShort_HArray2OfShortReal_LowerCol(self, *args)
+        return _TShort.TShort_HArray2OfShortReal_LowerCol(self)
 
-    def LowerRow(self, *args) -> "Standard_Integer" :
+    def LowerRow(self):
         """
         :rtype: int
 
         """
-        return _TShort.TShort_HArray2OfShortReal_LowerRow(self, *args)
+        return _TShort.TShort_HArray2OfShortReal_LowerRow(self)
 
-    def UpperCol(self, *args) -> "Standard_Integer" :
+    def UpperCol(self):
         """
         :rtype: int
 
         """
-        return _TShort.TShort_HArray2OfShortReal_UpperCol(self, *args)
+        return _TShort.TShort_HArray2OfShortReal_UpperCol(self)
 
-    def UpperRow(self, *args) -> "Standard_Integer" :
+    def UpperRow(self):
         """
         :rtype: int
 
         """
-        return _TShort.TShort_HArray2OfShortReal_UpperRow(self, *args)
+        return _TShort.TShort_HArray2OfShortReal_UpperRow(self)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Row:
-        :type Row: int
+        :type Row: Standard_Integer
         :param Col:
-        :type Col: int
+        :type Col: Standard_Integer
         :param Value:
         :type Value: Standard_ShortReal &
         :rtype: None
@@ -653,47 +653,47 @@ class TShort_HArray2OfShortReal(OCC.MMgt.MMgt_TShared):
         """
         return _TShort.TShort_HArray2OfShortReal_SetValue(self, *args)
 
-    def Value(self, *args) -> "Standard_ShortReal const &" :
+    def Value(self, *args):
         """
         :param Row:
-        :type Row: int
+        :type Row: Standard_Integer
         :param Col:
-        :type Col: int
+        :type Col: Standard_Integer
         :rtype: Standard_ShortReal
 
         """
         return _TShort.TShort_HArray2OfShortReal_Value(self, *args)
 
-    def ChangeValue(self, *args) -> "Standard_ShortReal &" :
+    def ChangeValue(self, *args):
         """
         :param Row:
-        :type Row: int
+        :type Row: Standard_Integer
         :param Col:
-        :type Col: int
+        :type Col: Standard_Integer
         :rtype: Standard_ShortReal
 
         """
         return _TShort.TShort_HArray2OfShortReal_ChangeValue(self, *args)
 
-    def Array2(self, *args) -> "TShort_Array2OfShortReal const &" :
+    def Array2(self):
         """
         :rtype: TShort_Array2OfShortReal
 
         """
-        return _TShort.TShort_HArray2OfShortReal_Array2(self, *args)
+        return _TShort.TShort_HArray2OfShortReal_Array2(self)
 
-    def ChangeArray2(self, *args) -> "TShort_Array2OfShortReal &" :
+    def ChangeArray2(self):
         """
         :rtype: TShort_Array2OfShortReal
 
         """
-        return _TShort.TShort_HArray2OfShortReal_ChangeArray2(self, *args)
+        return _TShort.TShort_HArray2OfShortReal_ChangeArray2(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(TShort_HArray2OfShortReal self)"""
         return _TShort.TShort_HArray2OfShortReal__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_TShort_HArray2OfShortReal" :
+    def GetHandle(self):
         """GetHandle(TShort_HArray2OfShortReal self) -> Handle_TShort_HArray2OfShortReal"""
         return _TShort.TShort_HArray2OfShortReal_GetHandle(self)
 
@@ -743,41 +743,41 @@ Handle_TShort_HArray2OfShortReal._kill_pointed = new_instancemethod(_TShort.Hand
 Handle_TShort_HArray2OfShortReal_swigregister = _TShort.Handle_TShort_HArray2OfShortReal_swigregister
 Handle_TShort_HArray2OfShortReal_swigregister(Handle_TShort_HArray2OfShortReal)
 
-def Handle_TShort_HArray2OfShortReal_DownCast(*args) -> "Handle_TShort_HArray2OfShortReal const" :
+def Handle_TShort_HArray2OfShortReal_DownCast(*args):
   return _TShort.Handle_TShort_HArray2OfShortReal_DownCast(*args)
 Handle_TShort_HArray2OfShortReal_DownCast = _TShort.Handle_TShort_HArray2OfShortReal_DownCast
 
 class TShort_HSequenceOfShortReal(OCC.MMgt.MMgt_TShared):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _TShort.TShort_HSequenceOfShortReal_swiginit(self,_TShort.new_TShort_HSequenceOfShortReal(*args))
-    def IsEmpty(self, *args) -> "Standard_Boolean" :
+        _TShort.TShort_HSequenceOfShortReal_swiginit(self,_TShort.new_TShort_HSequenceOfShortReal())
+    def IsEmpty(self):
         """
         :rtype: bool
 
         """
-        return _TShort.TShort_HSequenceOfShortReal_IsEmpty(self, *args)
+        return _TShort.TShort_HSequenceOfShortReal_IsEmpty(self)
 
-    def Length(self, *args) -> "Standard_Integer" :
+    def Length(self):
         """
         :rtype: int
 
         """
-        return _TShort.TShort_HSequenceOfShortReal_Length(self, *args)
+        return _TShort.TShort_HSequenceOfShortReal_Length(self)
 
-    def Clear(self, *args) -> "void" :
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _TShort.TShort_HSequenceOfShortReal_Clear(self, *args)
+        return _TShort.TShort_HSequenceOfShortReal_Clear(self)
 
-    def Append(self, *args) -> "void" :
+    def Append(self, *args):
         """
         :param anItem:
         :type anItem: Standard_ShortReal &
@@ -790,7 +790,7 @@ class TShort_HSequenceOfShortReal(OCC.MMgt.MMgt_TShared):
         """
         return _TShort.TShort_HSequenceOfShortReal_Append(self, *args)
 
-    def Prepend(self, *args) -> "void" :
+    def Prepend(self, *args):
         """
         :param anItem:
         :type anItem: Standard_ShortReal &
@@ -803,23 +803,23 @@ class TShort_HSequenceOfShortReal(OCC.MMgt.MMgt_TShared):
         """
         return _TShort.TShort_HSequenceOfShortReal_Prepend(self, *args)
 
-    def Reverse(self, *args) -> "void" :
+    def Reverse(self):
         """
         :rtype: None
 
         """
-        return _TShort.TShort_HSequenceOfShortReal_Reverse(self, *args)
+        return _TShort.TShort_HSequenceOfShortReal_Reverse(self)
 
-    def InsertBefore(self, *args) -> "void" :
+    def InsertBefore(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :param anItem:
         :type anItem: Standard_ShortReal &
         :rtype: None
 
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :param aSequence:
         :type aSequence: Handle_TShort_HSequenceOfShortReal &
         :rtype: None
@@ -827,16 +827,16 @@ class TShort_HSequenceOfShortReal(OCC.MMgt.MMgt_TShared):
         """
         return _TShort.TShort_HSequenceOfShortReal_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args) -> "void" :
+    def InsertAfter(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :param anItem:
         :type anItem: Standard_ShortReal &
         :rtype: None
 
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :param aSequence:
         :type aSequence: Handle_TShort_HSequenceOfShortReal &
         :rtype: None
@@ -844,30 +844,30 @@ class TShort_HSequenceOfShortReal(OCC.MMgt.MMgt_TShared):
         """
         return _TShort.TShort_HSequenceOfShortReal_InsertAfter(self, *args)
 
-    def Exchange(self, *args) -> "void" :
+    def Exchange(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :param anOtherIndex:
-        :type anOtherIndex: int
+        :type anOtherIndex: Standard_Integer
         :rtype: None
 
         """
         return _TShort.TShort_HSequenceOfShortReal_Exchange(self, *args)
 
-    def Split(self, *args) -> "Handle_TShort_HSequenceOfShortReal" :
+    def Split(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :rtype: Handle_TShort_HSequenceOfShortReal
 
         """
         return _TShort.TShort_HSequenceOfShortReal_Split(self, *args)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :param anItem:
         :type anItem: Standard_ShortReal &
         :rtype: None
@@ -875,65 +875,65 @@ class TShort_HSequenceOfShortReal(OCC.MMgt.MMgt_TShared):
         """
         return _TShort.TShort_HSequenceOfShortReal_SetValue(self, *args)
 
-    def Value(self, *args) -> "Standard_ShortReal const &" :
+    def Value(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :rtype: Standard_ShortReal
 
         """
         return _TShort.TShort_HSequenceOfShortReal_Value(self, *args)
 
-    def ChangeValue(self, *args) -> "Standard_ShortReal &" :
+    def ChangeValue(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :rtype: Standard_ShortReal
 
         """
         return _TShort.TShort_HSequenceOfShortReal_ChangeValue(self, *args)
 
-    def Remove(self, *args) -> "void" :
+    def Remove(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :rtype: None
 
         :param fromIndex:
-        :type fromIndex: int
+        :type fromIndex: Standard_Integer
         :param toIndex:
-        :type toIndex: int
+        :type toIndex: Standard_Integer
         :rtype: None
 
         """
         return _TShort.TShort_HSequenceOfShortReal_Remove(self, *args)
 
-    def Sequence(self, *args) -> "TShort_SequenceOfShortReal const &" :
+    def Sequence(self):
         """
         :rtype: TShort_SequenceOfShortReal
 
         """
-        return _TShort.TShort_HSequenceOfShortReal_Sequence(self, *args)
+        return _TShort.TShort_HSequenceOfShortReal_Sequence(self)
 
-    def ChangeSequence(self, *args) -> "TShort_SequenceOfShortReal &" :
+    def ChangeSequence(self):
         """
         :rtype: TShort_SequenceOfShortReal
 
         """
-        return _TShort.TShort_HSequenceOfShortReal_ChangeSequence(self, *args)
+        return _TShort.TShort_HSequenceOfShortReal_ChangeSequence(self)
 
-    def ShallowCopy(self, *args) -> "Handle_TShort_HSequenceOfShortReal" :
+    def ShallowCopy(self):
         """
         :rtype: Handle_TShort_HSequenceOfShortReal
 
         """
-        return _TShort.TShort_HSequenceOfShortReal_ShallowCopy(self, *args)
+        return _TShort.TShort_HSequenceOfShortReal_ShallowCopy(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(TShort_HSequenceOfShortReal self)"""
         return _TShort.TShort_HSequenceOfShortReal__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_TShort_HSequenceOfShortReal" :
+    def GetHandle(self):
         """GetHandle(TShort_HSequenceOfShortReal self) -> Handle_TShort_HSequenceOfShortReal"""
         return _TShort.TShort_HSequenceOfShortReal_GetHandle(self)
 
@@ -988,7 +988,7 @@ Handle_TShort_HSequenceOfShortReal._kill_pointed = new_instancemethod(_TShort.Ha
 Handle_TShort_HSequenceOfShortReal_swigregister = _TShort.Handle_TShort_HSequenceOfShortReal_swigregister
 Handle_TShort_HSequenceOfShortReal_swigregister(Handle_TShort_HSequenceOfShortReal)
 
-def Handle_TShort_HSequenceOfShortReal_DownCast(*args) -> "Handle_TShort_HSequenceOfShortReal const" :
+def Handle_TShort_HSequenceOfShortReal_DownCast(*args):
   return _TShort.Handle_TShort_HSequenceOfShortReal_DownCast(*args)
 Handle_TShort_HSequenceOfShortReal_DownCast = _TShort.Handle_TShort_HSequenceOfShortReal_DownCast
 
@@ -1007,18 +1007,18 @@ class TShort_SequenceNodeOfSequenceOfShortReal(OCC.TCollection.TCollection_SeqNo
 
         """
         _TShort.TShort_SequenceNodeOfSequenceOfShortReal_swiginit(self,_TShort.new_TShort_SequenceNodeOfSequenceOfShortReal(*args))
-    def Value(self, *args) -> "Standard_ShortReal &" :
+    def Value(self):
         """
         :rtype: Standard_ShortReal
 
         """
-        return _TShort.TShort_SequenceNodeOfSequenceOfShortReal_Value(self, *args)
+        return _TShort.TShort_SequenceNodeOfSequenceOfShortReal_Value(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(TShort_SequenceNodeOfSequenceOfShortReal self)"""
         return _TShort.TShort_SequenceNodeOfSequenceOfShortReal__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_TShort_SequenceNodeOfSequenceOfShortReal" :
+    def GetHandle(self):
         """GetHandle(TShort_SequenceNodeOfSequenceOfShortReal self) -> Handle_TShort_SequenceNodeOfSequenceOfShortReal"""
         return _TShort.TShort_SequenceNodeOfSequenceOfShortReal_GetHandle(self)
 
@@ -1057,27 +1057,27 @@ Handle_TShort_SequenceNodeOfSequenceOfShortReal._kill_pointed = new_instancemeth
 Handle_TShort_SequenceNodeOfSequenceOfShortReal_swigregister = _TShort.Handle_TShort_SequenceNodeOfSequenceOfShortReal_swigregister
 Handle_TShort_SequenceNodeOfSequenceOfShortReal_swigregister(Handle_TShort_SequenceNodeOfSequenceOfShortReal)
 
-def Handle_TShort_SequenceNodeOfSequenceOfShortReal_DownCast(*args) -> "Handle_TShort_SequenceNodeOfSequenceOfShortReal const" :
+def Handle_TShort_SequenceNodeOfSequenceOfShortReal_DownCast(*args):
   return _TShort.Handle_TShort_SequenceNodeOfSequenceOfShortReal_DownCast(*args)
 Handle_TShort_SequenceNodeOfSequenceOfShortReal_DownCast = _TShort.Handle_TShort_SequenceNodeOfSequenceOfShortReal_DownCast
 
 class TShort_SequenceOfShortReal(OCC.TCollection.TCollection_BaseSequence):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _TShort.TShort_SequenceOfShortReal_swiginit(self,_TShort.new_TShort_SequenceOfShortReal(*args))
-    def Clear(self, *args) -> "void" :
+        _TShort.TShort_SequenceOfShortReal_swiginit(self,_TShort.new_TShort_SequenceOfShortReal())
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _TShort.TShort_SequenceOfShortReal_Clear(self, *args)
+        return _TShort.TShort_SequenceOfShortReal_Clear(self)
 
-    def Assign(self, *args) -> "TShort_SequenceOfShortReal const &" :
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: TShort_SequenceOfShortReal &
@@ -1086,7 +1086,7 @@ class TShort_SequenceOfShortReal(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TShort.TShort_SequenceOfShortReal_Assign(self, *args)
 
-    def Set(self, *args) -> "TShort_SequenceOfShortReal const &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: TShort_SequenceOfShortReal &
@@ -1095,7 +1095,7 @@ class TShort_SequenceOfShortReal(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TShort.TShort_SequenceOfShortReal_Set(self, *args)
 
-    def Append(self, *args) -> "void" :
+    def Append(self, *args):
         """
         :param T:
         :type T: Standard_ShortReal &
@@ -1108,7 +1108,7 @@ class TShort_SequenceOfShortReal(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TShort.TShort_SequenceOfShortReal_Append(self, *args)
 
-    def Prepend(self, *args) -> "void" :
+    def Prepend(self, *args):
         """
         :param T:
         :type T: Standard_ShortReal &
@@ -1121,16 +1121,16 @@ class TShort_SequenceOfShortReal(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TShort.TShort_SequenceOfShortReal_Prepend(self, *args)
 
-    def InsertBefore(self, *args) -> "void" :
+    def InsertBefore(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param T:
         :type T: Standard_ShortReal &
         :rtype: None
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param S:
         :type S: TShort_SequenceOfShortReal &
         :rtype: None
@@ -1138,16 +1138,16 @@ class TShort_SequenceOfShortReal(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TShort.TShort_SequenceOfShortReal_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args) -> "void" :
+    def InsertAfter(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param T:
         :type T: Standard_ShortReal &
         :rtype: None
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param S:
         :type S: TShort_SequenceOfShortReal &
         :rtype: None
@@ -1155,24 +1155,24 @@ class TShort_SequenceOfShortReal(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TShort.TShort_SequenceOfShortReal_InsertAfter(self, *args)
 
-    def First(self, *args) -> "Standard_ShortReal const &" :
+    def First(self):
         """
         :rtype: Standard_ShortReal
 
         """
-        return _TShort.TShort_SequenceOfShortReal_First(self, *args)
+        return _TShort.TShort_SequenceOfShortReal_First(self)
 
-    def Last(self, *args) -> "Standard_ShortReal const &" :
+    def Last(self):
         """
         :rtype: Standard_ShortReal
 
         """
-        return _TShort.TShort_SequenceOfShortReal_Last(self, *args)
+        return _TShort.TShort_SequenceOfShortReal_Last(self)
 
-    def Split(self, *args) -> "void" :
+    def Split(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Sub:
         :type Sub: TShort_SequenceOfShortReal &
         :rtype: None
@@ -1180,19 +1180,19 @@ class TShort_SequenceOfShortReal(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TShort.TShort_SequenceOfShortReal_Split(self, *args)
 
-    def Value(self, *args) -> "Standard_ShortReal const &" :
+    def Value(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Standard_ShortReal
 
         """
         return _TShort.TShort_SequenceOfShortReal_Value(self, *args)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param I:
         :type I: Standard_ShortReal &
         :rtype: None
@@ -1200,25 +1200,25 @@ class TShort_SequenceOfShortReal(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TShort.TShort_SequenceOfShortReal_SetValue(self, *args)
 
-    def ChangeValue(self, *args) -> "Standard_ShortReal &" :
+    def ChangeValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Standard_ShortReal
 
         """
         return _TShort.TShort_SequenceOfShortReal_ChangeValue(self, *args)
 
-    def Remove(self, *args) -> "void" :
+    def Remove(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: None
 
         :param FromIndex:
-        :type FromIndex: int
+        :type FromIndex: Standard_Integer
         :param ToIndex:
-        :type ToIndex: int
+        :type ToIndex: Standard_Integer
         :rtype: None
 
         """

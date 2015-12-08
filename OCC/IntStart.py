@@ -116,7 +116,7 @@ class IntStart_SITopolTool(OCC.MMgt.MMgt_TShared):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def Classify(self, *args) -> "TopAbs_State" :
+    def Classify(self, *args):
         """
         :param P:
         :type P: gp_Pnt2d
@@ -127,11 +127,11 @@ class IntStart_SITopolTool(OCC.MMgt.MMgt_TShared):
         """
         return _IntStart.IntStart_SITopolTool_Classify(self, *args)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(IntStart_SITopolTool self)"""
         return _IntStart.IntStart_SITopolTool__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_IntStart_SITopolTool" :
+    def GetHandle(self):
         """GetHandle(IntStart_SITopolTool self) -> Handle_IntStart_SITopolTool"""
         return _IntStart.IntStart_SITopolTool_GetHandle(self)
 
@@ -170,7 +170,7 @@ Handle_IntStart_SITopolTool._kill_pointed = new_instancemethod(_IntStart.Handle_
 Handle_IntStart_SITopolTool_swigregister = _IntStart.Handle_IntStart_SITopolTool_swigregister
 Handle_IntStart_SITopolTool_swigregister(Handle_IntStart_SITopolTool)
 
-def Handle_IntStart_SITopolTool_DownCast(*args) -> "Handle_IntStart_SITopolTool const" :
+def Handle_IntStart_SITopolTool_DownCast(*args):
   return _IntStart.Handle_IntStart_SITopolTool_DownCast(*args)
 Handle_IntStart_SITopolTool_DownCast = _IntStart.Handle_IntStart_SITopolTool_DownCast
 

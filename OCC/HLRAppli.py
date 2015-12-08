@@ -128,7 +128,7 @@ class HLRAppli_ReflectLines(object):
 
         """
         _HLRAppli.HLRAppli_ReflectLines_swiginit(self,_HLRAppli.new_HLRAppli_ReflectLines(*args))
-    def SetAxes(self, *args) -> "void" :
+    def SetAxes(self, *args):
         """
         * Sets the normal to the plane of visualisation, the coordinates of the view point and the coordinates of the vertical direction vector.
 
@@ -155,21 +155,21 @@ class HLRAppli_ReflectLines(object):
         """
         return _HLRAppli.HLRAppli_ReflectLines_SetAxes(self, *args)
 
-    def Perform(self, *args) -> "void" :
+    def Perform(self):
         """
         :rtype: None
 
         """
-        return _HLRAppli.HLRAppli_ReflectLines_Perform(self, *args)
+        return _HLRAppli.HLRAppli_ReflectLines_Perform(self)
 
-    def GetResult(self, *args) -> "TopoDS_Shape" :
+    def GetResult(self):
         """
         * returns resulting compound of reflect lines represented by edges in 3d
 
         :rtype: TopoDS_Shape
 
         """
-        return _HLRAppli.HLRAppli_ReflectLines_GetResult(self, *args)
+        return _HLRAppli.HLRAppli_ReflectLines_GetResult(self)
 
     def __del__(self):
     	try:

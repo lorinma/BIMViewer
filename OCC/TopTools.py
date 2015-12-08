@@ -119,8 +119,9 @@ import OCC.TColStd
 import OCC.Message
 class toptools(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
+    def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def Dump(*args) -> "void" :
+    def Dump(*args):
         """
         * A set of Shapes. Can be dump, wrote or read. Dumps the topological structure of <Sh> on the stream <S>.
 
@@ -134,20 +135,18 @@ class toptools(object):
         return _TopTools.toptools_Dump(*args)
 
     Dump = staticmethod(Dump)
-    def Dummy(*args) -> "void" :
+    def Dummy(*args):
         """
         * This is to bypass an extraction bug. It will force the inclusion of Standard_Integer.hxx itself including Standard_OStream.hxx at the correct position.
 
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :rtype: void
 
         """
         return _TopTools.toptools_Dummy(*args)
 
     Dummy = staticmethod(Dummy)
-    def __init__(self): 
-        _TopTools.toptools_swiginit(self,_TopTools.new_toptools())
     def __del__(self):
     	try:
     		self.thisown = False
@@ -160,7 +159,7 @@ toptools._kill_pointed = new_instancemethod(_TopTools.toptools__kill_pointed,Non
 toptools_swigregister = _TopTools.toptools_swigregister
 toptools_swigregister(toptools)
 
-def toptools_Dump(*args) -> "void" :
+def toptools_Dump(*args):
   """
     * A set of Shapes. Can be dump, wrote or read. Dumps the topological structure of <Sh> on the stream <S>.
 
@@ -173,12 +172,12 @@ def toptools_Dump(*args) -> "void" :
     """
   return _TopTools.toptools_Dump(*args)
 
-def toptools_Dummy(*args) -> "void" :
+def toptools_Dummy(*args):
   """
     * This is to bypass an extraction bug. It will force the inclusion of Standard_Integer.hxx itself including Standard_OStream.hxx at the correct position.
 
     :param I:
-    :type I: int
+    :type I: Standard_Integer
     :rtype: void
 
     """
@@ -190,22 +189,22 @@ class TopTools_Array1OfListOfShape(object):
     def __init__(self, *args): 
         """
         :param Low:
-        :type Low: int
+        :type Low: Standard_Integer
         :param Up:
-        :type Up: int
+        :type Up: Standard_Integer
         :rtype: None
 
         :param Item:
         :type Item: TopTools_ListOfShape &
         :param Low:
-        :type Low: int
+        :type Low: Standard_Integer
         :param Up:
-        :type Up: int
+        :type Up: Standard_Integer
         :rtype: None
 
         """
         _TopTools.TopTools_Array1OfListOfShape_swiginit(self,_TopTools.new_TopTools_Array1OfListOfShape(*args))
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
         :param V:
         :type V: TopTools_ListOfShape &
@@ -214,21 +213,21 @@ class TopTools_Array1OfListOfShape(object):
         """
         return _TopTools.TopTools_Array1OfListOfShape_Init(self, *args)
 
-    def Destroy(self, *args) -> "void" :
+    def Destroy(self):
         """
         :rtype: None
 
         """
-        return _TopTools.TopTools_Array1OfListOfShape_Destroy(self, *args)
+        return _TopTools.TopTools_Array1OfListOfShape_Destroy(self)
 
-    def IsAllocated(self, *args) -> "Standard_Boolean" :
+    def IsAllocated(self):
         """
         :rtype: bool
 
         """
-        return _TopTools.TopTools_Array1OfListOfShape_IsAllocated(self, *args)
+        return _TopTools.TopTools_Array1OfListOfShape_IsAllocated(self)
 
-    def Assign(self, *args) -> "TopTools_Array1OfListOfShape const &" :
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: TopTools_Array1OfListOfShape &
@@ -237,7 +236,7 @@ class TopTools_Array1OfListOfShape(object):
         """
         return _TopTools.TopTools_Array1OfListOfShape_Assign(self, *args)
 
-    def Set(self, *args) -> "TopTools_Array1OfListOfShape const &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: TopTools_Array1OfListOfShape &
@@ -246,31 +245,31 @@ class TopTools_Array1OfListOfShape(object):
         """
         return _TopTools.TopTools_Array1OfListOfShape_Set(self, *args)
 
-    def Length(self, *args) -> "Standard_Integer" :
+    def Length(self):
         """
         :rtype: int
 
         """
-        return _TopTools.TopTools_Array1OfListOfShape_Length(self, *args)
+        return _TopTools.TopTools_Array1OfListOfShape_Length(self)
 
-    def Lower(self, *args) -> "Standard_Integer" :
+    def Lower(self):
         """
         :rtype: int
 
         """
-        return _TopTools.TopTools_Array1OfListOfShape_Lower(self, *args)
+        return _TopTools.TopTools_Array1OfListOfShape_Lower(self)
 
-    def Upper(self, *args) -> "Standard_Integer" :
+    def Upper(self):
         """
         :rtype: int
 
         """
-        return _TopTools.TopTools_Array1OfListOfShape_Upper(self, *args)
+        return _TopTools.TopTools_Array1OfListOfShape_Upper(self)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Value:
         :type Value: TopTools_ListOfShape &
         :rtype: None
@@ -278,19 +277,19 @@ class TopTools_Array1OfListOfShape(object):
         """
         return _TopTools.TopTools_Array1OfListOfShape_SetValue(self, *args)
 
-    def Value(self, *args) -> "TopTools_ListOfShape const &" :
+    def Value(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: TopTools_ListOfShape
 
         """
         return _TopTools.TopTools_Array1OfListOfShape_Value(self, *args)
 
-    def ChangeValue(self, *args) -> "TopTools_ListOfShape &" :
+    def ChangeValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: TopTools_ListOfShape
 
         """
@@ -325,22 +324,22 @@ class TopTools_Array1OfShape(object):
     def __init__(self, *args): 
         """
         :param Low:
-        :type Low: int
+        :type Low: Standard_Integer
         :param Up:
-        :type Up: int
+        :type Up: Standard_Integer
         :rtype: None
 
         :param Item:
         :type Item: TopoDS_Shape &
         :param Low:
-        :type Low: int
+        :type Low: Standard_Integer
         :param Up:
-        :type Up: int
+        :type Up: Standard_Integer
         :rtype: None
 
         """
         _TopTools.TopTools_Array1OfShape_swiginit(self,_TopTools.new_TopTools_Array1OfShape(*args))
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
         :param V:
         :type V: TopoDS_Shape &
@@ -349,21 +348,21 @@ class TopTools_Array1OfShape(object):
         """
         return _TopTools.TopTools_Array1OfShape_Init(self, *args)
 
-    def Destroy(self, *args) -> "void" :
+    def Destroy(self):
         """
         :rtype: None
 
         """
-        return _TopTools.TopTools_Array1OfShape_Destroy(self, *args)
+        return _TopTools.TopTools_Array1OfShape_Destroy(self)
 
-    def IsAllocated(self, *args) -> "Standard_Boolean" :
+    def IsAllocated(self):
         """
         :rtype: bool
 
         """
-        return _TopTools.TopTools_Array1OfShape_IsAllocated(self, *args)
+        return _TopTools.TopTools_Array1OfShape_IsAllocated(self)
 
-    def Assign(self, *args) -> "TopTools_Array1OfShape const &" :
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: TopTools_Array1OfShape &
@@ -372,7 +371,7 @@ class TopTools_Array1OfShape(object):
         """
         return _TopTools.TopTools_Array1OfShape_Assign(self, *args)
 
-    def Set(self, *args) -> "TopTools_Array1OfShape const &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: TopTools_Array1OfShape &
@@ -381,31 +380,31 @@ class TopTools_Array1OfShape(object):
         """
         return _TopTools.TopTools_Array1OfShape_Set(self, *args)
 
-    def Length(self, *args) -> "Standard_Integer" :
+    def Length(self):
         """
         :rtype: int
 
         """
-        return _TopTools.TopTools_Array1OfShape_Length(self, *args)
+        return _TopTools.TopTools_Array1OfShape_Length(self)
 
-    def Lower(self, *args) -> "Standard_Integer" :
+    def Lower(self):
         """
         :rtype: int
 
         """
-        return _TopTools.TopTools_Array1OfShape_Lower(self, *args)
+        return _TopTools.TopTools_Array1OfShape_Lower(self)
 
-    def Upper(self, *args) -> "Standard_Integer" :
+    def Upper(self):
         """
         :rtype: int
 
         """
-        return _TopTools.TopTools_Array1OfShape_Upper(self, *args)
+        return _TopTools.TopTools_Array1OfShape_Upper(self)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Value:
         :type Value: TopoDS_Shape &
         :rtype: None
@@ -413,19 +412,19 @@ class TopTools_Array1OfShape(object):
         """
         return _TopTools.TopTools_Array1OfShape_SetValue(self, *args)
 
-    def Value(self, *args) -> "TopoDS_Shape const" :
+    def Value(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: TopoDS_Shape
 
         """
         return _TopTools.TopTools_Array1OfShape_Value(self, *args)
 
-    def ChangeValue(self, *args) -> "TopoDS_Shape" :
+    def ChangeValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: TopoDS_Shape
 
         """
@@ -460,30 +459,30 @@ class TopTools_Array2OfShape(object):
     def __init__(self, *args): 
         """
         :param R1:
-        :type R1: int
+        :type R1: Standard_Integer
         :param R2:
-        :type R2: int
+        :type R2: Standard_Integer
         :param C1:
-        :type C1: int
+        :type C1: Standard_Integer
         :param C2:
-        :type C2: int
+        :type C2: Standard_Integer
         :rtype: None
 
         :param Item:
         :type Item: TopoDS_Shape &
         :param R1:
-        :type R1: int
+        :type R1: Standard_Integer
         :param R2:
-        :type R2: int
+        :type R2: Standard_Integer
         :param C1:
-        :type C1: int
+        :type C1: Standard_Integer
         :param C2:
-        :type C2: int
+        :type C2: Standard_Integer
         :rtype: None
 
         """
         _TopTools.TopTools_Array2OfShape_swiginit(self,_TopTools.new_TopTools_Array2OfShape(*args))
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
         :param V:
         :type V: TopoDS_Shape &
@@ -492,14 +491,14 @@ class TopTools_Array2OfShape(object):
         """
         return _TopTools.TopTools_Array2OfShape_Init(self, *args)
 
-    def Destroy(self, *args) -> "void" :
+    def Destroy(self):
         """
         :rtype: None
 
         """
-        return _TopTools.TopTools_Array2OfShape_Destroy(self, *args)
+        return _TopTools.TopTools_Array2OfShape_Destroy(self)
 
-    def Assign(self, *args) -> "TopTools_Array2OfShape const &" :
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: TopTools_Array2OfShape &
@@ -508,7 +507,7 @@ class TopTools_Array2OfShape(object):
         """
         return _TopTools.TopTools_Array2OfShape_Assign(self, *args)
 
-    def Set(self, *args) -> "TopTools_Array2OfShape const &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: TopTools_Array2OfShape &
@@ -517,54 +516,54 @@ class TopTools_Array2OfShape(object):
         """
         return _TopTools.TopTools_Array2OfShape_Set(self, *args)
 
-    def ColLength(self, *args) -> "Standard_Integer" :
+    def ColLength(self):
         """
         :rtype: int
 
         """
-        return _TopTools.TopTools_Array2OfShape_ColLength(self, *args)
+        return _TopTools.TopTools_Array2OfShape_ColLength(self)
 
-    def RowLength(self, *args) -> "Standard_Integer" :
+    def RowLength(self):
         """
         :rtype: int
 
         """
-        return _TopTools.TopTools_Array2OfShape_RowLength(self, *args)
+        return _TopTools.TopTools_Array2OfShape_RowLength(self)
 
-    def LowerCol(self, *args) -> "Standard_Integer" :
+    def LowerCol(self):
         """
         :rtype: int
 
         """
-        return _TopTools.TopTools_Array2OfShape_LowerCol(self, *args)
+        return _TopTools.TopTools_Array2OfShape_LowerCol(self)
 
-    def LowerRow(self, *args) -> "Standard_Integer" :
+    def LowerRow(self):
         """
         :rtype: int
 
         """
-        return _TopTools.TopTools_Array2OfShape_LowerRow(self, *args)
+        return _TopTools.TopTools_Array2OfShape_LowerRow(self)
 
-    def UpperCol(self, *args) -> "Standard_Integer" :
+    def UpperCol(self):
         """
         :rtype: int
 
         """
-        return _TopTools.TopTools_Array2OfShape_UpperCol(self, *args)
+        return _TopTools.TopTools_Array2OfShape_UpperCol(self)
 
-    def UpperRow(self, *args) -> "Standard_Integer" :
+    def UpperRow(self):
         """
         :rtype: int
 
         """
-        return _TopTools.TopTools_Array2OfShape_UpperRow(self, *args)
+        return _TopTools.TopTools_Array2OfShape_UpperRow(self)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Row:
-        :type Row: int
+        :type Row: Standard_Integer
         :param Col:
-        :type Col: int
+        :type Col: Standard_Integer
         :param Value:
         :type Value: TopoDS_Shape &
         :rtype: None
@@ -572,23 +571,23 @@ class TopTools_Array2OfShape(object):
         """
         return _TopTools.TopTools_Array2OfShape_SetValue(self, *args)
 
-    def Value(self, *args) -> "TopoDS_Shape const" :
+    def Value(self, *args):
         """
         :param Row:
-        :type Row: int
+        :type Row: Standard_Integer
         :param Col:
-        :type Col: int
+        :type Col: Standard_Integer
         :rtype: TopoDS_Shape
 
         """
         return _TopTools.TopTools_Array2OfShape_Value(self, *args)
 
-    def ChangeValue(self, *args) -> "TopoDS_Shape" :
+    def ChangeValue(self, *args):
         """
         :param Row:
-        :type Row: int
+        :type Row: Standard_Integer
         :param Col:
-        :type Col: int
+        :type Col: Standard_Integer
         :rtype: TopoDS_Shape
 
         """
@@ -632,7 +631,7 @@ class TopTools_DataMapIteratorOfDataMapOfIntegerListOfShape(OCC.TCollection.TCol
 
         """
         _TopTools.TopTools_DataMapIteratorOfDataMapOfIntegerListOfShape_swiginit(self,_TopTools.new_TopTools_DataMapIteratorOfDataMapOfIntegerListOfShape(*args))
-    def Initialize(self, *args) -> "void" :
+    def Initialize(self, *args):
         """
         :param aMap:
         :type aMap: TopTools_DataMapOfIntegerListOfShape &
@@ -641,19 +640,19 @@ class TopTools_DataMapIteratorOfDataMapOfIntegerListOfShape(OCC.TCollection.TCol
         """
         return _TopTools.TopTools_DataMapIteratorOfDataMapOfIntegerListOfShape_Initialize(self, *args)
 
-    def Key(self, *args) -> "Standard_Integer const &" :
+    def Key(self):
         """
         :rtype: int
 
         """
-        return _TopTools.TopTools_DataMapIteratorOfDataMapOfIntegerListOfShape_Key(self, *args)
+        return _TopTools.TopTools_DataMapIteratorOfDataMapOfIntegerListOfShape_Key(self)
 
-    def Value(self, *args) -> "TopTools_ListOfShape const &" :
+    def Value(self):
         """
         :rtype: TopTools_ListOfShape
 
         """
-        return _TopTools.TopTools_DataMapIteratorOfDataMapOfIntegerListOfShape_Value(self, *args)
+        return _TopTools.TopTools_DataMapIteratorOfDataMapOfIntegerListOfShape_Value(self)
 
     def __del__(self):
     	try:
@@ -683,7 +682,7 @@ class TopTools_DataMapIteratorOfDataMapOfIntegerShape(OCC.TCollection.TCollectio
 
         """
         _TopTools.TopTools_DataMapIteratorOfDataMapOfIntegerShape_swiginit(self,_TopTools.new_TopTools_DataMapIteratorOfDataMapOfIntegerShape(*args))
-    def Initialize(self, *args) -> "void" :
+    def Initialize(self, *args):
         """
         :param aMap:
         :type aMap: TopTools_DataMapOfIntegerShape &
@@ -692,19 +691,19 @@ class TopTools_DataMapIteratorOfDataMapOfIntegerShape(OCC.TCollection.TCollectio
         """
         return _TopTools.TopTools_DataMapIteratorOfDataMapOfIntegerShape_Initialize(self, *args)
 
-    def Key(self, *args) -> "Standard_Integer const &" :
+    def Key(self):
         """
         :rtype: int
 
         """
-        return _TopTools.TopTools_DataMapIteratorOfDataMapOfIntegerShape_Key(self, *args)
+        return _TopTools.TopTools_DataMapIteratorOfDataMapOfIntegerShape_Key(self)
 
-    def Value(self, *args) -> "TopoDS_Shape const" :
+    def Value(self):
         """
         :rtype: TopoDS_Shape
 
         """
-        return _TopTools.TopTools_DataMapIteratorOfDataMapOfIntegerShape_Value(self, *args)
+        return _TopTools.TopTools_DataMapIteratorOfDataMapOfIntegerShape_Value(self)
 
     def __del__(self):
     	try:
@@ -734,7 +733,7 @@ class TopTools_DataMapIteratorOfDataMapOfOrientedShapeInteger(OCC.TCollection.TC
 
         """
         _TopTools.TopTools_DataMapIteratorOfDataMapOfOrientedShapeInteger_swiginit(self,_TopTools.new_TopTools_DataMapIteratorOfDataMapOfOrientedShapeInteger(*args))
-    def Initialize(self, *args) -> "void" :
+    def Initialize(self, *args):
         """
         :param aMap:
         :type aMap: TopTools_DataMapOfOrientedShapeInteger &
@@ -743,19 +742,19 @@ class TopTools_DataMapIteratorOfDataMapOfOrientedShapeInteger(OCC.TCollection.TC
         """
         return _TopTools.TopTools_DataMapIteratorOfDataMapOfOrientedShapeInteger_Initialize(self, *args)
 
-    def Key(self, *args) -> "TopoDS_Shape const" :
+    def Key(self):
         """
         :rtype: TopoDS_Shape
 
         """
-        return _TopTools.TopTools_DataMapIteratorOfDataMapOfOrientedShapeInteger_Key(self, *args)
+        return _TopTools.TopTools_DataMapIteratorOfDataMapOfOrientedShapeInteger_Key(self)
 
-    def Value(self, *args) -> "Standard_Integer const &" :
+    def Value(self):
         """
         :rtype: int
 
         """
-        return _TopTools.TopTools_DataMapIteratorOfDataMapOfOrientedShapeInteger_Value(self, *args)
+        return _TopTools.TopTools_DataMapIteratorOfDataMapOfOrientedShapeInteger_Value(self)
 
     def __del__(self):
     	try:
@@ -785,7 +784,7 @@ class TopTools_DataMapIteratorOfDataMapOfOrientedShapeShape(OCC.TCollection.TCol
 
         """
         _TopTools.TopTools_DataMapIteratorOfDataMapOfOrientedShapeShape_swiginit(self,_TopTools.new_TopTools_DataMapIteratorOfDataMapOfOrientedShapeShape(*args))
-    def Initialize(self, *args) -> "void" :
+    def Initialize(self, *args):
         """
         :param aMap:
         :type aMap: TopTools_DataMapOfOrientedShapeShape &
@@ -794,19 +793,19 @@ class TopTools_DataMapIteratorOfDataMapOfOrientedShapeShape(OCC.TCollection.TCol
         """
         return _TopTools.TopTools_DataMapIteratorOfDataMapOfOrientedShapeShape_Initialize(self, *args)
 
-    def Key(self, *args) -> "TopoDS_Shape const" :
+    def Key(self):
         """
         :rtype: TopoDS_Shape
 
         """
-        return _TopTools.TopTools_DataMapIteratorOfDataMapOfOrientedShapeShape_Key(self, *args)
+        return _TopTools.TopTools_DataMapIteratorOfDataMapOfOrientedShapeShape_Key(self)
 
-    def Value(self, *args) -> "TopoDS_Shape const" :
+    def Value(self):
         """
         :rtype: TopoDS_Shape
 
         """
-        return _TopTools.TopTools_DataMapIteratorOfDataMapOfOrientedShapeShape_Value(self, *args)
+        return _TopTools.TopTools_DataMapIteratorOfDataMapOfOrientedShapeShape_Value(self)
 
     def __del__(self):
     	try:
@@ -836,7 +835,7 @@ class TopTools_DataMapIteratorOfDataMapOfShapeInteger(OCC.TCollection.TCollectio
 
         """
         _TopTools.TopTools_DataMapIteratorOfDataMapOfShapeInteger_swiginit(self,_TopTools.new_TopTools_DataMapIteratorOfDataMapOfShapeInteger(*args))
-    def Initialize(self, *args) -> "void" :
+    def Initialize(self, *args):
         """
         :param aMap:
         :type aMap: TopTools_DataMapOfShapeInteger &
@@ -845,19 +844,19 @@ class TopTools_DataMapIteratorOfDataMapOfShapeInteger(OCC.TCollection.TCollectio
         """
         return _TopTools.TopTools_DataMapIteratorOfDataMapOfShapeInteger_Initialize(self, *args)
 
-    def Key(self, *args) -> "TopoDS_Shape const" :
+    def Key(self):
         """
         :rtype: TopoDS_Shape
 
         """
-        return _TopTools.TopTools_DataMapIteratorOfDataMapOfShapeInteger_Key(self, *args)
+        return _TopTools.TopTools_DataMapIteratorOfDataMapOfShapeInteger_Key(self)
 
-    def Value(self, *args) -> "Standard_Integer const &" :
+    def Value(self):
         """
         :rtype: int
 
         """
-        return _TopTools.TopTools_DataMapIteratorOfDataMapOfShapeInteger_Value(self, *args)
+        return _TopTools.TopTools_DataMapIteratorOfDataMapOfShapeInteger_Value(self)
 
     def __del__(self):
     	try:
@@ -887,7 +886,7 @@ class TopTools_DataMapIteratorOfDataMapOfShapeListOfInteger(OCC.TCollection.TCol
 
         """
         _TopTools.TopTools_DataMapIteratorOfDataMapOfShapeListOfInteger_swiginit(self,_TopTools.new_TopTools_DataMapIteratorOfDataMapOfShapeListOfInteger(*args))
-    def Initialize(self, *args) -> "void" :
+    def Initialize(self, *args):
         """
         :param aMap:
         :type aMap: TopTools_DataMapOfShapeListOfInteger &
@@ -896,19 +895,19 @@ class TopTools_DataMapIteratorOfDataMapOfShapeListOfInteger(OCC.TCollection.TCol
         """
         return _TopTools.TopTools_DataMapIteratorOfDataMapOfShapeListOfInteger_Initialize(self, *args)
 
-    def Key(self, *args) -> "TopoDS_Shape const" :
+    def Key(self):
         """
         :rtype: TopoDS_Shape
 
         """
-        return _TopTools.TopTools_DataMapIteratorOfDataMapOfShapeListOfInteger_Key(self, *args)
+        return _TopTools.TopTools_DataMapIteratorOfDataMapOfShapeListOfInteger_Key(self)
 
-    def Value(self, *args) -> "TColStd_ListOfInteger const &" :
+    def Value(self):
         """
         :rtype: TColStd_ListOfInteger
 
         """
-        return _TopTools.TopTools_DataMapIteratorOfDataMapOfShapeListOfInteger_Value(self, *args)
+        return _TopTools.TopTools_DataMapIteratorOfDataMapOfShapeListOfInteger_Value(self)
 
     def __del__(self):
     	try:
@@ -938,7 +937,7 @@ class TopTools_DataMapIteratorOfDataMapOfShapeListOfShape(OCC.TCollection.TColle
 
         """
         _TopTools.TopTools_DataMapIteratorOfDataMapOfShapeListOfShape_swiginit(self,_TopTools.new_TopTools_DataMapIteratorOfDataMapOfShapeListOfShape(*args))
-    def Initialize(self, *args) -> "void" :
+    def Initialize(self, *args):
         """
         :param aMap:
         :type aMap: TopTools_DataMapOfShapeListOfShape &
@@ -947,19 +946,19 @@ class TopTools_DataMapIteratorOfDataMapOfShapeListOfShape(OCC.TCollection.TColle
         """
         return _TopTools.TopTools_DataMapIteratorOfDataMapOfShapeListOfShape_Initialize(self, *args)
 
-    def Key(self, *args) -> "TopoDS_Shape const" :
+    def Key(self):
         """
         :rtype: TopoDS_Shape
 
         """
-        return _TopTools.TopTools_DataMapIteratorOfDataMapOfShapeListOfShape_Key(self, *args)
+        return _TopTools.TopTools_DataMapIteratorOfDataMapOfShapeListOfShape_Key(self)
 
-    def Value(self, *args) -> "TopTools_ListOfShape const &" :
+    def Value(self):
         """
         :rtype: TopTools_ListOfShape
 
         """
-        return _TopTools.TopTools_DataMapIteratorOfDataMapOfShapeListOfShape_Value(self, *args)
+        return _TopTools.TopTools_DataMapIteratorOfDataMapOfShapeListOfShape_Value(self)
 
     def __del__(self):
     	try:
@@ -989,7 +988,7 @@ class TopTools_DataMapIteratorOfDataMapOfShapeReal(OCC.TCollection.TCollection_B
 
         """
         _TopTools.TopTools_DataMapIteratorOfDataMapOfShapeReal_swiginit(self,_TopTools.new_TopTools_DataMapIteratorOfDataMapOfShapeReal(*args))
-    def Initialize(self, *args) -> "void" :
+    def Initialize(self, *args):
         """
         :param aMap:
         :type aMap: TopTools_DataMapOfShapeReal &
@@ -998,19 +997,19 @@ class TopTools_DataMapIteratorOfDataMapOfShapeReal(OCC.TCollection.TCollection_B
         """
         return _TopTools.TopTools_DataMapIteratorOfDataMapOfShapeReal_Initialize(self, *args)
 
-    def Key(self, *args) -> "TopoDS_Shape const" :
+    def Key(self):
         """
         :rtype: TopoDS_Shape
 
         """
-        return _TopTools.TopTools_DataMapIteratorOfDataMapOfShapeReal_Key(self, *args)
+        return _TopTools.TopTools_DataMapIteratorOfDataMapOfShapeReal_Key(self)
 
-    def Value(self, *args) -> "Standard_Real const &" :
+    def Value(self):
         """
         :rtype: float
 
         """
-        return _TopTools.TopTools_DataMapIteratorOfDataMapOfShapeReal_Value(self, *args)
+        return _TopTools.TopTools_DataMapIteratorOfDataMapOfShapeReal_Value(self)
 
     def __del__(self):
     	try:
@@ -1040,7 +1039,7 @@ class TopTools_DataMapIteratorOfDataMapOfShapeSequenceOfShape(OCC.TCollection.TC
 
         """
         _TopTools.TopTools_DataMapIteratorOfDataMapOfShapeSequenceOfShape_swiginit(self,_TopTools.new_TopTools_DataMapIteratorOfDataMapOfShapeSequenceOfShape(*args))
-    def Initialize(self, *args) -> "void" :
+    def Initialize(self, *args):
         """
         :param aMap:
         :type aMap: TopTools_DataMapOfShapeSequenceOfShape &
@@ -1049,19 +1048,19 @@ class TopTools_DataMapIteratorOfDataMapOfShapeSequenceOfShape(OCC.TCollection.TC
         """
         return _TopTools.TopTools_DataMapIteratorOfDataMapOfShapeSequenceOfShape_Initialize(self, *args)
 
-    def Key(self, *args) -> "TopoDS_Shape const" :
+    def Key(self):
         """
         :rtype: TopoDS_Shape
 
         """
-        return _TopTools.TopTools_DataMapIteratorOfDataMapOfShapeSequenceOfShape_Key(self, *args)
+        return _TopTools.TopTools_DataMapIteratorOfDataMapOfShapeSequenceOfShape_Key(self)
 
-    def Value(self, *args) -> "TopTools_SequenceOfShape const &" :
+    def Value(self):
         """
         :rtype: TopTools_SequenceOfShape
 
         """
-        return _TopTools.TopTools_DataMapIteratorOfDataMapOfShapeSequenceOfShape_Value(self, *args)
+        return _TopTools.TopTools_DataMapIteratorOfDataMapOfShapeSequenceOfShape_Value(self)
 
     def __del__(self):
     	try:
@@ -1091,7 +1090,7 @@ class TopTools_DataMapIteratorOfDataMapOfShapeShape(OCC.TCollection.TCollection_
 
         """
         _TopTools.TopTools_DataMapIteratorOfDataMapOfShapeShape_swiginit(self,_TopTools.new_TopTools_DataMapIteratorOfDataMapOfShapeShape(*args))
-    def Initialize(self, *args) -> "void" :
+    def Initialize(self, *args):
         """
         :param aMap:
         :type aMap: TopTools_DataMapOfShapeShape &
@@ -1100,19 +1099,19 @@ class TopTools_DataMapIteratorOfDataMapOfShapeShape(OCC.TCollection.TCollection_
         """
         return _TopTools.TopTools_DataMapIteratorOfDataMapOfShapeShape_Initialize(self, *args)
 
-    def Key(self, *args) -> "TopoDS_Shape const" :
+    def Key(self):
         """
         :rtype: TopoDS_Shape
 
         """
-        return _TopTools.TopTools_DataMapIteratorOfDataMapOfShapeShape_Key(self, *args)
+        return _TopTools.TopTools_DataMapIteratorOfDataMapOfShapeShape_Key(self)
 
-    def Value(self, *args) -> "TopoDS_Shape const" :
+    def Value(self):
         """
         :rtype: TopoDS_Shape
 
         """
-        return _TopTools.TopTools_DataMapIteratorOfDataMapOfShapeShape_Value(self, *args)
+        return _TopTools.TopTools_DataMapIteratorOfDataMapOfShapeShape_Value(self)
 
     def __del__(self):
     	try:
@@ -1135,7 +1134,7 @@ class TopTools_DataMapNodeOfDataMapOfIntegerListOfShape(OCC.TCollection.TCollect
     def __init__(self, *args): 
         """
         :param K:
-        :type K: int &
+        :type K: Standard_Integer &
         :param I:
         :type I: TopTools_ListOfShape &
         :param n:
@@ -1144,26 +1143,26 @@ class TopTools_DataMapNodeOfDataMapOfIntegerListOfShape(OCC.TCollection.TCollect
 
         """
         _TopTools.TopTools_DataMapNodeOfDataMapOfIntegerListOfShape_swiginit(self,_TopTools.new_TopTools_DataMapNodeOfDataMapOfIntegerListOfShape(*args))
-    def GetKey(self) -> "Standard_Integer" :
+    def GetKey(self):
         """GetKey(TopTools_DataMapNodeOfDataMapOfIntegerListOfShape self) -> Standard_Integer"""
         return _TopTools.TopTools_DataMapNodeOfDataMapOfIntegerListOfShape_GetKey(self)
 
-    def SetKey(self, *args) -> "void" :
+    def SetKey(self, *args):
         """SetKey(TopTools_DataMapNodeOfDataMapOfIntegerListOfShape self, Standard_Integer value)"""
         return _TopTools.TopTools_DataMapNodeOfDataMapOfIntegerListOfShape_SetKey(self, *args)
 
-    def Value(self, *args) -> "TopTools_ListOfShape &" :
+    def Value(self):
         """
         :rtype: TopTools_ListOfShape
 
         """
-        return _TopTools.TopTools_DataMapNodeOfDataMapOfIntegerListOfShape_Value(self, *args)
+        return _TopTools.TopTools_DataMapNodeOfDataMapOfIntegerListOfShape_Value(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(TopTools_DataMapNodeOfDataMapOfIntegerListOfShape self)"""
         return _TopTools.TopTools_DataMapNodeOfDataMapOfIntegerListOfShape__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_TopTools_DataMapNodeOfDataMapOfIntegerListOfShape" :
+    def GetHandle(self):
         """GetHandle(TopTools_DataMapNodeOfDataMapOfIntegerListOfShape self) -> Handle_TopTools_DataMapNodeOfDataMapOfIntegerListOfShape"""
         return _TopTools.TopTools_DataMapNodeOfDataMapOfIntegerListOfShape_GetHandle(self)
 
@@ -1204,7 +1203,7 @@ Handle_TopTools_DataMapNodeOfDataMapOfIntegerListOfShape._kill_pointed = new_ins
 Handle_TopTools_DataMapNodeOfDataMapOfIntegerListOfShape_swigregister = _TopTools.Handle_TopTools_DataMapNodeOfDataMapOfIntegerListOfShape_swigregister
 Handle_TopTools_DataMapNodeOfDataMapOfIntegerListOfShape_swigregister(Handle_TopTools_DataMapNodeOfDataMapOfIntegerListOfShape)
 
-def Handle_TopTools_DataMapNodeOfDataMapOfIntegerListOfShape_DownCast(*args) -> "Handle_TopTools_DataMapNodeOfDataMapOfIntegerListOfShape const" :
+def Handle_TopTools_DataMapNodeOfDataMapOfIntegerListOfShape_DownCast(*args):
   return _TopTools.Handle_TopTools_DataMapNodeOfDataMapOfIntegerListOfShape_DownCast(*args)
 Handle_TopTools_DataMapNodeOfDataMapOfIntegerListOfShape_DownCast = _TopTools.Handle_TopTools_DataMapNodeOfDataMapOfIntegerListOfShape_DownCast
 
@@ -1214,7 +1213,7 @@ class TopTools_DataMapNodeOfDataMapOfIntegerShape(OCC.TCollection.TCollection_Ma
     def __init__(self, *args): 
         """
         :param K:
-        :type K: int &
+        :type K: Standard_Integer &
         :param I:
         :type I: TopoDS_Shape &
         :param n:
@@ -1223,26 +1222,26 @@ class TopTools_DataMapNodeOfDataMapOfIntegerShape(OCC.TCollection.TCollection_Ma
 
         """
         _TopTools.TopTools_DataMapNodeOfDataMapOfIntegerShape_swiginit(self,_TopTools.new_TopTools_DataMapNodeOfDataMapOfIntegerShape(*args))
-    def GetKey(self) -> "Standard_Integer" :
+    def GetKey(self):
         """GetKey(TopTools_DataMapNodeOfDataMapOfIntegerShape self) -> Standard_Integer"""
         return _TopTools.TopTools_DataMapNodeOfDataMapOfIntegerShape_GetKey(self)
 
-    def SetKey(self, *args) -> "void" :
+    def SetKey(self, *args):
         """SetKey(TopTools_DataMapNodeOfDataMapOfIntegerShape self, Standard_Integer value)"""
         return _TopTools.TopTools_DataMapNodeOfDataMapOfIntegerShape_SetKey(self, *args)
 
-    def Value(self, *args) -> "TopoDS_Shape" :
+    def Value(self):
         """
         :rtype: TopoDS_Shape
 
         """
-        return _TopTools.TopTools_DataMapNodeOfDataMapOfIntegerShape_Value(self, *args)
+        return _TopTools.TopTools_DataMapNodeOfDataMapOfIntegerShape_Value(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(TopTools_DataMapNodeOfDataMapOfIntegerShape self)"""
         return _TopTools.TopTools_DataMapNodeOfDataMapOfIntegerShape__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_TopTools_DataMapNodeOfDataMapOfIntegerShape" :
+    def GetHandle(self):
         """GetHandle(TopTools_DataMapNodeOfDataMapOfIntegerShape self) -> Handle_TopTools_DataMapNodeOfDataMapOfIntegerShape"""
         return _TopTools.TopTools_DataMapNodeOfDataMapOfIntegerShape_GetHandle(self)
 
@@ -1283,7 +1282,7 @@ Handle_TopTools_DataMapNodeOfDataMapOfIntegerShape._kill_pointed = new_instancem
 Handle_TopTools_DataMapNodeOfDataMapOfIntegerShape_swigregister = _TopTools.Handle_TopTools_DataMapNodeOfDataMapOfIntegerShape_swigregister
 Handle_TopTools_DataMapNodeOfDataMapOfIntegerShape_swigregister(Handle_TopTools_DataMapNodeOfDataMapOfIntegerShape)
 
-def Handle_TopTools_DataMapNodeOfDataMapOfIntegerShape_DownCast(*args) -> "Handle_TopTools_DataMapNodeOfDataMapOfIntegerShape const" :
+def Handle_TopTools_DataMapNodeOfDataMapOfIntegerShape_DownCast(*args):
   return _TopTools.Handle_TopTools_DataMapNodeOfDataMapOfIntegerShape_DownCast(*args)
 Handle_TopTools_DataMapNodeOfDataMapOfIntegerShape_DownCast = _TopTools.Handle_TopTools_DataMapNodeOfDataMapOfIntegerShape_DownCast
 
@@ -1295,33 +1294,33 @@ class TopTools_DataMapNodeOfDataMapOfOrientedShapeInteger(OCC.TCollection.TColle
         :param K:
         :type K: TopoDS_Shape &
         :param I:
-        :type I: int &
+        :type I: Standard_Integer &
         :param n:
         :type n: TCollection_MapNodePtr &
         :rtype: None
 
         """
         _TopTools.TopTools_DataMapNodeOfDataMapOfOrientedShapeInteger_swiginit(self,_TopTools.new_TopTools_DataMapNodeOfDataMapOfOrientedShapeInteger(*args))
-    def Key(self, *args) -> "TopoDS_Shape" :
+    def Key(self):
         """
         :rtype: TopoDS_Shape
 
         """
-        return _TopTools.TopTools_DataMapNodeOfDataMapOfOrientedShapeInteger_Key(self, *args)
+        return _TopTools.TopTools_DataMapNodeOfDataMapOfOrientedShapeInteger_Key(self)
 
-    def GetValue(self) -> "Standard_Integer" :
+    def GetValue(self):
         """GetValue(TopTools_DataMapNodeOfDataMapOfOrientedShapeInteger self) -> Standard_Integer"""
         return _TopTools.TopTools_DataMapNodeOfDataMapOfOrientedShapeInteger_GetValue(self)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """SetValue(TopTools_DataMapNodeOfDataMapOfOrientedShapeInteger self, Standard_Integer value)"""
         return _TopTools.TopTools_DataMapNodeOfDataMapOfOrientedShapeInteger_SetValue(self, *args)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(TopTools_DataMapNodeOfDataMapOfOrientedShapeInteger self)"""
         return _TopTools.TopTools_DataMapNodeOfDataMapOfOrientedShapeInteger__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_TopTools_DataMapNodeOfDataMapOfOrientedShapeInteger" :
+    def GetHandle(self):
         """GetHandle(TopTools_DataMapNodeOfDataMapOfOrientedShapeInteger self) -> Handle_TopTools_DataMapNodeOfDataMapOfOrientedShapeInteger"""
         return _TopTools.TopTools_DataMapNodeOfDataMapOfOrientedShapeInteger_GetHandle(self)
 
@@ -1362,7 +1361,7 @@ Handle_TopTools_DataMapNodeOfDataMapOfOrientedShapeInteger._kill_pointed = new_i
 Handle_TopTools_DataMapNodeOfDataMapOfOrientedShapeInteger_swigregister = _TopTools.Handle_TopTools_DataMapNodeOfDataMapOfOrientedShapeInteger_swigregister
 Handle_TopTools_DataMapNodeOfDataMapOfOrientedShapeInteger_swigregister(Handle_TopTools_DataMapNodeOfDataMapOfOrientedShapeInteger)
 
-def Handle_TopTools_DataMapNodeOfDataMapOfOrientedShapeInteger_DownCast(*args) -> "Handle_TopTools_DataMapNodeOfDataMapOfOrientedShapeInteger const" :
+def Handle_TopTools_DataMapNodeOfDataMapOfOrientedShapeInteger_DownCast(*args):
   return _TopTools.Handle_TopTools_DataMapNodeOfDataMapOfOrientedShapeInteger_DownCast(*args)
 Handle_TopTools_DataMapNodeOfDataMapOfOrientedShapeInteger_DownCast = _TopTools.Handle_TopTools_DataMapNodeOfDataMapOfOrientedShapeInteger_DownCast
 
@@ -1381,25 +1380,25 @@ class TopTools_DataMapNodeOfDataMapOfOrientedShapeShape(OCC.TCollection.TCollect
 
         """
         _TopTools.TopTools_DataMapNodeOfDataMapOfOrientedShapeShape_swiginit(self,_TopTools.new_TopTools_DataMapNodeOfDataMapOfOrientedShapeShape(*args))
-    def Key(self, *args) -> "TopoDS_Shape" :
+    def Key(self):
         """
         :rtype: TopoDS_Shape
 
         """
-        return _TopTools.TopTools_DataMapNodeOfDataMapOfOrientedShapeShape_Key(self, *args)
+        return _TopTools.TopTools_DataMapNodeOfDataMapOfOrientedShapeShape_Key(self)
 
-    def Value(self, *args) -> "TopoDS_Shape" :
+    def Value(self):
         """
         :rtype: TopoDS_Shape
 
         """
-        return _TopTools.TopTools_DataMapNodeOfDataMapOfOrientedShapeShape_Value(self, *args)
+        return _TopTools.TopTools_DataMapNodeOfDataMapOfOrientedShapeShape_Value(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(TopTools_DataMapNodeOfDataMapOfOrientedShapeShape self)"""
         return _TopTools.TopTools_DataMapNodeOfDataMapOfOrientedShapeShape__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_TopTools_DataMapNodeOfDataMapOfOrientedShapeShape" :
+    def GetHandle(self):
         """GetHandle(TopTools_DataMapNodeOfDataMapOfOrientedShapeShape self) -> Handle_TopTools_DataMapNodeOfDataMapOfOrientedShapeShape"""
         return _TopTools.TopTools_DataMapNodeOfDataMapOfOrientedShapeShape_GetHandle(self)
 
@@ -1439,7 +1438,7 @@ Handle_TopTools_DataMapNodeOfDataMapOfOrientedShapeShape._kill_pointed = new_ins
 Handle_TopTools_DataMapNodeOfDataMapOfOrientedShapeShape_swigregister = _TopTools.Handle_TopTools_DataMapNodeOfDataMapOfOrientedShapeShape_swigregister
 Handle_TopTools_DataMapNodeOfDataMapOfOrientedShapeShape_swigregister(Handle_TopTools_DataMapNodeOfDataMapOfOrientedShapeShape)
 
-def Handle_TopTools_DataMapNodeOfDataMapOfOrientedShapeShape_DownCast(*args) -> "Handle_TopTools_DataMapNodeOfDataMapOfOrientedShapeShape const" :
+def Handle_TopTools_DataMapNodeOfDataMapOfOrientedShapeShape_DownCast(*args):
   return _TopTools.Handle_TopTools_DataMapNodeOfDataMapOfOrientedShapeShape_DownCast(*args)
 Handle_TopTools_DataMapNodeOfDataMapOfOrientedShapeShape_DownCast = _TopTools.Handle_TopTools_DataMapNodeOfDataMapOfOrientedShapeShape_DownCast
 
@@ -1451,33 +1450,33 @@ class TopTools_DataMapNodeOfDataMapOfShapeInteger(OCC.TCollection.TCollection_Ma
         :param K:
         :type K: TopoDS_Shape &
         :param I:
-        :type I: int &
+        :type I: Standard_Integer &
         :param n:
         :type n: TCollection_MapNodePtr &
         :rtype: None
 
         """
         _TopTools.TopTools_DataMapNodeOfDataMapOfShapeInteger_swiginit(self,_TopTools.new_TopTools_DataMapNodeOfDataMapOfShapeInteger(*args))
-    def Key(self, *args) -> "TopoDS_Shape" :
+    def Key(self):
         """
         :rtype: TopoDS_Shape
 
         """
-        return _TopTools.TopTools_DataMapNodeOfDataMapOfShapeInteger_Key(self, *args)
+        return _TopTools.TopTools_DataMapNodeOfDataMapOfShapeInteger_Key(self)
 
-    def GetValue(self) -> "Standard_Integer" :
+    def GetValue(self):
         """GetValue(TopTools_DataMapNodeOfDataMapOfShapeInteger self) -> Standard_Integer"""
         return _TopTools.TopTools_DataMapNodeOfDataMapOfShapeInteger_GetValue(self)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """SetValue(TopTools_DataMapNodeOfDataMapOfShapeInteger self, Standard_Integer value)"""
         return _TopTools.TopTools_DataMapNodeOfDataMapOfShapeInteger_SetValue(self, *args)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(TopTools_DataMapNodeOfDataMapOfShapeInteger self)"""
         return _TopTools.TopTools_DataMapNodeOfDataMapOfShapeInteger__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_TopTools_DataMapNodeOfDataMapOfShapeInteger" :
+    def GetHandle(self):
         """GetHandle(TopTools_DataMapNodeOfDataMapOfShapeInteger self) -> Handle_TopTools_DataMapNodeOfDataMapOfShapeInteger"""
         return _TopTools.TopTools_DataMapNodeOfDataMapOfShapeInteger_GetHandle(self)
 
@@ -1518,7 +1517,7 @@ Handle_TopTools_DataMapNodeOfDataMapOfShapeInteger._kill_pointed = new_instancem
 Handle_TopTools_DataMapNodeOfDataMapOfShapeInteger_swigregister = _TopTools.Handle_TopTools_DataMapNodeOfDataMapOfShapeInteger_swigregister
 Handle_TopTools_DataMapNodeOfDataMapOfShapeInteger_swigregister(Handle_TopTools_DataMapNodeOfDataMapOfShapeInteger)
 
-def Handle_TopTools_DataMapNodeOfDataMapOfShapeInteger_DownCast(*args) -> "Handle_TopTools_DataMapNodeOfDataMapOfShapeInteger const" :
+def Handle_TopTools_DataMapNodeOfDataMapOfShapeInteger_DownCast(*args):
   return _TopTools.Handle_TopTools_DataMapNodeOfDataMapOfShapeInteger_DownCast(*args)
 Handle_TopTools_DataMapNodeOfDataMapOfShapeInteger_DownCast = _TopTools.Handle_TopTools_DataMapNodeOfDataMapOfShapeInteger_DownCast
 
@@ -1537,25 +1536,25 @@ class TopTools_DataMapNodeOfDataMapOfShapeListOfInteger(OCC.TCollection.TCollect
 
         """
         _TopTools.TopTools_DataMapNodeOfDataMapOfShapeListOfInteger_swiginit(self,_TopTools.new_TopTools_DataMapNodeOfDataMapOfShapeListOfInteger(*args))
-    def Key(self, *args) -> "TopoDS_Shape" :
+    def Key(self):
         """
         :rtype: TopoDS_Shape
 
         """
-        return _TopTools.TopTools_DataMapNodeOfDataMapOfShapeListOfInteger_Key(self, *args)
+        return _TopTools.TopTools_DataMapNodeOfDataMapOfShapeListOfInteger_Key(self)
 
-    def Value(self, *args) -> "TColStd_ListOfInteger &" :
+    def Value(self):
         """
         :rtype: TColStd_ListOfInteger
 
         """
-        return _TopTools.TopTools_DataMapNodeOfDataMapOfShapeListOfInteger_Value(self, *args)
+        return _TopTools.TopTools_DataMapNodeOfDataMapOfShapeListOfInteger_Value(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(TopTools_DataMapNodeOfDataMapOfShapeListOfInteger self)"""
         return _TopTools.TopTools_DataMapNodeOfDataMapOfShapeListOfInteger__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_TopTools_DataMapNodeOfDataMapOfShapeListOfInteger" :
+    def GetHandle(self):
         """GetHandle(TopTools_DataMapNodeOfDataMapOfShapeListOfInteger self) -> Handle_TopTools_DataMapNodeOfDataMapOfShapeListOfInteger"""
         return _TopTools.TopTools_DataMapNodeOfDataMapOfShapeListOfInteger_GetHandle(self)
 
@@ -1595,7 +1594,7 @@ Handle_TopTools_DataMapNodeOfDataMapOfShapeListOfInteger._kill_pointed = new_ins
 Handle_TopTools_DataMapNodeOfDataMapOfShapeListOfInteger_swigregister = _TopTools.Handle_TopTools_DataMapNodeOfDataMapOfShapeListOfInteger_swigregister
 Handle_TopTools_DataMapNodeOfDataMapOfShapeListOfInteger_swigregister(Handle_TopTools_DataMapNodeOfDataMapOfShapeListOfInteger)
 
-def Handle_TopTools_DataMapNodeOfDataMapOfShapeListOfInteger_DownCast(*args) -> "Handle_TopTools_DataMapNodeOfDataMapOfShapeListOfInteger const" :
+def Handle_TopTools_DataMapNodeOfDataMapOfShapeListOfInteger_DownCast(*args):
   return _TopTools.Handle_TopTools_DataMapNodeOfDataMapOfShapeListOfInteger_DownCast(*args)
 Handle_TopTools_DataMapNodeOfDataMapOfShapeListOfInteger_DownCast = _TopTools.Handle_TopTools_DataMapNodeOfDataMapOfShapeListOfInteger_DownCast
 
@@ -1614,25 +1613,25 @@ class TopTools_DataMapNodeOfDataMapOfShapeListOfShape(OCC.TCollection.TCollectio
 
         """
         _TopTools.TopTools_DataMapNodeOfDataMapOfShapeListOfShape_swiginit(self,_TopTools.new_TopTools_DataMapNodeOfDataMapOfShapeListOfShape(*args))
-    def Key(self, *args) -> "TopoDS_Shape" :
+    def Key(self):
         """
         :rtype: TopoDS_Shape
 
         """
-        return _TopTools.TopTools_DataMapNodeOfDataMapOfShapeListOfShape_Key(self, *args)
+        return _TopTools.TopTools_DataMapNodeOfDataMapOfShapeListOfShape_Key(self)
 
-    def Value(self, *args) -> "TopTools_ListOfShape &" :
+    def Value(self):
         """
         :rtype: TopTools_ListOfShape
 
         """
-        return _TopTools.TopTools_DataMapNodeOfDataMapOfShapeListOfShape_Value(self, *args)
+        return _TopTools.TopTools_DataMapNodeOfDataMapOfShapeListOfShape_Value(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(TopTools_DataMapNodeOfDataMapOfShapeListOfShape self)"""
         return _TopTools.TopTools_DataMapNodeOfDataMapOfShapeListOfShape__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_TopTools_DataMapNodeOfDataMapOfShapeListOfShape" :
+    def GetHandle(self):
         """GetHandle(TopTools_DataMapNodeOfDataMapOfShapeListOfShape self) -> Handle_TopTools_DataMapNodeOfDataMapOfShapeListOfShape"""
         return _TopTools.TopTools_DataMapNodeOfDataMapOfShapeListOfShape_GetHandle(self)
 
@@ -1672,7 +1671,7 @@ Handle_TopTools_DataMapNodeOfDataMapOfShapeListOfShape._kill_pointed = new_insta
 Handle_TopTools_DataMapNodeOfDataMapOfShapeListOfShape_swigregister = _TopTools.Handle_TopTools_DataMapNodeOfDataMapOfShapeListOfShape_swigregister
 Handle_TopTools_DataMapNodeOfDataMapOfShapeListOfShape_swigregister(Handle_TopTools_DataMapNodeOfDataMapOfShapeListOfShape)
 
-def Handle_TopTools_DataMapNodeOfDataMapOfShapeListOfShape_DownCast(*args) -> "Handle_TopTools_DataMapNodeOfDataMapOfShapeListOfShape const" :
+def Handle_TopTools_DataMapNodeOfDataMapOfShapeListOfShape_DownCast(*args):
   return _TopTools.Handle_TopTools_DataMapNodeOfDataMapOfShapeListOfShape_DownCast(*args)
 Handle_TopTools_DataMapNodeOfDataMapOfShapeListOfShape_DownCast = _TopTools.Handle_TopTools_DataMapNodeOfDataMapOfShapeListOfShape_DownCast
 
@@ -1691,26 +1690,26 @@ class TopTools_DataMapNodeOfDataMapOfShapeReal(OCC.TCollection.TCollection_MapNo
 
         """
         _TopTools.TopTools_DataMapNodeOfDataMapOfShapeReal_swiginit(self,_TopTools.new_TopTools_DataMapNodeOfDataMapOfShapeReal(*args))
-    def Key(self, *args) -> "TopoDS_Shape" :
+    def Key(self):
         """
         :rtype: TopoDS_Shape
 
         """
-        return _TopTools.TopTools_DataMapNodeOfDataMapOfShapeReal_Key(self, *args)
+        return _TopTools.TopTools_DataMapNodeOfDataMapOfShapeReal_Key(self)
 
-    def GetValue(self) -> "Standard_Real" :
+    def GetValue(self):
         """GetValue(TopTools_DataMapNodeOfDataMapOfShapeReal self) -> Standard_Real"""
         return _TopTools.TopTools_DataMapNodeOfDataMapOfShapeReal_GetValue(self)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """SetValue(TopTools_DataMapNodeOfDataMapOfShapeReal self, Standard_Real value)"""
         return _TopTools.TopTools_DataMapNodeOfDataMapOfShapeReal_SetValue(self, *args)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(TopTools_DataMapNodeOfDataMapOfShapeReal self)"""
         return _TopTools.TopTools_DataMapNodeOfDataMapOfShapeReal__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_TopTools_DataMapNodeOfDataMapOfShapeReal" :
+    def GetHandle(self):
         """GetHandle(TopTools_DataMapNodeOfDataMapOfShapeReal self) -> Handle_TopTools_DataMapNodeOfDataMapOfShapeReal"""
         return _TopTools.TopTools_DataMapNodeOfDataMapOfShapeReal_GetHandle(self)
 
@@ -1751,7 +1750,7 @@ Handle_TopTools_DataMapNodeOfDataMapOfShapeReal._kill_pointed = new_instancemeth
 Handle_TopTools_DataMapNodeOfDataMapOfShapeReal_swigregister = _TopTools.Handle_TopTools_DataMapNodeOfDataMapOfShapeReal_swigregister
 Handle_TopTools_DataMapNodeOfDataMapOfShapeReal_swigregister(Handle_TopTools_DataMapNodeOfDataMapOfShapeReal)
 
-def Handle_TopTools_DataMapNodeOfDataMapOfShapeReal_DownCast(*args) -> "Handle_TopTools_DataMapNodeOfDataMapOfShapeReal const" :
+def Handle_TopTools_DataMapNodeOfDataMapOfShapeReal_DownCast(*args):
   return _TopTools.Handle_TopTools_DataMapNodeOfDataMapOfShapeReal_DownCast(*args)
 Handle_TopTools_DataMapNodeOfDataMapOfShapeReal_DownCast = _TopTools.Handle_TopTools_DataMapNodeOfDataMapOfShapeReal_DownCast
 
@@ -1770,25 +1769,25 @@ class TopTools_DataMapNodeOfDataMapOfShapeSequenceOfShape(OCC.TCollection.TColle
 
         """
         _TopTools.TopTools_DataMapNodeOfDataMapOfShapeSequenceOfShape_swiginit(self,_TopTools.new_TopTools_DataMapNodeOfDataMapOfShapeSequenceOfShape(*args))
-    def Key(self, *args) -> "TopoDS_Shape" :
+    def Key(self):
         """
         :rtype: TopoDS_Shape
 
         """
-        return _TopTools.TopTools_DataMapNodeOfDataMapOfShapeSequenceOfShape_Key(self, *args)
+        return _TopTools.TopTools_DataMapNodeOfDataMapOfShapeSequenceOfShape_Key(self)
 
-    def Value(self, *args) -> "TopTools_SequenceOfShape &" :
+    def Value(self):
         """
         :rtype: TopTools_SequenceOfShape
 
         """
-        return _TopTools.TopTools_DataMapNodeOfDataMapOfShapeSequenceOfShape_Value(self, *args)
+        return _TopTools.TopTools_DataMapNodeOfDataMapOfShapeSequenceOfShape_Value(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(TopTools_DataMapNodeOfDataMapOfShapeSequenceOfShape self)"""
         return _TopTools.TopTools_DataMapNodeOfDataMapOfShapeSequenceOfShape__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_TopTools_DataMapNodeOfDataMapOfShapeSequenceOfShape" :
+    def GetHandle(self):
         """GetHandle(TopTools_DataMapNodeOfDataMapOfShapeSequenceOfShape self) -> Handle_TopTools_DataMapNodeOfDataMapOfShapeSequenceOfShape"""
         return _TopTools.TopTools_DataMapNodeOfDataMapOfShapeSequenceOfShape_GetHandle(self)
 
@@ -1828,7 +1827,7 @@ Handle_TopTools_DataMapNodeOfDataMapOfShapeSequenceOfShape._kill_pointed = new_i
 Handle_TopTools_DataMapNodeOfDataMapOfShapeSequenceOfShape_swigregister = _TopTools.Handle_TopTools_DataMapNodeOfDataMapOfShapeSequenceOfShape_swigregister
 Handle_TopTools_DataMapNodeOfDataMapOfShapeSequenceOfShape_swigregister(Handle_TopTools_DataMapNodeOfDataMapOfShapeSequenceOfShape)
 
-def Handle_TopTools_DataMapNodeOfDataMapOfShapeSequenceOfShape_DownCast(*args) -> "Handle_TopTools_DataMapNodeOfDataMapOfShapeSequenceOfShape const" :
+def Handle_TopTools_DataMapNodeOfDataMapOfShapeSequenceOfShape_DownCast(*args):
   return _TopTools.Handle_TopTools_DataMapNodeOfDataMapOfShapeSequenceOfShape_DownCast(*args)
 Handle_TopTools_DataMapNodeOfDataMapOfShapeSequenceOfShape_DownCast = _TopTools.Handle_TopTools_DataMapNodeOfDataMapOfShapeSequenceOfShape_DownCast
 
@@ -1847,25 +1846,25 @@ class TopTools_DataMapNodeOfDataMapOfShapeShape(OCC.TCollection.TCollection_MapN
 
         """
         _TopTools.TopTools_DataMapNodeOfDataMapOfShapeShape_swiginit(self,_TopTools.new_TopTools_DataMapNodeOfDataMapOfShapeShape(*args))
-    def Key(self, *args) -> "TopoDS_Shape" :
+    def Key(self):
         """
         :rtype: TopoDS_Shape
 
         """
-        return _TopTools.TopTools_DataMapNodeOfDataMapOfShapeShape_Key(self, *args)
+        return _TopTools.TopTools_DataMapNodeOfDataMapOfShapeShape_Key(self)
 
-    def Value(self, *args) -> "TopoDS_Shape" :
+    def Value(self):
         """
         :rtype: TopoDS_Shape
 
         """
-        return _TopTools.TopTools_DataMapNodeOfDataMapOfShapeShape_Value(self, *args)
+        return _TopTools.TopTools_DataMapNodeOfDataMapOfShapeShape_Value(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(TopTools_DataMapNodeOfDataMapOfShapeShape self)"""
         return _TopTools.TopTools_DataMapNodeOfDataMapOfShapeShape__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_TopTools_DataMapNodeOfDataMapOfShapeShape" :
+    def GetHandle(self):
         """GetHandle(TopTools_DataMapNodeOfDataMapOfShapeShape self) -> Handle_TopTools_DataMapNodeOfDataMapOfShapeShape"""
         return _TopTools.TopTools_DataMapNodeOfDataMapOfShapeShape_GetHandle(self)
 
@@ -1905,22 +1904,26 @@ Handle_TopTools_DataMapNodeOfDataMapOfShapeShape._kill_pointed = new_instancemet
 Handle_TopTools_DataMapNodeOfDataMapOfShapeShape_swigregister = _TopTools.Handle_TopTools_DataMapNodeOfDataMapOfShapeShape_swigregister
 Handle_TopTools_DataMapNodeOfDataMapOfShapeShape_swigregister(Handle_TopTools_DataMapNodeOfDataMapOfShapeShape)
 
-def Handle_TopTools_DataMapNodeOfDataMapOfShapeShape_DownCast(*args) -> "Handle_TopTools_DataMapNodeOfDataMapOfShapeShape const" :
+def Handle_TopTools_DataMapNodeOfDataMapOfShapeShape_DownCast(*args):
   return _TopTools.Handle_TopTools_DataMapNodeOfDataMapOfShapeShape_DownCast(*args)
 Handle_TopTools_DataMapNodeOfDataMapOfShapeShape_DownCast = _TopTools.Handle_TopTools_DataMapNodeOfDataMapOfShapeShape_DownCast
 
 class TopTools_DataMapOfIntegerListOfShape(OCC.TCollection.TCollection_BasicMap):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self, NbBuckets=1): 
         """
         :param NbBuckets: default value is 1
-        :type NbBuckets: int
+        :type NbBuckets: Standard_Integer
+        :rtype: None
+
+        :param NbBuckets: default value is 1
+        :type NbBuckets: Standard_Integer
         :rtype: None
 
         """
-        _TopTools.TopTools_DataMapOfIntegerListOfShape_swiginit(self,_TopTools.new_TopTools_DataMapOfIntegerListOfShape(*args))
-    def Assign(self, *args) -> "TopTools_DataMapOfIntegerListOfShape &" :
+        _TopTools.TopTools_DataMapOfIntegerListOfShape_swiginit(self,_TopTools.new_TopTools_DataMapOfIntegerListOfShape(NbBuckets))
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: TopTools_DataMapOfIntegerListOfShape &
@@ -1929,7 +1932,7 @@ class TopTools_DataMapOfIntegerListOfShape(OCC.TCollection.TCollection_BasicMap)
         """
         return _TopTools.TopTools_DataMapOfIntegerListOfShape_Assign(self, *args)
 
-    def Set(self, *args) -> "TopTools_DataMapOfIntegerListOfShape &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: TopTools_DataMapOfIntegerListOfShape &
@@ -1938,26 +1941,26 @@ class TopTools_DataMapOfIntegerListOfShape(OCC.TCollection.TCollection_BasicMap)
         """
         return _TopTools.TopTools_DataMapOfIntegerListOfShape_Set(self, *args)
 
-    def ReSize(self, *args) -> "void" :
+    def ReSize(self, *args):
         """
         :param NbBuckets:
-        :type NbBuckets: int
+        :type NbBuckets: Standard_Integer
         :rtype: None
 
         """
         return _TopTools.TopTools_DataMapOfIntegerListOfShape_ReSize(self, *args)
 
-    def Clear(self, *args) -> "void" :
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _TopTools.TopTools_DataMapOfIntegerListOfShape_Clear(self, *args)
+        return _TopTools.TopTools_DataMapOfIntegerListOfShape_Clear(self)
 
-    def Bind(self, *args) -> "Standard_Boolean" :
+    def Bind(self, *args):
         """
         :param K:
-        :type K: int &
+        :type K: Standard_Integer &
         :param I:
         :type I: TopTools_ListOfShape &
         :rtype: bool
@@ -1965,61 +1968,61 @@ class TopTools_DataMapOfIntegerListOfShape(OCC.TCollection.TCollection_BasicMap)
         """
         return _TopTools.TopTools_DataMapOfIntegerListOfShape_Bind(self, *args)
 
-    def IsBound(self, *args) -> "Standard_Boolean" :
+    def IsBound(self):
         """
         :param K:
-        :type K: int &
+        :type K: Standard_Integer &
         :rtype: bool
 
         """
-        return _TopTools.TopTools_DataMapOfIntegerListOfShape_IsBound(self, *args)
+        return _TopTools.TopTools_DataMapOfIntegerListOfShape_IsBound(self)
 
-    def UnBind(self, *args) -> "Standard_Boolean" :
+    def UnBind(self):
         """
         :param K:
-        :type K: int &
+        :type K: Standard_Integer &
         :rtype: bool
 
         """
-        return _TopTools.TopTools_DataMapOfIntegerListOfShape_UnBind(self, *args)
+        return _TopTools.TopTools_DataMapOfIntegerListOfShape_UnBind(self)
 
-    def Find(self, *args) -> "TopTools_ListOfShape const &" :
+    def Find(self):
         """
         :param K:
-        :type K: int &
+        :type K: Standard_Integer &
         :rtype: TopTools_ListOfShape
 
         """
-        return _TopTools.TopTools_DataMapOfIntegerListOfShape_Find(self, *args)
+        return _TopTools.TopTools_DataMapOfIntegerListOfShape_Find(self)
 
-    def ChangeFind(self, *args) -> "TopTools_ListOfShape &" :
+    def ChangeFind(self):
         """
         :param K:
-        :type K: int &
+        :type K: Standard_Integer &
         :rtype: TopTools_ListOfShape
 
         """
-        return _TopTools.TopTools_DataMapOfIntegerListOfShape_ChangeFind(self, *args)
+        return _TopTools.TopTools_DataMapOfIntegerListOfShape_ChangeFind(self)
 
-    def Find1(self, *args) -> "Standard_Address" :
+    def Find1(self):
         """
         :param K:
-        :type K: int &
+        :type K: Standard_Integer &
         :rtype: Standard_Address
 
         """
-        return _TopTools.TopTools_DataMapOfIntegerListOfShape_Find1(self, *args)
+        return _TopTools.TopTools_DataMapOfIntegerListOfShape_Find1(self)
 
-    def ChangeFind1(self, *args) -> "Standard_Address" :
+    def ChangeFind1(self):
         """
         :param K:
-        :type K: int &
+        :type K: Standard_Integer &
         :rtype: Standard_Address
 
         """
-        return _TopTools.TopTools_DataMapOfIntegerListOfShape_ChangeFind1(self, *args)
+        return _TopTools.TopTools_DataMapOfIntegerListOfShape_ChangeFind1(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(TopTools_DataMapOfIntegerListOfShape self)"""
         return _TopTools.TopTools_DataMapOfIntegerListOfShape__kill_pointed(self)
 
@@ -2049,15 +2052,19 @@ TopTools_DataMapOfIntegerListOfShape_swigregister(TopTools_DataMapOfIntegerListO
 class TopTools_DataMapOfIntegerShape(OCC.TCollection.TCollection_BasicMap):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self, NbBuckets=1): 
         """
         :param NbBuckets: default value is 1
-        :type NbBuckets: int
+        :type NbBuckets: Standard_Integer
+        :rtype: None
+
+        :param NbBuckets: default value is 1
+        :type NbBuckets: Standard_Integer
         :rtype: None
 
         """
-        _TopTools.TopTools_DataMapOfIntegerShape_swiginit(self,_TopTools.new_TopTools_DataMapOfIntegerShape(*args))
-    def Assign(self, *args) -> "TopTools_DataMapOfIntegerShape &" :
+        _TopTools.TopTools_DataMapOfIntegerShape_swiginit(self,_TopTools.new_TopTools_DataMapOfIntegerShape(NbBuckets))
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: TopTools_DataMapOfIntegerShape &
@@ -2066,7 +2073,7 @@ class TopTools_DataMapOfIntegerShape(OCC.TCollection.TCollection_BasicMap):
         """
         return _TopTools.TopTools_DataMapOfIntegerShape_Assign(self, *args)
 
-    def Set(self, *args) -> "TopTools_DataMapOfIntegerShape &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: TopTools_DataMapOfIntegerShape &
@@ -2075,26 +2082,26 @@ class TopTools_DataMapOfIntegerShape(OCC.TCollection.TCollection_BasicMap):
         """
         return _TopTools.TopTools_DataMapOfIntegerShape_Set(self, *args)
 
-    def ReSize(self, *args) -> "void" :
+    def ReSize(self, *args):
         """
         :param NbBuckets:
-        :type NbBuckets: int
+        :type NbBuckets: Standard_Integer
         :rtype: None
 
         """
         return _TopTools.TopTools_DataMapOfIntegerShape_ReSize(self, *args)
 
-    def Clear(self, *args) -> "void" :
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _TopTools.TopTools_DataMapOfIntegerShape_Clear(self, *args)
+        return _TopTools.TopTools_DataMapOfIntegerShape_Clear(self)
 
-    def Bind(self, *args) -> "Standard_Boolean" :
+    def Bind(self, *args):
         """
         :param K:
-        :type K: int &
+        :type K: Standard_Integer &
         :param I:
         :type I: TopoDS_Shape &
         :rtype: bool
@@ -2102,61 +2109,61 @@ class TopTools_DataMapOfIntegerShape(OCC.TCollection.TCollection_BasicMap):
         """
         return _TopTools.TopTools_DataMapOfIntegerShape_Bind(self, *args)
 
-    def IsBound(self, *args) -> "Standard_Boolean" :
+    def IsBound(self):
         """
         :param K:
-        :type K: int &
+        :type K: Standard_Integer &
         :rtype: bool
 
         """
-        return _TopTools.TopTools_DataMapOfIntegerShape_IsBound(self, *args)
+        return _TopTools.TopTools_DataMapOfIntegerShape_IsBound(self)
 
-    def UnBind(self, *args) -> "Standard_Boolean" :
+    def UnBind(self):
         """
         :param K:
-        :type K: int &
+        :type K: Standard_Integer &
         :rtype: bool
 
         """
-        return _TopTools.TopTools_DataMapOfIntegerShape_UnBind(self, *args)
+        return _TopTools.TopTools_DataMapOfIntegerShape_UnBind(self)
 
-    def Find(self, *args) -> "TopoDS_Shape const" :
+    def Find(self):
         """
         :param K:
-        :type K: int &
+        :type K: Standard_Integer &
         :rtype: TopoDS_Shape
 
         """
-        return _TopTools.TopTools_DataMapOfIntegerShape_Find(self, *args)
+        return _TopTools.TopTools_DataMapOfIntegerShape_Find(self)
 
-    def ChangeFind(self, *args) -> "TopoDS_Shape" :
+    def ChangeFind(self):
         """
         :param K:
-        :type K: int &
+        :type K: Standard_Integer &
         :rtype: TopoDS_Shape
 
         """
-        return _TopTools.TopTools_DataMapOfIntegerShape_ChangeFind(self, *args)
+        return _TopTools.TopTools_DataMapOfIntegerShape_ChangeFind(self)
 
-    def Find1(self, *args) -> "Standard_Address" :
+    def Find1(self):
         """
         :param K:
-        :type K: int &
+        :type K: Standard_Integer &
         :rtype: Standard_Address
 
         """
-        return _TopTools.TopTools_DataMapOfIntegerShape_Find1(self, *args)
+        return _TopTools.TopTools_DataMapOfIntegerShape_Find1(self)
 
-    def ChangeFind1(self, *args) -> "Standard_Address" :
+    def ChangeFind1(self):
         """
         :param K:
-        :type K: int &
+        :type K: Standard_Integer &
         :rtype: Standard_Address
 
         """
-        return _TopTools.TopTools_DataMapOfIntegerShape_ChangeFind1(self, *args)
+        return _TopTools.TopTools_DataMapOfIntegerShape_ChangeFind1(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(TopTools_DataMapOfIntegerShape self)"""
         return _TopTools.TopTools_DataMapOfIntegerShape__kill_pointed(self)
 
@@ -2186,15 +2193,19 @@ TopTools_DataMapOfIntegerShape_swigregister(TopTools_DataMapOfIntegerShape)
 class TopTools_DataMapOfOrientedShapeInteger(OCC.TCollection.TCollection_BasicMap):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self, NbBuckets=1): 
         """
         :param NbBuckets: default value is 1
-        :type NbBuckets: int
+        :type NbBuckets: Standard_Integer
+        :rtype: None
+
+        :param NbBuckets: default value is 1
+        :type NbBuckets: Standard_Integer
         :rtype: None
 
         """
-        _TopTools.TopTools_DataMapOfOrientedShapeInteger_swiginit(self,_TopTools.new_TopTools_DataMapOfOrientedShapeInteger(*args))
-    def Assign(self, *args) -> "TopTools_DataMapOfOrientedShapeInteger &" :
+        _TopTools.TopTools_DataMapOfOrientedShapeInteger_swiginit(self,_TopTools.new_TopTools_DataMapOfOrientedShapeInteger(NbBuckets))
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: TopTools_DataMapOfOrientedShapeInteger &
@@ -2203,7 +2214,7 @@ class TopTools_DataMapOfOrientedShapeInteger(OCC.TCollection.TCollection_BasicMa
         """
         return _TopTools.TopTools_DataMapOfOrientedShapeInteger_Assign(self, *args)
 
-    def Set(self, *args) -> "TopTools_DataMapOfOrientedShapeInteger &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: TopTools_DataMapOfOrientedShapeInteger &
@@ -2212,34 +2223,34 @@ class TopTools_DataMapOfOrientedShapeInteger(OCC.TCollection.TCollection_BasicMa
         """
         return _TopTools.TopTools_DataMapOfOrientedShapeInteger_Set(self, *args)
 
-    def ReSize(self, *args) -> "void" :
+    def ReSize(self, *args):
         """
         :param NbBuckets:
-        :type NbBuckets: int
+        :type NbBuckets: Standard_Integer
         :rtype: None
 
         """
         return _TopTools.TopTools_DataMapOfOrientedShapeInteger_ReSize(self, *args)
 
-    def Clear(self, *args) -> "void" :
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _TopTools.TopTools_DataMapOfOrientedShapeInteger_Clear(self, *args)
+        return _TopTools.TopTools_DataMapOfOrientedShapeInteger_Clear(self)
 
-    def Bind(self, *args) -> "Standard_Boolean" :
+    def Bind(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
         :param I:
-        :type I: int &
+        :type I: Standard_Integer &
         :rtype: bool
 
         """
         return _TopTools.TopTools_DataMapOfOrientedShapeInteger_Bind(self, *args)
 
-    def IsBound(self, *args) -> "Standard_Boolean" :
+    def IsBound(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -2248,7 +2259,7 @@ class TopTools_DataMapOfOrientedShapeInteger(OCC.TCollection.TCollection_BasicMa
         """
         return _TopTools.TopTools_DataMapOfOrientedShapeInteger_IsBound(self, *args)
 
-    def UnBind(self, *args) -> "Standard_Boolean" :
+    def UnBind(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -2257,7 +2268,7 @@ class TopTools_DataMapOfOrientedShapeInteger(OCC.TCollection.TCollection_BasicMa
         """
         return _TopTools.TopTools_DataMapOfOrientedShapeInteger_UnBind(self, *args)
 
-    def Find(self, *args) -> "Standard_Integer const &" :
+    def Find(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -2266,7 +2277,7 @@ class TopTools_DataMapOfOrientedShapeInteger(OCC.TCollection.TCollection_BasicMa
         """
         return _TopTools.TopTools_DataMapOfOrientedShapeInteger_Find(self, *args)
 
-    def ChangeFind(self, *args) -> "Standard_Integer &" :
+    def ChangeFind(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -2275,7 +2286,7 @@ class TopTools_DataMapOfOrientedShapeInteger(OCC.TCollection.TCollection_BasicMa
         """
         return _TopTools.TopTools_DataMapOfOrientedShapeInteger_ChangeFind(self, *args)
 
-    def Find1(self, *args) -> "Standard_Address" :
+    def Find1(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -2284,7 +2295,7 @@ class TopTools_DataMapOfOrientedShapeInteger(OCC.TCollection.TCollection_BasicMa
         """
         return _TopTools.TopTools_DataMapOfOrientedShapeInteger_Find1(self, *args)
 
-    def ChangeFind1(self, *args) -> "Standard_Address" :
+    def ChangeFind1(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -2293,7 +2304,7 @@ class TopTools_DataMapOfOrientedShapeInteger(OCC.TCollection.TCollection_BasicMa
         """
         return _TopTools.TopTools_DataMapOfOrientedShapeInteger_ChangeFind1(self, *args)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(TopTools_DataMapOfOrientedShapeInteger self)"""
         return _TopTools.TopTools_DataMapOfOrientedShapeInteger__kill_pointed(self)
 
@@ -2323,15 +2334,19 @@ TopTools_DataMapOfOrientedShapeInteger_swigregister(TopTools_DataMapOfOrientedSh
 class TopTools_DataMapOfOrientedShapeShape(OCC.TCollection.TCollection_BasicMap):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self, NbBuckets=1): 
         """
         :param NbBuckets: default value is 1
-        :type NbBuckets: int
+        :type NbBuckets: Standard_Integer
+        :rtype: None
+
+        :param NbBuckets: default value is 1
+        :type NbBuckets: Standard_Integer
         :rtype: None
 
         """
-        _TopTools.TopTools_DataMapOfOrientedShapeShape_swiginit(self,_TopTools.new_TopTools_DataMapOfOrientedShapeShape(*args))
-    def Assign(self, *args) -> "TopTools_DataMapOfOrientedShapeShape &" :
+        _TopTools.TopTools_DataMapOfOrientedShapeShape_swiginit(self,_TopTools.new_TopTools_DataMapOfOrientedShapeShape(NbBuckets))
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: TopTools_DataMapOfOrientedShapeShape &
@@ -2340,7 +2355,7 @@ class TopTools_DataMapOfOrientedShapeShape(OCC.TCollection.TCollection_BasicMap)
         """
         return _TopTools.TopTools_DataMapOfOrientedShapeShape_Assign(self, *args)
 
-    def Set(self, *args) -> "TopTools_DataMapOfOrientedShapeShape &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: TopTools_DataMapOfOrientedShapeShape &
@@ -2349,23 +2364,23 @@ class TopTools_DataMapOfOrientedShapeShape(OCC.TCollection.TCollection_BasicMap)
         """
         return _TopTools.TopTools_DataMapOfOrientedShapeShape_Set(self, *args)
 
-    def ReSize(self, *args) -> "void" :
+    def ReSize(self, *args):
         """
         :param NbBuckets:
-        :type NbBuckets: int
+        :type NbBuckets: Standard_Integer
         :rtype: None
 
         """
         return _TopTools.TopTools_DataMapOfOrientedShapeShape_ReSize(self, *args)
 
-    def Clear(self, *args) -> "void" :
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _TopTools.TopTools_DataMapOfOrientedShapeShape_Clear(self, *args)
+        return _TopTools.TopTools_DataMapOfOrientedShapeShape_Clear(self)
 
-    def Bind(self, *args) -> "Standard_Boolean" :
+    def Bind(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -2376,7 +2391,7 @@ class TopTools_DataMapOfOrientedShapeShape(OCC.TCollection.TCollection_BasicMap)
         """
         return _TopTools.TopTools_DataMapOfOrientedShapeShape_Bind(self, *args)
 
-    def IsBound(self, *args) -> "Standard_Boolean" :
+    def IsBound(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -2385,7 +2400,7 @@ class TopTools_DataMapOfOrientedShapeShape(OCC.TCollection.TCollection_BasicMap)
         """
         return _TopTools.TopTools_DataMapOfOrientedShapeShape_IsBound(self, *args)
 
-    def UnBind(self, *args) -> "Standard_Boolean" :
+    def UnBind(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -2394,7 +2409,7 @@ class TopTools_DataMapOfOrientedShapeShape(OCC.TCollection.TCollection_BasicMap)
         """
         return _TopTools.TopTools_DataMapOfOrientedShapeShape_UnBind(self, *args)
 
-    def Find(self, *args) -> "TopoDS_Shape const" :
+    def Find(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -2403,7 +2418,7 @@ class TopTools_DataMapOfOrientedShapeShape(OCC.TCollection.TCollection_BasicMap)
         """
         return _TopTools.TopTools_DataMapOfOrientedShapeShape_Find(self, *args)
 
-    def ChangeFind(self, *args) -> "TopoDS_Shape" :
+    def ChangeFind(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -2412,7 +2427,7 @@ class TopTools_DataMapOfOrientedShapeShape(OCC.TCollection.TCollection_BasicMap)
         """
         return _TopTools.TopTools_DataMapOfOrientedShapeShape_ChangeFind(self, *args)
 
-    def Find1(self, *args) -> "Standard_Address" :
+    def Find1(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -2421,7 +2436,7 @@ class TopTools_DataMapOfOrientedShapeShape(OCC.TCollection.TCollection_BasicMap)
         """
         return _TopTools.TopTools_DataMapOfOrientedShapeShape_Find1(self, *args)
 
-    def ChangeFind1(self, *args) -> "Standard_Address" :
+    def ChangeFind1(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -2430,7 +2445,7 @@ class TopTools_DataMapOfOrientedShapeShape(OCC.TCollection.TCollection_BasicMap)
         """
         return _TopTools.TopTools_DataMapOfOrientedShapeShape_ChangeFind1(self, *args)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(TopTools_DataMapOfOrientedShapeShape self)"""
         return _TopTools.TopTools_DataMapOfOrientedShapeShape__kill_pointed(self)
 
@@ -2460,15 +2475,19 @@ TopTools_DataMapOfOrientedShapeShape_swigregister(TopTools_DataMapOfOrientedShap
 class TopTools_DataMapOfShapeInteger(OCC.TCollection.TCollection_BasicMap):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self, NbBuckets=1): 
         """
         :param NbBuckets: default value is 1
-        :type NbBuckets: int
+        :type NbBuckets: Standard_Integer
+        :rtype: None
+
+        :param NbBuckets: default value is 1
+        :type NbBuckets: Standard_Integer
         :rtype: None
 
         """
-        _TopTools.TopTools_DataMapOfShapeInteger_swiginit(self,_TopTools.new_TopTools_DataMapOfShapeInteger(*args))
-    def Assign(self, *args) -> "TopTools_DataMapOfShapeInteger &" :
+        _TopTools.TopTools_DataMapOfShapeInteger_swiginit(self,_TopTools.new_TopTools_DataMapOfShapeInteger(NbBuckets))
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: TopTools_DataMapOfShapeInteger &
@@ -2477,7 +2496,7 @@ class TopTools_DataMapOfShapeInteger(OCC.TCollection.TCollection_BasicMap):
         """
         return _TopTools.TopTools_DataMapOfShapeInteger_Assign(self, *args)
 
-    def Set(self, *args) -> "TopTools_DataMapOfShapeInteger &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: TopTools_DataMapOfShapeInteger &
@@ -2486,34 +2505,34 @@ class TopTools_DataMapOfShapeInteger(OCC.TCollection.TCollection_BasicMap):
         """
         return _TopTools.TopTools_DataMapOfShapeInteger_Set(self, *args)
 
-    def ReSize(self, *args) -> "void" :
+    def ReSize(self, *args):
         """
         :param NbBuckets:
-        :type NbBuckets: int
+        :type NbBuckets: Standard_Integer
         :rtype: None
 
         """
         return _TopTools.TopTools_DataMapOfShapeInteger_ReSize(self, *args)
 
-    def Clear(self, *args) -> "void" :
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _TopTools.TopTools_DataMapOfShapeInteger_Clear(self, *args)
+        return _TopTools.TopTools_DataMapOfShapeInteger_Clear(self)
 
-    def Bind(self, *args) -> "Standard_Boolean" :
+    def Bind(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
         :param I:
-        :type I: int &
+        :type I: Standard_Integer &
         :rtype: bool
 
         """
         return _TopTools.TopTools_DataMapOfShapeInteger_Bind(self, *args)
 
-    def IsBound(self, *args) -> "Standard_Boolean" :
+    def IsBound(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -2522,7 +2541,7 @@ class TopTools_DataMapOfShapeInteger(OCC.TCollection.TCollection_BasicMap):
         """
         return _TopTools.TopTools_DataMapOfShapeInteger_IsBound(self, *args)
 
-    def UnBind(self, *args) -> "Standard_Boolean" :
+    def UnBind(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -2531,7 +2550,7 @@ class TopTools_DataMapOfShapeInteger(OCC.TCollection.TCollection_BasicMap):
         """
         return _TopTools.TopTools_DataMapOfShapeInteger_UnBind(self, *args)
 
-    def Find(self, *args) -> "Standard_Integer const &" :
+    def Find(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -2540,7 +2559,7 @@ class TopTools_DataMapOfShapeInteger(OCC.TCollection.TCollection_BasicMap):
         """
         return _TopTools.TopTools_DataMapOfShapeInteger_Find(self, *args)
 
-    def ChangeFind(self, *args) -> "Standard_Integer &" :
+    def ChangeFind(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -2549,7 +2568,7 @@ class TopTools_DataMapOfShapeInteger(OCC.TCollection.TCollection_BasicMap):
         """
         return _TopTools.TopTools_DataMapOfShapeInteger_ChangeFind(self, *args)
 
-    def Find1(self, *args) -> "Standard_Address" :
+    def Find1(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -2558,7 +2577,7 @@ class TopTools_DataMapOfShapeInteger(OCC.TCollection.TCollection_BasicMap):
         """
         return _TopTools.TopTools_DataMapOfShapeInteger_Find1(self, *args)
 
-    def ChangeFind1(self, *args) -> "Standard_Address" :
+    def ChangeFind1(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -2567,7 +2586,7 @@ class TopTools_DataMapOfShapeInteger(OCC.TCollection.TCollection_BasicMap):
         """
         return _TopTools.TopTools_DataMapOfShapeInteger_ChangeFind1(self, *args)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(TopTools_DataMapOfShapeInteger self)"""
         return _TopTools.TopTools_DataMapOfShapeInteger__kill_pointed(self)
 
@@ -2597,15 +2616,19 @@ TopTools_DataMapOfShapeInteger_swigregister(TopTools_DataMapOfShapeInteger)
 class TopTools_DataMapOfShapeListOfInteger(OCC.TCollection.TCollection_BasicMap):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self, NbBuckets=1): 
         """
         :param NbBuckets: default value is 1
-        :type NbBuckets: int
+        :type NbBuckets: Standard_Integer
+        :rtype: None
+
+        :param NbBuckets: default value is 1
+        :type NbBuckets: Standard_Integer
         :rtype: None
 
         """
-        _TopTools.TopTools_DataMapOfShapeListOfInteger_swiginit(self,_TopTools.new_TopTools_DataMapOfShapeListOfInteger(*args))
-    def Assign(self, *args) -> "TopTools_DataMapOfShapeListOfInteger &" :
+        _TopTools.TopTools_DataMapOfShapeListOfInteger_swiginit(self,_TopTools.new_TopTools_DataMapOfShapeListOfInteger(NbBuckets))
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: TopTools_DataMapOfShapeListOfInteger &
@@ -2614,7 +2637,7 @@ class TopTools_DataMapOfShapeListOfInteger(OCC.TCollection.TCollection_BasicMap)
         """
         return _TopTools.TopTools_DataMapOfShapeListOfInteger_Assign(self, *args)
 
-    def Set(self, *args) -> "TopTools_DataMapOfShapeListOfInteger &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: TopTools_DataMapOfShapeListOfInteger &
@@ -2623,23 +2646,23 @@ class TopTools_DataMapOfShapeListOfInteger(OCC.TCollection.TCollection_BasicMap)
         """
         return _TopTools.TopTools_DataMapOfShapeListOfInteger_Set(self, *args)
 
-    def ReSize(self, *args) -> "void" :
+    def ReSize(self, *args):
         """
         :param NbBuckets:
-        :type NbBuckets: int
+        :type NbBuckets: Standard_Integer
         :rtype: None
 
         """
         return _TopTools.TopTools_DataMapOfShapeListOfInteger_ReSize(self, *args)
 
-    def Clear(self, *args) -> "void" :
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _TopTools.TopTools_DataMapOfShapeListOfInteger_Clear(self, *args)
+        return _TopTools.TopTools_DataMapOfShapeListOfInteger_Clear(self)
 
-    def Bind(self, *args) -> "Standard_Boolean" :
+    def Bind(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -2650,7 +2673,7 @@ class TopTools_DataMapOfShapeListOfInteger(OCC.TCollection.TCollection_BasicMap)
         """
         return _TopTools.TopTools_DataMapOfShapeListOfInteger_Bind(self, *args)
 
-    def IsBound(self, *args) -> "Standard_Boolean" :
+    def IsBound(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -2659,7 +2682,7 @@ class TopTools_DataMapOfShapeListOfInteger(OCC.TCollection.TCollection_BasicMap)
         """
         return _TopTools.TopTools_DataMapOfShapeListOfInteger_IsBound(self, *args)
 
-    def UnBind(self, *args) -> "Standard_Boolean" :
+    def UnBind(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -2668,7 +2691,7 @@ class TopTools_DataMapOfShapeListOfInteger(OCC.TCollection.TCollection_BasicMap)
         """
         return _TopTools.TopTools_DataMapOfShapeListOfInteger_UnBind(self, *args)
 
-    def Find(self, *args) -> "TColStd_ListOfInteger const &" :
+    def Find(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -2677,7 +2700,7 @@ class TopTools_DataMapOfShapeListOfInteger(OCC.TCollection.TCollection_BasicMap)
         """
         return _TopTools.TopTools_DataMapOfShapeListOfInteger_Find(self, *args)
 
-    def ChangeFind(self, *args) -> "TColStd_ListOfInteger &" :
+    def ChangeFind(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -2686,7 +2709,7 @@ class TopTools_DataMapOfShapeListOfInteger(OCC.TCollection.TCollection_BasicMap)
         """
         return _TopTools.TopTools_DataMapOfShapeListOfInteger_ChangeFind(self, *args)
 
-    def Find1(self, *args) -> "Standard_Address" :
+    def Find1(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -2695,7 +2718,7 @@ class TopTools_DataMapOfShapeListOfInteger(OCC.TCollection.TCollection_BasicMap)
         """
         return _TopTools.TopTools_DataMapOfShapeListOfInteger_Find1(self, *args)
 
-    def ChangeFind1(self, *args) -> "Standard_Address" :
+    def ChangeFind1(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -2704,7 +2727,7 @@ class TopTools_DataMapOfShapeListOfInteger(OCC.TCollection.TCollection_BasicMap)
         """
         return _TopTools.TopTools_DataMapOfShapeListOfInteger_ChangeFind1(self, *args)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(TopTools_DataMapOfShapeListOfInteger self)"""
         return _TopTools.TopTools_DataMapOfShapeListOfInteger__kill_pointed(self)
 
@@ -2734,15 +2757,19 @@ TopTools_DataMapOfShapeListOfInteger_swigregister(TopTools_DataMapOfShapeListOfI
 class TopTools_DataMapOfShapeListOfShape(OCC.TCollection.TCollection_BasicMap):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self, NbBuckets=1): 
         """
         :param NbBuckets: default value is 1
-        :type NbBuckets: int
+        :type NbBuckets: Standard_Integer
+        :rtype: None
+
+        :param NbBuckets: default value is 1
+        :type NbBuckets: Standard_Integer
         :rtype: None
 
         """
-        _TopTools.TopTools_DataMapOfShapeListOfShape_swiginit(self,_TopTools.new_TopTools_DataMapOfShapeListOfShape(*args))
-    def Assign(self, *args) -> "TopTools_DataMapOfShapeListOfShape &" :
+        _TopTools.TopTools_DataMapOfShapeListOfShape_swiginit(self,_TopTools.new_TopTools_DataMapOfShapeListOfShape(NbBuckets))
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: TopTools_DataMapOfShapeListOfShape &
@@ -2751,7 +2778,7 @@ class TopTools_DataMapOfShapeListOfShape(OCC.TCollection.TCollection_BasicMap):
         """
         return _TopTools.TopTools_DataMapOfShapeListOfShape_Assign(self, *args)
 
-    def Set(self, *args) -> "TopTools_DataMapOfShapeListOfShape &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: TopTools_DataMapOfShapeListOfShape &
@@ -2760,23 +2787,23 @@ class TopTools_DataMapOfShapeListOfShape(OCC.TCollection.TCollection_BasicMap):
         """
         return _TopTools.TopTools_DataMapOfShapeListOfShape_Set(self, *args)
 
-    def ReSize(self, *args) -> "void" :
+    def ReSize(self, *args):
         """
         :param NbBuckets:
-        :type NbBuckets: int
+        :type NbBuckets: Standard_Integer
         :rtype: None
 
         """
         return _TopTools.TopTools_DataMapOfShapeListOfShape_ReSize(self, *args)
 
-    def Clear(self, *args) -> "void" :
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _TopTools.TopTools_DataMapOfShapeListOfShape_Clear(self, *args)
+        return _TopTools.TopTools_DataMapOfShapeListOfShape_Clear(self)
 
-    def Bind(self, *args) -> "Standard_Boolean" :
+    def Bind(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -2787,7 +2814,7 @@ class TopTools_DataMapOfShapeListOfShape(OCC.TCollection.TCollection_BasicMap):
         """
         return _TopTools.TopTools_DataMapOfShapeListOfShape_Bind(self, *args)
 
-    def IsBound(self, *args) -> "Standard_Boolean" :
+    def IsBound(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -2796,7 +2823,7 @@ class TopTools_DataMapOfShapeListOfShape(OCC.TCollection.TCollection_BasicMap):
         """
         return _TopTools.TopTools_DataMapOfShapeListOfShape_IsBound(self, *args)
 
-    def UnBind(self, *args) -> "Standard_Boolean" :
+    def UnBind(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -2805,7 +2832,7 @@ class TopTools_DataMapOfShapeListOfShape(OCC.TCollection.TCollection_BasicMap):
         """
         return _TopTools.TopTools_DataMapOfShapeListOfShape_UnBind(self, *args)
 
-    def Find(self, *args) -> "TopTools_ListOfShape const &" :
+    def Find(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -2814,7 +2841,7 @@ class TopTools_DataMapOfShapeListOfShape(OCC.TCollection.TCollection_BasicMap):
         """
         return _TopTools.TopTools_DataMapOfShapeListOfShape_Find(self, *args)
 
-    def ChangeFind(self, *args) -> "TopTools_ListOfShape &" :
+    def ChangeFind(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -2823,7 +2850,7 @@ class TopTools_DataMapOfShapeListOfShape(OCC.TCollection.TCollection_BasicMap):
         """
         return _TopTools.TopTools_DataMapOfShapeListOfShape_ChangeFind(self, *args)
 
-    def Find1(self, *args) -> "Standard_Address" :
+    def Find1(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -2832,7 +2859,7 @@ class TopTools_DataMapOfShapeListOfShape(OCC.TCollection.TCollection_BasicMap):
         """
         return _TopTools.TopTools_DataMapOfShapeListOfShape_Find1(self, *args)
 
-    def ChangeFind1(self, *args) -> "Standard_Address" :
+    def ChangeFind1(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -2841,7 +2868,7 @@ class TopTools_DataMapOfShapeListOfShape(OCC.TCollection.TCollection_BasicMap):
         """
         return _TopTools.TopTools_DataMapOfShapeListOfShape_ChangeFind1(self, *args)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(TopTools_DataMapOfShapeListOfShape self)"""
         return _TopTools.TopTools_DataMapOfShapeListOfShape__kill_pointed(self)
 
@@ -2871,15 +2898,19 @@ TopTools_DataMapOfShapeListOfShape_swigregister(TopTools_DataMapOfShapeListOfSha
 class TopTools_DataMapOfShapeReal(OCC.TCollection.TCollection_BasicMap):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self, NbBuckets=1): 
         """
         :param NbBuckets: default value is 1
-        :type NbBuckets: int
+        :type NbBuckets: Standard_Integer
+        :rtype: None
+
+        :param NbBuckets: default value is 1
+        :type NbBuckets: Standard_Integer
         :rtype: None
 
         """
-        _TopTools.TopTools_DataMapOfShapeReal_swiginit(self,_TopTools.new_TopTools_DataMapOfShapeReal(*args))
-    def Assign(self, *args) -> "TopTools_DataMapOfShapeReal &" :
+        _TopTools.TopTools_DataMapOfShapeReal_swiginit(self,_TopTools.new_TopTools_DataMapOfShapeReal(NbBuckets))
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: TopTools_DataMapOfShapeReal &
@@ -2888,7 +2919,7 @@ class TopTools_DataMapOfShapeReal(OCC.TCollection.TCollection_BasicMap):
         """
         return _TopTools.TopTools_DataMapOfShapeReal_Assign(self, *args)
 
-    def Set(self, *args) -> "TopTools_DataMapOfShapeReal &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: TopTools_DataMapOfShapeReal &
@@ -2897,23 +2928,23 @@ class TopTools_DataMapOfShapeReal(OCC.TCollection.TCollection_BasicMap):
         """
         return _TopTools.TopTools_DataMapOfShapeReal_Set(self, *args)
 
-    def ReSize(self, *args) -> "void" :
+    def ReSize(self, *args):
         """
         :param NbBuckets:
-        :type NbBuckets: int
+        :type NbBuckets: Standard_Integer
         :rtype: None
 
         """
         return _TopTools.TopTools_DataMapOfShapeReal_ReSize(self, *args)
 
-    def Clear(self, *args) -> "void" :
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _TopTools.TopTools_DataMapOfShapeReal_Clear(self, *args)
+        return _TopTools.TopTools_DataMapOfShapeReal_Clear(self)
 
-    def Bind(self, *args) -> "Standard_Boolean" :
+    def Bind(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -2924,7 +2955,7 @@ class TopTools_DataMapOfShapeReal(OCC.TCollection.TCollection_BasicMap):
         """
         return _TopTools.TopTools_DataMapOfShapeReal_Bind(self, *args)
 
-    def IsBound(self, *args) -> "Standard_Boolean" :
+    def IsBound(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -2933,7 +2964,7 @@ class TopTools_DataMapOfShapeReal(OCC.TCollection.TCollection_BasicMap):
         """
         return _TopTools.TopTools_DataMapOfShapeReal_IsBound(self, *args)
 
-    def UnBind(self, *args) -> "Standard_Boolean" :
+    def UnBind(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -2942,7 +2973,7 @@ class TopTools_DataMapOfShapeReal(OCC.TCollection.TCollection_BasicMap):
         """
         return _TopTools.TopTools_DataMapOfShapeReal_UnBind(self, *args)
 
-    def Find(self, *args) -> "Standard_Real const &" :
+    def Find(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -2951,7 +2982,7 @@ class TopTools_DataMapOfShapeReal(OCC.TCollection.TCollection_BasicMap):
         """
         return _TopTools.TopTools_DataMapOfShapeReal_Find(self, *args)
 
-    def ChangeFind(self, *args) -> "Standard_Real &" :
+    def ChangeFind(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -2960,7 +2991,7 @@ class TopTools_DataMapOfShapeReal(OCC.TCollection.TCollection_BasicMap):
         """
         return _TopTools.TopTools_DataMapOfShapeReal_ChangeFind(self, *args)
 
-    def Find1(self, *args) -> "Standard_Address" :
+    def Find1(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -2969,7 +3000,7 @@ class TopTools_DataMapOfShapeReal(OCC.TCollection.TCollection_BasicMap):
         """
         return _TopTools.TopTools_DataMapOfShapeReal_Find1(self, *args)
 
-    def ChangeFind1(self, *args) -> "Standard_Address" :
+    def ChangeFind1(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -2978,7 +3009,7 @@ class TopTools_DataMapOfShapeReal(OCC.TCollection.TCollection_BasicMap):
         """
         return _TopTools.TopTools_DataMapOfShapeReal_ChangeFind1(self, *args)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(TopTools_DataMapOfShapeReal self)"""
         return _TopTools.TopTools_DataMapOfShapeReal__kill_pointed(self)
 
@@ -3008,15 +3039,19 @@ TopTools_DataMapOfShapeReal_swigregister(TopTools_DataMapOfShapeReal)
 class TopTools_DataMapOfShapeSequenceOfShape(OCC.TCollection.TCollection_BasicMap):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self, NbBuckets=1): 
         """
         :param NbBuckets: default value is 1
-        :type NbBuckets: int
+        :type NbBuckets: Standard_Integer
+        :rtype: None
+
+        :param NbBuckets: default value is 1
+        :type NbBuckets: Standard_Integer
         :rtype: None
 
         """
-        _TopTools.TopTools_DataMapOfShapeSequenceOfShape_swiginit(self,_TopTools.new_TopTools_DataMapOfShapeSequenceOfShape(*args))
-    def Assign(self, *args) -> "TopTools_DataMapOfShapeSequenceOfShape &" :
+        _TopTools.TopTools_DataMapOfShapeSequenceOfShape_swiginit(self,_TopTools.new_TopTools_DataMapOfShapeSequenceOfShape(NbBuckets))
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: TopTools_DataMapOfShapeSequenceOfShape &
@@ -3025,7 +3060,7 @@ class TopTools_DataMapOfShapeSequenceOfShape(OCC.TCollection.TCollection_BasicMa
         """
         return _TopTools.TopTools_DataMapOfShapeSequenceOfShape_Assign(self, *args)
 
-    def Set(self, *args) -> "TopTools_DataMapOfShapeSequenceOfShape &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: TopTools_DataMapOfShapeSequenceOfShape &
@@ -3034,23 +3069,23 @@ class TopTools_DataMapOfShapeSequenceOfShape(OCC.TCollection.TCollection_BasicMa
         """
         return _TopTools.TopTools_DataMapOfShapeSequenceOfShape_Set(self, *args)
 
-    def ReSize(self, *args) -> "void" :
+    def ReSize(self, *args):
         """
         :param NbBuckets:
-        :type NbBuckets: int
+        :type NbBuckets: Standard_Integer
         :rtype: None
 
         """
         return _TopTools.TopTools_DataMapOfShapeSequenceOfShape_ReSize(self, *args)
 
-    def Clear(self, *args) -> "void" :
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _TopTools.TopTools_DataMapOfShapeSequenceOfShape_Clear(self, *args)
+        return _TopTools.TopTools_DataMapOfShapeSequenceOfShape_Clear(self)
 
-    def Bind(self, *args) -> "Standard_Boolean" :
+    def Bind(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -3061,7 +3096,7 @@ class TopTools_DataMapOfShapeSequenceOfShape(OCC.TCollection.TCollection_BasicMa
         """
         return _TopTools.TopTools_DataMapOfShapeSequenceOfShape_Bind(self, *args)
 
-    def IsBound(self, *args) -> "Standard_Boolean" :
+    def IsBound(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -3070,7 +3105,7 @@ class TopTools_DataMapOfShapeSequenceOfShape(OCC.TCollection.TCollection_BasicMa
         """
         return _TopTools.TopTools_DataMapOfShapeSequenceOfShape_IsBound(self, *args)
 
-    def UnBind(self, *args) -> "Standard_Boolean" :
+    def UnBind(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -3079,7 +3114,7 @@ class TopTools_DataMapOfShapeSequenceOfShape(OCC.TCollection.TCollection_BasicMa
         """
         return _TopTools.TopTools_DataMapOfShapeSequenceOfShape_UnBind(self, *args)
 
-    def Find(self, *args) -> "TopTools_SequenceOfShape const &" :
+    def Find(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -3088,7 +3123,7 @@ class TopTools_DataMapOfShapeSequenceOfShape(OCC.TCollection.TCollection_BasicMa
         """
         return _TopTools.TopTools_DataMapOfShapeSequenceOfShape_Find(self, *args)
 
-    def ChangeFind(self, *args) -> "TopTools_SequenceOfShape &" :
+    def ChangeFind(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -3097,7 +3132,7 @@ class TopTools_DataMapOfShapeSequenceOfShape(OCC.TCollection.TCollection_BasicMa
         """
         return _TopTools.TopTools_DataMapOfShapeSequenceOfShape_ChangeFind(self, *args)
 
-    def Find1(self, *args) -> "Standard_Address" :
+    def Find1(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -3106,7 +3141,7 @@ class TopTools_DataMapOfShapeSequenceOfShape(OCC.TCollection.TCollection_BasicMa
         """
         return _TopTools.TopTools_DataMapOfShapeSequenceOfShape_Find1(self, *args)
 
-    def ChangeFind1(self, *args) -> "Standard_Address" :
+    def ChangeFind1(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -3115,7 +3150,7 @@ class TopTools_DataMapOfShapeSequenceOfShape(OCC.TCollection.TCollection_BasicMa
         """
         return _TopTools.TopTools_DataMapOfShapeSequenceOfShape_ChangeFind1(self, *args)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(TopTools_DataMapOfShapeSequenceOfShape self)"""
         return _TopTools.TopTools_DataMapOfShapeSequenceOfShape__kill_pointed(self)
 
@@ -3145,15 +3180,19 @@ TopTools_DataMapOfShapeSequenceOfShape_swigregister(TopTools_DataMapOfShapeSeque
 class TopTools_DataMapOfShapeShape(OCC.TCollection.TCollection_BasicMap):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self, NbBuckets=1): 
         """
         :param NbBuckets: default value is 1
-        :type NbBuckets: int
+        :type NbBuckets: Standard_Integer
+        :rtype: None
+
+        :param NbBuckets: default value is 1
+        :type NbBuckets: Standard_Integer
         :rtype: None
 
         """
-        _TopTools.TopTools_DataMapOfShapeShape_swiginit(self,_TopTools.new_TopTools_DataMapOfShapeShape(*args))
-    def Assign(self, *args) -> "TopTools_DataMapOfShapeShape &" :
+        _TopTools.TopTools_DataMapOfShapeShape_swiginit(self,_TopTools.new_TopTools_DataMapOfShapeShape(NbBuckets))
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: TopTools_DataMapOfShapeShape &
@@ -3162,7 +3201,7 @@ class TopTools_DataMapOfShapeShape(OCC.TCollection.TCollection_BasicMap):
         """
         return _TopTools.TopTools_DataMapOfShapeShape_Assign(self, *args)
 
-    def Set(self, *args) -> "TopTools_DataMapOfShapeShape &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: TopTools_DataMapOfShapeShape &
@@ -3171,23 +3210,23 @@ class TopTools_DataMapOfShapeShape(OCC.TCollection.TCollection_BasicMap):
         """
         return _TopTools.TopTools_DataMapOfShapeShape_Set(self, *args)
 
-    def ReSize(self, *args) -> "void" :
+    def ReSize(self, *args):
         """
         :param NbBuckets:
-        :type NbBuckets: int
+        :type NbBuckets: Standard_Integer
         :rtype: None
 
         """
         return _TopTools.TopTools_DataMapOfShapeShape_ReSize(self, *args)
 
-    def Clear(self, *args) -> "void" :
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _TopTools.TopTools_DataMapOfShapeShape_Clear(self, *args)
+        return _TopTools.TopTools_DataMapOfShapeShape_Clear(self)
 
-    def Bind(self, *args) -> "Standard_Boolean" :
+    def Bind(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -3198,7 +3237,7 @@ class TopTools_DataMapOfShapeShape(OCC.TCollection.TCollection_BasicMap):
         """
         return _TopTools.TopTools_DataMapOfShapeShape_Bind(self, *args)
 
-    def IsBound(self, *args) -> "Standard_Boolean" :
+    def IsBound(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -3207,7 +3246,7 @@ class TopTools_DataMapOfShapeShape(OCC.TCollection.TCollection_BasicMap):
         """
         return _TopTools.TopTools_DataMapOfShapeShape_IsBound(self, *args)
 
-    def UnBind(self, *args) -> "Standard_Boolean" :
+    def UnBind(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -3216,7 +3255,7 @@ class TopTools_DataMapOfShapeShape(OCC.TCollection.TCollection_BasicMap):
         """
         return _TopTools.TopTools_DataMapOfShapeShape_UnBind(self, *args)
 
-    def Find(self, *args) -> "TopoDS_Shape const" :
+    def Find(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -3225,7 +3264,7 @@ class TopTools_DataMapOfShapeShape(OCC.TCollection.TCollection_BasicMap):
         """
         return _TopTools.TopTools_DataMapOfShapeShape_Find(self, *args)
 
-    def ChangeFind(self, *args) -> "TopoDS_Shape" :
+    def ChangeFind(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -3234,7 +3273,7 @@ class TopTools_DataMapOfShapeShape(OCC.TCollection.TCollection_BasicMap):
         """
         return _TopTools.TopTools_DataMapOfShapeShape_ChangeFind(self, *args)
 
-    def Find1(self, *args) -> "Standard_Address" :
+    def Find1(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -3243,7 +3282,7 @@ class TopTools_DataMapOfShapeShape(OCC.TCollection.TCollection_BasicMap):
         """
         return _TopTools.TopTools_DataMapOfShapeShape_Find1(self, *args)
 
-    def ChangeFind1(self, *args) -> "Standard_Address" :
+    def ChangeFind1(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -3252,7 +3291,7 @@ class TopTools_DataMapOfShapeShape(OCC.TCollection.TCollection_BasicMap):
         """
         return _TopTools.TopTools_DataMapOfShapeShape_ChangeFind1(self, *args)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(TopTools_DataMapOfShapeShape self)"""
         return _TopTools.TopTools_DataMapOfShapeShape__kill_pointed(self)
 
@@ -3285,22 +3324,22 @@ class TopTools_HArray1OfListOfShape(OCC.MMgt.MMgt_TShared):
     def __init__(self, *args): 
         """
         :param Low:
-        :type Low: int
+        :type Low: Standard_Integer
         :param Up:
-        :type Up: int
+        :type Up: Standard_Integer
         :rtype: None
 
         :param Low:
-        :type Low: int
+        :type Low: Standard_Integer
         :param Up:
-        :type Up: int
+        :type Up: Standard_Integer
         :param V:
         :type V: TopTools_ListOfShape &
         :rtype: None
 
         """
         _TopTools.TopTools_HArray1OfListOfShape_swiginit(self,_TopTools.new_TopTools_HArray1OfListOfShape(*args))
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
         :param V:
         :type V: TopTools_ListOfShape &
@@ -3309,31 +3348,31 @@ class TopTools_HArray1OfListOfShape(OCC.MMgt.MMgt_TShared):
         """
         return _TopTools.TopTools_HArray1OfListOfShape_Init(self, *args)
 
-    def Length(self, *args) -> "Standard_Integer" :
+    def Length(self):
         """
         :rtype: int
 
         """
-        return _TopTools.TopTools_HArray1OfListOfShape_Length(self, *args)
+        return _TopTools.TopTools_HArray1OfListOfShape_Length(self)
 
-    def Lower(self, *args) -> "Standard_Integer" :
+    def Lower(self):
         """
         :rtype: int
 
         """
-        return _TopTools.TopTools_HArray1OfListOfShape_Lower(self, *args)
+        return _TopTools.TopTools_HArray1OfListOfShape_Lower(self)
 
-    def Upper(self, *args) -> "Standard_Integer" :
+    def Upper(self):
         """
         :rtype: int
 
         """
-        return _TopTools.TopTools_HArray1OfListOfShape_Upper(self, *args)
+        return _TopTools.TopTools_HArray1OfListOfShape_Upper(self)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Value:
         :type Value: TopTools_ListOfShape &
         :rtype: None
@@ -3341,43 +3380,43 @@ class TopTools_HArray1OfListOfShape(OCC.MMgt.MMgt_TShared):
         """
         return _TopTools.TopTools_HArray1OfListOfShape_SetValue(self, *args)
 
-    def Value(self, *args) -> "TopTools_ListOfShape const &" :
+    def Value(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: TopTools_ListOfShape
 
         """
         return _TopTools.TopTools_HArray1OfListOfShape_Value(self, *args)
 
-    def ChangeValue(self, *args) -> "TopTools_ListOfShape &" :
+    def ChangeValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: TopTools_ListOfShape
 
         """
         return _TopTools.TopTools_HArray1OfListOfShape_ChangeValue(self, *args)
 
-    def Array1(self, *args) -> "TopTools_Array1OfListOfShape const &" :
+    def Array1(self):
         """
         :rtype: TopTools_Array1OfListOfShape
 
         """
-        return _TopTools.TopTools_HArray1OfListOfShape_Array1(self, *args)
+        return _TopTools.TopTools_HArray1OfListOfShape_Array1(self)
 
-    def ChangeArray1(self, *args) -> "TopTools_Array1OfListOfShape &" :
+    def ChangeArray1(self):
         """
         :rtype: TopTools_Array1OfListOfShape
 
         """
-        return _TopTools.TopTools_HArray1OfListOfShape_ChangeArray1(self, *args)
+        return _TopTools.TopTools_HArray1OfListOfShape_ChangeArray1(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(TopTools_HArray1OfListOfShape self)"""
         return _TopTools.TopTools_HArray1OfListOfShape__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_TopTools_HArray1OfListOfShape" :
+    def GetHandle(self):
         """GetHandle(TopTools_HArray1OfListOfShape self) -> Handle_TopTools_HArray1OfListOfShape"""
         return _TopTools.TopTools_HArray1OfListOfShape_GetHandle(self)
 
@@ -3424,7 +3463,7 @@ Handle_TopTools_HArray1OfListOfShape._kill_pointed = new_instancemethod(_TopTool
 Handle_TopTools_HArray1OfListOfShape_swigregister = _TopTools.Handle_TopTools_HArray1OfListOfShape_swigregister
 Handle_TopTools_HArray1OfListOfShape_swigregister(Handle_TopTools_HArray1OfListOfShape)
 
-def Handle_TopTools_HArray1OfListOfShape_DownCast(*args) -> "Handle_TopTools_HArray1OfListOfShape const" :
+def Handle_TopTools_HArray1OfListOfShape_DownCast(*args):
   return _TopTools.Handle_TopTools_HArray1OfListOfShape_DownCast(*args)
 Handle_TopTools_HArray1OfListOfShape_DownCast = _TopTools.Handle_TopTools_HArray1OfListOfShape_DownCast
 
@@ -3434,22 +3473,22 @@ class TopTools_HArray1OfShape(OCC.MMgt.MMgt_TShared):
     def __init__(self, *args): 
         """
         :param Low:
-        :type Low: int
+        :type Low: Standard_Integer
         :param Up:
-        :type Up: int
+        :type Up: Standard_Integer
         :rtype: None
 
         :param Low:
-        :type Low: int
+        :type Low: Standard_Integer
         :param Up:
-        :type Up: int
+        :type Up: Standard_Integer
         :param V:
         :type V: TopoDS_Shape &
         :rtype: None
 
         """
         _TopTools.TopTools_HArray1OfShape_swiginit(self,_TopTools.new_TopTools_HArray1OfShape(*args))
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
         :param V:
         :type V: TopoDS_Shape &
@@ -3458,31 +3497,31 @@ class TopTools_HArray1OfShape(OCC.MMgt.MMgt_TShared):
         """
         return _TopTools.TopTools_HArray1OfShape_Init(self, *args)
 
-    def Length(self, *args) -> "Standard_Integer" :
+    def Length(self):
         """
         :rtype: int
 
         """
-        return _TopTools.TopTools_HArray1OfShape_Length(self, *args)
+        return _TopTools.TopTools_HArray1OfShape_Length(self)
 
-    def Lower(self, *args) -> "Standard_Integer" :
+    def Lower(self):
         """
         :rtype: int
 
         """
-        return _TopTools.TopTools_HArray1OfShape_Lower(self, *args)
+        return _TopTools.TopTools_HArray1OfShape_Lower(self)
 
-    def Upper(self, *args) -> "Standard_Integer" :
+    def Upper(self):
         """
         :rtype: int
 
         """
-        return _TopTools.TopTools_HArray1OfShape_Upper(self, *args)
+        return _TopTools.TopTools_HArray1OfShape_Upper(self)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Value:
         :type Value: TopoDS_Shape &
         :rtype: None
@@ -3490,43 +3529,43 @@ class TopTools_HArray1OfShape(OCC.MMgt.MMgt_TShared):
         """
         return _TopTools.TopTools_HArray1OfShape_SetValue(self, *args)
 
-    def Value(self, *args) -> "TopoDS_Shape const" :
+    def Value(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: TopoDS_Shape
 
         """
         return _TopTools.TopTools_HArray1OfShape_Value(self, *args)
 
-    def ChangeValue(self, *args) -> "TopoDS_Shape" :
+    def ChangeValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: TopoDS_Shape
 
         """
         return _TopTools.TopTools_HArray1OfShape_ChangeValue(self, *args)
 
-    def Array1(self, *args) -> "TopTools_Array1OfShape const &" :
+    def Array1(self):
         """
         :rtype: TopTools_Array1OfShape
 
         """
-        return _TopTools.TopTools_HArray1OfShape_Array1(self, *args)
+        return _TopTools.TopTools_HArray1OfShape_Array1(self)
 
-    def ChangeArray1(self, *args) -> "TopTools_Array1OfShape &" :
+    def ChangeArray1(self):
         """
         :rtype: TopTools_Array1OfShape
 
         """
-        return _TopTools.TopTools_HArray1OfShape_ChangeArray1(self, *args)
+        return _TopTools.TopTools_HArray1OfShape_ChangeArray1(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(TopTools_HArray1OfShape self)"""
         return _TopTools.TopTools_HArray1OfShape__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_TopTools_HArray1OfShape" :
+    def GetHandle(self):
         """GetHandle(TopTools_HArray1OfShape self) -> Handle_TopTools_HArray1OfShape"""
         return _TopTools.TopTools_HArray1OfShape_GetHandle(self)
 
@@ -3573,7 +3612,7 @@ Handle_TopTools_HArray1OfShape._kill_pointed = new_instancemethod(_TopTools.Hand
 Handle_TopTools_HArray1OfShape_swigregister = _TopTools.Handle_TopTools_HArray1OfShape_swigregister
 Handle_TopTools_HArray1OfShape_swigregister(Handle_TopTools_HArray1OfShape)
 
-def Handle_TopTools_HArray1OfShape_DownCast(*args) -> "Handle_TopTools_HArray1OfShape const" :
+def Handle_TopTools_HArray1OfShape_DownCast(*args):
   return _TopTools.Handle_TopTools_HArray1OfShape_DownCast(*args)
 Handle_TopTools_HArray1OfShape_DownCast = _TopTools.Handle_TopTools_HArray1OfShape_DownCast
 
@@ -3583,30 +3622,30 @@ class TopTools_HArray2OfShape(OCC.MMgt.MMgt_TShared):
     def __init__(self, *args): 
         """
         :param R1:
-        :type R1: int
+        :type R1: Standard_Integer
         :param R2:
-        :type R2: int
+        :type R2: Standard_Integer
         :param C1:
-        :type C1: int
+        :type C1: Standard_Integer
         :param C2:
-        :type C2: int
+        :type C2: Standard_Integer
         :rtype: None
 
         :param R1:
-        :type R1: int
+        :type R1: Standard_Integer
         :param R2:
-        :type R2: int
+        :type R2: Standard_Integer
         :param C1:
-        :type C1: int
+        :type C1: Standard_Integer
         :param C2:
-        :type C2: int
+        :type C2: Standard_Integer
         :param V:
         :type V: TopoDS_Shape &
         :rtype: None
 
         """
         _TopTools.TopTools_HArray2OfShape_swiginit(self,_TopTools.new_TopTools_HArray2OfShape(*args))
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
         :param V:
         :type V: TopoDS_Shape &
@@ -3615,54 +3654,54 @@ class TopTools_HArray2OfShape(OCC.MMgt.MMgt_TShared):
         """
         return _TopTools.TopTools_HArray2OfShape_Init(self, *args)
 
-    def ColLength(self, *args) -> "Standard_Integer" :
+    def ColLength(self):
         """
         :rtype: int
 
         """
-        return _TopTools.TopTools_HArray2OfShape_ColLength(self, *args)
+        return _TopTools.TopTools_HArray2OfShape_ColLength(self)
 
-    def RowLength(self, *args) -> "Standard_Integer" :
+    def RowLength(self):
         """
         :rtype: int
 
         """
-        return _TopTools.TopTools_HArray2OfShape_RowLength(self, *args)
+        return _TopTools.TopTools_HArray2OfShape_RowLength(self)
 
-    def LowerCol(self, *args) -> "Standard_Integer" :
+    def LowerCol(self):
         """
         :rtype: int
 
         """
-        return _TopTools.TopTools_HArray2OfShape_LowerCol(self, *args)
+        return _TopTools.TopTools_HArray2OfShape_LowerCol(self)
 
-    def LowerRow(self, *args) -> "Standard_Integer" :
+    def LowerRow(self):
         """
         :rtype: int
 
         """
-        return _TopTools.TopTools_HArray2OfShape_LowerRow(self, *args)
+        return _TopTools.TopTools_HArray2OfShape_LowerRow(self)
 
-    def UpperCol(self, *args) -> "Standard_Integer" :
+    def UpperCol(self):
         """
         :rtype: int
 
         """
-        return _TopTools.TopTools_HArray2OfShape_UpperCol(self, *args)
+        return _TopTools.TopTools_HArray2OfShape_UpperCol(self)
 
-    def UpperRow(self, *args) -> "Standard_Integer" :
+    def UpperRow(self):
         """
         :rtype: int
 
         """
-        return _TopTools.TopTools_HArray2OfShape_UpperRow(self, *args)
+        return _TopTools.TopTools_HArray2OfShape_UpperRow(self)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Row:
-        :type Row: int
+        :type Row: Standard_Integer
         :param Col:
-        :type Col: int
+        :type Col: Standard_Integer
         :param Value:
         :type Value: TopoDS_Shape &
         :rtype: None
@@ -3670,47 +3709,47 @@ class TopTools_HArray2OfShape(OCC.MMgt.MMgt_TShared):
         """
         return _TopTools.TopTools_HArray2OfShape_SetValue(self, *args)
 
-    def Value(self, *args) -> "TopoDS_Shape const" :
+    def Value(self, *args):
         """
         :param Row:
-        :type Row: int
+        :type Row: Standard_Integer
         :param Col:
-        :type Col: int
+        :type Col: Standard_Integer
         :rtype: TopoDS_Shape
 
         """
         return _TopTools.TopTools_HArray2OfShape_Value(self, *args)
 
-    def ChangeValue(self, *args) -> "TopoDS_Shape" :
+    def ChangeValue(self, *args):
         """
         :param Row:
-        :type Row: int
+        :type Row: Standard_Integer
         :param Col:
-        :type Col: int
+        :type Col: Standard_Integer
         :rtype: TopoDS_Shape
 
         """
         return _TopTools.TopTools_HArray2OfShape_ChangeValue(self, *args)
 
-    def Array2(self, *args) -> "TopTools_Array2OfShape const &" :
+    def Array2(self):
         """
         :rtype: TopTools_Array2OfShape
 
         """
-        return _TopTools.TopTools_HArray2OfShape_Array2(self, *args)
+        return _TopTools.TopTools_HArray2OfShape_Array2(self)
 
-    def ChangeArray2(self, *args) -> "TopTools_Array2OfShape &" :
+    def ChangeArray2(self):
         """
         :rtype: TopTools_Array2OfShape
 
         """
-        return _TopTools.TopTools_HArray2OfShape_ChangeArray2(self, *args)
+        return _TopTools.TopTools_HArray2OfShape_ChangeArray2(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(TopTools_HArray2OfShape self)"""
         return _TopTools.TopTools_HArray2OfShape__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_TopTools_HArray2OfShape" :
+    def GetHandle(self):
         """GetHandle(TopTools_HArray2OfShape self) -> Handle_TopTools_HArray2OfShape"""
         return _TopTools.TopTools_HArray2OfShape_GetHandle(self)
 
@@ -3760,41 +3799,41 @@ Handle_TopTools_HArray2OfShape._kill_pointed = new_instancemethod(_TopTools.Hand
 Handle_TopTools_HArray2OfShape_swigregister = _TopTools.Handle_TopTools_HArray2OfShape_swigregister
 Handle_TopTools_HArray2OfShape_swigregister(Handle_TopTools_HArray2OfShape)
 
-def Handle_TopTools_HArray2OfShape_DownCast(*args) -> "Handle_TopTools_HArray2OfShape const" :
+def Handle_TopTools_HArray2OfShape_DownCast(*args):
   return _TopTools.Handle_TopTools_HArray2OfShape_DownCast(*args)
 Handle_TopTools_HArray2OfShape_DownCast = _TopTools.Handle_TopTools_HArray2OfShape_DownCast
 
 class TopTools_HSequenceOfShape(OCC.MMgt.MMgt_TShared):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _TopTools.TopTools_HSequenceOfShape_swiginit(self,_TopTools.new_TopTools_HSequenceOfShape(*args))
-    def IsEmpty(self, *args) -> "Standard_Boolean" :
+        _TopTools.TopTools_HSequenceOfShape_swiginit(self,_TopTools.new_TopTools_HSequenceOfShape())
+    def IsEmpty(self):
         """
         :rtype: bool
 
         """
-        return _TopTools.TopTools_HSequenceOfShape_IsEmpty(self, *args)
+        return _TopTools.TopTools_HSequenceOfShape_IsEmpty(self)
 
-    def Length(self, *args) -> "Standard_Integer" :
+    def Length(self):
         """
         :rtype: int
 
         """
-        return _TopTools.TopTools_HSequenceOfShape_Length(self, *args)
+        return _TopTools.TopTools_HSequenceOfShape_Length(self)
 
-    def Clear(self, *args) -> "void" :
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _TopTools.TopTools_HSequenceOfShape_Clear(self, *args)
+        return _TopTools.TopTools_HSequenceOfShape_Clear(self)
 
-    def Append(self, *args) -> "void" :
+    def Append(self, *args):
         """
         :param anItem:
         :type anItem: TopoDS_Shape &
@@ -3807,7 +3846,7 @@ class TopTools_HSequenceOfShape(OCC.MMgt.MMgt_TShared):
         """
         return _TopTools.TopTools_HSequenceOfShape_Append(self, *args)
 
-    def Prepend(self, *args) -> "void" :
+    def Prepend(self, *args):
         """
         :param anItem:
         :type anItem: TopoDS_Shape &
@@ -3820,23 +3859,23 @@ class TopTools_HSequenceOfShape(OCC.MMgt.MMgt_TShared):
         """
         return _TopTools.TopTools_HSequenceOfShape_Prepend(self, *args)
 
-    def Reverse(self, *args) -> "void" :
+    def Reverse(self):
         """
         :rtype: None
 
         """
-        return _TopTools.TopTools_HSequenceOfShape_Reverse(self, *args)
+        return _TopTools.TopTools_HSequenceOfShape_Reverse(self)
 
-    def InsertBefore(self, *args) -> "void" :
+    def InsertBefore(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :param anItem:
         :type anItem: TopoDS_Shape &
         :rtype: None
 
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :param aSequence:
         :type aSequence: Handle_TopTools_HSequenceOfShape &
         :rtype: None
@@ -3844,16 +3883,16 @@ class TopTools_HSequenceOfShape(OCC.MMgt.MMgt_TShared):
         """
         return _TopTools.TopTools_HSequenceOfShape_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args) -> "void" :
+    def InsertAfter(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :param anItem:
         :type anItem: TopoDS_Shape &
         :rtype: None
 
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :param aSequence:
         :type aSequence: Handle_TopTools_HSequenceOfShape &
         :rtype: None
@@ -3861,30 +3900,30 @@ class TopTools_HSequenceOfShape(OCC.MMgt.MMgt_TShared):
         """
         return _TopTools.TopTools_HSequenceOfShape_InsertAfter(self, *args)
 
-    def Exchange(self, *args) -> "void" :
+    def Exchange(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :param anOtherIndex:
-        :type anOtherIndex: int
+        :type anOtherIndex: Standard_Integer
         :rtype: None
 
         """
         return _TopTools.TopTools_HSequenceOfShape_Exchange(self, *args)
 
-    def Split(self, *args) -> "Handle_TopTools_HSequenceOfShape" :
+    def Split(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :rtype: Handle_TopTools_HSequenceOfShape
 
         """
         return _TopTools.TopTools_HSequenceOfShape_Split(self, *args)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :param anItem:
         :type anItem: TopoDS_Shape &
         :rtype: None
@@ -3892,65 +3931,65 @@ class TopTools_HSequenceOfShape(OCC.MMgt.MMgt_TShared):
         """
         return _TopTools.TopTools_HSequenceOfShape_SetValue(self, *args)
 
-    def Value(self, *args) -> "TopoDS_Shape const" :
+    def Value(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :rtype: TopoDS_Shape
 
         """
         return _TopTools.TopTools_HSequenceOfShape_Value(self, *args)
 
-    def ChangeValue(self, *args) -> "TopoDS_Shape" :
+    def ChangeValue(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :rtype: TopoDS_Shape
 
         """
         return _TopTools.TopTools_HSequenceOfShape_ChangeValue(self, *args)
 
-    def Remove(self, *args) -> "void" :
+    def Remove(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :rtype: None
 
         :param fromIndex:
-        :type fromIndex: int
+        :type fromIndex: Standard_Integer
         :param toIndex:
-        :type toIndex: int
+        :type toIndex: Standard_Integer
         :rtype: None
 
         """
         return _TopTools.TopTools_HSequenceOfShape_Remove(self, *args)
 
-    def Sequence(self, *args) -> "TopTools_SequenceOfShape const &" :
+    def Sequence(self):
         """
         :rtype: TopTools_SequenceOfShape
 
         """
-        return _TopTools.TopTools_HSequenceOfShape_Sequence(self, *args)
+        return _TopTools.TopTools_HSequenceOfShape_Sequence(self)
 
-    def ChangeSequence(self, *args) -> "TopTools_SequenceOfShape &" :
+    def ChangeSequence(self):
         """
         :rtype: TopTools_SequenceOfShape
 
         """
-        return _TopTools.TopTools_HSequenceOfShape_ChangeSequence(self, *args)
+        return _TopTools.TopTools_HSequenceOfShape_ChangeSequence(self)
 
-    def ShallowCopy(self, *args) -> "Handle_TopTools_HSequenceOfShape" :
+    def ShallowCopy(self):
         """
         :rtype: Handle_TopTools_HSequenceOfShape
 
         """
-        return _TopTools.TopTools_HSequenceOfShape_ShallowCopy(self, *args)
+        return _TopTools.TopTools_HSequenceOfShape_ShallowCopy(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(TopTools_HSequenceOfShape self)"""
         return _TopTools.TopTools_HSequenceOfShape__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_TopTools_HSequenceOfShape" :
+    def GetHandle(self):
         """GetHandle(TopTools_HSequenceOfShape self) -> Handle_TopTools_HSequenceOfShape"""
         return _TopTools.TopTools_HSequenceOfShape_GetHandle(self)
 
@@ -4005,7 +4044,7 @@ Handle_TopTools_HSequenceOfShape._kill_pointed = new_instancemethod(_TopTools.Ha
 Handle_TopTools_HSequenceOfShape_swigregister = _TopTools.Handle_TopTools_HSequenceOfShape_swigregister
 Handle_TopTools_HSequenceOfShape_swigregister(Handle_TopTools_HSequenceOfShape)
 
-def Handle_TopTools_HSequenceOfShape_DownCast(*args) -> "Handle_TopTools_HSequenceOfShape const" :
+def Handle_TopTools_HSequenceOfShape_DownCast(*args):
   return _TopTools.Handle_TopTools_HSequenceOfShape_DownCast(*args)
 Handle_TopTools_HSequenceOfShape_DownCast = _TopTools.Handle_TopTools_HSequenceOfShape_DownCast
 
@@ -4017,7 +4056,7 @@ class TopTools_IndexedDataMapNodeOfIndexedDataMapOfShapeAddress(OCC.TCollection.
         :param K1:
         :type K1: TopoDS_Shape &
         :param K2:
-        :type K2: int
+        :type K2: Standard_Integer
         :param I:
         :type I: Standard_Address &
         :param n1:
@@ -4028,40 +4067,40 @@ class TopTools_IndexedDataMapNodeOfIndexedDataMapOfShapeAddress(OCC.TCollection.
 
         """
         _TopTools.TopTools_IndexedDataMapNodeOfIndexedDataMapOfShapeAddress_swiginit(self,_TopTools.new_TopTools_IndexedDataMapNodeOfIndexedDataMapOfShapeAddress(*args))
-    def Key1(self, *args) -> "TopoDS_Shape" :
+    def Key1(self):
         """
         :rtype: TopoDS_Shape
 
         """
-        return _TopTools.TopTools_IndexedDataMapNodeOfIndexedDataMapOfShapeAddress_Key1(self, *args)
+        return _TopTools.TopTools_IndexedDataMapNodeOfIndexedDataMapOfShapeAddress_Key1(self)
 
-    def GetKey2(self) -> "Standard_Integer" :
+    def GetKey2(self):
         """GetKey2(TopTools_IndexedDataMapNodeOfIndexedDataMapOfShapeAddress self) -> Standard_Integer"""
         return _TopTools.TopTools_IndexedDataMapNodeOfIndexedDataMapOfShapeAddress_GetKey2(self)
 
-    def SetKey2(self, *args) -> "void" :
+    def SetKey2(self, *args):
         """SetKey2(TopTools_IndexedDataMapNodeOfIndexedDataMapOfShapeAddress self, Standard_Integer value)"""
         return _TopTools.TopTools_IndexedDataMapNodeOfIndexedDataMapOfShapeAddress_SetKey2(self, *args)
 
-    def Next2(self, *args) -> "TCollection_MapNodePtr &" :
+    def Next2(self):
         """
         :rtype: TCollection_MapNodePtr
 
         """
-        return _TopTools.TopTools_IndexedDataMapNodeOfIndexedDataMapOfShapeAddress_Next2(self, *args)
+        return _TopTools.TopTools_IndexedDataMapNodeOfIndexedDataMapOfShapeAddress_Next2(self)
 
-    def Value(self, *args) -> "Standard_Address &" :
+    def Value(self):
         """
         :rtype: Standard_Address
 
         """
-        return _TopTools.TopTools_IndexedDataMapNodeOfIndexedDataMapOfShapeAddress_Value(self, *args)
+        return _TopTools.TopTools_IndexedDataMapNodeOfIndexedDataMapOfShapeAddress_Value(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(TopTools_IndexedDataMapNodeOfIndexedDataMapOfShapeAddress self)"""
         return _TopTools.TopTools_IndexedDataMapNodeOfIndexedDataMapOfShapeAddress__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_TopTools_IndexedDataMapNodeOfIndexedDataMapOfShapeAddress" :
+    def GetHandle(self):
         """GetHandle(TopTools_IndexedDataMapNodeOfIndexedDataMapOfShapeAddress self) -> Handle_TopTools_IndexedDataMapNodeOfIndexedDataMapOfShapeAddress"""
         return _TopTools.TopTools_IndexedDataMapNodeOfIndexedDataMapOfShapeAddress_GetHandle(self)
 
@@ -4104,7 +4143,7 @@ Handle_TopTools_IndexedDataMapNodeOfIndexedDataMapOfShapeAddress._kill_pointed =
 Handle_TopTools_IndexedDataMapNodeOfIndexedDataMapOfShapeAddress_swigregister = _TopTools.Handle_TopTools_IndexedDataMapNodeOfIndexedDataMapOfShapeAddress_swigregister
 Handle_TopTools_IndexedDataMapNodeOfIndexedDataMapOfShapeAddress_swigregister(Handle_TopTools_IndexedDataMapNodeOfIndexedDataMapOfShapeAddress)
 
-def Handle_TopTools_IndexedDataMapNodeOfIndexedDataMapOfShapeAddress_DownCast(*args) -> "Handle_TopTools_IndexedDataMapNodeOfIndexedDataMapOfShapeAddress const" :
+def Handle_TopTools_IndexedDataMapNodeOfIndexedDataMapOfShapeAddress_DownCast(*args):
   return _TopTools.Handle_TopTools_IndexedDataMapNodeOfIndexedDataMapOfShapeAddress_DownCast(*args)
 Handle_TopTools_IndexedDataMapNodeOfIndexedDataMapOfShapeAddress_DownCast = _TopTools.Handle_TopTools_IndexedDataMapNodeOfIndexedDataMapOfShapeAddress_DownCast
 
@@ -4116,7 +4155,7 @@ class TopTools_IndexedDataMapNodeOfIndexedDataMapOfShapeListOfShape(OCC.TCollect
         :param K1:
         :type K1: TopoDS_Shape &
         :param K2:
-        :type K2: int
+        :type K2: Standard_Integer
         :param I:
         :type I: TopTools_ListOfShape &
         :param n1:
@@ -4127,40 +4166,40 @@ class TopTools_IndexedDataMapNodeOfIndexedDataMapOfShapeListOfShape(OCC.TCollect
 
         """
         _TopTools.TopTools_IndexedDataMapNodeOfIndexedDataMapOfShapeListOfShape_swiginit(self,_TopTools.new_TopTools_IndexedDataMapNodeOfIndexedDataMapOfShapeListOfShape(*args))
-    def Key1(self, *args) -> "TopoDS_Shape" :
+    def Key1(self):
         """
         :rtype: TopoDS_Shape
 
         """
-        return _TopTools.TopTools_IndexedDataMapNodeOfIndexedDataMapOfShapeListOfShape_Key1(self, *args)
+        return _TopTools.TopTools_IndexedDataMapNodeOfIndexedDataMapOfShapeListOfShape_Key1(self)
 
-    def GetKey2(self) -> "Standard_Integer" :
+    def GetKey2(self):
         """GetKey2(TopTools_IndexedDataMapNodeOfIndexedDataMapOfShapeListOfShape self) -> Standard_Integer"""
         return _TopTools.TopTools_IndexedDataMapNodeOfIndexedDataMapOfShapeListOfShape_GetKey2(self)
 
-    def SetKey2(self, *args) -> "void" :
+    def SetKey2(self, *args):
         """SetKey2(TopTools_IndexedDataMapNodeOfIndexedDataMapOfShapeListOfShape self, Standard_Integer value)"""
         return _TopTools.TopTools_IndexedDataMapNodeOfIndexedDataMapOfShapeListOfShape_SetKey2(self, *args)
 
-    def Next2(self, *args) -> "TCollection_MapNodePtr &" :
+    def Next2(self):
         """
         :rtype: TCollection_MapNodePtr
 
         """
-        return _TopTools.TopTools_IndexedDataMapNodeOfIndexedDataMapOfShapeListOfShape_Next2(self, *args)
+        return _TopTools.TopTools_IndexedDataMapNodeOfIndexedDataMapOfShapeListOfShape_Next2(self)
 
-    def Value(self, *args) -> "TopTools_ListOfShape &" :
+    def Value(self):
         """
         :rtype: TopTools_ListOfShape
 
         """
-        return _TopTools.TopTools_IndexedDataMapNodeOfIndexedDataMapOfShapeListOfShape_Value(self, *args)
+        return _TopTools.TopTools_IndexedDataMapNodeOfIndexedDataMapOfShapeListOfShape_Value(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(TopTools_IndexedDataMapNodeOfIndexedDataMapOfShapeListOfShape self)"""
         return _TopTools.TopTools_IndexedDataMapNodeOfIndexedDataMapOfShapeListOfShape__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_TopTools_IndexedDataMapNodeOfIndexedDataMapOfShapeListOfShape" :
+    def GetHandle(self):
         """GetHandle(TopTools_IndexedDataMapNodeOfIndexedDataMapOfShapeListOfShape self) -> Handle_TopTools_IndexedDataMapNodeOfIndexedDataMapOfShapeListOfShape"""
         return _TopTools.TopTools_IndexedDataMapNodeOfIndexedDataMapOfShapeListOfShape_GetHandle(self)
 
@@ -4203,7 +4242,7 @@ Handle_TopTools_IndexedDataMapNodeOfIndexedDataMapOfShapeListOfShape._kill_point
 Handle_TopTools_IndexedDataMapNodeOfIndexedDataMapOfShapeListOfShape_swigregister = _TopTools.Handle_TopTools_IndexedDataMapNodeOfIndexedDataMapOfShapeListOfShape_swigregister
 Handle_TopTools_IndexedDataMapNodeOfIndexedDataMapOfShapeListOfShape_swigregister(Handle_TopTools_IndexedDataMapNodeOfIndexedDataMapOfShapeListOfShape)
 
-def Handle_TopTools_IndexedDataMapNodeOfIndexedDataMapOfShapeListOfShape_DownCast(*args) -> "Handle_TopTools_IndexedDataMapNodeOfIndexedDataMapOfShapeListOfShape const" :
+def Handle_TopTools_IndexedDataMapNodeOfIndexedDataMapOfShapeListOfShape_DownCast(*args):
   return _TopTools.Handle_TopTools_IndexedDataMapNodeOfIndexedDataMapOfShapeListOfShape_DownCast(*args)
 Handle_TopTools_IndexedDataMapNodeOfIndexedDataMapOfShapeListOfShape_DownCast = _TopTools.Handle_TopTools_IndexedDataMapNodeOfIndexedDataMapOfShapeListOfShape_DownCast
 
@@ -4215,7 +4254,7 @@ class TopTools_IndexedDataMapNodeOfIndexedDataMapOfShapeShape(OCC.TCollection.TC
         :param K1:
         :type K1: TopoDS_Shape &
         :param K2:
-        :type K2: int
+        :type K2: Standard_Integer
         :param I:
         :type I: TopoDS_Shape &
         :param n1:
@@ -4226,40 +4265,40 @@ class TopTools_IndexedDataMapNodeOfIndexedDataMapOfShapeShape(OCC.TCollection.TC
 
         """
         _TopTools.TopTools_IndexedDataMapNodeOfIndexedDataMapOfShapeShape_swiginit(self,_TopTools.new_TopTools_IndexedDataMapNodeOfIndexedDataMapOfShapeShape(*args))
-    def Key1(self, *args) -> "TopoDS_Shape" :
+    def Key1(self):
         """
         :rtype: TopoDS_Shape
 
         """
-        return _TopTools.TopTools_IndexedDataMapNodeOfIndexedDataMapOfShapeShape_Key1(self, *args)
+        return _TopTools.TopTools_IndexedDataMapNodeOfIndexedDataMapOfShapeShape_Key1(self)
 
-    def GetKey2(self) -> "Standard_Integer" :
+    def GetKey2(self):
         """GetKey2(TopTools_IndexedDataMapNodeOfIndexedDataMapOfShapeShape self) -> Standard_Integer"""
         return _TopTools.TopTools_IndexedDataMapNodeOfIndexedDataMapOfShapeShape_GetKey2(self)
 
-    def SetKey2(self, *args) -> "void" :
+    def SetKey2(self, *args):
         """SetKey2(TopTools_IndexedDataMapNodeOfIndexedDataMapOfShapeShape self, Standard_Integer value)"""
         return _TopTools.TopTools_IndexedDataMapNodeOfIndexedDataMapOfShapeShape_SetKey2(self, *args)
 
-    def Next2(self, *args) -> "TCollection_MapNodePtr &" :
+    def Next2(self):
         """
         :rtype: TCollection_MapNodePtr
 
         """
-        return _TopTools.TopTools_IndexedDataMapNodeOfIndexedDataMapOfShapeShape_Next2(self, *args)
+        return _TopTools.TopTools_IndexedDataMapNodeOfIndexedDataMapOfShapeShape_Next2(self)
 
-    def Value(self, *args) -> "TopoDS_Shape" :
+    def Value(self):
         """
         :rtype: TopoDS_Shape
 
         """
-        return _TopTools.TopTools_IndexedDataMapNodeOfIndexedDataMapOfShapeShape_Value(self, *args)
+        return _TopTools.TopTools_IndexedDataMapNodeOfIndexedDataMapOfShapeShape_Value(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(TopTools_IndexedDataMapNodeOfIndexedDataMapOfShapeShape self)"""
         return _TopTools.TopTools_IndexedDataMapNodeOfIndexedDataMapOfShapeShape__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_TopTools_IndexedDataMapNodeOfIndexedDataMapOfShapeShape" :
+    def GetHandle(self):
         """GetHandle(TopTools_IndexedDataMapNodeOfIndexedDataMapOfShapeShape self) -> Handle_TopTools_IndexedDataMapNodeOfIndexedDataMapOfShapeShape"""
         return _TopTools.TopTools_IndexedDataMapNodeOfIndexedDataMapOfShapeShape_GetHandle(self)
 
@@ -4302,22 +4341,26 @@ Handle_TopTools_IndexedDataMapNodeOfIndexedDataMapOfShapeShape._kill_pointed = n
 Handle_TopTools_IndexedDataMapNodeOfIndexedDataMapOfShapeShape_swigregister = _TopTools.Handle_TopTools_IndexedDataMapNodeOfIndexedDataMapOfShapeShape_swigregister
 Handle_TopTools_IndexedDataMapNodeOfIndexedDataMapOfShapeShape_swigregister(Handle_TopTools_IndexedDataMapNodeOfIndexedDataMapOfShapeShape)
 
-def Handle_TopTools_IndexedDataMapNodeOfIndexedDataMapOfShapeShape_DownCast(*args) -> "Handle_TopTools_IndexedDataMapNodeOfIndexedDataMapOfShapeShape const" :
+def Handle_TopTools_IndexedDataMapNodeOfIndexedDataMapOfShapeShape_DownCast(*args):
   return _TopTools.Handle_TopTools_IndexedDataMapNodeOfIndexedDataMapOfShapeShape_DownCast(*args)
 Handle_TopTools_IndexedDataMapNodeOfIndexedDataMapOfShapeShape_DownCast = _TopTools.Handle_TopTools_IndexedDataMapNodeOfIndexedDataMapOfShapeShape_DownCast
 
 class TopTools_IndexedDataMapOfShapeAddress(OCC.TCollection.TCollection_BasicMap):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self, NbBuckets=1): 
         """
         :param NbBuckets: default value is 1
-        :type NbBuckets: int
+        :type NbBuckets: Standard_Integer
+        :rtype: None
+
+        :param NbBuckets: default value is 1
+        :type NbBuckets: Standard_Integer
         :rtype: None
 
         """
-        _TopTools.TopTools_IndexedDataMapOfShapeAddress_swiginit(self,_TopTools.new_TopTools_IndexedDataMapOfShapeAddress(*args))
-    def Assign(self, *args) -> "TopTools_IndexedDataMapOfShapeAddress &" :
+        _TopTools.TopTools_IndexedDataMapOfShapeAddress_swiginit(self,_TopTools.new_TopTools_IndexedDataMapOfShapeAddress(NbBuckets))
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: TopTools_IndexedDataMapOfShapeAddress &
@@ -4326,7 +4369,7 @@ class TopTools_IndexedDataMapOfShapeAddress(OCC.TCollection.TCollection_BasicMap
         """
         return _TopTools.TopTools_IndexedDataMapOfShapeAddress_Assign(self, *args)
 
-    def Set(self, *args) -> "TopTools_IndexedDataMapOfShapeAddress &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: TopTools_IndexedDataMapOfShapeAddress &
@@ -4335,23 +4378,23 @@ class TopTools_IndexedDataMapOfShapeAddress(OCC.TCollection.TCollection_BasicMap
         """
         return _TopTools.TopTools_IndexedDataMapOfShapeAddress_Set(self, *args)
 
-    def ReSize(self, *args) -> "void" :
+    def ReSize(self, *args):
         """
         :param NbBuckets:
-        :type NbBuckets: int
+        :type NbBuckets: Standard_Integer
         :rtype: None
 
         """
         return _TopTools.TopTools_IndexedDataMapOfShapeAddress_ReSize(self, *args)
 
-    def Clear(self, *args) -> "void" :
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _TopTools.TopTools_IndexedDataMapOfShapeAddress_Clear(self, *args)
+        return _TopTools.TopTools_IndexedDataMapOfShapeAddress_Clear(self)
 
-    def Add(self, *args) -> "Standard_Integer" :
+    def Add(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -4362,10 +4405,10 @@ class TopTools_IndexedDataMapOfShapeAddress(OCC.TCollection.TCollection_BasicMap
         """
         return _TopTools.TopTools_IndexedDataMapOfShapeAddress_Add(self, *args)
 
-    def Substitute(self, *args) -> "void" :
+    def Substitute(self, *args):
         """
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :param K:
         :type K: TopoDS_Shape &
         :param T:
@@ -4375,14 +4418,14 @@ class TopTools_IndexedDataMapOfShapeAddress(OCC.TCollection.TCollection_BasicMap
         """
         return _TopTools.TopTools_IndexedDataMapOfShapeAddress_Substitute(self, *args)
 
-    def RemoveLast(self, *args) -> "void" :
+    def RemoveLast(self):
         """
         :rtype: None
 
         """
-        return _TopTools.TopTools_IndexedDataMapOfShapeAddress_RemoveLast(self, *args)
+        return _TopTools.TopTools_IndexedDataMapOfShapeAddress_RemoveLast(self)
 
-    def Contains(self, *args) -> "Standard_Boolean" :
+    def Contains(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -4391,34 +4434,34 @@ class TopTools_IndexedDataMapOfShapeAddress(OCC.TCollection.TCollection_BasicMap
         """
         return _TopTools.TopTools_IndexedDataMapOfShapeAddress_Contains(self, *args)
 
-    def FindKey(self, *args) -> "TopoDS_Shape const" :
+    def FindKey(self, *args):
         """
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :rtype: TopoDS_Shape
 
         """
         return _TopTools.TopTools_IndexedDataMapOfShapeAddress_FindKey(self, *args)
 
-    def FindFromIndex(self, *args) -> "Standard_Address const &" :
+    def FindFromIndex(self, *args):
         """
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :rtype: Standard_Address
 
         """
         return _TopTools.TopTools_IndexedDataMapOfShapeAddress_FindFromIndex(self, *args)
 
-    def ChangeFromIndex(self, *args) -> "Standard_Address &" :
+    def ChangeFromIndex(self, *args):
         """
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :rtype: Standard_Address
 
         """
         return _TopTools.TopTools_IndexedDataMapOfShapeAddress_ChangeFromIndex(self, *args)
 
-    def FindIndex(self, *args) -> "Standard_Integer" :
+    def FindIndex(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -4427,7 +4470,7 @@ class TopTools_IndexedDataMapOfShapeAddress(OCC.TCollection.TCollection_BasicMap
         """
         return _TopTools.TopTools_IndexedDataMapOfShapeAddress_FindIndex(self, *args)
 
-    def FindFromKey(self, *args) -> "Standard_Address const &" :
+    def FindFromKey(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -4436,7 +4479,7 @@ class TopTools_IndexedDataMapOfShapeAddress(OCC.TCollection.TCollection_BasicMap
         """
         return _TopTools.TopTools_IndexedDataMapOfShapeAddress_FindFromKey(self, *args)
 
-    def ChangeFromKey(self, *args) -> "Standard_Address &" :
+    def ChangeFromKey(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -4445,7 +4488,7 @@ class TopTools_IndexedDataMapOfShapeAddress(OCC.TCollection.TCollection_BasicMap
         """
         return _TopTools.TopTools_IndexedDataMapOfShapeAddress_ChangeFromKey(self, *args)
 
-    def FindFromKey1(self, *args) -> "Standard_Address" :
+    def FindFromKey1(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -4454,7 +4497,7 @@ class TopTools_IndexedDataMapOfShapeAddress(OCC.TCollection.TCollection_BasicMap
         """
         return _TopTools.TopTools_IndexedDataMapOfShapeAddress_FindFromKey1(self, *args)
 
-    def ChangeFromKey1(self, *args) -> "Standard_Address" :
+    def ChangeFromKey1(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -4463,7 +4506,7 @@ class TopTools_IndexedDataMapOfShapeAddress(OCC.TCollection.TCollection_BasicMap
         """
         return _TopTools.TopTools_IndexedDataMapOfShapeAddress_ChangeFromKey1(self, *args)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(TopTools_IndexedDataMapOfShapeAddress self)"""
         return _TopTools.TopTools_IndexedDataMapOfShapeAddress__kill_pointed(self)
 
@@ -4498,15 +4541,19 @@ TopTools_IndexedDataMapOfShapeAddress_swigregister(TopTools_IndexedDataMapOfShap
 class TopTools_IndexedDataMapOfShapeListOfShape(OCC.TCollection.TCollection_BasicMap):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self, NbBuckets=1): 
         """
         :param NbBuckets: default value is 1
-        :type NbBuckets: int
+        :type NbBuckets: Standard_Integer
+        :rtype: None
+
+        :param NbBuckets: default value is 1
+        :type NbBuckets: Standard_Integer
         :rtype: None
 
         """
-        _TopTools.TopTools_IndexedDataMapOfShapeListOfShape_swiginit(self,_TopTools.new_TopTools_IndexedDataMapOfShapeListOfShape(*args))
-    def Assign(self, *args) -> "TopTools_IndexedDataMapOfShapeListOfShape &" :
+        _TopTools.TopTools_IndexedDataMapOfShapeListOfShape_swiginit(self,_TopTools.new_TopTools_IndexedDataMapOfShapeListOfShape(NbBuckets))
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: TopTools_IndexedDataMapOfShapeListOfShape &
@@ -4515,7 +4562,7 @@ class TopTools_IndexedDataMapOfShapeListOfShape(OCC.TCollection.TCollection_Basi
         """
         return _TopTools.TopTools_IndexedDataMapOfShapeListOfShape_Assign(self, *args)
 
-    def Set(self, *args) -> "TopTools_IndexedDataMapOfShapeListOfShape &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: TopTools_IndexedDataMapOfShapeListOfShape &
@@ -4524,23 +4571,23 @@ class TopTools_IndexedDataMapOfShapeListOfShape(OCC.TCollection.TCollection_Basi
         """
         return _TopTools.TopTools_IndexedDataMapOfShapeListOfShape_Set(self, *args)
 
-    def ReSize(self, *args) -> "void" :
+    def ReSize(self, *args):
         """
         :param NbBuckets:
-        :type NbBuckets: int
+        :type NbBuckets: Standard_Integer
         :rtype: None
 
         """
         return _TopTools.TopTools_IndexedDataMapOfShapeListOfShape_ReSize(self, *args)
 
-    def Clear(self, *args) -> "void" :
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _TopTools.TopTools_IndexedDataMapOfShapeListOfShape_Clear(self, *args)
+        return _TopTools.TopTools_IndexedDataMapOfShapeListOfShape_Clear(self)
 
-    def Add(self, *args) -> "Standard_Integer" :
+    def Add(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -4551,10 +4598,10 @@ class TopTools_IndexedDataMapOfShapeListOfShape(OCC.TCollection.TCollection_Basi
         """
         return _TopTools.TopTools_IndexedDataMapOfShapeListOfShape_Add(self, *args)
 
-    def Substitute(self, *args) -> "void" :
+    def Substitute(self, *args):
         """
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :param K:
         :type K: TopoDS_Shape &
         :param T:
@@ -4564,14 +4611,14 @@ class TopTools_IndexedDataMapOfShapeListOfShape(OCC.TCollection.TCollection_Basi
         """
         return _TopTools.TopTools_IndexedDataMapOfShapeListOfShape_Substitute(self, *args)
 
-    def RemoveLast(self, *args) -> "void" :
+    def RemoveLast(self):
         """
         :rtype: None
 
         """
-        return _TopTools.TopTools_IndexedDataMapOfShapeListOfShape_RemoveLast(self, *args)
+        return _TopTools.TopTools_IndexedDataMapOfShapeListOfShape_RemoveLast(self)
 
-    def Contains(self, *args) -> "Standard_Boolean" :
+    def Contains(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -4580,34 +4627,34 @@ class TopTools_IndexedDataMapOfShapeListOfShape(OCC.TCollection.TCollection_Basi
         """
         return _TopTools.TopTools_IndexedDataMapOfShapeListOfShape_Contains(self, *args)
 
-    def FindKey(self, *args) -> "TopoDS_Shape const" :
+    def FindKey(self, *args):
         """
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :rtype: TopoDS_Shape
 
         """
         return _TopTools.TopTools_IndexedDataMapOfShapeListOfShape_FindKey(self, *args)
 
-    def FindFromIndex(self, *args) -> "TopTools_ListOfShape const &" :
+    def FindFromIndex(self, *args):
         """
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :rtype: TopTools_ListOfShape
 
         """
         return _TopTools.TopTools_IndexedDataMapOfShapeListOfShape_FindFromIndex(self, *args)
 
-    def ChangeFromIndex(self, *args) -> "TopTools_ListOfShape &" :
+    def ChangeFromIndex(self, *args):
         """
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :rtype: TopTools_ListOfShape
 
         """
         return _TopTools.TopTools_IndexedDataMapOfShapeListOfShape_ChangeFromIndex(self, *args)
 
-    def FindIndex(self, *args) -> "Standard_Integer" :
+    def FindIndex(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -4616,7 +4663,7 @@ class TopTools_IndexedDataMapOfShapeListOfShape(OCC.TCollection.TCollection_Basi
         """
         return _TopTools.TopTools_IndexedDataMapOfShapeListOfShape_FindIndex(self, *args)
 
-    def FindFromKey(self, *args) -> "TopTools_ListOfShape const &" :
+    def FindFromKey(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -4625,7 +4672,7 @@ class TopTools_IndexedDataMapOfShapeListOfShape(OCC.TCollection.TCollection_Basi
         """
         return _TopTools.TopTools_IndexedDataMapOfShapeListOfShape_FindFromKey(self, *args)
 
-    def ChangeFromKey(self, *args) -> "TopTools_ListOfShape &" :
+    def ChangeFromKey(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -4634,7 +4681,7 @@ class TopTools_IndexedDataMapOfShapeListOfShape(OCC.TCollection.TCollection_Basi
         """
         return _TopTools.TopTools_IndexedDataMapOfShapeListOfShape_ChangeFromKey(self, *args)
 
-    def FindFromKey1(self, *args) -> "Standard_Address" :
+    def FindFromKey1(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -4643,7 +4690,7 @@ class TopTools_IndexedDataMapOfShapeListOfShape(OCC.TCollection.TCollection_Basi
         """
         return _TopTools.TopTools_IndexedDataMapOfShapeListOfShape_FindFromKey1(self, *args)
 
-    def ChangeFromKey1(self, *args) -> "Standard_Address" :
+    def ChangeFromKey1(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -4652,7 +4699,7 @@ class TopTools_IndexedDataMapOfShapeListOfShape(OCC.TCollection.TCollection_Basi
         """
         return _TopTools.TopTools_IndexedDataMapOfShapeListOfShape_ChangeFromKey1(self, *args)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(TopTools_IndexedDataMapOfShapeListOfShape self)"""
         return _TopTools.TopTools_IndexedDataMapOfShapeListOfShape__kill_pointed(self)
 
@@ -4687,15 +4734,19 @@ TopTools_IndexedDataMapOfShapeListOfShape_swigregister(TopTools_IndexedDataMapOf
 class TopTools_IndexedDataMapOfShapeShape(OCC.TCollection.TCollection_BasicMap):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self, NbBuckets=1): 
         """
         :param NbBuckets: default value is 1
-        :type NbBuckets: int
+        :type NbBuckets: Standard_Integer
+        :rtype: None
+
+        :param NbBuckets: default value is 1
+        :type NbBuckets: Standard_Integer
         :rtype: None
 
         """
-        _TopTools.TopTools_IndexedDataMapOfShapeShape_swiginit(self,_TopTools.new_TopTools_IndexedDataMapOfShapeShape(*args))
-    def Assign(self, *args) -> "TopTools_IndexedDataMapOfShapeShape &" :
+        _TopTools.TopTools_IndexedDataMapOfShapeShape_swiginit(self,_TopTools.new_TopTools_IndexedDataMapOfShapeShape(NbBuckets))
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: TopTools_IndexedDataMapOfShapeShape &
@@ -4704,7 +4755,7 @@ class TopTools_IndexedDataMapOfShapeShape(OCC.TCollection.TCollection_BasicMap):
         """
         return _TopTools.TopTools_IndexedDataMapOfShapeShape_Assign(self, *args)
 
-    def Set(self, *args) -> "TopTools_IndexedDataMapOfShapeShape &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: TopTools_IndexedDataMapOfShapeShape &
@@ -4713,23 +4764,23 @@ class TopTools_IndexedDataMapOfShapeShape(OCC.TCollection.TCollection_BasicMap):
         """
         return _TopTools.TopTools_IndexedDataMapOfShapeShape_Set(self, *args)
 
-    def ReSize(self, *args) -> "void" :
+    def ReSize(self, *args):
         """
         :param NbBuckets:
-        :type NbBuckets: int
+        :type NbBuckets: Standard_Integer
         :rtype: None
 
         """
         return _TopTools.TopTools_IndexedDataMapOfShapeShape_ReSize(self, *args)
 
-    def Clear(self, *args) -> "void" :
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _TopTools.TopTools_IndexedDataMapOfShapeShape_Clear(self, *args)
+        return _TopTools.TopTools_IndexedDataMapOfShapeShape_Clear(self)
 
-    def Add(self, *args) -> "Standard_Integer" :
+    def Add(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -4740,10 +4791,10 @@ class TopTools_IndexedDataMapOfShapeShape(OCC.TCollection.TCollection_BasicMap):
         """
         return _TopTools.TopTools_IndexedDataMapOfShapeShape_Add(self, *args)
 
-    def Substitute(self, *args) -> "void" :
+    def Substitute(self, *args):
         """
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :param K:
         :type K: TopoDS_Shape &
         :param T:
@@ -4753,14 +4804,14 @@ class TopTools_IndexedDataMapOfShapeShape(OCC.TCollection.TCollection_BasicMap):
         """
         return _TopTools.TopTools_IndexedDataMapOfShapeShape_Substitute(self, *args)
 
-    def RemoveLast(self, *args) -> "void" :
+    def RemoveLast(self):
         """
         :rtype: None
 
         """
-        return _TopTools.TopTools_IndexedDataMapOfShapeShape_RemoveLast(self, *args)
+        return _TopTools.TopTools_IndexedDataMapOfShapeShape_RemoveLast(self)
 
-    def Contains(self, *args) -> "Standard_Boolean" :
+    def Contains(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -4769,34 +4820,34 @@ class TopTools_IndexedDataMapOfShapeShape(OCC.TCollection.TCollection_BasicMap):
         """
         return _TopTools.TopTools_IndexedDataMapOfShapeShape_Contains(self, *args)
 
-    def FindKey(self, *args) -> "TopoDS_Shape const" :
+    def FindKey(self, *args):
         """
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :rtype: TopoDS_Shape
 
         """
         return _TopTools.TopTools_IndexedDataMapOfShapeShape_FindKey(self, *args)
 
-    def FindFromIndex(self, *args) -> "TopoDS_Shape const" :
+    def FindFromIndex(self, *args):
         """
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :rtype: TopoDS_Shape
 
         """
         return _TopTools.TopTools_IndexedDataMapOfShapeShape_FindFromIndex(self, *args)
 
-    def ChangeFromIndex(self, *args) -> "TopoDS_Shape" :
+    def ChangeFromIndex(self, *args):
         """
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :rtype: TopoDS_Shape
 
         """
         return _TopTools.TopTools_IndexedDataMapOfShapeShape_ChangeFromIndex(self, *args)
 
-    def FindIndex(self, *args) -> "Standard_Integer" :
+    def FindIndex(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -4805,7 +4856,7 @@ class TopTools_IndexedDataMapOfShapeShape(OCC.TCollection.TCollection_BasicMap):
         """
         return _TopTools.TopTools_IndexedDataMapOfShapeShape_FindIndex(self, *args)
 
-    def FindFromKey(self, *args) -> "TopoDS_Shape const" :
+    def FindFromKey(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -4814,7 +4865,7 @@ class TopTools_IndexedDataMapOfShapeShape(OCC.TCollection.TCollection_BasicMap):
         """
         return _TopTools.TopTools_IndexedDataMapOfShapeShape_FindFromKey(self, *args)
 
-    def ChangeFromKey(self, *args) -> "TopoDS_Shape" :
+    def ChangeFromKey(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -4823,7 +4874,7 @@ class TopTools_IndexedDataMapOfShapeShape(OCC.TCollection.TCollection_BasicMap):
         """
         return _TopTools.TopTools_IndexedDataMapOfShapeShape_ChangeFromKey(self, *args)
 
-    def FindFromKey1(self, *args) -> "Standard_Address" :
+    def FindFromKey1(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -4832,7 +4883,7 @@ class TopTools_IndexedDataMapOfShapeShape(OCC.TCollection.TCollection_BasicMap):
         """
         return _TopTools.TopTools_IndexedDataMapOfShapeShape_FindFromKey1(self, *args)
 
-    def ChangeFromKey1(self, *args) -> "Standard_Address" :
+    def ChangeFromKey1(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -4841,7 +4892,7 @@ class TopTools_IndexedDataMapOfShapeShape(OCC.TCollection.TCollection_BasicMap):
         """
         return _TopTools.TopTools_IndexedDataMapOfShapeShape_ChangeFromKey1(self, *args)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(TopTools_IndexedDataMapOfShapeShape self)"""
         return _TopTools.TopTools_IndexedDataMapOfShapeShape__kill_pointed(self)
 
@@ -4881,7 +4932,7 @@ class TopTools_IndexedMapNodeOfIndexedMapOfOrientedShape(OCC.TCollection.TCollec
         :param K1:
         :type K1: TopoDS_Shape &
         :param K2:
-        :type K2: int
+        :type K2: Standard_Integer
         :param n1:
         :type n1: TCollection_MapNodePtr &
         :param n2:
@@ -4890,33 +4941,33 @@ class TopTools_IndexedMapNodeOfIndexedMapOfOrientedShape(OCC.TCollection.TCollec
 
         """
         _TopTools.TopTools_IndexedMapNodeOfIndexedMapOfOrientedShape_swiginit(self,_TopTools.new_TopTools_IndexedMapNodeOfIndexedMapOfOrientedShape(*args))
-    def Key1(self, *args) -> "TopoDS_Shape" :
+    def Key1(self):
         """
         :rtype: TopoDS_Shape
 
         """
-        return _TopTools.TopTools_IndexedMapNodeOfIndexedMapOfOrientedShape_Key1(self, *args)
+        return _TopTools.TopTools_IndexedMapNodeOfIndexedMapOfOrientedShape_Key1(self)
 
-    def GetKey2(self) -> "Standard_Integer" :
+    def GetKey2(self):
         """GetKey2(TopTools_IndexedMapNodeOfIndexedMapOfOrientedShape self) -> Standard_Integer"""
         return _TopTools.TopTools_IndexedMapNodeOfIndexedMapOfOrientedShape_GetKey2(self)
 
-    def SetKey2(self, *args) -> "void" :
+    def SetKey2(self, *args):
         """SetKey2(TopTools_IndexedMapNodeOfIndexedMapOfOrientedShape self, Standard_Integer value)"""
         return _TopTools.TopTools_IndexedMapNodeOfIndexedMapOfOrientedShape_SetKey2(self, *args)
 
-    def Next2(self, *args) -> "TCollection_MapNodePtr &" :
+    def Next2(self):
         """
         :rtype: TCollection_MapNodePtr
 
         """
-        return _TopTools.TopTools_IndexedMapNodeOfIndexedMapOfOrientedShape_Next2(self, *args)
+        return _TopTools.TopTools_IndexedMapNodeOfIndexedMapOfOrientedShape_Next2(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(TopTools_IndexedMapNodeOfIndexedMapOfOrientedShape self)"""
         return _TopTools.TopTools_IndexedMapNodeOfIndexedMapOfOrientedShape__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_TopTools_IndexedMapNodeOfIndexedMapOfOrientedShape" :
+    def GetHandle(self):
         """GetHandle(TopTools_IndexedMapNodeOfIndexedMapOfOrientedShape self) -> Handle_TopTools_IndexedMapNodeOfIndexedMapOfOrientedShape"""
         return _TopTools.TopTools_IndexedMapNodeOfIndexedMapOfOrientedShape_GetHandle(self)
 
@@ -4958,7 +5009,7 @@ Handle_TopTools_IndexedMapNodeOfIndexedMapOfOrientedShape._kill_pointed = new_in
 Handle_TopTools_IndexedMapNodeOfIndexedMapOfOrientedShape_swigregister = _TopTools.Handle_TopTools_IndexedMapNodeOfIndexedMapOfOrientedShape_swigregister
 Handle_TopTools_IndexedMapNodeOfIndexedMapOfOrientedShape_swigregister(Handle_TopTools_IndexedMapNodeOfIndexedMapOfOrientedShape)
 
-def Handle_TopTools_IndexedMapNodeOfIndexedMapOfOrientedShape_DownCast(*args) -> "Handle_TopTools_IndexedMapNodeOfIndexedMapOfOrientedShape const" :
+def Handle_TopTools_IndexedMapNodeOfIndexedMapOfOrientedShape_DownCast(*args):
   return _TopTools.Handle_TopTools_IndexedMapNodeOfIndexedMapOfOrientedShape_DownCast(*args)
 Handle_TopTools_IndexedMapNodeOfIndexedMapOfOrientedShape_DownCast = _TopTools.Handle_TopTools_IndexedMapNodeOfIndexedMapOfOrientedShape_DownCast
 
@@ -4970,7 +5021,7 @@ class TopTools_IndexedMapNodeOfIndexedMapOfShape(OCC.TCollection.TCollection_Map
         :param K1:
         :type K1: TopoDS_Shape &
         :param K2:
-        :type K2: int
+        :type K2: Standard_Integer
         :param n1:
         :type n1: TCollection_MapNodePtr &
         :param n2:
@@ -4979,33 +5030,33 @@ class TopTools_IndexedMapNodeOfIndexedMapOfShape(OCC.TCollection.TCollection_Map
 
         """
         _TopTools.TopTools_IndexedMapNodeOfIndexedMapOfShape_swiginit(self,_TopTools.new_TopTools_IndexedMapNodeOfIndexedMapOfShape(*args))
-    def Key1(self, *args) -> "TopoDS_Shape" :
+    def Key1(self):
         """
         :rtype: TopoDS_Shape
 
         """
-        return _TopTools.TopTools_IndexedMapNodeOfIndexedMapOfShape_Key1(self, *args)
+        return _TopTools.TopTools_IndexedMapNodeOfIndexedMapOfShape_Key1(self)
 
-    def GetKey2(self) -> "Standard_Integer" :
+    def GetKey2(self):
         """GetKey2(TopTools_IndexedMapNodeOfIndexedMapOfShape self) -> Standard_Integer"""
         return _TopTools.TopTools_IndexedMapNodeOfIndexedMapOfShape_GetKey2(self)
 
-    def SetKey2(self, *args) -> "void" :
+    def SetKey2(self, *args):
         """SetKey2(TopTools_IndexedMapNodeOfIndexedMapOfShape self, Standard_Integer value)"""
         return _TopTools.TopTools_IndexedMapNodeOfIndexedMapOfShape_SetKey2(self, *args)
 
-    def Next2(self, *args) -> "TCollection_MapNodePtr &" :
+    def Next2(self):
         """
         :rtype: TCollection_MapNodePtr
 
         """
-        return _TopTools.TopTools_IndexedMapNodeOfIndexedMapOfShape_Next2(self, *args)
+        return _TopTools.TopTools_IndexedMapNodeOfIndexedMapOfShape_Next2(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(TopTools_IndexedMapNodeOfIndexedMapOfShape self)"""
         return _TopTools.TopTools_IndexedMapNodeOfIndexedMapOfShape__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_TopTools_IndexedMapNodeOfIndexedMapOfShape" :
+    def GetHandle(self):
         """GetHandle(TopTools_IndexedMapNodeOfIndexedMapOfShape self) -> Handle_TopTools_IndexedMapNodeOfIndexedMapOfShape"""
         return _TopTools.TopTools_IndexedMapNodeOfIndexedMapOfShape_GetHandle(self)
 
@@ -5047,22 +5098,26 @@ Handle_TopTools_IndexedMapNodeOfIndexedMapOfShape._kill_pointed = new_instanceme
 Handle_TopTools_IndexedMapNodeOfIndexedMapOfShape_swigregister = _TopTools.Handle_TopTools_IndexedMapNodeOfIndexedMapOfShape_swigregister
 Handle_TopTools_IndexedMapNodeOfIndexedMapOfShape_swigregister(Handle_TopTools_IndexedMapNodeOfIndexedMapOfShape)
 
-def Handle_TopTools_IndexedMapNodeOfIndexedMapOfShape_DownCast(*args) -> "Handle_TopTools_IndexedMapNodeOfIndexedMapOfShape const" :
+def Handle_TopTools_IndexedMapNodeOfIndexedMapOfShape_DownCast(*args):
   return _TopTools.Handle_TopTools_IndexedMapNodeOfIndexedMapOfShape_DownCast(*args)
 Handle_TopTools_IndexedMapNodeOfIndexedMapOfShape_DownCast = _TopTools.Handle_TopTools_IndexedMapNodeOfIndexedMapOfShape_DownCast
 
 class TopTools_IndexedMapOfOrientedShape(OCC.TCollection.TCollection_BasicMap):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self, NbBuckets=1): 
         """
         :param NbBuckets: default value is 1
-        :type NbBuckets: int
+        :type NbBuckets: Standard_Integer
+        :rtype: None
+
+        :param NbBuckets: default value is 1
+        :type NbBuckets: Standard_Integer
         :rtype: None
 
         """
-        _TopTools.TopTools_IndexedMapOfOrientedShape_swiginit(self,_TopTools.new_TopTools_IndexedMapOfOrientedShape(*args))
-    def Assign(self, *args) -> "TopTools_IndexedMapOfOrientedShape &" :
+        _TopTools.TopTools_IndexedMapOfOrientedShape_swiginit(self,_TopTools.new_TopTools_IndexedMapOfOrientedShape(NbBuckets))
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: TopTools_IndexedMapOfOrientedShape &
@@ -5071,7 +5126,7 @@ class TopTools_IndexedMapOfOrientedShape(OCC.TCollection.TCollection_BasicMap):
         """
         return _TopTools.TopTools_IndexedMapOfOrientedShape_Assign(self, *args)
 
-    def Set(self, *args) -> "TopTools_IndexedMapOfOrientedShape &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: TopTools_IndexedMapOfOrientedShape &
@@ -5080,23 +5135,23 @@ class TopTools_IndexedMapOfOrientedShape(OCC.TCollection.TCollection_BasicMap):
         """
         return _TopTools.TopTools_IndexedMapOfOrientedShape_Set(self, *args)
 
-    def ReSize(self, *args) -> "void" :
+    def ReSize(self, *args):
         """
         :param NbBuckets:
-        :type NbBuckets: int
+        :type NbBuckets: Standard_Integer
         :rtype: None
 
         """
         return _TopTools.TopTools_IndexedMapOfOrientedShape_ReSize(self, *args)
 
-    def Clear(self, *args) -> "void" :
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _TopTools.TopTools_IndexedMapOfOrientedShape_Clear(self, *args)
+        return _TopTools.TopTools_IndexedMapOfOrientedShape_Clear(self)
 
-    def Add(self, *args) -> "Standard_Integer" :
+    def Add(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -5105,10 +5160,10 @@ class TopTools_IndexedMapOfOrientedShape(OCC.TCollection.TCollection_BasicMap):
         """
         return _TopTools.TopTools_IndexedMapOfOrientedShape_Add(self, *args)
 
-    def Substitute(self, *args) -> "void" :
+    def Substitute(self, *args):
         """
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :param K:
         :type K: TopoDS_Shape &
         :rtype: None
@@ -5116,14 +5171,14 @@ class TopTools_IndexedMapOfOrientedShape(OCC.TCollection.TCollection_BasicMap):
         """
         return _TopTools.TopTools_IndexedMapOfOrientedShape_Substitute(self, *args)
 
-    def RemoveLast(self, *args) -> "void" :
+    def RemoveLast(self):
         """
         :rtype: None
 
         """
-        return _TopTools.TopTools_IndexedMapOfOrientedShape_RemoveLast(self, *args)
+        return _TopTools.TopTools_IndexedMapOfOrientedShape_RemoveLast(self)
 
-    def Contains(self, *args) -> "Standard_Boolean" :
+    def Contains(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -5132,16 +5187,16 @@ class TopTools_IndexedMapOfOrientedShape(OCC.TCollection.TCollection_BasicMap):
         """
         return _TopTools.TopTools_IndexedMapOfOrientedShape_Contains(self, *args)
 
-    def FindKey(self, *args) -> "TopoDS_Shape const" :
+    def FindKey(self, *args):
         """
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :rtype: TopoDS_Shape
 
         """
         return _TopTools.TopTools_IndexedMapOfOrientedShape_FindKey(self, *args)
 
-    def FindIndex(self, *args) -> "Standard_Integer" :
+    def FindIndex(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -5150,7 +5205,7 @@ class TopTools_IndexedMapOfOrientedShape(OCC.TCollection.TCollection_BasicMap):
         """
         return _TopTools.TopTools_IndexedMapOfOrientedShape_FindIndex(self, *args)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(TopTools_IndexedMapOfOrientedShape self)"""
         return _TopTools.TopTools_IndexedMapOfOrientedShape__kill_pointed(self)
 
@@ -5179,15 +5234,19 @@ TopTools_IndexedMapOfOrientedShape_swigregister(TopTools_IndexedMapOfOrientedSha
 class TopTools_IndexedMapOfShape(OCC.TCollection.TCollection_BasicMap):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self, NbBuckets=1): 
         """
         :param NbBuckets: default value is 1
-        :type NbBuckets: int
+        :type NbBuckets: Standard_Integer
+        :rtype: None
+
+        :param NbBuckets: default value is 1
+        :type NbBuckets: Standard_Integer
         :rtype: None
 
         """
-        _TopTools.TopTools_IndexedMapOfShape_swiginit(self,_TopTools.new_TopTools_IndexedMapOfShape(*args))
-    def Assign(self, *args) -> "TopTools_IndexedMapOfShape &" :
+        _TopTools.TopTools_IndexedMapOfShape_swiginit(self,_TopTools.new_TopTools_IndexedMapOfShape(NbBuckets))
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: TopTools_IndexedMapOfShape &
@@ -5196,7 +5255,7 @@ class TopTools_IndexedMapOfShape(OCC.TCollection.TCollection_BasicMap):
         """
         return _TopTools.TopTools_IndexedMapOfShape_Assign(self, *args)
 
-    def Set(self, *args) -> "TopTools_IndexedMapOfShape &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: TopTools_IndexedMapOfShape &
@@ -5205,23 +5264,23 @@ class TopTools_IndexedMapOfShape(OCC.TCollection.TCollection_BasicMap):
         """
         return _TopTools.TopTools_IndexedMapOfShape_Set(self, *args)
 
-    def ReSize(self, *args) -> "void" :
+    def ReSize(self, *args):
         """
         :param NbBuckets:
-        :type NbBuckets: int
+        :type NbBuckets: Standard_Integer
         :rtype: None
 
         """
         return _TopTools.TopTools_IndexedMapOfShape_ReSize(self, *args)
 
-    def Clear(self, *args) -> "void" :
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _TopTools.TopTools_IndexedMapOfShape_Clear(self, *args)
+        return _TopTools.TopTools_IndexedMapOfShape_Clear(self)
 
-    def Add(self, *args) -> "Standard_Integer" :
+    def Add(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -5230,10 +5289,10 @@ class TopTools_IndexedMapOfShape(OCC.TCollection.TCollection_BasicMap):
         """
         return _TopTools.TopTools_IndexedMapOfShape_Add(self, *args)
 
-    def Substitute(self, *args) -> "void" :
+    def Substitute(self, *args):
         """
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :param K:
         :type K: TopoDS_Shape &
         :rtype: None
@@ -5241,14 +5300,14 @@ class TopTools_IndexedMapOfShape(OCC.TCollection.TCollection_BasicMap):
         """
         return _TopTools.TopTools_IndexedMapOfShape_Substitute(self, *args)
 
-    def RemoveLast(self, *args) -> "void" :
+    def RemoveLast(self):
         """
         :rtype: None
 
         """
-        return _TopTools.TopTools_IndexedMapOfShape_RemoveLast(self, *args)
+        return _TopTools.TopTools_IndexedMapOfShape_RemoveLast(self)
 
-    def Contains(self, *args) -> "Standard_Boolean" :
+    def Contains(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -5257,16 +5316,16 @@ class TopTools_IndexedMapOfShape(OCC.TCollection.TCollection_BasicMap):
         """
         return _TopTools.TopTools_IndexedMapOfShape_Contains(self, *args)
 
-    def FindKey(self, *args) -> "TopoDS_Shape const" :
+    def FindKey(self, *args):
         """
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :rtype: TopoDS_Shape
 
         """
         return _TopTools.TopTools_IndexedMapOfShape_FindKey(self, *args)
 
-    def FindIndex(self, *args) -> "Standard_Integer" :
+    def FindIndex(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -5275,7 +5334,7 @@ class TopTools_IndexedMapOfShape(OCC.TCollection.TCollection_BasicMap):
         """
         return _TopTools.TopTools_IndexedMapOfShape_FindIndex(self, *args)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(TopTools_IndexedMapOfShape self)"""
         return _TopTools.TopTools_IndexedMapOfShape__kill_pointed(self)
 
@@ -5314,7 +5373,7 @@ class TopTools_ListIteratorOfListOfShape(object):
 
         """
         _TopTools.TopTools_ListIteratorOfListOfShape_swiginit(self,_TopTools.new_TopTools_ListIteratorOfListOfShape(*args))
-    def Initialize(self, *args) -> "void" :
+    def Initialize(self, *args):
         """
         :param L:
         :type L: TopTools_ListOfShape &
@@ -5323,26 +5382,26 @@ class TopTools_ListIteratorOfListOfShape(object):
         """
         return _TopTools.TopTools_ListIteratorOfListOfShape_Initialize(self, *args)
 
-    def More(self, *args) -> "Standard_Boolean" :
+    def More(self):
         """
         :rtype: bool
 
         """
-        return _TopTools.TopTools_ListIteratorOfListOfShape_More(self, *args)
+        return _TopTools.TopTools_ListIteratorOfListOfShape_More(self)
 
-    def Next(self, *args) -> "void" :
+    def Next(self):
         """
         :rtype: None
 
         """
-        return _TopTools.TopTools_ListIteratorOfListOfShape_Next(self, *args)
+        return _TopTools.TopTools_ListIteratorOfListOfShape_Next(self)
 
-    def Value(self, *args) -> "TopoDS_Shape" :
+    def Value(self):
         """
         :rtype: TopoDS_Shape
 
         """
-        return _TopTools.TopTools_ListIteratorOfListOfShape_Value(self, *args)
+        return _TopTools.TopTools_ListIteratorOfListOfShape_Value(self)
 
     def __del__(self):
     	try:
@@ -5373,18 +5432,18 @@ class TopTools_ListNodeOfListOfShape(OCC.TCollection.TCollection_MapNode):
 
         """
         _TopTools.TopTools_ListNodeOfListOfShape_swiginit(self,_TopTools.new_TopTools_ListNodeOfListOfShape(*args))
-    def Value(self, *args) -> "TopoDS_Shape" :
+    def Value(self):
         """
         :rtype: TopoDS_Shape
 
         """
-        return _TopTools.TopTools_ListNodeOfListOfShape_Value(self, *args)
+        return _TopTools.TopTools_ListNodeOfListOfShape_Value(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(TopTools_ListNodeOfListOfShape self)"""
         return _TopTools.TopTools_ListNodeOfListOfShape__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_TopTools_ListNodeOfListOfShape" :
+    def GetHandle(self):
         """GetHandle(TopTools_ListNodeOfListOfShape self) -> Handle_TopTools_ListNodeOfListOfShape"""
         return _TopTools.TopTools_ListNodeOfListOfShape_GetHandle(self)
 
@@ -5423,20 +5482,20 @@ Handle_TopTools_ListNodeOfListOfShape._kill_pointed = new_instancemethod(_TopToo
 Handle_TopTools_ListNodeOfListOfShape_swigregister = _TopTools.Handle_TopTools_ListNodeOfListOfShape_swigregister
 Handle_TopTools_ListNodeOfListOfShape_swigregister(Handle_TopTools_ListNodeOfListOfShape)
 
-def Handle_TopTools_ListNodeOfListOfShape_DownCast(*args) -> "Handle_TopTools_ListNodeOfListOfShape const" :
+def Handle_TopTools_ListNodeOfListOfShape_DownCast(*args):
   return _TopTools.Handle_TopTools_ListNodeOfListOfShape_DownCast(*args)
 Handle_TopTools_ListNodeOfListOfShape_DownCast = _TopTools.Handle_TopTools_ListNodeOfListOfShape_DownCast
 
 class TopTools_ListOfShape(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _TopTools.TopTools_ListOfShape_swiginit(self,_TopTools.new_TopTools_ListOfShape(*args))
-    def Assign(self, *args) -> "void" :
+        _TopTools.TopTools_ListOfShape_swiginit(self,_TopTools.new_TopTools_ListOfShape())
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: TopTools_ListOfShape &
@@ -5445,7 +5504,7 @@ class TopTools_ListOfShape(object):
         """
         return _TopTools.TopTools_ListOfShape_Assign(self, *args)
 
-    def Set(self, *args) -> "void" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: TopTools_ListOfShape &
@@ -5454,28 +5513,28 @@ class TopTools_ListOfShape(object):
         """
         return _TopTools.TopTools_ListOfShape_Set(self, *args)
 
-    def Extent(self, *args) -> "Standard_Integer" :
+    def Extent(self):
         """
         :rtype: int
 
         """
-        return _TopTools.TopTools_ListOfShape_Extent(self, *args)
+        return _TopTools.TopTools_ListOfShape_Extent(self)
 
-    def Clear(self, *args) -> "void" :
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _TopTools.TopTools_ListOfShape_Clear(self, *args)
+        return _TopTools.TopTools_ListOfShape_Clear(self)
 
-    def IsEmpty(self, *args) -> "Standard_Boolean" :
+    def IsEmpty(self):
         """
         :rtype: bool
 
         """
-        return _TopTools.TopTools_ListOfShape_IsEmpty(self, *args)
+        return _TopTools.TopTools_ListOfShape_IsEmpty(self)
 
-    def Prepend(self, *args) -> "void" :
+    def Prepend(self, *args):
         """
         :param I:
         :type I: TopoDS_Shape &
@@ -5494,7 +5553,7 @@ class TopTools_ListOfShape(object):
         """
         return _TopTools.TopTools_ListOfShape_Prepend(self, *args)
 
-    def Append(self, *args) -> "void" :
+    def Append(self, *args):
         """
         :param I:
         :type I: TopoDS_Shape &
@@ -5513,28 +5572,28 @@ class TopTools_ListOfShape(object):
         """
         return _TopTools.TopTools_ListOfShape_Append(self, *args)
 
-    def First(self, *args) -> "TopoDS_Shape" :
+    def First(self):
         """
         :rtype: TopoDS_Shape
 
         """
-        return _TopTools.TopTools_ListOfShape_First(self, *args)
+        return _TopTools.TopTools_ListOfShape_First(self)
 
-    def Last(self, *args) -> "TopoDS_Shape" :
+    def Last(self):
         """
         :rtype: TopoDS_Shape
 
         """
-        return _TopTools.TopTools_ListOfShape_Last(self, *args)
+        return _TopTools.TopTools_ListOfShape_Last(self)
 
-    def RemoveFirst(self, *args) -> "void" :
+    def RemoveFirst(self):
         """
         :rtype: None
 
         """
-        return _TopTools.TopTools_ListOfShape_RemoveFirst(self, *args)
+        return _TopTools.TopTools_ListOfShape_RemoveFirst(self)
 
-    def Remove(self, *args) -> "void" :
+    def Remove(self, *args):
         """
         :param It:
         :type It: TopTools_ListIteratorOfListOfShape &
@@ -5543,7 +5602,7 @@ class TopTools_ListOfShape(object):
         """
         return _TopTools.TopTools_ListOfShape_Remove(self, *args)
 
-    def InsertBefore(self, *args) -> "void" :
+    def InsertBefore(self, *args):
         """
         :param I:
         :type I: TopoDS_Shape &
@@ -5560,7 +5619,7 @@ class TopTools_ListOfShape(object):
         """
         return _TopTools.TopTools_ListOfShape_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args) -> "void" :
+    def InsertAfter(self, *args):
         """
         :param I:
         :type I: TopoDS_Shape &
@@ -5605,24 +5664,24 @@ TopTools_ListOfShape_swigregister(TopTools_ListOfShape)
 class TopTools_LocationSet(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         * Returns an empty set of locations.
 
         :rtype: None
 
         """
-        _TopTools.TopTools_LocationSet_swiginit(self,_TopTools.new_TopTools_LocationSet(*args))
-    def Clear(self, *args) -> "void" :
+        _TopTools.TopTools_LocationSet_swiginit(self,_TopTools.new_TopTools_LocationSet())
+    def Clear(self):
         """
         * Clears the content of the set.
 
         :rtype: None
 
         """
-        return _TopTools.TopTools_LocationSet_Clear(self, *args)
+        return _TopTools.TopTools_LocationSet_Clear(self)
 
-    def Add(self, *args) -> "Standard_Integer" :
+    def Add(self, *args):
         """
         * Incorporate a new Location in the set and returns its index.
 
@@ -5633,18 +5692,18 @@ class TopTools_LocationSet(object):
         """
         return _TopTools.TopTools_LocationSet_Add(self, *args)
 
-    def Location(self, *args) -> "TopLoc_Location const &" :
+    def Location(self, *args):
         """
         * Returns the location of index <I>.
 
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :rtype: TopLoc_Location
 
         """
         return _TopTools.TopTools_LocationSet_Location(self, *args)
 
-    def Index(self, *args) -> "Standard_Integer" :
+    def Index(self, *args):
         """
         * Returns the index of <L>.
 
@@ -5655,19 +5714,19 @@ class TopTools_LocationSet(object):
         """
         return _TopTools.TopTools_LocationSet_Index(self, *args)
 
-    def DumpToString(self) -> "std::string" :
+    def DumpToString(self):
         """DumpToString(TopTools_LocationSet self) -> std::string"""
         return _TopTools.TopTools_LocationSet_DumpToString(self)
 
-    def WriteToString(self) -> "std::string" :
+    def WriteToString(self):
         """WriteToString(TopTools_LocationSet self) -> std::string"""
         return _TopTools.TopTools_LocationSet_WriteToString(self)
 
-    def ReadFromString(self, *args) -> "void" :
+    def ReadFromString(self, *args):
         """ReadFromString(TopTools_LocationSet self, std::string src)"""
         return _TopTools.TopTools_LocationSet_ReadFromString(self, *args)
 
-    def SetProgress(self, *args) -> "void" :
+    def SetProgress(self, *args):
         """
         :param PR:
         :type PR: Handle_Message_ProgressIndicator &
@@ -5676,14 +5735,14 @@ class TopTools_LocationSet(object):
         """
         return _TopTools.TopTools_LocationSet_SetProgress(self, *args)
 
-    def GetProgress(self, *args) -> "Handle_Message_ProgressIndicator" :
+    def GetProgress(self):
         """
         :rtype: Handle_Message_ProgressIndicator
 
         """
-        return _TopTools.TopTools_LocationSet_GetProgress(self, *args)
+        return _TopTools.TopTools_LocationSet_GetProgress(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(TopTools_LocationSet self)"""
         return _TopTools.TopTools_LocationSet__kill_pointed(self)
 
@@ -5721,7 +5780,7 @@ class TopTools_MapIteratorOfMapOfOrientedShape(OCC.TCollection.TCollection_Basic
 
         """
         _TopTools.TopTools_MapIteratorOfMapOfOrientedShape_swiginit(self,_TopTools.new_TopTools_MapIteratorOfMapOfOrientedShape(*args))
-    def Initialize(self, *args) -> "void" :
+    def Initialize(self, *args):
         """
         :param aMap:
         :type aMap: TopTools_MapOfOrientedShape &
@@ -5730,12 +5789,12 @@ class TopTools_MapIteratorOfMapOfOrientedShape(OCC.TCollection.TCollection_Basic
         """
         return _TopTools.TopTools_MapIteratorOfMapOfOrientedShape_Initialize(self, *args)
 
-    def Key(self, *args) -> "TopoDS_Shape const" :
+    def Key(self):
         """
         :rtype: TopoDS_Shape
 
         """
-        return _TopTools.TopTools_MapIteratorOfMapOfOrientedShape_Key(self, *args)
+        return _TopTools.TopTools_MapIteratorOfMapOfOrientedShape_Key(self)
 
     def __del__(self):
     	try:
@@ -5764,7 +5823,7 @@ class TopTools_MapIteratorOfMapOfShape(OCC.TCollection.TCollection_BasicMapItera
 
         """
         _TopTools.TopTools_MapIteratorOfMapOfShape_swiginit(self,_TopTools.new_TopTools_MapIteratorOfMapOfShape(*args))
-    def Initialize(self, *args) -> "void" :
+    def Initialize(self, *args):
         """
         :param aMap:
         :type aMap: TopTools_MapOfShape &
@@ -5773,12 +5832,12 @@ class TopTools_MapIteratorOfMapOfShape(OCC.TCollection.TCollection_BasicMapItera
         """
         return _TopTools.TopTools_MapIteratorOfMapOfShape_Initialize(self, *args)
 
-    def Key(self, *args) -> "TopoDS_Shape const" :
+    def Key(self):
         """
         :rtype: TopoDS_Shape
 
         """
-        return _TopTools.TopTools_MapIteratorOfMapOfShape_Key(self, *args)
+        return _TopTools.TopTools_MapIteratorOfMapOfShape_Key(self)
 
     def __del__(self):
     	try:
@@ -5797,15 +5856,19 @@ TopTools_MapIteratorOfMapOfShape_swigregister(TopTools_MapIteratorOfMapOfShape)
 class TopTools_MapOfOrientedShape(OCC.TCollection.TCollection_BasicMap):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self, NbBuckets=1): 
         """
         :param NbBuckets: default value is 1
-        :type NbBuckets: int
+        :type NbBuckets: Standard_Integer
+        :rtype: None
+
+        :param NbBuckets: default value is 1
+        :type NbBuckets: Standard_Integer
         :rtype: None
 
         """
-        _TopTools.TopTools_MapOfOrientedShape_swiginit(self,_TopTools.new_TopTools_MapOfOrientedShape(*args))
-    def Assign(self, *args) -> "TopTools_MapOfOrientedShape &" :
+        _TopTools.TopTools_MapOfOrientedShape_swiginit(self,_TopTools.new_TopTools_MapOfOrientedShape(NbBuckets))
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: TopTools_MapOfOrientedShape &
@@ -5814,7 +5877,7 @@ class TopTools_MapOfOrientedShape(OCC.TCollection.TCollection_BasicMap):
         """
         return _TopTools.TopTools_MapOfOrientedShape_Assign(self, *args)
 
-    def Set(self, *args) -> "TopTools_MapOfOrientedShape &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: TopTools_MapOfOrientedShape &
@@ -5823,23 +5886,23 @@ class TopTools_MapOfOrientedShape(OCC.TCollection.TCollection_BasicMap):
         """
         return _TopTools.TopTools_MapOfOrientedShape_Set(self, *args)
 
-    def ReSize(self, *args) -> "void" :
+    def ReSize(self, *args):
         """
         :param NbBuckets:
-        :type NbBuckets: int
+        :type NbBuckets: Standard_Integer
         :rtype: None
 
         """
         return _TopTools.TopTools_MapOfOrientedShape_ReSize(self, *args)
 
-    def Clear(self, *args) -> "void" :
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _TopTools.TopTools_MapOfOrientedShape_Clear(self, *args)
+        return _TopTools.TopTools_MapOfOrientedShape_Clear(self)
 
-    def Add(self, *args) -> "Standard_Boolean" :
+    def Add(self, *args):
         """
         :param aKey:
         :type aKey: TopoDS_Shape &
@@ -5848,7 +5911,7 @@ class TopTools_MapOfOrientedShape(OCC.TCollection.TCollection_BasicMap):
         """
         return _TopTools.TopTools_MapOfOrientedShape_Add(self, *args)
 
-    def Contains(self, *args) -> "Standard_Boolean" :
+    def Contains(self, *args):
         """
         :param aKey:
         :type aKey: TopoDS_Shape &
@@ -5857,7 +5920,7 @@ class TopTools_MapOfOrientedShape(OCC.TCollection.TCollection_BasicMap):
         """
         return _TopTools.TopTools_MapOfOrientedShape_Contains(self, *args)
 
-    def Remove(self, *args) -> "Standard_Boolean" :
+    def Remove(self, *args):
         """
         :param aKey:
         :type aKey: TopoDS_Shape &
@@ -5866,7 +5929,7 @@ class TopTools_MapOfOrientedShape(OCC.TCollection.TCollection_BasicMap):
         """
         return _TopTools.TopTools_MapOfOrientedShape_Remove(self, *args)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(TopTools_MapOfOrientedShape self)"""
         return _TopTools.TopTools_MapOfOrientedShape__kill_pointed(self)
 
@@ -5892,15 +5955,19 @@ TopTools_MapOfOrientedShape_swigregister(TopTools_MapOfOrientedShape)
 class TopTools_MapOfShape(OCC.TCollection.TCollection_BasicMap):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self, NbBuckets=1): 
         """
         :param NbBuckets: default value is 1
-        :type NbBuckets: int
+        :type NbBuckets: Standard_Integer
+        :rtype: None
+
+        :param NbBuckets: default value is 1
+        :type NbBuckets: Standard_Integer
         :rtype: None
 
         """
-        _TopTools.TopTools_MapOfShape_swiginit(self,_TopTools.new_TopTools_MapOfShape(*args))
-    def Assign(self, *args) -> "TopTools_MapOfShape &" :
+        _TopTools.TopTools_MapOfShape_swiginit(self,_TopTools.new_TopTools_MapOfShape(NbBuckets))
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: TopTools_MapOfShape &
@@ -5909,7 +5976,7 @@ class TopTools_MapOfShape(OCC.TCollection.TCollection_BasicMap):
         """
         return _TopTools.TopTools_MapOfShape_Assign(self, *args)
 
-    def Set(self, *args) -> "TopTools_MapOfShape &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: TopTools_MapOfShape &
@@ -5918,23 +5985,23 @@ class TopTools_MapOfShape(OCC.TCollection.TCollection_BasicMap):
         """
         return _TopTools.TopTools_MapOfShape_Set(self, *args)
 
-    def ReSize(self, *args) -> "void" :
+    def ReSize(self, *args):
         """
         :param NbBuckets:
-        :type NbBuckets: int
+        :type NbBuckets: Standard_Integer
         :rtype: None
 
         """
         return _TopTools.TopTools_MapOfShape_ReSize(self, *args)
 
-    def Clear(self, *args) -> "void" :
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _TopTools.TopTools_MapOfShape_Clear(self, *args)
+        return _TopTools.TopTools_MapOfShape_Clear(self)
 
-    def Add(self, *args) -> "Standard_Boolean" :
+    def Add(self, *args):
         """
         :param aKey:
         :type aKey: TopoDS_Shape &
@@ -5943,7 +6010,7 @@ class TopTools_MapOfShape(OCC.TCollection.TCollection_BasicMap):
         """
         return _TopTools.TopTools_MapOfShape_Add(self, *args)
 
-    def Contains(self, *args) -> "Standard_Boolean" :
+    def Contains(self, *args):
         """
         :param aKey:
         :type aKey: TopoDS_Shape &
@@ -5952,7 +6019,7 @@ class TopTools_MapOfShape(OCC.TCollection.TCollection_BasicMap):
         """
         return _TopTools.TopTools_MapOfShape_Contains(self, *args)
 
-    def Remove(self, *args) -> "Standard_Boolean" :
+    def Remove(self, *args):
         """
         :param aKey:
         :type aKey: TopoDS_Shape &
@@ -5961,7 +6028,7 @@ class TopTools_MapOfShape(OCC.TCollection.TCollection_BasicMap):
         """
         return _TopTools.TopTools_MapOfShape_Remove(self, *args)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(TopTools_MapOfShape self)"""
         return _TopTools.TopTools_MapOfShape__kill_pointed(self)
 
@@ -5987,15 +6054,15 @@ TopTools_MapOfShape_swigregister(TopTools_MapOfShape)
 class TopTools_MutexForShapeProvider(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         * Constructor
 
         :rtype: None
 
         """
-        _TopTools.TopTools_MutexForShapeProvider_swiginit(self,_TopTools.new_TopTools_MutexForShapeProvider(*args))
-    def CreateMutexesForSubShapes(self, *args) -> "void" :
+        _TopTools.TopTools_MutexForShapeProvider_swiginit(self,_TopTools.new_TopTools_MutexForShapeProvider())
+    def CreateMutexesForSubShapes(self, *args):
         """
         * Creates and associates mutexes with each sub-shape of type theType in theShape.
 
@@ -6008,7 +6075,7 @@ class TopTools_MutexForShapeProvider(object):
         """
         return _TopTools.TopTools_MutexForShapeProvider_CreateMutexesForSubShapes(self, *args)
 
-    def CreateMutexForShape(self, *args) -> "void" :
+    def CreateMutexForShape(self, *args):
         """
         * Creates and associates mutex with theShape
 
@@ -6019,7 +6086,7 @@ class TopTools_MutexForShapeProvider(object):
         """
         return _TopTools.TopTools_MutexForShapeProvider_CreateMutexForShape(self, *args)
 
-    def GetMutex(self, *args) -> "Standard_Mutex *" :
+    def GetMutex(self, *args):
         """
         * Returns pointer to mutex associated with theShape. In case when mutex not found returns NULL.
 
@@ -6030,14 +6097,14 @@ class TopTools_MutexForShapeProvider(object):
         """
         return _TopTools.TopTools_MutexForShapeProvider_GetMutex(self, *args)
 
-    def RemoveAllMutexes(self, *args) -> "void" :
+    def RemoveAllMutexes(self):
         """
         * Removes all mutexes
 
         :rtype: None
 
         """
-        return _TopTools.TopTools_MutexForShapeProvider_RemoveAllMutexes(self, *args)
+        return _TopTools.TopTools_MutexForShapeProvider_RemoveAllMutexes(self)
 
     def __del__(self):
     	try:
@@ -6057,22 +6124,23 @@ TopTools_MutexForShapeProvider_swigregister(TopTools_MutexForShapeProvider)
 
 class TopTools_OrientedShapeMapHasher(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
+    def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def HashCode(*args) -> "Standard_Integer" :
+    def HashCode(*args):
         """
         * Returns a HasCode value for the Key <K> in the range 0..Upper.
 
         :param S:
         :type S: TopoDS_Shape &
         :param Upper:
-        :type Upper: int
+        :type Upper: Standard_Integer
         :rtype: int
 
         """
         return _TopTools.TopTools_OrientedShapeMapHasher_HashCode(*args)
 
     HashCode = staticmethod(HashCode)
-    def IsEqual(*args) -> "Standard_Boolean" :
+    def IsEqual(*args):
         """
         * Returns True when the two keys are equal. Two same keys must have the same hashcode, the contrary is not necessary.
 
@@ -6086,8 +6154,6 @@ class TopTools_OrientedShapeMapHasher(object):
         return _TopTools.TopTools_OrientedShapeMapHasher_IsEqual(*args)
 
     IsEqual = staticmethod(IsEqual)
-    def __init__(self): 
-        _TopTools.TopTools_OrientedShapeMapHasher_swiginit(self,_TopTools.new_TopTools_OrientedShapeMapHasher())
     def __del__(self):
     	try:
     		self.thisown = False
@@ -6100,20 +6166,20 @@ TopTools_OrientedShapeMapHasher._kill_pointed = new_instancemethod(_TopTools.Top
 TopTools_OrientedShapeMapHasher_swigregister = _TopTools.TopTools_OrientedShapeMapHasher_swigregister
 TopTools_OrientedShapeMapHasher_swigregister(TopTools_OrientedShapeMapHasher)
 
-def TopTools_OrientedShapeMapHasher_HashCode(*args) -> "Standard_Integer" :
+def TopTools_OrientedShapeMapHasher_HashCode(*args):
   """
     * Returns a HasCode value for the Key <K> in the range 0..Upper.
 
     :param S:
     :type S: TopoDS_Shape &
     :param Upper:
-    :type Upper: int
+    :type Upper: Standard_Integer
     :rtype: int
 
     """
   return _TopTools.TopTools_OrientedShapeMapHasher_HashCode(*args)
 
-def TopTools_OrientedShapeMapHasher_IsEqual(*args) -> "Standard_Boolean" :
+def TopTools_OrientedShapeMapHasher_IsEqual(*args):
   """
     * Returns True when the two keys are equal. Two same keys must have the same hashcode, the contrary is not necessary.
 
@@ -6141,18 +6207,18 @@ class TopTools_SequenceNodeOfSequenceOfShape(OCC.TCollection.TCollection_SeqNode
 
         """
         _TopTools.TopTools_SequenceNodeOfSequenceOfShape_swiginit(self,_TopTools.new_TopTools_SequenceNodeOfSequenceOfShape(*args))
-    def Value(self, *args) -> "TopoDS_Shape" :
+    def Value(self):
         """
         :rtype: TopoDS_Shape
 
         """
-        return _TopTools.TopTools_SequenceNodeOfSequenceOfShape_Value(self, *args)
+        return _TopTools.TopTools_SequenceNodeOfSequenceOfShape_Value(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(TopTools_SequenceNodeOfSequenceOfShape self)"""
         return _TopTools.TopTools_SequenceNodeOfSequenceOfShape__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_TopTools_SequenceNodeOfSequenceOfShape" :
+    def GetHandle(self):
         """GetHandle(TopTools_SequenceNodeOfSequenceOfShape self) -> Handle_TopTools_SequenceNodeOfSequenceOfShape"""
         return _TopTools.TopTools_SequenceNodeOfSequenceOfShape_GetHandle(self)
 
@@ -6191,27 +6257,27 @@ Handle_TopTools_SequenceNodeOfSequenceOfShape._kill_pointed = new_instancemethod
 Handle_TopTools_SequenceNodeOfSequenceOfShape_swigregister = _TopTools.Handle_TopTools_SequenceNodeOfSequenceOfShape_swigregister
 Handle_TopTools_SequenceNodeOfSequenceOfShape_swigregister(Handle_TopTools_SequenceNodeOfSequenceOfShape)
 
-def Handle_TopTools_SequenceNodeOfSequenceOfShape_DownCast(*args) -> "Handle_TopTools_SequenceNodeOfSequenceOfShape const" :
+def Handle_TopTools_SequenceNodeOfSequenceOfShape_DownCast(*args):
   return _TopTools.Handle_TopTools_SequenceNodeOfSequenceOfShape_DownCast(*args)
 Handle_TopTools_SequenceNodeOfSequenceOfShape_DownCast = _TopTools.Handle_TopTools_SequenceNodeOfSequenceOfShape_DownCast
 
 class TopTools_SequenceOfShape(OCC.TCollection.TCollection_BaseSequence):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _TopTools.TopTools_SequenceOfShape_swiginit(self,_TopTools.new_TopTools_SequenceOfShape(*args))
-    def Clear(self, *args) -> "void" :
+        _TopTools.TopTools_SequenceOfShape_swiginit(self,_TopTools.new_TopTools_SequenceOfShape())
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _TopTools.TopTools_SequenceOfShape_Clear(self, *args)
+        return _TopTools.TopTools_SequenceOfShape_Clear(self)
 
-    def Assign(self, *args) -> "TopTools_SequenceOfShape const &" :
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: TopTools_SequenceOfShape &
@@ -6220,7 +6286,7 @@ class TopTools_SequenceOfShape(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TopTools.TopTools_SequenceOfShape_Assign(self, *args)
 
-    def Set(self, *args) -> "TopTools_SequenceOfShape const &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: TopTools_SequenceOfShape &
@@ -6229,7 +6295,7 @@ class TopTools_SequenceOfShape(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TopTools.TopTools_SequenceOfShape_Set(self, *args)
 
-    def Append(self, *args) -> "void" :
+    def Append(self, *args):
         """
         :param T:
         :type T: TopoDS_Shape &
@@ -6242,7 +6308,7 @@ class TopTools_SequenceOfShape(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TopTools.TopTools_SequenceOfShape_Append(self, *args)
 
-    def Prepend(self, *args) -> "void" :
+    def Prepend(self, *args):
         """
         :param T:
         :type T: TopoDS_Shape &
@@ -6255,16 +6321,16 @@ class TopTools_SequenceOfShape(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TopTools.TopTools_SequenceOfShape_Prepend(self, *args)
 
-    def InsertBefore(self, *args) -> "void" :
+    def InsertBefore(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param T:
         :type T: TopoDS_Shape &
         :rtype: None
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param S:
         :type S: TopTools_SequenceOfShape &
         :rtype: None
@@ -6272,16 +6338,16 @@ class TopTools_SequenceOfShape(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TopTools.TopTools_SequenceOfShape_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args) -> "void" :
+    def InsertAfter(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param T:
         :type T: TopoDS_Shape &
         :rtype: None
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param S:
         :type S: TopTools_SequenceOfShape &
         :rtype: None
@@ -6289,24 +6355,24 @@ class TopTools_SequenceOfShape(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TopTools.TopTools_SequenceOfShape_InsertAfter(self, *args)
 
-    def First(self, *args) -> "TopoDS_Shape const" :
+    def First(self):
         """
         :rtype: TopoDS_Shape
 
         """
-        return _TopTools.TopTools_SequenceOfShape_First(self, *args)
+        return _TopTools.TopTools_SequenceOfShape_First(self)
 
-    def Last(self, *args) -> "TopoDS_Shape const" :
+    def Last(self):
         """
         :rtype: TopoDS_Shape
 
         """
-        return _TopTools.TopTools_SequenceOfShape_Last(self, *args)
+        return _TopTools.TopTools_SequenceOfShape_Last(self)
 
-    def Split(self, *args) -> "void" :
+    def Split(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Sub:
         :type Sub: TopTools_SequenceOfShape &
         :rtype: None
@@ -6314,19 +6380,19 @@ class TopTools_SequenceOfShape(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TopTools.TopTools_SequenceOfShape_Split(self, *args)
 
-    def Value(self, *args) -> "TopoDS_Shape const" :
+    def Value(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: TopoDS_Shape
 
         """
         return _TopTools.TopTools_SequenceOfShape_Value(self, *args)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param I:
         :type I: TopoDS_Shape &
         :rtype: None
@@ -6334,25 +6400,25 @@ class TopTools_SequenceOfShape(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TopTools.TopTools_SequenceOfShape_SetValue(self, *args)
 
-    def ChangeValue(self, *args) -> "TopoDS_Shape" :
+    def ChangeValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: TopoDS_Shape
 
         """
         return _TopTools.TopTools_SequenceOfShape_ChangeValue(self, *args)
 
-    def Remove(self, *args) -> "void" :
+    def Remove(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: None
 
         :param FromIndex:
-        :type FromIndex: int
+        :type FromIndex: Standard_Integer
         :param ToIndex:
-        :type ToIndex: int
+        :type ToIndex: Standard_Integer
         :rtype: None
 
         """
@@ -6386,22 +6452,23 @@ TopTools_SequenceOfShape_swigregister(TopTools_SequenceOfShape)
 
 class TopTools_ShapeMapHasher(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
+    def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def HashCode(*args) -> "Standard_Integer" :
+    def HashCode(*args):
         """
         * Returns a HasCode value for the Key <K> in the range 0..Upper.
 
         :param S:
         :type S: TopoDS_Shape &
         :param Upper:
-        :type Upper: int
+        :type Upper: Standard_Integer
         :rtype: int
 
         """
         return _TopTools.TopTools_ShapeMapHasher_HashCode(*args)
 
     HashCode = staticmethod(HashCode)
-    def IsEqual(*args) -> "Standard_Boolean" :
+    def IsEqual(*args):
         """
         * Returns True when the two keys are the same. Two same keys must have the same hashcode, the contrary is not necessary.
 
@@ -6415,8 +6482,6 @@ class TopTools_ShapeMapHasher(object):
         return _TopTools.TopTools_ShapeMapHasher_IsEqual(*args)
 
     IsEqual = staticmethod(IsEqual)
-    def __init__(self): 
-        _TopTools.TopTools_ShapeMapHasher_swiginit(self,_TopTools.new_TopTools_ShapeMapHasher())
     def __del__(self):
     	try:
     		self.thisown = False
@@ -6429,20 +6494,20 @@ TopTools_ShapeMapHasher._kill_pointed = new_instancemethod(_TopTools.TopTools_Sh
 TopTools_ShapeMapHasher_swigregister = _TopTools.TopTools_ShapeMapHasher_swigregister
 TopTools_ShapeMapHasher_swigregister(TopTools_ShapeMapHasher)
 
-def TopTools_ShapeMapHasher_HashCode(*args) -> "Standard_Integer" :
+def TopTools_ShapeMapHasher_HashCode(*args):
   """
     * Returns a HasCode value for the Key <K> in the range 0..Upper.
 
     :param S:
     :type S: TopoDS_Shape &
     :param Upper:
-    :type Upper: int
+    :type Upper: Standard_Integer
     :rtype: int
 
     """
   return _TopTools.TopTools_ShapeMapHasher_HashCode(*args)
 
-def TopTools_ShapeMapHasher_IsEqual(*args) -> "Standard_Boolean" :
+def TopTools_ShapeMapHasher_IsEqual(*args):
   """
     * Returns True when the two keys are the same. Two same keys must have the same hashcode, the contrary is not necessary.
 
@@ -6458,49 +6523,49 @@ def TopTools_ShapeMapHasher_IsEqual(*args) -> "Standard_Boolean" :
 class TopTools_ShapeSet(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         * Builds an empty ShapeSet.
 
         :rtype: None
 
         """
-        _TopTools.TopTools_ShapeSet_swiginit(self,_TopTools.new_TopTools_ShapeSet(*args))
-    def Delete(self, *args) -> "void" :
+        _TopTools.TopTools_ShapeSet_swiginit(self,_TopTools.new_TopTools_ShapeSet())
+    def Delete(self):
         """
         :rtype: void
 
         """
-        return _TopTools.TopTools_ShapeSet_Delete(self, *args)
+        return _TopTools.TopTools_ShapeSet_Delete(self)
 
-    def SetFormatNb(self, *args) -> "void" :
+    def SetFormatNb(self, *args):
         """
         :param theFormatNb:
-        :type theFormatNb: int
+        :type theFormatNb: Standard_Integer
         :rtype: None
 
         """
         return _TopTools.TopTools_ShapeSet_SetFormatNb(self, *args)
 
-    def FormatNb(self, *args) -> "Standard_Integer" :
+    def FormatNb(self):
         """
         * two formats available for the moment: First: does not write CurveOnSurface UV Points into the file  on reading calls Check() method. Second: stores CurveOnSurface UV Points. On reading format is recognized from Version string.
 
         :rtype: int
 
         """
-        return _TopTools.TopTools_ShapeSet_FormatNb(self, *args)
+        return _TopTools.TopTools_ShapeSet_FormatNb(self)
 
-    def Clear(self, *args) -> "void" :
+    def Clear(self):
         """
         * Clears the content of the set. This method can be redefined.
 
         :rtype: void
 
         """
-        return _TopTools.TopTools_ShapeSet_Clear(self, *args)
+        return _TopTools.TopTools_ShapeSet_Clear(self)
 
-    def Add(self, *args) -> "Standard_Integer" :
+    def Add(self, *args):
         """
         * Stores <S> and its sub-shape. Returns the index of <S>. The method AddGeometry is called on each sub-shape.
 
@@ -6511,18 +6576,18 @@ class TopTools_ShapeSet(object):
         """
         return _TopTools.TopTools_ShapeSet_Add(self, *args)
 
-    def Shape(self, *args) -> "TopoDS_Shape const" :
+    def Shape(self, *args):
         """
         * Returns the sub-shape of index <I>.
 
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :rtype: TopoDS_Shape
 
         """
         return _TopTools.TopTools_ShapeSet_Shape(self, *args)
 
-    def Index(self, *args) -> "Standard_Integer" :
+    def Index(self, *args):
         """
         * Returns the index of <S>.
 
@@ -6533,25 +6598,25 @@ class TopTools_ShapeSet(object):
         """
         return _TopTools.TopTools_ShapeSet_Index(self, *args)
 
-    def Locations(self, *args) -> "TopTools_LocationSet const &" :
+    def Locations(self):
         """
         :rtype: TopTools_LocationSet
 
         """
-        return _TopTools.TopTools_ShapeSet_Locations(self, *args)
+        return _TopTools.TopTools_ShapeSet_Locations(self)
 
-    def ChangeLocations(self, *args) -> "TopTools_LocationSet &" :
+    def ChangeLocations(self):
         """
         :rtype: TopTools_LocationSet
 
         """
-        return _TopTools.TopTools_ShapeSet_ChangeLocations(self, *args)
+        return _TopTools.TopTools_ShapeSet_ChangeLocations(self)
 
-    def DumpExtentToString(self) -> "std::string" :
+    def DumpExtentToString(self):
         """DumpExtentToString(TopTools_ShapeSet self) -> std::string"""
         return _TopTools.TopTools_ShapeSet_DumpExtentToString(self)
 
-    def DumpExtent(self, *args) -> "void" :
+    def DumpExtent(self, *args):
         """
         * Dumps the number of objects in me in the string S (Number of shapes of each type)
 
@@ -6562,19 +6627,19 @@ class TopTools_ShapeSet(object):
         """
         return _TopTools.TopTools_ShapeSet_DumpExtent(self, *args)
 
-    def DumpToString(self) -> "std::string" :
+    def DumpToString(self):
         """DumpToString(TopTools_ShapeSet self) -> std::string"""
         return _TopTools.TopTools_ShapeSet_DumpToString(self)
 
-    def WriteToString(self) -> "std::string" :
+    def WriteToString(self):
         """WriteToString(TopTools_ShapeSet self) -> std::string"""
         return _TopTools.TopTools_ShapeSet_WriteToString(self)
 
-    def ReadFromString(self, *args) -> "void" :
+    def ReadFromString(self, *args):
         """ReadFromString(TopTools_ShapeSet self, std::string src)"""
         return _TopTools.TopTools_ShapeSet_ReadFromString(self, *args)
 
-    def Dump(self, *args) -> "void" :
+    def Dump(self, *args):
         """
         * Dumps on <OS> the shape <S>. Dumps the orientation, the index of the TShape and the index of the Location.
 
@@ -6587,7 +6652,7 @@ class TopTools_ShapeSet(object):
         """
         return _TopTools.TopTools_ShapeSet_Dump(self, *args)
 
-    def Write(self, *args) -> "void" :
+    def Write(self, *args):
         """
         * Writes on <OS> the shape <S>. Writes the orientation, the index of the TShape and the index of the Location.
 
@@ -6600,7 +6665,7 @@ class TopTools_ShapeSet(object):
         """
         return _TopTools.TopTools_ShapeSet_Write(self, *args)
 
-    def Read(self, *args) -> "void" :
+    def Read(self, *args):
         """
         * Reads from <IS> a shape and returns it in S.
 
@@ -6613,7 +6678,7 @@ class TopTools_ShapeSet(object):
         """
         return _TopTools.TopTools_ShapeSet_Read(self, *args)
 
-    def AddGeometry(self, *args) -> "void" :
+    def AddGeometry(self, *args):
         """
         * Stores the geometry of <S>.
 
@@ -6624,19 +6689,19 @@ class TopTools_ShapeSet(object):
         """
         return _TopTools.TopTools_ShapeSet_AddGeometry(self, *args)
 
-    def DumpGeometryToString(self) -> "std::string" :
+    def DumpGeometryToString(self):
         """DumpGeometryToString(TopTools_ShapeSet self) -> std::string"""
         return _TopTools.TopTools_ShapeSet_DumpGeometryToString(self)
 
-    def WriteGeometryToString(self) -> "std::string" :
+    def WriteGeometryToString(self):
         """WriteGeometryToString(TopTools_ShapeSet self) -> std::string"""
         return _TopTools.TopTools_ShapeSet_WriteGeometryToString(self)
 
-    def ReadGeometryFromString(self, *args) -> "void" :
+    def ReadGeometryFromString(self, *args):
         """ReadGeometryFromString(TopTools_ShapeSet self, std::string src)"""
         return _TopTools.TopTools_ShapeSet_ReadGeometryFromString(self, *args)
 
-    def DumpGeometry(self, *args) -> "void" :
+    def DumpGeometry(self, *args):
         """
         * Dumps the geometry of <S> on the stream <OS>.
 
@@ -6649,7 +6714,7 @@ class TopTools_ShapeSet(object):
         """
         return _TopTools.TopTools_ShapeSet_DumpGeometry(self, *args)
 
-    def WriteGeometry(self, *args) -> "void" :
+    def WriteGeometry(self, *args):
         """
         * Writes the geometry of <S> on the stream <OS> in a format that can be read back by Read.
 
@@ -6662,7 +6727,7 @@ class TopTools_ShapeSet(object):
         """
         return _TopTools.TopTools_ShapeSet_WriteGeometry(self, *args)
 
-    def ReadGeometry(self, *args) -> "void" :
+    def ReadGeometry(self, *args):
         """
         * Reads the geometry of a shape of type <T> from the stream <IS> and returns it in <S>.
 
@@ -6677,7 +6742,7 @@ class TopTools_ShapeSet(object):
         """
         return _TopTools.TopTools_ShapeSet_ReadGeometry(self, *args)
 
-    def AddShapes(self, *args) -> "void" :
+    def AddShapes(self, *args):
         """
         * Inserts the shape <S2> in the shape <S1>. This method must be redefined to use the correct builder.
 
@@ -6690,7 +6755,7 @@ class TopTools_ShapeSet(object):
         """
         return _TopTools.TopTools_ShapeSet_AddShapes(self, *args)
 
-    def Check(self, *args) -> "void" :
+    def Check(self, *args):
         """
         * This method is called after each new completed shape. <T> is the type. <S> is the shape. In this class it does nothing, but it gives the opportunity in derived classes to perform extra treatment on shapes.
 
@@ -6703,16 +6768,16 @@ class TopTools_ShapeSet(object):
         """
         return _TopTools.TopTools_ShapeSet_Check(self, *args)
 
-    def NbShapes(self, *args) -> "Standard_Integer" :
+    def NbShapes(self):
         """
         * //!Returns number of shapes read from file.
 
         :rtype: int
 
         """
-        return _TopTools.TopTools_ShapeSet_NbShapes(self, *args)
+        return _TopTools.TopTools_ShapeSet_NbShapes(self)
 
-    def SetProgress(self, *args) -> "void" :
+    def SetProgress(self, *args):
         """
         :param PR:
         :type PR: Handle_Message_ProgressIndicator &
@@ -6721,14 +6786,14 @@ class TopTools_ShapeSet(object):
         """
         return _TopTools.TopTools_ShapeSet_SetProgress(self, *args)
 
-    def GetProgress(self, *args) -> "Handle_Message_ProgressIndicator" :
+    def GetProgress(self):
         """
         :rtype: Handle_Message_ProgressIndicator
 
         """
-        return _TopTools.TopTools_ShapeSet_GetProgress(self, *args)
+        return _TopTools.TopTools_ShapeSet_GetProgress(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(TopTools_ShapeSet self)"""
         return _TopTools.TopTools_ShapeSet__kill_pointed(self)
 
@@ -6786,18 +6851,18 @@ class TopTools_StdMapNodeOfMapOfOrientedShape(OCC.TCollection.TCollection_MapNod
 
         """
         _TopTools.TopTools_StdMapNodeOfMapOfOrientedShape_swiginit(self,_TopTools.new_TopTools_StdMapNodeOfMapOfOrientedShape(*args))
-    def Key(self, *args) -> "TopoDS_Shape" :
+    def Key(self):
         """
         :rtype: TopoDS_Shape
 
         """
-        return _TopTools.TopTools_StdMapNodeOfMapOfOrientedShape_Key(self, *args)
+        return _TopTools.TopTools_StdMapNodeOfMapOfOrientedShape_Key(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(TopTools_StdMapNodeOfMapOfOrientedShape self)"""
         return _TopTools.TopTools_StdMapNodeOfMapOfOrientedShape__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_TopTools_StdMapNodeOfMapOfOrientedShape" :
+    def GetHandle(self):
         """GetHandle(TopTools_StdMapNodeOfMapOfOrientedShape self) -> Handle_TopTools_StdMapNodeOfMapOfOrientedShape"""
         return _TopTools.TopTools_StdMapNodeOfMapOfOrientedShape_GetHandle(self)
 
@@ -6836,7 +6901,7 @@ Handle_TopTools_StdMapNodeOfMapOfOrientedShape._kill_pointed = new_instancemetho
 Handle_TopTools_StdMapNodeOfMapOfOrientedShape_swigregister = _TopTools.Handle_TopTools_StdMapNodeOfMapOfOrientedShape_swigregister
 Handle_TopTools_StdMapNodeOfMapOfOrientedShape_swigregister(Handle_TopTools_StdMapNodeOfMapOfOrientedShape)
 
-def Handle_TopTools_StdMapNodeOfMapOfOrientedShape_DownCast(*args) -> "Handle_TopTools_StdMapNodeOfMapOfOrientedShape const" :
+def Handle_TopTools_StdMapNodeOfMapOfOrientedShape_DownCast(*args):
   return _TopTools.Handle_TopTools_StdMapNodeOfMapOfOrientedShape_DownCast(*args)
 Handle_TopTools_StdMapNodeOfMapOfOrientedShape_DownCast = _TopTools.Handle_TopTools_StdMapNodeOfMapOfOrientedShape_DownCast
 
@@ -6853,18 +6918,18 @@ class TopTools_StdMapNodeOfMapOfShape(OCC.TCollection.TCollection_MapNode):
 
         """
         _TopTools.TopTools_StdMapNodeOfMapOfShape_swiginit(self,_TopTools.new_TopTools_StdMapNodeOfMapOfShape(*args))
-    def Key(self, *args) -> "TopoDS_Shape" :
+    def Key(self):
         """
         :rtype: TopoDS_Shape
 
         """
-        return _TopTools.TopTools_StdMapNodeOfMapOfShape_Key(self, *args)
+        return _TopTools.TopTools_StdMapNodeOfMapOfShape_Key(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(TopTools_StdMapNodeOfMapOfShape self)"""
         return _TopTools.TopTools_StdMapNodeOfMapOfShape__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_TopTools_StdMapNodeOfMapOfShape" :
+    def GetHandle(self):
         """GetHandle(TopTools_StdMapNodeOfMapOfShape self) -> Handle_TopTools_StdMapNodeOfMapOfShape"""
         return _TopTools.TopTools_StdMapNodeOfMapOfShape_GetHandle(self)
 
@@ -6903,7 +6968,7 @@ Handle_TopTools_StdMapNodeOfMapOfShape._kill_pointed = new_instancemethod(_TopTo
 Handle_TopTools_StdMapNodeOfMapOfShape_swigregister = _TopTools.Handle_TopTools_StdMapNodeOfMapOfShape_swigregister
 Handle_TopTools_StdMapNodeOfMapOfShape_swigregister(Handle_TopTools_StdMapNodeOfMapOfShape)
 
-def Handle_TopTools_StdMapNodeOfMapOfShape_DownCast(*args) -> "Handle_TopTools_StdMapNodeOfMapOfShape const" :
+def Handle_TopTools_StdMapNodeOfMapOfShape_DownCast(*args):
   return _TopTools.Handle_TopTools_StdMapNodeOfMapOfShape_DownCast(*args)
 Handle_TopTools_StdMapNodeOfMapOfShape_DownCast = _TopTools.Handle_TopTools_StdMapNodeOfMapOfShape_DownCast
 

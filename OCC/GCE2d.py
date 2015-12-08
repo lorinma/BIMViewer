@@ -144,21 +144,21 @@ class GCE2d_MakeMirror(object):
 
         """
         _GCE2d.GCE2d_MakeMirror_swiginit(self,_GCE2d.new_GCE2d_MakeMirror(*args))
-    def Value(self, *args) -> "Handle_Geom2d_Transformation const &" :
+    def Value(self):
         """
         * Returns the constructed transformation.
 
         :rtype: Handle_Geom2d_Transformation
 
         """
-        return _GCE2d.GCE2d_MakeMirror_Value(self, *args)
+        return _GCE2d.GCE2d_MakeMirror_Value(self)
 
-    def Operator(self, *args) -> "Handle_Geom2d_Transformation const &" :
+    def Operator(self):
         """
         :rtype: Handle_Geom2d_Transformation
 
         """
-        return _GCE2d.GCE2d_MakeMirror_Operator(self, *args)
+        return _GCE2d.GCE2d_MakeMirror_Operator(self)
 
     def __del__(self):
     	try:
@@ -189,21 +189,21 @@ class GCE2d_MakeRotation(object):
 
         """
         _GCE2d.GCE2d_MakeRotation_swiginit(self,_GCE2d.new_GCE2d_MakeRotation(*args))
-    def Value(self, *args) -> "Handle_Geom2d_Transformation const &" :
+    def Value(self):
         """
         * Returns the constructed transformation.
 
         :rtype: Handle_Geom2d_Transformation
 
         """
-        return _GCE2d.GCE2d_MakeRotation_Value(self, *args)
+        return _GCE2d.GCE2d_MakeRotation_Value(self)
 
-    def Operator(self, *args) -> "Handle_Geom2d_Transformation const &" :
+    def Operator(self):
         """
         :rtype: Handle_Geom2d_Transformation
 
         """
-        return _GCE2d.GCE2d_MakeRotation_Operator(self, *args)
+        return _GCE2d.GCE2d_MakeRotation_Operator(self)
 
     def __del__(self):
     	try:
@@ -234,21 +234,21 @@ class GCE2d_MakeScale(object):
 
         """
         _GCE2d.GCE2d_MakeScale_swiginit(self,_GCE2d.new_GCE2d_MakeScale(*args))
-    def Value(self, *args) -> "Handle_Geom2d_Transformation const &" :
+    def Value(self):
         """
         * Returns the constructed transformation.
 
         :rtype: Handle_Geom2d_Transformation
 
         """
-        return _GCE2d.GCE2d_MakeScale_Value(self, *args)
+        return _GCE2d.GCE2d_MakeScale_Value(self)
 
-    def Operator(self, *args) -> "Handle_Geom2d_Transformation const &" :
+    def Operator(self):
         """
         :rtype: Handle_Geom2d_Transformation
 
         """
-        return _GCE2d.GCE2d_MakeScale_Operator(self, *args)
+        return _GCE2d.GCE2d_MakeScale_Operator(self)
 
     def __del__(self):
     	try:
@@ -285,21 +285,21 @@ class GCE2d_MakeTranslation(object):
 
         """
         _GCE2d.GCE2d_MakeTranslation_swiginit(self,_GCE2d.new_GCE2d_MakeTranslation(*args))
-    def Value(self, *args) -> "Handle_Geom2d_Transformation const &" :
+    def Value(self):
         """
         * Returns the constructed transformation.
 
         :rtype: Handle_Geom2d_Transformation
 
         """
-        return _GCE2d.GCE2d_MakeTranslation_Value(self, *args)
+        return _GCE2d.GCE2d_MakeTranslation_Value(self)
 
-    def Operator(self, *args) -> "Handle_Geom2d_Transformation const &" :
+    def Operator(self):
         """
         :rtype: Handle_Geom2d_Transformation
 
         """
-        return _GCE2d.GCE2d_MakeTranslation_Operator(self, *args)
+        return _GCE2d.GCE2d_MakeTranslation_Operator(self)
 
     def __del__(self):
     	try:
@@ -317,27 +317,26 @@ GCE2d_MakeTranslation_swigregister(GCE2d_MakeTranslation)
 
 class GCE2d_Root(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
+    def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def IsDone(self, *args) -> "Standard_Boolean" :
+    def IsDone(self):
         """
         * Returns true if the construction is successful.
 
         :rtype: bool
 
         """
-        return _GCE2d.GCE2d_Root_IsDone(self, *args)
+        return _GCE2d.GCE2d_Root_IsDone(self)
 
-    def Status(self, *args) -> "gce_ErrorType" :
+    def Status(self):
         """
         * Returns the status of the construction - gce_Done, if the construction is successful, or - another value of the gce_ErrorType enumeration indicating why the construction failed.
 
         :rtype: gce_ErrorType
 
         """
-        return _GCE2d.GCE2d_Root_Status(self, *args)
+        return _GCE2d.GCE2d_Root_Status(self)
 
-    def __init__(self): 
-        _GCE2d.GCE2d_Root_swiginit(self,_GCE2d.new_GCE2d_Root())
     def __del__(self):
     	try:
     		self.thisown = False
@@ -369,6 +368,18 @@ class GCE2d_MakeArcOfCircle(GCE2d_Root):
         :type Sense: bool
         :rtype: None
 
+        * Makes an arc of circle (TrimmedCurve from Geom2d) from a circle between two parameters Alpha1 and Alpha2. The two parameters are angles. The parameters are in radians.
+
+        :param Circ:
+        :type Circ: gp_Circ2d
+        :param Alpha1:
+        :type Alpha1: float
+        :param Alpha2:
+        :type Alpha2: float
+        :param Sense: default value is Standard_True
+        :type Sense: bool
+        :rtype: None
+
         * Makes an arc of circle (TrimmedCurve from Geom2d) from a circle between point <P> and the parameter Alpha. Alpha is given in radians.
 
         :param Circ:
@@ -377,6 +388,30 @@ class GCE2d_MakeArcOfCircle(GCE2d_Root):
         :type P: gp_Pnt2d
         :param Alpha:
         :type Alpha: float
+        :param Sense: default value is Standard_True
+        :type Sense: bool
+        :rtype: None
+
+        * Makes an arc of circle (TrimmedCurve from Geom2d) from a circle between point <P> and the parameter Alpha. Alpha is given in radians.
+
+        :param Circ:
+        :type Circ: gp_Circ2d
+        :param P:
+        :type P: gp_Pnt2d
+        :param Alpha:
+        :type Alpha: float
+        :param Sense: default value is Standard_True
+        :type Sense: bool
+        :rtype: None
+
+        * Makes an arc of circle (TrimmedCurve from Geom2d) from a circle between two points P1 and P2.
+
+        :param Circ:
+        :type Circ: gp_Circ2d
+        :param P1:
+        :type P1: gp_Pnt2d
+        :param P2:
+        :type P2: gp_Pnt2d
         :param Sense: default value is Standard_True
         :type Sense: bool
         :rtype: None
@@ -415,21 +450,21 @@ class GCE2d_MakeArcOfCircle(GCE2d_Root):
 
         """
         _GCE2d.GCE2d_MakeArcOfCircle_swiginit(self,_GCE2d.new_GCE2d_MakeArcOfCircle(*args))
-    def Value(self, *args) -> "Handle_Geom2d_TrimmedCurve const &" :
+    def Value(self):
         """
         * Returns the constructed arc of circle. Exceptions StdFail_NotDone if no arc of circle is constructed.
 
         :rtype: Handle_Geom2d_TrimmedCurve
 
         """
-        return _GCE2d.GCE2d_MakeArcOfCircle_Value(self, *args)
+        return _GCE2d.GCE2d_MakeArcOfCircle_Value(self)
 
-    def Operator(self, *args) -> "Handle_Geom2d_TrimmedCurve const &" :
+    def Operator(self):
         """
         :rtype: Handle_Geom2d_TrimmedCurve
 
         """
-        return _GCE2d.GCE2d_MakeArcOfCircle_Operator(self, *args)
+        return _GCE2d.GCE2d_MakeArcOfCircle_Operator(self)
 
     def __del__(self):
     	try:
@@ -462,6 +497,30 @@ class GCE2d_MakeArcOfEllipse(GCE2d_Root):
         :type Sense: bool
         :rtype: None
 
+        * Make an arc of Ellipse (TrimmedCurve from Geom2d) from a Ellipse between two parameters Alpha1 and Alpha2.
+
+        :param Elips:
+        :type Elips: gp_Elips2d
+        :param Alpha1:
+        :type Alpha1: float
+        :param Alpha2:
+        :type Alpha2: float
+        :param Sense: default value is Standard_True
+        :type Sense: bool
+        :rtype: None
+
+        * Make an arc of Ellipse (TrimmedCurve from Geom2d) from a Ellipse between point <P> and the parameter Alpha.
+
+        :param Elips:
+        :type Elips: gp_Elips2d
+        :param P:
+        :type P: gp_Pnt2d
+        :param Alpha:
+        :type Alpha: float
+        :param Sense: default value is Standard_True
+        :type Sense: bool
+        :rtype: None
+
         * Make an arc of Ellipse (TrimmedCurve from Geom2d) from a Ellipse between point <P> and the parameter Alpha.
 
         :param Elips:
@@ -486,23 +545,35 @@ class GCE2d_MakeArcOfEllipse(GCE2d_Root):
         :type Sense: bool
         :rtype: None
 
+        * Make an arc of Ellipse (TrimmedCurve from Geom2d) from a Ellipse between two points P1 and P2. Please, note: The orientation of the arc is: - the trigonometric sense if Sense is not defined or is true (default value), or - the opposite sense if Sense is false. - Alpha1, Alpha2 and Alpha are angle values, given in radians. - IsDone always returns true.
+
+        :param Elips:
+        :type Elips: gp_Elips2d
+        :param P1:
+        :type P1: gp_Pnt2d
+        :param P2:
+        :type P2: gp_Pnt2d
+        :param Sense: default value is Standard_True
+        :type Sense: bool
+        :rtype: None
+
         """
         _GCE2d.GCE2d_MakeArcOfEllipse_swiginit(self,_GCE2d.new_GCE2d_MakeArcOfEllipse(*args))
-    def Value(self, *args) -> "Handle_Geom2d_TrimmedCurve const &" :
+    def Value(self):
         """
         * Returns the constructed arc of ellipse.
 
         :rtype: Handle_Geom2d_TrimmedCurve
 
         """
-        return _GCE2d.GCE2d_MakeArcOfEllipse_Value(self, *args)
+        return _GCE2d.GCE2d_MakeArcOfEllipse_Value(self)
 
-    def Operator(self, *args) -> "Handle_Geom2d_TrimmedCurve const &" :
+    def Operator(self):
         """
         :rtype: Handle_Geom2d_TrimmedCurve
 
         """
-        return _GCE2d.GCE2d_MakeArcOfEllipse_Operator(self, *args)
+        return _GCE2d.GCE2d_MakeArcOfEllipse_Operator(self)
 
     def __del__(self):
     	try:
@@ -535,6 +606,30 @@ class GCE2d_MakeArcOfHyperbola(GCE2d_Root):
         :type Sense: bool
         :rtype: None
 
+        * Makes an arc of Hyperbola (TrimmedCurve from Geom2d) from a Hyperbola between two parameters Alpha1 and Alpha2.
+
+        :param Hypr:
+        :type Hypr: gp_Hypr2d
+        :param Alpha1:
+        :type Alpha1: float
+        :param Alpha2:
+        :type Alpha2: float
+        :param Sense: default value is Standard_True
+        :type Sense: bool
+        :rtype: None
+
+        * Makes an arc of Hyperbola (TrimmedCurve from Geom2d) from a Hyperbola between point <P> and the parameter Alpha.
+
+        :param Hypr:
+        :type Hypr: gp_Hypr2d
+        :param P:
+        :type P: gp_Pnt2d
+        :param Alpha:
+        :type Alpha: float
+        :param Sense: default value is Standard_True
+        :type Sense: bool
+        :rtype: None
+
         * Makes an arc of Hyperbola (TrimmedCurve from Geom2d) from a Hyperbola between point <P> and the parameter Alpha.
 
         :param Hypr:
@@ -559,23 +654,35 @@ class GCE2d_MakeArcOfHyperbola(GCE2d_Root):
         :type Sense: bool
         :rtype: None
 
+        * Makes an arc of Hyperbola (TrimmedCurve from Geom2d) from a Hyperbola between two points P1 and P2. Note: the orientation of the arc of hyperbola is: - the trigonometric sense if Sense is not defined or is true (default value), or - the opposite sense if Sense is false. - IsDone always returns true.
+
+        :param Hypr:
+        :type Hypr: gp_Hypr2d
+        :param P1:
+        :type P1: gp_Pnt2d
+        :param P2:
+        :type P2: gp_Pnt2d
+        :param Sense: default value is Standard_True
+        :type Sense: bool
+        :rtype: None
+
         """
         _GCE2d.GCE2d_MakeArcOfHyperbola_swiginit(self,_GCE2d.new_GCE2d_MakeArcOfHyperbola(*args))
-    def Value(self, *args) -> "Handle_Geom2d_TrimmedCurve const &" :
+    def Value(self):
         """
         * Returns the constructed arc of hyperbola.
 
         :rtype: Handle_Geom2d_TrimmedCurve
 
         """
-        return _GCE2d.GCE2d_MakeArcOfHyperbola_Value(self, *args)
+        return _GCE2d.GCE2d_MakeArcOfHyperbola_Value(self)
 
-    def Operator(self, *args) -> "Handle_Geom2d_TrimmedCurve const &" :
+    def Operator(self):
         """
         :rtype: Handle_Geom2d_TrimmedCurve
 
         """
-        return _GCE2d.GCE2d_MakeArcOfHyperbola_Operator(self, *args)
+        return _GCE2d.GCE2d_MakeArcOfHyperbola_Operator(self)
 
     def __del__(self):
     	try:
@@ -608,6 +715,30 @@ class GCE2d_MakeArcOfParabola(GCE2d_Root):
         :type Sense: bool
         :rtype: None
 
+        * Make an arc of Parabola (TrimmedCurve from Geom2d) from a Parabola between two parameters Alpha1 and Alpha2.
+
+        :param Parab:
+        :type Parab: gp_Parab2d
+        :param Alpha1:
+        :type Alpha1: float
+        :param Alpha2:
+        :type Alpha2: float
+        :param Sense: default value is Standard_True
+        :type Sense: bool
+        :rtype: None
+
+        * Make an arc of Parabola (TrimmedCurve from Geom2d) from a Parabola between point <P> and the parameter Alpha.
+
+        :param Parab:
+        :type Parab: gp_Parab2d
+        :param P:
+        :type P: gp_Pnt2d
+        :param Alpha:
+        :type Alpha: float
+        :param Sense: default value is Standard_True
+        :type Sense: bool
+        :rtype: None
+
         * Make an arc of Parabola (TrimmedCurve from Geom2d) from a Parabola between point <P> and the parameter Alpha.
 
         :param Parab:
@@ -632,23 +763,35 @@ class GCE2d_MakeArcOfParabola(GCE2d_Root):
         :type Sense: bool
         :rtype: None
 
+        * Make an arc of Parabola (TrimmedCurve from Geom2d) from a Parabola between two points P1 and P2. Please, note: the orientation of the arc of parabola is: - the trigonometric sense if Sense is not defined or is true (default value), or - the opposite sense if Sense is false. - IsDone always returns true.
+
+        :param Parab:
+        :type Parab: gp_Parab2d
+        :param P1:
+        :type P1: gp_Pnt2d
+        :param P2:
+        :type P2: gp_Pnt2d
+        :param Sense: default value is Standard_True
+        :type Sense: bool
+        :rtype: None
+
         """
         _GCE2d.GCE2d_MakeArcOfParabola_swiginit(self,_GCE2d.new_GCE2d_MakeArcOfParabola(*args))
-    def Value(self, *args) -> "Handle_Geom2d_TrimmedCurve const &" :
+    def Value(self):
         """
         * Returns the constructed arc of parabola.
 
         :rtype: Handle_Geom2d_TrimmedCurve
 
         """
-        return _GCE2d.GCE2d_MakeArcOfParabola_Value(self, *args)
+        return _GCE2d.GCE2d_MakeArcOfParabola_Value(self)
 
-    def Operator(self, *args) -> "Handle_Geom2d_TrimmedCurve const &" :
+    def Operator(self):
         """
         :rtype: Handle_Geom2d_TrimmedCurve
 
         """
-        return _GCE2d.GCE2d_MakeArcOfParabola_Operator(self, *args)
+        return _GCE2d.GCE2d_MakeArcOfParabola_Operator(self)
 
     def __del__(self):
     	try:
@@ -673,6 +816,16 @@ class GCE2d_MakeCircle(GCE2d_Root):
 
         :param C:
         :type C: gp_Circ2d
+        :rtype: None
+
+        * A is the 'XAxis' of the circle which defines the origin of parametrization. It is not forbidden to create a circle with Radius = 0.0 The status is 'NegativeRadius' if Radius < 0.
+
+        :param A:
+        :type A: gp_Ax2d
+        :param Radius:
+        :type Radius: float
+        :param Sense: default value is Standard_True
+        :type Sense: bool
         :rtype: None
 
         * A is the 'XAxis' of the circle which defines the origin of parametrization. It is not forbidden to create a circle with Radius = 0.0 The status is 'NegativeRadius' if Radius < 0.
@@ -729,6 +882,26 @@ class GCE2d_MakeCircle(GCE2d_Root):
         :type Sense: bool
         :rtype: None
 
+        * Make a Circ from geom2d <TheCirc> by its center an radius.
+
+        :param P:
+        :type P: gp_Pnt2d
+        :param Radius:
+        :type Radius: float
+        :param Sense: default value is Standard_True
+        :type Sense: bool
+        :rtype: None
+
+        * Makes a Circle from geom2d <TheCirc> with its center <Center> and a point giving the radius. If Sense is true the local coordinate system of the solution is direct and non direct in the other case. Warning The MakeCircle class does not prevent the construction of a circle with a null radius. If an error occurs (that is, when IsDone returns false), the Status function returns: - gce_NegativeRadius if Radius is less than 0.0, or - gce_IntersectionError if points P1, P2 and P3 are collinear and the three are not coincident.
+
+        :param Center:
+        :type Center: gp_Pnt2d
+        :param Point:
+        :type Point: gp_Pnt2d
+        :param Sense: default value is Standard_True
+        :type Sense: bool
+        :rtype: None
+
         * Makes a Circle from geom2d <TheCirc> with its center <Center> and a point giving the radius. If Sense is true the local coordinate system of the solution is direct and non direct in the other case. Warning The MakeCircle class does not prevent the construction of a circle with a null radius. If an error occurs (that is, when IsDone returns false), the Status function returns: - gce_NegativeRadius if Radius is less than 0.0, or - gce_IntersectionError if points P1, P2 and P3 are collinear and the three are not coincident.
 
         :param Center:
@@ -741,21 +914,21 @@ class GCE2d_MakeCircle(GCE2d_Root):
 
         """
         _GCE2d.GCE2d_MakeCircle_swiginit(self,_GCE2d.new_GCE2d_MakeCircle(*args))
-    def Value(self, *args) -> "Handle_Geom2d_Circle const &" :
+    def Value(self):
         """
         * Returns the constructed circle. Exceptions StdFail_NotDone if no circle is constructed.
 
         :rtype: Handle_Geom2d_Circle
 
         """
-        return _GCE2d.GCE2d_MakeCircle_Value(self, *args)
+        return _GCE2d.GCE2d_MakeCircle_Value(self)
 
-    def Operator(self, *args) -> "Handle_Geom2d_Circle const &" :
+    def Operator(self):
         """
         :rtype: Handle_Geom2d_Circle
 
         """
-        return _GCE2d.GCE2d_MakeCircle_Operator(self, *args)
+        return _GCE2d.GCE2d_MakeCircle_Operator(self)
 
     def __del__(self):
     	try:
@@ -794,6 +967,18 @@ class GCE2d_MakeEllipse(GCE2d_Root):
         :type Sense: bool
         :rtype: None
 
+        * MajorAxis is the local coordinate system of the ellipse. It is the 'XAxis'. The minor axis is the YAxis of the ellipse. Sense give the sense of parametrization of the Ellipse. It is not forbidden to create an ellipse with MajorRadius = MinorRadius. The status is 'InvertRadius' if MajorRadius < MinorRadius or 'NegativeRadius' if MinorRadius < 0.
+
+        :param MajorAxis:
+        :type MajorAxis: gp_Ax2d
+        :param MajorRadius:
+        :type MajorRadius: float
+        :param MinorRadius:
+        :type MinorRadius: float
+        :param Sense: default value is Standard_True
+        :type Sense: bool
+        :rtype: None
+
         * Axis is the local coordinate system of the ellipse. It is not forbidden to create an ellipse with MajorRadius = MinorRadius. The status is 'InvertRadius' if MajorRadius < MinorRadius or 'NegativeRadius' if MinorRadius < 0.
 
         :param Axis:
@@ -816,21 +1001,21 @@ class GCE2d_MakeEllipse(GCE2d_Root):
 
         """
         _GCE2d.GCE2d_MakeEllipse_swiginit(self,_GCE2d.new_GCE2d_MakeEllipse(*args))
-    def Value(self, *args) -> "Handle_Geom2d_Ellipse const &" :
+    def Value(self):
         """
         * Returns the constructed ellipse. Exceptions StdFail_NotDone if no ellipse is constructed.
 
         :rtype: Handle_Geom2d_Ellipse
 
         """
-        return _GCE2d.GCE2d_MakeEllipse_Value(self, *args)
+        return _GCE2d.GCE2d_MakeEllipse_Value(self)
 
-    def Operator(self, *args) -> "Handle_Geom2d_Ellipse const &" :
+    def Operator(self):
         """
         :rtype: Handle_Geom2d_Ellipse
 
         """
-        return _GCE2d.GCE2d_MakeEllipse_Operator(self, *args)
+        return _GCE2d.GCE2d_MakeEllipse_Operator(self)
 
     def __del__(self):
     	try:
@@ -891,21 +1076,21 @@ class GCE2d_MakeHyperbola(GCE2d_Root):
 
         """
         _GCE2d.GCE2d_MakeHyperbola_swiginit(self,_GCE2d.new_GCE2d_MakeHyperbola(*args))
-    def Value(self, *args) -> "Handle_Geom2d_Hyperbola const &" :
+    def Value(self):
         """
         * Returns the constructed hyperbola. Exceptions: StdFail_NotDone if no hyperbola is constructed.
 
         :rtype: Handle_Geom2d_Hyperbola
 
         """
-        return _GCE2d.GCE2d_MakeHyperbola_Value(self, *args)
+        return _GCE2d.GCE2d_MakeHyperbola_Value(self)
 
-    def Operator(self, *args) -> "Handle_Geom2d_Hyperbola const &" :
+    def Operator(self):
         """
         :rtype: Handle_Geom2d_Hyperbola
 
         """
-        return _GCE2d.GCE2d_MakeHyperbola_Operator(self, *args)
+        return _GCE2d.GCE2d_MakeHyperbola_Operator(self)
 
     def __del__(self):
     	try:
@@ -972,21 +1157,21 @@ class GCE2d_MakeLine(GCE2d_Root):
 
         """
         _GCE2d.GCE2d_MakeLine_swiginit(self,_GCE2d.new_GCE2d_MakeLine(*args))
-    def Value(self, *args) -> "Handle_Geom2d_Line const &" :
+    def Value(self):
         """
         * Returns the constructed line. Exceptions StdFail_NotDone if no line is constructed.
 
         :rtype: Handle_Geom2d_Line
 
         """
-        return _GCE2d.GCE2d_MakeLine_Value(self, *args)
+        return _GCE2d.GCE2d_MakeLine_Value(self)
 
-    def Operator(self, *args) -> "Handle_Geom2d_Line const &" :
+    def Operator(self):
         """
         :rtype: Handle_Geom2d_Line
 
         """
-        return _GCE2d.GCE2d_MakeLine_Operator(self, *args)
+        return _GCE2d.GCE2d_MakeLine_Operator(self)
 
     def __del__(self):
     	try:
@@ -1049,6 +1234,16 @@ class GCE2d_MakeParabola(GCE2d_Root):
         :type Sense: bool
         :rtype: None
 
+        * D is the directrix of the parabola and F the focus point. The symmetry axis 'XAxis' of the parabola is normal to the directrix and pass through the focus point F, but its 'Location' point is the vertex of the parabola. The 'YAxis' of the parabola is parallel to D and its 'Location' point is the vertex of the parabola.
+
+        :param D:
+        :type D: gp_Ax2d
+        :param F:
+        :type F: gp_Pnt2d
+        :param Sense: default value is Standard_True
+        :type Sense: bool
+        :rtype: None
+
         * Make a parabola with focal point S1 and center O The branch of the parabola returned will have <S1> as focal point The implicit orientation of the parabola is: - the same one as the parabola Prb, - the sense defined by the coordinate system Axis or the directrix D, - the trigonometric sense if Sense is not given or is true, or - the opposite sense if Sense is false. Warning The MakeParabola class does not prevent the construction of a parabola with a null focal distance. If an error occurs (that is, when IsDone returns false), the Status function returns: - gce_NullFocusLength if Focal is less than 0.0, or - gce_NullAxis if points S1 and O are coincident.
 
         :param S1:
@@ -1059,21 +1254,21 @@ class GCE2d_MakeParabola(GCE2d_Root):
 
         """
         _GCE2d.GCE2d_MakeParabola_swiginit(self,_GCE2d.new_GCE2d_MakeParabola(*args))
-    def Value(self, *args) -> "Handle_Geom2d_Parabola const &" :
+    def Value(self):
         """
         * Returns the constructed parabola. Exceptions StdFail_NotDone if no parabola is constructed.
 
         :rtype: Handle_Geom2d_Parabola
 
         """
-        return _GCE2d.GCE2d_MakeParabola_Value(self, *args)
+        return _GCE2d.GCE2d_MakeParabola_Value(self)
 
-    def Operator(self, *args) -> "Handle_Geom2d_Parabola const &" :
+    def Operator(self):
         """
         :rtype: Handle_Geom2d_Parabola
 
         """
-        return _GCE2d.GCE2d_MakeParabola_Operator(self, *args)
+        return _GCE2d.GCE2d_MakeParabola_Operator(self)
 
     def __del__(self):
     	try:
@@ -1144,21 +1339,21 @@ class GCE2d_MakeSegment(GCE2d_Root):
 
         """
         _GCE2d.GCE2d_MakeSegment_swiginit(self,_GCE2d.new_GCE2d_MakeSegment(*args))
-    def Value(self, *args) -> "Handle_Geom2d_TrimmedCurve const &" :
+    def Value(self):
         """
         * Returns the constructed line segment. Exceptions StdFail_NotDone if no line segment is constructed.
 
         :rtype: Handle_Geom2d_TrimmedCurve
 
         """
-        return _GCE2d.GCE2d_MakeSegment_Value(self, *args)
+        return _GCE2d.GCE2d_MakeSegment_Value(self)
 
-    def Operator(self, *args) -> "Handle_Geom2d_TrimmedCurve const &" :
+    def Operator(self):
         """
         :rtype: Handle_Geom2d_TrimmedCurve
 
         """
-        return _GCE2d.GCE2d_MakeSegment_Operator(self, *args)
+        return _GCE2d.GCE2d_MakeSegment_Operator(self)
 
     def __del__(self):
     	try:

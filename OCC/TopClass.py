@@ -131,7 +131,7 @@ class TopClass_Intersection3d(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def Perform(self, *args) -> "void" :
+    def Perform(self, *args):
         """
         * Perform the intersection between the segment L(0) ... L(Prm) and the Face <Face>.  Only the point with the smallest parameter on the line is returned.  The Tolerance <Tol> is used to determine if the first point of the segment is near the face. In that case, the parameter of the intersection point on the line can be a negative value (greater than -Tol).
 
@@ -148,41 +148,41 @@ class TopClass_Intersection3d(object):
         """
         return _TopClass.TopClass_Intersection3d_Perform(self, *args)
 
-    def IsDone(self, *args) -> "Standard_Boolean" :
+    def IsDone(self):
         """
         * True is returned when the intersection have been computed.
 
         :rtype: bool
 
         """
-        return _TopClass.TopClass_Intersection3d_IsDone(self, *args)
+        return _TopClass.TopClass_Intersection3d_IsDone(self)
 
-    def HasAPoint(self, *args) -> "Standard_Boolean" :
+    def HasAPoint(self):
         """
         * True is returned if a point has been found.
 
         :rtype: bool
 
         """
-        return _TopClass.TopClass_Intersection3d_HasAPoint(self, *args)
+        return _TopClass.TopClass_Intersection3d_HasAPoint(self)
 
-    def Point(self, *args) -> "IntCurveSurface_IntersectionPoint const &" :
+    def Point(self):
         """
         * Returns the Intersection Point.
 
         :rtype: IntCurveSurface_IntersectionPoint
 
         """
-        return _TopClass.TopClass_Intersection3d_Point(self, *args)
+        return _TopClass.TopClass_Intersection3d_Point(self)
 
-    def State(self, *args) -> "TopAbs_State" :
+    def State(self):
         """
         * Returns the state of the point on the face. The values can be either TopAbs_IN ( the point is in the face) or TopAbs_ON ( the point is on a boudary of the face).
 
         :rtype: TopAbs_State
 
         """
-        return _TopClass.TopClass_Intersection3d_State(self, *args)
+        return _TopClass.TopClass_Intersection3d_State(self)
 
     def __del__(self):
     	try:
@@ -205,7 +205,7 @@ class TopClass_SolidExplorer(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def Reject(self, *args) -> "Standard_Boolean" :
+    def Reject(self, *args):
         """
         * Should return True if the point is outside a bounding volume of the shape.
 
@@ -216,7 +216,7 @@ class TopClass_SolidExplorer(object):
         """
         return _TopClass.TopClass_SolidExplorer_Reject(self, *args)
 
-    def Segment(self, *args) -> "void" :
+    def Segment(self, *args):
         """
         * Returns in <L>, <Par> a segment having at least one intersection with the shape boundary to compute intersections.
 
@@ -231,7 +231,7 @@ class TopClass_SolidExplorer(object):
         """
         return _TopClass.TopClass_SolidExplorer_Segment(self, *args)
 
-    def OtherSegment(self, *args) -> "void" :
+    def OtherSegment(self, *args):
         """
         * Returns in <L>, <Par> a segment having at least one intersection with the shape boundary to compute intersections.  The First Call to this method returns a line which point to a point of the first face of the shape. The Second Call provide a line to the second face and so on.  if the method is called N times on a shape with F faces (N>F) the line point to other points on the face 1,2,3 ... N
 
@@ -246,34 +246,34 @@ class TopClass_SolidExplorer(object):
         """
         return _TopClass.TopClass_SolidExplorer_OtherSegment(self, *args)
 
-    def InitShell(self, *args) -> "void" :
+    def InitShell(self):
         """
         * Starts an exploration of the shells.
 
         :rtype: void
 
         """
-        return _TopClass.TopClass_SolidExplorer_InitShell(self, *args)
+        return _TopClass.TopClass_SolidExplorer_InitShell(self)
 
-    def MoreShells(self, *args) -> "Standard_Boolean" :
+    def MoreShells(self):
         """
         * Returns True if there is a current shell.
 
         :rtype: bool
 
         """
-        return _TopClass.TopClass_SolidExplorer_MoreShells(self, *args)
+        return _TopClass.TopClass_SolidExplorer_MoreShells(self)
 
-    def NextShell(self, *args) -> "void" :
+    def NextShell(self):
         """
         * Sets the explorer to the next shell and returns False if there are no more wires.
 
         :rtype: void
 
         """
-        return _TopClass.TopClass_SolidExplorer_NextShell(self, *args)
+        return _TopClass.TopClass_SolidExplorer_NextShell(self)
 
-    def RejectShell(self, *args) -> "Standard_Boolean" :
+    def RejectShell(self, *args):
         """
         * Returns True if the shell bounding volume does not intersect the segment.
 
@@ -286,43 +286,43 @@ class TopClass_SolidExplorer(object):
         """
         return _TopClass.TopClass_SolidExplorer_RejectShell(self, *args)
 
-    def InitFace(self, *args) -> "void" :
+    def InitFace(self):
         """
         * Starts an exploration of the faces.
 
         :rtype: void
 
         """
-        return _TopClass.TopClass_SolidExplorer_InitFace(self, *args)
+        return _TopClass.TopClass_SolidExplorer_InitFace(self)
 
-    def MoreFaces(self, *args) -> "Standard_Boolean" :
+    def MoreFaces(self):
         """
         * Returns True if there is a current face.
 
         :rtype: bool
 
         """
-        return _TopClass.TopClass_SolidExplorer_MoreFaces(self, *args)
+        return _TopClass.TopClass_SolidExplorer_MoreFaces(self)
 
-    def NextFace(self, *args) -> "void" :
+    def NextFace(self):
         """
         * Sets the explorer to the next face and returns False if there are no more wires.
 
         :rtype: void
 
         """
-        return _TopClass.TopClass_SolidExplorer_NextFace(self, *args)
+        return _TopClass.TopClass_SolidExplorer_NextFace(self)
 
-    def CurrentFace(self, *args) -> "TopoDS_Face" :
+    def CurrentFace(self):
         """
         * Returns the current face.
 
         :rtype: TopoDS_Face
 
         """
-        return _TopClass.TopClass_SolidExplorer_CurrentFace(self, *args)
+        return _TopClass.TopClass_SolidExplorer_CurrentFace(self)
 
-    def RejectFace(self, *args) -> "Standard_Boolean" :
+    def RejectFace(self, *args):
         """
         * Returns True if the face bounding volume does not intersect the segment.
 

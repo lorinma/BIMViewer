@@ -140,8 +140,9 @@ TopOpeBRepTool_APPROX = _TopOpeBRepTool.TopOpeBRepTool_APPROX
 TopOpeBRepTool_INTERPOL = _TopOpeBRepTool.TopOpeBRepTool_INTERPOL
 class topopebreptool(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
+    def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def PurgeClosingEdges(*args) -> "Standard_Boolean" :
+    def PurgeClosingEdges(*args):
         """
         * Fuse edges (in a wire) of a shape where we have useless vertex. In case face <FF> is built on UV-non-connexed wires (with the two closing edges FORWARD and REVERSED, in spite of one only), we find out the faulty edge, add the faulty shapes (edge,wire,face) to <MshNOK>. <FF> is a face descendant of <F>. <MWisOld>(wire) = 1 if wire is wire of <F>  0 wire results from <F>'s wire splitted. returns false if purge fails
 
@@ -169,7 +170,7 @@ class topopebreptool(object):
         return _TopOpeBRepTool.topopebreptool_PurgeClosingEdges(*args)
 
     PurgeClosingEdges = staticmethod(PurgeClosingEdges)
-    def CorrectONUVISO(*args) -> "Standard_Boolean" :
+    def CorrectONUVISO(*args):
         """
         :param F:
         :type F: TopoDS_Face &
@@ -181,7 +182,7 @@ class topopebreptool(object):
         return _TopOpeBRepTool.topopebreptool_CorrectONUVISO(*args)
 
     CorrectONUVISO = staticmethod(CorrectONUVISO)
-    def MakeFaces(*args) -> "Standard_Boolean" :
+    def MakeFaces(*args):
         """
         * Builds up the correct list of faces <LOFF> from <LOF>, using faulty shapes from map <MshNOK>. <LOF> is the list of <F>'s descendant faces. returns false if building fails
 
@@ -199,7 +200,7 @@ class topopebreptool(object):
         return _TopOpeBRepTool.topopebreptool_MakeFaces(*args)
 
     MakeFaces = staticmethod(MakeFaces)
-    def Regularize(*args) -> "Standard_Boolean" :
+    def Regularize(*args):
         """
         * Returns <False> if the face is valid (the UV representation of the face is a set of pcurves connexed by points with connexity 2). Else, splits <aFace> in order to return a list of valid faces.
 
@@ -215,7 +216,7 @@ class topopebreptool(object):
         return _TopOpeBRepTool.topopebreptool_Regularize(*args)
 
     Regularize = staticmethod(Regularize)
-    def RegularizeWires(*args) -> "Standard_Boolean" :
+    def RegularizeWires(*args):
         """
         * Returns <False> if the face is valid (the UV representation of the face is a set of pcurves connexed by points with connexity 2). Else, splits wires of the face, these are boundaries of the new faces to build up; <OldWiresNewWires> describes (wire, splits of wire); <ESplits> describes (edge, edge's splits)
 
@@ -231,7 +232,7 @@ class topopebreptool(object):
         return _TopOpeBRepTool.topopebreptool_RegularizeWires(*args)
 
     RegularizeWires = staticmethod(RegularizeWires)
-    def RegularizeFace(*args) -> "Standard_Boolean" :
+    def RegularizeFace(*args):
         """
         * Classify wire's splits of map <OldWiresnewWires> in order to compute <aListOfFaces>, the splits of <aFace>.
 
@@ -247,7 +248,7 @@ class topopebreptool(object):
         return _TopOpeBRepTool.topopebreptool_RegularizeFace(*args)
 
     RegularizeFace = staticmethod(RegularizeFace)
-    def RegularizeShells(*args) -> "Standard_Boolean" :
+    def RegularizeShells(*args):
         """
         * Returns <False> if the shell is valid (the solid is a set of faces connexed by edges with connexity 2). Else, splits faces of the shell; <OldFacesnewFaces> describes (face, splits of face).
 
@@ -263,7 +264,7 @@ class topopebreptool(object):
         return _TopOpeBRepTool.topopebreptool_RegularizeShells(*args)
 
     RegularizeShells = staticmethod(RegularizeShells)
-    def Print(*args) -> "Standard_OStream &" :
+    def Print(*args):
         """
         * Prints <OCT> as string on stream <S>; returns <S>.
 
@@ -277,8 +278,6 @@ class topopebreptool(object):
         return _TopOpeBRepTool.topopebreptool_Print(*args)
 
     Print = staticmethod(Print)
-    def __init__(self): 
-        _TopOpeBRepTool.topopebreptool_swiginit(self,_TopOpeBRepTool.new_topopebreptool())
     def __del__(self):
     	try:
     		self.thisown = False
@@ -291,7 +290,7 @@ topopebreptool._kill_pointed = new_instancemethod(_TopOpeBRepTool.topopebreptool
 topopebreptool_swigregister = _TopOpeBRepTool.topopebreptool_swigregister
 topopebreptool_swigregister(topopebreptool)
 
-def topopebreptool_PurgeClosingEdges(*args) -> "Standard_Boolean" :
+def topopebreptool_PurgeClosingEdges(*args):
   """
     * Fuse edges (in a wire) of a shape where we have useless vertex. In case face <FF> is built on UV-non-connexed wires (with the two closing edges FORWARD and REVERSED, in spite of one only), we find out the faulty edge, add the faulty shapes (edge,wire,face) to <MshNOK>. <FF> is a face descendant of <F>. <MWisOld>(wire) = 1 if wire is wire of <F>  0 wire results from <F>'s wire splitted. returns false if purge fails
 
@@ -318,7 +317,7 @@ def topopebreptool_PurgeClosingEdges(*args) -> "Standard_Boolean" :
     """
   return _TopOpeBRepTool.topopebreptool_PurgeClosingEdges(*args)
 
-def topopebreptool_CorrectONUVISO(*args) -> "Standard_Boolean" :
+def topopebreptool_CorrectONUVISO(*args):
   """
     :param F:
     :type F: TopoDS_Face &
@@ -329,7 +328,7 @@ def topopebreptool_CorrectONUVISO(*args) -> "Standard_Boolean" :
     """
   return _TopOpeBRepTool.topopebreptool_CorrectONUVISO(*args)
 
-def topopebreptool_MakeFaces(*args) -> "Standard_Boolean" :
+def topopebreptool_MakeFaces(*args):
   """
     * Builds up the correct list of faces <LOFF> from <LOF>, using faulty shapes from map <MshNOK>. <LOF> is the list of <F>'s descendant faces. returns false if building fails
 
@@ -346,7 +345,7 @@ def topopebreptool_MakeFaces(*args) -> "Standard_Boolean" :
     """
   return _TopOpeBRepTool.topopebreptool_MakeFaces(*args)
 
-def topopebreptool_Regularize(*args) -> "Standard_Boolean" :
+def topopebreptool_Regularize(*args):
   """
     * Returns <False> if the face is valid (the UV representation of the face is a set of pcurves connexed by points with connexity 2). Else, splits <aFace> in order to return a list of valid faces.
 
@@ -361,7 +360,7 @@ def topopebreptool_Regularize(*args) -> "Standard_Boolean" :
     """
   return _TopOpeBRepTool.topopebreptool_Regularize(*args)
 
-def topopebreptool_RegularizeWires(*args) -> "Standard_Boolean" :
+def topopebreptool_RegularizeWires(*args):
   """
     * Returns <False> if the face is valid (the UV representation of the face is a set of pcurves connexed by points with connexity 2). Else, splits wires of the face, these are boundaries of the new faces to build up; <OldWiresNewWires> describes (wire, splits of wire); <ESplits> describes (edge, edge's splits)
 
@@ -376,7 +375,7 @@ def topopebreptool_RegularizeWires(*args) -> "Standard_Boolean" :
     """
   return _TopOpeBRepTool.topopebreptool_RegularizeWires(*args)
 
-def topopebreptool_RegularizeFace(*args) -> "Standard_Boolean" :
+def topopebreptool_RegularizeFace(*args):
   """
     * Classify wire's splits of map <OldWiresnewWires> in order to compute <aListOfFaces>, the splits of <aFace>.
 
@@ -391,7 +390,7 @@ def topopebreptool_RegularizeFace(*args) -> "Standard_Boolean" :
     """
   return _TopOpeBRepTool.topopebreptool_RegularizeFace(*args)
 
-def topopebreptool_RegularizeShells(*args) -> "Standard_Boolean" :
+def topopebreptool_RegularizeShells(*args):
   """
     * Returns <False> if the shell is valid (the solid is a set of faces connexed by edges with connexity 2). Else, splits faces of the shell; <OldFacesnewFaces> describes (face, splits of face).
 
@@ -406,7 +405,7 @@ def topopebreptool_RegularizeShells(*args) -> "Standard_Boolean" :
     """
   return _TopOpeBRepTool.topopebreptool_RegularizeShells(*args)
 
-def topopebreptool_Print(*args) -> "Standard_OStream &" :
+def topopebreptool_Print(*args):
   """
     * Prints <OCT> as string on stream <S>; returns <S>.
 
@@ -421,8 +420,9 @@ def topopebreptool_Print(*args) -> "Standard_OStream &" :
 
 class TopOpeBRepTool_AncestorsTool(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
+    def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def MakeAncestors(*args) -> "void" :
+    def MakeAncestors(*args):
         """
         * same as package method TopExp::MapShapeListOfShapes()
 
@@ -440,8 +440,6 @@ class TopOpeBRepTool_AncestorsTool(object):
         return _TopOpeBRepTool.TopOpeBRepTool_AncestorsTool_MakeAncestors(*args)
 
     MakeAncestors = staticmethod(MakeAncestors)
-    def __init__(self): 
-        _TopOpeBRepTool.TopOpeBRepTool_AncestorsTool_swiginit(self,_TopOpeBRepTool.new_TopOpeBRepTool_AncestorsTool())
     def __del__(self):
     	try:
     		self.thisown = False
@@ -454,7 +452,7 @@ TopOpeBRepTool_AncestorsTool._kill_pointed = new_instancemethod(_TopOpeBRepTool.
 TopOpeBRepTool_AncestorsTool_swigregister = _TopOpeBRepTool.TopOpeBRepTool_AncestorsTool_swigregister
 TopOpeBRepTool_AncestorsTool_swigregister(TopOpeBRepTool_AncestorsTool)
 
-def TopOpeBRepTool_AncestorsTool_MakeAncestors(*args) -> "void" :
+def TopOpeBRepTool_AncestorsTool_MakeAncestors(*args):
   """
     * same as package method TopExp::MapShapeListOfShapes()
 
@@ -484,7 +482,7 @@ class TopOpeBRepTool_BoxSort(object):
 
         """
         _TopOpeBRepTool.TopOpeBRepTool_BoxSort_swiginit(self,_TopOpeBRepTool.new_TopOpeBRepTool_BoxSort(*args))
-    def SetHBoxTool(self, *args) -> "void" :
+    def SetHBoxTool(self, *args):
         """
         :param T:
         :type T: Handle_TopOpeBRepTool_HBoxTool &
@@ -493,22 +491,30 @@ class TopOpeBRepTool_BoxSort(object):
         """
         return _TopOpeBRepTool.TopOpeBRepTool_BoxSort_SetHBoxTool(self, *args)
 
-    def HBoxTool(self, *args) -> "Handle_TopOpeBRepTool_HBoxTool const &" :
+    def HBoxTool(self):
         """
         :rtype: Handle_TopOpeBRepTool_HBoxTool
 
         """
-        return _TopOpeBRepTool.TopOpeBRepTool_BoxSort_HBoxTool(self, *args)
+        return _TopOpeBRepTool.TopOpeBRepTool_BoxSort_HBoxTool(self)
 
-    def Clear(self, *args) -> "void" :
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _TopOpeBRepTool.TopOpeBRepTool_BoxSort_Clear(self, *args)
+        return _TopOpeBRepTool.TopOpeBRepTool_BoxSort_Clear(self)
 
-    def AddBoxes(self, *args) -> "void" :
+    def AddBoxes(self, *args):
         """
+        :param S:
+        :type S: TopoDS_Shape &
+        :param TS:
+        :type TS: TopAbs_ShapeEnum
+        :param TA: default value is TopAbs_SHAPE
+        :type TA: TopAbs_ShapeEnum
+        :rtype: None
+
         :param S:
         :type S: TopoDS_Shape &
         :param TS:
@@ -520,8 +526,16 @@ class TopOpeBRepTool_BoxSort(object):
         """
         return _TopOpeBRepTool.TopOpeBRepTool_BoxSort_AddBoxes(self, *args)
 
-    def MakeHAB(self, *args) -> "void" :
+    def MakeHAB(self, *args):
         """
+        :param S:
+        :type S: TopoDS_Shape &
+        :param TS:
+        :type TS: TopAbs_ShapeEnum
+        :param TA: default value is TopAbs_SHAPE
+        :type TA: TopAbs_ShapeEnum
+        :rtype: None
+
         :param S:
         :type S: TopoDS_Shape &
         :param TS:
@@ -533,14 +547,14 @@ class TopOpeBRepTool_BoxSort(object):
         """
         return _TopOpeBRepTool.TopOpeBRepTool_BoxSort_MakeHAB(self, *args)
 
-    def HAB(self, *args) -> "Handle_Bnd_HArray1OfBox const &" :
+    def HAB(self):
         """
         :rtype: Handle_Bnd_HArray1OfBox
 
         """
-        return _TopOpeBRepTool.TopOpeBRepTool_BoxSort_HAB(self, *args)
+        return _TopOpeBRepTool.TopOpeBRepTool_BoxSort_HAB(self)
 
-    def MakeHABCOB(*args) -> "void" :
+    def MakeHABCOB(*args):
         """
         :param HAB:
         :type HAB: Handle_Bnd_HArray1OfBox &
@@ -552,17 +566,25 @@ class TopOpeBRepTool_BoxSort(object):
         return _TopOpeBRepTool.TopOpeBRepTool_BoxSort_MakeHABCOB(*args)
 
     MakeHABCOB = staticmethod(MakeHABCOB)
-    def HABShape(self, *args) -> "TopoDS_Shape const" :
+    def HABShape(self, *args):
         """
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :rtype: TopoDS_Shape
 
         """
         return _TopOpeBRepTool.TopOpeBRepTool_BoxSort_HABShape(self, *args)
 
-    def MakeCOB(self, *args) -> "void" :
+    def MakeCOB(self, *args):
         """
+        :param S:
+        :type S: TopoDS_Shape &
+        :param TS:
+        :type TS: TopAbs_ShapeEnum
+        :param TA: default value is TopAbs_SHAPE
+        :type TA: TopAbs_ShapeEnum
+        :rtype: None
+
         :param S:
         :type S: TopoDS_Shape &
         :param TS:
@@ -574,8 +596,16 @@ class TopOpeBRepTool_BoxSort(object):
         """
         return _TopOpeBRepTool.TopOpeBRepTool_BoxSort_MakeCOB(self, *args)
 
-    def AddBoxesMakeCOB(self, *args) -> "void" :
+    def AddBoxesMakeCOB(self, *args):
         """
+        :param S:
+        :type S: TopoDS_Shape &
+        :param TS:
+        :type TS: TopAbs_ShapeEnum
+        :param TA: default value is TopAbs_SHAPE
+        :type TA: TopAbs_ShapeEnum
+        :rtype: None
+
         :param S:
         :type S: TopoDS_Shape &
         :param TS:
@@ -587,7 +617,7 @@ class TopOpeBRepTool_BoxSort(object):
         """
         return _TopOpeBRepTool.TopOpeBRepTool_BoxSort_AddBoxesMakeCOB(self, *args)
 
-    def Compare(self, *args) -> "TColStd_ListIteratorOfListOfInteger const &" :
+    def Compare(self, *args):
         """
         :param S:
         :type S: TopoDS_Shape &
@@ -596,7 +626,7 @@ class TopOpeBRepTool_BoxSort(object):
         """
         return _TopOpeBRepTool.TopOpeBRepTool_BoxSort_Compare(self, *args)
 
-    def TouchedShape(self, *args) -> "TopoDS_Shape const" :
+    def TouchedShape(self, *args):
         """
         :param I:
         :type I: TColStd_ListIteratorOfListOfInteger &
@@ -605,7 +635,7 @@ class TopOpeBRepTool_BoxSort(object):
         """
         return _TopOpeBRepTool.TopOpeBRepTool_BoxSort_TouchedShape(self, *args)
 
-    def Box(self, *args) -> "Bnd_Box const &" :
+    def Box(self, *args):
         """
         :param S:
         :type S: TopoDS_Shape &
@@ -614,12 +644,12 @@ class TopOpeBRepTool_BoxSort(object):
         """
         return _TopOpeBRepTool.TopOpeBRepTool_BoxSort_Box(self, *args)
 
-    def Destroy(self, *args) -> "void" :
+    def Destroy(self):
         """
         :rtype: None
 
         """
-        return _TopOpeBRepTool.TopOpeBRepTool_BoxSort_Destroy(self, *args)
+        return _TopOpeBRepTool.TopOpeBRepTool_BoxSort_Destroy(self)
 
     def __del__(self):
     	try:
@@ -646,7 +676,7 @@ TopOpeBRepTool_BoxSort._kill_pointed = new_instancemethod(_TopOpeBRepTool.TopOpe
 TopOpeBRepTool_BoxSort_swigregister = _TopOpeBRepTool.TopOpeBRepTool_BoxSort_swigregister
 TopOpeBRepTool_BoxSort_swigregister(TopOpeBRepTool_BoxSort)
 
-def TopOpeBRepTool_BoxSort_MakeHABCOB(*args) -> "void" :
+def TopOpeBRepTool_BoxSort_MakeHABCOB(*args):
   """
     :param HAB:
     :type HAB: Handle_Bnd_HArray1OfBox &
@@ -678,7 +708,7 @@ class TopOpeBRepTool_C2DF(object):
 
         """
         _TopOpeBRepTool.TopOpeBRepTool_C2DF_swiginit(self,_TopOpeBRepTool.new_TopOpeBRepTool_C2DF(*args))
-    def SetPC(self, *args) -> "void" :
+    def SetPC(self, *args):
         """
         :param PC:
         :type PC: Handle_Geom2d_Curve &
@@ -693,7 +723,7 @@ class TopOpeBRepTool_C2DF(object):
         """
         return _TopOpeBRepTool.TopOpeBRepTool_C2DF_SetPC(self, *args)
 
-    def SetFace(self, *args) -> "void" :
+    def SetFace(self, *args):
         """
         :param F:
         :type F: TopoDS_Face &
@@ -702,7 +732,7 @@ class TopOpeBRepTool_C2DF(object):
         """
         return _TopOpeBRepTool.TopOpeBRepTool_C2DF_SetFace(self, *args)
 
-    def PC(self, *args) -> "Handle_Geom2d_Curve const &" :
+    def PC(self):
         """
         :param f2d:
         :type f2d: float &
@@ -713,16 +743,16 @@ class TopOpeBRepTool_C2DF(object):
         :rtype: Handle_Geom2d_Curve
 
         """
-        return _TopOpeBRepTool.TopOpeBRepTool_C2DF_PC(self, *args)
+        return _TopOpeBRepTool.TopOpeBRepTool_C2DF_PC(self)
 
-    def Face(self, *args) -> "TopoDS_Face const" :
+    def Face(self):
         """
         :rtype: TopoDS_Face
 
         """
-        return _TopOpeBRepTool.TopOpeBRepTool_C2DF_Face(self, *args)
+        return _TopOpeBRepTool.TopOpeBRepTool_C2DF_Face(self)
 
-    def IsPC(self, *args) -> "Standard_Boolean" :
+    def IsPC(self, *args):
         """
         :param PC:
         :type PC: Handle_Geom2d_Curve &
@@ -731,7 +761,7 @@ class TopOpeBRepTool_C2DF(object):
         """
         return _TopOpeBRepTool.TopOpeBRepTool_C2DF_IsPC(self, *args)
 
-    def IsFace(self, *args) -> "Standard_Boolean" :
+    def IsFace(self, *args):
         """
         :param F:
         :type F: TopoDS_Face &
@@ -761,13 +791,13 @@ TopOpeBRepTool_C2DF_swigregister(TopOpeBRepTool_C2DF)
 class TopOpeBRepTool_CLASSI(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _TopOpeBRepTool.TopOpeBRepTool_CLASSI_swiginit(self,_TopOpeBRepTool.new_TopOpeBRepTool_CLASSI(*args))
-    def Init2d(self, *args) -> "void" :
+        _TopOpeBRepTool.TopOpeBRepTool_CLASSI_swiginit(self,_TopOpeBRepTool.new_TopOpeBRepTool_CLASSI())
+    def Init2d(self, *args):
         """
         :param Fref:
         :type Fref: TopoDS_Face &
@@ -776,14 +806,14 @@ class TopOpeBRepTool_CLASSI(object):
         """
         return _TopOpeBRepTool.TopOpeBRepTool_CLASSI_Init2d(self, *args)
 
-    def HasInit2d(self, *args) -> "Standard_Boolean" :
+    def HasInit2d(self):
         """
         :rtype: bool
 
         """
-        return _TopOpeBRepTool.TopOpeBRepTool_CLASSI_HasInit2d(self, *args)
+        return _TopOpeBRepTool.TopOpeBRepTool_CLASSI_HasInit2d(self)
 
-    def Add2d(self, *args) -> "Standard_Boolean" :
+    def Add2d(self, *args):
         """
         :param S:
         :type S: TopoDS_Shape &
@@ -792,7 +822,7 @@ class TopOpeBRepTool_CLASSI(object):
         """
         return _TopOpeBRepTool.TopOpeBRepTool_CLASSI_Add2d(self, *args)
 
-    def GetBox2d(self, *args) -> "Standard_Boolean" :
+    def GetBox2d(self, *args):
         """
         :param S:
         :type S: TopoDS_Shape &
@@ -803,7 +833,7 @@ class TopOpeBRepTool_CLASSI(object):
         """
         return _TopOpeBRepTool.TopOpeBRepTool_CLASSI_GetBox2d(self, *args)
 
-    def ClassiBnd2d(self, *args) -> "Standard_Integer" :
+    def ClassiBnd2d(self, *args):
         """
         :param S1:
         :type S1: TopoDS_Shape &
@@ -818,20 +848,20 @@ class TopOpeBRepTool_CLASSI(object):
         """
         return _TopOpeBRepTool.TopOpeBRepTool_CLASSI_ClassiBnd2d(self, *args)
 
-    def Classip2d(self, *args) -> "Standard_Integer" :
+    def Classip2d(self, *args):
         """
         :param S1:
         :type S1: TopoDS_Shape &
         :param S2:
         :type S2: TopoDS_Shape &
         :param stabnd2d12:
-        :type stabnd2d12: int
+        :type stabnd2d12: Standard_Integer
         :rtype: int
 
         """
         return _TopOpeBRepTool.TopOpeBRepTool_CLASSI_Classip2d(self, *args)
 
-    def Getface(self, *args) -> "Standard_Boolean" :
+    def Getface(self, *args):
         """
         :param S:
         :type S: TopoDS_Shape &
@@ -842,7 +872,7 @@ class TopOpeBRepTool_CLASSI(object):
         """
         return _TopOpeBRepTool.TopOpeBRepTool_CLASSI_Getface(self, *args)
 
-    def Classilist(self, *args) -> "Standard_Boolean" :
+    def Classilist(self, *args):
         """
         :param lS:
         :type lS: TopTools_ListOfShape &
@@ -886,24 +916,24 @@ class TopOpeBRepTool_CORRISO(object):
 
         """
         _TopOpeBRepTool.TopOpeBRepTool_CORRISO_swiginit(self,_TopOpeBRepTool.new_TopOpeBRepTool_CORRISO(*args))
-    def Fref(self, *args) -> "TopoDS_Face const" :
+    def Fref(self):
         """
         :rtype: TopoDS_Face
 
         """
-        return _TopOpeBRepTool.TopOpeBRepTool_CORRISO_Fref(self, *args)
+        return _TopOpeBRepTool.TopOpeBRepTool_CORRISO_Fref(self)
 
-    def GASref(self, *args) -> "GeomAdaptor_Surface const &" :
+    def GASref(self):
         """
         :rtype: GeomAdaptor_Surface
 
         """
-        return _TopOpeBRepTool.TopOpeBRepTool_CORRISO_GASref(self, *args)
+        return _TopOpeBRepTool.TopOpeBRepTool_CORRISO_GASref(self)
 
-    def Refclosed(self, *args) -> "Standard_Boolean" :
+    def Refclosed(self, *args):
         """
         :param x:
-        :type x: int
+        :type x: Standard_Integer
         :param xperiod:
         :type xperiod: float &
         :rtype: bool
@@ -911,7 +941,7 @@ class TopOpeBRepTool_CORRISO(object):
         """
         return _TopOpeBRepTool.TopOpeBRepTool_CORRISO_Refclosed(self, *args)
 
-    def Init(self, *args) -> "Standard_Boolean" :
+    def Init(self, *args):
         """
         :param S:
         :type S: TopoDS_Shape &
@@ -920,31 +950,31 @@ class TopOpeBRepTool_CORRISO(object):
         """
         return _TopOpeBRepTool.TopOpeBRepTool_CORRISO_Init(self, *args)
 
-    def S(self, *args) -> "TopoDS_Shape const" :
+    def S(self):
         """
         :rtype: TopoDS_Shape
 
         """
-        return _TopOpeBRepTool.TopOpeBRepTool_CORRISO_S(self, *args)
+        return _TopOpeBRepTool.TopOpeBRepTool_CORRISO_S(self)
 
-    def Eds(self, *args) -> "TopTools_ListOfShape const &" :
+    def Eds(self):
         """
         :rtype: TopTools_ListOfShape
 
         """
-        return _TopOpeBRepTool.TopOpeBRepTool_CORRISO_Eds(self, *args)
+        return _TopOpeBRepTool.TopOpeBRepTool_CORRISO_Eds(self)
 
-    def UVClosed(self, *args) -> "Standard_Boolean" :
+    def UVClosed(self):
         """
         :rtype: bool
 
         """
-        return _TopOpeBRepTool.TopOpeBRepTool_CORRISO_UVClosed(self, *args)
+        return _TopOpeBRepTool.TopOpeBRepTool_CORRISO_UVClosed(self)
 
-    def Tol(self, *args) -> "Standard_Real" :
+    def Tol(self, *args):
         """
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :param tol3d:
         :type tol3d: float
         :rtype: float
@@ -952,7 +982,7 @@ class TopOpeBRepTool_CORRISO(object):
         """
         return _TopOpeBRepTool.TopOpeBRepTool_CORRISO_Tol(self, *args)
 
-    def PurgeFyClosingE(self, *args) -> "Standard_Boolean" :
+    def PurgeFyClosingE(self, *args):
         """
         :param ClEds:
         :type ClEds: TopTools_ListOfShape &
@@ -963,7 +993,7 @@ class TopOpeBRepTool_CORRISO(object):
         """
         return _TopOpeBRepTool.TopOpeBRepTool_CORRISO_PurgeFyClosingE(self, *args)
 
-    def EdgeOUTofBoundsUV(self, *args) -> "Standard_Integer" :
+    def EdgeOUTofBoundsUV(self, *args):
         """
         :param E:
         :type E: TopoDS_Edge &
@@ -978,7 +1008,7 @@ class TopOpeBRepTool_CORRISO(object):
         """
         return _TopOpeBRepTool.TopOpeBRepTool_CORRISO_EdgeOUTofBoundsUV(self, *args)
 
-    def EdgesOUTofBoundsUV(self, *args) -> "Standard_Boolean" :
+    def EdgesOUTofBoundsUV(self, *args):
         """
         :param EdsToCheck:
         :type EdsToCheck: TopTools_ListOfShape &
@@ -993,12 +1023,22 @@ class TopOpeBRepTool_CORRISO(object):
         """
         return _TopOpeBRepTool.TopOpeBRepTool_CORRISO_EdgesOUTofBoundsUV(self, *args)
 
-    def EdgesWithFaultyUV(self, *args) -> "Standard_Boolean" :
+    def EdgesWithFaultyUV(self, *args):
         """
         :param EdsToCheck:
         :type EdsToCheck: TopTools_ListOfShape &
         :param nfybounds:
-        :type nfybounds: int
+        :type nfybounds: Standard_Integer
+        :param FyEds:
+        :type FyEds: TopTools_DataMapOfOrientedShapeInteger &
+        :param stopatfirst: default value is Standard_False
+        :type stopatfirst: bool
+        :rtype: bool
+
+        :param EdsToCheck:
+        :type EdsToCheck: TopTools_ListOfShape &
+        :param nfybounds:
+        :type nfybounds: Standard_Integer
         :param FyEds:
         :type FyEds: TopTools_DataMapOfOrientedShapeInteger &
         :param stopatfirst: default value is Standard_False
@@ -1008,28 +1048,28 @@ class TopOpeBRepTool_CORRISO(object):
         """
         return _TopOpeBRepTool.TopOpeBRepTool_CORRISO_EdgesWithFaultyUV(self, *args)
 
-    def EdgeWithFaultyUV(self, *args) -> "Standard_Boolean" :
+    def EdgeWithFaultyUV(self, *args):
         """
         :param E:
         :type E: TopoDS_Edge &
         :param Ivfaulty:
-        :type Ivfaulty: int &
+        :type Ivfaulty: Standard_Integer &
         :rtype: bool
 
         :param EdsToCheck:
         :type EdsToCheck: TopTools_ListOfShape &
         :param nfybounds:
-        :type nfybounds: int
+        :type nfybounds: Standard_Integer
         :param fyE:
         :type fyE: TopoDS_Shape &
         :param Ifaulty:
-        :type Ifaulty: int &
+        :type Ifaulty: Standard_Integer &
         :rtype: bool
 
         """
         return _TopOpeBRepTool.TopOpeBRepTool_CORRISO_EdgeWithFaultyUV(self, *args)
 
-    def TrslUV(self, *args) -> "Standard_Boolean" :
+    def TrslUV(self, *args):
         """
         :param onU:
         :type onU: bool
@@ -1040,7 +1080,7 @@ class TopOpeBRepTool_CORRISO(object):
         """
         return _TopOpeBRepTool.TopOpeBRepTool_CORRISO_TrslUV(self, *args)
 
-    def GetnewS(self, *args) -> "Standard_Boolean" :
+    def GetnewS(self, *args):
         """
         :param newS:
         :type newS: TopoDS_Face &
@@ -1049,7 +1089,7 @@ class TopOpeBRepTool_CORRISO(object):
         """
         return _TopOpeBRepTool.TopOpeBRepTool_CORRISO_GetnewS(self, *args)
 
-    def UVRep(self, *args) -> "Standard_Boolean" :
+    def UVRep(self, *args):
         """
         :param E:
         :type E: TopoDS_Edge &
@@ -1060,7 +1100,7 @@ class TopOpeBRepTool_CORRISO(object):
         """
         return _TopOpeBRepTool.TopOpeBRepTool_CORRISO_UVRep(self, *args)
 
-    def SetUVRep(self, *args) -> "Standard_Boolean" :
+    def SetUVRep(self, *args):
         """
         :param E:
         :type E: TopoDS_Edge &
@@ -1071,7 +1111,7 @@ class TopOpeBRepTool_CORRISO(object):
         """
         return _TopOpeBRepTool.TopOpeBRepTool_CORRISO_SetUVRep(self, *args)
 
-    def Connexity(self, *args) -> "Standard_Boolean" :
+    def Connexity(self, *args):
         """
         :param V:
         :type V: TopoDS_Vertex &
@@ -1082,7 +1122,7 @@ class TopOpeBRepTool_CORRISO(object):
         """
         return _TopOpeBRepTool.TopOpeBRepTool_CORRISO_Connexity(self, *args)
 
-    def SetConnexity(self, *args) -> "Standard_Boolean" :
+    def SetConnexity(self, *args):
         """
         :param V:
         :type V: TopoDS_Vertex &
@@ -1093,7 +1133,7 @@ class TopOpeBRepTool_CORRISO(object):
         """
         return _TopOpeBRepTool.TopOpeBRepTool_CORRISO_SetConnexity(self, *args)
 
-    def AddNewConnexity(self, *args) -> "Standard_Boolean" :
+    def AddNewConnexity(self, *args):
         """
         :param V:
         :type V: TopoDS_Vertex &
@@ -1104,7 +1144,7 @@ class TopOpeBRepTool_CORRISO(object):
         """
         return _TopOpeBRepTool.TopOpeBRepTool_CORRISO_AddNewConnexity(self, *args)
 
-    def RemoveOldConnexity(self, *args) -> "Standard_Boolean" :
+    def RemoveOldConnexity(self, *args):
         """
         :param V:
         :type V: TopoDS_Vertex &
@@ -1165,21 +1205,21 @@ class TopOpeBRepTool_CurveTool(object):
 
         """
         _TopOpeBRepTool.TopOpeBRepTool_CurveTool_swiginit(self,_TopOpeBRepTool.new_TopOpeBRepTool_CurveTool(*args))
-    def ChangeGeomTool(self, *args) -> "TopOpeBRepTool_GeomTool &" :
+    def ChangeGeomTool(self):
         """
         :rtype: TopOpeBRepTool_GeomTool
 
         """
-        return _TopOpeBRepTool.TopOpeBRepTool_CurveTool_ChangeGeomTool(self, *args)
+        return _TopOpeBRepTool.TopOpeBRepTool_CurveTool_ChangeGeomTool(self)
 
-    def GetGeomTool(self, *args) -> "TopOpeBRepTool_GeomTool const &" :
+    def GetGeomTool(self):
         """
         :rtype: TopOpeBRepTool_GeomTool
 
         """
-        return _TopOpeBRepTool.TopOpeBRepTool_CurveTool_GetGeomTool(self, *args)
+        return _TopOpeBRepTool.TopOpeBRepTool_CurveTool_GetGeomTool(self)
 
-    def SetGeomTool(self, *args) -> "void" :
+    def SetGeomTool(self, *args):
         """
         :param GT:
         :type GT: TopOpeBRepTool_GeomTool &
@@ -1188,7 +1228,7 @@ class TopOpeBRepTool_CurveTool(object):
         """
         return _TopOpeBRepTool.TopOpeBRepTool_CurveTool_SetGeomTool(self, *args)
 
-    def MakeCurves(self, *args) -> "Standard_Boolean" :
+    def MakeCurves(self, *args):
         """
         * Approximates curves. Returns False in the case of failure
 
@@ -1221,7 +1261,7 @@ class TopOpeBRepTool_CurveTool(object):
         """
         return _TopOpeBRepTool.TopOpeBRepTool_CurveTool_MakeCurves(self, *args)
 
-    def MakeBSpline1fromPnt(*args) -> "Handle_Geom_Curve" :
+    def MakeBSpline1fromPnt(*args):
         """
         :param P:
         :type P: TColgp_Array1OfPnt
@@ -1231,7 +1271,7 @@ class TopOpeBRepTool_CurveTool(object):
         return _TopOpeBRepTool.TopOpeBRepTool_CurveTool_MakeBSpline1fromPnt(*args)
 
     MakeBSpline1fromPnt = staticmethod(MakeBSpline1fromPnt)
-    def MakeBSpline1fromPnt2d(*args) -> "Handle_Geom2d_Curve" :
+    def MakeBSpline1fromPnt2d(*args):
         """
         :param P:
         :type P: TColgp_Array1OfPnt2d
@@ -1241,7 +1281,7 @@ class TopOpeBRepTool_CurveTool(object):
         return _TopOpeBRepTool.TopOpeBRepTool_CurveTool_MakeBSpline1fromPnt2d(*args)
 
     MakeBSpline1fromPnt2d = staticmethod(MakeBSpline1fromPnt2d)
-    def IsProjectable(*args) -> "Standard_Boolean" :
+    def IsProjectable(*args):
         """
         :param S:
         :type S: TopoDS_Shape &
@@ -1253,8 +1293,32 @@ class TopOpeBRepTool_CurveTool(object):
         return _TopOpeBRepTool.TopOpeBRepTool_CurveTool_IsProjectable(*args)
 
     IsProjectable = staticmethod(IsProjectable)
-    def MakePCurveOnFace(*args) -> "Standard_Real &" :
+    def MakePCurveOnFace(*args):
         """
+        :param S:
+        :type S: TopoDS_Shape &
+        :param C:
+        :type C: Handle_Geom_Curve &
+        :param TolReached2d:
+        :type TolReached2d: float &
+        :param first: default value is 0.0
+        :type first: float
+        :param last: default value is 0.0
+        :type last: float
+        :rtype: Handle_Geom2d_Curve
+
+        :param S:
+        :type S: TopoDS_Shape &
+        :param C:
+        :type C: Handle_Geom_Curve &
+        :param TolReached2d:
+        :type TolReached2d: float &
+        :param first: default value is 0.0
+        :type first: float
+        :param last: default value is 0.0
+        :type last: float
+        :rtype: Handle_Geom2d_Curve
+
         :param S:
         :type S: TopoDS_Shape &
         :param C:
@@ -1287,7 +1351,7 @@ TopOpeBRepTool_CurveTool._kill_pointed = new_instancemethod(_TopOpeBRepTool.TopO
 TopOpeBRepTool_CurveTool_swigregister = _TopOpeBRepTool.TopOpeBRepTool_CurveTool_swigregister
 TopOpeBRepTool_CurveTool_swigregister(TopOpeBRepTool_CurveTool)
 
-def TopOpeBRepTool_CurveTool_MakeBSpline1fromPnt(*args) -> "Handle_Geom_Curve" :
+def TopOpeBRepTool_CurveTool_MakeBSpline1fromPnt(*args):
   """
     :param P:
     :type P: TColgp_Array1OfPnt
@@ -1296,7 +1360,7 @@ def TopOpeBRepTool_CurveTool_MakeBSpline1fromPnt(*args) -> "Handle_Geom_Curve" :
     """
   return _TopOpeBRepTool.TopOpeBRepTool_CurveTool_MakeBSpline1fromPnt(*args)
 
-def TopOpeBRepTool_CurveTool_MakeBSpline1fromPnt2d(*args) -> "Handle_Geom2d_Curve" :
+def TopOpeBRepTool_CurveTool_MakeBSpline1fromPnt2d(*args):
   """
     :param P:
     :type P: TColgp_Array1OfPnt2d
@@ -1305,7 +1369,7 @@ def TopOpeBRepTool_CurveTool_MakeBSpline1fromPnt2d(*args) -> "Handle_Geom2d_Curv
     """
   return _TopOpeBRepTool.TopOpeBRepTool_CurveTool_MakeBSpline1fromPnt2d(*args)
 
-def TopOpeBRepTool_CurveTool_IsProjectable(*args) -> "Standard_Boolean" :
+def TopOpeBRepTool_CurveTool_IsProjectable(*args):
   """
     :param S:
     :type S: TopoDS_Shape &
@@ -1316,8 +1380,32 @@ def TopOpeBRepTool_CurveTool_IsProjectable(*args) -> "Standard_Boolean" :
     """
   return _TopOpeBRepTool.TopOpeBRepTool_CurveTool_IsProjectable(*args)
 
-def TopOpeBRepTool_CurveTool_MakePCurveOnFace(*args) -> "Standard_Real &" :
+def TopOpeBRepTool_CurveTool_MakePCurveOnFace(*args):
   """
+    :param S:
+    :type S: TopoDS_Shape &
+    :param C:
+    :type C: Handle_Geom_Curve &
+    :param TolReached2d:
+    :type TolReached2d: float &
+    :param first: default value is 0.0
+    :type first: float
+    :param last: default value is 0.0
+    :type last: float
+    :rtype: Handle_Geom2d_Curve
+
+    :param S:
+    :type S: TopoDS_Shape &
+    :param C:
+    :type C: Handle_Geom_Curve &
+    :param TolReached2d:
+    :type TolReached2d: float &
+    :param first: default value is 0.0
+    :type first: float
+    :param last: default value is 0.0
+    :type last: float
+    :rtype: Handle_Geom2d_Curve
+
     :param S:
     :type S: TopoDS_Shape &
     :param C:
@@ -1346,7 +1434,7 @@ class TopOpeBRepTool_DataMapIteratorOfDataMapOfOrientedShapeC2DF(OCC.TCollection
 
         """
         _TopOpeBRepTool.TopOpeBRepTool_DataMapIteratorOfDataMapOfOrientedShapeC2DF_swiginit(self,_TopOpeBRepTool.new_TopOpeBRepTool_DataMapIteratorOfDataMapOfOrientedShapeC2DF(*args))
-    def Initialize(self, *args) -> "void" :
+    def Initialize(self, *args):
         """
         :param aMap:
         :type aMap: TopOpeBRepTool_DataMapOfOrientedShapeC2DF &
@@ -1355,19 +1443,19 @@ class TopOpeBRepTool_DataMapIteratorOfDataMapOfOrientedShapeC2DF(OCC.TCollection
         """
         return _TopOpeBRepTool.TopOpeBRepTool_DataMapIteratorOfDataMapOfOrientedShapeC2DF_Initialize(self, *args)
 
-    def Key(self, *args) -> "TopoDS_Shape const" :
+    def Key(self):
         """
         :rtype: TopoDS_Shape
 
         """
-        return _TopOpeBRepTool.TopOpeBRepTool_DataMapIteratorOfDataMapOfOrientedShapeC2DF_Key(self, *args)
+        return _TopOpeBRepTool.TopOpeBRepTool_DataMapIteratorOfDataMapOfOrientedShapeC2DF_Key(self)
 
-    def Value(self, *args) -> "TopOpeBRepTool_C2DF const &" :
+    def Value(self):
         """
         :rtype: TopOpeBRepTool_C2DF
 
         """
-        return _TopOpeBRepTool.TopOpeBRepTool_DataMapIteratorOfDataMapOfOrientedShapeC2DF_Value(self, *args)
+        return _TopOpeBRepTool.TopOpeBRepTool_DataMapIteratorOfDataMapOfOrientedShapeC2DF_Value(self)
 
     def __del__(self):
     	try:
@@ -1397,7 +1485,7 @@ class TopOpeBRepTool_DataMapIteratorOfDataMapOfShapeListOfC2DF(OCC.TCollection.T
 
         """
         _TopOpeBRepTool.TopOpeBRepTool_DataMapIteratorOfDataMapOfShapeListOfC2DF_swiginit(self,_TopOpeBRepTool.new_TopOpeBRepTool_DataMapIteratorOfDataMapOfShapeListOfC2DF(*args))
-    def Initialize(self, *args) -> "void" :
+    def Initialize(self, *args):
         """
         :param aMap:
         :type aMap: TopOpeBRepTool_DataMapOfShapeListOfC2DF &
@@ -1406,19 +1494,19 @@ class TopOpeBRepTool_DataMapIteratorOfDataMapOfShapeListOfC2DF(OCC.TCollection.T
         """
         return _TopOpeBRepTool.TopOpeBRepTool_DataMapIteratorOfDataMapOfShapeListOfC2DF_Initialize(self, *args)
 
-    def Key(self, *args) -> "TopoDS_Shape const" :
+    def Key(self):
         """
         :rtype: TopoDS_Shape
 
         """
-        return _TopOpeBRepTool.TopOpeBRepTool_DataMapIteratorOfDataMapOfShapeListOfC2DF_Key(self, *args)
+        return _TopOpeBRepTool.TopOpeBRepTool_DataMapIteratorOfDataMapOfShapeListOfC2DF_Key(self)
 
-    def Value(self, *args) -> "TopOpeBRepTool_ListOfC2DF const &" :
+    def Value(self):
         """
         :rtype: TopOpeBRepTool_ListOfC2DF
 
         """
-        return _TopOpeBRepTool.TopOpeBRepTool_DataMapIteratorOfDataMapOfShapeListOfC2DF_Value(self, *args)
+        return _TopOpeBRepTool.TopOpeBRepTool_DataMapIteratorOfDataMapOfShapeListOfC2DF_Value(self)
 
     def __del__(self):
     	try:
@@ -1448,7 +1536,7 @@ class TopOpeBRepTool_DataMapIteratorOfDataMapOfShapeface(OCC.TCollection.TCollec
 
         """
         _TopOpeBRepTool.TopOpeBRepTool_DataMapIteratorOfDataMapOfShapeface_swiginit(self,_TopOpeBRepTool.new_TopOpeBRepTool_DataMapIteratorOfDataMapOfShapeface(*args))
-    def Initialize(self, *args) -> "void" :
+    def Initialize(self, *args):
         """
         :param aMap:
         :type aMap: TopOpeBRepTool_DataMapOfShapeface &
@@ -1457,19 +1545,19 @@ class TopOpeBRepTool_DataMapIteratorOfDataMapOfShapeface(OCC.TCollection.TCollec
         """
         return _TopOpeBRepTool.TopOpeBRepTool_DataMapIteratorOfDataMapOfShapeface_Initialize(self, *args)
 
-    def Key(self, *args) -> "TopoDS_Shape const" :
+    def Key(self):
         """
         :rtype: TopoDS_Shape
 
         """
-        return _TopOpeBRepTool.TopOpeBRepTool_DataMapIteratorOfDataMapOfShapeface_Key(self, *args)
+        return _TopOpeBRepTool.TopOpeBRepTool_DataMapIteratorOfDataMapOfShapeface_Key(self)
 
-    def Value(self, *args) -> "TopOpeBRepTool_face const &" :
+    def Value(self):
         """
         :rtype: TopOpeBRepTool_face
 
         """
-        return _TopOpeBRepTool.TopOpeBRepTool_DataMapIteratorOfDataMapOfShapeface_Value(self, *args)
+        return _TopOpeBRepTool.TopOpeBRepTool_DataMapIteratorOfDataMapOfShapeface_Value(self)
 
     def __del__(self):
     	try:
@@ -1501,25 +1589,25 @@ class TopOpeBRepTool_DataMapNodeOfDataMapOfOrientedShapeC2DF(OCC.TCollection.TCo
 
         """
         _TopOpeBRepTool.TopOpeBRepTool_DataMapNodeOfDataMapOfOrientedShapeC2DF_swiginit(self,_TopOpeBRepTool.new_TopOpeBRepTool_DataMapNodeOfDataMapOfOrientedShapeC2DF(*args))
-    def Key(self, *args) -> "TopoDS_Shape" :
+    def Key(self):
         """
         :rtype: TopoDS_Shape
 
         """
-        return _TopOpeBRepTool.TopOpeBRepTool_DataMapNodeOfDataMapOfOrientedShapeC2DF_Key(self, *args)
+        return _TopOpeBRepTool.TopOpeBRepTool_DataMapNodeOfDataMapOfOrientedShapeC2DF_Key(self)
 
-    def Value(self, *args) -> "TopOpeBRepTool_C2DF &" :
+    def Value(self):
         """
         :rtype: TopOpeBRepTool_C2DF
 
         """
-        return _TopOpeBRepTool.TopOpeBRepTool_DataMapNodeOfDataMapOfOrientedShapeC2DF_Value(self, *args)
+        return _TopOpeBRepTool.TopOpeBRepTool_DataMapNodeOfDataMapOfOrientedShapeC2DF_Value(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(TopOpeBRepTool_DataMapNodeOfDataMapOfOrientedShapeC2DF self)"""
         return _TopOpeBRepTool.TopOpeBRepTool_DataMapNodeOfDataMapOfOrientedShapeC2DF__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_TopOpeBRepTool_DataMapNodeOfDataMapOfOrientedShapeC2DF" :
+    def GetHandle(self):
         """GetHandle(TopOpeBRepTool_DataMapNodeOfDataMapOfOrientedShapeC2DF self) -> Handle_TopOpeBRepTool_DataMapNodeOfDataMapOfOrientedShapeC2DF"""
         return _TopOpeBRepTool.TopOpeBRepTool_DataMapNodeOfDataMapOfOrientedShapeC2DF_GetHandle(self)
 
@@ -1559,7 +1647,7 @@ Handle_TopOpeBRepTool_DataMapNodeOfDataMapOfOrientedShapeC2DF._kill_pointed = ne
 Handle_TopOpeBRepTool_DataMapNodeOfDataMapOfOrientedShapeC2DF_swigregister = _TopOpeBRepTool.Handle_TopOpeBRepTool_DataMapNodeOfDataMapOfOrientedShapeC2DF_swigregister
 Handle_TopOpeBRepTool_DataMapNodeOfDataMapOfOrientedShapeC2DF_swigregister(Handle_TopOpeBRepTool_DataMapNodeOfDataMapOfOrientedShapeC2DF)
 
-def Handle_TopOpeBRepTool_DataMapNodeOfDataMapOfOrientedShapeC2DF_DownCast(*args) -> "Handle_TopOpeBRepTool_DataMapNodeOfDataMapOfOrientedShapeC2DF const" :
+def Handle_TopOpeBRepTool_DataMapNodeOfDataMapOfOrientedShapeC2DF_DownCast(*args):
   return _TopOpeBRepTool.Handle_TopOpeBRepTool_DataMapNodeOfDataMapOfOrientedShapeC2DF_DownCast(*args)
 Handle_TopOpeBRepTool_DataMapNodeOfDataMapOfOrientedShapeC2DF_DownCast = _TopOpeBRepTool.Handle_TopOpeBRepTool_DataMapNodeOfDataMapOfOrientedShapeC2DF_DownCast
 
@@ -1578,25 +1666,25 @@ class TopOpeBRepTool_DataMapNodeOfDataMapOfShapeListOfC2DF(OCC.TCollection.TColl
 
         """
         _TopOpeBRepTool.TopOpeBRepTool_DataMapNodeOfDataMapOfShapeListOfC2DF_swiginit(self,_TopOpeBRepTool.new_TopOpeBRepTool_DataMapNodeOfDataMapOfShapeListOfC2DF(*args))
-    def Key(self, *args) -> "TopoDS_Shape" :
+    def Key(self):
         """
         :rtype: TopoDS_Shape
 
         """
-        return _TopOpeBRepTool.TopOpeBRepTool_DataMapNodeOfDataMapOfShapeListOfC2DF_Key(self, *args)
+        return _TopOpeBRepTool.TopOpeBRepTool_DataMapNodeOfDataMapOfShapeListOfC2DF_Key(self)
 
-    def Value(self, *args) -> "TopOpeBRepTool_ListOfC2DF &" :
+    def Value(self):
         """
         :rtype: TopOpeBRepTool_ListOfC2DF
 
         """
-        return _TopOpeBRepTool.TopOpeBRepTool_DataMapNodeOfDataMapOfShapeListOfC2DF_Value(self, *args)
+        return _TopOpeBRepTool.TopOpeBRepTool_DataMapNodeOfDataMapOfShapeListOfC2DF_Value(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(TopOpeBRepTool_DataMapNodeOfDataMapOfShapeListOfC2DF self)"""
         return _TopOpeBRepTool.TopOpeBRepTool_DataMapNodeOfDataMapOfShapeListOfC2DF__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_TopOpeBRepTool_DataMapNodeOfDataMapOfShapeListOfC2DF" :
+    def GetHandle(self):
         """GetHandle(TopOpeBRepTool_DataMapNodeOfDataMapOfShapeListOfC2DF self) -> Handle_TopOpeBRepTool_DataMapNodeOfDataMapOfShapeListOfC2DF"""
         return _TopOpeBRepTool.TopOpeBRepTool_DataMapNodeOfDataMapOfShapeListOfC2DF_GetHandle(self)
 
@@ -1636,7 +1724,7 @@ Handle_TopOpeBRepTool_DataMapNodeOfDataMapOfShapeListOfC2DF._kill_pointed = new_
 Handle_TopOpeBRepTool_DataMapNodeOfDataMapOfShapeListOfC2DF_swigregister = _TopOpeBRepTool.Handle_TopOpeBRepTool_DataMapNodeOfDataMapOfShapeListOfC2DF_swigregister
 Handle_TopOpeBRepTool_DataMapNodeOfDataMapOfShapeListOfC2DF_swigregister(Handle_TopOpeBRepTool_DataMapNodeOfDataMapOfShapeListOfC2DF)
 
-def Handle_TopOpeBRepTool_DataMapNodeOfDataMapOfShapeListOfC2DF_DownCast(*args) -> "Handle_TopOpeBRepTool_DataMapNodeOfDataMapOfShapeListOfC2DF const" :
+def Handle_TopOpeBRepTool_DataMapNodeOfDataMapOfShapeListOfC2DF_DownCast(*args):
   return _TopOpeBRepTool.Handle_TopOpeBRepTool_DataMapNodeOfDataMapOfShapeListOfC2DF_DownCast(*args)
 Handle_TopOpeBRepTool_DataMapNodeOfDataMapOfShapeListOfC2DF_DownCast = _TopOpeBRepTool.Handle_TopOpeBRepTool_DataMapNodeOfDataMapOfShapeListOfC2DF_DownCast
 
@@ -1655,25 +1743,25 @@ class TopOpeBRepTool_DataMapNodeOfDataMapOfShapeface(OCC.TCollection.TCollection
 
         """
         _TopOpeBRepTool.TopOpeBRepTool_DataMapNodeOfDataMapOfShapeface_swiginit(self,_TopOpeBRepTool.new_TopOpeBRepTool_DataMapNodeOfDataMapOfShapeface(*args))
-    def Key(self, *args) -> "TopoDS_Shape" :
+    def Key(self):
         """
         :rtype: TopoDS_Shape
 
         """
-        return _TopOpeBRepTool.TopOpeBRepTool_DataMapNodeOfDataMapOfShapeface_Key(self, *args)
+        return _TopOpeBRepTool.TopOpeBRepTool_DataMapNodeOfDataMapOfShapeface_Key(self)
 
-    def Value(self, *args) -> "TopOpeBRepTool_face &" :
+    def Value(self):
         """
         :rtype: TopOpeBRepTool_face
 
         """
-        return _TopOpeBRepTool.TopOpeBRepTool_DataMapNodeOfDataMapOfShapeface_Value(self, *args)
+        return _TopOpeBRepTool.TopOpeBRepTool_DataMapNodeOfDataMapOfShapeface_Value(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(TopOpeBRepTool_DataMapNodeOfDataMapOfShapeface self)"""
         return _TopOpeBRepTool.TopOpeBRepTool_DataMapNodeOfDataMapOfShapeface__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_TopOpeBRepTool_DataMapNodeOfDataMapOfShapeface" :
+    def GetHandle(self):
         """GetHandle(TopOpeBRepTool_DataMapNodeOfDataMapOfShapeface self) -> Handle_TopOpeBRepTool_DataMapNodeOfDataMapOfShapeface"""
         return _TopOpeBRepTool.TopOpeBRepTool_DataMapNodeOfDataMapOfShapeface_GetHandle(self)
 
@@ -1713,22 +1801,26 @@ Handle_TopOpeBRepTool_DataMapNodeOfDataMapOfShapeface._kill_pointed = new_instan
 Handle_TopOpeBRepTool_DataMapNodeOfDataMapOfShapeface_swigregister = _TopOpeBRepTool.Handle_TopOpeBRepTool_DataMapNodeOfDataMapOfShapeface_swigregister
 Handle_TopOpeBRepTool_DataMapNodeOfDataMapOfShapeface_swigregister(Handle_TopOpeBRepTool_DataMapNodeOfDataMapOfShapeface)
 
-def Handle_TopOpeBRepTool_DataMapNodeOfDataMapOfShapeface_DownCast(*args) -> "Handle_TopOpeBRepTool_DataMapNodeOfDataMapOfShapeface const" :
+def Handle_TopOpeBRepTool_DataMapNodeOfDataMapOfShapeface_DownCast(*args):
   return _TopOpeBRepTool.Handle_TopOpeBRepTool_DataMapNodeOfDataMapOfShapeface_DownCast(*args)
 Handle_TopOpeBRepTool_DataMapNodeOfDataMapOfShapeface_DownCast = _TopOpeBRepTool.Handle_TopOpeBRepTool_DataMapNodeOfDataMapOfShapeface_DownCast
 
 class TopOpeBRepTool_DataMapOfOrientedShapeC2DF(OCC.TCollection.TCollection_BasicMap):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self, NbBuckets=1): 
         """
         :param NbBuckets: default value is 1
-        :type NbBuckets: int
+        :type NbBuckets: Standard_Integer
+        :rtype: None
+
+        :param NbBuckets: default value is 1
+        :type NbBuckets: Standard_Integer
         :rtype: None
 
         """
-        _TopOpeBRepTool.TopOpeBRepTool_DataMapOfOrientedShapeC2DF_swiginit(self,_TopOpeBRepTool.new_TopOpeBRepTool_DataMapOfOrientedShapeC2DF(*args))
-    def Assign(self, *args) -> "TopOpeBRepTool_DataMapOfOrientedShapeC2DF &" :
+        _TopOpeBRepTool.TopOpeBRepTool_DataMapOfOrientedShapeC2DF_swiginit(self,_TopOpeBRepTool.new_TopOpeBRepTool_DataMapOfOrientedShapeC2DF(NbBuckets))
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: TopOpeBRepTool_DataMapOfOrientedShapeC2DF &
@@ -1737,7 +1829,7 @@ class TopOpeBRepTool_DataMapOfOrientedShapeC2DF(OCC.TCollection.TCollection_Basi
         """
         return _TopOpeBRepTool.TopOpeBRepTool_DataMapOfOrientedShapeC2DF_Assign(self, *args)
 
-    def Set(self, *args) -> "TopOpeBRepTool_DataMapOfOrientedShapeC2DF &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: TopOpeBRepTool_DataMapOfOrientedShapeC2DF &
@@ -1746,23 +1838,23 @@ class TopOpeBRepTool_DataMapOfOrientedShapeC2DF(OCC.TCollection.TCollection_Basi
         """
         return _TopOpeBRepTool.TopOpeBRepTool_DataMapOfOrientedShapeC2DF_Set(self, *args)
 
-    def ReSize(self, *args) -> "void" :
+    def ReSize(self, *args):
         """
         :param NbBuckets:
-        :type NbBuckets: int
+        :type NbBuckets: Standard_Integer
         :rtype: None
 
         """
         return _TopOpeBRepTool.TopOpeBRepTool_DataMapOfOrientedShapeC2DF_ReSize(self, *args)
 
-    def Clear(self, *args) -> "void" :
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _TopOpeBRepTool.TopOpeBRepTool_DataMapOfOrientedShapeC2DF_Clear(self, *args)
+        return _TopOpeBRepTool.TopOpeBRepTool_DataMapOfOrientedShapeC2DF_Clear(self)
 
-    def Bind(self, *args) -> "Standard_Boolean" :
+    def Bind(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -1773,7 +1865,7 @@ class TopOpeBRepTool_DataMapOfOrientedShapeC2DF(OCC.TCollection.TCollection_Basi
         """
         return _TopOpeBRepTool.TopOpeBRepTool_DataMapOfOrientedShapeC2DF_Bind(self, *args)
 
-    def IsBound(self, *args) -> "Standard_Boolean" :
+    def IsBound(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -1782,7 +1874,7 @@ class TopOpeBRepTool_DataMapOfOrientedShapeC2DF(OCC.TCollection.TCollection_Basi
         """
         return _TopOpeBRepTool.TopOpeBRepTool_DataMapOfOrientedShapeC2DF_IsBound(self, *args)
 
-    def UnBind(self, *args) -> "Standard_Boolean" :
+    def UnBind(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -1791,7 +1883,7 @@ class TopOpeBRepTool_DataMapOfOrientedShapeC2DF(OCC.TCollection.TCollection_Basi
         """
         return _TopOpeBRepTool.TopOpeBRepTool_DataMapOfOrientedShapeC2DF_UnBind(self, *args)
 
-    def Find(self, *args) -> "TopOpeBRepTool_C2DF const &" :
+    def Find(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -1800,7 +1892,7 @@ class TopOpeBRepTool_DataMapOfOrientedShapeC2DF(OCC.TCollection.TCollection_Basi
         """
         return _TopOpeBRepTool.TopOpeBRepTool_DataMapOfOrientedShapeC2DF_Find(self, *args)
 
-    def ChangeFind(self, *args) -> "TopOpeBRepTool_C2DF &" :
+    def ChangeFind(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -1809,7 +1901,7 @@ class TopOpeBRepTool_DataMapOfOrientedShapeC2DF(OCC.TCollection.TCollection_Basi
         """
         return _TopOpeBRepTool.TopOpeBRepTool_DataMapOfOrientedShapeC2DF_ChangeFind(self, *args)
 
-    def Find1(self, *args) -> "Standard_Address" :
+    def Find1(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -1818,7 +1910,7 @@ class TopOpeBRepTool_DataMapOfOrientedShapeC2DF(OCC.TCollection.TCollection_Basi
         """
         return _TopOpeBRepTool.TopOpeBRepTool_DataMapOfOrientedShapeC2DF_Find1(self, *args)
 
-    def ChangeFind1(self, *args) -> "Standard_Address" :
+    def ChangeFind1(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -1827,7 +1919,7 @@ class TopOpeBRepTool_DataMapOfOrientedShapeC2DF(OCC.TCollection.TCollection_Basi
         """
         return _TopOpeBRepTool.TopOpeBRepTool_DataMapOfOrientedShapeC2DF_ChangeFind1(self, *args)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(TopOpeBRepTool_DataMapOfOrientedShapeC2DF self)"""
         return _TopOpeBRepTool.TopOpeBRepTool_DataMapOfOrientedShapeC2DF__kill_pointed(self)
 
@@ -1857,15 +1949,19 @@ TopOpeBRepTool_DataMapOfOrientedShapeC2DF_swigregister(TopOpeBRepTool_DataMapOfO
 class TopOpeBRepTool_DataMapOfShapeListOfC2DF(OCC.TCollection.TCollection_BasicMap):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self, NbBuckets=1): 
         """
         :param NbBuckets: default value is 1
-        :type NbBuckets: int
+        :type NbBuckets: Standard_Integer
+        :rtype: None
+
+        :param NbBuckets: default value is 1
+        :type NbBuckets: Standard_Integer
         :rtype: None
 
         """
-        _TopOpeBRepTool.TopOpeBRepTool_DataMapOfShapeListOfC2DF_swiginit(self,_TopOpeBRepTool.new_TopOpeBRepTool_DataMapOfShapeListOfC2DF(*args))
-    def Assign(self, *args) -> "TopOpeBRepTool_DataMapOfShapeListOfC2DF &" :
+        _TopOpeBRepTool.TopOpeBRepTool_DataMapOfShapeListOfC2DF_swiginit(self,_TopOpeBRepTool.new_TopOpeBRepTool_DataMapOfShapeListOfC2DF(NbBuckets))
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: TopOpeBRepTool_DataMapOfShapeListOfC2DF &
@@ -1874,7 +1970,7 @@ class TopOpeBRepTool_DataMapOfShapeListOfC2DF(OCC.TCollection.TCollection_BasicM
         """
         return _TopOpeBRepTool.TopOpeBRepTool_DataMapOfShapeListOfC2DF_Assign(self, *args)
 
-    def Set(self, *args) -> "TopOpeBRepTool_DataMapOfShapeListOfC2DF &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: TopOpeBRepTool_DataMapOfShapeListOfC2DF &
@@ -1883,23 +1979,23 @@ class TopOpeBRepTool_DataMapOfShapeListOfC2DF(OCC.TCollection.TCollection_BasicM
         """
         return _TopOpeBRepTool.TopOpeBRepTool_DataMapOfShapeListOfC2DF_Set(self, *args)
 
-    def ReSize(self, *args) -> "void" :
+    def ReSize(self, *args):
         """
         :param NbBuckets:
-        :type NbBuckets: int
+        :type NbBuckets: Standard_Integer
         :rtype: None
 
         """
         return _TopOpeBRepTool.TopOpeBRepTool_DataMapOfShapeListOfC2DF_ReSize(self, *args)
 
-    def Clear(self, *args) -> "void" :
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _TopOpeBRepTool.TopOpeBRepTool_DataMapOfShapeListOfC2DF_Clear(self, *args)
+        return _TopOpeBRepTool.TopOpeBRepTool_DataMapOfShapeListOfC2DF_Clear(self)
 
-    def Bind(self, *args) -> "Standard_Boolean" :
+    def Bind(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -1910,7 +2006,7 @@ class TopOpeBRepTool_DataMapOfShapeListOfC2DF(OCC.TCollection.TCollection_BasicM
         """
         return _TopOpeBRepTool.TopOpeBRepTool_DataMapOfShapeListOfC2DF_Bind(self, *args)
 
-    def IsBound(self, *args) -> "Standard_Boolean" :
+    def IsBound(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -1919,7 +2015,7 @@ class TopOpeBRepTool_DataMapOfShapeListOfC2DF(OCC.TCollection.TCollection_BasicM
         """
         return _TopOpeBRepTool.TopOpeBRepTool_DataMapOfShapeListOfC2DF_IsBound(self, *args)
 
-    def UnBind(self, *args) -> "Standard_Boolean" :
+    def UnBind(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -1928,7 +2024,7 @@ class TopOpeBRepTool_DataMapOfShapeListOfC2DF(OCC.TCollection.TCollection_BasicM
         """
         return _TopOpeBRepTool.TopOpeBRepTool_DataMapOfShapeListOfC2DF_UnBind(self, *args)
 
-    def Find(self, *args) -> "TopOpeBRepTool_ListOfC2DF const &" :
+    def Find(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -1937,7 +2033,7 @@ class TopOpeBRepTool_DataMapOfShapeListOfC2DF(OCC.TCollection.TCollection_BasicM
         """
         return _TopOpeBRepTool.TopOpeBRepTool_DataMapOfShapeListOfC2DF_Find(self, *args)
 
-    def ChangeFind(self, *args) -> "TopOpeBRepTool_ListOfC2DF &" :
+    def ChangeFind(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -1946,7 +2042,7 @@ class TopOpeBRepTool_DataMapOfShapeListOfC2DF(OCC.TCollection.TCollection_BasicM
         """
         return _TopOpeBRepTool.TopOpeBRepTool_DataMapOfShapeListOfC2DF_ChangeFind(self, *args)
 
-    def Find1(self, *args) -> "Standard_Address" :
+    def Find1(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -1955,7 +2051,7 @@ class TopOpeBRepTool_DataMapOfShapeListOfC2DF(OCC.TCollection.TCollection_BasicM
         """
         return _TopOpeBRepTool.TopOpeBRepTool_DataMapOfShapeListOfC2DF_Find1(self, *args)
 
-    def ChangeFind1(self, *args) -> "Standard_Address" :
+    def ChangeFind1(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -1964,7 +2060,7 @@ class TopOpeBRepTool_DataMapOfShapeListOfC2DF(OCC.TCollection.TCollection_BasicM
         """
         return _TopOpeBRepTool.TopOpeBRepTool_DataMapOfShapeListOfC2DF_ChangeFind1(self, *args)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(TopOpeBRepTool_DataMapOfShapeListOfC2DF self)"""
         return _TopOpeBRepTool.TopOpeBRepTool_DataMapOfShapeListOfC2DF__kill_pointed(self)
 
@@ -1994,15 +2090,19 @@ TopOpeBRepTool_DataMapOfShapeListOfC2DF_swigregister(TopOpeBRepTool_DataMapOfSha
 class TopOpeBRepTool_DataMapOfShapeface(OCC.TCollection.TCollection_BasicMap):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self, NbBuckets=1): 
         """
         :param NbBuckets: default value is 1
-        :type NbBuckets: int
+        :type NbBuckets: Standard_Integer
+        :rtype: None
+
+        :param NbBuckets: default value is 1
+        :type NbBuckets: Standard_Integer
         :rtype: None
 
         """
-        _TopOpeBRepTool.TopOpeBRepTool_DataMapOfShapeface_swiginit(self,_TopOpeBRepTool.new_TopOpeBRepTool_DataMapOfShapeface(*args))
-    def Assign(self, *args) -> "TopOpeBRepTool_DataMapOfShapeface &" :
+        _TopOpeBRepTool.TopOpeBRepTool_DataMapOfShapeface_swiginit(self,_TopOpeBRepTool.new_TopOpeBRepTool_DataMapOfShapeface(NbBuckets))
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: TopOpeBRepTool_DataMapOfShapeface &
@@ -2011,7 +2111,7 @@ class TopOpeBRepTool_DataMapOfShapeface(OCC.TCollection.TCollection_BasicMap):
         """
         return _TopOpeBRepTool.TopOpeBRepTool_DataMapOfShapeface_Assign(self, *args)
 
-    def Set(self, *args) -> "TopOpeBRepTool_DataMapOfShapeface &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: TopOpeBRepTool_DataMapOfShapeface &
@@ -2020,23 +2120,23 @@ class TopOpeBRepTool_DataMapOfShapeface(OCC.TCollection.TCollection_BasicMap):
         """
         return _TopOpeBRepTool.TopOpeBRepTool_DataMapOfShapeface_Set(self, *args)
 
-    def ReSize(self, *args) -> "void" :
+    def ReSize(self, *args):
         """
         :param NbBuckets:
-        :type NbBuckets: int
+        :type NbBuckets: Standard_Integer
         :rtype: None
 
         """
         return _TopOpeBRepTool.TopOpeBRepTool_DataMapOfShapeface_ReSize(self, *args)
 
-    def Clear(self, *args) -> "void" :
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _TopOpeBRepTool.TopOpeBRepTool_DataMapOfShapeface_Clear(self, *args)
+        return _TopOpeBRepTool.TopOpeBRepTool_DataMapOfShapeface_Clear(self)
 
-    def Bind(self, *args) -> "Standard_Boolean" :
+    def Bind(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -2047,7 +2147,7 @@ class TopOpeBRepTool_DataMapOfShapeface(OCC.TCollection.TCollection_BasicMap):
         """
         return _TopOpeBRepTool.TopOpeBRepTool_DataMapOfShapeface_Bind(self, *args)
 
-    def IsBound(self, *args) -> "Standard_Boolean" :
+    def IsBound(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -2056,7 +2156,7 @@ class TopOpeBRepTool_DataMapOfShapeface(OCC.TCollection.TCollection_BasicMap):
         """
         return _TopOpeBRepTool.TopOpeBRepTool_DataMapOfShapeface_IsBound(self, *args)
 
-    def UnBind(self, *args) -> "Standard_Boolean" :
+    def UnBind(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -2065,7 +2165,7 @@ class TopOpeBRepTool_DataMapOfShapeface(OCC.TCollection.TCollection_BasicMap):
         """
         return _TopOpeBRepTool.TopOpeBRepTool_DataMapOfShapeface_UnBind(self, *args)
 
-    def Find(self, *args) -> "TopOpeBRepTool_face const &" :
+    def Find(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -2074,7 +2174,7 @@ class TopOpeBRepTool_DataMapOfShapeface(OCC.TCollection.TCollection_BasicMap):
         """
         return _TopOpeBRepTool.TopOpeBRepTool_DataMapOfShapeface_Find(self, *args)
 
-    def ChangeFind(self, *args) -> "TopOpeBRepTool_face &" :
+    def ChangeFind(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -2083,7 +2183,7 @@ class TopOpeBRepTool_DataMapOfShapeface(OCC.TCollection.TCollection_BasicMap):
         """
         return _TopOpeBRepTool.TopOpeBRepTool_DataMapOfShapeface_ChangeFind(self, *args)
 
-    def Find1(self, *args) -> "Standard_Address" :
+    def Find1(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -2092,7 +2192,7 @@ class TopOpeBRepTool_DataMapOfShapeface(OCC.TCollection.TCollection_BasicMap):
         """
         return _TopOpeBRepTool.TopOpeBRepTool_DataMapOfShapeface_Find1(self, *args)
 
-    def ChangeFind1(self, *args) -> "Standard_Address" :
+    def ChangeFind1(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -2101,7 +2201,7 @@ class TopOpeBRepTool_DataMapOfShapeface(OCC.TCollection.TCollection_BasicMap):
         """
         return _TopOpeBRepTool.TopOpeBRepTool_DataMapOfShapeface_ChangeFind1(self, *args)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(TopOpeBRepTool_DataMapOfShapeface self)"""
         return _TopOpeBRepTool.TopOpeBRepTool_DataMapOfShapeface__kill_pointed(self)
 
@@ -2141,9 +2241,17 @@ class TopOpeBRepTool_FuseEdges(object):
         :type PerformNow: bool
         :rtype: None
 
+        * Initialise members and build construction of map of ancestors.
+
+        :param theShape:
+        :type theShape: TopoDS_Shape &
+        :param PerformNow: default value is Standard_False
+        :type PerformNow: bool
+        :rtype: None
+
         """
         _TopOpeBRepTool.TopOpeBRepTool_FuseEdges_swiginit(self,_TopOpeBRepTool.new_TopOpeBRepTool_FuseEdges(*args))
-    def AvoidEdges(self, *args) -> "void" :
+    def AvoidEdges(self, *args):
         """
         * set edges to avoid being fused
 
@@ -2154,7 +2262,7 @@ class TopOpeBRepTool_FuseEdges(object):
         """
         return _TopOpeBRepTool.TopOpeBRepTool_FuseEdges_AvoidEdges(self, *args)
 
-    def Edges(self, *args) -> "void" :
+    def Edges(self, *args):
         """
         * returns all the list of edges to be fused each list of the map represent a set of connex edges that can be fused.
 
@@ -2165,7 +2273,7 @@ class TopOpeBRepTool_FuseEdges(object):
         """
         return _TopOpeBRepTool.TopOpeBRepTool_FuseEdges_Edges(self, *args)
 
-    def ResultEdges(self, *args) -> "void" :
+    def ResultEdges(self, *args):
         """
         * returns all the fused edges. each integer entry in the map corresponds to the integer in the DataMapOfIntegerListOfShape we get in method Edges. That is to say, to the list of edges in theMapLstEdg(i) corresponds the resulting edge theMapEdge(i)
 
@@ -2176,7 +2284,7 @@ class TopOpeBRepTool_FuseEdges(object):
         """
         return _TopOpeBRepTool.TopOpeBRepTool_FuseEdges_ResultEdges(self, *args)
 
-    def Faces(self, *args) -> "void" :
+    def Faces(self, *args):
         """
         * returns the map of modified faces.
 
@@ -2187,32 +2295,32 @@ class TopOpeBRepTool_FuseEdges(object):
         """
         return _TopOpeBRepTool.TopOpeBRepTool_FuseEdges_Faces(self, *args)
 
-    def Shape(self, *args) -> "TopoDS_Shape" :
+    def Shape(self):
         """
         * returns myShape modified with the list of internal edges removed from it.
 
         :rtype: TopoDS_Shape
 
         """
-        return _TopOpeBRepTool.TopOpeBRepTool_FuseEdges_Shape(self, *args)
+        return _TopOpeBRepTool.TopOpeBRepTool_FuseEdges_Shape(self)
 
-    def NbVertices(self, *args) -> "Standard_Integer const" :
+    def NbVertices(self):
         """
         * returns the number of vertices candidate to be removed
 
         :rtype: int
 
         """
-        return _TopOpeBRepTool.TopOpeBRepTool_FuseEdges_NbVertices(self, *args)
+        return _TopOpeBRepTool.TopOpeBRepTool_FuseEdges_NbVertices(self)
 
-    def Perform(self, *args) -> "void" :
+    def Perform(self):
         """
         * Using map of list of connex edges, fuse each list to one edge and then update myShape
 
         :rtype: None
 
         """
-        return _TopOpeBRepTool.TopOpeBRepTool_FuseEdges_Perform(self, *args)
+        return _TopOpeBRepTool.TopOpeBRepTool_FuseEdges_Perform(self)
 
     def __del__(self):
     	try:
@@ -2250,9 +2358,57 @@ class TopOpeBRepTool_GeomTool(object):
         :type CompPC2: bool
         :rtype: None
 
+        * Boolean flags <CompC3D>, <CompPC1>, <CompPC2> indicate whether the corresponding result curves <C3D>, <PC1>, <PC2> of MakeCurves method must or not be computed from an intersection line <L>. When the line <L> is a walking one, <TypeC3D> is the kind of the 3D curve <C3D> to compute : - BSPLINE1 to compute a BSpline of degree 1 on the walking points of <L>, - APPROX to build an approximation curve on the walking points of <L>.
+
+        :param TypeC3D: default value is TopOpeBRepTool_BSPLINE1
+        :type TypeC3D: TopOpeBRepTool_OutCurveType
+        :param CompC3D: default value is Standard_True
+        :type CompC3D: bool
+        :param CompPC1: default value is Standard_True
+        :type CompPC1: bool
+        :param CompPC2: default value is Standard_True
+        :type CompPC2: bool
+        :rtype: None
+
+        * Boolean flags <CompC3D>, <CompPC1>, <CompPC2> indicate whether the corresponding result curves <C3D>, <PC1>, <PC2> of MakeCurves method must or not be computed from an intersection line <L>. When the line <L> is a walking one, <TypeC3D> is the kind of the 3D curve <C3D> to compute : - BSPLINE1 to compute a BSpline of degree 1 on the walking points of <L>, - APPROX to build an approximation curve on the walking points of <L>.
+
+        :param TypeC3D: default value is TopOpeBRepTool_BSPLINE1
+        :type TypeC3D: TopOpeBRepTool_OutCurveType
+        :param CompC3D: default value is Standard_True
+        :type CompC3D: bool
+        :param CompPC1: default value is Standard_True
+        :type CompPC1: bool
+        :param CompPC2: default value is Standard_True
+        :type CompPC2: bool
+        :rtype: None
+
+        * Boolean flags <CompC3D>, <CompPC1>, <CompPC2> indicate whether the corresponding result curves <C3D>, <PC1>, <PC2> of MakeCurves method must or not be computed from an intersection line <L>. When the line <L> is a walking one, <TypeC3D> is the kind of the 3D curve <C3D> to compute : - BSPLINE1 to compute a BSpline of degree 1 on the walking points of <L>, - APPROX to build an approximation curve on the walking points of <L>.
+
+        :param TypeC3D: default value is TopOpeBRepTool_BSPLINE1
+        :type TypeC3D: TopOpeBRepTool_OutCurveType
+        :param CompC3D: default value is Standard_True
+        :type CompC3D: bool
+        :param CompPC1: default value is Standard_True
+        :type CompPC1: bool
+        :param CompPC2: default value is Standard_True
+        :type CompPC2: bool
+        :rtype: None
+
+        * Boolean flags <CompC3D>, <CompPC1>, <CompPC2> indicate whether the corresponding result curves <C3D>, <PC1>, <PC2> of MakeCurves method must or not be computed from an intersection line <L>. When the line <L> is a walking one, <TypeC3D> is the kind of the 3D curve <C3D> to compute : - BSPLINE1 to compute a BSpline of degree 1 on the walking points of <L>, - APPROX to build an approximation curve on the walking points of <L>.
+
+        :param TypeC3D: default value is TopOpeBRepTool_BSPLINE1
+        :type TypeC3D: TopOpeBRepTool_OutCurveType
+        :param CompC3D: default value is Standard_True
+        :type CompC3D: bool
+        :param CompPC1: default value is Standard_True
+        :type CompPC1: bool
+        :param CompPC2: default value is Standard_True
+        :type CompPC2: bool
+        :rtype: None
+
         """
         _TopOpeBRepTool.TopOpeBRepTool_GeomTool_swiginit(self,_TopOpeBRepTool.new_TopOpeBRepTool_GeomTool(*args))
-    def DefineCurves(self, *args) -> "void" :
+    def DefineCurves(self, *args):
         """
         :param CompC3D:
         :type CompC3D: bool
@@ -2261,7 +2417,7 @@ class TopOpeBRepTool_GeomTool(object):
         """
         return _TopOpeBRepTool.TopOpeBRepTool_GeomTool_DefineCurves(self, *args)
 
-    def DefinePCurves1(self, *args) -> "void" :
+    def DefinePCurves1(self, *args):
         """
         :param CompPC1:
         :type CompPC1: bool
@@ -2270,7 +2426,7 @@ class TopOpeBRepTool_GeomTool(object):
         """
         return _TopOpeBRepTool.TopOpeBRepTool_GeomTool_DefinePCurves1(self, *args)
 
-    def DefinePCurves2(self, *args) -> "void" :
+    def DefinePCurves2(self, *args):
         """
         :param CompPC2:
         :type CompPC2: bool
@@ -2279,7 +2435,7 @@ class TopOpeBRepTool_GeomTool(object):
         """
         return _TopOpeBRepTool.TopOpeBRepTool_GeomTool_DefinePCurves2(self, *args)
 
-    def Define(self, *args) -> "void" :
+    def Define(self, *args):
         """
         :param TypeC3D:
         :type TypeC3D: TopOpeBRepTool_OutCurveType
@@ -2302,7 +2458,7 @@ class TopOpeBRepTool_GeomTool(object):
         """
         return _TopOpeBRepTool.TopOpeBRepTool_GeomTool_Define(self, *args)
 
-    def GetTolerances(self, *args) -> "void" :
+    def GetTolerances(self, *args):
         """
         :param tol3d:
         :type tol3d: float &
@@ -2321,7 +2477,7 @@ class TopOpeBRepTool_GeomTool(object):
         """
         return _TopOpeBRepTool.TopOpeBRepTool_GeomTool_GetTolerances(self, *args)
 
-    def SetTolerances(self, *args) -> "void" :
+    def SetTolerances(self, *args):
         """
         :param tol3d:
         :type tol3d: float
@@ -2340,49 +2496,49 @@ class TopOpeBRepTool_GeomTool(object):
         """
         return _TopOpeBRepTool.TopOpeBRepTool_GeomTool_SetTolerances(self, *args)
 
-    def NbPntMax(self, *args) -> "Standard_Integer" :
+    def NbPntMax(self):
         """
         :rtype: int
 
         """
-        return _TopOpeBRepTool.TopOpeBRepTool_GeomTool_NbPntMax(self, *args)
+        return _TopOpeBRepTool.TopOpeBRepTool_GeomTool_NbPntMax(self)
 
-    def SetNbPntMax(self, *args) -> "void" :
+    def SetNbPntMax(self, *args):
         """
         :param NbPntMax:
-        :type NbPntMax: int
+        :type NbPntMax: Standard_Integer
         :rtype: None
 
         """
         return _TopOpeBRepTool.TopOpeBRepTool_GeomTool_SetNbPntMax(self, *args)
 
-    def TypeC3D(self, *args) -> "TopOpeBRepTool_OutCurveType" :
+    def TypeC3D(self):
         """
         :rtype: TopOpeBRepTool_OutCurveType
 
         """
-        return _TopOpeBRepTool.TopOpeBRepTool_GeomTool_TypeC3D(self, *args)
+        return _TopOpeBRepTool.TopOpeBRepTool_GeomTool_TypeC3D(self)
 
-    def CompC3D(self, *args) -> "Standard_Boolean" :
+    def CompC3D(self):
         """
         :rtype: bool
 
         """
-        return _TopOpeBRepTool.TopOpeBRepTool_GeomTool_CompC3D(self, *args)
+        return _TopOpeBRepTool.TopOpeBRepTool_GeomTool_CompC3D(self)
 
-    def CompPC1(self, *args) -> "Standard_Boolean" :
+    def CompPC1(self):
         """
         :rtype: bool
 
         """
-        return _TopOpeBRepTool.TopOpeBRepTool_GeomTool_CompPC1(self, *args)
+        return _TopOpeBRepTool.TopOpeBRepTool_GeomTool_CompPC1(self)
 
-    def CompPC2(self, *args) -> "Standard_Boolean" :
+    def CompPC2(self):
         """
         :rtype: bool
 
         """
-        return _TopOpeBRepTool.TopOpeBRepTool_GeomTool_CompPC2(self, *args)
+        return _TopOpeBRepTool.TopOpeBRepTool_GeomTool_CompPC2(self)
 
     def __del__(self):
     	try:
@@ -2411,21 +2567,29 @@ TopOpeBRepTool_GeomTool_swigregister(TopOpeBRepTool_GeomTool)
 class TopOpeBRepTool_HBoxTool(OCC.MMgt.MMgt_TShared):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _TopOpeBRepTool.TopOpeBRepTool_HBoxTool_swiginit(self,_TopOpeBRepTool.new_TopOpeBRepTool_HBoxTool(*args))
-    def Clear(self, *args) -> "void" :
+        _TopOpeBRepTool.TopOpeBRepTool_HBoxTool_swiginit(self,_TopOpeBRepTool.new_TopOpeBRepTool_HBoxTool())
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _TopOpeBRepTool.TopOpeBRepTool_HBoxTool_Clear(self, *args)
+        return _TopOpeBRepTool.TopOpeBRepTool_HBoxTool_Clear(self)
 
-    def AddBoxes(self, *args) -> "void" :
+    def AddBoxes(self, *args):
         """
+        :param S:
+        :type S: TopoDS_Shape &
+        :param TS:
+        :type TS: TopAbs_ShapeEnum
+        :param TA: default value is TopAbs_SHAPE
+        :type TA: TopAbs_ShapeEnum
+        :rtype: None
+
         :param S:
         :type S: TopoDS_Shape &
         :param TS:
@@ -2437,7 +2601,7 @@ class TopOpeBRepTool_HBoxTool(OCC.MMgt.MMgt_TShared):
         """
         return _TopOpeBRepTool.TopOpeBRepTool_HBoxTool_AddBoxes(self, *args)
 
-    def AddBox(self, *args) -> "void" :
+    def AddBox(self, *args):
         """
         :param S:
         :type S: TopoDS_Shape &
@@ -2446,7 +2610,7 @@ class TopOpeBRepTool_HBoxTool(OCC.MMgt.MMgt_TShared):
         """
         return _TopOpeBRepTool.TopOpeBRepTool_HBoxTool_AddBox(self, *args)
 
-    def ComputeBox(*args) -> "void" :
+    def ComputeBox(*args):
         """
         :param S:
         :type S: TopoDS_Shape &
@@ -2458,7 +2622,7 @@ class TopOpeBRepTool_HBoxTool(OCC.MMgt.MMgt_TShared):
         return _TopOpeBRepTool.TopOpeBRepTool_HBoxTool_ComputeBox(*args)
 
     ComputeBox = staticmethod(ComputeBox)
-    def ComputeBoxOnVertices(*args) -> "void" :
+    def ComputeBoxOnVertices(*args):
         """
         :param S:
         :type S: TopoDS_Shape &
@@ -2470,7 +2634,7 @@ class TopOpeBRepTool_HBoxTool(OCC.MMgt.MMgt_TShared):
         return _TopOpeBRepTool.TopOpeBRepTool_HBoxTool_ComputeBoxOnVertices(*args)
 
     ComputeBoxOnVertices = staticmethod(ComputeBoxOnVertices)
-    def DumpB(*args) -> "void" :
+    def DumpB(*args):
         """
         :param B:
         :type B: Bnd_Box &
@@ -2480,20 +2644,20 @@ class TopOpeBRepTool_HBoxTool(OCC.MMgt.MMgt_TShared):
         return _TopOpeBRepTool.TopOpeBRepTool_HBoxTool_DumpB(*args)
 
     DumpB = staticmethod(DumpB)
-    def Box(self, *args) -> "Bnd_Box const &" :
+    def Box(self, *args):
         """
         :param S:
         :type S: TopoDS_Shape &
         :rtype: Bnd_Box
 
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :rtype: Bnd_Box
 
         """
         return _TopOpeBRepTool.TopOpeBRepTool_HBoxTool_Box(self, *args)
 
-    def HasBox(self, *args) -> "Standard_Boolean" :
+    def HasBox(self, *args):
         """
         :param S:
         :type S: TopoDS_Shape &
@@ -2502,16 +2666,16 @@ class TopOpeBRepTool_HBoxTool(OCC.MMgt.MMgt_TShared):
         """
         return _TopOpeBRepTool.TopOpeBRepTool_HBoxTool_HasBox(self, *args)
 
-    def Shape(self, *args) -> "TopoDS_Shape const" :
+    def Shape(self, *args):
         """
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :rtype: TopoDS_Shape
 
         """
         return _TopOpeBRepTool.TopOpeBRepTool_HBoxTool_Shape(self, *args)
 
-    def Index(self, *args) -> "Standard_Integer" :
+    def Index(self, *args):
         """
         :param S:
         :type S: TopoDS_Shape &
@@ -2520,32 +2684,32 @@ class TopOpeBRepTool_HBoxTool(OCC.MMgt.MMgt_TShared):
         """
         return _TopOpeBRepTool.TopOpeBRepTool_HBoxTool_Index(self, *args)
 
-    def Extent(self, *args) -> "Standard_Integer" :
+    def Extent(self):
         """
         :rtype: int
 
         """
-        return _TopOpeBRepTool.TopOpeBRepTool_HBoxTool_Extent(self, *args)
+        return _TopOpeBRepTool.TopOpeBRepTool_HBoxTool_Extent(self)
 
-    def ChangeIMS(self, *args) -> "TopOpeBRepTool_IndexedDataMapOfShapeBox &" :
+    def ChangeIMS(self):
         """
         :rtype: TopOpeBRepTool_IndexedDataMapOfShapeBox
 
         """
-        return _TopOpeBRepTool.TopOpeBRepTool_HBoxTool_ChangeIMS(self, *args)
+        return _TopOpeBRepTool.TopOpeBRepTool_HBoxTool_ChangeIMS(self)
 
-    def IMS(self, *args) -> "TopOpeBRepTool_IndexedDataMapOfShapeBox const &" :
+    def IMS(self):
         """
         :rtype: TopOpeBRepTool_IndexedDataMapOfShapeBox
 
         """
-        return _TopOpeBRepTool.TopOpeBRepTool_HBoxTool_IMS(self, *args)
+        return _TopOpeBRepTool.TopOpeBRepTool_HBoxTool_IMS(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(TopOpeBRepTool_HBoxTool self)"""
         return _TopOpeBRepTool.TopOpeBRepTool_HBoxTool__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_TopOpeBRepTool_HBoxTool" :
+    def GetHandle(self):
         """GetHandle(TopOpeBRepTool_HBoxTool self) -> Handle_TopOpeBRepTool_HBoxTool"""
         return _TopOpeBRepTool.TopOpeBRepTool_HBoxTool_GetHandle(self)
 
@@ -2572,7 +2736,7 @@ TopOpeBRepTool_HBoxTool.GetHandle = new_instancemethod(_TopOpeBRepTool.TopOpeBRe
 TopOpeBRepTool_HBoxTool_swigregister = _TopOpeBRepTool.TopOpeBRepTool_HBoxTool_swigregister
 TopOpeBRepTool_HBoxTool_swigregister(TopOpeBRepTool_HBoxTool)
 
-def TopOpeBRepTool_HBoxTool_ComputeBox(*args) -> "void" :
+def TopOpeBRepTool_HBoxTool_ComputeBox(*args):
   """
     :param S:
     :type S: TopoDS_Shape &
@@ -2583,7 +2747,7 @@ def TopOpeBRepTool_HBoxTool_ComputeBox(*args) -> "void" :
     """
   return _TopOpeBRepTool.TopOpeBRepTool_HBoxTool_ComputeBox(*args)
 
-def TopOpeBRepTool_HBoxTool_ComputeBoxOnVertices(*args) -> "void" :
+def TopOpeBRepTool_HBoxTool_ComputeBoxOnVertices(*args):
   """
     :param S:
     :type S: TopoDS_Shape &
@@ -2594,7 +2758,7 @@ def TopOpeBRepTool_HBoxTool_ComputeBoxOnVertices(*args) -> "void" :
     """
   return _TopOpeBRepTool.TopOpeBRepTool_HBoxTool_ComputeBoxOnVertices(*args)
 
-def TopOpeBRepTool_HBoxTool_DumpB(*args) -> "void" :
+def TopOpeBRepTool_HBoxTool_DumpB(*args):
   """
     :param B:
     :type B: Bnd_Box &
@@ -2624,7 +2788,7 @@ Handle_TopOpeBRepTool_HBoxTool._kill_pointed = new_instancemethod(_TopOpeBRepToo
 Handle_TopOpeBRepTool_HBoxTool_swigregister = _TopOpeBRepTool.Handle_TopOpeBRepTool_HBoxTool_swigregister
 Handle_TopOpeBRepTool_HBoxTool_swigregister(Handle_TopOpeBRepTool_HBoxTool)
 
-def Handle_TopOpeBRepTool_HBoxTool_DownCast(*args) -> "Handle_TopOpeBRepTool_HBoxTool const" :
+def Handle_TopOpeBRepTool_HBoxTool_DownCast(*args):
   return _TopOpeBRepTool.Handle_TopOpeBRepTool_HBoxTool_DownCast(*args)
 Handle_TopOpeBRepTool_HBoxTool_DownCast = _TopOpeBRepTool.Handle_TopOpeBRepTool_HBoxTool_DownCast
 
@@ -2636,7 +2800,7 @@ class TopOpeBRepTool_IndexedDataMapNodeOfIndexedDataMapOfShapeBox(OCC.TCollectio
         :param K1:
         :type K1: TopoDS_Shape &
         :param K2:
-        :type K2: int
+        :type K2: Standard_Integer
         :param I:
         :type I: Bnd_Box &
         :param n1:
@@ -2647,40 +2811,40 @@ class TopOpeBRepTool_IndexedDataMapNodeOfIndexedDataMapOfShapeBox(OCC.TCollectio
 
         """
         _TopOpeBRepTool.TopOpeBRepTool_IndexedDataMapNodeOfIndexedDataMapOfShapeBox_swiginit(self,_TopOpeBRepTool.new_TopOpeBRepTool_IndexedDataMapNodeOfIndexedDataMapOfShapeBox(*args))
-    def Key1(self, *args) -> "TopoDS_Shape" :
+    def Key1(self):
         """
         :rtype: TopoDS_Shape
 
         """
-        return _TopOpeBRepTool.TopOpeBRepTool_IndexedDataMapNodeOfIndexedDataMapOfShapeBox_Key1(self, *args)
+        return _TopOpeBRepTool.TopOpeBRepTool_IndexedDataMapNodeOfIndexedDataMapOfShapeBox_Key1(self)
 
-    def GetKey2(self) -> "Standard_Integer" :
+    def GetKey2(self):
         """GetKey2(TopOpeBRepTool_IndexedDataMapNodeOfIndexedDataMapOfShapeBox self) -> Standard_Integer"""
         return _TopOpeBRepTool.TopOpeBRepTool_IndexedDataMapNodeOfIndexedDataMapOfShapeBox_GetKey2(self)
 
-    def SetKey2(self, *args) -> "void" :
+    def SetKey2(self, *args):
         """SetKey2(TopOpeBRepTool_IndexedDataMapNodeOfIndexedDataMapOfShapeBox self, Standard_Integer value)"""
         return _TopOpeBRepTool.TopOpeBRepTool_IndexedDataMapNodeOfIndexedDataMapOfShapeBox_SetKey2(self, *args)
 
-    def Next2(self, *args) -> "TCollection_MapNodePtr &" :
+    def Next2(self):
         """
         :rtype: TCollection_MapNodePtr
 
         """
-        return _TopOpeBRepTool.TopOpeBRepTool_IndexedDataMapNodeOfIndexedDataMapOfShapeBox_Next2(self, *args)
+        return _TopOpeBRepTool.TopOpeBRepTool_IndexedDataMapNodeOfIndexedDataMapOfShapeBox_Next2(self)
 
-    def Value(self, *args) -> "Bnd_Box &" :
+    def Value(self):
         """
         :rtype: Bnd_Box
 
         """
-        return _TopOpeBRepTool.TopOpeBRepTool_IndexedDataMapNodeOfIndexedDataMapOfShapeBox_Value(self, *args)
+        return _TopOpeBRepTool.TopOpeBRepTool_IndexedDataMapNodeOfIndexedDataMapOfShapeBox_Value(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(TopOpeBRepTool_IndexedDataMapNodeOfIndexedDataMapOfShapeBox self)"""
         return _TopOpeBRepTool.TopOpeBRepTool_IndexedDataMapNodeOfIndexedDataMapOfShapeBox__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_TopOpeBRepTool_IndexedDataMapNodeOfIndexedDataMapOfShapeBox" :
+    def GetHandle(self):
         """GetHandle(TopOpeBRepTool_IndexedDataMapNodeOfIndexedDataMapOfShapeBox self) -> Handle_TopOpeBRepTool_IndexedDataMapNodeOfIndexedDataMapOfShapeBox"""
         return _TopOpeBRepTool.TopOpeBRepTool_IndexedDataMapNodeOfIndexedDataMapOfShapeBox_GetHandle(self)
 
@@ -2723,7 +2887,7 @@ Handle_TopOpeBRepTool_IndexedDataMapNodeOfIndexedDataMapOfShapeBox._kill_pointed
 Handle_TopOpeBRepTool_IndexedDataMapNodeOfIndexedDataMapOfShapeBox_swigregister = _TopOpeBRepTool.Handle_TopOpeBRepTool_IndexedDataMapNodeOfIndexedDataMapOfShapeBox_swigregister
 Handle_TopOpeBRepTool_IndexedDataMapNodeOfIndexedDataMapOfShapeBox_swigregister(Handle_TopOpeBRepTool_IndexedDataMapNodeOfIndexedDataMapOfShapeBox)
 
-def Handle_TopOpeBRepTool_IndexedDataMapNodeOfIndexedDataMapOfShapeBox_DownCast(*args) -> "Handle_TopOpeBRepTool_IndexedDataMapNodeOfIndexedDataMapOfShapeBox const" :
+def Handle_TopOpeBRepTool_IndexedDataMapNodeOfIndexedDataMapOfShapeBox_DownCast(*args):
   return _TopOpeBRepTool.Handle_TopOpeBRepTool_IndexedDataMapNodeOfIndexedDataMapOfShapeBox_DownCast(*args)
 Handle_TopOpeBRepTool_IndexedDataMapNodeOfIndexedDataMapOfShapeBox_DownCast = _TopOpeBRepTool.Handle_TopOpeBRepTool_IndexedDataMapNodeOfIndexedDataMapOfShapeBox_DownCast
 
@@ -2735,7 +2899,7 @@ class TopOpeBRepTool_IndexedDataMapNodeOfIndexedDataMapOfShapeBox2d(OCC.TCollect
         :param K1:
         :type K1: TopoDS_Shape &
         :param K2:
-        :type K2: int
+        :type K2: Standard_Integer
         :param I:
         :type I: Bnd_Box2d &
         :param n1:
@@ -2746,40 +2910,40 @@ class TopOpeBRepTool_IndexedDataMapNodeOfIndexedDataMapOfShapeBox2d(OCC.TCollect
 
         """
         _TopOpeBRepTool.TopOpeBRepTool_IndexedDataMapNodeOfIndexedDataMapOfShapeBox2d_swiginit(self,_TopOpeBRepTool.new_TopOpeBRepTool_IndexedDataMapNodeOfIndexedDataMapOfShapeBox2d(*args))
-    def Key1(self, *args) -> "TopoDS_Shape" :
+    def Key1(self):
         """
         :rtype: TopoDS_Shape
 
         """
-        return _TopOpeBRepTool.TopOpeBRepTool_IndexedDataMapNodeOfIndexedDataMapOfShapeBox2d_Key1(self, *args)
+        return _TopOpeBRepTool.TopOpeBRepTool_IndexedDataMapNodeOfIndexedDataMapOfShapeBox2d_Key1(self)
 
-    def GetKey2(self) -> "Standard_Integer" :
+    def GetKey2(self):
         """GetKey2(TopOpeBRepTool_IndexedDataMapNodeOfIndexedDataMapOfShapeBox2d self) -> Standard_Integer"""
         return _TopOpeBRepTool.TopOpeBRepTool_IndexedDataMapNodeOfIndexedDataMapOfShapeBox2d_GetKey2(self)
 
-    def SetKey2(self, *args) -> "void" :
+    def SetKey2(self, *args):
         """SetKey2(TopOpeBRepTool_IndexedDataMapNodeOfIndexedDataMapOfShapeBox2d self, Standard_Integer value)"""
         return _TopOpeBRepTool.TopOpeBRepTool_IndexedDataMapNodeOfIndexedDataMapOfShapeBox2d_SetKey2(self, *args)
 
-    def Next2(self, *args) -> "TCollection_MapNodePtr &" :
+    def Next2(self):
         """
         :rtype: TCollection_MapNodePtr
 
         """
-        return _TopOpeBRepTool.TopOpeBRepTool_IndexedDataMapNodeOfIndexedDataMapOfShapeBox2d_Next2(self, *args)
+        return _TopOpeBRepTool.TopOpeBRepTool_IndexedDataMapNodeOfIndexedDataMapOfShapeBox2d_Next2(self)
 
-    def Value(self, *args) -> "Bnd_Box2d &" :
+    def Value(self):
         """
         :rtype: Bnd_Box2d
 
         """
-        return _TopOpeBRepTool.TopOpeBRepTool_IndexedDataMapNodeOfIndexedDataMapOfShapeBox2d_Value(self, *args)
+        return _TopOpeBRepTool.TopOpeBRepTool_IndexedDataMapNodeOfIndexedDataMapOfShapeBox2d_Value(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(TopOpeBRepTool_IndexedDataMapNodeOfIndexedDataMapOfShapeBox2d self)"""
         return _TopOpeBRepTool.TopOpeBRepTool_IndexedDataMapNodeOfIndexedDataMapOfShapeBox2d__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_TopOpeBRepTool_IndexedDataMapNodeOfIndexedDataMapOfShapeBox2d" :
+    def GetHandle(self):
         """GetHandle(TopOpeBRepTool_IndexedDataMapNodeOfIndexedDataMapOfShapeBox2d self) -> Handle_TopOpeBRepTool_IndexedDataMapNodeOfIndexedDataMapOfShapeBox2d"""
         return _TopOpeBRepTool.TopOpeBRepTool_IndexedDataMapNodeOfIndexedDataMapOfShapeBox2d_GetHandle(self)
 
@@ -2822,7 +2986,7 @@ Handle_TopOpeBRepTool_IndexedDataMapNodeOfIndexedDataMapOfShapeBox2d._kill_point
 Handle_TopOpeBRepTool_IndexedDataMapNodeOfIndexedDataMapOfShapeBox2d_swigregister = _TopOpeBRepTool.Handle_TopOpeBRepTool_IndexedDataMapNodeOfIndexedDataMapOfShapeBox2d_swigregister
 Handle_TopOpeBRepTool_IndexedDataMapNodeOfIndexedDataMapOfShapeBox2d_swigregister(Handle_TopOpeBRepTool_IndexedDataMapNodeOfIndexedDataMapOfShapeBox2d)
 
-def Handle_TopOpeBRepTool_IndexedDataMapNodeOfIndexedDataMapOfShapeBox2d_DownCast(*args) -> "Handle_TopOpeBRepTool_IndexedDataMapNodeOfIndexedDataMapOfShapeBox2d const" :
+def Handle_TopOpeBRepTool_IndexedDataMapNodeOfIndexedDataMapOfShapeBox2d_DownCast(*args):
   return _TopOpeBRepTool.Handle_TopOpeBRepTool_IndexedDataMapNodeOfIndexedDataMapOfShapeBox2d_DownCast(*args)
 Handle_TopOpeBRepTool_IndexedDataMapNodeOfIndexedDataMapOfShapeBox2d_DownCast = _TopOpeBRepTool.Handle_TopOpeBRepTool_IndexedDataMapNodeOfIndexedDataMapOfShapeBox2d_DownCast
 
@@ -2834,7 +2998,7 @@ class TopOpeBRepTool_IndexedDataMapNodeOfIndexedDataMapOfShapeconnexity(OCC.TCol
         :param K1:
         :type K1: TopoDS_Shape &
         :param K2:
-        :type K2: int
+        :type K2: Standard_Integer
         :param I:
         :type I: TopOpeBRepTool_connexity &
         :param n1:
@@ -2845,40 +3009,40 @@ class TopOpeBRepTool_IndexedDataMapNodeOfIndexedDataMapOfShapeconnexity(OCC.TCol
 
         """
         _TopOpeBRepTool.TopOpeBRepTool_IndexedDataMapNodeOfIndexedDataMapOfShapeconnexity_swiginit(self,_TopOpeBRepTool.new_TopOpeBRepTool_IndexedDataMapNodeOfIndexedDataMapOfShapeconnexity(*args))
-    def Key1(self, *args) -> "TopoDS_Shape" :
+    def Key1(self):
         """
         :rtype: TopoDS_Shape
 
         """
-        return _TopOpeBRepTool.TopOpeBRepTool_IndexedDataMapNodeOfIndexedDataMapOfShapeconnexity_Key1(self, *args)
+        return _TopOpeBRepTool.TopOpeBRepTool_IndexedDataMapNodeOfIndexedDataMapOfShapeconnexity_Key1(self)
 
-    def GetKey2(self) -> "Standard_Integer" :
+    def GetKey2(self):
         """GetKey2(TopOpeBRepTool_IndexedDataMapNodeOfIndexedDataMapOfShapeconnexity self) -> Standard_Integer"""
         return _TopOpeBRepTool.TopOpeBRepTool_IndexedDataMapNodeOfIndexedDataMapOfShapeconnexity_GetKey2(self)
 
-    def SetKey2(self, *args) -> "void" :
+    def SetKey2(self, *args):
         """SetKey2(TopOpeBRepTool_IndexedDataMapNodeOfIndexedDataMapOfShapeconnexity self, Standard_Integer value)"""
         return _TopOpeBRepTool.TopOpeBRepTool_IndexedDataMapNodeOfIndexedDataMapOfShapeconnexity_SetKey2(self, *args)
 
-    def Next2(self, *args) -> "TCollection_MapNodePtr &" :
+    def Next2(self):
         """
         :rtype: TCollection_MapNodePtr
 
         """
-        return _TopOpeBRepTool.TopOpeBRepTool_IndexedDataMapNodeOfIndexedDataMapOfShapeconnexity_Next2(self, *args)
+        return _TopOpeBRepTool.TopOpeBRepTool_IndexedDataMapNodeOfIndexedDataMapOfShapeconnexity_Next2(self)
 
-    def Value(self, *args) -> "TopOpeBRepTool_connexity &" :
+    def Value(self):
         """
         :rtype: TopOpeBRepTool_connexity
 
         """
-        return _TopOpeBRepTool.TopOpeBRepTool_IndexedDataMapNodeOfIndexedDataMapOfShapeconnexity_Value(self, *args)
+        return _TopOpeBRepTool.TopOpeBRepTool_IndexedDataMapNodeOfIndexedDataMapOfShapeconnexity_Value(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(TopOpeBRepTool_IndexedDataMapNodeOfIndexedDataMapOfShapeconnexity self)"""
         return _TopOpeBRepTool.TopOpeBRepTool_IndexedDataMapNodeOfIndexedDataMapOfShapeconnexity__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_TopOpeBRepTool_IndexedDataMapNodeOfIndexedDataMapOfShapeconnexity" :
+    def GetHandle(self):
         """GetHandle(TopOpeBRepTool_IndexedDataMapNodeOfIndexedDataMapOfShapeconnexity self) -> Handle_TopOpeBRepTool_IndexedDataMapNodeOfIndexedDataMapOfShapeconnexity"""
         return _TopOpeBRepTool.TopOpeBRepTool_IndexedDataMapNodeOfIndexedDataMapOfShapeconnexity_GetHandle(self)
 
@@ -2921,7 +3085,7 @@ Handle_TopOpeBRepTool_IndexedDataMapNodeOfIndexedDataMapOfShapeconnexity._kill_p
 Handle_TopOpeBRepTool_IndexedDataMapNodeOfIndexedDataMapOfShapeconnexity_swigregister = _TopOpeBRepTool.Handle_TopOpeBRepTool_IndexedDataMapNodeOfIndexedDataMapOfShapeconnexity_swigregister
 Handle_TopOpeBRepTool_IndexedDataMapNodeOfIndexedDataMapOfShapeconnexity_swigregister(Handle_TopOpeBRepTool_IndexedDataMapNodeOfIndexedDataMapOfShapeconnexity)
 
-def Handle_TopOpeBRepTool_IndexedDataMapNodeOfIndexedDataMapOfShapeconnexity_DownCast(*args) -> "Handle_TopOpeBRepTool_IndexedDataMapNodeOfIndexedDataMapOfShapeconnexity const" :
+def Handle_TopOpeBRepTool_IndexedDataMapNodeOfIndexedDataMapOfShapeconnexity_DownCast(*args):
   return _TopOpeBRepTool.Handle_TopOpeBRepTool_IndexedDataMapNodeOfIndexedDataMapOfShapeconnexity_DownCast(*args)
 Handle_TopOpeBRepTool_IndexedDataMapNodeOfIndexedDataMapOfShapeconnexity_DownCast = _TopOpeBRepTool.Handle_TopOpeBRepTool_IndexedDataMapNodeOfIndexedDataMapOfShapeconnexity_DownCast
 
@@ -2933,7 +3097,7 @@ class TopOpeBRepTool_IndexedDataMapNodeOfIndexedDataMapOfSolidClassifier(OCC.TCo
         :param K1:
         :type K1: TopoDS_Shape &
         :param K2:
-        :type K2: int
+        :type K2: Standard_Integer
         :param I:
         :type I: BRepClass3d_SolidClassifier &
         :param n1:
@@ -2944,40 +3108,40 @@ class TopOpeBRepTool_IndexedDataMapNodeOfIndexedDataMapOfSolidClassifier(OCC.TCo
 
         """
         _TopOpeBRepTool.TopOpeBRepTool_IndexedDataMapNodeOfIndexedDataMapOfSolidClassifier_swiginit(self,_TopOpeBRepTool.new_TopOpeBRepTool_IndexedDataMapNodeOfIndexedDataMapOfSolidClassifier(*args))
-    def Key1(self, *args) -> "TopoDS_Shape" :
+    def Key1(self):
         """
         :rtype: TopoDS_Shape
 
         """
-        return _TopOpeBRepTool.TopOpeBRepTool_IndexedDataMapNodeOfIndexedDataMapOfSolidClassifier_Key1(self, *args)
+        return _TopOpeBRepTool.TopOpeBRepTool_IndexedDataMapNodeOfIndexedDataMapOfSolidClassifier_Key1(self)
 
-    def GetKey2(self) -> "Standard_Integer" :
+    def GetKey2(self):
         """GetKey2(TopOpeBRepTool_IndexedDataMapNodeOfIndexedDataMapOfSolidClassifier self) -> Standard_Integer"""
         return _TopOpeBRepTool.TopOpeBRepTool_IndexedDataMapNodeOfIndexedDataMapOfSolidClassifier_GetKey2(self)
 
-    def SetKey2(self, *args) -> "void" :
+    def SetKey2(self, *args):
         """SetKey2(TopOpeBRepTool_IndexedDataMapNodeOfIndexedDataMapOfSolidClassifier self, Standard_Integer value)"""
         return _TopOpeBRepTool.TopOpeBRepTool_IndexedDataMapNodeOfIndexedDataMapOfSolidClassifier_SetKey2(self, *args)
 
-    def Next2(self, *args) -> "TCollection_MapNodePtr &" :
+    def Next2(self):
         """
         :rtype: TCollection_MapNodePtr
 
         """
-        return _TopOpeBRepTool.TopOpeBRepTool_IndexedDataMapNodeOfIndexedDataMapOfSolidClassifier_Next2(self, *args)
+        return _TopOpeBRepTool.TopOpeBRepTool_IndexedDataMapNodeOfIndexedDataMapOfSolidClassifier_Next2(self)
 
-    def Value(self, *args) -> "BRepClass3d_SolidClassifier &" :
+    def Value(self):
         """
         :rtype: BRepClass3d_SolidClassifier
 
         """
-        return _TopOpeBRepTool.TopOpeBRepTool_IndexedDataMapNodeOfIndexedDataMapOfSolidClassifier_Value(self, *args)
+        return _TopOpeBRepTool.TopOpeBRepTool_IndexedDataMapNodeOfIndexedDataMapOfSolidClassifier_Value(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(TopOpeBRepTool_IndexedDataMapNodeOfIndexedDataMapOfSolidClassifier self)"""
         return _TopOpeBRepTool.TopOpeBRepTool_IndexedDataMapNodeOfIndexedDataMapOfSolidClassifier__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_TopOpeBRepTool_IndexedDataMapNodeOfIndexedDataMapOfSolidClassifier" :
+    def GetHandle(self):
         """GetHandle(TopOpeBRepTool_IndexedDataMapNodeOfIndexedDataMapOfSolidClassifier self) -> Handle_TopOpeBRepTool_IndexedDataMapNodeOfIndexedDataMapOfSolidClassifier"""
         return _TopOpeBRepTool.TopOpeBRepTool_IndexedDataMapNodeOfIndexedDataMapOfSolidClassifier_GetHandle(self)
 
@@ -3020,22 +3184,26 @@ Handle_TopOpeBRepTool_IndexedDataMapNodeOfIndexedDataMapOfSolidClassifier._kill_
 Handle_TopOpeBRepTool_IndexedDataMapNodeOfIndexedDataMapOfSolidClassifier_swigregister = _TopOpeBRepTool.Handle_TopOpeBRepTool_IndexedDataMapNodeOfIndexedDataMapOfSolidClassifier_swigregister
 Handle_TopOpeBRepTool_IndexedDataMapNodeOfIndexedDataMapOfSolidClassifier_swigregister(Handle_TopOpeBRepTool_IndexedDataMapNodeOfIndexedDataMapOfSolidClassifier)
 
-def Handle_TopOpeBRepTool_IndexedDataMapNodeOfIndexedDataMapOfSolidClassifier_DownCast(*args) -> "Handle_TopOpeBRepTool_IndexedDataMapNodeOfIndexedDataMapOfSolidClassifier const" :
+def Handle_TopOpeBRepTool_IndexedDataMapNodeOfIndexedDataMapOfSolidClassifier_DownCast(*args):
   return _TopOpeBRepTool.Handle_TopOpeBRepTool_IndexedDataMapNodeOfIndexedDataMapOfSolidClassifier_DownCast(*args)
 Handle_TopOpeBRepTool_IndexedDataMapNodeOfIndexedDataMapOfSolidClassifier_DownCast = _TopOpeBRepTool.Handle_TopOpeBRepTool_IndexedDataMapNodeOfIndexedDataMapOfSolidClassifier_DownCast
 
 class TopOpeBRepTool_IndexedDataMapOfShapeBox(OCC.TCollection.TCollection_BasicMap):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self, NbBuckets=1): 
         """
         :param NbBuckets: default value is 1
-        :type NbBuckets: int
+        :type NbBuckets: Standard_Integer
+        :rtype: None
+
+        :param NbBuckets: default value is 1
+        :type NbBuckets: Standard_Integer
         :rtype: None
 
         """
-        _TopOpeBRepTool.TopOpeBRepTool_IndexedDataMapOfShapeBox_swiginit(self,_TopOpeBRepTool.new_TopOpeBRepTool_IndexedDataMapOfShapeBox(*args))
-    def Assign(self, *args) -> "TopOpeBRepTool_IndexedDataMapOfShapeBox &" :
+        _TopOpeBRepTool.TopOpeBRepTool_IndexedDataMapOfShapeBox_swiginit(self,_TopOpeBRepTool.new_TopOpeBRepTool_IndexedDataMapOfShapeBox(NbBuckets))
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: TopOpeBRepTool_IndexedDataMapOfShapeBox &
@@ -3044,7 +3212,7 @@ class TopOpeBRepTool_IndexedDataMapOfShapeBox(OCC.TCollection.TCollection_BasicM
         """
         return _TopOpeBRepTool.TopOpeBRepTool_IndexedDataMapOfShapeBox_Assign(self, *args)
 
-    def Set(self, *args) -> "TopOpeBRepTool_IndexedDataMapOfShapeBox &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: TopOpeBRepTool_IndexedDataMapOfShapeBox &
@@ -3053,23 +3221,23 @@ class TopOpeBRepTool_IndexedDataMapOfShapeBox(OCC.TCollection.TCollection_BasicM
         """
         return _TopOpeBRepTool.TopOpeBRepTool_IndexedDataMapOfShapeBox_Set(self, *args)
 
-    def ReSize(self, *args) -> "void" :
+    def ReSize(self, *args):
         """
         :param NbBuckets:
-        :type NbBuckets: int
+        :type NbBuckets: Standard_Integer
         :rtype: None
 
         """
         return _TopOpeBRepTool.TopOpeBRepTool_IndexedDataMapOfShapeBox_ReSize(self, *args)
 
-    def Clear(self, *args) -> "void" :
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _TopOpeBRepTool.TopOpeBRepTool_IndexedDataMapOfShapeBox_Clear(self, *args)
+        return _TopOpeBRepTool.TopOpeBRepTool_IndexedDataMapOfShapeBox_Clear(self)
 
-    def Add(self, *args) -> "Standard_Integer" :
+    def Add(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -3080,10 +3248,10 @@ class TopOpeBRepTool_IndexedDataMapOfShapeBox(OCC.TCollection.TCollection_BasicM
         """
         return _TopOpeBRepTool.TopOpeBRepTool_IndexedDataMapOfShapeBox_Add(self, *args)
 
-    def Substitute(self, *args) -> "void" :
+    def Substitute(self, *args):
         """
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :param K:
         :type K: TopoDS_Shape &
         :param T:
@@ -3093,14 +3261,14 @@ class TopOpeBRepTool_IndexedDataMapOfShapeBox(OCC.TCollection.TCollection_BasicM
         """
         return _TopOpeBRepTool.TopOpeBRepTool_IndexedDataMapOfShapeBox_Substitute(self, *args)
 
-    def RemoveLast(self, *args) -> "void" :
+    def RemoveLast(self):
         """
         :rtype: None
 
         """
-        return _TopOpeBRepTool.TopOpeBRepTool_IndexedDataMapOfShapeBox_RemoveLast(self, *args)
+        return _TopOpeBRepTool.TopOpeBRepTool_IndexedDataMapOfShapeBox_RemoveLast(self)
 
-    def Contains(self, *args) -> "Standard_Boolean" :
+    def Contains(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -3109,34 +3277,34 @@ class TopOpeBRepTool_IndexedDataMapOfShapeBox(OCC.TCollection.TCollection_BasicM
         """
         return _TopOpeBRepTool.TopOpeBRepTool_IndexedDataMapOfShapeBox_Contains(self, *args)
 
-    def FindKey(self, *args) -> "TopoDS_Shape const" :
+    def FindKey(self, *args):
         """
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :rtype: TopoDS_Shape
 
         """
         return _TopOpeBRepTool.TopOpeBRepTool_IndexedDataMapOfShapeBox_FindKey(self, *args)
 
-    def FindFromIndex(self, *args) -> "Bnd_Box const &" :
+    def FindFromIndex(self, *args):
         """
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :rtype: Bnd_Box
 
         """
         return _TopOpeBRepTool.TopOpeBRepTool_IndexedDataMapOfShapeBox_FindFromIndex(self, *args)
 
-    def ChangeFromIndex(self, *args) -> "Bnd_Box &" :
+    def ChangeFromIndex(self, *args):
         """
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :rtype: Bnd_Box
 
         """
         return _TopOpeBRepTool.TopOpeBRepTool_IndexedDataMapOfShapeBox_ChangeFromIndex(self, *args)
 
-    def FindIndex(self, *args) -> "Standard_Integer" :
+    def FindIndex(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -3145,7 +3313,7 @@ class TopOpeBRepTool_IndexedDataMapOfShapeBox(OCC.TCollection.TCollection_BasicM
         """
         return _TopOpeBRepTool.TopOpeBRepTool_IndexedDataMapOfShapeBox_FindIndex(self, *args)
 
-    def FindFromKey(self, *args) -> "Bnd_Box const &" :
+    def FindFromKey(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -3154,7 +3322,7 @@ class TopOpeBRepTool_IndexedDataMapOfShapeBox(OCC.TCollection.TCollection_BasicM
         """
         return _TopOpeBRepTool.TopOpeBRepTool_IndexedDataMapOfShapeBox_FindFromKey(self, *args)
 
-    def ChangeFromKey(self, *args) -> "Bnd_Box &" :
+    def ChangeFromKey(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -3163,7 +3331,7 @@ class TopOpeBRepTool_IndexedDataMapOfShapeBox(OCC.TCollection.TCollection_BasicM
         """
         return _TopOpeBRepTool.TopOpeBRepTool_IndexedDataMapOfShapeBox_ChangeFromKey(self, *args)
 
-    def FindFromKey1(self, *args) -> "Standard_Address" :
+    def FindFromKey1(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -3172,7 +3340,7 @@ class TopOpeBRepTool_IndexedDataMapOfShapeBox(OCC.TCollection.TCollection_BasicM
         """
         return _TopOpeBRepTool.TopOpeBRepTool_IndexedDataMapOfShapeBox_FindFromKey1(self, *args)
 
-    def ChangeFromKey1(self, *args) -> "Standard_Address" :
+    def ChangeFromKey1(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -3181,7 +3349,7 @@ class TopOpeBRepTool_IndexedDataMapOfShapeBox(OCC.TCollection.TCollection_BasicM
         """
         return _TopOpeBRepTool.TopOpeBRepTool_IndexedDataMapOfShapeBox_ChangeFromKey1(self, *args)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(TopOpeBRepTool_IndexedDataMapOfShapeBox self)"""
         return _TopOpeBRepTool.TopOpeBRepTool_IndexedDataMapOfShapeBox__kill_pointed(self)
 
@@ -3216,15 +3384,19 @@ TopOpeBRepTool_IndexedDataMapOfShapeBox_swigregister(TopOpeBRepTool_IndexedDataM
 class TopOpeBRepTool_IndexedDataMapOfShapeBox2d(OCC.TCollection.TCollection_BasicMap):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self, NbBuckets=1): 
         """
         :param NbBuckets: default value is 1
-        :type NbBuckets: int
+        :type NbBuckets: Standard_Integer
+        :rtype: None
+
+        :param NbBuckets: default value is 1
+        :type NbBuckets: Standard_Integer
         :rtype: None
 
         """
-        _TopOpeBRepTool.TopOpeBRepTool_IndexedDataMapOfShapeBox2d_swiginit(self,_TopOpeBRepTool.new_TopOpeBRepTool_IndexedDataMapOfShapeBox2d(*args))
-    def Assign(self, *args) -> "TopOpeBRepTool_IndexedDataMapOfShapeBox2d &" :
+        _TopOpeBRepTool.TopOpeBRepTool_IndexedDataMapOfShapeBox2d_swiginit(self,_TopOpeBRepTool.new_TopOpeBRepTool_IndexedDataMapOfShapeBox2d(NbBuckets))
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: TopOpeBRepTool_IndexedDataMapOfShapeBox2d &
@@ -3233,7 +3405,7 @@ class TopOpeBRepTool_IndexedDataMapOfShapeBox2d(OCC.TCollection.TCollection_Basi
         """
         return _TopOpeBRepTool.TopOpeBRepTool_IndexedDataMapOfShapeBox2d_Assign(self, *args)
 
-    def Set(self, *args) -> "TopOpeBRepTool_IndexedDataMapOfShapeBox2d &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: TopOpeBRepTool_IndexedDataMapOfShapeBox2d &
@@ -3242,23 +3414,23 @@ class TopOpeBRepTool_IndexedDataMapOfShapeBox2d(OCC.TCollection.TCollection_Basi
         """
         return _TopOpeBRepTool.TopOpeBRepTool_IndexedDataMapOfShapeBox2d_Set(self, *args)
 
-    def ReSize(self, *args) -> "void" :
+    def ReSize(self, *args):
         """
         :param NbBuckets:
-        :type NbBuckets: int
+        :type NbBuckets: Standard_Integer
         :rtype: None
 
         """
         return _TopOpeBRepTool.TopOpeBRepTool_IndexedDataMapOfShapeBox2d_ReSize(self, *args)
 
-    def Clear(self, *args) -> "void" :
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _TopOpeBRepTool.TopOpeBRepTool_IndexedDataMapOfShapeBox2d_Clear(self, *args)
+        return _TopOpeBRepTool.TopOpeBRepTool_IndexedDataMapOfShapeBox2d_Clear(self)
 
-    def Add(self, *args) -> "Standard_Integer" :
+    def Add(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -3269,10 +3441,10 @@ class TopOpeBRepTool_IndexedDataMapOfShapeBox2d(OCC.TCollection.TCollection_Basi
         """
         return _TopOpeBRepTool.TopOpeBRepTool_IndexedDataMapOfShapeBox2d_Add(self, *args)
 
-    def Substitute(self, *args) -> "void" :
+    def Substitute(self, *args):
         """
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :param K:
         :type K: TopoDS_Shape &
         :param T:
@@ -3282,14 +3454,14 @@ class TopOpeBRepTool_IndexedDataMapOfShapeBox2d(OCC.TCollection.TCollection_Basi
         """
         return _TopOpeBRepTool.TopOpeBRepTool_IndexedDataMapOfShapeBox2d_Substitute(self, *args)
 
-    def RemoveLast(self, *args) -> "void" :
+    def RemoveLast(self):
         """
         :rtype: None
 
         """
-        return _TopOpeBRepTool.TopOpeBRepTool_IndexedDataMapOfShapeBox2d_RemoveLast(self, *args)
+        return _TopOpeBRepTool.TopOpeBRepTool_IndexedDataMapOfShapeBox2d_RemoveLast(self)
 
-    def Contains(self, *args) -> "Standard_Boolean" :
+    def Contains(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -3298,34 +3470,34 @@ class TopOpeBRepTool_IndexedDataMapOfShapeBox2d(OCC.TCollection.TCollection_Basi
         """
         return _TopOpeBRepTool.TopOpeBRepTool_IndexedDataMapOfShapeBox2d_Contains(self, *args)
 
-    def FindKey(self, *args) -> "TopoDS_Shape const" :
+    def FindKey(self, *args):
         """
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :rtype: TopoDS_Shape
 
         """
         return _TopOpeBRepTool.TopOpeBRepTool_IndexedDataMapOfShapeBox2d_FindKey(self, *args)
 
-    def FindFromIndex(self, *args) -> "Bnd_Box2d const &" :
+    def FindFromIndex(self, *args):
         """
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :rtype: Bnd_Box2d
 
         """
         return _TopOpeBRepTool.TopOpeBRepTool_IndexedDataMapOfShapeBox2d_FindFromIndex(self, *args)
 
-    def ChangeFromIndex(self, *args) -> "Bnd_Box2d &" :
+    def ChangeFromIndex(self, *args):
         """
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :rtype: Bnd_Box2d
 
         """
         return _TopOpeBRepTool.TopOpeBRepTool_IndexedDataMapOfShapeBox2d_ChangeFromIndex(self, *args)
 
-    def FindIndex(self, *args) -> "Standard_Integer" :
+    def FindIndex(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -3334,7 +3506,7 @@ class TopOpeBRepTool_IndexedDataMapOfShapeBox2d(OCC.TCollection.TCollection_Basi
         """
         return _TopOpeBRepTool.TopOpeBRepTool_IndexedDataMapOfShapeBox2d_FindIndex(self, *args)
 
-    def FindFromKey(self, *args) -> "Bnd_Box2d const &" :
+    def FindFromKey(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -3343,7 +3515,7 @@ class TopOpeBRepTool_IndexedDataMapOfShapeBox2d(OCC.TCollection.TCollection_Basi
         """
         return _TopOpeBRepTool.TopOpeBRepTool_IndexedDataMapOfShapeBox2d_FindFromKey(self, *args)
 
-    def ChangeFromKey(self, *args) -> "Bnd_Box2d &" :
+    def ChangeFromKey(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -3352,7 +3524,7 @@ class TopOpeBRepTool_IndexedDataMapOfShapeBox2d(OCC.TCollection.TCollection_Basi
         """
         return _TopOpeBRepTool.TopOpeBRepTool_IndexedDataMapOfShapeBox2d_ChangeFromKey(self, *args)
 
-    def FindFromKey1(self, *args) -> "Standard_Address" :
+    def FindFromKey1(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -3361,7 +3533,7 @@ class TopOpeBRepTool_IndexedDataMapOfShapeBox2d(OCC.TCollection.TCollection_Basi
         """
         return _TopOpeBRepTool.TopOpeBRepTool_IndexedDataMapOfShapeBox2d_FindFromKey1(self, *args)
 
-    def ChangeFromKey1(self, *args) -> "Standard_Address" :
+    def ChangeFromKey1(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -3370,7 +3542,7 @@ class TopOpeBRepTool_IndexedDataMapOfShapeBox2d(OCC.TCollection.TCollection_Basi
         """
         return _TopOpeBRepTool.TopOpeBRepTool_IndexedDataMapOfShapeBox2d_ChangeFromKey1(self, *args)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(TopOpeBRepTool_IndexedDataMapOfShapeBox2d self)"""
         return _TopOpeBRepTool.TopOpeBRepTool_IndexedDataMapOfShapeBox2d__kill_pointed(self)
 
@@ -3405,15 +3577,19 @@ TopOpeBRepTool_IndexedDataMapOfShapeBox2d_swigregister(TopOpeBRepTool_IndexedDat
 class TopOpeBRepTool_IndexedDataMapOfShapeconnexity(OCC.TCollection.TCollection_BasicMap):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self, NbBuckets=1): 
         """
         :param NbBuckets: default value is 1
-        :type NbBuckets: int
+        :type NbBuckets: Standard_Integer
+        :rtype: None
+
+        :param NbBuckets: default value is 1
+        :type NbBuckets: Standard_Integer
         :rtype: None
 
         """
-        _TopOpeBRepTool.TopOpeBRepTool_IndexedDataMapOfShapeconnexity_swiginit(self,_TopOpeBRepTool.new_TopOpeBRepTool_IndexedDataMapOfShapeconnexity(*args))
-    def Assign(self, *args) -> "TopOpeBRepTool_IndexedDataMapOfShapeconnexity &" :
+        _TopOpeBRepTool.TopOpeBRepTool_IndexedDataMapOfShapeconnexity_swiginit(self,_TopOpeBRepTool.new_TopOpeBRepTool_IndexedDataMapOfShapeconnexity(NbBuckets))
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: TopOpeBRepTool_IndexedDataMapOfShapeconnexity &
@@ -3422,7 +3598,7 @@ class TopOpeBRepTool_IndexedDataMapOfShapeconnexity(OCC.TCollection.TCollection_
         """
         return _TopOpeBRepTool.TopOpeBRepTool_IndexedDataMapOfShapeconnexity_Assign(self, *args)
 
-    def Set(self, *args) -> "TopOpeBRepTool_IndexedDataMapOfShapeconnexity &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: TopOpeBRepTool_IndexedDataMapOfShapeconnexity &
@@ -3431,23 +3607,23 @@ class TopOpeBRepTool_IndexedDataMapOfShapeconnexity(OCC.TCollection.TCollection_
         """
         return _TopOpeBRepTool.TopOpeBRepTool_IndexedDataMapOfShapeconnexity_Set(self, *args)
 
-    def ReSize(self, *args) -> "void" :
+    def ReSize(self, *args):
         """
         :param NbBuckets:
-        :type NbBuckets: int
+        :type NbBuckets: Standard_Integer
         :rtype: None
 
         """
         return _TopOpeBRepTool.TopOpeBRepTool_IndexedDataMapOfShapeconnexity_ReSize(self, *args)
 
-    def Clear(self, *args) -> "void" :
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _TopOpeBRepTool.TopOpeBRepTool_IndexedDataMapOfShapeconnexity_Clear(self, *args)
+        return _TopOpeBRepTool.TopOpeBRepTool_IndexedDataMapOfShapeconnexity_Clear(self)
 
-    def Add(self, *args) -> "Standard_Integer" :
+    def Add(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -3458,10 +3634,10 @@ class TopOpeBRepTool_IndexedDataMapOfShapeconnexity(OCC.TCollection.TCollection_
         """
         return _TopOpeBRepTool.TopOpeBRepTool_IndexedDataMapOfShapeconnexity_Add(self, *args)
 
-    def Substitute(self, *args) -> "void" :
+    def Substitute(self, *args):
         """
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :param K:
         :type K: TopoDS_Shape &
         :param T:
@@ -3471,14 +3647,14 @@ class TopOpeBRepTool_IndexedDataMapOfShapeconnexity(OCC.TCollection.TCollection_
         """
         return _TopOpeBRepTool.TopOpeBRepTool_IndexedDataMapOfShapeconnexity_Substitute(self, *args)
 
-    def RemoveLast(self, *args) -> "void" :
+    def RemoveLast(self):
         """
         :rtype: None
 
         """
-        return _TopOpeBRepTool.TopOpeBRepTool_IndexedDataMapOfShapeconnexity_RemoveLast(self, *args)
+        return _TopOpeBRepTool.TopOpeBRepTool_IndexedDataMapOfShapeconnexity_RemoveLast(self)
 
-    def Contains(self, *args) -> "Standard_Boolean" :
+    def Contains(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -3487,34 +3663,34 @@ class TopOpeBRepTool_IndexedDataMapOfShapeconnexity(OCC.TCollection.TCollection_
         """
         return _TopOpeBRepTool.TopOpeBRepTool_IndexedDataMapOfShapeconnexity_Contains(self, *args)
 
-    def FindKey(self, *args) -> "TopoDS_Shape const" :
+    def FindKey(self, *args):
         """
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :rtype: TopoDS_Shape
 
         """
         return _TopOpeBRepTool.TopOpeBRepTool_IndexedDataMapOfShapeconnexity_FindKey(self, *args)
 
-    def FindFromIndex(self, *args) -> "TopOpeBRepTool_connexity const &" :
+    def FindFromIndex(self, *args):
         """
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :rtype: TopOpeBRepTool_connexity
 
         """
         return _TopOpeBRepTool.TopOpeBRepTool_IndexedDataMapOfShapeconnexity_FindFromIndex(self, *args)
 
-    def ChangeFromIndex(self, *args) -> "TopOpeBRepTool_connexity &" :
+    def ChangeFromIndex(self, *args):
         """
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :rtype: TopOpeBRepTool_connexity
 
         """
         return _TopOpeBRepTool.TopOpeBRepTool_IndexedDataMapOfShapeconnexity_ChangeFromIndex(self, *args)
 
-    def FindIndex(self, *args) -> "Standard_Integer" :
+    def FindIndex(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -3523,7 +3699,7 @@ class TopOpeBRepTool_IndexedDataMapOfShapeconnexity(OCC.TCollection.TCollection_
         """
         return _TopOpeBRepTool.TopOpeBRepTool_IndexedDataMapOfShapeconnexity_FindIndex(self, *args)
 
-    def FindFromKey(self, *args) -> "TopOpeBRepTool_connexity const &" :
+    def FindFromKey(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -3532,7 +3708,7 @@ class TopOpeBRepTool_IndexedDataMapOfShapeconnexity(OCC.TCollection.TCollection_
         """
         return _TopOpeBRepTool.TopOpeBRepTool_IndexedDataMapOfShapeconnexity_FindFromKey(self, *args)
 
-    def ChangeFromKey(self, *args) -> "TopOpeBRepTool_connexity &" :
+    def ChangeFromKey(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -3541,7 +3717,7 @@ class TopOpeBRepTool_IndexedDataMapOfShapeconnexity(OCC.TCollection.TCollection_
         """
         return _TopOpeBRepTool.TopOpeBRepTool_IndexedDataMapOfShapeconnexity_ChangeFromKey(self, *args)
 
-    def FindFromKey1(self, *args) -> "Standard_Address" :
+    def FindFromKey1(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -3550,7 +3726,7 @@ class TopOpeBRepTool_IndexedDataMapOfShapeconnexity(OCC.TCollection.TCollection_
         """
         return _TopOpeBRepTool.TopOpeBRepTool_IndexedDataMapOfShapeconnexity_FindFromKey1(self, *args)
 
-    def ChangeFromKey1(self, *args) -> "Standard_Address" :
+    def ChangeFromKey1(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -3559,7 +3735,7 @@ class TopOpeBRepTool_IndexedDataMapOfShapeconnexity(OCC.TCollection.TCollection_
         """
         return _TopOpeBRepTool.TopOpeBRepTool_IndexedDataMapOfShapeconnexity_ChangeFromKey1(self, *args)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(TopOpeBRepTool_IndexedDataMapOfShapeconnexity self)"""
         return _TopOpeBRepTool.TopOpeBRepTool_IndexedDataMapOfShapeconnexity__kill_pointed(self)
 
@@ -3594,15 +3770,19 @@ TopOpeBRepTool_IndexedDataMapOfShapeconnexity_swigregister(TopOpeBRepTool_Indexe
 class TopOpeBRepTool_IndexedDataMapOfSolidClassifier(OCC.TCollection.TCollection_BasicMap):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self, NbBuckets=1): 
         """
         :param NbBuckets: default value is 1
-        :type NbBuckets: int
+        :type NbBuckets: Standard_Integer
+        :rtype: None
+
+        :param NbBuckets: default value is 1
+        :type NbBuckets: Standard_Integer
         :rtype: None
 
         """
-        _TopOpeBRepTool.TopOpeBRepTool_IndexedDataMapOfSolidClassifier_swiginit(self,_TopOpeBRepTool.new_TopOpeBRepTool_IndexedDataMapOfSolidClassifier(*args))
-    def Assign(self, *args) -> "TopOpeBRepTool_IndexedDataMapOfSolidClassifier &" :
+        _TopOpeBRepTool.TopOpeBRepTool_IndexedDataMapOfSolidClassifier_swiginit(self,_TopOpeBRepTool.new_TopOpeBRepTool_IndexedDataMapOfSolidClassifier(NbBuckets))
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: TopOpeBRepTool_IndexedDataMapOfSolidClassifier &
@@ -3611,7 +3791,7 @@ class TopOpeBRepTool_IndexedDataMapOfSolidClassifier(OCC.TCollection.TCollection
         """
         return _TopOpeBRepTool.TopOpeBRepTool_IndexedDataMapOfSolidClassifier_Assign(self, *args)
 
-    def Set(self, *args) -> "TopOpeBRepTool_IndexedDataMapOfSolidClassifier &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: TopOpeBRepTool_IndexedDataMapOfSolidClassifier &
@@ -3620,23 +3800,23 @@ class TopOpeBRepTool_IndexedDataMapOfSolidClassifier(OCC.TCollection.TCollection
         """
         return _TopOpeBRepTool.TopOpeBRepTool_IndexedDataMapOfSolidClassifier_Set(self, *args)
 
-    def ReSize(self, *args) -> "void" :
+    def ReSize(self, *args):
         """
         :param NbBuckets:
-        :type NbBuckets: int
+        :type NbBuckets: Standard_Integer
         :rtype: None
 
         """
         return _TopOpeBRepTool.TopOpeBRepTool_IndexedDataMapOfSolidClassifier_ReSize(self, *args)
 
-    def Clear(self, *args) -> "void" :
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _TopOpeBRepTool.TopOpeBRepTool_IndexedDataMapOfSolidClassifier_Clear(self, *args)
+        return _TopOpeBRepTool.TopOpeBRepTool_IndexedDataMapOfSolidClassifier_Clear(self)
 
-    def Add(self, *args) -> "Standard_Integer" :
+    def Add(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -3647,10 +3827,10 @@ class TopOpeBRepTool_IndexedDataMapOfSolidClassifier(OCC.TCollection.TCollection
         """
         return _TopOpeBRepTool.TopOpeBRepTool_IndexedDataMapOfSolidClassifier_Add(self, *args)
 
-    def Substitute(self, *args) -> "void" :
+    def Substitute(self, *args):
         """
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :param K:
         :type K: TopoDS_Shape &
         :param T:
@@ -3660,14 +3840,14 @@ class TopOpeBRepTool_IndexedDataMapOfSolidClassifier(OCC.TCollection.TCollection
         """
         return _TopOpeBRepTool.TopOpeBRepTool_IndexedDataMapOfSolidClassifier_Substitute(self, *args)
 
-    def RemoveLast(self, *args) -> "void" :
+    def RemoveLast(self):
         """
         :rtype: None
 
         """
-        return _TopOpeBRepTool.TopOpeBRepTool_IndexedDataMapOfSolidClassifier_RemoveLast(self, *args)
+        return _TopOpeBRepTool.TopOpeBRepTool_IndexedDataMapOfSolidClassifier_RemoveLast(self)
 
-    def Contains(self, *args) -> "Standard_Boolean" :
+    def Contains(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -3676,34 +3856,34 @@ class TopOpeBRepTool_IndexedDataMapOfSolidClassifier(OCC.TCollection.TCollection
         """
         return _TopOpeBRepTool.TopOpeBRepTool_IndexedDataMapOfSolidClassifier_Contains(self, *args)
 
-    def FindKey(self, *args) -> "TopoDS_Shape const" :
+    def FindKey(self, *args):
         """
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :rtype: TopoDS_Shape
 
         """
         return _TopOpeBRepTool.TopOpeBRepTool_IndexedDataMapOfSolidClassifier_FindKey(self, *args)
 
-    def FindFromIndex(self, *args) -> "BRepClass3d_SolidClassifier const &" :
+    def FindFromIndex(self, *args):
         """
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :rtype: BRepClass3d_SolidClassifier
 
         """
         return _TopOpeBRepTool.TopOpeBRepTool_IndexedDataMapOfSolidClassifier_FindFromIndex(self, *args)
 
-    def ChangeFromIndex(self, *args) -> "BRepClass3d_SolidClassifier &" :
+    def ChangeFromIndex(self, *args):
         """
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :rtype: BRepClass3d_SolidClassifier
 
         """
         return _TopOpeBRepTool.TopOpeBRepTool_IndexedDataMapOfSolidClassifier_ChangeFromIndex(self, *args)
 
-    def FindIndex(self, *args) -> "Standard_Integer" :
+    def FindIndex(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -3712,7 +3892,7 @@ class TopOpeBRepTool_IndexedDataMapOfSolidClassifier(OCC.TCollection.TCollection
         """
         return _TopOpeBRepTool.TopOpeBRepTool_IndexedDataMapOfSolidClassifier_FindIndex(self, *args)
 
-    def FindFromKey(self, *args) -> "BRepClass3d_SolidClassifier const &" :
+    def FindFromKey(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -3721,7 +3901,7 @@ class TopOpeBRepTool_IndexedDataMapOfSolidClassifier(OCC.TCollection.TCollection
         """
         return _TopOpeBRepTool.TopOpeBRepTool_IndexedDataMapOfSolidClassifier_FindFromKey(self, *args)
 
-    def ChangeFromKey(self, *args) -> "BRepClass3d_SolidClassifier &" :
+    def ChangeFromKey(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -3730,7 +3910,7 @@ class TopOpeBRepTool_IndexedDataMapOfSolidClassifier(OCC.TCollection.TCollection
         """
         return _TopOpeBRepTool.TopOpeBRepTool_IndexedDataMapOfSolidClassifier_ChangeFromKey(self, *args)
 
-    def FindFromKey1(self, *args) -> "Standard_Address" :
+    def FindFromKey1(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -3739,7 +3919,7 @@ class TopOpeBRepTool_IndexedDataMapOfSolidClassifier(OCC.TCollection.TCollection
         """
         return _TopOpeBRepTool.TopOpeBRepTool_IndexedDataMapOfSolidClassifier_FindFromKey1(self, *args)
 
-    def ChangeFromKey1(self, *args) -> "Standard_Address" :
+    def ChangeFromKey1(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -3748,7 +3928,7 @@ class TopOpeBRepTool_IndexedDataMapOfSolidClassifier(OCC.TCollection.TCollection
         """
         return _TopOpeBRepTool.TopOpeBRepTool_IndexedDataMapOfSolidClassifier_ChangeFromKey1(self, *args)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(TopOpeBRepTool_IndexedDataMapOfSolidClassifier self)"""
         return _TopOpeBRepTool.TopOpeBRepTool_IndexedDataMapOfSolidClassifier__kill_pointed(self)
 
@@ -3793,7 +3973,7 @@ class TopOpeBRepTool_ListIteratorOfListOfC2DF(object):
 
         """
         _TopOpeBRepTool.TopOpeBRepTool_ListIteratorOfListOfC2DF_swiginit(self,_TopOpeBRepTool.new_TopOpeBRepTool_ListIteratorOfListOfC2DF(*args))
-    def Initialize(self, *args) -> "void" :
+    def Initialize(self, *args):
         """
         :param L:
         :type L: TopOpeBRepTool_ListOfC2DF &
@@ -3802,26 +3982,26 @@ class TopOpeBRepTool_ListIteratorOfListOfC2DF(object):
         """
         return _TopOpeBRepTool.TopOpeBRepTool_ListIteratorOfListOfC2DF_Initialize(self, *args)
 
-    def More(self, *args) -> "Standard_Boolean" :
+    def More(self):
         """
         :rtype: bool
 
         """
-        return _TopOpeBRepTool.TopOpeBRepTool_ListIteratorOfListOfC2DF_More(self, *args)
+        return _TopOpeBRepTool.TopOpeBRepTool_ListIteratorOfListOfC2DF_More(self)
 
-    def Next(self, *args) -> "void" :
+    def Next(self):
         """
         :rtype: None
 
         """
-        return _TopOpeBRepTool.TopOpeBRepTool_ListIteratorOfListOfC2DF_Next(self, *args)
+        return _TopOpeBRepTool.TopOpeBRepTool_ListIteratorOfListOfC2DF_Next(self)
 
-    def Value(self, *args) -> "TopOpeBRepTool_C2DF &" :
+    def Value(self):
         """
         :rtype: TopOpeBRepTool_C2DF
 
         """
-        return _TopOpeBRepTool.TopOpeBRepTool_ListIteratorOfListOfC2DF_Value(self, *args)
+        return _TopOpeBRepTool.TopOpeBRepTool_ListIteratorOfListOfC2DF_Value(self)
 
     def __del__(self):
     	try:
@@ -3852,18 +4032,18 @@ class TopOpeBRepTool_ListNodeOfListOfC2DF(OCC.TCollection.TCollection_MapNode):
 
         """
         _TopOpeBRepTool.TopOpeBRepTool_ListNodeOfListOfC2DF_swiginit(self,_TopOpeBRepTool.new_TopOpeBRepTool_ListNodeOfListOfC2DF(*args))
-    def Value(self, *args) -> "TopOpeBRepTool_C2DF &" :
+    def Value(self):
         """
         :rtype: TopOpeBRepTool_C2DF
 
         """
-        return _TopOpeBRepTool.TopOpeBRepTool_ListNodeOfListOfC2DF_Value(self, *args)
+        return _TopOpeBRepTool.TopOpeBRepTool_ListNodeOfListOfC2DF_Value(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(TopOpeBRepTool_ListNodeOfListOfC2DF self)"""
         return _TopOpeBRepTool.TopOpeBRepTool_ListNodeOfListOfC2DF__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_TopOpeBRepTool_ListNodeOfListOfC2DF" :
+    def GetHandle(self):
         """GetHandle(TopOpeBRepTool_ListNodeOfListOfC2DF self) -> Handle_TopOpeBRepTool_ListNodeOfListOfC2DF"""
         return _TopOpeBRepTool.TopOpeBRepTool_ListNodeOfListOfC2DF_GetHandle(self)
 
@@ -3902,20 +4082,20 @@ Handle_TopOpeBRepTool_ListNodeOfListOfC2DF._kill_pointed = new_instancemethod(_T
 Handle_TopOpeBRepTool_ListNodeOfListOfC2DF_swigregister = _TopOpeBRepTool.Handle_TopOpeBRepTool_ListNodeOfListOfC2DF_swigregister
 Handle_TopOpeBRepTool_ListNodeOfListOfC2DF_swigregister(Handle_TopOpeBRepTool_ListNodeOfListOfC2DF)
 
-def Handle_TopOpeBRepTool_ListNodeOfListOfC2DF_DownCast(*args) -> "Handle_TopOpeBRepTool_ListNodeOfListOfC2DF const" :
+def Handle_TopOpeBRepTool_ListNodeOfListOfC2DF_DownCast(*args):
   return _TopOpeBRepTool.Handle_TopOpeBRepTool_ListNodeOfListOfC2DF_DownCast(*args)
 Handle_TopOpeBRepTool_ListNodeOfListOfC2DF_DownCast = _TopOpeBRepTool.Handle_TopOpeBRepTool_ListNodeOfListOfC2DF_DownCast
 
 class TopOpeBRepTool_ListOfC2DF(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _TopOpeBRepTool.TopOpeBRepTool_ListOfC2DF_swiginit(self,_TopOpeBRepTool.new_TopOpeBRepTool_ListOfC2DF(*args))
-    def Assign(self, *args) -> "void" :
+        _TopOpeBRepTool.TopOpeBRepTool_ListOfC2DF_swiginit(self,_TopOpeBRepTool.new_TopOpeBRepTool_ListOfC2DF())
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: TopOpeBRepTool_ListOfC2DF &
@@ -3924,7 +4104,7 @@ class TopOpeBRepTool_ListOfC2DF(object):
         """
         return _TopOpeBRepTool.TopOpeBRepTool_ListOfC2DF_Assign(self, *args)
 
-    def Set(self, *args) -> "void" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: TopOpeBRepTool_ListOfC2DF &
@@ -3933,28 +4113,28 @@ class TopOpeBRepTool_ListOfC2DF(object):
         """
         return _TopOpeBRepTool.TopOpeBRepTool_ListOfC2DF_Set(self, *args)
 
-    def Extent(self, *args) -> "Standard_Integer" :
+    def Extent(self):
         """
         :rtype: int
 
         """
-        return _TopOpeBRepTool.TopOpeBRepTool_ListOfC2DF_Extent(self, *args)
+        return _TopOpeBRepTool.TopOpeBRepTool_ListOfC2DF_Extent(self)
 
-    def Clear(self, *args) -> "void" :
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _TopOpeBRepTool.TopOpeBRepTool_ListOfC2DF_Clear(self, *args)
+        return _TopOpeBRepTool.TopOpeBRepTool_ListOfC2DF_Clear(self)
 
-    def IsEmpty(self, *args) -> "Standard_Boolean" :
+    def IsEmpty(self):
         """
         :rtype: bool
 
         """
-        return _TopOpeBRepTool.TopOpeBRepTool_ListOfC2DF_IsEmpty(self, *args)
+        return _TopOpeBRepTool.TopOpeBRepTool_ListOfC2DF_IsEmpty(self)
 
-    def Prepend(self, *args) -> "void" :
+    def Prepend(self, *args):
         """
         :param I:
         :type I: TopOpeBRepTool_C2DF &
@@ -3973,7 +4153,7 @@ class TopOpeBRepTool_ListOfC2DF(object):
         """
         return _TopOpeBRepTool.TopOpeBRepTool_ListOfC2DF_Prepend(self, *args)
 
-    def Append(self, *args) -> "void" :
+    def Append(self, *args):
         """
         :param I:
         :type I: TopOpeBRepTool_C2DF &
@@ -3992,28 +4172,28 @@ class TopOpeBRepTool_ListOfC2DF(object):
         """
         return _TopOpeBRepTool.TopOpeBRepTool_ListOfC2DF_Append(self, *args)
 
-    def First(self, *args) -> "TopOpeBRepTool_C2DF &" :
+    def First(self):
         """
         :rtype: TopOpeBRepTool_C2DF
 
         """
-        return _TopOpeBRepTool.TopOpeBRepTool_ListOfC2DF_First(self, *args)
+        return _TopOpeBRepTool.TopOpeBRepTool_ListOfC2DF_First(self)
 
-    def Last(self, *args) -> "TopOpeBRepTool_C2DF &" :
+    def Last(self):
         """
         :rtype: TopOpeBRepTool_C2DF
 
         """
-        return _TopOpeBRepTool.TopOpeBRepTool_ListOfC2DF_Last(self, *args)
+        return _TopOpeBRepTool.TopOpeBRepTool_ListOfC2DF_Last(self)
 
-    def RemoveFirst(self, *args) -> "void" :
+    def RemoveFirst(self):
         """
         :rtype: None
 
         """
-        return _TopOpeBRepTool.TopOpeBRepTool_ListOfC2DF_RemoveFirst(self, *args)
+        return _TopOpeBRepTool.TopOpeBRepTool_ListOfC2DF_RemoveFirst(self)
 
-    def Remove(self, *args) -> "void" :
+    def Remove(self, *args):
         """
         :param It:
         :type It: TopOpeBRepTool_ListIteratorOfListOfC2DF &
@@ -4022,7 +4202,7 @@ class TopOpeBRepTool_ListOfC2DF(object):
         """
         return _TopOpeBRepTool.TopOpeBRepTool_ListOfC2DF_Remove(self, *args)
 
-    def InsertBefore(self, *args) -> "void" :
+    def InsertBefore(self, *args):
         """
         :param I:
         :type I: TopOpeBRepTool_C2DF &
@@ -4039,7 +4219,7 @@ class TopOpeBRepTool_ListOfC2DF(object):
         """
         return _TopOpeBRepTool.TopOpeBRepTool_ListOfC2DF_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args) -> "void" :
+    def InsertAfter(self, *args):
         """
         :param I:
         :type I: TopOpeBRepTool_C2DF &
@@ -4094,9 +4274,17 @@ class TopOpeBRepTool_PurgeInternalEdges(object):
         :type PerformNow: bool
         :rtype: None
 
+        * Initialize members and begin exploration of shape depending of the value of PerformNow
+
+        :param theShape:
+        :type theShape: TopoDS_Shape &
+        :param PerformNow: default value is Standard_True
+        :type PerformNow: bool
+        :rtype: None
+
         """
         _TopOpeBRepTool.TopOpeBRepTool_PurgeInternalEdges_swiginit(self,_TopOpeBRepTool.new_TopOpeBRepTool_PurgeInternalEdges(*args))
-    def Faces(self, *args) -> "void" :
+    def Faces(self, *args):
         """
         * returns the list internal edges associated with the faces of the myShape. If PerformNow was False when created, then call the private Perform method that do the main job.
 
@@ -4107,41 +4295,41 @@ class TopOpeBRepTool_PurgeInternalEdges(object):
         """
         return _TopOpeBRepTool.TopOpeBRepTool_PurgeInternalEdges_Faces(self, *args)
 
-    def Shape(self, *args) -> "TopoDS_Shape" :
+    def Shape(self):
         """
         * returns myShape modified with the list of internal edges removed from it.
 
         :rtype: TopoDS_Shape
 
         """
-        return _TopOpeBRepTool.TopOpeBRepTool_PurgeInternalEdges_Shape(self, *args)
+        return _TopOpeBRepTool.TopOpeBRepTool_PurgeInternalEdges_Shape(self)
 
-    def NbEdges(self, *args) -> "Standard_Integer const" :
+    def NbEdges(self):
         """
         * returns the number of edges candidate to be removed
 
         :rtype: int
 
         """
-        return _TopOpeBRepTool.TopOpeBRepTool_PurgeInternalEdges_NbEdges(self, *args)
+        return _TopOpeBRepTool.TopOpeBRepTool_PurgeInternalEdges_NbEdges(self)
 
-    def IsDone(self, *args) -> "Standard_Boolean" :
+    def IsDone(self):
         """
         * returns False if the list of internal edges has not been extracted
 
         :rtype: bool
 
         """
-        return _TopOpeBRepTool.TopOpeBRepTool_PurgeInternalEdges_IsDone(self, *args)
+        return _TopOpeBRepTool.TopOpeBRepTool_PurgeInternalEdges_IsDone(self)
 
-    def Perform(self, *args) -> "void" :
+    def Perform(self):
         """
         * Using the list of internal edge from each face, rebuild myShape by removing thoses edges.
 
         :rtype: None
 
         """
-        return _TopOpeBRepTool.TopOpeBRepTool_PurgeInternalEdges_Perform(self, *args)
+        return _TopOpeBRepTool.TopOpeBRepTool_PurgeInternalEdges_Perform(self)
 
     def __del__(self):
     	try:
@@ -4163,13 +4351,13 @@ TopOpeBRepTool_PurgeInternalEdges_swigregister(TopOpeBRepTool_PurgeInternalEdges
 class TopOpeBRepTool_REGUS(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _TopOpeBRepTool.TopOpeBRepTool_REGUS_swiginit(self,_TopOpeBRepTool.new_TopOpeBRepTool_REGUS(*args))
-    def Init(self, *args) -> "void" :
+        _TopOpeBRepTool.TopOpeBRepTool_REGUS_swiginit(self,_TopOpeBRepTool.new_TopOpeBRepTool_REGUS())
+    def Init(self, *args):
         """
         :param S:
         :type S: TopoDS_Shape &
@@ -4178,21 +4366,21 @@ class TopOpeBRepTool_REGUS(object):
         """
         return _TopOpeBRepTool.TopOpeBRepTool_REGUS_Init(self, *args)
 
-    def S(self, *args) -> "TopoDS_Shape const" :
+    def S(self):
         """
         :rtype: TopoDS_Shape
 
         """
-        return _TopOpeBRepTool.TopOpeBRepTool_REGUS_S(self, *args)
+        return _TopOpeBRepTool.TopOpeBRepTool_REGUS_S(self)
 
-    def MapS(self, *args) -> "Standard_Boolean" :
+    def MapS(self):
         """
         :rtype: bool
 
         """
-        return _TopOpeBRepTool.TopOpeBRepTool_REGUS_MapS(self, *args)
+        return _TopOpeBRepTool.TopOpeBRepTool_REGUS_MapS(self)
 
-    def WireToFace(*args) -> "Standard_Boolean" :
+    def WireToFace(*args):
         """
         :param Fanc:
         :type Fanc: TopoDS_Face &
@@ -4206,7 +4394,7 @@ class TopOpeBRepTool_REGUS(object):
         return _TopOpeBRepTool.TopOpeBRepTool_REGUS_WireToFace(*args)
 
     WireToFace = staticmethod(WireToFace)
-    def SplitF(*args) -> "Standard_Boolean" :
+    def SplitF(*args):
         """
         :param Fanc:
         :type Fanc: TopoDS_Face &
@@ -4218,21 +4406,21 @@ class TopOpeBRepTool_REGUS(object):
         return _TopOpeBRepTool.TopOpeBRepTool_REGUS_SplitF(*args)
 
     SplitF = staticmethod(SplitF)
-    def SplitFaces(self, *args) -> "Standard_Boolean" :
+    def SplitFaces(self):
         """
         :rtype: bool
 
         """
-        return _TopOpeBRepTool.TopOpeBRepTool_REGUS_SplitFaces(self, *args)
+        return _TopOpeBRepTool.TopOpeBRepTool_REGUS_SplitFaces(self)
 
-    def REGU(self, *args) -> "Standard_Boolean" :
+    def REGU(self):
         """
         :rtype: bool
 
         """
-        return _TopOpeBRepTool.TopOpeBRepTool_REGUS_REGU(self, *args)
+        return _TopOpeBRepTool.TopOpeBRepTool_REGUS_REGU(self)
 
-    def SetFsplits(self, *args) -> "void" :
+    def SetFsplits(self, *args):
         """
         :param Fsplits:
         :type Fsplits: TopTools_DataMapOfShapeListOfShape &
@@ -4241,7 +4429,7 @@ class TopOpeBRepTool_REGUS(object):
         """
         return _TopOpeBRepTool.TopOpeBRepTool_REGUS_SetFsplits(self, *args)
 
-    def GetFsplits(self, *args) -> "void" :
+    def GetFsplits(self, *args):
         """
         :param Fsplits:
         :type Fsplits: TopTools_DataMapOfShapeListOfShape &
@@ -4250,7 +4438,7 @@ class TopOpeBRepTool_REGUS(object):
         """
         return _TopOpeBRepTool.TopOpeBRepTool_REGUS_GetFsplits(self, *args)
 
-    def SetOshNsh(self, *args) -> "void" :
+    def SetOshNsh(self, *args):
         """
         :param OshNsh:
         :type OshNsh: TopTools_DataMapOfShapeListOfShape &
@@ -4259,7 +4447,7 @@ class TopOpeBRepTool_REGUS(object):
         """
         return _TopOpeBRepTool.TopOpeBRepTool_REGUS_SetOshNsh(self, *args)
 
-    def GetOshNsh(self, *args) -> "void" :
+    def GetOshNsh(self, *args):
         """
         :param OshNsh:
         :type OshNsh: TopTools_DataMapOfShapeListOfShape &
@@ -4268,21 +4456,21 @@ class TopOpeBRepTool_REGUS(object):
         """
         return _TopOpeBRepTool.TopOpeBRepTool_REGUS_GetOshNsh(self, *args)
 
-    def InitBlock(self, *args) -> "Standard_Boolean" :
+    def InitBlock(self):
         """
         :rtype: bool
 
         """
-        return _TopOpeBRepTool.TopOpeBRepTool_REGUS_InitBlock(self, *args)
+        return _TopOpeBRepTool.TopOpeBRepTool_REGUS_InitBlock(self)
 
-    def NextinBlock(self, *args) -> "Standard_Boolean" :
+    def NextinBlock(self):
         """
         :rtype: bool
 
         """
-        return _TopOpeBRepTool.TopOpeBRepTool_REGUS_NextinBlock(self, *args)
+        return _TopOpeBRepTool.TopOpeBRepTool_REGUS_NextinBlock(self)
 
-    def NearestF(self, *args) -> "Standard_Boolean" :
+    def NearestF(self, *args):
         """
         :param e:
         :type e: TopoDS_Edge &
@@ -4319,7 +4507,7 @@ TopOpeBRepTool_REGUS._kill_pointed = new_instancemethod(_TopOpeBRepTool.TopOpeBR
 TopOpeBRepTool_REGUS_swigregister = _TopOpeBRepTool.TopOpeBRepTool_REGUS_swigregister
 TopOpeBRepTool_REGUS_swigregister(TopOpeBRepTool_REGUS)
 
-def TopOpeBRepTool_REGUS_WireToFace(*args) -> "Standard_Boolean" :
+def TopOpeBRepTool_REGUS_WireToFace(*args):
   """
     :param Fanc:
     :type Fanc: TopoDS_Face &
@@ -4332,7 +4520,7 @@ def TopOpeBRepTool_REGUS_WireToFace(*args) -> "Standard_Boolean" :
     """
   return _TopOpeBRepTool.TopOpeBRepTool_REGUS_WireToFace(*args)
 
-def TopOpeBRepTool_REGUS_SplitF(*args) -> "Standard_Boolean" :
+def TopOpeBRepTool_REGUS_SplitF(*args):
   """
     :param Fanc:
     :type Fanc: TopoDS_Face &
@@ -4354,14 +4542,14 @@ class TopOpeBRepTool_REGUW(object):
 
         """
         _TopOpeBRepTool.TopOpeBRepTool_REGUW_swiginit(self,_TopOpeBRepTool.new_TopOpeBRepTool_REGUW(*args))
-    def Fref(self, *args) -> "TopoDS_Face const" :
+    def Fref(self):
         """
         :rtype: TopoDS_Face
 
         """
-        return _TopOpeBRepTool.TopOpeBRepTool_REGUW_Fref(self, *args)
+        return _TopOpeBRepTool.TopOpeBRepTool_REGUW_Fref(self)
 
-    def SetEsplits(self, *args) -> "void" :
+    def SetEsplits(self, *args):
         """
         :param Esplits:
         :type Esplits: TopTools_DataMapOfShapeListOfShape &
@@ -4370,7 +4558,7 @@ class TopOpeBRepTool_REGUW(object):
         """
         return _TopOpeBRepTool.TopOpeBRepTool_REGUW_SetEsplits(self, *args)
 
-    def GetEsplits(self, *args) -> "void" :
+    def GetEsplits(self, *args):
         """
         :param Esplits:
         :type Esplits: TopTools_DataMapOfShapeListOfShape &
@@ -4379,7 +4567,7 @@ class TopOpeBRepTool_REGUW(object):
         """
         return _TopOpeBRepTool.TopOpeBRepTool_REGUW_GetEsplits(self, *args)
 
-    def SetOwNw(self, *args) -> "void" :
+    def SetOwNw(self, *args):
         """
         :param OwNw:
         :type OwNw: TopTools_DataMapOfShapeListOfShape &
@@ -4388,7 +4576,7 @@ class TopOpeBRepTool_REGUW(object):
         """
         return _TopOpeBRepTool.TopOpeBRepTool_REGUW_SetOwNw(self, *args)
 
-    def GetOwNw(self, *args) -> "void" :
+    def GetOwNw(self, *args):
         """
         :param OwNw:
         :type OwNw: TopTools_DataMapOfShapeListOfShape &
@@ -4397,14 +4585,14 @@ class TopOpeBRepTool_REGUW(object):
         """
         return _TopOpeBRepTool.TopOpeBRepTool_REGUW_GetOwNw(self, *args)
 
-    def SplitEds(self, *args) -> "Standard_Boolean" :
+    def SplitEds(self):
         """
         :rtype: bool
 
         """
-        return _TopOpeBRepTool.TopOpeBRepTool_REGUW_SplitEds(self, *args)
+        return _TopOpeBRepTool.TopOpeBRepTool_REGUW_SplitEds(self)
 
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
         :param S:
         :type S: TopoDS_Shape &
@@ -4413,31 +4601,31 @@ class TopOpeBRepTool_REGUW(object):
         """
         return _TopOpeBRepTool.TopOpeBRepTool_REGUW_Init(self, *args)
 
-    def S(self, *args) -> "TopoDS_Shape const" :
+    def S(self):
         """
         :rtype: TopoDS_Shape
 
         """
-        return _TopOpeBRepTool.TopOpeBRepTool_REGUW_S(self, *args)
+        return _TopOpeBRepTool.TopOpeBRepTool_REGUW_S(self)
 
-    def HasInit(self, *args) -> "Standard_Boolean" :
+    def HasInit(self):
         """
         :rtype: bool
 
         """
-        return _TopOpeBRepTool.TopOpeBRepTool_REGUW_HasInit(self, *args)
+        return _TopOpeBRepTool.TopOpeBRepTool_REGUW_HasInit(self)
 
-    def MapS(self, *args) -> "Standard_Boolean" :
+    def MapS(self):
         """
         :rtype: bool
 
         """
-        return _TopOpeBRepTool.TopOpeBRepTool_REGUW_MapS(self, *args)
+        return _TopOpeBRepTool.TopOpeBRepTool_REGUW_MapS(self)
 
-    def REGU(self, *args) -> "Standard_Boolean" :
+    def REGU(self, *args):
         """
         :param istep:
-        :type istep: int
+        :type istep: Standard_Integer
         :param Scur:
         :type Scur: TopoDS_Shape &
         :param Splits:
@@ -4449,7 +4637,7 @@ class TopOpeBRepTool_REGUW(object):
         """
         return _TopOpeBRepTool.TopOpeBRepTool_REGUW_REGU(self, *args)
 
-    def GetSplits(self, *args) -> "Standard_Boolean" :
+    def GetSplits(self, *args):
         """
         :param Splits:
         :type Splits: TopTools_ListOfShape &
@@ -4458,21 +4646,21 @@ class TopOpeBRepTool_REGUW(object):
         """
         return _TopOpeBRepTool.TopOpeBRepTool_REGUW_GetSplits(self, *args)
 
-    def InitBlock(self, *args) -> "Standard_Boolean" :
+    def InitBlock(self):
         """
         :rtype: bool
 
         """
-        return _TopOpeBRepTool.TopOpeBRepTool_REGUW_InitBlock(self, *args)
+        return _TopOpeBRepTool.TopOpeBRepTool_REGUW_InitBlock(self)
 
-    def NextinBlock(self, *args) -> "Standard_Boolean" :
+    def NextinBlock(self):
         """
         :rtype: bool
 
         """
-        return _TopOpeBRepTool.TopOpeBRepTool_REGUW_NextinBlock(self, *args)
+        return _TopOpeBRepTool.TopOpeBRepTool_REGUW_NextinBlock(self)
 
-    def NearestE(self, *args) -> "Standard_Boolean" :
+    def NearestE(self, *args):
         """
         :param loe:
         :type loe: TopTools_ListOfShape &
@@ -4483,7 +4671,7 @@ class TopOpeBRepTool_REGUW(object):
         """
         return _TopOpeBRepTool.TopOpeBRepTool_REGUW_NearestE(self, *args)
 
-    def Connexity(self, *args) -> "Standard_Boolean" :
+    def Connexity(self, *args):
         """
         :param v:
         :type v: TopoDS_Vertex &
@@ -4494,12 +4682,12 @@ class TopOpeBRepTool_REGUW(object):
         """
         return _TopOpeBRepTool.TopOpeBRepTool_REGUW_Connexity(self, *args)
 
-    def AddNewConnexity(self, *args) -> "Standard_Boolean" :
+    def AddNewConnexity(self, *args):
         """
         :param v:
         :type v: TopoDS_Vertex &
         :param OriKey:
-        :type OriKey: int
+        :type OriKey: Standard_Integer
         :param e:
         :type e: TopoDS_Edge &
         :rtype: bool
@@ -4507,12 +4695,12 @@ class TopOpeBRepTool_REGUW(object):
         """
         return _TopOpeBRepTool.TopOpeBRepTool_REGUW_AddNewConnexity(self, *args)
 
-    def RemoveOldConnexity(self, *args) -> "Standard_Boolean" :
+    def RemoveOldConnexity(self, *args):
         """
         :param v:
         :type v: TopoDS_Vertex &
         :param OriKey:
-        :type OriKey: int
+        :type OriKey: Standard_Integer
         :param e:
         :type e: TopoDS_Edge &
         :rtype: bool
@@ -4520,7 +4708,7 @@ class TopOpeBRepTool_REGUW(object):
         """
         return _TopOpeBRepTool.TopOpeBRepTool_REGUW_RemoveOldConnexity(self, *args)
 
-    def UpdateMultiple(self, *args) -> "Standard_Boolean" :
+    def UpdateMultiple(self, *args):
         """
         :param v:
         :type v: TopoDS_Vertex &
@@ -4575,25 +4763,25 @@ class TopOpeBRepTool_ShapeClassifier(object):
 
         """
         _TopOpeBRepTool.TopOpeBRepTool_ShapeClassifier_swiginit(self,_TopOpeBRepTool.new_TopOpeBRepTool_ShapeClassifier(*args))
-    def ClearAll(self, *args) -> "void" :
+    def ClearAll(self):
         """
         * reset all internal data (SolidClassifier included)
 
         :rtype: None
 
         """
-        return _TopOpeBRepTool.TopOpeBRepTool_ShapeClassifier_ClearAll(self, *args)
+        return _TopOpeBRepTool.TopOpeBRepTool_ShapeClassifier_ClearAll(self)
 
-    def ClearCurrent(self, *args) -> "void" :
+    def ClearCurrent(self):
         """
         * reset all internal data (except SolidClassified)
 
         :rtype: None
 
         """
-        return _TopOpeBRepTool.TopOpeBRepTool_ShapeClassifier_ClearCurrent(self, *args)
+        return _TopOpeBRepTool.TopOpeBRepTool_ShapeClassifier_ClearCurrent(self)
 
-    def SetReference(self, *args) -> "void" :
+    def SetReference(self, *args):
         """
         * Set SRef as reference shape the next StateShapeReference(S,AvoidS) calls will classify S with SRef.
 
@@ -4604,20 +4792,20 @@ class TopOpeBRepTool_ShapeClassifier(object):
         """
         return _TopOpeBRepTool.TopOpeBRepTool_ShapeClassifier_SetReference(self, *args)
 
-    def SameDomain(self, *args) -> "void" :
+    def SameDomain(self, *args):
         """
         :rtype: int
 
         * set mode for next StateShapeShape call 	 samedomain = true --> S,Sref are same domain --> point 	 on restriction (ON S) is used to classify S. 	 samedomain = false --> S,Sref are not domain --> point 	 not on restriction of S (IN S) is used to classify S. 	 samedomain value is used only in next StateShapeShape call
 
         :param samedomain:
-        :type samedomain: int
+        :type samedomain: Standard_Integer
         :rtype: None
 
         """
         return _TopOpeBRepTool.TopOpeBRepTool_ShapeClassifier_SameDomain(self, *args)
 
-    def StateShapeShape(self, *args) -> "TopAbs_State" :
+    def StateShapeShape(self, *args):
         """
         * classify shape S compared with shape SRef. samedomain = 0 : S1,S2 are not same domain samedomain = 1 : S1,S2 are same domain
 
@@ -4626,7 +4814,17 @@ class TopOpeBRepTool_ShapeClassifier(object):
         :param SRef:
         :type SRef: TopoDS_Shape &
         :param samedomain: default value is 0
-        :type samedomain: int
+        :type samedomain: Standard_Integer
+        :rtype: TopAbs_State
+
+        * classify shape S compared with shape SRef. samedomain = 0 : S1,S2 are not same domain samedomain = 1 : S1,S2 are same domain
+
+        :param S:
+        :type S: TopoDS_Shape &
+        :param SRef:
+        :type SRef: TopoDS_Shape &
+        :param samedomain: default value is 0
+        :type samedomain: Standard_Integer
         :rtype: TopAbs_State
 
         * classify shape S compared with shape SRef. AvoidS is not used in classification; AvoidS may be IsNull(). (usefull to avoid ON or UNKNOWN state in special cases)
@@ -4652,7 +4850,7 @@ class TopOpeBRepTool_ShapeClassifier(object):
         """
         return _TopOpeBRepTool.TopOpeBRepTool_ShapeClassifier_StateShapeShape(self, *args)
 
-    def StateShapeReference(self, *args) -> "TopAbs_State" :
+    def StateShapeReference(self, *args):
         """
         * classify shape S compared with reference shape. AvoidS is not used in classification; AvoidS may be IsNull(). (usefull to avoid ON or UNKNOWN state in special cases)
 
@@ -4673,14 +4871,14 @@ class TopOpeBRepTool_ShapeClassifier(object):
         """
         return _TopOpeBRepTool.TopOpeBRepTool_ShapeClassifier_StateShapeReference(self, *args)
 
-    def ChangeSolidClassifier(self, *args) -> "TopOpeBRepTool_SolidClassifier &" :
+    def ChangeSolidClassifier(self):
         """
         :rtype: TopOpeBRepTool_SolidClassifier
 
         """
-        return _TopOpeBRepTool.TopOpeBRepTool_ShapeClassifier_ChangeSolidClassifier(self, *args)
+        return _TopOpeBRepTool.TopOpeBRepTool_ShapeClassifier_ChangeSolidClassifier(self)
 
-    def StateP2DReference(self, *args) -> "void" :
+    def StateP2DReference(self, *args):
         """
         * classify point P2D with myRef
 
@@ -4691,7 +4889,7 @@ class TopOpeBRepTool_ShapeClassifier(object):
         """
         return _TopOpeBRepTool.TopOpeBRepTool_ShapeClassifier_StateP2DReference(self, *args)
 
-    def StateP3DReference(self, *args) -> "void" :
+    def StateP3DReference(self, *args):
         """
         * classify point P3D with myRef
 
@@ -4702,28 +4900,28 @@ class TopOpeBRepTool_ShapeClassifier(object):
         """
         return _TopOpeBRepTool.TopOpeBRepTool_ShapeClassifier_StateP3DReference(self, *args)
 
-    def State(self, *args) -> "TopAbs_State" :
+    def State(self):
         """
         * return field myState
 
         :rtype: TopAbs_State
 
         """
-        return _TopOpeBRepTool.TopOpeBRepTool_ShapeClassifier_State(self, *args)
+        return _TopOpeBRepTool.TopOpeBRepTool_ShapeClassifier_State(self)
 
-    def P2D(self, *args) -> "gp_Pnt2d const" :
+    def P2D(self):
         """
         :rtype: gp_Pnt2d
 
         """
-        return _TopOpeBRepTool.TopOpeBRepTool_ShapeClassifier_P2D(self, *args)
+        return _TopOpeBRepTool.TopOpeBRepTool_ShapeClassifier_P2D(self)
 
-    def P3D(self, *args) -> "gp_Pnt const" :
+    def P3D(self):
         """
         :rtype: gp_Pnt
 
         """
-        return _TopOpeBRepTool.TopOpeBRepTool_ShapeClassifier_P3D(self, *args)
+        return _TopOpeBRepTool.TopOpeBRepTool_ShapeClassifier_P3D(self)
 
     def __del__(self):
     	try:
@@ -4768,10 +4966,28 @@ class TopOpeBRepTool_ShapeExplorer(object):
         :type ToAvoid: TopAbs_ShapeEnum
         :rtype: None
 
+        * Creates an Explorer on the Shape <S>.  <ToFind> is the type of shapes to search. TopAbs_VERTEX, TopAbs_EDGE, ...  <ToAvoid> is the type of shape to skip in the exploration. If <ToAvoid> is equal or less complex than <ToFind> or if <ToAVoid> is SHAPE it has no effect on the exploration.
+
+        :param S:
+        :type S: TopoDS_Shape &
+        :param ToFind:
+        :type ToFind: TopAbs_ShapeEnum
+        :param ToAvoid: default value is TopAbs_SHAPE
+        :type ToAvoid: TopAbs_ShapeEnum
+        :rtype: None
+
         """
         _TopOpeBRepTool.TopOpeBRepTool_ShapeExplorer_swiginit(self,_TopOpeBRepTool.new_TopOpeBRepTool_ShapeExplorer(*args))
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
+        :param S:
+        :type S: TopoDS_Shape &
+        :param ToFind:
+        :type ToFind: TopAbs_ShapeEnum
+        :param ToAvoid: default value is TopAbs_SHAPE
+        :type ToAvoid: TopAbs_ShapeEnum
+        :rtype: None
+
         :param S:
         :type S: TopoDS_Shape &
         :param ToFind:
@@ -4783,52 +4999,52 @@ class TopOpeBRepTool_ShapeExplorer(object):
         """
         return _TopOpeBRepTool.TopOpeBRepTool_ShapeExplorer_Init(self, *args)
 
-    def More(self, *args) -> "Standard_Boolean" :
+    def More(self):
         """
         * Returns True if there are more shapes in the exploration.
 
         :rtype: bool
 
         """
-        return _TopOpeBRepTool.TopOpeBRepTool_ShapeExplorer_More(self, *args)
+        return _TopOpeBRepTool.TopOpeBRepTool_ShapeExplorer_More(self)
 
-    def Next(self, *args) -> "void" :
+    def Next(self):
         """
         * Moves to the next Shape in the exploration.
 
         :rtype: None
 
         """
-        return _TopOpeBRepTool.TopOpeBRepTool_ShapeExplorer_Next(self, *args)
+        return _TopOpeBRepTool.TopOpeBRepTool_ShapeExplorer_Next(self)
 
-    def Current(self, *args) -> "TopoDS_Shape const" :
+    def Current(self):
         """
         * Returns the current shape in the exploration.
 
         :rtype: TopoDS_Shape
 
         """
-        return _TopOpeBRepTool.TopOpeBRepTool_ShapeExplorer_Current(self, *args)
+        return _TopOpeBRepTool.TopOpeBRepTool_ShapeExplorer_Current(self)
 
-    def NbShapes(self, *args) -> "Standard_Integer" :
+    def NbShapes(self):
         """
         :rtype: int
 
         """
-        return _TopOpeBRepTool.TopOpeBRepTool_ShapeExplorer_NbShapes(self, *args)
+        return _TopOpeBRepTool.TopOpeBRepTool_ShapeExplorer_NbShapes(self)
 
-    def Index(self, *args) -> "Standard_Integer" :
+    def Index(self):
         """
         :rtype: int
 
         """
-        return _TopOpeBRepTool.TopOpeBRepTool_ShapeExplorer_Index(self, *args)
+        return _TopOpeBRepTool.TopOpeBRepTool_ShapeExplorer_Index(self)
 
-    def DumpCurrentToString(self) -> "std::string" :
+    def DumpCurrentToString(self):
         """DumpCurrentToString(TopOpeBRepTool_ShapeExplorer self) -> std::string"""
         return _TopOpeBRepTool.TopOpeBRepTool_ShapeExplorer_DumpCurrentToString(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(TopOpeBRepTool_ShapeExplorer self)"""
         return _TopOpeBRepTool.TopOpeBRepTool_ShapeExplorer__kill_pointed(self)
 
@@ -4853,8 +5069,9 @@ TopOpeBRepTool_ShapeExplorer_swigregister(TopOpeBRepTool_ShapeExplorer)
 
 class TopOpeBRepTool_ShapeTool(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
+    def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def Tolerance(*args) -> "Standard_Real" :
+    def Tolerance(*args):
         """
         * Returns the tolerance of the shape <S>. If the shape <S> is Null, returns 0.
 
@@ -4866,7 +5083,7 @@ class TopOpeBRepTool_ShapeTool(object):
         return _TopOpeBRepTool.TopOpeBRepTool_ShapeTool_Tolerance(*args)
 
     Tolerance = staticmethod(Tolerance)
-    def Pnt(*args) -> "gp_Pnt" :
+    def Pnt(*args):
         """
         * Returns 3D point of vertex <S>.
 
@@ -4878,7 +5095,7 @@ class TopOpeBRepTool_ShapeTool(object):
         return _TopOpeBRepTool.TopOpeBRepTool_ShapeTool_Pnt(*args)
 
     Pnt = staticmethod(Pnt)
-    def BASISCURVE(*args) -> "Handle_Geom_Curve" :
+    def BASISCURVE(*args):
         """
         :param C:
         :type C: Handle_Geom_Curve &
@@ -4892,7 +5109,7 @@ class TopOpeBRepTool_ShapeTool(object):
         return _TopOpeBRepTool.TopOpeBRepTool_ShapeTool_BASISCURVE(*args)
 
     BASISCURVE = staticmethod(BASISCURVE)
-    def BASISSURFACE(*args) -> "Handle_Geom_Surface" :
+    def BASISSURFACE(*args):
         """
         :param S:
         :type S: Handle_Geom_Surface &
@@ -4906,7 +5123,7 @@ class TopOpeBRepTool_ShapeTool(object):
         return _TopOpeBRepTool.TopOpeBRepTool_ShapeTool_BASISSURFACE(*args)
 
     BASISSURFACE = staticmethod(BASISSURFACE)
-    def UVBOUNDS(*args) -> "Standard_Boolean &, Standard_Boolean &, Standard_Real &, Standard_Real &, Standard_Real &, Standard_Real &" :
+    def UVBOUNDS(*args):
         """
         :param S:
         :type S: Handle_Geom_Surface &
@@ -4944,7 +5161,7 @@ class TopOpeBRepTool_ShapeTool(object):
         return _TopOpeBRepTool.TopOpeBRepTool_ShapeTool_UVBOUNDS(*args)
 
     UVBOUNDS = staticmethod(UVBOUNDS)
-    def AdjustOnPeriodic(*args) -> "Standard_Real &, Standard_Real &" :
+    def AdjustOnPeriodic(*args):
         """
         * ajust u,v values in UVBounds of the domain of the geometric shape <S>, according to Uperiodicity and VPeriodicity of the domain. <S> is assumed to be a face. u and/or v is/are not modified when the domain is not periodic in U and/or V .
 
@@ -4960,7 +5177,7 @@ class TopOpeBRepTool_ShapeTool(object):
         return _TopOpeBRepTool.TopOpeBRepTool_ShapeTool_AdjustOnPeriodic(*args)
 
     AdjustOnPeriodic = staticmethod(AdjustOnPeriodic)
-    def Closed(*args) -> "Standard_Boolean" :
+    def Closed(*args):
         """
         * indicates wheter shape S1 is a closing shape on S2 or not.
 
@@ -4974,7 +5191,7 @@ class TopOpeBRepTool_ShapeTool(object):
         return _TopOpeBRepTool.TopOpeBRepTool_ShapeTool_Closed(*args)
 
     Closed = staticmethod(Closed)
-    def PeriodizeParameter(*args) -> "Standard_Real" :
+    def PeriodizeParameter(*args):
         """
         :param par:
         :type par: float
@@ -4988,7 +5205,7 @@ class TopOpeBRepTool_ShapeTool(object):
         return _TopOpeBRepTool.TopOpeBRepTool_ShapeTool_PeriodizeParameter(*args)
 
     PeriodizeParameter = staticmethod(PeriodizeParameter)
-    def ShapesSameOriented(*args) -> "Standard_Boolean" :
+    def ShapesSameOriented(*args):
         """
         :param S1:
         :type S1: TopoDS_Shape &
@@ -5000,7 +5217,7 @@ class TopOpeBRepTool_ShapeTool(object):
         return _TopOpeBRepTool.TopOpeBRepTool_ShapeTool_ShapesSameOriented(*args)
 
     ShapesSameOriented = staticmethod(ShapesSameOriented)
-    def SurfacesSameOriented(*args) -> "Standard_Boolean" :
+    def SurfacesSameOriented(*args):
         """
         :param S1:
         :type S1: BRepAdaptor_Surface &
@@ -5012,7 +5229,7 @@ class TopOpeBRepTool_ShapeTool(object):
         return _TopOpeBRepTool.TopOpeBRepTool_ShapeTool_SurfacesSameOriented(*args)
 
     SurfacesSameOriented = staticmethod(SurfacesSameOriented)
-    def FacesSameOriented(*args) -> "Standard_Boolean" :
+    def FacesSameOriented(*args):
         """
         :param F1:
         :type F1: TopoDS_Shape &
@@ -5024,7 +5241,7 @@ class TopOpeBRepTool_ShapeTool(object):
         return _TopOpeBRepTool.TopOpeBRepTool_ShapeTool_FacesSameOriented(*args)
 
     FacesSameOriented = staticmethod(FacesSameOriented)
-    def CurvesSameOriented(*args) -> "Standard_Boolean" :
+    def CurvesSameOriented(*args):
         """
         :param C1:
         :type C1: BRepAdaptor_Curve &
@@ -5036,7 +5253,7 @@ class TopOpeBRepTool_ShapeTool(object):
         return _TopOpeBRepTool.TopOpeBRepTool_ShapeTool_CurvesSameOriented(*args)
 
     CurvesSameOriented = staticmethod(CurvesSameOriented)
-    def EdgesSameOriented(*args) -> "Standard_Boolean" :
+    def EdgesSameOriented(*args):
         """
         :param E1:
         :type E1: TopoDS_Shape &
@@ -5048,7 +5265,7 @@ class TopOpeBRepTool_ShapeTool(object):
         return _TopOpeBRepTool.TopOpeBRepTool_ShapeTool_EdgesSameOriented(*args)
 
     EdgesSameOriented = staticmethod(EdgesSameOriented)
-    def EdgeData(*args) -> "Standard_Real &" :
+    def EdgeData(*args):
         """
         * Compute tangent T, normal N, curvature C at point of parameter P on curve BRAC. Returns the tolerance indicating if T,N are null.
 
@@ -5082,7 +5299,7 @@ class TopOpeBRepTool_ShapeTool(object):
         return _TopOpeBRepTool.TopOpeBRepTool_ShapeTool_EdgeData(*args)
 
     EdgeData = staticmethod(EdgeData)
-    def Resolution3dU(*args) -> "Standard_Real" :
+    def Resolution3dU(*args):
         """
         :param SU:
         :type SU: Handle_Geom_Surface &
@@ -5094,7 +5311,7 @@ class TopOpeBRepTool_ShapeTool(object):
         return _TopOpeBRepTool.TopOpeBRepTool_ShapeTool_Resolution3dU(*args)
 
     Resolution3dU = staticmethod(Resolution3dU)
-    def Resolution3dV(*args) -> "Standard_Real" :
+    def Resolution3dV(*args):
         """
         :param SU:
         :type SU: Handle_Geom_Surface &
@@ -5106,7 +5323,7 @@ class TopOpeBRepTool_ShapeTool(object):
         return _TopOpeBRepTool.TopOpeBRepTool_ShapeTool_Resolution3dV(*args)
 
     Resolution3dV = staticmethod(Resolution3dV)
-    def Resolution3d(*args) -> "Standard_Real" :
+    def Resolution3d(*args):
         """
         :param SU:
         :type SU: Handle_Geom_Surface &
@@ -5124,8 +5341,6 @@ class TopOpeBRepTool_ShapeTool(object):
         return _TopOpeBRepTool.TopOpeBRepTool_ShapeTool_Resolution3d(*args)
 
     Resolution3d = staticmethod(Resolution3d)
-    def __init__(self): 
-        _TopOpeBRepTool.TopOpeBRepTool_ShapeTool_swiginit(self,_TopOpeBRepTool.new_TopOpeBRepTool_ShapeTool())
     def __del__(self):
     	try:
     		self.thisown = False
@@ -5138,7 +5353,7 @@ TopOpeBRepTool_ShapeTool._kill_pointed = new_instancemethod(_TopOpeBRepTool.TopO
 TopOpeBRepTool_ShapeTool_swigregister = _TopOpeBRepTool.TopOpeBRepTool_ShapeTool_swigregister
 TopOpeBRepTool_ShapeTool_swigregister(TopOpeBRepTool_ShapeTool)
 
-def TopOpeBRepTool_ShapeTool_Tolerance(*args) -> "Standard_Real" :
+def TopOpeBRepTool_ShapeTool_Tolerance(*args):
   """
     * Returns the tolerance of the shape <S>. If the shape <S> is Null, returns 0.
 
@@ -5149,7 +5364,7 @@ def TopOpeBRepTool_ShapeTool_Tolerance(*args) -> "Standard_Real" :
     """
   return _TopOpeBRepTool.TopOpeBRepTool_ShapeTool_Tolerance(*args)
 
-def TopOpeBRepTool_ShapeTool_Pnt(*args) -> "gp_Pnt" :
+def TopOpeBRepTool_ShapeTool_Pnt(*args):
   """
     * Returns 3D point of vertex <S>.
 
@@ -5160,7 +5375,7 @@ def TopOpeBRepTool_ShapeTool_Pnt(*args) -> "gp_Pnt" :
     """
   return _TopOpeBRepTool.TopOpeBRepTool_ShapeTool_Pnt(*args)
 
-def TopOpeBRepTool_ShapeTool_BASISCURVE(*args) -> "Handle_Geom_Curve" :
+def TopOpeBRepTool_ShapeTool_BASISCURVE(*args):
   """
     :param C:
     :type C: Handle_Geom_Curve &
@@ -5173,7 +5388,7 @@ def TopOpeBRepTool_ShapeTool_BASISCURVE(*args) -> "Handle_Geom_Curve" :
     """
   return _TopOpeBRepTool.TopOpeBRepTool_ShapeTool_BASISCURVE(*args)
 
-def TopOpeBRepTool_ShapeTool_BASISSURFACE(*args) -> "Handle_Geom_Surface" :
+def TopOpeBRepTool_ShapeTool_BASISSURFACE(*args):
   """
     :param S:
     :type S: Handle_Geom_Surface &
@@ -5186,7 +5401,7 @@ def TopOpeBRepTool_ShapeTool_BASISSURFACE(*args) -> "Handle_Geom_Surface" :
     """
   return _TopOpeBRepTool.TopOpeBRepTool_ShapeTool_BASISSURFACE(*args)
 
-def TopOpeBRepTool_ShapeTool_UVBOUNDS(*args) -> "Standard_Boolean &, Standard_Boolean &, Standard_Real &, Standard_Real &, Standard_Real &, Standard_Real &" :
+def TopOpeBRepTool_ShapeTool_UVBOUNDS(*args):
   """
     :param S:
     :type S: Handle_Geom_Surface &
@@ -5223,7 +5438,7 @@ def TopOpeBRepTool_ShapeTool_UVBOUNDS(*args) -> "Standard_Boolean &, Standard_Bo
     """
   return _TopOpeBRepTool.TopOpeBRepTool_ShapeTool_UVBOUNDS(*args)
 
-def TopOpeBRepTool_ShapeTool_AdjustOnPeriodic(*args) -> "Standard_Real &, Standard_Real &" :
+def TopOpeBRepTool_ShapeTool_AdjustOnPeriodic(*args):
   """
     * ajust u,v values in UVBounds of the domain of the geometric shape <S>, according to Uperiodicity and VPeriodicity of the domain. <S> is assumed to be a face. u and/or v is/are not modified when the domain is not periodic in U and/or V .
 
@@ -5238,7 +5453,7 @@ def TopOpeBRepTool_ShapeTool_AdjustOnPeriodic(*args) -> "Standard_Real &, Standa
     """
   return _TopOpeBRepTool.TopOpeBRepTool_ShapeTool_AdjustOnPeriodic(*args)
 
-def TopOpeBRepTool_ShapeTool_Closed(*args) -> "Standard_Boolean" :
+def TopOpeBRepTool_ShapeTool_Closed(*args):
   """
     * indicates wheter shape S1 is a closing shape on S2 or not.
 
@@ -5251,7 +5466,7 @@ def TopOpeBRepTool_ShapeTool_Closed(*args) -> "Standard_Boolean" :
     """
   return _TopOpeBRepTool.TopOpeBRepTool_ShapeTool_Closed(*args)
 
-def TopOpeBRepTool_ShapeTool_PeriodizeParameter(*args) -> "Standard_Real" :
+def TopOpeBRepTool_ShapeTool_PeriodizeParameter(*args):
   """
     :param par:
     :type par: float
@@ -5264,7 +5479,7 @@ def TopOpeBRepTool_ShapeTool_PeriodizeParameter(*args) -> "Standard_Real" :
     """
   return _TopOpeBRepTool.TopOpeBRepTool_ShapeTool_PeriodizeParameter(*args)
 
-def TopOpeBRepTool_ShapeTool_ShapesSameOriented(*args) -> "Standard_Boolean" :
+def TopOpeBRepTool_ShapeTool_ShapesSameOriented(*args):
   """
     :param S1:
     :type S1: TopoDS_Shape &
@@ -5275,7 +5490,7 @@ def TopOpeBRepTool_ShapeTool_ShapesSameOriented(*args) -> "Standard_Boolean" :
     """
   return _TopOpeBRepTool.TopOpeBRepTool_ShapeTool_ShapesSameOriented(*args)
 
-def TopOpeBRepTool_ShapeTool_SurfacesSameOriented(*args) -> "Standard_Boolean" :
+def TopOpeBRepTool_ShapeTool_SurfacesSameOriented(*args):
   """
     :param S1:
     :type S1: BRepAdaptor_Surface &
@@ -5286,7 +5501,7 @@ def TopOpeBRepTool_ShapeTool_SurfacesSameOriented(*args) -> "Standard_Boolean" :
     """
   return _TopOpeBRepTool.TopOpeBRepTool_ShapeTool_SurfacesSameOriented(*args)
 
-def TopOpeBRepTool_ShapeTool_FacesSameOriented(*args) -> "Standard_Boolean" :
+def TopOpeBRepTool_ShapeTool_FacesSameOriented(*args):
   """
     :param F1:
     :type F1: TopoDS_Shape &
@@ -5297,7 +5512,7 @@ def TopOpeBRepTool_ShapeTool_FacesSameOriented(*args) -> "Standard_Boolean" :
     """
   return _TopOpeBRepTool.TopOpeBRepTool_ShapeTool_FacesSameOriented(*args)
 
-def TopOpeBRepTool_ShapeTool_CurvesSameOriented(*args) -> "Standard_Boolean" :
+def TopOpeBRepTool_ShapeTool_CurvesSameOriented(*args):
   """
     :param C1:
     :type C1: BRepAdaptor_Curve &
@@ -5308,7 +5523,7 @@ def TopOpeBRepTool_ShapeTool_CurvesSameOriented(*args) -> "Standard_Boolean" :
     """
   return _TopOpeBRepTool.TopOpeBRepTool_ShapeTool_CurvesSameOriented(*args)
 
-def TopOpeBRepTool_ShapeTool_EdgesSameOriented(*args) -> "Standard_Boolean" :
+def TopOpeBRepTool_ShapeTool_EdgesSameOriented(*args):
   """
     :param E1:
     :type E1: TopoDS_Shape &
@@ -5319,7 +5534,7 @@ def TopOpeBRepTool_ShapeTool_EdgesSameOriented(*args) -> "Standard_Boolean" :
     """
   return _TopOpeBRepTool.TopOpeBRepTool_ShapeTool_EdgesSameOriented(*args)
 
-def TopOpeBRepTool_ShapeTool_EdgeData(*args) -> "Standard_Real &" :
+def TopOpeBRepTool_ShapeTool_EdgeData(*args):
   """
     * Compute tangent T, normal N, curvature C at point of parameter P on curve BRAC. Returns the tolerance indicating if T,N are null.
 
@@ -5352,7 +5567,7 @@ def TopOpeBRepTool_ShapeTool_EdgeData(*args) -> "Standard_Real &" :
     """
   return _TopOpeBRepTool.TopOpeBRepTool_ShapeTool_EdgeData(*args)
 
-def TopOpeBRepTool_ShapeTool_Resolution3dU(*args) -> "Standard_Real" :
+def TopOpeBRepTool_ShapeTool_Resolution3dU(*args):
   """
     :param SU:
     :type SU: Handle_Geom_Surface &
@@ -5363,7 +5578,7 @@ def TopOpeBRepTool_ShapeTool_Resolution3dU(*args) -> "Standard_Real" :
     """
   return _TopOpeBRepTool.TopOpeBRepTool_ShapeTool_Resolution3dU(*args)
 
-def TopOpeBRepTool_ShapeTool_Resolution3dV(*args) -> "Standard_Real" :
+def TopOpeBRepTool_ShapeTool_Resolution3dV(*args):
   """
     :param SU:
     :type SU: Handle_Geom_Surface &
@@ -5374,7 +5589,7 @@ def TopOpeBRepTool_ShapeTool_Resolution3dV(*args) -> "Standard_Real" :
     """
   return _TopOpeBRepTool.TopOpeBRepTool_ShapeTool_Resolution3dV(*args)
 
-def TopOpeBRepTool_ShapeTool_Resolution3d(*args) -> "Standard_Real" :
+def TopOpeBRepTool_ShapeTool_Resolution3d(*args):
   """
     :param SU:
     :type SU: Handle_Geom_Surface &
@@ -5394,27 +5609,27 @@ def TopOpeBRepTool_ShapeTool_Resolution3d(*args) -> "Standard_Real" :
 class TopOpeBRepTool_SolidClassifier(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _TopOpeBRepTool.TopOpeBRepTool_SolidClassifier_swiginit(self,_TopOpeBRepTool.new_TopOpeBRepTool_SolidClassifier(*args))
-    def Clear(self, *args) -> "void" :
+        _TopOpeBRepTool.TopOpeBRepTool_SolidClassifier_swiginit(self,_TopOpeBRepTool.new_TopOpeBRepTool_SolidClassifier())
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _TopOpeBRepTool.TopOpeBRepTool_SolidClassifier_Clear(self, *args)
+        return _TopOpeBRepTool.TopOpeBRepTool_SolidClassifier_Clear(self)
 
-    def Destroy(self, *args) -> "void" :
+    def Destroy(self):
         """
         :rtype: None
 
         """
-        return _TopOpeBRepTool.TopOpeBRepTool_SolidClassifier_Destroy(self, *args)
+        return _TopOpeBRepTool.TopOpeBRepTool_SolidClassifier_Destroy(self)
 
-    def LoadSolid(self, *args) -> "void" :
+    def LoadSolid(self, *args):
         """
         :param S:
         :type S: TopoDS_Solid &
@@ -5423,7 +5638,7 @@ class TopOpeBRepTool_SolidClassifier(object):
         """
         return _TopOpeBRepTool.TopOpeBRepTool_SolidClassifier_LoadSolid(self, *args)
 
-    def LoadShell(self, *args) -> "void" :
+    def LoadShell(self, *args):
         """
         :param S:
         :type S: TopoDS_Shell &
@@ -5432,7 +5647,7 @@ class TopOpeBRepTool_SolidClassifier(object):
         """
         return _TopOpeBRepTool.TopOpeBRepTool_SolidClassifier_LoadShell(self, *args)
 
-    def Classify(self, *args) -> "TopAbs_State" :
+    def Classify(self, *args):
         """
         * compute the position of point <P> regarding with the geometric domain of the solid <S>.
 
@@ -5457,12 +5672,12 @@ class TopOpeBRepTool_SolidClassifier(object):
         """
         return _TopOpeBRepTool.TopOpeBRepTool_SolidClassifier_Classify(self, *args)
 
-    def State(self, *args) -> "TopAbs_State" :
+    def State(self):
         """
         :rtype: TopAbs_State
 
         """
-        return _TopOpeBRepTool.TopOpeBRepTool_SolidClassifier_State(self, *args)
+        return _TopOpeBRepTool.TopOpeBRepTool_SolidClassifier_State(self)
 
     def __del__(self):
     	try:
@@ -5484,9 +5699,18 @@ TopOpeBRepTool_SolidClassifier_swigregister(TopOpeBRepTool_SolidClassifier)
 
 class TopOpeBRepTool_TOOL(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
+    def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def OriinSor(*args) -> "Standard_Integer" :
+    def OriinSor(*args):
         """
+        :param sub:
+        :type sub: TopoDS_Shape &
+        :param S:
+        :type S: TopoDS_Shape &
+        :param checkclo: default value is Standard_False
+        :type checkclo: bool
+        :rtype: int
+
         :param sub:
         :type sub: TopoDS_Shape &
         :param S:
@@ -5499,7 +5723,7 @@ class TopOpeBRepTool_TOOL(object):
         return _TopOpeBRepTool.TopOpeBRepTool_TOOL_OriinSor(*args)
 
     OriinSor = staticmethod(OriinSor)
-    def OriinSorclosed(*args) -> "Standard_Integer" :
+    def OriinSorclosed(*args):
         """
         :param sub:
         :type sub: TopoDS_Shape &
@@ -5511,7 +5735,7 @@ class TopOpeBRepTool_TOOL(object):
         return _TopOpeBRepTool.TopOpeBRepTool_TOOL_OriinSorclosed(*args)
 
     OriinSorclosed = staticmethod(OriinSorclosed)
-    def ClosedE(*args) -> "Standard_Boolean" :
+    def ClosedE(*args):
         """
         :param E:
         :type E: TopoDS_Edge &
@@ -5523,7 +5747,7 @@ class TopOpeBRepTool_TOOL(object):
         return _TopOpeBRepTool.TopOpeBRepTool_TOOL_ClosedE(*args)
 
     ClosedE = staticmethod(ClosedE)
-    def ClosedS(*args) -> "Standard_Boolean" :
+    def ClosedS(*args):
         """
         :param F:
         :type F: TopoDS_Face &
@@ -5533,7 +5757,7 @@ class TopOpeBRepTool_TOOL(object):
         return _TopOpeBRepTool.TopOpeBRepTool_TOOL_ClosedS(*args)
 
     ClosedS = staticmethod(ClosedS)
-    def IsClosingE(*args) -> "Standard_Boolean" :
+    def IsClosingE(*args):
         """
         :param E:
         :type E: TopoDS_Edge &
@@ -5553,7 +5777,7 @@ class TopOpeBRepTool_TOOL(object):
         return _TopOpeBRepTool.TopOpeBRepTool_TOOL_IsClosingE(*args)
 
     IsClosingE = staticmethod(IsClosingE)
-    def Vertices(*args) -> "void" :
+    def Vertices(*args):
         """
         :param E:
         :type E: TopoDS_Edge &
@@ -5565,10 +5789,10 @@ class TopOpeBRepTool_TOOL(object):
         return _TopOpeBRepTool.TopOpeBRepTool_TOOL_Vertices(*args)
 
     Vertices = staticmethod(Vertices)
-    def Vertex(*args) -> "TopoDS_Vertex" :
+    def Vertex(*args):
         """
         :param Iv:
-        :type Iv: int
+        :type Iv: Standard_Integer
         :param E:
         :type E: TopoDS_Edge &
         :rtype: TopoDS_Vertex
@@ -5577,10 +5801,10 @@ class TopOpeBRepTool_TOOL(object):
         return _TopOpeBRepTool.TopOpeBRepTool_TOOL_Vertex(*args)
 
     Vertex = staticmethod(Vertex)
-    def ParE(*args) -> "Standard_Real" :
+    def ParE(*args):
         """
         :param Iv:
-        :type Iv: int
+        :type Iv: Standard_Integer
         :param E:
         :type E: TopoDS_Edge &
         :rtype: float
@@ -5589,7 +5813,7 @@ class TopOpeBRepTool_TOOL(object):
         return _TopOpeBRepTool.TopOpeBRepTool_TOOL_ParE(*args)
 
     ParE = staticmethod(ParE)
-    def OnBoundary(*args) -> "Standard_Integer" :
+    def OnBoundary(*args):
         """
         :param par:
         :type par: float
@@ -5601,7 +5825,7 @@ class TopOpeBRepTool_TOOL(object):
         return _TopOpeBRepTool.TopOpeBRepTool_TOOL_OnBoundary(*args)
 
     OnBoundary = staticmethod(OnBoundary)
-    def UVF(*args) -> "gp_Pnt2d" :
+    def UVF(*args):
         """
         :param par:
         :type par: float
@@ -5613,7 +5837,7 @@ class TopOpeBRepTool_TOOL(object):
         return _TopOpeBRepTool.TopOpeBRepTool_TOOL_UVF(*args)
 
     UVF = staticmethod(UVF)
-    def ParISO(*args) -> "Standard_Real &" :
+    def ParISO(*args):
         """
         :param p2d:
         :type p2d: gp_Pnt2d
@@ -5629,7 +5853,7 @@ class TopOpeBRepTool_TOOL(object):
         return _TopOpeBRepTool.TopOpeBRepTool_TOOL_ParISO(*args)
 
     ParISO = staticmethod(ParISO)
-    def ParE2d(*args) -> "Standard_Real &, Standard_Real &" :
+    def ParE2d(*args):
         """
         :param p2d:
         :type p2d: gp_Pnt2d
@@ -5647,7 +5871,7 @@ class TopOpeBRepTool_TOOL(object):
         return _TopOpeBRepTool.TopOpeBRepTool_TOOL_ParE2d(*args)
 
     ParE2d = staticmethod(ParE2d)
-    def Getduv(*args) -> "Standard_Boolean" :
+    def Getduv(*args):
         """
         :param f:
         :type f: TopoDS_Face &
@@ -5665,7 +5889,7 @@ class TopOpeBRepTool_TOOL(object):
         return _TopOpeBRepTool.TopOpeBRepTool_TOOL_Getduv(*args)
 
     Getduv = staticmethod(Getduv)
-    def uvApp(*args) -> "Standard_Boolean" :
+    def uvApp(*args):
         """
         :param f:
         :type f: TopoDS_Face &
@@ -5683,7 +5907,7 @@ class TopOpeBRepTool_TOOL(object):
         return _TopOpeBRepTool.TopOpeBRepTool_TOOL_uvApp(*args)
 
     uvApp = staticmethod(uvApp)
-    def TolUV(*args) -> "Standard_Real" :
+    def TolUV(*args):
         """
         :param F:
         :type F: TopoDS_Face &
@@ -5695,7 +5919,7 @@ class TopOpeBRepTool_TOOL(object):
         return _TopOpeBRepTool.TopOpeBRepTool_TOOL_TolUV(*args)
 
     TolUV = staticmethod(TolUV)
-    def TolP(*args) -> "Standard_Real" :
+    def TolP(*args):
         """
         :param E:
         :type E: TopoDS_Edge &
@@ -5707,7 +5931,7 @@ class TopOpeBRepTool_TOOL(object):
         return _TopOpeBRepTool.TopOpeBRepTool_TOOL_TolP(*args)
 
     TolP = staticmethod(TolP)
-    def minDUV(*args) -> "Standard_Real" :
+    def minDUV(*args):
         """
         :param F:
         :type F: TopoDS_Face &
@@ -5717,7 +5941,7 @@ class TopOpeBRepTool_TOOL(object):
         return _TopOpeBRepTool.TopOpeBRepTool_TOOL_minDUV(*args)
 
     minDUV = staticmethod(minDUV)
-    def outUVbounds(*args) -> "Standard_Boolean" :
+    def outUVbounds(*args):
         """
         :param uv:
         :type uv: gp_Pnt2d
@@ -5729,23 +5953,23 @@ class TopOpeBRepTool_TOOL(object):
         return _TopOpeBRepTool.TopOpeBRepTool_TOOL_outUVbounds(*args)
 
     outUVbounds = staticmethod(outUVbounds)
-    def stuvF(*args) -> "Standard_Integer &, Standard_Integer &" :
+    def stuvF(*args):
         """
         :param uv:
         :type uv: gp_Pnt2d
         :param F:
         :type F: TopoDS_Face &
         :param onU:
-        :type onU: int &
+        :type onU: Standard_Integer &
         :param onV:
-        :type onV: int &
+        :type onV: Standard_Integer &
         :rtype: void
 
         """
         return _TopOpeBRepTool.TopOpeBRepTool_TOOL_stuvF(*args)
 
     stuvF = staticmethod(stuvF)
-    def TggeomE(*args) -> "Standard_Boolean" :
+    def TggeomE(*args):
         """
         :param par:
         :type par: float
@@ -5767,7 +5991,7 @@ class TopOpeBRepTool_TOOL(object):
         return _TopOpeBRepTool.TopOpeBRepTool_TOOL_TggeomE(*args)
 
     TggeomE = staticmethod(TggeomE)
-    def TgINSIDE(*args) -> "Standard_Integer &" :
+    def TgINSIDE(*args):
         """
         :param v:
         :type v: TopoDS_Vertex &
@@ -5776,17 +6000,17 @@ class TopOpeBRepTool_TOOL(object):
         :param Tg:
         :type Tg: gp_Vec
         :param OvinE:
-        :type OvinE: int &
+        :type OvinE: Standard_Integer &
         :rtype: bool
 
         """
         return _TopOpeBRepTool.TopOpeBRepTool_TOOL_TgINSIDE(*args)
 
     TgINSIDE = staticmethod(TgINSIDE)
-    def Tg2d(*args) -> "gp_Vec2d" :
+    def Tg2d(*args):
         """
         :param iv:
-        :type iv: int
+        :type iv: Standard_Integer
         :param E:
         :type E: TopoDS_Edge &
         :param C2DF:
@@ -5797,10 +6021,10 @@ class TopOpeBRepTool_TOOL(object):
         return _TopOpeBRepTool.TopOpeBRepTool_TOOL_Tg2d(*args)
 
     Tg2d = staticmethod(Tg2d)
-    def Tg2dApp(*args) -> "gp_Vec2d" :
+    def Tg2dApp(*args):
         """
         :param iv:
-        :type iv: int
+        :type iv: Standard_Integer
         :param E:
         :type E: TopoDS_Edge &
         :param C2DF:
@@ -5813,10 +6037,10 @@ class TopOpeBRepTool_TOOL(object):
         return _TopOpeBRepTool.TopOpeBRepTool_TOOL_Tg2dApp(*args)
 
     Tg2dApp = staticmethod(Tg2dApp)
-    def tryTg2dApp(*args) -> "gp_Vec2d" :
+    def tryTg2dApp(*args):
         """
         :param iv:
-        :type iv: int
+        :type iv: Standard_Integer
         :param E:
         :type E: TopoDS_Edge &
         :param C2DF:
@@ -5829,7 +6053,7 @@ class TopOpeBRepTool_TOOL(object):
         return _TopOpeBRepTool.TopOpeBRepTool_TOOL_tryTg2dApp(*args)
 
     tryTg2dApp = staticmethod(tryTg2dApp)
-    def XX(*args) -> "Standard_Boolean" :
+    def XX(*args):
         """
         :param uv:
         :type uv: gp_Pnt2d
@@ -5847,7 +6071,7 @@ class TopOpeBRepTool_TOOL(object):
         return _TopOpeBRepTool.TopOpeBRepTool_TOOL_XX(*args)
 
     XX = staticmethod(XX)
-    def Nt(*args) -> "Standard_Boolean" :
+    def Nt(*args):
         """
         :param uv:
         :type uv: gp_Pnt2d
@@ -5861,7 +6085,7 @@ class TopOpeBRepTool_TOOL(object):
         return _TopOpeBRepTool.TopOpeBRepTool_TOOL_Nt(*args)
 
     Nt = staticmethod(Nt)
-    def NggeomF(*args) -> "Standard_Boolean" :
+    def NggeomF(*args):
         """
         :param uv:
         :type uv: gp_Pnt2d
@@ -5875,7 +6099,7 @@ class TopOpeBRepTool_TOOL(object):
         return _TopOpeBRepTool.TopOpeBRepTool_TOOL_NggeomF(*args)
 
     NggeomF = staticmethod(NggeomF)
-    def NgApp(*args) -> "Standard_Boolean" :
+    def NgApp(*args):
         """
         :param par:
         :type par: float
@@ -5893,7 +6117,7 @@ class TopOpeBRepTool_TOOL(object):
         return _TopOpeBRepTool.TopOpeBRepTool_TOOL_NgApp(*args)
 
     NgApp = staticmethod(NgApp)
-    def tryNgApp(*args) -> "Standard_Boolean" :
+    def tryNgApp(*args):
         """
         :param par:
         :type par: float
@@ -5911,7 +6135,7 @@ class TopOpeBRepTool_TOOL(object):
         return _TopOpeBRepTool.TopOpeBRepTool_TOOL_tryNgApp(*args)
 
     tryNgApp = staticmethod(tryNgApp)
-    def tryOriEinF(*args) -> "Standard_Integer" :
+    def tryOriEinF(*args):
         """
         :param par:
         :type par: float
@@ -5925,7 +6149,7 @@ class TopOpeBRepTool_TOOL(object):
         return _TopOpeBRepTool.TopOpeBRepTool_TOOL_tryOriEinF(*args)
 
     tryOriEinF = staticmethod(tryOriEinF)
-    def IsQuad(*args) -> "Standard_Boolean" :
+    def IsQuad(*args):
         """
         :param E:
         :type E: TopoDS_Edge &
@@ -5939,7 +6163,7 @@ class TopOpeBRepTool_TOOL(object):
         return _TopOpeBRepTool.TopOpeBRepTool_TOOL_IsQuad(*args)
 
     IsQuad = staticmethod(IsQuad)
-    def CurvE(*args) -> "Standard_Real &" :
+    def CurvE(*args):
         """
         :param E:
         :type E: TopoDS_Edge &
@@ -5955,7 +6179,7 @@ class TopOpeBRepTool_TOOL(object):
         return _TopOpeBRepTool.TopOpeBRepTool_TOOL_CurvE(*args)
 
     CurvE = staticmethod(CurvE)
-    def CurvF(*args) -> "Standard_Real &, Standard_Boolean &" :
+    def CurvF(*args):
         """
         :param F:
         :type F: TopoDS_Face &
@@ -5973,7 +6197,7 @@ class TopOpeBRepTool_TOOL(object):
         return _TopOpeBRepTool.TopOpeBRepTool_TOOL_CurvF(*args)
 
     CurvF = staticmethod(CurvF)
-    def UVISO(*args) -> "Standard_Boolean &, Standard_Boolean &" :
+    def UVISO(*args):
         """
         :param PC:
         :type PC: Handle_Geom2d_Curve &
@@ -6017,7 +6241,7 @@ class TopOpeBRepTool_TOOL(object):
         return _TopOpeBRepTool.TopOpeBRepTool_TOOL_UVISO(*args)
 
     UVISO = staticmethod(UVISO)
-    def IsonCLO(*args) -> "Standard_Boolean" :
+    def IsonCLO(*args):
         """
         :param PC:
         :type PC: Handle_Geom2d_Curve &
@@ -6047,7 +6271,7 @@ class TopOpeBRepTool_TOOL(object):
         return _TopOpeBRepTool.TopOpeBRepTool_TOOL_IsonCLO(*args)
 
     IsonCLO = staticmethod(IsonCLO)
-    def TrslUV(*args) -> "void" :
+    def TrslUV(*args):
         """
         :param t2d:
         :type t2d: gp_Vec2d
@@ -6059,7 +6283,7 @@ class TopOpeBRepTool_TOOL(object):
         return _TopOpeBRepTool.TopOpeBRepTool_TOOL_TrslUV(*args)
 
     TrslUV = staticmethod(TrslUV)
-    def TrslUVModifE(*args) -> "Standard_Boolean" :
+    def TrslUVModifE(*args):
         """
         :param t2d:
         :type t2d: gp_Vec2d
@@ -6073,7 +6297,7 @@ class TopOpeBRepTool_TOOL(object):
         return _TopOpeBRepTool.TopOpeBRepTool_TOOL_TrslUVModifE(*args)
 
     TrslUVModifE = staticmethod(TrslUVModifE)
-    def Matter(*args) -> "Standard_Real &" :
+    def Matter(*args):
         """
         :param d1:
         :type d1: gp_Vec
@@ -6121,7 +6345,7 @@ class TopOpeBRepTool_TOOL(object):
         return _TopOpeBRepTool.TopOpeBRepTool_TOOL_Matter(*args)
 
     Matter = staticmethod(Matter)
-    def MatterKPtg(*args) -> "Standard_Real &" :
+    def MatterKPtg(*args):
         """
         :param f1:
         :type f1: TopoDS_Face &
@@ -6137,7 +6361,7 @@ class TopOpeBRepTool_TOOL(object):
         return _TopOpeBRepTool.TopOpeBRepTool_TOOL_MatterKPtg(*args)
 
     MatterKPtg = staticmethod(MatterKPtg)
-    def Getstp3dF(*args) -> "Standard_Boolean" :
+    def Getstp3dF(*args):
         """
         :param p:
         :type p: gp_Pnt
@@ -6153,7 +6377,7 @@ class TopOpeBRepTool_TOOL(object):
         return _TopOpeBRepTool.TopOpeBRepTool_TOOL_Getstp3dF(*args)
 
     Getstp3dF = staticmethod(Getstp3dF)
-    def SplitE(*args) -> "Standard_Boolean" :
+    def SplitE(*args):
         """
         :param Eanc:
         :type Eanc: TopoDS_Edge &
@@ -6165,7 +6389,7 @@ class TopOpeBRepTool_TOOL(object):
         return _TopOpeBRepTool.TopOpeBRepTool_TOOL_SplitE(*args)
 
     SplitE = staticmethod(SplitE)
-    def MkShell(*args) -> "void" :
+    def MkShell(*args):
         """
         :param lF:
         :type lF: TopTools_ListOfShape &
@@ -6177,7 +6401,7 @@ class TopOpeBRepTool_TOOL(object):
         return _TopOpeBRepTool.TopOpeBRepTool_TOOL_MkShell(*args)
 
     MkShell = staticmethod(MkShell)
-    def Remove(*args) -> "Standard_Boolean" :
+    def Remove(*args):
         """
         :param loS:
         :type loS: TopTools_ListOfShape &
@@ -6189,7 +6413,7 @@ class TopOpeBRepTool_TOOL(object):
         return _TopOpeBRepTool.TopOpeBRepTool_TOOL_Remove(*args)
 
     Remove = staticmethod(Remove)
-    def WireToFace(*args) -> "Standard_Boolean" :
+    def WireToFace(*args):
         """
         :param Fref:
         :type Fref: TopoDS_Face &
@@ -6203,7 +6427,7 @@ class TopOpeBRepTool_TOOL(object):
         return _TopOpeBRepTool.TopOpeBRepTool_TOOL_WireToFace(*args)
 
     WireToFace = staticmethod(WireToFace)
-    def EdgeONFace(*args) -> "Standard_Boolean &" :
+    def EdgeONFace(*args):
         """
         :param par:
         :type par: float
@@ -6221,8 +6445,6 @@ class TopOpeBRepTool_TOOL(object):
         return _TopOpeBRepTool.TopOpeBRepTool_TOOL_EdgeONFace(*args)
 
     EdgeONFace = staticmethod(EdgeONFace)
-    def __init__(self): 
-        _TopOpeBRepTool.TopOpeBRepTool_TOOL_swiginit(self,_TopOpeBRepTool.new_TopOpeBRepTool_TOOL())
     def __del__(self):
     	try:
     		self.thisown = False
@@ -6235,8 +6457,16 @@ TopOpeBRepTool_TOOL._kill_pointed = new_instancemethod(_TopOpeBRepTool.TopOpeBRe
 TopOpeBRepTool_TOOL_swigregister = _TopOpeBRepTool.TopOpeBRepTool_TOOL_swigregister
 TopOpeBRepTool_TOOL_swigregister(TopOpeBRepTool_TOOL)
 
-def TopOpeBRepTool_TOOL_OriinSor(*args) -> "Standard_Integer" :
+def TopOpeBRepTool_TOOL_OriinSor(*args):
   """
+    :param sub:
+    :type sub: TopoDS_Shape &
+    :param S:
+    :type S: TopoDS_Shape &
+    :param checkclo: default value is Standard_False
+    :type checkclo: bool
+    :rtype: int
+
     :param sub:
     :type sub: TopoDS_Shape &
     :param S:
@@ -6248,7 +6478,7 @@ def TopOpeBRepTool_TOOL_OriinSor(*args) -> "Standard_Integer" :
     """
   return _TopOpeBRepTool.TopOpeBRepTool_TOOL_OriinSor(*args)
 
-def TopOpeBRepTool_TOOL_OriinSorclosed(*args) -> "Standard_Integer" :
+def TopOpeBRepTool_TOOL_OriinSorclosed(*args):
   """
     :param sub:
     :type sub: TopoDS_Shape &
@@ -6259,7 +6489,7 @@ def TopOpeBRepTool_TOOL_OriinSorclosed(*args) -> "Standard_Integer" :
     """
   return _TopOpeBRepTool.TopOpeBRepTool_TOOL_OriinSorclosed(*args)
 
-def TopOpeBRepTool_TOOL_ClosedE(*args) -> "Standard_Boolean" :
+def TopOpeBRepTool_TOOL_ClosedE(*args):
   """
     :param E:
     :type E: TopoDS_Edge &
@@ -6270,7 +6500,7 @@ def TopOpeBRepTool_TOOL_ClosedE(*args) -> "Standard_Boolean" :
     """
   return _TopOpeBRepTool.TopOpeBRepTool_TOOL_ClosedE(*args)
 
-def TopOpeBRepTool_TOOL_ClosedS(*args) -> "Standard_Boolean" :
+def TopOpeBRepTool_TOOL_ClosedS(*args):
   """
     :param F:
     :type F: TopoDS_Face &
@@ -6279,7 +6509,7 @@ def TopOpeBRepTool_TOOL_ClosedS(*args) -> "Standard_Boolean" :
     """
   return _TopOpeBRepTool.TopOpeBRepTool_TOOL_ClosedS(*args)
 
-def TopOpeBRepTool_TOOL_IsClosingE(*args) -> "Standard_Boolean" :
+def TopOpeBRepTool_TOOL_IsClosingE(*args):
   """
     :param E:
     :type E: TopoDS_Edge &
@@ -6298,7 +6528,7 @@ def TopOpeBRepTool_TOOL_IsClosingE(*args) -> "Standard_Boolean" :
     """
   return _TopOpeBRepTool.TopOpeBRepTool_TOOL_IsClosingE(*args)
 
-def TopOpeBRepTool_TOOL_Vertices(*args) -> "void" :
+def TopOpeBRepTool_TOOL_Vertices(*args):
   """
     :param E:
     :type E: TopoDS_Edge &
@@ -6309,10 +6539,10 @@ def TopOpeBRepTool_TOOL_Vertices(*args) -> "void" :
     """
   return _TopOpeBRepTool.TopOpeBRepTool_TOOL_Vertices(*args)
 
-def TopOpeBRepTool_TOOL_Vertex(*args) -> "TopoDS_Vertex" :
+def TopOpeBRepTool_TOOL_Vertex(*args):
   """
     :param Iv:
-    :type Iv: int
+    :type Iv: Standard_Integer
     :param E:
     :type E: TopoDS_Edge &
     :rtype: TopoDS_Vertex
@@ -6320,10 +6550,10 @@ def TopOpeBRepTool_TOOL_Vertex(*args) -> "TopoDS_Vertex" :
     """
   return _TopOpeBRepTool.TopOpeBRepTool_TOOL_Vertex(*args)
 
-def TopOpeBRepTool_TOOL_ParE(*args) -> "Standard_Real" :
+def TopOpeBRepTool_TOOL_ParE(*args):
   """
     :param Iv:
-    :type Iv: int
+    :type Iv: Standard_Integer
     :param E:
     :type E: TopoDS_Edge &
     :rtype: float
@@ -6331,7 +6561,7 @@ def TopOpeBRepTool_TOOL_ParE(*args) -> "Standard_Real" :
     """
   return _TopOpeBRepTool.TopOpeBRepTool_TOOL_ParE(*args)
 
-def TopOpeBRepTool_TOOL_OnBoundary(*args) -> "Standard_Integer" :
+def TopOpeBRepTool_TOOL_OnBoundary(*args):
   """
     :param par:
     :type par: float
@@ -6342,7 +6572,7 @@ def TopOpeBRepTool_TOOL_OnBoundary(*args) -> "Standard_Integer" :
     """
   return _TopOpeBRepTool.TopOpeBRepTool_TOOL_OnBoundary(*args)
 
-def TopOpeBRepTool_TOOL_UVF(*args) -> "gp_Pnt2d" :
+def TopOpeBRepTool_TOOL_UVF(*args):
   """
     :param par:
     :type par: float
@@ -6353,7 +6583,7 @@ def TopOpeBRepTool_TOOL_UVF(*args) -> "gp_Pnt2d" :
     """
   return _TopOpeBRepTool.TopOpeBRepTool_TOOL_UVF(*args)
 
-def TopOpeBRepTool_TOOL_ParISO(*args) -> "Standard_Real &" :
+def TopOpeBRepTool_TOOL_ParISO(*args):
   """
     :param p2d:
     :type p2d: gp_Pnt2d
@@ -6368,7 +6598,7 @@ def TopOpeBRepTool_TOOL_ParISO(*args) -> "Standard_Real &" :
     """
   return _TopOpeBRepTool.TopOpeBRepTool_TOOL_ParISO(*args)
 
-def TopOpeBRepTool_TOOL_ParE2d(*args) -> "Standard_Real &, Standard_Real &" :
+def TopOpeBRepTool_TOOL_ParE2d(*args):
   """
     :param p2d:
     :type p2d: gp_Pnt2d
@@ -6385,7 +6615,7 @@ def TopOpeBRepTool_TOOL_ParE2d(*args) -> "Standard_Real &, Standard_Real &" :
     """
   return _TopOpeBRepTool.TopOpeBRepTool_TOOL_ParE2d(*args)
 
-def TopOpeBRepTool_TOOL_Getduv(*args) -> "Standard_Boolean" :
+def TopOpeBRepTool_TOOL_Getduv(*args):
   """
     :param f:
     :type f: TopoDS_Face &
@@ -6402,7 +6632,7 @@ def TopOpeBRepTool_TOOL_Getduv(*args) -> "Standard_Boolean" :
     """
   return _TopOpeBRepTool.TopOpeBRepTool_TOOL_Getduv(*args)
 
-def TopOpeBRepTool_TOOL_uvApp(*args) -> "Standard_Boolean" :
+def TopOpeBRepTool_TOOL_uvApp(*args):
   """
     :param f:
     :type f: TopoDS_Face &
@@ -6419,7 +6649,7 @@ def TopOpeBRepTool_TOOL_uvApp(*args) -> "Standard_Boolean" :
     """
   return _TopOpeBRepTool.TopOpeBRepTool_TOOL_uvApp(*args)
 
-def TopOpeBRepTool_TOOL_TolUV(*args) -> "Standard_Real" :
+def TopOpeBRepTool_TOOL_TolUV(*args):
   """
     :param F:
     :type F: TopoDS_Face &
@@ -6430,7 +6660,7 @@ def TopOpeBRepTool_TOOL_TolUV(*args) -> "Standard_Real" :
     """
   return _TopOpeBRepTool.TopOpeBRepTool_TOOL_TolUV(*args)
 
-def TopOpeBRepTool_TOOL_TolP(*args) -> "Standard_Real" :
+def TopOpeBRepTool_TOOL_TolP(*args):
   """
     :param E:
     :type E: TopoDS_Edge &
@@ -6441,7 +6671,7 @@ def TopOpeBRepTool_TOOL_TolP(*args) -> "Standard_Real" :
     """
   return _TopOpeBRepTool.TopOpeBRepTool_TOOL_TolP(*args)
 
-def TopOpeBRepTool_TOOL_minDUV(*args) -> "Standard_Real" :
+def TopOpeBRepTool_TOOL_minDUV(*args):
   """
     :param F:
     :type F: TopoDS_Face &
@@ -6450,7 +6680,7 @@ def TopOpeBRepTool_TOOL_minDUV(*args) -> "Standard_Real" :
     """
   return _TopOpeBRepTool.TopOpeBRepTool_TOOL_minDUV(*args)
 
-def TopOpeBRepTool_TOOL_outUVbounds(*args) -> "Standard_Boolean" :
+def TopOpeBRepTool_TOOL_outUVbounds(*args):
   """
     :param uv:
     :type uv: gp_Pnt2d
@@ -6461,22 +6691,22 @@ def TopOpeBRepTool_TOOL_outUVbounds(*args) -> "Standard_Boolean" :
     """
   return _TopOpeBRepTool.TopOpeBRepTool_TOOL_outUVbounds(*args)
 
-def TopOpeBRepTool_TOOL_stuvF(*args) -> "Standard_Integer &, Standard_Integer &" :
+def TopOpeBRepTool_TOOL_stuvF(*args):
   """
     :param uv:
     :type uv: gp_Pnt2d
     :param F:
     :type F: TopoDS_Face &
     :param onU:
-    :type onU: int &
+    :type onU: Standard_Integer &
     :param onV:
-    :type onV: int &
+    :type onV: Standard_Integer &
     :rtype: void
 
     """
   return _TopOpeBRepTool.TopOpeBRepTool_TOOL_stuvF(*args)
 
-def TopOpeBRepTool_TOOL_TggeomE(*args) -> "Standard_Boolean" :
+def TopOpeBRepTool_TOOL_TggeomE(*args):
   """
     :param par:
     :type par: float
@@ -6497,7 +6727,7 @@ def TopOpeBRepTool_TOOL_TggeomE(*args) -> "Standard_Boolean" :
     """
   return _TopOpeBRepTool.TopOpeBRepTool_TOOL_TggeomE(*args)
 
-def TopOpeBRepTool_TOOL_TgINSIDE(*args) -> "Standard_Integer &" :
+def TopOpeBRepTool_TOOL_TgINSIDE(*args):
   """
     :param v:
     :type v: TopoDS_Vertex &
@@ -6506,16 +6736,16 @@ def TopOpeBRepTool_TOOL_TgINSIDE(*args) -> "Standard_Integer &" :
     :param Tg:
     :type Tg: gp_Vec
     :param OvinE:
-    :type OvinE: int &
+    :type OvinE: Standard_Integer &
     :rtype: bool
 
     """
   return _TopOpeBRepTool.TopOpeBRepTool_TOOL_TgINSIDE(*args)
 
-def TopOpeBRepTool_TOOL_Tg2d(*args) -> "gp_Vec2d" :
+def TopOpeBRepTool_TOOL_Tg2d(*args):
   """
     :param iv:
-    :type iv: int
+    :type iv: Standard_Integer
     :param E:
     :type E: TopoDS_Edge &
     :param C2DF:
@@ -6525,10 +6755,10 @@ def TopOpeBRepTool_TOOL_Tg2d(*args) -> "gp_Vec2d" :
     """
   return _TopOpeBRepTool.TopOpeBRepTool_TOOL_Tg2d(*args)
 
-def TopOpeBRepTool_TOOL_Tg2dApp(*args) -> "gp_Vec2d" :
+def TopOpeBRepTool_TOOL_Tg2dApp(*args):
   """
     :param iv:
-    :type iv: int
+    :type iv: Standard_Integer
     :param E:
     :type E: TopoDS_Edge &
     :param C2DF:
@@ -6540,10 +6770,10 @@ def TopOpeBRepTool_TOOL_Tg2dApp(*args) -> "gp_Vec2d" :
     """
   return _TopOpeBRepTool.TopOpeBRepTool_TOOL_Tg2dApp(*args)
 
-def TopOpeBRepTool_TOOL_tryTg2dApp(*args) -> "gp_Vec2d" :
+def TopOpeBRepTool_TOOL_tryTg2dApp(*args):
   """
     :param iv:
-    :type iv: int
+    :type iv: Standard_Integer
     :param E:
     :type E: TopoDS_Edge &
     :param C2DF:
@@ -6555,7 +6785,7 @@ def TopOpeBRepTool_TOOL_tryTg2dApp(*args) -> "gp_Vec2d" :
     """
   return _TopOpeBRepTool.TopOpeBRepTool_TOOL_tryTg2dApp(*args)
 
-def TopOpeBRepTool_TOOL_XX(*args) -> "Standard_Boolean" :
+def TopOpeBRepTool_TOOL_XX(*args):
   """
     :param uv:
     :type uv: gp_Pnt2d
@@ -6572,7 +6802,7 @@ def TopOpeBRepTool_TOOL_XX(*args) -> "Standard_Boolean" :
     """
   return _TopOpeBRepTool.TopOpeBRepTool_TOOL_XX(*args)
 
-def TopOpeBRepTool_TOOL_Nt(*args) -> "Standard_Boolean" :
+def TopOpeBRepTool_TOOL_Nt(*args):
   """
     :param uv:
     :type uv: gp_Pnt2d
@@ -6585,7 +6815,7 @@ def TopOpeBRepTool_TOOL_Nt(*args) -> "Standard_Boolean" :
     """
   return _TopOpeBRepTool.TopOpeBRepTool_TOOL_Nt(*args)
 
-def TopOpeBRepTool_TOOL_NggeomF(*args) -> "Standard_Boolean" :
+def TopOpeBRepTool_TOOL_NggeomF(*args):
   """
     :param uv:
     :type uv: gp_Pnt2d
@@ -6598,7 +6828,7 @@ def TopOpeBRepTool_TOOL_NggeomF(*args) -> "Standard_Boolean" :
     """
   return _TopOpeBRepTool.TopOpeBRepTool_TOOL_NggeomF(*args)
 
-def TopOpeBRepTool_TOOL_NgApp(*args) -> "Standard_Boolean" :
+def TopOpeBRepTool_TOOL_NgApp(*args):
   """
     :param par:
     :type par: float
@@ -6615,7 +6845,7 @@ def TopOpeBRepTool_TOOL_NgApp(*args) -> "Standard_Boolean" :
     """
   return _TopOpeBRepTool.TopOpeBRepTool_TOOL_NgApp(*args)
 
-def TopOpeBRepTool_TOOL_tryNgApp(*args) -> "Standard_Boolean" :
+def TopOpeBRepTool_TOOL_tryNgApp(*args):
   """
     :param par:
     :type par: float
@@ -6632,7 +6862,7 @@ def TopOpeBRepTool_TOOL_tryNgApp(*args) -> "Standard_Boolean" :
     """
   return _TopOpeBRepTool.TopOpeBRepTool_TOOL_tryNgApp(*args)
 
-def TopOpeBRepTool_TOOL_tryOriEinF(*args) -> "Standard_Integer" :
+def TopOpeBRepTool_TOOL_tryOriEinF(*args):
   """
     :param par:
     :type par: float
@@ -6645,7 +6875,7 @@ def TopOpeBRepTool_TOOL_tryOriEinF(*args) -> "Standard_Integer" :
     """
   return _TopOpeBRepTool.TopOpeBRepTool_TOOL_tryOriEinF(*args)
 
-def TopOpeBRepTool_TOOL_IsQuad(*args) -> "Standard_Boolean" :
+def TopOpeBRepTool_TOOL_IsQuad(*args):
   """
     :param E:
     :type E: TopoDS_Edge &
@@ -6658,7 +6888,7 @@ def TopOpeBRepTool_TOOL_IsQuad(*args) -> "Standard_Boolean" :
     """
   return _TopOpeBRepTool.TopOpeBRepTool_TOOL_IsQuad(*args)
 
-def TopOpeBRepTool_TOOL_CurvE(*args) -> "Standard_Real &" :
+def TopOpeBRepTool_TOOL_CurvE(*args):
   """
     :param E:
     :type E: TopoDS_Edge &
@@ -6673,7 +6903,7 @@ def TopOpeBRepTool_TOOL_CurvE(*args) -> "Standard_Real &" :
     """
   return _TopOpeBRepTool.TopOpeBRepTool_TOOL_CurvE(*args)
 
-def TopOpeBRepTool_TOOL_CurvF(*args) -> "Standard_Real &, Standard_Boolean &" :
+def TopOpeBRepTool_TOOL_CurvF(*args):
   """
     :param F:
     :type F: TopoDS_Face &
@@ -6690,7 +6920,7 @@ def TopOpeBRepTool_TOOL_CurvF(*args) -> "Standard_Real &, Standard_Boolean &" :
     """
   return _TopOpeBRepTool.TopOpeBRepTool_TOOL_CurvF(*args)
 
-def TopOpeBRepTool_TOOL_UVISO(*args) -> "Standard_Boolean &, Standard_Boolean &" :
+def TopOpeBRepTool_TOOL_UVISO(*args):
   """
     :param PC:
     :type PC: Handle_Geom2d_Curve &
@@ -6733,7 +6963,7 @@ def TopOpeBRepTool_TOOL_UVISO(*args) -> "Standard_Boolean &, Standard_Boolean &"
     """
   return _TopOpeBRepTool.TopOpeBRepTool_TOOL_UVISO(*args)
 
-def TopOpeBRepTool_TOOL_IsonCLO(*args) -> "Standard_Boolean" :
+def TopOpeBRepTool_TOOL_IsonCLO(*args):
   """
     :param PC:
     :type PC: Handle_Geom2d_Curve &
@@ -6762,7 +6992,7 @@ def TopOpeBRepTool_TOOL_IsonCLO(*args) -> "Standard_Boolean" :
     """
   return _TopOpeBRepTool.TopOpeBRepTool_TOOL_IsonCLO(*args)
 
-def TopOpeBRepTool_TOOL_TrslUV(*args) -> "void" :
+def TopOpeBRepTool_TOOL_TrslUV(*args):
   """
     :param t2d:
     :type t2d: gp_Vec2d
@@ -6773,7 +7003,7 @@ def TopOpeBRepTool_TOOL_TrslUV(*args) -> "void" :
     """
   return _TopOpeBRepTool.TopOpeBRepTool_TOOL_TrslUV(*args)
 
-def TopOpeBRepTool_TOOL_TrslUVModifE(*args) -> "Standard_Boolean" :
+def TopOpeBRepTool_TOOL_TrslUVModifE(*args):
   """
     :param t2d:
     :type t2d: gp_Vec2d
@@ -6786,7 +7016,7 @@ def TopOpeBRepTool_TOOL_TrslUVModifE(*args) -> "Standard_Boolean" :
     """
   return _TopOpeBRepTool.TopOpeBRepTool_TOOL_TrslUVModifE(*args)
 
-def TopOpeBRepTool_TOOL_Matter(*args) -> "Standard_Real &" :
+def TopOpeBRepTool_TOOL_Matter(*args):
   """
     :param d1:
     :type d1: gp_Vec
@@ -6833,7 +7063,7 @@ def TopOpeBRepTool_TOOL_Matter(*args) -> "Standard_Real &" :
     """
   return _TopOpeBRepTool.TopOpeBRepTool_TOOL_Matter(*args)
 
-def TopOpeBRepTool_TOOL_MatterKPtg(*args) -> "Standard_Real &" :
+def TopOpeBRepTool_TOOL_MatterKPtg(*args):
   """
     :param f1:
     :type f1: TopoDS_Face &
@@ -6848,7 +7078,7 @@ def TopOpeBRepTool_TOOL_MatterKPtg(*args) -> "Standard_Real &" :
     """
   return _TopOpeBRepTool.TopOpeBRepTool_TOOL_MatterKPtg(*args)
 
-def TopOpeBRepTool_TOOL_Getstp3dF(*args) -> "Standard_Boolean" :
+def TopOpeBRepTool_TOOL_Getstp3dF(*args):
   """
     :param p:
     :type p: gp_Pnt
@@ -6863,7 +7093,7 @@ def TopOpeBRepTool_TOOL_Getstp3dF(*args) -> "Standard_Boolean" :
     """
   return _TopOpeBRepTool.TopOpeBRepTool_TOOL_Getstp3dF(*args)
 
-def TopOpeBRepTool_TOOL_SplitE(*args) -> "Standard_Boolean" :
+def TopOpeBRepTool_TOOL_SplitE(*args):
   """
     :param Eanc:
     :type Eanc: TopoDS_Edge &
@@ -6874,7 +7104,7 @@ def TopOpeBRepTool_TOOL_SplitE(*args) -> "Standard_Boolean" :
     """
   return _TopOpeBRepTool.TopOpeBRepTool_TOOL_SplitE(*args)
 
-def TopOpeBRepTool_TOOL_MkShell(*args) -> "void" :
+def TopOpeBRepTool_TOOL_MkShell(*args):
   """
     :param lF:
     :type lF: TopTools_ListOfShape &
@@ -6885,7 +7115,7 @@ def TopOpeBRepTool_TOOL_MkShell(*args) -> "void" :
     """
   return _TopOpeBRepTool.TopOpeBRepTool_TOOL_MkShell(*args)
 
-def TopOpeBRepTool_TOOL_Remove(*args) -> "Standard_Boolean" :
+def TopOpeBRepTool_TOOL_Remove(*args):
   """
     :param loS:
     :type loS: TopTools_ListOfShape &
@@ -6896,7 +7126,7 @@ def TopOpeBRepTool_TOOL_Remove(*args) -> "Standard_Boolean" :
     """
   return _TopOpeBRepTool.TopOpeBRepTool_TOOL_Remove(*args)
 
-def TopOpeBRepTool_TOOL_WireToFace(*args) -> "Standard_Boolean" :
+def TopOpeBRepTool_TOOL_WireToFace(*args):
   """
     :param Fref:
     :type Fref: TopoDS_Face &
@@ -6909,7 +7139,7 @@ def TopOpeBRepTool_TOOL_WireToFace(*args) -> "Standard_Boolean" :
     """
   return _TopOpeBRepTool.TopOpeBRepTool_TOOL_WireToFace(*args)
 
-def TopOpeBRepTool_TOOL_EdgeONFace(*args) -> "Standard_Boolean &" :
+def TopOpeBRepTool_TOOL_EdgeONFace(*args):
   """
     :param par:
     :type par: float
@@ -6939,7 +7169,7 @@ class TopOpeBRepTool_connexity(object):
 
         """
         _TopOpeBRepTool.TopOpeBRepTool_connexity_swiginit(self,_TopOpeBRepTool.new_TopOpeBRepTool_connexity(*args))
-    def SetKey(self, *args) -> "void" :
+    def SetKey(self, *args):
         """
         :param Key:
         :type Key: TopoDS_Shape &
@@ -6948,17 +7178,17 @@ class TopOpeBRepTool_connexity(object):
         """
         return _TopOpeBRepTool.TopOpeBRepTool_connexity_SetKey(self, *args)
 
-    def Key(self, *args) -> "TopoDS_Shape const" :
+    def Key(self):
         """
         :rtype: TopoDS_Shape
 
         """
-        return _TopOpeBRepTool.TopOpeBRepTool_connexity_Key(self, *args)
+        return _TopOpeBRepTool.TopOpeBRepTool_connexity_Key(self)
 
-    def Item(self, *args) -> "Standard_Integer" :
+    def Item(self, *args):
         """
         :param OriKey:
-        :type OriKey: int
+        :type OriKey: Standard_Integer
         :param Item:
         :type Item: TopTools_ListOfShape &
         :rtype: int
@@ -6966,7 +7196,7 @@ class TopOpeBRepTool_connexity(object):
         """
         return _TopOpeBRepTool.TopOpeBRepTool_connexity_Item(self, *args)
 
-    def AllItems(self, *args) -> "Standard_Integer" :
+    def AllItems(self, *args):
         """
         :param Item:
         :type Item: TopTools_ListOfShape &
@@ -6975,16 +7205,16 @@ class TopOpeBRepTool_connexity(object):
         """
         return _TopOpeBRepTool.TopOpeBRepTool_connexity_AllItems(self, *args)
 
-    def AddItem(self, *args) -> "void" :
+    def AddItem(self, *args):
         """
         :param OriKey:
-        :type OriKey: int
+        :type OriKey: Standard_Integer
         :param Item:
         :type Item: TopTools_ListOfShape &
         :rtype: None
 
         :param OriKey:
-        :type OriKey: int
+        :type OriKey: Standard_Integer
         :param Item:
         :type Item: TopoDS_Shape &
         :rtype: None
@@ -6992,10 +7222,10 @@ class TopOpeBRepTool_connexity(object):
         """
         return _TopOpeBRepTool.TopOpeBRepTool_connexity_AddItem(self, *args)
 
-    def RemoveItem(self, *args) -> "Standard_Boolean" :
+    def RemoveItem(self, *args):
         """
         :param OriKey:
-        :type OriKey: int
+        :type OriKey: Standard_Integer
         :param Item:
         :type Item: TopoDS_Shape &
         :rtype: bool
@@ -7007,30 +7237,30 @@ class TopOpeBRepTool_connexity(object):
         """
         return _TopOpeBRepTool.TopOpeBRepTool_connexity_RemoveItem(self, *args)
 
-    def ChangeItem(self, *args) -> "TopTools_ListOfShape &" :
+    def ChangeItem(self, *args):
         """
         :param OriKey:
-        :type OriKey: int
+        :type OriKey: Standard_Integer
         :rtype: TopTools_ListOfShape
 
         """
         return _TopOpeBRepTool.TopOpeBRepTool_connexity_ChangeItem(self, *args)
 
-    def IsMultiple(self, *args) -> "Standard_Boolean" :
+    def IsMultiple(self):
         """
         :rtype: bool
 
         """
-        return _TopOpeBRepTool.TopOpeBRepTool_connexity_IsMultiple(self, *args)
+        return _TopOpeBRepTool.TopOpeBRepTool_connexity_IsMultiple(self)
 
-    def IsFaulty(self, *args) -> "Standard_Boolean" :
+    def IsFaulty(self):
         """
         :rtype: bool
 
         """
-        return _TopOpeBRepTool.TopOpeBRepTool_connexity_IsFaulty(self, *args)
+        return _TopOpeBRepTool.TopOpeBRepTool_connexity_IsFaulty(self)
 
-    def IsInternal(self, *args) -> "Standard_Integer" :
+    def IsInternal(self, *args):
         """
         :param Item:
         :type Item: TopTools_ListOfShape &
@@ -7064,13 +7294,13 @@ TopOpeBRepTool_connexity_swigregister(TopOpeBRepTool_connexity)
 class TopOpeBRepTool_face(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _TopOpeBRepTool.TopOpeBRepTool_face_swiginit(self,_TopOpeBRepTool.new_TopOpeBRepTool_face(*args))
-    def Init(self, *args) -> "Standard_Boolean" :
+        _TopOpeBRepTool.TopOpeBRepTool_face_swiginit(self,_TopOpeBRepTool.new_TopOpeBRepTool_face())
+    def Init(self, *args):
         """
         :param W:
         :type W: TopoDS_Wire &
@@ -7081,40 +7311,40 @@ class TopOpeBRepTool_face(object):
         """
         return _TopOpeBRepTool.TopOpeBRepTool_face_Init(self, *args)
 
-    def W(self, *args) -> "TopoDS_Wire const" :
+    def W(self):
         """
         :rtype: TopoDS_Wire
 
         """
-        return _TopOpeBRepTool.TopOpeBRepTool_face_W(self, *args)
+        return _TopOpeBRepTool.TopOpeBRepTool_face_W(self)
 
-    def IsDone(self, *args) -> "Standard_Boolean" :
+    def IsDone(self):
         """
         :rtype: bool
 
         """
-        return _TopOpeBRepTool.TopOpeBRepTool_face_IsDone(self, *args)
+        return _TopOpeBRepTool.TopOpeBRepTool_face_IsDone(self)
 
-    def Finite(self, *args) -> "Standard_Boolean" :
+    def Finite(self):
         """
         :rtype: bool
 
         """
-        return _TopOpeBRepTool.TopOpeBRepTool_face_Finite(self, *args)
+        return _TopOpeBRepTool.TopOpeBRepTool_face_Finite(self)
 
-    def Ffinite(self, *args) -> "TopoDS_Face const" :
+    def Ffinite(self):
         """
         :rtype: TopoDS_Face
 
         """
-        return _TopOpeBRepTool.TopOpeBRepTool_face_Ffinite(self, *args)
+        return _TopOpeBRepTool.TopOpeBRepTool_face_Ffinite(self)
 
-    def RealF(self, *args) -> "TopoDS_Face" :
+    def RealF(self):
         """
         :rtype: TopoDS_Face
 
         """
-        return _TopOpeBRepTool.TopOpeBRepTool_face_RealF(self, *args)
+        return _TopOpeBRepTool.TopOpeBRepTool_face_RealF(self)
 
     def __del__(self):
     	try:
@@ -7137,13 +7367,13 @@ TopOpeBRepTool_face_swigregister(TopOpeBRepTool_face)
 class TopOpeBRepTool_makeTransition(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _TopOpeBRepTool.TopOpeBRepTool_makeTransition_swiginit(self,_TopOpeBRepTool.new_TopOpeBRepTool_makeTransition(*args))
-    def Initialize(self, *args) -> "Standard_Boolean" :
+        _TopOpeBRepTool.TopOpeBRepTool_makeTransition_swiginit(self,_TopOpeBRepTool.new_TopOpeBRepTool_makeTransition())
+    def Initialize(self, *args):
         """
         :param E:
         :type E: TopoDS_Edge &
@@ -7164,7 +7394,7 @@ class TopOpeBRepTool_makeTransition(object):
         """
         return _TopOpeBRepTool.TopOpeBRepTool_makeTransition_Initialize(self, *args)
 
-    def Setfactor(self, *args) -> "void" :
+    def Setfactor(self, *args):
         """
         :param factor:
         :type factor: float
@@ -7173,21 +7403,21 @@ class TopOpeBRepTool_makeTransition(object):
         """
         return _TopOpeBRepTool.TopOpeBRepTool_makeTransition_Setfactor(self, *args)
 
-    def Getfactor(self, *args) -> "Standard_Real" :
+    def Getfactor(self):
         """
         :rtype: float
 
         """
-        return _TopOpeBRepTool.TopOpeBRepTool_makeTransition_Getfactor(self, *args)
+        return _TopOpeBRepTool.TopOpeBRepTool_makeTransition_Getfactor(self)
 
-    def IsT2d(self, *args) -> "Standard_Boolean" :
+    def IsT2d(self):
         """
         :rtype: bool
 
         """
-        return _TopOpeBRepTool.TopOpeBRepTool_makeTransition_IsT2d(self, *args)
+        return _TopOpeBRepTool.TopOpeBRepTool_makeTransition_IsT2d(self)
 
-    def SetRest(self, *args) -> "Standard_Boolean" :
+    def SetRest(self, *args):
         """
         :param ES:
         :type ES: TopoDS_Edge &
@@ -7198,14 +7428,14 @@ class TopOpeBRepTool_makeTransition(object):
         """
         return _TopOpeBRepTool.TopOpeBRepTool_makeTransition_SetRest(self, *args)
 
-    def HasRest(self, *args) -> "Standard_Boolean" :
+    def HasRest(self):
         """
         :rtype: bool
 
         """
-        return _TopOpeBRepTool.TopOpeBRepTool_makeTransition_HasRest(self, *args)
+        return _TopOpeBRepTool.TopOpeBRepTool_makeTransition_HasRest(self)
 
-    def MkT2donE(self, *args) -> "Standard_Boolean" :
+    def MkT2donE(self, *args):
         """
         :param stb:
         :type stb: TopAbs_State &
@@ -7216,7 +7446,7 @@ class TopOpeBRepTool_makeTransition(object):
         """
         return _TopOpeBRepTool.TopOpeBRepTool_makeTransition_MkT2donE(self, *args)
 
-    def MkT3onE(self, *args) -> "Standard_Boolean" :
+    def MkT3onE(self, *args):
         """
         :param stb:
         :type stb: TopAbs_State &
@@ -7227,7 +7457,7 @@ class TopOpeBRepTool_makeTransition(object):
         """
         return _TopOpeBRepTool.TopOpeBRepTool_makeTransition_MkT3onE(self, *args)
 
-    def MkT3dproj(self, *args) -> "Standard_Boolean" :
+    def MkT3dproj(self, *args):
         """
         :param stb:
         :type stb: TopAbs_State &
@@ -7238,7 +7468,7 @@ class TopOpeBRepTool_makeTransition(object):
         """
         return _TopOpeBRepTool.TopOpeBRepTool_makeTransition_MkT3dproj(self, *args)
 
-    def MkTonE(self, *args) -> "Standard_Boolean" :
+    def MkTonE(self, *args):
         """
         :param stb:
         :type stb: TopAbs_State &

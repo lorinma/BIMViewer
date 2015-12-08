@@ -119,8 +119,9 @@ import OCC.StlMesh
 import OCC.TColgp
 class stltransfer(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
+    def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def BuildIncrementalMesh(*args) -> "void" :
+    def BuildIncrementalMesh(*args):
         """
         :param Shape:
         :type Shape: TopoDS_Shape &
@@ -136,8 +137,6 @@ class stltransfer(object):
         return _StlTransfer.stltransfer_BuildIncrementalMesh(*args)
 
     BuildIncrementalMesh = staticmethod(BuildIncrementalMesh)
-    def __init__(self): 
-        _StlTransfer.stltransfer_swiginit(self,_StlTransfer.new_stltransfer())
     def __del__(self):
     	try:
     		self.thisown = False
@@ -150,7 +149,7 @@ stltransfer._kill_pointed = new_instancemethod(_StlTransfer.stltransfer__kill_po
 stltransfer_swigregister = _StlTransfer.stltransfer_swigregister
 stltransfer_swigregister(stltransfer)
 
-def stltransfer_BuildIncrementalMesh(*args) -> "void" :
+def stltransfer_BuildIncrementalMesh(*args):
   """
     :param Shape:
     :type Shape: TopoDS_Shape &

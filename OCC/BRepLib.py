@@ -149,8 +149,9 @@ BRepLib_DisconnectedWire = _BRepLib.BRepLib_DisconnectedWire
 BRepLib_NonManifoldWire = _BRepLib.BRepLib_NonManifoldWire
 class breplib(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
+    def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def Precision(*args) -> "Standard_Real" :
+    def Precision(*args):
         """
         * Sets the default precision. The current Precision is returned.
 
@@ -166,7 +167,7 @@ class breplib(object):
         return _BRepLib.breplib_Precision(*args)
 
     Precision = staticmethod(Precision)
-    def Plane(*args) -> "Handle_Geom_Plane const &" :
+    def Plane(*args):
         """
         * Sets the current plane to P.
 
@@ -182,8 +183,16 @@ class breplib(object):
         return _BRepLib.breplib_Plane(*args)
 
     Plane = staticmethod(Plane)
-    def CheckSameRange(*args) -> "Standard_Boolean" :
+    def CheckSameRange(*args):
         """
+        * checks if the Edge is same range IGNORING the same range flag of the edge Confusion argument is to compare real numbers idenpendently of any model space tolerance
+
+        :param E:
+        :type E: TopoDS_Edge &
+        :param Confusion: default value is 1.0e-12
+        :type Confusion: float
+        :rtype: bool
+
         * checks if the Edge is same range IGNORING the same range flag of the edge Confusion argument is to compare real numbers idenpendently of any model space tolerance
 
         :param E:
@@ -196,8 +205,16 @@ class breplib(object):
         return _BRepLib.breplib_CheckSameRange(*args)
 
     CheckSameRange = staticmethod(CheckSameRange)
-    def SameRange(*args) -> "void" :
+    def SameRange(*args):
         """
+        * will make all the curve representation have the same range domain for the parameters. This will IGNORE the same range flag value to proceed. If there is a 3D curve there it will the range of that curve. If not the first curve representation encountered in the list will give its range to the all the other curves.
+
+        :param E:
+        :type E: TopoDS_Edge &
+        :param Tolerance: default value is 1.0e-5
+        :type Tolerance: float
+        :rtype: void
+
         * will make all the curve representation have the same range domain for the parameters. This will IGNORE the same range flag value to proceed. If there is a 3D curve there it will the range of that curve. If not the first curve representation encountered in the list will give its range to the all the other curves.
 
         :param E:
@@ -210,7 +227,7 @@ class breplib(object):
         return _BRepLib.breplib_SameRange(*args)
 
     SameRange = staticmethod(SameRange)
-    def BuildCurve3d(*args) -> "Standard_Boolean" :
+    def BuildCurve3d(*args):
         """
         * Computes the 3d curve for the edge <E> if it does not exist. Returns True if the curve was computed or existed. Returns False if there is no planar pcurve or the computation failed. <MaxSegment> >= 30 in approximation
 
@@ -221,16 +238,72 @@ class breplib(object):
         :param Continuity: default value is GeomAbs_C1
         :type Continuity: GeomAbs_Shape
         :param MaxDegree: default value is 14
-        :type MaxDegree: int
+        :type MaxDegree: Standard_Integer
         :param MaxSegment: default value is 0
-        :type MaxSegment: int
+        :type MaxSegment: Standard_Integer
+        :rtype: bool
+
+        * Computes the 3d curve for the edge <E> if it does not exist. Returns True if the curve was computed or existed. Returns False if there is no planar pcurve or the computation failed. <MaxSegment> >= 30 in approximation
+
+        :param E:
+        :type E: TopoDS_Edge &
+        :param Tolerance: default value is 1.0e-5
+        :type Tolerance: float
+        :param Continuity: default value is GeomAbs_C1
+        :type Continuity: GeomAbs_Shape
+        :param MaxDegree: default value is 14
+        :type MaxDegree: Standard_Integer
+        :param MaxSegment: default value is 0
+        :type MaxSegment: Standard_Integer
+        :rtype: bool
+
+        * Computes the 3d curve for the edge <E> if it does not exist. Returns True if the curve was computed or existed. Returns False if there is no planar pcurve or the computation failed. <MaxSegment> >= 30 in approximation
+
+        :param E:
+        :type E: TopoDS_Edge &
+        :param Tolerance: default value is 1.0e-5
+        :type Tolerance: float
+        :param Continuity: default value is GeomAbs_C1
+        :type Continuity: GeomAbs_Shape
+        :param MaxDegree: default value is 14
+        :type MaxDegree: Standard_Integer
+        :param MaxSegment: default value is 0
+        :type MaxSegment: Standard_Integer
+        :rtype: bool
+
+        * Computes the 3d curve for the edge <E> if it does not exist. Returns True if the curve was computed or existed. Returns False if there is no planar pcurve or the computation failed. <MaxSegment> >= 30 in approximation
+
+        :param E:
+        :type E: TopoDS_Edge &
+        :param Tolerance: default value is 1.0e-5
+        :type Tolerance: float
+        :param Continuity: default value is GeomAbs_C1
+        :type Continuity: GeomAbs_Shape
+        :param MaxDegree: default value is 14
+        :type MaxDegree: Standard_Integer
+        :param MaxSegment: default value is 0
+        :type MaxSegment: Standard_Integer
+        :rtype: bool
+
+        * Computes the 3d curve for the edge <E> if it does not exist. Returns True if the curve was computed or existed. Returns False if there is no planar pcurve or the computation failed. <MaxSegment> >= 30 in approximation
+
+        :param E:
+        :type E: TopoDS_Edge &
+        :param Tolerance: default value is 1.0e-5
+        :type Tolerance: float
+        :param Continuity: default value is GeomAbs_C1
+        :type Continuity: GeomAbs_Shape
+        :param MaxDegree: default value is 14
+        :type MaxDegree: Standard_Integer
+        :param MaxSegment: default value is 0
+        :type MaxSegment: Standard_Integer
         :rtype: bool
 
         """
         return _BRepLib.breplib_BuildCurve3d(*args)
 
     BuildCurve3d = staticmethod(BuildCurve3d)
-    def BuildCurves3d(*args) -> "Standard_Boolean" :
+    def BuildCurves3d(*args):
         """
         * Computes the 3d curves for all the edges of <S> return False if one of the computation failed. <MaxSegment> >= 30 in approximation
 
@@ -241,9 +314,51 @@ class breplib(object):
         :param Continuity: default value is GeomAbs_C1
         :type Continuity: GeomAbs_Shape
         :param MaxDegree: default value is 14
-        :type MaxDegree: int
+        :type MaxDegree: Standard_Integer
         :param MaxSegment: default value is 0
-        :type MaxSegment: int
+        :type MaxSegment: Standard_Integer
+        :rtype: bool
+
+        * Computes the 3d curves for all the edges of <S> return False if one of the computation failed. <MaxSegment> >= 30 in approximation
+
+        :param S:
+        :type S: TopoDS_Shape &
+        :param Tolerance:
+        :type Tolerance: float
+        :param Continuity: default value is GeomAbs_C1
+        :type Continuity: GeomAbs_Shape
+        :param MaxDegree: default value is 14
+        :type MaxDegree: Standard_Integer
+        :param MaxSegment: default value is 0
+        :type MaxSegment: Standard_Integer
+        :rtype: bool
+
+        * Computes the 3d curves for all the edges of <S> return False if one of the computation failed. <MaxSegment> >= 30 in approximation
+
+        :param S:
+        :type S: TopoDS_Shape &
+        :param Tolerance:
+        :type Tolerance: float
+        :param Continuity: default value is GeomAbs_C1
+        :type Continuity: GeomAbs_Shape
+        :param MaxDegree: default value is 14
+        :type MaxDegree: Standard_Integer
+        :param MaxSegment: default value is 0
+        :type MaxSegment: Standard_Integer
+        :rtype: bool
+
+        * Computes the 3d curves for all the edges of <S> return False if one of the computation failed. <MaxSegment> >= 30 in approximation
+
+        :param S:
+        :type S: TopoDS_Shape &
+        :param Tolerance:
+        :type Tolerance: float
+        :param Continuity: default value is GeomAbs_C1
+        :type Continuity: GeomAbs_Shape
+        :param MaxDegree: default value is 14
+        :type MaxDegree: Standard_Integer
+        :param MaxSegment: default value is 0
+        :type MaxSegment: Standard_Integer
         :rtype: bool
 
         * Computes the 3d curves for all the edges of <S> return False if one of the computation failed.
@@ -256,7 +371,7 @@ class breplib(object):
         return _BRepLib.breplib_BuildCurves3d(*args)
 
     BuildCurves3d = staticmethod(BuildCurves3d)
-    def UpdateEdgeTol(*args) -> "Standard_Boolean" :
+    def UpdateEdgeTol(*args):
         """
         * Checks if the edge has a Tolerance smaller than -- -- -- -- MaxToleranceToCheck if so it will compute the radius of -- the cylindrical pipe surface that MinToleranceRequest is the minimum tolerance before it is usefull to start testing. Usually it should be arround 10e-5 contains all -- the curve represenation of the edge returns True if the Edge tolerance had to be updated
 
@@ -272,7 +387,7 @@ class breplib(object):
         return _BRepLib.breplib_UpdateEdgeTol(*args)
 
     UpdateEdgeTol = staticmethod(UpdateEdgeTol)
-    def UpdateEdgeTolerance(*args) -> "Standard_Boolean" :
+    def UpdateEdgeTolerance(*args):
         """
         * -- Checks all the edges of the shape whose -- -- -- Tolerance is smaller than MaxToleranceToCheck -- Returns True if at least one edge was updated -- MinToleranceRequest is the minimum tolerance before -- it -- is usefull to start testing. Usually it should be arround -- 10e-5-- Warning :The method is very slow as it checks all.  Use only in interfaces or processing assimilate batch
 
@@ -288,8 +403,16 @@ class breplib(object):
         return _BRepLib.breplib_UpdateEdgeTolerance(*args)
 
     UpdateEdgeTolerance = staticmethod(UpdateEdgeTolerance)
-    def SameParameter(*args) -> "void" :
+    def SameParameter(*args):
         """
+        * Computes new 2d curve(s) for the edge <E> to have the same parameter as the 3d curve. The algorithm is not done if the flag SameParameter was True on the Edge.
+
+        :param E:
+        :type E: TopoDS_Edge &
+        :param Tolerance: default value is 1.0e-5
+        :type Tolerance: float
+        :rtype: void
+
         * Computes new 2d curve(s) for the edge <E> to have the same parameter as the 3d curve. The algorithm is not done if the flag SameParameter was True on the Edge.
 
         :param E:
@@ -308,12 +431,40 @@ class breplib(object):
         :type forced: bool
         :rtype: void
 
+        * Computes new 2d curve(s) for all the edges of <S> to have the same parameter as the 3d curve. The algorithm is not done if the flag SameParameter was True on an Edge.
+
+        :param S:
+        :type S: TopoDS_Shape &
+        :param Tolerance: default value is 1.0e-5
+        :type Tolerance: float
+        :param forced: default value is Standard_False
+        :type forced: bool
+        :rtype: void
+
+        * Computes new 2d curve(s) for all the edges of <S> to have the same parameter as the 3d curve. The algorithm is not done if the flag SameParameter was True on an Edge.
+
+        :param S:
+        :type S: TopoDS_Shape &
+        :param Tolerance: default value is 1.0e-5
+        :type Tolerance: float
+        :param forced: default value is Standard_False
+        :type forced: bool
+        :rtype: void
+
         """
         return _BRepLib.breplib_SameParameter(*args)
 
     SameParameter = staticmethod(SameParameter)
-    def UpdateTolerances(*args) -> "void" :
+    def UpdateTolerances(*args):
         """
+        * Replaces tolerance of FACE EDGE VERTEX by the tolerance Max of their connected handling shapes. It is not necessary to use this call after SameParameter. (called in)
+
+        :param S:
+        :type S: TopoDS_Shape &
+        :param verifyFaceTolerance: default value is Standard_False
+        :type verifyFaceTolerance: bool
+        :rtype: void
+
         * Replaces tolerance of FACE EDGE VERTEX by the tolerance Max of their connected handling shapes. It is not necessary to use this call after SameParameter. (called in)
 
         :param S:
@@ -326,7 +477,7 @@ class breplib(object):
         return _BRepLib.breplib_UpdateTolerances(*args)
 
     UpdateTolerances = staticmethod(UpdateTolerances)
-    def OrientClosedSolid(*args) -> "Standard_Boolean" :
+    def OrientClosedSolid(*args):
         """
         * Orients the solid forward and the shell with the orientation to have matter in the solid. Returns False if the solid is unOrientable (open or incoherent)
 
@@ -338,8 +489,16 @@ class breplib(object):
         return _BRepLib.breplib_OrientClosedSolid(*args)
 
     OrientClosedSolid = staticmethod(OrientClosedSolid)
-    def EncodeRegularity(*args) -> "void" :
+    def EncodeRegularity(*args):
         """
+        * Encodes the Regularity of edges on a Shape. Warning: <TolAng> is an angular tolerance, expressed in Rad. Warning: If the edges's regularity are coded before, nothing is done.
+
+        :param S:
+        :type S: TopoDS_Shape &
+        :param TolAng: default value is 1.0e-10
+        :type TolAng: float
+        :rtype: void
+
         * Encodes the Regularity of edges on a Shape. Warning: <TolAng> is an angular tolerance, expressed in Rad. Warning: If the edges's regularity are coded before, nothing is done.
 
         :param S:
@@ -360,11 +519,23 @@ class breplib(object):
         :type TolAng: float
         :rtype: void
 
+        * Encodes the Regularity beetween <F1> and <F2> by <E> Warning: <TolAng> is an angular tolerance, expressed in Rad. Warning: If the edge's regularity is coded before, nothing is done.
+
+        :param S:
+        :type S: TopoDS_Edge &
+        :param F1:
+        :type F1: TopoDS_Face &
+        :param F2:
+        :type F2: TopoDS_Face &
+        :param TolAng: default value is 1.0e-10
+        :type TolAng: float
+        :rtype: void
+
         """
         return _BRepLib.breplib_EncodeRegularity(*args)
 
     EncodeRegularity = staticmethod(EncodeRegularity)
-    def SortFaces(*args) -> "void" :
+    def SortFaces(*args):
         """
         * Sorts in LF the Faces of S on the complexity of  their surfaces (Plane,Cylinder,Cone,Sphere,Torus,other)
 
@@ -378,7 +549,7 @@ class breplib(object):
         return _BRepLib.breplib_SortFaces(*args)
 
     SortFaces = staticmethod(SortFaces)
-    def ReverseSortFaces(*args) -> "void" :
+    def ReverseSortFaces(*args):
         """
         * Sorts in LF the Faces of S on the reverse  complexity of their surfaces (other,Torus,Sphere,Cone,Cylinder,Plane)
 
@@ -392,8 +563,6 @@ class breplib(object):
         return _BRepLib.breplib_ReverseSortFaces(*args)
 
     ReverseSortFaces = staticmethod(ReverseSortFaces)
-    def __init__(self): 
-        _BRepLib.breplib_swiginit(self,_BRepLib.new_breplib())
     def __del__(self):
     	try:
     		self.thisown = False
@@ -406,7 +575,7 @@ breplib._kill_pointed = new_instancemethod(_BRepLib.breplib__kill_pointed,None,b
 breplib_swigregister = _BRepLib.breplib_swigregister
 breplib_swigregister(breplib)
 
-def breplib_Precision(*args) -> "Standard_Real" :
+def breplib_Precision(*args):
   """
     * Sets the default precision. The current Precision is returned.
 
@@ -421,7 +590,7 @@ def breplib_Precision(*args) -> "Standard_Real" :
     """
   return _BRepLib.breplib_Precision(*args)
 
-def breplib_Plane(*args) -> "Handle_Geom_Plane const &" :
+def breplib_Plane(*args):
   """
     * Sets the current plane to P.
 
@@ -436,8 +605,16 @@ def breplib_Plane(*args) -> "Handle_Geom_Plane const &" :
     """
   return _BRepLib.breplib_Plane(*args)
 
-def breplib_CheckSameRange(*args) -> "Standard_Boolean" :
+def breplib_CheckSameRange(*args):
   """
+    * checks if the Edge is same range IGNORING the same range flag of the edge Confusion argument is to compare real numbers idenpendently of any model space tolerance
+
+    :param E:
+    :type E: TopoDS_Edge &
+    :param Confusion: default value is 1.0e-12
+    :type Confusion: float
+    :rtype: bool
+
     * checks if the Edge is same range IGNORING the same range flag of the edge Confusion argument is to compare real numbers idenpendently of any model space tolerance
 
     :param E:
@@ -449,8 +626,16 @@ def breplib_CheckSameRange(*args) -> "Standard_Boolean" :
     """
   return _BRepLib.breplib_CheckSameRange(*args)
 
-def breplib_SameRange(*args) -> "void" :
+def breplib_SameRange(*args):
   """
+    * will make all the curve representation have the same range domain for the parameters. This will IGNORE the same range flag value to proceed. If there is a 3D curve there it will the range of that curve. If not the first curve representation encountered in the list will give its range to the all the other curves.
+
+    :param E:
+    :type E: TopoDS_Edge &
+    :param Tolerance: default value is 1.0e-5
+    :type Tolerance: float
+    :rtype: void
+
     * will make all the curve representation have the same range domain for the parameters. This will IGNORE the same range flag value to proceed. If there is a 3D curve there it will the range of that curve. If not the first curve representation encountered in the list will give its range to the all the other curves.
 
     :param E:
@@ -462,7 +647,7 @@ def breplib_SameRange(*args) -> "void" :
     """
   return _BRepLib.breplib_SameRange(*args)
 
-def breplib_BuildCurve3d(*args) -> "Standard_Boolean" :
+def breplib_BuildCurve3d(*args):
   """
     * Computes the 3d curve for the edge <E> if it does not exist. Returns True if the curve was computed or existed. Returns False if there is no planar pcurve or the computation failed. <MaxSegment> >= 30 in approximation
 
@@ -473,15 +658,71 @@ def breplib_BuildCurve3d(*args) -> "Standard_Boolean" :
     :param Continuity: default value is GeomAbs_C1
     :type Continuity: GeomAbs_Shape
     :param MaxDegree: default value is 14
-    :type MaxDegree: int
+    :type MaxDegree: Standard_Integer
     :param MaxSegment: default value is 0
-    :type MaxSegment: int
+    :type MaxSegment: Standard_Integer
+    :rtype: bool
+
+    * Computes the 3d curve for the edge <E> if it does not exist. Returns True if the curve was computed or existed. Returns False if there is no planar pcurve or the computation failed. <MaxSegment> >= 30 in approximation
+
+    :param E:
+    :type E: TopoDS_Edge &
+    :param Tolerance: default value is 1.0e-5
+    :type Tolerance: float
+    :param Continuity: default value is GeomAbs_C1
+    :type Continuity: GeomAbs_Shape
+    :param MaxDegree: default value is 14
+    :type MaxDegree: Standard_Integer
+    :param MaxSegment: default value is 0
+    :type MaxSegment: Standard_Integer
+    :rtype: bool
+
+    * Computes the 3d curve for the edge <E> if it does not exist. Returns True if the curve was computed or existed. Returns False if there is no planar pcurve or the computation failed. <MaxSegment> >= 30 in approximation
+
+    :param E:
+    :type E: TopoDS_Edge &
+    :param Tolerance: default value is 1.0e-5
+    :type Tolerance: float
+    :param Continuity: default value is GeomAbs_C1
+    :type Continuity: GeomAbs_Shape
+    :param MaxDegree: default value is 14
+    :type MaxDegree: Standard_Integer
+    :param MaxSegment: default value is 0
+    :type MaxSegment: Standard_Integer
+    :rtype: bool
+
+    * Computes the 3d curve for the edge <E> if it does not exist. Returns True if the curve was computed or existed. Returns False if there is no planar pcurve or the computation failed. <MaxSegment> >= 30 in approximation
+
+    :param E:
+    :type E: TopoDS_Edge &
+    :param Tolerance: default value is 1.0e-5
+    :type Tolerance: float
+    :param Continuity: default value is GeomAbs_C1
+    :type Continuity: GeomAbs_Shape
+    :param MaxDegree: default value is 14
+    :type MaxDegree: Standard_Integer
+    :param MaxSegment: default value is 0
+    :type MaxSegment: Standard_Integer
+    :rtype: bool
+
+    * Computes the 3d curve for the edge <E> if it does not exist. Returns True if the curve was computed or existed. Returns False if there is no planar pcurve or the computation failed. <MaxSegment> >= 30 in approximation
+
+    :param E:
+    :type E: TopoDS_Edge &
+    :param Tolerance: default value is 1.0e-5
+    :type Tolerance: float
+    :param Continuity: default value is GeomAbs_C1
+    :type Continuity: GeomAbs_Shape
+    :param MaxDegree: default value is 14
+    :type MaxDegree: Standard_Integer
+    :param MaxSegment: default value is 0
+    :type MaxSegment: Standard_Integer
     :rtype: bool
 
     """
   return _BRepLib.breplib_BuildCurve3d(*args)
 
-def breplib_BuildCurves3d(*args) -> "Standard_Boolean" :
+def breplib_BuildCurves3d(*args):
   """
     * Computes the 3d curves for all the edges of <S> return False if one of the computation failed. <MaxSegment> >= 30 in approximation
 
@@ -492,9 +733,51 @@ def breplib_BuildCurves3d(*args) -> "Standard_Boolean" :
     :param Continuity: default value is GeomAbs_C1
     :type Continuity: GeomAbs_Shape
     :param MaxDegree: default value is 14
-    :type MaxDegree: int
+    :type MaxDegree: Standard_Integer
     :param MaxSegment: default value is 0
-    :type MaxSegment: int
+    :type MaxSegment: Standard_Integer
+    :rtype: bool
+
+    * Computes the 3d curves for all the edges of <S> return False if one of the computation failed. <MaxSegment> >= 30 in approximation
+
+    :param S:
+    :type S: TopoDS_Shape &
+    :param Tolerance:
+    :type Tolerance: float
+    :param Continuity: default value is GeomAbs_C1
+    :type Continuity: GeomAbs_Shape
+    :param MaxDegree: default value is 14
+    :type MaxDegree: Standard_Integer
+    :param MaxSegment: default value is 0
+    :type MaxSegment: Standard_Integer
+    :rtype: bool
+
+    * Computes the 3d curves for all the edges of <S> return False if one of the computation failed. <MaxSegment> >= 30 in approximation
+
+    :param S:
+    :type S: TopoDS_Shape &
+    :param Tolerance:
+    :type Tolerance: float
+    :param Continuity: default value is GeomAbs_C1
+    :type Continuity: GeomAbs_Shape
+    :param MaxDegree: default value is 14
+    :type MaxDegree: Standard_Integer
+    :param MaxSegment: default value is 0
+    :type MaxSegment: Standard_Integer
+    :rtype: bool
+
+    * Computes the 3d curves for all the edges of <S> return False if one of the computation failed. <MaxSegment> >= 30 in approximation
+
+    :param S:
+    :type S: TopoDS_Shape &
+    :param Tolerance:
+    :type Tolerance: float
+    :param Continuity: default value is GeomAbs_C1
+    :type Continuity: GeomAbs_Shape
+    :param MaxDegree: default value is 14
+    :type MaxDegree: Standard_Integer
+    :param MaxSegment: default value is 0
+    :type MaxSegment: Standard_Integer
     :rtype: bool
 
     * Computes the 3d curves for all the edges of <S> return False if one of the computation failed.
@@ -506,7 +789,7 @@ def breplib_BuildCurves3d(*args) -> "Standard_Boolean" :
     """
   return _BRepLib.breplib_BuildCurves3d(*args)
 
-def breplib_UpdateEdgeTol(*args) -> "Standard_Boolean" :
+def breplib_UpdateEdgeTol(*args):
   """
     * Checks if the edge has a Tolerance smaller than -- -- -- -- MaxToleranceToCheck if so it will compute the radius of -- the cylindrical pipe surface that MinToleranceRequest is the minimum tolerance before it is usefull to start testing. Usually it should be arround 10e-5 contains all -- the curve represenation of the edge returns True if the Edge tolerance had to be updated
 
@@ -521,7 +804,7 @@ def breplib_UpdateEdgeTol(*args) -> "Standard_Boolean" :
     """
   return _BRepLib.breplib_UpdateEdgeTol(*args)
 
-def breplib_UpdateEdgeTolerance(*args) -> "Standard_Boolean" :
+def breplib_UpdateEdgeTolerance(*args):
   """
     * -- Checks all the edges of the shape whose -- -- -- Tolerance is smaller than MaxToleranceToCheck -- Returns True if at least one edge was updated -- MinToleranceRequest is the minimum tolerance before -- it -- is usefull to start testing. Usually it should be arround -- 10e-5-- Warning :The method is very slow as it checks all.  Use only in interfaces or processing assimilate batch
 
@@ -536,8 +819,16 @@ def breplib_UpdateEdgeTolerance(*args) -> "Standard_Boolean" :
     """
   return _BRepLib.breplib_UpdateEdgeTolerance(*args)
 
-def breplib_SameParameter(*args) -> "void" :
+def breplib_SameParameter(*args):
   """
+    * Computes new 2d curve(s) for the edge <E> to have the same parameter as the 3d curve. The algorithm is not done if the flag SameParameter was True on the Edge.
+
+    :param E:
+    :type E: TopoDS_Edge &
+    :param Tolerance: default value is 1.0e-5
+    :type Tolerance: float
+    :rtype: void
+
     * Computes new 2d curve(s) for the edge <E> to have the same parameter as the 3d curve. The algorithm is not done if the flag SameParameter was True on the Edge.
 
     :param E:
@@ -556,11 +847,39 @@ def breplib_SameParameter(*args) -> "void" :
     :type forced: bool
     :rtype: void
 
+    * Computes new 2d curve(s) for all the edges of <S> to have the same parameter as the 3d curve. The algorithm is not done if the flag SameParameter was True on an Edge.
+
+    :param S:
+    :type S: TopoDS_Shape &
+    :param Tolerance: default value is 1.0e-5
+    :type Tolerance: float
+    :param forced: default value is Standard_False
+    :type forced: bool
+    :rtype: void
+
+    * Computes new 2d curve(s) for all the edges of <S> to have the same parameter as the 3d curve. The algorithm is not done if the flag SameParameter was True on an Edge.
+
+    :param S:
+    :type S: TopoDS_Shape &
+    :param Tolerance: default value is 1.0e-5
+    :type Tolerance: float
+    :param forced: default value is Standard_False
+    :type forced: bool
+    :rtype: void
+
     """
   return _BRepLib.breplib_SameParameter(*args)
 
-def breplib_UpdateTolerances(*args) -> "void" :
+def breplib_UpdateTolerances(*args):
   """
+    * Replaces tolerance of FACE EDGE VERTEX by the tolerance Max of their connected handling shapes. It is not necessary to use this call after SameParameter. (called in)
+
+    :param S:
+    :type S: TopoDS_Shape &
+    :param verifyFaceTolerance: default value is Standard_False
+    :type verifyFaceTolerance: bool
+    :rtype: void
+
     * Replaces tolerance of FACE EDGE VERTEX by the tolerance Max of their connected handling shapes. It is not necessary to use this call after SameParameter. (called in)
 
     :param S:
@@ -572,7 +891,7 @@ def breplib_UpdateTolerances(*args) -> "void" :
     """
   return _BRepLib.breplib_UpdateTolerances(*args)
 
-def breplib_OrientClosedSolid(*args) -> "Standard_Boolean" :
+def breplib_OrientClosedSolid(*args):
   """
     * Orients the solid forward and the shell with the orientation to have matter in the solid. Returns False if the solid is unOrientable (open or incoherent)
 
@@ -583,8 +902,16 @@ def breplib_OrientClosedSolid(*args) -> "Standard_Boolean" :
     """
   return _BRepLib.breplib_OrientClosedSolid(*args)
 
-def breplib_EncodeRegularity(*args) -> "void" :
+def breplib_EncodeRegularity(*args):
   """
+    * Encodes the Regularity of edges on a Shape. Warning: <TolAng> is an angular tolerance, expressed in Rad. Warning: If the edges's regularity are coded before, nothing is done.
+
+    :param S:
+    :type S: TopoDS_Shape &
+    :param TolAng: default value is 1.0e-10
+    :type TolAng: float
+    :rtype: void
+
     * Encodes the Regularity of edges on a Shape. Warning: <TolAng> is an angular tolerance, expressed in Rad. Warning: If the edges's regularity are coded before, nothing is done.
 
     :param S:
@@ -605,10 +932,22 @@ def breplib_EncodeRegularity(*args) -> "void" :
     :type TolAng: float
     :rtype: void
 
+    * Encodes the Regularity beetween <F1> and <F2> by <E> Warning: <TolAng> is an angular tolerance, expressed in Rad. Warning: If the edge's regularity is coded before, nothing is done.
+
+    :param S:
+    :type S: TopoDS_Edge &
+    :param F1:
+    :type F1: TopoDS_Face &
+    :param F2:
+    :type F2: TopoDS_Face &
+    :param TolAng: default value is 1.0e-10
+    :type TolAng: float
+    :rtype: void
+
     """
   return _BRepLib.breplib_EncodeRegularity(*args)
 
-def breplib_SortFaces(*args) -> "void" :
+def breplib_SortFaces(*args):
   """
     * Sorts in LF the Faces of S on the complexity of  their surfaces (Plane,Cylinder,Cone,Sphere,Torus,other)
 
@@ -621,7 +960,7 @@ def breplib_SortFaces(*args) -> "void" :
     """
   return _BRepLib.breplib_SortFaces(*args)
 
-def breplib_ReverseSortFaces(*args) -> "void" :
+def breplib_ReverseSortFaces(*args):
   """
     * Sorts in LF the Faces of S on the reverse  complexity of their surfaces (other,Torus,Sphere,Cone,Cylinder,Plane)
 
@@ -638,28 +977,28 @@ class BRepLib_Command(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def Delete(self, *args) -> "void" :
+    def Delete(self):
         """
         :rtype: void
 
         """
-        return _BRepLib.BRepLib_Command_Delete(self, *args)
+        return _BRepLib.BRepLib_Command_Delete(self)
 
-    def IsDone(self, *args) -> "Standard_Boolean" :
+    def IsDone(self):
         """
         :rtype: bool
 
         """
-        return _BRepLib.BRepLib_Command_IsDone(self, *args)
+        return _BRepLib.BRepLib_Command_IsDone(self)
 
-    def Check(self, *args) -> "void" :
+    def Check(self):
         """
         * Raises NotDone if done is false.
 
         :rtype: None
 
         """
-        return _BRepLib.BRepLib_Command_Check(self, *args)
+        return _BRepLib.BRepLib_Command_Check(self)
 
     def __del__(self):
     	try:
@@ -687,7 +1026,43 @@ class BRepLib_FindSurface(object):
 
         :param S:
         :type S: TopoDS_Shape &
-        :param Tol: default value is -1
+        :param Tol: default value is - 1
+        :type Tol: float
+        :param OnlyPlane: default value is Standard_False
+        :type OnlyPlane: bool
+        :param OnlyClosed: default value is Standard_False
+        :type OnlyClosed: bool
+        :rtype: None
+
+        * Computes the Surface from the edges of <S> with the given tolerance. if <OnlyPlane> is true, the computed surface will be a plane. If it is not possible to find a plane, the flag NotDone will be set. If <OnlyClosed> is true, then S sould be a wire and the existing surface, on which wire S is not closed in 2D, will be ignored.
+
+        :param S:
+        :type S: TopoDS_Shape &
+        :param Tol: default value is - 1
+        :type Tol: float
+        :param OnlyPlane: default value is Standard_False
+        :type OnlyPlane: bool
+        :param OnlyClosed: default value is Standard_False
+        :type OnlyClosed: bool
+        :rtype: None
+
+        * Computes the Surface from the edges of <S> with the given tolerance. if <OnlyPlane> is true, the computed surface will be a plane. If it is not possible to find a plane, the flag NotDone will be set. If <OnlyClosed> is true, then S sould be a wire and the existing surface, on which wire S is not closed in 2D, will be ignored.
+
+        :param S:
+        :type S: TopoDS_Shape &
+        :param Tol: default value is - 1
+        :type Tol: float
+        :param OnlyPlane: default value is Standard_False
+        :type OnlyPlane: bool
+        :param OnlyClosed: default value is Standard_False
+        :type OnlyClosed: bool
+        :rtype: None
+
+        * Computes the Surface from the edges of <S> with the given tolerance. if <OnlyPlane> is true, the computed surface will be a plane. If it is not possible to find a plane, the flag NotDone will be set. If <OnlyClosed> is true, then S sould be a wire and the existing surface, on which wire S is not closed in 2D, will be ignored.
+
+        :param S:
+        :type S: TopoDS_Shape &
+        :param Tol: default value is - 1
         :type Tol: float
         :param OnlyPlane: default value is Standard_False
         :type OnlyPlane: bool
@@ -697,13 +1072,49 @@ class BRepLib_FindSurface(object):
 
         """
         _BRepLib.BRepLib_FindSurface_swiginit(self,_BRepLib.new_BRepLib_FindSurface(*args))
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
         * Computes the Surface from the edges of <S> with the given tolerance. if <OnlyPlane> is true, the computed surface will be a plane. If it is not possible to find a plane, the flag NotDone will be set. If <OnlyClosed> is true, then S sould be a wire and the existing surface, on which wire S is not closed in 2D, will be ignored.
 
         :param S:
         :type S: TopoDS_Shape &
-        :param Tol: default value is -1
+        :param Tol: default value is - 1
+        :type Tol: float
+        :param OnlyPlane: default value is Standard_False
+        :type OnlyPlane: bool
+        :param OnlyClosed: default value is Standard_False
+        :type OnlyClosed: bool
+        :rtype: None
+
+        * Computes the Surface from the edges of <S> with the given tolerance. if <OnlyPlane> is true, the computed surface will be a plane. If it is not possible to find a plane, the flag NotDone will be set. If <OnlyClosed> is true, then S sould be a wire and the existing surface, on which wire S is not closed in 2D, will be ignored.
+
+        :param S:
+        :type S: TopoDS_Shape &
+        :param Tol: default value is - 1
+        :type Tol: float
+        :param OnlyPlane: default value is Standard_False
+        :type OnlyPlane: bool
+        :param OnlyClosed: default value is Standard_False
+        :type OnlyClosed: bool
+        :rtype: None
+
+        * Computes the Surface from the edges of <S> with the given tolerance. if <OnlyPlane> is true, the computed surface will be a plane. If it is not possible to find a plane, the flag NotDone will be set. If <OnlyClosed> is true, then S sould be a wire and the existing surface, on which wire S is not closed in 2D, will be ignored.
+
+        :param S:
+        :type S: TopoDS_Shape &
+        :param Tol: default value is - 1
+        :type Tol: float
+        :param OnlyPlane: default value is Standard_False
+        :type OnlyPlane: bool
+        :param OnlyClosed: default value is Standard_False
+        :type OnlyClosed: bool
+        :rtype: None
+
+        * Computes the Surface from the edges of <S> with the given tolerance. if <OnlyPlane> is true, the computed surface will be a plane. If it is not possible to find a plane, the flag NotDone will be set. If <OnlyClosed> is true, then S sould be a wire and the existing surface, on which wire S is not closed in 2D, will be ignored.
+
+        :param S:
+        :type S: TopoDS_Shape &
+        :param Tol: default value is - 1
         :type Tol: float
         :param OnlyPlane: default value is Standard_False
         :type OnlyPlane: bool
@@ -714,47 +1125,47 @@ class BRepLib_FindSurface(object):
         """
         return _BRepLib.BRepLib_FindSurface_Init(self, *args)
 
-    def Found(self, *args) -> "Standard_Boolean" :
+    def Found(self):
         """
         :rtype: bool
 
         """
-        return _BRepLib.BRepLib_FindSurface_Found(self, *args)
+        return _BRepLib.BRepLib_FindSurface_Found(self)
 
-    def Surface(self, *args) -> "Handle_Geom_Surface" :
+    def Surface(self):
         """
         :rtype: Handle_Geom_Surface
 
         """
-        return _BRepLib.BRepLib_FindSurface_Surface(self, *args)
+        return _BRepLib.BRepLib_FindSurface_Surface(self)
 
-    def Tolerance(self, *args) -> "Standard_Real" :
+    def Tolerance(self):
         """
         :rtype: float
 
         """
-        return _BRepLib.BRepLib_FindSurface_Tolerance(self, *args)
+        return _BRepLib.BRepLib_FindSurface_Tolerance(self)
 
-    def ToleranceReached(self, *args) -> "Standard_Real" :
+    def ToleranceReached(self):
         """
         :rtype: float
 
         """
-        return _BRepLib.BRepLib_FindSurface_ToleranceReached(self, *args)
+        return _BRepLib.BRepLib_FindSurface_ToleranceReached(self)
 
-    def Existed(self, *args) -> "Standard_Boolean" :
+    def Existed(self):
         """
         :rtype: bool
 
         """
-        return _BRepLib.BRepLib_FindSurface_Existed(self, *args)
+        return _BRepLib.BRepLib_FindSurface_Existed(self)
 
-    def Location(self, *args) -> "TopLoc_Location" :
+    def Location(self):
         """
         :rtype: TopLoc_Location
 
         """
-        return _BRepLib.BRepLib_FindSurface_Location(self, *args)
+        return _BRepLib.BRepLib_FindSurface_Location(self)
 
     def __del__(self):
     	try:
@@ -788,9 +1199,17 @@ class BRepLib_FuseEdges(object):
         :type PerformNow: bool
         :rtype: None
 
+        * Initialise members and build construction of map of ancestors.
+
+        :param theShape:
+        :type theShape: TopoDS_Shape &
+        :param PerformNow: default value is Standard_False
+        :type PerformNow: bool
+        :rtype: None
+
         """
         _BRepLib.BRepLib_FuseEdges_swiginit(self,_BRepLib.new_BRepLib_FuseEdges(*args))
-    def AvoidEdges(self, *args) -> "void" :
+    def AvoidEdges(self, *args):
         """
         * set edges to avoid being fused
 
@@ -801,8 +1220,14 @@ class BRepLib_FuseEdges(object):
         """
         return _BRepLib.BRepLib_FuseEdges_AvoidEdges(self, *args)
 
-    def SetConcatBSpl(self, *args) -> "void" :
+    def SetConcatBSpl(self, *args):
         """
+        * set mode to enable concatenation G1 BSpline edges in one End Modified by IFV 19.04.07
+
+        :param theConcatBSpl: default value is Standard_True
+        :type theConcatBSpl: bool
+        :rtype: None
+
         * set mode to enable concatenation G1 BSpline edges in one End Modified by IFV 19.04.07
 
         :param theConcatBSpl: default value is Standard_True
@@ -812,7 +1237,7 @@ class BRepLib_FuseEdges(object):
         """
         return _BRepLib.BRepLib_FuseEdges_SetConcatBSpl(self, *args)
 
-    def Edges(self, *args) -> "void" :
+    def Edges(self, *args):
         """
         * returns all the list of edges to be fused each list of the map represent a set of connex edges that can be fused.
 
@@ -823,7 +1248,7 @@ class BRepLib_FuseEdges(object):
         """
         return _BRepLib.BRepLib_FuseEdges_Edges(self, *args)
 
-    def ResultEdges(self, *args) -> "void" :
+    def ResultEdges(self, *args):
         """
         * returns all the fused edges. each integer entry in the map corresponds to the integer in the DataMapOfIntegerListOfShape we get in method Edges. That is to say, to the list of edges in theMapLstEdg(i) corresponds the resulting edge theMapEdge(i)
 
@@ -834,7 +1259,7 @@ class BRepLib_FuseEdges(object):
         """
         return _BRepLib.BRepLib_FuseEdges_ResultEdges(self, *args)
 
-    def Faces(self, *args) -> "void" :
+    def Faces(self, *args):
         """
         * returns the map of modified faces.
 
@@ -845,32 +1270,32 @@ class BRepLib_FuseEdges(object):
         """
         return _BRepLib.BRepLib_FuseEdges_Faces(self, *args)
 
-    def Shape(self, *args) -> "TopoDS_Shape" :
+    def Shape(self):
         """
         * returns myShape modified with the list of internal edges removed from it.
 
         :rtype: TopoDS_Shape
 
         """
-        return _BRepLib.BRepLib_FuseEdges_Shape(self, *args)
+        return _BRepLib.BRepLib_FuseEdges_Shape(self)
 
-    def NbVertices(self, *args) -> "Standard_Integer" :
+    def NbVertices(self):
         """
         * returns the number of vertices candidate to be removed
 
         :rtype: int
 
         """
-        return _BRepLib.BRepLib_FuseEdges_NbVertices(self, *args)
+        return _BRepLib.BRepLib_FuseEdges_NbVertices(self)
 
-    def Perform(self, *args) -> "void" :
+    def Perform(self):
         """
         * Using map of list of connex edges, fuse each list to one edge and then update myShape
 
         :rtype: None
 
         """
-        return _BRepLib.BRepLib_FuseEdges_Perform(self, *args)
+        return _BRepLib.BRepLib_FuseEdges_Perform(self)
 
     def __del__(self):
     	try:
@@ -896,23 +1321,23 @@ class BRepLib_MakeShape(BRepLib_Command):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def Build(self, *args) -> "void" :
+    def Build(self):
         """
         * This is called by Shape(). It does nothing but may be redefined.
 
         :rtype: None
 
         """
-        return _BRepLib.BRepLib_MakeShape_Build(self, *args)
+        return _BRepLib.BRepLib_MakeShape_Build(self)
 
-    def Shape(self, *args) -> "TopoDS_Shape const" :
+    def Shape(self):
         """
         :rtype: TopoDS_Shape
 
         """
-        return _BRepLib.BRepLib_MakeShape_Shape(self, *args)
+        return _BRepLib.BRepLib_MakeShape_Shape(self)
 
-    def FaceStatus(self, *args) -> "BRepLib_ShapeModification" :
+    def FaceStatus(self, *args):
         """
         * returns the status of the Face after the shape creation.
 
@@ -923,7 +1348,7 @@ class BRepLib_MakeShape(BRepLib_Command):
         """
         return _BRepLib.BRepLib_MakeShape_FaceStatus(self, *args)
 
-    def HasDescendants(self, *args) -> "Standard_Boolean" :
+    def HasDescendants(self, *args):
         """
         * Returns True if the Face generates new topology.
 
@@ -934,7 +1359,7 @@ class BRepLib_MakeShape(BRepLib_Command):
         """
         return _BRepLib.BRepLib_MakeShape_HasDescendants(self, *args)
 
-    def DescendantFaces(self, *args) -> "TopTools_ListOfShape const &" :
+    def DescendantFaces(self, *args):
         """
         * returns the list of generated Faces.
 
@@ -945,27 +1370,27 @@ class BRepLib_MakeShape(BRepLib_Command):
         """
         return _BRepLib.BRepLib_MakeShape_DescendantFaces(self, *args)
 
-    def NbSurfaces(self, *args) -> "Standard_Integer" :
+    def NbSurfaces(self):
         """
         * returns the number of surfaces after the shape creation.
 
         :rtype: int
 
         """
-        return _BRepLib.BRepLib_MakeShape_NbSurfaces(self, *args)
+        return _BRepLib.BRepLib_MakeShape_NbSurfaces(self)
 
-    def NewFaces(self, *args) -> "TopTools_ListOfShape const &" :
+    def NewFaces(self, *args):
         """
         * Return the faces created for surface I.
 
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :rtype: TopTools_ListOfShape
 
         """
         return _BRepLib.BRepLib_MakeShape_NewFaces(self, *args)
 
-    def FacesFromEdges(self, *args) -> "TopTools_ListOfShape const &" :
+    def FacesFromEdges(self, *args):
         """
         * returns a list of the created faces from the edge <E>.
 
@@ -1273,7 +1698,7 @@ class BRepLib_MakeEdge(BRepLib_MakeShape):
 
         """
         _BRepLib.BRepLib_MakeEdge_swiginit(self,_BRepLib.new_BRepLib_MakeEdge(*args))
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
         :param C:
         :type C: Handle_Geom_Curve &
@@ -1394,39 +1819,39 @@ class BRepLib_MakeEdge(BRepLib_MakeShape):
         """
         return _BRepLib.BRepLib_MakeEdge_Init(self, *args)
 
-    def Error(self, *args) -> "BRepLib_EdgeError" :
+    def Error(self):
         """
         * Returns the error description when NotDone.
 
         :rtype: BRepLib_EdgeError
 
         """
-        return _BRepLib.BRepLib_MakeEdge_Error(self, *args)
+        return _BRepLib.BRepLib_MakeEdge_Error(self)
 
-    def Edge(self, *args) -> "TopoDS_Edge const" :
+    def Edge(self):
         """
         :rtype: TopoDS_Edge
 
         """
-        return _BRepLib.BRepLib_MakeEdge_Edge(self, *args)
+        return _BRepLib.BRepLib_MakeEdge_Edge(self)
 
-    def Vertex1(self, *args) -> "TopoDS_Vertex const" :
+    def Vertex1(self):
         """
         * Returns the first vertex of the edge. May be Null.
 
         :rtype: TopoDS_Vertex
 
         """
-        return _BRepLib.BRepLib_MakeEdge_Vertex1(self, *args)
+        return _BRepLib.BRepLib_MakeEdge_Vertex1(self)
 
-    def Vertex2(self, *args) -> "TopoDS_Vertex const" :
+    def Vertex2(self):
         """
         * Returns the second vertex of the edge. May be Null.
 
         :rtype: TopoDS_Vertex
 
         """
-        return _BRepLib.BRepLib_MakeEdge_Vertex2(self, *args)
+        return _BRepLib.BRepLib_MakeEdge_Vertex2(self)
 
     def __del__(self):
     	try:
@@ -1656,7 +2081,7 @@ class BRepLib_MakeEdge2d(BRepLib_MakeShape):
 
         """
         _BRepLib.BRepLib_MakeEdge2d_swiginit(self,_BRepLib.new_BRepLib_MakeEdge2d(*args))
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
         :param C:
         :type C: Handle_Geom2d_Curve &
@@ -1713,39 +2138,39 @@ class BRepLib_MakeEdge2d(BRepLib_MakeShape):
         """
         return _BRepLib.BRepLib_MakeEdge2d_Init(self, *args)
 
-    def Error(self, *args) -> "BRepLib_EdgeError" :
+    def Error(self):
         """
         * Returns the error description when NotDone.
 
         :rtype: BRepLib_EdgeError
 
         """
-        return _BRepLib.BRepLib_MakeEdge2d_Error(self, *args)
+        return _BRepLib.BRepLib_MakeEdge2d_Error(self)
 
-    def Edge(self, *args) -> "TopoDS_Edge const" :
+    def Edge(self):
         """
         :rtype: TopoDS_Edge
 
         """
-        return _BRepLib.BRepLib_MakeEdge2d_Edge(self, *args)
+        return _BRepLib.BRepLib_MakeEdge2d_Edge(self)
 
-    def Vertex1(self, *args) -> "TopoDS_Vertex const" :
+    def Vertex1(self):
         """
         * Returns the first vertex of the edge. May be Null.
 
         :rtype: TopoDS_Vertex
 
         """
-        return _BRepLib.BRepLib_MakeEdge2d_Vertex1(self, *args)
+        return _BRepLib.BRepLib_MakeEdge2d_Vertex1(self)
 
-    def Vertex2(self, *args) -> "TopoDS_Vertex const" :
+    def Vertex2(self):
         """
         * Returns the second vertex of the edge. May be Null.
 
         :rtype: TopoDS_Vertex
 
         """
-        return _BRepLib.BRepLib_MakeEdge2d_Vertex2(self, *args)
+        return _BRepLib.BRepLib_MakeEdge2d_Vertex2(self)
 
     def __del__(self):
     	try:
@@ -1911,10 +2336,38 @@ class BRepLib_MakeFace(BRepLib_MakeShape):
         :type OnlyPlane: bool
         :rtype: None
 
+        * Find a surface from the wire and make a face. if <OnlyPlane> is true, the computed surface will be a plane. If it is not possible to find a plane, the flag NotDone will be set.
+
+        :param W:
+        :type W: TopoDS_Wire &
+        :param OnlyPlane: default value is Standard_False
+        :type OnlyPlane: bool
+        :rtype: None
+
         * Make a face from a plane and a wire.
 
         :param P:
         :type P: gp_Pln
+        :param W:
+        :type W: TopoDS_Wire &
+        :param Inside: default value is Standard_True
+        :type Inside: bool
+        :rtype: None
+
+        * Make a face from a plane and a wire.
+
+        :param P:
+        :type P: gp_Pln
+        :param W:
+        :type W: TopoDS_Wire &
+        :param Inside: default value is Standard_True
+        :type Inside: bool
+        :rtype: None
+
+        * Make a face from a cylinder and a wire.
+
+        :param C:
+        :type C: gp_Cylinder
         :param W:
         :type W: TopoDS_Wire &
         :param Inside: default value is Standard_True
@@ -1941,10 +2394,40 @@ class BRepLib_MakeFace(BRepLib_MakeShape):
         :type Inside: bool
         :rtype: None
 
+        * Make a face from a cone and a wire.
+
+        :param C:
+        :type C: gp_Cone
+        :param W:
+        :type W: TopoDS_Wire &
+        :param Inside: default value is Standard_True
+        :type Inside: bool
+        :rtype: None
+
         * Make a face from a sphere and a wire.
 
         :param S:
         :type S: gp_Sphere
+        :param W:
+        :type W: TopoDS_Wire &
+        :param Inside: default value is Standard_True
+        :type Inside: bool
+        :rtype: None
+
+        * Make a face from a sphere and a wire.
+
+        :param S:
+        :type S: gp_Sphere
+        :param W:
+        :type W: TopoDS_Wire &
+        :param Inside: default value is Standard_True
+        :type Inside: bool
+        :rtype: None
+
+        * Make a face from a torus and a wire.
+
+        :param C:
+        :type C: gp_Torus
         :param W:
         :type W: TopoDS_Wire &
         :param Inside: default value is Standard_True
@@ -1971,6 +2454,16 @@ class BRepLib_MakeFace(BRepLib_MakeShape):
         :type Inside: bool
         :rtype: None
 
+        * Make a face from a Surface and a wire.
+
+        :param S:
+        :type S: Handle_Geom_Surface &
+        :param W:
+        :type W: TopoDS_Wire &
+        :param Inside: default value is Standard_True
+        :type Inside: bool
+        :rtype: None
+
         * Adds the wire <W> in the face <F>
 
         :param F:
@@ -1981,7 +2474,7 @@ class BRepLib_MakeFace(BRepLib_MakeShape):
 
         """
         _BRepLib.BRepLib_MakeFace_swiginit(self,_BRepLib.new_BRepLib_MakeFace(*args))
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
         * Load the face.
 
@@ -2018,7 +2511,7 @@ class BRepLib_MakeFace(BRepLib_MakeShape):
         """
         return _BRepLib.BRepLib_MakeFace_Init(self, *args)
 
-    def Add(self, *args) -> "void" :
+    def Add(self, *args):
         """
         * Adds the wire <W> in the current face.
 
@@ -2029,21 +2522,21 @@ class BRepLib_MakeFace(BRepLib_MakeShape):
         """
         return _BRepLib.BRepLib_MakeFace_Add(self, *args)
 
-    def Error(self, *args) -> "BRepLib_FaceError" :
+    def Error(self):
         """
         :rtype: BRepLib_FaceError
 
         """
-        return _BRepLib.BRepLib_MakeFace_Error(self, *args)
+        return _BRepLib.BRepLib_MakeFace_Error(self)
 
-    def Face(self, *args) -> "TopoDS_Face const" :
+    def Face(self):
         """
         * Returns the new face.
 
         :rtype: TopoDS_Face
 
         """
-        return _BRepLib.BRepLib_MakeFace_Face(self, *args)
+        return _BRepLib.BRepLib_MakeFace_Face(self)
 
     def __del__(self):
     	try:
@@ -2092,6 +2585,28 @@ class BRepLib_MakePolygon(BRepLib_MakeShape):
         :type P2: gp_Pnt
         :param P3:
         :type P3: gp_Pnt
+        :param Close: default value is Standard_False
+        :type Close: bool
+        :rtype: None
+
+        :param P1:
+        :type P1: gp_Pnt
+        :param P2:
+        :type P2: gp_Pnt
+        :param P3:
+        :type P3: gp_Pnt
+        :param P4:
+        :type P4: gp_Pnt
+        :param Close: default value is Standard_False
+        :type Close: bool
+        :rtype: None
+
+        :param P1:
+        :type P1: gp_Pnt
+        :param P2:
+        :type P2: gp_Pnt
+        :param P3:
+        :type P3: gp_Pnt
         :param P4:
         :type P4: gp_Pnt
         :param Close: default value is Standard_False
@@ -2120,6 +2635,28 @@ class BRepLib_MakePolygon(BRepLib_MakeShape):
         :type V2: TopoDS_Vertex &
         :param V3:
         :type V3: TopoDS_Vertex &
+        :param Close: default value is Standard_False
+        :type Close: bool
+        :rtype: None
+
+        :param V1:
+        :type V1: TopoDS_Vertex &
+        :param V2:
+        :type V2: TopoDS_Vertex &
+        :param V3:
+        :type V3: TopoDS_Vertex &
+        :param V4:
+        :type V4: TopoDS_Vertex &
+        :param Close: default value is Standard_False
+        :type Close: bool
+        :rtype: None
+
+        :param V1:
+        :type V1: TopoDS_Vertex &
+        :param V2:
+        :type V2: TopoDS_Vertex &
+        :param V3:
+        :type V3: TopoDS_Vertex &
         :param V4:
         :type V4: TopoDS_Vertex &
         :param Close: default value is Standard_False
@@ -2128,7 +2665,7 @@ class BRepLib_MakePolygon(BRepLib_MakeShape):
 
         """
         _BRepLib.BRepLib_MakePolygon_swiginit(self,_BRepLib.new_BRepLib_MakePolygon(*args))
-    def Add(self, *args) -> "void" :
+    def Add(self, *args):
         """
         :param P:
         :type P: gp_Pnt
@@ -2141,51 +2678,51 @@ class BRepLib_MakePolygon(BRepLib_MakeShape):
         """
         return _BRepLib.BRepLib_MakePolygon_Add(self, *args)
 
-    def Added(self, *args) -> "Standard_Boolean" :
+    def Added(self):
         """
         * Returns True if the last vertex or point was succesfully added.
 
         :rtype: bool
 
         """
-        return _BRepLib.BRepLib_MakePolygon_Added(self, *args)
+        return _BRepLib.BRepLib_MakePolygon_Added(self)
 
-    def Close(self, *args) -> "void" :
+    def Close(self):
         """
         :rtype: None
 
         """
-        return _BRepLib.BRepLib_MakePolygon_Close(self, *args)
+        return _BRepLib.BRepLib_MakePolygon_Close(self)
 
-    def FirstVertex(self, *args) -> "TopoDS_Vertex const" :
+    def FirstVertex(self):
         """
         :rtype: TopoDS_Vertex
 
         """
-        return _BRepLib.BRepLib_MakePolygon_FirstVertex(self, *args)
+        return _BRepLib.BRepLib_MakePolygon_FirstVertex(self)
 
-    def LastVertex(self, *args) -> "TopoDS_Vertex const" :
+    def LastVertex(self):
         """
         :rtype: TopoDS_Vertex
 
         """
-        return _BRepLib.BRepLib_MakePolygon_LastVertex(self, *args)
+        return _BRepLib.BRepLib_MakePolygon_LastVertex(self)
 
-    def Edge(self, *args) -> "TopoDS_Edge const" :
+    def Edge(self):
         """
         * Returns the last edge added to the polygon.
 
         :rtype: TopoDS_Edge
 
         """
-        return _BRepLib.BRepLib_MakePolygon_Edge(self, *args)
+        return _BRepLib.BRepLib_MakePolygon_Edge(self)
 
-    def Wire(self, *args) -> "TopoDS_Wire const" :
+    def Wire(self):
         """
         :rtype: TopoDS_Wire
 
         """
-        return _BRepLib.BRepLib_MakePolygon_Wire(self, *args)
+        return _BRepLib.BRepLib_MakePolygon_Wire(self)
 
     def __del__(self):
     	try:
@@ -2223,6 +2760,26 @@ class BRepLib_MakeShell(BRepLib_MakeShape):
 
         :param S:
         :type S: Handle_Geom_Surface &
+        :param Segment: default value is Standard_False
+        :type Segment: bool
+        :rtype: None
+
+        :param S:
+        :type S: Handle_Geom_Surface &
+        :param UMin:
+        :type UMin: float
+        :param UMax:
+        :type UMax: float
+        :param VMin:
+        :type VMin: float
+        :param VMax:
+        :type VMax: float
+        :param Segment: default value is Standard_False
+        :type Segment: bool
+        :rtype: None
+
+        :param S:
+        :type S: Handle_Geom_Surface &
         :param UMin:
         :type UMin: float
         :param UMax:
@@ -2237,8 +2794,24 @@ class BRepLib_MakeShell(BRepLib_MakeShape):
 
         """
         _BRepLib.BRepLib_MakeShell_swiginit(self,_BRepLib.new_BRepLib_MakeShell(*args))
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
+        * Creates the shell from the surface and the min-max values.
+
+        :param S:
+        :type S: Handle_Geom_Surface &
+        :param UMin:
+        :type UMin: float
+        :param UMax:
+        :type UMax: float
+        :param VMin:
+        :type VMin: float
+        :param VMax:
+        :type VMax: float
+        :param Segment: default value is Standard_False
+        :type Segment: bool
+        :rtype: None
+
         * Creates the shell from the surface and the min-max values.
 
         :param S:
@@ -2258,21 +2831,21 @@ class BRepLib_MakeShell(BRepLib_MakeShape):
         """
         return _BRepLib.BRepLib_MakeShell_Init(self, *args)
 
-    def Error(self, *args) -> "BRepLib_ShellError" :
+    def Error(self):
         """
         :rtype: BRepLib_ShellError
 
         """
-        return _BRepLib.BRepLib_MakeShell_Error(self, *args)
+        return _BRepLib.BRepLib_MakeShell_Error(self)
 
-    def Shell(self, *args) -> "TopoDS_Shell const" :
+    def Shell(self):
         """
         * Returns the new Shell.
 
         :rtype: TopoDS_Shell
 
         """
-        return _BRepLib.BRepLib_MakeShell_Shell(self, *args)
+        return _BRepLib.BRepLib_MakeShell_Shell(self)
 
     def __del__(self):
     	try:
@@ -2344,7 +2917,7 @@ class BRepLib_MakeSolid(BRepLib_MakeShape):
 
         """
         _BRepLib.BRepLib_MakeSolid_swiginit(self,_BRepLib.new_BRepLib_MakeSolid(*args))
-    def Add(self, *args) -> "void" :
+    def Add(self, *args):
         """
         * Add the shell to the current solid.
 
@@ -2355,14 +2928,14 @@ class BRepLib_MakeSolid(BRepLib_MakeShape):
         """
         return _BRepLib.BRepLib_MakeSolid_Add(self, *args)
 
-    def Solid(self, *args) -> "TopoDS_Solid const" :
+    def Solid(self):
         """
         * Returns the new Solid.
 
         :rtype: TopoDS_Solid
 
         """
-        return _BRepLib.BRepLib_MakeSolid_Solid(self, *args)
+        return _BRepLib.BRepLib_MakeSolid_Solid(self)
 
     def __del__(self):
     	try:
@@ -2389,12 +2962,12 @@ class BRepLib_MakeVertex(BRepLib_MakeShape):
 
         """
         _BRepLib.BRepLib_MakeVertex_swiginit(self,_BRepLib.new_BRepLib_MakeVertex(*args))
-    def Vertex(self, *args) -> "TopoDS_Vertex const" :
+    def Vertex(self):
         """
         :rtype: TopoDS_Vertex
 
         """
-        return _BRepLib.BRepLib_MakeVertex_Vertex(self, *args)
+        return _BRepLib.BRepLib_MakeVertex_Vertex(self)
 
     def __del__(self):
     	try:
@@ -2470,7 +3043,7 @@ class BRepLib_MakeWire(BRepLib_MakeShape):
 
         """
         _BRepLib.BRepLib_MakeWire_swiginit(self,_BRepLib.new_BRepLib_MakeWire(*args))
-    def Add(self, *args) -> "void" :
+    def Add(self, *args):
         """
         * Add the edge <E> to the current wire.
 
@@ -2493,39 +3066,39 @@ class BRepLib_MakeWire(BRepLib_MakeShape):
         """
         return _BRepLib.BRepLib_MakeWire_Add(self, *args)
 
-    def Error(self, *args) -> "BRepLib_WireError" :
+    def Error(self):
         """
         :rtype: BRepLib_WireError
 
         """
-        return _BRepLib.BRepLib_MakeWire_Error(self, *args)
+        return _BRepLib.BRepLib_MakeWire_Error(self)
 
-    def Wire(self, *args) -> "TopoDS_Wire const" :
+    def Wire(self):
         """
         * Returns the new wire.
 
         :rtype: TopoDS_Wire
 
         """
-        return _BRepLib.BRepLib_MakeWire_Wire(self, *args)
+        return _BRepLib.BRepLib_MakeWire_Wire(self)
 
-    def Edge(self, *args) -> "TopoDS_Edge const" :
+    def Edge(self):
         """
         * Returns the last edge added to the wire.
 
         :rtype: TopoDS_Edge
 
         """
-        return _BRepLib.BRepLib_MakeWire_Edge(self, *args)
+        return _BRepLib.BRepLib_MakeWire_Edge(self)
 
-    def Vertex(self, *args) -> "TopoDS_Vertex const" :
+    def Vertex(self):
         """
         * Returns the last connecting vertex.
 
         :rtype: TopoDS_Vertex
 
         """
-        return _BRepLib.BRepLib_MakeWire_Vertex(self, *args)
+        return _BRepLib.BRepLib_MakeWire_Vertex(self)
 
     def __del__(self):
     	try:

@@ -138,16 +138,28 @@ class FairCurve_Batten(object):
         :type Slope: float
         :rtype: None
 
+        * Constructor with the two points and the geometrical characteristics of the batten (elastic beam) Height is the height of the deformation, and Slope is the slope value, initialized at 0. The user can then supply the desired slope value by the method, SetSlope. Other parameters are initialized as follow : - FreeSliding = False - ConstraintOrder1 = 1 - ConstraintOrder2 = 1 - Angle1 = 0 - Angle2 = 0 - SlidingFactor = 1 Exceptions NegativeValue if Height is less than or equal to 0. NullValue if the distance between P1 and P2 is less than or equal to the tolerance value for distance in Precision::Confusion: P1.IsEqual(P2, Precision::Confusion()). The function gp_Pnt2d::IsEqual tests to see if this is the case.
+
+        :param P1:
+        :type P1: gp_Pnt2d
+        :param P2:
+        :type P2: gp_Pnt2d
+        :param Height:
+        :type Height: float
+        :param Slope: default value is 0
+        :type Slope: float
+        :rtype: None
+
         """
         _FairCurve.FairCurve_Batten_swiginit(self,_FairCurve.new_FairCurve_Batten(*args))
-    def Delete(self, *args) -> "void" :
+    def Delete(self):
         """
         :rtype: void
 
         """
-        return _FairCurve.FairCurve_Batten_Delete(self, *args)
+        return _FairCurve.FairCurve_Batten_Delete(self)
 
-    def SetFreeSliding(self, *args) -> "void" :
+    def SetFreeSliding(self, *args):
         """
         * Freesliding is initialized with the default setting false. When Freesliding is set to true and, as a result, sliding is free, the sliding factor is automatically computed to satisfy the equilibrium of the batten.
 
@@ -158,29 +170,29 @@ class FairCurve_Batten(object):
         """
         return _FairCurve.FairCurve_Batten_SetFreeSliding(self, *args)
 
-    def SetConstraintOrder1(self, *args) -> "void" :
+    def SetConstraintOrder1(self, *args):
         """
         * Allows you to change the order of the constraint on the first point. ConstraintOrder has the default setting of 1. The following settings are available: - 0-the curve must pass through a point - 1-the curve must pass through a point and have a given tangent - 2-the curve must pass through a point, have a given tangent and a given curvature. The third setting is only valid for FairCurve_MinimalVariation curves. These constraints, though geometric, represent the mechanical constraints due, for example, to the resistance of the material the actual physical batten is made of.
 
         :param ConstraintOrder:
-        :type ConstraintOrder: int
+        :type ConstraintOrder: Standard_Integer
         :rtype: None
 
         """
         return _FairCurve.FairCurve_Batten_SetConstraintOrder1(self, *args)
 
-    def SetConstraintOrder2(self, *args) -> "void" :
+    def SetConstraintOrder2(self, *args):
         """
         * Allows you to change the order of the constraint on the second point. ConstraintOrder is initialized with the default setting of 1. The following settings are available: - 0-the curve must pass through a point - 1-the curve must pass through a point and have a given tangent - 2-the curve must pass through a point, have a given tangent and a given curvature. The third setting is only valid for FairCurve_MinimalVariation curves. These constraints, though geometric, represent the mechanical constraints due, for example, to the resistance of the material the actual physical batten is made of.
 
         :param ConstraintOrder:
-        :type ConstraintOrder: int
+        :type ConstraintOrder: Standard_Integer
         :rtype: None
 
         """
         return _FairCurve.FairCurve_Batten_SetConstraintOrder2(self, *args)
 
-    def SetP1(self, *args) -> "void" :
+    def SetP1(self, *args):
         """
         * Allows you to change the location of the point, P1, and in doing so, modify the curve. Warning This method changes the angle as well as the point. Exceptions NullValue if the distance between P1 and P2 is less than or equal to the tolerance value for distance in Precision::Confusion: P1.IsEqual(P2, Precision::Confusion()). The function gp_Pnt2d::IsEqual tests to see if this is the case.
 
@@ -191,7 +203,7 @@ class FairCurve_Batten(object):
         """
         return _FairCurve.FairCurve_Batten_SetP1(self, *args)
 
-    def SetP2(self, *args) -> "void" :
+    def SetP2(self, *args):
         """
         * Allows you to change the location of the point, P1, and in doing so, modify the curve. Warning This method changes the angle as well as the point. Exceptions NullValue if the distance between P1 and P2 is less than or equal to the tolerance value for distance in Precision::Confusion: P1.IsEqual(P2, Precision::Confusion()). The function gp_Pnt2d::IsEqual tests to see if this is the case.
 
@@ -202,7 +214,7 @@ class FairCurve_Batten(object):
         """
         return _FairCurve.FairCurve_Batten_SetP2(self, *args)
 
-    def SetAngle1(self, *args) -> "void" :
+    def SetAngle1(self, *args):
         """
         * Allows you to change the angle Angle1 at the first point, P1. The default setting is 0.
 
@@ -213,7 +225,7 @@ class FairCurve_Batten(object):
         """
         return _FairCurve.FairCurve_Batten_SetAngle1(self, *args)
 
-    def SetAngle2(self, *args) -> "void" :
+    def SetAngle2(self, *args):
         """
         * Allows you to change the angle Angle2 at the second point, P2. The default setting is 0.
 
@@ -224,7 +236,7 @@ class FairCurve_Batten(object):
         """
         return _FairCurve.FairCurve_Batten_SetAngle2(self, *args)
 
-    def SetHeight(self, *args) -> "void" :
+    def SetHeight(self, *args):
         """
         * Allows you to change the height of the deformation. Raises NegativeValue; -- if Height <= 0 if Height <= 0
 
@@ -235,7 +247,7 @@ class FairCurve_Batten(object):
         """
         return _FairCurve.FairCurve_Batten_SetHeight(self, *args)
 
-    def SetSlope(self, *args) -> "void" :
+    def SetSlope(self, *args):
         """
         * Allows you to set the slope value, Slope.
 
@@ -246,7 +258,7 @@ class FairCurve_Batten(object):
         """
         return _FairCurve.FairCurve_Batten_SetSlope(self, *args)
 
-    def SetSlidingFactor(self, *args) -> "void" :
+    def SetSlidingFactor(self, *args):
         """
         * Allows you to change the ratio SlidingFactor. This compares the length of the batten and the reference length, which is, in turn, a function of the constraints. This modification has one of the following two effects: - if you increase the value, it inflates the batten - if you decrease the value, it flattens the batten. When sliding is free, the sliding factor is automatically computed to satisfy the equilibrium of the batten. When sliding is imposed, a value is required for the sliding factor. SlidingFactor is initialized with the default setting of 1.
 
@@ -257,134 +269,154 @@ class FairCurve_Batten(object):
         """
         return _FairCurve.FairCurve_Batten_SetSlidingFactor(self, *args)
 
-    def Compute(self, *args) -> "Standard_Boolean" :
+    def Compute(self, NbIterations=50, Tolerance=1.0e-3):
         """
         * Performs the algorithm, using the arguments Code, NbIterations and Tolerance and computes the curve with respect to the constraints. Code will have one of the following values: - OK - NotConverged - InfiniteSliding - NullHeight The parameters Tolerance and NbIterations control how precise the computation is, and how long it will take.
 
         :param Code:
         :type Code: FairCurve_AnalysisCode &
         :param NbIterations: default value is 50
-        :type NbIterations: int
+        :type NbIterations: Standard_Integer
+        :param Tolerance: default value is 1.0e-3
+        :type Tolerance: float
+        :rtype: bool
+
+        * Performs the algorithm, using the arguments Code, NbIterations and Tolerance and computes the curve with respect to the constraints. Code will have one of the following values: - OK - NotConverged - InfiniteSliding - NullHeight The parameters Tolerance and NbIterations control how precise the computation is, and how long it will take.
+
+        :param Code:
+        :type Code: FairCurve_AnalysisCode &
+        :param NbIterations: default value is 50
+        :type NbIterations: Standard_Integer
+        :param Tolerance: default value is 1.0e-3
+        :type Tolerance: float
+        :rtype: bool
+
+        * Performs the algorithm, using the arguments Code, NbIterations and Tolerance and computes the curve with respect to the constraints. Code will have one of the following values: - OK - NotConverged - InfiniteSliding - NullHeight The parameters Tolerance and NbIterations control how precise the computation is, and how long it will take.
+
+        :param Code:
+        :type Code: FairCurve_AnalysisCode &
+        :param NbIterations: default value is 50
+        :type NbIterations: Standard_Integer
         :param Tolerance: default value is 1.0e-3
         :type Tolerance: float
         :rtype: bool
 
         """
-        return _FairCurve.FairCurve_Batten_Compute(self, *args)
+        return _FairCurve.FairCurve_Batten_Compute(self, NbIterations, Tolerance)
 
-    def SlidingOfReference(self, *args) -> "Standard_Real" :
+    def SlidingOfReference(self):
         """
         * Computes the real number value for length Sliding of Reference for new constraints. If you want to give a specific length to a batten curve, use the following syntax: b.SetSlidingFactor(L / b.SlidingOfReference()) where b is the name of the batten curve object.
 
         :rtype: float
 
         """
-        return _FairCurve.FairCurve_Batten_SlidingOfReference(self, *args)
+        return _FairCurve.FairCurve_Batten_SlidingOfReference(self)
 
-    def GetFreeSliding(self, *args) -> "Standard_Boolean" :
+    def GetFreeSliding(self):
         """
         * Returns the initial free sliding value, false by default. Free sliding is generally more aesthetically pleasing than constrained sliding. However, the computation can fail with values such as angles greater than PI/2. This is because the resulting batten length is theoretically infinite.
 
         :rtype: bool
 
         """
-        return _FairCurve.FairCurve_Batten_GetFreeSliding(self, *args)
+        return _FairCurve.FairCurve_Batten_GetFreeSliding(self)
 
-    def GetConstraintOrder1(self, *args) -> "Standard_Integer" :
+    def GetConstraintOrder1(self):
         """
         * Returns the established first constraint order.
 
         :rtype: int
 
         """
-        return _FairCurve.FairCurve_Batten_GetConstraintOrder1(self, *args)
+        return _FairCurve.FairCurve_Batten_GetConstraintOrder1(self)
 
-    def GetConstraintOrder2(self, *args) -> "Standard_Integer" :
+    def GetConstraintOrder2(self):
         """
         * Returns the established second constraint order.
 
         :rtype: int
 
         """
-        return _FairCurve.FairCurve_Batten_GetConstraintOrder2(self, *args)
+        return _FairCurve.FairCurve_Batten_GetConstraintOrder2(self)
 
-    def GetP1(self, *args) -> "gp_Pnt2d const" :
+    def GetP1(self):
         """
         * Returns the established location of the point P1.
 
         :rtype: gp_Pnt2d
 
         """
-        return _FairCurve.FairCurve_Batten_GetP1(self, *args)
+        return _FairCurve.FairCurve_Batten_GetP1(self)
 
-    def GetP2(self, *args) -> "gp_Pnt2d const" :
+    def GetP2(self):
         """
         * Returns the established location of the point P2.
 
         :rtype: gp_Pnt2d
 
         """
-        return _FairCurve.FairCurve_Batten_GetP2(self, *args)
+        return _FairCurve.FairCurve_Batten_GetP2(self)
 
-    def GetAngle1(self, *args) -> "Standard_Real" :
+    def GetAngle1(self):
         """
         * Returns the established first angle.
 
         :rtype: float
 
         """
-        return _FairCurve.FairCurve_Batten_GetAngle1(self, *args)
+        return _FairCurve.FairCurve_Batten_GetAngle1(self)
 
-    def GetAngle2(self, *args) -> "Standard_Real" :
+    def GetAngle2(self):
         """
         * Returns the established second angle.
 
         :rtype: float
 
         """
-        return _FairCurve.FairCurve_Batten_GetAngle2(self, *args)
+        return _FairCurve.FairCurve_Batten_GetAngle2(self)
 
-    def GetHeight(self, *args) -> "Standard_Real" :
+    def GetHeight(self):
         """
         * Returns the thickness of the lathe.
 
         :rtype: float
 
         """
-        return _FairCurve.FairCurve_Batten_GetHeight(self, *args)
+        return _FairCurve.FairCurve_Batten_GetHeight(self)
 
-    def GetSlope(self, *args) -> "Standard_Real" :
+    def GetSlope(self):
         """
         * Returns the established slope value.
 
         :rtype: float
 
         """
-        return _FairCurve.FairCurve_Batten_GetSlope(self, *args)
+        return _FairCurve.FairCurve_Batten_GetSlope(self)
 
-    def GetSlidingFactor(self, *args) -> "Standard_Real" :
+    def GetSlidingFactor(self):
         """
         * Returns the initial sliding factor.
 
         :rtype: float
 
         """
-        return _FairCurve.FairCurve_Batten_GetSlidingFactor(self, *args)
+        return _FairCurve.FairCurve_Batten_GetSlidingFactor(self)
 
-    def Curve(self, *args) -> "Handle_Geom2d_BSplineCurve" :
+    def Curve(self):
         """
         * Returns the computed curve a 2d BSpline.
 
         :rtype: Handle_Geom2d_BSplineCurve
 
         """
-        return _FairCurve.FairCurve_Batten_Curve(self, *args)
+        return _FairCurve.FairCurve_Batten_Curve(self)
 
-    def DumpToString(self) -> "std::string" :
+    def DumpToString(self):
         """DumpToString(FairCurve_Batten self) -> std::string"""
         return _FairCurve.FairCurve_Batten_DumpToString(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(FairCurve_Batten self)"""
         return _FairCurve.FairCurve_Batten__kill_pointed(self)
 
@@ -442,7 +474,7 @@ class FairCurve_BattenLaw(object):
 
         """
         _FairCurve.FairCurve_BattenLaw_swiginit(self,_FairCurve.new_FairCurve_BattenLaw(*args))
-    def SetSliding(self, *args) -> "void" :
+    def SetSliding(self, *args):
         """
         * Change the value of sliding
 
@@ -453,7 +485,7 @@ class FairCurve_BattenLaw(object):
         """
         return _FairCurve.FairCurve_BattenLaw_SetSliding(self, *args)
 
-    def SetHeigth(self, *args) -> "void" :
+    def SetHeigth(self, *args):
         """
         * Change the value of Heigth at the middle point.
 
@@ -464,7 +496,7 @@ class FairCurve_BattenLaw(object):
         """
         return _FairCurve.FairCurve_BattenLaw_SetHeigth(self, *args)
 
-    def SetSlope(self, *args) -> "void" :
+    def SetSlope(self, *args):
         """
         * Change the value of the geometric slope.
 
@@ -475,7 +507,7 @@ class FairCurve_BattenLaw(object):
         """
         return _FairCurve.FairCurve_BattenLaw_SetSlope(self, *args)
 
-    def Value(self, *args) -> "Standard_Boolean" :
+    def Value(self, *args):
         """
         * computes the value of the heigth for the parameter T on the neutral fibber
 
@@ -508,28 +540,28 @@ class FairCurve_DistributionOfEnergy(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def NbVariables(self, *args) -> "Standard_Integer" :
+    def NbVariables(self):
         """
         * returns the number of variables of the function.
 
         :rtype: int
 
         """
-        return _FairCurve.FairCurve_DistributionOfEnergy_NbVariables(self, *args)
+        return _FairCurve.FairCurve_DistributionOfEnergy_NbVariables(self)
 
-    def NbEquations(self, *args) -> "Standard_Integer" :
+    def NbEquations(self):
         """
         * returns the number of equations of the function.
 
         :rtype: int
 
         """
-        return _FairCurve.FairCurve_DistributionOfEnergy_NbEquations(self, *args)
+        return _FairCurve.FairCurve_DistributionOfEnergy_NbEquations(self)
 
-    def SetDerivativeOrder(self, *args) -> "void" :
+    def SetDerivativeOrder(self, *args):
         """
         :param DerivativeOrder:
-        :type DerivativeOrder: int
+        :type DerivativeOrder: Standard_Integer
         :rtype: None
 
         """
@@ -554,16 +586,16 @@ class FairCurve_Energy(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def NbVariables(self, *args) -> "Standard_Integer" :
+    def NbVariables(self):
         """
         * returns the number of variables of the energy.
 
         :rtype: int
 
         """
-        return _FairCurve.FairCurve_Energy_NbVariables(self, *args)
+        return _FairCurve.FairCurve_Energy_NbVariables(self)
 
-    def Value(self, *args) -> "Standard_Boolean" :
+    def Value(self, *args):
         """
         * computes the values of the Energys E for the variable <X>. Returns True if the computation was done successfully, False otherwise.
 
@@ -576,7 +608,7 @@ class FairCurve_Energy(object):
         """
         return _FairCurve.FairCurve_Energy_Value(self, *args)
 
-    def Gradient(self, *args) -> "Standard_Boolean" :
+    def Gradient(self, *args):
         """
         * //!computes the gradient <G> of the energys for the  variable <X>.  Returns True if the computation was done successfully,  False otherwise.
 
@@ -589,7 +621,7 @@ class FairCurve_Energy(object):
         """
         return _FairCurve.FairCurve_Energy_Gradient(self, *args)
 
-    def Values(self, *args) -> "Standard_Boolean" :
+    def Values(self, *args):
         """
         * computes the Energy <E> and the gradient <G> of the energy for the variable <X>. Returns True if the computation was done successfully, False otherwise.
 
@@ -616,7 +648,7 @@ class FairCurve_Energy(object):
         """
         return _FairCurve.FairCurve_Energy_Values(self, *args)
 
-    def Variable(self, *args) -> "Standard_Boolean" :
+    def Variable(self, *args):
         """
         * compute the variables <X> wich correspond with the field <MyPoles>
 
@@ -627,14 +659,14 @@ class FairCurve_Energy(object):
         """
         return _FairCurve.FairCurve_Energy_Variable(self, *args)
 
-    def Poles(self, *args) -> "Handle_TColgp_HArray1OfPnt2d const &" :
+    def Poles(self):
         """
         * return the poles
 
         :rtype: Handle_TColgp_HArray1OfPnt2d
 
         """
-        return _FairCurve.FairCurve_Energy_Poles(self, *args)
+        return _FairCurve.FairCurve_Energy_Poles(self)
 
     def __del__(self):
     	try:
@@ -670,7 +702,97 @@ class FairCurve_Newton(object):
         :param CriteriumTolerance: default value is 1.0e-2
         :type CriteriumTolerance: float
         :param NbIterations: default value is 40
-        :type NbIterations: int
+        :type NbIterations: Standard_Integer
+        :param Convexity: default value is 1.0e-6
+        :type Convexity: float
+        :param WithSingularity: default value is Standard_True
+        :type WithSingularity: bool
+        :rtype: None
+
+        * -- Given the starting point StartingPoint,  The tolerance required on the solution is given by  Tolerance. Iteration are stopped if (!WithSingularity) and H(F(Xi)) is not definite positive (if the smaller eigenvalue of H < Convexity) or IsConverged() returns True for 2 successives Iterations. Warning: Obsolete Constructor (because IsConverged can not be redefined with this. )
+
+        :param F:
+        :type F: math_MultipleVarFunctionWithHessian &
+        :param StartingPoint:
+        :type StartingPoint: math_Vector &
+        :param SpatialTolerance: default value is 1.0e-7
+        :type SpatialTolerance: float
+        :param CriteriumTolerance: default value is 1.0e-2
+        :type CriteriumTolerance: float
+        :param NbIterations: default value is 40
+        :type NbIterations: Standard_Integer
+        :param Convexity: default value is 1.0e-6
+        :type Convexity: float
+        :param WithSingularity: default value is Standard_True
+        :type WithSingularity: bool
+        :rtype: None
+
+        * -- Given the starting point StartingPoint,  The tolerance required on the solution is given by  Tolerance. Iteration are stopped if (!WithSingularity) and H(F(Xi)) is not definite positive (if the smaller eigenvalue of H < Convexity) or IsConverged() returns True for 2 successives Iterations. Warning: Obsolete Constructor (because IsConverged can not be redefined with this. )
+
+        :param F:
+        :type F: math_MultipleVarFunctionWithHessian &
+        :param StartingPoint:
+        :type StartingPoint: math_Vector &
+        :param SpatialTolerance: default value is 1.0e-7
+        :type SpatialTolerance: float
+        :param CriteriumTolerance: default value is 1.0e-2
+        :type CriteriumTolerance: float
+        :param NbIterations: default value is 40
+        :type NbIterations: Standard_Integer
+        :param Convexity: default value is 1.0e-6
+        :type Convexity: float
+        :param WithSingularity: default value is Standard_True
+        :type WithSingularity: bool
+        :rtype: None
+
+        * -- Given the starting point StartingPoint,  The tolerance required on the solution is given by  Tolerance. Iteration are stopped if (!WithSingularity) and H(F(Xi)) is not definite positive (if the smaller eigenvalue of H < Convexity) or IsConverged() returns True for 2 successives Iterations. Warning: Obsolete Constructor (because IsConverged can not be redefined with this. )
+
+        :param F:
+        :type F: math_MultipleVarFunctionWithHessian &
+        :param StartingPoint:
+        :type StartingPoint: math_Vector &
+        :param SpatialTolerance: default value is 1.0e-7
+        :type SpatialTolerance: float
+        :param CriteriumTolerance: default value is 1.0e-2
+        :type CriteriumTolerance: float
+        :param NbIterations: default value is 40
+        :type NbIterations: Standard_Integer
+        :param Convexity: default value is 1.0e-6
+        :type Convexity: float
+        :param WithSingularity: default value is Standard_True
+        :type WithSingularity: bool
+        :rtype: None
+
+        * -- Given the starting point StartingPoint,  The tolerance required on the solution is given by  Tolerance. Iteration are stopped if (!WithSingularity) and H(F(Xi)) is not definite positive (if the smaller eigenvalue of H < Convexity) or IsConverged() returns True for 2 successives Iterations. Warning: Obsolete Constructor (because IsConverged can not be redefined with this. )
+
+        :param F:
+        :type F: math_MultipleVarFunctionWithHessian &
+        :param StartingPoint:
+        :type StartingPoint: math_Vector &
+        :param SpatialTolerance: default value is 1.0e-7
+        :type SpatialTolerance: float
+        :param CriteriumTolerance: default value is 1.0e-2
+        :type CriteriumTolerance: float
+        :param NbIterations: default value is 40
+        :type NbIterations: Standard_Integer
+        :param Convexity: default value is 1.0e-6
+        :type Convexity: float
+        :param WithSingularity: default value is Standard_True
+        :type WithSingularity: bool
+        :rtype: None
+
+        * -- Given the starting point StartingPoint,  The tolerance required on the solution is given by  Tolerance. Iteration are stopped if (!WithSingularity) and H(F(Xi)) is not definite positive (if the smaller eigenvalue of H < Convexity) or IsConverged() returns True for 2 successives Iterations. Warning: Obsolete Constructor (because IsConverged can not be redefined with this. )
+
+        :param F:
+        :type F: math_MultipleVarFunctionWithHessian &
+        :param StartingPoint:
+        :type StartingPoint: math_Vector &
+        :param SpatialTolerance: default value is 1.0e-7
+        :type SpatialTolerance: float
+        :param CriteriumTolerance: default value is 1.0e-2
+        :type CriteriumTolerance: float
+        :param NbIterations: default value is 40
+        :type NbIterations: Standard_Integer
         :param Convexity: default value is 1.0e-6
         :type Convexity: float
         :param WithSingularity: default value is Standard_True
@@ -686,7 +808,87 @@ class FairCurve_Newton(object):
         :param Tolerance: default value is 1.0e-7
         :type Tolerance: float
         :param NbIterations: default value is 40
-        :type NbIterations: int
+        :type NbIterations: Standard_Integer
+        :param Convexity: default value is 1.0e-6
+        :type Convexity: float
+        :param WithSingularity: default value is Standard_True
+        :type WithSingularity: bool
+        :rtype: None
+
+        * The tolerance required on the solution is given by  Tolerance. Iteration are stopped if (!WithSingularity) and H(F(Xi)) is not definite positive (if the smaller eigenvalue of H < Convexity)  or IsConverged() returns True for 2 successives Iterations. Warning: This constructor do not computation
+
+        :param F:
+        :type F: math_MultipleVarFunctionWithHessian &
+        :param SpatialTolerance: default value is 1.0e-7
+        :type SpatialTolerance: float
+        :param Tolerance: default value is 1.0e-7
+        :type Tolerance: float
+        :param NbIterations: default value is 40
+        :type NbIterations: Standard_Integer
+        :param Convexity: default value is 1.0e-6
+        :type Convexity: float
+        :param WithSingularity: default value is Standard_True
+        :type WithSingularity: bool
+        :rtype: None
+
+        * The tolerance required on the solution is given by  Tolerance. Iteration are stopped if (!WithSingularity) and H(F(Xi)) is not definite positive (if the smaller eigenvalue of H < Convexity)  or IsConverged() returns True for 2 successives Iterations. Warning: This constructor do not computation
+
+        :param F:
+        :type F: math_MultipleVarFunctionWithHessian &
+        :param SpatialTolerance: default value is 1.0e-7
+        :type SpatialTolerance: float
+        :param Tolerance: default value is 1.0e-7
+        :type Tolerance: float
+        :param NbIterations: default value is 40
+        :type NbIterations: Standard_Integer
+        :param Convexity: default value is 1.0e-6
+        :type Convexity: float
+        :param WithSingularity: default value is Standard_True
+        :type WithSingularity: bool
+        :rtype: None
+
+        * The tolerance required on the solution is given by  Tolerance. Iteration are stopped if (!WithSingularity) and H(F(Xi)) is not definite positive (if the smaller eigenvalue of H < Convexity)  or IsConverged() returns True for 2 successives Iterations. Warning: This constructor do not computation
+
+        :param F:
+        :type F: math_MultipleVarFunctionWithHessian &
+        :param SpatialTolerance: default value is 1.0e-7
+        :type SpatialTolerance: float
+        :param Tolerance: default value is 1.0e-7
+        :type Tolerance: float
+        :param NbIterations: default value is 40
+        :type NbIterations: Standard_Integer
+        :param Convexity: default value is 1.0e-6
+        :type Convexity: float
+        :param WithSingularity: default value is Standard_True
+        :type WithSingularity: bool
+        :rtype: None
+
+        * The tolerance required on the solution is given by  Tolerance. Iteration are stopped if (!WithSingularity) and H(F(Xi)) is not definite positive (if the smaller eigenvalue of H < Convexity)  or IsConverged() returns True for 2 successives Iterations. Warning: This constructor do not computation
+
+        :param F:
+        :type F: math_MultipleVarFunctionWithHessian &
+        :param SpatialTolerance: default value is 1.0e-7
+        :type SpatialTolerance: float
+        :param Tolerance: default value is 1.0e-7
+        :type Tolerance: float
+        :param NbIterations: default value is 40
+        :type NbIterations: Standard_Integer
+        :param Convexity: default value is 1.0e-6
+        :type Convexity: float
+        :param WithSingularity: default value is Standard_True
+        :type WithSingularity: bool
+        :rtype: None
+
+        * The tolerance required on the solution is given by  Tolerance. Iteration are stopped if (!WithSingularity) and H(F(Xi)) is not definite positive (if the smaller eigenvalue of H < Convexity)  or IsConverged() returns True for 2 successives Iterations. Warning: This constructor do not computation
+
+        :param F:
+        :type F: math_MultipleVarFunctionWithHessian &
+        :param SpatialTolerance: default value is 1.0e-7
+        :type SpatialTolerance: float
+        :param Tolerance: default value is 1.0e-7
+        :type Tolerance: float
+        :param NbIterations: default value is 40
+        :type NbIterations: Standard_Integer
         :param Convexity: default value is 1.0e-6
         :type Convexity: float
         :param WithSingularity: default value is Standard_True
@@ -695,14 +897,14 @@ class FairCurve_Newton(object):
 
         """
         _FairCurve.FairCurve_Newton_swiginit(self,_FairCurve.new_FairCurve_Newton(*args))
-    def IsConverged(self, *args) -> "Standard_Boolean" :
+    def IsConverged(self):
         """
         * This method is called at the end of each iteration to check the convergence : || Xi+1 - Xi || < SpatialTolerance/100 Or || Xi+1 - Xi || < SpatialTolerance and |F(Xi+1) - F(Xi)| < CriteriumTolerance * |F(xi)| It can be redefined in a sub-class to implement a specific test.
 
         :rtype: bool
 
         """
-        return _FairCurve.FairCurve_Newton_IsConverged(self, *args)
+        return _FairCurve.FairCurve_Newton_IsConverged(self)
 
     def __del__(self):
     	try:
@@ -723,22 +925,36 @@ class FairCurve_DistributionOfJerk(FairCurve_DistributionOfEnergy):
     def __init__(self, *args): 
         """
         :param BSplOrder:
-        :type BSplOrder: int
+        :type BSplOrder: Standard_Integer
         :param FlatKnots:
         :type FlatKnots: Handle_TColStd_HArray1OfReal &
         :param Poles:
         :type Poles: Handle_TColgp_HArray1OfPnt2d
         :param DerivativeOrder:
-        :type DerivativeOrder: int
+        :type DerivativeOrder: Standard_Integer
         :param Law:
         :type Law: FairCurve_BattenLaw &
         :param NbValAux: default value is 0
-        :type NbValAux: int
+        :type NbValAux: Standard_Integer
+        :rtype: None
+
+        :param BSplOrder:
+        :type BSplOrder: Standard_Integer
+        :param FlatKnots:
+        :type FlatKnots: Handle_TColStd_HArray1OfReal &
+        :param Poles:
+        :type Poles: Handle_TColgp_HArray1OfPnt2d
+        :param DerivativeOrder:
+        :type DerivativeOrder: Standard_Integer
+        :param Law:
+        :type Law: FairCurve_BattenLaw &
+        :param NbValAux: default value is 0
+        :type NbValAux: Standard_Integer
         :rtype: None
 
         """
         _FairCurve.FairCurve_DistributionOfJerk_swiginit(self,_FairCurve.new_FairCurve_DistributionOfJerk(*args))
-    def Value(self, *args) -> "Standard_Boolean" :
+    def Value(self, *args):
         """
         * computes the values <F> of the functions for the variable <X>. returns True if the computation was done successfully, False otherwise.
 
@@ -770,22 +986,36 @@ class FairCurve_DistributionOfSagging(FairCurve_DistributionOfEnergy):
     def __init__(self, *args): 
         """
         :param BSplOrder:
-        :type BSplOrder: int
+        :type BSplOrder: Standard_Integer
         :param FlatKnots:
         :type FlatKnots: Handle_TColStd_HArray1OfReal &
         :param Poles:
         :type Poles: Handle_TColgp_HArray1OfPnt2d
         :param DerivativeOrder:
-        :type DerivativeOrder: int
+        :type DerivativeOrder: Standard_Integer
         :param Law:
         :type Law: FairCurve_BattenLaw &
         :param NbValAux: default value is 0
-        :type NbValAux: int
+        :type NbValAux: Standard_Integer
+        :rtype: None
+
+        :param BSplOrder:
+        :type BSplOrder: Standard_Integer
+        :param FlatKnots:
+        :type FlatKnots: Handle_TColStd_HArray1OfReal &
+        :param Poles:
+        :type Poles: Handle_TColgp_HArray1OfPnt2d
+        :param DerivativeOrder:
+        :type DerivativeOrder: Standard_Integer
+        :param Law:
+        :type Law: FairCurve_BattenLaw &
+        :param NbValAux: default value is 0
+        :type NbValAux: Standard_Integer
         :rtype: None
 
         """
         _FairCurve.FairCurve_DistributionOfSagging_swiginit(self,_FairCurve.new_FairCurve_DistributionOfSagging(*args))
-    def Value(self, *args) -> "Standard_Boolean" :
+    def Value(self, *args):
         """
         * computes the values <F> of the functions for the variable <X>. returns True if the computation was done successfully, False otherwise.
 
@@ -817,26 +1047,62 @@ class FairCurve_DistributionOfTension(FairCurve_DistributionOfEnergy):
     def __init__(self, *args): 
         """
         :param BSplOrder:
-        :type BSplOrder: int
+        :type BSplOrder: Standard_Integer
         :param FlatKnots:
         :type FlatKnots: Handle_TColStd_HArray1OfReal &
         :param Poles:
         :type Poles: Handle_TColgp_HArray1OfPnt2d
         :param DerivativeOrder:
-        :type DerivativeOrder: int
+        :type DerivativeOrder: Standard_Integer
         :param LengthSliding:
         :type LengthSliding: float
         :param Law:
         :type Law: FairCurve_BattenLaw &
         :param NbValAux: default value is 0
-        :type NbValAux: int
+        :type NbValAux: Standard_Integer
+        :param Uniform: default value is Standard_False
+        :type Uniform: bool
+        :rtype: None
+
+        :param BSplOrder:
+        :type BSplOrder: Standard_Integer
+        :param FlatKnots:
+        :type FlatKnots: Handle_TColStd_HArray1OfReal &
+        :param Poles:
+        :type Poles: Handle_TColgp_HArray1OfPnt2d
+        :param DerivativeOrder:
+        :type DerivativeOrder: Standard_Integer
+        :param LengthSliding:
+        :type LengthSliding: float
+        :param Law:
+        :type Law: FairCurve_BattenLaw &
+        :param NbValAux: default value is 0
+        :type NbValAux: Standard_Integer
+        :param Uniform: default value is Standard_False
+        :type Uniform: bool
+        :rtype: None
+
+        :param BSplOrder:
+        :type BSplOrder: Standard_Integer
+        :param FlatKnots:
+        :type FlatKnots: Handle_TColStd_HArray1OfReal &
+        :param Poles:
+        :type Poles: Handle_TColgp_HArray1OfPnt2d
+        :param DerivativeOrder:
+        :type DerivativeOrder: Standard_Integer
+        :param LengthSliding:
+        :type LengthSliding: float
+        :param Law:
+        :type Law: FairCurve_BattenLaw &
+        :param NbValAux: default value is 0
+        :type NbValAux: Standard_Integer
         :param Uniform: default value is Standard_False
         :type Uniform: bool
         :rtype: None
 
         """
         _FairCurve.FairCurve_DistributionOfTension_swiginit(self,_FairCurve.new_FairCurve_DistributionOfTension(*args))
-    def SetLengthSliding(self, *args) -> "void" :
+    def SetLengthSliding(self, *args):
         """
         * change the length sliding
 
@@ -847,7 +1113,7 @@ class FairCurve_DistributionOfTension(FairCurve_DistributionOfEnergy):
         """
         return _FairCurve.FairCurve_DistributionOfTension_SetLengthSliding(self, *args)
 
-    def Value(self, *args) -> "Standard_Boolean" :
+    def Value(self, *args):
         """
         * computes the values <F> of the functions for the variable <X>. returns True if the computation was done successfully, False otherwise.
 
@@ -882,15 +1148,87 @@ class FairCurve_EnergyOfBatten(FairCurve_Energy):
         * Angles corresspond to the Ox axis
 
         :param BSplOrder:
-        :type BSplOrder: int
+        :type BSplOrder: Standard_Integer
         :param FlatKnots:
         :type FlatKnots: Handle_TColStd_HArray1OfReal &
         :param Poles:
         :type Poles: Handle_TColgp_HArray1OfPnt2d
         :param ContrOrder1:
-        :type ContrOrder1: int
+        :type ContrOrder1: Standard_Integer
         :param ContrOrder2:
-        :type ContrOrder2: int
+        :type ContrOrder2: Standard_Integer
+        :param Law:
+        :type Law: FairCurve_BattenLaw &
+        :param LengthSliding:
+        :type LengthSliding: float
+        :param FreeSliding: default value is Standard_True
+        :type FreeSliding: bool
+        :param Angle1: default value is 0
+        :type Angle1: float
+        :param Angle2: default value is 0
+        :type Angle2: float
+        :rtype: None
+
+        * Angles corresspond to the Ox axis
+
+        :param BSplOrder:
+        :type BSplOrder: Standard_Integer
+        :param FlatKnots:
+        :type FlatKnots: Handle_TColStd_HArray1OfReal &
+        :param Poles:
+        :type Poles: Handle_TColgp_HArray1OfPnt2d
+        :param ContrOrder1:
+        :type ContrOrder1: Standard_Integer
+        :param ContrOrder2:
+        :type ContrOrder2: Standard_Integer
+        :param Law:
+        :type Law: FairCurve_BattenLaw &
+        :param LengthSliding:
+        :type LengthSliding: float
+        :param FreeSliding: default value is Standard_True
+        :type FreeSliding: bool
+        :param Angle1: default value is 0
+        :type Angle1: float
+        :param Angle2: default value is 0
+        :type Angle2: float
+        :rtype: None
+
+        * Angles corresspond to the Ox axis
+
+        :param BSplOrder:
+        :type BSplOrder: Standard_Integer
+        :param FlatKnots:
+        :type FlatKnots: Handle_TColStd_HArray1OfReal &
+        :param Poles:
+        :type Poles: Handle_TColgp_HArray1OfPnt2d
+        :param ContrOrder1:
+        :type ContrOrder1: Standard_Integer
+        :param ContrOrder2:
+        :type ContrOrder2: Standard_Integer
+        :param Law:
+        :type Law: FairCurve_BattenLaw &
+        :param LengthSliding:
+        :type LengthSliding: float
+        :param FreeSliding: default value is Standard_True
+        :type FreeSliding: bool
+        :param Angle1: default value is 0
+        :type Angle1: float
+        :param Angle2: default value is 0
+        :type Angle2: float
+        :rtype: None
+
+        * Angles corresspond to the Ox axis
+
+        :param BSplOrder:
+        :type BSplOrder: Standard_Integer
+        :param FlatKnots:
+        :type FlatKnots: Handle_TColStd_HArray1OfReal &
+        :param Poles:
+        :type Poles: Handle_TColgp_HArray1OfPnt2d
+        :param ContrOrder1:
+        :type ContrOrder1: Standard_Integer
+        :param ContrOrder2:
+        :type ContrOrder2: Standard_Integer
         :param Law:
         :type Law: FairCurve_BattenLaw &
         :param LengthSliding:
@@ -905,23 +1243,23 @@ class FairCurve_EnergyOfBatten(FairCurve_Energy):
 
         """
         _FairCurve.FairCurve_EnergyOfBatten_swiginit(self,_FairCurve.new_FairCurve_EnergyOfBatten(*args))
-    def LengthSliding(self, *args) -> "Standard_Real" :
+    def LengthSliding(self):
         """
         * return the lengthSliding = P1P2 + Sliding
 
         :rtype: float
 
         """
-        return _FairCurve.FairCurve_EnergyOfBatten_LengthSliding(self, *args)
+        return _FairCurve.FairCurve_EnergyOfBatten_LengthSliding(self)
 
-    def Status(self, *args) -> "FairCurve_AnalysisCode" :
+    def Status(self):
         """
         * return the status
 
         :rtype: FairCurve_AnalysisCode
 
         """
-        return _FairCurve.FairCurve_EnergyOfBatten_Status(self, *args)
+        return _FairCurve.FairCurve_EnergyOfBatten_Status(self)
 
     def __del__(self):
     	try:
@@ -945,15 +1283,165 @@ class FairCurve_EnergyOfMVC(FairCurve_Energy):
         * Angles corresspond to the Ox axis
 
         :param BSplOrder:
-        :type BSplOrder: int
+        :type BSplOrder: Standard_Integer
         :param FlatKnots:
         :type FlatKnots: Handle_TColStd_HArray1OfReal &
         :param Poles:
         :type Poles: Handle_TColgp_HArray1OfPnt2d
         :param ContrOrder1:
-        :type ContrOrder1: int
+        :type ContrOrder1: Standard_Integer
         :param ContrOrder2:
-        :type ContrOrder2: int
+        :type ContrOrder2: Standard_Integer
+        :param Law:
+        :type Law: FairCurve_BattenLaw &
+        :param PhysicalRatio:
+        :type PhysicalRatio: float
+        :param LengthSliding:
+        :type LengthSliding: float
+        :param FreeSliding: default value is Standard_True
+        :type FreeSliding: bool
+        :param Angle1: default value is 0
+        :type Angle1: float
+        :param Angle2: default value is 0
+        :type Angle2: float
+        :param Curvature1: default value is 0
+        :type Curvature1: float
+        :param Curvature2: default value is 0
+        :type Curvature2: float
+        :rtype: None
+
+        * Angles corresspond to the Ox axis
+
+        :param BSplOrder:
+        :type BSplOrder: Standard_Integer
+        :param FlatKnots:
+        :type FlatKnots: Handle_TColStd_HArray1OfReal &
+        :param Poles:
+        :type Poles: Handle_TColgp_HArray1OfPnt2d
+        :param ContrOrder1:
+        :type ContrOrder1: Standard_Integer
+        :param ContrOrder2:
+        :type ContrOrder2: Standard_Integer
+        :param Law:
+        :type Law: FairCurve_BattenLaw &
+        :param PhysicalRatio:
+        :type PhysicalRatio: float
+        :param LengthSliding:
+        :type LengthSliding: float
+        :param FreeSliding: default value is Standard_True
+        :type FreeSliding: bool
+        :param Angle1: default value is 0
+        :type Angle1: float
+        :param Angle2: default value is 0
+        :type Angle2: float
+        :param Curvature1: default value is 0
+        :type Curvature1: float
+        :param Curvature2: default value is 0
+        :type Curvature2: float
+        :rtype: None
+
+        * Angles corresspond to the Ox axis
+
+        :param BSplOrder:
+        :type BSplOrder: Standard_Integer
+        :param FlatKnots:
+        :type FlatKnots: Handle_TColStd_HArray1OfReal &
+        :param Poles:
+        :type Poles: Handle_TColgp_HArray1OfPnt2d
+        :param ContrOrder1:
+        :type ContrOrder1: Standard_Integer
+        :param ContrOrder2:
+        :type ContrOrder2: Standard_Integer
+        :param Law:
+        :type Law: FairCurve_BattenLaw &
+        :param PhysicalRatio:
+        :type PhysicalRatio: float
+        :param LengthSliding:
+        :type LengthSliding: float
+        :param FreeSliding: default value is Standard_True
+        :type FreeSliding: bool
+        :param Angle1: default value is 0
+        :type Angle1: float
+        :param Angle2: default value is 0
+        :type Angle2: float
+        :param Curvature1: default value is 0
+        :type Curvature1: float
+        :param Curvature2: default value is 0
+        :type Curvature2: float
+        :rtype: None
+
+        * Angles corresspond to the Ox axis
+
+        :param BSplOrder:
+        :type BSplOrder: Standard_Integer
+        :param FlatKnots:
+        :type FlatKnots: Handle_TColStd_HArray1OfReal &
+        :param Poles:
+        :type Poles: Handle_TColgp_HArray1OfPnt2d
+        :param ContrOrder1:
+        :type ContrOrder1: Standard_Integer
+        :param ContrOrder2:
+        :type ContrOrder2: Standard_Integer
+        :param Law:
+        :type Law: FairCurve_BattenLaw &
+        :param PhysicalRatio:
+        :type PhysicalRatio: float
+        :param LengthSliding:
+        :type LengthSliding: float
+        :param FreeSliding: default value is Standard_True
+        :type FreeSliding: bool
+        :param Angle1: default value is 0
+        :type Angle1: float
+        :param Angle2: default value is 0
+        :type Angle2: float
+        :param Curvature1: default value is 0
+        :type Curvature1: float
+        :param Curvature2: default value is 0
+        :type Curvature2: float
+        :rtype: None
+
+        * Angles corresspond to the Ox axis
+
+        :param BSplOrder:
+        :type BSplOrder: Standard_Integer
+        :param FlatKnots:
+        :type FlatKnots: Handle_TColStd_HArray1OfReal &
+        :param Poles:
+        :type Poles: Handle_TColgp_HArray1OfPnt2d
+        :param ContrOrder1:
+        :type ContrOrder1: Standard_Integer
+        :param ContrOrder2:
+        :type ContrOrder2: Standard_Integer
+        :param Law:
+        :type Law: FairCurve_BattenLaw &
+        :param PhysicalRatio:
+        :type PhysicalRatio: float
+        :param LengthSliding:
+        :type LengthSliding: float
+        :param FreeSliding: default value is Standard_True
+        :type FreeSliding: bool
+        :param Angle1: default value is 0
+        :type Angle1: float
+        :param Angle2: default value is 0
+        :type Angle2: float
+        :param Curvature1: default value is 0
+        :type Curvature1: float
+        :param Curvature2: default value is 0
+        :type Curvature2: float
+        :rtype: None
+
+        * Angles corresspond to the Ox axis
+
+        :param BSplOrder:
+        :type BSplOrder: Standard_Integer
+        :param FlatKnots:
+        :type FlatKnots: Handle_TColStd_HArray1OfReal &
+        :param Poles:
+        :type Poles: Handle_TColgp_HArray1OfPnt2d
+        :param ContrOrder1:
+        :type ContrOrder1: Standard_Integer
+        :param ContrOrder2:
+        :type ContrOrder2: Standard_Integer
         :param Law:
         :type Law: FairCurve_BattenLaw &
         :param PhysicalRatio:
@@ -974,23 +1462,23 @@ class FairCurve_EnergyOfMVC(FairCurve_Energy):
 
         """
         _FairCurve.FairCurve_EnergyOfMVC_swiginit(self,_FairCurve.new_FairCurve_EnergyOfMVC(*args))
-    def LengthSliding(self, *args) -> "Standard_Real" :
+    def LengthSliding(self):
         """
         * return the lengthSliding = P1P2 + Sliding
 
         :rtype: float
 
         """
-        return _FairCurve.FairCurve_EnergyOfMVC_LengthSliding(self, *args)
+        return _FairCurve.FairCurve_EnergyOfMVC_LengthSliding(self)
 
-    def Status(self, *args) -> "FairCurve_AnalysisCode" :
+    def Status(self):
         """
         * return the status
 
         :rtype: FairCurve_AnalysisCode
 
         """
-        return _FairCurve.FairCurve_EnergyOfMVC_Status(self, *args)
+        return _FairCurve.FairCurve_EnergyOfMVC_Status(self)
 
     def __del__(self):
     	try:
@@ -1025,9 +1513,37 @@ class FairCurve_MinimalVariation(FairCurve_Batten):
         :type PhysicalRatio: float
         :rtype: None
 
+        * Constructs the two contact points P1 and P2 and the geometrical characteristics of the batten (elastic beam) These include the real number values for height of deformation Height, slope value Slope, and kind of energy PhysicalRatio. The kinds of energy include: - Jerk (0) - Sagging (1). Note that the default setting for Physical Ration is in FairCurve_Batten Other parameters are initialized as follow : - FreeSliding = False - ConstraintOrder1 = 1 - ConstraintOrder2 = 1 - Angle1 = 0 - Angle2 = 0 - Curvature1 = 0 - Curvature2 = 0 - SlidingFactor = 1 Warning If PhysicalRatio equals 1, you cannot impose constraints on curvature. Exceptions NegativeValue if Height is less than or equal to 0. NullValue if the distance between P1 and P2 is less than or equal to the tolerance value for distance in Precision::Confusion: P1.IsEqual(P2, Precision::Confusion()). The function gp_Pnt2d::IsEqual tests to see if this is the case. Definition of the geometricals constraints
+
+        :param P1:
+        :type P1: gp_Pnt2d
+        :param P2:
+        :type P2: gp_Pnt2d
+        :param Heigth:
+        :type Heigth: float
+        :param Slope: default value is 0
+        :type Slope: float
+        :param PhysicalRatio: default value is 0
+        :type PhysicalRatio: float
+        :rtype: None
+
+        * Constructs the two contact points P1 and P2 and the geometrical characteristics of the batten (elastic beam) These include the real number values for height of deformation Height, slope value Slope, and kind of energy PhysicalRatio. The kinds of energy include: - Jerk (0) - Sagging (1). Note that the default setting for Physical Ration is in FairCurve_Batten Other parameters are initialized as follow : - FreeSliding = False - ConstraintOrder1 = 1 - ConstraintOrder2 = 1 - Angle1 = 0 - Angle2 = 0 - Curvature1 = 0 - Curvature2 = 0 - SlidingFactor = 1 Warning If PhysicalRatio equals 1, you cannot impose constraints on curvature. Exceptions NegativeValue if Height is less than or equal to 0. NullValue if the distance between P1 and P2 is less than or equal to the tolerance value for distance in Precision::Confusion: P1.IsEqual(P2, Precision::Confusion()). The function gp_Pnt2d::IsEqual tests to see if this is the case. Definition of the geometricals constraints
+
+        :param P1:
+        :type P1: gp_Pnt2d
+        :param P2:
+        :type P2: gp_Pnt2d
+        :param Heigth:
+        :type Heigth: float
+        :param Slope: default value is 0
+        :type Slope: float
+        :param PhysicalRatio: default value is 0
+        :type PhysicalRatio: float
+        :rtype: None
+
         """
         _FairCurve.FairCurve_MinimalVariation_swiginit(self,_FairCurve.new_FairCurve_MinimalVariation(*args))
-    def SetCurvature1(self, *args) -> "void" :
+    def SetCurvature1(self, *args):
         """
         * Allows you to set a new constraint on curvature at the first point.
 
@@ -1038,7 +1554,7 @@ class FairCurve_MinimalVariation(FairCurve_Batten):
         """
         return _FairCurve.FairCurve_MinimalVariation_SetCurvature1(self, *args)
 
-    def SetCurvature2(self, *args) -> "void" :
+    def SetCurvature2(self, *args):
         """
         * Allows you to set a new constraint on curvature at the second point.
 
@@ -1049,7 +1565,7 @@ class FairCurve_MinimalVariation(FairCurve_Batten):
         """
         return _FairCurve.FairCurve_MinimalVariation_SetCurvature2(self, *args)
 
-    def SetPhysicalRatio(self, *args) -> "void" :
+    def SetPhysicalRatio(self, *args):
         """
         * Allows you to set the physical ratio Ratio. The kinds of energy which you can specify include: 0 is only 'Jerk' Energy 1 is only 'Sagging' Energy like batten Warning: if Ratio is 1 it is impossible to impose curvature constraints. Raises DomainError if Ratio < 0 or Ratio > 1
 
@@ -1060,38 +1576,73 @@ class FairCurve_MinimalVariation(FairCurve_Batten):
         """
         return _FairCurve.FairCurve_MinimalVariation_SetPhysicalRatio(self, *args)
 
-    def GetCurvature1(self, *args) -> "Standard_Real" :
+    def Compute(self, NbIterations=50, Tolerance=1.0e-3):
+        """
+        * Computes the curve with respect to the constraints, NbIterations and Tolerance. The tolerance setting allows you to control the precision of computation, and the maximum number of iterations allows you to set a limit on computation time.
+
+        :param ACode:
+        :type ACode: FairCurve_AnalysisCode &
+        :param NbIterations: default value is 50
+        :type NbIterations: Standard_Integer
+        :param Tolerance: default value is 1.0e-3
+        :type Tolerance: float
+        :rtype: bool
+
+        * Computes the curve with respect to the constraints, NbIterations and Tolerance. The tolerance setting allows you to control the precision of computation, and the maximum number of iterations allows you to set a limit on computation time.
+
+        :param ACode:
+        :type ACode: FairCurve_AnalysisCode &
+        :param NbIterations: default value is 50
+        :type NbIterations: Standard_Integer
+        :param Tolerance: default value is 1.0e-3
+        :type Tolerance: float
+        :rtype: bool
+
+        * Computes the curve with respect to the constraints, NbIterations and Tolerance. The tolerance setting allows you to control the precision of computation, and the maximum number of iterations allows you to set a limit on computation time.
+
+        :param ACode:
+        :type ACode: FairCurve_AnalysisCode &
+        :param NbIterations: default value is 50
+        :type NbIterations: Standard_Integer
+        :param Tolerance: default value is 1.0e-3
+        :type Tolerance: float
+        :rtype: bool
+
+        """
+        return _FairCurve.FairCurve_MinimalVariation_Compute(self, NbIterations, Tolerance)
+
+    def GetCurvature1(self):
         """
         * Returns the first established curvature.
 
         :rtype: float
 
         """
-        return _FairCurve.FairCurve_MinimalVariation_GetCurvature1(self, *args)
+        return _FairCurve.FairCurve_MinimalVariation_GetCurvature1(self)
 
-    def GetCurvature2(self, *args) -> "Standard_Real" :
+    def GetCurvature2(self):
         """
         * Returns the second established curvature.
 
         :rtype: float
 
         """
-        return _FairCurve.FairCurve_MinimalVariation_GetCurvature2(self, *args)
+        return _FairCurve.FairCurve_MinimalVariation_GetCurvature2(self)
 
-    def GetPhysicalRatio(self, *args) -> "Standard_Real" :
+    def GetPhysicalRatio(self):
         """
         * Returns the physical ratio, or kind of energy.
 
         :rtype: float
 
         """
-        return _FairCurve.FairCurve_MinimalVariation_GetPhysicalRatio(self, *args)
+        return _FairCurve.FairCurve_MinimalVariation_GetPhysicalRatio(self)
 
-    def DumpToString(self) -> "std::string" :
+    def DumpToString(self):
         """DumpToString(FairCurve_MinimalVariation self) -> std::string"""
         return _FairCurve.FairCurve_MinimalVariation_DumpToString(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(FairCurve_MinimalVariation self)"""
         return _FairCurve.FairCurve_MinimalVariation__kill_pointed(self)
 
@@ -1106,6 +1657,7 @@ class FairCurve_MinimalVariation(FairCurve_Batten):
 FairCurve_MinimalVariation.SetCurvature1 = new_instancemethod(_FairCurve.FairCurve_MinimalVariation_SetCurvature1,None,FairCurve_MinimalVariation)
 FairCurve_MinimalVariation.SetCurvature2 = new_instancemethod(_FairCurve.FairCurve_MinimalVariation_SetCurvature2,None,FairCurve_MinimalVariation)
 FairCurve_MinimalVariation.SetPhysicalRatio = new_instancemethod(_FairCurve.FairCurve_MinimalVariation_SetPhysicalRatio,None,FairCurve_MinimalVariation)
+FairCurve_MinimalVariation.Compute = new_instancemethod(_FairCurve.FairCurve_MinimalVariation_Compute,None,FairCurve_MinimalVariation)
 FairCurve_MinimalVariation.GetCurvature1 = new_instancemethod(_FairCurve.FairCurve_MinimalVariation_GetCurvature1,None,FairCurve_MinimalVariation)
 FairCurve_MinimalVariation.GetCurvature2 = new_instancemethod(_FairCurve.FairCurve_MinimalVariation_GetCurvature2,None,FairCurve_MinimalVariation)
 FairCurve_MinimalVariation.GetPhysicalRatio = new_instancemethod(_FairCurve.FairCurve_MinimalVariation_GetPhysicalRatio,None,FairCurve_MinimalVariation)

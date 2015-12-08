@@ -114,14 +114,20 @@ import OCC.TCollection
 class Dico_DictionaryOfInteger(OCC.MMgt.MMgt_TShared):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _Dico.Dico_DictionaryOfInteger_swiginit(self,_Dico.new_Dico_DictionaryOfInteger(*args))
-    def HasItem(self, *args) -> "Standard_Boolean" :
+        _Dico.Dico_DictionaryOfInteger_swiginit(self,_Dico.new_Dico_DictionaryOfInteger())
+    def HasItem(self, *args):
         """
+        :param name:
+        :type name: char *
+        :param exact: default value is Standard_False
+        :type exact: bool
+        :rtype: bool
+
         :param name:
         :type name: char *
         :param exact: default value is Standard_False
@@ -134,13 +140,31 @@ class Dico_DictionaryOfInteger(OCC.MMgt.MMgt_TShared):
         :type exact: bool
         :rtype: bool
 
+        :param name:
+        :type name: TCollection_AsciiString &
+        :param exact: default value is Standard_True
+        :type exact: bool
+        :rtype: bool
+
         """
         return _Dico.Dico_DictionaryOfInteger_HasItem(self, *args)
 
-    def Item(self, *args) -> "Standard_Integer const &" :
+    def Item(self, *args):
         """
         :param name:
         :type name: char *
+        :param exact: default value is Standard_True
+        :type exact: bool
+        :rtype: int
+
+        :param name:
+        :type name: char *
+        :param exact: default value is Standard_True
+        :type exact: bool
+        :rtype: int
+
+        :param name:
+        :type name: TCollection_AsciiString &
         :param exact: default value is Standard_True
         :type exact: bool
         :rtype: int
@@ -154,12 +178,20 @@ class Dico_DictionaryOfInteger(OCC.MMgt.MMgt_TShared):
         """
         return _Dico.Dico_DictionaryOfInteger_Item(self, *args)
 
-    def GetItem(self, *args) -> "Standard_Boolean" :
+    def GetItem(self, *args):
         """
         :param name:
         :type name: char *
         :param anitem:
-        :type anitem: int &
+        :type anitem: Standard_Integer &
+        :param exact: default value is Standard_True
+        :type exact: bool
+        :rtype: bool
+
+        :param name:
+        :type name: char *
+        :param anitem:
+        :type anitem: Standard_Integer &
         :param exact: default value is Standard_True
         :type exact: bool
         :rtype: bool
@@ -167,7 +199,15 @@ class Dico_DictionaryOfInteger(OCC.MMgt.MMgt_TShared):
         :param name:
         :type name: TCollection_AsciiString &
         :param anitem:
-        :type anitem: int &
+        :type anitem: Standard_Integer &
+        :param exact: default value is Standard_True
+        :type exact: bool
+        :rtype: bool
+
+        :param name:
+        :type name: TCollection_AsciiString &
+        :param anitem:
+        :type anitem: Standard_Integer &
         :param exact: default value is Standard_True
         :type exact: bool
         :rtype: bool
@@ -175,12 +215,20 @@ class Dico_DictionaryOfInteger(OCC.MMgt.MMgt_TShared):
         """
         return _Dico.Dico_DictionaryOfInteger_GetItem(self, *args)
 
-    def SetItem(self, *args) -> "void" :
+    def SetItem(self, *args):
         """
         :param name:
         :type name: char *
         :param anitem:
-        :type anitem: int &
+        :type anitem: Standard_Integer &
+        :param exact: default value is Standard_True
+        :type exact: bool
+        :rtype: None
+
+        :param name:
+        :type name: char *
+        :param anitem:
+        :type anitem: Standard_Integer &
         :param exact: default value is Standard_True
         :type exact: bool
         :rtype: None
@@ -188,7 +236,15 @@ class Dico_DictionaryOfInteger(OCC.MMgt.MMgt_TShared):
         :param name:
         :type name: TCollection_AsciiString &
         :param anitem:
-        :type anitem: int &
+        :type anitem: Standard_Integer &
+        :param exact: default value is Standard_True
+        :type exact: bool
+        :rtype: None
+
+        :param name:
+        :type name: TCollection_AsciiString &
+        :param anitem:
+        :type anitem: Standard_Integer &
         :param exact: default value is Standard_True
         :type exact: bool
         :rtype: None
@@ -196,10 +252,26 @@ class Dico_DictionaryOfInteger(OCC.MMgt.MMgt_TShared):
         """
         return _Dico.Dico_DictionaryOfInteger_SetItem(self, *args)
 
-    def NewItem(self, *args) -> "Standard_Integer &" :
+    def NewItem(self, *args):
         """
         :param name:
         :type name: char *
+        :param isvalued:
+        :type isvalued: bool
+        :param exact: default value is Standard_True
+        :type exact: bool
+        :rtype: int
+
+        :param name:
+        :type name: char *
+        :param isvalued:
+        :type isvalued: bool
+        :param exact: default value is Standard_True
+        :type exact: bool
+        :rtype: int
+
+        :param name:
+        :type name: TCollection_AsciiString &
         :param isvalued:
         :type isvalued: bool
         :param exact: default value is Standard_True
@@ -217,10 +289,42 @@ class Dico_DictionaryOfInteger(OCC.MMgt.MMgt_TShared):
         """
         return _Dico.Dico_DictionaryOfInteger_NewItem(self, *args)
 
-    def RemoveItem(self, *args) -> "Standard_Boolean" :
+    def RemoveItem(self, *args):
         """
         :param name:
         :type name: char *
+        :param cln: default value is Standard_True
+        :type cln: bool
+        :param exact: default value is Standard_True
+        :type exact: bool
+        :rtype: bool
+
+        :param name:
+        :type name: char *
+        :param cln: default value is Standard_True
+        :type cln: bool
+        :param exact: default value is Standard_True
+        :type exact: bool
+        :rtype: bool
+
+        :param name:
+        :type name: char *
+        :param cln: default value is Standard_True
+        :type cln: bool
+        :param exact: default value is Standard_True
+        :type exact: bool
+        :rtype: bool
+
+        :param name:
+        :type name: TCollection_AsciiString &
+        :param cln: default value is Standard_True
+        :type cln: bool
+        :param exact: default value is Standard_True
+        :type exact: bool
+        :rtype: bool
+
+        :param name:
+        :type name: TCollection_AsciiString &
         :param cln: default value is Standard_True
         :type cln: bool
         :param exact: default value is Standard_True
@@ -238,35 +342,35 @@ class Dico_DictionaryOfInteger(OCC.MMgt.MMgt_TShared):
         """
         return _Dico.Dico_DictionaryOfInteger_RemoveItem(self, *args)
 
-    def Clean(self, *args) -> "void" :
+    def Clean(self):
         """
         :rtype: None
 
         """
-        return _Dico.Dico_DictionaryOfInteger_Clean(self, *args)
+        return _Dico.Dico_DictionaryOfInteger_Clean(self)
 
-    def IsEmpty(self, *args) -> "Standard_Boolean" :
+    def IsEmpty(self):
         """
         :rtype: bool
 
         """
-        return _Dico.Dico_DictionaryOfInteger_IsEmpty(self, *args)
+        return _Dico.Dico_DictionaryOfInteger_IsEmpty(self)
 
-    def Clear(self, *args) -> "void" :
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _Dico.Dico_DictionaryOfInteger_Clear(self, *args)
+        return _Dico.Dico_DictionaryOfInteger_Clear(self)
 
-    def Copy(self, *args) -> "Handle_Dico_DictionaryOfInteger" :
+    def Copy(self):
         """
         :rtype: Handle_Dico_DictionaryOfInteger
 
         """
-        return _Dico.Dico_DictionaryOfInteger_Copy(self, *args)
+        return _Dico.Dico_DictionaryOfInteger_Copy(self)
 
-    def Complete(self, *args) -> "Standard_Boolean" :
+    def Complete(self, *args):
         """
         :param acell:
         :type acell: Handle_Dico_DictionaryOfInteger &
@@ -275,11 +379,11 @@ class Dico_DictionaryOfInteger(OCC.MMgt.MMgt_TShared):
         """
         return _Dico.Dico_DictionaryOfInteger_Complete(self, *args)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Dico_DictionaryOfInteger self)"""
         return _Dico.Dico_DictionaryOfInteger__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Dico_DictionaryOfInteger" :
+    def GetHandle(self):
         """GetHandle(Dico_DictionaryOfInteger self) -> Handle_Dico_DictionaryOfInteger"""
         return _Dico.Dico_DictionaryOfInteger_GetHandle(self)
 
@@ -328,21 +432,27 @@ Handle_Dico_DictionaryOfInteger._kill_pointed = new_instancemethod(_Dico.Handle_
 Handle_Dico_DictionaryOfInteger_swigregister = _Dico.Handle_Dico_DictionaryOfInteger_swigregister
 Handle_Dico_DictionaryOfInteger_swigregister(Handle_Dico_DictionaryOfInteger)
 
-def Handle_Dico_DictionaryOfInteger_DownCast(*args) -> "Handle_Dico_DictionaryOfInteger const" :
+def Handle_Dico_DictionaryOfInteger_DownCast(*args):
   return _Dico.Handle_Dico_DictionaryOfInteger_DownCast(*args)
 Handle_Dico_DictionaryOfInteger_DownCast = _Dico.Handle_Dico_DictionaryOfInteger_DownCast
 
 class Dico_DictionaryOfTransient(OCC.MMgt.MMgt_TShared):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _Dico.Dico_DictionaryOfTransient_swiginit(self,_Dico.new_Dico_DictionaryOfTransient(*args))
-    def HasItem(self, *args) -> "Standard_Boolean" :
+        _Dico.Dico_DictionaryOfTransient_swiginit(self,_Dico.new_Dico_DictionaryOfTransient())
+    def HasItem(self, *args):
         """
+        :param name:
+        :type name: char *
+        :param exact: default value is Standard_False
+        :type exact: bool
+        :rtype: bool
+
         :param name:
         :type name: char *
         :param exact: default value is Standard_False
@@ -355,13 +465,31 @@ class Dico_DictionaryOfTransient(OCC.MMgt.MMgt_TShared):
         :type exact: bool
         :rtype: bool
 
+        :param name:
+        :type name: TCollection_AsciiString &
+        :param exact: default value is Standard_True
+        :type exact: bool
+        :rtype: bool
+
         """
         return _Dico.Dico_DictionaryOfTransient_HasItem(self, *args)
 
-    def Item(self, *args) -> "Handle_Standard_Transient const &" :
+    def Item(self, *args):
         """
         :param name:
         :type name: char *
+        :param exact: default value is Standard_True
+        :type exact: bool
+        :rtype: Handle_Standard_Transient
+
+        :param name:
+        :type name: char *
+        :param exact: default value is Standard_True
+        :type exact: bool
+        :rtype: Handle_Standard_Transient
+
+        :param name:
+        :type name: TCollection_AsciiString &
         :param exact: default value is Standard_True
         :type exact: bool
         :rtype: Handle_Standard_Transient
@@ -375,10 +503,26 @@ class Dico_DictionaryOfTransient(OCC.MMgt.MMgt_TShared):
         """
         return _Dico.Dico_DictionaryOfTransient_Item(self, *args)
 
-    def GetItem(self, *args) -> "Standard_Boolean" :
+    def GetItem(self, *args):
         """
         :param name:
         :type name: char *
+        :param anitem:
+        :type anitem: Handle_Standard_Transient &
+        :param exact: default value is Standard_True
+        :type exact: bool
+        :rtype: bool
+
+        :param name:
+        :type name: char *
+        :param anitem:
+        :type anitem: Handle_Standard_Transient &
+        :param exact: default value is Standard_True
+        :type exact: bool
+        :rtype: bool
+
+        :param name:
+        :type name: TCollection_AsciiString &
         :param anitem:
         :type anitem: Handle_Standard_Transient &
         :param exact: default value is Standard_True
@@ -396,10 +540,26 @@ class Dico_DictionaryOfTransient(OCC.MMgt.MMgt_TShared):
         """
         return _Dico.Dico_DictionaryOfTransient_GetItem(self, *args)
 
-    def SetItem(self, *args) -> "void" :
+    def SetItem(self, *args):
         """
         :param name:
         :type name: char *
+        :param anitem:
+        :type anitem: Handle_Standard_Transient &
+        :param exact: default value is Standard_True
+        :type exact: bool
+        :rtype: None
+
+        :param name:
+        :type name: char *
+        :param anitem:
+        :type anitem: Handle_Standard_Transient &
+        :param exact: default value is Standard_True
+        :type exact: bool
+        :rtype: None
+
+        :param name:
+        :type name: TCollection_AsciiString &
         :param anitem:
         :type anitem: Handle_Standard_Transient &
         :param exact: default value is Standard_True
@@ -417,10 +577,26 @@ class Dico_DictionaryOfTransient(OCC.MMgt.MMgt_TShared):
         """
         return _Dico.Dico_DictionaryOfTransient_SetItem(self, *args)
 
-    def NewItem(self, *args) -> "Handle_Standard_Transient &" :
+    def NewItem(self, *args):
         """
         :param name:
         :type name: char *
+        :param isvalued:
+        :type isvalued: bool
+        :param exact: default value is Standard_True
+        :type exact: bool
+        :rtype: Handle_Standard_Transient
+
+        :param name:
+        :type name: char *
+        :param isvalued:
+        :type isvalued: bool
+        :param exact: default value is Standard_True
+        :type exact: bool
+        :rtype: Handle_Standard_Transient
+
+        :param name:
+        :type name: TCollection_AsciiString &
         :param isvalued:
         :type isvalued: bool
         :param exact: default value is Standard_True
@@ -438,10 +614,42 @@ class Dico_DictionaryOfTransient(OCC.MMgt.MMgt_TShared):
         """
         return _Dico.Dico_DictionaryOfTransient_NewItem(self, *args)
 
-    def RemoveItem(self, *args) -> "Standard_Boolean" :
+    def RemoveItem(self, *args):
         """
         :param name:
         :type name: char *
+        :param cln: default value is Standard_True
+        :type cln: bool
+        :param exact: default value is Standard_True
+        :type exact: bool
+        :rtype: bool
+
+        :param name:
+        :type name: char *
+        :param cln: default value is Standard_True
+        :type cln: bool
+        :param exact: default value is Standard_True
+        :type exact: bool
+        :rtype: bool
+
+        :param name:
+        :type name: char *
+        :param cln: default value is Standard_True
+        :type cln: bool
+        :param exact: default value is Standard_True
+        :type exact: bool
+        :rtype: bool
+
+        :param name:
+        :type name: TCollection_AsciiString &
+        :param cln: default value is Standard_True
+        :type cln: bool
+        :param exact: default value is Standard_True
+        :type exact: bool
+        :rtype: bool
+
+        :param name:
+        :type name: TCollection_AsciiString &
         :param cln: default value is Standard_True
         :type cln: bool
         :param exact: default value is Standard_True
@@ -459,35 +667,35 @@ class Dico_DictionaryOfTransient(OCC.MMgt.MMgt_TShared):
         """
         return _Dico.Dico_DictionaryOfTransient_RemoveItem(self, *args)
 
-    def Clean(self, *args) -> "void" :
+    def Clean(self):
         """
         :rtype: None
 
         """
-        return _Dico.Dico_DictionaryOfTransient_Clean(self, *args)
+        return _Dico.Dico_DictionaryOfTransient_Clean(self)
 
-    def IsEmpty(self, *args) -> "Standard_Boolean" :
+    def IsEmpty(self):
         """
         :rtype: bool
 
         """
-        return _Dico.Dico_DictionaryOfTransient_IsEmpty(self, *args)
+        return _Dico.Dico_DictionaryOfTransient_IsEmpty(self)
 
-    def Clear(self, *args) -> "void" :
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _Dico.Dico_DictionaryOfTransient_Clear(self, *args)
+        return _Dico.Dico_DictionaryOfTransient_Clear(self)
 
-    def Copy(self, *args) -> "Handle_Dico_DictionaryOfTransient" :
+    def Copy(self):
         """
         :rtype: Handle_Dico_DictionaryOfTransient
 
         """
-        return _Dico.Dico_DictionaryOfTransient_Copy(self, *args)
+        return _Dico.Dico_DictionaryOfTransient_Copy(self)
 
-    def Complete(self, *args) -> "Standard_Boolean" :
+    def Complete(self, *args):
         """
         :param acell:
         :type acell: Handle_Dico_DictionaryOfTransient &
@@ -496,11 +704,11 @@ class Dico_DictionaryOfTransient(OCC.MMgt.MMgt_TShared):
         """
         return _Dico.Dico_DictionaryOfTransient_Complete(self, *args)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Dico_DictionaryOfTransient self)"""
         return _Dico.Dico_DictionaryOfTransient__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Dico_DictionaryOfTransient" :
+    def GetHandle(self):
         """GetHandle(Dico_DictionaryOfTransient self) -> Handle_Dico_DictionaryOfTransient"""
         return _Dico.Dico_DictionaryOfTransient_GetHandle(self)
 
@@ -549,7 +757,7 @@ Handle_Dico_DictionaryOfTransient._kill_pointed = new_instancemethod(_Dico.Handl
 Handle_Dico_DictionaryOfTransient_swigregister = _Dico.Handle_Dico_DictionaryOfTransient_swigregister
 Handle_Dico_DictionaryOfTransient_swigregister(Handle_Dico_DictionaryOfTransient)
 
-def Handle_Dico_DictionaryOfTransient_DownCast(*args) -> "Handle_Dico_DictionaryOfTransient const" :
+def Handle_Dico_DictionaryOfTransient_DownCast(*args):
   return _Dico.Handle_Dico_DictionaryOfTransient_DownCast(*args)
 Handle_Dico_DictionaryOfTransient_DownCast = _Dico.Handle_Dico_DictionaryOfTransient_DownCast
 
@@ -576,40 +784,40 @@ class Dico_IteratorOfDictionaryOfInteger(object):
 
         """
         _Dico.Dico_IteratorOfDictionaryOfInteger_swiginit(self,_Dico.new_Dico_IteratorOfDictionaryOfInteger(*args))
-    def Start(self, *args) -> "void" :
+    def Start(self):
         """
         :rtype: None
 
         """
-        return _Dico.Dico_IteratorOfDictionaryOfInteger_Start(self, *args)
+        return _Dico.Dico_IteratorOfDictionaryOfInteger_Start(self)
 
-    def More(self, *args) -> "Standard_Boolean" :
+    def More(self):
         """
         :rtype: bool
 
         """
-        return _Dico.Dico_IteratorOfDictionaryOfInteger_More(self, *args)
+        return _Dico.Dico_IteratorOfDictionaryOfInteger_More(self)
 
-    def Next(self, *args) -> "void" :
+    def Next(self):
         """
         :rtype: None
 
         """
-        return _Dico.Dico_IteratorOfDictionaryOfInteger_Next(self, *args)
+        return _Dico.Dico_IteratorOfDictionaryOfInteger_Next(self)
 
-    def Value(self, *args) -> "Standard_Integer const &" :
+    def Value(self):
         """
         :rtype: int
 
         """
-        return _Dico.Dico_IteratorOfDictionaryOfInteger_Value(self, *args)
+        return _Dico.Dico_IteratorOfDictionaryOfInteger_Value(self)
 
-    def Name(self, *args) -> "TCollection_AsciiString" :
+    def Name(self):
         """
         :rtype: TCollection_AsciiString
 
         """
-        return _Dico.Dico_IteratorOfDictionaryOfInteger_Name(self, *args)
+        return _Dico.Dico_IteratorOfDictionaryOfInteger_Name(self)
 
     def __del__(self):
     	try:
@@ -651,40 +859,40 @@ class Dico_IteratorOfDictionaryOfTransient(object):
 
         """
         _Dico.Dico_IteratorOfDictionaryOfTransient_swiginit(self,_Dico.new_Dico_IteratorOfDictionaryOfTransient(*args))
-    def Start(self, *args) -> "void" :
+    def Start(self):
         """
         :rtype: None
 
         """
-        return _Dico.Dico_IteratorOfDictionaryOfTransient_Start(self, *args)
+        return _Dico.Dico_IteratorOfDictionaryOfTransient_Start(self)
 
-    def More(self, *args) -> "Standard_Boolean" :
+    def More(self):
         """
         :rtype: bool
 
         """
-        return _Dico.Dico_IteratorOfDictionaryOfTransient_More(self, *args)
+        return _Dico.Dico_IteratorOfDictionaryOfTransient_More(self)
 
-    def Next(self, *args) -> "void" :
+    def Next(self):
         """
         :rtype: None
 
         """
-        return _Dico.Dico_IteratorOfDictionaryOfTransient_Next(self, *args)
+        return _Dico.Dico_IteratorOfDictionaryOfTransient_Next(self)
 
-    def Value(self, *args) -> "Handle_Standard_Transient const &" :
+    def Value(self):
         """
         :rtype: Handle_Standard_Transient
 
         """
-        return _Dico.Dico_IteratorOfDictionaryOfTransient_Value(self, *args)
+        return _Dico.Dico_IteratorOfDictionaryOfTransient_Value(self)
 
-    def Name(self, *args) -> "TCollection_AsciiString" :
+    def Name(self):
         """
         :rtype: TCollection_AsciiString
 
         """
-        return _Dico.Dico_IteratorOfDictionaryOfTransient_Name(self, *args)
+        return _Dico.Dico_IteratorOfDictionaryOfTransient_Name(self)
 
     def __del__(self):
     	try:
@@ -716,21 +924,21 @@ class Dico_StackItemOfDictionaryOfInteger(OCC.MMgt.MMgt_TShared):
 
         """
         _Dico.Dico_StackItemOfDictionaryOfInteger_swiginit(self,_Dico.new_Dico_StackItemOfDictionaryOfInteger(*args))
-    def Previous(self, *args) -> "Handle_Dico_StackItemOfDictionaryOfInteger" :
+    def Previous(self):
         """
         :rtype: Handle_Dico_StackItemOfDictionaryOfInteger
 
         """
-        return _Dico.Dico_StackItemOfDictionaryOfInteger_Previous(self, *args)
+        return _Dico.Dico_StackItemOfDictionaryOfInteger_Previous(self)
 
-    def Value(self, *args) -> "Handle_Dico_DictionaryOfInteger" :
+    def Value(self):
         """
         :rtype: Handle_Dico_DictionaryOfInteger
 
         """
-        return _Dico.Dico_StackItemOfDictionaryOfInteger_Value(self, *args)
+        return _Dico.Dico_StackItemOfDictionaryOfInteger_Value(self)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param cval:
         :type cval: Handle_Dico_DictionaryOfInteger &
@@ -739,11 +947,11 @@ class Dico_StackItemOfDictionaryOfInteger(OCC.MMgt.MMgt_TShared):
         """
         return _Dico.Dico_StackItemOfDictionaryOfInteger_SetValue(self, *args)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Dico_StackItemOfDictionaryOfInteger self)"""
         return _Dico.Dico_StackItemOfDictionaryOfInteger__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Dico_StackItemOfDictionaryOfInteger" :
+    def GetHandle(self):
         """GetHandle(Dico_StackItemOfDictionaryOfInteger self) -> Handle_Dico_StackItemOfDictionaryOfInteger"""
         return _Dico.Dico_StackItemOfDictionaryOfInteger_GetHandle(self)
 
@@ -784,7 +992,7 @@ Handle_Dico_StackItemOfDictionaryOfInteger._kill_pointed = new_instancemethod(_D
 Handle_Dico_StackItemOfDictionaryOfInteger_swigregister = _Dico.Handle_Dico_StackItemOfDictionaryOfInteger_swigregister
 Handle_Dico_StackItemOfDictionaryOfInteger_swigregister(Handle_Dico_StackItemOfDictionaryOfInteger)
 
-def Handle_Dico_StackItemOfDictionaryOfInteger_DownCast(*args) -> "Handle_Dico_StackItemOfDictionaryOfInteger const" :
+def Handle_Dico_StackItemOfDictionaryOfInteger_DownCast(*args):
   return _Dico.Handle_Dico_StackItemOfDictionaryOfInteger_DownCast(*args)
 Handle_Dico_StackItemOfDictionaryOfInteger_DownCast = _Dico.Handle_Dico_StackItemOfDictionaryOfInteger_DownCast
 
@@ -801,21 +1009,21 @@ class Dico_StackItemOfDictionaryOfTransient(OCC.MMgt.MMgt_TShared):
 
         """
         _Dico.Dico_StackItemOfDictionaryOfTransient_swiginit(self,_Dico.new_Dico_StackItemOfDictionaryOfTransient(*args))
-    def Previous(self, *args) -> "Handle_Dico_StackItemOfDictionaryOfTransient" :
+    def Previous(self):
         """
         :rtype: Handle_Dico_StackItemOfDictionaryOfTransient
 
         """
-        return _Dico.Dico_StackItemOfDictionaryOfTransient_Previous(self, *args)
+        return _Dico.Dico_StackItemOfDictionaryOfTransient_Previous(self)
 
-    def Value(self, *args) -> "Handle_Dico_DictionaryOfTransient" :
+    def Value(self):
         """
         :rtype: Handle_Dico_DictionaryOfTransient
 
         """
-        return _Dico.Dico_StackItemOfDictionaryOfTransient_Value(self, *args)
+        return _Dico.Dico_StackItemOfDictionaryOfTransient_Value(self)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param cval:
         :type cval: Handle_Dico_DictionaryOfTransient &
@@ -824,11 +1032,11 @@ class Dico_StackItemOfDictionaryOfTransient(OCC.MMgt.MMgt_TShared):
         """
         return _Dico.Dico_StackItemOfDictionaryOfTransient_SetValue(self, *args)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Dico_StackItemOfDictionaryOfTransient self)"""
         return _Dico.Dico_StackItemOfDictionaryOfTransient__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Dico_StackItemOfDictionaryOfTransient" :
+    def GetHandle(self):
         """GetHandle(Dico_StackItemOfDictionaryOfTransient self) -> Handle_Dico_StackItemOfDictionaryOfTransient"""
         return _Dico.Dico_StackItemOfDictionaryOfTransient_GetHandle(self)
 
@@ -869,7 +1077,7 @@ Handle_Dico_StackItemOfDictionaryOfTransient._kill_pointed = new_instancemethod(
 Handle_Dico_StackItemOfDictionaryOfTransient_swigregister = _Dico.Handle_Dico_StackItemOfDictionaryOfTransient_swigregister
 Handle_Dico_StackItemOfDictionaryOfTransient_swigregister(Handle_Dico_StackItemOfDictionaryOfTransient)
 
-def Handle_Dico_StackItemOfDictionaryOfTransient_DownCast(*args) -> "Handle_Dico_StackItemOfDictionaryOfTransient const" :
+def Handle_Dico_StackItemOfDictionaryOfTransient_DownCast(*args):
   return _Dico.Handle_Dico_StackItemOfDictionaryOfTransient_DownCast(*args)
 Handle_Dico_StackItemOfDictionaryOfTransient_DownCast = _Dico.Handle_Dico_StackItemOfDictionaryOfTransient_DownCast
 

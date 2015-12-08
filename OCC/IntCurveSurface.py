@@ -131,63 +131,63 @@ class IntCurveSurface_Intersection(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def IsDone(self, *args) -> "Standard_Boolean" :
+    def IsDone(self):
         """
         * returns the <done> field.
 
         :rtype: bool
 
         """
-        return _IntCurveSurface.IntCurveSurface_Intersection_IsDone(self, *args)
+        return _IntCurveSurface.IntCurveSurface_Intersection_IsDone(self)
 
-    def NbPoints(self, *args) -> "Standard_Integer" :
+    def NbPoints(self):
         """
         * returns the number of IntersectionPoint if IsDone returns True. else NotDone is raised.
 
         :rtype: int
 
         """
-        return _IntCurveSurface.IntCurveSurface_Intersection_NbPoints(self, *args)
+        return _IntCurveSurface.IntCurveSurface_Intersection_NbPoints(self)
 
-    def Point(self, *args) -> "IntCurveSurface_IntersectionPoint const &" :
+    def Point(self, *args):
         """
         * returns the IntersectionPoint of range <Index> raises NotDone if the computation has failed or if the computation has not been done raises OutOfRange if Index is not in the range <1..NbPoints>
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: IntCurveSurface_IntersectionPoint
 
         """
         return _IntCurveSurface.IntCurveSurface_Intersection_Point(self, *args)
 
-    def NbSegments(self, *args) -> "Standard_Integer" :
+    def NbSegments(self):
         """
         * returns the number of IntersectionSegment if IsDone returns True. else NotDone is raised.
 
         :rtype: int
 
         """
-        return _IntCurveSurface.IntCurveSurface_Intersection_NbSegments(self, *args)
+        return _IntCurveSurface.IntCurveSurface_Intersection_NbSegments(self)
 
-    def Segment(self, *args) -> "IntCurveSurface_IntersectionSegment const &" :
+    def Segment(self, *args):
         """
         * returns the IntersectionSegment of range <Index> raises NotDone if the computation has failed or if the computation has not been done raises OutOfRange if Index is not in the range <1..NbSegment>
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: IntCurveSurface_IntersectionSegment
 
         """
         return _IntCurveSurface.IntCurveSurface_Intersection_Segment(self, *args)
 
-    def Dump(self, *args) -> "void" :
+    def Dump(self):
         """
         * Dump all the fields.
 
         :rtype: None
 
         """
-        return _IntCurveSurface.IntCurveSurface_Intersection_Dump(self, *args)
+        return _IntCurveSurface.IntCurveSurface_Intersection_Dump(self)
 
     def __del__(self):
     	try:
@@ -232,7 +232,7 @@ class IntCurveSurface_IntersectionPoint(object):
 
         """
         _IntCurveSurface.IntCurveSurface_IntersectionPoint_swiginit(self,_IntCurveSurface.new_IntCurveSurface_IntersectionPoint(*args))
-    def SetValues(self, *args) -> "void" :
+    def SetValues(self, *args):
         """
         * Set the fields of the current IntersectionPoint.
 
@@ -251,7 +251,7 @@ class IntCurveSurface_IntersectionPoint(object):
         """
         return _IntCurveSurface.IntCurveSurface_IntersectionPoint_SetValues(self, *args)
 
-    def Values(self, *args) -> "void" :
+    def Values(self, *args):
         """
         * Get the fields of the current IntersectionPoint.
 
@@ -270,59 +270,59 @@ class IntCurveSurface_IntersectionPoint(object):
         """
         return _IntCurveSurface.IntCurveSurface_IntersectionPoint_Values(self, *args)
 
-    def Pnt(self, *args) -> "gp_Pnt const" :
+    def Pnt(self):
         """
         * returns the geometric point.
 
         :rtype: gp_Pnt
 
         """
-        return _IntCurveSurface.IntCurveSurface_IntersectionPoint_Pnt(self, *args)
+        return _IntCurveSurface.IntCurveSurface_IntersectionPoint_Pnt(self)
 
-    def U(self, *args) -> "Standard_Real" :
+    def U(self):
         """
         * returns the U parameter on the surface.
 
         :rtype: float
 
         """
-        return _IntCurveSurface.IntCurveSurface_IntersectionPoint_U(self, *args)
+        return _IntCurveSurface.IntCurveSurface_IntersectionPoint_U(self)
 
-    def V(self, *args) -> "Standard_Real" :
+    def V(self):
         """
         * returns the V parameter on the surface.
 
         :rtype: float
 
         """
-        return _IntCurveSurface.IntCurveSurface_IntersectionPoint_V(self, *args)
+        return _IntCurveSurface.IntCurveSurface_IntersectionPoint_V(self)
 
-    def W(self, *args) -> "Standard_Real" :
+    def W(self):
         """
         * returns the parameter on the curve.
 
         :rtype: float
 
         """
-        return _IntCurveSurface.IntCurveSurface_IntersectionPoint_W(self, *args)
+        return _IntCurveSurface.IntCurveSurface_IntersectionPoint_W(self)
 
-    def Transition(self, *args) -> "IntCurveSurface_TransitionOnCurve" :
+    def Transition(self):
         """
         * returns the Transition of the point.
 
         :rtype: IntCurveSurface_TransitionOnCurve
 
         """
-        return _IntCurveSurface.IntCurveSurface_IntersectionPoint_Transition(self, *args)
+        return _IntCurveSurface.IntCurveSurface_IntersectionPoint_Transition(self)
 
-    def Dump(self, *args) -> "void" :
+    def Dump(self):
         """
         * Dump all the fields.
 
         :rtype: None
 
         """
-        return _IntCurveSurface.IntCurveSurface_IntersectionPoint_Dump(self, *args)
+        return _IntCurveSurface.IntCurveSurface_IntersectionPoint_Dump(self)
 
     def __del__(self):
     	try:
@@ -359,7 +359,7 @@ class IntCurveSurface_IntersectionSegment(object):
 
         """
         _IntCurveSurface.IntCurveSurface_IntersectionSegment_swiginit(self,_IntCurveSurface.new_IntCurveSurface_IntersectionSegment(*args))
-    def SetValues(self, *args) -> "void" :
+    def SetValues(self, *args):
         """
         :param P1:
         :type P1: IntCurveSurface_IntersectionPoint &
@@ -370,7 +370,7 @@ class IntCurveSurface_IntersectionSegment(object):
         """
         return _IntCurveSurface.IntCurveSurface_IntersectionSegment_SetValues(self, *args)
 
-    def Values(self, *args) -> "void" :
+    def Values(self, *args):
         """
         :param P1:
         :type P1: IntCurveSurface_IntersectionPoint &
@@ -381,7 +381,7 @@ class IntCurveSurface_IntersectionSegment(object):
         """
         return _IntCurveSurface.IntCurveSurface_IntersectionSegment_Values(self, *args)
 
-    def FirstPoint(self, *args) -> "IntCurveSurface_IntersectionPoint const &" :
+    def FirstPoint(self, *args):
         """
         :param P1:
         :type P1: IntCurveSurface_IntersectionPoint &
@@ -392,7 +392,7 @@ class IntCurveSurface_IntersectionSegment(object):
         """
         return _IntCurveSurface.IntCurveSurface_IntersectionSegment_FirstPoint(self, *args)
 
-    def SecondPoint(self, *args) -> "IntCurveSurface_IntersectionPoint const &" :
+    def SecondPoint(self, *args):
         """
         :param P2:
         :type P2: IntCurveSurface_IntersectionPoint &
@@ -403,12 +403,12 @@ class IntCurveSurface_IntersectionSegment(object):
         """
         return _IntCurveSurface.IntCurveSurface_IntersectionSegment_SecondPoint(self, *args)
 
-    def Dump(self, *args) -> "void" :
+    def Dump(self):
         """
         :rtype: None
 
         """
-        return _IntCurveSurface.IntCurveSurface_IntersectionSegment_Dump(self, *args)
+        return _IntCurveSurface.IntCurveSurface_IntersectionSegment_Dump(self)
 
     def __del__(self):
     	try:
@@ -442,18 +442,18 @@ class IntCurveSurface_SequenceNodeOfSequenceOfPnt(OCC.TCollection.TCollection_Se
 
         """
         _IntCurveSurface.IntCurveSurface_SequenceNodeOfSequenceOfPnt_swiginit(self,_IntCurveSurface.new_IntCurveSurface_SequenceNodeOfSequenceOfPnt(*args))
-    def Value(self, *args) -> "IntCurveSurface_IntersectionPoint &" :
+    def Value(self):
         """
         :rtype: IntCurveSurface_IntersectionPoint
 
         """
-        return _IntCurveSurface.IntCurveSurface_SequenceNodeOfSequenceOfPnt_Value(self, *args)
+        return _IntCurveSurface.IntCurveSurface_SequenceNodeOfSequenceOfPnt_Value(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(IntCurveSurface_SequenceNodeOfSequenceOfPnt self)"""
         return _IntCurveSurface.IntCurveSurface_SequenceNodeOfSequenceOfPnt__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_IntCurveSurface_SequenceNodeOfSequenceOfPnt" :
+    def GetHandle(self):
         """GetHandle(IntCurveSurface_SequenceNodeOfSequenceOfPnt self) -> Handle_IntCurveSurface_SequenceNodeOfSequenceOfPnt"""
         return _IntCurveSurface.IntCurveSurface_SequenceNodeOfSequenceOfPnt_GetHandle(self)
 
@@ -492,7 +492,7 @@ Handle_IntCurveSurface_SequenceNodeOfSequenceOfPnt._kill_pointed = new_instancem
 Handle_IntCurveSurface_SequenceNodeOfSequenceOfPnt_swigregister = _IntCurveSurface.Handle_IntCurveSurface_SequenceNodeOfSequenceOfPnt_swigregister
 Handle_IntCurveSurface_SequenceNodeOfSequenceOfPnt_swigregister(Handle_IntCurveSurface_SequenceNodeOfSequenceOfPnt)
 
-def Handle_IntCurveSurface_SequenceNodeOfSequenceOfPnt_DownCast(*args) -> "Handle_IntCurveSurface_SequenceNodeOfSequenceOfPnt const" :
+def Handle_IntCurveSurface_SequenceNodeOfSequenceOfPnt_DownCast(*args):
   return _IntCurveSurface.Handle_IntCurveSurface_SequenceNodeOfSequenceOfPnt_DownCast(*args)
 Handle_IntCurveSurface_SequenceNodeOfSequenceOfPnt_DownCast = _IntCurveSurface.Handle_IntCurveSurface_SequenceNodeOfSequenceOfPnt_DownCast
 
@@ -511,18 +511,18 @@ class IntCurveSurface_SequenceNodeOfSequenceOfSeg(OCC.TCollection.TCollection_Se
 
         """
         _IntCurveSurface.IntCurveSurface_SequenceNodeOfSequenceOfSeg_swiginit(self,_IntCurveSurface.new_IntCurveSurface_SequenceNodeOfSequenceOfSeg(*args))
-    def Value(self, *args) -> "IntCurveSurface_IntersectionSegment &" :
+    def Value(self):
         """
         :rtype: IntCurveSurface_IntersectionSegment
 
         """
-        return _IntCurveSurface.IntCurveSurface_SequenceNodeOfSequenceOfSeg_Value(self, *args)
+        return _IntCurveSurface.IntCurveSurface_SequenceNodeOfSequenceOfSeg_Value(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(IntCurveSurface_SequenceNodeOfSequenceOfSeg self)"""
         return _IntCurveSurface.IntCurveSurface_SequenceNodeOfSequenceOfSeg__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_IntCurveSurface_SequenceNodeOfSequenceOfSeg" :
+    def GetHandle(self):
         """GetHandle(IntCurveSurface_SequenceNodeOfSequenceOfSeg self) -> Handle_IntCurveSurface_SequenceNodeOfSequenceOfSeg"""
         return _IntCurveSurface.IntCurveSurface_SequenceNodeOfSequenceOfSeg_GetHandle(self)
 
@@ -561,27 +561,27 @@ Handle_IntCurveSurface_SequenceNodeOfSequenceOfSeg._kill_pointed = new_instancem
 Handle_IntCurveSurface_SequenceNodeOfSequenceOfSeg_swigregister = _IntCurveSurface.Handle_IntCurveSurface_SequenceNodeOfSequenceOfSeg_swigregister
 Handle_IntCurveSurface_SequenceNodeOfSequenceOfSeg_swigregister(Handle_IntCurveSurface_SequenceNodeOfSequenceOfSeg)
 
-def Handle_IntCurveSurface_SequenceNodeOfSequenceOfSeg_DownCast(*args) -> "Handle_IntCurveSurface_SequenceNodeOfSequenceOfSeg const" :
+def Handle_IntCurveSurface_SequenceNodeOfSequenceOfSeg_DownCast(*args):
   return _IntCurveSurface.Handle_IntCurveSurface_SequenceNodeOfSequenceOfSeg_DownCast(*args)
 Handle_IntCurveSurface_SequenceNodeOfSequenceOfSeg_DownCast = _IntCurveSurface.Handle_IntCurveSurface_SequenceNodeOfSequenceOfSeg_DownCast
 
 class IntCurveSurface_SequenceOfPnt(OCC.TCollection.TCollection_BaseSequence):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _IntCurveSurface.IntCurveSurface_SequenceOfPnt_swiginit(self,_IntCurveSurface.new_IntCurveSurface_SequenceOfPnt(*args))
-    def Clear(self, *args) -> "void" :
+        _IntCurveSurface.IntCurveSurface_SequenceOfPnt_swiginit(self,_IntCurveSurface.new_IntCurveSurface_SequenceOfPnt())
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _IntCurveSurface.IntCurveSurface_SequenceOfPnt_Clear(self, *args)
+        return _IntCurveSurface.IntCurveSurface_SequenceOfPnt_Clear(self)
 
-    def Assign(self, *args) -> "IntCurveSurface_SequenceOfPnt const &" :
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: IntCurveSurface_SequenceOfPnt &
@@ -590,7 +590,7 @@ class IntCurveSurface_SequenceOfPnt(OCC.TCollection.TCollection_BaseSequence):
         """
         return _IntCurveSurface.IntCurveSurface_SequenceOfPnt_Assign(self, *args)
 
-    def Set(self, *args) -> "IntCurveSurface_SequenceOfPnt const &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: IntCurveSurface_SequenceOfPnt &
@@ -599,7 +599,7 @@ class IntCurveSurface_SequenceOfPnt(OCC.TCollection.TCollection_BaseSequence):
         """
         return _IntCurveSurface.IntCurveSurface_SequenceOfPnt_Set(self, *args)
 
-    def Append(self, *args) -> "void" :
+    def Append(self, *args):
         """
         :param T:
         :type T: IntCurveSurface_IntersectionPoint &
@@ -612,7 +612,7 @@ class IntCurveSurface_SequenceOfPnt(OCC.TCollection.TCollection_BaseSequence):
         """
         return _IntCurveSurface.IntCurveSurface_SequenceOfPnt_Append(self, *args)
 
-    def Prepend(self, *args) -> "void" :
+    def Prepend(self, *args):
         """
         :param T:
         :type T: IntCurveSurface_IntersectionPoint &
@@ -625,16 +625,16 @@ class IntCurveSurface_SequenceOfPnt(OCC.TCollection.TCollection_BaseSequence):
         """
         return _IntCurveSurface.IntCurveSurface_SequenceOfPnt_Prepend(self, *args)
 
-    def InsertBefore(self, *args) -> "void" :
+    def InsertBefore(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param T:
         :type T: IntCurveSurface_IntersectionPoint &
         :rtype: None
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param S:
         :type S: IntCurveSurface_SequenceOfPnt &
         :rtype: None
@@ -642,16 +642,16 @@ class IntCurveSurface_SequenceOfPnt(OCC.TCollection.TCollection_BaseSequence):
         """
         return _IntCurveSurface.IntCurveSurface_SequenceOfPnt_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args) -> "void" :
+    def InsertAfter(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param T:
         :type T: IntCurveSurface_IntersectionPoint &
         :rtype: None
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param S:
         :type S: IntCurveSurface_SequenceOfPnt &
         :rtype: None
@@ -659,24 +659,24 @@ class IntCurveSurface_SequenceOfPnt(OCC.TCollection.TCollection_BaseSequence):
         """
         return _IntCurveSurface.IntCurveSurface_SequenceOfPnt_InsertAfter(self, *args)
 
-    def First(self, *args) -> "IntCurveSurface_IntersectionPoint const &" :
+    def First(self):
         """
         :rtype: IntCurveSurface_IntersectionPoint
 
         """
-        return _IntCurveSurface.IntCurveSurface_SequenceOfPnt_First(self, *args)
+        return _IntCurveSurface.IntCurveSurface_SequenceOfPnt_First(self)
 
-    def Last(self, *args) -> "IntCurveSurface_IntersectionPoint const &" :
+    def Last(self):
         """
         :rtype: IntCurveSurface_IntersectionPoint
 
         """
-        return _IntCurveSurface.IntCurveSurface_SequenceOfPnt_Last(self, *args)
+        return _IntCurveSurface.IntCurveSurface_SequenceOfPnt_Last(self)
 
-    def Split(self, *args) -> "void" :
+    def Split(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Sub:
         :type Sub: IntCurveSurface_SequenceOfPnt &
         :rtype: None
@@ -684,19 +684,19 @@ class IntCurveSurface_SequenceOfPnt(OCC.TCollection.TCollection_BaseSequence):
         """
         return _IntCurveSurface.IntCurveSurface_SequenceOfPnt_Split(self, *args)
 
-    def Value(self, *args) -> "IntCurveSurface_IntersectionPoint const &" :
+    def Value(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: IntCurveSurface_IntersectionPoint
 
         """
         return _IntCurveSurface.IntCurveSurface_SequenceOfPnt_Value(self, *args)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param I:
         :type I: IntCurveSurface_IntersectionPoint &
         :rtype: None
@@ -704,25 +704,25 @@ class IntCurveSurface_SequenceOfPnt(OCC.TCollection.TCollection_BaseSequence):
         """
         return _IntCurveSurface.IntCurveSurface_SequenceOfPnt_SetValue(self, *args)
 
-    def ChangeValue(self, *args) -> "IntCurveSurface_IntersectionPoint &" :
+    def ChangeValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: IntCurveSurface_IntersectionPoint
 
         """
         return _IntCurveSurface.IntCurveSurface_SequenceOfPnt_ChangeValue(self, *args)
 
-    def Remove(self, *args) -> "void" :
+    def Remove(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: None
 
         :param FromIndex:
-        :type FromIndex: int
+        :type FromIndex: Standard_Integer
         :param ToIndex:
-        :type ToIndex: int
+        :type ToIndex: Standard_Integer
         :rtype: None
 
         """
@@ -757,20 +757,20 @@ IntCurveSurface_SequenceOfPnt_swigregister(IntCurveSurface_SequenceOfPnt)
 class IntCurveSurface_SequenceOfSeg(OCC.TCollection.TCollection_BaseSequence):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _IntCurveSurface.IntCurveSurface_SequenceOfSeg_swiginit(self,_IntCurveSurface.new_IntCurveSurface_SequenceOfSeg(*args))
-    def Clear(self, *args) -> "void" :
+        _IntCurveSurface.IntCurveSurface_SequenceOfSeg_swiginit(self,_IntCurveSurface.new_IntCurveSurface_SequenceOfSeg())
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _IntCurveSurface.IntCurveSurface_SequenceOfSeg_Clear(self, *args)
+        return _IntCurveSurface.IntCurveSurface_SequenceOfSeg_Clear(self)
 
-    def Assign(self, *args) -> "IntCurveSurface_SequenceOfSeg const &" :
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: IntCurveSurface_SequenceOfSeg &
@@ -779,7 +779,7 @@ class IntCurveSurface_SequenceOfSeg(OCC.TCollection.TCollection_BaseSequence):
         """
         return _IntCurveSurface.IntCurveSurface_SequenceOfSeg_Assign(self, *args)
 
-    def Set(self, *args) -> "IntCurveSurface_SequenceOfSeg const &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: IntCurveSurface_SequenceOfSeg &
@@ -788,7 +788,7 @@ class IntCurveSurface_SequenceOfSeg(OCC.TCollection.TCollection_BaseSequence):
         """
         return _IntCurveSurface.IntCurveSurface_SequenceOfSeg_Set(self, *args)
 
-    def Append(self, *args) -> "void" :
+    def Append(self, *args):
         """
         :param T:
         :type T: IntCurveSurface_IntersectionSegment &
@@ -801,7 +801,7 @@ class IntCurveSurface_SequenceOfSeg(OCC.TCollection.TCollection_BaseSequence):
         """
         return _IntCurveSurface.IntCurveSurface_SequenceOfSeg_Append(self, *args)
 
-    def Prepend(self, *args) -> "void" :
+    def Prepend(self, *args):
         """
         :param T:
         :type T: IntCurveSurface_IntersectionSegment &
@@ -814,16 +814,16 @@ class IntCurveSurface_SequenceOfSeg(OCC.TCollection.TCollection_BaseSequence):
         """
         return _IntCurveSurface.IntCurveSurface_SequenceOfSeg_Prepend(self, *args)
 
-    def InsertBefore(self, *args) -> "void" :
+    def InsertBefore(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param T:
         :type T: IntCurveSurface_IntersectionSegment &
         :rtype: None
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param S:
         :type S: IntCurveSurface_SequenceOfSeg &
         :rtype: None
@@ -831,16 +831,16 @@ class IntCurveSurface_SequenceOfSeg(OCC.TCollection.TCollection_BaseSequence):
         """
         return _IntCurveSurface.IntCurveSurface_SequenceOfSeg_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args) -> "void" :
+    def InsertAfter(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param T:
         :type T: IntCurveSurface_IntersectionSegment &
         :rtype: None
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param S:
         :type S: IntCurveSurface_SequenceOfSeg &
         :rtype: None
@@ -848,24 +848,24 @@ class IntCurveSurface_SequenceOfSeg(OCC.TCollection.TCollection_BaseSequence):
         """
         return _IntCurveSurface.IntCurveSurface_SequenceOfSeg_InsertAfter(self, *args)
 
-    def First(self, *args) -> "IntCurveSurface_IntersectionSegment const &" :
+    def First(self):
         """
         :rtype: IntCurveSurface_IntersectionSegment
 
         """
-        return _IntCurveSurface.IntCurveSurface_SequenceOfSeg_First(self, *args)
+        return _IntCurveSurface.IntCurveSurface_SequenceOfSeg_First(self)
 
-    def Last(self, *args) -> "IntCurveSurface_IntersectionSegment const &" :
+    def Last(self):
         """
         :rtype: IntCurveSurface_IntersectionSegment
 
         """
-        return _IntCurveSurface.IntCurveSurface_SequenceOfSeg_Last(self, *args)
+        return _IntCurveSurface.IntCurveSurface_SequenceOfSeg_Last(self)
 
-    def Split(self, *args) -> "void" :
+    def Split(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Sub:
         :type Sub: IntCurveSurface_SequenceOfSeg &
         :rtype: None
@@ -873,19 +873,19 @@ class IntCurveSurface_SequenceOfSeg(OCC.TCollection.TCollection_BaseSequence):
         """
         return _IntCurveSurface.IntCurveSurface_SequenceOfSeg_Split(self, *args)
 
-    def Value(self, *args) -> "IntCurveSurface_IntersectionSegment const &" :
+    def Value(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: IntCurveSurface_IntersectionSegment
 
         """
         return _IntCurveSurface.IntCurveSurface_SequenceOfSeg_Value(self, *args)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param I:
         :type I: IntCurveSurface_IntersectionSegment &
         :rtype: None
@@ -893,25 +893,25 @@ class IntCurveSurface_SequenceOfSeg(OCC.TCollection.TCollection_BaseSequence):
         """
         return _IntCurveSurface.IntCurveSurface_SequenceOfSeg_SetValue(self, *args)
 
-    def ChangeValue(self, *args) -> "IntCurveSurface_IntersectionSegment &" :
+    def ChangeValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: IntCurveSurface_IntersectionSegment
 
         """
         return _IntCurveSurface.IntCurveSurface_SequenceOfSeg_ChangeValue(self, *args)
 
-    def Remove(self, *args) -> "void" :
+    def Remove(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: None
 
         :param FromIndex:
-        :type FromIndex: int
+        :type FromIndex: Standard_Integer
         :param ToIndex:
-        :type ToIndex: int
+        :type ToIndex: Standard_Integer
         :rtype: None
 
         """
@@ -956,21 +956,21 @@ class IntCurveSurface_TheCSFunctionOfHInter(object):
 
         """
         _IntCurveSurface.IntCurveSurface_TheCSFunctionOfHInter_swiginit(self,_IntCurveSurface.new_IntCurveSurface_TheCSFunctionOfHInter(*args))
-    def NbVariables(self, *args) -> "Standard_Integer" :
+    def NbVariables(self):
         """
         :rtype: int
 
         """
-        return _IntCurveSurface.IntCurveSurface_TheCSFunctionOfHInter_NbVariables(self, *args)
+        return _IntCurveSurface.IntCurveSurface_TheCSFunctionOfHInter_NbVariables(self)
 
-    def NbEquations(self, *args) -> "Standard_Integer" :
+    def NbEquations(self):
         """
         :rtype: int
 
         """
-        return _IntCurveSurface.IntCurveSurface_TheCSFunctionOfHInter_NbEquations(self, *args)
+        return _IntCurveSurface.IntCurveSurface_TheCSFunctionOfHInter_NbEquations(self)
 
-    def Value(self, *args) -> "Standard_Boolean" :
+    def Value(self, *args):
         """
         :param X:
         :type X: math_Vector &
@@ -981,7 +981,7 @@ class IntCurveSurface_TheCSFunctionOfHInter(object):
         """
         return _IntCurveSurface.IntCurveSurface_TheCSFunctionOfHInter_Value(self, *args)
 
-    def Derivatives(self, *args) -> "Standard_Boolean" :
+    def Derivatives(self, *args):
         """
         :param X:
         :type X: math_Vector &
@@ -992,7 +992,7 @@ class IntCurveSurface_TheCSFunctionOfHInter(object):
         """
         return _IntCurveSurface.IntCurveSurface_TheCSFunctionOfHInter_Derivatives(self, *args)
 
-    def Values(self, *args) -> "Standard_Boolean" :
+    def Values(self, *args):
         """
         :param X:
         :type X: math_Vector &
@@ -1005,33 +1005,33 @@ class IntCurveSurface_TheCSFunctionOfHInter(object):
         """
         return _IntCurveSurface.IntCurveSurface_TheCSFunctionOfHInter_Values(self, *args)
 
-    def Point(self, *args) -> "gp_Pnt const" :
+    def Point(self):
         """
         :rtype: gp_Pnt
 
         """
-        return _IntCurveSurface.IntCurveSurface_TheCSFunctionOfHInter_Point(self, *args)
+        return _IntCurveSurface.IntCurveSurface_TheCSFunctionOfHInter_Point(self)
 
-    def Root(self, *args) -> "Standard_Real" :
+    def Root(self):
         """
         :rtype: float
 
         """
-        return _IntCurveSurface.IntCurveSurface_TheCSFunctionOfHInter_Root(self, *args)
+        return _IntCurveSurface.IntCurveSurface_TheCSFunctionOfHInter_Root(self)
 
-    def AuxillarSurface(self, *args) -> "Handle_Adaptor3d_HSurface const &" :
+    def AuxillarSurface(self):
         """
         :rtype: Handle_Adaptor3d_HSurface
 
         """
-        return _IntCurveSurface.IntCurveSurface_TheCSFunctionOfHInter_AuxillarSurface(self, *args)
+        return _IntCurveSurface.IntCurveSurface_TheCSFunctionOfHInter_AuxillarSurface(self)
 
-    def AuxillarCurve(self, *args) -> "Handle_Adaptor3d_HCurve const &" :
+    def AuxillarCurve(self):
         """
         :rtype: Handle_Adaptor3d_HCurve
 
         """
-        return _IntCurveSurface.IntCurveSurface_TheCSFunctionOfHInter_AuxillarCurve(self, *args)
+        return _IntCurveSurface.IntCurveSurface_TheCSFunctionOfHInter_AuxillarCurve(self)
 
     def __del__(self):
     	try:
@@ -1073,6 +1073,20 @@ class IntCurveSurface_TheExactHInter(object):
         :type MarginCoef: float
         :rtype: None
 
+        :param U:
+        :type U: float
+        :param V:
+        :type V: float
+        :param W:
+        :type W: float
+        :param F:
+        :type F: IntCurveSurface_TheCSFunctionOfHInter &
+        :param TolTangency:
+        :type TolTangency: float
+        :param MarginCoef: default value is 0.0
+        :type MarginCoef: float
+        :rtype: None
+
         :param F:
         :type F: IntCurveSurface_TheCSFunctionOfHInter &
         :param TolTangency:
@@ -1081,7 +1095,7 @@ class IntCurveSurface_TheExactHInter(object):
 
         """
         _IntCurveSurface.IntCurveSurface_TheExactHInter_swiginit(self,_IntCurveSurface.new_IntCurveSurface_TheExactHInter(*args))
-    def Perform(self, *args) -> "void" :
+    def Perform(self, *args):
         """
         :param U:
         :type U: float
@@ -1108,35 +1122,35 @@ class IntCurveSurface_TheExactHInter(object):
         """
         return _IntCurveSurface.IntCurveSurface_TheExactHInter_Perform(self, *args)
 
-    def IsDone(self, *args) -> "Standard_Boolean" :
+    def IsDone(self):
         """
         :rtype: bool
 
         """
-        return _IntCurveSurface.IntCurveSurface_TheExactHInter_IsDone(self, *args)
+        return _IntCurveSurface.IntCurveSurface_TheExactHInter_IsDone(self)
 
-    def IsEmpty(self, *args) -> "Standard_Boolean" :
+    def IsEmpty(self):
         """
         :rtype: bool
 
         """
-        return _IntCurveSurface.IntCurveSurface_TheExactHInter_IsEmpty(self, *args)
+        return _IntCurveSurface.IntCurveSurface_TheExactHInter_IsEmpty(self)
 
-    def Point(self, *args) -> "gp_Pnt const" :
+    def Point(self):
         """
         :rtype: gp_Pnt
 
         """
-        return _IntCurveSurface.IntCurveSurface_TheExactHInter_Point(self, *args)
+        return _IntCurveSurface.IntCurveSurface_TheExactHInter_Point(self)
 
-    def ParameterOnCurve(self, *args) -> "Standard_Real" :
+    def ParameterOnCurve(self):
         """
         :rtype: float
 
         """
-        return _IntCurveSurface.IntCurveSurface_TheExactHInter_ParameterOnCurve(self, *args)
+        return _IntCurveSurface.IntCurveSurface_TheExactHInter_ParameterOnCurve(self)
 
-    def ParameterOnSurface(self, *args) -> "void" :
+    def ParameterOnSurface(self):
         """
         :param U:
         :type U: float &
@@ -1145,14 +1159,14 @@ class IntCurveSurface_TheExactHInter(object):
         :rtype: None
 
         """
-        return _IntCurveSurface.IntCurveSurface_TheExactHInter_ParameterOnSurface(self, *args)
+        return _IntCurveSurface.IntCurveSurface_TheExactHInter_ParameterOnSurface(self)
 
-    def Function(self, *args) -> "IntCurveSurface_TheCSFunctionOfHInter &" :
+    def Function(self):
         """
         :rtype: IntCurveSurface_TheCSFunctionOfHInter
 
         """
-        return _IntCurveSurface.IntCurveSurface_TheExactHInter_Function(self, *args)
+        return _IntCurveSurface.IntCurveSurface_TheExactHInter_Function(self)
 
     def __del__(self):
     	try:
@@ -1175,8 +1189,9 @@ IntCurveSurface_TheExactHInter_swigregister(IntCurveSurface_TheExactHInter)
 
 class IntCurveSurface_TheHCurveTool(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
+    def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def FirstParameter(*args) -> "Standard_Real" :
+    def FirstParameter(*args):
         """
         :param C:
         :type C: Handle_Adaptor3d_HCurve &
@@ -1186,7 +1201,7 @@ class IntCurveSurface_TheHCurveTool(object):
         return _IntCurveSurface.IntCurveSurface_TheHCurveTool_FirstParameter(*args)
 
     FirstParameter = staticmethod(FirstParameter)
-    def LastParameter(*args) -> "Standard_Real" :
+    def LastParameter(*args):
         """
         :param C:
         :type C: Handle_Adaptor3d_HCurve &
@@ -1196,7 +1211,7 @@ class IntCurveSurface_TheHCurveTool(object):
         return _IntCurveSurface.IntCurveSurface_TheHCurveTool_LastParameter(*args)
 
     LastParameter = staticmethod(LastParameter)
-    def Continuity(*args) -> "GeomAbs_Shape" :
+    def Continuity(*args):
         """
         :param C:
         :type C: Handle_Adaptor3d_HCurve &
@@ -1206,7 +1221,7 @@ class IntCurveSurface_TheHCurveTool(object):
         return _IntCurveSurface.IntCurveSurface_TheHCurveTool_Continuity(*args)
 
     Continuity = staticmethod(Continuity)
-    def NbIntervals(*args) -> "Standard_Integer" :
+    def NbIntervals(*args):
         """
         :param C:
         :type C: Handle_Adaptor3d_HCurve &
@@ -1218,7 +1233,7 @@ class IntCurveSurface_TheHCurveTool(object):
         return _IntCurveSurface.IntCurveSurface_TheHCurveTool_NbIntervals(*args)
 
     NbIntervals = staticmethod(NbIntervals)
-    def Intervals(*args) -> "void" :
+    def Intervals(*args):
         """
         :param C:
         :type C: Handle_Adaptor3d_HCurve &
@@ -1232,7 +1247,7 @@ class IntCurveSurface_TheHCurveTool(object):
         return _IntCurveSurface.IntCurveSurface_TheHCurveTool_Intervals(*args)
 
     Intervals = staticmethod(Intervals)
-    def IsClosed(*args) -> "Standard_Boolean" :
+    def IsClosed(*args):
         """
         :param C:
         :type C: Handle_Adaptor3d_HCurve &
@@ -1242,7 +1257,7 @@ class IntCurveSurface_TheHCurveTool(object):
         return _IntCurveSurface.IntCurveSurface_TheHCurveTool_IsClosed(*args)
 
     IsClosed = staticmethod(IsClosed)
-    def IsPeriodic(*args) -> "Standard_Boolean" :
+    def IsPeriodic(*args):
         """
         :param C:
         :type C: Handle_Adaptor3d_HCurve &
@@ -1252,7 +1267,7 @@ class IntCurveSurface_TheHCurveTool(object):
         return _IntCurveSurface.IntCurveSurface_TheHCurveTool_IsPeriodic(*args)
 
     IsPeriodic = staticmethod(IsPeriodic)
-    def Period(*args) -> "Standard_Real" :
+    def Period(*args):
         """
         :param C:
         :type C: Handle_Adaptor3d_HCurve &
@@ -1262,7 +1277,7 @@ class IntCurveSurface_TheHCurveTool(object):
         return _IntCurveSurface.IntCurveSurface_TheHCurveTool_Period(*args)
 
     Period = staticmethod(Period)
-    def Value(*args) -> "gp_Pnt" :
+    def Value(*args):
         """
         :param C:
         :type C: Handle_Adaptor3d_HCurve &
@@ -1274,7 +1289,7 @@ class IntCurveSurface_TheHCurveTool(object):
         return _IntCurveSurface.IntCurveSurface_TheHCurveTool_Value(*args)
 
     Value = staticmethod(Value)
-    def D0(*args) -> "void" :
+    def D0(*args):
         """
         :param C:
         :type C: Handle_Adaptor3d_HCurve &
@@ -1288,7 +1303,7 @@ class IntCurveSurface_TheHCurveTool(object):
         return _IntCurveSurface.IntCurveSurface_TheHCurveTool_D0(*args)
 
     D0 = staticmethod(D0)
-    def D1(*args) -> "void" :
+    def D1(*args):
         """
         :param C:
         :type C: Handle_Adaptor3d_HCurve &
@@ -1304,7 +1319,7 @@ class IntCurveSurface_TheHCurveTool(object):
         return _IntCurveSurface.IntCurveSurface_TheHCurveTool_D1(*args)
 
     D1 = staticmethod(D1)
-    def D2(*args) -> "void" :
+    def D2(*args):
         """
         :param C:
         :type C: Handle_Adaptor3d_HCurve &
@@ -1322,7 +1337,7 @@ class IntCurveSurface_TheHCurveTool(object):
         return _IntCurveSurface.IntCurveSurface_TheHCurveTool_D2(*args)
 
     D2 = staticmethod(D2)
-    def D3(*args) -> "void" :
+    def D3(*args):
         """
         :param C:
         :type C: Handle_Adaptor3d_HCurve &
@@ -1342,21 +1357,21 @@ class IntCurveSurface_TheHCurveTool(object):
         return _IntCurveSurface.IntCurveSurface_TheHCurveTool_D3(*args)
 
     D3 = staticmethod(D3)
-    def DN(*args) -> "gp_Vec" :
+    def DN(*args):
         """
         :param C:
         :type C: Handle_Adaptor3d_HCurve &
         :param U:
         :type U: float
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :rtype: gp_Vec
 
         """
         return _IntCurveSurface.IntCurveSurface_TheHCurveTool_DN(*args)
 
     DN = staticmethod(DN)
-    def Resolution(*args) -> "Standard_Real" :
+    def Resolution(*args):
         """
         :param C:
         :type C: Handle_Adaptor3d_HCurve &
@@ -1368,7 +1383,7 @@ class IntCurveSurface_TheHCurveTool(object):
         return _IntCurveSurface.IntCurveSurface_TheHCurveTool_Resolution(*args)
 
     Resolution = staticmethod(Resolution)
-    def GetType(*args) -> "GeomAbs_CurveType" :
+    def GetType(*args):
         """
         :param C:
         :type C: Handle_Adaptor3d_HCurve &
@@ -1378,7 +1393,7 @@ class IntCurveSurface_TheHCurveTool(object):
         return _IntCurveSurface.IntCurveSurface_TheHCurveTool_GetType(*args)
 
     GetType = staticmethod(GetType)
-    def Line(*args) -> "gp_Lin" :
+    def Line(*args):
         """
         :param C:
         :type C: Handle_Adaptor3d_HCurve &
@@ -1388,7 +1403,7 @@ class IntCurveSurface_TheHCurveTool(object):
         return _IntCurveSurface.IntCurveSurface_TheHCurveTool_Line(*args)
 
     Line = staticmethod(Line)
-    def Circle(*args) -> "gp_Circ" :
+    def Circle(*args):
         """
         :param C:
         :type C: Handle_Adaptor3d_HCurve &
@@ -1398,7 +1413,7 @@ class IntCurveSurface_TheHCurveTool(object):
         return _IntCurveSurface.IntCurveSurface_TheHCurveTool_Circle(*args)
 
     Circle = staticmethod(Circle)
-    def Ellipse(*args) -> "gp_Elips" :
+    def Ellipse(*args):
         """
         :param C:
         :type C: Handle_Adaptor3d_HCurve &
@@ -1408,7 +1423,7 @@ class IntCurveSurface_TheHCurveTool(object):
         return _IntCurveSurface.IntCurveSurface_TheHCurveTool_Ellipse(*args)
 
     Ellipse = staticmethod(Ellipse)
-    def Hyperbola(*args) -> "gp_Hypr" :
+    def Hyperbola(*args):
         """
         :param C:
         :type C: Handle_Adaptor3d_HCurve &
@@ -1418,7 +1433,7 @@ class IntCurveSurface_TheHCurveTool(object):
         return _IntCurveSurface.IntCurveSurface_TheHCurveTool_Hyperbola(*args)
 
     Hyperbola = staticmethod(Hyperbola)
-    def Parabola(*args) -> "gp_Parab" :
+    def Parabola(*args):
         """
         :param C:
         :type C: Handle_Adaptor3d_HCurve &
@@ -1428,7 +1443,7 @@ class IntCurveSurface_TheHCurveTool(object):
         return _IntCurveSurface.IntCurveSurface_TheHCurveTool_Parabola(*args)
 
     Parabola = staticmethod(Parabola)
-    def Bezier(*args) -> "Handle_Geom_BezierCurve" :
+    def Bezier(*args):
         """
         :param C:
         :type C: Handle_Adaptor3d_HCurve &
@@ -1438,7 +1453,7 @@ class IntCurveSurface_TheHCurveTool(object):
         return _IntCurveSurface.IntCurveSurface_TheHCurveTool_Bezier(*args)
 
     Bezier = staticmethod(Bezier)
-    def BSpline(*args) -> "Handle_Geom_BSplineCurve" :
+    def BSpline(*args):
         """
         :param C:
         :type C: Handle_Adaptor3d_HCurve &
@@ -1448,7 +1463,7 @@ class IntCurveSurface_TheHCurveTool(object):
         return _IntCurveSurface.IntCurveSurface_TheHCurveTool_BSpline(*args)
 
     BSpline = staticmethod(BSpline)
-    def NbSamples(*args) -> "Standard_Integer" :
+    def NbSamples(*args):
         """
         :param C:
         :type C: Handle_Adaptor3d_HCurve &
@@ -1462,7 +1477,7 @@ class IntCurveSurface_TheHCurveTool(object):
         return _IntCurveSurface.IntCurveSurface_TheHCurveTool_NbSamples(*args)
 
     NbSamples = staticmethod(NbSamples)
-    def SamplePars(*args) -> "void" :
+    def SamplePars(*args):
         """
         :param C:
         :type C: Handle_Adaptor3d_HCurve &
@@ -1473,7 +1488,7 @@ class IntCurveSurface_TheHCurveTool(object):
         :param Defl:
         :type Defl: float
         :param NbMin:
-        :type NbMin: int
+        :type NbMin: Standard_Integer
         :param Pars:
         :type Pars: Handle_TColStd_HArray1OfReal &
         :rtype: void
@@ -1482,8 +1497,6 @@ class IntCurveSurface_TheHCurveTool(object):
         return _IntCurveSurface.IntCurveSurface_TheHCurveTool_SamplePars(*args)
 
     SamplePars = staticmethod(SamplePars)
-    def __init__(self): 
-        _IntCurveSurface.IntCurveSurface_TheHCurveTool_swiginit(self,_IntCurveSurface.new_IntCurveSurface_TheHCurveTool())
     def __del__(self):
     	try:
     		self.thisown = False
@@ -1496,7 +1509,7 @@ IntCurveSurface_TheHCurveTool._kill_pointed = new_instancemethod(_IntCurveSurfac
 IntCurveSurface_TheHCurveTool_swigregister = _IntCurveSurface.IntCurveSurface_TheHCurveTool_swigregister
 IntCurveSurface_TheHCurveTool_swigregister(IntCurveSurface_TheHCurveTool)
 
-def IntCurveSurface_TheHCurveTool_FirstParameter(*args) -> "Standard_Real" :
+def IntCurveSurface_TheHCurveTool_FirstParameter(*args):
   """
     :param C:
     :type C: Handle_Adaptor3d_HCurve &
@@ -1505,7 +1518,7 @@ def IntCurveSurface_TheHCurveTool_FirstParameter(*args) -> "Standard_Real" :
     """
   return _IntCurveSurface.IntCurveSurface_TheHCurveTool_FirstParameter(*args)
 
-def IntCurveSurface_TheHCurveTool_LastParameter(*args) -> "Standard_Real" :
+def IntCurveSurface_TheHCurveTool_LastParameter(*args):
   """
     :param C:
     :type C: Handle_Adaptor3d_HCurve &
@@ -1514,7 +1527,7 @@ def IntCurveSurface_TheHCurveTool_LastParameter(*args) -> "Standard_Real" :
     """
   return _IntCurveSurface.IntCurveSurface_TheHCurveTool_LastParameter(*args)
 
-def IntCurveSurface_TheHCurveTool_Continuity(*args) -> "GeomAbs_Shape" :
+def IntCurveSurface_TheHCurveTool_Continuity(*args):
   """
     :param C:
     :type C: Handle_Adaptor3d_HCurve &
@@ -1523,7 +1536,7 @@ def IntCurveSurface_TheHCurveTool_Continuity(*args) -> "GeomAbs_Shape" :
     """
   return _IntCurveSurface.IntCurveSurface_TheHCurveTool_Continuity(*args)
 
-def IntCurveSurface_TheHCurveTool_NbIntervals(*args) -> "Standard_Integer" :
+def IntCurveSurface_TheHCurveTool_NbIntervals(*args):
   """
     :param C:
     :type C: Handle_Adaptor3d_HCurve &
@@ -1534,7 +1547,7 @@ def IntCurveSurface_TheHCurveTool_NbIntervals(*args) -> "Standard_Integer" :
     """
   return _IntCurveSurface.IntCurveSurface_TheHCurveTool_NbIntervals(*args)
 
-def IntCurveSurface_TheHCurveTool_Intervals(*args) -> "void" :
+def IntCurveSurface_TheHCurveTool_Intervals(*args):
   """
     :param C:
     :type C: Handle_Adaptor3d_HCurve &
@@ -1547,7 +1560,7 @@ def IntCurveSurface_TheHCurveTool_Intervals(*args) -> "void" :
     """
   return _IntCurveSurface.IntCurveSurface_TheHCurveTool_Intervals(*args)
 
-def IntCurveSurface_TheHCurveTool_IsClosed(*args) -> "Standard_Boolean" :
+def IntCurveSurface_TheHCurveTool_IsClosed(*args):
   """
     :param C:
     :type C: Handle_Adaptor3d_HCurve &
@@ -1556,7 +1569,7 @@ def IntCurveSurface_TheHCurveTool_IsClosed(*args) -> "Standard_Boolean" :
     """
   return _IntCurveSurface.IntCurveSurface_TheHCurveTool_IsClosed(*args)
 
-def IntCurveSurface_TheHCurveTool_IsPeriodic(*args) -> "Standard_Boolean" :
+def IntCurveSurface_TheHCurveTool_IsPeriodic(*args):
   """
     :param C:
     :type C: Handle_Adaptor3d_HCurve &
@@ -1565,7 +1578,7 @@ def IntCurveSurface_TheHCurveTool_IsPeriodic(*args) -> "Standard_Boolean" :
     """
   return _IntCurveSurface.IntCurveSurface_TheHCurveTool_IsPeriodic(*args)
 
-def IntCurveSurface_TheHCurveTool_Period(*args) -> "Standard_Real" :
+def IntCurveSurface_TheHCurveTool_Period(*args):
   """
     :param C:
     :type C: Handle_Adaptor3d_HCurve &
@@ -1574,7 +1587,7 @@ def IntCurveSurface_TheHCurveTool_Period(*args) -> "Standard_Real" :
     """
   return _IntCurveSurface.IntCurveSurface_TheHCurveTool_Period(*args)
 
-def IntCurveSurface_TheHCurveTool_Value(*args) -> "gp_Pnt" :
+def IntCurveSurface_TheHCurveTool_Value(*args):
   """
     :param C:
     :type C: Handle_Adaptor3d_HCurve &
@@ -1585,7 +1598,7 @@ def IntCurveSurface_TheHCurveTool_Value(*args) -> "gp_Pnt" :
     """
   return _IntCurveSurface.IntCurveSurface_TheHCurveTool_Value(*args)
 
-def IntCurveSurface_TheHCurveTool_D0(*args) -> "void" :
+def IntCurveSurface_TheHCurveTool_D0(*args):
   """
     :param C:
     :type C: Handle_Adaptor3d_HCurve &
@@ -1598,7 +1611,7 @@ def IntCurveSurface_TheHCurveTool_D0(*args) -> "void" :
     """
   return _IntCurveSurface.IntCurveSurface_TheHCurveTool_D0(*args)
 
-def IntCurveSurface_TheHCurveTool_D1(*args) -> "void" :
+def IntCurveSurface_TheHCurveTool_D1(*args):
   """
     :param C:
     :type C: Handle_Adaptor3d_HCurve &
@@ -1613,7 +1626,7 @@ def IntCurveSurface_TheHCurveTool_D1(*args) -> "void" :
     """
   return _IntCurveSurface.IntCurveSurface_TheHCurveTool_D1(*args)
 
-def IntCurveSurface_TheHCurveTool_D2(*args) -> "void" :
+def IntCurveSurface_TheHCurveTool_D2(*args):
   """
     :param C:
     :type C: Handle_Adaptor3d_HCurve &
@@ -1630,7 +1643,7 @@ def IntCurveSurface_TheHCurveTool_D2(*args) -> "void" :
     """
   return _IntCurveSurface.IntCurveSurface_TheHCurveTool_D2(*args)
 
-def IntCurveSurface_TheHCurveTool_D3(*args) -> "void" :
+def IntCurveSurface_TheHCurveTool_D3(*args):
   """
     :param C:
     :type C: Handle_Adaptor3d_HCurve &
@@ -1649,20 +1662,20 @@ def IntCurveSurface_TheHCurveTool_D3(*args) -> "void" :
     """
   return _IntCurveSurface.IntCurveSurface_TheHCurveTool_D3(*args)
 
-def IntCurveSurface_TheHCurveTool_DN(*args) -> "gp_Vec" :
+def IntCurveSurface_TheHCurveTool_DN(*args):
   """
     :param C:
     :type C: Handle_Adaptor3d_HCurve &
     :param U:
     :type U: float
     :param N:
-    :type N: int
+    :type N: Standard_Integer
     :rtype: gp_Vec
 
     """
   return _IntCurveSurface.IntCurveSurface_TheHCurveTool_DN(*args)
 
-def IntCurveSurface_TheHCurveTool_Resolution(*args) -> "Standard_Real" :
+def IntCurveSurface_TheHCurveTool_Resolution(*args):
   """
     :param C:
     :type C: Handle_Adaptor3d_HCurve &
@@ -1673,7 +1686,7 @@ def IntCurveSurface_TheHCurveTool_Resolution(*args) -> "Standard_Real" :
     """
   return _IntCurveSurface.IntCurveSurface_TheHCurveTool_Resolution(*args)
 
-def IntCurveSurface_TheHCurveTool_GetType(*args) -> "GeomAbs_CurveType" :
+def IntCurveSurface_TheHCurveTool_GetType(*args):
   """
     :param C:
     :type C: Handle_Adaptor3d_HCurve &
@@ -1682,7 +1695,7 @@ def IntCurveSurface_TheHCurveTool_GetType(*args) -> "GeomAbs_CurveType" :
     """
   return _IntCurveSurface.IntCurveSurface_TheHCurveTool_GetType(*args)
 
-def IntCurveSurface_TheHCurveTool_Line(*args) -> "gp_Lin" :
+def IntCurveSurface_TheHCurveTool_Line(*args):
   """
     :param C:
     :type C: Handle_Adaptor3d_HCurve &
@@ -1691,7 +1704,7 @@ def IntCurveSurface_TheHCurveTool_Line(*args) -> "gp_Lin" :
     """
   return _IntCurveSurface.IntCurveSurface_TheHCurveTool_Line(*args)
 
-def IntCurveSurface_TheHCurveTool_Circle(*args) -> "gp_Circ" :
+def IntCurveSurface_TheHCurveTool_Circle(*args):
   """
     :param C:
     :type C: Handle_Adaptor3d_HCurve &
@@ -1700,7 +1713,7 @@ def IntCurveSurface_TheHCurveTool_Circle(*args) -> "gp_Circ" :
     """
   return _IntCurveSurface.IntCurveSurface_TheHCurveTool_Circle(*args)
 
-def IntCurveSurface_TheHCurveTool_Ellipse(*args) -> "gp_Elips" :
+def IntCurveSurface_TheHCurveTool_Ellipse(*args):
   """
     :param C:
     :type C: Handle_Adaptor3d_HCurve &
@@ -1709,7 +1722,7 @@ def IntCurveSurface_TheHCurveTool_Ellipse(*args) -> "gp_Elips" :
     """
   return _IntCurveSurface.IntCurveSurface_TheHCurveTool_Ellipse(*args)
 
-def IntCurveSurface_TheHCurveTool_Hyperbola(*args) -> "gp_Hypr" :
+def IntCurveSurface_TheHCurveTool_Hyperbola(*args):
   """
     :param C:
     :type C: Handle_Adaptor3d_HCurve &
@@ -1718,7 +1731,7 @@ def IntCurveSurface_TheHCurveTool_Hyperbola(*args) -> "gp_Hypr" :
     """
   return _IntCurveSurface.IntCurveSurface_TheHCurveTool_Hyperbola(*args)
 
-def IntCurveSurface_TheHCurveTool_Parabola(*args) -> "gp_Parab" :
+def IntCurveSurface_TheHCurveTool_Parabola(*args):
   """
     :param C:
     :type C: Handle_Adaptor3d_HCurve &
@@ -1727,7 +1740,7 @@ def IntCurveSurface_TheHCurveTool_Parabola(*args) -> "gp_Parab" :
     """
   return _IntCurveSurface.IntCurveSurface_TheHCurveTool_Parabola(*args)
 
-def IntCurveSurface_TheHCurveTool_Bezier(*args) -> "Handle_Geom_BezierCurve" :
+def IntCurveSurface_TheHCurveTool_Bezier(*args):
   """
     :param C:
     :type C: Handle_Adaptor3d_HCurve &
@@ -1736,7 +1749,7 @@ def IntCurveSurface_TheHCurveTool_Bezier(*args) -> "Handle_Geom_BezierCurve" :
     """
   return _IntCurveSurface.IntCurveSurface_TheHCurveTool_Bezier(*args)
 
-def IntCurveSurface_TheHCurveTool_BSpline(*args) -> "Handle_Geom_BSplineCurve" :
+def IntCurveSurface_TheHCurveTool_BSpline(*args):
   """
     :param C:
     :type C: Handle_Adaptor3d_HCurve &
@@ -1745,7 +1758,7 @@ def IntCurveSurface_TheHCurveTool_BSpline(*args) -> "Handle_Geom_BSplineCurve" :
     """
   return _IntCurveSurface.IntCurveSurface_TheHCurveTool_BSpline(*args)
 
-def IntCurveSurface_TheHCurveTool_NbSamples(*args) -> "Standard_Integer" :
+def IntCurveSurface_TheHCurveTool_NbSamples(*args):
   """
     :param C:
     :type C: Handle_Adaptor3d_HCurve &
@@ -1758,7 +1771,7 @@ def IntCurveSurface_TheHCurveTool_NbSamples(*args) -> "Standard_Integer" :
     """
   return _IntCurveSurface.IntCurveSurface_TheHCurveTool_NbSamples(*args)
 
-def IntCurveSurface_TheHCurveTool_SamplePars(*args) -> "void" :
+def IntCurveSurface_TheHCurveTool_SamplePars(*args):
   """
     :param C:
     :type C: Handle_Adaptor3d_HCurve &
@@ -1769,7 +1782,7 @@ def IntCurveSurface_TheHCurveTool_SamplePars(*args) -> "void" :
     :param Defl:
     :type Defl: float
     :param NbMin:
-    :type NbMin: int
+    :type NbMin: Standard_Integer
     :param Pars:
     :type Pars: Handle_TColStd_HArray1OfReal &
     :rtype: void
@@ -1828,7 +1841,7 @@ class IntCurveSurface_TheInterferenceOfHInter(OCC.Intf.Intf_Interference):
 
         """
         _IntCurveSurface.IntCurveSurface_TheInterferenceOfHInter_swiginit(self,_IntCurveSurface.new_IntCurveSurface_TheInterferenceOfHInter(*args))
-    def Perform(self, *args) -> "void" :
+    def Perform(self, *args):
         """
         :param thePolyg:
         :type thePolyg: IntCurveSurface_ThePolygonOfHInter &
@@ -1875,7 +1888,7 @@ class IntCurveSurface_TheInterferenceOfHInter(OCC.Intf.Intf_Interference):
         """
         return _IntCurveSurface.IntCurveSurface_TheInterferenceOfHInter_Perform(self, *args)
 
-    def Interference(self, *args) -> "void" :
+    def Interference(self, *args):
         """
         :param thePolyg:
         :type thePolyg: IntCurveSurface_ThePolygonOfHInter &
@@ -1916,7 +1929,7 @@ class IntCurveSurface_ThePolygonOfHInter(object):
         :param Curve:
         :type Curve: Handle_Adaptor3d_HCurve &
         :param NbPnt:
-        :type NbPnt: int
+        :type NbPnt: Standard_Integer
         :rtype: None
 
         :param Curve:
@@ -1926,7 +1939,7 @@ class IntCurveSurface_ThePolygonOfHInter(object):
         :param U2:
         :type U2: float
         :param NbPnt:
-        :type NbPnt: int
+        :type NbPnt: Standard_Integer
         :rtype: None
 
         :param Curve:
@@ -1937,21 +1950,21 @@ class IntCurveSurface_ThePolygonOfHInter(object):
 
         """
         _IntCurveSurface.IntCurveSurface_ThePolygonOfHInter_swiginit(self,_IntCurveSurface.new_IntCurveSurface_ThePolygonOfHInter(*args))
-    def Bounding(self, *args) -> "Bnd_Box const &" :
+    def Bounding(self):
         """
         :rtype: Bnd_Box
 
         """
-        return _IntCurveSurface.IntCurveSurface_ThePolygonOfHInter_Bounding(self, *args)
+        return _IntCurveSurface.IntCurveSurface_ThePolygonOfHInter_Bounding(self)
 
-    def DeflectionOverEstimation(self, *args) -> "Standard_Real" :
+    def DeflectionOverEstimation(self):
         """
         :rtype: float
 
         """
-        return _IntCurveSurface.IntCurveSurface_ThePolygonOfHInter_DeflectionOverEstimation(self, *args)
+        return _IntCurveSurface.IntCurveSurface_ThePolygonOfHInter_DeflectionOverEstimation(self)
 
-    def SetDeflectionOverEstimation(self, *args) -> "void" :
+    def SetDeflectionOverEstimation(self, *args):
         """
         :param x:
         :type x: float
@@ -1960,7 +1973,7 @@ class IntCurveSurface_ThePolygonOfHInter(object):
         """
         return _IntCurveSurface.IntCurveSurface_ThePolygonOfHInter_SetDeflectionOverEstimation(self, *args)
 
-    def Closed(self, *args) -> "Standard_Boolean" :
+    def Closed(self, *args):
         """
         :param clos:
         :type clos: bool
@@ -1971,49 +1984,49 @@ class IntCurveSurface_ThePolygonOfHInter(object):
         """
         return _IntCurveSurface.IntCurveSurface_ThePolygonOfHInter_Closed(self, *args)
 
-    def NbSegments(self, *args) -> "Standard_Integer" :
+    def NbSegments(self):
         """
         :rtype: int
 
         """
-        return _IntCurveSurface.IntCurveSurface_ThePolygonOfHInter_NbSegments(self, *args)
+        return _IntCurveSurface.IntCurveSurface_ThePolygonOfHInter_NbSegments(self)
 
-    def BeginOfSeg(self, *args) -> "gp_Pnt const" :
+    def BeginOfSeg(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: gp_Pnt
 
         """
         return _IntCurveSurface.IntCurveSurface_ThePolygonOfHInter_BeginOfSeg(self, *args)
 
-    def EndOfSeg(self, *args) -> "gp_Pnt const" :
+    def EndOfSeg(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: gp_Pnt
 
         """
         return _IntCurveSurface.IntCurveSurface_ThePolygonOfHInter_EndOfSeg(self, *args)
 
-    def InfParameter(self, *args) -> "Standard_Real" :
+    def InfParameter(self):
         """
         :rtype: float
 
         """
-        return _IntCurveSurface.IntCurveSurface_ThePolygonOfHInter_InfParameter(self, *args)
+        return _IntCurveSurface.IntCurveSurface_ThePolygonOfHInter_InfParameter(self)
 
-    def SupParameter(self, *args) -> "Standard_Real" :
+    def SupParameter(self):
         """
         :rtype: float
 
         """
-        return _IntCurveSurface.IntCurveSurface_ThePolygonOfHInter_SupParameter(self, *args)
+        return _IntCurveSurface.IntCurveSurface_ThePolygonOfHInter_SupParameter(self)
 
-    def ApproxParamOnCurve(self, *args) -> "Standard_Real" :
+    def ApproxParamOnCurve(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param ParamOnLine:
         :type ParamOnLine: float
         :rtype: float
@@ -2021,12 +2034,12 @@ class IntCurveSurface_ThePolygonOfHInter(object):
         """
         return _IntCurveSurface.IntCurveSurface_ThePolygonOfHInter_ApproxParamOnCurve(self, *args)
 
-    def Dump(self, *args) -> "void" :
+    def Dump(self):
         """
         :rtype: None
 
         """
-        return _IntCurveSurface.IntCurveSurface_ThePolygonOfHInter_Dump(self, *args)
+        return _IntCurveSurface.IntCurveSurface_ThePolygonOfHInter_Dump(self)
 
     def __del__(self):
     	try:
@@ -2053,8 +2066,9 @@ IntCurveSurface_ThePolygonOfHInter_swigregister(IntCurveSurface_ThePolygonOfHInt
 
 class IntCurveSurface_ThePolygonToolOfHInter(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
+    def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def Bounding(*args) -> "Bnd_Box const &" :
+    def Bounding(*args):
         """
         :param thePolygon:
         :type thePolygon: IntCurveSurface_ThePolygonOfHInter &
@@ -2064,7 +2078,7 @@ class IntCurveSurface_ThePolygonToolOfHInter(object):
         return _IntCurveSurface.IntCurveSurface_ThePolygonToolOfHInter_Bounding(*args)
 
     Bounding = staticmethod(Bounding)
-    def DeflectionOverEstimation(*args) -> "Standard_Real" :
+    def DeflectionOverEstimation(*args):
         """
         :param thePolygon:
         :type thePolygon: IntCurveSurface_ThePolygonOfHInter &
@@ -2074,7 +2088,7 @@ class IntCurveSurface_ThePolygonToolOfHInter(object):
         return _IntCurveSurface.IntCurveSurface_ThePolygonToolOfHInter_DeflectionOverEstimation(*args)
 
     DeflectionOverEstimation = staticmethod(DeflectionOverEstimation)
-    def Closed(*args) -> "Standard_Boolean" :
+    def Closed(*args):
         """
         :param thePolygon:
         :type thePolygon: IntCurveSurface_ThePolygonOfHInter &
@@ -2084,7 +2098,7 @@ class IntCurveSurface_ThePolygonToolOfHInter(object):
         return _IntCurveSurface.IntCurveSurface_ThePolygonToolOfHInter_Closed(*args)
 
     Closed = staticmethod(Closed)
-    def NbSegments(*args) -> "Standard_Integer" :
+    def NbSegments(*args):
         """
         :param thePolygon:
         :type thePolygon: IntCurveSurface_ThePolygonOfHInter &
@@ -2094,31 +2108,31 @@ class IntCurveSurface_ThePolygonToolOfHInter(object):
         return _IntCurveSurface.IntCurveSurface_ThePolygonToolOfHInter_NbSegments(*args)
 
     NbSegments = staticmethod(NbSegments)
-    def BeginOfSeg(*args) -> "gp_Pnt const" :
+    def BeginOfSeg(*args):
         """
         :param thePolygon:
         :type thePolygon: IntCurveSurface_ThePolygonOfHInter &
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: gp_Pnt
 
         """
         return _IntCurveSurface.IntCurveSurface_ThePolygonToolOfHInter_BeginOfSeg(*args)
 
     BeginOfSeg = staticmethod(BeginOfSeg)
-    def EndOfSeg(*args) -> "gp_Pnt const" :
+    def EndOfSeg(*args):
         """
         :param thePolygon:
         :type thePolygon: IntCurveSurface_ThePolygonOfHInter &
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: gp_Pnt
 
         """
         return _IntCurveSurface.IntCurveSurface_ThePolygonToolOfHInter_EndOfSeg(*args)
 
     EndOfSeg = staticmethod(EndOfSeg)
-    def Dump(*args) -> "void" :
+    def Dump(*args):
         """
         :param thePolygon:
         :type thePolygon: IntCurveSurface_ThePolygonOfHInter &
@@ -2128,8 +2142,6 @@ class IntCurveSurface_ThePolygonToolOfHInter(object):
         return _IntCurveSurface.IntCurveSurface_ThePolygonToolOfHInter_Dump(*args)
 
     Dump = staticmethod(Dump)
-    def __init__(self): 
-        _IntCurveSurface.IntCurveSurface_ThePolygonToolOfHInter_swiginit(self,_IntCurveSurface.new_IntCurveSurface_ThePolygonToolOfHInter())
     def __del__(self):
     	try:
     		self.thisown = False
@@ -2142,7 +2154,7 @@ IntCurveSurface_ThePolygonToolOfHInter._kill_pointed = new_instancemethod(_IntCu
 IntCurveSurface_ThePolygonToolOfHInter_swigregister = _IntCurveSurface.IntCurveSurface_ThePolygonToolOfHInter_swigregister
 IntCurveSurface_ThePolygonToolOfHInter_swigregister(IntCurveSurface_ThePolygonToolOfHInter)
 
-def IntCurveSurface_ThePolygonToolOfHInter_Bounding(*args) -> "Bnd_Box const &" :
+def IntCurveSurface_ThePolygonToolOfHInter_Bounding(*args):
   """
     :param thePolygon:
     :type thePolygon: IntCurveSurface_ThePolygonOfHInter &
@@ -2151,7 +2163,7 @@ def IntCurveSurface_ThePolygonToolOfHInter_Bounding(*args) -> "Bnd_Box const &" 
     """
   return _IntCurveSurface.IntCurveSurface_ThePolygonToolOfHInter_Bounding(*args)
 
-def IntCurveSurface_ThePolygonToolOfHInter_DeflectionOverEstimation(*args) -> "Standard_Real" :
+def IntCurveSurface_ThePolygonToolOfHInter_DeflectionOverEstimation(*args):
   """
     :param thePolygon:
     :type thePolygon: IntCurveSurface_ThePolygonOfHInter &
@@ -2160,7 +2172,7 @@ def IntCurveSurface_ThePolygonToolOfHInter_DeflectionOverEstimation(*args) -> "S
     """
   return _IntCurveSurface.IntCurveSurface_ThePolygonToolOfHInter_DeflectionOverEstimation(*args)
 
-def IntCurveSurface_ThePolygonToolOfHInter_Closed(*args) -> "Standard_Boolean" :
+def IntCurveSurface_ThePolygonToolOfHInter_Closed(*args):
   """
     :param thePolygon:
     :type thePolygon: IntCurveSurface_ThePolygonOfHInter &
@@ -2169,7 +2181,7 @@ def IntCurveSurface_ThePolygonToolOfHInter_Closed(*args) -> "Standard_Boolean" :
     """
   return _IntCurveSurface.IntCurveSurface_ThePolygonToolOfHInter_Closed(*args)
 
-def IntCurveSurface_ThePolygonToolOfHInter_NbSegments(*args) -> "Standard_Integer" :
+def IntCurveSurface_ThePolygonToolOfHInter_NbSegments(*args):
   """
     :param thePolygon:
     :type thePolygon: IntCurveSurface_ThePolygonOfHInter &
@@ -2178,29 +2190,29 @@ def IntCurveSurface_ThePolygonToolOfHInter_NbSegments(*args) -> "Standard_Intege
     """
   return _IntCurveSurface.IntCurveSurface_ThePolygonToolOfHInter_NbSegments(*args)
 
-def IntCurveSurface_ThePolygonToolOfHInter_BeginOfSeg(*args) -> "gp_Pnt const" :
+def IntCurveSurface_ThePolygonToolOfHInter_BeginOfSeg(*args):
   """
     :param thePolygon:
     :type thePolygon: IntCurveSurface_ThePolygonOfHInter &
     :param Index:
-    :type Index: int
+    :type Index: Standard_Integer
     :rtype: gp_Pnt
 
     """
   return _IntCurveSurface.IntCurveSurface_ThePolygonToolOfHInter_BeginOfSeg(*args)
 
-def IntCurveSurface_ThePolygonToolOfHInter_EndOfSeg(*args) -> "gp_Pnt const" :
+def IntCurveSurface_ThePolygonToolOfHInter_EndOfSeg(*args):
   """
     :param thePolygon:
     :type thePolygon: IntCurveSurface_ThePolygonOfHInter &
     :param Index:
-    :type Index: int
+    :type Index: Standard_Integer
     :rtype: gp_Pnt
 
     """
   return _IntCurveSurface.IntCurveSurface_ThePolygonToolOfHInter_EndOfSeg(*args)
 
-def IntCurveSurface_ThePolygonToolOfHInter_Dump(*args) -> "void" :
+def IntCurveSurface_ThePolygonToolOfHInter_Dump(*args):
   """
     :param thePolygon:
     :type thePolygon: IntCurveSurface_ThePolygonOfHInter &
@@ -2211,8 +2223,9 @@ def IntCurveSurface_ThePolygonToolOfHInter_Dump(*args) -> "void" :
 
 class IntCurveSurface_ThePolyhedronToolOfHInter(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
+    def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def Bounding(*args) -> "Bnd_Box const &" :
+    def Bounding(*args):
         """
         :param thePolyh:
         :type thePolyh: IntCurveSurface_ThePolyhedronOfHInter &
@@ -2222,7 +2235,7 @@ class IntCurveSurface_ThePolyhedronToolOfHInter(object):
         return _IntCurveSurface.IntCurveSurface_ThePolyhedronToolOfHInter_Bounding(*args)
 
     Bounding = staticmethod(Bounding)
-    def ComponentsBounding(*args) -> "Handle_Bnd_HArray1OfBox const &" :
+    def ComponentsBounding(*args):
         """
         :param thePolyh:
         :type thePolyh: IntCurveSurface_ThePolyhedronOfHInter &
@@ -2232,7 +2245,7 @@ class IntCurveSurface_ThePolyhedronToolOfHInter(object):
         return _IntCurveSurface.IntCurveSurface_ThePolyhedronToolOfHInter_ComponentsBounding(*args)
 
     ComponentsBounding = staticmethod(ComponentsBounding)
-    def DeflectionOverEstimation(*args) -> "Standard_Real" :
+    def DeflectionOverEstimation(*args):
         """
         :param thePolyh:
         :type thePolyh: IntCurveSurface_ThePolyhedronOfHInter &
@@ -2242,7 +2255,7 @@ class IntCurveSurface_ThePolyhedronToolOfHInter(object):
         return _IntCurveSurface.IntCurveSurface_ThePolyhedronToolOfHInter_DeflectionOverEstimation(*args)
 
     DeflectionOverEstimation = staticmethod(DeflectionOverEstimation)
-    def NbTriangles(*args) -> "Standard_Integer" :
+    def NbTriangles(*args):
         """
         :param thePolyh:
         :type thePolyh: IntCurveSurface_ThePolyhedronOfHInter &
@@ -2252,71 +2265,71 @@ class IntCurveSurface_ThePolyhedronToolOfHInter(object):
         return _IntCurveSurface.IntCurveSurface_ThePolyhedronToolOfHInter_NbTriangles(*args)
 
     NbTriangles = staticmethod(NbTriangles)
-    def Triangle(*args) -> "Standard_Integer &, Standard_Integer &, Standard_Integer &" :
+    def Triangle(*args):
         """
         :param thePolyh:
         :type thePolyh: IntCurveSurface_ThePolyhedronOfHInter &
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param P1:
-        :type P1: int &
+        :type P1: Standard_Integer &
         :param P2:
-        :type P2: int &
+        :type P2: Standard_Integer &
         :param P3:
-        :type P3: int &
+        :type P3: Standard_Integer &
         :rtype: void
 
         """
         return _IntCurveSurface.IntCurveSurface_ThePolyhedronToolOfHInter_Triangle(*args)
 
     Triangle = staticmethod(Triangle)
-    def Point(*args) -> "gp_Pnt const" :
+    def Point(*args):
         """
         :param thePolyh:
         :type thePolyh: IntCurveSurface_ThePolyhedronOfHInter &
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: gp_Pnt
 
         """
         return _IntCurveSurface.IntCurveSurface_ThePolyhedronToolOfHInter_Point(*args)
 
     Point = staticmethod(Point)
-    def TriConnex(*args) -> "Standard_Integer &, Standard_Integer &" :
+    def TriConnex(*args):
         """
         :param thePolyh:
         :type thePolyh: IntCurveSurface_ThePolyhedronOfHInter &
         :param Triang:
-        :type Triang: int
+        :type Triang: Standard_Integer
         :param Pivot:
-        :type Pivot: int
+        :type Pivot: Standard_Integer
         :param Pedge:
-        :type Pedge: int
+        :type Pedge: Standard_Integer
         :param TriCon:
-        :type TriCon: int &
+        :type TriCon: Standard_Integer &
         :param OtherP:
-        :type OtherP: int &
+        :type OtherP: Standard_Integer &
         :rtype: int
 
         """
         return _IntCurveSurface.IntCurveSurface_ThePolyhedronToolOfHInter_TriConnex(*args)
 
     TriConnex = staticmethod(TriConnex)
-    def IsOnBound(*args) -> "Standard_Boolean" :
+    def IsOnBound(*args):
         """
         :param thePolyh:
         :type thePolyh: IntCurveSurface_ThePolyhedronOfHInter &
         :param Index1:
-        :type Index1: int
+        :type Index1: Standard_Integer
         :param Index2:
-        :type Index2: int
+        :type Index2: Standard_Integer
         :rtype: bool
 
         """
         return _IntCurveSurface.IntCurveSurface_ThePolyhedronToolOfHInter_IsOnBound(*args)
 
     IsOnBound = staticmethod(IsOnBound)
-    def GetBorderDeflection(*args) -> "Standard_Real" :
+    def GetBorderDeflection(*args):
         """
         :param thePolyh:
         :type thePolyh: IntCurveSurface_ThePolyhedronOfHInter &
@@ -2326,7 +2339,7 @@ class IntCurveSurface_ThePolyhedronToolOfHInter(object):
         return _IntCurveSurface.IntCurveSurface_ThePolyhedronToolOfHInter_GetBorderDeflection(*args)
 
     GetBorderDeflection = staticmethod(GetBorderDeflection)
-    def Dump(*args) -> "void" :
+    def Dump(*args):
         """
         :param thePolyh:
         :type thePolyh: IntCurveSurface_ThePolyhedronOfHInter &
@@ -2336,8 +2349,6 @@ class IntCurveSurface_ThePolyhedronToolOfHInter(object):
         return _IntCurveSurface.IntCurveSurface_ThePolyhedronToolOfHInter_Dump(*args)
 
     Dump = staticmethod(Dump)
-    def __init__(self): 
-        _IntCurveSurface.IntCurveSurface_ThePolyhedronToolOfHInter_swiginit(self,_IntCurveSurface.new_IntCurveSurface_ThePolyhedronToolOfHInter())
     def __del__(self):
     	try:
     		self.thisown = False
@@ -2350,7 +2361,7 @@ IntCurveSurface_ThePolyhedronToolOfHInter._kill_pointed = new_instancemethod(_In
 IntCurveSurface_ThePolyhedronToolOfHInter_swigregister = _IntCurveSurface.IntCurveSurface_ThePolyhedronToolOfHInter_swigregister
 IntCurveSurface_ThePolyhedronToolOfHInter_swigregister(IntCurveSurface_ThePolyhedronToolOfHInter)
 
-def IntCurveSurface_ThePolyhedronToolOfHInter_Bounding(*args) -> "Bnd_Box const &" :
+def IntCurveSurface_ThePolyhedronToolOfHInter_Bounding(*args):
   """
     :param thePolyh:
     :type thePolyh: IntCurveSurface_ThePolyhedronOfHInter &
@@ -2359,7 +2370,7 @@ def IntCurveSurface_ThePolyhedronToolOfHInter_Bounding(*args) -> "Bnd_Box const 
     """
   return _IntCurveSurface.IntCurveSurface_ThePolyhedronToolOfHInter_Bounding(*args)
 
-def IntCurveSurface_ThePolyhedronToolOfHInter_ComponentsBounding(*args) -> "Handle_Bnd_HArray1OfBox const &" :
+def IntCurveSurface_ThePolyhedronToolOfHInter_ComponentsBounding(*args):
   """
     :param thePolyh:
     :type thePolyh: IntCurveSurface_ThePolyhedronOfHInter &
@@ -2368,7 +2379,7 @@ def IntCurveSurface_ThePolyhedronToolOfHInter_ComponentsBounding(*args) -> "Hand
     """
   return _IntCurveSurface.IntCurveSurface_ThePolyhedronToolOfHInter_ComponentsBounding(*args)
 
-def IntCurveSurface_ThePolyhedronToolOfHInter_DeflectionOverEstimation(*args) -> "Standard_Real" :
+def IntCurveSurface_ThePolyhedronToolOfHInter_DeflectionOverEstimation(*args):
   """
     :param thePolyh:
     :type thePolyh: IntCurveSurface_ThePolyhedronOfHInter &
@@ -2377,7 +2388,7 @@ def IntCurveSurface_ThePolyhedronToolOfHInter_DeflectionOverEstimation(*args) ->
     """
   return _IntCurveSurface.IntCurveSurface_ThePolyhedronToolOfHInter_DeflectionOverEstimation(*args)
 
-def IntCurveSurface_ThePolyhedronToolOfHInter_NbTriangles(*args) -> "Standard_Integer" :
+def IntCurveSurface_ThePolyhedronToolOfHInter_NbTriangles(*args):
   """
     :param thePolyh:
     :type thePolyh: IntCurveSurface_ThePolyhedronOfHInter &
@@ -2386,67 +2397,67 @@ def IntCurveSurface_ThePolyhedronToolOfHInter_NbTriangles(*args) -> "Standard_In
     """
   return _IntCurveSurface.IntCurveSurface_ThePolyhedronToolOfHInter_NbTriangles(*args)
 
-def IntCurveSurface_ThePolyhedronToolOfHInter_Triangle(*args) -> "Standard_Integer &, Standard_Integer &, Standard_Integer &" :
+def IntCurveSurface_ThePolyhedronToolOfHInter_Triangle(*args):
   """
     :param thePolyh:
     :type thePolyh: IntCurveSurface_ThePolyhedronOfHInter &
     :param Index:
-    :type Index: int
+    :type Index: Standard_Integer
     :param P1:
-    :type P1: int &
+    :type P1: Standard_Integer &
     :param P2:
-    :type P2: int &
+    :type P2: Standard_Integer &
     :param P3:
-    :type P3: int &
+    :type P3: Standard_Integer &
     :rtype: void
 
     """
   return _IntCurveSurface.IntCurveSurface_ThePolyhedronToolOfHInter_Triangle(*args)
 
-def IntCurveSurface_ThePolyhedronToolOfHInter_Point(*args) -> "gp_Pnt const" :
+def IntCurveSurface_ThePolyhedronToolOfHInter_Point(*args):
   """
     :param thePolyh:
     :type thePolyh: IntCurveSurface_ThePolyhedronOfHInter &
     :param Index:
-    :type Index: int
+    :type Index: Standard_Integer
     :rtype: gp_Pnt
 
     """
   return _IntCurveSurface.IntCurveSurface_ThePolyhedronToolOfHInter_Point(*args)
 
-def IntCurveSurface_ThePolyhedronToolOfHInter_TriConnex(*args) -> "Standard_Integer &, Standard_Integer &" :
+def IntCurveSurface_ThePolyhedronToolOfHInter_TriConnex(*args):
   """
     :param thePolyh:
     :type thePolyh: IntCurveSurface_ThePolyhedronOfHInter &
     :param Triang:
-    :type Triang: int
+    :type Triang: Standard_Integer
     :param Pivot:
-    :type Pivot: int
+    :type Pivot: Standard_Integer
     :param Pedge:
-    :type Pedge: int
+    :type Pedge: Standard_Integer
     :param TriCon:
-    :type TriCon: int &
+    :type TriCon: Standard_Integer &
     :param OtherP:
-    :type OtherP: int &
+    :type OtherP: Standard_Integer &
     :rtype: int
 
     """
   return _IntCurveSurface.IntCurveSurface_ThePolyhedronToolOfHInter_TriConnex(*args)
 
-def IntCurveSurface_ThePolyhedronToolOfHInter_IsOnBound(*args) -> "Standard_Boolean" :
+def IntCurveSurface_ThePolyhedronToolOfHInter_IsOnBound(*args):
   """
     :param thePolyh:
     :type thePolyh: IntCurveSurface_ThePolyhedronOfHInter &
     :param Index1:
-    :type Index1: int
+    :type Index1: Standard_Integer
     :param Index2:
-    :type Index2: int
+    :type Index2: Standard_Integer
     :rtype: bool
 
     """
   return _IntCurveSurface.IntCurveSurface_ThePolyhedronToolOfHInter_IsOnBound(*args)
 
-def IntCurveSurface_ThePolyhedronToolOfHInter_GetBorderDeflection(*args) -> "Standard_Real" :
+def IntCurveSurface_ThePolyhedronToolOfHInter_GetBorderDeflection(*args):
   """
     :param thePolyh:
     :type thePolyh: IntCurveSurface_ThePolyhedronOfHInter &
@@ -2455,7 +2466,7 @@ def IntCurveSurface_ThePolyhedronToolOfHInter_GetBorderDeflection(*args) -> "Sta
     """
   return _IntCurveSurface.IntCurveSurface_ThePolyhedronToolOfHInter_GetBorderDeflection(*args)
 
-def IntCurveSurface_ThePolyhedronToolOfHInter_Dump(*args) -> "void" :
+def IntCurveSurface_ThePolyhedronToolOfHInter_Dump(*args):
   """
     :param thePolyh:
     :type thePolyh: IntCurveSurface_ThePolyhedronOfHInter &
@@ -2477,40 +2488,40 @@ class IntCurveSurface_TheQuadCurvExactHInter(object):
 
         """
         _IntCurveSurface.IntCurveSurface_TheQuadCurvExactHInter_swiginit(self,_IntCurveSurface.new_IntCurveSurface_TheQuadCurvExactHInter(*args))
-    def IsDone(self, *args) -> "Standard_Boolean" :
+    def IsDone(self):
         """
         :rtype: bool
 
         """
-        return _IntCurveSurface.IntCurveSurface_TheQuadCurvExactHInter_IsDone(self, *args)
+        return _IntCurveSurface.IntCurveSurface_TheQuadCurvExactHInter_IsDone(self)
 
-    def NbRoots(self, *args) -> "Standard_Integer" :
+    def NbRoots(self):
         """
         :rtype: int
 
         """
-        return _IntCurveSurface.IntCurveSurface_TheQuadCurvExactHInter_NbRoots(self, *args)
+        return _IntCurveSurface.IntCurveSurface_TheQuadCurvExactHInter_NbRoots(self)
 
-    def Root(self, *args) -> "Standard_Real" :
+    def Root(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: float
 
         """
         return _IntCurveSurface.IntCurveSurface_TheQuadCurvExactHInter_Root(self, *args)
 
-    def NbIntervals(self, *args) -> "Standard_Integer" :
+    def NbIntervals(self):
         """
         :rtype: int
 
         """
-        return _IntCurveSurface.IntCurveSurface_TheQuadCurvExactHInter_NbIntervals(self, *args)
+        return _IntCurveSurface.IntCurveSurface_TheQuadCurvExactHInter_NbIntervals(self)
 
-    def Intervals(self, *args) -> "void" :
+    def Intervals(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param U1:
         :type U1: float &
         :param U2:
@@ -2550,7 +2561,7 @@ class IntCurveSurface_TheQuadCurvFuncOfTheQuadCurvExactHInter(object):
 
         """
         _IntCurveSurface.IntCurveSurface_TheQuadCurvFuncOfTheQuadCurvExactHInter_swiginit(self,_IntCurveSurface.new_IntCurveSurface_TheQuadCurvFuncOfTheQuadCurvExactHInter(*args))
-    def Value(self, *args) -> "Standard_Boolean" :
+    def Value(self, *args):
         """
         :param Param:
         :type Param: float
@@ -2561,7 +2572,7 @@ class IntCurveSurface_TheQuadCurvFuncOfTheQuadCurvExactHInter(object):
         """
         return _IntCurveSurface.IntCurveSurface_TheQuadCurvFuncOfTheQuadCurvExactHInter_Value(self, *args)
 
-    def Derivative(self, *args) -> "Standard_Boolean" :
+    def Derivative(self, *args):
         """
         :param Param:
         :type Param: float
@@ -2572,7 +2583,7 @@ class IntCurveSurface_TheQuadCurvFuncOfTheQuadCurvExactHInter(object):
         """
         return _IntCurveSurface.IntCurveSurface_TheQuadCurvFuncOfTheQuadCurvExactHInter_Derivative(self, *args)
 
-    def Values(self, *args) -> "Standard_Boolean" :
+    def Values(self, *args):
         """
         :param Param:
         :type Param: float
@@ -2603,13 +2614,13 @@ IntCurveSurface_TheQuadCurvFuncOfTheQuadCurvExactHInter_swigregister(IntCurveSur
 class IntCurveSurface_HInter(IntCurveSurface_Intersection):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _IntCurveSurface.IntCurveSurface_HInter_swiginit(self,_IntCurveSurface.new_IntCurveSurface_HInter(*args))
-    def Perform(self, *args) -> "void" :
+        _IntCurveSurface.IntCurveSurface_HInter_swiginit(self,_IntCurveSurface.new_IntCurveSurface_HInter())
+    def Perform(self, *args):
         """
         :param Curve:
         :type Curve: Handle_Adaptor3d_HCurve &

@@ -195,8 +195,9 @@ V3d_FRONT = _V3d.V3d_FRONT
 V3d_SLICE = _V3d.V3d_SLICE
 class v3d(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
+    def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def GetProjAxis(*args) -> "Graphic3d_Vector" :
+    def GetProjAxis(*args):
         """
         * Determines the orientation vector corresponding to the predefined orientation type.
 
@@ -208,7 +209,7 @@ class v3d(object):
         return _V3d.v3d_GetProjAxis(*args)
 
     GetProjAxis = staticmethod(GetProjAxis)
-    def ArrowOfRadius(*args) -> "void" :
+    def ArrowOfRadius(*args):
         """
         * Compute the graphic structure of arrow. X0,Y0,Z0 : coordinate of the arrow. DX,DY,DZ : Direction of the arrow. Alpha : Angle of arrow. Lng : Length of arrow.
 
@@ -236,7 +237,7 @@ class v3d(object):
         return _V3d.v3d_ArrowOfRadius(*args)
 
     ArrowOfRadius = staticmethod(ArrowOfRadius)
-    def CircleInPlane(*args) -> "void" :
+    def CircleInPlane(*args):
         """
         * Compute the graphic structure of circle. X0,Y0,Z0 : Center of circle. VX,VY,VZ : Axis of circle. Radius : Radius of circle.
 
@@ -262,7 +263,7 @@ class v3d(object):
         return _V3d.v3d_CircleInPlane(*args)
 
     CircleInPlane = staticmethod(CircleInPlane)
-    def SwitchViewsinWindow(*args) -> "void" :
+    def SwitchViewsinWindow(*args):
         """
         :param aPreviousView:
         :type aPreviousView: Handle_V3d_View &
@@ -274,8 +275,16 @@ class v3d(object):
         return _V3d.v3d_SwitchViewsinWindow(*args)
 
     SwitchViewsinWindow = staticmethod(SwitchViewsinWindow)
-    def DrawSphere(*args) -> "void" :
+    def DrawSphere(*args):
         """
+        * test.
+
+        :param aViewer:
+        :type aViewer: Handle_V3d_Viewer &
+        :param aRadius: default value is 1000
+        :type aRadius: Quantity_Length
+        :rtype: void
+
         * test.
 
         :param aViewer:
@@ -288,8 +297,16 @@ class v3d(object):
         return _V3d.v3d_DrawSphere(*args)
 
     DrawSphere = staticmethod(DrawSphere)
-    def PickGrid(*args) -> "void" :
+    def PickGrid(*args):
         """
+        * test.
+
+        :param aViewer:
+        :type aViewer: Handle_V3d_Viewer &
+        :param aRadius: default value is 1000
+        :type aRadius: Quantity_Length
+        :rtype: void
+
         * test.
 
         :param aViewer:
@@ -302,7 +319,7 @@ class v3d(object):
         return _V3d.v3d_PickGrid(*args)
 
     PickGrid = staticmethod(PickGrid)
-    def SetPlane(*args) -> "void" :
+    def SetPlane(*args):
         """
         * test.
 
@@ -326,8 +343,6 @@ class v3d(object):
         return _V3d.v3d_SetPlane(*args)
 
     SetPlane = staticmethod(SetPlane)
-    def __init__(self): 
-        _V3d.v3d_swiginit(self,_V3d.new_v3d())
     def __del__(self):
     	try:
     		self.thisown = False
@@ -340,7 +355,7 @@ v3d._kill_pointed = new_instancemethod(_V3d.v3d__kill_pointed,None,v3d)
 v3d_swigregister = _V3d.v3d_swigregister
 v3d_swigregister(v3d)
 
-def v3d_GetProjAxis(*args) -> "Graphic3d_Vector" :
+def v3d_GetProjAxis(*args):
   """
     * Determines the orientation vector corresponding to the predefined orientation type.
 
@@ -351,7 +366,7 @@ def v3d_GetProjAxis(*args) -> "Graphic3d_Vector" :
     """
   return _V3d.v3d_GetProjAxis(*args)
 
-def v3d_ArrowOfRadius(*args) -> "void" :
+def v3d_ArrowOfRadius(*args):
   """
     * Compute the graphic structure of arrow. X0,Y0,Z0 : coordinate of the arrow. DX,DY,DZ : Direction of the arrow. Alpha : Angle of arrow. Lng : Length of arrow.
 
@@ -378,7 +393,7 @@ def v3d_ArrowOfRadius(*args) -> "void" :
     """
   return _V3d.v3d_ArrowOfRadius(*args)
 
-def v3d_CircleInPlane(*args) -> "void" :
+def v3d_CircleInPlane(*args):
   """
     * Compute the graphic structure of circle. X0,Y0,Z0 : Center of circle. VX,VY,VZ : Axis of circle. Radius : Radius of circle.
 
@@ -403,7 +418,7 @@ def v3d_CircleInPlane(*args) -> "void" :
     """
   return _V3d.v3d_CircleInPlane(*args)
 
-def v3d_SwitchViewsinWindow(*args) -> "void" :
+def v3d_SwitchViewsinWindow(*args):
   """
     :param aPreviousView:
     :type aPreviousView: Handle_V3d_View &
@@ -414,8 +429,16 @@ def v3d_SwitchViewsinWindow(*args) -> "void" :
     """
   return _V3d.v3d_SwitchViewsinWindow(*args)
 
-def v3d_DrawSphere(*args) -> "void" :
+def v3d_DrawSphere(*args):
   """
+    * test.
+
+    :param aViewer:
+    :type aViewer: Handle_V3d_Viewer &
+    :param aRadius: default value is 1000
+    :type aRadius: Quantity_Length
+    :rtype: void
+
     * test.
 
     :param aViewer:
@@ -427,8 +450,16 @@ def v3d_DrawSphere(*args) -> "void" :
     """
   return _V3d.v3d_DrawSphere(*args)
 
-def v3d_PickGrid(*args) -> "void" :
+def v3d_PickGrid(*args):
   """
+    * test.
+
+    :param aViewer:
+    :type aViewer: Handle_V3d_Viewer &
+    :param aRadius: default value is 1000
+    :type aRadius: Quantity_Length
+    :rtype: void
+
     * test.
 
     :param aViewer:
@@ -440,7 +471,7 @@ def v3d_PickGrid(*args) -> "void" :
     """
   return _V3d.v3d_PickGrid(*args)
 
-def v3d_SetPlane(*args) -> "void" :
+def v3d_SetPlane(*args):
   """
     * test.
 
@@ -478,7 +509,7 @@ class V3d_CircularGrid(OCC.Aspect.Aspect_CircularGrid):
 
         """
         _V3d.V3d_CircularGrid_swiginit(self,_V3d.new_V3d_CircularGrid(*args))
-    def GraphicValues(self, *args) -> "void" :
+    def GraphicValues(self):
         """
         :param Radius:
         :type Radius: float &
@@ -487,9 +518,9 @@ class V3d_CircularGrid(OCC.Aspect.Aspect_CircularGrid):
         :rtype: None
 
         """
-        return _V3d.V3d_CircularGrid_GraphicValues(self, *args)
+        return _V3d.V3d_CircularGrid_GraphicValues(self)
 
-    def SetGraphicValues(self, *args) -> "void" :
+    def SetGraphicValues(self, *args):
         """
         :param Radius:
         :type Radius: float
@@ -500,11 +531,11 @@ class V3d_CircularGrid(OCC.Aspect.Aspect_CircularGrid):
         """
         return _V3d.V3d_CircularGrid_SetGraphicValues(self, *args)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(V3d_CircularGrid self)"""
         return _V3d.V3d_CircularGrid__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_V3d_CircularGrid" :
+    def GetHandle(self):
         """GetHandle(V3d_CircularGrid self) -> Handle_V3d_CircularGrid"""
         return _V3d.V3d_CircularGrid_GetHandle(self)
 
@@ -544,7 +575,7 @@ Handle_V3d_CircularGrid._kill_pointed = new_instancemethod(_V3d.Handle_V3d_Circu
 Handle_V3d_CircularGrid_swigregister = _V3d.Handle_V3d_CircularGrid_swigregister
 Handle_V3d_CircularGrid_swigregister(Handle_V3d_CircularGrid)
 
-def Handle_V3d_CircularGrid_DownCast(*args) -> "Handle_V3d_CircularGrid const" :
+def Handle_V3d_CircularGrid_DownCast(*args):
   return _V3d.Handle_V3d_CircularGrid_DownCast(*args)
 Handle_V3d_CircularGrid_DownCast = _V3d.Handle_V3d_CircularGrid_DownCast
 
@@ -561,56 +592,89 @@ class V3d_ColorScale(OCC.Aspect.Aspect_ColorScale):
 
         """
         _V3d.V3d_ColorScale_swiginit(self,_V3d.new_V3d_ColorScale(*args))
-    def Display(self, *args) -> "void" :
+    def Display(self):
         """
         :rtype: None
 
         """
-        return _V3d.V3d_ColorScale_Display(self, *args)
+        return _V3d.V3d_ColorScale_Display(self)
 
-    def Erase(self, *args) -> "void" :
+    def Erase(self):
         """
         :rtype: None
 
         """
-        return _V3d.V3d_ColorScale_Erase(self, *args)
+        return _V3d.V3d_ColorScale_Erase(self)
 
-    def IsDisplayed(self, *args) -> "Standard_Boolean" :
+    def IsDisplayed(self):
         """
         :rtype: bool
 
         """
-        return _V3d.V3d_ColorScale_IsDisplayed(self, *args)
+        return _V3d.V3d_ColorScale_IsDisplayed(self)
 
-    def TextSize(self, *args) -> "void" :
+    def PaintRect(self, *args):
+        """
+        :param X:
+        :type X: Standard_Integer
+        :param Y:
+        :type Y: Standard_Integer
+        :param W:
+        :type W: Standard_Integer
+        :param H:
+        :type H: Standard_Integer
+        :param aColor:
+        :type aColor: Quantity_Color &
+        :param aFilled: default value is Standard_False
+        :type aFilled: bool
+        :rtype: void
+
+        :param X:
+        :type X: Standard_Integer
+        :param Y:
+        :type Y: Standard_Integer
+        :param W:
+        :type W: Standard_Integer
+        :param H:
+        :type H: Standard_Integer
+        :param aColor:
+        :type aColor: Quantity_Color &
+        :param aFilled: default value is Standard_False
+        :type aFilled: bool
+        :rtype: void
+
+        """
+        return _V3d.V3d_ColorScale_PaintRect(self, *args)
+
+    def TextSize(self, *args):
         """
         :param AText:
         :type AText: TCollection_ExtendedString &
         :param AHeight:
-        :type AHeight: int
+        :type AHeight: Standard_Integer
         :param AWidth:
-        :type AWidth: int &
+        :type AWidth: Standard_Integer &
         :param AnAscent:
-        :type AnAscent: int &
+        :type AnAscent: Standard_Integer &
         :param ADescent:
-        :type ADescent: int &
+        :type ADescent: Standard_Integer &
         :rtype: None
 
         """
         return _V3d.V3d_ColorScale_TextSize(self, *args)
 
-    def DrawScale(self, *args) -> "void" :
+    def DrawScale(self):
         """
         :rtype: None
 
         """
-        return _V3d.V3d_ColorScale_DrawScale(self, *args)
+        return _V3d.V3d_ColorScale_DrawScale(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(V3d_ColorScale self)"""
         return _V3d.V3d_ColorScale__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_V3d_ColorScale" :
+    def GetHandle(self):
         """GetHandle(V3d_ColorScale self) -> Handle_V3d_ColorScale"""
         return _V3d.V3d_ColorScale_GetHandle(self)
 
@@ -625,6 +689,7 @@ class V3d_ColorScale(OCC.Aspect.Aspect_ColorScale):
 V3d_ColorScale.Display = new_instancemethod(_V3d.V3d_ColorScale_Display,None,V3d_ColorScale)
 V3d_ColorScale.Erase = new_instancemethod(_V3d.V3d_ColorScale_Erase,None,V3d_ColorScale)
 V3d_ColorScale.IsDisplayed = new_instancemethod(_V3d.V3d_ColorScale_IsDisplayed,None,V3d_ColorScale)
+V3d_ColorScale.PaintRect = new_instancemethod(_V3d.V3d_ColorScale_PaintRect,None,V3d_ColorScale)
 V3d_ColorScale.TextSize = new_instancemethod(_V3d.V3d_ColorScale_TextSize,None,V3d_ColorScale)
 V3d_ColorScale.DrawScale = new_instancemethod(_V3d.V3d_ColorScale_DrawScale,None,V3d_ColorScale)
 V3d_ColorScale._kill_pointed = new_instancemethod(_V3d.V3d_ColorScale__kill_pointed,None,V3d_ColorScale)
@@ -653,7 +718,7 @@ Handle_V3d_ColorScale._kill_pointed = new_instancemethod(_V3d.Handle_V3d_ColorSc
 Handle_V3d_ColorScale_swigregister = _V3d.Handle_V3d_ColorScale_swigregister
 Handle_V3d_ColorScale_swigregister(Handle_V3d_ColorScale)
 
-def Handle_V3d_ColorScale_DownCast(*args) -> "Handle_V3d_ColorScale const" :
+def Handle_V3d_ColorScale_DownCast(*args):
   return _V3d.Handle_V3d_ColorScale_DownCast(*args)
 Handle_V3d_ColorScale_DownCast = _V3d.Handle_V3d_ColorScale_DownCast
 
@@ -670,11 +735,11 @@ class V3d_ColorScaleLayerItem(OCC.Visual3d.Visual3d_LayerItem):
 
         """
         _V3d.V3d_ColorScaleLayerItem_swiginit(self,_V3d.new_V3d_ColorScaleLayerItem(*args))
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(V3d_ColorScaleLayerItem self)"""
         return _V3d.V3d_ColorScaleLayerItem__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_V3d_ColorScaleLayerItem" :
+    def GetHandle(self):
         """GetHandle(V3d_ColorScaleLayerItem self) -> Handle_V3d_ColorScaleLayerItem"""
         return _V3d.V3d_ColorScaleLayerItem_GetHandle(self)
 
@@ -712,7 +777,7 @@ Handle_V3d_ColorScaleLayerItem._kill_pointed = new_instancemethod(_V3d.Handle_V3
 Handle_V3d_ColorScaleLayerItem_swigregister = _V3d.Handle_V3d_ColorScaleLayerItem_swigregister
 Handle_V3d_ColorScaleLayerItem_swigregister(Handle_V3d_ColorScaleLayerItem)
 
-def Handle_V3d_ColorScaleLayerItem_DownCast(*args) -> "Handle_V3d_ColorScaleLayerItem const" :
+def Handle_V3d_ColorScaleLayerItem_DownCast(*args):
   return _V3d.Handle_V3d_ColorScaleLayerItem_DownCast(*args)
 Handle_V3d_ColorScaleLayerItem_DownCast = _V3d.Handle_V3d_ColorScaleLayerItem_DownCast
 
@@ -727,69 +792,69 @@ class V3d_LayerMgr(OCC.MMgt.MMgt_TShared):
 
         """
         _V3d.V3d_LayerMgr_swiginit(self,_V3d.new_V3d_LayerMgr(*args))
-    def Overlay(self, *args) -> "Handle_Visual3d_Layer const &" :
+    def Overlay(self):
         """
         :rtype: Handle_Visual3d_Layer
 
         """
-        return _V3d.V3d_LayerMgr_Overlay(self, *args)
+        return _V3d.V3d_LayerMgr_Overlay(self)
 
-    def View(self, *args) -> "Handle_V3d_View" :
+    def View(self):
         """
         :rtype: Handle_V3d_View
 
         """
-        return _V3d.V3d_LayerMgr_View(self, *args)
+        return _V3d.V3d_LayerMgr_View(self)
 
-    def ColorScaleDisplay(self, *args) -> "void" :
+    def ColorScaleDisplay(self):
         """
         :rtype: None
 
         """
-        return _V3d.V3d_LayerMgr_ColorScaleDisplay(self, *args)
+        return _V3d.V3d_LayerMgr_ColorScaleDisplay(self)
 
-    def ColorScaleErase(self, *args) -> "void" :
+    def ColorScaleErase(self):
         """
         :rtype: None
 
         """
-        return _V3d.V3d_LayerMgr_ColorScaleErase(self, *args)
+        return _V3d.V3d_LayerMgr_ColorScaleErase(self)
 
-    def ColorScaleIsDisplayed(self, *args) -> "Standard_Boolean" :
+    def ColorScaleIsDisplayed(self):
         """
         :rtype: bool
 
         """
-        return _V3d.V3d_LayerMgr_ColorScaleIsDisplayed(self, *args)
+        return _V3d.V3d_LayerMgr_ColorScaleIsDisplayed(self)
 
-    def ColorScale(self, *args) -> "Handle_Aspect_ColorScale" :
+    def ColorScale(self):
         """
         :rtype: Handle_Aspect_ColorScale
 
         """
-        return _V3d.V3d_LayerMgr_ColorScale(self, *args)
+        return _V3d.V3d_LayerMgr_ColorScale(self)
 
-    def Compute(self, *args) -> "void" :
+    def Compute(self):
         """
         * Recompute layer with objects
 
         :rtype: None
 
         """
-        return _V3d.V3d_LayerMgr_Compute(self, *args)
+        return _V3d.V3d_LayerMgr_Compute(self)
 
-    def Resized(self, *args) -> "void" :
+    def Resized(self):
         """
         :rtype: None
 
         """
-        return _V3d.V3d_LayerMgr_Resized(self, *args)
+        return _V3d.V3d_LayerMgr_Resized(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(V3d_LayerMgr self)"""
         return _V3d.V3d_LayerMgr__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_V3d_LayerMgr" :
+    def GetHandle(self):
         """GetHandle(V3d_LayerMgr self) -> Handle_V3d_LayerMgr"""
         return _V3d.V3d_LayerMgr_GetHandle(self)
 
@@ -835,7 +900,7 @@ Handle_V3d_LayerMgr._kill_pointed = new_instancemethod(_V3d.Handle_V3d_LayerMgr_
 Handle_V3d_LayerMgr_swigregister = _V3d.Handle_V3d_LayerMgr_swigregister
 Handle_V3d_LayerMgr_swigregister(Handle_V3d_LayerMgr)
 
-def Handle_V3d_LayerMgr_DownCast(*args) -> "Handle_V3d_LayerMgr const" :
+def Handle_V3d_LayerMgr_DownCast(*args):
   return _V3d.Handle_V3d_LayerMgr_DownCast(*args)
 Handle_V3d_LayerMgr_DownCast = _V3d.Handle_V3d_LayerMgr_DownCast
 
@@ -843,7 +908,7 @@ class V3d_Light(OCC.MMgt.MMgt_TShared):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def SetColor(self, *args) -> "void" :
+    def SetColor(self, *args):
         """
         * Defines the colour of a light source according to the type of colour definition and the three corresponding values.
 
@@ -872,7 +937,7 @@ class V3d_Light(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_Light_SetColor(self, *args)
 
-    def Color(self, *args) -> "Quantity_Color" :
+    def Color(self, *args):
         """
         * Returns the colour of the light source depending of //!	 the color type.
 
@@ -899,25 +964,25 @@ class V3d_Light(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_Light_Color(self, *args)
 
-    def Type(self, *args) -> "V3d_TypeOfLight" :
+    def Type(self):
         """
         * Returns the Type of the Light
 
         :rtype: V3d_TypeOfLight
 
         """
-        return _V3d.V3d_Light_Type(self, *args)
+        return _V3d.V3d_Light_Type(self)
 
-    def Headlight(self, *args) -> "Standard_Boolean" :
+    def Headlight(self):
         """
         * returns true if the light is a headlight
 
         :rtype: bool
 
         """
-        return _V3d.V3d_Light_Headlight(self, *args)
+        return _V3d.V3d_Light_Headlight(self)
 
-    def SetHeadlight(self, *args) -> "void" :
+    def SetHeadlight(self, *args):
         """
         * Setup headlight flag.
 
@@ -928,20 +993,20 @@ class V3d_Light(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_Light_SetHeadlight(self, *args)
 
-    def IsDisplayed(self, *args) -> "Standard_Boolean" :
+    def IsDisplayed(self):
         """
         * Returns True when a light representation is displayed
 
         :rtype: bool
 
         """
-        return _V3d.V3d_Light_IsDisplayed(self, *args)
+        return _V3d.V3d_Light_IsDisplayed(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(V3d_Light self)"""
         return _V3d.V3d_Light__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_V3d_Light" :
+    def GetHandle(self):
         """GetHandle(V3d_Light self) -> Handle_V3d_Light"""
         return _V3d.V3d_Light_GetHandle(self)
 
@@ -985,20 +1050,20 @@ Handle_V3d_Light._kill_pointed = new_instancemethod(_V3d.Handle_V3d_Light__kill_
 Handle_V3d_Light_swigregister = _V3d.Handle_V3d_Light_swigregister
 Handle_V3d_Light_swigregister(Handle_V3d_Light)
 
-def Handle_V3d_Light_DownCast(*args) -> "Handle_V3d_Light const" :
+def Handle_V3d_Light_DownCast(*args):
   return _V3d.Handle_V3d_Light_DownCast(*args)
 Handle_V3d_Light_DownCast = _V3d.Handle_V3d_Light_DownCast
 
 class V3d_ListOfTransient(OCC.TColStd.TColStd_ListOfTransient):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _V3d.V3d_ListOfTransient_swiginit(self,_V3d.new_V3d_ListOfTransient(*args))
-    def Contains(self, *args) -> "Standard_Boolean" :
+        _V3d.V3d_ListOfTransient_swiginit(self,_V3d.new_V3d_ListOfTransient())
+    def Contains(self, *args):
         """
         :param aTransient:
         :type aTransient: Handle_Standard_Transient &
@@ -1007,7 +1072,7 @@ class V3d_ListOfTransient(OCC.TColStd.TColStd_ListOfTransient):
         """
         return _V3d.V3d_ListOfTransient_Contains(self, *args)
 
-    def Remove(self, *args) -> "void" :
+    def Remove(self, *args):
         """
         :param aTransient:
         :type aTransient: Handle_Standard_Transient &
@@ -1045,7 +1110,7 @@ class V3d_RectangularGrid(OCC.Aspect.Aspect_RectangularGrid):
 
         """
         _V3d.V3d_RectangularGrid_swiginit(self,_V3d.new_V3d_RectangularGrid(*args))
-    def GraphicValues(self, *args) -> "void" :
+    def GraphicValues(self):
         """
         :param XSize:
         :type XSize: float &
@@ -1056,9 +1121,9 @@ class V3d_RectangularGrid(OCC.Aspect.Aspect_RectangularGrid):
         :rtype: None
 
         """
-        return _V3d.V3d_RectangularGrid_GraphicValues(self, *args)
+        return _V3d.V3d_RectangularGrid_GraphicValues(self)
 
-    def SetGraphicValues(self, *args) -> "void" :
+    def SetGraphicValues(self, *args):
         """
         :param XSize:
         :type XSize: float
@@ -1071,11 +1136,11 @@ class V3d_RectangularGrid(OCC.Aspect.Aspect_RectangularGrid):
         """
         return _V3d.V3d_RectangularGrid_SetGraphicValues(self, *args)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(V3d_RectangularGrid self)"""
         return _V3d.V3d_RectangularGrid__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_V3d_RectangularGrid" :
+    def GetHandle(self):
         """GetHandle(V3d_RectangularGrid self) -> Handle_V3d_RectangularGrid"""
         return _V3d.V3d_RectangularGrid_GetHandle(self)
 
@@ -1115,7 +1180,7 @@ Handle_V3d_RectangularGrid._kill_pointed = new_instancemethod(_V3d.Handle_V3d_Re
 Handle_V3d_RectangularGrid_swigregister = _V3d.Handle_V3d_RectangularGrid_swigregister
 Handle_V3d_RectangularGrid_swigregister(Handle_V3d_RectangularGrid)
 
-def Handle_V3d_RectangularGrid_DownCast(*args) -> "Handle_V3d_RectangularGrid const" :
+def Handle_V3d_RectangularGrid_DownCast(*args):
   return _V3d.Handle_V3d_RectangularGrid_DownCast(*args)
 Handle_V3d_RectangularGrid_DownCast = _V3d.Handle_V3d_RectangularGrid_DownCast
 
@@ -1124,6 +1189,14 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
     __repr__ = _swig_repr
     def __init__(self, *args): 
         """
+        * Initialises the view.
+
+        :param VM:
+        :type VM: Handle_V3d_Viewer &
+        :param Type: default value is V3d_ORTHOGRAPHIC
+        :type Type: V3d_TypeOfView
+        :rtype: None
+
         * Initialises the view.
 
         :param VM:
@@ -1142,9 +1215,19 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         :type Type: V3d_TypeOfView
         :rtype: None
 
+        * Initialises the view by copying.
+
+        :param VM:
+        :type VM: Handle_V3d_Viewer &
+        :param V:
+        :type V: Handle_V3d_View &
+        :param Type: default value is V3d_ORTHOGRAPHIC
+        :type Type: V3d_TypeOfView
+        :rtype: None
+
         """
         _V3d.V3d_View_swiginit(self,_V3d.new_V3d_View(*args))
-    def SetWindow(self, *args) -> "void" :
+    def SetWindow(self, *args):
         """
         * Activates the view in the window specified and Map the Window to the screen. Warning! raises MultiplyDefined from Standard if the view is already activated in a window. Warning: The view is centered and resized to preserve the height/width ratio of the window.
 
@@ -1167,44 +1250,44 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_SetWindow(self, *args)
 
-    def SetMagnify(self, *args) -> "void" :
+    def SetMagnify(self, *args):
         """
         :param IdWin:
         :type IdWin: Handle_Aspect_Window &
         :param aPreviousView:
         :type aPreviousView: Handle_V3d_View &
         :param x1:
-        :type x1: int
+        :type x1: Standard_Integer
         :param y1:
-        :type y1: int
+        :type y1: Standard_Integer
         :param x2:
-        :type x2: int
+        :type x2: Standard_Integer
         :param y2:
-        :type y2: int
+        :type y2: Standard_Integer
         :rtype: None
 
         """
         return _V3d.V3d_View_SetMagnify(self, *args)
 
-    def Remove(self, *args) -> "void" :
+    def Remove(self):
         """
         * Destroys the view.
 
         :rtype: None
 
         """
-        return _V3d.V3d_View_Remove(self, *args)
+        return _V3d.V3d_View_Remove(self)
 
-    def Update(self, *args) -> "void" :
+    def Update(self):
         """
         * Deprecated, Redraw() should be used instead.
 
         :rtype: None
 
         """
-        return _V3d.V3d_View_Update(self, *args)
+        return _V3d.V3d_View_Update(self)
 
-    def Redraw(self, *args) -> "void" :
+    def Redraw(self, *args):
         """
         * Redisplays the view even if there has not been any modification. Must be called if the view is shown. (Ex: DeIconification ) .
 
@@ -1213,55 +1296,55 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         * Redisplays the view area after esxposure. [x,y] define the min xy area position [width,height] the size of the area in pixel unit.
 
         :param x:
-        :type x: int
+        :type x: Standard_Integer
         :param y:
-        :type y: int
+        :type y: Standard_Integer
         :param width:
-        :type width: int
+        :type width: Standard_Integer
         :param height:
-        :type height: int
+        :type height: Standard_Integer
         :rtype: None
 
         """
         return _V3d.V3d_View_Redraw(self, *args)
 
-    def MustBeResized(self, *args) -> "void" :
+    def MustBeResized(self):
         """
         * Must be called when the window supporting the view changes size. if the view is not mapped on a window. Warning: The view is centered and resized to preserve the height/width ratio of the window.
 
         :rtype: None
 
         """
-        return _V3d.V3d_View_MustBeResized(self, *args)
+        return _V3d.V3d_View_MustBeResized(self)
 
-    def DoMapping(self, *args) -> "void" :
+    def DoMapping(self):
         """
         * Must be called when the window supporting the view is mapped or unmapped.
 
         :rtype: None
 
         """
-        return _V3d.V3d_View_DoMapping(self, *args)
+        return _V3d.V3d_View_DoMapping(self)
 
-    def IsEmpty(self, *args) -> "Standard_Boolean" :
+    def IsEmpty(self):
         """
         * Returns the status of the view regarding the displayed structures inside Returns True is The View is empty
 
         :rtype: bool
 
         """
-        return _V3d.V3d_View_IsEmpty(self, *args)
+        return _V3d.V3d_View_IsEmpty(self)
 
-    def UpdateLights(self, *args) -> "void" :
+    def UpdateLights(self):
         """
         * Updates the lights of the view. The view is redrawn.
 
         :rtype: None
 
         """
-        return _V3d.V3d_View_UpdateLights(self, *args)
+        return _V3d.V3d_View_UpdateLights(self)
 
-    def SetBackgroundColor(self, *args) -> "void" :
+    def SetBackgroundColor(self, *args):
         """
         * Defines the background colour of the view by supplying : the colour definition type, and the three corresponding values.
 
@@ -1290,8 +1373,32 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_SetBackgroundColor(self, *args)
 
-    def SetBgGradientColors(self, *args) -> "void" :
+    def SetBgGradientColors(self, *args):
         """
+        * Defines the gradient background colours of the view by supplying : two colour objects, and fill method (horizontal by default)
+
+        :param Color1:
+        :type Color1: Quantity_Color &
+        :param Color2:
+        :type Color2: Quantity_Color &
+        :param FillStyle: default value is Aspect_GFM_HOR
+        :type FillStyle: Aspect_GradientFillMethod
+        :param update: default value is Standard_False
+        :type update: bool
+        :rtype: None
+
+        * Defines the gradient background colours of the view by supplying : two colour objects, and fill method (horizontal by default)
+
+        :param Color1:
+        :type Color1: Quantity_Color &
+        :param Color2:
+        :type Color2: Quantity_Color &
+        :param FillStyle: default value is Aspect_GFM_HOR
+        :type FillStyle: Aspect_GradientFillMethod
+        :param update: default value is Standard_False
+        :type update: bool
+        :rtype: None
+
         * Defines the gradient background colours of the view by supplying : two colour objects, and fill method (horizontal by default)
 
         :param Color1:
@@ -1316,11 +1423,51 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         :type update: bool
         :rtype: None
 
+        * Defines the gradient background colours of the view by supplying : two colour names in the form Quantity_NOC_xxxx, and fill method (horizontal by default)
+
+        :param Color1:
+        :type Color1: Quantity_NameOfColor
+        :param Color2:
+        :type Color2: Quantity_NameOfColor
+        :param FillStyle: default value is Aspect_GFM_HOR
+        :type FillStyle: Aspect_GradientFillMethod
+        :param update: default value is Standard_False
+        :type update: bool
+        :rtype: None
+
+        * Defines the gradient background colours of the view by supplying : two colour names in the form Quantity_NOC_xxxx, and fill method (horizontal by default)
+
+        :param Color1:
+        :type Color1: Quantity_NameOfColor
+        :param Color2:
+        :type Color2: Quantity_NameOfColor
+        :param FillStyle: default value is Aspect_GFM_HOR
+        :type FillStyle: Aspect_GradientFillMethod
+        :param update: default value is Standard_False
+        :type update: bool
+        :rtype: None
+
         """
         return _V3d.V3d_View_SetBgGradientColors(self, *args)
 
-    def SetBgGradientStyle(self, *args) -> "void" :
+    def SetBgGradientStyle(self, *args):
         """
+        * Defines the gradient background fill method of the view
+
+        :param AMethod: default value is Aspect_GFM_HOR
+        :type AMethod: Aspect_GradientFillMethod
+        :param update: default value is Standard_False
+        :type update: bool
+        :rtype: None
+
+        * Defines the gradient background fill method of the view
+
+        :param AMethod: default value is Aspect_GFM_HOR
+        :type AMethod: Aspect_GradientFillMethod
+        :param update: default value is Standard_False
+        :type update: bool
+        :rtype: None
+
         * Defines the gradient background fill method of the view
 
         :param AMethod: default value is Aspect_GFM_HOR
@@ -1332,8 +1479,28 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_SetBgGradientStyle(self, *args)
 
-    def SetBackgroundImage(self, *args) -> "void" :
+    def SetBackgroundImage(self, *args):
         """
+        * Defines the background texture of the view  by supplying :  texture image file name,  and fill method (centered by default)
+
+        :param FileName:
+        :type FileName: char *
+        :param FillStyle: default value is Aspect_FM_CENTERED
+        :type FillStyle: Aspect_FillMethod
+        :param update: default value is Standard_False
+        :type update: bool
+        :rtype: None
+
+        * Defines the background texture of the view  by supplying :  texture image file name,  and fill method (centered by default)
+
+        :param FileName:
+        :type FileName: char *
+        :param FillStyle: default value is Aspect_FM_CENTERED
+        :type FillStyle: Aspect_FillMethod
+        :param update: default value is Standard_False
+        :type update: bool
+        :rtype: None
+
         * Defines the background texture of the view  by supplying :  texture image file name,  and fill method (centered by default)
 
         :param FileName:
@@ -1347,8 +1514,16 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_SetBackgroundImage(self, *args)
 
-    def SetBgImageStyle(self, *args) -> "void" :
+    def SetBgImageStyle(self, *args):
         """
+        * Defines the textured background fill method of the view
+
+        :param FillStyle:
+        :type FillStyle: Aspect_FillMethod
+        :param update: default value is Standard_False
+        :type update: bool
+        :rtype: None
+
         * Defines the textured background fill method of the view
 
         :param FillStyle:
@@ -1360,7 +1535,7 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_SetBgImageStyle(self, *args)
 
-    def SetAxis(self, *args) -> "void" :
+    def SetAxis(self, *args):
         """
         * Definition of an axis from its origin and its orientation . This will be the current axis for rotations and movements. Warning! raises BadValue from V3d if the vector normal is NULL. .
 
@@ -1381,7 +1556,7 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_SetAxis(self, *args)
 
-    def SetShadingModel(self, *args) -> "void" :
+    def SetShadingModel(self, *args):
         """
         * Defines the shading model for the visualisation ZBUFFER mode. Various models are available.
 
@@ -1392,7 +1567,7 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_SetShadingModel(self, *args)
 
-    def SetSurfaceDetail(self, *args) -> "void" :
+    def SetSurfaceDetail(self, *args):
         """
         * select the kind of rendering for texture mapping no texture mapping by default
 
@@ -1403,7 +1578,7 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_SetSurfaceDetail(self, *args)
 
-    def SetTextureEnv(self, *args) -> "void" :
+    def SetTextureEnv(self, *args):
         """
         * set the environment texture to use no environment texture by default
 
@@ -1414,7 +1589,7 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_SetTextureEnv(self, *args)
 
-    def SetVisualization(self, *args) -> "void" :
+    def SetVisualization(self, *args):
         """
         * Defines the visualisation mode in the view.
 
@@ -1425,25 +1600,25 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_SetVisualization(self, *args)
 
-    def SetAntialiasingOn(self, *args) -> "void" :
+    def SetAntialiasingOn(self):
         """
         * Activates antialiasing in the view.
 
         :rtype: None
 
         """
-        return _V3d.V3d_View_SetAntialiasingOn(self, *args)
+        return _V3d.V3d_View_SetAntialiasingOn(self)
 
-    def SetAntialiasingOff(self, *args) -> "void" :
+    def SetAntialiasingOff(self):
         """
         * Desactivates antialiasing in the view.
 
         :rtype: None
 
         """
-        return _V3d.V3d_View_SetAntialiasingOff(self, *args)
+        return _V3d.V3d_View_SetAntialiasingOff(self)
 
-    def SetZClippingDepth(self, *args) -> "void" :
+    def SetZClippingDepth(self, *args):
         """
         * Defines the depth of the medium clipping plane.
 
@@ -1454,7 +1629,7 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_SetZClippingDepth(self, *args)
 
-    def SetZClippingWidth(self, *args) -> "void" :
+    def SetZClippingWidth(self, *args):
         """
         * Defines the thicknes around the medium clippling plane. .
 
@@ -1465,7 +1640,7 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_SetZClippingWidth(self, *args)
 
-    def SetZClippingType(self, *args) -> "void" :
+    def SetZClippingType(self, *args):
         """
         * Defines the type of ZClipping.
 
@@ -1476,7 +1651,7 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_SetZClippingType(self, *args)
 
-    def SetZCueingDepth(self, *args) -> "void" :
+    def SetZCueingDepth(self, *args):
         """
         * Defines the depth of the medium plane.
 
@@ -1487,7 +1662,7 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_SetZCueingDepth(self, *args)
 
-    def SetZCueingWidth(self, *args) -> "void" :
+    def SetZCueingWidth(self, *args):
         """
         * Defines the thickness around the medium plane.
 
@@ -1498,25 +1673,25 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_SetZCueingWidth(self, *args)
 
-    def SetZCueingOn(self, *args) -> "void" :
+    def SetZCueingOn(self):
         """
         * Activates ZCueing in the view.
 
         :rtype: None
 
         """
-        return _V3d.V3d_View_SetZCueingOn(self, *args)
+        return _V3d.V3d_View_SetZCueingOn(self)
 
-    def SetZCueingOff(self, *args) -> "void" :
+    def SetZCueingOff(self):
         """
         * Desactivates ZCueing in the view.
 
         :rtype: None
 
         """
-        return _V3d.V3d_View_SetZCueingOff(self, *args)
+        return _V3d.V3d_View_SetZCueingOff(self)
 
-    def SetLightOn(self, *args) -> "void" :
+    def SetLightOn(self, *args):
         """
         * Activates MyLight in the view.
 
@@ -1531,7 +1706,7 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_SetLightOn(self, *args)
 
-    def SetLightOff(self, *args) -> "void" :
+    def SetLightOff(self, *args):
         """
         * Desactivate MyLight in this view.
 
@@ -1546,7 +1721,7 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_SetLightOff(self, *args)
 
-    def IsActiveLight(self, *args) -> "Standard_Boolean" :
+    def IsActiveLight(self, *args):
         """
         * Returns True when the light is active in this view.
 
@@ -1557,8 +1732,14 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_IsActiveLight(self, *args)
 
-    def SetTransparency(self, *args) -> "void" :
+    def SetTransparency(self, *args):
         """
+        * Activate/Deactivate the transparency in this view.
+
+        :param AnActivity: default value is Standard_False
+        :type AnActivity: bool
+        :rtype: None
+
         * Activate/Deactivate the transparency in this view.
 
         :param AnActivity: default value is Standard_False
@@ -1568,7 +1749,7 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_SetTransparency(self, *args)
 
-    def SetImmediateUpdate(self, *args) -> "Standard_Boolean" :
+    def SetImmediateUpdate(self, *args):
         """
         * sets the immediate update mode and returns the previous one.
 
@@ -1579,7 +1760,7 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_SetImmediateUpdate(self, *args)
 
-    def ZBufferTriedronSetup(self, *args) -> "void" :
+    def ZBufferTriedronSetup(self, *args):
         """
         * Customization of the ZBUFFER Triedron.  XColor,YColor,ZColor - colors of axis  SizeRatio - ratio of decreasing of the trihedron size when its phisical  position comes out of the view  AxisDiametr - diameter relatively to axis length  NbFacettes - number of facettes of cylinders and cones
 
@@ -1594,14 +1775,158 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         :param AxisDiametr: default value is 0.05
         :type AxisDiametr: float
         :param NbFacettes: default value is 12
-        :type NbFacettes: int
+        :type NbFacettes: Standard_Integer
+        :rtype: None
+
+        * Customization of the ZBUFFER Triedron.  XColor,YColor,ZColor - colors of axis  SizeRatio - ratio of decreasing of the trihedron size when its phisical  position comes out of the view  AxisDiametr - diameter relatively to axis length  NbFacettes - number of facettes of cylinders and cones
+
+        :param XColor: default value is Quantity_NOC_RED
+        :type XColor: Quantity_NameOfColor
+        :param YColor: default value is Quantity_NOC_GREEN
+        :type YColor: Quantity_NameOfColor
+        :param ZColor: default value is Quantity_NOC_BLUE1
+        :type ZColor: Quantity_NameOfColor
+        :param SizeRatio: default value is 0.8
+        :type SizeRatio: float
+        :param AxisDiametr: default value is 0.05
+        :type AxisDiametr: float
+        :param NbFacettes: default value is 12
+        :type NbFacettes: Standard_Integer
+        :rtype: None
+
+        * Customization of the ZBUFFER Triedron.  XColor,YColor,ZColor - colors of axis  SizeRatio - ratio of decreasing of the trihedron size when its phisical  position comes out of the view  AxisDiametr - diameter relatively to axis length  NbFacettes - number of facettes of cylinders and cones
+
+        :param XColor: default value is Quantity_NOC_RED
+        :type XColor: Quantity_NameOfColor
+        :param YColor: default value is Quantity_NOC_GREEN
+        :type YColor: Quantity_NameOfColor
+        :param ZColor: default value is Quantity_NOC_BLUE1
+        :type ZColor: Quantity_NameOfColor
+        :param SizeRatio: default value is 0.8
+        :type SizeRatio: float
+        :param AxisDiametr: default value is 0.05
+        :type AxisDiametr: float
+        :param NbFacettes: default value is 12
+        :type NbFacettes: Standard_Integer
+        :rtype: None
+
+        * Customization of the ZBUFFER Triedron.  XColor,YColor,ZColor - colors of axis  SizeRatio - ratio of decreasing of the trihedron size when its phisical  position comes out of the view  AxisDiametr - diameter relatively to axis length  NbFacettes - number of facettes of cylinders and cones
+
+        :param XColor: default value is Quantity_NOC_RED
+        :type XColor: Quantity_NameOfColor
+        :param YColor: default value is Quantity_NOC_GREEN
+        :type YColor: Quantity_NameOfColor
+        :param ZColor: default value is Quantity_NOC_BLUE1
+        :type ZColor: Quantity_NameOfColor
+        :param SizeRatio: default value is 0.8
+        :type SizeRatio: float
+        :param AxisDiametr: default value is 0.05
+        :type AxisDiametr: float
+        :param NbFacettes: default value is 12
+        :type NbFacettes: Standard_Integer
+        :rtype: None
+
+        * Customization of the ZBUFFER Triedron.  XColor,YColor,ZColor - colors of axis  SizeRatio - ratio of decreasing of the trihedron size when its phisical  position comes out of the view  AxisDiametr - diameter relatively to axis length  NbFacettes - number of facettes of cylinders and cones
+
+        :param XColor: default value is Quantity_NOC_RED
+        :type XColor: Quantity_NameOfColor
+        :param YColor: default value is Quantity_NOC_GREEN
+        :type YColor: Quantity_NameOfColor
+        :param ZColor: default value is Quantity_NOC_BLUE1
+        :type ZColor: Quantity_NameOfColor
+        :param SizeRatio: default value is 0.8
+        :type SizeRatio: float
+        :param AxisDiametr: default value is 0.05
+        :type AxisDiametr: float
+        :param NbFacettes: default value is 12
+        :type NbFacettes: Standard_Integer
+        :rtype: None
+
+        * Customization of the ZBUFFER Triedron.  XColor,YColor,ZColor - colors of axis  SizeRatio - ratio of decreasing of the trihedron size when its phisical  position comes out of the view  AxisDiametr - diameter relatively to axis length  NbFacettes - number of facettes of cylinders and cones
+
+        :param XColor: default value is Quantity_NOC_RED
+        :type XColor: Quantity_NameOfColor
+        :param YColor: default value is Quantity_NOC_GREEN
+        :type YColor: Quantity_NameOfColor
+        :param ZColor: default value is Quantity_NOC_BLUE1
+        :type ZColor: Quantity_NameOfColor
+        :param SizeRatio: default value is 0.8
+        :type SizeRatio: float
+        :param AxisDiametr: default value is 0.05
+        :type AxisDiametr: float
+        :param NbFacettes: default value is 12
+        :type NbFacettes: Standard_Integer
+        :rtype: None
+
+        * Customization of the ZBUFFER Triedron.  XColor,YColor,ZColor - colors of axis  SizeRatio - ratio of decreasing of the trihedron size when its phisical  position comes out of the view  AxisDiametr - diameter relatively to axis length  NbFacettes - number of facettes of cylinders and cones
+
+        :param XColor: default value is Quantity_NOC_RED
+        :type XColor: Quantity_NameOfColor
+        :param YColor: default value is Quantity_NOC_GREEN
+        :type YColor: Quantity_NameOfColor
+        :param ZColor: default value is Quantity_NOC_BLUE1
+        :type ZColor: Quantity_NameOfColor
+        :param SizeRatio: default value is 0.8
+        :type SizeRatio: float
+        :param AxisDiametr: default value is 0.05
+        :type AxisDiametr: float
+        :param NbFacettes: default value is 12
+        :type NbFacettes: Standard_Integer
         :rtype: None
 
         """
         return _V3d.V3d_View_ZBufferTriedronSetup(self, *args)
 
-    def TriedronDisplay(self, *args) -> "void" :
+    def TriedronDisplay(self, *args):
         """
+        * Display of the Triedron.  Initialize position, color and length of Triedron axes.  The scale is a percent of the window width.
+
+        :param APosition: default value is Aspect_TOTP_CENTER
+        :type APosition: Aspect_TypeOfTriedronPosition
+        :param AColor: default value is Quantity_NOC_WHITE
+        :type AColor: Quantity_NameOfColor
+        :param AScale: default value is 0.02
+        :type AScale: float
+        :param AMode: default value is V3d_WIREFRAME
+        :type AMode: V3d_TypeOfVisualization
+        :rtype: None
+
+        * Display of the Triedron.  Initialize position, color and length of Triedron axes.  The scale is a percent of the window width.
+
+        :param APosition: default value is Aspect_TOTP_CENTER
+        :type APosition: Aspect_TypeOfTriedronPosition
+        :param AColor: default value is Quantity_NOC_WHITE
+        :type AColor: Quantity_NameOfColor
+        :param AScale: default value is 0.02
+        :type AScale: float
+        :param AMode: default value is V3d_WIREFRAME
+        :type AMode: V3d_TypeOfVisualization
+        :rtype: None
+
+        * Display of the Triedron.  Initialize position, color and length of Triedron axes.  The scale is a percent of the window width.
+
+        :param APosition: default value is Aspect_TOTP_CENTER
+        :type APosition: Aspect_TypeOfTriedronPosition
+        :param AColor: default value is Quantity_NOC_WHITE
+        :type AColor: Quantity_NameOfColor
+        :param AScale: default value is 0.02
+        :type AScale: float
+        :param AMode: default value is V3d_WIREFRAME
+        :type AMode: V3d_TypeOfVisualization
+        :rtype: None
+
+        * Display of the Triedron.  Initialize position, color and length of Triedron axes.  The scale is a percent of the window width.
+
+        :param APosition: default value is Aspect_TOTP_CENTER
+        :type APosition: Aspect_TypeOfTriedronPosition
+        :param AColor: default value is Quantity_NOC_WHITE
+        :type AColor: Quantity_NameOfColor
+        :param AScale: default value is 0.02
+        :type AScale: float
+        :param AMode: default value is V3d_WIREFRAME
+        :type AMode: V3d_TypeOfVisualization
+        :rtype: None
+
         * Display of the Triedron.  Initialize position, color and length of Triedron axes.  The scale is a percent of the window width.
 
         :param APosition: default value is Aspect_TOTP_CENTER
@@ -1617,17 +1942,23 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_TriedronDisplay(self, *args)
 
-    def TriedronErase(self, *args) -> "void" :
+    def TriedronErase(self):
         """
         * Erases the Triedron.
 
         :rtype: None
 
         """
-        return _V3d.V3d_View_TriedronErase(self, *args)
+        return _V3d.V3d_View_TriedronErase(self)
 
-    def TriedronEcho(self, *args) -> "void" :
+    def TriedronEcho(self, *args):
         """
+        * Highlights the echo zone of the Triedron.
+
+        :param AType: default value is Aspect_TOTE_NONE
+        :type AType: Aspect_TypeOfTriedronEcho
+        :rtype: None
+
         * Highlights the echo zone of the Triedron.
 
         :param AType: default value is Aspect_TOTE_NONE
@@ -1637,7 +1968,7 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_TriedronEcho(self, *args)
 
-    def GetGraduatedTrihedron(self, *args) -> "void" :
+    def GetGraduatedTrihedron(self, *args):
         """
         * Returns data of a graduated trihedron.
 
@@ -1664,23 +1995,23 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         :param drawaxes:
         :type drawaxes: bool
         :param nbx:
-        :type nbx: int &
+        :type nbx: Standard_Integer &
         :param nby:
-        :type nby: int &
+        :type nby: Standard_Integer &
         :param nbz:
-        :type nbz: int &
+        :type nbz: Standard_Integer &
         :param xoffset:
-        :type xoffset: int &
+        :type xoffset: Standard_Integer &
         :param yoffset:
-        :type yoffset: int &
+        :type yoffset: Standard_Integer &
         :param zoffset:
-        :type zoffset: int &
+        :type zoffset: Standard_Integer &
         :param xaxisoffset:
-        :type xaxisoffset: int &
+        :type xaxisoffset: Standard_Integer &
         :param yaxisoffset:
-        :type yaxisoffset: int &
+        :type yaxisoffset: Standard_Integer &
         :param zaxisoffset:
-        :type zaxisoffset: int &
+        :type zaxisoffset: Standard_Integer &
         :param xdrawtickmarks:
         :type xdrawtickmarks: bool
         :param ydrawtickmarks:
@@ -1688,11 +2019,11 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         :param zdrawtickmarks:
         :type zdrawtickmarks: bool
         :param xtickmarklength:
-        :type xtickmarklength: int &
+        :type xtickmarklength: Standard_Integer &
         :param ytickmarklength:
-        :type ytickmarklength: int &
+        :type ytickmarklength: Standard_Integer &
         :param ztickmarklength:
-        :type ztickmarklength: int &
+        :type ztickmarklength: Standard_Integer &
         :param gridcolor:
         :type gridcolor: Quantity_Color &
         :param xnamecolor:
@@ -1712,27 +2043,27 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         :param styleOfNames:
         :type styleOfNames: Font_FontAspect &
         :param sizeOfNames:
-        :type sizeOfNames: int &
+        :type sizeOfNames: Standard_Integer &
         :param fontOfValues:
         :type fontOfValues: TCollection_AsciiString &
         :param styleOfValues:
         :type styleOfValues: Font_FontAspect &
         :param sizeOfValues:
-        :type sizeOfValues: int &
+        :type sizeOfValues: Standard_Integer &
         :rtype: None
 
         """
         return _V3d.V3d_View_GetGraduatedTrihedron(self, *args)
 
-    def GraduatedTrihedronDisplay(self, *args) -> "void" :
+    def GraduatedTrihedronDisplay(self, *args):
         """
         * Displays a graduated trihedron.
 
-        :param xname: default value is 'X'
+        :param xname: default value is X
         :type xname: TCollection_ExtendedString &
-        :param yname: default value is 'Y'
+        :param yname: default value is Y
         :type yname: TCollection_ExtendedString &
-        :param zname: default value is 'Z'
+        :param zname: default value is Z
         :type zname: TCollection_ExtendedString &
         :param xdrawname: default value is Standard_True
         :type xdrawname: bool
@@ -1751,23 +2082,23 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         :param drawaxes: default value is Standard_True
         :type drawaxes: bool
         :param nbx: default value is 3
-        :type nbx: int
+        :type nbx: Standard_Integer
         :param nby: default value is 3
-        :type nby: int
+        :type nby: Standard_Integer
         :param nbz: default value is 3
-        :type nbz: int
+        :type nbz: Standard_Integer
         :param xoffset: default value is 10
-        :type xoffset: int
+        :type xoffset: Standard_Integer
         :param yoffset: default value is 10
-        :type yoffset: int
+        :type yoffset: Standard_Integer
         :param zoffset: default value is 10
-        :type zoffset: int
+        :type zoffset: Standard_Integer
         :param xaxisoffset: default value is 30
-        :type xaxisoffset: int
+        :type xaxisoffset: Standard_Integer
         :param yaxisoffset: default value is 30
-        :type yaxisoffset: int
+        :type yaxisoffset: Standard_Integer
         :param zaxisoffset: default value is 30
-        :type zaxisoffset: int
+        :type zaxisoffset: Standard_Integer
         :param xdrawtickmarks: default value is Standard_True
         :type xdrawtickmarks: bool
         :param ydrawtickmarks: default value is Standard_True
@@ -1775,11 +2106,11 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         :param zdrawtickmarks: default value is Standard_True
         :type zdrawtickmarks: bool
         :param xtickmarklength: default value is 10
-        :type xtickmarklength: int
+        :type xtickmarklength: Standard_Integer
         :param ytickmarklength: default value is 10
-        :type ytickmarklength: int
+        :type ytickmarklength: Standard_Integer
         :param ztickmarklength: default value is 10
-        :type ztickmarklength: int
+        :type ztickmarklength: Standard_Integer
         :param gridcolor: default value is Quantity_NOC_WHITE
         :type gridcolor: Quantity_Color &
         :param xnamecolor: default value is Quantity_NOC_RED
@@ -1794,33 +2125,3231 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         :type ycolor: Quantity_Color &
         :param zcolor: default value is Quantity_NOC_BLUE1
         :type zcolor: Quantity_Color &
-        :param fontOfNames: default value is 'Arial'
+        :param fontOfNames: default value is Arial
         :type fontOfNames: TCollection_AsciiString &
         :param styleOfNames: default value is Font_FA_Bold
         :type styleOfNames: Font_FontAspect
         :param sizeOfNames: default value is 12
-        :type sizeOfNames: int
-        :param fontOfValues: default value is 'Arial'
+        :type sizeOfNames: Standard_Integer
+        :param fontOfValues: default value is Arial
         :type fontOfValues: TCollection_AsciiString &
         :param styleOfValues: default value is Font_FA_Regular
         :type styleOfValues: Font_FontAspect
         :param sizeOfValues: default value is 12
-        :type sizeOfValues: int
+        :type sizeOfValues: Standard_Integer
+        :rtype: None
+
+        * Displays a graduated trihedron.
+
+        :param xname: default value is X
+        :type xname: TCollection_ExtendedString &
+        :param yname: default value is Y
+        :type yname: TCollection_ExtendedString &
+        :param zname: default value is Z
+        :type zname: TCollection_ExtendedString &
+        :param xdrawname: default value is Standard_True
+        :type xdrawname: bool
+        :param ydrawname: default value is Standard_True
+        :type ydrawname: bool
+        :param zdrawname: default value is Standard_True
+        :type zdrawname: bool
+        :param xdrawvalues: default value is Standard_True
+        :type xdrawvalues: bool
+        :param ydrawvalues: default value is Standard_True
+        :type ydrawvalues: bool
+        :param zdrawvalues: default value is Standard_True
+        :type zdrawvalues: bool
+        :param drawgrid: default value is Standard_True
+        :type drawgrid: bool
+        :param drawaxes: default value is Standard_True
+        :type drawaxes: bool
+        :param nbx: default value is 3
+        :type nbx: Standard_Integer
+        :param nby: default value is 3
+        :type nby: Standard_Integer
+        :param nbz: default value is 3
+        :type nbz: Standard_Integer
+        :param xoffset: default value is 10
+        :type xoffset: Standard_Integer
+        :param yoffset: default value is 10
+        :type yoffset: Standard_Integer
+        :param zoffset: default value is 10
+        :type zoffset: Standard_Integer
+        :param xaxisoffset: default value is 30
+        :type xaxisoffset: Standard_Integer
+        :param yaxisoffset: default value is 30
+        :type yaxisoffset: Standard_Integer
+        :param zaxisoffset: default value is 30
+        :type zaxisoffset: Standard_Integer
+        :param xdrawtickmarks: default value is Standard_True
+        :type xdrawtickmarks: bool
+        :param ydrawtickmarks: default value is Standard_True
+        :type ydrawtickmarks: bool
+        :param zdrawtickmarks: default value is Standard_True
+        :type zdrawtickmarks: bool
+        :param xtickmarklength: default value is 10
+        :type xtickmarklength: Standard_Integer
+        :param ytickmarklength: default value is 10
+        :type ytickmarklength: Standard_Integer
+        :param ztickmarklength: default value is 10
+        :type ztickmarklength: Standard_Integer
+        :param gridcolor: default value is Quantity_NOC_WHITE
+        :type gridcolor: Quantity_Color &
+        :param xnamecolor: default value is Quantity_NOC_RED
+        :type xnamecolor: Quantity_Color &
+        :param ynamecolor: default value is Quantity_NOC_GREEN
+        :type ynamecolor: Quantity_Color &
+        :param znamecolor: default value is Quantity_NOC_BLUE1
+        :type znamecolor: Quantity_Color &
+        :param xcolor: default value is Quantity_NOC_RED
+        :type xcolor: Quantity_Color &
+        :param ycolor: default value is Quantity_NOC_GREEN
+        :type ycolor: Quantity_Color &
+        :param zcolor: default value is Quantity_NOC_BLUE1
+        :type zcolor: Quantity_Color &
+        :param fontOfNames: default value is Arial
+        :type fontOfNames: TCollection_AsciiString &
+        :param styleOfNames: default value is Font_FA_Bold
+        :type styleOfNames: Font_FontAspect
+        :param sizeOfNames: default value is 12
+        :type sizeOfNames: Standard_Integer
+        :param fontOfValues: default value is Arial
+        :type fontOfValues: TCollection_AsciiString &
+        :param styleOfValues: default value is Font_FA_Regular
+        :type styleOfValues: Font_FontAspect
+        :param sizeOfValues: default value is 12
+        :type sizeOfValues: Standard_Integer
+        :rtype: None
+
+        * Displays a graduated trihedron.
+
+        :param xname: default value is X
+        :type xname: TCollection_ExtendedString &
+        :param yname: default value is Y
+        :type yname: TCollection_ExtendedString &
+        :param zname: default value is Z
+        :type zname: TCollection_ExtendedString &
+        :param xdrawname: default value is Standard_True
+        :type xdrawname: bool
+        :param ydrawname: default value is Standard_True
+        :type ydrawname: bool
+        :param zdrawname: default value is Standard_True
+        :type zdrawname: bool
+        :param xdrawvalues: default value is Standard_True
+        :type xdrawvalues: bool
+        :param ydrawvalues: default value is Standard_True
+        :type ydrawvalues: bool
+        :param zdrawvalues: default value is Standard_True
+        :type zdrawvalues: bool
+        :param drawgrid: default value is Standard_True
+        :type drawgrid: bool
+        :param drawaxes: default value is Standard_True
+        :type drawaxes: bool
+        :param nbx: default value is 3
+        :type nbx: Standard_Integer
+        :param nby: default value is 3
+        :type nby: Standard_Integer
+        :param nbz: default value is 3
+        :type nbz: Standard_Integer
+        :param xoffset: default value is 10
+        :type xoffset: Standard_Integer
+        :param yoffset: default value is 10
+        :type yoffset: Standard_Integer
+        :param zoffset: default value is 10
+        :type zoffset: Standard_Integer
+        :param xaxisoffset: default value is 30
+        :type xaxisoffset: Standard_Integer
+        :param yaxisoffset: default value is 30
+        :type yaxisoffset: Standard_Integer
+        :param zaxisoffset: default value is 30
+        :type zaxisoffset: Standard_Integer
+        :param xdrawtickmarks: default value is Standard_True
+        :type xdrawtickmarks: bool
+        :param ydrawtickmarks: default value is Standard_True
+        :type ydrawtickmarks: bool
+        :param zdrawtickmarks: default value is Standard_True
+        :type zdrawtickmarks: bool
+        :param xtickmarklength: default value is 10
+        :type xtickmarklength: Standard_Integer
+        :param ytickmarklength: default value is 10
+        :type ytickmarklength: Standard_Integer
+        :param ztickmarklength: default value is 10
+        :type ztickmarklength: Standard_Integer
+        :param gridcolor: default value is Quantity_NOC_WHITE
+        :type gridcolor: Quantity_Color &
+        :param xnamecolor: default value is Quantity_NOC_RED
+        :type xnamecolor: Quantity_Color &
+        :param ynamecolor: default value is Quantity_NOC_GREEN
+        :type ynamecolor: Quantity_Color &
+        :param znamecolor: default value is Quantity_NOC_BLUE1
+        :type znamecolor: Quantity_Color &
+        :param xcolor: default value is Quantity_NOC_RED
+        :type xcolor: Quantity_Color &
+        :param ycolor: default value is Quantity_NOC_GREEN
+        :type ycolor: Quantity_Color &
+        :param zcolor: default value is Quantity_NOC_BLUE1
+        :type zcolor: Quantity_Color &
+        :param fontOfNames: default value is Arial
+        :type fontOfNames: TCollection_AsciiString &
+        :param styleOfNames: default value is Font_FA_Bold
+        :type styleOfNames: Font_FontAspect
+        :param sizeOfNames: default value is 12
+        :type sizeOfNames: Standard_Integer
+        :param fontOfValues: default value is Arial
+        :type fontOfValues: TCollection_AsciiString &
+        :param styleOfValues: default value is Font_FA_Regular
+        :type styleOfValues: Font_FontAspect
+        :param sizeOfValues: default value is 12
+        :type sizeOfValues: Standard_Integer
+        :rtype: None
+
+        * Displays a graduated trihedron.
+
+        :param xname: default value is X
+        :type xname: TCollection_ExtendedString &
+        :param yname: default value is Y
+        :type yname: TCollection_ExtendedString &
+        :param zname: default value is Z
+        :type zname: TCollection_ExtendedString &
+        :param xdrawname: default value is Standard_True
+        :type xdrawname: bool
+        :param ydrawname: default value is Standard_True
+        :type ydrawname: bool
+        :param zdrawname: default value is Standard_True
+        :type zdrawname: bool
+        :param xdrawvalues: default value is Standard_True
+        :type xdrawvalues: bool
+        :param ydrawvalues: default value is Standard_True
+        :type ydrawvalues: bool
+        :param zdrawvalues: default value is Standard_True
+        :type zdrawvalues: bool
+        :param drawgrid: default value is Standard_True
+        :type drawgrid: bool
+        :param drawaxes: default value is Standard_True
+        :type drawaxes: bool
+        :param nbx: default value is 3
+        :type nbx: Standard_Integer
+        :param nby: default value is 3
+        :type nby: Standard_Integer
+        :param nbz: default value is 3
+        :type nbz: Standard_Integer
+        :param xoffset: default value is 10
+        :type xoffset: Standard_Integer
+        :param yoffset: default value is 10
+        :type yoffset: Standard_Integer
+        :param zoffset: default value is 10
+        :type zoffset: Standard_Integer
+        :param xaxisoffset: default value is 30
+        :type xaxisoffset: Standard_Integer
+        :param yaxisoffset: default value is 30
+        :type yaxisoffset: Standard_Integer
+        :param zaxisoffset: default value is 30
+        :type zaxisoffset: Standard_Integer
+        :param xdrawtickmarks: default value is Standard_True
+        :type xdrawtickmarks: bool
+        :param ydrawtickmarks: default value is Standard_True
+        :type ydrawtickmarks: bool
+        :param zdrawtickmarks: default value is Standard_True
+        :type zdrawtickmarks: bool
+        :param xtickmarklength: default value is 10
+        :type xtickmarklength: Standard_Integer
+        :param ytickmarklength: default value is 10
+        :type ytickmarklength: Standard_Integer
+        :param ztickmarklength: default value is 10
+        :type ztickmarklength: Standard_Integer
+        :param gridcolor: default value is Quantity_NOC_WHITE
+        :type gridcolor: Quantity_Color &
+        :param xnamecolor: default value is Quantity_NOC_RED
+        :type xnamecolor: Quantity_Color &
+        :param ynamecolor: default value is Quantity_NOC_GREEN
+        :type ynamecolor: Quantity_Color &
+        :param znamecolor: default value is Quantity_NOC_BLUE1
+        :type znamecolor: Quantity_Color &
+        :param xcolor: default value is Quantity_NOC_RED
+        :type xcolor: Quantity_Color &
+        :param ycolor: default value is Quantity_NOC_GREEN
+        :type ycolor: Quantity_Color &
+        :param zcolor: default value is Quantity_NOC_BLUE1
+        :type zcolor: Quantity_Color &
+        :param fontOfNames: default value is Arial
+        :type fontOfNames: TCollection_AsciiString &
+        :param styleOfNames: default value is Font_FA_Bold
+        :type styleOfNames: Font_FontAspect
+        :param sizeOfNames: default value is 12
+        :type sizeOfNames: Standard_Integer
+        :param fontOfValues: default value is Arial
+        :type fontOfValues: TCollection_AsciiString &
+        :param styleOfValues: default value is Font_FA_Regular
+        :type styleOfValues: Font_FontAspect
+        :param sizeOfValues: default value is 12
+        :type sizeOfValues: Standard_Integer
+        :rtype: None
+
+        * Displays a graduated trihedron.
+
+        :param xname: default value is X
+        :type xname: TCollection_ExtendedString &
+        :param yname: default value is Y
+        :type yname: TCollection_ExtendedString &
+        :param zname: default value is Z
+        :type zname: TCollection_ExtendedString &
+        :param xdrawname: default value is Standard_True
+        :type xdrawname: bool
+        :param ydrawname: default value is Standard_True
+        :type ydrawname: bool
+        :param zdrawname: default value is Standard_True
+        :type zdrawname: bool
+        :param xdrawvalues: default value is Standard_True
+        :type xdrawvalues: bool
+        :param ydrawvalues: default value is Standard_True
+        :type ydrawvalues: bool
+        :param zdrawvalues: default value is Standard_True
+        :type zdrawvalues: bool
+        :param drawgrid: default value is Standard_True
+        :type drawgrid: bool
+        :param drawaxes: default value is Standard_True
+        :type drawaxes: bool
+        :param nbx: default value is 3
+        :type nbx: Standard_Integer
+        :param nby: default value is 3
+        :type nby: Standard_Integer
+        :param nbz: default value is 3
+        :type nbz: Standard_Integer
+        :param xoffset: default value is 10
+        :type xoffset: Standard_Integer
+        :param yoffset: default value is 10
+        :type yoffset: Standard_Integer
+        :param zoffset: default value is 10
+        :type zoffset: Standard_Integer
+        :param xaxisoffset: default value is 30
+        :type xaxisoffset: Standard_Integer
+        :param yaxisoffset: default value is 30
+        :type yaxisoffset: Standard_Integer
+        :param zaxisoffset: default value is 30
+        :type zaxisoffset: Standard_Integer
+        :param xdrawtickmarks: default value is Standard_True
+        :type xdrawtickmarks: bool
+        :param ydrawtickmarks: default value is Standard_True
+        :type ydrawtickmarks: bool
+        :param zdrawtickmarks: default value is Standard_True
+        :type zdrawtickmarks: bool
+        :param xtickmarklength: default value is 10
+        :type xtickmarklength: Standard_Integer
+        :param ytickmarklength: default value is 10
+        :type ytickmarklength: Standard_Integer
+        :param ztickmarklength: default value is 10
+        :type ztickmarklength: Standard_Integer
+        :param gridcolor: default value is Quantity_NOC_WHITE
+        :type gridcolor: Quantity_Color &
+        :param xnamecolor: default value is Quantity_NOC_RED
+        :type xnamecolor: Quantity_Color &
+        :param ynamecolor: default value is Quantity_NOC_GREEN
+        :type ynamecolor: Quantity_Color &
+        :param znamecolor: default value is Quantity_NOC_BLUE1
+        :type znamecolor: Quantity_Color &
+        :param xcolor: default value is Quantity_NOC_RED
+        :type xcolor: Quantity_Color &
+        :param ycolor: default value is Quantity_NOC_GREEN
+        :type ycolor: Quantity_Color &
+        :param zcolor: default value is Quantity_NOC_BLUE1
+        :type zcolor: Quantity_Color &
+        :param fontOfNames: default value is Arial
+        :type fontOfNames: TCollection_AsciiString &
+        :param styleOfNames: default value is Font_FA_Bold
+        :type styleOfNames: Font_FontAspect
+        :param sizeOfNames: default value is 12
+        :type sizeOfNames: Standard_Integer
+        :param fontOfValues: default value is Arial
+        :type fontOfValues: TCollection_AsciiString &
+        :param styleOfValues: default value is Font_FA_Regular
+        :type styleOfValues: Font_FontAspect
+        :param sizeOfValues: default value is 12
+        :type sizeOfValues: Standard_Integer
+        :rtype: None
+
+        * Displays a graduated trihedron.
+
+        :param xname: default value is X
+        :type xname: TCollection_ExtendedString &
+        :param yname: default value is Y
+        :type yname: TCollection_ExtendedString &
+        :param zname: default value is Z
+        :type zname: TCollection_ExtendedString &
+        :param xdrawname: default value is Standard_True
+        :type xdrawname: bool
+        :param ydrawname: default value is Standard_True
+        :type ydrawname: bool
+        :param zdrawname: default value is Standard_True
+        :type zdrawname: bool
+        :param xdrawvalues: default value is Standard_True
+        :type xdrawvalues: bool
+        :param ydrawvalues: default value is Standard_True
+        :type ydrawvalues: bool
+        :param zdrawvalues: default value is Standard_True
+        :type zdrawvalues: bool
+        :param drawgrid: default value is Standard_True
+        :type drawgrid: bool
+        :param drawaxes: default value is Standard_True
+        :type drawaxes: bool
+        :param nbx: default value is 3
+        :type nbx: Standard_Integer
+        :param nby: default value is 3
+        :type nby: Standard_Integer
+        :param nbz: default value is 3
+        :type nbz: Standard_Integer
+        :param xoffset: default value is 10
+        :type xoffset: Standard_Integer
+        :param yoffset: default value is 10
+        :type yoffset: Standard_Integer
+        :param zoffset: default value is 10
+        :type zoffset: Standard_Integer
+        :param xaxisoffset: default value is 30
+        :type xaxisoffset: Standard_Integer
+        :param yaxisoffset: default value is 30
+        :type yaxisoffset: Standard_Integer
+        :param zaxisoffset: default value is 30
+        :type zaxisoffset: Standard_Integer
+        :param xdrawtickmarks: default value is Standard_True
+        :type xdrawtickmarks: bool
+        :param ydrawtickmarks: default value is Standard_True
+        :type ydrawtickmarks: bool
+        :param zdrawtickmarks: default value is Standard_True
+        :type zdrawtickmarks: bool
+        :param xtickmarklength: default value is 10
+        :type xtickmarklength: Standard_Integer
+        :param ytickmarklength: default value is 10
+        :type ytickmarklength: Standard_Integer
+        :param ztickmarklength: default value is 10
+        :type ztickmarklength: Standard_Integer
+        :param gridcolor: default value is Quantity_NOC_WHITE
+        :type gridcolor: Quantity_Color &
+        :param xnamecolor: default value is Quantity_NOC_RED
+        :type xnamecolor: Quantity_Color &
+        :param ynamecolor: default value is Quantity_NOC_GREEN
+        :type ynamecolor: Quantity_Color &
+        :param znamecolor: default value is Quantity_NOC_BLUE1
+        :type znamecolor: Quantity_Color &
+        :param xcolor: default value is Quantity_NOC_RED
+        :type xcolor: Quantity_Color &
+        :param ycolor: default value is Quantity_NOC_GREEN
+        :type ycolor: Quantity_Color &
+        :param zcolor: default value is Quantity_NOC_BLUE1
+        :type zcolor: Quantity_Color &
+        :param fontOfNames: default value is Arial
+        :type fontOfNames: TCollection_AsciiString &
+        :param styleOfNames: default value is Font_FA_Bold
+        :type styleOfNames: Font_FontAspect
+        :param sizeOfNames: default value is 12
+        :type sizeOfNames: Standard_Integer
+        :param fontOfValues: default value is Arial
+        :type fontOfValues: TCollection_AsciiString &
+        :param styleOfValues: default value is Font_FA_Regular
+        :type styleOfValues: Font_FontAspect
+        :param sizeOfValues: default value is 12
+        :type sizeOfValues: Standard_Integer
+        :rtype: None
+
+        * Displays a graduated trihedron.
+
+        :param xname: default value is X
+        :type xname: TCollection_ExtendedString &
+        :param yname: default value is Y
+        :type yname: TCollection_ExtendedString &
+        :param zname: default value is Z
+        :type zname: TCollection_ExtendedString &
+        :param xdrawname: default value is Standard_True
+        :type xdrawname: bool
+        :param ydrawname: default value is Standard_True
+        :type ydrawname: bool
+        :param zdrawname: default value is Standard_True
+        :type zdrawname: bool
+        :param xdrawvalues: default value is Standard_True
+        :type xdrawvalues: bool
+        :param ydrawvalues: default value is Standard_True
+        :type ydrawvalues: bool
+        :param zdrawvalues: default value is Standard_True
+        :type zdrawvalues: bool
+        :param drawgrid: default value is Standard_True
+        :type drawgrid: bool
+        :param drawaxes: default value is Standard_True
+        :type drawaxes: bool
+        :param nbx: default value is 3
+        :type nbx: Standard_Integer
+        :param nby: default value is 3
+        :type nby: Standard_Integer
+        :param nbz: default value is 3
+        :type nbz: Standard_Integer
+        :param xoffset: default value is 10
+        :type xoffset: Standard_Integer
+        :param yoffset: default value is 10
+        :type yoffset: Standard_Integer
+        :param zoffset: default value is 10
+        :type zoffset: Standard_Integer
+        :param xaxisoffset: default value is 30
+        :type xaxisoffset: Standard_Integer
+        :param yaxisoffset: default value is 30
+        :type yaxisoffset: Standard_Integer
+        :param zaxisoffset: default value is 30
+        :type zaxisoffset: Standard_Integer
+        :param xdrawtickmarks: default value is Standard_True
+        :type xdrawtickmarks: bool
+        :param ydrawtickmarks: default value is Standard_True
+        :type ydrawtickmarks: bool
+        :param zdrawtickmarks: default value is Standard_True
+        :type zdrawtickmarks: bool
+        :param xtickmarklength: default value is 10
+        :type xtickmarklength: Standard_Integer
+        :param ytickmarklength: default value is 10
+        :type ytickmarklength: Standard_Integer
+        :param ztickmarklength: default value is 10
+        :type ztickmarklength: Standard_Integer
+        :param gridcolor: default value is Quantity_NOC_WHITE
+        :type gridcolor: Quantity_Color &
+        :param xnamecolor: default value is Quantity_NOC_RED
+        :type xnamecolor: Quantity_Color &
+        :param ynamecolor: default value is Quantity_NOC_GREEN
+        :type ynamecolor: Quantity_Color &
+        :param znamecolor: default value is Quantity_NOC_BLUE1
+        :type znamecolor: Quantity_Color &
+        :param xcolor: default value is Quantity_NOC_RED
+        :type xcolor: Quantity_Color &
+        :param ycolor: default value is Quantity_NOC_GREEN
+        :type ycolor: Quantity_Color &
+        :param zcolor: default value is Quantity_NOC_BLUE1
+        :type zcolor: Quantity_Color &
+        :param fontOfNames: default value is Arial
+        :type fontOfNames: TCollection_AsciiString &
+        :param styleOfNames: default value is Font_FA_Bold
+        :type styleOfNames: Font_FontAspect
+        :param sizeOfNames: default value is 12
+        :type sizeOfNames: Standard_Integer
+        :param fontOfValues: default value is Arial
+        :type fontOfValues: TCollection_AsciiString &
+        :param styleOfValues: default value is Font_FA_Regular
+        :type styleOfValues: Font_FontAspect
+        :param sizeOfValues: default value is 12
+        :type sizeOfValues: Standard_Integer
+        :rtype: None
+
+        * Displays a graduated trihedron.
+
+        :param xname: default value is X
+        :type xname: TCollection_ExtendedString &
+        :param yname: default value is Y
+        :type yname: TCollection_ExtendedString &
+        :param zname: default value is Z
+        :type zname: TCollection_ExtendedString &
+        :param xdrawname: default value is Standard_True
+        :type xdrawname: bool
+        :param ydrawname: default value is Standard_True
+        :type ydrawname: bool
+        :param zdrawname: default value is Standard_True
+        :type zdrawname: bool
+        :param xdrawvalues: default value is Standard_True
+        :type xdrawvalues: bool
+        :param ydrawvalues: default value is Standard_True
+        :type ydrawvalues: bool
+        :param zdrawvalues: default value is Standard_True
+        :type zdrawvalues: bool
+        :param drawgrid: default value is Standard_True
+        :type drawgrid: bool
+        :param drawaxes: default value is Standard_True
+        :type drawaxes: bool
+        :param nbx: default value is 3
+        :type nbx: Standard_Integer
+        :param nby: default value is 3
+        :type nby: Standard_Integer
+        :param nbz: default value is 3
+        :type nbz: Standard_Integer
+        :param xoffset: default value is 10
+        :type xoffset: Standard_Integer
+        :param yoffset: default value is 10
+        :type yoffset: Standard_Integer
+        :param zoffset: default value is 10
+        :type zoffset: Standard_Integer
+        :param xaxisoffset: default value is 30
+        :type xaxisoffset: Standard_Integer
+        :param yaxisoffset: default value is 30
+        :type yaxisoffset: Standard_Integer
+        :param zaxisoffset: default value is 30
+        :type zaxisoffset: Standard_Integer
+        :param xdrawtickmarks: default value is Standard_True
+        :type xdrawtickmarks: bool
+        :param ydrawtickmarks: default value is Standard_True
+        :type ydrawtickmarks: bool
+        :param zdrawtickmarks: default value is Standard_True
+        :type zdrawtickmarks: bool
+        :param xtickmarklength: default value is 10
+        :type xtickmarklength: Standard_Integer
+        :param ytickmarklength: default value is 10
+        :type ytickmarklength: Standard_Integer
+        :param ztickmarklength: default value is 10
+        :type ztickmarklength: Standard_Integer
+        :param gridcolor: default value is Quantity_NOC_WHITE
+        :type gridcolor: Quantity_Color &
+        :param xnamecolor: default value is Quantity_NOC_RED
+        :type xnamecolor: Quantity_Color &
+        :param ynamecolor: default value is Quantity_NOC_GREEN
+        :type ynamecolor: Quantity_Color &
+        :param znamecolor: default value is Quantity_NOC_BLUE1
+        :type znamecolor: Quantity_Color &
+        :param xcolor: default value is Quantity_NOC_RED
+        :type xcolor: Quantity_Color &
+        :param ycolor: default value is Quantity_NOC_GREEN
+        :type ycolor: Quantity_Color &
+        :param zcolor: default value is Quantity_NOC_BLUE1
+        :type zcolor: Quantity_Color &
+        :param fontOfNames: default value is Arial
+        :type fontOfNames: TCollection_AsciiString &
+        :param styleOfNames: default value is Font_FA_Bold
+        :type styleOfNames: Font_FontAspect
+        :param sizeOfNames: default value is 12
+        :type sizeOfNames: Standard_Integer
+        :param fontOfValues: default value is Arial
+        :type fontOfValues: TCollection_AsciiString &
+        :param styleOfValues: default value is Font_FA_Regular
+        :type styleOfValues: Font_FontAspect
+        :param sizeOfValues: default value is 12
+        :type sizeOfValues: Standard_Integer
+        :rtype: None
+
+        * Displays a graduated trihedron.
+
+        :param xname: default value is X
+        :type xname: TCollection_ExtendedString &
+        :param yname: default value is Y
+        :type yname: TCollection_ExtendedString &
+        :param zname: default value is Z
+        :type zname: TCollection_ExtendedString &
+        :param xdrawname: default value is Standard_True
+        :type xdrawname: bool
+        :param ydrawname: default value is Standard_True
+        :type ydrawname: bool
+        :param zdrawname: default value is Standard_True
+        :type zdrawname: bool
+        :param xdrawvalues: default value is Standard_True
+        :type xdrawvalues: bool
+        :param ydrawvalues: default value is Standard_True
+        :type ydrawvalues: bool
+        :param zdrawvalues: default value is Standard_True
+        :type zdrawvalues: bool
+        :param drawgrid: default value is Standard_True
+        :type drawgrid: bool
+        :param drawaxes: default value is Standard_True
+        :type drawaxes: bool
+        :param nbx: default value is 3
+        :type nbx: Standard_Integer
+        :param nby: default value is 3
+        :type nby: Standard_Integer
+        :param nbz: default value is 3
+        :type nbz: Standard_Integer
+        :param xoffset: default value is 10
+        :type xoffset: Standard_Integer
+        :param yoffset: default value is 10
+        :type yoffset: Standard_Integer
+        :param zoffset: default value is 10
+        :type zoffset: Standard_Integer
+        :param xaxisoffset: default value is 30
+        :type xaxisoffset: Standard_Integer
+        :param yaxisoffset: default value is 30
+        :type yaxisoffset: Standard_Integer
+        :param zaxisoffset: default value is 30
+        :type zaxisoffset: Standard_Integer
+        :param xdrawtickmarks: default value is Standard_True
+        :type xdrawtickmarks: bool
+        :param ydrawtickmarks: default value is Standard_True
+        :type ydrawtickmarks: bool
+        :param zdrawtickmarks: default value is Standard_True
+        :type zdrawtickmarks: bool
+        :param xtickmarklength: default value is 10
+        :type xtickmarklength: Standard_Integer
+        :param ytickmarklength: default value is 10
+        :type ytickmarklength: Standard_Integer
+        :param ztickmarklength: default value is 10
+        :type ztickmarklength: Standard_Integer
+        :param gridcolor: default value is Quantity_NOC_WHITE
+        :type gridcolor: Quantity_Color &
+        :param xnamecolor: default value is Quantity_NOC_RED
+        :type xnamecolor: Quantity_Color &
+        :param ynamecolor: default value is Quantity_NOC_GREEN
+        :type ynamecolor: Quantity_Color &
+        :param znamecolor: default value is Quantity_NOC_BLUE1
+        :type znamecolor: Quantity_Color &
+        :param xcolor: default value is Quantity_NOC_RED
+        :type xcolor: Quantity_Color &
+        :param ycolor: default value is Quantity_NOC_GREEN
+        :type ycolor: Quantity_Color &
+        :param zcolor: default value is Quantity_NOC_BLUE1
+        :type zcolor: Quantity_Color &
+        :param fontOfNames: default value is Arial
+        :type fontOfNames: TCollection_AsciiString &
+        :param styleOfNames: default value is Font_FA_Bold
+        :type styleOfNames: Font_FontAspect
+        :param sizeOfNames: default value is 12
+        :type sizeOfNames: Standard_Integer
+        :param fontOfValues: default value is Arial
+        :type fontOfValues: TCollection_AsciiString &
+        :param styleOfValues: default value is Font_FA_Regular
+        :type styleOfValues: Font_FontAspect
+        :param sizeOfValues: default value is 12
+        :type sizeOfValues: Standard_Integer
+        :rtype: None
+
+        * Displays a graduated trihedron.
+
+        :param xname: default value is X
+        :type xname: TCollection_ExtendedString &
+        :param yname: default value is Y
+        :type yname: TCollection_ExtendedString &
+        :param zname: default value is Z
+        :type zname: TCollection_ExtendedString &
+        :param xdrawname: default value is Standard_True
+        :type xdrawname: bool
+        :param ydrawname: default value is Standard_True
+        :type ydrawname: bool
+        :param zdrawname: default value is Standard_True
+        :type zdrawname: bool
+        :param xdrawvalues: default value is Standard_True
+        :type xdrawvalues: bool
+        :param ydrawvalues: default value is Standard_True
+        :type ydrawvalues: bool
+        :param zdrawvalues: default value is Standard_True
+        :type zdrawvalues: bool
+        :param drawgrid: default value is Standard_True
+        :type drawgrid: bool
+        :param drawaxes: default value is Standard_True
+        :type drawaxes: bool
+        :param nbx: default value is 3
+        :type nbx: Standard_Integer
+        :param nby: default value is 3
+        :type nby: Standard_Integer
+        :param nbz: default value is 3
+        :type nbz: Standard_Integer
+        :param xoffset: default value is 10
+        :type xoffset: Standard_Integer
+        :param yoffset: default value is 10
+        :type yoffset: Standard_Integer
+        :param zoffset: default value is 10
+        :type zoffset: Standard_Integer
+        :param xaxisoffset: default value is 30
+        :type xaxisoffset: Standard_Integer
+        :param yaxisoffset: default value is 30
+        :type yaxisoffset: Standard_Integer
+        :param zaxisoffset: default value is 30
+        :type zaxisoffset: Standard_Integer
+        :param xdrawtickmarks: default value is Standard_True
+        :type xdrawtickmarks: bool
+        :param ydrawtickmarks: default value is Standard_True
+        :type ydrawtickmarks: bool
+        :param zdrawtickmarks: default value is Standard_True
+        :type zdrawtickmarks: bool
+        :param xtickmarklength: default value is 10
+        :type xtickmarklength: Standard_Integer
+        :param ytickmarklength: default value is 10
+        :type ytickmarklength: Standard_Integer
+        :param ztickmarklength: default value is 10
+        :type ztickmarklength: Standard_Integer
+        :param gridcolor: default value is Quantity_NOC_WHITE
+        :type gridcolor: Quantity_Color &
+        :param xnamecolor: default value is Quantity_NOC_RED
+        :type xnamecolor: Quantity_Color &
+        :param ynamecolor: default value is Quantity_NOC_GREEN
+        :type ynamecolor: Quantity_Color &
+        :param znamecolor: default value is Quantity_NOC_BLUE1
+        :type znamecolor: Quantity_Color &
+        :param xcolor: default value is Quantity_NOC_RED
+        :type xcolor: Quantity_Color &
+        :param ycolor: default value is Quantity_NOC_GREEN
+        :type ycolor: Quantity_Color &
+        :param zcolor: default value is Quantity_NOC_BLUE1
+        :type zcolor: Quantity_Color &
+        :param fontOfNames: default value is Arial
+        :type fontOfNames: TCollection_AsciiString &
+        :param styleOfNames: default value is Font_FA_Bold
+        :type styleOfNames: Font_FontAspect
+        :param sizeOfNames: default value is 12
+        :type sizeOfNames: Standard_Integer
+        :param fontOfValues: default value is Arial
+        :type fontOfValues: TCollection_AsciiString &
+        :param styleOfValues: default value is Font_FA_Regular
+        :type styleOfValues: Font_FontAspect
+        :param sizeOfValues: default value is 12
+        :type sizeOfValues: Standard_Integer
+        :rtype: None
+
+        * Displays a graduated trihedron.
+
+        :param xname: default value is X
+        :type xname: TCollection_ExtendedString &
+        :param yname: default value is Y
+        :type yname: TCollection_ExtendedString &
+        :param zname: default value is Z
+        :type zname: TCollection_ExtendedString &
+        :param xdrawname: default value is Standard_True
+        :type xdrawname: bool
+        :param ydrawname: default value is Standard_True
+        :type ydrawname: bool
+        :param zdrawname: default value is Standard_True
+        :type zdrawname: bool
+        :param xdrawvalues: default value is Standard_True
+        :type xdrawvalues: bool
+        :param ydrawvalues: default value is Standard_True
+        :type ydrawvalues: bool
+        :param zdrawvalues: default value is Standard_True
+        :type zdrawvalues: bool
+        :param drawgrid: default value is Standard_True
+        :type drawgrid: bool
+        :param drawaxes: default value is Standard_True
+        :type drawaxes: bool
+        :param nbx: default value is 3
+        :type nbx: Standard_Integer
+        :param nby: default value is 3
+        :type nby: Standard_Integer
+        :param nbz: default value is 3
+        :type nbz: Standard_Integer
+        :param xoffset: default value is 10
+        :type xoffset: Standard_Integer
+        :param yoffset: default value is 10
+        :type yoffset: Standard_Integer
+        :param zoffset: default value is 10
+        :type zoffset: Standard_Integer
+        :param xaxisoffset: default value is 30
+        :type xaxisoffset: Standard_Integer
+        :param yaxisoffset: default value is 30
+        :type yaxisoffset: Standard_Integer
+        :param zaxisoffset: default value is 30
+        :type zaxisoffset: Standard_Integer
+        :param xdrawtickmarks: default value is Standard_True
+        :type xdrawtickmarks: bool
+        :param ydrawtickmarks: default value is Standard_True
+        :type ydrawtickmarks: bool
+        :param zdrawtickmarks: default value is Standard_True
+        :type zdrawtickmarks: bool
+        :param xtickmarklength: default value is 10
+        :type xtickmarklength: Standard_Integer
+        :param ytickmarklength: default value is 10
+        :type ytickmarklength: Standard_Integer
+        :param ztickmarklength: default value is 10
+        :type ztickmarklength: Standard_Integer
+        :param gridcolor: default value is Quantity_NOC_WHITE
+        :type gridcolor: Quantity_Color &
+        :param xnamecolor: default value is Quantity_NOC_RED
+        :type xnamecolor: Quantity_Color &
+        :param ynamecolor: default value is Quantity_NOC_GREEN
+        :type ynamecolor: Quantity_Color &
+        :param znamecolor: default value is Quantity_NOC_BLUE1
+        :type znamecolor: Quantity_Color &
+        :param xcolor: default value is Quantity_NOC_RED
+        :type xcolor: Quantity_Color &
+        :param ycolor: default value is Quantity_NOC_GREEN
+        :type ycolor: Quantity_Color &
+        :param zcolor: default value is Quantity_NOC_BLUE1
+        :type zcolor: Quantity_Color &
+        :param fontOfNames: default value is Arial
+        :type fontOfNames: TCollection_AsciiString &
+        :param styleOfNames: default value is Font_FA_Bold
+        :type styleOfNames: Font_FontAspect
+        :param sizeOfNames: default value is 12
+        :type sizeOfNames: Standard_Integer
+        :param fontOfValues: default value is Arial
+        :type fontOfValues: TCollection_AsciiString &
+        :param styleOfValues: default value is Font_FA_Regular
+        :type styleOfValues: Font_FontAspect
+        :param sizeOfValues: default value is 12
+        :type sizeOfValues: Standard_Integer
+        :rtype: None
+
+        * Displays a graduated trihedron.
+
+        :param xname: default value is X
+        :type xname: TCollection_ExtendedString &
+        :param yname: default value is Y
+        :type yname: TCollection_ExtendedString &
+        :param zname: default value is Z
+        :type zname: TCollection_ExtendedString &
+        :param xdrawname: default value is Standard_True
+        :type xdrawname: bool
+        :param ydrawname: default value is Standard_True
+        :type ydrawname: bool
+        :param zdrawname: default value is Standard_True
+        :type zdrawname: bool
+        :param xdrawvalues: default value is Standard_True
+        :type xdrawvalues: bool
+        :param ydrawvalues: default value is Standard_True
+        :type ydrawvalues: bool
+        :param zdrawvalues: default value is Standard_True
+        :type zdrawvalues: bool
+        :param drawgrid: default value is Standard_True
+        :type drawgrid: bool
+        :param drawaxes: default value is Standard_True
+        :type drawaxes: bool
+        :param nbx: default value is 3
+        :type nbx: Standard_Integer
+        :param nby: default value is 3
+        :type nby: Standard_Integer
+        :param nbz: default value is 3
+        :type nbz: Standard_Integer
+        :param xoffset: default value is 10
+        :type xoffset: Standard_Integer
+        :param yoffset: default value is 10
+        :type yoffset: Standard_Integer
+        :param zoffset: default value is 10
+        :type zoffset: Standard_Integer
+        :param xaxisoffset: default value is 30
+        :type xaxisoffset: Standard_Integer
+        :param yaxisoffset: default value is 30
+        :type yaxisoffset: Standard_Integer
+        :param zaxisoffset: default value is 30
+        :type zaxisoffset: Standard_Integer
+        :param xdrawtickmarks: default value is Standard_True
+        :type xdrawtickmarks: bool
+        :param ydrawtickmarks: default value is Standard_True
+        :type ydrawtickmarks: bool
+        :param zdrawtickmarks: default value is Standard_True
+        :type zdrawtickmarks: bool
+        :param xtickmarklength: default value is 10
+        :type xtickmarklength: Standard_Integer
+        :param ytickmarklength: default value is 10
+        :type ytickmarklength: Standard_Integer
+        :param ztickmarklength: default value is 10
+        :type ztickmarklength: Standard_Integer
+        :param gridcolor: default value is Quantity_NOC_WHITE
+        :type gridcolor: Quantity_Color &
+        :param xnamecolor: default value is Quantity_NOC_RED
+        :type xnamecolor: Quantity_Color &
+        :param ynamecolor: default value is Quantity_NOC_GREEN
+        :type ynamecolor: Quantity_Color &
+        :param znamecolor: default value is Quantity_NOC_BLUE1
+        :type znamecolor: Quantity_Color &
+        :param xcolor: default value is Quantity_NOC_RED
+        :type xcolor: Quantity_Color &
+        :param ycolor: default value is Quantity_NOC_GREEN
+        :type ycolor: Quantity_Color &
+        :param zcolor: default value is Quantity_NOC_BLUE1
+        :type zcolor: Quantity_Color &
+        :param fontOfNames: default value is Arial
+        :type fontOfNames: TCollection_AsciiString &
+        :param styleOfNames: default value is Font_FA_Bold
+        :type styleOfNames: Font_FontAspect
+        :param sizeOfNames: default value is 12
+        :type sizeOfNames: Standard_Integer
+        :param fontOfValues: default value is Arial
+        :type fontOfValues: TCollection_AsciiString &
+        :param styleOfValues: default value is Font_FA_Regular
+        :type styleOfValues: Font_FontAspect
+        :param sizeOfValues: default value is 12
+        :type sizeOfValues: Standard_Integer
+        :rtype: None
+
+        * Displays a graduated trihedron.
+
+        :param xname: default value is X
+        :type xname: TCollection_ExtendedString &
+        :param yname: default value is Y
+        :type yname: TCollection_ExtendedString &
+        :param zname: default value is Z
+        :type zname: TCollection_ExtendedString &
+        :param xdrawname: default value is Standard_True
+        :type xdrawname: bool
+        :param ydrawname: default value is Standard_True
+        :type ydrawname: bool
+        :param zdrawname: default value is Standard_True
+        :type zdrawname: bool
+        :param xdrawvalues: default value is Standard_True
+        :type xdrawvalues: bool
+        :param ydrawvalues: default value is Standard_True
+        :type ydrawvalues: bool
+        :param zdrawvalues: default value is Standard_True
+        :type zdrawvalues: bool
+        :param drawgrid: default value is Standard_True
+        :type drawgrid: bool
+        :param drawaxes: default value is Standard_True
+        :type drawaxes: bool
+        :param nbx: default value is 3
+        :type nbx: Standard_Integer
+        :param nby: default value is 3
+        :type nby: Standard_Integer
+        :param nbz: default value is 3
+        :type nbz: Standard_Integer
+        :param xoffset: default value is 10
+        :type xoffset: Standard_Integer
+        :param yoffset: default value is 10
+        :type yoffset: Standard_Integer
+        :param zoffset: default value is 10
+        :type zoffset: Standard_Integer
+        :param xaxisoffset: default value is 30
+        :type xaxisoffset: Standard_Integer
+        :param yaxisoffset: default value is 30
+        :type yaxisoffset: Standard_Integer
+        :param zaxisoffset: default value is 30
+        :type zaxisoffset: Standard_Integer
+        :param xdrawtickmarks: default value is Standard_True
+        :type xdrawtickmarks: bool
+        :param ydrawtickmarks: default value is Standard_True
+        :type ydrawtickmarks: bool
+        :param zdrawtickmarks: default value is Standard_True
+        :type zdrawtickmarks: bool
+        :param xtickmarklength: default value is 10
+        :type xtickmarklength: Standard_Integer
+        :param ytickmarklength: default value is 10
+        :type ytickmarklength: Standard_Integer
+        :param ztickmarklength: default value is 10
+        :type ztickmarklength: Standard_Integer
+        :param gridcolor: default value is Quantity_NOC_WHITE
+        :type gridcolor: Quantity_Color &
+        :param xnamecolor: default value is Quantity_NOC_RED
+        :type xnamecolor: Quantity_Color &
+        :param ynamecolor: default value is Quantity_NOC_GREEN
+        :type ynamecolor: Quantity_Color &
+        :param znamecolor: default value is Quantity_NOC_BLUE1
+        :type znamecolor: Quantity_Color &
+        :param xcolor: default value is Quantity_NOC_RED
+        :type xcolor: Quantity_Color &
+        :param ycolor: default value is Quantity_NOC_GREEN
+        :type ycolor: Quantity_Color &
+        :param zcolor: default value is Quantity_NOC_BLUE1
+        :type zcolor: Quantity_Color &
+        :param fontOfNames: default value is Arial
+        :type fontOfNames: TCollection_AsciiString &
+        :param styleOfNames: default value is Font_FA_Bold
+        :type styleOfNames: Font_FontAspect
+        :param sizeOfNames: default value is 12
+        :type sizeOfNames: Standard_Integer
+        :param fontOfValues: default value is Arial
+        :type fontOfValues: TCollection_AsciiString &
+        :param styleOfValues: default value is Font_FA_Regular
+        :type styleOfValues: Font_FontAspect
+        :param sizeOfValues: default value is 12
+        :type sizeOfValues: Standard_Integer
+        :rtype: None
+
+        * Displays a graduated trihedron.
+
+        :param xname: default value is X
+        :type xname: TCollection_ExtendedString &
+        :param yname: default value is Y
+        :type yname: TCollection_ExtendedString &
+        :param zname: default value is Z
+        :type zname: TCollection_ExtendedString &
+        :param xdrawname: default value is Standard_True
+        :type xdrawname: bool
+        :param ydrawname: default value is Standard_True
+        :type ydrawname: bool
+        :param zdrawname: default value is Standard_True
+        :type zdrawname: bool
+        :param xdrawvalues: default value is Standard_True
+        :type xdrawvalues: bool
+        :param ydrawvalues: default value is Standard_True
+        :type ydrawvalues: bool
+        :param zdrawvalues: default value is Standard_True
+        :type zdrawvalues: bool
+        :param drawgrid: default value is Standard_True
+        :type drawgrid: bool
+        :param drawaxes: default value is Standard_True
+        :type drawaxes: bool
+        :param nbx: default value is 3
+        :type nbx: Standard_Integer
+        :param nby: default value is 3
+        :type nby: Standard_Integer
+        :param nbz: default value is 3
+        :type nbz: Standard_Integer
+        :param xoffset: default value is 10
+        :type xoffset: Standard_Integer
+        :param yoffset: default value is 10
+        :type yoffset: Standard_Integer
+        :param zoffset: default value is 10
+        :type zoffset: Standard_Integer
+        :param xaxisoffset: default value is 30
+        :type xaxisoffset: Standard_Integer
+        :param yaxisoffset: default value is 30
+        :type yaxisoffset: Standard_Integer
+        :param zaxisoffset: default value is 30
+        :type zaxisoffset: Standard_Integer
+        :param xdrawtickmarks: default value is Standard_True
+        :type xdrawtickmarks: bool
+        :param ydrawtickmarks: default value is Standard_True
+        :type ydrawtickmarks: bool
+        :param zdrawtickmarks: default value is Standard_True
+        :type zdrawtickmarks: bool
+        :param xtickmarklength: default value is 10
+        :type xtickmarklength: Standard_Integer
+        :param ytickmarklength: default value is 10
+        :type ytickmarklength: Standard_Integer
+        :param ztickmarklength: default value is 10
+        :type ztickmarklength: Standard_Integer
+        :param gridcolor: default value is Quantity_NOC_WHITE
+        :type gridcolor: Quantity_Color &
+        :param xnamecolor: default value is Quantity_NOC_RED
+        :type xnamecolor: Quantity_Color &
+        :param ynamecolor: default value is Quantity_NOC_GREEN
+        :type ynamecolor: Quantity_Color &
+        :param znamecolor: default value is Quantity_NOC_BLUE1
+        :type znamecolor: Quantity_Color &
+        :param xcolor: default value is Quantity_NOC_RED
+        :type xcolor: Quantity_Color &
+        :param ycolor: default value is Quantity_NOC_GREEN
+        :type ycolor: Quantity_Color &
+        :param zcolor: default value is Quantity_NOC_BLUE1
+        :type zcolor: Quantity_Color &
+        :param fontOfNames: default value is Arial
+        :type fontOfNames: TCollection_AsciiString &
+        :param styleOfNames: default value is Font_FA_Bold
+        :type styleOfNames: Font_FontAspect
+        :param sizeOfNames: default value is 12
+        :type sizeOfNames: Standard_Integer
+        :param fontOfValues: default value is Arial
+        :type fontOfValues: TCollection_AsciiString &
+        :param styleOfValues: default value is Font_FA_Regular
+        :type styleOfValues: Font_FontAspect
+        :param sizeOfValues: default value is 12
+        :type sizeOfValues: Standard_Integer
+        :rtype: None
+
+        * Displays a graduated trihedron.
+
+        :param xname: default value is X
+        :type xname: TCollection_ExtendedString &
+        :param yname: default value is Y
+        :type yname: TCollection_ExtendedString &
+        :param zname: default value is Z
+        :type zname: TCollection_ExtendedString &
+        :param xdrawname: default value is Standard_True
+        :type xdrawname: bool
+        :param ydrawname: default value is Standard_True
+        :type ydrawname: bool
+        :param zdrawname: default value is Standard_True
+        :type zdrawname: bool
+        :param xdrawvalues: default value is Standard_True
+        :type xdrawvalues: bool
+        :param ydrawvalues: default value is Standard_True
+        :type ydrawvalues: bool
+        :param zdrawvalues: default value is Standard_True
+        :type zdrawvalues: bool
+        :param drawgrid: default value is Standard_True
+        :type drawgrid: bool
+        :param drawaxes: default value is Standard_True
+        :type drawaxes: bool
+        :param nbx: default value is 3
+        :type nbx: Standard_Integer
+        :param nby: default value is 3
+        :type nby: Standard_Integer
+        :param nbz: default value is 3
+        :type nbz: Standard_Integer
+        :param xoffset: default value is 10
+        :type xoffset: Standard_Integer
+        :param yoffset: default value is 10
+        :type yoffset: Standard_Integer
+        :param zoffset: default value is 10
+        :type zoffset: Standard_Integer
+        :param xaxisoffset: default value is 30
+        :type xaxisoffset: Standard_Integer
+        :param yaxisoffset: default value is 30
+        :type yaxisoffset: Standard_Integer
+        :param zaxisoffset: default value is 30
+        :type zaxisoffset: Standard_Integer
+        :param xdrawtickmarks: default value is Standard_True
+        :type xdrawtickmarks: bool
+        :param ydrawtickmarks: default value is Standard_True
+        :type ydrawtickmarks: bool
+        :param zdrawtickmarks: default value is Standard_True
+        :type zdrawtickmarks: bool
+        :param xtickmarklength: default value is 10
+        :type xtickmarklength: Standard_Integer
+        :param ytickmarklength: default value is 10
+        :type ytickmarklength: Standard_Integer
+        :param ztickmarklength: default value is 10
+        :type ztickmarklength: Standard_Integer
+        :param gridcolor: default value is Quantity_NOC_WHITE
+        :type gridcolor: Quantity_Color &
+        :param xnamecolor: default value is Quantity_NOC_RED
+        :type xnamecolor: Quantity_Color &
+        :param ynamecolor: default value is Quantity_NOC_GREEN
+        :type ynamecolor: Quantity_Color &
+        :param znamecolor: default value is Quantity_NOC_BLUE1
+        :type znamecolor: Quantity_Color &
+        :param xcolor: default value is Quantity_NOC_RED
+        :type xcolor: Quantity_Color &
+        :param ycolor: default value is Quantity_NOC_GREEN
+        :type ycolor: Quantity_Color &
+        :param zcolor: default value is Quantity_NOC_BLUE1
+        :type zcolor: Quantity_Color &
+        :param fontOfNames: default value is Arial
+        :type fontOfNames: TCollection_AsciiString &
+        :param styleOfNames: default value is Font_FA_Bold
+        :type styleOfNames: Font_FontAspect
+        :param sizeOfNames: default value is 12
+        :type sizeOfNames: Standard_Integer
+        :param fontOfValues: default value is Arial
+        :type fontOfValues: TCollection_AsciiString &
+        :param styleOfValues: default value is Font_FA_Regular
+        :type styleOfValues: Font_FontAspect
+        :param sizeOfValues: default value is 12
+        :type sizeOfValues: Standard_Integer
+        :rtype: None
+
+        * Displays a graduated trihedron.
+
+        :param xname: default value is X
+        :type xname: TCollection_ExtendedString &
+        :param yname: default value is Y
+        :type yname: TCollection_ExtendedString &
+        :param zname: default value is Z
+        :type zname: TCollection_ExtendedString &
+        :param xdrawname: default value is Standard_True
+        :type xdrawname: bool
+        :param ydrawname: default value is Standard_True
+        :type ydrawname: bool
+        :param zdrawname: default value is Standard_True
+        :type zdrawname: bool
+        :param xdrawvalues: default value is Standard_True
+        :type xdrawvalues: bool
+        :param ydrawvalues: default value is Standard_True
+        :type ydrawvalues: bool
+        :param zdrawvalues: default value is Standard_True
+        :type zdrawvalues: bool
+        :param drawgrid: default value is Standard_True
+        :type drawgrid: bool
+        :param drawaxes: default value is Standard_True
+        :type drawaxes: bool
+        :param nbx: default value is 3
+        :type nbx: Standard_Integer
+        :param nby: default value is 3
+        :type nby: Standard_Integer
+        :param nbz: default value is 3
+        :type nbz: Standard_Integer
+        :param xoffset: default value is 10
+        :type xoffset: Standard_Integer
+        :param yoffset: default value is 10
+        :type yoffset: Standard_Integer
+        :param zoffset: default value is 10
+        :type zoffset: Standard_Integer
+        :param xaxisoffset: default value is 30
+        :type xaxisoffset: Standard_Integer
+        :param yaxisoffset: default value is 30
+        :type yaxisoffset: Standard_Integer
+        :param zaxisoffset: default value is 30
+        :type zaxisoffset: Standard_Integer
+        :param xdrawtickmarks: default value is Standard_True
+        :type xdrawtickmarks: bool
+        :param ydrawtickmarks: default value is Standard_True
+        :type ydrawtickmarks: bool
+        :param zdrawtickmarks: default value is Standard_True
+        :type zdrawtickmarks: bool
+        :param xtickmarklength: default value is 10
+        :type xtickmarklength: Standard_Integer
+        :param ytickmarklength: default value is 10
+        :type ytickmarklength: Standard_Integer
+        :param ztickmarklength: default value is 10
+        :type ztickmarklength: Standard_Integer
+        :param gridcolor: default value is Quantity_NOC_WHITE
+        :type gridcolor: Quantity_Color &
+        :param xnamecolor: default value is Quantity_NOC_RED
+        :type xnamecolor: Quantity_Color &
+        :param ynamecolor: default value is Quantity_NOC_GREEN
+        :type ynamecolor: Quantity_Color &
+        :param znamecolor: default value is Quantity_NOC_BLUE1
+        :type znamecolor: Quantity_Color &
+        :param xcolor: default value is Quantity_NOC_RED
+        :type xcolor: Quantity_Color &
+        :param ycolor: default value is Quantity_NOC_GREEN
+        :type ycolor: Quantity_Color &
+        :param zcolor: default value is Quantity_NOC_BLUE1
+        :type zcolor: Quantity_Color &
+        :param fontOfNames: default value is Arial
+        :type fontOfNames: TCollection_AsciiString &
+        :param styleOfNames: default value is Font_FA_Bold
+        :type styleOfNames: Font_FontAspect
+        :param sizeOfNames: default value is 12
+        :type sizeOfNames: Standard_Integer
+        :param fontOfValues: default value is Arial
+        :type fontOfValues: TCollection_AsciiString &
+        :param styleOfValues: default value is Font_FA_Regular
+        :type styleOfValues: Font_FontAspect
+        :param sizeOfValues: default value is 12
+        :type sizeOfValues: Standard_Integer
+        :rtype: None
+
+        * Displays a graduated trihedron.
+
+        :param xname: default value is X
+        :type xname: TCollection_ExtendedString &
+        :param yname: default value is Y
+        :type yname: TCollection_ExtendedString &
+        :param zname: default value is Z
+        :type zname: TCollection_ExtendedString &
+        :param xdrawname: default value is Standard_True
+        :type xdrawname: bool
+        :param ydrawname: default value is Standard_True
+        :type ydrawname: bool
+        :param zdrawname: default value is Standard_True
+        :type zdrawname: bool
+        :param xdrawvalues: default value is Standard_True
+        :type xdrawvalues: bool
+        :param ydrawvalues: default value is Standard_True
+        :type ydrawvalues: bool
+        :param zdrawvalues: default value is Standard_True
+        :type zdrawvalues: bool
+        :param drawgrid: default value is Standard_True
+        :type drawgrid: bool
+        :param drawaxes: default value is Standard_True
+        :type drawaxes: bool
+        :param nbx: default value is 3
+        :type nbx: Standard_Integer
+        :param nby: default value is 3
+        :type nby: Standard_Integer
+        :param nbz: default value is 3
+        :type nbz: Standard_Integer
+        :param xoffset: default value is 10
+        :type xoffset: Standard_Integer
+        :param yoffset: default value is 10
+        :type yoffset: Standard_Integer
+        :param zoffset: default value is 10
+        :type zoffset: Standard_Integer
+        :param xaxisoffset: default value is 30
+        :type xaxisoffset: Standard_Integer
+        :param yaxisoffset: default value is 30
+        :type yaxisoffset: Standard_Integer
+        :param zaxisoffset: default value is 30
+        :type zaxisoffset: Standard_Integer
+        :param xdrawtickmarks: default value is Standard_True
+        :type xdrawtickmarks: bool
+        :param ydrawtickmarks: default value is Standard_True
+        :type ydrawtickmarks: bool
+        :param zdrawtickmarks: default value is Standard_True
+        :type zdrawtickmarks: bool
+        :param xtickmarklength: default value is 10
+        :type xtickmarklength: Standard_Integer
+        :param ytickmarklength: default value is 10
+        :type ytickmarklength: Standard_Integer
+        :param ztickmarklength: default value is 10
+        :type ztickmarklength: Standard_Integer
+        :param gridcolor: default value is Quantity_NOC_WHITE
+        :type gridcolor: Quantity_Color &
+        :param xnamecolor: default value is Quantity_NOC_RED
+        :type xnamecolor: Quantity_Color &
+        :param ynamecolor: default value is Quantity_NOC_GREEN
+        :type ynamecolor: Quantity_Color &
+        :param znamecolor: default value is Quantity_NOC_BLUE1
+        :type znamecolor: Quantity_Color &
+        :param xcolor: default value is Quantity_NOC_RED
+        :type xcolor: Quantity_Color &
+        :param ycolor: default value is Quantity_NOC_GREEN
+        :type ycolor: Quantity_Color &
+        :param zcolor: default value is Quantity_NOC_BLUE1
+        :type zcolor: Quantity_Color &
+        :param fontOfNames: default value is Arial
+        :type fontOfNames: TCollection_AsciiString &
+        :param styleOfNames: default value is Font_FA_Bold
+        :type styleOfNames: Font_FontAspect
+        :param sizeOfNames: default value is 12
+        :type sizeOfNames: Standard_Integer
+        :param fontOfValues: default value is Arial
+        :type fontOfValues: TCollection_AsciiString &
+        :param styleOfValues: default value is Font_FA_Regular
+        :type styleOfValues: Font_FontAspect
+        :param sizeOfValues: default value is 12
+        :type sizeOfValues: Standard_Integer
+        :rtype: None
+
+        * Displays a graduated trihedron.
+
+        :param xname: default value is X
+        :type xname: TCollection_ExtendedString &
+        :param yname: default value is Y
+        :type yname: TCollection_ExtendedString &
+        :param zname: default value is Z
+        :type zname: TCollection_ExtendedString &
+        :param xdrawname: default value is Standard_True
+        :type xdrawname: bool
+        :param ydrawname: default value is Standard_True
+        :type ydrawname: bool
+        :param zdrawname: default value is Standard_True
+        :type zdrawname: bool
+        :param xdrawvalues: default value is Standard_True
+        :type xdrawvalues: bool
+        :param ydrawvalues: default value is Standard_True
+        :type ydrawvalues: bool
+        :param zdrawvalues: default value is Standard_True
+        :type zdrawvalues: bool
+        :param drawgrid: default value is Standard_True
+        :type drawgrid: bool
+        :param drawaxes: default value is Standard_True
+        :type drawaxes: bool
+        :param nbx: default value is 3
+        :type nbx: Standard_Integer
+        :param nby: default value is 3
+        :type nby: Standard_Integer
+        :param nbz: default value is 3
+        :type nbz: Standard_Integer
+        :param xoffset: default value is 10
+        :type xoffset: Standard_Integer
+        :param yoffset: default value is 10
+        :type yoffset: Standard_Integer
+        :param zoffset: default value is 10
+        :type zoffset: Standard_Integer
+        :param xaxisoffset: default value is 30
+        :type xaxisoffset: Standard_Integer
+        :param yaxisoffset: default value is 30
+        :type yaxisoffset: Standard_Integer
+        :param zaxisoffset: default value is 30
+        :type zaxisoffset: Standard_Integer
+        :param xdrawtickmarks: default value is Standard_True
+        :type xdrawtickmarks: bool
+        :param ydrawtickmarks: default value is Standard_True
+        :type ydrawtickmarks: bool
+        :param zdrawtickmarks: default value is Standard_True
+        :type zdrawtickmarks: bool
+        :param xtickmarklength: default value is 10
+        :type xtickmarklength: Standard_Integer
+        :param ytickmarklength: default value is 10
+        :type ytickmarklength: Standard_Integer
+        :param ztickmarklength: default value is 10
+        :type ztickmarklength: Standard_Integer
+        :param gridcolor: default value is Quantity_NOC_WHITE
+        :type gridcolor: Quantity_Color &
+        :param xnamecolor: default value is Quantity_NOC_RED
+        :type xnamecolor: Quantity_Color &
+        :param ynamecolor: default value is Quantity_NOC_GREEN
+        :type ynamecolor: Quantity_Color &
+        :param znamecolor: default value is Quantity_NOC_BLUE1
+        :type znamecolor: Quantity_Color &
+        :param xcolor: default value is Quantity_NOC_RED
+        :type xcolor: Quantity_Color &
+        :param ycolor: default value is Quantity_NOC_GREEN
+        :type ycolor: Quantity_Color &
+        :param zcolor: default value is Quantity_NOC_BLUE1
+        :type zcolor: Quantity_Color &
+        :param fontOfNames: default value is Arial
+        :type fontOfNames: TCollection_AsciiString &
+        :param styleOfNames: default value is Font_FA_Bold
+        :type styleOfNames: Font_FontAspect
+        :param sizeOfNames: default value is 12
+        :type sizeOfNames: Standard_Integer
+        :param fontOfValues: default value is Arial
+        :type fontOfValues: TCollection_AsciiString &
+        :param styleOfValues: default value is Font_FA_Regular
+        :type styleOfValues: Font_FontAspect
+        :param sizeOfValues: default value is 12
+        :type sizeOfValues: Standard_Integer
+        :rtype: None
+
+        * Displays a graduated trihedron.
+
+        :param xname: default value is X
+        :type xname: TCollection_ExtendedString &
+        :param yname: default value is Y
+        :type yname: TCollection_ExtendedString &
+        :param zname: default value is Z
+        :type zname: TCollection_ExtendedString &
+        :param xdrawname: default value is Standard_True
+        :type xdrawname: bool
+        :param ydrawname: default value is Standard_True
+        :type ydrawname: bool
+        :param zdrawname: default value is Standard_True
+        :type zdrawname: bool
+        :param xdrawvalues: default value is Standard_True
+        :type xdrawvalues: bool
+        :param ydrawvalues: default value is Standard_True
+        :type ydrawvalues: bool
+        :param zdrawvalues: default value is Standard_True
+        :type zdrawvalues: bool
+        :param drawgrid: default value is Standard_True
+        :type drawgrid: bool
+        :param drawaxes: default value is Standard_True
+        :type drawaxes: bool
+        :param nbx: default value is 3
+        :type nbx: Standard_Integer
+        :param nby: default value is 3
+        :type nby: Standard_Integer
+        :param nbz: default value is 3
+        :type nbz: Standard_Integer
+        :param xoffset: default value is 10
+        :type xoffset: Standard_Integer
+        :param yoffset: default value is 10
+        :type yoffset: Standard_Integer
+        :param zoffset: default value is 10
+        :type zoffset: Standard_Integer
+        :param xaxisoffset: default value is 30
+        :type xaxisoffset: Standard_Integer
+        :param yaxisoffset: default value is 30
+        :type yaxisoffset: Standard_Integer
+        :param zaxisoffset: default value is 30
+        :type zaxisoffset: Standard_Integer
+        :param xdrawtickmarks: default value is Standard_True
+        :type xdrawtickmarks: bool
+        :param ydrawtickmarks: default value is Standard_True
+        :type ydrawtickmarks: bool
+        :param zdrawtickmarks: default value is Standard_True
+        :type zdrawtickmarks: bool
+        :param xtickmarklength: default value is 10
+        :type xtickmarklength: Standard_Integer
+        :param ytickmarklength: default value is 10
+        :type ytickmarklength: Standard_Integer
+        :param ztickmarklength: default value is 10
+        :type ztickmarklength: Standard_Integer
+        :param gridcolor: default value is Quantity_NOC_WHITE
+        :type gridcolor: Quantity_Color &
+        :param xnamecolor: default value is Quantity_NOC_RED
+        :type xnamecolor: Quantity_Color &
+        :param ynamecolor: default value is Quantity_NOC_GREEN
+        :type ynamecolor: Quantity_Color &
+        :param znamecolor: default value is Quantity_NOC_BLUE1
+        :type znamecolor: Quantity_Color &
+        :param xcolor: default value is Quantity_NOC_RED
+        :type xcolor: Quantity_Color &
+        :param ycolor: default value is Quantity_NOC_GREEN
+        :type ycolor: Quantity_Color &
+        :param zcolor: default value is Quantity_NOC_BLUE1
+        :type zcolor: Quantity_Color &
+        :param fontOfNames: default value is Arial
+        :type fontOfNames: TCollection_AsciiString &
+        :param styleOfNames: default value is Font_FA_Bold
+        :type styleOfNames: Font_FontAspect
+        :param sizeOfNames: default value is 12
+        :type sizeOfNames: Standard_Integer
+        :param fontOfValues: default value is Arial
+        :type fontOfValues: TCollection_AsciiString &
+        :param styleOfValues: default value is Font_FA_Regular
+        :type styleOfValues: Font_FontAspect
+        :param sizeOfValues: default value is 12
+        :type sizeOfValues: Standard_Integer
+        :rtype: None
+
+        * Displays a graduated trihedron.
+
+        :param xname: default value is X
+        :type xname: TCollection_ExtendedString &
+        :param yname: default value is Y
+        :type yname: TCollection_ExtendedString &
+        :param zname: default value is Z
+        :type zname: TCollection_ExtendedString &
+        :param xdrawname: default value is Standard_True
+        :type xdrawname: bool
+        :param ydrawname: default value is Standard_True
+        :type ydrawname: bool
+        :param zdrawname: default value is Standard_True
+        :type zdrawname: bool
+        :param xdrawvalues: default value is Standard_True
+        :type xdrawvalues: bool
+        :param ydrawvalues: default value is Standard_True
+        :type ydrawvalues: bool
+        :param zdrawvalues: default value is Standard_True
+        :type zdrawvalues: bool
+        :param drawgrid: default value is Standard_True
+        :type drawgrid: bool
+        :param drawaxes: default value is Standard_True
+        :type drawaxes: bool
+        :param nbx: default value is 3
+        :type nbx: Standard_Integer
+        :param nby: default value is 3
+        :type nby: Standard_Integer
+        :param nbz: default value is 3
+        :type nbz: Standard_Integer
+        :param xoffset: default value is 10
+        :type xoffset: Standard_Integer
+        :param yoffset: default value is 10
+        :type yoffset: Standard_Integer
+        :param zoffset: default value is 10
+        :type zoffset: Standard_Integer
+        :param xaxisoffset: default value is 30
+        :type xaxisoffset: Standard_Integer
+        :param yaxisoffset: default value is 30
+        :type yaxisoffset: Standard_Integer
+        :param zaxisoffset: default value is 30
+        :type zaxisoffset: Standard_Integer
+        :param xdrawtickmarks: default value is Standard_True
+        :type xdrawtickmarks: bool
+        :param ydrawtickmarks: default value is Standard_True
+        :type ydrawtickmarks: bool
+        :param zdrawtickmarks: default value is Standard_True
+        :type zdrawtickmarks: bool
+        :param xtickmarklength: default value is 10
+        :type xtickmarklength: Standard_Integer
+        :param ytickmarklength: default value is 10
+        :type ytickmarklength: Standard_Integer
+        :param ztickmarklength: default value is 10
+        :type ztickmarklength: Standard_Integer
+        :param gridcolor: default value is Quantity_NOC_WHITE
+        :type gridcolor: Quantity_Color &
+        :param xnamecolor: default value is Quantity_NOC_RED
+        :type xnamecolor: Quantity_Color &
+        :param ynamecolor: default value is Quantity_NOC_GREEN
+        :type ynamecolor: Quantity_Color &
+        :param znamecolor: default value is Quantity_NOC_BLUE1
+        :type znamecolor: Quantity_Color &
+        :param xcolor: default value is Quantity_NOC_RED
+        :type xcolor: Quantity_Color &
+        :param ycolor: default value is Quantity_NOC_GREEN
+        :type ycolor: Quantity_Color &
+        :param zcolor: default value is Quantity_NOC_BLUE1
+        :type zcolor: Quantity_Color &
+        :param fontOfNames: default value is Arial
+        :type fontOfNames: TCollection_AsciiString &
+        :param styleOfNames: default value is Font_FA_Bold
+        :type styleOfNames: Font_FontAspect
+        :param sizeOfNames: default value is 12
+        :type sizeOfNames: Standard_Integer
+        :param fontOfValues: default value is Arial
+        :type fontOfValues: TCollection_AsciiString &
+        :param styleOfValues: default value is Font_FA_Regular
+        :type styleOfValues: Font_FontAspect
+        :param sizeOfValues: default value is 12
+        :type sizeOfValues: Standard_Integer
+        :rtype: None
+
+        * Displays a graduated trihedron.
+
+        :param xname: default value is X
+        :type xname: TCollection_ExtendedString &
+        :param yname: default value is Y
+        :type yname: TCollection_ExtendedString &
+        :param zname: default value is Z
+        :type zname: TCollection_ExtendedString &
+        :param xdrawname: default value is Standard_True
+        :type xdrawname: bool
+        :param ydrawname: default value is Standard_True
+        :type ydrawname: bool
+        :param zdrawname: default value is Standard_True
+        :type zdrawname: bool
+        :param xdrawvalues: default value is Standard_True
+        :type xdrawvalues: bool
+        :param ydrawvalues: default value is Standard_True
+        :type ydrawvalues: bool
+        :param zdrawvalues: default value is Standard_True
+        :type zdrawvalues: bool
+        :param drawgrid: default value is Standard_True
+        :type drawgrid: bool
+        :param drawaxes: default value is Standard_True
+        :type drawaxes: bool
+        :param nbx: default value is 3
+        :type nbx: Standard_Integer
+        :param nby: default value is 3
+        :type nby: Standard_Integer
+        :param nbz: default value is 3
+        :type nbz: Standard_Integer
+        :param xoffset: default value is 10
+        :type xoffset: Standard_Integer
+        :param yoffset: default value is 10
+        :type yoffset: Standard_Integer
+        :param zoffset: default value is 10
+        :type zoffset: Standard_Integer
+        :param xaxisoffset: default value is 30
+        :type xaxisoffset: Standard_Integer
+        :param yaxisoffset: default value is 30
+        :type yaxisoffset: Standard_Integer
+        :param zaxisoffset: default value is 30
+        :type zaxisoffset: Standard_Integer
+        :param xdrawtickmarks: default value is Standard_True
+        :type xdrawtickmarks: bool
+        :param ydrawtickmarks: default value is Standard_True
+        :type ydrawtickmarks: bool
+        :param zdrawtickmarks: default value is Standard_True
+        :type zdrawtickmarks: bool
+        :param xtickmarklength: default value is 10
+        :type xtickmarklength: Standard_Integer
+        :param ytickmarklength: default value is 10
+        :type ytickmarklength: Standard_Integer
+        :param ztickmarklength: default value is 10
+        :type ztickmarklength: Standard_Integer
+        :param gridcolor: default value is Quantity_NOC_WHITE
+        :type gridcolor: Quantity_Color &
+        :param xnamecolor: default value is Quantity_NOC_RED
+        :type xnamecolor: Quantity_Color &
+        :param ynamecolor: default value is Quantity_NOC_GREEN
+        :type ynamecolor: Quantity_Color &
+        :param znamecolor: default value is Quantity_NOC_BLUE1
+        :type znamecolor: Quantity_Color &
+        :param xcolor: default value is Quantity_NOC_RED
+        :type xcolor: Quantity_Color &
+        :param ycolor: default value is Quantity_NOC_GREEN
+        :type ycolor: Quantity_Color &
+        :param zcolor: default value is Quantity_NOC_BLUE1
+        :type zcolor: Quantity_Color &
+        :param fontOfNames: default value is Arial
+        :type fontOfNames: TCollection_AsciiString &
+        :param styleOfNames: default value is Font_FA_Bold
+        :type styleOfNames: Font_FontAspect
+        :param sizeOfNames: default value is 12
+        :type sizeOfNames: Standard_Integer
+        :param fontOfValues: default value is Arial
+        :type fontOfValues: TCollection_AsciiString &
+        :param styleOfValues: default value is Font_FA_Regular
+        :type styleOfValues: Font_FontAspect
+        :param sizeOfValues: default value is 12
+        :type sizeOfValues: Standard_Integer
+        :rtype: None
+
+        * Displays a graduated trihedron.
+
+        :param xname: default value is X
+        :type xname: TCollection_ExtendedString &
+        :param yname: default value is Y
+        :type yname: TCollection_ExtendedString &
+        :param zname: default value is Z
+        :type zname: TCollection_ExtendedString &
+        :param xdrawname: default value is Standard_True
+        :type xdrawname: bool
+        :param ydrawname: default value is Standard_True
+        :type ydrawname: bool
+        :param zdrawname: default value is Standard_True
+        :type zdrawname: bool
+        :param xdrawvalues: default value is Standard_True
+        :type xdrawvalues: bool
+        :param ydrawvalues: default value is Standard_True
+        :type ydrawvalues: bool
+        :param zdrawvalues: default value is Standard_True
+        :type zdrawvalues: bool
+        :param drawgrid: default value is Standard_True
+        :type drawgrid: bool
+        :param drawaxes: default value is Standard_True
+        :type drawaxes: bool
+        :param nbx: default value is 3
+        :type nbx: Standard_Integer
+        :param nby: default value is 3
+        :type nby: Standard_Integer
+        :param nbz: default value is 3
+        :type nbz: Standard_Integer
+        :param xoffset: default value is 10
+        :type xoffset: Standard_Integer
+        :param yoffset: default value is 10
+        :type yoffset: Standard_Integer
+        :param zoffset: default value is 10
+        :type zoffset: Standard_Integer
+        :param xaxisoffset: default value is 30
+        :type xaxisoffset: Standard_Integer
+        :param yaxisoffset: default value is 30
+        :type yaxisoffset: Standard_Integer
+        :param zaxisoffset: default value is 30
+        :type zaxisoffset: Standard_Integer
+        :param xdrawtickmarks: default value is Standard_True
+        :type xdrawtickmarks: bool
+        :param ydrawtickmarks: default value is Standard_True
+        :type ydrawtickmarks: bool
+        :param zdrawtickmarks: default value is Standard_True
+        :type zdrawtickmarks: bool
+        :param xtickmarklength: default value is 10
+        :type xtickmarklength: Standard_Integer
+        :param ytickmarklength: default value is 10
+        :type ytickmarklength: Standard_Integer
+        :param ztickmarklength: default value is 10
+        :type ztickmarklength: Standard_Integer
+        :param gridcolor: default value is Quantity_NOC_WHITE
+        :type gridcolor: Quantity_Color &
+        :param xnamecolor: default value is Quantity_NOC_RED
+        :type xnamecolor: Quantity_Color &
+        :param ynamecolor: default value is Quantity_NOC_GREEN
+        :type ynamecolor: Quantity_Color &
+        :param znamecolor: default value is Quantity_NOC_BLUE1
+        :type znamecolor: Quantity_Color &
+        :param xcolor: default value is Quantity_NOC_RED
+        :type xcolor: Quantity_Color &
+        :param ycolor: default value is Quantity_NOC_GREEN
+        :type ycolor: Quantity_Color &
+        :param zcolor: default value is Quantity_NOC_BLUE1
+        :type zcolor: Quantity_Color &
+        :param fontOfNames: default value is Arial
+        :type fontOfNames: TCollection_AsciiString &
+        :param styleOfNames: default value is Font_FA_Bold
+        :type styleOfNames: Font_FontAspect
+        :param sizeOfNames: default value is 12
+        :type sizeOfNames: Standard_Integer
+        :param fontOfValues: default value is Arial
+        :type fontOfValues: TCollection_AsciiString &
+        :param styleOfValues: default value is Font_FA_Regular
+        :type styleOfValues: Font_FontAspect
+        :param sizeOfValues: default value is 12
+        :type sizeOfValues: Standard_Integer
+        :rtype: None
+
+        * Displays a graduated trihedron.
+
+        :param xname: default value is X
+        :type xname: TCollection_ExtendedString &
+        :param yname: default value is Y
+        :type yname: TCollection_ExtendedString &
+        :param zname: default value is Z
+        :type zname: TCollection_ExtendedString &
+        :param xdrawname: default value is Standard_True
+        :type xdrawname: bool
+        :param ydrawname: default value is Standard_True
+        :type ydrawname: bool
+        :param zdrawname: default value is Standard_True
+        :type zdrawname: bool
+        :param xdrawvalues: default value is Standard_True
+        :type xdrawvalues: bool
+        :param ydrawvalues: default value is Standard_True
+        :type ydrawvalues: bool
+        :param zdrawvalues: default value is Standard_True
+        :type zdrawvalues: bool
+        :param drawgrid: default value is Standard_True
+        :type drawgrid: bool
+        :param drawaxes: default value is Standard_True
+        :type drawaxes: bool
+        :param nbx: default value is 3
+        :type nbx: Standard_Integer
+        :param nby: default value is 3
+        :type nby: Standard_Integer
+        :param nbz: default value is 3
+        :type nbz: Standard_Integer
+        :param xoffset: default value is 10
+        :type xoffset: Standard_Integer
+        :param yoffset: default value is 10
+        :type yoffset: Standard_Integer
+        :param zoffset: default value is 10
+        :type zoffset: Standard_Integer
+        :param xaxisoffset: default value is 30
+        :type xaxisoffset: Standard_Integer
+        :param yaxisoffset: default value is 30
+        :type yaxisoffset: Standard_Integer
+        :param zaxisoffset: default value is 30
+        :type zaxisoffset: Standard_Integer
+        :param xdrawtickmarks: default value is Standard_True
+        :type xdrawtickmarks: bool
+        :param ydrawtickmarks: default value is Standard_True
+        :type ydrawtickmarks: bool
+        :param zdrawtickmarks: default value is Standard_True
+        :type zdrawtickmarks: bool
+        :param xtickmarklength: default value is 10
+        :type xtickmarklength: Standard_Integer
+        :param ytickmarklength: default value is 10
+        :type ytickmarklength: Standard_Integer
+        :param ztickmarklength: default value is 10
+        :type ztickmarklength: Standard_Integer
+        :param gridcolor: default value is Quantity_NOC_WHITE
+        :type gridcolor: Quantity_Color &
+        :param xnamecolor: default value is Quantity_NOC_RED
+        :type xnamecolor: Quantity_Color &
+        :param ynamecolor: default value is Quantity_NOC_GREEN
+        :type ynamecolor: Quantity_Color &
+        :param znamecolor: default value is Quantity_NOC_BLUE1
+        :type znamecolor: Quantity_Color &
+        :param xcolor: default value is Quantity_NOC_RED
+        :type xcolor: Quantity_Color &
+        :param ycolor: default value is Quantity_NOC_GREEN
+        :type ycolor: Quantity_Color &
+        :param zcolor: default value is Quantity_NOC_BLUE1
+        :type zcolor: Quantity_Color &
+        :param fontOfNames: default value is Arial
+        :type fontOfNames: TCollection_AsciiString &
+        :param styleOfNames: default value is Font_FA_Bold
+        :type styleOfNames: Font_FontAspect
+        :param sizeOfNames: default value is 12
+        :type sizeOfNames: Standard_Integer
+        :param fontOfValues: default value is Arial
+        :type fontOfValues: TCollection_AsciiString &
+        :param styleOfValues: default value is Font_FA_Regular
+        :type styleOfValues: Font_FontAspect
+        :param sizeOfValues: default value is 12
+        :type sizeOfValues: Standard_Integer
+        :rtype: None
+
+        * Displays a graduated trihedron.
+
+        :param xname: default value is X
+        :type xname: TCollection_ExtendedString &
+        :param yname: default value is Y
+        :type yname: TCollection_ExtendedString &
+        :param zname: default value is Z
+        :type zname: TCollection_ExtendedString &
+        :param xdrawname: default value is Standard_True
+        :type xdrawname: bool
+        :param ydrawname: default value is Standard_True
+        :type ydrawname: bool
+        :param zdrawname: default value is Standard_True
+        :type zdrawname: bool
+        :param xdrawvalues: default value is Standard_True
+        :type xdrawvalues: bool
+        :param ydrawvalues: default value is Standard_True
+        :type ydrawvalues: bool
+        :param zdrawvalues: default value is Standard_True
+        :type zdrawvalues: bool
+        :param drawgrid: default value is Standard_True
+        :type drawgrid: bool
+        :param drawaxes: default value is Standard_True
+        :type drawaxes: bool
+        :param nbx: default value is 3
+        :type nbx: Standard_Integer
+        :param nby: default value is 3
+        :type nby: Standard_Integer
+        :param nbz: default value is 3
+        :type nbz: Standard_Integer
+        :param xoffset: default value is 10
+        :type xoffset: Standard_Integer
+        :param yoffset: default value is 10
+        :type yoffset: Standard_Integer
+        :param zoffset: default value is 10
+        :type zoffset: Standard_Integer
+        :param xaxisoffset: default value is 30
+        :type xaxisoffset: Standard_Integer
+        :param yaxisoffset: default value is 30
+        :type yaxisoffset: Standard_Integer
+        :param zaxisoffset: default value is 30
+        :type zaxisoffset: Standard_Integer
+        :param xdrawtickmarks: default value is Standard_True
+        :type xdrawtickmarks: bool
+        :param ydrawtickmarks: default value is Standard_True
+        :type ydrawtickmarks: bool
+        :param zdrawtickmarks: default value is Standard_True
+        :type zdrawtickmarks: bool
+        :param xtickmarklength: default value is 10
+        :type xtickmarklength: Standard_Integer
+        :param ytickmarklength: default value is 10
+        :type ytickmarklength: Standard_Integer
+        :param ztickmarklength: default value is 10
+        :type ztickmarklength: Standard_Integer
+        :param gridcolor: default value is Quantity_NOC_WHITE
+        :type gridcolor: Quantity_Color &
+        :param xnamecolor: default value is Quantity_NOC_RED
+        :type xnamecolor: Quantity_Color &
+        :param ynamecolor: default value is Quantity_NOC_GREEN
+        :type ynamecolor: Quantity_Color &
+        :param znamecolor: default value is Quantity_NOC_BLUE1
+        :type znamecolor: Quantity_Color &
+        :param xcolor: default value is Quantity_NOC_RED
+        :type xcolor: Quantity_Color &
+        :param ycolor: default value is Quantity_NOC_GREEN
+        :type ycolor: Quantity_Color &
+        :param zcolor: default value is Quantity_NOC_BLUE1
+        :type zcolor: Quantity_Color &
+        :param fontOfNames: default value is Arial
+        :type fontOfNames: TCollection_AsciiString &
+        :param styleOfNames: default value is Font_FA_Bold
+        :type styleOfNames: Font_FontAspect
+        :param sizeOfNames: default value is 12
+        :type sizeOfNames: Standard_Integer
+        :param fontOfValues: default value is Arial
+        :type fontOfValues: TCollection_AsciiString &
+        :param styleOfValues: default value is Font_FA_Regular
+        :type styleOfValues: Font_FontAspect
+        :param sizeOfValues: default value is 12
+        :type sizeOfValues: Standard_Integer
+        :rtype: None
+
+        * Displays a graduated trihedron.
+
+        :param xname: default value is X
+        :type xname: TCollection_ExtendedString &
+        :param yname: default value is Y
+        :type yname: TCollection_ExtendedString &
+        :param zname: default value is Z
+        :type zname: TCollection_ExtendedString &
+        :param xdrawname: default value is Standard_True
+        :type xdrawname: bool
+        :param ydrawname: default value is Standard_True
+        :type ydrawname: bool
+        :param zdrawname: default value is Standard_True
+        :type zdrawname: bool
+        :param xdrawvalues: default value is Standard_True
+        :type xdrawvalues: bool
+        :param ydrawvalues: default value is Standard_True
+        :type ydrawvalues: bool
+        :param zdrawvalues: default value is Standard_True
+        :type zdrawvalues: bool
+        :param drawgrid: default value is Standard_True
+        :type drawgrid: bool
+        :param drawaxes: default value is Standard_True
+        :type drawaxes: bool
+        :param nbx: default value is 3
+        :type nbx: Standard_Integer
+        :param nby: default value is 3
+        :type nby: Standard_Integer
+        :param nbz: default value is 3
+        :type nbz: Standard_Integer
+        :param xoffset: default value is 10
+        :type xoffset: Standard_Integer
+        :param yoffset: default value is 10
+        :type yoffset: Standard_Integer
+        :param zoffset: default value is 10
+        :type zoffset: Standard_Integer
+        :param xaxisoffset: default value is 30
+        :type xaxisoffset: Standard_Integer
+        :param yaxisoffset: default value is 30
+        :type yaxisoffset: Standard_Integer
+        :param zaxisoffset: default value is 30
+        :type zaxisoffset: Standard_Integer
+        :param xdrawtickmarks: default value is Standard_True
+        :type xdrawtickmarks: bool
+        :param ydrawtickmarks: default value is Standard_True
+        :type ydrawtickmarks: bool
+        :param zdrawtickmarks: default value is Standard_True
+        :type zdrawtickmarks: bool
+        :param xtickmarklength: default value is 10
+        :type xtickmarklength: Standard_Integer
+        :param ytickmarklength: default value is 10
+        :type ytickmarklength: Standard_Integer
+        :param ztickmarklength: default value is 10
+        :type ztickmarklength: Standard_Integer
+        :param gridcolor: default value is Quantity_NOC_WHITE
+        :type gridcolor: Quantity_Color &
+        :param xnamecolor: default value is Quantity_NOC_RED
+        :type xnamecolor: Quantity_Color &
+        :param ynamecolor: default value is Quantity_NOC_GREEN
+        :type ynamecolor: Quantity_Color &
+        :param znamecolor: default value is Quantity_NOC_BLUE1
+        :type znamecolor: Quantity_Color &
+        :param xcolor: default value is Quantity_NOC_RED
+        :type xcolor: Quantity_Color &
+        :param ycolor: default value is Quantity_NOC_GREEN
+        :type ycolor: Quantity_Color &
+        :param zcolor: default value is Quantity_NOC_BLUE1
+        :type zcolor: Quantity_Color &
+        :param fontOfNames: default value is Arial
+        :type fontOfNames: TCollection_AsciiString &
+        :param styleOfNames: default value is Font_FA_Bold
+        :type styleOfNames: Font_FontAspect
+        :param sizeOfNames: default value is 12
+        :type sizeOfNames: Standard_Integer
+        :param fontOfValues: default value is Arial
+        :type fontOfValues: TCollection_AsciiString &
+        :param styleOfValues: default value is Font_FA_Regular
+        :type styleOfValues: Font_FontAspect
+        :param sizeOfValues: default value is 12
+        :type sizeOfValues: Standard_Integer
+        :rtype: None
+
+        * Displays a graduated trihedron.
+
+        :param xname: default value is X
+        :type xname: TCollection_ExtendedString &
+        :param yname: default value is Y
+        :type yname: TCollection_ExtendedString &
+        :param zname: default value is Z
+        :type zname: TCollection_ExtendedString &
+        :param xdrawname: default value is Standard_True
+        :type xdrawname: bool
+        :param ydrawname: default value is Standard_True
+        :type ydrawname: bool
+        :param zdrawname: default value is Standard_True
+        :type zdrawname: bool
+        :param xdrawvalues: default value is Standard_True
+        :type xdrawvalues: bool
+        :param ydrawvalues: default value is Standard_True
+        :type ydrawvalues: bool
+        :param zdrawvalues: default value is Standard_True
+        :type zdrawvalues: bool
+        :param drawgrid: default value is Standard_True
+        :type drawgrid: bool
+        :param drawaxes: default value is Standard_True
+        :type drawaxes: bool
+        :param nbx: default value is 3
+        :type nbx: Standard_Integer
+        :param nby: default value is 3
+        :type nby: Standard_Integer
+        :param nbz: default value is 3
+        :type nbz: Standard_Integer
+        :param xoffset: default value is 10
+        :type xoffset: Standard_Integer
+        :param yoffset: default value is 10
+        :type yoffset: Standard_Integer
+        :param zoffset: default value is 10
+        :type zoffset: Standard_Integer
+        :param xaxisoffset: default value is 30
+        :type xaxisoffset: Standard_Integer
+        :param yaxisoffset: default value is 30
+        :type yaxisoffset: Standard_Integer
+        :param zaxisoffset: default value is 30
+        :type zaxisoffset: Standard_Integer
+        :param xdrawtickmarks: default value is Standard_True
+        :type xdrawtickmarks: bool
+        :param ydrawtickmarks: default value is Standard_True
+        :type ydrawtickmarks: bool
+        :param zdrawtickmarks: default value is Standard_True
+        :type zdrawtickmarks: bool
+        :param xtickmarklength: default value is 10
+        :type xtickmarklength: Standard_Integer
+        :param ytickmarklength: default value is 10
+        :type ytickmarklength: Standard_Integer
+        :param ztickmarklength: default value is 10
+        :type ztickmarklength: Standard_Integer
+        :param gridcolor: default value is Quantity_NOC_WHITE
+        :type gridcolor: Quantity_Color &
+        :param xnamecolor: default value is Quantity_NOC_RED
+        :type xnamecolor: Quantity_Color &
+        :param ynamecolor: default value is Quantity_NOC_GREEN
+        :type ynamecolor: Quantity_Color &
+        :param znamecolor: default value is Quantity_NOC_BLUE1
+        :type znamecolor: Quantity_Color &
+        :param xcolor: default value is Quantity_NOC_RED
+        :type xcolor: Quantity_Color &
+        :param ycolor: default value is Quantity_NOC_GREEN
+        :type ycolor: Quantity_Color &
+        :param zcolor: default value is Quantity_NOC_BLUE1
+        :type zcolor: Quantity_Color &
+        :param fontOfNames: default value is Arial
+        :type fontOfNames: TCollection_AsciiString &
+        :param styleOfNames: default value is Font_FA_Bold
+        :type styleOfNames: Font_FontAspect
+        :param sizeOfNames: default value is 12
+        :type sizeOfNames: Standard_Integer
+        :param fontOfValues: default value is Arial
+        :type fontOfValues: TCollection_AsciiString &
+        :param styleOfValues: default value is Font_FA_Regular
+        :type styleOfValues: Font_FontAspect
+        :param sizeOfValues: default value is 12
+        :type sizeOfValues: Standard_Integer
+        :rtype: None
+
+        * Displays a graduated trihedron.
+
+        :param xname: default value is X
+        :type xname: TCollection_ExtendedString &
+        :param yname: default value is Y
+        :type yname: TCollection_ExtendedString &
+        :param zname: default value is Z
+        :type zname: TCollection_ExtendedString &
+        :param xdrawname: default value is Standard_True
+        :type xdrawname: bool
+        :param ydrawname: default value is Standard_True
+        :type ydrawname: bool
+        :param zdrawname: default value is Standard_True
+        :type zdrawname: bool
+        :param xdrawvalues: default value is Standard_True
+        :type xdrawvalues: bool
+        :param ydrawvalues: default value is Standard_True
+        :type ydrawvalues: bool
+        :param zdrawvalues: default value is Standard_True
+        :type zdrawvalues: bool
+        :param drawgrid: default value is Standard_True
+        :type drawgrid: bool
+        :param drawaxes: default value is Standard_True
+        :type drawaxes: bool
+        :param nbx: default value is 3
+        :type nbx: Standard_Integer
+        :param nby: default value is 3
+        :type nby: Standard_Integer
+        :param nbz: default value is 3
+        :type nbz: Standard_Integer
+        :param xoffset: default value is 10
+        :type xoffset: Standard_Integer
+        :param yoffset: default value is 10
+        :type yoffset: Standard_Integer
+        :param zoffset: default value is 10
+        :type zoffset: Standard_Integer
+        :param xaxisoffset: default value is 30
+        :type xaxisoffset: Standard_Integer
+        :param yaxisoffset: default value is 30
+        :type yaxisoffset: Standard_Integer
+        :param zaxisoffset: default value is 30
+        :type zaxisoffset: Standard_Integer
+        :param xdrawtickmarks: default value is Standard_True
+        :type xdrawtickmarks: bool
+        :param ydrawtickmarks: default value is Standard_True
+        :type ydrawtickmarks: bool
+        :param zdrawtickmarks: default value is Standard_True
+        :type zdrawtickmarks: bool
+        :param xtickmarklength: default value is 10
+        :type xtickmarklength: Standard_Integer
+        :param ytickmarklength: default value is 10
+        :type ytickmarklength: Standard_Integer
+        :param ztickmarklength: default value is 10
+        :type ztickmarklength: Standard_Integer
+        :param gridcolor: default value is Quantity_NOC_WHITE
+        :type gridcolor: Quantity_Color &
+        :param xnamecolor: default value is Quantity_NOC_RED
+        :type xnamecolor: Quantity_Color &
+        :param ynamecolor: default value is Quantity_NOC_GREEN
+        :type ynamecolor: Quantity_Color &
+        :param znamecolor: default value is Quantity_NOC_BLUE1
+        :type znamecolor: Quantity_Color &
+        :param xcolor: default value is Quantity_NOC_RED
+        :type xcolor: Quantity_Color &
+        :param ycolor: default value is Quantity_NOC_GREEN
+        :type ycolor: Quantity_Color &
+        :param zcolor: default value is Quantity_NOC_BLUE1
+        :type zcolor: Quantity_Color &
+        :param fontOfNames: default value is Arial
+        :type fontOfNames: TCollection_AsciiString &
+        :param styleOfNames: default value is Font_FA_Bold
+        :type styleOfNames: Font_FontAspect
+        :param sizeOfNames: default value is 12
+        :type sizeOfNames: Standard_Integer
+        :param fontOfValues: default value is Arial
+        :type fontOfValues: TCollection_AsciiString &
+        :param styleOfValues: default value is Font_FA_Regular
+        :type styleOfValues: Font_FontAspect
+        :param sizeOfValues: default value is 12
+        :type sizeOfValues: Standard_Integer
+        :rtype: None
+
+        * Displays a graduated trihedron.
+
+        :param xname: default value is X
+        :type xname: TCollection_ExtendedString &
+        :param yname: default value is Y
+        :type yname: TCollection_ExtendedString &
+        :param zname: default value is Z
+        :type zname: TCollection_ExtendedString &
+        :param xdrawname: default value is Standard_True
+        :type xdrawname: bool
+        :param ydrawname: default value is Standard_True
+        :type ydrawname: bool
+        :param zdrawname: default value is Standard_True
+        :type zdrawname: bool
+        :param xdrawvalues: default value is Standard_True
+        :type xdrawvalues: bool
+        :param ydrawvalues: default value is Standard_True
+        :type ydrawvalues: bool
+        :param zdrawvalues: default value is Standard_True
+        :type zdrawvalues: bool
+        :param drawgrid: default value is Standard_True
+        :type drawgrid: bool
+        :param drawaxes: default value is Standard_True
+        :type drawaxes: bool
+        :param nbx: default value is 3
+        :type nbx: Standard_Integer
+        :param nby: default value is 3
+        :type nby: Standard_Integer
+        :param nbz: default value is 3
+        :type nbz: Standard_Integer
+        :param xoffset: default value is 10
+        :type xoffset: Standard_Integer
+        :param yoffset: default value is 10
+        :type yoffset: Standard_Integer
+        :param zoffset: default value is 10
+        :type zoffset: Standard_Integer
+        :param xaxisoffset: default value is 30
+        :type xaxisoffset: Standard_Integer
+        :param yaxisoffset: default value is 30
+        :type yaxisoffset: Standard_Integer
+        :param zaxisoffset: default value is 30
+        :type zaxisoffset: Standard_Integer
+        :param xdrawtickmarks: default value is Standard_True
+        :type xdrawtickmarks: bool
+        :param ydrawtickmarks: default value is Standard_True
+        :type ydrawtickmarks: bool
+        :param zdrawtickmarks: default value is Standard_True
+        :type zdrawtickmarks: bool
+        :param xtickmarklength: default value is 10
+        :type xtickmarklength: Standard_Integer
+        :param ytickmarklength: default value is 10
+        :type ytickmarklength: Standard_Integer
+        :param ztickmarklength: default value is 10
+        :type ztickmarklength: Standard_Integer
+        :param gridcolor: default value is Quantity_NOC_WHITE
+        :type gridcolor: Quantity_Color &
+        :param xnamecolor: default value is Quantity_NOC_RED
+        :type xnamecolor: Quantity_Color &
+        :param ynamecolor: default value is Quantity_NOC_GREEN
+        :type ynamecolor: Quantity_Color &
+        :param znamecolor: default value is Quantity_NOC_BLUE1
+        :type znamecolor: Quantity_Color &
+        :param xcolor: default value is Quantity_NOC_RED
+        :type xcolor: Quantity_Color &
+        :param ycolor: default value is Quantity_NOC_GREEN
+        :type ycolor: Quantity_Color &
+        :param zcolor: default value is Quantity_NOC_BLUE1
+        :type zcolor: Quantity_Color &
+        :param fontOfNames: default value is Arial
+        :type fontOfNames: TCollection_AsciiString &
+        :param styleOfNames: default value is Font_FA_Bold
+        :type styleOfNames: Font_FontAspect
+        :param sizeOfNames: default value is 12
+        :type sizeOfNames: Standard_Integer
+        :param fontOfValues: default value is Arial
+        :type fontOfValues: TCollection_AsciiString &
+        :param styleOfValues: default value is Font_FA_Regular
+        :type styleOfValues: Font_FontAspect
+        :param sizeOfValues: default value is 12
+        :type sizeOfValues: Standard_Integer
+        :rtype: None
+
+        * Displays a graduated trihedron.
+
+        :param xname: default value is X
+        :type xname: TCollection_ExtendedString &
+        :param yname: default value is Y
+        :type yname: TCollection_ExtendedString &
+        :param zname: default value is Z
+        :type zname: TCollection_ExtendedString &
+        :param xdrawname: default value is Standard_True
+        :type xdrawname: bool
+        :param ydrawname: default value is Standard_True
+        :type ydrawname: bool
+        :param zdrawname: default value is Standard_True
+        :type zdrawname: bool
+        :param xdrawvalues: default value is Standard_True
+        :type xdrawvalues: bool
+        :param ydrawvalues: default value is Standard_True
+        :type ydrawvalues: bool
+        :param zdrawvalues: default value is Standard_True
+        :type zdrawvalues: bool
+        :param drawgrid: default value is Standard_True
+        :type drawgrid: bool
+        :param drawaxes: default value is Standard_True
+        :type drawaxes: bool
+        :param nbx: default value is 3
+        :type nbx: Standard_Integer
+        :param nby: default value is 3
+        :type nby: Standard_Integer
+        :param nbz: default value is 3
+        :type nbz: Standard_Integer
+        :param xoffset: default value is 10
+        :type xoffset: Standard_Integer
+        :param yoffset: default value is 10
+        :type yoffset: Standard_Integer
+        :param zoffset: default value is 10
+        :type zoffset: Standard_Integer
+        :param xaxisoffset: default value is 30
+        :type xaxisoffset: Standard_Integer
+        :param yaxisoffset: default value is 30
+        :type yaxisoffset: Standard_Integer
+        :param zaxisoffset: default value is 30
+        :type zaxisoffset: Standard_Integer
+        :param xdrawtickmarks: default value is Standard_True
+        :type xdrawtickmarks: bool
+        :param ydrawtickmarks: default value is Standard_True
+        :type ydrawtickmarks: bool
+        :param zdrawtickmarks: default value is Standard_True
+        :type zdrawtickmarks: bool
+        :param xtickmarklength: default value is 10
+        :type xtickmarklength: Standard_Integer
+        :param ytickmarklength: default value is 10
+        :type ytickmarklength: Standard_Integer
+        :param ztickmarklength: default value is 10
+        :type ztickmarklength: Standard_Integer
+        :param gridcolor: default value is Quantity_NOC_WHITE
+        :type gridcolor: Quantity_Color &
+        :param xnamecolor: default value is Quantity_NOC_RED
+        :type xnamecolor: Quantity_Color &
+        :param ynamecolor: default value is Quantity_NOC_GREEN
+        :type ynamecolor: Quantity_Color &
+        :param znamecolor: default value is Quantity_NOC_BLUE1
+        :type znamecolor: Quantity_Color &
+        :param xcolor: default value is Quantity_NOC_RED
+        :type xcolor: Quantity_Color &
+        :param ycolor: default value is Quantity_NOC_GREEN
+        :type ycolor: Quantity_Color &
+        :param zcolor: default value is Quantity_NOC_BLUE1
+        :type zcolor: Quantity_Color &
+        :param fontOfNames: default value is Arial
+        :type fontOfNames: TCollection_AsciiString &
+        :param styleOfNames: default value is Font_FA_Bold
+        :type styleOfNames: Font_FontAspect
+        :param sizeOfNames: default value is 12
+        :type sizeOfNames: Standard_Integer
+        :param fontOfValues: default value is Arial
+        :type fontOfValues: TCollection_AsciiString &
+        :param styleOfValues: default value is Font_FA_Regular
+        :type styleOfValues: Font_FontAspect
+        :param sizeOfValues: default value is 12
+        :type sizeOfValues: Standard_Integer
+        :rtype: None
+
+        * Displays a graduated trihedron.
+
+        :param xname: default value is X
+        :type xname: TCollection_ExtendedString &
+        :param yname: default value is Y
+        :type yname: TCollection_ExtendedString &
+        :param zname: default value is Z
+        :type zname: TCollection_ExtendedString &
+        :param xdrawname: default value is Standard_True
+        :type xdrawname: bool
+        :param ydrawname: default value is Standard_True
+        :type ydrawname: bool
+        :param zdrawname: default value is Standard_True
+        :type zdrawname: bool
+        :param xdrawvalues: default value is Standard_True
+        :type xdrawvalues: bool
+        :param ydrawvalues: default value is Standard_True
+        :type ydrawvalues: bool
+        :param zdrawvalues: default value is Standard_True
+        :type zdrawvalues: bool
+        :param drawgrid: default value is Standard_True
+        :type drawgrid: bool
+        :param drawaxes: default value is Standard_True
+        :type drawaxes: bool
+        :param nbx: default value is 3
+        :type nbx: Standard_Integer
+        :param nby: default value is 3
+        :type nby: Standard_Integer
+        :param nbz: default value is 3
+        :type nbz: Standard_Integer
+        :param xoffset: default value is 10
+        :type xoffset: Standard_Integer
+        :param yoffset: default value is 10
+        :type yoffset: Standard_Integer
+        :param zoffset: default value is 10
+        :type zoffset: Standard_Integer
+        :param xaxisoffset: default value is 30
+        :type xaxisoffset: Standard_Integer
+        :param yaxisoffset: default value is 30
+        :type yaxisoffset: Standard_Integer
+        :param zaxisoffset: default value is 30
+        :type zaxisoffset: Standard_Integer
+        :param xdrawtickmarks: default value is Standard_True
+        :type xdrawtickmarks: bool
+        :param ydrawtickmarks: default value is Standard_True
+        :type ydrawtickmarks: bool
+        :param zdrawtickmarks: default value is Standard_True
+        :type zdrawtickmarks: bool
+        :param xtickmarklength: default value is 10
+        :type xtickmarklength: Standard_Integer
+        :param ytickmarklength: default value is 10
+        :type ytickmarklength: Standard_Integer
+        :param ztickmarklength: default value is 10
+        :type ztickmarklength: Standard_Integer
+        :param gridcolor: default value is Quantity_NOC_WHITE
+        :type gridcolor: Quantity_Color &
+        :param xnamecolor: default value is Quantity_NOC_RED
+        :type xnamecolor: Quantity_Color &
+        :param ynamecolor: default value is Quantity_NOC_GREEN
+        :type ynamecolor: Quantity_Color &
+        :param znamecolor: default value is Quantity_NOC_BLUE1
+        :type znamecolor: Quantity_Color &
+        :param xcolor: default value is Quantity_NOC_RED
+        :type xcolor: Quantity_Color &
+        :param ycolor: default value is Quantity_NOC_GREEN
+        :type ycolor: Quantity_Color &
+        :param zcolor: default value is Quantity_NOC_BLUE1
+        :type zcolor: Quantity_Color &
+        :param fontOfNames: default value is Arial
+        :type fontOfNames: TCollection_AsciiString &
+        :param styleOfNames: default value is Font_FA_Bold
+        :type styleOfNames: Font_FontAspect
+        :param sizeOfNames: default value is 12
+        :type sizeOfNames: Standard_Integer
+        :param fontOfValues: default value is Arial
+        :type fontOfValues: TCollection_AsciiString &
+        :param styleOfValues: default value is Font_FA_Regular
+        :type styleOfValues: Font_FontAspect
+        :param sizeOfValues: default value is 12
+        :type sizeOfValues: Standard_Integer
+        :rtype: None
+
+        * Displays a graduated trihedron.
+
+        :param xname: default value is X
+        :type xname: TCollection_ExtendedString &
+        :param yname: default value is Y
+        :type yname: TCollection_ExtendedString &
+        :param zname: default value is Z
+        :type zname: TCollection_ExtendedString &
+        :param xdrawname: default value is Standard_True
+        :type xdrawname: bool
+        :param ydrawname: default value is Standard_True
+        :type ydrawname: bool
+        :param zdrawname: default value is Standard_True
+        :type zdrawname: bool
+        :param xdrawvalues: default value is Standard_True
+        :type xdrawvalues: bool
+        :param ydrawvalues: default value is Standard_True
+        :type ydrawvalues: bool
+        :param zdrawvalues: default value is Standard_True
+        :type zdrawvalues: bool
+        :param drawgrid: default value is Standard_True
+        :type drawgrid: bool
+        :param drawaxes: default value is Standard_True
+        :type drawaxes: bool
+        :param nbx: default value is 3
+        :type nbx: Standard_Integer
+        :param nby: default value is 3
+        :type nby: Standard_Integer
+        :param nbz: default value is 3
+        :type nbz: Standard_Integer
+        :param xoffset: default value is 10
+        :type xoffset: Standard_Integer
+        :param yoffset: default value is 10
+        :type yoffset: Standard_Integer
+        :param zoffset: default value is 10
+        :type zoffset: Standard_Integer
+        :param xaxisoffset: default value is 30
+        :type xaxisoffset: Standard_Integer
+        :param yaxisoffset: default value is 30
+        :type yaxisoffset: Standard_Integer
+        :param zaxisoffset: default value is 30
+        :type zaxisoffset: Standard_Integer
+        :param xdrawtickmarks: default value is Standard_True
+        :type xdrawtickmarks: bool
+        :param ydrawtickmarks: default value is Standard_True
+        :type ydrawtickmarks: bool
+        :param zdrawtickmarks: default value is Standard_True
+        :type zdrawtickmarks: bool
+        :param xtickmarklength: default value is 10
+        :type xtickmarklength: Standard_Integer
+        :param ytickmarklength: default value is 10
+        :type ytickmarklength: Standard_Integer
+        :param ztickmarklength: default value is 10
+        :type ztickmarklength: Standard_Integer
+        :param gridcolor: default value is Quantity_NOC_WHITE
+        :type gridcolor: Quantity_Color &
+        :param xnamecolor: default value is Quantity_NOC_RED
+        :type xnamecolor: Quantity_Color &
+        :param ynamecolor: default value is Quantity_NOC_GREEN
+        :type ynamecolor: Quantity_Color &
+        :param znamecolor: default value is Quantity_NOC_BLUE1
+        :type znamecolor: Quantity_Color &
+        :param xcolor: default value is Quantity_NOC_RED
+        :type xcolor: Quantity_Color &
+        :param ycolor: default value is Quantity_NOC_GREEN
+        :type ycolor: Quantity_Color &
+        :param zcolor: default value is Quantity_NOC_BLUE1
+        :type zcolor: Quantity_Color &
+        :param fontOfNames: default value is Arial
+        :type fontOfNames: TCollection_AsciiString &
+        :param styleOfNames: default value is Font_FA_Bold
+        :type styleOfNames: Font_FontAspect
+        :param sizeOfNames: default value is 12
+        :type sizeOfNames: Standard_Integer
+        :param fontOfValues: default value is Arial
+        :type fontOfValues: TCollection_AsciiString &
+        :param styleOfValues: default value is Font_FA_Regular
+        :type styleOfValues: Font_FontAspect
+        :param sizeOfValues: default value is 12
+        :type sizeOfValues: Standard_Integer
+        :rtype: None
+
+        * Displays a graduated trihedron.
+
+        :param xname: default value is X
+        :type xname: TCollection_ExtendedString &
+        :param yname: default value is Y
+        :type yname: TCollection_ExtendedString &
+        :param zname: default value is Z
+        :type zname: TCollection_ExtendedString &
+        :param xdrawname: default value is Standard_True
+        :type xdrawname: bool
+        :param ydrawname: default value is Standard_True
+        :type ydrawname: bool
+        :param zdrawname: default value is Standard_True
+        :type zdrawname: bool
+        :param xdrawvalues: default value is Standard_True
+        :type xdrawvalues: bool
+        :param ydrawvalues: default value is Standard_True
+        :type ydrawvalues: bool
+        :param zdrawvalues: default value is Standard_True
+        :type zdrawvalues: bool
+        :param drawgrid: default value is Standard_True
+        :type drawgrid: bool
+        :param drawaxes: default value is Standard_True
+        :type drawaxes: bool
+        :param nbx: default value is 3
+        :type nbx: Standard_Integer
+        :param nby: default value is 3
+        :type nby: Standard_Integer
+        :param nbz: default value is 3
+        :type nbz: Standard_Integer
+        :param xoffset: default value is 10
+        :type xoffset: Standard_Integer
+        :param yoffset: default value is 10
+        :type yoffset: Standard_Integer
+        :param zoffset: default value is 10
+        :type zoffset: Standard_Integer
+        :param xaxisoffset: default value is 30
+        :type xaxisoffset: Standard_Integer
+        :param yaxisoffset: default value is 30
+        :type yaxisoffset: Standard_Integer
+        :param zaxisoffset: default value is 30
+        :type zaxisoffset: Standard_Integer
+        :param xdrawtickmarks: default value is Standard_True
+        :type xdrawtickmarks: bool
+        :param ydrawtickmarks: default value is Standard_True
+        :type ydrawtickmarks: bool
+        :param zdrawtickmarks: default value is Standard_True
+        :type zdrawtickmarks: bool
+        :param xtickmarklength: default value is 10
+        :type xtickmarklength: Standard_Integer
+        :param ytickmarklength: default value is 10
+        :type ytickmarklength: Standard_Integer
+        :param ztickmarklength: default value is 10
+        :type ztickmarklength: Standard_Integer
+        :param gridcolor: default value is Quantity_NOC_WHITE
+        :type gridcolor: Quantity_Color &
+        :param xnamecolor: default value is Quantity_NOC_RED
+        :type xnamecolor: Quantity_Color &
+        :param ynamecolor: default value is Quantity_NOC_GREEN
+        :type ynamecolor: Quantity_Color &
+        :param znamecolor: default value is Quantity_NOC_BLUE1
+        :type znamecolor: Quantity_Color &
+        :param xcolor: default value is Quantity_NOC_RED
+        :type xcolor: Quantity_Color &
+        :param ycolor: default value is Quantity_NOC_GREEN
+        :type ycolor: Quantity_Color &
+        :param zcolor: default value is Quantity_NOC_BLUE1
+        :type zcolor: Quantity_Color &
+        :param fontOfNames: default value is Arial
+        :type fontOfNames: TCollection_AsciiString &
+        :param styleOfNames: default value is Font_FA_Bold
+        :type styleOfNames: Font_FontAspect
+        :param sizeOfNames: default value is 12
+        :type sizeOfNames: Standard_Integer
+        :param fontOfValues: default value is Arial
+        :type fontOfValues: TCollection_AsciiString &
+        :param styleOfValues: default value is Font_FA_Regular
+        :type styleOfValues: Font_FontAspect
+        :param sizeOfValues: default value is 12
+        :type sizeOfValues: Standard_Integer
+        :rtype: None
+
+        * Displays a graduated trihedron.
+
+        :param xname: default value is X
+        :type xname: TCollection_ExtendedString &
+        :param yname: default value is Y
+        :type yname: TCollection_ExtendedString &
+        :param zname: default value is Z
+        :type zname: TCollection_ExtendedString &
+        :param xdrawname: default value is Standard_True
+        :type xdrawname: bool
+        :param ydrawname: default value is Standard_True
+        :type ydrawname: bool
+        :param zdrawname: default value is Standard_True
+        :type zdrawname: bool
+        :param xdrawvalues: default value is Standard_True
+        :type xdrawvalues: bool
+        :param ydrawvalues: default value is Standard_True
+        :type ydrawvalues: bool
+        :param zdrawvalues: default value is Standard_True
+        :type zdrawvalues: bool
+        :param drawgrid: default value is Standard_True
+        :type drawgrid: bool
+        :param drawaxes: default value is Standard_True
+        :type drawaxes: bool
+        :param nbx: default value is 3
+        :type nbx: Standard_Integer
+        :param nby: default value is 3
+        :type nby: Standard_Integer
+        :param nbz: default value is 3
+        :type nbz: Standard_Integer
+        :param xoffset: default value is 10
+        :type xoffset: Standard_Integer
+        :param yoffset: default value is 10
+        :type yoffset: Standard_Integer
+        :param zoffset: default value is 10
+        :type zoffset: Standard_Integer
+        :param xaxisoffset: default value is 30
+        :type xaxisoffset: Standard_Integer
+        :param yaxisoffset: default value is 30
+        :type yaxisoffset: Standard_Integer
+        :param zaxisoffset: default value is 30
+        :type zaxisoffset: Standard_Integer
+        :param xdrawtickmarks: default value is Standard_True
+        :type xdrawtickmarks: bool
+        :param ydrawtickmarks: default value is Standard_True
+        :type ydrawtickmarks: bool
+        :param zdrawtickmarks: default value is Standard_True
+        :type zdrawtickmarks: bool
+        :param xtickmarklength: default value is 10
+        :type xtickmarklength: Standard_Integer
+        :param ytickmarklength: default value is 10
+        :type ytickmarklength: Standard_Integer
+        :param ztickmarklength: default value is 10
+        :type ztickmarklength: Standard_Integer
+        :param gridcolor: default value is Quantity_NOC_WHITE
+        :type gridcolor: Quantity_Color &
+        :param xnamecolor: default value is Quantity_NOC_RED
+        :type xnamecolor: Quantity_Color &
+        :param ynamecolor: default value is Quantity_NOC_GREEN
+        :type ynamecolor: Quantity_Color &
+        :param znamecolor: default value is Quantity_NOC_BLUE1
+        :type znamecolor: Quantity_Color &
+        :param xcolor: default value is Quantity_NOC_RED
+        :type xcolor: Quantity_Color &
+        :param ycolor: default value is Quantity_NOC_GREEN
+        :type ycolor: Quantity_Color &
+        :param zcolor: default value is Quantity_NOC_BLUE1
+        :type zcolor: Quantity_Color &
+        :param fontOfNames: default value is Arial
+        :type fontOfNames: TCollection_AsciiString &
+        :param styleOfNames: default value is Font_FA_Bold
+        :type styleOfNames: Font_FontAspect
+        :param sizeOfNames: default value is 12
+        :type sizeOfNames: Standard_Integer
+        :param fontOfValues: default value is Arial
+        :type fontOfValues: TCollection_AsciiString &
+        :param styleOfValues: default value is Font_FA_Regular
+        :type styleOfValues: Font_FontAspect
+        :param sizeOfValues: default value is 12
+        :type sizeOfValues: Standard_Integer
+        :rtype: None
+
+        * Displays a graduated trihedron.
+
+        :param xname: default value is X
+        :type xname: TCollection_ExtendedString &
+        :param yname: default value is Y
+        :type yname: TCollection_ExtendedString &
+        :param zname: default value is Z
+        :type zname: TCollection_ExtendedString &
+        :param xdrawname: default value is Standard_True
+        :type xdrawname: bool
+        :param ydrawname: default value is Standard_True
+        :type ydrawname: bool
+        :param zdrawname: default value is Standard_True
+        :type zdrawname: bool
+        :param xdrawvalues: default value is Standard_True
+        :type xdrawvalues: bool
+        :param ydrawvalues: default value is Standard_True
+        :type ydrawvalues: bool
+        :param zdrawvalues: default value is Standard_True
+        :type zdrawvalues: bool
+        :param drawgrid: default value is Standard_True
+        :type drawgrid: bool
+        :param drawaxes: default value is Standard_True
+        :type drawaxes: bool
+        :param nbx: default value is 3
+        :type nbx: Standard_Integer
+        :param nby: default value is 3
+        :type nby: Standard_Integer
+        :param nbz: default value is 3
+        :type nbz: Standard_Integer
+        :param xoffset: default value is 10
+        :type xoffset: Standard_Integer
+        :param yoffset: default value is 10
+        :type yoffset: Standard_Integer
+        :param zoffset: default value is 10
+        :type zoffset: Standard_Integer
+        :param xaxisoffset: default value is 30
+        :type xaxisoffset: Standard_Integer
+        :param yaxisoffset: default value is 30
+        :type yaxisoffset: Standard_Integer
+        :param zaxisoffset: default value is 30
+        :type zaxisoffset: Standard_Integer
+        :param xdrawtickmarks: default value is Standard_True
+        :type xdrawtickmarks: bool
+        :param ydrawtickmarks: default value is Standard_True
+        :type ydrawtickmarks: bool
+        :param zdrawtickmarks: default value is Standard_True
+        :type zdrawtickmarks: bool
+        :param xtickmarklength: default value is 10
+        :type xtickmarklength: Standard_Integer
+        :param ytickmarklength: default value is 10
+        :type ytickmarklength: Standard_Integer
+        :param ztickmarklength: default value is 10
+        :type ztickmarklength: Standard_Integer
+        :param gridcolor: default value is Quantity_NOC_WHITE
+        :type gridcolor: Quantity_Color &
+        :param xnamecolor: default value is Quantity_NOC_RED
+        :type xnamecolor: Quantity_Color &
+        :param ynamecolor: default value is Quantity_NOC_GREEN
+        :type ynamecolor: Quantity_Color &
+        :param znamecolor: default value is Quantity_NOC_BLUE1
+        :type znamecolor: Quantity_Color &
+        :param xcolor: default value is Quantity_NOC_RED
+        :type xcolor: Quantity_Color &
+        :param ycolor: default value is Quantity_NOC_GREEN
+        :type ycolor: Quantity_Color &
+        :param zcolor: default value is Quantity_NOC_BLUE1
+        :type zcolor: Quantity_Color &
+        :param fontOfNames: default value is Arial
+        :type fontOfNames: TCollection_AsciiString &
+        :param styleOfNames: default value is Font_FA_Bold
+        :type styleOfNames: Font_FontAspect
+        :param sizeOfNames: default value is 12
+        :type sizeOfNames: Standard_Integer
+        :param fontOfValues: default value is Arial
+        :type fontOfValues: TCollection_AsciiString &
+        :param styleOfValues: default value is Font_FA_Regular
+        :type styleOfValues: Font_FontAspect
+        :param sizeOfValues: default value is 12
+        :type sizeOfValues: Standard_Integer
+        :rtype: None
+
+        * Displays a graduated trihedron.
+
+        :param xname: default value is X
+        :type xname: TCollection_ExtendedString &
+        :param yname: default value is Y
+        :type yname: TCollection_ExtendedString &
+        :param zname: default value is Z
+        :type zname: TCollection_ExtendedString &
+        :param xdrawname: default value is Standard_True
+        :type xdrawname: bool
+        :param ydrawname: default value is Standard_True
+        :type ydrawname: bool
+        :param zdrawname: default value is Standard_True
+        :type zdrawname: bool
+        :param xdrawvalues: default value is Standard_True
+        :type xdrawvalues: bool
+        :param ydrawvalues: default value is Standard_True
+        :type ydrawvalues: bool
+        :param zdrawvalues: default value is Standard_True
+        :type zdrawvalues: bool
+        :param drawgrid: default value is Standard_True
+        :type drawgrid: bool
+        :param drawaxes: default value is Standard_True
+        :type drawaxes: bool
+        :param nbx: default value is 3
+        :type nbx: Standard_Integer
+        :param nby: default value is 3
+        :type nby: Standard_Integer
+        :param nbz: default value is 3
+        :type nbz: Standard_Integer
+        :param xoffset: default value is 10
+        :type xoffset: Standard_Integer
+        :param yoffset: default value is 10
+        :type yoffset: Standard_Integer
+        :param zoffset: default value is 10
+        :type zoffset: Standard_Integer
+        :param xaxisoffset: default value is 30
+        :type xaxisoffset: Standard_Integer
+        :param yaxisoffset: default value is 30
+        :type yaxisoffset: Standard_Integer
+        :param zaxisoffset: default value is 30
+        :type zaxisoffset: Standard_Integer
+        :param xdrawtickmarks: default value is Standard_True
+        :type xdrawtickmarks: bool
+        :param ydrawtickmarks: default value is Standard_True
+        :type ydrawtickmarks: bool
+        :param zdrawtickmarks: default value is Standard_True
+        :type zdrawtickmarks: bool
+        :param xtickmarklength: default value is 10
+        :type xtickmarklength: Standard_Integer
+        :param ytickmarklength: default value is 10
+        :type ytickmarklength: Standard_Integer
+        :param ztickmarklength: default value is 10
+        :type ztickmarklength: Standard_Integer
+        :param gridcolor: default value is Quantity_NOC_WHITE
+        :type gridcolor: Quantity_Color &
+        :param xnamecolor: default value is Quantity_NOC_RED
+        :type xnamecolor: Quantity_Color &
+        :param ynamecolor: default value is Quantity_NOC_GREEN
+        :type ynamecolor: Quantity_Color &
+        :param znamecolor: default value is Quantity_NOC_BLUE1
+        :type znamecolor: Quantity_Color &
+        :param xcolor: default value is Quantity_NOC_RED
+        :type xcolor: Quantity_Color &
+        :param ycolor: default value is Quantity_NOC_GREEN
+        :type ycolor: Quantity_Color &
+        :param zcolor: default value is Quantity_NOC_BLUE1
+        :type zcolor: Quantity_Color &
+        :param fontOfNames: default value is Arial
+        :type fontOfNames: TCollection_AsciiString &
+        :param styleOfNames: default value is Font_FA_Bold
+        :type styleOfNames: Font_FontAspect
+        :param sizeOfNames: default value is 12
+        :type sizeOfNames: Standard_Integer
+        :param fontOfValues: default value is Arial
+        :type fontOfValues: TCollection_AsciiString &
+        :param styleOfValues: default value is Font_FA_Regular
+        :type styleOfValues: Font_FontAspect
+        :param sizeOfValues: default value is 12
+        :type sizeOfValues: Standard_Integer
+        :rtype: None
+
+        * Displays a graduated trihedron.
+
+        :param xname: default value is X
+        :type xname: TCollection_ExtendedString &
+        :param yname: default value is Y
+        :type yname: TCollection_ExtendedString &
+        :param zname: default value is Z
+        :type zname: TCollection_ExtendedString &
+        :param xdrawname: default value is Standard_True
+        :type xdrawname: bool
+        :param ydrawname: default value is Standard_True
+        :type ydrawname: bool
+        :param zdrawname: default value is Standard_True
+        :type zdrawname: bool
+        :param xdrawvalues: default value is Standard_True
+        :type xdrawvalues: bool
+        :param ydrawvalues: default value is Standard_True
+        :type ydrawvalues: bool
+        :param zdrawvalues: default value is Standard_True
+        :type zdrawvalues: bool
+        :param drawgrid: default value is Standard_True
+        :type drawgrid: bool
+        :param drawaxes: default value is Standard_True
+        :type drawaxes: bool
+        :param nbx: default value is 3
+        :type nbx: Standard_Integer
+        :param nby: default value is 3
+        :type nby: Standard_Integer
+        :param nbz: default value is 3
+        :type nbz: Standard_Integer
+        :param xoffset: default value is 10
+        :type xoffset: Standard_Integer
+        :param yoffset: default value is 10
+        :type yoffset: Standard_Integer
+        :param zoffset: default value is 10
+        :type zoffset: Standard_Integer
+        :param xaxisoffset: default value is 30
+        :type xaxisoffset: Standard_Integer
+        :param yaxisoffset: default value is 30
+        :type yaxisoffset: Standard_Integer
+        :param zaxisoffset: default value is 30
+        :type zaxisoffset: Standard_Integer
+        :param xdrawtickmarks: default value is Standard_True
+        :type xdrawtickmarks: bool
+        :param ydrawtickmarks: default value is Standard_True
+        :type ydrawtickmarks: bool
+        :param zdrawtickmarks: default value is Standard_True
+        :type zdrawtickmarks: bool
+        :param xtickmarklength: default value is 10
+        :type xtickmarklength: Standard_Integer
+        :param ytickmarklength: default value is 10
+        :type ytickmarklength: Standard_Integer
+        :param ztickmarklength: default value is 10
+        :type ztickmarklength: Standard_Integer
+        :param gridcolor: default value is Quantity_NOC_WHITE
+        :type gridcolor: Quantity_Color &
+        :param xnamecolor: default value is Quantity_NOC_RED
+        :type xnamecolor: Quantity_Color &
+        :param ynamecolor: default value is Quantity_NOC_GREEN
+        :type ynamecolor: Quantity_Color &
+        :param znamecolor: default value is Quantity_NOC_BLUE1
+        :type znamecolor: Quantity_Color &
+        :param xcolor: default value is Quantity_NOC_RED
+        :type xcolor: Quantity_Color &
+        :param ycolor: default value is Quantity_NOC_GREEN
+        :type ycolor: Quantity_Color &
+        :param zcolor: default value is Quantity_NOC_BLUE1
+        :type zcolor: Quantity_Color &
+        :param fontOfNames: default value is Arial
+        :type fontOfNames: TCollection_AsciiString &
+        :param styleOfNames: default value is Font_FA_Bold
+        :type styleOfNames: Font_FontAspect
+        :param sizeOfNames: default value is 12
+        :type sizeOfNames: Standard_Integer
+        :param fontOfValues: default value is Arial
+        :type fontOfValues: TCollection_AsciiString &
+        :param styleOfValues: default value is Font_FA_Regular
+        :type styleOfValues: Font_FontAspect
+        :param sizeOfValues: default value is 12
+        :type sizeOfValues: Standard_Integer
+        :rtype: None
+
+        * Displays a graduated trihedron.
+
+        :param xname: default value is X
+        :type xname: TCollection_ExtendedString &
+        :param yname: default value is Y
+        :type yname: TCollection_ExtendedString &
+        :param zname: default value is Z
+        :type zname: TCollection_ExtendedString &
+        :param xdrawname: default value is Standard_True
+        :type xdrawname: bool
+        :param ydrawname: default value is Standard_True
+        :type ydrawname: bool
+        :param zdrawname: default value is Standard_True
+        :type zdrawname: bool
+        :param xdrawvalues: default value is Standard_True
+        :type xdrawvalues: bool
+        :param ydrawvalues: default value is Standard_True
+        :type ydrawvalues: bool
+        :param zdrawvalues: default value is Standard_True
+        :type zdrawvalues: bool
+        :param drawgrid: default value is Standard_True
+        :type drawgrid: bool
+        :param drawaxes: default value is Standard_True
+        :type drawaxes: bool
+        :param nbx: default value is 3
+        :type nbx: Standard_Integer
+        :param nby: default value is 3
+        :type nby: Standard_Integer
+        :param nbz: default value is 3
+        :type nbz: Standard_Integer
+        :param xoffset: default value is 10
+        :type xoffset: Standard_Integer
+        :param yoffset: default value is 10
+        :type yoffset: Standard_Integer
+        :param zoffset: default value is 10
+        :type zoffset: Standard_Integer
+        :param xaxisoffset: default value is 30
+        :type xaxisoffset: Standard_Integer
+        :param yaxisoffset: default value is 30
+        :type yaxisoffset: Standard_Integer
+        :param zaxisoffset: default value is 30
+        :type zaxisoffset: Standard_Integer
+        :param xdrawtickmarks: default value is Standard_True
+        :type xdrawtickmarks: bool
+        :param ydrawtickmarks: default value is Standard_True
+        :type ydrawtickmarks: bool
+        :param zdrawtickmarks: default value is Standard_True
+        :type zdrawtickmarks: bool
+        :param xtickmarklength: default value is 10
+        :type xtickmarklength: Standard_Integer
+        :param ytickmarklength: default value is 10
+        :type ytickmarklength: Standard_Integer
+        :param ztickmarklength: default value is 10
+        :type ztickmarklength: Standard_Integer
+        :param gridcolor: default value is Quantity_NOC_WHITE
+        :type gridcolor: Quantity_Color &
+        :param xnamecolor: default value is Quantity_NOC_RED
+        :type xnamecolor: Quantity_Color &
+        :param ynamecolor: default value is Quantity_NOC_GREEN
+        :type ynamecolor: Quantity_Color &
+        :param znamecolor: default value is Quantity_NOC_BLUE1
+        :type znamecolor: Quantity_Color &
+        :param xcolor: default value is Quantity_NOC_RED
+        :type xcolor: Quantity_Color &
+        :param ycolor: default value is Quantity_NOC_GREEN
+        :type ycolor: Quantity_Color &
+        :param zcolor: default value is Quantity_NOC_BLUE1
+        :type zcolor: Quantity_Color &
+        :param fontOfNames: default value is Arial
+        :type fontOfNames: TCollection_AsciiString &
+        :param styleOfNames: default value is Font_FA_Bold
+        :type styleOfNames: Font_FontAspect
+        :param sizeOfNames: default value is 12
+        :type sizeOfNames: Standard_Integer
+        :param fontOfValues: default value is Arial
+        :type fontOfValues: TCollection_AsciiString &
+        :param styleOfValues: default value is Font_FA_Regular
+        :type styleOfValues: Font_FontAspect
+        :param sizeOfValues: default value is 12
+        :type sizeOfValues: Standard_Integer
+        :rtype: None
+
+        * Displays a graduated trihedron.
+
+        :param xname: default value is X
+        :type xname: TCollection_ExtendedString &
+        :param yname: default value is Y
+        :type yname: TCollection_ExtendedString &
+        :param zname: default value is Z
+        :type zname: TCollection_ExtendedString &
+        :param xdrawname: default value is Standard_True
+        :type xdrawname: bool
+        :param ydrawname: default value is Standard_True
+        :type ydrawname: bool
+        :param zdrawname: default value is Standard_True
+        :type zdrawname: bool
+        :param xdrawvalues: default value is Standard_True
+        :type xdrawvalues: bool
+        :param ydrawvalues: default value is Standard_True
+        :type ydrawvalues: bool
+        :param zdrawvalues: default value is Standard_True
+        :type zdrawvalues: bool
+        :param drawgrid: default value is Standard_True
+        :type drawgrid: bool
+        :param drawaxes: default value is Standard_True
+        :type drawaxes: bool
+        :param nbx: default value is 3
+        :type nbx: Standard_Integer
+        :param nby: default value is 3
+        :type nby: Standard_Integer
+        :param nbz: default value is 3
+        :type nbz: Standard_Integer
+        :param xoffset: default value is 10
+        :type xoffset: Standard_Integer
+        :param yoffset: default value is 10
+        :type yoffset: Standard_Integer
+        :param zoffset: default value is 10
+        :type zoffset: Standard_Integer
+        :param xaxisoffset: default value is 30
+        :type xaxisoffset: Standard_Integer
+        :param yaxisoffset: default value is 30
+        :type yaxisoffset: Standard_Integer
+        :param zaxisoffset: default value is 30
+        :type zaxisoffset: Standard_Integer
+        :param xdrawtickmarks: default value is Standard_True
+        :type xdrawtickmarks: bool
+        :param ydrawtickmarks: default value is Standard_True
+        :type ydrawtickmarks: bool
+        :param zdrawtickmarks: default value is Standard_True
+        :type zdrawtickmarks: bool
+        :param xtickmarklength: default value is 10
+        :type xtickmarklength: Standard_Integer
+        :param ytickmarklength: default value is 10
+        :type ytickmarklength: Standard_Integer
+        :param ztickmarklength: default value is 10
+        :type ztickmarklength: Standard_Integer
+        :param gridcolor: default value is Quantity_NOC_WHITE
+        :type gridcolor: Quantity_Color &
+        :param xnamecolor: default value is Quantity_NOC_RED
+        :type xnamecolor: Quantity_Color &
+        :param ynamecolor: default value is Quantity_NOC_GREEN
+        :type ynamecolor: Quantity_Color &
+        :param znamecolor: default value is Quantity_NOC_BLUE1
+        :type znamecolor: Quantity_Color &
+        :param xcolor: default value is Quantity_NOC_RED
+        :type xcolor: Quantity_Color &
+        :param ycolor: default value is Quantity_NOC_GREEN
+        :type ycolor: Quantity_Color &
+        :param zcolor: default value is Quantity_NOC_BLUE1
+        :type zcolor: Quantity_Color &
+        :param fontOfNames: default value is Arial
+        :type fontOfNames: TCollection_AsciiString &
+        :param styleOfNames: default value is Font_FA_Bold
+        :type styleOfNames: Font_FontAspect
+        :param sizeOfNames: default value is 12
+        :type sizeOfNames: Standard_Integer
+        :param fontOfValues: default value is Arial
+        :type fontOfValues: TCollection_AsciiString &
+        :param styleOfValues: default value is Font_FA_Regular
+        :type styleOfValues: Font_FontAspect
+        :param sizeOfValues: default value is 12
+        :type sizeOfValues: Standard_Integer
+        :rtype: None
+
+        * Displays a graduated trihedron.
+
+        :param xname: default value is X
+        :type xname: TCollection_ExtendedString &
+        :param yname: default value is Y
+        :type yname: TCollection_ExtendedString &
+        :param zname: default value is Z
+        :type zname: TCollection_ExtendedString &
+        :param xdrawname: default value is Standard_True
+        :type xdrawname: bool
+        :param ydrawname: default value is Standard_True
+        :type ydrawname: bool
+        :param zdrawname: default value is Standard_True
+        :type zdrawname: bool
+        :param xdrawvalues: default value is Standard_True
+        :type xdrawvalues: bool
+        :param ydrawvalues: default value is Standard_True
+        :type ydrawvalues: bool
+        :param zdrawvalues: default value is Standard_True
+        :type zdrawvalues: bool
+        :param drawgrid: default value is Standard_True
+        :type drawgrid: bool
+        :param drawaxes: default value is Standard_True
+        :type drawaxes: bool
+        :param nbx: default value is 3
+        :type nbx: Standard_Integer
+        :param nby: default value is 3
+        :type nby: Standard_Integer
+        :param nbz: default value is 3
+        :type nbz: Standard_Integer
+        :param xoffset: default value is 10
+        :type xoffset: Standard_Integer
+        :param yoffset: default value is 10
+        :type yoffset: Standard_Integer
+        :param zoffset: default value is 10
+        :type zoffset: Standard_Integer
+        :param xaxisoffset: default value is 30
+        :type xaxisoffset: Standard_Integer
+        :param yaxisoffset: default value is 30
+        :type yaxisoffset: Standard_Integer
+        :param zaxisoffset: default value is 30
+        :type zaxisoffset: Standard_Integer
+        :param xdrawtickmarks: default value is Standard_True
+        :type xdrawtickmarks: bool
+        :param ydrawtickmarks: default value is Standard_True
+        :type ydrawtickmarks: bool
+        :param zdrawtickmarks: default value is Standard_True
+        :type zdrawtickmarks: bool
+        :param xtickmarklength: default value is 10
+        :type xtickmarklength: Standard_Integer
+        :param ytickmarklength: default value is 10
+        :type ytickmarklength: Standard_Integer
+        :param ztickmarklength: default value is 10
+        :type ztickmarklength: Standard_Integer
+        :param gridcolor: default value is Quantity_NOC_WHITE
+        :type gridcolor: Quantity_Color &
+        :param xnamecolor: default value is Quantity_NOC_RED
+        :type xnamecolor: Quantity_Color &
+        :param ynamecolor: default value is Quantity_NOC_GREEN
+        :type ynamecolor: Quantity_Color &
+        :param znamecolor: default value is Quantity_NOC_BLUE1
+        :type znamecolor: Quantity_Color &
+        :param xcolor: default value is Quantity_NOC_RED
+        :type xcolor: Quantity_Color &
+        :param ycolor: default value is Quantity_NOC_GREEN
+        :type ycolor: Quantity_Color &
+        :param zcolor: default value is Quantity_NOC_BLUE1
+        :type zcolor: Quantity_Color &
+        :param fontOfNames: default value is Arial
+        :type fontOfNames: TCollection_AsciiString &
+        :param styleOfNames: default value is Font_FA_Bold
+        :type styleOfNames: Font_FontAspect
+        :param sizeOfNames: default value is 12
+        :type sizeOfNames: Standard_Integer
+        :param fontOfValues: default value is Arial
+        :type fontOfValues: TCollection_AsciiString &
+        :param styleOfValues: default value is Font_FA_Regular
+        :type styleOfValues: Font_FontAspect
+        :param sizeOfValues: default value is 12
+        :type sizeOfValues: Standard_Integer
+        :rtype: None
+
+        * Displays a graduated trihedron.
+
+        :param xname: default value is X
+        :type xname: TCollection_ExtendedString &
+        :param yname: default value is Y
+        :type yname: TCollection_ExtendedString &
+        :param zname: default value is Z
+        :type zname: TCollection_ExtendedString &
+        :param xdrawname: default value is Standard_True
+        :type xdrawname: bool
+        :param ydrawname: default value is Standard_True
+        :type ydrawname: bool
+        :param zdrawname: default value is Standard_True
+        :type zdrawname: bool
+        :param xdrawvalues: default value is Standard_True
+        :type xdrawvalues: bool
+        :param ydrawvalues: default value is Standard_True
+        :type ydrawvalues: bool
+        :param zdrawvalues: default value is Standard_True
+        :type zdrawvalues: bool
+        :param drawgrid: default value is Standard_True
+        :type drawgrid: bool
+        :param drawaxes: default value is Standard_True
+        :type drawaxes: bool
+        :param nbx: default value is 3
+        :type nbx: Standard_Integer
+        :param nby: default value is 3
+        :type nby: Standard_Integer
+        :param nbz: default value is 3
+        :type nbz: Standard_Integer
+        :param xoffset: default value is 10
+        :type xoffset: Standard_Integer
+        :param yoffset: default value is 10
+        :type yoffset: Standard_Integer
+        :param zoffset: default value is 10
+        :type zoffset: Standard_Integer
+        :param xaxisoffset: default value is 30
+        :type xaxisoffset: Standard_Integer
+        :param yaxisoffset: default value is 30
+        :type yaxisoffset: Standard_Integer
+        :param zaxisoffset: default value is 30
+        :type zaxisoffset: Standard_Integer
+        :param xdrawtickmarks: default value is Standard_True
+        :type xdrawtickmarks: bool
+        :param ydrawtickmarks: default value is Standard_True
+        :type ydrawtickmarks: bool
+        :param zdrawtickmarks: default value is Standard_True
+        :type zdrawtickmarks: bool
+        :param xtickmarklength: default value is 10
+        :type xtickmarklength: Standard_Integer
+        :param ytickmarklength: default value is 10
+        :type ytickmarklength: Standard_Integer
+        :param ztickmarklength: default value is 10
+        :type ztickmarklength: Standard_Integer
+        :param gridcolor: default value is Quantity_NOC_WHITE
+        :type gridcolor: Quantity_Color &
+        :param xnamecolor: default value is Quantity_NOC_RED
+        :type xnamecolor: Quantity_Color &
+        :param ynamecolor: default value is Quantity_NOC_GREEN
+        :type ynamecolor: Quantity_Color &
+        :param znamecolor: default value is Quantity_NOC_BLUE1
+        :type znamecolor: Quantity_Color &
+        :param xcolor: default value is Quantity_NOC_RED
+        :type xcolor: Quantity_Color &
+        :param ycolor: default value is Quantity_NOC_GREEN
+        :type ycolor: Quantity_Color &
+        :param zcolor: default value is Quantity_NOC_BLUE1
+        :type zcolor: Quantity_Color &
+        :param fontOfNames: default value is Arial
+        :type fontOfNames: TCollection_AsciiString &
+        :param styleOfNames: default value is Font_FA_Bold
+        :type styleOfNames: Font_FontAspect
+        :param sizeOfNames: default value is 12
+        :type sizeOfNames: Standard_Integer
+        :param fontOfValues: default value is Arial
+        :type fontOfValues: TCollection_AsciiString &
+        :param styleOfValues: default value is Font_FA_Regular
+        :type styleOfValues: Font_FontAspect
+        :param sizeOfValues: default value is 12
+        :type sizeOfValues: Standard_Integer
         :rtype: None
 
         """
         return _V3d.V3d_View_GraduatedTrihedronDisplay(self, *args)
 
-    def GraduatedTrihedronErase(self, *args) -> "void" :
+    def GraduatedTrihedronErase(self):
         """
         * Erases a graduated trihedron from the view.
 
         :rtype: None
 
         """
-        return _V3d.V3d_View_GraduatedTrihedronErase(self, *args)
+        return _V3d.V3d_View_GraduatedTrihedronErase(self)
 
-    def SetLayerMgr(self, *args) -> "void" :
+    def SetLayerMgr(self, *args):
         """
         :param aMgr:
         :type aMgr: Handle_V3d_LayerMgr &
@@ -1829,44 +5358,44 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_SetLayerMgr(self, *args)
 
-    def ColorScaleDisplay(self, *args) -> "void" :
+    def ColorScaleDisplay(self):
         """
         :rtype: None
 
         """
-        return _V3d.V3d_View_ColorScaleDisplay(self, *args)
+        return _V3d.V3d_View_ColorScaleDisplay(self)
 
-    def ColorScaleErase(self, *args) -> "void" :
+    def ColorScaleErase(self):
         """
         :rtype: None
 
         """
-        return _V3d.V3d_View_ColorScaleErase(self, *args)
+        return _V3d.V3d_View_ColorScaleErase(self)
 
-    def ColorScaleIsDisplayed(self, *args) -> "Standard_Boolean" :
+    def ColorScaleIsDisplayed(self):
         """
         :rtype: bool
 
         """
-        return _V3d.V3d_View_ColorScaleIsDisplayed(self, *args)
+        return _V3d.V3d_View_ColorScaleIsDisplayed(self)
 
-    def ColorScale(self, *args) -> "Handle_Aspect_ColorScale" :
+    def ColorScale(self):
         """
         :rtype: Handle_Aspect_ColorScale
 
         """
-        return _V3d.V3d_View_ColorScale(self, *args)
+        return _V3d.V3d_View_ColorScale(self)
 
-    def SetFront(self, *args) -> "void" :
+    def SetFront(self):
         """
         * modify the Projection of the view perpendicularly to the privileged plane of the viewer.
 
         :rtype: None
 
         """
-        return _V3d.V3d_View_SetFront(self, *args)
+        return _V3d.V3d_View_SetFront(self)
 
-    def Rotate(self, *args) -> "void" :
+    def Rotate(self, *args):
         """
         * Rotates the eye about the coordinate system of reference of the screen for which the origin is the view point of the projection, with a relative angular value in RADIANS with respect to the initial position expressed by Start = Standard_True Warning! raises BadValue from V3d If the eye, the view point, or the high point are aligned or confused.
 
@@ -1876,6 +5405,36 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         :type Ay: Quantity_PlaneAngle
         :param Az:
         :type Az: Quantity_PlaneAngle
+        :param Start: default value is Standard_True
+        :type Start: bool
+        :rtype: None
+
+        * Rotates the eye about the coordinate system of reference of the screen for which the origin is the view point of the projection, with a relative angular value in RADIANS with respect to the initial position expressed by Start = Standard_True Warning! raises BadValue from V3d If the eye, the view point, or the high point are aligned or confused.
+
+        :param Ax:
+        :type Ax: Quantity_PlaneAngle
+        :param Ay:
+        :type Ay: Quantity_PlaneAngle
+        :param Az:
+        :type Az: Quantity_PlaneAngle
+        :param Start: default value is Standard_True
+        :type Start: bool
+        :rtype: None
+
+        * Rotates the eye about the coordinate system of reference of the screen for which the origin is Gravity point {X,Y,Z}, with a relative angular value in RADIANS with respect to the initial position expressed by Start = Standard_True If the eye, the view point, or the high point are aligned or confused.
+
+        :param Ax:
+        :type Ax: Quantity_PlaneAngle
+        :param Ay:
+        :type Ay: Quantity_PlaneAngle
+        :param Az:
+        :type Az: Quantity_PlaneAngle
+        :param X:
+        :type X: V3d_Coordinate
+        :param Y:
+        :type Y: V3d_Coordinate
+        :param Z:
+        :type Z: V3d_Coordinate
         :param Start: default value is Standard_True
         :type Start: bool
         :rtype: None
@@ -1914,6 +5473,32 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         :type Start: bool
         :rtype: None
 
+        * Rotates the eye about one of the coordinate axes of of the view for which the origin is the Gravity point{X,Y,Z} with an relative angular value in RADIANS with respect to the initial position expressed by Start = Standard_True
+
+        :param Axe:
+        :type Axe: V3d_TypeOfAxe
+        :param Angle:
+        :type Angle: Quantity_PlaneAngle
+        :param X:
+        :type X: V3d_Coordinate
+        :param Y:
+        :type Y: V3d_Coordinate
+        :param Z:
+        :type Z: V3d_Coordinate
+        :param Start: default value is Standard_True
+        :type Start: bool
+        :rtype: None
+
+        * Rotates the eye about one of the coordinate axes of of the view for which the origin is the view point of the projection with an relative angular value in RADIANS with respect to the initial position expressed by Start = Standard_True
+
+        :param Axe:
+        :type Axe: V3d_TypeOfAxe
+        :param Angle:
+        :type Angle: Quantity_PlaneAngle
+        :param Start: default value is Standard_True
+        :type Start: bool
+        :rtype: None
+
         * Rotates the eye about one of the coordinate axes of of the view for which the origin is the view point of the projection with an relative angular value in RADIANS with respect to the initial position expressed by Start = Standard_True
 
         :param Axe:
@@ -1932,11 +5517,31 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         :type Start: bool
         :rtype: None
 
+        * Rotates the eye around the current axis a relative angular value in RADIANS with respect to the initial position expressed by Start = Standard_True
+
+        :param Angle:
+        :type Angle: Quantity_PlaneAngle
+        :param Start: default value is Standard_True
+        :type Start: bool
+        :rtype: None
+
         """
         return _V3d.V3d_View_Rotate(self, *args)
 
-    def Move(self, *args) -> "void" :
+    def Move(self, *args):
         """
+        * Movement of the eye parallel to the coordinate system of reference of the screen a distance relative to the initial position expressed by Start = Standard_True.
+
+        :param Dx:
+        :type Dx: Quantity_Length
+        :param Dy:
+        :type Dy: Quantity_Length
+        :param Dz:
+        :type Dz: Quantity_Length
+        :param Start: default value is Standard_True
+        :type Start: bool
+        :rtype: None
+
         * Movement of the eye parallel to the coordinate system of reference of the screen a distance relative to the initial position expressed by Start = Standard_True.
 
         :param Dx:
@@ -1959,6 +5564,24 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         :type Start: bool
         :rtype: None
 
+        * Movement of the eye parallel to one of the axes of the coordinate system of reference of the view a distance relative to the initial position expressed by Start = Standard_True.
+
+        :param Axe:
+        :type Axe: V3d_TypeOfAxe
+        :param Length:
+        :type Length: Quantity_Length
+        :param Start: default value is Standard_True
+        :type Start: bool
+        :rtype: None
+
+        * Movement of the eye parllel to the current axis a distance relative to the initial position expressed by Start = Standard_True
+
+        :param Length:
+        :type Length: Quantity_Length
+        :param Start: default value is Standard_True
+        :type Start: bool
+        :rtype: None
+
         * Movement of the eye parllel to the current axis a distance relative to the initial position expressed by Start = Standard_True
 
         :param Length:
@@ -1970,8 +5593,20 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_Move(self, *args)
 
-    def Translate(self, *args) -> "void" :
+    def Translate(self, *args):
         """
+        * Movement of the ye and the view point parallel to the frame of reference of the screen a distance relative to the initial position expressed by Start = Standard_True
+
+        :param Dx:
+        :type Dx: Quantity_Length
+        :param Dy:
+        :type Dy: Quantity_Length
+        :param Dz:
+        :type Dz: Quantity_Length
+        :param Start: default value is Standard_True
+        :type Start: bool
+        :rtype: None
+
         * Movement of the ye and the view point parallel to the frame of reference of the screen a distance relative to the initial position expressed by Start = Standard_True
 
         :param Dx:
@@ -1994,6 +5629,24 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         :type Start: bool
         :rtype: None
 
+        * Movement of the eye and the view point parallel to one of the axes of the fame of reference of the view a distance relative to the initial position expressed by Start = Standard_True
+
+        :param Axe:
+        :type Axe: V3d_TypeOfAxe
+        :param Length:
+        :type Length: Quantity_Length
+        :param Start: default value is Standard_True
+        :type Start: bool
+        :rtype: None
+
+        * Movement of the eye and view point parallel to the current axis a distance relative to the initial position expressed by Start = Standard_True
+
+        :param Length:
+        :type Length: Quantity_Length
+        :param Start: default value is Standard_True
+        :type Start: bool
+        :rtype: None
+
         * Movement of the eye and view point parallel to the current axis a distance relative to the initial position expressed by Start = Standard_True
 
         :param Length:
@@ -2005,14 +5658,24 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_Translate(self, *args)
 
-    def Place(self, *args) -> "void" :
+    def Place(self, *args):
         """
         * places the point of the view corresponding at the pixel position x,y at the center of the window and updates the view.
 
         :param x:
-        :type x: int
+        :type x: Standard_Integer
         :param y:
-        :type y: int
+        :type y: Standard_Integer
+        :param aZoomFactor: default value is 1
+        :type aZoomFactor: Quantity_Factor
+        :rtype: None
+
+        * places the point of the view corresponding at the pixel position x,y at the center of the window and updates the view.
+
+        :param x:
+        :type x: Standard_Integer
+        :param y:
+        :type y: Standard_Integer
         :param aZoomFactor: default value is 1
         :type aZoomFactor: Quantity_Factor
         :rtype: None
@@ -2020,8 +5683,20 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_Place(self, *args)
 
-    def Turn(self, *args) -> "void" :
+    def Turn(self, *args):
         """
+        * Rotation of the view point around the frame of reference of the screen for which the origin is the eye of the projection with a relative angular value in RADIANS with respect to the initial position expressed by Start = Standard_True
+
+        :param Ax:
+        :type Ax: Quantity_PlaneAngle
+        :param Ay:
+        :type Ay: Quantity_PlaneAngle
+        :param Az:
+        :type Az: Quantity_PlaneAngle
+        :param Start: default value is Standard_True
+        :type Start: bool
+        :rtype: None
+
         * Rotation of the view point around the frame of reference of the screen for which the origin is the eye of the projection with a relative angular value in RADIANS with respect to the initial position expressed by Start = Standard_True
 
         :param Ax:
@@ -2044,6 +5719,24 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         :type Start: bool
         :rtype: None
 
+        * Rotation of the view point around one of the axes of the frame of reference of the view for which the origin is the eye of the projection with an angular value in RADIANS relative to the initial position expressed by Start = Standard_True
+
+        :param Axe:
+        :type Axe: V3d_TypeOfAxe
+        :param Angle:
+        :type Angle: Quantity_PlaneAngle
+        :param Start: default value is Standard_True
+        :type Start: bool
+        :rtype: None
+
+        * Rotation of the view point around the current axis an angular value in RADIANS relative to the initial position expressed by Start = Standard_True
+
+        :param Angle:
+        :type Angle: Quantity_PlaneAngle
+        :param Start: default value is Standard_True
+        :type Start: bool
+        :rtype: None
+
         * Rotation of the view point around the current axis an angular value in RADIANS relative to the initial position expressed by Start = Standard_True
 
         :param Angle:
@@ -2055,7 +5748,7 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_Turn(self, *args)
 
-    def SetTwist(self, *args) -> "void" :
+    def SetTwist(self, *args):
         """
         * Defines the angular position of the high point of the reference frame of the view with respect to the Y screen axis with an absolute angular value in RADIANS.
 
@@ -2066,7 +5759,7 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_SetTwist(self, *args)
 
-    def SetEye(self, *args) -> "void" :
+    def SetEye(self, *args):
         """
         * Defines the position of the eye..
 
@@ -2081,7 +5774,7 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_SetEye(self, *args)
 
-    def SetDepth(self, *args) -> "void" :
+    def SetDepth(self, *args):
         """
         * Defines the Depth of the eye from the view point without update the projection .
 
@@ -2092,7 +5785,7 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_SetDepth(self, *args)
 
-    def SetProj(self, *args) -> "void" :
+    def SetProj(self, *args):
         """
         * Defines the orientation of the projection.
 
@@ -2113,7 +5806,7 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_SetProj(self, *args)
 
-    def SetAt(self, *args) -> "void" :
+    def SetAt(self, *args):
         """
         * Defines the position of the view point.
 
@@ -2128,7 +5821,7 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_SetAt(self, *args)
 
-    def SetUp(self, *args) -> "void" :
+    def SetUp(self, *args):
         """
         * Defines the orientation of the high point.
 
@@ -2149,7 +5842,7 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_SetUp(self, *args)
 
-    def SetViewOrientation(self, *args) -> "void" :
+    def SetViewOrientation(self, *args):
         """
         * Modifies the orientation of the view.
 
@@ -2160,26 +5853,50 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_SetViewOrientation(self, *args)
 
-    def SetViewOrientationDefault(self, *args) -> "void" :
+    def SetViewOrientationDefault(self):
         """
         * Saves the current state of the orientation of the view which will be the return state at ResetViewOrientation.
 
         :rtype: None
 
         """
-        return _V3d.V3d_View_SetViewOrientationDefault(self, *args)
+        return _V3d.V3d_View_SetViewOrientationDefault(self)
 
-    def ResetViewOrientation(self, *args) -> "void" :
+    def ResetViewOrientation(self):
         """
         * Resets the orientation of the view. Updates the view
 
         :rtype: None
 
         """
-        return _V3d.V3d_View_ResetViewOrientation(self, *args)
+        return _V3d.V3d_View_ResetViewOrientation(self)
 
-    def Panning(self, *args) -> "void" :
+    def Panning(self, *args):
         """
+        * translates the center of the view and zooms the view. Updates the view.
+
+        :param Dx:
+        :type Dx: Quantity_Length
+        :param Dy:
+        :type Dy: Quantity_Length
+        :param aZoomFactor: default value is 1
+        :type aZoomFactor: Quantity_Factor
+        :param Start: default value is Standard_True
+        :type Start: bool
+        :rtype: None
+
+        * translates the center of the view and zooms the view. Updates the view.
+
+        :param Dx:
+        :type Dx: Quantity_Length
+        :param Dy:
+        :type Dy: Quantity_Length
+        :param aZoomFactor: default value is 1
+        :type aZoomFactor: Quantity_Factor
+        :param Start: default value is Standard_True
+        :type Start: bool
+        :rtype: None
+
         * translates the center of the view and zooms the view. Updates the view.
 
         :param Dx:
@@ -2195,7 +5912,7 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_Panning(self, *args)
 
-    def SetCenter(self, *args) -> "void" :
+    def SetCenter(self, *args):
         """
         * Defines the centre of the view. Updates the view.
 
@@ -2208,15 +5925,15 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         * Defines the centre of the view from a pixel position. Updates the view.
 
         :param X:
-        :type X: int
+        :type X: Standard_Integer
         :param Y:
-        :type Y: int
+        :type Y: Standard_Integer
         :rtype: None
 
         """
         return _V3d.V3d_View_SetCenter(self, *args)
 
-    def SetSize(self, *args) -> "void" :
+    def SetSize(self, *args):
         """
         * Defines the size of the view while preserving the center and height/width ratio of the window supporting the view. NOTE than the Depth of the View is NOT modified .
 
@@ -2227,7 +5944,7 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_SetSize(self, *args)
 
-    def SetZSize(self, *args) -> "void" :
+    def SetZSize(self, *args):
         """
         * Defines the Depth size of the view Front Plane will be set to Size/2. Back Plane will be set to -Size/2. Any Object located Above the Front Plane or  behind the Back Plane will be Clipped . NOTE than the XY Size of the View is NOT modified .
 
@@ -2238,8 +5955,16 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_SetZSize(self, *args)
 
-    def SetZoom(self, *args) -> "void" :
+    def SetZoom(self, *args):
         """
+        * Zooms the view by a factor relative to the initial value expressed by Start = Standard_True Updates the view.
+
+        :param Coef:
+        :type Coef: Quantity_Factor
+        :param Start: default value is Standard_True
+        :type Start: bool
+        :rtype: None
+
         * Zooms the view by a factor relative to the initial value expressed by Start = Standard_True Updates the view.
 
         :param Coef:
@@ -2251,7 +5976,7 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_SetZoom(self, *args)
 
-    def SetScale(self, *args) -> "void" :
+    def SetScale(self, *args):
         """
         * Zooms the view by a factor relative to the value initialised by SetViewMappingDefault(). Updates the view.
 
@@ -2262,7 +5987,7 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_SetScale(self, *args)
 
-    def SetAxialScale(self, *args) -> "void" :
+    def SetAxialScale(self, *args):
         """
         * Sets anisotropic (axial) scale factors <Sx>, <Sy>, <Sz> for view <self>. Anisotropic scaling operation is performed through multiplying the current view orientation matrix by a scaling matrix: || Sx 0 0 0 || || 0 Sy 0 0 || || 0 0 Sz 0 || || 0 0 0 1 || Updates the view.
 
@@ -2277,7 +6002,7 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_SetAxialScale(self, *args)
 
-    def ZFitAll(self, *args) -> "void" :
+    def ZFitAll(self, Coef=1.0):
         """
         * Automatic Depth Panning. Objects visible in the view are visualised so as to occupy the maximum Z amount of space while respecting the margin coefficient . NOTE than the original XY size of the view is NOT modified .
 
@@ -2285,10 +6010,16 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         :type Coef: Quantity_Coefficient
         :rtype: None
 
-        """
-        return _V3d.V3d_View_ZFitAll(self, *args)
+        * Automatic Depth Panning. Objects visible in the view are visualised so as to occupy the maximum Z amount of space while respecting the margin coefficient . NOTE than the original XY size of the view is NOT modified .
 
-    def DepthFitAll(self, *args) -> "void" :
+        :param Coef: default value is 1.0
+        :type Coef: Quantity_Coefficient
+        :rtype: None
+
+        """
+        return _V3d.V3d_View_ZFitAll(self, Coef)
+
+    def DepthFitAll(self, aspect=0.01, Margin=0.01):
         """
         * Adjusts the viewing volume so as not to clip the displayed objects by front and back and back clipping planes. Also sets depth value automatically depending on the calculated Z size and Aspect parameter. NOTE than the original XY size of the view is NOT modified .
 
@@ -2298,11 +6029,57 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         :type Margin: Quantity_Coefficient
         :rtype: None
 
-        """
-        return _V3d.V3d_View_DepthFitAll(self, *args)
+        * Adjusts the viewing volume so as not to clip the displayed objects by front and back and back clipping planes. Also sets depth value automatically depending on the calculated Z size and Aspect parameter. NOTE than the original XY size of the view is NOT modified .
 
-    def FitAll(self, *args) -> "void" :
+        :param Aspect: default value is 0.01
+        :type Aspect: Quantity_Coefficient
+        :param Margin: default value is 0.01
+        :type Margin: Quantity_Coefficient
+        :rtype: None
+
+        * Adjusts the viewing volume so as not to clip the displayed objects by front and back and back clipping planes. Also sets depth value automatically depending on the calculated Z size and Aspect parameter. NOTE than the original XY size of the view is NOT modified .
+
+        :param Aspect: default value is 0.01
+        :type Aspect: Quantity_Coefficient
+        :param Margin: default value is 0.01
+        :type Margin: Quantity_Coefficient
+        :rtype: None
+
         """
+        return _V3d.V3d_View_DepthFitAll(self, aspect, Margin)
+
+    def FitAll(self, *args):
+        """
+        * Automatic zoom/panning. Objects in the view are visualised so as to occupy the maximum space while respecting the margin coefficient and the initial height /width ratio. NOTE than the original Z size of the view is NOT modified .
+
+        :param Coef: default value is 0.01
+        :type Coef: Quantity_Coefficient
+        :param FitZ: default value is Standard_False
+        :type FitZ: bool
+        :param update: default value is Standard_True
+        :type update: bool
+        :rtype: None
+
+        * Automatic zoom/panning. Objects in the view are visualised so as to occupy the maximum space while respecting the margin coefficient and the initial height /width ratio. NOTE than the original Z size of the view is NOT modified .
+
+        :param Coef: default value is 0.01
+        :type Coef: Quantity_Coefficient
+        :param FitZ: default value is Standard_False
+        :type FitZ: bool
+        :param update: default value is Standard_True
+        :type update: bool
+        :rtype: None
+
+        * Automatic zoom/panning. Objects in the view are visualised so as to occupy the maximum space while respecting the margin coefficient and the initial height /width ratio. NOTE than the original Z size of the view is NOT modified .
+
+        :param Coef: default value is 0.01
+        :type Coef: Quantity_Coefficient
+        :param FitZ: default value is Standard_False
+        :type FitZ: bool
+        :param update: default value is Standard_True
+        :type update: bool
+        :rtype: None
+
         * Automatic zoom/panning. Objects in the view are visualised so as to occupy the maximum space while respecting the margin coefficient and the initial height /width ratio. NOTE than the original Z size of the view is NOT modified .
 
         :param Coef: default value is 0.01
@@ -2328,24 +6105,24 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_FitAll(self, *args)
 
-    def WindowFit(self, *args) -> "void" :
+    def WindowFit(self, *args):
         """
         * Centres the defined PIXEL window so that it occupies the maximum space while respecting the initial height/width ratio. NOTE than the original Z size of the view is NOT modified .
 
         :param Xmin:
-        :type Xmin: int
+        :type Xmin: Standard_Integer
         :param Ymin:
-        :type Ymin: int
+        :type Ymin: Standard_Integer
         :param Xmax:
-        :type Xmax: int
+        :type Xmax: Standard_Integer
         :param Ymax:
-        :type Ymax: int
+        :type Ymax: Standard_Integer
         :rtype: None
 
         """
         return _V3d.V3d_View_WindowFit(self, *args)
 
-    def SetViewingVolume(self, *args) -> "void" :
+    def SetViewingVolume(self, *args):
         """
         * Sets Z and XY size of the view according to given values with respecting the initial view depth (eye position). Width/heigth aspect ratio should be preserved by the caller of this method similarly to SetSize() to avoid unexpected visual results like non-uniform scaling of objects in the view.
 
@@ -2366,7 +6143,7 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_SetViewingVolume(self, *args)
 
-    def SetViewMapping(self, *args) -> "void" :
+    def SetViewMapping(self, *args):
         """
         * Modifies the mapping of the view.
 
@@ -2377,26 +6154,32 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_SetViewMapping(self, *args)
 
-    def SetViewMappingDefault(self, *args) -> "void" :
+    def SetViewMappingDefault(self):
         """
         * Saves the current view mapping. This will be the state returned from ResetViewmapping.
 
         :rtype: None
 
         """
-        return _V3d.V3d_View_SetViewMappingDefault(self, *args)
+        return _V3d.V3d_View_SetViewMappingDefault(self)
 
-    def ResetViewMapping(self, *args) -> "void" :
+    def ResetViewMapping(self):
         """
         * Resets the centring of the view. Updates the view
 
         :rtype: None
 
         """
-        return _V3d.V3d_View_ResetViewMapping(self, *args)
+        return _V3d.V3d_View_ResetViewMapping(self)
 
-    def Reset(self, *args) -> "void" :
+    def Reset(self, *args):
         """
+        * Resets the centring and the orientation of the view Updates the view
+
+        :param update: default value is Standard_True
+        :type update: bool
+        :rtype: None
+
         * Resets the centring and the orientation of the view Updates the view
 
         :param update: default value is Standard_True
@@ -2406,14 +6189,14 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_Reset(self, *args)
 
-    def ConvertWithProj(self, *args) -> "void" :
+    def ConvertWithProj(self, *args):
         """
         * Converts the projected point into a point in the reference frame of the view corresponding to the intersection with the projection plane of the eye/view point vector and returns the projection ray for further computations.
 
         :param Xp:
-        :type Xp: int
+        :type Xp: Standard_Integer
         :param Yp:
-        :type Yp: int
+        :type Yp: Standard_Integer
         :param X:
         :type X: V3d_Coordinate &
         :param Y:
@@ -2431,14 +6214,14 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_ConvertWithProj(self, *args)
 
-    def ConvertToGrid(self, *args) -> "void" :
+    def ConvertToGrid(self, *args):
         """
         * Converts the projected point into the nearest grid point in the reference frame of the view corresponding to the intersection with the projection plane of the eye/view point vector and display the grid marker. Warning: When the grid is not active the result is identical to the above Convert() method. How to use : 1) Enable the grid echo display myViewer->SetGridEcho(Standard_True); 2) When application receive a move event : 2.1) Check if any object is detected if( myInteractiveContext->MoveTo(x,y) == AIS_SOD_Nothing ) { 2.2) Check if the grid is active if( myViewer->Grid()->IsActive() ) { 2.3) Display the grid echo and gets the grid point myView->ConvertToGrid(x,y,X,Y,Z); 2.4) Else this is the standard case } else myView->Convert(x,y,X,Y,Z);
 
         :param Xp:
-        :type Xp: int
+        :type Xp: Standard_Integer
         :param Yp:
-        :type Yp: int
+        :type Yp: Standard_Integer
         :param Xg:
         :type Xg: V3d_Coordinate &
         :param Yg:
@@ -2466,20 +6249,20 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_ConvertToGrid(self, *args)
 
-    def Convert(self, *args) -> "void" :
+    def Convert(self, *args):
         """
         * Converts the PIXEL value to a value in the projection plane.
 
         :param Vp:
-        :type Vp: int
+        :type Vp: Standard_Integer
         :rtype: Quantity_Length
 
         * Converts the point PIXEL into a point projected in the reference frame of the projection plane.
 
         :param Xp:
-        :type Xp: int
+        :type Xp: Standard_Integer
         :param Yp:
-        :type Yp: int
+        :type Yp: Standard_Integer
         :param Xv:
         :type Xv: V3d_Coordinate &
         :param Yv:
@@ -2499,17 +6282,17 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         :param Yv:
         :type Yv: V3d_Coordinate
         :param Xp:
-        :type Xp: int &
+        :type Xp: Standard_Integer &
         :param Yp:
-        :type Yp: int &
+        :type Yp: Standard_Integer &
         :rtype: None
 
         * Converts the projected point into a point in the reference frame of the view corresponding to the intersection with the projection plane of the eye/view point vector.
 
         :param Xp:
-        :type Xp: int
+        :type Xp: Standard_Integer
         :param Yp:
-        :type Yp: int
+        :type Yp: Standard_Integer
         :param X:
         :type X: V3d_Coordinate &
         :param Y:
@@ -2527,15 +6310,15 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         :param Z:
         :type Z: V3d_Coordinate
         :param Xp:
-        :type Xp: int &
+        :type Xp: Standard_Integer &
         :param Yp:
-        :type Yp: int &
+        :type Yp: Standard_Integer &
         :rtype: None
 
         """
         return _V3d.V3d_View_Convert(self, *args)
 
-    def Project(self, *args) -> "void" :
+    def Project(self, *args):
         """
         * Converts the point defined in the user space of the view to the projected view plane point at z 0.
 
@@ -2554,7 +6337,7 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_Project(self, *args)
 
-    def BackgroundColor(self, *args) -> "Quantity_Color" :
+    def BackgroundColor(self, *args):
         """
         * Returns the Background color values of the view depending of the color Type.
 
@@ -2575,7 +6358,7 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_BackgroundColor(self, *args)
 
-    def GradientBackgroundColors(self, *args) -> "void" :
+    def GradientBackgroundColors(self, *args):
         """
         * Returns the gradient background colour objects of the view.
 
@@ -2588,25 +6371,25 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_GradientBackgroundColors(self, *args)
 
-    def GradientBackground(self, *args) -> "Aspect_GradientBackground" :
+    def GradientBackground(self):
         """
         * Returns the gradient background of the view.
 
         :rtype: Aspect_GradientBackground
 
         """
-        return _V3d.V3d_View_GradientBackground(self, *args)
+        return _V3d.V3d_View_GradientBackground(self)
 
-    def Scale(self, *args) -> "Quantity_Factor" :
+    def Scale(self):
         """
         * Returns the current value of the zoom expressed with respect to SetViewMappingDefault().
 
         :rtype: Quantity_Factor
 
         """
-        return _V3d.V3d_View_Scale(self, *args)
+        return _V3d.V3d_View_Scale(self)
 
-    def Center(self, *args) -> "void" :
+    def Center(self):
         """
         * Returns the centre of the view.
 
@@ -2617,9 +6400,9 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         :rtype: None
 
         """
-        return _V3d.V3d_View_Center(self, *args)
+        return _V3d.V3d_View_Center(self)
 
-    def Size(self, *args) -> "void" :
+    def Size(self):
         """
         * Returns the height and width of the view.
 
@@ -2630,18 +6413,18 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         :rtype: None
 
         """
-        return _V3d.V3d_View_Size(self, *args)
+        return _V3d.V3d_View_Size(self)
 
-    def ZSize(self, *args) -> "Standard_Real" :
+    def ZSize(self):
         """
         * Returns the Depth of the view .
 
         :rtype: float
 
         """
-        return _V3d.V3d_View_ZSize(self, *args)
+        return _V3d.V3d_View_ZSize(self)
 
-    def Eye(self, *args) -> "void" :
+    def Eye(self):
         """
         * Returns the position of the eye.
 
@@ -2654,9 +6437,9 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         :rtype: None
 
         """
-        return _V3d.V3d_View_Eye(self, *args)
+        return _V3d.V3d_View_Eye(self)
 
-    def FocalReferencePoint(self, *args) -> "void" :
+    def FocalReferencePoint(self):
         """
         * Returns the position of point which emanating the projections.
 
@@ -2669,16 +6452,16 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         :rtype: None
 
         """
-        return _V3d.V3d_View_FocalReferencePoint(self, *args)
+        return _V3d.V3d_View_FocalReferencePoint(self)
 
-    def ProjReferenceAxe(self, *args) -> "void" :
+    def ProjReferenceAxe(self, *args):
         """
         * Returns the coordinate of the point (Xpix,Ypix) in the view (XP,YP,ZP), and the projection vector of the view passing by the point (for PerspectiveView).
 
         :param Xpix:
-        :type Xpix: int
+        :type Xpix: Standard_Integer
         :param Ypix:
-        :type Ypix: int
+        :type Ypix: Standard_Integer
         :param XP:
         :type XP: V3d_Coordinate &
         :param YP:
@@ -2696,16 +6479,16 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_ProjReferenceAxe(self, *args)
 
-    def Depth(self, *args) -> "Quantity_Length" :
+    def Depth(self):
         """
         * Returns the Distance between the Eye and View Point.
 
         :rtype: Quantity_Length
 
         """
-        return _V3d.V3d_View_Depth(self, *args)
+        return _V3d.V3d_View_Depth(self)
 
-    def Proj(self, *args) -> "void" :
+    def Proj(self):
         """
         * Returns the projection vector.
 
@@ -2718,9 +6501,9 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         :rtype: None
 
         """
-        return _V3d.V3d_View_Proj(self, *args)
+        return _V3d.V3d_View_Proj(self)
 
-    def At(self, *args) -> "void" :
+    def At(self):
         """
         * Returns the position of the view point.
 
@@ -2733,9 +6516,9 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         :rtype: None
 
         """
-        return _V3d.V3d_View_At(self, *args)
+        return _V3d.V3d_View_At(self)
 
-    def Up(self, *args) -> "void" :
+    def Up(self):
         """
         * Returns the vector giving the position of the high point.
 
@@ -2748,68 +6531,68 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         :rtype: None
 
         """
-        return _V3d.V3d_View_Up(self, *args)
+        return _V3d.V3d_View_Up(self)
 
-    def Twist(self, *args) -> "Quantity_PlaneAngle" :
+    def Twist(self):
         """
         * Returns in RADIANS the orientation of the view around the visual axis measured from the Y axis of the screen.
 
         :rtype: Quantity_PlaneAngle
 
         """
-        return _V3d.V3d_View_Twist(self, *args)
+        return _V3d.V3d_View_Twist(self)
 
-    def ShadingModel(self, *args) -> "V3d_TypeOfShadingModel" :
+    def ShadingModel(self):
         """
         * Returns the current shading model.
 
         :rtype: V3d_TypeOfShadingModel
 
         """
-        return _V3d.V3d_View_ShadingModel(self, *args)
+        return _V3d.V3d_View_ShadingModel(self)
 
-    def SurfaceDetail(self, *args) -> "V3d_TypeOfSurfaceDetail" :
+    def SurfaceDetail(self):
         """
         :rtype: V3d_TypeOfSurfaceDetail
 
         """
-        return _V3d.V3d_View_SurfaceDetail(self, *args)
+        return _V3d.V3d_View_SurfaceDetail(self)
 
-    def TextureEnv(self, *args) -> "Handle_Graphic3d_TextureEnv" :
+    def TextureEnv(self):
         """
         :rtype: Handle_Graphic3d_TextureEnv
 
         """
-        return _V3d.V3d_View_TextureEnv(self, *args)
+        return _V3d.V3d_View_TextureEnv(self)
 
-    def Transparency(self, *args) -> "Standard_Boolean" :
+    def Transparency(self):
         """
         * Returns the transparency activity.
 
         :rtype: bool
 
         """
-        return _V3d.V3d_View_Transparency(self, *args)
+        return _V3d.V3d_View_Transparency(self)
 
-    def Visualization(self, *args) -> "V3d_TypeOfVisualization" :
+    def Visualization(self):
         """
         * Returns the current visualisation mode.
 
         :rtype: V3d_TypeOfVisualization
 
         """
-        return _V3d.V3d_View_Visualization(self, *args)
+        return _V3d.V3d_View_Visualization(self)
 
-    def Antialiasing(self, *args) -> "Standard_Boolean" :
+    def Antialiasing(self):
         """
         * Indicates if the antialiasing is active (True) or inactive (False).
 
         :rtype: bool
 
         """
-        return _V3d.V3d_View_Antialiasing(self, *args)
+        return _V3d.V3d_View_Antialiasing(self)
 
-    def ZCueing(self, *args) -> "Standard_Boolean" :
+    def ZCueing(self):
         """
         * Returns activity and information on the Zcueing. <Depth> : Depth of plane. <Width> : Thickness around the plane.
 
@@ -2820,9 +6603,9 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         :rtype: bool
 
         """
-        return _V3d.V3d_View_ZCueing(self, *args)
+        return _V3d.V3d_View_ZCueing(self)
 
-    def ZClipping(self, *args) -> "V3d_TypeOfZclipping" :
+    def ZClipping(self):
         """
         * Returns current information on the ZClipping. <Depth> : Depth of plane. <Width> : Thickness around the plane. <TypeOfZclipping> : 'BACK'  'FRONT'  'SLICE'  'OFF'
 
@@ -2833,95 +6616,105 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         :rtype: V3d_TypeOfZclipping
 
         """
-        return _V3d.V3d_View_ZClipping(self, *args)
+        return _V3d.V3d_View_ZClipping(self)
 
-    def IfMoreLights(self, *args) -> "Standard_Boolean" :
+    def IfMoreLights(self):
         """
         * Returns True if One light more can be activated in this View.
 
         :rtype: bool
 
         """
-        return _V3d.V3d_View_IfMoreLights(self, *args)
+        return _V3d.V3d_View_IfMoreLights(self)
 
-    def InitActiveLights(self, *args) -> "void" :
+    def InitActiveLights(self):
         """
         * initializes an iteration on the active Lights.
 
         :rtype: None
 
         """
-        return _V3d.V3d_View_InitActiveLights(self, *args)
+        return _V3d.V3d_View_InitActiveLights(self)
 
-    def MoreActiveLights(self, *args) -> "Standard_Boolean" :
+    def MoreActiveLights(self):
         """
         * returns true if there are more active Light(s) to return.
 
         :rtype: bool
 
         """
-        return _V3d.V3d_View_MoreActiveLights(self, *args)
+        return _V3d.V3d_View_MoreActiveLights(self)
 
-    def NextActiveLights(self, *args) -> "void" :
+    def NextActiveLights(self):
         """
         * Go to the next active Light (if there is not, ActiveLight will raise an exception)
 
         :rtype: None
 
         """
-        return _V3d.V3d_View_NextActiveLights(self, *args)
+        return _V3d.V3d_View_NextActiveLights(self)
 
-    def ActiveLight(self, *args) -> "Handle_V3d_Light" :
+    def ActiveLight(self):
         """
         :rtype: Handle_V3d_Light
 
         """
-        return _V3d.V3d_View_ActiveLight(self, *args)
+        return _V3d.V3d_View_ActiveLight(self)
 
-    def Viewer(self, *args) -> "Handle_V3d_Viewer" :
+    def Viewer(self):
         """
         * Returns the viewer in which the view has been created.
 
         :rtype: Handle_V3d_Viewer
 
         """
-        return _V3d.V3d_View_Viewer(self, *args)
+        return _V3d.V3d_View_Viewer(self)
 
-    def IfWindow(self, *args) -> "Standard_Boolean" :
+    def IfWindow(self):
         """
         * Returns True if MyView is associated with a window .
 
         :rtype: bool
 
         """
-        return _V3d.V3d_View_IfWindow(self, *args)
+        return _V3d.V3d_View_IfWindow(self)
 
-    def Window(self, *args) -> "Handle_Aspect_Window" :
+    def Window(self):
         """
         * Returns the Aspect Window associated with the view.
 
         :rtype: Handle_Aspect_Window
 
         """
-        return _V3d.V3d_View_Window(self, *args)
+        return _V3d.V3d_View_Window(self)
 
-    def Type(self, *args) -> "V3d_TypeOfView" :
+    def Type(self):
         """
         * Returns the Type of the View
 
         :rtype: V3d_TypeOfView
 
         """
-        return _V3d.V3d_View_Type(self, *args)
+        return _V3d.V3d_View_Type(self)
 
-    def Pan(self, *args) -> "void" :
+    def Pan(self, *args):
         """
         * translates the center of the view and zooms the view. and updates the view.
 
         :param Dx:
-        :type Dx: int
+        :type Dx: Standard_Integer
         :param Dy:
-        :type Dy: int
+        :type Dy: Standard_Integer
+        :param aZoomFactor: default value is 1
+        :type aZoomFactor: Quantity_Factor
+        :rtype: None
+
+        * translates the center of the view and zooms the view. and updates the view.
+
+        :param Dx:
+        :type Dx: Standard_Integer
+        :param Dy:
+        :type Dy: Standard_Integer
         :param aZoomFactor: default value is 1
         :type aZoomFactor: Quantity_Factor
         :rtype: None
@@ -2929,62 +6722,62 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_Pan(self, *args)
 
-    def Zoom(self, *args) -> "void" :
+    def Zoom(self, *args):
         """
         * Zoom the view according to a zoom factor computed from the distance between the 2 mouse position <X1,Y1>,<X2,Y2>
 
         :param X1:
-        :type X1: int
+        :type X1: Standard_Integer
         :param Y1:
-        :type Y1: int
+        :type Y1: Standard_Integer
         :param X2:
-        :type X2: int
+        :type X2: Standard_Integer
         :param Y2:
-        :type Y2: int
+        :type Y2: Standard_Integer
         :rtype: None
 
         * Zoom the view according to a zoom factor computed from the distance between the last and new mouse position <X,Y>
 
         :param X:
-        :type X: int
+        :type X: Standard_Integer
         :param Y:
-        :type Y: int
+        :type Y: Standard_Integer
         :rtype: None
 
         """
         return _V3d.V3d_View_Zoom(self, *args)
 
-    def StartZoomAtPoint(self, *args) -> "void" :
+    def StartZoomAtPoint(self, *args):
         """
         * Defines the point (pixel) of zooming (for the method ZoomAtPoint()).
 
         :param xpix:
-        :type xpix: int
+        :type xpix: Standard_Integer
         :param ypix:
-        :type ypix: int
+        :type ypix: Standard_Integer
         :rtype: None
 
         """
         return _V3d.V3d_View_StartZoomAtPoint(self, *args)
 
-    def ZoomAtPoint(self, *args) -> "void" :
+    def ZoomAtPoint(self, *args):
         """
         * Zooms the model at a pixel defined by the method StartZoomAtPoint().
 
         :param mouseStartX:
-        :type mouseStartX: int
+        :type mouseStartX: Standard_Integer
         :param mouseStartY:
-        :type mouseStartY: int
+        :type mouseStartY: Standard_Integer
         :param mouseEndX:
-        :type mouseEndX: int
+        :type mouseEndX: Standard_Integer
         :param mouseEndY:
-        :type mouseEndY: int
+        :type mouseEndY: Standard_Integer
         :rtype: None
 
         """
         return _V3d.V3d_View_ZoomAtPoint(self, *args)
 
-    def AxialScale(self, *args) -> "void" :
+    def AxialScale(self, *args):
         """
         * Returns the current values of the anisotropic (axial) scale factors.
 
@@ -2999,9 +6792,9 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         * Performs anisotropic scaling of <self> view along the given <Axis>. The scale factor is calculated on a basis of the mouse pointer displacement <Dx,Dy>. The calculated scale factor is then passed to SetAxialScale(Sx, Sy, Sz) method.
 
         :param Dx:
-        :type Dx: int
+        :type Dx: Standard_Integer
         :param Dy:
-        :type Dy: int
+        :type Dy: Standard_Integer
         :param Axis:
         :type Axis: V3d_TypeOfAxe
         :rtype: None
@@ -3009,14 +6802,24 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_AxialScale(self, *args)
 
-    def StartRotation(self, *args) -> "void" :
+    def StartRotation(self, *args):
         """
         * Begin the rotation of the view arround the screen axis according to the mouse position <X,Y>. Warning: Enable rotation around the Z screen axis when <zRotationThreshold> factor is > 0 soon the distance from the start point and the center of the view is > (medium viewSize * <zRotationThreshold> ). Generally a value of 0.4 is usable to rotate around XY screen axis inside the circular treshold area and to rotate around Z screen axis outside this area.
 
         :param X:
-        :type X: int
+        :type X: Standard_Integer
         :param Y:
-        :type Y: int
+        :type Y: Standard_Integer
+        :param zRotationThreshold: default value is 0.0
+        :type zRotationThreshold: Quantity_Ratio
+        :rtype: None
+
+        * Begin the rotation of the view arround the screen axis according to the mouse position <X,Y>. Warning: Enable rotation around the Z screen axis when <zRotationThreshold> factor is > 0 soon the distance from the start point and the center of the view is > (medium viewSize * <zRotationThreshold> ). Generally a value of 0.4 is usable to rotate around XY screen axis inside the circular treshold area and to rotate around Z screen axis outside this area.
+
+        :param X:
+        :type X: Standard_Integer
+        :param Y:
+        :type Y: Standard_Integer
         :param zRotationThreshold: default value is 0.0
         :type zRotationThreshold: Quantity_Ratio
         :rtype: None
@@ -3024,20 +6827,20 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_StartRotation(self, *args)
 
-    def Rotation(self, *args) -> "void" :
+    def Rotation(self, *args):
         """
         * Continues the rotation of the view with an angle computed from the last and new mouse position <X,Y>.
 
         :param X:
-        :type X: int
+        :type X: Standard_Integer
         :param Y:
-        :type Y: int
+        :type Y: Standard_Integer
         :rtype: None
 
         """
         return _V3d.V3d_View_Rotation(self, *args)
 
-    def SetFocale(self, *args) -> "void" :
+    def SetFocale(self, *args):
         """
         * Change View Plane Distance for Perspective Views Warning! raises TypeMismatch from Standard if the view is not a perspective view.
 
@@ -3048,44 +6851,60 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_SetFocale(self, *args)
 
-    def Focale(self, *args) -> "Quantity_Length" :
+    def Focale(self):
         """
         * Returns the View Plane Distance for Perspective Views
 
         :rtype: Quantity_Length
 
         """
-        return _V3d.V3d_View_Focale(self, *args)
+        return _V3d.V3d_View_Focale(self)
 
-    def View(self, *args) -> "Handle_Visual3d_View" :
+    def View(self):
         """
         * Returns the associated Visual3d view.
 
         :rtype: Handle_Visual3d_View
 
         """
-        return _V3d.V3d_View_View(self, *args)
+        return _V3d.V3d_View_View(self)
 
-    def ViewMapping(self, *args) -> "Visual3d_ViewMapping" :
+    def ViewMapping(self):
         """
         * Returns the current mapping of the view.
 
         :rtype: Visual3d_ViewMapping
 
         """
-        return _V3d.V3d_View_ViewMapping(self, *args)
+        return _V3d.V3d_View_ViewMapping(self)
 
-    def ViewOrientation(self, *args) -> "Visual3d_ViewOrientation" :
+    def ViewOrientation(self):
         """
         * Returns the current orientation of the view.
 
         :rtype: Visual3d_ViewOrientation
 
         """
-        return _V3d.V3d_View_ViewOrientation(self, *args)
+        return _V3d.V3d_View_ViewOrientation(self)
 
-    def TransientManagerBeginDraw(self, *args) -> "Standard_Boolean" :
+    def TransientManagerBeginDraw(self, *args):
         """
+        * Begins any graphics in the view <aView> Redraw any structured graphics in the back buffer before if <DoubleBuffer> is True. Restore the front buffer from the back before if <DoubleBuffer> is False. if <RetainMode> is True. the graphic managed itself exposure,resizing ... if <RetainMode> is False. the application must managed itself exposure,resizing ...
+
+        :param DoubleBuffer: default value is Standard_False
+        :type DoubleBuffer: bool
+        :param RetainMode: default value is Standard_False
+        :type RetainMode: bool
+        :rtype: bool
+
+        * Begins any graphics in the view <aView> Redraw any structured graphics in the back buffer before if <DoubleBuffer> is True. Restore the front buffer from the back before if <DoubleBuffer> is False. if <RetainMode> is True. the graphic managed itself exposure,resizing ... if <RetainMode> is False. the application must managed itself exposure,resizing ...
+
+        :param DoubleBuffer: default value is Standard_False
+        :type DoubleBuffer: bool
+        :param RetainMode: default value is Standard_False
+        :type RetainMode: bool
+        :rtype: bool
+
         * Begins any graphics in the view <aView> Redraw any structured graphics in the back buffer before if <DoubleBuffer> is True. Restore the front buffer from the back before if <DoubleBuffer> is False. if <RetainMode> is True. the graphic managed itself exposure,resizing ... if <RetainMode> is False. the application must managed itself exposure,resizing ...
 
         :param DoubleBuffer: default value is Standard_False
@@ -3097,25 +6916,25 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_TransientManagerBeginDraw(self, *args)
 
-    def TransientManagerClearDraw(self, *args) -> "void" :
+    def TransientManagerClearDraw(self):
         """
         * Clear all transient graphics in the view <aView>
 
         :rtype: None
 
         """
-        return _V3d.V3d_View_TransientManagerClearDraw(self, *args)
+        return _V3d.V3d_View_TransientManagerClearDraw(self)
 
-    def TransientManagerBeginAddDraw(self, *args) -> "Standard_Boolean" :
+    def TransientManagerBeginAddDraw(self):
         """
         * Begins any add graphics in the view <aView> Redraw any structured graphics in the back buffer before the application must managed itself exposure,resizing ... Warning: Returns True if transient drawing is enabled in  the associated view. Returns False ,if nothing works because something  is wrong for the transient principle :
 
         :rtype: bool
 
         """
-        return _V3d.V3d_View_TransientManagerBeginAddDraw(self, *args)
+        return _V3d.V3d_View_TransientManagerBeginAddDraw(self)
 
-    def SetComputedMode(self, *args) -> "void" :
+    def SetComputedMode(self, *args):
         """
         * Switches computed HLR mode in the view
 
@@ -3126,33 +6945,33 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_SetComputedMode(self, *args)
 
-    def ComputedMode(self, *args) -> "Standard_Boolean" :
+    def ComputedMode(self):
         """
         * Returns the computed HLR mode state
 
         :rtype: bool
 
         """
-        return _V3d.V3d_View_ComputedMode(self, *args)
+        return _V3d.V3d_View_ComputedMode(self)
 
-    def WindowFitAll(self, *args) -> "void" :
+    def WindowFitAll(self, *args):
         """
         * idem than WindowFit
 
         :param Xmin:
-        :type Xmin: int
+        :type Xmin: Standard_Integer
         :param Ymin:
-        :type Ymin: int
+        :type Ymin: Standard_Integer
         :param Xmax:
-        :type Xmax: int
+        :type Xmax: Standard_Integer
         :param Ymax:
-        :type Ymax: int
+        :type Ymax: Standard_Integer
         :rtype: None
 
         """
         return _V3d.V3d_View_WindowFitAll(self, *args)
 
-    def SetPlotter(self, *args) -> "void" :
+    def SetPlotter(self, *args):
         """
         * Set a plotter for plotting the contents of the view field MyPlotter
 
@@ -3163,16 +6982,16 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_SetPlotter(self, *args)
 
-    def Plot(self, *args) -> "void" :
+    def Plot(self):
         """
         * Create a 2D View for plotting the contents of the view
 
         :rtype: None
 
         """
-        return _V3d.V3d_View_Plot(self, *args)
+        return _V3d.V3d_View_Plot(self)
 
-    def SetGrid(self, *args) -> "void" :
+    def SetGrid(self, *args):
         """
         * Defines or Updates the definition of the grid in <self>
 
@@ -3185,7 +7004,7 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_SetGrid(self, *args)
 
-    def SetGridGraphicValues(self, *args) -> "void" :
+    def SetGridGraphicValues(self, *args):
         """
         * Defines or Updates the graphic definition of the grid in <self>
 
@@ -3196,7 +7015,7 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_SetGridGraphicValues(self, *args)
 
-    def SetGridActivity(self, *args) -> "void" :
+    def SetGridActivity(self, *args):
         """
         * Defines or Updates the activity of the grid in <self>
 
@@ -3207,8 +7026,16 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_SetGridActivity(self, *args)
 
-    def Dump(self, *args) -> "Standard_Boolean" :
+    def Dump(self, *args):
         """
+        * dump the full contents of the view at the same scale in the file <theFile>. The file name extension must be one of '.png','.bmp','.jpg','.gif'. Returns False when the dump has failed
+
+        :param theFile:
+        :type theFile: char *
+        :param theBufferType: default value is Graphic3d_BT_RGB
+        :type theBufferType: Graphic3d_BufferType &
+        :rtype: bool
+
         * dump the full contents of the view at the same scale in the file <theFile>. The file name extension must be one of '.png','.bmp','.jpg','.gif'. Returns False when the dump has failed
 
         :param theFile:
@@ -3220,16 +7047,44 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_Dump(self, *args)
 
-    def ToPixMap(self, *args) -> "Standard_Boolean" :
+    def ToPixMap(self, *args):
         """
         * dump the full contents of the view to a pixmap of pixel size <theWidth>*<theHeight> and buffer type <theBufferType>. If <theForceCentered> is true view scene will be centered. Pixmap will be automatically (re)allocated when needed.
 
         :param theImage:
         :type theImage: Image_PixMap &
         :param theWidth:
-        :type theWidth: int
+        :type theWidth: Standard_Integer
         :param theHeight:
-        :type theHeight: int
+        :type theHeight: Standard_Integer
+        :param theBufferType: default value is Graphic3d_BT_RGB
+        :type theBufferType: Graphic3d_BufferType &
+        :param theForceCentered: default value is Standard_True
+        :type theForceCentered: bool
+        :rtype: bool
+
+        * dump the full contents of the view to a pixmap of pixel size <theWidth>*<theHeight> and buffer type <theBufferType>. If <theForceCentered> is true view scene will be centered. Pixmap will be automatically (re)allocated when needed.
+
+        :param theImage:
+        :type theImage: Image_PixMap &
+        :param theWidth:
+        :type theWidth: Standard_Integer
+        :param theHeight:
+        :type theHeight: Standard_Integer
+        :param theBufferType: default value is Graphic3d_BT_RGB
+        :type theBufferType: Graphic3d_BufferType &
+        :param theForceCentered: default value is Standard_True
+        :type theForceCentered: bool
+        :rtype: bool
+
+        * dump the full contents of the view to a pixmap of pixel size <theWidth>*<theHeight> and buffer type <theBufferType>. If <theForceCentered> is true view scene will be centered. Pixmap will be automatically (re)allocated when needed.
+
+        :param theImage:
+        :type theImage: Image_PixMap &
+        :param theWidth:
+        :type theWidth: Standard_Integer
+        :param theHeight:
+        :type theHeight: Standard_Integer
         :param theBufferType: default value is Graphic3d_BT_RGB
         :type theBufferType: Graphic3d_BufferType &
         :param theForceCentered: default value is Standard_True
@@ -3239,8 +7094,14 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_ToPixMap(self, *args)
 
-    def SetProjModel(self, *args) -> "void" :
+    def SetProjModel(self, *args):
         """
+        * Manages projection model
+
+        :param amOdel: default value is V3d_TPM_SCREEN
+        :type amOdel: V3d_TypeOfProjectionModel
+        :rtype: None
+
         * Manages projection model
 
         :param amOdel: default value is V3d_TPM_SCREEN
@@ -3250,17 +7111,23 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_SetProjModel(self, *args)
 
-    def ProjModel(self, *args) -> "V3d_TypeOfProjectionModel" :
+    def ProjModel(self):
         """
         * Returns the current projection model
 
         :rtype: V3d_TypeOfProjectionModel
 
         """
-        return _V3d.V3d_View_ProjModel(self, *args)
+        return _V3d.V3d_View_ProjModel(self)
 
-    def SetBackFacingModel(self, *args) -> "void" :
+    def SetBackFacingModel(self, *args):
         """
+        * Manages display of the back faces When <aModel> is TOBM_AUTOMATIC the object backfaces are displayed only for surface objects and never displayed for solid objects. this was the previous mode. <aModel> is TOBM_ALWAYS_DISPLAYED the object backfaces are always displayed both for surfaces or solids. <aModel> is TOBM_NEVER_DISPLAYED the object backfaces are never displayed.
+
+        :param aModel: default value is V3d_TOBM_AUTOMATIC
+        :type aModel: V3d_TypeOfBackfacingModel
+        :rtype: None
+
         * Manages display of the back faces When <aModel> is TOBM_AUTOMATIC the object backfaces are displayed only for surface objects and never displayed for solid objects. this was the previous mode. <aModel> is TOBM_ALWAYS_DISPLAYED the object backfaces are always displayed both for surfaces or solids. <aModel> is TOBM_NEVER_DISPLAYED the object backfaces are never displayed.
 
         :param aModel: default value is V3d_TOBM_AUTOMATIC
@@ -3270,17 +7137,23 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_SetBackFacingModel(self, *args)
 
-    def BackFacingModel(self, *args) -> "V3d_TypeOfBackfacingModel" :
+    def BackFacingModel(self):
         """
         * Returns current state of the back faces display
 
         :rtype: V3d_TypeOfBackfacingModel
 
         """
-        return _V3d.V3d_View_BackFacingModel(self, *args)
+        return _V3d.V3d_View_BackFacingModel(self)
 
-    def EnableDepthTest(self, *args) -> "void" :
+    def EnableDepthTest(self, *args):
         """
+        * turns on/off opengl depth testing
+
+        :param enable: default value is Standard_True
+        :type enable: bool
+        :rtype: None
+
         * turns on/off opengl depth testing
 
         :param enable: default value is Standard_True
@@ -3290,17 +7163,23 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_EnableDepthTest(self, *args)
 
-    def IsDepthTestEnabled(self, *args) -> "Standard_Boolean" :
+    def IsDepthTestEnabled(self):
         """
         * returns the current state of the depth testing
 
         :rtype: bool
 
         """
-        return _V3d.V3d_View_IsDepthTestEnabled(self, *args)
+        return _V3d.V3d_View_IsDepthTestEnabled(self)
 
-    def EnableGLLight(self, *args) -> "void" :
+    def EnableGLLight(self, *args):
         """
+        * turns on/off opengl lighting, currently used in triedron displaying
+
+        :param enable: default value is Standard_True
+        :type enable: bool
+        :rtype: None
+
         * turns on/off opengl lighting, currently used in triedron displaying
 
         :param enable: default value is Standard_True
@@ -3310,16 +7189,16 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_EnableGLLight(self, *args)
 
-    def IsGLLightEnabled(self, *args) -> "Standard_Boolean" :
+    def IsGLLightEnabled(self):
         """
         * returns the current state of the gl lighting currently used in triedron displaying
 
         :rtype: bool
 
         """
-        return _V3d.V3d_View_IsGLLightEnabled(self, *args)
+        return _V3d.V3d_View_IsGLLightEnabled(self)
 
-    def AddClipPlane(self, *args) -> "void" :
+    def AddClipPlane(self, *args):
         """
         * Adds clip plane to the view. The composition of clip planes truncates the rendering space to convex volume. Number of supported clip planes can be consulted by PlaneLimit method of associated Visual3d_View. Please be aware that the planes which exceed the limit are igonred during rendering. @param thePlane [in] the clip plane to be added to view.
 
@@ -3330,7 +7209,7 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_AddClipPlane(self, *args)
 
-    def RemoveClipPlane(self, *args) -> "void" :
+    def RemoveClipPlane(self, *args):
         """
         * Removes clip plane from the view. @param thePlane [in] the clip plane to be removed from view.
 
@@ -3341,7 +7220,7 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_RemoveClipPlane(self, *args)
 
-    def SetClipPlanes(self, *args) -> "void" :
+    def SetClipPlanes(self, *args):
         """
         * Sets sequence of clip planes to the view. The planes that have been set before are removed from the view. The composition of clip planes truncates the rendering space to convex volume. Number of supported clip planes can be consulted by PlaneLimit method of associated Visual3d_View. Please be aware that the planes which exceed the limit are igonred during rendering. @param thePlanes [in] the clip planes to set.
 
@@ -3352,92 +7231,92 @@ class V3d_View(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_View_SetClipPlanes(self, *args)
 
-    def GetClipPlanes(self, *args) -> "Graphic3d_SequenceOfHClipPlane const &" :
+    def GetClipPlanes(self):
         """
         * Get clip planes. returns sequence clip planes that have been set for the view
 
         :rtype: Graphic3d_SequenceOfHClipPlane
 
         """
-        return _V3d.V3d_View_GetClipPlanes(self, *args)
+        return _V3d.V3d_View_GetClipPlanes(self)
 
-    def SetRaytracingMode(self, *args) -> "void" :
+    def SetRaytracingMode(self):
         """
         * enables OpenCL-based ray-tracing mode
 
         :rtype: None
 
         """
-        return _V3d.V3d_View_SetRaytracingMode(self, *args)
+        return _V3d.V3d_View_SetRaytracingMode(self)
 
-    def SetRasterizationMode(self, *args) -> "void" :
+    def SetRasterizationMode(self):
         """
         * enables OpenGL-based rasterization mode
 
         :rtype: None
 
         """
-        return _V3d.V3d_View_SetRasterizationMode(self, *args)
+        return _V3d.V3d_View_SetRasterizationMode(self)
 
-    def EnableRaytracedShadows(self, *args) -> "void" :
+    def EnableRaytracedShadows(self):
         """
         * enables sharp shadows in OpenCL-based ray-tracing mode
 
         :rtype: None
 
         """
-        return _V3d.V3d_View_EnableRaytracedShadows(self, *args)
+        return _V3d.V3d_View_EnableRaytracedShadows(self)
 
-    def EnableRaytracedReflections(self, *args) -> "void" :
+    def EnableRaytracedReflections(self):
         """
         * enables specular reflections in OpenCL-based ray-tracing mode
 
         :rtype: None
 
         """
-        return _V3d.V3d_View_EnableRaytracedReflections(self, *args)
+        return _V3d.V3d_View_EnableRaytracedReflections(self)
 
-    def EnableRaytracedAntialiasing(self, *args) -> "void" :
+    def EnableRaytracedAntialiasing(self):
         """
         * enables antialiasing in OpenCL-based ray-tracing mode
 
         :rtype: None
 
         """
-        return _V3d.V3d_View_EnableRaytracedAntialiasing(self, *args)
+        return _V3d.V3d_View_EnableRaytracedAntialiasing(self)
 
-    def DisableRaytracedShadows(self, *args) -> "void" :
+    def DisableRaytracedShadows(self):
         """
         * disables sharp shadows in OpenCL-based ray-tracing mode
 
         :rtype: None
 
         """
-        return _V3d.V3d_View_DisableRaytracedShadows(self, *args)
+        return _V3d.V3d_View_DisableRaytracedShadows(self)
 
-    def DisableRaytracedReflections(self, *args) -> "void" :
+    def DisableRaytracedReflections(self):
         """
         * disables specular reflections in OpenCL-based ray-tracing mode
 
         :rtype: None
 
         """
-        return _V3d.V3d_View_DisableRaytracedReflections(self, *args)
+        return _V3d.V3d_View_DisableRaytracedReflections(self)
 
-    def DisableRaytracedAntialiasing(self, *args) -> "void" :
+    def DisableRaytracedAntialiasing(self):
         """
         * disables antialiasing in OpenCL-based ray-tracing mode
 
         :rtype: None
 
         """
-        return _V3d.V3d_View_DisableRaytracedAntialiasing(self, *args)
+        return _V3d.V3d_View_DisableRaytracedAntialiasing(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(V3d_View self)"""
         return _V3d.V3d_View__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_V3d_View" :
+    def GetHandle(self):
         """GetHandle(V3d_View self) -> Handle_V3d_View"""
         return _V3d.V3d_View_GetHandle(self)
 
@@ -3632,7 +7511,7 @@ Handle_V3d_View._kill_pointed = new_instancemethod(_V3d.Handle_V3d_View__kill_po
 Handle_V3d_View_swigregister = _V3d.Handle_V3d_View_swigregister
 Handle_V3d_View_swigregister(Handle_V3d_View)
 
-def Handle_V3d_View_DownCast(*args) -> "Handle_V3d_View const" :
+def Handle_V3d_View_DownCast(*args):
   return _V3d.Handle_V3d_View_DownCast(*args)
 Handle_V3d_View_DownCast = _V3d.Handle_V3d_View_DownCast
 
@@ -3669,18 +7548,298 @@ class V3d_Viewer(OCC.MMgt.MMgt_TShared):
         :type theSurfaceDetail: V3d_TypeOfSurfaceDetail
         :rtype: None
 
+        * Create a Viewer with the given graphic driver and the given parameters or with their default values. Currently creating of more than 100 viewer instances is not supported and leads to an exception. This limitation might be addressed in some future OCCT releases. If the size of the view is <= 0 Warning: Client must creates a graphic driver
+
+        :param theDriver:
+        :type theDriver: Handle_Graphic3d_GraphicDriver &
+        :param theName:
+        :type theName: Standard_ExtString
+        :param theDomain: default value is 
+        :type theDomain: char *
+        :param theViewSize: default value is 1000.0
+        :type theViewSize: Quantity_Length
+        :param theViewProj: default value is V3d_XposYnegZpos
+        :type theViewProj: V3d_TypeOfOrientation
+        :param theViewBackground: default value is Quantity_NOC_GRAY30
+        :type theViewBackground: Quantity_NameOfColor
+        :param theVisualization: default value is V3d_ZBUFFER
+        :type theVisualization: V3d_TypeOfVisualization
+        :param theShadingModel: default value is V3d_GOURAUD
+        :type theShadingModel: V3d_TypeOfShadingModel
+        :param theUpdateMode: default value is V3d_WAIT
+        :type theUpdateMode: V3d_TypeOfUpdate
+        :param theComputedMode: default value is Standard_True
+        :type theComputedMode: bool
+        :param theDefaultComputedMode: default value is Standard_True
+        :type theDefaultComputedMode: bool
+        :param theSurfaceDetail: default value is V3d_TEX_NONE
+        :type theSurfaceDetail: V3d_TypeOfSurfaceDetail
+        :rtype: None
+
+        * Create a Viewer with the given graphic driver and the given parameters or with their default values. Currently creating of more than 100 viewer instances is not supported and leads to an exception. This limitation might be addressed in some future OCCT releases. If the size of the view is <= 0 Warning: Client must creates a graphic driver
+
+        :param theDriver:
+        :type theDriver: Handle_Graphic3d_GraphicDriver &
+        :param theName:
+        :type theName: Standard_ExtString
+        :param theDomain: default value is 
+        :type theDomain: char *
+        :param theViewSize: default value is 1000.0
+        :type theViewSize: Quantity_Length
+        :param theViewProj: default value is V3d_XposYnegZpos
+        :type theViewProj: V3d_TypeOfOrientation
+        :param theViewBackground: default value is Quantity_NOC_GRAY30
+        :type theViewBackground: Quantity_NameOfColor
+        :param theVisualization: default value is V3d_ZBUFFER
+        :type theVisualization: V3d_TypeOfVisualization
+        :param theShadingModel: default value is V3d_GOURAUD
+        :type theShadingModel: V3d_TypeOfShadingModel
+        :param theUpdateMode: default value is V3d_WAIT
+        :type theUpdateMode: V3d_TypeOfUpdate
+        :param theComputedMode: default value is Standard_True
+        :type theComputedMode: bool
+        :param theDefaultComputedMode: default value is Standard_True
+        :type theDefaultComputedMode: bool
+        :param theSurfaceDetail: default value is V3d_TEX_NONE
+        :type theSurfaceDetail: V3d_TypeOfSurfaceDetail
+        :rtype: None
+
+        * Create a Viewer with the given graphic driver and the given parameters or with their default values. Currently creating of more than 100 viewer instances is not supported and leads to an exception. This limitation might be addressed in some future OCCT releases. If the size of the view is <= 0 Warning: Client must creates a graphic driver
+
+        :param theDriver:
+        :type theDriver: Handle_Graphic3d_GraphicDriver &
+        :param theName:
+        :type theName: Standard_ExtString
+        :param theDomain: default value is 
+        :type theDomain: char *
+        :param theViewSize: default value is 1000.0
+        :type theViewSize: Quantity_Length
+        :param theViewProj: default value is V3d_XposYnegZpos
+        :type theViewProj: V3d_TypeOfOrientation
+        :param theViewBackground: default value is Quantity_NOC_GRAY30
+        :type theViewBackground: Quantity_NameOfColor
+        :param theVisualization: default value is V3d_ZBUFFER
+        :type theVisualization: V3d_TypeOfVisualization
+        :param theShadingModel: default value is V3d_GOURAUD
+        :type theShadingModel: V3d_TypeOfShadingModel
+        :param theUpdateMode: default value is V3d_WAIT
+        :type theUpdateMode: V3d_TypeOfUpdate
+        :param theComputedMode: default value is Standard_True
+        :type theComputedMode: bool
+        :param theDefaultComputedMode: default value is Standard_True
+        :type theDefaultComputedMode: bool
+        :param theSurfaceDetail: default value is V3d_TEX_NONE
+        :type theSurfaceDetail: V3d_TypeOfSurfaceDetail
+        :rtype: None
+
+        * Create a Viewer with the given graphic driver and the given parameters or with their default values. Currently creating of more than 100 viewer instances is not supported and leads to an exception. This limitation might be addressed in some future OCCT releases. If the size of the view is <= 0 Warning: Client must creates a graphic driver
+
+        :param theDriver:
+        :type theDriver: Handle_Graphic3d_GraphicDriver &
+        :param theName:
+        :type theName: Standard_ExtString
+        :param theDomain: default value is 
+        :type theDomain: char *
+        :param theViewSize: default value is 1000.0
+        :type theViewSize: Quantity_Length
+        :param theViewProj: default value is V3d_XposYnegZpos
+        :type theViewProj: V3d_TypeOfOrientation
+        :param theViewBackground: default value is Quantity_NOC_GRAY30
+        :type theViewBackground: Quantity_NameOfColor
+        :param theVisualization: default value is V3d_ZBUFFER
+        :type theVisualization: V3d_TypeOfVisualization
+        :param theShadingModel: default value is V3d_GOURAUD
+        :type theShadingModel: V3d_TypeOfShadingModel
+        :param theUpdateMode: default value is V3d_WAIT
+        :type theUpdateMode: V3d_TypeOfUpdate
+        :param theComputedMode: default value is Standard_True
+        :type theComputedMode: bool
+        :param theDefaultComputedMode: default value is Standard_True
+        :type theDefaultComputedMode: bool
+        :param theSurfaceDetail: default value is V3d_TEX_NONE
+        :type theSurfaceDetail: V3d_TypeOfSurfaceDetail
+        :rtype: None
+
+        * Create a Viewer with the given graphic driver and the given parameters or with their default values. Currently creating of more than 100 viewer instances is not supported and leads to an exception. This limitation might be addressed in some future OCCT releases. If the size of the view is <= 0 Warning: Client must creates a graphic driver
+
+        :param theDriver:
+        :type theDriver: Handle_Graphic3d_GraphicDriver &
+        :param theName:
+        :type theName: Standard_ExtString
+        :param theDomain: default value is 
+        :type theDomain: char *
+        :param theViewSize: default value is 1000.0
+        :type theViewSize: Quantity_Length
+        :param theViewProj: default value is V3d_XposYnegZpos
+        :type theViewProj: V3d_TypeOfOrientation
+        :param theViewBackground: default value is Quantity_NOC_GRAY30
+        :type theViewBackground: Quantity_NameOfColor
+        :param theVisualization: default value is V3d_ZBUFFER
+        :type theVisualization: V3d_TypeOfVisualization
+        :param theShadingModel: default value is V3d_GOURAUD
+        :type theShadingModel: V3d_TypeOfShadingModel
+        :param theUpdateMode: default value is V3d_WAIT
+        :type theUpdateMode: V3d_TypeOfUpdate
+        :param theComputedMode: default value is Standard_True
+        :type theComputedMode: bool
+        :param theDefaultComputedMode: default value is Standard_True
+        :type theDefaultComputedMode: bool
+        :param theSurfaceDetail: default value is V3d_TEX_NONE
+        :type theSurfaceDetail: V3d_TypeOfSurfaceDetail
+        :rtype: None
+
+        * Create a Viewer with the given graphic driver and the given parameters or with their default values. Currently creating of more than 100 viewer instances is not supported and leads to an exception. This limitation might be addressed in some future OCCT releases. If the size of the view is <= 0 Warning: Client must creates a graphic driver
+
+        :param theDriver:
+        :type theDriver: Handle_Graphic3d_GraphicDriver &
+        :param theName:
+        :type theName: Standard_ExtString
+        :param theDomain: default value is 
+        :type theDomain: char *
+        :param theViewSize: default value is 1000.0
+        :type theViewSize: Quantity_Length
+        :param theViewProj: default value is V3d_XposYnegZpos
+        :type theViewProj: V3d_TypeOfOrientation
+        :param theViewBackground: default value is Quantity_NOC_GRAY30
+        :type theViewBackground: Quantity_NameOfColor
+        :param theVisualization: default value is V3d_ZBUFFER
+        :type theVisualization: V3d_TypeOfVisualization
+        :param theShadingModel: default value is V3d_GOURAUD
+        :type theShadingModel: V3d_TypeOfShadingModel
+        :param theUpdateMode: default value is V3d_WAIT
+        :type theUpdateMode: V3d_TypeOfUpdate
+        :param theComputedMode: default value is Standard_True
+        :type theComputedMode: bool
+        :param theDefaultComputedMode: default value is Standard_True
+        :type theDefaultComputedMode: bool
+        :param theSurfaceDetail: default value is V3d_TEX_NONE
+        :type theSurfaceDetail: V3d_TypeOfSurfaceDetail
+        :rtype: None
+
+        * Create a Viewer with the given graphic driver and the given parameters or with their default values. Currently creating of more than 100 viewer instances is not supported and leads to an exception. This limitation might be addressed in some future OCCT releases. If the size of the view is <= 0 Warning: Client must creates a graphic driver
+
+        :param theDriver:
+        :type theDriver: Handle_Graphic3d_GraphicDriver &
+        :param theName:
+        :type theName: Standard_ExtString
+        :param theDomain: default value is 
+        :type theDomain: char *
+        :param theViewSize: default value is 1000.0
+        :type theViewSize: Quantity_Length
+        :param theViewProj: default value is V3d_XposYnegZpos
+        :type theViewProj: V3d_TypeOfOrientation
+        :param theViewBackground: default value is Quantity_NOC_GRAY30
+        :type theViewBackground: Quantity_NameOfColor
+        :param theVisualization: default value is V3d_ZBUFFER
+        :type theVisualization: V3d_TypeOfVisualization
+        :param theShadingModel: default value is V3d_GOURAUD
+        :type theShadingModel: V3d_TypeOfShadingModel
+        :param theUpdateMode: default value is V3d_WAIT
+        :type theUpdateMode: V3d_TypeOfUpdate
+        :param theComputedMode: default value is Standard_True
+        :type theComputedMode: bool
+        :param theDefaultComputedMode: default value is Standard_True
+        :type theDefaultComputedMode: bool
+        :param theSurfaceDetail: default value is V3d_TEX_NONE
+        :type theSurfaceDetail: V3d_TypeOfSurfaceDetail
+        :rtype: None
+
+        * Create a Viewer with the given graphic driver and the given parameters or with their default values. Currently creating of more than 100 viewer instances is not supported and leads to an exception. This limitation might be addressed in some future OCCT releases. If the size of the view is <= 0 Warning: Client must creates a graphic driver
+
+        :param theDriver:
+        :type theDriver: Handle_Graphic3d_GraphicDriver &
+        :param theName:
+        :type theName: Standard_ExtString
+        :param theDomain: default value is 
+        :type theDomain: char *
+        :param theViewSize: default value is 1000.0
+        :type theViewSize: Quantity_Length
+        :param theViewProj: default value is V3d_XposYnegZpos
+        :type theViewProj: V3d_TypeOfOrientation
+        :param theViewBackground: default value is Quantity_NOC_GRAY30
+        :type theViewBackground: Quantity_NameOfColor
+        :param theVisualization: default value is V3d_ZBUFFER
+        :type theVisualization: V3d_TypeOfVisualization
+        :param theShadingModel: default value is V3d_GOURAUD
+        :type theShadingModel: V3d_TypeOfShadingModel
+        :param theUpdateMode: default value is V3d_WAIT
+        :type theUpdateMode: V3d_TypeOfUpdate
+        :param theComputedMode: default value is Standard_True
+        :type theComputedMode: bool
+        :param theDefaultComputedMode: default value is Standard_True
+        :type theDefaultComputedMode: bool
+        :param theSurfaceDetail: default value is V3d_TEX_NONE
+        :type theSurfaceDetail: V3d_TypeOfSurfaceDetail
+        :rtype: None
+
+        * Create a Viewer with the given graphic driver and the given parameters or with their default values. Currently creating of more than 100 viewer instances is not supported and leads to an exception. This limitation might be addressed in some future OCCT releases. If the size of the view is <= 0 Warning: Client must creates a graphic driver
+
+        :param theDriver:
+        :type theDriver: Handle_Graphic3d_GraphicDriver &
+        :param theName:
+        :type theName: Standard_ExtString
+        :param theDomain: default value is 
+        :type theDomain: char *
+        :param theViewSize: default value is 1000.0
+        :type theViewSize: Quantity_Length
+        :param theViewProj: default value is V3d_XposYnegZpos
+        :type theViewProj: V3d_TypeOfOrientation
+        :param theViewBackground: default value is Quantity_NOC_GRAY30
+        :type theViewBackground: Quantity_NameOfColor
+        :param theVisualization: default value is V3d_ZBUFFER
+        :type theVisualization: V3d_TypeOfVisualization
+        :param theShadingModel: default value is V3d_GOURAUD
+        :type theShadingModel: V3d_TypeOfShadingModel
+        :param theUpdateMode: default value is V3d_WAIT
+        :type theUpdateMode: V3d_TypeOfUpdate
+        :param theComputedMode: default value is Standard_True
+        :type theComputedMode: bool
+        :param theDefaultComputedMode: default value is Standard_True
+        :type theDefaultComputedMode: bool
+        :param theSurfaceDetail: default value is V3d_TEX_NONE
+        :type theSurfaceDetail: V3d_TypeOfSurfaceDetail
+        :rtype: None
+
+        * Create a Viewer with the given graphic driver and the given parameters or with their default values. Currently creating of more than 100 viewer instances is not supported and leads to an exception. This limitation might be addressed in some future OCCT releases. If the size of the view is <= 0 Warning: Client must creates a graphic driver
+
+        :param theDriver:
+        :type theDriver: Handle_Graphic3d_GraphicDriver &
+        :param theName:
+        :type theName: Standard_ExtString
+        :param theDomain: default value is 
+        :type theDomain: char *
+        :param theViewSize: default value is 1000.0
+        :type theViewSize: Quantity_Length
+        :param theViewProj: default value is V3d_XposYnegZpos
+        :type theViewProj: V3d_TypeOfOrientation
+        :param theViewBackground: default value is Quantity_NOC_GRAY30
+        :type theViewBackground: Quantity_NameOfColor
+        :param theVisualization: default value is V3d_ZBUFFER
+        :type theVisualization: V3d_TypeOfVisualization
+        :param theShadingModel: default value is V3d_GOURAUD
+        :type theShadingModel: V3d_TypeOfShadingModel
+        :param theUpdateMode: default value is V3d_WAIT
+        :type theUpdateMode: V3d_TypeOfUpdate
+        :param theComputedMode: default value is Standard_True
+        :type theComputedMode: bool
+        :param theDefaultComputedMode: default value is Standard_True
+        :type theDefaultComputedMode: bool
+        :param theSurfaceDetail: default value is V3d_TEX_NONE
+        :type theSurfaceDetail: V3d_TypeOfSurfaceDetail
+        :rtype: None
+
         """
         _V3d.V3d_Viewer_swiginit(self,_V3d.new_V3d_Viewer(*args))
-    def CreateView(self, *args) -> "Handle_V3d_View" :
+    def CreateView(self):
         """
         * creates a view in the viewer according to its default parameters.
 
         :rtype: Handle_V3d_View
 
         """
-        return _V3d.V3d_Viewer_CreateView(self, *args)
+        return _V3d.V3d_Viewer_CreateView(self)
 
-    def SetViewOn(self, *args) -> "void" :
+    def SetViewOn(self, *args):
         """
         * Activates all of the views of a viewer attached  to a window.
 
@@ -3695,7 +7854,7 @@ class V3d_Viewer(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_Viewer_SetViewOn(self, *args)
 
-    def SetViewOff(self, *args) -> "void" :
+    def SetViewOff(self, *args):
         """
         * Deactivates all the views of a Viewer  attached to a window.
 
@@ -3710,61 +7869,61 @@ class V3d_Viewer(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_Viewer_SetViewOff(self, *args)
 
-    def Update(self, *args) -> "void" :
+    def Update(self):
         """
         * Deprecated, Redraw() should be used instead.
 
         :rtype: None
 
         """
-        return _V3d.V3d_Viewer_Update(self, *args)
+        return _V3d.V3d_Viewer_Update(self)
 
-    def UpdateLights(self, *args) -> "void" :
+    def UpdateLights(self):
         """
         * Updates the lights of all the views of a viewer.
 
         :rtype: None
 
         """
-        return _V3d.V3d_Viewer_UpdateLights(self, *args)
+        return _V3d.V3d_Viewer_UpdateLights(self)
 
-    def Redraw(self, *args) -> "void" :
+    def Redraw(self):
         """
         * Redraws all the views of the Viewer even if no  modification has taken place. Must be called if  all the views of the Viewer are exposed, as for example in a global DeIconification.
 
         :rtype: None
 
         """
-        return _V3d.V3d_Viewer_Redraw(self, *args)
+        return _V3d.V3d_Viewer_Redraw(self)
 
-    def Remove(self, *args) -> "void" :
+    def Remove(self):
         """
         * Suppresses the Viewer.
 
         :rtype: None
 
         """
-        return _V3d.V3d_Viewer_Remove(self, *args)
+        return _V3d.V3d_Viewer_Remove(self)
 
-    def Erase(self, *args) -> "void" :
+    def Erase(self):
         """
         * Erase all Objects in All the views.
 
         :rtype: None
 
         """
-        return _V3d.V3d_Viewer_Erase(self, *args)
+        return _V3d.V3d_Viewer_Erase(self)
 
-    def UnHighlight(self, *args) -> "void" :
+    def UnHighlight(self):
         """
         * UnHighlight all Objects in All the views.
 
         :rtype: None
 
         """
-        return _V3d.V3d_Viewer_UnHighlight(self, *args)
+        return _V3d.V3d_Viewer_UnHighlight(self)
 
-    def SetDefaultBackgroundColor(self, *args) -> "void" :
+    def SetDefaultBackgroundColor(self, *args):
         """
         * Defines the default base colour of views attached  to the Viewer by supplying the type of colour  definition and the three component values..
 
@@ -3793,8 +7952,18 @@ class V3d_Viewer(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_Viewer_SetDefaultBackgroundColor(self, *args)
 
-    def SetDefaultBgGradientColors(self, *args) -> "void" :
+    def SetDefaultBgGradientColors(self, *args):
         """
+        * Defines the default gradient background colours of view  attached to the viewer by supplying the name of the  colours under the form Quantity_NOC_xxxx .
+
+        :param Name1:
+        :type Name1: Quantity_NameOfColor
+        :param Name2:
+        :type Name2: Quantity_NameOfColor
+        :param FillStyle: default value is Aspect_GFM_HOR
+        :type FillStyle: Aspect_GradientFillMethod
+        :rtype: None
+
         * Defines the default gradient background colours of view  attached to the viewer by supplying the name of the  colours under the form Quantity_NOC_xxxx .
 
         :param Name1:
@@ -3815,10 +7984,20 @@ class V3d_Viewer(OCC.MMgt.MMgt_TShared):
         :type FillStyle: Aspect_GradientFillMethod
         :rtype: None
 
+        * Defines the default gradient background colours of views  attached to the viewer by supplying the colour objects
+
+        :param Color1:
+        :type Color1: Quantity_Color &
+        :param Color2:
+        :type Color2: Quantity_Color &
+        :param FillStyle: default value is Aspect_GFM_HOR
+        :type FillStyle: Aspect_GradientFillMethod
+        :rtype: None
+
         """
         return _V3d.V3d_Viewer_SetDefaultBgGradientColors(self, *args)
 
-    def SetDefaultViewSize(self, *args) -> "void" :
+    def SetDefaultViewSize(self, *args):
         """
         * Gives a default size for the creation of views of  the viewer.
 
@@ -3829,7 +8008,7 @@ class V3d_Viewer(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_Viewer_SetDefaultViewSize(self, *args)
 
-    def SetDefaultViewProj(self, *args) -> "void" :
+    def SetDefaultViewProj(self, *args):
         """
         * Gives the default projection for creating views  in the viewer.
 
@@ -3840,7 +8019,7 @@ class V3d_Viewer(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_Viewer_SetDefaultViewProj(self, *args)
 
-    def SetDefaultVisualization(self, *args) -> "void" :
+    def SetDefaultVisualization(self, *args):
         """
         * Gives the default visualisation mode..
 
@@ -3851,7 +8030,7 @@ class V3d_Viewer(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_Viewer_SetDefaultVisualization(self, *args)
 
-    def SetZBufferManagment(self, *args) -> "void" :
+    def SetZBufferManagment(self, *args):
         """
         * defines the strategy concerning the ZBuffer activity. If Automatic is true, ZBuffer will be activated or deactivated depending on the fact that faces exist or not in the Viewer. This will optimize the response time in the case where only wireframe objects are displayed. If Automatic is False, ZBuffer will be activated or deactivated depending on the choice of SetVisualization in each View. Note that by default, the ZBufferManagment is not automatic.
 
@@ -3862,16 +8041,16 @@ class V3d_Viewer(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_Viewer_SetZBufferManagment(self, *args)
 
-    def ZBufferManagment(self, *args) -> "Standard_Boolean" :
+    def ZBufferManagment(self):
         """
         * returns the ZBuffer stategy choice.
 
         :rtype: bool
 
         """
-        return _V3d.V3d_Viewer_ZBufferManagment(self, *args)
+        return _V3d.V3d_Viewer_ZBufferManagment(self)
 
-    def SetDefaultShadingModel(self, *args) -> "void" :
+    def SetDefaultShadingModel(self, *args):
         """
         * Gives the default type of SHADING.
 
@@ -3882,7 +8061,7 @@ class V3d_Viewer(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_Viewer_SetDefaultShadingModel(self, *args)
 
-    def SetDefaultSurfaceDetail(self, *args) -> "void" :
+    def SetDefaultSurfaceDetail(self, *args):
         """
         * Gives the default type of texture mapping.
 
@@ -3893,7 +8072,7 @@ class V3d_Viewer(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_Viewer_SetDefaultSurfaceDetail(self, *args)
 
-    def SetDefaultAngle(self, *args) -> "void" :
+    def SetDefaultAngle(self, *args):
         """
         :param Angle:
         :type Angle: Quantity_PlaneAngle
@@ -3902,7 +8081,7 @@ class V3d_Viewer(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_Viewer_SetDefaultAngle(self, *args)
 
-    def SetUpdateMode(self, *args) -> "void" :
+    def SetUpdateMode(self, *args):
         """
         * Defines the mode of regenerating the views making  up the viewer. This can be immediate <ASAP> or  deferred <WAIT>. In this latter case, the views are  updated when the method Update(me) is called.
 
@@ -3913,7 +8092,7 @@ class V3d_Viewer(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_Viewer_SetUpdateMode(self, *args)
 
-    def SetDefaultTypeOfView(self, *args) -> "void" :
+    def SetDefaultTypeOfView(self, *args):
         """
         :param Type:
         :type Type: V3d_TypeOfView
@@ -3922,7 +8101,7 @@ class V3d_Viewer(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_Viewer_SetDefaultTypeOfView(self, *args)
 
-    def SetPrivilegedPlane(self, *args) -> "void" :
+    def SetPrivilegedPlane(self, *args):
         """
         :param aPlane:
         :type aPlane: gp_Ax3
@@ -3931,15 +8110,21 @@ class V3d_Viewer(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_Viewer_SetPrivilegedPlane(self, *args)
 
-    def PrivilegedPlane(self, *args) -> "gp_Ax3" :
+    def PrivilegedPlane(self):
         """
         :rtype: gp_Ax3
 
         """
-        return _V3d.V3d_Viewer_PrivilegedPlane(self, *args)
+        return _V3d.V3d_Viewer_PrivilegedPlane(self)
 
-    def DisplayPrivilegedPlane(self, *args) -> "void" :
+    def DisplayPrivilegedPlane(self, *args):
         """
+        :param OnOff:
+        :type OnOff: bool
+        :param aSize: default value is 1
+        :type aSize: Quantity_Length
+        :rtype: None
+
         :param OnOff:
         :type OnOff: bool
         :param aSize: default value is 1
@@ -3949,7 +8134,7 @@ class V3d_Viewer(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_Viewer_DisplayPrivilegedPlane(self, *args)
 
-    def SetLightOn(self, *args) -> "void" :
+    def SetLightOn(self, *args):
         """
         * Activates MyLight in the viewer.
 
@@ -3964,7 +8149,7 @@ class V3d_Viewer(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_Viewer_SetLightOn(self, *args)
 
-    def SetLightOff(self, *args) -> "void" :
+    def SetLightOff(self, *args):
         """
         * Desactivate MyLight in this viewer.
 
@@ -3979,7 +8164,7 @@ class V3d_Viewer(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_Viewer_SetLightOff(self, *args)
 
-    def DelLight(self, *args) -> "void" :
+    def DelLight(self, *args):
         """
         * Delete Light in Sequence Of Lights.
 
@@ -3990,7 +8175,7 @@ class V3d_Viewer(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_Viewer_DelLight(self, *args)
 
-    def SetCurrentSelectedLight(self, *args) -> "void" :
+    def SetCurrentSelectedLight(self, *args):
         """
         * Defines the selected light.
 
@@ -4001,16 +8186,16 @@ class V3d_Viewer(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_Viewer_SetCurrentSelectedLight(self, *args)
 
-    def ClearCurrentSelectedLight(self, *args) -> "void" :
+    def ClearCurrentSelectedLight(self):
         """
         * Defines the selected light at NULL.
 
         :rtype: None
 
         """
-        return _V3d.V3d_Viewer_ClearCurrentSelectedLight(self, *args)
+        return _V3d.V3d_Viewer_ClearCurrentSelectedLight(self)
 
-    def DefaultBackgroundColor(self, *args) -> "Quantity_Color" :
+    def DefaultBackgroundColor(self, *args):
         """
         * Returns the default background colour depending of the type.
 
@@ -4031,7 +8216,7 @@ class V3d_Viewer(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_Viewer_DefaultBackgroundColor(self, *args)
 
-    def DefaultBgGradientColors(self, *args) -> "void" :
+    def DefaultBgGradientColors(self, *args):
         """
         * Returns the gradient background colour objects of the view.
 
@@ -4044,240 +8229,240 @@ class V3d_Viewer(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_Viewer_DefaultBgGradientColors(self, *args)
 
-    def DefaultViewSize(self, *args) -> "Quantity_Length" :
+    def DefaultViewSize(self):
         """
         * Returns the default size of the view.
 
         :rtype: Quantity_Length
 
         """
-        return _V3d.V3d_Viewer_DefaultViewSize(self, *args)
+        return _V3d.V3d_Viewer_DefaultViewSize(self)
 
-    def DefaultViewProj(self, *args) -> "V3d_TypeOfOrientation" :
+    def DefaultViewProj(self):
         """
         * Returns the default Projection.
 
         :rtype: V3d_TypeOfOrientation
 
         """
-        return _V3d.V3d_Viewer_DefaultViewProj(self, *args)
+        return _V3d.V3d_Viewer_DefaultViewProj(self)
 
-    def DefaultVisualization(self, *args) -> "V3d_TypeOfVisualization" :
+    def DefaultVisualization(self):
         """
         * Returns the default type of Visualization.
 
         :rtype: V3d_TypeOfVisualization
 
         """
-        return _V3d.V3d_Viewer_DefaultVisualization(self, *args)
+        return _V3d.V3d_Viewer_DefaultVisualization(self)
 
-    def DefaultShadingModel(self, *args) -> "V3d_TypeOfShadingModel" :
+    def DefaultShadingModel(self):
         """
         * Returns the default type of Shading
 
         :rtype: V3d_TypeOfShadingModel
 
         """
-        return _V3d.V3d_Viewer_DefaultShadingModel(self, *args)
+        return _V3d.V3d_Viewer_DefaultShadingModel(self)
 
-    def DefaultSurfaceDetail(self, *args) -> "V3d_TypeOfSurfaceDetail" :
+    def DefaultSurfaceDetail(self):
         """
         * Returns the default type of texture mapping
 
         :rtype: V3d_TypeOfSurfaceDetail
 
         """
-        return _V3d.V3d_Viewer_DefaultSurfaceDetail(self, *args)
+        return _V3d.V3d_Viewer_DefaultSurfaceDetail(self)
 
-    def DefaultAngle(self, *args) -> "Quantity_PlaneAngle" :
+    def DefaultAngle(self):
         """
         :rtype: Quantity_PlaneAngle
 
         """
-        return _V3d.V3d_Viewer_DefaultAngle(self, *args)
+        return _V3d.V3d_Viewer_DefaultAngle(self)
 
-    def UpdateMode(self, *args) -> "V3d_TypeOfUpdate" :
+    def UpdateMode(self):
         """
         * Returns the regeneration mode of views in the viewer.
 
         :rtype: V3d_TypeOfUpdate
 
         """
-        return _V3d.V3d_Viewer_UpdateMode(self, *args)
+        return _V3d.V3d_Viewer_UpdateMode(self)
 
-    def IfMoreViews(self, *args) -> "Standard_Boolean" :
+    def IfMoreViews(self):
         """
         * Returns True if One View more can be activated in this Viewer.
 
         :rtype: bool
 
         """
-        return _V3d.V3d_Viewer_IfMoreViews(self, *args)
+        return _V3d.V3d_Viewer_IfMoreViews(self)
 
-    def InitActiveViews(self, *args) -> "void" :
+    def InitActiveViews(self):
         """
         * initializes an iteration on the active views.
 
         :rtype: None
 
         """
-        return _V3d.V3d_Viewer_InitActiveViews(self, *args)
+        return _V3d.V3d_Viewer_InitActiveViews(self)
 
-    def MoreActiveViews(self, *args) -> "Standard_Boolean" :
+    def MoreActiveViews(self):
         """
         * returns true if there are more active view(s) to return.
 
         :rtype: bool
 
         """
-        return _V3d.V3d_Viewer_MoreActiveViews(self, *args)
+        return _V3d.V3d_Viewer_MoreActiveViews(self)
 
-    def NextActiveViews(self, *args) -> "void" :
+    def NextActiveViews(self):
         """
         * Go to the next active view (if there is not, ActiveView will raise an exception)
 
         :rtype: None
 
         """
-        return _V3d.V3d_Viewer_NextActiveViews(self, *args)
+        return _V3d.V3d_Viewer_NextActiveViews(self)
 
-    def ActiveView(self, *args) -> "Handle_V3d_View" :
+    def ActiveView(self):
         """
         :rtype: Handle_V3d_View
 
         """
-        return _V3d.V3d_Viewer_ActiveView(self, *args)
+        return _V3d.V3d_Viewer_ActiveView(self)
 
-    def LastActiveView(self, *args) -> "Standard_Boolean" :
+    def LastActiveView(self):
         """
         * returns true if there is only one active view.
 
         :rtype: bool
 
         """
-        return _V3d.V3d_Viewer_LastActiveView(self, *args)
+        return _V3d.V3d_Viewer_LastActiveView(self)
 
-    def InitDefinedViews(self, *args) -> "void" :
+    def InitDefinedViews(self):
         """
         * initializes an iteration on the Defined views.
 
         :rtype: None
 
         """
-        return _V3d.V3d_Viewer_InitDefinedViews(self, *args)
+        return _V3d.V3d_Viewer_InitDefinedViews(self)
 
-    def MoreDefinedViews(self, *args) -> "Standard_Boolean" :
+    def MoreDefinedViews(self):
         """
         * returns true if there are more Defined view(s) to return.
 
         :rtype: bool
 
         """
-        return _V3d.V3d_Viewer_MoreDefinedViews(self, *args)
+        return _V3d.V3d_Viewer_MoreDefinedViews(self)
 
-    def NextDefinedViews(self, *args) -> "void" :
+    def NextDefinedViews(self):
         """
         * Go to the next Defined view (if there is not, DefinedView will raise an exception)
 
         :rtype: None
 
         """
-        return _V3d.V3d_Viewer_NextDefinedViews(self, *args)
+        return _V3d.V3d_Viewer_NextDefinedViews(self)
 
-    def DefinedView(self, *args) -> "Handle_V3d_View" :
+    def DefinedView(self):
         """
         :rtype: Handle_V3d_View
 
         """
-        return _V3d.V3d_Viewer_DefinedView(self, *args)
+        return _V3d.V3d_Viewer_DefinedView(self)
 
-    def InitActiveLights(self, *args) -> "void" :
+    def InitActiveLights(self):
         """
         * initializes an iteration on the active Lights.
 
         :rtype: None
 
         """
-        return _V3d.V3d_Viewer_InitActiveLights(self, *args)
+        return _V3d.V3d_Viewer_InitActiveLights(self)
 
-    def MoreActiveLights(self, *args) -> "Standard_Boolean" :
+    def MoreActiveLights(self):
         """
         * returns true if there are more active Light(s) to return.
 
         :rtype: bool
 
         """
-        return _V3d.V3d_Viewer_MoreActiveLights(self, *args)
+        return _V3d.V3d_Viewer_MoreActiveLights(self)
 
-    def NextActiveLights(self, *args) -> "void" :
+    def NextActiveLights(self):
         """
         * Go to the next active Light (if there is not, ActiveLight will raise an exception)
 
         :rtype: None
 
         """
-        return _V3d.V3d_Viewer_NextActiveLights(self, *args)
+        return _V3d.V3d_Viewer_NextActiveLights(self)
 
-    def ActiveLight(self, *args) -> "Handle_V3d_Light" :
+    def ActiveLight(self):
         """
         :rtype: Handle_V3d_Light
 
         """
-        return _V3d.V3d_Viewer_ActiveLight(self, *args)
+        return _V3d.V3d_Viewer_ActiveLight(self)
 
-    def InitDefinedLights(self, *args) -> "void" :
+    def InitDefinedLights(self):
         """
         * initializes an iteration on the Defined Lights.
 
         :rtype: None
 
         """
-        return _V3d.V3d_Viewer_InitDefinedLights(self, *args)
+        return _V3d.V3d_Viewer_InitDefinedLights(self)
 
-    def MoreDefinedLights(self, *args) -> "Standard_Boolean" :
+    def MoreDefinedLights(self):
         """
         * returns true if there are more Defined Light(s) to return.
 
         :rtype: bool
 
         """
-        return _V3d.V3d_Viewer_MoreDefinedLights(self, *args)
+        return _V3d.V3d_Viewer_MoreDefinedLights(self)
 
-    def NextDefinedLights(self, *args) -> "void" :
+    def NextDefinedLights(self):
         """
         * Go to the next Defined Light (if there is not, DefinedLight will raise an exception)
 
         :rtype: None
 
         """
-        return _V3d.V3d_Viewer_NextDefinedLights(self, *args)
+        return _V3d.V3d_Viewer_NextDefinedLights(self)
 
-    def DefinedLight(self, *args) -> "Handle_V3d_Light" :
+    def DefinedLight(self):
         """
         :rtype: Handle_V3d_Light
 
         """
-        return _V3d.V3d_Viewer_DefinedLight(self, *args)
+        return _V3d.V3d_Viewer_DefinedLight(self)
 
-    def Viewer(self, *args) -> "Handle_Visual3d_ViewManager" :
+    def Viewer(self):
         """
         * Returns the viewer associated to Visual3d .
 
         :rtype: Handle_Visual3d_ViewManager
 
         """
-        return _V3d.V3d_Viewer_Viewer(self, *args)
+        return _V3d.V3d_Viewer_Viewer(self)
 
-    def CurrentSelectedLight(self, *args) -> "Handle_V3d_Light" :
+    def CurrentSelectedLight(self):
         """
         * Returns the Selected Light.
 
         :rtype: Handle_V3d_Light
 
         """
-        return _V3d.V3d_Viewer_CurrentSelectedLight(self, *args)
+        return _V3d.V3d_Viewer_CurrentSelectedLight(self)
 
-    def IsGlobalLight(self, *args) -> "Standard_Boolean" :
+    def IsGlobalLight(self, *args):
         """
         :param TheLight:
         :type TheLight: Handle_V3d_Light &
@@ -4286,25 +8471,25 @@ class V3d_Viewer(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_Viewer_IsGlobalLight(self, *args)
 
-    def ComputedMode(self, *args) -> "Standard_Boolean" :
+    def ComputedMode(self):
         """
         * returns true if the computed mode can be used.
 
         :rtype: bool
 
         """
-        return _V3d.V3d_Viewer_ComputedMode(self, *args)
+        return _V3d.V3d_Viewer_ComputedMode(self)
 
-    def DefaultComputedMode(self, *args) -> "Standard_Boolean" :
+    def DefaultComputedMode(self):
         """
         * returns true if by default the computed mode must be used.
 
         :rtype: bool
 
         """
-        return _V3d.V3d_Viewer_DefaultComputedMode(self, *args)
+        return _V3d.V3d_Viewer_DefaultComputedMode(self)
 
-    def ActivateGrid(self, *args) -> "void" :
+    def ActivateGrid(self, *args):
         """
         * Activates the grid in all views of <self>.
 
@@ -4317,17 +8502,23 @@ class V3d_Viewer(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_Viewer_ActivateGrid(self, *args)
 
-    def DeactivateGrid(self, *args) -> "void" :
+    def DeactivateGrid(self):
         """
         * Deactivates the grid in all views of <self>.
 
         :rtype: None
 
         """
-        return _V3d.V3d_Viewer_DeactivateGrid(self, *args)
+        return _V3d.V3d_Viewer_DeactivateGrid(self)
 
-    def SetGridEcho(self, *args) -> "void" :
+    def SetGridEcho(self, *args):
         """
+        * Show/Don't show grid echo to the hit point. If True,the grid echo will be shown at ConvertToGrid() time.
+
+        :param showGrid: default value is Standard_True
+        :type showGrid: bool
+        :rtype: None
+
         * Show/Don't show grid echo to the hit point. If True,the grid echo will be shown at ConvertToGrid() time.
 
         :param showGrid: default value is Standard_True
@@ -4343,52 +8534,52 @@ class V3d_Viewer(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_Viewer_SetGridEcho(self, *args)
 
-    def GridEcho(self, *args) -> "Standard_Boolean" :
+    def GridEcho(self):
         """
         * Returns True when grid echo must be displayed at hit point.
 
         :rtype: bool
 
         """
-        return _V3d.V3d_Viewer_GridEcho(self, *args)
+        return _V3d.V3d_Viewer_GridEcho(self)
 
-    def IsActive(self, *args) -> "Standard_Boolean" :
+    def IsActive(self):
         """
         * Returns Standard_True if a grid is activated in <self>.
 
         :rtype: bool
 
         """
-        return _V3d.V3d_Viewer_IsActive(self, *args)
+        return _V3d.V3d_Viewer_IsActive(self)
 
-    def Grid(self, *args) -> "Handle_Aspect_Grid" :
+    def Grid(self):
         """
         * Returns the defined grid in <self>.
 
         :rtype: Handle_Aspect_Grid
 
         """
-        return _V3d.V3d_Viewer_Grid(self, *args)
+        return _V3d.V3d_Viewer_Grid(self)
 
-    def GridType(self, *args) -> "Aspect_GridType" :
+    def GridType(self):
         """
         * Returns the current grid type defined in <self>.
 
         :rtype: Aspect_GridType
 
         """
-        return _V3d.V3d_Viewer_GridType(self, *args)
+        return _V3d.V3d_Viewer_GridType(self)
 
-    def GridDrawMode(self, *args) -> "Aspect_GridDrawMode" :
+    def GridDrawMode(self):
         """
         * Returns the current grid draw mode defined in <self>.
 
         :rtype: Aspect_GridDrawMode
 
         """
-        return _V3d.V3d_Viewer_GridDrawMode(self, *args)
+        return _V3d.V3d_Viewer_GridDrawMode(self)
 
-    def RectangularGridValues(self, *args) -> "void" :
+    def RectangularGridValues(self, *args):
         """
         * Returns the definition of the rectangular grid.
 
@@ -4407,7 +8598,7 @@ class V3d_Viewer(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_Viewer_RectangularGridValues(self, *args)
 
-    def SetRectangularGridValues(self, *args) -> "void" :
+    def SetRectangularGridValues(self, *args):
         """
         * Sets the definition of the rectangular grid.  <XOrigin>, <YOrigin> defines the origin of the grid.  <XStep> defines the interval between 2 vertical lines.  <YStep> defines the interval between 2 horizontal lines.  <RotationAngle> defines the rotation angle of the grid.
 
@@ -4426,7 +8617,7 @@ class V3d_Viewer(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_Viewer_SetRectangularGridValues(self, *args)
 
-    def CircularGridValues(self, *args) -> "void" :
+    def CircularGridValues(self, *args):
         """
         * Returns the definition of the circular grid.
 
@@ -4437,7 +8628,7 @@ class V3d_Viewer(OCC.MMgt.MMgt_TShared):
         :param RadiusStep:
         :type RadiusStep: Quantity_Length &
         :param DivisionNumber:
-        :type DivisionNumber: int &
+        :type DivisionNumber: Standard_Integer &
         :param RotationAngle:
         :type RotationAngle: Quantity_PlaneAngle &
         :rtype: None
@@ -4445,7 +8636,7 @@ class V3d_Viewer(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_Viewer_CircularGridValues(self, *args)
 
-    def SetCircularGridValues(self, *args) -> "void" :
+    def SetCircularGridValues(self, *args):
         """
         * Sets the definition of the circular grid.  <XOrigin>, <YOrigin> defines the origin of the grid.  <RadiusStep> defines the interval between 2 circles.  <DivisionNumber> defines the section number of one half circle.  <RotationAngle> defines the rotation angle of the grid.
 
@@ -4456,7 +8647,7 @@ class V3d_Viewer(OCC.MMgt.MMgt_TShared):
         :param RadiusStep:
         :type RadiusStep: Quantity_Length
         :param DivisionNumber:
-        :type DivisionNumber: int
+        :type DivisionNumber: Standard_Integer
         :param RotationAngle:
         :type RotationAngle: Quantity_PlaneAngle
         :rtype: None
@@ -4464,7 +8655,7 @@ class V3d_Viewer(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_Viewer_SetCircularGridValues(self, *args)
 
-    def CircularGridGraphicValues(self, *args) -> "void" :
+    def CircularGridGraphicValues(self):
         """
         * Returns the location and the size of the grid.
 
@@ -4475,9 +8666,9 @@ class V3d_Viewer(OCC.MMgt.MMgt_TShared):
         :rtype: None
 
         """
-        return _V3d.V3d_Viewer_CircularGridGraphicValues(self, *args)
+        return _V3d.V3d_Viewer_CircularGridGraphicValues(self)
 
-    def SetCircularGridGraphicValues(self, *args) -> "void" :
+    def SetCircularGridGraphicValues(self, *args):
         """
         * Sets the location and the size of the grid.  <XSize> defines the width of the grid.  <YSize> defines the height of the grid.  <OffSet> defines the displacement along the plane normal.
 
@@ -4490,7 +8681,7 @@ class V3d_Viewer(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_Viewer_SetCircularGridGraphicValues(self, *args)
 
-    def RectangularGridGraphicValues(self, *args) -> "void" :
+    def RectangularGridGraphicValues(self):
         """
         * Returns the location and the size of the grid.
 
@@ -4503,9 +8694,9 @@ class V3d_Viewer(OCC.MMgt.MMgt_TShared):
         :rtype: None
 
         """
-        return _V3d.V3d_Viewer_RectangularGridGraphicValues(self, *args)
+        return _V3d.V3d_Viewer_RectangularGridGraphicValues(self)
 
-    def SetRectangularGridGraphicValues(self, *args) -> "void" :
+    def SetRectangularGridGraphicValues(self, *args):
         """
         * Sets the location and the size of the grid.  <XSize> defines the width of the grid.  <YSize> defines the height of the grid.  <OffSet> defines the displacement along the plane normal.
 
@@ -4520,30 +8711,30 @@ class V3d_Viewer(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_Viewer_SetRectangularGridGraphicValues(self, *args)
 
-    def GetGradientBackground(self, *args) -> "Aspect_GradientBackground" :
+    def GetGradientBackground(self):
         """
         * Returns the gradient background of the view.
 
         :rtype: Aspect_GradientBackground
 
         """
-        return _V3d.V3d_Viewer_GetGradientBackground(self, *args)
+        return _V3d.V3d_Viewer_GetGradientBackground(self)
 
-    def SetDefaultLights(self, *args) -> "void" :
+    def SetDefaultLights(self):
         """
         * defines default lights - positional-light 0.3 0. 0. directional-light V3d_XnegYposZpos directional-light V3d_XnegYneg ambient-light
 
         :rtype: None
 
         """
-        return _V3d.V3d_Viewer_SetDefaultLights(self, *args)
+        return _V3d.V3d_Viewer_SetDefaultLights(self)
 
-    def SetZLayerSettings(self, *args) -> "void" :
+    def SetZLayerSettings(self, *args):
         """
         * Sets the settings for a single Z layer.
 
         :param theLayerId:
-        :type theLayerId: int
+        :type theLayerId: Standard_Integer
         :param theSettings:
         :type theSettings: Graphic3d_ZLayerSettings
         :rtype: None
@@ -4551,40 +8742,40 @@ class V3d_Viewer(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_Viewer_SetZLayerSettings(self, *args)
 
-    def ZLayerSettings(self, *args) -> "Graphic3d_ZLayerSettings" :
+    def ZLayerSettings(self, *args):
         """
         * Returns the settings of a single Z layer.
 
         :param theLayerId:
-        :type theLayerId: int
+        :type theLayerId: Standard_Integer
         :rtype: Graphic3d_ZLayerSettings
 
         """
         return _V3d.V3d_Viewer_ZLayerSettings(self, *args)
 
-    def AddZLayer(self, *args) -> "Standard_Boolean" :
+    def AddZLayer(self):
         """
         * Add a new top-level Z layer to all managed views and get its ID as <theLayerId> value. The Z layers are controlled entirely by viewer, it is not possible to add a layer to a particular view. The method returns Standard_False if the layer can not be created. The layer mechanism allows to display structures in higher layers in overlay of structures in lower layers.
 
         :param theLayerId:
-        :type theLayerId: int &
+        :type theLayerId: Standard_Integer &
         :rtype: bool
 
         """
-        return _V3d.V3d_Viewer_AddZLayer(self, *args)
+        return _V3d.V3d_Viewer_AddZLayer(self)
 
-    def RemoveZLayer(self, *args) -> "Standard_Boolean" :
+    def RemoveZLayer(self, *args):
         """
         * Remove Z layer with ID <theLayerId>. Method returns Standard_False if the layer can not be removed or doesn't exists. By default, there are always default bottom-level layer that can't be removed.
 
         :param theLayerId:
-        :type theLayerId: int
+        :type theLayerId: Standard_Integer
         :rtype: bool
 
         """
         return _V3d.V3d_Viewer_RemoveZLayer(self, *args)
 
-    def GetAllZLayers(self, *args) -> "void" :
+    def GetAllZLayers(self, *args):
         """
         * Return all Z layer ids in sequence ordered by overlay level from lowest layer to highest ( foreground ). The first layer ID in sequence is the default layer that can't be removed.
 
@@ -4595,32 +8786,32 @@ class V3d_Viewer(OCC.MMgt.MMgt_TShared):
         """
         return _V3d.V3d_Viewer_GetAllZLayers(self, *args)
 
-    def Driver(self, *args) -> "Handle_Graphic3d_GraphicDriver const &" :
+    def Driver(self):
         """
         :rtype: Handle_Graphic3d_GraphicDriver
 
         """
-        return _V3d.V3d_Viewer_Driver(self, *args)
+        return _V3d.V3d_Viewer_Driver(self)
 
-    def NextName(self, *args) -> "Standard_ExtString" :
+    def NextName(self):
         """
         :rtype: Standard_ExtString
 
         """
-        return _V3d.V3d_Viewer_NextName(self, *args)
+        return _V3d.V3d_Viewer_NextName(self)
 
-    def Domain(self, *args) -> "char *" :
+    def Domain(self):
         """
         :rtype: char *
 
         """
-        return _V3d.V3d_Viewer_Domain(self, *args)
+        return _V3d.V3d_Viewer_Domain(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(V3d_Viewer self)"""
         return _V3d.V3d_Viewer__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_V3d_Viewer" :
+    def GetHandle(self):
         """GetHandle(V3d_Viewer self) -> Handle_V3d_Viewer"""
         return _V3d.V3d_Viewer_GetHandle(self)
 
@@ -4745,7 +8936,7 @@ Handle_V3d_Viewer._kill_pointed = new_instancemethod(_V3d.Handle_V3d_Viewer__kil
 Handle_V3d_Viewer_swigregister = _V3d.Handle_V3d_Viewer_swigregister
 Handle_V3d_Viewer_swigregister(Handle_V3d_Viewer)
 
-def Handle_V3d_Viewer_DownCast(*args) -> "Handle_V3d_Viewer const" :
+def Handle_V3d_Viewer_DownCast(*args):
   return _V3d.Handle_V3d_Viewer_DownCast(*args)
 Handle_V3d_Viewer_DownCast = _V3d.Handle_V3d_Viewer_DownCast
 
@@ -4762,13 +8953,21 @@ class V3d_AmbientLight(V3d_Light):
         :type Color: Quantity_NameOfColor
         :rtype: None
 
+        * Constructs an ambient light source in the viewer VM. The default Color of this light source is WHITE.
+
+        :param VM:
+        :type VM: Handle_V3d_Viewer &
+        :param Color: default value is Quantity_NOC_WHITE
+        :type Color: Quantity_NameOfColor
+        :rtype: None
+
         """
         _V3d.V3d_AmbientLight_swiginit(self,_V3d.new_V3d_AmbientLight(*args))
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(V3d_AmbientLight self)"""
         return _V3d.V3d_AmbientLight__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_V3d_AmbientLight" :
+    def GetHandle(self):
         """GetHandle(V3d_AmbientLight self) -> Handle_V3d_AmbientLight"""
         return _V3d.V3d_AmbientLight_GetHandle(self)
 
@@ -4806,7 +9005,7 @@ Handle_V3d_AmbientLight._kill_pointed = new_instancemethod(_V3d.Handle_V3d_Ambie
 Handle_V3d_AmbientLight_swigregister = _V3d.Handle_V3d_AmbientLight_swigregister
 Handle_V3d_AmbientLight_swigregister(Handle_V3d_AmbientLight)
 
-def Handle_V3d_AmbientLight_DownCast(*args) -> "Handle_V3d_AmbientLight const" :
+def Handle_V3d_AmbientLight_DownCast(*args):
   return _V3d.Handle_V3d_AmbientLight_DownCast(*args)
 Handle_V3d_AmbientLight_DownCast = _V3d.Handle_V3d_AmbientLight_DownCast
 
@@ -4839,18 +9038,18 @@ class V3d_OrthographicView(V3d_View):
 
         """
         _V3d.V3d_OrthographicView_swiginit(self,_V3d.new_V3d_OrthographicView(*args))
-    def Copy(self, *args) -> "Handle_V3d_OrthographicView" :
+    def Copy(self):
         """
         :rtype: Handle_V3d_OrthographicView
 
         """
-        return _V3d.V3d_OrthographicView_Copy(self, *args)
+        return _V3d.V3d_OrthographicView_Copy(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(V3d_OrthographicView self)"""
         return _V3d.V3d_OrthographicView__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_V3d_OrthographicView" :
+    def GetHandle(self):
         """GetHandle(V3d_OrthographicView self) -> Handle_V3d_OrthographicView"""
         return _V3d.V3d_OrthographicView_GetHandle(self)
 
@@ -4889,7 +9088,7 @@ Handle_V3d_OrthographicView._kill_pointed = new_instancemethod(_V3d.Handle_V3d_O
 Handle_V3d_OrthographicView_swigregister = _V3d.Handle_V3d_OrthographicView_swigregister
 Handle_V3d_OrthographicView_swigregister(Handle_V3d_OrthographicView)
 
-def Handle_V3d_OrthographicView_DownCast(*args) -> "Handle_V3d_OrthographicView const" :
+def Handle_V3d_OrthographicView_DownCast(*args):
   return _V3d.Handle_V3d_OrthographicView_DownCast(*args)
 Handle_V3d_OrthographicView_DownCast = _V3d.Handle_V3d_OrthographicView_DownCast
 
@@ -4922,14 +9121,14 @@ class V3d_PerspectiveView(V3d_View):
 
         """
         _V3d.V3d_PerspectiveView_swiginit(self,_V3d.new_V3d_PerspectiveView(*args))
-    def Copy(self, *args) -> "Handle_V3d_PerspectiveView" :
+    def Copy(self):
         """
         :rtype: Handle_V3d_PerspectiveView
 
         """
-        return _V3d.V3d_PerspectiveView_Copy(self, *args)
+        return _V3d.V3d_PerspectiveView_Copy(self)
 
-    def SetAngle(self, *args) -> "void" :
+    def SetAngle(self, *args):
         """
         * Modifies the angle of opening of the perspective in RADIANS. //!	 The projection window is resized according to the //!	 formula : //!	 TAN(Angle/2) = Size/Length //!	 	Size expresses the smallest dimension of the window. //!	 Length expresses the focal length. Warning! raises BadValue from V3d //!	 if the opening angle is <= 0 or >= PI
 
@@ -4940,16 +9139,16 @@ class V3d_PerspectiveView(V3d_View):
         """
         return _V3d.V3d_PerspectiveView_SetAngle(self, *args)
 
-    def Angle(self, *args) -> "Quantity_PlaneAngle" :
+    def Angle(self):
         """
         * Returns the value of the angle of opening.
 
         :rtype: Quantity_PlaneAngle
 
         """
-        return _V3d.V3d_PerspectiveView_Angle(self, *args)
+        return _V3d.V3d_PerspectiveView_Angle(self)
 
-    def SetPerspective(self, *args) -> "void" :
+    def SetPerspective(self, *args):
         """
         * Modifies the viewing perspective volume by given //!		angle of opening of the perspective in RADIANS, aspect ratio of window width to its height and near and far clipping planes
 
@@ -4966,11 +9165,11 @@ class V3d_PerspectiveView(V3d_View):
         """
         return _V3d.V3d_PerspectiveView_SetPerspective(self, *args)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(V3d_PerspectiveView self)"""
         return _V3d.V3d_PerspectiveView__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_V3d_PerspectiveView" :
+    def GetHandle(self):
         """GetHandle(V3d_PerspectiveView self) -> Handle_V3d_PerspectiveView"""
         return _V3d.V3d_PerspectiveView_GetHandle(self)
 
@@ -5012,7 +9211,7 @@ Handle_V3d_PerspectiveView._kill_pointed = new_instancemethod(_V3d.Handle_V3d_Pe
 Handle_V3d_PerspectiveView_swigregister = _V3d.Handle_V3d_PerspectiveView_swigregister
 Handle_V3d_PerspectiveView_swigregister(Handle_V3d_PerspectiveView)
 
-def Handle_V3d_PerspectiveView_DownCast(*args) -> "Handle_V3d_PerspectiveView const" :
+def Handle_V3d_PerspectiveView_DownCast(*args):
   return _V3d.Handle_V3d_PerspectiveView_DownCast(*args)
 Handle_V3d_PerspectiveView_DownCast = _V3d.Handle_V3d_PerspectiveView_DownCast
 
@@ -5020,7 +9219,7 @@ class V3d_PositionLight(V3d_Light):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def SetPosition(self, *args) -> "void" :
+    def SetPosition(self, *args):
         """
         * Defines the position of the light source. Should be redefined!
 
@@ -5035,7 +9234,7 @@ class V3d_PositionLight(V3d_Light):
         """
         return _V3d.V3d_PositionLight_SetPosition(self, *args)
 
-    def SetTarget(self, *args) -> "void" :
+    def SetTarget(self, *args):
         """
         * Defines the target of the light (the center of the sphere)
 
@@ -5050,7 +9249,7 @@ class V3d_PositionLight(V3d_Light):
         """
         return _V3d.V3d_PositionLight_SetTarget(self, *args)
 
-    def SetRadius(self, *args) -> "void" :
+    def SetRadius(self, *args):
         """
         * Define the radius.
 
@@ -5061,7 +9260,7 @@ class V3d_PositionLight(V3d_Light):
         """
         return _V3d.V3d_PositionLight_SetRadius(self, *args)
 
-    def OnHideFace(self, *args) -> "void" :
+    def OnHideFace(self, *args):
         """
         * Calculate the position of the light, on the hide face of the picking sphere.
 
@@ -5072,7 +9271,7 @@ class V3d_PositionLight(V3d_Light):
         """
         return _V3d.V3d_PositionLight_OnHideFace(self, *args)
 
-    def OnSeeFace(self, *args) -> "void" :
+    def OnSeeFace(self, *args):
         """
         * Calculate the position of the light, on the seen face of the picking sphere.
 
@@ -5083,7 +9282,7 @@ class V3d_PositionLight(V3d_Light):
         """
         return _V3d.V3d_PositionLight_OnSeeFace(self, *args)
 
-    def Tracking(self, *args) -> "void" :
+    def Tracking(self, *args):
         """
         * Tracking the light position, or the light space, or the radius of the light space, that depends of initial picking 'WhatPick' (see the pick method). If WhatPick is SPACELIGHT, then the parameters Xpix, Ypix are the coordinates of a translation vector.
 
@@ -5092,16 +9291,24 @@ class V3d_PositionLight(V3d_Light):
         :param WathPick:
         :type WathPick: V3d_TypeOfPickLight
         :param Xpix:
-        :type Xpix: int
+        :type Xpix: Standard_Integer
         :param Ypix:
-        :type Ypix: int
+        :type Ypix: Standard_Integer
         :rtype: None
 
         """
         return _V3d.V3d_PositionLight_Tracking(self, *args)
 
-    def Display(self, *args) -> "void" :
+    def Display(self, *args):
         """
+        * Display the graphic structure of light source in the choosen view. We have three type of representation - SIMPLE : Only the light source is displayed. - PARTIAL : The light source and the light space are  displayed. - COMPLETE : The light source, the light space and the  radius of light space are displayed. We can choose the 'SAMELAST' as parameter of representation In this case the graphic structure representation will be the last displayed.
+
+        :param aView:
+        :type aView: Handle_V3d_View &
+        :param Representation: default value is V3d_SIMPLE
+        :type Representation: V3d_TypeOfRepresentation
+        :rtype: void
+
         * Display the graphic structure of light source in the choosen view. We have three type of representation - SIMPLE : Only the light source is displayed. - PARTIAL : The light source and the light space are  displayed. - COMPLETE : The light source, the light space and the  radius of light space are displayed. We can choose the 'SAMELAST' as parameter of representation In this case the graphic structure representation will be the last displayed.
 
         :param aView:
@@ -5113,25 +9320,25 @@ class V3d_PositionLight(V3d_Light):
         """
         return _V3d.V3d_PositionLight_Display(self, *args)
 
-    def Erase(self, *args) -> "void" :
+    def Erase(self):
         """
         * Erase the graphic structure of light source.
 
         :rtype: None
 
         """
-        return _V3d.V3d_PositionLight_Erase(self, *args)
+        return _V3d.V3d_PositionLight_Erase(self)
 
-    def Radius(self, *args) -> "Quantity_Parameter" :
+    def Radius(self):
         """
         * Returns the radius of the picking sphere.
 
         :rtype: Quantity_Parameter
 
         """
-        return _V3d.V3d_PositionLight_Radius(self, *args)
+        return _V3d.V3d_PositionLight_Radius(self)
 
-    def SeeOrHide(self, *args) -> "Standard_Boolean" :
+    def SeeOrHide(self, *args):
         """
         * Returns the visibility status If True the source is visible. If False it's hidden.
 
@@ -5142,7 +9349,7 @@ class V3d_PositionLight(V3d_Light):
         """
         return _V3d.V3d_PositionLight_SeeOrHide(self, *args)
 
-    def Position(self, *args) -> "void" :
+    def Position(self):
         """
         * Returns the position of the light source.
 
@@ -5155,9 +9362,9 @@ class V3d_PositionLight(V3d_Light):
         :rtype: void
 
         """
-        return _V3d.V3d_PositionLight_Position(self, *args)
+        return _V3d.V3d_PositionLight_Position(self)
 
-    def Target(self, *args) -> "void" :
+    def Target(self):
         """
         * Returns the position of the target of the light source.
 
@@ -5170,13 +9377,13 @@ class V3d_PositionLight(V3d_Light):
         :rtype: None
 
         """
-        return _V3d.V3d_PositionLight_Target(self, *args)
+        return _V3d.V3d_PositionLight_Target(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(V3d_PositionLight self)"""
         return _V3d.V3d_PositionLight__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_V3d_PositionLight" :
+    def GetHandle(self):
         """GetHandle(V3d_PositionLight self) -> Handle_V3d_PositionLight"""
         return _V3d.V3d_PositionLight_GetHandle(self)
 
@@ -5226,7 +9433,7 @@ Handle_V3d_PositionLight._kill_pointed = new_instancemethod(_V3d.Handle_V3d_Posi
 Handle_V3d_PositionLight_swigregister = _V3d.Handle_V3d_PositionLight_swigregister
 Handle_V3d_PositionLight_swigregister(Handle_V3d_PositionLight)
 
-def Handle_V3d_PositionLight_DownCast(*args) -> "Handle_V3d_PositionLight const" :
+def Handle_V3d_PositionLight_DownCast(*args):
   return _V3d.Handle_V3d_PositionLight_DownCast(*args)
 Handle_V3d_PositionLight_DownCast = _V3d.Handle_V3d_PositionLight_DownCast
 
@@ -5235,6 +9442,42 @@ class V3d_DirectionalLight(V3d_PositionLight):
     __repr__ = _swig_repr
     def __init__(self, *args): 
         """
+        * Creates a directional light source in the viewer.
+
+        :param VM:
+        :type VM: Handle_V3d_Viewer &
+        :param Direction: default value is V3d_XposYposZpos
+        :type Direction: V3d_TypeOfOrientation
+        :param Color: default value is Quantity_NOC_WHITE
+        :type Color: Quantity_NameOfColor
+        :param Headlight: default value is Standard_False
+        :type Headlight: bool
+        :rtype: None
+
+        * Creates a directional light source in the viewer.
+
+        :param VM:
+        :type VM: Handle_V3d_Viewer &
+        :param Direction: default value is V3d_XposYposZpos
+        :type Direction: V3d_TypeOfOrientation
+        :param Color: default value is Quantity_NOC_WHITE
+        :type Color: Quantity_NameOfColor
+        :param Headlight: default value is Standard_False
+        :type Headlight: bool
+        :rtype: None
+
+        * Creates a directional light source in the viewer.
+
+        :param VM:
+        :type VM: Handle_V3d_Viewer &
+        :param Direction: default value is V3d_XposYposZpos
+        :type Direction: V3d_TypeOfOrientation
+        :param Color: default value is Quantity_NOC_WHITE
+        :type Color: Quantity_NameOfColor
+        :param Headlight: default value is Standard_False
+        :type Headlight: bool
+        :rtype: None
+
         * Creates a directional light source in the viewer.
 
         :param VM:
@@ -5269,9 +9512,53 @@ class V3d_DirectionalLight(V3d_PositionLight):
         :type Headlight: bool
         :rtype: None
 
+        * Creates a directional light source in the viewer. Xt,Yt,Zt : Coordinate of light source Target. Xp,Yp,Zp : Coordinate of light source Position. The others parameters describe before.
+
+        :param VM:
+        :type VM: Handle_V3d_Viewer &
+        :param Xt:
+        :type Xt: V3d_Coordinate
+        :param Yt:
+        :type Yt: V3d_Coordinate
+        :param Zt:
+        :type Zt: V3d_Coordinate
+        :param Xp:
+        :type Xp: V3d_Coordinate
+        :param Yp:
+        :type Yp: V3d_Coordinate
+        :param Zp:
+        :type Zp: V3d_Coordinate
+        :param Color: default value is Quantity_NOC_WHITE
+        :type Color: Quantity_NameOfColor
+        :param Headlight: default value is Standard_False
+        :type Headlight: bool
+        :rtype: None
+
+        * Creates a directional light source in the viewer. Xt,Yt,Zt : Coordinate of light source Target. Xp,Yp,Zp : Coordinate of light source Position. The others parameters describe before.
+
+        :param VM:
+        :type VM: Handle_V3d_Viewer &
+        :param Xt:
+        :type Xt: V3d_Coordinate
+        :param Yt:
+        :type Yt: V3d_Coordinate
+        :param Zt:
+        :type Zt: V3d_Coordinate
+        :param Xp:
+        :type Xp: V3d_Coordinate
+        :param Yp:
+        :type Yp: V3d_Coordinate
+        :param Zp:
+        :type Zp: V3d_Coordinate
+        :param Color: default value is Quantity_NOC_WHITE
+        :type Color: Quantity_NameOfColor
+        :param Headlight: default value is Standard_False
+        :type Headlight: bool
+        :rtype: None
+
         """
         _V3d.V3d_DirectionalLight_swiginit(self,_V3d.new_V3d_DirectionalLight(*args))
-    def SetDirection(self, *args) -> "void" :
+    def SetDirection(self, *args):
         """
         * Defines the direction of the light source //!	 by a predefined orientation.
 
@@ -5292,7 +9579,7 @@ class V3d_DirectionalLight(V3d_PositionLight):
         """
         return _V3d.V3d_DirectionalLight_SetDirection(self, *args)
 
-    def SetDisplayPosition(self, *args) -> "void" :
+    def SetDisplayPosition(self, *args):
         """
         * Defines the point of light source representation.
 
@@ -5307,7 +9594,7 @@ class V3d_DirectionalLight(V3d_PositionLight):
         """
         return _V3d.V3d_DirectionalLight_SetDisplayPosition(self, *args)
 
-    def DisplayPosition(self, *args) -> "void" :
+    def DisplayPosition(self):
         """
         * Returns the choosen position to represent the light source.
 
@@ -5320,9 +9607,9 @@ class V3d_DirectionalLight(V3d_PositionLight):
         :rtype: None
 
         """
-        return _V3d.V3d_DirectionalLight_DisplayPosition(self, *args)
+        return _V3d.V3d_DirectionalLight_DisplayPosition(self)
 
-    def Direction(self, *args) -> "void" :
+    def Direction(self):
         """
         * Returns the Vx,Vy,Vz direction of the light source.
 
@@ -5335,13 +9622,13 @@ class V3d_DirectionalLight(V3d_PositionLight):
         :rtype: None
 
         """
-        return _V3d.V3d_DirectionalLight_Direction(self, *args)
+        return _V3d.V3d_DirectionalLight_Direction(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(V3d_DirectionalLight self)"""
         return _V3d.V3d_DirectionalLight__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_V3d_DirectionalLight" :
+    def GetHandle(self):
         """GetHandle(V3d_DirectionalLight self) -> Handle_V3d_DirectionalLight"""
         return _V3d.V3d_DirectionalLight_GetHandle(self)
 
@@ -5383,7 +9670,7 @@ Handle_V3d_DirectionalLight._kill_pointed = new_instancemethod(_V3d.Handle_V3d_D
 Handle_V3d_DirectionalLight_swigregister = _V3d.Handle_V3d_DirectionalLight_swigregister
 Handle_V3d_DirectionalLight_swigregister(Handle_V3d_DirectionalLight)
 
-def Handle_V3d_DirectionalLight_DownCast(*args) -> "Handle_V3d_DirectionalLight const" :
+def Handle_V3d_DirectionalLight_DownCast(*args):
   return _V3d.Handle_V3d_DirectionalLight_DownCast(*args)
 Handle_V3d_DirectionalLight_DownCast = _V3d.Handle_V3d_DirectionalLight_DownCast
 
@@ -5392,6 +9679,60 @@ class V3d_PositionalLight(V3d_PositionLight):
     __repr__ = _swig_repr
     def __init__(self, *args): 
         """
+        * Creates an isolated light source X,Y,Z in the viewer. It is also defined by the color Color and two attenuation factors Attenuation1, Attenuation2. //!	 The resulting attenuation factor determining the //!	 illumination of a surface depends on the following //!	 formula : //!	 F = 1/(A1 + A2*Length) //!		A1,A2 being the two factors of attenuation //!	 	Length is the distance of the isolated source //!	 from the surface. Warning! raises BadValue from V3d if one of the attenuation coefficients is not between 0 et 1.
+
+        :param VM:
+        :type VM: Handle_V3d_Viewer &
+        :param X:
+        :type X: V3d_Coordinate
+        :param Y:
+        :type Y: V3d_Coordinate
+        :param Z:
+        :type Z: V3d_Coordinate
+        :param Color: default value is Quantity_NOC_WHITE
+        :type Color: Quantity_NameOfColor
+        :param Attenuation1: default value is 1.0
+        :type Attenuation1: Quantity_Coefficient
+        :param Attenuation2: default value is 0.0
+        :type Attenuation2: Quantity_Coefficient
+        :rtype: None
+
+        * Creates an isolated light source X,Y,Z in the viewer. It is also defined by the color Color and two attenuation factors Attenuation1, Attenuation2. //!	 The resulting attenuation factor determining the //!	 illumination of a surface depends on the following //!	 formula : //!	 F = 1/(A1 + A2*Length) //!		A1,A2 being the two factors of attenuation //!	 	Length is the distance of the isolated source //!	 from the surface. Warning! raises BadValue from V3d if one of the attenuation coefficients is not between 0 et 1.
+
+        :param VM:
+        :type VM: Handle_V3d_Viewer &
+        :param X:
+        :type X: V3d_Coordinate
+        :param Y:
+        :type Y: V3d_Coordinate
+        :param Z:
+        :type Z: V3d_Coordinate
+        :param Color: default value is Quantity_NOC_WHITE
+        :type Color: Quantity_NameOfColor
+        :param Attenuation1: default value is 1.0
+        :type Attenuation1: Quantity_Coefficient
+        :param Attenuation2: default value is 0.0
+        :type Attenuation2: Quantity_Coefficient
+        :rtype: None
+
+        * Creates an isolated light source X,Y,Z in the viewer. It is also defined by the color Color and two attenuation factors Attenuation1, Attenuation2. //!	 The resulting attenuation factor determining the //!	 illumination of a surface depends on the following //!	 formula : //!	 F = 1/(A1 + A2*Length) //!		A1,A2 being the two factors of attenuation //!	 	Length is the distance of the isolated source //!	 from the surface. Warning! raises BadValue from V3d if one of the attenuation coefficients is not between 0 et 1.
+
+        :param VM:
+        :type VM: Handle_V3d_Viewer &
+        :param X:
+        :type X: V3d_Coordinate
+        :param Y:
+        :type Y: V3d_Coordinate
+        :param Z:
+        :type Z: V3d_Coordinate
+        :param Color: default value is Quantity_NOC_WHITE
+        :type Color: Quantity_NameOfColor
+        :param Attenuation1: default value is 1.0
+        :type Attenuation1: Quantity_Coefficient
+        :param Attenuation2: default value is 0.0
+        :type Attenuation2: Quantity_Coefficient
+        :rtype: None
+
         * Creates an isolated light source X,Y,Z in the viewer. It is also defined by the color Color and two attenuation factors Attenuation1, Attenuation2. //!	 The resulting attenuation factor determining the //!	 illumination of a surface depends on the following //!	 formula : //!	 F = 1/(A1 + A2*Length) //!		A1,A2 being the two factors of attenuation //!	 	Length is the distance of the isolated source //!	 from the surface. Warning! raises BadValue from V3d if one of the attenuation coefficients is not between 0 et 1.
 
         :param VM:
@@ -5434,9 +9775,81 @@ class V3d_PositionalLight(V3d_PositionLight):
         :type Attenuation2: Quantity_Coefficient
         :rtype: None
 
+        * Creates a light source of the Positional type in the viewer. Xt,Yt,Zt : Coordinate of Target light source. Xp,Yp,Zp : Coordinate of Position light source. The light source is also defined by the color Color and two attenuation factors Attenuation1, Attenuation2 that determine the illumination of a surface using the following formula : F = 1/(A1 + A2*Length) where: - A1,A2 are the two attenuation factors, and - Length is the distance from the isolated source. Warning! raises BadValue from V3d if one of the attenuation coefficients is not between 0 et 1.
+
+        :param VM:
+        :type VM: Handle_V3d_Viewer &
+        :param Xt:
+        :type Xt: V3d_Coordinate
+        :param Yt:
+        :type Yt: V3d_Coordinate
+        :param Zt:
+        :type Zt: V3d_Coordinate
+        :param Xp:
+        :type Xp: V3d_Coordinate
+        :param Yp:
+        :type Yp: V3d_Coordinate
+        :param Zp:
+        :type Zp: V3d_Coordinate
+        :param Color: default value is Quantity_NOC_WHITE
+        :type Color: Quantity_NameOfColor
+        :param Attenuation1: default value is 1.0
+        :type Attenuation1: Quantity_Coefficient
+        :param Attenuation2: default value is 0.0
+        :type Attenuation2: Quantity_Coefficient
+        :rtype: None
+
+        * Creates a light source of the Positional type in the viewer. Xt,Yt,Zt : Coordinate of Target light source. Xp,Yp,Zp : Coordinate of Position light source. The light source is also defined by the color Color and two attenuation factors Attenuation1, Attenuation2 that determine the illumination of a surface using the following formula : F = 1/(A1 + A2*Length) where: - A1,A2 are the two attenuation factors, and - Length is the distance from the isolated source. Warning! raises BadValue from V3d if one of the attenuation coefficients is not between 0 et 1.
+
+        :param VM:
+        :type VM: Handle_V3d_Viewer &
+        :param Xt:
+        :type Xt: V3d_Coordinate
+        :param Yt:
+        :type Yt: V3d_Coordinate
+        :param Zt:
+        :type Zt: V3d_Coordinate
+        :param Xp:
+        :type Xp: V3d_Coordinate
+        :param Yp:
+        :type Yp: V3d_Coordinate
+        :param Zp:
+        :type Zp: V3d_Coordinate
+        :param Color: default value is Quantity_NOC_WHITE
+        :type Color: Quantity_NameOfColor
+        :param Attenuation1: default value is 1.0
+        :type Attenuation1: Quantity_Coefficient
+        :param Attenuation2: default value is 0.0
+        :type Attenuation2: Quantity_Coefficient
+        :rtype: None
+
+        * Creates a light source of the Positional type in the viewer. Xt,Yt,Zt : Coordinate of Target light source. Xp,Yp,Zp : Coordinate of Position light source. The light source is also defined by the color Color and two attenuation factors Attenuation1, Attenuation2 that determine the illumination of a surface using the following formula : F = 1/(A1 + A2*Length) where: - A1,A2 are the two attenuation factors, and - Length is the distance from the isolated source. Warning! raises BadValue from V3d if one of the attenuation coefficients is not between 0 et 1.
+
+        :param VM:
+        :type VM: Handle_V3d_Viewer &
+        :param Xt:
+        :type Xt: V3d_Coordinate
+        :param Yt:
+        :type Yt: V3d_Coordinate
+        :param Zt:
+        :type Zt: V3d_Coordinate
+        :param Xp:
+        :type Xp: V3d_Coordinate
+        :param Yp:
+        :type Yp: V3d_Coordinate
+        :param Zp:
+        :type Zp: V3d_Coordinate
+        :param Color: default value is Quantity_NOC_WHITE
+        :type Color: Quantity_NameOfColor
+        :param Attenuation1: default value is 1.0
+        :type Attenuation1: Quantity_Coefficient
+        :param Attenuation2: default value is 0.0
+        :type Attenuation2: Quantity_Coefficient
+        :rtype: None
+
         """
         _V3d.V3d_PositionalLight_swiginit(self,_V3d.new_V3d_PositionalLight(*args))
-    def SetAttenuation(self, *args) -> "void" :
+    def SetAttenuation(self, *args):
         """
         * Defines the attenuation factors. Warning: raises BadValue from V3d if one of the attenuation coefficients is not between 0 et 1.
 
@@ -5449,7 +9862,7 @@ class V3d_PositionalLight(V3d_PositionLight):
         """
         return _V3d.V3d_PositionalLight_SetAttenuation(self, *args)
 
-    def Attenuation(self, *args) -> "void" :
+    def Attenuation(self, *args):
         """
         * Returns the attenuation factors A1,A2 of the light source used at construction time.
 
@@ -5462,11 +9875,11 @@ class V3d_PositionalLight(V3d_PositionLight):
         """
         return _V3d.V3d_PositionalLight_Attenuation(self, *args)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(V3d_PositionalLight self)"""
         return _V3d.V3d_PositionalLight__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_V3d_PositionalLight" :
+    def GetHandle(self):
         """GetHandle(V3d_PositionalLight self) -> Handle_V3d_PositionalLight"""
         return _V3d.V3d_PositionalLight_GetHandle(self)
 
@@ -5506,7 +9919,7 @@ Handle_V3d_PositionalLight._kill_pointed = new_instancemethod(_V3d.Handle_V3d_Po
 Handle_V3d_PositionalLight_swigregister = _V3d.Handle_V3d_PositionalLight_swigregister
 Handle_V3d_PositionalLight_swigregister(Handle_V3d_PositionalLight)
 
-def Handle_V3d_PositionalLight_DownCast(*args) -> "Handle_V3d_PositionalLight const" :
+def Handle_V3d_PositionalLight_DownCast(*args):
   return _V3d.Handle_V3d_PositionalLight_DownCast(*args)
 Handle_V3d_PositionalLight_DownCast = _V3d.Handle_V3d_PositionalLight_DownCast
 
@@ -5515,6 +9928,150 @@ class V3d_SpotLight(V3d_PositionLight):
     __repr__ = _swig_repr
     def __init__(self, *args): 
         """
+        * Creates a light source of the Spot type in the viewer. The attenuation factor F which determines the illumination of a surface depends on the following formula : F = 1/(A1 + A2*Length) A1,A2 being the 2 factors of attenuation Length is the distance from the source to the surface. //!	 The default values (1.0,0.0) correspond to a minimum //!	 of attenuation . //!	 The concentration factor determines the dispersion //!	 of the light on the surface, the default value //!	 (1.0) corresponds to a minimum of dispersion . Warning! raises BadValue from V3d - //!	If one of the coefficients is not between 0 and 1 . //!	If the lighting angle is <= 0 ou > PI .
+
+        :param VM:
+        :type VM: Handle_V3d_Viewer &
+        :param X:
+        :type X: V3d_Coordinate
+        :param Y:
+        :type Y: V3d_Coordinate
+        :param Z:
+        :type Z: V3d_Coordinate
+        :param Direction: default value is V3d_XnegYnegZpos
+        :type Direction: V3d_TypeOfOrientation
+        :param Color: default value is Quantity_NOC_WHITE
+        :type Color: Quantity_NameOfColor
+        :param Attenuation1: default value is 1.0
+        :type Attenuation1: Quantity_Coefficient
+        :param Attenuation2: default value is 0.0
+        :type Attenuation2: Quantity_Coefficient
+        :param Concentration: default value is 1.0
+        :type Concentration: Quantity_Coefficient
+        :param Angle: default value is 0.523599
+        :type Angle: Quantity_PlaneAngle
+        :rtype: None
+
+        * Creates a light source of the Spot type in the viewer. The attenuation factor F which determines the illumination of a surface depends on the following formula : F = 1/(A1 + A2*Length) A1,A2 being the 2 factors of attenuation Length is the distance from the source to the surface. //!	 The default values (1.0,0.0) correspond to a minimum //!	 of attenuation . //!	 The concentration factor determines the dispersion //!	 of the light on the surface, the default value //!	 (1.0) corresponds to a minimum of dispersion . Warning! raises BadValue from V3d - //!	If one of the coefficients is not between 0 and 1 . //!	If the lighting angle is <= 0 ou > PI .
+
+        :param VM:
+        :type VM: Handle_V3d_Viewer &
+        :param X:
+        :type X: V3d_Coordinate
+        :param Y:
+        :type Y: V3d_Coordinate
+        :param Z:
+        :type Z: V3d_Coordinate
+        :param Direction: default value is V3d_XnegYnegZpos
+        :type Direction: V3d_TypeOfOrientation
+        :param Color: default value is Quantity_NOC_WHITE
+        :type Color: Quantity_NameOfColor
+        :param Attenuation1: default value is 1.0
+        :type Attenuation1: Quantity_Coefficient
+        :param Attenuation2: default value is 0.0
+        :type Attenuation2: Quantity_Coefficient
+        :param Concentration: default value is 1.0
+        :type Concentration: Quantity_Coefficient
+        :param Angle: default value is 0.523599
+        :type Angle: Quantity_PlaneAngle
+        :rtype: None
+
+        * Creates a light source of the Spot type in the viewer. The attenuation factor F which determines the illumination of a surface depends on the following formula : F = 1/(A1 + A2*Length) A1,A2 being the 2 factors of attenuation Length is the distance from the source to the surface. //!	 The default values (1.0,0.0) correspond to a minimum //!	 of attenuation . //!	 The concentration factor determines the dispersion //!	 of the light on the surface, the default value //!	 (1.0) corresponds to a minimum of dispersion . Warning! raises BadValue from V3d - //!	If one of the coefficients is not between 0 and 1 . //!	If the lighting angle is <= 0 ou > PI .
+
+        :param VM:
+        :type VM: Handle_V3d_Viewer &
+        :param X:
+        :type X: V3d_Coordinate
+        :param Y:
+        :type Y: V3d_Coordinate
+        :param Z:
+        :type Z: V3d_Coordinate
+        :param Direction: default value is V3d_XnegYnegZpos
+        :type Direction: V3d_TypeOfOrientation
+        :param Color: default value is Quantity_NOC_WHITE
+        :type Color: Quantity_NameOfColor
+        :param Attenuation1: default value is 1.0
+        :type Attenuation1: Quantity_Coefficient
+        :param Attenuation2: default value is 0.0
+        :type Attenuation2: Quantity_Coefficient
+        :param Concentration: default value is 1.0
+        :type Concentration: Quantity_Coefficient
+        :param Angle: default value is 0.523599
+        :type Angle: Quantity_PlaneAngle
+        :rtype: None
+
+        * Creates a light source of the Spot type in the viewer. The attenuation factor F which determines the illumination of a surface depends on the following formula : F = 1/(A1 + A2*Length) A1,A2 being the 2 factors of attenuation Length is the distance from the source to the surface. //!	 The default values (1.0,0.0) correspond to a minimum //!	 of attenuation . //!	 The concentration factor determines the dispersion //!	 of the light on the surface, the default value //!	 (1.0) corresponds to a minimum of dispersion . Warning! raises BadValue from V3d - //!	If one of the coefficients is not between 0 and 1 . //!	If the lighting angle is <= 0 ou > PI .
+
+        :param VM:
+        :type VM: Handle_V3d_Viewer &
+        :param X:
+        :type X: V3d_Coordinate
+        :param Y:
+        :type Y: V3d_Coordinate
+        :param Z:
+        :type Z: V3d_Coordinate
+        :param Direction: default value is V3d_XnegYnegZpos
+        :type Direction: V3d_TypeOfOrientation
+        :param Color: default value is Quantity_NOC_WHITE
+        :type Color: Quantity_NameOfColor
+        :param Attenuation1: default value is 1.0
+        :type Attenuation1: Quantity_Coefficient
+        :param Attenuation2: default value is 0.0
+        :type Attenuation2: Quantity_Coefficient
+        :param Concentration: default value is 1.0
+        :type Concentration: Quantity_Coefficient
+        :param Angle: default value is 0.523599
+        :type Angle: Quantity_PlaneAngle
+        :rtype: None
+
+        * Creates a light source of the Spot type in the viewer. The attenuation factor F which determines the illumination of a surface depends on the following formula : F = 1/(A1 + A2*Length) A1,A2 being the 2 factors of attenuation Length is the distance from the source to the surface. //!	 The default values (1.0,0.0) correspond to a minimum //!	 of attenuation . //!	 The concentration factor determines the dispersion //!	 of the light on the surface, the default value //!	 (1.0) corresponds to a minimum of dispersion . Warning! raises BadValue from V3d - //!	If one of the coefficients is not between 0 and 1 . //!	If the lighting angle is <= 0 ou > PI .
+
+        :param VM:
+        :type VM: Handle_V3d_Viewer &
+        :param X:
+        :type X: V3d_Coordinate
+        :param Y:
+        :type Y: V3d_Coordinate
+        :param Z:
+        :type Z: V3d_Coordinate
+        :param Direction: default value is V3d_XnegYnegZpos
+        :type Direction: V3d_TypeOfOrientation
+        :param Color: default value is Quantity_NOC_WHITE
+        :type Color: Quantity_NameOfColor
+        :param Attenuation1: default value is 1.0
+        :type Attenuation1: Quantity_Coefficient
+        :param Attenuation2: default value is 0.0
+        :type Attenuation2: Quantity_Coefficient
+        :param Concentration: default value is 1.0
+        :type Concentration: Quantity_Coefficient
+        :param Angle: default value is 0.523599
+        :type Angle: Quantity_PlaneAngle
+        :rtype: None
+
+        * Creates a light source of the Spot type in the viewer. The attenuation factor F which determines the illumination of a surface depends on the following formula : F = 1/(A1 + A2*Length) A1,A2 being the 2 factors of attenuation Length is the distance from the source to the surface. //!	 The default values (1.0,0.0) correspond to a minimum //!	 of attenuation . //!	 The concentration factor determines the dispersion //!	 of the light on the surface, the default value //!	 (1.0) corresponds to a minimum of dispersion . Warning! raises BadValue from V3d - //!	If one of the coefficients is not between 0 and 1 . //!	If the lighting angle is <= 0 ou > PI .
+
+        :param VM:
+        :type VM: Handle_V3d_Viewer &
+        :param X:
+        :type X: V3d_Coordinate
+        :param Y:
+        :type Y: V3d_Coordinate
+        :param Z:
+        :type Z: V3d_Coordinate
+        :param Direction: default value is V3d_XnegYnegZpos
+        :type Direction: V3d_TypeOfOrientation
+        :param Color: default value is Quantity_NOC_WHITE
+        :type Color: Quantity_NameOfColor
+        :param Attenuation1: default value is 1.0
+        :type Attenuation1: Quantity_Coefficient
+        :param Attenuation2: default value is 0.0
+        :type Attenuation2: Quantity_Coefficient
+        :param Concentration: default value is 1.0
+        :type Concentration: Quantity_Coefficient
+        :param Angle: default value is 0.523599
+        :type Angle: Quantity_PlaneAngle
+        :rtype: None
+
         * Creates a light source of the Spot type in the viewer. The attenuation factor F which determines the illumination of a surface depends on the following formula : F = 1/(A1 + A2*Length) A1,A2 being the 2 factors of attenuation Length is the distance from the source to the surface. //!	 The default values (1.0,0.0) correspond to a minimum //!	 of attenuation . //!	 The concentration factor determines the dispersion //!	 of the light on the surface, the default value //!	 (1.0) corresponds to a minimum of dispersion . Warning! raises BadValue from V3d - //!	If one of the coefficients is not between 0 and 1 . //!	If the lighting angle is <= 0 ou > PI .
 
         :param VM:
@@ -5567,9 +10124,149 @@ class V3d_SpotLight(V3d_PositionLight):
         :type Angle: Quantity_PlaneAngle
         :rtype: None
 
+        * Creates a light source of the Spot type in the viewer. Xt,Yt,Zt : Coordinate of light source Target. Xp,Yp,Zp : Coordinate of light source Position. The others parameters describe before. Warning! raises BadValue from V3d - //!	If one of the coefficients is not between 0 and 1 . //!	If the lighting angle is <= 0 ou > PI .
+
+        :param VM:
+        :type VM: Handle_V3d_Viewer &
+        :param Xt:
+        :type Xt: V3d_Coordinate
+        :param Yt:
+        :type Yt: V3d_Coordinate
+        :param Zt:
+        :type Zt: V3d_Coordinate
+        :param Xp:
+        :type Xp: V3d_Coordinate
+        :param Yp:
+        :type Yp: V3d_Coordinate
+        :param Zp:
+        :type Zp: V3d_Coordinate
+        :param Color: default value is Quantity_NOC_WHITE
+        :type Color: Quantity_NameOfColor
+        :param Attenuation1: default value is 1.0
+        :type Attenuation1: Quantity_Coefficient
+        :param Attenuation2: default value is 0.0
+        :type Attenuation2: Quantity_Coefficient
+        :param Concentration: default value is 1.0
+        :type Concentration: Quantity_Coefficient
+        :param Angle: default value is 0.523599
+        :type Angle: Quantity_PlaneAngle
+        :rtype: None
+
+        * Creates a light source of the Spot type in the viewer. Xt,Yt,Zt : Coordinate of light source Target. Xp,Yp,Zp : Coordinate of light source Position. The others parameters describe before. Warning! raises BadValue from V3d - //!	If one of the coefficients is not between 0 and 1 . //!	If the lighting angle is <= 0 ou > PI .
+
+        :param VM:
+        :type VM: Handle_V3d_Viewer &
+        :param Xt:
+        :type Xt: V3d_Coordinate
+        :param Yt:
+        :type Yt: V3d_Coordinate
+        :param Zt:
+        :type Zt: V3d_Coordinate
+        :param Xp:
+        :type Xp: V3d_Coordinate
+        :param Yp:
+        :type Yp: V3d_Coordinate
+        :param Zp:
+        :type Zp: V3d_Coordinate
+        :param Color: default value is Quantity_NOC_WHITE
+        :type Color: Quantity_NameOfColor
+        :param Attenuation1: default value is 1.0
+        :type Attenuation1: Quantity_Coefficient
+        :param Attenuation2: default value is 0.0
+        :type Attenuation2: Quantity_Coefficient
+        :param Concentration: default value is 1.0
+        :type Concentration: Quantity_Coefficient
+        :param Angle: default value is 0.523599
+        :type Angle: Quantity_PlaneAngle
+        :rtype: None
+
+        * Creates a light source of the Spot type in the viewer. Xt,Yt,Zt : Coordinate of light source Target. Xp,Yp,Zp : Coordinate of light source Position. The others parameters describe before. Warning! raises BadValue from V3d - //!	If one of the coefficients is not between 0 and 1 . //!	If the lighting angle is <= 0 ou > PI .
+
+        :param VM:
+        :type VM: Handle_V3d_Viewer &
+        :param Xt:
+        :type Xt: V3d_Coordinate
+        :param Yt:
+        :type Yt: V3d_Coordinate
+        :param Zt:
+        :type Zt: V3d_Coordinate
+        :param Xp:
+        :type Xp: V3d_Coordinate
+        :param Yp:
+        :type Yp: V3d_Coordinate
+        :param Zp:
+        :type Zp: V3d_Coordinate
+        :param Color: default value is Quantity_NOC_WHITE
+        :type Color: Quantity_NameOfColor
+        :param Attenuation1: default value is 1.0
+        :type Attenuation1: Quantity_Coefficient
+        :param Attenuation2: default value is 0.0
+        :type Attenuation2: Quantity_Coefficient
+        :param Concentration: default value is 1.0
+        :type Concentration: Quantity_Coefficient
+        :param Angle: default value is 0.523599
+        :type Angle: Quantity_PlaneAngle
+        :rtype: None
+
+        * Creates a light source of the Spot type in the viewer. Xt,Yt,Zt : Coordinate of light source Target. Xp,Yp,Zp : Coordinate of light source Position. The others parameters describe before. Warning! raises BadValue from V3d - //!	If one of the coefficients is not between 0 and 1 . //!	If the lighting angle is <= 0 ou > PI .
+
+        :param VM:
+        :type VM: Handle_V3d_Viewer &
+        :param Xt:
+        :type Xt: V3d_Coordinate
+        :param Yt:
+        :type Yt: V3d_Coordinate
+        :param Zt:
+        :type Zt: V3d_Coordinate
+        :param Xp:
+        :type Xp: V3d_Coordinate
+        :param Yp:
+        :type Yp: V3d_Coordinate
+        :param Zp:
+        :type Zp: V3d_Coordinate
+        :param Color: default value is Quantity_NOC_WHITE
+        :type Color: Quantity_NameOfColor
+        :param Attenuation1: default value is 1.0
+        :type Attenuation1: Quantity_Coefficient
+        :param Attenuation2: default value is 0.0
+        :type Attenuation2: Quantity_Coefficient
+        :param Concentration: default value is 1.0
+        :type Concentration: Quantity_Coefficient
+        :param Angle: default value is 0.523599
+        :type Angle: Quantity_PlaneAngle
+        :rtype: None
+
+        * Creates a light source of the Spot type in the viewer. Xt,Yt,Zt : Coordinate of light source Target. Xp,Yp,Zp : Coordinate of light source Position. The others parameters describe before. Warning! raises BadValue from V3d - //!	If one of the coefficients is not between 0 and 1 . //!	If the lighting angle is <= 0 ou > PI .
+
+        :param VM:
+        :type VM: Handle_V3d_Viewer &
+        :param Xt:
+        :type Xt: V3d_Coordinate
+        :param Yt:
+        :type Yt: V3d_Coordinate
+        :param Zt:
+        :type Zt: V3d_Coordinate
+        :param Xp:
+        :type Xp: V3d_Coordinate
+        :param Yp:
+        :type Yp: V3d_Coordinate
+        :param Zp:
+        :type Zp: V3d_Coordinate
+        :param Color: default value is Quantity_NOC_WHITE
+        :type Color: Quantity_NameOfColor
+        :param Attenuation1: default value is 1.0
+        :type Attenuation1: Quantity_Coefficient
+        :param Attenuation2: default value is 0.0
+        :type Attenuation2: Quantity_Coefficient
+        :param Concentration: default value is 1.0
+        :type Concentration: Quantity_Coefficient
+        :param Angle: default value is 0.523599
+        :type Angle: Quantity_PlaneAngle
+        :rtype: None
+
         """
         _V3d.V3d_SpotLight_swiginit(self,_V3d.new_V3d_SpotLight(*args))
-    def SetDirection(self, *args) -> "void" :
+    def SetDirection(self, *args):
         """
         * Defines the direction of the light source. //!	If the normal vector is NULL.
 
@@ -5590,7 +10287,7 @@ class V3d_SpotLight(V3d_PositionLight):
         """
         return _V3d.V3d_SpotLight_SetDirection(self, *args)
 
-    def SetAttenuation(self, *args) -> "void" :
+    def SetAttenuation(self, *args):
         """
         * Defines the coefficients of attenuation. Warning! raises BadValue from V3d //!	 if one of the coefficient is <0 ou >1 .
 
@@ -5603,7 +10300,7 @@ class V3d_SpotLight(V3d_PositionLight):
         """
         return _V3d.V3d_SpotLight_SetAttenuation(self, *args)
 
-    def SetConcentration(self, *args) -> "void" :
+    def SetConcentration(self, *args):
         """
         * Defines the coefficient of concentration. //!	if the coefficient is <0 ou >1 .
 
@@ -5614,7 +10311,7 @@ class V3d_SpotLight(V3d_PositionLight):
         """
         return _V3d.V3d_SpotLight_SetConcentration(self, *args)
 
-    def SetAngle(self, *args) -> "void" :
+    def SetAngle(self, *args):
         """
         * Defines the spot angle in RADIANS. Warning: raises BadValue from from V3d //!	If the angle is <= 0 ou > PI .
 
@@ -5625,7 +10322,7 @@ class V3d_SpotLight(V3d_PositionLight):
         """
         return _V3d.V3d_SpotLight_SetAngle(self, *args)
 
-    def Direction(self, *args) -> "void" :
+    def Direction(self):
         """
         * Returns the direction of the light source defined by Vx,Vy,Vz.
 
@@ -5638,9 +10335,9 @@ class V3d_SpotLight(V3d_PositionLight):
         :rtype: None
 
         """
-        return _V3d.V3d_SpotLight_Direction(self, *args)
+        return _V3d.V3d_SpotLight_Direction(self)
 
-    def Attenuation(self, *args) -> "void" :
+    def Attenuation(self, *args):
         """
         * Returns the attenuation factors A1,A2 of the light source.
 
@@ -5653,27 +10350,27 @@ class V3d_SpotLight(V3d_PositionLight):
         """
         return _V3d.V3d_SpotLight_Attenuation(self, *args)
 
-    def Concentration(self, *args) -> "Quantity_Coefficient" :
+    def Concentration(self):
         """
         :rtype: Quantity_Coefficient
 
         """
-        return _V3d.V3d_SpotLight_Concentration(self, *args)
+        return _V3d.V3d_SpotLight_Concentration(self)
 
-    def Angle(self, *args) -> "Quantity_PlaneAngle" :
+    def Angle(self):
         """
         * Returns the spot angle.
 
         :rtype: Quantity_PlaneAngle
 
         """
-        return _V3d.V3d_SpotLight_Angle(self, *args)
+        return _V3d.V3d_SpotLight_Angle(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(V3d_SpotLight self)"""
         return _V3d.V3d_SpotLight__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_V3d_SpotLight" :
+    def GetHandle(self):
         """GetHandle(V3d_SpotLight self) -> Handle_V3d_SpotLight"""
         return _V3d.V3d_SpotLight_GetHandle(self)
 
@@ -5719,7 +10416,7 @@ Handle_V3d_SpotLight._kill_pointed = new_instancemethod(_V3d.Handle_V3d_SpotLigh
 Handle_V3d_SpotLight_swigregister = _V3d.Handle_V3d_SpotLight_swigregister
 Handle_V3d_SpotLight_swigregister(Handle_V3d_SpotLight)
 
-def Handle_V3d_SpotLight_DownCast(*args) -> "Handle_V3d_SpotLight const" :
+def Handle_V3d_SpotLight_DownCast(*args):
   return _V3d.Handle_V3d_SpotLight_DownCast(*args)
 Handle_V3d_SpotLight_DownCast = _V3d.Handle_V3d_SpotLight_DownCast
 

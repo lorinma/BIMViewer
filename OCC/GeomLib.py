@@ -129,8 +129,9 @@ GeomLib_DegreeSmallerThan3 = _GeomLib.GeomLib_DegreeSmallerThan3
 GeomLib_InversionProblem = _GeomLib.GeomLib_InversionProblem
 class geomlib(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
+    def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def To3d(*args) -> "Handle_Geom_Curve" :
+    def To3d(*args):
         """
         * Computes the curve 3d from package Geom corresponding to curve 2d from package Geom2d, on the plan defined with the local coordinate system Position.
 
@@ -144,7 +145,7 @@ class geomlib(object):
         return _GeomLib.geomlib_To3d(*args)
 
     To3d = staticmethod(To3d)
-    def GTransform(*args) -> "Handle_Geom2d_Curve" :
+    def GTransform(*args):
         """
         * Computes the curve 3d from package Geom corresponding to the curve 3d from package Geom, transformed with the transformation <GTrsf> WARNING : this method may return a null Handle if it's impossible to compute the transformation of a curve. It's not implemented when : 1) the curve is an infinite parabola or hyperbola 2) the curve is an offsetcurve
 
@@ -158,7 +159,7 @@ class geomlib(object):
         return _GeomLib.geomlib_GTransform(*args)
 
     GTransform = staticmethod(GTransform)
-    def SameRange(*args) -> "void" :
+    def SameRange(*args):
         """
         * Make the curve Curve2dPtr have the imposed range First to List the most economic way, that is if it can change the range without changing the nature of the curve it will try to do that. Otherwise it will produce a Bspline curve that has the required range
 
@@ -182,7 +183,7 @@ class geomlib(object):
         return _GeomLib.geomlib_SameRange(*args)
 
     SameRange = staticmethod(SameRange)
-    def BuildCurve3d(*args) -> "Standard_Real &, Standard_Real &" :
+    def BuildCurve3d(*args):
         """
         :param Tolerance:
         :type Tolerance: float
@@ -201,16 +202,82 @@ class geomlib(object):
         :param Continuity: default value is GeomAbs_C1
         :type Continuity: GeomAbs_Shape
         :param MaxDegree: default value is 14
-        :type MaxDegree: int
+        :type MaxDegree: Standard_Integer
         :param MaxSegment: default value is 30
-        :type MaxSegment: int
+        :type MaxSegment: Standard_Integer
+        :rtype: void
+
+        :param Tolerance:
+        :type Tolerance: float
+        :param CurvePtr:
+        :type CurvePtr: Adaptor3d_CurveOnSurface &
+        :param FirstParameter:
+        :type FirstParameter: float
+        :param LastParameter:
+        :type LastParameter: float
+        :param NewCurvePtr:
+        :type NewCurvePtr: Handle_Geom_Curve &
+        :param MaxDeviation:
+        :type MaxDeviation: float &
+        :param AverageDeviation:
+        :type AverageDeviation: float &
+        :param Continuity: default value is GeomAbs_C1
+        :type Continuity: GeomAbs_Shape
+        :param MaxDegree: default value is 14
+        :type MaxDegree: Standard_Integer
+        :param MaxSegment: default value is 30
+        :type MaxSegment: Standard_Integer
+        :rtype: void
+
+        :param Tolerance:
+        :type Tolerance: float
+        :param CurvePtr:
+        :type CurvePtr: Adaptor3d_CurveOnSurface &
+        :param FirstParameter:
+        :type FirstParameter: float
+        :param LastParameter:
+        :type LastParameter: float
+        :param NewCurvePtr:
+        :type NewCurvePtr: Handle_Geom_Curve &
+        :param MaxDeviation:
+        :type MaxDeviation: float &
+        :param AverageDeviation:
+        :type AverageDeviation: float &
+        :param Continuity: default value is GeomAbs_C1
+        :type Continuity: GeomAbs_Shape
+        :param MaxDegree: default value is 14
+        :type MaxDegree: Standard_Integer
+        :param MaxSegment: default value is 30
+        :type MaxSegment: Standard_Integer
+        :rtype: void
+
+        :param Tolerance:
+        :type Tolerance: float
+        :param CurvePtr:
+        :type CurvePtr: Adaptor3d_CurveOnSurface &
+        :param FirstParameter:
+        :type FirstParameter: float
+        :param LastParameter:
+        :type LastParameter: float
+        :param NewCurvePtr:
+        :type NewCurvePtr: Handle_Geom_Curve &
+        :param MaxDeviation:
+        :type MaxDeviation: float &
+        :param AverageDeviation:
+        :type AverageDeviation: float &
+        :param Continuity: default value is GeomAbs_C1
+        :type Continuity: GeomAbs_Shape
+        :param MaxDegree: default value is 14
+        :type MaxDegree: Standard_Integer
+        :param MaxSegment: default value is 30
+        :type MaxSegment: Standard_Integer
         :rtype: void
 
         """
         return _GeomLib.geomlib_BuildCurve3d(*args)
 
     BuildCurve3d = staticmethod(BuildCurve3d)
-    def AdjustExtremity(*args) -> "void" :
+    def AdjustExtremity(*args):
         """
         :param Curve:
         :type Curve: Handle_Geom_BoundedCurve &
@@ -228,7 +295,7 @@ class geomlib(object):
         return _GeomLib.geomlib_AdjustExtremity(*args)
 
     AdjustExtremity = staticmethod(AdjustExtremity)
-    def ExtendCurveToPoint(*args) -> "void" :
+    def ExtendCurveToPoint(*args):
         """
         * Extends the bounded curve Curve to the point Point. The extension is built: - at the end of the curve if After equals true, or - at the beginning of the curve if After equals false. The extension is performed according to a degree of continuity equal to Cont, which in its turn must be equal to 1, 2 or 3. This function converts the bounded curve Curve into a BSpline curve. Warning - Nothing is done, and Curve is not modified if Cont is not equal to 1, 2 or 3. - It is recommended that the extension should not be too large with respect to the size of the bounded curve Curve: Point must not be located too far from one of the extremities of Curve.
 
@@ -237,7 +304,7 @@ class geomlib(object):
         :param Point:
         :type Point: gp_Pnt
         :param Cont:
-        :type Cont: int
+        :type Cont: Standard_Integer
         :param After:
         :type After: bool
         :rtype: void
@@ -246,7 +313,7 @@ class geomlib(object):
         return _GeomLib.geomlib_ExtendCurveToPoint(*args)
 
     ExtendCurveToPoint = staticmethod(ExtendCurveToPoint)
-    def ExtendSurfByLength(*args) -> "void" :
+    def ExtendSurfByLength(*args):
         """
         * Extends the bounded surface Surf along one of its boundaries. The chord length of the extension is equal to Length. The direction of the extension is given as: - the u parametric direction of Surf, if InU equals true, or - the v parametric direction of Surf, if InU equals false. In this parametric direction, the extension is built on the side of: - the last parameter of Surf, if After equals true, or - the first parameter of Surf, if After equals false. The extension is performed according to a degree of continuity equal to Cont, which in its turn must be equal to 1, 2 or 3. This function converts the bounded surface Surf into a BSpline surface. Warning - Nothing is done, and Surf is not modified if Cont is not equal to 1, 2 or 3. - It is recommended that Length, the size of the extension should not be too large with respect to the size of the bounded surface Surf. - Surf must not be a periodic BSpline surface in the parametric direction corresponding to the direction of extension.
 
@@ -255,7 +322,7 @@ class geomlib(object):
         :param Length:
         :type Length: float
         :param Cont:
-        :type Cont: int
+        :type Cont: Standard_Integer
         :param InU:
         :type InU: bool
         :param After:
@@ -266,8 +333,20 @@ class geomlib(object):
         return _GeomLib.geomlib_ExtendSurfByLength(*args)
 
     ExtendSurfByLength = staticmethod(ExtendSurfByLength)
-    def AxeOfInertia(*args) -> "Standard_Boolean &" :
+    def AxeOfInertia(*args):
         """
+        * Compute axes of inertia, of some points -- -- -- <Axe>.Location() is the BaryCentre -- -- -- -- -- <Axe>.XDirection is the axe of upper inertia -- -- -- -- <Axe>.Direction is the Normal to the average plane -- -- -- IsSingular is True if points are on line -- Tol is used to determine singular cases.
+
+        :param Points:
+        :type Points: TColgp_Array1OfPnt
+        :param Axe:
+        :type Axe: gp_Ax2
+        :param IsSingular:
+        :type IsSingular: bool
+        :param Tol: default value is 1.0e-7
+        :type Tol: float
+        :rtype: void
+
         * Compute axes of inertia, of some points -- -- -- <Axe>.Location() is the BaryCentre -- -- -- -- -- <Axe>.XDirection is the axe of upper inertia -- -- -- -- <Axe>.Direction is the Normal to the average plane -- -- -- IsSingular is True if points are on line -- Tol is used to determine singular cases.
 
         :param Points:
@@ -284,7 +363,7 @@ class geomlib(object):
         return _GeomLib.geomlib_AxeOfInertia(*args)
 
     AxeOfInertia = staticmethod(AxeOfInertia)
-    def Inertia(*args) -> "Standard_Real &, Standard_Real &, Standard_Real &" :
+    def Inertia(*args):
         """
         * Compute principale axes of inertia, and dispertion  value of some points.
 
@@ -308,12 +387,12 @@ class geomlib(object):
         return _GeomLib.geomlib_Inertia(*args)
 
     Inertia = staticmethod(Inertia)
-    def RemovePointsFromArray(*args) -> "void" :
+    def RemovePointsFromArray(*args):
         """
         * Warning! This assume that the InParameter is an increasing sequence of real number and it will not check for that : Unpredictable result can happen if this is not satisfied. It is the caller responsability to check for that property. This method makes uniform NumPoints segments S1,...SNumPoints out of the segment defined by the first parameter and the last parameter ofthe InParameter ; keeps only one point of the InParameters set of parameter in each of the uniform segments taking care of the first and the last parameters. For the ith segment the element of the InParameter is the one that is the first to exceed the midpoint of the segment and to fall before the midpoint of the next segment  There will be at the end at most NumPoints + 1 if NumPoints > 2 in the OutParameters Array
 
         :param NumPoints:
-        :type NumPoints: int
+        :type NumPoints: Standard_Integer
         :param InParameters:
         :type InParameters: TColStd_Array1OfReal &
         :param OutParameters:
@@ -324,12 +403,12 @@ class geomlib(object):
         return _GeomLib.geomlib_RemovePointsFromArray(*args)
 
     RemovePointsFromArray = staticmethod(RemovePointsFromArray)
-    def DensifyArray1OfReal(*args) -> "void" :
+    def DensifyArray1OfReal(*args):
         """
         * this makes sure that there is at least MinNumPoints in OutParameters taking into account the parameters in the InParameters array provided those are in order, that is the sequence of real in the InParameter is strictly non decreasing
 
         :param MinNumPoints:
-        :type MinNumPoints: int
+        :type MinNumPoints: Standard_Integer
         :param InParameters:
         :type InParameters: TColStd_Array1OfReal &
         :param OutParameters:
@@ -340,8 +419,18 @@ class geomlib(object):
         return _GeomLib.geomlib_DensifyArray1OfReal(*args)
 
     DensifyArray1OfReal = staticmethod(DensifyArray1OfReal)
-    def FuseIntervals(*args) -> "void" :
+    def FuseIntervals(*args):
         """
+        :param Interval1:
+        :type Interval1: TColStd_Array1OfReal &
+        :param Interval2:
+        :type Interval2: TColStd_Array1OfReal &
+        :param Fusion:
+        :type Fusion: TColStd_SequenceOfReal &
+        :param Confusion: default value is 1.0e-9
+        :type Confusion: float
+        :rtype: void
+
         :param Interval1:
         :type Interval1: TColStd_Array1OfReal &
         :param Interval2:
@@ -356,7 +445,7 @@ class geomlib(object):
         return _GeomLib.geomlib_FuseIntervals(*args)
 
     FuseIntervals = staticmethod(FuseIntervals)
-    def EvalMaxParametricDistance(*args) -> "Standard_Real &" :
+    def EvalMaxParametricDistance(*args):
         """
         * this will compute the maximum distance at the parameters given in the Parameters array by evaluating each parameter the two curves and taking the maximum of the evaluated distance
 
@@ -376,7 +465,7 @@ class geomlib(object):
         return _GeomLib.geomlib_EvalMaxParametricDistance(*args)
 
     EvalMaxParametricDistance = staticmethod(EvalMaxParametricDistance)
-    def EvalMaxDistanceAlongParameter(*args) -> "Standard_Real &" :
+    def EvalMaxDistanceAlongParameter(*args):
         """
         * this will compute the maximum distancef at the parameters given in the Parameters array by projecting from the Curve to the reference curve and taking the minimum distance Than the maximum will be taken on those minimas.
 
@@ -396,7 +485,7 @@ class geomlib(object):
         return _GeomLib.geomlib_EvalMaxDistanceAlongParameter(*args)
 
     EvalMaxDistanceAlongParameter = staticmethod(EvalMaxDistanceAlongParameter)
-    def CancelDenominatorDerivative(*args) -> "void" :
+    def CancelDenominatorDerivative(*args):
         """
         * Cancel,on the boudaries,the denominator first derivative in the directions wished by the user and set its value to 1.
 
@@ -412,7 +501,7 @@ class geomlib(object):
         return _GeomLib.geomlib_CancelDenominatorDerivative(*args)
 
     CancelDenominatorDerivative = staticmethod(CancelDenominatorDerivative)
-    def NormEstim(*args) -> "Standard_Integer" :
+    def NormEstim(*args):
         """
         :param S:
         :type S: Handle_Geom_Surface &
@@ -428,8 +517,6 @@ class geomlib(object):
         return _GeomLib.geomlib_NormEstim(*args)
 
     NormEstim = staticmethod(NormEstim)
-    def __init__(self): 
-        _GeomLib.geomlib_swiginit(self,_GeomLib.new_geomlib())
     def __del__(self):
     	try:
     		self.thisown = False
@@ -442,7 +529,7 @@ geomlib._kill_pointed = new_instancemethod(_GeomLib.geomlib__kill_pointed,None,g
 geomlib_swigregister = _GeomLib.geomlib_swigregister
 geomlib_swigregister(geomlib)
 
-def geomlib_To3d(*args) -> "Handle_Geom_Curve" :
+def geomlib_To3d(*args):
   """
     * Computes the curve 3d from package Geom corresponding to curve 2d from package Geom2d, on the plan defined with the local coordinate system Position.
 
@@ -455,7 +542,7 @@ def geomlib_To3d(*args) -> "Handle_Geom_Curve" :
     """
   return _GeomLib.geomlib_To3d(*args)
 
-def geomlib_GTransform(*args) -> "Handle_Geom2d_Curve" :
+def geomlib_GTransform(*args):
   """
     * Computes the curve 3d from package Geom corresponding to the curve 3d from package Geom, transformed with the transformation <GTrsf> WARNING : this method may return a null Handle if it's impossible to compute the transformation of a curve. It's not implemented when : 1) the curve is an infinite parabola or hyperbola 2) the curve is an offsetcurve
 
@@ -468,7 +555,7 @@ def geomlib_GTransform(*args) -> "Handle_Geom2d_Curve" :
     """
   return _GeomLib.geomlib_GTransform(*args)
 
-def geomlib_SameRange(*args) -> "void" :
+def geomlib_SameRange(*args):
   """
     * Make the curve Curve2dPtr have the imposed range First to List the most economic way, that is if it can change the range without changing the nature of the curve it will try to do that. Otherwise it will produce a Bspline curve that has the required range
 
@@ -491,7 +578,7 @@ def geomlib_SameRange(*args) -> "void" :
     """
   return _GeomLib.geomlib_SameRange(*args)
 
-def geomlib_BuildCurve3d(*args) -> "Standard_Real &, Standard_Real &" :
+def geomlib_BuildCurve3d(*args):
   """
     :param Tolerance:
     :type Tolerance: float
@@ -510,15 +597,81 @@ def geomlib_BuildCurve3d(*args) -> "Standard_Real &, Standard_Real &" :
     :param Continuity: default value is GeomAbs_C1
     :type Continuity: GeomAbs_Shape
     :param MaxDegree: default value is 14
-    :type MaxDegree: int
+    :type MaxDegree: Standard_Integer
     :param MaxSegment: default value is 30
-    :type MaxSegment: int
+    :type MaxSegment: Standard_Integer
+    :rtype: void
+
+    :param Tolerance:
+    :type Tolerance: float
+    :param CurvePtr:
+    :type CurvePtr: Adaptor3d_CurveOnSurface &
+    :param FirstParameter:
+    :type FirstParameter: float
+    :param LastParameter:
+    :type LastParameter: float
+    :param NewCurvePtr:
+    :type NewCurvePtr: Handle_Geom_Curve &
+    :param MaxDeviation:
+    :type MaxDeviation: float &
+    :param AverageDeviation:
+    :type AverageDeviation: float &
+    :param Continuity: default value is GeomAbs_C1
+    :type Continuity: GeomAbs_Shape
+    :param MaxDegree: default value is 14
+    :type MaxDegree: Standard_Integer
+    :param MaxSegment: default value is 30
+    :type MaxSegment: Standard_Integer
+    :rtype: void
+
+    :param Tolerance:
+    :type Tolerance: float
+    :param CurvePtr:
+    :type CurvePtr: Adaptor3d_CurveOnSurface &
+    :param FirstParameter:
+    :type FirstParameter: float
+    :param LastParameter:
+    :type LastParameter: float
+    :param NewCurvePtr:
+    :type NewCurvePtr: Handle_Geom_Curve &
+    :param MaxDeviation:
+    :type MaxDeviation: float &
+    :param AverageDeviation:
+    :type AverageDeviation: float &
+    :param Continuity: default value is GeomAbs_C1
+    :type Continuity: GeomAbs_Shape
+    :param MaxDegree: default value is 14
+    :type MaxDegree: Standard_Integer
+    :param MaxSegment: default value is 30
+    :type MaxSegment: Standard_Integer
+    :rtype: void
+
+    :param Tolerance:
+    :type Tolerance: float
+    :param CurvePtr:
+    :type CurvePtr: Adaptor3d_CurveOnSurface &
+    :param FirstParameter:
+    :type FirstParameter: float
+    :param LastParameter:
+    :type LastParameter: float
+    :param NewCurvePtr:
+    :type NewCurvePtr: Handle_Geom_Curve &
+    :param MaxDeviation:
+    :type MaxDeviation: float &
+    :param AverageDeviation:
+    :type AverageDeviation: float &
+    :param Continuity: default value is GeomAbs_C1
+    :type Continuity: GeomAbs_Shape
+    :param MaxDegree: default value is 14
+    :type MaxDegree: Standard_Integer
+    :param MaxSegment: default value is 30
+    :type MaxSegment: Standard_Integer
     :rtype: void
 
     """
   return _GeomLib.geomlib_BuildCurve3d(*args)
 
-def geomlib_AdjustExtremity(*args) -> "void" :
+def geomlib_AdjustExtremity(*args):
   """
     :param Curve:
     :type Curve: Handle_Geom_BoundedCurve &
@@ -535,7 +688,7 @@ def geomlib_AdjustExtremity(*args) -> "void" :
     """
   return _GeomLib.geomlib_AdjustExtremity(*args)
 
-def geomlib_ExtendCurveToPoint(*args) -> "void" :
+def geomlib_ExtendCurveToPoint(*args):
   """
     * Extends the bounded curve Curve to the point Point. The extension is built: - at the end of the curve if After equals true, or - at the beginning of the curve if After equals false. The extension is performed according to a degree of continuity equal to Cont, which in its turn must be equal to 1, 2 or 3. This function converts the bounded curve Curve into a BSpline curve. Warning - Nothing is done, and Curve is not modified if Cont is not equal to 1, 2 or 3. - It is recommended that the extension should not be too large with respect to the size of the bounded curve Curve: Point must not be located too far from one of the extremities of Curve.
 
@@ -544,7 +697,7 @@ def geomlib_ExtendCurveToPoint(*args) -> "void" :
     :param Point:
     :type Point: gp_Pnt
     :param Cont:
-    :type Cont: int
+    :type Cont: Standard_Integer
     :param After:
     :type After: bool
     :rtype: void
@@ -552,7 +705,7 @@ def geomlib_ExtendCurveToPoint(*args) -> "void" :
     """
   return _GeomLib.geomlib_ExtendCurveToPoint(*args)
 
-def geomlib_ExtendSurfByLength(*args) -> "void" :
+def geomlib_ExtendSurfByLength(*args):
   """
     * Extends the bounded surface Surf along one of its boundaries. The chord length of the extension is equal to Length. The direction of the extension is given as: - the u parametric direction of Surf, if InU equals true, or - the v parametric direction of Surf, if InU equals false. In this parametric direction, the extension is built on the side of: - the last parameter of Surf, if After equals true, or - the first parameter of Surf, if After equals false. The extension is performed according to a degree of continuity equal to Cont, which in its turn must be equal to 1, 2 or 3. This function converts the bounded surface Surf into a BSpline surface. Warning - Nothing is done, and Surf is not modified if Cont is not equal to 1, 2 or 3. - It is recommended that Length, the size of the extension should not be too large with respect to the size of the bounded surface Surf. - Surf must not be a periodic BSpline surface in the parametric direction corresponding to the direction of extension.
 
@@ -561,7 +714,7 @@ def geomlib_ExtendSurfByLength(*args) -> "void" :
     :param Length:
     :type Length: float
     :param Cont:
-    :type Cont: int
+    :type Cont: Standard_Integer
     :param InU:
     :type InU: bool
     :param After:
@@ -571,8 +724,20 @@ def geomlib_ExtendSurfByLength(*args) -> "void" :
     """
   return _GeomLib.geomlib_ExtendSurfByLength(*args)
 
-def geomlib_AxeOfInertia(*args) -> "Standard_Boolean &" :
+def geomlib_AxeOfInertia(*args):
   """
+    * Compute axes of inertia, of some points -- -- -- <Axe>.Location() is the BaryCentre -- -- -- -- -- <Axe>.XDirection is the axe of upper inertia -- -- -- -- <Axe>.Direction is the Normal to the average plane -- -- -- IsSingular is True if points are on line -- Tol is used to determine singular cases.
+
+    :param Points:
+    :type Points: TColgp_Array1OfPnt
+    :param Axe:
+    :type Axe: gp_Ax2
+    :param IsSingular:
+    :type IsSingular: bool
+    :param Tol: default value is 1.0e-7
+    :type Tol: float
+    :rtype: void
+
     * Compute axes of inertia, of some points -- -- -- <Axe>.Location() is the BaryCentre -- -- -- -- -- <Axe>.XDirection is the axe of upper inertia -- -- -- -- <Axe>.Direction is the Normal to the average plane -- -- -- IsSingular is True if points are on line -- Tol is used to determine singular cases.
 
     :param Points:
@@ -588,7 +753,7 @@ def geomlib_AxeOfInertia(*args) -> "Standard_Boolean &" :
     """
   return _GeomLib.geomlib_AxeOfInertia(*args)
 
-def geomlib_Inertia(*args) -> "Standard_Real &, Standard_Real &, Standard_Real &" :
+def geomlib_Inertia(*args):
   """
     * Compute principale axes of inertia, and dispertion  value of some points.
 
@@ -611,12 +776,12 @@ def geomlib_Inertia(*args) -> "Standard_Real &, Standard_Real &, Standard_Real &
     """
   return _GeomLib.geomlib_Inertia(*args)
 
-def geomlib_RemovePointsFromArray(*args) -> "void" :
+def geomlib_RemovePointsFromArray(*args):
   """
     * Warning! This assume that the InParameter is an increasing sequence of real number and it will not check for that : Unpredictable result can happen if this is not satisfied. It is the caller responsability to check for that property. This method makes uniform NumPoints segments S1,...SNumPoints out of the segment defined by the first parameter and the last parameter ofthe InParameter ; keeps only one point of the InParameters set of parameter in each of the uniform segments taking care of the first and the last parameters. For the ith segment the element of the InParameter is the one that is the first to exceed the midpoint of the segment and to fall before the midpoint of the next segment  There will be at the end at most NumPoints + 1 if NumPoints > 2 in the OutParameters Array
 
     :param NumPoints:
-    :type NumPoints: int
+    :type NumPoints: Standard_Integer
     :param InParameters:
     :type InParameters: TColStd_Array1OfReal &
     :param OutParameters:
@@ -626,12 +791,12 @@ def geomlib_RemovePointsFromArray(*args) -> "void" :
     """
   return _GeomLib.geomlib_RemovePointsFromArray(*args)
 
-def geomlib_DensifyArray1OfReal(*args) -> "void" :
+def geomlib_DensifyArray1OfReal(*args):
   """
     * this makes sure that there is at least MinNumPoints in OutParameters taking into account the parameters in the InParameters array provided those are in order, that is the sequence of real in the InParameter is strictly non decreasing
 
     :param MinNumPoints:
-    :type MinNumPoints: int
+    :type MinNumPoints: Standard_Integer
     :param InParameters:
     :type InParameters: TColStd_Array1OfReal &
     :param OutParameters:
@@ -641,8 +806,18 @@ def geomlib_DensifyArray1OfReal(*args) -> "void" :
     """
   return _GeomLib.geomlib_DensifyArray1OfReal(*args)
 
-def geomlib_FuseIntervals(*args) -> "void" :
+def geomlib_FuseIntervals(*args):
   """
+    :param Interval1:
+    :type Interval1: TColStd_Array1OfReal &
+    :param Interval2:
+    :type Interval2: TColStd_Array1OfReal &
+    :param Fusion:
+    :type Fusion: TColStd_SequenceOfReal &
+    :param Confusion: default value is 1.0e-9
+    :type Confusion: float
+    :rtype: void
+
     :param Interval1:
     :type Interval1: TColStd_Array1OfReal &
     :param Interval2:
@@ -656,7 +831,7 @@ def geomlib_FuseIntervals(*args) -> "void" :
     """
   return _GeomLib.geomlib_FuseIntervals(*args)
 
-def geomlib_EvalMaxParametricDistance(*args) -> "Standard_Real &" :
+def geomlib_EvalMaxParametricDistance(*args):
   """
     * this will compute the maximum distance at the parameters given in the Parameters array by evaluating each parameter the two curves and taking the maximum of the evaluated distance
 
@@ -675,7 +850,7 @@ def geomlib_EvalMaxParametricDistance(*args) -> "Standard_Real &" :
     """
   return _GeomLib.geomlib_EvalMaxParametricDistance(*args)
 
-def geomlib_EvalMaxDistanceAlongParameter(*args) -> "Standard_Real &" :
+def geomlib_EvalMaxDistanceAlongParameter(*args):
   """
     * this will compute the maximum distancef at the parameters given in the Parameters array by projecting from the Curve to the reference curve and taking the minimum distance Than the maximum will be taken on those minimas.
 
@@ -694,7 +869,7 @@ def geomlib_EvalMaxDistanceAlongParameter(*args) -> "Standard_Real &" :
     """
   return _GeomLib.geomlib_EvalMaxDistanceAlongParameter(*args)
 
-def geomlib_CancelDenominatorDerivative(*args) -> "void" :
+def geomlib_CancelDenominatorDerivative(*args):
   """
     * Cancel,on the boudaries,the denominator first derivative in the directions wished by the user and set its value to 1.
 
@@ -709,7 +884,7 @@ def geomlib_CancelDenominatorDerivative(*args) -> "void" :
     """
   return _GeomLib.geomlib_CancelDenominatorDerivative(*args)
 
-def geomlib_NormEstim(*args) -> "Standard_Integer" :
+def geomlib_NormEstim(*args):
   """
     :param S:
     :type S: Handle_Geom_Surface &
@@ -730,22 +905,22 @@ class GeomLib_Array1OfMat(object):
     def __init__(self, *args): 
         """
         :param Low:
-        :type Low: int
+        :type Low: Standard_Integer
         :param Up:
-        :type Up: int
+        :type Up: Standard_Integer
         :rtype: None
 
         :param Item:
         :type Item: gp_Mat
         :param Low:
-        :type Low: int
+        :type Low: Standard_Integer
         :param Up:
-        :type Up: int
+        :type Up: Standard_Integer
         :rtype: None
 
         """
         _GeomLib.GeomLib_Array1OfMat_swiginit(self,_GeomLib.new_GeomLib_Array1OfMat(*args))
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
         :param V:
         :type V: gp_Mat
@@ -754,21 +929,21 @@ class GeomLib_Array1OfMat(object):
         """
         return _GeomLib.GeomLib_Array1OfMat_Init(self, *args)
 
-    def Destroy(self, *args) -> "void" :
+    def Destroy(self):
         """
         :rtype: None
 
         """
-        return _GeomLib.GeomLib_Array1OfMat_Destroy(self, *args)
+        return _GeomLib.GeomLib_Array1OfMat_Destroy(self)
 
-    def IsAllocated(self, *args) -> "Standard_Boolean" :
+    def IsAllocated(self):
         """
         :rtype: bool
 
         """
-        return _GeomLib.GeomLib_Array1OfMat_IsAllocated(self, *args)
+        return _GeomLib.GeomLib_Array1OfMat_IsAllocated(self)
 
-    def Assign(self, *args) -> "GeomLib_Array1OfMat const &" :
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: GeomLib_Array1OfMat &
@@ -777,7 +952,7 @@ class GeomLib_Array1OfMat(object):
         """
         return _GeomLib.GeomLib_Array1OfMat_Assign(self, *args)
 
-    def Set(self, *args) -> "GeomLib_Array1OfMat const &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: GeomLib_Array1OfMat &
@@ -786,31 +961,31 @@ class GeomLib_Array1OfMat(object):
         """
         return _GeomLib.GeomLib_Array1OfMat_Set(self, *args)
 
-    def Length(self, *args) -> "Standard_Integer" :
+    def Length(self):
         """
         :rtype: int
 
         """
-        return _GeomLib.GeomLib_Array1OfMat_Length(self, *args)
+        return _GeomLib.GeomLib_Array1OfMat_Length(self)
 
-    def Lower(self, *args) -> "Standard_Integer" :
+    def Lower(self):
         """
         :rtype: int
 
         """
-        return _GeomLib.GeomLib_Array1OfMat_Lower(self, *args)
+        return _GeomLib.GeomLib_Array1OfMat_Lower(self)
 
-    def Upper(self, *args) -> "Standard_Integer" :
+    def Upper(self):
         """
         :rtype: int
 
         """
-        return _GeomLib.GeomLib_Array1OfMat_Upper(self, *args)
+        return _GeomLib.GeomLib_Array1OfMat_Upper(self)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Value:
         :type Value: gp_Mat
         :rtype: None
@@ -818,19 +993,19 @@ class GeomLib_Array1OfMat(object):
         """
         return _GeomLib.GeomLib_Array1OfMat_SetValue(self, *args)
 
-    def Value(self, *args) -> "gp_Mat const" :
+    def Value(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: gp_Mat
 
         """
         return _GeomLib.GeomLib_Array1OfMat_Value(self, *args)
 
-    def ChangeValue(self, *args) -> "gp_Mat" :
+    def ChangeValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: gp_Mat
 
         """
@@ -874,14 +1049,14 @@ class GeomLib_Check2dBSplineCurve(object):
 
         """
         _GeomLib.GeomLib_Check2dBSplineCurve_swiginit(self,_GeomLib.new_GeomLib_Check2dBSplineCurve(*args))
-    def IsDone(self, *args) -> "Standard_Boolean" :
+    def IsDone(self):
         """
         :rtype: bool
 
         """
-        return _GeomLib.GeomLib_Check2dBSplineCurve_IsDone(self, *args)
+        return _GeomLib.GeomLib_Check2dBSplineCurve_IsDone(self)
 
-    def NeedTangentFix(self, *args) -> "void" :
+    def NeedTangentFix(self, *args):
         """
         :param FirstFlag:
         :type FirstFlag: bool
@@ -892,7 +1067,7 @@ class GeomLib_Check2dBSplineCurve(object):
         """
         return _GeomLib.GeomLib_Check2dBSplineCurve_NeedTangentFix(self, *args)
 
-    def FixTangent(self, *args) -> "void" :
+    def FixTangent(self, *args):
         """
         :param FirstFlag:
         :type FirstFlag: bool
@@ -903,7 +1078,7 @@ class GeomLib_Check2dBSplineCurve(object):
         """
         return _GeomLib.GeomLib_Check2dBSplineCurve_FixTangent(self, *args)
 
-    def FixedTangent(self, *args) -> "Handle_Geom2d_BSplineCurve" :
+    def FixedTangent(self, *args):
         """
         * modifies the curve by fixing the first or the last tangencies if Index3D not in the Range [1,Nb3dSpaces] if the Approx is not Done
 
@@ -947,14 +1122,14 @@ class GeomLib_CheckBSplineCurve(object):
 
         """
         _GeomLib.GeomLib_CheckBSplineCurve_swiginit(self,_GeomLib.new_GeomLib_CheckBSplineCurve(*args))
-    def IsDone(self, *args) -> "Standard_Boolean" :
+    def IsDone(self):
         """
         :rtype: bool
 
         """
-        return _GeomLib.GeomLib_CheckBSplineCurve_IsDone(self, *args)
+        return _GeomLib.GeomLib_CheckBSplineCurve_IsDone(self)
 
-    def NeedTangentFix(self, *args) -> "void" :
+    def NeedTangentFix(self, *args):
         """
         :param FirstFlag:
         :type FirstFlag: bool
@@ -965,7 +1140,7 @@ class GeomLib_CheckBSplineCurve(object):
         """
         return _GeomLib.GeomLib_CheckBSplineCurve_NeedTangentFix(self, *args)
 
-    def FixTangent(self, *args) -> "void" :
+    def FixTangent(self, *args):
         """
         :param FirstFlag:
         :type FirstFlag: bool
@@ -976,7 +1151,7 @@ class GeomLib_CheckBSplineCurve(object):
         """
         return _GeomLib.GeomLib_CheckBSplineCurve_FixTangent(self, *args)
 
-    def FixedTangent(self, *args) -> "Handle_Geom_BSplineCurve" :
+    def FixedTangent(self, *args):
         """
         * modifies the curve by fixing the first or the last tangencies if Index3D not in the Range [1,Nb3dSpaces] if the Approx is not Done
 
@@ -1020,7 +1195,7 @@ class GeomLib_DenominatorMultiplier(object):
 
         """
         _GeomLib.GeomLib_DenominatorMultiplier_swiginit(self,_GeomLib.new_GeomLib_DenominatorMultiplier(*args))
-    def Value(self, *args) -> "Standard_Real" :
+    def Value(self, *args):
         """
         * Returns the value of a(UParameter,VParameter)= H0(UParameter)/Denominator(Umin,Vparameter) D Denominator(Umin,Vparameter) - ------------------------------[H1(u)]/(Denominator(Umin,Vparameter)^2)  D U  + H3(UParameter)/Denominator(Umax,Vparameter) D Denominator(Umax,Vparameter) - ------------------------------[H2(u)]/(Denominator(Umax,Vparameter)^2)  D U
 
@@ -1052,9 +1227,9 @@ class GeomLib_Interpolate(object):
     def __init__(self, *args): 
         """
         :param Degree:
-        :type Degree: int
+        :type Degree: Standard_Integer
         :param NumPoints:
-        :type NumPoints: int
+        :type NumPoints: Standard_Integer
         :param Points:
         :type Points: TColgp_Array1OfPnt
         :param Parameters:
@@ -1063,32 +1238,32 @@ class GeomLib_Interpolate(object):
 
         """
         _GeomLib.GeomLib_Interpolate_swiginit(self,_GeomLib.new_GeomLib_Interpolate(*args))
-    def IsDone(self, *args) -> "Standard_Boolean" :
+    def IsDone(self):
         """
         * returns if everything went OK
 
         :rtype: bool
 
         """
-        return _GeomLib.GeomLib_Interpolate_IsDone(self, *args)
+        return _GeomLib.GeomLib_Interpolate_IsDone(self)
 
-    def Error(self, *args) -> "GeomLib_InterpolationErrors" :
+    def Error(self):
         """
         * returns the error type if any
 
         :rtype: GeomLib_InterpolationErrors
 
         """
-        return _GeomLib.GeomLib_Interpolate_Error(self, *args)
+        return _GeomLib.GeomLib_Interpolate_Error(self)
 
-    def Curve(self, *args) -> "Handle_Geom_BSplineCurve" :
+    def Curve(self):
         """
         * returns the interpolated curve of the requested degree
 
         :rtype: Handle_Geom_BSplineCurve
 
         """
-        return _GeomLib.GeomLib_Interpolate_Curve(self, *args)
+        return _GeomLib.GeomLib_Interpolate_Curve(self)
 
     def __del__(self):
     	try:
@@ -1116,25 +1291,31 @@ class GeomLib_IsPlanarSurface(object):
         :type Tol: float
         :rtype: None
 
+        :param S:
+        :type S: Handle_Geom_Surface &
+        :param Tol: default value is 1.0e-7
+        :type Tol: float
+        :rtype: None
+
         """
         _GeomLib.GeomLib_IsPlanarSurface_swiginit(self,_GeomLib.new_GeomLib_IsPlanarSurface(*args))
-    def IsPlanar(self, *args) -> "Standard_Boolean" :
+    def IsPlanar(self):
         """
         * Return if the Surface is a plan
 
         :rtype: bool
 
         """
-        return _GeomLib.GeomLib_IsPlanarSurface_IsPlanar(self, *args)
+        return _GeomLib.GeomLib_IsPlanarSurface_IsPlanar(self)
 
-    def Plan(self, *args) -> "gp_Pln const" :
+    def Plan(self):
         """
         * Return the plan definition
 
         :rtype: gp_Pln
 
         """
-        return _GeomLib.GeomLib_IsPlanarSurface_Plan(self, *args)
+        return _GeomLib.GeomLib_IsPlanarSurface_Plan(self)
 
     def __del__(self):
     	try:
@@ -1160,17 +1341,17 @@ class GeomLib_LogSample(object):
         :param B:
         :type B: float
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :rtype: None
 
         """
         _GeomLib.GeomLib_LogSample_swiginit(self,_GeomLib.new_GeomLib_LogSample(*args))
-    def GetParameter(self, *args) -> "Standard_Real" :
+    def GetParameter(self, *args):
         """
         * Returns the value of parameter of the point of range Index : A + ((Index-1)/(NbPoints-1))*B. An exception is raised if Index<=0 or Index>NbPoints.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: float
 
         """
@@ -1200,86 +1381,86 @@ class GeomLib_MakeCurvefromApprox(object):
 
         """
         _GeomLib.GeomLib_MakeCurvefromApprox_swiginit(self,_GeomLib.new_GeomLib_MakeCurvefromApprox(*args))
-    def IsDone(self, *args) -> "Standard_Boolean" :
+    def IsDone(self):
         """
         :rtype: bool
 
         """
-        return _GeomLib.GeomLib_MakeCurvefromApprox_IsDone(self, *args)
+        return _GeomLib.GeomLib_MakeCurvefromApprox_IsDone(self)
 
-    def Nb1DSpaces(self, *args) -> "Standard_Integer" :
+    def Nb1DSpaces(self):
         """
         * returns the number of 1D spaces of the Approx
 
         :rtype: int
 
         """
-        return _GeomLib.GeomLib_MakeCurvefromApprox_Nb1DSpaces(self, *args)
+        return _GeomLib.GeomLib_MakeCurvefromApprox_Nb1DSpaces(self)
 
-    def Nb2DSpaces(self, *args) -> "Standard_Integer" :
+    def Nb2DSpaces(self):
         """
         * returns the number of 3D spaces of the Approx
 
         :rtype: int
 
         """
-        return _GeomLib.GeomLib_MakeCurvefromApprox_Nb2DSpaces(self, *args)
+        return _GeomLib.GeomLib_MakeCurvefromApprox_Nb2DSpaces(self)
 
-    def Nb3DSpaces(self, *args) -> "Standard_Integer" :
+    def Nb3DSpaces(self):
         """
         * returns the number of 3D spaces of the Approx
 
         :rtype: int
 
         """
-        return _GeomLib.GeomLib_MakeCurvefromApprox_Nb3DSpaces(self, *args)
+        return _GeomLib.GeomLib_MakeCurvefromApprox_Nb3DSpaces(self)
 
-    def Curve2dFromTwo1d(self, *args) -> "Handle_Geom2d_BSplineCurve" :
+    def Curve2dFromTwo1d(self, *args):
         """
         * returns a 2D curve building it from the 1D curve in x at Index1d and y at Index2d amongst the 1D curves if Index1d not in the Range [1,Nb1dSpaces] if Index2d not in the Range [1,Nb1dSpaces] if the Approx is not Done
 
         :param Index1d:
-        :type Index1d: int
+        :type Index1d: Standard_Integer
         :param Index2d:
-        :type Index2d: int
+        :type Index2d: Standard_Integer
         :rtype: Handle_Geom2d_BSplineCurve
 
         """
         return _GeomLib.GeomLib_MakeCurvefromApprox_Curve2dFromTwo1d(self, *args)
 
-    def Curve2d(self, *args) -> "Handle_Geom2d_BSplineCurve" :
+    def Curve2d(self, *args):
         """
         * returns a polynomial curve whose poles correspond to the Index2d 2D space if Index2d not in the Range [1,Nb2dSpaces] if the Approx is not Done
 
         :param Index2d:
-        :type Index2d: int
+        :type Index2d: Standard_Integer
         :rtype: Handle_Geom2d_BSplineCurve
 
         * returns a rational curve whose poles correspond to the index2d of the 2D space and whose weights correspond to one dimensional space of index 1d if Index1d not in the Range [1,Nb1dSpaces] if Index2d not in the Range [1,Nb2dSpaces] if the Approx is not Done
 
         :param Index1d:
-        :type Index1d: int
+        :type Index1d: Standard_Integer
         :param Index2d:
-        :type Index2d: int
+        :type Index2d: Standard_Integer
         :rtype: Handle_Geom2d_BSplineCurve
 
         """
         return _GeomLib.GeomLib_MakeCurvefromApprox_Curve2d(self, *args)
 
-    def Curve(self, *args) -> "Handle_Geom_BSplineCurve" :
+    def Curve(self, *args):
         """
         * returns a polynomial curve whose poles correspond to the Index3D 3D space if Index3D not in the Range [1,Nb3dSpaces] if the Approx is not Done
 
         :param Index3d:
-        :type Index3d: int
+        :type Index3d: Standard_Integer
         :rtype: Handle_Geom_BSplineCurve
 
         * returns a rational curve whose poles correspond to the index3D of the 3D space and whose weights correspond to the index1d 1D space. if Index1D not in the Range [1,Nb1dSpaces] if Index3D not in the Range [1,Nb3dSpaces] if the Approx is not Done
 
         :param Index1D:
-        :type Index1D: int
+        :type Index1D: Standard_Integer
         :param Index3D:
-        :type Index3D: int
+        :type Index3D: Standard_Integer
         :rtype: Handle_Geom_BSplineCurve
 
         """
@@ -1315,7 +1496,7 @@ class GeomLib_PolyFunc(object):
 
         """
         _GeomLib.GeomLib_PolyFunc_swiginit(self,_GeomLib.new_GeomLib_PolyFunc(*args))
-    def Value(self, *args) -> "Standard_Boolean" :
+    def Value(self, *args):
         """
         * computes the value <F>of the function for the variable <X>. Returns True if the calculation were successfully done, False otherwise.
 
@@ -1328,7 +1509,7 @@ class GeomLib_PolyFunc(object):
         """
         return _GeomLib.GeomLib_PolyFunc_Value(self, *args)
 
-    def Derivative(self, *args) -> "Standard_Boolean" :
+    def Derivative(self, *args):
         """
         * computes the derivative <D> of the function for the variable <X>. Returns True if the calculation were successfully done, False otherwise.
 
@@ -1341,7 +1522,7 @@ class GeomLib_PolyFunc(object):
         """
         return _GeomLib.GeomLib_PolyFunc_Derivative(self, *args)
 
-    def Values(self, *args) -> "Standard_Boolean" :
+    def Values(self, *args):
         """
         * computes the value <F> and the derivative <D> of the function for the variable <X>. Returns True if the calculation were successfully done, False otherwise.
 
@@ -1373,8 +1554,9 @@ GeomLib_PolyFunc_swigregister(GeomLib_PolyFunc)
 
 class GeomLib_Tool(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
+    def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def Parameters(*args) -> "Standard_Real &, Standard_Real &" :
+    def Parameters(*args):
         """
         * Extracts the parameter of a 3D point lying on a surface or at a distance less than the tolerance value.
 
@@ -1394,7 +1576,7 @@ class GeomLib_Tool(object):
         return _GeomLib.GeomLib_Tool_Parameters(*args)
 
     Parameters = staticmethod(Parameters)
-    def Parameter(*args) -> "Standard_Real &" :
+    def Parameter(*args):
         """
         * Extracts the parameter of a 3D point lying on a 3D curve or at a distance less than the tolerance value.
 
@@ -1424,8 +1606,6 @@ class GeomLib_Tool(object):
         return _GeomLib.GeomLib_Tool_Parameter(*args)
 
     Parameter = staticmethod(Parameter)
-    def __init__(self): 
-        _GeomLib.GeomLib_Tool_swiginit(self,_GeomLib.new_GeomLib_Tool())
     def __del__(self):
     	try:
     		self.thisown = False
@@ -1438,7 +1618,7 @@ GeomLib_Tool._kill_pointed = new_instancemethod(_GeomLib.GeomLib_Tool__kill_poin
 GeomLib_Tool_swigregister = _GeomLib.GeomLib_Tool_swigregister
 GeomLib_Tool_swigregister(GeomLib_Tool)
 
-def GeomLib_Tool_Parameters(*args) -> "Standard_Real &, Standard_Real &" :
+def GeomLib_Tool_Parameters(*args):
   """
     * Extracts the parameter of a 3D point lying on a surface or at a distance less than the tolerance value.
 
@@ -1457,7 +1637,7 @@ def GeomLib_Tool_Parameters(*args) -> "Standard_Real &, Standard_Real &" :
     """
   return _GeomLib.GeomLib_Tool_Parameters(*args)
 
-def GeomLib_Tool_Parameter(*args) -> "Standard_Real &" :
+def GeomLib_Tool_Parameter(*args):
   """
     * Extracts the parameter of a 3D point lying on a 3D curve or at a distance less than the tolerance value.
 

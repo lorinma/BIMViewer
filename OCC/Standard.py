@@ -138,8 +138,9 @@ Standard_IsPersistent = _Standard.Standard_IsPersistent
 Standard_IsNotLoaded = _Standard.Standard_IsNotLoaded
 class standard(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
+    def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def Allocate(*args) -> "Standard_Address" :
+    def Allocate(*args):
         """
         * Allocates memory blocks aSize - bytes to allocate
 
@@ -151,7 +152,7 @@ class standard(object):
         return _Standard.standard_Allocate(*args)
 
     Allocate = staticmethod(Allocate)
-    def Reallocate(*args) -> "Standard_Address" :
+    def Reallocate(*args):
         """
         * Reallocates memory blocks aStorage - previously allocated memory block aNewSize - new size in bytes
 
@@ -165,18 +166,16 @@ class standard(object):
         return _Standard.standard_Reallocate(*args)
 
     Reallocate = staticmethod(Reallocate)
-    def Purge(*args) -> "Standard_Integer" :
+    def Purge():
         """
         * Deallocates the storage retained on the free list and clears the list. Returns non-zero if some memory has been actually freed.
 
         :rtype: int
 
         """
-        return _Standard.standard_Purge(*args)
+        return _Standard.standard_Purge()
 
     Purge = staticmethod(Purge)
-    def __init__(self): 
-        _Standard.standard_swiginit(self,_Standard.new_standard())
     def __del__(self):
     	try:
     		self.thisown = False
@@ -189,7 +188,7 @@ standard._kill_pointed = new_instancemethod(_Standard.standard__kill_pointed,Non
 standard_swigregister = _Standard.standard_swigregister
 standard_swigregister(standard)
 
-def standard_Allocate(*args) -> "Standard_Address" :
+def standard_Allocate(*args):
   """
     * Allocates memory blocks aSize - bytes to allocate
 
@@ -200,7 +199,7 @@ def standard_Allocate(*args) -> "Standard_Address" :
     """
   return _Standard.standard_Allocate(*args)
 
-def standard_Reallocate(*args) -> "Standard_Address" :
+def standard_Reallocate(*args):
   """
     * Reallocates memory blocks aStorage - previously allocated memory block aNewSize - new size in bytes
 
@@ -213,45 +212,45 @@ def standard_Reallocate(*args) -> "Standard_Address" :
     """
   return _Standard.standard_Reallocate(*args)
 
-def standard_Purge(*args) -> "Standard_Integer" :
+def standard_Purge():
   """
     * Deallocates the storage retained on the free list and clears the list. Returns non-zero if some memory has been actually freed.
 
     :rtype: int
 
     """
-  return _Standard.standard_Purge(*args)
+  return _Standard.standard_Purge()
 
 class Standard_ErrorHandler(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         * Create a ErrorHandler (to be used with try{}catch(){}). It uses the 'setjmp' and 'longjmp' routines.
 
         :rtype: None
 
         """
-        _Standard.Standard_ErrorHandler_swiginit(self,_Standard.new_Standard_ErrorHandler(*args))
-    def Destroy(self, *args) -> "void" :
+        _Standard.Standard_ErrorHandler_swiginit(self,_Standard.new_Standard_ErrorHandler())
+    def Destroy(self):
         """
         * Unlinks and checks if there is a raised exception.
 
         :rtype: None
 
         """
-        return _Standard.Standard_ErrorHandler_Destroy(self, *args)
+        return _Standard.Standard_ErrorHandler_Destroy(self)
 
-    def Unlink(self, *args) -> "void" :
+    def Unlink(self):
         """
         * Removes handler from the handlers list
 
         :rtype: None
 
         """
-        return _Standard.Standard_ErrorHandler_Unlink(self, *args)
+        return _Standard.Standard_ErrorHandler_Unlink(self)
 
-    def Catches(self, *args) -> "Standard_Boolean" :
+    def Catches(self, *args):
         """
         * Returns 'True' if the caught exception has the same type or inherits from 'aType'
 
@@ -262,42 +261,42 @@ class Standard_ErrorHandler(object):
         """
         return _Standard.Standard_ErrorHandler_Catches(self, *args)
 
-    def Label(self, *args) -> "Standard_JmpBuf &" :
+    def Label(self):
         """
         * Returns label for jump
 
         :rtype: Standard_JmpBuf
 
         """
-        return _Standard.Standard_ErrorHandler_Label(self, *args)
+        return _Standard.Standard_ErrorHandler_Label(self)
 
-    def Error(self, *args) -> "Handle_Standard_Failure" :
+    def Error(self):
         """
         * Returns the current Error.
 
         :rtype: Handle_Standard_Failure
 
         """
-        return _Standard.Standard_ErrorHandler_Error(self, *args)
+        return _Standard.Standard_ErrorHandler_Error(self)
 
-    def LastCaughtError(*args) -> "Handle_Standard_Failure" :
+    def LastCaughtError():
         """
         * Returns the caught exception.
 
         :rtype: Handle_Standard_Failure
 
         """
-        return _Standard.Standard_ErrorHandler_LastCaughtError(*args)
+        return _Standard.Standard_ErrorHandler_LastCaughtError()
 
     LastCaughtError = staticmethod(LastCaughtError)
-    def IsInTryBlock(*args) -> "Standard_Boolean" :
+    def IsInTryBlock():
         """
         * Test if the code is currently running in a try block
 
         :rtype: bool
 
         """
-        return _Standard.Standard_ErrorHandler_IsInTryBlock(*args)
+        return _Standard.Standard_ErrorHandler_IsInTryBlock()
 
     IsInTryBlock = staticmethod(IsInTryBlock)
     def __del__(self):
@@ -317,54 +316,54 @@ Standard_ErrorHandler._kill_pointed = new_instancemethod(_Standard.Standard_Erro
 Standard_ErrorHandler_swigregister = _Standard.Standard_ErrorHandler_swigregister
 Standard_ErrorHandler_swigregister(Standard_ErrorHandler)
 
-def Standard_ErrorHandler_LastCaughtError(*args) -> "Handle_Standard_Failure" :
+def Standard_ErrorHandler_LastCaughtError():
   """
     * Returns the caught exception.
 
     :rtype: Handle_Standard_Failure
 
     """
-  return _Standard.Standard_ErrorHandler_LastCaughtError(*args)
+  return _Standard.Standard_ErrorHandler_LastCaughtError()
 
-def Standard_ErrorHandler_IsInTryBlock(*args) -> "Standard_Boolean" :
+def Standard_ErrorHandler_IsInTryBlock():
   """
     * Test if the code is currently running in a try block
 
     :rtype: bool
 
     """
-  return _Standard.Standard_ErrorHandler_IsInTryBlock(*args)
+  return _Standard.Standard_ErrorHandler_IsInTryBlock()
 
 class Standard_ErrorHandlerCallback(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def RegisterCallback(self, *args) -> "void" :
+    def RegisterCallback(self):
         """
         * Registers this callback object in the current error handler (if found).
 
         :rtype: None
 
         """
-        return _Standard.Standard_ErrorHandlerCallback_RegisterCallback(self, *args)
+        return _Standard.Standard_ErrorHandlerCallback_RegisterCallback(self)
 
-    def UnregisterCallback(self, *args) -> "void" :
+    def UnregisterCallback(self):
         """
         * Unregisters this callback object from the error handler.
 
         :rtype: None
 
         """
-        return _Standard.Standard_ErrorHandlerCallback_UnregisterCallback(self, *args)
+        return _Standard.Standard_ErrorHandlerCallback_UnregisterCallback(self)
 
-    def DestroyCallback(self, *args) -> "void" :
+    def DestroyCallback(self):
         """
         * The callback function to perform necessary callback action. Called by the exception handler when it is being destroyed but still has this callback registered.
 
         :rtype: void
 
         """
-        return _Standard.Standard_ErrorHandlerCallback_DestroyCallback(self, *args)
+        return _Standard.Standard_ErrorHandlerCallback_DestroyCallback(self)
 
     def __del__(self):
     	try:
@@ -401,7 +400,7 @@ class Standard_GUID(object):
         :rtype: None
 
         :param a32b:
-        :type a32b: int
+        :type a32b: Standard_Integer
         :param a16b1:
         :type a16b1: Standard_ExtCharacter
         :param a16b2:
@@ -432,14 +431,14 @@ class Standard_GUID(object):
 
         """
         _Standard.Standard_GUID_swiginit(self,_Standard.new_Standard_GUID(*args))
-    def ToUUID(self, *args) -> "Standard_UUID" :
+    def ToUUID(self):
         """
         :rtype: Standard_UUID
 
         """
-        return _Standard.Standard_GUID_ToUUID(self, *args)
+        return _Standard.Standard_GUID_ToUUID(self)
 
-    def ToCString(self, *args) -> "void" :
+    def ToCString(self, *args):
         """
         * translate the GUID into ascii string the aStrGuid is allocated by user. the guid have the following format:  '00000000-0000-0000-0000-000000000000'
 
@@ -450,7 +449,7 @@ class Standard_GUID(object):
         """
         return _Standard.Standard_GUID_ToCString(self, *args)
 
-    def ToExtString(self, *args) -> "void" :
+    def ToExtString(self, *args):
         """
         * translate the GUID into unicode string the aStrGuid is allocated by user. the guid have the following format:  '00000000-0000-0000-0000-000000000000'
 
@@ -461,7 +460,7 @@ class Standard_GUID(object):
         """
         return _Standard.Standard_GUID_ToExtString(self, *args)
 
-    def IsSame(self, *args) -> "Standard_Boolean" :
+    def IsSame(self, *args):
         """
         :param uid:
         :type uid: Standard_GUID &
@@ -476,7 +475,7 @@ class Standard_GUID(object):
         except:
             return False
 
-    def IsNotSame(self, *args) -> "Standard_Boolean" :
+    def IsNotSame(self, *args):
         """
         :param uid:
         :type uid: Standard_GUID &
@@ -491,7 +490,7 @@ class Standard_GUID(object):
         except:
             return True
 
-    def Assign(self, *args) -> "void" :
+    def Assign(self, *args):
         """
         :param uid:
         :type uid: Standard_GUID &
@@ -504,7 +503,7 @@ class Standard_GUID(object):
         """
         return _Standard.Standard_GUID_Assign(self, *args)
 
-    def Set(self, *args) -> "void" :
+    def Set(self, *args):
         """
         :param uid:
         :type uid: Standard_GUID &
@@ -517,11 +516,11 @@ class Standard_GUID(object):
         """
         return _Standard.Standard_GUID_Set(self, *args)
 
-    def ShallowDumpToString(self) -> "std::string" :
+    def ShallowDumpToString(self):
         """ShallowDumpToString(Standard_GUID self) -> std::string"""
         return _Standard.Standard_GUID_ShallowDumpToString(self)
 
-    def CheckGUIDFormat(*args) -> "Standard_Boolean" :
+    def CheckGUIDFormat(*args):
         """
         * Check the format of a GUID string. It checks the size, the position of the '-' and the correct size of fields.
 
@@ -533,32 +532,32 @@ class Standard_GUID(object):
         return _Standard.Standard_GUID_CheckGUIDFormat(*args)
 
     CheckGUIDFormat = staticmethod(CheckGUIDFormat)
-    def Hash(self, *args) -> "Standard_Integer" :
+    def Hash(self, *args):
         """
         * Hash function for GUID.
 
         :param Upper:
-        :type Upper: int
+        :type Upper: Standard_Integer
         :rtype: int
 
         """
         return _Standard.Standard_GUID_Hash(self, *args)
 
-    def HashCode(*args) -> "Standard_Integer" :
+    def HashCode(*args):
         """
         * H method used by collections.
 
         :param aguid:
         :type aguid: Standard_GUID &
         :param Upper:
-        :type Upper: int
+        :type Upper: Standard_Integer
         :rtype: int
 
         """
         return _Standard.Standard_GUID_HashCode(*args)
 
     HashCode = staticmethod(HashCode)
-    def IsEqual(*args) -> "Standard_Boolean" :
+    def IsEqual(*args):
         """
         * Returns True when the two GUID are the same.
 
@@ -572,30 +571,30 @@ class Standard_GUID(object):
         return _Standard.Standard_GUID_IsEqual(*args)
 
     IsEqual = staticmethod(IsEqual)
-    def _CSFDB_GetStandard_GUIDmy32b(self, *args) -> "Standard_Integer" :
+    def _CSFDB_GetStandard_GUIDmy32b(self):
         """
         :rtype: int
 
         """
-        return _Standard.Standard_GUID__CSFDB_GetStandard_GUIDmy32b(self, *args)
+        return _Standard.Standard_GUID__CSFDB_GetStandard_GUIDmy32b(self)
 
-    def _CSFDB_SetStandard_GUIDmy32b(self, *args) -> "void" :
+    def _CSFDB_SetStandard_GUIDmy32b(self, *args):
         """
         :param p:
-        :type p: int
+        :type p: Standard_Integer
         :rtype: None
 
         """
         return _Standard.Standard_GUID__CSFDB_SetStandard_GUIDmy32b(self, *args)
 
-    def _CSFDB_GetStandard_GUIDmy16b1(self, *args) -> "Standard_ExtCharacter" :
+    def _CSFDB_GetStandard_GUIDmy16b1(self):
         """
         :rtype: Standard_ExtCharacter
 
         """
-        return _Standard.Standard_GUID__CSFDB_GetStandard_GUIDmy16b1(self, *args)
+        return _Standard.Standard_GUID__CSFDB_GetStandard_GUIDmy16b1(self)
 
-    def _CSFDB_SetStandard_GUIDmy16b1(self, *args) -> "void" :
+    def _CSFDB_SetStandard_GUIDmy16b1(self, *args):
         """
         :param p:
         :type p: Standard_ExtCharacter
@@ -604,14 +603,14 @@ class Standard_GUID(object):
         """
         return _Standard.Standard_GUID__CSFDB_SetStandard_GUIDmy16b1(self, *args)
 
-    def _CSFDB_GetStandard_GUIDmy16b2(self, *args) -> "Standard_ExtCharacter" :
+    def _CSFDB_GetStandard_GUIDmy16b2(self):
         """
         :rtype: Standard_ExtCharacter
 
         """
-        return _Standard.Standard_GUID__CSFDB_GetStandard_GUIDmy16b2(self, *args)
+        return _Standard.Standard_GUID__CSFDB_GetStandard_GUIDmy16b2(self)
 
-    def _CSFDB_SetStandard_GUIDmy16b2(self, *args) -> "void" :
+    def _CSFDB_SetStandard_GUIDmy16b2(self, *args):
         """
         :param p:
         :type p: Standard_ExtCharacter
@@ -620,14 +619,14 @@ class Standard_GUID(object):
         """
         return _Standard.Standard_GUID__CSFDB_SetStandard_GUIDmy16b2(self, *args)
 
-    def _CSFDB_GetStandard_GUIDmy16b3(self, *args) -> "Standard_ExtCharacter" :
+    def _CSFDB_GetStandard_GUIDmy16b3(self):
         """
         :rtype: Standard_ExtCharacter
 
         """
-        return _Standard.Standard_GUID__CSFDB_GetStandard_GUIDmy16b3(self, *args)
+        return _Standard.Standard_GUID__CSFDB_GetStandard_GUIDmy16b3(self)
 
-    def _CSFDB_SetStandard_GUIDmy16b3(self, *args) -> "void" :
+    def _CSFDB_SetStandard_GUIDmy16b3(self, *args):
         """
         :param p:
         :type p: Standard_ExtCharacter
@@ -636,14 +635,14 @@ class Standard_GUID(object):
         """
         return _Standard.Standard_GUID__CSFDB_SetStandard_GUIDmy16b3(self, *args)
 
-    def _CSFDB_GetStandard_GUIDmy8b1(self, *args) -> "Standard_Byte" :
+    def _CSFDB_GetStandard_GUIDmy8b1(self):
         """
         :rtype: Standard_Byte
 
         """
-        return _Standard.Standard_GUID__CSFDB_GetStandard_GUIDmy8b1(self, *args)
+        return _Standard.Standard_GUID__CSFDB_GetStandard_GUIDmy8b1(self)
 
-    def _CSFDB_SetStandard_GUIDmy8b1(self, *args) -> "void" :
+    def _CSFDB_SetStandard_GUIDmy8b1(self, *args):
         """
         :param p:
         :type p: Standard_Byte
@@ -652,14 +651,14 @@ class Standard_GUID(object):
         """
         return _Standard.Standard_GUID__CSFDB_SetStandard_GUIDmy8b1(self, *args)
 
-    def _CSFDB_GetStandard_GUIDmy8b2(self, *args) -> "Standard_Byte" :
+    def _CSFDB_GetStandard_GUIDmy8b2(self):
         """
         :rtype: Standard_Byte
 
         """
-        return _Standard.Standard_GUID__CSFDB_GetStandard_GUIDmy8b2(self, *args)
+        return _Standard.Standard_GUID__CSFDB_GetStandard_GUIDmy8b2(self)
 
-    def _CSFDB_SetStandard_GUIDmy8b2(self, *args) -> "void" :
+    def _CSFDB_SetStandard_GUIDmy8b2(self, *args):
         """
         :param p:
         :type p: Standard_Byte
@@ -668,14 +667,14 @@ class Standard_GUID(object):
         """
         return _Standard.Standard_GUID__CSFDB_SetStandard_GUIDmy8b2(self, *args)
 
-    def _CSFDB_GetStandard_GUIDmy8b3(self, *args) -> "Standard_Byte" :
+    def _CSFDB_GetStandard_GUIDmy8b3(self):
         """
         :rtype: Standard_Byte
 
         """
-        return _Standard.Standard_GUID__CSFDB_GetStandard_GUIDmy8b3(self, *args)
+        return _Standard.Standard_GUID__CSFDB_GetStandard_GUIDmy8b3(self)
 
-    def _CSFDB_SetStandard_GUIDmy8b3(self, *args) -> "void" :
+    def _CSFDB_SetStandard_GUIDmy8b3(self, *args):
         """
         :param p:
         :type p: Standard_Byte
@@ -684,14 +683,14 @@ class Standard_GUID(object):
         """
         return _Standard.Standard_GUID__CSFDB_SetStandard_GUIDmy8b3(self, *args)
 
-    def _CSFDB_GetStandard_GUIDmy8b4(self, *args) -> "Standard_Byte" :
+    def _CSFDB_GetStandard_GUIDmy8b4(self):
         """
         :rtype: Standard_Byte
 
         """
-        return _Standard.Standard_GUID__CSFDB_GetStandard_GUIDmy8b4(self, *args)
+        return _Standard.Standard_GUID__CSFDB_GetStandard_GUIDmy8b4(self)
 
-    def _CSFDB_SetStandard_GUIDmy8b4(self, *args) -> "void" :
+    def _CSFDB_SetStandard_GUIDmy8b4(self, *args):
         """
         :param p:
         :type p: Standard_Byte
@@ -700,14 +699,14 @@ class Standard_GUID(object):
         """
         return _Standard.Standard_GUID__CSFDB_SetStandard_GUIDmy8b4(self, *args)
 
-    def _CSFDB_GetStandard_GUIDmy8b5(self, *args) -> "Standard_Byte" :
+    def _CSFDB_GetStandard_GUIDmy8b5(self):
         """
         :rtype: Standard_Byte
 
         """
-        return _Standard.Standard_GUID__CSFDB_GetStandard_GUIDmy8b5(self, *args)
+        return _Standard.Standard_GUID__CSFDB_GetStandard_GUIDmy8b5(self)
 
-    def _CSFDB_SetStandard_GUIDmy8b5(self, *args) -> "void" :
+    def _CSFDB_SetStandard_GUIDmy8b5(self, *args):
         """
         :param p:
         :type p: Standard_Byte
@@ -716,14 +715,14 @@ class Standard_GUID(object):
         """
         return _Standard.Standard_GUID__CSFDB_SetStandard_GUIDmy8b5(self, *args)
 
-    def _CSFDB_GetStandard_GUIDmy8b6(self, *args) -> "Standard_Byte" :
+    def _CSFDB_GetStandard_GUIDmy8b6(self):
         """
         :rtype: Standard_Byte
 
         """
-        return _Standard.Standard_GUID__CSFDB_GetStandard_GUIDmy8b6(self, *args)
+        return _Standard.Standard_GUID__CSFDB_GetStandard_GUIDmy8b6(self)
 
-    def _CSFDB_SetStandard_GUIDmy8b6(self, *args) -> "void" :
+    def _CSFDB_SetStandard_GUIDmy8b6(self, *args):
         """
         :param p:
         :type p: Standard_Byte
@@ -732,7 +731,7 @@ class Standard_GUID(object):
         """
         return _Standard.Standard_GUID__CSFDB_SetStandard_GUIDmy8b6(self, *args)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Standard_GUID self)"""
         return _Standard.Standard_GUID__kill_pointed(self)
 
@@ -779,7 +778,7 @@ Standard_GUID._kill_pointed = new_instancemethod(_Standard.Standard_GUID__kill_p
 Standard_GUID_swigregister = _Standard.Standard_GUID_swigregister
 Standard_GUID_swigregister(Standard_GUID)
 
-def Standard_GUID_CheckGUIDFormat(*args) -> "Standard_Boolean" :
+def Standard_GUID_CheckGUIDFormat(*args):
   """
     * Check the format of a GUID string. It checks the size, the position of the '-' and the correct size of fields.
 
@@ -790,20 +789,20 @@ def Standard_GUID_CheckGUIDFormat(*args) -> "Standard_Boolean" :
     """
   return _Standard.Standard_GUID_CheckGUIDFormat(*args)
 
-def Standard_GUID_HashCode(*args) -> "Standard_Integer" :
+def Standard_GUID_HashCode(*args):
   """
     * H method used by collections.
 
     :param aguid:
     :type aguid: Standard_GUID &
     :param Upper:
-    :type Upper: int
+    :type Upper: Standard_Integer
     :rtype: int
 
     """
   return _Standard.Standard_GUID_HashCode(*args)
 
-def Standard_GUID_IsEqual(*args) -> "Standard_Boolean" :
+def Standard_GUID_IsEqual(*args):
   """
     * Returns True when the two GUID are the same.
 
@@ -820,7 +819,7 @@ class Standard_MMgrRoot(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def Allocate(self, *args) -> "Standard_Address" :
+    def Allocate(self, *args):
         """
         * Allocate specified number of bytes. The actually allocated space should be rounded up to double word size (4 bytes), as this is expected by implementation of some classes in OCC (e.g. TCollection_AsciiString)
 
@@ -831,7 +830,7 @@ class Standard_MMgrRoot(object):
         """
         return _Standard.Standard_MMgrRoot_Allocate(self, *args)
 
-    def Reallocate(self, *args) -> "Standard_Address" :
+    def Reallocate(self, *args):
         """
         * Reallocate previously allocated memory to contain at least theSize bytes. In case of success, new pointer is returned.
 
@@ -844,7 +843,7 @@ class Standard_MMgrRoot(object):
         """
         return _Standard.Standard_MMgrRoot_Reallocate(self, *args)
 
-    def Free(self, *args) -> "void" :
+    def Free(self, *args):
         """
         * Frees previously allocated memory at specified address.
 
@@ -855,8 +854,14 @@ class Standard_MMgrRoot(object):
         """
         return _Standard.Standard_MMgrRoot_Free(self, *args)
 
-    def Purge(self, *args) -> "Standard_Integer" :
+    def Purge(self, *args):
         """
+        * Purge internally cached unused memory blocks (if any) by releasing them to the operating system. Must return non-zero if some memory has been actually released, or zero otherwise. If option isDestroyed is True, this means that memory manager is not expected to be used any more; note however that in general case it is still possible to have calls to that instance of memory manager after this (e.g. to free memory of static objects in OCC). Thus this option should command the memory manager to release any cached memory to the system and not cache any more, but still remain operable... //! Default implementation does nothing and returns 0.
+
+        :param isDestroyed: default value is Standard_False
+        :type isDestroyed: bool
+        :rtype: int
+
         * Purge internally cached unused memory blocks (if any) by releasing them to the operating system. Must return non-zero if some memory has been actually released, or zero otherwise. If option isDestroyed is True, this means that memory manager is not expected to be used any more; note however that in general case it is still possible to have calls to that instance of memory manager after this (e.g. to free memory of static objects in OCC). Thus this option should command the memory manager to release any cached memory to the system and not cache any more, but still remain operable... //! Default implementation does nothing and returns 0.
 
         :param isDestroyed: default value is Standard_False
@@ -884,26 +889,27 @@ Standard_MMgrRoot_swigregister(Standard_MMgrRoot)
 
 class Standard_Storable(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
+    def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def Delete(self, *args) -> "void" :
+    def Delete(self):
         """
         :rtype: void
 
         """
-        return _Standard.Standard_Storable_Delete(self, *args)
+        return _Standard.Standard_Storable_Delete(self)
 
-    def HashCode(self, *args) -> "Standard_Integer" :
+    def HashCode(self, *args):
         """
         * Returns a hashed value denoting <self>. This value is in  the range 1..<Upper>.
 
         :param Upper:
-        :type Upper: int
+        :type Upper: Standard_Integer
         :rtype: int
 
         """
         return _Standard.Standard_Storable_HashCode(self, *args)
 
-    def IsEqual(self, *args) -> "Standard_Boolean" :
+    def IsEqual(self, *args):
         """
         * Returns true if the direct contents of <self> and  <Other> are memberwise equal.
 
@@ -920,7 +926,7 @@ class Standard_Storable(object):
         except:
             return False
 
-    def IsSimilar(self, *args) -> "Standard_Boolean" :
+    def IsSimilar(self, *args):
         """
         * Returns true if the Deep contents of <self> and  <Other> are memberwise equal.
 
@@ -931,17 +937,14 @@ class Standard_Storable(object):
         """
         return _Standard.Standard_Storable_IsSimilar(self, *args)
 
-    def ShallowDumpToString(self) -> "std::string" :
+    def ShallowDumpToString(self):
         """ShallowDumpToString(Standard_Storable self) -> std::string"""
         return _Standard.Standard_Storable_ShallowDumpToString(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Standard_Storable self)"""
         return _Standard.Standard_Storable__kill_pointed(self)
 
-    def __init__(self): 
-        """__init__(Standard_Storable self) -> Standard_Storable"""
-        _Standard.Standard_Storable_swiginit(self,_Standard.new_Standard_Storable())
     def __del__(self):
     	try:
     		self.thisown = False
@@ -978,7 +981,7 @@ class Standard_Transient(object):
 
         """
         _Standard.Standard_Transient_swiginit(self,_Standard.new_Standard_Transient(*args))
-    def Set(self, *args) -> "Standard_Transient &" :
+    def Set(self, *args):
         """
         * Assignment operator, needed to avoid copying reference counter
 
@@ -989,29 +992,29 @@ class Standard_Transient(object):
         """
         return _Standard.Standard_Transient_Set(self, *args)
 
-    def Delete(self, *args) -> "void" :
+    def Delete(self):
         """
         * Memory deallocator for transient classes
 
         :rtype: void
 
         """
-        return _Standard.Standard_Transient_Delete(self, *args)
+        return _Standard.Standard_Transient_Delete(self)
 
-    def ShallowDumpToString(self) -> "std::string" :
+    def ShallowDumpToString(self):
         """ShallowDumpToString(Standard_Transient self) -> std::string"""
         return _Standard.Standard_Transient_ShallowDumpToString(self)
 
-    def DynamicType(self, *args) -> "Handle_Standard_Type const &" :
+    def DynamicType(self):
         """
         * Returns a type information object about this object.
 
         :rtype: Handle_Standard_Type
 
         """
-        return _Standard.Standard_Transient_DynamicType(self, *args)
+        return _Standard.Standard_Transient_DynamicType(self)
 
-    def IsInstance(self, *args) -> "Standard_Boolean" :
+    def IsInstance(self, *args):
         """
         * Returns a true value if this is an instance of Type.
 
@@ -1028,7 +1031,7 @@ class Standard_Transient(object):
         """
         return _Standard.Standard_Transient_IsInstance(self, *args)
 
-    def IsKind(self, *args) -> "Standard_Boolean" :
+    def IsKind(self, *args):
         """
         * Returns true if this is an instance of Type or an instance of any class that inherits from Type. Note that multiple inheritance is not supported by OCCT RTTI mechanism.
 
@@ -1045,29 +1048,29 @@ class Standard_Transient(object):
         """
         return _Standard.Standard_Transient_IsKind(self, *args)
 
-    def This(self, *args) -> "Handle_Standard_Transient" :
+    def This(self):
         """
         * Returns a Handle which references this object. Must never be called to objects created in stack.
 
         :rtype: Handle_Standard_Transient
 
         """
-        return _Standard.Standard_Transient_This(self, *args)
+        return _Standard.Standard_Transient_This(self)
 
-    def GetRefCount(self, *args) -> "Standard_Integer" :
+    def GetRefCount(self):
         """
         * Get the reference counter of this object.
 
         :rtype: int
 
         """
-        return _Standard.Standard_Transient_GetRefCount(self, *args)
+        return _Standard.Standard_Transient_GetRefCount(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Standard_Transient self)"""
         return _Standard.Standard_Transient__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Standard_Transient" :
+    def GetHandle(self):
         """GetHandle(Standard_Transient self) -> Handle_Standard_Transient"""
         return _Standard.Standard_Transient_GetHandle(self)
 
@@ -1128,7 +1131,7 @@ Handle_Standard_Transient._kill_pointed = new_instancemethod(_Standard.Handle_St
 Handle_Standard_Transient_swigregister = _Standard.Handle_Standard_Transient_swigregister
 Handle_Standard_Transient_swigregister(Handle_Standard_Transient)
 
-def Handle_Standard_Transient_DownCast(*args) -> "Handle_Standard_Transient const" :
+def Handle_Standard_Transient_DownCast(*args):
   return _Standard.Handle_Standard_Transient_DownCast(*args)
 Handle_Standard_Transient_DownCast = _Standard.Handle_Standard_Transient_DownCast
 
@@ -1146,7 +1149,77 @@ class Standard_MMgrOpt(Standard_MMgrRoot):
         :param aCellSize: default value is 200
         :type aCellSize: Standard_Size
         :param aNbPages: default value is 10000
-        :type aNbPages: int
+        :type aNbPages: Standard_Integer
+        :param aThreshold: default value is 40000
+        :type aThreshold: Standard_Size
+        :rtype: None
+
+        * Constructor. If aClear is True, the allocated emmory will be nullified. For description of other parameters, see description of the class above.
+
+        :param aClear: default value is Standard_True
+        :type aClear: bool
+        :param aMMap: default value is Standard_True
+        :type aMMap: bool
+        :param aCellSize: default value is 200
+        :type aCellSize: Standard_Size
+        :param aNbPages: default value is 10000
+        :type aNbPages: Standard_Integer
+        :param aThreshold: default value is 40000
+        :type aThreshold: Standard_Size
+        :rtype: None
+
+        * Constructor. If aClear is True, the allocated emmory will be nullified. For description of other parameters, see description of the class above.
+
+        :param aClear: default value is Standard_True
+        :type aClear: bool
+        :param aMMap: default value is Standard_True
+        :type aMMap: bool
+        :param aCellSize: default value is 200
+        :type aCellSize: Standard_Size
+        :param aNbPages: default value is 10000
+        :type aNbPages: Standard_Integer
+        :param aThreshold: default value is 40000
+        :type aThreshold: Standard_Size
+        :rtype: None
+
+        * Constructor. If aClear is True, the allocated emmory will be nullified. For description of other parameters, see description of the class above.
+
+        :param aClear: default value is Standard_True
+        :type aClear: bool
+        :param aMMap: default value is Standard_True
+        :type aMMap: bool
+        :param aCellSize: default value is 200
+        :type aCellSize: Standard_Size
+        :param aNbPages: default value is 10000
+        :type aNbPages: Standard_Integer
+        :param aThreshold: default value is 40000
+        :type aThreshold: Standard_Size
+        :rtype: None
+
+        * Constructor. If aClear is True, the allocated emmory will be nullified. For description of other parameters, see description of the class above.
+
+        :param aClear: default value is Standard_True
+        :type aClear: bool
+        :param aMMap: default value is Standard_True
+        :type aMMap: bool
+        :param aCellSize: default value is 200
+        :type aCellSize: Standard_Size
+        :param aNbPages: default value is 10000
+        :type aNbPages: Standard_Integer
+        :param aThreshold: default value is 40000
+        :type aThreshold: Standard_Size
+        :rtype: None
+
+        * Constructor. If aClear is True, the allocated emmory will be nullified. For description of other parameters, see description of the class above.
+
+        :param aClear: default value is Standard_True
+        :type aClear: bool
+        :param aMMap: default value is Standard_True
+        :type aMMap: bool
+        :param aCellSize: default value is 200
+        :type aCellSize: Standard_Size
+        :param aNbPages: default value is 10000
+        :type aNbPages: Standard_Integer
         :param aThreshold: default value is 40000
         :type aThreshold: Standard_Size
         :rtype: None
@@ -1170,6 +1243,12 @@ class Standard_MMgrRaw(Standard_MMgrRoot):
     __repr__ = _swig_repr
     def __init__(self, *args): 
         """
+        * Constructor; if aClear is True, the memory will be nullified upon allocation.
+
+        :param aClear: default value is Standard_False
+        :type aClear: bool
+        :rtype: None
+
         * Constructor; if aClear is True, the memory will be nullified upon allocation.
 
         :param aClear: default value is Standard_False
@@ -1201,6 +1280,12 @@ class Standard_MMgrTBBalloc(Standard_MMgrRoot):
         :type aClear: bool
         :rtype: None
 
+        * Constructor; if aClear is True, the memory will be nullified upon allocation.
+
+        :param aClear: default value is Standard_False
+        :type aClear: bool
+        :rtype: None
+
         """
         _Standard.Standard_MMgrTBBalloc_swiginit(self,_Standard.new_Standard_MMgrTBBalloc(*args))
     def __del__(self):
@@ -1218,40 +1303,40 @@ Standard_MMgrTBBalloc_swigregister(Standard_MMgrTBBalloc)
 class Standard_Mutex(Standard_ErrorHandlerCallback):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         * Constructor: creates a mutex object and initializes it. It is strongly recommended that mutexes were created as static objects whenever possible.
 
         :rtype: None
 
         """
-        _Standard.Standard_Mutex_swiginit(self,_Standard.new_Standard_Mutex(*args))
-    def Lock(self, *args) -> "void" :
+        _Standard.Standard_Mutex_swiginit(self,_Standard.new_Standard_Mutex())
+    def Lock(self):
         """
         * Method to lock the mutex; waits until the mutex is released by other threads, locks it and then returns
 
         :rtype: None
 
         """
-        return _Standard.Standard_Mutex_Lock(self, *args)
+        return _Standard.Standard_Mutex_Lock(self)
 
-    def TryLock(self, *args) -> "Standard_Boolean" :
+    def TryLock(self):
         """
         * Method to test the mutex; if the mutex is not hold by other thread, locks it and returns True; otherwise returns False without waiting mutex to be released.
 
         :rtype: bool
 
         """
-        return _Standard.Standard_Mutex_TryLock(self, *args)
+        return _Standard.Standard_Mutex_TryLock(self)
 
-    def Unlock(self, *args) -> "void" :
+    def Unlock(self):
         """
         * Method to unlock the mutex; releases it to other users
 
         :rtype: None
 
         """
-        return _Standard.Standard_Mutex_Unlock(self, *args)
+        return _Standard.Standard_Mutex_Unlock(self)
 
     def __del__(self):
     	try:
@@ -1271,23 +1356,23 @@ Standard_Mutex_swigregister(Standard_Mutex)
 class Standard_Type(Standard_Transient):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def Name(self, *args) -> "char *" :
+    def Name(self):
         """
         * Returns the type name of <self>.
 
         :rtype: char *
 
         """
-        return _Standard.Standard_Type_Name(self, *args)
+        return _Standard.Standard_Type_Name(self)
 
-    def Size(self, *args) -> "Standard_Integer" :
+    def Size(self):
         """
         * Returns the size of <self> in bytes.
 
         :rtype: int
 
         """
-        return _Standard.Standard_Type_Size(self, *args)
+        return _Standard.Standard_Type_Size(self)
 
     def __init__(self, *args): 
         """
@@ -1296,7 +1381,7 @@ class Standard_Type(Standard_Transient):
         :param aName:
         :type aName: char *
         :param aSize:
-        :type aSize: int
+        :type aSize: Standard_Integer
         :rtype: None
 
         * The constructor for a primitive.
@@ -1304,9 +1389,9 @@ class Standard_Type(Standard_Transient):
         :param aName:
         :type aName: char *
         :param aSize:
-        :type aSize: int
+        :type aSize: Standard_Integer
         :param aNumberOfParent:
-        :type aNumberOfParent: int
+        :type aNumberOfParent: Standard_Integer
         :param aAncestors:
         :type aAncestors: Standard_Address
         :rtype: None
@@ -1316,11 +1401,11 @@ class Standard_Type(Standard_Transient):
         :param aName:
         :type aName: char *
         :param aSize:
-        :type aSize: int
+        :type aSize: Standard_Integer
         :param aNumberOfElement:
-        :type aNumberOfElement: int
+        :type aNumberOfElement: Standard_Integer
         :param aNumberOfParent:
-        :type aNumberOfParent: int
+        :type aNumberOfParent: Standard_Integer
         :param anAncestors:
         :type anAncestors: Standard_Address
         :param aElements:
@@ -1332,9 +1417,9 @@ class Standard_Type(Standard_Transient):
         :param aName:
         :type aName: char *
         :param aSize:
-        :type aSize: int
+        :type aSize: Standard_Integer
         :param aNumberOfParent:
-        :type aNumberOfParent: int
+        :type aNumberOfParent: Standard_Integer
         :param anAncestors:
         :type anAncestors: Standard_Address
         :param aFields:
@@ -1343,7 +1428,7 @@ class Standard_Type(Standard_Transient):
 
         """
         _Standard.Standard_Type_swiginit(self,_Standard.new_Standard_Type(*args))
-    def SubType(self, *args) -> "Standard_Boolean" :
+    def SubType(self, *args):
         """
         * Returns 'True', if <self> is the same as <aOther>, or inherits from <aOther>. Note that multiple inheritance is not supported.
 
@@ -1360,82 +1445,82 @@ class Standard_Type(Standard_Transient):
         """
         return _Standard.Standard_Type_SubType(self, *args)
 
-    def IsImported(self, *args) -> "Standard_Boolean" :
+    def IsImported(self):
         """
         * Returns 'True', if the type is imported.
 
         :rtype: bool
 
         """
-        return _Standard.Standard_Type_IsImported(self, *args)
+        return _Standard.Standard_Type_IsImported(self)
 
-    def IsPrimitive(self, *args) -> "Standard_Boolean" :
+    def IsPrimitive(self):
         """
         * Returns 'True', if the type is a primitive.
 
         :rtype: bool
 
         """
-        return _Standard.Standard_Type_IsPrimitive(self, *args)
+        return _Standard.Standard_Type_IsPrimitive(self)
 
-    def IsEnumeration(self, *args) -> "Standard_Boolean" :
+    def IsEnumeration(self):
         """
         * Returns 'True', if the type is an 'Enumeration'.
 
         :rtype: bool
 
         """
-        return _Standard.Standard_Type_IsEnumeration(self, *args)
+        return _Standard.Standard_Type_IsEnumeration(self)
 
-    def IsClass(self, *args) -> "Standard_Boolean" :
+    def IsClass(self):
         """
         * Returns 'True', if the type is a 'Class'.
 
         :rtype: bool
 
         """
-        return _Standard.Standard_Type_IsClass(self, *args)
+        return _Standard.Standard_Type_IsClass(self)
 
-    def NumberOfParent(self, *args) -> "Standard_Integer" :
+    def NumberOfParent(self):
         """
         * Returns the number of direct parents of the class.
 
         :rtype: int
 
         """
-        return _Standard.Standard_Type_NumberOfParent(self, *args)
+        return _Standard.Standard_Type_NumberOfParent(self)
 
-    def NumberOfAncestor(self, *args) -> "Standard_Integer" :
+    def NumberOfAncestor(self):
         """
         * Returns the number of ancestors of the class.
 
         :rtype: int
 
         """
-        return _Standard.Standard_Type_NumberOfAncestor(self, *args)
+        return _Standard.Standard_Type_NumberOfAncestor(self)
 
-    def ShallowDump(self, *args) -> "void" :
+    def ShallowDump(self):
         """
         * Prints the Information about type.
 
         :rtype: None
 
         """
-        return _Standard.Standard_Type_ShallowDump(self, *args)
+        return _Standard.Standard_Type_ShallowDump(self)
 
-    def ShallowDumpToString(self) -> "std::string" :
+    def ShallowDumpToString(self):
         """ShallowDumpToString(Standard_Type self) -> std::string"""
         return _Standard.Standard_Type_ShallowDumpToString(self)
 
-    def PrintToString(self) -> "std::string" :
+    def PrintToString(self):
         """PrintToString(Standard_Type self) -> std::string"""
         return _Standard.Standard_Type_PrintToString(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Standard_Type self)"""
         return _Standard.Standard_Type__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Standard_Type" :
+    def GetHandle(self):
         """GetHandle(Standard_Type self) -> Handle_Standard_Type"""
         return _Standard.Standard_Type_GetHandle(self)
 
@@ -1485,7 +1570,7 @@ Handle_Standard_Type._kill_pointed = new_instancemethod(_Standard.Handle_Standar
 Handle_Standard_Type_swigregister = _Standard.Handle_Standard_Type_swigregister
 Handle_Standard_Type_swigregister(Handle_Standard_Type)
 
-def Handle_Standard_Type_DownCast(*args) -> "Handle_Standard_Type const" :
+def Handle_Standard_Type_DownCast(*args):
   return _Standard.Handle_Standard_Type_DownCast(*args)
 Handle_Standard_Type_DownCast = _Standard.Handle_Standard_Type_DownCast
 

@@ -165,8 +165,9 @@ BRepOffset_FreeBoundary = _BRepOffset.BRepOffset_FreeBoundary
 BRepOffset_Other = _BRepOffset.BRepOffset_Other
 class brepoffset(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
+    def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def Surface(*args) -> "Handle_Geom_Surface" :
+    def Surface(*args):
         """
         * returns the Offset surface computed from the surface <Surface> at an OffsetDistance <Offset>.  If possible, this method returns the real type of the surface ( e.g. An Offset of a plane is a plane).  If no particular case is detected, the returned surface will have the Type Geom_OffsetSurface.
 
@@ -182,8 +183,6 @@ class brepoffset(object):
         return _BRepOffset.brepoffset_Surface(*args)
 
     Surface = staticmethod(Surface)
-    def __init__(self): 
-        _BRepOffset.brepoffset_swiginit(self,_BRepOffset.new_brepoffset())
     def __del__(self):
     	try:
     		self.thisown = False
@@ -196,7 +195,7 @@ brepoffset._kill_pointed = new_instancemethod(_BRepOffset.brepoffset__kill_point
 brepoffset_swigregister = _BRepOffset.brepoffset_swigregister
 brepoffset_swigregister(brepoffset)
 
-def brepoffset_Surface(*args) -> "Handle_Geom_Surface" :
+def brepoffset_Surface(*args):
   """
     * returns the Offset surface computed from the surface <Surface> at an OffsetDistance <Offset>.  If possible, this method returns the real type of the surface ( e.g. An Offset of a plane is a plane).  If no particular case is detected, the returned surface will have the Type Geom_OffsetSurface.
 
@@ -226,7 +225,7 @@ class BRepOffset_Analyse(object):
 
         """
         _BRepOffset.BRepOffset_Analyse_swiginit(self,_BRepOffset.new_BRepOffset_Analyse(*args))
-    def Perform(self, *args) -> "void" :
+    def Perform(self, *args):
         """
         :param S:
         :type S: TopoDS_Shape &
@@ -237,21 +236,21 @@ class BRepOffset_Analyse(object):
         """
         return _BRepOffset.BRepOffset_Analyse_Perform(self, *args)
 
-    def IsDone(self, *args) -> "Standard_Boolean" :
+    def IsDone(self):
         """
         :rtype: bool
 
         """
-        return _BRepOffset.BRepOffset_Analyse_IsDone(self, *args)
+        return _BRepOffset.BRepOffset_Analyse_IsDone(self)
 
-    def Clear(self, *args) -> "void" :
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _BRepOffset.BRepOffset_Analyse_Clear(self, *args)
+        return _BRepOffset.BRepOffset_Analyse_Clear(self)
 
-    def Type(self, *args) -> "BRepOffset_ListOfInterval const &" :
+    def Type(self, *args):
         """
         :param E:
         :type E: TopoDS_Edge &
@@ -260,7 +259,7 @@ class BRepOffset_Analyse(object):
         """
         return _BRepOffset.BRepOffset_Analyse_Type(self, *args)
 
-    def Edges(self, *args) -> "void" :
+    def Edges(self, *args):
         """
         * Stores in <L> all the edges of Type <T> on the vertex <V>.
 
@@ -285,7 +284,7 @@ class BRepOffset_Analyse(object):
         """
         return _BRepOffset.BRepOffset_Analyse_Edges(self, *args)
 
-    def TangentEdges(self, *args) -> "void" :
+    def TangentEdges(self, *args):
         """
         * set in <Edges> all the Edges of <Shape> which are tangent to <Edge> at the vertex <Vertex>.
 
@@ -300,7 +299,7 @@ class BRepOffset_Analyse(object):
         """
         return _BRepOffset.BRepOffset_Analyse_TangentEdges(self, *args)
 
-    def HasAncestor(self, *args) -> "Standard_Boolean" :
+    def HasAncestor(self, *args):
         """
         :param S:
         :type S: TopoDS_Shape &
@@ -309,7 +308,7 @@ class BRepOffset_Analyse(object):
         """
         return _BRepOffset.BRepOffset_Analyse_HasAncestor(self, *args)
 
-    def Ancestors(self, *args) -> "TopTools_ListOfShape const &" :
+    def Ancestors(self, *args):
         """
         :param S:
         :type S: TopoDS_Shape &
@@ -318,7 +317,7 @@ class BRepOffset_Analyse(object):
         """
         return _BRepOffset.BRepOffset_Analyse_Ancestors(self, *args)
 
-    def Explode(self, *args) -> "void" :
+    def Explode(self, *args):
         """
         * Explode in compounds of faces where all the connex edges are of type <Side>
 
@@ -341,7 +340,7 @@ class BRepOffset_Analyse(object):
         """
         return _BRepOffset.BRepOffset_Analyse_Explode(self, *args)
 
-    def AddFaces(self, *args) -> "void" :
+    def AddFaces(self, *args):
         """
         * Add in <CO> the faces of the shell containing <Face> where all the connex edges are of type <Side>.
 
@@ -407,7 +406,7 @@ class BRepOffset_DataMapIteratorOfDataMapOfShapeListOfInterval(OCC.TCollection.T
 
         """
         _BRepOffset.BRepOffset_DataMapIteratorOfDataMapOfShapeListOfInterval_swiginit(self,_BRepOffset.new_BRepOffset_DataMapIteratorOfDataMapOfShapeListOfInterval(*args))
-    def Initialize(self, *args) -> "void" :
+    def Initialize(self, *args):
         """
         :param aMap:
         :type aMap: BRepOffset_DataMapOfShapeListOfInterval &
@@ -416,19 +415,19 @@ class BRepOffset_DataMapIteratorOfDataMapOfShapeListOfInterval(OCC.TCollection.T
         """
         return _BRepOffset.BRepOffset_DataMapIteratorOfDataMapOfShapeListOfInterval_Initialize(self, *args)
 
-    def Key(self, *args) -> "TopoDS_Shape const" :
+    def Key(self):
         """
         :rtype: TopoDS_Shape
 
         """
-        return _BRepOffset.BRepOffset_DataMapIteratorOfDataMapOfShapeListOfInterval_Key(self, *args)
+        return _BRepOffset.BRepOffset_DataMapIteratorOfDataMapOfShapeListOfInterval_Key(self)
 
-    def Value(self, *args) -> "BRepOffset_ListOfInterval const &" :
+    def Value(self):
         """
         :rtype: BRepOffset_ListOfInterval
 
         """
-        return _BRepOffset.BRepOffset_DataMapIteratorOfDataMapOfShapeListOfInterval_Value(self, *args)
+        return _BRepOffset.BRepOffset_DataMapIteratorOfDataMapOfShapeListOfInterval_Value(self)
 
     def __del__(self):
     	try:
@@ -458,7 +457,7 @@ class BRepOffset_DataMapIteratorOfDataMapOfShapeMapOfShape(OCC.TCollection.TColl
 
         """
         _BRepOffset.BRepOffset_DataMapIteratorOfDataMapOfShapeMapOfShape_swiginit(self,_BRepOffset.new_BRepOffset_DataMapIteratorOfDataMapOfShapeMapOfShape(*args))
-    def Initialize(self, *args) -> "void" :
+    def Initialize(self, *args):
         """
         :param aMap:
         :type aMap: BRepOffset_DataMapOfShapeMapOfShape &
@@ -467,19 +466,19 @@ class BRepOffset_DataMapIteratorOfDataMapOfShapeMapOfShape(OCC.TCollection.TColl
         """
         return _BRepOffset.BRepOffset_DataMapIteratorOfDataMapOfShapeMapOfShape_Initialize(self, *args)
 
-    def Key(self, *args) -> "TopoDS_Shape const" :
+    def Key(self):
         """
         :rtype: TopoDS_Shape
 
         """
-        return _BRepOffset.BRepOffset_DataMapIteratorOfDataMapOfShapeMapOfShape_Key(self, *args)
+        return _BRepOffset.BRepOffset_DataMapIteratorOfDataMapOfShapeMapOfShape_Key(self)
 
-    def Value(self, *args) -> "TopTools_MapOfShape const &" :
+    def Value(self):
         """
         :rtype: TopTools_MapOfShape
 
         """
-        return _BRepOffset.BRepOffset_DataMapIteratorOfDataMapOfShapeMapOfShape_Value(self, *args)
+        return _BRepOffset.BRepOffset_DataMapIteratorOfDataMapOfShapeMapOfShape_Value(self)
 
     def __del__(self):
     	try:
@@ -509,7 +508,7 @@ class BRepOffset_DataMapIteratorOfDataMapOfShapeOffset(OCC.TCollection.TCollecti
 
         """
         _BRepOffset.BRepOffset_DataMapIteratorOfDataMapOfShapeOffset_swiginit(self,_BRepOffset.new_BRepOffset_DataMapIteratorOfDataMapOfShapeOffset(*args))
-    def Initialize(self, *args) -> "void" :
+    def Initialize(self, *args):
         """
         :param aMap:
         :type aMap: BRepOffset_DataMapOfShapeOffset &
@@ -518,19 +517,19 @@ class BRepOffset_DataMapIteratorOfDataMapOfShapeOffset(OCC.TCollection.TCollecti
         """
         return _BRepOffset.BRepOffset_DataMapIteratorOfDataMapOfShapeOffset_Initialize(self, *args)
 
-    def Key(self, *args) -> "TopoDS_Shape const" :
+    def Key(self):
         """
         :rtype: TopoDS_Shape
 
         """
-        return _BRepOffset.BRepOffset_DataMapIteratorOfDataMapOfShapeOffset_Key(self, *args)
+        return _BRepOffset.BRepOffset_DataMapIteratorOfDataMapOfShapeOffset_Key(self)
 
-    def Value(self, *args) -> "BRepOffset_Offset const &" :
+    def Value(self):
         """
         :rtype: BRepOffset_Offset
 
         """
-        return _BRepOffset.BRepOffset_DataMapIteratorOfDataMapOfShapeOffset_Value(self, *args)
+        return _BRepOffset.BRepOffset_DataMapIteratorOfDataMapOfShapeOffset_Value(self)
 
     def __del__(self):
     	try:
@@ -562,25 +561,25 @@ class BRepOffset_DataMapNodeOfDataMapOfShapeListOfInterval(OCC.TCollection.TColl
 
         """
         _BRepOffset.BRepOffset_DataMapNodeOfDataMapOfShapeListOfInterval_swiginit(self,_BRepOffset.new_BRepOffset_DataMapNodeOfDataMapOfShapeListOfInterval(*args))
-    def Key(self, *args) -> "TopoDS_Shape" :
+    def Key(self):
         """
         :rtype: TopoDS_Shape
 
         """
-        return _BRepOffset.BRepOffset_DataMapNodeOfDataMapOfShapeListOfInterval_Key(self, *args)
+        return _BRepOffset.BRepOffset_DataMapNodeOfDataMapOfShapeListOfInterval_Key(self)
 
-    def Value(self, *args) -> "BRepOffset_ListOfInterval &" :
+    def Value(self):
         """
         :rtype: BRepOffset_ListOfInterval
 
         """
-        return _BRepOffset.BRepOffset_DataMapNodeOfDataMapOfShapeListOfInterval_Value(self, *args)
+        return _BRepOffset.BRepOffset_DataMapNodeOfDataMapOfShapeListOfInterval_Value(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(BRepOffset_DataMapNodeOfDataMapOfShapeListOfInterval self)"""
         return _BRepOffset.BRepOffset_DataMapNodeOfDataMapOfShapeListOfInterval__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_BRepOffset_DataMapNodeOfDataMapOfShapeListOfInterval" :
+    def GetHandle(self):
         """GetHandle(BRepOffset_DataMapNodeOfDataMapOfShapeListOfInterval self) -> Handle_BRepOffset_DataMapNodeOfDataMapOfShapeListOfInterval"""
         return _BRepOffset.BRepOffset_DataMapNodeOfDataMapOfShapeListOfInterval_GetHandle(self)
 
@@ -620,7 +619,7 @@ Handle_BRepOffset_DataMapNodeOfDataMapOfShapeListOfInterval._kill_pointed = new_
 Handle_BRepOffset_DataMapNodeOfDataMapOfShapeListOfInterval_swigregister = _BRepOffset.Handle_BRepOffset_DataMapNodeOfDataMapOfShapeListOfInterval_swigregister
 Handle_BRepOffset_DataMapNodeOfDataMapOfShapeListOfInterval_swigregister(Handle_BRepOffset_DataMapNodeOfDataMapOfShapeListOfInterval)
 
-def Handle_BRepOffset_DataMapNodeOfDataMapOfShapeListOfInterval_DownCast(*args) -> "Handle_BRepOffset_DataMapNodeOfDataMapOfShapeListOfInterval const" :
+def Handle_BRepOffset_DataMapNodeOfDataMapOfShapeListOfInterval_DownCast(*args):
   return _BRepOffset.Handle_BRepOffset_DataMapNodeOfDataMapOfShapeListOfInterval_DownCast(*args)
 Handle_BRepOffset_DataMapNodeOfDataMapOfShapeListOfInterval_DownCast = _BRepOffset.Handle_BRepOffset_DataMapNodeOfDataMapOfShapeListOfInterval_DownCast
 
@@ -639,25 +638,25 @@ class BRepOffset_DataMapNodeOfDataMapOfShapeMapOfShape(OCC.TCollection.TCollecti
 
         """
         _BRepOffset.BRepOffset_DataMapNodeOfDataMapOfShapeMapOfShape_swiginit(self,_BRepOffset.new_BRepOffset_DataMapNodeOfDataMapOfShapeMapOfShape(*args))
-    def Key(self, *args) -> "TopoDS_Shape" :
+    def Key(self):
         """
         :rtype: TopoDS_Shape
 
         """
-        return _BRepOffset.BRepOffset_DataMapNodeOfDataMapOfShapeMapOfShape_Key(self, *args)
+        return _BRepOffset.BRepOffset_DataMapNodeOfDataMapOfShapeMapOfShape_Key(self)
 
-    def Value(self, *args) -> "TopTools_MapOfShape &" :
+    def Value(self):
         """
         :rtype: TopTools_MapOfShape
 
         """
-        return _BRepOffset.BRepOffset_DataMapNodeOfDataMapOfShapeMapOfShape_Value(self, *args)
+        return _BRepOffset.BRepOffset_DataMapNodeOfDataMapOfShapeMapOfShape_Value(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(BRepOffset_DataMapNodeOfDataMapOfShapeMapOfShape self)"""
         return _BRepOffset.BRepOffset_DataMapNodeOfDataMapOfShapeMapOfShape__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_BRepOffset_DataMapNodeOfDataMapOfShapeMapOfShape" :
+    def GetHandle(self):
         """GetHandle(BRepOffset_DataMapNodeOfDataMapOfShapeMapOfShape self) -> Handle_BRepOffset_DataMapNodeOfDataMapOfShapeMapOfShape"""
         return _BRepOffset.BRepOffset_DataMapNodeOfDataMapOfShapeMapOfShape_GetHandle(self)
 
@@ -697,7 +696,7 @@ Handle_BRepOffset_DataMapNodeOfDataMapOfShapeMapOfShape._kill_pointed = new_inst
 Handle_BRepOffset_DataMapNodeOfDataMapOfShapeMapOfShape_swigregister = _BRepOffset.Handle_BRepOffset_DataMapNodeOfDataMapOfShapeMapOfShape_swigregister
 Handle_BRepOffset_DataMapNodeOfDataMapOfShapeMapOfShape_swigregister(Handle_BRepOffset_DataMapNodeOfDataMapOfShapeMapOfShape)
 
-def Handle_BRepOffset_DataMapNodeOfDataMapOfShapeMapOfShape_DownCast(*args) -> "Handle_BRepOffset_DataMapNodeOfDataMapOfShapeMapOfShape const" :
+def Handle_BRepOffset_DataMapNodeOfDataMapOfShapeMapOfShape_DownCast(*args):
   return _BRepOffset.Handle_BRepOffset_DataMapNodeOfDataMapOfShapeMapOfShape_DownCast(*args)
 Handle_BRepOffset_DataMapNodeOfDataMapOfShapeMapOfShape_DownCast = _BRepOffset.Handle_BRepOffset_DataMapNodeOfDataMapOfShapeMapOfShape_DownCast
 
@@ -716,25 +715,25 @@ class BRepOffset_DataMapNodeOfDataMapOfShapeOffset(OCC.TCollection.TCollection_M
 
         """
         _BRepOffset.BRepOffset_DataMapNodeOfDataMapOfShapeOffset_swiginit(self,_BRepOffset.new_BRepOffset_DataMapNodeOfDataMapOfShapeOffset(*args))
-    def Key(self, *args) -> "TopoDS_Shape" :
+    def Key(self):
         """
         :rtype: TopoDS_Shape
 
         """
-        return _BRepOffset.BRepOffset_DataMapNodeOfDataMapOfShapeOffset_Key(self, *args)
+        return _BRepOffset.BRepOffset_DataMapNodeOfDataMapOfShapeOffset_Key(self)
 
-    def Value(self, *args) -> "BRepOffset_Offset &" :
+    def Value(self):
         """
         :rtype: BRepOffset_Offset
 
         """
-        return _BRepOffset.BRepOffset_DataMapNodeOfDataMapOfShapeOffset_Value(self, *args)
+        return _BRepOffset.BRepOffset_DataMapNodeOfDataMapOfShapeOffset_Value(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(BRepOffset_DataMapNodeOfDataMapOfShapeOffset self)"""
         return _BRepOffset.BRepOffset_DataMapNodeOfDataMapOfShapeOffset__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_BRepOffset_DataMapNodeOfDataMapOfShapeOffset" :
+    def GetHandle(self):
         """GetHandle(BRepOffset_DataMapNodeOfDataMapOfShapeOffset self) -> Handle_BRepOffset_DataMapNodeOfDataMapOfShapeOffset"""
         return _BRepOffset.BRepOffset_DataMapNodeOfDataMapOfShapeOffset_GetHandle(self)
 
@@ -774,22 +773,26 @@ Handle_BRepOffset_DataMapNodeOfDataMapOfShapeOffset._kill_pointed = new_instance
 Handle_BRepOffset_DataMapNodeOfDataMapOfShapeOffset_swigregister = _BRepOffset.Handle_BRepOffset_DataMapNodeOfDataMapOfShapeOffset_swigregister
 Handle_BRepOffset_DataMapNodeOfDataMapOfShapeOffset_swigregister(Handle_BRepOffset_DataMapNodeOfDataMapOfShapeOffset)
 
-def Handle_BRepOffset_DataMapNodeOfDataMapOfShapeOffset_DownCast(*args) -> "Handle_BRepOffset_DataMapNodeOfDataMapOfShapeOffset const" :
+def Handle_BRepOffset_DataMapNodeOfDataMapOfShapeOffset_DownCast(*args):
   return _BRepOffset.Handle_BRepOffset_DataMapNodeOfDataMapOfShapeOffset_DownCast(*args)
 Handle_BRepOffset_DataMapNodeOfDataMapOfShapeOffset_DownCast = _BRepOffset.Handle_BRepOffset_DataMapNodeOfDataMapOfShapeOffset_DownCast
 
 class BRepOffset_DataMapOfShapeListOfInterval(OCC.TCollection.TCollection_BasicMap):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self, NbBuckets=1): 
         """
         :param NbBuckets: default value is 1
-        :type NbBuckets: int
+        :type NbBuckets: Standard_Integer
+        :rtype: None
+
+        :param NbBuckets: default value is 1
+        :type NbBuckets: Standard_Integer
         :rtype: None
 
         """
-        _BRepOffset.BRepOffset_DataMapOfShapeListOfInterval_swiginit(self,_BRepOffset.new_BRepOffset_DataMapOfShapeListOfInterval(*args))
-    def Assign(self, *args) -> "BRepOffset_DataMapOfShapeListOfInterval &" :
+        _BRepOffset.BRepOffset_DataMapOfShapeListOfInterval_swiginit(self,_BRepOffset.new_BRepOffset_DataMapOfShapeListOfInterval(NbBuckets))
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: BRepOffset_DataMapOfShapeListOfInterval &
@@ -798,7 +801,7 @@ class BRepOffset_DataMapOfShapeListOfInterval(OCC.TCollection.TCollection_BasicM
         """
         return _BRepOffset.BRepOffset_DataMapOfShapeListOfInterval_Assign(self, *args)
 
-    def Set(self, *args) -> "BRepOffset_DataMapOfShapeListOfInterval &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: BRepOffset_DataMapOfShapeListOfInterval &
@@ -807,23 +810,23 @@ class BRepOffset_DataMapOfShapeListOfInterval(OCC.TCollection.TCollection_BasicM
         """
         return _BRepOffset.BRepOffset_DataMapOfShapeListOfInterval_Set(self, *args)
 
-    def ReSize(self, *args) -> "void" :
+    def ReSize(self, *args):
         """
         :param NbBuckets:
-        :type NbBuckets: int
+        :type NbBuckets: Standard_Integer
         :rtype: None
 
         """
         return _BRepOffset.BRepOffset_DataMapOfShapeListOfInterval_ReSize(self, *args)
 
-    def Clear(self, *args) -> "void" :
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _BRepOffset.BRepOffset_DataMapOfShapeListOfInterval_Clear(self, *args)
+        return _BRepOffset.BRepOffset_DataMapOfShapeListOfInterval_Clear(self)
 
-    def Bind(self, *args) -> "Standard_Boolean" :
+    def Bind(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -834,7 +837,7 @@ class BRepOffset_DataMapOfShapeListOfInterval(OCC.TCollection.TCollection_BasicM
         """
         return _BRepOffset.BRepOffset_DataMapOfShapeListOfInterval_Bind(self, *args)
 
-    def IsBound(self, *args) -> "Standard_Boolean" :
+    def IsBound(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -843,7 +846,7 @@ class BRepOffset_DataMapOfShapeListOfInterval(OCC.TCollection.TCollection_BasicM
         """
         return _BRepOffset.BRepOffset_DataMapOfShapeListOfInterval_IsBound(self, *args)
 
-    def UnBind(self, *args) -> "Standard_Boolean" :
+    def UnBind(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -852,7 +855,7 @@ class BRepOffset_DataMapOfShapeListOfInterval(OCC.TCollection.TCollection_BasicM
         """
         return _BRepOffset.BRepOffset_DataMapOfShapeListOfInterval_UnBind(self, *args)
 
-    def Find(self, *args) -> "BRepOffset_ListOfInterval const &" :
+    def Find(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -861,7 +864,7 @@ class BRepOffset_DataMapOfShapeListOfInterval(OCC.TCollection.TCollection_BasicM
         """
         return _BRepOffset.BRepOffset_DataMapOfShapeListOfInterval_Find(self, *args)
 
-    def ChangeFind(self, *args) -> "BRepOffset_ListOfInterval &" :
+    def ChangeFind(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -870,7 +873,7 @@ class BRepOffset_DataMapOfShapeListOfInterval(OCC.TCollection.TCollection_BasicM
         """
         return _BRepOffset.BRepOffset_DataMapOfShapeListOfInterval_ChangeFind(self, *args)
 
-    def Find1(self, *args) -> "Standard_Address" :
+    def Find1(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -879,7 +882,7 @@ class BRepOffset_DataMapOfShapeListOfInterval(OCC.TCollection.TCollection_BasicM
         """
         return _BRepOffset.BRepOffset_DataMapOfShapeListOfInterval_Find1(self, *args)
 
-    def ChangeFind1(self, *args) -> "Standard_Address" :
+    def ChangeFind1(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -888,7 +891,7 @@ class BRepOffset_DataMapOfShapeListOfInterval(OCC.TCollection.TCollection_BasicM
         """
         return _BRepOffset.BRepOffset_DataMapOfShapeListOfInterval_ChangeFind1(self, *args)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(BRepOffset_DataMapOfShapeListOfInterval self)"""
         return _BRepOffset.BRepOffset_DataMapOfShapeListOfInterval__kill_pointed(self)
 
@@ -918,15 +921,19 @@ BRepOffset_DataMapOfShapeListOfInterval_swigregister(BRepOffset_DataMapOfShapeLi
 class BRepOffset_DataMapOfShapeMapOfShape(OCC.TCollection.TCollection_BasicMap):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self, NbBuckets=1): 
         """
         :param NbBuckets: default value is 1
-        :type NbBuckets: int
+        :type NbBuckets: Standard_Integer
+        :rtype: None
+
+        :param NbBuckets: default value is 1
+        :type NbBuckets: Standard_Integer
         :rtype: None
 
         """
-        _BRepOffset.BRepOffset_DataMapOfShapeMapOfShape_swiginit(self,_BRepOffset.new_BRepOffset_DataMapOfShapeMapOfShape(*args))
-    def Assign(self, *args) -> "BRepOffset_DataMapOfShapeMapOfShape &" :
+        _BRepOffset.BRepOffset_DataMapOfShapeMapOfShape_swiginit(self,_BRepOffset.new_BRepOffset_DataMapOfShapeMapOfShape(NbBuckets))
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: BRepOffset_DataMapOfShapeMapOfShape &
@@ -935,7 +942,7 @@ class BRepOffset_DataMapOfShapeMapOfShape(OCC.TCollection.TCollection_BasicMap):
         """
         return _BRepOffset.BRepOffset_DataMapOfShapeMapOfShape_Assign(self, *args)
 
-    def Set(self, *args) -> "BRepOffset_DataMapOfShapeMapOfShape &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: BRepOffset_DataMapOfShapeMapOfShape &
@@ -944,23 +951,23 @@ class BRepOffset_DataMapOfShapeMapOfShape(OCC.TCollection.TCollection_BasicMap):
         """
         return _BRepOffset.BRepOffset_DataMapOfShapeMapOfShape_Set(self, *args)
 
-    def ReSize(self, *args) -> "void" :
+    def ReSize(self, *args):
         """
         :param NbBuckets:
-        :type NbBuckets: int
+        :type NbBuckets: Standard_Integer
         :rtype: None
 
         """
         return _BRepOffset.BRepOffset_DataMapOfShapeMapOfShape_ReSize(self, *args)
 
-    def Clear(self, *args) -> "void" :
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _BRepOffset.BRepOffset_DataMapOfShapeMapOfShape_Clear(self, *args)
+        return _BRepOffset.BRepOffset_DataMapOfShapeMapOfShape_Clear(self)
 
-    def Bind(self, *args) -> "Standard_Boolean" :
+    def Bind(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -971,7 +978,7 @@ class BRepOffset_DataMapOfShapeMapOfShape(OCC.TCollection.TCollection_BasicMap):
         """
         return _BRepOffset.BRepOffset_DataMapOfShapeMapOfShape_Bind(self, *args)
 
-    def IsBound(self, *args) -> "Standard_Boolean" :
+    def IsBound(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -980,7 +987,7 @@ class BRepOffset_DataMapOfShapeMapOfShape(OCC.TCollection.TCollection_BasicMap):
         """
         return _BRepOffset.BRepOffset_DataMapOfShapeMapOfShape_IsBound(self, *args)
 
-    def UnBind(self, *args) -> "Standard_Boolean" :
+    def UnBind(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -989,7 +996,7 @@ class BRepOffset_DataMapOfShapeMapOfShape(OCC.TCollection.TCollection_BasicMap):
         """
         return _BRepOffset.BRepOffset_DataMapOfShapeMapOfShape_UnBind(self, *args)
 
-    def Find(self, *args) -> "TopTools_MapOfShape const &" :
+    def Find(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -998,7 +1005,7 @@ class BRepOffset_DataMapOfShapeMapOfShape(OCC.TCollection.TCollection_BasicMap):
         """
         return _BRepOffset.BRepOffset_DataMapOfShapeMapOfShape_Find(self, *args)
 
-    def ChangeFind(self, *args) -> "TopTools_MapOfShape &" :
+    def ChangeFind(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -1007,7 +1014,7 @@ class BRepOffset_DataMapOfShapeMapOfShape(OCC.TCollection.TCollection_BasicMap):
         """
         return _BRepOffset.BRepOffset_DataMapOfShapeMapOfShape_ChangeFind(self, *args)
 
-    def Find1(self, *args) -> "Standard_Address" :
+    def Find1(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -1016,7 +1023,7 @@ class BRepOffset_DataMapOfShapeMapOfShape(OCC.TCollection.TCollection_BasicMap):
         """
         return _BRepOffset.BRepOffset_DataMapOfShapeMapOfShape_Find1(self, *args)
 
-    def ChangeFind1(self, *args) -> "Standard_Address" :
+    def ChangeFind1(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -1025,7 +1032,7 @@ class BRepOffset_DataMapOfShapeMapOfShape(OCC.TCollection.TCollection_BasicMap):
         """
         return _BRepOffset.BRepOffset_DataMapOfShapeMapOfShape_ChangeFind1(self, *args)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(BRepOffset_DataMapOfShapeMapOfShape self)"""
         return _BRepOffset.BRepOffset_DataMapOfShapeMapOfShape__kill_pointed(self)
 
@@ -1055,15 +1062,19 @@ BRepOffset_DataMapOfShapeMapOfShape_swigregister(BRepOffset_DataMapOfShapeMapOfS
 class BRepOffset_DataMapOfShapeOffset(OCC.TCollection.TCollection_BasicMap):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self, NbBuckets=1): 
         """
         :param NbBuckets: default value is 1
-        :type NbBuckets: int
+        :type NbBuckets: Standard_Integer
+        :rtype: None
+
+        :param NbBuckets: default value is 1
+        :type NbBuckets: Standard_Integer
         :rtype: None
 
         """
-        _BRepOffset.BRepOffset_DataMapOfShapeOffset_swiginit(self,_BRepOffset.new_BRepOffset_DataMapOfShapeOffset(*args))
-    def Assign(self, *args) -> "BRepOffset_DataMapOfShapeOffset &" :
+        _BRepOffset.BRepOffset_DataMapOfShapeOffset_swiginit(self,_BRepOffset.new_BRepOffset_DataMapOfShapeOffset(NbBuckets))
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: BRepOffset_DataMapOfShapeOffset &
@@ -1072,7 +1083,7 @@ class BRepOffset_DataMapOfShapeOffset(OCC.TCollection.TCollection_BasicMap):
         """
         return _BRepOffset.BRepOffset_DataMapOfShapeOffset_Assign(self, *args)
 
-    def Set(self, *args) -> "BRepOffset_DataMapOfShapeOffset &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: BRepOffset_DataMapOfShapeOffset &
@@ -1081,23 +1092,23 @@ class BRepOffset_DataMapOfShapeOffset(OCC.TCollection.TCollection_BasicMap):
         """
         return _BRepOffset.BRepOffset_DataMapOfShapeOffset_Set(self, *args)
 
-    def ReSize(self, *args) -> "void" :
+    def ReSize(self, *args):
         """
         :param NbBuckets:
-        :type NbBuckets: int
+        :type NbBuckets: Standard_Integer
         :rtype: None
 
         """
         return _BRepOffset.BRepOffset_DataMapOfShapeOffset_ReSize(self, *args)
 
-    def Clear(self, *args) -> "void" :
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _BRepOffset.BRepOffset_DataMapOfShapeOffset_Clear(self, *args)
+        return _BRepOffset.BRepOffset_DataMapOfShapeOffset_Clear(self)
 
-    def Bind(self, *args) -> "Standard_Boolean" :
+    def Bind(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -1108,7 +1119,7 @@ class BRepOffset_DataMapOfShapeOffset(OCC.TCollection.TCollection_BasicMap):
         """
         return _BRepOffset.BRepOffset_DataMapOfShapeOffset_Bind(self, *args)
 
-    def IsBound(self, *args) -> "Standard_Boolean" :
+    def IsBound(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -1117,7 +1128,7 @@ class BRepOffset_DataMapOfShapeOffset(OCC.TCollection.TCollection_BasicMap):
         """
         return _BRepOffset.BRepOffset_DataMapOfShapeOffset_IsBound(self, *args)
 
-    def UnBind(self, *args) -> "Standard_Boolean" :
+    def UnBind(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -1126,7 +1137,7 @@ class BRepOffset_DataMapOfShapeOffset(OCC.TCollection.TCollection_BasicMap):
         """
         return _BRepOffset.BRepOffset_DataMapOfShapeOffset_UnBind(self, *args)
 
-    def Find(self, *args) -> "BRepOffset_Offset const &" :
+    def Find(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -1135,7 +1146,7 @@ class BRepOffset_DataMapOfShapeOffset(OCC.TCollection.TCollection_BasicMap):
         """
         return _BRepOffset.BRepOffset_DataMapOfShapeOffset_Find(self, *args)
 
-    def ChangeFind(self, *args) -> "BRepOffset_Offset &" :
+    def ChangeFind(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -1144,7 +1155,7 @@ class BRepOffset_DataMapOfShapeOffset(OCC.TCollection.TCollection_BasicMap):
         """
         return _BRepOffset.BRepOffset_DataMapOfShapeOffset_ChangeFind(self, *args)
 
-    def Find1(self, *args) -> "Standard_Address" :
+    def Find1(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -1153,7 +1164,7 @@ class BRepOffset_DataMapOfShapeOffset(OCC.TCollection.TCollection_BasicMap):
         """
         return _BRepOffset.BRepOffset_DataMapOfShapeOffset_Find1(self, *args)
 
-    def ChangeFind1(self, *args) -> "Standard_Address" :
+    def ChangeFind1(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -1162,7 +1173,7 @@ class BRepOffset_DataMapOfShapeOffset(OCC.TCollection.TCollection_BasicMap):
         """
         return _BRepOffset.BRepOffset_DataMapOfShapeOffset_ChangeFind1(self, *args)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(BRepOffset_DataMapOfShapeOffset self)"""
         return _BRepOffset.BRepOffset_DataMapOfShapeOffset__kill_pointed(self)
 
@@ -1191,8 +1202,9 @@ BRepOffset_DataMapOfShapeOffset_swigregister(BRepOffset_DataMapOfShapeOffset)
 
 class BRepOffset_Inter2d(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
+    def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def Compute(*args) -> "void" :
+    def Compute(*args):
         """
         * Computes the intersections between the edges stored is AsDes as descendants of <F> . Intersections is computed between two edges if one of them is bound in NewEdges.
 
@@ -1210,7 +1222,7 @@ class BRepOffset_Inter2d(object):
         return _BRepOffset.BRepOffset_Inter2d_Compute(*args)
 
     Compute = staticmethod(Compute)
-    def ConnexIntByInt(*args) -> "void" :
+    def ConnexIntByInt(*args):
         """
         :param FI:
         :type FI: TopoDS_Face &
@@ -1232,8 +1244,6 @@ class BRepOffset_Inter2d(object):
         return _BRepOffset.BRepOffset_Inter2d_ConnexIntByInt(*args)
 
     ConnexIntByInt = staticmethod(ConnexIntByInt)
-    def __init__(self): 
-        _BRepOffset.BRepOffset_Inter2d_swiginit(self,_BRepOffset.new_BRepOffset_Inter2d())
     def __del__(self):
     	try:
     		self.thisown = False
@@ -1246,7 +1256,7 @@ BRepOffset_Inter2d._kill_pointed = new_instancemethod(_BRepOffset.BRepOffset_Int
 BRepOffset_Inter2d_swigregister = _BRepOffset.BRepOffset_Inter2d_swigregister
 BRepOffset_Inter2d_swigregister(BRepOffset_Inter2d)
 
-def BRepOffset_Inter2d_Compute(*args) -> "void" :
+def BRepOffset_Inter2d_Compute(*args):
   """
     * Computes the intersections between the edges stored is AsDes as descendants of <F> . Intersections is computed between two edges if one of them is bound in NewEdges.
 
@@ -1263,7 +1273,7 @@ def BRepOffset_Inter2d_Compute(*args) -> "void" :
     """
   return _BRepOffset.BRepOffset_Inter2d_Compute(*args)
 
-def BRepOffset_Inter2d_ConnexIntByInt(*args) -> "void" :
+def BRepOffset_Inter2d_ConnexIntByInt(*args):
   """
     :param FI:
     :type FI: TopoDS_Face &
@@ -1299,7 +1309,7 @@ class BRepOffset_Inter3d(object):
 
         """
         _BRepOffset.BRepOffset_Inter3d_swiginit(self,_BRepOffset.new_BRepOffset_Inter3d(*args))
-    def CompletInt(self, *args) -> "void" :
+    def CompletInt(self, *args):
         """
         :param SetOfFaces:
         :type SetOfFaces: TopTools_ListOfShape &
@@ -1310,7 +1320,7 @@ class BRepOffset_Inter3d(object):
         """
         return _BRepOffset.BRepOffset_Inter3d_CompletInt(self, *args)
 
-    def FaceInter(self, *args) -> "void" :
+    def FaceInter(self, *args):
         """
         :param F1:
         :type F1: TopoDS_Face &
@@ -1323,7 +1333,7 @@ class BRepOffset_Inter3d(object):
         """
         return _BRepOffset.BRepOffset_Inter3d_FaceInter(self, *args)
 
-    def ConnexIntByArc(self, *args) -> "void" :
+    def ConnexIntByArc(self, *args):
         """
         :param SetOfFaces:
         :type SetOfFaces: TopTools_ListOfShape &
@@ -1338,7 +1348,7 @@ class BRepOffset_Inter3d(object):
         """
         return _BRepOffset.BRepOffset_Inter3d_ConnexIntByArc(self, *args)
 
-    def ConnexIntByInt(self, *args) -> "void" :
+    def ConnexIntByInt(self, *args):
         """
         :param SI:
         :type SI: TopoDS_Shape &
@@ -1357,7 +1367,7 @@ class BRepOffset_Inter3d(object):
         """
         return _BRepOffset.BRepOffset_Inter3d_ConnexIntByInt(self, *args)
 
-    def ContextIntByInt(self, *args) -> "void" :
+    def ContextIntByInt(self, *args):
         """
         :param ContextFaces:
         :type ContextFaces: TopTools_IndexedMapOfShape &
@@ -1378,7 +1388,7 @@ class BRepOffset_Inter3d(object):
         """
         return _BRepOffset.BRepOffset_Inter3d_ContextIntByInt(self, *args)
 
-    def ContextIntByArc(self, *args) -> "void" :
+    def ContextIntByArc(self, *args):
         """
         :param ContextFaces:
         :type ContextFaces: TopTools_IndexedMapOfShape &
@@ -1395,7 +1405,7 @@ class BRepOffset_Inter3d(object):
         """
         return _BRepOffset.BRepOffset_Inter3d_ContextIntByArc(self, *args)
 
-    def AddCommonEdges(self, *args) -> "void" :
+    def AddCommonEdges(self, *args):
         """
         :param SetOfFaces:
         :type SetOfFaces: TopTools_ListOfShape &
@@ -1404,7 +1414,7 @@ class BRepOffset_Inter3d(object):
         """
         return _BRepOffset.BRepOffset_Inter3d_AddCommonEdges(self, *args)
 
-    def SetDone(self, *args) -> "void" :
+    def SetDone(self, *args):
         """
         :param F1:
         :type F1: TopoDS_Face &
@@ -1415,7 +1425,7 @@ class BRepOffset_Inter3d(object):
         """
         return _BRepOffset.BRepOffset_Inter3d_SetDone(self, *args)
 
-    def IsDone(self, *args) -> "Standard_Boolean" :
+    def IsDone(self, *args):
         """
         :param F1:
         :type F1: TopoDS_Face &
@@ -1426,26 +1436,26 @@ class BRepOffset_Inter3d(object):
         """
         return _BRepOffset.BRepOffset_Inter3d_IsDone(self, *args)
 
-    def TouchedFaces(self, *args) -> "TopTools_IndexedMapOfShape &" :
+    def TouchedFaces(self):
         """
         :rtype: TopTools_IndexedMapOfShape
 
         """
-        return _BRepOffset.BRepOffset_Inter3d_TouchedFaces(self, *args)
+        return _BRepOffset.BRepOffset_Inter3d_TouchedFaces(self)
 
-    def AsDes(self, *args) -> "Handle_BRepAlgo_AsDes" :
+    def AsDes(self):
         """
         :rtype: Handle_BRepAlgo_AsDes
 
         """
-        return _BRepOffset.BRepOffset_Inter3d_AsDes(self, *args)
+        return _BRepOffset.BRepOffset_Inter3d_AsDes(self)
 
-    def NewEdges(self, *args) -> "TopTools_IndexedMapOfShape &" :
+    def NewEdges(self):
         """
         :rtype: TopTools_IndexedMapOfShape
 
         """
-        return _BRepOffset.BRepOffset_Inter3d_NewEdges(self, *args)
+        return _BRepOffset.BRepOffset_Inter3d_NewEdges(self)
 
     def __del__(self):
     	try:
@@ -1488,7 +1498,7 @@ class BRepOffset_Interval(object):
 
         """
         _BRepOffset.BRepOffset_Interval_swiginit(self,_BRepOffset.new_BRepOffset_Interval(*args))
-    def First(self, *args) -> "Standard_Real" :
+    def First(self, *args):
         """
         :param U:
         :type U: float
@@ -1499,7 +1509,7 @@ class BRepOffset_Interval(object):
         """
         return _BRepOffset.BRepOffset_Interval_First(self, *args)
 
-    def Last(self, *args) -> "Standard_Real" :
+    def Last(self, *args):
         """
         :param U:
         :type U: float
@@ -1510,7 +1520,7 @@ class BRepOffset_Interval(object):
         """
         return _BRepOffset.BRepOffset_Interval_Last(self, *args)
 
-    def Type(self, *args) -> "BRepOffset_Type" :
+    def Type(self, *args):
         """
         :param T:
         :type T: BRepOffset_Type
@@ -1549,7 +1559,7 @@ class BRepOffset_ListIteratorOfListOfInterval(object):
 
         """
         _BRepOffset.BRepOffset_ListIteratorOfListOfInterval_swiginit(self,_BRepOffset.new_BRepOffset_ListIteratorOfListOfInterval(*args))
-    def Initialize(self, *args) -> "void" :
+    def Initialize(self, *args):
         """
         :param L:
         :type L: BRepOffset_ListOfInterval &
@@ -1558,26 +1568,26 @@ class BRepOffset_ListIteratorOfListOfInterval(object):
         """
         return _BRepOffset.BRepOffset_ListIteratorOfListOfInterval_Initialize(self, *args)
 
-    def More(self, *args) -> "Standard_Boolean" :
+    def More(self):
         """
         :rtype: bool
 
         """
-        return _BRepOffset.BRepOffset_ListIteratorOfListOfInterval_More(self, *args)
+        return _BRepOffset.BRepOffset_ListIteratorOfListOfInterval_More(self)
 
-    def Next(self, *args) -> "void" :
+    def Next(self):
         """
         :rtype: None
 
         """
-        return _BRepOffset.BRepOffset_ListIteratorOfListOfInterval_Next(self, *args)
+        return _BRepOffset.BRepOffset_ListIteratorOfListOfInterval_Next(self)
 
-    def Value(self, *args) -> "BRepOffset_Interval &" :
+    def Value(self):
         """
         :rtype: BRepOffset_Interval
 
         """
-        return _BRepOffset.BRepOffset_ListIteratorOfListOfInterval_Value(self, *args)
+        return _BRepOffset.BRepOffset_ListIteratorOfListOfInterval_Value(self)
 
     def __del__(self):
     	try:
@@ -1608,18 +1618,18 @@ class BRepOffset_ListNodeOfListOfInterval(OCC.TCollection.TCollection_MapNode):
 
         """
         _BRepOffset.BRepOffset_ListNodeOfListOfInterval_swiginit(self,_BRepOffset.new_BRepOffset_ListNodeOfListOfInterval(*args))
-    def Value(self, *args) -> "BRepOffset_Interval &" :
+    def Value(self):
         """
         :rtype: BRepOffset_Interval
 
         """
-        return _BRepOffset.BRepOffset_ListNodeOfListOfInterval_Value(self, *args)
+        return _BRepOffset.BRepOffset_ListNodeOfListOfInterval_Value(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(BRepOffset_ListNodeOfListOfInterval self)"""
         return _BRepOffset.BRepOffset_ListNodeOfListOfInterval__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_BRepOffset_ListNodeOfListOfInterval" :
+    def GetHandle(self):
         """GetHandle(BRepOffset_ListNodeOfListOfInterval self) -> Handle_BRepOffset_ListNodeOfListOfInterval"""
         return _BRepOffset.BRepOffset_ListNodeOfListOfInterval_GetHandle(self)
 
@@ -1658,20 +1668,20 @@ Handle_BRepOffset_ListNodeOfListOfInterval._kill_pointed = new_instancemethod(_B
 Handle_BRepOffset_ListNodeOfListOfInterval_swigregister = _BRepOffset.Handle_BRepOffset_ListNodeOfListOfInterval_swigregister
 Handle_BRepOffset_ListNodeOfListOfInterval_swigregister(Handle_BRepOffset_ListNodeOfListOfInterval)
 
-def Handle_BRepOffset_ListNodeOfListOfInterval_DownCast(*args) -> "Handle_BRepOffset_ListNodeOfListOfInterval const" :
+def Handle_BRepOffset_ListNodeOfListOfInterval_DownCast(*args):
   return _BRepOffset.Handle_BRepOffset_ListNodeOfListOfInterval_DownCast(*args)
 Handle_BRepOffset_ListNodeOfListOfInterval_DownCast = _BRepOffset.Handle_BRepOffset_ListNodeOfListOfInterval_DownCast
 
 class BRepOffset_ListOfInterval(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _BRepOffset.BRepOffset_ListOfInterval_swiginit(self,_BRepOffset.new_BRepOffset_ListOfInterval(*args))
-    def Assign(self, *args) -> "void" :
+        _BRepOffset.BRepOffset_ListOfInterval_swiginit(self,_BRepOffset.new_BRepOffset_ListOfInterval())
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: BRepOffset_ListOfInterval &
@@ -1680,7 +1690,7 @@ class BRepOffset_ListOfInterval(object):
         """
         return _BRepOffset.BRepOffset_ListOfInterval_Assign(self, *args)
 
-    def Set(self, *args) -> "void" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: BRepOffset_ListOfInterval &
@@ -1689,28 +1699,28 @@ class BRepOffset_ListOfInterval(object):
         """
         return _BRepOffset.BRepOffset_ListOfInterval_Set(self, *args)
 
-    def Extent(self, *args) -> "Standard_Integer" :
+    def Extent(self):
         """
         :rtype: int
 
         """
-        return _BRepOffset.BRepOffset_ListOfInterval_Extent(self, *args)
+        return _BRepOffset.BRepOffset_ListOfInterval_Extent(self)
 
-    def Clear(self, *args) -> "void" :
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _BRepOffset.BRepOffset_ListOfInterval_Clear(self, *args)
+        return _BRepOffset.BRepOffset_ListOfInterval_Clear(self)
 
-    def IsEmpty(self, *args) -> "Standard_Boolean" :
+    def IsEmpty(self):
         """
         :rtype: bool
 
         """
-        return _BRepOffset.BRepOffset_ListOfInterval_IsEmpty(self, *args)
+        return _BRepOffset.BRepOffset_ListOfInterval_IsEmpty(self)
 
-    def Prepend(self, *args) -> "void" :
+    def Prepend(self, *args):
         """
         :param I:
         :type I: BRepOffset_Interval &
@@ -1729,7 +1739,7 @@ class BRepOffset_ListOfInterval(object):
         """
         return _BRepOffset.BRepOffset_ListOfInterval_Prepend(self, *args)
 
-    def Append(self, *args) -> "void" :
+    def Append(self, *args):
         """
         :param I:
         :type I: BRepOffset_Interval &
@@ -1748,28 +1758,28 @@ class BRepOffset_ListOfInterval(object):
         """
         return _BRepOffset.BRepOffset_ListOfInterval_Append(self, *args)
 
-    def First(self, *args) -> "BRepOffset_Interval &" :
+    def First(self):
         """
         :rtype: BRepOffset_Interval
 
         """
-        return _BRepOffset.BRepOffset_ListOfInterval_First(self, *args)
+        return _BRepOffset.BRepOffset_ListOfInterval_First(self)
 
-    def Last(self, *args) -> "BRepOffset_Interval &" :
+    def Last(self):
         """
         :rtype: BRepOffset_Interval
 
         """
-        return _BRepOffset.BRepOffset_ListOfInterval_Last(self, *args)
+        return _BRepOffset.BRepOffset_ListOfInterval_Last(self)
 
-    def RemoveFirst(self, *args) -> "void" :
+    def RemoveFirst(self):
         """
         :rtype: None
 
         """
-        return _BRepOffset.BRepOffset_ListOfInterval_RemoveFirst(self, *args)
+        return _BRepOffset.BRepOffset_ListOfInterval_RemoveFirst(self)
 
-    def Remove(self, *args) -> "void" :
+    def Remove(self, *args):
         """
         :param It:
         :type It: BRepOffset_ListIteratorOfListOfInterval &
@@ -1778,7 +1788,7 @@ class BRepOffset_ListOfInterval(object):
         """
         return _BRepOffset.BRepOffset_ListOfInterval_Remove(self, *args)
 
-    def InsertBefore(self, *args) -> "void" :
+    def InsertBefore(self, *args):
         """
         :param I:
         :type I: BRepOffset_Interval &
@@ -1795,7 +1805,7 @@ class BRepOffset_ListOfInterval(object):
         """
         return _BRepOffset.BRepOffset_ListOfInterval_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args) -> "void" :
+    def InsertAfter(self, *args):
         """
         :param I:
         :type I: BRepOffset_Interval &
@@ -1840,13 +1850,13 @@ BRepOffset_ListOfInterval_swigregister(BRepOffset_ListOfInterval)
 class BRepOffset_MakeLoops(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _BRepOffset.BRepOffset_MakeLoops_swiginit(self,_BRepOffset.new_BRepOffset_MakeLoops(*args))
-    def Build(self, *args) -> "void" :
+        _BRepOffset.BRepOffset_MakeLoops_swiginit(self,_BRepOffset.new_BRepOffset_MakeLoops())
+    def Build(self, *args):
         """
         :param LF:
         :type LF: TopTools_ListOfShape &
@@ -1859,7 +1869,7 @@ class BRepOffset_MakeLoops(object):
         """
         return _BRepOffset.BRepOffset_MakeLoops_Build(self, *args)
 
-    def BuildOnContext(self, *args) -> "void" :
+    def BuildOnContext(self, *args):
         """
         :param LContext:
         :type LContext: TopTools_ListOfShape &
@@ -1876,7 +1886,7 @@ class BRepOffset_MakeLoops(object):
         """
         return _BRepOffset.BRepOffset_MakeLoops_BuildOnContext(self, *args)
 
-    def BuildFaces(self, *args) -> "void" :
+    def BuildFaces(self, *args):
         """
         :param LF:
         :type LF: TopTools_ListOfShape &
@@ -1929,10 +1939,190 @@ class BRepOffset_MakeOffset(object):
         :type Thickening: bool
         :rtype: None
 
+        :param S:
+        :type S: TopoDS_Shape &
+        :param Offset:
+        :type Offset: float
+        :param Tol:
+        :type Tol: float
+        :param Mode: default value is BRepOffset_Skin
+        :type Mode: BRepOffset_Mode
+        :param Intersection: default value is Standard_False
+        :type Intersection: bool
+        :param SelfInter: default value is Standard_False
+        :type SelfInter: bool
+        :param Join: default value is GeomAbs_Arc
+        :type Join: GeomAbs_JoinType
+        :param Thickening: default value is Standard_False
+        :type Thickening: bool
+        :rtype: None
+
+        :param S:
+        :type S: TopoDS_Shape &
+        :param Offset:
+        :type Offset: float
+        :param Tol:
+        :type Tol: float
+        :param Mode: default value is BRepOffset_Skin
+        :type Mode: BRepOffset_Mode
+        :param Intersection: default value is Standard_False
+        :type Intersection: bool
+        :param SelfInter: default value is Standard_False
+        :type SelfInter: bool
+        :param Join: default value is GeomAbs_Arc
+        :type Join: GeomAbs_JoinType
+        :param Thickening: default value is Standard_False
+        :type Thickening: bool
+        :rtype: None
+
+        :param S:
+        :type S: TopoDS_Shape &
+        :param Offset:
+        :type Offset: float
+        :param Tol:
+        :type Tol: float
+        :param Mode: default value is BRepOffset_Skin
+        :type Mode: BRepOffset_Mode
+        :param Intersection: default value is Standard_False
+        :type Intersection: bool
+        :param SelfInter: default value is Standard_False
+        :type SelfInter: bool
+        :param Join: default value is GeomAbs_Arc
+        :type Join: GeomAbs_JoinType
+        :param Thickening: default value is Standard_False
+        :type Thickening: bool
+        :rtype: None
+
+        :param S:
+        :type S: TopoDS_Shape &
+        :param Offset:
+        :type Offset: float
+        :param Tol:
+        :type Tol: float
+        :param Mode: default value is BRepOffset_Skin
+        :type Mode: BRepOffset_Mode
+        :param Intersection: default value is Standard_False
+        :type Intersection: bool
+        :param SelfInter: default value is Standard_False
+        :type SelfInter: bool
+        :param Join: default value is GeomAbs_Arc
+        :type Join: GeomAbs_JoinType
+        :param Thickening: default value is Standard_False
+        :type Thickening: bool
+        :rtype: None
+
+        :param S:
+        :type S: TopoDS_Shape &
+        :param Offset:
+        :type Offset: float
+        :param Tol:
+        :type Tol: float
+        :param Mode: default value is BRepOffset_Skin
+        :type Mode: BRepOffset_Mode
+        :param Intersection: default value is Standard_False
+        :type Intersection: bool
+        :param SelfInter: default value is Standard_False
+        :type SelfInter: bool
+        :param Join: default value is GeomAbs_Arc
+        :type Join: GeomAbs_JoinType
+        :param Thickening: default value is Standard_False
+        :type Thickening: bool
+        :rtype: None
+
         """
         _BRepOffset.BRepOffset_MakeOffset_swiginit(self,_BRepOffset.new_BRepOffset_MakeOffset(*args))
-    def Initialize(self, *args) -> "void" :
+    def Initialize(self, *args):
         """
+        :param S:
+        :type S: TopoDS_Shape &
+        :param Offset:
+        :type Offset: float
+        :param Tol:
+        :type Tol: float
+        :param Mode: default value is BRepOffset_Skin
+        :type Mode: BRepOffset_Mode
+        :param Intersection: default value is Standard_False
+        :type Intersection: bool
+        :param SelfInter: default value is Standard_False
+        :type SelfInter: bool
+        :param Join: default value is GeomAbs_Arc
+        :type Join: GeomAbs_JoinType
+        :param Thickening: default value is Standard_False
+        :type Thickening: bool
+        :rtype: None
+
+        :param S:
+        :type S: TopoDS_Shape &
+        :param Offset:
+        :type Offset: float
+        :param Tol:
+        :type Tol: float
+        :param Mode: default value is BRepOffset_Skin
+        :type Mode: BRepOffset_Mode
+        :param Intersection: default value is Standard_False
+        :type Intersection: bool
+        :param SelfInter: default value is Standard_False
+        :type SelfInter: bool
+        :param Join: default value is GeomAbs_Arc
+        :type Join: GeomAbs_JoinType
+        :param Thickening: default value is Standard_False
+        :type Thickening: bool
+        :rtype: None
+
+        :param S:
+        :type S: TopoDS_Shape &
+        :param Offset:
+        :type Offset: float
+        :param Tol:
+        :type Tol: float
+        :param Mode: default value is BRepOffset_Skin
+        :type Mode: BRepOffset_Mode
+        :param Intersection: default value is Standard_False
+        :type Intersection: bool
+        :param SelfInter: default value is Standard_False
+        :type SelfInter: bool
+        :param Join: default value is GeomAbs_Arc
+        :type Join: GeomAbs_JoinType
+        :param Thickening: default value is Standard_False
+        :type Thickening: bool
+        :rtype: None
+
+        :param S:
+        :type S: TopoDS_Shape &
+        :param Offset:
+        :type Offset: float
+        :param Tol:
+        :type Tol: float
+        :param Mode: default value is BRepOffset_Skin
+        :type Mode: BRepOffset_Mode
+        :param Intersection: default value is Standard_False
+        :type Intersection: bool
+        :param SelfInter: default value is Standard_False
+        :type SelfInter: bool
+        :param Join: default value is GeomAbs_Arc
+        :type Join: GeomAbs_JoinType
+        :param Thickening: default value is Standard_False
+        :type Thickening: bool
+        :rtype: None
+
+        :param S:
+        :type S: TopoDS_Shape &
+        :param Offset:
+        :type Offset: float
+        :param Tol:
+        :type Tol: float
+        :param Mode: default value is BRepOffset_Skin
+        :type Mode: BRepOffset_Mode
+        :param Intersection: default value is Standard_False
+        :type Intersection: bool
+        :param SelfInter: default value is Standard_False
+        :type SelfInter: bool
+        :param Join: default value is GeomAbs_Arc
+        :type Join: GeomAbs_JoinType
+        :param Thickening: default value is Standard_False
+        :type Thickening: bool
+        :rtype: None
+
         :param S:
         :type S: TopoDS_Shape &
         :param Offset:
@@ -1954,14 +2144,14 @@ class BRepOffset_MakeOffset(object):
         """
         return _BRepOffset.BRepOffset_MakeOffset_Initialize(self, *args)
 
-    def Clear(self, *args) -> "void" :
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _BRepOffset.BRepOffset_MakeOffset_Clear(self, *args)
+        return _BRepOffset.BRepOffset_MakeOffset_Clear(self)
 
-    def AddFace(self, *args) -> "void" :
+    def AddFace(self, *args):
         """
         * Add Closing Faces, <F> has to be in the initial shape S.
 
@@ -1972,7 +2162,7 @@ class BRepOffset_MakeOffset(object):
         """
         return _BRepOffset.BRepOffset_MakeOffset_AddFace(self, *args)
 
-    def SetOffsetOnFace(self, *args) -> "void" :
+    def SetOffsetOnFace(self, *args):
         """
         * set the offset <Off> on the Face <F>
 
@@ -1985,78 +2175,78 @@ class BRepOffset_MakeOffset(object):
         """
         return _BRepOffset.BRepOffset_MakeOffset_SetOffsetOnFace(self, *args)
 
-    def MakeOffsetShape(self, *args) -> "void" :
+    def MakeOffsetShape(self):
         """
         :rtype: None
 
         """
-        return _BRepOffset.BRepOffset_MakeOffset_MakeOffsetShape(self, *args)
+        return _BRepOffset.BRepOffset_MakeOffset_MakeOffsetShape(self)
 
-    def MakeThickSolid(self, *args) -> "void" :
+    def MakeThickSolid(self):
         """
         :rtype: None
 
         """
-        return _BRepOffset.BRepOffset_MakeOffset_MakeThickSolid(self, *args)
+        return _BRepOffset.BRepOffset_MakeOffset_MakeThickSolid(self)
 
-    def IsDone(self, *args) -> "Standard_Boolean" :
+    def IsDone(self):
         """
         :rtype: bool
 
         """
-        return _BRepOffset.BRepOffset_MakeOffset_IsDone(self, *args)
+        return _BRepOffset.BRepOffset_MakeOffset_IsDone(self)
 
-    def Shape(self, *args) -> "TopoDS_Shape const" :
+    def Shape(self):
         """
         :rtype: TopoDS_Shape
 
         """
-        return _BRepOffset.BRepOffset_MakeOffset_Shape(self, *args)
+        return _BRepOffset.BRepOffset_MakeOffset_Shape(self)
 
-    def Error(self, *args) -> "BRepOffset_Error" :
+    def Error(self):
         """
         * returns information if IsDone() = False.
 
         :rtype: BRepOffset_Error
 
         """
-        return _BRepOffset.BRepOffset_MakeOffset_Error(self, *args)
+        return _BRepOffset.BRepOffset_MakeOffset_Error(self)
 
-    def OffsetFacesFromShapes(self, *args) -> "BRepAlgo_Image const &" :
+    def OffsetFacesFromShapes(self):
         """
         * Returns <Image> containing links between initials shapes and offset faces.
 
         :rtype: BRepAlgo_Image
 
         """
-        return _BRepOffset.BRepOffset_MakeOffset_OffsetFacesFromShapes(self, *args)
+        return _BRepOffset.BRepOffset_MakeOffset_OffsetFacesFromShapes(self)
 
-    def GetJoinType(self, *args) -> "GeomAbs_JoinType" :
+    def GetJoinType(self):
         """
         * Returns myJoin.
 
         :rtype: GeomAbs_JoinType
 
         """
-        return _BRepOffset.BRepOffset_MakeOffset_GetJoinType(self, *args)
+        return _BRepOffset.BRepOffset_MakeOffset_GetJoinType(self)
 
-    def OffsetEdgesFromShapes(self, *args) -> "BRepAlgo_Image const &" :
+    def OffsetEdgesFromShapes(self):
         """
         * Returns <Image> containing links between initials shapes and offset edges.
 
         :rtype: BRepAlgo_Image
 
         """
-        return _BRepOffset.BRepOffset_MakeOffset_OffsetEdgesFromShapes(self, *args)
+        return _BRepOffset.BRepOffset_MakeOffset_OffsetEdgesFromShapes(self)
 
-    def ClosingFaces(self, *args) -> "TopTools_IndexedMapOfShape const &" :
+    def ClosingFaces(self):
         """
         * Returns the list of closing faces stores by AddFace
 
         :rtype: TopTools_IndexedMapOfShape
 
         """
-        return _BRepOffset.BRepOffset_MakeOffset_ClosingFaces(self, *args)
+        return _BRepOffset.BRepOffset_MakeOffset_ClosingFaces(self)
 
     def __del__(self):
     	try:
@@ -2094,6 +2284,54 @@ class BRepOffset_Offset(object):
         :type Face: TopoDS_Face &
         :param Offset:
         :type Offset: float
+        :param OffsetOutside: default value is Standard_True
+        :type OffsetOutside: bool
+        :param JoinType: default value is GeomAbs_Arc
+        :type JoinType: GeomAbs_JoinType
+        :rtype: None
+
+        :param Face:
+        :type Face: TopoDS_Face &
+        :param Offset:
+        :type Offset: float
+        :param OffsetOutside: default value is Standard_True
+        :type OffsetOutside: bool
+        :param JoinType: default value is GeomAbs_Arc
+        :type JoinType: GeomAbs_JoinType
+        :rtype: None
+
+        :param Face:
+        :type Face: TopoDS_Face &
+        :param Offset:
+        :type Offset: float
+        :param OffsetOutside: default value is Standard_True
+        :type OffsetOutside: bool
+        :param JoinType: default value is GeomAbs_Arc
+        :type JoinType: GeomAbs_JoinType
+        :rtype: None
+
+        * This method will be called when you want to share the edges soon generated from an other face. e.g. when two faces are tangents the common edge will generate only one edge ( no pipe).  The Map will be fill as follow:  Created(E) = E' with: E = an edge of <Face> E' = the image of E in the offseting of  another face sharing E with a  continuity at least G1
+
+        :param Face:
+        :type Face: TopoDS_Face &
+        :param Offset:
+        :type Offset: float
+        :param Created:
+        :type Created: TopTools_DataMapOfShapeShape &
+        :param OffsetOutside: default value is Standard_True
+        :type OffsetOutside: bool
+        :param JoinType: default value is GeomAbs_Arc
+        :type JoinType: GeomAbs_JoinType
+        :rtype: None
+
+        * This method will be called when you want to share the edges soon generated from an other face. e.g. when two faces are tangents the common edge will generate only one edge ( no pipe).  The Map will be fill as follow:  Created(E) = E' with: E = an edge of <Face> E' = the image of E in the offseting of  another face sharing E with a  continuity at least G1
+
+        :param Face:
+        :type Face: TopoDS_Face &
+        :param Offset:
+        :type Offset: float
+        :param Created:
+        :type Created: TopTools_DataMapOfShapeShape &
         :param OffsetOutside: default value is Standard_True
         :type OffsetOutside: bool
         :param JoinType: default value is GeomAbs_Arc
@@ -2138,6 +2376,114 @@ class BRepOffset_Offset(object):
         :type Edge2: TopoDS_Edge &
         :param Offset:
         :type Offset: float
+        :param Polynomial: default value is Standard_False
+        :type Polynomial: bool
+        :param Tol: default value is 1.0e-4
+        :type Tol: float
+        :param Conti: default value is GeomAbs_C1
+        :type Conti: GeomAbs_Shape
+        :rtype: None
+
+        :param Path:
+        :type Path: TopoDS_Edge &
+        :param Edge1:
+        :type Edge1: TopoDS_Edge &
+        :param Edge2:
+        :type Edge2: TopoDS_Edge &
+        :param Offset:
+        :type Offset: float
+        :param Polynomial: default value is Standard_False
+        :type Polynomial: bool
+        :param Tol: default value is 1.0e-4
+        :type Tol: float
+        :param Conti: default value is GeomAbs_C1
+        :type Conti: GeomAbs_Shape
+        :rtype: None
+
+        :param Path:
+        :type Path: TopoDS_Edge &
+        :param Edge1:
+        :type Edge1: TopoDS_Edge &
+        :param Edge2:
+        :type Edge2: TopoDS_Edge &
+        :param Offset:
+        :type Offset: float
+        :param Polynomial: default value is Standard_False
+        :type Polynomial: bool
+        :param Tol: default value is 1.0e-4
+        :type Tol: float
+        :param Conti: default value is GeomAbs_C1
+        :type Conti: GeomAbs_Shape
+        :rtype: None
+
+        :param Path:
+        :type Path: TopoDS_Edge &
+        :param Edge1:
+        :type Edge1: TopoDS_Edge &
+        :param Edge2:
+        :type Edge2: TopoDS_Edge &
+        :param Offset:
+        :type Offset: float
+        :param FirstEdge:
+        :type FirstEdge: TopoDS_Edge &
+        :param LastEdge:
+        :type LastEdge: TopoDS_Edge &
+        :param Polynomial: default value is Standard_False
+        :type Polynomial: bool
+        :param Tol: default value is 1.0e-4
+        :type Tol: float
+        :param Conti: default value is GeomAbs_C1
+        :type Conti: GeomAbs_Shape
+        :rtype: None
+
+        :param Path:
+        :type Path: TopoDS_Edge &
+        :param Edge1:
+        :type Edge1: TopoDS_Edge &
+        :param Edge2:
+        :type Edge2: TopoDS_Edge &
+        :param Offset:
+        :type Offset: float
+        :param FirstEdge:
+        :type FirstEdge: TopoDS_Edge &
+        :param LastEdge:
+        :type LastEdge: TopoDS_Edge &
+        :param Polynomial: default value is Standard_False
+        :type Polynomial: bool
+        :param Tol: default value is 1.0e-4
+        :type Tol: float
+        :param Conti: default value is GeomAbs_C1
+        :type Conti: GeomAbs_Shape
+        :rtype: None
+
+        :param Path:
+        :type Path: TopoDS_Edge &
+        :param Edge1:
+        :type Edge1: TopoDS_Edge &
+        :param Edge2:
+        :type Edge2: TopoDS_Edge &
+        :param Offset:
+        :type Offset: float
+        :param FirstEdge:
+        :type FirstEdge: TopoDS_Edge &
+        :param LastEdge:
+        :type LastEdge: TopoDS_Edge &
+        :param Polynomial: default value is Standard_False
+        :type Polynomial: bool
+        :param Tol: default value is 1.0e-4
+        :type Tol: float
+        :param Conti: default value is GeomAbs_C1
+        :type Conti: GeomAbs_Shape
+        :rtype: None
+
+        :param Path:
+        :type Path: TopoDS_Edge &
+        :param Edge1:
+        :type Edge1: TopoDS_Edge &
+        :param Edge2:
+        :type Edge2: TopoDS_Edge &
+        :param Offset:
+        :type Offset: float
         :param FirstEdge:
         :type FirstEdge: TopoDS_Edge &
         :param LastEdge:
@@ -2166,14 +2512,106 @@ class BRepOffset_Offset(object):
         :type Conti: GeomAbs_Shape
         :rtype: None
 
+        * Tol and Conti are only used if Polynomial is True (Used to perfrom the approximation)
+
+        :param Vertex:
+        :type Vertex: TopoDS_Vertex &
+        :param LEdge:
+        :type LEdge: TopTools_ListOfShape &
+        :param Offset:
+        :type Offset: float
+        :param Polynomial: default value is Standard_False
+        :type Polynomial: bool
+        :param Tol: default value is 1.0e-4
+        :type Tol: float
+        :param Conti: default value is GeomAbs_C1
+        :type Conti: GeomAbs_Shape
+        :rtype: None
+
+        * Tol and Conti are only used if Polynomial is True (Used to perfrom the approximation)
+
+        :param Vertex:
+        :type Vertex: TopoDS_Vertex &
+        :param LEdge:
+        :type LEdge: TopTools_ListOfShape &
+        :param Offset:
+        :type Offset: float
+        :param Polynomial: default value is Standard_False
+        :type Polynomial: bool
+        :param Tol: default value is 1.0e-4
+        :type Tol: float
+        :param Conti: default value is GeomAbs_C1
+        :type Conti: GeomAbs_Shape
+        :rtype: None
+
+        * Tol and Conti are only used if Polynomial is True (Used to perfrom the approximation)
+
+        :param Vertex:
+        :type Vertex: TopoDS_Vertex &
+        :param LEdge:
+        :type LEdge: TopTools_ListOfShape &
+        :param Offset:
+        :type Offset: float
+        :param Polynomial: default value is Standard_False
+        :type Polynomial: bool
+        :param Tol: default value is 1.0e-4
+        :type Tol: float
+        :param Conti: default value is GeomAbs_C1
+        :type Conti: GeomAbs_Shape
+        :rtype: None
+
         """
         _BRepOffset.BRepOffset_Offset_swiginit(self,_BRepOffset.new_BRepOffset_Offset(*args))
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
         :param Face:
         :type Face: TopoDS_Face &
         :param Offset:
         :type Offset: float
+        :param OffsetOutside: default value is Standard_True
+        :type OffsetOutside: bool
+        :param JoinType: default value is GeomAbs_Arc
+        :type JoinType: GeomAbs_JoinType
+        :rtype: None
+
+        :param Face:
+        :type Face: TopoDS_Face &
+        :param Offset:
+        :type Offset: float
+        :param OffsetOutside: default value is Standard_True
+        :type OffsetOutside: bool
+        :param JoinType: default value is GeomAbs_Arc
+        :type JoinType: GeomAbs_JoinType
+        :rtype: None
+
+        :param Face:
+        :type Face: TopoDS_Face &
+        :param Offset:
+        :type Offset: float
+        :param OffsetOutside: default value is Standard_True
+        :type OffsetOutside: bool
+        :param JoinType: default value is GeomAbs_Arc
+        :type JoinType: GeomAbs_JoinType
+        :rtype: None
+
+        :param Face:
+        :type Face: TopoDS_Face &
+        :param Offset:
+        :type Offset: float
+        :param Created:
+        :type Created: TopTools_DataMapOfShapeShape &
+        :param OffsetOutside: default value is Standard_True
+        :type OffsetOutside: bool
+        :param JoinType: default value is GeomAbs_Arc
+        :type JoinType: GeomAbs_JoinType
+        :rtype: None
+
+        :param Face:
+        :type Face: TopoDS_Face &
+        :param Offset:
+        :type Offset: float
+        :param Created:
+        :type Created: TopTools_DataMapOfShapeShape &
         :param OffsetOutside: default value is Standard_True
         :type OffsetOutside: bool
         :param JoinType: default value is GeomAbs_Arc
@@ -2216,10 +2654,166 @@ class BRepOffset_Offset(object):
         :type Edge2: TopoDS_Edge &
         :param Offset:
         :type Offset: float
+        :param Polynomial: default value is Standard_False
+        :type Polynomial: bool
+        :param Tol: default value is 1.0e-4
+        :type Tol: float
+        :param Conti: default value is GeomAbs_C1
+        :type Conti: GeomAbs_Shape
+        :rtype: None
+
+        :param Path:
+        :type Path: TopoDS_Edge &
+        :param Edge1:
+        :type Edge1: TopoDS_Edge &
+        :param Edge2:
+        :type Edge2: TopoDS_Edge &
+        :param Offset:
+        :type Offset: float
+        :param Polynomial: default value is Standard_False
+        :type Polynomial: bool
+        :param Tol: default value is 1.0e-4
+        :type Tol: float
+        :param Conti: default value is GeomAbs_C1
+        :type Conti: GeomAbs_Shape
+        :rtype: None
+
+        :param Path:
+        :type Path: TopoDS_Edge &
+        :param Edge1:
+        :type Edge1: TopoDS_Edge &
+        :param Edge2:
+        :type Edge2: TopoDS_Edge &
+        :param Offset:
+        :type Offset: float
+        :param Polynomial: default value is Standard_False
+        :type Polynomial: bool
+        :param Tol: default value is 1.0e-4
+        :type Tol: float
+        :param Conti: default value is GeomAbs_C1
+        :type Conti: GeomAbs_Shape
+        :rtype: None
+
+        :param Path:
+        :type Path: TopoDS_Edge &
+        :param Edge1:
+        :type Edge1: TopoDS_Edge &
+        :param Edge2:
+        :type Edge2: TopoDS_Edge &
+        :param Offset:
+        :type Offset: float
         :param FirstEdge:
         :type FirstEdge: TopoDS_Edge &
         :param LastEdge:
         :type LastEdge: TopoDS_Edge &
+        :param Polynomial: default value is Standard_False
+        :type Polynomial: bool
+        :param Tol: default value is 1.0e-4
+        :type Tol: float
+        :param Conti: default value is GeomAbs_C1
+        :type Conti: GeomAbs_Shape
+        :rtype: None
+
+        :param Path:
+        :type Path: TopoDS_Edge &
+        :param Edge1:
+        :type Edge1: TopoDS_Edge &
+        :param Edge2:
+        :type Edge2: TopoDS_Edge &
+        :param Offset:
+        :type Offset: float
+        :param FirstEdge:
+        :type FirstEdge: TopoDS_Edge &
+        :param LastEdge:
+        :type LastEdge: TopoDS_Edge &
+        :param Polynomial: default value is Standard_False
+        :type Polynomial: bool
+        :param Tol: default value is 1.0e-4
+        :type Tol: float
+        :param Conti: default value is GeomAbs_C1
+        :type Conti: GeomAbs_Shape
+        :rtype: None
+
+        :param Path:
+        :type Path: TopoDS_Edge &
+        :param Edge1:
+        :type Edge1: TopoDS_Edge &
+        :param Edge2:
+        :type Edge2: TopoDS_Edge &
+        :param Offset:
+        :type Offset: float
+        :param FirstEdge:
+        :type FirstEdge: TopoDS_Edge &
+        :param LastEdge:
+        :type LastEdge: TopoDS_Edge &
+        :param Polynomial: default value is Standard_False
+        :type Polynomial: bool
+        :param Tol: default value is 1.0e-4
+        :type Tol: float
+        :param Conti: default value is GeomAbs_C1
+        :type Conti: GeomAbs_Shape
+        :rtype: None
+
+        :param Path:
+        :type Path: TopoDS_Edge &
+        :param Edge1:
+        :type Edge1: TopoDS_Edge &
+        :param Edge2:
+        :type Edge2: TopoDS_Edge &
+        :param Offset:
+        :type Offset: float
+        :param FirstEdge:
+        :type FirstEdge: TopoDS_Edge &
+        :param LastEdge:
+        :type LastEdge: TopoDS_Edge &
+        :param Polynomial: default value is Standard_False
+        :type Polynomial: bool
+        :param Tol: default value is 1.0e-4
+        :type Tol: float
+        :param Conti: default value is GeomAbs_C1
+        :type Conti: GeomAbs_Shape
+        :rtype: None
+
+        * Tol and Conti are only used if Polynomial is True (Used to perfrom the approximation)
+
+        :param Vertex:
+        :type Vertex: TopoDS_Vertex &
+        :param LEdge:
+        :type LEdge: TopTools_ListOfShape &
+        :param Offset:
+        :type Offset: float
+        :param Polynomial: default value is Standard_False
+        :type Polynomial: bool
+        :param Tol: default value is 1.0e-4
+        :type Tol: float
+        :param Conti: default value is GeomAbs_C1
+        :type Conti: GeomAbs_Shape
+        :rtype: None
+
+        * Tol and Conti are only used if Polynomial is True (Used to perfrom the approximation)
+
+        :param Vertex:
+        :type Vertex: TopoDS_Vertex &
+        :param LEdge:
+        :type LEdge: TopTools_ListOfShape &
+        :param Offset:
+        :type Offset: float
+        :param Polynomial: default value is Standard_False
+        :type Polynomial: bool
+        :param Tol: default value is 1.0e-4
+        :type Tol: float
+        :param Conti: default value is GeomAbs_C1
+        :type Conti: GeomAbs_Shape
+        :rtype: None
+
+        * Tol and Conti are only used if Polynomial is True (Used to perfrom the approximation)
+
+        :param Vertex:
+        :type Vertex: TopoDS_Vertex &
+        :param LEdge:
+        :type LEdge: TopTools_ListOfShape &
+        :param Offset:
+        :type Offset: float
         :param Polynomial: default value is Standard_False
         :type Polynomial: bool
         :param Tol: default value is 1.0e-4
@@ -2255,21 +2849,21 @@ class BRepOffset_Offset(object):
         """
         return _BRepOffset.BRepOffset_Offset_Init(self, *args)
 
-    def InitialShape(self, *args) -> "TopoDS_Shape const" :
+    def InitialShape(self):
         """
         :rtype: TopoDS_Shape
 
         """
-        return _BRepOffset.BRepOffset_Offset_InitialShape(self, *args)
+        return _BRepOffset.BRepOffset_Offset_InitialShape(self)
 
-    def Face(self, *args) -> "TopoDS_Face const" :
+    def Face(self):
         """
         :rtype: TopoDS_Face
 
         """
-        return _BRepOffset.BRepOffset_Offset_Face(self, *args)
+        return _BRepOffset.BRepOffset_Offset_Face(self)
 
-    def Generated(self, *args) -> "TopoDS_Shape" :
+    def Generated(self, *args):
         """
         :param Shape:
         :type Shape: TopoDS_Shape &
@@ -2278,12 +2872,12 @@ class BRepOffset_Offset(object):
         """
         return _BRepOffset.BRepOffset_Offset_Generated(self, *args)
 
-    def Status(self, *args) -> "BRepOffset_Status" :
+    def Status(self):
         """
         :rtype: BRepOffset_Status
 
         """
-        return _BRepOffset.BRepOffset_Offset_Status(self, *args)
+        return _BRepOffset.BRepOffset_Offset_Status(self)
 
     def __del__(self):
     	try:
@@ -2304,8 +2898,9 @@ BRepOffset_Offset_swigregister(BRepOffset_Offset)
 
 class BRepOffset_Tool(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
+    def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def EdgeVertices(*args) -> "void" :
+    def EdgeVertices(*args):
         """
         * <V1> is the FirstVertex ,<V2> is the Last Vertex of <Edge> taking account the orientation of Edge.
 
@@ -2321,7 +2916,7 @@ class BRepOffset_Tool(object):
         return _BRepOffset.BRepOffset_Tool_EdgeVertices(*args)
 
     EdgeVertices = staticmethod(EdgeVertices)
-    def OriEdgeInFace(*args) -> "TopAbs_Orientation" :
+    def OriEdgeInFace(*args):
         """
         * returns the cumul of the orientation of <Edge> and thc containing wire in <Face>
 
@@ -2335,7 +2930,7 @@ class BRepOffset_Tool(object):
         return _BRepOffset.BRepOffset_Tool_OriEdgeInFace(*args)
 
     OriEdgeInFace = staticmethod(OriEdgeInFace)
-    def OrientSection(*args) -> "void" :
+    def OrientSection(*args):
         """
         * <E> is a section between <F1> and <F2>. Computes <O1> the orientation of <E> in <F1> influenced by <F2>. idem for <O2>.
 
@@ -2355,7 +2950,7 @@ class BRepOffset_Tool(object):
         return _BRepOffset.BRepOffset_Tool_OrientSection(*args)
 
     OrientSection = staticmethod(OrientSection)
-    def HasCommonShapes(*args) -> "Standard_Boolean" :
+    def HasCommonShapes(*args):
         """
         * Returns True if <F1> and <F2> has common Vertices or edges , <LE> contains the common edges. <LV> the common vertices.
 
@@ -2373,8 +2968,26 @@ class BRepOffset_Tool(object):
         return _BRepOffset.BRepOffset_Tool_HasCommonShapes(*args)
 
     HasCommonShapes = staticmethod(HasCommonShapes)
-    def Inter3D(*args) -> "void" :
+    def Inter3D(*args):
         """
+        * Computes the Section betwwen <F1> and <F2> the edges solution are stored in <LInt1> with the orientation on <F1>, the sames edges are stored in <Lint2> with the orientation on <F2>.
+
+        :param F1:
+        :type F1: TopoDS_Face &
+        :param F2:
+        :type F2: TopoDS_Face &
+        :param LInt1:
+        :type LInt1: TopTools_ListOfShape &
+        :param LInt2:
+        :type LInt2: TopTools_ListOfShape &
+        :param Side:
+        :type Side: TopAbs_State
+        :param RefEdge:
+        :type RefEdge: TopoDS_Edge &
+        :param IsRefEdgeDefined: default value is Standard_False
+        :type IsRefEdgeDefined: bool
+        :rtype: void
+
         * Computes the Section betwwen <F1> and <F2> the edges solution are stored in <LInt1> with the orientation on <F1>, the sames edges are stored in <Lint2> with the orientation on <F2>.
 
         :param F1:
@@ -2397,7 +3010,7 @@ class BRepOffset_Tool(object):
         return _BRepOffset.BRepOffset_Tool_Inter3D(*args)
 
     Inter3D = staticmethod(Inter3D)
-    def TryProject(*args) -> "Standard_Boolean" :
+    def TryProject(*args):
         """
         * Find if the edges <Edges> of the face <F2> are on the face <F1>. Set in <LInt1> <LInt2> the updated edges. If all the edges are computed, returns true.
 
@@ -2421,7 +3034,7 @@ class BRepOffset_Tool(object):
         return _BRepOffset.BRepOffset_Tool_TryProject(*args)
 
     TryProject = staticmethod(TryProject)
-    def PipeInter(*args) -> "void" :
+    def PipeInter(*args):
         """
         :param F1:
         :type F1: TopoDS_Face &
@@ -2439,7 +3052,7 @@ class BRepOffset_Tool(object):
         return _BRepOffset.BRepOffset_Tool_PipeInter(*args)
 
     PipeInter = staticmethod(PipeInter)
-    def Inter2d(*args) -> "void" :
+    def Inter2d(*args):
         """
         :param F:
         :type F: TopoDS_Face &
@@ -2457,7 +3070,7 @@ class BRepOffset_Tool(object):
         return _BRepOffset.BRepOffset_Tool_Inter2d(*args)
 
     Inter2d = staticmethod(Inter2d)
-    def InterOrExtent(*args) -> "void" :
+    def InterOrExtent(*args):
         """
         :param F1:
         :type F1: TopoDS_Face &
@@ -2475,7 +3088,7 @@ class BRepOffset_Tool(object):
         return _BRepOffset.BRepOffset_Tool_InterOrExtent(*args)
 
     InterOrExtent = staticmethod(InterOrExtent)
-    def CheckBounds(*args) -> "Standard_Boolean &, Standard_Boolean &, Standard_Boolean &" :
+    def CheckBounds(*args):
         """
         :param F:
         :type F: TopoDS_Face &
@@ -2493,8 +3106,80 @@ class BRepOffset_Tool(object):
         return _BRepOffset.BRepOffset_Tool_CheckBounds(*args)
 
     CheckBounds = staticmethod(CheckBounds)
-    def EnLargeFace(*args) -> "Standard_Boolean" :
+    def EnLargeFace(*args):
         """
+        * if <ChangeGeom> is True , the surface can be changed . if <UpdatePCurve> is True, update the pcurves of the edges of <F> on the new surface.if the surface has been changed, Returns True if The Surface of <NF> has changed.
+
+        :param F:
+        :type F: TopoDS_Face &
+        :param NF:
+        :type NF: TopoDS_Face &
+        :param ChangeGeom:
+        :type ChangeGeom: bool
+        :param UpDatePCurve: default value is Standard_False
+        :type UpDatePCurve: bool
+        :param enlargeU: default value is Standard_True
+        :type enlargeU: bool
+        :param enlargeVfirst: default value is Standard_True
+        :type enlargeVfirst: bool
+        :param enlargeVlast: default value is Standard_True
+        :type enlargeVlast: bool
+        :rtype: bool
+
+        * if <ChangeGeom> is True , the surface can be changed . if <UpdatePCurve> is True, update the pcurves of the edges of <F> on the new surface.if the surface has been changed, Returns True if The Surface of <NF> has changed.
+
+        :param F:
+        :type F: TopoDS_Face &
+        :param NF:
+        :type NF: TopoDS_Face &
+        :param ChangeGeom:
+        :type ChangeGeom: bool
+        :param UpDatePCurve: default value is Standard_False
+        :type UpDatePCurve: bool
+        :param enlargeU: default value is Standard_True
+        :type enlargeU: bool
+        :param enlargeVfirst: default value is Standard_True
+        :type enlargeVfirst: bool
+        :param enlargeVlast: default value is Standard_True
+        :type enlargeVlast: bool
+        :rtype: bool
+
+        * if <ChangeGeom> is True , the surface can be changed . if <UpdatePCurve> is True, update the pcurves of the edges of <F> on the new surface.if the surface has been changed, Returns True if The Surface of <NF> has changed.
+
+        :param F:
+        :type F: TopoDS_Face &
+        :param NF:
+        :type NF: TopoDS_Face &
+        :param ChangeGeom:
+        :type ChangeGeom: bool
+        :param UpDatePCurve: default value is Standard_False
+        :type UpDatePCurve: bool
+        :param enlargeU: default value is Standard_True
+        :type enlargeU: bool
+        :param enlargeVfirst: default value is Standard_True
+        :type enlargeVfirst: bool
+        :param enlargeVlast: default value is Standard_True
+        :type enlargeVlast: bool
+        :rtype: bool
+
+        * if <ChangeGeom> is True , the surface can be changed . if <UpdatePCurve> is True, update the pcurves of the edges of <F> on the new surface.if the surface has been changed, Returns True if The Surface of <NF> has changed.
+
+        :param F:
+        :type F: TopoDS_Face &
+        :param NF:
+        :type NF: TopoDS_Face &
+        :param ChangeGeom:
+        :type ChangeGeom: bool
+        :param UpDatePCurve: default value is Standard_False
+        :type UpDatePCurve: bool
+        :param enlargeU: default value is Standard_True
+        :type enlargeU: bool
+        :param enlargeVfirst: default value is Standard_True
+        :type enlargeVfirst: bool
+        :param enlargeVlast: default value is Standard_True
+        :type enlargeVlast: bool
+        :rtype: bool
+
         * if <ChangeGeom> is True , the surface can be changed . if <UpdatePCurve> is True, update the pcurves of the edges of <F> on the new surface.if the surface has been changed, Returns True if The Surface of <NF> has changed.
 
         :param F:
@@ -2517,7 +3202,7 @@ class BRepOffset_Tool(object):
         return _BRepOffset.BRepOffset_Tool_EnLargeFace(*args)
 
     EnLargeFace = staticmethod(EnLargeFace)
-    def ExtentFace(*args) -> "void" :
+    def ExtentFace(*args):
         """
         :param F:
         :type F: TopoDS_Face &
@@ -2537,7 +3222,7 @@ class BRepOffset_Tool(object):
         return _BRepOffset.BRepOffset_Tool_ExtentFace(*args)
 
     ExtentFace = staticmethod(ExtentFace)
-    def BuildNeighbour(*args) -> "void" :
+    def BuildNeighbour(*args):
         """
         * Via the wire explorer store in <NOnV1> for an Edge <E> of <W> his Edge neighbour on the first vertex <V1> of <E>. Store in NOnV2 the Neighbour of <E>on the last vertex <V2> of <E>.
 
@@ -2555,7 +3240,7 @@ class BRepOffset_Tool(object):
         return _BRepOffset.BRepOffset_Tool_BuildNeighbour(*args)
 
     BuildNeighbour = staticmethod(BuildNeighbour)
-    def MapVertexEdges(*args) -> "void" :
+    def MapVertexEdges(*args):
         """
         * Store in MVE for a vertex <V> in <S> the incident edges <E> in <S>. An Edge is Store only one Time for a vertex.
 
@@ -2569,7 +3254,7 @@ class BRepOffset_Tool(object):
         return _BRepOffset.BRepOffset_Tool_MapVertexEdges(*args)
 
     MapVertexEdges = staticmethod(MapVertexEdges)
-    def Deboucle3D(*args) -> "TopoDS_Shape" :
+    def Deboucle3D(*args):
         """
         * Remove the non valid part of an offsetshape 1 - Remove all the free boundary and the faces connex to such edges. 2 - Remove all the shapes not valid in the result (according to the side of offseting) in this verion only the first point is implemented.
 
@@ -2583,7 +3268,7 @@ class BRepOffset_Tool(object):
         return _BRepOffset.BRepOffset_Tool_Deboucle3D(*args)
 
     Deboucle3D = staticmethod(Deboucle3D)
-    def CorrectOrientation(*args) -> "void" :
+    def CorrectOrientation(*args):
         """
         :param SI:
         :type SI: TopoDS_Shape &
@@ -2601,7 +3286,7 @@ class BRepOffset_Tool(object):
         return _BRepOffset.BRepOffset_Tool_CorrectOrientation(*args)
 
     CorrectOrientation = staticmethod(CorrectOrientation)
-    def Gabarit(*args) -> "Standard_Real" :
+    def Gabarit(*args):
         """
         :param aCurve:
         :type aCurve: Handle_Geom_Curve &
@@ -2611,8 +3296,6 @@ class BRepOffset_Tool(object):
         return _BRepOffset.BRepOffset_Tool_Gabarit(*args)
 
     Gabarit = staticmethod(Gabarit)
-    def __init__(self): 
-        _BRepOffset.BRepOffset_Tool_swiginit(self,_BRepOffset.new_BRepOffset_Tool())
     def __del__(self):
     	try:
     		self.thisown = False
@@ -2625,7 +3308,7 @@ BRepOffset_Tool._kill_pointed = new_instancemethod(_BRepOffset.BRepOffset_Tool__
 BRepOffset_Tool_swigregister = _BRepOffset.BRepOffset_Tool_swigregister
 BRepOffset_Tool_swigregister(BRepOffset_Tool)
 
-def BRepOffset_Tool_EdgeVertices(*args) -> "void" :
+def BRepOffset_Tool_EdgeVertices(*args):
   """
     * <V1> is the FirstVertex ,<V2> is the Last Vertex of <Edge> taking account the orientation of Edge.
 
@@ -2640,7 +3323,7 @@ def BRepOffset_Tool_EdgeVertices(*args) -> "void" :
     """
   return _BRepOffset.BRepOffset_Tool_EdgeVertices(*args)
 
-def BRepOffset_Tool_OriEdgeInFace(*args) -> "TopAbs_Orientation" :
+def BRepOffset_Tool_OriEdgeInFace(*args):
   """
     * returns the cumul of the orientation of <Edge> and thc containing wire in <Face>
 
@@ -2653,7 +3336,7 @@ def BRepOffset_Tool_OriEdgeInFace(*args) -> "TopAbs_Orientation" :
     """
   return _BRepOffset.BRepOffset_Tool_OriEdgeInFace(*args)
 
-def BRepOffset_Tool_OrientSection(*args) -> "void" :
+def BRepOffset_Tool_OrientSection(*args):
   """
     * <E> is a section between <F1> and <F2>. Computes <O1> the orientation of <E> in <F1> influenced by <F2>. idem for <O2>.
 
@@ -2672,7 +3355,7 @@ def BRepOffset_Tool_OrientSection(*args) -> "void" :
     """
   return _BRepOffset.BRepOffset_Tool_OrientSection(*args)
 
-def BRepOffset_Tool_HasCommonShapes(*args) -> "Standard_Boolean" :
+def BRepOffset_Tool_HasCommonShapes(*args):
   """
     * Returns True if <F1> and <F2> has common Vertices or edges , <LE> contains the common edges. <LV> the common vertices.
 
@@ -2689,8 +3372,26 @@ def BRepOffset_Tool_HasCommonShapes(*args) -> "Standard_Boolean" :
     """
   return _BRepOffset.BRepOffset_Tool_HasCommonShapes(*args)
 
-def BRepOffset_Tool_Inter3D(*args) -> "void" :
+def BRepOffset_Tool_Inter3D(*args):
   """
+    * Computes the Section betwwen <F1> and <F2> the edges solution are stored in <LInt1> with the orientation on <F1>, the sames edges are stored in <Lint2> with the orientation on <F2>.
+
+    :param F1:
+    :type F1: TopoDS_Face &
+    :param F2:
+    :type F2: TopoDS_Face &
+    :param LInt1:
+    :type LInt1: TopTools_ListOfShape &
+    :param LInt2:
+    :type LInt2: TopTools_ListOfShape &
+    :param Side:
+    :type Side: TopAbs_State
+    :param RefEdge:
+    :type RefEdge: TopoDS_Edge &
+    :param IsRefEdgeDefined: default value is Standard_False
+    :type IsRefEdgeDefined: bool
+    :rtype: void
+
     * Computes the Section betwwen <F1> and <F2> the edges solution are stored in <LInt1> with the orientation on <F1>, the sames edges are stored in <Lint2> with the orientation on <F2>.
 
     :param F1:
@@ -2712,7 +3413,7 @@ def BRepOffset_Tool_Inter3D(*args) -> "void" :
     """
   return _BRepOffset.BRepOffset_Tool_Inter3D(*args)
 
-def BRepOffset_Tool_TryProject(*args) -> "Standard_Boolean" :
+def BRepOffset_Tool_TryProject(*args):
   """
     * Find if the edges <Edges> of the face <F2> are on the face <F1>. Set in <LInt1> <LInt2> the updated edges. If all the edges are computed, returns true.
 
@@ -2735,7 +3436,7 @@ def BRepOffset_Tool_TryProject(*args) -> "Standard_Boolean" :
     """
   return _BRepOffset.BRepOffset_Tool_TryProject(*args)
 
-def BRepOffset_Tool_PipeInter(*args) -> "void" :
+def BRepOffset_Tool_PipeInter(*args):
   """
     :param F1:
     :type F1: TopoDS_Face &
@@ -2752,7 +3453,7 @@ def BRepOffset_Tool_PipeInter(*args) -> "void" :
     """
   return _BRepOffset.BRepOffset_Tool_PipeInter(*args)
 
-def BRepOffset_Tool_Inter2d(*args) -> "void" :
+def BRepOffset_Tool_Inter2d(*args):
   """
     :param F:
     :type F: TopoDS_Face &
@@ -2769,7 +3470,7 @@ def BRepOffset_Tool_Inter2d(*args) -> "void" :
     """
   return _BRepOffset.BRepOffset_Tool_Inter2d(*args)
 
-def BRepOffset_Tool_InterOrExtent(*args) -> "void" :
+def BRepOffset_Tool_InterOrExtent(*args):
   """
     :param F1:
     :type F1: TopoDS_Face &
@@ -2786,7 +3487,7 @@ def BRepOffset_Tool_InterOrExtent(*args) -> "void" :
     """
   return _BRepOffset.BRepOffset_Tool_InterOrExtent(*args)
 
-def BRepOffset_Tool_CheckBounds(*args) -> "Standard_Boolean &, Standard_Boolean &, Standard_Boolean &" :
+def BRepOffset_Tool_CheckBounds(*args):
   """
     :param F:
     :type F: TopoDS_Face &
@@ -2803,8 +3504,80 @@ def BRepOffset_Tool_CheckBounds(*args) -> "Standard_Boolean &, Standard_Boolean 
     """
   return _BRepOffset.BRepOffset_Tool_CheckBounds(*args)
 
-def BRepOffset_Tool_EnLargeFace(*args) -> "Standard_Boolean" :
+def BRepOffset_Tool_EnLargeFace(*args):
   """
+    * if <ChangeGeom> is True , the surface can be changed . if <UpdatePCurve> is True, update the pcurves of the edges of <F> on the new surface.if the surface has been changed, Returns True if The Surface of <NF> has changed.
+
+    :param F:
+    :type F: TopoDS_Face &
+    :param NF:
+    :type NF: TopoDS_Face &
+    :param ChangeGeom:
+    :type ChangeGeom: bool
+    :param UpDatePCurve: default value is Standard_False
+    :type UpDatePCurve: bool
+    :param enlargeU: default value is Standard_True
+    :type enlargeU: bool
+    :param enlargeVfirst: default value is Standard_True
+    :type enlargeVfirst: bool
+    :param enlargeVlast: default value is Standard_True
+    :type enlargeVlast: bool
+    :rtype: bool
+
+    * if <ChangeGeom> is True , the surface can be changed . if <UpdatePCurve> is True, update the pcurves of the edges of <F> on the new surface.if the surface has been changed, Returns True if The Surface of <NF> has changed.
+
+    :param F:
+    :type F: TopoDS_Face &
+    :param NF:
+    :type NF: TopoDS_Face &
+    :param ChangeGeom:
+    :type ChangeGeom: bool
+    :param UpDatePCurve: default value is Standard_False
+    :type UpDatePCurve: bool
+    :param enlargeU: default value is Standard_True
+    :type enlargeU: bool
+    :param enlargeVfirst: default value is Standard_True
+    :type enlargeVfirst: bool
+    :param enlargeVlast: default value is Standard_True
+    :type enlargeVlast: bool
+    :rtype: bool
+
+    * if <ChangeGeom> is True , the surface can be changed . if <UpdatePCurve> is True, update the pcurves of the edges of <F> on the new surface.if the surface has been changed, Returns True if The Surface of <NF> has changed.
+
+    :param F:
+    :type F: TopoDS_Face &
+    :param NF:
+    :type NF: TopoDS_Face &
+    :param ChangeGeom:
+    :type ChangeGeom: bool
+    :param UpDatePCurve: default value is Standard_False
+    :type UpDatePCurve: bool
+    :param enlargeU: default value is Standard_True
+    :type enlargeU: bool
+    :param enlargeVfirst: default value is Standard_True
+    :type enlargeVfirst: bool
+    :param enlargeVlast: default value is Standard_True
+    :type enlargeVlast: bool
+    :rtype: bool
+
+    * if <ChangeGeom> is True , the surface can be changed . if <UpdatePCurve> is True, update the pcurves of the edges of <F> on the new surface.if the surface has been changed, Returns True if The Surface of <NF> has changed.
+
+    :param F:
+    :type F: TopoDS_Face &
+    :param NF:
+    :type NF: TopoDS_Face &
+    :param ChangeGeom:
+    :type ChangeGeom: bool
+    :param UpDatePCurve: default value is Standard_False
+    :type UpDatePCurve: bool
+    :param enlargeU: default value is Standard_True
+    :type enlargeU: bool
+    :param enlargeVfirst: default value is Standard_True
+    :type enlargeVfirst: bool
+    :param enlargeVlast: default value is Standard_True
+    :type enlargeVlast: bool
+    :rtype: bool
+
     * if <ChangeGeom> is True , the surface can be changed . if <UpdatePCurve> is True, update the pcurves of the edges of <F> on the new surface.if the surface has been changed, Returns True if The Surface of <NF> has changed.
 
     :param F:
@@ -2826,7 +3599,7 @@ def BRepOffset_Tool_EnLargeFace(*args) -> "Standard_Boolean" :
     """
   return _BRepOffset.BRepOffset_Tool_EnLargeFace(*args)
 
-def BRepOffset_Tool_ExtentFace(*args) -> "void" :
+def BRepOffset_Tool_ExtentFace(*args):
   """
     :param F:
     :type F: TopoDS_Face &
@@ -2845,7 +3618,7 @@ def BRepOffset_Tool_ExtentFace(*args) -> "void" :
     """
   return _BRepOffset.BRepOffset_Tool_ExtentFace(*args)
 
-def BRepOffset_Tool_BuildNeighbour(*args) -> "void" :
+def BRepOffset_Tool_BuildNeighbour(*args):
   """
     * Via the wire explorer store in <NOnV1> for an Edge <E> of <W> his Edge neighbour on the first vertex <V1> of <E>. Store in NOnV2 the Neighbour of <E>on the last vertex <V2> of <E>.
 
@@ -2862,7 +3635,7 @@ def BRepOffset_Tool_BuildNeighbour(*args) -> "void" :
     """
   return _BRepOffset.BRepOffset_Tool_BuildNeighbour(*args)
 
-def BRepOffset_Tool_MapVertexEdges(*args) -> "void" :
+def BRepOffset_Tool_MapVertexEdges(*args):
   """
     * Store in MVE for a vertex <V> in <S> the incident edges <E> in <S>. An Edge is Store only one Time for a vertex.
 
@@ -2875,7 +3648,7 @@ def BRepOffset_Tool_MapVertexEdges(*args) -> "void" :
     """
   return _BRepOffset.BRepOffset_Tool_MapVertexEdges(*args)
 
-def BRepOffset_Tool_Deboucle3D(*args) -> "TopoDS_Shape" :
+def BRepOffset_Tool_Deboucle3D(*args):
   """
     * Remove the non valid part of an offsetshape 1 - Remove all the free boundary and the faces connex to such edges. 2 - Remove all the shapes not valid in the result (according to the side of offseting) in this verion only the first point is implemented.
 
@@ -2888,7 +3661,7 @@ def BRepOffset_Tool_Deboucle3D(*args) -> "TopoDS_Shape" :
     """
   return _BRepOffset.BRepOffset_Tool_Deboucle3D(*args)
 
-def BRepOffset_Tool_CorrectOrientation(*args) -> "void" :
+def BRepOffset_Tool_CorrectOrientation(*args):
   """
     :param SI:
     :type SI: TopoDS_Shape &
@@ -2905,7 +3678,7 @@ def BRepOffset_Tool_CorrectOrientation(*args) -> "void" :
     """
   return _BRepOffset.BRepOffset_Tool_CorrectOrientation(*args)
 
-def BRepOffset_Tool_Gabarit(*args) -> "Standard_Real" :
+def BRepOffset_Tool_Gabarit(*args):
   """
     :param aCurve:
     :type aCurve: Handle_Geom_Curve &

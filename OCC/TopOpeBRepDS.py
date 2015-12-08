@@ -155,8 +155,9 @@ TopOpeBRepDS_COMPOUND = _TopOpeBRepDS.TopOpeBRepDS_COMPOUND
 TopOpeBRepDS_UNKNOWN = _TopOpeBRepDS.TopOpeBRepDS_UNKNOWN
 class topopebrepds(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
+    def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def SPrint(*args) -> "TCollection_AsciiString" :
+    def SPrint(*args):
         """
         * IN OU ON UN
 
@@ -175,7 +176,31 @@ class topopebrepds(object):
         :param K:
         :type K: TopOpeBRepDS_Kind
         :param I:
-        :type I: int
+        :type I: Standard_Integer
+        :param B: default value is 
+        :type B: TCollection_AsciiString &
+        :param A: default value is 
+        :type A: TCollection_AsciiString &
+        :rtype: TCollection_AsciiString
+
+        * S1(<K>,<I>)S2
+
+        :param K:
+        :type K: TopOpeBRepDS_Kind
+        :param I:
+        :type I: Standard_Integer
+        :param B: default value is 
+        :type B: TCollection_AsciiString &
+        :param A: default value is 
+        :type A: TCollection_AsciiString &
+        :rtype: TCollection_AsciiString
+
+        * S1(<K>,<I>)S2
+
+        :param K:
+        :type K: TopOpeBRepDS_Kind
+        :param I:
+        :type I: Standard_Integer
         :param B: default value is 
         :type B: TCollection_AsciiString &
         :param A: default value is 
@@ -191,7 +216,7 @@ class topopebrepds(object):
         :param T:
         :type T: TopAbs_ShapeEnum
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :rtype: TCollection_AsciiString
 
         :param O:
@@ -206,7 +231,7 @@ class topopebrepds(object):
         return _TopOpeBRepDS.topopebrepds_SPrint(*args)
 
     SPrint = staticmethod(SPrint)
-    def Print(*args) -> "Standard_OStream &" :
+    def Print(*args):
         """
         :param S:
         :type S: TopAbs_State
@@ -223,7 +248,31 @@ class topopebrepds(object):
         :param K:
         :type K: TopOpeBRepDS_Kind
         :param I:
-        :type I: int
+        :type I: Standard_Integer
+        :param S:
+        :type S: Standard_OStream &
+        :param B: default value is 
+        :type B: TCollection_AsciiString &
+        :param A: default value is 
+        :type A: TCollection_AsciiString &
+        :rtype: Standard_OStream
+
+        :param K:
+        :type K: TopOpeBRepDS_Kind
+        :param I:
+        :type I: Standard_Integer
+        :param S:
+        :type S: Standard_OStream &
+        :param B: default value is 
+        :type B: TCollection_AsciiString &
+        :param A: default value is 
+        :type A: TCollection_AsciiString &
+        :rtype: Standard_OStream
+
+        :param K:
+        :type K: TopOpeBRepDS_Kind
+        :param I:
+        :type I: Standard_Integer
         :param S:
         :type S: Standard_OStream &
         :param B: default value is 
@@ -235,7 +284,7 @@ class topopebrepds(object):
         :param T:
         :type T: TopAbs_ShapeEnum
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :param S:
         :type S: Standard_OStream &
         :rtype: Standard_OStream
@@ -250,7 +299,7 @@ class topopebrepds(object):
         return _TopOpeBRepDS.topopebrepds_Print(*args)
 
     Print = staticmethod(Print)
-    def IsGeometry(*args) -> "Standard_Boolean" :
+    def IsGeometry(*args):
         """
         :param K:
         :type K: TopOpeBRepDS_Kind
@@ -260,7 +309,7 @@ class topopebrepds(object):
         return _TopOpeBRepDS.topopebrepds_IsGeometry(*args)
 
     IsGeometry = staticmethod(IsGeometry)
-    def IsTopology(*args) -> "Standard_Boolean" :
+    def IsTopology(*args):
         """
         :param K:
         :type K: TopOpeBRepDS_Kind
@@ -270,7 +319,7 @@ class topopebrepds(object):
         return _TopOpeBRepDS.topopebrepds_IsTopology(*args)
 
     IsTopology = staticmethod(IsTopology)
-    def KindToShape(*args) -> "TopAbs_ShapeEnum" :
+    def KindToShape(*args):
         """
         :param K:
         :type K: TopOpeBRepDS_Kind
@@ -280,7 +329,7 @@ class topopebrepds(object):
         return _TopOpeBRepDS.topopebrepds_KindToShape(*args)
 
     KindToShape = staticmethod(KindToShape)
-    def ShapeToKind(*args) -> "TopOpeBRepDS_Kind" :
+    def ShapeToKind(*args):
         """
         :param S:
         :type S: TopAbs_ShapeEnum
@@ -290,8 +339,6 @@ class topopebrepds(object):
         return _TopOpeBRepDS.topopebrepds_ShapeToKind(*args)
 
     ShapeToKind = staticmethod(ShapeToKind)
-    def __init__(self): 
-        _TopOpeBRepDS.topopebrepds_swiginit(self,_TopOpeBRepDS.new_topopebrepds())
     def __del__(self):
     	try:
     		self.thisown = False
@@ -304,7 +351,7 @@ topopebrepds._kill_pointed = new_instancemethod(_TopOpeBRepDS.topopebrepds__kill
 topopebrepds_swigregister = _TopOpeBRepDS.topopebrepds_swigregister
 topopebrepds_swigregister(topopebrepds)
 
-def topopebrepds_SPrint(*args) -> "TCollection_AsciiString" :
+def topopebrepds_SPrint(*args):
   """
     * IN OU ON UN
 
@@ -323,7 +370,31 @@ def topopebrepds_SPrint(*args) -> "TCollection_AsciiString" :
     :param K:
     :type K: TopOpeBRepDS_Kind
     :param I:
-    :type I: int
+    :type I: Standard_Integer
+    :param B: default value is 
+    :type B: TCollection_AsciiString &
+    :param A: default value is 
+    :type A: TCollection_AsciiString &
+    :rtype: TCollection_AsciiString
+
+    * S1(<K>,<I>)S2
+
+    :param K:
+    :type K: TopOpeBRepDS_Kind
+    :param I:
+    :type I: Standard_Integer
+    :param B: default value is 
+    :type B: TCollection_AsciiString &
+    :param A: default value is 
+    :type A: TCollection_AsciiString &
+    :rtype: TCollection_AsciiString
+
+    * S1(<K>,<I>)S2
+
+    :param K:
+    :type K: TopOpeBRepDS_Kind
+    :param I:
+    :type I: Standard_Integer
     :param B: default value is 
     :type B: TCollection_AsciiString &
     :param A: default value is 
@@ -339,7 +410,7 @@ def topopebrepds_SPrint(*args) -> "TCollection_AsciiString" :
     :param T:
     :type T: TopAbs_ShapeEnum
     :param I:
-    :type I: int
+    :type I: Standard_Integer
     :rtype: TCollection_AsciiString
 
     :param O:
@@ -353,7 +424,7 @@ def topopebrepds_SPrint(*args) -> "TCollection_AsciiString" :
     """
   return _TopOpeBRepDS.topopebrepds_SPrint(*args)
 
-def topopebrepds_Print(*args) -> "Standard_OStream &" :
+def topopebrepds_Print(*args):
   """
     :param S:
     :type S: TopAbs_State
@@ -370,7 +441,31 @@ def topopebrepds_Print(*args) -> "Standard_OStream &" :
     :param K:
     :type K: TopOpeBRepDS_Kind
     :param I:
-    :type I: int
+    :type I: Standard_Integer
+    :param S:
+    :type S: Standard_OStream &
+    :param B: default value is 
+    :type B: TCollection_AsciiString &
+    :param A: default value is 
+    :type A: TCollection_AsciiString &
+    :rtype: Standard_OStream
+
+    :param K:
+    :type K: TopOpeBRepDS_Kind
+    :param I:
+    :type I: Standard_Integer
+    :param S:
+    :type S: Standard_OStream &
+    :param B: default value is 
+    :type B: TCollection_AsciiString &
+    :param A: default value is 
+    :type A: TCollection_AsciiString &
+    :rtype: Standard_OStream
+
+    :param K:
+    :type K: TopOpeBRepDS_Kind
+    :param I:
+    :type I: Standard_Integer
     :param S:
     :type S: Standard_OStream &
     :param B: default value is 
@@ -382,7 +477,7 @@ def topopebrepds_Print(*args) -> "Standard_OStream &" :
     :param T:
     :type T: TopAbs_ShapeEnum
     :param I:
-    :type I: int
+    :type I: Standard_Integer
     :param S:
     :type S: Standard_OStream &
     :rtype: Standard_OStream
@@ -396,7 +491,7 @@ def topopebrepds_Print(*args) -> "Standard_OStream &" :
     """
   return _TopOpeBRepDS.topopebrepds_Print(*args)
 
-def topopebrepds_IsGeometry(*args) -> "Standard_Boolean" :
+def topopebrepds_IsGeometry(*args):
   """
     :param K:
     :type K: TopOpeBRepDS_Kind
@@ -405,7 +500,7 @@ def topopebrepds_IsGeometry(*args) -> "Standard_Boolean" :
     """
   return _TopOpeBRepDS.topopebrepds_IsGeometry(*args)
 
-def topopebrepds_IsTopology(*args) -> "Standard_Boolean" :
+def topopebrepds_IsTopology(*args):
   """
     :param K:
     :type K: TopOpeBRepDS_Kind
@@ -414,7 +509,7 @@ def topopebrepds_IsTopology(*args) -> "Standard_Boolean" :
     """
   return _TopOpeBRepDS.topopebrepds_IsTopology(*args)
 
-def topopebrepds_KindToShape(*args) -> "TopAbs_ShapeEnum" :
+def topopebrepds_KindToShape(*args):
   """
     :param K:
     :type K: TopOpeBRepDS_Kind
@@ -423,7 +518,7 @@ def topopebrepds_KindToShape(*args) -> "TopAbs_ShapeEnum" :
     """
   return _TopOpeBRepDS.topopebrepds_KindToShape(*args)
 
-def topopebrepds_ShapeToKind(*args) -> "TopOpeBRepDS_Kind" :
+def topopebrepds_ShapeToKind(*args):
   """
     :param S:
     :type S: TopAbs_ShapeEnum
@@ -438,22 +533,22 @@ class TopOpeBRepDS_Array1OfDataMapOfIntegerListOfInterference(object):
     def __init__(self, *args): 
         """
         :param Low:
-        :type Low: int
+        :type Low: Standard_Integer
         :param Up:
-        :type Up: int
+        :type Up: Standard_Integer
         :rtype: None
 
         :param Item:
         :type Item: TopOpeBRepDS_DataMapOfIntegerListOfInterference &
         :param Low:
-        :type Low: int
+        :type Low: Standard_Integer
         :param Up:
-        :type Up: int
+        :type Up: Standard_Integer
         :rtype: None
 
         """
         _TopOpeBRepDS.TopOpeBRepDS_Array1OfDataMapOfIntegerListOfInterference_swiginit(self,_TopOpeBRepDS.new_TopOpeBRepDS_Array1OfDataMapOfIntegerListOfInterference(*args))
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
         :param V:
         :type V: TopOpeBRepDS_DataMapOfIntegerListOfInterference &
@@ -462,21 +557,21 @@ class TopOpeBRepDS_Array1OfDataMapOfIntegerListOfInterference(object):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_Array1OfDataMapOfIntegerListOfInterference_Init(self, *args)
 
-    def Destroy(self, *args) -> "void" :
+    def Destroy(self):
         """
         :rtype: None
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_Array1OfDataMapOfIntegerListOfInterference_Destroy(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_Array1OfDataMapOfIntegerListOfInterference_Destroy(self)
 
-    def IsAllocated(self, *args) -> "Standard_Boolean" :
+    def IsAllocated(self):
         """
         :rtype: bool
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_Array1OfDataMapOfIntegerListOfInterference_IsAllocated(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_Array1OfDataMapOfIntegerListOfInterference_IsAllocated(self)
 
-    def Assign(self, *args) -> "TopOpeBRepDS_Array1OfDataMapOfIntegerListOfInterference const &" :
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: TopOpeBRepDS_Array1OfDataMapOfIntegerListOfInterference &
@@ -485,7 +580,7 @@ class TopOpeBRepDS_Array1OfDataMapOfIntegerListOfInterference(object):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_Array1OfDataMapOfIntegerListOfInterference_Assign(self, *args)
 
-    def Set(self, *args) -> "TopOpeBRepDS_Array1OfDataMapOfIntegerListOfInterference const &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: TopOpeBRepDS_Array1OfDataMapOfIntegerListOfInterference &
@@ -494,31 +589,31 @@ class TopOpeBRepDS_Array1OfDataMapOfIntegerListOfInterference(object):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_Array1OfDataMapOfIntegerListOfInterference_Set(self, *args)
 
-    def Length(self, *args) -> "Standard_Integer" :
+    def Length(self):
         """
         :rtype: int
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_Array1OfDataMapOfIntegerListOfInterference_Length(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_Array1OfDataMapOfIntegerListOfInterference_Length(self)
 
-    def Lower(self, *args) -> "Standard_Integer" :
+    def Lower(self):
         """
         :rtype: int
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_Array1OfDataMapOfIntegerListOfInterference_Lower(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_Array1OfDataMapOfIntegerListOfInterference_Lower(self)
 
-    def Upper(self, *args) -> "Standard_Integer" :
+    def Upper(self):
         """
         :rtype: int
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_Array1OfDataMapOfIntegerListOfInterference_Upper(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_Array1OfDataMapOfIntegerListOfInterference_Upper(self)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Value:
         :type Value: TopOpeBRepDS_DataMapOfIntegerListOfInterference &
         :rtype: None
@@ -526,19 +621,19 @@ class TopOpeBRepDS_Array1OfDataMapOfIntegerListOfInterference(object):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_Array1OfDataMapOfIntegerListOfInterference_SetValue(self, *args)
 
-    def Value(self, *args) -> "TopOpeBRepDS_DataMapOfIntegerListOfInterference const &" :
+    def Value(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: TopOpeBRepDS_DataMapOfIntegerListOfInterference
 
         """
         return _TopOpeBRepDS.TopOpeBRepDS_Array1OfDataMapOfIntegerListOfInterference_Value(self, *args)
 
-    def ChangeValue(self, *args) -> "TopOpeBRepDS_DataMapOfIntegerListOfInterference &" :
+    def ChangeValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: TopOpeBRepDS_DataMapOfIntegerListOfInterference
 
         """
@@ -570,13 +665,13 @@ TopOpeBRepDS_Array1OfDataMapOfIntegerListOfInterference_swigregister(TopOpeBRepD
 class TopOpeBRepDS_Association(OCC.MMgt.MMgt_TShared):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _TopOpeBRepDS.TopOpeBRepDS_Association_swiginit(self,_TopOpeBRepDS.new_TopOpeBRepDS_Association(*args))
-    def Associate(self, *args) -> "void" :
+        _TopOpeBRepDS.TopOpeBRepDS_Association_swiginit(self,_TopOpeBRepDS.new_TopOpeBRepDS_Association())
+    def Associate(self, *args):
         """
         :param I:
         :type I: Handle_TopOpeBRepDS_Interference &
@@ -593,7 +688,7 @@ class TopOpeBRepDS_Association(OCC.MMgt.MMgt_TShared):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_Association_Associate(self, *args)
 
-    def HasAssociation(self, *args) -> "Standard_Boolean" :
+    def HasAssociation(self, *args):
         """
         :param I:
         :type I: Handle_TopOpeBRepDS_Interference &
@@ -602,7 +697,7 @@ class TopOpeBRepDS_Association(OCC.MMgt.MMgt_TShared):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_Association_HasAssociation(self, *args)
 
-    def Associated(self, *args) -> "TopOpeBRepDS_ListOfInterference &" :
+    def Associated(self, *args):
         """
         :param I:
         :type I: Handle_TopOpeBRepDS_Interference &
@@ -611,7 +706,7 @@ class TopOpeBRepDS_Association(OCC.MMgt.MMgt_TShared):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_Association_Associated(self, *args)
 
-    def AreAssociated(self, *args) -> "Standard_Boolean" :
+    def AreAssociated(self, *args):
         """
         :param I:
         :type I: Handle_TopOpeBRepDS_Interference &
@@ -622,11 +717,11 @@ class TopOpeBRepDS_Association(OCC.MMgt.MMgt_TShared):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_Association_AreAssociated(self, *args)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(TopOpeBRepDS_Association self)"""
         return _TopOpeBRepDS.TopOpeBRepDS_Association__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_TopOpeBRepDS_Association" :
+    def GetHandle(self):
         """GetHandle(TopOpeBRepDS_Association self) -> Handle_TopOpeBRepDS_Association"""
         return _TopOpeBRepDS.TopOpeBRepDS_Association_GetHandle(self)
 
@@ -668,7 +763,7 @@ Handle_TopOpeBRepDS_Association._kill_pointed = new_instancemethod(_TopOpeBRepDS
 Handle_TopOpeBRepDS_Association_swigregister = _TopOpeBRepDS.Handle_TopOpeBRepDS_Association_swigregister
 Handle_TopOpeBRepDS_Association_swigregister(Handle_TopOpeBRepDS_Association)
 
-def Handle_TopOpeBRepDS_Association_DownCast(*args) -> "Handle_TopOpeBRepDS_Association const" :
+def Handle_TopOpeBRepDS_Association_DownCast(*args):
   return _TopOpeBRepDS.Handle_TopOpeBRepDS_Association_DownCast(*args)
 Handle_TopOpeBRepDS_Association_DownCast = _TopOpeBRepDS.Handle_TopOpeBRepDS_Association_DownCast
 
@@ -689,21 +784,21 @@ class TopOpeBRepDS_BuildTool(object):
 
         """
         _TopOpeBRepDS.TopOpeBRepDS_BuildTool_swiginit(self,_TopOpeBRepDS.new_TopOpeBRepDS_BuildTool(*args))
-    def GetGeomTool(self, *args) -> "TopOpeBRepTool_GeomTool const &" :
+    def GetGeomTool(self):
         """
         :rtype: TopOpeBRepTool_GeomTool
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_BuildTool_GetGeomTool(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_BuildTool_GetGeomTool(self)
 
-    def ChangeGeomTool(self, *args) -> "TopOpeBRepTool_GeomTool &" :
+    def ChangeGeomTool(self):
         """
         :rtype: TopOpeBRepTool_GeomTool
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_BuildTool_ChangeGeomTool(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_BuildTool_ChangeGeomTool(self)
 
-    def MakeVertex(self, *args) -> "void" :
+    def MakeVertex(self, *args):
         """
         :param V:
         :type V: TopoDS_Shape &
@@ -714,7 +809,7 @@ class TopOpeBRepDS_BuildTool(object):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_BuildTool_MakeVertex(self, *args)
 
-    def MakeEdge(self, *args) -> "void" :
+    def MakeEdge(self, *args):
         """
         :param E:
         :type E: TopoDS_Shape &
@@ -745,7 +840,7 @@ class TopOpeBRepDS_BuildTool(object):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_BuildTool_MakeEdge(self, *args)
 
-    def MakeWire(self, *args) -> "void" :
+    def MakeWire(self, *args):
         """
         :param W:
         :type W: TopoDS_Shape &
@@ -754,7 +849,7 @@ class TopOpeBRepDS_BuildTool(object):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_BuildTool_MakeWire(self, *args)
 
-    def MakeFace(self, *args) -> "void" :
+    def MakeFace(self, *args):
         """
         :param F:
         :type F: TopoDS_Shape &
@@ -765,7 +860,7 @@ class TopOpeBRepDS_BuildTool(object):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_BuildTool_MakeFace(self, *args)
 
-    def MakeShell(self, *args) -> "void" :
+    def MakeShell(self, *args):
         """
         :param Sh:
         :type Sh: TopoDS_Shape &
@@ -774,7 +869,7 @@ class TopOpeBRepDS_BuildTool(object):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_BuildTool_MakeShell(self, *args)
 
-    def MakeSolid(self, *args) -> "void" :
+    def MakeSolid(self, *args):
         """
         :param S:
         :type S: TopoDS_Shape &
@@ -783,7 +878,7 @@ class TopOpeBRepDS_BuildTool(object):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_BuildTool_MakeSolid(self, *args)
 
-    def CopyEdge(self, *args) -> "void" :
+    def CopyEdge(self, *args):
         """
         * Make an edge <Eou> with the curve of the edge <Ein>
 
@@ -796,7 +891,7 @@ class TopOpeBRepDS_BuildTool(object):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_BuildTool_CopyEdge(self, *args)
 
-    def GetOrientedEdgeVertices(self, *args) -> "void" :
+    def GetOrientedEdgeVertices(self, *args):
         """
         :param E:
         :type E: TopoDS_Edge &
@@ -813,7 +908,7 @@ class TopOpeBRepDS_BuildTool(object):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_BuildTool_GetOrientedEdgeVertices(self, *args)
 
-    def UpdateEdgeCurveTol(self, *args) -> "void" :
+    def UpdateEdgeCurveTol(self, *args):
         """
         :param F1:
         :type F1: TopoDS_Face &
@@ -840,14 +935,14 @@ class TopOpeBRepDS_BuildTool(object):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_BuildTool_UpdateEdgeCurveTol(self, *args)
 
-    def ApproxCurves(self, *args) -> "void" :
+    def ApproxCurves(self, *args):
         """
         :param C:
         :type C: TopOpeBRepDS_Curve &
         :param E:
         :type E: TopoDS_Edge &
         :param inewC:
-        :type inewC: int &
+        :type inewC: Standard_Integer &
         :param HDS:
         :type HDS: Handle_TopOpeBRepDS_HDataStructure &
         :rtype: None
@@ -855,7 +950,7 @@ class TopOpeBRepDS_BuildTool(object):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_BuildTool_ApproxCurves(self, *args)
 
-    def ComputePCurves(self, *args) -> "void" :
+    def ComputePCurves(self, *args):
         """
         :param C:
         :type C: TopOpeBRepDS_Curve &
@@ -874,7 +969,7 @@ class TopOpeBRepDS_BuildTool(object):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_BuildTool_ComputePCurves(self, *args)
 
-    def PutPCurves(self, *args) -> "void" :
+    def PutPCurves(self, *args):
         """
         :param newC:
         :type newC: TopOpeBRepDS_Curve &
@@ -889,7 +984,7 @@ class TopOpeBRepDS_BuildTool(object):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_BuildTool_PutPCurves(self, *args)
 
-    def RecomputeCurves(self, *args) -> "void" :
+    def RecomputeCurves(self, *args):
         """
         :param C:
         :type C: TopOpeBRepDS_Curve &
@@ -898,7 +993,7 @@ class TopOpeBRepDS_BuildTool(object):
         :param E:
         :type E: TopoDS_Edge &
         :param inewC:
-        :type inewC: int &
+        :type inewC: Standard_Integer &
         :param HDS:
         :type HDS: Handle_TopOpeBRepDS_HDataStructure &
         :rtype: None
@@ -906,7 +1001,7 @@ class TopOpeBRepDS_BuildTool(object):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_BuildTool_RecomputeCurves(self, *args)
 
-    def CopyFace(self, *args) -> "void" :
+    def CopyFace(self, *args):
         """
         * Make a face <Fou> with the surface of the face <Fin>
 
@@ -919,7 +1014,7 @@ class TopOpeBRepDS_BuildTool(object):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_BuildTool_CopyFace(self, *args)
 
-    def AddEdgeVertex(self, *args) -> "void" :
+    def AddEdgeVertex(self, *args):
         """
         :param Ein:
         :type Ein: TopoDS_Shape &
@@ -938,7 +1033,7 @@ class TopOpeBRepDS_BuildTool(object):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_BuildTool_AddEdgeVertex(self, *args)
 
-    def AddWireEdge(self, *args) -> "void" :
+    def AddWireEdge(self, *args):
         """
         :param W:
         :type W: TopoDS_Shape &
@@ -949,7 +1044,7 @@ class TopOpeBRepDS_BuildTool(object):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_BuildTool_AddWireEdge(self, *args)
 
-    def AddFaceWire(self, *args) -> "void" :
+    def AddFaceWire(self, *args):
         """
         :param F:
         :type F: TopoDS_Shape &
@@ -960,7 +1055,7 @@ class TopOpeBRepDS_BuildTool(object):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_BuildTool_AddFaceWire(self, *args)
 
-    def AddShellFace(self, *args) -> "void" :
+    def AddShellFace(self, *args):
         """
         :param Sh:
         :type Sh: TopoDS_Shape &
@@ -971,7 +1066,7 @@ class TopOpeBRepDS_BuildTool(object):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_BuildTool_AddShellFace(self, *args)
 
-    def AddSolidShell(self, *args) -> "void" :
+    def AddSolidShell(self, *args):
         """
         :param S:
         :type S: TopoDS_Shape &
@@ -982,7 +1077,7 @@ class TopOpeBRepDS_BuildTool(object):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_BuildTool_AddSolidShell(self, *args)
 
-    def Range(self, *args) -> "void" :
+    def Range(self, *args):
         """
         * Sets the range of edge <E>.
 
@@ -997,7 +1092,7 @@ class TopOpeBRepDS_BuildTool(object):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_BuildTool_Range(self, *args)
 
-    def UpdateEdge(self, *args) -> "void" :
+    def UpdateEdge(self, *args):
         """
         * Sets the range of edge <Eou> from <Ein> only when <Ein> has a closed geometry.
 
@@ -1010,7 +1105,7 @@ class TopOpeBRepDS_BuildTool(object):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_BuildTool_UpdateEdge(self, *args)
 
-    def Parameter(self, *args) -> "void" :
+    def Parameter(self, *args):
         """
         * Sets the parameter <P> for the vertex <V> on the edge <E>.
 
@@ -1035,7 +1130,7 @@ class TopOpeBRepDS_BuildTool(object):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_BuildTool_Parameter(self, *args)
 
-    def Curve3D(self, *args) -> "void" :
+    def Curve3D(self, *args):
         """
         * Sets the curve <C> for the edge <E>
 
@@ -1050,7 +1145,7 @@ class TopOpeBRepDS_BuildTool(object):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_BuildTool_Curve3D(self, *args)
 
-    def PCurve(self, *args) -> "void" :
+    def PCurve(self, *args):
         """
         * Sets the pcurve <C> for the edge <E> on the face <F>. If OverWrite is True the old pcurve if there is one is overwritten, else the two pcurves are set.
 
@@ -1075,7 +1170,7 @@ class TopOpeBRepDS_BuildTool(object):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_BuildTool_PCurve(self, *args)
 
-    def Orientation(self, *args) -> "TopAbs_Orientation" :
+    def Orientation(self, *args):
         """
         :param S:
         :type S: TopoDS_Shape &
@@ -1090,7 +1185,7 @@ class TopOpeBRepDS_BuildTool(object):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_BuildTool_Orientation(self, *args)
 
-    def Closed(self, *args) -> "void" :
+    def Closed(self, *args):
         """
         :param S:
         :type S: TopoDS_Shape &
@@ -1101,14 +1196,14 @@ class TopOpeBRepDS_BuildTool(object):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_BuildTool_Closed(self, *args)
 
-    def Approximation(self, *args) -> "Standard_Boolean" :
+    def Approximation(self):
         """
         :rtype: bool
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_BuildTool_Approximation(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_BuildTool_Approximation(self)
 
-    def UpdateSurface(self, *args) -> "void" :
+    def UpdateSurface(self, *args):
         """
         :param F:
         :type F: TopoDS_Shape &
@@ -1127,7 +1222,7 @@ class TopOpeBRepDS_BuildTool(object):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_BuildTool_UpdateSurface(self, *args)
 
-    def OverWrite(self, *args) -> "void" :
+    def OverWrite(self, *args):
         """
         :rtype: bool
 
@@ -1138,7 +1233,7 @@ class TopOpeBRepDS_BuildTool(object):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_BuildTool_OverWrite(self, *args)
 
-    def Translate(self, *args) -> "void" :
+    def Translate(self, *args):
         """
         :rtype: bool
 
@@ -1206,16 +1301,16 @@ class TopOpeBRepDS_Check(OCC.MMgt.MMgt_TShared):
 
         """
         _TopOpeBRepDS.TopOpeBRepDS_Check_swiginit(self,_TopOpeBRepDS.new_TopOpeBRepDS_Check(*args))
-    def ChkIntg(self, *args) -> "Standard_Boolean" :
+    def ChkIntg(self):
         """
         * Check integrition of DS
 
         :rtype: bool
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_Check_ChkIntg(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_Check_ChkIntg(self)
 
-    def ChkIntgInterf(self, *args) -> "Standard_Boolean" :
+    def ChkIntgInterf(self, *args):
         """
         * Check integrition of interferences (les supports et les geometries de LI)
 
@@ -1226,12 +1321,12 @@ class TopOpeBRepDS_Check(OCC.MMgt.MMgt_TShared):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_Check_ChkIntgInterf(self, *args)
 
-    def CheckDS(self, *args) -> "Standard_Boolean" :
+    def CheckDS(self, *args):
         """
         * Verifie que le ieme element de la DS existe, et pour un K de type topologique, verifie qu'il est du bon type (VERTEX, EDGE, WIRE, FACE, SHELL ou SOLID)
 
         :param i:
-        :type i: int
+        :type i: Standard_Integer
         :param K:
         :type K: TopOpeBRepDS_Kind
         :rtype: bool
@@ -1239,16 +1334,16 @@ class TopOpeBRepDS_Check(OCC.MMgt.MMgt_TShared):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_Check_CheckDS(self, *args)
 
-    def ChkIntgSamDom(self, *args) -> "Standard_Boolean" :
+    def ChkIntgSamDom(self):
         """
         * Check integrition des champs SameDomain de la DS
 
         :rtype: bool
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_Check_ChkIntgSamDom(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_Check_ChkIntgSamDom(self)
 
-    def CheckShapes(self, *args) -> "Standard_Boolean" :
+    def CheckShapes(self, *args):
         """
         * Verifie que les Shapes existent bien dans la DS Utile pour les Shapes SameDomain si la liste est vide, renvoie vrai
 
@@ -1259,34 +1354,34 @@ class TopOpeBRepDS_Check(OCC.MMgt.MMgt_TShared):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_Check_CheckShapes(self, *args)
 
-    def OneVertexOnPnt(self, *args) -> "Standard_Boolean" :
+    def OneVertexOnPnt(self):
         """
         * Verifie que les Vertex non SameDomain sont bien nonSameDomain, que les vertex sameDomain sont bien SameDomain, que les Points sont non confondus ni entre eux, ni avec des Vertex.
 
         :rtype: bool
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_Check_OneVertexOnPnt(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_Check_OneVertexOnPnt(self)
 
-    def HDS(self, *args) -> "Handle_TopOpeBRepDS_HDataStructure const &" :
+    def HDS(self):
         """
         :rtype: Handle_TopOpeBRepDS_HDataStructure
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_Check_HDS(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_Check_HDS(self)
 
-    def ChangeHDS(self, *args) -> "Handle_TopOpeBRepDS_HDataStructure &" :
+    def ChangeHDS(self):
         """
         :rtype: Handle_TopOpeBRepDS_HDataStructure
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_Check_ChangeHDS(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_Check_ChangeHDS(self)
 
-    def PrintIntgToString(self) -> "std::string" :
+    def PrintIntgToString(self):
         """PrintIntgToString(TopOpeBRepDS_Check self) -> std::string"""
         return _TopOpeBRepDS.TopOpeBRepDS_Check_PrintIntgToString(self)
 
-    def Print(self, *args) -> "Standard_OStream &" :
+    def Print(self, *args):
         """
         * Prints the name of CheckStatus <stat> as a String
 
@@ -1299,7 +1394,7 @@ class TopOpeBRepDS_Check(OCC.MMgt.MMgt_TShared):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_Check_Print(self, *args)
 
-    def PrintShape(self, *args) -> "Standard_OStream &" :
+    def PrintShape(self, *args):
         """
         * Prints the name of CheckStatus <stat> as a String
 
@@ -1312,7 +1407,7 @@ class TopOpeBRepDS_Check(OCC.MMgt.MMgt_TShared):
         * Prints the name of CheckStatus <stat> as a String
 
         :param index:
-        :type index: int
+        :type index: Standard_Integer
         :param S:
         :type S: Standard_OStream &
         :rtype: Standard_OStream
@@ -1320,11 +1415,11 @@ class TopOpeBRepDS_Check(OCC.MMgt.MMgt_TShared):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_Check_PrintShape(self, *args)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(TopOpeBRepDS_Check self)"""
         return _TopOpeBRepDS.TopOpeBRepDS_Check__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_TopOpeBRepDS_Check" :
+    def GetHandle(self):
         """GetHandle(TopOpeBRepDS_Check self) -> Handle_TopOpeBRepDS_Check"""
         return _TopOpeBRepDS.TopOpeBRepDS_Check_GetHandle(self)
 
@@ -1373,7 +1468,7 @@ Handle_TopOpeBRepDS_Check._kill_pointed = new_instancemethod(_TopOpeBRepDS.Handl
 Handle_TopOpeBRepDS_Check_swigregister = _TopOpeBRepDS.Handle_TopOpeBRepDS_Check_swigregister
 Handle_TopOpeBRepDS_Check_swigregister(Handle_TopOpeBRepDS_Check)
 
-def Handle_TopOpeBRepDS_Check_DownCast(*args) -> "Handle_TopOpeBRepDS_Check const" :
+def Handle_TopOpeBRepDS_Check_DownCast(*args):
   return _TopOpeBRepDS.Handle_TopOpeBRepDS_Check_DownCast(*args)
 Handle_TopOpeBRepDS_Check_DownCast = _TopOpeBRepDS.Handle_TopOpeBRepDS_Check_DownCast
 
@@ -1392,9 +1487,17 @@ class TopOpeBRepDS_Curve(object):
         :type IsWalk: bool
         :rtype: None
 
+        :param P:
+        :type P: Handle_Geom_Curve &
+        :param T:
+        :type T: float
+        :param IsWalk: default value is Standard_False
+        :type IsWalk: bool
+        :rtype: None
+
         """
         _TopOpeBRepDS.TopOpeBRepDS_Curve_swiginit(self,_TopOpeBRepDS.new_TopOpeBRepDS_Curve(*args))
-    def DefineCurve(self, *args) -> "void" :
+    def DefineCurve(self, *args):
         """
         :param P:
         :type P: Handle_Geom_Curve &
@@ -1407,7 +1510,7 @@ class TopOpeBRepDS_Curve(object):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_Curve_DefineCurve(self, *args)
 
-    def SetSCI(self, *args) -> "void" :
+    def SetSCI(self, *args):
         """
         * define the interferences face/curve.
 
@@ -1420,21 +1523,21 @@ class TopOpeBRepDS_Curve(object):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_Curve_SetSCI(self, *args)
 
-    def GetSCI1(self, *args) -> "Handle_TopOpeBRepDS_Interference const &" :
+    def GetSCI1(self):
         """
         :rtype: Handle_TopOpeBRepDS_Interference
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_Curve_GetSCI1(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_Curve_GetSCI1(self)
 
-    def GetSCI2(self, *args) -> "Handle_TopOpeBRepDS_Interference const &" :
+    def GetSCI2(self):
         """
         :rtype: Handle_TopOpeBRepDS_Interference
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_Curve_GetSCI2(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_Curve_GetSCI2(self)
 
-    def GetSCI(self, *args) -> "void" :
+    def GetSCI(self, *args):
         """
         :param I1:
         :type I1: Handle_TopOpeBRepDS_Interference &
@@ -1445,7 +1548,7 @@ class TopOpeBRepDS_Curve(object):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_Curve_GetSCI(self, *args)
 
-    def SetShapes(self, *args) -> "void" :
+    def SetShapes(self, *args):
         """
         :param S1:
         :type S1: TopoDS_Shape &
@@ -1456,7 +1559,7 @@ class TopOpeBRepDS_Curve(object):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_Curve_SetShapes(self, *args)
 
-    def GetShapes(self, *args) -> "void" :
+    def GetShapes(self, *args):
         """
         :param S1:
         :type S1: TopoDS_Shape &
@@ -1467,35 +1570,35 @@ class TopOpeBRepDS_Curve(object):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_Curve_GetShapes(self, *args)
 
-    def Shape1(self, *args) -> "TopoDS_Shape const" :
+    def Shape1(self):
         """
         :rtype: TopoDS_Shape
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_Curve_Shape1(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_Curve_Shape1(self)
 
-    def ChangeShape1(self, *args) -> "TopoDS_Shape" :
+    def ChangeShape1(self):
         """
         :rtype: TopoDS_Shape
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_Curve_ChangeShape1(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_Curve_ChangeShape1(self)
 
-    def Shape2(self, *args) -> "TopoDS_Shape const" :
+    def Shape2(self):
         """
         :rtype: TopoDS_Shape
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_Curve_Shape2(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_Curve_Shape2(self)
 
-    def ChangeShape2(self, *args) -> "TopoDS_Shape" :
+    def ChangeShape2(self):
         """
         :rtype: TopoDS_Shape
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_Curve_ChangeShape2(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_Curve_ChangeShape2(self)
 
-    def SetRange(self, *args) -> "void" :
+    def SetRange(self, *args):
         """
         :param First:
         :type First: float
@@ -1506,7 +1609,7 @@ class TopOpeBRepDS_Curve(object):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_Curve_SetRange(self, *args)
 
-    def Range(self, *args) -> "Standard_Boolean" :
+    def Range(self):
         """
         :param First:
         :type First: float &
@@ -1515,9 +1618,9 @@ class TopOpeBRepDS_Curve(object):
         :rtype: bool
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_Curve_Range(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_Curve_Range(self)
 
-    def Tolerance(self, *args) -> "Standard_Real" :
+    def Tolerance(self, *args):
         """
         * Update the tolerance
 
@@ -1530,14 +1633,14 @@ class TopOpeBRepDS_Curve(object):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_Curve_Tolerance(self, *args)
 
-    def ChangeCurve(self, *args) -> "Handle_Geom_Curve &" :
+    def ChangeCurve(self):
         """
         :rtype: Handle_Geom_Curve
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_Curve_ChangeCurve(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_Curve_ChangeCurve(self)
 
-    def Curve(self, *args) -> "void" :
+    def Curve(self, *args):
         """
         :rtype: Handle_Geom_Curve
 
@@ -1550,7 +1653,7 @@ class TopOpeBRepDS_Curve(object):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_Curve_Curve(self, *args)
 
-    def Curve1(self, *args) -> "void" :
+    def Curve1(self, *args):
         """
         :rtype: Handle_Geom2d_Curve
 
@@ -1561,7 +1664,7 @@ class TopOpeBRepDS_Curve(object):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_Curve_Curve1(self, *args)
 
-    def Curve2(self, *args) -> "void" :
+    def Curve2(self, *args):
         """
         :rtype: Handle_Geom2d_Curve
 
@@ -1572,14 +1675,14 @@ class TopOpeBRepDS_Curve(object):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_Curve_Curve2(self, *args)
 
-    def IsWalk(self, *args) -> "Standard_Boolean" :
+    def IsWalk(self):
         """
         :rtype: bool
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_Curve_IsWalk(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_Curve_IsWalk(self)
 
-    def ChangeIsWalk(self, *args) -> "void" :
+    def ChangeIsWalk(self, *args):
         """
         :param B:
         :type B: bool
@@ -1588,14 +1691,14 @@ class TopOpeBRepDS_Curve(object):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_Curve_ChangeIsWalk(self, *args)
 
-    def Keep(self, *args) -> "Standard_Boolean" :
+    def Keep(self):
         """
         :rtype: bool
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_Curve_Keep(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_Curve_Keep(self)
 
-    def ChangeKeep(self, *args) -> "void" :
+    def ChangeKeep(self, *args):
         """
         :param B:
         :type B: bool
@@ -1604,44 +1707,52 @@ class TopOpeBRepDS_Curve(object):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_Curve_ChangeKeep(self, *args)
 
-    def Mother(self, *args) -> "Standard_Integer" :
+    def Mother(self):
         """
         :rtype: int
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_Curve_Mother(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_Curve_Mother(self)
 
-    def ChangeMother(self, *args) -> "void" :
+    def ChangeMother(self, *args):
         """
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :rtype: None
 
         """
         return _TopOpeBRepDS.TopOpeBRepDS_Curve_ChangeMother(self, *args)
 
-    def DSIndex(self, *args) -> "Standard_Integer" :
+    def DSIndex(self):
         """
         :rtype: int
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_Curve_DSIndex(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_Curve_DSIndex(self)
 
-    def ChangeDSIndex(self, *args) -> "void" :
+    def ChangeDSIndex(self, *args):
         """
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :rtype: None
 
         """
         return _TopOpeBRepDS.TopOpeBRepDS_Curve_ChangeDSIndex(self, *args)
 
-    def Dump(self, *args) -> "Standard_OStream &" :
+    def Dump(self, *args):
         """
         :param OS:
         :type OS: Standard_OStream &
         :param index:
-        :type index: int
+        :type index: Standard_Integer
+        :param compact: default value is Standard_True
+        :type compact: bool
+        :rtype: Standard_OStream
+
+        :param OS:
+        :type OS: Standard_OStream &
+        :param index:
+        :type index: Standard_Integer
         :param compact: default value is Standard_True
         :type compact: bool
         :rtype: Standard_OStream
@@ -1701,10 +1812,22 @@ class TopOpeBRepDS_CurveExplorer(object):
         :type FindOnlyKeep: bool
         :rtype: None
 
+        :param DS:
+        :type DS: TopOpeBRepDS_DataStructure &
+        :param FindOnlyKeep: default value is Standard_True
+        :type FindOnlyKeep: bool
+        :rtype: None
+
         """
         _TopOpeBRepDS.TopOpeBRepDS_CurveExplorer_swiginit(self,_TopOpeBRepDS.new_TopOpeBRepDS_CurveExplorer(*args))
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
+        :param DS:
+        :type DS: TopOpeBRepDS_DataStructure &
+        :param FindOnlyKeep: default value is Standard_True
+        :type FindOnlyKeep: bool
+        :rtype: None
+
         :param DS:
         :type DS: TopOpeBRepDS_DataStructure &
         :param FindOnlyKeep: default value is Standard_True
@@ -1714,62 +1837,62 @@ class TopOpeBRepDS_CurveExplorer(object):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_CurveExplorer_Init(self, *args)
 
-    def More(self, *args) -> "Standard_Boolean" :
+    def More(self):
         """
         :rtype: bool
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_CurveExplorer_More(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_CurveExplorer_More(self)
 
-    def Next(self, *args) -> "void" :
+    def Next(self):
         """
         :rtype: None
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_CurveExplorer_Next(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_CurveExplorer_Next(self)
 
-    def IsCurve(self, *args) -> "Standard_Boolean" :
+    def IsCurve(self, *args):
         """
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :rtype: bool
 
         """
         return _TopOpeBRepDS.TopOpeBRepDS_CurveExplorer_IsCurve(self, *args)
 
-    def IsCurveKeep(self, *args) -> "Standard_Boolean" :
+    def IsCurveKeep(self, *args):
         """
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :rtype: bool
 
         """
         return _TopOpeBRepDS.TopOpeBRepDS_CurveExplorer_IsCurveKeep(self, *args)
 
-    def Curve(self, *args) -> "TopOpeBRepDS_Curve const &" :
+    def Curve(self, *args):
         """
         :rtype: TopOpeBRepDS_Curve
 
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :rtype: TopOpeBRepDS_Curve
 
         """
         return _TopOpeBRepDS.TopOpeBRepDS_CurveExplorer_Curve(self, *args)
 
-    def NbCurve(self, *args) -> "Standard_Integer" :
+    def NbCurve(self):
         """
         :rtype: int
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_CurveExplorer_NbCurve(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_CurveExplorer_NbCurve(self)
 
-    def Index(self, *args) -> "Standard_Integer" :
+    def Index(self):
         """
         :rtype: int
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_CurveExplorer_Index(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_CurveExplorer_Index(self)
 
     def __del__(self):
     	try:
@@ -1804,7 +1927,7 @@ class TopOpeBRepDS_DataMapIteratorOfDataMapOfCheckStatus(OCC.TCollection.TCollec
 
         """
         _TopOpeBRepDS.TopOpeBRepDS_DataMapIteratorOfDataMapOfCheckStatus_swiginit(self,_TopOpeBRepDS.new_TopOpeBRepDS_DataMapIteratorOfDataMapOfCheckStatus(*args))
-    def Initialize(self, *args) -> "void" :
+    def Initialize(self, *args):
         """
         :param aMap:
         :type aMap: TopOpeBRepDS_DataMapOfCheckStatus &
@@ -1813,19 +1936,19 @@ class TopOpeBRepDS_DataMapIteratorOfDataMapOfCheckStatus(OCC.TCollection.TCollec
         """
         return _TopOpeBRepDS.TopOpeBRepDS_DataMapIteratorOfDataMapOfCheckStatus_Initialize(self, *args)
 
-    def Key(self, *args) -> "Standard_Integer const &" :
+    def Key(self):
         """
         :rtype: int
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_DataMapIteratorOfDataMapOfCheckStatus_Key(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_DataMapIteratorOfDataMapOfCheckStatus_Key(self)
 
-    def Value(self, *args) -> "TopOpeBRepDS_CheckStatus const &" :
+    def Value(self):
         """
         :rtype: TopOpeBRepDS_CheckStatus
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_DataMapIteratorOfDataMapOfCheckStatus_Value(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_DataMapIteratorOfDataMapOfCheckStatus_Value(self)
 
     def __del__(self):
     	try:
@@ -1855,7 +1978,7 @@ class TopOpeBRepDS_DataMapIteratorOfDataMapOfIntegerListOfInterference(OCC.TColl
 
         """
         _TopOpeBRepDS.TopOpeBRepDS_DataMapIteratorOfDataMapOfIntegerListOfInterference_swiginit(self,_TopOpeBRepDS.new_TopOpeBRepDS_DataMapIteratorOfDataMapOfIntegerListOfInterference(*args))
-    def Initialize(self, *args) -> "void" :
+    def Initialize(self, *args):
         """
         :param aMap:
         :type aMap: TopOpeBRepDS_DataMapOfIntegerListOfInterference &
@@ -1864,19 +1987,19 @@ class TopOpeBRepDS_DataMapIteratorOfDataMapOfIntegerListOfInterference(OCC.TColl
         """
         return _TopOpeBRepDS.TopOpeBRepDS_DataMapIteratorOfDataMapOfIntegerListOfInterference_Initialize(self, *args)
 
-    def Key(self, *args) -> "Standard_Integer const &" :
+    def Key(self):
         """
         :rtype: int
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_DataMapIteratorOfDataMapOfIntegerListOfInterference_Key(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_DataMapIteratorOfDataMapOfIntegerListOfInterference_Key(self)
 
-    def Value(self, *args) -> "TopOpeBRepDS_ListOfInterference const &" :
+    def Value(self):
         """
         :rtype: TopOpeBRepDS_ListOfInterference
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_DataMapIteratorOfDataMapOfIntegerListOfInterference_Value(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_DataMapIteratorOfDataMapOfIntegerListOfInterference_Value(self)
 
     def __del__(self):
     	try:
@@ -1906,7 +2029,7 @@ class TopOpeBRepDS_DataMapIteratorOfDataMapOfInterferenceListOfInterference(OCC.
 
         """
         _TopOpeBRepDS.TopOpeBRepDS_DataMapIteratorOfDataMapOfInterferenceListOfInterference_swiginit(self,_TopOpeBRepDS.new_TopOpeBRepDS_DataMapIteratorOfDataMapOfInterferenceListOfInterference(*args))
-    def Initialize(self, *args) -> "void" :
+    def Initialize(self, *args):
         """
         :param aMap:
         :type aMap: TopOpeBRepDS_DataMapOfInterferenceListOfInterference &
@@ -1915,19 +2038,19 @@ class TopOpeBRepDS_DataMapIteratorOfDataMapOfInterferenceListOfInterference(OCC.
         """
         return _TopOpeBRepDS.TopOpeBRepDS_DataMapIteratorOfDataMapOfInterferenceListOfInterference_Initialize(self, *args)
 
-    def Key(self, *args) -> "Handle_TopOpeBRepDS_Interference const &" :
+    def Key(self):
         """
         :rtype: Handle_TopOpeBRepDS_Interference
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_DataMapIteratorOfDataMapOfInterferenceListOfInterference_Key(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_DataMapIteratorOfDataMapOfInterferenceListOfInterference_Key(self)
 
-    def Value(self, *args) -> "TopOpeBRepDS_ListOfInterference const &" :
+    def Value(self):
         """
         :rtype: TopOpeBRepDS_ListOfInterference
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_DataMapIteratorOfDataMapOfInterferenceListOfInterference_Value(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_DataMapIteratorOfDataMapOfInterferenceListOfInterference_Value(self)
 
     def __del__(self):
     	try:
@@ -1957,7 +2080,7 @@ class TopOpeBRepDS_DataMapIteratorOfDataMapOfInterferenceShape(OCC.TCollection.T
 
         """
         _TopOpeBRepDS.TopOpeBRepDS_DataMapIteratorOfDataMapOfInterferenceShape_swiginit(self,_TopOpeBRepDS.new_TopOpeBRepDS_DataMapIteratorOfDataMapOfInterferenceShape(*args))
-    def Initialize(self, *args) -> "void" :
+    def Initialize(self, *args):
         """
         :param aMap:
         :type aMap: TopOpeBRepDS_DataMapOfInterferenceShape &
@@ -1966,19 +2089,19 @@ class TopOpeBRepDS_DataMapIteratorOfDataMapOfInterferenceShape(OCC.TCollection.T
         """
         return _TopOpeBRepDS.TopOpeBRepDS_DataMapIteratorOfDataMapOfInterferenceShape_Initialize(self, *args)
 
-    def Key(self, *args) -> "Handle_TopOpeBRepDS_Interference const &" :
+    def Key(self):
         """
         :rtype: Handle_TopOpeBRepDS_Interference
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_DataMapIteratorOfDataMapOfInterferenceShape_Key(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_DataMapIteratorOfDataMapOfInterferenceShape_Key(self)
 
-    def Value(self, *args) -> "TopoDS_Shape const" :
+    def Value(self):
         """
         :rtype: TopoDS_Shape
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_DataMapIteratorOfDataMapOfInterferenceShape_Value(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_DataMapIteratorOfDataMapOfInterferenceShape_Value(self)
 
     def __del__(self):
     	try:
@@ -2008,7 +2131,7 @@ class TopOpeBRepDS_DataMapIteratorOfDataMapOfShapeListOfShapeOn1State(OCC.TColle
 
         """
         _TopOpeBRepDS.TopOpeBRepDS_DataMapIteratorOfDataMapOfShapeListOfShapeOn1State_swiginit(self,_TopOpeBRepDS.new_TopOpeBRepDS_DataMapIteratorOfDataMapOfShapeListOfShapeOn1State(*args))
-    def Initialize(self, *args) -> "void" :
+    def Initialize(self, *args):
         """
         :param aMap:
         :type aMap: TopOpeBRepDS_DataMapOfShapeListOfShapeOn1State &
@@ -2017,19 +2140,19 @@ class TopOpeBRepDS_DataMapIteratorOfDataMapOfShapeListOfShapeOn1State(OCC.TColle
         """
         return _TopOpeBRepDS.TopOpeBRepDS_DataMapIteratorOfDataMapOfShapeListOfShapeOn1State_Initialize(self, *args)
 
-    def Key(self, *args) -> "TopoDS_Shape const" :
+    def Key(self):
         """
         :rtype: TopoDS_Shape
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_DataMapIteratorOfDataMapOfShapeListOfShapeOn1State_Key(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_DataMapIteratorOfDataMapOfShapeListOfShapeOn1State_Key(self)
 
-    def Value(self, *args) -> "TopOpeBRepDS_ListOfShapeOn1State const &" :
+    def Value(self):
         """
         :rtype: TopOpeBRepDS_ListOfShapeOn1State
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_DataMapIteratorOfDataMapOfShapeListOfShapeOn1State_Value(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_DataMapIteratorOfDataMapOfShapeListOfShapeOn1State_Value(self)
 
     def __del__(self):
     	try:
@@ -2059,7 +2182,7 @@ class TopOpeBRepDS_DataMapIteratorOfDataMapOfShapeState(OCC.TCollection.TCollect
 
         """
         _TopOpeBRepDS.TopOpeBRepDS_DataMapIteratorOfDataMapOfShapeState_swiginit(self,_TopOpeBRepDS.new_TopOpeBRepDS_DataMapIteratorOfDataMapOfShapeState(*args))
-    def Initialize(self, *args) -> "void" :
+    def Initialize(self, *args):
         """
         :param aMap:
         :type aMap: TopOpeBRepDS_DataMapOfShapeState &
@@ -2068,19 +2191,19 @@ class TopOpeBRepDS_DataMapIteratorOfDataMapOfShapeState(OCC.TCollection.TCollect
         """
         return _TopOpeBRepDS.TopOpeBRepDS_DataMapIteratorOfDataMapOfShapeState_Initialize(self, *args)
 
-    def Key(self, *args) -> "TopoDS_Shape const" :
+    def Key(self):
         """
         :rtype: TopoDS_Shape
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_DataMapIteratorOfDataMapOfShapeState_Key(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_DataMapIteratorOfDataMapOfShapeState_Key(self)
 
-    def Value(self, *args) -> "TopAbs_State const &" :
+    def Value(self):
         """
         :rtype: TopAbs_State
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_DataMapIteratorOfDataMapOfShapeState_Value(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_DataMapIteratorOfDataMapOfShapeState_Value(self)
 
     def __del__(self):
     	try:
@@ -2110,7 +2233,7 @@ class TopOpeBRepDS_DataMapIteratorOfMapOfCurve(OCC.TCollection.TCollection_Basic
 
         """
         _TopOpeBRepDS.TopOpeBRepDS_DataMapIteratorOfMapOfCurve_swiginit(self,_TopOpeBRepDS.new_TopOpeBRepDS_DataMapIteratorOfMapOfCurve(*args))
-    def Initialize(self, *args) -> "void" :
+    def Initialize(self, *args):
         """
         :param aMap:
         :type aMap: TopOpeBRepDS_MapOfCurve &
@@ -2119,19 +2242,19 @@ class TopOpeBRepDS_DataMapIteratorOfMapOfCurve(OCC.TCollection.TCollection_Basic
         """
         return _TopOpeBRepDS.TopOpeBRepDS_DataMapIteratorOfMapOfCurve_Initialize(self, *args)
 
-    def Key(self, *args) -> "Standard_Integer const &" :
+    def Key(self):
         """
         :rtype: int
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_DataMapIteratorOfMapOfCurve_Key(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_DataMapIteratorOfMapOfCurve_Key(self)
 
-    def Value(self, *args) -> "TopOpeBRepDS_CurveData const &" :
+    def Value(self):
         """
         :rtype: TopOpeBRepDS_CurveData
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_DataMapIteratorOfMapOfCurve_Value(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_DataMapIteratorOfMapOfCurve_Value(self)
 
     def __del__(self):
     	try:
@@ -2161,7 +2284,7 @@ class TopOpeBRepDS_DataMapIteratorOfMapOfIntegerShapeData(OCC.TCollection.TColle
 
         """
         _TopOpeBRepDS.TopOpeBRepDS_DataMapIteratorOfMapOfIntegerShapeData_swiginit(self,_TopOpeBRepDS.new_TopOpeBRepDS_DataMapIteratorOfMapOfIntegerShapeData(*args))
-    def Initialize(self, *args) -> "void" :
+    def Initialize(self, *args):
         """
         :param aMap:
         :type aMap: TopOpeBRepDS_MapOfIntegerShapeData &
@@ -2170,19 +2293,19 @@ class TopOpeBRepDS_DataMapIteratorOfMapOfIntegerShapeData(OCC.TCollection.TColle
         """
         return _TopOpeBRepDS.TopOpeBRepDS_DataMapIteratorOfMapOfIntegerShapeData_Initialize(self, *args)
 
-    def Key(self, *args) -> "Standard_Integer const &" :
+    def Key(self):
         """
         :rtype: int
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_DataMapIteratorOfMapOfIntegerShapeData_Key(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_DataMapIteratorOfMapOfIntegerShapeData_Key(self)
 
-    def Value(self, *args) -> "TopOpeBRepDS_ShapeData const &" :
+    def Value(self):
         """
         :rtype: TopOpeBRepDS_ShapeData
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_DataMapIteratorOfMapOfIntegerShapeData_Value(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_DataMapIteratorOfMapOfIntegerShapeData_Value(self)
 
     def __del__(self):
     	try:
@@ -2212,7 +2335,7 @@ class TopOpeBRepDS_DataMapIteratorOfMapOfPoint(OCC.TCollection.TCollection_Basic
 
         """
         _TopOpeBRepDS.TopOpeBRepDS_DataMapIteratorOfMapOfPoint_swiginit(self,_TopOpeBRepDS.new_TopOpeBRepDS_DataMapIteratorOfMapOfPoint(*args))
-    def Initialize(self, *args) -> "void" :
+    def Initialize(self, *args):
         """
         :param aMap:
         :type aMap: TopOpeBRepDS_MapOfPoint &
@@ -2221,19 +2344,19 @@ class TopOpeBRepDS_DataMapIteratorOfMapOfPoint(OCC.TCollection.TCollection_Basic
         """
         return _TopOpeBRepDS.TopOpeBRepDS_DataMapIteratorOfMapOfPoint_Initialize(self, *args)
 
-    def Key(self, *args) -> "Standard_Integer const &" :
+    def Key(self):
         """
         :rtype: int
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_DataMapIteratorOfMapOfPoint_Key(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_DataMapIteratorOfMapOfPoint_Key(self)
 
-    def Value(self, *args) -> "TopOpeBRepDS_PointData const &" :
+    def Value(self):
         """
         :rtype: TopOpeBRepDS_PointData
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_DataMapIteratorOfMapOfPoint_Value(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_DataMapIteratorOfMapOfPoint_Value(self)
 
     def __del__(self):
     	try:
@@ -2263,7 +2386,7 @@ class TopOpeBRepDS_DataMapIteratorOfMapOfSurface(OCC.TCollection.TCollection_Bas
 
         """
         _TopOpeBRepDS.TopOpeBRepDS_DataMapIteratorOfMapOfSurface_swiginit(self,_TopOpeBRepDS.new_TopOpeBRepDS_DataMapIteratorOfMapOfSurface(*args))
-    def Initialize(self, *args) -> "void" :
+    def Initialize(self, *args):
         """
         :param aMap:
         :type aMap: TopOpeBRepDS_MapOfSurface &
@@ -2272,19 +2395,19 @@ class TopOpeBRepDS_DataMapIteratorOfMapOfSurface(OCC.TCollection.TCollection_Bas
         """
         return _TopOpeBRepDS.TopOpeBRepDS_DataMapIteratorOfMapOfSurface_Initialize(self, *args)
 
-    def Key(self, *args) -> "Standard_Integer const &" :
+    def Key(self):
         """
         :rtype: int
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_DataMapIteratorOfMapOfSurface_Key(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_DataMapIteratorOfMapOfSurface_Key(self)
 
-    def Value(self, *args) -> "TopOpeBRepDS_SurfaceData const &" :
+    def Value(self):
         """
         :rtype: TopOpeBRepDS_SurfaceData
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_DataMapIteratorOfMapOfSurface_Value(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_DataMapIteratorOfMapOfSurface_Value(self)
 
     def __del__(self):
     	try:
@@ -2314,7 +2437,7 @@ class TopOpeBRepDS_DataMapIteratorOfShapeSurface(OCC.TCollection.TCollection_Bas
 
         """
         _TopOpeBRepDS.TopOpeBRepDS_DataMapIteratorOfShapeSurface_swiginit(self,_TopOpeBRepDS.new_TopOpeBRepDS_DataMapIteratorOfShapeSurface(*args))
-    def Initialize(self, *args) -> "void" :
+    def Initialize(self, *args):
         """
         :param aMap:
         :type aMap: TopOpeBRepDS_ShapeSurface &
@@ -2323,19 +2446,19 @@ class TopOpeBRepDS_DataMapIteratorOfShapeSurface(OCC.TCollection.TCollection_Bas
         """
         return _TopOpeBRepDS.TopOpeBRepDS_DataMapIteratorOfShapeSurface_Initialize(self, *args)
 
-    def Key(self, *args) -> "TopoDS_Shape const" :
+    def Key(self):
         """
         :rtype: TopoDS_Shape
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_DataMapIteratorOfShapeSurface_Key(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_DataMapIteratorOfShapeSurface_Key(self)
 
-    def Value(self, *args) -> "Handle_Geom_Surface const &" :
+    def Value(self):
         """
         :rtype: Handle_Geom_Surface
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_DataMapIteratorOfShapeSurface_Value(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_DataMapIteratorOfShapeSurface_Value(self)
 
     def __del__(self):
     	try:
@@ -2358,7 +2481,7 @@ class TopOpeBRepDS_DataMapNodeOfDataMapOfCheckStatus(OCC.TCollection.TCollection
     def __init__(self, *args): 
         """
         :param K:
-        :type K: int &
+        :type K: Standard_Integer &
         :param I:
         :type I: TopOpeBRepDS_CheckStatus &
         :param n:
@@ -2367,26 +2490,26 @@ class TopOpeBRepDS_DataMapNodeOfDataMapOfCheckStatus(OCC.TCollection.TCollection
 
         """
         _TopOpeBRepDS.TopOpeBRepDS_DataMapNodeOfDataMapOfCheckStatus_swiginit(self,_TopOpeBRepDS.new_TopOpeBRepDS_DataMapNodeOfDataMapOfCheckStatus(*args))
-    def GetKey(self) -> "Standard_Integer" :
+    def GetKey(self):
         """GetKey(TopOpeBRepDS_DataMapNodeOfDataMapOfCheckStatus self) -> Standard_Integer"""
         return _TopOpeBRepDS.TopOpeBRepDS_DataMapNodeOfDataMapOfCheckStatus_GetKey(self)
 
-    def SetKey(self, *args) -> "void" :
+    def SetKey(self, *args):
         """SetKey(TopOpeBRepDS_DataMapNodeOfDataMapOfCheckStatus self, Standard_Integer value)"""
         return _TopOpeBRepDS.TopOpeBRepDS_DataMapNodeOfDataMapOfCheckStatus_SetKey(self, *args)
 
-    def Value(self, *args) -> "TopOpeBRepDS_CheckStatus &" :
+    def Value(self):
         """
         :rtype: TopOpeBRepDS_CheckStatus
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_DataMapNodeOfDataMapOfCheckStatus_Value(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_DataMapNodeOfDataMapOfCheckStatus_Value(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(TopOpeBRepDS_DataMapNodeOfDataMapOfCheckStatus self)"""
         return _TopOpeBRepDS.TopOpeBRepDS_DataMapNodeOfDataMapOfCheckStatus__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_TopOpeBRepDS_DataMapNodeOfDataMapOfCheckStatus" :
+    def GetHandle(self):
         """GetHandle(TopOpeBRepDS_DataMapNodeOfDataMapOfCheckStatus self) -> Handle_TopOpeBRepDS_DataMapNodeOfDataMapOfCheckStatus"""
         return _TopOpeBRepDS.TopOpeBRepDS_DataMapNodeOfDataMapOfCheckStatus_GetHandle(self)
 
@@ -2427,7 +2550,7 @@ Handle_TopOpeBRepDS_DataMapNodeOfDataMapOfCheckStatus._kill_pointed = new_instan
 Handle_TopOpeBRepDS_DataMapNodeOfDataMapOfCheckStatus_swigregister = _TopOpeBRepDS.Handle_TopOpeBRepDS_DataMapNodeOfDataMapOfCheckStatus_swigregister
 Handle_TopOpeBRepDS_DataMapNodeOfDataMapOfCheckStatus_swigregister(Handle_TopOpeBRepDS_DataMapNodeOfDataMapOfCheckStatus)
 
-def Handle_TopOpeBRepDS_DataMapNodeOfDataMapOfCheckStatus_DownCast(*args) -> "Handle_TopOpeBRepDS_DataMapNodeOfDataMapOfCheckStatus const" :
+def Handle_TopOpeBRepDS_DataMapNodeOfDataMapOfCheckStatus_DownCast(*args):
   return _TopOpeBRepDS.Handle_TopOpeBRepDS_DataMapNodeOfDataMapOfCheckStatus_DownCast(*args)
 Handle_TopOpeBRepDS_DataMapNodeOfDataMapOfCheckStatus_DownCast = _TopOpeBRepDS.Handle_TopOpeBRepDS_DataMapNodeOfDataMapOfCheckStatus_DownCast
 
@@ -2437,7 +2560,7 @@ class TopOpeBRepDS_DataMapNodeOfDataMapOfIntegerListOfInterference(OCC.TCollecti
     def __init__(self, *args): 
         """
         :param K:
-        :type K: int &
+        :type K: Standard_Integer &
         :param I:
         :type I: TopOpeBRepDS_ListOfInterference &
         :param n:
@@ -2446,26 +2569,26 @@ class TopOpeBRepDS_DataMapNodeOfDataMapOfIntegerListOfInterference(OCC.TCollecti
 
         """
         _TopOpeBRepDS.TopOpeBRepDS_DataMapNodeOfDataMapOfIntegerListOfInterference_swiginit(self,_TopOpeBRepDS.new_TopOpeBRepDS_DataMapNodeOfDataMapOfIntegerListOfInterference(*args))
-    def GetKey(self) -> "Standard_Integer" :
+    def GetKey(self):
         """GetKey(TopOpeBRepDS_DataMapNodeOfDataMapOfIntegerListOfInterference self) -> Standard_Integer"""
         return _TopOpeBRepDS.TopOpeBRepDS_DataMapNodeOfDataMapOfIntegerListOfInterference_GetKey(self)
 
-    def SetKey(self, *args) -> "void" :
+    def SetKey(self, *args):
         """SetKey(TopOpeBRepDS_DataMapNodeOfDataMapOfIntegerListOfInterference self, Standard_Integer value)"""
         return _TopOpeBRepDS.TopOpeBRepDS_DataMapNodeOfDataMapOfIntegerListOfInterference_SetKey(self, *args)
 
-    def Value(self, *args) -> "TopOpeBRepDS_ListOfInterference &" :
+    def Value(self):
         """
         :rtype: TopOpeBRepDS_ListOfInterference
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_DataMapNodeOfDataMapOfIntegerListOfInterference_Value(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_DataMapNodeOfDataMapOfIntegerListOfInterference_Value(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(TopOpeBRepDS_DataMapNodeOfDataMapOfIntegerListOfInterference self)"""
         return _TopOpeBRepDS.TopOpeBRepDS_DataMapNodeOfDataMapOfIntegerListOfInterference__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_TopOpeBRepDS_DataMapNodeOfDataMapOfIntegerListOfInterference" :
+    def GetHandle(self):
         """GetHandle(TopOpeBRepDS_DataMapNodeOfDataMapOfIntegerListOfInterference self) -> Handle_TopOpeBRepDS_DataMapNodeOfDataMapOfIntegerListOfInterference"""
         return _TopOpeBRepDS.TopOpeBRepDS_DataMapNodeOfDataMapOfIntegerListOfInterference_GetHandle(self)
 
@@ -2506,7 +2629,7 @@ Handle_TopOpeBRepDS_DataMapNodeOfDataMapOfIntegerListOfInterference._kill_pointe
 Handle_TopOpeBRepDS_DataMapNodeOfDataMapOfIntegerListOfInterference_swigregister = _TopOpeBRepDS.Handle_TopOpeBRepDS_DataMapNodeOfDataMapOfIntegerListOfInterference_swigregister
 Handle_TopOpeBRepDS_DataMapNodeOfDataMapOfIntegerListOfInterference_swigregister(Handle_TopOpeBRepDS_DataMapNodeOfDataMapOfIntegerListOfInterference)
 
-def Handle_TopOpeBRepDS_DataMapNodeOfDataMapOfIntegerListOfInterference_DownCast(*args) -> "Handle_TopOpeBRepDS_DataMapNodeOfDataMapOfIntegerListOfInterference const" :
+def Handle_TopOpeBRepDS_DataMapNodeOfDataMapOfIntegerListOfInterference_DownCast(*args):
   return _TopOpeBRepDS.Handle_TopOpeBRepDS_DataMapNodeOfDataMapOfIntegerListOfInterference_DownCast(*args)
 Handle_TopOpeBRepDS_DataMapNodeOfDataMapOfIntegerListOfInterference_DownCast = _TopOpeBRepDS.Handle_TopOpeBRepDS_DataMapNodeOfDataMapOfIntegerListOfInterference_DownCast
 
@@ -2525,25 +2648,25 @@ class TopOpeBRepDS_DataMapNodeOfDataMapOfInterferenceListOfInterference(OCC.TCol
 
         """
         _TopOpeBRepDS.TopOpeBRepDS_DataMapNodeOfDataMapOfInterferenceListOfInterference_swiginit(self,_TopOpeBRepDS.new_TopOpeBRepDS_DataMapNodeOfDataMapOfInterferenceListOfInterference(*args))
-    def Key(self, *args) -> "Handle_TopOpeBRepDS_Interference &" :
+    def Key(self):
         """
         :rtype: Handle_TopOpeBRepDS_Interference
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_DataMapNodeOfDataMapOfInterferenceListOfInterference_Key(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_DataMapNodeOfDataMapOfInterferenceListOfInterference_Key(self)
 
-    def Value(self, *args) -> "TopOpeBRepDS_ListOfInterference &" :
+    def Value(self):
         """
         :rtype: TopOpeBRepDS_ListOfInterference
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_DataMapNodeOfDataMapOfInterferenceListOfInterference_Value(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_DataMapNodeOfDataMapOfInterferenceListOfInterference_Value(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(TopOpeBRepDS_DataMapNodeOfDataMapOfInterferenceListOfInterference self)"""
         return _TopOpeBRepDS.TopOpeBRepDS_DataMapNodeOfDataMapOfInterferenceListOfInterference__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_TopOpeBRepDS_DataMapNodeOfDataMapOfInterferenceListOfInterference" :
+    def GetHandle(self):
         """GetHandle(TopOpeBRepDS_DataMapNodeOfDataMapOfInterferenceListOfInterference self) -> Handle_TopOpeBRepDS_DataMapNodeOfDataMapOfInterferenceListOfInterference"""
         return _TopOpeBRepDS.TopOpeBRepDS_DataMapNodeOfDataMapOfInterferenceListOfInterference_GetHandle(self)
 
@@ -2583,7 +2706,7 @@ Handle_TopOpeBRepDS_DataMapNodeOfDataMapOfInterferenceListOfInterference._kill_p
 Handle_TopOpeBRepDS_DataMapNodeOfDataMapOfInterferenceListOfInterference_swigregister = _TopOpeBRepDS.Handle_TopOpeBRepDS_DataMapNodeOfDataMapOfInterferenceListOfInterference_swigregister
 Handle_TopOpeBRepDS_DataMapNodeOfDataMapOfInterferenceListOfInterference_swigregister(Handle_TopOpeBRepDS_DataMapNodeOfDataMapOfInterferenceListOfInterference)
 
-def Handle_TopOpeBRepDS_DataMapNodeOfDataMapOfInterferenceListOfInterference_DownCast(*args) -> "Handle_TopOpeBRepDS_DataMapNodeOfDataMapOfInterferenceListOfInterference const" :
+def Handle_TopOpeBRepDS_DataMapNodeOfDataMapOfInterferenceListOfInterference_DownCast(*args):
   return _TopOpeBRepDS.Handle_TopOpeBRepDS_DataMapNodeOfDataMapOfInterferenceListOfInterference_DownCast(*args)
 Handle_TopOpeBRepDS_DataMapNodeOfDataMapOfInterferenceListOfInterference_DownCast = _TopOpeBRepDS.Handle_TopOpeBRepDS_DataMapNodeOfDataMapOfInterferenceListOfInterference_DownCast
 
@@ -2602,25 +2725,25 @@ class TopOpeBRepDS_DataMapNodeOfDataMapOfInterferenceShape(OCC.TCollection.TColl
 
         """
         _TopOpeBRepDS.TopOpeBRepDS_DataMapNodeOfDataMapOfInterferenceShape_swiginit(self,_TopOpeBRepDS.new_TopOpeBRepDS_DataMapNodeOfDataMapOfInterferenceShape(*args))
-    def Key(self, *args) -> "Handle_TopOpeBRepDS_Interference &" :
+    def Key(self):
         """
         :rtype: Handle_TopOpeBRepDS_Interference
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_DataMapNodeOfDataMapOfInterferenceShape_Key(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_DataMapNodeOfDataMapOfInterferenceShape_Key(self)
 
-    def Value(self, *args) -> "TopoDS_Shape" :
+    def Value(self):
         """
         :rtype: TopoDS_Shape
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_DataMapNodeOfDataMapOfInterferenceShape_Value(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_DataMapNodeOfDataMapOfInterferenceShape_Value(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(TopOpeBRepDS_DataMapNodeOfDataMapOfInterferenceShape self)"""
         return _TopOpeBRepDS.TopOpeBRepDS_DataMapNodeOfDataMapOfInterferenceShape__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_TopOpeBRepDS_DataMapNodeOfDataMapOfInterferenceShape" :
+    def GetHandle(self):
         """GetHandle(TopOpeBRepDS_DataMapNodeOfDataMapOfInterferenceShape self) -> Handle_TopOpeBRepDS_DataMapNodeOfDataMapOfInterferenceShape"""
         return _TopOpeBRepDS.TopOpeBRepDS_DataMapNodeOfDataMapOfInterferenceShape_GetHandle(self)
 
@@ -2660,7 +2783,7 @@ Handle_TopOpeBRepDS_DataMapNodeOfDataMapOfInterferenceShape._kill_pointed = new_
 Handle_TopOpeBRepDS_DataMapNodeOfDataMapOfInterferenceShape_swigregister = _TopOpeBRepDS.Handle_TopOpeBRepDS_DataMapNodeOfDataMapOfInterferenceShape_swigregister
 Handle_TopOpeBRepDS_DataMapNodeOfDataMapOfInterferenceShape_swigregister(Handle_TopOpeBRepDS_DataMapNodeOfDataMapOfInterferenceShape)
 
-def Handle_TopOpeBRepDS_DataMapNodeOfDataMapOfInterferenceShape_DownCast(*args) -> "Handle_TopOpeBRepDS_DataMapNodeOfDataMapOfInterferenceShape const" :
+def Handle_TopOpeBRepDS_DataMapNodeOfDataMapOfInterferenceShape_DownCast(*args):
   return _TopOpeBRepDS.Handle_TopOpeBRepDS_DataMapNodeOfDataMapOfInterferenceShape_DownCast(*args)
 Handle_TopOpeBRepDS_DataMapNodeOfDataMapOfInterferenceShape_DownCast = _TopOpeBRepDS.Handle_TopOpeBRepDS_DataMapNodeOfDataMapOfInterferenceShape_DownCast
 
@@ -2679,25 +2802,25 @@ class TopOpeBRepDS_DataMapNodeOfDataMapOfShapeListOfShapeOn1State(OCC.TCollectio
 
         """
         _TopOpeBRepDS.TopOpeBRepDS_DataMapNodeOfDataMapOfShapeListOfShapeOn1State_swiginit(self,_TopOpeBRepDS.new_TopOpeBRepDS_DataMapNodeOfDataMapOfShapeListOfShapeOn1State(*args))
-    def Key(self, *args) -> "TopoDS_Shape" :
+    def Key(self):
         """
         :rtype: TopoDS_Shape
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_DataMapNodeOfDataMapOfShapeListOfShapeOn1State_Key(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_DataMapNodeOfDataMapOfShapeListOfShapeOn1State_Key(self)
 
-    def Value(self, *args) -> "TopOpeBRepDS_ListOfShapeOn1State &" :
+    def Value(self):
         """
         :rtype: TopOpeBRepDS_ListOfShapeOn1State
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_DataMapNodeOfDataMapOfShapeListOfShapeOn1State_Value(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_DataMapNodeOfDataMapOfShapeListOfShapeOn1State_Value(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(TopOpeBRepDS_DataMapNodeOfDataMapOfShapeListOfShapeOn1State self)"""
         return _TopOpeBRepDS.TopOpeBRepDS_DataMapNodeOfDataMapOfShapeListOfShapeOn1State__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_TopOpeBRepDS_DataMapNodeOfDataMapOfShapeListOfShapeOn1State" :
+    def GetHandle(self):
         """GetHandle(TopOpeBRepDS_DataMapNodeOfDataMapOfShapeListOfShapeOn1State self) -> Handle_TopOpeBRepDS_DataMapNodeOfDataMapOfShapeListOfShapeOn1State"""
         return _TopOpeBRepDS.TopOpeBRepDS_DataMapNodeOfDataMapOfShapeListOfShapeOn1State_GetHandle(self)
 
@@ -2737,7 +2860,7 @@ Handle_TopOpeBRepDS_DataMapNodeOfDataMapOfShapeListOfShapeOn1State._kill_pointed
 Handle_TopOpeBRepDS_DataMapNodeOfDataMapOfShapeListOfShapeOn1State_swigregister = _TopOpeBRepDS.Handle_TopOpeBRepDS_DataMapNodeOfDataMapOfShapeListOfShapeOn1State_swigregister
 Handle_TopOpeBRepDS_DataMapNodeOfDataMapOfShapeListOfShapeOn1State_swigregister(Handle_TopOpeBRepDS_DataMapNodeOfDataMapOfShapeListOfShapeOn1State)
 
-def Handle_TopOpeBRepDS_DataMapNodeOfDataMapOfShapeListOfShapeOn1State_DownCast(*args) -> "Handle_TopOpeBRepDS_DataMapNodeOfDataMapOfShapeListOfShapeOn1State const" :
+def Handle_TopOpeBRepDS_DataMapNodeOfDataMapOfShapeListOfShapeOn1State_DownCast(*args):
   return _TopOpeBRepDS.Handle_TopOpeBRepDS_DataMapNodeOfDataMapOfShapeListOfShapeOn1State_DownCast(*args)
 Handle_TopOpeBRepDS_DataMapNodeOfDataMapOfShapeListOfShapeOn1State_DownCast = _TopOpeBRepDS.Handle_TopOpeBRepDS_DataMapNodeOfDataMapOfShapeListOfShapeOn1State_DownCast
 
@@ -2756,25 +2879,25 @@ class TopOpeBRepDS_DataMapNodeOfDataMapOfShapeState(OCC.TCollection.TCollection_
 
         """
         _TopOpeBRepDS.TopOpeBRepDS_DataMapNodeOfDataMapOfShapeState_swiginit(self,_TopOpeBRepDS.new_TopOpeBRepDS_DataMapNodeOfDataMapOfShapeState(*args))
-    def Key(self, *args) -> "TopoDS_Shape" :
+    def Key(self):
         """
         :rtype: TopoDS_Shape
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_DataMapNodeOfDataMapOfShapeState_Key(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_DataMapNodeOfDataMapOfShapeState_Key(self)
 
-    def Value(self, *args) -> "TopAbs_State &" :
+    def Value(self):
         """
         :rtype: TopAbs_State
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_DataMapNodeOfDataMapOfShapeState_Value(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_DataMapNodeOfDataMapOfShapeState_Value(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(TopOpeBRepDS_DataMapNodeOfDataMapOfShapeState self)"""
         return _TopOpeBRepDS.TopOpeBRepDS_DataMapNodeOfDataMapOfShapeState__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_TopOpeBRepDS_DataMapNodeOfDataMapOfShapeState" :
+    def GetHandle(self):
         """GetHandle(TopOpeBRepDS_DataMapNodeOfDataMapOfShapeState self) -> Handle_TopOpeBRepDS_DataMapNodeOfDataMapOfShapeState"""
         return _TopOpeBRepDS.TopOpeBRepDS_DataMapNodeOfDataMapOfShapeState_GetHandle(self)
 
@@ -2814,7 +2937,7 @@ Handle_TopOpeBRepDS_DataMapNodeOfDataMapOfShapeState._kill_pointed = new_instanc
 Handle_TopOpeBRepDS_DataMapNodeOfDataMapOfShapeState_swigregister = _TopOpeBRepDS.Handle_TopOpeBRepDS_DataMapNodeOfDataMapOfShapeState_swigregister
 Handle_TopOpeBRepDS_DataMapNodeOfDataMapOfShapeState_swigregister(Handle_TopOpeBRepDS_DataMapNodeOfDataMapOfShapeState)
 
-def Handle_TopOpeBRepDS_DataMapNodeOfDataMapOfShapeState_DownCast(*args) -> "Handle_TopOpeBRepDS_DataMapNodeOfDataMapOfShapeState const" :
+def Handle_TopOpeBRepDS_DataMapNodeOfDataMapOfShapeState_DownCast(*args):
   return _TopOpeBRepDS.Handle_TopOpeBRepDS_DataMapNodeOfDataMapOfShapeState_DownCast(*args)
 Handle_TopOpeBRepDS_DataMapNodeOfDataMapOfShapeState_DownCast = _TopOpeBRepDS.Handle_TopOpeBRepDS_DataMapNodeOfDataMapOfShapeState_DownCast
 
@@ -2824,7 +2947,7 @@ class TopOpeBRepDS_DataMapNodeOfMapOfCurve(OCC.TCollection.TCollection_MapNode):
     def __init__(self, *args): 
         """
         :param K:
-        :type K: int &
+        :type K: Standard_Integer &
         :param I:
         :type I: TopOpeBRepDS_CurveData &
         :param n:
@@ -2833,26 +2956,26 @@ class TopOpeBRepDS_DataMapNodeOfMapOfCurve(OCC.TCollection.TCollection_MapNode):
 
         """
         _TopOpeBRepDS.TopOpeBRepDS_DataMapNodeOfMapOfCurve_swiginit(self,_TopOpeBRepDS.new_TopOpeBRepDS_DataMapNodeOfMapOfCurve(*args))
-    def GetKey(self) -> "Standard_Integer" :
+    def GetKey(self):
         """GetKey(TopOpeBRepDS_DataMapNodeOfMapOfCurve self) -> Standard_Integer"""
         return _TopOpeBRepDS.TopOpeBRepDS_DataMapNodeOfMapOfCurve_GetKey(self)
 
-    def SetKey(self, *args) -> "void" :
+    def SetKey(self, *args):
         """SetKey(TopOpeBRepDS_DataMapNodeOfMapOfCurve self, Standard_Integer value)"""
         return _TopOpeBRepDS.TopOpeBRepDS_DataMapNodeOfMapOfCurve_SetKey(self, *args)
 
-    def Value(self, *args) -> "TopOpeBRepDS_CurveData &" :
+    def Value(self):
         """
         :rtype: TopOpeBRepDS_CurveData
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_DataMapNodeOfMapOfCurve_Value(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_DataMapNodeOfMapOfCurve_Value(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(TopOpeBRepDS_DataMapNodeOfMapOfCurve self)"""
         return _TopOpeBRepDS.TopOpeBRepDS_DataMapNodeOfMapOfCurve__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_TopOpeBRepDS_DataMapNodeOfMapOfCurve" :
+    def GetHandle(self):
         """GetHandle(TopOpeBRepDS_DataMapNodeOfMapOfCurve self) -> Handle_TopOpeBRepDS_DataMapNodeOfMapOfCurve"""
         return _TopOpeBRepDS.TopOpeBRepDS_DataMapNodeOfMapOfCurve_GetHandle(self)
 
@@ -2893,7 +3016,7 @@ Handle_TopOpeBRepDS_DataMapNodeOfMapOfCurve._kill_pointed = new_instancemethod(_
 Handle_TopOpeBRepDS_DataMapNodeOfMapOfCurve_swigregister = _TopOpeBRepDS.Handle_TopOpeBRepDS_DataMapNodeOfMapOfCurve_swigregister
 Handle_TopOpeBRepDS_DataMapNodeOfMapOfCurve_swigregister(Handle_TopOpeBRepDS_DataMapNodeOfMapOfCurve)
 
-def Handle_TopOpeBRepDS_DataMapNodeOfMapOfCurve_DownCast(*args) -> "Handle_TopOpeBRepDS_DataMapNodeOfMapOfCurve const" :
+def Handle_TopOpeBRepDS_DataMapNodeOfMapOfCurve_DownCast(*args):
   return _TopOpeBRepDS.Handle_TopOpeBRepDS_DataMapNodeOfMapOfCurve_DownCast(*args)
 Handle_TopOpeBRepDS_DataMapNodeOfMapOfCurve_DownCast = _TopOpeBRepDS.Handle_TopOpeBRepDS_DataMapNodeOfMapOfCurve_DownCast
 
@@ -2903,7 +3026,7 @@ class TopOpeBRepDS_DataMapNodeOfMapOfIntegerShapeData(OCC.TCollection.TCollectio
     def __init__(self, *args): 
         """
         :param K:
-        :type K: int &
+        :type K: Standard_Integer &
         :param I:
         :type I: TopOpeBRepDS_ShapeData &
         :param n:
@@ -2912,26 +3035,26 @@ class TopOpeBRepDS_DataMapNodeOfMapOfIntegerShapeData(OCC.TCollection.TCollectio
 
         """
         _TopOpeBRepDS.TopOpeBRepDS_DataMapNodeOfMapOfIntegerShapeData_swiginit(self,_TopOpeBRepDS.new_TopOpeBRepDS_DataMapNodeOfMapOfIntegerShapeData(*args))
-    def GetKey(self) -> "Standard_Integer" :
+    def GetKey(self):
         """GetKey(TopOpeBRepDS_DataMapNodeOfMapOfIntegerShapeData self) -> Standard_Integer"""
         return _TopOpeBRepDS.TopOpeBRepDS_DataMapNodeOfMapOfIntegerShapeData_GetKey(self)
 
-    def SetKey(self, *args) -> "void" :
+    def SetKey(self, *args):
         """SetKey(TopOpeBRepDS_DataMapNodeOfMapOfIntegerShapeData self, Standard_Integer value)"""
         return _TopOpeBRepDS.TopOpeBRepDS_DataMapNodeOfMapOfIntegerShapeData_SetKey(self, *args)
 
-    def Value(self, *args) -> "TopOpeBRepDS_ShapeData &" :
+    def Value(self):
         """
         :rtype: TopOpeBRepDS_ShapeData
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_DataMapNodeOfMapOfIntegerShapeData_Value(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_DataMapNodeOfMapOfIntegerShapeData_Value(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(TopOpeBRepDS_DataMapNodeOfMapOfIntegerShapeData self)"""
         return _TopOpeBRepDS.TopOpeBRepDS_DataMapNodeOfMapOfIntegerShapeData__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_TopOpeBRepDS_DataMapNodeOfMapOfIntegerShapeData" :
+    def GetHandle(self):
         """GetHandle(TopOpeBRepDS_DataMapNodeOfMapOfIntegerShapeData self) -> Handle_TopOpeBRepDS_DataMapNodeOfMapOfIntegerShapeData"""
         return _TopOpeBRepDS.TopOpeBRepDS_DataMapNodeOfMapOfIntegerShapeData_GetHandle(self)
 
@@ -2972,7 +3095,7 @@ Handle_TopOpeBRepDS_DataMapNodeOfMapOfIntegerShapeData._kill_pointed = new_insta
 Handle_TopOpeBRepDS_DataMapNodeOfMapOfIntegerShapeData_swigregister = _TopOpeBRepDS.Handle_TopOpeBRepDS_DataMapNodeOfMapOfIntegerShapeData_swigregister
 Handle_TopOpeBRepDS_DataMapNodeOfMapOfIntegerShapeData_swigregister(Handle_TopOpeBRepDS_DataMapNodeOfMapOfIntegerShapeData)
 
-def Handle_TopOpeBRepDS_DataMapNodeOfMapOfIntegerShapeData_DownCast(*args) -> "Handle_TopOpeBRepDS_DataMapNodeOfMapOfIntegerShapeData const" :
+def Handle_TopOpeBRepDS_DataMapNodeOfMapOfIntegerShapeData_DownCast(*args):
   return _TopOpeBRepDS.Handle_TopOpeBRepDS_DataMapNodeOfMapOfIntegerShapeData_DownCast(*args)
 Handle_TopOpeBRepDS_DataMapNodeOfMapOfIntegerShapeData_DownCast = _TopOpeBRepDS.Handle_TopOpeBRepDS_DataMapNodeOfMapOfIntegerShapeData_DownCast
 
@@ -2982,7 +3105,7 @@ class TopOpeBRepDS_DataMapNodeOfMapOfPoint(OCC.TCollection.TCollection_MapNode):
     def __init__(self, *args): 
         """
         :param K:
-        :type K: int &
+        :type K: Standard_Integer &
         :param I:
         :type I: TopOpeBRepDS_PointData &
         :param n:
@@ -2991,26 +3114,26 @@ class TopOpeBRepDS_DataMapNodeOfMapOfPoint(OCC.TCollection.TCollection_MapNode):
 
         """
         _TopOpeBRepDS.TopOpeBRepDS_DataMapNodeOfMapOfPoint_swiginit(self,_TopOpeBRepDS.new_TopOpeBRepDS_DataMapNodeOfMapOfPoint(*args))
-    def GetKey(self) -> "Standard_Integer" :
+    def GetKey(self):
         """GetKey(TopOpeBRepDS_DataMapNodeOfMapOfPoint self) -> Standard_Integer"""
         return _TopOpeBRepDS.TopOpeBRepDS_DataMapNodeOfMapOfPoint_GetKey(self)
 
-    def SetKey(self, *args) -> "void" :
+    def SetKey(self, *args):
         """SetKey(TopOpeBRepDS_DataMapNodeOfMapOfPoint self, Standard_Integer value)"""
         return _TopOpeBRepDS.TopOpeBRepDS_DataMapNodeOfMapOfPoint_SetKey(self, *args)
 
-    def Value(self, *args) -> "TopOpeBRepDS_PointData &" :
+    def Value(self):
         """
         :rtype: TopOpeBRepDS_PointData
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_DataMapNodeOfMapOfPoint_Value(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_DataMapNodeOfMapOfPoint_Value(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(TopOpeBRepDS_DataMapNodeOfMapOfPoint self)"""
         return _TopOpeBRepDS.TopOpeBRepDS_DataMapNodeOfMapOfPoint__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_TopOpeBRepDS_DataMapNodeOfMapOfPoint" :
+    def GetHandle(self):
         """GetHandle(TopOpeBRepDS_DataMapNodeOfMapOfPoint self) -> Handle_TopOpeBRepDS_DataMapNodeOfMapOfPoint"""
         return _TopOpeBRepDS.TopOpeBRepDS_DataMapNodeOfMapOfPoint_GetHandle(self)
 
@@ -3051,7 +3174,7 @@ Handle_TopOpeBRepDS_DataMapNodeOfMapOfPoint._kill_pointed = new_instancemethod(_
 Handle_TopOpeBRepDS_DataMapNodeOfMapOfPoint_swigregister = _TopOpeBRepDS.Handle_TopOpeBRepDS_DataMapNodeOfMapOfPoint_swigregister
 Handle_TopOpeBRepDS_DataMapNodeOfMapOfPoint_swigregister(Handle_TopOpeBRepDS_DataMapNodeOfMapOfPoint)
 
-def Handle_TopOpeBRepDS_DataMapNodeOfMapOfPoint_DownCast(*args) -> "Handle_TopOpeBRepDS_DataMapNodeOfMapOfPoint const" :
+def Handle_TopOpeBRepDS_DataMapNodeOfMapOfPoint_DownCast(*args):
   return _TopOpeBRepDS.Handle_TopOpeBRepDS_DataMapNodeOfMapOfPoint_DownCast(*args)
 Handle_TopOpeBRepDS_DataMapNodeOfMapOfPoint_DownCast = _TopOpeBRepDS.Handle_TopOpeBRepDS_DataMapNodeOfMapOfPoint_DownCast
 
@@ -3061,7 +3184,7 @@ class TopOpeBRepDS_DataMapNodeOfMapOfSurface(OCC.TCollection.TCollection_MapNode
     def __init__(self, *args): 
         """
         :param K:
-        :type K: int &
+        :type K: Standard_Integer &
         :param I:
         :type I: TopOpeBRepDS_SurfaceData &
         :param n:
@@ -3070,26 +3193,26 @@ class TopOpeBRepDS_DataMapNodeOfMapOfSurface(OCC.TCollection.TCollection_MapNode
 
         """
         _TopOpeBRepDS.TopOpeBRepDS_DataMapNodeOfMapOfSurface_swiginit(self,_TopOpeBRepDS.new_TopOpeBRepDS_DataMapNodeOfMapOfSurface(*args))
-    def GetKey(self) -> "Standard_Integer" :
+    def GetKey(self):
         """GetKey(TopOpeBRepDS_DataMapNodeOfMapOfSurface self) -> Standard_Integer"""
         return _TopOpeBRepDS.TopOpeBRepDS_DataMapNodeOfMapOfSurface_GetKey(self)
 
-    def SetKey(self, *args) -> "void" :
+    def SetKey(self, *args):
         """SetKey(TopOpeBRepDS_DataMapNodeOfMapOfSurface self, Standard_Integer value)"""
         return _TopOpeBRepDS.TopOpeBRepDS_DataMapNodeOfMapOfSurface_SetKey(self, *args)
 
-    def Value(self, *args) -> "TopOpeBRepDS_SurfaceData &" :
+    def Value(self):
         """
         :rtype: TopOpeBRepDS_SurfaceData
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_DataMapNodeOfMapOfSurface_Value(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_DataMapNodeOfMapOfSurface_Value(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(TopOpeBRepDS_DataMapNodeOfMapOfSurface self)"""
         return _TopOpeBRepDS.TopOpeBRepDS_DataMapNodeOfMapOfSurface__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_TopOpeBRepDS_DataMapNodeOfMapOfSurface" :
+    def GetHandle(self):
         """GetHandle(TopOpeBRepDS_DataMapNodeOfMapOfSurface self) -> Handle_TopOpeBRepDS_DataMapNodeOfMapOfSurface"""
         return _TopOpeBRepDS.TopOpeBRepDS_DataMapNodeOfMapOfSurface_GetHandle(self)
 
@@ -3130,7 +3253,7 @@ Handle_TopOpeBRepDS_DataMapNodeOfMapOfSurface._kill_pointed = new_instancemethod
 Handle_TopOpeBRepDS_DataMapNodeOfMapOfSurface_swigregister = _TopOpeBRepDS.Handle_TopOpeBRepDS_DataMapNodeOfMapOfSurface_swigregister
 Handle_TopOpeBRepDS_DataMapNodeOfMapOfSurface_swigregister(Handle_TopOpeBRepDS_DataMapNodeOfMapOfSurface)
 
-def Handle_TopOpeBRepDS_DataMapNodeOfMapOfSurface_DownCast(*args) -> "Handle_TopOpeBRepDS_DataMapNodeOfMapOfSurface const" :
+def Handle_TopOpeBRepDS_DataMapNodeOfMapOfSurface_DownCast(*args):
   return _TopOpeBRepDS.Handle_TopOpeBRepDS_DataMapNodeOfMapOfSurface_DownCast(*args)
 Handle_TopOpeBRepDS_DataMapNodeOfMapOfSurface_DownCast = _TopOpeBRepDS.Handle_TopOpeBRepDS_DataMapNodeOfMapOfSurface_DownCast
 
@@ -3149,25 +3272,25 @@ class TopOpeBRepDS_DataMapNodeOfShapeSurface(OCC.TCollection.TCollection_MapNode
 
         """
         _TopOpeBRepDS.TopOpeBRepDS_DataMapNodeOfShapeSurface_swiginit(self,_TopOpeBRepDS.new_TopOpeBRepDS_DataMapNodeOfShapeSurface(*args))
-    def Key(self, *args) -> "TopoDS_Shape" :
+    def Key(self):
         """
         :rtype: TopoDS_Shape
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_DataMapNodeOfShapeSurface_Key(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_DataMapNodeOfShapeSurface_Key(self)
 
-    def Value(self, *args) -> "Handle_Geom_Surface &" :
+    def Value(self):
         """
         :rtype: Handle_Geom_Surface
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_DataMapNodeOfShapeSurface_Value(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_DataMapNodeOfShapeSurface_Value(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(TopOpeBRepDS_DataMapNodeOfShapeSurface self)"""
         return _TopOpeBRepDS.TopOpeBRepDS_DataMapNodeOfShapeSurface__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_TopOpeBRepDS_DataMapNodeOfShapeSurface" :
+    def GetHandle(self):
         """GetHandle(TopOpeBRepDS_DataMapNodeOfShapeSurface self) -> Handle_TopOpeBRepDS_DataMapNodeOfShapeSurface"""
         return _TopOpeBRepDS.TopOpeBRepDS_DataMapNodeOfShapeSurface_GetHandle(self)
 
@@ -3207,22 +3330,26 @@ Handle_TopOpeBRepDS_DataMapNodeOfShapeSurface._kill_pointed = new_instancemethod
 Handle_TopOpeBRepDS_DataMapNodeOfShapeSurface_swigregister = _TopOpeBRepDS.Handle_TopOpeBRepDS_DataMapNodeOfShapeSurface_swigregister
 Handle_TopOpeBRepDS_DataMapNodeOfShapeSurface_swigregister(Handle_TopOpeBRepDS_DataMapNodeOfShapeSurface)
 
-def Handle_TopOpeBRepDS_DataMapNodeOfShapeSurface_DownCast(*args) -> "Handle_TopOpeBRepDS_DataMapNodeOfShapeSurface const" :
+def Handle_TopOpeBRepDS_DataMapNodeOfShapeSurface_DownCast(*args):
   return _TopOpeBRepDS.Handle_TopOpeBRepDS_DataMapNodeOfShapeSurface_DownCast(*args)
 Handle_TopOpeBRepDS_DataMapNodeOfShapeSurface_DownCast = _TopOpeBRepDS.Handle_TopOpeBRepDS_DataMapNodeOfShapeSurface_DownCast
 
 class TopOpeBRepDS_DataMapOfCheckStatus(OCC.TCollection.TCollection_BasicMap):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self, NbBuckets=1): 
         """
         :param NbBuckets: default value is 1
-        :type NbBuckets: int
+        :type NbBuckets: Standard_Integer
+        :rtype: None
+
+        :param NbBuckets: default value is 1
+        :type NbBuckets: Standard_Integer
         :rtype: None
 
         """
-        _TopOpeBRepDS.TopOpeBRepDS_DataMapOfCheckStatus_swiginit(self,_TopOpeBRepDS.new_TopOpeBRepDS_DataMapOfCheckStatus(*args))
-    def Assign(self, *args) -> "TopOpeBRepDS_DataMapOfCheckStatus &" :
+        _TopOpeBRepDS.TopOpeBRepDS_DataMapOfCheckStatus_swiginit(self,_TopOpeBRepDS.new_TopOpeBRepDS_DataMapOfCheckStatus(NbBuckets))
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: TopOpeBRepDS_DataMapOfCheckStatus &
@@ -3231,7 +3358,7 @@ class TopOpeBRepDS_DataMapOfCheckStatus(OCC.TCollection.TCollection_BasicMap):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_DataMapOfCheckStatus_Assign(self, *args)
 
-    def Set(self, *args) -> "TopOpeBRepDS_DataMapOfCheckStatus &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: TopOpeBRepDS_DataMapOfCheckStatus &
@@ -3240,26 +3367,26 @@ class TopOpeBRepDS_DataMapOfCheckStatus(OCC.TCollection.TCollection_BasicMap):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_DataMapOfCheckStatus_Set(self, *args)
 
-    def ReSize(self, *args) -> "void" :
+    def ReSize(self, *args):
         """
         :param NbBuckets:
-        :type NbBuckets: int
+        :type NbBuckets: Standard_Integer
         :rtype: None
 
         """
         return _TopOpeBRepDS.TopOpeBRepDS_DataMapOfCheckStatus_ReSize(self, *args)
 
-    def Clear(self, *args) -> "void" :
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_DataMapOfCheckStatus_Clear(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_DataMapOfCheckStatus_Clear(self)
 
-    def Bind(self, *args) -> "Standard_Boolean" :
+    def Bind(self, *args):
         """
         :param K:
-        :type K: int &
+        :type K: Standard_Integer &
         :param I:
         :type I: TopOpeBRepDS_CheckStatus &
         :rtype: bool
@@ -3267,61 +3394,61 @@ class TopOpeBRepDS_DataMapOfCheckStatus(OCC.TCollection.TCollection_BasicMap):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_DataMapOfCheckStatus_Bind(self, *args)
 
-    def IsBound(self, *args) -> "Standard_Boolean" :
+    def IsBound(self):
         """
         :param K:
-        :type K: int &
+        :type K: Standard_Integer &
         :rtype: bool
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_DataMapOfCheckStatus_IsBound(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_DataMapOfCheckStatus_IsBound(self)
 
-    def UnBind(self, *args) -> "Standard_Boolean" :
+    def UnBind(self):
         """
         :param K:
-        :type K: int &
+        :type K: Standard_Integer &
         :rtype: bool
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_DataMapOfCheckStatus_UnBind(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_DataMapOfCheckStatus_UnBind(self)
 
-    def Find(self, *args) -> "TopOpeBRepDS_CheckStatus const &" :
+    def Find(self):
         """
         :param K:
-        :type K: int &
+        :type K: Standard_Integer &
         :rtype: TopOpeBRepDS_CheckStatus
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_DataMapOfCheckStatus_Find(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_DataMapOfCheckStatus_Find(self)
 
-    def ChangeFind(self, *args) -> "TopOpeBRepDS_CheckStatus &" :
+    def ChangeFind(self):
         """
         :param K:
-        :type K: int &
+        :type K: Standard_Integer &
         :rtype: TopOpeBRepDS_CheckStatus
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_DataMapOfCheckStatus_ChangeFind(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_DataMapOfCheckStatus_ChangeFind(self)
 
-    def Find1(self, *args) -> "Standard_Address" :
+    def Find1(self):
         """
         :param K:
-        :type K: int &
+        :type K: Standard_Integer &
         :rtype: Standard_Address
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_DataMapOfCheckStatus_Find1(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_DataMapOfCheckStatus_Find1(self)
 
-    def ChangeFind1(self, *args) -> "Standard_Address" :
+    def ChangeFind1(self):
         """
         :param K:
-        :type K: int &
+        :type K: Standard_Integer &
         :rtype: Standard_Address
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_DataMapOfCheckStatus_ChangeFind1(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_DataMapOfCheckStatus_ChangeFind1(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(TopOpeBRepDS_DataMapOfCheckStatus self)"""
         return _TopOpeBRepDS.TopOpeBRepDS_DataMapOfCheckStatus__kill_pointed(self)
 
@@ -3351,15 +3478,19 @@ TopOpeBRepDS_DataMapOfCheckStatus_swigregister(TopOpeBRepDS_DataMapOfCheckStatus
 class TopOpeBRepDS_DataMapOfIntegerListOfInterference(OCC.TCollection.TCollection_BasicMap):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self, NbBuckets=1): 
         """
         :param NbBuckets: default value is 1
-        :type NbBuckets: int
+        :type NbBuckets: Standard_Integer
+        :rtype: None
+
+        :param NbBuckets: default value is 1
+        :type NbBuckets: Standard_Integer
         :rtype: None
 
         """
-        _TopOpeBRepDS.TopOpeBRepDS_DataMapOfIntegerListOfInterference_swiginit(self,_TopOpeBRepDS.new_TopOpeBRepDS_DataMapOfIntegerListOfInterference(*args))
-    def Assign(self, *args) -> "TopOpeBRepDS_DataMapOfIntegerListOfInterference &" :
+        _TopOpeBRepDS.TopOpeBRepDS_DataMapOfIntegerListOfInterference_swiginit(self,_TopOpeBRepDS.new_TopOpeBRepDS_DataMapOfIntegerListOfInterference(NbBuckets))
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: TopOpeBRepDS_DataMapOfIntegerListOfInterference &
@@ -3368,7 +3499,7 @@ class TopOpeBRepDS_DataMapOfIntegerListOfInterference(OCC.TCollection.TCollectio
         """
         return _TopOpeBRepDS.TopOpeBRepDS_DataMapOfIntegerListOfInterference_Assign(self, *args)
 
-    def Set(self, *args) -> "TopOpeBRepDS_DataMapOfIntegerListOfInterference &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: TopOpeBRepDS_DataMapOfIntegerListOfInterference &
@@ -3377,26 +3508,26 @@ class TopOpeBRepDS_DataMapOfIntegerListOfInterference(OCC.TCollection.TCollectio
         """
         return _TopOpeBRepDS.TopOpeBRepDS_DataMapOfIntegerListOfInterference_Set(self, *args)
 
-    def ReSize(self, *args) -> "void" :
+    def ReSize(self, *args):
         """
         :param NbBuckets:
-        :type NbBuckets: int
+        :type NbBuckets: Standard_Integer
         :rtype: None
 
         """
         return _TopOpeBRepDS.TopOpeBRepDS_DataMapOfIntegerListOfInterference_ReSize(self, *args)
 
-    def Clear(self, *args) -> "void" :
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_DataMapOfIntegerListOfInterference_Clear(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_DataMapOfIntegerListOfInterference_Clear(self)
 
-    def Bind(self, *args) -> "Standard_Boolean" :
+    def Bind(self, *args):
         """
         :param K:
-        :type K: int &
+        :type K: Standard_Integer &
         :param I:
         :type I: TopOpeBRepDS_ListOfInterference &
         :rtype: bool
@@ -3404,61 +3535,61 @@ class TopOpeBRepDS_DataMapOfIntegerListOfInterference(OCC.TCollection.TCollectio
         """
         return _TopOpeBRepDS.TopOpeBRepDS_DataMapOfIntegerListOfInterference_Bind(self, *args)
 
-    def IsBound(self, *args) -> "Standard_Boolean" :
+    def IsBound(self):
         """
         :param K:
-        :type K: int &
+        :type K: Standard_Integer &
         :rtype: bool
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_DataMapOfIntegerListOfInterference_IsBound(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_DataMapOfIntegerListOfInterference_IsBound(self)
 
-    def UnBind(self, *args) -> "Standard_Boolean" :
+    def UnBind(self):
         """
         :param K:
-        :type K: int &
+        :type K: Standard_Integer &
         :rtype: bool
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_DataMapOfIntegerListOfInterference_UnBind(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_DataMapOfIntegerListOfInterference_UnBind(self)
 
-    def Find(self, *args) -> "TopOpeBRepDS_ListOfInterference const &" :
+    def Find(self):
         """
         :param K:
-        :type K: int &
+        :type K: Standard_Integer &
         :rtype: TopOpeBRepDS_ListOfInterference
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_DataMapOfIntegerListOfInterference_Find(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_DataMapOfIntegerListOfInterference_Find(self)
 
-    def ChangeFind(self, *args) -> "TopOpeBRepDS_ListOfInterference &" :
+    def ChangeFind(self):
         """
         :param K:
-        :type K: int &
+        :type K: Standard_Integer &
         :rtype: TopOpeBRepDS_ListOfInterference
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_DataMapOfIntegerListOfInterference_ChangeFind(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_DataMapOfIntegerListOfInterference_ChangeFind(self)
 
-    def Find1(self, *args) -> "Standard_Address" :
+    def Find1(self):
         """
         :param K:
-        :type K: int &
+        :type K: Standard_Integer &
         :rtype: Standard_Address
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_DataMapOfIntegerListOfInterference_Find1(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_DataMapOfIntegerListOfInterference_Find1(self)
 
-    def ChangeFind1(self, *args) -> "Standard_Address" :
+    def ChangeFind1(self):
         """
         :param K:
-        :type K: int &
+        :type K: Standard_Integer &
         :rtype: Standard_Address
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_DataMapOfIntegerListOfInterference_ChangeFind1(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_DataMapOfIntegerListOfInterference_ChangeFind1(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(TopOpeBRepDS_DataMapOfIntegerListOfInterference self)"""
         return _TopOpeBRepDS.TopOpeBRepDS_DataMapOfIntegerListOfInterference__kill_pointed(self)
 
@@ -3488,15 +3619,19 @@ TopOpeBRepDS_DataMapOfIntegerListOfInterference_swigregister(TopOpeBRepDS_DataMa
 class TopOpeBRepDS_DataMapOfInterferenceListOfInterference(OCC.TCollection.TCollection_BasicMap):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self, NbBuckets=1): 
         """
         :param NbBuckets: default value is 1
-        :type NbBuckets: int
+        :type NbBuckets: Standard_Integer
+        :rtype: None
+
+        :param NbBuckets: default value is 1
+        :type NbBuckets: Standard_Integer
         :rtype: None
 
         """
-        _TopOpeBRepDS.TopOpeBRepDS_DataMapOfInterferenceListOfInterference_swiginit(self,_TopOpeBRepDS.new_TopOpeBRepDS_DataMapOfInterferenceListOfInterference(*args))
-    def Assign(self, *args) -> "TopOpeBRepDS_DataMapOfInterferenceListOfInterference &" :
+        _TopOpeBRepDS.TopOpeBRepDS_DataMapOfInterferenceListOfInterference_swiginit(self,_TopOpeBRepDS.new_TopOpeBRepDS_DataMapOfInterferenceListOfInterference(NbBuckets))
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: TopOpeBRepDS_DataMapOfInterferenceListOfInterference &
@@ -3505,7 +3640,7 @@ class TopOpeBRepDS_DataMapOfInterferenceListOfInterference(OCC.TCollection.TColl
         """
         return _TopOpeBRepDS.TopOpeBRepDS_DataMapOfInterferenceListOfInterference_Assign(self, *args)
 
-    def Set(self, *args) -> "TopOpeBRepDS_DataMapOfInterferenceListOfInterference &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: TopOpeBRepDS_DataMapOfInterferenceListOfInterference &
@@ -3514,23 +3649,23 @@ class TopOpeBRepDS_DataMapOfInterferenceListOfInterference(OCC.TCollection.TColl
         """
         return _TopOpeBRepDS.TopOpeBRepDS_DataMapOfInterferenceListOfInterference_Set(self, *args)
 
-    def ReSize(self, *args) -> "void" :
+    def ReSize(self, *args):
         """
         :param NbBuckets:
-        :type NbBuckets: int
+        :type NbBuckets: Standard_Integer
         :rtype: None
 
         """
         return _TopOpeBRepDS.TopOpeBRepDS_DataMapOfInterferenceListOfInterference_ReSize(self, *args)
 
-    def Clear(self, *args) -> "void" :
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_DataMapOfInterferenceListOfInterference_Clear(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_DataMapOfInterferenceListOfInterference_Clear(self)
 
-    def Bind(self, *args) -> "Standard_Boolean" :
+    def Bind(self, *args):
         """
         :param K:
         :type K: Handle_TopOpeBRepDS_Interference &
@@ -3541,7 +3676,7 @@ class TopOpeBRepDS_DataMapOfInterferenceListOfInterference(OCC.TCollection.TColl
         """
         return _TopOpeBRepDS.TopOpeBRepDS_DataMapOfInterferenceListOfInterference_Bind(self, *args)
 
-    def IsBound(self, *args) -> "Standard_Boolean" :
+    def IsBound(self, *args):
         """
         :param K:
         :type K: Handle_TopOpeBRepDS_Interference &
@@ -3550,7 +3685,7 @@ class TopOpeBRepDS_DataMapOfInterferenceListOfInterference(OCC.TCollection.TColl
         """
         return _TopOpeBRepDS.TopOpeBRepDS_DataMapOfInterferenceListOfInterference_IsBound(self, *args)
 
-    def UnBind(self, *args) -> "Standard_Boolean" :
+    def UnBind(self, *args):
         """
         :param K:
         :type K: Handle_TopOpeBRepDS_Interference &
@@ -3559,7 +3694,7 @@ class TopOpeBRepDS_DataMapOfInterferenceListOfInterference(OCC.TCollection.TColl
         """
         return _TopOpeBRepDS.TopOpeBRepDS_DataMapOfInterferenceListOfInterference_UnBind(self, *args)
 
-    def Find(self, *args) -> "TopOpeBRepDS_ListOfInterference const &" :
+    def Find(self, *args):
         """
         :param K:
         :type K: Handle_TopOpeBRepDS_Interference &
@@ -3568,7 +3703,7 @@ class TopOpeBRepDS_DataMapOfInterferenceListOfInterference(OCC.TCollection.TColl
         """
         return _TopOpeBRepDS.TopOpeBRepDS_DataMapOfInterferenceListOfInterference_Find(self, *args)
 
-    def ChangeFind(self, *args) -> "TopOpeBRepDS_ListOfInterference &" :
+    def ChangeFind(self, *args):
         """
         :param K:
         :type K: Handle_TopOpeBRepDS_Interference &
@@ -3577,7 +3712,7 @@ class TopOpeBRepDS_DataMapOfInterferenceListOfInterference(OCC.TCollection.TColl
         """
         return _TopOpeBRepDS.TopOpeBRepDS_DataMapOfInterferenceListOfInterference_ChangeFind(self, *args)
 
-    def Find1(self, *args) -> "Standard_Address" :
+    def Find1(self, *args):
         """
         :param K:
         :type K: Handle_TopOpeBRepDS_Interference &
@@ -3586,7 +3721,7 @@ class TopOpeBRepDS_DataMapOfInterferenceListOfInterference(OCC.TCollection.TColl
         """
         return _TopOpeBRepDS.TopOpeBRepDS_DataMapOfInterferenceListOfInterference_Find1(self, *args)
 
-    def ChangeFind1(self, *args) -> "Standard_Address" :
+    def ChangeFind1(self, *args):
         """
         :param K:
         :type K: Handle_TopOpeBRepDS_Interference &
@@ -3595,7 +3730,7 @@ class TopOpeBRepDS_DataMapOfInterferenceListOfInterference(OCC.TCollection.TColl
         """
         return _TopOpeBRepDS.TopOpeBRepDS_DataMapOfInterferenceListOfInterference_ChangeFind1(self, *args)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(TopOpeBRepDS_DataMapOfInterferenceListOfInterference self)"""
         return _TopOpeBRepDS.TopOpeBRepDS_DataMapOfInterferenceListOfInterference__kill_pointed(self)
 
@@ -3625,15 +3760,19 @@ TopOpeBRepDS_DataMapOfInterferenceListOfInterference_swigregister(TopOpeBRepDS_D
 class TopOpeBRepDS_DataMapOfInterferenceShape(OCC.TCollection.TCollection_BasicMap):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self, NbBuckets=1): 
         """
         :param NbBuckets: default value is 1
-        :type NbBuckets: int
+        :type NbBuckets: Standard_Integer
+        :rtype: None
+
+        :param NbBuckets: default value is 1
+        :type NbBuckets: Standard_Integer
         :rtype: None
 
         """
-        _TopOpeBRepDS.TopOpeBRepDS_DataMapOfInterferenceShape_swiginit(self,_TopOpeBRepDS.new_TopOpeBRepDS_DataMapOfInterferenceShape(*args))
-    def Assign(self, *args) -> "TopOpeBRepDS_DataMapOfInterferenceShape &" :
+        _TopOpeBRepDS.TopOpeBRepDS_DataMapOfInterferenceShape_swiginit(self,_TopOpeBRepDS.new_TopOpeBRepDS_DataMapOfInterferenceShape(NbBuckets))
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: TopOpeBRepDS_DataMapOfInterferenceShape &
@@ -3642,7 +3781,7 @@ class TopOpeBRepDS_DataMapOfInterferenceShape(OCC.TCollection.TCollection_BasicM
         """
         return _TopOpeBRepDS.TopOpeBRepDS_DataMapOfInterferenceShape_Assign(self, *args)
 
-    def Set(self, *args) -> "TopOpeBRepDS_DataMapOfInterferenceShape &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: TopOpeBRepDS_DataMapOfInterferenceShape &
@@ -3651,23 +3790,23 @@ class TopOpeBRepDS_DataMapOfInterferenceShape(OCC.TCollection.TCollection_BasicM
         """
         return _TopOpeBRepDS.TopOpeBRepDS_DataMapOfInterferenceShape_Set(self, *args)
 
-    def ReSize(self, *args) -> "void" :
+    def ReSize(self, *args):
         """
         :param NbBuckets:
-        :type NbBuckets: int
+        :type NbBuckets: Standard_Integer
         :rtype: None
 
         """
         return _TopOpeBRepDS.TopOpeBRepDS_DataMapOfInterferenceShape_ReSize(self, *args)
 
-    def Clear(self, *args) -> "void" :
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_DataMapOfInterferenceShape_Clear(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_DataMapOfInterferenceShape_Clear(self)
 
-    def Bind(self, *args) -> "Standard_Boolean" :
+    def Bind(self, *args):
         """
         :param K:
         :type K: Handle_TopOpeBRepDS_Interference &
@@ -3678,7 +3817,7 @@ class TopOpeBRepDS_DataMapOfInterferenceShape(OCC.TCollection.TCollection_BasicM
         """
         return _TopOpeBRepDS.TopOpeBRepDS_DataMapOfInterferenceShape_Bind(self, *args)
 
-    def IsBound(self, *args) -> "Standard_Boolean" :
+    def IsBound(self, *args):
         """
         :param K:
         :type K: Handle_TopOpeBRepDS_Interference &
@@ -3687,7 +3826,7 @@ class TopOpeBRepDS_DataMapOfInterferenceShape(OCC.TCollection.TCollection_BasicM
         """
         return _TopOpeBRepDS.TopOpeBRepDS_DataMapOfInterferenceShape_IsBound(self, *args)
 
-    def UnBind(self, *args) -> "Standard_Boolean" :
+    def UnBind(self, *args):
         """
         :param K:
         :type K: Handle_TopOpeBRepDS_Interference &
@@ -3696,7 +3835,7 @@ class TopOpeBRepDS_DataMapOfInterferenceShape(OCC.TCollection.TCollection_BasicM
         """
         return _TopOpeBRepDS.TopOpeBRepDS_DataMapOfInterferenceShape_UnBind(self, *args)
 
-    def Find(self, *args) -> "TopoDS_Shape const" :
+    def Find(self, *args):
         """
         :param K:
         :type K: Handle_TopOpeBRepDS_Interference &
@@ -3705,7 +3844,7 @@ class TopOpeBRepDS_DataMapOfInterferenceShape(OCC.TCollection.TCollection_BasicM
         """
         return _TopOpeBRepDS.TopOpeBRepDS_DataMapOfInterferenceShape_Find(self, *args)
 
-    def ChangeFind(self, *args) -> "TopoDS_Shape" :
+    def ChangeFind(self, *args):
         """
         :param K:
         :type K: Handle_TopOpeBRepDS_Interference &
@@ -3714,7 +3853,7 @@ class TopOpeBRepDS_DataMapOfInterferenceShape(OCC.TCollection.TCollection_BasicM
         """
         return _TopOpeBRepDS.TopOpeBRepDS_DataMapOfInterferenceShape_ChangeFind(self, *args)
 
-    def Find1(self, *args) -> "Standard_Address" :
+    def Find1(self, *args):
         """
         :param K:
         :type K: Handle_TopOpeBRepDS_Interference &
@@ -3723,7 +3862,7 @@ class TopOpeBRepDS_DataMapOfInterferenceShape(OCC.TCollection.TCollection_BasicM
         """
         return _TopOpeBRepDS.TopOpeBRepDS_DataMapOfInterferenceShape_Find1(self, *args)
 
-    def ChangeFind1(self, *args) -> "Standard_Address" :
+    def ChangeFind1(self, *args):
         """
         :param K:
         :type K: Handle_TopOpeBRepDS_Interference &
@@ -3732,7 +3871,7 @@ class TopOpeBRepDS_DataMapOfInterferenceShape(OCC.TCollection.TCollection_BasicM
         """
         return _TopOpeBRepDS.TopOpeBRepDS_DataMapOfInterferenceShape_ChangeFind1(self, *args)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(TopOpeBRepDS_DataMapOfInterferenceShape self)"""
         return _TopOpeBRepDS.TopOpeBRepDS_DataMapOfInterferenceShape__kill_pointed(self)
 
@@ -3762,15 +3901,19 @@ TopOpeBRepDS_DataMapOfInterferenceShape_swigregister(TopOpeBRepDS_DataMapOfInter
 class TopOpeBRepDS_DataMapOfShapeListOfShapeOn1State(OCC.TCollection.TCollection_BasicMap):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self, NbBuckets=1): 
         """
         :param NbBuckets: default value is 1
-        :type NbBuckets: int
+        :type NbBuckets: Standard_Integer
+        :rtype: None
+
+        :param NbBuckets: default value is 1
+        :type NbBuckets: Standard_Integer
         :rtype: None
 
         """
-        _TopOpeBRepDS.TopOpeBRepDS_DataMapOfShapeListOfShapeOn1State_swiginit(self,_TopOpeBRepDS.new_TopOpeBRepDS_DataMapOfShapeListOfShapeOn1State(*args))
-    def Assign(self, *args) -> "TopOpeBRepDS_DataMapOfShapeListOfShapeOn1State &" :
+        _TopOpeBRepDS.TopOpeBRepDS_DataMapOfShapeListOfShapeOn1State_swiginit(self,_TopOpeBRepDS.new_TopOpeBRepDS_DataMapOfShapeListOfShapeOn1State(NbBuckets))
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: TopOpeBRepDS_DataMapOfShapeListOfShapeOn1State &
@@ -3779,7 +3922,7 @@ class TopOpeBRepDS_DataMapOfShapeListOfShapeOn1State(OCC.TCollection.TCollection
         """
         return _TopOpeBRepDS.TopOpeBRepDS_DataMapOfShapeListOfShapeOn1State_Assign(self, *args)
 
-    def Set(self, *args) -> "TopOpeBRepDS_DataMapOfShapeListOfShapeOn1State &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: TopOpeBRepDS_DataMapOfShapeListOfShapeOn1State &
@@ -3788,23 +3931,23 @@ class TopOpeBRepDS_DataMapOfShapeListOfShapeOn1State(OCC.TCollection.TCollection
         """
         return _TopOpeBRepDS.TopOpeBRepDS_DataMapOfShapeListOfShapeOn1State_Set(self, *args)
 
-    def ReSize(self, *args) -> "void" :
+    def ReSize(self, *args):
         """
         :param NbBuckets:
-        :type NbBuckets: int
+        :type NbBuckets: Standard_Integer
         :rtype: None
 
         """
         return _TopOpeBRepDS.TopOpeBRepDS_DataMapOfShapeListOfShapeOn1State_ReSize(self, *args)
 
-    def Clear(self, *args) -> "void" :
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_DataMapOfShapeListOfShapeOn1State_Clear(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_DataMapOfShapeListOfShapeOn1State_Clear(self)
 
-    def Bind(self, *args) -> "Standard_Boolean" :
+    def Bind(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -3815,7 +3958,7 @@ class TopOpeBRepDS_DataMapOfShapeListOfShapeOn1State(OCC.TCollection.TCollection
         """
         return _TopOpeBRepDS.TopOpeBRepDS_DataMapOfShapeListOfShapeOn1State_Bind(self, *args)
 
-    def IsBound(self, *args) -> "Standard_Boolean" :
+    def IsBound(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -3824,7 +3967,7 @@ class TopOpeBRepDS_DataMapOfShapeListOfShapeOn1State(OCC.TCollection.TCollection
         """
         return _TopOpeBRepDS.TopOpeBRepDS_DataMapOfShapeListOfShapeOn1State_IsBound(self, *args)
 
-    def UnBind(self, *args) -> "Standard_Boolean" :
+    def UnBind(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -3833,7 +3976,7 @@ class TopOpeBRepDS_DataMapOfShapeListOfShapeOn1State(OCC.TCollection.TCollection
         """
         return _TopOpeBRepDS.TopOpeBRepDS_DataMapOfShapeListOfShapeOn1State_UnBind(self, *args)
 
-    def Find(self, *args) -> "TopOpeBRepDS_ListOfShapeOn1State const &" :
+    def Find(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -3842,7 +3985,7 @@ class TopOpeBRepDS_DataMapOfShapeListOfShapeOn1State(OCC.TCollection.TCollection
         """
         return _TopOpeBRepDS.TopOpeBRepDS_DataMapOfShapeListOfShapeOn1State_Find(self, *args)
 
-    def ChangeFind(self, *args) -> "TopOpeBRepDS_ListOfShapeOn1State &" :
+    def ChangeFind(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -3851,7 +3994,7 @@ class TopOpeBRepDS_DataMapOfShapeListOfShapeOn1State(OCC.TCollection.TCollection
         """
         return _TopOpeBRepDS.TopOpeBRepDS_DataMapOfShapeListOfShapeOn1State_ChangeFind(self, *args)
 
-    def Find1(self, *args) -> "Standard_Address" :
+    def Find1(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -3860,7 +4003,7 @@ class TopOpeBRepDS_DataMapOfShapeListOfShapeOn1State(OCC.TCollection.TCollection
         """
         return _TopOpeBRepDS.TopOpeBRepDS_DataMapOfShapeListOfShapeOn1State_Find1(self, *args)
 
-    def ChangeFind1(self, *args) -> "Standard_Address" :
+    def ChangeFind1(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -3869,7 +4012,7 @@ class TopOpeBRepDS_DataMapOfShapeListOfShapeOn1State(OCC.TCollection.TCollection
         """
         return _TopOpeBRepDS.TopOpeBRepDS_DataMapOfShapeListOfShapeOn1State_ChangeFind1(self, *args)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(TopOpeBRepDS_DataMapOfShapeListOfShapeOn1State self)"""
         return _TopOpeBRepDS.TopOpeBRepDS_DataMapOfShapeListOfShapeOn1State__kill_pointed(self)
 
@@ -3899,15 +4042,19 @@ TopOpeBRepDS_DataMapOfShapeListOfShapeOn1State_swigregister(TopOpeBRepDS_DataMap
 class TopOpeBRepDS_DataMapOfShapeState(OCC.TCollection.TCollection_BasicMap):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self, NbBuckets=1): 
         """
         :param NbBuckets: default value is 1
-        :type NbBuckets: int
+        :type NbBuckets: Standard_Integer
+        :rtype: None
+
+        :param NbBuckets: default value is 1
+        :type NbBuckets: Standard_Integer
         :rtype: None
 
         """
-        _TopOpeBRepDS.TopOpeBRepDS_DataMapOfShapeState_swiginit(self,_TopOpeBRepDS.new_TopOpeBRepDS_DataMapOfShapeState(*args))
-    def Assign(self, *args) -> "TopOpeBRepDS_DataMapOfShapeState &" :
+        _TopOpeBRepDS.TopOpeBRepDS_DataMapOfShapeState_swiginit(self,_TopOpeBRepDS.new_TopOpeBRepDS_DataMapOfShapeState(NbBuckets))
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: TopOpeBRepDS_DataMapOfShapeState &
@@ -3916,7 +4063,7 @@ class TopOpeBRepDS_DataMapOfShapeState(OCC.TCollection.TCollection_BasicMap):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_DataMapOfShapeState_Assign(self, *args)
 
-    def Set(self, *args) -> "TopOpeBRepDS_DataMapOfShapeState &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: TopOpeBRepDS_DataMapOfShapeState &
@@ -3925,23 +4072,23 @@ class TopOpeBRepDS_DataMapOfShapeState(OCC.TCollection.TCollection_BasicMap):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_DataMapOfShapeState_Set(self, *args)
 
-    def ReSize(self, *args) -> "void" :
+    def ReSize(self, *args):
         """
         :param NbBuckets:
-        :type NbBuckets: int
+        :type NbBuckets: Standard_Integer
         :rtype: None
 
         """
         return _TopOpeBRepDS.TopOpeBRepDS_DataMapOfShapeState_ReSize(self, *args)
 
-    def Clear(self, *args) -> "void" :
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_DataMapOfShapeState_Clear(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_DataMapOfShapeState_Clear(self)
 
-    def Bind(self, *args) -> "Standard_Boolean" :
+    def Bind(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -3952,7 +4099,7 @@ class TopOpeBRepDS_DataMapOfShapeState(OCC.TCollection.TCollection_BasicMap):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_DataMapOfShapeState_Bind(self, *args)
 
-    def IsBound(self, *args) -> "Standard_Boolean" :
+    def IsBound(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -3961,7 +4108,7 @@ class TopOpeBRepDS_DataMapOfShapeState(OCC.TCollection.TCollection_BasicMap):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_DataMapOfShapeState_IsBound(self, *args)
 
-    def UnBind(self, *args) -> "Standard_Boolean" :
+    def UnBind(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -3970,7 +4117,7 @@ class TopOpeBRepDS_DataMapOfShapeState(OCC.TCollection.TCollection_BasicMap):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_DataMapOfShapeState_UnBind(self, *args)
 
-    def Find(self, *args) -> "TopAbs_State const &" :
+    def Find(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -3979,7 +4126,7 @@ class TopOpeBRepDS_DataMapOfShapeState(OCC.TCollection.TCollection_BasicMap):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_DataMapOfShapeState_Find(self, *args)
 
-    def ChangeFind(self, *args) -> "TopAbs_State &" :
+    def ChangeFind(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -3988,7 +4135,7 @@ class TopOpeBRepDS_DataMapOfShapeState(OCC.TCollection.TCollection_BasicMap):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_DataMapOfShapeState_ChangeFind(self, *args)
 
-    def Find1(self, *args) -> "Standard_Address" :
+    def Find1(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -3997,7 +4144,7 @@ class TopOpeBRepDS_DataMapOfShapeState(OCC.TCollection.TCollection_BasicMap):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_DataMapOfShapeState_Find1(self, *args)
 
-    def ChangeFind1(self, *args) -> "Standard_Address" :
+    def ChangeFind1(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -4006,7 +4153,7 @@ class TopOpeBRepDS_DataMapOfShapeState(OCC.TCollection.TCollection_BasicMap):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_DataMapOfShapeState_ChangeFind1(self, *args)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(TopOpeBRepDS_DataMapOfShapeState self)"""
         return _TopOpeBRepDS.TopOpeBRepDS_DataMapOfShapeState__kill_pointed(self)
 
@@ -4036,22 +4183,22 @@ TopOpeBRepDS_DataMapOfShapeState_swigregister(TopOpeBRepDS_DataMapOfShapeState)
 class TopOpeBRepDS_DataStructure(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _TopOpeBRepDS.TopOpeBRepDS_DataStructure_swiginit(self,_TopOpeBRepDS.new_TopOpeBRepDS_DataStructure(*args))
-    def Init(self, *args) -> "void" :
+        _TopOpeBRepDS.TopOpeBRepDS_DataStructure_swiginit(self,_TopOpeBRepDS.new_TopOpeBRepDS_DataStructure())
+    def Init(self):
         """
         * reset the data structure
 
         :rtype: None
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_DataStructure_Init(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_DataStructure_Init(self)
 
-    def AddSurface(self, *args) -> "Standard_Integer" :
+    def AddSurface(self, *args):
         """
         * Insert a new surface. Returns the index.
 
@@ -4062,19 +4209,19 @@ class TopOpeBRepDS_DataStructure(object):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_DataStructure_AddSurface(self, *args)
 
-    def RemoveSurface(self, *args) -> "void" :
+    def RemoveSurface(self, *args):
         """
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :rtype: None
 
         """
         return _TopOpeBRepDS.TopOpeBRepDS_DataStructure_RemoveSurface(self, *args)
 
-    def KeepSurface(self, *args) -> "Standard_Boolean" :
+    def KeepSurface(self, *args):
         """
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :rtype: bool
 
         :param S:
@@ -4084,10 +4231,10 @@ class TopOpeBRepDS_DataStructure(object):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_DataStructure_KeepSurface(self, *args)
 
-    def ChangeKeepSurface(self, *args) -> "void" :
+    def ChangeKeepSurface(self, *args):
         """
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :param FindKeep:
         :type FindKeep: bool
         :rtype: None
@@ -4101,7 +4248,7 @@ class TopOpeBRepDS_DataStructure(object):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_DataStructure_ChangeKeepSurface(self, *args)
 
-    def AddCurve(self, *args) -> "Standard_Integer" :
+    def AddCurve(self, *args):
         """
         * Insert a new curve. Returns the index.
 
@@ -4112,19 +4259,19 @@ class TopOpeBRepDS_DataStructure(object):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_DataStructure_AddCurve(self, *args)
 
-    def RemoveCurve(self, *args) -> "void" :
+    def RemoveCurve(self, *args):
         """
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :rtype: None
 
         """
         return _TopOpeBRepDS.TopOpeBRepDS_DataStructure_RemoveCurve(self, *args)
 
-    def KeepCurve(self, *args) -> "Standard_Boolean" :
+    def KeepCurve(self, *args):
         """
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :rtype: bool
 
         :param C:
@@ -4134,10 +4281,10 @@ class TopOpeBRepDS_DataStructure(object):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_DataStructure_KeepCurve(self, *args)
 
-    def ChangeKeepCurve(self, *args) -> "void" :
+    def ChangeKeepCurve(self, *args):
         """
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :param FindKeep:
         :type FindKeep: bool
         :rtype: None
@@ -4151,7 +4298,7 @@ class TopOpeBRepDS_DataStructure(object):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_DataStructure_ChangeKeepCurve(self, *args)
 
-    def AddPoint(self, *args) -> "Standard_Integer" :
+    def AddPoint(self, *args):
         """
         * Insert a new point. Returns the index.
 
@@ -4162,7 +4309,7 @@ class TopOpeBRepDS_DataStructure(object):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_DataStructure_AddPoint(self, *args)
 
-    def AddPointSS(self, *args) -> "Standard_Integer" :
+    def AddPointSS(self, *args):
         """
         * Insert a new point. Returns the index.
 
@@ -4177,19 +4324,19 @@ class TopOpeBRepDS_DataStructure(object):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_DataStructure_AddPointSS(self, *args)
 
-    def RemovePoint(self, *args) -> "void" :
+    def RemovePoint(self, *args):
         """
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :rtype: None
 
         """
         return _TopOpeBRepDS.TopOpeBRepDS_DataStructure_RemovePoint(self, *args)
 
-    def KeepPoint(self, *args) -> "Standard_Boolean" :
+    def KeepPoint(self, *args):
         """
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :rtype: bool
 
         :param P:
@@ -4199,10 +4346,10 @@ class TopOpeBRepDS_DataStructure(object):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_DataStructure_KeepPoint(self, *args)
 
-    def ChangeKeepPoint(self, *args) -> "void" :
+    def ChangeKeepPoint(self, *args):
         """
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :param FindKeep:
         :type FindKeep: bool
         :rtype: None
@@ -4216,7 +4363,7 @@ class TopOpeBRepDS_DataStructure(object):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_DataStructure_ChangeKeepPoint(self, *args)
 
-    def AddShape(self, *args) -> "Standard_Integer" :
+    def AddShape(self, *args):
         """
         * Insert a shape S. Returns the index.
 
@@ -4229,16 +4376,28 @@ class TopOpeBRepDS_DataStructure(object):
         :param S:
         :type S: TopoDS_Shape &
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :rtype: int
 
         """
         return _TopOpeBRepDS.TopOpeBRepDS_DataStructure_AddShape(self, *args)
 
-    def KeepShape(self, *args) -> "Standard_Boolean" :
+    def KeepShape(self, *args):
         """
         :param I:
-        :type I: int
+        :type I: Standard_Integer
+        :param FindKeep: default value is Standard_True
+        :type FindKeep: bool
+        :rtype: bool
+
+        :param I:
+        :type I: Standard_Integer
+        :param FindKeep: default value is Standard_True
+        :type FindKeep: bool
+        :rtype: bool
+
+        :param S:
+        :type S: TopoDS_Shape &
         :param FindKeep: default value is Standard_True
         :type FindKeep: bool
         :rtype: bool
@@ -4252,10 +4411,10 @@ class TopOpeBRepDS_DataStructure(object):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_DataStructure_KeepShape(self, *args)
 
-    def ChangeKeepShape(self, *args) -> "void" :
+    def ChangeKeepShape(self, *args):
         """
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :param FindKeep:
         :type FindKeep: bool
         :rtype: None
@@ -4269,14 +4428,14 @@ class TopOpeBRepDS_DataStructure(object):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_DataStructure_ChangeKeepShape(self, *args)
 
-    def InitSectionEdges(self, *args) -> "void" :
+    def InitSectionEdges(self):
         """
         :rtype: None
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_DataStructure_InitSectionEdges(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_DataStructure_InitSectionEdges(self)
 
-    def AddSectionEdge(self, *args) -> "Standard_Integer" :
+    def AddSectionEdge(self, *args):
         """
         :param E:
         :type E: TopoDS_Edge &
@@ -4285,61 +4444,61 @@ class TopOpeBRepDS_DataStructure(object):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_DataStructure_AddSectionEdge(self, *args)
 
-    def SurfaceInterferences(self, *args) -> "TopOpeBRepDS_ListOfInterference const &" :
+    def SurfaceInterferences(self, *args):
         """
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :rtype: TopOpeBRepDS_ListOfInterference
 
         """
         return _TopOpeBRepDS.TopOpeBRepDS_DataStructure_SurfaceInterferences(self, *args)
 
-    def ChangeSurfaceInterferences(self, *args) -> "TopOpeBRepDS_ListOfInterference &" :
+    def ChangeSurfaceInterferences(self, *args):
         """
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :rtype: TopOpeBRepDS_ListOfInterference
 
         """
         return _TopOpeBRepDS.TopOpeBRepDS_DataStructure_ChangeSurfaceInterferences(self, *args)
 
-    def CurveInterferences(self, *args) -> "TopOpeBRepDS_ListOfInterference const &" :
+    def CurveInterferences(self, *args):
         """
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :rtype: TopOpeBRepDS_ListOfInterference
 
         """
         return _TopOpeBRepDS.TopOpeBRepDS_DataStructure_CurveInterferences(self, *args)
 
-    def ChangeCurveInterferences(self, *args) -> "TopOpeBRepDS_ListOfInterference &" :
+    def ChangeCurveInterferences(self, *args):
         """
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :rtype: TopOpeBRepDS_ListOfInterference
 
         """
         return _TopOpeBRepDS.TopOpeBRepDS_DataStructure_ChangeCurveInterferences(self, *args)
 
-    def PointInterferences(self, *args) -> "TopOpeBRepDS_ListOfInterference const &" :
+    def PointInterferences(self, *args):
         """
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :rtype: TopOpeBRepDS_ListOfInterference
 
         """
         return _TopOpeBRepDS.TopOpeBRepDS_DataStructure_PointInterferences(self, *args)
 
-    def ChangePointInterferences(self, *args) -> "TopOpeBRepDS_ListOfInterference &" :
+    def ChangePointInterferences(self, *args):
         """
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :rtype: TopOpeBRepDS_ListOfInterference
 
         """
         return _TopOpeBRepDS.TopOpeBRepDS_DataStructure_ChangePointInterferences(self, *args)
 
-    def ShapeInterferences(self, *args) -> "TopOpeBRepDS_ListOfInterference const &" :
+    def ShapeInterferences(self, *args):
         """
         :param S:
         :type S: TopoDS_Shape &
@@ -4347,8 +4506,20 @@ class TopOpeBRepDS_DataStructure(object):
         :type FindKeep: bool
         :rtype: TopOpeBRepDS_ListOfInterference
 
+        :param S:
+        :type S: TopoDS_Shape &
+        :param FindKeep: default value is Standard_True
+        :type FindKeep: bool
+        :rtype: TopOpeBRepDS_ListOfInterference
+
         :param I:
-        :type I: int
+        :type I: Standard_Integer
+        :param FindKeep: default value is Standard_True
+        :type FindKeep: bool
+        :rtype: TopOpeBRepDS_ListOfInterference
+
+        :param I:
+        :type I: Standard_Integer
         :param FindKeep: default value is Standard_True
         :type FindKeep: bool
         :rtype: TopOpeBRepDS_ListOfInterference
@@ -4356,53 +4527,53 @@ class TopOpeBRepDS_DataStructure(object):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_DataStructure_ShapeInterferences(self, *args)
 
-    def ChangeShapeInterferences(self, *args) -> "TopOpeBRepDS_ListOfInterference &" :
+    def ChangeShapeInterferences(self, *args):
         """
         :param S:
         :type S: TopoDS_Shape &
         :rtype: TopOpeBRepDS_ListOfInterference
 
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :rtype: TopOpeBRepDS_ListOfInterference
 
         """
         return _TopOpeBRepDS.TopOpeBRepDS_DataStructure_ChangeShapeInterferences(self, *args)
 
-    def ShapeSameDomain(self, *args) -> "TopTools_ListOfShape const &" :
+    def ShapeSameDomain(self, *args):
         """
         :param S:
         :type S: TopoDS_Shape &
         :rtype: TopTools_ListOfShape
 
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :rtype: TopTools_ListOfShape
 
         """
         return _TopOpeBRepDS.TopOpeBRepDS_DataStructure_ShapeSameDomain(self, *args)
 
-    def ChangeShapeSameDomain(self, *args) -> "TopTools_ListOfShape &" :
+    def ChangeShapeSameDomain(self, *args):
         """
         :param S:
         :type S: TopoDS_Shape &
         :rtype: TopTools_ListOfShape
 
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :rtype: TopTools_ListOfShape
 
         """
         return _TopOpeBRepDS.TopOpeBRepDS_DataStructure_ChangeShapeSameDomain(self, *args)
 
-    def ChangeShapes(self, *args) -> "TopOpeBRepDS_MapOfShapeData &" :
+    def ChangeShapes(self):
         """
         :rtype: TopOpeBRepDS_MapOfShapeData
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_DataStructure_ChangeShapes(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_DataStructure_ChangeShapes(self)
 
-    def AddShapeSameDomain(self, *args) -> "void" :
+    def AddShapeSameDomain(self, *args):
         """
         :param S:
         :type S: TopoDS_Shape &
@@ -4413,7 +4584,7 @@ class TopOpeBRepDS_DataStructure(object):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_DataStructure_AddShapeSameDomain(self, *args)
 
-    def RemoveShapeSameDomain(self, *args) -> "void" :
+    def RemoveShapeSameDomain(self, *args):
         """
         :param S:
         :type S: TopoDS_Shape &
@@ -4424,10 +4595,10 @@ class TopOpeBRepDS_DataStructure(object):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_DataStructure_RemoveShapeSameDomain(self, *args)
 
-    def SameDomainRef(self, *args) -> "void" :
+    def SameDomainRef(self, *args):
         """
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :rtype: int
 
         :param S:
@@ -4435,24 +4606,24 @@ class TopOpeBRepDS_DataStructure(object):
         :rtype: int
 
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :param Ref:
-        :type Ref: int
+        :type Ref: Standard_Integer
         :rtype: None
 
         :param S:
         :type S: TopoDS_Shape &
         :param Ref:
-        :type Ref: int
+        :type Ref: Standard_Integer
         :rtype: None
 
         """
         return _TopOpeBRepDS.TopOpeBRepDS_DataStructure_SameDomainRef(self, *args)
 
-    def SameDomainOri(self, *args) -> "void" :
+    def SameDomainOri(self, *args):
         """
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :rtype: TopOpeBRepDS_Config
 
         :param S:
@@ -4460,7 +4631,7 @@ class TopOpeBRepDS_DataStructure(object):
         :rtype: TopOpeBRepDS_Config
 
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :param Ori:
         :type Ori: TopOpeBRepDS_Config
         :rtype: None
@@ -4474,10 +4645,10 @@ class TopOpeBRepDS_DataStructure(object):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_DataStructure_SameDomainOri(self, *args)
 
-    def SameDomainInd(self, *args) -> "void" :
+    def SameDomainInd(self, *args):
         """
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :rtype: int
 
         :param S:
@@ -4485,24 +4656,24 @@ class TopOpeBRepDS_DataStructure(object):
         :rtype: int
 
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :param Ind:
-        :type Ind: int
+        :type Ind: Standard_Integer
         :rtype: None
 
         :param S:
         :type S: TopoDS_Shape &
         :param Ind:
-        :type Ind: int
+        :type Ind: Standard_Integer
         :rtype: None
 
         """
         return _TopOpeBRepDS.TopOpeBRepDS_DataStructure_SameDomainInd(self, *args)
 
-    def AncestorRank(self, *args) -> "void" :
+    def AncestorRank(self, *args):
         """
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :rtype: int
 
         :param S:
@@ -4510,21 +4681,21 @@ class TopOpeBRepDS_DataStructure(object):
         :rtype: int
 
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :param Ianc:
-        :type Ianc: int
+        :type Ianc: Standard_Integer
         :rtype: None
 
         :param S:
         :type S: TopoDS_Shape &
         :param Ianc:
-        :type Ianc: int
+        :type Ianc: Standard_Integer
         :rtype: None
 
         """
         return _TopOpeBRepDS.TopOpeBRepDS_DataStructure_AncestorRank(self, *args)
 
-    def AddShapeInterference(self, *args) -> "void" :
+    def AddShapeInterference(self, *args):
         """
         :param S:
         :type S: TopoDS_Shape &
@@ -4535,7 +4706,7 @@ class TopOpeBRepDS_DataStructure(object):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_DataStructure_AddShapeInterference(self, *args)
 
-    def RemoveShapeInterference(self, *args) -> "void" :
+    def RemoveShapeInterference(self, *args):
         """
         :param S:
         :type S: TopoDS_Shape &
@@ -4546,8 +4717,16 @@ class TopOpeBRepDS_DataStructure(object):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_DataStructure_RemoveShapeInterference(self, *args)
 
-    def FillShapesSameDomain(self, *args) -> "void" :
+    def FillShapesSameDomain(self, *args):
         """
+        :param S1:
+        :type S1: TopoDS_Shape &
+        :param S2:
+        :type S2: TopoDS_Shape &
+        :param refFirst: default value is Standard_True
+        :type refFirst: bool
+        :rtype: None
+
         :param S1:
         :type S1: TopoDS_Shape &
         :param S2:
@@ -4568,10 +4747,22 @@ class TopOpeBRepDS_DataStructure(object):
         :type refFirst: bool
         :rtype: None
 
+        :param S1:
+        :type S1: TopoDS_Shape &
+        :param S2:
+        :type S2: TopoDS_Shape &
+        :param c1:
+        :type c1: TopOpeBRepDS_Config
+        :param c2:
+        :type c2: TopOpeBRepDS_Config
+        :param refFirst: default value is Standard_True
+        :type refFirst: bool
+        :rtype: None
+
         """
         return _TopOpeBRepDS.TopOpeBRepDS_DataStructure_FillShapesSameDomain(self, *args)
 
-    def UnfillShapesSameDomain(self, *args) -> "void" :
+    def UnfillShapesSameDomain(self, *args):
         """
         :param S1:
         :type S1: TopoDS_Shape &
@@ -4582,122 +4773,130 @@ class TopOpeBRepDS_DataStructure(object):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_DataStructure_UnfillShapesSameDomain(self, *args)
 
-    def NbSurfaces(self, *args) -> "Standard_Integer" :
+    def NbSurfaces(self):
         """
         :rtype: int
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_DataStructure_NbSurfaces(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_DataStructure_NbSurfaces(self)
 
-    def NbCurves(self, *args) -> "Standard_Integer" :
+    def NbCurves(self):
         """
         :rtype: int
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_DataStructure_NbCurves(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_DataStructure_NbCurves(self)
 
-    def ChangeNbCurves(self, *args) -> "void" :
+    def ChangeNbCurves(self, *args):
         """
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :rtype: None
 
         """
         return _TopOpeBRepDS.TopOpeBRepDS_DataStructure_ChangeNbCurves(self, *args)
 
-    def NbPoints(self, *args) -> "Standard_Integer" :
+    def NbPoints(self):
         """
         :rtype: int
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_DataStructure_NbPoints(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_DataStructure_NbPoints(self)
 
-    def NbShapes(self, *args) -> "Standard_Integer" :
+    def NbShapes(self):
         """
         :rtype: int
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_DataStructure_NbShapes(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_DataStructure_NbShapes(self)
 
-    def NbSectionEdges(self, *args) -> "Standard_Integer" :
+    def NbSectionEdges(self):
         """
         :rtype: int
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_DataStructure_NbSectionEdges(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_DataStructure_NbSectionEdges(self)
 
-    def Surface(self, *args) -> "TopOpeBRepDS_Surface const &" :
+    def Surface(self, *args):
         """
         * Returns the surface of index <I>.
 
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :rtype: TopOpeBRepDS_Surface
 
         """
         return _TopOpeBRepDS.TopOpeBRepDS_DataStructure_Surface(self, *args)
 
-    def ChangeSurface(self, *args) -> "TopOpeBRepDS_Surface &" :
+    def ChangeSurface(self, *args):
         """
         * Returns the surface of index <I>.
 
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :rtype: TopOpeBRepDS_Surface
 
         """
         return _TopOpeBRepDS.TopOpeBRepDS_DataStructure_ChangeSurface(self, *args)
 
-    def Curve(self, *args) -> "TopOpeBRepDS_Curve const &" :
+    def Curve(self, *args):
         """
         * Returns the Curve of index <I>.
 
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :rtype: TopOpeBRepDS_Curve
 
         """
         return _TopOpeBRepDS.TopOpeBRepDS_DataStructure_Curve(self, *args)
 
-    def ChangeCurve(self, *args) -> "TopOpeBRepDS_Curve &" :
+    def ChangeCurve(self, *args):
         """
         * Returns the Curve of index <I>.
 
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :rtype: TopOpeBRepDS_Curve
 
         """
         return _TopOpeBRepDS.TopOpeBRepDS_DataStructure_ChangeCurve(self, *args)
 
-    def Point(self, *args) -> "TopOpeBRepDS_Point const &" :
+    def Point(self, *args):
         """
         * Returns the point of index <I>.
 
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :rtype: TopOpeBRepDS_Point
 
         """
         return _TopOpeBRepDS.TopOpeBRepDS_DataStructure_Point(self, *args)
 
-    def ChangePoint(self, *args) -> "TopOpeBRepDS_Point &" :
+    def ChangePoint(self, *args):
         """
         * Returns the point of index <I>.
 
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :rtype: TopOpeBRepDS_Point
 
         """
         return _TopOpeBRepDS.TopOpeBRepDS_DataStructure_ChangePoint(self, *args)
 
-    def Shape(self, *args) -> "Standard_Integer" :
+    def Shape(self, *args):
         """
         * returns the shape of index I stored in the map myShapes, accessing a list of interference.
 
         :param I:
-        :type I: int
+        :type I: Standard_Integer
+        :param FindKeep: default value is Standard_True
+        :type FindKeep: bool
+        :rtype: TopoDS_Shape
+
+        * returns the shape of index I stored in the map myShapes, accessing a list of interference.
+
+        :param I:
+        :type I: Standard_Integer
         :param FindKeep: default value is Standard_True
         :type FindKeep: bool
         :rtype: TopoDS_Shape
@@ -4710,13 +4909,27 @@ class TopOpeBRepDS_DataStructure(object):
         :type FindKeep: bool
         :rtype: int
 
+        * returns the index of shape <S> stored in the map myShapes, accessing a list of interference. returns 0 if <S> is not in the map.
+
+        :param S:
+        :type S: TopoDS_Shape &
+        :param FindKeep: default value is Standard_True
+        :type FindKeep: bool
+        :rtype: int
+
         """
         return _TopOpeBRepDS.TopOpeBRepDS_DataStructure_Shape(self, *args)
 
-    def SectionEdge(self, *args) -> "Standard_Integer" :
+    def SectionEdge(self, *args):
         """
         :param I:
-        :type I: int
+        :type I: Standard_Integer
+        :param FindKeep: default value is Standard_True
+        :type FindKeep: bool
+        :rtype: TopoDS_Edge
+
+        :param I:
+        :type I: Standard_Integer
         :param FindKeep: default value is Standard_True
         :type FindKeep: bool
         :rtype: TopoDS_Edge
@@ -4727,11 +4940,23 @@ class TopOpeBRepDS_DataStructure(object):
         :type FindKeep: bool
         :rtype: int
 
+        :param E:
+        :type E: TopoDS_Edge &
+        :param FindKeep: default value is Standard_True
+        :type FindKeep: bool
+        :rtype: int
+
         """
         return _TopOpeBRepDS.TopOpeBRepDS_DataStructure_SectionEdge(self, *args)
 
-    def IsSectionEdge(self, *args) -> "Standard_Boolean" :
+    def IsSectionEdge(self, *args):
         """
+        :param E:
+        :type E: TopoDS_Edge &
+        :param FindKeep: default value is Standard_True
+        :type FindKeep: bool
+        :rtype: bool
+
         :param E:
         :type E: TopoDS_Edge &
         :param FindKeep: default value is Standard_True
@@ -4741,7 +4966,7 @@ class TopOpeBRepDS_DataStructure(object):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_DataStructure_IsSectionEdge(self, *args)
 
-    def HasGeometry(self, *args) -> "Standard_Boolean" :
+    def HasGeometry(self, *args):
         """
         * Returns True if <S> has new geometries, i.e : True si : HasShape(S) True S a une liste d'interferences non vide. S = SOLID, FACE, EDGE : true/false S = SHELL, WIRE, VERTEX : false.
 
@@ -4752,8 +4977,16 @@ class TopOpeBRepDS_DataStructure(object):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_DataStructure_HasGeometry(self, *args)
 
-    def HasShape(self, *args) -> "Standard_Boolean" :
+    def HasShape(self, *args):
         """
+        * Returns True if <S> est dans myShapes
+
+        :param S:
+        :type S: TopoDS_Shape &
+        :param FindKeep: default value is Standard_True
+        :type FindKeep: bool
+        :rtype: bool
+
         * Returns True if <S> est dans myShapes
 
         :param S:
@@ -4765,7 +4998,7 @@ class TopOpeBRepDS_DataStructure(object):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_DataStructure_HasShape(self, *args)
 
-    def SetNewSurface(self, *args) -> "void" :
+    def SetNewSurface(self, *args):
         """
         :param F:
         :type F: TopoDS_Shape &
@@ -4776,7 +5009,7 @@ class TopOpeBRepDS_DataStructure(object):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_DataStructure_SetNewSurface(self, *args)
 
-    def HasNewSurface(self, *args) -> "Standard_Boolean" :
+    def HasNewSurface(self, *args):
         """
         :param F:
         :type F: TopoDS_Shape &
@@ -4785,7 +5018,7 @@ class TopOpeBRepDS_DataStructure(object):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_DataStructure_HasNewSurface(self, *args)
 
-    def NewSurface(self, *args) -> "Handle_Geom_Surface const &" :
+    def NewSurface(self, *args):
         """
         :param F:
         :type F: TopoDS_Shape &
@@ -4794,7 +5027,7 @@ class TopOpeBRepDS_DataStructure(object):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_DataStructure_NewSurface(self, *args)
 
-    def Isfafa(self, *args) -> "Standard_Boolean" :
+    def Isfafa(self, *args):
         """
         :param isfafa:
         :type isfafa: bool
@@ -4805,21 +5038,21 @@ class TopOpeBRepDS_DataStructure(object):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_DataStructure_Isfafa(self, *args)
 
-    def ChangeMapOfShapeWithStateObj(self, *args) -> "TopOpeBRepDS_IndexedDataMapOfShapeWithState &" :
+    def ChangeMapOfShapeWithStateObj(self):
         """
         :rtype: TopOpeBRepDS_IndexedDataMapOfShapeWithState
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_DataStructure_ChangeMapOfShapeWithStateObj(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_DataStructure_ChangeMapOfShapeWithStateObj(self)
 
-    def ChangeMapOfShapeWithStateTool(self, *args) -> "TopOpeBRepDS_IndexedDataMapOfShapeWithState &" :
+    def ChangeMapOfShapeWithStateTool(self):
         """
         :rtype: TopOpeBRepDS_IndexedDataMapOfShapeWithState
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_DataStructure_ChangeMapOfShapeWithStateTool(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_DataStructure_ChangeMapOfShapeWithStateTool(self)
 
-    def ChangeMapOfShapeWithState(self, *args) -> "TopOpeBRepDS_IndexedDataMapOfShapeWithState &" :
+    def ChangeMapOfShapeWithState(self, *args):
         """
         :param aShape:
         :type aShape: TopoDS_Shape &
@@ -4830,7 +5063,7 @@ class TopOpeBRepDS_DataStructure(object):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_DataStructure_ChangeMapOfShapeWithState(self, *args)
 
-    def GetShapeWithState(self, *args) -> "TopOpeBRepDS_ShapeWithState const &" :
+    def GetShapeWithState(self, *args):
         """
         :param aShape:
         :type aShape: TopoDS_Shape &
@@ -4839,19 +5072,19 @@ class TopOpeBRepDS_DataStructure(object):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_DataStructure_GetShapeWithState(self, *args)
 
-    def ChangeMapOfRejectedShapesObj(self, *args) -> "TopTools_IndexedMapOfShape &" :
+    def ChangeMapOfRejectedShapesObj(self):
         """
         :rtype: TopTools_IndexedMapOfShape
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_DataStructure_ChangeMapOfRejectedShapesObj(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_DataStructure_ChangeMapOfRejectedShapesObj(self)
 
-    def ChangeMapOfRejectedShapesTool(self, *args) -> "TopTools_IndexedMapOfShape &" :
+    def ChangeMapOfRejectedShapesTool(self):
         """
         :rtype: TopTools_IndexedMapOfShape
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_DataStructure_ChangeMapOfRejectedShapesTool(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_DataStructure_ChangeMapOfRejectedShapesTool(self)
 
     def __del__(self):
     	try:
@@ -4945,7 +5178,7 @@ class TopOpeBRepDS_DoubleMapIteratorOfDoubleMapOfIntegerShape(OCC.TCollection.TC
 
         """
         _TopOpeBRepDS.TopOpeBRepDS_DoubleMapIteratorOfDoubleMapOfIntegerShape_swiginit(self,_TopOpeBRepDS.new_TopOpeBRepDS_DoubleMapIteratorOfDoubleMapOfIntegerShape(*args))
-    def Initialize(self, *args) -> "void" :
+    def Initialize(self, *args):
         """
         :param aMap:
         :type aMap: TopOpeBRepDS_DoubleMapOfIntegerShape &
@@ -4954,19 +5187,19 @@ class TopOpeBRepDS_DoubleMapIteratorOfDoubleMapOfIntegerShape(OCC.TCollection.TC
         """
         return _TopOpeBRepDS.TopOpeBRepDS_DoubleMapIteratorOfDoubleMapOfIntegerShape_Initialize(self, *args)
 
-    def Key1(self, *args) -> "Standard_Integer const &" :
+    def Key1(self):
         """
         :rtype: int
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_DoubleMapIteratorOfDoubleMapOfIntegerShape_Key1(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_DoubleMapIteratorOfDoubleMapOfIntegerShape_Key1(self)
 
-    def Key2(self, *args) -> "TopoDS_Shape const" :
+    def Key2(self):
         """
         :rtype: TopoDS_Shape
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_DoubleMapIteratorOfDoubleMapOfIntegerShape_Key2(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_DoubleMapIteratorOfDoubleMapOfIntegerShape_Key2(self)
 
     def __del__(self):
     	try:
@@ -4989,7 +5222,7 @@ class TopOpeBRepDS_DoubleMapNodeOfDoubleMapOfIntegerShape(OCC.TCollection.TColle
     def __init__(self, *args): 
         """
         :param K1:
-        :type K1: int &
+        :type K1: Standard_Integer &
         :param K2:
         :type K2: TopoDS_Shape &
         :param n1:
@@ -5000,33 +5233,33 @@ class TopOpeBRepDS_DoubleMapNodeOfDoubleMapOfIntegerShape(OCC.TCollection.TColle
 
         """
         _TopOpeBRepDS.TopOpeBRepDS_DoubleMapNodeOfDoubleMapOfIntegerShape_swiginit(self,_TopOpeBRepDS.new_TopOpeBRepDS_DoubleMapNodeOfDoubleMapOfIntegerShape(*args))
-    def GetKey1(self) -> "Standard_Integer" :
+    def GetKey1(self):
         """GetKey1(TopOpeBRepDS_DoubleMapNodeOfDoubleMapOfIntegerShape self) -> Standard_Integer"""
         return _TopOpeBRepDS.TopOpeBRepDS_DoubleMapNodeOfDoubleMapOfIntegerShape_GetKey1(self)
 
-    def SetKey1(self, *args) -> "void" :
+    def SetKey1(self, *args):
         """SetKey1(TopOpeBRepDS_DoubleMapNodeOfDoubleMapOfIntegerShape self, Standard_Integer value)"""
         return _TopOpeBRepDS.TopOpeBRepDS_DoubleMapNodeOfDoubleMapOfIntegerShape_SetKey1(self, *args)
 
-    def Key2(self, *args) -> "TopoDS_Shape" :
+    def Key2(self):
         """
         :rtype: TopoDS_Shape
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_DoubleMapNodeOfDoubleMapOfIntegerShape_Key2(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_DoubleMapNodeOfDoubleMapOfIntegerShape_Key2(self)
 
-    def Next2(self, *args) -> "TCollection_MapNodePtr &" :
+    def Next2(self):
         """
         :rtype: TCollection_MapNodePtr
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_DoubleMapNodeOfDoubleMapOfIntegerShape_Next2(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_DoubleMapNodeOfDoubleMapOfIntegerShape_Next2(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(TopOpeBRepDS_DoubleMapNodeOfDoubleMapOfIntegerShape self)"""
         return _TopOpeBRepDS.TopOpeBRepDS_DoubleMapNodeOfDoubleMapOfIntegerShape__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_TopOpeBRepDS_DoubleMapNodeOfDoubleMapOfIntegerShape" :
+    def GetHandle(self):
         """GetHandle(TopOpeBRepDS_DoubleMapNodeOfDoubleMapOfIntegerShape self) -> Handle_TopOpeBRepDS_DoubleMapNodeOfDoubleMapOfIntegerShape"""
         return _TopOpeBRepDS.TopOpeBRepDS_DoubleMapNodeOfDoubleMapOfIntegerShape_GetHandle(self)
 
@@ -5068,22 +5301,26 @@ Handle_TopOpeBRepDS_DoubleMapNodeOfDoubleMapOfIntegerShape._kill_pointed = new_i
 Handle_TopOpeBRepDS_DoubleMapNodeOfDoubleMapOfIntegerShape_swigregister = _TopOpeBRepDS.Handle_TopOpeBRepDS_DoubleMapNodeOfDoubleMapOfIntegerShape_swigregister
 Handle_TopOpeBRepDS_DoubleMapNodeOfDoubleMapOfIntegerShape_swigregister(Handle_TopOpeBRepDS_DoubleMapNodeOfDoubleMapOfIntegerShape)
 
-def Handle_TopOpeBRepDS_DoubleMapNodeOfDoubleMapOfIntegerShape_DownCast(*args) -> "Handle_TopOpeBRepDS_DoubleMapNodeOfDoubleMapOfIntegerShape const" :
+def Handle_TopOpeBRepDS_DoubleMapNodeOfDoubleMapOfIntegerShape_DownCast(*args):
   return _TopOpeBRepDS.Handle_TopOpeBRepDS_DoubleMapNodeOfDoubleMapOfIntegerShape_DownCast(*args)
 Handle_TopOpeBRepDS_DoubleMapNodeOfDoubleMapOfIntegerShape_DownCast = _TopOpeBRepDS.Handle_TopOpeBRepDS_DoubleMapNodeOfDoubleMapOfIntegerShape_DownCast
 
 class TopOpeBRepDS_DoubleMapOfIntegerShape(OCC.TCollection.TCollection_BasicMap):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self, NbBuckets=1): 
         """
         :param NbBuckets: default value is 1
-        :type NbBuckets: int
+        :type NbBuckets: Standard_Integer
+        :rtype: None
+
+        :param NbBuckets: default value is 1
+        :type NbBuckets: Standard_Integer
         :rtype: None
 
         """
-        _TopOpeBRepDS.TopOpeBRepDS_DoubleMapOfIntegerShape_swiginit(self,_TopOpeBRepDS.new_TopOpeBRepDS_DoubleMapOfIntegerShape(*args))
-    def Assign(self, *args) -> "TopOpeBRepDS_DoubleMapOfIntegerShape &" :
+        _TopOpeBRepDS.TopOpeBRepDS_DoubleMapOfIntegerShape_swiginit(self,_TopOpeBRepDS.new_TopOpeBRepDS_DoubleMapOfIntegerShape(NbBuckets))
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: TopOpeBRepDS_DoubleMapOfIntegerShape &
@@ -5092,7 +5329,7 @@ class TopOpeBRepDS_DoubleMapOfIntegerShape(OCC.TCollection.TCollection_BasicMap)
         """
         return _TopOpeBRepDS.TopOpeBRepDS_DoubleMapOfIntegerShape_Assign(self, *args)
 
-    def Set(self, *args) -> "TopOpeBRepDS_DoubleMapOfIntegerShape &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: TopOpeBRepDS_DoubleMapOfIntegerShape &
@@ -5101,26 +5338,26 @@ class TopOpeBRepDS_DoubleMapOfIntegerShape(OCC.TCollection.TCollection_BasicMap)
         """
         return _TopOpeBRepDS.TopOpeBRepDS_DoubleMapOfIntegerShape_Set(self, *args)
 
-    def ReSize(self, *args) -> "void" :
+    def ReSize(self, *args):
         """
         :param NbBuckets:
-        :type NbBuckets: int
+        :type NbBuckets: Standard_Integer
         :rtype: None
 
         """
         return _TopOpeBRepDS.TopOpeBRepDS_DoubleMapOfIntegerShape_ReSize(self, *args)
 
-    def Clear(self, *args) -> "void" :
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_DoubleMapOfIntegerShape_Clear(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_DoubleMapOfIntegerShape_Clear(self)
 
-    def Bind(self, *args) -> "void" :
+    def Bind(self, *args):
         """
         :param K1:
-        :type K1: int &
+        :type K1: Standard_Integer &
         :param K2:
         :type K2: TopoDS_Shape &
         :rtype: None
@@ -5128,10 +5365,10 @@ class TopOpeBRepDS_DoubleMapOfIntegerShape(OCC.TCollection.TCollection_BasicMap)
         """
         return _TopOpeBRepDS.TopOpeBRepDS_DoubleMapOfIntegerShape_Bind(self, *args)
 
-    def AreBound(self, *args) -> "Standard_Boolean" :
+    def AreBound(self, *args):
         """
         :param K1:
-        :type K1: int &
+        :type K1: Standard_Integer &
         :param K2:
         :type K2: TopoDS_Shape &
         :rtype: bool
@@ -5139,16 +5376,16 @@ class TopOpeBRepDS_DoubleMapOfIntegerShape(OCC.TCollection.TCollection_BasicMap)
         """
         return _TopOpeBRepDS.TopOpeBRepDS_DoubleMapOfIntegerShape_AreBound(self, *args)
 
-    def IsBound1(self, *args) -> "Standard_Boolean" :
+    def IsBound1(self):
         """
         :param K:
-        :type K: int &
+        :type K: Standard_Integer &
         :rtype: bool
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_DoubleMapOfIntegerShape_IsBound1(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_DoubleMapOfIntegerShape_IsBound1(self)
 
-    def IsBound2(self, *args) -> "Standard_Boolean" :
+    def IsBound2(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -5157,16 +5394,16 @@ class TopOpeBRepDS_DoubleMapOfIntegerShape(OCC.TCollection.TCollection_BasicMap)
         """
         return _TopOpeBRepDS.TopOpeBRepDS_DoubleMapOfIntegerShape_IsBound2(self, *args)
 
-    def Find1(self, *args) -> "TopoDS_Shape const" :
+    def Find1(self):
         """
         :param K:
-        :type K: int &
+        :type K: Standard_Integer &
         :rtype: TopoDS_Shape
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_DoubleMapOfIntegerShape_Find1(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_DoubleMapOfIntegerShape_Find1(self)
 
-    def Find2(self, *args) -> "Standard_Integer const &" :
+    def Find2(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -5175,16 +5412,16 @@ class TopOpeBRepDS_DoubleMapOfIntegerShape(OCC.TCollection.TCollection_BasicMap)
         """
         return _TopOpeBRepDS.TopOpeBRepDS_DoubleMapOfIntegerShape_Find2(self, *args)
 
-    def UnBind1(self, *args) -> "Standard_Boolean" :
+    def UnBind1(self):
         """
         :param K:
-        :type K: int &
+        :type K: Standard_Integer &
         :rtype: bool
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_DoubleMapOfIntegerShape_UnBind1(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_DoubleMapOfIntegerShape_UnBind1(self)
 
-    def UnBind2(self, *args) -> "Standard_Boolean" :
+    def UnBind2(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -5193,7 +5430,7 @@ class TopOpeBRepDS_DoubleMapOfIntegerShape(OCC.TCollection.TCollection_BasicMap)
         """
         return _TopOpeBRepDS.TopOpeBRepDS_DoubleMapOfIntegerShape_UnBind2(self, *args)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(TopOpeBRepDS_DoubleMapOfIntegerShape self)"""
         return _TopOpeBRepDS.TopOpeBRepDS_DoubleMapOfIntegerShape__kill_pointed(self)
 
@@ -5232,7 +5469,7 @@ class TopOpeBRepDS_Dumper(object):
 
         """
         _TopOpeBRepDS.TopOpeBRepDS_Dumper_swiginit(self,_TopOpeBRepDS.new_TopOpeBRepDS_Dumper(*args))
-    def PrintType(*args) -> "Standard_OStream &" :
+    def PrintType(*args):
         """
         :param C:
         :type C: Handle_Geom_Curve &
@@ -5250,8 +5487,24 @@ class TopOpeBRepDS_Dumper(object):
         return _TopOpeBRepDS.TopOpeBRepDS_Dumper_PrintType(*args)
 
     PrintType = staticmethod(PrintType)
-    def Dump(self, *args) -> "Standard_OStream &" :
+    def Dump(self, *args):
         """
+        :param OS:
+        :type OS: Standard_OStream &
+        :param fk: default value is Standard_False
+        :type fk: bool
+        :param ct: default value is Standard_True
+        :type ct: bool
+        :rtype: Standard_OStream
+
+        :param OS:
+        :type OS: Standard_OStream &
+        :param fk: default value is Standard_False
+        :type fk: bool
+        :param ct: default value is Standard_True
+        :type ct: bool
+        :rtype: Standard_OStream
+
         :param OS:
         :type OS: Standard_OStream &
         :param fk: default value is Standard_False
@@ -5263,8 +5516,44 @@ class TopOpeBRepDS_Dumper(object):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_Dumper_Dump(self, *args)
 
-    def DumpGeometry(self, *args) -> "Standard_OStream &" :
+    def DumpGeometry(self, *args):
         """
+        :param OS:
+        :type OS: Standard_OStream &
+        :param fk: default value is Standard_False
+        :type fk: bool
+        :param ct: default value is Standard_True
+        :type ct: bool
+        :rtype: Standard_OStream
+
+        :param OS:
+        :type OS: Standard_OStream &
+        :param fk: default value is Standard_False
+        :type fk: bool
+        :param ct: default value is Standard_True
+        :type ct: bool
+        :rtype: Standard_OStream
+
+        :param OS:
+        :type OS: Standard_OStream &
+        :param fk: default value is Standard_False
+        :type fk: bool
+        :param ct: default value is Standard_True
+        :type ct: bool
+        :rtype: Standard_OStream
+
+        :param K:
+        :type K: TopOpeBRepDS_Kind
+        :param OS:
+        :type OS: Standard_OStream &
+        :param fk: default value is Standard_False
+        :type fk: bool
+        :param ct: default value is Standard_True
+        :type ct: bool
+        :rtype: Standard_OStream
+
+        :param K:
+        :type K: TopOpeBRepDS_Kind
         :param OS:
         :type OS: Standard_OStream &
         :param fk: default value is Standard_False
@@ -5286,7 +5575,31 @@ class TopOpeBRepDS_Dumper(object):
         :param K:
         :type K: TopOpeBRepDS_Kind
         :param I:
-        :type I: int
+        :type I: Standard_Integer
+        :param OS:
+        :type OS: Standard_OStream &
+        :param fk: default value is Standard_False
+        :type fk: bool
+        :param ct: default value is Standard_True
+        :type ct: bool
+        :rtype: Standard_OStream
+
+        :param K:
+        :type K: TopOpeBRepDS_Kind
+        :param I:
+        :type I: Standard_Integer
+        :param OS:
+        :type OS: Standard_OStream &
+        :param fk: default value is Standard_False
+        :type fk: bool
+        :param ct: default value is Standard_True
+        :type ct: bool
+        :rtype: Standard_OStream
+
+        :param K:
+        :type K: TopOpeBRepDS_Kind
+        :param I:
+        :type I: Standard_Integer
         :param OS:
         :type OS: Standard_OStream &
         :param fk: default value is Standard_False
@@ -5298,11 +5611,11 @@ class TopOpeBRepDS_Dumper(object):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_Dumper_DumpGeometry(self, *args)
 
-    def DumpTopologyToString(self) -> "std::string" :
+    def DumpTopologyToString(self):
         """DumpTopologyToString(TopOpeBRepDS_Dumper self) -> std::string"""
         return _TopOpeBRepDS.TopOpeBRepDS_Dumper_DumpTopologyToString(self)
 
-    def DumpTopology(self, *args) -> "Standard_OStream &" :
+    def DumpTopology(self, *args):
         """
         :param K:
         :type K: TopOpeBRepDS_Kind
@@ -5319,7 +5632,7 @@ class TopOpeBRepDS_Dumper(object):
         :param K:
         :type K: TopOpeBRepDS_Kind
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :param OS:
         :type OS: Standard_OStream &
         :rtype: Standard_OStream
@@ -5327,7 +5640,7 @@ class TopOpeBRepDS_Dumper(object):
         :param T:
         :type T: TopAbs_ShapeEnum
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :param OS:
         :type OS: Standard_OStream &
         :rtype: Standard_OStream
@@ -5335,7 +5648,7 @@ class TopOpeBRepDS_Dumper(object):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_Dumper_DumpTopology(self, *args)
 
-    def DumpSectionEdge(self, *args) -> "Standard_OStream &" :
+    def DumpSectionEdge(self, *args):
         """
         :param K:
         :type K: TopOpeBRepDS_Kind
@@ -5346,7 +5659,7 @@ class TopOpeBRepDS_Dumper(object):
         :param K:
         :type K: TopOpeBRepDS_Kind
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :param OS:
         :type OS: Standard_OStream &
         :rtype: Standard_OStream
@@ -5354,12 +5667,12 @@ class TopOpeBRepDS_Dumper(object):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_Dumper_DumpSectionEdge(self, *args)
 
-    def SDumpRefOri(self, *args) -> "TCollection_AsciiString" :
+    def SDumpRefOri(self, *args):
         """
         :param K:
         :type K: TopOpeBRepDS_Kind
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :rtype: TCollection_AsciiString
 
         :param S:
@@ -5369,12 +5682,12 @@ class TopOpeBRepDS_Dumper(object):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_Dumper_SDumpRefOri(self, *args)
 
-    def DumpRefOri(self, *args) -> "Standard_OStream &" :
+    def DumpRefOri(self, *args):
         """
         :param K:
         :type K: TopOpeBRepDS_Kind
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :param OS:
         :type OS: Standard_OStream &
         :rtype: Standard_OStream
@@ -5388,7 +5701,7 @@ class TopOpeBRepDS_Dumper(object):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_Dumper_DumpRefOri(self, *args)
 
-    def DumpLOI(self, *args) -> "Standard_OStream &" :
+    def DumpLOI(self, *args):
         """
         :param L:
         :type L: TopOpeBRepDS_ListOfInterference &
@@ -5401,7 +5714,7 @@ class TopOpeBRepDS_Dumper(object):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_Dumper_DumpLOI(self, *args)
 
-    def DumpI(self, *args) -> "Standard_OStream &" :
+    def DumpI(self, *args):
         """
         :param I:
         :type I: Handle_TopOpeBRepDS_Interference &
@@ -5416,10 +5729,10 @@ class TopOpeBRepDS_Dumper(object):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_Dumper_DumpI(self, *args)
 
-    def SPrintShape(self, *args) -> "TCollection_AsciiString" :
+    def SPrintShape(self, *args):
         """
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :rtype: TCollection_AsciiString
 
         :param S:
@@ -5429,10 +5742,22 @@ class TopOpeBRepDS_Dumper(object):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_Dumper_SPrintShape(self, *args)
 
-    def SPrintShapeRefOri(self, *args) -> "TCollection_AsciiString" :
+    def SPrintShapeRefOri(self, *args):
         """
         :param S:
         :type S: TopoDS_Shape &
+        :param B: default value is 
+        :type B: TCollection_AsciiString &
+        :rtype: TCollection_AsciiString
+
+        :param S:
+        :type S: TopoDS_Shape &
+        :param B: default value is 
+        :type B: TCollection_AsciiString &
+        :rtype: TCollection_AsciiString
+
+        :param L:
+        :type L: TopTools_ListOfShape &
         :param B: default value is 
         :type B: TCollection_AsciiString &
         :rtype: TCollection_AsciiString
@@ -5446,7 +5771,7 @@ class TopOpeBRepDS_Dumper(object):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_Dumper_SPrintShapeRefOri(self, *args)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(TopOpeBRepDS_Dumper self)"""
         return _TopOpeBRepDS.TopOpeBRepDS_Dumper__kill_pointed(self)
 
@@ -5473,7 +5798,7 @@ TopOpeBRepDS_Dumper._kill_pointed = new_instancemethod(_TopOpeBRepDS.TopOpeBRepD
 TopOpeBRepDS_Dumper_swigregister = _TopOpeBRepDS.TopOpeBRepDS_Dumper_swigregister
 TopOpeBRepDS_Dumper_swigregister(TopOpeBRepDS_Dumper)
 
-def TopOpeBRepDS_Dumper_PrintType(*args) -> "Standard_OStream &" :
+def TopOpeBRepDS_Dumper_PrintType(*args):
   """
     :param C:
     :type C: Handle_Geom_Curve &
@@ -5501,12 +5826,12 @@ class TopOpeBRepDS_EIR(object):
 
         """
         _TopOpeBRepDS.TopOpeBRepDS_EIR_swiginit(self,_TopOpeBRepDS.new_TopOpeBRepDS_EIR(*args))
-    def ProcessEdgeInterferences(self, *args) -> "void" :
+    def ProcessEdgeInterferences(self, *args):
         """
         :rtype: None
 
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :rtype: None
 
         """
@@ -5528,16 +5853,16 @@ TopOpeBRepDS_EIR_swigregister(TopOpeBRepDS_EIR)
 class TopOpeBRepDS_Edge3dInterferenceTool(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _TopOpeBRepDS.TopOpeBRepDS_Edge3dInterferenceTool_swiginit(self,_TopOpeBRepDS.new_TopOpeBRepDS_Edge3dInterferenceTool(*args))
-    def InitPointVertex(self, *args) -> "void" :
+        _TopOpeBRepDS.TopOpeBRepDS_Edge3dInterferenceTool_swiginit(self,_TopOpeBRepDS.new_TopOpeBRepDS_Edge3dInterferenceTool())
+    def InitPointVertex(self, *args):
         """
         :param IsVertex:
-        :type IsVertex: int
+        :type IsVertex: Standard_Integer
         :param VonOO:
         :type VonOO: TopoDS_Shape &
         :rtype: None
@@ -5545,7 +5870,7 @@ class TopOpeBRepDS_Edge3dInterferenceTool(object):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_Edge3dInterferenceTool_InitPointVertex(self, *args)
 
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
         :param Eref:
         :type Eref: TopoDS_Shape &
@@ -5560,7 +5885,7 @@ class TopOpeBRepDS_Edge3dInterferenceTool(object):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_Edge3dInterferenceTool_Init(self, *args)
 
-    def Add(self, *args) -> "void" :
+    def Add(self, *args):
         """
         :param Eref:
         :type Eref: TopoDS_Shape &
@@ -5575,7 +5900,7 @@ class TopOpeBRepDS_Edge3dInterferenceTool(object):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_Edge3dInterferenceTool_Add(self, *args)
 
-    def Transition(self, *args) -> "void" :
+    def Transition(self, *args):
         """
         :param I:
         :type I: Handle_TopOpeBRepDS_Interference &
@@ -5603,13 +5928,13 @@ TopOpeBRepDS_Edge3dInterferenceTool_swigregister(TopOpeBRepDS_Edge3dInterference
 class TopOpeBRepDS_EdgeInterferenceTool(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _TopOpeBRepDS.TopOpeBRepDS_EdgeInterferenceTool_swiginit(self,_TopOpeBRepDS.new_TopOpeBRepDS_EdgeInterferenceTool(*args))
-    def Init(self, *args) -> "void" :
+        _TopOpeBRepDS.TopOpeBRepDS_EdgeInterferenceTool_swiginit(self,_TopOpeBRepDS.new_TopOpeBRepDS_EdgeInterferenceTool())
+    def Init(self, *args):
         """
         :param E:
         :type E: TopoDS_Shape &
@@ -5620,7 +5945,7 @@ class TopOpeBRepDS_EdgeInterferenceTool(object):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_EdgeInterferenceTool_Init(self, *args)
 
-    def Add(self, *args) -> "void" :
+    def Add(self, *args):
         """
         :param E:
         :type E: TopoDS_Shape &
@@ -5641,7 +5966,7 @@ class TopOpeBRepDS_EdgeInterferenceTool(object):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_EdgeInterferenceTool_Add(self, *args)
 
-    def Transition(self, *args) -> "void" :
+    def Transition(self, *args):
         """
         :param I:
         :type I: Handle_TopOpeBRepDS_Interference &
@@ -5680,10 +6005,42 @@ class TopOpeBRepDS_Explorer(object):
         :type findkeep: bool
         :rtype: None
 
+        :param HDS:
+        :type HDS: Handle_TopOpeBRepDS_HDataStructure &
+        :param T: default value is TopAbs_SHAPE
+        :type T: TopAbs_ShapeEnum
+        :param findkeep: default value is Standard_True
+        :type findkeep: bool
+        :rtype: None
+
+        :param HDS:
+        :type HDS: Handle_TopOpeBRepDS_HDataStructure &
+        :param T: default value is TopAbs_SHAPE
+        :type T: TopAbs_ShapeEnum
+        :param findkeep: default value is Standard_True
+        :type findkeep: bool
+        :rtype: None
+
         """
         _TopOpeBRepDS.TopOpeBRepDS_Explorer_swiginit(self,_TopOpeBRepDS.new_TopOpeBRepDS_Explorer(*args))
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
+        :param HDS:
+        :type HDS: Handle_TopOpeBRepDS_HDataStructure &
+        :param T: default value is TopAbs_SHAPE
+        :type T: TopAbs_ShapeEnum
+        :param findkeep: default value is Standard_True
+        :type findkeep: bool
+        :rtype: None
+
+        :param HDS:
+        :type HDS: Handle_TopOpeBRepDS_HDataStructure &
+        :param T: default value is TopAbs_SHAPE
+        :type T: TopAbs_ShapeEnum
+        :param findkeep: default value is Standard_True
+        :type findkeep: bool
+        :rtype: None
+
         :param HDS:
         :type HDS: Handle_TopOpeBRepDS_HDataStructure &
         :param T: default value is TopAbs_SHAPE
@@ -5695,61 +6052,61 @@ class TopOpeBRepDS_Explorer(object):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_Explorer_Init(self, *args)
 
-    def Type(self, *args) -> "TopAbs_ShapeEnum" :
+    def Type(self):
         """
         :rtype: TopAbs_ShapeEnum
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_Explorer_Type(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_Explorer_Type(self)
 
-    def More(self, *args) -> "Standard_Boolean" :
+    def More(self):
         """
         :rtype: bool
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_Explorer_More(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_Explorer_More(self)
 
-    def Next(self, *args) -> "void" :
+    def Next(self):
         """
         :rtype: None
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_Explorer_Next(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_Explorer_Next(self)
 
-    def Current(self, *args) -> "TopoDS_Shape const" :
+    def Current(self):
         """
         :rtype: TopoDS_Shape
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_Explorer_Current(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_Explorer_Current(self)
 
-    def Index(self, *args) -> "Standard_Integer" :
+    def Index(self):
         """
         :rtype: int
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_Explorer_Index(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_Explorer_Index(self)
 
-    def Face(self, *args) -> "TopoDS_Face const" :
+    def Face(self):
         """
         :rtype: TopoDS_Face
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_Explorer_Face(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_Explorer_Face(self)
 
-    def Edge(self, *args) -> "TopoDS_Edge const" :
+    def Edge(self):
         """
         :rtype: TopoDS_Edge
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_Explorer_Edge(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_Explorer_Edge(self)
 
-    def Vertex(self, *args) -> "TopoDS_Vertex const" :
+    def Vertex(self):
         """
         :rtype: TopoDS_Vertex
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_Explorer_Vertex(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_Explorer_Vertex(self)
 
     def __del__(self):
     	try:
@@ -5783,14 +6140,14 @@ class TopOpeBRepDS_FIR(object):
 
         """
         _TopOpeBRepDS.TopOpeBRepDS_FIR_swiginit(self,_TopOpeBRepDS.new_TopOpeBRepDS_FIR(*args))
-    def ProcessFaceInterferences(self, *args) -> "void" :
+    def ProcessFaceInterferences(self, *args):
         """
         :param M:
         :type M: TopOpeBRepDS_DataMapOfShapeListOfShapeOn1State &
         :rtype: None
 
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :param M:
         :type M: TopOpeBRepDS_DataMapOfShapeListOfShapeOn1State &
         :rtype: None
@@ -5822,7 +6179,7 @@ class TopOpeBRepDS_FaceInterferenceTool(object):
 
         """
         _TopOpeBRepDS.TopOpeBRepDS_FaceInterferenceTool_swiginit(self,_TopOpeBRepDS.new_TopOpeBRepDS_FaceInterferenceTool(*args))
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
         * Eisnew = true if E is a new edge built on edge I->Geometry() 	 false if E is shape <=> I->Geometry()
 
@@ -5839,7 +6196,7 @@ class TopOpeBRepDS_FaceInterferenceTool(object):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_FaceInterferenceTool_Init(self, *args)
 
-    def Add(self, *args) -> "void" :
+    def Add(self, *args):
         """
         * Eisnew = true if E is a new edge built on edge I->Geometry() 	 false if E is shape <=> I->Geometry()
 
@@ -5866,7 +6223,7 @@ class TopOpeBRepDS_FaceInterferenceTool(object):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_FaceInterferenceTool_Add(self, *args)
 
-    def SetEdgePntPar(self, *args) -> "void" :
+    def SetEdgePntPar(self, *args):
         """
         :param P:
         :type P: gp_Pnt
@@ -5877,7 +6234,7 @@ class TopOpeBRepDS_FaceInterferenceTool(object):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_FaceInterferenceTool_SetEdgePntPar(self, *args)
 
-    def GetEdgePntPar(self, *args) -> "void" :
+    def GetEdgePntPar(self, *args):
         """
         :param P:
         :type P: gp_Pnt
@@ -5888,14 +6245,14 @@ class TopOpeBRepDS_FaceInterferenceTool(object):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_FaceInterferenceTool_GetEdgePntPar(self, *args)
 
-    def IsEdgePntParDef(self, *args) -> "Standard_Boolean" :
+    def IsEdgePntParDef(self):
         """
         :rtype: bool
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_FaceInterferenceTool_IsEdgePntParDef(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_FaceInterferenceTool_IsEdgePntParDef(self)
 
-    def Transition(self, *args) -> "void" :
+    def Transition(self, *args):
         """
         :param I:
         :type I: Handle_TopOpeBRepDS_Interference &
@@ -5933,23 +6290,29 @@ class TopOpeBRepDS_Filter(object):
         :type pClassif: TopOpeBRepTool_PShapeClassifier &
         :rtype: None
 
+        :param HDS:
+        :type HDS: Handle_TopOpeBRepDS_HDataStructure &
+        :param pClassif: default value is 0
+        :type pClassif: TopOpeBRepTool_PShapeClassifier &
+        :rtype: None
+
         """
         _TopOpeBRepDS.TopOpeBRepDS_Filter_swiginit(self,_TopOpeBRepDS.new_TopOpeBRepDS_Filter(*args))
-    def ProcessInterferences(self, *args) -> "void" :
+    def ProcessInterferences(self):
         """
         :rtype: None
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_Filter_ProcessInterferences(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_Filter_ProcessInterferences(self)
 
-    def ProcessFaceInterferences(self, *args) -> "void" :
+    def ProcessFaceInterferences(self, *args):
         """
         :param MEsp:
         :type MEsp: TopOpeBRepDS_DataMapOfShapeListOfShapeOn1State &
         :rtype: None
 
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :param MEsp:
         :type MEsp: TopOpeBRepDS_DataMapOfShapeListOfShapeOn1State &
         :rtype: None
@@ -5957,23 +6320,23 @@ class TopOpeBRepDS_Filter(object):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_Filter_ProcessFaceInterferences(self, *args)
 
-    def ProcessEdgeInterferences(self, *args) -> "void" :
+    def ProcessEdgeInterferences(self, *args):
         """
         :rtype: None
 
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :rtype: None
 
         """
         return _TopOpeBRepDS.TopOpeBRepDS_Filter_ProcessEdgeInterferences(self, *args)
 
-    def ProcessCurveInterferences(self, *args) -> "void" :
+    def ProcessCurveInterferences(self, *args):
         """
         :rtype: None
 
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :rtype: None
 
         """
@@ -6006,14 +6369,14 @@ class TopOpeBRepDS_GapFiller(object):
 
         """
         _TopOpeBRepDS.TopOpeBRepDS_GapFiller_swiginit(self,_TopOpeBRepDS.new_TopOpeBRepDS_GapFiller(*args))
-    def Perform(self, *args) -> "void" :
+    def Perform(self):
         """
         :rtype: None
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_GapFiller_Perform(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_GapFiller_Perform(self)
 
-    def FindAssociatedPoints(self, *args) -> "void" :
+    def FindAssociatedPoints(self, *args):
         """
         * Recherche parmi l'ensemble des points d'Interference la Liste <LI> des points qui correspondent au point d'indice <Index>
 
@@ -6026,7 +6389,7 @@ class TopOpeBRepDS_GapFiller(object):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_GapFiller_FindAssociatedPoints(self, *args)
 
-    def CheckConnexity(self, *args) -> "Standard_Boolean" :
+    def CheckConnexity(self, *args):
         """
         * //!Enchaine les sections via les points d'Interferences deja  associe; Renvoit dans <L> les points extremites des Lignes. Methodes pour construire la liste des Points qui peuvent correspondre a une Point donne.
 
@@ -6037,7 +6400,7 @@ class TopOpeBRepDS_GapFiller(object):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_GapFiller_CheckConnexity(self, *args)
 
-    def AddPointsOnShape(self, *args) -> "void" :
+    def AddPointsOnShape(self, *args):
         """
         :param S:
         :type S: TopoDS_Shape &
@@ -6048,7 +6411,7 @@ class TopOpeBRepDS_GapFiller(object):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_GapFiller_AddPointsOnShape(self, *args)
 
-    def AddPointsOnConnexShape(self, *args) -> "void" :
+    def AddPointsOnConnexShape(self, *args):
         """
         * Methodes pour reduire la liste des Points qui peuvent correspondre a une Point donne.
 
@@ -6061,7 +6424,7 @@ class TopOpeBRepDS_GapFiller(object):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_GapFiller_AddPointsOnConnexShape(self, *args)
 
-    def FilterByFace(self, *args) -> "void" :
+    def FilterByFace(self, *args):
         """
         :param F:
         :type F: TopoDS_Face &
@@ -6072,7 +6435,7 @@ class TopOpeBRepDS_GapFiller(object):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_GapFiller_FilterByFace(self, *args)
 
-    def FilterByEdge(self, *args) -> "void" :
+    def FilterByEdge(self, *args):
         """
         :param E:
         :type E: TopoDS_Edge &
@@ -6083,7 +6446,7 @@ class TopOpeBRepDS_GapFiller(object):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_GapFiller_FilterByEdge(self, *args)
 
-    def FilterByIncidentDistance(self, *args) -> "void" :
+    def FilterByIncidentDistance(self, *args):
         """
         :param F:
         :type F: TopoDS_Face &
@@ -6096,7 +6459,7 @@ class TopOpeBRepDS_GapFiller(object):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_GapFiller_FilterByIncidentDistance(self, *args)
 
-    def IsOnFace(self, *args) -> "Standard_Boolean" :
+    def IsOnFace(self, *args):
         """
         * Return True si I a ete obtenu par une intersection avec <F>.
 
@@ -6109,7 +6472,7 @@ class TopOpeBRepDS_GapFiller(object):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_GapFiller_IsOnFace(self, *args)
 
-    def IsOnEdge(self, *args) -> "Standard_Boolean" :
+    def IsOnEdge(self, *args):
         """
         * Return True si I ou une de ses representaions a pour support <E>. Methodes de reconstructions des geometries des point et des courbes de section
 
@@ -6122,14 +6485,14 @@ class TopOpeBRepDS_GapFiller(object):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_GapFiller_IsOnEdge(self, *args)
 
-    def BuildNewGeometries(self, *args) -> "void" :
+    def BuildNewGeometries(self):
         """
         :rtype: None
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_GapFiller_BuildNewGeometries(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_GapFiller_BuildNewGeometries(self)
 
-    def ReBuildGeom(self, *args) -> "void" :
+    def ReBuildGeom(self, *args):
         """
         :param I1:
         :type I1: Handle_TopOpeBRepDS_Interference &
@@ -6177,7 +6540,7 @@ class TopOpeBRepDS_GapTool(OCC.MMgt.MMgt_TShared):
 
         """
         _TopOpeBRepDS.TopOpeBRepDS_GapTool_swiginit(self,_TopOpeBRepDS.new_TopOpeBRepDS_GapTool(*args))
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
         :param HDS:
         :type HDS: Handle_TopOpeBRepDS_HDataStructure &
@@ -6186,16 +6549,16 @@ class TopOpeBRepDS_GapTool(OCC.MMgt.MMgt_TShared):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_GapTool_Init(self, *args)
 
-    def Interferences(self, *args) -> "TopOpeBRepDS_ListOfInterference const &" :
+    def Interferences(self, *args):
         """
         :param IndexPoint:
-        :type IndexPoint: int
+        :type IndexPoint: Standard_Integer
         :rtype: TopOpeBRepDS_ListOfInterference
 
         """
         return _TopOpeBRepDS.TopOpeBRepDS_GapTool_Interferences(self, *args)
 
-    def SameInterferences(self, *args) -> "TopOpeBRepDS_ListOfInterference const &" :
+    def SameInterferences(self, *args):
         """
         :param I:
         :type I: Handle_TopOpeBRepDS_Interference &
@@ -6204,7 +6567,7 @@ class TopOpeBRepDS_GapTool(OCC.MMgt.MMgt_TShared):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_GapTool_SameInterferences(self, *args)
 
-    def ChangeSameInterferences(self, *args) -> "TopOpeBRepDS_ListOfInterference &" :
+    def ChangeSameInterferences(self, *args):
         """
         :param I:
         :type I: Handle_TopOpeBRepDS_Interference &
@@ -6213,7 +6576,7 @@ class TopOpeBRepDS_GapTool(OCC.MMgt.MMgt_TShared):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_GapTool_ChangeSameInterferences(self, *args)
 
-    def Curve(self, *args) -> "Standard_Boolean" :
+    def Curve(self, *args):
         """
         :param I:
         :type I: Handle_TopOpeBRepDS_Interference &
@@ -6224,7 +6587,7 @@ class TopOpeBRepDS_GapTool(OCC.MMgt.MMgt_TShared):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_GapTool_Curve(self, *args)
 
-    def EdgeSupport(self, *args) -> "Standard_Boolean" :
+    def EdgeSupport(self, *args):
         """
         :param I:
         :type I: Handle_TopOpeBRepDS_Interference &
@@ -6235,7 +6598,7 @@ class TopOpeBRepDS_GapTool(OCC.MMgt.MMgt_TShared):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_GapTool_EdgeSupport(self, *args)
 
-    def FacesSupport(self, *args) -> "Standard_Boolean" :
+    def FacesSupport(self, *args):
         """
         * Return les faces qui ont genere la section origine de I
 
@@ -6250,7 +6613,7 @@ class TopOpeBRepDS_GapTool(OCC.MMgt.MMgt_TShared):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_GapTool_FacesSupport(self, *args)
 
-    def ParameterOnEdge(self, *args) -> "Standard_Boolean" :
+    def ParameterOnEdge(self, *args):
         """
         :param I:
         :type I: Handle_TopOpeBRepDS_Interference &
@@ -6263,18 +6626,18 @@ class TopOpeBRepDS_GapTool(OCC.MMgt.MMgt_TShared):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_GapTool_ParameterOnEdge(self, *args)
 
-    def SetPoint(self, *args) -> "void" :
+    def SetPoint(self, *args):
         """
         :param I:
         :type I: Handle_TopOpeBRepDS_Interference &
         :param IndexPoint:
-        :type IndexPoint: int
+        :type IndexPoint: Standard_Integer
         :rtype: None
 
         """
         return _TopOpeBRepDS.TopOpeBRepDS_GapTool_SetPoint(self, *args)
 
-    def SetParameterOnEdge(self, *args) -> "void" :
+    def SetParameterOnEdge(self, *args):
         """
         :param I:
         :type I: Handle_TopOpeBRepDS_Interference &
@@ -6287,11 +6650,11 @@ class TopOpeBRepDS_GapTool(OCC.MMgt.MMgt_TShared):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_GapTool_SetParameterOnEdge(self, *args)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(TopOpeBRepDS_GapTool self)"""
         return _TopOpeBRepDS.TopOpeBRepDS_GapTool__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_TopOpeBRepDS_GapTool" :
+    def GetHandle(self):
         """GetHandle(TopOpeBRepDS_GapTool self) -> Handle_TopOpeBRepDS_GapTool"""
         return _TopOpeBRepDS.TopOpeBRepDS_GapTool_GetHandle(self)
 
@@ -6339,7 +6702,7 @@ Handle_TopOpeBRepDS_GapTool._kill_pointed = new_instancemethod(_TopOpeBRepDS.Han
 Handle_TopOpeBRepDS_GapTool_swigregister = _TopOpeBRepDS.Handle_TopOpeBRepDS_GapTool_swigregister
 Handle_TopOpeBRepDS_GapTool_swigregister(Handle_TopOpeBRepDS_GapTool)
 
-def Handle_TopOpeBRepDS_GapTool_DownCast(*args) -> "Handle_TopOpeBRepDS_GapTool const" :
+def Handle_TopOpeBRepDS_GapTool_DownCast(*args):
   return _TopOpeBRepDS.Handle_TopOpeBRepDS_GapTool_DownCast(*args)
 Handle_TopOpeBRepDS_GapTool_DownCast = _TopOpeBRepDS.Handle_TopOpeBRepDS_GapTool_DownCast
 
@@ -6356,7 +6719,7 @@ class TopOpeBRepDS_GeometryData(object):
 
         """
         _TopOpeBRepDS.TopOpeBRepDS_GeometryData_swiginit(self,_TopOpeBRepDS.new_TopOpeBRepDS_GeometryData(*args))
-    def Assign(self, *args) -> "void" :
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: TopOpeBRepDS_GeometryData &
@@ -6365,7 +6728,7 @@ class TopOpeBRepDS_GeometryData(object):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_GeometryData_Assign(self, *args)
 
-    def Set(self, *args) -> "void" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: TopOpeBRepDS_GeometryData &
@@ -6374,21 +6737,21 @@ class TopOpeBRepDS_GeometryData(object):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_GeometryData_Set(self, *args)
 
-    def Interferences(self, *args) -> "TopOpeBRepDS_ListOfInterference const &" :
+    def Interferences(self):
         """
         :rtype: TopOpeBRepDS_ListOfInterference
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_GeometryData_Interferences(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_GeometryData_Interferences(self)
 
-    def ChangeInterferences(self, *args) -> "TopOpeBRepDS_ListOfInterference &" :
+    def ChangeInterferences(self):
         """
         :rtype: TopOpeBRepDS_ListOfInterference
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_GeometryData_ChangeInterferences(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_GeometryData_ChangeInterferences(self)
 
-    def AddInterference(self, *args) -> "void" :
+    def AddInterference(self, *args):
         """
         :param I:
         :type I: Handle_TopOpeBRepDS_Interference &
@@ -6420,22 +6783,22 @@ class TopOpeBRepDS_HArray1OfDataMapOfIntegerListOfInterference(OCC.MMgt.MMgt_TSh
     def __init__(self, *args): 
         """
         :param Low:
-        :type Low: int
+        :type Low: Standard_Integer
         :param Up:
-        :type Up: int
+        :type Up: Standard_Integer
         :rtype: None
 
         :param Low:
-        :type Low: int
+        :type Low: Standard_Integer
         :param Up:
-        :type Up: int
+        :type Up: Standard_Integer
         :param V:
         :type V: TopOpeBRepDS_DataMapOfIntegerListOfInterference &
         :rtype: None
 
         """
         _TopOpeBRepDS.TopOpeBRepDS_HArray1OfDataMapOfIntegerListOfInterference_swiginit(self,_TopOpeBRepDS.new_TopOpeBRepDS_HArray1OfDataMapOfIntegerListOfInterference(*args))
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
         :param V:
         :type V: TopOpeBRepDS_DataMapOfIntegerListOfInterference &
@@ -6444,31 +6807,31 @@ class TopOpeBRepDS_HArray1OfDataMapOfIntegerListOfInterference(OCC.MMgt.MMgt_TSh
         """
         return _TopOpeBRepDS.TopOpeBRepDS_HArray1OfDataMapOfIntegerListOfInterference_Init(self, *args)
 
-    def Length(self, *args) -> "Standard_Integer" :
+    def Length(self):
         """
         :rtype: int
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_HArray1OfDataMapOfIntegerListOfInterference_Length(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_HArray1OfDataMapOfIntegerListOfInterference_Length(self)
 
-    def Lower(self, *args) -> "Standard_Integer" :
+    def Lower(self):
         """
         :rtype: int
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_HArray1OfDataMapOfIntegerListOfInterference_Lower(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_HArray1OfDataMapOfIntegerListOfInterference_Lower(self)
 
-    def Upper(self, *args) -> "Standard_Integer" :
+    def Upper(self):
         """
         :rtype: int
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_HArray1OfDataMapOfIntegerListOfInterference_Upper(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_HArray1OfDataMapOfIntegerListOfInterference_Upper(self)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Value:
         :type Value: TopOpeBRepDS_DataMapOfIntegerListOfInterference &
         :rtype: None
@@ -6476,43 +6839,43 @@ class TopOpeBRepDS_HArray1OfDataMapOfIntegerListOfInterference(OCC.MMgt.MMgt_TSh
         """
         return _TopOpeBRepDS.TopOpeBRepDS_HArray1OfDataMapOfIntegerListOfInterference_SetValue(self, *args)
 
-    def Value(self, *args) -> "TopOpeBRepDS_DataMapOfIntegerListOfInterference const &" :
+    def Value(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: TopOpeBRepDS_DataMapOfIntegerListOfInterference
 
         """
         return _TopOpeBRepDS.TopOpeBRepDS_HArray1OfDataMapOfIntegerListOfInterference_Value(self, *args)
 
-    def ChangeValue(self, *args) -> "TopOpeBRepDS_DataMapOfIntegerListOfInterference &" :
+    def ChangeValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: TopOpeBRepDS_DataMapOfIntegerListOfInterference
 
         """
         return _TopOpeBRepDS.TopOpeBRepDS_HArray1OfDataMapOfIntegerListOfInterference_ChangeValue(self, *args)
 
-    def Array1(self, *args) -> "TopOpeBRepDS_Array1OfDataMapOfIntegerListOfInterference const &" :
+    def Array1(self):
         """
         :rtype: TopOpeBRepDS_Array1OfDataMapOfIntegerListOfInterference
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_HArray1OfDataMapOfIntegerListOfInterference_Array1(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_HArray1OfDataMapOfIntegerListOfInterference_Array1(self)
 
-    def ChangeArray1(self, *args) -> "TopOpeBRepDS_Array1OfDataMapOfIntegerListOfInterference &" :
+    def ChangeArray1(self):
         """
         :rtype: TopOpeBRepDS_Array1OfDataMapOfIntegerListOfInterference
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_HArray1OfDataMapOfIntegerListOfInterference_ChangeArray1(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_HArray1OfDataMapOfIntegerListOfInterference_ChangeArray1(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(TopOpeBRepDS_HArray1OfDataMapOfIntegerListOfInterference self)"""
         return _TopOpeBRepDS.TopOpeBRepDS_HArray1OfDataMapOfIntegerListOfInterference__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_TopOpeBRepDS_HArray1OfDataMapOfIntegerListOfInterference" :
+    def GetHandle(self):
         """GetHandle(TopOpeBRepDS_HArray1OfDataMapOfIntegerListOfInterference self) -> Handle_TopOpeBRepDS_HArray1OfDataMapOfIntegerListOfInterference"""
         return _TopOpeBRepDS.TopOpeBRepDS_HArray1OfDataMapOfIntegerListOfInterference_GetHandle(self)
 
@@ -6559,7 +6922,7 @@ Handle_TopOpeBRepDS_HArray1OfDataMapOfIntegerListOfInterference._kill_pointed = 
 Handle_TopOpeBRepDS_HArray1OfDataMapOfIntegerListOfInterference_swigregister = _TopOpeBRepDS.Handle_TopOpeBRepDS_HArray1OfDataMapOfIntegerListOfInterference_swigregister
 Handle_TopOpeBRepDS_HArray1OfDataMapOfIntegerListOfInterference_swigregister(Handle_TopOpeBRepDS_HArray1OfDataMapOfIntegerListOfInterference)
 
-def Handle_TopOpeBRepDS_HArray1OfDataMapOfIntegerListOfInterference_DownCast(*args) -> "Handle_TopOpeBRepDS_HArray1OfDataMapOfIntegerListOfInterference const" :
+def Handle_TopOpeBRepDS_HArray1OfDataMapOfIntegerListOfInterference_DownCast(*args):
   return _TopOpeBRepDS.Handle_TopOpeBRepDS_HArray1OfDataMapOfIntegerListOfInterference_DownCast(*args)
 Handle_TopOpeBRepDS_HArray1OfDataMapOfIntegerListOfInterference_DownCast = _TopOpeBRepDS.Handle_TopOpeBRepDS_HArray1OfDataMapOfIntegerListOfInterference_DownCast
 
@@ -6571,7 +6934,7 @@ class TopOpeBRepDS_IndexedDataMapNodeOfIndexedDataMapOfShapeWithState(OCC.TColle
         :param K1:
         :type K1: TopoDS_Shape &
         :param K2:
-        :type K2: int
+        :type K2: Standard_Integer
         :param I:
         :type I: TopOpeBRepDS_ShapeWithState &
         :param n1:
@@ -6582,40 +6945,40 @@ class TopOpeBRepDS_IndexedDataMapNodeOfIndexedDataMapOfShapeWithState(OCC.TColle
 
         """
         _TopOpeBRepDS.TopOpeBRepDS_IndexedDataMapNodeOfIndexedDataMapOfShapeWithState_swiginit(self,_TopOpeBRepDS.new_TopOpeBRepDS_IndexedDataMapNodeOfIndexedDataMapOfShapeWithState(*args))
-    def Key1(self, *args) -> "TopoDS_Shape" :
+    def Key1(self):
         """
         :rtype: TopoDS_Shape
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_IndexedDataMapNodeOfIndexedDataMapOfShapeWithState_Key1(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_IndexedDataMapNodeOfIndexedDataMapOfShapeWithState_Key1(self)
 
-    def GetKey2(self) -> "Standard_Integer" :
+    def GetKey2(self):
         """GetKey2(TopOpeBRepDS_IndexedDataMapNodeOfIndexedDataMapOfShapeWithState self) -> Standard_Integer"""
         return _TopOpeBRepDS.TopOpeBRepDS_IndexedDataMapNodeOfIndexedDataMapOfShapeWithState_GetKey2(self)
 
-    def SetKey2(self, *args) -> "void" :
+    def SetKey2(self, *args):
         """SetKey2(TopOpeBRepDS_IndexedDataMapNodeOfIndexedDataMapOfShapeWithState self, Standard_Integer value)"""
         return _TopOpeBRepDS.TopOpeBRepDS_IndexedDataMapNodeOfIndexedDataMapOfShapeWithState_SetKey2(self, *args)
 
-    def Next2(self, *args) -> "TCollection_MapNodePtr &" :
+    def Next2(self):
         """
         :rtype: TCollection_MapNodePtr
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_IndexedDataMapNodeOfIndexedDataMapOfShapeWithState_Next2(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_IndexedDataMapNodeOfIndexedDataMapOfShapeWithState_Next2(self)
 
-    def Value(self, *args) -> "TopOpeBRepDS_ShapeWithState &" :
+    def Value(self):
         """
         :rtype: TopOpeBRepDS_ShapeWithState
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_IndexedDataMapNodeOfIndexedDataMapOfShapeWithState_Value(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_IndexedDataMapNodeOfIndexedDataMapOfShapeWithState_Value(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(TopOpeBRepDS_IndexedDataMapNodeOfIndexedDataMapOfShapeWithState self)"""
         return _TopOpeBRepDS.TopOpeBRepDS_IndexedDataMapNodeOfIndexedDataMapOfShapeWithState__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_TopOpeBRepDS_IndexedDataMapNodeOfIndexedDataMapOfShapeWithState" :
+    def GetHandle(self):
         """GetHandle(TopOpeBRepDS_IndexedDataMapNodeOfIndexedDataMapOfShapeWithState self) -> Handle_TopOpeBRepDS_IndexedDataMapNodeOfIndexedDataMapOfShapeWithState"""
         return _TopOpeBRepDS.TopOpeBRepDS_IndexedDataMapNodeOfIndexedDataMapOfShapeWithState_GetHandle(self)
 
@@ -6658,7 +7021,7 @@ Handle_TopOpeBRepDS_IndexedDataMapNodeOfIndexedDataMapOfShapeWithState._kill_poi
 Handle_TopOpeBRepDS_IndexedDataMapNodeOfIndexedDataMapOfShapeWithState_swigregister = _TopOpeBRepDS.Handle_TopOpeBRepDS_IndexedDataMapNodeOfIndexedDataMapOfShapeWithState_swigregister
 Handle_TopOpeBRepDS_IndexedDataMapNodeOfIndexedDataMapOfShapeWithState_swigregister(Handle_TopOpeBRepDS_IndexedDataMapNodeOfIndexedDataMapOfShapeWithState)
 
-def Handle_TopOpeBRepDS_IndexedDataMapNodeOfIndexedDataMapOfShapeWithState_DownCast(*args) -> "Handle_TopOpeBRepDS_IndexedDataMapNodeOfIndexedDataMapOfShapeWithState const" :
+def Handle_TopOpeBRepDS_IndexedDataMapNodeOfIndexedDataMapOfShapeWithState_DownCast(*args):
   return _TopOpeBRepDS.Handle_TopOpeBRepDS_IndexedDataMapNodeOfIndexedDataMapOfShapeWithState_DownCast(*args)
 Handle_TopOpeBRepDS_IndexedDataMapNodeOfIndexedDataMapOfShapeWithState_DownCast = _TopOpeBRepDS.Handle_TopOpeBRepDS_IndexedDataMapNodeOfIndexedDataMapOfShapeWithState_DownCast
 
@@ -6670,7 +7033,7 @@ class TopOpeBRepDS_IndexedDataMapNodeOfIndexedDataMapOfVertexPoint(OCC.TCollecti
         :param K1:
         :type K1: TopoDS_Shape &
         :param K2:
-        :type K2: int
+        :type K2: Standard_Integer
         :param I:
         :type I: TopOpeBRepDS_Point &
         :param n1:
@@ -6681,40 +7044,40 @@ class TopOpeBRepDS_IndexedDataMapNodeOfIndexedDataMapOfVertexPoint(OCC.TCollecti
 
         """
         _TopOpeBRepDS.TopOpeBRepDS_IndexedDataMapNodeOfIndexedDataMapOfVertexPoint_swiginit(self,_TopOpeBRepDS.new_TopOpeBRepDS_IndexedDataMapNodeOfIndexedDataMapOfVertexPoint(*args))
-    def Key1(self, *args) -> "TopoDS_Shape" :
+    def Key1(self):
         """
         :rtype: TopoDS_Shape
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_IndexedDataMapNodeOfIndexedDataMapOfVertexPoint_Key1(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_IndexedDataMapNodeOfIndexedDataMapOfVertexPoint_Key1(self)
 
-    def GetKey2(self) -> "Standard_Integer" :
+    def GetKey2(self):
         """GetKey2(TopOpeBRepDS_IndexedDataMapNodeOfIndexedDataMapOfVertexPoint self) -> Standard_Integer"""
         return _TopOpeBRepDS.TopOpeBRepDS_IndexedDataMapNodeOfIndexedDataMapOfVertexPoint_GetKey2(self)
 
-    def SetKey2(self, *args) -> "void" :
+    def SetKey2(self, *args):
         """SetKey2(TopOpeBRepDS_IndexedDataMapNodeOfIndexedDataMapOfVertexPoint self, Standard_Integer value)"""
         return _TopOpeBRepDS.TopOpeBRepDS_IndexedDataMapNodeOfIndexedDataMapOfVertexPoint_SetKey2(self, *args)
 
-    def Next2(self, *args) -> "TCollection_MapNodePtr &" :
+    def Next2(self):
         """
         :rtype: TCollection_MapNodePtr
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_IndexedDataMapNodeOfIndexedDataMapOfVertexPoint_Next2(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_IndexedDataMapNodeOfIndexedDataMapOfVertexPoint_Next2(self)
 
-    def Value(self, *args) -> "TopOpeBRepDS_Point &" :
+    def Value(self):
         """
         :rtype: TopOpeBRepDS_Point
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_IndexedDataMapNodeOfIndexedDataMapOfVertexPoint_Value(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_IndexedDataMapNodeOfIndexedDataMapOfVertexPoint_Value(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(TopOpeBRepDS_IndexedDataMapNodeOfIndexedDataMapOfVertexPoint self)"""
         return _TopOpeBRepDS.TopOpeBRepDS_IndexedDataMapNodeOfIndexedDataMapOfVertexPoint__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_TopOpeBRepDS_IndexedDataMapNodeOfIndexedDataMapOfVertexPoint" :
+    def GetHandle(self):
         """GetHandle(TopOpeBRepDS_IndexedDataMapNodeOfIndexedDataMapOfVertexPoint self) -> Handle_TopOpeBRepDS_IndexedDataMapNodeOfIndexedDataMapOfVertexPoint"""
         return _TopOpeBRepDS.TopOpeBRepDS_IndexedDataMapNodeOfIndexedDataMapOfVertexPoint_GetHandle(self)
 
@@ -6757,7 +7120,7 @@ Handle_TopOpeBRepDS_IndexedDataMapNodeOfIndexedDataMapOfVertexPoint._kill_pointe
 Handle_TopOpeBRepDS_IndexedDataMapNodeOfIndexedDataMapOfVertexPoint_swigregister = _TopOpeBRepDS.Handle_TopOpeBRepDS_IndexedDataMapNodeOfIndexedDataMapOfVertexPoint_swigregister
 Handle_TopOpeBRepDS_IndexedDataMapNodeOfIndexedDataMapOfVertexPoint_swigregister(Handle_TopOpeBRepDS_IndexedDataMapNodeOfIndexedDataMapOfVertexPoint)
 
-def Handle_TopOpeBRepDS_IndexedDataMapNodeOfIndexedDataMapOfVertexPoint_DownCast(*args) -> "Handle_TopOpeBRepDS_IndexedDataMapNodeOfIndexedDataMapOfVertexPoint const" :
+def Handle_TopOpeBRepDS_IndexedDataMapNodeOfIndexedDataMapOfVertexPoint_DownCast(*args):
   return _TopOpeBRepDS.Handle_TopOpeBRepDS_IndexedDataMapNodeOfIndexedDataMapOfVertexPoint_DownCast(*args)
 Handle_TopOpeBRepDS_IndexedDataMapNodeOfIndexedDataMapOfVertexPoint_DownCast = _TopOpeBRepDS.Handle_TopOpeBRepDS_IndexedDataMapNodeOfIndexedDataMapOfVertexPoint_DownCast
 
@@ -6769,7 +7132,7 @@ class TopOpeBRepDS_IndexedDataMapNodeOfMapOfShapeData(OCC.TCollection.TCollectio
         :param K1:
         :type K1: TopoDS_Shape &
         :param K2:
-        :type K2: int
+        :type K2: Standard_Integer
         :param I:
         :type I: TopOpeBRepDS_ShapeData &
         :param n1:
@@ -6780,40 +7143,40 @@ class TopOpeBRepDS_IndexedDataMapNodeOfMapOfShapeData(OCC.TCollection.TCollectio
 
         """
         _TopOpeBRepDS.TopOpeBRepDS_IndexedDataMapNodeOfMapOfShapeData_swiginit(self,_TopOpeBRepDS.new_TopOpeBRepDS_IndexedDataMapNodeOfMapOfShapeData(*args))
-    def Key1(self, *args) -> "TopoDS_Shape" :
+    def Key1(self):
         """
         :rtype: TopoDS_Shape
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_IndexedDataMapNodeOfMapOfShapeData_Key1(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_IndexedDataMapNodeOfMapOfShapeData_Key1(self)
 
-    def GetKey2(self) -> "Standard_Integer" :
+    def GetKey2(self):
         """GetKey2(TopOpeBRepDS_IndexedDataMapNodeOfMapOfShapeData self) -> Standard_Integer"""
         return _TopOpeBRepDS.TopOpeBRepDS_IndexedDataMapNodeOfMapOfShapeData_GetKey2(self)
 
-    def SetKey2(self, *args) -> "void" :
+    def SetKey2(self, *args):
         """SetKey2(TopOpeBRepDS_IndexedDataMapNodeOfMapOfShapeData self, Standard_Integer value)"""
         return _TopOpeBRepDS.TopOpeBRepDS_IndexedDataMapNodeOfMapOfShapeData_SetKey2(self, *args)
 
-    def Next2(self, *args) -> "TCollection_MapNodePtr &" :
+    def Next2(self):
         """
         :rtype: TCollection_MapNodePtr
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_IndexedDataMapNodeOfMapOfShapeData_Next2(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_IndexedDataMapNodeOfMapOfShapeData_Next2(self)
 
-    def Value(self, *args) -> "TopOpeBRepDS_ShapeData &" :
+    def Value(self):
         """
         :rtype: TopOpeBRepDS_ShapeData
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_IndexedDataMapNodeOfMapOfShapeData_Value(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_IndexedDataMapNodeOfMapOfShapeData_Value(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(TopOpeBRepDS_IndexedDataMapNodeOfMapOfShapeData self)"""
         return _TopOpeBRepDS.TopOpeBRepDS_IndexedDataMapNodeOfMapOfShapeData__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_TopOpeBRepDS_IndexedDataMapNodeOfMapOfShapeData" :
+    def GetHandle(self):
         """GetHandle(TopOpeBRepDS_IndexedDataMapNodeOfMapOfShapeData self) -> Handle_TopOpeBRepDS_IndexedDataMapNodeOfMapOfShapeData"""
         return _TopOpeBRepDS.TopOpeBRepDS_IndexedDataMapNodeOfMapOfShapeData_GetHandle(self)
 
@@ -6856,22 +7219,26 @@ Handle_TopOpeBRepDS_IndexedDataMapNodeOfMapOfShapeData._kill_pointed = new_insta
 Handle_TopOpeBRepDS_IndexedDataMapNodeOfMapOfShapeData_swigregister = _TopOpeBRepDS.Handle_TopOpeBRepDS_IndexedDataMapNodeOfMapOfShapeData_swigregister
 Handle_TopOpeBRepDS_IndexedDataMapNodeOfMapOfShapeData_swigregister(Handle_TopOpeBRepDS_IndexedDataMapNodeOfMapOfShapeData)
 
-def Handle_TopOpeBRepDS_IndexedDataMapNodeOfMapOfShapeData_DownCast(*args) -> "Handle_TopOpeBRepDS_IndexedDataMapNodeOfMapOfShapeData const" :
+def Handle_TopOpeBRepDS_IndexedDataMapNodeOfMapOfShapeData_DownCast(*args):
   return _TopOpeBRepDS.Handle_TopOpeBRepDS_IndexedDataMapNodeOfMapOfShapeData_DownCast(*args)
 Handle_TopOpeBRepDS_IndexedDataMapNodeOfMapOfShapeData_DownCast = _TopOpeBRepDS.Handle_TopOpeBRepDS_IndexedDataMapNodeOfMapOfShapeData_DownCast
 
 class TopOpeBRepDS_IndexedDataMapOfShapeWithState(OCC.TCollection.TCollection_BasicMap):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self, NbBuckets=1): 
         """
         :param NbBuckets: default value is 1
-        :type NbBuckets: int
+        :type NbBuckets: Standard_Integer
+        :rtype: None
+
+        :param NbBuckets: default value is 1
+        :type NbBuckets: Standard_Integer
         :rtype: None
 
         """
-        _TopOpeBRepDS.TopOpeBRepDS_IndexedDataMapOfShapeWithState_swiginit(self,_TopOpeBRepDS.new_TopOpeBRepDS_IndexedDataMapOfShapeWithState(*args))
-    def Assign(self, *args) -> "TopOpeBRepDS_IndexedDataMapOfShapeWithState &" :
+        _TopOpeBRepDS.TopOpeBRepDS_IndexedDataMapOfShapeWithState_swiginit(self,_TopOpeBRepDS.new_TopOpeBRepDS_IndexedDataMapOfShapeWithState(NbBuckets))
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: TopOpeBRepDS_IndexedDataMapOfShapeWithState &
@@ -6880,7 +7247,7 @@ class TopOpeBRepDS_IndexedDataMapOfShapeWithState(OCC.TCollection.TCollection_Ba
         """
         return _TopOpeBRepDS.TopOpeBRepDS_IndexedDataMapOfShapeWithState_Assign(self, *args)
 
-    def Set(self, *args) -> "TopOpeBRepDS_IndexedDataMapOfShapeWithState &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: TopOpeBRepDS_IndexedDataMapOfShapeWithState &
@@ -6889,23 +7256,23 @@ class TopOpeBRepDS_IndexedDataMapOfShapeWithState(OCC.TCollection.TCollection_Ba
         """
         return _TopOpeBRepDS.TopOpeBRepDS_IndexedDataMapOfShapeWithState_Set(self, *args)
 
-    def ReSize(self, *args) -> "void" :
+    def ReSize(self, *args):
         """
         :param NbBuckets:
-        :type NbBuckets: int
+        :type NbBuckets: Standard_Integer
         :rtype: None
 
         """
         return _TopOpeBRepDS.TopOpeBRepDS_IndexedDataMapOfShapeWithState_ReSize(self, *args)
 
-    def Clear(self, *args) -> "void" :
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_IndexedDataMapOfShapeWithState_Clear(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_IndexedDataMapOfShapeWithState_Clear(self)
 
-    def Add(self, *args) -> "Standard_Integer" :
+    def Add(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -6916,10 +7283,10 @@ class TopOpeBRepDS_IndexedDataMapOfShapeWithState(OCC.TCollection.TCollection_Ba
         """
         return _TopOpeBRepDS.TopOpeBRepDS_IndexedDataMapOfShapeWithState_Add(self, *args)
 
-    def Substitute(self, *args) -> "void" :
+    def Substitute(self, *args):
         """
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :param K:
         :type K: TopoDS_Shape &
         :param T:
@@ -6929,14 +7296,14 @@ class TopOpeBRepDS_IndexedDataMapOfShapeWithState(OCC.TCollection.TCollection_Ba
         """
         return _TopOpeBRepDS.TopOpeBRepDS_IndexedDataMapOfShapeWithState_Substitute(self, *args)
 
-    def RemoveLast(self, *args) -> "void" :
+    def RemoveLast(self):
         """
         :rtype: None
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_IndexedDataMapOfShapeWithState_RemoveLast(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_IndexedDataMapOfShapeWithState_RemoveLast(self)
 
-    def Contains(self, *args) -> "Standard_Boolean" :
+    def Contains(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -6945,34 +7312,34 @@ class TopOpeBRepDS_IndexedDataMapOfShapeWithState(OCC.TCollection.TCollection_Ba
         """
         return _TopOpeBRepDS.TopOpeBRepDS_IndexedDataMapOfShapeWithState_Contains(self, *args)
 
-    def FindKey(self, *args) -> "TopoDS_Shape const" :
+    def FindKey(self, *args):
         """
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :rtype: TopoDS_Shape
 
         """
         return _TopOpeBRepDS.TopOpeBRepDS_IndexedDataMapOfShapeWithState_FindKey(self, *args)
 
-    def FindFromIndex(self, *args) -> "TopOpeBRepDS_ShapeWithState const &" :
+    def FindFromIndex(self, *args):
         """
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :rtype: TopOpeBRepDS_ShapeWithState
 
         """
         return _TopOpeBRepDS.TopOpeBRepDS_IndexedDataMapOfShapeWithState_FindFromIndex(self, *args)
 
-    def ChangeFromIndex(self, *args) -> "TopOpeBRepDS_ShapeWithState &" :
+    def ChangeFromIndex(self, *args):
         """
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :rtype: TopOpeBRepDS_ShapeWithState
 
         """
         return _TopOpeBRepDS.TopOpeBRepDS_IndexedDataMapOfShapeWithState_ChangeFromIndex(self, *args)
 
-    def FindIndex(self, *args) -> "Standard_Integer" :
+    def FindIndex(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -6981,7 +7348,7 @@ class TopOpeBRepDS_IndexedDataMapOfShapeWithState(OCC.TCollection.TCollection_Ba
         """
         return _TopOpeBRepDS.TopOpeBRepDS_IndexedDataMapOfShapeWithState_FindIndex(self, *args)
 
-    def FindFromKey(self, *args) -> "TopOpeBRepDS_ShapeWithState const &" :
+    def FindFromKey(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -6990,7 +7357,7 @@ class TopOpeBRepDS_IndexedDataMapOfShapeWithState(OCC.TCollection.TCollection_Ba
         """
         return _TopOpeBRepDS.TopOpeBRepDS_IndexedDataMapOfShapeWithState_FindFromKey(self, *args)
 
-    def ChangeFromKey(self, *args) -> "TopOpeBRepDS_ShapeWithState &" :
+    def ChangeFromKey(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -6999,7 +7366,7 @@ class TopOpeBRepDS_IndexedDataMapOfShapeWithState(OCC.TCollection.TCollection_Ba
         """
         return _TopOpeBRepDS.TopOpeBRepDS_IndexedDataMapOfShapeWithState_ChangeFromKey(self, *args)
 
-    def FindFromKey1(self, *args) -> "Standard_Address" :
+    def FindFromKey1(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -7008,7 +7375,7 @@ class TopOpeBRepDS_IndexedDataMapOfShapeWithState(OCC.TCollection.TCollection_Ba
         """
         return _TopOpeBRepDS.TopOpeBRepDS_IndexedDataMapOfShapeWithState_FindFromKey1(self, *args)
 
-    def ChangeFromKey1(self, *args) -> "Standard_Address" :
+    def ChangeFromKey1(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -7017,7 +7384,7 @@ class TopOpeBRepDS_IndexedDataMapOfShapeWithState(OCC.TCollection.TCollection_Ba
         """
         return _TopOpeBRepDS.TopOpeBRepDS_IndexedDataMapOfShapeWithState_ChangeFromKey1(self, *args)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(TopOpeBRepDS_IndexedDataMapOfShapeWithState self)"""
         return _TopOpeBRepDS.TopOpeBRepDS_IndexedDataMapOfShapeWithState__kill_pointed(self)
 
@@ -7052,15 +7419,19 @@ TopOpeBRepDS_IndexedDataMapOfShapeWithState_swigregister(TopOpeBRepDS_IndexedDat
 class TopOpeBRepDS_IndexedDataMapOfVertexPoint(OCC.TCollection.TCollection_BasicMap):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self, NbBuckets=1): 
         """
         :param NbBuckets: default value is 1
-        :type NbBuckets: int
+        :type NbBuckets: Standard_Integer
+        :rtype: None
+
+        :param NbBuckets: default value is 1
+        :type NbBuckets: Standard_Integer
         :rtype: None
 
         """
-        _TopOpeBRepDS.TopOpeBRepDS_IndexedDataMapOfVertexPoint_swiginit(self,_TopOpeBRepDS.new_TopOpeBRepDS_IndexedDataMapOfVertexPoint(*args))
-    def Assign(self, *args) -> "TopOpeBRepDS_IndexedDataMapOfVertexPoint &" :
+        _TopOpeBRepDS.TopOpeBRepDS_IndexedDataMapOfVertexPoint_swiginit(self,_TopOpeBRepDS.new_TopOpeBRepDS_IndexedDataMapOfVertexPoint(NbBuckets))
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: TopOpeBRepDS_IndexedDataMapOfVertexPoint &
@@ -7069,7 +7440,7 @@ class TopOpeBRepDS_IndexedDataMapOfVertexPoint(OCC.TCollection.TCollection_Basic
         """
         return _TopOpeBRepDS.TopOpeBRepDS_IndexedDataMapOfVertexPoint_Assign(self, *args)
 
-    def Set(self, *args) -> "TopOpeBRepDS_IndexedDataMapOfVertexPoint &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: TopOpeBRepDS_IndexedDataMapOfVertexPoint &
@@ -7078,23 +7449,23 @@ class TopOpeBRepDS_IndexedDataMapOfVertexPoint(OCC.TCollection.TCollection_Basic
         """
         return _TopOpeBRepDS.TopOpeBRepDS_IndexedDataMapOfVertexPoint_Set(self, *args)
 
-    def ReSize(self, *args) -> "void" :
+    def ReSize(self, *args):
         """
         :param NbBuckets:
-        :type NbBuckets: int
+        :type NbBuckets: Standard_Integer
         :rtype: None
 
         """
         return _TopOpeBRepDS.TopOpeBRepDS_IndexedDataMapOfVertexPoint_ReSize(self, *args)
 
-    def Clear(self, *args) -> "void" :
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_IndexedDataMapOfVertexPoint_Clear(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_IndexedDataMapOfVertexPoint_Clear(self)
 
-    def Add(self, *args) -> "Standard_Integer" :
+    def Add(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -7105,10 +7476,10 @@ class TopOpeBRepDS_IndexedDataMapOfVertexPoint(OCC.TCollection.TCollection_Basic
         """
         return _TopOpeBRepDS.TopOpeBRepDS_IndexedDataMapOfVertexPoint_Add(self, *args)
 
-    def Substitute(self, *args) -> "void" :
+    def Substitute(self, *args):
         """
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :param K:
         :type K: TopoDS_Shape &
         :param T:
@@ -7118,14 +7489,14 @@ class TopOpeBRepDS_IndexedDataMapOfVertexPoint(OCC.TCollection.TCollection_Basic
         """
         return _TopOpeBRepDS.TopOpeBRepDS_IndexedDataMapOfVertexPoint_Substitute(self, *args)
 
-    def RemoveLast(self, *args) -> "void" :
+    def RemoveLast(self):
         """
         :rtype: None
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_IndexedDataMapOfVertexPoint_RemoveLast(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_IndexedDataMapOfVertexPoint_RemoveLast(self)
 
-    def Contains(self, *args) -> "Standard_Boolean" :
+    def Contains(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -7134,34 +7505,34 @@ class TopOpeBRepDS_IndexedDataMapOfVertexPoint(OCC.TCollection.TCollection_Basic
         """
         return _TopOpeBRepDS.TopOpeBRepDS_IndexedDataMapOfVertexPoint_Contains(self, *args)
 
-    def FindKey(self, *args) -> "TopoDS_Shape const" :
+    def FindKey(self, *args):
         """
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :rtype: TopoDS_Shape
 
         """
         return _TopOpeBRepDS.TopOpeBRepDS_IndexedDataMapOfVertexPoint_FindKey(self, *args)
 
-    def FindFromIndex(self, *args) -> "TopOpeBRepDS_Point const &" :
+    def FindFromIndex(self, *args):
         """
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :rtype: TopOpeBRepDS_Point
 
         """
         return _TopOpeBRepDS.TopOpeBRepDS_IndexedDataMapOfVertexPoint_FindFromIndex(self, *args)
 
-    def ChangeFromIndex(self, *args) -> "TopOpeBRepDS_Point &" :
+    def ChangeFromIndex(self, *args):
         """
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :rtype: TopOpeBRepDS_Point
 
         """
         return _TopOpeBRepDS.TopOpeBRepDS_IndexedDataMapOfVertexPoint_ChangeFromIndex(self, *args)
 
-    def FindIndex(self, *args) -> "Standard_Integer" :
+    def FindIndex(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -7170,7 +7541,7 @@ class TopOpeBRepDS_IndexedDataMapOfVertexPoint(OCC.TCollection.TCollection_Basic
         """
         return _TopOpeBRepDS.TopOpeBRepDS_IndexedDataMapOfVertexPoint_FindIndex(self, *args)
 
-    def FindFromKey(self, *args) -> "TopOpeBRepDS_Point const &" :
+    def FindFromKey(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -7179,7 +7550,7 @@ class TopOpeBRepDS_IndexedDataMapOfVertexPoint(OCC.TCollection.TCollection_Basic
         """
         return _TopOpeBRepDS.TopOpeBRepDS_IndexedDataMapOfVertexPoint_FindFromKey(self, *args)
 
-    def ChangeFromKey(self, *args) -> "TopOpeBRepDS_Point &" :
+    def ChangeFromKey(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -7188,7 +7559,7 @@ class TopOpeBRepDS_IndexedDataMapOfVertexPoint(OCC.TCollection.TCollection_Basic
         """
         return _TopOpeBRepDS.TopOpeBRepDS_IndexedDataMapOfVertexPoint_ChangeFromKey(self, *args)
 
-    def FindFromKey1(self, *args) -> "Standard_Address" :
+    def FindFromKey1(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -7197,7 +7568,7 @@ class TopOpeBRepDS_IndexedDataMapOfVertexPoint(OCC.TCollection.TCollection_Basic
         """
         return _TopOpeBRepDS.TopOpeBRepDS_IndexedDataMapOfVertexPoint_FindFromKey1(self, *args)
 
-    def ChangeFromKey1(self, *args) -> "Standard_Address" :
+    def ChangeFromKey1(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -7206,7 +7577,7 @@ class TopOpeBRepDS_IndexedDataMapOfVertexPoint(OCC.TCollection.TCollection_Basic
         """
         return _TopOpeBRepDS.TopOpeBRepDS_IndexedDataMapOfVertexPoint_ChangeFromKey1(self, *args)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(TopOpeBRepDS_IndexedDataMapOfVertexPoint self)"""
         return _TopOpeBRepDS.TopOpeBRepDS_IndexedDataMapOfVertexPoint__kill_pointed(self)
 
@@ -7250,11 +7621,11 @@ class TopOpeBRepDS_Interference(OCC.MMgt.MMgt_TShared):
         :param SupportType:
         :type SupportType: TopOpeBRepDS_Kind
         :param Support:
-        :type Support: int
+        :type Support: Standard_Integer
         :param GeometryType:
         :type GeometryType: TopOpeBRepDS_Kind
         :param Geometry:
-        :type Geometry: int
+        :type Geometry: Standard_Integer
         :rtype: None
 
         :param I:
@@ -7263,14 +7634,14 @@ class TopOpeBRepDS_Interference(OCC.MMgt.MMgt_TShared):
 
         """
         _TopOpeBRepDS.TopOpeBRepDS_Interference_swiginit(self,_TopOpeBRepDS.new_TopOpeBRepDS_Interference(*args))
-    def ChangeTransition(self, *args) -> "TopOpeBRepDS_Transition &" :
+    def ChangeTransition(self):
         """
         :rtype: TopOpeBRepDS_Transition
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_Interference_ChangeTransition(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_Interference_ChangeTransition(self)
 
-    def Transition(self, *args) -> "void" :
+    def Transition(self, *args):
         """
         :rtype: TopOpeBRepDS_Transition
 
@@ -7281,33 +7652,33 @@ class TopOpeBRepDS_Interference(OCC.MMgt.MMgt_TShared):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_Interference_Transition(self, *args)
 
-    def GKGSKS(self, *args) -> "void" :
+    def GKGSKS(self, *args):
         """
         * return GeometryType + Geometry + SupportType + Support
 
         :param GK:
         :type GK: TopOpeBRepDS_Kind &
         :param G:
-        :type G: int &
+        :type G: Standard_Integer &
         :param SK:
         :type SK: TopOpeBRepDS_Kind &
         :param S:
-        :type S: int &
+        :type S: Standard_Integer &
         :rtype: None
 
         """
         return _TopOpeBRepDS.TopOpeBRepDS_Interference_GKGSKS(self, *args)
 
-    def SetGeometry(self, *args) -> "void" :
+    def SetGeometry(self, *args):
         """
         :param GI:
-        :type GI: int
+        :type GI: Standard_Integer
         :rtype: None
 
         """
         return _TopOpeBRepDS.TopOpeBRepDS_Interference_SetGeometry(self, *args)
 
-    def SupportType(self, *args) -> "void" :
+    def SupportType(self, *args):
         """
         :rtype: TopOpeBRepDS_Kind
 
@@ -7318,18 +7689,18 @@ class TopOpeBRepDS_Interference(OCC.MMgt.MMgt_TShared):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_Interference_SupportType(self, *args)
 
-    def Support(self, *args) -> "void" :
+    def Support(self, *args):
         """
         :rtype: int
 
         :param S:
-        :type S: int
+        :type S: Standard_Integer
         :rtype: None
 
         """
         return _TopOpeBRepDS.TopOpeBRepDS_Interference_Support(self, *args)
 
-    def GeometryType(self, *args) -> "void" :
+    def GeometryType(self, *args):
         """
         :rtype: TopOpeBRepDS_Kind
 
@@ -7340,18 +7711,18 @@ class TopOpeBRepDS_Interference(OCC.MMgt.MMgt_TShared):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_Interference_GeometryType(self, *args)
 
-    def Geometry(self, *args) -> "void" :
+    def Geometry(self, *args):
         """
         :rtype: int
 
         :param G:
-        :type G: int
+        :type G: Standard_Integer
         :rtype: None
 
         """
         return _TopOpeBRepDS.TopOpeBRepDS_Interference_Geometry(self, *args)
 
-    def HasSameSupport(self, *args) -> "Standard_Boolean" :
+    def HasSameSupport(self, *args):
         """
         :param Other:
         :type Other: Handle_TopOpeBRepDS_Interference &
@@ -7360,7 +7731,7 @@ class TopOpeBRepDS_Interference(OCC.MMgt.MMgt_TShared):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_Interference_HasSameSupport(self, *args)
 
-    def HasSameGeometry(self, *args) -> "Standard_Boolean" :
+    def HasSameGeometry(self, *args):
         """
         :param Other:
         :type Other: Handle_TopOpeBRepDS_Interference &
@@ -7369,19 +7740,19 @@ class TopOpeBRepDS_Interference(OCC.MMgt.MMgt_TShared):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_Interference_HasSameGeometry(self, *args)
 
-    def DumpGToString(self) -> "std::string" :
+    def DumpGToString(self):
         """DumpGToString(TopOpeBRepDS_Interference self) -> std::string"""
         return _TopOpeBRepDS.TopOpeBRepDS_Interference_DumpGToString(self)
 
-    def DumpSToString(self) -> "std::string" :
+    def DumpSToString(self):
         """DumpSToString(TopOpeBRepDS_Interference self) -> std::string"""
         return _TopOpeBRepDS.TopOpeBRepDS_Interference_DumpSToString(self)
 
-    def DumpToString(self) -> "std::string" :
+    def DumpToString(self):
         """DumpToString(TopOpeBRepDS_Interference self) -> std::string"""
         return _TopOpeBRepDS.TopOpeBRepDS_Interference_DumpToString(self)
 
-    def Dump(self, *args) -> "Standard_OStream &" :
+    def Dump(self, *args):
         """
         :param OS:
         :type OS: Standard_OStream &
@@ -7394,11 +7765,11 @@ class TopOpeBRepDS_Interference(OCC.MMgt.MMgt_TShared):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_Interference_Dump(self, *args)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(TopOpeBRepDS_Interference self)"""
         return _TopOpeBRepDS.TopOpeBRepDS_Interference__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_TopOpeBRepDS_Interference" :
+    def GetHandle(self):
         """GetHandle(TopOpeBRepDS_Interference self) -> Handle_TopOpeBRepDS_Interference"""
         return _TopOpeBRepDS.TopOpeBRepDS_Interference_GetHandle(self)
 
@@ -7450,7 +7821,7 @@ Handle_TopOpeBRepDS_Interference._kill_pointed = new_instancemethod(_TopOpeBRepD
 Handle_TopOpeBRepDS_Interference_swigregister = _TopOpeBRepDS.Handle_TopOpeBRepDS_Interference_swigregister
 Handle_TopOpeBRepDS_Interference_swigregister(Handle_TopOpeBRepDS_Interference)
 
-def Handle_TopOpeBRepDS_Interference_DownCast(*args) -> "Handle_TopOpeBRepDS_Interference const" :
+def Handle_TopOpeBRepDS_Interference_DownCast(*args):
   return _TopOpeBRepDS.Handle_TopOpeBRepDS_Interference_DownCast(*args)
 Handle_TopOpeBRepDS_Interference_DownCast = _TopOpeBRepDS.Handle_TopOpeBRepDS_Interference_DownCast
 
@@ -7469,7 +7840,7 @@ class TopOpeBRepDS_InterferenceIterator(object):
 
         """
         _TopOpeBRepDS.TopOpeBRepDS_InterferenceIterator_swiginit(self,_TopOpeBRepDS.new_TopOpeBRepDS_InterferenceIterator(*args))
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
         * re-initialize interference iteration process on the list of interference <L>. Conditions are not modified.
 
@@ -7480,7 +7851,7 @@ class TopOpeBRepDS_InterferenceIterator(object):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_InterferenceIterator_Init(self, *args)
 
-    def GeometryKind(self, *args) -> "void" :
+    def GeometryKind(self, *args):
         """
         * define a condition on interference iteration process. Interference must match the Geometry Kind <ST>
 
@@ -7491,18 +7862,18 @@ class TopOpeBRepDS_InterferenceIterator(object):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_InterferenceIterator_GeometryKind(self, *args)
 
-    def Geometry(self, *args) -> "void" :
+    def Geometry(self, *args):
         """
         * define a condition on interference iteration process. Interference must match the Geometry <G>
 
         :param G:
-        :type G: int
+        :type G: Standard_Integer
         :rtype: None
 
         """
         return _TopOpeBRepDS.TopOpeBRepDS_InterferenceIterator_Geometry(self, *args)
 
-    def SupportKind(self, *args) -> "void" :
+    def SupportKind(self, *args):
         """
         * define a condition on interference iteration process. Interference must match the Support Kind <ST>
 
@@ -7513,27 +7884,27 @@ class TopOpeBRepDS_InterferenceIterator(object):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_InterferenceIterator_SupportKind(self, *args)
 
-    def Support(self, *args) -> "void" :
+    def Support(self, *args):
         """
         * define a condition on interference iteration process. Interference must match the Support <S>
 
         :param S:
-        :type S: int
+        :type S: Standard_Integer
         :rtype: None
 
         """
         return _TopOpeBRepDS.TopOpeBRepDS_InterferenceIterator_Support(self, *args)
 
-    def Match(self, *args) -> "void" :
+    def Match(self):
         """
         * reach for an interference matching the conditions (if defined).
 
         :rtype: None
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_InterferenceIterator_Match(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_InterferenceIterator_Match(self)
 
-    def MatchInterference(self, *args) -> "Standard_Boolean" :
+    def MatchInterference(self, *args):
         """
         * Returns True if the Interference <I> matches the conditions (if defined). If no conditions defined, returns True.
 
@@ -7544,39 +7915,39 @@ class TopOpeBRepDS_InterferenceIterator(object):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_InterferenceIterator_MatchInterference(self, *args)
 
-    def More(self, *args) -> "Standard_Boolean" :
+    def More(self):
         """
         * Returns True if there is a current Interference in the iteration.
 
         :rtype: bool
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_InterferenceIterator_More(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_InterferenceIterator_More(self)
 
-    def Next(self, *args) -> "void" :
+    def Next(self):
         """
         * Move to the next Interference.
 
         :rtype: None
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_InterferenceIterator_Next(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_InterferenceIterator_Next(self)
 
-    def Value(self, *args) -> "Handle_TopOpeBRepDS_Interference &" :
+    def Value(self):
         """
         * Returns the current Interference, matching the conditions (if defined).
 
         :rtype: Handle_TopOpeBRepDS_Interference
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_InterferenceIterator_Value(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_InterferenceIterator_Value(self)
 
-    def ChangeIterator(self, *args) -> "TopOpeBRepDS_ListIteratorOfListOfInterference &" :
+    def ChangeIterator(self):
         """
         :rtype: TopOpeBRepDS_ListIteratorOfListOfInterference
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_InterferenceIterator_ChangeIterator(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_InterferenceIterator_ChangeIterator(self)
 
     def __del__(self):
     	try:
@@ -7603,19 +7974,20 @@ TopOpeBRepDS_InterferenceIterator_swigregister(TopOpeBRepDS_InterferenceIterator
 
 class TopOpeBRepDS_InterferenceTool(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
+    def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def MakeEdgeInterference(*args) -> "Handle_TopOpeBRepDS_Interference" :
+    def MakeEdgeInterference(*args):
         """
         :param T:
         :type T: TopOpeBRepDS_Transition &
         :param SK:
         :type SK: TopOpeBRepDS_Kind
         :param SI:
-        :type SI: int
+        :type SI: Standard_Integer
         :param GK:
         :type GK: TopOpeBRepDS_Kind
         :param GI:
-        :type GI: int
+        :type GI: Standard_Integer
         :param P:
         :type P: float
         :rtype: Handle_TopOpeBRepDS_Interference
@@ -7624,18 +7996,18 @@ class TopOpeBRepDS_InterferenceTool(object):
         return _TopOpeBRepDS.TopOpeBRepDS_InterferenceTool_MakeEdgeInterference(*args)
 
     MakeEdgeInterference = staticmethod(MakeEdgeInterference)
-    def MakeCurveInterference(*args) -> "Handle_TopOpeBRepDS_Interference" :
+    def MakeCurveInterference(*args):
         """
         :param T:
         :type T: TopOpeBRepDS_Transition &
         :param SK:
         :type SK: TopOpeBRepDS_Kind
         :param SI:
-        :type SI: int
+        :type SI: Standard_Integer
         :param GK:
         :type GK: TopOpeBRepDS_Kind
         :param GI:
-        :type GI: int
+        :type GI: Standard_Integer
         :param P:
         :type P: float
         :rtype: Handle_TopOpeBRepDS_Interference
@@ -7644,7 +8016,7 @@ class TopOpeBRepDS_InterferenceTool(object):
         return _TopOpeBRepDS.TopOpeBRepDS_InterferenceTool_MakeCurveInterference(*args)
 
     MakeCurveInterference = staticmethod(MakeCurveInterference)
-    def DuplicateCurvePointInterference(*args) -> "Handle_TopOpeBRepDS_Interference" :
+    def DuplicateCurvePointInterference(*args):
         """
         * duplicate I in a new interference with Complement() transition.
 
@@ -7656,14 +8028,14 @@ class TopOpeBRepDS_InterferenceTool(object):
         return _TopOpeBRepDS.TopOpeBRepDS_InterferenceTool_DuplicateCurvePointInterference(*args)
 
     DuplicateCurvePointInterference = staticmethod(DuplicateCurvePointInterference)
-    def MakeFaceCurveInterference(*args) -> "Handle_TopOpeBRepDS_Interference" :
+    def MakeFaceCurveInterference(*args):
         """
         :param Transition:
         :type Transition: TopOpeBRepDS_Transition &
         :param FaceI:
-        :type FaceI: int
+        :type FaceI: Standard_Integer
         :param CurveI:
-        :type CurveI: int
+        :type CurveI: Standard_Integer
         :param PC:
         :type PC: Handle_Geom2d_Curve &
         :rtype: Handle_TopOpeBRepDS_Interference
@@ -7672,28 +8044,28 @@ class TopOpeBRepDS_InterferenceTool(object):
         return _TopOpeBRepDS.TopOpeBRepDS_InterferenceTool_MakeFaceCurveInterference(*args)
 
     MakeFaceCurveInterference = staticmethod(MakeFaceCurveInterference)
-    def MakeSolidSurfaceInterference(*args) -> "Handle_TopOpeBRepDS_Interference" :
+    def MakeSolidSurfaceInterference(*args):
         """
         :param Transition:
         :type Transition: TopOpeBRepDS_Transition &
         :param SolidI:
-        :type SolidI: int
+        :type SolidI: Standard_Integer
         :param SurfaceI:
-        :type SurfaceI: int
+        :type SurfaceI: Standard_Integer
         :rtype: Handle_TopOpeBRepDS_Interference
 
         """
         return _TopOpeBRepDS.TopOpeBRepDS_InterferenceTool_MakeSolidSurfaceInterference(*args)
 
     MakeSolidSurfaceInterference = staticmethod(MakeSolidSurfaceInterference)
-    def MakeEdgeVertexInterference(*args) -> "Handle_TopOpeBRepDS_Interference" :
+    def MakeEdgeVertexInterference(*args):
         """
         :param Transition:
         :type Transition: TopOpeBRepDS_Transition &
         :param EdgeI:
-        :type EdgeI: int
+        :type EdgeI: Standard_Integer
         :param VertexI:
-        :type VertexI: int
+        :type VertexI: Standard_Integer
         :param VertexIsBound:
         :type VertexIsBound: bool
         :param Config:
@@ -7706,14 +8078,14 @@ class TopOpeBRepDS_InterferenceTool(object):
         return _TopOpeBRepDS.TopOpeBRepDS_InterferenceTool_MakeEdgeVertexInterference(*args)
 
     MakeEdgeVertexInterference = staticmethod(MakeEdgeVertexInterference)
-    def MakeFaceEdgeInterference(*args) -> "Handle_TopOpeBRepDS_Interference" :
+    def MakeFaceEdgeInterference(*args):
         """
         :param Transition:
         :type Transition: TopOpeBRepDS_Transition &
         :param FaceI:
-        :type FaceI: int
+        :type FaceI: Standard_Integer
         :param EdgeI:
-        :type EdgeI: int
+        :type EdgeI: Standard_Integer
         :param EdgeIsBound:
         :type EdgeIsBound: bool
         :param Config:
@@ -7724,7 +8096,7 @@ class TopOpeBRepDS_InterferenceTool(object):
         return _TopOpeBRepDS.TopOpeBRepDS_InterferenceTool_MakeFaceEdgeInterference(*args)
 
     MakeFaceEdgeInterference = staticmethod(MakeFaceEdgeInterference)
-    def Parameter(*args) -> "void" :
+    def Parameter(*args):
         """
         :param CPI:
         :type CPI: Handle_TopOpeBRepDS_Interference &
@@ -7740,8 +8112,6 @@ class TopOpeBRepDS_InterferenceTool(object):
         return _TopOpeBRepDS.TopOpeBRepDS_InterferenceTool_Parameter(*args)
 
     Parameter = staticmethod(Parameter)
-    def __init__(self): 
-        _TopOpeBRepDS.TopOpeBRepDS_InterferenceTool_swiginit(self,_TopOpeBRepDS.new_TopOpeBRepDS_InterferenceTool())
     def __del__(self):
     	try:
     		self.thisown = False
@@ -7754,18 +8124,18 @@ TopOpeBRepDS_InterferenceTool._kill_pointed = new_instancemethod(_TopOpeBRepDS.T
 TopOpeBRepDS_InterferenceTool_swigregister = _TopOpeBRepDS.TopOpeBRepDS_InterferenceTool_swigregister
 TopOpeBRepDS_InterferenceTool_swigregister(TopOpeBRepDS_InterferenceTool)
 
-def TopOpeBRepDS_InterferenceTool_MakeEdgeInterference(*args) -> "Handle_TopOpeBRepDS_Interference" :
+def TopOpeBRepDS_InterferenceTool_MakeEdgeInterference(*args):
   """
     :param T:
     :type T: TopOpeBRepDS_Transition &
     :param SK:
     :type SK: TopOpeBRepDS_Kind
     :param SI:
-    :type SI: int
+    :type SI: Standard_Integer
     :param GK:
     :type GK: TopOpeBRepDS_Kind
     :param GI:
-    :type GI: int
+    :type GI: Standard_Integer
     :param P:
     :type P: float
     :rtype: Handle_TopOpeBRepDS_Interference
@@ -7773,18 +8143,18 @@ def TopOpeBRepDS_InterferenceTool_MakeEdgeInterference(*args) -> "Handle_TopOpeB
     """
   return _TopOpeBRepDS.TopOpeBRepDS_InterferenceTool_MakeEdgeInterference(*args)
 
-def TopOpeBRepDS_InterferenceTool_MakeCurveInterference(*args) -> "Handle_TopOpeBRepDS_Interference" :
+def TopOpeBRepDS_InterferenceTool_MakeCurveInterference(*args):
   """
     :param T:
     :type T: TopOpeBRepDS_Transition &
     :param SK:
     :type SK: TopOpeBRepDS_Kind
     :param SI:
-    :type SI: int
+    :type SI: Standard_Integer
     :param GK:
     :type GK: TopOpeBRepDS_Kind
     :param GI:
-    :type GI: int
+    :type GI: Standard_Integer
     :param P:
     :type P: float
     :rtype: Handle_TopOpeBRepDS_Interference
@@ -7792,7 +8162,7 @@ def TopOpeBRepDS_InterferenceTool_MakeCurveInterference(*args) -> "Handle_TopOpe
     """
   return _TopOpeBRepDS.TopOpeBRepDS_InterferenceTool_MakeCurveInterference(*args)
 
-def TopOpeBRepDS_InterferenceTool_DuplicateCurvePointInterference(*args) -> "Handle_TopOpeBRepDS_Interference" :
+def TopOpeBRepDS_InterferenceTool_DuplicateCurvePointInterference(*args):
   """
     * duplicate I in a new interference with Complement() transition.
 
@@ -7803,14 +8173,14 @@ def TopOpeBRepDS_InterferenceTool_DuplicateCurvePointInterference(*args) -> "Han
     """
   return _TopOpeBRepDS.TopOpeBRepDS_InterferenceTool_DuplicateCurvePointInterference(*args)
 
-def TopOpeBRepDS_InterferenceTool_MakeFaceCurveInterference(*args) -> "Handle_TopOpeBRepDS_Interference" :
+def TopOpeBRepDS_InterferenceTool_MakeFaceCurveInterference(*args):
   """
     :param Transition:
     :type Transition: TopOpeBRepDS_Transition &
     :param FaceI:
-    :type FaceI: int
+    :type FaceI: Standard_Integer
     :param CurveI:
-    :type CurveI: int
+    :type CurveI: Standard_Integer
     :param PC:
     :type PC: Handle_Geom2d_Curve &
     :rtype: Handle_TopOpeBRepDS_Interference
@@ -7818,27 +8188,27 @@ def TopOpeBRepDS_InterferenceTool_MakeFaceCurveInterference(*args) -> "Handle_To
     """
   return _TopOpeBRepDS.TopOpeBRepDS_InterferenceTool_MakeFaceCurveInterference(*args)
 
-def TopOpeBRepDS_InterferenceTool_MakeSolidSurfaceInterference(*args) -> "Handle_TopOpeBRepDS_Interference" :
+def TopOpeBRepDS_InterferenceTool_MakeSolidSurfaceInterference(*args):
   """
     :param Transition:
     :type Transition: TopOpeBRepDS_Transition &
     :param SolidI:
-    :type SolidI: int
+    :type SolidI: Standard_Integer
     :param SurfaceI:
-    :type SurfaceI: int
+    :type SurfaceI: Standard_Integer
     :rtype: Handle_TopOpeBRepDS_Interference
 
     """
   return _TopOpeBRepDS.TopOpeBRepDS_InterferenceTool_MakeSolidSurfaceInterference(*args)
 
-def TopOpeBRepDS_InterferenceTool_MakeEdgeVertexInterference(*args) -> "Handle_TopOpeBRepDS_Interference" :
+def TopOpeBRepDS_InterferenceTool_MakeEdgeVertexInterference(*args):
   """
     :param Transition:
     :type Transition: TopOpeBRepDS_Transition &
     :param EdgeI:
-    :type EdgeI: int
+    :type EdgeI: Standard_Integer
     :param VertexI:
-    :type VertexI: int
+    :type VertexI: Standard_Integer
     :param VertexIsBound:
     :type VertexIsBound: bool
     :param Config:
@@ -7850,14 +8220,14 @@ def TopOpeBRepDS_InterferenceTool_MakeEdgeVertexInterference(*args) -> "Handle_T
     """
   return _TopOpeBRepDS.TopOpeBRepDS_InterferenceTool_MakeEdgeVertexInterference(*args)
 
-def TopOpeBRepDS_InterferenceTool_MakeFaceEdgeInterference(*args) -> "Handle_TopOpeBRepDS_Interference" :
+def TopOpeBRepDS_InterferenceTool_MakeFaceEdgeInterference(*args):
   """
     :param Transition:
     :type Transition: TopOpeBRepDS_Transition &
     :param FaceI:
-    :type FaceI: int
+    :type FaceI: Standard_Integer
     :param EdgeI:
-    :type EdgeI: int
+    :type EdgeI: Standard_Integer
     :param EdgeIsBound:
     :type EdgeIsBound: bool
     :param Config:
@@ -7867,7 +8237,7 @@ def TopOpeBRepDS_InterferenceTool_MakeFaceEdgeInterference(*args) -> "Handle_Top
     """
   return _TopOpeBRepDS.TopOpeBRepDS_InterferenceTool_MakeFaceEdgeInterference(*args)
 
-def TopOpeBRepDS_InterferenceTool_Parameter(*args) -> "void" :
+def TopOpeBRepDS_InterferenceTool_Parameter(*args):
   """
     :param CPI:
     :type CPI: Handle_TopOpeBRepDS_Interference &
@@ -7895,7 +8265,7 @@ class TopOpeBRepDS_ListIteratorOfListOfInterference(object):
 
         """
         _TopOpeBRepDS.TopOpeBRepDS_ListIteratorOfListOfInterference_swiginit(self,_TopOpeBRepDS.new_TopOpeBRepDS_ListIteratorOfListOfInterference(*args))
-    def Initialize(self, *args) -> "void" :
+    def Initialize(self, *args):
         """
         :param L:
         :type L: TopOpeBRepDS_ListOfInterference &
@@ -7904,26 +8274,26 @@ class TopOpeBRepDS_ListIteratorOfListOfInterference(object):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_ListIteratorOfListOfInterference_Initialize(self, *args)
 
-    def More(self, *args) -> "Standard_Boolean" :
+    def More(self):
         """
         :rtype: bool
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_ListIteratorOfListOfInterference_More(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_ListIteratorOfListOfInterference_More(self)
 
-    def Next(self, *args) -> "void" :
+    def Next(self):
         """
         :rtype: None
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_ListIteratorOfListOfInterference_Next(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_ListIteratorOfListOfInterference_Next(self)
 
-    def Value(self, *args) -> "Handle_TopOpeBRepDS_Interference &" :
+    def Value(self):
         """
         :rtype: Handle_TopOpeBRepDS_Interference
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_ListIteratorOfListOfInterference_Value(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_ListIteratorOfListOfInterference_Value(self)
 
     def __del__(self):
     	try:
@@ -7954,18 +8324,18 @@ class TopOpeBRepDS_ListNodeOfListOfInterference(OCC.TCollection.TCollection_MapN
 
         """
         _TopOpeBRepDS.TopOpeBRepDS_ListNodeOfListOfInterference_swiginit(self,_TopOpeBRepDS.new_TopOpeBRepDS_ListNodeOfListOfInterference(*args))
-    def Value(self, *args) -> "Handle_TopOpeBRepDS_Interference &" :
+    def Value(self):
         """
         :rtype: Handle_TopOpeBRepDS_Interference
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_ListNodeOfListOfInterference_Value(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_ListNodeOfListOfInterference_Value(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(TopOpeBRepDS_ListNodeOfListOfInterference self)"""
         return _TopOpeBRepDS.TopOpeBRepDS_ListNodeOfListOfInterference__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_TopOpeBRepDS_ListNodeOfListOfInterference" :
+    def GetHandle(self):
         """GetHandle(TopOpeBRepDS_ListNodeOfListOfInterference self) -> Handle_TopOpeBRepDS_ListNodeOfListOfInterference"""
         return _TopOpeBRepDS.TopOpeBRepDS_ListNodeOfListOfInterference_GetHandle(self)
 
@@ -8004,20 +8374,20 @@ Handle_TopOpeBRepDS_ListNodeOfListOfInterference._kill_pointed = new_instancemet
 Handle_TopOpeBRepDS_ListNodeOfListOfInterference_swigregister = _TopOpeBRepDS.Handle_TopOpeBRepDS_ListNodeOfListOfInterference_swigregister
 Handle_TopOpeBRepDS_ListNodeOfListOfInterference_swigregister(Handle_TopOpeBRepDS_ListNodeOfListOfInterference)
 
-def Handle_TopOpeBRepDS_ListNodeOfListOfInterference_DownCast(*args) -> "Handle_TopOpeBRepDS_ListNodeOfListOfInterference const" :
+def Handle_TopOpeBRepDS_ListNodeOfListOfInterference_DownCast(*args):
   return _TopOpeBRepDS.Handle_TopOpeBRepDS_ListNodeOfListOfInterference_DownCast(*args)
 Handle_TopOpeBRepDS_ListNodeOfListOfInterference_DownCast = _TopOpeBRepDS.Handle_TopOpeBRepDS_ListNodeOfListOfInterference_DownCast
 
 class TopOpeBRepDS_ListOfInterference(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _TopOpeBRepDS.TopOpeBRepDS_ListOfInterference_swiginit(self,_TopOpeBRepDS.new_TopOpeBRepDS_ListOfInterference(*args))
-    def Assign(self, *args) -> "void" :
+        _TopOpeBRepDS.TopOpeBRepDS_ListOfInterference_swiginit(self,_TopOpeBRepDS.new_TopOpeBRepDS_ListOfInterference())
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: TopOpeBRepDS_ListOfInterference &
@@ -8026,7 +8396,7 @@ class TopOpeBRepDS_ListOfInterference(object):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_ListOfInterference_Assign(self, *args)
 
-    def Set(self, *args) -> "void" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: TopOpeBRepDS_ListOfInterference &
@@ -8035,28 +8405,28 @@ class TopOpeBRepDS_ListOfInterference(object):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_ListOfInterference_Set(self, *args)
 
-    def Extent(self, *args) -> "Standard_Integer" :
+    def Extent(self):
         """
         :rtype: int
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_ListOfInterference_Extent(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_ListOfInterference_Extent(self)
 
-    def Clear(self, *args) -> "void" :
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_ListOfInterference_Clear(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_ListOfInterference_Clear(self)
 
-    def IsEmpty(self, *args) -> "Standard_Boolean" :
+    def IsEmpty(self):
         """
         :rtype: bool
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_ListOfInterference_IsEmpty(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_ListOfInterference_IsEmpty(self)
 
-    def Prepend(self, *args) -> "void" :
+    def Prepend(self, *args):
         """
         :param I:
         :type I: Handle_TopOpeBRepDS_Interference &
@@ -8075,7 +8445,7 @@ class TopOpeBRepDS_ListOfInterference(object):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_ListOfInterference_Prepend(self, *args)
 
-    def Append(self, *args) -> "void" :
+    def Append(self, *args):
         """
         :param I:
         :type I: Handle_TopOpeBRepDS_Interference &
@@ -8094,28 +8464,28 @@ class TopOpeBRepDS_ListOfInterference(object):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_ListOfInterference_Append(self, *args)
 
-    def First(self, *args) -> "Handle_TopOpeBRepDS_Interference &" :
+    def First(self):
         """
         :rtype: Handle_TopOpeBRepDS_Interference
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_ListOfInterference_First(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_ListOfInterference_First(self)
 
-    def Last(self, *args) -> "Handle_TopOpeBRepDS_Interference &" :
+    def Last(self):
         """
         :rtype: Handle_TopOpeBRepDS_Interference
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_ListOfInterference_Last(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_ListOfInterference_Last(self)
 
-    def RemoveFirst(self, *args) -> "void" :
+    def RemoveFirst(self):
         """
         :rtype: None
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_ListOfInterference_RemoveFirst(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_ListOfInterference_RemoveFirst(self)
 
-    def Remove(self, *args) -> "void" :
+    def Remove(self, *args):
         """
         :param It:
         :type It: TopOpeBRepDS_ListIteratorOfListOfInterference &
@@ -8124,7 +8494,7 @@ class TopOpeBRepDS_ListOfInterference(object):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_ListOfInterference_Remove(self, *args)
 
-    def InsertBefore(self, *args) -> "void" :
+    def InsertBefore(self, *args):
         """
         :param I:
         :type I: Handle_TopOpeBRepDS_Interference &
@@ -8141,7 +8511,7 @@ class TopOpeBRepDS_ListOfInterference(object):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_ListOfInterference_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args) -> "void" :
+    def InsertAfter(self, *args):
         """
         :param I:
         :type I: Handle_TopOpeBRepDS_Interference &
@@ -8186,35 +8556,39 @@ TopOpeBRepDS_ListOfInterference_swigregister(TopOpeBRepDS_ListOfInterference)
 class TopOpeBRepDS_ListOfShapeOn1State(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _TopOpeBRepDS.TopOpeBRepDS_ListOfShapeOn1State_swiginit(self,_TopOpeBRepDS.new_TopOpeBRepDS_ListOfShapeOn1State(*args))
-    def ListOnState(self, *args) -> "TopTools_ListOfShape const &" :
+        _TopOpeBRepDS.TopOpeBRepDS_ListOfShapeOn1State_swiginit(self,_TopOpeBRepDS.new_TopOpeBRepDS_ListOfShapeOn1State())
+    def ListOnState(self):
         """
         :rtype: TopTools_ListOfShape
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_ListOfShapeOn1State_ListOnState(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_ListOfShapeOn1State_ListOnState(self)
 
-    def ChangeListOnState(self, *args) -> "TopTools_ListOfShape &" :
+    def ChangeListOnState(self):
         """
         :rtype: TopTools_ListOfShape
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_ListOfShapeOn1State_ChangeListOnState(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_ListOfShapeOn1State_ChangeListOnState(self)
 
-    def IsSplit(self, *args) -> "Standard_Boolean" :
+    def IsSplit(self):
         """
         :rtype: bool
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_ListOfShapeOn1State_IsSplit(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_ListOfShapeOn1State_IsSplit(self)
 
-    def Split(self, *args) -> "void" :
+    def Split(self, *args):
         """
+        :param B: default value is Standard_True
+        :type B: bool
+        :rtype: None
+
         :param B: default value is Standard_True
         :type B: bool
         :rtype: None
@@ -8222,12 +8596,12 @@ class TopOpeBRepDS_ListOfShapeOn1State(object):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_ListOfShapeOn1State_Split(self, *args)
 
-    def Clear(self, *args) -> "void" :
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_ListOfShapeOn1State_Clear(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_ListOfShapeOn1State_Clear(self)
 
     def __del__(self):
     	try:
@@ -8249,15 +8623,19 @@ TopOpeBRepDS_ListOfShapeOn1State_swigregister(TopOpeBRepDS_ListOfShapeOn1State)
 class TopOpeBRepDS_MapOfCurve(OCC.TCollection.TCollection_BasicMap):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self, NbBuckets=1): 
         """
         :param NbBuckets: default value is 1
-        :type NbBuckets: int
+        :type NbBuckets: Standard_Integer
+        :rtype: None
+
+        :param NbBuckets: default value is 1
+        :type NbBuckets: Standard_Integer
         :rtype: None
 
         """
-        _TopOpeBRepDS.TopOpeBRepDS_MapOfCurve_swiginit(self,_TopOpeBRepDS.new_TopOpeBRepDS_MapOfCurve(*args))
-    def Assign(self, *args) -> "TopOpeBRepDS_MapOfCurve &" :
+        _TopOpeBRepDS.TopOpeBRepDS_MapOfCurve_swiginit(self,_TopOpeBRepDS.new_TopOpeBRepDS_MapOfCurve(NbBuckets))
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: TopOpeBRepDS_MapOfCurve &
@@ -8266,7 +8644,7 @@ class TopOpeBRepDS_MapOfCurve(OCC.TCollection.TCollection_BasicMap):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_MapOfCurve_Assign(self, *args)
 
-    def Set(self, *args) -> "TopOpeBRepDS_MapOfCurve &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: TopOpeBRepDS_MapOfCurve &
@@ -8275,26 +8653,26 @@ class TopOpeBRepDS_MapOfCurve(OCC.TCollection.TCollection_BasicMap):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_MapOfCurve_Set(self, *args)
 
-    def ReSize(self, *args) -> "void" :
+    def ReSize(self, *args):
         """
         :param NbBuckets:
-        :type NbBuckets: int
+        :type NbBuckets: Standard_Integer
         :rtype: None
 
         """
         return _TopOpeBRepDS.TopOpeBRepDS_MapOfCurve_ReSize(self, *args)
 
-    def Clear(self, *args) -> "void" :
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_MapOfCurve_Clear(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_MapOfCurve_Clear(self)
 
-    def Bind(self, *args) -> "Standard_Boolean" :
+    def Bind(self, *args):
         """
         :param K:
-        :type K: int &
+        :type K: Standard_Integer &
         :param I:
         :type I: TopOpeBRepDS_CurveData &
         :rtype: bool
@@ -8302,61 +8680,61 @@ class TopOpeBRepDS_MapOfCurve(OCC.TCollection.TCollection_BasicMap):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_MapOfCurve_Bind(self, *args)
 
-    def IsBound(self, *args) -> "Standard_Boolean" :
+    def IsBound(self):
         """
         :param K:
-        :type K: int &
+        :type K: Standard_Integer &
         :rtype: bool
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_MapOfCurve_IsBound(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_MapOfCurve_IsBound(self)
 
-    def UnBind(self, *args) -> "Standard_Boolean" :
+    def UnBind(self):
         """
         :param K:
-        :type K: int &
+        :type K: Standard_Integer &
         :rtype: bool
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_MapOfCurve_UnBind(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_MapOfCurve_UnBind(self)
 
-    def Find(self, *args) -> "TopOpeBRepDS_CurveData const &" :
+    def Find(self):
         """
         :param K:
-        :type K: int &
+        :type K: Standard_Integer &
         :rtype: TopOpeBRepDS_CurveData
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_MapOfCurve_Find(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_MapOfCurve_Find(self)
 
-    def ChangeFind(self, *args) -> "TopOpeBRepDS_CurveData &" :
+    def ChangeFind(self):
         """
         :param K:
-        :type K: int &
+        :type K: Standard_Integer &
         :rtype: TopOpeBRepDS_CurveData
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_MapOfCurve_ChangeFind(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_MapOfCurve_ChangeFind(self)
 
-    def Find1(self, *args) -> "Standard_Address" :
+    def Find1(self):
         """
         :param K:
-        :type K: int &
+        :type K: Standard_Integer &
         :rtype: Standard_Address
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_MapOfCurve_Find1(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_MapOfCurve_Find1(self)
 
-    def ChangeFind1(self, *args) -> "Standard_Address" :
+    def ChangeFind1(self):
         """
         :param K:
-        :type K: int &
+        :type K: Standard_Integer &
         :rtype: Standard_Address
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_MapOfCurve_ChangeFind1(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_MapOfCurve_ChangeFind1(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(TopOpeBRepDS_MapOfCurve self)"""
         return _TopOpeBRepDS.TopOpeBRepDS_MapOfCurve__kill_pointed(self)
 
@@ -8386,15 +8764,19 @@ TopOpeBRepDS_MapOfCurve_swigregister(TopOpeBRepDS_MapOfCurve)
 class TopOpeBRepDS_MapOfIntegerShapeData(OCC.TCollection.TCollection_BasicMap):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self, NbBuckets=1): 
         """
         :param NbBuckets: default value is 1
-        :type NbBuckets: int
+        :type NbBuckets: Standard_Integer
+        :rtype: None
+
+        :param NbBuckets: default value is 1
+        :type NbBuckets: Standard_Integer
         :rtype: None
 
         """
-        _TopOpeBRepDS.TopOpeBRepDS_MapOfIntegerShapeData_swiginit(self,_TopOpeBRepDS.new_TopOpeBRepDS_MapOfIntegerShapeData(*args))
-    def Assign(self, *args) -> "TopOpeBRepDS_MapOfIntegerShapeData &" :
+        _TopOpeBRepDS.TopOpeBRepDS_MapOfIntegerShapeData_swiginit(self,_TopOpeBRepDS.new_TopOpeBRepDS_MapOfIntegerShapeData(NbBuckets))
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: TopOpeBRepDS_MapOfIntegerShapeData &
@@ -8403,7 +8785,7 @@ class TopOpeBRepDS_MapOfIntegerShapeData(OCC.TCollection.TCollection_BasicMap):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_MapOfIntegerShapeData_Assign(self, *args)
 
-    def Set(self, *args) -> "TopOpeBRepDS_MapOfIntegerShapeData &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: TopOpeBRepDS_MapOfIntegerShapeData &
@@ -8412,26 +8794,26 @@ class TopOpeBRepDS_MapOfIntegerShapeData(OCC.TCollection.TCollection_BasicMap):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_MapOfIntegerShapeData_Set(self, *args)
 
-    def ReSize(self, *args) -> "void" :
+    def ReSize(self, *args):
         """
         :param NbBuckets:
-        :type NbBuckets: int
+        :type NbBuckets: Standard_Integer
         :rtype: None
 
         """
         return _TopOpeBRepDS.TopOpeBRepDS_MapOfIntegerShapeData_ReSize(self, *args)
 
-    def Clear(self, *args) -> "void" :
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_MapOfIntegerShapeData_Clear(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_MapOfIntegerShapeData_Clear(self)
 
-    def Bind(self, *args) -> "Standard_Boolean" :
+    def Bind(self, *args):
         """
         :param K:
-        :type K: int &
+        :type K: Standard_Integer &
         :param I:
         :type I: TopOpeBRepDS_ShapeData &
         :rtype: bool
@@ -8439,61 +8821,61 @@ class TopOpeBRepDS_MapOfIntegerShapeData(OCC.TCollection.TCollection_BasicMap):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_MapOfIntegerShapeData_Bind(self, *args)
 
-    def IsBound(self, *args) -> "Standard_Boolean" :
+    def IsBound(self):
         """
         :param K:
-        :type K: int &
+        :type K: Standard_Integer &
         :rtype: bool
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_MapOfIntegerShapeData_IsBound(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_MapOfIntegerShapeData_IsBound(self)
 
-    def UnBind(self, *args) -> "Standard_Boolean" :
+    def UnBind(self):
         """
         :param K:
-        :type K: int &
+        :type K: Standard_Integer &
         :rtype: bool
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_MapOfIntegerShapeData_UnBind(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_MapOfIntegerShapeData_UnBind(self)
 
-    def Find(self, *args) -> "TopOpeBRepDS_ShapeData const &" :
+    def Find(self):
         """
         :param K:
-        :type K: int &
+        :type K: Standard_Integer &
         :rtype: TopOpeBRepDS_ShapeData
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_MapOfIntegerShapeData_Find(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_MapOfIntegerShapeData_Find(self)
 
-    def ChangeFind(self, *args) -> "TopOpeBRepDS_ShapeData &" :
+    def ChangeFind(self):
         """
         :param K:
-        :type K: int &
+        :type K: Standard_Integer &
         :rtype: TopOpeBRepDS_ShapeData
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_MapOfIntegerShapeData_ChangeFind(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_MapOfIntegerShapeData_ChangeFind(self)
 
-    def Find1(self, *args) -> "Standard_Address" :
+    def Find1(self):
         """
         :param K:
-        :type K: int &
+        :type K: Standard_Integer &
         :rtype: Standard_Address
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_MapOfIntegerShapeData_Find1(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_MapOfIntegerShapeData_Find1(self)
 
-    def ChangeFind1(self, *args) -> "Standard_Address" :
+    def ChangeFind1(self):
         """
         :param K:
-        :type K: int &
+        :type K: Standard_Integer &
         :rtype: Standard_Address
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_MapOfIntegerShapeData_ChangeFind1(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_MapOfIntegerShapeData_ChangeFind1(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(TopOpeBRepDS_MapOfIntegerShapeData self)"""
         return _TopOpeBRepDS.TopOpeBRepDS_MapOfIntegerShapeData__kill_pointed(self)
 
@@ -8523,15 +8905,19 @@ TopOpeBRepDS_MapOfIntegerShapeData_swigregister(TopOpeBRepDS_MapOfIntegerShapeDa
 class TopOpeBRepDS_MapOfPoint(OCC.TCollection.TCollection_BasicMap):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self, NbBuckets=1): 
         """
         :param NbBuckets: default value is 1
-        :type NbBuckets: int
+        :type NbBuckets: Standard_Integer
+        :rtype: None
+
+        :param NbBuckets: default value is 1
+        :type NbBuckets: Standard_Integer
         :rtype: None
 
         """
-        _TopOpeBRepDS.TopOpeBRepDS_MapOfPoint_swiginit(self,_TopOpeBRepDS.new_TopOpeBRepDS_MapOfPoint(*args))
-    def Assign(self, *args) -> "TopOpeBRepDS_MapOfPoint &" :
+        _TopOpeBRepDS.TopOpeBRepDS_MapOfPoint_swiginit(self,_TopOpeBRepDS.new_TopOpeBRepDS_MapOfPoint(NbBuckets))
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: TopOpeBRepDS_MapOfPoint &
@@ -8540,7 +8926,7 @@ class TopOpeBRepDS_MapOfPoint(OCC.TCollection.TCollection_BasicMap):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_MapOfPoint_Assign(self, *args)
 
-    def Set(self, *args) -> "TopOpeBRepDS_MapOfPoint &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: TopOpeBRepDS_MapOfPoint &
@@ -8549,26 +8935,26 @@ class TopOpeBRepDS_MapOfPoint(OCC.TCollection.TCollection_BasicMap):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_MapOfPoint_Set(self, *args)
 
-    def ReSize(self, *args) -> "void" :
+    def ReSize(self, *args):
         """
         :param NbBuckets:
-        :type NbBuckets: int
+        :type NbBuckets: Standard_Integer
         :rtype: None
 
         """
         return _TopOpeBRepDS.TopOpeBRepDS_MapOfPoint_ReSize(self, *args)
 
-    def Clear(self, *args) -> "void" :
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_MapOfPoint_Clear(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_MapOfPoint_Clear(self)
 
-    def Bind(self, *args) -> "Standard_Boolean" :
+    def Bind(self, *args):
         """
         :param K:
-        :type K: int &
+        :type K: Standard_Integer &
         :param I:
         :type I: TopOpeBRepDS_PointData &
         :rtype: bool
@@ -8576,61 +8962,61 @@ class TopOpeBRepDS_MapOfPoint(OCC.TCollection.TCollection_BasicMap):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_MapOfPoint_Bind(self, *args)
 
-    def IsBound(self, *args) -> "Standard_Boolean" :
+    def IsBound(self):
         """
         :param K:
-        :type K: int &
+        :type K: Standard_Integer &
         :rtype: bool
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_MapOfPoint_IsBound(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_MapOfPoint_IsBound(self)
 
-    def UnBind(self, *args) -> "Standard_Boolean" :
+    def UnBind(self):
         """
         :param K:
-        :type K: int &
+        :type K: Standard_Integer &
         :rtype: bool
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_MapOfPoint_UnBind(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_MapOfPoint_UnBind(self)
 
-    def Find(self, *args) -> "TopOpeBRepDS_PointData const &" :
+    def Find(self):
         """
         :param K:
-        :type K: int &
+        :type K: Standard_Integer &
         :rtype: TopOpeBRepDS_PointData
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_MapOfPoint_Find(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_MapOfPoint_Find(self)
 
-    def ChangeFind(self, *args) -> "TopOpeBRepDS_PointData &" :
+    def ChangeFind(self):
         """
         :param K:
-        :type K: int &
+        :type K: Standard_Integer &
         :rtype: TopOpeBRepDS_PointData
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_MapOfPoint_ChangeFind(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_MapOfPoint_ChangeFind(self)
 
-    def Find1(self, *args) -> "Standard_Address" :
+    def Find1(self):
         """
         :param K:
-        :type K: int &
+        :type K: Standard_Integer &
         :rtype: Standard_Address
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_MapOfPoint_Find1(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_MapOfPoint_Find1(self)
 
-    def ChangeFind1(self, *args) -> "Standard_Address" :
+    def ChangeFind1(self):
         """
         :param K:
-        :type K: int &
+        :type K: Standard_Integer &
         :rtype: Standard_Address
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_MapOfPoint_ChangeFind1(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_MapOfPoint_ChangeFind1(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(TopOpeBRepDS_MapOfPoint self)"""
         return _TopOpeBRepDS.TopOpeBRepDS_MapOfPoint__kill_pointed(self)
 
@@ -8660,15 +9046,19 @@ TopOpeBRepDS_MapOfPoint_swigregister(TopOpeBRepDS_MapOfPoint)
 class TopOpeBRepDS_MapOfShapeData(OCC.TCollection.TCollection_BasicMap):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self, NbBuckets=1): 
         """
         :param NbBuckets: default value is 1
-        :type NbBuckets: int
+        :type NbBuckets: Standard_Integer
+        :rtype: None
+
+        :param NbBuckets: default value is 1
+        :type NbBuckets: Standard_Integer
         :rtype: None
 
         """
-        _TopOpeBRepDS.TopOpeBRepDS_MapOfShapeData_swiginit(self,_TopOpeBRepDS.new_TopOpeBRepDS_MapOfShapeData(*args))
-    def Assign(self, *args) -> "TopOpeBRepDS_MapOfShapeData &" :
+        _TopOpeBRepDS.TopOpeBRepDS_MapOfShapeData_swiginit(self,_TopOpeBRepDS.new_TopOpeBRepDS_MapOfShapeData(NbBuckets))
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: TopOpeBRepDS_MapOfShapeData &
@@ -8677,7 +9067,7 @@ class TopOpeBRepDS_MapOfShapeData(OCC.TCollection.TCollection_BasicMap):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_MapOfShapeData_Assign(self, *args)
 
-    def Set(self, *args) -> "TopOpeBRepDS_MapOfShapeData &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: TopOpeBRepDS_MapOfShapeData &
@@ -8686,23 +9076,23 @@ class TopOpeBRepDS_MapOfShapeData(OCC.TCollection.TCollection_BasicMap):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_MapOfShapeData_Set(self, *args)
 
-    def ReSize(self, *args) -> "void" :
+    def ReSize(self, *args):
         """
         :param NbBuckets:
-        :type NbBuckets: int
+        :type NbBuckets: Standard_Integer
         :rtype: None
 
         """
         return _TopOpeBRepDS.TopOpeBRepDS_MapOfShapeData_ReSize(self, *args)
 
-    def Clear(self, *args) -> "void" :
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_MapOfShapeData_Clear(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_MapOfShapeData_Clear(self)
 
-    def Add(self, *args) -> "Standard_Integer" :
+    def Add(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -8713,10 +9103,10 @@ class TopOpeBRepDS_MapOfShapeData(OCC.TCollection.TCollection_BasicMap):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_MapOfShapeData_Add(self, *args)
 
-    def Substitute(self, *args) -> "void" :
+    def Substitute(self, *args):
         """
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :param K:
         :type K: TopoDS_Shape &
         :param T:
@@ -8726,14 +9116,14 @@ class TopOpeBRepDS_MapOfShapeData(OCC.TCollection.TCollection_BasicMap):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_MapOfShapeData_Substitute(self, *args)
 
-    def RemoveLast(self, *args) -> "void" :
+    def RemoveLast(self):
         """
         :rtype: None
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_MapOfShapeData_RemoveLast(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_MapOfShapeData_RemoveLast(self)
 
-    def Contains(self, *args) -> "Standard_Boolean" :
+    def Contains(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -8742,34 +9132,34 @@ class TopOpeBRepDS_MapOfShapeData(OCC.TCollection.TCollection_BasicMap):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_MapOfShapeData_Contains(self, *args)
 
-    def FindKey(self, *args) -> "TopoDS_Shape const" :
+    def FindKey(self, *args):
         """
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :rtype: TopoDS_Shape
 
         """
         return _TopOpeBRepDS.TopOpeBRepDS_MapOfShapeData_FindKey(self, *args)
 
-    def FindFromIndex(self, *args) -> "TopOpeBRepDS_ShapeData const &" :
+    def FindFromIndex(self, *args):
         """
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :rtype: TopOpeBRepDS_ShapeData
 
         """
         return _TopOpeBRepDS.TopOpeBRepDS_MapOfShapeData_FindFromIndex(self, *args)
 
-    def ChangeFromIndex(self, *args) -> "TopOpeBRepDS_ShapeData &" :
+    def ChangeFromIndex(self, *args):
         """
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :rtype: TopOpeBRepDS_ShapeData
 
         """
         return _TopOpeBRepDS.TopOpeBRepDS_MapOfShapeData_ChangeFromIndex(self, *args)
 
-    def FindIndex(self, *args) -> "Standard_Integer" :
+    def FindIndex(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -8778,7 +9168,7 @@ class TopOpeBRepDS_MapOfShapeData(OCC.TCollection.TCollection_BasicMap):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_MapOfShapeData_FindIndex(self, *args)
 
-    def FindFromKey(self, *args) -> "TopOpeBRepDS_ShapeData const &" :
+    def FindFromKey(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -8787,7 +9177,7 @@ class TopOpeBRepDS_MapOfShapeData(OCC.TCollection.TCollection_BasicMap):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_MapOfShapeData_FindFromKey(self, *args)
 
-    def ChangeFromKey(self, *args) -> "TopOpeBRepDS_ShapeData &" :
+    def ChangeFromKey(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -8796,7 +9186,7 @@ class TopOpeBRepDS_MapOfShapeData(OCC.TCollection.TCollection_BasicMap):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_MapOfShapeData_ChangeFromKey(self, *args)
 
-    def FindFromKey1(self, *args) -> "Standard_Address" :
+    def FindFromKey1(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -8805,7 +9195,7 @@ class TopOpeBRepDS_MapOfShapeData(OCC.TCollection.TCollection_BasicMap):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_MapOfShapeData_FindFromKey1(self, *args)
 
-    def ChangeFromKey1(self, *args) -> "Standard_Address" :
+    def ChangeFromKey1(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -8814,7 +9204,7 @@ class TopOpeBRepDS_MapOfShapeData(OCC.TCollection.TCollection_BasicMap):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_MapOfShapeData_ChangeFromKey1(self, *args)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(TopOpeBRepDS_MapOfShapeData self)"""
         return _TopOpeBRepDS.TopOpeBRepDS_MapOfShapeData__kill_pointed(self)
 
@@ -8849,15 +9239,19 @@ TopOpeBRepDS_MapOfShapeData_swigregister(TopOpeBRepDS_MapOfShapeData)
 class TopOpeBRepDS_MapOfSurface(OCC.TCollection.TCollection_BasicMap):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self, NbBuckets=1): 
         """
         :param NbBuckets: default value is 1
-        :type NbBuckets: int
+        :type NbBuckets: Standard_Integer
+        :rtype: None
+
+        :param NbBuckets: default value is 1
+        :type NbBuckets: Standard_Integer
         :rtype: None
 
         """
-        _TopOpeBRepDS.TopOpeBRepDS_MapOfSurface_swiginit(self,_TopOpeBRepDS.new_TopOpeBRepDS_MapOfSurface(*args))
-    def Assign(self, *args) -> "TopOpeBRepDS_MapOfSurface &" :
+        _TopOpeBRepDS.TopOpeBRepDS_MapOfSurface_swiginit(self,_TopOpeBRepDS.new_TopOpeBRepDS_MapOfSurface(NbBuckets))
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: TopOpeBRepDS_MapOfSurface &
@@ -8866,7 +9260,7 @@ class TopOpeBRepDS_MapOfSurface(OCC.TCollection.TCollection_BasicMap):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_MapOfSurface_Assign(self, *args)
 
-    def Set(self, *args) -> "TopOpeBRepDS_MapOfSurface &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: TopOpeBRepDS_MapOfSurface &
@@ -8875,26 +9269,26 @@ class TopOpeBRepDS_MapOfSurface(OCC.TCollection.TCollection_BasicMap):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_MapOfSurface_Set(self, *args)
 
-    def ReSize(self, *args) -> "void" :
+    def ReSize(self, *args):
         """
         :param NbBuckets:
-        :type NbBuckets: int
+        :type NbBuckets: Standard_Integer
         :rtype: None
 
         """
         return _TopOpeBRepDS.TopOpeBRepDS_MapOfSurface_ReSize(self, *args)
 
-    def Clear(self, *args) -> "void" :
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_MapOfSurface_Clear(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_MapOfSurface_Clear(self)
 
-    def Bind(self, *args) -> "Standard_Boolean" :
+    def Bind(self, *args):
         """
         :param K:
-        :type K: int &
+        :type K: Standard_Integer &
         :param I:
         :type I: TopOpeBRepDS_SurfaceData &
         :rtype: bool
@@ -8902,61 +9296,61 @@ class TopOpeBRepDS_MapOfSurface(OCC.TCollection.TCollection_BasicMap):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_MapOfSurface_Bind(self, *args)
 
-    def IsBound(self, *args) -> "Standard_Boolean" :
+    def IsBound(self):
         """
         :param K:
-        :type K: int &
+        :type K: Standard_Integer &
         :rtype: bool
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_MapOfSurface_IsBound(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_MapOfSurface_IsBound(self)
 
-    def UnBind(self, *args) -> "Standard_Boolean" :
+    def UnBind(self):
         """
         :param K:
-        :type K: int &
+        :type K: Standard_Integer &
         :rtype: bool
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_MapOfSurface_UnBind(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_MapOfSurface_UnBind(self)
 
-    def Find(self, *args) -> "TopOpeBRepDS_SurfaceData const &" :
+    def Find(self):
         """
         :param K:
-        :type K: int &
+        :type K: Standard_Integer &
         :rtype: TopOpeBRepDS_SurfaceData
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_MapOfSurface_Find(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_MapOfSurface_Find(self)
 
-    def ChangeFind(self, *args) -> "TopOpeBRepDS_SurfaceData &" :
+    def ChangeFind(self):
         """
         :param K:
-        :type K: int &
+        :type K: Standard_Integer &
         :rtype: TopOpeBRepDS_SurfaceData
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_MapOfSurface_ChangeFind(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_MapOfSurface_ChangeFind(self)
 
-    def Find1(self, *args) -> "Standard_Address" :
+    def Find1(self):
         """
         :param K:
-        :type K: int &
+        :type K: Standard_Integer &
         :rtype: Standard_Address
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_MapOfSurface_Find1(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_MapOfSurface_Find1(self)
 
-    def ChangeFind1(self, *args) -> "Standard_Address" :
+    def ChangeFind1(self):
         """
         :param K:
-        :type K: int &
+        :type K: Standard_Integer &
         :rtype: Standard_Address
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_MapOfSurface_ChangeFind1(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_MapOfSurface_ChangeFind1(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(TopOpeBRepDS_MapOfSurface self)"""
         return _TopOpeBRepDS.TopOpeBRepDS_MapOfSurface__kill_pointed(self)
 
@@ -8986,23 +9380,23 @@ TopOpeBRepDS_MapOfSurface_swigregister(TopOpeBRepDS_MapOfSurface)
 class TopOpeBRepDS_Marker(OCC.MMgt.MMgt_TShared):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _TopOpeBRepDS.TopOpeBRepDS_Marker_swiginit(self,_TopOpeBRepDS.new_TopOpeBRepDS_Marker(*args))
-    def Reset(self, *args) -> "void" :
+        _TopOpeBRepDS.TopOpeBRepDS_Marker_swiginit(self,_TopOpeBRepDS.new_TopOpeBRepDS_Marker())
+    def Reset(self):
         """
         :rtype: None
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_Marker_Reset(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_Marker_Reset(self)
 
-    def Set(self, *args) -> "void" :
+    def Set(self, *args):
         """
         :param i:
-        :type i: int
+        :type i: Standard_Integer
         :param b:
         :type b: bool
         :rtype: None
@@ -9010,7 +9404,7 @@ class TopOpeBRepDS_Marker(OCC.MMgt.MMgt_TShared):
         :param b:
         :type b: bool
         :param n:
-        :type n: int
+        :type n: Standard_Integer
         :param a:
         :type a: Standard_Address
         :rtype: None
@@ -9018,29 +9412,29 @@ class TopOpeBRepDS_Marker(OCC.MMgt.MMgt_TShared):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_Marker_Set(self, *args)
 
-    def GetI(self, *args) -> "Standard_Boolean" :
+    def GetI(self, *args):
         """
         :param i:
-        :type i: int
+        :type i: Standard_Integer
         :rtype: bool
 
         """
         return _TopOpeBRepDS.TopOpeBRepDS_Marker_GetI(self, *args)
 
-    def Allocate(self, *args) -> "void" :
+    def Allocate(self, *args):
         """
         :param n:
-        :type n: int
+        :type n: Standard_Integer
         :rtype: None
 
         """
         return _TopOpeBRepDS.TopOpeBRepDS_Marker_Allocate(self, *args)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(TopOpeBRepDS_Marker self)"""
         return _TopOpeBRepDS.TopOpeBRepDS_Marker__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_TopOpeBRepDS_Marker" :
+    def GetHandle(self):
         """GetHandle(TopOpeBRepDS_Marker self) -> Handle_TopOpeBRepDS_Marker"""
         return _TopOpeBRepDS.TopOpeBRepDS_Marker_GetHandle(self)
 
@@ -9082,7 +9476,7 @@ Handle_TopOpeBRepDS_Marker._kill_pointed = new_instancemethod(_TopOpeBRepDS.Hand
 Handle_TopOpeBRepDS_Marker_swigregister = _TopOpeBRepDS.Handle_TopOpeBRepDS_Marker_swigregister
 Handle_TopOpeBRepDS_Marker_swigregister(Handle_TopOpeBRepDS_Marker)
 
-def Handle_TopOpeBRepDS_Marker_DownCast(*args) -> "Handle_TopOpeBRepDS_Marker const" :
+def Handle_TopOpeBRepDS_Marker_DownCast(*args):
   return _TopOpeBRepDS.Handle_TopOpeBRepDS_Marker_DownCast(*args)
 Handle_TopOpeBRepDS_Marker_DownCast = _TopOpeBRepDS.Handle_TopOpeBRepDS_Marker_DownCast
 
@@ -9105,7 +9499,7 @@ class TopOpeBRepDS_Point(object):
 
         """
         _TopOpeBRepDS.TopOpeBRepDS_Point_swiginit(self,_TopOpeBRepDS.new_TopOpeBRepDS_Point(*args))
-    def IsEqual(self, *args) -> "Standard_Boolean" :
+    def IsEqual(self, *args):
         """
         :param other:
         :type other: TopOpeBRepDS_Point &
@@ -9114,21 +9508,21 @@ class TopOpeBRepDS_Point(object):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_Point_IsEqual(self, *args)
 
-    def Point(self, *args) -> "gp_Pnt const" :
+    def Point(self):
         """
         :rtype: gp_Pnt
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_Point_Point(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_Point_Point(self)
 
-    def ChangePoint(self, *args) -> "gp_Pnt" :
+    def ChangePoint(self):
         """
         :rtype: gp_Pnt
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_Point_ChangePoint(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_Point_ChangePoint(self)
 
-    def Tolerance(self, *args) -> "void" :
+    def Tolerance(self, *args):
         """
         :rtype: float
 
@@ -9139,14 +9533,14 @@ class TopOpeBRepDS_Point(object):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_Point_Tolerance(self, *args)
 
-    def Keep(self, *args) -> "Standard_Boolean" :
+    def Keep(self):
         """
         :rtype: bool
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_Point_Keep(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_Point_Keep(self)
 
-    def ChangeKeep(self, *args) -> "void" :
+    def ChangeKeep(self, *args):
         """
         :param B:
         :type B: bool
@@ -9186,10 +9580,22 @@ class TopOpeBRepDS_PointExplorer(object):
         :type FindOnlyKeep: bool
         :rtype: None
 
+        :param DS:
+        :type DS: TopOpeBRepDS_DataStructure &
+        :param FindOnlyKeep: default value is Standard_True
+        :type FindOnlyKeep: bool
+        :rtype: None
+
         """
         _TopOpeBRepDS.TopOpeBRepDS_PointExplorer_swiginit(self,_TopOpeBRepDS.new_TopOpeBRepDS_PointExplorer(*args))
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
+        :param DS:
+        :type DS: TopOpeBRepDS_DataStructure &
+        :param FindOnlyKeep: default value is Standard_True
+        :type FindOnlyKeep: bool
+        :rtype: None
+
         :param DS:
         :type DS: TopOpeBRepDS_DataStructure &
         :param FindOnlyKeep: default value is Standard_True
@@ -9199,62 +9605,62 @@ class TopOpeBRepDS_PointExplorer(object):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_PointExplorer_Init(self, *args)
 
-    def More(self, *args) -> "Standard_Boolean" :
+    def More(self):
         """
         :rtype: bool
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_PointExplorer_More(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_PointExplorer_More(self)
 
-    def Next(self, *args) -> "void" :
+    def Next(self):
         """
         :rtype: None
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_PointExplorer_Next(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_PointExplorer_Next(self)
 
-    def IsPoint(self, *args) -> "Standard_Boolean" :
+    def IsPoint(self, *args):
         """
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :rtype: bool
 
         """
         return _TopOpeBRepDS.TopOpeBRepDS_PointExplorer_IsPoint(self, *args)
 
-    def IsPointKeep(self, *args) -> "Standard_Boolean" :
+    def IsPointKeep(self, *args):
         """
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :rtype: bool
 
         """
         return _TopOpeBRepDS.TopOpeBRepDS_PointExplorer_IsPointKeep(self, *args)
 
-    def Point(self, *args) -> "TopOpeBRepDS_Point const &" :
+    def Point(self, *args):
         """
         :rtype: TopOpeBRepDS_Point
 
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :rtype: TopOpeBRepDS_Point
 
         """
         return _TopOpeBRepDS.TopOpeBRepDS_PointExplorer_Point(self, *args)
 
-    def NbPoint(self, *args) -> "Standard_Integer" :
+    def NbPoint(self):
         """
         :rtype: int
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_PointExplorer_NbPoint(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_PointExplorer_NbPoint(self)
 
-    def Index(self, *args) -> "Standard_Integer" :
+    def Index(self):
         """
         :rtype: int
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_PointExplorer_Index(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_PointExplorer_Index(self)
 
     def __del__(self):
     	try:
@@ -9287,7 +9693,7 @@ class TopOpeBRepDS_Reducer(object):
 
         """
         _TopOpeBRepDS.TopOpeBRepDS_Reducer_swiginit(self,_TopOpeBRepDS.new_TopOpeBRepDS_Reducer(*args))
-    def ProcessFaceInterferences(self, *args) -> "void" :
+    def ProcessFaceInterferences(self, *args):
         """
         :param M:
         :type M: TopOpeBRepDS_DataMapOfShapeListOfShapeOn1State &
@@ -9296,12 +9702,12 @@ class TopOpeBRepDS_Reducer(object):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_Reducer_ProcessFaceInterferences(self, *args)
 
-    def ProcessEdgeInterferences(self, *args) -> "void" :
+    def ProcessEdgeInterferences(self):
         """
         :rtype: None
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_Reducer_ProcessEdgeInterferences(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_Reducer_ProcessEdgeInterferences(self)
 
     def __del__(self):
     	try:
@@ -9320,34 +9726,34 @@ TopOpeBRepDS_Reducer_swigregister(TopOpeBRepDS_Reducer)
 class TopOpeBRepDS_ShapeData(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _TopOpeBRepDS.TopOpeBRepDS_ShapeData_swiginit(self,_TopOpeBRepDS.new_TopOpeBRepDS_ShapeData(*args))
-    def Interferences(self, *args) -> "TopOpeBRepDS_ListOfInterference const &" :
+        _TopOpeBRepDS.TopOpeBRepDS_ShapeData_swiginit(self,_TopOpeBRepDS.new_TopOpeBRepDS_ShapeData())
+    def Interferences(self):
         """
         :rtype: TopOpeBRepDS_ListOfInterference
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_ShapeData_Interferences(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_ShapeData_Interferences(self)
 
-    def ChangeInterferences(self, *args) -> "TopOpeBRepDS_ListOfInterference &" :
+    def ChangeInterferences(self):
         """
         :rtype: TopOpeBRepDS_ListOfInterference
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_ShapeData_ChangeInterferences(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_ShapeData_ChangeInterferences(self)
 
-    def Keep(self, *args) -> "Standard_Boolean" :
+    def Keep(self):
         """
         :rtype: bool
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_ShapeData_Keep(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_ShapeData_Keep(self)
 
-    def ChangeKeep(self, *args) -> "void" :
+    def ChangeKeep(self, *args):
         """
         :param B:
         :type B: bool
@@ -9375,15 +9781,19 @@ TopOpeBRepDS_ShapeData_swigregister(TopOpeBRepDS_ShapeData)
 class TopOpeBRepDS_ShapeSurface(OCC.TCollection.TCollection_BasicMap):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self, NbBuckets=1): 
         """
         :param NbBuckets: default value is 1
-        :type NbBuckets: int
+        :type NbBuckets: Standard_Integer
+        :rtype: None
+
+        :param NbBuckets: default value is 1
+        :type NbBuckets: Standard_Integer
         :rtype: None
 
         """
-        _TopOpeBRepDS.TopOpeBRepDS_ShapeSurface_swiginit(self,_TopOpeBRepDS.new_TopOpeBRepDS_ShapeSurface(*args))
-    def Assign(self, *args) -> "TopOpeBRepDS_ShapeSurface &" :
+        _TopOpeBRepDS.TopOpeBRepDS_ShapeSurface_swiginit(self,_TopOpeBRepDS.new_TopOpeBRepDS_ShapeSurface(NbBuckets))
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: TopOpeBRepDS_ShapeSurface &
@@ -9392,7 +9802,7 @@ class TopOpeBRepDS_ShapeSurface(OCC.TCollection.TCollection_BasicMap):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_ShapeSurface_Assign(self, *args)
 
-    def Set(self, *args) -> "TopOpeBRepDS_ShapeSurface &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: TopOpeBRepDS_ShapeSurface &
@@ -9401,23 +9811,23 @@ class TopOpeBRepDS_ShapeSurface(OCC.TCollection.TCollection_BasicMap):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_ShapeSurface_Set(self, *args)
 
-    def ReSize(self, *args) -> "void" :
+    def ReSize(self, *args):
         """
         :param NbBuckets:
-        :type NbBuckets: int
+        :type NbBuckets: Standard_Integer
         :rtype: None
 
         """
         return _TopOpeBRepDS.TopOpeBRepDS_ShapeSurface_ReSize(self, *args)
 
-    def Clear(self, *args) -> "void" :
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_ShapeSurface_Clear(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_ShapeSurface_Clear(self)
 
-    def Bind(self, *args) -> "Standard_Boolean" :
+    def Bind(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -9428,7 +9838,7 @@ class TopOpeBRepDS_ShapeSurface(OCC.TCollection.TCollection_BasicMap):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_ShapeSurface_Bind(self, *args)
 
-    def IsBound(self, *args) -> "Standard_Boolean" :
+    def IsBound(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -9437,7 +9847,7 @@ class TopOpeBRepDS_ShapeSurface(OCC.TCollection.TCollection_BasicMap):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_ShapeSurface_IsBound(self, *args)
 
-    def UnBind(self, *args) -> "Standard_Boolean" :
+    def UnBind(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -9446,7 +9856,7 @@ class TopOpeBRepDS_ShapeSurface(OCC.TCollection.TCollection_BasicMap):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_ShapeSurface_UnBind(self, *args)
 
-    def Find(self, *args) -> "Handle_Geom_Surface const &" :
+    def Find(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -9455,7 +9865,7 @@ class TopOpeBRepDS_ShapeSurface(OCC.TCollection.TCollection_BasicMap):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_ShapeSurface_Find(self, *args)
 
-    def ChangeFind(self, *args) -> "Handle_Geom_Surface &" :
+    def ChangeFind(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -9464,7 +9874,7 @@ class TopOpeBRepDS_ShapeSurface(OCC.TCollection.TCollection_BasicMap):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_ShapeSurface_ChangeFind(self, *args)
 
-    def Find1(self, *args) -> "Standard_Address" :
+    def Find1(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -9473,7 +9883,7 @@ class TopOpeBRepDS_ShapeSurface(OCC.TCollection.TCollection_BasicMap):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_ShapeSurface_Find1(self, *args)
 
-    def ChangeFind1(self, *args) -> "Standard_Address" :
+    def ChangeFind1(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -9482,7 +9892,7 @@ class TopOpeBRepDS_ShapeSurface(OCC.TCollection.TCollection_BasicMap):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_ShapeSurface_ChangeFind1(self, *args)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(TopOpeBRepDS_ShapeSurface self)"""
         return _TopOpeBRepDS.TopOpeBRepDS_ShapeSurface__kill_pointed(self)
 
@@ -9512,13 +9922,13 @@ TopOpeBRepDS_ShapeSurface_swigregister(TopOpeBRepDS_ShapeSurface)
 class TopOpeBRepDS_ShapeWithState(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _TopOpeBRepDS.TopOpeBRepDS_ShapeWithState_swiginit(self,_TopOpeBRepDS.new_TopOpeBRepDS_ShapeWithState(*args))
-    def Part(self, *args) -> "TopTools_ListOfShape const &" :
+        _TopOpeBRepDS.TopOpeBRepDS_ShapeWithState_swiginit(self,_TopOpeBRepDS.new_TopOpeBRepDS_ShapeWithState())
+    def Part(self, *args):
         """
         :param aState:
         :type aState: TopAbs_State
@@ -9527,7 +9937,7 @@ class TopOpeBRepDS_ShapeWithState(object):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_ShapeWithState_Part(self, *args)
 
-    def AddPart(self, *args) -> "void" :
+    def AddPart(self, *args):
         """
         :param aShape:
         :type aShape: TopoDS_Shape &
@@ -9538,7 +9948,7 @@ class TopOpeBRepDS_ShapeWithState(object):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_ShapeWithState_AddPart(self, *args)
 
-    def AddParts(self, *args) -> "void" :
+    def AddParts(self, *args):
         """
         :param aListOfShape:
         :type aListOfShape: TopTools_ListOfShape &
@@ -9549,7 +9959,7 @@ class TopOpeBRepDS_ShapeWithState(object):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_ShapeWithState_AddParts(self, *args)
 
-    def SetState(self, *args) -> "void" :
+    def SetState(self, *args):
         """
         :param aState:
         :type aState: TopAbs_State
@@ -9558,14 +9968,14 @@ class TopOpeBRepDS_ShapeWithState(object):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_ShapeWithState_SetState(self, *args)
 
-    def State(self, *args) -> "TopAbs_State" :
+    def State(self):
         """
         :rtype: TopAbs_State
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_ShapeWithState_State(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_ShapeWithState_State(self)
 
-    def SetIsSplitted(self, *args) -> "void" :
+    def SetIsSplitted(self, *args):
         """
         :param anIsSplitted:
         :type anIsSplitted: bool
@@ -9574,12 +9984,12 @@ class TopOpeBRepDS_ShapeWithState(object):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_ShapeWithState_SetIsSplitted(self, *args)
 
-    def IsSplitted(self, *args) -> "Standard_Boolean" :
+    def IsSplitted(self):
         """
         :rtype: bool
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_ShapeWithState_IsSplitted(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_ShapeWithState_IsSplitted(self)
 
     def __del__(self):
     	try:
@@ -9619,7 +10029,7 @@ class TopOpeBRepDS_Surface(object):
 
         """
         _TopOpeBRepDS.TopOpeBRepDS_Surface_swiginit(self,_TopOpeBRepDS.new_TopOpeBRepDS_Surface(*args))
-    def Assign(self, *args) -> "void" :
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: TopOpeBRepDS_Surface &
@@ -9628,7 +10038,7 @@ class TopOpeBRepDS_Surface(object):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_Surface_Assign(self, *args)
 
-    def Set(self, *args) -> "void" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: TopOpeBRepDS_Surface &
@@ -9637,14 +10047,14 @@ class TopOpeBRepDS_Surface(object):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_Surface_Set(self, *args)
 
-    def Surface(self, *args) -> "Handle_Geom_Surface const &" :
+    def Surface(self):
         """
         :rtype: Handle_Geom_Surface
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_Surface_Surface(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_Surface_Surface(self)
 
-    def Tolerance(self, *args) -> "void" :
+    def Tolerance(self, *args):
         """
         :rtype: float
 
@@ -9657,14 +10067,14 @@ class TopOpeBRepDS_Surface(object):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_Surface_Tolerance(self, *args)
 
-    def Keep(self, *args) -> "Standard_Boolean" :
+    def Keep(self):
         """
         :rtype: bool
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_Surface_Keep(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_Surface_Keep(self)
 
-    def ChangeKeep(self, *args) -> "void" :
+    def ChangeKeep(self, *args):
         """
         :param B:
         :type B: bool
@@ -9704,10 +10114,22 @@ class TopOpeBRepDS_SurfaceExplorer(object):
         :type FindOnlyKeep: bool
         :rtype: None
 
+        :param DS:
+        :type DS: TopOpeBRepDS_DataStructure &
+        :param FindOnlyKeep: default value is Standard_True
+        :type FindOnlyKeep: bool
+        :rtype: None
+
         """
         _TopOpeBRepDS.TopOpeBRepDS_SurfaceExplorer_swiginit(self,_TopOpeBRepDS.new_TopOpeBRepDS_SurfaceExplorer(*args))
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
+        :param DS:
+        :type DS: TopOpeBRepDS_DataStructure &
+        :param FindOnlyKeep: default value is Standard_True
+        :type FindOnlyKeep: bool
+        :rtype: None
+
         :param DS:
         :type DS: TopOpeBRepDS_DataStructure &
         :param FindOnlyKeep: default value is Standard_True
@@ -9717,62 +10139,62 @@ class TopOpeBRepDS_SurfaceExplorer(object):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_SurfaceExplorer_Init(self, *args)
 
-    def More(self, *args) -> "Standard_Boolean" :
+    def More(self):
         """
         :rtype: bool
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_SurfaceExplorer_More(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_SurfaceExplorer_More(self)
 
-    def Next(self, *args) -> "void" :
+    def Next(self):
         """
         :rtype: None
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_SurfaceExplorer_Next(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_SurfaceExplorer_Next(self)
 
-    def IsSurface(self, *args) -> "Standard_Boolean" :
+    def IsSurface(self, *args):
         """
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :rtype: bool
 
         """
         return _TopOpeBRepDS.TopOpeBRepDS_SurfaceExplorer_IsSurface(self, *args)
 
-    def IsSurfaceKeep(self, *args) -> "Standard_Boolean" :
+    def IsSurfaceKeep(self, *args):
         """
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :rtype: bool
 
         """
         return _TopOpeBRepDS.TopOpeBRepDS_SurfaceExplorer_IsSurfaceKeep(self, *args)
 
-    def Surface(self, *args) -> "TopOpeBRepDS_Surface const &" :
+    def Surface(self, *args):
         """
         :rtype: TopOpeBRepDS_Surface
 
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :rtype: TopOpeBRepDS_Surface
 
         """
         return _TopOpeBRepDS.TopOpeBRepDS_SurfaceExplorer_Surface(self, *args)
 
-    def NbSurface(self, *args) -> "Standard_Integer" :
+    def NbSurface(self):
         """
         :rtype: int
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_SurfaceExplorer_NbSurface(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_SurfaceExplorer_NbSurface(self)
 
-    def Index(self, *args) -> "Standard_Integer" :
+    def Index(self):
         """
         :rtype: int
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_SurfaceExplorer_Index(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_SurfaceExplorer_Index(self)
 
     def __del__(self):
     	try:
@@ -9797,20 +10219,20 @@ TopOpeBRepDS_SurfaceExplorer_swigregister(TopOpeBRepDS_SurfaceExplorer)
 class TopOpeBRepDS_TKI(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _TopOpeBRepDS.TopOpeBRepDS_TKI_swiginit(self,_TopOpeBRepDS.new_TopOpeBRepDS_TKI(*args))
-    def Clear(self, *args) -> "void" :
+        _TopOpeBRepDS.TopOpeBRepDS_TKI_swiginit(self,_TopOpeBRepDS.new_TopOpeBRepDS_TKI())
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_TKI_Clear(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_TKI_Clear(self)
 
-    def FillOnGeometry(self, *args) -> "void" :
+    def FillOnGeometry(self, *args):
         """
         :param L:
         :type L: TopOpeBRepDS_ListOfInterference &
@@ -9819,7 +10241,7 @@ class TopOpeBRepDS_TKI(object):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_TKI_FillOnGeometry(self, *args)
 
-    def FillOnSupport(self, *args) -> "void" :
+    def FillOnSupport(self, *args):
         """
         :param L:
         :type L: TopOpeBRepDS_ListOfInterference &
@@ -9828,62 +10250,62 @@ class TopOpeBRepDS_TKI(object):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_TKI_FillOnSupport(self, *args)
 
-    def IsBound(self, *args) -> "Standard_Boolean" :
+    def IsBound(self, *args):
         """
         :param K:
         :type K: TopOpeBRepDS_Kind
         :param G:
-        :type G: int
+        :type G: Standard_Integer
         :rtype: bool
 
         """
         return _TopOpeBRepDS.TopOpeBRepDS_TKI_IsBound(self, *args)
 
-    def Interferences(self, *args) -> "TopOpeBRepDS_ListOfInterference const &" :
+    def Interferences(self, *args):
         """
         :param K:
         :type K: TopOpeBRepDS_Kind
         :param G:
-        :type G: int
+        :type G: Standard_Integer
         :rtype: TopOpeBRepDS_ListOfInterference
 
         """
         return _TopOpeBRepDS.TopOpeBRepDS_TKI_Interferences(self, *args)
 
-    def ChangeInterferences(self, *args) -> "TopOpeBRepDS_ListOfInterference &" :
+    def ChangeInterferences(self, *args):
         """
         :param K:
         :type K: TopOpeBRepDS_Kind
         :param G:
-        :type G: int
+        :type G: Standard_Integer
         :rtype: TopOpeBRepDS_ListOfInterference
 
         """
         return _TopOpeBRepDS.TopOpeBRepDS_TKI_ChangeInterferences(self, *args)
 
-    def HasInterferences(self, *args) -> "Standard_Boolean" :
+    def HasInterferences(self, *args):
         """
         :param K:
         :type K: TopOpeBRepDS_Kind
         :param G:
-        :type G: int
+        :type G: Standard_Integer
         :rtype: bool
 
         """
         return _TopOpeBRepDS.TopOpeBRepDS_TKI_HasInterferences(self, *args)
 
-    def Add(self, *args) -> "void" :
+    def Add(self, *args):
         """
         :param K:
         :type K: TopOpeBRepDS_Kind
         :param G:
-        :type G: int
+        :type G: Standard_Integer
         :rtype: None
 
         :param K:
         :type K: TopOpeBRepDS_Kind
         :param G:
-        :type G: int
+        :type G: Standard_Integer
         :param HI:
         :type HI: Handle_TopOpeBRepDS_Interference &
         :rtype: None
@@ -9891,7 +10313,7 @@ class TopOpeBRepDS_TKI(object):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_TKI_Add(self, *args)
 
-    def DumpTKI(self, *args) -> "void" :
+    def DumpTKI(self, *args):
         """
         :param s1: default value is 
         :type s1: TCollection_AsciiString &
@@ -9899,6 +10321,34 @@ class TopOpeBRepDS_TKI(object):
         :type s2: TCollection_AsciiString &
         :rtype: None
 
+        :param s1: default value is 
+        :type s1: TCollection_AsciiString &
+        :param s2: default value is 
+        :type s2: TCollection_AsciiString &
+        :rtype: None
+
+        :param s1: default value is 
+        :type s1: TCollection_AsciiString &
+        :param s2: default value is 
+        :type s2: TCollection_AsciiString &
+        :rtype: None
+
+        :param K:
+        :type K: TopOpeBRepDS_Kind
+        :param s1: default value is 
+        :type s1: TCollection_AsciiString &
+        :param s2: default value is 
+        :type s2: TCollection_AsciiString &
+        :rtype: None
+
+        :param K:
+        :type K: TopOpeBRepDS_Kind
+        :param s1: default value is 
+        :type s1: TCollection_AsciiString &
+        :param s2: default value is 
+        :type s2: TCollection_AsciiString &
+        :rtype: None
+
         :param K:
         :type K: TopOpeBRepDS_Kind
         :param s1: default value is 
@@ -9910,7 +10360,7 @@ class TopOpeBRepDS_TKI(object):
         :param K:
         :type K: TopOpeBRepDS_Kind
         :param G:
-        :type G: int
+        :type G: Standard_Integer
         :param s1: default value is 
         :type s1: TCollection_AsciiString &
         :param s2: default value is 
@@ -9920,7 +10370,51 @@ class TopOpeBRepDS_TKI(object):
         :param K:
         :type K: TopOpeBRepDS_Kind
         :param G:
-        :type G: int
+        :type G: Standard_Integer
+        :param s1: default value is 
+        :type s1: TCollection_AsciiString &
+        :param s2: default value is 
+        :type s2: TCollection_AsciiString &
+        :rtype: None
+
+        :param K:
+        :type K: TopOpeBRepDS_Kind
+        :param G:
+        :type G: Standard_Integer
+        :param s1: default value is 
+        :type s1: TCollection_AsciiString &
+        :param s2: default value is 
+        :type s2: TCollection_AsciiString &
+        :rtype: None
+
+        :param K:
+        :type K: TopOpeBRepDS_Kind
+        :param G:
+        :type G: Standard_Integer
+        :param L:
+        :type L: TopOpeBRepDS_ListOfInterference &
+        :param s1: default value is 
+        :type s1: TCollection_AsciiString &
+        :param s2: default value is 
+        :type s2: TCollection_AsciiString &
+        :rtype: None
+
+        :param K:
+        :type K: TopOpeBRepDS_Kind
+        :param G:
+        :type G: Standard_Integer
+        :param L:
+        :type L: TopOpeBRepDS_ListOfInterference &
+        :param s1: default value is 
+        :type s1: TCollection_AsciiString &
+        :param s2: default value is 
+        :type s2: TCollection_AsciiString &
+        :rtype: None
+
+        :param K:
+        :type K: TopOpeBRepDS_Kind
+        :param G:
+        :type G: Standard_Integer
         :param L:
         :type L: TopOpeBRepDS_ListOfInterference &
         :param s1: default value is 
@@ -9932,7 +10426,7 @@ class TopOpeBRepDS_TKI(object):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_TKI_DumpTKI(self, *args)
 
-    def DumpTKIIterator(self, *args) -> "void" :
+    def DumpTKIIterator(self, s1="", s2=""):
         """
         :param s1: default value is 
         :type s1: TCollection_AsciiString &
@@ -9940,47 +10434,59 @@ class TopOpeBRepDS_TKI(object):
         :type s2: TCollection_AsciiString &
         :rtype: None
 
-        """
-        return _TopOpeBRepDS.TopOpeBRepDS_TKI_DumpTKIIterator(self, *args)
+        :param s1: default value is 
+        :type s1: TCollection_AsciiString &
+        :param s2: default value is 
+        :type s2: TCollection_AsciiString &
+        :rtype: None
 
-    def Init(self, *args) -> "void" :
+        :param s1: default value is 
+        :type s1: TCollection_AsciiString &
+        :param s2: default value is 
+        :type s2: TCollection_AsciiString &
+        :rtype: None
+
+        """
+        return _TopOpeBRepDS.TopOpeBRepDS_TKI_DumpTKIIterator(self, s1, s2)
+
+    def Init(self):
         """
         :rtype: None
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_TKI_Init(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_TKI_Init(self)
 
-    def More(self, *args) -> "Standard_Boolean" :
+    def More(self):
         """
         :rtype: bool
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_TKI_More(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_TKI_More(self)
 
-    def Next(self, *args) -> "void" :
+    def Next(self):
         """
         :rtype: None
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_TKI_Next(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_TKI_Next(self)
 
-    def Value(self, *args) -> "TopOpeBRepDS_ListOfInterference const &" :
+    def Value(self, *args):
         """
         :param K:
         :type K: TopOpeBRepDS_Kind &
         :param G:
-        :type G: int &
+        :type G: Standard_Integer &
         :rtype: TopOpeBRepDS_ListOfInterference
 
         """
         return _TopOpeBRepDS.TopOpeBRepDS_TKI_Value(self, *args)
 
-    def ChangeValue(self, *args) -> "TopOpeBRepDS_ListOfInterference &" :
+    def ChangeValue(self, *args):
         """
         :param K:
         :type K: TopOpeBRepDS_Kind &
         :param G:
-        :type G: int &
+        :type G: Standard_Integer &
         :rtype: TopOpeBRepDS_ListOfInterference
 
         """
@@ -10015,8 +10521,9 @@ TopOpeBRepDS_TKI_swigregister(TopOpeBRepDS_TKI)
 
 class TopOpeBRepDS_TOOL(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
+    def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def EShareG(*args) -> "Standard_Integer" :
+    def EShareG(*args):
         """
         :param HDS:
         :type HDS: Handle_TopOpeBRepDS_HDataStructure &
@@ -10030,46 +10537,46 @@ class TopOpeBRepDS_TOOL(object):
         return _TopOpeBRepDS.TopOpeBRepDS_TOOL_EShareG(*args)
 
     EShareG = staticmethod(EShareG)
-    def ShareG(*args) -> "Standard_Boolean" :
+    def ShareG(*args):
         """
         :param HDS:
         :type HDS: Handle_TopOpeBRepDS_HDataStructure &
         :param is1:
-        :type is1: int
+        :type is1: Standard_Integer
         :param is2:
-        :type is2: int
+        :type is2: Standard_Integer
         :rtype: bool
 
         """
         return _TopOpeBRepDS.TopOpeBRepDS_TOOL_ShareG(*args)
 
     ShareG = staticmethod(ShareG)
-    def GetEsd(*args) -> "Standard_Integer &" :
+    def GetEsd(*args):
         """
         :param HDS:
         :type HDS: Handle_TopOpeBRepDS_HDataStructure &
         :param S:
         :type S: TopoDS_Shape &
         :param ie:
-        :type ie: int
+        :type ie: Standard_Integer
         :param iesd:
-        :type iesd: int &
+        :type iesd: Standard_Integer &
         :rtype: bool
 
         """
         return _TopOpeBRepDS.TopOpeBRepDS_TOOL_GetEsd(*args)
 
     GetEsd = staticmethod(GetEsd)
-    def ShareSplitON(*args) -> "Standard_Boolean" :
+    def ShareSplitON(*args):
         """
         :param HDS:
         :type HDS: Handle_TopOpeBRepDS_HDataStructure &
         :param MspON:
         :type MspON: TopOpeBRepDS_DataMapOfShapeListOfShapeOn1State &
         :param i1:
-        :type i1: int
+        :type i1: Standard_Integer
         :param i2:
-        :type i2: int
+        :type i2: Standard_Integer
         :param spON:
         :type spON: TopoDS_Shape &
         :rtype: bool
@@ -10078,26 +10585,24 @@ class TopOpeBRepDS_TOOL(object):
         return _TopOpeBRepDS.TopOpeBRepDS_TOOL_ShareSplitON(*args)
 
     ShareSplitON = staticmethod(ShareSplitON)
-    def GetConfig(*args) -> "Standard_Integer &" :
+    def GetConfig(*args):
         """
         :param HDS:
         :type HDS: Handle_TopOpeBRepDS_HDataStructure &
         :param MEspON:
         :type MEspON: TopOpeBRepDS_DataMapOfShapeListOfShapeOn1State &
         :param ie:
-        :type ie: int
+        :type ie: Standard_Integer
         :param iesd:
-        :type iesd: int
+        :type iesd: Standard_Integer
         :param conf:
-        :type conf: int &
+        :type conf: Standard_Integer &
         :rtype: bool
 
         """
         return _TopOpeBRepDS.TopOpeBRepDS_TOOL_GetConfig(*args)
 
     GetConfig = staticmethod(GetConfig)
-    def __init__(self): 
-        _TopOpeBRepDS.TopOpeBRepDS_TOOL_swiginit(self,_TopOpeBRepDS.new_TopOpeBRepDS_TOOL())
     def __del__(self):
     	try:
     		self.thisown = False
@@ -10110,7 +10615,7 @@ TopOpeBRepDS_TOOL._kill_pointed = new_instancemethod(_TopOpeBRepDS.TopOpeBRepDS_
 TopOpeBRepDS_TOOL_swigregister = _TopOpeBRepDS.TopOpeBRepDS_TOOL_swigregister
 TopOpeBRepDS_TOOL_swigregister(TopOpeBRepDS_TOOL)
 
-def TopOpeBRepDS_TOOL_EShareG(*args) -> "Standard_Integer" :
+def TopOpeBRepDS_TOOL_EShareG(*args):
   """
     :param HDS:
     :type HDS: Handle_TopOpeBRepDS_HDataStructure &
@@ -10123,44 +10628,44 @@ def TopOpeBRepDS_TOOL_EShareG(*args) -> "Standard_Integer" :
     """
   return _TopOpeBRepDS.TopOpeBRepDS_TOOL_EShareG(*args)
 
-def TopOpeBRepDS_TOOL_ShareG(*args) -> "Standard_Boolean" :
+def TopOpeBRepDS_TOOL_ShareG(*args):
   """
     :param HDS:
     :type HDS: Handle_TopOpeBRepDS_HDataStructure &
     :param is1:
-    :type is1: int
+    :type is1: Standard_Integer
     :param is2:
-    :type is2: int
+    :type is2: Standard_Integer
     :rtype: bool
 
     """
   return _TopOpeBRepDS.TopOpeBRepDS_TOOL_ShareG(*args)
 
-def TopOpeBRepDS_TOOL_GetEsd(*args) -> "Standard_Integer &" :
+def TopOpeBRepDS_TOOL_GetEsd(*args):
   """
     :param HDS:
     :type HDS: Handle_TopOpeBRepDS_HDataStructure &
     :param S:
     :type S: TopoDS_Shape &
     :param ie:
-    :type ie: int
+    :type ie: Standard_Integer
     :param iesd:
-    :type iesd: int &
+    :type iesd: Standard_Integer &
     :rtype: bool
 
     """
   return _TopOpeBRepDS.TopOpeBRepDS_TOOL_GetEsd(*args)
 
-def TopOpeBRepDS_TOOL_ShareSplitON(*args) -> "Standard_Boolean" :
+def TopOpeBRepDS_TOOL_ShareSplitON(*args):
   """
     :param HDS:
     :type HDS: Handle_TopOpeBRepDS_HDataStructure &
     :param MspON:
     :type MspON: TopOpeBRepDS_DataMapOfShapeListOfShapeOn1State &
     :param i1:
-    :type i1: int
+    :type i1: Standard_Integer
     :param i2:
-    :type i2: int
+    :type i2: Standard_Integer
     :param spON:
     :type spON: TopoDS_Shape &
     :rtype: bool
@@ -10168,18 +10673,18 @@ def TopOpeBRepDS_TOOL_ShareSplitON(*args) -> "Standard_Boolean" :
     """
   return _TopOpeBRepDS.TopOpeBRepDS_TOOL_ShareSplitON(*args)
 
-def TopOpeBRepDS_TOOL_GetConfig(*args) -> "Standard_Integer &" :
+def TopOpeBRepDS_TOOL_GetConfig(*args):
   """
     :param HDS:
     :type HDS: Handle_TopOpeBRepDS_HDataStructure &
     :param MEspON:
     :type MEspON: TopOpeBRepDS_DataMapOfShapeListOfShapeOn1State &
     :param ie:
-    :type ie: int
+    :type ie: Standard_Integer
     :param iesd:
-    :type iesd: int
+    :type iesd: Standard_Integer
     :param conf:
-    :type conf: int &
+    :type conf: Standard_Integer &
     :rtype: bool
 
     """
@@ -10202,13 +10707,33 @@ class TopOpeBRepDS_Transition(object):
         :type ShapeAfter: TopAbs_ShapeEnum
         :rtype: None
 
+        :param StateBefore:
+        :type StateBefore: TopAbs_State
+        :param StateAfter:
+        :type StateAfter: TopAbs_State
+        :param ShapeBefore: default value is TopAbs_FACE
+        :type ShapeBefore: TopAbs_ShapeEnum
+        :param ShapeAfter: default value is TopAbs_FACE
+        :type ShapeAfter: TopAbs_ShapeEnum
+        :rtype: None
+
+        :param StateBefore:
+        :type StateBefore: TopAbs_State
+        :param StateAfter:
+        :type StateAfter: TopAbs_State
+        :param ShapeBefore: default value is TopAbs_FACE
+        :type ShapeBefore: TopAbs_ShapeEnum
+        :param ShapeAfter: default value is TopAbs_FACE
+        :type ShapeAfter: TopAbs_ShapeEnum
+        :rtype: None
+
         :param O:
         :type O: TopAbs_Orientation
         :rtype: None
 
         """
         _TopOpeBRepDS.TopOpeBRepDS_Transition_swiginit(self,_TopOpeBRepDS.new_TopOpeBRepDS_Transition(*args))
-    def StateBefore(self, *args) -> "void" :
+    def StateBefore(self, *args):
         """
         :param S:
         :type S: TopAbs_State
@@ -10217,7 +10742,7 @@ class TopOpeBRepDS_Transition(object):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_Transition_StateBefore(self, *args)
 
-    def StateAfter(self, *args) -> "void" :
+    def StateAfter(self, *args):
         """
         :param S:
         :type S: TopAbs_State
@@ -10226,8 +10751,14 @@ class TopOpeBRepDS_Transition(object):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_Transition_StateAfter(self, *args)
 
-    def Before(self, *args) -> "TopAbs_State" :
+    def Before(self, *args):
         """
+        :param S:
+        :type S: TopAbs_State
+        :param ShapeBefore: default value is TopAbs_FACE
+        :type ShapeBefore: TopAbs_ShapeEnum
+        :rtype: None
+
         :param S:
         :type S: TopAbs_State
         :param ShapeBefore: default value is TopAbs_FACE
@@ -10239,15 +10770,21 @@ class TopOpeBRepDS_Transition(object):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_Transition_Before(self, *args)
 
-    def ONBefore(self, *args) -> "TopAbs_ShapeEnum" :
+    def ONBefore(self):
         """
         :rtype: TopAbs_ShapeEnum
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_Transition_ONBefore(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_Transition_ONBefore(self)
 
-    def After(self, *args) -> "TopAbs_State" :
+    def After(self, *args):
         """
+        :param S:
+        :type S: TopAbs_State
+        :param ShapeAfter: default value is TopAbs_FACE
+        :type ShapeAfter: TopAbs_ShapeEnum
+        :rtype: None
+
         :param S:
         :type S: TopAbs_State
         :param ShapeAfter: default value is TopAbs_FACE
@@ -10259,14 +10796,14 @@ class TopOpeBRepDS_Transition(object):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_Transition_After(self, *args)
 
-    def ONAfter(self, *args) -> "TopAbs_ShapeEnum" :
+    def ONAfter(self):
         """
         :rtype: TopAbs_ShapeEnum
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_Transition_ONAfter(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_Transition_ONAfter(self)
 
-    def ShapeBefore(self, *args) -> "TopAbs_ShapeEnum" :
+    def ShapeBefore(self, *args):
         """
         :param SE:
         :type SE: TopAbs_ShapeEnum
@@ -10277,7 +10814,7 @@ class TopOpeBRepDS_Transition(object):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_Transition_ShapeBefore(self, *args)
 
-    def ShapeAfter(self, *args) -> "TopAbs_ShapeEnum" :
+    def ShapeAfter(self, *args):
         """
         :param SE:
         :type SE: TopAbs_ShapeEnum
@@ -10288,10 +10825,10 @@ class TopOpeBRepDS_Transition(object):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_Transition_ShapeAfter(self, *args)
 
-    def Index(self, *args) -> "Standard_Integer" :
+    def Index(self, *args):
         """
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :rtype: None
 
         :rtype: int
@@ -10299,10 +10836,10 @@ class TopOpeBRepDS_Transition(object):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_Transition_Index(self, *args)
 
-    def IndexBefore(self, *args) -> "Standard_Integer" :
+    def IndexBefore(self, *args):
         """
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :rtype: None
 
         :rtype: int
@@ -10310,10 +10847,10 @@ class TopOpeBRepDS_Transition(object):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_Transition_IndexBefore(self, *args)
 
-    def IndexAfter(self, *args) -> "Standard_Integer" :
+    def IndexAfter(self, *args):
         """
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :rtype: None
 
         :rtype: int
@@ -10321,8 +10858,28 @@ class TopOpeBRepDS_Transition(object):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_Transition_IndexAfter(self, *args)
 
-    def Set(self, *args) -> "void" :
+    def Set(self, *args):
         """
+        :param StateBefore:
+        :type StateBefore: TopAbs_State
+        :param StateAfter:
+        :type StateAfter: TopAbs_State
+        :param ShapeBefore: default value is TopAbs_FACE
+        :type ShapeBefore: TopAbs_ShapeEnum
+        :param ShapeAfter: default value is TopAbs_FACE
+        :type ShapeAfter: TopAbs_ShapeEnum
+        :rtype: None
+
+        :param StateBefore:
+        :type StateBefore: TopAbs_State
+        :param StateAfter:
+        :type StateAfter: TopAbs_State
+        :param ShapeBefore: default value is TopAbs_FACE
+        :type ShapeBefore: TopAbs_ShapeEnum
+        :param ShapeAfter: default value is TopAbs_FACE
+        :type ShapeAfter: TopAbs_ShapeEnum
+        :rtype: None
+
         :param StateBefore:
         :type StateBefore: TopAbs_State
         :param StateAfter:
@@ -10342,8 +10899,16 @@ class TopOpeBRepDS_Transition(object):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_Transition_Set(self, *args)
 
-    def Orientation(self, *args) -> "TopAbs_Orientation" :
+    def Orientation(self, *args):
         """
+        * returns the orientation corresponding to state <S> Before and After not equal TopAbs_ON : -------------------------------------- Before After Computed orientation S not S REVERSED (we leave state S) not S S FORWARD (we enter state S) S S INTERNAL (we stay in state S) not S not S EXTERNAL (we stay outside state S)
+
+        :param S:
+        :type S: TopAbs_State
+        :param T: default value is TopAbs_FACE
+        :type T: TopAbs_ShapeEnum
+        :rtype: TopAbs_Orientation
+
         * returns the orientation corresponding to state <S> Before and After not equal TopAbs_ON : -------------------------------------- Before After Computed orientation S not S REVERSED (we leave state S) not S S FORWARD (we enter state S) S S INTERNAL (we stay in state S) not S not S EXTERNAL (we stay outside state S)
 
         :param S:
@@ -10355,35 +10920,35 @@ class TopOpeBRepDS_Transition(object):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_Transition_Orientation(self, *args)
 
-    def Complement(self, *args) -> "TopOpeBRepDS_Transition" :
+    def Complement(self):
         """
         :rtype: TopOpeBRepDS_Transition
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_Transition_Complement(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_Transition_Complement(self)
 
-    def IsUnknown(self, *args) -> "Standard_Boolean" :
+    def IsUnknown(self):
         """
         * returns True if both states are UNKNOWN
 
         :rtype: bool
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_Transition_IsUnknown(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_Transition_IsUnknown(self)
 
-    def DumpAToString(self) -> "std::string" :
+    def DumpAToString(self):
         """DumpAToString(TopOpeBRepDS_Transition self) -> std::string"""
         return _TopOpeBRepDS.TopOpeBRepDS_Transition_DumpAToString(self)
 
-    def DumpBToString(self) -> "std::string" :
+    def DumpBToString(self):
         """DumpBToString(TopOpeBRepDS_Transition self) -> std::string"""
         return _TopOpeBRepDS.TopOpeBRepDS_Transition_DumpBToString(self)
 
-    def DumpToString(self) -> "std::string" :
+    def DumpToString(self):
         """DumpToString(TopOpeBRepDS_Transition self) -> std::string"""
         return _TopOpeBRepDS.TopOpeBRepDS_Transition_DumpToString(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(TopOpeBRepDS_Transition self)"""
         return _TopOpeBRepDS.TopOpeBRepDS_Transition__kill_pointed(self)
 
@@ -10455,16 +11020,16 @@ class TopOpeBRepDS_CurveIterator(TopOpeBRepDS_InterferenceIterator):
 
         """
         _TopOpeBRepDS.TopOpeBRepDS_CurveIterator_swiginit(self,_TopOpeBRepDS.new_TopOpeBRepDS_CurveIterator(*args))
-    def Current(self, *args) -> "Standard_Integer" :
+    def Current(self):
         """
         * Index of the curve in the data structure.
 
         :rtype: int
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_CurveIterator_Current(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_CurveIterator_Current(self)
 
-    def Orientation(self, *args) -> "TopAbs_Orientation" :
+    def Orientation(self, *args):
         """
         :param S:
         :type S: TopAbs_State
@@ -10473,12 +11038,12 @@ class TopOpeBRepDS_CurveIterator(TopOpeBRepDS_InterferenceIterator):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_CurveIterator_Orientation(self, *args)
 
-    def PCurve(self, *args) -> "Handle_Geom2d_Curve const &" :
+    def PCurve(self):
         """
         :rtype: Handle_Geom2d_Curve
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_CurveIterator_PCurve(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_CurveIterator_PCurve(self)
 
     def __del__(self):
     	try:
@@ -10505,18 +11070,18 @@ class TopOpeBRepDS_CurvePointInterference(TopOpeBRepDS_Interference):
         :param ST:
         :type ST: TopOpeBRepDS_Kind
         :param S:
-        :type S: int
+        :type S: Standard_Integer
         :param GT:
         :type GT: TopOpeBRepDS_Kind
         :param G:
-        :type G: int
+        :type G: Standard_Integer
         :param P:
         :type P: float
         :rtype: None
 
         """
         _TopOpeBRepDS.TopOpeBRepDS_CurvePointInterference_swiginit(self,_TopOpeBRepDS.new_TopOpeBRepDS_CurvePointInterference(*args))
-    def Parameter(self, *args) -> "void" :
+    def Parameter(self, *args):
         """
         :rtype: float
 
@@ -10527,15 +11092,15 @@ class TopOpeBRepDS_CurvePointInterference(TopOpeBRepDS_Interference):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_CurvePointInterference_Parameter(self, *args)
 
-    def DumpToString(self) -> "std::string" :
+    def DumpToString(self):
         """DumpToString(TopOpeBRepDS_CurvePointInterference self) -> std::string"""
         return _TopOpeBRepDS.TopOpeBRepDS_CurvePointInterference_DumpToString(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(TopOpeBRepDS_CurvePointInterference self)"""
         return _TopOpeBRepDS.TopOpeBRepDS_CurvePointInterference__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_TopOpeBRepDS_CurvePointInterference" :
+    def GetHandle(self):
         """GetHandle(TopOpeBRepDS_CurvePointInterference self) -> Handle_TopOpeBRepDS_CurvePointInterference"""
         return _TopOpeBRepDS.TopOpeBRepDS_CurvePointInterference_GetHandle(self)
 
@@ -10575,7 +11140,7 @@ Handle_TopOpeBRepDS_CurvePointInterference._kill_pointed = new_instancemethod(_T
 Handle_TopOpeBRepDS_CurvePointInterference_swigregister = _TopOpeBRepDS.Handle_TopOpeBRepDS_CurvePointInterference_swigregister
 Handle_TopOpeBRepDS_CurvePointInterference_swigregister(Handle_TopOpeBRepDS_CurvePointInterference)
 
-def Handle_TopOpeBRepDS_CurvePointInterference_DownCast(*args) -> "Handle_TopOpeBRepDS_CurvePointInterference const" :
+def Handle_TopOpeBRepDS_CurvePointInterference_DownCast(*args):
   return _TopOpeBRepDS.Handle_TopOpeBRepDS_CurvePointInterference_DownCast(*args)
 Handle_TopOpeBRepDS_CurvePointInterference_DownCast = _TopOpeBRepDS.Handle_TopOpeBRepDS_CurvePointInterference_DownCast
 
@@ -10593,34 +11158,34 @@ class TopOpeBRepDS_PointData(TopOpeBRepDS_GeometryData):
         :param P:
         :type P: TopOpeBRepDS_Point &
         :param I1:
-        :type I1: int
+        :type I1: Standard_Integer
         :param I2:
-        :type I2: int
+        :type I2: Standard_Integer
         :rtype: None
 
         """
         _TopOpeBRepDS.TopOpeBRepDS_PointData_swiginit(self,_TopOpeBRepDS.new_TopOpeBRepDS_PointData(*args))
-    def SetShapes(self, *args) -> "void" :
+    def SetShapes(self, *args):
         """
         :param I1:
-        :type I1: int
+        :type I1: Standard_Integer
         :param I2:
-        :type I2: int
+        :type I2: Standard_Integer
         :rtype: None
 
         """
         return _TopOpeBRepDS.TopOpeBRepDS_PointData_SetShapes(self, *args)
 
-    def GetShapes(self, *args) -> "void" :
+    def GetShapes(self):
         """
         :param I1:
-        :type I1: int &
+        :type I1: Standard_Integer &
         :param I2:
-        :type I2: int &
+        :type I2: Standard_Integer &
         :rtype: None
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_PointData_GetShapes(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_PointData_GetShapes(self)
 
     def __del__(self):
     	try:
@@ -10649,16 +11214,16 @@ class TopOpeBRepDS_PointIterator(TopOpeBRepDS_InterferenceIterator):
 
         """
         _TopOpeBRepDS.TopOpeBRepDS_PointIterator_swiginit(self,_TopOpeBRepDS.new_TopOpeBRepDS_PointIterator(*args))
-    def Current(self, *args) -> "Standard_Integer" :
+    def Current(self):
         """
         * Index of the point in the data structure.
 
         :rtype: int
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_PointIterator_Current(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_PointIterator_Current(self)
 
-    def Orientation(self, *args) -> "TopAbs_Orientation" :
+    def Orientation(self, *args):
         """
         :param S:
         :type S: TopAbs_State
@@ -10667,47 +11232,47 @@ class TopOpeBRepDS_PointIterator(TopOpeBRepDS_InterferenceIterator):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_PointIterator_Orientation(self, *args)
 
-    def Parameter(self, *args) -> "Standard_Real" :
+    def Parameter(self):
         """
         :rtype: float
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_PointIterator_Parameter(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_PointIterator_Parameter(self)
 
-    def IsVertex(self, *args) -> "Standard_Boolean" :
+    def IsVertex(self):
         """
         :rtype: bool
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_PointIterator_IsVertex(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_PointIterator_IsVertex(self)
 
-    def IsPoint(self, *args) -> "Standard_Boolean" :
+    def IsPoint(self):
         """
         :rtype: bool
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_PointIterator_IsPoint(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_PointIterator_IsPoint(self)
 
-    def DiffOriented(self, *args) -> "Standard_Boolean" :
+    def DiffOriented(self):
         """
         :rtype: bool
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_PointIterator_DiffOriented(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_PointIterator_DiffOriented(self)
 
-    def SameOriented(self, *args) -> "Standard_Boolean" :
+    def SameOriented(self):
         """
         :rtype: bool
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_PointIterator_SameOriented(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_PointIterator_SameOriented(self)
 
-    def Support(self, *args) -> "Standard_Integer" :
+    def Support(self):
         """
         :rtype: int
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_PointIterator_Support(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_PointIterator_Support(self)
 
     def __del__(self):
     	try:
@@ -10741,11 +11306,11 @@ class TopOpeBRepDS_ShapeShapeInterference(TopOpeBRepDS_Interference):
         :param ST:
         :type ST: TopOpeBRepDS_Kind
         :param S:
-        :type S: int
+        :type S: Standard_Integer
         :param GT:
         :type GT: TopOpeBRepDS_Kind
         :param G:
-        :type G: int
+        :type G: Standard_Integer
         :param GBound:
         :type GBound: bool
         :param C:
@@ -10754,21 +11319,21 @@ class TopOpeBRepDS_ShapeShapeInterference(TopOpeBRepDS_Interference):
 
         """
         _TopOpeBRepDS.TopOpeBRepDS_ShapeShapeInterference_swiginit(self,_TopOpeBRepDS.new_TopOpeBRepDS_ShapeShapeInterference(*args))
-    def Config(self, *args) -> "TopOpeBRepDS_Config" :
+    def Config(self):
         """
         :rtype: TopOpeBRepDS_Config
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_ShapeShapeInterference_Config(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_ShapeShapeInterference_Config(self)
 
-    def GBound(self, *args) -> "Standard_Boolean" :
+    def GBound(self):
         """
         :rtype: bool
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_ShapeShapeInterference_GBound(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_ShapeShapeInterference_GBound(self)
 
-    def SetGBound(self, *args) -> "void" :
+    def SetGBound(self, *args):
         """
         :param b:
         :type b: bool
@@ -10777,15 +11342,15 @@ class TopOpeBRepDS_ShapeShapeInterference(TopOpeBRepDS_Interference):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_ShapeShapeInterference_SetGBound(self, *args)
 
-    def DumpToString(self) -> "std::string" :
+    def DumpToString(self):
         """DumpToString(TopOpeBRepDS_ShapeShapeInterference self) -> std::string"""
         return _TopOpeBRepDS.TopOpeBRepDS_ShapeShapeInterference_DumpToString(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(TopOpeBRepDS_ShapeShapeInterference self)"""
         return _TopOpeBRepDS.TopOpeBRepDS_ShapeShapeInterference__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_TopOpeBRepDS_ShapeShapeInterference" :
+    def GetHandle(self):
         """GetHandle(TopOpeBRepDS_ShapeShapeInterference self) -> Handle_TopOpeBRepDS_ShapeShapeInterference"""
         return _TopOpeBRepDS.TopOpeBRepDS_ShapeShapeInterference_GetHandle(self)
 
@@ -10827,7 +11392,7 @@ Handle_TopOpeBRepDS_ShapeShapeInterference._kill_pointed = new_instancemethod(_T
 Handle_TopOpeBRepDS_ShapeShapeInterference_swigregister = _TopOpeBRepDS.Handle_TopOpeBRepDS_ShapeShapeInterference_swigregister
 Handle_TopOpeBRepDS_ShapeShapeInterference_swigregister(Handle_TopOpeBRepDS_ShapeShapeInterference)
 
-def Handle_TopOpeBRepDS_ShapeShapeInterference_DownCast(*args) -> "Handle_TopOpeBRepDS_ShapeShapeInterference const" :
+def Handle_TopOpeBRepDS_ShapeShapeInterference_DownCast(*args):
   return _TopOpeBRepDS.Handle_TopOpeBRepDS_ShapeShapeInterference_DownCast(*args)
 Handle_TopOpeBRepDS_ShapeShapeInterference_DownCast = _TopOpeBRepDS.Handle_TopOpeBRepDS_ShapeShapeInterference_DownCast
 
@@ -10841,24 +11406,24 @@ class TopOpeBRepDS_SolidSurfaceInterference(TopOpeBRepDS_Interference):
         :param SupportType:
         :type SupportType: TopOpeBRepDS_Kind
         :param Support:
-        :type Support: int
+        :type Support: Standard_Integer
         :param GeometryType:
         :type GeometryType: TopOpeBRepDS_Kind
         :param Geometry:
-        :type Geometry: int
+        :type Geometry: Standard_Integer
         :rtype: None
 
         """
         _TopOpeBRepDS.TopOpeBRepDS_SolidSurfaceInterference_swiginit(self,_TopOpeBRepDS.new_TopOpeBRepDS_SolidSurfaceInterference(*args))
-    def DumpToString(self) -> "std::string" :
+    def DumpToString(self):
         """DumpToString(TopOpeBRepDS_SolidSurfaceInterference self) -> std::string"""
         return _TopOpeBRepDS.TopOpeBRepDS_SolidSurfaceInterference_DumpToString(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(TopOpeBRepDS_SolidSurfaceInterference self)"""
         return _TopOpeBRepDS.TopOpeBRepDS_SolidSurfaceInterference__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_TopOpeBRepDS_SolidSurfaceInterference" :
+    def GetHandle(self):
         """GetHandle(TopOpeBRepDS_SolidSurfaceInterference self) -> Handle_TopOpeBRepDS_SolidSurfaceInterference"""
         return _TopOpeBRepDS.TopOpeBRepDS_SolidSurfaceInterference_GetHandle(self)
 
@@ -10897,7 +11462,7 @@ Handle_TopOpeBRepDS_SolidSurfaceInterference._kill_pointed = new_instancemethod(
 Handle_TopOpeBRepDS_SolidSurfaceInterference_swigregister = _TopOpeBRepDS.Handle_TopOpeBRepDS_SolidSurfaceInterference_swigregister
 Handle_TopOpeBRepDS_SolidSurfaceInterference_swigregister(Handle_TopOpeBRepDS_SolidSurfaceInterference)
 
-def Handle_TopOpeBRepDS_SolidSurfaceInterference_DownCast(*args) -> "Handle_TopOpeBRepDS_SolidSurfaceInterference const" :
+def Handle_TopOpeBRepDS_SolidSurfaceInterference_DownCast(*args):
   return _TopOpeBRepDS.Handle_TopOpeBRepDS_SolidSurfaceInterference_DownCast(*args)
 Handle_TopOpeBRepDS_SolidSurfaceInterference_DownCast = _TopOpeBRepDS.Handle_TopOpeBRepDS_SolidSurfaceInterference_DownCast
 
@@ -10913,11 +11478,11 @@ class TopOpeBRepDS_SurfaceCurveInterference(TopOpeBRepDS_Interference):
         :param SupportType:
         :type SupportType: TopOpeBRepDS_Kind
         :param Support:
-        :type Support: int
+        :type Support: Standard_Integer
         :param GeometryType:
         :type GeometryType: TopOpeBRepDS_Kind
         :param Geometry:
-        :type Geometry: int
+        :type Geometry: Standard_Integer
         :param PC:
         :type PC: Handle_Geom2d_Curve &
         :rtype: None
@@ -10928,7 +11493,7 @@ class TopOpeBRepDS_SurfaceCurveInterference(TopOpeBRepDS_Interference):
 
         """
         _TopOpeBRepDS.TopOpeBRepDS_SurfaceCurveInterference_swiginit(self,_TopOpeBRepDS.new_TopOpeBRepDS_SurfaceCurveInterference(*args))
-    def PCurve(self, *args) -> "void" :
+    def PCurve(self, *args):
         """
         :rtype: Handle_Geom2d_Curve
 
@@ -10939,8 +11504,14 @@ class TopOpeBRepDS_SurfaceCurveInterference(TopOpeBRepDS_Interference):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_SurfaceCurveInterference_PCurve(self, *args)
 
-    def DumpPCurve(self, *args) -> "Standard_OStream &" :
+    def DumpPCurve(self, *args):
         """
+        :param OS:
+        :type OS: Standard_OStream &
+        :param compact: default value is Standard_True
+        :type compact: bool
+        :rtype: Standard_OStream
+
         :param OS:
         :type OS: Standard_OStream &
         :param compact: default value is Standard_True
@@ -10950,15 +11521,15 @@ class TopOpeBRepDS_SurfaceCurveInterference(TopOpeBRepDS_Interference):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_SurfaceCurveInterference_DumpPCurve(self, *args)
 
-    def DumpToString(self) -> "std::string" :
+    def DumpToString(self):
         """DumpToString(TopOpeBRepDS_SurfaceCurveInterference self) -> std::string"""
         return _TopOpeBRepDS.TopOpeBRepDS_SurfaceCurveInterference_DumpToString(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(TopOpeBRepDS_SurfaceCurveInterference self)"""
         return _TopOpeBRepDS.TopOpeBRepDS_SurfaceCurveInterference__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_TopOpeBRepDS_SurfaceCurveInterference" :
+    def GetHandle(self):
         """GetHandle(TopOpeBRepDS_SurfaceCurveInterference self) -> Handle_TopOpeBRepDS_SurfaceCurveInterference"""
         return _TopOpeBRepDS.TopOpeBRepDS_SurfaceCurveInterference_GetHandle(self)
 
@@ -10999,7 +11570,7 @@ Handle_TopOpeBRepDS_SurfaceCurveInterference._kill_pointed = new_instancemethod(
 Handle_TopOpeBRepDS_SurfaceCurveInterference_swigregister = _TopOpeBRepDS.Handle_TopOpeBRepDS_SurfaceCurveInterference_swigregister
 Handle_TopOpeBRepDS_SurfaceCurveInterference_swigregister(Handle_TopOpeBRepDS_SurfaceCurveInterference)
 
-def Handle_TopOpeBRepDS_SurfaceCurveInterference_DownCast(*args) -> "Handle_TopOpeBRepDS_SurfaceCurveInterference const" :
+def Handle_TopOpeBRepDS_SurfaceCurveInterference_DownCast(*args):
   return _TopOpeBRepDS.Handle_TopOpeBRepDS_SurfaceCurveInterference_DownCast(*args)
 Handle_TopOpeBRepDS_SurfaceCurveInterference_DownCast = _TopOpeBRepDS.Handle_TopOpeBRepDS_SurfaceCurveInterference_DownCast
 
@@ -11041,16 +11612,16 @@ class TopOpeBRepDS_SurfaceIterator(TopOpeBRepDS_InterferenceIterator):
 
         """
         _TopOpeBRepDS.TopOpeBRepDS_SurfaceIterator_swiginit(self,_TopOpeBRepDS.new_TopOpeBRepDS_SurfaceIterator(*args))
-    def Current(self, *args) -> "Standard_Integer" :
+    def Current(self):
         """
         * Index of the surface in the data structure.
 
         :rtype: int
 
         """
-        return _TopOpeBRepDS.TopOpeBRepDS_SurfaceIterator_Current(self, *args)
+        return _TopOpeBRepDS.TopOpeBRepDS_SurfaceIterator_Current(self)
 
-    def Orientation(self, *args) -> "TopAbs_Orientation" :
+    def Orientation(self, *args):
         """
         :param S:
         :type S: TopAbs_State
@@ -11085,9 +11656,9 @@ class TopOpeBRepDS_EdgeVertexInterference(TopOpeBRepDS_ShapeShapeInterference):
         :param ST:
         :type ST: TopOpeBRepDS_Kind
         :param S:
-        :type S: int
+        :type S: Standard_Integer
         :param G:
-        :type G: int
+        :type G: Standard_Integer
         :param GIsBound:
         :type GIsBound: bool
         :param C:
@@ -11101,9 +11672,9 @@ class TopOpeBRepDS_EdgeVertexInterference(TopOpeBRepDS_ShapeShapeInterference):
         :param T:
         :type T: TopOpeBRepDS_Transition &
         :param S:
-        :type S: int
+        :type S: Standard_Integer
         :param G:
-        :type G: int
+        :type G: Standard_Integer
         :param GIsBound:
         :type GIsBound: bool
         :param C:
@@ -11114,7 +11685,7 @@ class TopOpeBRepDS_EdgeVertexInterference(TopOpeBRepDS_ShapeShapeInterference):
 
         """
         _TopOpeBRepDS.TopOpeBRepDS_EdgeVertexInterference_swiginit(self,_TopOpeBRepDS.new_TopOpeBRepDS_EdgeVertexInterference(*args))
-    def Parameter(self, *args) -> "void" :
+    def Parameter(self, *args):
         """
         :rtype: float
 
@@ -11125,15 +11696,15 @@ class TopOpeBRepDS_EdgeVertexInterference(TopOpeBRepDS_ShapeShapeInterference):
         """
         return _TopOpeBRepDS.TopOpeBRepDS_EdgeVertexInterference_Parameter(self, *args)
 
-    def DumpToString(self) -> "std::string" :
+    def DumpToString(self):
         """DumpToString(TopOpeBRepDS_EdgeVertexInterference self) -> std::string"""
         return _TopOpeBRepDS.TopOpeBRepDS_EdgeVertexInterference_DumpToString(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(TopOpeBRepDS_EdgeVertexInterference self)"""
         return _TopOpeBRepDS.TopOpeBRepDS_EdgeVertexInterference__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_TopOpeBRepDS_EdgeVertexInterference" :
+    def GetHandle(self):
         """GetHandle(TopOpeBRepDS_EdgeVertexInterference self) -> Handle_TopOpeBRepDS_EdgeVertexInterference"""
         return _TopOpeBRepDS.TopOpeBRepDS_EdgeVertexInterference_GetHandle(self)
 
@@ -11173,7 +11744,7 @@ Handle_TopOpeBRepDS_EdgeVertexInterference._kill_pointed = new_instancemethod(_T
 Handle_TopOpeBRepDS_EdgeVertexInterference_swigregister = _TopOpeBRepDS.Handle_TopOpeBRepDS_EdgeVertexInterference_swigregister
 Handle_TopOpeBRepDS_EdgeVertexInterference_swigregister(Handle_TopOpeBRepDS_EdgeVertexInterference)
 
-def Handle_TopOpeBRepDS_EdgeVertexInterference_DownCast(*args) -> "Handle_TopOpeBRepDS_EdgeVertexInterference const" :
+def Handle_TopOpeBRepDS_EdgeVertexInterference_DownCast(*args):
   return _TopOpeBRepDS.Handle_TopOpeBRepDS_EdgeVertexInterference_DownCast(*args)
 Handle_TopOpeBRepDS_EdgeVertexInterference_DownCast = _TopOpeBRepDS.Handle_TopOpeBRepDS_EdgeVertexInterference_DownCast
 
@@ -11187,9 +11758,9 @@ class TopOpeBRepDS_FaceEdgeInterference(TopOpeBRepDS_ShapeShapeInterference):
         :param T:
         :type T: TopOpeBRepDS_Transition &
         :param S:
-        :type S: int
+        :type S: Standard_Integer
         :param G:
-        :type G: int
+        :type G: Standard_Integer
         :param GIsBound:
         :type GIsBound: bool
         :param C:
@@ -11198,15 +11769,15 @@ class TopOpeBRepDS_FaceEdgeInterference(TopOpeBRepDS_ShapeShapeInterference):
 
         """
         _TopOpeBRepDS.TopOpeBRepDS_FaceEdgeInterference_swiginit(self,_TopOpeBRepDS.new_TopOpeBRepDS_FaceEdgeInterference(*args))
-    def DumpToString(self) -> "std::string" :
+    def DumpToString(self):
         """DumpToString(TopOpeBRepDS_FaceEdgeInterference self) -> std::string"""
         return _TopOpeBRepDS.TopOpeBRepDS_FaceEdgeInterference_DumpToString(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(TopOpeBRepDS_FaceEdgeInterference self)"""
         return _TopOpeBRepDS.TopOpeBRepDS_FaceEdgeInterference__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_TopOpeBRepDS_FaceEdgeInterference" :
+    def GetHandle(self):
         """GetHandle(TopOpeBRepDS_FaceEdgeInterference self) -> Handle_TopOpeBRepDS_FaceEdgeInterference"""
         return _TopOpeBRepDS.TopOpeBRepDS_FaceEdgeInterference_GetHandle(self)
 
@@ -11245,7 +11816,7 @@ Handle_TopOpeBRepDS_FaceEdgeInterference._kill_pointed = new_instancemethod(_Top
 Handle_TopOpeBRepDS_FaceEdgeInterference_swigregister = _TopOpeBRepDS.Handle_TopOpeBRepDS_FaceEdgeInterference_swigregister
 Handle_TopOpeBRepDS_FaceEdgeInterference_swigregister(Handle_TopOpeBRepDS_FaceEdgeInterference)
 
-def Handle_TopOpeBRepDS_FaceEdgeInterference_DownCast(*args) -> "Handle_TopOpeBRepDS_FaceEdgeInterference const" :
+def Handle_TopOpeBRepDS_FaceEdgeInterference_DownCast(*args):
   return _TopOpeBRepDS.Handle_TopOpeBRepDS_FaceEdgeInterference_DownCast(*args)
 Handle_TopOpeBRepDS_FaceEdgeInterference_DownCast = _TopOpeBRepDS.Handle_TopOpeBRepDS_FaceEdgeInterference_DownCast
 

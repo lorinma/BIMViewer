@@ -120,8 +120,9 @@ import OCC.Geom2d
 import OCC.Message
 class geomtools(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
+    def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def Dump(*args) -> "void" :
+    def Dump(*args):
         """
         * A set of Curves from Geom2d. Dumps the surface on the stream.
 
@@ -151,7 +152,7 @@ class geomtools(object):
         return _GeomTools.geomtools_Dump(*args)
 
     Dump = staticmethod(Dump)
-    def Write(*args) -> "void" :
+    def Write(*args):
         """
         * Writes the surface on the stream.
 
@@ -181,7 +182,7 @@ class geomtools(object):
         return _GeomTools.geomtools_Write(*args)
 
     Write = staticmethod(Write)
-    def Read(*args) -> "void" :
+    def Read(*args):
         """
         * Reads the surface from the stream.
 
@@ -211,7 +212,7 @@ class geomtools(object):
         return _GeomTools.geomtools_Read(*args)
 
     Read = staticmethod(Read)
-    def SetUndefinedTypeHandler(*args) -> "void" :
+    def SetUndefinedTypeHandler(*args):
         """
         :param aHandler:
         :type aHandler: Handle_GeomTools_UndefinedTypeHandler &
@@ -221,16 +222,14 @@ class geomtools(object):
         return _GeomTools.geomtools_SetUndefinedTypeHandler(*args)
 
     SetUndefinedTypeHandler = staticmethod(SetUndefinedTypeHandler)
-    def GetUndefinedTypeHandler(*args) -> "Handle_GeomTools_UndefinedTypeHandler" :
+    def GetUndefinedTypeHandler():
         """
         :rtype: Handle_GeomTools_UndefinedTypeHandler
 
         """
-        return _GeomTools.geomtools_GetUndefinedTypeHandler(*args)
+        return _GeomTools.geomtools_GetUndefinedTypeHandler()
 
     GetUndefinedTypeHandler = staticmethod(GetUndefinedTypeHandler)
-    def __init__(self): 
-        _GeomTools.geomtools_swiginit(self,_GeomTools.new_geomtools())
     def __del__(self):
     	try:
     		self.thisown = False
@@ -243,7 +242,7 @@ geomtools._kill_pointed = new_instancemethod(_GeomTools.geomtools__kill_pointed,
 geomtools_swigregister = _GeomTools.geomtools_swigregister
 geomtools_swigregister(geomtools)
 
-def geomtools_Dump(*args) -> "void" :
+def geomtools_Dump(*args):
   """
     * A set of Curves from Geom2d. Dumps the surface on the stream.
 
@@ -272,7 +271,7 @@ def geomtools_Dump(*args) -> "void" :
     """
   return _GeomTools.geomtools_Dump(*args)
 
-def geomtools_Write(*args) -> "void" :
+def geomtools_Write(*args):
   """
     * Writes the surface on the stream.
 
@@ -301,7 +300,7 @@ def geomtools_Write(*args) -> "void" :
     """
   return _GeomTools.geomtools_Write(*args)
 
-def geomtools_Read(*args) -> "void" :
+def geomtools_Read(*args):
   """
     * Reads the surface from the stream.
 
@@ -330,7 +329,7 @@ def geomtools_Read(*args) -> "void" :
     """
   return _GeomTools.geomtools_Read(*args)
 
-def geomtools_SetUndefinedTypeHandler(*args) -> "void" :
+def geomtools_SetUndefinedTypeHandler(*args):
   """
     :param aHandler:
     :type aHandler: Handle_GeomTools_UndefinedTypeHandler &
@@ -339,34 +338,34 @@ def geomtools_SetUndefinedTypeHandler(*args) -> "void" :
     """
   return _GeomTools.geomtools_SetUndefinedTypeHandler(*args)
 
-def geomtools_GetUndefinedTypeHandler(*args) -> "Handle_GeomTools_UndefinedTypeHandler" :
+def geomtools_GetUndefinedTypeHandler():
   """
     :rtype: Handle_GeomTools_UndefinedTypeHandler
 
     """
-  return _GeomTools.geomtools_GetUndefinedTypeHandler(*args)
+  return _GeomTools.geomtools_GetUndefinedTypeHandler()
 
 class GeomTools_Curve2dSet(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         * Returns an empty set of Curves.
 
         :rtype: None
 
         """
-        _GeomTools.GeomTools_Curve2dSet_swiginit(self,_GeomTools.new_GeomTools_Curve2dSet(*args))
-    def Clear(self, *args) -> "void" :
+        _GeomTools.GeomTools_Curve2dSet_swiginit(self,_GeomTools.new_GeomTools_Curve2dSet())
+    def Clear(self):
         """
         * Clears the content of the set.
 
         :rtype: None
 
         """
-        return _GeomTools.GeomTools_Curve2dSet_Clear(self, *args)
+        return _GeomTools.GeomTools_Curve2dSet_Clear(self)
 
-    def Add(self, *args) -> "Standard_Integer" :
+    def Add(self, *args):
         """
         * Incorporate a new Curve in the set and returns its index.
 
@@ -377,18 +376,18 @@ class GeomTools_Curve2dSet(object):
         """
         return _GeomTools.GeomTools_Curve2dSet_Add(self, *args)
 
-    def Curve2d(self, *args) -> "Handle_Geom2d_Curve" :
+    def Curve2d(self, *args):
         """
         * Returns the Curve of index <I>.
 
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :rtype: Handle_Geom2d_Curve
 
         """
         return _GeomTools.GeomTools_Curve2dSet_Curve2d(self, *args)
 
-    def Index(self, *args) -> "Standard_Integer" :
+    def Index(self, *args):
         """
         * Returns the index of <L>.
 
@@ -399,20 +398,30 @@ class GeomTools_Curve2dSet(object):
         """
         return _GeomTools.GeomTools_Curve2dSet_Index(self, *args)
 
-    def DumpToString(self) -> "std::string" :
+    def DumpToString(self):
         """DumpToString(GeomTools_Curve2dSet self) -> std::string"""
         return _GeomTools.GeomTools_Curve2dSet_DumpToString(self)
 
-    def WriteToString(self) -> "std::string" :
+    def WriteToString(self):
         """WriteToString(GeomTools_Curve2dSet self) -> std::string"""
         return _GeomTools.GeomTools_Curve2dSet_WriteToString(self)
 
-    def ReadFromString(self, *args) -> "void" :
+    def ReadFromString(self, *args):
         """ReadFromString(GeomTools_Curve2dSet self, std::string src)"""
         return _GeomTools.GeomTools_Curve2dSet_ReadFromString(self, *args)
 
-    def PrintCurve2d(*args) -> "void" :
+    def PrintCurve2d(*args):
         """
+        * Dumps the curve on the stream, if compact is True use the compact format that can be read back.
+
+        :param C:
+        :type C: Handle_Geom2d_Curve &
+        :param OS:
+        :type OS: Standard_OStream &
+        :param compact: default value is Standard_False
+        :type compact: bool
+        :rtype: void
+
         * Dumps the curve on the stream, if compact is True use the compact format that can be read back.
 
         :param C:
@@ -427,7 +436,7 @@ class GeomTools_Curve2dSet(object):
         return _GeomTools.GeomTools_Curve2dSet_PrintCurve2d(*args)
 
     PrintCurve2d = staticmethod(PrintCurve2d)
-    def ReadCurve2d(*args) -> "Standard_IStream &" :
+    def ReadCurve2d(*args):
         """
         * Reads the curve from the stream. The curve is assumed to have been writtent with the Print method (compact = True).
 
@@ -441,7 +450,7 @@ class GeomTools_Curve2dSet(object):
         return _GeomTools.GeomTools_Curve2dSet_ReadCurve2d(*args)
 
     ReadCurve2d = staticmethod(ReadCurve2d)
-    def SetProgress(self, *args) -> "void" :
+    def SetProgress(self, *args):
         """
         :param PR:
         :type PR: Handle_Message_ProgressIndicator &
@@ -450,14 +459,14 @@ class GeomTools_Curve2dSet(object):
         """
         return _GeomTools.GeomTools_Curve2dSet_SetProgress(self, *args)
 
-    def GetProgress(self, *args) -> "Handle_Message_ProgressIndicator" :
+    def GetProgress(self):
         """
         :rtype: Handle_Message_ProgressIndicator
 
         """
-        return _GeomTools.GeomTools_Curve2dSet_GetProgress(self, *args)
+        return _GeomTools.GeomTools_Curve2dSet_GetProgress(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(GeomTools_Curve2dSet self)"""
         return _GeomTools.GeomTools_Curve2dSet__kill_pointed(self)
 
@@ -482,8 +491,18 @@ GeomTools_Curve2dSet._kill_pointed = new_instancemethod(_GeomTools.GeomTools_Cur
 GeomTools_Curve2dSet_swigregister = _GeomTools.GeomTools_Curve2dSet_swigregister
 GeomTools_Curve2dSet_swigregister(GeomTools_Curve2dSet)
 
-def GeomTools_Curve2dSet_PrintCurve2d(*args) -> "void" :
+def GeomTools_Curve2dSet_PrintCurve2d(*args):
   """
+    * Dumps the curve on the stream, if compact is True use the compact format that can be read back.
+
+    :param C:
+    :type C: Handle_Geom2d_Curve &
+    :param OS:
+    :type OS: Standard_OStream &
+    :param compact: default value is Standard_False
+    :type compact: bool
+    :rtype: void
+
     * Dumps the curve on the stream, if compact is True use the compact format that can be read back.
 
     :param C:
@@ -497,7 +516,7 @@ def GeomTools_Curve2dSet_PrintCurve2d(*args) -> "void" :
     """
   return _GeomTools.GeomTools_Curve2dSet_PrintCurve2d(*args)
 
-def GeomTools_Curve2dSet_ReadCurve2d(*args) -> "Standard_IStream &" :
+def GeomTools_Curve2dSet_ReadCurve2d(*args):
   """
     * Reads the curve from the stream. The curve is assumed to have been writtent with the Print method (compact = True).
 
@@ -513,24 +532,24 @@ def GeomTools_Curve2dSet_ReadCurve2d(*args) -> "Standard_IStream &" :
 class GeomTools_CurveSet(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         * Returns an empty set of Curves.
 
         :rtype: None
 
         """
-        _GeomTools.GeomTools_CurveSet_swiginit(self,_GeomTools.new_GeomTools_CurveSet(*args))
-    def Clear(self, *args) -> "void" :
+        _GeomTools.GeomTools_CurveSet_swiginit(self,_GeomTools.new_GeomTools_CurveSet())
+    def Clear(self):
         """
         * Clears the content of the set.
 
         :rtype: None
 
         """
-        return _GeomTools.GeomTools_CurveSet_Clear(self, *args)
+        return _GeomTools.GeomTools_CurveSet_Clear(self)
 
-    def Add(self, *args) -> "Standard_Integer" :
+    def Add(self, *args):
         """
         * Incorporate a new Curve in the set and returns its index.
 
@@ -541,18 +560,18 @@ class GeomTools_CurveSet(object):
         """
         return _GeomTools.GeomTools_CurveSet_Add(self, *args)
 
-    def Curve(self, *args) -> "Handle_Geom_Curve" :
+    def Curve(self, *args):
         """
         * Returns the Curve of index <I>.
 
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :rtype: Handle_Geom_Curve
 
         """
         return _GeomTools.GeomTools_CurveSet_Curve(self, *args)
 
-    def Index(self, *args) -> "Standard_Integer" :
+    def Index(self, *args):
         """
         * Returns the index of <L>.
 
@@ -563,20 +582,30 @@ class GeomTools_CurveSet(object):
         """
         return _GeomTools.GeomTools_CurveSet_Index(self, *args)
 
-    def DumpToString(self) -> "std::string" :
+    def DumpToString(self):
         """DumpToString(GeomTools_CurveSet self) -> std::string"""
         return _GeomTools.GeomTools_CurveSet_DumpToString(self)
 
-    def WriteToString(self) -> "std::string" :
+    def WriteToString(self):
         """WriteToString(GeomTools_CurveSet self) -> std::string"""
         return _GeomTools.GeomTools_CurveSet_WriteToString(self)
 
-    def ReadFromString(self, *args) -> "void" :
+    def ReadFromString(self, *args):
         """ReadFromString(GeomTools_CurveSet self, std::string src)"""
         return _GeomTools.GeomTools_CurveSet_ReadFromString(self, *args)
 
-    def PrintCurve(*args) -> "void" :
+    def PrintCurve(*args):
         """
+        * Dumps the curve on the stream, if compact is True use the compact format that can be read back.
+
+        :param C:
+        :type C: Handle_Geom_Curve &
+        :param OS:
+        :type OS: Standard_OStream &
+        :param compact: default value is Standard_False
+        :type compact: bool
+        :rtype: void
+
         * Dumps the curve on the stream, if compact is True use the compact format that can be read back.
 
         :param C:
@@ -591,7 +620,7 @@ class GeomTools_CurveSet(object):
         return _GeomTools.GeomTools_CurveSet_PrintCurve(*args)
 
     PrintCurve = staticmethod(PrintCurve)
-    def ReadCurve(*args) -> "Standard_IStream &" :
+    def ReadCurve(*args):
         """
         * Reads the curve from the stream. The curve is assumed to have been writtent with the Print method (compact = True).
 
@@ -605,7 +634,7 @@ class GeomTools_CurveSet(object):
         return _GeomTools.GeomTools_CurveSet_ReadCurve(*args)
 
     ReadCurve = staticmethod(ReadCurve)
-    def SetProgress(self, *args) -> "void" :
+    def SetProgress(self, *args):
         """
         :param PR:
         :type PR: Handle_Message_ProgressIndicator &
@@ -614,14 +643,14 @@ class GeomTools_CurveSet(object):
         """
         return _GeomTools.GeomTools_CurveSet_SetProgress(self, *args)
 
-    def GetProgress(self, *args) -> "Handle_Message_ProgressIndicator" :
+    def GetProgress(self):
         """
         :rtype: Handle_Message_ProgressIndicator
 
         """
-        return _GeomTools.GeomTools_CurveSet_GetProgress(self, *args)
+        return _GeomTools.GeomTools_CurveSet_GetProgress(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(GeomTools_CurveSet self)"""
         return _GeomTools.GeomTools_CurveSet__kill_pointed(self)
 
@@ -646,8 +675,18 @@ GeomTools_CurveSet._kill_pointed = new_instancemethod(_GeomTools.GeomTools_Curve
 GeomTools_CurveSet_swigregister = _GeomTools.GeomTools_CurveSet_swigregister
 GeomTools_CurveSet_swigregister(GeomTools_CurveSet)
 
-def GeomTools_CurveSet_PrintCurve(*args) -> "void" :
+def GeomTools_CurveSet_PrintCurve(*args):
   """
+    * Dumps the curve on the stream, if compact is True use the compact format that can be read back.
+
+    :param C:
+    :type C: Handle_Geom_Curve &
+    :param OS:
+    :type OS: Standard_OStream &
+    :param compact: default value is Standard_False
+    :type compact: bool
+    :rtype: void
+
     * Dumps the curve on the stream, if compact is True use the compact format that can be read back.
 
     :param C:
@@ -661,7 +700,7 @@ def GeomTools_CurveSet_PrintCurve(*args) -> "void" :
     """
   return _GeomTools.GeomTools_CurveSet_PrintCurve(*args)
 
-def GeomTools_CurveSet_ReadCurve(*args) -> "Standard_IStream &" :
+def GeomTools_CurveSet_ReadCurve(*args):
   """
     * Reads the curve from the stream. The curve is assumed to have been writtent with the Print method (compact = True).
 
@@ -677,24 +716,24 @@ def GeomTools_CurveSet_ReadCurve(*args) -> "Standard_IStream &" :
 class GeomTools_SurfaceSet(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         * Returns an empty set of Surfaces.
 
         :rtype: None
 
         """
-        _GeomTools.GeomTools_SurfaceSet_swiginit(self,_GeomTools.new_GeomTools_SurfaceSet(*args))
-    def Clear(self, *args) -> "void" :
+        _GeomTools.GeomTools_SurfaceSet_swiginit(self,_GeomTools.new_GeomTools_SurfaceSet())
+    def Clear(self):
         """
         * Clears the content of the set.
 
         :rtype: None
 
         """
-        return _GeomTools.GeomTools_SurfaceSet_Clear(self, *args)
+        return _GeomTools.GeomTools_SurfaceSet_Clear(self)
 
-    def Add(self, *args) -> "Standard_Integer" :
+    def Add(self, *args):
         """
         * Incorporate a new Surface in the set and returns its index.
 
@@ -705,18 +744,18 @@ class GeomTools_SurfaceSet(object):
         """
         return _GeomTools.GeomTools_SurfaceSet_Add(self, *args)
 
-    def Surface(self, *args) -> "Handle_Geom_Surface" :
+    def Surface(self, *args):
         """
         * Returns the Surface of index <I>.
 
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :rtype: Handle_Geom_Surface
 
         """
         return _GeomTools.GeomTools_SurfaceSet_Surface(self, *args)
 
-    def Index(self, *args) -> "Standard_Integer" :
+    def Index(self, *args):
         """
         * Returns the index of <L>.
 
@@ -727,20 +766,30 @@ class GeomTools_SurfaceSet(object):
         """
         return _GeomTools.GeomTools_SurfaceSet_Index(self, *args)
 
-    def DumpToString(self) -> "std::string" :
+    def DumpToString(self):
         """DumpToString(GeomTools_SurfaceSet self) -> std::string"""
         return _GeomTools.GeomTools_SurfaceSet_DumpToString(self)
 
-    def WriteToString(self) -> "std::string" :
+    def WriteToString(self):
         """WriteToString(GeomTools_SurfaceSet self) -> std::string"""
         return _GeomTools.GeomTools_SurfaceSet_WriteToString(self)
 
-    def ReadFromString(self, *args) -> "void" :
+    def ReadFromString(self, *args):
         """ReadFromString(GeomTools_SurfaceSet self, std::string src)"""
         return _GeomTools.GeomTools_SurfaceSet_ReadFromString(self, *args)
 
-    def PrintSurface(*args) -> "void" :
+    def PrintSurface(*args):
         """
+        * Dumps the surface on the stream, if compact is True use the compact format that can be read back.
+
+        :param S:
+        :type S: Handle_Geom_Surface &
+        :param OS:
+        :type OS: Standard_OStream &
+        :param compact: default value is Standard_False
+        :type compact: bool
+        :rtype: void
+
         * Dumps the surface on the stream, if compact is True use the compact format that can be read back.
 
         :param S:
@@ -755,7 +804,7 @@ class GeomTools_SurfaceSet(object):
         return _GeomTools.GeomTools_SurfaceSet_PrintSurface(*args)
 
     PrintSurface = staticmethod(PrintSurface)
-    def ReadSurface(*args) -> "Standard_IStream &" :
+    def ReadSurface(*args):
         """
         * Reads the surface from the stream. The surface is assumed to have been writtent with the Print method (compact = True).
 
@@ -769,7 +818,7 @@ class GeomTools_SurfaceSet(object):
         return _GeomTools.GeomTools_SurfaceSet_ReadSurface(*args)
 
     ReadSurface = staticmethod(ReadSurface)
-    def SetProgress(self, *args) -> "void" :
+    def SetProgress(self, *args):
         """
         :param PR:
         :type PR: Handle_Message_ProgressIndicator &
@@ -778,14 +827,14 @@ class GeomTools_SurfaceSet(object):
         """
         return _GeomTools.GeomTools_SurfaceSet_SetProgress(self, *args)
 
-    def GetProgress(self, *args) -> "Handle_Message_ProgressIndicator" :
+    def GetProgress(self):
         """
         :rtype: Handle_Message_ProgressIndicator
 
         """
-        return _GeomTools.GeomTools_SurfaceSet_GetProgress(self, *args)
+        return _GeomTools.GeomTools_SurfaceSet_GetProgress(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(GeomTools_SurfaceSet self)"""
         return _GeomTools.GeomTools_SurfaceSet__kill_pointed(self)
 
@@ -810,8 +859,18 @@ GeomTools_SurfaceSet._kill_pointed = new_instancemethod(_GeomTools.GeomTools_Sur
 GeomTools_SurfaceSet_swigregister = _GeomTools.GeomTools_SurfaceSet_swigregister
 GeomTools_SurfaceSet_swigregister(GeomTools_SurfaceSet)
 
-def GeomTools_SurfaceSet_PrintSurface(*args) -> "void" :
+def GeomTools_SurfaceSet_PrintSurface(*args):
   """
+    * Dumps the surface on the stream, if compact is True use the compact format that can be read back.
+
+    :param S:
+    :type S: Handle_Geom_Surface &
+    :param OS:
+    :type OS: Standard_OStream &
+    :param compact: default value is Standard_False
+    :type compact: bool
+    :rtype: void
+
     * Dumps the surface on the stream, if compact is True use the compact format that can be read back.
 
     :param S:
@@ -825,7 +884,7 @@ def GeomTools_SurfaceSet_PrintSurface(*args) -> "void" :
     """
   return _GeomTools.GeomTools_SurfaceSet_PrintSurface(*args)
 
-def GeomTools_SurfaceSet_ReadSurface(*args) -> "Standard_IStream &" :
+def GeomTools_SurfaceSet_ReadSurface(*args):
   """
     * Reads the surface from the stream. The surface is assumed to have been writtent with the Print method (compact = True).
 
@@ -841,14 +900,22 @@ def GeomTools_SurfaceSet_ReadSurface(*args) -> "Standard_IStream &" :
 class GeomTools_UndefinedTypeHandler(OCC.MMgt.MMgt_TShared):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _GeomTools.GeomTools_UndefinedTypeHandler_swiginit(self,_GeomTools.new_GeomTools_UndefinedTypeHandler(*args))
-    def PrintCurve(self, *args) -> "void" :
+        _GeomTools.GeomTools_UndefinedTypeHandler_swiginit(self,_GeomTools.new_GeomTools_UndefinedTypeHandler())
+    def PrintCurve(self, *args):
         """
+        :param C:
+        :type C: Handle_Geom_Curve &
+        :param OS:
+        :type OS: Standard_OStream &
+        :param compact: default value is Standard_False
+        :type compact: bool
+        :rtype: void
+
         :param C:
         :type C: Handle_Geom_Curve &
         :param OS:
@@ -860,10 +927,10 @@ class GeomTools_UndefinedTypeHandler(OCC.MMgt.MMgt_TShared):
         """
         return _GeomTools.GeomTools_UndefinedTypeHandler_PrintCurve(self, *args)
 
-    def ReadCurve(self, *args) -> "Standard_IStream &" :
+    def ReadCurve(self, *args):
         """
         :param ctype:
-        :type ctype: int
+        :type ctype: Standard_Integer
         :param IS:
         :type IS: Standard_IStream &
         :param C:
@@ -873,8 +940,16 @@ class GeomTools_UndefinedTypeHandler(OCC.MMgt.MMgt_TShared):
         """
         return _GeomTools.GeomTools_UndefinedTypeHandler_ReadCurve(self, *args)
 
-    def PrintCurve2d(self, *args) -> "void" :
+    def PrintCurve2d(self, *args):
         """
+        :param C:
+        :type C: Handle_Geom2d_Curve &
+        :param OS:
+        :type OS: Standard_OStream &
+        :param compact: default value is Standard_False
+        :type compact: bool
+        :rtype: void
+
         :param C:
         :type C: Handle_Geom2d_Curve &
         :param OS:
@@ -886,10 +961,10 @@ class GeomTools_UndefinedTypeHandler(OCC.MMgt.MMgt_TShared):
         """
         return _GeomTools.GeomTools_UndefinedTypeHandler_PrintCurve2d(self, *args)
 
-    def ReadCurve2d(self, *args) -> "Standard_IStream &" :
+    def ReadCurve2d(self, *args):
         """
         :param ctype:
-        :type ctype: int
+        :type ctype: Standard_Integer
         :param IS:
         :type IS: Standard_IStream &
         :param C:
@@ -899,8 +974,16 @@ class GeomTools_UndefinedTypeHandler(OCC.MMgt.MMgt_TShared):
         """
         return _GeomTools.GeomTools_UndefinedTypeHandler_ReadCurve2d(self, *args)
 
-    def PrintSurface(self, *args) -> "void" :
+    def PrintSurface(self, *args):
         """
+        :param S:
+        :type S: Handle_Geom_Surface &
+        :param OS:
+        :type OS: Standard_OStream &
+        :param compact: default value is Standard_False
+        :type compact: bool
+        :rtype: void
+
         :param S:
         :type S: Handle_Geom_Surface &
         :param OS:
@@ -912,10 +995,10 @@ class GeomTools_UndefinedTypeHandler(OCC.MMgt.MMgt_TShared):
         """
         return _GeomTools.GeomTools_UndefinedTypeHandler_PrintSurface(self, *args)
 
-    def ReadSurface(self, *args) -> "Standard_IStream &" :
+    def ReadSurface(self, *args):
         """
         :param ctype:
-        :type ctype: int
+        :type ctype: Standard_Integer
         :param IS:
         :type IS: Standard_IStream &
         :param S:
@@ -925,11 +1008,11 @@ class GeomTools_UndefinedTypeHandler(OCC.MMgt.MMgt_TShared):
         """
         return _GeomTools.GeomTools_UndefinedTypeHandler_ReadSurface(self, *args)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(GeomTools_UndefinedTypeHandler self)"""
         return _GeomTools.GeomTools_UndefinedTypeHandler__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_GeomTools_UndefinedTypeHandler" :
+    def GetHandle(self):
         """GetHandle(GeomTools_UndefinedTypeHandler self) -> Handle_GeomTools_UndefinedTypeHandler"""
         return _GeomTools.GeomTools_UndefinedTypeHandler_GetHandle(self)
 
@@ -973,7 +1056,7 @@ Handle_GeomTools_UndefinedTypeHandler._kill_pointed = new_instancemethod(_GeomTo
 Handle_GeomTools_UndefinedTypeHandler_swigregister = _GeomTools.Handle_GeomTools_UndefinedTypeHandler_swigregister
 Handle_GeomTools_UndefinedTypeHandler_swigregister(Handle_GeomTools_UndefinedTypeHandler)
 
-def Handle_GeomTools_UndefinedTypeHandler_DownCast(*args) -> "Handle_GeomTools_UndefinedTypeHandler const" :
+def Handle_GeomTools_UndefinedTypeHandler_DownCast(*args):
   return _GeomTools.Handle_GeomTools_UndefinedTypeHandler_DownCast(*args)
 Handle_GeomTools_UndefinedTypeHandler_DownCast = _GeomTools.Handle_GeomTools_UndefinedTypeHandler_DownCast
 

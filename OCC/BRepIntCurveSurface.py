@@ -131,15 +131,15 @@ import OCC.IntSurf
 class BRepIntCurveSurface_Inter(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         * Empty constructor;
 
         :rtype: None
 
         """
-        _BRepIntCurveSurface.BRepIntCurveSurface_Inter_swiginit(self,_BRepIntCurveSurface.new_BRepIntCurveSurface_Inter(*args))
-    def Init(self, *args) -> "void" :
+        _BRepIntCurveSurface.BRepIntCurveSurface_Inter_swiginit(self,_BRepIntCurveSurface.new_BRepIntCurveSurface_Inter())
+    def Init(self, *args):
         """
         * Load the Shape, the curve and initialize the tolerance used for the classification.
 
@@ -164,95 +164,95 @@ class BRepIntCurveSurface_Inter(object):
         """
         return _BRepIntCurveSurface.BRepIntCurveSurface_Inter_Init(self, *args)
 
-    def More(self, *args) -> "Standard_Boolean" :
+    def More(self):
         """
         * returns True if there is a current face.
 
         :rtype: bool
 
         """
-        return _BRepIntCurveSurface.BRepIntCurveSurface_Inter_More(self, *args)
+        return _BRepIntCurveSurface.BRepIntCurveSurface_Inter_More(self)
 
-    def Next(self, *args) -> "void" :
+    def Next(self):
         """
         * Sets the explorer to the next face.
 
         :rtype: None
 
         """
-        return _BRepIntCurveSurface.BRepIntCurveSurface_Inter_Next(self, *args)
+        return _BRepIntCurveSurface.BRepIntCurveSurface_Inter_Next(self)
 
-    def Point(self, *args) -> "IntCurveSurface_IntersectionPoint" :
+    def Point(self):
         """
         * returns the current Intersection point.
 
         :rtype: IntCurveSurface_IntersectionPoint
 
         """
-        return _BRepIntCurveSurface.BRepIntCurveSurface_Inter_Point(self, *args)
+        return _BRepIntCurveSurface.BRepIntCurveSurface_Inter_Point(self)
 
-    def Pnt(self, *args) -> "gp_Pnt const" :
+    def Pnt(self):
         """
         * returns the current geometric Point
 
         :rtype: gp_Pnt
 
         """
-        return _BRepIntCurveSurface.BRepIntCurveSurface_Inter_Pnt(self, *args)
+        return _BRepIntCurveSurface.BRepIntCurveSurface_Inter_Pnt(self)
 
-    def U(self, *args) -> "Standard_Real" :
+    def U(self):
         """
         * returns the U parameter of the current point on the current face.
 
         :rtype: float
 
         """
-        return _BRepIntCurveSurface.BRepIntCurveSurface_Inter_U(self, *args)
+        return _BRepIntCurveSurface.BRepIntCurveSurface_Inter_U(self)
 
-    def V(self, *args) -> "Standard_Real" :
+    def V(self):
         """
         * returns the V parameter of the current point on the current face.
 
         :rtype: float
 
         """
-        return _BRepIntCurveSurface.BRepIntCurveSurface_Inter_V(self, *args)
+        return _BRepIntCurveSurface.BRepIntCurveSurface_Inter_V(self)
 
-    def W(self, *args) -> "Standard_Real" :
+    def W(self):
         """
         * returns the parameter of the current point on the curve.
 
         :rtype: float
 
         """
-        return _BRepIntCurveSurface.BRepIntCurveSurface_Inter_W(self, *args)
+        return _BRepIntCurveSurface.BRepIntCurveSurface_Inter_W(self)
 
-    def State(self, *args) -> "TopAbs_State" :
+    def State(self):
         """
         * returns the current state (IN or ON)
 
         :rtype: TopAbs_State
 
         """
-        return _BRepIntCurveSurface.BRepIntCurveSurface_Inter_State(self, *args)
+        return _BRepIntCurveSurface.BRepIntCurveSurface_Inter_State(self)
 
-    def Transition(self, *args) -> "IntCurveSurface_TransitionOnCurve" :
+    def Transition(self):
         """
         * returns the transition of the line on the surface (IN or OUT or UNKNOWN)
 
         :rtype: IntCurveSurface_TransitionOnCurve
 
         """
-        return _BRepIntCurveSurface.BRepIntCurveSurface_Inter_Transition(self, *args)
+        return _BRepIntCurveSurface.BRepIntCurveSurface_Inter_Transition(self)
 
-    def Face(self, *args) -> "TopoDS_Face const" :
+    def Face(self):
         """
         * returns the current face.
 
         :rtype: TopoDS_Face
 
         """
-        return _BRepIntCurveSurface.BRepIntCurveSurface_Inter_Face(self, *args)
+        return _BRepIntCurveSurface.BRepIntCurveSurface_Inter_Face(self)
 
     def __del__(self):
     	try:

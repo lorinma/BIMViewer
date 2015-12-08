@@ -142,59 +142,59 @@ class BRepProj_Projection(object):
 
         """
         _BRepProj.BRepProj_Projection_swiginit(self,_BRepProj.new_BRepProj_Projection(*args))
-    def IsDone(self, *args) -> "Standard_Boolean" :
+    def IsDone(self):
         """
         * returns False if the section failed
 
         :rtype: bool
 
         """
-        return _BRepProj.BRepProj_Projection_IsDone(self, *args)
+        return _BRepProj.BRepProj_Projection_IsDone(self)
 
-    def Init(self, *args) -> "void" :
+    def Init(self):
         """
         * Resets the iterator by resulting wires.
 
         :rtype: None
 
         """
-        return _BRepProj.BRepProj_Projection_Init(self, *args)
+        return _BRepProj.BRepProj_Projection_Init(self)
 
-    def More(self, *args) -> "Standard_Boolean" :
+    def More(self):
         """
         * Returns True if there is a current result wire
 
         :rtype: bool
 
         """
-        return _BRepProj.BRepProj_Projection_More(self, *args)
+        return _BRepProj.BRepProj_Projection_More(self)
 
-    def Next(self, *args) -> "void" :
+    def Next(self):
         """
         * Move to the next result wire.
 
         :rtype: None
 
         """
-        return _BRepProj.BRepProj_Projection_Next(self, *args)
+        return _BRepProj.BRepProj_Projection_Next(self)
 
-    def Current(self, *args) -> "TopoDS_Wire" :
+    def Current(self):
         """
         * Returns the current result wire.
 
         :rtype: TopoDS_Wire
 
         """
-        return _BRepProj.BRepProj_Projection_Current(self, *args)
+        return _BRepProj.BRepProj_Projection_Current(self)
 
-    def Shape(self, *args) -> "TopoDS_Compound" :
+    def Shape(self):
         """
         * Returns the complete result as compound of wires.
 
         :rtype: TopoDS_Compound
 
         """
-        return _BRepProj.BRepProj_Projection_Shape(self, *args)
+        return _BRepProj.BRepProj_Projection_Shape(self)
 
     def __del__(self):
     	try:

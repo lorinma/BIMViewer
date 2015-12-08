@@ -122,7 +122,49 @@ class Sweep_NumShape(object):
         * Creates a new simple indexed edge.  For an Edge : Index is the number of vertices (0, 1 or 2),Type is TopAbs_EDGE, Closed is true if it is a closed edge, BegInf is true if the Edge is infinite at the begenning, EndInf is true if the edge is infinite at the end.  For a Vertex : Index is the index of the vertex in the edge (1 or 2), Type is TopAbsVERTEX, all the other fields have no meanning.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
+        :param Type:
+        :type Type: TopAbs_ShapeEnum
+        :param Closed: default value is Standard_False
+        :type Closed: bool
+        :param BegInf: default value is Standard_False
+        :type BegInf: bool
+        :param EndInf: default value is Standard_False
+        :type EndInf: bool
+        :rtype: None
+
+        * Creates a new simple indexed edge.  For an Edge : Index is the number of vertices (0, 1 or 2),Type is TopAbs_EDGE, Closed is true if it is a closed edge, BegInf is true if the Edge is infinite at the begenning, EndInf is true if the edge is infinite at the end.  For a Vertex : Index is the index of the vertex in the edge (1 or 2), Type is TopAbsVERTEX, all the other fields have no meanning.
+
+        :param Index:
+        :type Index: Standard_Integer
+        :param Type:
+        :type Type: TopAbs_ShapeEnum
+        :param Closed: default value is Standard_False
+        :type Closed: bool
+        :param BegInf: default value is Standard_False
+        :type BegInf: bool
+        :param EndInf: default value is Standard_False
+        :type EndInf: bool
+        :rtype: None
+
+        * Creates a new simple indexed edge.  For an Edge : Index is the number of vertices (0, 1 or 2),Type is TopAbs_EDGE, Closed is true if it is a closed edge, BegInf is true if the Edge is infinite at the begenning, EndInf is true if the edge is infinite at the end.  For a Vertex : Index is the index of the vertex in the edge (1 or 2), Type is TopAbsVERTEX, all the other fields have no meanning.
+
+        :param Index:
+        :type Index: Standard_Integer
+        :param Type:
+        :type Type: TopAbs_ShapeEnum
+        :param Closed: default value is Standard_False
+        :type Closed: bool
+        :param BegInf: default value is Standard_False
+        :type BegInf: bool
+        :param EndInf: default value is Standard_False
+        :type EndInf: bool
+        :rtype: None
+
+        * Creates a new simple indexed edge.  For an Edge : Index is the number of vertices (0, 1 or 2),Type is TopAbs_EDGE, Closed is true if it is a closed edge, BegInf is true if the Edge is infinite at the begenning, EndInf is true if the edge is infinite at the end.  For a Vertex : Index is the index of the vertex in the edge (1 or 2), Type is TopAbsVERTEX, all the other fields have no meanning.
+
+        :param Index:
+        :type Index: Standard_Integer
         :param Type:
         :type Type: TopAbs_ShapeEnum
         :param Closed: default value is Standard_False
@@ -135,12 +177,54 @@ class Sweep_NumShape(object):
 
         """
         _Sweep.Sweep_NumShape_swiginit(self,_Sweep.new_Sweep_NumShape(*args))
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
         * Reinitialize a simple indexed edge.  For an Edge : Index is the number of vertices (0, 1 or 2),Type is TopAbs_EDGE, Closed is true if it is a closed edge, BegInf is true if the Edge is infinite at the begenning, EndInf is true if the edge is infinite at the end.  For a Vertex : Index is the index of the vertex in the edge (1 or 2), Type is TopAbsVERTEX, Closed is true if it is the vertex of a closed edge, all the other fields have no meanning.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
+        :param Type:
+        :type Type: TopAbs_ShapeEnum
+        :param Closed: default value is Standard_False
+        :type Closed: bool
+        :param BegInf: default value is Standard_False
+        :type BegInf: bool
+        :param EndInf: default value is Standard_False
+        :type EndInf: bool
+        :rtype: None
+
+        * Reinitialize a simple indexed edge.  For an Edge : Index is the number of vertices (0, 1 or 2),Type is TopAbs_EDGE, Closed is true if it is a closed edge, BegInf is true if the Edge is infinite at the begenning, EndInf is true if the edge is infinite at the end.  For a Vertex : Index is the index of the vertex in the edge (1 or 2), Type is TopAbsVERTEX, Closed is true if it is the vertex of a closed edge, all the other fields have no meanning.
+
+        :param Index:
+        :type Index: Standard_Integer
+        :param Type:
+        :type Type: TopAbs_ShapeEnum
+        :param Closed: default value is Standard_False
+        :type Closed: bool
+        :param BegInf: default value is Standard_False
+        :type BegInf: bool
+        :param EndInf: default value is Standard_False
+        :type EndInf: bool
+        :rtype: None
+
+        * Reinitialize a simple indexed edge.  For an Edge : Index is the number of vertices (0, 1 or 2),Type is TopAbs_EDGE, Closed is true if it is a closed edge, BegInf is true if the Edge is infinite at the begenning, EndInf is true if the edge is infinite at the end.  For a Vertex : Index is the index of the vertex in the edge (1 or 2), Type is TopAbsVERTEX, Closed is true if it is the vertex of a closed edge, all the other fields have no meanning.
+
+        :param Index:
+        :type Index: Standard_Integer
+        :param Type:
+        :type Type: TopAbs_ShapeEnum
+        :param Closed: default value is Standard_False
+        :type Closed: bool
+        :param BegInf: default value is Standard_False
+        :type BegInf: bool
+        :param EndInf: default value is Standard_False
+        :type EndInf: bool
+        :rtype: None
+
+        * Reinitialize a simple indexed edge.  For an Edge : Index is the number of vertices (0, 1 or 2),Type is TopAbs_EDGE, Closed is true if it is a closed edge, BegInf is true if the Edge is infinite at the begenning, EndInf is true if the edge is infinite at the end.  For a Vertex : Index is the index of the vertex in the edge (1 or 2), Type is TopAbsVERTEX, Closed is true if it is the vertex of a closed edge, all the other fields have no meanning.
+
+        :param Index:
+        :type Index: Standard_Integer
         :param Type:
         :type Type: TopAbs_ShapeEnum
         :param Closed: default value is Standard_False
@@ -154,47 +238,47 @@ class Sweep_NumShape(object):
         """
         return _Sweep.Sweep_NumShape_Init(self, *args)
 
-    def Index(self, *args) -> "Standard_Integer" :
+    def Index(self):
         """
         :rtype: int
 
         """
-        return _Sweep.Sweep_NumShape_Index(self, *args)
+        return _Sweep.Sweep_NumShape_Index(self)
 
-    def Type(self, *args) -> "TopAbs_ShapeEnum" :
+    def Type(self):
         """
         :rtype: TopAbs_ShapeEnum
 
         """
-        return _Sweep.Sweep_NumShape_Type(self, *args)
+        return _Sweep.Sweep_NumShape_Type(self)
 
-    def Closed(self, *args) -> "Standard_Boolean" :
+    def Closed(self):
         """
         :rtype: bool
 
         """
-        return _Sweep.Sweep_NumShape_Closed(self, *args)
+        return _Sweep.Sweep_NumShape_Closed(self)
 
-    def BegInfinite(self, *args) -> "Standard_Boolean" :
+    def BegInfinite(self):
         """
         :rtype: bool
 
         """
-        return _Sweep.Sweep_NumShape_BegInfinite(self, *args)
+        return _Sweep.Sweep_NumShape_BegInfinite(self)
 
-    def EndInfinite(self, *args) -> "Standard_Boolean" :
+    def EndInfinite(self):
         """
         :rtype: bool
 
         """
-        return _Sweep.Sweep_NumShape_EndInfinite(self, *args)
+        return _Sweep.Sweep_NumShape_EndInfinite(self)
 
-    def Orientation(self, *args) -> "TopAbs_Orientation" :
+    def Orientation(self):
         """
         :rtype: TopAbs_Orientation
 
         """
-        return _Sweep.Sweep_NumShape_Orientation(self, *args)
+        return _Sweep.Sweep_NumShape_Orientation(self)
 
     def __del__(self):
     	try:
@@ -218,13 +302,13 @@ Sweep_NumShape_swigregister(Sweep_NumShape)
 class Sweep_NumShapeIterator(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _Sweep.Sweep_NumShapeIterator_swiginit(self,_Sweep.new_Sweep_NumShapeIterator(*args))
-    def Init(self, *args) -> "void" :
+        _Sweep.Sweep_NumShapeIterator_swiginit(self,_Sweep.new_Sweep_NumShapeIterator())
+    def Init(self, *args):
         """
         * Resest the NumShapeIterator on sub-shapes of <aShape>.
 
@@ -235,41 +319,41 @@ class Sweep_NumShapeIterator(object):
         """
         return _Sweep.Sweep_NumShapeIterator_Init(self, *args)
 
-    def More(self, *args) -> "Standard_Boolean" :
+    def More(self):
         """
         * Returns True if there is a current sub-shape.
 
         :rtype: bool
 
         """
-        return _Sweep.Sweep_NumShapeIterator_More(self, *args)
+        return _Sweep.Sweep_NumShapeIterator_More(self)
 
-    def Next(self, *args) -> "void" :
+    def Next(self):
         """
         * Moves to the next sub-shape.
 
         :rtype: None
 
         """
-        return _Sweep.Sweep_NumShapeIterator_Next(self, *args)
+        return _Sweep.Sweep_NumShapeIterator_Next(self)
 
-    def Value(self, *args) -> "Sweep_NumShape const &" :
+    def Value(self):
         """
         * Returns the current sub-shape.
 
         :rtype: Sweep_NumShape
 
         """
-        return _Sweep.Sweep_NumShapeIterator_Value(self, *args)
+        return _Sweep.Sweep_NumShapeIterator_Value(self)
 
-    def Orientation(self, *args) -> "TopAbs_Orientation" :
+    def Orientation(self):
         """
         * Returns the orientation of the current sub-shape.
 
         :rtype: TopAbs_Orientation
 
         """
-        return _Sweep.Sweep_NumShapeIterator_Orientation(self, *args)
+        return _Sweep.Sweep_NumShapeIterator_Orientation(self)
 
     def __del__(self):
     	try:
@@ -301,16 +385,16 @@ class Sweep_NumShapeTool(object):
 
         """
         _Sweep.Sweep_NumShapeTool_swiginit(self,_Sweep.new_Sweep_NumShapeTool(*args))
-    def NbShapes(self, *args) -> "Standard_Integer" :
+    def NbShapes(self):
         """
         * Returns the number of subshapes in the shape.
 
         :rtype: int
 
         """
-        return _Sweep.Sweep_NumShapeTool_NbShapes(self, *args)
+        return _Sweep.Sweep_NumShapeTool_NbShapes(self)
 
-    def Index(self, *args) -> "Standard_Integer" :
+    def Index(self, *args):
         """
         * Returns the index of <aShape>.
 
@@ -321,18 +405,18 @@ class Sweep_NumShapeTool(object):
         """
         return _Sweep.Sweep_NumShapeTool_Index(self, *args)
 
-    def Shape(self, *args) -> "Sweep_NumShape" :
+    def Shape(self, *args):
         """
         * Returns the Shape at index anIndex
 
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :rtype: Sweep_NumShape
 
         """
         return _Sweep.Sweep_NumShapeTool_Shape(self, *args)
 
-    def Type(self, *args) -> "TopAbs_ShapeEnum" :
+    def Type(self, *args):
         """
         * Returns the type of <aShape>.
 
@@ -343,7 +427,7 @@ class Sweep_NumShapeTool(object):
         """
         return _Sweep.Sweep_NumShapeTool_Type(self, *args)
 
-    def Orientation(self, *args) -> "TopAbs_Orientation" :
+    def Orientation(self, *args):
         """
         * Returns the orientation of <aShape>.
 
@@ -354,41 +438,41 @@ class Sweep_NumShapeTool(object):
         """
         return _Sweep.Sweep_NumShapeTool_Orientation(self, *args)
 
-    def HasFirstVertex(self, *args) -> "Standard_Boolean" :
+    def HasFirstVertex(self):
         """
         * Returns true if there is a First Vertex in the Shape.
 
         :rtype: bool
 
         """
-        return _Sweep.Sweep_NumShapeTool_HasFirstVertex(self, *args)
+        return _Sweep.Sweep_NumShapeTool_HasFirstVertex(self)
 
-    def HasLastVertex(self, *args) -> "Standard_Boolean" :
+    def HasLastVertex(self):
         """
         * Returns true if there is a Last Vertex in the Shape.
 
         :rtype: bool
 
         """
-        return _Sweep.Sweep_NumShapeTool_HasLastVertex(self, *args)
+        return _Sweep.Sweep_NumShapeTool_HasLastVertex(self)
 
-    def FirstVertex(self, *args) -> "Sweep_NumShape" :
+    def FirstVertex(self):
         """
         * Returns the first vertex.
 
         :rtype: Sweep_NumShape
 
         """
-        return _Sweep.Sweep_NumShapeTool_FirstVertex(self, *args)
+        return _Sweep.Sweep_NumShapeTool_FirstVertex(self)
 
-    def LastVertex(self, *args) -> "Sweep_NumShape" :
+    def LastVertex(self):
         """
         * Returns the last vertex.
 
         :rtype: Sweep_NumShape
 
         """
-        return _Sweep.Sweep_NumShapeTool_LastVertex(self, *args)
+        return _Sweep.Sweep_NumShapeTool_LastVertex(self)
 
     def __del__(self):
     	try:

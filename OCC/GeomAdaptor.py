@@ -123,8 +123,9 @@ import OCC.TopAbs
 import OCC.math
 class geomadaptor(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
+    def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def MakeCurve(*args) -> "Handle_Geom_Curve" :
+    def MakeCurve(*args):
         """
         * Inherited from GHCurve. Provides a curve handled by reference. Build a Geom_Curve using the informations from the Curve from Adaptor3d
 
@@ -136,7 +137,7 @@ class geomadaptor(object):
         return _GeomAdaptor.geomadaptor_MakeCurve(*args)
 
     MakeCurve = staticmethod(MakeCurve)
-    def MakeSurface(*args) -> "Handle_Geom_Surface" :
+    def MakeSurface(*args):
         """
         * Build a Geom_Surface using the informations from the Surface from Adaptor3d
 
@@ -148,8 +149,6 @@ class geomadaptor(object):
         return _GeomAdaptor.geomadaptor_MakeSurface(*args)
 
     MakeSurface = staticmethod(MakeSurface)
-    def __init__(self): 
-        _GeomAdaptor.geomadaptor_swiginit(self,_GeomAdaptor.new_geomadaptor())
     def __del__(self):
     	try:
     		self.thisown = False
@@ -162,7 +161,7 @@ geomadaptor._kill_pointed = new_instancemethod(_GeomAdaptor.geomadaptor__kill_po
 geomadaptor_swigregister = _GeomAdaptor.geomadaptor_swigregister
 geomadaptor_swigregister(geomadaptor)
 
-def geomadaptor_MakeCurve(*args) -> "Handle_Geom_Curve" :
+def geomadaptor_MakeCurve(*args):
   """
     * Inherited from GHCurve. Provides a curve handled by reference. Build a Geom_Curve using the informations from the Curve from Adaptor3d
 
@@ -173,7 +172,7 @@ def geomadaptor_MakeCurve(*args) -> "Handle_Geom_Curve" :
     """
   return _GeomAdaptor.geomadaptor_MakeCurve(*args)
 
-def geomadaptor_MakeSurface(*args) -> "Handle_Geom_Surface" :
+def geomadaptor_MakeSurface(*args):
   """
     * Build a Geom_Surface using the informations from the Surface from Adaptor3d
 
@@ -207,7 +206,7 @@ class GeomAdaptor_Curve(OCC.Adaptor3d.Adaptor3d_Curve):
 
         """
         _GeomAdaptor.GeomAdaptor_Curve_swiginit(self,_GeomAdaptor.new_GeomAdaptor_Curve(*args))
-    def Load(self, *args) -> "void" :
+    def Load(self, *args):
         """
         :param C:
         :type C: Handle_Geom_Curve &
@@ -226,14 +225,14 @@ class GeomAdaptor_Curve(OCC.Adaptor3d.Adaptor3d_Curve):
         """
         return _GeomAdaptor.GeomAdaptor_Curve_Load(self, *args)
 
-    def Curve(self, *args) -> "Handle_Geom_Curve const &" :
+    def Curve(self):
         """
         * Provides a curve inherited from Hcurve from Adaptor. This is inherited to provide easy to use constructors.
 
         :rtype: Handle_Geom_Curve
 
         """
-        return _GeomAdaptor.GeomAdaptor_Curve_Curve(self, *args)
+        return _GeomAdaptor.GeomAdaptor_Curve_Curve(self)
 
     def __del__(self):
     	try:
@@ -262,7 +261,7 @@ class GeomAdaptor_GHCurve(OCC.Adaptor3d.Adaptor3d_HCurve):
 
         """
         _GeomAdaptor.GeomAdaptor_GHCurve_swiginit(self,_GeomAdaptor.new_GeomAdaptor_GHCurve(*args))
-    def Set(self, *args) -> "void" :
+    def Set(self, *args):
         """
         :param C:
         :type C: GeomAdaptor_Curve &
@@ -271,18 +270,18 @@ class GeomAdaptor_GHCurve(OCC.Adaptor3d.Adaptor3d_HCurve):
         """
         return _GeomAdaptor.GeomAdaptor_GHCurve_Set(self, *args)
 
-    def ChangeCurve(self, *args) -> "GeomAdaptor_Curve &" :
+    def ChangeCurve(self):
         """
         :rtype: GeomAdaptor_Curve
 
         """
-        return _GeomAdaptor.GeomAdaptor_GHCurve_ChangeCurve(self, *args)
+        return _GeomAdaptor.GeomAdaptor_GHCurve_ChangeCurve(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(GeomAdaptor_GHCurve self)"""
         return _GeomAdaptor.GeomAdaptor_GHCurve__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_GeomAdaptor_GHCurve" :
+    def GetHandle(self):
         """GetHandle(GeomAdaptor_GHCurve self) -> Handle_GeomAdaptor_GHCurve"""
         return _GeomAdaptor.GeomAdaptor_GHCurve_GetHandle(self)
 
@@ -322,7 +321,7 @@ Handle_GeomAdaptor_GHCurve._kill_pointed = new_instancemethod(_GeomAdaptor.Handl
 Handle_GeomAdaptor_GHCurve_swigregister = _GeomAdaptor.Handle_GeomAdaptor_GHCurve_swigregister
 Handle_GeomAdaptor_GHCurve_swigregister(Handle_GeomAdaptor_GHCurve)
 
-def Handle_GeomAdaptor_GHCurve_DownCast(*args) -> "Handle_GeomAdaptor_GHCurve const" :
+def Handle_GeomAdaptor_GHCurve_DownCast(*args):
   return _GeomAdaptor.Handle_GeomAdaptor_GHCurve_DownCast(*args)
 Handle_GeomAdaptor_GHCurve_DownCast = _GeomAdaptor.Handle_GeomAdaptor_GHCurve_DownCast
 
@@ -339,7 +338,7 @@ class GeomAdaptor_GHSurface(OCC.Adaptor3d.Adaptor3d_HSurface):
 
         """
         _GeomAdaptor.GeomAdaptor_GHSurface_swiginit(self,_GeomAdaptor.new_GeomAdaptor_GHSurface(*args))
-    def Set(self, *args) -> "void" :
+    def Set(self, *args):
         """
         :param S:
         :type S: GeomAdaptor_Surface &
@@ -348,18 +347,18 @@ class GeomAdaptor_GHSurface(OCC.Adaptor3d.Adaptor3d_HSurface):
         """
         return _GeomAdaptor.GeomAdaptor_GHSurface_Set(self, *args)
 
-    def ChangeSurface(self, *args) -> "GeomAdaptor_Surface &" :
+    def ChangeSurface(self):
         """
         :rtype: GeomAdaptor_Surface
 
         """
-        return _GeomAdaptor.GeomAdaptor_GHSurface_ChangeSurface(self, *args)
+        return _GeomAdaptor.GeomAdaptor_GHSurface_ChangeSurface(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(GeomAdaptor_GHSurface self)"""
         return _GeomAdaptor.GeomAdaptor_GHSurface__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_GeomAdaptor_GHSurface" :
+    def GetHandle(self):
         """GetHandle(GeomAdaptor_GHSurface self) -> Handle_GeomAdaptor_GHSurface"""
         return _GeomAdaptor.GeomAdaptor_GHSurface_GetHandle(self)
 
@@ -399,7 +398,7 @@ Handle_GeomAdaptor_GHSurface._kill_pointed = new_instancemethod(_GeomAdaptor.Han
 Handle_GeomAdaptor_GHSurface_swigregister = _GeomAdaptor.Handle_GeomAdaptor_GHSurface_swigregister
 Handle_GeomAdaptor_GHSurface_swigregister(Handle_GeomAdaptor_GHSurface)
 
-def Handle_GeomAdaptor_GHSurface_DownCast(*args) -> "Handle_GeomAdaptor_GHSurface const" :
+def Handle_GeomAdaptor_GHSurface_DownCast(*args):
   return _GeomAdaptor.Handle_GeomAdaptor_GHSurface_DownCast(*args)
 Handle_GeomAdaptor_GHSurface_DownCast = _GeomAdaptor.Handle_GeomAdaptor_GHSurface_DownCast
 
@@ -432,9 +431,45 @@ class GeomAdaptor_Surface(OCC.Adaptor3d.Adaptor3d_Surface):
         :type TolV: float
         :rtype: None
 
+        * ConstructionError is raised if UFirst>ULast or VFirst>VLast
+
+        :param S:
+        :type S: Handle_Geom_Surface &
+        :param UFirst:
+        :type UFirst: float
+        :param ULast:
+        :type ULast: float
+        :param VFirst:
+        :type VFirst: float
+        :param VLast:
+        :type VLast: float
+        :param TolU: default value is 0.0
+        :type TolU: float
+        :param TolV: default value is 0.0
+        :type TolV: float
+        :rtype: None
+
+        * ConstructionError is raised if UFirst>ULast or VFirst>VLast
+
+        :param S:
+        :type S: Handle_Geom_Surface &
+        :param UFirst:
+        :type UFirst: float
+        :param ULast:
+        :type ULast: float
+        :param VFirst:
+        :type VFirst: float
+        :param VLast:
+        :type VLast: float
+        :param TolU: default value is 0.0
+        :type TolU: float
+        :param TolV: default value is 0.0
+        :type TolV: float
+        :rtype: None
+
         """
         _GeomAdaptor.GeomAdaptor_Surface_swiginit(self,_GeomAdaptor.new_GeomAdaptor_Surface(*args))
-    def Load(self, *args) -> "void" :
+    def Load(self, *args):
         """
         :param S:
         :type S: Handle_Geom_Surface &
@@ -458,15 +493,51 @@ class GeomAdaptor_Surface(OCC.Adaptor3d.Adaptor3d_Surface):
         :type TolV: float
         :rtype: None
 
+        * ConstructionError is raised if UFirst>ULast or VFirst>VLast
+
+        :param S:
+        :type S: Handle_Geom_Surface &
+        :param UFirst:
+        :type UFirst: float
+        :param ULast:
+        :type ULast: float
+        :param VFirst:
+        :type VFirst: float
+        :param VLast:
+        :type VLast: float
+        :param TolU: default value is 0.0
+        :type TolU: float
+        :param TolV: default value is 0.0
+        :type TolV: float
+        :rtype: None
+
+        * ConstructionError is raised if UFirst>ULast or VFirst>VLast
+
+        :param S:
+        :type S: Handle_Geom_Surface &
+        :param UFirst:
+        :type UFirst: float
+        :param ULast:
+        :type ULast: float
+        :param VFirst:
+        :type VFirst: float
+        :param VLast:
+        :type VLast: float
+        :param TolU: default value is 0.0
+        :type TolU: float
+        :param TolV: default value is 0.0
+        :type TolV: float
+        :rtype: None
+
         """
         return _GeomAdaptor.GeomAdaptor_Surface_Load(self, *args)
 
-    def Surface(self, *args) -> "Handle_Geom_Surface const &" :
+    def Surface(self):
         """
         :rtype: Handle_Geom_Surface
 
         """
-        return _GeomAdaptor.GeomAdaptor_Surface_Surface(self, *args)
+        return _GeomAdaptor.GeomAdaptor_Surface_Surface(self)
 
     def __del__(self):
     	try:
@@ -509,11 +580,11 @@ class GeomAdaptor_HCurve(GeomAdaptor_GHCurve):
 
         """
         _GeomAdaptor.GeomAdaptor_HCurve_swiginit(self,_GeomAdaptor.new_GeomAdaptor_HCurve(*args))
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(GeomAdaptor_HCurve self)"""
         return _GeomAdaptor.GeomAdaptor_HCurve__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_GeomAdaptor_HCurve" :
+    def GetHandle(self):
         """GetHandle(GeomAdaptor_HCurve self) -> Handle_GeomAdaptor_HCurve"""
         return _GeomAdaptor.GeomAdaptor_HCurve_GetHandle(self)
 
@@ -551,7 +622,7 @@ Handle_GeomAdaptor_HCurve._kill_pointed = new_instancemethod(_GeomAdaptor.Handle
 Handle_GeomAdaptor_HCurve_swigregister = _GeomAdaptor.Handle_GeomAdaptor_HCurve_swigregister
 Handle_GeomAdaptor_HCurve_swigregister(Handle_GeomAdaptor_HCurve)
 
-def Handle_GeomAdaptor_HCurve_DownCast(*args) -> "Handle_GeomAdaptor_HCurve const" :
+def Handle_GeomAdaptor_HCurve_DownCast(*args):
   return _GeomAdaptor.Handle_GeomAdaptor_HCurve_DownCast(*args)
 Handle_GeomAdaptor_HCurve_DownCast = _GeomAdaptor.Handle_GeomAdaptor_HCurve_DownCast
 
@@ -588,13 +659,49 @@ class GeomAdaptor_HSurface(GeomAdaptor_GHSurface):
         :type TolV: float
         :rtype: None
 
+        * ConstructionError is raised if UFirst>ULast or VFirst>VLast
+
+        :param S:
+        :type S: Handle_Geom_Surface &
+        :param UFirst:
+        :type UFirst: float
+        :param ULast:
+        :type ULast: float
+        :param VFirst:
+        :type VFirst: float
+        :param VLast:
+        :type VLast: float
+        :param TolU: default value is 0.0
+        :type TolU: float
+        :param TolV: default value is 0.0
+        :type TolV: float
+        :rtype: None
+
+        * ConstructionError is raised if UFirst>ULast or VFirst>VLast
+
+        :param S:
+        :type S: Handle_Geom_Surface &
+        :param UFirst:
+        :type UFirst: float
+        :param ULast:
+        :type ULast: float
+        :param VFirst:
+        :type VFirst: float
+        :param VLast:
+        :type VLast: float
+        :param TolU: default value is 0.0
+        :type TolU: float
+        :param TolV: default value is 0.0
+        :type TolV: float
+        :rtype: None
+
         """
         _GeomAdaptor.GeomAdaptor_HSurface_swiginit(self,_GeomAdaptor.new_GeomAdaptor_HSurface(*args))
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(GeomAdaptor_HSurface self)"""
         return _GeomAdaptor.GeomAdaptor_HSurface__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_GeomAdaptor_HSurface" :
+    def GetHandle(self):
         """GetHandle(GeomAdaptor_HSurface self) -> Handle_GeomAdaptor_HSurface"""
         return _GeomAdaptor.GeomAdaptor_HSurface_GetHandle(self)
 
@@ -632,7 +739,7 @@ Handle_GeomAdaptor_HSurface._kill_pointed = new_instancemethod(_GeomAdaptor.Hand
 Handle_GeomAdaptor_HSurface_swigregister = _GeomAdaptor.Handle_GeomAdaptor_HSurface_swigregister
 Handle_GeomAdaptor_HSurface_swigregister(Handle_GeomAdaptor_HSurface)
 
-def Handle_GeomAdaptor_HSurface_DownCast(*args) -> "Handle_GeomAdaptor_HSurface const" :
+def Handle_GeomAdaptor_HSurface_DownCast(*args):
   return _GeomAdaptor.Handle_GeomAdaptor_HSurface_DownCast(*args)
 Handle_GeomAdaptor_HSurface_DownCast = _GeomAdaptor.Handle_GeomAdaptor_HSurface_DownCast
 

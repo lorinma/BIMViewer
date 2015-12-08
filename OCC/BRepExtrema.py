@@ -149,6 +149,58 @@ class BRepExtrema_DistShapeShape(object):
         :type A: Extrema_ExtAlgo
         :rtype: None
 
+        * computation of the minimum distance (value and pair of points) using default deflection Default value is Precision::Confusion().
+
+        :param Shape1:
+        :type Shape1: TopoDS_Shape &
+        :param Shape2:
+        :type Shape2: TopoDS_Shape &
+        :param F: default value is Extrema_ExtFlag_MINMAX
+        :type F: Extrema_ExtFlag
+        :param A: default value is Extrema_ExtAlgo_Grad
+        :type A: Extrema_ExtAlgo
+        :rtype: None
+
+        * computation of the minimum distance (value and pair of points) using default deflection Default value is Precision::Confusion().
+
+        :param Shape1:
+        :type Shape1: TopoDS_Shape &
+        :param Shape2:
+        :type Shape2: TopoDS_Shape &
+        :param F: default value is Extrema_ExtFlag_MINMAX
+        :type F: Extrema_ExtFlag
+        :param A: default value is Extrema_ExtAlgo_Grad
+        :type A: Extrema_ExtAlgo
+        :rtype: None
+
+        * create tool and load both shapes into it
+
+        :param Shape1:
+        :type Shape1: TopoDS_Shape &
+        :param Shape2:
+        :type Shape2: TopoDS_Shape &
+        :param theDeflection:
+        :type theDeflection: float
+        :param F: default value is Extrema_ExtFlag_MINMAX
+        :type F: Extrema_ExtFlag
+        :param A: default value is Extrema_ExtAlgo_Grad
+        :type A: Extrema_ExtAlgo
+        :rtype: None
+
+        * create tool and load both shapes into it
+
+        :param Shape1:
+        :type Shape1: TopoDS_Shape &
+        :param Shape2:
+        :type Shape2: TopoDS_Shape &
+        :param theDeflection:
+        :type theDeflection: float
+        :param F: default value is Extrema_ExtFlag_MINMAX
+        :type F: Extrema_ExtFlag
+        :param A: default value is Extrema_ExtAlgo_Grad
+        :type A: Extrema_ExtAlgo
+        :rtype: None
+
         * create tool and load both shapes into it
 
         :param Shape1:
@@ -165,7 +217,7 @@ class BRepExtrema_DistShapeShape(object):
 
         """
         _BRepExtrema.BRepExtrema_DistShapeShape_swiginit(self,_BRepExtrema.new_BRepExtrema_DistShapeShape(*args))
-    def SetDeflection(self, *args) -> "void" :
+    def SetDeflection(self, *args):
         """
         :param theDeflection:
         :type theDeflection: float
@@ -174,7 +226,7 @@ class BRepExtrema_DistShapeShape(object):
         """
         return _BRepExtrema.BRepExtrema_DistShapeShape_SetDeflection(self, *args)
 
-    def LoadS1(self, *args) -> "void" :
+    def LoadS1(self, *args):
         """
         * load first shape into extrema
 
@@ -185,7 +237,7 @@ class BRepExtrema_DistShapeShape(object):
         """
         return _BRepExtrema.BRepExtrema_DistShapeShape_LoadS1(self, *args)
 
-    def LoadS2(self, *args) -> "void" :
+    def LoadS2(self, *args):
         """
         * load second shape into extrema
 
@@ -196,123 +248,123 @@ class BRepExtrema_DistShapeShape(object):
         """
         return _BRepExtrema.BRepExtrema_DistShapeShape_LoadS2(self, *args)
 
-    def Perform(self, *args) -> "Standard_Boolean" :
+    def Perform(self):
         """
         * computation of the minimum distance (value and couple of points). Parameter theDeflection is used to specify a maximum deviation of extreme distances from the minimum one. Returns IsDone status.
 
         :rtype: bool
 
         """
-        return _BRepExtrema.BRepExtrema_DistShapeShape_Perform(self, *args)
+        return _BRepExtrema.BRepExtrema_DistShapeShape_Perform(self)
 
-    def IsDone(self, *args) -> "Standard_Boolean" :
+    def IsDone(self):
         """
         * True if the minimum distance is found.
 
         :rtype: bool
 
         """
-        return _BRepExtrema.BRepExtrema_DistShapeShape_IsDone(self, *args)
+        return _BRepExtrema.BRepExtrema_DistShapeShape_IsDone(self)
 
-    def NbSolution(self, *args) -> "Standard_Integer" :
+    def NbSolution(self):
         """
         * Returns the number of solutions satisfying the minimum distance.
 
         :rtype: int
 
         """
-        return _BRepExtrema.BRepExtrema_DistShapeShape_NbSolution(self, *args)
+        return _BRepExtrema.BRepExtrema_DistShapeShape_NbSolution(self)
 
-    def Value(self, *args) -> "Standard_Real" :
+    def Value(self):
         """
         * Returns the value of the minimum distance.
 
         :rtype: float
 
         """
-        return _BRepExtrema.BRepExtrema_DistShapeShape_Value(self, *args)
+        return _BRepExtrema.BRepExtrema_DistShapeShape_Value(self)
 
-    def InnerSolution(self, *args) -> "Standard_Boolean" :
+    def InnerSolution(self):
         """
         * True if one of the shapes is a solid and the other shape is completely or partially inside the solid.
 
         :rtype: bool
 
         """
-        return _BRepExtrema.BRepExtrema_DistShapeShape_InnerSolution(self, *args)
+        return _BRepExtrema.BRepExtrema_DistShapeShape_InnerSolution(self)
 
-    def PointOnShape1(self, *args) -> "gp_Pnt const" :
+    def PointOnShape1(self, *args):
         """
         * Returns the Point corresponding to the <N>th solution on the first Shape
 
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :rtype: gp_Pnt
 
         """
         return _BRepExtrema.BRepExtrema_DistShapeShape_PointOnShape1(self, *args)
 
-    def PointOnShape2(self, *args) -> "gp_Pnt const" :
+    def PointOnShape2(self, *args):
         """
         * Returns the Point corresponding to the <N>th solution on the second Shape
 
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :rtype: gp_Pnt
 
         """
         return _BRepExtrema.BRepExtrema_DistShapeShape_PointOnShape2(self, *args)
 
-    def SupportTypeShape1(self, *args) -> "BRepExtrema_SupportType" :
+    def SupportTypeShape1(self, *args):
         """
         * gives the type of the support where the Nth solution on the first shape is situated: IsVertex => the Nth solution on the first shape is a Vertex IsOnEdge => the Nth soluion on the first shape is on a Edge IsInFace => the Nth solution on the first shape is inside a face the corresponding support is obtained by the method SupportOnShape1
 
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :rtype: BRepExtrema_SupportType
 
         """
         return _BRepExtrema.BRepExtrema_DistShapeShape_SupportTypeShape1(self, *args)
 
-    def SupportTypeShape2(self, *args) -> "BRepExtrema_SupportType" :
+    def SupportTypeShape2(self, *args):
         """
         * gives the type of the support where the Nth solution on the second shape is situated: IsVertex => the Nth solution on the second shape is a Vertex IsOnEdge => the Nth soluion on the secondt shape is on a Edge IsInFace => the Nth solution on the second shape is inside a face the corresponding support is obtained by the method SupportOnShape2
 
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :rtype: BRepExtrema_SupportType
 
         """
         return _BRepExtrema.BRepExtrema_DistShapeShape_SupportTypeShape2(self, *args)
 
-    def SupportOnShape1(self, *args) -> "TopoDS_Shape" :
+    def SupportOnShape1(self, *args):
         """
         * gives the support where the Nth solution on the first shape is situated. This support can be a Vertex, an Edge or a Face.
 
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :rtype: TopoDS_Shape
 
         """
         return _BRepExtrema.BRepExtrema_DistShapeShape_SupportOnShape1(self, *args)
 
-    def SupportOnShape2(self, *args) -> "TopoDS_Shape" :
+    def SupportOnShape2(self, *args):
         """
         * gives the support where the Nth solution on the second shape is situated. This support can be a Vertex, an Edge or a Face.
 
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :rtype: TopoDS_Shape
 
         """
         return _BRepExtrema.BRepExtrema_DistShapeShape_SupportOnShape2(self, *args)
 
-    def ParOnEdgeS1(self, *args) -> "void" :
+    def ParOnEdgeS1(self, *args):
         """
         * gives the corresponding parameter t if the Nth solution is situated on an Egde of the first shape
 
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :param t:
         :type t: float &
         :rtype: None
@@ -320,12 +372,12 @@ class BRepExtrema_DistShapeShape(object):
         """
         return _BRepExtrema.BRepExtrema_DistShapeShape_ParOnEdgeS1(self, *args)
 
-    def ParOnEdgeS2(self, *args) -> "void" :
+    def ParOnEdgeS2(self, *args):
         """
         * gives the corresponding parameter t if the Nth solution is situated on an Egde of the first shape
 
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :param t:
         :type t: float &
         :rtype: None
@@ -333,12 +385,12 @@ class BRepExtrema_DistShapeShape(object):
         """
         return _BRepExtrema.BRepExtrema_DistShapeShape_ParOnEdgeS2(self, *args)
 
-    def ParOnFaceS1(self, *args) -> "void" :
+    def ParOnFaceS1(self, *args):
         """
         * gives the corresponding parameters (U,V) if the Nth solution is situated on an face of the first shape
 
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :param u:
         :type u: float &
         :param v:
@@ -348,12 +400,12 @@ class BRepExtrema_DistShapeShape(object):
         """
         return _BRepExtrema.BRepExtrema_DistShapeShape_ParOnFaceS1(self, *args)
 
-    def ParOnFaceS2(self, *args) -> "void" :
+    def ParOnFaceS2(self, *args):
         """
         * gives the corresponding parameters (U,V) if the Nth solution is situated on an Face of the second shape
 
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :param u:
         :type u: float &
         :param v:
@@ -363,11 +415,11 @@ class BRepExtrema_DistShapeShape(object):
         """
         return _BRepExtrema.BRepExtrema_DistShapeShape_ParOnFaceS2(self, *args)
 
-    def DumpToString(self) -> "std::string" :
+    def DumpToString(self):
         """DumpToString(BRepExtrema_DistShapeShape self) -> std::string"""
         return _BRepExtrema.BRepExtrema_DistShapeShape_DumpToString(self)
 
-    def SetFlag(self, *args) -> "void" :
+    def SetFlag(self, *args):
         """
         :param F:
         :type F: Extrema_ExtFlag
@@ -376,7 +428,7 @@ class BRepExtrema_DistShapeShape(object):
         """
         return _BRepExtrema.BRepExtrema_DistShapeShape_SetFlag(self, *args)
 
-    def SetAlgo(self, *args) -> "void" :
+    def SetAlgo(self, *args):
         """
         :param A:
         :type A: Extrema_ExtAlgo
@@ -385,7 +437,7 @@ class BRepExtrema_DistShapeShape(object):
         """
         return _BRepExtrema.BRepExtrema_DistShapeShape_SetAlgo(self, *args)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(BRepExtrema_DistShapeShape self)"""
         return _BRepExtrema.BRepExtrema_DistShapeShape__kill_pointed(self)
 
@@ -445,6 +497,82 @@ class BRepExtrema_DistanceSS(object):
         :type A: Extrema_ExtAlgo
         :rtype: None
 
+        * computes the distance between two Shapes ( face edge vertex).
+
+        :param S1:
+        :type S1: TopoDS_Shape &
+        :param S2:
+        :type S2: TopoDS_Shape &
+        :param B1:
+        :type B1: Bnd_Box &
+        :param B2:
+        :type B2: Bnd_Box &
+        :param DstRef:
+        :type DstRef: float
+        :param F: default value is Extrema_ExtFlag_MINMAX
+        :type F: Extrema_ExtFlag
+        :param A: default value is Extrema_ExtAlgo_Grad
+        :type A: Extrema_ExtAlgo
+        :rtype: None
+
+        * computes the distance between two Shapes ( face edge vertex).
+
+        :param S1:
+        :type S1: TopoDS_Shape &
+        :param S2:
+        :type S2: TopoDS_Shape &
+        :param B1:
+        :type B1: Bnd_Box &
+        :param B2:
+        :type B2: Bnd_Box &
+        :param DstRef:
+        :type DstRef: float
+        :param F: default value is Extrema_ExtFlag_MINMAX
+        :type F: Extrema_ExtFlag
+        :param A: default value is Extrema_ExtAlgo_Grad
+        :type A: Extrema_ExtAlgo
+        :rtype: None
+
+        * computes the distance between two Shapes ( face edge vertex). Parameter theDeflection is used to specify a maximum deviation of extreme distances from the minimum one. Default value is Precision::Confusion().
+
+        :param S1:
+        :type S1: TopoDS_Shape &
+        :param S2:
+        :type S2: TopoDS_Shape &
+        :param B1:
+        :type B1: Bnd_Box &
+        :param B2:
+        :type B2: Bnd_Box &
+        :param DstRef:
+        :type DstRef: float
+        :param aDeflection:
+        :type aDeflection: float
+        :param F: default value is Extrema_ExtFlag_MINMAX
+        :type F: Extrema_ExtFlag
+        :param A: default value is Extrema_ExtAlgo_Grad
+        :type A: Extrema_ExtAlgo
+        :rtype: None
+
+        * computes the distance between two Shapes ( face edge vertex). Parameter theDeflection is used to specify a maximum deviation of extreme distances from the minimum one. Default value is Precision::Confusion().
+
+        :param S1:
+        :type S1: TopoDS_Shape &
+        :param S2:
+        :type S2: TopoDS_Shape &
+        :param B1:
+        :type B1: Bnd_Box &
+        :param B2:
+        :type B2: Bnd_Box &
+        :param DstRef:
+        :type DstRef: float
+        :param aDeflection:
+        :type aDeflection: float
+        :param F: default value is Extrema_ExtFlag_MINMAX
+        :type F: Extrema_ExtFlag
+        :param A: default value is Extrema_ExtAlgo_Grad
+        :type A: Extrema_ExtAlgo
+        :rtype: None
+
         * computes the distance between two Shapes ( face edge vertex). Parameter theDeflection is used to specify a maximum deviation of extreme distances from the minimum one. Default value is Precision::Confusion().
 
         :param S1:
@@ -467,43 +595,43 @@ class BRepExtrema_DistanceSS(object):
 
         """
         _BRepExtrema.BRepExtrema_DistanceSS_swiginit(self,_BRepExtrema.new_BRepExtrema_DistanceSS(*args))
-    def IsDone(self, *args) -> "Standard_Boolean" :
+    def IsDone(self):
         """
         * True if the distance has been computed
 
         :rtype: bool
 
         """
-        return _BRepExtrema.BRepExtrema_DistanceSS_IsDone(self, *args)
+        return _BRepExtrema.BRepExtrema_DistanceSS_IsDone(self)
 
-    def DistValue(self, *args) -> "Standard_Real" :
+    def DistValue(self):
         """
         * returns the distance value
 
         :rtype: float
 
         """
-        return _BRepExtrema.BRepExtrema_DistanceSS_DistValue(self, *args)
+        return _BRepExtrema.BRepExtrema_DistanceSS_DistValue(self)
 
-    def Seq1Value(self, *args) -> "BRepExtrema_SeqOfSolution const &" :
+    def Seq1Value(self):
         """
         * returns the list of solutions on the first shape
 
         :rtype: BRepExtrema_SeqOfSolution
 
         """
-        return _BRepExtrema.BRepExtrema_DistanceSS_Seq1Value(self, *args)
+        return _BRepExtrema.BRepExtrema_DistanceSS_Seq1Value(self)
 
-    def Seq2Value(self, *args) -> "BRepExtrema_SeqOfSolution const &" :
+    def Seq2Value(self):
         """
         * returns the list of solutions on the second shape
 
         :rtype: BRepExtrema_SeqOfSolution
 
         """
-        return _BRepExtrema.BRepExtrema_DistanceSS_Seq2Value(self, *args)
+        return _BRepExtrema.BRepExtrema_DistanceSS_Seq2Value(self)
 
-    def SetFlag(self, *args) -> "void" :
+    def SetFlag(self, *args):
         """
         * sets the flag controlling minimum and maximum search
 
@@ -514,7 +642,7 @@ class BRepExtrema_DistanceSS(object):
         """
         return _BRepExtrema.BRepExtrema_DistanceSS_SetFlag(self, *args)
 
-    def SetAlgo(self, *args) -> "void" :
+    def SetAlgo(self, *args):
         """
         * sets the flag controlling ...
 
@@ -560,7 +688,7 @@ class BRepExtrema_ExtCC(object):
 
         """
         _BRepExtrema.BRepExtrema_ExtCC_swiginit(self,_BRepExtrema.new_BRepExtrema_ExtCC(*args))
-    def Initialize(self, *args) -> "void" :
+    def Initialize(self, *args):
         """
         :param E2:
         :type E2: TopoDS_Edge &
@@ -569,7 +697,7 @@ class BRepExtrema_ExtCC(object):
         """
         return _BRepExtrema.BRepExtrema_ExtCC_Initialize(self, *args)
 
-    def Perform(self, *args) -> "void" :
+    def Perform(self, *args):
         """
         * An exception is raised if the fields have not been initialized.
 
@@ -580,89 +708,89 @@ class BRepExtrema_ExtCC(object):
         """
         return _BRepExtrema.BRepExtrema_ExtCC_Perform(self, *args)
 
-    def IsDone(self, *args) -> "Standard_Boolean" :
+    def IsDone(self):
         """
         * True if the distances are found.
 
         :rtype: bool
 
         """
-        return _BRepExtrema.BRepExtrema_ExtCC_IsDone(self, *args)
+        return _BRepExtrema.BRepExtrema_ExtCC_IsDone(self)
 
-    def NbExt(self, *args) -> "Standard_Integer" :
+    def NbExt(self):
         """
         * Returns the number of extremum distances.
 
         :rtype: int
 
         """
-        return _BRepExtrema.BRepExtrema_ExtCC_NbExt(self, *args)
+        return _BRepExtrema.BRepExtrema_ExtCC_NbExt(self)
 
-    def IsParallel(self, *args) -> "Standard_Boolean" :
+    def IsParallel(self):
         """
         * Returns True if E1 and E2 are parallel.
 
         :rtype: bool
 
         """
-        return _BRepExtrema.BRepExtrema_ExtCC_IsParallel(self, *args)
+        return _BRepExtrema.BRepExtrema_ExtCC_IsParallel(self)
 
-    def SquareDistance(self, *args) -> "Standard_Real" :
+    def SquareDistance(self, *args):
         """
         * Returns the value of the <N>th extremum square distance.
 
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :rtype: float
 
         """
         return _BRepExtrema.BRepExtrema_ExtCC_SquareDistance(self, *args)
 
-    def ParameterOnE1(self, *args) -> "Standard_Real" :
+    def ParameterOnE1(self, *args):
         """
         * Returns the parameter on the first edge of the <N>th extremum distance.
 
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :rtype: float
 
         """
         return _BRepExtrema.BRepExtrema_ExtCC_ParameterOnE1(self, *args)
 
-    def PointOnE1(self, *args) -> "gp_Pnt" :
+    def PointOnE1(self, *args):
         """
         * Returns the Point of the <N>th extremum distance on the edge E1.
 
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :rtype: gp_Pnt
 
         """
         return _BRepExtrema.BRepExtrema_ExtCC_PointOnE1(self, *args)
 
-    def ParameterOnE2(self, *args) -> "Standard_Real" :
+    def ParameterOnE2(self, *args):
         """
         * Returns the parameter on the second edge of the <N>th extremum distance.
 
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :rtype: float
 
         """
         return _BRepExtrema.BRepExtrema_ExtCC_ParameterOnE2(self, *args)
 
-    def PointOnE2(self, *args) -> "gp_Pnt" :
+    def PointOnE2(self, *args):
         """
         * Returns the Point of the <N>th extremum distance on the edge E2.
 
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :rtype: gp_Pnt
 
         """
         return _BRepExtrema.BRepExtrema_ExtCC_PointOnE2(self, *args)
 
-    def TrimmedSquareDistances(self, *args) -> "void" :
+    def TrimmedSquareDistances(self, *args):
         """
         * if the edges is a trimmed curve, dist11 is a square distance between the point on E1 of parameter FirstParameter and the point of parameter FirstParameter on E2.
 
@@ -727,7 +855,7 @@ class BRepExtrema_ExtCF(object):
 
         """
         _BRepExtrema.BRepExtrema_ExtCF_swiginit(self,_BRepExtrema.new_BRepExtrema_ExtCF(*args))
-    def Initialize(self, *args) -> "void" :
+    def Initialize(self, *args):
         """
         :param E:
         :type E: TopoDS_Edge &
@@ -738,7 +866,7 @@ class BRepExtrema_ExtCF(object):
         """
         return _BRepExtrema.BRepExtrema_ExtCF_Initialize(self, *args)
 
-    def Perform(self, *args) -> "void" :
+    def Perform(self, *args):
         """
         * An exception is raised if the fields have not been initialized. Be careful: this method uses the Face only for classify not for the fields.
 
@@ -751,61 +879,61 @@ class BRepExtrema_ExtCF(object):
         """
         return _BRepExtrema.BRepExtrema_ExtCF_Perform(self, *args)
 
-    def IsDone(self, *args) -> "Standard_Boolean" :
+    def IsDone(self):
         """
         * True if the distances are found.
 
         :rtype: bool
 
         """
-        return _BRepExtrema.BRepExtrema_ExtCF_IsDone(self, *args)
+        return _BRepExtrema.BRepExtrema_ExtCF_IsDone(self)
 
-    def NbExt(self, *args) -> "Standard_Integer" :
+    def NbExt(self):
         """
         * Returns the number of extremum distances.
 
         :rtype: int
 
         """
-        return _BRepExtrema.BRepExtrema_ExtCF_NbExt(self, *args)
+        return _BRepExtrema.BRepExtrema_ExtCF_NbExt(self)
 
-    def SquareDistance(self, *args) -> "Standard_Real" :
+    def SquareDistance(self, *args):
         """
         * Returns the value of the <N>th extremum square distance.
 
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :rtype: float
 
         """
         return _BRepExtrema.BRepExtrema_ExtCF_SquareDistance(self, *args)
 
-    def IsParallel(self, *args) -> "Standard_Boolean" :
+    def IsParallel(self):
         """
         * Returns True if the curve is on a parallel surface.
 
         :rtype: bool
 
         """
-        return _BRepExtrema.BRepExtrema_ExtCF_IsParallel(self, *args)
+        return _BRepExtrema.BRepExtrema_ExtCF_IsParallel(self)
 
-    def ParameterOnEdge(self, *args) -> "Standard_Real" :
+    def ParameterOnEdge(self, *args):
         """
         * Returns the parameters on the Edge of the <N>th extremum distance.
 
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :rtype: float
 
         """
         return _BRepExtrema.BRepExtrema_ExtCF_ParameterOnEdge(self, *args)
 
-    def ParameterOnFace(self, *args) -> "void" :
+    def ParameterOnFace(self, *args):
         """
         * Returns the parameters on the Face of the <N>th extremum distance.
 
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :param U:
         :type U: float &
         :param V:
@@ -815,23 +943,23 @@ class BRepExtrema_ExtCF(object):
         """
         return _BRepExtrema.BRepExtrema_ExtCF_ParameterOnFace(self, *args)
 
-    def PointOnEdge(self, *args) -> "gp_Pnt" :
+    def PointOnEdge(self, *args):
         """
         * Returns the Point of the <N>th extremum distance.
 
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :rtype: gp_Pnt
 
         """
         return _BRepExtrema.BRepExtrema_ExtCF_PointOnEdge(self, *args)
 
-    def PointOnFace(self, *args) -> "gp_Pnt" :
+    def PointOnFace(self, *args):
         """
         * Returns the Point of the <N>th extremum distance.
 
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :rtype: gp_Pnt
 
         """
@@ -876,7 +1004,7 @@ class BRepExtrema_ExtFF(object):
 
         """
         _BRepExtrema.BRepExtrema_ExtFF_swiginit(self,_BRepExtrema.new_BRepExtrema_ExtFF(*args))
-    def Initialize(self, *args) -> "void" :
+    def Initialize(self, *args):
         """
         :param F2:
         :type F2: TopoDS_Face &
@@ -885,7 +1013,7 @@ class BRepExtrema_ExtFF(object):
         """
         return _BRepExtrema.BRepExtrema_ExtFF_Initialize(self, *args)
 
-    def Perform(self, *args) -> "void" :
+    def Perform(self, *args):
         """
         * An exception is raised if the fields have not been initialized. Be careful: this method uses the Face F2 only for classify, not for the fields.
 
@@ -898,50 +1026,50 @@ class BRepExtrema_ExtFF(object):
         """
         return _BRepExtrema.BRepExtrema_ExtFF_Perform(self, *args)
 
-    def IsDone(self, *args) -> "Standard_Boolean" :
+    def IsDone(self):
         """
         * True if the distances are found.
 
         :rtype: bool
 
         """
-        return _BRepExtrema.BRepExtrema_ExtFF_IsDone(self, *args)
+        return _BRepExtrema.BRepExtrema_ExtFF_IsDone(self)
 
-    def IsParallel(self, *args) -> "Standard_Boolean" :
+    def IsParallel(self):
         """
         * Returns True if the surfaces are parallel.
 
         :rtype: bool
 
         """
-        return _BRepExtrema.BRepExtrema_ExtFF_IsParallel(self, *args)
+        return _BRepExtrema.BRepExtrema_ExtFF_IsParallel(self)
 
-    def NbExt(self, *args) -> "Standard_Integer" :
+    def NbExt(self):
         """
         * Returns the number of extremum distances.
 
         :rtype: int
 
         """
-        return _BRepExtrema.BRepExtrema_ExtFF_NbExt(self, *args)
+        return _BRepExtrema.BRepExtrema_ExtFF_NbExt(self)
 
-    def SquareDistance(self, *args) -> "Standard_Real" :
+    def SquareDistance(self, *args):
         """
         * Returns the value of the <N>th extremum square distance.
 
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :rtype: float
 
         """
         return _BRepExtrema.BRepExtrema_ExtFF_SquareDistance(self, *args)
 
-    def ParameterOnFace1(self, *args) -> "void" :
+    def ParameterOnFace1(self, *args):
         """
         * Returns the parameters on the Face F1 of the <N>th extremum distance.
 
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :param U:
         :type U: float &
         :param V:
@@ -951,12 +1079,12 @@ class BRepExtrema_ExtFF(object):
         """
         return _BRepExtrema.BRepExtrema_ExtFF_ParameterOnFace1(self, *args)
 
-    def ParameterOnFace2(self, *args) -> "void" :
+    def ParameterOnFace2(self, *args):
         """
         * Returns the parameters on the Face F2 of the <N>th extremum distance.
 
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :param U:
         :type U: float &
         :param V:
@@ -966,23 +1094,23 @@ class BRepExtrema_ExtFF(object):
         """
         return _BRepExtrema.BRepExtrema_ExtFF_ParameterOnFace2(self, *args)
 
-    def PointOnFace1(self, *args) -> "gp_Pnt" :
+    def PointOnFace1(self, *args):
         """
         * Returns the Point of the <N>th extremum distance.
 
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :rtype: gp_Pnt
 
         """
         return _BRepExtrema.BRepExtrema_ExtFF_PointOnFace1(self, *args)
 
-    def PointOnFace2(self, *args) -> "gp_Pnt" :
+    def PointOnFace2(self, *args):
         """
         * Returns the Point of the <N>th extremum distance.
 
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :rtype: gp_Pnt
 
         """
@@ -1027,7 +1155,7 @@ class BRepExtrema_ExtPC(object):
 
         """
         _BRepExtrema.BRepExtrema_ExtPC_swiginit(self,_BRepExtrema.new_BRepExtrema_ExtPC(*args))
-    def Initialize(self, *args) -> "void" :
+    def Initialize(self, *args):
         """
         :param E:
         :type E: TopoDS_Edge &
@@ -1036,7 +1164,7 @@ class BRepExtrema_ExtPC(object):
         """
         return _BRepExtrema.BRepExtrema_ExtPC_Initialize(self, *args)
 
-    def Perform(self, *args) -> "void" :
+    def Perform(self, *args):
         """
         * An exception is raised if the fields have not been initialized.
 
@@ -1047,69 +1175,69 @@ class BRepExtrema_ExtPC(object):
         """
         return _BRepExtrema.BRepExtrema_ExtPC_Perform(self, *args)
 
-    def IsDone(self, *args) -> "Standard_Boolean" :
+    def IsDone(self):
         """
         * True if the distances are found.
 
         :rtype: bool
 
         """
-        return _BRepExtrema.BRepExtrema_ExtPC_IsDone(self, *args)
+        return _BRepExtrema.BRepExtrema_ExtPC_IsDone(self)
 
-    def NbExt(self, *args) -> "Standard_Integer" :
+    def NbExt(self):
         """
         * Returns the number of extremum distances.
 
         :rtype: int
 
         """
-        return _BRepExtrema.BRepExtrema_ExtPC_NbExt(self, *args)
+        return _BRepExtrema.BRepExtrema_ExtPC_NbExt(self)
 
-    def IsMin(self, *args) -> "Standard_Boolean" :
+    def IsMin(self, *args):
         """
         * Returns True if the <N>th extremum distance is a minimum.
 
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :rtype: bool
 
         """
         return _BRepExtrema.BRepExtrema_ExtPC_IsMin(self, *args)
 
-    def SquareDistance(self, *args) -> "Standard_Real" :
+    def SquareDistance(self, *args):
         """
         * Returns the value of the <N>th extremum square distance.
 
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :rtype: float
 
         """
         return _BRepExtrema.BRepExtrema_ExtPC_SquareDistance(self, *args)
 
-    def Parameter(self, *args) -> "Standard_Real" :
+    def Parameter(self, *args):
         """
         * Returns the parameter on the edge of the <N>th extremum distance.
 
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :rtype: float
 
         """
         return _BRepExtrema.BRepExtrema_ExtPC_Parameter(self, *args)
 
-    def Point(self, *args) -> "gp_Pnt" :
+    def Point(self, *args):
         """
         * Returns the Point of the <N>th extremum distance.
 
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :rtype: gp_Pnt
 
         """
         return _BRepExtrema.BRepExtrema_ExtPC_Point(self, *args)
 
-    def TrimmedSquareDistances(self, *args) -> "void" :
+    def TrimmedSquareDistances(self, *args):
         """
         * if the curve is a trimmed curve, dist1 is a square distance between <P> and the point of parameter FirstParameter <pnt1> and dist2 is a square distance between <P> and the point of parameter LastParameter <pnt2>.
 
@@ -1166,10 +1294,50 @@ class BRepExtrema_ExtPF(object):
         :type TheAlgo: Extrema_ExtAlgo
         :rtype: None
 
+        * It calculates all the distances.
+
+        :param TheVertex:
+        :type TheVertex: TopoDS_Vertex &
+        :param TheFace:
+        :type TheFace: TopoDS_Face &
+        :param TheFlag: default value is Extrema_ExtFlag_MINMAX
+        :type TheFlag: Extrema_ExtFlag
+        :param TheAlgo: default value is Extrema_ExtAlgo_Grad
+        :type TheAlgo: Extrema_ExtAlgo
+        :rtype: None
+
+        * It calculates all the distances.
+
+        :param TheVertex:
+        :type TheVertex: TopoDS_Vertex &
+        :param TheFace:
+        :type TheFace: TopoDS_Face &
+        :param TheFlag: default value is Extrema_ExtFlag_MINMAX
+        :type TheFlag: Extrema_ExtFlag
+        :param TheAlgo: default value is Extrema_ExtAlgo_Grad
+        :type TheAlgo: Extrema_ExtAlgo
+        :rtype: None
+
         """
         _BRepExtrema.BRepExtrema_ExtPF_swiginit(self,_BRepExtrema.new_BRepExtrema_ExtPF(*args))
-    def Initialize(self, *args) -> "void" :
+    def Initialize(self, *args):
         """
+        :param TheFace:
+        :type TheFace: TopoDS_Face &
+        :param TheFlag: default value is Extrema_ExtFlag_MINMAX
+        :type TheFlag: Extrema_ExtFlag
+        :param TheAlgo: default value is Extrema_ExtAlgo_Grad
+        :type TheAlgo: Extrema_ExtAlgo
+        :rtype: None
+
+        :param TheFace:
+        :type TheFace: TopoDS_Face &
+        :param TheFlag: default value is Extrema_ExtFlag_MINMAX
+        :type TheFlag: Extrema_ExtFlag
+        :param TheAlgo: default value is Extrema_ExtAlgo_Grad
+        :type TheAlgo: Extrema_ExtAlgo
+        :rtype: None
+
         :param TheFace:
         :type TheFace: TopoDS_Face &
         :param TheFlag: default value is Extrema_ExtFlag_MINMAX
@@ -1181,7 +1349,7 @@ class BRepExtrema_ExtPF(object):
         """
         return _BRepExtrema.BRepExtrema_ExtPF_Initialize(self, *args)
 
-    def Perform(self, *args) -> "void" :
+    def Perform(self, *args):
         """
         * An exception is raised if the fields have not been initialized. Be careful: this method uses the Face only for classify not for the fields.
 
@@ -1194,41 +1362,41 @@ class BRepExtrema_ExtPF(object):
         """
         return _BRepExtrema.BRepExtrema_ExtPF_Perform(self, *args)
 
-    def IsDone(self, *args) -> "Standard_Boolean" :
+    def IsDone(self):
         """
         * True if the distances are found.
 
         :rtype: bool
 
         """
-        return _BRepExtrema.BRepExtrema_ExtPF_IsDone(self, *args)
+        return _BRepExtrema.BRepExtrema_ExtPF_IsDone(self)
 
-    def NbExt(self, *args) -> "Standard_Integer" :
+    def NbExt(self):
         """
         * Returns the number of extremum distances.
 
         :rtype: int
 
         """
-        return _BRepExtrema.BRepExtrema_ExtPF_NbExt(self, *args)
+        return _BRepExtrema.BRepExtrema_ExtPF_NbExt(self)
 
-    def SquareDistance(self, *args) -> "Standard_Real" :
+    def SquareDistance(self, *args):
         """
         * Returns the value of the <N>th extremum square distance.
 
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :rtype: float
 
         """
         return _BRepExtrema.BRepExtrema_ExtPF_SquareDistance(self, *args)
 
-    def Parameter(self, *args) -> "void" :
+    def Parameter(self, *args):
         """
         * Returns the parameters on the Face of the <N>th extremum distance.
 
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :param U:
         :type U: float &
         :param V:
@@ -1238,18 +1406,18 @@ class BRepExtrema_ExtPF(object):
         """
         return _BRepExtrema.BRepExtrema_ExtPF_Parameter(self, *args)
 
-    def Point(self, *args) -> "gp_Pnt" :
+    def Point(self, *args):
         """
         * Returns the Point of the <N>th extremum distance.
 
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :rtype: gp_Pnt
 
         """
         return _BRepExtrema.BRepExtrema_ExtPF_Point(self, *args)
 
-    def SetFlag(self, *args) -> "void" :
+    def SetFlag(self, *args):
         """
         :param F:
         :type F: Extrema_ExtFlag
@@ -1258,7 +1426,7 @@ class BRepExtrema_ExtPF(object):
         """
         return _BRepExtrema.BRepExtrema_ExtPF_SetFlag(self, *args)
 
-    def SetAlgo(self, *args) -> "void" :
+    def SetAlgo(self, *args):
         """
         :param A:
         :type A: Extrema_ExtAlgo
@@ -1292,7 +1460,7 @@ class BRepExtrema_Poly(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def Distance(*args) -> "Standard_Real &" :
+    def Distance(*args):
         """
         * returns Standard_True if OK.
 
@@ -1324,7 +1492,7 @@ BRepExtrema_Poly._kill_pointed = new_instancemethod(_BRepExtrema.BRepExtrema_Pol
 BRepExtrema_Poly_swigregister = _BRepExtrema.BRepExtrema_Poly_swigregister
 BRepExtrema_Poly_swigregister(BRepExtrema_Poly)
 
-def BRepExtrema_Poly_Distance(*args) -> "Standard_Real &" :
+def BRepExtrema_Poly_Distance(*args):
   """
     * returns Standard_True if OK.
 
@@ -1394,61 +1562,61 @@ class BRepExtrema_SolutionElem(object):
 
         """
         _BRepExtrema.BRepExtrema_SolutionElem_swiginit(self,_BRepExtrema.new_BRepExtrema_SolutionElem(*args))
-    def Dist(self, *args) -> "Standard_Real" :
+    def Dist(self):
         """
         * returns the value of the minimum distance.
 
         :rtype: float
 
         """
-        return _BRepExtrema.BRepExtrema_SolutionElem_Dist(self, *args)
+        return _BRepExtrema.BRepExtrema_SolutionElem_Dist(self)
 
-    def Point(self, *args) -> "gp_Pnt const" :
+    def Point(self):
         """
         * returns the solution point.
 
         :rtype: gp_Pnt
 
         """
-        return _BRepExtrema.BRepExtrema_SolutionElem_Point(self, *args)
+        return _BRepExtrema.BRepExtrema_SolutionElem_Point(self)
 
-    def SupportKind(self, *args) -> "BRepExtrema_SupportType" :
+    def SupportKind(self):
         """
         * returns the Support type : //!	 IsVertex => The solution is a vertex. 	 IsOnEdge => The solution belongs to an Edge. 	 IsInFace => The solution is inside a Face.
 
         :rtype: BRepExtrema_SupportType
 
         """
-        return _BRepExtrema.BRepExtrema_SolutionElem_SupportKind(self, *args)
+        return _BRepExtrema.BRepExtrema_SolutionElem_SupportKind(self)
 
-    def Vertex(self, *args) -> "TopoDS_Vertex const" :
+    def Vertex(self):
         """
         * returns the vertex if the solution is a Vertex.
 
         :rtype: TopoDS_Vertex
 
         """
-        return _BRepExtrema.BRepExtrema_SolutionElem_Vertex(self, *args)
+        return _BRepExtrema.BRepExtrema_SolutionElem_Vertex(self)
 
-    def Edge(self, *args) -> "TopoDS_Edge const" :
+    def Edge(self):
         """
         * returns the vertex if the solution is an Edge.
 
         :rtype: TopoDS_Edge
 
         """
-        return _BRepExtrema.BRepExtrema_SolutionElem_Edge(self, *args)
+        return _BRepExtrema.BRepExtrema_SolutionElem_Edge(self)
 
-    def Face(self, *args) -> "TopoDS_Face const" :
+    def Face(self):
         """
         * returns the vertex if the solution is an Face.
 
         :rtype: TopoDS_Face
 
         """
-        return _BRepExtrema.BRepExtrema_SolutionElem_Face(self, *args)
+        return _BRepExtrema.BRepExtrema_SolutionElem_Face(self)
 
-    def EdgeParameter(self, *args) -> "void" :
+    def EdgeParameter(self):
         """
         * returns the parameter t if the solution is on Edge.
 
@@ -1457,9 +1625,9 @@ class BRepExtrema_SolutionElem(object):
         :rtype: None
 
         """
-        return _BRepExtrema.BRepExtrema_SolutionElem_EdgeParameter(self, *args)
+        return _BRepExtrema.BRepExtrema_SolutionElem_EdgeParameter(self)
 
-    def FaceParameter(self, *args) -> "void" :
+    def FaceParameter(self):
         """
         * returns the parameters u et v if the solution is in a Face.
 
@@ -1470,7 +1638,7 @@ class BRepExtrema_SolutionElem(object):
         :rtype: None
 
         """
-        return _BRepExtrema.BRepExtrema_SolutionElem_FaceParameter(self, *args)
+        return _BRepExtrema.BRepExtrema_SolutionElem_FaceParameter(self)
 
     def __del__(self):
     	try:

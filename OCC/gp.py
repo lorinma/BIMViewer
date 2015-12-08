@@ -146,169 +146,168 @@ gp_CompoundTrsf = _gp.gp_CompoundTrsf
 gp_Other = _gp.gp_Other
 class gp(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
+    def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def Resolution(*args) -> "Standard_Real" :
+    def Resolution():
         """
         * Parabola. Method of package gp In geometric computations, defines the tolerance criterion used to determine when two numbers can be considered equal. Many class functions use this tolerance criterion, for example, to avoid division by zero in geometric computations. In the documentation, tolerance criterion is always referred to as gp::Resolution().
 
         :rtype: float
 
         """
-        return _gp.gp_Resolution(*args)
+        return _gp.gp_Resolution()
 
     Resolution = staticmethod(Resolution)
-    def Origin(*args) -> "gp_Pnt const" :
+    def Origin():
         """
         * Identifies a Cartesian point with coordinates X = Y = Z = 0.0.0
 
         :rtype: gp_Pnt
 
         """
-        return _gp.gp_Origin(*args)
+        return _gp.gp_Origin()
 
     Origin = staticmethod(Origin)
-    def DX(*args) -> "gp_Dir const" :
+    def DX():
         """
         * Returns a unit vector with the combination (1,0,0)
 
         :rtype: gp_Dir
 
         """
-        return _gp.gp_DX(*args)
+        return _gp.gp_DX()
 
     DX = staticmethod(DX)
-    def DY(*args) -> "gp_Dir const" :
+    def DY():
         """
         * Returns a unit vector with the combination (0,1,0)
 
         :rtype: gp_Dir
 
         """
-        return _gp.gp_DY(*args)
+        return _gp.gp_DY()
 
     DY = staticmethod(DY)
-    def DZ(*args) -> "gp_Dir const" :
+    def DZ():
         """
         * Returns a unit vector with the combination (0,0,1)
 
         :rtype: gp_Dir
 
         """
-        return _gp.gp_DZ(*args)
+        return _gp.gp_DZ()
 
     DZ = staticmethod(DZ)
-    def OX(*args) -> "gp_Ax1 const" :
+    def OX():
         """
         * //!Identifies an axis where its origin is Origin and its unit vector coordinates X = 1.0, Y = Z = 0.0
 
         :rtype: gp_Ax1
 
         """
-        return _gp.gp_OX(*args)
+        return _gp.gp_OX()
 
     OX = staticmethod(OX)
-    def OY(*args) -> "gp_Ax1 const" :
+    def OY():
         """
         * //!Identifies an axis where its origin is Origin and its unit vector coordinates Y = 1.0, X = Z = 0.0
 
         :rtype: gp_Ax1
 
         """
-        return _gp.gp_OY(*args)
+        return _gp.gp_OY()
 
     OY = staticmethod(OY)
-    def OZ(*args) -> "gp_Ax1 const" :
+    def OZ():
         """
         * //!Identifies an axis where its origin is Origin and its unit vector coordinates Z = 1.0, Y = X = 0.0
 
         :rtype: gp_Ax1
 
         """
-        return _gp.gp_OZ(*args)
+        return _gp.gp_OZ()
 
     OZ = staticmethod(OZ)
-    def XOY(*args) -> "gp_Ax2 const" :
+    def XOY():
         """
         * //!Identifies a coordinate system where its origin is Origin, and its 'main Direction' and 'X Direction' coordinates Z = 1.0, X = Y =0.0 and X direction coordinates X = 1.0, Y = Z = 0.0
 
         :rtype: gp_Ax2
 
         """
-        return _gp.gp_XOY(*args)
+        return _gp.gp_XOY()
 
     XOY = staticmethod(XOY)
-    def ZOX(*args) -> "gp_Ax2 const" :
+    def ZOX():
         """
         * //!Identifies a coordinate system where its origin is Origin, and its 'main Direction' and 'X Direction' coordinates Y = 1.0, X = Z =0.0 and X direction coordinates Z = 1.0, X = Y = 0.0
 
         :rtype: gp_Ax2
 
         """
-        return _gp.gp_ZOX(*args)
+        return _gp.gp_ZOX()
 
     ZOX = staticmethod(ZOX)
-    def YOZ(*args) -> "gp_Ax2 const" :
+    def YOZ():
         """
         * //!Identifies a coordinate system where its origin is Origin, and its 'main Direction' and 'X Direction' coordinates X = 1.0, Z = Y =0.0 and X direction coordinates Y = 1.0, X = Z = 0.0 In 2D space
 
         :rtype: gp_Ax2
 
         """
-        return _gp.gp_YOZ(*args)
+        return _gp.gp_YOZ()
 
     YOZ = staticmethod(YOZ)
-    def Origin2d(*args) -> "gp_Pnt2d const" :
+    def Origin2d():
         """
         * Identifies a Cartesian point with coordinates X = Y = 0.0
 
         :rtype: gp_Pnt2d
 
         """
-        return _gp.gp_Origin2d(*args)
+        return _gp.gp_Origin2d()
 
     Origin2d = staticmethod(Origin2d)
-    def DX2d(*args) -> "gp_Dir2d const" :
+    def DX2d():
         """
         * Returns a unit vector with the combinations (1,0)
 
         :rtype: gp_Dir2d
 
         """
-        return _gp.gp_DX2d(*args)
+        return _gp.gp_DX2d()
 
     DX2d = staticmethod(DX2d)
-    def DY2d(*args) -> "gp_Dir2d const" :
+    def DY2d():
         """
         * Returns a unit vector with the combinations (0,1)
 
         :rtype: gp_Dir2d
 
         """
-        return _gp.gp_DY2d(*args)
+        return _gp.gp_DY2d()
 
     DY2d = staticmethod(DY2d)
-    def OX2d(*args) -> "gp_Ax2d const" :
+    def OX2d():
         """
         * Identifies an axis where its origin is Origin2d and its unit vector coordinates are: X = 1.0, Y = 0.0
 
         :rtype: gp_Ax2d
 
         """
-        return _gp.gp_OX2d(*args)
+        return _gp.gp_OX2d()
 
     OX2d = staticmethod(OX2d)
-    def OY2d(*args) -> "gp_Ax2d const" :
+    def OY2d():
         """
         * Identifies an axis where its origin is Origin2d and its unit vector coordinates are Y = 1.0, X = 0.0
 
         :rtype: gp_Ax2d
 
         """
-        return _gp.gp_OY2d(*args)
+        return _gp.gp_OY2d()
 
     OY2d = staticmethod(OY2d)
-    def __init__(self): 
-        _gp.gp_swiginit(self,_gp.new_gp())
     def __del__(self):
     	try:
     		self.thisown = False
@@ -321,149 +320,149 @@ gp._kill_pointed = new_instancemethod(_gp.gp__kill_pointed,None,gp)
 gp_swigregister = _gp.gp_swigregister
 gp_swigregister(gp)
 
-def gp_Resolution(*args) -> "Standard_Real" :
+def gp_Resolution():
   """
     * Parabola. Method of package gp In geometric computations, defines the tolerance criterion used to determine when two numbers can be considered equal. Many class functions use this tolerance criterion, for example, to avoid division by zero in geometric computations. In the documentation, tolerance criterion is always referred to as gp::Resolution().
 
     :rtype: float
 
     """
-  return _gp.gp_Resolution(*args)
+  return _gp.gp_Resolution()
 
-def gp_Origin(*args) -> "gp_Pnt const" :
+def gp_Origin():
   """
     * Identifies a Cartesian point with coordinates X = Y = Z = 0.0.0
 
     :rtype: gp_Pnt
 
     """
-  return _gp.gp_Origin(*args)
+  return _gp.gp_Origin()
 
-def gp_DX(*args) -> "gp_Dir const" :
+def gp_DX():
   """
     * Returns a unit vector with the combination (1,0,0)
 
     :rtype: gp_Dir
 
     """
-  return _gp.gp_DX(*args)
+  return _gp.gp_DX()
 
-def gp_DY(*args) -> "gp_Dir const" :
+def gp_DY():
   """
     * Returns a unit vector with the combination (0,1,0)
 
     :rtype: gp_Dir
 
     """
-  return _gp.gp_DY(*args)
+  return _gp.gp_DY()
 
-def gp_DZ(*args) -> "gp_Dir const" :
+def gp_DZ():
   """
     * Returns a unit vector with the combination (0,0,1)
 
     :rtype: gp_Dir
 
     """
-  return _gp.gp_DZ(*args)
+  return _gp.gp_DZ()
 
-def gp_OX(*args) -> "gp_Ax1 const" :
+def gp_OX():
   """
     * //!Identifies an axis where its origin is Origin and its unit vector coordinates X = 1.0, Y = Z = 0.0
 
     :rtype: gp_Ax1
 
     """
-  return _gp.gp_OX(*args)
+  return _gp.gp_OX()
 
-def gp_OY(*args) -> "gp_Ax1 const" :
+def gp_OY():
   """
     * //!Identifies an axis where its origin is Origin and its unit vector coordinates Y = 1.0, X = Z = 0.0
 
     :rtype: gp_Ax1
 
     """
-  return _gp.gp_OY(*args)
+  return _gp.gp_OY()
 
-def gp_OZ(*args) -> "gp_Ax1 const" :
+def gp_OZ():
   """
     * //!Identifies an axis where its origin is Origin and its unit vector coordinates Z = 1.0, Y = X = 0.0
 
     :rtype: gp_Ax1
 
     """
-  return _gp.gp_OZ(*args)
+  return _gp.gp_OZ()
 
-def gp_XOY(*args) -> "gp_Ax2 const" :
+def gp_XOY():
   """
     * //!Identifies a coordinate system where its origin is Origin, and its 'main Direction' and 'X Direction' coordinates Z = 1.0, X = Y =0.0 and X direction coordinates X = 1.0, Y = Z = 0.0
 
     :rtype: gp_Ax2
 
     """
-  return _gp.gp_XOY(*args)
+  return _gp.gp_XOY()
 
-def gp_ZOX(*args) -> "gp_Ax2 const" :
+def gp_ZOX():
   """
     * //!Identifies a coordinate system where its origin is Origin, and its 'main Direction' and 'X Direction' coordinates Y = 1.0, X = Z =0.0 and X direction coordinates Z = 1.0, X = Y = 0.0
 
     :rtype: gp_Ax2
 
     """
-  return _gp.gp_ZOX(*args)
+  return _gp.gp_ZOX()
 
-def gp_YOZ(*args) -> "gp_Ax2 const" :
+def gp_YOZ():
   """
     * //!Identifies a coordinate system where its origin is Origin, and its 'main Direction' and 'X Direction' coordinates X = 1.0, Z = Y =0.0 and X direction coordinates Y = 1.0, X = Z = 0.0 In 2D space
 
     :rtype: gp_Ax2
 
     """
-  return _gp.gp_YOZ(*args)
+  return _gp.gp_YOZ()
 
-def gp_Origin2d(*args) -> "gp_Pnt2d const" :
+def gp_Origin2d():
   """
     * Identifies a Cartesian point with coordinates X = Y = 0.0
 
     :rtype: gp_Pnt2d
 
     """
-  return _gp.gp_Origin2d(*args)
+  return _gp.gp_Origin2d()
 
-def gp_DX2d(*args) -> "gp_Dir2d const" :
+def gp_DX2d():
   """
     * Returns a unit vector with the combinations (1,0)
 
     :rtype: gp_Dir2d
 
     """
-  return _gp.gp_DX2d(*args)
+  return _gp.gp_DX2d()
 
-def gp_DY2d(*args) -> "gp_Dir2d const" :
+def gp_DY2d():
   """
     * Returns a unit vector with the combinations (0,1)
 
     :rtype: gp_Dir2d
 
     """
-  return _gp.gp_DY2d(*args)
+  return _gp.gp_DY2d()
 
-def gp_OX2d(*args) -> "gp_Ax2d const" :
+def gp_OX2d():
   """
     * Identifies an axis where its origin is Origin2d and its unit vector coordinates are: X = 1.0, Y = 0.0
 
     :rtype: gp_Ax2d
 
     """
-  return _gp.gp_OX2d(*args)
+  return _gp.gp_OX2d()
 
-def gp_OY2d(*args) -> "gp_Ax2d const" :
+def gp_OY2d():
   """
     * Identifies an axis where its origin is Origin2d and its unit vector coordinates are Y = 1.0, X = 0.0
 
     :rtype: gp_Ax2d
 
     """
-  return _gp.gp_OY2d(*args)
+  return _gp.gp_OY2d()
 
 class gp_Ax1(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
@@ -484,7 +483,7 @@ class gp_Ax1(object):
 
         """
         _gp.gp_Ax1_swiginit(self,_gp.new_gp_Ax1(*args))
-    def SetDirection(self, *args) -> "void" :
+    def SetDirection(self, *args):
         """
         * Assigns V as the 'Direction' of this axis.
 
@@ -495,7 +494,7 @@ class gp_Ax1(object):
         """
         return _gp.gp_Ax1_SetDirection(self, *args)
 
-    def SetLocation(self, *args) -> "void" :
+    def SetLocation(self, *args):
         """
         * Assigns P as the origin of this axis.
 
@@ -506,25 +505,25 @@ class gp_Ax1(object):
         """
         return _gp.gp_Ax1_SetLocation(self, *args)
 
-    def Direction(self, *args) -> "gp_Dir const" :
+    def Direction(self):
         """
         * Returns the direction of <self>.
 
         :rtype: gp_Dir
 
         """
-        return _gp.gp_Ax1_Direction(self, *args)
+        return _gp.gp_Ax1_Direction(self)
 
-    def Location(self, *args) -> "gp_Pnt const" :
+    def Location(self):
         """
         * Returns the location point of <self>.
 
         :rtype: gp_Pnt
 
         """
-        return _gp.gp_Ax1_Location(self, *args)
+        return _gp.gp_Ax1_Location(self)
 
-    def IsCoaxial(self, *args) -> "Standard_Boolean" :
+    def IsCoaxial(self, *args):
         """
         * Returns True if : . the angle between <self> and <Other> is lower or equal to <AngularTolerance> and . the distance between <self>.Location() and <Other> is lower or equal to <LinearTolerance> and . the distance between <Other>.Location() and <self> is lower or equal to LinearTolerance.
 
@@ -539,7 +538,7 @@ class gp_Ax1(object):
         """
         return _gp.gp_Ax1_IsCoaxial(self, *args)
 
-    def IsNormal(self, *args) -> "Standard_Boolean" :
+    def IsNormal(self, *args):
         """
         * Returns True if the direction of the <self> and <Other> are normal to each other. That is, if the angle between the two axes is equal to Pi/2. Note: the tolerance criterion is given by AngularTolerance..
 
@@ -552,7 +551,7 @@ class gp_Ax1(object):
         """
         return _gp.gp_Ax1_IsNormal(self, *args)
 
-    def IsOpposite(self, *args) -> "Standard_Boolean" :
+    def IsOpposite(self, *args):
         """
         * Returns True if the direction of <self> and <Other> are parallel with opposite orientation. That is, if the angle between the two axes is equal to Pi. Note: the tolerance criterion is given by AngularTolerance.
 
@@ -565,7 +564,7 @@ class gp_Ax1(object):
         """
         return _gp.gp_Ax1_IsOpposite(self, *args)
 
-    def IsParallel(self, *args) -> "Standard_Boolean" :
+    def IsParallel(self, *args):
         """
         * Returns True if the direction of <self> and <Other> are parallel with same orientation or opposite orientation. That is, if the angle between the two axes is equal to 0 or Pi. Note: the tolerance criterion is given by AngularTolerance.
 
@@ -578,7 +577,7 @@ class gp_Ax1(object):
         """
         return _gp.gp_Ax1_IsParallel(self, *args)
 
-    def Angle(self, *args) -> "Standard_Real" :
+    def Angle(self, *args):
         """
         * Computes the angular value, in radians, between <self>.Direction() and <Other>.Direction(). Returns the angle between 0 and 2*PI radians.
 
@@ -589,25 +588,25 @@ class gp_Ax1(object):
         """
         return _gp.gp_Ax1_Angle(self, *args)
 
-    def Reverse(self, *args) -> "void" :
+    def Reverse(self):
         """
         * Reverses the unit vector of this axis. and assigns the result to this axis.
 
         :rtype: None
 
         """
-        return _gp.gp_Ax1_Reverse(self, *args)
+        return _gp.gp_Ax1_Reverse(self)
 
-    def Reversed(self, *args) -> "gp_Ax1" :
+    def Reversed(self):
         """
         * Reverses the unit vector of this axis and creates a new one.
 
         :rtype: gp_Ax1
 
         """
-        return _gp.gp_Ax1_Reversed(self, *args)
+        return _gp.gp_Ax1_Reversed(self)
 
-    def Mirror(self, *args) -> "void" :
+    def Mirror(self, *args):
         """
         * Performs the symmetrical transformation of an axis placement with respect to the point P which is the center of the symmetry and assigns the result to this axis.
 
@@ -630,7 +629,7 @@ class gp_Ax1(object):
         """
         return _gp.gp_Ax1_Mirror(self, *args)
 
-    def Mirrored(self, *args) -> "gp_Ax1" :
+    def Mirrored(self, *args):
         """
         * Performs the symmetrical transformation of an axis placement with respect to the point P which is the center of the symmetry and creates a new axis.
 
@@ -653,7 +652,7 @@ class gp_Ax1(object):
         """
         return _gp.gp_Ax1_Mirrored(self, *args)
 
-    def Rotate(self, *args) -> "void" :
+    def Rotate(self, *args):
         """
         * Rotates this axis at an angle Ang (in radians) about the axis A1 and assigns the result to this axis.
 
@@ -666,7 +665,7 @@ class gp_Ax1(object):
         """
         return _gp.gp_Ax1_Rotate(self, *args)
 
-    def Rotated(self, *args) -> "gp_Ax1" :
+    def Rotated(self, *args):
         """
         * Rotates this axis at an angle Ang (in radians) about the axis A1 and creates a new one.
 
@@ -679,7 +678,7 @@ class gp_Ax1(object):
         """
         return _gp.gp_Ax1_Rotated(self, *args)
 
-    def Scale(self, *args) -> "void" :
+    def Scale(self, *args):
         """
         * Applies a scaling transformation to this axis with: - scale factor S, and - center P and assigns the result to this axis.
 
@@ -692,7 +691,7 @@ class gp_Ax1(object):
         """
         return _gp.gp_Ax1_Scale(self, *args)
 
-    def Scaled(self, *args) -> "gp_Ax1" :
+    def Scaled(self, *args):
         """
         * Applies a scaling transformation to this axis with: - scale factor S, and - center P and creates a new axis.
 
@@ -705,7 +704,7 @@ class gp_Ax1(object):
         """
         return _gp.gp_Ax1_Scaled(self, *args)
 
-    def Transform(self, *args) -> "void" :
+    def Transform(self, *args):
         """
         * Applies the transformation T to this axis. and assigns the result to this axis.
 
@@ -716,7 +715,7 @@ class gp_Ax1(object):
         """
         return _gp.gp_Ax1_Transform(self, *args)
 
-    def Transformed(self, *args) -> "gp_Ax1" :
+    def Transformed(self, *args):
         """
         * Applies the transformation T to this axis and creates a new one. Translates an axis plaxement in the direction of the vector <V>. The magnitude of the translation is the vector's magnitude.
 
@@ -727,7 +726,7 @@ class gp_Ax1(object):
         """
         return _gp.gp_Ax1_Transformed(self, *args)
 
-    def Translate(self, *args) -> "void" :
+    def Translate(self, *args):
         """
         * Translates this axis by the vector V, and assigns the result to this axis.
 
@@ -746,7 +745,7 @@ class gp_Ax1(object):
         """
         return _gp.gp_Ax1_Translate(self, *args)
 
-    def Translated(self, *args) -> "gp_Ax1" :
+    def Translated(self, *args):
         """
         * Translates this axis by the vector V, and creates a new one.
 
@@ -765,19 +764,19 @@ class gp_Ax1(object):
         """
         return _gp.gp_Ax1_Translated(self, *args)
 
-    def _CSFDB_Getgp_Ax1loc(self, *args) -> "gp_Pnt const" :
+    def _CSFDB_Getgp_Ax1loc(self):
         """
         :rtype: gp_Pnt
 
         """
-        return _gp.gp_Ax1__CSFDB_Getgp_Ax1loc(self, *args)
+        return _gp.gp_Ax1__CSFDB_Getgp_Ax1loc(self)
 
-    def _CSFDB_Getgp_Ax1vdir(self, *args) -> "gp_Dir const" :
+    def _CSFDB_Getgp_Ax1vdir(self):
         """
         :rtype: gp_Dir
 
         """
-        return _gp.gp_Ax1__CSFDB_Getgp_Ax1vdir(self, *args)
+        return _gp.gp_Ax1__CSFDB_Getgp_Ax1vdir(self)
 
     def __del__(self):
     	try:
@@ -843,7 +842,7 @@ class gp_Ax2(object):
 
         """
         _gp.gp_Ax2_swiginit(self,_gp.new_gp_Ax2(*args))
-    def SetAxis(self, *args) -> "void" :
+    def SetAxis(self, *args):
         """
         * Assigns the origin and 'main Direction' of the axis A1 to this coordinate system, then recomputes its 'X Direction' and 'Y Direction'. Note: The new 'X Direction' is computed as follows: new 'X Direction' = V1 ^(previous 'X Direction' ^ V) where V is the 'Direction' of A1. Exceptions Standard_ConstructionError if A1 is parallel to the 'X Direction' of this coordinate system.
 
@@ -854,7 +853,7 @@ class gp_Ax2(object):
         """
         return _gp.gp_Ax2_SetAxis(self, *args)
 
-    def SetDirection(self, *args) -> "void" :
+    def SetDirection(self, *args):
         """
         * Changes the 'main Direction' of this coordinate system, then recomputes its 'X Direction' and 'Y Direction'. Note: the new 'X Direction' is computed as follows: new 'X Direction' = V ^ (previous 'X Direction' ^ V) Exceptions Standard_ConstructionError if V is parallel to the 'X Direction' of this coordinate system.
 
@@ -865,7 +864,7 @@ class gp_Ax2(object):
         """
         return _gp.gp_Ax2_SetDirection(self, *args)
 
-    def SetLocation(self, *args) -> "void" :
+    def SetLocation(self, *args):
         """
         * Changes the 'Location' point (origin) of <self>.
 
@@ -876,7 +875,7 @@ class gp_Ax2(object):
         """
         return _gp.gp_Ax2_SetLocation(self, *args)
 
-    def SetXDirection(self, *args) -> "void" :
+    def SetXDirection(self, *args):
         """
         * Changes the 'Xdirection' of <self>. The main direction 'Direction' is not modified, the 'Ydirection' is modified. If <Vx> is not normal to the main direction then <XDirection> is computed as follows XDirection = Direction ^ (Vx ^ Direction). Exceptions Standard_ConstructionError if Vx or Vy is parallel to the 'main Direction' of this coordinate system.
 
@@ -887,7 +886,7 @@ class gp_Ax2(object):
         """
         return _gp.gp_Ax2_SetXDirection(self, *args)
 
-    def SetYDirection(self, *args) -> "void" :
+    def SetYDirection(self, *args):
         """
         * Changes the 'Ydirection' of <self>. The main direction is not modified but the 'Xdirection' is changed. If <Vy> is not normal to the main direction then 'YDirection' is computed as follows YDirection = Direction ^ (<Vy> ^ Direction). Exceptions Standard_ConstructionError if Vx or Vy is parallel to the 'main Direction' of this coordinate system.
 
@@ -898,7 +897,7 @@ class gp_Ax2(object):
         """
         return _gp.gp_Ax2_SetYDirection(self, *args)
 
-    def Angle(self, *args) -> "Standard_Real" :
+    def Angle(self, *args):
         """
         * Computes the angular value, in radians, between the main direction of <self> and the main direction of <Other>. Returns the angle between 0 and PI in radians.
 
@@ -909,52 +908,52 @@ class gp_Ax2(object):
         """
         return _gp.gp_Ax2_Angle(self, *args)
 
-    def Axis(self, *args) -> "gp_Ax1 const" :
+    def Axis(self):
         """
         * Returns the main axis of <self>. It is the 'Location' point and the main 'Direction'.
 
         :rtype: gp_Ax1
 
         """
-        return _gp.gp_Ax2_Axis(self, *args)
+        return _gp.gp_Ax2_Axis(self)
 
-    def Direction(self, *args) -> "gp_Dir const" :
+    def Direction(self):
         """
         * Returns the main direction of <self>.
 
         :rtype: gp_Dir
 
         """
-        return _gp.gp_Ax2_Direction(self, *args)
+        return _gp.gp_Ax2_Direction(self)
 
-    def Location(self, *args) -> "gp_Pnt const" :
+    def Location(self):
         """
         * Returns the 'Location' point (origin) of <self>.
 
         :rtype: gp_Pnt
 
         """
-        return _gp.gp_Ax2_Location(self, *args)
+        return _gp.gp_Ax2_Location(self)
 
-    def XDirection(self, *args) -> "gp_Dir const" :
+    def XDirection(self):
         """
         * Returns the 'XDirection' of <self>.
 
         :rtype: gp_Dir
 
         """
-        return _gp.gp_Ax2_XDirection(self, *args)
+        return _gp.gp_Ax2_XDirection(self)
 
-    def YDirection(self, *args) -> "gp_Dir const" :
+    def YDirection(self):
         """
         * Returns the 'YDirection' of <self>.
 
         :rtype: gp_Dir
 
         """
-        return _gp.gp_Ax2_YDirection(self, *args)
+        return _gp.gp_Ax2_YDirection(self)
 
-    def IsCoplanar(self, *args) -> "Standard_Boolean" :
+    def IsCoplanar(self, *args):
         """
         :param Other:
         :type Other: gp_Ax2
@@ -977,7 +976,7 @@ class gp_Ax2(object):
         """
         return _gp.gp_Ax2_IsCoplanar(self, *args)
 
-    def Mirror(self, *args) -> "void" :
+    def Mirror(self, *args):
         """
         * Performs a symmetrical transformation of this coordinate system with respect to: - the point P, and assigns the result to this coordinate system. Warning This transformation is always performed on the origin. In case of a reflection with respect to a point: - the main direction of the coordinate system is not changed, and - the 'X Direction' and the 'Y Direction' are simply reversed In case of a reflection with respect to an axis or a plane: - the transformation is applied to the 'X Direction' and the 'Y Direction', then - the 'main Direction' is recomputed as the cross product 'X Direction' ^ 'Y Direction'. This maintains the right-handed property of the coordinate system.
 
@@ -1000,7 +999,7 @@ class gp_Ax2(object):
         """
         return _gp.gp_Ax2_Mirror(self, *args)
 
-    def Mirrored(self, *args) -> "gp_Ax2" :
+    def Mirrored(self, *args):
         """
         * Performs a symmetrical transformation of this coordinate system with respect to: - the point P, and creates a new one. Warning This transformation is always performed on the origin. In case of a reflection with respect to a point: - the main direction of the coordinate system is not changed, and - the 'X Direction' and the 'Y Direction' are simply reversed In case of a reflection with respect to an axis or a plane: - the transformation is applied to the 'X Direction' and the 'Y Direction', then - the 'main Direction' is recomputed as the cross product 'X Direction' ^ 'Y Direction'. This maintains the right-handed property of the coordinate system.
 
@@ -1023,7 +1022,7 @@ class gp_Ax2(object):
         """
         return _gp.gp_Ax2_Mirrored(self, *args)
 
-    def Rotate(self, *args) -> "void" :
+    def Rotate(self, *args):
         """
         :param A1:
         :type A1: gp_Ax1
@@ -1034,7 +1033,7 @@ class gp_Ax2(object):
         """
         return _gp.gp_Ax2_Rotate(self, *args)
 
-    def Rotated(self, *args) -> "gp_Ax2" :
+    def Rotated(self, *args):
         """
         * Rotates an axis placement. <A1> is the axis of the rotation . Ang is the angular value of the rotation in radians.
 
@@ -1047,7 +1046,7 @@ class gp_Ax2(object):
         """
         return _gp.gp_Ax2_Rotated(self, *args)
 
-    def Scale(self, *args) -> "void" :
+    def Scale(self, *args):
         """
         :param P:
         :type P: gp_Pnt
@@ -1058,7 +1057,7 @@ class gp_Ax2(object):
         """
         return _gp.gp_Ax2_Scale(self, *args)
 
-    def Scaled(self, *args) -> "gp_Ax2" :
+    def Scaled(self, *args):
         """
         * Applies a scaling transformation on the axis placement. The 'Location' point of the axisplacement is modified. Warnings : If the scale <S> is negative : . the main direction of the axis placement is not changed. . The 'XDirection' and the 'YDirection' are reversed. So the axis placement stay right handed.
 
@@ -1071,7 +1070,7 @@ class gp_Ax2(object):
         """
         return _gp.gp_Ax2_Scaled(self, *args)
 
-    def Transform(self, *args) -> "void" :
+    def Transform(self, *args):
         """
         :param T:
         :type T: gp_Trsf
@@ -1080,7 +1079,7 @@ class gp_Ax2(object):
         """
         return _gp.gp_Ax2_Transform(self, *args)
 
-    def Transformed(self, *args) -> "gp_Ax2" :
+    def Transformed(self, *args):
         """
         * Transforms an axis placement with a Trsf. The 'Location' point, the 'XDirection' and the 'YDirection' are transformed with T. The resulting main 'Direction' of <self> is the cross product between the 'XDirection' and the 'YDirection' after transformation.
 
@@ -1091,7 +1090,7 @@ class gp_Ax2(object):
         """
         return _gp.gp_Ax2_Transformed(self, *args)
 
-    def Translate(self, *args) -> "void" :
+    def Translate(self, *args):
         """
         :param V:
         :type V: gp_Vec
@@ -1106,7 +1105,7 @@ class gp_Ax2(object):
         """
         return _gp.gp_Ax2_Translate(self, *args)
 
-    def Translated(self, *args) -> "gp_Ax2" :
+    def Translated(self, *args):
         """
         * Translates an axis plaxement in the direction of the vector <V>. The magnitude of the translation is the vector's magnitude.
 
@@ -1125,26 +1124,26 @@ class gp_Ax2(object):
         """
         return _gp.gp_Ax2_Translated(self, *args)
 
-    def _CSFDB_Getgp_Ax2axis(self, *args) -> "gp_Ax1 const" :
+    def _CSFDB_Getgp_Ax2axis(self):
         """
         :rtype: gp_Ax1
 
         """
-        return _gp.gp_Ax2__CSFDB_Getgp_Ax2axis(self, *args)
+        return _gp.gp_Ax2__CSFDB_Getgp_Ax2axis(self)
 
-    def _CSFDB_Getgp_Ax2vydir(self, *args) -> "gp_Dir const" :
+    def _CSFDB_Getgp_Ax2vydir(self):
         """
         :rtype: gp_Dir
 
         """
-        return _gp.gp_Ax2__CSFDB_Getgp_Ax2vydir(self, *args)
+        return _gp.gp_Ax2__CSFDB_Getgp_Ax2vydir(self)
 
-    def _CSFDB_Getgp_Ax2vxdir(self, *args) -> "gp_Dir const" :
+    def _CSFDB_Getgp_Ax2vxdir(self):
         """
         :rtype: gp_Dir
 
         """
-        return _gp.gp_Ax2__CSFDB_Getgp_Ax2vxdir(self, *args)
+        return _gp.gp_Ax2__CSFDB_Getgp_Ax2vxdir(self)
 
     def __del__(self):
     	try:
@@ -1212,6 +1211,24 @@ class gp_Ax22d(object):
         :type Sense: bool
         :rtype: None
 
+        * Creates - a coordinate system with origin P and 'X Direction' V, which is: - right-handed if Sense is true (default value), or - left-handed if Sense is false
+
+        :param P:
+        :type P: gp_Pnt2d
+        :param V:
+        :type V: gp_Dir2d
+        :param Sense: default value is Standard_True
+        :type Sense: bool
+        :rtype: None
+
+        * Creates - a coordinate system where its origin is the origin of A and its 'X Direction' is the unit vector of A, which is: - right-handed if Sense is true (default value), or - left-handed if Sense is false.
+
+        :param A:
+        :type A: gp_Ax2d
+        :param Sense: default value is Standard_True
+        :type Sense: bool
+        :rtype: None
+
         * Creates - a coordinate system where its origin is the origin of A and its 'X Direction' is the unit vector of A, which is: - right-handed if Sense is true (default value), or - left-handed if Sense is false.
 
         :param A:
@@ -1222,7 +1239,7 @@ class gp_Ax22d(object):
 
         """
         _gp.gp_Ax22d_swiginit(self,_gp.new_gp_Ax22d(*args))
-    def SetAxis(self, *args) -> "void" :
+    def SetAxis(self, *args):
         """
         * Assigns the origin and the two unit vectors of the coordinate system A1 to this coordinate system.
 
@@ -1233,7 +1250,7 @@ class gp_Ax22d(object):
         """
         return _gp.gp_Ax22d_SetAxis(self, *args)
 
-    def SetXAxis(self, *args) -> "void" :
+    def SetXAxis(self, *args):
         """
         * Changes the XAxis and YAxis ('Location' point and 'Direction') of <self>. The 'YDirection' is recomputed in the same sense as before.
 
@@ -1244,7 +1261,7 @@ class gp_Ax22d(object):
         """
         return _gp.gp_Ax22d_SetXAxis(self, *args)
 
-    def SetYAxis(self, *args) -> "void" :
+    def SetYAxis(self, *args):
         """
         * Changes the XAxis and YAxis ('Location' point and 'Direction') of <self>. The 'XDirection' is recomputed in the same sense as before.
 
@@ -1255,7 +1272,7 @@ class gp_Ax22d(object):
         """
         return _gp.gp_Ax22d_SetYAxis(self, *args)
 
-    def SetLocation(self, *args) -> "void" :
+    def SetLocation(self, *args):
         """
         * Changes the 'Location' point (origin) of <self>.
 
@@ -1266,7 +1283,7 @@ class gp_Ax22d(object):
         """
         return _gp.gp_Ax22d_SetLocation(self, *args)
 
-    def SetXDirection(self, *args) -> "void" :
+    def SetXDirection(self, *args):
         """
         * Assigns Vx to the 'X Direction' of this coordinate system. The other unit vector of this coordinate system is recomputed, normal to Vx , without modifying the orientation (right-handed or left-handed) of this coordinate system.
 
@@ -1277,7 +1294,7 @@ class gp_Ax22d(object):
         """
         return _gp.gp_Ax22d_SetXDirection(self, *args)
 
-    def SetYDirection(self, *args) -> "void" :
+    def SetYDirection(self, *args):
         """
         * Assignsr Vy to the 'Y Direction' of this coordinate system. The other unit vector of this coordinate system is recomputed, normal to Vy, without modifying the orientation (right-handed or left-handed) of this coordinate system.
 
@@ -1288,52 +1305,52 @@ class gp_Ax22d(object):
         """
         return _gp.gp_Ax22d_SetYDirection(self, *args)
 
-    def XAxis(self, *args) -> "gp_Ax2d" :
+    def XAxis(self):
         """
         * Returns an axis, for which - the origin is that of this coordinate system, and - the unit vector is either the 'X Direction' of this coordinate system. Note: the result is the 'X Axis' of this coordinate system.
 
         :rtype: gp_Ax2d
 
         """
-        return _gp.gp_Ax22d_XAxis(self, *args)
+        return _gp.gp_Ax22d_XAxis(self)
 
-    def YAxis(self, *args) -> "gp_Ax2d" :
+    def YAxis(self):
         """
         * Returns an axis, for which - the origin is that of this coordinate system, and - the unit vector is either the 'Y Direction' of this coordinate system. Note: the result is the 'Y Axis' of this coordinate system.
 
         :rtype: gp_Ax2d
 
         """
-        return _gp.gp_Ax22d_YAxis(self, *args)
+        return _gp.gp_Ax22d_YAxis(self)
 
-    def Location(self, *args) -> "gp_Pnt2d const" :
+    def Location(self):
         """
         * Returns the 'Location' point (origin) of <self>.
 
         :rtype: gp_Pnt2d
 
         """
-        return _gp.gp_Ax22d_Location(self, *args)
+        return _gp.gp_Ax22d_Location(self)
 
-    def XDirection(self, *args) -> "gp_Dir2d const" :
+    def XDirection(self):
         """
         * Returns the 'XDirection' of <self>.
 
         :rtype: gp_Dir2d
 
         """
-        return _gp.gp_Ax22d_XDirection(self, *args)
+        return _gp.gp_Ax22d_XDirection(self)
 
-    def YDirection(self, *args) -> "gp_Dir2d const" :
+    def YDirection(self):
         """
         * Returns the 'YDirection' of <self>.
 
         :rtype: gp_Dir2d
 
         """
-        return _gp.gp_Ax22d_YDirection(self, *args)
+        return _gp.gp_Ax22d_YDirection(self)
 
-    def Mirror(self, *args) -> "void" :
+    def Mirror(self, *args):
         """
         :param P:
         :type P: gp_Pnt2d
@@ -1346,7 +1363,7 @@ class gp_Ax22d(object):
         """
         return _gp.gp_Ax22d_Mirror(self, *args)
 
-    def Mirrored(self, *args) -> "gp_Ax22d" :
+    def Mirrored(self, *args):
         """
         * Performs the symmetrical transformation of an axis placement with respect to the point P which is the center of the symmetry. Warnings : The main direction of the axis placement is not changed. The 'XDirection' and the 'YDirection' are reversed. So the axis placement stay right handed.
 
@@ -1363,7 +1380,7 @@ class gp_Ax22d(object):
         """
         return _gp.gp_Ax22d_Mirrored(self, *args)
 
-    def Rotate(self, *args) -> "void" :
+    def Rotate(self, *args):
         """
         :param P:
         :type P: gp_Pnt2d
@@ -1374,7 +1391,7 @@ class gp_Ax22d(object):
         """
         return _gp.gp_Ax22d_Rotate(self, *args)
 
-    def Rotated(self, *args) -> "gp_Ax22d" :
+    def Rotated(self, *args):
         """
         * Rotates an axis placement. <A1> is the axis of the rotation . Ang is the angular value of the rotation in radians.
 
@@ -1387,7 +1404,7 @@ class gp_Ax22d(object):
         """
         return _gp.gp_Ax22d_Rotated(self, *args)
 
-    def Scale(self, *args) -> "void" :
+    def Scale(self, *args):
         """
         :param P:
         :type P: gp_Pnt2d
@@ -1398,7 +1415,7 @@ class gp_Ax22d(object):
         """
         return _gp.gp_Ax22d_Scale(self, *args)
 
-    def Scaled(self, *args) -> "gp_Ax22d" :
+    def Scaled(self, *args):
         """
         * Applies a scaling transformation on the axis placement. The 'Location' point of the axisplacement is modified. Warnings : If the scale <S> is negative : . the main direction of the axis placement is not changed. . The 'XDirection' and the 'YDirection' are reversed. So the axis placement stay right handed.
 
@@ -1411,7 +1428,7 @@ class gp_Ax22d(object):
         """
         return _gp.gp_Ax22d_Scaled(self, *args)
 
-    def Transform(self, *args) -> "void" :
+    def Transform(self, *args):
         """
         :param T:
         :type T: gp_Trsf2d
@@ -1420,7 +1437,7 @@ class gp_Ax22d(object):
         """
         return _gp.gp_Ax22d_Transform(self, *args)
 
-    def Transformed(self, *args) -> "gp_Ax22d" :
+    def Transformed(self, *args):
         """
         * Transforms an axis placement with a Trsf. The 'Location' point, the 'XDirection' and the 'YDirection' are transformed with T. The resulting main 'Direction' of <self> is the cross product between the 'XDirection' and the 'YDirection' after transformation.
 
@@ -1431,7 +1448,7 @@ class gp_Ax22d(object):
         """
         return _gp.gp_Ax22d_Transformed(self, *args)
 
-    def Translate(self, *args) -> "void" :
+    def Translate(self, *args):
         """
         :param V:
         :type V: gp_Vec2d
@@ -1446,7 +1463,7 @@ class gp_Ax22d(object):
         """
         return _gp.gp_Ax22d_Translate(self, *args)
 
-    def Translated(self, *args) -> "gp_Ax22d" :
+    def Translated(self, *args):
         """
         * Translates an axis plaxement in the direction of the vector <V>. The magnitude of the translation is the vector's magnitude.
 
@@ -1465,26 +1482,26 @@ class gp_Ax22d(object):
         """
         return _gp.gp_Ax22d_Translated(self, *args)
 
-    def _CSFDB_Getgp_Ax22dpoint(self, *args) -> "gp_Pnt2d const" :
+    def _CSFDB_Getgp_Ax22dpoint(self):
         """
         :rtype: gp_Pnt2d
 
         """
-        return _gp.gp_Ax22d__CSFDB_Getgp_Ax22dpoint(self, *args)
+        return _gp.gp_Ax22d__CSFDB_Getgp_Ax22dpoint(self)
 
-    def _CSFDB_Getgp_Ax22dvydir(self, *args) -> "gp_Dir2d const" :
+    def _CSFDB_Getgp_Ax22dvydir(self):
         """
         :rtype: gp_Dir2d
 
         """
-        return _gp.gp_Ax22d__CSFDB_Getgp_Ax22dvydir(self, *args)
+        return _gp.gp_Ax22d__CSFDB_Getgp_Ax22dvydir(self)
 
-    def _CSFDB_Getgp_Ax22dvxdir(self, *args) -> "gp_Dir2d const" :
+    def _CSFDB_Getgp_Ax22dvxdir(self):
         """
         :rtype: gp_Dir2d
 
         """
-        return _gp.gp_Ax22d__CSFDB_Getgp_Ax22dvxdir(self, *args)
+        return _gp.gp_Ax22d__CSFDB_Getgp_Ax22dvxdir(self)
 
     def __del__(self):
     	try:
@@ -1541,7 +1558,7 @@ class gp_Ax2d(object):
 
         """
         _gp.gp_Ax2d_swiginit(self,_gp.new_gp_Ax2d(*args))
-    def SetLocation(self, *args) -> "void" :
+    def SetLocation(self, *args):
         """
         * Changes the 'Location' point (origin) of <self>.
 
@@ -1552,7 +1569,7 @@ class gp_Ax2d(object):
         """
         return _gp.gp_Ax2d_SetLocation(self, *args)
 
-    def SetDirection(self, *args) -> "void" :
+    def SetDirection(self, *args):
         """
         * Changes the direction of <self>.
 
@@ -1563,25 +1580,25 @@ class gp_Ax2d(object):
         """
         return _gp.gp_Ax2d_SetDirection(self, *args)
 
-    def Location(self, *args) -> "gp_Pnt2d const" :
+    def Location(self):
         """
         * Returns the origin of <self>.
 
         :rtype: gp_Pnt2d
 
         """
-        return _gp.gp_Ax2d_Location(self, *args)
+        return _gp.gp_Ax2d_Location(self)
 
-    def Direction(self, *args) -> "gp_Dir2d const" :
+    def Direction(self):
         """
         * Returns the direction of <self>.
 
         :rtype: gp_Dir2d
 
         """
-        return _gp.gp_Ax2d_Direction(self, *args)
+        return _gp.gp_Ax2d_Direction(self)
 
-    def IsCoaxial(self, *args) -> "Standard_Boolean" :
+    def IsCoaxial(self, *args):
         """
         * Returns True if : . the angle between <self> and <Other> is lower or equal to <AngularTolerance> and . the distance between <self>.Location() and <Other> is lower or equal to <LinearTolerance> and . the distance between <Other>.Location() and <self> is lower or equal to LinearTolerance.
 
@@ -1596,7 +1613,7 @@ class gp_Ax2d(object):
         """
         return _gp.gp_Ax2d_IsCoaxial(self, *args)
 
-    def IsNormal(self, *args) -> "Standard_Boolean" :
+    def IsNormal(self, *args):
         """
         * Returns true if this axis and the axis Other are normal to each other. That is, if the angle between the two axes is equal to Pi/2 or -Pi/2. Note: the tolerance criterion is given by AngularTolerance.
 
@@ -1609,7 +1626,7 @@ class gp_Ax2d(object):
         """
         return _gp.gp_Ax2d_IsNormal(self, *args)
 
-    def IsOpposite(self, *args) -> "Standard_Boolean" :
+    def IsOpposite(self, *args):
         """
         * Returns true if this axis and the axis Other are parallel, and have opposite orientations. That is, if the angle between the two axes is equal to Pi or -Pi. Note: the tolerance criterion is given by AngularTolerance.
 
@@ -1622,7 +1639,7 @@ class gp_Ax2d(object):
         """
         return _gp.gp_Ax2d_IsOpposite(self, *args)
 
-    def IsParallel(self, *args) -> "Standard_Boolean" :
+    def IsParallel(self, *args):
         """
         * Returns true if this axis and the axis Other are parallel, and have either the same or opposite orientations. That is, if the angle between the two axes is equal to 0, Pi or -Pi. Note: the tolerance criterion is given by AngularTolerance.
 
@@ -1635,7 +1652,7 @@ class gp_Ax2d(object):
         """
         return _gp.gp_Ax2d_IsParallel(self, *args)
 
-    def Angle(self, *args) -> "Standard_Real" :
+    def Angle(self, *args):
         """
         * Computes the angle, in radians, between this axis and the axis Other. The value of the angle is between -Pi and Pi.
 
@@ -1646,25 +1663,25 @@ class gp_Ax2d(object):
         """
         return _gp.gp_Ax2d_Angle(self, *args)
 
-    def Reverse(self, *args) -> "void" :
+    def Reverse(self):
         """
         * Reverses the direction of <self> and assigns the result to this axis.
 
         :rtype: None
 
         """
-        return _gp.gp_Ax2d_Reverse(self, *args)
+        return _gp.gp_Ax2d_Reverse(self)
 
-    def Reversed(self, *args) -> "gp_Ax2d" :
+    def Reversed(self):
         """
         * Computes a new axis placement with a direction opposite to the direction of <self>.
 
         :rtype: gp_Ax2d
 
         """
-        return _gp.gp_Ax2d_Reversed(self, *args)
+        return _gp.gp_Ax2d_Reversed(self)
 
-    def Mirror(self, *args) -> "void" :
+    def Mirror(self, *args):
         """
         :param P:
         :type P: gp_Pnt2d
@@ -1677,7 +1694,7 @@ class gp_Ax2d(object):
         """
         return _gp.gp_Ax2d_Mirror(self, *args)
 
-    def Mirrored(self, *args) -> "gp_Ax2d" :
+    def Mirrored(self, *args):
         """
         * Performs the symmetrical transformation of an axis placement with respect to the point P which is the center of the symmetry.
 
@@ -1694,7 +1711,7 @@ class gp_Ax2d(object):
         """
         return _gp.gp_Ax2d_Mirrored(self, *args)
 
-    def Rotate(self, *args) -> "void" :
+    def Rotate(self, *args):
         """
         :param P:
         :type P: gp_Pnt2d
@@ -1705,7 +1722,7 @@ class gp_Ax2d(object):
         """
         return _gp.gp_Ax2d_Rotate(self, *args)
 
-    def Rotated(self, *args) -> "gp_Ax2d" :
+    def Rotated(self, *args):
         """
         * Rotates an axis placement. <P> is the center of the rotation . Ang is the angular value of the rotation in radians.
 
@@ -1718,7 +1735,7 @@ class gp_Ax2d(object):
         """
         return _gp.gp_Ax2d_Rotated(self, *args)
 
-    def Scale(self, *args) -> "void" :
+    def Scale(self, *args):
         """
         :param P:
         :type P: gp_Pnt2d
@@ -1729,7 +1746,7 @@ class gp_Ax2d(object):
         """
         return _gp.gp_Ax2d_Scale(self, *args)
 
-    def Scaled(self, *args) -> "gp_Ax2d" :
+    def Scaled(self, *args):
         """
         * Applies a scaling transformation on the axis placement. The 'Location' point of the axisplacement is modified. The 'Direction' is reversed if the scale is negative.
 
@@ -1742,7 +1759,7 @@ class gp_Ax2d(object):
         """
         return _gp.gp_Ax2d_Scaled(self, *args)
 
-    def Transform(self, *args) -> "void" :
+    def Transform(self, *args):
         """
         :param T:
         :type T: gp_Trsf2d
@@ -1751,7 +1768,7 @@ class gp_Ax2d(object):
         """
         return _gp.gp_Ax2d_Transform(self, *args)
 
-    def Transformed(self, *args) -> "gp_Ax2d" :
+    def Transformed(self, *args):
         """
         * Transforms an axis placement with a Trsf.
 
@@ -1762,7 +1779,7 @@ class gp_Ax2d(object):
         """
         return _gp.gp_Ax2d_Transformed(self, *args)
 
-    def Translate(self, *args) -> "void" :
+    def Translate(self, *args):
         """
         :param V:
         :type V: gp_Vec2d
@@ -1777,7 +1794,7 @@ class gp_Ax2d(object):
         """
         return _gp.gp_Ax2d_Translate(self, *args)
 
-    def Translated(self, *args) -> "gp_Ax2d" :
+    def Translated(self, *args):
         """
         * Translates an axis placement in the direction of the vector <V>. The magnitude of the translation is the vector's magnitude.
 
@@ -1796,19 +1813,19 @@ class gp_Ax2d(object):
         """
         return _gp.gp_Ax2d_Translated(self, *args)
 
-    def _CSFDB_Getgp_Ax2dloc(self, *args) -> "gp_Pnt2d const" :
+    def _CSFDB_Getgp_Ax2dloc(self):
         """
         :rtype: gp_Pnt2d
 
         """
-        return _gp.gp_Ax2d__CSFDB_Getgp_Ax2dloc(self, *args)
+        return _gp.gp_Ax2d__CSFDB_Getgp_Ax2dloc(self)
 
-    def _CSFDB_Getgp_Ax2dvdir(self, *args) -> "gp_Dir2d const" :
+    def _CSFDB_Getgp_Ax2dvdir(self):
         """
         :rtype: gp_Dir2d
 
         """
-        return _gp.gp_Ax2d__CSFDB_Getgp_Ax2dvdir(self, *args)
+        return _gp.gp_Ax2d__CSFDB_Getgp_Ax2dvdir(self)
 
     def __del__(self):
     	try:
@@ -1880,34 +1897,34 @@ class gp_Ax3(object):
 
         """
         _gp.gp_Ax3_swiginit(self,_gp.new_gp_Ax3(*args))
-    def XReverse(self, *args) -> "void" :
+    def XReverse(self):
         """
         * Reverses the X direction of <self>.
 
         :rtype: None
 
         """
-        return _gp.gp_Ax3_XReverse(self, *args)
+        return _gp.gp_Ax3_XReverse(self)
 
-    def YReverse(self, *args) -> "void" :
+    def YReverse(self):
         """
         * Reverses the Y direction of <self>.
 
         :rtype: None
 
         """
-        return _gp.gp_Ax3_YReverse(self, *args)
+        return _gp.gp_Ax3_YReverse(self)
 
-    def ZReverse(self, *args) -> "void" :
+    def ZReverse(self):
         """
         * Reverses the Z direction of <self>.
 
         :rtype: None
 
         """
-        return _gp.gp_Ax3_ZReverse(self, *args)
+        return _gp.gp_Ax3_ZReverse(self)
 
-    def SetAxis(self, *args) -> "void" :
+    def SetAxis(self, *args):
         """
         * Assigns the origin and 'main Direction' of the axis A1 to this coordinate system, then recomputes its 'X Direction' and 'Y Direction'. Note: - The new 'X Direction' is computed as follows: new 'X Direction' = V1 ^(previous 'X Direction' ^ V) where V is the 'Direction' of A1. - The orientation of this coordinate system (right-handed or left-handed) is not modified. Raises ConstructionError if the 'Direction' of <A1> and the 'XDirection' of <self> are parallel (same or opposite orientation) because it is impossible to calculate the new 'XDirection' and the new 'YDirection'.
 
@@ -1918,7 +1935,7 @@ class gp_Ax3(object):
         """
         return _gp.gp_Ax3_SetAxis(self, *args)
 
-    def SetDirection(self, *args) -> "void" :
+    def SetDirection(self, *args):
         """
         * Changes the main direction of this coordinate system, then recomputes its 'X Direction' and 'Y Direction'. Note: - The new 'X Direction' is computed as follows: new 'X Direction' = V ^ (previous 'X Direction' ^ V). - The orientation of this coordinate system (left- or right-handed) is not modified. Raises ConstructionError if <V< and the previous 'XDirection' are parallel because it is impossible to calculate the new 'XDirection' and the new 'YDirection'.
 
@@ -1929,7 +1946,7 @@ class gp_Ax3(object):
         """
         return _gp.gp_Ax3_SetDirection(self, *args)
 
-    def SetLocation(self, *args) -> "void" :
+    def SetLocation(self, *args):
         """
         * Changes the 'Location' point (origin) of <self>.
 
@@ -1940,7 +1957,7 @@ class gp_Ax3(object):
         """
         return _gp.gp_Ax3_SetLocation(self, *args)
 
-    def SetXDirection(self, *args) -> "void" :
+    def SetXDirection(self, *args):
         """
         * Changes the 'Xdirection' of <self>. The main direction 'Direction' is not modified, the 'Ydirection' is modified. If <Vx> is not normal to the main direction then <XDirection> is computed as follows XDirection = Direction ^ (Vx ^ Direction). Raises ConstructionError if <Vx> is parallel (same or opposite orientation) to the main direction of <self>
 
@@ -1951,7 +1968,7 @@ class gp_Ax3(object):
         """
         return _gp.gp_Ax3_SetXDirection(self, *args)
 
-    def SetYDirection(self, *args) -> "void" :
+    def SetYDirection(self, *args):
         """
         * Changes the 'Ydirection' of <self>. The main direction is not modified but the 'Xdirection' is changed. If <Vy> is not normal to the main direction then 'YDirection' is computed as follows YDirection = Direction ^ (<Vy> ^ Direction). Raises ConstructionError if <Vy> is parallel to the main direction of <self>
 
@@ -1962,7 +1979,7 @@ class gp_Ax3(object):
         """
         return _gp.gp_Ax3_SetYDirection(self, *args)
 
-    def Angle(self, *args) -> "Standard_Real" :
+    def Angle(self, *args):
         """
         * Computes the angular value between the main direction of <self> and the main direction of <Other>. Returns the angle between 0 and PI in radians.
 
@@ -1973,70 +1990,70 @@ class gp_Ax3(object):
         """
         return _gp.gp_Ax3_Angle(self, *args)
 
-    def Axis(self, *args) -> "gp_Ax1 const" :
+    def Axis(self):
         """
         * Returns the main axis of <self>. It is the 'Location' point and the main 'Direction'.
 
         :rtype: gp_Ax1
 
         """
-        return _gp.gp_Ax3_Axis(self, *args)
+        return _gp.gp_Ax3_Axis(self)
 
-    def Ax2(self, *args) -> "gp_Ax2" :
+    def Ax2(self):
         """
         * Computes a right-handed coordinate system with the same 'X Direction' and 'Y Direction' as those of this coordinate system, then recomputes the 'main Direction'. If this coordinate system is right-handed, the result returned is the same coordinate system. If this coordinate system is left-handed, the result is reversed.
 
         :rtype: gp_Ax2
 
         """
-        return _gp.gp_Ax3_Ax2(self, *args)
+        return _gp.gp_Ax3_Ax2(self)
 
-    def Direction(self, *args) -> "gp_Dir const" :
+    def Direction(self):
         """
         * Returns the main direction of <self>.
 
         :rtype: gp_Dir
 
         """
-        return _gp.gp_Ax3_Direction(self, *args)
+        return _gp.gp_Ax3_Direction(self)
 
-    def Location(self, *args) -> "gp_Pnt const" :
+    def Location(self):
         """
         * Returns the 'Location' point (origin) of <self>.
 
         :rtype: gp_Pnt
 
         """
-        return _gp.gp_Ax3_Location(self, *args)
+        return _gp.gp_Ax3_Location(self)
 
-    def XDirection(self, *args) -> "gp_Dir const" :
+    def XDirection(self):
         """
         * Returns the 'XDirection' of <self>.
 
         :rtype: gp_Dir
 
         """
-        return _gp.gp_Ax3_XDirection(self, *args)
+        return _gp.gp_Ax3_XDirection(self)
 
-    def YDirection(self, *args) -> "gp_Dir const" :
+    def YDirection(self):
         """
         * Returns the 'YDirection' of <self>.
 
         :rtype: gp_Dir
 
         """
-        return _gp.gp_Ax3_YDirection(self, *args)
+        return _gp.gp_Ax3_YDirection(self)
 
-    def Direct(self, *args) -> "Standard_Boolean" :
+    def Direct(self):
         """
         * Returns True if the coordinate system is right-handed. i.e. XDirection().Crossed(YDirection()).Dot(Direction()) > 0
 
         :rtype: bool
 
         """
-        return _gp.gp_Ax3_Direct(self, *args)
+        return _gp.gp_Ax3_Direct(self)
 
-    def IsCoplanar(self, *args) -> "Standard_Boolean" :
+    def IsCoplanar(self, *args):
         """
         * Returns True if . the distance between the 'Location' point of <self> and <Other> is lower or equal to LinearTolerance and . the distance between the 'Location' point of <Other> and <self> is lower or equal to LinearTolerance and . the main direction of <self> and the main direction of <Other> are parallel (same or opposite orientation).
 
@@ -2061,7 +2078,7 @@ class gp_Ax3(object):
         """
         return _gp.gp_Ax3_IsCoplanar(self, *args)
 
-    def Mirror(self, *args) -> "void" :
+    def Mirror(self, *args):
         """
         :param P:
         :type P: gp_Pnt
@@ -2078,7 +2095,7 @@ class gp_Ax3(object):
         """
         return _gp.gp_Ax3_Mirror(self, *args)
 
-    def Mirrored(self, *args) -> "gp_Ax3" :
+    def Mirrored(self, *args):
         """
         * Performs the symmetrical transformation of an axis placement with respect to the point P which is the center of the symmetry. Warnings : The main direction of the axis placement is not changed. The 'XDirection' and the 'YDirection' are reversed. So the axis placement stay right handed.
 
@@ -2101,7 +2118,7 @@ class gp_Ax3(object):
         """
         return _gp.gp_Ax3_Mirrored(self, *args)
 
-    def Rotate(self, *args) -> "void" :
+    def Rotate(self, *args):
         """
         :param A1:
         :type A1: gp_Ax1
@@ -2112,7 +2129,7 @@ class gp_Ax3(object):
         """
         return _gp.gp_Ax3_Rotate(self, *args)
 
-    def Rotated(self, *args) -> "gp_Ax3" :
+    def Rotated(self, *args):
         """
         * Rotates an axis placement. <A1> is the axis of the rotation . Ang is the angular value of the rotation in radians.
 
@@ -2125,7 +2142,7 @@ class gp_Ax3(object):
         """
         return _gp.gp_Ax3_Rotated(self, *args)
 
-    def Scale(self, *args) -> "void" :
+    def Scale(self, *args):
         """
         :param P:
         :type P: gp_Pnt
@@ -2136,7 +2153,7 @@ class gp_Ax3(object):
         """
         return _gp.gp_Ax3_Scale(self, *args)
 
-    def Scaled(self, *args) -> "gp_Ax3" :
+    def Scaled(self, *args):
         """
         * Applies a scaling transformation on the axis placement. The 'Location' point of the axisplacement is modified. Warnings : If the scale <S> is negative : . the main direction of the axis placement is not changed. . The 'XDirection' and the 'YDirection' are reversed. So the axis placement stay right handed.
 
@@ -2149,7 +2166,7 @@ class gp_Ax3(object):
         """
         return _gp.gp_Ax3_Scaled(self, *args)
 
-    def Transform(self, *args) -> "void" :
+    def Transform(self, *args):
         """
         :param T:
         :type T: gp_Trsf
@@ -2158,7 +2175,7 @@ class gp_Ax3(object):
         """
         return _gp.gp_Ax3_Transform(self, *args)
 
-    def Transformed(self, *args) -> "gp_Ax3" :
+    def Transformed(self, *args):
         """
         * Transforms an axis placement with a Trsf. The 'Location' point, the 'XDirection' and the 'YDirection' are transformed with T. The resulting main 'Direction' of <self> is the cross product between the 'XDirection' and the 'YDirection' after transformation.
 
@@ -2169,7 +2186,7 @@ class gp_Ax3(object):
         """
         return _gp.gp_Ax3_Transformed(self, *args)
 
-    def Translate(self, *args) -> "void" :
+    def Translate(self, *args):
         """
         :param V:
         :type V: gp_Vec
@@ -2184,7 +2201,7 @@ class gp_Ax3(object):
         """
         return _gp.gp_Ax3_Translate(self, *args)
 
-    def Translated(self, *args) -> "gp_Ax3" :
+    def Translated(self, *args):
         """
         * Translates an axis plaxement in the direction of the vector <V>. The magnitude of the translation is the vector's magnitude.
 
@@ -2203,26 +2220,26 @@ class gp_Ax3(object):
         """
         return _gp.gp_Ax3_Translated(self, *args)
 
-    def _CSFDB_Getgp_Ax3axis(self, *args) -> "gp_Ax1 const" :
+    def _CSFDB_Getgp_Ax3axis(self):
         """
         :rtype: gp_Ax1
 
         """
-        return _gp.gp_Ax3__CSFDB_Getgp_Ax3axis(self, *args)
+        return _gp.gp_Ax3__CSFDB_Getgp_Ax3axis(self)
 
-    def _CSFDB_Getgp_Ax3vydir(self, *args) -> "gp_Dir const" :
+    def _CSFDB_Getgp_Ax3vydir(self):
         """
         :rtype: gp_Dir
 
         """
-        return _gp.gp_Ax3__CSFDB_Getgp_Ax3vydir(self, *args)
+        return _gp.gp_Ax3__CSFDB_Getgp_Ax3vydir(self)
 
-    def _CSFDB_Getgp_Ax3vxdir(self, *args) -> "gp_Dir const" :
+    def _CSFDB_Getgp_Ax3vxdir(self):
         """
         :rtype: gp_Dir
 
         """
-        return _gp.gp_Ax3__CSFDB_Getgp_Ax3vxdir(self, *args)
+        return _gp.gp_Ax3__CSFDB_Getgp_Ax3vxdir(self)
 
     def __del__(self):
     	try:
@@ -2285,7 +2302,7 @@ class gp_Circ(object):
 
         """
         _gp.gp_Circ_swiginit(self,_gp.new_gp_Circ(*args))
-    def SetAxis(self, *args) -> "void" :
+    def SetAxis(self, *args):
         """
         * Changes the main axis of the circle. It is the axis perpendicular to the plane of the circle. Raises ConstructionError if the direction of A1 is parallel to the 'XAxis' of the circle.
 
@@ -2296,7 +2313,7 @@ class gp_Circ(object):
         """
         return _gp.gp_Circ_SetAxis(self, *args)
 
-    def SetLocation(self, *args) -> "void" :
+    def SetLocation(self, *args):
         """
         * Changes the 'Location' point (center) of the circle.
 
@@ -2307,7 +2324,7 @@ class gp_Circ(object):
         """
         return _gp.gp_Circ_SetLocation(self, *args)
 
-    def SetPosition(self, *args) -> "void" :
+    def SetPosition(self, *args):
         """
         * Changes the position of the circle.
 
@@ -2318,7 +2335,7 @@ class gp_Circ(object):
         """
         return _gp.gp_Circ_SetPosition(self, *args)
 
-    def SetRadius(self, *args) -> "void" :
+    def SetRadius(self, *args):
         """
         * Modifies the radius of this circle. Warning. This class does not prevent the creation of a circle where Radius is null. Exceptions Standard_ConstructionError if Radius is negative.
 
@@ -2329,79 +2346,79 @@ class gp_Circ(object):
         """
         return _gp.gp_Circ_SetRadius(self, *args)
 
-    def Area(self, *args) -> "Standard_Real" :
+    def Area(self):
         """
         * Computes the area of the circle.
 
         :rtype: float
 
         """
-        return _gp.gp_Circ_Area(self, *args)
+        return _gp.gp_Circ_Area(self)
 
-    def Axis(self, *args) -> "gp_Ax1 const" :
+    def Axis(self):
         """
         * Returns the main axis of the circle. It is the axis perpendicular to the plane of the circle, passing through the 'Location' point (center) of the circle.
 
         :rtype: gp_Ax1
 
         """
-        return _gp.gp_Circ_Axis(self, *args)
+        return _gp.gp_Circ_Axis(self)
 
-    def Length(self, *args) -> "Standard_Real" :
+    def Length(self):
         """
         * Computes the circumference of the circle.
 
         :rtype: float
 
         """
-        return _gp.gp_Circ_Length(self, *args)
+        return _gp.gp_Circ_Length(self)
 
-    def Location(self, *args) -> "gp_Pnt const" :
+    def Location(self):
         """
         * Returns the center of the circle. It is the 'Location' point of the local coordinate system of the circle
 
         :rtype: gp_Pnt
 
         """
-        return _gp.gp_Circ_Location(self, *args)
+        return _gp.gp_Circ_Location(self)
 
-    def Position(self, *args) -> "gp_Ax2 const" :
+    def Position(self):
         """
         * Returns the position of the circle. It is the local coordinate system of the circle.
 
         :rtype: gp_Ax2
 
         """
-        return _gp.gp_Circ_Position(self, *args)
+        return _gp.gp_Circ_Position(self)
 
-    def Radius(self, *args) -> "Standard_Real" :
+    def Radius(self):
         """
         * Returns the radius of this circle.
 
         :rtype: float
 
         """
-        return _gp.gp_Circ_Radius(self, *args)
+        return _gp.gp_Circ_Radius(self)
 
-    def XAxis(self, *args) -> "gp_Ax1" :
+    def XAxis(self):
         """
         * Returns the 'XAxis' of the circle. This axis is perpendicular to the axis of the conic. This axis and the 'Yaxis' define the plane of the conic.
 
         :rtype: gp_Ax1
 
         """
-        return _gp.gp_Circ_XAxis(self, *args)
+        return _gp.gp_Circ_XAxis(self)
 
-    def YAxis(self, *args) -> "gp_Ax1" :
+    def YAxis(self):
         """
         * Returns the 'YAxis' of the circle. This axis and the 'Xaxis' define the plane of the conic. The 'YAxis' is perpendicular to the 'Xaxis'.
 
         :rtype: gp_Ax1
 
         """
-        return _gp.gp_Circ_YAxis(self, *args)
+        return _gp.gp_Circ_YAxis(self)
 
-    def Distance(self, *args) -> "Standard_Real" :
+    def Distance(self, *args):
         """
         * Computes the minimum of distance between the point P and any point on the circumference of the circle.
 
@@ -2412,7 +2429,7 @@ class gp_Circ(object):
         """
         return _gp.gp_Circ_Distance(self, *args)
 
-    def SquareDistance(self, *args) -> "Standard_Real" :
+    def SquareDistance(self, *args):
         """
         * Computes the square distance between <self> and the point P.
 
@@ -2423,7 +2440,7 @@ class gp_Circ(object):
         """
         return _gp.gp_Circ_SquareDistance(self, *args)
 
-    def Contains(self, *args) -> "Standard_Boolean" :
+    def Contains(self, *args):
         """
         * Returns True if the point P is on the circumference. The distance between <self> and <P> must be lower or equal to LinearTolerance.
 
@@ -2436,7 +2453,7 @@ class gp_Circ(object):
         """
         return _gp.gp_Circ_Contains(self, *args)
 
-    def Mirror(self, *args) -> "void" :
+    def Mirror(self, *args):
         """
         :param P:
         :type P: gp_Pnt
@@ -2453,7 +2470,7 @@ class gp_Circ(object):
         """
         return _gp.gp_Circ_Mirror(self, *args)
 
-    def Mirrored(self, *args) -> "gp_Circ" :
+    def Mirrored(self, *args):
         """
         * Performs the symmetrical transformation of a circle with respect to the point P which is the center of the symmetry.
 
@@ -2476,7 +2493,7 @@ class gp_Circ(object):
         """
         return _gp.gp_Circ_Mirrored(self, *args)
 
-    def Rotate(self, *args) -> "void" :
+    def Rotate(self, *args):
         """
         :param A1:
         :type A1: gp_Ax1
@@ -2487,7 +2504,7 @@ class gp_Circ(object):
         """
         return _gp.gp_Circ_Rotate(self, *args)
 
-    def Rotated(self, *args) -> "gp_Circ" :
+    def Rotated(self, *args):
         """
         * Rotates a circle. A1 is the axis of the rotation. Ang is the angular value of the rotation in radians.
 
@@ -2500,7 +2517,7 @@ class gp_Circ(object):
         """
         return _gp.gp_Circ_Rotated(self, *args)
 
-    def Scale(self, *args) -> "void" :
+    def Scale(self, *args):
         """
         :param P:
         :type P: gp_Pnt
@@ -2511,7 +2528,7 @@ class gp_Circ(object):
         """
         return _gp.gp_Circ_Scale(self, *args)
 
-    def Scaled(self, *args) -> "gp_Circ" :
+    def Scaled(self, *args):
         """
         * Scales a circle. S is the scaling value. Warnings : If S is negative the radius stay positive but the 'XAxis' and the 'YAxis' are reversed as for an ellipse.
 
@@ -2524,7 +2541,7 @@ class gp_Circ(object):
         """
         return _gp.gp_Circ_Scaled(self, *args)
 
-    def Transform(self, *args) -> "void" :
+    def Transform(self, *args):
         """
         :param T:
         :type T: gp_Trsf
@@ -2533,7 +2550,7 @@ class gp_Circ(object):
         """
         return _gp.gp_Circ_Transform(self, *args)
 
-    def Transformed(self, *args) -> "gp_Circ" :
+    def Transformed(self, *args):
         """
         * Transforms a circle with the transformation T from class Trsf.
 
@@ -2544,7 +2561,7 @@ class gp_Circ(object):
         """
         return _gp.gp_Circ_Transformed(self, *args)
 
-    def Translate(self, *args) -> "void" :
+    def Translate(self, *args):
         """
         :param V:
         :type V: gp_Vec
@@ -2559,7 +2576,7 @@ class gp_Circ(object):
         """
         return _gp.gp_Circ_Translate(self, *args)
 
-    def Translated(self, *args) -> "gp_Circ" :
+    def Translated(self, *args):
         """
         * Translates a circle in the direction of the vector V. The magnitude of the translation is the vector's magnitude.
 
@@ -2578,21 +2595,21 @@ class gp_Circ(object):
         """
         return _gp.gp_Circ_Translated(self, *args)
 
-    def _CSFDB_Getgp_Circpos(self, *args) -> "gp_Ax2 const" :
+    def _CSFDB_Getgp_Circpos(self):
         """
         :rtype: gp_Ax2
 
         """
-        return _gp.gp_Circ__CSFDB_Getgp_Circpos(self, *args)
+        return _gp.gp_Circ__CSFDB_Getgp_Circpos(self)
 
-    def _CSFDB_Getgp_Circradius(self, *args) -> "Standard_Real" :
+    def _CSFDB_Getgp_Circradius(self):
         """
         :rtype: float
 
         """
-        return _gp.gp_Circ__CSFDB_Getgp_Circradius(self, *args)
+        return _gp.gp_Circ__CSFDB_Getgp_Circradius(self)
 
-    def _CSFDB_Setgp_Circradius(self, *args) -> "void" :
+    def _CSFDB_Setgp_Circradius(self, *args):
         """
         :param p:
         :type p: float
@@ -2660,6 +2677,16 @@ class gp_Circ2d(object):
         :type Sense: bool
         :rtype: None
 
+        * The location point of XAxis is the center of the circle. Warnings : It is not forbidden to create a circle with Radius = 0.0 Raises ConstructionError if Radius < 0.0. Raised if Radius < 0.0.
+
+        :param XAxis:
+        :type XAxis: gp_Ax2d
+        :param Radius:
+        :type Radius: float
+        :param Sense: default value is Standard_True
+        :type Sense: bool
+        :rtype: None
+
         * Axis defines the Xaxis and Yaxis of the circle which defines the origin and the sense of parametrization. The location point of Axis is the center of the circle. Warnings : It is not forbidden to create a circle with Radius = 0.0 Raises ConstructionError if Radius < 0.0. Raised if Radius < 0.0.
 
         :param Axis:
@@ -2670,7 +2697,7 @@ class gp_Circ2d(object):
 
         """
         _gp.gp_Circ2d_swiginit(self,_gp.new_gp_Circ2d(*args))
-    def SetLocation(self, *args) -> "void" :
+    def SetLocation(self, *args):
         """
         * Changes the location point (center) of the circle.
 
@@ -2681,7 +2708,7 @@ class gp_Circ2d(object):
         """
         return _gp.gp_Circ2d_SetLocation(self, *args)
 
-    def SetXAxis(self, *args) -> "void" :
+    def SetXAxis(self, *args):
         """
         * Changes the X axis of the circle.
 
@@ -2692,7 +2719,7 @@ class gp_Circ2d(object):
         """
         return _gp.gp_Circ2d_SetXAxis(self, *args)
 
-    def SetAxis(self, *args) -> "void" :
+    def SetAxis(self, *args):
         """
         * Changes the X axis of the circle.
 
@@ -2703,7 +2730,7 @@ class gp_Circ2d(object):
         """
         return _gp.gp_Circ2d_SetAxis(self, *args)
 
-    def SetYAxis(self, *args) -> "void" :
+    def SetYAxis(self, *args):
         """
         * Changes the Y axis of the circle.
 
@@ -2714,7 +2741,7 @@ class gp_Circ2d(object):
         """
         return _gp.gp_Circ2d_SetYAxis(self, *args)
 
-    def SetRadius(self, *args) -> "void" :
+    def SetRadius(self, *args):
         """
         * Modifies the radius of this circle. This class does not prevent the creation of a circle where Radius is null. Exceptions Standard_ConstructionError if Radius is negative.
 
@@ -2725,16 +2752,16 @@ class gp_Circ2d(object):
         """
         return _gp.gp_Circ2d_SetRadius(self, *args)
 
-    def Area(self, *args) -> "Standard_Real" :
+    def Area(self):
         """
         * Computes the area of the circle.
 
         :rtype: float
 
         """
-        return _gp.gp_Circ2d_Area(self, *args)
+        return _gp.gp_Circ2d_Area(self)
 
-    def Coefficients(self, *args) -> "void" :
+    def Coefficients(self, *args):
         """
         * Returns the normalized coefficients from the implicit equation of the circle : A * (X**2) + B * (Y**2) + 2*C*(X*Y) + 2*D*X + 2*E*Y + F = 0.0
 
@@ -2755,7 +2782,7 @@ class gp_Circ2d(object):
         """
         return _gp.gp_Circ2d_Coefficients(self, *args)
 
-    def Contains(self, *args) -> "Standard_Boolean" :
+    def Contains(self, *args):
         """
         * Does <self> contain P ? Returns True if the distance between P and any point on the circumference of the circle is lower of equal to <LinearTolerance>.
 
@@ -2768,7 +2795,7 @@ class gp_Circ2d(object):
         """
         return _gp.gp_Circ2d_Contains(self, *args)
 
-    def Distance(self, *args) -> "Standard_Real" :
+    def Distance(self, *args):
         """
         * Computes the minimum of distance between the point P and any point on the circumference of the circle.
 
@@ -2779,7 +2806,7 @@ class gp_Circ2d(object):
         """
         return _gp.gp_Circ2d_Distance(self, *args)
 
-    def SquareDistance(self, *args) -> "Standard_Real" :
+    def SquareDistance(self, *args):
         """
         * Computes the square distance between <self> and the point P.
 
@@ -2790,97 +2817,97 @@ class gp_Circ2d(object):
         """
         return _gp.gp_Circ2d_SquareDistance(self, *args)
 
-    def Length(self, *args) -> "Standard_Real" :
+    def Length(self):
         """
         * computes the circumference of the circle.
 
         :rtype: float
 
         """
-        return _gp.gp_Circ2d_Length(self, *args)
+        return _gp.gp_Circ2d_Length(self)
 
-    def Location(self, *args) -> "gp_Pnt2d const" :
+    def Location(self):
         """
         * Returns the location point (center) of the circle.
 
         :rtype: gp_Pnt2d
 
         """
-        return _gp.gp_Circ2d_Location(self, *args)
+        return _gp.gp_Circ2d_Location(self)
 
-    def Radius(self, *args) -> "Standard_Real" :
+    def Radius(self):
         """
         * Returns the radius value of the circle.
 
         :rtype: float
 
         """
-        return _gp.gp_Circ2d_Radius(self, *args)
+        return _gp.gp_Circ2d_Radius(self)
 
-    def Axis(self, *args) -> "gp_Ax22d const" :
+    def Axis(self):
         """
         * returns the position of the circle.
 
         :rtype: gp_Ax22d
 
         """
-        return _gp.gp_Circ2d_Axis(self, *args)
+        return _gp.gp_Circ2d_Axis(self)
 
-    def Position(self, *args) -> "gp_Ax22d const" :
+    def Position(self):
         """
         * returns the position of the circle. Idem Axis(me).
 
         :rtype: gp_Ax22d
 
         """
-        return _gp.gp_Circ2d_Position(self, *args)
+        return _gp.gp_Circ2d_Position(self)
 
-    def XAxis(self, *args) -> "gp_Ax2d" :
+    def XAxis(self):
         """
         * returns the X axis of the circle.
 
         :rtype: gp_Ax2d
 
         """
-        return _gp.gp_Circ2d_XAxis(self, *args)
+        return _gp.gp_Circ2d_XAxis(self)
 
-    def YAxis(self, *args) -> "gp_Ax2d" :
+    def YAxis(self):
         """
         * Returns the Y axis of the circle. Reverses the direction of the circle.
 
         :rtype: gp_Ax2d
 
         """
-        return _gp.gp_Circ2d_YAxis(self, *args)
+        return _gp.gp_Circ2d_YAxis(self)
 
-    def Reverse(self, *args) -> "void" :
+    def Reverse(self):
         """
         * Reverses the orientation of the local coordinate system of this circle (the 'Y Direction' is reversed) and therefore changes the implicit orientation of this circle. Reverse assigns the result to this circle,
 
         :rtype: None
 
         """
-        return _gp.gp_Circ2d_Reverse(self, *args)
+        return _gp.gp_Circ2d_Reverse(self)
 
-    def Reversed(self, *args) -> "gp_Circ2d" :
+    def Reversed(self):
         """
         * Reverses the orientation of the local coordinate system of this circle (the 'Y Direction' is reversed) and therefore changes the implicit orientation of this circle. Reversed creates a new circle.
 
         :rtype: gp_Circ2d
 
         """
-        return _gp.gp_Circ2d_Reversed(self, *args)
+        return _gp.gp_Circ2d_Reversed(self)
 
-    def IsDirect(self, *args) -> "Standard_Boolean" :
+    def IsDirect(self):
         """
         * Returns true if the local coordinate system is direct and false in the other case.
 
         :rtype: bool
 
         """
-        return _gp.gp_Circ2d_IsDirect(self, *args)
+        return _gp.gp_Circ2d_IsDirect(self)
 
-    def Mirror(self, *args) -> "void" :
+    def Mirror(self, *args):
         """
         :param P:
         :type P: gp_Pnt2d
@@ -2893,7 +2920,7 @@ class gp_Circ2d(object):
         """
         return _gp.gp_Circ2d_Mirror(self, *args)
 
-    def Mirrored(self, *args) -> "gp_Circ2d" :
+    def Mirrored(self, *args):
         """
         * Performs the symmetrical transformation of a circle with respect to the point P which is the center of the symmetry
 
@@ -2910,7 +2937,7 @@ class gp_Circ2d(object):
         """
         return _gp.gp_Circ2d_Mirrored(self, *args)
 
-    def Rotate(self, *args) -> "void" :
+    def Rotate(self, *args):
         """
         :param P:
         :type P: gp_Pnt2d
@@ -2921,7 +2948,7 @@ class gp_Circ2d(object):
         """
         return _gp.gp_Circ2d_Rotate(self, *args)
 
-    def Rotated(self, *args) -> "gp_Circ2d" :
+    def Rotated(self, *args):
         """
         * Rotates a circle. P is the center of the rotation. Ang is the angular value of the rotation in radians.
 
@@ -2934,7 +2961,7 @@ class gp_Circ2d(object):
         """
         return _gp.gp_Circ2d_Rotated(self, *args)
 
-    def Scale(self, *args) -> "void" :
+    def Scale(self, *args):
         """
         :param P:
         :type P: gp_Pnt2d
@@ -2945,7 +2972,7 @@ class gp_Circ2d(object):
         """
         return _gp.gp_Circ2d_Scale(self, *args)
 
-    def Scaled(self, *args) -> "gp_Circ2d" :
+    def Scaled(self, *args):
         """
         * Scales a circle. S is the scaling value. Warnings : If S is negative the radius stay positive but the 'XAxis' and the 'YAxis' are reversed as for an ellipse.
 
@@ -2958,7 +2985,7 @@ class gp_Circ2d(object):
         """
         return _gp.gp_Circ2d_Scaled(self, *args)
 
-    def Transform(self, *args) -> "void" :
+    def Transform(self, *args):
         """
         :param T:
         :type T: gp_Trsf2d
@@ -2967,7 +2994,7 @@ class gp_Circ2d(object):
         """
         return _gp.gp_Circ2d_Transform(self, *args)
 
-    def Transformed(self, *args) -> "gp_Circ2d" :
+    def Transformed(self, *args):
         """
         * Transforms a circle with the transformation T from class Trsf2d.
 
@@ -2978,7 +3005,7 @@ class gp_Circ2d(object):
         """
         return _gp.gp_Circ2d_Transformed(self, *args)
 
-    def Translate(self, *args) -> "void" :
+    def Translate(self, *args):
         """
         :param V:
         :type V: gp_Vec2d
@@ -2993,7 +3020,7 @@ class gp_Circ2d(object):
         """
         return _gp.gp_Circ2d_Translate(self, *args)
 
-    def Translated(self, *args) -> "gp_Circ2d" :
+    def Translated(self, *args):
         """
         * Translates a circle in the direction of the vector V. The magnitude of the translation is the vector's magnitude.
 
@@ -3012,21 +3039,21 @@ class gp_Circ2d(object):
         """
         return _gp.gp_Circ2d_Translated(self, *args)
 
-    def _CSFDB_Getgp_Circ2dpos(self, *args) -> "gp_Ax22d const" :
+    def _CSFDB_Getgp_Circ2dpos(self):
         """
         :rtype: gp_Ax22d
 
         """
-        return _gp.gp_Circ2d__CSFDB_Getgp_Circ2dpos(self, *args)
+        return _gp.gp_Circ2d__CSFDB_Getgp_Circ2dpos(self)
 
-    def _CSFDB_Getgp_Circ2dradius(self, *args) -> "Standard_Real" :
+    def _CSFDB_Getgp_Circ2dradius(self):
         """
         :rtype: float
 
         """
-        return _gp.gp_Circ2d__CSFDB_Getgp_Circ2dradius(self, *args)
+        return _gp.gp_Circ2d__CSFDB_Getgp_Circ2dradius(self)
 
-    def _CSFDB_Setgp_Circ2dradius(self, *args) -> "void" :
+    def _CSFDB_Setgp_Circ2dradius(self, *args):
         """
         :param p:
         :type p: float
@@ -3101,7 +3128,7 @@ class gp_Cone(object):
 
         """
         _gp.gp_Cone_swiginit(self,_gp.new_gp_Cone(*args))
-    def SetAxis(self, *args) -> "void" :
+    def SetAxis(self, *args):
         """
         * Changes the symmetry axis of the cone. Raises ConstructionError the direction of A1 is parallel to the 'XDirection' of the coordinate system of the cone.
 
@@ -3112,7 +3139,7 @@ class gp_Cone(object):
         """
         return _gp.gp_Cone_SetAxis(self, *args)
 
-    def SetLocation(self, *args) -> "void" :
+    def SetLocation(self, *args):
         """
         * Changes the location of the cone.
 
@@ -3123,7 +3150,7 @@ class gp_Cone(object):
         """
         return _gp.gp_Cone_SetLocation(self, *args)
 
-    def SetPosition(self, *args) -> "void" :
+    def SetPosition(self, *args):
         """
         * Changes the local coordinate system of the cone. This coordinate system defines the reference plane of the cone.
 
@@ -3134,7 +3161,7 @@ class gp_Cone(object):
         """
         return _gp.gp_Cone_SetPosition(self, *args)
 
-    def SetRadius(self, *args) -> "void" :
+    def SetRadius(self, *args):
         """
         * Changes the radius of the cone in the reference plane of the cone. Raised if R < 0.0
 
@@ -3145,7 +3172,7 @@ class gp_Cone(object):
         """
         return _gp.gp_Cone_SetRadius(self, *args)
 
-    def SetSemiAngle(self, *args) -> "void" :
+    def SetSemiAngle(self, *args):
         """
         * Changes the semi-angle of the cone. Ang is the conical surface semi-angle ]0,PI/2[. Raises ConstructionError if Ang < Resolution from gp or Ang >= PI/2 - Resolution
 
@@ -3156,52 +3183,52 @@ class gp_Cone(object):
         """
         return _gp.gp_Cone_SetSemiAngle(self, *args)
 
-    def Apex(self, *args) -> "gp_Pnt" :
+    def Apex(self):
         """
         * Computes the cone's top. The Apex of the cone is on the negative side of the symmetry axis of the cone.
 
         :rtype: gp_Pnt
 
         """
-        return _gp.gp_Cone_Apex(self, *args)
+        return _gp.gp_Cone_Apex(self)
 
-    def UReverse(self, *args) -> "void" :
+    def UReverse(self):
         """
         * Reverses the U parametrization of the cone reversing the YAxis.
 
         :rtype: None
 
         """
-        return _gp.gp_Cone_UReverse(self, *args)
+        return _gp.gp_Cone_UReverse(self)
 
-    def VReverse(self, *args) -> "void" :
+    def VReverse(self):
         """
         * Reverses the V parametrization of the cone reversing the ZAxis.
 
         :rtype: None
 
         """
-        return _gp.gp_Cone_VReverse(self, *args)
+        return _gp.gp_Cone_VReverse(self)
 
-    def Direct(self, *args) -> "Standard_Boolean" :
+    def Direct(self):
         """
         * Returns true if the local coordinate system of this cone is right-handed.
 
         :rtype: bool
 
         """
-        return _gp.gp_Cone_Direct(self, *args)
+        return _gp.gp_Cone_Direct(self)
 
-    def Axis(self, *args) -> "gp_Ax1 const" :
+    def Axis(self):
         """
         * returns the symmetry axis of the cone.
 
         :rtype: gp_Ax1
 
         """
-        return _gp.gp_Cone_Axis(self, *args)
+        return _gp.gp_Cone_Axis(self)
 
-    def Coefficients(self, *args) -> "void" :
+    def Coefficients(self, *args):
         """
         * Computes the coefficients of the implicit equation of the quadric in the absolute cartesian coordinates system : A1.X**2 + A2.Y**2 + A3.Z**2 + 2.(B1.X.Y + B2.X.Z + B3.Y.Z) + 2.(C1.X + C2.Y + C3.Z) + D = 0.0
 
@@ -3230,61 +3257,61 @@ class gp_Cone(object):
         """
         return _gp.gp_Cone_Coefficients(self, *args)
 
-    def Location(self, *args) -> "gp_Pnt const" :
+    def Location(self):
         """
         * returns the 'Location' point of the cone.
 
         :rtype: gp_Pnt
 
         """
-        return _gp.gp_Cone_Location(self, *args)
+        return _gp.gp_Cone_Location(self)
 
-    def Position(self, *args) -> "gp_Ax3 const" :
+    def Position(self):
         """
         * Returns the local coordinates system of the cone.
 
         :rtype: gp_Ax3
 
         """
-        return _gp.gp_Cone_Position(self, *args)
+        return _gp.gp_Cone_Position(self)
 
-    def RefRadius(self, *args) -> "Standard_Real" :
+    def RefRadius(self):
         """
         * Returns the radius of the cone in the reference plane.
 
         :rtype: float
 
         """
-        return _gp.gp_Cone_RefRadius(self, *args)
+        return _gp.gp_Cone_RefRadius(self)
 
-    def SemiAngle(self, *args) -> "Standard_Real" :
+    def SemiAngle(self):
         """
         * Returns the half-angle at the apex of this cone.
 
         :rtype: float
 
         """
-        return _gp.gp_Cone_SemiAngle(self, *args)
+        return _gp.gp_Cone_SemiAngle(self)
 
-    def XAxis(self, *args) -> "gp_Ax1" :
+    def XAxis(self):
         """
         * Returns the XAxis of the reference plane.
 
         :rtype: gp_Ax1
 
         """
-        return _gp.gp_Cone_XAxis(self, *args)
+        return _gp.gp_Cone_XAxis(self)
 
-    def YAxis(self, *args) -> "gp_Ax1" :
+    def YAxis(self):
         """
         * Returns the YAxis of the reference plane.
 
         :rtype: gp_Ax1
 
         """
-        return _gp.gp_Cone_YAxis(self, *args)
+        return _gp.gp_Cone_YAxis(self)
 
-    def Mirror(self, *args) -> "void" :
+    def Mirror(self, *args):
         """
         :param P:
         :type P: gp_Pnt
@@ -3301,7 +3328,7 @@ class gp_Cone(object):
         """
         return _gp.gp_Cone_Mirror(self, *args)
 
-    def Mirrored(self, *args) -> "gp_Cone" :
+    def Mirrored(self, *args):
         """
         * Performs the symmetrical transformation of a cone with respect to the point P which is the center of the symmetry.
 
@@ -3324,7 +3351,7 @@ class gp_Cone(object):
         """
         return _gp.gp_Cone_Mirrored(self, *args)
 
-    def Rotate(self, *args) -> "void" :
+    def Rotate(self, *args):
         """
         :param A1:
         :type A1: gp_Ax1
@@ -3335,7 +3362,7 @@ class gp_Cone(object):
         """
         return _gp.gp_Cone_Rotate(self, *args)
 
-    def Rotated(self, *args) -> "gp_Cone" :
+    def Rotated(self, *args):
         """
         * Rotates a cone. A1 is the axis of the rotation. Ang is the angular value of the rotation in radians.
 
@@ -3348,7 +3375,7 @@ class gp_Cone(object):
         """
         return _gp.gp_Cone_Rotated(self, *args)
 
-    def Scale(self, *args) -> "void" :
+    def Scale(self, *args):
         """
         :param P:
         :type P: gp_Pnt
@@ -3359,7 +3386,7 @@ class gp_Cone(object):
         """
         return _gp.gp_Cone_Scale(self, *args)
 
-    def Scaled(self, *args) -> "gp_Cone" :
+    def Scaled(self, *args):
         """
         * Scales a cone. S is the scaling value. The absolute value of S is used to scale the cone
 
@@ -3372,7 +3399,7 @@ class gp_Cone(object):
         """
         return _gp.gp_Cone_Scaled(self, *args)
 
-    def Transform(self, *args) -> "void" :
+    def Transform(self, *args):
         """
         :param T:
         :type T: gp_Trsf
@@ -3381,7 +3408,7 @@ class gp_Cone(object):
         """
         return _gp.gp_Cone_Transform(self, *args)
 
-    def Transformed(self, *args) -> "gp_Cone" :
+    def Transformed(self, *args):
         """
         * Transforms a cone with the transformation T from class Trsf.
 
@@ -3392,7 +3419,7 @@ class gp_Cone(object):
         """
         return _gp.gp_Cone_Transformed(self, *args)
 
-    def Translate(self, *args) -> "void" :
+    def Translate(self, *args):
         """
         :param V:
         :type V: gp_Vec
@@ -3407,7 +3434,7 @@ class gp_Cone(object):
         """
         return _gp.gp_Cone_Translate(self, *args)
 
-    def Translated(self, *args) -> "gp_Cone" :
+    def Translated(self, *args):
         """
         * Translates a cone in the direction of the vector V. The magnitude of the translation is the vector's magnitude.
 
@@ -3426,21 +3453,21 @@ class gp_Cone(object):
         """
         return _gp.gp_Cone_Translated(self, *args)
 
-    def _CSFDB_Getgp_Conepos(self, *args) -> "gp_Ax3 const" :
+    def _CSFDB_Getgp_Conepos(self):
         """
         :rtype: gp_Ax3
 
         """
-        return _gp.gp_Cone__CSFDB_Getgp_Conepos(self, *args)
+        return _gp.gp_Cone__CSFDB_Getgp_Conepos(self)
 
-    def _CSFDB_Getgp_Coneradius(self, *args) -> "Standard_Real" :
+    def _CSFDB_Getgp_Coneradius(self):
         """
         :rtype: float
 
         """
-        return _gp.gp_Cone__CSFDB_Getgp_Coneradius(self, *args)
+        return _gp.gp_Cone__CSFDB_Getgp_Coneradius(self)
 
-    def _CSFDB_Setgp_Coneradius(self, *args) -> "void" :
+    def _CSFDB_Setgp_Coneradius(self, *args):
         """
         :param p:
         :type p: float
@@ -3449,14 +3476,14 @@ class gp_Cone(object):
         """
         return _gp.gp_Cone__CSFDB_Setgp_Coneradius(self, *args)
 
-    def _CSFDB_Getgp_ConesemiAngle(self, *args) -> "Standard_Real" :
+    def _CSFDB_Getgp_ConesemiAngle(self):
         """
         :rtype: float
 
         """
-        return _gp.gp_Cone__CSFDB_Getgp_ConesemiAngle(self, *args)
+        return _gp.gp_Cone__CSFDB_Getgp_ConesemiAngle(self)
 
-    def _CSFDB_Setgp_ConesemiAngle(self, *args) -> "void" :
+    def _CSFDB_Setgp_ConesemiAngle(self, *args):
         """
         :param p:
         :type p: float
@@ -3528,7 +3555,7 @@ class gp_Cylinder(object):
 
         """
         _gp.gp_Cylinder_swiginit(self,_gp.new_gp_Cylinder(*args))
-    def SetAxis(self, *args) -> "void" :
+    def SetAxis(self, *args):
         """
         * Changes the symmetry axis of the cylinder. Raises ConstructionError if the direction of A1 is parallel to the 'XDirection' of the coordinate system of the cylinder.
 
@@ -3539,7 +3566,7 @@ class gp_Cylinder(object):
         """
         return _gp.gp_Cylinder_SetAxis(self, *args)
 
-    def SetLocation(self, *args) -> "void" :
+    def SetLocation(self, *args):
         """
         * Changes the location of the surface.
 
@@ -3550,7 +3577,7 @@ class gp_Cylinder(object):
         """
         return _gp.gp_Cylinder_SetLocation(self, *args)
 
-    def SetPosition(self, *args) -> "void" :
+    def SetPosition(self, *args):
         """
         * Change the local coordinate system of the surface.
 
@@ -3561,7 +3588,7 @@ class gp_Cylinder(object):
         """
         return _gp.gp_Cylinder_SetPosition(self, *args)
 
-    def SetRadius(self, *args) -> "void" :
+    def SetRadius(self, *args):
         """
         * Modifies the radius of this cylinder. Exceptions Standard_ConstructionError if R is negative.
 
@@ -3572,43 +3599,43 @@ class gp_Cylinder(object):
         """
         return _gp.gp_Cylinder_SetRadius(self, *args)
 
-    def UReverse(self, *args) -> "void" :
+    def UReverse(self):
         """
         * Reverses the U parametrization of the cylinder reversing the YAxis.
 
         :rtype: None
 
         """
-        return _gp.gp_Cylinder_UReverse(self, *args)
+        return _gp.gp_Cylinder_UReverse(self)
 
-    def VReverse(self, *args) -> "void" :
+    def VReverse(self):
         """
         * Reverses the V parametrization of the plane reversing the Axis.
 
         :rtype: None
 
         """
-        return _gp.gp_Cylinder_VReverse(self, *args)
+        return _gp.gp_Cylinder_VReverse(self)
 
-    def Direct(self, *args) -> "Standard_Boolean" :
+    def Direct(self):
         """
         * Returns true if the local coordinate system of this cylinder is right-handed.
 
         :rtype: bool
 
         """
-        return _gp.gp_Cylinder_Direct(self, *args)
+        return _gp.gp_Cylinder_Direct(self)
 
-    def Axis(self, *args) -> "gp_Ax1 const" :
+    def Axis(self):
         """
         * Returns the symmetry axis of the cylinder.
 
         :rtype: gp_Ax1
 
         """
-        return _gp.gp_Cylinder_Axis(self, *args)
+        return _gp.gp_Cylinder_Axis(self)
 
-    def Coefficients(self, *args) -> "void" :
+    def Coefficients(self, *args):
         """
         * Computes the coefficients of the implicit equation of the quadric in the absolute cartesian coordinate system : A1.X**2 + A2.Y**2 + A3.Z**2 + 2.(B1.X.Y + B2.X.Z + B3.Y.Z) + 2.(C1.X + C2.Y + C3.Z) + D = 0.0
 
@@ -3637,52 +3664,52 @@ class gp_Cylinder(object):
         """
         return _gp.gp_Cylinder_Coefficients(self, *args)
 
-    def Location(self, *args) -> "gp_Pnt const" :
+    def Location(self):
         """
         * Returns the 'Location' point of the cylinder.
 
         :rtype: gp_Pnt
 
         """
-        return _gp.gp_Cylinder_Location(self, *args)
+        return _gp.gp_Cylinder_Location(self)
 
-    def Position(self, *args) -> "gp_Ax3 const" :
+    def Position(self):
         """
         * Returns the local coordinate system of the cylinder.
 
         :rtype: gp_Ax3
 
         """
-        return _gp.gp_Cylinder_Position(self, *args)
+        return _gp.gp_Cylinder_Position(self)
 
-    def Radius(self, *args) -> "Standard_Real" :
+    def Radius(self):
         """
         * Returns the radius of the cylinder.
 
         :rtype: float
 
         """
-        return _gp.gp_Cylinder_Radius(self, *args)
+        return _gp.gp_Cylinder_Radius(self)
 
-    def XAxis(self, *args) -> "gp_Ax1" :
+    def XAxis(self):
         """
         * Returns the axis X of the cylinder.
 
         :rtype: gp_Ax1
 
         """
-        return _gp.gp_Cylinder_XAxis(self, *args)
+        return _gp.gp_Cylinder_XAxis(self)
 
-    def YAxis(self, *args) -> "gp_Ax1" :
+    def YAxis(self):
         """
         * Returns the axis Y of the cylinder.
 
         :rtype: gp_Ax1
 
         """
-        return _gp.gp_Cylinder_YAxis(self, *args)
+        return _gp.gp_Cylinder_YAxis(self)
 
-    def Mirror(self, *args) -> "void" :
+    def Mirror(self, *args):
         """
         :param P:
         :type P: gp_Pnt
@@ -3699,7 +3726,7 @@ class gp_Cylinder(object):
         """
         return _gp.gp_Cylinder_Mirror(self, *args)
 
-    def Mirrored(self, *args) -> "gp_Cylinder" :
+    def Mirrored(self, *args):
         """
         * Performs the symmetrical transformation of a cylinder with respect to the point P which is the center of the symmetry.
 
@@ -3722,7 +3749,7 @@ class gp_Cylinder(object):
         """
         return _gp.gp_Cylinder_Mirrored(self, *args)
 
-    def Rotate(self, *args) -> "void" :
+    def Rotate(self, *args):
         """
         :param A1:
         :type A1: gp_Ax1
@@ -3733,7 +3760,7 @@ class gp_Cylinder(object):
         """
         return _gp.gp_Cylinder_Rotate(self, *args)
 
-    def Rotated(self, *args) -> "gp_Cylinder" :
+    def Rotated(self, *args):
         """
         * Rotates a cylinder. A1 is the axis of the rotation. Ang is the angular value of the rotation in radians.
 
@@ -3746,7 +3773,7 @@ class gp_Cylinder(object):
         """
         return _gp.gp_Cylinder_Rotated(self, *args)
 
-    def Scale(self, *args) -> "void" :
+    def Scale(self, *args):
         """
         :param P:
         :type P: gp_Pnt
@@ -3757,7 +3784,7 @@ class gp_Cylinder(object):
         """
         return _gp.gp_Cylinder_Scale(self, *args)
 
-    def Scaled(self, *args) -> "gp_Cylinder" :
+    def Scaled(self, *args):
         """
         * Scales a cylinder. S is the scaling value. The absolute value of S is used to scale the cylinder
 
@@ -3770,7 +3797,7 @@ class gp_Cylinder(object):
         """
         return _gp.gp_Cylinder_Scaled(self, *args)
 
-    def Transform(self, *args) -> "void" :
+    def Transform(self, *args):
         """
         :param T:
         :type T: gp_Trsf
@@ -3779,7 +3806,7 @@ class gp_Cylinder(object):
         """
         return _gp.gp_Cylinder_Transform(self, *args)
 
-    def Transformed(self, *args) -> "gp_Cylinder" :
+    def Transformed(self, *args):
         """
         * Transforms a cylinder with the transformation T from class Trsf.
 
@@ -3790,7 +3817,7 @@ class gp_Cylinder(object):
         """
         return _gp.gp_Cylinder_Transformed(self, *args)
 
-    def Translate(self, *args) -> "void" :
+    def Translate(self, *args):
         """
         :param V:
         :type V: gp_Vec
@@ -3805,7 +3832,7 @@ class gp_Cylinder(object):
         """
         return _gp.gp_Cylinder_Translate(self, *args)
 
-    def Translated(self, *args) -> "gp_Cylinder" :
+    def Translated(self, *args):
         """
         * Translates a cylinder in the direction of the vector V. The magnitude of the translation is the vector's magnitude.
 
@@ -3824,21 +3851,21 @@ class gp_Cylinder(object):
         """
         return _gp.gp_Cylinder_Translated(self, *args)
 
-    def _CSFDB_Getgp_Cylinderpos(self, *args) -> "gp_Ax3 const" :
+    def _CSFDB_Getgp_Cylinderpos(self):
         """
         :rtype: gp_Ax3
 
         """
-        return _gp.gp_Cylinder__CSFDB_Getgp_Cylinderpos(self, *args)
+        return _gp.gp_Cylinder__CSFDB_Getgp_Cylinderpos(self)
 
-    def _CSFDB_Getgp_Cylinderradius(self, *args) -> "Standard_Real" :
+    def _CSFDB_Getgp_Cylinderradius(self):
         """
         :rtype: float
 
         """
-        return _gp.gp_Cylinder__CSFDB_Getgp_Cylinderradius(self, *args)
+        return _gp.gp_Cylinder__CSFDB_Getgp_Cylinderradius(self)
 
-    def _CSFDB_Setgp_Cylinderradius(self, *args) -> "void" :
+    def _CSFDB_Setgp_Cylinderradius(self, *args):
         """
         :param p:
         :type p: float
@@ -3919,12 +3946,12 @@ class gp_Dir(object):
 
         """
         _gp.gp_Dir_swiginit(self,_gp.new_gp_Dir(*args))
-    def SetCoord(self, *args) -> "void" :
+    def SetCoord(self, *args):
         """
         * For this unit vector, assigns the value Xi to: - the X coordinate if Index is 1, or - the Y coordinate if Index is 2, or - the Z coordinate if Index is 3, and then normalizes it. Warning Remember that all the coordinates of a unit vector are implicitly modified when any single one is changed directly. Exceptions Standard_OutOfRange if Index is not 1, 2, or 3. Standard_ConstructionError if either of the following is less than or equal to gp::Resolution(): - Sqrt(Xv*Xv + Yv*Yv + Zv*Zv), or - the modulus of the number triple formed by the new value Xi and the two other coordinates of this vector that were not directly modified.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Xi:
         :type Xi: float
         :rtype: None
@@ -3942,7 +3969,7 @@ class gp_Dir(object):
         """
         return _gp.gp_Dir_SetCoord(self, *args)
 
-    def SetX(self, *args) -> "void" :
+    def SetX(self, *args):
         """
         * Assigns the given value to the X coordinate of this unit vector.
 
@@ -3953,7 +3980,7 @@ class gp_Dir(object):
         """
         return _gp.gp_Dir_SetX(self, *args)
 
-    def SetY(self, *args) -> "void" :
+    def SetY(self, *args):
         """
         * Assigns the given value to the Y coordinate of this unit vector.
 
@@ -3964,7 +3991,7 @@ class gp_Dir(object):
         """
         return _gp.gp_Dir_SetY(self, *args)
 
-    def SetZ(self, *args) -> "void" :
+    def SetZ(self, *args):
         """
         * Assigns the given value to the Z coordinate of this unit vector.
 
@@ -3975,7 +4002,7 @@ class gp_Dir(object):
         """
         return _gp.gp_Dir_SetZ(self, *args)
 
-    def SetXYZ(self, *args) -> "void" :
+    def SetXYZ(self, *args):
         """
         * Assigns the three coordinates of Coord to this unit vector.
 
@@ -3986,12 +4013,12 @@ class gp_Dir(object):
         """
         return _gp.gp_Dir_SetXYZ(self, *args)
 
-    def Coord(self, *args) -> "void" :
+    def Coord(self, *args):
         """
         * Returns the coordinate of range Index : Index = 1 => X is returned Index = 2 => Y is returned Index = 3 => Z is returned Exceptions Standard_OutOfRange if Index is not 1, 2, or 3.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: float
 
         * Returns for the unit vector its three coordinates Xv, Yv, and Zv.
@@ -4007,43 +4034,43 @@ class gp_Dir(object):
         """
         return _gp.gp_Dir_Coord(self, *args)
 
-    def X(self, *args) -> "Standard_Real" :
+    def X(self):
         """
         * Returns the X coordinate for a unit vector.
 
         :rtype: float
 
         """
-        return _gp.gp_Dir_X(self, *args)
+        return _gp.gp_Dir_X(self)
 
-    def Y(self, *args) -> "Standard_Real" :
+    def Y(self):
         """
         * Returns the Y coordinate for a unit vector.
 
         :rtype: float
 
         """
-        return _gp.gp_Dir_Y(self, *args)
+        return _gp.gp_Dir_Y(self)
 
-    def Z(self, *args) -> "Standard_Real" :
+    def Z(self):
         """
         * Returns the Z coordinate for a unit vector.
 
         :rtype: float
 
         """
-        return _gp.gp_Dir_Z(self, *args)
+        return _gp.gp_Dir_Z(self)
 
-    def XYZ(self, *args) -> "gp_XYZ const" :
+    def XYZ(self):
         """
         * for this unit vector, returns its three coordinates as a number triplea.
 
         :rtype: gp_XYZ
 
         """
-        return _gp.gp_Dir_XYZ(self, *args)
+        return _gp.gp_Dir_XYZ(self)
 
-    def IsEqual(self, *args) -> "Standard_Boolean" :
+    def IsEqual(self, *args):
         """
         * Returns True if the angle between the two directions is lower or equal to AngularTolerance.
 
@@ -4056,7 +4083,7 @@ class gp_Dir(object):
         """
         return _gp.gp_Dir_IsEqual(self, *args)
 
-    def IsNormal(self, *args) -> "Standard_Boolean" :
+    def IsNormal(self, *args):
         """
         * Returns True if the angle between this unit vector and the unit vector Other is equal to Pi/2 (normal).
 
@@ -4069,7 +4096,7 @@ class gp_Dir(object):
         """
         return _gp.gp_Dir_IsNormal(self, *args)
 
-    def IsOpposite(self, *args) -> "Standard_Boolean" :
+    def IsOpposite(self, *args):
         """
         * Returns True if the angle between this unit vector and the unit vector Other is equal to Pi (opposite).
 
@@ -4082,7 +4109,7 @@ class gp_Dir(object):
         """
         return _gp.gp_Dir_IsOpposite(self, *args)
 
-    def IsParallel(self, *args) -> "Standard_Boolean" :
+    def IsParallel(self, *args):
         """
         * Returns true if the angle between this unit vector and the unit vector Other is equal to 0 or to Pi. Note: the tolerance criterion is given by AngularTolerance.
 
@@ -4095,7 +4122,7 @@ class gp_Dir(object):
         """
         return _gp.gp_Dir_IsParallel(self, *args)
 
-    def Angle(self, *args) -> "Standard_Real" :
+    def Angle(self, *args):
         """
         * Computes the angular value in radians between <self> and <Other>. This value is always positive in 3D space. Returns the angle in the range [0, PI]
 
@@ -4106,7 +4133,7 @@ class gp_Dir(object):
         """
         return _gp.gp_Dir_Angle(self, *args)
 
-    def AngleWithRef(self, *args) -> "Standard_Real" :
+    def AngleWithRef(self, *args):
         """
         * Computes the angular value between <self> and <Other>. <VRef> is the direction of reference normal to <self> and <Other> and its orientation gives the positive sense of rotation. If the cross product <self> ^ <Other> has the same orientation as <VRef> the angular value is positive else negative. Returns the angular value in the range -PI and PI (in radians). Raises DomainError if <self> and <Other> are not parallel this exception is raised when <VRef> is in the same plane as <self> and <Other> The tolerance criterion is Resolution from package gp.
 
@@ -4119,7 +4146,7 @@ class gp_Dir(object):
         """
         return _gp.gp_Dir_AngleWithRef(self, *args)
 
-    def Cross(self, *args) -> "void" :
+    def Cross(self, *args):
         """
         * Computes the cross product between two directions Raises the exception ConstructionError if the two directions are parallel because the computed vector cannot be normalized to create a direction.
 
@@ -4130,7 +4157,7 @@ class gp_Dir(object):
         """
         return _gp.gp_Dir_Cross(self, *args)
 
-    def __ixor__(self, *args) -> "void" :
+    def __ixor__(self, *args):
         """
         :param Right:
         :type Right: gp_Dir
@@ -4139,7 +4166,7 @@ class gp_Dir(object):
         """
         return _gp.gp_Dir___ixor__(self, *args)
 
-    def Crossed(self, *args) -> "gp_Dir" :
+    def Crossed(self, *args):
         """
         * Computes the triple vector product. <self> ^ (V1 ^ V2) Raises the exception ConstructionError if V1 and V2 are parallel or <self> and (V1^V2) are parallel because the computed vector can't be normalized to create a direction.
 
@@ -4150,7 +4177,7 @@ class gp_Dir(object):
         """
         return _gp.gp_Dir_Crossed(self, *args)
 
-    def __xor__(self, *args) -> "gp_Dir" :
+    def __xor__(self, *args):
         """
         :param Right:
         :type Right: gp_Dir
@@ -4159,7 +4186,7 @@ class gp_Dir(object):
         """
         return _gp.gp_Dir___xor__(self, *args)
 
-    def CrossCross(self, *args) -> "void" :
+    def CrossCross(self, *args):
         """
         :param V1:
         :type V1: gp_Dir
@@ -4170,7 +4197,7 @@ class gp_Dir(object):
         """
         return _gp.gp_Dir_CrossCross(self, *args)
 
-    def CrossCrossed(self, *args) -> "gp_Dir" :
+    def CrossCrossed(self, *args):
         """
         * Computes the double vector product this ^ (V1 ^ V2). - CrossCrossed creates a new unit vector. Exceptions Standard_ConstructionError if: - V1 and V2 are parallel, or - this unit vector and (V1 ^ V2) are parallel. This is because, in these conditions, the computed vector is null and cannot be normalized.
 
@@ -4183,7 +4210,7 @@ class gp_Dir(object):
         """
         return _gp.gp_Dir_CrossCrossed(self, *args)
 
-    def Dot(self, *args) -> "Standard_Real" :
+    def Dot(self, *args):
         """
         * Computes the scalar product
 
@@ -4194,7 +4221,7 @@ class gp_Dir(object):
         """
         return _gp.gp_Dir_Dot(self, *args)
 
-    def __mul__(self, *args) -> "Standard_Real" :
+    def __mul__(self, *args):
         """
         :param Other:
         :type Other: gp_Dir
@@ -4203,7 +4230,7 @@ class gp_Dir(object):
         """
         return _gp.gp_Dir___mul__(self, *args)
 
-    def DotCross(self, *args) -> "Standard_Real" :
+    def DotCross(self, *args):
         """
         * Computes the triple scalar product <self> * (V1 ^ V2). Warnings : The computed vector V1' = V1 ^ V2 is not normalized to create a unitary vector. So this method never raises an exception even if V1 and V2 are parallel.
 
@@ -4216,30 +4243,30 @@ class gp_Dir(object):
         """
         return _gp.gp_Dir_DotCross(self, *args)
 
-    def Reverse(self, *args) -> "void" :
+    def Reverse(self):
         """
         :rtype: None
 
         """
-        return _gp.gp_Dir_Reverse(self, *args)
+        return _gp.gp_Dir_Reverse(self)
 
-    def Reversed(self, *args) -> "gp_Dir" :
+    def Reversed(self):
         """
         * Reverses the orientation of a direction geometric transformations Performs the symmetrical transformation of a direction with respect to the direction V which is the center of the symmetry.]
 
         :rtype: gp_Dir
 
         """
-        return _gp.gp_Dir_Reversed(self, *args)
+        return _gp.gp_Dir_Reversed(self)
 
-    def __neg__(self, *args) -> "gp_Dir" :
+    def __neg__(self):
         """
         :rtype: gp_Dir
 
         """
-        return _gp.gp_Dir___neg__(self, *args)
+        return _gp.gp_Dir___neg__(self)
 
-    def Mirror(self, *args) -> "void" :
+    def Mirror(self, *args):
         """
         :param V:
         :type V: gp_Dir
@@ -4256,7 +4283,7 @@ class gp_Dir(object):
         """
         return _gp.gp_Dir_Mirror(self, *args)
 
-    def Mirrored(self, *args) -> "gp_Dir" :
+    def Mirrored(self, *args):
         """
         * Performs the symmetrical transformation of a direction with respect to the direction V which is the center of the symmetry.
 
@@ -4279,7 +4306,7 @@ class gp_Dir(object):
         """
         return _gp.gp_Dir_Mirrored(self, *args)
 
-    def Rotate(self, *args) -> "void" :
+    def Rotate(self, *args):
         """
         :param A1:
         :type A1: gp_Ax1
@@ -4290,7 +4317,7 @@ class gp_Dir(object):
         """
         return _gp.gp_Dir_Rotate(self, *args)
 
-    def Rotated(self, *args) -> "gp_Dir" :
+    def Rotated(self, *args):
         """
         * Rotates a direction. A1 is the axis of the rotation. Ang is the angular value of the rotation in radians.
 
@@ -4303,7 +4330,7 @@ class gp_Dir(object):
         """
         return _gp.gp_Dir_Rotated(self, *args)
 
-    def Transform(self, *args) -> "void" :
+    def Transform(self, *args):
         """
         :param T:
         :type T: gp_Trsf
@@ -4312,7 +4339,7 @@ class gp_Dir(object):
         """
         return _gp.gp_Dir_Transform(self, *args)
 
-    def Transformed(self, *args) -> "gp_Dir" :
+    def Transformed(self, *args):
         """
         * Transforms a direction with a 'Trsf' from gp. Warnings : If the scale factor of the 'Trsf' T is negative then the direction <self> is reversed.
 
@@ -4323,12 +4350,12 @@ class gp_Dir(object):
         """
         return _gp.gp_Dir_Transformed(self, *args)
 
-    def _CSFDB_Getgp_Dircoord(self, *args) -> "gp_XYZ const" :
+    def _CSFDB_Getgp_Dircoord(self):
         """
         :rtype: gp_XYZ
 
         """
-        return _gp.gp_Dir__CSFDB_Getgp_Dircoord(self, *args)
+        return _gp.gp_Dir__CSFDB_Getgp_Dircoord(self)
 
     def __del__(self):
     	try:
@@ -4408,12 +4435,12 @@ class gp_Dir2d(object):
 
         """
         _gp.gp_Dir2d_swiginit(self,_gp.new_gp_Dir2d(*args))
-    def SetCoord(self, *args) -> "void" :
+    def SetCoord(self, *args):
         """
         * For this unit vector, assigns: the value Xi to: - the X coordinate if Index is 1, or - the Y coordinate if Index is 2, and then normalizes it. Warning Remember that all the coordinates of a unit vector are implicitly modified when any single one is changed directly. Exceptions Standard_OutOfRange if Index is not 1 or 2. Standard_ConstructionError if either of the following is less than or equal to gp::Resolution(): - Sqrt(Xv*Xv + Yv*Yv), or - the modulus of the number pair formed by the new value Xi and the other coordinate of this vector that was not directly modified. Raises OutOfRange if Index != {1, 2}.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Xi:
         :type Xi: float
         :rtype: None
@@ -4429,7 +4456,7 @@ class gp_Dir2d(object):
         """
         return _gp.gp_Dir2d_SetCoord(self, *args)
 
-    def SetX(self, *args) -> "void" :
+    def SetX(self, *args):
         """
         * Assigns the given value to the X coordinate of this unit vector, and then normalizes it. Warning Remember that all the coordinates of a unit vector are implicitly modified when any single one is changed directly. Exceptions Standard_ConstructionError if either of the following is less than or equal to gp::Resolution(): - the modulus of Coord, or - the modulus of the number pair formed from the new X or Y coordinate and the other coordinate of this vector that was not directly modified.
 
@@ -4440,7 +4467,7 @@ class gp_Dir2d(object):
         """
         return _gp.gp_Dir2d_SetX(self, *args)
 
-    def SetY(self, *args) -> "void" :
+    def SetY(self, *args):
         """
         * Assigns the given value to the Y coordinate of this unit vector, and then normalizes it. Warning Remember that all the coordinates of a unit vector are implicitly modified when any single one is changed directly. Exceptions Standard_ConstructionError if either of the following is less than or equal to gp::Resolution(): - the modulus of Coord, or - the modulus of the number pair formed from the new X or Y coordinate and the other coordinate of this vector that was not directly modified.
 
@@ -4451,7 +4478,7 @@ class gp_Dir2d(object):
         """
         return _gp.gp_Dir2d_SetY(self, *args)
 
-    def SetXY(self, *args) -> "void" :
+    def SetXY(self, *args):
         """
         * Assigns: - the two coordinates of Coord to this unit vector, and then normalizes it. Warning Remember that all the coordinates of a unit vector are implicitly modified when any single one is changed directly. Exceptions Standard_ConstructionError if either of the following is less than or equal to gp::Resolution(): - the modulus of Coord, or - the modulus of the number pair formed from the new X or Y coordinate and the other coordinate of this vector that was not directly modified.
 
@@ -4462,12 +4489,12 @@ class gp_Dir2d(object):
         """
         return _gp.gp_Dir2d_SetXY(self, *args)
 
-    def Coord(self, *args) -> "void" :
+    def Coord(self, *args):
         """
         * For this unit vector returns the coordinate of range Index : Index = 1 => X is returned Index = 2 => Y is returned Raises OutOfRange if Index != {1, 2}.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: float
 
         * For this unit vector returns its two coordinates Xv and Yv. Raises OutOfRange if Index != {1, 2}.
@@ -4481,34 +4508,34 @@ class gp_Dir2d(object):
         """
         return _gp.gp_Dir2d_Coord(self, *args)
 
-    def X(self, *args) -> "Standard_Real" :
+    def X(self):
         """
         * For this unit vector, returns its X coordinate.
 
         :rtype: float
 
         """
-        return _gp.gp_Dir2d_X(self, *args)
+        return _gp.gp_Dir2d_X(self)
 
-    def Y(self, *args) -> "Standard_Real" :
+    def Y(self):
         """
         * For this unit vector, returns its Y coordinate.
 
         :rtype: float
 
         """
-        return _gp.gp_Dir2d_Y(self, *args)
+        return _gp.gp_Dir2d_Y(self)
 
-    def XY(self, *args) -> "gp_XY const" :
+    def XY(self):
         """
         * For this unit vector, returns its two coordinates as a number pair. Comparison between Directions The precision value is an input data.
 
         :rtype: gp_XY
 
         """
-        return _gp.gp_Dir2d_XY(self, *args)
+        return _gp.gp_Dir2d_XY(self)
 
-    def IsEqual(self, *args) -> "Standard_Boolean" :
+    def IsEqual(self, *args):
         """
         * Returns True if the two vectors have the same direction i.e. the angle between this unit vector and the unit vector Other is less than or equal to AngularTolerance.
 
@@ -4521,7 +4548,7 @@ class gp_Dir2d(object):
         """
         return _gp.gp_Dir2d_IsEqual(self, *args)
 
-    def IsNormal(self, *args) -> "Standard_Boolean" :
+    def IsNormal(self, *args):
         """
         * Returns True if the angle between this unit vector and the unit vector Other is equal to Pi/2 or -Pi/2 (normal) i.e. Abs(Abs(<self>.Angle(Other)) - PI/2.) <= AngularTolerance
 
@@ -4534,7 +4561,7 @@ class gp_Dir2d(object):
         """
         return _gp.gp_Dir2d_IsNormal(self, *args)
 
-    def IsOpposite(self, *args) -> "Standard_Boolean" :
+    def IsOpposite(self, *args):
         """
         * Returns True if the angle between this unit vector and the unit vector Other is equal to Pi or -Pi (opposite). i.e. PI - Abs(<self>.Angle(Other)) <= AngularTolerance
 
@@ -4547,7 +4574,7 @@ class gp_Dir2d(object):
         """
         return _gp.gp_Dir2d_IsOpposite(self, *args)
 
-    def IsParallel(self, *args) -> "Standard_Boolean" :
+    def IsParallel(self, *args):
         """
         * returns true if if the angle between this unit vector and unit vector Other is equal to 0, Pi or -Pi. i.e. Abs(Angle(<self>, Other)) <= AngularTolerance or PI - Abs(Angle(<self>, Other)) <= AngularTolerance
 
@@ -4560,7 +4587,7 @@ class gp_Dir2d(object):
         """
         return _gp.gp_Dir2d_IsParallel(self, *args)
 
-    def Angle(self, *args) -> "Standard_Real" :
+    def Angle(self, *args):
         """
         * Computes the angular value in radians between <self> and <Other>. Returns the angle in the range [-PI, PI].
 
@@ -4571,7 +4598,7 @@ class gp_Dir2d(object):
         """
         return _gp.gp_Dir2d_Angle(self, *args)
 
-    def Crossed(self, *args) -> "Standard_Real" :
+    def Crossed(self, *args):
         """
         * Computes the cross product between two directions.
 
@@ -4582,7 +4609,7 @@ class gp_Dir2d(object):
         """
         return _gp.gp_Dir2d_Crossed(self, *args)
 
-    def __xor__(self, *args) -> "Standard_Real" :
+    def __xor__(self, *args):
         """
         :param Right:
         :type Right: gp_Dir2d
@@ -4591,7 +4618,7 @@ class gp_Dir2d(object):
         """
         return _gp.gp_Dir2d___xor__(self, *args)
 
-    def Dot(self, *args) -> "Standard_Real" :
+    def Dot(self, *args):
         """
         * Computes the scalar product
 
@@ -4602,7 +4629,7 @@ class gp_Dir2d(object):
         """
         return _gp.gp_Dir2d_Dot(self, *args)
 
-    def __mul__(self, *args) -> "Standard_Real" :
+    def __mul__(self, *args):
         """
         :param Other:
         :type Other: gp_Dir2d
@@ -4611,30 +4638,30 @@ class gp_Dir2d(object):
         """
         return _gp.gp_Dir2d___mul__(self, *args)
 
-    def Reverse(self, *args) -> "void" :
+    def Reverse(self):
         """
         :rtype: None
 
         """
-        return _gp.gp_Dir2d_Reverse(self, *args)
+        return _gp.gp_Dir2d_Reverse(self)
 
-    def Reversed(self, *args) -> "gp_Dir2d" :
+    def Reversed(self):
         """
         * Reverses the orientation of a direction
 
         :rtype: gp_Dir2d
 
         """
-        return _gp.gp_Dir2d_Reversed(self, *args)
+        return _gp.gp_Dir2d_Reversed(self)
 
-    def __neg__(self, *args) -> "gp_Dir2d" :
+    def __neg__(self):
         """
         :rtype: gp_Dir2d
 
         """
-        return _gp.gp_Dir2d___neg__(self, *args)
+        return _gp.gp_Dir2d___neg__(self)
 
-    def Mirror(self, *args) -> "void" :
+    def Mirror(self, *args):
         """
         :param V:
         :type V: gp_Dir2d
@@ -4647,7 +4674,7 @@ class gp_Dir2d(object):
         """
         return _gp.gp_Dir2d_Mirror(self, *args)
 
-    def Mirrored(self, *args) -> "gp_Dir2d" :
+    def Mirrored(self, *args):
         """
         * Performs the symmetrical transformation of a direction with respect to the direction V which is the center of the symmetry.
 
@@ -4664,7 +4691,7 @@ class gp_Dir2d(object):
         """
         return _gp.gp_Dir2d_Mirrored(self, *args)
 
-    def Rotate(self, *args) -> "void" :
+    def Rotate(self, *args):
         """
         :param Ang:
         :type Ang: float
@@ -4673,7 +4700,7 @@ class gp_Dir2d(object):
         """
         return _gp.gp_Dir2d_Rotate(self, *args)
 
-    def Rotated(self, *args) -> "gp_Dir2d" :
+    def Rotated(self, *args):
         """
         * Rotates a direction. Ang is the angular value of the rotation in radians.
 
@@ -4684,7 +4711,7 @@ class gp_Dir2d(object):
         """
         return _gp.gp_Dir2d_Rotated(self, *args)
 
-    def Transform(self, *args) -> "void" :
+    def Transform(self, *args):
         """
         :param T:
         :type T: gp_Trsf2d
@@ -4693,7 +4720,7 @@ class gp_Dir2d(object):
         """
         return _gp.gp_Dir2d_Transform(self, *args)
 
-    def Transformed(self, *args) -> "gp_Dir2d" :
+    def Transformed(self, *args):
         """
         * Transforms a direction with the 'Trsf' T. Warnings : If the scale factor of the 'Trsf' T is negative then the direction <self> is reversed.
 
@@ -4704,12 +4731,12 @@ class gp_Dir2d(object):
         """
         return _gp.gp_Dir2d_Transformed(self, *args)
 
-    def _CSFDB_Getgp_Dir2dcoord(self, *args) -> "gp_XY const" :
+    def _CSFDB_Getgp_Dir2dcoord(self):
         """
         :rtype: gp_XY
 
         """
-        return _gp.gp_Dir2d__CSFDB_Getgp_Dir2dcoord(self, *args)
+        return _gp.gp_Dir2d__CSFDB_Getgp_Dir2dcoord(self)
 
     def __del__(self):
     	try:
@@ -4771,7 +4798,7 @@ class gp_Elips(object):
 
         """
         _gp.gp_Elips_swiginit(self,_gp.new_gp_Elips(*args))
-    def SetAxis(self, *args) -> "void" :
+    def SetAxis(self, *args):
         """
         * Changes the axis normal to the plane of the ellipse. It modifies the definition of this plane. The 'XAxis' and the 'YAxis' are recomputed. The local coordinate system is redefined so that: - its origin and 'main Direction' become those of the axis A1 (the 'X Direction' and 'Y Direction' are then recomputed in the same way as for any gp_Ax2), or Raises ConstructionError if the direction of A1 is parallel to the direction of the 'XAxis' of the ellipse.
 
@@ -4782,7 +4809,7 @@ class gp_Elips(object):
         """
         return _gp.gp_Elips_SetAxis(self, *args)
 
-    def SetLocation(self, *args) -> "void" :
+    def SetLocation(self, *args):
         """
         * //!Modifies this ellipse, by redefining its local coordinate so that its origin becomes P.
 
@@ -4793,7 +4820,7 @@ class gp_Elips(object):
         """
         return _gp.gp_Elips_SetLocation(self, *args)
 
-    def SetMajorRadius(self, *args) -> "void" :
+    def SetMajorRadius(self, *args):
         """
         * The major radius of the ellipse is on the 'XAxis' (major axis) of the ellipse. Raises ConstructionError if MajorRadius < MinorRadius.
 
@@ -4804,7 +4831,7 @@ class gp_Elips(object):
         """
         return _gp.gp_Elips_SetMajorRadius(self, *args)
 
-    def SetMinorRadius(self, *args) -> "void" :
+    def SetMinorRadius(self, *args):
         """
         * The minor radius of the ellipse is on the 'YAxis' (minor axis) of the ellipse. Raises ConstructionError if MinorRadius > MajorRadius or MinorRadius < 0.
 
@@ -4815,7 +4842,7 @@ class gp_Elips(object):
         """
         return _gp.gp_Elips_SetMinorRadius(self, *args)
 
-    def SetPosition(self, *args) -> "void" :
+    def SetPosition(self, *args):
         """
         * Modifies this ellipse, by redefining its local coordinate so that it becomes A2e.
 
@@ -4826,142 +4853,142 @@ class gp_Elips(object):
         """
         return _gp.gp_Elips_SetPosition(self, *args)
 
-    def Area(self, *args) -> "Standard_Real" :
+    def Area(self):
         """
         * Computes the area of the Ellipse.
 
         :rtype: float
 
         """
-        return _gp.gp_Elips_Area(self, *args)
+        return _gp.gp_Elips_Area(self)
 
-    def Axis(self, *args) -> "gp_Ax1 const" :
+    def Axis(self):
         """
         * Computes the axis normal to the plane of the ellipse.
 
         :rtype: gp_Ax1
 
         """
-        return _gp.gp_Elips_Axis(self, *args)
+        return _gp.gp_Elips_Axis(self)
 
-    def Directrix1(self, *args) -> "gp_Ax1" :
+    def Directrix1(self):
         """
         * Computes the first or second directrix of this ellipse. These are the lines, in the plane of the ellipse, normal to the major axis, at a distance equal to MajorRadius/e from the center of the ellipse, where e is the eccentricity of the ellipse. The first directrix (Directrix1) is on the positive side of the major axis. The second directrix (Directrix2) is on the negative side. The directrix is returned as an axis (gp_Ax1 object), the origin of which is situated on the 'X Axis' of the local coordinate system of this ellipse. Exceptions Standard_ConstructionError if the eccentricity is null (the ellipse has degenerated into a circle).
 
         :rtype: gp_Ax1
 
         """
-        return _gp.gp_Elips_Directrix1(self, *args)
+        return _gp.gp_Elips_Directrix1(self)
 
-    def Directrix2(self, *args) -> "gp_Ax1" :
+    def Directrix2(self):
         """
         * This line is obtained by the symmetrical transformation of 'Directrix1' with respect to the 'YAxis' of the ellipse. Exceptions Standard_ConstructionError if the eccentricity is null (the ellipse has degenerated into a circle).
 
         :rtype: gp_Ax1
 
         """
-        return _gp.gp_Elips_Directrix2(self, *args)
+        return _gp.gp_Elips_Directrix2(self)
 
-    def Eccentricity(self, *args) -> "Standard_Real" :
+    def Eccentricity(self):
         """
         * Returns the eccentricity of the ellipse between 0.0 and 1.0 If f is the distance between the center of the ellipse and the Focus1 then the eccentricity e = f / MajorRadius. Raises ConstructionError if MajorRadius = 0.0
 
         :rtype: float
 
         """
-        return _gp.gp_Elips_Eccentricity(self, *args)
+        return _gp.gp_Elips_Eccentricity(self)
 
-    def Focal(self, *args) -> "Standard_Real" :
+    def Focal(self):
         """
         * Computes the focal distance. It is the distance between the two focus focus1 and focus2 of the ellipse.
 
         :rtype: float
 
         """
-        return _gp.gp_Elips_Focal(self, *args)
+        return _gp.gp_Elips_Focal(self)
 
-    def Focus1(self, *args) -> "gp_Pnt" :
+    def Focus1(self):
         """
         * Returns the first focus of the ellipse. This focus is on the positive side of the 'XAxis' of the ellipse.
 
         :rtype: gp_Pnt
 
         """
-        return _gp.gp_Elips_Focus1(self, *args)
+        return _gp.gp_Elips_Focus1(self)
 
-    def Focus2(self, *args) -> "gp_Pnt" :
+    def Focus2(self):
         """
         * Returns the second focus of the ellipse. This focus is on the negative side of the 'XAxis' of the ellipse.
 
         :rtype: gp_Pnt
 
         """
-        return _gp.gp_Elips_Focus2(self, *args)
+        return _gp.gp_Elips_Focus2(self)
 
-    def Location(self, *args) -> "gp_Pnt const" :
+    def Location(self):
         """
         * Returns the center of the ellipse. It is the 'Location' point of the coordinate system of the ellipse.
 
         :rtype: gp_Pnt
 
         """
-        return _gp.gp_Elips_Location(self, *args)
+        return _gp.gp_Elips_Location(self)
 
-    def MajorRadius(self, *args) -> "Standard_Real" :
+    def MajorRadius(self):
         """
         * Returns the major radius of the ellipse.
 
         :rtype: float
 
         """
-        return _gp.gp_Elips_MajorRadius(self, *args)
+        return _gp.gp_Elips_MajorRadius(self)
 
-    def MinorRadius(self, *args) -> "Standard_Real" :
+    def MinorRadius(self):
         """
         * Returns the minor radius of the ellipse.
 
         :rtype: float
 
         """
-        return _gp.gp_Elips_MinorRadius(self, *args)
+        return _gp.gp_Elips_MinorRadius(self)
 
-    def Parameter(self, *args) -> "Standard_Real" :
+    def Parameter(self):
         """
         * Returns p = (1 - e * e) * MajorRadius where e is the eccentricity of the ellipse. Returns 0 if MajorRadius = 0
 
         :rtype: float
 
         """
-        return _gp.gp_Elips_Parameter(self, *args)
+        return _gp.gp_Elips_Parameter(self)
 
-    def Position(self, *args) -> "gp_Ax2 const" :
+    def Position(self):
         """
         * Returns the coordinate system of the ellipse.
 
         :rtype: gp_Ax2
 
         """
-        return _gp.gp_Elips_Position(self, *args)
+        return _gp.gp_Elips_Position(self)
 
-    def XAxis(self, *args) -> "gp_Ax1" :
+    def XAxis(self):
         """
         * Returns the 'XAxis' of the ellipse whose origin is the center of this ellipse. It is the major axis of the ellipse.
 
         :rtype: gp_Ax1
 
         """
-        return _gp.gp_Elips_XAxis(self, *args)
+        return _gp.gp_Elips_XAxis(self)
 
-    def YAxis(self, *args) -> "gp_Ax1" :
+    def YAxis(self):
         """
         * Returns the 'YAxis' of the ellipse whose unit vector is the 'X Direction' or the 'Y Direction' of the local coordinate system of this ellipse. This is the minor axis of the ellipse.
 
         :rtype: gp_Ax1
 
         """
-        return _gp.gp_Elips_YAxis(self, *args)
+        return _gp.gp_Elips_YAxis(self)
 
-    def Mirror(self, *args) -> "void" :
+    def Mirror(self, *args):
         """
         :param P:
         :type P: gp_Pnt
@@ -4978,7 +5005,7 @@ class gp_Elips(object):
         """
         return _gp.gp_Elips_Mirror(self, *args)
 
-    def Mirrored(self, *args) -> "gp_Elips" :
+    def Mirrored(self, *args):
         """
         * Performs the symmetrical transformation of an ellipse with respect to the point P which is the center of the symmetry.
 
@@ -5001,7 +5028,7 @@ class gp_Elips(object):
         """
         return _gp.gp_Elips_Mirrored(self, *args)
 
-    def Rotate(self, *args) -> "void" :
+    def Rotate(self, *args):
         """
         :param A1:
         :type A1: gp_Ax1
@@ -5012,7 +5039,7 @@ class gp_Elips(object):
         """
         return _gp.gp_Elips_Rotate(self, *args)
 
-    def Rotated(self, *args) -> "gp_Elips" :
+    def Rotated(self, *args):
         """
         * Rotates an ellipse. A1 is the axis of the rotation. Ang is the angular value of the rotation in radians.
 
@@ -5025,7 +5052,7 @@ class gp_Elips(object):
         """
         return _gp.gp_Elips_Rotated(self, *args)
 
-    def Scale(self, *args) -> "void" :
+    def Scale(self, *args):
         """
         :param P:
         :type P: gp_Pnt
@@ -5036,7 +5063,7 @@ class gp_Elips(object):
         """
         return _gp.gp_Elips_Scale(self, *args)
 
-    def Scaled(self, *args) -> "gp_Elips" :
+    def Scaled(self, *args):
         """
         * Scales an ellipse. S is the scaling value.
 
@@ -5049,7 +5076,7 @@ class gp_Elips(object):
         """
         return _gp.gp_Elips_Scaled(self, *args)
 
-    def Transform(self, *args) -> "void" :
+    def Transform(self, *args):
         """
         :param T:
         :type T: gp_Trsf
@@ -5058,7 +5085,7 @@ class gp_Elips(object):
         """
         return _gp.gp_Elips_Transform(self, *args)
 
-    def Transformed(self, *args) -> "gp_Elips" :
+    def Transformed(self, *args):
         """
         * Transforms an ellipse with the transformation T from class Trsf.
 
@@ -5069,7 +5096,7 @@ class gp_Elips(object):
         """
         return _gp.gp_Elips_Transformed(self, *args)
 
-    def Translate(self, *args) -> "void" :
+    def Translate(self, *args):
         """
         :param V:
         :type V: gp_Vec
@@ -5084,7 +5111,7 @@ class gp_Elips(object):
         """
         return _gp.gp_Elips_Translate(self, *args)
 
-    def Translated(self, *args) -> "gp_Elips" :
+    def Translated(self, *args):
         """
         * Translates an ellipse in the direction of the vector V. The magnitude of the translation is the vector's magnitude.
 
@@ -5103,21 +5130,21 @@ class gp_Elips(object):
         """
         return _gp.gp_Elips_Translated(self, *args)
 
-    def _CSFDB_Getgp_Elipspos(self, *args) -> "gp_Ax2 const" :
+    def _CSFDB_Getgp_Elipspos(self):
         """
         :rtype: gp_Ax2
 
         """
-        return _gp.gp_Elips__CSFDB_Getgp_Elipspos(self, *args)
+        return _gp.gp_Elips__CSFDB_Getgp_Elipspos(self)
 
-    def _CSFDB_Getgp_ElipsmajorRadius(self, *args) -> "Standard_Real" :
+    def _CSFDB_Getgp_ElipsmajorRadius(self):
         """
         :rtype: float
 
         """
-        return _gp.gp_Elips__CSFDB_Getgp_ElipsmajorRadius(self, *args)
+        return _gp.gp_Elips__CSFDB_Getgp_ElipsmajorRadius(self)
 
-    def _CSFDB_Setgp_ElipsmajorRadius(self, *args) -> "void" :
+    def _CSFDB_Setgp_ElipsmajorRadius(self, *args):
         """
         :param p:
         :type p: float
@@ -5126,14 +5153,14 @@ class gp_Elips(object):
         """
         return _gp.gp_Elips__CSFDB_Setgp_ElipsmajorRadius(self, *args)
 
-    def _CSFDB_Getgp_ElipsminorRadius(self, *args) -> "Standard_Real" :
+    def _CSFDB_Getgp_ElipsminorRadius(self):
         """
         :rtype: float
 
         """
-        return _gp.gp_Elips__CSFDB_Getgp_ElipsminorRadius(self, *args)
+        return _gp.gp_Elips__CSFDB_Getgp_ElipsminorRadius(self)
 
-    def _CSFDB_Setgp_ElipsminorRadius(self, *args) -> "void" :
+    def _CSFDB_Setgp_ElipsminorRadius(self, *args):
         """
         :param p:
         :type p: float
@@ -5210,6 +5237,18 @@ class gp_Elips2d(object):
         :type Sense: bool
         :rtype: None
 
+        * Creates an ellipse with the major axis, the major and the minor radius. The location of the MajorAxis is the center of the ellipse. The sense of parametrization is given by Sense. Warnings : It is possible to create an ellipse with MajorRadius = MinorRadius. Raises ConstructionError if MajorRadius < MinorRadius or MinorRadius < 0.0
+
+        :param MajorAxis:
+        :type MajorAxis: gp_Ax2d
+        :param MajorRadius:
+        :type MajorRadius: float
+        :param MinorRadius:
+        :type MinorRadius: float
+        :param Sense: default value is Standard_True
+        :type Sense: bool
+        :rtype: None
+
         * Creates an ellipse with radii MajorRadius and MinorRadius, positioned in the plane by coordinate system A where: - the origin of A is the center of the ellipse, - the 'X Direction' of A defines the major axis of the ellipse, that is, the major radius MajorRadius is measured along this axis, and - the 'Y Direction' of A defines the minor axis of the ellipse, that is, the minor radius MinorRadius is measured along this axis, and - the orientation (direct or indirect sense) of A gives the orientation of the ellipse. Warnings : It is possible to create an ellipse with MajorRadius = MinorRadius. Raises ConstructionError if MajorRadius < MinorRadius or MinorRadius < 0.0
 
         :param A:
@@ -5222,7 +5261,7 @@ class gp_Elips2d(object):
 
         """
         _gp.gp_Elips2d_swiginit(self,_gp.new_gp_Elips2d(*args))
-    def SetLocation(self, *args) -> "void" :
+    def SetLocation(self, *args):
         """
         * Modifies this ellipse, by redefining its local coordinate system so that - its origin becomes P.
 
@@ -5233,7 +5272,7 @@ class gp_Elips2d(object):
         """
         return _gp.gp_Elips2d_SetLocation(self, *args)
 
-    def SetMajorRadius(self, *args) -> "void" :
+    def SetMajorRadius(self, *args):
         """
         * Changes the value of the major radius. Raises ConstructionError if MajorRadius < MinorRadius.
 
@@ -5244,7 +5283,7 @@ class gp_Elips2d(object):
         """
         return _gp.gp_Elips2d_SetMajorRadius(self, *args)
 
-    def SetMinorRadius(self, *args) -> "void" :
+    def SetMinorRadius(self, *args):
         """
         * Changes the value of the minor radius. Raises ConstructionError if MajorRadius < MinorRadius or MinorRadius < 0.0
 
@@ -5255,7 +5294,7 @@ class gp_Elips2d(object):
         """
         return _gp.gp_Elips2d_SetMinorRadius(self, *args)
 
-    def SetAxis(self, *args) -> "void" :
+    def SetAxis(self, *args):
         """
         * Modifies this ellipse, by redefining its local coordinate system so that it becomes A.
 
@@ -5266,7 +5305,7 @@ class gp_Elips2d(object):
         """
         return _gp.gp_Elips2d_SetAxis(self, *args)
 
-    def SetXAxis(self, *args) -> "void" :
+    def SetXAxis(self, *args):
         """
         * Modifies this ellipse, by redefining its local coordinate system so that its origin and its 'X Direction' become those of the axis A. The 'Y Direction' is then recomputed. The orientation of the local coordinate system is not modified.
 
@@ -5277,7 +5316,7 @@ class gp_Elips2d(object):
         """
         return _gp.gp_Elips2d_SetXAxis(self, *args)
 
-    def SetYAxis(self, *args) -> "void" :
+    def SetYAxis(self, *args):
         """
         * Modifies this ellipse, by redefining its local coordinate system so that its origin and its 'Y Direction' become those of the axis A. The 'X Direction' is then recomputed. The orientation of the local coordinate system is not modified.
 
@@ -5288,16 +5327,16 @@ class gp_Elips2d(object):
         """
         return _gp.gp_Elips2d_SetYAxis(self, *args)
 
-    def Area(self, *args) -> "Standard_Real" :
+    def Area(self):
         """
         * Computes the area of the ellipse.
 
         :rtype: float
 
         """
-        return _gp.gp_Elips2d_Area(self, *args)
+        return _gp.gp_Elips2d_Area(self)
 
-    def Coefficients(self, *args) -> "void" :
+    def Coefficients(self, *args):
         """
         * Returns the coefficients of the implicit equation of the ellipse. A * (X**2) + B * (Y**2) + 2*C*(X*Y) + 2*D*X + 2*E*Y + F = 0.
 
@@ -5318,147 +5357,147 @@ class gp_Elips2d(object):
         """
         return _gp.gp_Elips2d_Coefficients(self, *args)
 
-    def Directrix1(self, *args) -> "gp_Ax2d" :
+    def Directrix1(self):
         """
         * This directrix is the line normal to the XAxis of the ellipse in the local plane (Z = 0) at a distance d = MajorRadius / e from the center of the ellipse, where e is the eccentricity of the ellipse. This line is parallel to the 'YAxis'. The intersection point between directrix1 and the 'XAxis' is the location point of the directrix1. This point is on the positive side of the 'XAxis'. Raised if Eccentricity = 0.0. (The ellipse degenerates into a circle)
 
         :rtype: gp_Ax2d
 
         """
-        return _gp.gp_Elips2d_Directrix1(self, *args)
+        return _gp.gp_Elips2d_Directrix1(self)
 
-    def Directrix2(self, *args) -> "gp_Ax2d" :
+    def Directrix2(self):
         """
         * This line is obtained by the symmetrical transformation of 'Directrix1' with respect to the minor axis of the ellipse. Raised if Eccentricity = 0.0. (The ellipse degenerates into a circle).
 
         :rtype: gp_Ax2d
 
         """
-        return _gp.gp_Elips2d_Directrix2(self, *args)
+        return _gp.gp_Elips2d_Directrix2(self)
 
-    def Eccentricity(self, *args) -> "Standard_Real" :
+    def Eccentricity(self):
         """
         * Returns the eccentricity of the ellipse between 0.0 and 1.0 If f is the distance between the center of the ellipse and the Focus1 then the eccentricity e = f / MajorRadius. Returns 0 if MajorRadius = 0.
 
         :rtype: float
 
         """
-        return _gp.gp_Elips2d_Eccentricity(self, *args)
+        return _gp.gp_Elips2d_Eccentricity(self)
 
-    def Focal(self, *args) -> "Standard_Real" :
+    def Focal(self):
         """
         * Returns the distance between the center of the ellipse and focus1 or focus2.
 
         :rtype: float
 
         """
-        return _gp.gp_Elips2d_Focal(self, *args)
+        return _gp.gp_Elips2d_Focal(self)
 
-    def Focus1(self, *args) -> "gp_Pnt2d" :
+    def Focus1(self):
         """
         * Returns the first focus of the ellipse. This focus is on the positive side of the major axis of the ellipse.
 
         :rtype: gp_Pnt2d
 
         """
-        return _gp.gp_Elips2d_Focus1(self, *args)
+        return _gp.gp_Elips2d_Focus1(self)
 
-    def Focus2(self, *args) -> "gp_Pnt2d" :
+    def Focus2(self):
         """
         * Returns the second focus of the ellipse. This focus is on the negative side of the major axis of the ellipse.
 
         :rtype: gp_Pnt2d
 
         """
-        return _gp.gp_Elips2d_Focus2(self, *args)
+        return _gp.gp_Elips2d_Focus2(self)
 
-    def Location(self, *args) -> "gp_Pnt2d const" :
+    def Location(self):
         """
         * Returns the center of the ellipse.
 
         :rtype: gp_Pnt2d
 
         """
-        return _gp.gp_Elips2d_Location(self, *args)
+        return _gp.gp_Elips2d_Location(self)
 
-    def MajorRadius(self, *args) -> "Standard_Real" :
+    def MajorRadius(self):
         """
         * Returns the major radius of the Ellipse.
 
         :rtype: float
 
         """
-        return _gp.gp_Elips2d_MajorRadius(self, *args)
+        return _gp.gp_Elips2d_MajorRadius(self)
 
-    def MinorRadius(self, *args) -> "Standard_Real" :
+    def MinorRadius(self):
         """
         * Returns the minor radius of the Ellipse.
 
         :rtype: float
 
         """
-        return _gp.gp_Elips2d_MinorRadius(self, *args)
+        return _gp.gp_Elips2d_MinorRadius(self)
 
-    def Parameter(self, *args) -> "Standard_Real" :
+    def Parameter(self):
         """
         * Returns p = (1 - e * e) * MajorRadius where e is the eccentricity of the ellipse. Returns 0 if MajorRadius = 0
 
         :rtype: float
 
         """
-        return _gp.gp_Elips2d_Parameter(self, *args)
+        return _gp.gp_Elips2d_Parameter(self)
 
-    def Axis(self, *args) -> "gp_Ax22d const" :
+    def Axis(self):
         """
         * Returns the major axis of the ellipse.
 
         :rtype: gp_Ax22d
 
         """
-        return _gp.gp_Elips2d_Axis(self, *args)
+        return _gp.gp_Elips2d_Axis(self)
 
-    def XAxis(self, *args) -> "gp_Ax2d" :
+    def XAxis(self):
         """
         * Returns the major axis of the ellipse.
 
         :rtype: gp_Ax2d
 
         """
-        return _gp.gp_Elips2d_XAxis(self, *args)
+        return _gp.gp_Elips2d_XAxis(self)
 
-    def YAxis(self, *args) -> "gp_Ax2d" :
+    def YAxis(self):
         """
         * Returns the minor axis of the ellipse. Reverses the direction of the circle.
 
         :rtype: gp_Ax2d
 
         """
-        return _gp.gp_Elips2d_YAxis(self, *args)
+        return _gp.gp_Elips2d_YAxis(self)
 
-    def Reverse(self, *args) -> "void" :
+    def Reverse(self):
         """
         :rtype: None
 
         """
-        return _gp.gp_Elips2d_Reverse(self, *args)
+        return _gp.gp_Elips2d_Reverse(self)
 
-    def Reversed(self, *args) -> "gp_Elips2d" :
+    def Reversed(self):
         """
         :rtype: gp_Elips2d
 
         """
-        return _gp.gp_Elips2d_Reversed(self, *args)
+        return _gp.gp_Elips2d_Reversed(self)
 
-    def IsDirect(self, *args) -> "Standard_Boolean" :
+    def IsDirect(self):
         """
         * Returns true if the local coordinate system is direct  and false in the other case.
 
         :rtype: bool
 
         """
-        return _gp.gp_Elips2d_IsDirect(self, *args)
+        return _gp.gp_Elips2d_IsDirect(self)
 
-    def Mirror(self, *args) -> "void" :
+    def Mirror(self, *args):
         """
         :param P:
         :type P: gp_Pnt2d
@@ -5471,7 +5510,7 @@ class gp_Elips2d(object):
         """
         return _gp.gp_Elips2d_Mirror(self, *args)
 
-    def Mirrored(self, *args) -> "gp_Elips2d" :
+    def Mirrored(self, *args):
         """
         * Performs the symmetrical transformation of a ellipse with respect to the point P which is the center of the symmetry
 
@@ -5488,7 +5527,7 @@ class gp_Elips2d(object):
         """
         return _gp.gp_Elips2d_Mirrored(self, *args)
 
-    def Rotate(self, *args) -> "void" :
+    def Rotate(self, *args):
         """
         :param P:
         :type P: gp_Pnt2d
@@ -5499,7 +5538,7 @@ class gp_Elips2d(object):
         """
         return _gp.gp_Elips2d_Rotate(self, *args)
 
-    def Rotated(self, *args) -> "gp_Elips2d" :
+    def Rotated(self, *args):
         """
         :param P:
         :type P: gp_Pnt2d
@@ -5510,7 +5549,7 @@ class gp_Elips2d(object):
         """
         return _gp.gp_Elips2d_Rotated(self, *args)
 
-    def Scale(self, *args) -> "void" :
+    def Scale(self, *args):
         """
         :param P:
         :type P: gp_Pnt2d
@@ -5521,7 +5560,7 @@ class gp_Elips2d(object):
         """
         return _gp.gp_Elips2d_Scale(self, *args)
 
-    def Scaled(self, *args) -> "gp_Elips2d" :
+    def Scaled(self, *args):
         """
         * Scales a ellipse. S is the scaling value.
 
@@ -5534,7 +5573,7 @@ class gp_Elips2d(object):
         """
         return _gp.gp_Elips2d_Scaled(self, *args)
 
-    def Transform(self, *args) -> "void" :
+    def Transform(self, *args):
         """
         :param T:
         :type T: gp_Trsf2d
@@ -5543,7 +5582,7 @@ class gp_Elips2d(object):
         """
         return _gp.gp_Elips2d_Transform(self, *args)
 
-    def Transformed(self, *args) -> "gp_Elips2d" :
+    def Transformed(self, *args):
         """
         * Transforms an ellipse with the transformation T from class Trsf2d.
 
@@ -5554,7 +5593,7 @@ class gp_Elips2d(object):
         """
         return _gp.gp_Elips2d_Transformed(self, *args)
 
-    def Translate(self, *args) -> "void" :
+    def Translate(self, *args):
         """
         :param V:
         :type V: gp_Vec2d
@@ -5569,7 +5608,7 @@ class gp_Elips2d(object):
         """
         return _gp.gp_Elips2d_Translate(self, *args)
 
-    def Translated(self, *args) -> "gp_Elips2d" :
+    def Translated(self, *args):
         """
         * Translates a ellipse in the direction of the vector V. The magnitude of the translation is the vector's magnitude.
 
@@ -5588,21 +5627,21 @@ class gp_Elips2d(object):
         """
         return _gp.gp_Elips2d_Translated(self, *args)
 
-    def _CSFDB_Getgp_Elips2dpos(self, *args) -> "gp_Ax22d const" :
+    def _CSFDB_Getgp_Elips2dpos(self):
         """
         :rtype: gp_Ax22d
 
         """
-        return _gp.gp_Elips2d__CSFDB_Getgp_Elips2dpos(self, *args)
+        return _gp.gp_Elips2d__CSFDB_Getgp_Elips2dpos(self)
 
-    def _CSFDB_Getgp_Elips2dmajorRadius(self, *args) -> "Standard_Real" :
+    def _CSFDB_Getgp_Elips2dmajorRadius(self):
         """
         :rtype: float
 
         """
-        return _gp.gp_Elips2d__CSFDB_Getgp_Elips2dmajorRadius(self, *args)
+        return _gp.gp_Elips2d__CSFDB_Getgp_Elips2dmajorRadius(self)
 
-    def _CSFDB_Setgp_Elips2dmajorRadius(self, *args) -> "void" :
+    def _CSFDB_Setgp_Elips2dmajorRadius(self, *args):
         """
         :param p:
         :type p: float
@@ -5611,14 +5650,14 @@ class gp_Elips2d(object):
         """
         return _gp.gp_Elips2d__CSFDB_Setgp_Elips2dmajorRadius(self, *args)
 
-    def _CSFDB_Getgp_Elips2dminorRadius(self, *args) -> "Standard_Real" :
+    def _CSFDB_Getgp_Elips2dminorRadius(self):
         """
         :rtype: float
 
         """
-        return _gp.gp_Elips2d__CSFDB_Getgp_Elips2dminorRadius(self, *args)
+        return _gp.gp_Elips2d__CSFDB_Getgp_Elips2dminorRadius(self)
 
-    def _CSFDB_Setgp_Elips2dminorRadius(self, *args) -> "void" :
+    def _CSFDB_Setgp_Elips2dminorRadius(self, *args):
         """
         :param p:
         :type p: float
@@ -5703,7 +5742,7 @@ class gp_GTrsf(object):
 
         """
         _gp.gp_GTrsf_swiginit(self,_gp.new_gp_GTrsf(*args))
-    def SetAffinity(self, *args) -> "void" :
+    def SetAffinity(self, *args):
         """
         * Changes this transformation into an affinity of ratio Ratio with respect to the axis A1. Note: an affinity is a point-by-point transformation that transforms any point P into a point P' such that if H is the orthogonal projection of P on the axis A1 or the plane A2, the vectors HP and HP' satisfy: HP' = Ratio * HP.
 
@@ -5724,14 +5763,14 @@ class gp_GTrsf(object):
         """
         return _gp.gp_GTrsf_SetAffinity(self, *args)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         * Replaces the coefficient (Row, Col) of the matrix representing this transformation by Value. Raises OutOfRange if Row < 1 or Row > 3 or Col < 1 or Col > 4
 
         :param Row:
-        :type Row: int
+        :type Row: Standard_Integer
         :param Col:
-        :type Col: int
+        :type Col: Standard_Integer
         :param Value:
         :type Value: float
         :rtype: None
@@ -5739,7 +5778,7 @@ class gp_GTrsf(object):
         """
         return _gp.gp_GTrsf_SetValue(self, *args)
 
-    def SetVectorialPart(self, *args) -> "void" :
+    def SetVectorialPart(self, *args):
         """
         * Replaces the vectorial part of this transformation by Matrix.
 
@@ -5750,7 +5789,7 @@ class gp_GTrsf(object):
         """
         return _gp.gp_GTrsf_SetVectorialPart(self, *args)
 
-    def SetTranslationPart(self, *args) -> "void" :
+    def SetTranslationPart(self, *args):
         """
         * Replaces the translation part of this transformation by the coordinates of the number triple Coord.
 
@@ -5761,7 +5800,7 @@ class gp_GTrsf(object):
         """
         return _gp.gp_GTrsf_SetTranslationPart(self, *args)
 
-    def SetTrsf(self, *args) -> "void" :
+    def SetTrsf(self, *args):
         """
         * Assigns the vectorial and translation parts of T to this transformation.
 
@@ -5772,90 +5811,90 @@ class gp_GTrsf(object):
         """
         return _gp.gp_GTrsf_SetTrsf(self, *args)
 
-    def IsNegative(self, *args) -> "Standard_Boolean" :
+    def IsNegative(self):
         """
         * Returns true if the determinant of the vectorial part of this transformation is negative.
 
         :rtype: bool
 
         """
-        return _gp.gp_GTrsf_IsNegative(self, *args)
+        return _gp.gp_GTrsf_IsNegative(self)
 
-    def IsSingular(self, *args) -> "Standard_Boolean" :
+    def IsSingular(self):
         """
         * Returns true if this transformation is singular (and therefore, cannot be inverted). Note: The Gauss LU decomposition is used to invert the transformation matrix. Consequently, the transformation is considered as singular if the largest pivot found is less than or equal to gp::Resolution(). Warning If this transformation is singular, it cannot be inverted.
 
         :rtype: bool
 
         """
-        return _gp.gp_GTrsf_IsSingular(self, *args)
+        return _gp.gp_GTrsf_IsSingular(self)
 
-    def Form(self, *args) -> "gp_TrsfForm" :
+    def Form(self):
         """
         * Returns the nature of the transformation. It can be an identity transformation, a rotation, a translation, a mirror transformation (relative to a point, an axis or a plane), a scaling transformation, a compound transformation or some other type of transformation.
 
         :rtype: gp_TrsfForm
 
         """
-        return _gp.gp_GTrsf_Form(self, *args)
+        return _gp.gp_GTrsf_Form(self)
 
-    def SetForm(self, *args) -> "void" :
+    def SetForm(self):
         """
         * verify and set the shape of the GTrsf Other or CompoundTrsf Ex : myGTrsf.SetValue(row1,col1,val1); myGTrsf.SetValue(row2,col2,val2); ... myGTrsf.SetForm();
 
         :rtype: None
 
         """
-        return _gp.gp_GTrsf_SetForm(self, *args)
+        return _gp.gp_GTrsf_SetForm(self)
 
-    def TranslationPart(self, *args) -> "gp_XYZ const" :
+    def TranslationPart(self):
         """
         * Returns the translation part of the GTrsf.
 
         :rtype: gp_XYZ
 
         """
-        return _gp.gp_GTrsf_TranslationPart(self, *args)
+        return _gp.gp_GTrsf_TranslationPart(self)
 
-    def VectorialPart(self, *args) -> "gp_Mat const" :
+    def VectorialPart(self):
         """
         * Computes the vectorial part of the GTrsf. The returned Matrix is a 3*3 matrix.
 
         :rtype: gp_Mat
 
         """
-        return _gp.gp_GTrsf_VectorialPart(self, *args)
+        return _gp.gp_GTrsf_VectorialPart(self)
 
-    def Value(self, *args) -> "Standard_Real" :
+    def Value(self, *args):
         """
         * Returns the coefficients of the global matrix of transformation. Raises OutOfRange if Row < 1 or Row > 3 or Col < 1 or Col > 4
 
         :param Row:
-        :type Row: int
+        :type Row: Standard_Integer
         :param Col:
-        :type Col: int
+        :type Col: Standard_Integer
         :rtype: float
 
         """
         return _gp.gp_GTrsf_Value(self, *args)
 
-    def Invert(self, *args) -> "void" :
+    def Invert(self):
         """
         :rtype: None
 
         """
-        return _gp.gp_GTrsf_Invert(self, *args)
+        return _gp.gp_GTrsf_Invert(self)
 
-    def Inverted(self, *args) -> "gp_GTrsf" :
+    def Inverted(self):
         """
         * Computes the reverse transformation. Raises an exception if the matrix of the transformation is not inversible.
 
         :rtype: gp_GTrsf
 
         """
-        return _gp.gp_GTrsf_Inverted(self, *args)
+        return _gp.gp_GTrsf_Inverted(self)
 
-    def Multiply(self, *args) -> "void" :
+    def Multiply(self, *args):
         """
         * Computes the transformation composed from T and <self>. In a C++ implementation you can also write Tcomposed = <self> * T. Example : GTrsf T1, T2, Tcomp; ............... //composition : Tcomp = T2.Multiplied(T1); // or (Tcomp = T2 * T1) // transformation of a point XYZ P(10.,3.,4.); XYZ P1(P); Tcomp.Transforms(P1); //using Tcomp XYZ P2(P); T1.Transforms(P2); //using T1 then T2 T2.Transforms(P2); // P1 = P2 !!! C++: alias operator *=
 
@@ -5866,7 +5905,7 @@ class gp_GTrsf(object):
         """
         return _gp.gp_GTrsf_Multiply(self, *args)
 
-    def Multiplied(self, *args) -> "gp_GTrsf" :
+    def Multiplied(self, *args):
         """
         * Computes the transformation composed with <self> and T. <self> = T * <self>
 
@@ -5877,7 +5916,7 @@ class gp_GTrsf(object):
         """
         return _gp.gp_GTrsf_Multiplied(self, *args)
 
-    def PreMultiply(self, *args) -> "void" :
+    def PreMultiply(self, *args):
         """
         * Computes the product of the transformation T and this transformation and assigns the result to this transformation. this = T * this
 
@@ -5888,27 +5927,27 @@ class gp_GTrsf(object):
         """
         return _gp.gp_GTrsf_PreMultiply(self, *args)
 
-    def Power(self, *args) -> "void" :
+    def Power(self, *args):
         """
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :rtype: None
 
         """
         return _gp.gp_GTrsf_Power(self, *args)
 
-    def Powered(self, *args) -> "gp_GTrsf" :
+    def Powered(self, *args):
         """
         * Computes: - the product of this transformation multiplied by itself N times, if N is positive, or - the product of the inverse of this transformation multiplied by itself |N| times, if N is negative. If N equals zero, the result is equal to the Identity transformation. I.e.: <self> * <self> * .......* <self>, N time. if N =0 <self> = Identity if N < 0 <self> = <self>.Inverse() *...........* <self>.Inverse(). Raises an exception if N < 0 and if the matrix of the transformation not inversible.
 
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :rtype: gp_GTrsf
 
         """
         return _gp.gp_GTrsf_Powered(self, *args)
 
-    def Transforms(self, *args) -> "void" :
+    def Transforms(self, *args):
         """
         :param Coord:
         :type Coord: gp_XYZ
@@ -5927,35 +5966,35 @@ class gp_GTrsf(object):
         """
         return _gp.gp_GTrsf_Transforms(self, *args)
 
-    def Trsf(self, *args) -> "gp_Trsf" :
+    def Trsf(self):
         """
         :rtype: gp_Trsf
 
         """
-        return _gp.gp_GTrsf_Trsf(self, *args)
+        return _gp.gp_GTrsf_Trsf(self)
 
-    def _CSFDB_Getgp_GTrsfmatrix(self, *args) -> "gp_Mat const" :
+    def _CSFDB_Getgp_GTrsfmatrix(self):
         """
         :rtype: gp_Mat
 
         """
-        return _gp.gp_GTrsf__CSFDB_Getgp_GTrsfmatrix(self, *args)
+        return _gp.gp_GTrsf__CSFDB_Getgp_GTrsfmatrix(self)
 
-    def _CSFDB_Getgp_GTrsfloc(self, *args) -> "gp_XYZ const" :
+    def _CSFDB_Getgp_GTrsfloc(self):
         """
         :rtype: gp_XYZ
 
         """
-        return _gp.gp_GTrsf__CSFDB_Getgp_GTrsfloc(self, *args)
+        return _gp.gp_GTrsf__CSFDB_Getgp_GTrsfloc(self)
 
-    def _CSFDB_Getgp_GTrsfshape(self, *args) -> "gp_TrsfForm" :
+    def _CSFDB_Getgp_GTrsfshape(self):
         """
         :rtype: gp_TrsfForm
 
         """
-        return _gp.gp_GTrsf__CSFDB_Getgp_GTrsfshape(self, *args)
+        return _gp.gp_GTrsf__CSFDB_Getgp_GTrsfshape(self)
 
-    def _CSFDB_Setgp_GTrsfshape(self, *args) -> "void" :
+    def _CSFDB_Setgp_GTrsfshape(self, *args):
         """
         :param p:
         :type p: gp_TrsfForm
@@ -5964,14 +6003,14 @@ class gp_GTrsf(object):
         """
         return _gp.gp_GTrsf__CSFDB_Setgp_GTrsfshape(self, *args)
 
-    def _CSFDB_Getgp_GTrsfscale(self, *args) -> "Standard_Real" :
+    def _CSFDB_Getgp_GTrsfscale(self):
         """
         :rtype: float
 
         """
-        return _gp.gp_GTrsf__CSFDB_Getgp_GTrsfscale(self, *args)
+        return _gp.gp_GTrsf__CSFDB_Getgp_GTrsfscale(self)
 
-    def _CSFDB_Setgp_GTrsfscale(self, *args) -> "void" :
+    def _CSFDB_Setgp_GTrsfscale(self, *args):
         """
         :param p:
         :type p: float
@@ -6044,7 +6083,7 @@ class gp_GTrsf2d(object):
 
         """
         _gp.gp_GTrsf2d_swiginit(self,_gp.new_gp_GTrsf2d(*args))
-    def SetAffinity(self, *args) -> "void" :
+    def SetAffinity(self, *args):
         """
         * Changes this transformation into an affinity of ratio Ratio with respect to the axis A. Note: An affinity is a point-by-point transformation that transforms any point P into a point P' such that if H is the orthogonal projection of P on the axis A, the vectors HP and HP' satisfy: HP' = Ratio * HP.
 
@@ -6057,14 +6096,14 @@ class gp_GTrsf2d(object):
         """
         return _gp.gp_GTrsf2d_SetAffinity(self, *args)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         * Replaces the coefficient (Row, Col) of the matrix representing this transformation by Value, Raises OutOfRange if Row < 1 or Row > 2 or Col < 1 or Col > 3
 
         :param Row:
-        :type Row: int
+        :type Row: Standard_Integer
         :param Col:
-        :type Col: int
+        :type Col: Standard_Integer
         :param Value:
         :type Value: float
         :rtype: None
@@ -6072,7 +6111,7 @@ class gp_GTrsf2d(object):
         """
         return _gp.gp_GTrsf2d_SetValue(self, *args)
 
-    def SetTranslationPart(self, *args) -> "void" :
+    def SetTranslationPart(self, *args):
         """
         * Replacesthe translation part of this transformation by the coordinates of the number pair Coord.
 
@@ -6083,7 +6122,7 @@ class gp_GTrsf2d(object):
         """
         return _gp.gp_GTrsf2d_SetTranslationPart(self, *args)
 
-    def SetTrsf2d(self, *args) -> "void" :
+    def SetTrsf2d(self, *args):
         """
         * Assigns the vectorial and translation parts of T to this transformation.
 
@@ -6094,7 +6133,7 @@ class gp_GTrsf2d(object):
         """
         return _gp.gp_GTrsf2d_SetTrsf2d(self, *args)
 
-    def SetVectorialPart(self, *args) -> "void" :
+    def SetVectorialPart(self, *args):
         """
         * Replaces the vectorial part of this transformation by Matrix.
 
@@ -6105,81 +6144,81 @@ class gp_GTrsf2d(object):
         """
         return _gp.gp_GTrsf2d_SetVectorialPart(self, *args)
 
-    def IsNegative(self, *args) -> "Standard_Boolean" :
+    def IsNegative(self):
         """
         * Returns true if the determinant of the vectorial part of this transformation is negative.
 
         :rtype: bool
 
         """
-        return _gp.gp_GTrsf2d_IsNegative(self, *args)
+        return _gp.gp_GTrsf2d_IsNegative(self)
 
-    def IsSingular(self, *args) -> "Standard_Boolean" :
+    def IsSingular(self):
         """
         * Returns true if this transformation is singular (and therefore, cannot be inverted). Note: The Gauss LU decomposition is used to invert the transformation matrix. Consequently, the transformation is considered as singular if the largest pivot found is less than or equal to gp::Resolution(). Warning If this transformation is singular, it cannot be inverted.
 
         :rtype: bool
 
         """
-        return _gp.gp_GTrsf2d_IsSingular(self, *args)
+        return _gp.gp_GTrsf2d_IsSingular(self)
 
-    def Form(self, *args) -> "gp_TrsfForm" :
+    def Form(self):
         """
         * Returns the nature of the transformation. It can be an identity transformation, a rotation, a translation, a mirror transformation (relative to a point or axis), a scaling transformation, a compound transformation or some other type of transformation.
 
         :rtype: gp_TrsfForm
 
         """
-        return _gp.gp_GTrsf2d_Form(self, *args)
+        return _gp.gp_GTrsf2d_Form(self)
 
-    def TranslationPart(self, *args) -> "gp_XY const" :
+    def TranslationPart(self):
         """
         * Returns the translation part of the GTrsf2d.
 
         :rtype: gp_XY
 
         """
-        return _gp.gp_GTrsf2d_TranslationPart(self, *args)
+        return _gp.gp_GTrsf2d_TranslationPart(self)
 
-    def VectorialPart(self, *args) -> "gp_Mat2d const" :
+    def VectorialPart(self):
         """
         * Computes the vectorial part of the GTrsf2d. The returned Matrix is a 2*2 matrix.
 
         :rtype: gp_Mat2d
 
         """
-        return _gp.gp_GTrsf2d_VectorialPart(self, *args)
+        return _gp.gp_GTrsf2d_VectorialPart(self)
 
-    def Value(self, *args) -> "Standard_Real" :
+    def Value(self, *args):
         """
         * Returns the coefficients of the global matrix of transformation. Raised OutOfRange if Row < 1 or Row > 2 or Col < 1 or Col > 3
 
         :param Row:
-        :type Row: int
+        :type Row: Standard_Integer
         :param Col:
-        :type Col: int
+        :type Col: Standard_Integer
         :rtype: float
 
         """
         return _gp.gp_GTrsf2d_Value(self, *args)
 
-    def Invert(self, *args) -> "void" :
+    def Invert(self):
         """
         :rtype: None
 
         """
-        return _gp.gp_GTrsf2d_Invert(self, *args)
+        return _gp.gp_GTrsf2d_Invert(self)
 
-    def Inverted(self, *args) -> "gp_GTrsf2d" :
+    def Inverted(self):
         """
         * Computes the reverse transformation. Raised an exception if the matrix of the transformation is not inversible.
 
         :rtype: gp_GTrsf2d
 
         """
-        return _gp.gp_GTrsf2d_Inverted(self, *args)
+        return _gp.gp_GTrsf2d_Inverted(self)
 
-    def Multiply(self, *args) -> "void" :
+    def Multiply(self, *args):
         """
         :param T:
         :type T: gp_GTrsf2d
@@ -6188,7 +6227,7 @@ class gp_GTrsf2d(object):
         """
         return _gp.gp_GTrsf2d_Multiply(self, *args)
 
-    def __imul__(self, *args) -> "void" :
+    def __imul__(self, *args):
         """
         :param T:
         :type T: gp_GTrsf2d
@@ -6197,7 +6236,7 @@ class gp_GTrsf2d(object):
         """
         return _gp.gp_GTrsf2d___imul__(self, *args)
 
-    def Multiplied(self, *args) -> "gp_GTrsf2d" :
+    def Multiplied(self, *args):
         """
         * Computes the transformation composed with T and <self>. In a C++ implementation you can also write Tcomposed = <self> * T. Example : GTrsf2d T1, T2, Tcomp; ............... //composition : Tcomp = T2.Multiplied(T1); // or (Tcomp = T2 * T1) // transformation of a point XY P(10.,3.); XY P1(P); Tcomp.Transforms(P1); //using Tcomp XY P2(P); T1.Transforms(P2); //using T1 then T2 T2.Transforms(P2); // P1 = P2 !!!
 
@@ -6208,7 +6247,7 @@ class gp_GTrsf2d(object):
         """
         return _gp.gp_GTrsf2d_Multiplied(self, *args)
 
-    def __mul__(self, *args) -> "gp_GTrsf2d" :
+    def __mul__(self, *args):
         """
         :param T:
         :type T: gp_GTrsf2d
@@ -6217,7 +6256,7 @@ class gp_GTrsf2d(object):
         """
         return _gp.gp_GTrsf2d___mul__(self, *args)
 
-    def PreMultiply(self, *args) -> "void" :
+    def PreMultiply(self, *args):
         """
         * Computes the product of the transformation T and this transformation, and assigns the result to this transformation: this = T * this
 
@@ -6228,27 +6267,27 @@ class gp_GTrsf2d(object):
         """
         return _gp.gp_GTrsf2d_PreMultiply(self, *args)
 
-    def Power(self, *args) -> "void" :
+    def Power(self, *args):
         """
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :rtype: None
 
         """
         return _gp.gp_GTrsf2d_Power(self, *args)
 
-    def Powered(self, *args) -> "gp_GTrsf2d" :
+    def Powered(self, *args):
         """
         * Computes the following composition of transformations <self> * <self> * .......* <self>, N time. if N = 0 <self> = Identity if N < 0 <self> = <self>.Inverse() *...........* <self>.Inverse(). Raises an exception if N < 0 and if the matrix of the transformation is not inversible.
 
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :rtype: gp_GTrsf2d
 
         """
         return _gp.gp_GTrsf2d_Powered(self, *args)
 
-    def Transformed(self, *args) -> "gp_XY" :
+    def Transformed(self, *args):
         """
         :param Coord:
         :type Coord: gp_XY
@@ -6257,7 +6296,7 @@ class gp_GTrsf2d(object):
         """
         return _gp.gp_GTrsf2d_Transformed(self, *args)
 
-    def Transforms(self, *args) -> "void" :
+    def Transforms(self, *args):
         """
         :param Coord:
         :type Coord: gp_XY
@@ -6274,37 +6313,37 @@ class gp_GTrsf2d(object):
         """
         return _gp.gp_GTrsf2d_Transforms(self, *args)
 
-    def Trsf2d(self, *args) -> "gp_Trsf2d" :
+    def Trsf2d(self):
         """
         * Converts this transformation into a gp_Trsf2d transformation. Exceptions Standard_ConstructionError if this transformation cannot be converted, i.e. if its form is gp_Other.
 
         :rtype: gp_Trsf2d
 
         """
-        return _gp.gp_GTrsf2d_Trsf2d(self, *args)
+        return _gp.gp_GTrsf2d_Trsf2d(self)
 
-    def _CSFDB_Getgp_GTrsf2dmatrix(self, *args) -> "gp_Mat2d const" :
+    def _CSFDB_Getgp_GTrsf2dmatrix(self):
         """
         :rtype: gp_Mat2d
 
         """
-        return _gp.gp_GTrsf2d__CSFDB_Getgp_GTrsf2dmatrix(self, *args)
+        return _gp.gp_GTrsf2d__CSFDB_Getgp_GTrsf2dmatrix(self)
 
-    def _CSFDB_Getgp_GTrsf2dloc(self, *args) -> "gp_XY const" :
+    def _CSFDB_Getgp_GTrsf2dloc(self):
         """
         :rtype: gp_XY
 
         """
-        return _gp.gp_GTrsf2d__CSFDB_Getgp_GTrsf2dloc(self, *args)
+        return _gp.gp_GTrsf2d__CSFDB_Getgp_GTrsf2dloc(self)
 
-    def _CSFDB_Getgp_GTrsf2dshape(self, *args) -> "gp_TrsfForm" :
+    def _CSFDB_Getgp_GTrsf2dshape(self):
         """
         :rtype: gp_TrsfForm
 
         """
-        return _gp.gp_GTrsf2d__CSFDB_Getgp_GTrsf2dshape(self, *args)
+        return _gp.gp_GTrsf2d__CSFDB_Getgp_GTrsf2dshape(self)
 
-    def _CSFDB_Setgp_GTrsf2dshape(self, *args) -> "void" :
+    def _CSFDB_Setgp_GTrsf2dshape(self, *args):
         """
         :param p:
         :type p: gp_TrsfForm
@@ -6313,14 +6352,14 @@ class gp_GTrsf2d(object):
         """
         return _gp.gp_GTrsf2d__CSFDB_Setgp_GTrsf2dshape(self, *args)
 
-    def _CSFDB_Getgp_GTrsf2dscale(self, *args) -> "Standard_Real" :
+    def _CSFDB_Getgp_GTrsf2dscale(self):
         """
         :rtype: float
 
         """
-        return _gp.gp_GTrsf2d__CSFDB_Getgp_GTrsf2dscale(self, *args)
+        return _gp.gp_GTrsf2d__CSFDB_Getgp_GTrsf2dscale(self)
 
-    def _CSFDB_Setgp_GTrsf2dscale(self, *args) -> "void" :
+    def _CSFDB_Setgp_GTrsf2dscale(self, *args):
         """
         :param p:
         :type p: float
@@ -6391,7 +6430,7 @@ class gp_Hypr(object):
 
         """
         _gp.gp_Hypr_swiginit(self,_gp.new_gp_Hypr(*args))
-    def SetAxis(self, *args) -> "void" :
+    def SetAxis(self, *args):
         """
         * Modifies this hyperbola, by redefining its local coordinate system so that: - its origin and 'main Direction' become those of the axis A1 (the 'X Direction' and 'Y Direction' are then recomputed in the same way as for any gp_Ax2). Raises ConstructionError if the direction of A1 is parallel to the direction of the 'XAxis' of the hyperbola.
 
@@ -6402,7 +6441,7 @@ class gp_Hypr(object):
         """
         return _gp.gp_Hypr_SetAxis(self, *args)
 
-    def SetLocation(self, *args) -> "void" :
+    def SetLocation(self, *args):
         """
         * Modifies this hyperbola, by redefining its local coordinate system so that its origin becomes P.
 
@@ -6413,7 +6452,7 @@ class gp_Hypr(object):
         """
         return _gp.gp_Hypr_SetLocation(self, *args)
 
-    def SetMajorRadius(self, *args) -> "void" :
+    def SetMajorRadius(self, *args):
         """
         * Modifies the major radius of this hyperbola. Exceptions Standard_ConstructionError if MajorRadius is negative.
 
@@ -6424,7 +6463,7 @@ class gp_Hypr(object):
         """
         return _gp.gp_Hypr_SetMajorRadius(self, *args)
 
-    def SetMinorRadius(self, *args) -> "void" :
+    def SetMinorRadius(self, *args):
         """
         * Modifies the minor radius of this hyperbola. Exceptions Standard_ConstructionError if MinorRadius is negative.
 
@@ -6435,7 +6474,7 @@ class gp_Hypr(object):
         """
         return _gp.gp_Hypr_SetMinorRadius(self, *args)
 
-    def SetPosition(self, *args) -> "void" :
+    def SetPosition(self, *args):
         """
         * Modifies this hyperbola, by redefining its local coordinate system so that it becomes A2.
 
@@ -6446,178 +6485,178 @@ class gp_Hypr(object):
         """
         return _gp.gp_Hypr_SetPosition(self, *args)
 
-    def Asymptote1(self, *args) -> "gp_Ax1" :
+    def Asymptote1(self):
         """
         * In the local coordinate system of the hyperbola the equation of the hyperbola is (X*X)/(A*A) - (Y*Y)/(B*B) = 1.0 and the equation of the first asymptote is Y = (B/A)*X where A is the major radius and B is the minor radius. Raises ConstructionError if MajorRadius = 0.0
 
         :rtype: gp_Ax1
 
         """
-        return _gp.gp_Hypr_Asymptote1(self, *args)
+        return _gp.gp_Hypr_Asymptote1(self)
 
-    def Asymptote2(self, *args) -> "gp_Ax1" :
+    def Asymptote2(self):
         """
         * In the local coordinate system of the hyperbola the equation of the hyperbola is (X*X)/(A*A) - (Y*Y)/(B*B) = 1.0 and the equation of the first asymptote is Y = -(B/A)*X. where A is the major radius and B is the minor radius. Raises ConstructionError if MajorRadius = 0.0
 
         :rtype: gp_Ax1
 
         """
-        return _gp.gp_Hypr_Asymptote2(self, *args)
+        return _gp.gp_Hypr_Asymptote2(self)
 
-    def Axis(self, *args) -> "gp_Ax1 const" :
+    def Axis(self):
         """
         * Returns the axis passing through the center, and normal to the plane of this hyperbola.
 
         :rtype: gp_Ax1
 
         """
-        return _gp.gp_Hypr_Axis(self, *args)
+        return _gp.gp_Hypr_Axis(self)
 
-    def ConjugateBranch1(self, *args) -> "gp_Hypr" :
+    def ConjugateBranch1(self):
         """
         * Computes the branch of hyperbola which is on the positive side of the 'YAxis' of <self>.
 
         :rtype: gp_Hypr
 
         """
-        return _gp.gp_Hypr_ConjugateBranch1(self, *args)
+        return _gp.gp_Hypr_ConjugateBranch1(self)
 
-    def ConjugateBranch2(self, *args) -> "gp_Hypr" :
+    def ConjugateBranch2(self):
         """
         * Computes the branch of hyperbola which is on the negative side of the 'YAxis' of <self>.
 
         :rtype: gp_Hypr
 
         """
-        return _gp.gp_Hypr_ConjugateBranch2(self, *args)
+        return _gp.gp_Hypr_ConjugateBranch2(self)
 
-    def Directrix1(self, *args) -> "gp_Ax1" :
+    def Directrix1(self):
         """
         * This directrix is the line normal to the XAxis of the hyperbola in the local plane (Z = 0) at a distance d = MajorRadius / e from the center of the hyperbola, where e is the eccentricity of the hyperbola. This line is parallel to the 'YAxis'. The intersection point between the directrix1 and the 'XAxis' is the 'Location' point of the directrix1. This point is on the positive side of the 'XAxis'.
 
         :rtype: gp_Ax1
 
         """
-        return _gp.gp_Hypr_Directrix1(self, *args)
+        return _gp.gp_Hypr_Directrix1(self)
 
-    def Directrix2(self, *args) -> "gp_Ax1" :
+    def Directrix2(self):
         """
         * This line is obtained by the symmetrical transformation of 'Directrix1' with respect to the 'YAxis' of the hyperbola.
 
         :rtype: gp_Ax1
 
         """
-        return _gp.gp_Hypr_Directrix2(self, *args)
+        return _gp.gp_Hypr_Directrix2(self)
 
-    def Eccentricity(self, *args) -> "Standard_Real" :
+    def Eccentricity(self):
         """
         * Returns the excentricity of the hyperbola (e > 1). If f is the distance between the location of the hyperbola and the Focus1 then the eccentricity e = f / MajorRadius. Raises DomainError if MajorRadius = 0.0
 
         :rtype: float
 
         """
-        return _gp.gp_Hypr_Eccentricity(self, *args)
+        return _gp.gp_Hypr_Eccentricity(self)
 
-    def Focal(self, *args) -> "Standard_Real" :
+    def Focal(self):
         """
         * Computes the focal distance. It is the distance between the the two focus of the hyperbola.
 
         :rtype: float
 
         """
-        return _gp.gp_Hypr_Focal(self, *args)
+        return _gp.gp_Hypr_Focal(self)
 
-    def Focus1(self, *args) -> "gp_Pnt" :
+    def Focus1(self):
         """
         * Returns the first focus of the hyperbola. This focus is on the positive side of the 'XAxis' of the hyperbola.
 
         :rtype: gp_Pnt
 
         """
-        return _gp.gp_Hypr_Focus1(self, *args)
+        return _gp.gp_Hypr_Focus1(self)
 
-    def Focus2(self, *args) -> "gp_Pnt" :
+    def Focus2(self):
         """
         * Returns the second focus of the hyperbola. This focus is on the negative side of the 'XAxis' of the hyperbola.
 
         :rtype: gp_Pnt
 
         """
-        return _gp.gp_Hypr_Focus2(self, *args)
+        return _gp.gp_Hypr_Focus2(self)
 
-    def Location(self, *args) -> "gp_Pnt const" :
+    def Location(self):
         """
         * Returns the location point of the hyperbola. It is the intersection point between the 'XAxis' and the 'YAxis'.
 
         :rtype: gp_Pnt
 
         """
-        return _gp.gp_Hypr_Location(self, *args)
+        return _gp.gp_Hypr_Location(self)
 
-    def MajorRadius(self, *args) -> "Standard_Real" :
+    def MajorRadius(self):
         """
         * Returns the major radius of the hyperbola. It is the radius on the 'XAxis' of the hyperbola.
 
         :rtype: float
 
         """
-        return _gp.gp_Hypr_MajorRadius(self, *args)
+        return _gp.gp_Hypr_MajorRadius(self)
 
-    def MinorRadius(self, *args) -> "Standard_Real" :
+    def MinorRadius(self):
         """
         * Returns the minor radius of the hyperbola. It is the radius on the 'YAxis' of the hyperbola.
 
         :rtype: float
 
         """
-        return _gp.gp_Hypr_MinorRadius(self, *args)
+        return _gp.gp_Hypr_MinorRadius(self)
 
-    def OtherBranch(self, *args) -> "gp_Hypr" :
+    def OtherBranch(self):
         """
         * Returns the branch of hyperbola obtained by doing the symmetrical transformation of <self> with respect to the 'YAxis' of <self>.
 
         :rtype: gp_Hypr
 
         """
-        return _gp.gp_Hypr_OtherBranch(self, *args)
+        return _gp.gp_Hypr_OtherBranch(self)
 
-    def Parameter(self, *args) -> "Standard_Real" :
+    def Parameter(self):
         """
         * Returns p = (e * e - 1) * MajorRadius where e is the eccentricity of the hyperbola. Raises DomainError if MajorRadius = 0.0
 
         :rtype: float
 
         """
-        return _gp.gp_Hypr_Parameter(self, *args)
+        return _gp.gp_Hypr_Parameter(self)
 
-    def Position(self, *args) -> "gp_Ax2 const" :
+    def Position(self):
         """
         * Returns the coordinate system of the hyperbola.
 
         :rtype: gp_Ax2
 
         """
-        return _gp.gp_Hypr_Position(self, *args)
+        return _gp.gp_Hypr_Position(self)
 
-    def XAxis(self, *args) -> "gp_Ax1" :
+    def XAxis(self):
         """
         * Computes an axis, whose - the origin is the center of this hyperbola, and - the unit vector is the 'X Direction' of the local coordinate system of this hyperbola. These axes are, the major axis (the 'X Axis') and of this hyperboReturns the 'XAxis' of the hyperbola.
 
         :rtype: gp_Ax1
 
         """
-        return _gp.gp_Hypr_XAxis(self, *args)
+        return _gp.gp_Hypr_XAxis(self)
 
-    def YAxis(self, *args) -> "gp_Ax1" :
+    def YAxis(self):
         """
         * Computes an axis, whose - the origin is the center of this hyperbola, and - the unit vector is the 'Y Direction' of the local coordinate system of this hyperbola. These axes are the minor axis (the 'Y Axis') of this hyperbola
 
         :rtype: gp_Ax1
 
         """
-        return _gp.gp_Hypr_YAxis(self, *args)
+        return _gp.gp_Hypr_YAxis(self)
 
-    def Mirror(self, *args) -> "void" :
+    def Mirror(self, *args):
         """
         :param P:
         :type P: gp_Pnt
@@ -6634,7 +6673,7 @@ class gp_Hypr(object):
         """
         return _gp.gp_Hypr_Mirror(self, *args)
 
-    def Mirrored(self, *args) -> "gp_Hypr" :
+    def Mirrored(self, *args):
         """
         * Performs the symmetrical transformation of an hyperbola with respect to the point P which is the center of the symmetry.
 
@@ -6657,7 +6696,7 @@ class gp_Hypr(object):
         """
         return _gp.gp_Hypr_Mirrored(self, *args)
 
-    def Rotate(self, *args) -> "void" :
+    def Rotate(self, *args):
         """
         :param A1:
         :type A1: gp_Ax1
@@ -6668,7 +6707,7 @@ class gp_Hypr(object):
         """
         return _gp.gp_Hypr_Rotate(self, *args)
 
-    def Rotated(self, *args) -> "gp_Hypr" :
+    def Rotated(self, *args):
         """
         * Rotates an hyperbola. A1 is the axis of the rotation. Ang is the angular value of the rotation in radians.
 
@@ -6681,7 +6720,7 @@ class gp_Hypr(object):
         """
         return _gp.gp_Hypr_Rotated(self, *args)
 
-    def Scale(self, *args) -> "void" :
+    def Scale(self, *args):
         """
         :param P:
         :type P: gp_Pnt
@@ -6692,7 +6731,7 @@ class gp_Hypr(object):
         """
         return _gp.gp_Hypr_Scale(self, *args)
 
-    def Scaled(self, *args) -> "gp_Hypr" :
+    def Scaled(self, *args):
         """
         * Scales an hyperbola. S is the scaling value.
 
@@ -6705,7 +6744,7 @@ class gp_Hypr(object):
         """
         return _gp.gp_Hypr_Scaled(self, *args)
 
-    def Transform(self, *args) -> "void" :
+    def Transform(self, *args):
         """
         :param T:
         :type T: gp_Trsf
@@ -6714,7 +6753,7 @@ class gp_Hypr(object):
         """
         return _gp.gp_Hypr_Transform(self, *args)
 
-    def Transformed(self, *args) -> "gp_Hypr" :
+    def Transformed(self, *args):
         """
         * Transforms an hyperbola with the transformation T from class Trsf.
 
@@ -6725,7 +6764,7 @@ class gp_Hypr(object):
         """
         return _gp.gp_Hypr_Transformed(self, *args)
 
-    def Translate(self, *args) -> "void" :
+    def Translate(self, *args):
         """
         :param V:
         :type V: gp_Vec
@@ -6740,7 +6779,7 @@ class gp_Hypr(object):
         """
         return _gp.gp_Hypr_Translate(self, *args)
 
-    def Translated(self, *args) -> "gp_Hypr" :
+    def Translated(self, *args):
         """
         * Translates an hyperbola in the direction of the vector V. The magnitude of the translation is the vector's magnitude.
 
@@ -6759,21 +6798,21 @@ class gp_Hypr(object):
         """
         return _gp.gp_Hypr_Translated(self, *args)
 
-    def _CSFDB_Getgp_Hyprpos(self, *args) -> "gp_Ax2 const" :
+    def _CSFDB_Getgp_Hyprpos(self):
         """
         :rtype: gp_Ax2
 
         """
-        return _gp.gp_Hypr__CSFDB_Getgp_Hyprpos(self, *args)
+        return _gp.gp_Hypr__CSFDB_Getgp_Hyprpos(self)
 
-    def _CSFDB_Getgp_HyprmajorRadius(self, *args) -> "Standard_Real" :
+    def _CSFDB_Getgp_HyprmajorRadius(self):
         """
         :rtype: float
 
         """
-        return _gp.gp_Hypr__CSFDB_Getgp_HyprmajorRadius(self, *args)
+        return _gp.gp_Hypr__CSFDB_Getgp_HyprmajorRadius(self)
 
-    def _CSFDB_Setgp_HyprmajorRadius(self, *args) -> "void" :
+    def _CSFDB_Setgp_HyprmajorRadius(self, *args):
         """
         :param p:
         :type p: float
@@ -6782,14 +6821,14 @@ class gp_Hypr(object):
         """
         return _gp.gp_Hypr__CSFDB_Setgp_HyprmajorRadius(self, *args)
 
-    def _CSFDB_Getgp_HyprminorRadius(self, *args) -> "Standard_Real" :
+    def _CSFDB_Getgp_HyprminorRadius(self):
         """
         :rtype: float
 
         """
-        return _gp.gp_Hypr__CSFDB_Getgp_HyprminorRadius(self, *args)
+        return _gp.gp_Hypr__CSFDB_Getgp_HyprminorRadius(self)
 
-    def _CSFDB_Setgp_HyprminorRadius(self, *args) -> "void" :
+    def _CSFDB_Setgp_HyprminorRadius(self, *args):
         """
         :param p:
         :type p: float
@@ -6870,6 +6909,18 @@ class gp_Hypr2d(object):
         :type Sense: bool
         :rtype: None
 
+        * Creates a hyperbola with radii MajorRadius and MinorRadius, centered on the origin of MajorAxis and where the unit vector of MajorAxis is the 'X Direction' of the local coordinate system of the hyperbola. This coordinate system is direct if Sense is true (the default value), and indirect if Sense is false. Warnings : It is yet possible to create an Hyperbola with MajorRadius <= MinorRadius. Raises ConstructionError if MajorRadius < 0.0 or MinorRadius < 0.0
+
+        :param MajorAxis:
+        :type MajorAxis: gp_Ax2d
+        :param MajorRadius:
+        :type MajorRadius: float
+        :param MinorRadius:
+        :type MinorRadius: float
+        :param Sense: default value is Standard_True
+        :type Sense: bool
+        :rtype: None
+
         * a hyperbola with radii MajorRadius and MinorRadius, positioned in the plane by coordinate system A where: - the origin of A is the center of the hyperbola, - the 'X Direction' of A defines the major axis of the hyperbola, that is, the major radius MajorRadius is measured along this axis, and - the 'Y Direction' of A defines the minor axis of the hyperbola, that is, the minor radius MinorRadius is measured along this axis, and - the orientation (direct or indirect sense) of A gives the implicit orientation of the hyperbola. Warnings : It is yet possible to create an Hyperbola with MajorRadius <= MinorRadius. Raises ConstructionError if MajorRadius < 0.0 or MinorRadius < 0.0
 
         :param A:
@@ -6882,7 +6933,7 @@ class gp_Hypr2d(object):
 
         """
         _gp.gp_Hypr2d_swiginit(self,_gp.new_gp_Hypr2d(*args))
-    def SetLocation(self, *args) -> "void" :
+    def SetLocation(self, *args):
         """
         * Modifies this hyperbola, by redefining its local coordinate system so that its origin becomes P.
 
@@ -6893,7 +6944,7 @@ class gp_Hypr2d(object):
         """
         return _gp.gp_Hypr2d_SetLocation(self, *args)
 
-    def SetMajorRadius(self, *args) -> "void" :
+    def SetMajorRadius(self, *args):
         """
         * Modifies the major or minor radius of this hyperbola. Exceptions Standard_ConstructionError if MajorRadius or MinorRadius is negative.
 
@@ -6904,7 +6955,7 @@ class gp_Hypr2d(object):
         """
         return _gp.gp_Hypr2d_SetMajorRadius(self, *args)
 
-    def SetMinorRadius(self, *args) -> "void" :
+    def SetMinorRadius(self, *args):
         """
         * Modifies the major or minor radius of this hyperbola. Exceptions Standard_ConstructionError if MajorRadius or MinorRadius is negative.
 
@@ -6915,7 +6966,7 @@ class gp_Hypr2d(object):
         """
         return _gp.gp_Hypr2d_SetMinorRadius(self, *args)
 
-    def SetAxis(self, *args) -> "void" :
+    def SetAxis(self, *args):
         """
         * Modifies this hyperbola, by redefining its local coordinate system so that it becomes A.
 
@@ -6926,7 +6977,7 @@ class gp_Hypr2d(object):
         """
         return _gp.gp_Hypr2d_SetAxis(self, *args)
 
-    def SetXAxis(self, *args) -> "void" :
+    def SetXAxis(self, *args):
         """
         * Changes the major axis of the hyperbola. The minor axis is recomputed and the location of the hyperbola too.
 
@@ -6937,7 +6988,7 @@ class gp_Hypr2d(object):
         """
         return _gp.gp_Hypr2d_SetXAxis(self, *args)
 
-    def SetYAxis(self, *args) -> "void" :
+    def SetYAxis(self, *args):
         """
         * Changes the minor axis of the hyperbola.The minor axis is recomputed and the location of the hyperbola too.
 
@@ -6948,25 +6999,25 @@ class gp_Hypr2d(object):
         """
         return _gp.gp_Hypr2d_SetYAxis(self, *args)
 
-    def Asymptote1(self, *args) -> "gp_Ax2d" :
+    def Asymptote1(self):
         """
         * In the local coordinate system of the hyperbola the equation of the hyperbola is (X*X)/(A*A) - (Y*Y)/(B*B) = 1.0 and the equation of the first asymptote is Y = (B/A)*X where A is the major radius of the hyperbola and B the minor radius of the hyperbola. Raises ConstructionError if MajorRadius = 0.0
 
         :rtype: gp_Ax2d
 
         """
-        return _gp.gp_Hypr2d_Asymptote1(self, *args)
+        return _gp.gp_Hypr2d_Asymptote1(self)
 
-    def Asymptote2(self, *args) -> "gp_Ax2d" :
+    def Asymptote2(self):
         """
         * In the local coordinate system of the hyperbola the equation of the hyperbola is (X*X)/(A*A) - (Y*Y)/(B*B) = 1.0 and the equation of the first asymptote is Y = -(B/A)*X where A is the major radius of the hyperbola and B the minor radius of the hyperbola. Raises ConstructionError if MajorRadius = 0.0
 
         :rtype: gp_Ax2d
 
         """
-        return _gp.gp_Hypr2d_Asymptote2(self, *args)
+        return _gp.gp_Hypr2d_Asymptote2(self)
 
-    def Coefficients(self, *args) -> "void" :
+    def Coefficients(self, *args):
         """
         * Computes the coefficients of the implicit equation of the hyperbola : A * (X**2) + B * (Y**2) + 2*C*(X*Y) + 2*D*X + 2*E*Y + F = 0.
 
@@ -6987,176 +7038,176 @@ class gp_Hypr2d(object):
         """
         return _gp.gp_Hypr2d_Coefficients(self, *args)
 
-    def ConjugateBranch1(self, *args) -> "gp_Hypr2d" :
+    def ConjugateBranch1(self):
         """
         * Computes the branch of hyperbola which is on the positive side of the 'YAxis' of <self>.
 
         :rtype: gp_Hypr2d
 
         """
-        return _gp.gp_Hypr2d_ConjugateBranch1(self, *args)
+        return _gp.gp_Hypr2d_ConjugateBranch1(self)
 
-    def ConjugateBranch2(self, *args) -> "gp_Hypr2d" :
+    def ConjugateBranch2(self):
         """
         * Computes the branch of hyperbola which is on the negative side of the 'YAxis' of <self>.
 
         :rtype: gp_Hypr2d
 
         """
-        return _gp.gp_Hypr2d_ConjugateBranch2(self, *args)
+        return _gp.gp_Hypr2d_ConjugateBranch2(self)
 
-    def Directrix1(self, *args) -> "gp_Ax2d" :
+    def Directrix1(self):
         """
         * Computes the directrix which is the line normal to the XAxis of the hyperbola in the local plane (Z = 0) at a distance d = MajorRadius / e from the center of the hyperbola, where e is the eccentricity of the hyperbola. This line is parallel to the 'YAxis'. The intersection point between the 'Directrix1' and the 'XAxis' is the 'Location' point of the 'Directrix1'. This point is on the positive side of the 'XAxis'.
 
         :rtype: gp_Ax2d
 
         """
-        return _gp.gp_Hypr2d_Directrix1(self, *args)
+        return _gp.gp_Hypr2d_Directrix1(self)
 
-    def Directrix2(self, *args) -> "gp_Ax2d" :
+    def Directrix2(self):
         """
         * This line is obtained by the symmetrical transformation of 'Directrix1' with respect to the 'YAxis' of the hyperbola.
 
         :rtype: gp_Ax2d
 
         """
-        return _gp.gp_Hypr2d_Directrix2(self, *args)
+        return _gp.gp_Hypr2d_Directrix2(self)
 
-    def Eccentricity(self, *args) -> "Standard_Real" :
+    def Eccentricity(self):
         """
         * Returns the excentricity of the hyperbola (e > 1). If f is the distance between the location of the hyperbola and the Focus1 then the eccentricity e = f / MajorRadius. Raises DomainError if MajorRadius = 0.0.
 
         :rtype: float
 
         """
-        return _gp.gp_Hypr2d_Eccentricity(self, *args)
+        return _gp.gp_Hypr2d_Eccentricity(self)
 
-    def Focal(self, *args) -> "Standard_Real" :
+    def Focal(self):
         """
         * Computes the focal distance. It is the distance between the 'Location' of the hyperbola and 'Focus1' or 'Focus2'.
 
         :rtype: float
 
         """
-        return _gp.gp_Hypr2d_Focal(self, *args)
+        return _gp.gp_Hypr2d_Focal(self)
 
-    def Focus1(self, *args) -> "gp_Pnt2d" :
+    def Focus1(self):
         """
         * Returns the first focus of the hyperbola. This focus is on the positive side of the 'XAxis' of the hyperbola.
 
         :rtype: gp_Pnt2d
 
         """
-        return _gp.gp_Hypr2d_Focus1(self, *args)
+        return _gp.gp_Hypr2d_Focus1(self)
 
-    def Focus2(self, *args) -> "gp_Pnt2d" :
+    def Focus2(self):
         """
         * Returns the second focus of the hyperbola. This focus is on the negative side of the 'XAxis' of the hyperbola.
 
         :rtype: gp_Pnt2d
 
         """
-        return _gp.gp_Hypr2d_Focus2(self, *args)
+        return _gp.gp_Hypr2d_Focus2(self)
 
-    def Location(self, *args) -> "gp_Pnt2d const" :
+    def Location(self):
         """
         * Returns the location point of the hyperbola. It is the intersection point between the 'XAxis' and the 'YAxis'.
 
         :rtype: gp_Pnt2d
 
         """
-        return _gp.gp_Hypr2d_Location(self, *args)
+        return _gp.gp_Hypr2d_Location(self)
 
-    def MajorRadius(self, *args) -> "Standard_Real" :
+    def MajorRadius(self):
         """
         * Returns the major radius of the hyperbola (it is the radius corresponding to the 'XAxis' of the hyperbola).
 
         :rtype: float
 
         """
-        return _gp.gp_Hypr2d_MajorRadius(self, *args)
+        return _gp.gp_Hypr2d_MajorRadius(self)
 
-    def MinorRadius(self, *args) -> "Standard_Real" :
+    def MinorRadius(self):
         """
         * Returns the minor radius of the hyperbola (it is the radius corresponding to the 'YAxis' of the hyperbola).
 
         :rtype: float
 
         """
-        return _gp.gp_Hypr2d_MinorRadius(self, *args)
+        return _gp.gp_Hypr2d_MinorRadius(self)
 
-    def OtherBranch(self, *args) -> "gp_Hypr2d" :
+    def OtherBranch(self):
         """
         * Returns the branch of hyperbola obtained by doing the symmetrical transformation of <self> with respect to the 'YAxis' of <self>.
 
         :rtype: gp_Hypr2d
 
         """
-        return _gp.gp_Hypr2d_OtherBranch(self, *args)
+        return _gp.gp_Hypr2d_OtherBranch(self)
 
-    def Parameter(self, *args) -> "Standard_Real" :
+    def Parameter(self):
         """
         * Returns p = (e * e - 1) * MajorRadius where e is the eccentricity of the hyperbola. Raises DomainError if MajorRadius = 0.0
 
         :rtype: float
 
         """
-        return _gp.gp_Hypr2d_Parameter(self, *args)
+        return _gp.gp_Hypr2d_Parameter(self)
 
-    def Axis(self, *args) -> "gp_Ax22d const" :
+    def Axis(self):
         """
         * Returns the axisplacement of the hyperbola.
 
         :rtype: gp_Ax22d
 
         """
-        return _gp.gp_Hypr2d_Axis(self, *args)
+        return _gp.gp_Hypr2d_Axis(self)
 
-    def XAxis(self, *args) -> "gp_Ax2d" :
+    def XAxis(self):
         """
         * Computes an axis whose - the origin is the center of this hyperbola, and - the unit vector is the 'X Direction' or 'Y Direction' respectively of the local coordinate system of this hyperbola Returns the major axis of the hyperbola.
 
         :rtype: gp_Ax2d
 
         """
-        return _gp.gp_Hypr2d_XAxis(self, *args)
+        return _gp.gp_Hypr2d_XAxis(self)
 
-    def YAxis(self, *args) -> "gp_Ax2d" :
+    def YAxis(self):
         """
         * Computes an axis whose - the origin is the center of this hyperbola, and - the unit vector is the 'X Direction' or 'Y Direction' respectively of the local coordinate system of this hyperbola Returns the minor axis of the hyperbola.
 
         :rtype: gp_Ax2d
 
         """
-        return _gp.gp_Hypr2d_YAxis(self, *args)
+        return _gp.gp_Hypr2d_YAxis(self)
 
-    def Reverse(self, *args) -> "void" :
+    def Reverse(self):
         """
         :rtype: None
 
         """
-        return _gp.gp_Hypr2d_Reverse(self, *args)
+        return _gp.gp_Hypr2d_Reverse(self)
 
-    def Reversed(self, *args) -> "gp_Hypr2d" :
+    def Reversed(self):
         """
         * Reverses the orientation of the local coordinate system of this hyperbola (the 'Y Axis' is reversed). Therefore, the implicit orientation of this hyperbola is reversed. Note: - Reverse assigns the result to this hyperbola, while - Reversed creates a new one.
 
         :rtype: gp_Hypr2d
 
         """
-        return _gp.gp_Hypr2d_Reversed(self, *args)
+        return _gp.gp_Hypr2d_Reversed(self)
 
-    def IsDirect(self, *args) -> "Standard_Boolean" :
+    def IsDirect(self):
         """
         * Returns true if the local coordinate system is direct  and false in the other case.
 
         :rtype: bool
 
         """
-        return _gp.gp_Hypr2d_IsDirect(self, *args)
+        return _gp.gp_Hypr2d_IsDirect(self)
 
-    def Mirror(self, *args) -> "void" :
+    def Mirror(self, *args):
         """
         :param P:
         :type P: gp_Pnt2d
@@ -7169,7 +7220,7 @@ class gp_Hypr2d(object):
         """
         return _gp.gp_Hypr2d_Mirror(self, *args)
 
-    def Mirrored(self, *args) -> "gp_Hypr2d" :
+    def Mirrored(self, *args):
         """
         * Performs the symmetrical transformation of an hyperbola with respect to the point P which is the center of the symmetry.
 
@@ -7186,7 +7237,7 @@ class gp_Hypr2d(object):
         """
         return _gp.gp_Hypr2d_Mirrored(self, *args)
 
-    def Rotate(self, *args) -> "void" :
+    def Rotate(self, *args):
         """
         :param P:
         :type P: gp_Pnt2d
@@ -7197,7 +7248,7 @@ class gp_Hypr2d(object):
         """
         return _gp.gp_Hypr2d_Rotate(self, *args)
 
-    def Rotated(self, *args) -> "gp_Hypr2d" :
+    def Rotated(self, *args):
         """
         * Rotates an hyperbola. P is the center of the rotation. Ang is the angular value of the rotation in radians.
 
@@ -7210,7 +7261,7 @@ class gp_Hypr2d(object):
         """
         return _gp.gp_Hypr2d_Rotated(self, *args)
 
-    def Scale(self, *args) -> "void" :
+    def Scale(self, *args):
         """
         :param P:
         :type P: gp_Pnt2d
@@ -7221,7 +7272,7 @@ class gp_Hypr2d(object):
         """
         return _gp.gp_Hypr2d_Scale(self, *args)
 
-    def Scaled(self, *args) -> "gp_Hypr2d" :
+    def Scaled(self, *args):
         """
         * Scales an hyperbola. <S> is the scaling value. If <S> is positive only the location point is modified. But if <S> is negative the 'XAxis' is reversed and the 'YAxis' too.
 
@@ -7234,7 +7285,7 @@ class gp_Hypr2d(object):
         """
         return _gp.gp_Hypr2d_Scaled(self, *args)
 
-    def Transform(self, *args) -> "void" :
+    def Transform(self, *args):
         """
         :param T:
         :type T: gp_Trsf2d
@@ -7243,7 +7294,7 @@ class gp_Hypr2d(object):
         """
         return _gp.gp_Hypr2d_Transform(self, *args)
 
-    def Transformed(self, *args) -> "gp_Hypr2d" :
+    def Transformed(self, *args):
         """
         * Transforms an hyperbola with the transformation T from class Trsf2d.
 
@@ -7254,7 +7305,7 @@ class gp_Hypr2d(object):
         """
         return _gp.gp_Hypr2d_Transformed(self, *args)
 
-    def Translate(self, *args) -> "void" :
+    def Translate(self, *args):
         """
         :param V:
         :type V: gp_Vec2d
@@ -7269,7 +7320,7 @@ class gp_Hypr2d(object):
         """
         return _gp.gp_Hypr2d_Translate(self, *args)
 
-    def Translated(self, *args) -> "gp_Hypr2d" :
+    def Translated(self, *args):
         """
         * Translates an hyperbola in the direction of the vector V. The magnitude of the translation is the vector's magnitude.
 
@@ -7288,21 +7339,21 @@ class gp_Hypr2d(object):
         """
         return _gp.gp_Hypr2d_Translated(self, *args)
 
-    def _CSFDB_Getgp_Hypr2dpos(self, *args) -> "gp_Ax22d const" :
+    def _CSFDB_Getgp_Hypr2dpos(self):
         """
         :rtype: gp_Ax22d
 
         """
-        return _gp.gp_Hypr2d__CSFDB_Getgp_Hypr2dpos(self, *args)
+        return _gp.gp_Hypr2d__CSFDB_Getgp_Hypr2dpos(self)
 
-    def _CSFDB_Getgp_Hypr2dmajorRadius(self, *args) -> "Standard_Real" :
+    def _CSFDB_Getgp_Hypr2dmajorRadius(self):
         """
         :rtype: float
 
         """
-        return _gp.gp_Hypr2d__CSFDB_Getgp_Hypr2dmajorRadius(self, *args)
+        return _gp.gp_Hypr2d__CSFDB_Getgp_Hypr2dmajorRadius(self)
 
-    def _CSFDB_Setgp_Hypr2dmajorRadius(self, *args) -> "void" :
+    def _CSFDB_Setgp_Hypr2dmajorRadius(self, *args):
         """
         :param p:
         :type p: float
@@ -7311,14 +7362,14 @@ class gp_Hypr2d(object):
         """
         return _gp.gp_Hypr2d__CSFDB_Setgp_Hypr2dmajorRadius(self, *args)
 
-    def _CSFDB_Getgp_Hypr2dminorRadius(self, *args) -> "Standard_Real" :
+    def _CSFDB_Getgp_Hypr2dminorRadius(self):
         """
         :rtype: float
 
         """
-        return _gp.gp_Hypr2d__CSFDB_Getgp_Hypr2dminorRadius(self, *args)
+        return _gp.gp_Hypr2d__CSFDB_Getgp_Hypr2dminorRadius(self)
 
-    def _CSFDB_Setgp_Hypr2dminorRadius(self, *args) -> "void" :
+    def _CSFDB_Setgp_Hypr2dminorRadius(self, *args):
         """
         :param p:
         :type p: float
@@ -7407,23 +7458,23 @@ class gp_Lin(object):
 
         """
         _gp.gp_Lin_swiginit(self,_gp.new_gp_Lin(*args))
-    def Reverse(self, *args) -> "void" :
+    def Reverse(self):
         """
         :rtype: None
 
         """
-        return _gp.gp_Lin_Reverse(self, *args)
+        return _gp.gp_Lin_Reverse(self)
 
-    def Reversed(self, *args) -> "gp_Lin" :
+    def Reversed(self):
         """
         * Reverses the direction of the line. Note: - Reverse assigns the result to this line, while - Reversed creates a new one.
 
         :rtype: gp_Lin
 
         """
-        return _gp.gp_Lin_Reversed(self, *args)
+        return _gp.gp_Lin_Reversed(self)
 
-    def SetDirection(self, *args) -> "void" :
+    def SetDirection(self, *args):
         """
         * Changes the direction of the line.
 
@@ -7434,7 +7485,7 @@ class gp_Lin(object):
         """
         return _gp.gp_Lin_SetDirection(self, *args)
 
-    def SetLocation(self, *args) -> "void" :
+    def SetLocation(self, *args):
         """
         * Changes the location point (origin) of the line.
 
@@ -7445,7 +7496,7 @@ class gp_Lin(object):
         """
         return _gp.gp_Lin_SetLocation(self, *args)
 
-    def SetPosition(self, *args) -> "void" :
+    def SetPosition(self, *args):
         """
         * Complete redefinition of the line. The 'Location' point of <A1> is the origin of the line. The 'Direction' of <A1> is the direction of the line.
 
@@ -7456,34 +7507,34 @@ class gp_Lin(object):
         """
         return _gp.gp_Lin_SetPosition(self, *args)
 
-    def Direction(self, *args) -> "gp_Dir const" :
+    def Direction(self):
         """
         * Returns the direction of the line.
 
         :rtype: gp_Dir
 
         """
-        return _gp.gp_Lin_Direction(self, *args)
+        return _gp.gp_Lin_Direction(self)
 
-    def Location(self, *args) -> "gp_Pnt const" :
+    def Location(self):
         """
         * Returns the location point (origin) of the line.
 
         :rtype: gp_Pnt
 
         """
-        return _gp.gp_Lin_Location(self, *args)
+        return _gp.gp_Lin_Location(self)
 
-    def Position(self, *args) -> "gp_Ax1 const" :
+    def Position(self):
         """
         * Returns the axis placement one axis whith the same location and direction as <self>.
 
         :rtype: gp_Ax1
 
         """
-        return _gp.gp_Lin_Position(self, *args)
+        return _gp.gp_Lin_Position(self)
 
-    def Angle(self, *args) -> "Standard_Real" :
+    def Angle(self, *args):
         """
         * Computes the angle between two lines in radians.
 
@@ -7494,7 +7545,7 @@ class gp_Lin(object):
         """
         return _gp.gp_Lin_Angle(self, *args)
 
-    def Contains(self, *args) -> "Standard_Boolean" :
+    def Contains(self, *args):
         """
         * Returns true if this line contains the point P, that is, if the distance between point P and this line is less than or equal to LinearTolerance..
 
@@ -7507,7 +7558,7 @@ class gp_Lin(object):
         """
         return _gp.gp_Lin_Contains(self, *args)
 
-    def Distance(self, *args) -> "Standard_Real" :
+    def Distance(self, *args):
         """
         * Computes the distance between <self> and the point P.
 
@@ -7524,7 +7575,7 @@ class gp_Lin(object):
         """
         return _gp.gp_Lin_Distance(self, *args)
 
-    def SquareDistance(self, *args) -> "Standard_Real" :
+    def SquareDistance(self, *args):
         """
         * Computes the square distance between <self> and the point P.
 
@@ -7541,7 +7592,7 @@ class gp_Lin(object):
         """
         return _gp.gp_Lin_SquareDistance(self, *args)
 
-    def Normal(self, *args) -> "gp_Lin" :
+    def Normal(self, *args):
         """
         * Computes the line normal to the direction of <self>, passing through the point P. Raises ConstructionError if the distance between <self> and the point P is lower or equal to Resolution from gp because there is an infinity of solutions in 3D space.
 
@@ -7552,7 +7603,7 @@ class gp_Lin(object):
         """
         return _gp.gp_Lin_Normal(self, *args)
 
-    def Mirror(self, *args) -> "void" :
+    def Mirror(self, *args):
         """
         :param P:
         :type P: gp_Pnt
@@ -7569,7 +7620,7 @@ class gp_Lin(object):
         """
         return _gp.gp_Lin_Mirror(self, *args)
 
-    def Mirrored(self, *args) -> "gp_Lin" :
+    def Mirrored(self, *args):
         """
         * Performs the symmetrical transformation of a line with respect to the point P which is the center of the symmetry.
 
@@ -7592,7 +7643,7 @@ class gp_Lin(object):
         """
         return _gp.gp_Lin_Mirrored(self, *args)
 
-    def Rotate(self, *args) -> "void" :
+    def Rotate(self, *args):
         """
         :param A1:
         :type A1: gp_Ax1
@@ -7603,7 +7654,7 @@ class gp_Lin(object):
         """
         return _gp.gp_Lin_Rotate(self, *args)
 
-    def Rotated(self, *args) -> "gp_Lin" :
+    def Rotated(self, *args):
         """
         * Rotates a line. A1 is the axis of the rotation. Ang is the angular value of the rotation in radians.
 
@@ -7616,7 +7667,7 @@ class gp_Lin(object):
         """
         return _gp.gp_Lin_Rotated(self, *args)
 
-    def Scale(self, *args) -> "void" :
+    def Scale(self, *args):
         """
         :param P:
         :type P: gp_Pnt
@@ -7627,7 +7678,7 @@ class gp_Lin(object):
         """
         return _gp.gp_Lin_Scale(self, *args)
 
-    def Scaled(self, *args) -> "gp_Lin" :
+    def Scaled(self, *args):
         """
         * Scales a line. S is the scaling value. The 'Location' point (origin) of the line is modified. The 'Direction' is reversed if the scale is negative.
 
@@ -7640,7 +7691,7 @@ class gp_Lin(object):
         """
         return _gp.gp_Lin_Scaled(self, *args)
 
-    def Transform(self, *args) -> "void" :
+    def Transform(self, *args):
         """
         :param T:
         :type T: gp_Trsf
@@ -7649,7 +7700,7 @@ class gp_Lin(object):
         """
         return _gp.gp_Lin_Transform(self, *args)
 
-    def Transformed(self, *args) -> "gp_Lin" :
+    def Transformed(self, *args):
         """
         * Transforms a line with the transformation T from class Trsf.
 
@@ -7660,7 +7711,7 @@ class gp_Lin(object):
         """
         return _gp.gp_Lin_Transformed(self, *args)
 
-    def Translate(self, *args) -> "void" :
+    def Translate(self, *args):
         """
         :param V:
         :type V: gp_Vec
@@ -7675,7 +7726,7 @@ class gp_Lin(object):
         """
         return _gp.gp_Lin_Translate(self, *args)
 
-    def Translated(self, *args) -> "gp_Lin" :
+    def Translated(self, *args):
         """
         * Translates a line in the direction of the vector V. The magnitude of the translation is the vector's magnitude.
 
@@ -7694,12 +7745,12 @@ class gp_Lin(object):
         """
         return _gp.gp_Lin_Translated(self, *args)
 
-    def _CSFDB_Getgp_Linpos(self, *args) -> "gp_Ax1 const" :
+    def _CSFDB_Getgp_Linpos(self):
         """
         :rtype: gp_Ax1
 
         """
-        return _gp.gp_Lin__CSFDB_Getgp_Linpos(self, *args)
+        return _gp.gp_Lin__CSFDB_Getgp_Linpos(self)
 
     def __del__(self):
     	try:
@@ -7772,23 +7823,23 @@ class gp_Lin2d(object):
 
         """
         _gp.gp_Lin2d_swiginit(self,_gp.new_gp_Lin2d(*args))
-    def Reverse(self, *args) -> "void" :
+    def Reverse(self):
         """
         :rtype: None
 
         """
-        return _gp.gp_Lin2d_Reverse(self, *args)
+        return _gp.gp_Lin2d_Reverse(self)
 
-    def Reversed(self, *args) -> "gp_Lin2d" :
+    def Reversed(self):
         """
         * Reverses the positioning axis of this line. Note: - Reverse assigns the result to this line, while - Reversed creates a new one.
 
         :rtype: gp_Lin2d
 
         """
-        return _gp.gp_Lin2d_Reversed(self, *args)
+        return _gp.gp_Lin2d_Reversed(self)
 
-    def SetDirection(self, *args) -> "void" :
+    def SetDirection(self, *args):
         """
         * Changes the direction of the line.
 
@@ -7799,7 +7850,7 @@ class gp_Lin2d(object):
         """
         return _gp.gp_Lin2d_SetDirection(self, *args)
 
-    def SetLocation(self, *args) -> "void" :
+    def SetLocation(self, *args):
         """
         * Changes the origin of the line.
 
@@ -7810,7 +7861,7 @@ class gp_Lin2d(object):
         """
         return _gp.gp_Lin2d_SetLocation(self, *args)
 
-    def SetPosition(self, *args) -> "void" :
+    def SetPosition(self, *args):
         """
         * Complete redefinition of the line. The 'Location' point of <A> is the origin of the line. The 'Direction' of <A> is the direction of the line.
 
@@ -7821,7 +7872,7 @@ class gp_Lin2d(object):
         """
         return _gp.gp_Lin2d_SetPosition(self, *args)
 
-    def Coefficients(self, *args) -> "void" :
+    def Coefficients(self, *args):
         """
         * Returns the normalized coefficients of the line : A * X + B * Y + C = 0.
 
@@ -7836,34 +7887,34 @@ class gp_Lin2d(object):
         """
         return _gp.gp_Lin2d_Coefficients(self, *args)
 
-    def Direction(self, *args) -> "gp_Dir2d const" :
+    def Direction(self):
         """
         * Returns the direction of the line.
 
         :rtype: gp_Dir2d
 
         """
-        return _gp.gp_Lin2d_Direction(self, *args)
+        return _gp.gp_Lin2d_Direction(self)
 
-    def Location(self, *args) -> "gp_Pnt2d const" :
+    def Location(self):
         """
         * Returns the location point (origin) of the line.
 
         :rtype: gp_Pnt2d
 
         """
-        return _gp.gp_Lin2d_Location(self, *args)
+        return _gp.gp_Lin2d_Location(self)
 
-    def Position(self, *args) -> "gp_Ax2d const" :
+    def Position(self):
         """
         * Returns the axis placement one axis whith the same location and direction as <self>.
 
         :rtype: gp_Ax2d
 
         """
-        return _gp.gp_Lin2d_Position(self, *args)
+        return _gp.gp_Lin2d_Position(self)
 
-    def Angle(self, *args) -> "Standard_Real" :
+    def Angle(self, *args):
         """
         * Computes the angle between two lines in radians.
 
@@ -7874,7 +7925,7 @@ class gp_Lin2d(object):
         """
         return _gp.gp_Lin2d_Angle(self, *args)
 
-    def Contains(self, *args) -> "Standard_Boolean" :
+    def Contains(self, *args):
         """
         * Returns true if this line contains the point P, that is, if the distance between point P and this line is less than or equal to LinearTolerance.
 
@@ -7887,7 +7938,7 @@ class gp_Lin2d(object):
         """
         return _gp.gp_Lin2d_Contains(self, *args)
 
-    def Distance(self, *args) -> "Standard_Real" :
+    def Distance(self, *args):
         """
         * Computes the distance between <self> and the point <P>.
 
@@ -7904,7 +7955,7 @@ class gp_Lin2d(object):
         """
         return _gp.gp_Lin2d_Distance(self, *args)
 
-    def SquareDistance(self, *args) -> "Standard_Real" :
+    def SquareDistance(self, *args):
         """
         * Computes the square distance between <self> and the point <P>.
 
@@ -7921,7 +7972,7 @@ class gp_Lin2d(object):
         """
         return _gp.gp_Lin2d_SquareDistance(self, *args)
 
-    def Normal(self, *args) -> "gp_Lin2d" :
+    def Normal(self, *args):
         """
         * Computes the line normal to the direction of <self>, passing through the point <P>.
 
@@ -7932,7 +7983,7 @@ class gp_Lin2d(object):
         """
         return _gp.gp_Lin2d_Normal(self, *args)
 
-    def Mirror(self, *args) -> "void" :
+    def Mirror(self, *args):
         """
         :param P:
         :type P: gp_Pnt2d
@@ -7945,7 +7996,7 @@ class gp_Lin2d(object):
         """
         return _gp.gp_Lin2d_Mirror(self, *args)
 
-    def Mirrored(self, *args) -> "gp_Lin2d" :
+    def Mirrored(self, *args):
         """
         * Performs the symmetrical transformation of a line with respect to the point <P> which is the center of the symmetry
 
@@ -7962,7 +8013,7 @@ class gp_Lin2d(object):
         """
         return _gp.gp_Lin2d_Mirrored(self, *args)
 
-    def Rotate(self, *args) -> "void" :
+    def Rotate(self, *args):
         """
         :param P:
         :type P: gp_Pnt2d
@@ -7973,7 +8024,7 @@ class gp_Lin2d(object):
         """
         return _gp.gp_Lin2d_Rotate(self, *args)
 
-    def Rotated(self, *args) -> "gp_Lin2d" :
+    def Rotated(self, *args):
         """
         * Rotates a line. P is the center of the rotation. Ang is the angular value of the rotation in radians.
 
@@ -7986,7 +8037,7 @@ class gp_Lin2d(object):
         """
         return _gp.gp_Lin2d_Rotated(self, *args)
 
-    def Scale(self, *args) -> "void" :
+    def Scale(self, *args):
         """
         :param P:
         :type P: gp_Pnt2d
@@ -7997,7 +8048,7 @@ class gp_Lin2d(object):
         """
         return _gp.gp_Lin2d_Scale(self, *args)
 
-    def Scaled(self, *args) -> "gp_Lin2d" :
+    def Scaled(self, *args):
         """
         * Scales a line. S is the scaling value. Only the origin of the line is modified.
 
@@ -8010,7 +8061,7 @@ class gp_Lin2d(object):
         """
         return _gp.gp_Lin2d_Scaled(self, *args)
 
-    def Transform(self, *args) -> "void" :
+    def Transform(self, *args):
         """
         :param T:
         :type T: gp_Trsf2d
@@ -8019,7 +8070,7 @@ class gp_Lin2d(object):
         """
         return _gp.gp_Lin2d_Transform(self, *args)
 
-    def Transformed(self, *args) -> "gp_Lin2d" :
+    def Transformed(self, *args):
         """
         * Transforms a line with the transformation T from class Trsf2d.
 
@@ -8030,7 +8081,7 @@ class gp_Lin2d(object):
         """
         return _gp.gp_Lin2d_Transformed(self, *args)
 
-    def Translate(self, *args) -> "void" :
+    def Translate(self, *args):
         """
         :param V:
         :type V: gp_Vec2d
@@ -8045,7 +8096,7 @@ class gp_Lin2d(object):
         """
         return _gp.gp_Lin2d_Translate(self, *args)
 
-    def Translated(self, *args) -> "gp_Lin2d" :
+    def Translated(self, *args):
         """
         * Translates a line in the direction of the vector V. The magnitude of the translation is the vector's magnitude.
 
@@ -8064,12 +8115,12 @@ class gp_Lin2d(object):
         """
         return _gp.gp_Lin2d_Translated(self, *args)
 
-    def _CSFDB_Getgp_Lin2dpos(self, *args) -> "gp_Ax2d const" :
+    def _CSFDB_Getgp_Lin2dpos(self):
         """
         :rtype: gp_Ax2d
 
         """
-        return _gp.gp_Lin2d__CSFDB_Getgp_Lin2dpos(self, *args)
+        return _gp.gp_Lin2d__CSFDB_Getgp_Lin2dpos(self)
 
     def __del__(self):
     	try:
@@ -8149,12 +8200,12 @@ class gp_Mat(object):
 
         """
         _gp.gp_Mat_swiginit(self,_gp.new_gp_Mat(*args))
-    def SetCol(self, *args) -> "void" :
+    def SetCol(self, *args):
         """
         * Assigns the three coordinates of Value to the column of index Col of this matrix. Raises OutOfRange if Col < 1 or Col > 3.
 
         :param Col:
-        :type Col: int
+        :type Col: Standard_Integer
         :param Value:
         :type Value: gp_XYZ
         :rtype: None
@@ -8162,7 +8213,7 @@ class gp_Mat(object):
         """
         return _gp.gp_Mat_SetCol(self, *args)
 
-    def SetCols(self, *args) -> "void" :
+    def SetCols(self, *args):
         """
         * Assigns the number triples Col1, Col2, Col3 to the three columns of this matrix.
 
@@ -8177,7 +8228,7 @@ class gp_Mat(object):
         """
         return _gp.gp_Mat_SetCols(self, *args)
 
-    def SetCross(self, *args) -> "void" :
+    def SetCross(self, *args):
         """
         * Modifies the matrix M so that applying it to any number triple (X, Y, Z) produces the same result as the cross product of Ref and the number triple (X, Y, Z): i.e.: M * {X,Y,Z}t = Ref.Cross({X, Y ,Z}) this matrix is anti symmetric. To apply this matrix to the triplet {XYZ} is the same as to do the cross product between the triplet Ref and the triplet {XYZ}. Note: this matrix is anti-symmetric.
 
@@ -8188,7 +8239,7 @@ class gp_Mat(object):
         """
         return _gp.gp_Mat_SetCross(self, *args)
 
-    def SetDiagonal(self, *args) -> "void" :
+    def SetDiagonal(self, *args):
         """
         * Modifies the main diagonal of the matrix. <self>.Value (1, 1) = X1 <self>.Value (2, 2) = X2 <self>.Value (3, 3) = X3 The other coefficients of the matrix are not modified.
 
@@ -8203,7 +8254,7 @@ class gp_Mat(object):
         """
         return _gp.gp_Mat_SetDiagonal(self, *args)
 
-    def SetDot(self, *args) -> "void" :
+    def SetDot(self, *args):
         """
         * Modifies this matrix so that applying it to any number triple (X, Y, Z) produces the same result as the scalar product of Ref and the number triple (X, Y, Z): this * (X,Y,Z) = Ref.(X,Y,Z) Note: this matrix is symmetric.
 
@@ -8214,16 +8265,16 @@ class gp_Mat(object):
         """
         return _gp.gp_Mat_SetDot(self, *args)
 
-    def SetIdentity(self, *args) -> "void" :
+    def SetIdentity(self):
         """
         * Modifies this matrix so that it represents the Identity matrix.
 
         :rtype: None
 
         """
-        return _gp.gp_Mat_SetIdentity(self, *args)
+        return _gp.gp_Mat_SetIdentity(self)
 
-    def SetRotation(self, *args) -> "void" :
+    def SetRotation(self, *args):
         """
         * Modifies this matrix so that it represents a rotation. Ang is the angular value in radians and the XYZ axis gives the direction of the rotation. Raises ConstructionError if XYZ.Modulus() <= Resolution()
 
@@ -8236,12 +8287,12 @@ class gp_Mat(object):
         """
         return _gp.gp_Mat_SetRotation(self, *args)
 
-    def SetRow(self, *args) -> "void" :
+    def SetRow(self, *args):
         """
         * Assigns the three coordinates of Value to the row of index Row of this matrix. Raises OutOfRange if Row < 1 or Row > 3.
 
         :param Row:
-        :type Row: int
+        :type Row: Standard_Integer
         :param Value:
         :type Value: gp_XYZ
         :rtype: None
@@ -8249,7 +8300,7 @@ class gp_Mat(object):
         """
         return _gp.gp_Mat_SetRow(self, *args)
 
-    def SetRows(self, *args) -> "void" :
+    def SetRows(self, *args):
         """
         * Assigns the number triples Row1, Row2, Row3 to the three rows of this matrix.
 
@@ -8264,7 +8315,7 @@ class gp_Mat(object):
         """
         return _gp.gp_Mat_SetRows(self, *args)
 
-    def SetScale(self, *args) -> "void" :
+    def SetScale(self, *args):
         """
         * Modifies the the matrix so that it represents a scaling transformation, where S is the scale factor. : | S 0.0 0.0 | <self> = | 0.0 S 0.0 | | 0.0 0.0 S |
 
@@ -8275,14 +8326,14 @@ class gp_Mat(object):
         """
         return _gp.gp_Mat_SetScale(self, *args)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         * Assigns <Value> to the coefficient of row Row, column Col of this matrix. Raises OutOfRange if Row < 1 or Row > 3 or Col < 1 or Col > 3
 
         :param Row:
-        :type Row: int
+        :type Row: Standard_Integer
         :param Col:
-        :type Col: int
+        :type Col: Standard_Integer
         :param Value:
         :type Value: float
         :rtype: None
@@ -8290,82 +8341,82 @@ class gp_Mat(object):
         """
         return _gp.gp_Mat_SetValue(self, *args)
 
-    def Column(self, *args) -> "gp_XYZ" :
+    def Column(self, *args):
         """
         * Returns the column of Col index. Raises OutOfRange if Col < 1 or Col > 3
 
         :param Col:
-        :type Col: int
+        :type Col: Standard_Integer
         :rtype: gp_XYZ
 
         """
         return _gp.gp_Mat_Column(self, *args)
 
-    def Determinant(self, *args) -> "Standard_Real" :
+    def Determinant(self):
         """
         * Computes the determinant of the matrix.
 
         :rtype: float
 
         """
-        return _gp.gp_Mat_Determinant(self, *args)
+        return _gp.gp_Mat_Determinant(self)
 
-    def Diagonal(self, *args) -> "gp_XYZ" :
+    def Diagonal(self):
         """
         * Returns the main diagonal of the matrix.
 
         :rtype: gp_XYZ
 
         """
-        return _gp.gp_Mat_Diagonal(self, *args)
+        return _gp.gp_Mat_Diagonal(self)
 
-    def Row(self, *args) -> "gp_XYZ" :
+    def Row(self, *args):
         """
         * returns the row of Row index. Raises OutOfRange if Row < 1 or Row > 3
 
         :param Row:
-        :type Row: int
+        :type Row: Standard_Integer
         :rtype: gp_XYZ
 
         """
         return _gp.gp_Mat_Row(self, *args)
 
-    def Value(self, *args) -> "Standard_Real const &" :
+    def Value(self, *args):
         """
         * Returns the coefficient of range (Row, Col) Raises OutOfRange if Row < 1 or Row > 3 or Col < 1 or Col > 3
 
         :param Row:
-        :type Row: int
+        :type Row: Standard_Integer
         :param Col:
-        :type Col: int
+        :type Col: Standard_Integer
         :rtype: float
 
         """
         return _gp.gp_Mat_Value(self, *args)
 
-    def ChangeValue(self, *args) -> "Standard_Real &" :
+    def ChangeValue(self, *args):
         """
         * Returns the coefficient of range (Row, Col) Raises OutOfRange if Row < 1 or Row > 3 or Col < 1 or Col > 3
 
         :param Row:
-        :type Row: int
+        :type Row: Standard_Integer
         :param Col:
-        :type Col: int
+        :type Col: Standard_Integer
         :rtype: float
 
         """
         return _gp.gp_Mat_ChangeValue(self, *args)
 
-    def IsSingular(self, *args) -> "Standard_Boolean" :
+    def IsSingular(self):
         """
         * The Gauss LU decomposition is used to invert the matrix (see Math package) so the matrix is considered as singular if the largest pivot found is lower or equal to Resolution from gp.
 
         :rtype: bool
 
         """
-        return _gp.gp_Mat_IsSingular(self, *args)
+        return _gp.gp_Mat_IsSingular(self)
 
-    def Add(self, *args) -> "void" :
+    def Add(self, *args):
         """
         :param Other:
         :type Other: gp_Mat
@@ -8374,7 +8425,7 @@ class gp_Mat(object):
         """
         return _gp.gp_Mat_Add(self, *args)
 
-    def __iadd__(self, *args) -> "void" :
+    def __iadd__(self, *args):
         """
         :param Other:
         :type Other: gp_Mat
@@ -8383,7 +8434,7 @@ class gp_Mat(object):
         """
         return _gp.gp_Mat___iadd__(self, *args)
 
-    def Added(self, *args) -> "gp_Mat" :
+    def Added(self, *args):
         """
         * Computes the sum of this matrix and the matrix Other for each coefficient of the matrix : <self>.Coef(i,j) + <Other>.Coef(i,j)
 
@@ -8394,7 +8445,7 @@ class gp_Mat(object):
         """
         return _gp.gp_Mat_Added(self, *args)
 
-    def __add__(self, *args) -> "gp_Mat" :
+    def __add__(self, *args):
         """
         :param Other:
         :type Other: gp_Mat
@@ -8403,7 +8454,7 @@ class gp_Mat(object):
         """
         return _gp.gp_Mat___add__(self, *args)
 
-    def Divide(self, *args) -> "void" :
+    def Divide(self, *args):
         """
         :param Scalar:
         :type Scalar: float
@@ -8412,7 +8463,7 @@ class gp_Mat(object):
         """
         return _gp.gp_Mat_Divide(self, *args)
 
-    def __idiv__(self, *args) -> "void" :
+    def __idiv__(self, *args):
         """
         :param Scalar:
         :type Scalar: float
@@ -8421,7 +8472,7 @@ class gp_Mat(object):
         """
         return _gp.gp_Mat___idiv__(self, *args)
 
-    def Divided(self, *args) -> "gp_Mat" :
+    def Divided(self, *args):
         """
         * Divides all the coefficients of the matrix by Scalar
 
@@ -8432,7 +8483,7 @@ class gp_Mat(object):
         """
         return _gp.gp_Mat_Divided(self, *args)
 
-    def __div__(self, *args) -> "gp_Mat" :
+    def __div__(self, *args):
         """
         :param Scalar:
         :type Scalar: float
@@ -8441,23 +8492,23 @@ class gp_Mat(object):
         """
         return _gp.gp_Mat___div__(self, *args)
 
-    def Invert(self, *args) -> "void" :
+    def Invert(self):
         """
         :rtype: None
 
         """
-        return _gp.gp_Mat_Invert(self, *args)
+        return _gp.gp_Mat_Invert(self)
 
-    def Inverted(self, *args) -> "gp_Mat" :
+    def Inverted(self):
         """
         * Inverses the matrix and raises if the matrix is singular. - Invert assigns the result to this matrix, while - Inverted creates a new one. Warning The Gauss LU decomposition is used to invert the matrix. Consequently, the matrix is considered as singular if the largest pivot found is less than or equal to gp::Resolution(). Exceptions Standard_ConstructionError if this matrix is singular, and therefore cannot be inverted.
 
         :rtype: gp_Mat
 
         """
-        return _gp.gp_Mat_Inverted(self, *args)
+        return _gp.gp_Mat_Inverted(self)
 
-    def PreMultiply(self, *args) -> "void" :
+    def PreMultiply(self, *args):
         """
         :param Other:
         :type Other: gp_Mat
@@ -8466,7 +8517,7 @@ class gp_Mat(object):
         """
         return _gp.gp_Mat_PreMultiply(self, *args)
 
-    def Multiplied(self, *args) -> "gp_Mat" :
+    def Multiplied(self, *args):
         """
         * Computes the product of two matrices <self> * <Other>
 
@@ -8481,7 +8532,7 @@ class gp_Mat(object):
         """
         return _gp.gp_Mat_Multiplied(self, *args)
 
-    def __mul__(self, *args) -> "gp_Mat" :
+    def __mul__(self, *args):
         """
         :param Other:
         :type Other: gp_Mat
@@ -8494,7 +8545,7 @@ class gp_Mat(object):
         """
         return _gp.gp_Mat___mul__(self, *args)
 
-    def Multiply(self, *args) -> "void" :
+    def Multiply(self, *args):
         """
         * Computes the product of two matrices <self> = <Other> * <self>.
 
@@ -8511,7 +8562,7 @@ class gp_Mat(object):
         """
         return _gp.gp_Mat_Multiply(self, *args)
 
-    def __imul__(self, *args) -> "void" :
+    def __imul__(self, *args):
         """
         :param Other:
         :type Other: gp_Mat
@@ -8524,27 +8575,27 @@ class gp_Mat(object):
         """
         return _gp.gp_Mat___imul__(self, *args)
 
-    def Power(self, *args) -> "void" :
+    def Power(self, *args):
         """
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :rtype: None
 
         """
         return _gp.gp_Mat_Power(self, *args)
 
-    def Powered(self, *args) -> "gp_Mat" :
+    def Powered(self, *args):
         """
         * Computes <self> = <self> * <self> * .......* <self>, N time. if N = 0 <self> = Identity if N < 0 <self> = <self>.Invert() *...........* <self>.Invert(). If N < 0 an exception will be raised if the matrix is not inversible
 
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :rtype: gp_Mat
 
         """
         return _gp.gp_Mat_Powered(self, *args)
 
-    def Subtract(self, *args) -> "void" :
+    def Subtract(self, *args):
         """
         :param Other:
         :type Other: gp_Mat
@@ -8553,7 +8604,7 @@ class gp_Mat(object):
         """
         return _gp.gp_Mat_Subtract(self, *args)
 
-    def __isub__(self, *args) -> "void" :
+    def __isub__(self, *args):
         """
         :param Other:
         :type Other: gp_Mat
@@ -8562,7 +8613,7 @@ class gp_Mat(object):
         """
         return _gp.gp_Mat___isub__(self, *args)
 
-    def Subtracted(self, *args) -> "gp_Mat" :
+    def Subtracted(self, *args):
         """
         * cOmputes for each coefficient of the matrix : <self>.Coef(i,j) - <Other>.Coef(i,j)
 
@@ -8573,7 +8624,7 @@ class gp_Mat(object):
         """
         return _gp.gp_Mat_Subtracted(self, *args)
 
-    def __sub__(self, *args) -> "gp_Mat" :
+    def __sub__(self, *args):
         """
         :param Other:
         :type Other: gp_Mat
@@ -8582,28 +8633,28 @@ class gp_Mat(object):
         """
         return _gp.gp_Mat___sub__(self, *args)
 
-    def Transpose(self, *args) -> "void" :
+    def Transpose(self):
         """
         :rtype: None
 
         """
-        return _gp.gp_Mat_Transpose(self, *args)
+        return _gp.gp_Mat_Transpose(self)
 
-    def Transposed(self, *args) -> "gp_Mat" :
+    def Transposed(self):
         """
         * Transposes the matrix. A(j, i) -> A (i, j)
 
         :rtype: gp_Mat
 
         """
-        return _gp.gp_Mat_Transposed(self, *args)
+        return _gp.gp_Mat_Transposed(self)
 
-    def _CSFDB_Getgp_Matmatrix(self, *args) -> "Standard_Real &" :
+    def _CSFDB_Getgp_Matmatrix(self, *args):
         """
         :param i1:
-        :type i1: int
+        :type i1: Standard_Integer
         :param i2:
-        :type i2: int
+        :type i2: Standard_Integer
         :rtype: float
 
         """
@@ -8682,12 +8733,12 @@ class gp_Mat2d(object):
 
         """
         _gp.gp_Mat2d_swiginit(self,_gp.new_gp_Mat2d(*args))
-    def SetCol(self, *args) -> "void" :
+    def SetCol(self, *args):
         """
         * Assigns the two coordinates of Value to the column of range Col of this matrix Raises OutOfRange if Col < 1 or Col > 2.
 
         :param Col:
-        :type Col: int
+        :type Col: Standard_Integer
         :param Value:
         :type Value: gp_XY
         :rtype: None
@@ -8695,7 +8746,7 @@ class gp_Mat2d(object):
         """
         return _gp.gp_Mat2d_SetCol(self, *args)
 
-    def SetCols(self, *args) -> "void" :
+    def SetCols(self, *args):
         """
         * Assigns the number pairs Col1, Col2 to the two columns of this matrix
 
@@ -8708,7 +8759,7 @@ class gp_Mat2d(object):
         """
         return _gp.gp_Mat2d_SetCols(self, *args)
 
-    def SetDiagonal(self, *args) -> "void" :
+    def SetDiagonal(self, *args):
         """
         * Modifies the main diagonal of the matrix. <self>.Value (1, 1) = X1 <self>.Value (2, 2) = X2 The other coefficients of the matrix are not modified.
 
@@ -8721,16 +8772,16 @@ class gp_Mat2d(object):
         """
         return _gp.gp_Mat2d_SetDiagonal(self, *args)
 
-    def SetIdentity(self, *args) -> "void" :
+    def SetIdentity(self):
         """
         * Modifies this matrix, so that it represents the Identity matrix.
 
         :rtype: None
 
         """
-        return _gp.gp_Mat2d_SetIdentity(self, *args)
+        return _gp.gp_Mat2d_SetIdentity(self)
 
-    def SetRotation(self, *args) -> "void" :
+    def SetRotation(self, *args):
         """
         * Modifies this matrix, so that it representso a rotation. Ang is the angular value in radian of the rotation.
 
@@ -8741,12 +8792,12 @@ class gp_Mat2d(object):
         """
         return _gp.gp_Mat2d_SetRotation(self, *args)
 
-    def SetRow(self, *args) -> "void" :
+    def SetRow(self, *args):
         """
         * Assigns the two coordinates of Value to the row of index Row of this matrix. Raises OutOfRange if Row < 1 or Row > 2.
 
         :param Row:
-        :type Row: int
+        :type Row: Standard_Integer
         :param Value:
         :type Value: gp_XY
         :rtype: None
@@ -8754,7 +8805,7 @@ class gp_Mat2d(object):
         """
         return _gp.gp_Mat2d_SetRow(self, *args)
 
-    def SetRows(self, *args) -> "void" :
+    def SetRows(self, *args):
         """
         * Assigns the number pairs Row1, Row2 to the two rows of this matrix.
 
@@ -8767,7 +8818,7 @@ class gp_Mat2d(object):
         """
         return _gp.gp_Mat2d_SetRows(self, *args)
 
-    def SetScale(self, *args) -> "void" :
+    def SetScale(self, *args):
         """
         * Modifies the matrix such that it represents a scaling transformation, where S is the scale factor : | S 0.0 | <self> = | 0.0 S |
 
@@ -8778,14 +8829,14 @@ class gp_Mat2d(object):
         """
         return _gp.gp_Mat2d_SetScale(self, *args)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         * Assigns <Value> to the coefficient of row Row, column Col of this matrix. Raises OutOfRange if Row < 1 or Row > 2 or Col < 1 or Col > 2
 
         :param Row:
-        :type Row: int
+        :type Row: Standard_Integer
         :param Col:
-        :type Col: int
+        :type Col: Standard_Integer
         :param Value:
         :type Value: float
         :rtype: None
@@ -8793,82 +8844,82 @@ class gp_Mat2d(object):
         """
         return _gp.gp_Mat2d_SetValue(self, *args)
 
-    def Column(self, *args) -> "gp_XY" :
+    def Column(self, *args):
         """
         * Returns the column of Col index. Raises OutOfRange if Col < 1 or Col > 2
 
         :param Col:
-        :type Col: int
+        :type Col: Standard_Integer
         :rtype: gp_XY
 
         """
         return _gp.gp_Mat2d_Column(self, *args)
 
-    def Determinant(self, *args) -> "Standard_Real" :
+    def Determinant(self):
         """
         * Computes the determinant of the matrix.
 
         :rtype: float
 
         """
-        return _gp.gp_Mat2d_Determinant(self, *args)
+        return _gp.gp_Mat2d_Determinant(self)
 
-    def Diagonal(self, *args) -> "gp_XY" :
+    def Diagonal(self):
         """
         * Returns the main diagonal of the matrix.
 
         :rtype: gp_XY
 
         """
-        return _gp.gp_Mat2d_Diagonal(self, *args)
+        return _gp.gp_Mat2d_Diagonal(self)
 
-    def Row(self, *args) -> "gp_XY" :
+    def Row(self, *args):
         """
         * Returns the row of index Row. Raised if Row < 1 or Row > 2
 
         :param Row:
-        :type Row: int
+        :type Row: Standard_Integer
         :rtype: gp_XY
 
         """
         return _gp.gp_Mat2d_Row(self, *args)
 
-    def Value(self, *args) -> "Standard_Real const &" :
+    def Value(self, *args):
         """
         * Returns the coefficient of range (Row, Col) Raises OutOfRange if Row < 1 or Row > 2 or Col < 1 or Col > 2
 
         :param Row:
-        :type Row: int
+        :type Row: Standard_Integer
         :param Col:
-        :type Col: int
+        :type Col: Standard_Integer
         :rtype: float
 
         """
         return _gp.gp_Mat2d_Value(self, *args)
 
-    def ChangeValue(self, *args) -> "Standard_Real &" :
+    def ChangeValue(self, *args):
         """
         * Returns the coefficient of range (Row, Col) Raises OutOfRange if Row < 1 or Row > 2 or Col < 1 or Col > 2
 
         :param Row:
-        :type Row: int
+        :type Row: Standard_Integer
         :param Col:
-        :type Col: int
+        :type Col: Standard_Integer
         :rtype: float
 
         """
         return _gp.gp_Mat2d_ChangeValue(self, *args)
 
-    def IsSingular(self, *args) -> "Standard_Boolean" :
+    def IsSingular(self):
         """
         * Returns true if this matrix is singular (and therefore, cannot be inverted). The Gauss LU decomposition is used to invert the matrix so the matrix is considered as singular if the largest pivot found is lower or equal to Resolution from gp.
 
         :rtype: bool
 
         """
-        return _gp.gp_Mat2d_IsSingular(self, *args)
+        return _gp.gp_Mat2d_IsSingular(self)
 
-    def Add(self, *args) -> "void" :
+    def Add(self, *args):
         """
         :param Other:
         :type Other: gp_Mat2d
@@ -8877,7 +8928,7 @@ class gp_Mat2d(object):
         """
         return _gp.gp_Mat2d_Add(self, *args)
 
-    def __iadd__(self, *args) -> "void" :
+    def __iadd__(self, *args):
         """
         :param Other:
         :type Other: gp_Mat2d
@@ -8886,7 +8937,7 @@ class gp_Mat2d(object):
         """
         return _gp.gp_Mat2d___iadd__(self, *args)
 
-    def Added(self, *args) -> "gp_Mat2d" :
+    def Added(self, *args):
         """
         * Computes the sum of this matrix and the matrix Other.for each coefficient of the matrix : <self>.Coef(i,j) + <Other>.Coef(i,j) Note: - operator += assigns the result to this matrix, while - operator + creates a new one.
 
@@ -8897,7 +8948,7 @@ class gp_Mat2d(object):
         """
         return _gp.gp_Mat2d_Added(self, *args)
 
-    def __add__(self, *args) -> "gp_Mat2d" :
+    def __add__(self, *args):
         """
         :param Other:
         :type Other: gp_Mat2d
@@ -8906,7 +8957,7 @@ class gp_Mat2d(object):
         """
         return _gp.gp_Mat2d___add__(self, *args)
 
-    def Divide(self, *args) -> "void" :
+    def Divide(self, *args):
         """
         :param Scalar:
         :type Scalar: float
@@ -8915,7 +8966,7 @@ class gp_Mat2d(object):
         """
         return _gp.gp_Mat2d_Divide(self, *args)
 
-    def __idiv__(self, *args) -> "void" :
+    def __idiv__(self, *args):
         """
         :param Scalar:
         :type Scalar: float
@@ -8924,7 +8975,7 @@ class gp_Mat2d(object):
         """
         return _gp.gp_Mat2d___idiv__(self, *args)
 
-    def Divided(self, *args) -> "gp_Mat2d" :
+    def Divided(self, *args):
         """
         * Divides all the coefficients of the matrix by a scalar.
 
@@ -8935,7 +8986,7 @@ class gp_Mat2d(object):
         """
         return _gp.gp_Mat2d_Divided(self, *args)
 
-    def __div__(self, *args) -> "gp_Mat2d" :
+    def __div__(self, *args):
         """
         :param Scalar:
         :type Scalar: float
@@ -8944,23 +8995,23 @@ class gp_Mat2d(object):
         """
         return _gp.gp_Mat2d___div__(self, *args)
 
-    def Invert(self, *args) -> "void" :
+    def Invert(self):
         """
         :rtype: None
 
         """
-        return _gp.gp_Mat2d_Invert(self, *args)
+        return _gp.gp_Mat2d_Invert(self)
 
-    def Inverted(self, *args) -> "gp_Mat2d" :
+    def Inverted(self):
         """
         * Inverses the matrix and raises exception if the matrix is singular.
 
         :rtype: gp_Mat2d
 
         """
-        return _gp.gp_Mat2d_Inverted(self, *args)
+        return _gp.gp_Mat2d_Inverted(self)
 
-    def PreMultiply(self, *args) -> "void" :
+    def PreMultiply(self, *args):
         """
         * Modifies this matrix by premultiplying it by the matrix Other <self> = Other * <self>.
 
@@ -8971,7 +9022,7 @@ class gp_Mat2d(object):
         """
         return _gp.gp_Mat2d_PreMultiply(self, *args)
 
-    def Multiplied(self, *args) -> "gp_Mat2d" :
+    def Multiplied(self, *args):
         """
         :param Other:
         :type Other: gp_Mat2d
@@ -8984,7 +9035,7 @@ class gp_Mat2d(object):
         """
         return _gp.gp_Mat2d_Multiplied(self, *args)
 
-    def __mul__(self, *args) -> "gp_Mat2d" :
+    def __mul__(self, *args):
         """
         :param Other:
         :type Other: gp_Mat2d
@@ -8997,7 +9048,7 @@ class gp_Mat2d(object):
         """
         return _gp.gp_Mat2d___mul__(self, *args)
 
-    def Multiply(self, *args) -> "void" :
+    def Multiply(self, *args):
         """
         * Computes the product of two matrices <self> * <Other>
 
@@ -9014,7 +9065,7 @@ class gp_Mat2d(object):
         """
         return _gp.gp_Mat2d_Multiply(self, *args)
 
-    def __imul__(self, *args) -> "void" :
+    def __imul__(self, *args):
         """
         :param Scalar:
         :type Scalar: float
@@ -9023,27 +9074,27 @@ class gp_Mat2d(object):
         """
         return _gp.gp_Mat2d___imul__(self, *args)
 
-    def Power(self, *args) -> "void" :
+    def Power(self, *args):
         """
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :rtype: None
 
         """
         return _gp.gp_Mat2d_Power(self, *args)
 
-    def Powered(self, *args) -> "gp_Mat2d" :
+    def Powered(self, *args):
         """
         * computes <self> = <self> * <self> * .......* <self>, N time. if N = 0 <self> = Identity if N < 0 <self> = <self>.Invert() *...........* <self>.Invert(). If N < 0 an exception can be raised if the matrix is not inversible
 
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :rtype: gp_Mat2d
 
         """
         return _gp.gp_Mat2d_Powered(self, *args)
 
-    def Subtract(self, *args) -> "void" :
+    def Subtract(self, *args):
         """
         :param Other:
         :type Other: gp_Mat2d
@@ -9052,7 +9103,7 @@ class gp_Mat2d(object):
         """
         return _gp.gp_Mat2d_Subtract(self, *args)
 
-    def __isub__(self, *args) -> "void" :
+    def __isub__(self, *args):
         """
         :param Other:
         :type Other: gp_Mat2d
@@ -9061,7 +9112,7 @@ class gp_Mat2d(object):
         """
         return _gp.gp_Mat2d___isub__(self, *args)
 
-    def Subtracted(self, *args) -> "gp_Mat2d" :
+    def Subtracted(self, *args):
         """
         * Computes for each coefficient of the matrix : <self>.Coef(i,j) - <Other>.Coef(i,j)
 
@@ -9072,7 +9123,7 @@ class gp_Mat2d(object):
         """
         return _gp.gp_Mat2d_Subtracted(self, *args)
 
-    def __sub__(self, *args) -> "gp_Mat2d" :
+    def __sub__(self, *args):
         """
         :param Other:
         :type Other: gp_Mat2d
@@ -9081,28 +9132,28 @@ class gp_Mat2d(object):
         """
         return _gp.gp_Mat2d___sub__(self, *args)
 
-    def Transpose(self, *args) -> "void" :
+    def Transpose(self):
         """
         :rtype: None
 
         """
-        return _gp.gp_Mat2d_Transpose(self, *args)
+        return _gp.gp_Mat2d_Transpose(self)
 
-    def Transposed(self, *args) -> "gp_Mat2d" :
+    def Transposed(self):
         """
         * Transposes the matrix. A(j, i) -> A (i, j)
 
         :rtype: gp_Mat2d
 
         """
-        return _gp.gp_Mat2d_Transposed(self, *args)
+        return _gp.gp_Mat2d_Transposed(self)
 
-    def _CSFDB_Getgp_Mat2dmatrix(self, *args) -> "Standard_Real &" :
+    def _CSFDB_Getgp_Mat2dmatrix(self, *args):
         """
         :param i1:
-        :type i1: int
+        :type i1: Standard_Integer
         :param i2:
-        :type i2: int
+        :type i2: Standard_Integer
         :rtype: float
 
         """
@@ -9187,7 +9238,7 @@ class gp_Parab(object):
 
         """
         _gp.gp_Parab_swiginit(self,_gp.new_gp_Parab(*args))
-    def SetAxis(self, *args) -> "void" :
+    def SetAxis(self, *args):
         """
         * Modifies this parabola by redefining its local coordinate system so that - its origin and 'main Direction' become those of the axis A1 (the 'X Direction' and 'Y Direction' are then recomputed in the same way as for any gp_Ax2) Raises ConstructionError if the direction of A1 is parallel to the previous XAxis of the parabola.
 
@@ -9198,7 +9249,7 @@ class gp_Parab(object):
         """
         return _gp.gp_Parab_SetAxis(self, *args)
 
-    def SetFocal(self, *args) -> "void" :
+    def SetFocal(self, *args):
         """
         * Changes the focal distance of the parabola. Raises ConstructionError if Focal < 0.0
 
@@ -9209,7 +9260,7 @@ class gp_Parab(object):
         """
         return _gp.gp_Parab_SetFocal(self, *args)
 
-    def SetLocation(self, *args) -> "void" :
+    def SetLocation(self, *args):
         """
         * Changes the location of the parabola. It is the vertex of the parabola.
 
@@ -9220,7 +9271,7 @@ class gp_Parab(object):
         """
         return _gp.gp_Parab_SetLocation(self, *args)
 
-    def SetPosition(self, *args) -> "void" :
+    def SetPosition(self, *args):
         """
         * Changes the local coordinate system of the parabola.
 
@@ -9231,88 +9282,88 @@ class gp_Parab(object):
         """
         return _gp.gp_Parab_SetPosition(self, *args)
 
-    def Axis(self, *args) -> "gp_Ax1 const" :
+    def Axis(self):
         """
         * Returns the main axis of the parabola. It is the axis normal to the plane of the parabola passing through the vertex of the parabola.
 
         :rtype: gp_Ax1
 
         """
-        return _gp.gp_Parab_Axis(self, *args)
+        return _gp.gp_Parab_Axis(self)
 
-    def Directrix(self, *args) -> "gp_Ax1" :
+    def Directrix(self):
         """
         * Computes the directrix of this parabola. The directrix is: - a line parallel to the 'Y Direction' of the local coordinate system of this parabola, and - located on the negative side of the axis of symmetry, at a distance from the apex which is equal to the focal length of this parabola. The directrix is returned as an axis (a gp_Ax1 object), the origin of which is situated on the 'X Axis' of this parabola.
 
         :rtype: gp_Ax1
 
         """
-        return _gp.gp_Parab_Directrix(self, *args)
+        return _gp.gp_Parab_Directrix(self)
 
-    def Focal(self, *args) -> "Standard_Real" :
+    def Focal(self):
         """
         * Returns the distance between the vertex and the focus of the parabola.
 
         :rtype: float
 
         """
-        return _gp.gp_Parab_Focal(self, *args)
+        return _gp.gp_Parab_Focal(self)
 
-    def Focus(self, *args) -> "gp_Pnt" :
+    def Focus(self):
         """
         * - Computes the focus of the parabola.
 
         :rtype: gp_Pnt
 
         """
-        return _gp.gp_Parab_Focus(self, *args)
+        return _gp.gp_Parab_Focus(self)
 
-    def Location(self, *args) -> "gp_Pnt const" :
+    def Location(self):
         """
         * Returns the vertex of the parabola. It is the 'Location' point of the coordinate system of the parabola.
 
         :rtype: gp_Pnt
 
         """
-        return _gp.gp_Parab_Location(self, *args)
+        return _gp.gp_Parab_Location(self)
 
-    def Parameter(self, *args) -> "Standard_Real" :
+    def Parameter(self):
         """
         * Computes the parameter of the parabola. It is the distance between the focus and the directrix of the parabola. This distance is twice the focal length.
 
         :rtype: float
 
         """
-        return _gp.gp_Parab_Parameter(self, *args)
+        return _gp.gp_Parab_Parameter(self)
 
-    def Position(self, *args) -> "gp_Ax2 const" :
+    def Position(self):
         """
         * Returns the local coordinate system of the parabola.
 
         :rtype: gp_Ax2
 
         """
-        return _gp.gp_Parab_Position(self, *args)
+        return _gp.gp_Parab_Position(self)
 
-    def XAxis(self, *args) -> "gp_Ax1" :
+    def XAxis(self):
         """
         * Returns the symmetry axis of the parabola. The location point of the axis is the vertex of the parabola.
 
         :rtype: gp_Ax1
 
         """
-        return _gp.gp_Parab_XAxis(self, *args)
+        return _gp.gp_Parab_XAxis(self)
 
-    def YAxis(self, *args) -> "gp_Ax1" :
+    def YAxis(self):
         """
         * It is an axis parallel to the directrix of the parabola. The location point of this axis is the vertex of the parabola.
 
         :rtype: gp_Ax1
 
         """
-        return _gp.gp_Parab_YAxis(self, *args)
+        return _gp.gp_Parab_YAxis(self)
 
-    def Mirror(self, *args) -> "void" :
+    def Mirror(self, *args):
         """
         :param P:
         :type P: gp_Pnt
@@ -9329,7 +9380,7 @@ class gp_Parab(object):
         """
         return _gp.gp_Parab_Mirror(self, *args)
 
-    def Mirrored(self, *args) -> "gp_Parab" :
+    def Mirrored(self, *args):
         """
         * Performs the symmetrical transformation of a parabola with respect to the point P which is the center of the symmetry.
 
@@ -9352,7 +9403,7 @@ class gp_Parab(object):
         """
         return _gp.gp_Parab_Mirrored(self, *args)
 
-    def Rotate(self, *args) -> "void" :
+    def Rotate(self, *args):
         """
         :param A1:
         :type A1: gp_Ax1
@@ -9363,7 +9414,7 @@ class gp_Parab(object):
         """
         return _gp.gp_Parab_Rotate(self, *args)
 
-    def Rotated(self, *args) -> "gp_Parab" :
+    def Rotated(self, *args):
         """
         * Rotates a parabola. A1 is the axis of the rotation. Ang is the angular value of the rotation in radians.
 
@@ -9376,7 +9427,7 @@ class gp_Parab(object):
         """
         return _gp.gp_Parab_Rotated(self, *args)
 
-    def Scale(self, *args) -> "void" :
+    def Scale(self, *args):
         """
         :param P:
         :type P: gp_Pnt
@@ -9387,7 +9438,7 @@ class gp_Parab(object):
         """
         return _gp.gp_Parab_Scale(self, *args)
 
-    def Scaled(self, *args) -> "gp_Parab" :
+    def Scaled(self, *args):
         """
         * Scales a parabola. S is the scaling value. If S is negative the direction of the symmetry axis XAxis is reversed and the direction of the YAxis too.
 
@@ -9400,7 +9451,7 @@ class gp_Parab(object):
         """
         return _gp.gp_Parab_Scaled(self, *args)
 
-    def Transform(self, *args) -> "void" :
+    def Transform(self, *args):
         """
         :param T:
         :type T: gp_Trsf
@@ -9409,7 +9460,7 @@ class gp_Parab(object):
         """
         return _gp.gp_Parab_Transform(self, *args)
 
-    def Transformed(self, *args) -> "gp_Parab" :
+    def Transformed(self, *args):
         """
         * Transforms a parabola with the transformation T from class Trsf.
 
@@ -9420,7 +9471,7 @@ class gp_Parab(object):
         """
         return _gp.gp_Parab_Transformed(self, *args)
 
-    def Translate(self, *args) -> "void" :
+    def Translate(self, *args):
         """
         :param V:
         :type V: gp_Vec
@@ -9435,7 +9486,7 @@ class gp_Parab(object):
         """
         return _gp.gp_Parab_Translate(self, *args)
 
-    def Translated(self, *args) -> "gp_Parab" :
+    def Translated(self, *args):
         """
         * Translates a parabola in the direction of the vector V. The magnitude of the translation is the vector's magnitude.
 
@@ -9454,21 +9505,21 @@ class gp_Parab(object):
         """
         return _gp.gp_Parab_Translated(self, *args)
 
-    def _CSFDB_Getgp_Parabpos(self, *args) -> "gp_Ax2 const" :
+    def _CSFDB_Getgp_Parabpos(self):
         """
         :rtype: gp_Ax2
 
         """
-        return _gp.gp_Parab__CSFDB_Getgp_Parabpos(self, *args)
+        return _gp.gp_Parab__CSFDB_Getgp_Parabpos(self)
 
-    def _CSFDB_Getgp_ParabfocalLength(self, *args) -> "Standard_Real" :
+    def _CSFDB_Getgp_ParabfocalLength(self):
         """
         :rtype: float
 
         """
-        return _gp.gp_Parab__CSFDB_Getgp_ParabfocalLength(self, *args)
+        return _gp.gp_Parab__CSFDB_Getgp_ParabfocalLength(self)
 
-    def _CSFDB_Setgp_ParabfocalLength(self, *args) -> "void" :
+    def _CSFDB_Setgp_ParabfocalLength(self, *args):
         """
         :param p:
         :type p: float
@@ -9534,12 +9585,32 @@ class gp_Parab2d(object):
         :type Sense: bool
         :rtype: None
 
+        * Creates a parabola with its vertex point, its axis of symmetry ('XAxis') and its focal length. The sense of parametrization is given by Sense. Warnings : It is possible to have Focal = 0. Raises ConstructionError if Focal < 0.0
+
+        :param MirrorAxis:
+        :type MirrorAxis: gp_Ax2d
+        :param Focal:
+        :type Focal: float
+        :param Sense: default value is Standard_True
+        :type Sense: bool
+        :rtype: None
+
         * Creates a parabola with its vertex point, its axis of symmetry ('XAxis') and its focal length. The sense of parametrization is given by A. Warnings : It is possible to have Focal = 0. Raises ConstructionError if Focal < 0.0
 
         :param A:
         :type A: gp_Ax22d
         :param Focal:
         :type Focal: float
+        :rtype: None
+
+        * Creates a parabola with the directrix and the focus point. The sense of parametrization is given by Sense.
+
+        :param D:
+        :type D: gp_Ax2d
+        :param F:
+        :type F: gp_Pnt2d
+        :param Sense: default value is Standard_True
+        :type Sense: bool
         :rtype: None
 
         * Creates a parabola with the directrix and the focus point. The sense of parametrization is given by Sense.
@@ -9562,7 +9633,7 @@ class gp_Parab2d(object):
 
         """
         _gp.gp_Parab2d_swiginit(self,_gp.new_gp_Parab2d(*args))
-    def SetFocal(self, *args) -> "void" :
+    def SetFocal(self, *args):
         """
         * Changes the focal distance of the parabola Warnings : It is possible to have Focal = 0. Raises ConstructionError if Focal < 0.0
 
@@ -9573,7 +9644,7 @@ class gp_Parab2d(object):
         """
         return _gp.gp_Parab2d_SetFocal(self, *args)
 
-    def SetLocation(self, *args) -> "void" :
+    def SetLocation(self, *args):
         """
         * Changes the 'Location' point of the parabola. It is the vertex of the parabola.
 
@@ -9584,7 +9655,7 @@ class gp_Parab2d(object):
         """
         return _gp.gp_Parab2d_SetLocation(self, *args)
 
-    def SetMirrorAxis(self, *args) -> "void" :
+    def SetMirrorAxis(self, *args):
         """
         * Modifies this parabola, by redefining its local coordinate system so that its origin and 'X Direction' become those of the axis MA. The 'Y Direction' of the local coordinate system is then recomputed. The orientation of the local coordinate system is not modified.
 
@@ -9595,7 +9666,7 @@ class gp_Parab2d(object):
         """
         return _gp.gp_Parab2d_SetMirrorAxis(self, *args)
 
-    def SetAxis(self, *args) -> "void" :
+    def SetAxis(self, *args):
         """
         * Changes the local coordinate system of the parabola. The 'Location' point of A becomes the vertex of the parabola.
 
@@ -9606,7 +9677,7 @@ class gp_Parab2d(object):
         """
         return _gp.gp_Parab2d_SetAxis(self, *args)
 
-    def Coefficients(self, *args) -> "void" :
+    def Coefficients(self, *args):
         """
         * Computes the coefficients of the implicit equation of the parabola. A * (X**2) + B * (Y**2) + 2*C*(X*Y) + 2*D*X + 2*E*Y + F = 0.
 
@@ -9627,95 +9698,95 @@ class gp_Parab2d(object):
         """
         return _gp.gp_Parab2d_Coefficients(self, *args)
 
-    def Directrix(self, *args) -> "gp_Ax2d" :
+    def Directrix(self):
         """
         * Computes the directrix of the parabola. The directrix is: - a line parallel to the 'Y Direction' of the local coordinate system of this parabola, and - located on the negative side of the axis of symmetry, at a distance from the apex which is equal to the focal length of this parabola. The directrix is returned as an axis (a gp_Ax2d object), the origin of which is situated on the 'X Axis' of this parabola.
 
         :rtype: gp_Ax2d
 
         """
-        return _gp.gp_Parab2d_Directrix(self, *args)
+        return _gp.gp_Parab2d_Directrix(self)
 
-    def Focal(self, *args) -> "Standard_Real" :
+    def Focal(self):
         """
         * Returns the distance between the vertex and the focus of the parabola.
 
         :rtype: float
 
         """
-        return _gp.gp_Parab2d_Focal(self, *args)
+        return _gp.gp_Parab2d_Focal(self)
 
-    def Focus(self, *args) -> "gp_Pnt2d" :
+    def Focus(self):
         """
         * Returns the focus of the parabola.
 
         :rtype: gp_Pnt2d
 
         """
-        return _gp.gp_Parab2d_Focus(self, *args)
+        return _gp.gp_Parab2d_Focus(self)
 
-    def Location(self, *args) -> "gp_Pnt2d" :
+    def Location(self):
         """
         * Returns the vertex of the parabola.
 
         :rtype: gp_Pnt2d
 
         """
-        return _gp.gp_Parab2d_Location(self, *args)
+        return _gp.gp_Parab2d_Location(self)
 
-    def MirrorAxis(self, *args) -> "gp_Ax2d" :
+    def MirrorAxis(self):
         """
         * Returns the symmetry axis of the parabola. The 'Location' point of this axis is the vertex of the parabola.
 
         :rtype: gp_Ax2d
 
         """
-        return _gp.gp_Parab2d_MirrorAxis(self, *args)
+        return _gp.gp_Parab2d_MirrorAxis(self)
 
-    def Axis(self, *args) -> "gp_Ax22d" :
+    def Axis(self):
         """
         * Returns the local coordinate system of the parabola. The 'Location' point of this axis is the vertex of the parabola.
 
         :rtype: gp_Ax22d
 
         """
-        return _gp.gp_Parab2d_Axis(self, *args)
+        return _gp.gp_Parab2d_Axis(self)
 
-    def Parameter(self, *args) -> "Standard_Real" :
+    def Parameter(self):
         """
         * Returns the distance between the focus and the directrix of the parabola.
 
         :rtype: float
 
         """
-        return _gp.gp_Parab2d_Parameter(self, *args)
+        return _gp.gp_Parab2d_Parameter(self)
 
-    def Reverse(self, *args) -> "void" :
+    def Reverse(self):
         """
         :rtype: None
 
         """
-        return _gp.gp_Parab2d_Reverse(self, *args)
+        return _gp.gp_Parab2d_Reverse(self)
 
-    def Reversed(self, *args) -> "gp_Parab2d" :
+    def Reversed(self):
         """
         * Reverses the orientation of the local coordinate system of this parabola (the 'Y Direction' is reversed). Therefore, the implicit orientation of this parabola is reversed. Note: - Reverse assigns the result to this parabola, while - Reversed creates a new one.
 
         :rtype: gp_Parab2d
 
         """
-        return _gp.gp_Parab2d_Reversed(self, *args)
+        return _gp.gp_Parab2d_Reversed(self)
 
-    def IsDirect(self, *args) -> "Standard_Boolean" :
+    def IsDirect(self):
         """
         * Returns true if the local coordinate system is direct  and false in the other case.
 
         :rtype: bool
 
         """
-        return _gp.gp_Parab2d_IsDirect(self, *args)
+        return _gp.gp_Parab2d_IsDirect(self)
 
-    def Mirror(self, *args) -> "void" :
+    def Mirror(self, *args):
         """
         :param P:
         :type P: gp_Pnt2d
@@ -9728,7 +9799,7 @@ class gp_Parab2d(object):
         """
         return _gp.gp_Parab2d_Mirror(self, *args)
 
-    def Mirrored(self, *args) -> "gp_Parab2d" :
+    def Mirrored(self, *args):
         """
         * Performs the symmetrical transformation of a parabola with respect to the point P which is the center of the symmetry
 
@@ -9745,7 +9816,7 @@ class gp_Parab2d(object):
         """
         return _gp.gp_Parab2d_Mirrored(self, *args)
 
-    def Rotate(self, *args) -> "void" :
+    def Rotate(self, *args):
         """
         :param P:
         :type P: gp_Pnt2d
@@ -9756,7 +9827,7 @@ class gp_Parab2d(object):
         """
         return _gp.gp_Parab2d_Rotate(self, *args)
 
-    def Rotated(self, *args) -> "gp_Parab2d" :
+    def Rotated(self, *args):
         """
         * Rotates a parabola. P is the center of the rotation. Ang is the angular value of the rotation in radians.
 
@@ -9769,7 +9840,7 @@ class gp_Parab2d(object):
         """
         return _gp.gp_Parab2d_Rotated(self, *args)
 
-    def Scale(self, *args) -> "void" :
+    def Scale(self, *args):
         """
         :param P:
         :type P: gp_Pnt2d
@@ -9780,7 +9851,7 @@ class gp_Parab2d(object):
         """
         return _gp.gp_Parab2d_Scale(self, *args)
 
-    def Scaled(self, *args) -> "gp_Parab2d" :
+    def Scaled(self, *args):
         """
         * Scales a parabola. S is the scaling value. If S is negative the direction of the symmetry axis 'XAxis' is reversed and the direction of the 'YAxis' too.
 
@@ -9793,7 +9864,7 @@ class gp_Parab2d(object):
         """
         return _gp.gp_Parab2d_Scaled(self, *args)
 
-    def Transform(self, *args) -> "void" :
+    def Transform(self, *args):
         """
         :param T:
         :type T: gp_Trsf2d
@@ -9802,7 +9873,7 @@ class gp_Parab2d(object):
         """
         return _gp.gp_Parab2d_Transform(self, *args)
 
-    def Transformed(self, *args) -> "gp_Parab2d" :
+    def Transformed(self, *args):
         """
         * Transforms an parabola with the transformation T from class Trsf2d.
 
@@ -9813,7 +9884,7 @@ class gp_Parab2d(object):
         """
         return _gp.gp_Parab2d_Transformed(self, *args)
 
-    def Translate(self, *args) -> "void" :
+    def Translate(self, *args):
         """
         :param V:
         :type V: gp_Vec2d
@@ -9828,7 +9899,7 @@ class gp_Parab2d(object):
         """
         return _gp.gp_Parab2d_Translate(self, *args)
 
-    def Translated(self, *args) -> "gp_Parab2d" :
+    def Translated(self, *args):
         """
         * Translates a parabola in the direction of the vector V. The magnitude of the translation is the vector's magnitude.
 
@@ -9847,21 +9918,21 @@ class gp_Parab2d(object):
         """
         return _gp.gp_Parab2d_Translated(self, *args)
 
-    def _CSFDB_Getgp_Parab2dpos(self, *args) -> "gp_Ax22d const" :
+    def _CSFDB_Getgp_Parab2dpos(self):
         """
         :rtype: gp_Ax22d
 
         """
-        return _gp.gp_Parab2d__CSFDB_Getgp_Parab2dpos(self, *args)
+        return _gp.gp_Parab2d__CSFDB_Getgp_Parab2dpos(self)
 
-    def _CSFDB_Getgp_Parab2dfocalLength(self, *args) -> "Standard_Real" :
+    def _CSFDB_Getgp_Parab2dfocalLength(self):
         """
         :rtype: float
 
         """
-        return _gp.gp_Parab2d__CSFDB_Getgp_Parab2dfocalLength(self, *args)
+        return _gp.gp_Parab2d__CSFDB_Getgp_Parab2dfocalLength(self)
 
-    def _CSFDB_Setgp_Parab2dfocalLength(self, *args) -> "void" :
+    def _CSFDB_Setgp_Parab2dfocalLength(self, *args):
         """
         :param p:
         :type p: float
@@ -9947,7 +10018,7 @@ class gp_Pln(object):
 
         """
         _gp.gp_Pln_swiginit(self,_gp.new_gp_Pln(*args))
-    def Coefficients(self, *args) -> "void" :
+    def Coefficients(self, *args):
         """
         * Returns the coefficients of the plane's cartesian equation : A * X + B * Y + C * Z + D = 0.
 
@@ -9964,7 +10035,7 @@ class gp_Pln(object):
         """
         return _gp.gp_Pln_Coefficients(self, *args)
 
-    def SetAxis(self, *args) -> "void" :
+    def SetAxis(self, *args):
         """
         * Modifies this plane, by redefining its local coordinate system so that - its origin and 'main Direction' become those of the axis A1 (the 'X Direction' and 'Y Direction' are then recomputed). Raises ConstructionError if the A1 is parallel to the 'XAxis' of the plane.
 
@@ -9975,7 +10046,7 @@ class gp_Pln(object):
         """
         return _gp.gp_Pln_SetAxis(self, *args)
 
-    def SetLocation(self, *args) -> "void" :
+    def SetLocation(self, *args):
         """
         * Changes the origin of the plane.
 
@@ -9986,7 +10057,7 @@ class gp_Pln(object):
         """
         return _gp.gp_Pln_SetLocation(self, *args)
 
-    def SetPosition(self, *args) -> "void" :
+    def SetPosition(self, *args):
         """
         * Changes the local coordinate system of the plane.
 
@@ -9997,61 +10068,61 @@ class gp_Pln(object):
         """
         return _gp.gp_Pln_SetPosition(self, *args)
 
-    def UReverse(self, *args) -> "void" :
+    def UReverse(self):
         """
         * Reverses the U parametrization of the plane reversing the XAxis.
 
         :rtype: None
 
         """
-        return _gp.gp_Pln_UReverse(self, *args)
+        return _gp.gp_Pln_UReverse(self)
 
-    def VReverse(self, *args) -> "void" :
+    def VReverse(self):
         """
         * Reverses the V parametrization of the plane reversing the YAxis.
 
         :rtype: None
 
         """
-        return _gp.gp_Pln_VReverse(self, *args)
+        return _gp.gp_Pln_VReverse(self)
 
-    def Direct(self, *args) -> "Standard_Boolean" :
+    def Direct(self):
         """
         * returns true if the Ax3 is right handed.
 
         :rtype: bool
 
         """
-        return _gp.gp_Pln_Direct(self, *args)
+        return _gp.gp_Pln_Direct(self)
 
-    def Axis(self, *args) -> "gp_Ax1 const" :
+    def Axis(self):
         """
         * Returns the plane's normal Axis.
 
         :rtype: gp_Ax1
 
         """
-        return _gp.gp_Pln_Axis(self, *args)
+        return _gp.gp_Pln_Axis(self)
 
-    def Location(self, *args) -> "gp_Pnt const" :
+    def Location(self):
         """
         * Returns the plane's location (origin).
 
         :rtype: gp_Pnt
 
         """
-        return _gp.gp_Pln_Location(self, *args)
+        return _gp.gp_Pln_Location(self)
 
-    def Position(self, *args) -> "gp_Ax3 const" :
+    def Position(self):
         """
         * Returns the local coordinate system of the plane .
 
         :rtype: gp_Ax3
 
         """
-        return _gp.gp_Pln_Position(self, *args)
+        return _gp.gp_Pln_Position(self)
 
-    def Distance(self, *args) -> "Standard_Real" :
+    def Distance(self, *args):
         """
         * Computes the distance between <self> and the point <P>.
 
@@ -10074,7 +10145,7 @@ class gp_Pln(object):
         """
         return _gp.gp_Pln_Distance(self, *args)
 
-    def SquareDistance(self, *args) -> "Standard_Real" :
+    def SquareDistance(self, *args):
         """
         * Computes the square distance between <self> and the point <P>.
 
@@ -10097,25 +10168,25 @@ class gp_Pln(object):
         """
         return _gp.gp_Pln_SquareDistance(self, *args)
 
-    def XAxis(self, *args) -> "gp_Ax1" :
+    def XAxis(self):
         """
         * Returns the X axis of the plane.
 
         :rtype: gp_Ax1
 
         """
-        return _gp.gp_Pln_XAxis(self, *args)
+        return _gp.gp_Pln_XAxis(self)
 
-    def YAxis(self, *args) -> "gp_Ax1" :
+    def YAxis(self):
         """
         * Returns the Y axis of the plane.
 
         :rtype: gp_Ax1
 
         """
-        return _gp.gp_Pln_YAxis(self, *args)
+        return _gp.gp_Pln_YAxis(self)
 
-    def Contains(self, *args) -> "Standard_Boolean" :
+    def Contains(self, *args):
         """
         * Returns true if this plane contains the point P. This means that - the distance between point P and this plane is less than or equal to LinearTolerance, or - line L is normal to the 'main Axis' of the local coordinate system of this plane, within the tolerance AngularTolerance, and the distance between the origin of line L and this plane is less than or equal to LinearTolerance.
 
@@ -10138,7 +10209,7 @@ class gp_Pln(object):
         """
         return _gp.gp_Pln_Contains(self, *args)
 
-    def Mirror(self, *args) -> "void" :
+    def Mirror(self, *args):
         """
         :param P:
         :type P: gp_Pnt
@@ -10155,7 +10226,7 @@ class gp_Pln(object):
         """
         return _gp.gp_Pln_Mirror(self, *args)
 
-    def Mirrored(self, *args) -> "gp_Pln" :
+    def Mirrored(self, *args):
         """
         * Performs the symmetrical transformation of a plane with respect to the point <P> which is the center of the symmetry Warnings : The normal direction to the plane is not changed. The 'XAxis' and the 'YAxis' are reversed.
 
@@ -10178,7 +10249,7 @@ class gp_Pln(object):
         """
         return _gp.gp_Pln_Mirrored(self, *args)
 
-    def Rotate(self, *args) -> "void" :
+    def Rotate(self, *args):
         """
         :param A1:
         :type A1: gp_Ax1
@@ -10189,7 +10260,7 @@ class gp_Pln(object):
         """
         return _gp.gp_Pln_Rotate(self, *args)
 
-    def Rotated(self, *args) -> "gp_Pln" :
+    def Rotated(self, *args):
         """
         * rotates a plane. A1 is the axis of the rotation. Ang is the angular value of the rotation in radians.
 
@@ -10202,7 +10273,7 @@ class gp_Pln(object):
         """
         return _gp.gp_Pln_Rotated(self, *args)
 
-    def Scale(self, *args) -> "void" :
+    def Scale(self, *args):
         """
         :param P:
         :type P: gp_Pnt
@@ -10213,7 +10284,7 @@ class gp_Pln(object):
         """
         return _gp.gp_Pln_Scale(self, *args)
 
-    def Scaled(self, *args) -> "gp_Pln" :
+    def Scaled(self, *args):
         """
         * Scales a plane. S is the scaling value.
 
@@ -10226,7 +10297,7 @@ class gp_Pln(object):
         """
         return _gp.gp_Pln_Scaled(self, *args)
 
-    def Transform(self, *args) -> "void" :
+    def Transform(self, *args):
         """
         :param T:
         :type T: gp_Trsf
@@ -10235,7 +10306,7 @@ class gp_Pln(object):
         """
         return _gp.gp_Pln_Transform(self, *args)
 
-    def Transformed(self, *args) -> "gp_Pln" :
+    def Transformed(self, *args):
         """
         * Transforms a plane with the transformation T from class Trsf. The transformation is performed on the 'Location' point, on the 'XAxis' and the 'YAxis'. The resulting normal direction is the cross product between the 'XDirection' and the 'YDirection' after transformation.
 
@@ -10246,7 +10317,7 @@ class gp_Pln(object):
         """
         return _gp.gp_Pln_Transformed(self, *args)
 
-    def Translate(self, *args) -> "void" :
+    def Translate(self, *args):
         """
         :param V:
         :type V: gp_Vec
@@ -10261,7 +10332,7 @@ class gp_Pln(object):
         """
         return _gp.gp_Pln_Translate(self, *args)
 
-    def Translated(self, *args) -> "gp_Pln" :
+    def Translated(self, *args):
         """
         * Translates a plane in the direction of the vector V. The magnitude of the translation is the vector's magnitude.
 
@@ -10280,12 +10351,12 @@ class gp_Pln(object):
         """
         return _gp.gp_Pln_Translated(self, *args)
 
-    def _CSFDB_Getgp_Plnpos(self, *args) -> "gp_Ax3 const" :
+    def _CSFDB_Getgp_Plnpos(self):
         """
         :rtype: gp_Ax3
 
         """
-        return _gp.gp_Pln__CSFDB_Getgp_Plnpos(self, *args)
+        return _gp.gp_Pln__CSFDB_Getgp_Plnpos(self)
 
     def __del__(self):
     	try:
@@ -10352,12 +10423,12 @@ class gp_Pnt(object):
 
         """
         _gp.gp_Pnt_swiginit(self,_gp.new_gp_Pnt(*args))
-    def SetCoord(self, *args) -> "void" :
+    def SetCoord(self, *args):
         """
         * Changes the coordinate of range Index : Index = 1 => X is modified Index = 2 => Y is modified Index = 3 => Z is modified Raised if Index != {1, 2, 3}.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Xi:
         :type Xi: float
         :rtype: None
@@ -10375,7 +10446,7 @@ class gp_Pnt(object):
         """
         return _gp.gp_Pnt_SetCoord(self, *args)
 
-    def SetX(self, *args) -> "void" :
+    def SetX(self, *args):
         """
         * Assigns the given value to the X coordinate of this point.
 
@@ -10386,7 +10457,7 @@ class gp_Pnt(object):
         """
         return _gp.gp_Pnt_SetX(self, *args)
 
-    def SetY(self, *args) -> "void" :
+    def SetY(self, *args):
         """
         * Assigns the given value to the Y coordinate of this point.
 
@@ -10397,7 +10468,7 @@ class gp_Pnt(object):
         """
         return _gp.gp_Pnt_SetY(self, *args)
 
-    def SetZ(self, *args) -> "void" :
+    def SetZ(self, *args):
         """
         * Assigns the given value to the Z coordinate of this point.
 
@@ -10408,7 +10479,7 @@ class gp_Pnt(object):
         """
         return _gp.gp_Pnt_SetZ(self, *args)
 
-    def SetXYZ(self, *args) -> "void" :
+    def SetXYZ(self, *args):
         """
         * Assigns the three coordinates of Coord to this point.
 
@@ -10419,48 +10490,48 @@ class gp_Pnt(object):
         """
         return _gp.gp_Pnt_SetXYZ(self, *args)
 
-    def X(self, *args) -> "Standard_Real" :
+    def X(self):
         """
         * For this point, returns its X coordinate.
 
         :rtype: float
 
         """
-        return _gp.gp_Pnt_X(self, *args)
+        return _gp.gp_Pnt_X(self)
 
-    def Y(self, *args) -> "Standard_Real" :
+    def Y(self):
         """
         * For this point, returns its Y coordinate.
 
         :rtype: float
 
         """
-        return _gp.gp_Pnt_Y(self, *args)
+        return _gp.gp_Pnt_Y(self)
 
-    def Z(self, *args) -> "Standard_Real" :
+    def Z(self):
         """
         * For this point, returns its Z coordinate.
 
         :rtype: float
 
         """
-        return _gp.gp_Pnt_Z(self, *args)
+        return _gp.gp_Pnt_Z(self)
 
-    def XYZ(self, *args) -> "gp_XYZ const" :
+    def XYZ(self):
         """
         * For this point, returns its three coordinates as a XYZ object.
 
         :rtype: gp_XYZ
 
         """
-        return _gp.gp_Pnt_XYZ(self, *args)
+        return _gp.gp_Pnt_XYZ(self)
 
-    def Coord(self, *args) -> "gp_XYZ const" :
+    def Coord(self, *args):
         """
         * Returns the coordinate of corresponding to the value of Index : Index = 1 => X is returned Index = 2 => Y is returned Index = 3 => Z is returned Raises OutOfRange if Index != {1, 2, 3}. Raised if Index != {1, 2, 3}.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: float
 
         * For this point gives its three coordinates Xp, Yp and Zp.
@@ -10480,16 +10551,16 @@ class gp_Pnt(object):
         """
         return _gp.gp_Pnt_Coord(self, *args)
 
-    def ChangeCoord(self, *args) -> "gp_XYZ" :
+    def ChangeCoord(self):
         """
         * Returns the coordinates of this point. Note: This syntax allows direct modification of the returned value.
 
         :rtype: gp_XYZ
 
         """
-        return _gp.gp_Pnt_ChangeCoord(self, *args)
+        return _gp.gp_Pnt_ChangeCoord(self)
 
-    def BaryCenter(self, *args) -> "void" :
+    def BaryCenter(self, *args):
         """
         * Assigns the result of the following expression to this point (Alpha*this + Beta*P) / (Alpha + Beta)
 
@@ -10504,7 +10575,7 @@ class gp_Pnt(object):
         """
         return _gp.gp_Pnt_BaryCenter(self, *args)
 
-    def IsEqual(self, *args) -> "Standard_Boolean" :
+    def IsEqual(self, *args):
         """
         * Comparison Returns True if the distance between the two points is lower or equal to LinearTolerance.
 
@@ -10517,7 +10588,7 @@ class gp_Pnt(object):
         """
         return _gp.gp_Pnt_IsEqual(self, *args)
 
-    def Distance(self, *args) -> "Standard_Real" :
+    def Distance(self, *args):
         """
         * Computes the distance between two points.
 
@@ -10528,7 +10599,7 @@ class gp_Pnt(object):
         """
         return _gp.gp_Pnt_Distance(self, *args)
 
-    def SquareDistance(self, *args) -> "Standard_Real" :
+    def SquareDistance(self, *args):
         """
         * Computes the square distance between two points.
 
@@ -10539,7 +10610,7 @@ class gp_Pnt(object):
         """
         return _gp.gp_Pnt_SquareDistance(self, *args)
 
-    def Mirror(self, *args) -> "void" :
+    def Mirror(self, *args):
         """
         * Performs the symmetrical transformation of a point with respect to the point P which is the center of the symmetry.
 
@@ -10558,7 +10629,7 @@ class gp_Pnt(object):
         """
         return _gp.gp_Pnt_Mirror(self, *args)
 
-    def Mirrored(self, *args) -> "gp_Pnt" :
+    def Mirrored(self, *args):
         """
         * Performs the symmetrical transformation of a point with respect to an axis placement which is the axis of the symmetry.
 
@@ -10581,7 +10652,7 @@ class gp_Pnt(object):
         """
         return _gp.gp_Pnt_Mirrored(self, *args)
 
-    def Rotate(self, *args) -> "void" :
+    def Rotate(self, *args):
         """
         :param A1:
         :type A1: gp_Ax1
@@ -10592,7 +10663,7 @@ class gp_Pnt(object):
         """
         return _gp.gp_Pnt_Rotate(self, *args)
 
-    def Rotated(self, *args) -> "gp_Pnt" :
+    def Rotated(self, *args):
         """
         * Scales a point. S is the scaling value.
 
@@ -10605,7 +10676,7 @@ class gp_Pnt(object):
         """
         return _gp.gp_Pnt_Rotated(self, *args)
 
-    def Scale(self, *args) -> "void" :
+    def Scale(self, *args):
         """
         :param P:
         :type P: gp_Pnt
@@ -10616,7 +10687,7 @@ class gp_Pnt(object):
         """
         return _gp.gp_Pnt_Scale(self, *args)
 
-    def Scaled(self, *args) -> "gp_Pnt" :
+    def Scaled(self, *args):
         """
         * Transforms a point with the transformation T.
 
@@ -10629,7 +10700,7 @@ class gp_Pnt(object):
         """
         return _gp.gp_Pnt_Scaled(self, *args)
 
-    def Transform(self, *args) -> "void" :
+    def Transform(self, *args):
         """
         :param T:
         :type T: gp_Trsf
@@ -10638,7 +10709,7 @@ class gp_Pnt(object):
         """
         return _gp.gp_Pnt_Transform(self, *args)
 
-    def Transformed(self, *args) -> "gp_Pnt" :
+    def Transformed(self, *args):
         """
         * Translates a point in the direction of the vector V. The magnitude of the translation is the vector's magnitude.
 
@@ -10649,7 +10720,7 @@ class gp_Pnt(object):
         """
         return _gp.gp_Pnt_Transformed(self, *args)
 
-    def Translate(self, *args) -> "void" :
+    def Translate(self, *args):
         """
         :param V:
         :type V: gp_Vec
@@ -10664,7 +10735,7 @@ class gp_Pnt(object):
         """
         return _gp.gp_Pnt_Translate(self, *args)
 
-    def Translated(self, *args) -> "gp_Pnt" :
+    def Translated(self, *args):
         """
         * Translates a point from the point P1 to the point P2.
 
@@ -10681,12 +10752,12 @@ class gp_Pnt(object):
         """
         return _gp.gp_Pnt_Translated(self, *args)
 
-    def _CSFDB_Getgp_Pntcoord(self, *args) -> "gp_XYZ const" :
+    def _CSFDB_Getgp_Pntcoord(self):
         """
         :rtype: gp_XYZ
 
         """
-        return _gp.gp_Pnt__CSFDB_Getgp_Pntcoord(self, *args)
+        return _gp.gp_Pnt__CSFDB_Getgp_Pntcoord(self)
 
     def __del__(self):
     	try:
@@ -10751,12 +10822,12 @@ class gp_Pnt2d(object):
 
         """
         _gp.gp_Pnt2d_swiginit(self,_gp.new_gp_Pnt2d(*args))
-    def SetCoord(self, *args) -> "void" :
+    def SetCoord(self, *args):
         """
         * Assigns the value Xi to the coordinate that corresponds to Index: Index = 1 => X is modified Index = 2 => Y is modified Raises OutOfRange if Index != {1, 2}.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Xi:
         :type Xi: float
         :rtype: None
@@ -10772,7 +10843,7 @@ class gp_Pnt2d(object):
         """
         return _gp.gp_Pnt2d_SetCoord(self, *args)
 
-    def SetX(self, *args) -> "void" :
+    def SetX(self, *args):
         """
         * Assigns the given value to the X coordinate of this point.
 
@@ -10783,7 +10854,7 @@ class gp_Pnt2d(object):
         """
         return _gp.gp_Pnt2d_SetX(self, *args)
 
-    def SetY(self, *args) -> "void" :
+    def SetY(self, *args):
         """
         * Assigns the given value to the Y coordinate of this point.
 
@@ -10794,7 +10865,7 @@ class gp_Pnt2d(object):
         """
         return _gp.gp_Pnt2d_SetY(self, *args)
 
-    def SetXY(self, *args) -> "void" :
+    def SetXY(self, *args):
         """
         * Assigns the two coordinates of Coord to this point.
 
@@ -10805,39 +10876,39 @@ class gp_Pnt2d(object):
         """
         return _gp.gp_Pnt2d_SetXY(self, *args)
 
-    def X(self, *args) -> "Standard_Real" :
+    def X(self):
         """
         * For this point, returns its X coordinate.
 
         :rtype: float
 
         """
-        return _gp.gp_Pnt2d_X(self, *args)
+        return _gp.gp_Pnt2d_X(self)
 
-    def Y(self, *args) -> "Standard_Real" :
+    def Y(self):
         """
         * For this point, returns its Y coordinate.
 
         :rtype: float
 
         """
-        return _gp.gp_Pnt2d_Y(self, *args)
+        return _gp.gp_Pnt2d_Y(self)
 
-    def XY(self, *args) -> "gp_XY const" :
+    def XY(self):
         """
         * For this point, returns its two coordinates as a number pair.
 
         :rtype: gp_XY
 
         """
-        return _gp.gp_Pnt2d_XY(self, *args)
+        return _gp.gp_Pnt2d_XY(self)
 
-    def Coord(self, *args) -> "gp_XY const" :
+    def Coord(self, *args):
         """
         * Returns the coordinate of range Index : Index = 1 => X is returned Index = 2 => Y is returned Raises OutOfRange if Index != {1, 2}.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: float
 
         * For this point returns its two coordinates as a number pair.
@@ -10855,16 +10926,16 @@ class gp_Pnt2d(object):
         """
         return _gp.gp_Pnt2d_Coord(self, *args)
 
-    def ChangeCoord(self, *args) -> "gp_XY" :
+    def ChangeCoord(self):
         """
         * Returns the coordinates of this point. Note: This syntax allows direct modification of the returned value.
 
         :rtype: gp_XY
 
         """
-        return _gp.gp_Pnt2d_ChangeCoord(self, *args)
+        return _gp.gp_Pnt2d_ChangeCoord(self)
 
-    def IsEqual(self, *args) -> "Standard_Boolean" :
+    def IsEqual(self, *args):
         """
         * Comparison Returns True if the distance between the two points is lower or equal to LinearTolerance.
 
@@ -10877,7 +10948,7 @@ class gp_Pnt2d(object):
         """
         return _gp.gp_Pnt2d_IsEqual(self, *args)
 
-    def Distance(self, *args) -> "Standard_Real" :
+    def Distance(self, *args):
         """
         * Computes the distance between two points.
 
@@ -10888,7 +10959,7 @@ class gp_Pnt2d(object):
         """
         return _gp.gp_Pnt2d_Distance(self, *args)
 
-    def SquareDistance(self, *args) -> "Standard_Real" :
+    def SquareDistance(self, *args):
         """
         * Computes the square distance between two points.
 
@@ -10899,7 +10970,7 @@ class gp_Pnt2d(object):
         """
         return _gp.gp_Pnt2d_SquareDistance(self, *args)
 
-    def Mirror(self, *args) -> "void" :
+    def Mirror(self, *args):
         """
         * Performs the symmetrical transformation of a point with respect to the point P which is the center of the symmetry.
 
@@ -10914,7 +10985,7 @@ class gp_Pnt2d(object):
         """
         return _gp.gp_Pnt2d_Mirror(self, *args)
 
-    def Mirrored(self, *args) -> "gp_Pnt2d" :
+    def Mirrored(self, *args):
         """
         * Performs the symmetrical transformation of a point with respect to an axis placement which is the axis
 
@@ -10931,7 +11002,7 @@ class gp_Pnt2d(object):
         """
         return _gp.gp_Pnt2d_Mirrored(self, *args)
 
-    def Rotate(self, *args) -> "void" :
+    def Rotate(self, *args):
         """
         :param P:
         :type P: gp_Pnt2d
@@ -10942,7 +11013,7 @@ class gp_Pnt2d(object):
         """
         return _gp.gp_Pnt2d_Rotate(self, *args)
 
-    def Rotated(self, *args) -> "gp_Pnt2d" :
+    def Rotated(self, *args):
         """
         * Scales a point. S is the scaling value.
 
@@ -10955,7 +11026,7 @@ class gp_Pnt2d(object):
         """
         return _gp.gp_Pnt2d_Rotated(self, *args)
 
-    def Scale(self, *args) -> "void" :
+    def Scale(self, *args):
         """
         :param P:
         :type P: gp_Pnt2d
@@ -10966,7 +11037,7 @@ class gp_Pnt2d(object):
         """
         return _gp.gp_Pnt2d_Scale(self, *args)
 
-    def Scaled(self, *args) -> "gp_Pnt2d" :
+    def Scaled(self, *args):
         """
         * Transforms a point with the transformation T.
 
@@ -10979,7 +11050,7 @@ class gp_Pnt2d(object):
         """
         return _gp.gp_Pnt2d_Scaled(self, *args)
 
-    def Transform(self, *args) -> "void" :
+    def Transform(self, *args):
         """
         :param T:
         :type T: gp_Trsf2d
@@ -10988,7 +11059,7 @@ class gp_Pnt2d(object):
         """
         return _gp.gp_Pnt2d_Transform(self, *args)
 
-    def Transformed(self, *args) -> "gp_Pnt2d" :
+    def Transformed(self, *args):
         """
         * Translates a point in the direction of the vector V. The magnitude of the translation is the vector's magnitude.
 
@@ -10999,7 +11070,7 @@ class gp_Pnt2d(object):
         """
         return _gp.gp_Pnt2d_Transformed(self, *args)
 
-    def Translate(self, *args) -> "void" :
+    def Translate(self, *args):
         """
         :param V:
         :type V: gp_Vec2d
@@ -11014,7 +11085,7 @@ class gp_Pnt2d(object):
         """
         return _gp.gp_Pnt2d_Translate(self, *args)
 
-    def Translated(self, *args) -> "gp_Pnt2d" :
+    def Translated(self, *args):
         """
         * Translates a point from the point P1 to the point P2.
 
@@ -11031,12 +11102,12 @@ class gp_Pnt2d(object):
         """
         return _gp.gp_Pnt2d_Translated(self, *args)
 
-    def _CSFDB_Getgp_Pnt2dcoord(self, *args) -> "gp_XY const" :
+    def _CSFDB_Getgp_Pnt2dcoord(self):
         """
         :rtype: gp_XY
 
         """
-        return _gp.gp_Pnt2d__CSFDB_Getgp_Pnt2dcoord(self, *args)
+        return _gp.gp_Pnt2d__CSFDB_Getgp_Pnt2dcoord(self)
 
     def __del__(self):
     	try:
@@ -11134,7 +11205,7 @@ class gp_Quaternion(object):
 
         """
         _gp.gp_Quaternion_swiginit(self,_gp.new_gp_Quaternion(*args))
-    def IsEqual(self, *args) -> "Standard_Boolean" :
+    def IsEqual(self, *args):
         """
         * Simple equal test without precision
 
@@ -11145,7 +11216,7 @@ class gp_Quaternion(object):
         """
         return _gp.gp_Quaternion_IsEqual(self, *args)
 
-    def SetRotation(self, *args) -> "void" :
+    def SetRotation(self, *args):
         """
         * Sets quaternion to shortest-arc rotation producing vector theVecTo from vector theVecFrom. If vectors theVecFrom and theVecTo are opposite then rotation axis is computed as theVecFrom ^ (1,0,0) or theVecFrom ^ (0,0,1).
 
@@ -11168,7 +11239,7 @@ class gp_Quaternion(object):
         """
         return _gp.gp_Quaternion_SetRotation(self, *args)
 
-    def SetVectorAndAngle(self, *args) -> "void" :
+    def SetVectorAndAngle(self, *args):
         """
         * Create a unit quaternion from Axis+Angle representation
 
@@ -11181,7 +11252,7 @@ class gp_Quaternion(object):
         """
         return _gp.gp_Quaternion_SetVectorAndAngle(self, *args)
 
-    def GetVectorAndAngle(self, *args) -> "void" :
+    def GetVectorAndAngle(self, *args):
         """
         * Convert a quaternion to Axis+Angle representation, preserve the axis direction and angle from -PI to +PI
 
@@ -11194,7 +11265,7 @@ class gp_Quaternion(object):
         """
         return _gp.gp_Quaternion_GetVectorAndAngle(self, *args)
 
-    def SetMatrix(self, *args) -> "void" :
+    def SetMatrix(self, *args):
         """
         * Create a unit quaternion by rotation matrix matrix must contain only rotation (not scale or shear)  For numerical stability we find first the greatest component of quaternion and than search others from this one
 
@@ -11205,16 +11276,16 @@ class gp_Quaternion(object):
         """
         return _gp.gp_Quaternion_SetMatrix(self, *args)
 
-    def GetMatrix(self, *args) -> "gp_Mat" :
+    def GetMatrix(self):
         """
         * Returns rotation operation as 3*3 matrix
 
         :rtype: gp_Mat
 
         """
-        return _gp.gp_Quaternion_GetMatrix(self, *args)
+        return _gp.gp_Quaternion_GetMatrix(self)
 
-    def SetEulerAngles(self, *args) -> "void" :
+    def SetEulerAngles(self, *args):
         """
         * Create a unit quaternion representing rotation defined by generalized Euler angles
 
@@ -11231,7 +11302,7 @@ class gp_Quaternion(object):
         """
         return _gp.gp_Quaternion_SetEulerAngles(self, *args)
 
-    def GetEulerAngles(self, *args) -> "void" :
+    def GetEulerAngles(self, *args):
         """
         * Returns Euler angles describing current rotation
 
@@ -11248,7 +11319,7 @@ class gp_Quaternion(object):
         """
         return _gp.gp_Quaternion_GetEulerAngles(self, *args)
 
-    def Set(self, *args) -> "void" :
+    def Set(self, *args):
         """
         :param x:
         :type x: float
@@ -11267,98 +11338,98 @@ class gp_Quaternion(object):
         """
         return _gp.gp_Quaternion_Set(self, *args)
 
-    def X(self, *args) -> "Standard_Real" :
+    def X(self):
         """
         :rtype: float
 
         """
-        return _gp.gp_Quaternion_X(self, *args)
+        return _gp.gp_Quaternion_X(self)
 
-    def Y(self, *args) -> "Standard_Real" :
+    def Y(self):
         """
         :rtype: float
 
         """
-        return _gp.gp_Quaternion_Y(self, *args)
+        return _gp.gp_Quaternion_Y(self)
 
-    def Z(self, *args) -> "Standard_Real" :
+    def Z(self):
         """
         :rtype: float
 
         """
-        return _gp.gp_Quaternion_Z(self, *args)
+        return _gp.gp_Quaternion_Z(self)
 
-    def W(self, *args) -> "Standard_Real" :
+    def W(self):
         """
         :rtype: float
 
         """
-        return _gp.gp_Quaternion_W(self, *args)
+        return _gp.gp_Quaternion_W(self)
 
-    def SetIdent(self, *args) -> "void" :
+    def SetIdent(self):
         """
         * Make identity quaternion (zero-rotation)
 
         :rtype: None
 
         """
-        return _gp.gp_Quaternion_SetIdent(self, *args)
+        return _gp.gp_Quaternion_SetIdent(self)
 
-    def Reverse(self, *args) -> "void" :
+    def Reverse(self):
         """
         * Reverse direction of rotation (conjugate quaternion)
 
         :rtype: None
 
         """
-        return _gp.gp_Quaternion_Reverse(self, *args)
+        return _gp.gp_Quaternion_Reverse(self)
 
-    def Reversed(self, *args) -> "gp_Quaternion" :
+    def Reversed(self):
         """
         * Return rotation with reversed direction (conjugated quaternion)
 
         :rtype: gp_Quaternion
 
         """
-        return _gp.gp_Quaternion_Reversed(self, *args)
+        return _gp.gp_Quaternion_Reversed(self)
 
-    def Invert(self, *args) -> "void" :
+    def Invert(self):
         """
         * Inverts quaternion (both rotation direction and norm)
 
         :rtype: None
 
         """
-        return _gp.gp_Quaternion_Invert(self, *args)
+        return _gp.gp_Quaternion_Invert(self)
 
-    def Inverted(self, *args) -> "gp_Quaternion" :
+    def Inverted(self):
         """
         * Return inversed quaternion q^-1
 
         :rtype: gp_Quaternion
 
         """
-        return _gp.gp_Quaternion_Inverted(self, *args)
+        return _gp.gp_Quaternion_Inverted(self)
 
-    def SquareNorm(self, *args) -> "Standard_Real" :
+    def SquareNorm(self):
         """
         * Returns square norm of quaternion
 
         :rtype: float
 
         """
-        return _gp.gp_Quaternion_SquareNorm(self, *args)
+        return _gp.gp_Quaternion_SquareNorm(self)
 
-    def Norm(self, *args) -> "Standard_Real" :
+    def Norm(self):
         """
         * Returns norm of quaternion
 
         :rtype: float
 
         """
-        return _gp.gp_Quaternion_Norm(self, *args)
+        return _gp.gp_Quaternion_Norm(self)
 
-    def Scale(self, *args) -> "void" :
+    def Scale(self, *args):
         """
         * Scale all components by quaternion by theScale; note that rotation is not changed by this operation (except 0-scaling)
 
@@ -11369,7 +11440,7 @@ class gp_Quaternion(object):
         """
         return _gp.gp_Quaternion_Scale(self, *args)
 
-    def Scaled(self, *args) -> "gp_Quaternion" :
+    def Scaled(self, *args):
         """
         * Returns scaled quaternion
 
@@ -11380,50 +11451,50 @@ class gp_Quaternion(object):
         """
         return _gp.gp_Quaternion_Scaled(self, *args)
 
-    def StabilizeLength(self, *args) -> "void" :
+    def StabilizeLength(self):
         """
         * Stabilize quaternion length within 1 - 1/4. This operation is a lot faster than normalization and preserve length goes to 0 or infinity
 
         :rtype: None
 
         """
-        return _gp.gp_Quaternion_StabilizeLength(self, *args)
+        return _gp.gp_Quaternion_StabilizeLength(self)
 
-    def Normalize(self, *args) -> "void" :
+    def Normalize(self):
         """
         * Scale quaternion that its norm goes to 1. The appearing of 0 magnitude or near is a error, so we can be sure that can divide by magnitude
 
         :rtype: None
 
         """
-        return _gp.gp_Quaternion_Normalize(self, *args)
+        return _gp.gp_Quaternion_Normalize(self)
 
-    def Normalized(self, *args) -> "gp_Quaternion" :
+    def Normalized(self):
         """
         * Returns quaternion scaled so that its norm goes to 1.
 
         :rtype: gp_Quaternion
 
         """
-        return _gp.gp_Quaternion_Normalized(self, *args)
+        return _gp.gp_Quaternion_Normalized(self)
 
-    def Negated(self, *args) -> "gp_Quaternion" :
+    def Negated(self):
         """
         * Returns quaternion with all components negated. Note that this operation does not affect neither rotation operator defined by quaternion nor its norm.
 
         :rtype: gp_Quaternion
 
         """
-        return _gp.gp_Quaternion_Negated(self, *args)
+        return _gp.gp_Quaternion_Negated(self)
 
-    def __neg__(self, *args) -> "gp_Quaternion" :
+    def __neg__(self):
         """
         :rtype: gp_Quaternion
 
         """
-        return _gp.gp_Quaternion___neg__(self, *args)
+        return _gp.gp_Quaternion___neg__(self)
 
-    def Added(self, *args) -> "gp_Quaternion" :
+    def Added(self, *args):
         """
         * Makes sum of quaternion components; result is 'rotations mix'
 
@@ -11434,7 +11505,7 @@ class gp_Quaternion(object):
         """
         return _gp.gp_Quaternion_Added(self, *args)
 
-    def __add__(self, *args) -> "gp_Quaternion" :
+    def __add__(self, *args):
         """
         :param theOther:
         :type theOther: gp_Quaternion
@@ -11443,7 +11514,7 @@ class gp_Quaternion(object):
         """
         return _gp.gp_Quaternion___add__(self, *args)
 
-    def Subtracted(self, *args) -> "gp_Quaternion" :
+    def Subtracted(self, *args):
         """
         * Makes difference of quaternion components; result is 'rotations mix'
 
@@ -11454,7 +11525,7 @@ class gp_Quaternion(object):
         """
         return _gp.gp_Quaternion_Subtracted(self, *args)
 
-    def __sub__(self, *args) -> "gp_Quaternion" :
+    def __sub__(self, *args):
         """
         :param theOther:
         :type theOther: gp_Quaternion
@@ -11463,7 +11534,7 @@ class gp_Quaternion(object):
         """
         return _gp.gp_Quaternion___sub__(self, *args)
 
-    def Multiplied(self, *args) -> "gp_Quaternion" :
+    def Multiplied(self, *args):
         """
         * Multiply function - work the same as Matrices multiplying. qq' = (cross(v,v') + wv' + w'v, ww' - dot(v,v')) Result is rotation combination: q' than q (here q=this, q'=theQ). Notices than: qq' != q'q; qq^-1 = q;
 
@@ -11474,7 +11545,7 @@ class gp_Quaternion(object):
         """
         return _gp.gp_Quaternion_Multiplied(self, *args)
 
-    def Add(self, *args) -> "void" :
+    def Add(self, *args):
         """
         * Adds componnets of other quaternion; result is 'rotations mix'
 
@@ -11485,7 +11556,7 @@ class gp_Quaternion(object):
         """
         return _gp.gp_Quaternion_Add(self, *args)
 
-    def __iadd__(self, *args) -> "void" :
+    def __iadd__(self, *args):
         """
         :param theOther:
         :type theOther: gp_Quaternion
@@ -11494,7 +11565,7 @@ class gp_Quaternion(object):
         """
         return _gp.gp_Quaternion___iadd__(self, *args)
 
-    def Subtract(self, *args) -> "void" :
+    def Subtract(self, *args):
         """
         * Subtracts componnets of other quaternion; result is 'rotations mix'
 
@@ -11505,7 +11576,7 @@ class gp_Quaternion(object):
         """
         return _gp.gp_Quaternion_Subtract(self, *args)
 
-    def __isub__(self, *args) -> "void" :
+    def __isub__(self, *args):
         """
         :param theOther:
         :type theOther: gp_Quaternion
@@ -11514,7 +11585,7 @@ class gp_Quaternion(object):
         """
         return _gp.gp_Quaternion___isub__(self, *args)
 
-    def __imul__(self, *args) -> "void" :
+    def __imul__(self, *args):
         """
         :param theScale:
         :type theScale: float
@@ -11527,7 +11598,7 @@ class gp_Quaternion(object):
         """
         return _gp.gp_Quaternion___imul__(self, *args)
 
-    def Dot(self, *args) -> "Standard_Real" :
+    def Dot(self, *args):
         """
         * Computes inner product / scalar product / Dot
 
@@ -11538,16 +11609,16 @@ class gp_Quaternion(object):
         """
         return _gp.gp_Quaternion_Dot(self, *args)
 
-    def GetRotationAngle(self, *args) -> "Standard_Real" :
+    def GetRotationAngle(self):
         """
         * Return rotation angle from -PI to PI
 
         :rtype: float
 
         """
-        return _gp.gp_Quaternion_GetRotationAngle(self, *args)
+        return _gp.gp_Quaternion_GetRotationAngle(self)
 
-    def Multiply(self, *args) -> "gp_Vec" :
+    def Multiply(self, *args):
         """
         * Adds rotation by multiplication
 
@@ -11564,7 +11635,7 @@ class gp_Quaternion(object):
         """
         return _gp.gp_Quaternion_Multiply(self, *args)
 
-    def __mul__(self, *args) -> "gp_Vec" :
+    def __mul__(self, *args):
         """
         :param theScale:
         :type theScale: float
@@ -11649,7 +11720,7 @@ class gp_QuaternionNLerp(object):
 
         """
         _gp.gp_QuaternionNLerp_swiginit(self,_gp.new_gp_QuaternionNLerp(*args))
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
         :param theQStart:
         :type theQStart: gp_Quaternion
@@ -11660,7 +11731,7 @@ class gp_QuaternionNLerp(object):
         """
         return _gp.gp_QuaternionNLerp_Init(self, *args)
 
-    def InitFromUnit(self, *args) -> "void" :
+    def InitFromUnit(self, *args):
         """
         :param theQStart:
         :type theQStart: gp_Quaternion
@@ -11671,7 +11742,7 @@ class gp_QuaternionNLerp(object):
         """
         return _gp.gp_QuaternionNLerp_InitFromUnit(self, *args)
 
-    def Interpolate(*args) -> "gp_Quaternion" :
+    def Interpolate(*args):
         """
         * Set interpolated quaternion for theT position (from 0.0 to 1.0)
 
@@ -11707,7 +11778,7 @@ gp_QuaternionNLerp._kill_pointed = new_instancemethod(_gp.gp_QuaternionNLerp__ki
 gp_QuaternionNLerp_swigregister = _gp.gp_QuaternionNLerp_swigregister
 gp_QuaternionNLerp_swigregister(gp_QuaternionNLerp)
 
-def gp_QuaternionNLerp_Interpolate(*args) -> "gp_Quaternion" :
+def gp_QuaternionNLerp_Interpolate(*args):
   """
     * Set interpolated quaternion for theT position (from 0.0 to 1.0)
 
@@ -11743,7 +11814,7 @@ class gp_QuaternionSLerp(object):
 
         """
         _gp.gp_QuaternionSLerp_swiginit(self,_gp.new_gp_QuaternionSLerp(*args))
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
         :param theQStart:
         :type theQStart: gp_Quaternion
@@ -11754,7 +11825,7 @@ class gp_QuaternionSLerp(object):
         """
         return _gp.gp_QuaternionSLerp_Init(self, *args)
 
-    def InitFromUnit(self, *args) -> "void" :
+    def InitFromUnit(self, *args):
         """
         :param theQStart:
         :type theQStart: gp_Quaternion
@@ -11765,7 +11836,7 @@ class gp_QuaternionSLerp(object):
         """
         return _gp.gp_QuaternionSLerp_InitFromUnit(self, *args)
 
-    def Interpolate(self, *args) -> "void" :
+    def Interpolate(self, *args):
         """
         * Set interpolated quaternion for theT position (from 0.0 to 1.0)
 
@@ -11812,7 +11883,7 @@ class gp_Sphere(object):
 
         """
         _gp.gp_Sphere_swiginit(self,_gp.new_gp_Sphere(*args))
-    def SetLocation(self, *args) -> "void" :
+    def SetLocation(self, *args):
         """
         * Changes the center of the sphere.
 
@@ -11823,7 +11894,7 @@ class gp_Sphere(object):
         """
         return _gp.gp_Sphere_SetLocation(self, *args)
 
-    def SetPosition(self, *args) -> "void" :
+    def SetPosition(self, *args):
         """
         * Changes the local coordinate system of the sphere.
 
@@ -11834,7 +11905,7 @@ class gp_Sphere(object):
         """
         return _gp.gp_Sphere_SetPosition(self, *args)
 
-    def SetRadius(self, *args) -> "void" :
+    def SetRadius(self, *args):
         """
         * Assigns R the radius of the Sphere. Warnings : It is not forbidden to create a sphere with null radius. Raises ConstructionError if R < 0.0
 
@@ -11845,16 +11916,16 @@ class gp_Sphere(object):
         """
         return _gp.gp_Sphere_SetRadius(self, *args)
 
-    def Area(self, *args) -> "Standard_Real" :
+    def Area(self):
         """
         * Computes the aera of the sphere.
 
         :rtype: float
 
         """
-        return _gp.gp_Sphere_Area(self, *args)
+        return _gp.gp_Sphere_Area(self)
 
-    def Coefficients(self, *args) -> "void" :
+    def Coefficients(self, *args):
         """
         * Computes the coefficients of the implicit equation of the quadric in the absolute cartesian coordinates system : A1.X**2 + A2.Y**2 + A3.Z**2 + 2.(B1.X.Y + B2.X.Z + B3.Y.Z) + 2.(C1.X + C2.Y + C3.Z) + D = 0.0
 
@@ -11883,88 +11954,88 @@ class gp_Sphere(object):
         """
         return _gp.gp_Sphere_Coefficients(self, *args)
 
-    def UReverse(self, *args) -> "void" :
+    def UReverse(self):
         """
         * Reverses the U parametrization of the sphere reversing the YAxis.
 
         :rtype: None
 
         """
-        return _gp.gp_Sphere_UReverse(self, *args)
+        return _gp.gp_Sphere_UReverse(self)
 
-    def VReverse(self, *args) -> "void" :
+    def VReverse(self):
         """
         * Reverses the V parametrization of the sphere reversing the ZAxis.
 
         :rtype: None
 
         """
-        return _gp.gp_Sphere_VReverse(self, *args)
+        return _gp.gp_Sphere_VReverse(self)
 
-    def Direct(self, *args) -> "Standard_Boolean" :
+    def Direct(self):
         """
         * Returns true if the local coordinate system of this sphere is right-handed.
 
         :rtype: bool
 
         """
-        return _gp.gp_Sphere_Direct(self, *args)
+        return _gp.gp_Sphere_Direct(self)
 
-    def Location(self, *args) -> "gp_Pnt const" :
+    def Location(self):
         """
         * //!--- Purpose ; Returns the center of the sphere.
 
         :rtype: gp_Pnt
 
         """
-        return _gp.gp_Sphere_Location(self, *args)
+        return _gp.gp_Sphere_Location(self)
 
-    def Position(self, *args) -> "gp_Ax3 const" :
+    def Position(self):
         """
         * Returns the local coordinates system of the sphere.
 
         :rtype: gp_Ax3
 
         """
-        return _gp.gp_Sphere_Position(self, *args)
+        return _gp.gp_Sphere_Position(self)
 
-    def Radius(self, *args) -> "Standard_Real" :
+    def Radius(self):
         """
         * Returns the radius of the sphere.
 
         :rtype: float
 
         """
-        return _gp.gp_Sphere_Radius(self, *args)
+        return _gp.gp_Sphere_Radius(self)
 
-    def Volume(self, *args) -> "Standard_Real" :
+    def Volume(self):
         """
         * Computes the volume of the sphere
 
         :rtype: float
 
         """
-        return _gp.gp_Sphere_Volume(self, *args)
+        return _gp.gp_Sphere_Volume(self)
 
-    def XAxis(self, *args) -> "gp_Ax1" :
+    def XAxis(self):
         """
         * Returns the axis X of the sphere.
 
         :rtype: gp_Ax1
 
         """
-        return _gp.gp_Sphere_XAxis(self, *args)
+        return _gp.gp_Sphere_XAxis(self)
 
-    def YAxis(self, *args) -> "gp_Ax1" :
+    def YAxis(self):
         """
         * Returns the axis Y of the sphere.
 
         :rtype: gp_Ax1
 
         """
-        return _gp.gp_Sphere_YAxis(self, *args)
+        return _gp.gp_Sphere_YAxis(self)
 
-    def Mirror(self, *args) -> "void" :
+    def Mirror(self, *args):
         """
         :param P:
         :type P: gp_Pnt
@@ -11981,7 +12052,7 @@ class gp_Sphere(object):
         """
         return _gp.gp_Sphere_Mirror(self, *args)
 
-    def Mirrored(self, *args) -> "gp_Sphere" :
+    def Mirrored(self, *args):
         """
         * Performs the symmetrical transformation of a sphere with respect to the point P which is the center of the symmetry.
 
@@ -12004,7 +12075,7 @@ class gp_Sphere(object):
         """
         return _gp.gp_Sphere_Mirrored(self, *args)
 
-    def Rotate(self, *args) -> "void" :
+    def Rotate(self, *args):
         """
         :param A1:
         :type A1: gp_Ax1
@@ -12015,7 +12086,7 @@ class gp_Sphere(object):
         """
         return _gp.gp_Sphere_Rotate(self, *args)
 
-    def Rotated(self, *args) -> "gp_Sphere" :
+    def Rotated(self, *args):
         """
         * Rotates a sphere. A1 is the axis of the rotation. Ang is the angular value of the rotation in radians.
 
@@ -12028,7 +12099,7 @@ class gp_Sphere(object):
         """
         return _gp.gp_Sphere_Rotated(self, *args)
 
-    def Scale(self, *args) -> "void" :
+    def Scale(self, *args):
         """
         :param P:
         :type P: gp_Pnt
@@ -12039,7 +12110,7 @@ class gp_Sphere(object):
         """
         return _gp.gp_Sphere_Scale(self, *args)
 
-    def Scaled(self, *args) -> "gp_Sphere" :
+    def Scaled(self, *args):
         """
         * Scales a sphere. S is the scaling value. The absolute value of S is used to scale the sphere
 
@@ -12052,7 +12123,7 @@ class gp_Sphere(object):
         """
         return _gp.gp_Sphere_Scaled(self, *args)
 
-    def Transform(self, *args) -> "void" :
+    def Transform(self, *args):
         """
         :param T:
         :type T: gp_Trsf
@@ -12061,7 +12132,7 @@ class gp_Sphere(object):
         """
         return _gp.gp_Sphere_Transform(self, *args)
 
-    def Transformed(self, *args) -> "gp_Sphere" :
+    def Transformed(self, *args):
         """
         * Transforms a sphere with the transformation T from class Trsf.
 
@@ -12072,7 +12143,7 @@ class gp_Sphere(object):
         """
         return _gp.gp_Sphere_Transformed(self, *args)
 
-    def Translate(self, *args) -> "void" :
+    def Translate(self, *args):
         """
         :param V:
         :type V: gp_Vec
@@ -12087,7 +12158,7 @@ class gp_Sphere(object):
         """
         return _gp.gp_Sphere_Translate(self, *args)
 
-    def Translated(self, *args) -> "gp_Sphere" :
+    def Translated(self, *args):
         """
         * Translates a sphere in the direction of the vector V. The magnitude of the translation is the vector's magnitude.
 
@@ -12106,21 +12177,21 @@ class gp_Sphere(object):
         """
         return _gp.gp_Sphere_Translated(self, *args)
 
-    def _CSFDB_Getgp_Spherepos(self, *args) -> "gp_Ax3 const" :
+    def _CSFDB_Getgp_Spherepos(self):
         """
         :rtype: gp_Ax3
 
         """
-        return _gp.gp_Sphere__CSFDB_Getgp_Spherepos(self, *args)
+        return _gp.gp_Sphere__CSFDB_Getgp_Spherepos(self)
 
-    def _CSFDB_Getgp_Sphereradius(self, *args) -> "Standard_Real" :
+    def _CSFDB_Getgp_Sphereradius(self):
         """
         :rtype: float
 
         """
-        return _gp.gp_Sphere__CSFDB_Getgp_Sphereradius(self, *args)
+        return _gp.gp_Sphere__CSFDB_Getgp_Sphereradius(self)
 
-    def _CSFDB_Setgp_Sphereradius(self, *args) -> "void" :
+    def _CSFDB_Setgp_Sphereradius(self, *args):
         """
         :param p:
         :type p: float
@@ -12189,7 +12260,7 @@ class gp_Torus(object):
 
         """
         _gp.gp_Torus_swiginit(self,_gp.new_gp_Torus(*args))
-    def SetAxis(self, *args) -> "void" :
+    def SetAxis(self, *args):
         """
         * Modifies this torus, by redefining its local coordinate system so that: - its origin and 'main Direction' become those of the axis A1 (the 'X Direction' and 'Y Direction' are then recomputed). Raises ConstructionError if the direction of A1 is parallel to the 'XDirection' of the coordinate system of the toroidal surface.
 
@@ -12200,7 +12271,7 @@ class gp_Torus(object):
         """
         return _gp.gp_Torus_SetAxis(self, *args)
 
-    def SetLocation(self, *args) -> "void" :
+    def SetLocation(self, *args):
         """
         * Changes the location of the torus.
 
@@ -12211,7 +12282,7 @@ class gp_Torus(object):
         """
         return _gp.gp_Torus_SetLocation(self, *args)
 
-    def SetMajorRadius(self, *args) -> "void" :
+    def SetMajorRadius(self, *args):
         """
         * Assigns value to the major radius of this torus. Raises ConstructionError if MajorRadius - MinorRadius <= Resolution()
 
@@ -12222,7 +12293,7 @@ class gp_Torus(object):
         """
         return _gp.gp_Torus_SetMajorRadius(self, *args)
 
-    def SetMinorRadius(self, *args) -> "void" :
+    def SetMinorRadius(self, *args):
         """
         * Assigns value to the minor radius of this torus. Raises ConstructionError if MinorRadius < 0.0 or if MajorRadius - MinorRadius <= Resolution from gp.
 
@@ -12233,7 +12304,7 @@ class gp_Torus(object):
         """
         return _gp.gp_Torus_SetMinorRadius(self, *args)
 
-    def SetPosition(self, *args) -> "void" :
+    def SetPosition(self, *args):
         """
         * Changes the local coordinate system of the surface.
 
@@ -12244,115 +12315,115 @@ class gp_Torus(object):
         """
         return _gp.gp_Torus_SetPosition(self, *args)
 
-    def Area(self, *args) -> "Standard_Real" :
+    def Area(self):
         """
         * Computes the area of the torus.
 
         :rtype: float
 
         """
-        return _gp.gp_Torus_Area(self, *args)
+        return _gp.gp_Torus_Area(self)
 
-    def UReverse(self, *args) -> "void" :
+    def UReverse(self):
         """
         * Reverses the U parametrization of the torus reversing the YAxis.
 
         :rtype: None
 
         """
-        return _gp.gp_Torus_UReverse(self, *args)
+        return _gp.gp_Torus_UReverse(self)
 
-    def VReverse(self, *args) -> "void" :
+    def VReverse(self):
         """
         * Reverses the V parametrization of the torus reversing the ZAxis.
 
         :rtype: None
 
         """
-        return _gp.gp_Torus_VReverse(self, *args)
+        return _gp.gp_Torus_VReverse(self)
 
-    def Direct(self, *args) -> "Standard_Boolean" :
+    def Direct(self):
         """
         * returns true if the Ax3, the local coordinate system of this torus, is right handed.
 
         :rtype: bool
 
         """
-        return _gp.gp_Torus_Direct(self, *args)
+        return _gp.gp_Torus_Direct(self)
 
-    def Axis(self, *args) -> "gp_Ax1 const" :
+    def Axis(self):
         """
         * returns the symmetry axis of the torus.
 
         :rtype: gp_Ax1
 
         """
-        return _gp.gp_Torus_Axis(self, *args)
+        return _gp.gp_Torus_Axis(self)
 
-    def Location(self, *args) -> "gp_Pnt const" :
+    def Location(self):
         """
         * Returns the Torus's location.
 
         :rtype: gp_Pnt
 
         """
-        return _gp.gp_Torus_Location(self, *args)
+        return _gp.gp_Torus_Location(self)
 
-    def Position(self, *args) -> "gp_Ax3 const" :
+    def Position(self):
         """
         * Returns the local coordinates system of the torus.
 
         :rtype: gp_Ax3
 
         """
-        return _gp.gp_Torus_Position(self, *args)
+        return _gp.gp_Torus_Position(self)
 
-    def MajorRadius(self, *args) -> "Standard_Real" :
+    def MajorRadius(self):
         """
         * returns the major radius of the torus.
 
         :rtype: float
 
         """
-        return _gp.gp_Torus_MajorRadius(self, *args)
+        return _gp.gp_Torus_MajorRadius(self)
 
-    def MinorRadius(self, *args) -> "Standard_Real" :
+    def MinorRadius(self):
         """
         * returns the minor radius of the torus.
 
         :rtype: float
 
         """
-        return _gp.gp_Torus_MinorRadius(self, *args)
+        return _gp.gp_Torus_MinorRadius(self)
 
-    def Volume(self, *args) -> "Standard_Real" :
+    def Volume(self):
         """
         * Computes the volume of the torus.
 
         :rtype: float
 
         """
-        return _gp.gp_Torus_Volume(self, *args)
+        return _gp.gp_Torus_Volume(self)
 
-    def XAxis(self, *args) -> "gp_Ax1" :
+    def XAxis(self):
         """
         * returns the axis X of the torus.
 
         :rtype: gp_Ax1
 
         """
-        return _gp.gp_Torus_XAxis(self, *args)
+        return _gp.gp_Torus_XAxis(self)
 
-    def YAxis(self, *args) -> "gp_Ax1" :
+    def YAxis(self):
         """
         * returns the axis Y of the torus.
 
         :rtype: gp_Ax1
 
         """
-        return _gp.gp_Torus_YAxis(self, *args)
+        return _gp.gp_Torus_YAxis(self)
 
-    def Mirror(self, *args) -> "void" :
+    def Mirror(self, *args):
         """
         :param P:
         :type P: gp_Pnt
@@ -12369,7 +12440,7 @@ class gp_Torus(object):
         """
         return _gp.gp_Torus_Mirror(self, *args)
 
-    def Mirrored(self, *args) -> "gp_Torus" :
+    def Mirrored(self, *args):
         """
         * Performs the symmetrical transformation of a torus with respect to the point P which is the center of the symmetry.
 
@@ -12392,7 +12463,7 @@ class gp_Torus(object):
         """
         return _gp.gp_Torus_Mirrored(self, *args)
 
-    def Rotate(self, *args) -> "void" :
+    def Rotate(self, *args):
         """
         :param A1:
         :type A1: gp_Ax1
@@ -12403,7 +12474,7 @@ class gp_Torus(object):
         """
         return _gp.gp_Torus_Rotate(self, *args)
 
-    def Rotated(self, *args) -> "gp_Torus" :
+    def Rotated(self, *args):
         """
         * Rotates a torus. A1 is the axis of the rotation. Ang is the angular value of the rotation in radians.
 
@@ -12416,7 +12487,7 @@ class gp_Torus(object):
         """
         return _gp.gp_Torus_Rotated(self, *args)
 
-    def Scale(self, *args) -> "void" :
+    def Scale(self, *args):
         """
         :param P:
         :type P: gp_Pnt
@@ -12427,7 +12498,7 @@ class gp_Torus(object):
         """
         return _gp.gp_Torus_Scale(self, *args)
 
-    def Scaled(self, *args) -> "gp_Torus" :
+    def Scaled(self, *args):
         """
         * Scales a torus. S is the scaling value. The absolute value of S is used to scale the torus
 
@@ -12440,7 +12511,7 @@ class gp_Torus(object):
         """
         return _gp.gp_Torus_Scaled(self, *args)
 
-    def Transform(self, *args) -> "void" :
+    def Transform(self, *args):
         """
         :param T:
         :type T: gp_Trsf
@@ -12449,7 +12520,7 @@ class gp_Torus(object):
         """
         return _gp.gp_Torus_Transform(self, *args)
 
-    def Transformed(self, *args) -> "gp_Torus" :
+    def Transformed(self, *args):
         """
         * Transforms a torus with the transformation T from class Trsf.
 
@@ -12460,7 +12531,7 @@ class gp_Torus(object):
         """
         return _gp.gp_Torus_Transformed(self, *args)
 
-    def Translate(self, *args) -> "void" :
+    def Translate(self, *args):
         """
         :param V:
         :type V: gp_Vec
@@ -12475,7 +12546,7 @@ class gp_Torus(object):
         """
         return _gp.gp_Torus_Translate(self, *args)
 
-    def Translated(self, *args) -> "gp_Torus" :
+    def Translated(self, *args):
         """
         * Translates a torus in the direction of the vector V. The magnitude of the translation is the vector's magnitude.
 
@@ -12494,21 +12565,21 @@ class gp_Torus(object):
         """
         return _gp.gp_Torus_Translated(self, *args)
 
-    def _CSFDB_Getgp_Toruspos(self, *args) -> "gp_Ax3 const" :
+    def _CSFDB_Getgp_Toruspos(self):
         """
         :rtype: gp_Ax3
 
         """
-        return _gp.gp_Torus__CSFDB_Getgp_Toruspos(self, *args)
+        return _gp.gp_Torus__CSFDB_Getgp_Toruspos(self)
 
-    def _CSFDB_Getgp_TorusmajorRadius(self, *args) -> "Standard_Real" :
+    def _CSFDB_Getgp_TorusmajorRadius(self):
         """
         :rtype: float
 
         """
-        return _gp.gp_Torus__CSFDB_Getgp_TorusmajorRadius(self, *args)
+        return _gp.gp_Torus__CSFDB_Getgp_TorusmajorRadius(self)
 
-    def _CSFDB_Setgp_TorusmajorRadius(self, *args) -> "void" :
+    def _CSFDB_Setgp_TorusmajorRadius(self, *args):
         """
         :param p:
         :type p: float
@@ -12517,14 +12588,14 @@ class gp_Torus(object):
         """
         return _gp.gp_Torus__CSFDB_Setgp_TorusmajorRadius(self, *args)
 
-    def _CSFDB_Getgp_TorusminorRadius(self, *args) -> "Standard_Real" :
+    def _CSFDB_Getgp_TorusminorRadius(self):
         """
         :rtype: float
 
         """
-        return _gp.gp_Torus__CSFDB_Getgp_TorusminorRadius(self, *args)
+        return _gp.gp_Torus__CSFDB_Getgp_TorusminorRadius(self)
 
-    def _CSFDB_Setgp_TorusminorRadius(self, *args) -> "void" :
+    def _CSFDB_Setgp_TorusminorRadius(self, *args):
         """
         :param p:
         :type p: float
@@ -12594,7 +12665,7 @@ class gp_Trsf(object):
 
         """
         _gp.gp_Trsf_swiginit(self,_gp.new_gp_Trsf(*args))
-    def SetMirror(self, *args) -> "void" :
+    def SetMirror(self, *args):
         """
         * Makes the transformation into a symmetrical transformation. P is the center of the symmetry.
 
@@ -12617,7 +12688,7 @@ class gp_Trsf(object):
         """
         return _gp.gp_Trsf_SetMirror(self, *args)
 
-    def SetRotation(self, *args) -> "void" :
+    def SetRotation(self, *args):
         """
         * Changes the transformation into a rotation. A1 is the rotation axis and Ang is the angular value of the rotation in radians.
 
@@ -12636,7 +12707,7 @@ class gp_Trsf(object):
         """
         return _gp.gp_Trsf_SetRotation(self, *args)
 
-    def SetScale(self, *args) -> "void" :
+    def SetScale(self, *args):
         """
         * Changes the transformation into a scale. P is the center of the scale and S is the scaling value. Raises ConstructionError If <S> is null.
 
@@ -12649,7 +12720,7 @@ class gp_Trsf(object):
         """
         return _gp.gp_Trsf_SetScale(self, *args)
 
-    def SetDisplacement(self, *args) -> "void" :
+    def SetDisplacement(self, *args):
         """
         * Modifies this transformation so that it transforms the coordinate system defined by FromSystem1 into the one defined by ToSystem2. After this modification, this transformation transforms: - the origin of FromSystem1 into the origin of ToSystem2, - the 'X Direction' of FromSystem1 into the 'X Direction' of ToSystem2, - the 'Y Direction' of FromSystem1 into the 'Y Direction' of ToSystem2, and - the 'main Direction' of FromSystem1 into the 'main Direction' of ToSystem2. Warning When you know the coordinates of a point in one coordinate system and you want to express these coordinates in another one, do not use the transformation resulting from this function. Use the transformation that results from SetTransformation instead. SetDisplacement and SetTransformation create related transformations: the vectorial part of one is the inverse of the vectorial part of the other.
 
@@ -12662,7 +12733,7 @@ class gp_Trsf(object):
         """
         return _gp.gp_Trsf_SetDisplacement(self, *args)
 
-    def SetTransformation(self, *args) -> "void" :
+    def SetTransformation(self, *args):
         """
         * Modifies this transformation so that it transforms the coordinates of any point, (x, y, z), relative to a source coordinate system into the coordinates (x', y', z') which are relative to a target coordinate system, but which represent the same point The transformation is from the coordinate system 'FromSystem1' to the coordinate system 'ToSystem2'. Example : In a C++ implementation : Real x1, y1, z1; // are the coordinates of a point in the  // local system FromSystem1 Real x2, y2, z2; // are the coordinates of a point in the  // local system ToSystem2 gp_Pnt P1 (x1, y1, z1) Trsf T; T.SetTransformation (FromSystem1, ToSystem2); gp_Pnt P2 = P1.Transformed (T); P2.Coord (x2, y2, z2);
 
@@ -12689,7 +12760,7 @@ class gp_Trsf(object):
         """
         return _gp.gp_Trsf_SetTransformation(self, *args)
 
-    def SetTranslation(self, *args) -> "void" :
+    def SetTranslation(self, *args):
         """
         * Changes the transformation into a translation. V is the vector of the translation.
 
@@ -12708,7 +12779,7 @@ class gp_Trsf(object):
         """
         return _gp.gp_Trsf_SetTranslation(self, *args)
 
-    def SetTranslationPart(self, *args) -> "void" :
+    def SetTranslationPart(self, *args):
         """
         * Replaces the translation vector with the vector V.
 
@@ -12719,7 +12790,7 @@ class gp_Trsf(object):
         """
         return _gp.gp_Trsf_SetTranslationPart(self, *args)
 
-    def SetScaleFactor(self, *args) -> "void" :
+    def SetScaleFactor(self, *args):
         """
         * Modifies the scale factor. Raises ConstructionError If S is null.
 
@@ -12730,7 +12801,7 @@ class gp_Trsf(object):
         """
         return _gp.gp_Trsf_SetScaleFactor(self, *args)
 
-    def SetValues(self, *args) -> "void" :
+    def SetValues(self, *args):
         """
         * Sets the coefficients of the transformation. The transformation of the point x,y,z is the point x',y',z' with :  x' = a11 x + a12 y + a13 z + a14 y' = a21 x + a22 y + a23 z + a24 z' = a31 x + a32 y + a43 z + a34  Tolang and TolDist are used to test for null angles and null distances to determine the form of the transformation (identity, translation, etc..).  The method Value(i,j) will return aij. Raises ConstructionError if the determinant of the aij is null. Or if the matrix as not a uniform scale.
 
@@ -12767,43 +12838,43 @@ class gp_Trsf(object):
         """
         return _gp.gp_Trsf_SetValues(self, *args)
 
-    def IsNegative(self, *args) -> "Standard_Boolean" :
+    def IsNegative(self):
         """
         * Returns true if the determinant of the vectorial part of this transformation is negative.
 
         :rtype: bool
 
         """
-        return _gp.gp_Trsf_IsNegative(self, *args)
+        return _gp.gp_Trsf_IsNegative(self)
 
-    def Form(self, *args) -> "gp_TrsfForm" :
+    def Form(self):
         """
         * Returns the nature of the transformation. It can be: an identity transformation, a rotation, a translation, a mirror transformation (relative to a point, an axis or a plane), a scaling transformation, or a compound transformation.
 
         :rtype: gp_TrsfForm
 
         """
-        return _gp.gp_Trsf_Form(self, *args)
+        return _gp.gp_Trsf_Form(self)
 
-    def ScaleFactor(self, *args) -> "Standard_Real" :
+    def ScaleFactor(self):
         """
         * Returns the scale factor.
 
         :rtype: float
 
         """
-        return _gp.gp_Trsf_ScaleFactor(self, *args)
+        return _gp.gp_Trsf_ScaleFactor(self)
 
-    def TranslationPart(self, *args) -> "gp_XYZ const" :
+    def TranslationPart(self):
         """
         * Returns the translation part of the transformation's matrix
 
         :rtype: gp_XYZ
 
         """
-        return _gp.gp_Trsf_TranslationPart(self, *args)
+        return _gp.gp_Trsf_TranslationPart(self)
 
-    def GetRotation(self, *args) -> "gp_Quaternion" :
+    def GetRotation(self, *args):
         """
         * Returns the boolean True if there is non-zero rotation. In the presence of rotation, the output parameters store the axis and the angle of rotation. The method always returns positive value 'theAngle', i.e., 0. < theAngle <= PI. Note that this rotation is defined only by the vectorial part of the transformation; generally you would need to check also the translational part to obtain the axis (gp_Ax1) of rotation.
 
@@ -12820,54 +12891,54 @@ class gp_Trsf(object):
         """
         return _gp.gp_Trsf_GetRotation(self, *args)
 
-    def VectorialPart(self, *args) -> "gp_Mat" :
+    def VectorialPart(self):
         """
         * Returns the vectorial part of the transformation. It is a 3*3 matrix which includes the scale factor.
 
         :rtype: gp_Mat
 
         """
-        return _gp.gp_Trsf_VectorialPart(self, *args)
+        return _gp.gp_Trsf_VectorialPart(self)
 
-    def HVectorialPart(self, *args) -> "gp_Mat const" :
+    def HVectorialPart(self):
         """
         * Computes the homogeneous vectorial part of the transformation. It is a 3*3 matrix which doesn't include the scale factor. In other words, the vectorial part of this transformation is equal to its homogeneous vectorial part, multiplied by the scale factor. The coefficients of this matrix must be multiplied by the scale factor to obtain the coefficients of the transformation.
 
         :rtype: gp_Mat
 
         """
-        return _gp.gp_Trsf_HVectorialPart(self, *args)
+        return _gp.gp_Trsf_HVectorialPart(self)
 
-    def Value(self, *args) -> "Standard_Real" :
+    def Value(self, *args):
         """
         * Returns the coefficients of the transformation's matrix. It is a 3 rows * 4 columns matrix. This coefficient includes the scale factor. Raises OutOfRanged if Row < 1 or Row > 3 or Col < 1 or Col > 4
 
         :param Row:
-        :type Row: int
+        :type Row: Standard_Integer
         :param Col:
-        :type Col: int
+        :type Col: Standard_Integer
         :rtype: float
 
         """
         return _gp.gp_Trsf_Value(self, *args)
 
-    def Invert(self, *args) -> "void" :
+    def Invert(self):
         """
         :rtype: None
 
         """
-        return _gp.gp_Trsf_Invert(self, *args)
+        return _gp.gp_Trsf_Invert(self)
 
-    def Inverted(self, *args) -> "gp_Trsf" :
+    def Inverted(self):
         """
         * Computes the reverse transformation Raises an exception if the matrix of the transformation is not inversible, it means that the scale factor is lower or equal to Resolution from package gp. Computes the transformation composed with T and <self>. In a C++ implementation you can also write Tcomposed = <self> * T. Example : Trsf T1, T2, Tcomp; ............... Tcomp = T2.Multiplied(T1); // or (Tcomp = T2 * T1) Pnt P1(10.,3.,4.); Pnt P2 = P1.Transformed(Tcomp); //using Tcomp Pnt P3 = P1.Transformed(T1); //using T1 then T2 P3.Transform(T2); // P3 = P2 !!!
 
         :rtype: gp_Trsf
 
         """
-        return _gp.gp_Trsf_Inverted(self, *args)
+        return _gp.gp_Trsf_Inverted(self)
 
-    def Multiplied(self, *args) -> "gp_Trsf" :
+    def Multiplied(self, *args):
         """
         :param T:
         :type T: gp_Trsf
@@ -12876,7 +12947,7 @@ class gp_Trsf(object):
         """
         return _gp.gp_Trsf_Multiplied(self, *args)
 
-    def __mul__(self, *args) -> "gp_Trsf" :
+    def __mul__(self, *args):
         """
         :param T:
         :type T: gp_Trsf
@@ -12885,7 +12956,7 @@ class gp_Trsf(object):
         """
         return _gp.gp_Trsf___mul__(self, *args)
 
-    def Multiply(self, *args) -> "void" :
+    def Multiply(self, *args):
         """
         * Computes the transformation composed with T and <self>. In a C++ implementation you can also write Tcomposed = <self> * T. Example : Trsf T1, T2, Tcomp; ............... //composition : Tcomp = T2.Multiplied(T1); // or (Tcomp = T2 * T1) // transformation of a point Pnt P1(10.,3.,4.); Pnt P2 = P1.Transformed(Tcomp); //using Tcomp Pnt P3 = P1.Transformed(T1); //using T1 then T2 P3.Transform(T2); // P3 = P2 !!! Computes the transformation composed with <self> and T. <self> = T * <self>
 
@@ -12896,7 +12967,7 @@ class gp_Trsf(object):
         """
         return _gp.gp_Trsf_Multiply(self, *args)
 
-    def __imul__(self, *args) -> "void" :
+    def __imul__(self, *args):
         """
         :param T:
         :type T: gp_Trsf
@@ -12905,7 +12976,7 @@ class gp_Trsf(object):
         """
         return _gp.gp_Trsf___imul__(self, *args)
 
-    def PreMultiply(self, *args) -> "void" :
+    def PreMultiply(self, *args):
         """
         * Computes the transformation composed with <self> and T. <self> = T * <self>
 
@@ -12916,27 +12987,27 @@ class gp_Trsf(object):
         """
         return _gp.gp_Trsf_PreMultiply(self, *args)
 
-    def Power(self, *args) -> "void" :
+    def Power(self, *args):
         """
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :rtype: None
 
         """
         return _gp.gp_Trsf_Power(self, *args)
 
-    def Powered(self, *args) -> "gp_Trsf" :
+    def Powered(self, *args):
         """
         * Computes the following composition of transformations <self> * <self> * .......* <self>, N time. if N = 0 <self> = Identity if N < 0 <self> = <self>.Inverse() *...........* <self>.Inverse(). Raises if N < 0 and if the matrix of the transformation not inversible.
 
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :rtype: gp_Trsf
 
         """
         return _gp.gp_Trsf_Powered(self, *args)
 
-    def Transforms(self, *args) -> "void" :
+    def Transforms(self, *args):
         """
         :param X:
         :type X: float
@@ -12955,14 +13026,14 @@ class gp_Trsf(object):
         """
         return _gp.gp_Trsf_Transforms(self, *args)
 
-    def _CSFDB_Getgp_Trsfscale(self, *args) -> "Standard_Real" :
+    def _CSFDB_Getgp_Trsfscale(self):
         """
         :rtype: float
 
         """
-        return _gp.gp_Trsf__CSFDB_Getgp_Trsfscale(self, *args)
+        return _gp.gp_Trsf__CSFDB_Getgp_Trsfscale(self)
 
-    def _CSFDB_Setgp_Trsfscale(self, *args) -> "void" :
+    def _CSFDB_Setgp_Trsfscale(self, *args):
         """
         :param p:
         :type p: float
@@ -12971,14 +13042,14 @@ class gp_Trsf(object):
         """
         return _gp.gp_Trsf__CSFDB_Setgp_Trsfscale(self, *args)
 
-    def _CSFDB_Getgp_Trsfshape(self, *args) -> "gp_TrsfForm" :
+    def _CSFDB_Getgp_Trsfshape(self):
         """
         :rtype: gp_TrsfForm
 
         """
-        return _gp.gp_Trsf__CSFDB_Getgp_Trsfshape(self, *args)
+        return _gp.gp_Trsf__CSFDB_Getgp_Trsfshape(self)
 
-    def _CSFDB_Setgp_Trsfshape(self, *args) -> "void" :
+    def _CSFDB_Setgp_Trsfshape(self, *args):
         """
         :param p:
         :type p: gp_TrsfForm
@@ -12987,19 +13058,19 @@ class gp_Trsf(object):
         """
         return _gp.gp_Trsf__CSFDB_Setgp_Trsfshape(self, *args)
 
-    def _CSFDB_Getgp_Trsfmatrix(self, *args) -> "gp_Mat const" :
+    def _CSFDB_Getgp_Trsfmatrix(self):
         """
         :rtype: gp_Mat
 
         """
-        return _gp.gp_Trsf__CSFDB_Getgp_Trsfmatrix(self, *args)
+        return _gp.gp_Trsf__CSFDB_Getgp_Trsfmatrix(self)
 
-    def _CSFDB_Getgp_Trsfloc(self, *args) -> "gp_XYZ const" :
+    def _CSFDB_Getgp_Trsfloc(self):
         """
         :rtype: gp_XYZ
 
         """
-        return _gp.gp_Trsf__CSFDB_Getgp_Trsfloc(self, *args)
+        return _gp.gp_Trsf__CSFDB_Getgp_Trsfloc(self)
 
     def __del__(self):
     	try:
@@ -13063,7 +13134,7 @@ class gp_Trsf2d(object):
 
         """
         _gp.gp_Trsf2d_swiginit(self,_gp.new_gp_Trsf2d(*args))
-    def SetMirror(self, *args) -> "void" :
+    def SetMirror(self, *args):
         """
         * Changes the transformation into a symmetrical transformation. P is the center of the symmetry.
 
@@ -13080,7 +13151,7 @@ class gp_Trsf2d(object):
         """
         return _gp.gp_Trsf2d_SetMirror(self, *args)
 
-    def SetRotation(self, *args) -> "void" :
+    def SetRotation(self, *args):
         """
         * Changes the transformation into a rotation. P is the rotation's center and Ang is the angular value of the rotation in radian.
 
@@ -13093,7 +13164,7 @@ class gp_Trsf2d(object):
         """
         return _gp.gp_Trsf2d_SetRotation(self, *args)
 
-    def SetScale(self, *args) -> "void" :
+    def SetScale(self, *args):
         """
         * Changes the transformation into a scale. P is the center of the scale and S is the scaling value.
 
@@ -13106,7 +13177,7 @@ class gp_Trsf2d(object):
         """
         return _gp.gp_Trsf2d_SetScale(self, *args)
 
-    def SetTransformation(self, *args) -> "void" :
+    def SetTransformation(self, *args):
         """
         * Changes a transformation allowing passage from the coordinate system 'FromSystem1' to the coordinate system 'ToSystem2'.
 
@@ -13125,7 +13196,7 @@ class gp_Trsf2d(object):
         """
         return _gp.gp_Trsf2d_SetTransformation(self, *args)
 
-    def SetTranslation(self, *args) -> "void" :
+    def SetTranslation(self, *args):
         """
         * Changes the transformation into a translation. V is the vector of the translation.
 
@@ -13144,7 +13215,7 @@ class gp_Trsf2d(object):
         """
         return _gp.gp_Trsf2d_SetTranslation(self, *args)
 
-    def SetTranslationPart(self, *args) -> "void" :
+    def SetTranslationPart(self, *args):
         """
         * Replaces the translation vector with V.
 
@@ -13155,7 +13226,7 @@ class gp_Trsf2d(object):
         """
         return _gp.gp_Trsf2d_SetTranslationPart(self, *args)
 
-    def SetScaleFactor(self, *args) -> "void" :
+    def SetScaleFactor(self, *args):
         """
         * Modifies the scale factor.
 
@@ -13166,99 +13237,99 @@ class gp_Trsf2d(object):
         """
         return _gp.gp_Trsf2d_SetScaleFactor(self, *args)
 
-    def IsNegative(self, *args) -> "Standard_Boolean" :
+    def IsNegative(self):
         """
         * Returns true if the determinant of the vectorial part of this transformation is negative..
 
         :rtype: bool
 
         """
-        return _gp.gp_Trsf2d_IsNegative(self, *args)
+        return _gp.gp_Trsf2d_IsNegative(self)
 
-    def Form(self, *args) -> "gp_TrsfForm" :
+    def Form(self):
         """
         * Returns the nature of the transformation. It can be an identity transformation, a rotation, a translation, a mirror (relative to a point or an axis), a scaling transformation, or a compound transformation.
 
         :rtype: gp_TrsfForm
 
         """
-        return _gp.gp_Trsf2d_Form(self, *args)
+        return _gp.gp_Trsf2d_Form(self)
 
-    def ScaleFactor(self, *args) -> "Standard_Real" :
+    def ScaleFactor(self):
         """
         * Returns the scale factor.
 
         :rtype: float
 
         """
-        return _gp.gp_Trsf2d_ScaleFactor(self, *args)
+        return _gp.gp_Trsf2d_ScaleFactor(self)
 
-    def TranslationPart(self, *args) -> "gp_XY const" :
+    def TranslationPart(self):
         """
         * Returns the translation part of the transformation's matrix
 
         :rtype: gp_XY
 
         """
-        return _gp.gp_Trsf2d_TranslationPart(self, *args)
+        return _gp.gp_Trsf2d_TranslationPart(self)
 
-    def VectorialPart(self, *args) -> "gp_Mat2d" :
+    def VectorialPart(self):
         """
         * Returns the vectorial part of the transformation. It is a 2*2 matrix which includes the scale factor.
 
         :rtype: gp_Mat2d
 
         """
-        return _gp.gp_Trsf2d_VectorialPart(self, *args)
+        return _gp.gp_Trsf2d_VectorialPart(self)
 
-    def HVectorialPart(self, *args) -> "gp_Mat2d const" :
+    def HVectorialPart(self):
         """
         * Returns the homogeneous vectorial part of the transformation. It is a 2*2 matrix which doesn't include the scale factor. The coefficients of this matrix must be multiplied by the scale factor to obtain the coefficients of the transformation.
 
         :rtype: gp_Mat2d
 
         """
-        return _gp.gp_Trsf2d_HVectorialPart(self, *args)
+        return _gp.gp_Trsf2d_HVectorialPart(self)
 
-    def RotationPart(self, *args) -> "Standard_Real" :
+    def RotationPart(self):
         """
         * Returns the angle corresponding to the rotational component of the transformation matrix (operation opposite to SetRotation()).
 
         :rtype: float
 
         """
-        return _gp.gp_Trsf2d_RotationPart(self, *args)
+        return _gp.gp_Trsf2d_RotationPart(self)
 
-    def Value(self, *args) -> "Standard_Real" :
+    def Value(self, *args):
         """
         * Returns the coefficients of the transformation's matrix. It is a 2 rows * 3 columns matrix. Raises OutOfRange if Row < 1 or Row > 2 or Col < 1 or Col > 3
 
         :param Row:
-        :type Row: int
+        :type Row: Standard_Integer
         :param Col:
-        :type Col: int
+        :type Col: Standard_Integer
         :rtype: float
 
         """
         return _gp.gp_Trsf2d_Value(self, *args)
 
-    def Invert(self, *args) -> "void" :
+    def Invert(self):
         """
         :rtype: None
 
         """
-        return _gp.gp_Trsf2d_Invert(self, *args)
+        return _gp.gp_Trsf2d_Invert(self)
 
-    def Inverted(self, *args) -> "gp_Trsf2d" :
+    def Inverted(self):
         """
         * Computes the reverse transformation. Raises an exception if the matrix of the transformation is not inversible, it means that the scale factor is lower or equal to Resolution from package gp.
 
         :rtype: gp_Trsf2d
 
         """
-        return _gp.gp_Trsf2d_Inverted(self, *args)
+        return _gp.gp_Trsf2d_Inverted(self)
 
-    def Multiplied(self, *args) -> "gp_Trsf2d" :
+    def Multiplied(self, *args):
         """
         :param T:
         :type T: gp_Trsf2d
@@ -13267,7 +13338,7 @@ class gp_Trsf2d(object):
         """
         return _gp.gp_Trsf2d_Multiplied(self, *args)
 
-    def __mul__(self, *args) -> "gp_Trsf2d" :
+    def __mul__(self, *args):
         """
         :param T:
         :type T: gp_Trsf2d
@@ -13276,7 +13347,7 @@ class gp_Trsf2d(object):
         """
         return _gp.gp_Trsf2d___mul__(self, *args)
 
-    def Multiply(self, *args) -> "void" :
+    def Multiply(self, *args):
         """
         * Computes the transformation composed from <T> and <self>. In a C++ implementation you can also write Tcomposed = <self> * T. Example : Trsf2d T1, T2, Tcomp; ............... //composition : Tcomp = T2.Multiplied(T1); // or (Tcomp = T2 * T1) // transformation of a point Pnt2d P1(10.,3.,4.); Pnt2d P2 = P1.Transformed(Tcomp); //using Tcomp Pnt2d P3 = P1.Transformed(T1); //using T1 then T2 P3.Transform(T2); // P3 = P2 !!!
 
@@ -13287,7 +13358,7 @@ class gp_Trsf2d(object):
         """
         return _gp.gp_Trsf2d_Multiply(self, *args)
 
-    def __imul__(self, *args) -> "void" :
+    def __imul__(self, *args):
         """
         :param T:
         :type T: gp_Trsf2d
@@ -13296,7 +13367,7 @@ class gp_Trsf2d(object):
         """
         return _gp.gp_Trsf2d___imul__(self, *args)
 
-    def PreMultiply(self, *args) -> "void" :
+    def PreMultiply(self, *args):
         """
         * Computes the transformation composed from <self> and T. <self> = T * <self>
 
@@ -13307,27 +13378,27 @@ class gp_Trsf2d(object):
         """
         return _gp.gp_Trsf2d_PreMultiply(self, *args)
 
-    def Power(self, *args) -> "void" :
+    def Power(self, *args):
         """
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :rtype: None
 
         """
         return _gp.gp_Trsf2d_Power(self, *args)
 
-    def Powered(self, *args) -> "gp_Trsf2d" :
+    def Powered(self, *args):
         """
         * Computes the following composition of transformations <self> * <self> * .......* <self>, N time. if N = 0 <self> = Identity if N < 0 <self> = <self>.Inverse() *...........* <self>.Inverse(). Raises if N < 0 and if the matrix of the transformation not inversible.
 
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :rtype: gp_Trsf2d
 
         """
         return _gp.gp_Trsf2d_Powered(self, *args)
 
-    def Transforms(self, *args) -> "void" :
+    def Transforms(self, *args):
         """
         :param X:
         :type X: float
@@ -13344,14 +13415,14 @@ class gp_Trsf2d(object):
         """
         return _gp.gp_Trsf2d_Transforms(self, *args)
 
-    def _CSFDB_Getgp_Trsf2dscale(self, *args) -> "Standard_Real" :
+    def _CSFDB_Getgp_Trsf2dscale(self):
         """
         :rtype: float
 
         """
-        return _gp.gp_Trsf2d__CSFDB_Getgp_Trsf2dscale(self, *args)
+        return _gp.gp_Trsf2d__CSFDB_Getgp_Trsf2dscale(self)
 
-    def _CSFDB_Setgp_Trsf2dscale(self, *args) -> "void" :
+    def _CSFDB_Setgp_Trsf2dscale(self, *args):
         """
         :param p:
         :type p: float
@@ -13360,14 +13431,14 @@ class gp_Trsf2d(object):
         """
         return _gp.gp_Trsf2d__CSFDB_Setgp_Trsf2dscale(self, *args)
 
-    def _CSFDB_Getgp_Trsf2dshape(self, *args) -> "gp_TrsfForm" :
+    def _CSFDB_Getgp_Trsf2dshape(self):
         """
         :rtype: gp_TrsfForm
 
         """
-        return _gp.gp_Trsf2d__CSFDB_Getgp_Trsf2dshape(self, *args)
+        return _gp.gp_Trsf2d__CSFDB_Getgp_Trsf2dshape(self)
 
-    def _CSFDB_Setgp_Trsf2dshape(self, *args) -> "void" :
+    def _CSFDB_Setgp_Trsf2dshape(self, *args):
         """
         :param p:
         :type p: gp_TrsfForm
@@ -13376,19 +13447,19 @@ class gp_Trsf2d(object):
         """
         return _gp.gp_Trsf2d__CSFDB_Setgp_Trsf2dshape(self, *args)
 
-    def _CSFDB_Getgp_Trsf2dmatrix(self, *args) -> "gp_Mat2d const" :
+    def _CSFDB_Getgp_Trsf2dmatrix(self):
         """
         :rtype: gp_Mat2d
 
         """
-        return _gp.gp_Trsf2d__CSFDB_Getgp_Trsf2dmatrix(self, *args)
+        return _gp.gp_Trsf2d__CSFDB_Getgp_Trsf2dmatrix(self)
 
-    def _CSFDB_Getgp_Trsf2dloc(self, *args) -> "gp_XY const" :
+    def _CSFDB_Getgp_Trsf2dloc(self):
         """
         :rtype: gp_XY
 
         """
-        return _gp.gp_Trsf2d__CSFDB_Getgp_Trsf2dloc(self, *args)
+        return _gp.gp_Trsf2d__CSFDB_Getgp_Trsf2dloc(self)
 
     def __del__(self):
     	try:
@@ -13474,12 +13545,12 @@ class gp_Vec(object):
 
         """
         _gp.gp_Vec_swiginit(self,_gp.new_gp_Vec(*args))
-    def SetCoord(self, *args) -> "void" :
+    def SetCoord(self, *args):
         """
         * Changes the coordinate of range Index Index = 1 => X is modified Index = 2 => Y is modified Index = 3 => Z is modified Raised if Index != {1, 2, 3}.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Xi:
         :type Xi: float
         :rtype: None
@@ -13497,7 +13568,7 @@ class gp_Vec(object):
         """
         return _gp.gp_Vec_SetCoord(self, *args)
 
-    def SetX(self, *args) -> "void" :
+    def SetX(self, *args):
         """
         * Assigns the given value to the X coordinate of this vector.
 
@@ -13508,7 +13579,7 @@ class gp_Vec(object):
         """
         return _gp.gp_Vec_SetX(self, *args)
 
-    def SetY(self, *args) -> "void" :
+    def SetY(self, *args):
         """
         * Assigns the given value to the X coordinate of this vector.
 
@@ -13519,7 +13590,7 @@ class gp_Vec(object):
         """
         return _gp.gp_Vec_SetY(self, *args)
 
-    def SetZ(self, *args) -> "void" :
+    def SetZ(self, *args):
         """
         * Assigns the given value to the X coordinate of this vector.
 
@@ -13530,7 +13601,7 @@ class gp_Vec(object):
         """
         return _gp.gp_Vec_SetZ(self, *args)
 
-    def SetXYZ(self, *args) -> "void" :
+    def SetXYZ(self, *args):
         """
         * Assigns the three coordinates of Coord to this vector.
 
@@ -13541,12 +13612,12 @@ class gp_Vec(object):
         """
         return _gp.gp_Vec_SetXYZ(self, *args)
 
-    def Coord(self, *args) -> "void" :
+    def Coord(self, *args):
         """
         * Returns the coordinate of range Index : Index = 1 => X is returned Index = 2 => Y is returned Index = 3 => Z is returned Raised if Index != {1, 2, 3}.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: float
 
         * For this vector returns its three coordinates Xv, Yv, and Zvinline
@@ -13562,43 +13633,43 @@ class gp_Vec(object):
         """
         return _gp.gp_Vec_Coord(self, *args)
 
-    def X(self, *args) -> "Standard_Real" :
+    def X(self):
         """
         * For this vector, returns its X coordinate.
 
         :rtype: float
 
         """
-        return _gp.gp_Vec_X(self, *args)
+        return _gp.gp_Vec_X(self)
 
-    def Y(self, *args) -> "Standard_Real" :
+    def Y(self):
         """
         * For this vector, returns its Y coordinate.
 
         :rtype: float
 
         """
-        return _gp.gp_Vec_Y(self, *args)
+        return _gp.gp_Vec_Y(self)
 
-    def Z(self, *args) -> "Standard_Real" :
+    def Z(self):
         """
         * For this vector, returns its Z coordinate.
 
         :rtype: float
 
         """
-        return _gp.gp_Vec_Z(self, *args)
+        return _gp.gp_Vec_Z(self)
 
-    def XYZ(self, *args) -> "gp_XYZ const" :
+    def XYZ(self):
         """
         * For this vector, returns - its three coordinates as a number triple
 
         :rtype: gp_XYZ
 
         """
-        return _gp.gp_Vec_XYZ(self, *args)
+        return _gp.gp_Vec_XYZ(self)
 
-    def IsEqual(self, *args) -> "Standard_Boolean" :
+    def IsEqual(self, *args):
         """
         * Returns True if the two vectors have the same magnitude value and the same direction. The precision values are LinearTolerance for the magnitude and AngularTolerance for the direction.
 
@@ -13613,7 +13684,7 @@ class gp_Vec(object):
         """
         return _gp.gp_Vec_IsEqual(self, *args)
 
-    def IsNormal(self, *args) -> "Standard_Boolean" :
+    def IsNormal(self, *args):
         """
         * Returns True if abs(<self>.Angle(Other) - PI/2.) <= AngularTolerance Raises VectorWithNullMagnitude if <self>.Magnitude() <= Resolution or Other.Magnitude() <= Resolution from gp
 
@@ -13626,7 +13697,7 @@ class gp_Vec(object):
         """
         return _gp.gp_Vec_IsNormal(self, *args)
 
-    def IsOpposite(self, *args) -> "Standard_Boolean" :
+    def IsOpposite(self, *args):
         """
         * Returns True if PI - <self>.Angle(Other) <= AngularTolerance Raises VectorWithNullMagnitude if <self>.Magnitude() <= Resolution or Other.Magnitude() <= Resolution from gp
 
@@ -13639,7 +13710,7 @@ class gp_Vec(object):
         """
         return _gp.gp_Vec_IsOpposite(self, *args)
 
-    def IsParallel(self, *args) -> "Standard_Boolean" :
+    def IsParallel(self, *args):
         """
         * Returns True if Angle(<self>, Other) <= AngularTolerance or PI - Angle(<self>, Other) <= AngularTolerance This definition means that two parallel vectors cannot define a plane but two vectors with opposite directions are considered as parallel. Raises VectorWithNullMagnitude if <self>.Magnitude() <= Resolution or Other.Magnitude() <= Resolution from gp
 
@@ -13652,7 +13723,7 @@ class gp_Vec(object):
         """
         return _gp.gp_Vec_IsParallel(self, *args)
 
-    def Angle(self, *args) -> "Standard_Real" :
+    def Angle(self, *args):
         """
         * Computes the angular value between <self> and <Other> Returns the angle value between 0 and PI in radian. Raises VectorWithNullMagnitude if <self>.Magnitude() <= Resolution from gp or Other.Magnitude() <= Resolution because the angular value is indefinite if one of the vectors has a null magnitude.
 
@@ -13663,7 +13734,7 @@ class gp_Vec(object):
         """
         return _gp.gp_Vec_Angle(self, *args)
 
-    def AngleWithRef(self, *args) -> "Standard_Real" :
+    def AngleWithRef(self, *args):
         """
         * Computes the angle, in radians, between this vector and vector Other. The result is a value between -Pi and Pi. For this, VRef defines the positive sense of rotation: the angular value is positive, if the cross product this ^ Other has the same orientation as VRef relative to the plane defined by the vectors this and Other. Otherwise, the angular value is negative. Exceptions gp_VectorWithNullMagnitude if the magnitude of this vector, the vector Other, or the vector VRef is less than or equal to gp::Resolution(). Standard_DomainError if this vector, the vector Other, and the vector VRef are coplanar, unless this vector and the vector Other are parallel.
 
@@ -13676,25 +13747,25 @@ class gp_Vec(object):
         """
         return _gp.gp_Vec_AngleWithRef(self, *args)
 
-    def Magnitude(self, *args) -> "Standard_Real" :
+    def Magnitude(self):
         """
         * Computes the magnitude of this vector.
 
         :rtype: float
 
         """
-        return _gp.gp_Vec_Magnitude(self, *args)
+        return _gp.gp_Vec_Magnitude(self)
 
-    def SquareMagnitude(self, *args) -> "Standard_Real" :
+    def SquareMagnitude(self):
         """
         * Computes the square magnitude of this vector. Adds two vectors
 
         :rtype: float
 
         """
-        return _gp.gp_Vec_SquareMagnitude(self, *args)
+        return _gp.gp_Vec_SquareMagnitude(self)
 
-    def Add(self, *args) -> "void" :
+    def Add(self, *args):
         """
         :param Other:
         :type Other: gp_Vec
@@ -13703,7 +13774,7 @@ class gp_Vec(object):
         """
         return _gp.gp_Vec_Add(self, *args)
 
-    def __iadd__(self, *args) -> "void" :
+    def __iadd__(self, *args):
         """
         :param Other:
         :type Other: gp_Vec
@@ -13712,7 +13783,7 @@ class gp_Vec(object):
         """
         return _gp.gp_Vec___iadd__(self, *args)
 
-    def Added(self, *args) -> "gp_Vec" :
+    def Added(self, *args):
         """
         * Adds two vectors Subtracts two vectors
 
@@ -13723,7 +13794,7 @@ class gp_Vec(object):
         """
         return _gp.gp_Vec_Added(self, *args)
 
-    def __add__(self, *args) -> "gp_Vec" :
+    def __add__(self, *args):
         """
         :param Other:
         :type Other: gp_Vec
@@ -13732,7 +13803,7 @@ class gp_Vec(object):
         """
         return _gp.gp_Vec___add__(self, *args)
 
-    def Subtract(self, *args) -> "void" :
+    def Subtract(self, *args):
         """
         :param Right:
         :type Right: gp_Vec
@@ -13741,7 +13812,7 @@ class gp_Vec(object):
         """
         return _gp.gp_Vec_Subtract(self, *args)
 
-    def __isub__(self, *args) -> "void" :
+    def __isub__(self, *args):
         """
         :param Right:
         :type Right: gp_Vec
@@ -13750,7 +13821,7 @@ class gp_Vec(object):
         """
         return _gp.gp_Vec___isub__(self, *args)
 
-    def Subtracted(self, *args) -> "gp_Vec" :
+    def Subtracted(self, *args):
         """
         * Subtracts two vectors Multiplies a vector by a scalar
 
@@ -13761,7 +13832,7 @@ class gp_Vec(object):
         """
         return _gp.gp_Vec_Subtracted(self, *args)
 
-    def __sub__(self, *args) -> "gp_Vec" :
+    def __sub__(self, *args):
         """
         :param Right:
         :type Right: gp_Vec
@@ -13770,7 +13841,7 @@ class gp_Vec(object):
         """
         return _gp.gp_Vec___sub__(self, *args)
 
-    def Multiply(self, *args) -> "void" :
+    def Multiply(self, *args):
         """
         :param Scalar:
         :type Scalar: float
@@ -13779,7 +13850,7 @@ class gp_Vec(object):
         """
         return _gp.gp_Vec_Multiply(self, *args)
 
-    def __imul__(self, *args) -> "void" :
+    def __imul__(self, *args):
         """
         :param Scalar:
         :type Scalar: float
@@ -13788,7 +13859,7 @@ class gp_Vec(object):
         """
         return _gp.gp_Vec___imul__(self, *args)
 
-    def Multiplied(self, *args) -> "gp_Vec" :
+    def Multiplied(self, *args):
         """
         * Multiplies a vector by a scalar Divides a vector by a scalar
 
@@ -13799,7 +13870,7 @@ class gp_Vec(object):
         """
         return _gp.gp_Vec_Multiplied(self, *args)
 
-    def Divide(self, *args) -> "void" :
+    def Divide(self, *args):
         """
         :param Scalar:
         :type Scalar: float
@@ -13808,7 +13879,7 @@ class gp_Vec(object):
         """
         return _gp.gp_Vec_Divide(self, *args)
 
-    def __idiv__(self, *args) -> "void" :
+    def __idiv__(self, *args):
         """
         :param Scalar:
         :type Scalar: float
@@ -13817,7 +13888,7 @@ class gp_Vec(object):
         """
         return _gp.gp_Vec___idiv__(self, *args)
 
-    def Divided(self, *args) -> "gp_Vec" :
+    def Divided(self, *args):
         """
         * Divides a vector by a scalar computes the cross product between two vectors
 
@@ -13828,7 +13899,7 @@ class gp_Vec(object):
         """
         return _gp.gp_Vec_Divided(self, *args)
 
-    def __div__(self, *args) -> "gp_Vec" :
+    def __div__(self, *args):
         """
         :param Scalar:
         :type Scalar: float
@@ -13837,7 +13908,7 @@ class gp_Vec(object):
         """
         return _gp.gp_Vec___div__(self, *args)
 
-    def Cross(self, *args) -> "void" :
+    def Cross(self, *args):
         """
         :param Right:
         :type Right: gp_Vec
@@ -13846,7 +13917,7 @@ class gp_Vec(object):
         """
         return _gp.gp_Vec_Cross(self, *args)
 
-    def __ixor__(self, *args) -> "void" :
+    def __ixor__(self, *args):
         """
         :param Right:
         :type Right: gp_Vec
@@ -13855,7 +13926,7 @@ class gp_Vec(object):
         """
         return _gp.gp_Vec___ixor__(self, *args)
 
-    def Crossed(self, *args) -> "gp_Vec" :
+    def Crossed(self, *args):
         """
         * computes the cross product between two vectors
 
@@ -13866,7 +13937,7 @@ class gp_Vec(object):
         """
         return _gp.gp_Vec_Crossed(self, *args)
 
-    def __xor__(self, *args) -> "gp_Vec" :
+    def __xor__(self, *args):
         """
         :param Right:
         :type Right: gp_Vec
@@ -13875,7 +13946,7 @@ class gp_Vec(object):
         """
         return _gp.gp_Vec___xor__(self, *args)
 
-    def CrossMagnitude(self, *args) -> "Standard_Real" :
+    def CrossMagnitude(self, *args):
         """
         * Computes the magnitude of the cross product between <self> and Right. Returns || <self> ^ Right ||
 
@@ -13886,7 +13957,7 @@ class gp_Vec(object):
         """
         return _gp.gp_Vec_CrossMagnitude(self, *args)
 
-    def CrossSquareMagnitude(self, *args) -> "Standard_Real" :
+    def CrossSquareMagnitude(self, *args):
         """
         * Computes the square magnitude of the cross product between <self> and Right. Returns || <self> ^ Right ||**2 Computes the triple vector product. <self> ^ (V1 ^ V2)
 
@@ -13897,7 +13968,7 @@ class gp_Vec(object):
         """
         return _gp.gp_Vec_CrossSquareMagnitude(self, *args)
 
-    def CrossCross(self, *args) -> "void" :
+    def CrossCross(self, *args):
         """
         :param V1:
         :type V1: gp_Vec
@@ -13908,7 +13979,7 @@ class gp_Vec(object):
         """
         return _gp.gp_Vec_CrossCross(self, *args)
 
-    def CrossCrossed(self, *args) -> "gp_Vec" :
+    def CrossCrossed(self, *args):
         """
         * Computes the triple vector product. <self> ^ (V1 ^ V2)
 
@@ -13921,7 +13992,7 @@ class gp_Vec(object):
         """
         return _gp.gp_Vec_CrossCrossed(self, *args)
 
-    def Dot(self, *args) -> "Standard_Real" :
+    def Dot(self, *args):
         """
         * computes the scalar product
 
@@ -13932,7 +14003,7 @@ class gp_Vec(object):
         """
         return _gp.gp_Vec_Dot(self, *args)
 
-    def __mul__(self, *args) -> "Standard_Real" :
+    def __mul__(self, *args):
         """
         :param Scalar:
         :type Scalar: float
@@ -13945,7 +14016,7 @@ class gp_Vec(object):
         """
         return _gp.gp_Vec___mul__(self, *args)
 
-    def DotCross(self, *args) -> "Standard_Real" :
+    def DotCross(self, *args):
         """
         * Computes the triple scalar product <self> * (V1 ^ V2). normalizes a vector Raises an exception if the magnitude of the vector is lower or equal to Resolution from gp.
 
@@ -13958,46 +14029,46 @@ class gp_Vec(object):
         """
         return _gp.gp_Vec_DotCross(self, *args)
 
-    def Normalize(self, *args) -> "void" :
+    def Normalize(self):
         """
         :rtype: None
 
         """
-        return _gp.gp_Vec_Normalize(self, *args)
+        return _gp.gp_Vec_Normalize(self)
 
-    def Normalized(self, *args) -> "gp_Vec" :
+    def Normalized(self):
         """
         * normalizes a vector Raises an exception if the magnitude of the vector is lower or equal to Resolution from gp. Reverses the direction of a vector
 
         :rtype: gp_Vec
 
         """
-        return _gp.gp_Vec_Normalized(self, *args)
+        return _gp.gp_Vec_Normalized(self)
 
-    def Reverse(self, *args) -> "void" :
+    def Reverse(self):
         """
         :rtype: None
 
         """
-        return _gp.gp_Vec_Reverse(self, *args)
+        return _gp.gp_Vec_Reverse(self)
 
-    def Reversed(self, *args) -> "gp_Vec" :
+    def Reversed(self):
         """
         * Reverses the direction of a vector
 
         :rtype: gp_Vec
 
         """
-        return _gp.gp_Vec_Reversed(self, *args)
+        return _gp.gp_Vec_Reversed(self)
 
-    def __neg__(self, *args) -> "gp_Vec" :
+    def __neg__(self):
         """
         :rtype: gp_Vec
 
         """
-        return _gp.gp_Vec___neg__(self, *args)
+        return _gp.gp_Vec___neg__(self)
 
-    def SetLinearForm(self, *args) -> "void" :
+    def SetLinearForm(self, *args):
         """
         * <self> is setted to the following linear form : A1 * V1 + A2 * V2 + A3 * V3 + V4
 
@@ -14080,7 +14151,7 @@ class gp_Vec(object):
         """
         return _gp.gp_Vec_SetLinearForm(self, *args)
 
-    def Mirror(self, *args) -> "void" :
+    def Mirror(self, *args):
         """
         :param V:
         :type V: gp_Vec
@@ -14097,7 +14168,7 @@ class gp_Vec(object):
         """
         return _gp.gp_Vec_Mirror(self, *args)
 
-    def Mirrored(self, *args) -> "gp_Vec" :
+    def Mirrored(self, *args):
         """
         * Performs the symmetrical transformation of a vector with respect to the vector V which is the center of the symmetry.
 
@@ -14120,7 +14191,7 @@ class gp_Vec(object):
         """
         return _gp.gp_Vec_Mirrored(self, *args)
 
-    def Rotate(self, *args) -> "void" :
+    def Rotate(self, *args):
         """
         :param A1:
         :type A1: gp_Ax1
@@ -14131,7 +14202,7 @@ class gp_Vec(object):
         """
         return _gp.gp_Vec_Rotate(self, *args)
 
-    def Rotated(self, *args) -> "gp_Vec" :
+    def Rotated(self, *args):
         """
         * Rotates a vector. A1 is the axis of the rotation. Ang is the angular value of the rotation in radians.
 
@@ -14144,7 +14215,7 @@ class gp_Vec(object):
         """
         return _gp.gp_Vec_Rotated(self, *args)
 
-    def Scale(self, *args) -> "void" :
+    def Scale(self, *args):
         """
         :param S:
         :type S: float
@@ -14153,7 +14224,7 @@ class gp_Vec(object):
         """
         return _gp.gp_Vec_Scale(self, *args)
 
-    def Scaled(self, *args) -> "gp_Vec" :
+    def Scaled(self, *args):
         """
         * Scales a vector. S is the scaling value. Transforms a vector with the transformation T.
 
@@ -14164,7 +14235,7 @@ class gp_Vec(object):
         """
         return _gp.gp_Vec_Scaled(self, *args)
 
-    def Transform(self, *args) -> "void" :
+    def Transform(self, *args):
         """
         :param T:
         :type T: gp_Trsf
@@ -14173,7 +14244,7 @@ class gp_Vec(object):
         """
         return _gp.gp_Vec_Transform(self, *args)
 
-    def Transformed(self, *args) -> "gp_Vec" :
+    def Transformed(self, *args):
         """
         * Transforms a vector with the transformation T.
 
@@ -14184,12 +14255,12 @@ class gp_Vec(object):
         """
         return _gp.gp_Vec_Transformed(self, *args)
 
-    def _CSFDB_Getgp_Veccoord(self, *args) -> "gp_XYZ const" :
+    def _CSFDB_Getgp_Veccoord(self):
         """
         :rtype: gp_XYZ
 
         """
-        return _gp.gp_Vec__CSFDB_Getgp_Veccoord(self, *args)
+        return _gp.gp_Vec__CSFDB_Getgp_Veccoord(self)
 
     def __del__(self):
     	try:
@@ -14301,12 +14372,12 @@ class gp_Vec2d(object):
 
         """
         _gp.gp_Vec2d_swiginit(self,_gp.new_gp_Vec2d(*args))
-    def SetCoord(self, *args) -> "void" :
+    def SetCoord(self, *args):
         """
         * Changes the coordinate of range Index Index = 1 => X is modified Index = 2 => Y is modified Raises OutOfRange if Index != {1, 2}.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Xi:
         :type Xi: float
         :rtype: None
@@ -14322,7 +14393,7 @@ class gp_Vec2d(object):
         """
         return _gp.gp_Vec2d_SetCoord(self, *args)
 
-    def SetX(self, *args) -> "void" :
+    def SetX(self, *args):
         """
         * Assigns the given value to the X coordinate of this vector.
 
@@ -14333,7 +14404,7 @@ class gp_Vec2d(object):
         """
         return _gp.gp_Vec2d_SetX(self, *args)
 
-    def SetY(self, *args) -> "void" :
+    def SetY(self, *args):
         """
         * Assigns the given value to the Y coordinate of this vector.
 
@@ -14344,7 +14415,7 @@ class gp_Vec2d(object):
         """
         return _gp.gp_Vec2d_SetY(self, *args)
 
-    def SetXY(self, *args) -> "void" :
+    def SetXY(self, *args):
         """
         * Assigns the two coordinates of Coord to this vector.
 
@@ -14355,12 +14426,12 @@ class gp_Vec2d(object):
         """
         return _gp.gp_Vec2d_SetXY(self, *args)
 
-    def Coord(self, *args) -> "void" :
+    def Coord(self, *args):
         """
         * Returns the coordinate of range Index : Index = 1 => X is returned Index = 2 => Y is returned Raised if Index != {1, 2}.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: float
 
         * For this vector, returns its two coordinates Xv and Yv
@@ -14374,34 +14445,34 @@ class gp_Vec2d(object):
         """
         return _gp.gp_Vec2d_Coord(self, *args)
 
-    def X(self, *args) -> "Standard_Real" :
+    def X(self):
         """
         * For this vector, returns its X coordinate.
 
         :rtype: float
 
         """
-        return _gp.gp_Vec2d_X(self, *args)
+        return _gp.gp_Vec2d_X(self)
 
-    def Y(self, *args) -> "Standard_Real" :
+    def Y(self):
         """
         * For this vector, returns its Y coordinate.
 
         :rtype: float
 
         """
-        return _gp.gp_Vec2d_Y(self, *args)
+        return _gp.gp_Vec2d_Y(self)
 
-    def XY(self, *args) -> "gp_XY const" :
+    def XY(self):
         """
         * For this vector, returns its two coordinates as a number pair
 
         :rtype: gp_XY
 
         """
-        return _gp.gp_Vec2d_XY(self, *args)
+        return _gp.gp_Vec2d_XY(self)
 
-    def IsEqual(self, *args) -> "Standard_Boolean" :
+    def IsEqual(self, *args):
         """
         * Returns True if the two vectors have the same magnitude value and the same direction. The precision values are LinearTolerance for the magnitude and AngularTolerance for the direction.
 
@@ -14416,7 +14487,7 @@ class gp_Vec2d(object):
         """
         return _gp.gp_Vec2d_IsEqual(self, *args)
 
-    def IsNormal(self, *args) -> "Standard_Boolean" :
+    def IsNormal(self, *args):
         """
         * Returns True if abs(Abs(<self>.Angle(Other)) - PI/2.) <= AngularTolerance Raises VectorWithNullMagnitude if <self>.Magnitude() <= Resolution or Other.Magnitude() <= Resolution from gp.
 
@@ -14429,7 +14500,7 @@ class gp_Vec2d(object):
         """
         return _gp.gp_Vec2d_IsNormal(self, *args)
 
-    def IsOpposite(self, *args) -> "Standard_Boolean" :
+    def IsOpposite(self, *args):
         """
         * Returns True if PI - Abs(<self>.Angle(Other)) <= AngularTolerance Raises VectorWithNullMagnitude if <self>.Magnitude() <= Resolution or Other.Magnitude() <= Resolution from gp.
 
@@ -14442,7 +14513,7 @@ class gp_Vec2d(object):
         """
         return _gp.gp_Vec2d_IsOpposite(self, *args)
 
-    def IsParallel(self, *args) -> "Standard_Boolean" :
+    def IsParallel(self, *args):
         """
         * Returns true if Abs(Angle(<self>, Other)) <= AngularTolerance or PI - Abs(Angle(<self>, Other)) <= AngularTolerance Two vectors with opposite directions are considered as parallel. Raises VectorWithNullMagnitude if <self>.Magnitude() <= Resolution or Other.Magnitude() <= Resolution from gp
 
@@ -14455,7 +14526,7 @@ class gp_Vec2d(object):
         """
         return _gp.gp_Vec2d_IsParallel(self, *args)
 
-    def Angle(self, *args) -> "Standard_Real" :
+    def Angle(self, *args):
         """
         * Computes the angular value between <self> and <Other> returns the angle value between -PI and PI in radian. The orientation is from <self> to Other. The positive sense is the trigonometric sense. Raises VectorWithNullMagnitude if <self>.Magnitude() <= Resolution from gp or Other.Magnitude() <= Resolution because the angular value is indefinite if one of the vectors has a null magnitude.
 
@@ -14466,25 +14537,25 @@ class gp_Vec2d(object):
         """
         return _gp.gp_Vec2d_Angle(self, *args)
 
-    def Magnitude(self, *args) -> "Standard_Real" :
+    def Magnitude(self):
         """
         * Computes the magnitude of this vector.
 
         :rtype: float
 
         """
-        return _gp.gp_Vec2d_Magnitude(self, *args)
+        return _gp.gp_Vec2d_Magnitude(self)
 
-    def SquareMagnitude(self, *args) -> "Standard_Real" :
+    def SquareMagnitude(self):
         """
         * Computes the square magnitude of this vector.
 
         :rtype: float
 
         """
-        return _gp.gp_Vec2d_SquareMagnitude(self, *args)
+        return _gp.gp_Vec2d_SquareMagnitude(self)
 
-    def Add(self, *args) -> "void" :
+    def Add(self, *args):
         """
         :param Other:
         :type Other: gp_Vec2d
@@ -14493,7 +14564,7 @@ class gp_Vec2d(object):
         """
         return _gp.gp_Vec2d_Add(self, *args)
 
-    def __iadd__(self, *args) -> "void" :
+    def __iadd__(self, *args):
         """
         :param Other:
         :type Other: gp_Vec2d
@@ -14502,7 +14573,7 @@ class gp_Vec2d(object):
         """
         return _gp.gp_Vec2d___iadd__(self, *args)
 
-    def Added(self, *args) -> "gp_Vec2d" :
+    def Added(self, *args):
         """
         * Adds two vectors
 
@@ -14513,7 +14584,7 @@ class gp_Vec2d(object):
         """
         return _gp.gp_Vec2d_Added(self, *args)
 
-    def __add__(self, *args) -> "gp_Vec2d" :
+    def __add__(self, *args):
         """
         :param Other:
         :type Other: gp_Vec2d
@@ -14522,7 +14593,7 @@ class gp_Vec2d(object):
         """
         return _gp.gp_Vec2d___add__(self, *args)
 
-    def Crossed(self, *args) -> "Standard_Real" :
+    def Crossed(self, *args):
         """
         * Computes the crossing product between two vectors
 
@@ -14533,7 +14604,7 @@ class gp_Vec2d(object):
         """
         return _gp.gp_Vec2d_Crossed(self, *args)
 
-    def __xor__(self, *args) -> "Standard_Real" :
+    def __xor__(self, *args):
         """
         :param Right:
         :type Right: gp_Vec2d
@@ -14542,7 +14613,7 @@ class gp_Vec2d(object):
         """
         return _gp.gp_Vec2d___xor__(self, *args)
 
-    def CrossMagnitude(self, *args) -> "Standard_Real" :
+    def CrossMagnitude(self, *args):
         """
         * Computes the magnitude of the cross product between <self> and Right. Returns || <self> ^ Right ||
 
@@ -14553,7 +14624,7 @@ class gp_Vec2d(object):
         """
         return _gp.gp_Vec2d_CrossMagnitude(self, *args)
 
-    def CrossSquareMagnitude(self, *args) -> "Standard_Real" :
+    def CrossSquareMagnitude(self, *args):
         """
         * Computes the square magnitude of the cross product between <self> and Right. Returns || <self> ^ Right ||**2
 
@@ -14564,7 +14635,7 @@ class gp_Vec2d(object):
         """
         return _gp.gp_Vec2d_CrossSquareMagnitude(self, *args)
 
-    def Divide(self, *args) -> "void" :
+    def Divide(self, *args):
         """
         :param Scalar:
         :type Scalar: float
@@ -14573,7 +14644,7 @@ class gp_Vec2d(object):
         """
         return _gp.gp_Vec2d_Divide(self, *args)
 
-    def __idiv__(self, *args) -> "void" :
+    def __idiv__(self, *args):
         """
         :param Scalar:
         :type Scalar: float
@@ -14582,7 +14653,7 @@ class gp_Vec2d(object):
         """
         return _gp.gp_Vec2d___idiv__(self, *args)
 
-    def Divided(self, *args) -> "gp_Vec2d" :
+    def Divided(self, *args):
         """
         * divides a vector by a scalar
 
@@ -14593,7 +14664,7 @@ class gp_Vec2d(object):
         """
         return _gp.gp_Vec2d_Divided(self, *args)
 
-    def __div__(self, *args) -> "gp_Vec2d" :
+    def __div__(self, *args):
         """
         :param Scalar:
         :type Scalar: float
@@ -14602,7 +14673,7 @@ class gp_Vec2d(object):
         """
         return _gp.gp_Vec2d___div__(self, *args)
 
-    def Dot(self, *args) -> "Standard_Real" :
+    def Dot(self, *args):
         """
         * Computes the scalar product
 
@@ -14613,14 +14684,14 @@ class gp_Vec2d(object):
         """
         return _gp.gp_Vec2d_Dot(self, *args)
 
-    def GetNormal(self, *args) -> "gp_Vec2d" :
+    def GetNormal(self):
         """
         :rtype: gp_Vec2d
 
         """
-        return _gp.gp_Vec2d_GetNormal(self, *args)
+        return _gp.gp_Vec2d_GetNormal(self)
 
-    def Multiply(self, *args) -> "void" :
+    def Multiply(self, *args):
         """
         :param Scalar:
         :type Scalar: float
@@ -14629,7 +14700,7 @@ class gp_Vec2d(object):
         """
         return _gp.gp_Vec2d_Multiply(self, *args)
 
-    def __imul__(self, *args) -> "void" :
+    def __imul__(self, *args):
         """
         :param Scalar:
         :type Scalar: float
@@ -14638,7 +14709,7 @@ class gp_Vec2d(object):
         """
         return _gp.gp_Vec2d___imul__(self, *args)
 
-    def Multiplied(self, *args) -> "gp_Vec2d" :
+    def Multiplied(self, *args):
         """
         * Normalizes a vector Raises an exception if the magnitude of the vector is lower or equal to Resolution from package gp.
 
@@ -14649,7 +14720,7 @@ class gp_Vec2d(object):
         """
         return _gp.gp_Vec2d_Multiplied(self, *args)
 
-    def __mul__(self, *args) -> "gp_Vec2d" :
+    def __mul__(self, *args):
         """
         :param Other:
         :type Other: gp_Vec2d
@@ -14662,46 +14733,46 @@ class gp_Vec2d(object):
         """
         return _gp.gp_Vec2d___mul__(self, *args)
 
-    def Normalize(self, *args) -> "void" :
+    def Normalize(self):
         """
         :rtype: None
 
         """
-        return _gp.gp_Vec2d_Normalize(self, *args)
+        return _gp.gp_Vec2d_Normalize(self)
 
-    def Normalized(self, *args) -> "gp_Vec2d" :
+    def Normalized(self):
         """
         * Normalizes a vector Raises an exception if the magnitude of the vector is lower or equal to Resolution from package gp. Reverses the direction of a vector
 
         :rtype: gp_Vec2d
 
         """
-        return _gp.gp_Vec2d_Normalized(self, *args)
+        return _gp.gp_Vec2d_Normalized(self)
 
-    def Reverse(self, *args) -> "void" :
+    def Reverse(self):
         """
         :rtype: None
 
         """
-        return _gp.gp_Vec2d_Reverse(self, *args)
+        return _gp.gp_Vec2d_Reverse(self)
 
-    def Reversed(self, *args) -> "gp_Vec2d" :
+    def Reversed(self):
         """
         * Reverses the direction of a vector Subtracts two vectors
 
         :rtype: gp_Vec2d
 
         """
-        return _gp.gp_Vec2d_Reversed(self, *args)
+        return _gp.gp_Vec2d_Reversed(self)
 
-    def __neg__(self, *args) -> "gp_Vec2d" :
+    def __neg__(self):
         """
         :rtype: gp_Vec2d
 
         """
-        return _gp.gp_Vec2d___neg__(self, *args)
+        return _gp.gp_Vec2d___neg__(self)
 
-    def Subtract(self, *args) -> "void" :
+    def Subtract(self, *args):
         """
         :param Right:
         :type Right: gp_Vec2d
@@ -14710,7 +14781,7 @@ class gp_Vec2d(object):
         """
         return _gp.gp_Vec2d_Subtract(self, *args)
 
-    def __isub__(self, *args) -> "void" :
+    def __isub__(self, *args):
         """
         :param Right:
         :type Right: gp_Vec2d
@@ -14719,7 +14790,7 @@ class gp_Vec2d(object):
         """
         return _gp.gp_Vec2d___isub__(self, *args)
 
-    def Subtracted(self, *args) -> "gp_Vec2d" :
+    def Subtracted(self, *args):
         """
         * Subtracts two vectors
 
@@ -14730,7 +14801,7 @@ class gp_Vec2d(object):
         """
         return _gp.gp_Vec2d_Subtracted(self, *args)
 
-    def __sub__(self, *args) -> "gp_Vec2d" :
+    def __sub__(self, *args):
         """
         :param Right:
         :type Right: gp_Vec2d
@@ -14739,7 +14810,7 @@ class gp_Vec2d(object):
         """
         return _gp.gp_Vec2d___sub__(self, *args)
 
-    def SetLinearForm(self, *args) -> "void" :
+    def SetLinearForm(self, *args):
         """
         * <self> is setted to the following linear form : A1 * V1 + A2 * V2 + V3
 
@@ -14788,7 +14859,7 @@ class gp_Vec2d(object):
         """
         return _gp.gp_Vec2d_SetLinearForm(self, *args)
 
-    def Mirror(self, *args) -> "void" :
+    def Mirror(self, *args):
         """
         :param V:
         :type V: gp_Vec2d
@@ -14801,7 +14872,7 @@ class gp_Vec2d(object):
         """
         return _gp.gp_Vec2d_Mirror(self, *args)
 
-    def Mirrored(self, *args) -> "gp_Vec2d" :
+    def Mirrored(self, *args):
         """
         * Performs the symmetrical transformation of a vector with respect to the vector V which is the center of the symmetry. Performs the symmetrical transformation of a vector with respect to an axis placement which is the axis of the symmetry.
 
@@ -14818,7 +14889,7 @@ class gp_Vec2d(object):
         """
         return _gp.gp_Vec2d_Mirrored(self, *args)
 
-    def Rotate(self, *args) -> "void" :
+    def Rotate(self, *args):
         """
         :param Ang:
         :type Ang: float
@@ -14827,7 +14898,7 @@ class gp_Vec2d(object):
         """
         return _gp.gp_Vec2d_Rotate(self, *args)
 
-    def Rotated(self, *args) -> "gp_Vec2d" :
+    def Rotated(self, *args):
         """
         * Rotates a vector. Ang is the angular value of the rotation in radians.
 
@@ -14838,7 +14909,7 @@ class gp_Vec2d(object):
         """
         return _gp.gp_Vec2d_Rotated(self, *args)
 
-    def Scale(self, *args) -> "void" :
+    def Scale(self, *args):
         """
         :param S:
         :type S: float
@@ -14847,7 +14918,7 @@ class gp_Vec2d(object):
         """
         return _gp.gp_Vec2d_Scale(self, *args)
 
-    def Scaled(self, *args) -> "gp_Vec2d" :
+    def Scaled(self, *args):
         """
         * Scales a vector. S is the scaling value.
 
@@ -14858,7 +14929,7 @@ class gp_Vec2d(object):
         """
         return _gp.gp_Vec2d_Scaled(self, *args)
 
-    def Transform(self, *args) -> "void" :
+    def Transform(self, *args):
         """
         :param T:
         :type T: gp_Trsf2d
@@ -14867,7 +14938,7 @@ class gp_Vec2d(object):
         """
         return _gp.gp_Vec2d_Transform(self, *args)
 
-    def Transformed(self, *args) -> "gp_Vec2d" :
+    def Transformed(self, *args):
         """
         * Transforms a vector with a Trsf from gp.
 
@@ -14878,12 +14949,12 @@ class gp_Vec2d(object):
         """
         return _gp.gp_Vec2d_Transformed(self, *args)
 
-    def _CSFDB_Getgp_Vec2dcoord(self, *args) -> "gp_XY const" :
+    def _CSFDB_Getgp_Vec2dcoord(self):
         """
         :rtype: gp_XY
 
         """
-        return _gp.gp_Vec2d__CSFDB_Getgp_Vec2dcoord(self, *args)
+        return _gp.gp_Vec2d__CSFDB_Getgp_Vec2dcoord(self)
 
     def __del__(self):
     	try:
@@ -14968,12 +15039,12 @@ class gp_XY(object):
 
         """
         _gp.gp_XY_swiginit(self,_gp.new_gp_XY(*args))
-    def SetCoord(self, *args) -> "void" :
+    def SetCoord(self, *args):
         """
         * modifies the coordinate of range Index Index = 1 => X is modified Index = 2 => Y is modified Raises OutOfRange if Index != {1, 2}.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Xi:
         :type Xi: float
         :rtype: None
@@ -14989,7 +15060,7 @@ class gp_XY(object):
         """
         return _gp.gp_XY_SetCoord(self, *args)
 
-    def SetX(self, *args) -> "void" :
+    def SetX(self, *args):
         """
         * Assigns the given value to the X coordinate of this number pair.
 
@@ -15000,7 +15071,7 @@ class gp_XY(object):
         """
         return _gp.gp_XY_SetX(self, *args)
 
-    def SetY(self, *args) -> "void" :
+    def SetY(self, *args):
         """
         * Assigns the given value to the Y coordinate of this number pair.
 
@@ -15011,12 +15082,12 @@ class gp_XY(object):
         """
         return _gp.gp_XY_SetY(self, *args)
 
-    def Coord(self, *args) -> "void" :
+    def Coord(self, *args):
         """
         * returns the coordinate of range Index : Index = 1 => X is returned Index = 2 => Y is returned Raises OutOfRange if Index != {1, 2}.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: float
 
         * For this number pair, returns its coordinates X and Y.
@@ -15030,43 +15101,43 @@ class gp_XY(object):
         """
         return _gp.gp_XY_Coord(self, *args)
 
-    def X(self, *args) -> "Standard_Real" :
+    def X(self):
         """
         * Returns the X coordinate of this number pair.
 
         :rtype: float
 
         """
-        return _gp.gp_XY_X(self, *args)
+        return _gp.gp_XY_X(self)
 
-    def Y(self, *args) -> "Standard_Real" :
+    def Y(self):
         """
         * Returns the Y coordinate of this number pair.
 
         :rtype: float
 
         """
-        return _gp.gp_XY_Y(self, *args)
+        return _gp.gp_XY_Y(self)
 
-    def Modulus(self, *args) -> "Standard_Real" :
+    def Modulus(self):
         """
         * Computes Sqrt (X*X + Y*Y) where X and Y are the two coordinates of this number pair.
 
         :rtype: float
 
         """
-        return _gp.gp_XY_Modulus(self, *args)
+        return _gp.gp_XY_Modulus(self)
 
-    def SquareModulus(self, *args) -> "Standard_Real" :
+    def SquareModulus(self):
         """
         * Computes X*X + Y*Y where X and Y are the two coordinates of this number pair.
 
         :rtype: float
 
         """
-        return _gp.gp_XY_SquareModulus(self, *args)
+        return _gp.gp_XY_SquareModulus(self)
 
-    def IsEqual(self, *args) -> "Standard_Boolean" :
+    def IsEqual(self, *args):
         """
         * Returns true if the coordinates of this number pair are equal to the respective coordinates of the number pair Other, within the specified tolerance Tolerance. I.e.: abs(<self>.X() - Other.X()) <= Tolerance and abs(<self>.Y() - Other.Y()) <= Tolerance and computations
 
@@ -15079,7 +15150,7 @@ class gp_XY(object):
         """
         return _gp.gp_XY_IsEqual(self, *args)
 
-    def Add(self, *args) -> "void" :
+    def Add(self, *args):
         """
         * Computes the sum of this number pair and number pair Other <self>.X() = <self>.X() + Other.X() <self>.Y() = <self>.Y() + Other.Y()
 
@@ -15090,7 +15161,7 @@ class gp_XY(object):
         """
         return _gp.gp_XY_Add(self, *args)
 
-    def __iadd__(self, *args) -> "void" :
+    def __iadd__(self, *args):
         """
         :param Other:
         :type Other: gp_XY
@@ -15099,7 +15170,7 @@ class gp_XY(object):
         """
         return _gp.gp_XY___iadd__(self, *args)
 
-    def Added(self, *args) -> "gp_XY" :
+    def Added(self, *args):
         """
         * Computes the sum of this number pair and number pair Other new.X() = <self>.X() + Other.X() new.Y() = <self>.Y() + Other.Y()
 
@@ -15110,7 +15181,7 @@ class gp_XY(object):
         """
         return _gp.gp_XY_Added(self, *args)
 
-    def __add__(self, *args) -> "gp_XY" :
+    def __add__(self, *args):
         """
         :param Other:
         :type Other: gp_XY
@@ -15119,7 +15190,7 @@ class gp_XY(object):
         """
         return _gp.gp_XY___add__(self, *args)
 
-    def Crossed(self, *args) -> "Standard_Real" :
+    def Crossed(self, *args):
         """
         * Real D = <self>.X() * Other.Y() - <self>.Y() * Other.X()
 
@@ -15130,7 +15201,7 @@ class gp_XY(object):
         """
         return _gp.gp_XY_Crossed(self, *args)
 
-    def __xor__(self, *args) -> "Standard_Real" :
+    def __xor__(self, *args):
         """
         :param Right:
         :type Right: gp_XY
@@ -15139,7 +15210,7 @@ class gp_XY(object):
         """
         return _gp.gp_XY___xor__(self, *args)
 
-    def CrossMagnitude(self, *args) -> "Standard_Real" :
+    def CrossMagnitude(self, *args):
         """
         * computes the magnitude of the cross product between <self> and Right. Returns || <self> ^ Right ||
 
@@ -15150,7 +15221,7 @@ class gp_XY(object):
         """
         return _gp.gp_XY_CrossMagnitude(self, *args)
 
-    def CrossSquareMagnitude(self, *args) -> "Standard_Real" :
+    def CrossSquareMagnitude(self, *args):
         """
         * computes the square magnitude of the cross product between <self> and Right. Returns || <self> ^ Right ||**2
 
@@ -15161,7 +15232,7 @@ class gp_XY(object):
         """
         return _gp.gp_XY_CrossSquareMagnitude(self, *args)
 
-    def Divide(self, *args) -> "void" :
+    def Divide(self, *args):
         """
         * divides <self> by a real.
 
@@ -15172,7 +15243,7 @@ class gp_XY(object):
         """
         return _gp.gp_XY_Divide(self, *args)
 
-    def __idiv__(self, *args) -> "void" :
+    def __idiv__(self, *args):
         """
         :param Scalar:
         :type Scalar: float
@@ -15181,7 +15252,7 @@ class gp_XY(object):
         """
         return _gp.gp_XY___idiv__(self, *args)
 
-    def Divided(self, *args) -> "gp_XY" :
+    def Divided(self, *args):
         """
         * Divides <self> by a real.
 
@@ -15192,7 +15263,7 @@ class gp_XY(object):
         """
         return _gp.gp_XY_Divided(self, *args)
 
-    def __div__(self, *args) -> "gp_XY" :
+    def __div__(self, *args):
         """
         :param Scalar:
         :type Scalar: float
@@ -15201,7 +15272,7 @@ class gp_XY(object):
         """
         return _gp.gp_XY___div__(self, *args)
 
-    def Dot(self, *args) -> "Standard_Real" :
+    def Dot(self, *args):
         """
         * Computes the scalar product between <self> and Other
 
@@ -15212,7 +15283,7 @@ class gp_XY(object):
         """
         return _gp.gp_XY_Dot(self, *args)
 
-    def Multiply(self, *args) -> "void" :
+    def Multiply(self, *args):
         """
         * <self>.X() = <self>.X() * Scalar; <self>.Y() = <self>.Y() * Scalar;
 
@@ -15235,7 +15306,7 @@ class gp_XY(object):
         """
         return _gp.gp_XY_Multiply(self, *args)
 
-    def __imul__(self, *args) -> "void" :
+    def __imul__(self, *args):
         """
         :param Scalar:
         :type Scalar: float
@@ -15252,7 +15323,7 @@ class gp_XY(object):
         """
         return _gp.gp_XY___imul__(self, *args)
 
-    def Multiplied(self, *args) -> "gp_XY" :
+    def Multiplied(self, *args):
         """
         * New.X() = <self>.X() * Scalar; New.Y() = <self>.Y() * Scalar;
 
@@ -15275,7 +15346,7 @@ class gp_XY(object):
         """
         return _gp.gp_XY_Multiplied(self, *args)
 
-    def __mul__(self, *args) -> "gp_XY" :
+    def __mul__(self, *args):
         """
         :param Other:
         :type Other: gp_XY
@@ -15292,50 +15363,50 @@ class gp_XY(object):
         """
         return _gp.gp_XY___mul__(self, *args)
 
-    def Normalize(self, *args) -> "void" :
+    def Normalize(self):
         """
         * <self>.X() = <self>.X()/ <self>.Modulus() <self>.Y() = <self>.Y()/ <self>.Modulus() Raises ConstructionError if <self>.Modulus() <= Resolution from gp
 
         :rtype: None
 
         """
-        return _gp.gp_XY_Normalize(self, *args)
+        return _gp.gp_XY_Normalize(self)
 
-    def Normalized(self, *args) -> "gp_XY" :
+    def Normalized(self):
         """
         * New.X() = <self>.X()/ <self>.Modulus() New.Y() = <self>.Y()/ <self>.Modulus() Raises ConstructionError if <self>.Modulus() <= Resolution from gp
 
         :rtype: gp_XY
 
         """
-        return _gp.gp_XY_Normalized(self, *args)
+        return _gp.gp_XY_Normalized(self)
 
-    def Reverse(self, *args) -> "void" :
+    def Reverse(self):
         """
         * <self>.X() = -<self>.X() <self>.Y() = -<self>.Y()
 
         :rtype: None
 
         """
-        return _gp.gp_XY_Reverse(self, *args)
+        return _gp.gp_XY_Reverse(self)
 
-    def Reversed(self, *args) -> "gp_XY" :
+    def Reversed(self):
         """
         * New.X() = -<self>.X() New.Y() = -<self>.Y()
 
         :rtype: gp_XY
 
         """
-        return _gp.gp_XY_Reversed(self, *args)
+        return _gp.gp_XY_Reversed(self)
 
-    def __neg__(self, *args) -> "gp_XY" :
+    def __neg__(self):
         """
         :rtype: gp_XY
 
         """
-        return _gp.gp_XY___neg__(self, *args)
+        return _gp.gp_XY___neg__(self)
 
-    def SetLinearForm(self, *args) -> "void" :
+    def SetLinearForm(self, *args):
         """
         * Computes the following linear combination and assigns the result to this number pair: A1 * XY1 + A2 * XY2
 
@@ -15384,7 +15455,7 @@ class gp_XY(object):
         """
         return _gp.gp_XY_SetLinearForm(self, *args)
 
-    def Subtract(self, *args) -> "void" :
+    def Subtract(self, *args):
         """
         * <self>.X() = <self>.X() - Other.X() <self>.Y() = <self>.Y() - Other.Y()
 
@@ -15395,7 +15466,7 @@ class gp_XY(object):
         """
         return _gp.gp_XY_Subtract(self, *args)
 
-    def __isub__(self, *args) -> "void" :
+    def __isub__(self, *args):
         """
         :param Right:
         :type Right: gp_XY
@@ -15404,7 +15475,7 @@ class gp_XY(object):
         """
         return _gp.gp_XY___isub__(self, *args)
 
-    def Subtracted(self, *args) -> "gp_XY" :
+    def Subtracted(self, *args):
         """
         * new.X() = <self>.X() - Other.X() new.Y() = <self>.Y() - Other.Y()
 
@@ -15415,7 +15486,7 @@ class gp_XY(object):
         """
         return _gp.gp_XY_Subtracted(self, *args)
 
-    def __sub__(self, *args) -> "gp_XY" :
+    def __sub__(self, *args):
         """
         :param Right:
         :type Right: gp_XY
@@ -15424,14 +15495,14 @@ class gp_XY(object):
         """
         return _gp.gp_XY___sub__(self, *args)
 
-    def _CSFDB_Getgp_XYx(self, *args) -> "Standard_Real" :
+    def _CSFDB_Getgp_XYx(self):
         """
         :rtype: float
 
         """
-        return _gp.gp_XY__CSFDB_Getgp_XYx(self, *args)
+        return _gp.gp_XY__CSFDB_Getgp_XYx(self)
 
-    def _CSFDB_Setgp_XYx(self, *args) -> "void" :
+    def _CSFDB_Setgp_XYx(self, *args):
         """
         :param p:
         :type p: float
@@ -15440,14 +15511,14 @@ class gp_XY(object):
         """
         return _gp.gp_XY__CSFDB_Setgp_XYx(self, *args)
 
-    def _CSFDB_Getgp_XYy(self, *args) -> "Standard_Real" :
+    def _CSFDB_Getgp_XYy(self):
         """
         :rtype: float
 
         """
-        return _gp.gp_XY__CSFDB_Getgp_XYy(self, *args)
+        return _gp.gp_XY__CSFDB_Getgp_XYy(self)
 
-    def _CSFDB_Setgp_XYy(self, *args) -> "void" :
+    def _CSFDB_Setgp_XYy(self, *args):
         """
         :param p:
         :type p: float
@@ -15529,7 +15600,7 @@ class gp_XYZ(object):
 
         """
         _gp.gp_XYZ_swiginit(self,_gp.new_gp_XYZ(*args))
-    def SetCoord(self, *args) -> "void" :
+    def SetCoord(self, *args):
         """
         * For this XYZ object, assigns the values X, Y and Z to its three coordinates
 
@@ -15544,7 +15615,7 @@ class gp_XYZ(object):
         * modifies the coordinate of range Index Index = 1 => X is modified Index = 2 => Y is modified Index = 3 => Z is modified Raises OutOfRange if Index != {1, 2, 3}.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Xi:
         :type Xi: float
         :rtype: None
@@ -15552,7 +15623,7 @@ class gp_XYZ(object):
         """
         return _gp.gp_XYZ_SetCoord(self, *args)
 
-    def SetX(self, *args) -> "void" :
+    def SetX(self, *args):
         """
         * Assigns the given value to the X coordinate
 
@@ -15563,7 +15634,7 @@ class gp_XYZ(object):
         """
         return _gp.gp_XYZ_SetX(self, *args)
 
-    def SetY(self, *args) -> "void" :
+    def SetY(self, *args):
         """
         * Assigns the given value to the Y coordinate
 
@@ -15574,7 +15645,7 @@ class gp_XYZ(object):
         """
         return _gp.gp_XYZ_SetY(self, *args)
 
-    def SetZ(self, *args) -> "void" :
+    def SetZ(self, *args):
         """
         * Assigns the given value to the Z coordinate
 
@@ -15585,12 +15656,12 @@ class gp_XYZ(object):
         """
         return _gp.gp_XYZ_SetZ(self, *args)
 
-    def Coord(self, *args) -> "void" :
+    def Coord(self, *args):
         """
         * returns the coordinate of range Index : Index = 1 => X is returned Index = 2 => Y is returned Index = 3 => Z is returned Raises OutOfRange if Index != {1, 2, 3}.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: float
 
         :param X:
@@ -15604,52 +15675,52 @@ class gp_XYZ(object):
         """
         return _gp.gp_XYZ_Coord(self, *args)
 
-    def X(self, *args) -> "Standard_Real" :
+    def X(self):
         """
         * Returns the X coordinate
 
         :rtype: float
 
         """
-        return _gp.gp_XYZ_X(self, *args)
+        return _gp.gp_XYZ_X(self)
 
-    def Y(self, *args) -> "Standard_Real" :
+    def Y(self):
         """
         * Returns the Y coordinate
 
         :rtype: float
 
         """
-        return _gp.gp_XYZ_Y(self, *args)
+        return _gp.gp_XYZ_Y(self)
 
-    def Z(self, *args) -> "Standard_Real" :
+    def Z(self):
         """
         * Returns the Z coordinate
 
         :rtype: float
 
         """
-        return _gp.gp_XYZ_Z(self, *args)
+        return _gp.gp_XYZ_Z(self)
 
-    def Modulus(self, *args) -> "Standard_Real" :
+    def Modulus(self):
         """
         * computes Sqrt (X*X + Y*Y + Z*Z) where X, Y and Z are the three coordinates of this XYZ object.
 
         :rtype: float
 
         """
-        return _gp.gp_XYZ_Modulus(self, *args)
+        return _gp.gp_XYZ_Modulus(self)
 
-    def SquareModulus(self, *args) -> "Standard_Real" :
+    def SquareModulus(self):
         """
         * Computes X*X + Y*Y + Z*Z where X, Y and Z are the three coordinates of this XYZ object.
 
         :rtype: float
 
         """
-        return _gp.gp_XYZ_SquareModulus(self, *args)
+        return _gp.gp_XYZ_SquareModulus(self)
 
-    def IsEqual(self, *args) -> "Standard_Boolean" :
+    def IsEqual(self, *args):
         """
         * Returns True if he coordinates of this XYZ object are equal to the respective coordinates Other, within the specified tolerance Tolerance. I.e.: abs(<self>.X() - Other.X()) <= Tolerance and abs(<self>.Y() - Other.Y()) <= Tolerance and abs(<self>.Z() - Other.Z()) <= Tolerance.
 
@@ -15662,7 +15733,7 @@ class gp_XYZ(object):
         """
         return _gp.gp_XYZ_IsEqual(self, *args)
 
-    def Add(self, *args) -> "void" :
+    def Add(self, *args):
         """
         * <self>.X() = <self>.X() + Other.X() <self>.Y() = <self>.Y() + Other.Y() <self>.Z() = <self>.Z() + Other.Z()
 
@@ -15673,7 +15744,7 @@ class gp_XYZ(object):
         """
         return _gp.gp_XYZ_Add(self, *args)
 
-    def __iadd__(self, *args) -> "void" :
+    def __iadd__(self, *args):
         """
         :param Other:
         :type Other: gp_XYZ
@@ -15682,7 +15753,7 @@ class gp_XYZ(object):
         """
         return _gp.gp_XYZ___iadd__(self, *args)
 
-    def Added(self, *args) -> "gp_XYZ" :
+    def Added(self, *args):
         """
         * new.X() = <self>.X() + Other.X() new.Y() = <self>.Y() + Other.Y() new.Z() = <self>.Z() + Other.Z()
 
@@ -15693,7 +15764,7 @@ class gp_XYZ(object):
         """
         return _gp.gp_XYZ_Added(self, *args)
 
-    def __add__(self, *args) -> "gp_XYZ" :
+    def __add__(self, *args):
         """
         :param Other:
         :type Other: gp_XYZ
@@ -15702,7 +15773,7 @@ class gp_XYZ(object):
         """
         return _gp.gp_XYZ___add__(self, *args)
 
-    def Cross(self, *args) -> "void" :
+    def Cross(self, *args):
         """
         * <self>.X() = <self>.Y() * Other.Z() - <self>.Z() * Other.Y() <self>.Y() = <self>.Z() * Other.X() - <self>.X() * Other.Z() <self>.Z() = <self>.X() * Other.Y() - <self>.Y() * Other.X()
 
@@ -15713,7 +15784,7 @@ class gp_XYZ(object):
         """
         return _gp.gp_XYZ_Cross(self, *args)
 
-    def __ixor__(self, *args) -> "void" :
+    def __ixor__(self, *args):
         """
         :param Right:
         :type Right: gp_XYZ
@@ -15722,7 +15793,7 @@ class gp_XYZ(object):
         """
         return _gp.gp_XYZ___ixor__(self, *args)
 
-    def Crossed(self, *args) -> "gp_XYZ" :
+    def Crossed(self, *args):
         """
         * new.X() = <self>.Y() * Other.Z() - <self>.Z() * Other.Y() new.Y() = <self>.Z() * Other.X() - <self>.X() * Other.Z() new.Z() = <self>.X() * Other.Y() - <self>.Y() * Other.X()
 
@@ -15733,7 +15804,7 @@ class gp_XYZ(object):
         """
         return _gp.gp_XYZ_Crossed(self, *args)
 
-    def __xor__(self, *args) -> "gp_XYZ" :
+    def __xor__(self, *args):
         """
         :param Right:
         :type Right: gp_XYZ
@@ -15742,7 +15813,7 @@ class gp_XYZ(object):
         """
         return _gp.gp_XYZ___xor__(self, *args)
 
-    def CrossMagnitude(self, *args) -> "Standard_Real" :
+    def CrossMagnitude(self, *args):
         """
         * Computes the magnitude of the cross product between <self> and Right. Returns || <self> ^ Right ||
 
@@ -15753,7 +15824,7 @@ class gp_XYZ(object):
         """
         return _gp.gp_XYZ_CrossMagnitude(self, *args)
 
-    def CrossSquareMagnitude(self, *args) -> "Standard_Real" :
+    def CrossSquareMagnitude(self, *args):
         """
         * Computes the square magnitude of the cross product between <self> and Right. Returns || <self> ^ Right ||**2
 
@@ -15764,7 +15835,7 @@ class gp_XYZ(object):
         """
         return _gp.gp_XYZ_CrossSquareMagnitude(self, *args)
 
-    def CrossCross(self, *args) -> "void" :
+    def CrossCross(self, *args):
         """
         * Triple vector product Computes <self> = <self>.Cross(Coord1.Cross(Coord2))
 
@@ -15777,7 +15848,7 @@ class gp_XYZ(object):
         """
         return _gp.gp_XYZ_CrossCross(self, *args)
 
-    def CrossCrossed(self, *args) -> "gp_XYZ" :
+    def CrossCrossed(self, *args):
         """
         * Triple vector product computes New = <self>.Cross(Coord1.Cross(Coord2))
 
@@ -15790,7 +15861,7 @@ class gp_XYZ(object):
         """
         return _gp.gp_XYZ_CrossCrossed(self, *args)
 
-    def Divide(self, *args) -> "void" :
+    def Divide(self, *args):
         """
         * divides <self> by a real.
 
@@ -15801,7 +15872,7 @@ class gp_XYZ(object):
         """
         return _gp.gp_XYZ_Divide(self, *args)
 
-    def __idiv__(self, *args) -> "void" :
+    def __idiv__(self, *args):
         """
         :param Scalar:
         :type Scalar: float
@@ -15810,7 +15881,7 @@ class gp_XYZ(object):
         """
         return _gp.gp_XYZ___idiv__(self, *args)
 
-    def Divided(self, *args) -> "gp_XYZ" :
+    def Divided(self, *args):
         """
         * divides <self> by a real.
 
@@ -15821,7 +15892,7 @@ class gp_XYZ(object):
         """
         return _gp.gp_XYZ_Divided(self, *args)
 
-    def __div__(self, *args) -> "gp_XYZ" :
+    def __div__(self, *args):
         """
         :param Scalar:
         :type Scalar: float
@@ -15830,7 +15901,7 @@ class gp_XYZ(object):
         """
         return _gp.gp_XYZ___div__(self, *args)
 
-    def Dot(self, *args) -> "Standard_Real" :
+    def Dot(self, *args):
         """
         * computes the scalar product between <self> and Other
 
@@ -15841,7 +15912,7 @@ class gp_XYZ(object):
         """
         return _gp.gp_XYZ_Dot(self, *args)
 
-    def DotCross(self, *args) -> "Standard_Real" :
+    def DotCross(self, *args):
         """
         * computes the triple scalar product
 
@@ -15854,7 +15925,7 @@ class gp_XYZ(object):
         """
         return _gp.gp_XYZ_DotCross(self, *args)
 
-    def Multiply(self, *args) -> "void" :
+    def Multiply(self, *args):
         """
         * <self>.X() = <self>.X() * Scalar; <self>.Y() = <self>.Y() * Scalar; <self>.Z() = <self>.Z() * Scalar;
 
@@ -15877,7 +15948,7 @@ class gp_XYZ(object):
         """
         return _gp.gp_XYZ_Multiply(self, *args)
 
-    def __imul__(self, *args) -> "void" :
+    def __imul__(self, *args):
         """
         :param Scalar:
         :type Scalar: float
@@ -15894,7 +15965,7 @@ class gp_XYZ(object):
         """
         return _gp.gp_XYZ___imul__(self, *args)
 
-    def Multiplied(self, *args) -> "gp_XYZ" :
+    def Multiplied(self, *args):
         """
         * New.X() = <self>.X() * Scalar; New.Y() = <self>.Y() * Scalar; New.Z() = <self>.Z() * Scalar;
 
@@ -15917,7 +15988,7 @@ class gp_XYZ(object):
         """
         return _gp.gp_XYZ_Multiplied(self, *args)
 
-    def __mul__(self, *args) -> "gp_XYZ" :
+    def __mul__(self, *args):
         """
         :param Other:
         :type Other: gp_XYZ
@@ -15934,43 +16005,43 @@ class gp_XYZ(object):
         """
         return _gp.gp_XYZ___mul__(self, *args)
 
-    def Normalize(self, *args) -> "void" :
+    def Normalize(self):
         """
         * <self>.X() = <self>.X()/ <self>.Modulus() <self>.Y() = <self>.Y()/ <self>.Modulus() <self>.Z() = <self>.Z()/ <self>.Modulus() Raised if <self>.Modulus() <= Resolution from gp
 
         :rtype: None
 
         """
-        return _gp.gp_XYZ_Normalize(self, *args)
+        return _gp.gp_XYZ_Normalize(self)
 
-    def Normalized(self, *args) -> "gp_XYZ" :
+    def Normalized(self):
         """
         * New.X() = <self>.X()/ <self>.Modulus() New.Y() = <self>.Y()/ <self>.Modulus() New.Z() = <self>.Z()/ <self>.Modulus() Raised if <self>.Modulus() <= Resolution from gp
 
         :rtype: gp_XYZ
 
         """
-        return _gp.gp_XYZ_Normalized(self, *args)
+        return _gp.gp_XYZ_Normalized(self)
 
-    def Reverse(self, *args) -> "void" :
+    def Reverse(self):
         """
         * <self>.X() = -<self>.X() <self>.Y() = -<self>.Y() <self>.Z() = -<self>.Z()
 
         :rtype: None
 
         """
-        return _gp.gp_XYZ_Reverse(self, *args)
+        return _gp.gp_XYZ_Reverse(self)
 
-    def Reversed(self, *args) -> "gp_XYZ" :
+    def Reversed(self):
         """
         * New.X() = -<self>.X() New.Y() = -<self>.Y() New.Z() = -<self>.Z()
 
         :rtype: gp_XYZ
 
         """
-        return _gp.gp_XYZ_Reversed(self, *args)
+        return _gp.gp_XYZ_Reversed(self)
 
-    def Subtract(self, *args) -> "void" :
+    def Subtract(self, *args):
         """
         * <self>.X() = <self>.X() - Other.X() <self>.Y() = <self>.Y() - Other.Y() <self>.Z() = <self>.Z() - Other.Z()
 
@@ -15981,7 +16052,7 @@ class gp_XYZ(object):
         """
         return _gp.gp_XYZ_Subtract(self, *args)
 
-    def __isub__(self, *args) -> "void" :
+    def __isub__(self, *args):
         """
         :param Right:
         :type Right: gp_XYZ
@@ -15990,7 +16061,7 @@ class gp_XYZ(object):
         """
         return _gp.gp_XYZ___isub__(self, *args)
 
-    def Subtracted(self, *args) -> "gp_XYZ" :
+    def Subtracted(self, *args):
         """
         * new.X() = <self>.X() - Other.X() new.Y() = <self>.Y() - Other.Y() new.Z() = <self>.Z() - Other.Z()
 
@@ -16001,7 +16072,7 @@ class gp_XYZ(object):
         """
         return _gp.gp_XYZ_Subtracted(self, *args)
 
-    def __sub__(self, *args) -> "gp_XYZ" :
+    def __sub__(self, *args):
         """
         :param Right:
         :type Right: gp_XYZ
@@ -16010,7 +16081,7 @@ class gp_XYZ(object):
         """
         return _gp.gp_XYZ___sub__(self, *args)
 
-    def SetLinearForm(self, *args) -> "void" :
+    def SetLinearForm(self, *args):
         """
         * <self> is set to the following linear form : A1 * XYZ1 + A2 * XYZ2 + A3 * XYZ3 + XYZ4
 
@@ -16093,14 +16164,14 @@ class gp_XYZ(object):
         """
         return _gp.gp_XYZ_SetLinearForm(self, *args)
 
-    def _CSFDB_Getgp_XYZx(self, *args) -> "Standard_Real" :
+    def _CSFDB_Getgp_XYZx(self):
         """
         :rtype: float
 
         """
-        return _gp.gp_XYZ__CSFDB_Getgp_XYZx(self, *args)
+        return _gp.gp_XYZ__CSFDB_Getgp_XYZx(self)
 
-    def _CSFDB_Setgp_XYZx(self, *args) -> "void" :
+    def _CSFDB_Setgp_XYZx(self, *args):
         """
         :param p:
         :type p: float
@@ -16109,14 +16180,14 @@ class gp_XYZ(object):
         """
         return _gp.gp_XYZ__CSFDB_Setgp_XYZx(self, *args)
 
-    def _CSFDB_Getgp_XYZy(self, *args) -> "Standard_Real" :
+    def _CSFDB_Getgp_XYZy(self):
         """
         :rtype: float
 
         """
-        return _gp.gp_XYZ__CSFDB_Getgp_XYZy(self, *args)
+        return _gp.gp_XYZ__CSFDB_Getgp_XYZy(self)
 
-    def _CSFDB_Setgp_XYZy(self, *args) -> "void" :
+    def _CSFDB_Setgp_XYZy(self, *args):
         """
         :param p:
         :type p: float
@@ -16125,14 +16196,14 @@ class gp_XYZ(object):
         """
         return _gp.gp_XYZ__CSFDB_Setgp_XYZy(self, *args)
 
-    def _CSFDB_Getgp_XYZz(self, *args) -> "Standard_Real" :
+    def _CSFDB_Getgp_XYZz(self):
         """
         :rtype: float
 
         """
-        return _gp.gp_XYZ__CSFDB_Getgp_XYZz(self, *args)
+        return _gp.gp_XYZ__CSFDB_Getgp_XYZz(self)
 
-    def _CSFDB_Setgp_XYZz(self, *args) -> "void" :
+    def _CSFDB_Setgp_XYZz(self, *args):
         """
         :param p:
         :type p: float

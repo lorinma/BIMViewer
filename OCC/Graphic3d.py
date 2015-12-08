@@ -119,9 +119,6 @@ import OCC.TColQuantity
 import OCC.gp
 import OCC.Image
 import OCC.OSD
-Graphic3d_BT_RGB = _Graphic3d.Graphic3d_BT_RGB
-Graphic3d_BT_RGBA = _Graphic3d.Graphic3d_BT_RGBA
-Graphic3d_BT_Depth = _Graphic3d.Graphic3d_BT_Depth
 Graphic3d_EF_PostScript = _Graphic3d.Graphic3d_EF_PostScript
 Graphic3d_EF_EnhPostScript = _Graphic3d.Graphic3d_EF_EnhPostScript
 Graphic3d_EF_TEX = _Graphic3d.Graphic3d_EF_TEX
@@ -268,8 +265,9 @@ Graphic3d_ZLayerDepthClear = _Graphic3d.Graphic3d_ZLayerDepthClear
 Graphic3d_ZLayerDepthOffset = _Graphic3d.Graphic3d_ZLayerDepthOffset
 class graphic3d(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
+    def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def InitGraphicDriver(*args) -> "Handle_Graphic3d_GraphicDriver" :
+    def InitGraphicDriver(*args):
         """
         * Initialize graphic driver and returns Handle to it.
 
@@ -281,8 +279,6 @@ class graphic3d(object):
         return _Graphic3d.graphic3d_InitGraphicDriver(*args)
 
     InitGraphicDriver = staticmethod(InitGraphicDriver)
-    def __init__(self): 
-        _Graphic3d.graphic3d_swiginit(self,_Graphic3d.new_graphic3d())
     def __del__(self):
     	try:
     		self.thisown = False
@@ -295,7 +291,7 @@ graphic3d._kill_pointed = new_instancemethod(_Graphic3d.graphic3d__kill_pointed,
 graphic3d_swigregister = _Graphic3d.graphic3d_swigregister
 graphic3d_swigregister(graphic3d)
 
-def graphic3d_InitGraphicDriver(*args) -> "Handle_Graphic3d_GraphicDriver" :
+def graphic3d_InitGraphicDriver(*args):
   """
     * Initialize graphic driver and returns Handle to it.
 
@@ -312,22 +308,22 @@ class Graphic3d_Array1OfVector(object):
     def __init__(self, *args): 
         """
         :param Low:
-        :type Low: int
+        :type Low: Standard_Integer
         :param Up:
-        :type Up: int
+        :type Up: Standard_Integer
         :rtype: None
 
         :param Item:
         :type Item: Graphic3d_Vector &
         :param Low:
-        :type Low: int
+        :type Low: Standard_Integer
         :param Up:
-        :type Up: int
+        :type Up: Standard_Integer
         :rtype: None
 
         """
         _Graphic3d.Graphic3d_Array1OfVector_swiginit(self,_Graphic3d.new_Graphic3d_Array1OfVector(*args))
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
         :param V:
         :type V: Graphic3d_Vector &
@@ -336,21 +332,21 @@ class Graphic3d_Array1OfVector(object):
         """
         return _Graphic3d.Graphic3d_Array1OfVector_Init(self, *args)
 
-    def Destroy(self, *args) -> "void" :
+    def Destroy(self):
         """
         :rtype: None
 
         """
-        return _Graphic3d.Graphic3d_Array1OfVector_Destroy(self, *args)
+        return _Graphic3d.Graphic3d_Array1OfVector_Destroy(self)
 
-    def IsAllocated(self, *args) -> "Standard_Boolean" :
+    def IsAllocated(self):
         """
         :rtype: bool
 
         """
-        return _Graphic3d.Graphic3d_Array1OfVector_IsAllocated(self, *args)
+        return _Graphic3d.Graphic3d_Array1OfVector_IsAllocated(self)
 
-    def Assign(self, *args) -> "Graphic3d_Array1OfVector const &" :
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: Graphic3d_Array1OfVector &
@@ -359,7 +355,7 @@ class Graphic3d_Array1OfVector(object):
         """
         return _Graphic3d.Graphic3d_Array1OfVector_Assign(self, *args)
 
-    def Set(self, *args) -> "Graphic3d_Array1OfVector const &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: Graphic3d_Array1OfVector &
@@ -368,31 +364,31 @@ class Graphic3d_Array1OfVector(object):
         """
         return _Graphic3d.Graphic3d_Array1OfVector_Set(self, *args)
 
-    def Length(self, *args) -> "Standard_Integer" :
+    def Length(self):
         """
         :rtype: int
 
         """
-        return _Graphic3d.Graphic3d_Array1OfVector_Length(self, *args)
+        return _Graphic3d.Graphic3d_Array1OfVector_Length(self)
 
-    def Lower(self, *args) -> "Standard_Integer" :
+    def Lower(self):
         """
         :rtype: int
 
         """
-        return _Graphic3d.Graphic3d_Array1OfVector_Lower(self, *args)
+        return _Graphic3d.Graphic3d_Array1OfVector_Lower(self)
 
-    def Upper(self, *args) -> "Standard_Integer" :
+    def Upper(self):
         """
         :rtype: int
 
         """
-        return _Graphic3d.Graphic3d_Array1OfVector_Upper(self, *args)
+        return _Graphic3d.Graphic3d_Array1OfVector_Upper(self)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Value:
         :type Value: Graphic3d_Vector &
         :rtype: None
@@ -400,19 +396,19 @@ class Graphic3d_Array1OfVector(object):
         """
         return _Graphic3d.Graphic3d_Array1OfVector_SetValue(self, *args)
 
-    def Value(self, *args) -> "Graphic3d_Vector const &" :
+    def Value(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Graphic3d_Vector
 
         """
         return _Graphic3d.Graphic3d_Array1OfVector_Value(self, *args)
 
-    def ChangeValue(self, *args) -> "Graphic3d_Vector &" :
+    def ChangeValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Graphic3d_Vector
 
         """
@@ -447,22 +443,22 @@ class Graphic3d_Array1OfVertex(object):
     def __init__(self, *args): 
         """
         :param Low:
-        :type Low: int
+        :type Low: Standard_Integer
         :param Up:
-        :type Up: int
+        :type Up: Standard_Integer
         :rtype: None
 
         :param Item:
         :type Item: Graphic3d_Vertex &
         :param Low:
-        :type Low: int
+        :type Low: Standard_Integer
         :param Up:
-        :type Up: int
+        :type Up: Standard_Integer
         :rtype: None
 
         """
         _Graphic3d.Graphic3d_Array1OfVertex_swiginit(self,_Graphic3d.new_Graphic3d_Array1OfVertex(*args))
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
         :param V:
         :type V: Graphic3d_Vertex &
@@ -471,21 +467,21 @@ class Graphic3d_Array1OfVertex(object):
         """
         return _Graphic3d.Graphic3d_Array1OfVertex_Init(self, *args)
 
-    def Destroy(self, *args) -> "void" :
+    def Destroy(self):
         """
         :rtype: None
 
         """
-        return _Graphic3d.Graphic3d_Array1OfVertex_Destroy(self, *args)
+        return _Graphic3d.Graphic3d_Array1OfVertex_Destroy(self)
 
-    def IsAllocated(self, *args) -> "Standard_Boolean" :
+    def IsAllocated(self):
         """
         :rtype: bool
 
         """
-        return _Graphic3d.Graphic3d_Array1OfVertex_IsAllocated(self, *args)
+        return _Graphic3d.Graphic3d_Array1OfVertex_IsAllocated(self)
 
-    def Assign(self, *args) -> "Graphic3d_Array1OfVertex const &" :
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: Graphic3d_Array1OfVertex &
@@ -494,7 +490,7 @@ class Graphic3d_Array1OfVertex(object):
         """
         return _Graphic3d.Graphic3d_Array1OfVertex_Assign(self, *args)
 
-    def Set(self, *args) -> "Graphic3d_Array1OfVertex const &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: Graphic3d_Array1OfVertex &
@@ -503,31 +499,31 @@ class Graphic3d_Array1OfVertex(object):
         """
         return _Graphic3d.Graphic3d_Array1OfVertex_Set(self, *args)
 
-    def Length(self, *args) -> "Standard_Integer" :
+    def Length(self):
         """
         :rtype: int
 
         """
-        return _Graphic3d.Graphic3d_Array1OfVertex_Length(self, *args)
+        return _Graphic3d.Graphic3d_Array1OfVertex_Length(self)
 
-    def Lower(self, *args) -> "Standard_Integer" :
+    def Lower(self):
         """
         :rtype: int
 
         """
-        return _Graphic3d.Graphic3d_Array1OfVertex_Lower(self, *args)
+        return _Graphic3d.Graphic3d_Array1OfVertex_Lower(self)
 
-    def Upper(self, *args) -> "Standard_Integer" :
+    def Upper(self):
         """
         :rtype: int
 
         """
-        return _Graphic3d.Graphic3d_Array1OfVertex_Upper(self, *args)
+        return _Graphic3d.Graphic3d_Array1OfVertex_Upper(self)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Value:
         :type Value: Graphic3d_Vertex &
         :rtype: None
@@ -535,19 +531,19 @@ class Graphic3d_Array1OfVertex(object):
         """
         return _Graphic3d.Graphic3d_Array1OfVertex_SetValue(self, *args)
 
-    def Value(self, *args) -> "Graphic3d_Vertex const &" :
+    def Value(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Graphic3d_Vertex
 
         """
         return _Graphic3d.Graphic3d_Array1OfVertex_Value(self, *args)
 
-    def ChangeValue(self, *args) -> "Graphic3d_Vertex &" :
+    def ChangeValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Graphic3d_Vertex
 
         """
@@ -582,30 +578,30 @@ class Graphic3d_Array2OfVertex(object):
     def __init__(self, *args): 
         """
         :param R1:
-        :type R1: int
+        :type R1: Standard_Integer
         :param R2:
-        :type R2: int
+        :type R2: Standard_Integer
         :param C1:
-        :type C1: int
+        :type C1: Standard_Integer
         :param C2:
-        :type C2: int
+        :type C2: Standard_Integer
         :rtype: None
 
         :param Item:
         :type Item: Graphic3d_Vertex &
         :param R1:
-        :type R1: int
+        :type R1: Standard_Integer
         :param R2:
-        :type R2: int
+        :type R2: Standard_Integer
         :param C1:
-        :type C1: int
+        :type C1: Standard_Integer
         :param C2:
-        :type C2: int
+        :type C2: Standard_Integer
         :rtype: None
 
         """
         _Graphic3d.Graphic3d_Array2OfVertex_swiginit(self,_Graphic3d.new_Graphic3d_Array2OfVertex(*args))
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
         :param V:
         :type V: Graphic3d_Vertex &
@@ -614,14 +610,14 @@ class Graphic3d_Array2OfVertex(object):
         """
         return _Graphic3d.Graphic3d_Array2OfVertex_Init(self, *args)
 
-    def Destroy(self, *args) -> "void" :
+    def Destroy(self):
         """
         :rtype: None
 
         """
-        return _Graphic3d.Graphic3d_Array2OfVertex_Destroy(self, *args)
+        return _Graphic3d.Graphic3d_Array2OfVertex_Destroy(self)
 
-    def Assign(self, *args) -> "Graphic3d_Array2OfVertex const &" :
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: Graphic3d_Array2OfVertex &
@@ -630,7 +626,7 @@ class Graphic3d_Array2OfVertex(object):
         """
         return _Graphic3d.Graphic3d_Array2OfVertex_Assign(self, *args)
 
-    def Set(self, *args) -> "Graphic3d_Array2OfVertex const &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: Graphic3d_Array2OfVertex &
@@ -639,54 +635,54 @@ class Graphic3d_Array2OfVertex(object):
         """
         return _Graphic3d.Graphic3d_Array2OfVertex_Set(self, *args)
 
-    def ColLength(self, *args) -> "Standard_Integer" :
+    def ColLength(self):
         """
         :rtype: int
 
         """
-        return _Graphic3d.Graphic3d_Array2OfVertex_ColLength(self, *args)
+        return _Graphic3d.Graphic3d_Array2OfVertex_ColLength(self)
 
-    def RowLength(self, *args) -> "Standard_Integer" :
+    def RowLength(self):
         """
         :rtype: int
 
         """
-        return _Graphic3d.Graphic3d_Array2OfVertex_RowLength(self, *args)
+        return _Graphic3d.Graphic3d_Array2OfVertex_RowLength(self)
 
-    def LowerCol(self, *args) -> "Standard_Integer" :
+    def LowerCol(self):
         """
         :rtype: int
 
         """
-        return _Graphic3d.Graphic3d_Array2OfVertex_LowerCol(self, *args)
+        return _Graphic3d.Graphic3d_Array2OfVertex_LowerCol(self)
 
-    def LowerRow(self, *args) -> "Standard_Integer" :
+    def LowerRow(self):
         """
         :rtype: int
 
         """
-        return _Graphic3d.Graphic3d_Array2OfVertex_LowerRow(self, *args)
+        return _Graphic3d.Graphic3d_Array2OfVertex_LowerRow(self)
 
-    def UpperCol(self, *args) -> "Standard_Integer" :
+    def UpperCol(self):
         """
         :rtype: int
 
         """
-        return _Graphic3d.Graphic3d_Array2OfVertex_UpperCol(self, *args)
+        return _Graphic3d.Graphic3d_Array2OfVertex_UpperCol(self)
 
-    def UpperRow(self, *args) -> "Standard_Integer" :
+    def UpperRow(self):
         """
         :rtype: int
 
         """
-        return _Graphic3d.Graphic3d_Array2OfVertex_UpperRow(self, *args)
+        return _Graphic3d.Graphic3d_Array2OfVertex_UpperRow(self)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Row:
-        :type Row: int
+        :type Row: Standard_Integer
         :param Col:
-        :type Col: int
+        :type Col: Standard_Integer
         :param Value:
         :type Value: Graphic3d_Vertex &
         :rtype: None
@@ -694,23 +690,23 @@ class Graphic3d_Array2OfVertex(object):
         """
         return _Graphic3d.Graphic3d_Array2OfVertex_SetValue(self, *args)
 
-    def Value(self, *args) -> "Graphic3d_Vertex const &" :
+    def Value(self, *args):
         """
         :param Row:
-        :type Row: int
+        :type Row: Standard_Integer
         :param Col:
-        :type Col: int
+        :type Col: Standard_Integer
         :rtype: Graphic3d_Vertex
 
         """
         return _Graphic3d.Graphic3d_Array2OfVertex_Value(self, *args)
 
-    def ChangeValue(self, *args) -> "Graphic3d_Vertex &" :
+    def ChangeValue(self, *args):
         """
         :param Row:
-        :type Row: int
+        :type Row: Standard_Integer
         :param Col:
-        :type Col: int
+        :type Col: Standard_Integer
         :rtype: Graphic3d_Vertex
 
         """
@@ -745,14 +741,14 @@ class Graphic3d_ArrayOfPrimitives(OCC.MMgt.MMgt_TShared):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def Destroy(self, *args) -> "void" :
+    def Destroy(self):
         """
         :rtype: None
 
         """
-        return _Graphic3d.Graphic3d_ArrayOfPrimitives_Destroy(self, *args)
+        return _Graphic3d.Graphic3d_ArrayOfPrimitives_Destroy(self)
 
-    def AddVertex(self, *args) -> "Standard_Integer" :
+    def AddVertex(self, *args):
         """
         * Adds a vertice in the array. returns the actual vertex number.
 
@@ -793,7 +789,7 @@ class Graphic3d_ArrayOfPrimitives(OCC.MMgt.MMgt_TShared):
         :param aVertice:
         :type aVertice: gp_Pnt
         :param aColor:
-        :type aColor: int
+        :type aColor: Standard_Integer
         :rtype: int
 
         * Adds a vertice and vertex normal in the vertex array. returns the actual vertex number. Warning: <aNormal> is ignored when the <hasVNormals> constructor parameter is False.
@@ -853,7 +849,7 @@ class Graphic3d_ArrayOfPrimitives(OCC.MMgt.MMgt_TShared):
         :param aNormal:
         :type aNormal: gp_Dir
         :param aColor:
-        :type aColor: int
+        :type aColor: Standard_Integer
         :rtype: int
 
         * Adds a vertice and vertex texture in the vertex array. returns the actual vertex number. <aTexel> is ignored when the <hasVTexels> constructor parameter is False.
@@ -945,18 +941,18 @@ class Graphic3d_ArrayOfPrimitives(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_ArrayOfPrimitives_AddVertex(self, *args)
 
-    def AddBound(self, *args) -> "Standard_Integer" :
+    def AddBound(self, *args):
         """
         * Adds a bound of length <edgeNumber> in the bound array returns the actual bounds number.
 
         :param edgeNumber:
-        :type edgeNumber: int
+        :type edgeNumber: Standard_Integer
         :rtype: int
 
         * Adds a bound of length <edgeNumber> and bound color <aBColor> in the bound array. returns the actual bounds number. Warning: <aBColor> is ignored when the <hasBColors> constructor parameter is False
 
         :param edgeNumber:
-        :type edgeNumber: int
+        :type edgeNumber: Standard_Integer
         :param aBColor:
         :type aBColor: Quantity_Color &
         :rtype: int
@@ -964,7 +960,7 @@ class Graphic3d_ArrayOfPrimitives(OCC.MMgt.MMgt_TShared):
         * Adds a bound of length <edgeNumber> and bound color coordinates in the bound array. returns the actual bounds number. Warning: <R,G,B> are ignored when the <hasBColors> constructor parameter is False
 
         :param edgeNumber:
-        :type edgeNumber: int
+        :type edgeNumber: Standard_Integer
         :param R:
         :type R: float
         :param G:
@@ -976,12 +972,20 @@ class Graphic3d_ArrayOfPrimitives(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_ArrayOfPrimitives_AddBound(self, *args)
 
-    def AddEdge(self, *args) -> "Standard_Integer" :
+    def AddEdge(self, *args):
         """
         * Adds an edge in the range [1,VertexNumber()] in the array, if <isVisible> is False the edge between <vertexIndex> and the next edge will not be visible even if the SetEdgeOn() method is activated in Graphic3d_AspectFillArea3d class. returns the actual edges number. Warning: <isVisible> is ignored when the <hasEdgeInfos> constructor parameter is False.
 
         :param vertexIndex:
-        :type vertexIndex: int
+        :type vertexIndex: Standard_Integer
+        :param isVisible: default value is Standard_True
+        :type isVisible: bool
+        :rtype: int
+
+        * Adds an edge in the range [1,VertexNumber()] in the array, if <isVisible> is False the edge between <vertexIndex> and the next edge will not be visible even if the SetEdgeOn() method is activated in Graphic3d_AspectFillArea3d class. returns the actual edges number. Warning: <isVisible> is ignored when the <hasEdgeInfos> constructor parameter is False.
+
+        :param vertexIndex:
+        :type vertexIndex: Standard_Integer
         :param isVisible: default value is Standard_True
         :type isVisible: bool
         :rtype: int
@@ -989,7 +993,7 @@ class Graphic3d_ArrayOfPrimitives(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_ArrayOfPrimitives_AddEdge(self, *args)
 
-    def Orientate(self, *args) -> "Standard_Boolean" :
+    def Orientate(self, *args):
         """
         * Orientate correctly all vertexs & normals of this array according to the <aNormal> parameter and returns True when something has change in the array. Warning: When the array has edges this method is apply on edge sub array instead on vertex sub array.
 
@@ -1000,7 +1004,7 @@ class Graphic3d_ArrayOfPrimitives(OCC.MMgt.MMgt_TShared):
         * Orientate correctly all vertexs & normal of the bound <aBound> according to the <aNormal> parameter and returns True when something has change in the array. Warning: When the array has edges this method is apply on edge sub array instead on vertex sub array. When this array has no bound, <aBoundIndex> design the item number
 
         :param aBoundIndex:
-        :type aBoundIndex: int
+        :type aBoundIndex: Standard_Integer
         :param aNormal:
         :type aNormal: gp_Dir
         :rtype: bool
@@ -1008,12 +1012,12 @@ class Graphic3d_ArrayOfPrimitives(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_ArrayOfPrimitives_Orientate(self, *args)
 
-    def SetVertice(self, *args) -> "void" :
+    def SetVertice(self, *args):
         """
         * Change the vertice of rank <anIndex> in the array.
 
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :param aVertice:
         :type aVertice: gp_Pnt
         :rtype: None
@@ -1021,7 +1025,7 @@ class Graphic3d_ArrayOfPrimitives(OCC.MMgt.MMgt_TShared):
         * Change the vertice of rank <anIndex> in the array.
 
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :param X:
         :type X: Standard_ShortReal
         :param Y:
@@ -1033,12 +1037,12 @@ class Graphic3d_ArrayOfPrimitives(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_ArrayOfPrimitives_SetVertice(self, *args)
 
-    def SetVertexColor(self, *args) -> "void" :
+    def SetVertexColor(self, *args):
         """
         * Change the vertex color of rank <anIndex> in the array.
 
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :param aColor:
         :type aColor: Quantity_Color &
         :rtype: None
@@ -1046,7 +1050,7 @@ class Graphic3d_ArrayOfPrimitives(OCC.MMgt.MMgt_TShared):
         * Change the vertex color of rank <anIndex> in the array.
 
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :param R:
         :type R: float
         :param G:
@@ -1058,20 +1062,20 @@ class Graphic3d_ArrayOfPrimitives(OCC.MMgt.MMgt_TShared):
         * Change the vertex color of rank <anIndex> in the array. aColor = Alpha << 24 + Blue << 16 + Green << 8 + Red On all architecture proccers type (x86 or SPARC) you can use this byte order.
 
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :param aColor:
-        :type aColor: int
+        :type aColor: Standard_Integer
         :rtype: None
 
         """
         return _Graphic3d.Graphic3d_ArrayOfPrimitives_SetVertexColor(self, *args)
 
-    def SetVertexNormal(self, *args) -> "void" :
+    def SetVertexNormal(self, *args):
         """
         * Change the vertex normal of rank <anIndex> in the array.
 
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :param aNormal:
         :type aNormal: gp_Dir
         :rtype: None
@@ -1079,7 +1083,7 @@ class Graphic3d_ArrayOfPrimitives(OCC.MMgt.MMgt_TShared):
         * Change the vertex normal of rank <anIndex> in the array.
 
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :param NX:
         :type NX: float
         :param NY:
@@ -1091,12 +1095,12 @@ class Graphic3d_ArrayOfPrimitives(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_ArrayOfPrimitives_SetVertexNormal(self, *args)
 
-    def SetVertexTexel(self, *args) -> "void" :
+    def SetVertexTexel(self, *args):
         """
         * Change the vertex texel of rank <anIndex> in the array.
 
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :param aTexel:
         :type aTexel: gp_Pnt2d
         :rtype: None
@@ -1104,7 +1108,7 @@ class Graphic3d_ArrayOfPrimitives(OCC.MMgt.MMgt_TShared):
         * Change the vertex texel of rank <anIndex> in the array.
 
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :param TX:
         :type TX: float
         :param TY:
@@ -1114,12 +1118,12 @@ class Graphic3d_ArrayOfPrimitives(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_ArrayOfPrimitives_SetVertexTexel(self, *args)
 
-    def SetBoundColor(self, *args) -> "void" :
+    def SetBoundColor(self, *args):
         """
         * Change the bound color of rank <anIndex> in the array.
 
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :param aColor:
         :type aColor: Quantity_Color &
         :rtype: None
@@ -1127,7 +1131,7 @@ class Graphic3d_ArrayOfPrimitives(OCC.MMgt.MMgt_TShared):
         * Change the bound color of rank <anIndex> in the array.
 
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :param R:
         :type R: float
         :param G:
@@ -1139,81 +1143,81 @@ class Graphic3d_ArrayOfPrimitives(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_ArrayOfPrimitives_SetBoundColor(self, *args)
 
-    def Array(self, *args) -> "Graphic3d_PrimitiveArray" :
+    def Array(self):
         """
         * Returns the array address.
 
         :rtype: Graphic3d_PrimitiveArray
 
         """
-        return _Graphic3d.Graphic3d_ArrayOfPrimitives_Array(self, *args)
+        return _Graphic3d.Graphic3d_ArrayOfPrimitives_Array(self)
 
-    def Type(self, *args) -> "Graphic3d_TypeOfPrimitiveArray" :
+    def Type(self):
         """
         * Returns the type of this primitive
 
         :rtype: Graphic3d_TypeOfPrimitiveArray
 
         """
-        return _Graphic3d.Graphic3d_ArrayOfPrimitives_Type(self, *args)
+        return _Graphic3d.Graphic3d_ArrayOfPrimitives_Type(self)
 
-    def StringType(self, *args) -> "char *" :
+    def StringType(self):
         """
         * Returns the string type of this primitive
 
         :rtype: char *
 
         """
-        return _Graphic3d.Graphic3d_ArrayOfPrimitives_StringType(self, *args)
+        return _Graphic3d.Graphic3d_ArrayOfPrimitives_StringType(self)
 
-    def HasVertexNormals(self, *args) -> "Standard_Boolean" :
+    def HasVertexNormals(self):
         """
         * Returns True when vertex normals array is defined.
 
         :rtype: bool
 
         """
-        return _Graphic3d.Graphic3d_ArrayOfPrimitives_HasVertexNormals(self, *args)
+        return _Graphic3d.Graphic3d_ArrayOfPrimitives_HasVertexNormals(self)
 
-    def HasVertexColors(self, *args) -> "Standard_Boolean" :
+    def HasVertexColors(self):
         """
         * Returns True when vertex colors array is defined.
 
         :rtype: bool
 
         """
-        return _Graphic3d.Graphic3d_ArrayOfPrimitives_HasVertexColors(self, *args)
+        return _Graphic3d.Graphic3d_ArrayOfPrimitives_HasVertexColors(self)
 
-    def HasVertexTexels(self, *args) -> "Standard_Boolean" :
+    def HasVertexTexels(self):
         """
         * Returns True when vertex texels array is defined.
 
         :rtype: bool
 
         """
-        return _Graphic3d.Graphic3d_ArrayOfPrimitives_HasVertexTexels(self, *args)
+        return _Graphic3d.Graphic3d_ArrayOfPrimitives_HasVertexTexels(self)
 
-    def VertexNumber(self, *args) -> "Standard_Integer" :
+    def VertexNumber(self):
         """
         * Returns the number of defined vertex
 
         :rtype: int
 
         """
-        return _Graphic3d.Graphic3d_ArrayOfPrimitives_VertexNumber(self, *args)
+        return _Graphic3d.Graphic3d_ArrayOfPrimitives_VertexNumber(self)
 
-    def Vertice(self, *args) -> "void" :
+    def Vertice(self, *args):
         """
         * Returns the vertice at rank <aRank> from the vertex table if defined.
 
         :param aRank:
-        :type aRank: int
+        :type aRank: Standard_Integer
         :rtype: gp_Pnt
 
         * Returns the vertice coordinates at rank <aRank> from the vertex table if defined.
 
         :param aRank:
-        :type aRank: int
+        :type aRank: Standard_Integer
         :param X:
         :type X: float &
         :param Y:
@@ -1225,18 +1229,18 @@ class Graphic3d_ArrayOfPrimitives(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_ArrayOfPrimitives_Vertice(self, *args)
 
-    def VertexColor(self, *args) -> "void" :
+    def VertexColor(self, *args):
         """
         * Returns the vertex color at rank <aRank> from the vertex table if defined.
 
         :param aRank:
-        :type aRank: int
+        :type aRank: Standard_Integer
         :rtype: Quantity_Color
 
         * Returns the vertex color values at rank <aRank> from the vertex table if defined.
 
         :param aRank:
-        :type aRank: int
+        :type aRank: Standard_Integer
         :param R:
         :type R: float &
         :param G:
@@ -1248,26 +1252,26 @@ class Graphic3d_ArrayOfPrimitives(OCC.MMgt.MMgt_TShared):
         * Returns the vertex color values at rank <aRank> from the vertex table if defined.
 
         :param aRank:
-        :type aRank: int
+        :type aRank: Standard_Integer
         :param aColor:
-        :type aColor: int &
+        :type aColor: Standard_Integer &
         :rtype: None
 
         """
         return _Graphic3d.Graphic3d_ArrayOfPrimitives_VertexColor(self, *args)
 
-    def VertexNormal(self, *args) -> "void" :
+    def VertexNormal(self, *args):
         """
         * Returns the vertex normal at rank <aRank> from the vertex table if defined.
 
         :param aRank:
-        :type aRank: int
+        :type aRank: Standard_Integer
         :rtype: gp_Dir
 
         * Returns the vertex normal coordinates at rank <aRank> from the vertex table if defined.
 
         :param aRank:
-        :type aRank: int
+        :type aRank: Standard_Integer
         :param NX:
         :type NX: float &
         :param NY:
@@ -1279,18 +1283,18 @@ class Graphic3d_ArrayOfPrimitives(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_ArrayOfPrimitives_VertexNormal(self, *args)
 
-    def VertexTexel(self, *args) -> "void" :
+    def VertexTexel(self, *args):
         """
         * Returns the vertex texture at rank <aRank> from the vertex table if defined.
 
         :param aRank:
-        :type aRank: int
+        :type aRank: Standard_Integer
         :rtype: gp_Pnt2d
 
         * Returns the vertex texture coordinates at rank <aRank> from the vertex table if defined.
 
         :param aRank:
-        :type aRank: int
+        :type aRank: Standard_Integer
         :param TX:
         :type TX: float &
         :param TY:
@@ -1300,87 +1304,87 @@ class Graphic3d_ArrayOfPrimitives(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_ArrayOfPrimitives_VertexTexel(self, *args)
 
-    def HasEdgeInfos(self, *args) -> "Standard_Boolean" :
+    def HasEdgeInfos(self):
         """
         * Returns True when edge visibillity array is defined.
 
         :rtype: bool
 
         """
-        return _Graphic3d.Graphic3d_ArrayOfPrimitives_HasEdgeInfos(self, *args)
+        return _Graphic3d.Graphic3d_ArrayOfPrimitives_HasEdgeInfos(self)
 
-    def EdgeNumber(self, *args) -> "Standard_Integer" :
+    def EdgeNumber(self):
         """
         * Returns the number of defined edges
 
         :rtype: int
 
         """
-        return _Graphic3d.Graphic3d_ArrayOfPrimitives_EdgeNumber(self, *args)
+        return _Graphic3d.Graphic3d_ArrayOfPrimitives_EdgeNumber(self)
 
-    def Edge(self, *args) -> "Standard_Integer" :
+    def Edge(self, *args):
         """
         * Returns the vertex index at rank <aRank> in the range [1,VertexNumber()]
 
         :param aRank:
-        :type aRank: int
+        :type aRank: Standard_Integer
         :rtype: int
 
         """
         return _Graphic3d.Graphic3d_ArrayOfPrimitives_Edge(self, *args)
 
-    def EdgeIsVisible(self, *args) -> "Standard_Boolean" :
+    def EdgeIsVisible(self, *args):
         """
         * Returns True when the edge at rank <aRank> is visible.
 
         :param aRank:
-        :type aRank: int
+        :type aRank: Standard_Integer
         :rtype: bool
 
         """
         return _Graphic3d.Graphic3d_ArrayOfPrimitives_EdgeIsVisible(self, *args)
 
-    def HasBoundColors(self, *args) -> "Standard_Boolean" :
+    def HasBoundColors(self):
         """
         * Returns True when bound colors array is defined.
 
         :rtype: bool
 
         """
-        return _Graphic3d.Graphic3d_ArrayOfPrimitives_HasBoundColors(self, *args)
+        return _Graphic3d.Graphic3d_ArrayOfPrimitives_HasBoundColors(self)
 
-    def BoundNumber(self, *args) -> "Standard_Integer" :
+    def BoundNumber(self):
         """
         * Returns the number of defined bounds
 
         :rtype: int
 
         """
-        return _Graphic3d.Graphic3d_ArrayOfPrimitives_BoundNumber(self, *args)
+        return _Graphic3d.Graphic3d_ArrayOfPrimitives_BoundNumber(self)
 
-    def Bound(self, *args) -> "Standard_Integer" :
+    def Bound(self, *args):
         """
         * Returns the edge number at rank <aRank>.
 
         :param aRank:
-        :type aRank: int
+        :type aRank: Standard_Integer
         :rtype: int
 
         """
         return _Graphic3d.Graphic3d_ArrayOfPrimitives_Bound(self, *args)
 
-    def BoundColor(self, *args) -> "void" :
+    def BoundColor(self, *args):
         """
         * Returns the bound color at rank <aRank> from the bound table if defined.
 
         :param aRank:
-        :type aRank: int
+        :type aRank: Standard_Integer
         :rtype: Quantity_Color
 
         * Returns the bound color values at rank <aRank> from the bound table if defined.
 
         :param aRank:
-        :type aRank: int
+        :type aRank: Standard_Integer
         :param R:
         :type R: float &
         :param G:
@@ -1392,29 +1396,29 @@ class Graphic3d_ArrayOfPrimitives(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_ArrayOfPrimitives_BoundColor(self, *args)
 
-    def ItemNumber(self, *args) -> "Standard_Integer" :
+    def ItemNumber(self):
         """
         * Returns the number of total items according to the array type.
 
         :rtype: int
 
         """
-        return _Graphic3d.Graphic3d_ArrayOfPrimitives_ItemNumber(self, *args)
+        return _Graphic3d.Graphic3d_ArrayOfPrimitives_ItemNumber(self)
 
-    def IsValid(self, *args) -> "Standard_Boolean" :
+    def IsValid(self):
         """
         * Returns True only when the contains of this array is available.
 
         :rtype: bool
 
         """
-        return _Graphic3d.Graphic3d_ArrayOfPrimitives_IsValid(self, *args)
+        return _Graphic3d.Graphic3d_ArrayOfPrimitives_IsValid(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Graphic3d_ArrayOfPrimitives self)"""
         return _Graphic3d.Graphic3d_ArrayOfPrimitives__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Graphic3d_ArrayOfPrimitives" :
+    def GetHandle(self):
         """GetHandle(Graphic3d_ArrayOfPrimitives self) -> Handle_Graphic3d_ArrayOfPrimitives"""
         return _Graphic3d.Graphic3d_ArrayOfPrimitives_GetHandle(self)
 
@@ -1483,7 +1487,7 @@ Handle_Graphic3d_ArrayOfPrimitives._kill_pointed = new_instancemethod(_Graphic3d
 Handle_Graphic3d_ArrayOfPrimitives_swigregister = _Graphic3d.Handle_Graphic3d_ArrayOfPrimitives_swigregister
 Handle_Graphic3d_ArrayOfPrimitives_swigregister(Handle_Graphic3d_ArrayOfPrimitives)
 
-def Handle_Graphic3d_ArrayOfPrimitives_DownCast(*args) -> "Handle_Graphic3d_ArrayOfPrimitives const" :
+def Handle_Graphic3d_ArrayOfPrimitives_DownCast(*args):
   return _Graphic3d.Handle_Graphic3d_ArrayOfPrimitives_DownCast(*args)
 Handle_Graphic3d_ArrayOfPrimitives_DownCast = _Graphic3d.Handle_Graphic3d_ArrayOfPrimitives_DownCast
 
@@ -1516,16 +1520,16 @@ class Graphic3d_AspectFillArea3d(OCC.Aspect.Aspect_AspectFillArea):
 
         """
         _Graphic3d.Graphic3d_AspectFillArea3d_swiginit(self,_Graphic3d.new_Graphic3d_AspectFillArea3d(*args))
-    def AllowBackFace(self, *args) -> "void" :
+    def AllowBackFace(self):
         """
         * Allows the display of back-facing filled polygons.
 
         :rtype: None
 
         """
-        return _Graphic3d.Graphic3d_AspectFillArea3d_AllowBackFace(self, *args)
+        return _Graphic3d.Graphic3d_AspectFillArea3d_AllowBackFace(self)
 
-    def SetBackMaterial(self, *args) -> "void" :
+    def SetBackMaterial(self, *args):
         """
         * Modifies the surface material of internal faces
 
@@ -1536,43 +1540,43 @@ class Graphic3d_AspectFillArea3d(OCC.Aspect.Aspect_AspectFillArea):
         """
         return _Graphic3d.Graphic3d_AspectFillArea3d_SetBackMaterial(self, *args)
 
-    def SetDistinguishOn(self, *args) -> "void" :
+    def SetDistinguishOn(self):
         """
         * Allows distinction between external and internal faces of FillAreas.
 
         :rtype: None
 
         """
-        return _Graphic3d.Graphic3d_AspectFillArea3d_SetDistinguishOn(self, *args)
+        return _Graphic3d.Graphic3d_AspectFillArea3d_SetDistinguishOn(self)
 
-    def SetDistinguishOff(self, *args) -> "void" :
+    def SetDistinguishOff(self):
         """
         * Forbids distinction between external and internal faces of FillAreas.
 
         :rtype: None
 
         """
-        return _Graphic3d.Graphic3d_AspectFillArea3d_SetDistinguishOff(self, *args)
+        return _Graphic3d.Graphic3d_AspectFillArea3d_SetDistinguishOff(self)
 
-    def SetEdgeOn(self, *args) -> "void" :
+    def SetEdgeOn(self):
         """
         * The edges of FillAreas are drawn.
 
         :rtype: None
 
         """
-        return _Graphic3d.Graphic3d_AspectFillArea3d_SetEdgeOn(self, *args)
+        return _Graphic3d.Graphic3d_AspectFillArea3d_SetEdgeOn(self)
 
-    def SetEdgeOff(self, *args) -> "void" :
+    def SetEdgeOff(self):
         """
         * The edges of FillAreas are not drawn.
 
         :rtype: None
 
         """
-        return _Graphic3d.Graphic3d_AspectFillArea3d_SetEdgeOff(self, *args)
+        return _Graphic3d.Graphic3d_AspectFillArea3d_SetEdgeOff(self)
 
-    def SetFrontMaterial(self, *args) -> "void" :
+    def SetFrontMaterial(self, *args):
         """
         * Modifies the surface material of external faces
 
@@ -1583,16 +1587,16 @@ class Graphic3d_AspectFillArea3d(OCC.Aspect.Aspect_AspectFillArea):
         """
         return _Graphic3d.Graphic3d_AspectFillArea3d_SetFrontMaterial(self, *args)
 
-    def SuppressBackFace(self, *args) -> "void" :
+    def SuppressBackFace(self):
         """
         * Suppress the display of back-facing filled polygons. A back-facing polygon is defined as a polygon whose vertices are in a clockwise order with respect to screen coordinates.
 
         :rtype: None
 
         """
-        return _Graphic3d.Graphic3d_AspectFillArea3d_SuppressBackFace(self, *args)
+        return _Graphic3d.Graphic3d_AspectFillArea3d_SuppressBackFace(self)
 
-    def SetTextureMap(self, *args) -> "void" :
+    def SetTextureMap(self, *args):
         """
         :param ATexture:
         :type ATexture: Handle_Graphic3d_TextureMap &
@@ -1601,26 +1605,46 @@ class Graphic3d_AspectFillArea3d(OCC.Aspect.Aspect_AspectFillArea):
         """
         return _Graphic3d.Graphic3d_AspectFillArea3d_SetTextureMap(self, *args)
 
-    def SetTextureMapOn(self, *args) -> "void" :
+    def SetTextureMapOn(self):
         """
         :rtype: None
 
         """
-        return _Graphic3d.Graphic3d_AspectFillArea3d_SetTextureMapOn(self, *args)
+        return _Graphic3d.Graphic3d_AspectFillArea3d_SetTextureMapOn(self)
 
-    def SetTextureMapOff(self, *args) -> "void" :
+    def SetTextureMapOff(self):
         """
         :rtype: None
 
         """
-        return _Graphic3d.Graphic3d_AspectFillArea3d_SetTextureMapOff(self, *args)
+        return _Graphic3d.Graphic3d_AspectFillArea3d_SetTextureMapOff(self)
 
-    def SetPolygonOffsets(self, *args) -> "void" :
+    def SetPolygonOffsets(self, *args):
         """
         * Sets up OpenGL polygon offsets mechanism. <aMode> parameter can contain various combinations of Aspect_PolygonOffsetMode enumeration elements (Aspect_POM_None means that polygon offsets are not changed). If <aMode> is different from Aspect_POM_Off and Aspect_POM_None, then <aFactor> and <aUnits> arguments are used by graphic renderer to calculate a depth offset value:  offset = <aFactor> * m + <aUnits> * r, where m - maximum depth slope for the polygon currently being displayed, r - minimum window coordinates depth resolution (implementation-specific)  Deafult settings for OCC 3D viewer: mode = Aspect_POM_Fill, factor = 1., units = 0.  Negative offset values move polygons closer to the viewport, while positive values shift polygons away. Consult OpenGL reference for details (glPolygonOffset function description).
 
         :param aMode:
-        :type aMode: int
+        :type aMode: Standard_Integer
+        :param aFactor: default value is 1.0
+        :type aFactor: Standard_ShortReal
+        :param aUnits: default value is 0.0
+        :type aUnits: Standard_ShortReal
+        :rtype: None
+
+        * Sets up OpenGL polygon offsets mechanism. <aMode> parameter can contain various combinations of Aspect_PolygonOffsetMode enumeration elements (Aspect_POM_None means that polygon offsets are not changed). If <aMode> is different from Aspect_POM_Off and Aspect_POM_None, then <aFactor> and <aUnits> arguments are used by graphic renderer to calculate a depth offset value:  offset = <aFactor> * m + <aUnits> * r, where m - maximum depth slope for the polygon currently being displayed, r - minimum window coordinates depth resolution (implementation-specific)  Deafult settings for OCC 3D viewer: mode = Aspect_POM_Fill, factor = 1., units = 0.  Negative offset values move polygons closer to the viewport, while positive values shift polygons away. Consult OpenGL reference for details (glPolygonOffset function description).
+
+        :param aMode:
+        :type aMode: Standard_Integer
+        :param aFactor: default value is 1.0
+        :type aFactor: Standard_ShortReal
+        :param aUnits: default value is 0.0
+        :type aUnits: Standard_ShortReal
+        :rtype: None
+
+        * Sets up OpenGL polygon offsets mechanism. <aMode> parameter can contain various combinations of Aspect_PolygonOffsetMode enumeration elements (Aspect_POM_None means that polygon offsets are not changed). If <aMode> is different from Aspect_POM_Off and Aspect_POM_None, then <aFactor> and <aUnits> arguments are used by graphic renderer to calculate a depth offset value:  offset = <aFactor> * m + <aUnits> * r, where m - maximum depth slope for the polygon currently being displayed, r - minimum window coordinates depth resolution (implementation-specific)  Deafult settings for OCC 3D viewer: mode = Aspect_POM_Fill, factor = 1., units = 0.  Negative offset values move polygons closer to the viewport, while positive values shift polygons away. Consult OpenGL reference for details (glPolygonOffset function description).
+
+        :param aMode:
+        :type aMode: Standard_Integer
         :param aFactor: default value is 1.0
         :type aFactor: Standard_ShortReal
         :param aUnits: default value is 0.0
@@ -1630,7 +1654,7 @@ class Graphic3d_AspectFillArea3d(OCC.Aspect.Aspect_AspectFillArea):
         """
         return _Graphic3d.Graphic3d_AspectFillArea3d_SetPolygonOffsets(self, *args)
 
-    def SetShaderProgram(self, *args) -> "void" :
+    def SetShaderProgram(self, *args):
         """
         * Sets up OpenGL/GLSL shader program.
 
@@ -1641,71 +1665,71 @@ class Graphic3d_AspectFillArea3d(OCC.Aspect.Aspect_AspectFillArea):
         """
         return _Graphic3d.Graphic3d_AspectFillArea3d_SetShaderProgram(self, *args)
 
-    def BackFace(self, *args) -> "Standard_Boolean" :
+    def BackFace(self):
         """
         * Returns the Back Face Removal status. Standard_True if SuppressBackFace is activated.
 
         :rtype: bool
 
         """
-        return _Graphic3d.Graphic3d_AspectFillArea3d_BackFace(self, *args)
+        return _Graphic3d.Graphic3d_AspectFillArea3d_BackFace(self)
 
-    def Distinguish(self, *args) -> "Standard_Boolean" :
+    def Distinguish(self):
         """
         * Returns the Distinguish Mode status.
 
         :rtype: bool
 
         """
-        return _Graphic3d.Graphic3d_AspectFillArea3d_Distinguish(self, *args)
+        return _Graphic3d.Graphic3d_AspectFillArea3d_Distinguish(self)
 
-    def Edge(self, *args) -> "Standard_Boolean" :
+    def Edge(self):
         """
         * Returns Standard_True if the edges are drawn and Standard_False if the edges are not drawn.
 
         :rtype: bool
 
         """
-        return _Graphic3d.Graphic3d_AspectFillArea3d_Edge(self, *args)
+        return _Graphic3d.Graphic3d_AspectFillArea3d_Edge(self)
 
-    def BackMaterial(self, *args) -> "Graphic3d_MaterialAspect" :
+    def BackMaterial(self):
         """
         * Returns the surface material of internal faces
 
         :rtype: Graphic3d_MaterialAspect
 
         """
-        return _Graphic3d.Graphic3d_AspectFillArea3d_BackMaterial(self, *args)
+        return _Graphic3d.Graphic3d_AspectFillArea3d_BackMaterial(self)
 
-    def FrontMaterial(self, *args) -> "Graphic3d_MaterialAspect" :
+    def FrontMaterial(self):
         """
         * Returns the surface material of external faces
 
         :rtype: Graphic3d_MaterialAspect
 
         """
-        return _Graphic3d.Graphic3d_AspectFillArea3d_FrontMaterial(self, *args)
+        return _Graphic3d.Graphic3d_AspectFillArea3d_FrontMaterial(self)
 
-    def TextureMap(self, *args) -> "Handle_Graphic3d_TextureMap" :
+    def TextureMap(self):
         """
         :rtype: Handle_Graphic3d_TextureMap
 
         """
-        return _Graphic3d.Graphic3d_AspectFillArea3d_TextureMap(self, *args)
+        return _Graphic3d.Graphic3d_AspectFillArea3d_TextureMap(self)
 
-    def TextureMapState(self, *args) -> "Standard_Boolean" :
+    def TextureMapState(self):
         """
         :rtype: bool
 
         """
-        return _Graphic3d.Graphic3d_AspectFillArea3d_TextureMapState(self, *args)
+        return _Graphic3d.Graphic3d_AspectFillArea3d_TextureMapState(self)
 
-    def PolygonOffsets(self, *args) -> "void" :
+    def PolygonOffsets(self, *args):
         """
         * Returns current polygon offsets settings.
 
         :param aMode:
-        :type aMode: int &
+        :type aMode: Standard_Integer &
         :param aFactor:
         :type aFactor: Standard_ShortReal &
         :param aUnits:
@@ -1715,18 +1739,18 @@ class Graphic3d_AspectFillArea3d(OCC.Aspect.Aspect_AspectFillArea):
         """
         return _Graphic3d.Graphic3d_AspectFillArea3d_PolygonOffsets(self, *args)
 
-    def ShaderProgram(self, *args) -> "Graphic3d_ShaderProgram_Handle const &" :
+    def ShaderProgram(self):
         """
         :rtype: Graphic3d_ShaderProgram_Handle
 
         """
-        return _Graphic3d.Graphic3d_AspectFillArea3d_ShaderProgram(self, *args)
+        return _Graphic3d.Graphic3d_AspectFillArea3d_ShaderProgram(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Graphic3d_AspectFillArea3d self)"""
         return _Graphic3d.Graphic3d_AspectFillArea3d__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Graphic3d_AspectFillArea3d" :
+    def GetHandle(self):
         """GetHandle(Graphic3d_AspectFillArea3d self) -> Handle_Graphic3d_AspectFillArea3d"""
         return _Graphic3d.Graphic3d_AspectFillArea3d_GetHandle(self)
 
@@ -1786,7 +1810,7 @@ Handle_Graphic3d_AspectFillArea3d._kill_pointed = new_instancemethod(_Graphic3d.
 Handle_Graphic3d_AspectFillArea3d_swigregister = _Graphic3d.Handle_Graphic3d_AspectFillArea3d_swigregister
 Handle_Graphic3d_AspectFillArea3d_swigregister(Handle_Graphic3d_AspectFillArea3d)
 
-def Handle_Graphic3d_AspectFillArea3d_DownCast(*args) -> "Handle_Graphic3d_AspectFillArea3d const" :
+def Handle_Graphic3d_AspectFillArea3d_DownCast(*args):
   return _Graphic3d.Handle_Graphic3d_AspectFillArea3d_DownCast(*args)
 Handle_Graphic3d_AspectFillArea3d_DownCast = _Graphic3d.Handle_Graphic3d_AspectFillArea3d_DownCast
 
@@ -1811,7 +1835,7 @@ class Graphic3d_AspectLine3d(OCC.Aspect.Aspect_AspectLine):
 
         """
         _Graphic3d.Graphic3d_AspectLine3d_swiginit(self,_Graphic3d.new_Graphic3d_AspectLine3d(*args))
-    def SetShaderProgram(self, *args) -> "void" :
+    def SetShaderProgram(self, *args):
         """
         * Sets up OpenGL/GLSL shader program.
 
@@ -1822,18 +1846,18 @@ class Graphic3d_AspectLine3d(OCC.Aspect.Aspect_AspectLine):
         """
         return _Graphic3d.Graphic3d_AspectLine3d_SetShaderProgram(self, *args)
 
-    def ShaderProgram(self, *args) -> "Graphic3d_ShaderProgram_Handle const &" :
+    def ShaderProgram(self):
         """
         :rtype: Graphic3d_ShaderProgram_Handle
 
         """
-        return _Graphic3d.Graphic3d_AspectLine3d_ShaderProgram(self, *args)
+        return _Graphic3d.Graphic3d_AspectLine3d_ShaderProgram(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Graphic3d_AspectLine3d self)"""
         return _Graphic3d.Graphic3d_AspectLine3d__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Graphic3d_AspectLine3d" :
+    def GetHandle(self):
         """GetHandle(Graphic3d_AspectLine3d self) -> Handle_Graphic3d_AspectLine3d"""
         return _Graphic3d.Graphic3d_AspectLine3d_GetHandle(self)
 
@@ -1873,7 +1897,7 @@ Handle_Graphic3d_AspectLine3d._kill_pointed = new_instancemethod(_Graphic3d.Hand
 Handle_Graphic3d_AspectLine3d_swigregister = _Graphic3d.Handle_Graphic3d_AspectLine3d_swigregister
 Handle_Graphic3d_AspectLine3d_swigregister(Handle_Graphic3d_AspectLine3d)
 
-def Handle_Graphic3d_AspectLine3d_DownCast(*args) -> "Handle_Graphic3d_AspectLine3d const" :
+def Handle_Graphic3d_AspectLine3d_DownCast(*args):
   return _Graphic3d.Handle_Graphic3d_AspectLine3d_DownCast(*args)
 Handle_Graphic3d_AspectLine3d_DownCast = _Graphic3d.Handle_Graphic3d_AspectLine3d_DownCast
 
@@ -1899,9 +1923,9 @@ class Graphic3d_AspectMarker3d(OCC.Aspect.Aspect_AspectMarker):
         :param theColor:
         :type theColor: Quantity_Color &
         :param theWidth:
-        :type theWidth: int
+        :type theWidth: Standard_Integer
         :param theHeight:
-        :type theHeight: int
+        :type theHeight: Standard_Integer
         :param theTextureBitmap:
         :type theTextureBitmap: Handle_TColStd_HArray1OfByte &
         :rtype: None
@@ -1914,34 +1938,34 @@ class Graphic3d_AspectMarker3d(OCC.Aspect.Aspect_AspectMarker):
 
         """
         _Graphic3d.Graphic3d_AspectMarker3d_swiginit(self,_Graphic3d.new_Graphic3d_AspectMarker3d(*args))
-    def GetTextureSize(self, *args) -> "void" :
+    def GetTextureSize(self):
         """
         * Returns marker's texture size.
 
         :param theWidth:
-        :type theWidth: int &
+        :type theWidth: Standard_Integer &
         :param theHeight:
-        :type theHeight: int &
+        :type theHeight: Standard_Integer &
         :rtype: None
 
         """
-        return _Graphic3d.Graphic3d_AspectMarker3d_GetTextureSize(self, *args)
+        return _Graphic3d.Graphic3d_AspectMarker3d_GetTextureSize(self)
 
-    def GetMarkerImage(self, *args) -> "Graphic3d_MarkerImage_Handle const &" :
+    def GetMarkerImage(self):
         """
         * Returns marker's image texture. Could be null handle if marker aspect has been initialized as default type of marker.
 
         :rtype: Graphic3d_MarkerImage_Handle
 
         """
-        return _Graphic3d.Graphic3d_AspectMarker3d_GetMarkerImage(self, *args)
+        return _Graphic3d.Graphic3d_AspectMarker3d_GetMarkerImage(self)
 
-    def SetBitMap(self, *args) -> "void" :
+    def SetBitMap(self, *args):
         """
         :param theWidth:
-        :type theWidth: int
+        :type theWidth: Standard_Integer
         :param theHeight:
-        :type theHeight: int
+        :type theHeight: Standard_Integer
         :param theTexture:
         :type theTexture: Handle_TColStd_HArray1OfByte &
         :rtype: None
@@ -1949,7 +1973,7 @@ class Graphic3d_AspectMarker3d(OCC.Aspect.Aspect_AspectMarker):
         """
         return _Graphic3d.Graphic3d_AspectMarker3d_SetBitMap(self, *args)
 
-    def SetShaderProgram(self, *args) -> "void" :
+    def SetShaderProgram(self, *args):
         """
         * Sets up OpenGL/GLSL shader program.
 
@@ -1960,18 +1984,18 @@ class Graphic3d_AspectMarker3d(OCC.Aspect.Aspect_AspectMarker):
         """
         return _Graphic3d.Graphic3d_AspectMarker3d_SetShaderProgram(self, *args)
 
-    def ShaderProgram(self, *args) -> "Graphic3d_ShaderProgram_Handle const &" :
+    def ShaderProgram(self):
         """
         :rtype: Graphic3d_ShaderProgram_Handle
 
         """
-        return _Graphic3d.Graphic3d_AspectMarker3d_ShaderProgram(self, *args)
+        return _Graphic3d.Graphic3d_AspectMarker3d_ShaderProgram(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Graphic3d_AspectMarker3d self)"""
         return _Graphic3d.Graphic3d_AspectMarker3d__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Graphic3d_AspectMarker3d" :
+    def GetHandle(self):
         """GetHandle(Graphic3d_AspectMarker3d self) -> Handle_Graphic3d_AspectMarker3d"""
         return _Graphic3d.Graphic3d_AspectMarker3d_GetHandle(self)
 
@@ -2014,7 +2038,7 @@ Handle_Graphic3d_AspectMarker3d._kill_pointed = new_instancemethod(_Graphic3d.Ha
 Handle_Graphic3d_AspectMarker3d_swigregister = _Graphic3d.Handle_Graphic3d_AspectMarker3d_swigregister
 Handle_Graphic3d_AspectMarker3d_swigregister(Handle_Graphic3d_AspectMarker3d)
 
-def Handle_Graphic3d_AspectMarker3d_DownCast(*args) -> "Handle_Graphic3d_AspectMarker3d const" :
+def Handle_Graphic3d_AspectMarker3d_DownCast(*args):
   return _Graphic3d.Handle_Graphic3d_AspectMarker3d_DownCast(*args)
 Handle_Graphic3d_AspectMarker3d_DownCast = _Graphic3d.Handle_Graphic3d_AspectMarker3d_DownCast
 
@@ -2043,9 +2067,41 @@ class Graphic3d_AspectText3d(OCC.MMgt.MMgt_TShared):
         :type ADisplayType: Aspect_TypeOfDisplayText
         :rtype: None
 
+        * Creates a context table for text primitives defined with the specified values. AFont may be to take means from User(example 'Courier New') or Font name defined in Font_NameOfFont(example Font_NOF_ASCII_MONO) or use default font('Courier')
+
+        :param AColor:
+        :type AColor: Quantity_Color &
+        :param AFont:
+        :type AFont: char *
+        :param AExpansionFactor:
+        :type AExpansionFactor: float
+        :param ASpace:
+        :type ASpace: float
+        :param AStyle: default value is Aspect_TOST_NORMAL
+        :type AStyle: Aspect_TypeOfStyleText
+        :param ADisplayType: default value is Aspect_TODT_NORMAL
+        :type ADisplayType: Aspect_TypeOfDisplayText
+        :rtype: None
+
+        * Creates a context table for text primitives defined with the specified values. AFont may be to take means from User(example 'Courier New') or Font name defined in Font_NameOfFont(example Font_NOF_ASCII_MONO) or use default font('Courier')
+
+        :param AColor:
+        :type AColor: Quantity_Color &
+        :param AFont:
+        :type AFont: char *
+        :param AExpansionFactor:
+        :type AExpansionFactor: float
+        :param ASpace:
+        :type ASpace: float
+        :param AStyle: default value is Aspect_TOST_NORMAL
+        :type AStyle: Aspect_TypeOfStyleText
+        :param ADisplayType: default value is Aspect_TODT_NORMAL
+        :type ADisplayType: Aspect_TypeOfDisplayText
+        :rtype: None
+
         """
         _Graphic3d.Graphic3d_AspectText3d_swiginit(self,_Graphic3d.new_Graphic3d_AspectText3d(*args))
-    def SetColor(self, *args) -> "void" :
+    def SetColor(self, *args):
         """
         * Modifies the colour of <self>.
 
@@ -2056,7 +2112,7 @@ class Graphic3d_AspectText3d(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_AspectText3d_SetColor(self, *args)
 
-    def SetExpansionFactor(self, *args) -> "void" :
+    def SetExpansionFactor(self, *args):
         """
         * Modifies the expansion factor (height/width ratio) If the factor is less than 1, the characters will be higher than they are wide.
 
@@ -2067,7 +2123,7 @@ class Graphic3d_AspectText3d(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_AspectText3d_SetExpansionFactor(self, *args)
 
-    def SetFont(self, *args) -> "void" :
+    def SetFont(self, *args):
         """
         * Modifies the font of <self>.
 
@@ -2078,7 +2134,7 @@ class Graphic3d_AspectText3d(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_AspectText3d_SetFont(self, *args)
 
-    def SetSpace(self, *args) -> "void" :
+    def SetSpace(self, *args):
         """
         * Modifies the space between the characters.
 
@@ -2089,7 +2145,7 @@ class Graphic3d_AspectText3d(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_AspectText3d_SetSpace(self, *args)
 
-    def SetStyle(self, *args) -> "void" :
+    def SetStyle(self, *args):
         """
         * Modifies the style of the text. TOST_NORMAL Default text. The text is displayed like any other graphic object. This text can be hidden by another object that is nearest from the point of view. TOST_ANNOTATION The text is always visible. The texte is displayed over the other object according to the priority.
 
@@ -2100,7 +2156,7 @@ class Graphic3d_AspectText3d(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_AspectText3d_SetStyle(self, *args)
 
-    def SetDisplayType(self, *args) -> "void" :
+    def SetDisplayType(self, *args):
         """
         * Define the display type of the text. TODT_NORMAL Default display. Text only. TODT_SUBTITLE There is a subtitle under the text. TODT_DEKALE The text is displayed with a 3D style. TODT_BLEND The text is displayed in XOR. TODT_DIMENSION Dimension line under text will be invisible.
 
@@ -2111,7 +2167,7 @@ class Graphic3d_AspectText3d(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_AspectText3d_SetDisplayType(self, *args)
 
-    def SetColorSubTitle(self, *args) -> "void" :
+    def SetColorSubTitle(self, *args):
         """
         * Modifies the colour of the subtitle for the TODT_SUBTITLE TextDisplayType  and the colour of backgroubd for the TODT_DEKALE TextDisplayType.
 
@@ -2122,7 +2178,7 @@ class Graphic3d_AspectText3d(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_AspectText3d_SetColorSubTitle(self, *args)
 
-    def SetTextZoomable(self, *args) -> "void" :
+    def SetTextZoomable(self, *args):
         """
         * Turns usage of text zoomable on/off
 
@@ -2133,16 +2189,16 @@ class Graphic3d_AspectText3d(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_AspectText3d_SetTextZoomable(self, *args)
 
-    def GetTextZoomable(self, *args) -> "Standard_Boolean" :
+    def GetTextZoomable(self):
         """
         * Returns True when the Text Zoomable is on.
 
         :rtype: bool
 
         """
-        return _Graphic3d.Graphic3d_AspectText3d_GetTextZoomable(self, *args)
+        return _Graphic3d.Graphic3d_AspectText3d_GetTextZoomable(self)
 
-    def SetTextAngle(self, *args) -> "void" :
+    def SetTextAngle(self, *args):
         """
         * Turns usage of text rotated
 
@@ -2153,16 +2209,16 @@ class Graphic3d_AspectText3d(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_AspectText3d_SetTextAngle(self, *args)
 
-    def GetTextAngle(self, *args) -> "Standard_Real" :
+    def GetTextAngle(self):
         """
         * Returns Angle of degree
 
         :rtype: float
 
         """
-        return _Graphic3d.Graphic3d_AspectText3d_GetTextAngle(self, *args)
+        return _Graphic3d.Graphic3d_AspectText3d_GetTextAngle(self)
 
-    def SetTextFontAspect(self, *args) -> "void" :
+    def SetTextFontAspect(self, *args):
         """
         * Turns usage of Aspect text
 
@@ -2173,16 +2229,16 @@ class Graphic3d_AspectText3d(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_AspectText3d_SetTextFontAspect(self, *args)
 
-    def GetTextFontAspect(self, *args) -> "Font_FontAspect" :
+    def GetTextFontAspect(self):
         """
         * Returns text FontAspect
 
         :rtype: Font_FontAspect
 
         """
-        return _Graphic3d.Graphic3d_AspectText3d_GetTextFontAspect(self, *args)
+        return _Graphic3d.Graphic3d_AspectText3d_GetTextFontAspect(self)
 
-    def SetShaderProgram(self, *args) -> "void" :
+    def SetShaderProgram(self, *args):
         """
         * Sets up OpenGL/GLSL shader program.
 
@@ -2193,18 +2249,18 @@ class Graphic3d_AspectText3d(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_AspectText3d_SetShaderProgram(self, *args)
 
-    def ShaderProgram(self, *args) -> "Graphic3d_ShaderProgram_Handle const &" :
+    def ShaderProgram(self):
         """
         :rtype: Graphic3d_ShaderProgram_Handle
 
         """
-        return _Graphic3d.Graphic3d_AspectText3d_ShaderProgram(self, *args)
+        return _Graphic3d.Graphic3d_AspectText3d_ShaderProgram(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Graphic3d_AspectText3d self)"""
         return _Graphic3d.Graphic3d_AspectText3d__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Graphic3d_AspectText3d" :
+    def GetHandle(self):
         """GetHandle(Graphic3d_AspectText3d self) -> Handle_Graphic3d_AspectText3d"""
         return _Graphic3d.Graphic3d_AspectText3d_GetHandle(self)
 
@@ -2257,7 +2313,7 @@ Handle_Graphic3d_AspectText3d._kill_pointed = new_instancemethod(_Graphic3d.Hand
 Handle_Graphic3d_AspectText3d_swigregister = _Graphic3d.Handle_Graphic3d_AspectText3d_swigregister
 Handle_Graphic3d_AspectText3d_swigregister(Handle_Graphic3d_AspectText3d)
 
-def Handle_Graphic3d_AspectText3d_DownCast(*args) -> "Handle_Graphic3d_AspectText3d const" :
+def Handle_Graphic3d_AspectText3d_DownCast(*args):
   return _Graphic3d.Handle_Graphic3d_AspectText3d_DownCast(*args)
 Handle_Graphic3d_AspectText3d_DownCast = _Graphic3d.Handle_Graphic3d_AspectText3d_DownCast
 
@@ -2328,12 +2384,12 @@ Graphic3d_CBitFields8_swigregister(Graphic3d_CBitFields8)
 class Graphic3d_CGraduatedTrihedron(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _Graphic3d.Graphic3d_CGraduatedTrihedron_swiginit(self,_Graphic3d.new_Graphic3d_CGraduatedTrihedron(*args))
+        _Graphic3d.Graphic3d_CGraduatedTrihedron_swiginit(self,_Graphic3d.new_Graphic3d_CGraduatedTrihedron())
     def __del__(self):
     	try:
     		self.thisown = False
@@ -2365,94 +2421,94 @@ Graphic3d_CGroup_swigregister(Graphic3d_CGroup)
 class Graphic3d_CLight(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def ConstAttenuation(self, *args) -> "Standard_ShortReal" :
+    def ConstAttenuation(self):
         """
         * //!< flag to mark head light Const attenuation factor of positional light source
 
         :rtype: Standard_ShortReal
 
         """
-        return _Graphic3d.Graphic3d_CLight_ConstAttenuation(self, *args)
+        return _Graphic3d.Graphic3d_CLight_ConstAttenuation(self)
 
-    def LinearAttenuation(self, *args) -> "Standard_ShortReal" :
+    def LinearAttenuation(self):
         """
         * Linear attenuation factor of positional light source
 
         :rtype: Standard_ShortReal
 
         """
-        return _Graphic3d.Graphic3d_CLight_LinearAttenuation(self, *args)
+        return _Graphic3d.Graphic3d_CLight_LinearAttenuation(self)
 
-    def Attenuation(self, *args) -> "Graphic3d_Vec2" :
+    def Attenuation(self):
         """
         * Const, Linear attenuation factors of positional light source
 
         :rtype: Graphic3d_Vec2
 
         """
-        return _Graphic3d.Graphic3d_CLight_Attenuation(self, *args)
+        return _Graphic3d.Graphic3d_CLight_Attenuation(self)
 
-    def Angle(self, *args) -> "Standard_ShortReal" :
+    def Angle(self):
         """
         * Angle in radians of the cone created by the spot
 
         :rtype: Standard_ShortReal
 
         """
-        return _Graphic3d.Graphic3d_CLight_Angle(self, *args)
+        return _Graphic3d.Graphic3d_CLight_Angle(self)
 
-    def Concentration(self, *args) -> "Standard_ShortReal" :
+    def Concentration(self):
         """
         * Intensity distribution of the spot light, with 0..1 range.
 
         :rtype: Standard_ShortReal
 
         """
-        return _Graphic3d.Graphic3d_CLight_Concentration(self, *args)
+        return _Graphic3d.Graphic3d_CLight_Concentration(self)
 
-    def ChangeConstAttenuation(self, *args) -> "Standard_ShortReal &" :
+    def ChangeConstAttenuation(self):
         """
         :rtype: Standard_ShortReal
 
         """
-        return _Graphic3d.Graphic3d_CLight_ChangeConstAttenuation(self, *args)
+        return _Graphic3d.Graphic3d_CLight_ChangeConstAttenuation(self)
 
-    def ChangeLinearAttenuation(self, *args) -> "Standard_ShortReal &" :
+    def ChangeLinearAttenuation(self):
         """
         :rtype: Standard_ShortReal
 
         """
-        return _Graphic3d.Graphic3d_CLight_ChangeLinearAttenuation(self, *args)
+        return _Graphic3d.Graphic3d_CLight_ChangeLinearAttenuation(self)
 
-    def ChangeAttenuation(self, *args) -> "Graphic3d_Vec2 &" :
+    def ChangeAttenuation(self):
         """
         :rtype: Graphic3d_Vec2
 
         """
-        return _Graphic3d.Graphic3d_CLight_ChangeAttenuation(self, *args)
+        return _Graphic3d.Graphic3d_CLight_ChangeAttenuation(self)
 
-    def ChangeAngle(self, *args) -> "Standard_ShortReal &" :
+    def ChangeAngle(self):
         """
         :rtype: Standard_ShortReal
 
         """
-        return _Graphic3d.Graphic3d_CLight_ChangeAngle(self, *args)
+        return _Graphic3d.Graphic3d_CLight_ChangeAngle(self)
 
-    def ChangeConcentration(self, *args) -> "Standard_ShortReal &" :
+    def ChangeConcentration(self):
         """
         :rtype: Standard_ShortReal
 
         """
-        return _Graphic3d.Graphic3d_CLight_ChangeConcentration(self, *args)
+        return _Graphic3d.Graphic3d_CLight_ChangeConcentration(self)
 
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         * Empty constructor
 
         :rtype: None
 
         """
-        _Graphic3d.Graphic3d_CLight_swiginit(self,_Graphic3d.new_Graphic3d_CLight(*args))
+        _Graphic3d.Graphic3d_CLight_swiginit(self,_Graphic3d.new_Graphic3d_CLight())
     def __del__(self):
     	try:
     		self.thisown = False
@@ -2494,12 +2550,12 @@ Graphic3d_CStructure_swigregister(Graphic3d_CStructure)
 class Graphic3d_CTexture(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _Graphic3d.Graphic3d_CTexture_swiginit(self,_Graphic3d.new_Graphic3d_CTexture(*args))
+        _Graphic3d.Graphic3d_CTexture_swiginit(self,_Graphic3d.new_Graphic3d_CTexture())
     def __del__(self):
     	try:
     		self.thisown = False
@@ -2515,12 +2571,12 @@ Graphic3d_CTexture_swigregister(Graphic3d_CTexture)
 class Graphic3d_CView(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _Graphic3d.Graphic3d_CView_swiginit(self,_Graphic3d.new_Graphic3d_CView(*args))
+        _Graphic3d.Graphic3d_CView_swiginit(self,_Graphic3d.new_Graphic3d_CView())
     def __del__(self):
     	try:
     		self.thisown = False
@@ -2537,20 +2593,20 @@ class Graphic3d_DataStructureManager(OCC.MMgt.MMgt_TShared):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def Destroy(self, *args) -> "void" :
+    def Destroy(self):
         """
         * Deletes the manager <self>.
 
         :rtype: void
 
         """
-        return _Graphic3d.Graphic3d_DataStructureManager_Destroy(self, *args)
+        return _Graphic3d.Graphic3d_DataStructureManager_Destroy(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Graphic3d_DataStructureManager self)"""
         return _Graphic3d.Graphic3d_DataStructureManager__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Graphic3d_DataStructureManager" :
+    def GetHandle(self):
         """GetHandle(Graphic3d_DataStructureManager self) -> Handle_Graphic3d_DataStructureManager"""
         return _Graphic3d.Graphic3d_DataStructureManager_GetHandle(self)
 
@@ -2589,7 +2645,7 @@ Handle_Graphic3d_DataStructureManager._kill_pointed = new_instancemethod(_Graphi
 Handle_Graphic3d_DataStructureManager_swigregister = _Graphic3d.Handle_Graphic3d_DataStructureManager_swigregister
 Handle_Graphic3d_DataStructureManager_swigregister(Handle_Graphic3d_DataStructureManager)
 
-def Handle_Graphic3d_DataStructureManager_DownCast(*args) -> "Handle_Graphic3d_DataStructureManager const" :
+def Handle_Graphic3d_DataStructureManager_DownCast(*args):
   return _Graphic3d.Handle_Graphic3d_DataStructureManager_DownCast(*args)
 Handle_Graphic3d_DataStructureManager_DownCast = _Graphic3d.Handle_Graphic3d_DataStructureManager_DownCast
 
@@ -2597,7 +2653,7 @@ class Graphic3d_GraphicDriver(OCC.MMgt.MMgt_TShared):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def Begin(self, *args) -> "Standard_Boolean" :
+    def Begin(self, *args):
         """
         * Starts graphic driver with given connection
 
@@ -2608,25 +2664,25 @@ class Graphic3d_GraphicDriver(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_GraphicDriver_Begin(self, *args)
 
-    def End(self, *args) -> "void" :
+    def End(self):
         """
         * call_togl_end
 
         :rtype: void
 
         """
-        return _Graphic3d.Graphic3d_GraphicDriver_End(self, *args)
+        return _Graphic3d.Graphic3d_GraphicDriver_End(self)
 
-    def InquireLightLimit(self, *args) -> "Standard_Integer" :
+    def InquireLightLimit(self):
         """
         * call_togl_inquirelight
 
         :rtype: int
 
         """
-        return _Graphic3d.Graphic3d_GraphicDriver_InquireLightLimit(self, *args)
+        return _Graphic3d.Graphic3d_GraphicDriver_InquireLightLimit(self)
 
-    def InquireMat(self, *args) -> "void" :
+    def InquireMat(self, *args):
         """
         * call_togl_inquiremat
 
@@ -2641,25 +2697,25 @@ class Graphic3d_GraphicDriver(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_GraphicDriver_InquireMat(self, *args)
 
-    def InquirePlaneLimit(self, *args) -> "Standard_Integer" :
+    def InquirePlaneLimit(self):
         """
         * call_togl_inquireplane
 
         :rtype: int
 
         """
-        return _Graphic3d.Graphic3d_GraphicDriver_InquirePlaneLimit(self, *args)
+        return _Graphic3d.Graphic3d_GraphicDriver_InquirePlaneLimit(self)
 
-    def InquireViewLimit(self, *args) -> "Standard_Integer" :
+    def InquireViewLimit(self):
         """
         * call_togl_inquireview
 
         :rtype: int
 
         """
-        return _Graphic3d.Graphic3d_GraphicDriver_InquireViewLimit(self, *args)
+        return _Graphic3d.Graphic3d_GraphicDriver_InquireViewLimit(self)
 
-    def Blink(self, *args) -> "void" :
+    def Blink(self, *args):
         """
         * call_togl_blink
 
@@ -2672,7 +2728,7 @@ class Graphic3d_GraphicDriver(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_GraphicDriver_Blink(self, *args)
 
-    def BoundaryBox(self, *args) -> "void" :
+    def BoundaryBox(self, *args):
         """
         * call_togl_boundarybox
 
@@ -2685,7 +2741,7 @@ class Graphic3d_GraphicDriver(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_GraphicDriver_BoundaryBox(self, *args)
 
-    def HighlightColor(self, *args) -> "void" :
+    def HighlightColor(self, *args):
         """
         * call_togl_highlightcolor
 
@@ -2704,7 +2760,7 @@ class Graphic3d_GraphicDriver(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_GraphicDriver_HighlightColor(self, *args)
 
-    def NameSetStructure(self, *args) -> "void" :
+    def NameSetStructure(self, *args):
         """
         * call_togl_namesetstructure
 
@@ -2715,7 +2771,7 @@ class Graphic3d_GraphicDriver(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_GraphicDriver_NameSetStructure(self, *args)
 
-    def ClearGroup(self, *args) -> "void" :
+    def ClearGroup(self, *args):
         """
         * call_togl_cleargroup
 
@@ -2726,20 +2782,20 @@ class Graphic3d_GraphicDriver(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_GraphicDriver_ClearGroup(self, *args)
 
-    def FaceContextGroup(self, *args) -> "void" :
+    def FaceContextGroup(self, *args):
         """
         * call_togl_facecontextgroup
 
         :param ACGroup:
         :type ACGroup: Graphic3d_CGroup &
         :param NoInsert:
-        :type NoInsert: int
+        :type NoInsert: Standard_Integer
         :rtype: void
 
         """
         return _Graphic3d.Graphic3d_GraphicDriver_FaceContextGroup(self, *args)
 
-    def Group(self, *args) -> "void" :
+    def Group(self, *args):
         """
         * call_togl_group
 
@@ -2750,33 +2806,33 @@ class Graphic3d_GraphicDriver(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_GraphicDriver_Group(self, *args)
 
-    def LineContextGroup(self, *args) -> "void" :
+    def LineContextGroup(self, *args):
         """
         * call_togl_linecontextgroup
 
         :param ACGroup:
         :type ACGroup: Graphic3d_CGroup &
         :param NoInsert:
-        :type NoInsert: int
+        :type NoInsert: Standard_Integer
         :rtype: void
 
         """
         return _Graphic3d.Graphic3d_GraphicDriver_LineContextGroup(self, *args)
 
-    def MarkerContextGroup(self, *args) -> "void" :
+    def MarkerContextGroup(self, *args):
         """
         * call_togl_markercontextgroup
 
         :param ACGroup:
         :type ACGroup: Graphic3d_CGroup &
         :param NoInsert:
-        :type NoInsert: int
+        :type NoInsert: Standard_Integer
         :rtype: void
 
         """
         return _Graphic3d.Graphic3d_GraphicDriver_MarkerContextGroup(self, *args)
 
-    def RemoveGroup(self, *args) -> "void" :
+    def RemoveGroup(self, *args):
         """
         * call_togl_removegroup
 
@@ -2787,20 +2843,20 @@ class Graphic3d_GraphicDriver(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_GraphicDriver_RemoveGroup(self, *args)
 
-    def TextContextGroup(self, *args) -> "void" :
+    def TextContextGroup(self, *args):
         """
         * call_togl_textcontextgroup
 
         :param ACGroup:
         :type ACGroup: Graphic3d_CGroup &
         :param NoInsert:
-        :type NoInsert: int
+        :type NoInsert: Standard_Integer
         :rtype: void
 
         """
         return _Graphic3d.Graphic3d_GraphicDriver_TextContextGroup(self, *args)
 
-    def ClearStructure(self, *args) -> "void" :
+    def ClearStructure(self, *args):
         """
         * call_togl_clearstructure
 
@@ -2811,7 +2867,7 @@ class Graphic3d_GraphicDriver(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_GraphicDriver_ClearStructure(self, *args)
 
-    def Connect(self, *args) -> "void" :
+    def Connect(self, *args):
         """
         * call_togl_connect
 
@@ -2824,7 +2880,7 @@ class Graphic3d_GraphicDriver(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_GraphicDriver_Connect(self, *args)
 
-    def ContextStructure(self, *args) -> "void" :
+    def ContextStructure(self, *args):
         """
         * call_togl_contextstructure
 
@@ -2835,7 +2891,7 @@ class Graphic3d_GraphicDriver(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_GraphicDriver_ContextStructure(self, *args)
 
-    def Disconnect(self, *args) -> "void" :
+    def Disconnect(self, *args):
         """
         * call_togl_disconnect
 
@@ -2848,7 +2904,7 @@ class Graphic3d_GraphicDriver(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_GraphicDriver_Disconnect(self, *args)
 
-    def DisplayStructure(self, *args) -> "void" :
+    def DisplayStructure(self, *args):
         """
         * call_togl_displaystructure
 
@@ -2857,13 +2913,13 @@ class Graphic3d_GraphicDriver(OCC.MMgt.MMgt_TShared):
         :param ACStructure:
         :type ACStructure: Graphic3d_CStructure &
         :param APriority:
-        :type APriority: int
+        :type APriority: Standard_Integer
         :rtype: void
 
         """
         return _Graphic3d.Graphic3d_GraphicDriver_DisplayStructure(self, *args)
 
-    def EraseStructure(self, *args) -> "void" :
+    def EraseStructure(self, *args):
         """
         * call_togl_erasestructure
 
@@ -2876,7 +2932,7 @@ class Graphic3d_GraphicDriver(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_GraphicDriver_EraseStructure(self, *args)
 
-    def RemoveStructure(self, *args) -> "void" :
+    def RemoveStructure(self, *args):
         """
         * call_togl_removestructure
 
@@ -2887,7 +2943,7 @@ class Graphic3d_GraphicDriver(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_GraphicDriver_RemoveStructure(self, *args)
 
-    def Structure(self, *args) -> "void" :
+    def Structure(self, *args):
         """
         * call_togl_structure
 
@@ -2898,7 +2954,7 @@ class Graphic3d_GraphicDriver(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_GraphicDriver_Structure(self, *args)
 
-    def ActivateView(self, *args) -> "void" :
+    def ActivateView(self, *args):
         """
         * call_togl_activateview
 
@@ -2909,7 +2965,7 @@ class Graphic3d_GraphicDriver(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_GraphicDriver_ActivateView(self, *args)
 
-    def AntiAliasing(self, *args) -> "void" :
+    def AntiAliasing(self, *args):
         """
         * call_togl_antialiasing
 
@@ -2922,7 +2978,7 @@ class Graphic3d_GraphicDriver(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_GraphicDriver_AntiAliasing(self, *args)
 
-    def Background(self, *args) -> "void" :
+    def Background(self, *args):
         """
         * call_togl_background
 
@@ -2933,7 +2989,7 @@ class Graphic3d_GraphicDriver(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_GraphicDriver_Background(self, *args)
 
-    def GradientBackground(self, *args) -> "void" :
+    def GradientBackground(self, *args):
         """
         * call_togl_gradient_background
 
@@ -2950,7 +3006,7 @@ class Graphic3d_GraphicDriver(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_GraphicDriver_GradientBackground(self, *args)
 
-    def BackgroundImage(self, *args) -> "void" :
+    def BackgroundImage(self, *args):
         """
         :param FileName:
         :type FileName: char *
@@ -2963,7 +3019,7 @@ class Graphic3d_GraphicDriver(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_GraphicDriver_BackgroundImage(self, *args)
 
-    def SetBgImageStyle(self, *args) -> "void" :
+    def SetBgImageStyle(self, *args):
         """
         :param ACView:
         :type ACView: Graphic3d_CView &
@@ -2974,7 +3030,7 @@ class Graphic3d_GraphicDriver(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_GraphicDriver_SetBgImageStyle(self, *args)
 
-    def SetBgGradientStyle(self, *args) -> "void" :
+    def SetBgGradientStyle(self, *args):
         """
         :param ACView:
         :type ACView: Graphic3d_CView &
@@ -2985,7 +3041,7 @@ class Graphic3d_GraphicDriver(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_GraphicDriver_SetBgGradientStyle(self, *args)
 
-    def ClipLimit(self, *args) -> "void" :
+    def ClipLimit(self, *args):
         """
         * call_togl_cliplimit
 
@@ -2998,7 +3054,7 @@ class Graphic3d_GraphicDriver(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_GraphicDriver_ClipLimit(self, *args)
 
-    def DeactivateView(self, *args) -> "void" :
+    def DeactivateView(self, *args):
         """
         * call_togl_deactivateview
 
@@ -3009,7 +3065,7 @@ class Graphic3d_GraphicDriver(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_GraphicDriver_DeactivateView(self, *args)
 
-    def DepthCueing(self, *args) -> "void" :
+    def DepthCueing(self, *args):
         """
         * call_togl_cliplimit
 
@@ -3022,7 +3078,7 @@ class Graphic3d_GraphicDriver(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_GraphicDriver_DepthCueing(self, *args)
 
-    def ProjectRaster(self, *args) -> "Standard_Boolean" :
+    def ProjectRaster(self, *args):
         """
         * call_togl_unproject_raster
 
@@ -3035,32 +3091,32 @@ class Graphic3d_GraphicDriver(OCC.MMgt.MMgt_TShared):
         :param AZ:
         :type AZ: Standard_ShortReal
         :param AU:
-        :type AU: int &
+        :type AU: Standard_Integer &
         :param AV:
-        :type AV: int &
+        :type AV: Standard_Integer &
         :rtype: bool
 
         """
         return _Graphic3d.Graphic3d_GraphicDriver_ProjectRaster(self, *args)
 
-    def UnProjectRaster(self, *args) -> "Standard_Boolean" :
+    def UnProjectRaster(self, *args):
         """
         * call_togl_unproject_raster
 
         :param ACView:
         :type ACView: Graphic3d_CView &
         :param Axm:
-        :type Axm: int
+        :type Axm: Standard_Integer
         :param Aym:
-        :type Aym: int
+        :type Aym: Standard_Integer
         :param AXM:
-        :type AXM: int
+        :type AXM: Standard_Integer
         :param AYM:
-        :type AYM: int
+        :type AYM: Standard_Integer
         :param AU:
-        :type AU: int
+        :type AU: Standard_Integer
         :param AV:
-        :type AV: int
+        :type AV: Standard_Integer
         :param AX:
         :type AX: Standard_ShortReal &
         :param AY:
@@ -3072,24 +3128,24 @@ class Graphic3d_GraphicDriver(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_GraphicDriver_UnProjectRaster(self, *args)
 
-    def UnProjectRasterWithRay(self, *args) -> "Standard_Boolean" :
+    def UnProjectRasterWithRay(self, *args):
         """
         * call_togl_unproject_raster_with_ray
 
         :param ACView:
         :type ACView: Graphic3d_CView &
         :param Axm:
-        :type Axm: int
+        :type Axm: Standard_Integer
         :param Aym:
-        :type Aym: int
+        :type Aym: Standard_Integer
         :param AXM:
-        :type AXM: int
+        :type AXM: Standard_Integer
         :param AYM:
-        :type AYM: int
+        :type AYM: Standard_Integer
         :param AU:
-        :type AU: int
+        :type AU: Standard_Integer
         :param AV:
-        :type AV: int
+        :type AV: Standard_Integer
         :param AX:
         :type AX: Standard_ShortReal &
         :param AY:
@@ -3107,7 +3163,7 @@ class Graphic3d_GraphicDriver(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_GraphicDriver_UnProjectRasterWithRay(self, *args)
 
-    def RatioWindow(self, *args) -> "void" :
+    def RatioWindow(self, *args):
         """
         * call_togl_ratio_window
 
@@ -3118,7 +3174,7 @@ class Graphic3d_GraphicDriver(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_GraphicDriver_RatioWindow(self, *args)
 
-    def Redraw(self, *args) -> "void" :
+    def Redraw(self, *args):
         """
         * call_togl_redraw Warning: when the redraw area has a null size, the full view is redrawn
 
@@ -3129,19 +3185,91 @@ class Graphic3d_GraphicDriver(OCC.MMgt.MMgt_TShared):
         :param ACOverLayer:
         :type ACOverLayer: Aspect_CLayer2d &
         :param x: default value is 0
-        :type x: int
+        :type x: Standard_Integer
         :param y: default value is 0
-        :type y: int
+        :type y: Standard_Integer
         :param width: default value is 0
-        :type width: int
+        :type width: Standard_Integer
         :param height: default value is 0
-        :type height: int
+        :type height: Standard_Integer
+        :rtype: void
+
+        * call_togl_redraw Warning: when the redraw area has a null size, the full view is redrawn
+
+        :param ACView:
+        :type ACView: Graphic3d_CView &
+        :param ACUnderLayer:
+        :type ACUnderLayer: Aspect_CLayer2d &
+        :param ACOverLayer:
+        :type ACOverLayer: Aspect_CLayer2d &
+        :param x: default value is 0
+        :type x: Standard_Integer
+        :param y: default value is 0
+        :type y: Standard_Integer
+        :param width: default value is 0
+        :type width: Standard_Integer
+        :param height: default value is 0
+        :type height: Standard_Integer
+        :rtype: void
+
+        * call_togl_redraw Warning: when the redraw area has a null size, the full view is redrawn
+
+        :param ACView:
+        :type ACView: Graphic3d_CView &
+        :param ACUnderLayer:
+        :type ACUnderLayer: Aspect_CLayer2d &
+        :param ACOverLayer:
+        :type ACOverLayer: Aspect_CLayer2d &
+        :param x: default value is 0
+        :type x: Standard_Integer
+        :param y: default value is 0
+        :type y: Standard_Integer
+        :param width: default value is 0
+        :type width: Standard_Integer
+        :param height: default value is 0
+        :type height: Standard_Integer
+        :rtype: void
+
+        * call_togl_redraw Warning: when the redraw area has a null size, the full view is redrawn
+
+        :param ACView:
+        :type ACView: Graphic3d_CView &
+        :param ACUnderLayer:
+        :type ACUnderLayer: Aspect_CLayer2d &
+        :param ACOverLayer:
+        :type ACOverLayer: Aspect_CLayer2d &
+        :param x: default value is 0
+        :type x: Standard_Integer
+        :param y: default value is 0
+        :type y: Standard_Integer
+        :param width: default value is 0
+        :type width: Standard_Integer
+        :param height: default value is 0
+        :type height: Standard_Integer
+        :rtype: void
+
+        * call_togl_redraw Warning: when the redraw area has a null size, the full view is redrawn
+
+        :param ACView:
+        :type ACView: Graphic3d_CView &
+        :param ACUnderLayer:
+        :type ACUnderLayer: Aspect_CLayer2d &
+        :param ACOverLayer:
+        :type ACOverLayer: Aspect_CLayer2d &
+        :param x: default value is 0
+        :type x: Standard_Integer
+        :param y: default value is 0
+        :type y: Standard_Integer
+        :param width: default value is 0
+        :type width: Standard_Integer
+        :param height: default value is 0
+        :type height: Standard_Integer
         :rtype: void
 
         """
         return _Graphic3d.Graphic3d_GraphicDriver_Redraw(self, *args)
 
-    def RemoveView(self, *args) -> "void" :
+    def RemoveView(self, *args):
         """
         * call_togl_removeview
 
@@ -3152,7 +3280,7 @@ class Graphic3d_GraphicDriver(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_GraphicDriver_RemoveView(self, *args)
 
-    def SetLight(self, *args) -> "void" :
+    def SetLight(self, *args):
         """
         * call_togl_setlight
 
@@ -3163,7 +3291,7 @@ class Graphic3d_GraphicDriver(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_GraphicDriver_SetLight(self, *args)
 
-    def SetClipPlanes(self, *args) -> "void" :
+    def SetClipPlanes(self, *args):
         """
         * Pass clip planes to the associated graphic driver view.
 
@@ -3180,7 +3308,7 @@ class Graphic3d_GraphicDriver(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_GraphicDriver_SetClipPlanes(self, *args)
 
-    def SetVisualisation(self, *args) -> "void" :
+    def SetVisualisation(self, *args):
         """
         * call_togl_setvisualisation
 
@@ -3191,7 +3319,7 @@ class Graphic3d_GraphicDriver(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_GraphicDriver_SetVisualisation(self, *args)
 
-    def TransformStructure(self, *args) -> "void" :
+    def TransformStructure(self, *args):
         """
         * call_togl_transformstructure
 
@@ -3202,7 +3330,7 @@ class Graphic3d_GraphicDriver(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_GraphicDriver_TransformStructure(self, *args)
 
-    def Transparency(self, *args) -> "void" :
+    def Transparency(self, *args):
         """
         * call_togl_transparency
 
@@ -3215,7 +3343,7 @@ class Graphic3d_GraphicDriver(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_GraphicDriver_Transparency(self, *args)
 
-    def Update(self, *args) -> "void" :
+    def Update(self, *args):
         """
         * call_togl_update
 
@@ -3230,7 +3358,7 @@ class Graphic3d_GraphicDriver(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_GraphicDriver_Update(self, *args)
 
-    def View(self, *args) -> "Standard_Boolean" :
+    def View(self, *args):
         """
         * call_togl_view
 
@@ -3241,7 +3369,7 @@ class Graphic3d_GraphicDriver(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_GraphicDriver_View(self, *args)
 
-    def ViewMapping(self, *args) -> "void" :
+    def ViewMapping(self, *args):
         """
         * call_togl_viewmapping
 
@@ -3254,7 +3382,7 @@ class Graphic3d_GraphicDriver(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_GraphicDriver_ViewMapping(self, *args)
 
-    def ViewOrientation(self, *args) -> "void" :
+    def ViewOrientation(self, *args):
         """
         * call_togl_vieworientation
 
@@ -3267,7 +3395,7 @@ class Graphic3d_GraphicDriver(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_GraphicDriver_ViewOrientation(self, *args)
 
-    def Environment(self, *args) -> "void" :
+    def Environment(self, *args):
         """
         :param ACView:
         :type ACView: Graphic3d_CView &
@@ -3276,7 +3404,7 @@ class Graphic3d_GraphicDriver(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_GraphicDriver_Environment(self, *args)
 
-    def SetStencilTestOptions(self, *args) -> "void" :
+    def SetStencilTestOptions(self, *args):
         """
         * sets the stencil test to theIsEnabled state;
 
@@ -3289,7 +3417,7 @@ class Graphic3d_GraphicDriver(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_GraphicDriver_SetStencilTestOptions(self, *args)
 
-    def SetFlippingOptions(self, *args) -> "void" :
+    def SetFlippingOptions(self, *args):
         """
         * sets the flipping to theIsEnabled state for the given graphic group.
 
@@ -3304,8 +3432,18 @@ class Graphic3d_GraphicDriver(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_GraphicDriver_SetFlippingOptions(self, *args)
 
-    def PrimitiveArray(self, *args) -> "void" :
+    def PrimitiveArray(self, *args):
         """
+        * call_togl_parray
+
+        :param ACGroup:
+        :type ACGroup: Graphic3d_CGroup &
+        :param parray:
+        :type parray: Graphic3d_PrimitiveArray &
+        :param EvalMinMax: default value is Standard_True
+        :type EvalMinMax: bool
+        :rtype: void
+
         * call_togl_parray
 
         :param ACGroup:
@@ -3319,7 +3457,7 @@ class Graphic3d_GraphicDriver(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_GraphicDriver_PrimitiveArray(self, *args)
 
-    def UserDraw(self, *args) -> "void" :
+    def UserDraw(self, *args):
         """
         * call_togl_userdraw
 
@@ -3332,7 +3470,7 @@ class Graphic3d_GraphicDriver(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_GraphicDriver_UserDraw(self, *args)
 
-    def EnableVBO(self, *args) -> "void" :
+    def EnableVBO(self, *args):
         """
         * enables/disables usage of OpenGL vertex buffer arrays while drawing primitiev arrays
 
@@ -3343,7 +3481,7 @@ class Graphic3d_GraphicDriver(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_GraphicDriver_EnableVBO(self, *args)
 
-    def MemoryInfo(self, *args) -> "Standard_Boolean" :
+    def MemoryInfo(self, *args):
         """
         * Returns information about GPU memory usage.
 
@@ -3356,7 +3494,7 @@ class Graphic3d_GraphicDriver(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_GraphicDriver_MemoryInfo(self, *args)
 
-    def ZBufferTriedronSetup(self, *args) -> "void" :
+    def ZBufferTriedronSetup(self, *args):
         """
         * call_togl_ztriedron_setup
 
@@ -3371,14 +3509,166 @@ class Graphic3d_GraphicDriver(OCC.MMgt.MMgt_TShared):
         :param AxisDiametr: default value is 0.05
         :type AxisDiametr: float
         :param NbFacettes: default value is 12
-        :type NbFacettes: int
+        :type NbFacettes: Standard_Integer
+        :rtype: void
+
+        * call_togl_ztriedron_setup
+
+        :param XColor: default value is Quantity_NOC_RED
+        :type XColor: Quantity_NameOfColor
+        :param YColor: default value is Quantity_NOC_GREEN
+        :type YColor: Quantity_NameOfColor
+        :param ZColor: default value is Quantity_NOC_BLUE1
+        :type ZColor: Quantity_NameOfColor
+        :param SizeRatio: default value is 0.8
+        :type SizeRatio: float
+        :param AxisDiametr: default value is 0.05
+        :type AxisDiametr: float
+        :param NbFacettes: default value is 12
+        :type NbFacettes: Standard_Integer
+        :rtype: void
+
+        * call_togl_ztriedron_setup
+
+        :param XColor: default value is Quantity_NOC_RED
+        :type XColor: Quantity_NameOfColor
+        :param YColor: default value is Quantity_NOC_GREEN
+        :type YColor: Quantity_NameOfColor
+        :param ZColor: default value is Quantity_NOC_BLUE1
+        :type ZColor: Quantity_NameOfColor
+        :param SizeRatio: default value is 0.8
+        :type SizeRatio: float
+        :param AxisDiametr: default value is 0.05
+        :type AxisDiametr: float
+        :param NbFacettes: default value is 12
+        :type NbFacettes: Standard_Integer
+        :rtype: void
+
+        * call_togl_ztriedron_setup
+
+        :param XColor: default value is Quantity_NOC_RED
+        :type XColor: Quantity_NameOfColor
+        :param YColor: default value is Quantity_NOC_GREEN
+        :type YColor: Quantity_NameOfColor
+        :param ZColor: default value is Quantity_NOC_BLUE1
+        :type ZColor: Quantity_NameOfColor
+        :param SizeRatio: default value is 0.8
+        :type SizeRatio: float
+        :param AxisDiametr: default value is 0.05
+        :type AxisDiametr: float
+        :param NbFacettes: default value is 12
+        :type NbFacettes: Standard_Integer
+        :rtype: void
+
+        * call_togl_ztriedron_setup
+
+        :param XColor: default value is Quantity_NOC_RED
+        :type XColor: Quantity_NameOfColor
+        :param YColor: default value is Quantity_NOC_GREEN
+        :type YColor: Quantity_NameOfColor
+        :param ZColor: default value is Quantity_NOC_BLUE1
+        :type ZColor: Quantity_NameOfColor
+        :param SizeRatio: default value is 0.8
+        :type SizeRatio: float
+        :param AxisDiametr: default value is 0.05
+        :type AxisDiametr: float
+        :param NbFacettes: default value is 12
+        :type NbFacettes: Standard_Integer
+        :rtype: void
+
+        * call_togl_ztriedron_setup
+
+        :param XColor: default value is Quantity_NOC_RED
+        :type XColor: Quantity_NameOfColor
+        :param YColor: default value is Quantity_NOC_GREEN
+        :type YColor: Quantity_NameOfColor
+        :param ZColor: default value is Quantity_NOC_BLUE1
+        :type ZColor: Quantity_NameOfColor
+        :param SizeRatio: default value is 0.8
+        :type SizeRatio: float
+        :param AxisDiametr: default value is 0.05
+        :type AxisDiametr: float
+        :param NbFacettes: default value is 12
+        :type NbFacettes: Standard_Integer
+        :rtype: void
+
+        * call_togl_ztriedron_setup
+
+        :param XColor: default value is Quantity_NOC_RED
+        :type XColor: Quantity_NameOfColor
+        :param YColor: default value is Quantity_NOC_GREEN
+        :type YColor: Quantity_NameOfColor
+        :param ZColor: default value is Quantity_NOC_BLUE1
+        :type ZColor: Quantity_NameOfColor
+        :param SizeRatio: default value is 0.8
+        :type SizeRatio: float
+        :param AxisDiametr: default value is 0.05
+        :type AxisDiametr: float
+        :param NbFacettes: default value is 12
+        :type NbFacettes: Standard_Integer
         :rtype: void
 
         """
         return _Graphic3d.Graphic3d_GraphicDriver_ZBufferTriedronSetup(self, *args)
 
-    def TriedronDisplay(self, *args) -> "void" :
+    def TriedronDisplay(self, *args):
         """
+        * call_togl_triedron_display
+
+        :param ACView:
+        :type ACView: Graphic3d_CView &
+        :param APosition: default value is Aspect_TOTP_CENTER
+        :type APosition: Aspect_TypeOfTriedronPosition
+        :param AColor: default value is Quantity_NOC_WHITE
+        :type AColor: Quantity_NameOfColor
+        :param AScale: default value is 0.02
+        :type AScale: float
+        :param AsWireframe: default value is Standard_True
+        :type AsWireframe: bool
+        :rtype: void
+
+        * call_togl_triedron_display
+
+        :param ACView:
+        :type ACView: Graphic3d_CView &
+        :param APosition: default value is Aspect_TOTP_CENTER
+        :type APosition: Aspect_TypeOfTriedronPosition
+        :param AColor: default value is Quantity_NOC_WHITE
+        :type AColor: Quantity_NameOfColor
+        :param AScale: default value is 0.02
+        :type AScale: float
+        :param AsWireframe: default value is Standard_True
+        :type AsWireframe: bool
+        :rtype: void
+
+        * call_togl_triedron_display
+
+        :param ACView:
+        :type ACView: Graphic3d_CView &
+        :param APosition: default value is Aspect_TOTP_CENTER
+        :type APosition: Aspect_TypeOfTriedronPosition
+        :param AColor: default value is Quantity_NOC_WHITE
+        :type AColor: Quantity_NameOfColor
+        :param AScale: default value is 0.02
+        :type AScale: float
+        :param AsWireframe: default value is Standard_True
+        :type AsWireframe: bool
+        :rtype: void
+
+        * call_togl_triedron_display
+
+        :param ACView:
+        :type ACView: Graphic3d_CView &
+        :param APosition: default value is Aspect_TOTP_CENTER
+        :type APosition: Aspect_TypeOfTriedronPosition
+        :param AColor: default value is Quantity_NOC_WHITE
+        :type AColor: Quantity_NameOfColor
+        :param AScale: default value is 0.02
+        :type AScale: float
+        :param AsWireframe: default value is Standard_True
+        :type AsWireframe: bool
+        :rtype: void
+
         * call_togl_triedron_display
 
         :param ACView:
@@ -3396,7 +3686,7 @@ class Graphic3d_GraphicDriver(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_GraphicDriver_TriedronDisplay(self, *args)
 
-    def TriedronErase(self, *args) -> "void" :
+    def TriedronErase(self, *args):
         """
         * call_togl_triedron_erase
 
@@ -3407,8 +3697,16 @@ class Graphic3d_GraphicDriver(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_GraphicDriver_TriedronErase(self, *args)
 
-    def TriedronEcho(self, *args) -> "void" :
+    def TriedronEcho(self, *args):
         """
+        * call_togl_triedron_echo
+
+        :param ACView:
+        :type ACView: Graphic3d_CView &
+        :param AType: default value is Aspect_TOTE_NONE
+        :type AType: Aspect_TypeOfTriedronEcho
+        :rtype: void
+
         * call_togl_triedron_echo
 
         :param ACView:
@@ -3420,7 +3718,7 @@ class Graphic3d_GraphicDriver(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_GraphicDriver_TriedronEcho(self, *args)
 
-    def GraduatedTrihedronDisplay(self, *args) -> "void" :
+    def GraduatedTrihedronDisplay(self, *args):
         """
         * call_togl_graduatedtrihedron_display
 
@@ -3433,7 +3731,7 @@ class Graphic3d_GraphicDriver(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_GraphicDriver_GraduatedTrihedronDisplay(self, *args)
 
-    def GraduatedTrihedronErase(self, *args) -> "void" :
+    def GraduatedTrihedronErase(self, *args):
         """
         * call_togl_graduatedtrihedron_erase
 
@@ -3444,7 +3742,7 @@ class Graphic3d_GraphicDriver(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_GraphicDriver_GraduatedTrihedronErase(self, *args)
 
-    def GraduatedTrihedronMinMaxValues(self, *args) -> "void" :
+    def GraduatedTrihedronMinMaxValues(self, *args):
         """
         * call_togl_graduatedtrihedron_minmaxvalues
 
@@ -3465,7 +3763,7 @@ class Graphic3d_GraphicDriver(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_GraphicDriver_GraduatedTrihedronMinMaxValues(self, *args)
 
-    def BeginAddMode(self, *args) -> "Standard_Boolean" :
+    def BeginAddMode(self, *args):
         """
         * call_togl_begin_ajout_mode
 
@@ -3476,16 +3774,16 @@ class Graphic3d_GraphicDriver(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_GraphicDriver_BeginAddMode(self, *args)
 
-    def EndAddMode(self, *args) -> "void" :
+    def EndAddMode(self):
         """
         * call_togl_end_ajout_mode
 
         :rtype: void
 
         """
-        return _Graphic3d.Graphic3d_GraphicDriver_EndAddMode(self, *args)
+        return _Graphic3d.Graphic3d_GraphicDriver_EndAddMode(self)
 
-    def SetImmediateModeDrawToFront(self, *args) -> "Standard_Boolean" :
+    def SetImmediateModeDrawToFront(self, *args):
         """
         * @param theDrawToFrontBuffer Advanced option to modify rendering mode: 1. True. Drawing immediate mode structures directly to the front buffer over the scene image. Fast, so preferred for interactive work (used by default). However these extra drawings will be missed in image dump since it is performed from back buffer. Notice that since no pre-buffering used the V-Sync will be ignored and rendering could be seen in run-time (in case of slow hardware) and/or tearing may appear. So this is strongly recommended to draw only simple (fast) structures. 2. False. Drawing immediate mode structures to the back buffer. The complete scene is redrawn first, so this mode is slower if scene contains complex data and/or V-Sync is turned on. But it works in any case and is especially useful for view dump because the dump image is read from the back buffer. returns previous mode.
 
@@ -3498,7 +3796,7 @@ class Graphic3d_GraphicDriver(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_GraphicDriver_SetImmediateModeDrawToFront(self, *args)
 
-    def BeginImmediatMode(self, *args) -> "Standard_Boolean" :
+    def BeginImmediatMode(self, *args):
         """
         * call_togl_begin_immediat_mode
 
@@ -3517,8 +3815,16 @@ class Graphic3d_GraphicDriver(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_GraphicDriver_BeginImmediatMode(self, *args)
 
-    def ClearImmediatMode(self, *args) -> "void" :
+    def ClearImmediatMode(self, *args):
         """
+        * call_togl_clear_immediat_mode
+
+        :param ACView:
+        :type ACView: Graphic3d_CView &
+        :param aFlush: default value is Standard_True
+        :type aFlush: bool
+        :rtype: void
+
         * call_togl_clear_immediat_mode
 
         :param ACView:
@@ -3530,7 +3836,7 @@ class Graphic3d_GraphicDriver(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_GraphicDriver_ClearImmediatMode(self, *args)
 
-    def DrawStructure(self, *args) -> "void" :
+    def DrawStructure(self, *args):
         """
         * call_togl_draw_structure
 
@@ -3541,18 +3847,18 @@ class Graphic3d_GraphicDriver(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_GraphicDriver_DrawStructure(self, *args)
 
-    def EndImmediatMode(self, *args) -> "void" :
+    def EndImmediatMode(self, *args):
         """
         * call_togl_end_immediat_mode
 
         :param Synchronize:
-        :type Synchronize: int
+        :type Synchronize: Standard_Integer
         :rtype: void
 
         """
         return _Graphic3d.Graphic3d_GraphicDriver_EndImmediatMode(self, *args)
 
-    def Layer(self, *args) -> "void" :
+    def Layer(self, *args):
         """
         * call_togl_layer2d
 
@@ -3563,7 +3869,7 @@ class Graphic3d_GraphicDriver(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_GraphicDriver_Layer(self, *args)
 
-    def RemoveLayer(self, *args) -> "void" :
+    def RemoveLayer(self, *args):
         """
         * call_togl_removelayer2d
 
@@ -3574,7 +3880,7 @@ class Graphic3d_GraphicDriver(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_GraphicDriver_RemoveLayer(self, *args)
 
-    def BeginLayer(self, *args) -> "void" :
+    def BeginLayer(self, *args):
         """
         * call_togl_begin_layer2d
 
@@ -3585,25 +3891,25 @@ class Graphic3d_GraphicDriver(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_GraphicDriver_BeginLayer(self, *args)
 
-    def BeginPolygon2d(self, *args) -> "void" :
+    def BeginPolygon2d(self):
         """
         * call_togl_begin_polygon2d
 
         :rtype: void
 
         """
-        return _Graphic3d.Graphic3d_GraphicDriver_BeginPolygon2d(self, *args)
+        return _Graphic3d.Graphic3d_GraphicDriver_BeginPolygon2d(self)
 
-    def BeginPolyline2d(self, *args) -> "void" :
+    def BeginPolyline2d(self):
         """
         * call_togl_begin_polyline2d
 
         :rtype: void
 
         """
-        return _Graphic3d.Graphic3d_GraphicDriver_BeginPolyline2d(self, *args)
+        return _Graphic3d.Graphic3d_GraphicDriver_BeginPolyline2d(self)
 
-    def ClearLayer(self, *args) -> "void" :
+    def ClearLayer(self, *args):
         """
         * call_togl_clear_layer2d
 
@@ -3614,7 +3920,7 @@ class Graphic3d_GraphicDriver(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_GraphicDriver_ClearLayer(self, *args)
 
-    def Draw(self, *args) -> "void" :
+    def Draw(self, *args):
         """
         * call_togl_draw2d
 
@@ -3627,7 +3933,7 @@ class Graphic3d_GraphicDriver(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_GraphicDriver_Draw(self, *args)
 
-    def Edge(self, *args) -> "void" :
+    def Edge(self, *args):
         """
         * call_togl_edge2d
 
@@ -3640,34 +3946,34 @@ class Graphic3d_GraphicDriver(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_GraphicDriver_Edge(self, *args)
 
-    def EndLayer(self, *args) -> "void" :
+    def EndLayer(self):
         """
         * call_togl_end_layer2d
 
         :rtype: void
 
         """
-        return _Graphic3d.Graphic3d_GraphicDriver_EndLayer(self, *args)
+        return _Graphic3d.Graphic3d_GraphicDriver_EndLayer(self)
 
-    def EndPolygon2d(self, *args) -> "void" :
+    def EndPolygon2d(self):
         """
         * call_togl_end_polygon2d
 
         :rtype: void
 
         """
-        return _Graphic3d.Graphic3d_GraphicDriver_EndPolygon2d(self, *args)
+        return _Graphic3d.Graphic3d_GraphicDriver_EndPolygon2d(self)
 
-    def EndPolyline2d(self, *args) -> "void" :
+    def EndPolyline2d(self):
         """
         * call_togl_end_polyline2d
 
         :rtype: void
 
         """
-        return _Graphic3d.Graphic3d_GraphicDriver_EndPolyline2d(self, *args)
+        return _Graphic3d.Graphic3d_GraphicDriver_EndPolyline2d(self)
 
-    def Move(self, *args) -> "void" :
+    def Move(self, *args):
         """
         * call_togl_move2d
 
@@ -3680,7 +3986,7 @@ class Graphic3d_GraphicDriver(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_GraphicDriver_Move(self, *args)
 
-    def Rectangle(self, *args) -> "void" :
+    def Rectangle(self, *args):
         """
         * call_togl_rectangle2d
 
@@ -3697,7 +4003,7 @@ class Graphic3d_GraphicDriver(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_GraphicDriver_Rectangle(self, *args)
 
-    def SetColor(self, *args) -> "void" :
+    def SetColor(self, *args):
         """
         * call_togl_set_color
 
@@ -3712,7 +4018,7 @@ class Graphic3d_GraphicDriver(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_GraphicDriver_SetColor(self, *args)
 
-    def SetTransparency(self, *args) -> "void" :
+    def SetTransparency(self, *args):
         """
         * call_togl_set_transparency
 
@@ -3723,21 +4029,21 @@ class Graphic3d_GraphicDriver(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_GraphicDriver_SetTransparency(self, *args)
 
-    def UnsetTransparency(self, *args) -> "void" :
+    def UnsetTransparency(self):
         """
         * call_togl_unset_transparency
 
         :rtype: void
 
         """
-        return _Graphic3d.Graphic3d_GraphicDriver_UnsetTransparency(self, *args)
+        return _Graphic3d.Graphic3d_GraphicDriver_UnsetTransparency(self)
 
-    def SetLineAttributes(self, *args) -> "void" :
+    def SetLineAttributes(self, *args):
         """
         * call_togl_set_line_attributes
 
         :param Type:
-        :type Type: int
+        :type Type: Standard_Integer
         :param Width:
         :type Width: Standard_ShortReal
         :rtype: void
@@ -3745,14 +4051,14 @@ class Graphic3d_GraphicDriver(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_GraphicDriver_SetLineAttributes(self, *args)
 
-    def SetTextAttributes(self, *args) -> "void" :
+    def SetTextAttributes(self, *args):
         """
         * Set text attributes for under-/overlayer. <Font> argument defines the name of the font to be used, <Type> argument defines the display type of the text, <R> <G> <B> values define the color of decal or subtitle background. To set the color of the text you can use the SetColor method.
 
         :param Font:
         :type Font: char *
         :param Type:
-        :type Type: int
+        :type Type: Standard_Integer
         :param R:
         :type R: Standard_ShortReal
         :param G:
@@ -3764,7 +4070,7 @@ class Graphic3d_GraphicDriver(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_GraphicDriver_SetTextAttributes(self, *args)
 
-    def Text(self, *args) -> "void" :
+    def Text(self, *args):
         """
         * call_togl_text
 
@@ -3784,6 +4090,42 @@ class Graphic3d_GraphicDriver(OCC.MMgt.MMgt_TShared):
         :type AHta: Graphic3d_HorizontalTextAlignment
         :param AVta:
         :type AVta: Graphic3d_VerticalTextAlignment
+        :param EvalMinMax: default value is Standard_True
+        :type EvalMinMax: bool
+        :rtype: void
+
+        * call_togl_text
+
+        :param ACGroup:
+        :type ACGroup: Graphic3d_CGroup &
+        :param AText:
+        :type AText: char *
+        :param APoint:
+        :type APoint: Graphic3d_Vertex &
+        :param AHeight:
+        :type AHeight: float
+        :param AAngle:
+        :type AAngle: Quantity_PlaneAngle
+        :param ATp:
+        :type ATp: Graphic3d_TextPath
+        :param AHta:
+        :type AHta: Graphic3d_HorizontalTextAlignment
+        :param AVta:
+        :type AVta: Graphic3d_VerticalTextAlignment
+        :param EvalMinMax: default value is Standard_True
+        :type EvalMinMax: bool
+        :rtype: void
+
+        * call_togl_text
+
+        :param ACGroup:
+        :type ACGroup: Graphic3d_CGroup &
+        :param AText:
+        :type AText: char *
+        :param APoint:
+        :type APoint: Graphic3d_Vertex &
+        :param AHeight:
+        :type AHeight: float
         :param EvalMinMax: default value is Standard_True
         :type EvalMinMax: bool
         :rtype: void
@@ -3820,6 +4162,42 @@ class Graphic3d_GraphicDriver(OCC.MMgt.MMgt_TShared):
         :type AHta: Graphic3d_HorizontalTextAlignment
         :param AVta:
         :type AVta: Graphic3d_VerticalTextAlignment
+        :param EvalMinMax: default value is Standard_True
+        :type EvalMinMax: bool
+        :rtype: void
+
+        * call_togl_text
+
+        :param ACGroup:
+        :type ACGroup: Graphic3d_CGroup &
+        :param AText:
+        :type AText: TCollection_ExtendedString &
+        :param APoint:
+        :type APoint: Graphic3d_Vertex &
+        :param AHeight:
+        :type AHeight: float
+        :param AAngle:
+        :type AAngle: Quantity_PlaneAngle
+        :param ATp:
+        :type ATp: Graphic3d_TextPath
+        :param AHta:
+        :type AHta: Graphic3d_HorizontalTextAlignment
+        :param AVta:
+        :type AVta: Graphic3d_VerticalTextAlignment
+        :param EvalMinMax: default value is Standard_True
+        :type EvalMinMax: bool
+        :rtype: void
+
+        * call_togl_text
+
+        :param ACGroup:
+        :type ACGroup: Graphic3d_CGroup &
+        :param AText:
+        :type AText: TCollection_ExtendedString &
+        :param APoint:
+        :type APoint: Graphic3d_Vertex &
+        :param AHeight:
+        :type AHeight: float
         :param EvalMinMax: default value is Standard_True
         :type EvalMinMax: bool
         :rtype: void
@@ -3853,14 +4231,14 @@ class Graphic3d_GraphicDriver(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_GraphicDriver_Text(self, *args)
 
-    def DefaultTextHeight(self, *args) -> "Standard_ShortReal" :
+    def DefaultTextHeight(self):
         """
         :rtype: Standard_ShortReal
 
         """
-        return _Graphic3d.Graphic3d_GraphicDriver_DefaultTextHeight(self, *args)
+        return _Graphic3d.Graphic3d_GraphicDriver_DefaultTextHeight(self)
 
-    def TextSize(self, *args) -> "void" :
+    def TextSize(self, *args):
         """
         * call_togl_textsize2d
 
@@ -3879,7 +4257,7 @@ class Graphic3d_GraphicDriver(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_GraphicDriver_TextSize(self, *args)
 
-    def SetBackFacingModel(self, *args) -> "void" :
+    def SetBackFacingModel(self, *args):
         """
         * call_togl_backfacing
 
@@ -3890,7 +4268,7 @@ class Graphic3d_GraphicDriver(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_GraphicDriver_SetBackFacingModel(self, *args)
 
-    def SetDepthTestEnabled(self, *args) -> "void" :
+    def SetDepthTestEnabled(self, *args):
         """
         * call_togl_depthtest
 
@@ -3903,7 +4281,7 @@ class Graphic3d_GraphicDriver(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_GraphicDriver_SetDepthTestEnabled(self, *args)
 
-    def IsDepthTestEnabled(self, *args) -> "Standard_Boolean" :
+    def IsDepthTestEnabled(self, *args):
         """
         * call_togl_isdepthtest
 
@@ -3914,20 +4292,20 @@ class Graphic3d_GraphicDriver(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_GraphicDriver_IsDepthTestEnabled(self, *args)
 
-    def ReadDepths(self, *args) -> "void" :
+    def ReadDepths(self, *args):
         """
         * Reads depths of shown pixels of the given rectangle (glReadPixels with GL_DEPTH_COMPONENT)
 
         :param view:
         :type view: Graphic3d_CView &
         :param x:
-        :type x: int
+        :type x: Standard_Integer
         :param y:
-        :type y: int
+        :type y: Standard_Integer
         :param width:
-        :type width: int
+        :type width: Standard_Integer
         :param height:
-        :type height: int
+        :type height: Standard_Integer
         :param buffer:
         :type buffer: Standard_Address
         :rtype: void
@@ -3935,22 +4313,22 @@ class Graphic3d_GraphicDriver(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_GraphicDriver_ReadDepths(self, *args)
 
-    def FBOCreate(self, *args) -> "Graphic3d_PtrFrameBuffer" :
+    def FBOCreate(self, *args):
         """
         * Generate offscreen FBO in the graphic library. If not supported on hardware returns NULL.
 
         :param view:
         :type view: Graphic3d_CView &
         :param width:
-        :type width: int
+        :type width: Standard_Integer
         :param height:
-        :type height: int
+        :type height: Standard_Integer
         :rtype: Graphic3d_PtrFrameBuffer
 
         """
         return _Graphic3d.Graphic3d_GraphicDriver_FBOCreate(self, *args)
 
-    def FBORelease(self, *args) -> "void" :
+    def FBORelease(self, *args):
         """
         * Remove offscreen FBO from the graphic library
 
@@ -3963,7 +4341,7 @@ class Graphic3d_GraphicDriver(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_GraphicDriver_FBORelease(self, *args)
 
-    def FBOGetDimensions(self, *args) -> "void" :
+    def FBOGetDimensions(self, *args):
         """
         * Read offscreen FBO configuration.
 
@@ -3972,19 +4350,19 @@ class Graphic3d_GraphicDriver(OCC.MMgt.MMgt_TShared):
         :param fboPtr:
         :type fboPtr: Graphic3d_PtrFrameBuffer
         :param width:
-        :type width: int &
+        :type width: Standard_Integer &
         :param height:
-        :type height: int &
+        :type height: Standard_Integer &
         :param widthMax:
-        :type widthMax: int &
+        :type widthMax: Standard_Integer &
         :param heightMax:
-        :type heightMax: int &
+        :type heightMax: Standard_Integer &
         :rtype: void
 
         """
         return _Graphic3d.Graphic3d_GraphicDriver_FBOGetDimensions(self, *args)
 
-    def FBOChangeViewport(self, *args) -> "void" :
+    def FBOChangeViewport(self, *args):
         """
         * Change offscreen FBO viewport.
 
@@ -3993,15 +4371,15 @@ class Graphic3d_GraphicDriver(OCC.MMgt.MMgt_TShared):
         :param fboPtr:
         :type fboPtr: Graphic3d_PtrFrameBuffer &
         :param width:
-        :type width: int
+        :type width: Standard_Integer
         :param height:
-        :type height: int
+        :type height: Standard_Integer
         :rtype: void
 
         """
         return _Graphic3d.Graphic3d_GraphicDriver_FBOChangeViewport(self, *args)
 
-    def BufferDump(self, *args) -> "Standard_Boolean" :
+    def BufferDump(self, *args):
         """
         * Dump active rendering buffer into specified memory buffer.
 
@@ -4016,7 +4394,7 @@ class Graphic3d_GraphicDriver(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_GraphicDriver_BufferDump(self, *args)
 
-    def SetGLLightEnabled(self, *args) -> "void" :
+    def SetGLLightEnabled(self, *args):
         """
         * call_togl_gllight
 
@@ -4029,7 +4407,7 @@ class Graphic3d_GraphicDriver(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_GraphicDriver_SetGLLightEnabled(self, *args)
 
-    def IsGLLightEnabled(self, *args) -> "Standard_Boolean" :
+    def IsGLLightEnabled(self, *args):
         """
         * call_togl_isgllight
 
@@ -4040,7 +4418,7 @@ class Graphic3d_GraphicDriver(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_GraphicDriver_IsGLLightEnabled(self, *args)
 
-    def Export(self, *args) -> "Standard_Boolean" :
+    def Export(self, *args):
         """
         * Export scene into the one of the Vector graphics formats (SVG, PS, PDF...). In contrast to Bitmaps, Vector graphics is scalable (so you may got quality benefits on printing to laser printer). Notice however that results may differ a lot and do not contain some elements.
 
@@ -4051,9 +4429,87 @@ class Graphic3d_GraphicDriver(OCC.MMgt.MMgt_TShared):
         :param theSortType:
         :type theSortType: Graphic3d_SortType
         :param theWidth:
-        :type theWidth: int
+        :type theWidth: Standard_Integer
         :param theHeight:
-        :type theHeight: int
+        :type theHeight: Standard_Integer
+        :param theView:
+        :type theView: Graphic3d_CView &
+        :param theLayerUnder:
+        :type theLayerUnder: Aspect_CLayer2d &
+        :param theLayerOver:
+        :type theLayerOver: Aspect_CLayer2d &
+        :param thePrecision: default value is 0.005
+        :type thePrecision: float
+        :param theProgressBarFunc: default value is NULL
+        :type theProgressBarFunc: Standard_Address
+        :param theProgressObject: default value is NULL
+        :type theProgressObject: Standard_Address
+        :rtype: bool
+
+        * Export scene into the one of the Vector graphics formats (SVG, PS, PDF...). In contrast to Bitmaps, Vector graphics is scalable (so you may got quality benefits on printing to laser printer). Notice however that results may differ a lot and do not contain some elements.
+
+        :param theFileName:
+        :type theFileName: char *
+        :param theFormat:
+        :type theFormat: Graphic3d_ExportFormat
+        :param theSortType:
+        :type theSortType: Graphic3d_SortType
+        :param theWidth:
+        :type theWidth: Standard_Integer
+        :param theHeight:
+        :type theHeight: Standard_Integer
+        :param theView:
+        :type theView: Graphic3d_CView &
+        :param theLayerUnder:
+        :type theLayerUnder: Aspect_CLayer2d &
+        :param theLayerOver:
+        :type theLayerOver: Aspect_CLayer2d &
+        :param thePrecision: default value is 0.005
+        :type thePrecision: float
+        :param theProgressBarFunc: default value is NULL
+        :type theProgressBarFunc: Standard_Address
+        :param theProgressObject: default value is NULL
+        :type theProgressObject: Standard_Address
+        :rtype: bool
+
+        * Export scene into the one of the Vector graphics formats (SVG, PS, PDF...). In contrast to Bitmaps, Vector graphics is scalable (so you may got quality benefits on printing to laser printer). Notice however that results may differ a lot and do not contain some elements.
+
+        :param theFileName:
+        :type theFileName: char *
+        :param theFormat:
+        :type theFormat: Graphic3d_ExportFormat
+        :param theSortType:
+        :type theSortType: Graphic3d_SortType
+        :param theWidth:
+        :type theWidth: Standard_Integer
+        :param theHeight:
+        :type theHeight: Standard_Integer
+        :param theView:
+        :type theView: Graphic3d_CView &
+        :param theLayerUnder:
+        :type theLayerUnder: Aspect_CLayer2d &
+        :param theLayerOver:
+        :type theLayerOver: Aspect_CLayer2d &
+        :param thePrecision: default value is 0.005
+        :type thePrecision: float
+        :param theProgressBarFunc: default value is NULL
+        :type theProgressBarFunc: Standard_Address
+        :param theProgressObject: default value is NULL
+        :type theProgressObject: Standard_Address
+        :rtype: bool
+
+        * Export scene into the one of the Vector graphics formats (SVG, PS, PDF...). In contrast to Bitmaps, Vector graphics is scalable (so you may got quality benefits on printing to laser printer). Notice however that results may differ a lot and do not contain some elements.
+
+        :param theFileName:
+        :type theFileName: char *
+        :param theFormat:
+        :type theFormat: Graphic3d_ExportFormat
+        :param theSortType:
+        :type theSortType: Graphic3d_SortType
+        :param theWidth:
+        :type theWidth: Standard_Integer
+        :param theHeight:
+        :type theHeight: Standard_Integer
         :param theView:
         :type theView: Graphic3d_CView &
         :param theLayerUnder:
@@ -4071,51 +4527,51 @@ class Graphic3d_GraphicDriver(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_GraphicDriver_Export(self, *args)
 
-    def AddZLayer(self, *args) -> "void" :
+    def AddZLayer(self, *args):
         """
         * Add a new top-level z layer with ID <theLayerId> for the view. Z layers allow drawing structures in higher layers in foreground of structures in lower layers. To add a structure to desired layer on display it is necessary to set the layer ID for the structure.
 
         :param theCView:
         :type theCView: Graphic3d_CView &
         :param theLayerId:
-        :type theLayerId: int
+        :type theLayerId: Standard_Integer
         :rtype: void
 
         """
         return _Graphic3d.Graphic3d_GraphicDriver_AddZLayer(self, *args)
 
-    def RemoveZLayer(self, *args) -> "void" :
+    def RemoveZLayer(self, *args):
         """
         * Remove Z layer from the specified view. All structures displayed at the moment in layer will be displayed in default layer ( the bottom-level z layer ). To unset layer ID from associated structures use method UnsetZLayer (...).
 
         :param theCView:
         :type theCView: Graphic3d_CView &
         :param theLayerId:
-        :type theLayerId: int
+        :type theLayerId: Standard_Integer
         :rtype: void
 
         """
         return _Graphic3d.Graphic3d_GraphicDriver_RemoveZLayer(self, *args)
 
-    def UnsetZLayer(self, *args) -> "void" :
+    def UnsetZLayer(self, *args):
         """
         * Unset Z layer ID for all structures. The structure indexes will be set to default layer ( the bottom-level z layer with ID = 0 ).
 
         :param theLayerId:
-        :type theLayerId: int
+        :type theLayerId: Standard_Integer
         :rtype: void
 
         """
         return _Graphic3d.Graphic3d_GraphicDriver_UnsetZLayer(self, *args)
 
-    def ChangeZLayer(self, *args) -> "void" :
+    def ChangeZLayer(self, *args):
         """
         * Change Z layer of a structure. The new z layer ID will be used to define the associated layer for structure on display.
 
         :param theCStructure:
         :type theCStructure: Graphic3d_CStructure &
         :param theLayerId:
-        :type theLayerId: int
+        :type theLayerId: Standard_Integer
         :rtype: void
 
         * Change Z layer of a structure already presented in view.
@@ -4125,13 +4581,13 @@ class Graphic3d_GraphicDriver(OCC.MMgt.MMgt_TShared):
         :param theCView:
         :type theCView: Graphic3d_CView &
         :param theNewLayerId:
-        :type theNewLayerId: int
+        :type theNewLayerId: Standard_Integer
         :rtype: void
 
         """
         return _Graphic3d.Graphic3d_GraphicDriver_ChangeZLayer(self, *args)
 
-    def GetZLayer(self, *args) -> "Standard_Integer" :
+    def GetZLayer(self, *args):
         """
         * Get Z layer ID of structure. If the structure doesn't exists in graphic driver, the method returns -1.
 
@@ -4142,14 +4598,14 @@ class Graphic3d_GraphicDriver(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_GraphicDriver_GetZLayer(self, *args)
 
-    def SetZLayerSettings(self, *args) -> "void" :
+    def SetZLayerSettings(self, *args):
         """
         * Sets the settings for a single Z layer of specified view.
 
         :param theCView:
         :type theCView: Graphic3d_CView &
         :param theLayerId:
-        :type theLayerId: int
+        :type theLayerId: Standard_Integer
         :param theSettings:
         :type theSettings: Graphic3d_ZLayerSettings
         :rtype: void
@@ -4157,7 +4613,7 @@ class Graphic3d_GraphicDriver(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_GraphicDriver_SetZLayerSettings(self, *args)
 
-    def PrintBoolean(self, *args) -> "void" :
+    def PrintBoolean(self, *args):
         """
         :param AComment:
         :type AComment: char *
@@ -4168,62 +4624,62 @@ class Graphic3d_GraphicDriver(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_GraphicDriver_PrintBoolean(self, *args)
 
-    def PrintCGroup(self, *args) -> "void" :
+    def PrintCGroup(self, *args):
         """
         :param ACGroup:
         :type ACGroup: Graphic3d_CGroup &
         :param AField:
-        :type AField: int
+        :type AField: Standard_Integer
         :rtype: None
 
         """
         return _Graphic3d.Graphic3d_GraphicDriver_PrintCGroup(self, *args)
 
-    def PrintCLight(self, *args) -> "void" :
+    def PrintCLight(self, *args):
         """
         :param ACLight:
         :type ACLight: Graphic3d_CLight &
         :param AField:
-        :type AField: int
+        :type AField: Standard_Integer
         :rtype: None
 
         """
         return _Graphic3d.Graphic3d_GraphicDriver_PrintCLight(self, *args)
 
-    def PrintCPick(self, *args) -> "void" :
+    def PrintCPick(self, *args):
         """
         :param ACPick:
         :type ACPick: Graphic3d_CPick &
         :param AField:
-        :type AField: int
+        :type AField: Standard_Integer
         :rtype: None
 
         """
         return _Graphic3d.Graphic3d_GraphicDriver_PrintCPick(self, *args)
 
-    def PrintCStructure(self, *args) -> "void" :
+    def PrintCStructure(self, *args):
         """
         :param ACStructure:
         :type ACStructure: Graphic3d_CStructure &
         :param AField:
-        :type AField: int
+        :type AField: Standard_Integer
         :rtype: None
 
         """
         return _Graphic3d.Graphic3d_GraphicDriver_PrintCStructure(self, *args)
 
-    def PrintCView(self, *args) -> "void" :
+    def PrintCView(self, *args):
         """
         :param ACView:
         :type ACView: Graphic3d_CView &
         :param AField:
-        :type AField: int
+        :type AField: Standard_Integer
         :rtype: None
 
         """
         return _Graphic3d.Graphic3d_GraphicDriver_PrintCView(self, *args)
 
-    def PrintFunction(self, *args) -> "void" :
+    def PrintFunction(self, *args):
         """
         :param AFunc:
         :type AFunc: char *
@@ -4232,29 +4688,29 @@ class Graphic3d_GraphicDriver(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_GraphicDriver_PrintFunction(self, *args)
 
-    def PrintInteger(self, *args) -> "void" :
+    def PrintInteger(self, *args):
         """
         :param AComment:
         :type AComment: char *
         :param AValue:
-        :type AValue: int
+        :type AValue: Standard_Integer
         :rtype: None
 
         """
         return _Graphic3d.Graphic3d_GraphicDriver_PrintInteger(self, *args)
 
-    def PrintIResult(self, *args) -> "void" :
+    def PrintIResult(self, *args):
         """
         :param AFunc:
         :type AFunc: char *
         :param AResult:
-        :type AResult: int
+        :type AResult: Standard_Integer
         :rtype: None
 
         """
         return _Graphic3d.Graphic3d_GraphicDriver_PrintIResult(self, *args)
 
-    def PrintShortReal(self, *args) -> "void" :
+    def PrintShortReal(self, *args):
         """
         :param AComment:
         :type AComment: char *
@@ -4265,7 +4721,7 @@ class Graphic3d_GraphicDriver(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_GraphicDriver_PrintShortReal(self, *args)
 
-    def PrintMatrix(self, *args) -> "void" :
+    def PrintMatrix(self, *args):
         """
         :param AComment:
         :type AComment: char *
@@ -4276,7 +4732,7 @@ class Graphic3d_GraphicDriver(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_GraphicDriver_PrintMatrix(self, *args)
 
-    def PrintString(self, *args) -> "void" :
+    def PrintString(self, *args):
         """
         :param AComment:
         :type AComment: char *
@@ -4287,50 +4743,50 @@ class Graphic3d_GraphicDriver(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_GraphicDriver_PrintString(self, *args)
 
-    def SetTrace(self, *args) -> "void" :
+    def SetTrace(self, *args):
         """
         :param ALevel:
-        :type ALevel: int
+        :type ALevel: Standard_Integer
         :rtype: None
 
         """
         return _Graphic3d.Graphic3d_GraphicDriver_SetTrace(self, *args)
 
-    def Trace(self, *args) -> "Standard_Integer" :
+    def Trace(self):
         """
         :rtype: int
 
         """
-        return _Graphic3d.Graphic3d_GraphicDriver_Trace(self, *args)
+        return _Graphic3d.Graphic3d_GraphicDriver_Trace(self)
 
-    def GetDisplayConnection(self, *args) -> "Aspect_DisplayConnection_Handle const &" :
+    def GetDisplayConnection(self):
         """
         * returns Handle to display connection
 
         :rtype: Aspect_DisplayConnection_Handle
 
         """
-        return _Graphic3d.Graphic3d_GraphicDriver_GetDisplayConnection(self, *args)
+        return _Graphic3d.Graphic3d_GraphicDriver_GetDisplayConnection(self)
 
-    def IsDeviceLost(self, *args) -> "Standard_Boolean" :
+    def IsDeviceLost(self):
         """
         :rtype: bool
 
         """
-        return _Graphic3d.Graphic3d_GraphicDriver_IsDeviceLost(self, *args)
+        return _Graphic3d.Graphic3d_GraphicDriver_IsDeviceLost(self)
 
-    def ResetDeviceLostFlag(self, *args) -> "void" :
+    def ResetDeviceLostFlag(self):
         """
         :rtype: None
 
         """
-        return _Graphic3d.Graphic3d_GraphicDriver_ResetDeviceLostFlag(self, *args)
+        return _Graphic3d.Graphic3d_GraphicDriver_ResetDeviceLostFlag(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Graphic3d_GraphicDriver self)"""
         return _Graphic3d.Graphic3d_GraphicDriver__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Graphic3d_GraphicDriver" :
+    def GetHandle(self):
         """GetHandle(Graphic3d_GraphicDriver self) -> Handle_Graphic3d_GraphicDriver"""
         return _Graphic3d.Graphic3d_GraphicDriver_GetHandle(self)
 
@@ -4495,7 +4951,7 @@ Handle_Graphic3d_GraphicDriver._kill_pointed = new_instancemethod(_Graphic3d.Han
 Handle_Graphic3d_GraphicDriver_swigregister = _Graphic3d.Handle_Graphic3d_GraphicDriver_swigregister
 Handle_Graphic3d_GraphicDriver_swigregister(Handle_Graphic3d_GraphicDriver)
 
-def Handle_Graphic3d_GraphicDriver_DownCast(*args) -> "Handle_Graphic3d_GraphicDriver const" :
+def Handle_Graphic3d_GraphicDriver_DownCast(*args):
   return _Graphic3d.Handle_Graphic3d_GraphicDriver_DownCast(*args)
 Handle_Graphic3d_GraphicDriver_DownCast = _Graphic3d.Handle_Graphic3d_GraphicDriver_DownCast
 
@@ -4512,8 +4968,14 @@ class Graphic3d_Group(OCC.MMgt.MMgt_TShared):
 
         """
         _Graphic3d.Graphic3d_Group_swiginit(self,_Graphic3d.new_Graphic3d_Group(*args))
-    def Clear(self, *args) -> "void" :
+    def Clear(self, *args):
         """
+        * Supress all primitives and attributes of <self>. To clear group without update in Graphic3d_StructureManager pass Standard_False as <theUpdateStructureMgr>. This used on context and viewer destruction, when the pointer to structure manager in Graphic3d_Structure could be already released (pointers are used here to avoid handle cross-reference);
+
+        :param theUpdateStructureMgr: default value is Standard_True
+        :type theUpdateStructureMgr: bool
+        :rtype: None
+
         * Supress all primitives and attributes of <self>. To clear group without update in Graphic3d_StructureManager pass Standard_False as <theUpdateStructureMgr>. This used on context and viewer destruction, when the pointer to structure manager in Graphic3d_Structure could be already released (pointers are used here to avoid handle cross-reference);
 
         :param theUpdateStructureMgr: default value is Standard_True
@@ -4523,25 +4985,25 @@ class Graphic3d_Group(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_Group_Clear(self, *args)
 
-    def Destroy(self, *args) -> "void" :
+    def Destroy(self):
         """
         * Supress the group <self> in the structure.
 
         :rtype: None
 
         """
-        return _Graphic3d.Graphic3d_Group_Destroy(self, *args)
+        return _Graphic3d.Graphic3d_Group_Destroy(self)
 
-    def Remove(self, *args) -> "void" :
+    def Remove(self):
         """
         * Supress the group <self> in the structure. Warning: No more graphic operations in <self> after this call. Modifies the current modelling transform persistence (pan, zoom or rotate) Get the current modelling transform persistence (pan, zoom or rotate)
 
         :rtype: None
 
         """
-        return _Graphic3d.Graphic3d_Group_Remove(self, *args)
+        return _Graphic3d.Graphic3d_Group_Remove(self)
 
-    def SetPrimitivesAspect(self, *args) -> "void" :
+    def SetPrimitivesAspect(self, *args):
         """
         * Modifies the current context of the group to give another aspect for all the line primitives created after this call in the group.
 
@@ -4570,7 +5032,7 @@ class Graphic3d_Group(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_Group_SetPrimitivesAspect(self, *args)
 
-    def SetMinMaxValues(self, *args) -> "void" :
+    def SetMinMaxValues(self, *args):
         """
         * Sets the coordinates of the boundary box of the group <self>.
 
@@ -4591,8 +5053,28 @@ class Graphic3d_Group(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_Group_SetMinMaxValues(self, *args)
 
-    def Text(self, *args) -> "void" :
+    def Text(self, *args):
         """
+        * Creates the string <AText> at position <APoint>. The 3D point of attachment is projected. The text is written in the plane of projection. The attributes are given with respect to the plane of projection. AHeight : Height of text.  (Relative to the Normalized Projection Coordinates (NPC) Space). AAngle : Orientation of the text  (with respect to the horizontal).
+
+        :param AText:
+        :type AText: char *
+        :param APoint:
+        :type APoint: Graphic3d_Vertex &
+        :param AHeight:
+        :type AHeight: float
+        :param AAngle:
+        :type AAngle: Quantity_PlaneAngle
+        :param ATp:
+        :type ATp: Graphic3d_TextPath
+        :param AHta:
+        :type AHta: Graphic3d_HorizontalTextAlignment
+        :param AVta:
+        :type AVta: Graphic3d_VerticalTextAlignment
+        :param EvalMinMax: default value is Standard_True
+        :type EvalMinMax: bool
+        :rtype: None
+
         * Creates the string <AText> at position <APoint>. The 3D point of attachment is projected. The text is written in the plane of projection. The attributes are given with respect to the plane of projection. AHeight : Height of text.  (Relative to the Normalized Projection Coordinates (NPC) Space). AAngle : Orientation of the text  (with respect to the horizontal).
 
         :param AText:
@@ -4625,6 +5107,18 @@ class Graphic3d_Group(OCC.MMgt.MMgt_TShared):
         :type EvalMinMax: bool
         :rtype: None
 
+        * Creates the string <AText> at position <APoint>. The 3D point of attachment is projected. The text is written in the plane of projection. The attributes are given with respect to the plane of projection. AHeight : Height of text.  (Relative to the Normalized Projection Coordinates (NPC) Space). The other attributes have the following default values: AAngle : PI / 2. ATp : TP_RIGHT AHta : HTA_LEFT AVta : VTA_BOTTOM
+
+        :param AText:
+        :type AText: char *
+        :param APoint:
+        :type APoint: Graphic3d_Vertex &
+        :param AHeight:
+        :type AHeight: float
+        :param EvalMinMax: default value is Standard_True
+        :type EvalMinMax: bool
+        :rtype: None
+
         * Creates the string <AText> at position <APoint>. The 3D point of attachment is projected. The text is written in the plane of projection. The attributes are given with respect to the plane of projection. AHeight : Height of text.  (Relative to the Normalized Projection Coordinates (NPC) Space). AAngle : Orientation of the text  (with respect to the horizontal).
 
         :param AText:
@@ -4641,6 +5135,38 @@ class Graphic3d_Group(OCC.MMgt.MMgt_TShared):
         :type AHta: Graphic3d_HorizontalTextAlignment
         :param AVta:
         :type AVta: Graphic3d_VerticalTextAlignment
+        :param EvalMinMax: default value is Standard_True
+        :type EvalMinMax: bool
+        :rtype: None
+
+        * Creates the string <AText> at position <APoint>. The 3D point of attachment is projected. The text is written in the plane of projection. The attributes are given with respect to the plane of projection. AHeight : Height of text.  (Relative to the Normalized Projection Coordinates (NPC) Space). AAngle : Orientation of the text  (with respect to the horizontal).
+
+        :param AText:
+        :type AText: TCollection_ExtendedString &
+        :param APoint:
+        :type APoint: Graphic3d_Vertex &
+        :param AHeight:
+        :type AHeight: float
+        :param AAngle:
+        :type AAngle: Quantity_PlaneAngle
+        :param ATp:
+        :type ATp: Graphic3d_TextPath
+        :param AHta:
+        :type AHta: Graphic3d_HorizontalTextAlignment
+        :param AVta:
+        :type AVta: Graphic3d_VerticalTextAlignment
+        :param EvalMinMax: default value is Standard_True
+        :type EvalMinMax: bool
+        :rtype: None
+
+        * Creates the string <AText> at position <APoint>. The 3D point of attachment is projected. The text is written in the plane of projection. The attributes are given with respect to the plane of projection. AHeight : Height of text.  (Relative to the Normalized Projection Coordinates (NPC) Space). The other attributes have the following default values: AAngle : PI / 2. ATp : TP_RIGHT AHta : HTA_LEFT AVta : VTA_BOTTOM
+
+        :param AText:
+        :type AText: TCollection_ExtendedString &
+        :param APoint:
+        :type APoint: Graphic3d_Vertex &
+        :param AHeight:
+        :type AHeight: float
         :param EvalMinMax: default value is Standard_True
         :type EvalMinMax: bool
         :rtype: None
@@ -4660,8 +5186,16 @@ class Graphic3d_Group(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_Group_Text(self, *args)
 
-    def AddPrimitiveArray(self, *args) -> "void" :
+    def AddPrimitiveArray(self, *args):
         """
+        * Adds an array of primitives for display
+
+        :param elem:
+        :type elem: Handle_Graphic3d_ArrayOfPrimitives &
+        :param EvalMinMax: default value is Standard_True
+        :type EvalMinMax: bool
+        :rtype: None
+
         * Adds an array of primitives for display
 
         :param elem:
@@ -4673,8 +5207,16 @@ class Graphic3d_Group(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_Group_AddPrimitiveArray(self, *args)
 
-    def Marker(self, *args) -> "void" :
+    def Marker(self, *args):
         """
+        * Creates a primitive array with single marker using AddPrimitiveArray().
+
+        :param thePoint:
+        :type thePoint: Graphic3d_Vertex &
+        :param theToEvalMinMax: default value is Standard_True
+        :type theToEvalMinMax: bool
+        :rtype: None
+
         * Creates a primitive array with single marker using AddPrimitiveArray().
 
         :param thePoint:
@@ -4686,8 +5228,28 @@ class Graphic3d_Group(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_Group_Marker(self, *args)
 
-    def UserDraw(self, *args) -> "void" :
+    def UserDraw(self, *args):
         """
+        * Creates an UserDraw primitive Category: Methods to create UserDraw Warning: Raises GroupDefinitionError if ...
+
+        :param AnObject:
+        :type AnObject: Standard_Address
+        :param EvalMinMax: default value is Standard_True
+        :type EvalMinMax: bool
+        :param ContainsFacet: default value is Standard_False
+        :type ContainsFacet: bool
+        :rtype: None
+
+        * Creates an UserDraw primitive Category: Methods to create UserDraw Warning: Raises GroupDefinitionError if ...
+
+        :param AnObject:
+        :type AnObject: Standard_Address
+        :param EvalMinMax: default value is Standard_True
+        :type EvalMinMax: bool
+        :param ContainsFacet: default value is Standard_False
+        :type ContainsFacet: bool
+        :rtype: None
+
         * Creates an UserDraw primitive Category: Methods to create UserDraw Warning: Raises GroupDefinitionError if ...
 
         :param AnObject:
@@ -4701,7 +5263,7 @@ class Graphic3d_Group(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_Group_UserDraw(self, *args)
 
-    def SetStencilTestOptions(self, *args) -> "void" :
+    def SetStencilTestOptions(self, *args):
         """
         * sets the stencil test to theIsEnabled state;
 
@@ -4712,7 +5274,7 @@ class Graphic3d_Group(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_Group_SetStencilTestOptions(self, *args)
 
-    def SetFlippingOptions(self, *args) -> "void" :
+    def SetFlippingOptions(self, *args):
         """
         * sets the flipping to theIsEnabled state.
 
@@ -4725,7 +5287,7 @@ class Graphic3d_Group(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_Group_SetFlippingOptions(self, *args)
 
-    def IsGroupPrimitivesAspectSet(self, *args) -> "Standard_Boolean" :
+    def IsGroupPrimitivesAspectSet(self, *args):
         """
         * Returns True if aspect is set for the group.
 
@@ -4736,34 +5298,34 @@ class Graphic3d_Group(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_Group_IsGroupPrimitivesAspectSet(self, *args)
 
-    def ContainsFacet(self, *args) -> "Standard_Boolean" :
+    def ContainsFacet(self):
         """
         * Returns Standard_True if the group <self> contains Polygons, Triangles or Quadrangles.
 
         :rtype: bool
 
         """
-        return _Graphic3d.Graphic3d_Group_ContainsFacet(self, *args)
+        return _Graphic3d.Graphic3d_Group_ContainsFacet(self)
 
-    def IsDeleted(self, *args) -> "Standard_Boolean" :
+    def IsDeleted(self):
         """
         * Returns Standard_True if the group <self> is deleted. <self> is deleted after the call Remove (me) or the associated structure is deleted.
 
         :rtype: bool
 
         """
-        return _Graphic3d.Graphic3d_Group_IsDeleted(self, *args)
+        return _Graphic3d.Graphic3d_Group_IsDeleted(self)
 
-    def IsEmpty(self, *args) -> "Standard_Boolean" :
+    def IsEmpty(self):
         """
         * Returns Standard_True if the group <self> is empty.
 
         :rtype: bool
 
         """
-        return _Graphic3d.Graphic3d_Group_IsEmpty(self, *args)
+        return _Graphic3d.Graphic3d_Group_IsEmpty(self)
 
-    def MinMaxValues(self, *args) -> "void" :
+    def MinMaxValues(self):
         """
         * Returns the coordinates of the boundary box of the group <self>.
 
@@ -4782,22 +5344,22 @@ class Graphic3d_Group(OCC.MMgt.MMgt_TShared):
         :rtype: None
 
         """
-        return _Graphic3d.Graphic3d_Group_MinMaxValues(self, *args)
+        return _Graphic3d.Graphic3d_Group_MinMaxValues(self)
 
-    def Structure(self, *args) -> "Handle_Graphic3d_Structure" :
+    def Structure(self):
         """
         * Returns the structure containing the group <self>.
 
         :rtype: Handle_Graphic3d_Structure
 
         """
-        return _Graphic3d.Graphic3d_Group_Structure(self, *args)
+        return _Graphic3d.Graphic3d_Group_Structure(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Graphic3d_Group self)"""
         return _Graphic3d.Graphic3d_Group__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Graphic3d_Group" :
+    def GetHandle(self):
         """GetHandle(Graphic3d_Group self) -> Handle_Graphic3d_Group"""
         return _Graphic3d.Graphic3d_Group_GetHandle(self)
 
@@ -4852,41 +5414,41 @@ Handle_Graphic3d_Group._kill_pointed = new_instancemethod(_Graphic3d.Handle_Grap
 Handle_Graphic3d_Group_swigregister = _Graphic3d.Handle_Graphic3d_Group_swigregister
 Handle_Graphic3d_Group_swigregister(Handle_Graphic3d_Group)
 
-def Handle_Graphic3d_Group_DownCast(*args) -> "Handle_Graphic3d_Group const" :
+def Handle_Graphic3d_Group_DownCast(*args):
   return _Graphic3d.Handle_Graphic3d_Group_DownCast(*args)
 Handle_Graphic3d_Group_DownCast = _Graphic3d.Handle_Graphic3d_Group_DownCast
 
 class Graphic3d_HSequenceOfGroup(OCC.MMgt.MMgt_TShared):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _Graphic3d.Graphic3d_HSequenceOfGroup_swiginit(self,_Graphic3d.new_Graphic3d_HSequenceOfGroup(*args))
-    def IsEmpty(self, *args) -> "Standard_Boolean" :
+        _Graphic3d.Graphic3d_HSequenceOfGroup_swiginit(self,_Graphic3d.new_Graphic3d_HSequenceOfGroup())
+    def IsEmpty(self):
         """
         :rtype: bool
 
         """
-        return _Graphic3d.Graphic3d_HSequenceOfGroup_IsEmpty(self, *args)
+        return _Graphic3d.Graphic3d_HSequenceOfGroup_IsEmpty(self)
 
-    def Length(self, *args) -> "Standard_Integer" :
+    def Length(self):
         """
         :rtype: int
 
         """
-        return _Graphic3d.Graphic3d_HSequenceOfGroup_Length(self, *args)
+        return _Graphic3d.Graphic3d_HSequenceOfGroup_Length(self)
 
-    def Clear(self, *args) -> "void" :
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _Graphic3d.Graphic3d_HSequenceOfGroup_Clear(self, *args)
+        return _Graphic3d.Graphic3d_HSequenceOfGroup_Clear(self)
 
-    def Append(self, *args) -> "void" :
+    def Append(self, *args):
         """
         :param anItem:
         :type anItem: Handle_Graphic3d_Group &
@@ -4899,7 +5461,7 @@ class Graphic3d_HSequenceOfGroup(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_HSequenceOfGroup_Append(self, *args)
 
-    def Prepend(self, *args) -> "void" :
+    def Prepend(self, *args):
         """
         :param anItem:
         :type anItem: Handle_Graphic3d_Group &
@@ -4912,23 +5474,23 @@ class Graphic3d_HSequenceOfGroup(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_HSequenceOfGroup_Prepend(self, *args)
 
-    def Reverse(self, *args) -> "void" :
+    def Reverse(self):
         """
         :rtype: None
 
         """
-        return _Graphic3d.Graphic3d_HSequenceOfGroup_Reverse(self, *args)
+        return _Graphic3d.Graphic3d_HSequenceOfGroup_Reverse(self)
 
-    def InsertBefore(self, *args) -> "void" :
+    def InsertBefore(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :param anItem:
         :type anItem: Handle_Graphic3d_Group &
         :rtype: None
 
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :param aSequence:
         :type aSequence: Handle_Graphic3d_HSequenceOfGroup &
         :rtype: None
@@ -4936,16 +5498,16 @@ class Graphic3d_HSequenceOfGroup(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_HSequenceOfGroup_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args) -> "void" :
+    def InsertAfter(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :param anItem:
         :type anItem: Handle_Graphic3d_Group &
         :rtype: None
 
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :param aSequence:
         :type aSequence: Handle_Graphic3d_HSequenceOfGroup &
         :rtype: None
@@ -4953,30 +5515,30 @@ class Graphic3d_HSequenceOfGroup(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_HSequenceOfGroup_InsertAfter(self, *args)
 
-    def Exchange(self, *args) -> "void" :
+    def Exchange(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :param anOtherIndex:
-        :type anOtherIndex: int
+        :type anOtherIndex: Standard_Integer
         :rtype: None
 
         """
         return _Graphic3d.Graphic3d_HSequenceOfGroup_Exchange(self, *args)
 
-    def Split(self, *args) -> "Handle_Graphic3d_HSequenceOfGroup" :
+    def Split(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :rtype: Handle_Graphic3d_HSequenceOfGroup
 
         """
         return _Graphic3d.Graphic3d_HSequenceOfGroup_Split(self, *args)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :param anItem:
         :type anItem: Handle_Graphic3d_Group &
         :rtype: None
@@ -4984,65 +5546,65 @@ class Graphic3d_HSequenceOfGroup(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_HSequenceOfGroup_SetValue(self, *args)
 
-    def Value(self, *args) -> "Handle_Graphic3d_Group const &" :
+    def Value(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :rtype: Handle_Graphic3d_Group
 
         """
         return _Graphic3d.Graphic3d_HSequenceOfGroup_Value(self, *args)
 
-    def ChangeValue(self, *args) -> "Handle_Graphic3d_Group &" :
+    def ChangeValue(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :rtype: Handle_Graphic3d_Group
 
         """
         return _Graphic3d.Graphic3d_HSequenceOfGroup_ChangeValue(self, *args)
 
-    def Remove(self, *args) -> "void" :
+    def Remove(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :rtype: None
 
         :param fromIndex:
-        :type fromIndex: int
+        :type fromIndex: Standard_Integer
         :param toIndex:
-        :type toIndex: int
+        :type toIndex: Standard_Integer
         :rtype: None
 
         """
         return _Graphic3d.Graphic3d_HSequenceOfGroup_Remove(self, *args)
 
-    def Sequence(self, *args) -> "Graphic3d_SequenceOfGroup const &" :
+    def Sequence(self):
         """
         :rtype: Graphic3d_SequenceOfGroup
 
         """
-        return _Graphic3d.Graphic3d_HSequenceOfGroup_Sequence(self, *args)
+        return _Graphic3d.Graphic3d_HSequenceOfGroup_Sequence(self)
 
-    def ChangeSequence(self, *args) -> "Graphic3d_SequenceOfGroup &" :
+    def ChangeSequence(self):
         """
         :rtype: Graphic3d_SequenceOfGroup
 
         """
-        return _Graphic3d.Graphic3d_HSequenceOfGroup_ChangeSequence(self, *args)
+        return _Graphic3d.Graphic3d_HSequenceOfGroup_ChangeSequence(self)
 
-    def ShallowCopy(self, *args) -> "Handle_Graphic3d_HSequenceOfGroup" :
+    def ShallowCopy(self):
         """
         :rtype: Handle_Graphic3d_HSequenceOfGroup
 
         """
-        return _Graphic3d.Graphic3d_HSequenceOfGroup_ShallowCopy(self, *args)
+        return _Graphic3d.Graphic3d_HSequenceOfGroup_ShallowCopy(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Graphic3d_HSequenceOfGroup self)"""
         return _Graphic3d.Graphic3d_HSequenceOfGroup__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Graphic3d_HSequenceOfGroup" :
+    def GetHandle(self):
         """GetHandle(Graphic3d_HSequenceOfGroup self) -> Handle_Graphic3d_HSequenceOfGroup"""
         return _Graphic3d.Graphic3d_HSequenceOfGroup_GetHandle(self)
 
@@ -5097,41 +5659,41 @@ Handle_Graphic3d_HSequenceOfGroup._kill_pointed = new_instancemethod(_Graphic3d.
 Handle_Graphic3d_HSequenceOfGroup_swigregister = _Graphic3d.Handle_Graphic3d_HSequenceOfGroup_swigregister
 Handle_Graphic3d_HSequenceOfGroup_swigregister(Handle_Graphic3d_HSequenceOfGroup)
 
-def Handle_Graphic3d_HSequenceOfGroup_DownCast(*args) -> "Handle_Graphic3d_HSequenceOfGroup const" :
+def Handle_Graphic3d_HSequenceOfGroup_DownCast(*args):
   return _Graphic3d.Handle_Graphic3d_HSequenceOfGroup_DownCast(*args)
 Handle_Graphic3d_HSequenceOfGroup_DownCast = _Graphic3d.Handle_Graphic3d_HSequenceOfGroup_DownCast
 
 class Graphic3d_HSequenceOfStructure(OCC.MMgt.MMgt_TShared):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _Graphic3d.Graphic3d_HSequenceOfStructure_swiginit(self,_Graphic3d.new_Graphic3d_HSequenceOfStructure(*args))
-    def IsEmpty(self, *args) -> "Standard_Boolean" :
+        _Graphic3d.Graphic3d_HSequenceOfStructure_swiginit(self,_Graphic3d.new_Graphic3d_HSequenceOfStructure())
+    def IsEmpty(self):
         """
         :rtype: bool
 
         """
-        return _Graphic3d.Graphic3d_HSequenceOfStructure_IsEmpty(self, *args)
+        return _Graphic3d.Graphic3d_HSequenceOfStructure_IsEmpty(self)
 
-    def Length(self, *args) -> "Standard_Integer" :
+    def Length(self):
         """
         :rtype: int
 
         """
-        return _Graphic3d.Graphic3d_HSequenceOfStructure_Length(self, *args)
+        return _Graphic3d.Graphic3d_HSequenceOfStructure_Length(self)
 
-    def Clear(self, *args) -> "void" :
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _Graphic3d.Graphic3d_HSequenceOfStructure_Clear(self, *args)
+        return _Graphic3d.Graphic3d_HSequenceOfStructure_Clear(self)
 
-    def Append(self, *args) -> "void" :
+    def Append(self, *args):
         """
         :param anItem:
         :type anItem: Handle_Graphic3d_Structure &
@@ -5144,7 +5706,7 @@ class Graphic3d_HSequenceOfStructure(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_HSequenceOfStructure_Append(self, *args)
 
-    def Prepend(self, *args) -> "void" :
+    def Prepend(self, *args):
         """
         :param anItem:
         :type anItem: Handle_Graphic3d_Structure &
@@ -5157,23 +5719,23 @@ class Graphic3d_HSequenceOfStructure(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_HSequenceOfStructure_Prepend(self, *args)
 
-    def Reverse(self, *args) -> "void" :
+    def Reverse(self):
         """
         :rtype: None
 
         """
-        return _Graphic3d.Graphic3d_HSequenceOfStructure_Reverse(self, *args)
+        return _Graphic3d.Graphic3d_HSequenceOfStructure_Reverse(self)
 
-    def InsertBefore(self, *args) -> "void" :
+    def InsertBefore(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :param anItem:
         :type anItem: Handle_Graphic3d_Structure &
         :rtype: None
 
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :param aSequence:
         :type aSequence: Handle_Graphic3d_HSequenceOfStructure &
         :rtype: None
@@ -5181,16 +5743,16 @@ class Graphic3d_HSequenceOfStructure(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_HSequenceOfStructure_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args) -> "void" :
+    def InsertAfter(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :param anItem:
         :type anItem: Handle_Graphic3d_Structure &
         :rtype: None
 
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :param aSequence:
         :type aSequence: Handle_Graphic3d_HSequenceOfStructure &
         :rtype: None
@@ -5198,30 +5760,30 @@ class Graphic3d_HSequenceOfStructure(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_HSequenceOfStructure_InsertAfter(self, *args)
 
-    def Exchange(self, *args) -> "void" :
+    def Exchange(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :param anOtherIndex:
-        :type anOtherIndex: int
+        :type anOtherIndex: Standard_Integer
         :rtype: None
 
         """
         return _Graphic3d.Graphic3d_HSequenceOfStructure_Exchange(self, *args)
 
-    def Split(self, *args) -> "Handle_Graphic3d_HSequenceOfStructure" :
+    def Split(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :rtype: Handle_Graphic3d_HSequenceOfStructure
 
         """
         return _Graphic3d.Graphic3d_HSequenceOfStructure_Split(self, *args)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :param anItem:
         :type anItem: Handle_Graphic3d_Structure &
         :rtype: None
@@ -5229,65 +5791,65 @@ class Graphic3d_HSequenceOfStructure(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_HSequenceOfStructure_SetValue(self, *args)
 
-    def Value(self, *args) -> "Handle_Graphic3d_Structure const &" :
+    def Value(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :rtype: Handle_Graphic3d_Structure
 
         """
         return _Graphic3d.Graphic3d_HSequenceOfStructure_Value(self, *args)
 
-    def ChangeValue(self, *args) -> "Handle_Graphic3d_Structure &" :
+    def ChangeValue(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :rtype: Handle_Graphic3d_Structure
 
         """
         return _Graphic3d.Graphic3d_HSequenceOfStructure_ChangeValue(self, *args)
 
-    def Remove(self, *args) -> "void" :
+    def Remove(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :rtype: None
 
         :param fromIndex:
-        :type fromIndex: int
+        :type fromIndex: Standard_Integer
         :param toIndex:
-        :type toIndex: int
+        :type toIndex: Standard_Integer
         :rtype: None
 
         """
         return _Graphic3d.Graphic3d_HSequenceOfStructure_Remove(self, *args)
 
-    def Sequence(self, *args) -> "Graphic3d_SequenceOfStructure const &" :
+    def Sequence(self):
         """
         :rtype: Graphic3d_SequenceOfStructure
 
         """
-        return _Graphic3d.Graphic3d_HSequenceOfStructure_Sequence(self, *args)
+        return _Graphic3d.Graphic3d_HSequenceOfStructure_Sequence(self)
 
-    def ChangeSequence(self, *args) -> "Graphic3d_SequenceOfStructure &" :
+    def ChangeSequence(self):
         """
         :rtype: Graphic3d_SequenceOfStructure
 
         """
-        return _Graphic3d.Graphic3d_HSequenceOfStructure_ChangeSequence(self, *args)
+        return _Graphic3d.Graphic3d_HSequenceOfStructure_ChangeSequence(self)
 
-    def ShallowCopy(self, *args) -> "Handle_Graphic3d_HSequenceOfStructure" :
+    def ShallowCopy(self):
         """
         :rtype: Handle_Graphic3d_HSequenceOfStructure
 
         """
-        return _Graphic3d.Graphic3d_HSequenceOfStructure_ShallowCopy(self, *args)
+        return _Graphic3d.Graphic3d_HSequenceOfStructure_ShallowCopy(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Graphic3d_HSequenceOfStructure self)"""
         return _Graphic3d.Graphic3d_HSequenceOfStructure__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Graphic3d_HSequenceOfStructure" :
+    def GetHandle(self):
         """GetHandle(Graphic3d_HSequenceOfStructure self) -> Handle_Graphic3d_HSequenceOfStructure"""
         return _Graphic3d.Graphic3d_HSequenceOfStructure_GetHandle(self)
 
@@ -5342,41 +5904,41 @@ Handle_Graphic3d_HSequenceOfStructure._kill_pointed = new_instancemethod(_Graphi
 Handle_Graphic3d_HSequenceOfStructure_swigregister = _Graphic3d.Handle_Graphic3d_HSequenceOfStructure_swigregister
 Handle_Graphic3d_HSequenceOfStructure_swigregister(Handle_Graphic3d_HSequenceOfStructure)
 
-def Handle_Graphic3d_HSequenceOfStructure_DownCast(*args) -> "Handle_Graphic3d_HSequenceOfStructure const" :
+def Handle_Graphic3d_HSequenceOfStructure_DownCast(*args):
   return _Graphic3d.Handle_Graphic3d_HSequenceOfStructure_DownCast(*args)
 Handle_Graphic3d_HSequenceOfStructure_DownCast = _Graphic3d.Handle_Graphic3d_HSequenceOfStructure_DownCast
 
 class Graphic3d_HSetOfGroup(OCC.MMgt.MMgt_TShared):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _Graphic3d.Graphic3d_HSetOfGroup_swiginit(self,_Graphic3d.new_Graphic3d_HSetOfGroup(*args))
-    def Extent(self, *args) -> "Standard_Integer" :
+        _Graphic3d.Graphic3d_HSetOfGroup_swiginit(self,_Graphic3d.new_Graphic3d_HSetOfGroup())
+    def Extent(self):
         """
         :rtype: int
 
         """
-        return _Graphic3d.Graphic3d_HSetOfGroup_Extent(self, *args)
+        return _Graphic3d.Graphic3d_HSetOfGroup_Extent(self)
 
-    def IsEmpty(self, *args) -> "Standard_Boolean" :
+    def IsEmpty(self):
         """
         :rtype: bool
 
         """
-        return _Graphic3d.Graphic3d_HSetOfGroup_IsEmpty(self, *args)
+        return _Graphic3d.Graphic3d_HSetOfGroup_IsEmpty(self)
 
-    def Clear(self, *args) -> "void" :
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _Graphic3d.Graphic3d_HSetOfGroup_Clear(self, *args)
+        return _Graphic3d.Graphic3d_HSetOfGroup_Clear(self)
 
-    def Add(self, *args) -> "Standard_Boolean" :
+    def Add(self, *args):
         """
         :param T:
         :type T: Handle_Graphic3d_Group &
@@ -5385,7 +5947,7 @@ class Graphic3d_HSetOfGroup(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_HSetOfGroup_Add(self, *args)
 
-    def Remove(self, *args) -> "Standard_Boolean" :
+    def Remove(self, *args):
         """
         :param T:
         :type T: Handle_Graphic3d_Group &
@@ -5394,7 +5956,7 @@ class Graphic3d_HSetOfGroup(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_HSetOfGroup_Remove(self, *args)
 
-    def Union(self, *args) -> "Handle_Graphic3d_HSetOfGroup" :
+    def Union(self, *args):
         """
         :param B:
         :type B: Handle_Graphic3d_HSetOfGroup &
@@ -5403,7 +5965,7 @@ class Graphic3d_HSetOfGroup(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_HSetOfGroup_Union(self, *args)
 
-    def Intersection(self, *args) -> "Handle_Graphic3d_HSetOfGroup" :
+    def Intersection(self, *args):
         """
         :param B:
         :type B: Handle_Graphic3d_HSetOfGroup &
@@ -5412,7 +5974,7 @@ class Graphic3d_HSetOfGroup(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_HSetOfGroup_Intersection(self, *args)
 
-    def Difference(self, *args) -> "Handle_Graphic3d_HSetOfGroup" :
+    def Difference(self, *args):
         """
         :param B:
         :type B: Handle_Graphic3d_HSetOfGroup &
@@ -5421,7 +5983,7 @@ class Graphic3d_HSetOfGroup(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_HSetOfGroup_Difference(self, *args)
 
-    def Contains(self, *args) -> "Standard_Boolean" :
+    def Contains(self, *args):
         """
         :param T:
         :type T: Handle_Graphic3d_Group &
@@ -5430,7 +5992,7 @@ class Graphic3d_HSetOfGroup(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_HSetOfGroup_Contains(self, *args)
 
-    def IsASubset(self, *args) -> "Standard_Boolean" :
+    def IsASubset(self, *args):
         """
         :param S:
         :type S: Handle_Graphic3d_HSetOfGroup &
@@ -5439,7 +6001,7 @@ class Graphic3d_HSetOfGroup(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_HSetOfGroup_IsASubset(self, *args)
 
-    def IsAProperSubset(self, *args) -> "Standard_Boolean" :
+    def IsAProperSubset(self, *args):
         """
         :param S:
         :type S: Handle_Graphic3d_HSetOfGroup &
@@ -5448,32 +6010,32 @@ class Graphic3d_HSetOfGroup(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_HSetOfGroup_IsAProperSubset(self, *args)
 
-    def ShallowCopy(self, *args) -> "Handle_Graphic3d_HSetOfGroup" :
+    def ShallowCopy(self):
         """
         :rtype: Handle_Graphic3d_HSetOfGroup
 
         """
-        return _Graphic3d.Graphic3d_HSetOfGroup_ShallowCopy(self, *args)
+        return _Graphic3d.Graphic3d_HSetOfGroup_ShallowCopy(self)
 
-    def Set(self, *args) -> "Graphic3d_SetOfGroup const &" :
+    def Set(self):
         """
         :rtype: Graphic3d_SetOfGroup
 
         """
-        return _Graphic3d.Graphic3d_HSetOfGroup_Set(self, *args)
+        return _Graphic3d.Graphic3d_HSetOfGroup_Set(self)
 
-    def ChangeSet(self, *args) -> "Graphic3d_SetOfGroup &" :
+    def ChangeSet(self):
         """
         :rtype: Graphic3d_SetOfGroup
 
         """
-        return _Graphic3d.Graphic3d_HSetOfGroup_ChangeSet(self, *args)
+        return _Graphic3d.Graphic3d_HSetOfGroup_ChangeSet(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Graphic3d_HSetOfGroup self)"""
         return _Graphic3d.Graphic3d_HSetOfGroup__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Graphic3d_HSetOfGroup" :
+    def GetHandle(self):
         """GetHandle(Graphic3d_HSetOfGroup self) -> Handle_Graphic3d_HSetOfGroup"""
         return _Graphic3d.Graphic3d_HSetOfGroup_GetHandle(self)
 
@@ -5525,7 +6087,7 @@ Handle_Graphic3d_HSetOfGroup._kill_pointed = new_instancemethod(_Graphic3d.Handl
 Handle_Graphic3d_HSetOfGroup_swigregister = _Graphic3d.Handle_Graphic3d_HSetOfGroup_swigregister
 Handle_Graphic3d_HSetOfGroup_swigregister(Handle_Graphic3d_HSetOfGroup)
 
-def Handle_Graphic3d_HSetOfGroup_DownCast(*args) -> "Handle_Graphic3d_HSetOfGroup const" :
+def Handle_Graphic3d_HSetOfGroup_DownCast(*args):
   return _Graphic3d.Handle_Graphic3d_HSetOfGroup_DownCast(*args)
 Handle_Graphic3d_HSetOfGroup_DownCast = _Graphic3d.Handle_Graphic3d_HSetOfGroup_DownCast
 
@@ -5542,7 +6104,7 @@ class Graphic3d_ListIteratorOfListOfPArray(object):
 
         """
         _Graphic3d.Graphic3d_ListIteratorOfListOfPArray_swiginit(self,_Graphic3d.new_Graphic3d_ListIteratorOfListOfPArray(*args))
-    def Initialize(self, *args) -> "void" :
+    def Initialize(self, *args):
         """
         :param L:
         :type L: Graphic3d_ListOfPArray &
@@ -5551,26 +6113,26 @@ class Graphic3d_ListIteratorOfListOfPArray(object):
         """
         return _Graphic3d.Graphic3d_ListIteratorOfListOfPArray_Initialize(self, *args)
 
-    def More(self, *args) -> "Standard_Boolean" :
+    def More(self):
         """
         :rtype: bool
 
         """
-        return _Graphic3d.Graphic3d_ListIteratorOfListOfPArray_More(self, *args)
+        return _Graphic3d.Graphic3d_ListIteratorOfListOfPArray_More(self)
 
-    def Next(self, *args) -> "void" :
+    def Next(self):
         """
         :rtype: None
 
         """
-        return _Graphic3d.Graphic3d_ListIteratorOfListOfPArray_Next(self, *args)
+        return _Graphic3d.Graphic3d_ListIteratorOfListOfPArray_Next(self)
 
-    def Value(self, *args) -> "Handle_Graphic3d_ArrayOfPrimitives &" :
+    def Value(self):
         """
         :rtype: Handle_Graphic3d_ArrayOfPrimitives
 
         """
-        return _Graphic3d.Graphic3d_ListIteratorOfListOfPArray_Value(self, *args)
+        return _Graphic3d.Graphic3d_ListIteratorOfListOfPArray_Value(self)
 
     def __del__(self):
     	try:
@@ -5601,7 +6163,7 @@ class Graphic3d_ListIteratorOfListOfShortReal(object):
 
         """
         _Graphic3d.Graphic3d_ListIteratorOfListOfShortReal_swiginit(self,_Graphic3d.new_Graphic3d_ListIteratorOfListOfShortReal(*args))
-    def Initialize(self, *args) -> "void" :
+    def Initialize(self, *args):
         """
         :param L:
         :type L: Graphic3d_ListOfShortReal &
@@ -5610,26 +6172,26 @@ class Graphic3d_ListIteratorOfListOfShortReal(object):
         """
         return _Graphic3d.Graphic3d_ListIteratorOfListOfShortReal_Initialize(self, *args)
 
-    def More(self, *args) -> "Standard_Boolean" :
+    def More(self):
         """
         :rtype: bool
 
         """
-        return _Graphic3d.Graphic3d_ListIteratorOfListOfShortReal_More(self, *args)
+        return _Graphic3d.Graphic3d_ListIteratorOfListOfShortReal_More(self)
 
-    def Next(self, *args) -> "void" :
+    def Next(self):
         """
         :rtype: None
 
         """
-        return _Graphic3d.Graphic3d_ListIteratorOfListOfShortReal_Next(self, *args)
+        return _Graphic3d.Graphic3d_ListIteratorOfListOfShortReal_Next(self)
 
-    def Value(self, *args) -> "Standard_ShortReal &" :
+    def Value(self):
         """
         :rtype: Standard_ShortReal
 
         """
-        return _Graphic3d.Graphic3d_ListIteratorOfListOfShortReal_Value(self, *args)
+        return _Graphic3d.Graphic3d_ListIteratorOfListOfShortReal_Value(self)
 
     def __del__(self):
     	try:
@@ -5660,7 +6222,7 @@ class Graphic3d_ListIteratorOfSetListOfSetOfGroup(object):
 
         """
         _Graphic3d.Graphic3d_ListIteratorOfSetListOfSetOfGroup_swiginit(self,_Graphic3d.new_Graphic3d_ListIteratorOfSetListOfSetOfGroup(*args))
-    def Initialize(self, *args) -> "void" :
+    def Initialize(self, *args):
         """
         :param L:
         :type L: Graphic3d_SetListOfSetOfGroup &
@@ -5669,26 +6231,26 @@ class Graphic3d_ListIteratorOfSetListOfSetOfGroup(object):
         """
         return _Graphic3d.Graphic3d_ListIteratorOfSetListOfSetOfGroup_Initialize(self, *args)
 
-    def More(self, *args) -> "Standard_Boolean" :
+    def More(self):
         """
         :rtype: bool
 
         """
-        return _Graphic3d.Graphic3d_ListIteratorOfSetListOfSetOfGroup_More(self, *args)
+        return _Graphic3d.Graphic3d_ListIteratorOfSetListOfSetOfGroup_More(self)
 
-    def Next(self, *args) -> "void" :
+    def Next(self):
         """
         :rtype: None
 
         """
-        return _Graphic3d.Graphic3d_ListIteratorOfSetListOfSetOfGroup_Next(self, *args)
+        return _Graphic3d.Graphic3d_ListIteratorOfSetListOfSetOfGroup_Next(self)
 
-    def Value(self, *args) -> "Handle_Graphic3d_Group &" :
+    def Value(self):
         """
         :rtype: Handle_Graphic3d_Group
 
         """
-        return _Graphic3d.Graphic3d_ListIteratorOfSetListOfSetOfGroup_Value(self, *args)
+        return _Graphic3d.Graphic3d_ListIteratorOfSetListOfSetOfGroup_Value(self)
 
     def __del__(self):
     	try:
@@ -5719,18 +6281,18 @@ class Graphic3d_ListNodeOfListOfPArray(OCC.TCollection.TCollection_MapNode):
 
         """
         _Graphic3d.Graphic3d_ListNodeOfListOfPArray_swiginit(self,_Graphic3d.new_Graphic3d_ListNodeOfListOfPArray(*args))
-    def Value(self, *args) -> "Handle_Graphic3d_ArrayOfPrimitives &" :
+    def Value(self):
         """
         :rtype: Handle_Graphic3d_ArrayOfPrimitives
 
         """
-        return _Graphic3d.Graphic3d_ListNodeOfListOfPArray_Value(self, *args)
+        return _Graphic3d.Graphic3d_ListNodeOfListOfPArray_Value(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Graphic3d_ListNodeOfListOfPArray self)"""
         return _Graphic3d.Graphic3d_ListNodeOfListOfPArray__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Graphic3d_ListNodeOfListOfPArray" :
+    def GetHandle(self):
         """GetHandle(Graphic3d_ListNodeOfListOfPArray self) -> Handle_Graphic3d_ListNodeOfListOfPArray"""
         return _Graphic3d.Graphic3d_ListNodeOfListOfPArray_GetHandle(self)
 
@@ -5769,7 +6331,7 @@ Handle_Graphic3d_ListNodeOfListOfPArray._kill_pointed = new_instancemethod(_Grap
 Handle_Graphic3d_ListNodeOfListOfPArray_swigregister = _Graphic3d.Handle_Graphic3d_ListNodeOfListOfPArray_swigregister
 Handle_Graphic3d_ListNodeOfListOfPArray_swigregister(Handle_Graphic3d_ListNodeOfListOfPArray)
 
-def Handle_Graphic3d_ListNodeOfListOfPArray_DownCast(*args) -> "Handle_Graphic3d_ListNodeOfListOfPArray const" :
+def Handle_Graphic3d_ListNodeOfListOfPArray_DownCast(*args):
   return _Graphic3d.Handle_Graphic3d_ListNodeOfListOfPArray_DownCast(*args)
 Handle_Graphic3d_ListNodeOfListOfPArray_DownCast = _Graphic3d.Handle_Graphic3d_ListNodeOfListOfPArray_DownCast
 
@@ -5786,18 +6348,18 @@ class Graphic3d_ListNodeOfListOfShortReal(OCC.TCollection.TCollection_MapNode):
 
         """
         _Graphic3d.Graphic3d_ListNodeOfListOfShortReal_swiginit(self,_Graphic3d.new_Graphic3d_ListNodeOfListOfShortReal(*args))
-    def Value(self, *args) -> "Standard_ShortReal &" :
+    def Value(self):
         """
         :rtype: Standard_ShortReal
 
         """
-        return _Graphic3d.Graphic3d_ListNodeOfListOfShortReal_Value(self, *args)
+        return _Graphic3d.Graphic3d_ListNodeOfListOfShortReal_Value(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Graphic3d_ListNodeOfListOfShortReal self)"""
         return _Graphic3d.Graphic3d_ListNodeOfListOfShortReal__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Graphic3d_ListNodeOfListOfShortReal" :
+    def GetHandle(self):
         """GetHandle(Graphic3d_ListNodeOfListOfShortReal self) -> Handle_Graphic3d_ListNodeOfListOfShortReal"""
         return _Graphic3d.Graphic3d_ListNodeOfListOfShortReal_GetHandle(self)
 
@@ -5836,7 +6398,7 @@ Handle_Graphic3d_ListNodeOfListOfShortReal._kill_pointed = new_instancemethod(_G
 Handle_Graphic3d_ListNodeOfListOfShortReal_swigregister = _Graphic3d.Handle_Graphic3d_ListNodeOfListOfShortReal_swigregister
 Handle_Graphic3d_ListNodeOfListOfShortReal_swigregister(Handle_Graphic3d_ListNodeOfListOfShortReal)
 
-def Handle_Graphic3d_ListNodeOfListOfShortReal_DownCast(*args) -> "Handle_Graphic3d_ListNodeOfListOfShortReal const" :
+def Handle_Graphic3d_ListNodeOfListOfShortReal_DownCast(*args):
   return _Graphic3d.Handle_Graphic3d_ListNodeOfListOfShortReal_DownCast(*args)
 Handle_Graphic3d_ListNodeOfListOfShortReal_DownCast = _Graphic3d.Handle_Graphic3d_ListNodeOfListOfShortReal_DownCast
 
@@ -5853,18 +6415,18 @@ class Graphic3d_ListNodeOfSetListOfSetOfGroup(OCC.TCollection.TCollection_MapNod
 
         """
         _Graphic3d.Graphic3d_ListNodeOfSetListOfSetOfGroup_swiginit(self,_Graphic3d.new_Graphic3d_ListNodeOfSetListOfSetOfGroup(*args))
-    def Value(self, *args) -> "Handle_Graphic3d_Group &" :
+    def Value(self):
         """
         :rtype: Handle_Graphic3d_Group
 
         """
-        return _Graphic3d.Graphic3d_ListNodeOfSetListOfSetOfGroup_Value(self, *args)
+        return _Graphic3d.Graphic3d_ListNodeOfSetListOfSetOfGroup_Value(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Graphic3d_ListNodeOfSetListOfSetOfGroup self)"""
         return _Graphic3d.Graphic3d_ListNodeOfSetListOfSetOfGroup__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Graphic3d_ListNodeOfSetListOfSetOfGroup" :
+    def GetHandle(self):
         """GetHandle(Graphic3d_ListNodeOfSetListOfSetOfGroup self) -> Handle_Graphic3d_ListNodeOfSetListOfSetOfGroup"""
         return _Graphic3d.Graphic3d_ListNodeOfSetListOfSetOfGroup_GetHandle(self)
 
@@ -5903,20 +6465,20 @@ Handle_Graphic3d_ListNodeOfSetListOfSetOfGroup._kill_pointed = new_instancemetho
 Handle_Graphic3d_ListNodeOfSetListOfSetOfGroup_swigregister = _Graphic3d.Handle_Graphic3d_ListNodeOfSetListOfSetOfGroup_swigregister
 Handle_Graphic3d_ListNodeOfSetListOfSetOfGroup_swigregister(Handle_Graphic3d_ListNodeOfSetListOfSetOfGroup)
 
-def Handle_Graphic3d_ListNodeOfSetListOfSetOfGroup_DownCast(*args) -> "Handle_Graphic3d_ListNodeOfSetListOfSetOfGroup const" :
+def Handle_Graphic3d_ListNodeOfSetListOfSetOfGroup_DownCast(*args):
   return _Graphic3d.Handle_Graphic3d_ListNodeOfSetListOfSetOfGroup_DownCast(*args)
 Handle_Graphic3d_ListNodeOfSetListOfSetOfGroup_DownCast = _Graphic3d.Handle_Graphic3d_ListNodeOfSetListOfSetOfGroup_DownCast
 
 class Graphic3d_ListOfPArray(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _Graphic3d.Graphic3d_ListOfPArray_swiginit(self,_Graphic3d.new_Graphic3d_ListOfPArray(*args))
-    def Assign(self, *args) -> "void" :
+        _Graphic3d.Graphic3d_ListOfPArray_swiginit(self,_Graphic3d.new_Graphic3d_ListOfPArray())
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: Graphic3d_ListOfPArray &
@@ -5925,7 +6487,7 @@ class Graphic3d_ListOfPArray(object):
         """
         return _Graphic3d.Graphic3d_ListOfPArray_Assign(self, *args)
 
-    def Set(self, *args) -> "void" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: Graphic3d_ListOfPArray &
@@ -5934,28 +6496,28 @@ class Graphic3d_ListOfPArray(object):
         """
         return _Graphic3d.Graphic3d_ListOfPArray_Set(self, *args)
 
-    def Extent(self, *args) -> "Standard_Integer" :
+    def Extent(self):
         """
         :rtype: int
 
         """
-        return _Graphic3d.Graphic3d_ListOfPArray_Extent(self, *args)
+        return _Graphic3d.Graphic3d_ListOfPArray_Extent(self)
 
-    def Clear(self, *args) -> "void" :
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _Graphic3d.Graphic3d_ListOfPArray_Clear(self, *args)
+        return _Graphic3d.Graphic3d_ListOfPArray_Clear(self)
 
-    def IsEmpty(self, *args) -> "Standard_Boolean" :
+    def IsEmpty(self):
         """
         :rtype: bool
 
         """
-        return _Graphic3d.Graphic3d_ListOfPArray_IsEmpty(self, *args)
+        return _Graphic3d.Graphic3d_ListOfPArray_IsEmpty(self)
 
-    def Prepend(self, *args) -> "void" :
+    def Prepend(self, *args):
         """
         :param I:
         :type I: Handle_Graphic3d_ArrayOfPrimitives &
@@ -5974,7 +6536,7 @@ class Graphic3d_ListOfPArray(object):
         """
         return _Graphic3d.Graphic3d_ListOfPArray_Prepend(self, *args)
 
-    def Append(self, *args) -> "void" :
+    def Append(self, *args):
         """
         :param I:
         :type I: Handle_Graphic3d_ArrayOfPrimitives &
@@ -5993,28 +6555,28 @@ class Graphic3d_ListOfPArray(object):
         """
         return _Graphic3d.Graphic3d_ListOfPArray_Append(self, *args)
 
-    def First(self, *args) -> "Handle_Graphic3d_ArrayOfPrimitives &" :
+    def First(self):
         """
         :rtype: Handle_Graphic3d_ArrayOfPrimitives
 
         """
-        return _Graphic3d.Graphic3d_ListOfPArray_First(self, *args)
+        return _Graphic3d.Graphic3d_ListOfPArray_First(self)
 
-    def Last(self, *args) -> "Handle_Graphic3d_ArrayOfPrimitives &" :
+    def Last(self):
         """
         :rtype: Handle_Graphic3d_ArrayOfPrimitives
 
         """
-        return _Graphic3d.Graphic3d_ListOfPArray_Last(self, *args)
+        return _Graphic3d.Graphic3d_ListOfPArray_Last(self)
 
-    def RemoveFirst(self, *args) -> "void" :
+    def RemoveFirst(self):
         """
         :rtype: None
 
         """
-        return _Graphic3d.Graphic3d_ListOfPArray_RemoveFirst(self, *args)
+        return _Graphic3d.Graphic3d_ListOfPArray_RemoveFirst(self)
 
-    def Remove(self, *args) -> "void" :
+    def Remove(self, *args):
         """
         :param It:
         :type It: Graphic3d_ListIteratorOfListOfPArray &
@@ -6023,7 +6585,7 @@ class Graphic3d_ListOfPArray(object):
         """
         return _Graphic3d.Graphic3d_ListOfPArray_Remove(self, *args)
 
-    def InsertBefore(self, *args) -> "void" :
+    def InsertBefore(self, *args):
         """
         :param I:
         :type I: Handle_Graphic3d_ArrayOfPrimitives &
@@ -6040,7 +6602,7 @@ class Graphic3d_ListOfPArray(object):
         """
         return _Graphic3d.Graphic3d_ListOfPArray_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args) -> "void" :
+    def InsertAfter(self, *args):
         """
         :param I:
         :type I: Handle_Graphic3d_ArrayOfPrimitives &
@@ -6085,13 +6647,13 @@ Graphic3d_ListOfPArray_swigregister(Graphic3d_ListOfPArray)
 class Graphic3d_ListOfShortReal(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _Graphic3d.Graphic3d_ListOfShortReal_swiginit(self,_Graphic3d.new_Graphic3d_ListOfShortReal(*args))
-    def Assign(self, *args) -> "void" :
+        _Graphic3d.Graphic3d_ListOfShortReal_swiginit(self,_Graphic3d.new_Graphic3d_ListOfShortReal())
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: Graphic3d_ListOfShortReal &
@@ -6100,7 +6662,7 @@ class Graphic3d_ListOfShortReal(object):
         """
         return _Graphic3d.Graphic3d_ListOfShortReal_Assign(self, *args)
 
-    def Set(self, *args) -> "void" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: Graphic3d_ListOfShortReal &
@@ -6109,28 +6671,28 @@ class Graphic3d_ListOfShortReal(object):
         """
         return _Graphic3d.Graphic3d_ListOfShortReal_Set(self, *args)
 
-    def Extent(self, *args) -> "Standard_Integer" :
+    def Extent(self):
         """
         :rtype: int
 
         """
-        return _Graphic3d.Graphic3d_ListOfShortReal_Extent(self, *args)
+        return _Graphic3d.Graphic3d_ListOfShortReal_Extent(self)
 
-    def Clear(self, *args) -> "void" :
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _Graphic3d.Graphic3d_ListOfShortReal_Clear(self, *args)
+        return _Graphic3d.Graphic3d_ListOfShortReal_Clear(self)
 
-    def IsEmpty(self, *args) -> "Standard_Boolean" :
+    def IsEmpty(self):
         """
         :rtype: bool
 
         """
-        return _Graphic3d.Graphic3d_ListOfShortReal_IsEmpty(self, *args)
+        return _Graphic3d.Graphic3d_ListOfShortReal_IsEmpty(self)
 
-    def Prepend(self, *args) -> "void" :
+    def Prepend(self, *args):
         """
         :param I:
         :type I: Standard_ShortReal &
@@ -6149,7 +6711,7 @@ class Graphic3d_ListOfShortReal(object):
         """
         return _Graphic3d.Graphic3d_ListOfShortReal_Prepend(self, *args)
 
-    def Append(self, *args) -> "void" :
+    def Append(self, *args):
         """
         :param I:
         :type I: Standard_ShortReal &
@@ -6168,28 +6730,28 @@ class Graphic3d_ListOfShortReal(object):
         """
         return _Graphic3d.Graphic3d_ListOfShortReal_Append(self, *args)
 
-    def First(self, *args) -> "Standard_ShortReal &" :
+    def First(self):
         """
         :rtype: Standard_ShortReal
 
         """
-        return _Graphic3d.Graphic3d_ListOfShortReal_First(self, *args)
+        return _Graphic3d.Graphic3d_ListOfShortReal_First(self)
 
-    def Last(self, *args) -> "Standard_ShortReal &" :
+    def Last(self):
         """
         :rtype: Standard_ShortReal
 
         """
-        return _Graphic3d.Graphic3d_ListOfShortReal_Last(self, *args)
+        return _Graphic3d.Graphic3d_ListOfShortReal_Last(self)
 
-    def RemoveFirst(self, *args) -> "void" :
+    def RemoveFirst(self):
         """
         :rtype: None
 
         """
-        return _Graphic3d.Graphic3d_ListOfShortReal_RemoveFirst(self, *args)
+        return _Graphic3d.Graphic3d_ListOfShortReal_RemoveFirst(self)
 
-    def Remove(self, *args) -> "void" :
+    def Remove(self, *args):
         """
         :param It:
         :type It: Graphic3d_ListIteratorOfListOfShortReal &
@@ -6198,7 +6760,7 @@ class Graphic3d_ListOfShortReal(object):
         """
         return _Graphic3d.Graphic3d_ListOfShortReal_Remove(self, *args)
 
-    def InsertBefore(self, *args) -> "void" :
+    def InsertBefore(self, *args):
         """
         :param I:
         :type I: Standard_ShortReal &
@@ -6215,7 +6777,7 @@ class Graphic3d_ListOfShortReal(object):
         """
         return _Graphic3d.Graphic3d_ListOfShortReal_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args) -> "void" :
+    def InsertAfter(self, *args):
         """
         :param I:
         :type I: Standard_ShortReal &
@@ -6270,7 +6832,7 @@ class Graphic3d_MapIteratorOfMapOfStructure(OCC.TCollection.TCollection_BasicMap
 
         """
         _Graphic3d.Graphic3d_MapIteratorOfMapOfStructure_swiginit(self,_Graphic3d.new_Graphic3d_MapIteratorOfMapOfStructure(*args))
-    def Initialize(self, *args) -> "void" :
+    def Initialize(self, *args):
         """
         :param aMap:
         :type aMap: Graphic3d_MapOfStructure &
@@ -6279,12 +6841,12 @@ class Graphic3d_MapIteratorOfMapOfStructure(OCC.TCollection.TCollection_BasicMap
         """
         return _Graphic3d.Graphic3d_MapIteratorOfMapOfStructure_Initialize(self, *args)
 
-    def Key(self, *args) -> "Handle_Graphic3d_Structure const &" :
+    def Key(self):
         """
         :rtype: Handle_Graphic3d_Structure
 
         """
-        return _Graphic3d.Graphic3d_MapIteratorOfMapOfStructure_Key(self, *args)
+        return _Graphic3d.Graphic3d_MapIteratorOfMapOfStructure_Key(self)
 
     def __del__(self):
     	try:
@@ -6303,15 +6865,19 @@ Graphic3d_MapIteratorOfMapOfStructure_swigregister(Graphic3d_MapIteratorOfMapOfS
 class Graphic3d_MapOfStructure(OCC.TCollection.TCollection_BasicMap):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self, NbBuckets=1): 
         """
         :param NbBuckets: default value is 1
-        :type NbBuckets: int
+        :type NbBuckets: Standard_Integer
+        :rtype: None
+
+        :param NbBuckets: default value is 1
+        :type NbBuckets: Standard_Integer
         :rtype: None
 
         """
-        _Graphic3d.Graphic3d_MapOfStructure_swiginit(self,_Graphic3d.new_Graphic3d_MapOfStructure(*args))
-    def Assign(self, *args) -> "Graphic3d_MapOfStructure &" :
+        _Graphic3d.Graphic3d_MapOfStructure_swiginit(self,_Graphic3d.new_Graphic3d_MapOfStructure(NbBuckets))
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: Graphic3d_MapOfStructure &
@@ -6320,7 +6886,7 @@ class Graphic3d_MapOfStructure(OCC.TCollection.TCollection_BasicMap):
         """
         return _Graphic3d.Graphic3d_MapOfStructure_Assign(self, *args)
 
-    def Set(self, *args) -> "Graphic3d_MapOfStructure &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: Graphic3d_MapOfStructure &
@@ -6329,23 +6895,23 @@ class Graphic3d_MapOfStructure(OCC.TCollection.TCollection_BasicMap):
         """
         return _Graphic3d.Graphic3d_MapOfStructure_Set(self, *args)
 
-    def ReSize(self, *args) -> "void" :
+    def ReSize(self, *args):
         """
         :param NbBuckets:
-        :type NbBuckets: int
+        :type NbBuckets: Standard_Integer
         :rtype: None
 
         """
         return _Graphic3d.Graphic3d_MapOfStructure_ReSize(self, *args)
 
-    def Clear(self, *args) -> "void" :
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _Graphic3d.Graphic3d_MapOfStructure_Clear(self, *args)
+        return _Graphic3d.Graphic3d_MapOfStructure_Clear(self)
 
-    def Add(self, *args) -> "Standard_Boolean" :
+    def Add(self, *args):
         """
         :param aKey:
         :type aKey: Handle_Graphic3d_Structure &
@@ -6354,7 +6920,7 @@ class Graphic3d_MapOfStructure(OCC.TCollection.TCollection_BasicMap):
         """
         return _Graphic3d.Graphic3d_MapOfStructure_Add(self, *args)
 
-    def Contains(self, *args) -> "Standard_Boolean" :
+    def Contains(self, *args):
         """
         :param aKey:
         :type aKey: Handle_Graphic3d_Structure &
@@ -6363,7 +6929,7 @@ class Graphic3d_MapOfStructure(OCC.TCollection.TCollection_BasicMap):
         """
         return _Graphic3d.Graphic3d_MapOfStructure_Contains(self, *args)
 
-    def Remove(self, *args) -> "Standard_Boolean" :
+    def Remove(self, *args):
         """
         :param aKey:
         :type aKey: Handle_Graphic3d_Structure &
@@ -6372,7 +6938,7 @@ class Graphic3d_MapOfStructure(OCC.TCollection.TCollection_BasicMap):
         """
         return _Graphic3d.Graphic3d_MapOfStructure_Remove(self, *args)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Graphic3d_MapOfStructure self)"""
         return _Graphic3d.Graphic3d_MapOfStructure__kill_pointed(self)
 
@@ -6411,14 +6977,14 @@ class Graphic3d_MarkerImage(OCC.Standard.Standard_Transient):
         :param theBitMap:
         :type theBitMap: Handle_TColStd_HArray1OfByte &
         :param theWidth:
-        :type theWidth: int &
+        :type theWidth: Standard_Integer &
         :param theHeight:
-        :type theHeight: int &
+        :type theHeight: Standard_Integer &
         :rtype: None
 
         """
         _Graphic3d.Graphic3d_MarkerImage_swiginit(self,_Graphic3d.new_Graphic3d_MarkerImage(*args))
-    def GetBitMapArray(self, *args) -> "Handle_TColStd_HArray1OfByte" :
+    def GetBitMapArray(self, theAlphaValue=0.5):
         """
         * @param theAlphaValue pixels in the image that have alpha value greater than  or equal to this parameter will be stored in bitmap as '1',  others will be stored as '0' returns marker image as array of bytes. If an instance of the class has been initialized with image, it will be converted to bitmap based on the parameter theAlphaValue.
 
@@ -6426,59 +6992,65 @@ class Graphic3d_MarkerImage(OCC.Standard.Standard_Transient):
         :type theAlphaValue: float &
         :rtype: Handle_TColStd_HArray1OfByte
 
-        """
-        return _Graphic3d.Graphic3d_MarkerImage_GetBitMapArray(self, *args)
+        * @param theAlphaValue pixels in the image that have alpha value greater than  or equal to this parameter will be stored in bitmap as '1',  others will be stored as '0' returns marker image as array of bytes. If an instance of the class has been initialized with image, it will be converted to bitmap based on the parameter theAlphaValue.
 
-    def GetImage(self, *args) -> "Handle_Image_PixMap const &" :
+        :param theAlphaValue: default value is 0.5
+        :type theAlphaValue: float &
+        :rtype: Handle_TColStd_HArray1OfByte
+
+        """
+        return _Graphic3d.Graphic3d_MarkerImage_GetBitMapArray(self, theAlphaValue)
+
+    def GetImage(self):
         """
         * returns marker image. If an instance of the class has been initialized with a bitmap, it will be converted to image.
 
         :rtype: Handle_Image_PixMap
 
         """
-        return _Graphic3d.Graphic3d_MarkerImage_GetImage(self, *args)
+        return _Graphic3d.Graphic3d_MarkerImage_GetImage(self)
 
-    def GetImageAlpha(self, *args) -> "Handle_Image_PixMap const &" :
+    def GetImageAlpha(self):
         """
         * returns image alpha as grayscale image. Note that if an instance of the class has been initialized with a bitmap or with grayscale image this method will return exactly the same image as GetImage()
 
         :rtype: Handle_Image_PixMap
 
         """
-        return _Graphic3d.Graphic3d_MarkerImage_GetImageAlpha(self, *args)
+        return _Graphic3d.Graphic3d_MarkerImage_GetImageAlpha(self)
 
-    def GetImageId(self, *args) -> "TCollection_AsciiString const &" :
+    def GetImageId(self):
         """
         * returns an unique ID. This ID will be used to manage resource in graphic driver.
 
         :rtype: TCollection_AsciiString
 
         """
-        return _Graphic3d.Graphic3d_MarkerImage_GetImageId(self, *args)
+        return _Graphic3d.Graphic3d_MarkerImage_GetImageId(self)
 
-    def GetImageAlphaId(self, *args) -> "TCollection_AsciiString const &" :
+    def GetImageAlphaId(self):
         """
         * returns an unique ID. This ID will be used to manage resource in graphic driver.
 
         :rtype: TCollection_AsciiString
 
         """
-        return _Graphic3d.Graphic3d_MarkerImage_GetImageAlphaId(self, *args)
+        return _Graphic3d.Graphic3d_MarkerImage_GetImageAlphaId(self)
 
-    def GetTextureSize(self, *args) -> "void" :
+    def GetTextureSize(self):
         """
         * returns texture size
 
         :param theWidth:
-        :type theWidth: int &
+        :type theWidth: Standard_Integer &
         :param theHeight:
-        :type theHeight: int &
+        :type theHeight: Standard_Integer &
         :rtype: None
 
         """
-        return _Graphic3d.Graphic3d_MarkerImage_GetTextureSize(self, *args)
+        return _Graphic3d.Graphic3d_MarkerImage_GetTextureSize(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Graphic3d_MarkerImage self)"""
         return _Graphic3d.Graphic3d_MarkerImage__kill_pointed(self)
 
@@ -6517,7 +7089,7 @@ class Graphic3d_MaterialAspect(object):
 
         """
         _Graphic3d.Graphic3d_MaterialAspect_swiginit(self,_Graphic3d.new_Graphic3d_MaterialAspect(*args))
-    def IncreaseShine(self, *args) -> "void" :
+    def IncreaseShine(self, *args):
         """
         * Increases or decreases the luminosity of <self>. //!	 <ADelta> is a signed percentage.
 
@@ -6528,7 +7100,7 @@ class Graphic3d_MaterialAspect(object):
         """
         return _Graphic3d.Graphic3d_MaterialAspect_IncreaseShine(self, *args)
 
-    def SetAmbient(self, *args) -> "void" :
+    def SetAmbient(self, *args):
         """
         * Modifies the reflection properties of the surface. Category: Methods to modify the class definition Warning: Raises MaterialDefinitionError if <AValue> is //!	 a negative value or greater than 1.0.
 
@@ -6539,7 +7111,7 @@ class Graphic3d_MaterialAspect(object):
         """
         return _Graphic3d.Graphic3d_MaterialAspect_SetAmbient(self, *args)
 
-    def SetDiffuse(self, *args) -> "void" :
+    def SetDiffuse(self, *args):
         """
         * Modifies the reflection properties of the surface. Category: Methods to modify the class definition Warning: Raises MaterialDefinitionError if <AValue> is a //!	 negative value or greater than 1.0.
 
@@ -6550,7 +7122,7 @@ class Graphic3d_MaterialAspect(object):
         """
         return _Graphic3d.Graphic3d_MaterialAspect_SetDiffuse(self, *args)
 
-    def SetEmissive(self, *args) -> "void" :
+    def SetEmissive(self, *args):
         """
         * Modifies the reflection properties of the surface. Category: Methods to modify the class definition Warning: Raises MaterialDefinitionError if <AValue> is a //!	 negative value or greater than 1.0.
 
@@ -6561,7 +7133,7 @@ class Graphic3d_MaterialAspect(object):
         """
         return _Graphic3d.Graphic3d_MaterialAspect_SetEmissive(self, *args)
 
-    def SetShininess(self, *args) -> "void" :
+    def SetShininess(self, *args):
         """
         * Modifies the luminosity of the surface. Category: Methods to modify the class definition Warning: Raises MaterialDefinitionError if <AValue> is a //!	 negative value or greater than 1.0.
 
@@ -6572,7 +7144,7 @@ class Graphic3d_MaterialAspect(object):
         """
         return _Graphic3d.Graphic3d_MaterialAspect_SetShininess(self, *args)
 
-    def SetSpecular(self, *args) -> "void" :
+    def SetSpecular(self, *args):
         """
         * Modifies the reflection properties of the surface. Category: Methods to modify the class definition Warning: Raises MaterialDefinitionError if <AValue> is a //!	 negative value or greater than 1.0.
 
@@ -6583,7 +7155,7 @@ class Graphic3d_MaterialAspect(object):
         """
         return _Graphic3d.Graphic3d_MaterialAspect_SetSpecular(self, *args)
 
-    def SetTransparency(self, *args) -> "void" :
+    def SetTransparency(self, *args):
         """
         * Modifies the transparency coefficient of the surface. <AValue> = 0. opaque. (default) <AValue> = 1. transparent. Transparency is applicable to materials that have at least one of reflection modes (ambient, diffuse, specular or emissive) enabled. See also SetReflectionModeOn() and SetReflectionModeOff() methods. NOTE: In order for transparency specified through this method to take effect, it is necessary to enable transparency in the viewer. This can be done either directly - see Visual3d_ViewManager::SetTransparency(Standard_Boolean), or indirectly - by calling AIS_InteractiveObject::SetTransparency() before an object is added to an interactive context, or by calling AIS_InteractiveContext::SetTransparency() for a given interactive object already displayed. Category: Methods to modify the class definition Warning: Raises MaterialDefinitionError if <AValue> is a //!	 negative value or greater than 1.0.
 
@@ -6594,7 +7166,7 @@ class Graphic3d_MaterialAspect(object):
         """
         return _Graphic3d.Graphic3d_MaterialAspect_SetTransparency(self, *args)
 
-    def SetColor(self, *args) -> "void" :
+    def SetColor(self, *args):
         """
         * Modifies the ambient colour of the surface. Category: Methods to modify the class definition
 
@@ -6605,7 +7177,7 @@ class Graphic3d_MaterialAspect(object):
         """
         return _Graphic3d.Graphic3d_MaterialAspect_SetColor(self, *args)
 
-    def SetAmbientColor(self, *args) -> "void" :
+    def SetAmbientColor(self, *args):
         """
         * Modifies the ambient colour of the surface.
 
@@ -6616,7 +7188,7 @@ class Graphic3d_MaterialAspect(object):
         """
         return _Graphic3d.Graphic3d_MaterialAspect_SetAmbientColor(self, *args)
 
-    def SetDiffuseColor(self, *args) -> "void" :
+    def SetDiffuseColor(self, *args):
         """
         * Modifies the difuse colour of the surface.
 
@@ -6627,7 +7199,7 @@ class Graphic3d_MaterialAspect(object):
         """
         return _Graphic3d.Graphic3d_MaterialAspect_SetDiffuseColor(self, *args)
 
-    def SetSpecularColor(self, *args) -> "void" :
+    def SetSpecularColor(self, *args):
         """
         * Modifies the specular colour of the surface.
 
@@ -6638,7 +7210,7 @@ class Graphic3d_MaterialAspect(object):
         """
         return _Graphic3d.Graphic3d_MaterialAspect_SetSpecularColor(self, *args)
 
-    def SetEmissiveColor(self, *args) -> "void" :
+    def SetEmissiveColor(self, *args):
         """
         * Modifies the emissive colour of the surface.
 
@@ -6649,7 +7221,7 @@ class Graphic3d_MaterialAspect(object):
         """
         return _Graphic3d.Graphic3d_MaterialAspect_SetEmissiveColor(self, *args)
 
-    def SetReflectionModeOn(self, *args) -> "void" :
+    def SetReflectionModeOn(self, *args):
         """
         * Activates the reflective properties of the surface <AType>. //!	 TypeOfReflection : TOR_AMBIENT //!			 TOR_DIFFUSE //!			 TOR_SPECULAR  TOR_EMISSION 1, 2, 3 or 4 types of reflection can be set for a given surface.
 
@@ -6660,7 +7232,7 @@ class Graphic3d_MaterialAspect(object):
         """
         return _Graphic3d.Graphic3d_MaterialAspect_SetReflectionModeOn(self, *args)
 
-    def SetReflectionModeOff(self, *args) -> "void" :
+    def SetReflectionModeOff(self, *args):
         """
         * Deactivates the reflective properties of //!	 the surface <AType>. //!	 TypeOfReflection : TOR_AMBIENT //!			 TOR_DIFFUSE //!			 TOR_SPECULAR  TOR_EMISSION 1, 2, 3 or 4 types of reflection can be set off for a given surface. Disabling diffuse and specular reflectance is useful for efficient visualization of large amounts of data as definition of normals for graphic primitives is not needed when only 'all-directional' reflectance is active. NOTE: Disabling all four reflection modes also turns off the following effects: 1. Lighting. Colors of primitives are not affected by the material properties when lighting is off. 2. Transparency.
 
@@ -6671,7 +7243,7 @@ class Graphic3d_MaterialAspect(object):
         """
         return _Graphic3d.Graphic3d_MaterialAspect_SetReflectionModeOff(self, *args)
 
-    def SetMaterialType(self, *args) -> "void" :
+    def SetMaterialType(self, *args):
         """
         * Set MyMaterialType to the value of parameter <AType> //!	 TypeOfMaterial : MATERIAL_ASPECT //!			 MATERIAL_PHYSIC
 
@@ -6682,7 +7254,7 @@ class Graphic3d_MaterialAspect(object):
         """
         return _Graphic3d.Graphic3d_MaterialAspect_SetMaterialType(self, *args)
 
-    def SetMaterialName(self, *args) -> "void" :
+    def SetMaterialName(self, *args):
         """
         * The current matarial become a 'UserDefined' material. //!	 Set the name of the 'UserDefined' material.
 
@@ -6693,7 +7265,7 @@ class Graphic3d_MaterialAspect(object):
         """
         return _Graphic3d.Graphic3d_MaterialAspect_SetMaterialName(self, *args)
 
-    def SetEnvReflexion(self, *args) -> "void" :
+    def SetEnvReflexion(self, *args):
         """
         :param AValue:
         :type AValue: Standard_ShortReal
@@ -6702,115 +7274,115 @@ class Graphic3d_MaterialAspect(object):
         """
         return _Graphic3d.Graphic3d_MaterialAspect_SetEnvReflexion(self, *args)
 
-    def Reset(self, *args) -> "void" :
+    def Reset(self):
         """
         * Resets the material with the original values according to the material name but leave the current color values untouched for the material of type ASPECT.
 
         :rtype: None
 
         """
-        return _Graphic3d.Graphic3d_MaterialAspect_Reset(self, *args)
+        return _Graphic3d.Graphic3d_MaterialAspect_Reset(self)
 
-    def Color(self, *args) -> "Quantity_Color" :
+    def Color(self):
         """
         * Returns the ambient colour of the surface.
 
         :rtype: Quantity_Color
 
         """
-        return _Graphic3d.Graphic3d_MaterialAspect_Color(self, *args)
+        return _Graphic3d.Graphic3d_MaterialAspect_Color(self)
 
-    def AmbientColor(self, *args) -> "Quantity_Color" :
+    def AmbientColor(self):
         """
         * Returns the ambient colour of the surface.
 
         :rtype: Quantity_Color
 
         """
-        return _Graphic3d.Graphic3d_MaterialAspect_AmbientColor(self, *args)
+        return _Graphic3d.Graphic3d_MaterialAspect_AmbientColor(self)
 
-    def DiffuseColor(self, *args) -> "Quantity_Color" :
+    def DiffuseColor(self):
         """
         * Returns the diffuse colour of the surface.
 
         :rtype: Quantity_Color
 
         """
-        return _Graphic3d.Graphic3d_MaterialAspect_DiffuseColor(self, *args)
+        return _Graphic3d.Graphic3d_MaterialAspect_DiffuseColor(self)
 
-    def SpecularColor(self, *args) -> "Quantity_Color" :
+    def SpecularColor(self):
         """
         * Returns the specular colour of the surface.
 
         :rtype: Quantity_Color
 
         """
-        return _Graphic3d.Graphic3d_MaterialAspect_SpecularColor(self, *args)
+        return _Graphic3d.Graphic3d_MaterialAspect_SpecularColor(self)
 
-    def EmissiveColor(self, *args) -> "Quantity_Color" :
+    def EmissiveColor(self):
         """
         * Returns the emissive colour of the surface.
 
         :rtype: Quantity_Color
 
         """
-        return _Graphic3d.Graphic3d_MaterialAspect_EmissiveColor(self, *args)
+        return _Graphic3d.Graphic3d_MaterialAspect_EmissiveColor(self)
 
-    def Ambient(self, *args) -> "Standard_Real" :
+    def Ambient(self):
         """
         * Returns the reflection properties of the surface.
 
         :rtype: float
 
         """
-        return _Graphic3d.Graphic3d_MaterialAspect_Ambient(self, *args)
+        return _Graphic3d.Graphic3d_MaterialAspect_Ambient(self)
 
-    def Diffuse(self, *args) -> "Standard_Real" :
+    def Diffuse(self):
         """
         * Returns the reflection properties of the surface.
 
         :rtype: float
 
         """
-        return _Graphic3d.Graphic3d_MaterialAspect_Diffuse(self, *args)
+        return _Graphic3d.Graphic3d_MaterialAspect_Diffuse(self)
 
-    def Specular(self, *args) -> "Standard_Real" :
+    def Specular(self):
         """
         * Returns the reflection properties of the surface.
 
         :rtype: float
 
         """
-        return _Graphic3d.Graphic3d_MaterialAspect_Specular(self, *args)
+        return _Graphic3d.Graphic3d_MaterialAspect_Specular(self)
 
-    def Transparency(self, *args) -> "Standard_Real" :
+    def Transparency(self):
         """
         * Returns the transparency coefficient of the surface.
 
         :rtype: float
 
         """
-        return _Graphic3d.Graphic3d_MaterialAspect_Transparency(self, *args)
+        return _Graphic3d.Graphic3d_MaterialAspect_Transparency(self)
 
-    def Emissive(self, *args) -> "Standard_Real" :
+    def Emissive(self):
         """
         * Returns the emissive coefficient of the surface.
 
         :rtype: float
 
         """
-        return _Graphic3d.Graphic3d_MaterialAspect_Emissive(self, *args)
+        return _Graphic3d.Graphic3d_MaterialAspect_Emissive(self)
 
-    def Shininess(self, *args) -> "Standard_Real" :
+    def Shininess(self):
         """
         * Returns the luminosity of the surface.
 
         :rtype: float
 
         """
-        return _Graphic3d.Graphic3d_MaterialAspect_Shininess(self, *args)
+        return _Graphic3d.Graphic3d_MaterialAspect_Shininess(self)
 
-    def ReflectionMode(self, *args) -> "Standard_Boolean" :
+    def ReflectionMode(self, *args):
         """
         * Returns Standard_True if the reflection mode is active, //!	 Standard_False otherwise.
 
@@ -6821,23 +7393,23 @@ class Graphic3d_MaterialAspect(object):
         """
         return _Graphic3d.Graphic3d_MaterialAspect_ReflectionMode(self, *args)
 
-    def EnvReflexion(self, *args) -> "Standard_ShortReal" :
+    def EnvReflexion(self):
         """
         :rtype: Standard_ShortReal
 
         """
-        return _Graphic3d.Graphic3d_MaterialAspect_EnvReflexion(self, *args)
+        return _Graphic3d.Graphic3d_MaterialAspect_EnvReflexion(self)
 
-    def Name(self, *args) -> "Graphic3d_NameOfMaterial" :
+    def Name(self):
         """
         * Returns the material name.
 
         :rtype: Graphic3d_NameOfMaterial
 
         """
-        return _Graphic3d.Graphic3d_MaterialAspect_Name(self, *args)
+        return _Graphic3d.Graphic3d_MaterialAspect_Name(self)
 
-    def IsDifferent(self, *args) -> "Standard_Boolean" :
+    def IsDifferent(self, *args):
         """
         * Returns Standard_True if the materials <self> and <Other> are different.
 
@@ -6854,7 +7426,7 @@ class Graphic3d_MaterialAspect(object):
         except:
             return True
 
-    def IsEqual(self, *args) -> "Standard_Boolean" :
+    def IsEqual(self, *args):
         """
         * Returns Standard_True if the materials <self> and <Other> are identical.
 
@@ -6871,22 +7443,22 @@ class Graphic3d_MaterialAspect(object):
         except:
             return False
 
-    def NumberOfMaterials(*args) -> "Standard_Integer" :
+    def NumberOfMaterials():
         """
         * Returns the number of predefined textures.
 
         :rtype: int
 
         """
-        return _Graphic3d.Graphic3d_MaterialAspect_NumberOfMaterials(*args)
+        return _Graphic3d.Graphic3d_MaterialAspect_NumberOfMaterials()
 
     NumberOfMaterials = staticmethod(NumberOfMaterials)
-    def MaterialName(self, *args) -> "char *" :
+    def MaterialName(self, *args):
         """
         * Returns the name of the predefined material of rank <aRank> Trigger: when <aRank> is < 1 or > NumberOfMaterials.
 
         :param aRank:
-        :type aRank: int
+        :type aRank: Standard_Integer
         :rtype: char *
 
         * Returns the name of this material
@@ -6896,7 +7468,7 @@ class Graphic3d_MaterialAspect(object):
         """
         return _Graphic3d.Graphic3d_MaterialAspect_MaterialName(self, *args)
 
-    def MaterialType(*args) -> "Graphic3d_TypeOfMaterial" :
+    def MaterialType(*args):
         """
         * Returns Standard_True if MyMaterialType equal the parameter AType, //!	 Standard_False otherwise.
 
@@ -6907,14 +7479,14 @@ class Graphic3d_MaterialAspect(object):
         * Returns the type of the predefined material of rank <aRank> Trigger: when <aRank> is < 1 or > NumberOfMaterials.
 
         :param aRank:
-        :type aRank: int
+        :type aRank: Standard_Integer
         :rtype: Graphic3d_TypeOfMaterial
 
         """
         return _Graphic3d.Graphic3d_MaterialAspect_MaterialType(*args)
 
     MaterialType = staticmethod(MaterialType)
-    def MaterialFromName(*args) -> "Graphic3d_NameOfMaterial" :
+    def MaterialFromName(*args):
         """
         * Returns the material for specified name or Graphic3d_NOM_DEFAULT if name is unknown.
 
@@ -6975,16 +7547,16 @@ Graphic3d_MaterialAspect._kill_pointed = new_instancemethod(_Graphic3d.Graphic3d
 Graphic3d_MaterialAspect_swigregister = _Graphic3d.Graphic3d_MaterialAspect_swigregister
 Graphic3d_MaterialAspect_swigregister(Graphic3d_MaterialAspect)
 
-def Graphic3d_MaterialAspect_NumberOfMaterials(*args) -> "Standard_Integer" :
+def Graphic3d_MaterialAspect_NumberOfMaterials():
   """
     * Returns the number of predefined textures.
 
     :rtype: int
 
     """
-  return _Graphic3d.Graphic3d_MaterialAspect_NumberOfMaterials(*args)
+  return _Graphic3d.Graphic3d_MaterialAspect_NumberOfMaterials()
 
-def Graphic3d_MaterialAspect_MaterialType(*args) -> "Graphic3d_TypeOfMaterial" :
+def Graphic3d_MaterialAspect_MaterialType(*args):
   """
     * Returns Standard_True if MyMaterialType equal the parameter AType, //!	 Standard_False otherwise.
 
@@ -6995,13 +7567,13 @@ def Graphic3d_MaterialAspect_MaterialType(*args) -> "Graphic3d_TypeOfMaterial" :
     * Returns the type of the predefined material of rank <aRank> Trigger: when <aRank> is < 1 or > NumberOfMaterials.
 
     :param aRank:
-    :type aRank: int
+    :type aRank: Standard_Integer
     :rtype: Graphic3d_TypeOfMaterial
 
     """
   return _Graphic3d.Graphic3d_MaterialAspect_MaterialType(*args)
 
-def Graphic3d_MaterialAspect_MaterialFromName(*args) -> "Graphic3d_NameOfMaterial" :
+def Graphic3d_MaterialAspect_MaterialFromName(*args):
   """
     * Returns the material for specified name or Graphic3d_NOM_DEFAULT if name is unknown.
 
@@ -7016,16 +7588,16 @@ class Graphic3d_Plotter(OCC.MMgt.MMgt_TShared):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def Destroy(self, *args) -> "void" :
+    def Destroy(self):
         """
         * Deletes the plotter <self>.
 
         :rtype: void
 
         """
-        return _Graphic3d.Graphic3d_Plotter_Destroy(self, *args)
+        return _Graphic3d.Graphic3d_Plotter_Destroy(self)
 
-    def BeginPlot(self, *args) -> "Standard_Boolean" :
+    def BeginPlot(self, *args):
         """
         * Warning: Returns Standard_True if plotting is enabled in the view. //!	 Raises PlotterDefinitionError from Graphic3d //!	 if plotting has already started.
 
@@ -7036,27 +7608,27 @@ class Graphic3d_Plotter(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_Plotter_BeginPlot(self, *args)
 
-    def EndPlot(self, *args) -> "void" :
+    def EndPlot(self):
         """
         * Stops the plotting. Warning: Raises PlotterDefinitionError from Graphic3d //!	 if plotting has not started yet.
 
         :rtype: void
 
         """
-        return _Graphic3d.Graphic3d_Plotter_EndPlot(self, *args)
+        return _Graphic3d.Graphic3d_Plotter_EndPlot(self)
 
-    def PlottingState(self, *args) -> "Standard_Boolean" :
+    def PlottingState(self):
         """
         :rtype: bool
 
         """
-        return _Graphic3d.Graphic3d_Plotter_PlottingState(self, *args)
+        return _Graphic3d.Graphic3d_Plotter_PlottingState(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Graphic3d_Plotter self)"""
         return _Graphic3d.Graphic3d_Plotter__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Graphic3d_Plotter" :
+    def GetHandle(self):
         """GetHandle(Graphic3d_Plotter self) -> Handle_Graphic3d_Plotter"""
         return _Graphic3d.Graphic3d_Plotter_GetHandle(self)
 
@@ -7098,7 +7670,7 @@ Handle_Graphic3d_Plotter._kill_pointed = new_instancemethod(_Graphic3d.Handle_Gr
 Handle_Graphic3d_Plotter_swigregister = _Graphic3d.Handle_Graphic3d_Plotter_swigregister
 Handle_Graphic3d_Plotter_swigregister(Handle_Graphic3d_Plotter)
 
-def Handle_Graphic3d_Plotter_DownCast(*args) -> "Handle_Graphic3d_Plotter const" :
+def Handle_Graphic3d_Plotter_DownCast(*args):
   return _Graphic3d.Handle_Graphic3d_Plotter_DownCast(*args)
 Handle_Graphic3d_Plotter_DownCast = _Graphic3d.Handle_Graphic3d_Plotter_DownCast
 
@@ -7117,18 +7689,18 @@ class Graphic3d_SequenceNodeOfSequenceOfAddress(OCC.TCollection.TCollection_SeqN
 
         """
         _Graphic3d.Graphic3d_SequenceNodeOfSequenceOfAddress_swiginit(self,_Graphic3d.new_Graphic3d_SequenceNodeOfSequenceOfAddress(*args))
-    def Value(self, *args) -> "Standard_Address &" :
+    def Value(self):
         """
         :rtype: Standard_Address
 
         """
-        return _Graphic3d.Graphic3d_SequenceNodeOfSequenceOfAddress_Value(self, *args)
+        return _Graphic3d.Graphic3d_SequenceNodeOfSequenceOfAddress_Value(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Graphic3d_SequenceNodeOfSequenceOfAddress self)"""
         return _Graphic3d.Graphic3d_SequenceNodeOfSequenceOfAddress__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Graphic3d_SequenceNodeOfSequenceOfAddress" :
+    def GetHandle(self):
         """GetHandle(Graphic3d_SequenceNodeOfSequenceOfAddress self) -> Handle_Graphic3d_SequenceNodeOfSequenceOfAddress"""
         return _Graphic3d.Graphic3d_SequenceNodeOfSequenceOfAddress_GetHandle(self)
 
@@ -7167,7 +7739,7 @@ Handle_Graphic3d_SequenceNodeOfSequenceOfAddress._kill_pointed = new_instancemet
 Handle_Graphic3d_SequenceNodeOfSequenceOfAddress_swigregister = _Graphic3d.Handle_Graphic3d_SequenceNodeOfSequenceOfAddress_swigregister
 Handle_Graphic3d_SequenceNodeOfSequenceOfAddress_swigregister(Handle_Graphic3d_SequenceNodeOfSequenceOfAddress)
 
-def Handle_Graphic3d_SequenceNodeOfSequenceOfAddress_DownCast(*args) -> "Handle_Graphic3d_SequenceNodeOfSequenceOfAddress const" :
+def Handle_Graphic3d_SequenceNodeOfSequenceOfAddress_DownCast(*args):
   return _Graphic3d.Handle_Graphic3d_SequenceNodeOfSequenceOfAddress_DownCast(*args)
 Handle_Graphic3d_SequenceNodeOfSequenceOfAddress_DownCast = _Graphic3d.Handle_Graphic3d_SequenceNodeOfSequenceOfAddress_DownCast
 
@@ -7186,18 +7758,18 @@ class Graphic3d_SequenceNodeOfSequenceOfGroup(OCC.TCollection.TCollection_SeqNod
 
         """
         _Graphic3d.Graphic3d_SequenceNodeOfSequenceOfGroup_swiginit(self,_Graphic3d.new_Graphic3d_SequenceNodeOfSequenceOfGroup(*args))
-    def Value(self, *args) -> "Handle_Graphic3d_Group &" :
+    def Value(self):
         """
         :rtype: Handle_Graphic3d_Group
 
         """
-        return _Graphic3d.Graphic3d_SequenceNodeOfSequenceOfGroup_Value(self, *args)
+        return _Graphic3d.Graphic3d_SequenceNodeOfSequenceOfGroup_Value(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Graphic3d_SequenceNodeOfSequenceOfGroup self)"""
         return _Graphic3d.Graphic3d_SequenceNodeOfSequenceOfGroup__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Graphic3d_SequenceNodeOfSequenceOfGroup" :
+    def GetHandle(self):
         """GetHandle(Graphic3d_SequenceNodeOfSequenceOfGroup self) -> Handle_Graphic3d_SequenceNodeOfSequenceOfGroup"""
         return _Graphic3d.Graphic3d_SequenceNodeOfSequenceOfGroup_GetHandle(self)
 
@@ -7236,7 +7808,7 @@ Handle_Graphic3d_SequenceNodeOfSequenceOfGroup._kill_pointed = new_instancemetho
 Handle_Graphic3d_SequenceNodeOfSequenceOfGroup_swigregister = _Graphic3d.Handle_Graphic3d_SequenceNodeOfSequenceOfGroup_swigregister
 Handle_Graphic3d_SequenceNodeOfSequenceOfGroup_swigregister(Handle_Graphic3d_SequenceNodeOfSequenceOfGroup)
 
-def Handle_Graphic3d_SequenceNodeOfSequenceOfGroup_DownCast(*args) -> "Handle_Graphic3d_SequenceNodeOfSequenceOfGroup const" :
+def Handle_Graphic3d_SequenceNodeOfSequenceOfGroup_DownCast(*args):
   return _Graphic3d.Handle_Graphic3d_SequenceNodeOfSequenceOfGroup_DownCast(*args)
 Handle_Graphic3d_SequenceNodeOfSequenceOfGroup_DownCast = _Graphic3d.Handle_Graphic3d_SequenceNodeOfSequenceOfGroup_DownCast
 
@@ -7255,18 +7827,18 @@ class Graphic3d_SequenceNodeOfSequenceOfStructure(OCC.TCollection.TCollection_Se
 
         """
         _Graphic3d.Graphic3d_SequenceNodeOfSequenceOfStructure_swiginit(self,_Graphic3d.new_Graphic3d_SequenceNodeOfSequenceOfStructure(*args))
-    def Value(self, *args) -> "Handle_Graphic3d_Structure &" :
+    def Value(self):
         """
         :rtype: Handle_Graphic3d_Structure
 
         """
-        return _Graphic3d.Graphic3d_SequenceNodeOfSequenceOfStructure_Value(self, *args)
+        return _Graphic3d.Graphic3d_SequenceNodeOfSequenceOfStructure_Value(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Graphic3d_SequenceNodeOfSequenceOfStructure self)"""
         return _Graphic3d.Graphic3d_SequenceNodeOfSequenceOfStructure__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Graphic3d_SequenceNodeOfSequenceOfStructure" :
+    def GetHandle(self):
         """GetHandle(Graphic3d_SequenceNodeOfSequenceOfStructure self) -> Handle_Graphic3d_SequenceNodeOfSequenceOfStructure"""
         return _Graphic3d.Graphic3d_SequenceNodeOfSequenceOfStructure_GetHandle(self)
 
@@ -7305,27 +7877,27 @@ Handle_Graphic3d_SequenceNodeOfSequenceOfStructure._kill_pointed = new_instancem
 Handle_Graphic3d_SequenceNodeOfSequenceOfStructure_swigregister = _Graphic3d.Handle_Graphic3d_SequenceNodeOfSequenceOfStructure_swigregister
 Handle_Graphic3d_SequenceNodeOfSequenceOfStructure_swigregister(Handle_Graphic3d_SequenceNodeOfSequenceOfStructure)
 
-def Handle_Graphic3d_SequenceNodeOfSequenceOfStructure_DownCast(*args) -> "Handle_Graphic3d_SequenceNodeOfSequenceOfStructure const" :
+def Handle_Graphic3d_SequenceNodeOfSequenceOfStructure_DownCast(*args):
   return _Graphic3d.Handle_Graphic3d_SequenceNodeOfSequenceOfStructure_DownCast(*args)
 Handle_Graphic3d_SequenceNodeOfSequenceOfStructure_DownCast = _Graphic3d.Handle_Graphic3d_SequenceNodeOfSequenceOfStructure_DownCast
 
 class Graphic3d_SequenceOfAddress(OCC.TCollection.TCollection_BaseSequence):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _Graphic3d.Graphic3d_SequenceOfAddress_swiginit(self,_Graphic3d.new_Graphic3d_SequenceOfAddress(*args))
-    def Clear(self, *args) -> "void" :
+        _Graphic3d.Graphic3d_SequenceOfAddress_swiginit(self,_Graphic3d.new_Graphic3d_SequenceOfAddress())
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _Graphic3d.Graphic3d_SequenceOfAddress_Clear(self, *args)
+        return _Graphic3d.Graphic3d_SequenceOfAddress_Clear(self)
 
-    def Assign(self, *args) -> "Graphic3d_SequenceOfAddress const &" :
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: Graphic3d_SequenceOfAddress &
@@ -7334,7 +7906,7 @@ class Graphic3d_SequenceOfAddress(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Graphic3d.Graphic3d_SequenceOfAddress_Assign(self, *args)
 
-    def Set(self, *args) -> "Graphic3d_SequenceOfAddress const &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: Graphic3d_SequenceOfAddress &
@@ -7343,7 +7915,7 @@ class Graphic3d_SequenceOfAddress(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Graphic3d.Graphic3d_SequenceOfAddress_Set(self, *args)
 
-    def Append(self, *args) -> "void" :
+    def Append(self, *args):
         """
         :param T:
         :type T: Standard_Address &
@@ -7356,7 +7928,7 @@ class Graphic3d_SequenceOfAddress(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Graphic3d.Graphic3d_SequenceOfAddress_Append(self, *args)
 
-    def Prepend(self, *args) -> "void" :
+    def Prepend(self, *args):
         """
         :param T:
         :type T: Standard_Address &
@@ -7369,16 +7941,16 @@ class Graphic3d_SequenceOfAddress(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Graphic3d.Graphic3d_SequenceOfAddress_Prepend(self, *args)
 
-    def InsertBefore(self, *args) -> "void" :
+    def InsertBefore(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param T:
         :type T: Standard_Address &
         :rtype: None
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param S:
         :type S: Graphic3d_SequenceOfAddress &
         :rtype: None
@@ -7386,16 +7958,16 @@ class Graphic3d_SequenceOfAddress(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Graphic3d.Graphic3d_SequenceOfAddress_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args) -> "void" :
+    def InsertAfter(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param T:
         :type T: Standard_Address &
         :rtype: None
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param S:
         :type S: Graphic3d_SequenceOfAddress &
         :rtype: None
@@ -7403,24 +7975,24 @@ class Graphic3d_SequenceOfAddress(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Graphic3d.Graphic3d_SequenceOfAddress_InsertAfter(self, *args)
 
-    def First(self, *args) -> "Standard_Address const &" :
+    def First(self):
         """
         :rtype: Standard_Address
 
         """
-        return _Graphic3d.Graphic3d_SequenceOfAddress_First(self, *args)
+        return _Graphic3d.Graphic3d_SequenceOfAddress_First(self)
 
-    def Last(self, *args) -> "Standard_Address const &" :
+    def Last(self):
         """
         :rtype: Standard_Address
 
         """
-        return _Graphic3d.Graphic3d_SequenceOfAddress_Last(self, *args)
+        return _Graphic3d.Graphic3d_SequenceOfAddress_Last(self)
 
-    def Split(self, *args) -> "void" :
+    def Split(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Sub:
         :type Sub: Graphic3d_SequenceOfAddress &
         :rtype: None
@@ -7428,19 +8000,19 @@ class Graphic3d_SequenceOfAddress(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Graphic3d.Graphic3d_SequenceOfAddress_Split(self, *args)
 
-    def Value(self, *args) -> "Standard_Address const &" :
+    def Value(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Standard_Address
 
         """
         return _Graphic3d.Graphic3d_SequenceOfAddress_Value(self, *args)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param I:
         :type I: Standard_Address &
         :rtype: None
@@ -7448,25 +8020,25 @@ class Graphic3d_SequenceOfAddress(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Graphic3d.Graphic3d_SequenceOfAddress_SetValue(self, *args)
 
-    def ChangeValue(self, *args) -> "Standard_Address &" :
+    def ChangeValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Standard_Address
 
         """
         return _Graphic3d.Graphic3d_SequenceOfAddress_ChangeValue(self, *args)
 
-    def Remove(self, *args) -> "void" :
+    def Remove(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: None
 
         :param FromIndex:
-        :type FromIndex: int
+        :type FromIndex: Standard_Integer
         :param ToIndex:
-        :type ToIndex: int
+        :type ToIndex: Standard_Integer
         :rtype: None
 
         """
@@ -7501,20 +8073,20 @@ Graphic3d_SequenceOfAddress_swigregister(Graphic3d_SequenceOfAddress)
 class Graphic3d_SequenceOfGroup(OCC.TCollection.TCollection_BaseSequence):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _Graphic3d.Graphic3d_SequenceOfGroup_swiginit(self,_Graphic3d.new_Graphic3d_SequenceOfGroup(*args))
-    def Clear(self, *args) -> "void" :
+        _Graphic3d.Graphic3d_SequenceOfGroup_swiginit(self,_Graphic3d.new_Graphic3d_SequenceOfGroup())
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _Graphic3d.Graphic3d_SequenceOfGroup_Clear(self, *args)
+        return _Graphic3d.Graphic3d_SequenceOfGroup_Clear(self)
 
-    def Assign(self, *args) -> "Graphic3d_SequenceOfGroup const &" :
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: Graphic3d_SequenceOfGroup &
@@ -7523,7 +8095,7 @@ class Graphic3d_SequenceOfGroup(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Graphic3d.Graphic3d_SequenceOfGroup_Assign(self, *args)
 
-    def Set(self, *args) -> "Graphic3d_SequenceOfGroup const &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: Graphic3d_SequenceOfGroup &
@@ -7532,7 +8104,7 @@ class Graphic3d_SequenceOfGroup(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Graphic3d.Graphic3d_SequenceOfGroup_Set(self, *args)
 
-    def Append(self, *args) -> "void" :
+    def Append(self, *args):
         """
         :param T:
         :type T: Handle_Graphic3d_Group &
@@ -7545,7 +8117,7 @@ class Graphic3d_SequenceOfGroup(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Graphic3d.Graphic3d_SequenceOfGroup_Append(self, *args)
 
-    def Prepend(self, *args) -> "void" :
+    def Prepend(self, *args):
         """
         :param T:
         :type T: Handle_Graphic3d_Group &
@@ -7558,16 +8130,16 @@ class Graphic3d_SequenceOfGroup(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Graphic3d.Graphic3d_SequenceOfGroup_Prepend(self, *args)
 
-    def InsertBefore(self, *args) -> "void" :
+    def InsertBefore(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param T:
         :type T: Handle_Graphic3d_Group &
         :rtype: None
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param S:
         :type S: Graphic3d_SequenceOfGroup &
         :rtype: None
@@ -7575,16 +8147,16 @@ class Graphic3d_SequenceOfGroup(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Graphic3d.Graphic3d_SequenceOfGroup_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args) -> "void" :
+    def InsertAfter(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param T:
         :type T: Handle_Graphic3d_Group &
         :rtype: None
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param S:
         :type S: Graphic3d_SequenceOfGroup &
         :rtype: None
@@ -7592,24 +8164,24 @@ class Graphic3d_SequenceOfGroup(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Graphic3d.Graphic3d_SequenceOfGroup_InsertAfter(self, *args)
 
-    def First(self, *args) -> "Handle_Graphic3d_Group const &" :
+    def First(self):
         """
         :rtype: Handle_Graphic3d_Group
 
         """
-        return _Graphic3d.Graphic3d_SequenceOfGroup_First(self, *args)
+        return _Graphic3d.Graphic3d_SequenceOfGroup_First(self)
 
-    def Last(self, *args) -> "Handle_Graphic3d_Group const &" :
+    def Last(self):
         """
         :rtype: Handle_Graphic3d_Group
 
         """
-        return _Graphic3d.Graphic3d_SequenceOfGroup_Last(self, *args)
+        return _Graphic3d.Graphic3d_SequenceOfGroup_Last(self)
 
-    def Split(self, *args) -> "void" :
+    def Split(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Sub:
         :type Sub: Graphic3d_SequenceOfGroup &
         :rtype: None
@@ -7617,19 +8189,19 @@ class Graphic3d_SequenceOfGroup(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Graphic3d.Graphic3d_SequenceOfGroup_Split(self, *args)
 
-    def Value(self, *args) -> "Handle_Graphic3d_Group const &" :
+    def Value(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Handle_Graphic3d_Group
 
         """
         return _Graphic3d.Graphic3d_SequenceOfGroup_Value(self, *args)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param I:
         :type I: Handle_Graphic3d_Group &
         :rtype: None
@@ -7637,25 +8209,25 @@ class Graphic3d_SequenceOfGroup(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Graphic3d.Graphic3d_SequenceOfGroup_SetValue(self, *args)
 
-    def ChangeValue(self, *args) -> "Handle_Graphic3d_Group &" :
+    def ChangeValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Handle_Graphic3d_Group
 
         """
         return _Graphic3d.Graphic3d_SequenceOfGroup_ChangeValue(self, *args)
 
-    def Remove(self, *args) -> "void" :
+    def Remove(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: None
 
         :param FromIndex:
-        :type FromIndex: int
+        :type FromIndex: Standard_Integer
         :param ToIndex:
-        :type ToIndex: int
+        :type ToIndex: Standard_Integer
         :rtype: None
 
         """
@@ -7690,20 +8262,20 @@ Graphic3d_SequenceOfGroup_swigregister(Graphic3d_SequenceOfGroup)
 class Graphic3d_SequenceOfStructure(OCC.TCollection.TCollection_BaseSequence):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _Graphic3d.Graphic3d_SequenceOfStructure_swiginit(self,_Graphic3d.new_Graphic3d_SequenceOfStructure(*args))
-    def Clear(self, *args) -> "void" :
+        _Graphic3d.Graphic3d_SequenceOfStructure_swiginit(self,_Graphic3d.new_Graphic3d_SequenceOfStructure())
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _Graphic3d.Graphic3d_SequenceOfStructure_Clear(self, *args)
+        return _Graphic3d.Graphic3d_SequenceOfStructure_Clear(self)
 
-    def Assign(self, *args) -> "Graphic3d_SequenceOfStructure const &" :
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: Graphic3d_SequenceOfStructure &
@@ -7712,7 +8284,7 @@ class Graphic3d_SequenceOfStructure(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Graphic3d.Graphic3d_SequenceOfStructure_Assign(self, *args)
 
-    def Set(self, *args) -> "Graphic3d_SequenceOfStructure const &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: Graphic3d_SequenceOfStructure &
@@ -7721,7 +8293,7 @@ class Graphic3d_SequenceOfStructure(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Graphic3d.Graphic3d_SequenceOfStructure_Set(self, *args)
 
-    def Append(self, *args) -> "void" :
+    def Append(self, *args):
         """
         :param T:
         :type T: Handle_Graphic3d_Structure &
@@ -7734,7 +8306,7 @@ class Graphic3d_SequenceOfStructure(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Graphic3d.Graphic3d_SequenceOfStructure_Append(self, *args)
 
-    def Prepend(self, *args) -> "void" :
+    def Prepend(self, *args):
         """
         :param T:
         :type T: Handle_Graphic3d_Structure &
@@ -7747,16 +8319,16 @@ class Graphic3d_SequenceOfStructure(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Graphic3d.Graphic3d_SequenceOfStructure_Prepend(self, *args)
 
-    def InsertBefore(self, *args) -> "void" :
+    def InsertBefore(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param T:
         :type T: Handle_Graphic3d_Structure &
         :rtype: None
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param S:
         :type S: Graphic3d_SequenceOfStructure &
         :rtype: None
@@ -7764,16 +8336,16 @@ class Graphic3d_SequenceOfStructure(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Graphic3d.Graphic3d_SequenceOfStructure_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args) -> "void" :
+    def InsertAfter(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param T:
         :type T: Handle_Graphic3d_Structure &
         :rtype: None
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param S:
         :type S: Graphic3d_SequenceOfStructure &
         :rtype: None
@@ -7781,24 +8353,24 @@ class Graphic3d_SequenceOfStructure(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Graphic3d.Graphic3d_SequenceOfStructure_InsertAfter(self, *args)
 
-    def First(self, *args) -> "Handle_Graphic3d_Structure const &" :
+    def First(self):
         """
         :rtype: Handle_Graphic3d_Structure
 
         """
-        return _Graphic3d.Graphic3d_SequenceOfStructure_First(self, *args)
+        return _Graphic3d.Graphic3d_SequenceOfStructure_First(self)
 
-    def Last(self, *args) -> "Handle_Graphic3d_Structure const &" :
+    def Last(self):
         """
         :rtype: Handle_Graphic3d_Structure
 
         """
-        return _Graphic3d.Graphic3d_SequenceOfStructure_Last(self, *args)
+        return _Graphic3d.Graphic3d_SequenceOfStructure_Last(self)
 
-    def Split(self, *args) -> "void" :
+    def Split(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Sub:
         :type Sub: Graphic3d_SequenceOfStructure &
         :rtype: None
@@ -7806,19 +8378,19 @@ class Graphic3d_SequenceOfStructure(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Graphic3d.Graphic3d_SequenceOfStructure_Split(self, *args)
 
-    def Value(self, *args) -> "Handle_Graphic3d_Structure const &" :
+    def Value(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Handle_Graphic3d_Structure
 
         """
         return _Graphic3d.Graphic3d_SequenceOfStructure_Value(self, *args)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param I:
         :type I: Handle_Graphic3d_Structure &
         :rtype: None
@@ -7826,25 +8398,25 @@ class Graphic3d_SequenceOfStructure(OCC.TCollection.TCollection_BaseSequence):
         """
         return _Graphic3d.Graphic3d_SequenceOfStructure_SetValue(self, *args)
 
-    def ChangeValue(self, *args) -> "Handle_Graphic3d_Structure &" :
+    def ChangeValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Handle_Graphic3d_Structure
 
         """
         return _Graphic3d.Graphic3d_SequenceOfStructure_ChangeValue(self, *args)
 
-    def Remove(self, *args) -> "void" :
+    def Remove(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: None
 
         :param FromIndex:
-        :type FromIndex: int
+        :type FromIndex: Standard_Integer
         :param ToIndex:
-        :type ToIndex: int
+        :type ToIndex: Standard_Integer
         :rtype: None
 
         """
@@ -7889,7 +8461,7 @@ class Graphic3d_SetIteratorOfSetOfGroup(object):
 
         """
         _Graphic3d.Graphic3d_SetIteratorOfSetOfGroup_swiginit(self,_Graphic3d.new_Graphic3d_SetIteratorOfSetOfGroup(*args))
-    def Initialize(self, *args) -> "void" :
+    def Initialize(self, *args):
         """
         :param S:
         :type S: Graphic3d_SetOfGroup &
@@ -7898,26 +8470,26 @@ class Graphic3d_SetIteratorOfSetOfGroup(object):
         """
         return _Graphic3d.Graphic3d_SetIteratorOfSetOfGroup_Initialize(self, *args)
 
-    def More(self, *args) -> "Standard_Boolean" :
+    def More(self):
         """
         :rtype: bool
 
         """
-        return _Graphic3d.Graphic3d_SetIteratorOfSetOfGroup_More(self, *args)
+        return _Graphic3d.Graphic3d_SetIteratorOfSetOfGroup_More(self)
 
-    def Next(self, *args) -> "void" :
+    def Next(self):
         """
         :rtype: None
 
         """
-        return _Graphic3d.Graphic3d_SetIteratorOfSetOfGroup_Next(self, *args)
+        return _Graphic3d.Graphic3d_SetIteratorOfSetOfGroup_Next(self)
 
-    def Value(self, *args) -> "Handle_Graphic3d_Group const &" :
+    def Value(self):
         """
         :rtype: Handle_Graphic3d_Group
 
         """
-        return _Graphic3d.Graphic3d_SetIteratorOfSetOfGroup_Value(self, *args)
+        return _Graphic3d.Graphic3d_SetIteratorOfSetOfGroup_Value(self)
 
     def __del__(self):
     	try:
@@ -7938,13 +8510,13 @@ Graphic3d_SetIteratorOfSetOfGroup_swigregister(Graphic3d_SetIteratorOfSetOfGroup
 class Graphic3d_SetListOfSetOfGroup(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _Graphic3d.Graphic3d_SetListOfSetOfGroup_swiginit(self,_Graphic3d.new_Graphic3d_SetListOfSetOfGroup(*args))
-    def Assign(self, *args) -> "void" :
+        _Graphic3d.Graphic3d_SetListOfSetOfGroup_swiginit(self,_Graphic3d.new_Graphic3d_SetListOfSetOfGroup())
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: Graphic3d_SetListOfSetOfGroup &
@@ -7953,7 +8525,7 @@ class Graphic3d_SetListOfSetOfGroup(object):
         """
         return _Graphic3d.Graphic3d_SetListOfSetOfGroup_Assign(self, *args)
 
-    def Set(self, *args) -> "void" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: Graphic3d_SetListOfSetOfGroup &
@@ -7962,28 +8534,28 @@ class Graphic3d_SetListOfSetOfGroup(object):
         """
         return _Graphic3d.Graphic3d_SetListOfSetOfGroup_Set(self, *args)
 
-    def Extent(self, *args) -> "Standard_Integer" :
+    def Extent(self):
         """
         :rtype: int
 
         """
-        return _Graphic3d.Graphic3d_SetListOfSetOfGroup_Extent(self, *args)
+        return _Graphic3d.Graphic3d_SetListOfSetOfGroup_Extent(self)
 
-    def Clear(self, *args) -> "void" :
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _Graphic3d.Graphic3d_SetListOfSetOfGroup_Clear(self, *args)
+        return _Graphic3d.Graphic3d_SetListOfSetOfGroup_Clear(self)
 
-    def IsEmpty(self, *args) -> "Standard_Boolean" :
+    def IsEmpty(self):
         """
         :rtype: bool
 
         """
-        return _Graphic3d.Graphic3d_SetListOfSetOfGroup_IsEmpty(self, *args)
+        return _Graphic3d.Graphic3d_SetListOfSetOfGroup_IsEmpty(self)
 
-    def Prepend(self, *args) -> "void" :
+    def Prepend(self, *args):
         """
         :param I:
         :type I: Handle_Graphic3d_Group &
@@ -8002,7 +8574,7 @@ class Graphic3d_SetListOfSetOfGroup(object):
         """
         return _Graphic3d.Graphic3d_SetListOfSetOfGroup_Prepend(self, *args)
 
-    def Append(self, *args) -> "void" :
+    def Append(self, *args):
         """
         :param I:
         :type I: Handle_Graphic3d_Group &
@@ -8021,28 +8593,28 @@ class Graphic3d_SetListOfSetOfGroup(object):
         """
         return _Graphic3d.Graphic3d_SetListOfSetOfGroup_Append(self, *args)
 
-    def First(self, *args) -> "Handle_Graphic3d_Group &" :
+    def First(self):
         """
         :rtype: Handle_Graphic3d_Group
 
         """
-        return _Graphic3d.Graphic3d_SetListOfSetOfGroup_First(self, *args)
+        return _Graphic3d.Graphic3d_SetListOfSetOfGroup_First(self)
 
-    def Last(self, *args) -> "Handle_Graphic3d_Group &" :
+    def Last(self):
         """
         :rtype: Handle_Graphic3d_Group
 
         """
-        return _Graphic3d.Graphic3d_SetListOfSetOfGroup_Last(self, *args)
+        return _Graphic3d.Graphic3d_SetListOfSetOfGroup_Last(self)
 
-    def RemoveFirst(self, *args) -> "void" :
+    def RemoveFirst(self):
         """
         :rtype: None
 
         """
-        return _Graphic3d.Graphic3d_SetListOfSetOfGroup_RemoveFirst(self, *args)
+        return _Graphic3d.Graphic3d_SetListOfSetOfGroup_RemoveFirst(self)
 
-    def Remove(self, *args) -> "void" :
+    def Remove(self, *args):
         """
         :param It:
         :type It: Graphic3d_ListIteratorOfSetListOfSetOfGroup &
@@ -8051,7 +8623,7 @@ class Graphic3d_SetListOfSetOfGroup(object):
         """
         return _Graphic3d.Graphic3d_SetListOfSetOfGroup_Remove(self, *args)
 
-    def InsertBefore(self, *args) -> "void" :
+    def InsertBefore(self, *args):
         """
         :param I:
         :type I: Handle_Graphic3d_Group &
@@ -8068,7 +8640,7 @@ class Graphic3d_SetListOfSetOfGroup(object):
         """
         return _Graphic3d.Graphic3d_SetListOfSetOfGroup_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args) -> "void" :
+    def InsertAfter(self, *args):
         """
         :param I:
         :type I: Handle_Graphic3d_Group &
@@ -8113,34 +8685,34 @@ Graphic3d_SetListOfSetOfGroup_swigregister(Graphic3d_SetListOfSetOfGroup)
 class Graphic3d_SetOfGroup(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _Graphic3d.Graphic3d_SetOfGroup_swiginit(self,_Graphic3d.new_Graphic3d_SetOfGroup(*args))
-    def Extent(self, *args) -> "Standard_Integer" :
+        _Graphic3d.Graphic3d_SetOfGroup_swiginit(self,_Graphic3d.new_Graphic3d_SetOfGroup())
+    def Extent(self):
         """
         :rtype: int
 
         """
-        return _Graphic3d.Graphic3d_SetOfGroup_Extent(self, *args)
+        return _Graphic3d.Graphic3d_SetOfGroup_Extent(self)
 
-    def IsEmpty(self, *args) -> "Standard_Boolean" :
+    def IsEmpty(self):
         """
         :rtype: bool
 
         """
-        return _Graphic3d.Graphic3d_SetOfGroup_IsEmpty(self, *args)
+        return _Graphic3d.Graphic3d_SetOfGroup_IsEmpty(self)
 
-    def Clear(self, *args) -> "void" :
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _Graphic3d.Graphic3d_SetOfGroup_Clear(self, *args)
+        return _Graphic3d.Graphic3d_SetOfGroup_Clear(self)
 
-    def Add(self, *args) -> "Standard_Boolean" :
+    def Add(self, *args):
         """
         :param T:
         :type T: Handle_Graphic3d_Group &
@@ -8149,7 +8721,7 @@ class Graphic3d_SetOfGroup(object):
         """
         return _Graphic3d.Graphic3d_SetOfGroup_Add(self, *args)
 
-    def Remove(self, *args) -> "Standard_Boolean" :
+    def Remove(self, *args):
         """
         :param T:
         :type T: Handle_Graphic3d_Group &
@@ -8158,7 +8730,7 @@ class Graphic3d_SetOfGroup(object):
         """
         return _Graphic3d.Graphic3d_SetOfGroup_Remove(self, *args)
 
-    def Union(self, *args) -> "void" :
+    def Union(self, *args):
         """
         :param B:
         :type B: Graphic3d_SetOfGroup &
@@ -8167,7 +8739,7 @@ class Graphic3d_SetOfGroup(object):
         """
         return _Graphic3d.Graphic3d_SetOfGroup_Union(self, *args)
 
-    def Intersection(self, *args) -> "void" :
+    def Intersection(self, *args):
         """
         :param B:
         :type B: Graphic3d_SetOfGroup &
@@ -8176,7 +8748,7 @@ class Graphic3d_SetOfGroup(object):
         """
         return _Graphic3d.Graphic3d_SetOfGroup_Intersection(self, *args)
 
-    def Difference(self, *args) -> "void" :
+    def Difference(self, *args):
         """
         :param B:
         :type B: Graphic3d_SetOfGroup &
@@ -8185,7 +8757,7 @@ class Graphic3d_SetOfGroup(object):
         """
         return _Graphic3d.Graphic3d_SetOfGroup_Difference(self, *args)
 
-    def Contains(self, *args) -> "Standard_Boolean" :
+    def Contains(self, *args):
         """
         :param T:
         :type T: Handle_Graphic3d_Group &
@@ -8194,7 +8766,7 @@ class Graphic3d_SetOfGroup(object):
         """
         return _Graphic3d.Graphic3d_SetOfGroup_Contains(self, *args)
 
-    def IsASubset(self, *args) -> "Standard_Boolean" :
+    def IsASubset(self, *args):
         """
         :param S:
         :type S: Graphic3d_SetOfGroup &
@@ -8203,7 +8775,7 @@ class Graphic3d_SetOfGroup(object):
         """
         return _Graphic3d.Graphic3d_SetOfGroup_IsASubset(self, *args)
 
-    def IsAProperSubset(self, *args) -> "Standard_Boolean" :
+    def IsAProperSubset(self, *args):
         """
         :param S:
         :type S: Graphic3d_SetOfGroup &
@@ -8239,52 +8811,52 @@ class Graphic3d_ShaderObject(OCC.Standard.Standard_Transient):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def IsDone(self, *args) -> "Standard_Boolean" :
+    def IsDone(self):
         """
         * Checks if the shader object is valid or not.
 
         :rtype: bool
 
         """
-        return _Graphic3d.Graphic3d_ShaderObject_IsDone(self, *args)
+        return _Graphic3d.Graphic3d_ShaderObject_IsDone(self)
 
-    def Path(self, *args) -> "OSD_Path const &" :
+    def Path(self):
         """
         * Returns the full path to the shader source.
 
         :rtype: OSD_Path
 
         """
-        return _Graphic3d.Graphic3d_ShaderObject_Path(self, *args)
+        return _Graphic3d.Graphic3d_ShaderObject_Path(self)
 
-    def Source(self, *args) -> "TCollection_AsciiString const &" :
+    def Source(self):
         """
         * Returns the source code of the shader object.
 
         :rtype: TCollection_AsciiString
 
         """
-        return _Graphic3d.Graphic3d_ShaderObject_Source(self, *args)
+        return _Graphic3d.Graphic3d_ShaderObject_Source(self)
 
-    def Type(self, *args) -> "Graphic3d_TypeOfShaderObject" :
+    def Type(self):
         """
         * Returns type of the shader object.
 
         :rtype: Graphic3d_TypeOfShaderObject
 
         """
-        return _Graphic3d.Graphic3d_ShaderObject_Type(self, *args)
+        return _Graphic3d.Graphic3d_ShaderObject_Type(self)
 
-    def GetId(self, *args) -> "TCollection_AsciiString const &" :
+    def GetId(self):
         """
         * Returns unique ID used to manage resource in graphic driver.
 
         :rtype: TCollection_AsciiString
 
         """
-        return _Graphic3d.Graphic3d_ShaderObject_GetId(self, *args)
+        return _Graphic3d.Graphic3d_ShaderObject_GetId(self)
 
-    def CreateFromFile(*args) -> "Handle_Graphic3d_ShaderObject" :
+    def CreateFromFile(*args):
         """
         * Creates new shader object from specified file.
 
@@ -8298,7 +8870,7 @@ class Graphic3d_ShaderObject(OCC.Standard.Standard_Transient):
         return _Graphic3d.Graphic3d_ShaderObject_CreateFromFile(*args)
 
     CreateFromFile = staticmethod(CreateFromFile)
-    def CreateFromSource(*args) -> "Handle_Graphic3d_ShaderObject" :
+    def CreateFromSource(*args):
         """
         * Creates new shader object from specified source.
 
@@ -8312,7 +8884,7 @@ class Graphic3d_ShaderObject(OCC.Standard.Standard_Transient):
         return _Graphic3d.Graphic3d_ShaderObject_CreateFromSource(*args)
 
     CreateFromSource = staticmethod(CreateFromSource)
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Graphic3d_ShaderObject self)"""
         return _Graphic3d.Graphic3d_ShaderObject__kill_pointed(self)
 
@@ -8333,7 +8905,7 @@ Graphic3d_ShaderObject._kill_pointed = new_instancemethod(_Graphic3d.Graphic3d_S
 Graphic3d_ShaderObject_swigregister = _Graphic3d.Graphic3d_ShaderObject_swigregister
 Graphic3d_ShaderObject_swigregister(Graphic3d_ShaderObject)
 
-def Graphic3d_ShaderObject_CreateFromFile(*args) -> "Handle_Graphic3d_ShaderObject" :
+def Graphic3d_ShaderObject_CreateFromFile(*args):
   """
     * Creates new shader object from specified file.
 
@@ -8346,7 +8918,7 @@ def Graphic3d_ShaderObject_CreateFromFile(*args) -> "Handle_Graphic3d_ShaderObje
     """
   return _Graphic3d.Graphic3d_ShaderObject_CreateFromFile(*args)
 
-def Graphic3d_ShaderObject_CreateFromSource(*args) -> "Handle_Graphic3d_ShaderObject" :
+def Graphic3d_ShaderObject_CreateFromSource(*args):
   """
     * Creates new shader object from specified source.
 
@@ -8376,34 +8948,34 @@ class Graphic3d_ShaderProgram(OCC.Standard.Standard_Transient):
 
         """
         _Graphic3d.Graphic3d_ShaderProgram_swiginit(self,_Graphic3d.new_Graphic3d_ShaderProgram(*args))
-    def Destroy(self, *args) -> "void" :
+    def Destroy(self):
         """
         * Releases resources of program object.
 
         :rtype: None
 
         """
-        return _Graphic3d.Graphic3d_ShaderProgram_Destroy(self, *args)
+        return _Graphic3d.Graphic3d_ShaderProgram_Destroy(self)
 
-    def IsDone(self, *args) -> "Standard_Boolean" :
+    def IsDone(self):
         """
         * Checks if the program object is valid or not.
 
         :rtype: bool
 
         """
-        return _Graphic3d.Graphic3d_ShaderProgram_IsDone(self, *args)
+        return _Graphic3d.Graphic3d_ShaderProgram_IsDone(self)
 
-    def GetId(self, *args) -> "TCollection_AsciiString const &" :
+    def GetId(self):
         """
         * Returns unique ID used to manage resource in graphic driver.
 
         :rtype: TCollection_AsciiString
 
         """
-        return _Graphic3d.Graphic3d_ShaderProgram_GetId(self, *args)
+        return _Graphic3d.Graphic3d_ShaderProgram_GetId(self)
 
-    def AttachShader(self, *args) -> "Standard_Boolean" :
+    def AttachShader(self, *args):
         """
         * Attaches shader object to the program object.
 
@@ -8414,7 +8986,7 @@ class Graphic3d_ShaderProgram(OCC.Standard.Standard_Transient):
         """
         return _Graphic3d.Graphic3d_ShaderProgram_AttachShader(self, *args)
 
-    def DetachShader(self, *args) -> "Standard_Boolean" :
+    def DetachShader(self, *args):
         """
         * Detaches shader object from the program object.
 
@@ -8425,44 +8997,44 @@ class Graphic3d_ShaderProgram(OCC.Standard.Standard_Transient):
         """
         return _Graphic3d.Graphic3d_ShaderProgram_DetachShader(self, *args)
 
-    def ShaderObjects(self, *args) -> "Graphic3d_ShaderObjectList const &" :
+    def ShaderObjects(self):
         """
         * Returns list of attached shader objects.
 
         :rtype: Graphic3d_ShaderObjectList
 
         """
-        return _Graphic3d.Graphic3d_ShaderProgram_ShaderObjects(self, *args)
+        return _Graphic3d.Graphic3d_ShaderProgram_ShaderObjects(self)
 
-    def Variables(self, *args) -> "Graphic3d_ShaderVariableList const &" :
+    def Variables(self):
         """
         * Returns list of custom uniform variables.
 
         :rtype: Graphic3d_ShaderVariableList
 
         """
-        return _Graphic3d.Graphic3d_ShaderProgram_Variables(self, *args)
+        return _Graphic3d.Graphic3d_ShaderProgram_Variables(self)
 
-    def ClearVariables(self, *args) -> "void" :
+    def ClearVariables(self):
         """
         * Removes all custom uniform variables from the program.
 
         :rtype: None
 
         """
-        return _Graphic3d.Graphic3d_ShaderProgram_ClearVariables(self, *args)
+        return _Graphic3d.Graphic3d_ShaderProgram_ClearVariables(self)
 
-    def ShadersFolder(*args) -> "TCollection_AsciiString const &" :
+    def ShadersFolder():
         """
         * The path to GLSL programs determined from CSF_ShadersDirectory or CASROOT environment variables. returns the root folder with default GLSL programs.
 
         :rtype: TCollection_AsciiString
 
         """
-        return _Graphic3d.Graphic3d_ShaderProgram_ShadersFolder(*args)
+        return _Graphic3d.Graphic3d_ShaderProgram_ShadersFolder()
 
     ShadersFolder = staticmethod(ShadersFolder)
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Graphic3d_ShaderProgram self)"""
         return _Graphic3d.Graphic3d_ShaderProgram__kill_pointed(self)
 
@@ -8486,47 +9058,47 @@ Graphic3d_ShaderProgram._kill_pointed = new_instancemethod(_Graphic3d.Graphic3d_
 Graphic3d_ShaderProgram_swigregister = _Graphic3d.Graphic3d_ShaderProgram_swigregister
 Graphic3d_ShaderProgram_swigregister(Graphic3d_ShaderProgram)
 
-def Graphic3d_ShaderProgram_ShadersFolder(*args) -> "TCollection_AsciiString const &" :
+def Graphic3d_ShaderProgram_ShadersFolder():
   """
     * The path to GLSL programs determined from CSF_ShadersDirectory or CASROOT environment variables. returns the root folder with default GLSL programs.
 
     :rtype: TCollection_AsciiString
 
     """
-  return _Graphic3d.Graphic3d_ShaderProgram_ShadersFolder(*args)
+  return _Graphic3d.Graphic3d_ShaderProgram_ShadersFolder()
 
 class Graphic3d_ShaderVariable(OCC.Standard.Standard_Transient):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def Name(self, *args) -> "TCollection_AsciiString const &" :
+    def Name(self):
         """
         * Returns name of shader variable.
 
         :rtype: TCollection_AsciiString
 
         """
-        return _Graphic3d.Graphic3d_ShaderVariable_Name(self, *args)
+        return _Graphic3d.Graphic3d_ShaderVariable_Name(self)
 
-    def IsDone(self, *args) -> "Standard_Boolean" :
+    def IsDone(self):
         """
         * Checks if the shader variable is valid or not.
 
         :rtype: bool
 
         """
-        return _Graphic3d.Graphic3d_ShaderVariable_IsDone(self, *args)
+        return _Graphic3d.Graphic3d_ShaderVariable_IsDone(self)
 
-    def Value(self, *args) -> "Graphic3d_ValueInterface *" :
+    def Value(self):
         """
         * Returns interface of shader variable value.
 
         :rtype: Graphic3d_ValueInterface *
 
         """
-        return _Graphic3d.Graphic3d_ShaderVariable_Value(self, *args)
+        return _Graphic3d.Graphic3d_ShaderVariable_Value(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Graphic3d_ShaderVariable self)"""
         return _Graphic3d.Graphic3d_ShaderVariable__kill_pointed(self)
 
@@ -8558,18 +9130,18 @@ class Graphic3d_StdMapNodeOfMapOfStructure(OCC.TCollection.TCollection_MapNode):
 
         """
         _Graphic3d.Graphic3d_StdMapNodeOfMapOfStructure_swiginit(self,_Graphic3d.new_Graphic3d_StdMapNodeOfMapOfStructure(*args))
-    def Key(self, *args) -> "Handle_Graphic3d_Structure &" :
+    def Key(self):
         """
         :rtype: Handle_Graphic3d_Structure
 
         """
-        return _Graphic3d.Graphic3d_StdMapNodeOfMapOfStructure_Key(self, *args)
+        return _Graphic3d.Graphic3d_StdMapNodeOfMapOfStructure_Key(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Graphic3d_StdMapNodeOfMapOfStructure self)"""
         return _Graphic3d.Graphic3d_StdMapNodeOfMapOfStructure__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Graphic3d_StdMapNodeOfMapOfStructure" :
+    def GetHandle(self):
         """GetHandle(Graphic3d_StdMapNodeOfMapOfStructure self) -> Handle_Graphic3d_StdMapNodeOfMapOfStructure"""
         return _Graphic3d.Graphic3d_StdMapNodeOfMapOfStructure_GetHandle(self)
 
@@ -8608,7 +9180,7 @@ Handle_Graphic3d_StdMapNodeOfMapOfStructure._kill_pointed = new_instancemethod(_
 Handle_Graphic3d_StdMapNodeOfMapOfStructure_swigregister = _Graphic3d.Handle_Graphic3d_StdMapNodeOfMapOfStructure_swigregister
 Handle_Graphic3d_StdMapNodeOfMapOfStructure_swigregister(Handle_Graphic3d_StdMapNodeOfMapOfStructure)
 
-def Handle_Graphic3d_StdMapNodeOfMapOfStructure_DownCast(*args) -> "Handle_Graphic3d_StdMapNodeOfMapOfStructure const" :
+def Handle_Graphic3d_StdMapNodeOfMapOfStructure_DownCast(*args):
   return _Graphic3d.Handle_Graphic3d_StdMapNodeOfMapOfStructure_DownCast(*args)
 Handle_Graphic3d_StdMapNodeOfMapOfStructure_DownCast = _Graphic3d.Handle_Graphic3d_StdMapNodeOfMapOfStructure_DownCast
 
@@ -8625,8 +9197,14 @@ class Graphic3d_Structure(OCC.MMgt.MMgt_TShared):
 
         """
         _Graphic3d.Graphic3d_Structure_swiginit(self,_Graphic3d.new_Graphic3d_Structure(*args))
-    def Clear(self, *args) -> "void" :
+    def Clear(self, *args):
         """
+        * if WithDestruction == Standard_True then //!		suppress all the groups of primitives in the structure. //!	 and it is mandatory to create a new group in <self>. //!	 if WithDestruction == Standard_False then //!		clears all the groups of primitives in the structure. //!	 and all the groups are conserved and empty. //!	 They will be erased at the next screen update. //!	 The structure itself is conserved. //!	 The transformation and the attributes of <self> are conserved. //!	 The childs of <self> are conserved.
+
+        :param WithDestruction: default value is Standard_True
+        :type WithDestruction: bool
+        :rtype: void
+
         * if WithDestruction == Standard_True then //!		suppress all the groups of primitives in the structure. //!	 and it is mandatory to create a new group in <self>. //!	 if WithDestruction == Standard_False then //!		clears all the groups of primitives in the structure. //!	 and all the groups are conserved and empty. //!	 They will be erased at the next screen update. //!	 The structure itself is conserved. //!	 The transformation and the attributes of <self> are conserved. //!	 The childs of <self> are conserved.
 
         :param WithDestruction: default value is Standard_True
@@ -8636,16 +9214,16 @@ class Graphic3d_Structure(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_Structure_Clear(self, *args)
 
-    def Destroy(self, *args) -> "void" :
+    def Destroy(self):
         """
         * Suppresses the structure <self>. //!	 It will be erased at the next screen update.
 
         :rtype: void
 
         """
-        return _Graphic3d.Graphic3d_Structure_Destroy(self, *args)
+        return _Graphic3d.Graphic3d_Structure_Destroy(self)
 
-    def Display(self, *args) -> "void" :
+    def Display(self, *args):
         """
         * Displays the structure <self> in all the views of //!	 the visualiser.
 
@@ -8654,31 +9232,31 @@ class Graphic3d_Structure(OCC.MMgt.MMgt_TShared):
         * Displays the structure <self> in all the views of //!	 the visualiser, while modifying its current priority. Note: Display Priorities Structure display priorities control the order in which structures are redrawn. When you display a structure, you specify its priority. The lower the value, the lower the display priority. When the display is regenerated, the structures with the lowest priority are drawn first. For structures with the same display priority, the order in which they were displayed determines the drawing order. Open CASCADE supports 11 structure display priorities, 0 to 10. Warning: Raises PriorityDefinitionError if <Priority> is //!	 greater than 10 or a negative value.
 
         :param Priority:
-        :type Priority: int
+        :type Priority: Standard_Integer
         :rtype: None
 
         """
         return _Graphic3d.Graphic3d_Structure_Display(self, *args)
 
-    def DisplayPriority(self, *args) -> "Standard_Integer" :
+    def DisplayPriority(self):
         """
         * Returns the current display priority for the //!	 structure <self>.
 
         :rtype: int
 
         """
-        return _Graphic3d.Graphic3d_Structure_DisplayPriority(self, *args)
+        return _Graphic3d.Graphic3d_Structure_DisplayPriority(self)
 
-    def Erase(self, *args) -> "void" :
+    def Erase(self):
         """
         * Erases the structure <self> in all the views //!	 of the visualiser.
 
         :rtype: void
 
         """
-        return _Graphic3d.Graphic3d_Structure_Erase(self, *args)
+        return _Graphic3d.Graphic3d_Structure_Erase(self)
 
-    def Highlight(self, *args) -> "void" :
+    def Highlight(self, *args):
         """
         * Highlights the structure <self> in all the //!	 views of the visualiser, using the following methods: TOHM_COLOR		= drawn in the highlight color //!				 (default white) //!	 TOHM_BLINK		= blinking TOHM_BOUNDBOX	= enclosed by the boundary box //!				 (default white)
 
@@ -8689,7 +9267,7 @@ class Graphic3d_Structure(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_Structure_Highlight(self, *args)
 
-    def SetHighlightColor(self, *args) -> "void" :
+    def SetHighlightColor(self, *args):
         """
         * Modifies the highlight color for the Highlight method //!	 with the highlight method TOHM_COLOR or TOHM_BOUNDBOX.
 
@@ -8700,7 +9278,7 @@ class Graphic3d_Structure(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_Structure_SetHighlightColor(self, *args)
 
-    def SetInfiniteState(self, *args) -> "void" :
+    def SetInfiniteState(self, *args):
         """
         * Modifies the coordinates of the boundary box //!	 of the structure <self>. //!	 if <AFlag> is Standard_True then <self> is infinite and //!	 the MinMaxValues method or the MinMaxCoord method return : //!	 XMin = YMin = ZMin = RealFirst (). //!	 XMax = YMax = ZMax = RealLast (). //!	 By default, <self> is not infinite but empty.
 
@@ -8711,47 +9289,47 @@ class Graphic3d_Structure(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_Structure_SetInfiniteState(self, *args)
 
-    def SetDisplayPriority(self, *args) -> "void" :
+    def SetDisplayPriority(self, *args):
         """
         * Modifies the order of displaying the structure. //!	 Values are between 0 and 10. Structures are drawn according to their display priorities in ascending order. //!	 A structure of priority 10 is displayed the last and appears over the others. //!	 The default value is 5. Category: Methods to modify the class definition Warning: If <self> is displayed then the SetDisplayPriority //!	 method erase <self> and display <self> with the //!	 new priority. //!	 Raises PriorityDefinitionError if <Priority> is //!	 greater than 10 or a negative value.
 
         :param Priority:
-        :type Priority: int
+        :type Priority: Standard_Integer
         :rtype: None
 
         """
         return _Graphic3d.Graphic3d_Structure_SetDisplayPriority(self, *args)
 
-    def ResetDisplayPriority(self, *args) -> "void" :
+    def ResetDisplayPriority(self):
         """
         * Reset the current priority of the structure to the //!	 previous priority. Category: Methods to modify the class definition Warning: If <self> is displayed then the SetDisplayPriority //!	 method erase <self> and display <self> with the //!	 previous priority.
 
         :rtype: None
 
         """
-        return _Graphic3d.Graphic3d_Structure_ResetDisplayPriority(self, *args)
+        return _Graphic3d.Graphic3d_Structure_ResetDisplayPriority(self)
 
-    def SetZLayer(self, *args) -> "void" :
+    def SetZLayer(self, *args):
         """
         * Set Z layer ID for the structure. The Z layer mechanism allows to display structures presented in higher layers in overlay of structures in lower layers by switching off z buffer depth test between layers
 
         :param theLayerId:
-        :type theLayerId: int
+        :type theLayerId: Standard_Integer
         :rtype: None
 
         """
         return _Graphic3d.Graphic3d_Structure_SetZLayer(self, *args)
 
-    def GetZLayer(self, *args) -> "Standard_Integer" :
+    def GetZLayer(self):
         """
         * Get Z layer ID of displayed structure. The method returns -1 if the structure has no ID (deleted from graphic driver).
 
         :rtype: int
 
         """
-        return _Graphic3d.Graphic3d_Structure_GetZLayer(self, *args)
+        return _Graphic3d.Graphic3d_Structure_GetZLayer(self)
 
-    def SetClipPlanes(self, *args) -> "void" :
+    def SetClipPlanes(self, *args):
         """
         * Changes a sequence of clip planes slicing the structure on rendering. @param thePlanes [in] the set of clip planes.
 
@@ -8762,16 +9340,16 @@ class Graphic3d_Structure(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_Structure_SetClipPlanes(self, *args)
 
-    def GetClipPlanes(self, *args) -> "Graphic3d_SequenceOfHClipPlane const &" :
+    def GetClipPlanes(self):
         """
         * Get clip planes slicing the structure on rendering. returns set of clip planes.
 
         :rtype: Graphic3d_SequenceOfHClipPlane
 
         """
-        return _Graphic3d.Graphic3d_Structure_GetClipPlanes(self, *args)
+        return _Graphic3d.Graphic3d_Structure_GetClipPlanes(self)
 
-    def SetPick(self, *args) -> "void" :
+    def SetPick(self, *args):
         """
         * Modifies the detectability indicator to Standard_True //!	 or Standard_False for the structure <self>. //!	 The default value at the definition of <self> is //!	 Standard_True.
 
@@ -8782,7 +9360,7 @@ class Graphic3d_Structure(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_Structure_SetPick(self, *args)
 
-    def SetPrimitivesAspect(self, *args) -> "void" :
+    def SetPrimitivesAspect(self, *args):
         """
         * Modifies the default attributes for lines //!	 in the structure <self>.
 
@@ -8811,7 +9389,7 @@ class Graphic3d_Structure(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_Structure_SetPrimitivesAspect(self, *args)
 
-    def SetVisible(self, *args) -> "void" :
+    def SetVisible(self, *args):
         """
         * Modifies the visibility indicator to Standard_True or //!	 Standard_False for the structure <self>. //!	 The default value at the definition of <self> is //!	 Standard_True.
 
@@ -8822,8 +9400,16 @@ class Graphic3d_Structure(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_Structure_SetVisible(self, *args)
 
-    def SetManager(self, *args) -> "void" :
+    def SetManager(self, *args):
         """
+        * Moves the graphic object <self> in the manager <AManager>. //!	 If <WithPropagation> is Standard_True then all the connected //!	 graphic objects to <self> are moved.
+
+        :param AManager:
+        :type AManager: Handle_Graphic3d_StructureManager &
+        :param WithPropagation: default value is Standard_False
+        :type WithPropagation: bool
+        :rtype: None
+
         * Moves the graphic object <self> in the manager <AManager>. //!	 If <WithPropagation> is Standard_True then all the connected //!	 graphic objects to <self> are moved.
 
         :param AManager:
@@ -8835,7 +9421,7 @@ class Graphic3d_Structure(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_Structure_SetManager(self, *args)
 
-    def SetVisual(self, *args) -> "void" :
+    def SetVisual(self, *args):
         """
         * Modifies the visualisation mode for the structure <self>.
 
@@ -8846,7 +9432,7 @@ class Graphic3d_Structure(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_Structure_SetVisual(self, *args)
 
-    def SetZoomLimit(self, *args) -> "void" :
+    def SetZoomLimit(self, *args):
         """
         * Modifies the minimum and maximum zoom coefficients //!	 for the structure <self>. //!	 The default value at the definition of <self> is unlimited. Category: Methods to modify the class definition Warning: Raises StructureDefinitionError if <LimitInf> is //!	 greater than <LimitSup> or if <LimitInf> or //!	 <LimitSup> is a negative value.
 
@@ -8859,16 +9445,16 @@ class Graphic3d_Structure(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_Structure_SetZoomLimit(self, *args)
 
-    def UnHighlight(self, *args) -> "void" :
+    def UnHighlight(self):
         """
         * Suppresses the highlight for the structure <self> //!	 in all the views of the visualiser.
 
         :rtype: None
 
         """
-        return _Graphic3d.Graphic3d_Structure_UnHighlight(self, *args)
+        return _Graphic3d.Graphic3d_Structure_UnHighlight(self)
 
-    def Compute(self, *args) -> "void" :
+    def Compute(self, *args):
         """
         :rtype: void
 
@@ -8907,7 +9493,7 @@ class Graphic3d_Structure(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_Structure_Compute(self, *args)
 
-    def ReCompute(self, *args) -> "void" :
+    def ReCompute(self, *args):
         """
         * Forces a new construction of the structure <self> //!	 if <self> is displayed and TOS_COMPUTED.
 
@@ -8922,151 +9508,151 @@ class Graphic3d_Structure(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_Structure_ReCompute(self, *args)
 
-    def ContainsFacet(self, *args) -> "Standard_Boolean" :
+    def ContainsFacet(self):
         """
         * Returns Standard_True if the structure <self> contains //!	 Polygons, Triangles or Quadrangles.
 
         :rtype: bool
 
         """
-        return _Graphic3d.Graphic3d_Structure_ContainsFacet(self, *args)
+        return _Graphic3d.Graphic3d_Structure_ContainsFacet(self)
 
-    def FillArea3dAspect(self, *args) -> "Handle_Graphic3d_AspectFillArea3d" :
+    def FillArea3dAspect(self):
         """
         * Returns the values of the current default attributes.
 
         :rtype: Handle_Graphic3d_AspectFillArea3d
 
         """
-        return _Graphic3d.Graphic3d_Structure_FillArea3dAspect(self, *args)
+        return _Graphic3d.Graphic3d_Structure_FillArea3dAspect(self)
 
-    def Groups(self, *args) -> "Graphic3d_SequenceOfGroup const &" :
+    def Groups(self):
         """
         * Returns the groups sequence included in the structure <self> (internal storage).
 
         :rtype: Graphic3d_SequenceOfGroup
 
         """
-        return _Graphic3d.Graphic3d_Structure_Groups(self, *args)
+        return _Graphic3d.Graphic3d_Structure_Groups(self)
 
-    def NumberOfGroups(self, *args) -> "Standard_Integer" :
+    def NumberOfGroups(self):
         """
         * Returns the current number of groups in the //!	 structure <self>.
 
         :rtype: int
 
         """
-        return _Graphic3d.Graphic3d_Structure_NumberOfGroups(self, *args)
+        return _Graphic3d.Graphic3d_Structure_NumberOfGroups(self)
 
-    def HighlightColor(self, *args) -> "Quantity_Color" :
+    def HighlightColor(self):
         """
         * Returns the highlight color for the Highlight method //!	 with the highlight method TOHM_COLOR or TOHM_BOUNDBOX.
 
         :rtype: Quantity_Color
 
         """
-        return _Graphic3d.Graphic3d_Structure_HighlightColor(self, *args)
+        return _Graphic3d.Graphic3d_Structure_HighlightColor(self)
 
-    def IsDeleted(self, *args) -> "Standard_Boolean" :
+    def IsDeleted(self):
         """
         * Returns Standard_True if the structure <self> is deleted. //!	 <self> is deleted after the call Remove (me).
 
         :rtype: bool
 
         """
-        return _Graphic3d.Graphic3d_Structure_IsDeleted(self, *args)
+        return _Graphic3d.Graphic3d_Structure_IsDeleted(self)
 
-    def IsDisplayed(self, *args) -> "Standard_Boolean" :
+    def IsDisplayed(self):
         """
         * Returns the display indicator for the structure <self>.
 
         :rtype: bool
 
         """
-        return _Graphic3d.Graphic3d_Structure_IsDisplayed(self, *args)
+        return _Graphic3d.Graphic3d_Structure_IsDisplayed(self)
 
-    def IsEmpty(self, *args) -> "Standard_Boolean" :
+    def IsEmpty(self):
         """
         * Returns Standard_True if the structure <self> is empty. Warning: A structure is empty if : //!		it do not have group or all the groups are empties //!		and it do not have descendant or all the descendants //!		are empties.
 
         :rtype: bool
 
         """
-        return _Graphic3d.Graphic3d_Structure_IsEmpty(self, *args)
+        return _Graphic3d.Graphic3d_Structure_IsEmpty(self)
 
-    def IsInfinite(self, *args) -> "Standard_Boolean" :
+    def IsInfinite(self):
         """
         * Returns Standard_True if the structure <self> is infinite.
 
         :rtype: bool
 
         """
-        return _Graphic3d.Graphic3d_Structure_IsInfinite(self, *args)
+        return _Graphic3d.Graphic3d_Structure_IsInfinite(self)
 
-    def IsHighlighted(self, *args) -> "Standard_Boolean" :
+    def IsHighlighted(self):
         """
         * Returns the highlight indicator for the structure <self>.
 
         :rtype: bool
 
         """
-        return _Graphic3d.Graphic3d_Structure_IsHighlighted(self, *args)
+        return _Graphic3d.Graphic3d_Structure_IsHighlighted(self)
 
-    def IsSelectable(self, *args) -> "Standard_Boolean" :
+    def IsSelectable(self):
         """
         * Returns the detectability indicator for the structure <self>.
 
         :rtype: bool
 
         """
-        return _Graphic3d.Graphic3d_Structure_IsSelectable(self, *args)
+        return _Graphic3d.Graphic3d_Structure_IsSelectable(self)
 
-    def IsRotated(self, *args) -> "Standard_Boolean" :
+    def IsRotated(self):
         """
         * Returns Standard_True if the structure <self> is rotated. //!	 <=> The transformation != Identity, != Scale, != Translation.
 
         :rtype: bool
 
         """
-        return _Graphic3d.Graphic3d_Structure_IsRotated(self, *args)
+        return _Graphic3d.Graphic3d_Structure_IsRotated(self)
 
-    def IsTransformed(self, *args) -> "Standard_Boolean" :
+    def IsTransformed(self):
         """
         * Returns Standard_True if the structure <self> is transformed. //!	 <=> The transformation != Identity.
 
         :rtype: bool
 
         """
-        return _Graphic3d.Graphic3d_Structure_IsTransformed(self, *args)
+        return _Graphic3d.Graphic3d_Structure_IsTransformed(self)
 
-    def IsVisible(self, *args) -> "Standard_Boolean" :
+    def IsVisible(self):
         """
         * Returns the visibility indicator for the structure <self>.
 
         :rtype: bool
 
         """
-        return _Graphic3d.Graphic3d_Structure_IsVisible(self, *args)
+        return _Graphic3d.Graphic3d_Structure_IsVisible(self)
 
-    def Line3dAspect(self, *args) -> "Handle_Graphic3d_AspectLine3d" :
+    def Line3dAspect(self):
         """
         * Returns the values of the current default attributes.
 
         :rtype: Handle_Graphic3d_AspectLine3d
 
         """
-        return _Graphic3d.Graphic3d_Structure_Line3dAspect(self, *args)
+        return _Graphic3d.Graphic3d_Structure_Line3dAspect(self)
 
-    def Marker3dAspect(self, *args) -> "Handle_Graphic3d_AspectMarker3d" :
+    def Marker3dAspect(self):
         """
         * Returns the current group of graphic attributes used for 3d marker primitives.
 
         :rtype: Handle_Graphic3d_AspectMarker3d
 
         """
-        return _Graphic3d.Graphic3d_Structure_Marker3dAspect(self, *args)
+        return _Graphic3d.Graphic3d_Structure_Marker3dAspect(self)
 
-    def MinMaxValues(self, *args) -> "void" :
+    def MinMaxValues(self):
         """
         * Returns the coordinates of the boundary box //!	 of the structure <self>. Warning: If the structure <self> is empty or infinite then : //!	 XMin = YMin = ZMin = RealFirst (). //!	 XMax = YMax = ZMax = RealLast ().
 
@@ -9085,9 +9671,9 @@ class Graphic3d_Structure(OCC.MMgt.MMgt_TShared):
         :rtype: None
 
         """
-        return _Graphic3d.Graphic3d_Structure_MinMaxValues(self, *args)
+        return _Graphic3d.Graphic3d_Structure_MinMaxValues(self)
 
-    def PrimitivesAspect(self, *args) -> "void" :
+    def PrimitivesAspect(self, *args):
         """
         * Returns the current values of the default attributes.
 
@@ -9104,25 +9690,25 @@ class Graphic3d_Structure(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_Structure_PrimitivesAspect(self, *args)
 
-    def Text3dAspect(self, *args) -> "Handle_Graphic3d_AspectText3d" :
+    def Text3dAspect(self):
         """
         * Returns the values of the current default attributes.
 
         :rtype: Handle_Graphic3d_AspectText3d
 
         """
-        return _Graphic3d.Graphic3d_Structure_Text3dAspect(self, *args)
+        return _Graphic3d.Graphic3d_Structure_Text3dAspect(self)
 
-    def Visual(self, *args) -> "Graphic3d_TypeOfStructure" :
+    def Visual(self):
         """
         * Returns the visualisation mode for the structure <self>.
 
         :rtype: Graphic3d_TypeOfStructure
 
         """
-        return _Graphic3d.Graphic3d_Structure_Visual(self, *args)
+        return _Graphic3d.Graphic3d_Structure_Visual(self)
 
-    def AcceptConnection(*args) -> "Standard_Boolean" :
+    def AcceptConnection(*args):
         """
         * Returns Standard_True if the connection is possible between //!	 <AStructure1> and <AStructure2> without a creation //!	 of a cycle. //!	 It's not possible to call the method //!	 AStructure1->Connect (AStructure2, TypeOfConnection) //!	 if //!	 - the set of all ancestors of <AStructure1> contains //!	 <AStructure1> and if the //!	 TypeOfConnection == TOC_DESCENDANT //!	 - the set of all descendants of <AStructure1> contains //!	 <AStructure2> and if the //!	 TypeOfConnection == TOC_ANCESTOR
 
@@ -9138,7 +9724,7 @@ class Graphic3d_Structure(OCC.MMgt.MMgt_TShared):
         return _Graphic3d.Graphic3d_Structure_AcceptConnection(*args)
 
     AcceptConnection = staticmethod(AcceptConnection)
-    def Ancestors(self, *args) -> "void" :
+    def Ancestors(self, *args):
         """
         * Returns the group of structures to which <self> is connected.
 
@@ -9149,8 +9735,18 @@ class Graphic3d_Structure(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_Structure_Ancestors(self, *args)
 
-    def Connect(self, *args) -> "void" :
+    def Connect(self, *args):
         """
+        * If Atype is TOC_DESCENDANT then add <AStructure> //!	 as a child structure of <self>. //!	 If Atype is TOC_ANCESTOR then add <AStructure> //!	 as a parent structure of <self>. //!	 The connection propagates Display, Highlight, Erase, //!	 Remove, and stacks the transformations. //!	 No connection if the graph of the structures //!	 contains a cycle and <WithCheck> is Standard_True;
+
+        :param AStructure:
+        :type AStructure: Handle_Graphic3d_Structure &
+        :param AType:
+        :type AType: Graphic3d_TypeOfConnection
+        :param WithCheck: default value is Standard_False
+        :type WithCheck: bool
+        :rtype: None
+
         * If Atype is TOC_DESCENDANT then add <AStructure> //!	 as a child structure of <self>. //!	 If Atype is TOC_ANCESTOR then add <AStructure> //!	 as a parent structure of <self>. //!	 The connection propagates Display, Highlight, Erase, //!	 Remove, and stacks the transformations. //!	 No connection if the graph of the structures //!	 contains a cycle and <WithCheck> is Standard_True;
 
         :param AStructure:
@@ -9164,7 +9760,7 @@ class Graphic3d_Structure(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_Structure_Connect(self, *args)
 
-    def Descendants(self, *args) -> "void" :
+    def Descendants(self, *args):
         """
         * Returns the group of structures connected to <self>.
 
@@ -9175,7 +9771,7 @@ class Graphic3d_Structure(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_Structure_Descendants(self, *args)
 
-    def Disconnect(self, *args) -> "void" :
+    def Disconnect(self, *args):
         """
         * Suppress the connection between <AStructure> and <self>.
 
@@ -9186,7 +9782,7 @@ class Graphic3d_Structure(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_Structure_Disconnect(self, *args)
 
-    def DisconnectAll(self, *args) -> "void" :
+    def DisconnectAll(self, *args):
         """
         * If Atype is TOC_DESCENDANT then suppress all //!	 the connections with the child structures of <self>. //!	 If Atype is TOC_ANCESTOR then suppress all //!	 the connections with the parent structures of <self>.
 
@@ -9197,7 +9793,7 @@ class Graphic3d_Structure(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_Structure_DisconnectAll(self, *args)
 
-    def Network(*args) -> "void" :
+    def Network(*args):
         """
         * Returns <ASet> the group of structures : //!	 - directly or indirectly connected to <AStructure> if the //!	 TypeOfConnection == TOC_DESCENDANT //!	 - to which <AStructure> is directly or indirectly connected //!	 if the TypeOfConnection == TOC_ANCESTOR
 
@@ -9213,7 +9809,7 @@ class Graphic3d_Structure(OCC.MMgt.MMgt_TShared):
         return _Graphic3d.Graphic3d_Structure_Network(*args)
 
     Network = staticmethod(Network)
-    def SetOwner(self, *args) -> "void" :
+    def SetOwner(self, *args):
         """
         :param Owner:
         :type Owner: Standard_Address
@@ -9222,14 +9818,14 @@ class Graphic3d_Structure(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_Structure_SetOwner(self, *args)
 
-    def Owner(self, *args) -> "Standard_Address" :
+    def Owner(self):
         """
         :rtype: Standard_Address
 
         """
-        return _Graphic3d.Graphic3d_Structure_Owner(self, *args)
+        return _Graphic3d.Graphic3d_Structure_Owner(self)
 
-    def SetHLRValidation(self, *args) -> "void" :
+    def SetHLRValidation(self, *args):
         """
         :param AFlag:
         :type AFlag: bool
@@ -9238,23 +9834,23 @@ class Graphic3d_Structure(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_Structure_SetHLRValidation(self, *args)
 
-    def HLRValidation(self, *args) -> "Standard_Boolean" :
+    def HLRValidation(self):
         """
         :rtype: bool
 
         """
-        return _Graphic3d.Graphic3d_Structure_HLRValidation(self, *args)
+        return _Graphic3d.Graphic3d_Structure_HLRValidation(self)
 
-    def Composition(self, *args) -> "Graphic3d_TypeOfComposition" :
+    def Composition(self):
         """
         * Returns the type of composition applied to matrices //!	 of transformation of <self>.
 
         :rtype: Graphic3d_TypeOfComposition
 
         """
-        return _Graphic3d.Graphic3d_Structure_Composition(self, *args)
+        return _Graphic3d.Graphic3d_Structure_Composition(self)
 
-    def SetTransform(self, *args) -> "void" :
+    def SetTransform(self, *args):
         """
         * Modifies the current local modelling transformation //!	 in the structure <self>. //!	 It is defined as a 4*4 real matrix. //!	 ------------------- //!	 | a11 a12 a13 t1 | //!	 | a21 a22 a23 t2 | //!	 | a31 a32 a33 t3 | //!	 | 0 0 0 1 | //!	 ------------------- //!	 TypeOfComposition : TOC_REPLACE //!				TOC_POSTCONCATENATE Then the modified Local Modelling Transformation is composed with the current Global Modelling Transformation to create a new Composite Modelling Transformation. The compose type specifies the role of the current local modelling transformation (L) in composing the new value for the current local modelling transformation (L'), which is then combined with the current global modelling transforma- tion (G) to calculate the new composite modelling transfor- mation (C). TOC_REPLACE The transformation matrix (T) replaces the value of current local modelling transformation (L). //!	L' <- T //!	C <- G x L' TOC_POSTCONCATENATE The current local modelling transformation (L) is multiplied by the transformation matrix (T): //!	L' <- T x L //!	C <- G x L' Category: Methods to manage the structure transformation Warning: Raises TransformError if the matrix is not a 4x4 matrix.
 
@@ -9267,7 +9863,7 @@ class Graphic3d_Structure(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_Structure_SetTransform(self, *args)
 
-    def Transform(self, *args) -> "void" :
+    def Transform(self, *args):
         """
         * Returns the transformation associated with //!	 the structure <self>.
 
@@ -9278,7 +9874,7 @@ class Graphic3d_Structure(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_Structure_Transform(self, *args)
 
-    def SetTransformPersistence(self, *args) -> "void" :
+    def SetTransformPersistence(self, *args):
         """
         * Modifies the current modelling transform persistence (pan, zoom or rotate)
 
@@ -9295,32 +9891,32 @@ class Graphic3d_Structure(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_Structure_SetTransformPersistence(self, *args)
 
-    def TransformPersistenceMode(self, *args) -> "Graphic3d_TransModeFlags" :
+    def TransformPersistenceMode(self):
         """
         * Get the current modelling transform persistence (pan, zoom or rotate)
 
         :rtype: Graphic3d_TransModeFlags
 
         """
-        return _Graphic3d.Graphic3d_Structure_TransformPersistenceMode(self, *args)
+        return _Graphic3d.Graphic3d_Structure_TransformPersistenceMode(self)
 
-    def TransformPersistencePoint(self, *args) -> "gp_Pnt" :
+    def TransformPersistencePoint(self):
         """
         * Get the current point of relative modelling transform persistence
 
         :rtype: gp_Pnt
 
         """
-        return _Graphic3d.Graphic3d_Structure_TransformPersistencePoint(self, *args)
+        return _Graphic3d.Graphic3d_Structure_TransformPersistencePoint(self)
 
-    def ComputeVisual(self, *args) -> "Graphic3d_TypeOfStructure" :
+    def ComputeVisual(self):
         """
         :rtype: Graphic3d_TypeOfStructure
 
         """
-        return _Graphic3d.Graphic3d_Structure_ComputeVisual(self, *args)
+        return _Graphic3d.Graphic3d_Structure_ComputeVisual(self)
 
-    def GraphicClear(self, *args) -> "void" :
+    def GraphicClear(self, *args):
         """
         * Clears the structure <self>.
 
@@ -9331,7 +9927,7 @@ class Graphic3d_Structure(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_Structure_GraphicClear(self, *args)
 
-    def GraphicConnect(self, *args) -> "void" :
+    def GraphicConnect(self, *args):
         """
         :param ADaughter:
         :type ADaughter: Handle_Graphic3d_Structure &
@@ -9340,7 +9936,7 @@ class Graphic3d_Structure(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_Structure_GraphicConnect(self, *args)
 
-    def GraphicDisconnect(self, *args) -> "void" :
+    def GraphicDisconnect(self, *args):
         """
         :param ADaughter:
         :type ADaughter: Handle_Graphic3d_Structure &
@@ -9349,7 +9945,7 @@ class Graphic3d_Structure(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_Structure_GraphicDisconnect(self, *args)
 
-    def GraphicHighlight(self, *args) -> "void" :
+    def GraphicHighlight(self, *args):
         """
         * Highlights the structure <self>.
 
@@ -9360,7 +9956,7 @@ class Graphic3d_Structure(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_Structure_GraphicHighlight(self, *args)
 
-    def GraphicTransform(self, *args) -> "void" :
+    def GraphicTransform(self, *args):
         """
         :param AMatrix:
         :type AMatrix: TColStd_Array2OfReal &
@@ -9369,25 +9965,25 @@ class Graphic3d_Structure(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_Structure_GraphicTransform(self, *args)
 
-    def GraphicUnHighlight(self, *args) -> "void" :
+    def GraphicUnHighlight(self):
         """
         * Suppress the highlight for the structure <self>.
 
         :rtype: None
 
         """
-        return _Graphic3d.Graphic3d_Structure_GraphicUnHighlight(self, *args)
+        return _Graphic3d.Graphic3d_Structure_GraphicUnHighlight(self)
 
-    def Identification(self, *args) -> "Standard_Integer" :
+    def Identification(self):
         """
         * Returns the identification number of the structure <self>.
 
         :rtype: int
 
         """
-        return _Graphic3d.Graphic3d_Structure_Identification(self, *args)
+        return _Graphic3d.Graphic3d_Structure_Identification(self)
 
-    def Plot(self, *args) -> "void" :
+    def Plot(self, *args):
         """
         :param aPlotter:
         :type aPlotter: Handle_Graphic3d_Plotter &
@@ -9396,7 +9992,7 @@ class Graphic3d_Structure(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_Structure_Plot(self, *args)
 
-    def PrintNetwork(*args) -> "void" :
+    def PrintNetwork(*args):
         """
         * Prints informations about the network associated //!	 with the structure <AStructure>.
 
@@ -9410,7 +10006,7 @@ class Graphic3d_Structure(OCC.MMgt.MMgt_TShared):
         return _Graphic3d.Graphic3d_Structure_PrintNetwork(*args)
 
     PrintNetwork = staticmethod(PrintNetwork)
-    def Remove(self, *args) -> "void" :
+    def Remove(self, *args):
         """
         * Suppress the structure <self>. //!	 It will be erased at the next screen update. Warning: No more graphic operations in <self> after this call. Category: Methods to modify the class definition
 
@@ -9427,7 +10023,7 @@ class Graphic3d_Structure(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_Structure_Remove(self, *args)
 
-    def SetComputeVisual(self, *args) -> "void" :
+    def SetComputeVisual(self, *args):
         """
         :param AVisual:
         :type AVisual: Graphic3d_TypeOfStructure
@@ -9436,7 +10032,7 @@ class Graphic3d_Structure(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_Structure_SetComputeVisual(self, *args)
 
-    def Transforms(*args) -> "Graphic3d_Vertex" :
+    def Transforms(*args):
         """
         * Transforms <X>, <Y>, <Z> with the transformation <ATrsf>.
 
@@ -9476,20 +10072,20 @@ class Graphic3d_Structure(OCC.MMgt.MMgt_TShared):
         return _Graphic3d.Graphic3d_Structure_Transforms(*args)
 
     Transforms = staticmethod(Transforms)
-    def CStructure(self, *args) -> "Graphic3d_CStructure *" :
+    def CStructure(self):
         """
         * Returns the c structure associated to <self>.
 
         :rtype: Graphic3d_CStructure *
 
         """
-        return _Graphic3d.Graphic3d_Structure_CStructure(self, *args)
+        return _Graphic3d.Graphic3d_Structure_CStructure(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Graphic3d_Structure self)"""
         return _Graphic3d.Graphic3d_Structure__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Graphic3d_Structure" :
+    def GetHandle(self):
         """GetHandle(Graphic3d_Structure self) -> Handle_Graphic3d_Structure"""
         return _Graphic3d.Graphic3d_Structure_GetHandle(self)
 
@@ -9576,7 +10172,7 @@ Graphic3d_Structure.GetHandle = new_instancemethod(_Graphic3d.Graphic3d_Structur
 Graphic3d_Structure_swigregister = _Graphic3d.Graphic3d_Structure_swigregister
 Graphic3d_Structure_swigregister(Graphic3d_Structure)
 
-def Graphic3d_Structure_AcceptConnection(*args) -> "Standard_Boolean" :
+def Graphic3d_Structure_AcceptConnection(*args):
   """
     * Returns Standard_True if the connection is possible between //!	 <AStructure1> and <AStructure2> without a creation //!	 of a cycle. //!	 It's not possible to call the method //!	 AStructure1->Connect (AStructure2, TypeOfConnection) //!	 if //!	 - the set of all ancestors of <AStructure1> contains //!	 <AStructure1> and if the //!	 TypeOfConnection == TOC_DESCENDANT //!	 - the set of all descendants of <AStructure1> contains //!	 <AStructure2> and if the //!	 TypeOfConnection == TOC_ANCESTOR
 
@@ -9591,7 +10187,7 @@ def Graphic3d_Structure_AcceptConnection(*args) -> "Standard_Boolean" :
     """
   return _Graphic3d.Graphic3d_Structure_AcceptConnection(*args)
 
-def Graphic3d_Structure_Network(*args) -> "void" :
+def Graphic3d_Structure_Network(*args):
   """
     * Returns <ASet> the group of structures : //!	 - directly or indirectly connected to <AStructure> if the //!	 TypeOfConnection == TOC_DESCENDANT //!	 - to which <AStructure> is directly or indirectly connected //!	 if the TypeOfConnection == TOC_ANCESTOR
 
@@ -9606,7 +10202,7 @@ def Graphic3d_Structure_Network(*args) -> "void" :
     """
   return _Graphic3d.Graphic3d_Structure_Network(*args)
 
-def Graphic3d_Structure_PrintNetwork(*args) -> "void" :
+def Graphic3d_Structure_PrintNetwork(*args):
   """
     * Prints informations about the network associated //!	 with the structure <AStructure>.
 
@@ -9619,7 +10215,7 @@ def Graphic3d_Structure_PrintNetwork(*args) -> "void" :
     """
   return _Graphic3d.Graphic3d_Structure_PrintNetwork(*args)
 
-def Graphic3d_Structure_Transforms(*args) -> "Graphic3d_Vertex" :
+def Graphic3d_Structure_Transforms(*args):
   """
     * Transforms <X>, <Y>, <Z> with the transformation <ATrsf>.
 
@@ -9679,7 +10275,7 @@ Handle_Graphic3d_Structure._kill_pointed = new_instancemethod(_Graphic3d.Handle_
 Handle_Graphic3d_Structure_swigregister = _Graphic3d.Handle_Graphic3d_Structure_swigregister
 Handle_Graphic3d_Structure_swigregister(Handle_Graphic3d_Structure)
 
-def Handle_Graphic3d_Structure_DownCast(*args) -> "Handle_Graphic3d_Structure const" :
+def Handle_Graphic3d_Structure_DownCast(*args):
   return _Graphic3d.Handle_Graphic3d_Structure_DownCast(*args)
 Handle_Graphic3d_Structure_DownCast = _Graphic3d.Handle_Graphic3d_Structure_DownCast
 
@@ -9687,16 +10283,16 @@ class Graphic3d_StructureManager(OCC.MMgt.MMgt_TShared):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def Destroy(self, *args) -> "void" :
+    def Destroy(self):
         """
         * Deletes the manager <self>.
 
         :rtype: void
 
         """
-        return _Graphic3d.Graphic3d_StructureManager_Destroy(self, *args)
+        return _Graphic3d.Graphic3d_StructureManager_Destroy(self)
 
-    def SetPrimitivesAspect(self, *args) -> "void" :
+    def SetPrimitivesAspect(self, *args):
         """
         * Modifies the default attributes for lines //!	 in the visualiser.
 
@@ -9725,7 +10321,7 @@ class Graphic3d_StructureManager(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_StructureManager_SetPrimitivesAspect(self, *args)
 
-    def SetUpdateMode(self, *args) -> "void" :
+    def SetUpdateMode(self, *args):
         """
         * Modifies the screen update mode. //!	 TOU_ASAP	as soon as possible //!	 TOU_WAIT	on demand (with the Update function) Note : Dynamic Operations and Update Mode Use SetUpdateMode to control when changes to the display are made. Use one of the following functions to update one or more views: - Update all views of the viewer: Visual3d_ViewManager::Update () - Update one view of the viewer: Visual3d_View::Update () Use one of the following functions to update the entire display: - Redraw all structures in all views: Visual3d_ViewManager::Redraw () - Redraw all structures in one view: Visual3d_View::Redraw () Update)
 
@@ -9736,16 +10332,16 @@ class Graphic3d_StructureManager(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_StructureManager_SetUpdateMode(self, *args)
 
-    def Update(self, *args) -> "void" :
+    def Update(self):
         """
         * Updates screen in function of modifications of //!	 the structures. Warning: Not necessary if the update mode is TOU_ASAP.
 
         :rtype: void
 
         """
-        return _Graphic3d.Graphic3d_StructureManager_Update(self, *args)
+        return _Graphic3d.Graphic3d_StructureManager_Update(self)
 
-    def DisplayedStructures(self, *args) -> "void" :
+    def DisplayedStructures(self, *args):
         """
         * Returns the set of structures displayed in //!	 visualiser <self>.
 
@@ -9756,7 +10352,7 @@ class Graphic3d_StructureManager(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_StructureManager_DisplayedStructures(self, *args)
 
-    def HighlightedStructures(self, *args) -> "void" :
+    def HighlightedStructures(self, *args):
         """
         * Returns the set of highlighted structures //!	 in a visualiser <self>.
 
@@ -9767,7 +10363,7 @@ class Graphic3d_StructureManager(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_StructureManager_HighlightedStructures(self, *args)
 
-    def PickStructures(self, *args) -> "void" :
+    def PickStructures(self, *args):
         """
         * Returns the set of detectable structures //!	 in a visualiser <self>.
 
@@ -9778,44 +10374,44 @@ class Graphic3d_StructureManager(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_StructureManager_PickStructures(self, *args)
 
-    def FillArea3dAspect(self, *args) -> "Handle_Graphic3d_AspectFillArea3d" :
+    def FillArea3dAspect(self):
         """
         * Returns the values of the current default attributes.
 
         :rtype: Handle_Graphic3d_AspectFillArea3d
 
         """
-        return _Graphic3d.Graphic3d_StructureManager_FillArea3dAspect(self, *args)
+        return _Graphic3d.Graphic3d_StructureManager_FillArea3dAspect(self)
 
-    def Limit(*args) -> "Standard_Integer" :
+    def Limit():
         """
         * Returns maximum number of managers defineable.
 
         :rtype: int
 
         """
-        return _Graphic3d.Graphic3d_StructureManager_Limit(*args)
+        return _Graphic3d.Graphic3d_StructureManager_Limit()
 
     Limit = staticmethod(Limit)
-    def Line3dAspect(self, *args) -> "Handle_Graphic3d_AspectLine3d" :
+    def Line3dAspect(self):
         """
         * Returns the values of the current default attributes.
 
         :rtype: Handle_Graphic3d_AspectLine3d
 
         """
-        return _Graphic3d.Graphic3d_StructureManager_Line3dAspect(self, *args)
+        return _Graphic3d.Graphic3d_StructureManager_Line3dAspect(self)
 
-    def Marker3dAspect(self, *args) -> "Handle_Graphic3d_AspectMarker3d" :
+    def Marker3dAspect(self):
         """
         * Returns the values of the current default attributes.
 
         :rtype: Handle_Graphic3d_AspectMarker3d
 
         """
-        return _Graphic3d.Graphic3d_StructureManager_Marker3dAspect(self, *args)
+        return _Graphic3d.Graphic3d_StructureManager_Marker3dAspect(self)
 
-    def MinMaxValues(self, *args) -> "void" :
+    def MinMaxValues(self):
         """
         * Returns the coordinates of the boundary box of all //!	 structures displayed in the manager <self>.
 
@@ -9834,9 +10430,9 @@ class Graphic3d_StructureManager(OCC.MMgt.MMgt_TShared):
         :rtype: None
 
         """
-        return _Graphic3d.Graphic3d_StructureManager_MinMaxValues(self, *args)
+        return _Graphic3d.Graphic3d_StructureManager_MinMaxValues(self)
 
-    def PrimitivesAspect(self, *args) -> "void" :
+    def PrimitivesAspect(self, *args):
         """
         * Returns the values of the current default attributes.
 
@@ -9853,53 +10449,53 @@ class Graphic3d_StructureManager(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_StructureManager_PrimitivesAspect(self, *args)
 
-    def Text3dAspect(self, *args) -> "Handle_Graphic3d_AspectText3d" :
+    def Text3dAspect(self):
         """
         * Returns the values of the current default attributes.
 
         :rtype: Handle_Graphic3d_AspectText3d
 
         """
-        return _Graphic3d.Graphic3d_StructureManager_Text3dAspect(self, *args)
+        return _Graphic3d.Graphic3d_StructureManager_Text3dAspect(self)
 
-    def UpdateMode(self, *args) -> "Aspect_TypeOfUpdate" :
+    def UpdateMode(self):
         """
         * Returns the screen update mode. //!	 TOU_ASAP	as soon as possible //!	 TOU_WAIT	on demand (Update)
 
         :rtype: Aspect_TypeOfUpdate
 
         """
-        return _Graphic3d.Graphic3d_StructureManager_UpdateMode(self, *args)
+        return _Graphic3d.Graphic3d_StructureManager_UpdateMode(self)
 
-    def ChangeDisplayPriority(self, *args) -> "void" :
+    def ChangeDisplayPriority(self, *args):
         """
         * Changes the display priority of the structure <AStructure>.
 
         :param AStructure:
         :type AStructure: Handle_Graphic3d_Structure &
         :param OldPriority:
-        :type OldPriority: int
+        :type OldPriority: Standard_Integer
         :param NewPriority:
-        :type NewPriority: int
+        :type NewPriority: Standard_Integer
         :rtype: void
 
         """
         return _Graphic3d.Graphic3d_StructureManager_ChangeDisplayPriority(self, *args)
 
-    def ChangeZLayer(self, *args) -> "void" :
+    def ChangeZLayer(self, *args):
         """
         * Change Z layer for structure. The z layer mechanism allows to display structures in higher layers in overlay of structures in lower layers.
 
         :param theStructure:
         :type theStructure: Handle_Graphic3d_Structure &
         :param theLayerId:
-        :type theLayerId: int
+        :type theLayerId: Standard_Integer
         :rtype: void
 
         """
         return _Graphic3d.Graphic3d_StructureManager_ChangeZLayer(self, *args)
 
-    def GetZLayer(self, *args) -> "Standard_Integer" :
+    def GetZLayer(self, *args):
         """
         * Get Z layer ID assigned to structure. If the structure has no layer ID (deleted from graphic driver), the method returns -1.
 
@@ -9910,12 +10506,12 @@ class Graphic3d_StructureManager(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_StructureManager_GetZLayer(self, *args)
 
-    def SetZLayerSettings(self, *args) -> "void" :
+    def SetZLayerSettings(self, *args):
         """
         * Sets the settings for a single Z layer for all managed views.
 
         :param theLayerId:
-        :type theLayerId: int
+        :type theLayerId: Standard_Integer
         :param theSettings:
         :type theSettings: Graphic3d_ZLayerSettings
         :rtype: void
@@ -9923,40 +10519,40 @@ class Graphic3d_StructureManager(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_StructureManager_SetZLayerSettings(self, *args)
 
-    def ZLayerSettings(self, *args) -> "Graphic3d_ZLayerSettings" :
+    def ZLayerSettings(self, *args):
         """
         * Returns the settings of a single Z layer.
 
         :param theLayerId:
-        :type theLayerId: int
+        :type theLayerId: Standard_Integer
         :rtype: Graphic3d_ZLayerSettings
 
         """
         return _Graphic3d.Graphic3d_StructureManager_ZLayerSettings(self, *args)
 
-    def AddZLayer(self, *args) -> "Standard_Boolean" :
+    def AddZLayer(self):
         """
         * Add a new top-level Z layer and get its ID as <theLayerId> value. The method returns Standard_False if the layer can not be created. The z layer mechanism allows to display structures in higher layers in overlay of structures in lower layers.
 
         :param theLayerId:
-        :type theLayerId: int &
+        :type theLayerId: Standard_Integer &
         :rtype: bool
 
         """
-        return _Graphic3d.Graphic3d_StructureManager_AddZLayer(self, *args)
+        return _Graphic3d.Graphic3d_StructureManager_AddZLayer(self)
 
-    def RemoveZLayer(self, *args) -> "Standard_Boolean" :
+    def RemoveZLayer(self, *args):
         """
         * Remove Z layer with ID <theLayerId>. Method returns Standard_False if the layer can not be removed or doesn't exists. By default, there is always a default bottom-level layer that can't be removed.
 
         :param theLayerId:
-        :type theLayerId: int
+        :type theLayerId: Standard_Integer
         :rtype: bool
 
         """
         return _Graphic3d.Graphic3d_StructureManager_RemoveZLayer(self, *args)
 
-    def GetAllZLayers(self, *args) -> "void" :
+    def GetAllZLayers(self, *args):
         """
         * Return all Z layer ids in sequence ordered by level from lowest layer to highest. The first layer ID in sequence is the default layer that can't be removed.
 
@@ -9967,17 +10563,17 @@ class Graphic3d_StructureManager(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_StructureManager_GetAllZLayers(self, *args)
 
-    def CurrentId(*args) -> "Standard_Integer" :
+    def CurrentId():
         """
         * Returns a current identifier available.
 
         :rtype: int
 
         """
-        return _Graphic3d.Graphic3d_StructureManager_CurrentId(*args)
+        return _Graphic3d.Graphic3d_StructureManager_CurrentId()
 
     CurrentId = staticmethod(CurrentId)
-    def ReCompute(self, *args) -> "void" :
+    def ReCompute(self, *args):
         """
         * Forces a new construction of the structure <AStructure> //!	 if <AStructure> is displayed and TOS_COMPUTED.
 
@@ -9996,7 +10592,7 @@ class Graphic3d_StructureManager(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_StructureManager_ReCompute(self, *args)
 
-    def Clear(self, *args) -> "void" :
+    def Clear(self, *args):
         """
         * Clears the structure <AStructure>.
 
@@ -10009,7 +10605,7 @@ class Graphic3d_StructureManager(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_StructureManager_Clear(self, *args)
 
-    def Connect(self, *args) -> "void" :
+    def Connect(self, *args):
         """
         * Connects the structures <AMother> and <ADaughter>.
 
@@ -10022,7 +10618,7 @@ class Graphic3d_StructureManager(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_StructureManager_Connect(self, *args)
 
-    def Disconnect(self, *args) -> "void" :
+    def Disconnect(self, *args):
         """
         * Disconnects the structures <AMother> and <ADaughter>.
 
@@ -10035,7 +10631,7 @@ class Graphic3d_StructureManager(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_StructureManager_Disconnect(self, *args)
 
-    def Display(self, *args) -> "void" :
+    def Display(self, *args):
         """
         * Display the structure <AStructure>.
 
@@ -10046,7 +10642,7 @@ class Graphic3d_StructureManager(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_StructureManager_Display(self, *args)
 
-    def Erase(self, *args) -> "void" :
+    def Erase(self, *args):
         """
         * Erases the structure <AStructure>.
 
@@ -10057,7 +10653,7 @@ class Graphic3d_StructureManager(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_StructureManager_Erase(self, *args)
 
-    def Highlight(self, *args) -> "void" :
+    def Highlight(self, *args):
         """
         * Highlights the structure <AStructure>.
 
@@ -10070,7 +10666,7 @@ class Graphic3d_StructureManager(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_StructureManager_Highlight(self, *args)
 
-    def SetTransform(self, *args) -> "void" :
+    def SetTransform(self, *args):
         """
         * Transforms the structure <AStructure>.
 
@@ -10083,16 +10679,16 @@ class Graphic3d_StructureManager(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_StructureManager_SetTransform(self, *args)
 
-    def GraphicDriver(self, *args) -> "Handle_Graphic3d_GraphicDriver const &" :
+    def GraphicDriver(self):
         """
         * Returns the graphic driver of <self>.
 
         :rtype: Handle_Graphic3d_GraphicDriver
 
         """
-        return _Graphic3d.Graphic3d_StructureManager_GraphicDriver(self, *args)
+        return _Graphic3d.Graphic3d_StructureManager_GraphicDriver(self)
 
-    def Identification(self, *args) -> "Handle_Graphic3d_Structure" :
+    def Identification(self, *args):
         """
         * Returns the identification number of the manager.
 
@@ -10101,13 +10697,13 @@ class Graphic3d_StructureManager(OCC.MMgt.MMgt_TShared):
         * Returns the structure with the identification number <AId>.
 
         :param AId:
-        :type AId: int
+        :type AId: Standard_Integer
         :rtype: Handle_Graphic3d_Structure
 
         """
         return _Graphic3d.Graphic3d_StructureManager_Identification(self, *args)
 
-    def UnHighlight(self, *args) -> "void" :
+    def UnHighlight(self, *args):
         """
         * Suppresses the highlighting on all the structures in <self>.
 
@@ -10122,18 +10718,18 @@ class Graphic3d_StructureManager(OCC.MMgt.MMgt_TShared):
         """
         return _Graphic3d.Graphic3d_StructureManager_UnHighlight(self, *args)
 
-    def RecomputeStructures(self, *args) -> "void" :
+    def RecomputeStructures(self):
         """
         :rtype: None
 
         """
-        return _Graphic3d.Graphic3d_StructureManager_RecomputeStructures(self, *args)
+        return _Graphic3d.Graphic3d_StructureManager_RecomputeStructures(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Graphic3d_StructureManager self)"""
         return _Graphic3d.Graphic3d_StructureManager__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Graphic3d_StructureManager" :
+    def GetHandle(self):
         """GetHandle(Graphic3d_StructureManager self) -> Handle_Graphic3d_StructureManager"""
         return _Graphic3d.Graphic3d_StructureManager_GetHandle(self)
 
@@ -10184,23 +10780,23 @@ Graphic3d_StructureManager.GetHandle = new_instancemethod(_Graphic3d.Graphic3d_S
 Graphic3d_StructureManager_swigregister = _Graphic3d.Graphic3d_StructureManager_swigregister
 Graphic3d_StructureManager_swigregister(Graphic3d_StructureManager)
 
-def Graphic3d_StructureManager_Limit(*args) -> "Standard_Integer" :
+def Graphic3d_StructureManager_Limit():
   """
     * Returns maximum number of managers defineable.
 
     :rtype: int
 
     """
-  return _Graphic3d.Graphic3d_StructureManager_Limit(*args)
+  return _Graphic3d.Graphic3d_StructureManager_Limit()
 
-def Graphic3d_StructureManager_CurrentId(*args) -> "Standard_Integer" :
+def Graphic3d_StructureManager_CurrentId():
   """
     * Returns a current identifier available.
 
     :rtype: int
 
     """
-  return _Graphic3d.Graphic3d_StructureManager_CurrentId(*args)
+  return _Graphic3d.Graphic3d_StructureManager_CurrentId()
 
 class Handle_Graphic3d_StructureManager(OCC.MMgt.Handle_MMgt_TShared):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
@@ -10223,38 +10819,38 @@ Handle_Graphic3d_StructureManager._kill_pointed = new_instancemethod(_Graphic3d.
 Handle_Graphic3d_StructureManager_swigregister = _Graphic3d.Handle_Graphic3d_StructureManager_swigregister
 Handle_Graphic3d_StructureManager_swigregister(Handle_Graphic3d_StructureManager)
 
-def Handle_Graphic3d_StructureManager_DownCast(*args) -> "Handle_Graphic3d_StructureManager const" :
+def Handle_Graphic3d_StructureManager_DownCast(*args):
   return _Graphic3d.Handle_Graphic3d_StructureManager_DownCast(*args)
 Handle_Graphic3d_StructureManager_DownCast = _Graphic3d.Handle_Graphic3d_StructureManager_DownCast
 
 class Graphic3d_TextureParams(OCC.Standard.Standard_Transient):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         * Default constructor.
 
         :rtype: None
 
         """
-        _Graphic3d.Graphic3d_TextureParams_swiginit(self,_Graphic3d.new_Graphic3d_TextureParams(*args))
-    def Destroy(self, *args) -> "void" :
+        _Graphic3d.Graphic3d_TextureParams_swiginit(self,_Graphic3d.new_Graphic3d_TextureParams())
+    def Destroy(self):
         """
         :rtype: None
 
         """
-        return _Graphic3d.Graphic3d_TextureParams_Destroy(self, *args)
+        return _Graphic3d.Graphic3d_TextureParams_Destroy(self)
 
-    def IsModulate(self, *args) -> "Standard_Boolean" :
+    def IsModulate(self):
         """
         * returns True if the texture is modulate. Default value is False.
 
         :rtype: bool
 
         """
-        return _Graphic3d.Graphic3d_TextureParams_IsModulate(self, *args)
+        return _Graphic3d.Graphic3d_TextureParams_IsModulate(self)
 
-    def SetModulate(self, *args) -> "void" :
+    def SetModulate(self, *args):
         """
         * @param theToModulate turn modulation on/off.
 
@@ -10265,16 +10861,16 @@ class Graphic3d_TextureParams(OCC.Standard.Standard_Transient):
         """
         return _Graphic3d.Graphic3d_TextureParams_SetModulate(self, *args)
 
-    def IsRepeat(self, *args) -> "Standard_Boolean" :
+    def IsRepeat(self):
         """
         * returns True if the texture repeat is enabled. Default value is False.
 
         :rtype: bool
 
         """
-        return _Graphic3d.Graphic3d_TextureParams_IsRepeat(self, *args)
+        return _Graphic3d.Graphic3d_TextureParams_IsRepeat(self)
 
-    def SetRepeat(self, *args) -> "void" :
+    def SetRepeat(self, *args):
         """
         * @param theToRepeat turn texture repeat mode ON or OFF (clamping).
 
@@ -10285,16 +10881,16 @@ class Graphic3d_TextureParams(OCC.Standard.Standard_Transient):
         """
         return _Graphic3d.Graphic3d_TextureParams_SetRepeat(self, *args)
 
-    def Filter(self, *args) -> "Graphic3d_TypeOfTextureFilter" :
+    def Filter(self):
         """
         * returns texture interpolation filter. Default value is Graphic3d_TOTF_NEAREST.
 
         :rtype: Graphic3d_TypeOfTextureFilter
 
         """
-        return _Graphic3d.Graphic3d_TextureParams_Filter(self, *args)
+        return _Graphic3d.Graphic3d_TextureParams_Filter(self)
 
-    def SetFilter(self, *args) -> "void" :
+    def SetFilter(self, *args):
         """
         * @param theFilter texture interpolation filter.
 
@@ -10305,16 +10901,16 @@ class Graphic3d_TextureParams(OCC.Standard.Standard_Transient):
         """
         return _Graphic3d.Graphic3d_TextureParams_SetFilter(self, *args)
 
-    def AnisoFilter(self, *args) -> "Graphic3d_LevelOfTextureAnisotropy" :
+    def AnisoFilter(self):
         """
         * returns level of anisontropy texture filter. Default value is Graphic3d_LOTA_OFF.
 
         :rtype: Graphic3d_LevelOfTextureAnisotropy
 
         """
-        return _Graphic3d.Graphic3d_TextureParams_AnisoFilter(self, *args)
+        return _Graphic3d.Graphic3d_TextureParams_AnisoFilter(self)
 
-    def SetAnisoFilter(self, *args) -> "void" :
+    def SetAnisoFilter(self, *args):
         """
         * @param theLevel level of anisontropy texture filter.
 
@@ -10325,16 +10921,16 @@ class Graphic3d_TextureParams(OCC.Standard.Standard_Transient):
         """
         return _Graphic3d.Graphic3d_TextureParams_SetAnisoFilter(self, *args)
 
-    def Rotation(self, *args) -> "Standard_ShortReal" :
+    def Rotation(self):
         """
         * returns rotation angle in degrees Default value is 0.
 
         :rtype: Standard_ShortReal
 
         """
-        return _Graphic3d.Graphic3d_TextureParams_Rotation(self, *args)
+        return _Graphic3d.Graphic3d_TextureParams_Rotation(self)
 
-    def SetRotation(self, *args) -> "void" :
+    def SetRotation(self, *args):
         """
         * @param theAngleDegrees rotation angle.
 
@@ -10345,16 +10941,16 @@ class Graphic3d_TextureParams(OCC.Standard.Standard_Transient):
         """
         return _Graphic3d.Graphic3d_TextureParams_SetRotation(self, *args)
 
-    def Scale(self, *args) -> "Graphic3d_Vec2 const &" :
+    def Scale(self):
         """
         * returns scale factor Default value is no scaling (1.0; 1.0).
 
         :rtype: Graphic3d_Vec2
 
         """
-        return _Graphic3d.Graphic3d_TextureParams_Scale(self, *args)
+        return _Graphic3d.Graphic3d_TextureParams_Scale(self)
 
-    def SetScale(self, *args) -> "void" :
+    def SetScale(self, *args):
         """
         * @param theScale scale factor.
 
@@ -10365,16 +10961,16 @@ class Graphic3d_TextureParams(OCC.Standard.Standard_Transient):
         """
         return _Graphic3d.Graphic3d_TextureParams_SetScale(self, *args)
 
-    def Translation(self, *args) -> "Graphic3d_Vec2 const &" :
+    def Translation(self):
         """
         * returns translation vector Default value is no translation (0.0; 0.0).
 
         :rtype: Graphic3d_Vec2
 
         """
-        return _Graphic3d.Graphic3d_TextureParams_Translation(self, *args)
+        return _Graphic3d.Graphic3d_TextureParams_Translation(self)
 
-    def SetTranslation(self, *args) -> "void" :
+    def SetTranslation(self, *args):
         """
         * @param theVec translation vector.
 
@@ -10385,34 +10981,34 @@ class Graphic3d_TextureParams(OCC.Standard.Standard_Transient):
         """
         return _Graphic3d.Graphic3d_TextureParams_SetTranslation(self, *args)
 
-    def GenMode(self, *args) -> "Graphic3d_TypeOfTextureMode" :
+    def GenMode(self):
         """
         * returns texture coordinates generation mode. Default value is Graphic3d_TOTM_MANUAL.
 
         :rtype: Graphic3d_TypeOfTextureMode
 
         """
-        return _Graphic3d.Graphic3d_TextureParams_GenMode(self, *args)
+        return _Graphic3d.Graphic3d_TextureParams_GenMode(self)
 
-    def GenPlaneS(self, *args) -> "Graphic3d_Vec4 const &" :
+    def GenPlaneS(self):
         """
         * returns texture coordinates generation plane S.
 
         :rtype: Graphic3d_Vec4
 
         """
-        return _Graphic3d.Graphic3d_TextureParams_GenPlaneS(self, *args)
+        return _Graphic3d.Graphic3d_TextureParams_GenPlaneS(self)
 
-    def GenPlaneT(self, *args) -> "Graphic3d_Vec4 const &" :
+    def GenPlaneT(self):
         """
         * returns texture coordinates generation plane T.
 
         :rtype: Graphic3d_Vec4
 
         """
-        return _Graphic3d.Graphic3d_TextureParams_GenPlaneT(self, *args)
+        return _Graphic3d.Graphic3d_TextureParams_GenPlaneT(self)
 
-    def SetGenMode(self, *args) -> "void" :
+    def SetGenMode(self, *args):
         """
         * Setup texture coordinates generation mode.
 
@@ -10427,11 +11023,11 @@ class Graphic3d_TextureParams(OCC.Standard.Standard_Transient):
         """
         return _Graphic3d.Graphic3d_TextureParams_SetGenMode(self, *args)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Graphic3d_TextureParams self)"""
         return _Graphic3d.Graphic3d_TextureParams__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Graphic3d_TextureParams" :
+    def GetHandle(self):
         """GetHandle(Graphic3d_TextureParams self) -> Handle_Graphic3d_TextureParams"""
         return _Graphic3d.Graphic3d_TextureParams_GetHandle(self)
 
@@ -10488,7 +11084,7 @@ Handle_Graphic3d_TextureParams._kill_pointed = new_instancemethod(_Graphic3d.Han
 Handle_Graphic3d_TextureParams_swigregister = _Graphic3d.Handle_Graphic3d_TextureParams_swigregister
 Handle_Graphic3d_TextureParams_swigregister(Handle_Graphic3d_TextureParams)
 
-def Handle_Graphic3d_TextureParams_DownCast(*args) -> "Handle_Graphic3d_TextureParams const" :
+def Handle_Graphic3d_TextureParams_DownCast(*args):
   return _Graphic3d.Handle_Graphic3d_TextureParams_DownCast(*args)
 Handle_Graphic3d_TextureParams_DownCast = _Graphic3d.Handle_Graphic3d_TextureParams_DownCast
 
@@ -10496,82 +11092,82 @@ class Graphic3d_TextureRoot(OCC.MMgt.MMgt_TShared):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def Destroy(self, *args) -> "void" :
+    def Destroy(self):
         """
         :rtype: None
 
         """
-        return _Graphic3d.Graphic3d_TextureRoot_Destroy(self, *args)
+        return _Graphic3d.Graphic3d_TextureRoot_Destroy(self)
 
-    def IsDone(self, *args) -> "Standard_Boolean" :
+    def IsDone(self):
         """
         * Checks if a texture class is valid or not. returns true if the construction of the class is correct
 
         :rtype: bool
 
         """
-        return _Graphic3d.Graphic3d_TextureRoot_IsDone(self, *args)
+        return _Graphic3d.Graphic3d_TextureRoot_IsDone(self)
 
-    def Path(self, *args) -> "OSD_Path const &" :
+    def Path(self):
         """
         * Returns the full path of the defined texture. It could be empty path if GetImage() is overridden to load image not from file.
 
         :rtype: OSD_Path
 
         """
-        return _Graphic3d.Graphic3d_TextureRoot_Path(self, *args)
+        return _Graphic3d.Graphic3d_TextureRoot_Path(self)
 
-    def Type(self, *args) -> "Graphic3d_TypeOfTexture" :
+    def Type(self):
         """
         * returns the texture type.
 
         :rtype: Graphic3d_TypeOfTexture
 
         """
-        return _Graphic3d.Graphic3d_TextureRoot_Type(self, *args)
+        return _Graphic3d.Graphic3d_TextureRoot_Type(self)
 
-    def GetId(self, *args) -> "TCollection_AsciiString const &" :
+    def GetId(self):
         """
         * This ID will be used to manage resource in graphic driver. . Default implementation generates unique ID although inheritors may re-initialize it. . Multiple Graphic3d_TextureRoot instancies with same ID will be treated as single texture with different parameters to optimize memory usage though this will be more natural to use same instance of Graphic3d_TextureRoot when possible. . Notice that inheritor may set this ID to empty string. In this case independent graphical resource will be created for each instance of Graphic3d_AspectFillArea3d where texture will be used. . returns texture identifier.
 
         :rtype: TCollection_AsciiString
 
         """
-        return _Graphic3d.Graphic3d_TextureRoot_GetId(self, *args)
+        return _Graphic3d.Graphic3d_TextureRoot_GetId(self)
 
-    def GetImage(self, *args) -> "Image_PixMap_Handle" :
+    def GetImage(self):
         """
         * This method will be called by graphic driver each time when texture resource should be created. Default constructors allow defining the texture source as path to texture image or directly as pixmap. If the source is defined as path, then the image will be dynamically loaded when this method is called (and no copy will be preserved in this class instance). Inheritors may dynamically generate the image. Notice, image data should be in Bottom-Up order (see Image_PixMap::IsTopDown())! returns the image for texture.
 
         :rtype: Image_PixMap_Handle
 
         """
-        return _Graphic3d.Graphic3d_TextureRoot_GetImage(self, *args)
+        return _Graphic3d.Graphic3d_TextureRoot_GetImage(self)
 
-    def GetParams(self, *args) -> "Handle_Graphic3d_TextureParams const &" :
+    def GetParams(self):
         """
         * returns low-level texture parameters
 
         :rtype: Handle_Graphic3d_TextureParams
 
         """
-        return _Graphic3d.Graphic3d_TextureRoot_GetParams(self, *args)
+        return _Graphic3d.Graphic3d_TextureRoot_GetParams(self)
 
-    def TexturesFolder(*args) -> "TCollection_AsciiString" :
+    def TexturesFolder():
         """
         * The path to textures determined from CSF_MDTVTexturesDirectory or CASROOT environment variables. returns the root folder with default textures.
 
         :rtype: TCollection_AsciiString
 
         """
-        return _Graphic3d.Graphic3d_TextureRoot_TexturesFolder(*args)
+        return _Graphic3d.Graphic3d_TextureRoot_TexturesFolder()
 
     TexturesFolder = staticmethod(TexturesFolder)
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Graphic3d_TextureRoot self)"""
         return _Graphic3d.Graphic3d_TextureRoot__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Graphic3d_TextureRoot" :
+    def GetHandle(self):
         """GetHandle(Graphic3d_TextureRoot self) -> Handle_Graphic3d_TextureRoot"""
         return _Graphic3d.Graphic3d_TextureRoot_GetHandle(self)
 
@@ -10595,14 +11191,14 @@ Graphic3d_TextureRoot.GetHandle = new_instancemethod(_Graphic3d.Graphic3d_Textur
 Graphic3d_TextureRoot_swigregister = _Graphic3d.Graphic3d_TextureRoot_swigregister
 Graphic3d_TextureRoot_swigregister(Graphic3d_TextureRoot)
 
-def Graphic3d_TextureRoot_TexturesFolder(*args) -> "TCollection_AsciiString" :
+def Graphic3d_TextureRoot_TexturesFolder():
   """
     * The path to textures determined from CSF_MDTVTexturesDirectory or CASROOT environment variables. returns the root folder with default textures.
 
     :rtype: TCollection_AsciiString
 
     """
-  return _Graphic3d.Graphic3d_TextureRoot_TexturesFolder(*args)
+  return _Graphic3d.Graphic3d_TextureRoot_TexturesFolder()
 
 class Handle_Graphic3d_TextureRoot(OCC.MMgt.Handle_MMgt_TShared):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
@@ -10625,7 +11221,7 @@ Handle_Graphic3d_TextureRoot._kill_pointed = new_instancemethod(_Graphic3d.Handl
 Handle_Graphic3d_TextureRoot_swigregister = _Graphic3d.Handle_Graphic3d_TextureRoot_swigregister
 Handle_Graphic3d_TextureRoot_swigregister(Handle_Graphic3d_TextureRoot)
 
-def Handle_Graphic3d_TextureRoot_DownCast(*args) -> "Handle_Graphic3d_TextureRoot const" :
+def Handle_Graphic3d_TextureRoot_DownCast(*args):
   return _Graphic3d.Handle_Graphic3d_TextureRoot_DownCast(*args)
 Handle_Graphic3d_TextureRoot_DownCast = _Graphic3d.Handle_Graphic3d_TextureRoot_DownCast
 
@@ -10633,14 +11229,14 @@ class Graphic3d_ValueInterface(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def TypeID(self, *args) -> "Standard_Size" :
+    def TypeID(self):
         """
         * Returns unique identifier of value type.
 
         :rtype: Standard_Size
 
         """
-        return _Graphic3d.Graphic3d_ValueInterface_TypeID(self, *args)
+        return _Graphic3d.Graphic3d_ValueInterface_TypeID(self)
 
     def __del__(self):
     	try:
@@ -10684,16 +11280,16 @@ class Graphic3d_Vector(object):
 
         """
         _Graphic3d.Graphic3d_Vector_swiginit(self,_Graphic3d.new_Graphic3d_Vector(*args))
-    def Normalize(self, *args) -> "void" :
+    def Normalize(self):
         """
         * Normalises <self>. Category: Methods to modify the class definition Warning: Raises VectorError if <self> is null.
 
         :rtype: None
 
         """
-        return _Graphic3d.Graphic3d_Vector_Normalize(self, *args)
+        return _Graphic3d.Graphic3d_Vector_Normalize(self)
 
-    def SetCoord(self, *args) -> "void" :
+    def SetCoord(self, *args):
         """
         * Modifies the coordinates of the vector <self>.
 
@@ -10708,7 +11304,7 @@ class Graphic3d_Vector(object):
         """
         return _Graphic3d.Graphic3d_Vector_SetCoord(self, *args)
 
-    def SetXCoord(self, *args) -> "void" :
+    def SetXCoord(self, *args):
         """
         * Modifies the X coordinate of the vector <self>.
 
@@ -10719,7 +11315,7 @@ class Graphic3d_Vector(object):
         """
         return _Graphic3d.Graphic3d_Vector_SetXCoord(self, *args)
 
-    def SetYCoord(self, *args) -> "void" :
+    def SetYCoord(self, *args):
         """
         * Modifies the Y coordinate of the vector <self>.
 
@@ -10730,7 +11326,7 @@ class Graphic3d_Vector(object):
         """
         return _Graphic3d.Graphic3d_Vector_SetYCoord(self, *args)
 
-    def SetZCoord(self, *args) -> "void" :
+    def SetZCoord(self, *args):
         """
         * Modifies the Z coordinate of the vector <self>.
 
@@ -10741,7 +11337,7 @@ class Graphic3d_Vector(object):
         """
         return _Graphic3d.Graphic3d_Vector_SetZCoord(self, *args)
 
-    def Coord(self, *args) -> "void" :
+    def Coord(self):
         """
         * Returns the coordinates of the vector <self>.
 
@@ -10754,54 +11350,54 @@ class Graphic3d_Vector(object):
         :rtype: None
 
         """
-        return _Graphic3d.Graphic3d_Vector_Coord(self, *args)
+        return _Graphic3d.Graphic3d_Vector_Coord(self)
 
-    def IsNormalized(self, *args) -> "Standard_Boolean" :
+    def IsNormalized(self):
         """
         * Returns Standard_True if <self> has length 1.
 
         :rtype: bool
 
         """
-        return _Graphic3d.Graphic3d_Vector_IsNormalized(self, *args)
+        return _Graphic3d.Graphic3d_Vector_IsNormalized(self)
 
-    def LengthZero(self, *args) -> "Standard_Boolean" :
+    def LengthZero(self):
         """
         * Returns Standard_True if <self> has length zero.
 
         :rtype: bool
 
         """
-        return _Graphic3d.Graphic3d_Vector_LengthZero(self, *args)
+        return _Graphic3d.Graphic3d_Vector_LengthZero(self)
 
-    def X(self, *args) -> "Standard_Real" :
+    def X(self):
         """
         * Returns the X coordinates of the vector <self>.
 
         :rtype: float
 
         """
-        return _Graphic3d.Graphic3d_Vector_X(self, *args)
+        return _Graphic3d.Graphic3d_Vector_X(self)
 
-    def Y(self, *args) -> "Standard_Real" :
+    def Y(self):
         """
         * Returns the Y coordinate of the vector <self>.
 
         :rtype: float
 
         """
-        return _Graphic3d.Graphic3d_Vector_Y(self, *args)
+        return _Graphic3d.Graphic3d_Vector_Y(self)
 
-    def Z(self, *args) -> "Standard_Real" :
+    def Z(self):
         """
         * Returns the Z coordinate of the vector <self>.
 
         :rtype: float
 
         """
-        return _Graphic3d.Graphic3d_Vector_Z(self, *args)
+        return _Graphic3d.Graphic3d_Vector_Z(self)
 
-    def IsParallel(*args) -> "Standard_Boolean" :
+    def IsParallel(*args):
         """
         * Returns Standard_True if the vector <AV1> and //!	 <AV2> are parallel.
 
@@ -10815,7 +11411,7 @@ class Graphic3d_Vector(object):
         return _Graphic3d.Graphic3d_Vector_IsParallel(*args)
 
     IsParallel = staticmethod(IsParallel)
-    def NormeOf(*args) -> "Standard_Real" :
+    def NormeOf(*args):
         """
         * Returns the norm of the vector <AX>, <AY>, <AZ>.
 
@@ -10860,7 +11456,7 @@ Graphic3d_Vector._kill_pointed = new_instancemethod(_Graphic3d.Graphic3d_Vector_
 Graphic3d_Vector_swigregister = _Graphic3d.Graphic3d_Vector_swigregister
 Graphic3d_Vector_swigregister(Graphic3d_Vector)
 
-def Graphic3d_Vector_IsParallel(*args) -> "Standard_Boolean" :
+def Graphic3d_Vector_IsParallel(*args):
   """
     * Returns Standard_True if the vector <AV1> and //!	 <AV2> are parallel.
 
@@ -10873,7 +11469,7 @@ def Graphic3d_Vector_IsParallel(*args) -> "Standard_Boolean" :
     """
   return _Graphic3d.Graphic3d_Vector_IsParallel(*args)
 
-def Graphic3d_Vector_NormeOf(*args) -> "Standard_Real" :
+def Graphic3d_Vector_NormeOf(*args):
   """
     * Returns the norm of the vector <AX>, <AY>, <AZ>.
 
@@ -10931,7 +11527,7 @@ class Graphic3d_Vertex(object):
 
         """
         _Graphic3d.Graphic3d_Vertex_swiginit(self,_Graphic3d.new_Graphic3d_Vertex(*args))
-    def SetCoord(self, *args) -> "void" :
+    def SetCoord(self, *args):
         """
         * Modifies the coordinates of the point <self>.
 
@@ -10956,7 +11552,7 @@ class Graphic3d_Vertex(object):
         """
         return _Graphic3d.Graphic3d_Vertex_SetCoord(self, *args)
 
-    def Coord(self, *args) -> "void" :
+    def Coord(self, *args):
         """
         * Returns the coordinates of the point <self>.
 
@@ -10981,34 +11577,34 @@ class Graphic3d_Vertex(object):
         """
         return _Graphic3d.Graphic3d_Vertex_Coord(self, *args)
 
-    def X(self, *args) -> "Standard_ShortReal" :
+    def X(self):
         """
         * Returns the X coordinates of the point <self>.
 
         :rtype: Standard_ShortReal
 
         """
-        return _Graphic3d.Graphic3d_Vertex_X(self, *args)
+        return _Graphic3d.Graphic3d_Vertex_X(self)
 
-    def Y(self, *args) -> "Standard_ShortReal" :
+    def Y(self):
         """
         * Returns the Y coordinate of the point <self>.
 
         :rtype: Standard_ShortReal
 
         """
-        return _Graphic3d.Graphic3d_Vertex_Y(self, *args)
+        return _Graphic3d.Graphic3d_Vertex_Y(self)
 
-    def Z(self, *args) -> "Standard_ShortReal" :
+    def Z(self):
         """
         * Returns the Z coordinate of the point <self>.
 
         :rtype: Standard_ShortReal
 
         """
-        return _Graphic3d.Graphic3d_Vertex_Z(self, *args)
+        return _Graphic3d.Graphic3d_Vertex_Z(self)
 
-    def Distance(self, *args) -> "Standard_ShortReal" :
+    def Distance(self, *args):
         """
         * Returns the distance between <AV1> and <AV2>.
 
@@ -11040,13 +11636,13 @@ Graphic3d_Vertex_swigregister(Graphic3d_Vertex)
 class Graphic3d_ZLayerSettings(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _Graphic3d.Graphic3d_ZLayerSettings_swiginit(self,_Graphic3d.new_Graphic3d_ZLayerSettings(*args))
-    def IsSettingEnabled(self, *args) -> "Standard_Boolean const" :
+        _Graphic3d.Graphic3d_ZLayerSettings_swiginit(self,_Graphic3d.new_Graphic3d_ZLayerSettings())
+    def IsSettingEnabled(self, *args):
         """
         * Returns true if theSetting is enabled.
 
@@ -11057,7 +11653,7 @@ class Graphic3d_ZLayerSettings(object):
         """
         return _Graphic3d.Graphic3d_ZLayerSettings_IsSettingEnabled(self, *args)
 
-    def EnableSetting(self, *args) -> "void" :
+    def EnableSetting(self, *args):
         """
         * Enables theSetting
 
@@ -11068,7 +11664,7 @@ class Graphic3d_ZLayerSettings(object):
         """
         return _Graphic3d.Graphic3d_ZLayerSettings_EnableSetting(self, *args)
 
-    def DisableSetting(self, *args) -> "void" :
+    def DisableSetting(self, *args):
         """
         * Disables theSetting
 
@@ -11079,23 +11675,23 @@ class Graphic3d_ZLayerSettings(object):
         """
         return _Graphic3d.Graphic3d_ZLayerSettings_DisableSetting(self, *args)
 
-    def SetDepthOffsetPositive(self, *args) -> "void" :
+    def SetDepthOffsetPositive(self):
         """
         * Sets minimal possible positive depth offset. Access DepthOffsetFactor and DepthOffsetUnits values for manual offset control.
 
         :rtype: None
 
         """
-        return _Graphic3d.Graphic3d_ZLayerSettings_SetDepthOffsetPositive(self, *args)
+        return _Graphic3d.Graphic3d_ZLayerSettings_SetDepthOffsetPositive(self)
 
-    def SetDepthOffsetNegative(self, *args) -> "void" :
+    def SetDepthOffsetNegative(self):
         """
         * Sets minimal possible negative depth offset. Access DepthOffsetFactor and DepthOffsetUnits values for manual offset control.
 
         :rtype: None
 
         """
-        return _Graphic3d.Graphic3d_ZLayerSettings_SetDepthOffsetNegative(self, *args)
+        return _Graphic3d.Graphic3d_ZLayerSettings_SetDepthOffsetNegative(self)
 
     def __del__(self):
     	try:
@@ -11122,18 +11718,26 @@ class Graphic3d_ArrayOfPoints(Graphic3d_ArrayOfPrimitives):
         * Creates an array of points, a single pixel point is drawn at each vertex. The array must be filled using the AddVertex(Point) method. When <hasVColors> is True , you must use only AddVertex(Point,Color) method.
 
         :param maxVertexs:
-        :type maxVertexs: int
+        :type maxVertexs: Standard_Integer
+        :param hasVColors: default value is Standard_False
+        :type hasVColors: bool
+        :rtype: None
+
+        * Creates an array of points, a single pixel point is drawn at each vertex. The array must be filled using the AddVertex(Point) method. When <hasVColors> is True , you must use only AddVertex(Point,Color) method.
+
+        :param maxVertexs:
+        :type maxVertexs: Standard_Integer
         :param hasVColors: default value is Standard_False
         :type hasVColors: bool
         :rtype: None
 
         """
         _Graphic3d.Graphic3d_ArrayOfPoints_swiginit(self,_Graphic3d.new_Graphic3d_ArrayOfPoints(*args))
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Graphic3d_ArrayOfPoints self)"""
         return _Graphic3d.Graphic3d_ArrayOfPoints__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Graphic3d_ArrayOfPoints" :
+    def GetHandle(self):
         """GetHandle(Graphic3d_ArrayOfPoints self) -> Handle_Graphic3d_ArrayOfPoints"""
         return _Graphic3d.Graphic3d_ArrayOfPoints_GetHandle(self)
 
@@ -11171,7 +11775,7 @@ Handle_Graphic3d_ArrayOfPoints._kill_pointed = new_instancemethod(_Graphic3d.Han
 Handle_Graphic3d_ArrayOfPoints_swigregister = _Graphic3d.Handle_Graphic3d_ArrayOfPoints_swigregister
 Handle_Graphic3d_ArrayOfPoints_swigregister(Handle_Graphic3d_ArrayOfPoints)
 
-def Handle_Graphic3d_ArrayOfPoints_DownCast(*args) -> "Handle_Graphic3d_ArrayOfPoints const" :
+def Handle_Graphic3d_ArrayOfPoints_DownCast(*args):
   return _Graphic3d.Handle_Graphic3d_ArrayOfPoints_DownCast(*args)
 Handle_Graphic3d_ArrayOfPoints_DownCast = _Graphic3d.Handle_Graphic3d_ArrayOfPoints_DownCast
 
@@ -11183,11 +11787,151 @@ class Graphic3d_ArrayOfPolygons(Graphic3d_ArrayOfPrimitives):
         * Creates an array of polygons, a polygon can be filled as: 1) creating a single polygon defined with his vertexs. i.e: myArray = Graphic3d_ArrayOfPolygons(7) myArray->AddVertex(x1,y1,z1) //!	.... myArray->AddVertex(x7,y7,z7) 2) creating separate polygons defined with a predefined number of bounds and the number of vertex per bound. i.e: myArray = Graphic3d_ArrayOfPolygons(7,2) myArray->AddBound(4) myArray->AddVertex(x1,y1,z1) //!	.... myArray->AddVertex(x4,y4,z4) myArray->AddBound(3) myArray->AddVertex(x5,y5,z5) //!	.... myArray->AddVertex(x7,y7,z7) 3) creating a single indexed polygon defined with his vertex ans edges. i.e: myArray = Graphic3d_ArrayOfPolygons(4,0,6) myArray->AddVertex(x1,y1,z1) //!	.... myArray->AddVertex(x4,y4,z4) myArray->AddEdge(1) myArray->AddEdge(2) myArray->AddEdge(3) myArray->AddEdge(1) myArray->AddEdge(2) myArray->AddEdge(4) 4) creating separate polygons defined with a predefined number of bounds and the number of edges per bound. i.e: myArray = Graphic3d_ArrayOfPolygons(6,4,14) myArray->AddBound(3) myArray->AddVertex(x1,y1,z1) myArray->AddVertex(x2,y2,z2) myArray->AddVertex(x3,y3,z3) myArray->AddEdge(1) myArray->AddEdge(2) myArray->AddEdge(3) myArray->AddBound(3) myArray->AddVertex(x4,y4,z4) myArray->AddVertex(x5,y5,z5) myArray->AddVertex(x6,y6,z6) myArray->AddEdge(4) myArray->AddEdge(5) myArray->AddEdge(6) myArray->AddBound(4) myArray->AddEdge(2) myArray->AddEdge(3) myArray->AddEdge(5) myArray->AddEdge(6) myArray->AddBound(4) myArray->AddEdge(1) myArray->AddEdge(3) myArray->AddEdge(5) myArray->AddEdge(4) <maxVertexs> defined the maximun allowed vertex number in the array. <maxBounds> defined the maximun allowed bound number in the array. <maxEdges> defined the maximun allowed edge number in the array. Warning: When <hasVNormals> is True , you must use one of //!	AddVertex(Point,Normal) or AddVertex(Point,Normal,Color) or AddVertex(Point,Normal,Texel) methods. When <hasVColors> is True , you must use one of //!	AddVertex(Point,Color) or AddVertex(Point,Normal,Color) methods. When <hasTexels> is True , you must use one of //!	AddVertex(Point,Texel) or AddVertex(Point,Normal,Texel) methods. When <hasBColors> is True , <maxBounds> must be > 0 and //!	you must use the //!	AddBound(number,Color) method. When <hasEdgeInfos> is True , <maxEdges> must be > 0 and //!	you must use the //!	AddEdge(number,visibillity) method. Warning: the user is responsible about the orientation of the polygon depending of the order of the created vertex or edges and this orientation must be coherent with the vertex normal optionnaly given at each vertex (See the Orientate() methods).
 
         :param maxVertexs:
-        :type maxVertexs: int
+        :type maxVertexs: Standard_Integer
         :param maxBounds: default value is 0
-        :type maxBounds: int
+        :type maxBounds: Standard_Integer
         :param maxEdges: default value is 0
-        :type maxEdges: int
+        :type maxEdges: Standard_Integer
+        :param hasVNormals: default value is Standard_False
+        :type hasVNormals: bool
+        :param hasVColors: default value is Standard_False
+        :type hasVColors: bool
+        :param hasBColors: default value is Standard_False
+        :type hasBColors: bool
+        :param hasTexels: default value is Standard_False
+        :type hasTexels: bool
+        :param hasEdgeInfos: default value is Standard_False
+        :type hasEdgeInfos: bool
+        :rtype: None
+
+        * Creates an array of polygons, a polygon can be filled as: 1) creating a single polygon defined with his vertexs. i.e: myArray = Graphic3d_ArrayOfPolygons(7) myArray->AddVertex(x1,y1,z1) //!	.... myArray->AddVertex(x7,y7,z7) 2) creating separate polygons defined with a predefined number of bounds and the number of vertex per bound. i.e: myArray = Graphic3d_ArrayOfPolygons(7,2) myArray->AddBound(4) myArray->AddVertex(x1,y1,z1) //!	.... myArray->AddVertex(x4,y4,z4) myArray->AddBound(3) myArray->AddVertex(x5,y5,z5) //!	.... myArray->AddVertex(x7,y7,z7) 3) creating a single indexed polygon defined with his vertex ans edges. i.e: myArray = Graphic3d_ArrayOfPolygons(4,0,6) myArray->AddVertex(x1,y1,z1) //!	.... myArray->AddVertex(x4,y4,z4) myArray->AddEdge(1) myArray->AddEdge(2) myArray->AddEdge(3) myArray->AddEdge(1) myArray->AddEdge(2) myArray->AddEdge(4) 4) creating separate polygons defined with a predefined number of bounds and the number of edges per bound. i.e: myArray = Graphic3d_ArrayOfPolygons(6,4,14) myArray->AddBound(3) myArray->AddVertex(x1,y1,z1) myArray->AddVertex(x2,y2,z2) myArray->AddVertex(x3,y3,z3) myArray->AddEdge(1) myArray->AddEdge(2) myArray->AddEdge(3) myArray->AddBound(3) myArray->AddVertex(x4,y4,z4) myArray->AddVertex(x5,y5,z5) myArray->AddVertex(x6,y6,z6) myArray->AddEdge(4) myArray->AddEdge(5) myArray->AddEdge(6) myArray->AddBound(4) myArray->AddEdge(2) myArray->AddEdge(3) myArray->AddEdge(5) myArray->AddEdge(6) myArray->AddBound(4) myArray->AddEdge(1) myArray->AddEdge(3) myArray->AddEdge(5) myArray->AddEdge(4) <maxVertexs> defined the maximun allowed vertex number in the array. <maxBounds> defined the maximun allowed bound number in the array. <maxEdges> defined the maximun allowed edge number in the array. Warning: When <hasVNormals> is True , you must use one of //!	AddVertex(Point,Normal) or AddVertex(Point,Normal,Color) or AddVertex(Point,Normal,Texel) methods. When <hasVColors> is True , you must use one of //!	AddVertex(Point,Color) or AddVertex(Point,Normal,Color) methods. When <hasTexels> is True , you must use one of //!	AddVertex(Point,Texel) or AddVertex(Point,Normal,Texel) methods. When <hasBColors> is True , <maxBounds> must be > 0 and //!	you must use the //!	AddBound(number,Color) method. When <hasEdgeInfos> is True , <maxEdges> must be > 0 and //!	you must use the //!	AddEdge(number,visibillity) method. Warning: the user is responsible about the orientation of the polygon depending of the order of the created vertex or edges and this orientation must be coherent with the vertex normal optionnaly given at each vertex (See the Orientate() methods).
+
+        :param maxVertexs:
+        :type maxVertexs: Standard_Integer
+        :param maxBounds: default value is 0
+        :type maxBounds: Standard_Integer
+        :param maxEdges: default value is 0
+        :type maxEdges: Standard_Integer
+        :param hasVNormals: default value is Standard_False
+        :type hasVNormals: bool
+        :param hasVColors: default value is Standard_False
+        :type hasVColors: bool
+        :param hasBColors: default value is Standard_False
+        :type hasBColors: bool
+        :param hasTexels: default value is Standard_False
+        :type hasTexels: bool
+        :param hasEdgeInfos: default value is Standard_False
+        :type hasEdgeInfos: bool
+        :rtype: None
+
+        * Creates an array of polygons, a polygon can be filled as: 1) creating a single polygon defined with his vertexs. i.e: myArray = Graphic3d_ArrayOfPolygons(7) myArray->AddVertex(x1,y1,z1) //!	.... myArray->AddVertex(x7,y7,z7) 2) creating separate polygons defined with a predefined number of bounds and the number of vertex per bound. i.e: myArray = Graphic3d_ArrayOfPolygons(7,2) myArray->AddBound(4) myArray->AddVertex(x1,y1,z1) //!	.... myArray->AddVertex(x4,y4,z4) myArray->AddBound(3) myArray->AddVertex(x5,y5,z5) //!	.... myArray->AddVertex(x7,y7,z7) 3) creating a single indexed polygon defined with his vertex ans edges. i.e: myArray = Graphic3d_ArrayOfPolygons(4,0,6) myArray->AddVertex(x1,y1,z1) //!	.... myArray->AddVertex(x4,y4,z4) myArray->AddEdge(1) myArray->AddEdge(2) myArray->AddEdge(3) myArray->AddEdge(1) myArray->AddEdge(2) myArray->AddEdge(4) 4) creating separate polygons defined with a predefined number of bounds and the number of edges per bound. i.e: myArray = Graphic3d_ArrayOfPolygons(6,4,14) myArray->AddBound(3) myArray->AddVertex(x1,y1,z1) myArray->AddVertex(x2,y2,z2) myArray->AddVertex(x3,y3,z3) myArray->AddEdge(1) myArray->AddEdge(2) myArray->AddEdge(3) myArray->AddBound(3) myArray->AddVertex(x4,y4,z4) myArray->AddVertex(x5,y5,z5) myArray->AddVertex(x6,y6,z6) myArray->AddEdge(4) myArray->AddEdge(5) myArray->AddEdge(6) myArray->AddBound(4) myArray->AddEdge(2) myArray->AddEdge(3) myArray->AddEdge(5) myArray->AddEdge(6) myArray->AddBound(4) myArray->AddEdge(1) myArray->AddEdge(3) myArray->AddEdge(5) myArray->AddEdge(4) <maxVertexs> defined the maximun allowed vertex number in the array. <maxBounds> defined the maximun allowed bound number in the array. <maxEdges> defined the maximun allowed edge number in the array. Warning: When <hasVNormals> is True , you must use one of //!	AddVertex(Point,Normal) or AddVertex(Point,Normal,Color) or AddVertex(Point,Normal,Texel) methods. When <hasVColors> is True , you must use one of //!	AddVertex(Point,Color) or AddVertex(Point,Normal,Color) methods. When <hasTexels> is True , you must use one of //!	AddVertex(Point,Texel) or AddVertex(Point,Normal,Texel) methods. When <hasBColors> is True , <maxBounds> must be > 0 and //!	you must use the //!	AddBound(number,Color) method. When <hasEdgeInfos> is True , <maxEdges> must be > 0 and //!	you must use the //!	AddEdge(number,visibillity) method. Warning: the user is responsible about the orientation of the polygon depending of the order of the created vertex or edges and this orientation must be coherent with the vertex normal optionnaly given at each vertex (See the Orientate() methods).
+
+        :param maxVertexs:
+        :type maxVertexs: Standard_Integer
+        :param maxBounds: default value is 0
+        :type maxBounds: Standard_Integer
+        :param maxEdges: default value is 0
+        :type maxEdges: Standard_Integer
+        :param hasVNormals: default value is Standard_False
+        :type hasVNormals: bool
+        :param hasVColors: default value is Standard_False
+        :type hasVColors: bool
+        :param hasBColors: default value is Standard_False
+        :type hasBColors: bool
+        :param hasTexels: default value is Standard_False
+        :type hasTexels: bool
+        :param hasEdgeInfos: default value is Standard_False
+        :type hasEdgeInfos: bool
+        :rtype: None
+
+        * Creates an array of polygons, a polygon can be filled as: 1) creating a single polygon defined with his vertexs. i.e: myArray = Graphic3d_ArrayOfPolygons(7) myArray->AddVertex(x1,y1,z1) //!	.... myArray->AddVertex(x7,y7,z7) 2) creating separate polygons defined with a predefined number of bounds and the number of vertex per bound. i.e: myArray = Graphic3d_ArrayOfPolygons(7,2) myArray->AddBound(4) myArray->AddVertex(x1,y1,z1) //!	.... myArray->AddVertex(x4,y4,z4) myArray->AddBound(3) myArray->AddVertex(x5,y5,z5) //!	.... myArray->AddVertex(x7,y7,z7) 3) creating a single indexed polygon defined with his vertex ans edges. i.e: myArray = Graphic3d_ArrayOfPolygons(4,0,6) myArray->AddVertex(x1,y1,z1) //!	.... myArray->AddVertex(x4,y4,z4) myArray->AddEdge(1) myArray->AddEdge(2) myArray->AddEdge(3) myArray->AddEdge(1) myArray->AddEdge(2) myArray->AddEdge(4) 4) creating separate polygons defined with a predefined number of bounds and the number of edges per bound. i.e: myArray = Graphic3d_ArrayOfPolygons(6,4,14) myArray->AddBound(3) myArray->AddVertex(x1,y1,z1) myArray->AddVertex(x2,y2,z2) myArray->AddVertex(x3,y3,z3) myArray->AddEdge(1) myArray->AddEdge(2) myArray->AddEdge(3) myArray->AddBound(3) myArray->AddVertex(x4,y4,z4) myArray->AddVertex(x5,y5,z5) myArray->AddVertex(x6,y6,z6) myArray->AddEdge(4) myArray->AddEdge(5) myArray->AddEdge(6) myArray->AddBound(4) myArray->AddEdge(2) myArray->AddEdge(3) myArray->AddEdge(5) myArray->AddEdge(6) myArray->AddBound(4) myArray->AddEdge(1) myArray->AddEdge(3) myArray->AddEdge(5) myArray->AddEdge(4) <maxVertexs> defined the maximun allowed vertex number in the array. <maxBounds> defined the maximun allowed bound number in the array. <maxEdges> defined the maximun allowed edge number in the array. Warning: When <hasVNormals> is True , you must use one of //!	AddVertex(Point,Normal) or AddVertex(Point,Normal,Color) or AddVertex(Point,Normal,Texel) methods. When <hasVColors> is True , you must use one of //!	AddVertex(Point,Color) or AddVertex(Point,Normal,Color) methods. When <hasTexels> is True , you must use one of //!	AddVertex(Point,Texel) or AddVertex(Point,Normal,Texel) methods. When <hasBColors> is True , <maxBounds> must be > 0 and //!	you must use the //!	AddBound(number,Color) method. When <hasEdgeInfos> is True , <maxEdges> must be > 0 and //!	you must use the //!	AddEdge(number,visibillity) method. Warning: the user is responsible about the orientation of the polygon depending of the order of the created vertex or edges and this orientation must be coherent with the vertex normal optionnaly given at each vertex (See the Orientate() methods).
+
+        :param maxVertexs:
+        :type maxVertexs: Standard_Integer
+        :param maxBounds: default value is 0
+        :type maxBounds: Standard_Integer
+        :param maxEdges: default value is 0
+        :type maxEdges: Standard_Integer
+        :param hasVNormals: default value is Standard_False
+        :type hasVNormals: bool
+        :param hasVColors: default value is Standard_False
+        :type hasVColors: bool
+        :param hasBColors: default value is Standard_False
+        :type hasBColors: bool
+        :param hasTexels: default value is Standard_False
+        :type hasTexels: bool
+        :param hasEdgeInfos: default value is Standard_False
+        :type hasEdgeInfos: bool
+        :rtype: None
+
+        * Creates an array of polygons, a polygon can be filled as: 1) creating a single polygon defined with his vertexs. i.e: myArray = Graphic3d_ArrayOfPolygons(7) myArray->AddVertex(x1,y1,z1) //!	.... myArray->AddVertex(x7,y7,z7) 2) creating separate polygons defined with a predefined number of bounds and the number of vertex per bound. i.e: myArray = Graphic3d_ArrayOfPolygons(7,2) myArray->AddBound(4) myArray->AddVertex(x1,y1,z1) //!	.... myArray->AddVertex(x4,y4,z4) myArray->AddBound(3) myArray->AddVertex(x5,y5,z5) //!	.... myArray->AddVertex(x7,y7,z7) 3) creating a single indexed polygon defined with his vertex ans edges. i.e: myArray = Graphic3d_ArrayOfPolygons(4,0,6) myArray->AddVertex(x1,y1,z1) //!	.... myArray->AddVertex(x4,y4,z4) myArray->AddEdge(1) myArray->AddEdge(2) myArray->AddEdge(3) myArray->AddEdge(1) myArray->AddEdge(2) myArray->AddEdge(4) 4) creating separate polygons defined with a predefined number of bounds and the number of edges per bound. i.e: myArray = Graphic3d_ArrayOfPolygons(6,4,14) myArray->AddBound(3) myArray->AddVertex(x1,y1,z1) myArray->AddVertex(x2,y2,z2) myArray->AddVertex(x3,y3,z3) myArray->AddEdge(1) myArray->AddEdge(2) myArray->AddEdge(3) myArray->AddBound(3) myArray->AddVertex(x4,y4,z4) myArray->AddVertex(x5,y5,z5) myArray->AddVertex(x6,y6,z6) myArray->AddEdge(4) myArray->AddEdge(5) myArray->AddEdge(6) myArray->AddBound(4) myArray->AddEdge(2) myArray->AddEdge(3) myArray->AddEdge(5) myArray->AddEdge(6) myArray->AddBound(4) myArray->AddEdge(1) myArray->AddEdge(3) myArray->AddEdge(5) myArray->AddEdge(4) <maxVertexs> defined the maximun allowed vertex number in the array. <maxBounds> defined the maximun allowed bound number in the array. <maxEdges> defined the maximun allowed edge number in the array. Warning: When <hasVNormals> is True , you must use one of //!	AddVertex(Point,Normal) or AddVertex(Point,Normal,Color) or AddVertex(Point,Normal,Texel) methods. When <hasVColors> is True , you must use one of //!	AddVertex(Point,Color) or AddVertex(Point,Normal,Color) methods. When <hasTexels> is True , you must use one of //!	AddVertex(Point,Texel) or AddVertex(Point,Normal,Texel) methods. When <hasBColors> is True , <maxBounds> must be > 0 and //!	you must use the //!	AddBound(number,Color) method. When <hasEdgeInfos> is True , <maxEdges> must be > 0 and //!	you must use the //!	AddEdge(number,visibillity) method. Warning: the user is responsible about the orientation of the polygon depending of the order of the created vertex or edges and this orientation must be coherent with the vertex normal optionnaly given at each vertex (See the Orientate() methods).
+
+        :param maxVertexs:
+        :type maxVertexs: Standard_Integer
+        :param maxBounds: default value is 0
+        :type maxBounds: Standard_Integer
+        :param maxEdges: default value is 0
+        :type maxEdges: Standard_Integer
+        :param hasVNormals: default value is Standard_False
+        :type hasVNormals: bool
+        :param hasVColors: default value is Standard_False
+        :type hasVColors: bool
+        :param hasBColors: default value is Standard_False
+        :type hasBColors: bool
+        :param hasTexels: default value is Standard_False
+        :type hasTexels: bool
+        :param hasEdgeInfos: default value is Standard_False
+        :type hasEdgeInfos: bool
+        :rtype: None
+
+        * Creates an array of polygons, a polygon can be filled as: 1) creating a single polygon defined with his vertexs. i.e: myArray = Graphic3d_ArrayOfPolygons(7) myArray->AddVertex(x1,y1,z1) //!	.... myArray->AddVertex(x7,y7,z7) 2) creating separate polygons defined with a predefined number of bounds and the number of vertex per bound. i.e: myArray = Graphic3d_ArrayOfPolygons(7,2) myArray->AddBound(4) myArray->AddVertex(x1,y1,z1) //!	.... myArray->AddVertex(x4,y4,z4) myArray->AddBound(3) myArray->AddVertex(x5,y5,z5) //!	.... myArray->AddVertex(x7,y7,z7) 3) creating a single indexed polygon defined with his vertex ans edges. i.e: myArray = Graphic3d_ArrayOfPolygons(4,0,6) myArray->AddVertex(x1,y1,z1) //!	.... myArray->AddVertex(x4,y4,z4) myArray->AddEdge(1) myArray->AddEdge(2) myArray->AddEdge(3) myArray->AddEdge(1) myArray->AddEdge(2) myArray->AddEdge(4) 4) creating separate polygons defined with a predefined number of bounds and the number of edges per bound. i.e: myArray = Graphic3d_ArrayOfPolygons(6,4,14) myArray->AddBound(3) myArray->AddVertex(x1,y1,z1) myArray->AddVertex(x2,y2,z2) myArray->AddVertex(x3,y3,z3) myArray->AddEdge(1) myArray->AddEdge(2) myArray->AddEdge(3) myArray->AddBound(3) myArray->AddVertex(x4,y4,z4) myArray->AddVertex(x5,y5,z5) myArray->AddVertex(x6,y6,z6) myArray->AddEdge(4) myArray->AddEdge(5) myArray->AddEdge(6) myArray->AddBound(4) myArray->AddEdge(2) myArray->AddEdge(3) myArray->AddEdge(5) myArray->AddEdge(6) myArray->AddBound(4) myArray->AddEdge(1) myArray->AddEdge(3) myArray->AddEdge(5) myArray->AddEdge(4) <maxVertexs> defined the maximun allowed vertex number in the array. <maxBounds> defined the maximun allowed bound number in the array. <maxEdges> defined the maximun allowed edge number in the array. Warning: When <hasVNormals> is True , you must use one of //!	AddVertex(Point,Normal) or AddVertex(Point,Normal,Color) or AddVertex(Point,Normal,Texel) methods. When <hasVColors> is True , you must use one of //!	AddVertex(Point,Color) or AddVertex(Point,Normal,Color) methods. When <hasTexels> is True , you must use one of //!	AddVertex(Point,Texel) or AddVertex(Point,Normal,Texel) methods. When <hasBColors> is True , <maxBounds> must be > 0 and //!	you must use the //!	AddBound(number,Color) method. When <hasEdgeInfos> is True , <maxEdges> must be > 0 and //!	you must use the //!	AddEdge(number,visibillity) method. Warning: the user is responsible about the orientation of the polygon depending of the order of the created vertex or edges and this orientation must be coherent with the vertex normal optionnaly given at each vertex (See the Orientate() methods).
+
+        :param maxVertexs:
+        :type maxVertexs: Standard_Integer
+        :param maxBounds: default value is 0
+        :type maxBounds: Standard_Integer
+        :param maxEdges: default value is 0
+        :type maxEdges: Standard_Integer
+        :param hasVNormals: default value is Standard_False
+        :type hasVNormals: bool
+        :param hasVColors: default value is Standard_False
+        :type hasVColors: bool
+        :param hasBColors: default value is Standard_False
+        :type hasBColors: bool
+        :param hasTexels: default value is Standard_False
+        :type hasTexels: bool
+        :param hasEdgeInfos: default value is Standard_False
+        :type hasEdgeInfos: bool
+        :rtype: None
+
+        * Creates an array of polygons, a polygon can be filled as: 1) creating a single polygon defined with his vertexs. i.e: myArray = Graphic3d_ArrayOfPolygons(7) myArray->AddVertex(x1,y1,z1) //!	.... myArray->AddVertex(x7,y7,z7) 2) creating separate polygons defined with a predefined number of bounds and the number of vertex per bound. i.e: myArray = Graphic3d_ArrayOfPolygons(7,2) myArray->AddBound(4) myArray->AddVertex(x1,y1,z1) //!	.... myArray->AddVertex(x4,y4,z4) myArray->AddBound(3) myArray->AddVertex(x5,y5,z5) //!	.... myArray->AddVertex(x7,y7,z7) 3) creating a single indexed polygon defined with his vertex ans edges. i.e: myArray = Graphic3d_ArrayOfPolygons(4,0,6) myArray->AddVertex(x1,y1,z1) //!	.... myArray->AddVertex(x4,y4,z4) myArray->AddEdge(1) myArray->AddEdge(2) myArray->AddEdge(3) myArray->AddEdge(1) myArray->AddEdge(2) myArray->AddEdge(4) 4) creating separate polygons defined with a predefined number of bounds and the number of edges per bound. i.e: myArray = Graphic3d_ArrayOfPolygons(6,4,14) myArray->AddBound(3) myArray->AddVertex(x1,y1,z1) myArray->AddVertex(x2,y2,z2) myArray->AddVertex(x3,y3,z3) myArray->AddEdge(1) myArray->AddEdge(2) myArray->AddEdge(3) myArray->AddBound(3) myArray->AddVertex(x4,y4,z4) myArray->AddVertex(x5,y5,z5) myArray->AddVertex(x6,y6,z6) myArray->AddEdge(4) myArray->AddEdge(5) myArray->AddEdge(6) myArray->AddBound(4) myArray->AddEdge(2) myArray->AddEdge(3) myArray->AddEdge(5) myArray->AddEdge(6) myArray->AddBound(4) myArray->AddEdge(1) myArray->AddEdge(3) myArray->AddEdge(5) myArray->AddEdge(4) <maxVertexs> defined the maximun allowed vertex number in the array. <maxBounds> defined the maximun allowed bound number in the array. <maxEdges> defined the maximun allowed edge number in the array. Warning: When <hasVNormals> is True , you must use one of //!	AddVertex(Point,Normal) or AddVertex(Point,Normal,Color) or AddVertex(Point,Normal,Texel) methods. When <hasVColors> is True , you must use one of //!	AddVertex(Point,Color) or AddVertex(Point,Normal,Color) methods. When <hasTexels> is True , you must use one of //!	AddVertex(Point,Texel) or AddVertex(Point,Normal,Texel) methods. When <hasBColors> is True , <maxBounds> must be > 0 and //!	you must use the //!	AddBound(number,Color) method. When <hasEdgeInfos> is True , <maxEdges> must be > 0 and //!	you must use the //!	AddEdge(number,visibillity) method. Warning: the user is responsible about the orientation of the polygon depending of the order of the created vertex or edges and this orientation must be coherent with the vertex normal optionnaly given at each vertex (See the Orientate() methods).
+
+        :param maxVertexs:
+        :type maxVertexs: Standard_Integer
+        :param maxBounds: default value is 0
+        :type maxBounds: Standard_Integer
+        :param maxEdges: default value is 0
+        :type maxEdges: Standard_Integer
+        :param hasVNormals: default value is Standard_False
+        :type hasVNormals: bool
+        :param hasVColors: default value is Standard_False
+        :type hasVColors: bool
+        :param hasBColors: default value is Standard_False
+        :type hasBColors: bool
+        :param hasTexels: default value is Standard_False
+        :type hasTexels: bool
+        :param hasEdgeInfos: default value is Standard_False
+        :type hasEdgeInfos: bool
+        :rtype: None
+
+        * Creates an array of polygons, a polygon can be filled as: 1) creating a single polygon defined with his vertexs. i.e: myArray = Graphic3d_ArrayOfPolygons(7) myArray->AddVertex(x1,y1,z1) //!	.... myArray->AddVertex(x7,y7,z7) 2) creating separate polygons defined with a predefined number of bounds and the number of vertex per bound. i.e: myArray = Graphic3d_ArrayOfPolygons(7,2) myArray->AddBound(4) myArray->AddVertex(x1,y1,z1) //!	.... myArray->AddVertex(x4,y4,z4) myArray->AddBound(3) myArray->AddVertex(x5,y5,z5) //!	.... myArray->AddVertex(x7,y7,z7) 3) creating a single indexed polygon defined with his vertex ans edges. i.e: myArray = Graphic3d_ArrayOfPolygons(4,0,6) myArray->AddVertex(x1,y1,z1) //!	.... myArray->AddVertex(x4,y4,z4) myArray->AddEdge(1) myArray->AddEdge(2) myArray->AddEdge(3) myArray->AddEdge(1) myArray->AddEdge(2) myArray->AddEdge(4) 4) creating separate polygons defined with a predefined number of bounds and the number of edges per bound. i.e: myArray = Graphic3d_ArrayOfPolygons(6,4,14) myArray->AddBound(3) myArray->AddVertex(x1,y1,z1) myArray->AddVertex(x2,y2,z2) myArray->AddVertex(x3,y3,z3) myArray->AddEdge(1) myArray->AddEdge(2) myArray->AddEdge(3) myArray->AddBound(3) myArray->AddVertex(x4,y4,z4) myArray->AddVertex(x5,y5,z5) myArray->AddVertex(x6,y6,z6) myArray->AddEdge(4) myArray->AddEdge(5) myArray->AddEdge(6) myArray->AddBound(4) myArray->AddEdge(2) myArray->AddEdge(3) myArray->AddEdge(5) myArray->AddEdge(6) myArray->AddBound(4) myArray->AddEdge(1) myArray->AddEdge(3) myArray->AddEdge(5) myArray->AddEdge(4) <maxVertexs> defined the maximun allowed vertex number in the array. <maxBounds> defined the maximun allowed bound number in the array. <maxEdges> defined the maximun allowed edge number in the array. Warning: When <hasVNormals> is True , you must use one of //!	AddVertex(Point,Normal) or AddVertex(Point,Normal,Color) or AddVertex(Point,Normal,Texel) methods. When <hasVColors> is True , you must use one of //!	AddVertex(Point,Color) or AddVertex(Point,Normal,Color) methods. When <hasTexels> is True , you must use one of //!	AddVertex(Point,Texel) or AddVertex(Point,Normal,Texel) methods. When <hasBColors> is True , <maxBounds> must be > 0 and //!	you must use the //!	AddBound(number,Color) method. When <hasEdgeInfos> is True , <maxEdges> must be > 0 and //!	you must use the //!	AddEdge(number,visibillity) method. Warning: the user is responsible about the orientation of the polygon depending of the order of the created vertex or edges and this orientation must be coherent with the vertex normal optionnaly given at each vertex (See the Orientate() methods).
+
+        :param maxVertexs:
+        :type maxVertexs: Standard_Integer
+        :param maxBounds: default value is 0
+        :type maxBounds: Standard_Integer
+        :param maxEdges: default value is 0
+        :type maxEdges: Standard_Integer
         :param hasVNormals: default value is Standard_False
         :type hasVNormals: bool
         :param hasVColors: default value is Standard_False
@@ -11202,11 +11946,11 @@ class Graphic3d_ArrayOfPolygons(Graphic3d_ArrayOfPrimitives):
 
         """
         _Graphic3d.Graphic3d_ArrayOfPolygons_swiginit(self,_Graphic3d.new_Graphic3d_ArrayOfPolygons(*args))
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Graphic3d_ArrayOfPolygons self)"""
         return _Graphic3d.Graphic3d_ArrayOfPolygons__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Graphic3d_ArrayOfPolygons" :
+    def GetHandle(self):
         """GetHandle(Graphic3d_ArrayOfPolygons self) -> Handle_Graphic3d_ArrayOfPolygons"""
         return _Graphic3d.Graphic3d_ArrayOfPolygons_GetHandle(self)
 
@@ -11244,7 +11988,7 @@ Handle_Graphic3d_ArrayOfPolygons._kill_pointed = new_instancemethod(_Graphic3d.H
 Handle_Graphic3d_ArrayOfPolygons_swigregister = _Graphic3d.Handle_Graphic3d_ArrayOfPolygons_swigregister
 Handle_Graphic3d_ArrayOfPolygons_swigregister(Handle_Graphic3d_ArrayOfPolygons)
 
-def Handle_Graphic3d_ArrayOfPolygons_DownCast(*args) -> "Handle_Graphic3d_ArrayOfPolygons const" :
+def Handle_Graphic3d_ArrayOfPolygons_DownCast(*args):
   return _Graphic3d.Handle_Graphic3d_ArrayOfPolygons_DownCast(*args)
 Handle_Graphic3d_ArrayOfPolygons_DownCast = _Graphic3d.Handle_Graphic3d_ArrayOfPolygons_DownCast
 
@@ -11256,11 +12000,91 @@ class Graphic3d_ArrayOfPolylines(Graphic3d_ArrayOfPrimitives):
         * Creates an array of polylines, a polyline can be filled as: 1) creating a single polyline defined with his vertexs. i.e: myArray = Graphic3d_ArrayOfPolylines(7) myArray->AddVertex(x1,y1,z1) .... myArray->AddVertex(x7,y7,z7) 2) creating separate polylines defined with a predefined number of bounds and the number of vertex per bound. i.e: myArray = Graphic3d_ArrayOfPolylines(7,2) myArray->AddBound(4) myArray->AddVertex(x1,y1,z1) .... myArray->AddVertex(x4,y4,z4) myArray->AddBound(3) myArray->AddVertex(x5,y5,z5) .... myArray->AddVertex(x7,y7,z7) 3) creating a single indexed polyline defined with his vertex ans edges. i.e: myArray = Graphic3d_ArrayOfPolylines(4,0,6) myArray->AddVertex(x1,y1,z1) .... myArray->AddVertex(x4,y4,z4) myArray->AddEdge(1) myArray->AddEdge(2) myArray->AddEdge(3) myArray->AddEdge(1) myArray->AddEdge(2) myArray->AddEdge(4) 4) creating separate polylines defined with a predefined number of bounds and the number of edges per bound. i.e: myArray = Graphic3d_ArrayOfPolylines(6,4,14) myArray->AddBound(3) myArray->AddVertex(x1,y1,z1) myArray->AddVertex(x2,y2,z2) myArray->AddVertex(x3,y3,z3) myArray->AddEdge(1) myArray->AddEdge(2) myArray->AddEdge(3) myArray->AddBound(3) myArray->AddVertex(x4,y4,z4) myArray->AddVertex(x5,y5,z5) myArray->AddVertex(x6,y6,z6) myArray->AddEdge(4) myArray->AddEdge(5) myArray->AddEdge(6) myArray->AddBound(4) myArray->AddEdge(2) myArray->AddEdge(3) myArray->AddEdge(5) myArray->AddEdge(6) myArray->AddBound(4) myArray->AddEdge(1) myArray->AddEdge(3) myArray->AddEdge(5) myArray->AddEdge(4) <maxVertexs> defined the maximun allowed vertex number in the array. <maxBounds> defined the maximun allowed bound number in the array. <maxEdges> defined the maximun allowed edge number in the array. Warning: When <hasVColors> is True , you must use one of AddVertex(Point,Color) or AddVertex(Point,Normal,Color) methods. When <hasBColors> is True , <maxBounds> must be > 0 and you must use the AddBound(number,Color) method. When <hasEdgeInfos> is True , <maxEdges> must be > 0 and you must use the AddEdge(number,visibillity) method.
 
         :param maxVertexs:
-        :type maxVertexs: int
+        :type maxVertexs: Standard_Integer
         :param maxBounds: default value is 0
-        :type maxBounds: int
+        :type maxBounds: Standard_Integer
         :param maxEdges: default value is 0
-        :type maxEdges: int
+        :type maxEdges: Standard_Integer
+        :param hasVColors: default value is Standard_False
+        :type hasVColors: bool
+        :param hasBColors: default value is Standard_False
+        :type hasBColors: bool
+        :param hasEdgeInfos: default value is Standard_False
+        :type hasEdgeInfos: bool
+        :rtype: None
+
+        * Creates an array of polylines, a polyline can be filled as: 1) creating a single polyline defined with his vertexs. i.e: myArray = Graphic3d_ArrayOfPolylines(7) myArray->AddVertex(x1,y1,z1) .... myArray->AddVertex(x7,y7,z7) 2) creating separate polylines defined with a predefined number of bounds and the number of vertex per bound. i.e: myArray = Graphic3d_ArrayOfPolylines(7,2) myArray->AddBound(4) myArray->AddVertex(x1,y1,z1) .... myArray->AddVertex(x4,y4,z4) myArray->AddBound(3) myArray->AddVertex(x5,y5,z5) .... myArray->AddVertex(x7,y7,z7) 3) creating a single indexed polyline defined with his vertex ans edges. i.e: myArray = Graphic3d_ArrayOfPolylines(4,0,6) myArray->AddVertex(x1,y1,z1) .... myArray->AddVertex(x4,y4,z4) myArray->AddEdge(1) myArray->AddEdge(2) myArray->AddEdge(3) myArray->AddEdge(1) myArray->AddEdge(2) myArray->AddEdge(4) 4) creating separate polylines defined with a predefined number of bounds and the number of edges per bound. i.e: myArray = Graphic3d_ArrayOfPolylines(6,4,14) myArray->AddBound(3) myArray->AddVertex(x1,y1,z1) myArray->AddVertex(x2,y2,z2) myArray->AddVertex(x3,y3,z3) myArray->AddEdge(1) myArray->AddEdge(2) myArray->AddEdge(3) myArray->AddBound(3) myArray->AddVertex(x4,y4,z4) myArray->AddVertex(x5,y5,z5) myArray->AddVertex(x6,y6,z6) myArray->AddEdge(4) myArray->AddEdge(5) myArray->AddEdge(6) myArray->AddBound(4) myArray->AddEdge(2) myArray->AddEdge(3) myArray->AddEdge(5) myArray->AddEdge(6) myArray->AddBound(4) myArray->AddEdge(1) myArray->AddEdge(3) myArray->AddEdge(5) myArray->AddEdge(4) <maxVertexs> defined the maximun allowed vertex number in the array. <maxBounds> defined the maximun allowed bound number in the array. <maxEdges> defined the maximun allowed edge number in the array. Warning: When <hasVColors> is True , you must use one of AddVertex(Point,Color) or AddVertex(Point,Normal,Color) methods. When <hasBColors> is True , <maxBounds> must be > 0 and you must use the AddBound(number,Color) method. When <hasEdgeInfos> is True , <maxEdges> must be > 0 and you must use the AddEdge(number,visibillity) method.
+
+        :param maxVertexs:
+        :type maxVertexs: Standard_Integer
+        :param maxBounds: default value is 0
+        :type maxBounds: Standard_Integer
+        :param maxEdges: default value is 0
+        :type maxEdges: Standard_Integer
+        :param hasVColors: default value is Standard_False
+        :type hasVColors: bool
+        :param hasBColors: default value is Standard_False
+        :type hasBColors: bool
+        :param hasEdgeInfos: default value is Standard_False
+        :type hasEdgeInfos: bool
+        :rtype: None
+
+        * Creates an array of polylines, a polyline can be filled as: 1) creating a single polyline defined with his vertexs. i.e: myArray = Graphic3d_ArrayOfPolylines(7) myArray->AddVertex(x1,y1,z1) .... myArray->AddVertex(x7,y7,z7) 2) creating separate polylines defined with a predefined number of bounds and the number of vertex per bound. i.e: myArray = Graphic3d_ArrayOfPolylines(7,2) myArray->AddBound(4) myArray->AddVertex(x1,y1,z1) .... myArray->AddVertex(x4,y4,z4) myArray->AddBound(3) myArray->AddVertex(x5,y5,z5) .... myArray->AddVertex(x7,y7,z7) 3) creating a single indexed polyline defined with his vertex ans edges. i.e: myArray = Graphic3d_ArrayOfPolylines(4,0,6) myArray->AddVertex(x1,y1,z1) .... myArray->AddVertex(x4,y4,z4) myArray->AddEdge(1) myArray->AddEdge(2) myArray->AddEdge(3) myArray->AddEdge(1) myArray->AddEdge(2) myArray->AddEdge(4) 4) creating separate polylines defined with a predefined number of bounds and the number of edges per bound. i.e: myArray = Graphic3d_ArrayOfPolylines(6,4,14) myArray->AddBound(3) myArray->AddVertex(x1,y1,z1) myArray->AddVertex(x2,y2,z2) myArray->AddVertex(x3,y3,z3) myArray->AddEdge(1) myArray->AddEdge(2) myArray->AddEdge(3) myArray->AddBound(3) myArray->AddVertex(x4,y4,z4) myArray->AddVertex(x5,y5,z5) myArray->AddVertex(x6,y6,z6) myArray->AddEdge(4) myArray->AddEdge(5) myArray->AddEdge(6) myArray->AddBound(4) myArray->AddEdge(2) myArray->AddEdge(3) myArray->AddEdge(5) myArray->AddEdge(6) myArray->AddBound(4) myArray->AddEdge(1) myArray->AddEdge(3) myArray->AddEdge(5) myArray->AddEdge(4) <maxVertexs> defined the maximun allowed vertex number in the array. <maxBounds> defined the maximun allowed bound number in the array. <maxEdges> defined the maximun allowed edge number in the array. Warning: When <hasVColors> is True , you must use one of AddVertex(Point,Color) or AddVertex(Point,Normal,Color) methods. When <hasBColors> is True , <maxBounds> must be > 0 and you must use the AddBound(number,Color) method. When <hasEdgeInfos> is True , <maxEdges> must be > 0 and you must use the AddEdge(number,visibillity) method.
+
+        :param maxVertexs:
+        :type maxVertexs: Standard_Integer
+        :param maxBounds: default value is 0
+        :type maxBounds: Standard_Integer
+        :param maxEdges: default value is 0
+        :type maxEdges: Standard_Integer
+        :param hasVColors: default value is Standard_False
+        :type hasVColors: bool
+        :param hasBColors: default value is Standard_False
+        :type hasBColors: bool
+        :param hasEdgeInfos: default value is Standard_False
+        :type hasEdgeInfos: bool
+        :rtype: None
+
+        * Creates an array of polylines, a polyline can be filled as: 1) creating a single polyline defined with his vertexs. i.e: myArray = Graphic3d_ArrayOfPolylines(7) myArray->AddVertex(x1,y1,z1) .... myArray->AddVertex(x7,y7,z7) 2) creating separate polylines defined with a predefined number of bounds and the number of vertex per bound. i.e: myArray = Graphic3d_ArrayOfPolylines(7,2) myArray->AddBound(4) myArray->AddVertex(x1,y1,z1) .... myArray->AddVertex(x4,y4,z4) myArray->AddBound(3) myArray->AddVertex(x5,y5,z5) .... myArray->AddVertex(x7,y7,z7) 3) creating a single indexed polyline defined with his vertex ans edges. i.e: myArray = Graphic3d_ArrayOfPolylines(4,0,6) myArray->AddVertex(x1,y1,z1) .... myArray->AddVertex(x4,y4,z4) myArray->AddEdge(1) myArray->AddEdge(2) myArray->AddEdge(3) myArray->AddEdge(1) myArray->AddEdge(2) myArray->AddEdge(4) 4) creating separate polylines defined with a predefined number of bounds and the number of edges per bound. i.e: myArray = Graphic3d_ArrayOfPolylines(6,4,14) myArray->AddBound(3) myArray->AddVertex(x1,y1,z1) myArray->AddVertex(x2,y2,z2) myArray->AddVertex(x3,y3,z3) myArray->AddEdge(1) myArray->AddEdge(2) myArray->AddEdge(3) myArray->AddBound(3) myArray->AddVertex(x4,y4,z4) myArray->AddVertex(x5,y5,z5) myArray->AddVertex(x6,y6,z6) myArray->AddEdge(4) myArray->AddEdge(5) myArray->AddEdge(6) myArray->AddBound(4) myArray->AddEdge(2) myArray->AddEdge(3) myArray->AddEdge(5) myArray->AddEdge(6) myArray->AddBound(4) myArray->AddEdge(1) myArray->AddEdge(3) myArray->AddEdge(5) myArray->AddEdge(4) <maxVertexs> defined the maximun allowed vertex number in the array. <maxBounds> defined the maximun allowed bound number in the array. <maxEdges> defined the maximun allowed edge number in the array. Warning: When <hasVColors> is True , you must use one of AddVertex(Point,Color) or AddVertex(Point,Normal,Color) methods. When <hasBColors> is True , <maxBounds> must be > 0 and you must use the AddBound(number,Color) method. When <hasEdgeInfos> is True , <maxEdges> must be > 0 and you must use the AddEdge(number,visibillity) method.
+
+        :param maxVertexs:
+        :type maxVertexs: Standard_Integer
+        :param maxBounds: default value is 0
+        :type maxBounds: Standard_Integer
+        :param maxEdges: default value is 0
+        :type maxEdges: Standard_Integer
+        :param hasVColors: default value is Standard_False
+        :type hasVColors: bool
+        :param hasBColors: default value is Standard_False
+        :type hasBColors: bool
+        :param hasEdgeInfos: default value is Standard_False
+        :type hasEdgeInfos: bool
+        :rtype: None
+
+        * Creates an array of polylines, a polyline can be filled as: 1) creating a single polyline defined with his vertexs. i.e: myArray = Graphic3d_ArrayOfPolylines(7) myArray->AddVertex(x1,y1,z1) .... myArray->AddVertex(x7,y7,z7) 2) creating separate polylines defined with a predefined number of bounds and the number of vertex per bound. i.e: myArray = Graphic3d_ArrayOfPolylines(7,2) myArray->AddBound(4) myArray->AddVertex(x1,y1,z1) .... myArray->AddVertex(x4,y4,z4) myArray->AddBound(3) myArray->AddVertex(x5,y5,z5) .... myArray->AddVertex(x7,y7,z7) 3) creating a single indexed polyline defined with his vertex ans edges. i.e: myArray = Graphic3d_ArrayOfPolylines(4,0,6) myArray->AddVertex(x1,y1,z1) .... myArray->AddVertex(x4,y4,z4) myArray->AddEdge(1) myArray->AddEdge(2) myArray->AddEdge(3) myArray->AddEdge(1) myArray->AddEdge(2) myArray->AddEdge(4) 4) creating separate polylines defined with a predefined number of bounds and the number of edges per bound. i.e: myArray = Graphic3d_ArrayOfPolylines(6,4,14) myArray->AddBound(3) myArray->AddVertex(x1,y1,z1) myArray->AddVertex(x2,y2,z2) myArray->AddVertex(x3,y3,z3) myArray->AddEdge(1) myArray->AddEdge(2) myArray->AddEdge(3) myArray->AddBound(3) myArray->AddVertex(x4,y4,z4) myArray->AddVertex(x5,y5,z5) myArray->AddVertex(x6,y6,z6) myArray->AddEdge(4) myArray->AddEdge(5) myArray->AddEdge(6) myArray->AddBound(4) myArray->AddEdge(2) myArray->AddEdge(3) myArray->AddEdge(5) myArray->AddEdge(6) myArray->AddBound(4) myArray->AddEdge(1) myArray->AddEdge(3) myArray->AddEdge(5) myArray->AddEdge(4) <maxVertexs> defined the maximun allowed vertex number in the array. <maxBounds> defined the maximun allowed bound number in the array. <maxEdges> defined the maximun allowed edge number in the array. Warning: When <hasVColors> is True , you must use one of AddVertex(Point,Color) or AddVertex(Point,Normal,Color) methods. When <hasBColors> is True , <maxBounds> must be > 0 and you must use the AddBound(number,Color) method. When <hasEdgeInfos> is True , <maxEdges> must be > 0 and you must use the AddEdge(number,visibillity) method.
+
+        :param maxVertexs:
+        :type maxVertexs: Standard_Integer
+        :param maxBounds: default value is 0
+        :type maxBounds: Standard_Integer
+        :param maxEdges: default value is 0
+        :type maxEdges: Standard_Integer
+        :param hasVColors: default value is Standard_False
+        :type hasVColors: bool
+        :param hasBColors: default value is Standard_False
+        :type hasBColors: bool
+        :param hasEdgeInfos: default value is Standard_False
+        :type hasEdgeInfos: bool
+        :rtype: None
+
+        * Creates an array of polylines, a polyline can be filled as: 1) creating a single polyline defined with his vertexs. i.e: myArray = Graphic3d_ArrayOfPolylines(7) myArray->AddVertex(x1,y1,z1) .... myArray->AddVertex(x7,y7,z7) 2) creating separate polylines defined with a predefined number of bounds and the number of vertex per bound. i.e: myArray = Graphic3d_ArrayOfPolylines(7,2) myArray->AddBound(4) myArray->AddVertex(x1,y1,z1) .... myArray->AddVertex(x4,y4,z4) myArray->AddBound(3) myArray->AddVertex(x5,y5,z5) .... myArray->AddVertex(x7,y7,z7) 3) creating a single indexed polyline defined with his vertex ans edges. i.e: myArray = Graphic3d_ArrayOfPolylines(4,0,6) myArray->AddVertex(x1,y1,z1) .... myArray->AddVertex(x4,y4,z4) myArray->AddEdge(1) myArray->AddEdge(2) myArray->AddEdge(3) myArray->AddEdge(1) myArray->AddEdge(2) myArray->AddEdge(4) 4) creating separate polylines defined with a predefined number of bounds and the number of edges per bound. i.e: myArray = Graphic3d_ArrayOfPolylines(6,4,14) myArray->AddBound(3) myArray->AddVertex(x1,y1,z1) myArray->AddVertex(x2,y2,z2) myArray->AddVertex(x3,y3,z3) myArray->AddEdge(1) myArray->AddEdge(2) myArray->AddEdge(3) myArray->AddBound(3) myArray->AddVertex(x4,y4,z4) myArray->AddVertex(x5,y5,z5) myArray->AddVertex(x6,y6,z6) myArray->AddEdge(4) myArray->AddEdge(5) myArray->AddEdge(6) myArray->AddBound(4) myArray->AddEdge(2) myArray->AddEdge(3) myArray->AddEdge(5) myArray->AddEdge(6) myArray->AddBound(4) myArray->AddEdge(1) myArray->AddEdge(3) myArray->AddEdge(5) myArray->AddEdge(4) <maxVertexs> defined the maximun allowed vertex number in the array. <maxBounds> defined the maximun allowed bound number in the array. <maxEdges> defined the maximun allowed edge number in the array. Warning: When <hasVColors> is True , you must use one of AddVertex(Point,Color) or AddVertex(Point,Normal,Color) methods. When <hasBColors> is True , <maxBounds> must be > 0 and you must use the AddBound(number,Color) method. When <hasEdgeInfos> is True , <maxEdges> must be > 0 and you must use the AddEdge(number,visibillity) method.
+
+        :param maxVertexs:
+        :type maxVertexs: Standard_Integer
+        :param maxBounds: default value is 0
+        :type maxBounds: Standard_Integer
+        :param maxEdges: default value is 0
+        :type maxEdges: Standard_Integer
         :param hasVColors: default value is Standard_False
         :type hasVColors: bool
         :param hasBColors: default value is Standard_False
@@ -11271,11 +12095,11 @@ class Graphic3d_ArrayOfPolylines(Graphic3d_ArrayOfPrimitives):
 
         """
         _Graphic3d.Graphic3d_ArrayOfPolylines_swiginit(self,_Graphic3d.new_Graphic3d_ArrayOfPolylines(*args))
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Graphic3d_ArrayOfPolylines self)"""
         return _Graphic3d.Graphic3d_ArrayOfPolylines__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Graphic3d_ArrayOfPolylines" :
+    def GetHandle(self):
         """GetHandle(Graphic3d_ArrayOfPolylines self) -> Handle_Graphic3d_ArrayOfPolylines"""
         return _Graphic3d.Graphic3d_ArrayOfPolylines_GetHandle(self)
 
@@ -11313,7 +12137,7 @@ Handle_Graphic3d_ArrayOfPolylines._kill_pointed = new_instancemethod(_Graphic3d.
 Handle_Graphic3d_ArrayOfPolylines_swigregister = _Graphic3d.Handle_Graphic3d_ArrayOfPolylines_swigregister
 Handle_Graphic3d_ArrayOfPolylines_swigregister(Handle_Graphic3d_ArrayOfPolylines)
 
-def Handle_Graphic3d_ArrayOfPolylines_DownCast(*args) -> "Handle_Graphic3d_ArrayOfPolylines const" :
+def Handle_Graphic3d_ArrayOfPolylines_DownCast(*args):
   return _Graphic3d.Handle_Graphic3d_ArrayOfPolylines_DownCast(*args)
 Handle_Graphic3d_ArrayOfPolylines_DownCast = _Graphic3d.Handle_Graphic3d_ArrayOfPolylines_DownCast
 
@@ -11325,9 +12149,89 @@ class Graphic3d_ArrayOfQuadrangleStrips(Graphic3d_ArrayOfPrimitives):
         * Creates an array of quadrangle strips, a polygon can be filled as: 1) creating a single strip defined with his vertexs. i.e: myArray = Graphic3d_ArrayOfQuadrangleStrips(7) myArray->AddVertex(x1,y1,z1) //!	.... myArray->AddVertex(x7,y7,z7) 2) creating separate strips defined with a predefined number of strips and the number of vertex per strip. i.e: myArray = Graphic3d_ArrayOfQuadrangleStrips(8,2) myArray->AddBound(4) myArray->AddVertex(x1,y1,z1) //!	.... myArray->AddVertex(x4,y4,z4) myArray->AddBound(4) myArray->AddVertex(x5,y5,z5) //!	.... myArray->AddVertex(x8,y8,z8) <maxVertexs> defined the maximun allowed vertex number in the array. <maxStrips> defined the maximun allowed strip number in the array. The number of quadrangle really drawn is : VertexNumber()/2-Min(1,BoundNumber())
 
         :param maxVertexs:
-        :type maxVertexs: int
+        :type maxVertexs: Standard_Integer
         :param maxStrips: default value is 0
-        :type maxStrips: int
+        :type maxStrips: Standard_Integer
+        :param hasVNormals: default value is Standard_False
+        :type hasVNormals: bool
+        :param hasVColors: default value is Standard_False
+        :type hasVColors: bool
+        :param hasSColors: default value is Standard_False
+        :type hasSColors: bool
+        :param hasTexels: default value is Standard_False
+        :type hasTexels: bool
+        :rtype: None
+
+        * Creates an array of quadrangle strips, a polygon can be filled as: 1) creating a single strip defined with his vertexs. i.e: myArray = Graphic3d_ArrayOfQuadrangleStrips(7) myArray->AddVertex(x1,y1,z1) //!	.... myArray->AddVertex(x7,y7,z7) 2) creating separate strips defined with a predefined number of strips and the number of vertex per strip. i.e: myArray = Graphic3d_ArrayOfQuadrangleStrips(8,2) myArray->AddBound(4) myArray->AddVertex(x1,y1,z1) //!	.... myArray->AddVertex(x4,y4,z4) myArray->AddBound(4) myArray->AddVertex(x5,y5,z5) //!	.... myArray->AddVertex(x8,y8,z8) <maxVertexs> defined the maximun allowed vertex number in the array. <maxStrips> defined the maximun allowed strip number in the array. The number of quadrangle really drawn is : VertexNumber()/2-Min(1,BoundNumber())
+
+        :param maxVertexs:
+        :type maxVertexs: Standard_Integer
+        :param maxStrips: default value is 0
+        :type maxStrips: Standard_Integer
+        :param hasVNormals: default value is Standard_False
+        :type hasVNormals: bool
+        :param hasVColors: default value is Standard_False
+        :type hasVColors: bool
+        :param hasSColors: default value is Standard_False
+        :type hasSColors: bool
+        :param hasTexels: default value is Standard_False
+        :type hasTexels: bool
+        :rtype: None
+
+        * Creates an array of quadrangle strips, a polygon can be filled as: 1) creating a single strip defined with his vertexs. i.e: myArray = Graphic3d_ArrayOfQuadrangleStrips(7) myArray->AddVertex(x1,y1,z1) //!	.... myArray->AddVertex(x7,y7,z7) 2) creating separate strips defined with a predefined number of strips and the number of vertex per strip. i.e: myArray = Graphic3d_ArrayOfQuadrangleStrips(8,2) myArray->AddBound(4) myArray->AddVertex(x1,y1,z1) //!	.... myArray->AddVertex(x4,y4,z4) myArray->AddBound(4) myArray->AddVertex(x5,y5,z5) //!	.... myArray->AddVertex(x8,y8,z8) <maxVertexs> defined the maximun allowed vertex number in the array. <maxStrips> defined the maximun allowed strip number in the array. The number of quadrangle really drawn is : VertexNumber()/2-Min(1,BoundNumber())
+
+        :param maxVertexs:
+        :type maxVertexs: Standard_Integer
+        :param maxStrips: default value is 0
+        :type maxStrips: Standard_Integer
+        :param hasVNormals: default value is Standard_False
+        :type hasVNormals: bool
+        :param hasVColors: default value is Standard_False
+        :type hasVColors: bool
+        :param hasSColors: default value is Standard_False
+        :type hasSColors: bool
+        :param hasTexels: default value is Standard_False
+        :type hasTexels: bool
+        :rtype: None
+
+        * Creates an array of quadrangle strips, a polygon can be filled as: 1) creating a single strip defined with his vertexs. i.e: myArray = Graphic3d_ArrayOfQuadrangleStrips(7) myArray->AddVertex(x1,y1,z1) //!	.... myArray->AddVertex(x7,y7,z7) 2) creating separate strips defined with a predefined number of strips and the number of vertex per strip. i.e: myArray = Graphic3d_ArrayOfQuadrangleStrips(8,2) myArray->AddBound(4) myArray->AddVertex(x1,y1,z1) //!	.... myArray->AddVertex(x4,y4,z4) myArray->AddBound(4) myArray->AddVertex(x5,y5,z5) //!	.... myArray->AddVertex(x8,y8,z8) <maxVertexs> defined the maximun allowed vertex number in the array. <maxStrips> defined the maximun allowed strip number in the array. The number of quadrangle really drawn is : VertexNumber()/2-Min(1,BoundNumber())
+
+        :param maxVertexs:
+        :type maxVertexs: Standard_Integer
+        :param maxStrips: default value is 0
+        :type maxStrips: Standard_Integer
+        :param hasVNormals: default value is Standard_False
+        :type hasVNormals: bool
+        :param hasVColors: default value is Standard_False
+        :type hasVColors: bool
+        :param hasSColors: default value is Standard_False
+        :type hasSColors: bool
+        :param hasTexels: default value is Standard_False
+        :type hasTexels: bool
+        :rtype: None
+
+        * Creates an array of quadrangle strips, a polygon can be filled as: 1) creating a single strip defined with his vertexs. i.e: myArray = Graphic3d_ArrayOfQuadrangleStrips(7) myArray->AddVertex(x1,y1,z1) //!	.... myArray->AddVertex(x7,y7,z7) 2) creating separate strips defined with a predefined number of strips and the number of vertex per strip. i.e: myArray = Graphic3d_ArrayOfQuadrangleStrips(8,2) myArray->AddBound(4) myArray->AddVertex(x1,y1,z1) //!	.... myArray->AddVertex(x4,y4,z4) myArray->AddBound(4) myArray->AddVertex(x5,y5,z5) //!	.... myArray->AddVertex(x8,y8,z8) <maxVertexs> defined the maximun allowed vertex number in the array. <maxStrips> defined the maximun allowed strip number in the array. The number of quadrangle really drawn is : VertexNumber()/2-Min(1,BoundNumber())
+
+        :param maxVertexs:
+        :type maxVertexs: Standard_Integer
+        :param maxStrips: default value is 0
+        :type maxStrips: Standard_Integer
+        :param hasVNormals: default value is Standard_False
+        :type hasVNormals: bool
+        :param hasVColors: default value is Standard_False
+        :type hasVColors: bool
+        :param hasSColors: default value is Standard_False
+        :type hasSColors: bool
+        :param hasTexels: default value is Standard_False
+        :type hasTexels: bool
+        :rtype: None
+
+        * Creates an array of quadrangle strips, a polygon can be filled as: 1) creating a single strip defined with his vertexs. i.e: myArray = Graphic3d_ArrayOfQuadrangleStrips(7) myArray->AddVertex(x1,y1,z1) //!	.... myArray->AddVertex(x7,y7,z7) 2) creating separate strips defined with a predefined number of strips and the number of vertex per strip. i.e: myArray = Graphic3d_ArrayOfQuadrangleStrips(8,2) myArray->AddBound(4) myArray->AddVertex(x1,y1,z1) //!	.... myArray->AddVertex(x4,y4,z4) myArray->AddBound(4) myArray->AddVertex(x5,y5,z5) //!	.... myArray->AddVertex(x8,y8,z8) <maxVertexs> defined the maximun allowed vertex number in the array. <maxStrips> defined the maximun allowed strip number in the array. The number of quadrangle really drawn is : VertexNumber()/2-Min(1,BoundNumber())
+
+        :param maxVertexs:
+        :type maxVertexs: Standard_Integer
+        :param maxStrips: default value is 0
+        :type maxStrips: Standard_Integer
         :param hasVNormals: default value is Standard_False
         :type hasVNormals: bool
         :param hasVColors: default value is Standard_False
@@ -11340,11 +12244,11 @@ class Graphic3d_ArrayOfQuadrangleStrips(Graphic3d_ArrayOfPrimitives):
 
         """
         _Graphic3d.Graphic3d_ArrayOfQuadrangleStrips_swiginit(self,_Graphic3d.new_Graphic3d_ArrayOfQuadrangleStrips(*args))
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Graphic3d_ArrayOfQuadrangleStrips self)"""
         return _Graphic3d.Graphic3d_ArrayOfQuadrangleStrips__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Graphic3d_ArrayOfQuadrangleStrips" :
+    def GetHandle(self):
         """GetHandle(Graphic3d_ArrayOfQuadrangleStrips self) -> Handle_Graphic3d_ArrayOfQuadrangleStrips"""
         return _Graphic3d.Graphic3d_ArrayOfQuadrangleStrips_GetHandle(self)
 
@@ -11382,7 +12286,7 @@ Handle_Graphic3d_ArrayOfQuadrangleStrips._kill_pointed = new_instancemethod(_Gra
 Handle_Graphic3d_ArrayOfQuadrangleStrips_swigregister = _Graphic3d.Handle_Graphic3d_ArrayOfQuadrangleStrips_swigregister
 Handle_Graphic3d_ArrayOfQuadrangleStrips_swigregister(Handle_Graphic3d_ArrayOfQuadrangleStrips)
 
-def Handle_Graphic3d_ArrayOfQuadrangleStrips_DownCast(*args) -> "Handle_Graphic3d_ArrayOfQuadrangleStrips const" :
+def Handle_Graphic3d_ArrayOfQuadrangleStrips_DownCast(*args):
   return _Graphic3d.Handle_Graphic3d_ArrayOfQuadrangleStrips_DownCast(*args)
 Handle_Graphic3d_ArrayOfQuadrangleStrips_DownCast = _Graphic3d.Handle_Graphic3d_ArrayOfQuadrangleStrips_DownCast
 
@@ -11394,9 +12298,89 @@ class Graphic3d_ArrayOfQuadrangles(Graphic3d_ArrayOfPrimitives):
         * Creates an array of quadrangles, a quadrangle can be filled as: 1) creating a set of quadrangles defined with his vertexs. i.e: myArray = Graphic3d_ArrayOfQuadrangles(8) myArray->AddVertex(x1,y1,z1) //!	.... myArray->AddVertex(x8,y8,z8) 3) creating a set of indexed quadrangles defined with his vertex ans edges. i.e: myArray = Graphic3d_ArrayOfQuadrangles(6,8) myArray->AddVertex(x1,y1,z1) //!	.... myArray->AddVertex(x6,y6,z6) myArray->AddEdge(1) myArray->AddEdge(2) myArray->AddEdge(3) myArray->AddEdge(4) myArray->AddEdge(3) myArray->AddEdge(4) myArray->AddEdge(5) myArray->AddEdge(6) <maxVertexs> defined the maximun allowed vertex number in the array. <maxEdges> defined the maximun allowed edge number in the array. Warning: When <hasVNormals> is True , you must use one of //!	AddVertex(Point,Normal) or AddVertex(Point,Normal,Color) or AddVertex(Point,Normal,Texel) methods. When <hasVColors> is True , you must use one of //!	AddVertex(Point,Color) or AddVertex(Point,Normal,Color) methods. When <hasTexels> is True , you must use one of //!	AddVertex(Point,Texel) or AddVertex(Point,Normal,Texel) methods. When <hasEdgeInfos> is True , <maxEdges> must be > 0 and //!	you must use the //!	AddEdge(number,visibillity) method. Warning: the user is responsible about the orientation of the quadrangle depending of the order of the created vertex or edges and this orientation must be coherent with the vertex normal optionnaly given at each vertex (See the Orientate() methods).
 
         :param maxVertexs:
-        :type maxVertexs: int
+        :type maxVertexs: Standard_Integer
         :param maxEdges: default value is 0
-        :type maxEdges: int
+        :type maxEdges: Standard_Integer
+        :param hasVNormals: default value is Standard_False
+        :type hasVNormals: bool
+        :param hasVColors: default value is Standard_False
+        :type hasVColors: bool
+        :param hasTexels: default value is Standard_False
+        :type hasTexels: bool
+        :param hasEdgeInfos: default value is Standard_False
+        :type hasEdgeInfos: bool
+        :rtype: None
+
+        * Creates an array of quadrangles, a quadrangle can be filled as: 1) creating a set of quadrangles defined with his vertexs. i.e: myArray = Graphic3d_ArrayOfQuadrangles(8) myArray->AddVertex(x1,y1,z1) //!	.... myArray->AddVertex(x8,y8,z8) 3) creating a set of indexed quadrangles defined with his vertex ans edges. i.e: myArray = Graphic3d_ArrayOfQuadrangles(6,8) myArray->AddVertex(x1,y1,z1) //!	.... myArray->AddVertex(x6,y6,z6) myArray->AddEdge(1) myArray->AddEdge(2) myArray->AddEdge(3) myArray->AddEdge(4) myArray->AddEdge(3) myArray->AddEdge(4) myArray->AddEdge(5) myArray->AddEdge(6) <maxVertexs> defined the maximun allowed vertex number in the array. <maxEdges> defined the maximun allowed edge number in the array. Warning: When <hasVNormals> is True , you must use one of //!	AddVertex(Point,Normal) or AddVertex(Point,Normal,Color) or AddVertex(Point,Normal,Texel) methods. When <hasVColors> is True , you must use one of //!	AddVertex(Point,Color) or AddVertex(Point,Normal,Color) methods. When <hasTexels> is True , you must use one of //!	AddVertex(Point,Texel) or AddVertex(Point,Normal,Texel) methods. When <hasEdgeInfos> is True , <maxEdges> must be > 0 and //!	you must use the //!	AddEdge(number,visibillity) method. Warning: the user is responsible about the orientation of the quadrangle depending of the order of the created vertex or edges and this orientation must be coherent with the vertex normal optionnaly given at each vertex (See the Orientate() methods).
+
+        :param maxVertexs:
+        :type maxVertexs: Standard_Integer
+        :param maxEdges: default value is 0
+        :type maxEdges: Standard_Integer
+        :param hasVNormals: default value is Standard_False
+        :type hasVNormals: bool
+        :param hasVColors: default value is Standard_False
+        :type hasVColors: bool
+        :param hasTexels: default value is Standard_False
+        :type hasTexels: bool
+        :param hasEdgeInfos: default value is Standard_False
+        :type hasEdgeInfos: bool
+        :rtype: None
+
+        * Creates an array of quadrangles, a quadrangle can be filled as: 1) creating a set of quadrangles defined with his vertexs. i.e: myArray = Graphic3d_ArrayOfQuadrangles(8) myArray->AddVertex(x1,y1,z1) //!	.... myArray->AddVertex(x8,y8,z8) 3) creating a set of indexed quadrangles defined with his vertex ans edges. i.e: myArray = Graphic3d_ArrayOfQuadrangles(6,8) myArray->AddVertex(x1,y1,z1) //!	.... myArray->AddVertex(x6,y6,z6) myArray->AddEdge(1) myArray->AddEdge(2) myArray->AddEdge(3) myArray->AddEdge(4) myArray->AddEdge(3) myArray->AddEdge(4) myArray->AddEdge(5) myArray->AddEdge(6) <maxVertexs> defined the maximun allowed vertex number in the array. <maxEdges> defined the maximun allowed edge number in the array. Warning: When <hasVNormals> is True , you must use one of //!	AddVertex(Point,Normal) or AddVertex(Point,Normal,Color) or AddVertex(Point,Normal,Texel) methods. When <hasVColors> is True , you must use one of //!	AddVertex(Point,Color) or AddVertex(Point,Normal,Color) methods. When <hasTexels> is True , you must use one of //!	AddVertex(Point,Texel) or AddVertex(Point,Normal,Texel) methods. When <hasEdgeInfos> is True , <maxEdges> must be > 0 and //!	you must use the //!	AddEdge(number,visibillity) method. Warning: the user is responsible about the orientation of the quadrangle depending of the order of the created vertex or edges and this orientation must be coherent with the vertex normal optionnaly given at each vertex (See the Orientate() methods).
+
+        :param maxVertexs:
+        :type maxVertexs: Standard_Integer
+        :param maxEdges: default value is 0
+        :type maxEdges: Standard_Integer
+        :param hasVNormals: default value is Standard_False
+        :type hasVNormals: bool
+        :param hasVColors: default value is Standard_False
+        :type hasVColors: bool
+        :param hasTexels: default value is Standard_False
+        :type hasTexels: bool
+        :param hasEdgeInfos: default value is Standard_False
+        :type hasEdgeInfos: bool
+        :rtype: None
+
+        * Creates an array of quadrangles, a quadrangle can be filled as: 1) creating a set of quadrangles defined with his vertexs. i.e: myArray = Graphic3d_ArrayOfQuadrangles(8) myArray->AddVertex(x1,y1,z1) //!	.... myArray->AddVertex(x8,y8,z8) 3) creating a set of indexed quadrangles defined with his vertex ans edges. i.e: myArray = Graphic3d_ArrayOfQuadrangles(6,8) myArray->AddVertex(x1,y1,z1) //!	.... myArray->AddVertex(x6,y6,z6) myArray->AddEdge(1) myArray->AddEdge(2) myArray->AddEdge(3) myArray->AddEdge(4) myArray->AddEdge(3) myArray->AddEdge(4) myArray->AddEdge(5) myArray->AddEdge(6) <maxVertexs> defined the maximun allowed vertex number in the array. <maxEdges> defined the maximun allowed edge number in the array. Warning: When <hasVNormals> is True , you must use one of //!	AddVertex(Point,Normal) or AddVertex(Point,Normal,Color) or AddVertex(Point,Normal,Texel) methods. When <hasVColors> is True , you must use one of //!	AddVertex(Point,Color) or AddVertex(Point,Normal,Color) methods. When <hasTexels> is True , you must use one of //!	AddVertex(Point,Texel) or AddVertex(Point,Normal,Texel) methods. When <hasEdgeInfos> is True , <maxEdges> must be > 0 and //!	you must use the //!	AddEdge(number,visibillity) method. Warning: the user is responsible about the orientation of the quadrangle depending of the order of the created vertex or edges and this orientation must be coherent with the vertex normal optionnaly given at each vertex (See the Orientate() methods).
+
+        :param maxVertexs:
+        :type maxVertexs: Standard_Integer
+        :param maxEdges: default value is 0
+        :type maxEdges: Standard_Integer
+        :param hasVNormals: default value is Standard_False
+        :type hasVNormals: bool
+        :param hasVColors: default value is Standard_False
+        :type hasVColors: bool
+        :param hasTexels: default value is Standard_False
+        :type hasTexels: bool
+        :param hasEdgeInfos: default value is Standard_False
+        :type hasEdgeInfos: bool
+        :rtype: None
+
+        * Creates an array of quadrangles, a quadrangle can be filled as: 1) creating a set of quadrangles defined with his vertexs. i.e: myArray = Graphic3d_ArrayOfQuadrangles(8) myArray->AddVertex(x1,y1,z1) //!	.... myArray->AddVertex(x8,y8,z8) 3) creating a set of indexed quadrangles defined with his vertex ans edges. i.e: myArray = Graphic3d_ArrayOfQuadrangles(6,8) myArray->AddVertex(x1,y1,z1) //!	.... myArray->AddVertex(x6,y6,z6) myArray->AddEdge(1) myArray->AddEdge(2) myArray->AddEdge(3) myArray->AddEdge(4) myArray->AddEdge(3) myArray->AddEdge(4) myArray->AddEdge(5) myArray->AddEdge(6) <maxVertexs> defined the maximun allowed vertex number in the array. <maxEdges> defined the maximun allowed edge number in the array. Warning: When <hasVNormals> is True , you must use one of //!	AddVertex(Point,Normal) or AddVertex(Point,Normal,Color) or AddVertex(Point,Normal,Texel) methods. When <hasVColors> is True , you must use one of //!	AddVertex(Point,Color) or AddVertex(Point,Normal,Color) methods. When <hasTexels> is True , you must use one of //!	AddVertex(Point,Texel) or AddVertex(Point,Normal,Texel) methods. When <hasEdgeInfos> is True , <maxEdges> must be > 0 and //!	you must use the //!	AddEdge(number,visibillity) method. Warning: the user is responsible about the orientation of the quadrangle depending of the order of the created vertex or edges and this orientation must be coherent with the vertex normal optionnaly given at each vertex (See the Orientate() methods).
+
+        :param maxVertexs:
+        :type maxVertexs: Standard_Integer
+        :param maxEdges: default value is 0
+        :type maxEdges: Standard_Integer
+        :param hasVNormals: default value is Standard_False
+        :type hasVNormals: bool
+        :param hasVColors: default value is Standard_False
+        :type hasVColors: bool
+        :param hasTexels: default value is Standard_False
+        :type hasTexels: bool
+        :param hasEdgeInfos: default value is Standard_False
+        :type hasEdgeInfos: bool
+        :rtype: None
+
+        * Creates an array of quadrangles, a quadrangle can be filled as: 1) creating a set of quadrangles defined with his vertexs. i.e: myArray = Graphic3d_ArrayOfQuadrangles(8) myArray->AddVertex(x1,y1,z1) //!	.... myArray->AddVertex(x8,y8,z8) 3) creating a set of indexed quadrangles defined with his vertex ans edges. i.e: myArray = Graphic3d_ArrayOfQuadrangles(6,8) myArray->AddVertex(x1,y1,z1) //!	.... myArray->AddVertex(x6,y6,z6) myArray->AddEdge(1) myArray->AddEdge(2) myArray->AddEdge(3) myArray->AddEdge(4) myArray->AddEdge(3) myArray->AddEdge(4) myArray->AddEdge(5) myArray->AddEdge(6) <maxVertexs> defined the maximun allowed vertex number in the array. <maxEdges> defined the maximun allowed edge number in the array. Warning: When <hasVNormals> is True , you must use one of //!	AddVertex(Point,Normal) or AddVertex(Point,Normal,Color) or AddVertex(Point,Normal,Texel) methods. When <hasVColors> is True , you must use one of //!	AddVertex(Point,Color) or AddVertex(Point,Normal,Color) methods. When <hasTexels> is True , you must use one of //!	AddVertex(Point,Texel) or AddVertex(Point,Normal,Texel) methods. When <hasEdgeInfos> is True , <maxEdges> must be > 0 and //!	you must use the //!	AddEdge(number,visibillity) method. Warning: the user is responsible about the orientation of the quadrangle depending of the order of the created vertex or edges and this orientation must be coherent with the vertex normal optionnaly given at each vertex (See the Orientate() methods).
+
+        :param maxVertexs:
+        :type maxVertexs: Standard_Integer
+        :param maxEdges: default value is 0
+        :type maxEdges: Standard_Integer
         :param hasVNormals: default value is Standard_False
         :type hasVNormals: bool
         :param hasVColors: default value is Standard_False
@@ -11409,11 +12393,11 @@ class Graphic3d_ArrayOfQuadrangles(Graphic3d_ArrayOfPrimitives):
 
         """
         _Graphic3d.Graphic3d_ArrayOfQuadrangles_swiginit(self,_Graphic3d.new_Graphic3d_ArrayOfQuadrangles(*args))
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Graphic3d_ArrayOfQuadrangles self)"""
         return _Graphic3d.Graphic3d_ArrayOfQuadrangles__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Graphic3d_ArrayOfQuadrangles" :
+    def GetHandle(self):
         """GetHandle(Graphic3d_ArrayOfQuadrangles self) -> Handle_Graphic3d_ArrayOfQuadrangles"""
         return _Graphic3d.Graphic3d_ArrayOfQuadrangles_GetHandle(self)
 
@@ -11451,7 +12435,7 @@ Handle_Graphic3d_ArrayOfQuadrangles._kill_pointed = new_instancemethod(_Graphic3
 Handle_Graphic3d_ArrayOfQuadrangles_swigregister = _Graphic3d.Handle_Graphic3d_ArrayOfQuadrangles_swigregister
 Handle_Graphic3d_ArrayOfQuadrangles_swigregister(Handle_Graphic3d_ArrayOfQuadrangles)
 
-def Handle_Graphic3d_ArrayOfQuadrangles_DownCast(*args) -> "Handle_Graphic3d_ArrayOfQuadrangles const" :
+def Handle_Graphic3d_ArrayOfQuadrangles_DownCast(*args):
   return _Graphic3d.Handle_Graphic3d_ArrayOfQuadrangles_DownCast(*args)
 Handle_Graphic3d_ArrayOfQuadrangles_DownCast = _Graphic3d.Handle_Graphic3d_ArrayOfQuadrangles_DownCast
 
@@ -11463,20 +12447,40 @@ class Graphic3d_ArrayOfSegments(Graphic3d_ArrayOfPrimitives):
         * Creates an array of segments, a segment can be filled as: 1) creating a set of segments defined with his vertexs. i.e: myArray = Graphic3d_ArrayOfSegments(4) myArray->AddVertex(x1,y1,z1) //!	.... myArray->AddVertex(x4,y4,z4) 2) creating a set of indexed segments defined with his vertex ans edges. i.e: myArray = Graphic3d_ArrayOfSegments(4,0,8) myArray->AddVertex(x1,y1,z1) //!	.... myArray->AddVertex(x4,y4,z4) myArray->AddEdge(1) myArray->AddEdge(2) myArray->AddEdge(3) myArray->AddEdge(4) myArray->AddEdge(2) myArray->AddEdge(4) myArray->AddEdge(1) myArray->AddEdge(3) <maxVertexs> defined the maximun allowed vertex number in the array. <maxEdges> defined the maximun allowed edge number in the array. Warning: When <hasVColors> is True , you must use only //!	AddVertex(Point,Color) method
 
         :param maxVertexs:
-        :type maxVertexs: int
+        :type maxVertexs: Standard_Integer
         :param maxEdges: default value is 0
-        :type maxEdges: int
+        :type maxEdges: Standard_Integer
+        :param hasVColors: default value is Standard_False
+        :type hasVColors: bool
+        :rtype: None
+
+        * Creates an array of segments, a segment can be filled as: 1) creating a set of segments defined with his vertexs. i.e: myArray = Graphic3d_ArrayOfSegments(4) myArray->AddVertex(x1,y1,z1) //!	.... myArray->AddVertex(x4,y4,z4) 2) creating a set of indexed segments defined with his vertex ans edges. i.e: myArray = Graphic3d_ArrayOfSegments(4,0,8) myArray->AddVertex(x1,y1,z1) //!	.... myArray->AddVertex(x4,y4,z4) myArray->AddEdge(1) myArray->AddEdge(2) myArray->AddEdge(3) myArray->AddEdge(4) myArray->AddEdge(2) myArray->AddEdge(4) myArray->AddEdge(1) myArray->AddEdge(3) <maxVertexs> defined the maximun allowed vertex number in the array. <maxEdges> defined the maximun allowed edge number in the array. Warning: When <hasVColors> is True , you must use only //!	AddVertex(Point,Color) method
+
+        :param maxVertexs:
+        :type maxVertexs: Standard_Integer
+        :param maxEdges: default value is 0
+        :type maxEdges: Standard_Integer
+        :param hasVColors: default value is Standard_False
+        :type hasVColors: bool
+        :rtype: None
+
+        * Creates an array of segments, a segment can be filled as: 1) creating a set of segments defined with his vertexs. i.e: myArray = Graphic3d_ArrayOfSegments(4) myArray->AddVertex(x1,y1,z1) //!	.... myArray->AddVertex(x4,y4,z4) 2) creating a set of indexed segments defined with his vertex ans edges. i.e: myArray = Graphic3d_ArrayOfSegments(4,0,8) myArray->AddVertex(x1,y1,z1) //!	.... myArray->AddVertex(x4,y4,z4) myArray->AddEdge(1) myArray->AddEdge(2) myArray->AddEdge(3) myArray->AddEdge(4) myArray->AddEdge(2) myArray->AddEdge(4) myArray->AddEdge(1) myArray->AddEdge(3) <maxVertexs> defined the maximun allowed vertex number in the array. <maxEdges> defined the maximun allowed edge number in the array. Warning: When <hasVColors> is True , you must use only //!	AddVertex(Point,Color) method
+
+        :param maxVertexs:
+        :type maxVertexs: Standard_Integer
+        :param maxEdges: default value is 0
+        :type maxEdges: Standard_Integer
         :param hasVColors: default value is Standard_False
         :type hasVColors: bool
         :rtype: None
 
         """
         _Graphic3d.Graphic3d_ArrayOfSegments_swiginit(self,_Graphic3d.new_Graphic3d_ArrayOfSegments(*args))
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Graphic3d_ArrayOfSegments self)"""
         return _Graphic3d.Graphic3d_ArrayOfSegments__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Graphic3d_ArrayOfSegments" :
+    def GetHandle(self):
         """GetHandle(Graphic3d_ArrayOfSegments self) -> Handle_Graphic3d_ArrayOfSegments"""
         return _Graphic3d.Graphic3d_ArrayOfSegments_GetHandle(self)
 
@@ -11514,7 +12518,7 @@ Handle_Graphic3d_ArrayOfSegments._kill_pointed = new_instancemethod(_Graphic3d.H
 Handle_Graphic3d_ArrayOfSegments_swigregister = _Graphic3d.Handle_Graphic3d_ArrayOfSegments_swigregister
 Handle_Graphic3d_ArrayOfSegments_swigregister(Handle_Graphic3d_ArrayOfSegments)
 
-def Handle_Graphic3d_ArrayOfSegments_DownCast(*args) -> "Handle_Graphic3d_ArrayOfSegments const" :
+def Handle_Graphic3d_ArrayOfSegments_DownCast(*args):
   return _Graphic3d.Handle_Graphic3d_ArrayOfSegments_DownCast(*args)
 Handle_Graphic3d_ArrayOfSegments_DownCast = _Graphic3d.Handle_Graphic3d_ArrayOfSegments_DownCast
 
@@ -11526,9 +12530,89 @@ class Graphic3d_ArrayOfTriangleFans(Graphic3d_ArrayOfPrimitives):
         * Creates an array of triangle fans, a polygon can be filled as: 1) creating a single fan defined with his vertexs. i.e: myArray = Graphic3d_ArrayOfTriangleFans(7) myArray->AddVertex(x1,y1,z1) .... myArray->AddVertex(x7,y7,z7) 2) creating separate fans defined with a predefined number of fans and the number of vertex per fan. i.e: myArray = Graphic3d_ArrayOfTriangleFans(8,2) myArray->AddBound(4) myArray->AddVertex(x1,y1,z1) .... myArray->AddVertex(x4,y4,z4) myArray->AddBound(4) myArray->AddVertex(x5,y5,z5) .... myArray->AddVertex(x8,y8,z8) <maxVertexs> defined the maximun allowed vertex number in the array. <maxFans> defined the maximun allowed fan number in the array. The number of triangle really drawn is : VertexNumber()-2*Min(1,BoundNumber())
 
         :param maxVertexs:
-        :type maxVertexs: int
+        :type maxVertexs: Standard_Integer
         :param maxFans: default value is 0
-        :type maxFans: int
+        :type maxFans: Standard_Integer
+        :param hasVNormals: default value is Standard_False
+        :type hasVNormals: bool
+        :param hasVColors: default value is Standard_False
+        :type hasVColors: bool
+        :param hasFColors: default value is Standard_False
+        :type hasFColors: bool
+        :param hasTexels: default value is Standard_False
+        :type hasTexels: bool
+        :rtype: None
+
+        * Creates an array of triangle fans, a polygon can be filled as: 1) creating a single fan defined with his vertexs. i.e: myArray = Graphic3d_ArrayOfTriangleFans(7) myArray->AddVertex(x1,y1,z1) .... myArray->AddVertex(x7,y7,z7) 2) creating separate fans defined with a predefined number of fans and the number of vertex per fan. i.e: myArray = Graphic3d_ArrayOfTriangleFans(8,2) myArray->AddBound(4) myArray->AddVertex(x1,y1,z1) .... myArray->AddVertex(x4,y4,z4) myArray->AddBound(4) myArray->AddVertex(x5,y5,z5) .... myArray->AddVertex(x8,y8,z8) <maxVertexs> defined the maximun allowed vertex number in the array. <maxFans> defined the maximun allowed fan number in the array. The number of triangle really drawn is : VertexNumber()-2*Min(1,BoundNumber())
+
+        :param maxVertexs:
+        :type maxVertexs: Standard_Integer
+        :param maxFans: default value is 0
+        :type maxFans: Standard_Integer
+        :param hasVNormals: default value is Standard_False
+        :type hasVNormals: bool
+        :param hasVColors: default value is Standard_False
+        :type hasVColors: bool
+        :param hasFColors: default value is Standard_False
+        :type hasFColors: bool
+        :param hasTexels: default value is Standard_False
+        :type hasTexels: bool
+        :rtype: None
+
+        * Creates an array of triangle fans, a polygon can be filled as: 1) creating a single fan defined with his vertexs. i.e: myArray = Graphic3d_ArrayOfTriangleFans(7) myArray->AddVertex(x1,y1,z1) .... myArray->AddVertex(x7,y7,z7) 2) creating separate fans defined with a predefined number of fans and the number of vertex per fan. i.e: myArray = Graphic3d_ArrayOfTriangleFans(8,2) myArray->AddBound(4) myArray->AddVertex(x1,y1,z1) .... myArray->AddVertex(x4,y4,z4) myArray->AddBound(4) myArray->AddVertex(x5,y5,z5) .... myArray->AddVertex(x8,y8,z8) <maxVertexs> defined the maximun allowed vertex number in the array. <maxFans> defined the maximun allowed fan number in the array. The number of triangle really drawn is : VertexNumber()-2*Min(1,BoundNumber())
+
+        :param maxVertexs:
+        :type maxVertexs: Standard_Integer
+        :param maxFans: default value is 0
+        :type maxFans: Standard_Integer
+        :param hasVNormals: default value is Standard_False
+        :type hasVNormals: bool
+        :param hasVColors: default value is Standard_False
+        :type hasVColors: bool
+        :param hasFColors: default value is Standard_False
+        :type hasFColors: bool
+        :param hasTexels: default value is Standard_False
+        :type hasTexels: bool
+        :rtype: None
+
+        * Creates an array of triangle fans, a polygon can be filled as: 1) creating a single fan defined with his vertexs. i.e: myArray = Graphic3d_ArrayOfTriangleFans(7) myArray->AddVertex(x1,y1,z1) .... myArray->AddVertex(x7,y7,z7) 2) creating separate fans defined with a predefined number of fans and the number of vertex per fan. i.e: myArray = Graphic3d_ArrayOfTriangleFans(8,2) myArray->AddBound(4) myArray->AddVertex(x1,y1,z1) .... myArray->AddVertex(x4,y4,z4) myArray->AddBound(4) myArray->AddVertex(x5,y5,z5) .... myArray->AddVertex(x8,y8,z8) <maxVertexs> defined the maximun allowed vertex number in the array. <maxFans> defined the maximun allowed fan number in the array. The number of triangle really drawn is : VertexNumber()-2*Min(1,BoundNumber())
+
+        :param maxVertexs:
+        :type maxVertexs: Standard_Integer
+        :param maxFans: default value is 0
+        :type maxFans: Standard_Integer
+        :param hasVNormals: default value is Standard_False
+        :type hasVNormals: bool
+        :param hasVColors: default value is Standard_False
+        :type hasVColors: bool
+        :param hasFColors: default value is Standard_False
+        :type hasFColors: bool
+        :param hasTexels: default value is Standard_False
+        :type hasTexels: bool
+        :rtype: None
+
+        * Creates an array of triangle fans, a polygon can be filled as: 1) creating a single fan defined with his vertexs. i.e: myArray = Graphic3d_ArrayOfTriangleFans(7) myArray->AddVertex(x1,y1,z1) .... myArray->AddVertex(x7,y7,z7) 2) creating separate fans defined with a predefined number of fans and the number of vertex per fan. i.e: myArray = Graphic3d_ArrayOfTriangleFans(8,2) myArray->AddBound(4) myArray->AddVertex(x1,y1,z1) .... myArray->AddVertex(x4,y4,z4) myArray->AddBound(4) myArray->AddVertex(x5,y5,z5) .... myArray->AddVertex(x8,y8,z8) <maxVertexs> defined the maximun allowed vertex number in the array. <maxFans> defined the maximun allowed fan number in the array. The number of triangle really drawn is : VertexNumber()-2*Min(1,BoundNumber())
+
+        :param maxVertexs:
+        :type maxVertexs: Standard_Integer
+        :param maxFans: default value is 0
+        :type maxFans: Standard_Integer
+        :param hasVNormals: default value is Standard_False
+        :type hasVNormals: bool
+        :param hasVColors: default value is Standard_False
+        :type hasVColors: bool
+        :param hasFColors: default value is Standard_False
+        :type hasFColors: bool
+        :param hasTexels: default value is Standard_False
+        :type hasTexels: bool
+        :rtype: None
+
+        * Creates an array of triangle fans, a polygon can be filled as: 1) creating a single fan defined with his vertexs. i.e: myArray = Graphic3d_ArrayOfTriangleFans(7) myArray->AddVertex(x1,y1,z1) .... myArray->AddVertex(x7,y7,z7) 2) creating separate fans defined with a predefined number of fans and the number of vertex per fan. i.e: myArray = Graphic3d_ArrayOfTriangleFans(8,2) myArray->AddBound(4) myArray->AddVertex(x1,y1,z1) .... myArray->AddVertex(x4,y4,z4) myArray->AddBound(4) myArray->AddVertex(x5,y5,z5) .... myArray->AddVertex(x8,y8,z8) <maxVertexs> defined the maximun allowed vertex number in the array. <maxFans> defined the maximun allowed fan number in the array. The number of triangle really drawn is : VertexNumber()-2*Min(1,BoundNumber())
+
+        :param maxVertexs:
+        :type maxVertexs: Standard_Integer
+        :param maxFans: default value is 0
+        :type maxFans: Standard_Integer
         :param hasVNormals: default value is Standard_False
         :type hasVNormals: bool
         :param hasVColors: default value is Standard_False
@@ -11541,11 +12625,11 @@ class Graphic3d_ArrayOfTriangleFans(Graphic3d_ArrayOfPrimitives):
 
         """
         _Graphic3d.Graphic3d_ArrayOfTriangleFans_swiginit(self,_Graphic3d.new_Graphic3d_ArrayOfTriangleFans(*args))
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Graphic3d_ArrayOfTriangleFans self)"""
         return _Graphic3d.Graphic3d_ArrayOfTriangleFans__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Graphic3d_ArrayOfTriangleFans" :
+    def GetHandle(self):
         """GetHandle(Graphic3d_ArrayOfTriangleFans self) -> Handle_Graphic3d_ArrayOfTriangleFans"""
         return _Graphic3d.Graphic3d_ArrayOfTriangleFans_GetHandle(self)
 
@@ -11583,7 +12667,7 @@ Handle_Graphic3d_ArrayOfTriangleFans._kill_pointed = new_instancemethod(_Graphic
 Handle_Graphic3d_ArrayOfTriangleFans_swigregister = _Graphic3d.Handle_Graphic3d_ArrayOfTriangleFans_swigregister
 Handle_Graphic3d_ArrayOfTriangleFans_swigregister(Handle_Graphic3d_ArrayOfTriangleFans)
 
-def Handle_Graphic3d_ArrayOfTriangleFans_DownCast(*args) -> "Handle_Graphic3d_ArrayOfTriangleFans const" :
+def Handle_Graphic3d_ArrayOfTriangleFans_DownCast(*args):
   return _Graphic3d.Handle_Graphic3d_ArrayOfTriangleFans_DownCast(*args)
 Handle_Graphic3d_ArrayOfTriangleFans_DownCast = _Graphic3d.Handle_Graphic3d_ArrayOfTriangleFans_DownCast
 
@@ -11595,9 +12679,89 @@ class Graphic3d_ArrayOfTriangleStrips(Graphic3d_ArrayOfPrimitives):
         * Creates an array of triangle strips, a polygon can be filled as: 1) creating a single strip defined with his vertexs. i.e: myArray = Graphic3d_ArrayOfTriangleStrips(7) myArray->AddVertex(x1,y1,z1) .... myArray->AddVertex(x7,y7,z7) 2) creating separate strips defined with a predefined number of strips and the number of vertex per strip. i.e: myArray = Graphic3d_ArrayOfTriangleStrips(8,2) myArray->AddBound(4) myArray->AddVertex(x1,y1,z1) .... myArray->AddVertex(x4,y4,z4) myArray->AddBound(4) myArray->AddVertex(x5,y5,z5) .... myArray->AddVertex(x8,y8,z8) <maxVertexs> defined the maximun allowed vertex number in the array. <maxStrips> defined the maximun allowed strip number in the array. The number of triangle really drawn is : VertexNumber()-2*Min(1,BoundNumber()) Warning: When <hasVNormals> is True , you must use one of AddVertex(Point,Normal) or AddVertex(Point,Normal,Color) or AddVertex(Point,Normal,Texel) methods. When <hasVColors> is True , you must use one of AddVertex(Point,Color) or AddVertex(Point,Normal,Color) methods. When <hasTexels> is True , you must use one of AddVertex(Point,Texel) or AddVertex(Point,Normal,Texel) methods. When <hasBColors> is True , <maxBounds> must be > 0 and you must use the AddBound(number,Color) method. Warning: the user is responsible about the orientation of the strip depending of the order of the created vertex and this orientation must be coherent with the vertex normal optionnaly given at each vertex (See the Orientate() methods).
 
         :param maxVertexs:
-        :type maxVertexs: int
+        :type maxVertexs: Standard_Integer
         :param maxStrips: default value is 0
-        :type maxStrips: int
+        :type maxStrips: Standard_Integer
+        :param hasVNormals: default value is Standard_False
+        :type hasVNormals: bool
+        :param hasVColors: default value is Standard_False
+        :type hasVColors: bool
+        :param hasSColors: default value is Standard_False
+        :type hasSColors: bool
+        :param hasTexels: default value is Standard_False
+        :type hasTexels: bool
+        :rtype: None
+
+        * Creates an array of triangle strips, a polygon can be filled as: 1) creating a single strip defined with his vertexs. i.e: myArray = Graphic3d_ArrayOfTriangleStrips(7) myArray->AddVertex(x1,y1,z1) .... myArray->AddVertex(x7,y7,z7) 2) creating separate strips defined with a predefined number of strips and the number of vertex per strip. i.e: myArray = Graphic3d_ArrayOfTriangleStrips(8,2) myArray->AddBound(4) myArray->AddVertex(x1,y1,z1) .... myArray->AddVertex(x4,y4,z4) myArray->AddBound(4) myArray->AddVertex(x5,y5,z5) .... myArray->AddVertex(x8,y8,z8) <maxVertexs> defined the maximun allowed vertex number in the array. <maxStrips> defined the maximun allowed strip number in the array. The number of triangle really drawn is : VertexNumber()-2*Min(1,BoundNumber()) Warning: When <hasVNormals> is True , you must use one of AddVertex(Point,Normal) or AddVertex(Point,Normal,Color) or AddVertex(Point,Normal,Texel) methods. When <hasVColors> is True , you must use one of AddVertex(Point,Color) or AddVertex(Point,Normal,Color) methods. When <hasTexels> is True , you must use one of AddVertex(Point,Texel) or AddVertex(Point,Normal,Texel) methods. When <hasBColors> is True , <maxBounds> must be > 0 and you must use the AddBound(number,Color) method. Warning: the user is responsible about the orientation of the strip depending of the order of the created vertex and this orientation must be coherent with the vertex normal optionnaly given at each vertex (See the Orientate() methods).
+
+        :param maxVertexs:
+        :type maxVertexs: Standard_Integer
+        :param maxStrips: default value is 0
+        :type maxStrips: Standard_Integer
+        :param hasVNormals: default value is Standard_False
+        :type hasVNormals: bool
+        :param hasVColors: default value is Standard_False
+        :type hasVColors: bool
+        :param hasSColors: default value is Standard_False
+        :type hasSColors: bool
+        :param hasTexels: default value is Standard_False
+        :type hasTexels: bool
+        :rtype: None
+
+        * Creates an array of triangle strips, a polygon can be filled as: 1) creating a single strip defined with his vertexs. i.e: myArray = Graphic3d_ArrayOfTriangleStrips(7) myArray->AddVertex(x1,y1,z1) .... myArray->AddVertex(x7,y7,z7) 2) creating separate strips defined with a predefined number of strips and the number of vertex per strip. i.e: myArray = Graphic3d_ArrayOfTriangleStrips(8,2) myArray->AddBound(4) myArray->AddVertex(x1,y1,z1) .... myArray->AddVertex(x4,y4,z4) myArray->AddBound(4) myArray->AddVertex(x5,y5,z5) .... myArray->AddVertex(x8,y8,z8) <maxVertexs> defined the maximun allowed vertex number in the array. <maxStrips> defined the maximun allowed strip number in the array. The number of triangle really drawn is : VertexNumber()-2*Min(1,BoundNumber()) Warning: When <hasVNormals> is True , you must use one of AddVertex(Point,Normal) or AddVertex(Point,Normal,Color) or AddVertex(Point,Normal,Texel) methods. When <hasVColors> is True , you must use one of AddVertex(Point,Color) or AddVertex(Point,Normal,Color) methods. When <hasTexels> is True , you must use one of AddVertex(Point,Texel) or AddVertex(Point,Normal,Texel) methods. When <hasBColors> is True , <maxBounds> must be > 0 and you must use the AddBound(number,Color) method. Warning: the user is responsible about the orientation of the strip depending of the order of the created vertex and this orientation must be coherent with the vertex normal optionnaly given at each vertex (See the Orientate() methods).
+
+        :param maxVertexs:
+        :type maxVertexs: Standard_Integer
+        :param maxStrips: default value is 0
+        :type maxStrips: Standard_Integer
+        :param hasVNormals: default value is Standard_False
+        :type hasVNormals: bool
+        :param hasVColors: default value is Standard_False
+        :type hasVColors: bool
+        :param hasSColors: default value is Standard_False
+        :type hasSColors: bool
+        :param hasTexels: default value is Standard_False
+        :type hasTexels: bool
+        :rtype: None
+
+        * Creates an array of triangle strips, a polygon can be filled as: 1) creating a single strip defined with his vertexs. i.e: myArray = Graphic3d_ArrayOfTriangleStrips(7) myArray->AddVertex(x1,y1,z1) .... myArray->AddVertex(x7,y7,z7) 2) creating separate strips defined with a predefined number of strips and the number of vertex per strip. i.e: myArray = Graphic3d_ArrayOfTriangleStrips(8,2) myArray->AddBound(4) myArray->AddVertex(x1,y1,z1) .... myArray->AddVertex(x4,y4,z4) myArray->AddBound(4) myArray->AddVertex(x5,y5,z5) .... myArray->AddVertex(x8,y8,z8) <maxVertexs> defined the maximun allowed vertex number in the array. <maxStrips> defined the maximun allowed strip number in the array. The number of triangle really drawn is : VertexNumber()-2*Min(1,BoundNumber()) Warning: When <hasVNormals> is True , you must use one of AddVertex(Point,Normal) or AddVertex(Point,Normal,Color) or AddVertex(Point,Normal,Texel) methods. When <hasVColors> is True , you must use one of AddVertex(Point,Color) or AddVertex(Point,Normal,Color) methods. When <hasTexels> is True , you must use one of AddVertex(Point,Texel) or AddVertex(Point,Normal,Texel) methods. When <hasBColors> is True , <maxBounds> must be > 0 and you must use the AddBound(number,Color) method. Warning: the user is responsible about the orientation of the strip depending of the order of the created vertex and this orientation must be coherent with the vertex normal optionnaly given at each vertex (See the Orientate() methods).
+
+        :param maxVertexs:
+        :type maxVertexs: Standard_Integer
+        :param maxStrips: default value is 0
+        :type maxStrips: Standard_Integer
+        :param hasVNormals: default value is Standard_False
+        :type hasVNormals: bool
+        :param hasVColors: default value is Standard_False
+        :type hasVColors: bool
+        :param hasSColors: default value is Standard_False
+        :type hasSColors: bool
+        :param hasTexels: default value is Standard_False
+        :type hasTexels: bool
+        :rtype: None
+
+        * Creates an array of triangle strips, a polygon can be filled as: 1) creating a single strip defined with his vertexs. i.e: myArray = Graphic3d_ArrayOfTriangleStrips(7) myArray->AddVertex(x1,y1,z1) .... myArray->AddVertex(x7,y7,z7) 2) creating separate strips defined with a predefined number of strips and the number of vertex per strip. i.e: myArray = Graphic3d_ArrayOfTriangleStrips(8,2) myArray->AddBound(4) myArray->AddVertex(x1,y1,z1) .... myArray->AddVertex(x4,y4,z4) myArray->AddBound(4) myArray->AddVertex(x5,y5,z5) .... myArray->AddVertex(x8,y8,z8) <maxVertexs> defined the maximun allowed vertex number in the array. <maxStrips> defined the maximun allowed strip number in the array. The number of triangle really drawn is : VertexNumber()-2*Min(1,BoundNumber()) Warning: When <hasVNormals> is True , you must use one of AddVertex(Point,Normal) or AddVertex(Point,Normal,Color) or AddVertex(Point,Normal,Texel) methods. When <hasVColors> is True , you must use one of AddVertex(Point,Color) or AddVertex(Point,Normal,Color) methods. When <hasTexels> is True , you must use one of AddVertex(Point,Texel) or AddVertex(Point,Normal,Texel) methods. When <hasBColors> is True , <maxBounds> must be > 0 and you must use the AddBound(number,Color) method. Warning: the user is responsible about the orientation of the strip depending of the order of the created vertex and this orientation must be coherent with the vertex normal optionnaly given at each vertex (See the Orientate() methods).
+
+        :param maxVertexs:
+        :type maxVertexs: Standard_Integer
+        :param maxStrips: default value is 0
+        :type maxStrips: Standard_Integer
+        :param hasVNormals: default value is Standard_False
+        :type hasVNormals: bool
+        :param hasVColors: default value is Standard_False
+        :type hasVColors: bool
+        :param hasSColors: default value is Standard_False
+        :type hasSColors: bool
+        :param hasTexels: default value is Standard_False
+        :type hasTexels: bool
+        :rtype: None
+
+        * Creates an array of triangle strips, a polygon can be filled as: 1) creating a single strip defined with his vertexs. i.e: myArray = Graphic3d_ArrayOfTriangleStrips(7) myArray->AddVertex(x1,y1,z1) .... myArray->AddVertex(x7,y7,z7) 2) creating separate strips defined with a predefined number of strips and the number of vertex per strip. i.e: myArray = Graphic3d_ArrayOfTriangleStrips(8,2) myArray->AddBound(4) myArray->AddVertex(x1,y1,z1) .... myArray->AddVertex(x4,y4,z4) myArray->AddBound(4) myArray->AddVertex(x5,y5,z5) .... myArray->AddVertex(x8,y8,z8) <maxVertexs> defined the maximun allowed vertex number in the array. <maxStrips> defined the maximun allowed strip number in the array. The number of triangle really drawn is : VertexNumber()-2*Min(1,BoundNumber()) Warning: When <hasVNormals> is True , you must use one of AddVertex(Point,Normal) or AddVertex(Point,Normal,Color) or AddVertex(Point,Normal,Texel) methods. When <hasVColors> is True , you must use one of AddVertex(Point,Color) or AddVertex(Point,Normal,Color) methods. When <hasTexels> is True , you must use one of AddVertex(Point,Texel) or AddVertex(Point,Normal,Texel) methods. When <hasBColors> is True , <maxBounds> must be > 0 and you must use the AddBound(number,Color) method. Warning: the user is responsible about the orientation of the strip depending of the order of the created vertex and this orientation must be coherent with the vertex normal optionnaly given at each vertex (See the Orientate() methods).
+
+        :param maxVertexs:
+        :type maxVertexs: Standard_Integer
+        :param maxStrips: default value is 0
+        :type maxStrips: Standard_Integer
         :param hasVNormals: default value is Standard_False
         :type hasVNormals: bool
         :param hasVColors: default value is Standard_False
@@ -11610,11 +12774,11 @@ class Graphic3d_ArrayOfTriangleStrips(Graphic3d_ArrayOfPrimitives):
 
         """
         _Graphic3d.Graphic3d_ArrayOfTriangleStrips_swiginit(self,_Graphic3d.new_Graphic3d_ArrayOfTriangleStrips(*args))
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Graphic3d_ArrayOfTriangleStrips self)"""
         return _Graphic3d.Graphic3d_ArrayOfTriangleStrips__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Graphic3d_ArrayOfTriangleStrips" :
+    def GetHandle(self):
         """GetHandle(Graphic3d_ArrayOfTriangleStrips self) -> Handle_Graphic3d_ArrayOfTriangleStrips"""
         return _Graphic3d.Graphic3d_ArrayOfTriangleStrips_GetHandle(self)
 
@@ -11652,7 +12816,7 @@ Handle_Graphic3d_ArrayOfTriangleStrips._kill_pointed = new_instancemethod(_Graph
 Handle_Graphic3d_ArrayOfTriangleStrips_swigregister = _Graphic3d.Handle_Graphic3d_ArrayOfTriangleStrips_swigregister
 Handle_Graphic3d_ArrayOfTriangleStrips_swigregister(Handle_Graphic3d_ArrayOfTriangleStrips)
 
-def Handle_Graphic3d_ArrayOfTriangleStrips_DownCast(*args) -> "Handle_Graphic3d_ArrayOfTriangleStrips const" :
+def Handle_Graphic3d_ArrayOfTriangleStrips_DownCast(*args):
   return _Graphic3d.Handle_Graphic3d_ArrayOfTriangleStrips_DownCast(*args)
 Handle_Graphic3d_ArrayOfTriangleStrips_DownCast = _Graphic3d.Handle_Graphic3d_ArrayOfTriangleStrips_DownCast
 
@@ -11664,9 +12828,89 @@ class Graphic3d_ArrayOfTriangles(Graphic3d_ArrayOfPrimitives):
         * Creates an array of triangles, a triangle can be filled as: 1) creating a set of triangles defined with his vertexs. i.e: myArray = Graphic3d_ArrayOfTriangles(6) myArray->AddVertex(x1,y1,z1) .... myArray->AddVertex(x6,y6,z6) 3) creating a set of indexed triangles defined with his vertex ans edges. i.e: myArray = Graphic3d_ArrayOfTriangles(4,6) myArray->AddVertex(x1,y1,z1) .... myArray->AddVertex(x4,y4,z4) myArray->AddEdge(1) myArray->AddEdge(2) myArray->AddEdge(3) myArray->AddEdge(2) myArray->AddEdge(3) myArray->AddEdge(4) <maxVertexs> defined the maximun allowed vertex number in the array. <maxEdges> defined the maximun allowed edge number in the array. Warning: When <hasVNormals> is True , you must use one of AddVertex(Point,Normal) or AddVertex(Point,Normal,Color) or AddVertex(Point,Normal,Texel) methods. When <hasVColors> is True , you must use one of AddVertex(Point,Color) or AddVertex(Point,Normal,Color) methods. When <hasTexels> is True , you must use one of AddVertex(Point,Texel) or AddVertex(Point,Normal,Texel) methods. When <hasEdgeInfos> is True , <maxEdges> must be > 0 and you must use the AddEdge(number,visibillity) method. Warning: the user is responsible about the orientation of the triangle depending of the order of the created vertex or edges and this orientation must be coherent with the vertex normal optionnaly given at each vertex (See the Orientate() methods).
 
         :param maxVertexs:
-        :type maxVertexs: int
+        :type maxVertexs: Standard_Integer
         :param maxEdges: default value is 0
-        :type maxEdges: int
+        :type maxEdges: Standard_Integer
+        :param hasVNormals: default value is Standard_False
+        :type hasVNormals: bool
+        :param hasVColors: default value is Standard_False
+        :type hasVColors: bool
+        :param hasTexels: default value is Standard_False
+        :type hasTexels: bool
+        :param hasEdgeInfos: default value is Standard_False
+        :type hasEdgeInfos: bool
+        :rtype: None
+
+        * Creates an array of triangles, a triangle can be filled as: 1) creating a set of triangles defined with his vertexs. i.e: myArray = Graphic3d_ArrayOfTriangles(6) myArray->AddVertex(x1,y1,z1) .... myArray->AddVertex(x6,y6,z6) 3) creating a set of indexed triangles defined with his vertex ans edges. i.e: myArray = Graphic3d_ArrayOfTriangles(4,6) myArray->AddVertex(x1,y1,z1) .... myArray->AddVertex(x4,y4,z4) myArray->AddEdge(1) myArray->AddEdge(2) myArray->AddEdge(3) myArray->AddEdge(2) myArray->AddEdge(3) myArray->AddEdge(4) <maxVertexs> defined the maximun allowed vertex number in the array. <maxEdges> defined the maximun allowed edge number in the array. Warning: When <hasVNormals> is True , you must use one of AddVertex(Point,Normal) or AddVertex(Point,Normal,Color) or AddVertex(Point,Normal,Texel) methods. When <hasVColors> is True , you must use one of AddVertex(Point,Color) or AddVertex(Point,Normal,Color) methods. When <hasTexels> is True , you must use one of AddVertex(Point,Texel) or AddVertex(Point,Normal,Texel) methods. When <hasEdgeInfos> is True , <maxEdges> must be > 0 and you must use the AddEdge(number,visibillity) method. Warning: the user is responsible about the orientation of the triangle depending of the order of the created vertex or edges and this orientation must be coherent with the vertex normal optionnaly given at each vertex (See the Orientate() methods).
+
+        :param maxVertexs:
+        :type maxVertexs: Standard_Integer
+        :param maxEdges: default value is 0
+        :type maxEdges: Standard_Integer
+        :param hasVNormals: default value is Standard_False
+        :type hasVNormals: bool
+        :param hasVColors: default value is Standard_False
+        :type hasVColors: bool
+        :param hasTexels: default value is Standard_False
+        :type hasTexels: bool
+        :param hasEdgeInfos: default value is Standard_False
+        :type hasEdgeInfos: bool
+        :rtype: None
+
+        * Creates an array of triangles, a triangle can be filled as: 1) creating a set of triangles defined with his vertexs. i.e: myArray = Graphic3d_ArrayOfTriangles(6) myArray->AddVertex(x1,y1,z1) .... myArray->AddVertex(x6,y6,z6) 3) creating a set of indexed triangles defined with his vertex ans edges. i.e: myArray = Graphic3d_ArrayOfTriangles(4,6) myArray->AddVertex(x1,y1,z1) .... myArray->AddVertex(x4,y4,z4) myArray->AddEdge(1) myArray->AddEdge(2) myArray->AddEdge(3) myArray->AddEdge(2) myArray->AddEdge(3) myArray->AddEdge(4) <maxVertexs> defined the maximun allowed vertex number in the array. <maxEdges> defined the maximun allowed edge number in the array. Warning: When <hasVNormals> is True , you must use one of AddVertex(Point,Normal) or AddVertex(Point,Normal,Color) or AddVertex(Point,Normal,Texel) methods. When <hasVColors> is True , you must use one of AddVertex(Point,Color) or AddVertex(Point,Normal,Color) methods. When <hasTexels> is True , you must use one of AddVertex(Point,Texel) or AddVertex(Point,Normal,Texel) methods. When <hasEdgeInfos> is True , <maxEdges> must be > 0 and you must use the AddEdge(number,visibillity) method. Warning: the user is responsible about the orientation of the triangle depending of the order of the created vertex or edges and this orientation must be coherent with the vertex normal optionnaly given at each vertex (See the Orientate() methods).
+
+        :param maxVertexs:
+        :type maxVertexs: Standard_Integer
+        :param maxEdges: default value is 0
+        :type maxEdges: Standard_Integer
+        :param hasVNormals: default value is Standard_False
+        :type hasVNormals: bool
+        :param hasVColors: default value is Standard_False
+        :type hasVColors: bool
+        :param hasTexels: default value is Standard_False
+        :type hasTexels: bool
+        :param hasEdgeInfos: default value is Standard_False
+        :type hasEdgeInfos: bool
+        :rtype: None
+
+        * Creates an array of triangles, a triangle can be filled as: 1) creating a set of triangles defined with his vertexs. i.e: myArray = Graphic3d_ArrayOfTriangles(6) myArray->AddVertex(x1,y1,z1) .... myArray->AddVertex(x6,y6,z6) 3) creating a set of indexed triangles defined with his vertex ans edges. i.e: myArray = Graphic3d_ArrayOfTriangles(4,6) myArray->AddVertex(x1,y1,z1) .... myArray->AddVertex(x4,y4,z4) myArray->AddEdge(1) myArray->AddEdge(2) myArray->AddEdge(3) myArray->AddEdge(2) myArray->AddEdge(3) myArray->AddEdge(4) <maxVertexs> defined the maximun allowed vertex number in the array. <maxEdges> defined the maximun allowed edge number in the array. Warning: When <hasVNormals> is True , you must use one of AddVertex(Point,Normal) or AddVertex(Point,Normal,Color) or AddVertex(Point,Normal,Texel) methods. When <hasVColors> is True , you must use one of AddVertex(Point,Color) or AddVertex(Point,Normal,Color) methods. When <hasTexels> is True , you must use one of AddVertex(Point,Texel) or AddVertex(Point,Normal,Texel) methods. When <hasEdgeInfos> is True , <maxEdges> must be > 0 and you must use the AddEdge(number,visibillity) method. Warning: the user is responsible about the orientation of the triangle depending of the order of the created vertex or edges and this orientation must be coherent with the vertex normal optionnaly given at each vertex (See the Orientate() methods).
+
+        :param maxVertexs:
+        :type maxVertexs: Standard_Integer
+        :param maxEdges: default value is 0
+        :type maxEdges: Standard_Integer
+        :param hasVNormals: default value is Standard_False
+        :type hasVNormals: bool
+        :param hasVColors: default value is Standard_False
+        :type hasVColors: bool
+        :param hasTexels: default value is Standard_False
+        :type hasTexels: bool
+        :param hasEdgeInfos: default value is Standard_False
+        :type hasEdgeInfos: bool
+        :rtype: None
+
+        * Creates an array of triangles, a triangle can be filled as: 1) creating a set of triangles defined with his vertexs. i.e: myArray = Graphic3d_ArrayOfTriangles(6) myArray->AddVertex(x1,y1,z1) .... myArray->AddVertex(x6,y6,z6) 3) creating a set of indexed triangles defined with his vertex ans edges. i.e: myArray = Graphic3d_ArrayOfTriangles(4,6) myArray->AddVertex(x1,y1,z1) .... myArray->AddVertex(x4,y4,z4) myArray->AddEdge(1) myArray->AddEdge(2) myArray->AddEdge(3) myArray->AddEdge(2) myArray->AddEdge(3) myArray->AddEdge(4) <maxVertexs> defined the maximun allowed vertex number in the array. <maxEdges> defined the maximun allowed edge number in the array. Warning: When <hasVNormals> is True , you must use one of AddVertex(Point,Normal) or AddVertex(Point,Normal,Color) or AddVertex(Point,Normal,Texel) methods. When <hasVColors> is True , you must use one of AddVertex(Point,Color) or AddVertex(Point,Normal,Color) methods. When <hasTexels> is True , you must use one of AddVertex(Point,Texel) or AddVertex(Point,Normal,Texel) methods. When <hasEdgeInfos> is True , <maxEdges> must be > 0 and you must use the AddEdge(number,visibillity) method. Warning: the user is responsible about the orientation of the triangle depending of the order of the created vertex or edges and this orientation must be coherent with the vertex normal optionnaly given at each vertex (See the Orientate() methods).
+
+        :param maxVertexs:
+        :type maxVertexs: Standard_Integer
+        :param maxEdges: default value is 0
+        :type maxEdges: Standard_Integer
+        :param hasVNormals: default value is Standard_False
+        :type hasVNormals: bool
+        :param hasVColors: default value is Standard_False
+        :type hasVColors: bool
+        :param hasTexels: default value is Standard_False
+        :type hasTexels: bool
+        :param hasEdgeInfos: default value is Standard_False
+        :type hasEdgeInfos: bool
+        :rtype: None
+
+        * Creates an array of triangles, a triangle can be filled as: 1) creating a set of triangles defined with his vertexs. i.e: myArray = Graphic3d_ArrayOfTriangles(6) myArray->AddVertex(x1,y1,z1) .... myArray->AddVertex(x6,y6,z6) 3) creating a set of indexed triangles defined with his vertex ans edges. i.e: myArray = Graphic3d_ArrayOfTriangles(4,6) myArray->AddVertex(x1,y1,z1) .... myArray->AddVertex(x4,y4,z4) myArray->AddEdge(1) myArray->AddEdge(2) myArray->AddEdge(3) myArray->AddEdge(2) myArray->AddEdge(3) myArray->AddEdge(4) <maxVertexs> defined the maximun allowed vertex number in the array. <maxEdges> defined the maximun allowed edge number in the array. Warning: When <hasVNormals> is True , you must use one of AddVertex(Point,Normal) or AddVertex(Point,Normal,Color) or AddVertex(Point,Normal,Texel) methods. When <hasVColors> is True , you must use one of AddVertex(Point,Color) or AddVertex(Point,Normal,Color) methods. When <hasTexels> is True , you must use one of AddVertex(Point,Texel) or AddVertex(Point,Normal,Texel) methods. When <hasEdgeInfos> is True , <maxEdges> must be > 0 and you must use the AddEdge(number,visibillity) method. Warning: the user is responsible about the orientation of the triangle depending of the order of the created vertex or edges and this orientation must be coherent with the vertex normal optionnaly given at each vertex (See the Orientate() methods).
+
+        :param maxVertexs:
+        :type maxVertexs: Standard_Integer
+        :param maxEdges: default value is 0
+        :type maxEdges: Standard_Integer
         :param hasVNormals: default value is Standard_False
         :type hasVNormals: bool
         :param hasVColors: default value is Standard_False
@@ -11679,11 +12923,11 @@ class Graphic3d_ArrayOfTriangles(Graphic3d_ArrayOfPrimitives):
 
         """
         _Graphic3d.Graphic3d_ArrayOfTriangles_swiginit(self,_Graphic3d.new_Graphic3d_ArrayOfTriangles(*args))
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Graphic3d_ArrayOfTriangles self)"""
         return _Graphic3d.Graphic3d_ArrayOfTriangles__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Graphic3d_ArrayOfTriangles" :
+    def GetHandle(self):
         """GetHandle(Graphic3d_ArrayOfTriangles self) -> Handle_Graphic3d_ArrayOfTriangles"""
         return _Graphic3d.Graphic3d_ArrayOfTriangles_GetHandle(self)
 
@@ -11721,7 +12965,7 @@ Handle_Graphic3d_ArrayOfTriangles._kill_pointed = new_instancemethod(_Graphic3d.
 Handle_Graphic3d_ArrayOfTriangles_swigregister = _Graphic3d.Handle_Graphic3d_ArrayOfTriangles_swigregister
 Handle_Graphic3d_ArrayOfTriangles_swigregister(Handle_Graphic3d_ArrayOfTriangles)
 
-def Handle_Graphic3d_ArrayOfTriangles_DownCast(*args) -> "Handle_Graphic3d_ArrayOfTriangles const" :
+def Handle_Graphic3d_ArrayOfTriangles_DownCast(*args):
   return _Graphic3d.Handle_Graphic3d_ArrayOfTriangles_DownCast(*args)
 Handle_Graphic3d_ArrayOfTriangles_DownCast = _Graphic3d.Handle_Graphic3d_ArrayOfTriangles_DownCast
 
@@ -11744,42 +12988,42 @@ class Graphic3d_TextureEnv(Graphic3d_TextureRoot):
 
         """
         _Graphic3d.Graphic3d_TextureEnv_swiginit(self,_Graphic3d.new_Graphic3d_TextureEnv(*args))
-    def Name(self, *args) -> "Graphic3d_NameOfTextureEnv" :
+    def Name(self):
         """
         * Returns the name of the predefined textures or NOT_ENV_UNKNOWN when the name is given as a filename.
 
         :rtype: Graphic3d_NameOfTextureEnv
 
         """
-        return _Graphic3d.Graphic3d_TextureEnv_Name(self, *args)
+        return _Graphic3d.Graphic3d_TextureEnv_Name(self)
 
-    def NumberOfTextures(*args) -> "Standard_Integer" :
+    def NumberOfTextures():
         """
         * Returns the number of predefined textures.
 
         :rtype: int
 
         """
-        return _Graphic3d.Graphic3d_TextureEnv_NumberOfTextures(*args)
+        return _Graphic3d.Graphic3d_TextureEnv_NumberOfTextures()
 
     NumberOfTextures = staticmethod(NumberOfTextures)
-    def TextureName(*args) -> "TCollection_AsciiString" :
+    def TextureName(*args):
         """
         * Returns the name of the predefined texture of rank <aRank>
 
         :param theRank:
-        :type theRank: int
+        :type theRank: Standard_Integer
         :rtype: TCollection_AsciiString
 
         """
         return _Graphic3d.Graphic3d_TextureEnv_TextureName(*args)
 
     TextureName = staticmethod(TextureName)
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Graphic3d_TextureEnv self)"""
         return _Graphic3d.Graphic3d_TextureEnv__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Graphic3d_TextureEnv" :
+    def GetHandle(self):
         """GetHandle(Graphic3d_TextureEnv self) -> Handle_Graphic3d_TextureEnv"""
         return _Graphic3d.Graphic3d_TextureEnv_GetHandle(self)
 
@@ -11797,21 +13041,21 @@ Graphic3d_TextureEnv.GetHandle = new_instancemethod(_Graphic3d.Graphic3d_Texture
 Graphic3d_TextureEnv_swigregister = _Graphic3d.Graphic3d_TextureEnv_swigregister
 Graphic3d_TextureEnv_swigregister(Graphic3d_TextureEnv)
 
-def Graphic3d_TextureEnv_NumberOfTextures(*args) -> "Standard_Integer" :
+def Graphic3d_TextureEnv_NumberOfTextures():
   """
     * Returns the number of predefined textures.
 
     :rtype: int
 
     """
-  return _Graphic3d.Graphic3d_TextureEnv_NumberOfTextures(*args)
+  return _Graphic3d.Graphic3d_TextureEnv_NumberOfTextures()
 
-def Graphic3d_TextureEnv_TextureName(*args) -> "TCollection_AsciiString" :
+def Graphic3d_TextureEnv_TextureName(*args):
   """
     * Returns the name of the predefined texture of rank <aRank>
 
     :param theRank:
-    :type theRank: int
+    :type theRank: Standard_Integer
     :rtype: TCollection_AsciiString
 
     """
@@ -11838,7 +13082,7 @@ Handle_Graphic3d_TextureEnv._kill_pointed = new_instancemethod(_Graphic3d.Handle
 Handle_Graphic3d_TextureEnv_swigregister = _Graphic3d.Handle_Graphic3d_TextureEnv_swigregister
 Handle_Graphic3d_TextureEnv_swigregister(Handle_Graphic3d_TextureEnv)
 
-def Handle_Graphic3d_TextureEnv_DownCast(*args) -> "Handle_Graphic3d_TextureEnv const" :
+def Handle_Graphic3d_TextureEnv_DownCast(*args):
   return _Graphic3d.Handle_Graphic3d_TextureEnv_DownCast(*args)
 Handle_Graphic3d_TextureEnv_DownCast = _Graphic3d.Handle_Graphic3d_TextureEnv_DownCast
 
@@ -11846,97 +13090,97 @@ class Graphic3d_TextureMap(Graphic3d_TextureRoot):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def EnableSmooth(self, *args) -> "void" :
+    def EnableSmooth(self):
         """
         * enable texture smoothing
 
         :rtype: None
 
         """
-        return _Graphic3d.Graphic3d_TextureMap_EnableSmooth(self, *args)
+        return _Graphic3d.Graphic3d_TextureMap_EnableSmooth(self)
 
-    def IsSmoothed(self, *args) -> "Standard_Boolean" :
+    def IsSmoothed(self):
         """
         * Returns True if the texture is smoothed.
 
         :rtype: bool
 
         """
-        return _Graphic3d.Graphic3d_TextureMap_IsSmoothed(self, *args)
+        return _Graphic3d.Graphic3d_TextureMap_IsSmoothed(self)
 
-    def DisableSmooth(self, *args) -> "void" :
+    def DisableSmooth(self):
         """
         * disable texture smoothing
 
         :rtype: None
 
         """
-        return _Graphic3d.Graphic3d_TextureMap_DisableSmooth(self, *args)
+        return _Graphic3d.Graphic3d_TextureMap_DisableSmooth(self)
 
-    def EnableModulate(self, *args) -> "void" :
+    def EnableModulate(self):
         """
         * enable texture modulate mode. the image is modulate with the shading of the surface.
 
         :rtype: None
 
         """
-        return _Graphic3d.Graphic3d_TextureMap_EnableModulate(self, *args)
+        return _Graphic3d.Graphic3d_TextureMap_EnableModulate(self)
 
-    def DisableModulate(self, *args) -> "void" :
+    def DisableModulate(self):
         """
         * disable texture modulate mode. the image is directly decal on the surface.
 
         :rtype: None
 
         """
-        return _Graphic3d.Graphic3d_TextureMap_DisableModulate(self, *args)
+        return _Graphic3d.Graphic3d_TextureMap_DisableModulate(self)
 
-    def IsModulate(self, *args) -> "Standard_Boolean" :
+    def IsModulate(self):
         """
         * Returns True if the texture is modulate.
 
         :rtype: bool
 
         """
-        return _Graphic3d.Graphic3d_TextureMap_IsModulate(self, *args)
+        return _Graphic3d.Graphic3d_TextureMap_IsModulate(self)
 
-    def EnableRepeat(self, *args) -> "void" :
+    def EnableRepeat(self):
         """
         * use this methods if you want to enable texture repetition on your objects.
 
         :rtype: None
 
         """
-        return _Graphic3d.Graphic3d_TextureMap_EnableRepeat(self, *args)
+        return _Graphic3d.Graphic3d_TextureMap_EnableRepeat(self)
 
-    def DisableRepeat(self, *args) -> "void" :
+    def DisableRepeat(self):
         """
         * use this methods if you want to disable texture repetition on your objects.
 
         :rtype: None
 
         """
-        return _Graphic3d.Graphic3d_TextureMap_DisableRepeat(self, *args)
+        return _Graphic3d.Graphic3d_TextureMap_DisableRepeat(self)
 
-    def IsRepeat(self, *args) -> "Standard_Boolean" :
+    def IsRepeat(self):
         """
         * Returns True if the texture repeat is enable.
 
         :rtype: bool
 
         """
-        return _Graphic3d.Graphic3d_TextureMap_IsRepeat(self, *args)
+        return _Graphic3d.Graphic3d_TextureMap_IsRepeat(self)
 
-    def AnisoFilter(self, *args) -> "Graphic3d_LevelOfTextureAnisotropy" :
+    def AnisoFilter(self):
         """
         * returns level of anisontropy texture filter. Default value is Graphic3d_LOTA_OFF.
 
         :rtype: Graphic3d_LevelOfTextureAnisotropy
 
         """
-        return _Graphic3d.Graphic3d_TextureMap_AnisoFilter(self, *args)
+        return _Graphic3d.Graphic3d_TextureMap_AnisoFilter(self)
 
-    def SetAnisoFilter(self, *args) -> "void" :
+    def SetAnisoFilter(self, *args):
         """
         * @param theLevel level of anisontropy texture filter.
 
@@ -11947,11 +13191,11 @@ class Graphic3d_TextureMap(Graphic3d_TextureRoot):
         """
         return _Graphic3d.Graphic3d_TextureMap_SetAnisoFilter(self, *args)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Graphic3d_TextureMap self)"""
         return _Graphic3d.Graphic3d_TextureMap__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Graphic3d_TextureMap" :
+    def GetHandle(self):
         """GetHandle(Graphic3d_TextureMap self) -> Handle_Graphic3d_TextureMap"""
         return _Graphic3d.Graphic3d_TextureMap_GetHandle(self)
 
@@ -12000,7 +13244,7 @@ Handle_Graphic3d_TextureMap._kill_pointed = new_instancemethod(_Graphic3d.Handle
 Handle_Graphic3d_TextureMap_swigregister = _Graphic3d.Handle_Graphic3d_TextureMap_swigregister
 Handle_Graphic3d_TextureMap_swigregister(Handle_Graphic3d_TextureMap)
 
-def Handle_Graphic3d_TextureMap_DownCast(*args) -> "Handle_Graphic3d_TextureMap const" :
+def Handle_Graphic3d_TextureMap_DownCast(*args):
   return _Graphic3d.Handle_Graphic3d_TextureMap_DownCast(*args)
 Handle_Graphic3d_TextureMap_DownCast = _Graphic3d.Handle_Graphic3d_TextureMap_DownCast
 
@@ -12008,42 +13252,42 @@ class Graphic3d_Texture1D(Graphic3d_TextureMap):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def Name(self, *args) -> "Graphic3d_NameOfTexture1D" :
+    def Name(self):
         """
         * Returns the name of the predefined textures or NOT_1D_UNKNOWN when the name is given as a filename.
 
         :rtype: Graphic3d_NameOfTexture1D
 
         """
-        return _Graphic3d.Graphic3d_Texture1D_Name(self, *args)
+        return _Graphic3d.Graphic3d_Texture1D_Name(self)
 
-    def NumberOfTextures(*args) -> "Standard_Integer" :
+    def NumberOfTextures():
         """
         * Returns the number of predefined textures.
 
         :rtype: int
 
         """
-        return _Graphic3d.Graphic3d_Texture1D_NumberOfTextures(*args)
+        return _Graphic3d.Graphic3d_Texture1D_NumberOfTextures()
 
     NumberOfTextures = staticmethod(NumberOfTextures)
-    def TextureName(*args) -> "TCollection_AsciiString" :
+    def TextureName(*args):
         """
         * Returns the name of the predefined texture of rank <aRank>
 
         :param aRank:
-        :type aRank: int
+        :type aRank: Standard_Integer
         :rtype: TCollection_AsciiString
 
         """
         return _Graphic3d.Graphic3d_Texture1D_TextureName(*args)
 
     TextureName = staticmethod(TextureName)
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Graphic3d_Texture1D self)"""
         return _Graphic3d.Graphic3d_Texture1D__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Graphic3d_Texture1D" :
+    def GetHandle(self):
         """GetHandle(Graphic3d_Texture1D self) -> Handle_Graphic3d_Texture1D"""
         return _Graphic3d.Graphic3d_Texture1D_GetHandle(self)
 
@@ -12061,21 +13305,21 @@ Graphic3d_Texture1D.GetHandle = new_instancemethod(_Graphic3d.Graphic3d_Texture1
 Graphic3d_Texture1D_swigregister = _Graphic3d.Graphic3d_Texture1D_swigregister
 Graphic3d_Texture1D_swigregister(Graphic3d_Texture1D)
 
-def Graphic3d_Texture1D_NumberOfTextures(*args) -> "Standard_Integer" :
+def Graphic3d_Texture1D_NumberOfTextures():
   """
     * Returns the number of predefined textures.
 
     :rtype: int
 
     """
-  return _Graphic3d.Graphic3d_Texture1D_NumberOfTextures(*args)
+  return _Graphic3d.Graphic3d_Texture1D_NumberOfTextures()
 
-def Graphic3d_Texture1D_TextureName(*args) -> "TCollection_AsciiString" :
+def Graphic3d_Texture1D_TextureName(*args):
   """
     * Returns the name of the predefined texture of rank <aRank>
 
     :param aRank:
-    :type aRank: int
+    :type aRank: Standard_Integer
     :rtype: TCollection_AsciiString
 
     """
@@ -12102,7 +13346,7 @@ Handle_Graphic3d_Texture1D._kill_pointed = new_instancemethod(_Graphic3d.Handle_
 Handle_Graphic3d_Texture1D_swigregister = _Graphic3d.Handle_Graphic3d_Texture1D_swigregister
 Handle_Graphic3d_Texture1D_swigregister(Handle_Graphic3d_Texture1D)
 
-def Handle_Graphic3d_Texture1D_DownCast(*args) -> "Handle_Graphic3d_Texture1D const" :
+def Handle_Graphic3d_Texture1D_DownCast(*args):
   return _Graphic3d.Handle_Graphic3d_Texture1D_DownCast(*args)
 Handle_Graphic3d_Texture1D_DownCast = _Graphic3d.Handle_Graphic3d_Texture1D_DownCast
 
@@ -12110,42 +13354,42 @@ class Graphic3d_Texture2D(Graphic3d_TextureMap):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def Name(self, *args) -> "Graphic3d_NameOfTexture2D" :
+    def Name(self):
         """
         * Returns the name of the predefined textures or NOT_2D_UNKNOWN when the name is given as a filename.
 
         :rtype: Graphic3d_NameOfTexture2D
 
         """
-        return _Graphic3d.Graphic3d_Texture2D_Name(self, *args)
+        return _Graphic3d.Graphic3d_Texture2D_Name(self)
 
-    def NumberOfTextures(*args) -> "Standard_Integer" :
+    def NumberOfTextures():
         """
         * Returns the number of predefined textures.
 
         :rtype: int
 
         """
-        return _Graphic3d.Graphic3d_Texture2D_NumberOfTextures(*args)
+        return _Graphic3d.Graphic3d_Texture2D_NumberOfTextures()
 
     NumberOfTextures = staticmethod(NumberOfTextures)
-    def TextureName(*args) -> "TCollection_AsciiString" :
+    def TextureName(*args):
         """
         * Returns the name of the predefined texture of rank <aRank>
 
         :param theRank:
-        :type theRank: int
+        :type theRank: Standard_Integer
         :rtype: TCollection_AsciiString
 
         """
         return _Graphic3d.Graphic3d_Texture2D_TextureName(*args)
 
     TextureName = staticmethod(TextureName)
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Graphic3d_Texture2D self)"""
         return _Graphic3d.Graphic3d_Texture2D__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Graphic3d_Texture2D" :
+    def GetHandle(self):
         """GetHandle(Graphic3d_Texture2D self) -> Handle_Graphic3d_Texture2D"""
         return _Graphic3d.Graphic3d_Texture2D_GetHandle(self)
 
@@ -12163,21 +13407,21 @@ Graphic3d_Texture2D.GetHandle = new_instancemethod(_Graphic3d.Graphic3d_Texture2
 Graphic3d_Texture2D_swigregister = _Graphic3d.Graphic3d_Texture2D_swigregister
 Graphic3d_Texture2D_swigregister(Graphic3d_Texture2D)
 
-def Graphic3d_Texture2D_NumberOfTextures(*args) -> "Standard_Integer" :
+def Graphic3d_Texture2D_NumberOfTextures():
   """
     * Returns the number of predefined textures.
 
     :rtype: int
 
     """
-  return _Graphic3d.Graphic3d_Texture2D_NumberOfTextures(*args)
+  return _Graphic3d.Graphic3d_Texture2D_NumberOfTextures()
 
-def Graphic3d_Texture2D_TextureName(*args) -> "TCollection_AsciiString" :
+def Graphic3d_Texture2D_TextureName(*args):
   """
     * Returns the name of the predefined texture of rank <aRank>
 
     :param theRank:
-    :type theRank: int
+    :type theRank: Standard_Integer
     :rtype: TCollection_AsciiString
 
     """
@@ -12204,7 +13448,7 @@ Handle_Graphic3d_Texture2D._kill_pointed = new_instancemethod(_Graphic3d.Handle_
 Handle_Graphic3d_Texture2D_swigregister = _Graphic3d.Handle_Graphic3d_Texture2D_swigregister
 Handle_Graphic3d_Texture2D_swigregister(Handle_Graphic3d_Texture2D)
 
-def Handle_Graphic3d_Texture2D_DownCast(*args) -> "Handle_Graphic3d_Texture2D const" :
+def Handle_Graphic3d_Texture2D_DownCast(*args):
   return _Graphic3d.Handle_Graphic3d_Texture2D_DownCast(*args)
 Handle_Graphic3d_Texture2D_DownCast = _Graphic3d.Handle_Graphic3d_Texture2D_DownCast
 
@@ -12233,11 +13477,11 @@ class Graphic3d_Texture1Dmanual(Graphic3d_Texture1D):
 
         """
         _Graphic3d.Graphic3d_Texture1Dmanual_swiginit(self,_Graphic3d.new_Graphic3d_Texture1Dmanual(*args))
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Graphic3d_Texture1Dmanual self)"""
         return _Graphic3d.Graphic3d_Texture1Dmanual__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Graphic3d_Texture1Dmanual" :
+    def GetHandle(self):
         """GetHandle(Graphic3d_Texture1Dmanual self) -> Handle_Graphic3d_Texture1Dmanual"""
         return _Graphic3d.Graphic3d_Texture1Dmanual_GetHandle(self)
 
@@ -12275,7 +13519,7 @@ Handle_Graphic3d_Texture1Dmanual._kill_pointed = new_instancemethod(_Graphic3d.H
 Handle_Graphic3d_Texture1Dmanual_swigregister = _Graphic3d.Handle_Graphic3d_Texture1Dmanual_swigregister
 Handle_Graphic3d_Texture1Dmanual_swigregister(Handle_Graphic3d_Texture1Dmanual)
 
-def Handle_Graphic3d_Texture1Dmanual_DownCast(*args) -> "Handle_Graphic3d_Texture1Dmanual const" :
+def Handle_Graphic3d_Texture1Dmanual_DownCast(*args):
   return _Graphic3d.Handle_Graphic3d_Texture1Dmanual_DownCast(*args)
 Handle_Graphic3d_Texture1Dmanual_DownCast = _Graphic3d.Handle_Graphic3d_Texture1Dmanual_DownCast
 
@@ -12304,7 +13548,7 @@ class Graphic3d_Texture1Dsegment(Graphic3d_Texture1D):
 
         """
         _Graphic3d.Graphic3d_Texture1Dsegment_swiginit(self,_Graphic3d.new_Graphic3d_Texture1Dsegment(*args))
-    def SetSegment(self, *args) -> "void" :
+    def SetSegment(self, *args):
         """
         * Sets the texture application bounds. Defines the way the texture is stretched across facets. Default values are <0.0, 0.0, 0.0> , <0.0, 0.0, 1.0>
 
@@ -12325,7 +13569,7 @@ class Graphic3d_Texture1Dsegment(Graphic3d_Texture1D):
         """
         return _Graphic3d.Graphic3d_Texture1Dsegment_SetSegment(self, *args)
 
-    def Segment(self, *args) -> "void" :
+    def Segment(self, *args):
         """
         * Returns the values of the current segment X1, Y1, Z1 , X2, Y2, Z2.
 
@@ -12346,11 +13590,11 @@ class Graphic3d_Texture1Dsegment(Graphic3d_Texture1D):
         """
         return _Graphic3d.Graphic3d_Texture1Dsegment_Segment(self, *args)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Graphic3d_Texture1Dsegment self)"""
         return _Graphic3d.Graphic3d_Texture1Dsegment__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Graphic3d_Texture1Dsegment" :
+    def GetHandle(self):
         """GetHandle(Graphic3d_Texture1Dsegment self) -> Handle_Graphic3d_Texture1Dsegment"""
         return _Graphic3d.Graphic3d_Texture1Dsegment_GetHandle(self)
 
@@ -12390,7 +13634,7 @@ Handle_Graphic3d_Texture1Dsegment._kill_pointed = new_instancemethod(_Graphic3d.
 Handle_Graphic3d_Texture1Dsegment_swigregister = _Graphic3d.Handle_Graphic3d_Texture1Dsegment_swigregister
 Handle_Graphic3d_Texture1Dsegment_swigregister(Handle_Graphic3d_Texture1Dsegment)
 
-def Handle_Graphic3d_Texture1Dsegment_DownCast(*args) -> "Handle_Graphic3d_Texture1Dsegment const" :
+def Handle_Graphic3d_Texture1Dsegment_DownCast(*args):
   return _Graphic3d.Handle_Graphic3d_Texture1Dsegment_DownCast(*args)
 Handle_Graphic3d_Texture1Dsegment_DownCast = _Graphic3d.Handle_Graphic3d_Texture1Dsegment_DownCast
 
@@ -12419,11 +13663,11 @@ class Graphic3d_Texture2Dmanual(Graphic3d_Texture2D):
 
         """
         _Graphic3d.Graphic3d_Texture2Dmanual_swiginit(self,_Graphic3d.new_Graphic3d_Texture2Dmanual(*args))
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Graphic3d_Texture2Dmanual self)"""
         return _Graphic3d.Graphic3d_Texture2Dmanual__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Graphic3d_Texture2Dmanual" :
+    def GetHandle(self):
         """GetHandle(Graphic3d_Texture2Dmanual self) -> Handle_Graphic3d_Texture2Dmanual"""
         return _Graphic3d.Graphic3d_Texture2Dmanual_GetHandle(self)
 
@@ -12461,7 +13705,7 @@ Handle_Graphic3d_Texture2Dmanual._kill_pointed = new_instancemethod(_Graphic3d.H
 Handle_Graphic3d_Texture2Dmanual_swigregister = _Graphic3d.Handle_Graphic3d_Texture2Dmanual_swigregister
 Handle_Graphic3d_Texture2Dmanual_swigregister(Handle_Graphic3d_Texture2Dmanual)
 
-def Handle_Graphic3d_Texture2Dmanual_DownCast(*args) -> "Handle_Graphic3d_Texture2Dmanual const" :
+def Handle_Graphic3d_Texture2Dmanual_DownCast(*args):
   return _Graphic3d.Handle_Graphic3d_Texture2Dmanual_DownCast(*args)
 Handle_Graphic3d_Texture2Dmanual_DownCast = _Graphic3d.Handle_Graphic3d_Texture2Dmanual_DownCast
 
@@ -12490,7 +13734,7 @@ class Graphic3d_Texture2Dplane(Graphic3d_Texture2D):
 
         """
         _Graphic3d.Graphic3d_Texture2Dplane_swiginit(self,_Graphic3d.new_Graphic3d_Texture2Dplane(*args))
-    def SetPlaneS(self, *args) -> "void" :
+    def SetPlaneS(self, *args):
         """
         * Defines the texture projection plane for texture coordinate S default is <1.0, 0.0, 0.0, 0.0>
 
@@ -12507,7 +13751,7 @@ class Graphic3d_Texture2Dplane(Graphic3d_Texture2D):
         """
         return _Graphic3d.Graphic3d_Texture2Dplane_SetPlaneS(self, *args)
 
-    def SetPlaneT(self, *args) -> "void" :
+    def SetPlaneT(self, *args):
         """
         * Defines the texture projection plane for texture coordinate T default is <0.0, 1.0, 0.0, 0.0>
 
@@ -12524,7 +13768,7 @@ class Graphic3d_Texture2Dplane(Graphic3d_Texture2D):
         """
         return _Graphic3d.Graphic3d_Texture2Dplane_SetPlaneT(self, *args)
 
-    def SetPlane(self, *args) -> "void" :
+    def SetPlane(self, *args):
         """
         * Defines the texture projection plane for both S and T texture coordinate default is NOTP_XY meaning: <1.0, 0.0, 0.0, 0.0> for S and <0.0, 1.0, 0.0, 0.0> for T
 
@@ -12535,7 +13779,7 @@ class Graphic3d_Texture2Dplane(Graphic3d_Texture2D):
         """
         return _Graphic3d.Graphic3d_Texture2Dplane_SetPlane(self, *args)
 
-    def SetScaleS(self, *args) -> "void" :
+    def SetScaleS(self, *args):
         """
         * Defines the texture scale for the S texture coordinate much easier than recomputing the S plane equation but the result is the same default to 1.0
 
@@ -12546,7 +13790,7 @@ class Graphic3d_Texture2Dplane(Graphic3d_Texture2D):
         """
         return _Graphic3d.Graphic3d_Texture2Dplane_SetScaleS(self, *args)
 
-    def SetScaleT(self, *args) -> "void" :
+    def SetScaleT(self, *args):
         """
         * Defines the texture scale for the T texture coordinate much easier than recompution the T plane equation but the result is the same default to 1.0
 
@@ -12557,7 +13801,7 @@ class Graphic3d_Texture2Dplane(Graphic3d_Texture2D):
         """
         return _Graphic3d.Graphic3d_Texture2Dplane_SetScaleT(self, *args)
 
-    def SetTranslateS(self, *args) -> "void" :
+    def SetTranslateS(self, *args):
         """
         * Defines the texture translation for the S texture coordinate you can obtain the same effect by modifying the S plane equation but its not easier. default to 0.0
 
@@ -12568,7 +13812,7 @@ class Graphic3d_Texture2Dplane(Graphic3d_Texture2D):
         """
         return _Graphic3d.Graphic3d_Texture2Dplane_SetTranslateS(self, *args)
 
-    def SetTranslateT(self, *args) -> "void" :
+    def SetTranslateT(self, *args):
         """
         * Defines the texture translation for the T texture coordinate you can obtain the same effect by modifying the T plane equation but its not easier. default to 0.0
 
@@ -12579,7 +13823,7 @@ class Graphic3d_Texture2Dplane(Graphic3d_Texture2D):
         """
         return _Graphic3d.Graphic3d_Texture2Dplane_SetTranslateT(self, *args)
 
-    def SetRotation(self, *args) -> "void" :
+    def SetRotation(self, *args):
         """
         * Sets the rotation angle of the whole texture. the same result might be achieved by recomputing the S and T plane equation but it's not the easiest way... the angle is expressed in degrees default is 0.0
 
@@ -12590,16 +13834,16 @@ class Graphic3d_Texture2Dplane(Graphic3d_Texture2D):
         """
         return _Graphic3d.Graphic3d_Texture2Dplane_SetRotation(self, *args)
 
-    def Plane(self, *args) -> "Graphic3d_NameOfTexturePlane" :
+    def Plane(self):
         """
         * Returns the current texture plane name or NOTP_UNKNOWN when the plane is user defined.
 
         :rtype: Graphic3d_NameOfTexturePlane
 
         """
-        return _Graphic3d.Graphic3d_Texture2Dplane_Plane(self, *args)
+        return _Graphic3d.Graphic3d_Texture2Dplane_Plane(self)
 
-    def PlaneS(self, *args) -> "void" :
+    def PlaneS(self, *args):
         """
         * Returns the current texture plane S equation
 
@@ -12616,7 +13860,7 @@ class Graphic3d_Texture2Dplane(Graphic3d_Texture2D):
         """
         return _Graphic3d.Graphic3d_Texture2Dplane_PlaneS(self, *args)
 
-    def PlaneT(self, *args) -> "void" :
+    def PlaneT(self, *args):
         """
         * Returns the current texture plane T equation
 
@@ -12633,7 +13877,7 @@ class Graphic3d_Texture2Dplane(Graphic3d_Texture2D):
         """
         return _Graphic3d.Graphic3d_Texture2Dplane_PlaneT(self, *args)
 
-    def TranslateS(self, *args) -> "void" :
+    def TranslateS(self, *args):
         """
         * Returns the current texture S translation value
 
@@ -12644,7 +13888,7 @@ class Graphic3d_Texture2Dplane(Graphic3d_Texture2D):
         """
         return _Graphic3d.Graphic3d_Texture2Dplane_TranslateS(self, *args)
 
-    def TranslateT(self, *args) -> "void" :
+    def TranslateT(self, *args):
         """
         * Returns the current texture T translation value
 
@@ -12655,7 +13899,7 @@ class Graphic3d_Texture2Dplane(Graphic3d_Texture2D):
         """
         return _Graphic3d.Graphic3d_Texture2Dplane_TranslateT(self, *args)
 
-    def ScaleS(self, *args) -> "void" :
+    def ScaleS(self, *args):
         """
         * Returns the current texture S scale value
 
@@ -12666,7 +13910,7 @@ class Graphic3d_Texture2Dplane(Graphic3d_Texture2D):
         """
         return _Graphic3d.Graphic3d_Texture2Dplane_ScaleS(self, *args)
 
-    def ScaleT(self, *args) -> "void" :
+    def ScaleT(self, *args):
         """
         * Returns the current texture T scale value
 
@@ -12677,7 +13921,7 @@ class Graphic3d_Texture2Dplane(Graphic3d_Texture2D):
         """
         return _Graphic3d.Graphic3d_Texture2Dplane_ScaleT(self, *args)
 
-    def Rotation(self, *args) -> "void" :
+    def Rotation(self, *args):
         """
         * Returns the current texture rotation angle
 
@@ -12688,11 +13932,11 @@ class Graphic3d_Texture2Dplane(Graphic3d_Texture2D):
         """
         return _Graphic3d.Graphic3d_Texture2Dplane_Rotation(self, *args)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Graphic3d_Texture2Dplane self)"""
         return _Graphic3d.Graphic3d_Texture2Dplane__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Graphic3d_Texture2Dplane" :
+    def GetHandle(self):
         """GetHandle(Graphic3d_Texture2Dplane self) -> Handle_Graphic3d_Texture2Dplane"""
         return _Graphic3d.Graphic3d_Texture2Dplane_GetHandle(self)
 
@@ -12746,7 +13990,7 @@ Handle_Graphic3d_Texture2Dplane._kill_pointed = new_instancemethod(_Graphic3d.Ha
 Handle_Graphic3d_Texture2Dplane_swigregister = _Graphic3d.Handle_Graphic3d_Texture2Dplane_swigregister
 Handle_Graphic3d_Texture2Dplane_swigregister(Handle_Graphic3d_Texture2Dplane)
 
-def Handle_Graphic3d_Texture2Dplane_DownCast(*args) -> "Handle_Graphic3d_Texture2Dplane const" :
+def Handle_Graphic3d_Texture2Dplane_DownCast(*args):
   return _Graphic3d.Handle_Graphic3d_Texture2Dplane_DownCast(*args)
 Handle_Graphic3d_Texture2Dplane_DownCast = _Graphic3d.Handle_Graphic3d_Texture2Dplane_DownCast
 

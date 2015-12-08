@@ -147,13 +147,13 @@ ChFiDS_Tangent = _ChFiDS.ChFiDS_Tangent
 class ChFiDS_CircSection(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _ChFiDS.ChFiDS_CircSection_swiginit(self,_ChFiDS.new_ChFiDS_CircSection(*args))
-    def Set(self, *args) -> "void" :
+        _ChFiDS.ChFiDS_CircSection_swiginit(self,_ChFiDS.new_ChFiDS_CircSection())
+    def Set(self, *args):
         """
         :param C:
         :type C: gp_Circ
@@ -174,7 +174,7 @@ class ChFiDS_CircSection(object):
         """
         return _ChFiDS.ChFiDS_CircSection_Set(self, *args)
 
-    def Get(self, *args) -> "void" :
+    def Get(self, *args):
         """
         :param C:
         :type C: gp_Circ
@@ -212,24 +212,24 @@ ChFiDS_CircSection_swigregister(ChFiDS_CircSection)
 class ChFiDS_CommonPoint(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         * Empty constructor.
 
         :rtype: None
 
         """
-        _ChFiDS.ChFiDS_CommonPoint_swiginit(self,_ChFiDS.new_ChFiDS_CommonPoint(*args))
-    def Reset(self, *args) -> "void" :
+        _ChFiDS.ChFiDS_CommonPoint_swiginit(self,_ChFiDS.new_ChFiDS_CommonPoint())
+    def Reset(self):
         """
         * default value for all fields
 
         :rtype: None
 
         """
-        return _ChFiDS.ChFiDS_CommonPoint_Reset(self, *args)
+        return _ChFiDS.ChFiDS_CommonPoint_Reset(self)
 
-    def SetVertex(self, *args) -> "void" :
+    def SetVertex(self, *args):
         """
         * Sets the values of a point which is a vertex on the initial facet of restriction of one of the surface.
 
@@ -240,7 +240,7 @@ class ChFiDS_CommonPoint(object):
         """
         return _ChFiDS.ChFiDS_CommonPoint_SetVertex(self, *args)
 
-    def SetArc(self, *args) -> "void" :
+    def SetArc(self, *args):
         """
         * Sets the values of a point which is on the arc A, at parameter Param.
 
@@ -257,7 +257,7 @@ class ChFiDS_CommonPoint(object):
         """
         return _ChFiDS.ChFiDS_CommonPoint_SetArc(self, *args)
 
-    def SetParameter(self, *args) -> "void" :
+    def SetParameter(self, *args):
         """
         * Sets the value of the parameter on the spine
 
@@ -268,7 +268,7 @@ class ChFiDS_CommonPoint(object):
         """
         return _ChFiDS.ChFiDS_CommonPoint_SetParameter(self, *args)
 
-    def SetPoint(self, *args) -> "void" :
+    def SetPoint(self, *args):
         """
         * Set the 3d point for a commonpoint that is not a vertex or on an arc.
 
@@ -279,7 +279,7 @@ class ChFiDS_CommonPoint(object):
         """
         return _ChFiDS.ChFiDS_CommonPoint_SetPoint(self, *args)
 
-    def SetVector(self, *args) -> "void" :
+    def SetVector(self, *args):
         """
         * Set the output 3d vector
 
@@ -290,7 +290,7 @@ class ChFiDS_CommonPoint(object):
         """
         return _ChFiDS.ChFiDS_CommonPoint_SetVector(self, *args)
 
-    def SetTolerance(self, *args) -> "void" :
+    def SetTolerance(self, *args):
         """
         * This method set the fuzziness on the point.
 
@@ -301,104 +301,104 @@ class ChFiDS_CommonPoint(object):
         """
         return _ChFiDS.ChFiDS_CommonPoint_SetTolerance(self, *args)
 
-    def Tolerance(self, *args) -> "Standard_Real" :
+    def Tolerance(self):
         """
         * This method returns the fuzziness on the point.
 
         :rtype: float
 
         """
-        return _ChFiDS.ChFiDS_CommonPoint_Tolerance(self, *args)
+        return _ChFiDS.ChFiDS_CommonPoint_Tolerance(self)
 
-    def IsVertex(self, *args) -> "Standard_Boolean" :
+    def IsVertex(self):
         """
         * Returns True if the point is a vertex on the initial restriction facet of the surface.
 
         :rtype: bool
 
         """
-        return _ChFiDS.ChFiDS_CommonPoint_IsVertex(self, *args)
+        return _ChFiDS.ChFiDS_CommonPoint_IsVertex(self)
 
-    def Vertex(self, *args) -> "TopoDS_Vertex const" :
+    def Vertex(self):
         """
         * Returns the information about the point when it is on the domain of the first patch, i-e when the function IsVertex returns True. Otherwise, an exception is raised.
 
         :rtype: TopoDS_Vertex
 
         """
-        return _ChFiDS.ChFiDS_CommonPoint_Vertex(self, *args)
+        return _ChFiDS.ChFiDS_CommonPoint_Vertex(self)
 
-    def IsOnArc(self, *args) -> "Standard_Boolean" :
+    def IsOnArc(self):
         """
         * Returns True if the point is a on an edge of the initial restriction facet of the surface.
 
         :rtype: bool
 
         """
-        return _ChFiDS.ChFiDS_CommonPoint_IsOnArc(self, *args)
+        return _ChFiDS.ChFiDS_CommonPoint_IsOnArc(self)
 
-    def Arc(self, *args) -> "TopoDS_Edge const" :
+    def Arc(self):
         """
         * Returns the arc of restriction containing the vertex.
 
         :rtype: TopoDS_Edge
 
         """
-        return _ChFiDS.ChFiDS_CommonPoint_Arc(self, *args)
+        return _ChFiDS.ChFiDS_CommonPoint_Arc(self)
 
-    def TransitionOnArc(self, *args) -> "TopAbs_Orientation" :
+    def TransitionOnArc(self):
         """
         * Returns the transition of the point on the arc returned by Arc().
 
         :rtype: TopAbs_Orientation
 
         """
-        return _ChFiDS.ChFiDS_CommonPoint_TransitionOnArc(self, *args)
+        return _ChFiDS.ChFiDS_CommonPoint_TransitionOnArc(self)
 
-    def ParameterOnArc(self, *args) -> "Standard_Real" :
+    def ParameterOnArc(self):
         """
         * Returns the parameter of the point on the arc returned by the method Arc().
 
         :rtype: float
 
         """
-        return _ChFiDS.ChFiDS_CommonPoint_ParameterOnArc(self, *args)
+        return _ChFiDS.ChFiDS_CommonPoint_ParameterOnArc(self)
 
-    def Parameter(self, *args) -> "Standard_Real" :
+    def Parameter(self):
         """
         * Returns the parameter the paramter on the spine
 
         :rtype: float
 
         """
-        return _ChFiDS.ChFiDS_CommonPoint_Parameter(self, *args)
+        return _ChFiDS.ChFiDS_CommonPoint_Parameter(self)
 
-    def Point(self, *args) -> "gp_Pnt const" :
+    def Point(self):
         """
         * Returns the 3d point
 
         :rtype: gp_Pnt
 
         """
-        return _ChFiDS.ChFiDS_CommonPoint_Point(self, *args)
+        return _ChFiDS.ChFiDS_CommonPoint_Point(self)
 
-    def HasVector(self, *args) -> "Standard_Boolean" :
+    def HasVector(self):
         """
         * Returns True if the output vector is stored.
 
         :rtype: bool
 
         """
-        return _ChFiDS.ChFiDS_CommonPoint_HasVector(self, *args)
+        return _ChFiDS.ChFiDS_CommonPoint_HasVector(self)
 
-    def Vector(self, *args) -> "gp_Vec const" :
+    def Vector(self):
         """
         * Returns the output 3d vector
 
         :rtype: gp_Vec
 
         """
-        return _ChFiDS.ChFiDS_CommonPoint_Vector(self, *args)
+        return _ChFiDS.ChFiDS_CommonPoint_Vector(self)
 
     def __del__(self):
     	try:
@@ -433,13 +433,13 @@ ChFiDS_CommonPoint_swigregister(ChFiDS_CommonPoint)
 class ChFiDS_ElSpine(OCC.Adaptor3d.Adaptor3d_Curve):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _ChFiDS.ChFiDS_ElSpine_swiginit(self,_ChFiDS.new_ChFiDS_ElSpine(*args))
-    def SetPeriodic(self, *args) -> "void" :
+        _ChFiDS.ChFiDS_ElSpine_swiginit(self,_ChFiDS.new_ChFiDS_ElSpine())
+    def SetPeriodic(self, *args):
         """
         :param I:
         :type I: bool
@@ -448,7 +448,7 @@ class ChFiDS_ElSpine(OCC.Adaptor3d.Adaptor3d_Curve):
         """
         return _ChFiDS.ChFiDS_ElSpine_SetPeriodic(self, *args)
 
-    def FirstParameter(self, *args) -> "void" :
+    def FirstParameter(self, *args):
         """
         :rtype: float
 
@@ -459,7 +459,7 @@ class ChFiDS_ElSpine(OCC.Adaptor3d.Adaptor3d_Curve):
         """
         return _ChFiDS.ChFiDS_ElSpine_FirstParameter(self, *args)
 
-    def LastParameter(self, *args) -> "void" :
+    def LastParameter(self, *args):
         """
         :rtype: float
 
@@ -470,7 +470,7 @@ class ChFiDS_ElSpine(OCC.Adaptor3d.Adaptor3d_Curve):
         """
         return _ChFiDS.ChFiDS_ElSpine_LastParameter(self, *args)
 
-    def SetOrigin(self, *args) -> "void" :
+    def SetOrigin(self, *args):
         """
         :param O:
         :type O: float
@@ -479,7 +479,7 @@ class ChFiDS_ElSpine(OCC.Adaptor3d.Adaptor3d_Curve):
         """
         return _ChFiDS.ChFiDS_ElSpine_SetOrigin(self, *args)
 
-    def FirstPointAndTgt(self, *args) -> "void" :
+    def FirstPointAndTgt(self, *args):
         """
         :param P:
         :type P: gp_Pnt
@@ -490,7 +490,7 @@ class ChFiDS_ElSpine(OCC.Adaptor3d.Adaptor3d_Curve):
         """
         return _ChFiDS.ChFiDS_ElSpine_FirstPointAndTgt(self, *args)
 
-    def LastPointAndTgt(self, *args) -> "void" :
+    def LastPointAndTgt(self, *args):
         """
         :param P:
         :type P: gp_Pnt
@@ -501,7 +501,7 @@ class ChFiDS_ElSpine(OCC.Adaptor3d.Adaptor3d_Curve):
         """
         return _ChFiDS.ChFiDS_ElSpine_LastPointAndTgt(self, *args)
 
-    def SetFirstPointAndTgt(self, *args) -> "void" :
+    def SetFirstPointAndTgt(self, *args):
         """
         :param P:
         :type P: gp_Pnt
@@ -512,7 +512,7 @@ class ChFiDS_ElSpine(OCC.Adaptor3d.Adaptor3d_Curve):
         """
         return _ChFiDS.ChFiDS_ElSpine_SetFirstPointAndTgt(self, *args)
 
-    def SetLastPointAndTgt(self, *args) -> "void" :
+    def SetLastPointAndTgt(self, *args):
         """
         :param P:
         :type P: gp_Pnt
@@ -523,7 +523,7 @@ class ChFiDS_ElSpine(OCC.Adaptor3d.Adaptor3d_Curve):
         """
         return _ChFiDS.ChFiDS_ElSpine_SetLastPointAndTgt(self, *args)
 
-    def SetCurve(self, *args) -> "void" :
+    def SetCurve(self, *args):
         """
         :param C:
         :type C: Handle_Geom_Curve &
@@ -532,33 +532,33 @@ class ChFiDS_ElSpine(OCC.Adaptor3d.Adaptor3d_Curve):
         """
         return _ChFiDS.ChFiDS_ElSpine_SetCurve(self, *args)
 
-    def Previous(self, *args) -> "Handle_ChFiDS_SurfData const &" :
+    def Previous(self):
         """
         :rtype: Handle_ChFiDS_SurfData
 
         """
-        return _ChFiDS.ChFiDS_ElSpine_Previous(self, *args)
+        return _ChFiDS.ChFiDS_ElSpine_Previous(self)
 
-    def ChangePrevious(self, *args) -> "Handle_ChFiDS_SurfData &" :
+    def ChangePrevious(self):
         """
         :rtype: Handle_ChFiDS_SurfData
 
         """
-        return _ChFiDS.ChFiDS_ElSpine_ChangePrevious(self, *args)
+        return _ChFiDS.ChFiDS_ElSpine_ChangePrevious(self)
 
-    def Next(self, *args) -> "Handle_ChFiDS_SurfData const &" :
+    def Next(self):
         """
         :rtype: Handle_ChFiDS_SurfData
 
         """
-        return _ChFiDS.ChFiDS_ElSpine_Next(self, *args)
+        return _ChFiDS.ChFiDS_ElSpine_Next(self)
 
-    def ChangeNext(self, *args) -> "Handle_ChFiDS_SurfData &" :
+    def ChangeNext(self):
         """
         :rtype: Handle_ChFiDS_SurfData
 
         """
-        return _ChFiDS.ChFiDS_ElSpine_ChangeNext(self, *args)
+        return _ChFiDS.ChFiDS_ElSpine_ChangeNext(self)
 
     def __del__(self):
     	try:
@@ -588,16 +588,16 @@ ChFiDS_ElSpine_swigregister(ChFiDS_ElSpine)
 class ChFiDS_FaceInterference(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _ChFiDS.ChFiDS_FaceInterference_swiginit(self,_ChFiDS.new_ChFiDS_FaceInterference(*args))
-    def SetInterference(self, *args) -> "void" :
+        _ChFiDS.ChFiDS_FaceInterference_swiginit(self,_ChFiDS.new_ChFiDS_FaceInterference())
+    def SetInterference(self, *args):
         """
         :param LineIndex:
-        :type LineIndex: int
+        :type LineIndex: Standard_Integer
         :param Trans:
         :type Trans: TopAbs_Orientation
         :param PCurv1:
@@ -609,7 +609,7 @@ class ChFiDS_FaceInterference(object):
         """
         return _ChFiDS.ChFiDS_FaceInterference_SetInterference(self, *args)
 
-    def SetTransition(self, *args) -> "void" :
+    def SetTransition(self, *args):
         """
         :param Trans:
         :type Trans: TopAbs_Orientation
@@ -618,7 +618,7 @@ class ChFiDS_FaceInterference(object):
         """
         return _ChFiDS.ChFiDS_FaceInterference_SetTransition(self, *args)
 
-    def SetFirstParameter(self, *args) -> "void" :
+    def SetFirstParameter(self, *args):
         """
         :param U1:
         :type U1: float
@@ -627,7 +627,7 @@ class ChFiDS_FaceInterference(object):
         """
         return _ChFiDS.ChFiDS_FaceInterference_SetFirstParameter(self, *args)
 
-    def SetLastParameter(self, *args) -> "void" :
+    def SetLastParameter(self, *args):
         """
         :param U1:
         :type U1: float
@@ -636,7 +636,7 @@ class ChFiDS_FaceInterference(object):
         """
         return _ChFiDS.ChFiDS_FaceInterference_SetLastParameter(self, *args)
 
-    def SetParameter(self, *args) -> "void" :
+    def SetParameter(self, *args):
         """
         :param U1:
         :type U1: float
@@ -647,72 +647,72 @@ class ChFiDS_FaceInterference(object):
         """
         return _ChFiDS.ChFiDS_FaceInterference_SetParameter(self, *args)
 
-    def LineIndex(self, *args) -> "Standard_Integer" :
+    def LineIndex(self):
         """
         :rtype: int
 
         """
-        return _ChFiDS.ChFiDS_FaceInterference_LineIndex(self, *args)
+        return _ChFiDS.ChFiDS_FaceInterference_LineIndex(self)
 
-    def SetLineIndex(self, *args) -> "void" :
+    def SetLineIndex(self, *args):
         """
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :rtype: None
 
         """
         return _ChFiDS.ChFiDS_FaceInterference_SetLineIndex(self, *args)
 
-    def Transition(self, *args) -> "TopAbs_Orientation" :
+    def Transition(self):
         """
         :rtype: TopAbs_Orientation
 
         """
-        return _ChFiDS.ChFiDS_FaceInterference_Transition(self, *args)
+        return _ChFiDS.ChFiDS_FaceInterference_Transition(self)
 
-    def PCurveOnFace(self, *args) -> "Handle_Geom2d_Curve const &" :
+    def PCurveOnFace(self):
         """
         :rtype: Handle_Geom2d_Curve
 
         """
-        return _ChFiDS.ChFiDS_FaceInterference_PCurveOnFace(self, *args)
+        return _ChFiDS.ChFiDS_FaceInterference_PCurveOnFace(self)
 
-    def PCurveOnSurf(self, *args) -> "Handle_Geom2d_Curve const &" :
+    def PCurveOnSurf(self):
         """
         :rtype: Handle_Geom2d_Curve
 
         """
-        return _ChFiDS.ChFiDS_FaceInterference_PCurveOnSurf(self, *args)
+        return _ChFiDS.ChFiDS_FaceInterference_PCurveOnSurf(self)
 
-    def ChangePCurveOnFace(self, *args) -> "Handle_Geom2d_Curve &" :
+    def ChangePCurveOnFace(self):
         """
         :rtype: Handle_Geom2d_Curve
 
         """
-        return _ChFiDS.ChFiDS_FaceInterference_ChangePCurveOnFace(self, *args)
+        return _ChFiDS.ChFiDS_FaceInterference_ChangePCurveOnFace(self)
 
-    def ChangePCurveOnSurf(self, *args) -> "Handle_Geom2d_Curve &" :
+    def ChangePCurveOnSurf(self):
         """
         :rtype: Handle_Geom2d_Curve
 
         """
-        return _ChFiDS.ChFiDS_FaceInterference_ChangePCurveOnSurf(self, *args)
+        return _ChFiDS.ChFiDS_FaceInterference_ChangePCurveOnSurf(self)
 
-    def FirstParameter(self, *args) -> "Standard_Real" :
+    def FirstParameter(self):
         """
         :rtype: float
 
         """
-        return _ChFiDS.ChFiDS_FaceInterference_FirstParameter(self, *args)
+        return _ChFiDS.ChFiDS_FaceInterference_FirstParameter(self)
 
-    def LastParameter(self, *args) -> "Standard_Real" :
+    def LastParameter(self):
         """
         :rtype: float
 
         """
-        return _ChFiDS.ChFiDS_FaceInterference_LastParameter(self, *args)
+        return _ChFiDS.ChFiDS_FaceInterference_LastParameter(self)
 
-    def Parameter(self, *args) -> "Standard_Real" :
+    def Parameter(self, *args):
         """
         :param IsFirst:
         :type IsFirst: bool
@@ -751,34 +751,34 @@ ChFiDS_FaceInterference_swigregister(ChFiDS_FaceInterference)
 class ChFiDS_HData(OCC.MMgt.MMgt_TShared):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _ChFiDS.ChFiDS_HData_swiginit(self,_ChFiDS.new_ChFiDS_HData(*args))
-    def IsEmpty(self, *args) -> "Standard_Boolean" :
+        _ChFiDS.ChFiDS_HData_swiginit(self,_ChFiDS.new_ChFiDS_HData())
+    def IsEmpty(self):
         """
         :rtype: bool
 
         """
-        return _ChFiDS.ChFiDS_HData_IsEmpty(self, *args)
+        return _ChFiDS.ChFiDS_HData_IsEmpty(self)
 
-    def Length(self, *args) -> "Standard_Integer" :
+    def Length(self):
         """
         :rtype: int
 
         """
-        return _ChFiDS.ChFiDS_HData_Length(self, *args)
+        return _ChFiDS.ChFiDS_HData_Length(self)
 
-    def Clear(self, *args) -> "void" :
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _ChFiDS.ChFiDS_HData_Clear(self, *args)
+        return _ChFiDS.ChFiDS_HData_Clear(self)
 
-    def Append(self, *args) -> "void" :
+    def Append(self, *args):
         """
         :param anItem:
         :type anItem: Handle_ChFiDS_SurfData &
@@ -791,7 +791,7 @@ class ChFiDS_HData(OCC.MMgt.MMgt_TShared):
         """
         return _ChFiDS.ChFiDS_HData_Append(self, *args)
 
-    def Prepend(self, *args) -> "void" :
+    def Prepend(self, *args):
         """
         :param anItem:
         :type anItem: Handle_ChFiDS_SurfData &
@@ -804,23 +804,23 @@ class ChFiDS_HData(OCC.MMgt.MMgt_TShared):
         """
         return _ChFiDS.ChFiDS_HData_Prepend(self, *args)
 
-    def Reverse(self, *args) -> "void" :
+    def Reverse(self):
         """
         :rtype: None
 
         """
-        return _ChFiDS.ChFiDS_HData_Reverse(self, *args)
+        return _ChFiDS.ChFiDS_HData_Reverse(self)
 
-    def InsertBefore(self, *args) -> "void" :
+    def InsertBefore(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :param anItem:
         :type anItem: Handle_ChFiDS_SurfData &
         :rtype: None
 
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :param aSequence:
         :type aSequence: Handle_ChFiDS_HData &
         :rtype: None
@@ -828,16 +828,16 @@ class ChFiDS_HData(OCC.MMgt.MMgt_TShared):
         """
         return _ChFiDS.ChFiDS_HData_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args) -> "void" :
+    def InsertAfter(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :param anItem:
         :type anItem: Handle_ChFiDS_SurfData &
         :rtype: None
 
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :param aSequence:
         :type aSequence: Handle_ChFiDS_HData &
         :rtype: None
@@ -845,30 +845,30 @@ class ChFiDS_HData(OCC.MMgt.MMgt_TShared):
         """
         return _ChFiDS.ChFiDS_HData_InsertAfter(self, *args)
 
-    def Exchange(self, *args) -> "void" :
+    def Exchange(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :param anOtherIndex:
-        :type anOtherIndex: int
+        :type anOtherIndex: Standard_Integer
         :rtype: None
 
         """
         return _ChFiDS.ChFiDS_HData_Exchange(self, *args)
 
-    def Split(self, *args) -> "Handle_ChFiDS_HData" :
+    def Split(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :rtype: Handle_ChFiDS_HData
 
         """
         return _ChFiDS.ChFiDS_HData_Split(self, *args)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :param anItem:
         :type anItem: Handle_ChFiDS_SurfData &
         :rtype: None
@@ -876,65 +876,65 @@ class ChFiDS_HData(OCC.MMgt.MMgt_TShared):
         """
         return _ChFiDS.ChFiDS_HData_SetValue(self, *args)
 
-    def Value(self, *args) -> "Handle_ChFiDS_SurfData const &" :
+    def Value(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :rtype: Handle_ChFiDS_SurfData
 
         """
         return _ChFiDS.ChFiDS_HData_Value(self, *args)
 
-    def ChangeValue(self, *args) -> "Handle_ChFiDS_SurfData &" :
+    def ChangeValue(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :rtype: Handle_ChFiDS_SurfData
 
         """
         return _ChFiDS.ChFiDS_HData_ChangeValue(self, *args)
 
-    def Remove(self, *args) -> "void" :
+    def Remove(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :rtype: None
 
         :param fromIndex:
-        :type fromIndex: int
+        :type fromIndex: Standard_Integer
         :param toIndex:
-        :type toIndex: int
+        :type toIndex: Standard_Integer
         :rtype: None
 
         """
         return _ChFiDS.ChFiDS_HData_Remove(self, *args)
 
-    def Sequence(self, *args) -> "ChFiDS_SequenceOfSurfData const &" :
+    def Sequence(self):
         """
         :rtype: ChFiDS_SequenceOfSurfData
 
         """
-        return _ChFiDS.ChFiDS_HData_Sequence(self, *args)
+        return _ChFiDS.ChFiDS_HData_Sequence(self)
 
-    def ChangeSequence(self, *args) -> "ChFiDS_SequenceOfSurfData &" :
+    def ChangeSequence(self):
         """
         :rtype: ChFiDS_SequenceOfSurfData
 
         """
-        return _ChFiDS.ChFiDS_HData_ChangeSequence(self, *args)
+        return _ChFiDS.ChFiDS_HData_ChangeSequence(self)
 
-    def ShallowCopy(self, *args) -> "Handle_ChFiDS_HData" :
+    def ShallowCopy(self):
         """
         :rtype: Handle_ChFiDS_HData
 
         """
-        return _ChFiDS.ChFiDS_HData_ShallowCopy(self, *args)
+        return _ChFiDS.ChFiDS_HData_ShallowCopy(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(ChFiDS_HData self)"""
         return _ChFiDS.ChFiDS_HData__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_ChFiDS_HData" :
+    def GetHandle(self):
         """GetHandle(ChFiDS_HData self) -> Handle_ChFiDS_HData"""
         return _ChFiDS.ChFiDS_HData_GetHandle(self)
 
@@ -989,7 +989,7 @@ Handle_ChFiDS_HData._kill_pointed = new_instancemethod(_ChFiDS.Handle_ChFiDS_HDa
 Handle_ChFiDS_HData_swigregister = _ChFiDS.Handle_ChFiDS_HData_swigregister
 Handle_ChFiDS_HData_swigregister(Handle_ChFiDS_HData)
 
-def Handle_ChFiDS_HData_DownCast(*args) -> "Handle_ChFiDS_HData const" :
+def Handle_ChFiDS_HData_DownCast(*args):
   return _ChFiDS.Handle_ChFiDS_HData_DownCast(*args)
 Handle_ChFiDS_HData_DownCast = _ChFiDS.Handle_ChFiDS_HData_DownCast
 
@@ -1006,7 +1006,7 @@ class ChFiDS_HElSpine(OCC.Adaptor3d.Adaptor3d_HCurve):
 
         """
         _ChFiDS.ChFiDS_HElSpine_swiginit(self,_ChFiDS.new_ChFiDS_HElSpine(*args))
-    def Set(self, *args) -> "void" :
+    def Set(self, *args):
         """
         :param C:
         :type C: ChFiDS_ElSpine &
@@ -1015,18 +1015,18 @@ class ChFiDS_HElSpine(OCC.Adaptor3d.Adaptor3d_HCurve):
         """
         return _ChFiDS.ChFiDS_HElSpine_Set(self, *args)
 
-    def ChangeCurve(self, *args) -> "ChFiDS_ElSpine &" :
+    def ChangeCurve(self):
         """
         :rtype: ChFiDS_ElSpine
 
         """
-        return _ChFiDS.ChFiDS_HElSpine_ChangeCurve(self, *args)
+        return _ChFiDS.ChFiDS_HElSpine_ChangeCurve(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(ChFiDS_HElSpine self)"""
         return _ChFiDS.ChFiDS_HElSpine__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_ChFiDS_HElSpine" :
+    def GetHandle(self):
         """GetHandle(ChFiDS_HElSpine self) -> Handle_ChFiDS_HElSpine"""
         return _ChFiDS.ChFiDS_HElSpine_GetHandle(self)
 
@@ -1066,7 +1066,7 @@ Handle_ChFiDS_HElSpine._kill_pointed = new_instancemethod(_ChFiDS.Handle_ChFiDS_
 Handle_ChFiDS_HElSpine_swigregister = _ChFiDS.Handle_ChFiDS_HElSpine_swigregister
 Handle_ChFiDS_HElSpine_swigregister(Handle_ChFiDS_HElSpine)
 
-def Handle_ChFiDS_HElSpine_DownCast(*args) -> "Handle_ChFiDS_HElSpine const" :
+def Handle_ChFiDS_HElSpine_DownCast(*args):
   return _ChFiDS.Handle_ChFiDS_HElSpine_DownCast(*args)
 Handle_ChFiDS_HElSpine_DownCast = _ChFiDS.Handle_ChFiDS_HElSpine_DownCast
 
@@ -1078,7 +1078,7 @@ class ChFiDS_IndexedDataMapNodeOfIndexedDataMapOfVertexListOfStripe(OCC.TCollect
         :param K1:
         :type K1: TopoDS_Vertex &
         :param K2:
-        :type K2: int
+        :type K2: Standard_Integer
         :param I:
         :type I: ChFiDS_ListOfStripe &
         :param n1:
@@ -1089,40 +1089,40 @@ class ChFiDS_IndexedDataMapNodeOfIndexedDataMapOfVertexListOfStripe(OCC.TCollect
 
         """
         _ChFiDS.ChFiDS_IndexedDataMapNodeOfIndexedDataMapOfVertexListOfStripe_swiginit(self,_ChFiDS.new_ChFiDS_IndexedDataMapNodeOfIndexedDataMapOfVertexListOfStripe(*args))
-    def Key1(self, *args) -> "TopoDS_Vertex" :
+    def Key1(self):
         """
         :rtype: TopoDS_Vertex
 
         """
-        return _ChFiDS.ChFiDS_IndexedDataMapNodeOfIndexedDataMapOfVertexListOfStripe_Key1(self, *args)
+        return _ChFiDS.ChFiDS_IndexedDataMapNodeOfIndexedDataMapOfVertexListOfStripe_Key1(self)
 
-    def GetKey2(self) -> "Standard_Integer" :
+    def GetKey2(self):
         """GetKey2(ChFiDS_IndexedDataMapNodeOfIndexedDataMapOfVertexListOfStripe self) -> Standard_Integer"""
         return _ChFiDS.ChFiDS_IndexedDataMapNodeOfIndexedDataMapOfVertexListOfStripe_GetKey2(self)
 
-    def SetKey2(self, *args) -> "void" :
+    def SetKey2(self, *args):
         """SetKey2(ChFiDS_IndexedDataMapNodeOfIndexedDataMapOfVertexListOfStripe self, Standard_Integer value)"""
         return _ChFiDS.ChFiDS_IndexedDataMapNodeOfIndexedDataMapOfVertexListOfStripe_SetKey2(self, *args)
 
-    def Next2(self, *args) -> "TCollection_MapNodePtr &" :
+    def Next2(self):
         """
         :rtype: TCollection_MapNodePtr
 
         """
-        return _ChFiDS.ChFiDS_IndexedDataMapNodeOfIndexedDataMapOfVertexListOfStripe_Next2(self, *args)
+        return _ChFiDS.ChFiDS_IndexedDataMapNodeOfIndexedDataMapOfVertexListOfStripe_Next2(self)
 
-    def Value(self, *args) -> "ChFiDS_ListOfStripe &" :
+    def Value(self):
         """
         :rtype: ChFiDS_ListOfStripe
 
         """
-        return _ChFiDS.ChFiDS_IndexedDataMapNodeOfIndexedDataMapOfVertexListOfStripe_Value(self, *args)
+        return _ChFiDS.ChFiDS_IndexedDataMapNodeOfIndexedDataMapOfVertexListOfStripe_Value(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(ChFiDS_IndexedDataMapNodeOfIndexedDataMapOfVertexListOfStripe self)"""
         return _ChFiDS.ChFiDS_IndexedDataMapNodeOfIndexedDataMapOfVertexListOfStripe__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_ChFiDS_IndexedDataMapNodeOfIndexedDataMapOfVertexListOfStripe" :
+    def GetHandle(self):
         """GetHandle(ChFiDS_IndexedDataMapNodeOfIndexedDataMapOfVertexListOfStripe self) -> Handle_ChFiDS_IndexedDataMapNodeOfIndexedDataMapOfVertexListOfStripe"""
         return _ChFiDS.ChFiDS_IndexedDataMapNodeOfIndexedDataMapOfVertexListOfStripe_GetHandle(self)
 
@@ -1165,22 +1165,26 @@ Handle_ChFiDS_IndexedDataMapNodeOfIndexedDataMapOfVertexListOfStripe._kill_point
 Handle_ChFiDS_IndexedDataMapNodeOfIndexedDataMapOfVertexListOfStripe_swigregister = _ChFiDS.Handle_ChFiDS_IndexedDataMapNodeOfIndexedDataMapOfVertexListOfStripe_swigregister
 Handle_ChFiDS_IndexedDataMapNodeOfIndexedDataMapOfVertexListOfStripe_swigregister(Handle_ChFiDS_IndexedDataMapNodeOfIndexedDataMapOfVertexListOfStripe)
 
-def Handle_ChFiDS_IndexedDataMapNodeOfIndexedDataMapOfVertexListOfStripe_DownCast(*args) -> "Handle_ChFiDS_IndexedDataMapNodeOfIndexedDataMapOfVertexListOfStripe const" :
+def Handle_ChFiDS_IndexedDataMapNodeOfIndexedDataMapOfVertexListOfStripe_DownCast(*args):
   return _ChFiDS.Handle_ChFiDS_IndexedDataMapNodeOfIndexedDataMapOfVertexListOfStripe_DownCast(*args)
 Handle_ChFiDS_IndexedDataMapNodeOfIndexedDataMapOfVertexListOfStripe_DownCast = _ChFiDS.Handle_ChFiDS_IndexedDataMapNodeOfIndexedDataMapOfVertexListOfStripe_DownCast
 
 class ChFiDS_IndexedDataMapOfVertexListOfStripe(OCC.TCollection.TCollection_BasicMap):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self, NbBuckets=1): 
         """
         :param NbBuckets: default value is 1
-        :type NbBuckets: int
+        :type NbBuckets: Standard_Integer
+        :rtype: None
+
+        :param NbBuckets: default value is 1
+        :type NbBuckets: Standard_Integer
         :rtype: None
 
         """
-        _ChFiDS.ChFiDS_IndexedDataMapOfVertexListOfStripe_swiginit(self,_ChFiDS.new_ChFiDS_IndexedDataMapOfVertexListOfStripe(*args))
-    def Assign(self, *args) -> "ChFiDS_IndexedDataMapOfVertexListOfStripe &" :
+        _ChFiDS.ChFiDS_IndexedDataMapOfVertexListOfStripe_swiginit(self,_ChFiDS.new_ChFiDS_IndexedDataMapOfVertexListOfStripe(NbBuckets))
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: ChFiDS_IndexedDataMapOfVertexListOfStripe &
@@ -1189,7 +1193,7 @@ class ChFiDS_IndexedDataMapOfVertexListOfStripe(OCC.TCollection.TCollection_Basi
         """
         return _ChFiDS.ChFiDS_IndexedDataMapOfVertexListOfStripe_Assign(self, *args)
 
-    def Set(self, *args) -> "ChFiDS_IndexedDataMapOfVertexListOfStripe &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: ChFiDS_IndexedDataMapOfVertexListOfStripe &
@@ -1198,23 +1202,23 @@ class ChFiDS_IndexedDataMapOfVertexListOfStripe(OCC.TCollection.TCollection_Basi
         """
         return _ChFiDS.ChFiDS_IndexedDataMapOfVertexListOfStripe_Set(self, *args)
 
-    def ReSize(self, *args) -> "void" :
+    def ReSize(self, *args):
         """
         :param NbBuckets:
-        :type NbBuckets: int
+        :type NbBuckets: Standard_Integer
         :rtype: None
 
         """
         return _ChFiDS.ChFiDS_IndexedDataMapOfVertexListOfStripe_ReSize(self, *args)
 
-    def Clear(self, *args) -> "void" :
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _ChFiDS.ChFiDS_IndexedDataMapOfVertexListOfStripe_Clear(self, *args)
+        return _ChFiDS.ChFiDS_IndexedDataMapOfVertexListOfStripe_Clear(self)
 
-    def Add(self, *args) -> "Standard_Integer" :
+    def Add(self, *args):
         """
         :param K:
         :type K: TopoDS_Vertex &
@@ -1225,10 +1229,10 @@ class ChFiDS_IndexedDataMapOfVertexListOfStripe(OCC.TCollection.TCollection_Basi
         """
         return _ChFiDS.ChFiDS_IndexedDataMapOfVertexListOfStripe_Add(self, *args)
 
-    def Substitute(self, *args) -> "void" :
+    def Substitute(self, *args):
         """
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :param K:
         :type K: TopoDS_Vertex &
         :param T:
@@ -1238,14 +1242,14 @@ class ChFiDS_IndexedDataMapOfVertexListOfStripe(OCC.TCollection.TCollection_Basi
         """
         return _ChFiDS.ChFiDS_IndexedDataMapOfVertexListOfStripe_Substitute(self, *args)
 
-    def RemoveLast(self, *args) -> "void" :
+    def RemoveLast(self):
         """
         :rtype: None
 
         """
-        return _ChFiDS.ChFiDS_IndexedDataMapOfVertexListOfStripe_RemoveLast(self, *args)
+        return _ChFiDS.ChFiDS_IndexedDataMapOfVertexListOfStripe_RemoveLast(self)
 
-    def Contains(self, *args) -> "Standard_Boolean" :
+    def Contains(self, *args):
         """
         :param K:
         :type K: TopoDS_Vertex &
@@ -1254,34 +1258,34 @@ class ChFiDS_IndexedDataMapOfVertexListOfStripe(OCC.TCollection.TCollection_Basi
         """
         return _ChFiDS.ChFiDS_IndexedDataMapOfVertexListOfStripe_Contains(self, *args)
 
-    def FindKey(self, *args) -> "TopoDS_Vertex const" :
+    def FindKey(self, *args):
         """
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :rtype: TopoDS_Vertex
 
         """
         return _ChFiDS.ChFiDS_IndexedDataMapOfVertexListOfStripe_FindKey(self, *args)
 
-    def FindFromIndex(self, *args) -> "ChFiDS_ListOfStripe const &" :
+    def FindFromIndex(self, *args):
         """
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :rtype: ChFiDS_ListOfStripe
 
         """
         return _ChFiDS.ChFiDS_IndexedDataMapOfVertexListOfStripe_FindFromIndex(self, *args)
 
-    def ChangeFromIndex(self, *args) -> "ChFiDS_ListOfStripe &" :
+    def ChangeFromIndex(self, *args):
         """
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :rtype: ChFiDS_ListOfStripe
 
         """
         return _ChFiDS.ChFiDS_IndexedDataMapOfVertexListOfStripe_ChangeFromIndex(self, *args)
 
-    def FindIndex(self, *args) -> "Standard_Integer" :
+    def FindIndex(self, *args):
         """
         :param K:
         :type K: TopoDS_Vertex &
@@ -1290,7 +1294,7 @@ class ChFiDS_IndexedDataMapOfVertexListOfStripe(OCC.TCollection.TCollection_Basi
         """
         return _ChFiDS.ChFiDS_IndexedDataMapOfVertexListOfStripe_FindIndex(self, *args)
 
-    def FindFromKey(self, *args) -> "ChFiDS_ListOfStripe const &" :
+    def FindFromKey(self, *args):
         """
         :param K:
         :type K: TopoDS_Vertex &
@@ -1299,7 +1303,7 @@ class ChFiDS_IndexedDataMapOfVertexListOfStripe(OCC.TCollection.TCollection_Basi
         """
         return _ChFiDS.ChFiDS_IndexedDataMapOfVertexListOfStripe_FindFromKey(self, *args)
 
-    def ChangeFromKey(self, *args) -> "ChFiDS_ListOfStripe &" :
+    def ChangeFromKey(self, *args):
         """
         :param K:
         :type K: TopoDS_Vertex &
@@ -1308,7 +1312,7 @@ class ChFiDS_IndexedDataMapOfVertexListOfStripe(OCC.TCollection.TCollection_Basi
         """
         return _ChFiDS.ChFiDS_IndexedDataMapOfVertexListOfStripe_ChangeFromKey(self, *args)
 
-    def FindFromKey1(self, *args) -> "Standard_Address" :
+    def FindFromKey1(self, *args):
         """
         :param K:
         :type K: TopoDS_Vertex &
@@ -1317,7 +1321,7 @@ class ChFiDS_IndexedDataMapOfVertexListOfStripe(OCC.TCollection.TCollection_Basi
         """
         return _ChFiDS.ChFiDS_IndexedDataMapOfVertexListOfStripe_FindFromKey1(self, *args)
 
-    def ChangeFromKey1(self, *args) -> "Standard_Address" :
+    def ChangeFromKey1(self, *args):
         """
         :param K:
         :type K: TopoDS_Vertex &
@@ -1326,7 +1330,7 @@ class ChFiDS_IndexedDataMapOfVertexListOfStripe(OCC.TCollection.TCollection_Basi
         """
         return _ChFiDS.ChFiDS_IndexedDataMapOfVertexListOfStripe_ChangeFromKey1(self, *args)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(ChFiDS_IndexedDataMapOfVertexListOfStripe self)"""
         return _ChFiDS.ChFiDS_IndexedDataMapOfVertexListOfStripe__kill_pointed(self)
 
@@ -1371,7 +1375,7 @@ class ChFiDS_ListIteratorOfListOfHElSpine(object):
 
         """
         _ChFiDS.ChFiDS_ListIteratorOfListOfHElSpine_swiginit(self,_ChFiDS.new_ChFiDS_ListIteratorOfListOfHElSpine(*args))
-    def Initialize(self, *args) -> "void" :
+    def Initialize(self, *args):
         """
         :param L:
         :type L: ChFiDS_ListOfHElSpine &
@@ -1380,26 +1384,26 @@ class ChFiDS_ListIteratorOfListOfHElSpine(object):
         """
         return _ChFiDS.ChFiDS_ListIteratorOfListOfHElSpine_Initialize(self, *args)
 
-    def More(self, *args) -> "Standard_Boolean" :
+    def More(self):
         """
         :rtype: bool
 
         """
-        return _ChFiDS.ChFiDS_ListIteratorOfListOfHElSpine_More(self, *args)
+        return _ChFiDS.ChFiDS_ListIteratorOfListOfHElSpine_More(self)
 
-    def Next(self, *args) -> "void" :
+    def Next(self):
         """
         :rtype: None
 
         """
-        return _ChFiDS.ChFiDS_ListIteratorOfListOfHElSpine_Next(self, *args)
+        return _ChFiDS.ChFiDS_ListIteratorOfListOfHElSpine_Next(self)
 
-    def Value(self, *args) -> "Handle_ChFiDS_HElSpine &" :
+    def Value(self):
         """
         :rtype: Handle_ChFiDS_HElSpine
 
         """
-        return _ChFiDS.ChFiDS_ListIteratorOfListOfHElSpine_Value(self, *args)
+        return _ChFiDS.ChFiDS_ListIteratorOfListOfHElSpine_Value(self)
 
     def __del__(self):
     	try:
@@ -1430,7 +1434,7 @@ class ChFiDS_ListIteratorOfListOfStripe(object):
 
         """
         _ChFiDS.ChFiDS_ListIteratorOfListOfStripe_swiginit(self,_ChFiDS.new_ChFiDS_ListIteratorOfListOfStripe(*args))
-    def Initialize(self, *args) -> "void" :
+    def Initialize(self, *args):
         """
         :param L:
         :type L: ChFiDS_ListOfStripe &
@@ -1439,26 +1443,26 @@ class ChFiDS_ListIteratorOfListOfStripe(object):
         """
         return _ChFiDS.ChFiDS_ListIteratorOfListOfStripe_Initialize(self, *args)
 
-    def More(self, *args) -> "Standard_Boolean" :
+    def More(self):
         """
         :rtype: bool
 
         """
-        return _ChFiDS.ChFiDS_ListIteratorOfListOfStripe_More(self, *args)
+        return _ChFiDS.ChFiDS_ListIteratorOfListOfStripe_More(self)
 
-    def Next(self, *args) -> "void" :
+    def Next(self):
         """
         :rtype: None
 
         """
-        return _ChFiDS.ChFiDS_ListIteratorOfListOfStripe_Next(self, *args)
+        return _ChFiDS.ChFiDS_ListIteratorOfListOfStripe_Next(self)
 
-    def Value(self, *args) -> "Handle_ChFiDS_Stripe &" :
+    def Value(self):
         """
         :rtype: Handle_ChFiDS_Stripe
 
         """
-        return _ChFiDS.ChFiDS_ListIteratorOfListOfStripe_Value(self, *args)
+        return _ChFiDS.ChFiDS_ListIteratorOfListOfStripe_Value(self)
 
     def __del__(self):
     	try:
@@ -1489,7 +1493,7 @@ class ChFiDS_ListIteratorOfRegularities(object):
 
         """
         _ChFiDS.ChFiDS_ListIteratorOfRegularities_swiginit(self,_ChFiDS.new_ChFiDS_ListIteratorOfRegularities(*args))
-    def Initialize(self, *args) -> "void" :
+    def Initialize(self, *args):
         """
         :param L:
         :type L: ChFiDS_Regularities &
@@ -1498,26 +1502,26 @@ class ChFiDS_ListIteratorOfRegularities(object):
         """
         return _ChFiDS.ChFiDS_ListIteratorOfRegularities_Initialize(self, *args)
 
-    def More(self, *args) -> "Standard_Boolean" :
+    def More(self):
         """
         :rtype: bool
 
         """
-        return _ChFiDS.ChFiDS_ListIteratorOfRegularities_More(self, *args)
+        return _ChFiDS.ChFiDS_ListIteratorOfRegularities_More(self)
 
-    def Next(self, *args) -> "void" :
+    def Next(self):
         """
         :rtype: None
 
         """
-        return _ChFiDS.ChFiDS_ListIteratorOfRegularities_Next(self, *args)
+        return _ChFiDS.ChFiDS_ListIteratorOfRegularities_Next(self)
 
-    def Value(self, *args) -> "ChFiDS_Regul &" :
+    def Value(self):
         """
         :rtype: ChFiDS_Regul
 
         """
-        return _ChFiDS.ChFiDS_ListIteratorOfRegularities_Value(self, *args)
+        return _ChFiDS.ChFiDS_ListIteratorOfRegularities_Value(self)
 
     def __del__(self):
     	try:
@@ -1548,18 +1552,18 @@ class ChFiDS_ListNodeOfListOfHElSpine(OCC.TCollection.TCollection_MapNode):
 
         """
         _ChFiDS.ChFiDS_ListNodeOfListOfHElSpine_swiginit(self,_ChFiDS.new_ChFiDS_ListNodeOfListOfHElSpine(*args))
-    def Value(self, *args) -> "Handle_ChFiDS_HElSpine &" :
+    def Value(self):
         """
         :rtype: Handle_ChFiDS_HElSpine
 
         """
-        return _ChFiDS.ChFiDS_ListNodeOfListOfHElSpine_Value(self, *args)
+        return _ChFiDS.ChFiDS_ListNodeOfListOfHElSpine_Value(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(ChFiDS_ListNodeOfListOfHElSpine self)"""
         return _ChFiDS.ChFiDS_ListNodeOfListOfHElSpine__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_ChFiDS_ListNodeOfListOfHElSpine" :
+    def GetHandle(self):
         """GetHandle(ChFiDS_ListNodeOfListOfHElSpine self) -> Handle_ChFiDS_ListNodeOfListOfHElSpine"""
         return _ChFiDS.ChFiDS_ListNodeOfListOfHElSpine_GetHandle(self)
 
@@ -1598,7 +1602,7 @@ Handle_ChFiDS_ListNodeOfListOfHElSpine._kill_pointed = new_instancemethod(_ChFiD
 Handle_ChFiDS_ListNodeOfListOfHElSpine_swigregister = _ChFiDS.Handle_ChFiDS_ListNodeOfListOfHElSpine_swigregister
 Handle_ChFiDS_ListNodeOfListOfHElSpine_swigregister(Handle_ChFiDS_ListNodeOfListOfHElSpine)
 
-def Handle_ChFiDS_ListNodeOfListOfHElSpine_DownCast(*args) -> "Handle_ChFiDS_ListNodeOfListOfHElSpine const" :
+def Handle_ChFiDS_ListNodeOfListOfHElSpine_DownCast(*args):
   return _ChFiDS.Handle_ChFiDS_ListNodeOfListOfHElSpine_DownCast(*args)
 Handle_ChFiDS_ListNodeOfListOfHElSpine_DownCast = _ChFiDS.Handle_ChFiDS_ListNodeOfListOfHElSpine_DownCast
 
@@ -1615,18 +1619,18 @@ class ChFiDS_ListNodeOfListOfStripe(OCC.TCollection.TCollection_MapNode):
 
         """
         _ChFiDS.ChFiDS_ListNodeOfListOfStripe_swiginit(self,_ChFiDS.new_ChFiDS_ListNodeOfListOfStripe(*args))
-    def Value(self, *args) -> "Handle_ChFiDS_Stripe &" :
+    def Value(self):
         """
         :rtype: Handle_ChFiDS_Stripe
 
         """
-        return _ChFiDS.ChFiDS_ListNodeOfListOfStripe_Value(self, *args)
+        return _ChFiDS.ChFiDS_ListNodeOfListOfStripe_Value(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(ChFiDS_ListNodeOfListOfStripe self)"""
         return _ChFiDS.ChFiDS_ListNodeOfListOfStripe__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_ChFiDS_ListNodeOfListOfStripe" :
+    def GetHandle(self):
         """GetHandle(ChFiDS_ListNodeOfListOfStripe self) -> Handle_ChFiDS_ListNodeOfListOfStripe"""
         return _ChFiDS.ChFiDS_ListNodeOfListOfStripe_GetHandle(self)
 
@@ -1665,7 +1669,7 @@ Handle_ChFiDS_ListNodeOfListOfStripe._kill_pointed = new_instancemethod(_ChFiDS.
 Handle_ChFiDS_ListNodeOfListOfStripe_swigregister = _ChFiDS.Handle_ChFiDS_ListNodeOfListOfStripe_swigregister
 Handle_ChFiDS_ListNodeOfListOfStripe_swigregister(Handle_ChFiDS_ListNodeOfListOfStripe)
 
-def Handle_ChFiDS_ListNodeOfListOfStripe_DownCast(*args) -> "Handle_ChFiDS_ListNodeOfListOfStripe const" :
+def Handle_ChFiDS_ListNodeOfListOfStripe_DownCast(*args):
   return _ChFiDS.Handle_ChFiDS_ListNodeOfListOfStripe_DownCast(*args)
 Handle_ChFiDS_ListNodeOfListOfStripe_DownCast = _ChFiDS.Handle_ChFiDS_ListNodeOfListOfStripe_DownCast
 
@@ -1682,18 +1686,18 @@ class ChFiDS_ListNodeOfRegularities(OCC.TCollection.TCollection_MapNode):
 
         """
         _ChFiDS.ChFiDS_ListNodeOfRegularities_swiginit(self,_ChFiDS.new_ChFiDS_ListNodeOfRegularities(*args))
-    def Value(self, *args) -> "ChFiDS_Regul &" :
+    def Value(self):
         """
         :rtype: ChFiDS_Regul
 
         """
-        return _ChFiDS.ChFiDS_ListNodeOfRegularities_Value(self, *args)
+        return _ChFiDS.ChFiDS_ListNodeOfRegularities_Value(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(ChFiDS_ListNodeOfRegularities self)"""
         return _ChFiDS.ChFiDS_ListNodeOfRegularities__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_ChFiDS_ListNodeOfRegularities" :
+    def GetHandle(self):
         """GetHandle(ChFiDS_ListNodeOfRegularities self) -> Handle_ChFiDS_ListNodeOfRegularities"""
         return _ChFiDS.ChFiDS_ListNodeOfRegularities_GetHandle(self)
 
@@ -1732,20 +1736,20 @@ Handle_ChFiDS_ListNodeOfRegularities._kill_pointed = new_instancemethod(_ChFiDS.
 Handle_ChFiDS_ListNodeOfRegularities_swigregister = _ChFiDS.Handle_ChFiDS_ListNodeOfRegularities_swigregister
 Handle_ChFiDS_ListNodeOfRegularities_swigregister(Handle_ChFiDS_ListNodeOfRegularities)
 
-def Handle_ChFiDS_ListNodeOfRegularities_DownCast(*args) -> "Handle_ChFiDS_ListNodeOfRegularities const" :
+def Handle_ChFiDS_ListNodeOfRegularities_DownCast(*args):
   return _ChFiDS.Handle_ChFiDS_ListNodeOfRegularities_DownCast(*args)
 Handle_ChFiDS_ListNodeOfRegularities_DownCast = _ChFiDS.Handle_ChFiDS_ListNodeOfRegularities_DownCast
 
 class ChFiDS_ListOfHElSpine(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _ChFiDS.ChFiDS_ListOfHElSpine_swiginit(self,_ChFiDS.new_ChFiDS_ListOfHElSpine(*args))
-    def Assign(self, *args) -> "void" :
+        _ChFiDS.ChFiDS_ListOfHElSpine_swiginit(self,_ChFiDS.new_ChFiDS_ListOfHElSpine())
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: ChFiDS_ListOfHElSpine &
@@ -1754,7 +1758,7 @@ class ChFiDS_ListOfHElSpine(object):
         """
         return _ChFiDS.ChFiDS_ListOfHElSpine_Assign(self, *args)
 
-    def Set(self, *args) -> "void" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: ChFiDS_ListOfHElSpine &
@@ -1763,28 +1767,28 @@ class ChFiDS_ListOfHElSpine(object):
         """
         return _ChFiDS.ChFiDS_ListOfHElSpine_Set(self, *args)
 
-    def Extent(self, *args) -> "Standard_Integer" :
+    def Extent(self):
         """
         :rtype: int
 
         """
-        return _ChFiDS.ChFiDS_ListOfHElSpine_Extent(self, *args)
+        return _ChFiDS.ChFiDS_ListOfHElSpine_Extent(self)
 
-    def Clear(self, *args) -> "void" :
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _ChFiDS.ChFiDS_ListOfHElSpine_Clear(self, *args)
+        return _ChFiDS.ChFiDS_ListOfHElSpine_Clear(self)
 
-    def IsEmpty(self, *args) -> "Standard_Boolean" :
+    def IsEmpty(self):
         """
         :rtype: bool
 
         """
-        return _ChFiDS.ChFiDS_ListOfHElSpine_IsEmpty(self, *args)
+        return _ChFiDS.ChFiDS_ListOfHElSpine_IsEmpty(self)
 
-    def Prepend(self, *args) -> "void" :
+    def Prepend(self, *args):
         """
         :param I:
         :type I: Handle_ChFiDS_HElSpine &
@@ -1803,7 +1807,7 @@ class ChFiDS_ListOfHElSpine(object):
         """
         return _ChFiDS.ChFiDS_ListOfHElSpine_Prepend(self, *args)
 
-    def Append(self, *args) -> "void" :
+    def Append(self, *args):
         """
         :param I:
         :type I: Handle_ChFiDS_HElSpine &
@@ -1822,28 +1826,28 @@ class ChFiDS_ListOfHElSpine(object):
         """
         return _ChFiDS.ChFiDS_ListOfHElSpine_Append(self, *args)
 
-    def First(self, *args) -> "Handle_ChFiDS_HElSpine &" :
+    def First(self):
         """
         :rtype: Handle_ChFiDS_HElSpine
 
         """
-        return _ChFiDS.ChFiDS_ListOfHElSpine_First(self, *args)
+        return _ChFiDS.ChFiDS_ListOfHElSpine_First(self)
 
-    def Last(self, *args) -> "Handle_ChFiDS_HElSpine &" :
+    def Last(self):
         """
         :rtype: Handle_ChFiDS_HElSpine
 
         """
-        return _ChFiDS.ChFiDS_ListOfHElSpine_Last(self, *args)
+        return _ChFiDS.ChFiDS_ListOfHElSpine_Last(self)
 
-    def RemoveFirst(self, *args) -> "void" :
+    def RemoveFirst(self):
         """
         :rtype: None
 
         """
-        return _ChFiDS.ChFiDS_ListOfHElSpine_RemoveFirst(self, *args)
+        return _ChFiDS.ChFiDS_ListOfHElSpine_RemoveFirst(self)
 
-    def Remove(self, *args) -> "void" :
+    def Remove(self, *args):
         """
         :param It:
         :type It: ChFiDS_ListIteratorOfListOfHElSpine &
@@ -1852,7 +1856,7 @@ class ChFiDS_ListOfHElSpine(object):
         """
         return _ChFiDS.ChFiDS_ListOfHElSpine_Remove(self, *args)
 
-    def InsertBefore(self, *args) -> "void" :
+    def InsertBefore(self, *args):
         """
         :param I:
         :type I: Handle_ChFiDS_HElSpine &
@@ -1869,7 +1873,7 @@ class ChFiDS_ListOfHElSpine(object):
         """
         return _ChFiDS.ChFiDS_ListOfHElSpine_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args) -> "void" :
+    def InsertAfter(self, *args):
         """
         :param I:
         :type I: Handle_ChFiDS_HElSpine &
@@ -1914,13 +1918,13 @@ ChFiDS_ListOfHElSpine_swigregister(ChFiDS_ListOfHElSpine)
 class ChFiDS_ListOfStripe(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _ChFiDS.ChFiDS_ListOfStripe_swiginit(self,_ChFiDS.new_ChFiDS_ListOfStripe(*args))
-    def Assign(self, *args) -> "void" :
+        _ChFiDS.ChFiDS_ListOfStripe_swiginit(self,_ChFiDS.new_ChFiDS_ListOfStripe())
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: ChFiDS_ListOfStripe &
@@ -1929,7 +1933,7 @@ class ChFiDS_ListOfStripe(object):
         """
         return _ChFiDS.ChFiDS_ListOfStripe_Assign(self, *args)
 
-    def Set(self, *args) -> "void" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: ChFiDS_ListOfStripe &
@@ -1938,28 +1942,28 @@ class ChFiDS_ListOfStripe(object):
         """
         return _ChFiDS.ChFiDS_ListOfStripe_Set(self, *args)
 
-    def Extent(self, *args) -> "Standard_Integer" :
+    def Extent(self):
         """
         :rtype: int
 
         """
-        return _ChFiDS.ChFiDS_ListOfStripe_Extent(self, *args)
+        return _ChFiDS.ChFiDS_ListOfStripe_Extent(self)
 
-    def Clear(self, *args) -> "void" :
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _ChFiDS.ChFiDS_ListOfStripe_Clear(self, *args)
+        return _ChFiDS.ChFiDS_ListOfStripe_Clear(self)
 
-    def IsEmpty(self, *args) -> "Standard_Boolean" :
+    def IsEmpty(self):
         """
         :rtype: bool
 
         """
-        return _ChFiDS.ChFiDS_ListOfStripe_IsEmpty(self, *args)
+        return _ChFiDS.ChFiDS_ListOfStripe_IsEmpty(self)
 
-    def Prepend(self, *args) -> "void" :
+    def Prepend(self, *args):
         """
         :param I:
         :type I: Handle_ChFiDS_Stripe &
@@ -1978,7 +1982,7 @@ class ChFiDS_ListOfStripe(object):
         """
         return _ChFiDS.ChFiDS_ListOfStripe_Prepend(self, *args)
 
-    def Append(self, *args) -> "void" :
+    def Append(self, *args):
         """
         :param I:
         :type I: Handle_ChFiDS_Stripe &
@@ -1997,28 +2001,28 @@ class ChFiDS_ListOfStripe(object):
         """
         return _ChFiDS.ChFiDS_ListOfStripe_Append(self, *args)
 
-    def First(self, *args) -> "Handle_ChFiDS_Stripe &" :
+    def First(self):
         """
         :rtype: Handle_ChFiDS_Stripe
 
         """
-        return _ChFiDS.ChFiDS_ListOfStripe_First(self, *args)
+        return _ChFiDS.ChFiDS_ListOfStripe_First(self)
 
-    def Last(self, *args) -> "Handle_ChFiDS_Stripe &" :
+    def Last(self):
         """
         :rtype: Handle_ChFiDS_Stripe
 
         """
-        return _ChFiDS.ChFiDS_ListOfStripe_Last(self, *args)
+        return _ChFiDS.ChFiDS_ListOfStripe_Last(self)
 
-    def RemoveFirst(self, *args) -> "void" :
+    def RemoveFirst(self):
         """
         :rtype: None
 
         """
-        return _ChFiDS.ChFiDS_ListOfStripe_RemoveFirst(self, *args)
+        return _ChFiDS.ChFiDS_ListOfStripe_RemoveFirst(self)
 
-    def Remove(self, *args) -> "void" :
+    def Remove(self, *args):
         """
         :param It:
         :type It: ChFiDS_ListIteratorOfListOfStripe &
@@ -2027,7 +2031,7 @@ class ChFiDS_ListOfStripe(object):
         """
         return _ChFiDS.ChFiDS_ListOfStripe_Remove(self, *args)
 
-    def InsertBefore(self, *args) -> "void" :
+    def InsertBefore(self, *args):
         """
         :param I:
         :type I: Handle_ChFiDS_Stripe &
@@ -2044,7 +2048,7 @@ class ChFiDS_ListOfStripe(object):
         """
         return _ChFiDS.ChFiDS_ListOfStripe_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args) -> "void" :
+    def InsertAfter(self, *args):
         """
         :param I:
         :type I: Handle_ChFiDS_Stripe &
@@ -2089,15 +2093,15 @@ ChFiDS_ListOfStripe_swigregister(ChFiDS_ListOfStripe)
 class ChFiDS_Map(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         * Create an empty Map
 
         :rtype: None
 
         """
-        _ChFiDS.ChFiDS_Map_swiginit(self,_ChFiDS.new_ChFiDS_Map(*args))
-    def Fill(self, *args) -> "void" :
+        _ChFiDS.ChFiDS_Map_swiginit(self,_ChFiDS.new_ChFiDS_Map())
+    def Fill(self, *args):
         """
         * Fills the map with the subshapes of type T1 as keys and the list of ancestors of type T2 as items.
 
@@ -2112,7 +2116,7 @@ class ChFiDS_Map(object):
         """
         return _ChFiDS.ChFiDS_Map_Fill(self, *args)
 
-    def Contains(self, *args) -> "Standard_Boolean" :
+    def Contains(self, *args):
         """
         :param S:
         :type S: TopoDS_Shape &
@@ -2121,7 +2125,7 @@ class ChFiDS_Map(object):
         """
         return _ChFiDS.ChFiDS_Map_Contains(self, *args)
 
-    def FindFromKey(self, *args) -> "TopTools_ListOfShape const &" :
+    def FindFromKey(self, *args):
         """
         :param S:
         :type S: TopoDS_Shape &
@@ -2130,10 +2134,10 @@ class ChFiDS_Map(object):
         """
         return _ChFiDS.ChFiDS_Map_FindFromKey(self, *args)
 
-    def FindFromIndex(self, *args) -> "TopTools_ListOfShape const &" :
+    def FindFromIndex(self, *args):
         """
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :rtype: TopTools_ListOfShape
 
         """
@@ -2158,25 +2162,31 @@ ChFiDS_Map_swigregister(ChFiDS_Map)
 class ChFiDS_Regul(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _ChFiDS.ChFiDS_Regul_swiginit(self,_ChFiDS.new_ChFiDS_Regul(*args))
-    def SetCurve(self, *args) -> "void" :
+        _ChFiDS.ChFiDS_Regul_swiginit(self,_ChFiDS.new_ChFiDS_Regul())
+    def SetCurve(self, *args):
         """
         :param IC:
-        :type IC: int
+        :type IC: Standard_Integer
         :rtype: None
 
         """
         return _ChFiDS.ChFiDS_Regul_SetCurve(self, *args)
 
-    def SetS1(self, *args) -> "void" :
+    def SetS1(self, *args):
         """
         :param IS1:
-        :type IS1: int
+        :type IS1: Standard_Integer
+        :param IsFace: default value is Standard_True
+        :type IsFace: bool
+        :rtype: None
+
+        :param IS1:
+        :type IS1: Standard_Integer
         :param IsFace: default value is Standard_True
         :type IsFace: bool
         :rtype: None
@@ -2184,10 +2194,16 @@ class ChFiDS_Regul(object):
         """
         return _ChFiDS.ChFiDS_Regul_SetS1(self, *args)
 
-    def SetS2(self, *args) -> "void" :
+    def SetS2(self, *args):
         """
         :param IS2:
-        :type IS2: int
+        :type IS2: Standard_Integer
+        :param IsFace: default value is Standard_True
+        :type IsFace: bool
+        :rtype: None
+
+        :param IS2:
+        :type IS2: Standard_Integer
         :param IsFace: default value is Standard_True
         :type IsFace: bool
         :rtype: None
@@ -2195,40 +2211,40 @@ class ChFiDS_Regul(object):
         """
         return _ChFiDS.ChFiDS_Regul_SetS2(self, *args)
 
-    def IsSurface1(self, *args) -> "Standard_Boolean" :
+    def IsSurface1(self):
         """
         :rtype: bool
 
         """
-        return _ChFiDS.ChFiDS_Regul_IsSurface1(self, *args)
+        return _ChFiDS.ChFiDS_Regul_IsSurface1(self)
 
-    def IsSurface2(self, *args) -> "Standard_Boolean" :
+    def IsSurface2(self):
         """
         :rtype: bool
 
         """
-        return _ChFiDS.ChFiDS_Regul_IsSurface2(self, *args)
+        return _ChFiDS.ChFiDS_Regul_IsSurface2(self)
 
-    def Curve(self, *args) -> "Standard_Integer" :
+    def Curve(self):
         """
         :rtype: int
 
         """
-        return _ChFiDS.ChFiDS_Regul_Curve(self, *args)
+        return _ChFiDS.ChFiDS_Regul_Curve(self)
 
-    def S1(self, *args) -> "Standard_Integer" :
+    def S1(self):
         """
         :rtype: int
 
         """
-        return _ChFiDS.ChFiDS_Regul_S1(self, *args)
+        return _ChFiDS.ChFiDS_Regul_S1(self)
 
-    def S2(self, *args) -> "Standard_Integer" :
+    def S2(self):
         """
         :rtype: int
 
         """
-        return _ChFiDS.ChFiDS_Regul_S2(self, *args)
+        return _ChFiDS.ChFiDS_Regul_S2(self)
 
     def __del__(self):
     	try:
@@ -2253,13 +2269,13 @@ ChFiDS_Regul_swigregister(ChFiDS_Regul)
 class ChFiDS_Regularities(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _ChFiDS.ChFiDS_Regularities_swiginit(self,_ChFiDS.new_ChFiDS_Regularities(*args))
-    def Assign(self, *args) -> "void" :
+        _ChFiDS.ChFiDS_Regularities_swiginit(self,_ChFiDS.new_ChFiDS_Regularities())
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: ChFiDS_Regularities &
@@ -2268,7 +2284,7 @@ class ChFiDS_Regularities(object):
         """
         return _ChFiDS.ChFiDS_Regularities_Assign(self, *args)
 
-    def Set(self, *args) -> "void" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: ChFiDS_Regularities &
@@ -2277,28 +2293,28 @@ class ChFiDS_Regularities(object):
         """
         return _ChFiDS.ChFiDS_Regularities_Set(self, *args)
 
-    def Extent(self, *args) -> "Standard_Integer" :
+    def Extent(self):
         """
         :rtype: int
 
         """
-        return _ChFiDS.ChFiDS_Regularities_Extent(self, *args)
+        return _ChFiDS.ChFiDS_Regularities_Extent(self)
 
-    def Clear(self, *args) -> "void" :
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _ChFiDS.ChFiDS_Regularities_Clear(self, *args)
+        return _ChFiDS.ChFiDS_Regularities_Clear(self)
 
-    def IsEmpty(self, *args) -> "Standard_Boolean" :
+    def IsEmpty(self):
         """
         :rtype: bool
 
         """
-        return _ChFiDS.ChFiDS_Regularities_IsEmpty(self, *args)
+        return _ChFiDS.ChFiDS_Regularities_IsEmpty(self)
 
-    def Prepend(self, *args) -> "void" :
+    def Prepend(self, *args):
         """
         :param I:
         :type I: ChFiDS_Regul &
@@ -2317,7 +2333,7 @@ class ChFiDS_Regularities(object):
         """
         return _ChFiDS.ChFiDS_Regularities_Prepend(self, *args)
 
-    def Append(self, *args) -> "void" :
+    def Append(self, *args):
         """
         :param I:
         :type I: ChFiDS_Regul &
@@ -2336,28 +2352,28 @@ class ChFiDS_Regularities(object):
         """
         return _ChFiDS.ChFiDS_Regularities_Append(self, *args)
 
-    def First(self, *args) -> "ChFiDS_Regul &" :
+    def First(self):
         """
         :rtype: ChFiDS_Regul
 
         """
-        return _ChFiDS.ChFiDS_Regularities_First(self, *args)
+        return _ChFiDS.ChFiDS_Regularities_First(self)
 
-    def Last(self, *args) -> "ChFiDS_Regul &" :
+    def Last(self):
         """
         :rtype: ChFiDS_Regul
 
         """
-        return _ChFiDS.ChFiDS_Regularities_Last(self, *args)
+        return _ChFiDS.ChFiDS_Regularities_Last(self)
 
-    def RemoveFirst(self, *args) -> "void" :
+    def RemoveFirst(self):
         """
         :rtype: None
 
         """
-        return _ChFiDS.ChFiDS_Regularities_RemoveFirst(self, *args)
+        return _ChFiDS.ChFiDS_Regularities_RemoveFirst(self)
 
-    def Remove(self, *args) -> "void" :
+    def Remove(self, *args):
         """
         :param It:
         :type It: ChFiDS_ListIteratorOfRegularities &
@@ -2366,7 +2382,7 @@ class ChFiDS_Regularities(object):
         """
         return _ChFiDS.ChFiDS_Regularities_Remove(self, *args)
 
-    def InsertBefore(self, *args) -> "void" :
+    def InsertBefore(self, *args):
         """
         :param I:
         :type I: ChFiDS_Regul &
@@ -2383,7 +2399,7 @@ class ChFiDS_Regularities(object):
         """
         return _ChFiDS.ChFiDS_Regularities_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args) -> "void" :
+    def InsertAfter(self, *args):
         """
         :param I:
         :type I: ChFiDS_Regul &
@@ -2431,22 +2447,22 @@ class ChFiDS_SecArray1(object):
     def __init__(self, *args): 
         """
         :param Low:
-        :type Low: int
+        :type Low: Standard_Integer
         :param Up:
-        :type Up: int
+        :type Up: Standard_Integer
         :rtype: None
 
         :param Item:
         :type Item: ChFiDS_CircSection &
         :param Low:
-        :type Low: int
+        :type Low: Standard_Integer
         :param Up:
-        :type Up: int
+        :type Up: Standard_Integer
         :rtype: None
 
         """
         _ChFiDS.ChFiDS_SecArray1_swiginit(self,_ChFiDS.new_ChFiDS_SecArray1(*args))
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
         :param V:
         :type V: ChFiDS_CircSection &
@@ -2455,21 +2471,21 @@ class ChFiDS_SecArray1(object):
         """
         return _ChFiDS.ChFiDS_SecArray1_Init(self, *args)
 
-    def Destroy(self, *args) -> "void" :
+    def Destroy(self):
         """
         :rtype: None
 
         """
-        return _ChFiDS.ChFiDS_SecArray1_Destroy(self, *args)
+        return _ChFiDS.ChFiDS_SecArray1_Destroy(self)
 
-    def IsAllocated(self, *args) -> "Standard_Boolean" :
+    def IsAllocated(self):
         """
         :rtype: bool
 
         """
-        return _ChFiDS.ChFiDS_SecArray1_IsAllocated(self, *args)
+        return _ChFiDS.ChFiDS_SecArray1_IsAllocated(self)
 
-    def Assign(self, *args) -> "ChFiDS_SecArray1 const &" :
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: ChFiDS_SecArray1 &
@@ -2478,7 +2494,7 @@ class ChFiDS_SecArray1(object):
         """
         return _ChFiDS.ChFiDS_SecArray1_Assign(self, *args)
 
-    def Set(self, *args) -> "ChFiDS_SecArray1 const &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: ChFiDS_SecArray1 &
@@ -2487,31 +2503,31 @@ class ChFiDS_SecArray1(object):
         """
         return _ChFiDS.ChFiDS_SecArray1_Set(self, *args)
 
-    def Length(self, *args) -> "Standard_Integer" :
+    def Length(self):
         """
         :rtype: int
 
         """
-        return _ChFiDS.ChFiDS_SecArray1_Length(self, *args)
+        return _ChFiDS.ChFiDS_SecArray1_Length(self)
 
-    def Lower(self, *args) -> "Standard_Integer" :
+    def Lower(self):
         """
         :rtype: int
 
         """
-        return _ChFiDS.ChFiDS_SecArray1_Lower(self, *args)
+        return _ChFiDS.ChFiDS_SecArray1_Lower(self)
 
-    def Upper(self, *args) -> "Standard_Integer" :
+    def Upper(self):
         """
         :rtype: int
 
         """
-        return _ChFiDS.ChFiDS_SecArray1_Upper(self, *args)
+        return _ChFiDS.ChFiDS_SecArray1_Upper(self)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Value:
         :type Value: ChFiDS_CircSection &
         :rtype: None
@@ -2519,19 +2535,19 @@ class ChFiDS_SecArray1(object):
         """
         return _ChFiDS.ChFiDS_SecArray1_SetValue(self, *args)
 
-    def Value(self, *args) -> "ChFiDS_CircSection const &" :
+    def Value(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: ChFiDS_CircSection
 
         """
         return _ChFiDS.ChFiDS_SecArray1_Value(self, *args)
 
-    def ChangeValue(self, *args) -> "ChFiDS_CircSection &" :
+    def ChangeValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: ChFiDS_CircSection
 
         """
@@ -2566,22 +2582,22 @@ class ChFiDS_SecHArray1(OCC.MMgt.MMgt_TShared):
     def __init__(self, *args): 
         """
         :param Low:
-        :type Low: int
+        :type Low: Standard_Integer
         :param Up:
-        :type Up: int
+        :type Up: Standard_Integer
         :rtype: None
 
         :param Low:
-        :type Low: int
+        :type Low: Standard_Integer
         :param Up:
-        :type Up: int
+        :type Up: Standard_Integer
         :param V:
         :type V: ChFiDS_CircSection &
         :rtype: None
 
         """
         _ChFiDS.ChFiDS_SecHArray1_swiginit(self,_ChFiDS.new_ChFiDS_SecHArray1(*args))
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
         :param V:
         :type V: ChFiDS_CircSection &
@@ -2590,31 +2606,31 @@ class ChFiDS_SecHArray1(OCC.MMgt.MMgt_TShared):
         """
         return _ChFiDS.ChFiDS_SecHArray1_Init(self, *args)
 
-    def Length(self, *args) -> "Standard_Integer" :
+    def Length(self):
         """
         :rtype: int
 
         """
-        return _ChFiDS.ChFiDS_SecHArray1_Length(self, *args)
+        return _ChFiDS.ChFiDS_SecHArray1_Length(self)
 
-    def Lower(self, *args) -> "Standard_Integer" :
+    def Lower(self):
         """
         :rtype: int
 
         """
-        return _ChFiDS.ChFiDS_SecHArray1_Lower(self, *args)
+        return _ChFiDS.ChFiDS_SecHArray1_Lower(self)
 
-    def Upper(self, *args) -> "Standard_Integer" :
+    def Upper(self):
         """
         :rtype: int
 
         """
-        return _ChFiDS.ChFiDS_SecHArray1_Upper(self, *args)
+        return _ChFiDS.ChFiDS_SecHArray1_Upper(self)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Value:
         :type Value: ChFiDS_CircSection &
         :rtype: None
@@ -2622,43 +2638,43 @@ class ChFiDS_SecHArray1(OCC.MMgt.MMgt_TShared):
         """
         return _ChFiDS.ChFiDS_SecHArray1_SetValue(self, *args)
 
-    def Value(self, *args) -> "ChFiDS_CircSection const &" :
+    def Value(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: ChFiDS_CircSection
 
         """
         return _ChFiDS.ChFiDS_SecHArray1_Value(self, *args)
 
-    def ChangeValue(self, *args) -> "ChFiDS_CircSection &" :
+    def ChangeValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: ChFiDS_CircSection
 
         """
         return _ChFiDS.ChFiDS_SecHArray1_ChangeValue(self, *args)
 
-    def Array1(self, *args) -> "ChFiDS_SecArray1 const &" :
+    def Array1(self):
         """
         :rtype: ChFiDS_SecArray1
 
         """
-        return _ChFiDS.ChFiDS_SecHArray1_Array1(self, *args)
+        return _ChFiDS.ChFiDS_SecHArray1_Array1(self)
 
-    def ChangeArray1(self, *args) -> "ChFiDS_SecArray1 &" :
+    def ChangeArray1(self):
         """
         :rtype: ChFiDS_SecArray1
 
         """
-        return _ChFiDS.ChFiDS_SecHArray1_ChangeArray1(self, *args)
+        return _ChFiDS.ChFiDS_SecHArray1_ChangeArray1(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(ChFiDS_SecHArray1 self)"""
         return _ChFiDS.ChFiDS_SecHArray1__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_ChFiDS_SecHArray1" :
+    def GetHandle(self):
         """GetHandle(ChFiDS_SecHArray1 self) -> Handle_ChFiDS_SecHArray1"""
         return _ChFiDS.ChFiDS_SecHArray1_GetHandle(self)
 
@@ -2705,7 +2721,7 @@ Handle_ChFiDS_SecHArray1._kill_pointed = new_instancemethod(_ChFiDS.Handle_ChFiD
 Handle_ChFiDS_SecHArray1_swigregister = _ChFiDS.Handle_ChFiDS_SecHArray1_swigregister
 Handle_ChFiDS_SecHArray1_swigregister(Handle_ChFiDS_SecHArray1)
 
-def Handle_ChFiDS_SecHArray1_DownCast(*args) -> "Handle_ChFiDS_SecHArray1 const" :
+def Handle_ChFiDS_SecHArray1_DownCast(*args):
   return _ChFiDS.Handle_ChFiDS_SecHArray1_DownCast(*args)
 Handle_ChFiDS_SecHArray1_DownCast = _ChFiDS.Handle_ChFiDS_SecHArray1_DownCast
 
@@ -2724,18 +2740,18 @@ class ChFiDS_SequenceNodeOfSequenceOfSpine(OCC.TCollection.TCollection_SeqNode):
 
         """
         _ChFiDS.ChFiDS_SequenceNodeOfSequenceOfSpine_swiginit(self,_ChFiDS.new_ChFiDS_SequenceNodeOfSequenceOfSpine(*args))
-    def Value(self, *args) -> "Handle_ChFiDS_Spine &" :
+    def Value(self):
         """
         :rtype: Handle_ChFiDS_Spine
 
         """
-        return _ChFiDS.ChFiDS_SequenceNodeOfSequenceOfSpine_Value(self, *args)
+        return _ChFiDS.ChFiDS_SequenceNodeOfSequenceOfSpine_Value(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(ChFiDS_SequenceNodeOfSequenceOfSpine self)"""
         return _ChFiDS.ChFiDS_SequenceNodeOfSequenceOfSpine__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_ChFiDS_SequenceNodeOfSequenceOfSpine" :
+    def GetHandle(self):
         """GetHandle(ChFiDS_SequenceNodeOfSequenceOfSpine self) -> Handle_ChFiDS_SequenceNodeOfSequenceOfSpine"""
         return _ChFiDS.ChFiDS_SequenceNodeOfSequenceOfSpine_GetHandle(self)
 
@@ -2774,7 +2790,7 @@ Handle_ChFiDS_SequenceNodeOfSequenceOfSpine._kill_pointed = new_instancemethod(_
 Handle_ChFiDS_SequenceNodeOfSequenceOfSpine_swigregister = _ChFiDS.Handle_ChFiDS_SequenceNodeOfSequenceOfSpine_swigregister
 Handle_ChFiDS_SequenceNodeOfSequenceOfSpine_swigregister(Handle_ChFiDS_SequenceNodeOfSequenceOfSpine)
 
-def Handle_ChFiDS_SequenceNodeOfSequenceOfSpine_DownCast(*args) -> "Handle_ChFiDS_SequenceNodeOfSequenceOfSpine const" :
+def Handle_ChFiDS_SequenceNodeOfSequenceOfSpine_DownCast(*args):
   return _ChFiDS.Handle_ChFiDS_SequenceNodeOfSequenceOfSpine_DownCast(*args)
 Handle_ChFiDS_SequenceNodeOfSequenceOfSpine_DownCast = _ChFiDS.Handle_ChFiDS_SequenceNodeOfSequenceOfSpine_DownCast
 
@@ -2793,18 +2809,18 @@ class ChFiDS_SequenceNodeOfSequenceOfSurfData(OCC.TCollection.TCollection_SeqNod
 
         """
         _ChFiDS.ChFiDS_SequenceNodeOfSequenceOfSurfData_swiginit(self,_ChFiDS.new_ChFiDS_SequenceNodeOfSequenceOfSurfData(*args))
-    def Value(self, *args) -> "Handle_ChFiDS_SurfData &" :
+    def Value(self):
         """
         :rtype: Handle_ChFiDS_SurfData
 
         """
-        return _ChFiDS.ChFiDS_SequenceNodeOfSequenceOfSurfData_Value(self, *args)
+        return _ChFiDS.ChFiDS_SequenceNodeOfSequenceOfSurfData_Value(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(ChFiDS_SequenceNodeOfSequenceOfSurfData self)"""
         return _ChFiDS.ChFiDS_SequenceNodeOfSequenceOfSurfData__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_ChFiDS_SequenceNodeOfSequenceOfSurfData" :
+    def GetHandle(self):
         """GetHandle(ChFiDS_SequenceNodeOfSequenceOfSurfData self) -> Handle_ChFiDS_SequenceNodeOfSequenceOfSurfData"""
         return _ChFiDS.ChFiDS_SequenceNodeOfSequenceOfSurfData_GetHandle(self)
 
@@ -2843,27 +2859,27 @@ Handle_ChFiDS_SequenceNodeOfSequenceOfSurfData._kill_pointed = new_instancemetho
 Handle_ChFiDS_SequenceNodeOfSequenceOfSurfData_swigregister = _ChFiDS.Handle_ChFiDS_SequenceNodeOfSequenceOfSurfData_swigregister
 Handle_ChFiDS_SequenceNodeOfSequenceOfSurfData_swigregister(Handle_ChFiDS_SequenceNodeOfSequenceOfSurfData)
 
-def Handle_ChFiDS_SequenceNodeOfSequenceOfSurfData_DownCast(*args) -> "Handle_ChFiDS_SequenceNodeOfSequenceOfSurfData const" :
+def Handle_ChFiDS_SequenceNodeOfSequenceOfSurfData_DownCast(*args):
   return _ChFiDS.Handle_ChFiDS_SequenceNodeOfSequenceOfSurfData_DownCast(*args)
 Handle_ChFiDS_SequenceNodeOfSequenceOfSurfData_DownCast = _ChFiDS.Handle_ChFiDS_SequenceNodeOfSequenceOfSurfData_DownCast
 
 class ChFiDS_SequenceOfSpine(OCC.TCollection.TCollection_BaseSequence):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _ChFiDS.ChFiDS_SequenceOfSpine_swiginit(self,_ChFiDS.new_ChFiDS_SequenceOfSpine(*args))
-    def Clear(self, *args) -> "void" :
+        _ChFiDS.ChFiDS_SequenceOfSpine_swiginit(self,_ChFiDS.new_ChFiDS_SequenceOfSpine())
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _ChFiDS.ChFiDS_SequenceOfSpine_Clear(self, *args)
+        return _ChFiDS.ChFiDS_SequenceOfSpine_Clear(self)
 
-    def Assign(self, *args) -> "ChFiDS_SequenceOfSpine const &" :
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: ChFiDS_SequenceOfSpine &
@@ -2872,7 +2888,7 @@ class ChFiDS_SequenceOfSpine(OCC.TCollection.TCollection_BaseSequence):
         """
         return _ChFiDS.ChFiDS_SequenceOfSpine_Assign(self, *args)
 
-    def Set(self, *args) -> "ChFiDS_SequenceOfSpine const &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: ChFiDS_SequenceOfSpine &
@@ -2881,7 +2897,7 @@ class ChFiDS_SequenceOfSpine(OCC.TCollection.TCollection_BaseSequence):
         """
         return _ChFiDS.ChFiDS_SequenceOfSpine_Set(self, *args)
 
-    def Append(self, *args) -> "void" :
+    def Append(self, *args):
         """
         :param T:
         :type T: Handle_ChFiDS_Spine &
@@ -2894,7 +2910,7 @@ class ChFiDS_SequenceOfSpine(OCC.TCollection.TCollection_BaseSequence):
         """
         return _ChFiDS.ChFiDS_SequenceOfSpine_Append(self, *args)
 
-    def Prepend(self, *args) -> "void" :
+    def Prepend(self, *args):
         """
         :param T:
         :type T: Handle_ChFiDS_Spine &
@@ -2907,16 +2923,16 @@ class ChFiDS_SequenceOfSpine(OCC.TCollection.TCollection_BaseSequence):
         """
         return _ChFiDS.ChFiDS_SequenceOfSpine_Prepend(self, *args)
 
-    def InsertBefore(self, *args) -> "void" :
+    def InsertBefore(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param T:
         :type T: Handle_ChFiDS_Spine &
         :rtype: None
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param S:
         :type S: ChFiDS_SequenceOfSpine &
         :rtype: None
@@ -2924,16 +2940,16 @@ class ChFiDS_SequenceOfSpine(OCC.TCollection.TCollection_BaseSequence):
         """
         return _ChFiDS.ChFiDS_SequenceOfSpine_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args) -> "void" :
+    def InsertAfter(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param T:
         :type T: Handle_ChFiDS_Spine &
         :rtype: None
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param S:
         :type S: ChFiDS_SequenceOfSpine &
         :rtype: None
@@ -2941,24 +2957,24 @@ class ChFiDS_SequenceOfSpine(OCC.TCollection.TCollection_BaseSequence):
         """
         return _ChFiDS.ChFiDS_SequenceOfSpine_InsertAfter(self, *args)
 
-    def First(self, *args) -> "Handle_ChFiDS_Spine const &" :
+    def First(self):
         """
         :rtype: Handle_ChFiDS_Spine
 
         """
-        return _ChFiDS.ChFiDS_SequenceOfSpine_First(self, *args)
+        return _ChFiDS.ChFiDS_SequenceOfSpine_First(self)
 
-    def Last(self, *args) -> "Handle_ChFiDS_Spine const &" :
+    def Last(self):
         """
         :rtype: Handle_ChFiDS_Spine
 
         """
-        return _ChFiDS.ChFiDS_SequenceOfSpine_Last(self, *args)
+        return _ChFiDS.ChFiDS_SequenceOfSpine_Last(self)
 
-    def Split(self, *args) -> "void" :
+    def Split(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Sub:
         :type Sub: ChFiDS_SequenceOfSpine &
         :rtype: None
@@ -2966,19 +2982,19 @@ class ChFiDS_SequenceOfSpine(OCC.TCollection.TCollection_BaseSequence):
         """
         return _ChFiDS.ChFiDS_SequenceOfSpine_Split(self, *args)
 
-    def Value(self, *args) -> "Handle_ChFiDS_Spine const &" :
+    def Value(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Handle_ChFiDS_Spine
 
         """
         return _ChFiDS.ChFiDS_SequenceOfSpine_Value(self, *args)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param I:
         :type I: Handle_ChFiDS_Spine &
         :rtype: None
@@ -2986,25 +3002,25 @@ class ChFiDS_SequenceOfSpine(OCC.TCollection.TCollection_BaseSequence):
         """
         return _ChFiDS.ChFiDS_SequenceOfSpine_SetValue(self, *args)
 
-    def ChangeValue(self, *args) -> "Handle_ChFiDS_Spine &" :
+    def ChangeValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Handle_ChFiDS_Spine
 
         """
         return _ChFiDS.ChFiDS_SequenceOfSpine_ChangeValue(self, *args)
 
-    def Remove(self, *args) -> "void" :
+    def Remove(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: None
 
         :param FromIndex:
-        :type FromIndex: int
+        :type FromIndex: Standard_Integer
         :param ToIndex:
-        :type ToIndex: int
+        :type ToIndex: Standard_Integer
         :rtype: None
 
         """
@@ -3039,20 +3055,20 @@ ChFiDS_SequenceOfSpine_swigregister(ChFiDS_SequenceOfSpine)
 class ChFiDS_SequenceOfSurfData(OCC.TCollection.TCollection_BaseSequence):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _ChFiDS.ChFiDS_SequenceOfSurfData_swiginit(self,_ChFiDS.new_ChFiDS_SequenceOfSurfData(*args))
-    def Clear(self, *args) -> "void" :
+        _ChFiDS.ChFiDS_SequenceOfSurfData_swiginit(self,_ChFiDS.new_ChFiDS_SequenceOfSurfData())
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _ChFiDS.ChFiDS_SequenceOfSurfData_Clear(self, *args)
+        return _ChFiDS.ChFiDS_SequenceOfSurfData_Clear(self)
 
-    def Assign(self, *args) -> "ChFiDS_SequenceOfSurfData const &" :
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: ChFiDS_SequenceOfSurfData &
@@ -3061,7 +3077,7 @@ class ChFiDS_SequenceOfSurfData(OCC.TCollection.TCollection_BaseSequence):
         """
         return _ChFiDS.ChFiDS_SequenceOfSurfData_Assign(self, *args)
 
-    def Set(self, *args) -> "ChFiDS_SequenceOfSurfData const &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: ChFiDS_SequenceOfSurfData &
@@ -3070,7 +3086,7 @@ class ChFiDS_SequenceOfSurfData(OCC.TCollection.TCollection_BaseSequence):
         """
         return _ChFiDS.ChFiDS_SequenceOfSurfData_Set(self, *args)
 
-    def Append(self, *args) -> "void" :
+    def Append(self, *args):
         """
         :param T:
         :type T: Handle_ChFiDS_SurfData &
@@ -3083,7 +3099,7 @@ class ChFiDS_SequenceOfSurfData(OCC.TCollection.TCollection_BaseSequence):
         """
         return _ChFiDS.ChFiDS_SequenceOfSurfData_Append(self, *args)
 
-    def Prepend(self, *args) -> "void" :
+    def Prepend(self, *args):
         """
         :param T:
         :type T: Handle_ChFiDS_SurfData &
@@ -3096,16 +3112,16 @@ class ChFiDS_SequenceOfSurfData(OCC.TCollection.TCollection_BaseSequence):
         """
         return _ChFiDS.ChFiDS_SequenceOfSurfData_Prepend(self, *args)
 
-    def InsertBefore(self, *args) -> "void" :
+    def InsertBefore(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param T:
         :type T: Handle_ChFiDS_SurfData &
         :rtype: None
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param S:
         :type S: ChFiDS_SequenceOfSurfData &
         :rtype: None
@@ -3113,16 +3129,16 @@ class ChFiDS_SequenceOfSurfData(OCC.TCollection.TCollection_BaseSequence):
         """
         return _ChFiDS.ChFiDS_SequenceOfSurfData_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args) -> "void" :
+    def InsertAfter(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param T:
         :type T: Handle_ChFiDS_SurfData &
         :rtype: None
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param S:
         :type S: ChFiDS_SequenceOfSurfData &
         :rtype: None
@@ -3130,24 +3146,24 @@ class ChFiDS_SequenceOfSurfData(OCC.TCollection.TCollection_BaseSequence):
         """
         return _ChFiDS.ChFiDS_SequenceOfSurfData_InsertAfter(self, *args)
 
-    def First(self, *args) -> "Handle_ChFiDS_SurfData const &" :
+    def First(self):
         """
         :rtype: Handle_ChFiDS_SurfData
 
         """
-        return _ChFiDS.ChFiDS_SequenceOfSurfData_First(self, *args)
+        return _ChFiDS.ChFiDS_SequenceOfSurfData_First(self)
 
-    def Last(self, *args) -> "Handle_ChFiDS_SurfData const &" :
+    def Last(self):
         """
         :rtype: Handle_ChFiDS_SurfData
 
         """
-        return _ChFiDS.ChFiDS_SequenceOfSurfData_Last(self, *args)
+        return _ChFiDS.ChFiDS_SequenceOfSurfData_Last(self)
 
-    def Split(self, *args) -> "void" :
+    def Split(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Sub:
         :type Sub: ChFiDS_SequenceOfSurfData &
         :rtype: None
@@ -3155,19 +3171,19 @@ class ChFiDS_SequenceOfSurfData(OCC.TCollection.TCollection_BaseSequence):
         """
         return _ChFiDS.ChFiDS_SequenceOfSurfData_Split(self, *args)
 
-    def Value(self, *args) -> "Handle_ChFiDS_SurfData const &" :
+    def Value(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Handle_ChFiDS_SurfData
 
         """
         return _ChFiDS.ChFiDS_SequenceOfSurfData_Value(self, *args)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param I:
         :type I: Handle_ChFiDS_SurfData &
         :rtype: None
@@ -3175,25 +3191,25 @@ class ChFiDS_SequenceOfSurfData(OCC.TCollection.TCollection_BaseSequence):
         """
         return _ChFiDS.ChFiDS_SequenceOfSurfData_SetValue(self, *args)
 
-    def ChangeValue(self, *args) -> "Handle_ChFiDS_SurfData &" :
+    def ChangeValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Handle_ChFiDS_SurfData
 
         """
         return _ChFiDS.ChFiDS_SequenceOfSurfData_ChangeValue(self, *args)
 
-    def Remove(self, *args) -> "void" :
+    def Remove(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: None
 
         :param FromIndex:
-        :type FromIndex: int
+        :type FromIndex: Standard_Integer
         :param ToIndex:
-        :type ToIndex: int
+        :type ToIndex: Standard_Integer
         :rtype: None
 
         """
@@ -3238,7 +3254,7 @@ class ChFiDS_Spine(OCC.MMgt.MMgt_TShared):
 
         """
         _ChFiDS.ChFiDS_Spine_swiginit(self,_ChFiDS.new_ChFiDS_Spine(*args))
-    def SetEdges(self, *args) -> "void" :
+    def SetEdges(self, *args):
         """
         * store edges composing the guideline
 
@@ -3249,7 +3265,7 @@ class ChFiDS_Spine(OCC.MMgt.MMgt_TShared):
         """
         return _ChFiDS.ChFiDS_Spine_SetEdges(self, *args)
 
-    def PutInFirst(self, *args) -> "void" :
+    def PutInFirst(self, *args):
         """
         * store the edge at the first position before all others
 
@@ -3260,23 +3276,23 @@ class ChFiDS_Spine(OCC.MMgt.MMgt_TShared):
         """
         return _ChFiDS.ChFiDS_Spine_PutInFirst(self, *args)
 
-    def NbEdges(self, *args) -> "Standard_Integer" :
+    def NbEdges(self):
         """
         :rtype: int
 
         """
-        return _ChFiDS.ChFiDS_Spine_NbEdges(self, *args)
+        return _ChFiDS.ChFiDS_Spine_NbEdges(self)
 
-    def Edges(self, *args) -> "TopoDS_Edge const" :
+    def Edges(self, *args):
         """
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :rtype: TopoDS_Edge
 
         """
         return _ChFiDS.ChFiDS_Spine_Edges(self, *args)
 
-    def SetFirstStatus(self, *args) -> "void" :
+    def SetFirstStatus(self, *args):
         """
         * stores if the start of a set of edges starts on a section of free border or forms a closed contour
 
@@ -3287,7 +3303,7 @@ class ChFiDS_Spine(OCC.MMgt.MMgt_TShared):
         """
         return _ChFiDS.ChFiDS_Spine_SetFirstStatus(self, *args)
 
-    def SetLastStatus(self, *args) -> "void" :
+    def SetLastStatus(self, *args):
         """
         * stores if the end of a set of edges starts on a section of free border or forms a closed contour
 
@@ -3298,7 +3314,7 @@ class ChFiDS_Spine(OCC.MMgt.MMgt_TShared):
         """
         return _ChFiDS.ChFiDS_Spine_SetLastStatus(self, *args)
 
-    def AppendElSpine(self, *args) -> "void" :
+    def AppendElSpine(self, *args):
         """
         :param Els:
         :type Els: Handle_ChFiDS_HElSpine &
@@ -3307,10 +3323,10 @@ class ChFiDS_Spine(OCC.MMgt.MMgt_TShared):
         """
         return _ChFiDS.ChFiDS_Spine_AppendElSpine(self, *args)
 
-    def ElSpine(self, *args) -> "Handle_ChFiDS_HElSpine" :
+    def ElSpine(self, *args):
         """
         :param IE:
-        :type IE: int
+        :type IE: Standard_Integer
         :rtype: Handle_ChFiDS_HElSpine
 
         :param E:
@@ -3324,15 +3340,19 @@ class ChFiDS_Spine(OCC.MMgt.MMgt_TShared):
         """
         return _ChFiDS.ChFiDS_Spine_ElSpine(self, *args)
 
-    def ChangeElSpines(self, *args) -> "ChFiDS_ListOfHElSpine &" :
+    def ChangeElSpines(self):
         """
         :rtype: ChFiDS_ListOfHElSpine
 
         """
-        return _ChFiDS.ChFiDS_Spine_ChangeElSpines(self, *args)
+        return _ChFiDS.ChFiDS_Spine_ChangeElSpines(self)
 
-    def Reset(self, *args) -> "void" :
+    def Reset(self, *args):
         """
+        :param AllData: default value is Standard_False
+        :type AllData: bool
+        :rtype: void
+
         :param AllData: default value is Standard_False
         :type AllData: bool
         :rtype: void
@@ -3340,7 +3360,7 @@ class ChFiDS_Spine(OCC.MMgt.MMgt_TShared):
         """
         return _ChFiDS.ChFiDS_Spine_Reset(self, *args)
 
-    def SplitDone(self, *args) -> "void" :
+    def SplitDone(self, *args):
         """
         :rtype: bool
 
@@ -3351,16 +3371,16 @@ class ChFiDS_Spine(OCC.MMgt.MMgt_TShared):
         """
         return _ChFiDS.ChFiDS_Spine_SplitDone(self, *args)
 
-    def Load(self, *args) -> "void" :
+    def Load(self):
         """
         * prepare the guideline depending on the edges that are elementary arks (take parameters from a single curvilinear abscissa); to be able to call methods on the geometry (first,last,value,d1,d2) it is necessary to start with preparation otherwise an exception will be raised
 
         :rtype: None
 
         """
-        return _ChFiDS.ChFiDS_Spine_Load(self, *args)
+        return _ChFiDS.ChFiDS_Spine_Load(self)
 
-    def Resolution(self, *args) -> "Standard_Real" :
+    def Resolution(self, *args):
         """
         :param R3d:
         :type R3d: float
@@ -3369,14 +3389,14 @@ class ChFiDS_Spine(OCC.MMgt.MMgt_TShared):
         """
         return _ChFiDS.ChFiDS_Spine_Resolution(self, *args)
 
-    def IsClosed(self, *args) -> "Standard_Boolean" :
+    def IsClosed(self):
         """
         :rtype: bool
 
         """
-        return _ChFiDS.ChFiDS_Spine_IsClosed(self, *args)
+        return _ChFiDS.ChFiDS_Spine_IsClosed(self)
 
-    def SetFirstParameter(self, *args) -> "void" :
+    def SetFirstParameter(self, *args):
         """
         :param Par:
         :type Par: float
@@ -3385,7 +3405,7 @@ class ChFiDS_Spine(OCC.MMgt.MMgt_TShared):
         """
         return _ChFiDS.ChFiDS_Spine_SetFirstParameter(self, *args)
 
-    def SetLastParameter(self, *args) -> "void" :
+    def SetLastParameter(self, *args):
         """
         :param Par:
         :type Par: float
@@ -3394,58 +3414,58 @@ class ChFiDS_Spine(OCC.MMgt.MMgt_TShared):
         """
         return _ChFiDS.ChFiDS_Spine_SetLastParameter(self, *args)
 
-    def FirstParameter(self, *args) -> "Standard_Real" :
+    def FirstParameter(self, *args):
         """
         :rtype: float
 
         * gives the total length of all arcs before the number IndexSp
 
         :param IndexSpine:
-        :type IndexSpine: int
+        :type IndexSpine: Standard_Integer
         :rtype: float
 
         """
         return _ChFiDS.ChFiDS_Spine_FirstParameter(self, *args)
 
-    def LastParameter(self, *args) -> "Standard_Real" :
+    def LastParameter(self, *args):
         """
         :rtype: float
 
         * gives the total length till the ark with number IndexSpine (inclus)
 
         :param IndexSpine:
-        :type IndexSpine: int
+        :type IndexSpine: Standard_Integer
         :rtype: float
 
         """
         return _ChFiDS.ChFiDS_Spine_LastParameter(self, *args)
 
-    def Length(self, *args) -> "Standard_Real" :
+    def Length(self, *args):
         """
         * gives the length of ark with number IndexSp
 
         :param IndexSpine:
-        :type IndexSpine: int
+        :type IndexSpine: Standard_Integer
         :rtype: float
 
         """
         return _ChFiDS.ChFiDS_Spine_Length(self, *args)
 
-    def IsPeriodic(self, *args) -> "Standard_Boolean" :
+    def IsPeriodic(self):
         """
         :rtype: bool
 
         """
-        return _ChFiDS.ChFiDS_Spine_IsPeriodic(self, *args)
+        return _ChFiDS.ChFiDS_Spine_IsPeriodic(self)
 
-    def Period(self, *args) -> "Standard_Real" :
+    def Period(self):
         """
         :rtype: float
 
         """
-        return _ChFiDS.ChFiDS_Spine_Period(self, *args)
+        return _ChFiDS.ChFiDS_Spine_Period(self)
 
-    def Parameter(self, *args) -> "void" :
+    def Parameter(self, *args):
         """
         :param AbsC:
         :type AbsC: float
@@ -3455,8 +3475,26 @@ class ChFiDS_Spine(OCC.MMgt.MMgt_TShared):
         :type Oriented: bool
         :rtype: None
 
+        :param AbsC:
+        :type AbsC: float
+        :param U:
+        :type U: float &
+        :param Oriented: default value is Standard_True
+        :type Oriented: bool
+        :rtype: None
+
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
+        :param AbsC:
+        :type AbsC: float
+        :param U:
+        :type U: float &
+        :param Oriented: default value is Standard_True
+        :type Oriented: bool
+        :rtype: None
+
+        :param Index:
+        :type Index: Standard_Integer
         :param AbsC:
         :type AbsC: float
         :param U:
@@ -3468,7 +3506,7 @@ class ChFiDS_Spine(OCC.MMgt.MMgt_TShared):
         """
         return _ChFiDS.ChFiDS_Spine_Parameter(self, *args)
 
-    def Value(self, *args) -> "gp_Pnt" :
+    def Value(self, *args):
         """
         :param AbsC:
         :type AbsC: float
@@ -3477,7 +3515,7 @@ class ChFiDS_Spine(OCC.MMgt.MMgt_TShared):
         """
         return _ChFiDS.ChFiDS_Spine_Value(self, *args)
 
-    def D0(self, *args) -> "void" :
+    def D0(self, *args):
         """
         :param AbsC:
         :type AbsC: float
@@ -3488,7 +3526,7 @@ class ChFiDS_Spine(OCC.MMgt.MMgt_TShared):
         """
         return _ChFiDS.ChFiDS_Spine_D0(self, *args)
 
-    def D1(self, *args) -> "void" :
+    def D1(self, *args):
         """
         :param AbsC:
         :type AbsC: float
@@ -3501,7 +3539,7 @@ class ChFiDS_Spine(OCC.MMgt.MMgt_TShared):
         """
         return _ChFiDS.ChFiDS_Spine_D1(self, *args)
 
-    def D2(self, *args) -> "void" :
+    def D2(self, *args):
         """
         :param AbsC:
         :type AbsC: float
@@ -3516,73 +3554,73 @@ class ChFiDS_Spine(OCC.MMgt.MMgt_TShared):
         """
         return _ChFiDS.ChFiDS_Spine_D2(self, *args)
 
-    def SetCurrent(self, *args) -> "void" :
+    def SetCurrent(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: None
 
         """
         return _ChFiDS.ChFiDS_Spine_SetCurrent(self, *args)
 
-    def CurrentElementarySpine(self, *args) -> "BRepAdaptor_Curve const &" :
+    def CurrentElementarySpine(self, *args):
         """
         * sets the current curve and returns it
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: BRepAdaptor_Curve
 
         """
         return _ChFiDS.ChFiDS_Spine_CurrentElementarySpine(self, *args)
 
-    def CurrentIndexOfElementarySpine(self, *args) -> "Standard_Integer" :
+    def CurrentIndexOfElementarySpine(self):
         """
         :rtype: int
 
         """
-        return _ChFiDS.ChFiDS_Spine_CurrentIndexOfElementarySpine(self, *args)
+        return _ChFiDS.ChFiDS_Spine_CurrentIndexOfElementarySpine(self)
 
-    def GetType(self, *args) -> "GeomAbs_CurveType" :
+    def GetType(self):
         """
         :rtype: GeomAbs_CurveType
 
         """
-        return _ChFiDS.ChFiDS_Spine_GetType(self, *args)
+        return _ChFiDS.ChFiDS_Spine_GetType(self)
 
-    def Line(self, *args) -> "gp_Lin" :
+    def Line(self):
         """
         :rtype: gp_Lin
 
         """
-        return _ChFiDS.ChFiDS_Spine_Line(self, *args)
+        return _ChFiDS.ChFiDS_Spine_Line(self)
 
-    def Circle(self, *args) -> "gp_Circ" :
+    def Circle(self):
         """
         :rtype: gp_Circ
 
         """
-        return _ChFiDS.ChFiDS_Spine_Circle(self, *args)
+        return _ChFiDS.ChFiDS_Spine_Circle(self)
 
-    def FirstStatus(self, *args) -> "ChFiDS_State" :
+    def FirstStatus(self):
         """
         * returns if the set of edges starts on a free boundary or if the first vertex is a breakpoint or if the set is closed
 
         :rtype: ChFiDS_State
 
         """
-        return _ChFiDS.ChFiDS_Spine_FirstStatus(self, *args)
+        return _ChFiDS.ChFiDS_Spine_FirstStatus(self)
 
-    def LastStatus(self, *args) -> "ChFiDS_State" :
+    def LastStatus(self):
         """
         * returns the state at the end of the set
 
         :rtype: ChFiDS_State
 
         """
-        return _ChFiDS.ChFiDS_Spine_LastStatus(self, *args)
+        return _ChFiDS.ChFiDS_Spine_LastStatus(self)
 
-    def Status(self, *args) -> "ChFiDS_State" :
+    def Status(self, *args):
         """
         :param IsFirst:
         :type IsFirst: bool
@@ -3591,7 +3629,7 @@ class ChFiDS_Spine(OCC.MMgt.MMgt_TShared):
         """
         return _ChFiDS.ChFiDS_Spine_Status(self, *args)
 
-    def SetStatus(self, *args) -> "void" :
+    def SetStatus(self, *args):
         """
         :param S:
         :type S: ChFiDS_State
@@ -3602,7 +3640,7 @@ class ChFiDS_Spine(OCC.MMgt.MMgt_TShared):
         """
         return _ChFiDS.ChFiDS_Spine_SetStatus(self, *args)
 
-    def IsTangencyExtremity(self, *args) -> "Standard_Boolean" :
+    def IsTangencyExtremity(self, *args):
         """
         * returns if the set of edges starts (or end) on Tangency point.
 
@@ -3613,7 +3651,7 @@ class ChFiDS_Spine(OCC.MMgt.MMgt_TShared):
         """
         return _ChFiDS.ChFiDS_Spine_IsTangencyExtremity(self, *args)
 
-    def SetTangencyExtremity(self, *args) -> "void" :
+    def SetTangencyExtremity(self, *args):
         """
         :param IsTangency:
         :type IsTangency: bool
@@ -3624,7 +3662,7 @@ class ChFiDS_Spine(OCC.MMgt.MMgt_TShared):
         """
         return _ChFiDS.ChFiDS_Spine_SetTangencyExtremity(self, *args)
 
-    def Absc(self, *args) -> "Standard_Real" :
+    def Absc(self, *args):
         """
         :param U:
         :type U: float
@@ -3633,7 +3671,7 @@ class ChFiDS_Spine(OCC.MMgt.MMgt_TShared):
         :param U:
         :type U: float
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :rtype: float
 
         :param V:
@@ -3643,21 +3681,21 @@ class ChFiDS_Spine(OCC.MMgt.MMgt_TShared):
         """
         return _ChFiDS.ChFiDS_Spine_Absc(self, *args)
 
-    def FirstVertex(self, *args) -> "TopoDS_Vertex" :
+    def FirstVertex(self):
         """
         :rtype: TopoDS_Vertex
 
         """
-        return _ChFiDS.ChFiDS_Spine_FirstVertex(self, *args)
+        return _ChFiDS.ChFiDS_Spine_FirstVertex(self)
 
-    def LastVertex(self, *args) -> "TopoDS_Vertex" :
+    def LastVertex(self):
         """
         :rtype: TopoDS_Vertex
 
         """
-        return _ChFiDS.ChFiDS_Spine_LastVertex(self, *args)
+        return _ChFiDS.ChFiDS_Spine_LastVertex(self)
 
-    def SetFirstTgt(self, *args) -> "void" :
+    def SetFirstTgt(self, *args):
         """
         :param W:
         :type W: float
@@ -3666,7 +3704,7 @@ class ChFiDS_Spine(OCC.MMgt.MMgt_TShared):
         """
         return _ChFiDS.ChFiDS_Spine_SetFirstTgt(self, *args)
 
-    def SetLastTgt(self, *args) -> "void" :
+    def SetLastTgt(self, *args):
         """
         :param W:
         :type W: float
@@ -3675,21 +3713,21 @@ class ChFiDS_Spine(OCC.MMgt.MMgt_TShared):
         """
         return _ChFiDS.ChFiDS_Spine_SetLastTgt(self, *args)
 
-    def HasFirstTgt(self, *args) -> "Standard_Boolean" :
+    def HasFirstTgt(self):
         """
         :rtype: bool
 
         """
-        return _ChFiDS.ChFiDS_Spine_HasFirstTgt(self, *args)
+        return _ChFiDS.ChFiDS_Spine_HasFirstTgt(self)
 
-    def HasLastTgt(self, *args) -> "Standard_Boolean" :
+    def HasLastTgt(self):
         """
         :rtype: bool
 
         """
-        return _ChFiDS.ChFiDS_Spine_HasLastTgt(self, *args)
+        return _ChFiDS.ChFiDS_Spine_HasLastTgt(self)
 
-    def SetReference(self, *args) -> "void" :
+    def SetReference(self, *args):
         """
         * set a parameter reference for the approx.
 
@@ -3700,14 +3738,20 @@ class ChFiDS_Spine(OCC.MMgt.MMgt_TShared):
         * set a parameter reference for the approx, at the middle of edge I.
 
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :rtype: None
 
         """
         return _ChFiDS.ChFiDS_Spine_SetReference(self, *args)
 
-    def Index(self, *args) -> "Standard_Integer" :
+    def Index(self, *args):
         """
+        :param W:
+        :type W: float
+        :param Forward: default value is Standard_True
+        :type Forward: bool
+        :rtype: int
+
         :param W:
         :type W: float
         :param Forward: default value is Standard_True
@@ -3721,14 +3765,14 @@ class ChFiDS_Spine(OCC.MMgt.MMgt_TShared):
         """
         return _ChFiDS.ChFiDS_Spine_Index(self, *args)
 
-    def UnsetReference(self, *args) -> "void" :
+    def UnsetReference(self):
         """
         :rtype: None
 
         """
-        return _ChFiDS.ChFiDS_Spine_UnsetReference(self, *args)
+        return _ChFiDS.ChFiDS_Spine_UnsetReference(self)
 
-    def SetErrorStatus(self, *args) -> "void" :
+    def SetErrorStatus(self, *args):
         """
         :param state:
         :type state: ChFiDS_ErrorStatus
@@ -3737,18 +3781,18 @@ class ChFiDS_Spine(OCC.MMgt.MMgt_TShared):
         """
         return _ChFiDS.ChFiDS_Spine_SetErrorStatus(self, *args)
 
-    def ErrorStatus(self, *args) -> "ChFiDS_ErrorStatus" :
+    def ErrorStatus(self):
         """
         :rtype: ChFiDS_ErrorStatus
 
         """
-        return _ChFiDS.ChFiDS_Spine_ErrorStatus(self, *args)
+        return _ChFiDS.ChFiDS_Spine_ErrorStatus(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(ChFiDS_Spine self)"""
         return _ChFiDS.ChFiDS_Spine__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_ChFiDS_Spine" :
+    def GetHandle(self):
         """GetHandle(ChFiDS_Spine self) -> Handle_ChFiDS_Spine"""
         return _ChFiDS.ChFiDS_Spine_GetHandle(self)
 
@@ -3836,57 +3880,57 @@ Handle_ChFiDS_Spine._kill_pointed = new_instancemethod(_ChFiDS.Handle_ChFiDS_Spi
 Handle_ChFiDS_Spine_swigregister = _ChFiDS.Handle_ChFiDS_Spine_swigregister
 Handle_ChFiDS_Spine_swigregister(Handle_ChFiDS_Spine)
 
-def Handle_ChFiDS_Spine_DownCast(*args) -> "Handle_ChFiDS_Spine const" :
+def Handle_ChFiDS_Spine_DownCast(*args):
   return _ChFiDS.Handle_ChFiDS_Spine_DownCast(*args)
 Handle_ChFiDS_Spine_DownCast = _ChFiDS.Handle_ChFiDS_Spine_DownCast
 
 class ChFiDS_Stripe(OCC.MMgt.MMgt_TShared):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _ChFiDS.ChFiDS_Stripe_swiginit(self,_ChFiDS.new_ChFiDS_Stripe(*args))
-    def Reset(self, *args) -> "void" :
+        _ChFiDS.ChFiDS_Stripe_swiginit(self,_ChFiDS.new_ChFiDS_Stripe())
+    def Reset(self):
         """
         * Reset everything except Spine.
 
         :rtype: None
 
         """
-        return _ChFiDS.ChFiDS_Stripe_Reset(self, *args)
+        return _ChFiDS.ChFiDS_Stripe_Reset(self)
 
-    def SetOfSurfData(self, *args) -> "Handle_ChFiDS_HData const &" :
+    def SetOfSurfData(self):
         """
         :rtype: Handle_ChFiDS_HData
 
         """
-        return _ChFiDS.ChFiDS_Stripe_SetOfSurfData(self, *args)
+        return _ChFiDS.ChFiDS_Stripe_SetOfSurfData(self)
 
-    def Spine(self, *args) -> "Handle_ChFiDS_Spine const &" :
+    def Spine(self):
         """
         :rtype: Handle_ChFiDS_Spine
 
         """
-        return _ChFiDS.ChFiDS_Stripe_Spine(self, *args)
+        return _ChFiDS.ChFiDS_Stripe_Spine(self)
 
-    def ChangeSetOfSurfData(self, *args) -> "Handle_ChFiDS_HData &" :
+    def ChangeSetOfSurfData(self):
         """
         :rtype: Handle_ChFiDS_HData
 
         """
-        return _ChFiDS.ChFiDS_Stripe_ChangeSetOfSurfData(self, *args)
+        return _ChFiDS.ChFiDS_Stripe_ChangeSetOfSurfData(self)
 
-    def ChangeSpine(self, *args) -> "Handle_ChFiDS_Spine &" :
+    def ChangeSpine(self):
         """
         :rtype: Handle_ChFiDS_Spine
 
         """
-        return _ChFiDS.ChFiDS_Stripe_ChangeSpine(self, *args)
+        return _ChFiDS.ChFiDS_Stripe_ChangeSpine(self)
 
-    def OrientationOnFace1(self, *args) -> "void" :
+    def OrientationOnFace1(self, *args):
         """
         :rtype: TopAbs_Orientation
 
@@ -3897,7 +3941,7 @@ class ChFiDS_Stripe(OCC.MMgt.MMgt_TShared):
         """
         return _ChFiDS.ChFiDS_Stripe_OrientationOnFace1(self, *args)
 
-    def OrientationOnFace2(self, *args) -> "void" :
+    def OrientationOnFace2(self, *args):
         """
         :rtype: TopAbs_Orientation
 
@@ -3908,18 +3952,18 @@ class ChFiDS_Stripe(OCC.MMgt.MMgt_TShared):
         """
         return _ChFiDS.ChFiDS_Stripe_OrientationOnFace2(self, *args)
 
-    def Choix(self, *args) -> "void" :
+    def Choix(self, *args):
         """
         :rtype: int
 
         :param C:
-        :type C: int
+        :type C: Standard_Integer
         :rtype: None
 
         """
         return _ChFiDS.ChFiDS_Stripe_Choix(self, *args)
 
-    def FirstParameters(self, *args) -> "void" :
+    def FirstParameters(self):
         """
         :param Pdeb:
         :type Pdeb: float &
@@ -3928,9 +3972,9 @@ class ChFiDS_Stripe(OCC.MMgt.MMgt_TShared):
         :rtype: None
 
         """
-        return _ChFiDS.ChFiDS_Stripe_FirstParameters(self, *args)
+        return _ChFiDS.ChFiDS_Stripe_FirstParameters(self)
 
-    def LastParameters(self, *args) -> "void" :
+    def LastParameters(self):
         """
         :param Pdeb:
         :type Pdeb: float &
@@ -3939,9 +3983,9 @@ class ChFiDS_Stripe(OCC.MMgt.MMgt_TShared):
         :rtype: None
 
         """
-        return _ChFiDS.ChFiDS_Stripe_LastParameters(self, *args)
+        return _ChFiDS.ChFiDS_Stripe_LastParameters(self)
 
-    def ChangeFirstParameters(self, *args) -> "void" :
+    def ChangeFirstParameters(self, *args):
         """
         :param Pdeb:
         :type Pdeb: float
@@ -3952,7 +3996,7 @@ class ChFiDS_Stripe(OCC.MMgt.MMgt_TShared):
         """
         return _ChFiDS.ChFiDS_Stripe_ChangeFirstParameters(self, *args)
 
-    def ChangeLastParameters(self, *args) -> "void" :
+    def ChangeLastParameters(self, *args):
         """
         :param Pdeb:
         :type Pdeb: float
@@ -3963,67 +4007,67 @@ class ChFiDS_Stripe(OCC.MMgt.MMgt_TShared):
         """
         return _ChFiDS.ChFiDS_Stripe_ChangeLastParameters(self, *args)
 
-    def FirstCurve(self, *args) -> "Standard_Integer" :
+    def FirstCurve(self):
         """
         :rtype: int
 
         """
-        return _ChFiDS.ChFiDS_Stripe_FirstCurve(self, *args)
+        return _ChFiDS.ChFiDS_Stripe_FirstCurve(self)
 
-    def LastCurve(self, *args) -> "Standard_Integer" :
+    def LastCurve(self):
         """
         :rtype: int
 
         """
-        return _ChFiDS.ChFiDS_Stripe_LastCurve(self, *args)
+        return _ChFiDS.ChFiDS_Stripe_LastCurve(self)
 
-    def ChangeFirstCurve(self, *args) -> "void" :
+    def ChangeFirstCurve(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: None
 
         """
         return _ChFiDS.ChFiDS_Stripe_ChangeFirstCurve(self, *args)
 
-    def ChangeLastCurve(self, *args) -> "void" :
+    def ChangeLastCurve(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: None
 
         """
         return _ChFiDS.ChFiDS_Stripe_ChangeLastCurve(self, *args)
 
-    def FirstPCurve(self, *args) -> "Handle_Geom2d_Curve const &" :
+    def FirstPCurve(self):
         """
         :rtype: Handle_Geom2d_Curve
 
         """
-        return _ChFiDS.ChFiDS_Stripe_FirstPCurve(self, *args)
+        return _ChFiDS.ChFiDS_Stripe_FirstPCurve(self)
 
-    def LastPCurve(self, *args) -> "Handle_Geom2d_Curve const &" :
+    def LastPCurve(self):
         """
         :rtype: Handle_Geom2d_Curve
 
         """
-        return _ChFiDS.ChFiDS_Stripe_LastPCurve(self, *args)
+        return _ChFiDS.ChFiDS_Stripe_LastPCurve(self)
 
-    def ChangeFirstPCurve(self, *args) -> "Handle_Geom2d_Curve &" :
+    def ChangeFirstPCurve(self):
         """
         :rtype: Handle_Geom2d_Curve
 
         """
-        return _ChFiDS.ChFiDS_Stripe_ChangeFirstPCurve(self, *args)
+        return _ChFiDS.ChFiDS_Stripe_ChangeFirstPCurve(self)
 
-    def ChangeLastPCurve(self, *args) -> "Handle_Geom2d_Curve &" :
+    def ChangeLastPCurve(self):
         """
         :rtype: Handle_Geom2d_Curve
 
         """
-        return _ChFiDS.ChFiDS_Stripe_ChangeLastPCurve(self, *args)
+        return _ChFiDS.ChFiDS_Stripe_ChangeLastPCurve(self)
 
-    def FirstPCurveOrientation(self, *args) -> "void" :
+    def FirstPCurveOrientation(self, *args):
         """
         :rtype: TopAbs_Orientation
 
@@ -4034,7 +4078,7 @@ class ChFiDS_Stripe(OCC.MMgt.MMgt_TShared):
         """
         return _ChFiDS.ChFiDS_Stripe_FirstPCurveOrientation(self, *args)
 
-    def LastPCurveOrientation(self, *args) -> "void" :
+    def LastPCurveOrientation(self, *args):
         """
         :rtype: TopAbs_Orientation
 
@@ -4045,71 +4089,71 @@ class ChFiDS_Stripe(OCC.MMgt.MMgt_TShared):
         """
         return _ChFiDS.ChFiDS_Stripe_LastPCurveOrientation(self, *args)
 
-    def IndexFirstPointOnS1(self, *args) -> "Standard_Integer" :
+    def IndexFirstPointOnS1(self):
         """
         :rtype: int
 
         """
-        return _ChFiDS.ChFiDS_Stripe_IndexFirstPointOnS1(self, *args)
+        return _ChFiDS.ChFiDS_Stripe_IndexFirstPointOnS1(self)
 
-    def IndexFirstPointOnS2(self, *args) -> "Standard_Integer" :
+    def IndexFirstPointOnS2(self):
         """
         :rtype: int
 
         """
-        return _ChFiDS.ChFiDS_Stripe_IndexFirstPointOnS2(self, *args)
+        return _ChFiDS.ChFiDS_Stripe_IndexFirstPointOnS2(self)
 
-    def IndexLastPointOnS1(self, *args) -> "Standard_Integer" :
+    def IndexLastPointOnS1(self):
         """
         :rtype: int
 
         """
-        return _ChFiDS.ChFiDS_Stripe_IndexLastPointOnS1(self, *args)
+        return _ChFiDS.ChFiDS_Stripe_IndexLastPointOnS1(self)
 
-    def IndexLastPointOnS2(self, *args) -> "Standard_Integer" :
+    def IndexLastPointOnS2(self):
         """
         :rtype: int
 
         """
-        return _ChFiDS.ChFiDS_Stripe_IndexLastPointOnS2(self, *args)
+        return _ChFiDS.ChFiDS_Stripe_IndexLastPointOnS2(self)
 
-    def ChangeIndexFirstPointOnS1(self, *args) -> "void" :
+    def ChangeIndexFirstPointOnS1(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: None
 
         """
         return _ChFiDS.ChFiDS_Stripe_ChangeIndexFirstPointOnS1(self, *args)
 
-    def ChangeIndexFirstPointOnS2(self, *args) -> "void" :
+    def ChangeIndexFirstPointOnS2(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: None
 
         """
         return _ChFiDS.ChFiDS_Stripe_ChangeIndexFirstPointOnS2(self, *args)
 
-    def ChangeIndexLastPointOnS1(self, *args) -> "void" :
+    def ChangeIndexLastPointOnS1(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: None
 
         """
         return _ChFiDS.ChFiDS_Stripe_ChangeIndexLastPointOnS1(self, *args)
 
-    def ChangeIndexLastPointOnS2(self, *args) -> "void" :
+    def ChangeIndexLastPointOnS2(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: None
 
         """
         return _ChFiDS.ChFiDS_Stripe_ChangeIndexLastPointOnS2(self, *args)
 
-    def Parameters(self, *args) -> "void" :
+    def Parameters(self, *args):
         """
         :param First:
         :type First: bool
@@ -4122,7 +4166,7 @@ class ChFiDS_Stripe(OCC.MMgt.MMgt_TShared):
         """
         return _ChFiDS.ChFiDS_Stripe_Parameters(self, *args)
 
-    def SetParameters(self, *args) -> "void" :
+    def SetParameters(self, *args):
         """
         :param First:
         :type First: bool
@@ -4135,7 +4179,7 @@ class ChFiDS_Stripe(OCC.MMgt.MMgt_TShared):
         """
         return _ChFiDS.ChFiDS_Stripe_SetParameters(self, *args)
 
-    def Curve(self, *args) -> "Standard_Integer" :
+    def Curve(self, *args):
         """
         :param First:
         :type First: bool
@@ -4144,10 +4188,10 @@ class ChFiDS_Stripe(OCC.MMgt.MMgt_TShared):
         """
         return _ChFiDS.ChFiDS_Stripe_Curve(self, *args)
 
-    def SetCurve(self, *args) -> "void" :
+    def SetCurve(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param First:
         :type First: bool
         :rtype: None
@@ -4155,7 +4199,7 @@ class ChFiDS_Stripe(OCC.MMgt.MMgt_TShared):
         """
         return _ChFiDS.ChFiDS_Stripe_SetCurve(self, *args)
 
-    def PCurve(self, *args) -> "Handle_Geom2d_Curve const &" :
+    def PCurve(self, *args):
         """
         :param First:
         :type First: bool
@@ -4164,7 +4208,7 @@ class ChFiDS_Stripe(OCC.MMgt.MMgt_TShared):
         """
         return _ChFiDS.ChFiDS_Stripe_PCurve(self, *args)
 
-    def ChangePCurve(self, *args) -> "Handle_Geom2d_Curve &" :
+    def ChangePCurve(self, *args):
         """
         :param First:
         :type First: bool
@@ -4173,10 +4217,10 @@ class ChFiDS_Stripe(OCC.MMgt.MMgt_TShared):
         """
         return _ChFiDS.ChFiDS_Stripe_ChangePCurve(self, *args)
 
-    def Orientation(self, *args) -> "TopAbs_Orientation" :
+    def Orientation(self, *args):
         """
         :param OnS:
-        :type OnS: int
+        :type OnS: Standard_Integer
         :rtype: TopAbs_Orientation
 
         :param First:
@@ -4186,12 +4230,12 @@ class ChFiDS_Stripe(OCC.MMgt.MMgt_TShared):
         """
         return _ChFiDS.ChFiDS_Stripe_Orientation(self, *args)
 
-    def SetOrientation(self, *args) -> "void" :
+    def SetOrientation(self, *args):
         """
         :param Or:
         :type Or: TopAbs_Orientation
         :param OnS:
-        :type OnS: int
+        :type OnS: Standard_Integer
         :rtype: None
 
         :param Or:
@@ -4203,60 +4247,68 @@ class ChFiDS_Stripe(OCC.MMgt.MMgt_TShared):
         """
         return _ChFiDS.ChFiDS_Stripe_SetOrientation(self, *args)
 
-    def IndexPoint(self, *args) -> "Standard_Integer" :
+    def IndexPoint(self, *args):
         """
         :param First:
         :type First: bool
         :param OnS:
-        :type OnS: int
+        :type OnS: Standard_Integer
         :rtype: int
 
         """
         return _ChFiDS.ChFiDS_Stripe_IndexPoint(self, *args)
 
-    def SetIndexPoint(self, *args) -> "void" :
+    def SetIndexPoint(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param First:
         :type First: bool
         :param OnS:
-        :type OnS: int
+        :type OnS: Standard_Integer
         :rtype: None
 
         """
         return _ChFiDS.ChFiDS_Stripe_SetIndexPoint(self, *args)
 
-    def SolidIndex(self, *args) -> "Standard_Integer" :
+    def SolidIndex(self):
         """
         :rtype: int
 
         """
-        return _ChFiDS.ChFiDS_Stripe_SolidIndex(self, *args)
+        return _ChFiDS.ChFiDS_Stripe_SolidIndex(self)
 
-    def SetSolidIndex(self, *args) -> "void" :
+    def SetSolidIndex(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: None
 
         """
         return _ChFiDS.ChFiDS_Stripe_SetSolidIndex(self, *args)
 
-    def InDS(self, *args) -> "void" :
+    def InDS(self, *args):
         """
         * Set nb of SurfData's at end put in DS
 
         :param First:
         :type First: bool
         :param Nb: default value is 1
-        :type Nb: int
+        :type Nb: Standard_Integer
+        :rtype: None
+
+        * Set nb of SurfData's at end put in DS
+
+        :param First:
+        :type First: bool
+        :param Nb: default value is 1
+        :type Nb: Standard_Integer
         :rtype: None
 
         """
         return _ChFiDS.ChFiDS_Stripe_InDS(self, *args)
 
-    def IsInDS(self, *args) -> "Standard_Integer" :
+    def IsInDS(self, *args):
         """
         * Returns nb of SurfData's at end being in DS
 
@@ -4267,11 +4319,11 @@ class ChFiDS_Stripe(OCC.MMgt.MMgt_TShared):
         """
         return _ChFiDS.ChFiDS_Stripe_IsInDS(self, *args)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(ChFiDS_Stripe self)"""
         return _ChFiDS.ChFiDS_Stripe__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_ChFiDS_Stripe" :
+    def GetHandle(self):
         """GetHandle(ChFiDS_Stripe self) -> Handle_ChFiDS_Stripe"""
         return _ChFiDS.ChFiDS_Stripe_GetHandle(self)
 
@@ -4353,7 +4405,7 @@ Handle_ChFiDS_Stripe._kill_pointed = new_instancemethod(_ChFiDS.Handle_ChFiDS_St
 Handle_ChFiDS_Stripe_swigregister = _ChFiDS.Handle_ChFiDS_Stripe_swigregister
 Handle_ChFiDS_Stripe_swigregister(Handle_ChFiDS_Stripe)
 
-def Handle_ChFiDS_Stripe_DownCast(*args) -> "Handle_ChFiDS_Stripe const" :
+def Handle_ChFiDS_Stripe_DownCast(*args):
   return _ChFiDS.Handle_ChFiDS_Stripe_DownCast(*args)
 Handle_ChFiDS_Stripe_DownCast = _ChFiDS.Handle_ChFiDS_Stripe_DownCast
 
@@ -4363,22 +4415,22 @@ class ChFiDS_StripeArray1(object):
     def __init__(self, *args): 
         """
         :param Low:
-        :type Low: int
+        :type Low: Standard_Integer
         :param Up:
-        :type Up: int
+        :type Up: Standard_Integer
         :rtype: None
 
         :param Item:
         :type Item: Handle_ChFiDS_Stripe &
         :param Low:
-        :type Low: int
+        :type Low: Standard_Integer
         :param Up:
-        :type Up: int
+        :type Up: Standard_Integer
         :rtype: None
 
         """
         _ChFiDS.ChFiDS_StripeArray1_swiginit(self,_ChFiDS.new_ChFiDS_StripeArray1(*args))
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
         :param V:
         :type V: Handle_ChFiDS_Stripe &
@@ -4387,21 +4439,21 @@ class ChFiDS_StripeArray1(object):
         """
         return _ChFiDS.ChFiDS_StripeArray1_Init(self, *args)
 
-    def Destroy(self, *args) -> "void" :
+    def Destroy(self):
         """
         :rtype: None
 
         """
-        return _ChFiDS.ChFiDS_StripeArray1_Destroy(self, *args)
+        return _ChFiDS.ChFiDS_StripeArray1_Destroy(self)
 
-    def IsAllocated(self, *args) -> "Standard_Boolean" :
+    def IsAllocated(self):
         """
         :rtype: bool
 
         """
-        return _ChFiDS.ChFiDS_StripeArray1_IsAllocated(self, *args)
+        return _ChFiDS.ChFiDS_StripeArray1_IsAllocated(self)
 
-    def Assign(self, *args) -> "ChFiDS_StripeArray1 const &" :
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: ChFiDS_StripeArray1 &
@@ -4410,7 +4462,7 @@ class ChFiDS_StripeArray1(object):
         """
         return _ChFiDS.ChFiDS_StripeArray1_Assign(self, *args)
 
-    def Set(self, *args) -> "ChFiDS_StripeArray1 const &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: ChFiDS_StripeArray1 &
@@ -4419,31 +4471,31 @@ class ChFiDS_StripeArray1(object):
         """
         return _ChFiDS.ChFiDS_StripeArray1_Set(self, *args)
 
-    def Length(self, *args) -> "Standard_Integer" :
+    def Length(self):
         """
         :rtype: int
 
         """
-        return _ChFiDS.ChFiDS_StripeArray1_Length(self, *args)
+        return _ChFiDS.ChFiDS_StripeArray1_Length(self)
 
-    def Lower(self, *args) -> "Standard_Integer" :
+    def Lower(self):
         """
         :rtype: int
 
         """
-        return _ChFiDS.ChFiDS_StripeArray1_Lower(self, *args)
+        return _ChFiDS.ChFiDS_StripeArray1_Lower(self)
 
-    def Upper(self, *args) -> "Standard_Integer" :
+    def Upper(self):
         """
         :rtype: int
 
         """
-        return _ChFiDS.ChFiDS_StripeArray1_Upper(self, *args)
+        return _ChFiDS.ChFiDS_StripeArray1_Upper(self)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Value:
         :type Value: Handle_ChFiDS_Stripe &
         :rtype: None
@@ -4451,19 +4503,19 @@ class ChFiDS_StripeArray1(object):
         """
         return _ChFiDS.ChFiDS_StripeArray1_SetValue(self, *args)
 
-    def Value(self, *args) -> "Handle_ChFiDS_Stripe const &" :
+    def Value(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Handle_ChFiDS_Stripe
 
         """
         return _ChFiDS.ChFiDS_StripeArray1_Value(self, *args)
 
-    def ChangeValue(self, *args) -> "Handle_ChFiDS_Stripe &" :
+    def ChangeValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Handle_ChFiDS_Stripe
 
         """
@@ -4495,13 +4547,13 @@ ChFiDS_StripeArray1_swigregister(ChFiDS_StripeArray1)
 class ChFiDS_StripeMap(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _ChFiDS.ChFiDS_StripeMap_swiginit(self,_ChFiDS.new_ChFiDS_StripeMap(*args))
-    def Add(self, *args) -> "void" :
+        _ChFiDS.ChFiDS_StripeMap_swiginit(self,_ChFiDS.new_ChFiDS_StripeMap())
+    def Add(self, *args):
         """
         :param V:
         :type V: TopoDS_Vertex &
@@ -4512,14 +4564,14 @@ class ChFiDS_StripeMap(object):
         """
         return _ChFiDS.ChFiDS_StripeMap_Add(self, *args)
 
-    def Extent(self, *args) -> "Standard_Integer" :
+    def Extent(self):
         """
         :rtype: int
 
         """
-        return _ChFiDS.ChFiDS_StripeMap_Extent(self, *args)
+        return _ChFiDS.ChFiDS_StripeMap_Extent(self)
 
-    def FindFromKey(self, *args) -> "ChFiDS_ListOfStripe const &" :
+    def FindFromKey(self, *args):
         """
         :param V:
         :type V: TopoDS_Vertex &
@@ -4528,30 +4580,30 @@ class ChFiDS_StripeMap(object):
         """
         return _ChFiDS.ChFiDS_StripeMap_FindFromKey(self, *args)
 
-    def FindFromIndex(self, *args) -> "ChFiDS_ListOfStripe const &" :
+    def FindFromIndex(self, *args):
         """
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :rtype: ChFiDS_ListOfStripe
 
         """
         return _ChFiDS.ChFiDS_StripeMap_FindFromIndex(self, *args)
 
-    def FindKey(self, *args) -> "TopoDS_Vertex const" :
+    def FindKey(self, *args):
         """
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :rtype: TopoDS_Vertex
 
         """
         return _ChFiDS.ChFiDS_StripeMap_FindKey(self, *args)
 
-    def Clear(self, *args) -> "void" :
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _ChFiDS.ChFiDS_StripeMap_Clear(self, *args)
+        return _ChFiDS.ChFiDS_StripeMap_Clear(self)
 
     def __del__(self):
     	try:
@@ -4574,13 +4626,13 @@ ChFiDS_StripeMap_swigregister(ChFiDS_StripeMap)
 class ChFiDS_SurfData(OCC.MMgt.MMgt_TShared):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _ChFiDS.ChFiDS_SurfData_swiginit(self,_ChFiDS.new_ChFiDS_SurfData(*args))
-    def Copy(self, *args) -> "void" :
+        _ChFiDS.ChFiDS_SurfData_swiginit(self,_ChFiDS.new_ChFiDS_SurfData())
+    def Copy(self, *args):
         """
         :param Other:
         :type Other: Handle_ChFiDS_SurfData &
@@ -4589,270 +4641,270 @@ class ChFiDS_SurfData(OCC.MMgt.MMgt_TShared):
         """
         return _ChFiDS.ChFiDS_SurfData_Copy(self, *args)
 
-    def IndexOfS1(self, *args) -> "Standard_Integer" :
+    def IndexOfS1(self):
         """
         :rtype: int
 
         """
-        return _ChFiDS.ChFiDS_SurfData_IndexOfS1(self, *args)
+        return _ChFiDS.ChFiDS_SurfData_IndexOfS1(self)
 
-    def IndexOfS2(self, *args) -> "Standard_Integer" :
+    def IndexOfS2(self):
         """
         :rtype: int
 
         """
-        return _ChFiDS.ChFiDS_SurfData_IndexOfS2(self, *args)
+        return _ChFiDS.ChFiDS_SurfData_IndexOfS2(self)
 
-    def IsOnCurve1(self, *args) -> "Standard_Boolean" :
+    def IsOnCurve1(self):
         """
         :rtype: bool
 
         """
-        return _ChFiDS.ChFiDS_SurfData_IsOnCurve1(self, *args)
+        return _ChFiDS.ChFiDS_SurfData_IsOnCurve1(self)
 
-    def IsOnCurve2(self, *args) -> "Standard_Boolean" :
+    def IsOnCurve2(self):
         """
         :rtype: bool
 
         """
-        return _ChFiDS.ChFiDS_SurfData_IsOnCurve2(self, *args)
+        return _ChFiDS.ChFiDS_SurfData_IsOnCurve2(self)
 
-    def IndexOfC1(self, *args) -> "Standard_Integer" :
+    def IndexOfC1(self):
         """
         :rtype: int
 
         """
-        return _ChFiDS.ChFiDS_SurfData_IndexOfC1(self, *args)
+        return _ChFiDS.ChFiDS_SurfData_IndexOfC1(self)
 
-    def IndexOfC2(self, *args) -> "Standard_Integer" :
+    def IndexOfC2(self):
         """
         :rtype: int
 
         """
-        return _ChFiDS.ChFiDS_SurfData_IndexOfC2(self, *args)
+        return _ChFiDS.ChFiDS_SurfData_IndexOfC2(self)
 
-    def Surf(self, *args) -> "Standard_Integer" :
+    def Surf(self):
         """
         :rtype: int
 
         """
-        return _ChFiDS.ChFiDS_SurfData_Surf(self, *args)
+        return _ChFiDS.ChFiDS_SurfData_Surf(self)
 
-    def Orientation(self, *args) -> "TopAbs_Orientation" :
+    def Orientation(self):
         """
         :rtype: TopAbs_Orientation
 
         """
-        return _ChFiDS.ChFiDS_SurfData_Orientation(self, *args)
+        return _ChFiDS.ChFiDS_SurfData_Orientation(self)
 
-    def InterferenceOnS1(self, *args) -> "ChFiDS_FaceInterference const &" :
+    def InterferenceOnS1(self):
         """
         :rtype: ChFiDS_FaceInterference
 
         """
-        return _ChFiDS.ChFiDS_SurfData_InterferenceOnS1(self, *args)
+        return _ChFiDS.ChFiDS_SurfData_InterferenceOnS1(self)
 
-    def InterferenceOnS2(self, *args) -> "ChFiDS_FaceInterference const &" :
+    def InterferenceOnS2(self):
         """
         :rtype: ChFiDS_FaceInterference
 
         """
-        return _ChFiDS.ChFiDS_SurfData_InterferenceOnS2(self, *args)
+        return _ChFiDS.ChFiDS_SurfData_InterferenceOnS2(self)
 
-    def VertexFirstOnS1(self, *args) -> "ChFiDS_CommonPoint const &" :
+    def VertexFirstOnS1(self):
         """
         :rtype: ChFiDS_CommonPoint
 
         """
-        return _ChFiDS.ChFiDS_SurfData_VertexFirstOnS1(self, *args)
+        return _ChFiDS.ChFiDS_SurfData_VertexFirstOnS1(self)
 
-    def VertexFirstOnS2(self, *args) -> "ChFiDS_CommonPoint const &" :
+    def VertexFirstOnS2(self):
         """
         :rtype: ChFiDS_CommonPoint
 
         """
-        return _ChFiDS.ChFiDS_SurfData_VertexFirstOnS2(self, *args)
+        return _ChFiDS.ChFiDS_SurfData_VertexFirstOnS2(self)
 
-    def VertexLastOnS1(self, *args) -> "ChFiDS_CommonPoint const &" :
+    def VertexLastOnS1(self):
         """
         :rtype: ChFiDS_CommonPoint
 
         """
-        return _ChFiDS.ChFiDS_SurfData_VertexLastOnS1(self, *args)
+        return _ChFiDS.ChFiDS_SurfData_VertexLastOnS1(self)
 
-    def VertexLastOnS2(self, *args) -> "ChFiDS_CommonPoint const &" :
+    def VertexLastOnS2(self):
         """
         :rtype: ChFiDS_CommonPoint
 
         """
-        return _ChFiDS.ChFiDS_SurfData_VertexLastOnS2(self, *args)
+        return _ChFiDS.ChFiDS_SurfData_VertexLastOnS2(self)
 
-    def ChangeIndexOfS1(self, *args) -> "void" :
+    def ChangeIndexOfS1(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: None
 
         """
         return _ChFiDS.ChFiDS_SurfData_ChangeIndexOfS1(self, *args)
 
-    def ChangeIndexOfS2(self, *args) -> "void" :
+    def ChangeIndexOfS2(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: None
 
         """
         return _ChFiDS.ChFiDS_SurfData_ChangeIndexOfS2(self, *args)
 
-    def ChangeSurf(self, *args) -> "void" :
+    def ChangeSurf(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: None
 
         """
         return _ChFiDS.ChFiDS_SurfData_ChangeSurf(self, *args)
 
-    def SetIndexOfC1(self, *args) -> "void" :
+    def SetIndexOfC1(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: None
 
         """
         return _ChFiDS.ChFiDS_SurfData_SetIndexOfC1(self, *args)
 
-    def SetIndexOfC2(self, *args) -> "void" :
+    def SetIndexOfC2(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: None
 
         """
         return _ChFiDS.ChFiDS_SurfData_SetIndexOfC2(self, *args)
 
-    def ChangeOrientation(self, *args) -> "TopAbs_Orientation &" :
+    def ChangeOrientation(self):
         """
         :rtype: TopAbs_Orientation
 
         """
-        return _ChFiDS.ChFiDS_SurfData_ChangeOrientation(self, *args)
+        return _ChFiDS.ChFiDS_SurfData_ChangeOrientation(self)
 
-    def ChangeInterferenceOnS1(self, *args) -> "ChFiDS_FaceInterference &" :
+    def ChangeInterferenceOnS1(self):
         """
         :rtype: ChFiDS_FaceInterference
 
         """
-        return _ChFiDS.ChFiDS_SurfData_ChangeInterferenceOnS1(self, *args)
+        return _ChFiDS.ChFiDS_SurfData_ChangeInterferenceOnS1(self)
 
-    def ChangeInterferenceOnS2(self, *args) -> "ChFiDS_FaceInterference &" :
+    def ChangeInterferenceOnS2(self):
         """
         :rtype: ChFiDS_FaceInterference
 
         """
-        return _ChFiDS.ChFiDS_SurfData_ChangeInterferenceOnS2(self, *args)
+        return _ChFiDS.ChFiDS_SurfData_ChangeInterferenceOnS2(self)
 
-    def ChangeVertexFirstOnS1(self, *args) -> "ChFiDS_CommonPoint &" :
+    def ChangeVertexFirstOnS1(self):
         """
         :rtype: ChFiDS_CommonPoint
 
         """
-        return _ChFiDS.ChFiDS_SurfData_ChangeVertexFirstOnS1(self, *args)
+        return _ChFiDS.ChFiDS_SurfData_ChangeVertexFirstOnS1(self)
 
-    def ChangeVertexFirstOnS2(self, *args) -> "ChFiDS_CommonPoint &" :
+    def ChangeVertexFirstOnS2(self):
         """
         :rtype: ChFiDS_CommonPoint
 
         """
-        return _ChFiDS.ChFiDS_SurfData_ChangeVertexFirstOnS2(self, *args)
+        return _ChFiDS.ChFiDS_SurfData_ChangeVertexFirstOnS2(self)
 
-    def ChangeVertexLastOnS1(self, *args) -> "ChFiDS_CommonPoint &" :
+    def ChangeVertexLastOnS1(self):
         """
         :rtype: ChFiDS_CommonPoint
 
         """
-        return _ChFiDS.ChFiDS_SurfData_ChangeVertexLastOnS1(self, *args)
+        return _ChFiDS.ChFiDS_SurfData_ChangeVertexLastOnS1(self)
 
-    def ChangeVertexLastOnS2(self, *args) -> "ChFiDS_CommonPoint &" :
+    def ChangeVertexLastOnS2(self):
         """
         :rtype: ChFiDS_CommonPoint
 
         """
-        return _ChFiDS.ChFiDS_SurfData_ChangeVertexLastOnS2(self, *args)
+        return _ChFiDS.ChFiDS_SurfData_ChangeVertexLastOnS2(self)
 
-    def Interference(self, *args) -> "ChFiDS_FaceInterference const &" :
+    def Interference(self, *args):
         """
         :param OnS:
-        :type OnS: int
+        :type OnS: Standard_Integer
         :rtype: ChFiDS_FaceInterference
 
         """
         return _ChFiDS.ChFiDS_SurfData_Interference(self, *args)
 
-    def ChangeInterference(self, *args) -> "ChFiDS_FaceInterference &" :
+    def ChangeInterference(self, *args):
         """
         :param OnS:
-        :type OnS: int
+        :type OnS: Standard_Integer
         :rtype: ChFiDS_FaceInterference
 
         """
         return _ChFiDS.ChFiDS_SurfData_ChangeInterference(self, *args)
 
-    def Index(self, *args) -> "Standard_Integer" :
+    def Index(self, *args):
         """
         :param OfS:
-        :type OfS: int
+        :type OfS: Standard_Integer
         :rtype: int
 
         """
         return _ChFiDS.ChFiDS_SurfData_Index(self, *args)
 
-    def Vertex(self, *args) -> "ChFiDS_CommonPoint const &" :
+    def Vertex(self, *args):
         """
         * returns one of the four vertices wether First is true or wrong and OnS equals 1 or 2.
 
         :param First:
         :type First: bool
         :param OnS:
-        :type OnS: int
+        :type OnS: Standard_Integer
         :rtype: ChFiDS_CommonPoint
 
         """
         return _ChFiDS.ChFiDS_SurfData_Vertex(self, *args)
 
-    def ChangeVertex(self, *args) -> "ChFiDS_CommonPoint &" :
+    def ChangeVertex(self, *args):
         """
         * returns one of the four vertices wether First is true or wrong and OnS equals 1 or 2.
 
         :param First:
         :type First: bool
         :param OnS:
-        :type OnS: int
+        :type OnS: Standard_Integer
         :rtype: ChFiDS_CommonPoint
 
         """
         return _ChFiDS.ChFiDS_SurfData_ChangeVertex(self, *args)
 
-    def IsOnCurve(self, *args) -> "Standard_Boolean" :
+    def IsOnCurve(self, *args):
         """
         :param OnS:
-        :type OnS: int
+        :type OnS: Standard_Integer
         :rtype: bool
 
         """
         return _ChFiDS.ChFiDS_SurfData_IsOnCurve(self, *args)
 
-    def IndexOfC(self, *args) -> "Standard_Integer" :
+    def IndexOfC(self, *args):
         """
         :param OnS:
-        :type OnS: int
+        :type OnS: Standard_Integer
         :rtype: int
 
         """
         return _ChFiDS.ChFiDS_SurfData_IndexOfC(self, *args)
 
-    def FirstSpineParam(self, *args) -> "void" :
+    def FirstSpineParam(self, *args):
         """
         :rtype: float
 
@@ -4863,7 +4915,7 @@ class ChFiDS_SurfData(OCC.MMgt.MMgt_TShared):
         """
         return _ChFiDS.ChFiDS_SurfData_FirstSpineParam(self, *args)
 
-    def LastSpineParam(self, *args) -> "void" :
+    def LastSpineParam(self, *args):
         """
         :rtype: float
 
@@ -4874,7 +4926,7 @@ class ChFiDS_SurfData(OCC.MMgt.MMgt_TShared):
         """
         return _ChFiDS.ChFiDS_SurfData_LastSpineParam(self, *args)
 
-    def FirstExtensionValue(self, *args) -> "void" :
+    def FirstExtensionValue(self, *args):
         """
         :rtype: float
 
@@ -4885,7 +4937,7 @@ class ChFiDS_SurfData(OCC.MMgt.MMgt_TShared):
         """
         return _ChFiDS.ChFiDS_SurfData_FirstExtensionValue(self, *args)
 
-    def LastExtensionValue(self, *args) -> "void" :
+    def LastExtensionValue(self, *args):
         """
         :rtype: float
 
@@ -4896,14 +4948,14 @@ class ChFiDS_SurfData(OCC.MMgt.MMgt_TShared):
         """
         return _ChFiDS.ChFiDS_SurfData_LastExtensionValue(self, *args)
 
-    def Simul(self, *args) -> "Handle_MMgt_TShared" :
+    def Simul(self):
         """
         :rtype: Handle_MMgt_TShared
 
         """
-        return _ChFiDS.ChFiDS_SurfData_Simul(self, *args)
+        return _ChFiDS.ChFiDS_SurfData_Simul(self)
 
-    def SetSimul(self, *args) -> "void" :
+    def SetSimul(self, *args):
         """
         :param S:
         :type S: Handle_MMgt_TShared &
@@ -4912,19 +4964,19 @@ class ChFiDS_SurfData(OCC.MMgt.MMgt_TShared):
         """
         return _ChFiDS.ChFiDS_SurfData_SetSimul(self, *args)
 
-    def ResetSimul(self, *args) -> "void" :
+    def ResetSimul(self):
         """
         :rtype: None
 
         """
-        return _ChFiDS.ChFiDS_SurfData_ResetSimul(self, *args)
+        return _ChFiDS.ChFiDS_SurfData_ResetSimul(self)
 
-    def Get2dPoints(self, *args) -> "void" :
+    def Get2dPoints(self, *args):
         """
         :param First:
         :type First: bool
         :param OnS:
-        :type OnS: int
+        :type OnS: Standard_Integer
         :rtype: gp_Pnt2d
 
         :param P2df1:
@@ -4940,7 +4992,7 @@ class ChFiDS_SurfData(OCC.MMgt.MMgt_TShared):
         """
         return _ChFiDS.ChFiDS_SurfData_Get2dPoints(self, *args)
 
-    def Set2dPoints(self, *args) -> "void" :
+    def Set2dPoints(self, *args):
         """
         :param P2df1:
         :type P2df1: gp_Pnt2d
@@ -4955,7 +5007,7 @@ class ChFiDS_SurfData(OCC.MMgt.MMgt_TShared):
         """
         return _ChFiDS.ChFiDS_SurfData_Set2dPoints(self, *args)
 
-    def TwistOnS1(self, *args) -> "void" :
+    def TwistOnS1(self, *args):
         """
         :rtype: bool
 
@@ -4966,7 +5018,7 @@ class ChFiDS_SurfData(OCC.MMgt.MMgt_TShared):
         """
         return _ChFiDS.ChFiDS_SurfData_TwistOnS1(self, *args)
 
-    def TwistOnS2(self, *args) -> "void" :
+    def TwistOnS2(self, *args):
         """
         :rtype: bool
 
@@ -4977,11 +5029,11 @@ class ChFiDS_SurfData(OCC.MMgt.MMgt_TShared):
         """
         return _ChFiDS.ChFiDS_SurfData_TwistOnS2(self, *args)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(ChFiDS_SurfData self)"""
         return _ChFiDS.ChFiDS_SurfData__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_ChFiDS_SurfData" :
+    def GetHandle(self):
         """GetHandle(ChFiDS_SurfData self) -> Handle_ChFiDS_SurfData"""
         return _ChFiDS.ChFiDS_SurfData_GetHandle(self)
 
@@ -5064,7 +5116,7 @@ Handle_ChFiDS_SurfData._kill_pointed = new_instancemethod(_ChFiDS.Handle_ChFiDS_
 Handle_ChFiDS_SurfData_swigregister = _ChFiDS.Handle_ChFiDS_SurfData_swigregister
 Handle_ChFiDS_SurfData_swigregister(Handle_ChFiDS_SurfData)
 
-def Handle_ChFiDS_SurfData_DownCast(*args) -> "Handle_ChFiDS_SurfData const" :
+def Handle_ChFiDS_SurfData_DownCast(*args):
   return _ChFiDS.Handle_ChFiDS_SurfData_DownCast(*args)
 Handle_ChFiDS_SurfData_DownCast = _ChFiDS.Handle_ChFiDS_SurfData_DownCast
 
@@ -5081,7 +5133,7 @@ class ChFiDS_ChamfSpine(ChFiDS_Spine):
 
         """
         _ChFiDS.ChFiDS_ChamfSpine_swiginit(self,_ChFiDS.new_ChFiDS_ChamfSpine(*args))
-    def SetDist(self, *args) -> "void" :
+    def SetDist(self, *args):
         """
         :param Dis:
         :type Dis: float
@@ -5090,16 +5142,16 @@ class ChFiDS_ChamfSpine(ChFiDS_Spine):
         """
         return _ChFiDS.ChFiDS_ChamfSpine_SetDist(self, *args)
 
-    def GetDist(self, *args) -> "void" :
+    def GetDist(self):
         """
         :param Dis:
         :type Dis: float &
         :rtype: None
 
         """
-        return _ChFiDS.ChFiDS_ChamfSpine_GetDist(self, *args)
+        return _ChFiDS.ChFiDS_ChamfSpine_GetDist(self)
 
-    def SetDists(self, *args) -> "void" :
+    def SetDists(self, *args):
         """
         :param Dis1:
         :type Dis1: float
@@ -5110,7 +5162,7 @@ class ChFiDS_ChamfSpine(ChFiDS_Spine):
         """
         return _ChFiDS.ChFiDS_ChamfSpine_SetDists(self, *args)
 
-    def Dists(self, *args) -> "void" :
+    def Dists(self):
         """
         :param Dis1:
         :type Dis1: float &
@@ -5119,9 +5171,9 @@ class ChFiDS_ChamfSpine(ChFiDS_Spine):
         :rtype: None
 
         """
-        return _ChFiDS.ChFiDS_ChamfSpine_Dists(self, *args)
+        return _ChFiDS.ChFiDS_ChamfSpine_Dists(self)
 
-    def GetDistAngle(self, *args) -> "void" :
+    def GetDistAngle(self, *args):
         """
         :param Dis:
         :type Dis: float &
@@ -5134,7 +5186,7 @@ class ChFiDS_ChamfSpine(ChFiDS_Spine):
         """
         return _ChFiDS.ChFiDS_ChamfSpine_GetDistAngle(self, *args)
 
-    def SetDistAngle(self, *args) -> "void" :
+    def SetDistAngle(self, *args):
         """
         :param Dis:
         :type Dis: float
@@ -5147,20 +5199,20 @@ class ChFiDS_ChamfSpine(ChFiDS_Spine):
         """
         return _ChFiDS.ChFiDS_ChamfSpine_SetDistAngle(self, *args)
 
-    def IsChamfer(self, *args) -> "ChFiDS_ChamfMethod" :
+    def IsChamfer(self):
         """
         * Return the method of chamfers used
 
         :rtype: ChFiDS_ChamfMethod
 
         """
-        return _ChFiDS.ChFiDS_ChamfSpine_IsChamfer(self, *args)
+        return _ChFiDS.ChFiDS_ChamfSpine_IsChamfer(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(ChFiDS_ChamfSpine self)"""
         return _ChFiDS.ChFiDS_ChamfSpine__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_ChFiDS_ChamfSpine" :
+    def GetHandle(self):
         """GetHandle(ChFiDS_ChamfSpine self) -> Handle_ChFiDS_ChamfSpine"""
         return _ChFiDS.ChFiDS_ChamfSpine_GetHandle(self)
 
@@ -5205,7 +5257,7 @@ Handle_ChFiDS_ChamfSpine._kill_pointed = new_instancemethod(_ChFiDS.Handle_ChFiD
 Handle_ChFiDS_ChamfSpine_swigregister = _ChFiDS.Handle_ChFiDS_ChamfSpine_swigregister
 Handle_ChFiDS_ChamfSpine_swigregister(Handle_ChFiDS_ChamfSpine)
 
-def Handle_ChFiDS_ChamfSpine_DownCast(*args) -> "Handle_ChFiDS_ChamfSpine const" :
+def Handle_ChFiDS_ChamfSpine_DownCast(*args):
   return _ChFiDS.Handle_ChFiDS_ChamfSpine_DownCast(*args)
 Handle_ChFiDS_ChamfSpine_DownCast = _ChFiDS.Handle_ChFiDS_ChamfSpine_DownCast
 
@@ -5222,7 +5274,20 @@ class ChFiDS_FilSpine(ChFiDS_Spine):
 
         """
         _ChFiDS.ChFiDS_FilSpine_swiginit(self,_ChFiDS.new_ChFiDS_FilSpine(*args))
-    def UnSetRadius(self, *args) -> "void" :
+    def Reset(self, *args):
+        """
+        :param AllData: default value is Standard_False
+        :type AllData: bool
+        :rtype: void
+
+        :param AllData: default value is Standard_False
+        :type AllData: bool
+        :rtype: void
+
+        """
+        return _ChFiDS.ChFiDS_FilSpine_Reset(self, *args)
+
+    def UnSetRadius(self, *args):
         """
         * resets the constant vector on edge E.
 
@@ -5239,7 +5304,7 @@ class ChFiDS_FilSpine(ChFiDS_Spine):
         """
         return _ChFiDS.ChFiDS_FilSpine_UnSetRadius(self, *args)
 
-    def SetRadius(self, *args) -> "void" :
+    def SetRadius(self, *args):
         """
         * initializes the constant vector on edge E.
 
@@ -5262,7 +5327,7 @@ class ChFiDS_FilSpine(ChFiDS_Spine):
         :param UandR:
         :type UandR: gp_XY
         :param IinC:
-        :type IinC: int
+        :type IinC: Standard_Integer
         :rtype: None
 
         * initializes the constant vector on all spine.
@@ -5276,13 +5341,13 @@ class ChFiDS_FilSpine(ChFiDS_Spine):
         :param C:
         :type C: Handle_Law_Function &
         :param IinC:
-        :type IinC: int
+        :type IinC: Standard_Integer
         :rtype: None
 
         """
         return _ChFiDS.ChFiDS_FilSpine_SetRadius(self, *args)
 
-    def IsConstant(self, *args) -> "Standard_Boolean" :
+    def IsConstant(self, *args):
         """
         * returns true if the radius is constant all along the spine.
 
@@ -5291,13 +5356,13 @@ class ChFiDS_FilSpine(ChFiDS_Spine):
         * returns true if the radius is constant all along the edge E.
 
         :param IE:
-        :type IE: int
+        :type IE: Standard_Integer
         :rtype: bool
 
         """
         return _ChFiDS.ChFiDS_FilSpine_IsConstant(self, *args)
 
-    def Radius(self, *args) -> "Standard_Real" :
+    def Radius(self, *args):
         """
         * returns the radius if the fillet is constant all along the spine.
 
@@ -5306,7 +5371,7 @@ class ChFiDS_FilSpine(ChFiDS_Spine):
         * returns the radius if the fillet is constant all along the edge E.
 
         :param IE:
-        :type IE: int
+        :type IE: Standard_Integer
         :rtype: float
 
         * returns the radius if the fillet is constant all along the edge E.
@@ -5318,7 +5383,7 @@ class ChFiDS_FilSpine(ChFiDS_Spine):
         """
         return _ChFiDS.ChFiDS_FilSpine_Radius(self, *args)
 
-    def law(self, *args) -> "Handle_Law_Composite" :
+    def law(self, *args):
         """
         :param Els:
         :type Els: Handle_ChFiDS_HElSpine &
@@ -5327,7 +5392,7 @@ class ChFiDS_FilSpine(ChFiDS_Spine):
         """
         return _ChFiDS.ChFiDS_FilSpine_law(self, *args)
 
-    def ChangeLaw(self, *args) -> "Handle_Law_Function &" :
+    def ChangeLaw(self, *args):
         """
         * returns the elementary law
 
@@ -5338,20 +5403,20 @@ class ChFiDS_FilSpine(ChFiDS_Spine):
         """
         return _ChFiDS.ChFiDS_FilSpine_ChangeLaw(self, *args)
 
-    def MaxRadFromSeqAndLaws(self, *args) -> "Standard_Real" :
+    def MaxRadFromSeqAndLaws(self):
         """
         * returns the maximum radius if the fillet is non-constant
 
         :rtype: float
 
         """
-        return _ChFiDS.ChFiDS_FilSpine_MaxRadFromSeqAndLaws(self, *args)
+        return _ChFiDS.ChFiDS_FilSpine_MaxRadFromSeqAndLaws(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(ChFiDS_FilSpine self)"""
         return _ChFiDS.ChFiDS_FilSpine__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_ChFiDS_FilSpine" :
+    def GetHandle(self):
         """GetHandle(ChFiDS_FilSpine self) -> Handle_ChFiDS_FilSpine"""
         return _ChFiDS.ChFiDS_FilSpine_GetHandle(self)
 
@@ -5363,6 +5428,7 @@ class ChFiDS_FilSpine(ChFiDS_Spine):
     		pass
 
 
+ChFiDS_FilSpine.Reset = new_instancemethod(_ChFiDS.ChFiDS_FilSpine_Reset,None,ChFiDS_FilSpine)
 ChFiDS_FilSpine.UnSetRadius = new_instancemethod(_ChFiDS.ChFiDS_FilSpine_UnSetRadius,None,ChFiDS_FilSpine)
 ChFiDS_FilSpine.SetRadius = new_instancemethod(_ChFiDS.ChFiDS_FilSpine_SetRadius,None,ChFiDS_FilSpine)
 ChFiDS_FilSpine.IsConstant = new_instancemethod(_ChFiDS.ChFiDS_FilSpine_IsConstant,None,ChFiDS_FilSpine)
@@ -5396,7 +5462,7 @@ Handle_ChFiDS_FilSpine._kill_pointed = new_instancemethod(_ChFiDS.Handle_ChFiDS_
 Handle_ChFiDS_FilSpine_swigregister = _ChFiDS.Handle_ChFiDS_FilSpine_swigregister
 Handle_ChFiDS_FilSpine_swigregister(Handle_ChFiDS_FilSpine)
 
-def Handle_ChFiDS_FilSpine_DownCast(*args) -> "Handle_ChFiDS_FilSpine const" :
+def Handle_ChFiDS_FilSpine_DownCast(*args):
   return _ChFiDS.Handle_ChFiDS_FilSpine_DownCast(*args)
 Handle_ChFiDS_FilSpine_DownCast = _ChFiDS.Handle_ChFiDS_FilSpine_DownCast
 

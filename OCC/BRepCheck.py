@@ -154,8 +154,9 @@ BRepCheck_InvalidToleranceValue = _BRepCheck.BRepCheck_InvalidToleranceValue
 BRepCheck_CheckFail = _BRepCheck.BRepCheck_CheckFail
 class brepcheck(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
+    def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def Add(*args) -> "void" :
+    def Add(*args):
         """
         :param List:
         :type List: BRepCheck_ListOfStatus &
@@ -167,7 +168,7 @@ class brepcheck(object):
         return _BRepCheck.brepcheck_Add(*args)
 
     Add = staticmethod(Add)
-    def Print(*args) -> "void" :
+    def Print(*args):
         """
         :param Stat:
         :type Stat: BRepCheck_Status
@@ -179,7 +180,7 @@ class brepcheck(object):
         return _BRepCheck.brepcheck_Print(*args)
 
     Print = staticmethod(Print)
-    def SelfIntersection(*args) -> "Standard_Boolean" :
+    def SelfIntersection(*args):
         """
         :param W:
         :type W: TopoDS_Wire &
@@ -195,8 +196,6 @@ class brepcheck(object):
         return _BRepCheck.brepcheck_SelfIntersection(*args)
 
     SelfIntersection = staticmethod(SelfIntersection)
-    def __init__(self): 
-        _BRepCheck.brepcheck_swiginit(self,_BRepCheck.new_brepcheck())
     def __del__(self):
     	try:
     		self.thisown = False
@@ -209,7 +208,7 @@ brepcheck._kill_pointed = new_instancemethod(_BRepCheck.brepcheck__kill_pointed,
 brepcheck_swigregister = _BRepCheck.brepcheck_swigregister
 brepcheck_swigregister(brepcheck)
 
-def brepcheck_Add(*args) -> "void" :
+def brepcheck_Add(*args):
   """
     :param List:
     :type List: BRepCheck_ListOfStatus &
@@ -220,7 +219,7 @@ def brepcheck_Add(*args) -> "void" :
     """
   return _BRepCheck.brepcheck_Add(*args)
 
-def brepcheck_Print(*args) -> "void" :
+def brepcheck_Print(*args):
   """
     :param Stat:
     :type Stat: BRepCheck_Status
@@ -231,7 +230,7 @@ def brepcheck_Print(*args) -> "void" :
     """
   return _BRepCheck.brepcheck_Print(*args)
 
-def brepcheck_SelfIntersection(*args) -> "Standard_Boolean" :
+def brepcheck_SelfIntersection(*args):
   """
     :param W:
     :type W: TopoDS_Wire &
@@ -259,10 +258,26 @@ class BRepCheck_Analyzer(object):
         :type GeomControls: bool
         :rtype: None
 
+        * Constructs a shape validation object defined by the shape S. <S> is the shape to control. <GeomControls> If False only topological informaions are checked. The geometricals controls are For a Vertex : BRepCheck_InvalidToleranceValue NYI For an Edge : BRepCheck_InvalidCurveOnClosedSurface, BRepCheck_InvalidCurveOnSurface, BRepCheck_InvalidSameParameterFlag, BRepCheck_InvalidToleranceValue NYI For a face : BRepCheck_UnorientableShape, BRepCheck_IntersectingWires, BRepCheck_InvalidToleranceValue NYI For a wire : BRepCheck_SelfIntersectingWire
+
+        :param S:
+        :type S: TopoDS_Shape &
+        :param GeomControls: default value is Standard_True
+        :type GeomControls: bool
+        :rtype: None
+
         """
         _BRepCheck.BRepCheck_Analyzer_swiginit(self,_BRepCheck.new_BRepCheck_Analyzer(*args))
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
+        * <S> is the shape to control. <GeomControls> If False only topological informaions are checked. The geometricals controls are For a Vertex : BRepCheck_InvalidTolerance NYI For an Edge : BRepCheck_InvalidCurveOnClosedSurface, BRepCheck_InvalidCurveOnSurface, BRepCheck_InvalidSameParameterFlag, BRepCheck_InvalidTolerance NYI For a face : BRepCheck_UnorientableShape, BRepCheck_IntersectingWires, BRepCheck_InvalidTolerance NYI For a wire : BRepCheck_SelfIntersectingWire
+
+        :param S:
+        :type S: TopoDS_Shape &
+        :param GeomControls: default value is Standard_True
+        :type GeomControls: bool
+        :rtype: None
+
         * <S> is the shape to control. <GeomControls> If False only topological informaions are checked. The geometricals controls are For a Vertex : BRepCheck_InvalidTolerance NYI For an Edge : BRepCheck_InvalidCurveOnClosedSurface, BRepCheck_InvalidCurveOnSurface, BRepCheck_InvalidSameParameterFlag, BRepCheck_InvalidTolerance NYI For a face : BRepCheck_UnorientableShape, BRepCheck_IntersectingWires, BRepCheck_InvalidTolerance NYI For a wire : BRepCheck_SelfIntersectingWire
 
         :param S:
@@ -274,7 +289,7 @@ class BRepCheck_Analyzer(object):
         """
         return _BRepCheck.BRepCheck_Analyzer_Init(self, *args)
 
-    def IsValid(self, *args) -> "Standard_Boolean" :
+    def IsValid(self, *args):
         """
         * <S> is a subshape of the original shape. Returns <STandard_True> if no default has been detected on <S> and any of its subshape.
 
@@ -289,7 +304,7 @@ class BRepCheck_Analyzer(object):
         """
         return _BRepCheck.BRepCheck_Analyzer_IsValid(self, *args)
 
-    def Result(self, *args) -> "Handle_BRepCheck_Result const &" :
+    def Result(self, *args):
         """
         :param SubS:
         :type SubS: TopoDS_Shape &
@@ -326,7 +341,7 @@ class BRepCheck_DataMapIteratorOfDataMapOfShapeListOfStatus(OCC.TCollection.TCol
 
         """
         _BRepCheck.BRepCheck_DataMapIteratorOfDataMapOfShapeListOfStatus_swiginit(self,_BRepCheck.new_BRepCheck_DataMapIteratorOfDataMapOfShapeListOfStatus(*args))
-    def Initialize(self, *args) -> "void" :
+    def Initialize(self, *args):
         """
         :param aMap:
         :type aMap: BRepCheck_DataMapOfShapeListOfStatus &
@@ -335,19 +350,19 @@ class BRepCheck_DataMapIteratorOfDataMapOfShapeListOfStatus(OCC.TCollection.TCol
         """
         return _BRepCheck.BRepCheck_DataMapIteratorOfDataMapOfShapeListOfStatus_Initialize(self, *args)
 
-    def Key(self, *args) -> "TopoDS_Shape const" :
+    def Key(self):
         """
         :rtype: TopoDS_Shape
 
         """
-        return _BRepCheck.BRepCheck_DataMapIteratorOfDataMapOfShapeListOfStatus_Key(self, *args)
+        return _BRepCheck.BRepCheck_DataMapIteratorOfDataMapOfShapeListOfStatus_Key(self)
 
-    def Value(self, *args) -> "BRepCheck_ListOfStatus const &" :
+    def Value(self):
         """
         :rtype: BRepCheck_ListOfStatus
 
         """
-        return _BRepCheck.BRepCheck_DataMapIteratorOfDataMapOfShapeListOfStatus_Value(self, *args)
+        return _BRepCheck.BRepCheck_DataMapIteratorOfDataMapOfShapeListOfStatus_Value(self)
 
     def __del__(self):
     	try:
@@ -377,7 +392,7 @@ class BRepCheck_DataMapIteratorOfDataMapOfShapeResult(OCC.TCollection.TCollectio
 
         """
         _BRepCheck.BRepCheck_DataMapIteratorOfDataMapOfShapeResult_swiginit(self,_BRepCheck.new_BRepCheck_DataMapIteratorOfDataMapOfShapeResult(*args))
-    def Initialize(self, *args) -> "void" :
+    def Initialize(self, *args):
         """
         :param aMap:
         :type aMap: BRepCheck_DataMapOfShapeResult &
@@ -386,19 +401,19 @@ class BRepCheck_DataMapIteratorOfDataMapOfShapeResult(OCC.TCollection.TCollectio
         """
         return _BRepCheck.BRepCheck_DataMapIteratorOfDataMapOfShapeResult_Initialize(self, *args)
 
-    def Key(self, *args) -> "TopoDS_Shape const" :
+    def Key(self):
         """
         :rtype: TopoDS_Shape
 
         """
-        return _BRepCheck.BRepCheck_DataMapIteratorOfDataMapOfShapeResult_Key(self, *args)
+        return _BRepCheck.BRepCheck_DataMapIteratorOfDataMapOfShapeResult_Key(self)
 
-    def Value(self, *args) -> "Handle_BRepCheck_Result const &" :
+    def Value(self):
         """
         :rtype: Handle_BRepCheck_Result
 
         """
-        return _BRepCheck.BRepCheck_DataMapIteratorOfDataMapOfShapeResult_Value(self, *args)
+        return _BRepCheck.BRepCheck_DataMapIteratorOfDataMapOfShapeResult_Value(self)
 
     def __del__(self):
     	try:
@@ -430,25 +445,25 @@ class BRepCheck_DataMapNodeOfDataMapOfShapeListOfStatus(OCC.TCollection.TCollect
 
         """
         _BRepCheck.BRepCheck_DataMapNodeOfDataMapOfShapeListOfStatus_swiginit(self,_BRepCheck.new_BRepCheck_DataMapNodeOfDataMapOfShapeListOfStatus(*args))
-    def Key(self, *args) -> "TopoDS_Shape" :
+    def Key(self):
         """
         :rtype: TopoDS_Shape
 
         """
-        return _BRepCheck.BRepCheck_DataMapNodeOfDataMapOfShapeListOfStatus_Key(self, *args)
+        return _BRepCheck.BRepCheck_DataMapNodeOfDataMapOfShapeListOfStatus_Key(self)
 
-    def Value(self, *args) -> "BRepCheck_ListOfStatus &" :
+    def Value(self):
         """
         :rtype: BRepCheck_ListOfStatus
 
         """
-        return _BRepCheck.BRepCheck_DataMapNodeOfDataMapOfShapeListOfStatus_Value(self, *args)
+        return _BRepCheck.BRepCheck_DataMapNodeOfDataMapOfShapeListOfStatus_Value(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(BRepCheck_DataMapNodeOfDataMapOfShapeListOfStatus self)"""
         return _BRepCheck.BRepCheck_DataMapNodeOfDataMapOfShapeListOfStatus__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_BRepCheck_DataMapNodeOfDataMapOfShapeListOfStatus" :
+    def GetHandle(self):
         """GetHandle(BRepCheck_DataMapNodeOfDataMapOfShapeListOfStatus self) -> Handle_BRepCheck_DataMapNodeOfDataMapOfShapeListOfStatus"""
         return _BRepCheck.BRepCheck_DataMapNodeOfDataMapOfShapeListOfStatus_GetHandle(self)
 
@@ -488,7 +503,7 @@ Handle_BRepCheck_DataMapNodeOfDataMapOfShapeListOfStatus._kill_pointed = new_ins
 Handle_BRepCheck_DataMapNodeOfDataMapOfShapeListOfStatus_swigregister = _BRepCheck.Handle_BRepCheck_DataMapNodeOfDataMapOfShapeListOfStatus_swigregister
 Handle_BRepCheck_DataMapNodeOfDataMapOfShapeListOfStatus_swigregister(Handle_BRepCheck_DataMapNodeOfDataMapOfShapeListOfStatus)
 
-def Handle_BRepCheck_DataMapNodeOfDataMapOfShapeListOfStatus_DownCast(*args) -> "Handle_BRepCheck_DataMapNodeOfDataMapOfShapeListOfStatus const" :
+def Handle_BRepCheck_DataMapNodeOfDataMapOfShapeListOfStatus_DownCast(*args):
   return _BRepCheck.Handle_BRepCheck_DataMapNodeOfDataMapOfShapeListOfStatus_DownCast(*args)
 Handle_BRepCheck_DataMapNodeOfDataMapOfShapeListOfStatus_DownCast = _BRepCheck.Handle_BRepCheck_DataMapNodeOfDataMapOfShapeListOfStatus_DownCast
 
@@ -507,25 +522,25 @@ class BRepCheck_DataMapNodeOfDataMapOfShapeResult(OCC.TCollection.TCollection_Ma
 
         """
         _BRepCheck.BRepCheck_DataMapNodeOfDataMapOfShapeResult_swiginit(self,_BRepCheck.new_BRepCheck_DataMapNodeOfDataMapOfShapeResult(*args))
-    def Key(self, *args) -> "TopoDS_Shape" :
+    def Key(self):
         """
         :rtype: TopoDS_Shape
 
         """
-        return _BRepCheck.BRepCheck_DataMapNodeOfDataMapOfShapeResult_Key(self, *args)
+        return _BRepCheck.BRepCheck_DataMapNodeOfDataMapOfShapeResult_Key(self)
 
-    def Value(self, *args) -> "Handle_BRepCheck_Result &" :
+    def Value(self):
         """
         :rtype: Handle_BRepCheck_Result
 
         """
-        return _BRepCheck.BRepCheck_DataMapNodeOfDataMapOfShapeResult_Value(self, *args)
+        return _BRepCheck.BRepCheck_DataMapNodeOfDataMapOfShapeResult_Value(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(BRepCheck_DataMapNodeOfDataMapOfShapeResult self)"""
         return _BRepCheck.BRepCheck_DataMapNodeOfDataMapOfShapeResult__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_BRepCheck_DataMapNodeOfDataMapOfShapeResult" :
+    def GetHandle(self):
         """GetHandle(BRepCheck_DataMapNodeOfDataMapOfShapeResult self) -> Handle_BRepCheck_DataMapNodeOfDataMapOfShapeResult"""
         return _BRepCheck.BRepCheck_DataMapNodeOfDataMapOfShapeResult_GetHandle(self)
 
@@ -565,22 +580,26 @@ Handle_BRepCheck_DataMapNodeOfDataMapOfShapeResult._kill_pointed = new_instancem
 Handle_BRepCheck_DataMapNodeOfDataMapOfShapeResult_swigregister = _BRepCheck.Handle_BRepCheck_DataMapNodeOfDataMapOfShapeResult_swigregister
 Handle_BRepCheck_DataMapNodeOfDataMapOfShapeResult_swigregister(Handle_BRepCheck_DataMapNodeOfDataMapOfShapeResult)
 
-def Handle_BRepCheck_DataMapNodeOfDataMapOfShapeResult_DownCast(*args) -> "Handle_BRepCheck_DataMapNodeOfDataMapOfShapeResult const" :
+def Handle_BRepCheck_DataMapNodeOfDataMapOfShapeResult_DownCast(*args):
   return _BRepCheck.Handle_BRepCheck_DataMapNodeOfDataMapOfShapeResult_DownCast(*args)
 Handle_BRepCheck_DataMapNodeOfDataMapOfShapeResult_DownCast = _BRepCheck.Handle_BRepCheck_DataMapNodeOfDataMapOfShapeResult_DownCast
 
 class BRepCheck_DataMapOfShapeListOfStatus(OCC.TCollection.TCollection_BasicMap):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self, NbBuckets=1): 
         """
         :param NbBuckets: default value is 1
-        :type NbBuckets: int
+        :type NbBuckets: Standard_Integer
+        :rtype: None
+
+        :param NbBuckets: default value is 1
+        :type NbBuckets: Standard_Integer
         :rtype: None
 
         """
-        _BRepCheck.BRepCheck_DataMapOfShapeListOfStatus_swiginit(self,_BRepCheck.new_BRepCheck_DataMapOfShapeListOfStatus(*args))
-    def Assign(self, *args) -> "BRepCheck_DataMapOfShapeListOfStatus &" :
+        _BRepCheck.BRepCheck_DataMapOfShapeListOfStatus_swiginit(self,_BRepCheck.new_BRepCheck_DataMapOfShapeListOfStatus(NbBuckets))
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: BRepCheck_DataMapOfShapeListOfStatus &
@@ -589,7 +608,7 @@ class BRepCheck_DataMapOfShapeListOfStatus(OCC.TCollection.TCollection_BasicMap)
         """
         return _BRepCheck.BRepCheck_DataMapOfShapeListOfStatus_Assign(self, *args)
 
-    def Set(self, *args) -> "BRepCheck_DataMapOfShapeListOfStatus &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: BRepCheck_DataMapOfShapeListOfStatus &
@@ -598,23 +617,23 @@ class BRepCheck_DataMapOfShapeListOfStatus(OCC.TCollection.TCollection_BasicMap)
         """
         return _BRepCheck.BRepCheck_DataMapOfShapeListOfStatus_Set(self, *args)
 
-    def ReSize(self, *args) -> "void" :
+    def ReSize(self, *args):
         """
         :param NbBuckets:
-        :type NbBuckets: int
+        :type NbBuckets: Standard_Integer
         :rtype: None
 
         """
         return _BRepCheck.BRepCheck_DataMapOfShapeListOfStatus_ReSize(self, *args)
 
-    def Clear(self, *args) -> "void" :
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _BRepCheck.BRepCheck_DataMapOfShapeListOfStatus_Clear(self, *args)
+        return _BRepCheck.BRepCheck_DataMapOfShapeListOfStatus_Clear(self)
 
-    def Bind(self, *args) -> "Standard_Boolean" :
+    def Bind(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -625,7 +644,7 @@ class BRepCheck_DataMapOfShapeListOfStatus(OCC.TCollection.TCollection_BasicMap)
         """
         return _BRepCheck.BRepCheck_DataMapOfShapeListOfStatus_Bind(self, *args)
 
-    def IsBound(self, *args) -> "Standard_Boolean" :
+    def IsBound(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -634,7 +653,7 @@ class BRepCheck_DataMapOfShapeListOfStatus(OCC.TCollection.TCollection_BasicMap)
         """
         return _BRepCheck.BRepCheck_DataMapOfShapeListOfStatus_IsBound(self, *args)
 
-    def UnBind(self, *args) -> "Standard_Boolean" :
+    def UnBind(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -643,7 +662,7 @@ class BRepCheck_DataMapOfShapeListOfStatus(OCC.TCollection.TCollection_BasicMap)
         """
         return _BRepCheck.BRepCheck_DataMapOfShapeListOfStatus_UnBind(self, *args)
 
-    def Find(self, *args) -> "BRepCheck_ListOfStatus const &" :
+    def Find(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -652,7 +671,7 @@ class BRepCheck_DataMapOfShapeListOfStatus(OCC.TCollection.TCollection_BasicMap)
         """
         return _BRepCheck.BRepCheck_DataMapOfShapeListOfStatus_Find(self, *args)
 
-    def ChangeFind(self, *args) -> "BRepCheck_ListOfStatus &" :
+    def ChangeFind(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -661,7 +680,7 @@ class BRepCheck_DataMapOfShapeListOfStatus(OCC.TCollection.TCollection_BasicMap)
         """
         return _BRepCheck.BRepCheck_DataMapOfShapeListOfStatus_ChangeFind(self, *args)
 
-    def Find1(self, *args) -> "Standard_Address" :
+    def Find1(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -670,7 +689,7 @@ class BRepCheck_DataMapOfShapeListOfStatus(OCC.TCollection.TCollection_BasicMap)
         """
         return _BRepCheck.BRepCheck_DataMapOfShapeListOfStatus_Find1(self, *args)
 
-    def ChangeFind1(self, *args) -> "Standard_Address" :
+    def ChangeFind1(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -679,7 +698,7 @@ class BRepCheck_DataMapOfShapeListOfStatus(OCC.TCollection.TCollection_BasicMap)
         """
         return _BRepCheck.BRepCheck_DataMapOfShapeListOfStatus_ChangeFind1(self, *args)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(BRepCheck_DataMapOfShapeListOfStatus self)"""
         return _BRepCheck.BRepCheck_DataMapOfShapeListOfStatus__kill_pointed(self)
 
@@ -709,15 +728,19 @@ BRepCheck_DataMapOfShapeListOfStatus_swigregister(BRepCheck_DataMapOfShapeListOf
 class BRepCheck_DataMapOfShapeResult(OCC.TCollection.TCollection_BasicMap):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self, NbBuckets=1): 
         """
         :param NbBuckets: default value is 1
-        :type NbBuckets: int
+        :type NbBuckets: Standard_Integer
+        :rtype: None
+
+        :param NbBuckets: default value is 1
+        :type NbBuckets: Standard_Integer
         :rtype: None
 
         """
-        _BRepCheck.BRepCheck_DataMapOfShapeResult_swiginit(self,_BRepCheck.new_BRepCheck_DataMapOfShapeResult(*args))
-    def Assign(self, *args) -> "BRepCheck_DataMapOfShapeResult &" :
+        _BRepCheck.BRepCheck_DataMapOfShapeResult_swiginit(self,_BRepCheck.new_BRepCheck_DataMapOfShapeResult(NbBuckets))
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: BRepCheck_DataMapOfShapeResult &
@@ -726,7 +749,7 @@ class BRepCheck_DataMapOfShapeResult(OCC.TCollection.TCollection_BasicMap):
         """
         return _BRepCheck.BRepCheck_DataMapOfShapeResult_Assign(self, *args)
 
-    def Set(self, *args) -> "BRepCheck_DataMapOfShapeResult &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: BRepCheck_DataMapOfShapeResult &
@@ -735,23 +758,23 @@ class BRepCheck_DataMapOfShapeResult(OCC.TCollection.TCollection_BasicMap):
         """
         return _BRepCheck.BRepCheck_DataMapOfShapeResult_Set(self, *args)
 
-    def ReSize(self, *args) -> "void" :
+    def ReSize(self, *args):
         """
         :param NbBuckets:
-        :type NbBuckets: int
+        :type NbBuckets: Standard_Integer
         :rtype: None
 
         """
         return _BRepCheck.BRepCheck_DataMapOfShapeResult_ReSize(self, *args)
 
-    def Clear(self, *args) -> "void" :
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _BRepCheck.BRepCheck_DataMapOfShapeResult_Clear(self, *args)
+        return _BRepCheck.BRepCheck_DataMapOfShapeResult_Clear(self)
 
-    def Bind(self, *args) -> "Standard_Boolean" :
+    def Bind(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -762,7 +785,7 @@ class BRepCheck_DataMapOfShapeResult(OCC.TCollection.TCollection_BasicMap):
         """
         return _BRepCheck.BRepCheck_DataMapOfShapeResult_Bind(self, *args)
 
-    def IsBound(self, *args) -> "Standard_Boolean" :
+    def IsBound(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -771,7 +794,7 @@ class BRepCheck_DataMapOfShapeResult(OCC.TCollection.TCollection_BasicMap):
         """
         return _BRepCheck.BRepCheck_DataMapOfShapeResult_IsBound(self, *args)
 
-    def UnBind(self, *args) -> "Standard_Boolean" :
+    def UnBind(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -780,7 +803,7 @@ class BRepCheck_DataMapOfShapeResult(OCC.TCollection.TCollection_BasicMap):
         """
         return _BRepCheck.BRepCheck_DataMapOfShapeResult_UnBind(self, *args)
 
-    def Find(self, *args) -> "Handle_BRepCheck_Result const &" :
+    def Find(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -789,7 +812,7 @@ class BRepCheck_DataMapOfShapeResult(OCC.TCollection.TCollection_BasicMap):
         """
         return _BRepCheck.BRepCheck_DataMapOfShapeResult_Find(self, *args)
 
-    def ChangeFind(self, *args) -> "Handle_BRepCheck_Result &" :
+    def ChangeFind(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -798,7 +821,7 @@ class BRepCheck_DataMapOfShapeResult(OCC.TCollection.TCollection_BasicMap):
         """
         return _BRepCheck.BRepCheck_DataMapOfShapeResult_ChangeFind(self, *args)
 
-    def Find1(self, *args) -> "Standard_Address" :
+    def Find1(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -807,7 +830,7 @@ class BRepCheck_DataMapOfShapeResult(OCC.TCollection.TCollection_BasicMap):
         """
         return _BRepCheck.BRepCheck_DataMapOfShapeResult_Find1(self, *args)
 
-    def ChangeFind1(self, *args) -> "Standard_Address" :
+    def ChangeFind1(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -816,7 +839,7 @@ class BRepCheck_DataMapOfShapeResult(OCC.TCollection.TCollection_BasicMap):
         """
         return _BRepCheck.BRepCheck_DataMapOfShapeResult_ChangeFind1(self, *args)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(BRepCheck_DataMapOfShapeResult self)"""
         return _BRepCheck.BRepCheck_DataMapOfShapeResult__kill_pointed(self)
 
@@ -856,7 +879,7 @@ class BRepCheck_ListIteratorOfListOfStatus(object):
 
         """
         _BRepCheck.BRepCheck_ListIteratorOfListOfStatus_swiginit(self,_BRepCheck.new_BRepCheck_ListIteratorOfListOfStatus(*args))
-    def Initialize(self, *args) -> "void" :
+    def Initialize(self, *args):
         """
         :param L:
         :type L: BRepCheck_ListOfStatus &
@@ -865,26 +888,26 @@ class BRepCheck_ListIteratorOfListOfStatus(object):
         """
         return _BRepCheck.BRepCheck_ListIteratorOfListOfStatus_Initialize(self, *args)
 
-    def More(self, *args) -> "Standard_Boolean" :
+    def More(self):
         """
         :rtype: bool
 
         """
-        return _BRepCheck.BRepCheck_ListIteratorOfListOfStatus_More(self, *args)
+        return _BRepCheck.BRepCheck_ListIteratorOfListOfStatus_More(self)
 
-    def Next(self, *args) -> "void" :
+    def Next(self):
         """
         :rtype: None
 
         """
-        return _BRepCheck.BRepCheck_ListIteratorOfListOfStatus_Next(self, *args)
+        return _BRepCheck.BRepCheck_ListIteratorOfListOfStatus_Next(self)
 
-    def Value(self, *args) -> "BRepCheck_Status &" :
+    def Value(self):
         """
         :rtype: BRepCheck_Status
 
         """
-        return _BRepCheck.BRepCheck_ListIteratorOfListOfStatus_Value(self, *args)
+        return _BRepCheck.BRepCheck_ListIteratorOfListOfStatus_Value(self)
 
     def __del__(self):
     	try:
@@ -915,18 +938,18 @@ class BRepCheck_ListNodeOfListOfStatus(OCC.TCollection.TCollection_MapNode):
 
         """
         _BRepCheck.BRepCheck_ListNodeOfListOfStatus_swiginit(self,_BRepCheck.new_BRepCheck_ListNodeOfListOfStatus(*args))
-    def Value(self, *args) -> "BRepCheck_Status &" :
+    def Value(self):
         """
         :rtype: BRepCheck_Status
 
         """
-        return _BRepCheck.BRepCheck_ListNodeOfListOfStatus_Value(self, *args)
+        return _BRepCheck.BRepCheck_ListNodeOfListOfStatus_Value(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(BRepCheck_ListNodeOfListOfStatus self)"""
         return _BRepCheck.BRepCheck_ListNodeOfListOfStatus__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_BRepCheck_ListNodeOfListOfStatus" :
+    def GetHandle(self):
         """GetHandle(BRepCheck_ListNodeOfListOfStatus self) -> Handle_BRepCheck_ListNodeOfListOfStatus"""
         return _BRepCheck.BRepCheck_ListNodeOfListOfStatus_GetHandle(self)
 
@@ -965,20 +988,20 @@ Handle_BRepCheck_ListNodeOfListOfStatus._kill_pointed = new_instancemethod(_BRep
 Handle_BRepCheck_ListNodeOfListOfStatus_swigregister = _BRepCheck.Handle_BRepCheck_ListNodeOfListOfStatus_swigregister
 Handle_BRepCheck_ListNodeOfListOfStatus_swigregister(Handle_BRepCheck_ListNodeOfListOfStatus)
 
-def Handle_BRepCheck_ListNodeOfListOfStatus_DownCast(*args) -> "Handle_BRepCheck_ListNodeOfListOfStatus const" :
+def Handle_BRepCheck_ListNodeOfListOfStatus_DownCast(*args):
   return _BRepCheck.Handle_BRepCheck_ListNodeOfListOfStatus_DownCast(*args)
 Handle_BRepCheck_ListNodeOfListOfStatus_DownCast = _BRepCheck.Handle_BRepCheck_ListNodeOfListOfStatus_DownCast
 
 class BRepCheck_ListOfStatus(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _BRepCheck.BRepCheck_ListOfStatus_swiginit(self,_BRepCheck.new_BRepCheck_ListOfStatus(*args))
-    def Assign(self, *args) -> "void" :
+        _BRepCheck.BRepCheck_ListOfStatus_swiginit(self,_BRepCheck.new_BRepCheck_ListOfStatus())
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: BRepCheck_ListOfStatus &
@@ -987,7 +1010,7 @@ class BRepCheck_ListOfStatus(object):
         """
         return _BRepCheck.BRepCheck_ListOfStatus_Assign(self, *args)
 
-    def Set(self, *args) -> "void" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: BRepCheck_ListOfStatus &
@@ -996,28 +1019,28 @@ class BRepCheck_ListOfStatus(object):
         """
         return _BRepCheck.BRepCheck_ListOfStatus_Set(self, *args)
 
-    def Extent(self, *args) -> "Standard_Integer" :
+    def Extent(self):
         """
         :rtype: int
 
         """
-        return _BRepCheck.BRepCheck_ListOfStatus_Extent(self, *args)
+        return _BRepCheck.BRepCheck_ListOfStatus_Extent(self)
 
-    def Clear(self, *args) -> "void" :
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _BRepCheck.BRepCheck_ListOfStatus_Clear(self, *args)
+        return _BRepCheck.BRepCheck_ListOfStatus_Clear(self)
 
-    def IsEmpty(self, *args) -> "Standard_Boolean" :
+    def IsEmpty(self):
         """
         :rtype: bool
 
         """
-        return _BRepCheck.BRepCheck_ListOfStatus_IsEmpty(self, *args)
+        return _BRepCheck.BRepCheck_ListOfStatus_IsEmpty(self)
 
-    def Prepend(self, *args) -> "void" :
+    def Prepend(self, *args):
         """
         :param I:
         :type I: BRepCheck_Status &
@@ -1036,7 +1059,7 @@ class BRepCheck_ListOfStatus(object):
         """
         return _BRepCheck.BRepCheck_ListOfStatus_Prepend(self, *args)
 
-    def Append(self, *args) -> "void" :
+    def Append(self, *args):
         """
         :param I:
         :type I: BRepCheck_Status &
@@ -1055,28 +1078,28 @@ class BRepCheck_ListOfStatus(object):
         """
         return _BRepCheck.BRepCheck_ListOfStatus_Append(self, *args)
 
-    def First(self, *args) -> "BRepCheck_Status &" :
+    def First(self):
         """
         :rtype: BRepCheck_Status
 
         """
-        return _BRepCheck.BRepCheck_ListOfStatus_First(self, *args)
+        return _BRepCheck.BRepCheck_ListOfStatus_First(self)
 
-    def Last(self, *args) -> "BRepCheck_Status &" :
+    def Last(self):
         """
         :rtype: BRepCheck_Status
 
         """
-        return _BRepCheck.BRepCheck_ListOfStatus_Last(self, *args)
+        return _BRepCheck.BRepCheck_ListOfStatus_Last(self)
 
-    def RemoveFirst(self, *args) -> "void" :
+    def RemoveFirst(self):
         """
         :rtype: None
 
         """
-        return _BRepCheck.BRepCheck_ListOfStatus_RemoveFirst(self, *args)
+        return _BRepCheck.BRepCheck_ListOfStatus_RemoveFirst(self)
 
-    def Remove(self, *args) -> "void" :
+    def Remove(self, *args):
         """
         :param It:
         :type It: BRepCheck_ListIteratorOfListOfStatus &
@@ -1085,7 +1108,7 @@ class BRepCheck_ListOfStatus(object):
         """
         return _BRepCheck.BRepCheck_ListOfStatus_Remove(self, *args)
 
-    def InsertBefore(self, *args) -> "void" :
+    def InsertBefore(self, *args):
         """
         :param I:
         :type I: BRepCheck_Status &
@@ -1102,7 +1125,7 @@ class BRepCheck_ListOfStatus(object):
         """
         return _BRepCheck.BRepCheck_ListOfStatus_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args) -> "void" :
+    def InsertAfter(self, *args):
         """
         :param I:
         :type I: BRepCheck_Status &
@@ -1148,7 +1171,7 @@ class BRepCheck_Result(OCC.MMgt.MMgt_TShared):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
         :param S:
         :type S: TopoDS_Shape &
@@ -1157,7 +1180,7 @@ class BRepCheck_Result(OCC.MMgt.MMgt_TShared):
         """
         return _BRepCheck.BRepCheck_Result_Init(self, *args)
 
-    def InContext(self, *args) -> "void" :
+    def InContext(self, *args):
         """
         :param ContextShape:
         :type ContextShape: TopoDS_Shape &
@@ -1166,21 +1189,21 @@ class BRepCheck_Result(OCC.MMgt.MMgt_TShared):
         """
         return _BRepCheck.BRepCheck_Result_InContext(self, *args)
 
-    def Minimum(self, *args) -> "void" :
+    def Minimum(self):
         """
         :rtype: void
 
         """
-        return _BRepCheck.BRepCheck_Result_Minimum(self, *args)
+        return _BRepCheck.BRepCheck_Result_Minimum(self)
 
-    def Blind(self, *args) -> "void" :
+    def Blind(self):
         """
         :rtype: void
 
         """
-        return _BRepCheck.BRepCheck_Result_Blind(self, *args)
+        return _BRepCheck.BRepCheck_Result_Blind(self)
 
-    def SetFailStatus(self, *args) -> "void" :
+    def SetFailStatus(self, *args):
         """
         :param S:
         :type S: TopoDS_Shape &
@@ -1189,49 +1212,49 @@ class BRepCheck_Result(OCC.MMgt.MMgt_TShared):
         """
         return _BRepCheck.BRepCheck_Result_SetFailStatus(self, *args)
 
-    def Status(self, *args) -> "BRepCheck_ListOfStatus const &" :
+    def Status(self):
         """
         :rtype: BRepCheck_ListOfStatus
 
         """
-        return _BRepCheck.BRepCheck_Result_Status(self, *args)
+        return _BRepCheck.BRepCheck_Result_Status(self)
 
-    def IsMinimum(self, *args) -> "Standard_Boolean" :
+    def IsMinimum(self):
         """
         :rtype: bool
 
         """
-        return _BRepCheck.BRepCheck_Result_IsMinimum(self, *args)
+        return _BRepCheck.BRepCheck_Result_IsMinimum(self)
 
-    def IsBlind(self, *args) -> "Standard_Boolean" :
+    def IsBlind(self):
         """
         :rtype: bool
 
         """
-        return _BRepCheck.BRepCheck_Result_IsBlind(self, *args)
+        return _BRepCheck.BRepCheck_Result_IsBlind(self)
 
-    def InitContextIterator(self, *args) -> "void" :
+    def InitContextIterator(self):
         """
         :rtype: None
 
         """
-        return _BRepCheck.BRepCheck_Result_InitContextIterator(self, *args)
+        return _BRepCheck.BRepCheck_Result_InitContextIterator(self)
 
-    def MoreShapeInContext(self, *args) -> "Standard_Boolean" :
+    def MoreShapeInContext(self):
         """
         :rtype: bool
 
         """
-        return _BRepCheck.BRepCheck_Result_MoreShapeInContext(self, *args)
+        return _BRepCheck.BRepCheck_Result_MoreShapeInContext(self)
 
-    def ContextualShape(self, *args) -> "TopoDS_Shape const" :
+    def ContextualShape(self):
         """
         :rtype: TopoDS_Shape
 
         """
-        return _BRepCheck.BRepCheck_Result_ContextualShape(self, *args)
+        return _BRepCheck.BRepCheck_Result_ContextualShape(self)
 
-    def StatusOnShape(self, *args) -> "BRepCheck_ListOfStatus const &" :
+    def StatusOnShape(self, *args):
         """
         * If not already done, performs the InContext control and returns the list of status.
 
@@ -1244,18 +1267,18 @@ class BRepCheck_Result(OCC.MMgt.MMgt_TShared):
         """
         return _BRepCheck.BRepCheck_Result_StatusOnShape(self, *args)
 
-    def NextShapeInContext(self, *args) -> "void" :
+    def NextShapeInContext(self):
         """
         :rtype: None
 
         """
-        return _BRepCheck.BRepCheck_Result_NextShapeInContext(self, *args)
+        return _BRepCheck.BRepCheck_Result_NextShapeInContext(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(BRepCheck_Result self)"""
         return _BRepCheck.BRepCheck_Result__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_BRepCheck_Result" :
+    def GetHandle(self):
         """GetHandle(BRepCheck_Result self) -> Handle_BRepCheck_Result"""
         return _BRepCheck.BRepCheck_Result_GetHandle(self)
 
@@ -1306,7 +1329,7 @@ Handle_BRepCheck_Result._kill_pointed = new_instancemethod(_BRepCheck.Handle_BRe
 Handle_BRepCheck_Result_swigregister = _BRepCheck.Handle_BRepCheck_Result_swigregister
 Handle_BRepCheck_Result_swigregister(Handle_BRepCheck_Result)
 
-def Handle_BRepCheck_Result_DownCast(*args) -> "Handle_BRepCheck_Result const" :
+def Handle_BRepCheck_Result_DownCast(*args):
   return _BRepCheck.Handle_BRepCheck_Result_DownCast(*args)
 Handle_BRepCheck_Result_DownCast = _BRepCheck.Handle_BRepCheck_Result_DownCast
 
@@ -1321,7 +1344,7 @@ class BRepCheck_Edge(BRepCheck_Result):
 
         """
         _BRepCheck.BRepCheck_Edge_swiginit(self,_BRepCheck.new_BRepCheck_Edge(*args))
-    def GeometricControls(self, *args) -> "void" :
+    def GeometricControls(self, *args):
         """
         :rtype: bool
 
@@ -1332,18 +1355,18 @@ class BRepCheck_Edge(BRepCheck_Result):
         """
         return _BRepCheck.BRepCheck_Edge_GeometricControls(self, *args)
 
-    def Tolerance(self, *args) -> "Standard_Real" :
+    def Tolerance(self):
         """
         :rtype: float
 
         """
-        return _BRepCheck.BRepCheck_Edge_Tolerance(self, *args)
+        return _BRepCheck.BRepCheck_Edge_Tolerance(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(BRepCheck_Edge self)"""
         return _BRepCheck.BRepCheck_Edge__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_BRepCheck_Edge" :
+    def GetHandle(self):
         """GetHandle(BRepCheck_Edge self) -> Handle_BRepCheck_Edge"""
         return _BRepCheck.BRepCheck_Edge_GetHandle(self)
 
@@ -1383,7 +1406,7 @@ Handle_BRepCheck_Edge._kill_pointed = new_instancemethod(_BRepCheck.Handle_BRepC
 Handle_BRepCheck_Edge_swigregister = _BRepCheck.Handle_BRepCheck_Edge_swigregister
 Handle_BRepCheck_Edge_swigregister(Handle_BRepCheck_Edge)
 
-def Handle_BRepCheck_Edge_DownCast(*args) -> "Handle_BRepCheck_Edge const" :
+def Handle_BRepCheck_Edge_DownCast(*args):
   return _BRepCheck.Handle_BRepCheck_Edge_DownCast(*args)
 Handle_BRepCheck_Edge_DownCast = _BRepCheck.Handle_BRepCheck_Edge_DownCast
 
@@ -1398,8 +1421,12 @@ class BRepCheck_Face(BRepCheck_Result):
 
         """
         _BRepCheck.BRepCheck_Face_swiginit(self,_BRepCheck.new_BRepCheck_Face(*args))
-    def IntersectWires(self, *args) -> "BRepCheck_Status" :
+    def IntersectWires(self, *args):
         """
+        :param Update: default value is Standard_False
+        :type Update: bool
+        :rtype: BRepCheck_Status
+
         :param Update: default value is Standard_False
         :type Update: bool
         :rtype: BRepCheck_Status
@@ -1407,8 +1434,12 @@ class BRepCheck_Face(BRepCheck_Result):
         """
         return _BRepCheck.BRepCheck_Face_IntersectWires(self, *args)
 
-    def ClassifyWires(self, *args) -> "BRepCheck_Status" :
+    def ClassifyWires(self, *args):
         """
+        :param Update: default value is Standard_False
+        :type Update: bool
+        :rtype: BRepCheck_Status
+
         :param Update: default value is Standard_False
         :type Update: bool
         :rtype: BRepCheck_Status
@@ -1416,8 +1447,12 @@ class BRepCheck_Face(BRepCheck_Result):
         """
         return _BRepCheck.BRepCheck_Face_ClassifyWires(self, *args)
 
-    def OrientationOfWires(self, *args) -> "BRepCheck_Status" :
+    def OrientationOfWires(self, *args):
         """
+        :param Update: default value is Standard_False
+        :type Update: bool
+        :rtype: BRepCheck_Status
+
         :param Update: default value is Standard_False
         :type Update: bool
         :rtype: BRepCheck_Status
@@ -1425,21 +1460,21 @@ class BRepCheck_Face(BRepCheck_Result):
         """
         return _BRepCheck.BRepCheck_Face_OrientationOfWires(self, *args)
 
-    def SetUnorientable(self, *args) -> "void" :
+    def SetUnorientable(self):
         """
         :rtype: None
 
         """
-        return _BRepCheck.BRepCheck_Face_SetUnorientable(self, *args)
+        return _BRepCheck.BRepCheck_Face_SetUnorientable(self)
 
-    def IsUnorientable(self, *args) -> "Standard_Boolean" :
+    def IsUnorientable(self):
         """
         :rtype: bool
 
         """
-        return _BRepCheck.BRepCheck_Face_IsUnorientable(self, *args)
+        return _BRepCheck.BRepCheck_Face_IsUnorientable(self)
 
-    def GeometricControls(self, *args) -> "void" :
+    def GeometricControls(self, *args):
         """
         :rtype: bool
 
@@ -1450,11 +1485,11 @@ class BRepCheck_Face(BRepCheck_Result):
         """
         return _BRepCheck.BRepCheck_Face_GeometricControls(self, *args)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(BRepCheck_Face self)"""
         return _BRepCheck.BRepCheck_Face__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_BRepCheck_Face" :
+    def GetHandle(self):
         """GetHandle(BRepCheck_Face self) -> Handle_BRepCheck_Face"""
         return _BRepCheck.BRepCheck_Face_GetHandle(self)
 
@@ -1498,7 +1533,7 @@ Handle_BRepCheck_Face._kill_pointed = new_instancemethod(_BRepCheck.Handle_BRepC
 Handle_BRepCheck_Face_swigregister = _BRepCheck.Handle_BRepCheck_Face_swigregister
 Handle_BRepCheck_Face_swigregister(Handle_BRepCheck_Face)
 
-def Handle_BRepCheck_Face_DownCast(*args) -> "Handle_BRepCheck_Face const" :
+def Handle_BRepCheck_Face_DownCast(*args):
   return _BRepCheck.Handle_BRepCheck_Face_DownCast(*args)
 Handle_BRepCheck_Face_DownCast = _BRepCheck.Handle_BRepCheck_Face_DownCast
 
@@ -1513,8 +1548,14 @@ class BRepCheck_Shell(BRepCheck_Result):
 
         """
         _BRepCheck.BRepCheck_Shell_swiginit(self,_BRepCheck.new_BRepCheck_Shell(*args))
-    def Closed(self, *args) -> "BRepCheck_Status" :
+    def Closed(self, *args):
         """
+        * Checks if the oriented faces of the shell give a closed shell. If the wire is closed, returns BRepCheck_NoError.If <Update> is set to Standard_True, registers the status in the list.
+
+        :param Update: default value is Standard_False
+        :type Update: bool
+        :rtype: BRepCheck_Status
+
         * Checks if the oriented faces of the shell give a closed shell. If the wire is closed, returns BRepCheck_NoError.If <Update> is set to Standard_True, registers the status in the list.
 
         :param Update: default value is Standard_False
@@ -1524,8 +1565,14 @@ class BRepCheck_Shell(BRepCheck_Result):
         """
         return _BRepCheck.BRepCheck_Shell_Closed(self, *args)
 
-    def Orientation(self, *args) -> "BRepCheck_Status" :
+    def Orientation(self, *args):
         """
+        * Checks if the oriented faces of the shell are correctly oriented. An internal call is made to the method Closed. If <Update> is set to Standard_True, registers the status in the list.
+
+        :param Update: default value is Standard_False
+        :type Update: bool
+        :rtype: BRepCheck_Status
+
         * Checks if the oriented faces of the shell are correctly oriented. An internal call is made to the method Closed. If <Update> is set to Standard_True, registers the status in the list.
 
         :param Update: default value is Standard_False
@@ -1535,21 +1582,21 @@ class BRepCheck_Shell(BRepCheck_Result):
         """
         return _BRepCheck.BRepCheck_Shell_Orientation(self, *args)
 
-    def SetUnorientable(self, *args) -> "void" :
+    def SetUnorientable(self):
         """
         :rtype: None
 
         """
-        return _BRepCheck.BRepCheck_Shell_SetUnorientable(self, *args)
+        return _BRepCheck.BRepCheck_Shell_SetUnorientable(self)
 
-    def IsUnorientable(self, *args) -> "Standard_Boolean" :
+    def IsUnorientable(self):
         """
         :rtype: bool
 
         """
-        return _BRepCheck.BRepCheck_Shell_IsUnorientable(self, *args)
+        return _BRepCheck.BRepCheck_Shell_IsUnorientable(self)
 
-    def NbConnectedSet(self, *args) -> "Standard_Integer" :
+    def NbConnectedSet(self, *args):
         """
         :param theSets:
         :type theSets: TopTools_ListOfShape &
@@ -1558,11 +1605,11 @@ class BRepCheck_Shell(BRepCheck_Result):
         """
         return _BRepCheck.BRepCheck_Shell_NbConnectedSet(self, *args)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(BRepCheck_Shell self)"""
         return _BRepCheck.BRepCheck_Shell__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_BRepCheck_Shell" :
+    def GetHandle(self):
         """GetHandle(BRepCheck_Shell self) -> Handle_BRepCheck_Shell"""
         return _BRepCheck.BRepCheck_Shell_GetHandle(self)
 
@@ -1605,7 +1652,7 @@ Handle_BRepCheck_Shell._kill_pointed = new_instancemethod(_BRepCheck.Handle_BRep
 Handle_BRepCheck_Shell_swigregister = _BRepCheck.Handle_BRepCheck_Shell_swigregister
 Handle_BRepCheck_Shell_swigregister(Handle_BRepCheck_Shell)
 
-def Handle_BRepCheck_Shell_DownCast(*args) -> "Handle_BRepCheck_Shell const" :
+def Handle_BRepCheck_Shell_DownCast(*args):
   return _BRepCheck.Handle_BRepCheck_Shell_DownCast(*args)
 Handle_BRepCheck_Shell_DownCast = _BRepCheck.Handle_BRepCheck_Shell_DownCast
 
@@ -1620,18 +1667,18 @@ class BRepCheck_Vertex(BRepCheck_Result):
 
         """
         _BRepCheck.BRepCheck_Vertex_swiginit(self,_BRepCheck.new_BRepCheck_Vertex(*args))
-    def Tolerance(self, *args) -> "Standard_Real" :
+    def Tolerance(self):
         """
         :rtype: float
 
         """
-        return _BRepCheck.BRepCheck_Vertex_Tolerance(self, *args)
+        return _BRepCheck.BRepCheck_Vertex_Tolerance(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(BRepCheck_Vertex self)"""
         return _BRepCheck.BRepCheck_Vertex__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_BRepCheck_Vertex" :
+    def GetHandle(self):
         """GetHandle(BRepCheck_Vertex self) -> Handle_BRepCheck_Vertex"""
         return _BRepCheck.BRepCheck_Vertex_GetHandle(self)
 
@@ -1670,7 +1717,7 @@ Handle_BRepCheck_Vertex._kill_pointed = new_instancemethod(_BRepCheck.Handle_BRe
 Handle_BRepCheck_Vertex_swigregister = _BRepCheck.Handle_BRepCheck_Vertex_swigregister
 Handle_BRepCheck_Vertex_swigregister(Handle_BRepCheck_Vertex)
 
-def Handle_BRepCheck_Vertex_DownCast(*args) -> "Handle_BRepCheck_Vertex const" :
+def Handle_BRepCheck_Vertex_DownCast(*args):
   return _BRepCheck.Handle_BRepCheck_Vertex_DownCast(*args)
 Handle_BRepCheck_Vertex_DownCast = _BRepCheck.Handle_BRepCheck_Vertex_DownCast
 
@@ -1685,8 +1732,14 @@ class BRepCheck_Wire(BRepCheck_Result):
 
         """
         _BRepCheck.BRepCheck_Wire_swiginit(self,_BRepCheck.new_BRepCheck_Wire(*args))
-    def Closed(self, *args) -> "BRepCheck_Status" :
+    def Closed(self, *args):
         """
+        * Checks if the oriented edges of the wire give a closed wire. If the wire is closed, returns BRepCheck_NoError. Warning : if the first and last edge are infinite, the wire will be considered as a closed one. If <Update> is set to Standard_True, registers the status in the list. May return (and registers): **BRepCheck_NotConnected, if wire is not topologically closed **BRepCheck_RedundantEdge, if an edge is in wire more than 3 times or in case of 2 occurences if not with FORWARD and REVERSED orientation. **BRepCheck_NoError
+
+        :param Update: default value is Standard_False
+        :type Update: bool
+        :rtype: BRepCheck_Status
+
         * Checks if the oriented edges of the wire give a closed wire. If the wire is closed, returns BRepCheck_NoError. Warning : if the first and last edge are infinite, the wire will be considered as a closed one. If <Update> is set to Standard_True, registers the status in the list. May return (and registers): **BRepCheck_NotConnected, if wire is not topologically closed **BRepCheck_RedundantEdge, if an edge is in wire more than 3 times or in case of 2 occurences if not with FORWARD and REVERSED orientation. **BRepCheck_NoError
 
         :param Update: default value is Standard_False
@@ -1696,8 +1749,16 @@ class BRepCheck_Wire(BRepCheck_Result):
         """
         return _BRepCheck.BRepCheck_Wire_Closed(self, *args)
 
-    def Closed2d(self, *args) -> "BRepCheck_Status" :
+    def Closed2d(self, *args):
         """
+        * Checks if edges of the wire give a wire closed in 2d space. Returns BRepCheck_NoError, or BRepCheck_NotClosed If <Update> is set to Standard_True, registers the status in the list.
+
+        :param F:
+        :type F: TopoDS_Face &
+        :param Update: default value is Standard_False
+        :type Update: bool
+        :rtype: BRepCheck_Status
+
         * Checks if edges of the wire give a wire closed in 2d space. Returns BRepCheck_NoError, or BRepCheck_NotClosed If <Update> is set to Standard_True, registers the status in the list.
 
         :param F:
@@ -1709,8 +1770,16 @@ class BRepCheck_Wire(BRepCheck_Result):
         """
         return _BRepCheck.BRepCheck_Wire_Closed2d(self, *args)
 
-    def Orientation(self, *args) -> "BRepCheck_Status" :
+    def Orientation(self, *args):
         """
+        * Checks if the oriented edges of the wire are correctly oriented. An internal call is made to the method Closed. If no face exists, call the method with a null face (TopoDS_face()). If <Update> is set to Standard_True, registers the status in the list. May return (and registers): BRepCheck_InvalidDegeneratedFlag, BRepCheck_BadOrientationOfSubshape, BRepCheck_NotClosed, BRepCheck_NoError
+
+        :param F:
+        :type F: TopoDS_Face &
+        :param Update: default value is Standard_False
+        :type Update: bool
+        :rtype: BRepCheck_Status
+
         * Checks if the oriented edges of the wire are correctly oriented. An internal call is made to the method Closed. If no face exists, call the method with a null face (TopoDS_face()). If <Update> is set to Standard_True, registers the status in the list. May return (and registers): BRepCheck_InvalidDegeneratedFlag, BRepCheck_BadOrientationOfSubshape, BRepCheck_NotClosed, BRepCheck_NoError
 
         :param F:
@@ -1722,8 +1791,20 @@ class BRepCheck_Wire(BRepCheck_Result):
         """
         return _BRepCheck.BRepCheck_Wire_Orientation(self, *args)
 
-    def SelfIntersect(self, *args) -> "BRepCheck_Status" :
+    def SelfIntersect(self, *args):
         """
+        * Checks if the wire intersect itself on the face <F>. <E1> and <E2> are the first intersecting edges found. <E2> may be a null edge when a self-intersecting edge is found.If <Update> is set to Standard_True, registers the status in the list. May return (and register): BRepCheck_EmptyWire, BRepCheck_SelfIntersectingWire, BRepCheck_NoCurveOnSurface, BRepCheck_NoError
+
+        :param F:
+        :type F: TopoDS_Face &
+        :param E1:
+        :type E1: TopoDS_Edge &
+        :param E2:
+        :type E2: TopoDS_Edge &
+        :param Update: default value is Standard_False
+        :type Update: bool
+        :rtype: BRepCheck_Status
+
         * Checks if the wire intersect itself on the face <F>. <E1> and <E2> are the first intersecting edges found. <E2> may be a null edge when a self-intersecting edge is found.If <Update> is set to Standard_True, registers the status in the list. May return (and register): BRepCheck_EmptyWire, BRepCheck_SelfIntersectingWire, BRepCheck_NoCurveOnSurface, BRepCheck_NoError
 
         :param F:
@@ -1739,7 +1820,7 @@ class BRepCheck_Wire(BRepCheck_Result):
         """
         return _BRepCheck.BRepCheck_Wire_SelfIntersect(self, *args)
 
-    def GeometricControls(self, *args) -> "void" :
+    def GeometricControls(self, *args):
         """
         * report SelfIntersect() check would be (is) done
 
@@ -1754,11 +1835,11 @@ class BRepCheck_Wire(BRepCheck_Result):
         """
         return _BRepCheck.BRepCheck_Wire_GeometricControls(self, *args)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(BRepCheck_Wire self)"""
         return _BRepCheck.BRepCheck_Wire__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_BRepCheck_Wire" :
+    def GetHandle(self):
         """GetHandle(BRepCheck_Wire self) -> Handle_BRepCheck_Wire"""
         return _BRepCheck.BRepCheck_Wire_GetHandle(self)
 
@@ -1801,7 +1882,7 @@ Handle_BRepCheck_Wire._kill_pointed = new_instancemethod(_BRepCheck.Handle_BRepC
 Handle_BRepCheck_Wire_swigregister = _BRepCheck.Handle_BRepCheck_Wire_swigregister
 Handle_BRepCheck_Wire_swigregister(Handle_BRepCheck_Wire)
 
-def Handle_BRepCheck_Wire_DownCast(*args) -> "Handle_BRepCheck_Wire const" :
+def Handle_BRepCheck_Wire_DownCast(*args):
   return _BRepCheck.Handle_BRepCheck_Wire_DownCast(*args)
 Handle_BRepCheck_Wire_DownCast = _BRepCheck.Handle_BRepCheck_Wire_DownCast
 

@@ -149,8 +149,9 @@ GeomFill_IsGuidePlanWithContact = _GeomFill.GeomFill_IsGuidePlanWithContact
 GeomFill_IsDiscreteTrihedron = _GeomFill.GeomFill_IsDiscreteTrihedron
 class geomfill(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
+    def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def Surface(*args) -> "Handle_Geom_Surface" :
+    def Surface(*args):
         """
         * Builds a ruled surface between the two curves, Curve1 and Curve2.
 
@@ -164,7 +165,7 @@ class geomfill(object):
         return _GeomFill.geomfill_Surface(*args)
 
     Surface = staticmethod(Surface)
-    def GetCircle(*args) -> "Standard_Boolean" :
+    def GetCircle(*args):
         """
         :param TConv:
         :type TConv: Convert_ParameterisationType
@@ -290,16 +291,16 @@ class geomfill(object):
         return _GeomFill.geomfill_GetCircle(*args)
 
     GetCircle = staticmethod(GetCircle)
-    def GetShape(*args) -> "Standard_Integer &, Standard_Integer &, Standard_Integer &" :
+    def GetShape(*args):
         """
         :param MaxAng:
         :type MaxAng: float
         :param NbPoles:
-        :type NbPoles: int &
+        :type NbPoles: Standard_Integer &
         :param NbKnots:
-        :type NbKnots: int &
+        :type NbKnots: Standard_Integer &
         :param Degree:
-        :type Degree: int &
+        :type Degree: Standard_Integer &
         :param TypeConv:
         :type TypeConv: Convert_ParameterisationType &
         :rtype: void
@@ -308,7 +309,7 @@ class geomfill(object):
         return _GeomFill.geomfill_GetShape(*args)
 
     GetShape = staticmethod(GetShape)
-    def Knots(*args) -> "void" :
+    def Knots(*args):
         """
         :param TypeConv:
         :type TypeConv: Convert_ParameterisationType
@@ -320,7 +321,7 @@ class geomfill(object):
         return _GeomFill.geomfill_Knots(*args)
 
     Knots = staticmethod(Knots)
-    def Mults(*args) -> "void" :
+    def Mults(*args):
         """
         :param TypeConv:
         :type TypeConv: Convert_ParameterisationType
@@ -332,7 +333,7 @@ class geomfill(object):
         return _GeomFill.geomfill_Mults(*args)
 
     Mults = staticmethod(Mults)
-    def GetMinimalWeights(*args) -> "void" :
+    def GetMinimalWeights(*args):
         """
         :param TConv:
         :type TConv: Convert_ParameterisationType
@@ -348,7 +349,7 @@ class geomfill(object):
         return _GeomFill.geomfill_GetMinimalWeights(*args)
 
     GetMinimalWeights = staticmethod(GetMinimalWeights)
-    def GetTolerance(*args) -> "Standard_Real" :
+    def GetTolerance(*args):
         """
         * Used by the generical classes to determine Tolerance for approximation
 
@@ -368,8 +369,6 @@ class geomfill(object):
         return _GeomFill.geomfill_GetTolerance(*args)
 
     GetTolerance = staticmethod(GetTolerance)
-    def __init__(self): 
-        _GeomFill.geomfill_swiginit(self,_GeomFill.new_geomfill())
     def __del__(self):
     	try:
     		self.thisown = False
@@ -382,7 +381,7 @@ geomfill._kill_pointed = new_instancemethod(_GeomFill.geomfill__kill_pointed,Non
 geomfill_swigregister = _GeomFill.geomfill_swigregister
 geomfill_swigregister(geomfill)
 
-def geomfill_Surface(*args) -> "Handle_Geom_Surface" :
+def geomfill_Surface(*args):
   """
     * Builds a ruled surface between the two curves, Curve1 and Curve2.
 
@@ -395,7 +394,7 @@ def geomfill_Surface(*args) -> "Handle_Geom_Surface" :
     """
   return _GeomFill.geomfill_Surface(*args)
 
-def geomfill_GetCircle(*args) -> "Standard_Boolean" :
+def geomfill_GetCircle(*args):
   """
     :param TConv:
     :type TConv: Convert_ParameterisationType
@@ -520,16 +519,16 @@ def geomfill_GetCircle(*args) -> "Standard_Boolean" :
     """
   return _GeomFill.geomfill_GetCircle(*args)
 
-def geomfill_GetShape(*args) -> "Standard_Integer &, Standard_Integer &, Standard_Integer &" :
+def geomfill_GetShape(*args):
   """
     :param MaxAng:
     :type MaxAng: float
     :param NbPoles:
-    :type NbPoles: int &
+    :type NbPoles: Standard_Integer &
     :param NbKnots:
-    :type NbKnots: int &
+    :type NbKnots: Standard_Integer &
     :param Degree:
-    :type Degree: int &
+    :type Degree: Standard_Integer &
     :param TypeConv:
     :type TypeConv: Convert_ParameterisationType &
     :rtype: void
@@ -537,7 +536,7 @@ def geomfill_GetShape(*args) -> "Standard_Integer &, Standard_Integer &, Standar
     """
   return _GeomFill.geomfill_GetShape(*args)
 
-def geomfill_Knots(*args) -> "void" :
+def geomfill_Knots(*args):
   """
     :param TypeConv:
     :type TypeConv: Convert_ParameterisationType
@@ -548,7 +547,7 @@ def geomfill_Knots(*args) -> "void" :
     """
   return _GeomFill.geomfill_Knots(*args)
 
-def geomfill_Mults(*args) -> "void" :
+def geomfill_Mults(*args):
   """
     :param TypeConv:
     :type TypeConv: Convert_ParameterisationType
@@ -559,7 +558,7 @@ def geomfill_Mults(*args) -> "void" :
     """
   return _GeomFill.geomfill_Mults(*args)
 
-def geomfill_GetMinimalWeights(*args) -> "void" :
+def geomfill_GetMinimalWeights(*args):
   """
     :param TConv:
     :type TConv: Convert_ParameterisationType
@@ -574,7 +573,7 @@ def geomfill_GetMinimalWeights(*args) -> "void" :
     """
   return _GeomFill.geomfill_GetMinimalWeights(*args)
 
-def geomfill_GetTolerance(*args) -> "Standard_Real" :
+def geomfill_GetTolerance(*args):
   """
     * Used by the generical classes to determine Tolerance for approximation
 
@@ -601,33 +600,61 @@ class GeomFill_AppSurf(OCC.AppBlend.AppBlend_Approx):
         :rtype: None
 
         :param Degmin:
-        :type Degmin: int
+        :type Degmin: Standard_Integer
         :param Degmax:
-        :type Degmax: int
+        :type Degmax: Standard_Integer
         :param Tol3d:
         :type Tol3d: float
         :param Tol2d:
         :type Tol2d: float
         :param NbIt:
-        :type NbIt: int
+        :type NbIt: Standard_Integer
+        :param KnownParameters: default value is Standard_False
+        :type KnownParameters: bool
+        :rtype: None
+
+        :param Degmin:
+        :type Degmin: Standard_Integer
+        :param Degmax:
+        :type Degmax: Standard_Integer
+        :param Tol3d:
+        :type Tol3d: float
+        :param Tol2d:
+        :type Tol2d: float
+        :param NbIt:
+        :type NbIt: Standard_Integer
         :param KnownParameters: default value is Standard_False
         :type KnownParameters: bool
         :rtype: None
 
         """
         _GeomFill.GeomFill_AppSurf_swiginit(self,_GeomFill.new_GeomFill_AppSurf(*args))
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
         :param Degmin:
-        :type Degmin: int
+        :type Degmin: Standard_Integer
         :param Degmax:
-        :type Degmax: int
+        :type Degmax: Standard_Integer
         :param Tol3d:
         :type Tol3d: float
         :param Tol2d:
         :type Tol2d: float
         :param NbIt:
-        :type NbIt: int
+        :type NbIt: Standard_Integer
+        :param KnownParameters: default value is Standard_False
+        :type KnownParameters: bool
+        :rtype: None
+
+        :param Degmin:
+        :type Degmin: Standard_Integer
+        :param Degmax:
+        :type Degmax: Standard_Integer
+        :param Tol3d:
+        :type Tol3d: float
+        :param Tol2d:
+        :type Tol2d: float
+        :param NbIt:
+        :type NbIt: Standard_Integer
         :param KnownParameters: default value is Standard_False
         :type KnownParameters: bool
         :rtype: None
@@ -635,7 +662,7 @@ class GeomFill_AppSurf(OCC.AppBlend.AppBlend_Approx):
         """
         return _GeomFill.GeomFill_AppSurf_Init(self, *args)
 
-    def SetParType(self, *args) -> "void" :
+    def SetParType(self, *args):
         """
         :param ParType:
         :type ParType: Approx_ParametrizationType
@@ -644,7 +671,7 @@ class GeomFill_AppSurf(OCC.AppBlend.AppBlend_Approx):
         """
         return _GeomFill.GeomFill_AppSurf_SetParType(self, *args)
 
-    def SetContinuity(self, *args) -> "void" :
+    def SetContinuity(self, *args):
         """
         :param C:
         :type C: GeomAbs_Shape
@@ -653,7 +680,7 @@ class GeomFill_AppSurf(OCC.AppBlend.AppBlend_Approx):
         """
         return _GeomFill.GeomFill_AppSurf_SetContinuity(self, *args)
 
-    def SetCriteriumWeight(self, *args) -> "void" :
+    def SetCriteriumWeight(self, *args):
         """
         :param W1:
         :type W1: float
@@ -666,21 +693,21 @@ class GeomFill_AppSurf(OCC.AppBlend.AppBlend_Approx):
         """
         return _GeomFill.GeomFill_AppSurf_SetCriteriumWeight(self, *args)
 
-    def ParType(self, *args) -> "Approx_ParametrizationType" :
+    def ParType(self):
         """
         :rtype: Approx_ParametrizationType
 
         """
-        return _GeomFill.GeomFill_AppSurf_ParType(self, *args)
+        return _GeomFill.GeomFill_AppSurf_ParType(self)
 
-    def Continuity(self, *args) -> "GeomAbs_Shape" :
+    def Continuity(self):
         """
         :rtype: GeomAbs_Shape
 
         """
-        return _GeomFill.GeomFill_AppSurf_Continuity(self, *args)
+        return _GeomFill.GeomFill_AppSurf_Continuity(self)
 
-    def CriteriumWeight(self, *args) -> "void" :
+    def CriteriumWeight(self):
         """
         :param W1:
         :type W1: float &
@@ -691,9 +718,9 @@ class GeomFill_AppSurf(OCC.AppBlend.AppBlend_Approx):
         :rtype: None
 
         """
-        return _GeomFill.GeomFill_AppSurf_CriteriumWeight(self, *args)
+        return _GeomFill.GeomFill_AppSurf_CriteriumWeight(self)
 
-    def PerformSmoothing(self, *args) -> "void" :
+    def PerformSmoothing(self, *args):
         """
         :param Lin:
         :type Lin: Handle_GeomFill_Line &
@@ -704,7 +731,7 @@ class GeomFill_AppSurf(OCC.AppBlend.AppBlend_Approx):
         """
         return _GeomFill.GeomFill_AppSurf_PerformSmoothing(self, *args)
 
-    def Perform(self, *args) -> "void" :
+    def Perform(self, *args):
         """
         :param Lin:
         :type Lin: Handle_GeomFill_Line &
@@ -718,8 +745,16 @@ class GeomFill_AppSurf(OCC.AppBlend.AppBlend_Approx):
         :type Lin: Handle_GeomFill_Line &
         :param SecGen:
         :type SecGen: GeomFill_SectionGenerator &
+        :param SpApprox: default value is Standard_False
+        :type SpApprox: bool
+        :rtype: None
+
+        :param Lin:
+        :type Lin: Handle_GeomFill_Line &
+        :param SecGen:
+        :type SecGen: GeomFill_SectionGenerator &
         :param NbMaxP:
-        :type NbMaxP: int
+        :type NbMaxP: Standard_Integer
         :rtype: None
 
         """
@@ -754,33 +789,61 @@ class GeomFill_AppSweep(OCC.AppBlend.AppBlend_Approx):
         :rtype: None
 
         :param Degmin:
-        :type Degmin: int
+        :type Degmin: Standard_Integer
         :param Degmax:
-        :type Degmax: int
+        :type Degmax: Standard_Integer
         :param Tol3d:
         :type Tol3d: float
         :param Tol2d:
         :type Tol2d: float
         :param NbIt:
-        :type NbIt: int
+        :type NbIt: Standard_Integer
+        :param KnownParameters: default value is Standard_False
+        :type KnownParameters: bool
+        :rtype: None
+
+        :param Degmin:
+        :type Degmin: Standard_Integer
+        :param Degmax:
+        :type Degmax: Standard_Integer
+        :param Tol3d:
+        :type Tol3d: float
+        :param Tol2d:
+        :type Tol2d: float
+        :param NbIt:
+        :type NbIt: Standard_Integer
         :param KnownParameters: default value is Standard_False
         :type KnownParameters: bool
         :rtype: None
 
         """
         _GeomFill.GeomFill_AppSweep_swiginit(self,_GeomFill.new_GeomFill_AppSweep(*args))
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
         :param Degmin:
-        :type Degmin: int
+        :type Degmin: Standard_Integer
         :param Degmax:
-        :type Degmax: int
+        :type Degmax: Standard_Integer
         :param Tol3d:
         :type Tol3d: float
         :param Tol2d:
         :type Tol2d: float
         :param NbIt:
-        :type NbIt: int
+        :type NbIt: Standard_Integer
+        :param KnownParameters: default value is Standard_False
+        :type KnownParameters: bool
+        :rtype: None
+
+        :param Degmin:
+        :type Degmin: Standard_Integer
+        :param Degmax:
+        :type Degmax: Standard_Integer
+        :param Tol3d:
+        :type Tol3d: float
+        :param Tol2d:
+        :type Tol2d: float
+        :param NbIt:
+        :type NbIt: Standard_Integer
         :param KnownParameters: default value is Standard_False
         :type KnownParameters: bool
         :rtype: None
@@ -788,7 +851,7 @@ class GeomFill_AppSweep(OCC.AppBlend.AppBlend_Approx):
         """
         return _GeomFill.GeomFill_AppSweep_Init(self, *args)
 
-    def SetParType(self, *args) -> "void" :
+    def SetParType(self, *args):
         """
         :param ParType:
         :type ParType: Approx_ParametrizationType
@@ -797,7 +860,7 @@ class GeomFill_AppSweep(OCC.AppBlend.AppBlend_Approx):
         """
         return _GeomFill.GeomFill_AppSweep_SetParType(self, *args)
 
-    def SetContinuity(self, *args) -> "void" :
+    def SetContinuity(self, *args):
         """
         :param C:
         :type C: GeomAbs_Shape
@@ -806,7 +869,7 @@ class GeomFill_AppSweep(OCC.AppBlend.AppBlend_Approx):
         """
         return _GeomFill.GeomFill_AppSweep_SetContinuity(self, *args)
 
-    def SetCriteriumWeight(self, *args) -> "void" :
+    def SetCriteriumWeight(self, *args):
         """
         :param W1:
         :type W1: float
@@ -819,21 +882,21 @@ class GeomFill_AppSweep(OCC.AppBlend.AppBlend_Approx):
         """
         return _GeomFill.GeomFill_AppSweep_SetCriteriumWeight(self, *args)
 
-    def ParType(self, *args) -> "Approx_ParametrizationType" :
+    def ParType(self):
         """
         :rtype: Approx_ParametrizationType
 
         """
-        return _GeomFill.GeomFill_AppSweep_ParType(self, *args)
+        return _GeomFill.GeomFill_AppSweep_ParType(self)
 
-    def Continuity(self, *args) -> "GeomAbs_Shape" :
+    def Continuity(self):
         """
         :rtype: GeomAbs_Shape
 
         """
-        return _GeomFill.GeomFill_AppSweep_Continuity(self, *args)
+        return _GeomFill.GeomFill_AppSweep_Continuity(self)
 
-    def CriteriumWeight(self, *args) -> "void" :
+    def CriteriumWeight(self):
         """
         :param W1:
         :type W1: float &
@@ -844,9 +907,9 @@ class GeomFill_AppSweep(OCC.AppBlend.AppBlend_Approx):
         :rtype: None
 
         """
-        return _GeomFill.GeomFill_AppSweep_CriteriumWeight(self, *args)
+        return _GeomFill.GeomFill_AppSweep_CriteriumWeight(self)
 
-    def PerformSmoothing(self, *args) -> "void" :
+    def PerformSmoothing(self, *args):
         """
         :param Lin:
         :type Lin: Handle_GeomFill_Line &
@@ -857,7 +920,7 @@ class GeomFill_AppSweep(OCC.AppBlend.AppBlend_Approx):
         """
         return _GeomFill.GeomFill_AppSweep_PerformSmoothing(self, *args)
 
-    def Perform(self, *args) -> "void" :
+    def Perform(self, *args):
         """
         :param Lin:
         :type Lin: Handle_GeomFill_Line &
@@ -871,8 +934,16 @@ class GeomFill_AppSweep(OCC.AppBlend.AppBlend_Approx):
         :type Lin: Handle_GeomFill_Line &
         :param SecGen:
         :type SecGen: GeomFill_SweepSectionGenerator &
+        :param SpApprox: default value is Standard_False
+        :type SpApprox: bool
+        :rtype: None
+
+        :param Lin:
+        :type Lin: Handle_GeomFill_Line &
+        :param SecGen:
+        :type SecGen: GeomFill_SweepSectionGenerator &
         :param NbMaxP:
-        :type NbMaxP: int
+        :type NbMaxP: Standard_Integer
         :rtype: None
 
         """
@@ -905,22 +976,22 @@ class GeomFill_Array1OfLocationLaw(object):
     def __init__(self, *args): 
         """
         :param Low:
-        :type Low: int
+        :type Low: Standard_Integer
         :param Up:
-        :type Up: int
+        :type Up: Standard_Integer
         :rtype: None
 
         :param Item:
         :type Item: Handle_GeomFill_LocationLaw &
         :param Low:
-        :type Low: int
+        :type Low: Standard_Integer
         :param Up:
-        :type Up: int
+        :type Up: Standard_Integer
         :rtype: None
 
         """
         _GeomFill.GeomFill_Array1OfLocationLaw_swiginit(self,_GeomFill.new_GeomFill_Array1OfLocationLaw(*args))
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
         :param V:
         :type V: Handle_GeomFill_LocationLaw &
@@ -929,21 +1000,21 @@ class GeomFill_Array1OfLocationLaw(object):
         """
         return _GeomFill.GeomFill_Array1OfLocationLaw_Init(self, *args)
 
-    def Destroy(self, *args) -> "void" :
+    def Destroy(self):
         """
         :rtype: None
 
         """
-        return _GeomFill.GeomFill_Array1OfLocationLaw_Destroy(self, *args)
+        return _GeomFill.GeomFill_Array1OfLocationLaw_Destroy(self)
 
-    def IsAllocated(self, *args) -> "Standard_Boolean" :
+    def IsAllocated(self):
         """
         :rtype: bool
 
         """
-        return _GeomFill.GeomFill_Array1OfLocationLaw_IsAllocated(self, *args)
+        return _GeomFill.GeomFill_Array1OfLocationLaw_IsAllocated(self)
 
-    def Assign(self, *args) -> "GeomFill_Array1OfLocationLaw const &" :
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: GeomFill_Array1OfLocationLaw &
@@ -952,7 +1023,7 @@ class GeomFill_Array1OfLocationLaw(object):
         """
         return _GeomFill.GeomFill_Array1OfLocationLaw_Assign(self, *args)
 
-    def Set(self, *args) -> "GeomFill_Array1OfLocationLaw const &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: GeomFill_Array1OfLocationLaw &
@@ -961,31 +1032,31 @@ class GeomFill_Array1OfLocationLaw(object):
         """
         return _GeomFill.GeomFill_Array1OfLocationLaw_Set(self, *args)
 
-    def Length(self, *args) -> "Standard_Integer" :
+    def Length(self):
         """
         :rtype: int
 
         """
-        return _GeomFill.GeomFill_Array1OfLocationLaw_Length(self, *args)
+        return _GeomFill.GeomFill_Array1OfLocationLaw_Length(self)
 
-    def Lower(self, *args) -> "Standard_Integer" :
+    def Lower(self):
         """
         :rtype: int
 
         """
-        return _GeomFill.GeomFill_Array1OfLocationLaw_Lower(self, *args)
+        return _GeomFill.GeomFill_Array1OfLocationLaw_Lower(self)
 
-    def Upper(self, *args) -> "Standard_Integer" :
+    def Upper(self):
         """
         :rtype: int
 
         """
-        return _GeomFill.GeomFill_Array1OfLocationLaw_Upper(self, *args)
+        return _GeomFill.GeomFill_Array1OfLocationLaw_Upper(self)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Value:
         :type Value: Handle_GeomFill_LocationLaw &
         :rtype: None
@@ -993,19 +1064,19 @@ class GeomFill_Array1OfLocationLaw(object):
         """
         return _GeomFill.GeomFill_Array1OfLocationLaw_SetValue(self, *args)
 
-    def Value(self, *args) -> "Handle_GeomFill_LocationLaw const &" :
+    def Value(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Handle_GeomFill_LocationLaw
 
         """
         return _GeomFill.GeomFill_Array1OfLocationLaw_Value(self, *args)
 
-    def ChangeValue(self, *args) -> "Handle_GeomFill_LocationLaw &" :
+    def ChangeValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Handle_GeomFill_LocationLaw
 
         """
@@ -1040,22 +1111,22 @@ class GeomFill_Array1OfSectionLaw(object):
     def __init__(self, *args): 
         """
         :param Low:
-        :type Low: int
+        :type Low: Standard_Integer
         :param Up:
-        :type Up: int
+        :type Up: Standard_Integer
         :rtype: None
 
         :param Item:
         :type Item: Handle_GeomFill_SectionLaw &
         :param Low:
-        :type Low: int
+        :type Low: Standard_Integer
         :param Up:
-        :type Up: int
+        :type Up: Standard_Integer
         :rtype: None
 
         """
         _GeomFill.GeomFill_Array1OfSectionLaw_swiginit(self,_GeomFill.new_GeomFill_Array1OfSectionLaw(*args))
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
         :param V:
         :type V: Handle_GeomFill_SectionLaw &
@@ -1064,21 +1135,21 @@ class GeomFill_Array1OfSectionLaw(object):
         """
         return _GeomFill.GeomFill_Array1OfSectionLaw_Init(self, *args)
 
-    def Destroy(self, *args) -> "void" :
+    def Destroy(self):
         """
         :rtype: None
 
         """
-        return _GeomFill.GeomFill_Array1OfSectionLaw_Destroy(self, *args)
+        return _GeomFill.GeomFill_Array1OfSectionLaw_Destroy(self)
 
-    def IsAllocated(self, *args) -> "Standard_Boolean" :
+    def IsAllocated(self):
         """
         :rtype: bool
 
         """
-        return _GeomFill.GeomFill_Array1OfSectionLaw_IsAllocated(self, *args)
+        return _GeomFill.GeomFill_Array1OfSectionLaw_IsAllocated(self)
 
-    def Assign(self, *args) -> "GeomFill_Array1OfSectionLaw const &" :
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: GeomFill_Array1OfSectionLaw &
@@ -1087,7 +1158,7 @@ class GeomFill_Array1OfSectionLaw(object):
         """
         return _GeomFill.GeomFill_Array1OfSectionLaw_Assign(self, *args)
 
-    def Set(self, *args) -> "GeomFill_Array1OfSectionLaw const &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: GeomFill_Array1OfSectionLaw &
@@ -1096,31 +1167,31 @@ class GeomFill_Array1OfSectionLaw(object):
         """
         return _GeomFill.GeomFill_Array1OfSectionLaw_Set(self, *args)
 
-    def Length(self, *args) -> "Standard_Integer" :
+    def Length(self):
         """
         :rtype: int
 
         """
-        return _GeomFill.GeomFill_Array1OfSectionLaw_Length(self, *args)
+        return _GeomFill.GeomFill_Array1OfSectionLaw_Length(self)
 
-    def Lower(self, *args) -> "Standard_Integer" :
+    def Lower(self):
         """
         :rtype: int
 
         """
-        return _GeomFill.GeomFill_Array1OfSectionLaw_Lower(self, *args)
+        return _GeomFill.GeomFill_Array1OfSectionLaw_Lower(self)
 
-    def Upper(self, *args) -> "Standard_Integer" :
+    def Upper(self):
         """
         :rtype: int
 
         """
-        return _GeomFill.GeomFill_Array1OfSectionLaw_Upper(self, *args)
+        return _GeomFill.GeomFill_Array1OfSectionLaw_Upper(self)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Value:
         :type Value: Handle_GeomFill_SectionLaw &
         :rtype: None
@@ -1128,19 +1199,19 @@ class GeomFill_Array1OfSectionLaw(object):
         """
         return _GeomFill.GeomFill_Array1OfSectionLaw_SetValue(self, *args)
 
-    def Value(self, *args) -> "Handle_GeomFill_SectionLaw const &" :
+    def Value(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Handle_GeomFill_SectionLaw
 
         """
         return _GeomFill.GeomFill_Array1OfSectionLaw_Value(self, *args)
 
-    def ChangeValue(self, *args) -> "Handle_GeomFill_SectionLaw &" :
+    def ChangeValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Handle_GeomFill_SectionLaw
 
         """
@@ -1212,7 +1283,7 @@ class GeomFill_BSplineCurves(object):
 
         """
         _GeomFill.GeomFill_BSplineCurves_swiginit(self,_GeomFill.new_GeomFill_BSplineCurves(*args))
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
         * if the curves cannot be joined
 
@@ -1253,14 +1324,14 @@ class GeomFill_BSplineCurves(object):
         """
         return _GeomFill.GeomFill_BSplineCurves_Init(self, *args)
 
-    def Surface(self, *args) -> "Handle_Geom_BSplineSurface const &" :
+    def Surface(self):
         """
         * Returns the BSpline surface Surface resulting from the computation performed by this algorithm.
 
         :rtype: Handle_Geom_BSplineSurface
 
         """
-        return _GeomFill.GeomFill_BSplineCurves_Surface(self, *args)
+        return _GeomFill.GeomFill_BSplineCurves_Surface(self)
 
     def __del__(self):
     	try:
@@ -1323,7 +1394,7 @@ class GeomFill_BezierCurves(object):
 
         """
         _GeomFill.GeomFill_BezierCurves_swiginit(self,_GeomFill.new_GeomFill_BezierCurves(*args))
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
         * if the curves cannot be joined
 
@@ -1364,14 +1435,14 @@ class GeomFill_BezierCurves(object):
         """
         return _GeomFill.GeomFill_BezierCurves_Init(self, *args)
 
-    def Surface(self, *args) -> "Handle_Geom_BezierSurface const &" :
+    def Surface(self):
         """
         * Returns the Bezier surface resulting from the computation performed by this algorithm.
 
         :rtype: Handle_Geom_BezierSurface
 
         """
-        return _GeomFill.GeomFill_BezierCurves_Surface(self, *args)
+        return _GeomFill.GeomFill_BezierCurves_Surface(self)
 
     def __del__(self):
     	try:
@@ -1391,7 +1462,7 @@ class GeomFill_Boundary(OCC.MMgt.MMgt_TShared):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def Value(self, *args) -> "gp_Pnt" :
+    def Value(self, *args):
         """
         :param U:
         :type U: float
@@ -1400,7 +1471,7 @@ class GeomFill_Boundary(OCC.MMgt.MMgt_TShared):
         """
         return _GeomFill.GeomFill_Boundary_Value(self, *args)
 
-    def D1(self, *args) -> "void" :
+    def D1(self, *args):
         """
         :param U:
         :type U: float
@@ -1413,14 +1484,14 @@ class GeomFill_Boundary(OCC.MMgt.MMgt_TShared):
         """
         return _GeomFill.GeomFill_Boundary_D1(self, *args)
 
-    def HasNormals(self, *args) -> "Standard_Boolean" :
+    def HasNormals(self):
         """
         :rtype: bool
 
         """
-        return _GeomFill.GeomFill_Boundary_HasNormals(self, *args)
+        return _GeomFill.GeomFill_Boundary_HasNormals(self)
 
-    def Norm(self, *args) -> "gp_Vec" :
+    def Norm(self, *args):
         """
         :param U:
         :type U: float
@@ -1429,7 +1500,7 @@ class GeomFill_Boundary(OCC.MMgt.MMgt_TShared):
         """
         return _GeomFill.GeomFill_Boundary_Norm(self, *args)
 
-    def D1Norm(self, *args) -> "void" :
+    def D1Norm(self, *args):
         """
         :param U:
         :type U: float
@@ -1442,7 +1513,7 @@ class GeomFill_Boundary(OCC.MMgt.MMgt_TShared):
         """
         return _GeomFill.GeomFill_Boundary_D1Norm(self, *args)
 
-    def Reparametrize(self, *args) -> "void" :
+    def Reparametrize(self, *args):
         """
         :param First:
         :type First: float
@@ -1463,7 +1534,7 @@ class GeomFill_Boundary(OCC.MMgt.MMgt_TShared):
         """
         return _GeomFill.GeomFill_Boundary_Reparametrize(self, *args)
 
-    def Points(self, *args) -> "void" :
+    def Points(self, *args):
         """
         :param PFirst:
         :type PFirst: gp_Pnt
@@ -1474,7 +1545,7 @@ class GeomFill_Boundary(OCC.MMgt.MMgt_TShared):
         """
         return _GeomFill.GeomFill_Boundary_Points(self, *args)
 
-    def Bounds(self, *args) -> "void" :
+    def Bounds(self):
         """
         :param First:
         :type First: float &
@@ -1483,16 +1554,16 @@ class GeomFill_Boundary(OCC.MMgt.MMgt_TShared):
         :rtype: void
 
         """
-        return _GeomFill.GeomFill_Boundary_Bounds(self, *args)
+        return _GeomFill.GeomFill_Boundary_Bounds(self)
 
-    def IsDegenerated(self, *args) -> "Standard_Boolean" :
+    def IsDegenerated(self):
         """
         :rtype: bool
 
         """
-        return _GeomFill.GeomFill_Boundary_IsDegenerated(self, *args)
+        return _GeomFill.GeomFill_Boundary_IsDegenerated(self)
 
-    def Tol3d(self, *args) -> "void" :
+    def Tol3d(self, *args):
         """
         :rtype: float
 
@@ -1503,7 +1574,7 @@ class GeomFill_Boundary(OCC.MMgt.MMgt_TShared):
         """
         return _GeomFill.GeomFill_Boundary_Tol3d(self, *args)
 
-    def Tolang(self, *args) -> "void" :
+    def Tolang(self, *args):
         """
         :rtype: float
 
@@ -1514,11 +1585,11 @@ class GeomFill_Boundary(OCC.MMgt.MMgt_TShared):
         """
         return _GeomFill.GeomFill_Boundary_Tolang(self, *args)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(GeomFill_Boundary self)"""
         return _GeomFill.GeomFill_Boundary__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_GeomFill_Boundary" :
+    def GetHandle(self):
         """GetHandle(GeomFill_Boundary self) -> Handle_GeomFill_Boundary"""
         return _GeomFill.GeomFill_Boundary_GetHandle(self)
 
@@ -1567,7 +1638,7 @@ Handle_GeomFill_Boundary._kill_pointed = new_instancemethod(_GeomFill.Handle_Geo
 Handle_GeomFill_Boundary_swigregister = _GeomFill.Handle_GeomFill_Boundary_swigregister
 Handle_GeomFill_Boundary_swigregister(Handle_GeomFill_Boundary)
 
-def Handle_GeomFill_Boundary_DownCast(*args) -> "Handle_GeomFill_Boundary const" :
+def Handle_GeomFill_Boundary_DownCast(*args):
   return _GeomFill.Handle_GeomFill_Boundary_DownCast(*args)
 Handle_GeomFill_Boundary_DownCast = _GeomFill.Handle_GeomFill_Boundary_DownCast
 
@@ -1590,13 +1661,27 @@ class GeomFill_CircularBlendFunc(OCC.Approx.Approx_SweepFunction):
         :type Polynomial: bool
         :rtype: None
 
+        * Create a Blend with a constant radius with 2 guide-line. <FShape> sets the type of fillet surface. The -- default value is Convert_TgtThetaOver2 (classical -- nurbs -- representation of circles). ChFi3d_QuasiAngular -- corresponds to a nurbs representation of circles -- which parameterisation matches the circle one. -- ChFi3d_Polynomial corresponds to a polynomial -- representation of circles.
+
+        :param Path:
+        :type Path: Handle_Adaptor3d_HCurve &
+        :param Curve1:
+        :type Curve1: Handle_Adaptor3d_HCurve &
+        :param Curve2:
+        :type Curve2: Handle_Adaptor3d_HCurve &
+        :param Radius:
+        :type Radius: float
+        :param Polynomial: default value is Standard_False
+        :type Polynomial: bool
+        :rtype: None
+
         """
         _GeomFill.GeomFill_CircularBlendFunc_swiginit(self,_GeomFill.new_GeomFill_CircularBlendFunc(*args))
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(GeomFill_CircularBlendFunc self)"""
         return _GeomFill.GeomFill_CircularBlendFunc__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_GeomFill_CircularBlendFunc" :
+    def GetHandle(self):
         """GetHandle(GeomFill_CircularBlendFunc self) -> Handle_GeomFill_CircularBlendFunc"""
         return _GeomFill.GeomFill_CircularBlendFunc_GetHandle(self)
 
@@ -1634,7 +1719,7 @@ Handle_GeomFill_CircularBlendFunc._kill_pointed = new_instancemethod(_GeomFill.H
 Handle_GeomFill_CircularBlendFunc_swigregister = _GeomFill.Handle_GeomFill_CircularBlendFunc_swigregister
 Handle_GeomFill_CircularBlendFunc_swigregister(Handle_GeomFill_CircularBlendFunc)
 
-def Handle_GeomFill_CircularBlendFunc_DownCast(*args) -> "Handle_GeomFill_CircularBlendFunc const" :
+def Handle_GeomFill_CircularBlendFunc_DownCast(*args):
   return _GeomFill.Handle_GeomFill_CircularBlendFunc_DownCast(*args)
 Handle_GeomFill_CircularBlendFunc_DownCast = _GeomFill.Handle_GeomFill_CircularBlendFunc_DownCast
 
@@ -1646,15 +1731,25 @@ class GeomFill_ConstrainedFilling(object):
         * Constructs an empty framework for filling a surface from boundaries. The boundaries of the surface will be defined, and the surface will be built by using the function Init. The surface will respect the following constraints: - its degree will not be greater than MaxDeg - the maximum number of segments MaxSeg which BSpline surfaces can have.
 
         :param MaxDeg:
-        :type MaxDeg: int
+        :type MaxDeg: Standard_Integer
         :param MaxSeg:
-        :type MaxSeg: int
+        :type MaxSeg: Standard_Integer
         :rtype: None
 
         """
         _GeomFill.GeomFill_ConstrainedFilling_swiginit(self,_GeomFill.new_GeomFill_ConstrainedFilling(*args))
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
+        :param B1:
+        :type B1: Handle_GeomFill_Boundary &
+        :param B2:
+        :type B2: Handle_GeomFill_Boundary &
+        :param B3:
+        :type B3: Handle_GeomFill_Boundary &
+        :param NoCheck: default value is Standard_False
+        :type NoCheck: bool
+        :rtype: None
+
         :param B1:
         :type B1: Handle_GeomFill_Boundary &
         :param B2:
@@ -1679,10 +1774,24 @@ class GeomFill_ConstrainedFilling(object):
         :type NoCheck: bool
         :rtype: None
 
+        * Constructs a BSpline surface filled from the series of boundaries B1, B2, B3 and, if need be, B4, which serve: - as path constraints - and optionally, as tangency constraints if they are GeomFill_BoundWithSurf curves. The boundaries may be given in any order: they are classified and if necessary, reversed and reparameterized. The surface will also respect the following constraints: - its degree will not be greater than the maximum degree defined at the time of construction of this framework, and - the maximum number of segments MaxSeg which BSpline surfaces can have
+
+        :param B1:
+        :type B1: Handle_GeomFill_Boundary &
+        :param B2:
+        :type B2: Handle_GeomFill_Boundary &
+        :param B3:
+        :type B3: Handle_GeomFill_Boundary &
+        :param B4:
+        :type B4: Handle_GeomFill_Boundary &
+        :param NoCheck: default value is Standard_False
+        :type NoCheck: bool
+        :rtype: None
+
         """
         return _GeomFill.GeomFill_ConstrainedFilling_Init(self, *args)
 
-    def SetDomain(self, *args) -> "void" :
+    def SetDomain(self, *args):
         """
         * Allows to modify domain on witch the blending function associated to the constrained boundary B will propag the influence of the field of tangency. Can be usefull to reduce influence of boundaries on whitch the Coons compatibility conditions are not respected. l is a relative value of the parametric range of B. Default value for l is 1 (used in Init). Warning: Must be called after Init with a constrained boundary used in the call to Init.
 
@@ -1695,43 +1804,43 @@ class GeomFill_ConstrainedFilling(object):
         """
         return _GeomFill.GeomFill_ConstrainedFilling_SetDomain(self, *args)
 
-    def ReBuild(self, *args) -> "void" :
+    def ReBuild(self):
         """
         * Computes the new poles of the surface using the new blending functions set by several calls to SetDomain.
 
         :rtype: None
 
         """
-        return _GeomFill.GeomFill_ConstrainedFilling_ReBuild(self, *args)
+        return _GeomFill.GeomFill_ConstrainedFilling_ReBuild(self)
 
-    def Boundary(self, *args) -> "Handle_GeomFill_Boundary" :
+    def Boundary(self, *args):
         """
         * Returns the bound of index i after sort.
 
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :rtype: Handle_GeomFill_Boundary
 
         """
         return _GeomFill.GeomFill_ConstrainedFilling_Boundary(self, *args)
 
-    def Surface(self, *args) -> "Handle_Geom_BSplineSurface" :
+    def Surface(self):
         """
         * Returns the BSpline surface after computation of the fill by this framework.
 
         :rtype: Handle_Geom_BSplineSurface
 
         """
-        return _GeomFill.GeomFill_ConstrainedFilling_Surface(self, *args)
+        return _GeomFill.GeomFill_ConstrainedFilling_Surface(self)
 
-    def Eval(self, *args) -> "Standard_Integer" :
+    def Eval(self, *args):
         """
         * Internal use for Advmath approximation call.
 
         :param W:
         :type W: float
         :param Ord:
-        :type Ord: int
+        :type Ord: Standard_Integer
         :param Result:
         :type Result: float &
         :rtype: int
@@ -1739,45 +1848,45 @@ class GeomFill_ConstrainedFilling(object):
         """
         return _GeomFill.GeomFill_ConstrainedFilling_Eval(self, *args)
 
-    def CheckCoonsAlgPatch(self, *args) -> "void" :
+    def CheckCoonsAlgPatch(self, *args):
         """
         * Computes the fields of tangents on 30 points along the bound I, these are not the constraint tangents but gives an idea of the coonsAlgPatch regularity.
 
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :rtype: None
 
         """
         return _GeomFill.GeomFill_ConstrainedFilling_CheckCoonsAlgPatch(self, *args)
 
-    def CheckTgteField(self, *args) -> "void" :
+    def CheckTgteField(self, *args):
         """
         * Computes the fields of tangents and normals on 30 points along the bound I, draw them, and computes the max dot product that must be near than 0.
 
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :rtype: None
 
         """
         return _GeomFill.GeomFill_ConstrainedFilling_CheckTgteField(self, *args)
 
-    def CheckApprox(self, *args) -> "void" :
+    def CheckApprox(self, *args):
         """
         * Computes values and normals along the bound I and compare them to the approx result curves (bound and tgte field) , draw the normals and tangents.
 
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :rtype: None
 
         """
         return _GeomFill.GeomFill_ConstrainedFilling_CheckApprox(self, *args)
 
-    def CheckResult(self, *args) -> "void" :
+    def CheckResult(self, *args):
         """
         * Computes values and normals along the bound I on both constraint surface and result surface, draw the normals, and computes the max distance between values and the max angle between normals.
 
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :rtype: None
 
         """
@@ -1824,7 +1933,7 @@ class GeomFill_CoonsAlgPatch(OCC.MMgt.MMgt_TShared):
 
         """
         _GeomFill.GeomFill_CoonsAlgPatch_swiginit(self,_GeomFill.new_GeomFill_CoonsAlgPatch(*args))
-    def SetFunc(self, *args) -> "void" :
+    def SetFunc(self, *args):
         """
         * Set the blending functions.
 
@@ -1837,7 +1946,7 @@ class GeomFill_CoonsAlgPatch(OCC.MMgt.MMgt_TShared):
         """
         return _GeomFill.GeomFill_CoonsAlgPatch_SetFunc(self, *args)
 
-    def Value(self, *args) -> "gp_Pnt" :
+    def Value(self, *args):
         """
         * Computes the value on the algorithmic patch at parameters U and V.
 
@@ -1850,7 +1959,7 @@ class GeomFill_CoonsAlgPatch(OCC.MMgt.MMgt_TShared):
         """
         return _GeomFill.GeomFill_CoonsAlgPatch_Value(self, *args)
 
-    def D1U(self, *args) -> "gp_Vec" :
+    def D1U(self, *args):
         """
         * Computes the d/dU partial derivative on the algorithmic patch at parameters U and V.
 
@@ -1863,7 +1972,7 @@ class GeomFill_CoonsAlgPatch(OCC.MMgt.MMgt_TShared):
         """
         return _GeomFill.GeomFill_CoonsAlgPatch_D1U(self, *args)
 
-    def D1V(self, *args) -> "gp_Vec" :
+    def D1V(self, *args):
         """
         * Computes the d/dV partial derivative on the algorithmic patch at parameters U and V.
 
@@ -1876,7 +1985,7 @@ class GeomFill_CoonsAlgPatch(OCC.MMgt.MMgt_TShared):
         """
         return _GeomFill.GeomFill_CoonsAlgPatch_D1V(self, *args)
 
-    def DUV(self, *args) -> "gp_Vec" :
+    def DUV(self, *args):
         """
         * Computes the d2/dUdV partial derivative on the algorithmic patch made with linear blending functions at parameter U and V.
 
@@ -1889,25 +1998,25 @@ class GeomFill_CoonsAlgPatch(OCC.MMgt.MMgt_TShared):
         """
         return _GeomFill.GeomFill_CoonsAlgPatch_DUV(self, *args)
 
-    def Corner(self, *args) -> "gp_Pnt const" :
+    def Corner(self, *args):
         """
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :rtype: gp_Pnt
 
         """
         return _GeomFill.GeomFill_CoonsAlgPatch_Corner(self, *args)
 
-    def Bound(self, *args) -> "Handle_GeomFill_Boundary const &" :
+    def Bound(self, *args):
         """
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :rtype: Handle_GeomFill_Boundary
 
         """
         return _GeomFill.GeomFill_CoonsAlgPatch_Bound(self, *args)
 
-    def Func(self, *args) -> "Handle_Law_Function const &" :
+    def Func(self, *args):
         """
         * Give the blending functions.
 
@@ -1918,17 +2027,17 @@ class GeomFill_CoonsAlgPatch(OCC.MMgt.MMgt_TShared):
         :rtype: None
 
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :rtype: Handle_Law_Function
 
         """
         return _GeomFill.GeomFill_CoonsAlgPatch_Func(self, *args)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(GeomFill_CoonsAlgPatch self)"""
         return _GeomFill.GeomFill_CoonsAlgPatch__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_GeomFill_CoonsAlgPatch" :
+    def GetHandle(self):
         """GetHandle(GeomFill_CoonsAlgPatch self) -> Handle_GeomFill_CoonsAlgPatch"""
         return _GeomFill.GeomFill_CoonsAlgPatch_GetHandle(self)
 
@@ -1974,20 +2083,20 @@ Handle_GeomFill_CoonsAlgPatch._kill_pointed = new_instancemethod(_GeomFill.Handl
 Handle_GeomFill_CoonsAlgPatch_swigregister = _GeomFill.Handle_GeomFill_CoonsAlgPatch_swigregister
 Handle_GeomFill_CoonsAlgPatch_swigregister(Handle_GeomFill_CoonsAlgPatch)
 
-def Handle_GeomFill_CoonsAlgPatch_DownCast(*args) -> "Handle_GeomFill_CoonsAlgPatch const" :
+def Handle_GeomFill_CoonsAlgPatch_DownCast(*args):
   return _GeomFill.Handle_GeomFill_CoonsAlgPatch_DownCast(*args)
 Handle_GeomFill_CoonsAlgPatch_DownCast = _GeomFill.Handle_GeomFill_CoonsAlgPatch_DownCast
 
 class GeomFill_CornerState(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _GeomFill.GeomFill_CornerState_swiginit(self,_GeomFill.new_GeomFill_CornerState(*args))
-    def Gap(self, *args) -> "void" :
+        _GeomFill.GeomFill_CornerState_swiginit(self,_GeomFill.new_GeomFill_CornerState())
+    def Gap(self, *args):
         """
         :rtype: float
 
@@ -1998,7 +2107,7 @@ class GeomFill_CornerState(object):
         """
         return _GeomFill.GeomFill_CornerState_Gap(self, *args)
 
-    def TgtAng(self, *args) -> "void" :
+    def TgtAng(self, *args):
         """
         :rtype: float
 
@@ -2009,21 +2118,21 @@ class GeomFill_CornerState(object):
         """
         return _GeomFill.GeomFill_CornerState_TgtAng(self, *args)
 
-    def HasConstraint(self, *args) -> "Standard_Boolean" :
+    def HasConstraint(self):
         """
         :rtype: bool
 
         """
-        return _GeomFill.GeomFill_CornerState_HasConstraint(self, *args)
+        return _GeomFill.GeomFill_CornerState_HasConstraint(self)
 
-    def Constraint(self, *args) -> "void" :
+    def Constraint(self):
         """
         :rtype: None
 
         """
-        return _GeomFill.GeomFill_CornerState_Constraint(self, *args)
+        return _GeomFill.GeomFill_CornerState_Constraint(self)
 
-    def NorAng(self, *args) -> "void" :
+    def NorAng(self, *args):
         """
         :rtype: float
 
@@ -2034,16 +2143,16 @@ class GeomFill_CornerState(object):
         """
         return _GeomFill.GeomFill_CornerState_NorAng(self, *args)
 
-    def IsToKill(self, *args) -> "Standard_Boolean" :
+    def IsToKill(self):
         """
         :param Scal:
         :type Scal: float &
         :rtype: bool
 
         """
-        return _GeomFill.GeomFill_CornerState_IsToKill(self, *args)
+        return _GeomFill.GeomFill_CornerState_IsToKill(self)
 
-    def DoKill(self, *args) -> "void" :
+    def DoKill(self, *args):
         """
         :param Scal:
         :type Scal: float
@@ -2074,27 +2183,27 @@ GeomFill_CornerState_swigregister(GeomFill_CornerState)
 class GeomFill_Filling(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _GeomFill.GeomFill_Filling_swiginit(self,_GeomFill.new_GeomFill_Filling(*args))
-    def NbUPoles(self, *args) -> "Standard_Integer" :
+        _GeomFill.GeomFill_Filling_swiginit(self,_GeomFill.new_GeomFill_Filling())
+    def NbUPoles(self):
         """
         :rtype: int
 
         """
-        return _GeomFill.GeomFill_Filling_NbUPoles(self, *args)
+        return _GeomFill.GeomFill_Filling_NbUPoles(self)
 
-    def NbVPoles(self, *args) -> "Standard_Integer" :
+    def NbVPoles(self):
         """
         :rtype: int
 
         """
-        return _GeomFill.GeomFill_Filling_NbVPoles(self, *args)
+        return _GeomFill.GeomFill_Filling_NbVPoles(self)
 
-    def Poles(self, *args) -> "void" :
+    def Poles(self, *args):
         """
         :param Poles:
         :type Poles: TColgp_Array2OfPnt
@@ -2103,14 +2212,14 @@ class GeomFill_Filling(object):
         """
         return _GeomFill.GeomFill_Filling_Poles(self, *args)
 
-    def isRational(self, *args) -> "Standard_Boolean" :
+    def isRational(self):
         """
         :rtype: bool
 
         """
-        return _GeomFill.GeomFill_Filling_isRational(self, *args)
+        return _GeomFill.GeomFill_Filling_isRational(self)
 
-    def Weights(self, *args) -> "void" :
+    def Weights(self, *args):
         """
         :param Weights:
         :type Weights: TColStd_Array2OfReal &
@@ -2149,25 +2258,25 @@ class GeomFill_FunctionDraft(object):
 
         """
         _GeomFill.GeomFill_FunctionDraft_swiginit(self,_GeomFill.new_GeomFill_FunctionDraft(*args))
-    def NbVariables(self, *args) -> "Standard_Integer" :
+    def NbVariables(self):
         """
         * returns the number of variables of the function.
 
         :rtype: int
 
         """
-        return _GeomFill.GeomFill_FunctionDraft_NbVariables(self, *args)
+        return _GeomFill.GeomFill_FunctionDraft_NbVariables(self)
 
-    def NbEquations(self, *args) -> "Standard_Integer" :
+    def NbEquations(self):
         """
         * returns the number of equations of the function.
 
         :rtype: int
 
         """
-        return _GeomFill.GeomFill_FunctionDraft_NbEquations(self, *args)
+        return _GeomFill.GeomFill_FunctionDraft_NbEquations(self)
 
-    def Value(self, *args) -> "Standard_Boolean" :
+    def Value(self, *args):
         """
         * computes the values <F> of the Functions for the variable <X>. Returns True if the computation was done successfully, False otherwise.
 
@@ -2180,7 +2289,7 @@ class GeomFill_FunctionDraft(object):
         """
         return _GeomFill.GeomFill_FunctionDraft_Value(self, *args)
 
-    def Derivatives(self, *args) -> "Standard_Boolean" :
+    def Derivatives(self, *args):
         """
         * returns the values <D> of the derivatives for the variable <X>. Returns True if the computation was done successfully, False otherwise.
 
@@ -2193,7 +2302,7 @@ class GeomFill_FunctionDraft(object):
         """
         return _GeomFill.GeomFill_FunctionDraft_Derivatives(self, *args)
 
-    def Values(self, *args) -> "Standard_Boolean" :
+    def Values(self, *args):
         """
         * returns the values <F> of the functions and the derivatives <D> for the variable <X>. Returns True if the computation was done successfully, False otherwise.
 
@@ -2208,7 +2317,7 @@ class GeomFill_FunctionDraft(object):
         """
         return _GeomFill.GeomFill_FunctionDraft_Values(self, *args)
 
-    def DerivT(self, *args) -> "Standard_Boolean" :
+    def DerivT(self, *args):
         """
         * returns the values <F> of the T derivatives for the parameter Param .
 
@@ -2229,7 +2338,7 @@ class GeomFill_FunctionDraft(object):
         """
         return _GeomFill.GeomFill_FunctionDraft_DerivT(self, *args)
 
-    def Deriv2T(self, *args) -> "Standard_Boolean" :
+    def Deriv2T(self, *args):
         """
         * returns the values <F> of the T2 derivatives for the parameter Param .
 
@@ -2250,7 +2359,7 @@ class GeomFill_FunctionDraft(object):
         """
         return _GeomFill.GeomFill_FunctionDraft_Deriv2T(self, *args)
 
-    def DerivTX(self, *args) -> "Standard_Boolean" :
+    def DerivTX(self, *args):
         """
         * returns the values <D> of the TX derivatives for the parameter Param .
 
@@ -2265,7 +2374,7 @@ class GeomFill_FunctionDraft(object):
         """
         return _GeomFill.GeomFill_FunctionDraft_DerivTX(self, *args)
 
-    def Deriv2X(self, *args) -> "Standard_Boolean" :
+    def Deriv2X(self, *args):
         """
         * returns the values <T> of the X2 derivatives for the parameter Param .
 
@@ -2312,9 +2421,17 @@ class GeomFill_FunctionGuide(object):
         :type ParamOnLaw: float
         :rtype: None
 
+        :param S:
+        :type S: Handle_GeomFill_SectionLaw &
+        :param Guide:
+        :type Guide: Handle_Adaptor3d_HCurve &
+        :param ParamOnLaw: default value is 0.0
+        :type ParamOnLaw: float
+        :rtype: None
+
         """
         _GeomFill.GeomFill_FunctionGuide_swiginit(self,_GeomFill.new_GeomFill_FunctionGuide(*args))
-    def SetParam(self, *args) -> "void" :
+    def SetParam(self, *args):
         """
         :param Param:
         :type Param: float
@@ -2329,25 +2446,25 @@ class GeomFill_FunctionGuide(object):
         """
         return _GeomFill.GeomFill_FunctionGuide_SetParam(self, *args)
 
-    def NbVariables(self, *args) -> "Standard_Integer" :
+    def NbVariables(self):
         """
         * returns the number of variables of the function.
 
         :rtype: int
 
         """
-        return _GeomFill.GeomFill_FunctionGuide_NbVariables(self, *args)
+        return _GeomFill.GeomFill_FunctionGuide_NbVariables(self)
 
-    def NbEquations(self, *args) -> "Standard_Integer" :
+    def NbEquations(self):
         """
         * returns the number of equations of the function.
 
         :rtype: int
 
         """
-        return _GeomFill.GeomFill_FunctionGuide_NbEquations(self, *args)
+        return _GeomFill.GeomFill_FunctionGuide_NbEquations(self)
 
-    def Value(self, *args) -> "Standard_Boolean" :
+    def Value(self, *args):
         """
         * computes the values <F> of the Functions for the variable <X>. Returns True if the computation was done successfully, False otherwise.
 
@@ -2360,7 +2477,7 @@ class GeomFill_FunctionGuide(object):
         """
         return _GeomFill.GeomFill_FunctionGuide_Value(self, *args)
 
-    def Derivatives(self, *args) -> "Standard_Boolean" :
+    def Derivatives(self, *args):
         """
         * returns the values <D> of the derivatives for the variable <X>. Returns True if the computation was done successfully, False otherwise.
 
@@ -2373,7 +2490,7 @@ class GeomFill_FunctionGuide(object):
         """
         return _GeomFill.GeomFill_FunctionGuide_Derivatives(self, *args)
 
-    def Values(self, *args) -> "Standard_Boolean" :
+    def Values(self, *args):
         """
         * returns the values <F> of the functions and the derivatives <D> for the variable <X>. Returns True if the computation was done successfully, False otherwise.
 
@@ -2388,7 +2505,7 @@ class GeomFill_FunctionGuide(object):
         """
         return _GeomFill.GeomFill_FunctionGuide_Values(self, *args)
 
-    def DerivT(self, *args) -> "Standard_Boolean" :
+    def DerivT(self, *args):
         """
         * returns the values <F> of the T derivatives for the parameter Param .
 
@@ -2430,22 +2547,22 @@ class GeomFill_HArray1OfLocationLaw(OCC.MMgt.MMgt_TShared):
     def __init__(self, *args): 
         """
         :param Low:
-        :type Low: int
+        :type Low: Standard_Integer
         :param Up:
-        :type Up: int
+        :type Up: Standard_Integer
         :rtype: None
 
         :param Low:
-        :type Low: int
+        :type Low: Standard_Integer
         :param Up:
-        :type Up: int
+        :type Up: Standard_Integer
         :param V:
         :type V: Handle_GeomFill_LocationLaw &
         :rtype: None
 
         """
         _GeomFill.GeomFill_HArray1OfLocationLaw_swiginit(self,_GeomFill.new_GeomFill_HArray1OfLocationLaw(*args))
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
         :param V:
         :type V: Handle_GeomFill_LocationLaw &
@@ -2454,31 +2571,31 @@ class GeomFill_HArray1OfLocationLaw(OCC.MMgt.MMgt_TShared):
         """
         return _GeomFill.GeomFill_HArray1OfLocationLaw_Init(self, *args)
 
-    def Length(self, *args) -> "Standard_Integer" :
+    def Length(self):
         """
         :rtype: int
 
         """
-        return _GeomFill.GeomFill_HArray1OfLocationLaw_Length(self, *args)
+        return _GeomFill.GeomFill_HArray1OfLocationLaw_Length(self)
 
-    def Lower(self, *args) -> "Standard_Integer" :
+    def Lower(self):
         """
         :rtype: int
 
         """
-        return _GeomFill.GeomFill_HArray1OfLocationLaw_Lower(self, *args)
+        return _GeomFill.GeomFill_HArray1OfLocationLaw_Lower(self)
 
-    def Upper(self, *args) -> "Standard_Integer" :
+    def Upper(self):
         """
         :rtype: int
 
         """
-        return _GeomFill.GeomFill_HArray1OfLocationLaw_Upper(self, *args)
+        return _GeomFill.GeomFill_HArray1OfLocationLaw_Upper(self)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Value:
         :type Value: Handle_GeomFill_LocationLaw &
         :rtype: None
@@ -2486,43 +2603,43 @@ class GeomFill_HArray1OfLocationLaw(OCC.MMgt.MMgt_TShared):
         """
         return _GeomFill.GeomFill_HArray1OfLocationLaw_SetValue(self, *args)
 
-    def Value(self, *args) -> "Handle_GeomFill_LocationLaw const &" :
+    def Value(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Handle_GeomFill_LocationLaw
 
         """
         return _GeomFill.GeomFill_HArray1OfLocationLaw_Value(self, *args)
 
-    def ChangeValue(self, *args) -> "Handle_GeomFill_LocationLaw &" :
+    def ChangeValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Handle_GeomFill_LocationLaw
 
         """
         return _GeomFill.GeomFill_HArray1OfLocationLaw_ChangeValue(self, *args)
 
-    def Array1(self, *args) -> "GeomFill_Array1OfLocationLaw const &" :
+    def Array1(self):
         """
         :rtype: GeomFill_Array1OfLocationLaw
 
         """
-        return _GeomFill.GeomFill_HArray1OfLocationLaw_Array1(self, *args)
+        return _GeomFill.GeomFill_HArray1OfLocationLaw_Array1(self)
 
-    def ChangeArray1(self, *args) -> "GeomFill_Array1OfLocationLaw &" :
+    def ChangeArray1(self):
         """
         :rtype: GeomFill_Array1OfLocationLaw
 
         """
-        return _GeomFill.GeomFill_HArray1OfLocationLaw_ChangeArray1(self, *args)
+        return _GeomFill.GeomFill_HArray1OfLocationLaw_ChangeArray1(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(GeomFill_HArray1OfLocationLaw self)"""
         return _GeomFill.GeomFill_HArray1OfLocationLaw__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_GeomFill_HArray1OfLocationLaw" :
+    def GetHandle(self):
         """GetHandle(GeomFill_HArray1OfLocationLaw self) -> Handle_GeomFill_HArray1OfLocationLaw"""
         return _GeomFill.GeomFill_HArray1OfLocationLaw_GetHandle(self)
 
@@ -2569,7 +2686,7 @@ Handle_GeomFill_HArray1OfLocationLaw._kill_pointed = new_instancemethod(_GeomFil
 Handle_GeomFill_HArray1OfLocationLaw_swigregister = _GeomFill.Handle_GeomFill_HArray1OfLocationLaw_swigregister
 Handle_GeomFill_HArray1OfLocationLaw_swigregister(Handle_GeomFill_HArray1OfLocationLaw)
 
-def Handle_GeomFill_HArray1OfLocationLaw_DownCast(*args) -> "Handle_GeomFill_HArray1OfLocationLaw const" :
+def Handle_GeomFill_HArray1OfLocationLaw_DownCast(*args):
   return _GeomFill.Handle_GeomFill_HArray1OfLocationLaw_DownCast(*args)
 Handle_GeomFill_HArray1OfLocationLaw_DownCast = _GeomFill.Handle_GeomFill_HArray1OfLocationLaw_DownCast
 
@@ -2579,22 +2696,22 @@ class GeomFill_HArray1OfSectionLaw(OCC.MMgt.MMgt_TShared):
     def __init__(self, *args): 
         """
         :param Low:
-        :type Low: int
+        :type Low: Standard_Integer
         :param Up:
-        :type Up: int
+        :type Up: Standard_Integer
         :rtype: None
 
         :param Low:
-        :type Low: int
+        :type Low: Standard_Integer
         :param Up:
-        :type Up: int
+        :type Up: Standard_Integer
         :param V:
         :type V: Handle_GeomFill_SectionLaw &
         :rtype: None
 
         """
         _GeomFill.GeomFill_HArray1OfSectionLaw_swiginit(self,_GeomFill.new_GeomFill_HArray1OfSectionLaw(*args))
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
         :param V:
         :type V: Handle_GeomFill_SectionLaw &
@@ -2603,31 +2720,31 @@ class GeomFill_HArray1OfSectionLaw(OCC.MMgt.MMgt_TShared):
         """
         return _GeomFill.GeomFill_HArray1OfSectionLaw_Init(self, *args)
 
-    def Length(self, *args) -> "Standard_Integer" :
+    def Length(self):
         """
         :rtype: int
 
         """
-        return _GeomFill.GeomFill_HArray1OfSectionLaw_Length(self, *args)
+        return _GeomFill.GeomFill_HArray1OfSectionLaw_Length(self)
 
-    def Lower(self, *args) -> "Standard_Integer" :
+    def Lower(self):
         """
         :rtype: int
 
         """
-        return _GeomFill.GeomFill_HArray1OfSectionLaw_Lower(self, *args)
+        return _GeomFill.GeomFill_HArray1OfSectionLaw_Lower(self)
 
-    def Upper(self, *args) -> "Standard_Integer" :
+    def Upper(self):
         """
         :rtype: int
 
         """
-        return _GeomFill.GeomFill_HArray1OfSectionLaw_Upper(self, *args)
+        return _GeomFill.GeomFill_HArray1OfSectionLaw_Upper(self)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Value:
         :type Value: Handle_GeomFill_SectionLaw &
         :rtype: None
@@ -2635,43 +2752,43 @@ class GeomFill_HArray1OfSectionLaw(OCC.MMgt.MMgt_TShared):
         """
         return _GeomFill.GeomFill_HArray1OfSectionLaw_SetValue(self, *args)
 
-    def Value(self, *args) -> "Handle_GeomFill_SectionLaw const &" :
+    def Value(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Handle_GeomFill_SectionLaw
 
         """
         return _GeomFill.GeomFill_HArray1OfSectionLaw_Value(self, *args)
 
-    def ChangeValue(self, *args) -> "Handle_GeomFill_SectionLaw &" :
+    def ChangeValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Handle_GeomFill_SectionLaw
 
         """
         return _GeomFill.GeomFill_HArray1OfSectionLaw_ChangeValue(self, *args)
 
-    def Array1(self, *args) -> "GeomFill_Array1OfSectionLaw const &" :
+    def Array1(self):
         """
         :rtype: GeomFill_Array1OfSectionLaw
 
         """
-        return _GeomFill.GeomFill_HArray1OfSectionLaw_Array1(self, *args)
+        return _GeomFill.GeomFill_HArray1OfSectionLaw_Array1(self)
 
-    def ChangeArray1(self, *args) -> "GeomFill_Array1OfSectionLaw &" :
+    def ChangeArray1(self):
         """
         :rtype: GeomFill_Array1OfSectionLaw
 
         """
-        return _GeomFill.GeomFill_HArray1OfSectionLaw_ChangeArray1(self, *args)
+        return _GeomFill.GeomFill_HArray1OfSectionLaw_ChangeArray1(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(GeomFill_HArray1OfSectionLaw self)"""
         return _GeomFill.GeomFill_HArray1OfSectionLaw__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_GeomFill_HArray1OfSectionLaw" :
+    def GetHandle(self):
         """GetHandle(GeomFill_HArray1OfSectionLaw self) -> Handle_GeomFill_HArray1OfSectionLaw"""
         return _GeomFill.GeomFill_HArray1OfSectionLaw_GetHandle(self)
 
@@ -2718,41 +2835,41 @@ Handle_GeomFill_HArray1OfSectionLaw._kill_pointed = new_instancemethod(_GeomFill
 Handle_GeomFill_HArray1OfSectionLaw_swigregister = _GeomFill.Handle_GeomFill_HArray1OfSectionLaw_swigregister
 Handle_GeomFill_HArray1OfSectionLaw_swigregister(Handle_GeomFill_HArray1OfSectionLaw)
 
-def Handle_GeomFill_HArray1OfSectionLaw_DownCast(*args) -> "Handle_GeomFill_HArray1OfSectionLaw const" :
+def Handle_GeomFill_HArray1OfSectionLaw_DownCast(*args):
   return _GeomFill.Handle_GeomFill_HArray1OfSectionLaw_DownCast(*args)
 Handle_GeomFill_HArray1OfSectionLaw_DownCast = _GeomFill.Handle_GeomFill_HArray1OfSectionLaw_DownCast
 
 class GeomFill_HSequenceOfAx2(OCC.MMgt.MMgt_TShared):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _GeomFill.GeomFill_HSequenceOfAx2_swiginit(self,_GeomFill.new_GeomFill_HSequenceOfAx2(*args))
-    def IsEmpty(self, *args) -> "Standard_Boolean" :
+        _GeomFill.GeomFill_HSequenceOfAx2_swiginit(self,_GeomFill.new_GeomFill_HSequenceOfAx2())
+    def IsEmpty(self):
         """
         :rtype: bool
 
         """
-        return _GeomFill.GeomFill_HSequenceOfAx2_IsEmpty(self, *args)
+        return _GeomFill.GeomFill_HSequenceOfAx2_IsEmpty(self)
 
-    def Length(self, *args) -> "Standard_Integer" :
+    def Length(self):
         """
         :rtype: int
 
         """
-        return _GeomFill.GeomFill_HSequenceOfAx2_Length(self, *args)
+        return _GeomFill.GeomFill_HSequenceOfAx2_Length(self)
 
-    def Clear(self, *args) -> "void" :
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _GeomFill.GeomFill_HSequenceOfAx2_Clear(self, *args)
+        return _GeomFill.GeomFill_HSequenceOfAx2_Clear(self)
 
-    def Append(self, *args) -> "void" :
+    def Append(self, *args):
         """
         :param anItem:
         :type anItem: gp_Ax2
@@ -2765,7 +2882,7 @@ class GeomFill_HSequenceOfAx2(OCC.MMgt.MMgt_TShared):
         """
         return _GeomFill.GeomFill_HSequenceOfAx2_Append(self, *args)
 
-    def Prepend(self, *args) -> "void" :
+    def Prepend(self, *args):
         """
         :param anItem:
         :type anItem: gp_Ax2
@@ -2778,23 +2895,23 @@ class GeomFill_HSequenceOfAx2(OCC.MMgt.MMgt_TShared):
         """
         return _GeomFill.GeomFill_HSequenceOfAx2_Prepend(self, *args)
 
-    def Reverse(self, *args) -> "void" :
+    def Reverse(self):
         """
         :rtype: None
 
         """
-        return _GeomFill.GeomFill_HSequenceOfAx2_Reverse(self, *args)
+        return _GeomFill.GeomFill_HSequenceOfAx2_Reverse(self)
 
-    def InsertBefore(self, *args) -> "void" :
+    def InsertBefore(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :param anItem:
         :type anItem: gp_Ax2
         :rtype: None
 
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :param aSequence:
         :type aSequence: Handle_GeomFill_HSequenceOfAx2 &
         :rtype: None
@@ -2802,16 +2919,16 @@ class GeomFill_HSequenceOfAx2(OCC.MMgt.MMgt_TShared):
         """
         return _GeomFill.GeomFill_HSequenceOfAx2_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args) -> "void" :
+    def InsertAfter(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :param anItem:
         :type anItem: gp_Ax2
         :rtype: None
 
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :param aSequence:
         :type aSequence: Handle_GeomFill_HSequenceOfAx2 &
         :rtype: None
@@ -2819,30 +2936,30 @@ class GeomFill_HSequenceOfAx2(OCC.MMgt.MMgt_TShared):
         """
         return _GeomFill.GeomFill_HSequenceOfAx2_InsertAfter(self, *args)
 
-    def Exchange(self, *args) -> "void" :
+    def Exchange(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :param anOtherIndex:
-        :type anOtherIndex: int
+        :type anOtherIndex: Standard_Integer
         :rtype: None
 
         """
         return _GeomFill.GeomFill_HSequenceOfAx2_Exchange(self, *args)
 
-    def Split(self, *args) -> "Handle_GeomFill_HSequenceOfAx2" :
+    def Split(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :rtype: Handle_GeomFill_HSequenceOfAx2
 
         """
         return _GeomFill.GeomFill_HSequenceOfAx2_Split(self, *args)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :param anItem:
         :type anItem: gp_Ax2
         :rtype: None
@@ -2850,65 +2967,65 @@ class GeomFill_HSequenceOfAx2(OCC.MMgt.MMgt_TShared):
         """
         return _GeomFill.GeomFill_HSequenceOfAx2_SetValue(self, *args)
 
-    def Value(self, *args) -> "gp_Ax2 const" :
+    def Value(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :rtype: gp_Ax2
 
         """
         return _GeomFill.GeomFill_HSequenceOfAx2_Value(self, *args)
 
-    def ChangeValue(self, *args) -> "gp_Ax2" :
+    def ChangeValue(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :rtype: gp_Ax2
 
         """
         return _GeomFill.GeomFill_HSequenceOfAx2_ChangeValue(self, *args)
 
-    def Remove(self, *args) -> "void" :
+    def Remove(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :rtype: None
 
         :param fromIndex:
-        :type fromIndex: int
+        :type fromIndex: Standard_Integer
         :param toIndex:
-        :type toIndex: int
+        :type toIndex: Standard_Integer
         :rtype: None
 
         """
         return _GeomFill.GeomFill_HSequenceOfAx2_Remove(self, *args)
 
-    def Sequence(self, *args) -> "GeomFill_SequenceOfAx2 const &" :
+    def Sequence(self):
         """
         :rtype: GeomFill_SequenceOfAx2
 
         """
-        return _GeomFill.GeomFill_HSequenceOfAx2_Sequence(self, *args)
+        return _GeomFill.GeomFill_HSequenceOfAx2_Sequence(self)
 
-    def ChangeSequence(self, *args) -> "GeomFill_SequenceOfAx2 &" :
+    def ChangeSequence(self):
         """
         :rtype: GeomFill_SequenceOfAx2
 
         """
-        return _GeomFill.GeomFill_HSequenceOfAx2_ChangeSequence(self, *args)
+        return _GeomFill.GeomFill_HSequenceOfAx2_ChangeSequence(self)
 
-    def ShallowCopy(self, *args) -> "Handle_GeomFill_HSequenceOfAx2" :
+    def ShallowCopy(self):
         """
         :rtype: Handle_GeomFill_HSequenceOfAx2
 
         """
-        return _GeomFill.GeomFill_HSequenceOfAx2_ShallowCopy(self, *args)
+        return _GeomFill.GeomFill_HSequenceOfAx2_ShallowCopy(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(GeomFill_HSequenceOfAx2 self)"""
         return _GeomFill.GeomFill_HSequenceOfAx2__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_GeomFill_HSequenceOfAx2" :
+    def GetHandle(self):
         """GetHandle(GeomFill_HSequenceOfAx2 self) -> Handle_GeomFill_HSequenceOfAx2"""
         return _GeomFill.GeomFill_HSequenceOfAx2_GetHandle(self)
 
@@ -2963,7 +3080,7 @@ Handle_GeomFill_HSequenceOfAx2._kill_pointed = new_instancemethod(_GeomFill.Hand
 Handle_GeomFill_HSequenceOfAx2_swigregister = _GeomFill.Handle_GeomFill_HSequenceOfAx2_swigregister
 Handle_GeomFill_HSequenceOfAx2_swigregister(Handle_GeomFill_HSequenceOfAx2)
 
-def Handle_GeomFill_HSequenceOfAx2_DownCast(*args) -> "Handle_GeomFill_HSequenceOfAx2 const" :
+def Handle_GeomFill_HSequenceOfAx2_DownCast(*args):
   return _GeomFill.Handle_GeomFill_HSequenceOfAx2_DownCast(*args)
 Handle_GeomFill_HSequenceOfAx2_DownCast = _GeomFill.Handle_GeomFill_HSequenceOfAx2_DownCast
 
@@ -2975,32 +3092,32 @@ class GeomFill_Line(OCC.MMgt.MMgt_TShared):
         :rtype: None
 
         :param NbPoints:
-        :type NbPoints: int
+        :type NbPoints: Standard_Integer
         :rtype: None
 
         """
         _GeomFill.GeomFill_Line_swiginit(self,_GeomFill.new_GeomFill_Line(*args))
-    def NbPoints(self, *args) -> "Standard_Integer" :
+    def NbPoints(self):
         """
         :rtype: int
 
         """
-        return _GeomFill.GeomFill_Line_NbPoints(self, *args)
+        return _GeomFill.GeomFill_Line_NbPoints(self)
 
-    def Point(self, *args) -> "Standard_Integer" :
+    def Point(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: int
 
         """
         return _GeomFill.GeomFill_Line_Point(self, *args)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(GeomFill_Line self)"""
         return _GeomFill.GeomFill_Line__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_GeomFill_Line" :
+    def GetHandle(self):
         """GetHandle(GeomFill_Line self) -> Handle_GeomFill_Line"""
         return _GeomFill.GeomFill_Line_GetHandle(self)
 
@@ -3040,7 +3157,7 @@ Handle_GeomFill_Line._kill_pointed = new_instancemethod(_GeomFill.Handle_GeomFil
 Handle_GeomFill_Line_swigregister = _GeomFill.Handle_GeomFill_Line_swigregister
 Handle_GeomFill_Line_swigregister(Handle_GeomFill_Line)
 
-def Handle_GeomFill_Line_DownCast(*args) -> "Handle_GeomFill_Line const" :
+def Handle_GeomFill_Line_DownCast(*args):
   return _GeomFill.Handle_GeomFill_Line_DownCast(*args)
 Handle_GeomFill_Line_DownCast = _GeomFill.Handle_GeomFill_Line_DownCast
 
@@ -3055,7 +3172,7 @@ class GeomFill_LocFunction(object):
 
         """
         _GeomFill.GeomFill_LocFunction_swiginit(self,_GeomFill.new_GeomFill_LocFunction(*args))
-    def D0(self, *args) -> "Standard_Boolean" :
+    def D0(self, *args):
         """
         * compute the section for v = param
 
@@ -3070,7 +3187,7 @@ class GeomFill_LocFunction(object):
         """
         return _GeomFill.GeomFill_LocFunction_D0(self, *args)
 
-    def D1(self, *args) -> "Standard_Boolean" :
+    def D1(self, *args):
         """
         * compute the first derivative in v direction of the section for v = param
 
@@ -3085,7 +3202,7 @@ class GeomFill_LocFunction(object):
         """
         return _GeomFill.GeomFill_LocFunction_D1(self, *args)
 
-    def D2(self, *args) -> "Standard_Boolean" :
+    def D2(self, *args):
         """
         * compute the second derivative in v direction of the section for v = param
 
@@ -3100,7 +3217,7 @@ class GeomFill_LocFunction(object):
         """
         return _GeomFill.GeomFill_LocFunction_D2(self, *args)
 
-    def DN(self, *args) -> "void" :
+    def DN(self, *args):
         """
         :param Param:
         :type Param: float
@@ -3109,11 +3226,11 @@ class GeomFill_LocFunction(object):
         :param Last:
         :type Last: float
         :param Order:
-        :type Order: int
+        :type Order: Standard_Integer
         :param Result:
         :type Result: float &
         :param Ier:
-        :type Ier: int &
+        :type Ier: Standard_Integer &
         :rtype: None
 
         """
@@ -3139,7 +3256,7 @@ class GeomFill_LocationLaw(OCC.MMgt.MMgt_TShared):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def SetCurve(self, *args) -> "void" :
+    def SetCurve(self, *args):
         """
         :param C:
         :type C: Handle_Adaptor3d_HCurve &
@@ -3148,14 +3265,14 @@ class GeomFill_LocationLaw(OCC.MMgt.MMgt_TShared):
         """
         return _GeomFill.GeomFill_LocationLaw_SetCurve(self, *args)
 
-    def GetCurve(self, *args) -> "Handle_Adaptor3d_HCurve const &" :
+    def GetCurve(self):
         """
         :rtype: Handle_Adaptor3d_HCurve
 
         """
-        return _GeomFill.GeomFill_LocationLaw_GetCurve(self, *args)
+        return _GeomFill.GeomFill_LocationLaw_GetCurve(self)
 
-    def SetTrsf(self, *args) -> "void" :
+    def SetTrsf(self, *args):
         """
         * Set a transformation Matrix like the law M(t) become Mat * M(t)
 
@@ -3166,14 +3283,14 @@ class GeomFill_LocationLaw(OCC.MMgt.MMgt_TShared):
         """
         return _GeomFill.GeomFill_LocationLaw_SetTrsf(self, *args)
 
-    def Copy(self, *args) -> "Handle_GeomFill_LocationLaw" :
+    def Copy(self):
         """
         :rtype: Handle_GeomFill_LocationLaw
 
         """
-        return _GeomFill.GeomFill_LocationLaw_Copy(self, *args)
+        return _GeomFill.GeomFill_LocationLaw_Copy(self)
 
-    def D0(self, *args) -> "Standard_Boolean" :
+    def D0(self, *args):
         """
         * compute Location
 
@@ -3200,7 +3317,7 @@ class GeomFill_LocationLaw(OCC.MMgt.MMgt_TShared):
         """
         return _GeomFill.GeomFill_LocationLaw_D0(self, *args)
 
-    def D1(self, *args) -> "Standard_Boolean" :
+    def D1(self, *args):
         """
         * compute location 2d points and associated first derivatives. Warning : It used only for C1 or C2 aproximation
 
@@ -3223,7 +3340,7 @@ class GeomFill_LocationLaw(OCC.MMgt.MMgt_TShared):
         """
         return _GeomFill.GeomFill_LocationLaw_D1(self, *args)
 
-    def D2(self, *args) -> "Standard_Boolean" :
+    def D2(self, *args):
         """
         * compute location 2d points and associated first and seconde derivatives. Warning : It used only for C2 aproximation
 
@@ -3252,52 +3369,52 @@ class GeomFill_LocationLaw(OCC.MMgt.MMgt_TShared):
         """
         return _GeomFill.GeomFill_LocationLaw_D2(self, *args)
 
-    def Nb2dCurves(self, *args) -> "Standard_Integer" :
+    def Nb2dCurves(self):
         """
         * get the number of 2d curves (Restrictions + Traces)  to approximate.
 
         :rtype: int
 
         """
-        return _GeomFill.GeomFill_LocationLaw_Nb2dCurves(self, *args)
+        return _GeomFill.GeomFill_LocationLaw_Nb2dCurves(self)
 
-    def HasFirstRestriction(self, *args) -> "Standard_Boolean" :
+    def HasFirstRestriction(self):
         """
         * Say if the first restriction is defined in this class. If it is true the first element of poles array in D0,D1,D2... Correspond to this restriction. Returns Standard_False (default implementation)
 
         :rtype: bool
 
         """
-        return _GeomFill.GeomFill_LocationLaw_HasFirstRestriction(self, *args)
+        return _GeomFill.GeomFill_LocationLaw_HasFirstRestriction(self)
 
-    def HasLastRestriction(self, *args) -> "Standard_Boolean" :
+    def HasLastRestriction(self):
         """
         * Say if the last restriction is defined in this class. If it is true the last element of poles array in D0,D1,D2... Correspond to this restriction. Returns Standard_False (default implementation)
 
         :rtype: bool
 
         """
-        return _GeomFill.GeomFill_LocationLaw_HasLastRestriction(self, *args)
+        return _GeomFill.GeomFill_LocationLaw_HasLastRestriction(self)
 
-    def TraceNumber(self, *args) -> "Standard_Integer" :
+    def TraceNumber(self):
         """
         * Give the number of trace (Curves 2d wich are not restriction) Returns 0 (default implementation)
 
         :rtype: int
 
         """
-        return _GeomFill.GeomFill_LocationLaw_TraceNumber(self, *args)
+        return _GeomFill.GeomFill_LocationLaw_TraceNumber(self)
 
-    def ErrorStatus(self, *args) -> "GeomFill_PipeError" :
+    def ErrorStatus(self):
         """
         * //!Give a status to the Law Returns PipeOk (default implementation)
 
         :rtype: GeomFill_PipeError
 
         """
-        return _GeomFill.GeomFill_LocationLaw_ErrorStatus(self, *args)
+        return _GeomFill.GeomFill_LocationLaw_ErrorStatus(self)
 
-    def NbIntervals(self, *args) -> "Standard_Integer" :
+    def NbIntervals(self, *args):
         """
         * Returns the number of intervals for continuity <S>. May be one if Continuity(me) >= <S>
 
@@ -3308,7 +3425,7 @@ class GeomFill_LocationLaw(OCC.MMgt.MMgt_TShared):
         """
         return _GeomFill.GeomFill_LocationLaw_NbIntervals(self, *args)
 
-    def Intervals(self, *args) -> "void" :
+    def Intervals(self, *args):
         """
         * Stores in <T> the parameters bounding the intervals of continuity <S>.  The array must provide enough room to accomodate for the parameters. i.e. T.Length() > NbIntervals()
 
@@ -3321,7 +3438,7 @@ class GeomFill_LocationLaw(OCC.MMgt.MMgt_TShared):
         """
         return _GeomFill.GeomFill_LocationLaw_Intervals(self, *args)
 
-    def SetInterval(self, *args) -> "void" :
+    def SetInterval(self, *args):
         """
         * Sets the bounds of the parametric interval on the function This determines the derivatives in these values if the function is not Cn.
 
@@ -3334,7 +3451,7 @@ class GeomFill_LocationLaw(OCC.MMgt.MMgt_TShared):
         """
         return _GeomFill.GeomFill_LocationLaw_SetInterval(self, *args)
 
-    def GetInterval(self, *args) -> "void" :
+    def GetInterval(self):
         """
         * Gets the bounds of the parametric interval on the function
 
@@ -3345,9 +3462,9 @@ class GeomFill_LocationLaw(OCC.MMgt.MMgt_TShared):
         :rtype: void
 
         """
-        return _GeomFill.GeomFill_LocationLaw_GetInterval(self, *args)
+        return _GeomFill.GeomFill_LocationLaw_GetInterval(self)
 
-    def GetDomain(self, *args) -> "void" :
+    def GetDomain(self):
         """
         * Gets the bounds of the function parametric domain. Warning: This domain it is not modified by the SetValue method
 
@@ -3358,14 +3475,14 @@ class GeomFill_LocationLaw(OCC.MMgt.MMgt_TShared):
         :rtype: void
 
         """
-        return _GeomFill.GeomFill_LocationLaw_GetDomain(self, *args)
+        return _GeomFill.GeomFill_LocationLaw_GetDomain(self)
 
-    def Resolution(self, *args) -> "void" :
+    def Resolution(self, *args):
         """
         * Returns the resolutions in the sub-space 2d <Index> This information is usfull to find an good tolerance in 2d approximation.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Tol:
         :type Tol: float
         :param TolU:
@@ -3377,7 +3494,7 @@ class GeomFill_LocationLaw(OCC.MMgt.MMgt_TShared):
         """
         return _GeomFill.GeomFill_LocationLaw_Resolution(self, *args)
 
-    def SetTolerance(self, *args) -> "void" :
+    def SetTolerance(self, *args):
         """
         * Is usefull, if (me) have to run numerical algorithm to perform D0, D1 or D2 The default implementation make nothing.
 
@@ -3390,16 +3507,16 @@ class GeomFill_LocationLaw(OCC.MMgt.MMgt_TShared):
         """
         return _GeomFill.GeomFill_LocationLaw_SetTolerance(self, *args)
 
-    def GetMaximalNorm(self, *args) -> "Standard_Real" :
+    def GetMaximalNorm(self):
         """
         * Get the maximum Norm of the matrix-location part. It is usful to find an good Tolerance to approx M(t).
 
         :rtype: float
 
         """
-        return _GeomFill.GeomFill_LocationLaw_GetMaximalNorm(self, *args)
+        return _GeomFill.GeomFill_LocationLaw_GetMaximalNorm(self)
 
-    def GetAverageLaw(self, *args) -> "void" :
+    def GetAverageLaw(self, *args):
         """
         * Get average value of M(t) and V(t) it is usfull to make fast approximation of rational surfaces.
 
@@ -3412,7 +3529,7 @@ class GeomFill_LocationLaw(OCC.MMgt.MMgt_TShared):
         """
         return _GeomFill.GeomFill_LocationLaw_GetAverageLaw(self, *args)
 
-    def IsTranslation(self, *args) -> "Standard_Boolean" :
+    def IsTranslation(self):
         """
         * Say if the Location Law, is an translation of Location The default implementation is ' returns False '.
 
@@ -3421,9 +3538,9 @@ class GeomFill_LocationLaw(OCC.MMgt.MMgt_TShared):
         :rtype: bool
 
         """
-        return _GeomFill.GeomFill_LocationLaw_IsTranslation(self, *args)
+        return _GeomFill.GeomFill_LocationLaw_IsTranslation(self)
 
-    def IsRotation(self, *args) -> "Standard_Boolean" :
+    def IsRotation(self):
         """
         * Say if the Location Law, is a rotation of Location The default implementation is ' returns False '.
 
@@ -3432,9 +3549,9 @@ class GeomFill_LocationLaw(OCC.MMgt.MMgt_TShared):
         :rtype: bool
 
         """
-        return _GeomFill.GeomFill_LocationLaw_IsRotation(self, *args)
+        return _GeomFill.GeomFill_LocationLaw_IsRotation(self)
 
-    def Rotation(self, *args) -> "void" :
+    def Rotation(self, *args):
         """
         :param Center:
         :type Center: gp_Pnt
@@ -3443,11 +3560,11 @@ class GeomFill_LocationLaw(OCC.MMgt.MMgt_TShared):
         """
         return _GeomFill.GeomFill_LocationLaw_Rotation(self, *args)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(GeomFill_LocationLaw self)"""
         return _GeomFill.GeomFill_LocationLaw__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_GeomFill_LocationLaw" :
+    def GetHandle(self):
         """GetHandle(GeomFill_LocationLaw self) -> Handle_GeomFill_LocationLaw"""
         return _GeomFill.GeomFill_LocationLaw_GetHandle(self)
 
@@ -3509,7 +3626,7 @@ Handle_GeomFill_LocationLaw._kill_pointed = new_instancemethod(_GeomFill.Handle_
 Handle_GeomFill_LocationLaw_swigregister = _GeomFill.Handle_GeomFill_LocationLaw_swigregister
 Handle_GeomFill_LocationLaw_swigregister(Handle_GeomFill_LocationLaw)
 
-def Handle_GeomFill_LocationLaw_DownCast(*args) -> "Handle_GeomFill_LocationLaw const" :
+def Handle_GeomFill_LocationLaw_DownCast(*args):
   return _GeomFill.Handle_GeomFill_LocationLaw_DownCast(*args)
 Handle_GeomFill_LocationLaw_DownCast = _GeomFill.Handle_GeomFill_LocationLaw_DownCast
 
@@ -3526,6 +3643,16 @@ class GeomFill_Pipe(object):
         :type Path: Handle_Geom_Curve &
         :param Radius:
         :type Radius: float
+        :rtype: None
+
+        * Create a pipe with a constant section (<FirstSection>) and a path (<Path>) Option can be - GeomFill_IsCorrectedFrenet - GeomFill_IsFrenet - GeomFill_IsConstant
+
+        :param Path:
+        :type Path: Handle_Geom_Curve &
+        :param FirstSect:
+        :type FirstSect: Handle_Geom_Curve &
+        :param Option: default value is GeomFill_IsCorrectedFrenet
+        :type Option: GeomFill_Trihedron
         :rtype: None
 
         * Create a pipe with a constant section (<FirstSection>) and a path (<Path>) Option can be - GeomFill_IsCorrectedFrenet - GeomFill_IsFrenet - GeomFill_IsConstant
@@ -3616,12 +3743,20 @@ class GeomFill_Pipe(object):
 
         """
         _GeomFill.GeomFill_Pipe_swiginit(self,_GeomFill.new_GeomFill_Pipe(*args))
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
         :param Path:
         :type Path: Handle_Geom_Curve &
         :param Radius:
         :type Radius: float
+        :rtype: None
+
+        :param Path:
+        :type Path: Handle_Geom_Curve &
+        :param FirstSect:
+        :type FirstSect: Handle_Geom_Curve &
+        :param Option: default value is GeomFill_IsCorrectedFrenet
+        :type Option: GeomFill_Trihedron
         :rtype: None
 
         :param Path:
@@ -3691,8 +3826,24 @@ class GeomFill_Pipe(object):
         """
         return _GeomFill.GeomFill_Pipe_Init(self, *args)
 
-    def Perform(self, *args) -> "void" :
+    def Perform(self, *args):
         """
+        * Builds the pipe defined at the time of initialization of this algorithm. A description of the resulting surface is given under Constructors. If WithParameters (defaulted to false) is set to true, the approximation algorithm (used only in the general case of construction of a BSpline surface) builds the surface with a u parameter corresponding to the one of the path. Exceptions Standard_ConstructionError if a surface cannot be constructed from the data. Warning: It is the old Perform method, the next methode is recommended.
+
+        :param WithParameters: default value is Standard_False
+        :type WithParameters: bool
+        :param myPolynomial: default value is Standard_False
+        :type myPolynomial: bool
+        :rtype: None
+
+        * Builds the pipe defined at the time of initialization of this algorithm. A description of the resulting surface is given under Constructors. If WithParameters (defaulted to false) is set to true, the approximation algorithm (used only in the general case of construction of a BSpline surface) builds the surface with a u parameter corresponding to the one of the path. Exceptions Standard_ConstructionError if a surface cannot be constructed from the data. Warning: It is the old Perform method, the next methode is recommended.
+
+        :param WithParameters: default value is Standard_False
+        :type WithParameters: bool
+        :param myPolynomial: default value is Standard_False
+        :type myPolynomial: bool
+        :rtype: None
+
         * Builds the pipe defined at the time of initialization of this algorithm. A description of the resulting surface is given under Constructors. If WithParameters (defaulted to false) is set to true, the approximation algorithm (used only in the general case of construction of a BSpline surface) builds the surface with a u parameter corresponding to the one of the path. Exceptions Standard_ConstructionError if a surface cannot be constructed from the data. Warning: It is the old Perform method, the next methode is recommended.
 
         :param WithParameters: default value is Standard_False
@@ -3710,33 +3861,75 @@ class GeomFill_Pipe(object):
         :param Conti: default value is GeomAbs_C1
         :type Conti: GeomAbs_Shape
         :param MaxDegree: default value is 11
-        :type MaxDegree: int
+        :type MaxDegree: Standard_Integer
         :param NbMaxSegment: default value is 30
-        :type NbMaxSegment: int
+        :type NbMaxSegment: Standard_Integer
+        :rtype: None
+
+        * detects the particular cases. And compute the surface. if none particular case is detected we make an approximation with respect of the Tolerance <Tol>, the continuty <Conti>, the maximum degree <MaxDegree>, the maximum number of span <NbMaxSegment> and the spine parametrization. If we can't create a surface with the data
+
+        :param Tol:
+        :type Tol: float
+        :param Polynomial:
+        :type Polynomial: bool
+        :param Conti: default value is GeomAbs_C1
+        :type Conti: GeomAbs_Shape
+        :param MaxDegree: default value is 11
+        :type MaxDegree: Standard_Integer
+        :param NbMaxSegment: default value is 30
+        :type NbMaxSegment: Standard_Integer
+        :rtype: None
+
+        * detects the particular cases. And compute the surface. if none particular case is detected we make an approximation with respect of the Tolerance <Tol>, the continuty <Conti>, the maximum degree <MaxDegree>, the maximum number of span <NbMaxSegment> and the spine parametrization. If we can't create a surface with the data
+
+        :param Tol:
+        :type Tol: float
+        :param Polynomial:
+        :type Polynomial: bool
+        :param Conti: default value is GeomAbs_C1
+        :type Conti: GeomAbs_Shape
+        :param MaxDegree: default value is 11
+        :type MaxDegree: Standard_Integer
+        :param NbMaxSegment: default value is 30
+        :type NbMaxSegment: Standard_Integer
+        :rtype: None
+
+        * detects the particular cases. And compute the surface. if none particular case is detected we make an approximation with respect of the Tolerance <Tol>, the continuty <Conti>, the maximum degree <MaxDegree>, the maximum number of span <NbMaxSegment> and the spine parametrization. If we can't create a surface with the data
+
+        :param Tol:
+        :type Tol: float
+        :param Polynomial:
+        :type Polynomial: bool
+        :param Conti: default value is GeomAbs_C1
+        :type Conti: GeomAbs_Shape
+        :param MaxDegree: default value is 11
+        :type MaxDegree: Standard_Integer
+        :param NbMaxSegment: default value is 30
+        :type NbMaxSegment: Standard_Integer
         :rtype: None
 
         """
         return _GeomFill.GeomFill_Pipe_Perform(self, *args)
 
-    def Surface(self, *args) -> "Handle_Geom_Surface const &" :
+    def Surface(self):
         """
         * Returns the surface built by this algorithm. Warning Do not use this function before the surface is built (in this case the function will return a null handle).
 
         :rtype: Handle_Geom_Surface
 
         """
-        return _GeomFill.GeomFill_Pipe_Surface(self, *args)
+        return _GeomFill.GeomFill_Pipe_Surface(self)
 
-    def ExchangeUV(self, *args) -> "Standard_Boolean" :
+    def ExchangeUV(self):
         """
         * The u parametric direction of the surface constructed by this algorithm usually corresponds to the evolution along the path and the v parametric direction corresponds to the evolution along the section(s). However, this rule is not respected when constructing certain specific Geom surfaces (typically cylindrical surfaces, surfaces of revolution, etc.) for which the parameterization is inversed. The ExchangeUV function checks for this, and returns true in all these specific cases. Warning Do not use this function before the surface is built.
 
         :rtype: bool
 
         """
-        return _GeomFill.GeomFill_Pipe_ExchangeUV(self, *args)
+        return _GeomFill.GeomFill_Pipe_ExchangeUV(self)
 
-    def GenerateParticularCase(self, *args) -> "Standard_Boolean" :
+    def GenerateParticularCase(self, *args):
         """
         * Sets a flag to try to create as many planes, cylinder,... as possible. Default value is <Standard_False>.
 
@@ -3751,14 +3944,14 @@ class GeomFill_Pipe(object):
         """
         return _GeomFill.GeomFill_Pipe_GenerateParticularCase(self, *args)
 
-    def ErrorOnSurf(self, *args) -> "Standard_Real" :
+    def ErrorOnSurf(self):
         """
         * Returns the approximation's error. if the Surface is plane, cylinder ... this error can be 0.
 
         :rtype: float
 
         """
-        return _GeomFill.GeomFill_Pipe_ErrorOnSurf(self, *args)
+        return _GeomFill.GeomFill_Pipe_ErrorOnSurf(self)
 
     def __del__(self):
     	try:
@@ -3793,7 +3986,7 @@ class GeomFill_PlanFunc(object):
 
         """
         _GeomFill.GeomFill_PlanFunc_swiginit(self,_GeomFill.new_GeomFill_PlanFunc(*args))
-    def Value(self, *args) -> "Standard_Boolean" :
+    def Value(self, *args):
         """
         * computes the value <F>of the function for the variable <X>. Returns True if the calculation were successfully done, False otherwise.
 
@@ -3806,7 +3999,7 @@ class GeomFill_PlanFunc(object):
         """
         return _GeomFill.GeomFill_PlanFunc_Value(self, *args)
 
-    def Derivative(self, *args) -> "Standard_Boolean" :
+    def Derivative(self, *args):
         """
         * computes the derivative <D> of the function for the variable <X>. Returns True if the calculation were successfully done, False otherwise.
 
@@ -3819,7 +4012,7 @@ class GeomFill_PlanFunc(object):
         """
         return _GeomFill.GeomFill_PlanFunc_Derivative(self, *args)
 
-    def Values(self, *args) -> "Standard_Boolean" :
+    def Values(self, *args):
         """
         * computes the value <F> and the derivative <D> of the function for the variable <X>. Returns True if the calculation were successfully done, False otherwise.
 
@@ -3834,7 +4027,7 @@ class GeomFill_PlanFunc(object):
         """
         return _GeomFill.GeomFill_PlanFunc_Values(self, *args)
 
-    def D2(self, *args) -> "void" :
+    def D2(self, *args):
         """
         :param X:
         :type X: float
@@ -3849,7 +4042,7 @@ class GeomFill_PlanFunc(object):
         """
         return _GeomFill.GeomFill_PlanFunc_D2(self, *args)
 
-    def DEDT(self, *args) -> "void" :
+    def DEDT(self, *args):
         """
         :param X:
         :type X: float
@@ -3864,7 +4057,7 @@ class GeomFill_PlanFunc(object):
         """
         return _GeomFill.GeomFill_PlanFunc_DEDT(self, *args)
 
-    def D2E(self, *args) -> "void" :
+    def D2E(self, *args):
         """
         :param X:
         :type X: float
@@ -3908,29 +4101,29 @@ GeomFill_PlanFunc_swigregister(GeomFill_PlanFunc)
 class GeomFill_PolynomialConvertor(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _GeomFill.GeomFill_PolynomialConvertor_swiginit(self,_GeomFill.new_GeomFill_PolynomialConvertor(*args))
-    def Initialized(self, *args) -> "Standard_Boolean" :
+        _GeomFill.GeomFill_PolynomialConvertor_swiginit(self,_GeomFill.new_GeomFill_PolynomialConvertor())
+    def Initialized(self):
         """
         * say if <self> is Initialized
 
         :rtype: bool
 
         """
-        return _GeomFill.GeomFill_PolynomialConvertor_Initialized(self, *args)
+        return _GeomFill.GeomFill_PolynomialConvertor_Initialized(self)
 
-    def Init(self, *args) -> "void" :
+    def Init(self):
         """
         :rtype: None
 
         """
-        return _GeomFill.GeomFill_PolynomialConvertor_Init(self, *args)
+        return _GeomFill.GeomFill_PolynomialConvertor_Init(self)
 
-    def Section(self, *args) -> "void" :
+    def Section(self, *args):
         """
         :param FirstPnt:
         :type FirstPnt: gp_Pnt
@@ -4019,20 +4212,20 @@ GeomFill_PolynomialConvertor_swigregister(GeomFill_PolynomialConvertor)
 class GeomFill_Profiler(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _GeomFill.GeomFill_Profiler_swiginit(self,_GeomFill.new_GeomFill_Profiler(*args))
-    def Delete(self, *args) -> "void" :
+        _GeomFill.GeomFill_Profiler_swiginit(self,_GeomFill.new_GeomFill_Profiler())
+    def Delete(self):
         """
         :rtype: void
 
         """
-        return _GeomFill.GeomFill_Profiler_Delete(self, *args)
+        return _GeomFill.GeomFill_Profiler_Delete(self)
 
-    def AddCurve(self, *args) -> "void" :
+    def AddCurve(self, *args):
         """
         :param Curve:
         :type Curve: Handle_Geom_Curve &
@@ -4041,7 +4234,7 @@ class GeomFill_Profiler(object):
         """
         return _GeomFill.GeomFill_Profiler_AddCurve(self, *args)
 
-    def Perform(self, *args) -> "void" :
+    def Perform(self, *args):
         """
         * Converts all curves to BSplineCurves. Set them to the common profile. <PTol> is used to compare 2 knots.
 
@@ -4052,37 +4245,37 @@ class GeomFill_Profiler(object):
         """
         return _GeomFill.GeomFill_Profiler_Perform(self, *args)
 
-    def Degree(self, *args) -> "Standard_Integer" :
+    def Degree(self):
         """
         * Raises if not yet perform
 
         :rtype: int
 
         """
-        return _GeomFill.GeomFill_Profiler_Degree(self, *args)
+        return _GeomFill.GeomFill_Profiler_Degree(self)
 
-    def IsPeriodic(self, *args) -> "Standard_Boolean" :
+    def IsPeriodic(self):
         """
         :rtype: bool
 
         """
-        return _GeomFill.GeomFill_Profiler_IsPeriodic(self, *args)
+        return _GeomFill.GeomFill_Profiler_IsPeriodic(self)
 
-    def NbPoles(self, *args) -> "Standard_Integer" :
+    def NbPoles(self):
         """
         * Raises if not yet perform
 
         :rtype: int
 
         """
-        return _GeomFill.GeomFill_Profiler_NbPoles(self, *args)
+        return _GeomFill.GeomFill_Profiler_NbPoles(self)
 
-    def Poles(self, *args) -> "void" :
+    def Poles(self, *args):
         """
         * returns in <Poles> the poles of the BSplineCurve from index <Index> adjusting to the current profile. Raises if not yet perform Raises if <Index> not in the range [1,NbCurves] if the length of <Poles> is not equal to NbPoles().
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Poles:
         :type Poles: TColgp_Array1OfPnt
         :rtype: None
@@ -4090,12 +4283,12 @@ class GeomFill_Profiler(object):
         """
         return _GeomFill.GeomFill_Profiler_Poles(self, *args)
 
-    def Weights(self, *args) -> "void" :
+    def Weights(self, *args):
         """
         * returns in <Weights> the weights of the BSplineCurve from index <Index> adjusting to the current profile. Raises if not yet perform Raises if <Index> not in the range [1,NbCurves] or if the length of <Weights> is not equal to NbPoles().
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Weights:
         :type Weights: TColStd_Array1OfReal &
         :rtype: None
@@ -4103,16 +4296,16 @@ class GeomFill_Profiler(object):
         """
         return _GeomFill.GeomFill_Profiler_Weights(self, *args)
 
-    def NbKnots(self, *args) -> "Standard_Integer" :
+    def NbKnots(self):
         """
         * Raises if not yet perform
 
         :rtype: int
 
         """
-        return _GeomFill.GeomFill_Profiler_NbKnots(self, *args)
+        return _GeomFill.GeomFill_Profiler_NbKnots(self)
 
-    def KnotsAndMults(self, *args) -> "void" :
+    def KnotsAndMults(self, *args):
         """
         * Raises if not yet perform Raises if the lengthes of <Knots> and <Mults> are not equal to NbKnots().
 
@@ -4125,10 +4318,10 @@ class GeomFill_Profiler(object):
         """
         return _GeomFill.GeomFill_Profiler_KnotsAndMults(self, *args)
 
-    def Curve(self, *args) -> "Handle_Geom_Curve const &" :
+    def Curve(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Handle_Geom_Curve
 
         """
@@ -4160,29 +4353,29 @@ GeomFill_Profiler_swigregister(GeomFill_Profiler)
 class GeomFill_QuasiAngularConvertor(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _GeomFill.GeomFill_QuasiAngularConvertor_swiginit(self,_GeomFill.new_GeomFill_QuasiAngularConvertor(*args))
-    def Initialized(self, *args) -> "Standard_Boolean" :
+        _GeomFill.GeomFill_QuasiAngularConvertor_swiginit(self,_GeomFill.new_GeomFill_QuasiAngularConvertor())
+    def Initialized(self):
         """
         * say if <self> is Initialized
 
         :rtype: bool
 
         """
-        return _GeomFill.GeomFill_QuasiAngularConvertor_Initialized(self, *args)
+        return _GeomFill.GeomFill_QuasiAngularConvertor_Initialized(self)
 
-    def Init(self, *args) -> "void" :
+    def Init(self):
         """
         :rtype: None
 
         """
-        return _GeomFill.GeomFill_QuasiAngularConvertor_Init(self, *args)
+        return _GeomFill.GeomFill_QuasiAngularConvertor_Init(self)
 
-    def Section(self, *args) -> "void" :
+    def Section(self, *args):
         """
         :param FirstPnt:
         :type FirstPnt: gp_Pnt
@@ -4284,7 +4477,7 @@ class GeomFill_SectionLaw(OCC.MMgt.MMgt_TShared):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def D0(self, *args) -> "Standard_Boolean" :
+    def D0(self, *args):
         """
         * compute the section for v = param
 
@@ -4299,7 +4492,7 @@ class GeomFill_SectionLaw(OCC.MMgt.MMgt_TShared):
         """
         return _GeomFill.GeomFill_SectionLaw_D0(self, *args)
 
-    def D1(self, *args) -> "Standard_Boolean" :
+    def D1(self, *args):
         """
         * compute the first derivative in v direction of the section for v = param Warning : It used only for C1 or C2 aproximation
 
@@ -4318,7 +4511,7 @@ class GeomFill_SectionLaw(OCC.MMgt.MMgt_TShared):
         """
         return _GeomFill.GeomFill_SectionLaw_D1(self, *args)
 
-    def D2(self, *args) -> "Standard_Boolean" :
+    def D2(self, *args):
         """
         * compute the second derivative in v direction of the section for v = param Warning : It used only for C2 aproximation
 
@@ -4341,31 +4534,31 @@ class GeomFill_SectionLaw(OCC.MMgt.MMgt_TShared):
         """
         return _GeomFill.GeomFill_SectionLaw_D2(self, *args)
 
-    def BSplineSurface(self, *args) -> "Handle_Geom_BSplineSurface" :
+    def BSplineSurface(self):
         """
         * give if possible an bspline Surface, like iso-v are the section. If it is not possible this methode have to get an Null Surface. It is the default implementation.
 
         :rtype: Handle_Geom_BSplineSurface
 
         """
-        return _GeomFill.GeomFill_SectionLaw_BSplineSurface(self, *args)
+        return _GeomFill.GeomFill_SectionLaw_BSplineSurface(self)
 
-    def SectionShape(self, *args) -> "void" :
+    def SectionShape(self):
         """
         * get the format of an section
 
         :param NbPoles:
-        :type NbPoles: int &
+        :type NbPoles: Standard_Integer &
         :param NbKnots:
-        :type NbKnots: int &
+        :type NbKnots: Standard_Integer &
         :param Degree:
-        :type Degree: int &
+        :type Degree: Standard_Integer &
         :rtype: void
 
         """
-        return _GeomFill.GeomFill_SectionLaw_SectionShape(self, *args)
+        return _GeomFill.GeomFill_SectionLaw_SectionShape(self)
 
-    def Knots(self, *args) -> "void" :
+    def Knots(self, *args):
         """
         * get the Knots of the section
 
@@ -4376,7 +4569,7 @@ class GeomFill_SectionLaw(OCC.MMgt.MMgt_TShared):
         """
         return _GeomFill.GeomFill_SectionLaw_Knots(self, *args)
 
-    def Mults(self, *args) -> "void" :
+    def Mults(self, *args):
         """
         * get the Multplicities of the section
 
@@ -4387,34 +4580,34 @@ class GeomFill_SectionLaw(OCC.MMgt.MMgt_TShared):
         """
         return _GeomFill.GeomFill_SectionLaw_Mults(self, *args)
 
-    def IsRational(self, *args) -> "Standard_Boolean" :
+    def IsRational(self):
         """
         * Returns if the sections are rationnal or not
 
         :rtype: bool
 
         """
-        return _GeomFill.GeomFill_SectionLaw_IsRational(self, *args)
+        return _GeomFill.GeomFill_SectionLaw_IsRational(self)
 
-    def IsUPeriodic(self, *args) -> "Standard_Boolean" :
+    def IsUPeriodic(self):
         """
         * Returns if the sections are periodic or not
 
         :rtype: bool
 
         """
-        return _GeomFill.GeomFill_SectionLaw_IsUPeriodic(self, *args)
+        return _GeomFill.GeomFill_SectionLaw_IsUPeriodic(self)
 
-    def IsVPeriodic(self, *args) -> "Standard_Boolean" :
+    def IsVPeriodic(self):
         """
         * Returns if law is periodic or not
 
         :rtype: bool
 
         """
-        return _GeomFill.GeomFill_SectionLaw_IsVPeriodic(self, *args)
+        return _GeomFill.GeomFill_SectionLaw_IsVPeriodic(self)
 
-    def NbIntervals(self, *args) -> "Standard_Integer" :
+    def NbIntervals(self, *args):
         """
         * Returns the number of intervals for continuity <S>. May be one if Continuity(me) >= <S>
 
@@ -4425,7 +4618,7 @@ class GeomFill_SectionLaw(OCC.MMgt.MMgt_TShared):
         """
         return _GeomFill.GeomFill_SectionLaw_NbIntervals(self, *args)
 
-    def Intervals(self, *args) -> "void" :
+    def Intervals(self, *args):
         """
         * Stores in <T> the parameters bounding the intervals of continuity <S>.  The array must provide enough room to accomodate for the parameters. i.e. T.Length() > NbIntervals()
 
@@ -4438,7 +4631,7 @@ class GeomFill_SectionLaw(OCC.MMgt.MMgt_TShared):
         """
         return _GeomFill.GeomFill_SectionLaw_Intervals(self, *args)
 
-    def SetInterval(self, *args) -> "void" :
+    def SetInterval(self, *args):
         """
         * Sets the bounds of the parametric interval on the function This determines the derivatives in these values if the function is not Cn.
 
@@ -4451,7 +4644,7 @@ class GeomFill_SectionLaw(OCC.MMgt.MMgt_TShared):
         """
         return _GeomFill.GeomFill_SectionLaw_SetInterval(self, *args)
 
-    def GetInterval(self, *args) -> "void" :
+    def GetInterval(self):
         """
         * Gets the bounds of the parametric interval on the function
 
@@ -4462,9 +4655,9 @@ class GeomFill_SectionLaw(OCC.MMgt.MMgt_TShared):
         :rtype: void
 
         """
-        return _GeomFill.GeomFill_SectionLaw_GetInterval(self, *args)
+        return _GeomFill.GeomFill_SectionLaw_GetInterval(self)
 
-    def GetDomain(self, *args) -> "void" :
+    def GetDomain(self):
         """
         * Gets the bounds of the function parametric domain. Warning: This domain it is not modified by the SetValue method
 
@@ -4475,9 +4668,9 @@ class GeomFill_SectionLaw(OCC.MMgt.MMgt_TShared):
         :rtype: void
 
         """
-        return _GeomFill.GeomFill_SectionLaw_GetDomain(self, *args)
+        return _GeomFill.GeomFill_SectionLaw_GetDomain(self)
 
-    def GetTolerance(self, *args) -> "void" :
+    def GetTolerance(self, *args):
         """
         * Returns the tolerances associated at each poles to reach in approximation, to satisfy: BoundTol error at the Boundary AngleTol tangent error at the Boundary (in radian) SurfTol error inside the surface.
 
@@ -4494,7 +4687,7 @@ class GeomFill_SectionLaw(OCC.MMgt.MMgt_TShared):
         """
         return _GeomFill.GeomFill_SectionLaw_GetTolerance(self, *args)
 
-    def SetTolerance(self, *args) -> "void" :
+    def SetTolerance(self, *args):
         """
         * Is usefull, if (me) have to run numerical algorithm to perform D0, D1 or D2 The default implementation make nothing.
 
@@ -4507,25 +4700,25 @@ class GeomFill_SectionLaw(OCC.MMgt.MMgt_TShared):
         """
         return _GeomFill.GeomFill_SectionLaw_SetTolerance(self, *args)
 
-    def BarycentreOfSurf(self, *args) -> "gp_Pnt" :
+    def BarycentreOfSurf(self):
         """
         * Get the barycentre of Surface. An very poor estimation is sufficent. This information is usefull to perform well conditioned rational approximation. Warning: Used only if <self> IsRational
 
         :rtype: gp_Pnt
 
         """
-        return _GeomFill.GeomFill_SectionLaw_BarycentreOfSurf(self, *args)
+        return _GeomFill.GeomFill_SectionLaw_BarycentreOfSurf(self)
 
-    def MaximalSection(self, *args) -> "Standard_Real" :
+    def MaximalSection(self):
         """
         * Returns the length of the greater section. This information is usefull to G1's control. Warning: With an little value, approximation can be slower.
 
         :rtype: float
 
         """
-        return _GeomFill.GeomFill_SectionLaw_MaximalSection(self, *args)
+        return _GeomFill.GeomFill_SectionLaw_MaximalSection(self)
 
-    def GetMinimalWeight(self, *args) -> "void" :
+    def GetMinimalWeight(self, *args):
         """
         * Compute the minimal value of weight for each poles in all sections. This information is usefull to control error in rational approximation. Warning: Used only if <self> IsRational
 
@@ -4536,7 +4729,7 @@ class GeomFill_SectionLaw(OCC.MMgt.MMgt_TShared):
         """
         return _GeomFill.GeomFill_SectionLaw_GetMinimalWeight(self, *args)
 
-    def IsConstant(self, *args) -> "Standard_Boolean" :
+    def IsConstant(self):
         """
         * Say if all sections are equals
 
@@ -4545,18 +4738,18 @@ class GeomFill_SectionLaw(OCC.MMgt.MMgt_TShared):
         :rtype: bool
 
         """
-        return _GeomFill.GeomFill_SectionLaw_IsConstant(self, *args)
+        return _GeomFill.GeomFill_SectionLaw_IsConstant(self)
 
-    def ConstantSection(self, *args) -> "Handle_Geom_Curve" :
+    def ConstantSection(self):
         """
         * Return a copy of the constant Section, if me IsConstant
 
         :rtype: Handle_Geom_Curve
 
         """
-        return _GeomFill.GeomFill_SectionLaw_ConstantSection(self, *args)
+        return _GeomFill.GeomFill_SectionLaw_ConstantSection(self)
 
-    def IsConicalLaw(self, *args) -> "Standard_Boolean" :
+    def IsConicalLaw(self):
         """
         * Returns True if all section are circle, with same plane,same center and linear radius evolution Return False by Default.
 
@@ -4565,9 +4758,9 @@ class GeomFill_SectionLaw(OCC.MMgt.MMgt_TShared):
         :rtype: bool
 
         """
-        return _GeomFill.GeomFill_SectionLaw_IsConicalLaw(self, *args)
+        return _GeomFill.GeomFill_SectionLaw_IsConicalLaw(self)
 
-    def CirclSection(self, *args) -> "Handle_Geom_Curve" :
+    def CirclSection(self, *args):
         """
         * Return the circle section at parameter <Param>, if <self> a IsConicalLaw
 
@@ -4578,11 +4771,11 @@ class GeomFill_SectionLaw(OCC.MMgt.MMgt_TShared):
         """
         return _GeomFill.GeomFill_SectionLaw_CirclSection(self, *args)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(GeomFill_SectionLaw self)"""
         return _GeomFill.GeomFill_SectionLaw__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_GeomFill_SectionLaw" :
+    def GetHandle(self):
         """GetHandle(GeomFill_SectionLaw self) -> Handle_GeomFill_SectionLaw"""
         return _GeomFill.GeomFill_SectionLaw_GetHandle(self)
 
@@ -4644,7 +4837,7 @@ Handle_GeomFill_SectionLaw._kill_pointed = new_instancemethod(_GeomFill.Handle_G
 Handle_GeomFill_SectionLaw_swigregister = _GeomFill.Handle_GeomFill_SectionLaw_swigregister
 Handle_GeomFill_SectionLaw_swigregister(Handle_GeomFill_SectionLaw)
 
-def Handle_GeomFill_SectionLaw_DownCast(*args) -> "Handle_GeomFill_SectionLaw const" :
+def Handle_GeomFill_SectionLaw_DownCast(*args):
   return _GeomFill.Handle_GeomFill_SectionLaw_DownCast(*args)
 Handle_GeomFill_SectionLaw_DownCast = _GeomFill.Handle_GeomFill_SectionLaw_DownCast
 
@@ -4661,7 +4854,7 @@ class GeomFill_SectionPlacement(object):
 
         """
         _GeomFill.GeomFill_SectionPlacement_swiginit(self,_GeomFill.new_GeomFill_SectionPlacement(*args))
-    def SetLocation(self, *args) -> "void" :
+    def SetLocation(self, *args):
         """
         * To change the section Law
 
@@ -4672,7 +4865,7 @@ class GeomFill_SectionPlacement(object):
         """
         return _GeomFill.GeomFill_SectionPlacement_SetLocation(self, *args)
 
-    def Perform(self, *args) -> "void" :
+    def Perform(self, *args):
         """
         :param Tol:
         :type Tol: float
@@ -4693,43 +4886,49 @@ class GeomFill_SectionPlacement(object):
         """
         return _GeomFill.GeomFill_SectionPlacement_Perform(self, *args)
 
-    def IsDone(self, *args) -> "Standard_Boolean" :
+    def IsDone(self):
         """
         :rtype: bool
 
         """
-        return _GeomFill.GeomFill_SectionPlacement_IsDone(self, *args)
+        return _GeomFill.GeomFill_SectionPlacement_IsDone(self)
 
-    def ParameterOnPath(self, *args) -> "Standard_Real" :
+    def ParameterOnPath(self):
         """
         :rtype: float
 
         """
-        return _GeomFill.GeomFill_SectionPlacement_ParameterOnPath(self, *args)
+        return _GeomFill.GeomFill_SectionPlacement_ParameterOnPath(self)
 
-    def ParameterOnSection(self, *args) -> "Standard_Real" :
+    def ParameterOnSection(self):
         """
         :rtype: float
 
         """
-        return _GeomFill.GeomFill_SectionPlacement_ParameterOnSection(self, *args)
+        return _GeomFill.GeomFill_SectionPlacement_ParameterOnSection(self)
 
-    def Distance(self, *args) -> "Standard_Real" :
+    def Distance(self):
         """
         :rtype: float
 
         """
-        return _GeomFill.GeomFill_SectionPlacement_Distance(self, *args)
+        return _GeomFill.GeomFill_SectionPlacement_Distance(self)
 
-    def Angle(self, *args) -> "Standard_Real" :
+    def Angle(self):
         """
         :rtype: float
 
         """
-        return _GeomFill.GeomFill_SectionPlacement_Angle(self, *args)
+        return _GeomFill.GeomFill_SectionPlacement_Angle(self)
 
-    def Transformation(self, *args) -> "gp_Trsf" :
+    def Transformation(self, *args):
         """
+        :param WithTranslation:
+        :type WithTranslation: bool
+        :param WithCorrection: default value is Standard_False
+        :type WithCorrection: bool
+        :rtype: gp_Trsf
+
         :param WithTranslation:
         :type WithTranslation: bool
         :param WithCorrection: default value is Standard_False
@@ -4739,7 +4938,7 @@ class GeomFill_SectionPlacement(object):
         """
         return _GeomFill.GeomFill_SectionPlacement_Transformation(self, *args)
 
-    def Section(self, *args) -> "Handle_Geom_Curve" :
+    def Section(self, *args):
         """
         * Compute the Section, in the coordinate syteme given by the Location Law. If <WithTranslation> contact beetween <Section> and <Path> is forced.
 
@@ -4750,7 +4949,7 @@ class GeomFill_SectionPlacement(object):
         """
         return _GeomFill.GeomFill_SectionPlacement_Section(self, *args)
 
-    def ModifiedSection(self, *args) -> "Handle_Geom_Curve" :
+    def ModifiedSection(self, *args):
         """
         * Compute the Section, in the coordinate syteme given by the Location Law. To have the Normal to section equal to the Location Law Normal. If <WithTranslation> contact beetween <Section> and <Path> is forced.
 
@@ -4798,18 +4997,18 @@ class GeomFill_SequenceNodeOfSequenceOfAx2(OCC.TCollection.TCollection_SeqNode):
 
         """
         _GeomFill.GeomFill_SequenceNodeOfSequenceOfAx2_swiginit(self,_GeomFill.new_GeomFill_SequenceNodeOfSequenceOfAx2(*args))
-    def Value(self, *args) -> "gp_Ax2" :
+    def Value(self):
         """
         :rtype: gp_Ax2
 
         """
-        return _GeomFill.GeomFill_SequenceNodeOfSequenceOfAx2_Value(self, *args)
+        return _GeomFill.GeomFill_SequenceNodeOfSequenceOfAx2_Value(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(GeomFill_SequenceNodeOfSequenceOfAx2 self)"""
         return _GeomFill.GeomFill_SequenceNodeOfSequenceOfAx2__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_GeomFill_SequenceNodeOfSequenceOfAx2" :
+    def GetHandle(self):
         """GetHandle(GeomFill_SequenceNodeOfSequenceOfAx2 self) -> Handle_GeomFill_SequenceNodeOfSequenceOfAx2"""
         return _GeomFill.GeomFill_SequenceNodeOfSequenceOfAx2_GetHandle(self)
 
@@ -4848,7 +5047,7 @@ Handle_GeomFill_SequenceNodeOfSequenceOfAx2._kill_pointed = new_instancemethod(_
 Handle_GeomFill_SequenceNodeOfSequenceOfAx2_swigregister = _GeomFill.Handle_GeomFill_SequenceNodeOfSequenceOfAx2_swigregister
 Handle_GeomFill_SequenceNodeOfSequenceOfAx2_swigregister(Handle_GeomFill_SequenceNodeOfSequenceOfAx2)
 
-def Handle_GeomFill_SequenceNodeOfSequenceOfAx2_DownCast(*args) -> "Handle_GeomFill_SequenceNodeOfSequenceOfAx2 const" :
+def Handle_GeomFill_SequenceNodeOfSequenceOfAx2_DownCast(*args):
   return _GeomFill.Handle_GeomFill_SequenceNodeOfSequenceOfAx2_DownCast(*args)
 Handle_GeomFill_SequenceNodeOfSequenceOfAx2_DownCast = _GeomFill.Handle_GeomFill_SequenceNodeOfSequenceOfAx2_DownCast
 
@@ -4867,18 +5066,18 @@ class GeomFill_SequenceNodeOfSequenceOfTrsf(OCC.TCollection.TCollection_SeqNode)
 
         """
         _GeomFill.GeomFill_SequenceNodeOfSequenceOfTrsf_swiginit(self,_GeomFill.new_GeomFill_SequenceNodeOfSequenceOfTrsf(*args))
-    def Value(self, *args) -> "gp_Trsf" :
+    def Value(self):
         """
         :rtype: gp_Trsf
 
         """
-        return _GeomFill.GeomFill_SequenceNodeOfSequenceOfTrsf_Value(self, *args)
+        return _GeomFill.GeomFill_SequenceNodeOfSequenceOfTrsf_Value(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(GeomFill_SequenceNodeOfSequenceOfTrsf self)"""
         return _GeomFill.GeomFill_SequenceNodeOfSequenceOfTrsf__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_GeomFill_SequenceNodeOfSequenceOfTrsf" :
+    def GetHandle(self):
         """GetHandle(GeomFill_SequenceNodeOfSequenceOfTrsf self) -> Handle_GeomFill_SequenceNodeOfSequenceOfTrsf"""
         return _GeomFill.GeomFill_SequenceNodeOfSequenceOfTrsf_GetHandle(self)
 
@@ -4917,27 +5116,27 @@ Handle_GeomFill_SequenceNodeOfSequenceOfTrsf._kill_pointed = new_instancemethod(
 Handle_GeomFill_SequenceNodeOfSequenceOfTrsf_swigregister = _GeomFill.Handle_GeomFill_SequenceNodeOfSequenceOfTrsf_swigregister
 Handle_GeomFill_SequenceNodeOfSequenceOfTrsf_swigregister(Handle_GeomFill_SequenceNodeOfSequenceOfTrsf)
 
-def Handle_GeomFill_SequenceNodeOfSequenceOfTrsf_DownCast(*args) -> "Handle_GeomFill_SequenceNodeOfSequenceOfTrsf const" :
+def Handle_GeomFill_SequenceNodeOfSequenceOfTrsf_DownCast(*args):
   return _GeomFill.Handle_GeomFill_SequenceNodeOfSequenceOfTrsf_DownCast(*args)
 Handle_GeomFill_SequenceNodeOfSequenceOfTrsf_DownCast = _GeomFill.Handle_GeomFill_SequenceNodeOfSequenceOfTrsf_DownCast
 
 class GeomFill_SequenceOfAx2(OCC.TCollection.TCollection_BaseSequence):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _GeomFill.GeomFill_SequenceOfAx2_swiginit(self,_GeomFill.new_GeomFill_SequenceOfAx2(*args))
-    def Clear(self, *args) -> "void" :
+        _GeomFill.GeomFill_SequenceOfAx2_swiginit(self,_GeomFill.new_GeomFill_SequenceOfAx2())
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _GeomFill.GeomFill_SequenceOfAx2_Clear(self, *args)
+        return _GeomFill.GeomFill_SequenceOfAx2_Clear(self)
 
-    def Assign(self, *args) -> "GeomFill_SequenceOfAx2 const &" :
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: GeomFill_SequenceOfAx2 &
@@ -4946,7 +5145,7 @@ class GeomFill_SequenceOfAx2(OCC.TCollection.TCollection_BaseSequence):
         """
         return _GeomFill.GeomFill_SequenceOfAx2_Assign(self, *args)
 
-    def Set(self, *args) -> "GeomFill_SequenceOfAx2 const &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: GeomFill_SequenceOfAx2 &
@@ -4955,7 +5154,7 @@ class GeomFill_SequenceOfAx2(OCC.TCollection.TCollection_BaseSequence):
         """
         return _GeomFill.GeomFill_SequenceOfAx2_Set(self, *args)
 
-    def Append(self, *args) -> "void" :
+    def Append(self, *args):
         """
         :param T:
         :type T: gp_Ax2
@@ -4968,7 +5167,7 @@ class GeomFill_SequenceOfAx2(OCC.TCollection.TCollection_BaseSequence):
         """
         return _GeomFill.GeomFill_SequenceOfAx2_Append(self, *args)
 
-    def Prepend(self, *args) -> "void" :
+    def Prepend(self, *args):
         """
         :param T:
         :type T: gp_Ax2
@@ -4981,16 +5180,16 @@ class GeomFill_SequenceOfAx2(OCC.TCollection.TCollection_BaseSequence):
         """
         return _GeomFill.GeomFill_SequenceOfAx2_Prepend(self, *args)
 
-    def InsertBefore(self, *args) -> "void" :
+    def InsertBefore(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param T:
         :type T: gp_Ax2
         :rtype: None
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param S:
         :type S: GeomFill_SequenceOfAx2 &
         :rtype: None
@@ -4998,16 +5197,16 @@ class GeomFill_SequenceOfAx2(OCC.TCollection.TCollection_BaseSequence):
         """
         return _GeomFill.GeomFill_SequenceOfAx2_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args) -> "void" :
+    def InsertAfter(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param T:
         :type T: gp_Ax2
         :rtype: None
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param S:
         :type S: GeomFill_SequenceOfAx2 &
         :rtype: None
@@ -5015,24 +5214,24 @@ class GeomFill_SequenceOfAx2(OCC.TCollection.TCollection_BaseSequence):
         """
         return _GeomFill.GeomFill_SequenceOfAx2_InsertAfter(self, *args)
 
-    def First(self, *args) -> "gp_Ax2 const" :
+    def First(self):
         """
         :rtype: gp_Ax2
 
         """
-        return _GeomFill.GeomFill_SequenceOfAx2_First(self, *args)
+        return _GeomFill.GeomFill_SequenceOfAx2_First(self)
 
-    def Last(self, *args) -> "gp_Ax2 const" :
+    def Last(self):
         """
         :rtype: gp_Ax2
 
         """
-        return _GeomFill.GeomFill_SequenceOfAx2_Last(self, *args)
+        return _GeomFill.GeomFill_SequenceOfAx2_Last(self)
 
-    def Split(self, *args) -> "void" :
+    def Split(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Sub:
         :type Sub: GeomFill_SequenceOfAx2 &
         :rtype: None
@@ -5040,19 +5239,19 @@ class GeomFill_SequenceOfAx2(OCC.TCollection.TCollection_BaseSequence):
         """
         return _GeomFill.GeomFill_SequenceOfAx2_Split(self, *args)
 
-    def Value(self, *args) -> "gp_Ax2 const" :
+    def Value(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: gp_Ax2
 
         """
         return _GeomFill.GeomFill_SequenceOfAx2_Value(self, *args)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param I:
         :type I: gp_Ax2
         :rtype: None
@@ -5060,25 +5259,25 @@ class GeomFill_SequenceOfAx2(OCC.TCollection.TCollection_BaseSequence):
         """
         return _GeomFill.GeomFill_SequenceOfAx2_SetValue(self, *args)
 
-    def ChangeValue(self, *args) -> "gp_Ax2" :
+    def ChangeValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: gp_Ax2
 
         """
         return _GeomFill.GeomFill_SequenceOfAx2_ChangeValue(self, *args)
 
-    def Remove(self, *args) -> "void" :
+    def Remove(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: None
 
         :param FromIndex:
-        :type FromIndex: int
+        :type FromIndex: Standard_Integer
         :param ToIndex:
-        :type ToIndex: int
+        :type ToIndex: Standard_Integer
         :rtype: None
 
         """
@@ -5113,20 +5312,20 @@ GeomFill_SequenceOfAx2_swigregister(GeomFill_SequenceOfAx2)
 class GeomFill_SequenceOfTrsf(OCC.TCollection.TCollection_BaseSequence):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _GeomFill.GeomFill_SequenceOfTrsf_swiginit(self,_GeomFill.new_GeomFill_SequenceOfTrsf(*args))
-    def Clear(self, *args) -> "void" :
+        _GeomFill.GeomFill_SequenceOfTrsf_swiginit(self,_GeomFill.new_GeomFill_SequenceOfTrsf())
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _GeomFill.GeomFill_SequenceOfTrsf_Clear(self, *args)
+        return _GeomFill.GeomFill_SequenceOfTrsf_Clear(self)
 
-    def Assign(self, *args) -> "GeomFill_SequenceOfTrsf const &" :
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: GeomFill_SequenceOfTrsf &
@@ -5135,7 +5334,7 @@ class GeomFill_SequenceOfTrsf(OCC.TCollection.TCollection_BaseSequence):
         """
         return _GeomFill.GeomFill_SequenceOfTrsf_Assign(self, *args)
 
-    def Set(self, *args) -> "GeomFill_SequenceOfTrsf const &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: GeomFill_SequenceOfTrsf &
@@ -5144,7 +5343,7 @@ class GeomFill_SequenceOfTrsf(OCC.TCollection.TCollection_BaseSequence):
         """
         return _GeomFill.GeomFill_SequenceOfTrsf_Set(self, *args)
 
-    def Append(self, *args) -> "void" :
+    def Append(self, *args):
         """
         :param T:
         :type T: gp_Trsf
@@ -5157,7 +5356,7 @@ class GeomFill_SequenceOfTrsf(OCC.TCollection.TCollection_BaseSequence):
         """
         return _GeomFill.GeomFill_SequenceOfTrsf_Append(self, *args)
 
-    def Prepend(self, *args) -> "void" :
+    def Prepend(self, *args):
         """
         :param T:
         :type T: gp_Trsf
@@ -5170,16 +5369,16 @@ class GeomFill_SequenceOfTrsf(OCC.TCollection.TCollection_BaseSequence):
         """
         return _GeomFill.GeomFill_SequenceOfTrsf_Prepend(self, *args)
 
-    def InsertBefore(self, *args) -> "void" :
+    def InsertBefore(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param T:
         :type T: gp_Trsf
         :rtype: None
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param S:
         :type S: GeomFill_SequenceOfTrsf &
         :rtype: None
@@ -5187,16 +5386,16 @@ class GeomFill_SequenceOfTrsf(OCC.TCollection.TCollection_BaseSequence):
         """
         return _GeomFill.GeomFill_SequenceOfTrsf_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args) -> "void" :
+    def InsertAfter(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param T:
         :type T: gp_Trsf
         :rtype: None
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param S:
         :type S: GeomFill_SequenceOfTrsf &
         :rtype: None
@@ -5204,24 +5403,24 @@ class GeomFill_SequenceOfTrsf(OCC.TCollection.TCollection_BaseSequence):
         """
         return _GeomFill.GeomFill_SequenceOfTrsf_InsertAfter(self, *args)
 
-    def First(self, *args) -> "gp_Trsf const" :
+    def First(self):
         """
         :rtype: gp_Trsf
 
         """
-        return _GeomFill.GeomFill_SequenceOfTrsf_First(self, *args)
+        return _GeomFill.GeomFill_SequenceOfTrsf_First(self)
 
-    def Last(self, *args) -> "gp_Trsf const" :
+    def Last(self):
         """
         :rtype: gp_Trsf
 
         """
-        return _GeomFill.GeomFill_SequenceOfTrsf_Last(self, *args)
+        return _GeomFill.GeomFill_SequenceOfTrsf_Last(self)
 
-    def Split(self, *args) -> "void" :
+    def Split(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Sub:
         :type Sub: GeomFill_SequenceOfTrsf &
         :rtype: None
@@ -5229,19 +5428,19 @@ class GeomFill_SequenceOfTrsf(OCC.TCollection.TCollection_BaseSequence):
         """
         return _GeomFill.GeomFill_SequenceOfTrsf_Split(self, *args)
 
-    def Value(self, *args) -> "gp_Trsf const" :
+    def Value(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: gp_Trsf
 
         """
         return _GeomFill.GeomFill_SequenceOfTrsf_Value(self, *args)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param I:
         :type I: gp_Trsf
         :rtype: None
@@ -5249,25 +5448,25 @@ class GeomFill_SequenceOfTrsf(OCC.TCollection.TCollection_BaseSequence):
         """
         return _GeomFill.GeomFill_SequenceOfTrsf_SetValue(self, *args)
 
-    def ChangeValue(self, *args) -> "gp_Trsf" :
+    def ChangeValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: gp_Trsf
 
         """
         return _GeomFill.GeomFill_SequenceOfTrsf_ChangeValue(self, *args)
 
-    def Remove(self, *args) -> "void" :
+    def Remove(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: None
 
         :param FromIndex:
-        :type FromIndex: int
+        :type FromIndex: Standard_Integer
         :param ToIndex:
-        :type ToIndex: int
+        :type ToIndex: Standard_Integer
         :rtype: None
 
         """
@@ -5310,7 +5509,7 @@ class GeomFill_SnglrFunc(OCC.Adaptor3d.Adaptor3d_Curve):
 
         """
         _GeomFill.GeomFill_SnglrFunc_swiginit(self,_GeomFill.new_GeomFill_SnglrFunc(*args))
-    def SetRatio(self, *args) -> "void" :
+    def SetRatio(self, *args):
         """
         :param Ratio:
         :type Ratio: float
@@ -5343,9 +5542,15 @@ class GeomFill_Sweep(object):
         :type WithKpart: bool
         :rtype: None
 
+        :param Location:
+        :type Location: Handle_GeomFill_LocationLaw &
+        :param WithKpart: default value is Standard_True
+        :type WithKpart: bool
+        :rtype: None
+
         """
         _GeomFill.GeomFill_Sweep_swiginit(self,_GeomFill.new_GeomFill_Sweep(*args))
-    def SetDomain(self, *args) -> "void" :
+    def SetDomain(self, *args):
         """
         * Set parametric information [<First>, <Last>] Sets the parametric bound of the  sweeping surface to build. <SectionFirst>, <SectionLast> gives coresponding bounds parameter on the section law of <First> and <Last> V-Iso on Sweeping Surface S(u,v) is defined by Location(v) and Section(w) where w = SectionFirst + (v - First) / (Last-First) * (SectionLast - SectionFirst) By default w = v, and First and Last are given by First and Last parameter stored in LocationLaw.
 
@@ -5362,8 +5567,44 @@ class GeomFill_Sweep(object):
         """
         return _GeomFill.GeomFill_Sweep_SetDomain(self, *args)
 
-    def SetTolerance(self, *args) -> "void" :
+    def SetTolerance(self, *args):
         """
+        * Set Approximation Tolerance Tol3d : Tolerance to surface approximation Tol2d : Tolerance used to perform curve approximation  Normaly the 2d curve are approximated with a  tolerance given by the resolution method define in  <LocationLaw> but if this tolerance is too large Tol2d  is used. TolAngular : Tolerance (in radian) to control the angle  beetween tangents on the section law and  tangent of iso-v on approximed surface
+
+        :param Tol3d:
+        :type Tol3d: float
+        :param BoundTol: default value is 1.0
+        :type BoundTol: float
+        :param Tol2d: default value is 1.0e-5
+        :type Tol2d: float
+        :param TolAngular: default value is 1.0
+        :type TolAngular: float
+        :rtype: None
+
+        * Set Approximation Tolerance Tol3d : Tolerance to surface approximation Tol2d : Tolerance used to perform curve approximation  Normaly the 2d curve are approximated with a  tolerance given by the resolution method define in  <LocationLaw> but if this tolerance is too large Tol2d  is used. TolAngular : Tolerance (in radian) to control the angle  beetween tangents on the section law and  tangent of iso-v on approximed surface
+
+        :param Tol3d:
+        :type Tol3d: float
+        :param BoundTol: default value is 1.0
+        :type BoundTol: float
+        :param Tol2d: default value is 1.0e-5
+        :type Tol2d: float
+        :param TolAngular: default value is 1.0
+        :type TolAngular: float
+        :rtype: None
+
+        * Set Approximation Tolerance Tol3d : Tolerance to surface approximation Tol2d : Tolerance used to perform curve approximation  Normaly the 2d curve are approximated with a  tolerance given by the resolution method define in  <LocationLaw> but if this tolerance is too large Tol2d  is used. TolAngular : Tolerance (in radian) to control the angle  beetween tangents on the section law and  tangent of iso-v on approximed surface
+
+        :param Tol3d:
+        :type Tol3d: float
+        :param BoundTol: default value is 1.0
+        :type BoundTol: float
+        :param Tol2d: default value is 1.0e-5
+        :type Tol2d: float
+        :param TolAngular: default value is 1.0
+        :type TolAngular: float
+        :rtype: None
+
         * Set Approximation Tolerance Tol3d : Tolerance to surface approximation Tol2d : Tolerance used to perform curve approximation  Normaly the 2d curve are approximated with a  tolerance given by the resolution method define in  <LocationLaw> but if this tolerance is too large Tol2d  is used. TolAngular : Tolerance (in radian) to control the angle  beetween tangents on the section law and  tangent of iso-v on approximed surface
 
         :param Tol3d:
@@ -5379,7 +5620,7 @@ class GeomFill_Sweep(object):
         """
         return _GeomFill.GeomFill_Sweep_SetTolerance(self, *args)
 
-    def SetForceApproxC1(self, *args) -> "void" :
+    def SetForceApproxC1(self, *args):
         """
         * Set the flag that indicates attempt to approximate a C1-continuous surface if a swept surface proved to be C0.
 
@@ -5390,34 +5631,34 @@ class GeomFill_Sweep(object):
         """
         return _GeomFill.GeomFill_Sweep_SetForceApproxC1(self, *args)
 
-    def ExchangeUV(self, *args) -> "Standard_Boolean" :
+    def ExchangeUV(self):
         """
         * returns true if sections are U-Iso This can be produce in some cases when <WithKpart> is True.
 
         :rtype: bool
 
         """
-        return _GeomFill.GeomFill_Sweep_ExchangeUV(self, *args)
+        return _GeomFill.GeomFill_Sweep_ExchangeUV(self)
 
-    def UReversed(self, *args) -> "Standard_Boolean" :
+    def UReversed(self):
         """
         * returns true if Parametrisation sens in U is inverse of parametrisation sens of section (or of path if ExchangeUV)
 
         :rtype: bool
 
         """
-        return _GeomFill.GeomFill_Sweep_UReversed(self, *args)
+        return _GeomFill.GeomFill_Sweep_UReversed(self)
 
-    def VReversed(self, *args) -> "Standard_Boolean" :
+    def VReversed(self):
         """
         * returns true if Parametrisation sens in V is inverse of parametrisation sens of path (or of section if ExchangeUV)
 
         :rtype: bool
 
         """
-        return _GeomFill.GeomFill_Sweep_VReversed(self, *args)
+        return _GeomFill.GeomFill_Sweep_VReversed(self)
 
-    def Build(self, *args) -> "void" :
+    def Build(self, *args):
         """
         * Build the Sweeep Surface ApproxStyle defines Approximation Strategy - GeomFill_Section : The composed Function : Location X Section  is directly approximed. - GeomFill_Location : The location law is approximed, and the  SweepSurface is build algebric composition  of approximed location law and section law  This option is Ok, if Section.Surface() methode  is effective. Continuity : The continuity in v waiting on the surface Degmax : The maximum degree in v requiered on the surface Segmax : The maximum number of span in v requiered on  the surface raise If Domain are infinite or Profile not Setted.
 
@@ -5428,33 +5669,89 @@ class GeomFill_Sweep(object):
         :param Continuity: default value is GeomAbs_C2
         :type Continuity: GeomAbs_Shape
         :param Degmax: default value is 10
-        :type Degmax: int
+        :type Degmax: Standard_Integer
         :param Segmax: default value is 30
-        :type Segmax: int
+        :type Segmax: Standard_Integer
+        :rtype: None
+
+        * Build the Sweeep Surface ApproxStyle defines Approximation Strategy - GeomFill_Section : The composed Function : Location X Section  is directly approximed. - GeomFill_Location : The location law is approximed, and the  SweepSurface is build algebric composition  of approximed location law and section law  This option is Ok, if Section.Surface() methode  is effective. Continuity : The continuity in v waiting on the surface Degmax : The maximum degree in v requiered on the surface Segmax : The maximum number of span in v requiered on  the surface raise If Domain are infinite or Profile not Setted.
+
+        :param Section:
+        :type Section: Handle_GeomFill_SectionLaw &
+        :param Methode: default value is GeomFill_Location
+        :type Methode: GeomFill_ApproxStyle
+        :param Continuity: default value is GeomAbs_C2
+        :type Continuity: GeomAbs_Shape
+        :param Degmax: default value is 10
+        :type Degmax: Standard_Integer
+        :param Segmax: default value is 30
+        :type Segmax: Standard_Integer
+        :rtype: None
+
+        * Build the Sweeep Surface ApproxStyle defines Approximation Strategy - GeomFill_Section : The composed Function : Location X Section  is directly approximed. - GeomFill_Location : The location law is approximed, and the  SweepSurface is build algebric composition  of approximed location law and section law  This option is Ok, if Section.Surface() methode  is effective. Continuity : The continuity in v waiting on the surface Degmax : The maximum degree in v requiered on the surface Segmax : The maximum number of span in v requiered on  the surface raise If Domain are infinite or Profile not Setted.
+
+        :param Section:
+        :type Section: Handle_GeomFill_SectionLaw &
+        :param Methode: default value is GeomFill_Location
+        :type Methode: GeomFill_ApproxStyle
+        :param Continuity: default value is GeomAbs_C2
+        :type Continuity: GeomAbs_Shape
+        :param Degmax: default value is 10
+        :type Degmax: Standard_Integer
+        :param Segmax: default value is 30
+        :type Segmax: Standard_Integer
+        :rtype: None
+
+        * Build the Sweeep Surface ApproxStyle defines Approximation Strategy - GeomFill_Section : The composed Function : Location X Section  is directly approximed. - GeomFill_Location : The location law is approximed, and the  SweepSurface is build algebric composition  of approximed location law and section law  This option is Ok, if Section.Surface() methode  is effective. Continuity : The continuity in v waiting on the surface Degmax : The maximum degree in v requiered on the surface Segmax : The maximum number of span in v requiered on  the surface raise If Domain are infinite or Profile not Setted.
+
+        :param Section:
+        :type Section: Handle_GeomFill_SectionLaw &
+        :param Methode: default value is GeomFill_Location
+        :type Methode: GeomFill_ApproxStyle
+        :param Continuity: default value is GeomAbs_C2
+        :type Continuity: GeomAbs_Shape
+        :param Degmax: default value is 10
+        :type Degmax: Standard_Integer
+        :param Segmax: default value is 30
+        :type Segmax: Standard_Integer
+        :rtype: None
+
+        * Build the Sweeep Surface ApproxStyle defines Approximation Strategy - GeomFill_Section : The composed Function : Location X Section  is directly approximed. - GeomFill_Location : The location law is approximed, and the  SweepSurface is build algebric composition  of approximed location law and section law  This option is Ok, if Section.Surface() methode  is effective. Continuity : The continuity in v waiting on the surface Degmax : The maximum degree in v requiered on the surface Segmax : The maximum number of span in v requiered on  the surface raise If Domain are infinite or Profile not Setted.
+
+        :param Section:
+        :type Section: Handle_GeomFill_SectionLaw &
+        :param Methode: default value is GeomFill_Location
+        :type Methode: GeomFill_ApproxStyle
+        :param Continuity: default value is GeomAbs_C2
+        :type Continuity: GeomAbs_Shape
+        :param Degmax: default value is 10
+        :type Degmax: Standard_Integer
+        :param Segmax: default value is 30
+        :type Segmax: Standard_Integer
         :rtype: None
 
         """
         return _GeomFill.GeomFill_Sweep_Build(self, *args)
 
-    def IsDone(self, *args) -> "Standard_Boolean" :
+    def IsDone(self):
         """
         * Tells if the Surface is Buildt.
 
         :rtype: bool
 
         """
-        return _GeomFill.GeomFill_Sweep_IsDone(self, *args)
+        return _GeomFill.GeomFill_Sweep_IsDone(self)
 
-    def ErrorOnSurface(self, *args) -> "Standard_Real" :
+    def ErrorOnSurface(self):
         """
         * Gets the Approximation error.
 
         :rtype: float
 
         """
-        return _GeomFill.GeomFill_Sweep_ErrorOnSurface(self, *args)
+        return _GeomFill.GeomFill_Sweep_ErrorOnSurface(self)
 
-    def ErrorOnRestriction(self, *args) -> "void" :
+    def ErrorOnRestriction(self, *args):
         """
         * Gets the Approximation error.
 
@@ -5469,12 +5766,12 @@ class GeomFill_Sweep(object):
         """
         return _GeomFill.GeomFill_Sweep_ErrorOnRestriction(self, *args)
 
-    def ErrorOnTrace(self, *args) -> "void" :
+    def ErrorOnTrace(self, *args):
         """
         * Gets the Approximation error.
 
         :param IndexOfTrace:
-        :type IndexOfTrace: int
+        :type IndexOfTrace: Standard_Integer
         :param UError:
         :type UError: float &
         :param VError:
@@ -5484,14 +5781,14 @@ class GeomFill_Sweep(object):
         """
         return _GeomFill.GeomFill_Sweep_ErrorOnTrace(self, *args)
 
-    def Surface(self, *args) -> "Handle_Geom_Surface" :
+    def Surface(self):
         """
         :rtype: Handle_Geom_Surface
 
         """
-        return _GeomFill.GeomFill_Sweep_Surface(self, *args)
+        return _GeomFill.GeomFill_Sweep_Surface(self)
 
-    def Restriction(self, *args) -> "Handle_Geom2d_Curve" :
+    def Restriction(self, *args):
         """
         :param IsFirst:
         :type IsFirst: bool
@@ -5500,17 +5797,17 @@ class GeomFill_Sweep(object):
         """
         return _GeomFill.GeomFill_Sweep_Restriction(self, *args)
 
-    def NumberOfTrace(self, *args) -> "Standard_Integer" :
+    def NumberOfTrace(self):
         """
         :rtype: int
 
         """
-        return _GeomFill.GeomFill_Sweep_NumberOfTrace(self, *args)
+        return _GeomFill.GeomFill_Sweep_NumberOfTrace(self)
 
-    def Trace(self, *args) -> "Handle_Geom2d_Curve" :
+    def Trace(self, *args):
         """
         :param IndexOfTrace:
-        :type IndexOfTrace: int
+        :type IndexOfTrace: Standard_Integer
         :rtype: Handle_Geom2d_Curve
 
         """
@@ -5562,11 +5859,11 @@ class GeomFill_SweepFunction(OCC.Approx.Approx_SweepFunction):
 
         """
         _GeomFill.GeomFill_SweepFunction_swiginit(self,_GeomFill.new_GeomFill_SweepFunction(*args))
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(GeomFill_SweepFunction self)"""
         return _GeomFill.GeomFill_SweepFunction__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_GeomFill_SweepFunction" :
+    def GetHandle(self):
         """GetHandle(GeomFill_SweepFunction self) -> Handle_GeomFill_SweepFunction"""
         return _GeomFill.GeomFill_SweepFunction_GetHandle(self)
 
@@ -5604,7 +5901,7 @@ Handle_GeomFill_SweepFunction._kill_pointed = new_instancemethod(_GeomFill.Handl
 Handle_GeomFill_SweepFunction_swigregister = _GeomFill.Handle_GeomFill_SweepFunction_swigregister
 Handle_GeomFill_SweepFunction_swigregister(Handle_GeomFill_SweepFunction)
 
-def Handle_GeomFill_SweepFunction_DownCast(*args) -> "Handle_GeomFill_SweepFunction const" :
+def Handle_GeomFill_SweepFunction_DownCast(*args):
   return _GeomFill.Handle_GeomFill_SweepFunction_DownCast(*args)
 Handle_GeomFill_SweepFunction_DownCast = _GeomFill.Handle_GeomFill_SweepFunction_DownCast
 
@@ -5614,16 +5911,16 @@ class GeomFill_Tensor(object):
     def __init__(self, *args): 
         """
         :param NbRow:
-        :type NbRow: int
+        :type NbRow: Standard_Integer
         :param NbCol:
-        :type NbCol: int
+        :type NbCol: Standard_Integer
         :param NbMat:
-        :type NbMat: int
+        :type NbMat: Standard_Integer
         :rtype: None
 
         """
         _GeomFill.GeomFill_Tensor_swiginit(self,_GeomFill.new_GeomFill_Tensor(*args))
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
         * //!Initialize all the elements of a Tensor to InitialValue.
 
@@ -5634,37 +5931,37 @@ class GeomFill_Tensor(object):
         """
         return _GeomFill.GeomFill_Tensor_Init(self, *args)
 
-    def Value(self, *args) -> "Standard_Real const &" :
+    def Value(self, *args):
         """
         * accesses (in read or write mode) the value of index <Row>, <Col> and <Mat> of a Tensor. An exception is raised if <Row>, <Col> or <Mat> are not in the correct range.
 
         :param Row:
-        :type Row: int
+        :type Row: Standard_Integer
         :param Col:
-        :type Col: int
+        :type Col: Standard_Integer
         :param Mat:
-        :type Mat: int
+        :type Mat: Standard_Integer
         :rtype: float
 
         """
         return _GeomFill.GeomFill_Tensor_Value(self, *args)
 
-    def ChangeValue(self, *args) -> "Standard_Real &" :
+    def ChangeValue(self, *args):
         """
         * accesses (in read or write mode) the value of index <Row>, <Col> and <Mat> of a Tensor. An exception is raised if <Row>, <Col> or <Mat> are not in the correct range.
 
         :param Row:
-        :type Row: int
+        :type Row: Standard_Integer
         :param Col:
-        :type Col: int
+        :type Col: Standard_Integer
         :param Mat:
-        :type Mat: int
+        :type Mat: Standard_Integer
         :rtype: float
 
         """
         return _GeomFill.GeomFill_Tensor_ChangeValue(self, *args)
 
-    def Multiply(self, *args) -> "void" :
+    def Multiply(self, *args):
         """
         :param Right:
         :type Right: math_Vector &
@@ -5695,14 +5992,14 @@ class GeomFill_TgtField(OCC.MMgt.MMgt_TShared):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def IsScalable(self, *args) -> "Standard_Boolean" :
+    def IsScalable(self):
         """
         :rtype: bool
 
         """
-        return _GeomFill.GeomFill_TgtField_IsScalable(self, *args)
+        return _GeomFill.GeomFill_TgtField_IsScalable(self)
 
-    def Scale(self, *args) -> "void" :
+    def Scale(self, *args):
         """
         :param Func:
         :type Func: Handle_Law_BSpline &
@@ -5711,7 +6008,7 @@ class GeomFill_TgtField(OCC.MMgt.MMgt_TShared):
         """
         return _GeomFill.GeomFill_TgtField_Scale(self, *args)
 
-    def Value(self, *args) -> "gp_Vec" :
+    def Value(self, *args):
         """
         * Computes the value of the field of tangency at parameter W.
 
@@ -5722,7 +6019,7 @@ class GeomFill_TgtField(OCC.MMgt.MMgt_TShared):
         """
         return _GeomFill.GeomFill_TgtField_Value(self, *args)
 
-    def D1(self, *args) -> "void" :
+    def D1(self, *args):
         """
         * Computes the derivative of the field of tangency at parameter W.
 
@@ -5743,11 +6040,11 @@ class GeomFill_TgtField(OCC.MMgt.MMgt_TShared):
         """
         return _GeomFill.GeomFill_TgtField_D1(self, *args)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(GeomFill_TgtField self)"""
         return _GeomFill.GeomFill_TgtField__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_GeomFill_TgtField" :
+    def GetHandle(self):
         """GetHandle(GeomFill_TgtField self) -> Handle_GeomFill_TgtField"""
         return _GeomFill.GeomFill_TgtField_GetHandle(self)
 
@@ -5789,7 +6086,7 @@ Handle_GeomFill_TgtField._kill_pointed = new_instancemethod(_GeomFill.Handle_Geo
 Handle_GeomFill_TgtField_swigregister = _GeomFill.Handle_GeomFill_TgtField_swigregister
 Handle_GeomFill_TgtField_swigregister(Handle_GeomFill_TgtField)
 
-def Handle_GeomFill_TgtField_DownCast(*args) -> "Handle_GeomFill_TgtField const" :
+def Handle_GeomFill_TgtField_DownCast(*args):
   return _GeomFill.Handle_GeomFill_TgtField_DownCast(*args)
 Handle_GeomFill_TgtField_DownCast = _GeomFill.Handle_GeomFill_TgtField_DownCast
 
@@ -5797,7 +6094,7 @@ class GeomFill_TrihedronLaw(OCC.MMgt.MMgt_TShared):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def SetCurve(self, *args) -> "void" :
+    def SetCurve(self, *args):
         """
         :param C:
         :type C: Handle_Adaptor3d_HCurve &
@@ -5806,23 +6103,23 @@ class GeomFill_TrihedronLaw(OCC.MMgt.MMgt_TShared):
         """
         return _GeomFill.GeomFill_TrihedronLaw_SetCurve(self, *args)
 
-    def Copy(self, *args) -> "Handle_GeomFill_TrihedronLaw" :
+    def Copy(self):
         """
         :rtype: Handle_GeomFill_TrihedronLaw
 
         """
-        return _GeomFill.GeomFill_TrihedronLaw_Copy(self, *args)
+        return _GeomFill.GeomFill_TrihedronLaw_Copy(self)
 
-    def ErrorStatus(self, *args) -> "GeomFill_PipeError" :
+    def ErrorStatus(self):
         """
         * //!Give a status to the Law  Returns PipeOk (default implementation)
 
         :rtype: GeomFill_PipeError
 
         """
-        return _GeomFill.GeomFill_TrihedronLaw_ErrorStatus(self, *args)
+        return _GeomFill.GeomFill_TrihedronLaw_ErrorStatus(self)
 
-    def D0(self, *args) -> "Standard_Boolean" :
+    def D0(self, *args):
         """
         * compute Triedrhon on curve at parameter <Param>
 
@@ -5839,7 +6136,7 @@ class GeomFill_TrihedronLaw(OCC.MMgt.MMgt_TShared):
         """
         return _GeomFill.GeomFill_TrihedronLaw_D0(self, *args)
 
-    def D1(self, *args) -> "Standard_Boolean" :
+    def D1(self, *args):
         """
         * compute Triedrhon and derivative Trihedron on curve at parameter <Param> Warning : It used only for C1 or C2 aproximation
 
@@ -5862,7 +6159,7 @@ class GeomFill_TrihedronLaw(OCC.MMgt.MMgt_TShared):
         """
         return _GeomFill.GeomFill_TrihedronLaw_D1(self, *args)
 
-    def D2(self, *args) -> "Standard_Boolean" :
+    def D2(self, *args):
         """
         * compute Trihedron on curve first and seconde derivatives. Warning : It used only for C2 aproximation
 
@@ -5891,7 +6188,7 @@ class GeomFill_TrihedronLaw(OCC.MMgt.MMgt_TShared):
         """
         return _GeomFill.GeomFill_TrihedronLaw_D2(self, *args)
 
-    def NbIntervals(self, *args) -> "Standard_Integer" :
+    def NbIntervals(self, *args):
         """
         * Returns the number of intervals for continuity <S>. May be one if Continuity(me) >= <S>
 
@@ -5902,7 +6199,7 @@ class GeomFill_TrihedronLaw(OCC.MMgt.MMgt_TShared):
         """
         return _GeomFill.GeomFill_TrihedronLaw_NbIntervals(self, *args)
 
-    def Intervals(self, *args) -> "void" :
+    def Intervals(self, *args):
         """
         * Stores in <T> the parameters bounding the intervals of continuity <S>.  The array must provide enough room to accomodate for the parameters. i.e. T.Length() > NbIntervals()
 
@@ -5915,7 +6212,7 @@ class GeomFill_TrihedronLaw(OCC.MMgt.MMgt_TShared):
         """
         return _GeomFill.GeomFill_TrihedronLaw_Intervals(self, *args)
 
-    def SetInterval(self, *args) -> "void" :
+    def SetInterval(self, *args):
         """
         * Sets the bounds of the parametric interval on the function This determines the derivatives in these values if the function is not Cn.
 
@@ -5928,7 +6225,7 @@ class GeomFill_TrihedronLaw(OCC.MMgt.MMgt_TShared):
         """
         return _GeomFill.GeomFill_TrihedronLaw_SetInterval(self, *args)
 
-    def GetInterval(self, *args) -> "void" :
+    def GetInterval(self):
         """
         * Gets the bounds of the parametric interval on the function
 
@@ -5939,9 +6236,9 @@ class GeomFill_TrihedronLaw(OCC.MMgt.MMgt_TShared):
         :rtype: None
 
         """
-        return _GeomFill.GeomFill_TrihedronLaw_GetInterval(self, *args)
+        return _GeomFill.GeomFill_TrihedronLaw_GetInterval(self)
 
-    def GetAverageLaw(self, *args) -> "void" :
+    def GetAverageLaw(self, *args):
         """
         * Get average value of M(t) and V(t) it is usfull to make fast approximation of rational surfaces.
 
@@ -5956,29 +6253,29 @@ class GeomFill_TrihedronLaw(OCC.MMgt.MMgt_TShared):
         """
         return _GeomFill.GeomFill_TrihedronLaw_GetAverageLaw(self, *args)
 
-    def IsConstant(self, *args) -> "Standard_Boolean" :
+    def IsConstant(self):
         """
         * Say if the law is Constant
 
         :rtype: bool
 
         """
-        return _GeomFill.GeomFill_TrihedronLaw_IsConstant(self, *args)
+        return _GeomFill.GeomFill_TrihedronLaw_IsConstant(self)
 
-    def IsOnlyBy3dCurve(self, *args) -> "Standard_Boolean" :
+    def IsOnlyBy3dCurve(self):
         """
         * Say if the law is defined, only by the 3d Geometry of the setted Curve Return False by Default.
 
         :rtype: bool
 
         """
-        return _GeomFill.GeomFill_TrihedronLaw_IsOnlyBy3dCurve(self, *args)
+        return _GeomFill.GeomFill_TrihedronLaw_IsOnlyBy3dCurve(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(GeomFill_TrihedronLaw self)"""
         return _GeomFill.GeomFill_TrihedronLaw__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_GeomFill_TrihedronLaw" :
+    def GetHandle(self):
         """GetHandle(GeomFill_TrihedronLaw self) -> Handle_GeomFill_TrihedronLaw"""
         return _GeomFill.GeomFill_TrihedronLaw_GetHandle(self)
 
@@ -6029,7 +6326,7 @@ Handle_GeomFill_TrihedronLaw._kill_pointed = new_instancemethod(_GeomFill.Handle
 Handle_GeomFill_TrihedronLaw_swigregister = _GeomFill.Handle_GeomFill_TrihedronLaw_swigregister
 Handle_GeomFill_TrihedronLaw_swigregister(Handle_GeomFill_TrihedronLaw)
 
-def Handle_GeomFill_TrihedronLaw_DownCast(*args) -> "Handle_GeomFill_TrihedronLaw const" :
+def Handle_GeomFill_TrihedronLaw_DownCast(*args):
   return _GeomFill.Handle_GeomFill_TrihedronLaw_DownCast(*args)
 Handle_GeomFill_TrihedronLaw_DownCast = _GeomFill.Handle_GeomFill_TrihedronLaw_DownCast
 
@@ -6050,11 +6347,11 @@ class GeomFill_BoundWithSurf(GeomFill_Boundary):
 
         """
         _GeomFill.GeomFill_BoundWithSurf_swiginit(self,_GeomFill.new_GeomFill_BoundWithSurf(*args))
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(GeomFill_BoundWithSurf self)"""
         return _GeomFill.GeomFill_BoundWithSurf__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_GeomFill_BoundWithSurf" :
+    def GetHandle(self):
         """GetHandle(GeomFill_BoundWithSurf self) -> Handle_GeomFill_BoundWithSurf"""
         return _GeomFill.GeomFill_BoundWithSurf_GetHandle(self)
 
@@ -6092,7 +6389,7 @@ Handle_GeomFill_BoundWithSurf._kill_pointed = new_instancemethod(_GeomFill.Handl
 Handle_GeomFill_BoundWithSurf_swigregister = _GeomFill.Handle_GeomFill_BoundWithSurf_swigregister
 Handle_GeomFill_BoundWithSurf_swigregister(Handle_GeomFill_BoundWithSurf)
 
-def Handle_GeomFill_BoundWithSurf_DownCast(*args) -> "Handle_GeomFill_BoundWithSurf const" :
+def Handle_GeomFill_BoundWithSurf_DownCast(*args):
   return _GeomFill.Handle_GeomFill_BoundWithSurf_DownCast(*args)
 Handle_GeomFill_BoundWithSurf_DownCast = _GeomFill.Handle_GeomFill_BoundWithSurf_DownCast
 
@@ -6107,11 +6404,11 @@ class GeomFill_ConstantBiNormal(GeomFill_TrihedronLaw):
 
         """
         _GeomFill.GeomFill_ConstantBiNormal_swiginit(self,_GeomFill.new_GeomFill_ConstantBiNormal(*args))
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(GeomFill_ConstantBiNormal self)"""
         return _GeomFill.GeomFill_ConstantBiNormal__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_GeomFill_ConstantBiNormal" :
+    def GetHandle(self):
         """GetHandle(GeomFill_ConstantBiNormal self) -> Handle_GeomFill_ConstantBiNormal"""
         return _GeomFill.GeomFill_ConstantBiNormal_GetHandle(self)
 
@@ -6149,7 +6446,7 @@ Handle_GeomFill_ConstantBiNormal._kill_pointed = new_instancemethod(_GeomFill.Ha
 Handle_GeomFill_ConstantBiNormal_swigregister = _GeomFill.Handle_GeomFill_ConstantBiNormal_swigregister
 Handle_GeomFill_ConstantBiNormal_swigregister(Handle_GeomFill_ConstantBiNormal)
 
-def Handle_GeomFill_ConstantBiNormal_DownCast(*args) -> "Handle_GeomFill_ConstantBiNormal const" :
+def Handle_GeomFill_ConstantBiNormal_DownCast(*args):
   return _GeomFill.Handle_GeomFill_ConstantBiNormal_DownCast(*args)
 Handle_GeomFill_ConstantBiNormal_DownCast = _GeomFill.Handle_GeomFill_ConstantBiNormal_DownCast
 
@@ -6190,7 +6487,7 @@ class GeomFill_Coons(GeomFill_Filling):
 
         """
         _GeomFill.GeomFill_Coons_swiginit(self,_GeomFill.new_GeomFill_Coons(*args))
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
         :param P1:
         :type P1: TColgp_Array1OfPnt
@@ -6249,20 +6546,20 @@ class GeomFill_CorrectedFrenet(GeomFill_TrihedronLaw):
 
         """
         _GeomFill.GeomFill_CorrectedFrenet_swiginit(self,_GeomFill.new_GeomFill_CorrectedFrenet(*args))
-    def EvaluateBestMode(self, *args) -> "GeomFill_Trihedron" :
+    def EvaluateBestMode(self):
         """
         * Tries to define the best trihedron mode for the curve. It can be: - Frenet - CorrectedFrenet - DiscreteTrihedron Warning: the CorrectedFrenet must be constructed with option ForEvaluation = True, the curve must be set by method SetCurve.
 
         :rtype: GeomFill_Trihedron
 
         """
-        return _GeomFill.GeomFill_CorrectedFrenet_EvaluateBestMode(self, *args)
+        return _GeomFill.GeomFill_CorrectedFrenet_EvaluateBestMode(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(GeomFill_CorrectedFrenet self)"""
         return _GeomFill.GeomFill_CorrectedFrenet__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_GeomFill_CorrectedFrenet" :
+    def GetHandle(self):
         """GetHandle(GeomFill_CorrectedFrenet self) -> Handle_GeomFill_CorrectedFrenet"""
         return _GeomFill.GeomFill_CorrectedFrenet_GetHandle(self)
 
@@ -6301,7 +6598,7 @@ Handle_GeomFill_CorrectedFrenet._kill_pointed = new_instancemethod(_GeomFill.Han
 Handle_GeomFill_CorrectedFrenet_swigregister = _GeomFill.Handle_GeomFill_CorrectedFrenet_swigregister
 Handle_GeomFill_CorrectedFrenet_swigregister(Handle_GeomFill_CorrectedFrenet)
 
-def Handle_GeomFill_CorrectedFrenet_DownCast(*args) -> "Handle_GeomFill_CorrectedFrenet const" :
+def Handle_GeomFill_CorrectedFrenet_DownCast(*args):
   return _GeomFill.Handle_GeomFill_CorrectedFrenet_DownCast(*args)
 Handle_GeomFill_CorrectedFrenet_DownCast = _GeomFill.Handle_GeomFill_CorrectedFrenet_DownCast
 
@@ -6316,7 +6613,7 @@ class GeomFill_CurveAndTrihedron(GeomFill_LocationLaw):
 
         """
         _GeomFill.GeomFill_CurveAndTrihedron_swiginit(self,_GeomFill.new_GeomFill_CurveAndTrihedron(*args))
-    def D0(self, *args) -> "Standard_Boolean" :
+    def D0(self, *args):
         """
         * compute Location and 2d points
 
@@ -6343,11 +6640,11 @@ class GeomFill_CurveAndTrihedron(GeomFill_LocationLaw):
         """
         return _GeomFill.GeomFill_CurveAndTrihedron_D0(self, *args)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(GeomFill_CurveAndTrihedron self)"""
         return _GeomFill.GeomFill_CurveAndTrihedron__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_GeomFill_CurveAndTrihedron" :
+    def GetHandle(self):
         """GetHandle(GeomFill_CurveAndTrihedron self) -> Handle_GeomFill_CurveAndTrihedron"""
         return _GeomFill.GeomFill_CurveAndTrihedron_GetHandle(self)
 
@@ -6386,7 +6683,7 @@ Handle_GeomFill_CurveAndTrihedron._kill_pointed = new_instancemethod(_GeomFill.H
 Handle_GeomFill_CurveAndTrihedron_swigregister = _GeomFill.Handle_GeomFill_CurveAndTrihedron_swigregister
 Handle_GeomFill_CurveAndTrihedron_swigregister(Handle_GeomFill_CurveAndTrihedron)
 
-def Handle_GeomFill_CurveAndTrihedron_DownCast(*args) -> "Handle_GeomFill_CurveAndTrihedron const" :
+def Handle_GeomFill_CurveAndTrihedron_DownCast(*args):
   return _GeomFill.Handle_GeomFill_CurveAndTrihedron_DownCast(*args)
 Handle_GeomFill_CurveAndTrihedron_DownCast = _GeomFill.Handle_GeomFill_CurveAndTrihedron_DownCast
 
@@ -6465,7 +6762,7 @@ class GeomFill_Curved(GeomFill_Filling):
 
         """
         _GeomFill.GeomFill_Curved_swiginit(self,_GeomFill.new_GeomFill_Curved(*args))
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
         :param P1:
         :type P1: TColgp_Array1OfPnt
@@ -6552,17 +6849,17 @@ GeomFill_Curved_swigregister(GeomFill_Curved)
 class GeomFill_Darboux(GeomFill_TrihedronLaw):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _GeomFill.GeomFill_Darboux_swiginit(self,_GeomFill.new_GeomFill_Darboux(*args))
-    def _kill_pointed(self) -> "void" :
+        _GeomFill.GeomFill_Darboux_swiginit(self,_GeomFill.new_GeomFill_Darboux())
+    def _kill_pointed(self):
         """_kill_pointed(GeomFill_Darboux self)"""
         return _GeomFill.GeomFill_Darboux__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_GeomFill_Darboux" :
+    def GetHandle(self):
         """GetHandle(GeomFill_Darboux self) -> Handle_GeomFill_Darboux"""
         return _GeomFill.GeomFill_Darboux_GetHandle(self)
 
@@ -6600,7 +6897,7 @@ Handle_GeomFill_Darboux._kill_pointed = new_instancemethod(_GeomFill.Handle_Geom
 Handle_GeomFill_Darboux_swigregister = _GeomFill.Handle_GeomFill_Darboux_swigregister
 Handle_GeomFill_Darboux_swigregister(Handle_GeomFill_Darboux)
 
-def Handle_GeomFill_Darboux_DownCast(*args) -> "Handle_GeomFill_Darboux const" :
+def Handle_GeomFill_Darboux_DownCast(*args):
   return _GeomFill.Handle_GeomFill_Darboux_DownCast(*args)
 Handle_GeomFill_Darboux_DownCast = _GeomFill.Handle_GeomFill_Darboux_DownCast
 
@@ -6623,11 +6920,11 @@ class GeomFill_DegeneratedBound(GeomFill_Boundary):
 
         """
         _GeomFill.GeomFill_DegeneratedBound_swiginit(self,_GeomFill.new_GeomFill_DegeneratedBound(*args))
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(GeomFill_DegeneratedBound self)"""
         return _GeomFill.GeomFill_DegeneratedBound__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_GeomFill_DegeneratedBound" :
+    def GetHandle(self):
         """GetHandle(GeomFill_DegeneratedBound self) -> Handle_GeomFill_DegeneratedBound"""
         return _GeomFill.GeomFill_DegeneratedBound_GetHandle(self)
 
@@ -6665,31 +6962,31 @@ Handle_GeomFill_DegeneratedBound._kill_pointed = new_instancemethod(_GeomFill.Ha
 Handle_GeomFill_DegeneratedBound_swigregister = _GeomFill.Handle_GeomFill_DegeneratedBound_swigregister
 Handle_GeomFill_DegeneratedBound_swigregister(Handle_GeomFill_DegeneratedBound)
 
-def Handle_GeomFill_DegeneratedBound_DownCast(*args) -> "Handle_GeomFill_DegeneratedBound const" :
+def Handle_GeomFill_DegeneratedBound_DownCast(*args):
   return _GeomFill.Handle_GeomFill_DegeneratedBound_DownCast(*args)
 Handle_GeomFill_DegeneratedBound_DownCast = _GeomFill.Handle_GeomFill_DegeneratedBound_DownCast
 
 class GeomFill_DiscreteTrihedron(GeomFill_TrihedronLaw):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _GeomFill.GeomFill_DiscreteTrihedron_swiginit(self,_GeomFill.new_GeomFill_DiscreteTrihedron(*args))
-    def Init(self, *args) -> "void" :
+        _GeomFill.GeomFill_DiscreteTrihedron_swiginit(self,_GeomFill.new_GeomFill_DiscreteTrihedron())
+    def Init(self):
         """
         :rtype: None
 
         """
-        return _GeomFill.GeomFill_DiscreteTrihedron_Init(self, *args)
+        return _GeomFill.GeomFill_DiscreteTrihedron_Init(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(GeomFill_DiscreteTrihedron self)"""
         return _GeomFill.GeomFill_DiscreteTrihedron__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_GeomFill_DiscreteTrihedron" :
+    def GetHandle(self):
         """GetHandle(GeomFill_DiscreteTrihedron self) -> Handle_GeomFill_DiscreteTrihedron"""
         return _GeomFill.GeomFill_DiscreteTrihedron_GetHandle(self)
 
@@ -6728,7 +7025,7 @@ Handle_GeomFill_DiscreteTrihedron._kill_pointed = new_instancemethod(_GeomFill.H
 Handle_GeomFill_DiscreteTrihedron_swigregister = _GeomFill.Handle_GeomFill_DiscreteTrihedron_swigregister
 Handle_GeomFill_DiscreteTrihedron_swigregister(Handle_GeomFill_DiscreteTrihedron)
 
-def Handle_GeomFill_DiscreteTrihedron_DownCast(*args) -> "Handle_GeomFill_DiscreteTrihedron const" :
+def Handle_GeomFill_DiscreteTrihedron_DownCast(*args):
   return _GeomFill.Handle_GeomFill_DiscreteTrihedron_DownCast(*args)
 Handle_GeomFill_DiscreteTrihedron_DownCast = _GeomFill.Handle_GeomFill_DiscreteTrihedron_DownCast
 
@@ -6745,7 +7042,7 @@ class GeomFill_DraftTrihedron(GeomFill_TrihedronLaw):
 
         """
         _GeomFill.GeomFill_DraftTrihedron_swiginit(self,_GeomFill.new_GeomFill_DraftTrihedron(*args))
-    def SetAngle(self, *args) -> "void" :
+    def SetAngle(self, *args):
         """
         :param Angle:
         :type Angle: float
@@ -6754,11 +7051,11 @@ class GeomFill_DraftTrihedron(GeomFill_TrihedronLaw):
         """
         return _GeomFill.GeomFill_DraftTrihedron_SetAngle(self, *args)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(GeomFill_DraftTrihedron self)"""
         return _GeomFill.GeomFill_DraftTrihedron__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_GeomFill_DraftTrihedron" :
+    def GetHandle(self):
         """GetHandle(GeomFill_DraftTrihedron self) -> Handle_GeomFill_DraftTrihedron"""
         return _GeomFill.GeomFill_DraftTrihedron_GetHandle(self)
 
@@ -6797,7 +7094,7 @@ Handle_GeomFill_DraftTrihedron._kill_pointed = new_instancemethod(_GeomFill.Hand
 Handle_GeomFill_DraftTrihedron_swigregister = _GeomFill.Handle_GeomFill_DraftTrihedron_swigregister
 Handle_GeomFill_DraftTrihedron_swigregister(Handle_GeomFill_DraftTrihedron)
 
-def Handle_GeomFill_DraftTrihedron_DownCast(*args) -> "Handle_GeomFill_DraftTrihedron const" :
+def Handle_GeomFill_DraftTrihedron_DownCast(*args):
   return _GeomFill.Handle_GeomFill_DraftTrihedron_DownCast(*args)
 Handle_GeomFill_DraftTrihedron_DownCast = _GeomFill.Handle_GeomFill_DraftTrihedron_DownCast
 
@@ -6816,11 +7113,11 @@ class GeomFill_EvolvedSection(GeomFill_SectionLaw):
 
         """
         _GeomFill.GeomFill_EvolvedSection_swiginit(self,_GeomFill.new_GeomFill_EvolvedSection(*args))
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(GeomFill_EvolvedSection self)"""
         return _GeomFill.GeomFill_EvolvedSection__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_GeomFill_EvolvedSection" :
+    def GetHandle(self):
         """GetHandle(GeomFill_EvolvedSection self) -> Handle_GeomFill_EvolvedSection"""
         return _GeomFill.GeomFill_EvolvedSection_GetHandle(self)
 
@@ -6858,7 +7155,7 @@ Handle_GeomFill_EvolvedSection._kill_pointed = new_instancemethod(_GeomFill.Hand
 Handle_GeomFill_EvolvedSection_swigregister = _GeomFill.Handle_GeomFill_EvolvedSection_swigregister
 Handle_GeomFill_EvolvedSection_swigregister(Handle_GeomFill_EvolvedSection)
 
-def Handle_GeomFill_EvolvedSection_DownCast(*args) -> "Handle_GeomFill_EvolvedSection const" :
+def Handle_GeomFill_EvolvedSection_DownCast(*args):
   return _GeomFill.Handle_GeomFill_EvolvedSection_DownCast(*args)
 Handle_GeomFill_EvolvedSection_DownCast = _GeomFill.Handle_GeomFill_EvolvedSection_DownCast
 
@@ -6875,11 +7172,11 @@ class GeomFill_Fixed(GeomFill_TrihedronLaw):
 
         """
         _GeomFill.GeomFill_Fixed_swiginit(self,_GeomFill.new_GeomFill_Fixed(*args))
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(GeomFill_Fixed self)"""
         return _GeomFill.GeomFill_Fixed__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_GeomFill_Fixed" :
+    def GetHandle(self):
         """GetHandle(GeomFill_Fixed self) -> Handle_GeomFill_Fixed"""
         return _GeomFill.GeomFill_Fixed_GetHandle(self)
 
@@ -6917,31 +7214,31 @@ Handle_GeomFill_Fixed._kill_pointed = new_instancemethod(_GeomFill.Handle_GeomFi
 Handle_GeomFill_Fixed_swigregister = _GeomFill.Handle_GeomFill_Fixed_swigregister
 Handle_GeomFill_Fixed_swigregister(Handle_GeomFill_Fixed)
 
-def Handle_GeomFill_Fixed_DownCast(*args) -> "Handle_GeomFill_Fixed const" :
+def Handle_GeomFill_Fixed_DownCast(*args):
   return _GeomFill.Handle_GeomFill_Fixed_DownCast(*args)
 Handle_GeomFill_Fixed_DownCast = _GeomFill.Handle_GeomFill_Fixed_DownCast
 
 class GeomFill_Frenet(GeomFill_TrihedronLaw):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _GeomFill.GeomFill_Frenet_swiginit(self,_GeomFill.new_GeomFill_Frenet(*args))
-    def Init(self, *args) -> "void" :
+        _GeomFill.GeomFill_Frenet_swiginit(self,_GeomFill.new_GeomFill_Frenet())
+    def Init(self):
         """
         :rtype: None
 
         """
-        return _GeomFill.GeomFill_Frenet_Init(self, *args)
+        return _GeomFill.GeomFill_Frenet_Init(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(GeomFill_Frenet self)"""
         return _GeomFill.GeomFill_Frenet__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_GeomFill_Frenet" :
+    def GetHandle(self):
         """GetHandle(GeomFill_Frenet self) -> Handle_GeomFill_Frenet"""
         return _GeomFill.GeomFill_Frenet_GetHandle(self)
 
@@ -6980,25 +7277,25 @@ Handle_GeomFill_Frenet._kill_pointed = new_instancemethod(_GeomFill.Handle_GeomF
 Handle_GeomFill_Frenet_swigregister = _GeomFill.Handle_GeomFill_Frenet_swigregister
 Handle_GeomFill_Frenet_swigregister(Handle_GeomFill_Frenet)
 
-def Handle_GeomFill_Frenet_DownCast(*args) -> "Handle_GeomFill_Frenet const" :
+def Handle_GeomFill_Frenet_DownCast(*args):
   return _GeomFill.Handle_GeomFill_Frenet_DownCast(*args)
 Handle_GeomFill_Frenet_DownCast = _GeomFill.Handle_GeomFill_Frenet_DownCast
 
 class GeomFill_Generator(GeomFill_Profiler):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _GeomFill.GeomFill_Generator_swiginit(self,_GeomFill.new_GeomFill_Generator(*args))
-    def Surface(self, *args) -> "Handle_Geom_Surface const &" :
+        _GeomFill.GeomFill_Generator_swiginit(self,_GeomFill.new_GeomFill_Generator())
+    def Surface(self):
         """
         :rtype: Handle_Geom_Surface
 
         """
-        return _GeomFill.GeomFill_Generator_Surface(self, *args)
+        return _GeomFill.GeomFill_Generator_Surface(self)
 
     def __del__(self):
     	try:
@@ -7026,7 +7323,7 @@ class GeomFill_LocationDraft(GeomFill_LocationLaw):
 
         """
         _GeomFill.GeomFill_LocationDraft_swiginit(self,_GeomFill.new_GeomFill_LocationDraft(*args))
-    def SetStopSurf(self, *args) -> "void" :
+    def SetStopSurf(self, *args):
         """
         :param Surf:
         :type Surf: Handle_Adaptor3d_HSurface &
@@ -7035,7 +7332,7 @@ class GeomFill_LocationDraft(GeomFill_LocationLaw):
         """
         return _GeomFill.GeomFill_LocationDraft_SetStopSurf(self, *args)
 
-    def SetAngle(self, *args) -> "void" :
+    def SetAngle(self, *args):
         """
         :param Angle:
         :type Angle: float
@@ -7044,7 +7341,7 @@ class GeomFill_LocationDraft(GeomFill_LocationLaw):
         """
         return _GeomFill.GeomFill_LocationDraft_SetAngle(self, *args)
 
-    def D0(self, *args) -> "Standard_Boolean" :
+    def D0(self, *args):
         """
         * compute Location
 
@@ -7071,27 +7368,27 @@ class GeomFill_LocationDraft(GeomFill_LocationLaw):
         """
         return _GeomFill.GeomFill_LocationDraft_D0(self, *args)
 
-    def IsIntersec(self, *args) -> "Standard_Boolean" :
+    def IsIntersec(self):
         """
         * Say if the generatrice interset the surface
 
         :rtype: bool
 
         """
-        return _GeomFill.GeomFill_LocationDraft_IsIntersec(self, *args)
+        return _GeomFill.GeomFill_LocationDraft_IsIntersec(self)
 
-    def Direction(self, *args) -> "gp_Dir" :
+    def Direction(self):
         """
         :rtype: gp_Dir
 
         """
-        return _GeomFill.GeomFill_LocationDraft_Direction(self, *args)
+        return _GeomFill.GeomFill_LocationDraft_Direction(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(GeomFill_LocationDraft self)"""
         return _GeomFill.GeomFill_LocationDraft__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_GeomFill_LocationDraft" :
+    def GetHandle(self):
         """GetHandle(GeomFill_LocationDraft self) -> Handle_GeomFill_LocationDraft"""
         return _GeomFill.GeomFill_LocationDraft_GetHandle(self)
 
@@ -7134,7 +7431,7 @@ Handle_GeomFill_LocationDraft._kill_pointed = new_instancemethod(_GeomFill.Handl
 Handle_GeomFill_LocationDraft_swigregister = _GeomFill.Handle_GeomFill_LocationDraft_swigregister
 Handle_GeomFill_LocationDraft_swigregister(Handle_GeomFill_LocationDraft)
 
-def Handle_GeomFill_LocationDraft_DownCast(*args) -> "Handle_GeomFill_LocationDraft const" :
+def Handle_GeomFill_LocationDraft_DownCast(*args):
   return _GeomFill.Handle_GeomFill_LocationDraft_DownCast(*args)
 Handle_GeomFill_LocationDraft_DownCast = _GeomFill.Handle_GeomFill_LocationDraft_DownCast
 
@@ -7149,7 +7446,7 @@ class GeomFill_LocationGuide(GeomFill_LocationLaw):
 
         """
         _GeomFill.GeomFill_LocationGuide_swiginit(self,_GeomFill.new_GeomFill_LocationGuide(*args))
-    def Set(self, *args) -> "void" :
+    def Set(self, *args):
         """
         :param Section:
         :type Section: Handle_GeomFill_SectionLaw &
@@ -7168,14 +7465,14 @@ class GeomFill_LocationGuide(GeomFill_LocationLaw):
         """
         return _GeomFill.GeomFill_LocationGuide_Set(self, *args)
 
-    def EraseRotation(self, *args) -> "void" :
+    def EraseRotation(self):
         """
         :rtype: None
 
         """
-        return _GeomFill.GeomFill_LocationGuide_EraseRotation(self, *args)
+        return _GeomFill.GeomFill_LocationGuide_EraseRotation(self)
 
-    def D0(self, *args) -> "Standard_Boolean" :
+    def D0(self, *args):
         """
         * compute Location
 
@@ -7202,21 +7499,21 @@ class GeomFill_LocationGuide(GeomFill_LocationLaw):
         """
         return _GeomFill.GeomFill_LocationGuide_D0(self, *args)
 
-    def Section(self, *args) -> "Handle_Geom_Curve" :
+    def Section(self):
         """
         :rtype: Handle_Geom_Curve
 
         """
-        return _GeomFill.GeomFill_LocationGuide_Section(self, *args)
+        return _GeomFill.GeomFill_LocationGuide_Section(self)
 
-    def Guide(self, *args) -> "Handle_Adaptor3d_HCurve" :
+    def Guide(self):
         """
         :rtype: Handle_Adaptor3d_HCurve
 
         """
-        return _GeomFill.GeomFill_LocationGuide_Guide(self, *args)
+        return _GeomFill.GeomFill_LocationGuide_Guide(self)
 
-    def SetOrigine(self, *args) -> "void" :
+    def SetOrigine(self, *args):
         """
         :param Param1:
         :type Param1: float
@@ -7227,7 +7524,7 @@ class GeomFill_LocationGuide(GeomFill_LocationLaw):
         """
         return _GeomFill.GeomFill_LocationGuide_SetOrigine(self, *args)
 
-    def ComputeAutomaticLaw(self, *args) -> "GeomFill_PipeError" :
+    def ComputeAutomaticLaw(self, *args):
         """
         :param ParAndRad:
         :type ParAndRad: Handle_TColgp_HArray1OfPnt2d
@@ -7236,11 +7533,11 @@ class GeomFill_LocationGuide(GeomFill_LocationLaw):
         """
         return _GeomFill.GeomFill_LocationGuide_ComputeAutomaticLaw(self, *args)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(GeomFill_LocationGuide self)"""
         return _GeomFill.GeomFill_LocationGuide__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_GeomFill_LocationGuide" :
+    def GetHandle(self):
         """GetHandle(GeomFill_LocationGuide self) -> Handle_GeomFill_LocationGuide"""
         return _GeomFill.GeomFill_LocationGuide_GetHandle(self)
 
@@ -7285,20 +7582,20 @@ Handle_GeomFill_LocationGuide._kill_pointed = new_instancemethod(_GeomFill.Handl
 Handle_GeomFill_LocationGuide_swigregister = _GeomFill.Handle_GeomFill_LocationGuide_swigregister
 Handle_GeomFill_LocationGuide_swigregister(Handle_GeomFill_LocationGuide)
 
-def Handle_GeomFill_LocationGuide_DownCast(*args) -> "Handle_GeomFill_LocationGuide const" :
+def Handle_GeomFill_LocationGuide_DownCast(*args):
   return _GeomFill.Handle_GeomFill_LocationGuide_DownCast(*args)
 Handle_GeomFill_LocationGuide_DownCast = _GeomFill.Handle_GeomFill_LocationGuide_DownCast
 
 class GeomFill_SectionGenerator(GeomFill_Profiler):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _GeomFill.GeomFill_SectionGenerator_swiginit(self,_GeomFill.new_GeomFill_SectionGenerator(*args))
-    def SetParam(self, *args) -> "void" :
+        _GeomFill.GeomFill_SectionGenerator_swiginit(self,_GeomFill.new_GeomFill_SectionGenerator())
+    def SetParam(self, *args):
         """
         :param Params:
         :type Params: Handle_TColStd_HArray1OfReal &
@@ -7307,22 +7604,22 @@ class GeomFill_SectionGenerator(GeomFill_Profiler):
         """
         return _GeomFill.GeomFill_SectionGenerator_SetParam(self, *args)
 
-    def GetShape(self, *args) -> "void" :
+    def GetShape(self):
         """
         :param NbPoles:
-        :type NbPoles: int &
+        :type NbPoles: Standard_Integer &
         :param NbKnots:
-        :type NbKnots: int &
+        :type NbKnots: Standard_Integer &
         :param Degree:
-        :type Degree: int &
+        :type Degree: Standard_Integer &
         :param NbPoles2d:
-        :type NbPoles2d: int &
+        :type NbPoles2d: Standard_Integer &
         :rtype: None
 
         """
-        return _GeomFill.GeomFill_SectionGenerator_GetShape(self, *args)
+        return _GeomFill.GeomFill_SectionGenerator_GetShape(self)
 
-    def Knots(self, *args) -> "void" :
+    def Knots(self, *args):
         """
         :param TKnots:
         :type TKnots: TColStd_Array1OfReal &
@@ -7331,7 +7628,7 @@ class GeomFill_SectionGenerator(GeomFill_Profiler):
         """
         return _GeomFill.GeomFill_SectionGenerator_Knots(self, *args)
 
-    def Mults(self, *args) -> "void" :
+    def Mults(self, *args):
         """
         :param TMults:
         :type TMults: TColStd_Array1OfInteger &
@@ -7340,12 +7637,12 @@ class GeomFill_SectionGenerator(GeomFill_Profiler):
         """
         return _GeomFill.GeomFill_SectionGenerator_Mults(self, *args)
 
-    def Section(self, *args) -> "void" :
+    def Section(self, *args):
         """
         * Used for the first and last section The method returns Standard_True if the derivatives are computed, otherwise it returns Standard_False.
 
         :param P:
-        :type P: int
+        :type P: Standard_Integer
         :param Poles:
         :type Poles: TColgp_Array1OfPnt
         :param DPoles:
@@ -7361,7 +7658,7 @@ class GeomFill_SectionGenerator(GeomFill_Profiler):
         :rtype: bool
 
         :param P:
-        :type P: int
+        :type P: Standard_Integer
         :param Poles:
         :type Poles: TColgp_Array1OfPnt
         :param Poles2d:
@@ -7373,12 +7670,12 @@ class GeomFill_SectionGenerator(GeomFill_Profiler):
         """
         return _GeomFill.GeomFill_SectionGenerator_Section(self, *args)
 
-    def Parameter(self, *args) -> "Standard_Real" :
+    def Parameter(self, *args):
         """
         * Returns the parameter of Section<P>, to impose it for the approximation.
 
         :param P:
-        :type P: int
+        :type P: Standard_Integer
         :rtype: float
 
         """
@@ -7419,11 +7716,11 @@ class GeomFill_SimpleBound(GeomFill_Boundary):
 
         """
         _GeomFill.GeomFill_SimpleBound_swiginit(self,_GeomFill.new_GeomFill_SimpleBound(*args))
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(GeomFill_SimpleBound self)"""
         return _GeomFill.GeomFill_SimpleBound__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_GeomFill_SimpleBound" :
+    def GetHandle(self):
         """GetHandle(GeomFill_SimpleBound self) -> Handle_GeomFill_SimpleBound"""
         return _GeomFill.GeomFill_SimpleBound_GetHandle(self)
 
@@ -7461,7 +7758,7 @@ Handle_GeomFill_SimpleBound._kill_pointed = new_instancemethod(_GeomFill.Handle_
 Handle_GeomFill_SimpleBound_swigregister = _GeomFill.Handle_GeomFill_SimpleBound_swigregister
 Handle_GeomFill_SimpleBound_swigregister(Handle_GeomFill_SimpleBound)
 
-def Handle_GeomFill_SimpleBound_DownCast(*args) -> "Handle_GeomFill_SimpleBound const" :
+def Handle_GeomFill_SimpleBound_DownCast(*args):
   return _GeomFill.Handle_GeomFill_SimpleBound_DownCast(*args)
 Handle_GeomFill_SimpleBound_DownCast = _GeomFill.Handle_GeomFill_SimpleBound_DownCast
 
@@ -7502,7 +7799,7 @@ class GeomFill_Stretch(GeomFill_Filling):
 
         """
         _GeomFill.GeomFill_Stretch_swiginit(self,_GeomFill.new_GeomFill_Stretch(*args))
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
         :param P1:
         :type P1: TColgp_Array1OfPnt
@@ -7556,12 +7853,12 @@ class GeomFill_TgtOnCoons(GeomFill_TgtField):
         :param K:
         :type K: Handle_GeomFill_CoonsAlgPatch &
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :rtype: None
 
         """
         _GeomFill.GeomFill_TgtOnCoons_swiginit(self,_GeomFill.new_GeomFill_TgtOnCoons(*args))
-    def D1(self, *args) -> "void" :
+    def D1(self, *args):
         """
         * Computes the derivative of the field of tangency at parameter W.
 
@@ -7582,11 +7879,11 @@ class GeomFill_TgtOnCoons(GeomFill_TgtField):
         """
         return _GeomFill.GeomFill_TgtOnCoons_D1(self, *args)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(GeomFill_TgtOnCoons self)"""
         return _GeomFill.GeomFill_TgtOnCoons__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_GeomFill_TgtOnCoons" :
+    def GetHandle(self):
         """GetHandle(GeomFill_TgtOnCoons self) -> Handle_GeomFill_TgtOnCoons"""
         return _GeomFill.GeomFill_TgtOnCoons_GetHandle(self)
 
@@ -7625,7 +7922,7 @@ Handle_GeomFill_TgtOnCoons._kill_pointed = new_instancemethod(_GeomFill.Handle_G
 Handle_GeomFill_TgtOnCoons_swigregister = _GeomFill.Handle_GeomFill_TgtOnCoons_swigregister
 Handle_GeomFill_TgtOnCoons_swigregister(Handle_GeomFill_TgtOnCoons)
 
-def Handle_GeomFill_TgtOnCoons_DownCast(*args) -> "Handle_GeomFill_TgtOnCoons const" :
+def Handle_GeomFill_TgtOnCoons_DownCast(*args):
   return _GeomFill.Handle_GeomFill_TgtOnCoons_DownCast(*args)
 Handle_GeomFill_TgtOnCoons_DownCast = _GeomFill.Handle_GeomFill_TgtOnCoons_DownCast
 
@@ -7633,14 +7930,14 @@ class GeomFill_TrihedronWithGuide(GeomFill_TrihedronLaw):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def Guide(self, *args) -> "Handle_Adaptor3d_HCurve" :
+    def Guide(self):
         """
         :rtype: Handle_Adaptor3d_HCurve
 
         """
-        return _GeomFill.GeomFill_TrihedronWithGuide_Guide(self, *args)
+        return _GeomFill.GeomFill_TrihedronWithGuide_Guide(self)
 
-    def Origine(self, *args) -> "void" :
+    def Origine(self, *args):
         """
         :param Param1:
         :type Param1: float
@@ -7651,20 +7948,20 @@ class GeomFill_TrihedronWithGuide(GeomFill_TrihedronLaw):
         """
         return _GeomFill.GeomFill_TrihedronWithGuide_Origine(self, *args)
 
-    def CurrentPointOnGuide(self, *args) -> "gp_Pnt" :
+    def CurrentPointOnGuide(self):
         """
         * Returns the current point on guide found by D0, D1 or D2.
 
         :rtype: gp_Pnt
 
         """
-        return _GeomFill.GeomFill_TrihedronWithGuide_CurrentPointOnGuide(self, *args)
+        return _GeomFill.GeomFill_TrihedronWithGuide_CurrentPointOnGuide(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(GeomFill_TrihedronWithGuide self)"""
         return _GeomFill.GeomFill_TrihedronWithGuide__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_GeomFill_TrihedronWithGuide" :
+    def GetHandle(self):
         """GetHandle(GeomFill_TrihedronWithGuide self) -> Handle_GeomFill_TrihedronWithGuide"""
         return _GeomFill.GeomFill_TrihedronWithGuide_GetHandle(self)
 
@@ -7705,7 +8002,7 @@ Handle_GeomFill_TrihedronWithGuide._kill_pointed = new_instancemethod(_GeomFill.
 Handle_GeomFill_TrihedronWithGuide_swigregister = _GeomFill.Handle_GeomFill_TrihedronWithGuide_swigregister
 Handle_GeomFill_TrihedronWithGuide_swigregister(Handle_GeomFill_TrihedronWithGuide)
 
-def Handle_GeomFill_TrihedronWithGuide_DownCast(*args) -> "Handle_GeomFill_TrihedronWithGuide const" :
+def Handle_GeomFill_TrihedronWithGuide_DownCast(*args):
   return _GeomFill.Handle_GeomFill_TrihedronWithGuide_DownCast(*args)
 Handle_GeomFill_TrihedronWithGuide_DownCast = _GeomFill.Handle_GeomFill_TrihedronWithGuide_DownCast
 
@@ -7724,13 +8021,33 @@ class GeomFill_UniformSection(GeomFill_SectionLaw):
         :type LastParameter: float
         :rtype: None
 
+        * Make an constant Law with C. [First, Last] define law definition domain
+
+        :param C:
+        :type C: Handle_Geom_Curve &
+        :param FirstParameter: default value is 0.0
+        :type FirstParameter: float
+        :param LastParameter: default value is 1.0
+        :type LastParameter: float
+        :rtype: None
+
+        * Make an constant Law with C. [First, Last] define law definition domain
+
+        :param C:
+        :type C: Handle_Geom_Curve &
+        :param FirstParameter: default value is 0.0
+        :type FirstParameter: float
+        :param LastParameter: default value is 1.0
+        :type LastParameter: float
+        :rtype: None
+
         """
         _GeomFill.GeomFill_UniformSection_swiginit(self,_GeomFill.new_GeomFill_UniformSection(*args))
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(GeomFill_UniformSection self)"""
         return _GeomFill.GeomFill_UniformSection__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_GeomFill_UniformSection" :
+    def GetHandle(self):
         """GetHandle(GeomFill_UniformSection self) -> Handle_GeomFill_UniformSection"""
         return _GeomFill.GeomFill_UniformSection_GetHandle(self)
 
@@ -7768,7 +8085,7 @@ Handle_GeomFill_UniformSection._kill_pointed = new_instancemethod(_GeomFill.Hand
 Handle_GeomFill_UniformSection_swigregister = _GeomFill.Handle_GeomFill_UniformSection_swigregister
 Handle_GeomFill_UniformSection_swigregister(Handle_GeomFill_UniformSection)
 
-def Handle_GeomFill_UniformSection_DownCast(*args) -> "Handle_GeomFill_UniformSection const" :
+def Handle_GeomFill_UniformSection_DownCast(*args):
   return _GeomFill.Handle_GeomFill_UniformSection_DownCast(*args)
 Handle_GeomFill_UniformSection_DownCast = _GeomFill.Handle_GeomFill_UniformSection_DownCast
 
@@ -7783,11 +8100,11 @@ class GeomFill_GuideTrihedronAC(GeomFill_TrihedronWithGuide):
 
         """
         _GeomFill.GeomFill_GuideTrihedronAC_swiginit(self,_GeomFill.new_GeomFill_GuideTrihedronAC(*args))
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(GeomFill_GuideTrihedronAC self)"""
         return _GeomFill.GeomFill_GuideTrihedronAC__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_GeomFill_GuideTrihedronAC" :
+    def GetHandle(self):
         """GetHandle(GeomFill_GuideTrihedronAC self) -> Handle_GeomFill_GuideTrihedronAC"""
         return _GeomFill.GeomFill_GuideTrihedronAC_GetHandle(self)
 
@@ -7825,7 +8142,7 @@ Handle_GeomFill_GuideTrihedronAC._kill_pointed = new_instancemethod(_GeomFill.Ha
 Handle_GeomFill_GuideTrihedronAC_swigregister = _GeomFill.Handle_GeomFill_GuideTrihedronAC_swigregister
 Handle_GeomFill_GuideTrihedronAC_swigregister(Handle_GeomFill_GuideTrihedronAC)
 
-def Handle_GeomFill_GuideTrihedronAC_DownCast(*args) -> "Handle_GeomFill_GuideTrihedronAC const" :
+def Handle_GeomFill_GuideTrihedronAC_DownCast(*args):
   return _GeomFill.Handle_GeomFill_GuideTrihedronAC_DownCast(*args)
 Handle_GeomFill_GuideTrihedronAC_DownCast = _GeomFill.Handle_GeomFill_GuideTrihedronAC_DownCast
 
@@ -7840,11 +8157,11 @@ class GeomFill_GuideTrihedronPlan(GeomFill_TrihedronWithGuide):
 
         """
         _GeomFill.GeomFill_GuideTrihedronPlan_swiginit(self,_GeomFill.new_GeomFill_GuideTrihedronPlan(*args))
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(GeomFill_GuideTrihedronPlan self)"""
         return _GeomFill.GeomFill_GuideTrihedronPlan__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_GeomFill_GuideTrihedronPlan" :
+    def GetHandle(self):
         """GetHandle(GeomFill_GuideTrihedronPlan self) -> Handle_GeomFill_GuideTrihedronPlan"""
         return _GeomFill.GeomFill_GuideTrihedronPlan_GetHandle(self)
 
@@ -7882,7 +8199,7 @@ Handle_GeomFill_GuideTrihedronPlan._kill_pointed = new_instancemethod(_GeomFill.
 Handle_GeomFill_GuideTrihedronPlan_swigregister = _GeomFill.Handle_GeomFill_GuideTrihedronPlan_swigregister
 Handle_GeomFill_GuideTrihedronPlan_swigregister(Handle_GeomFill_GuideTrihedronPlan)
 
-def Handle_GeomFill_GuideTrihedronPlan_DownCast(*args) -> "Handle_GeomFill_GuideTrihedronPlan const" :
+def Handle_GeomFill_GuideTrihedronPlan_DownCast(*args):
   return _GeomFill.Handle_GeomFill_GuideTrihedronPlan_DownCast(*args)
 Handle_GeomFill_GuideTrihedronPlan_DownCast = _GeomFill.Handle_GeomFill_GuideTrihedronPlan_DownCast
 

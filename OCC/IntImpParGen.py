@@ -115,8 +115,9 @@ import OCC.TCollection
 import OCC.MMgt
 class intimppargen(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
+    def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def DetermineTransition(*args) -> "Standard_Boolean" :
+    def DetermineTransition(*args):
         """
         * Template class for an implicit curve. Template class for a tool on a parameterised curve. Math function, instantiated inside the Intersector. Tool used by the package IntCurve and IntImpParGen
 
@@ -160,7 +161,7 @@ class intimppargen(object):
         return _IntImpParGen.intimppargen_DetermineTransition(*args)
 
     DetermineTransition = staticmethod(DetermineTransition)
-    def DeterminePosition(*args) -> "void" :
+    def DeterminePosition(*args):
         """
         :param Pos1:
         :type Pos1: IntRes2d_Position &
@@ -176,7 +177,7 @@ class intimppargen(object):
         return _IntImpParGen.intimppargen_DeterminePosition(*args)
 
     DeterminePosition = staticmethod(DeterminePosition)
-    def NormalizeOnDomain(*args) -> "Standard_Real &" :
+    def NormalizeOnDomain(*args):
         """
         :param Par1:
         :type Par1: float &
@@ -188,8 +189,6 @@ class intimppargen(object):
         return _IntImpParGen.intimppargen_NormalizeOnDomain(*args)
 
     NormalizeOnDomain = staticmethod(NormalizeOnDomain)
-    def __init__(self): 
-        _IntImpParGen.intimppargen_swiginit(self,_IntImpParGen.new_intimppargen())
     def __del__(self):
     	try:
     		self.thisown = False
@@ -202,7 +201,7 @@ intimppargen._kill_pointed = new_instancemethod(_IntImpParGen.intimppargen__kill
 intimppargen_swigregister = _IntImpParGen.intimppargen_swigregister
 intimppargen_swigregister(intimppargen)
 
-def intimppargen_DetermineTransition(*args) -> "Standard_Boolean" :
+def intimppargen_DetermineTransition(*args):
   """
     * Template class for an implicit curve. Template class for a tool on a parameterised curve. Math function, instantiated inside the Intersector. Tool used by the package IntCurve and IntImpParGen
 
@@ -245,7 +244,7 @@ def intimppargen_DetermineTransition(*args) -> "Standard_Boolean" :
     """
   return _IntImpParGen.intimppargen_DetermineTransition(*args)
 
-def intimppargen_DeterminePosition(*args) -> "void" :
+def intimppargen_DeterminePosition(*args):
   """
     :param Pos1:
     :type Pos1: IntRes2d_Position &
@@ -260,7 +259,7 @@ def intimppargen_DeterminePosition(*args) -> "void" :
     """
   return _IntImpParGen.intimppargen_DeterminePosition(*args)
 
-def intimppargen_NormalizeOnDomain(*args) -> "Standard_Real &" :
+def intimppargen_NormalizeOnDomain(*args):
   """
     :param Par1:
     :type Par1: float &

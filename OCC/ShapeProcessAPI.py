@@ -146,19 +146,47 @@ class ShapeProcessAPI_ApplySequence(object):
         :type seqName: char *
         :rtype: None
 
+        * Creates an object and loads resource file and sequence of operators given by their names.
+
+        :param rscName:
+        :type rscName: char *
+        :param seqName: default value is 
+        :type seqName: char *
+        :rtype: None
+
         """
         _ShapeProcessAPI.ShapeProcessAPI_ApplySequence_swiginit(self,_ShapeProcessAPI.new_ShapeProcessAPI_ApplySequence(*args))
-    def Context(self, *args) -> "Handle_ShapeProcess_ShapeContext &" :
+    def Context(self):
         """
         * Returns object for managing resource file and sequence of operators.
 
         :rtype: Handle_ShapeProcess_ShapeContext
 
         """
-        return _ShapeProcessAPI.ShapeProcessAPI_ApplySequence_Context(self, *args)
+        return _ShapeProcessAPI.ShapeProcessAPI_ApplySequence_Context(self)
 
-    def PrepareShape(self, *args) -> "TopoDS_Shape" :
+    def PrepareShape(self, *args):
         """
+        * Performs sequence of operators stored in myRsc. If <fillmap> is True adds history 'shape-shape' into myMap for shape and its subshapes until level <until> (included). If <until> is TopAbs_SHAPE, all the subshapes are considered.
+
+        :param shape:
+        :type shape: TopoDS_Shape &
+        :param fillmap: default value is Standard_False
+        :type fillmap: bool
+        :param until: default value is TopAbs_SHAPE
+        :type until: TopAbs_ShapeEnum
+        :rtype: TopoDS_Shape
+
+        * Performs sequence of operators stored in myRsc. If <fillmap> is True adds history 'shape-shape' into myMap for shape and its subshapes until level <until> (included). If <until> is TopAbs_SHAPE, all the subshapes are considered.
+
+        :param shape:
+        :type shape: TopoDS_Shape &
+        :param fillmap: default value is Standard_False
+        :type fillmap: bool
+        :param until: default value is TopAbs_SHAPE
+        :type until: TopAbs_ShapeEnum
+        :rtype: TopoDS_Shape
+
         * Performs sequence of operators stored in myRsc. If <fillmap> is True adds history 'shape-shape' into myMap for shape and its subshapes until level <until> (included). If <until> is TopAbs_SHAPE, all the subshapes are considered.
 
         :param shape:
@@ -172,32 +200,32 @@ class ShapeProcessAPI_ApplySequence(object):
         """
         return _ShapeProcessAPI.ShapeProcessAPI_ApplySequence_PrepareShape(self, *args)
 
-    def ClearMap(self, *args) -> "void" :
+    def ClearMap(self):
         """
         * Clears myMap with accumulated history.
 
         :rtype: None
 
         """
-        return _ShapeProcessAPI.ShapeProcessAPI_ApplySequence_ClearMap(self, *args)
+        return _ShapeProcessAPI.ShapeProcessAPI_ApplySequence_ClearMap(self)
 
-    def Map(self, *args) -> "TopTools_DataMapOfShapeShape const &" :
+    def Map(self):
         """
         * Returns myMap with accumulated history.
 
         :rtype: TopTools_DataMapOfShapeShape
 
         """
-        return _ShapeProcessAPI.ShapeProcessAPI_ApplySequence_Map(self, *args)
+        return _ShapeProcessAPI.ShapeProcessAPI_ApplySequence_Map(self)
 
-    def PrintPreparationResult(self, *args) -> "void" :
+    def PrintPreparationResult(self):
         """
         * Prints result of preparation onto the messenger of the context. Note that results can be accumulated from previous preparations it method ClearMap was not called before PrepareShape.
 
         :rtype: None
 
         """
-        return _ShapeProcessAPI.ShapeProcessAPI_ApplySequence_PrintPreparationResult(self, *args)
+        return _ShapeProcessAPI.ShapeProcessAPI_ApplySequence_PrintPreparationResult(self)
 
     def __del__(self):
     	try:

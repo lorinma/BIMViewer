@@ -141,8 +141,9 @@ import OCC.ChFiDS
 import OCC.Law
 class ChFiKPart_ComputeData(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
+    def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def Compute(*args) -> "Standard_Boolean" :
+    def Compute(*args):
         """
         * Computes a simple fillet in several particular cases.
 
@@ -161,14 +162,14 @@ class ChFiKPart_ComputeData(object):
         :param Sp:
         :type Sp: Handle_ChFiDS_Spine &
         :param Iedge:
-        :type Iedge: int
+        :type Iedge: Standard_Integer
         :rtype: bool
 
         """
         return _ChFiKPart.ChFiKPart_ComputeData_Compute(*args)
 
     Compute = staticmethod(Compute)
-    def ComputeCorner(*args) -> "Standard_Boolean" :
+    def ComputeCorner(*args):
         """
         * Computes a toric or spheric corner fillet.
 
@@ -258,8 +259,6 @@ class ChFiKPart_ComputeData(object):
         return _ChFiKPart.ChFiKPart_ComputeData_ComputeCorner(*args)
 
     ComputeCorner = staticmethod(ComputeCorner)
-    def __init__(self): 
-        _ChFiKPart.ChFiKPart_ComputeData_swiginit(self,_ChFiKPart.new_ChFiKPart_ComputeData())
     def __del__(self):
     	try:
     		self.thisown = False
@@ -272,7 +271,7 @@ ChFiKPart_ComputeData._kill_pointed = new_instancemethod(_ChFiKPart.ChFiKPart_Co
 ChFiKPart_ComputeData_swigregister = _ChFiKPart.ChFiKPart_ComputeData_swigregister
 ChFiKPart_ComputeData_swigregister(ChFiKPart_ComputeData)
 
-def ChFiKPart_ComputeData_Compute(*args) -> "Standard_Boolean" :
+def ChFiKPart_ComputeData_Compute(*args):
   """
     * Computes a simple fillet in several particular cases.
 
@@ -291,13 +290,13 @@ def ChFiKPart_ComputeData_Compute(*args) -> "Standard_Boolean" :
     :param Sp:
     :type Sp: Handle_ChFiDS_Spine &
     :param Iedge:
-    :type Iedge: int
+    :type Iedge: Standard_Integer
     :rtype: bool
 
     """
   return _ChFiKPart.ChFiKPart_ComputeData_Compute(*args)
 
-def ChFiKPart_ComputeData_ComputeCorner(*args) -> "Standard_Boolean" :
+def ChFiKPart_ComputeData_ComputeCorner(*args):
   """
     * Computes a toric or spheric corner fillet.
 
@@ -399,7 +398,7 @@ class ChFiKPart_DataMapIteratorOfRstMap(OCC.TCollection.TCollection_BasicMapIter
 
         """
         _ChFiKPart.ChFiKPart_DataMapIteratorOfRstMap_swiginit(self,_ChFiKPart.new_ChFiKPart_DataMapIteratorOfRstMap(*args))
-    def Initialize(self, *args) -> "void" :
+    def Initialize(self, *args):
         """
         :param aMap:
         :type aMap: ChFiKPart_RstMap &
@@ -408,19 +407,19 @@ class ChFiKPart_DataMapIteratorOfRstMap(OCC.TCollection.TCollection_BasicMapIter
         """
         return _ChFiKPart.ChFiKPart_DataMapIteratorOfRstMap_Initialize(self, *args)
 
-    def Key(self, *args) -> "Standard_Integer const &" :
+    def Key(self):
         """
         :rtype: int
 
         """
-        return _ChFiKPart.ChFiKPart_DataMapIteratorOfRstMap_Key(self, *args)
+        return _ChFiKPart.ChFiKPart_DataMapIteratorOfRstMap_Key(self)
 
-    def Value(self, *args) -> "Handle_Adaptor2d_HCurve2d const &" :
+    def Value(self):
         """
         :rtype: Handle_Adaptor2d_HCurve2d
 
         """
-        return _ChFiKPart.ChFiKPart_DataMapIteratorOfRstMap_Value(self, *args)
+        return _ChFiKPart.ChFiKPart_DataMapIteratorOfRstMap_Value(self)
 
     def __del__(self):
     	try:
@@ -443,7 +442,7 @@ class ChFiKPart_DataMapNodeOfRstMap(OCC.TCollection.TCollection_MapNode):
     def __init__(self, *args): 
         """
         :param K:
-        :type K: int &
+        :type K: Standard_Integer &
         :param I:
         :type I: Handle_Adaptor2d_HCurve2d &
         :param n:
@@ -452,26 +451,26 @@ class ChFiKPart_DataMapNodeOfRstMap(OCC.TCollection.TCollection_MapNode):
 
         """
         _ChFiKPart.ChFiKPart_DataMapNodeOfRstMap_swiginit(self,_ChFiKPart.new_ChFiKPart_DataMapNodeOfRstMap(*args))
-    def GetKey(self) -> "Standard_Integer" :
+    def GetKey(self):
         """GetKey(ChFiKPart_DataMapNodeOfRstMap self) -> Standard_Integer"""
         return _ChFiKPart.ChFiKPart_DataMapNodeOfRstMap_GetKey(self)
 
-    def SetKey(self, *args) -> "void" :
+    def SetKey(self, *args):
         """SetKey(ChFiKPart_DataMapNodeOfRstMap self, Standard_Integer value)"""
         return _ChFiKPart.ChFiKPart_DataMapNodeOfRstMap_SetKey(self, *args)
 
-    def Value(self, *args) -> "Handle_Adaptor2d_HCurve2d &" :
+    def Value(self):
         """
         :rtype: Handle_Adaptor2d_HCurve2d
 
         """
-        return _ChFiKPart.ChFiKPart_DataMapNodeOfRstMap_Value(self, *args)
+        return _ChFiKPart.ChFiKPart_DataMapNodeOfRstMap_Value(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(ChFiKPart_DataMapNodeOfRstMap self)"""
         return _ChFiKPart.ChFiKPart_DataMapNodeOfRstMap__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_ChFiKPart_DataMapNodeOfRstMap" :
+    def GetHandle(self):
         """GetHandle(ChFiKPart_DataMapNodeOfRstMap self) -> Handle_ChFiKPart_DataMapNodeOfRstMap"""
         return _ChFiKPart.ChFiKPart_DataMapNodeOfRstMap_GetHandle(self)
 
@@ -512,22 +511,26 @@ Handle_ChFiKPart_DataMapNodeOfRstMap._kill_pointed = new_instancemethod(_ChFiKPa
 Handle_ChFiKPart_DataMapNodeOfRstMap_swigregister = _ChFiKPart.Handle_ChFiKPart_DataMapNodeOfRstMap_swigregister
 Handle_ChFiKPart_DataMapNodeOfRstMap_swigregister(Handle_ChFiKPart_DataMapNodeOfRstMap)
 
-def Handle_ChFiKPart_DataMapNodeOfRstMap_DownCast(*args) -> "Handle_ChFiKPart_DataMapNodeOfRstMap const" :
+def Handle_ChFiKPart_DataMapNodeOfRstMap_DownCast(*args):
   return _ChFiKPart.Handle_ChFiKPart_DataMapNodeOfRstMap_DownCast(*args)
 Handle_ChFiKPart_DataMapNodeOfRstMap_DownCast = _ChFiKPart.Handle_ChFiKPart_DataMapNodeOfRstMap_DownCast
 
 class ChFiKPart_RstMap(OCC.TCollection.TCollection_BasicMap):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self, NbBuckets=1): 
         """
         :param NbBuckets: default value is 1
-        :type NbBuckets: int
+        :type NbBuckets: Standard_Integer
+        :rtype: None
+
+        :param NbBuckets: default value is 1
+        :type NbBuckets: Standard_Integer
         :rtype: None
 
         """
-        _ChFiKPart.ChFiKPart_RstMap_swiginit(self,_ChFiKPart.new_ChFiKPart_RstMap(*args))
-    def Assign(self, *args) -> "ChFiKPart_RstMap &" :
+        _ChFiKPart.ChFiKPart_RstMap_swiginit(self,_ChFiKPart.new_ChFiKPart_RstMap(NbBuckets))
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: ChFiKPart_RstMap &
@@ -536,7 +539,7 @@ class ChFiKPart_RstMap(OCC.TCollection.TCollection_BasicMap):
         """
         return _ChFiKPart.ChFiKPart_RstMap_Assign(self, *args)
 
-    def Set(self, *args) -> "ChFiKPart_RstMap &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: ChFiKPart_RstMap &
@@ -545,26 +548,26 @@ class ChFiKPart_RstMap(OCC.TCollection.TCollection_BasicMap):
         """
         return _ChFiKPart.ChFiKPart_RstMap_Set(self, *args)
 
-    def ReSize(self, *args) -> "void" :
+    def ReSize(self, *args):
         """
         :param NbBuckets:
-        :type NbBuckets: int
+        :type NbBuckets: Standard_Integer
         :rtype: None
 
         """
         return _ChFiKPart.ChFiKPart_RstMap_ReSize(self, *args)
 
-    def Clear(self, *args) -> "void" :
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _ChFiKPart.ChFiKPart_RstMap_Clear(self, *args)
+        return _ChFiKPart.ChFiKPart_RstMap_Clear(self)
 
-    def Bind(self, *args) -> "Standard_Boolean" :
+    def Bind(self, *args):
         """
         :param K:
-        :type K: int &
+        :type K: Standard_Integer &
         :param I:
         :type I: Handle_Adaptor2d_HCurve2d &
         :rtype: bool
@@ -572,61 +575,61 @@ class ChFiKPart_RstMap(OCC.TCollection.TCollection_BasicMap):
         """
         return _ChFiKPart.ChFiKPart_RstMap_Bind(self, *args)
 
-    def IsBound(self, *args) -> "Standard_Boolean" :
+    def IsBound(self):
         """
         :param K:
-        :type K: int &
+        :type K: Standard_Integer &
         :rtype: bool
 
         """
-        return _ChFiKPart.ChFiKPart_RstMap_IsBound(self, *args)
+        return _ChFiKPart.ChFiKPart_RstMap_IsBound(self)
 
-    def UnBind(self, *args) -> "Standard_Boolean" :
+    def UnBind(self):
         """
         :param K:
-        :type K: int &
+        :type K: Standard_Integer &
         :rtype: bool
 
         """
-        return _ChFiKPart.ChFiKPart_RstMap_UnBind(self, *args)
+        return _ChFiKPart.ChFiKPart_RstMap_UnBind(self)
 
-    def Find(self, *args) -> "Handle_Adaptor2d_HCurve2d const &" :
+    def Find(self):
         """
         :param K:
-        :type K: int &
+        :type K: Standard_Integer &
         :rtype: Handle_Adaptor2d_HCurve2d
 
         """
-        return _ChFiKPart.ChFiKPart_RstMap_Find(self, *args)
+        return _ChFiKPart.ChFiKPart_RstMap_Find(self)
 
-    def ChangeFind(self, *args) -> "Handle_Adaptor2d_HCurve2d &" :
+    def ChangeFind(self):
         """
         :param K:
-        :type K: int &
+        :type K: Standard_Integer &
         :rtype: Handle_Adaptor2d_HCurve2d
 
         """
-        return _ChFiKPart.ChFiKPart_RstMap_ChangeFind(self, *args)
+        return _ChFiKPart.ChFiKPart_RstMap_ChangeFind(self)
 
-    def Find1(self, *args) -> "Standard_Address" :
+    def Find1(self):
         """
         :param K:
-        :type K: int &
+        :type K: Standard_Integer &
         :rtype: Standard_Address
 
         """
-        return _ChFiKPart.ChFiKPart_RstMap_Find1(self, *args)
+        return _ChFiKPart.ChFiKPart_RstMap_Find1(self)
 
-    def ChangeFind1(self, *args) -> "Standard_Address" :
+    def ChangeFind1(self):
         """
         :param K:
-        :type K: int &
+        :type K: Standard_Integer &
         :rtype: Standard_Address
 
         """
-        return _ChFiKPart.ChFiKPart_RstMap_ChangeFind1(self, *args)
+        return _ChFiKPart.ChFiKPart_RstMap_ChangeFind1(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(ChFiKPart_RstMap self)"""
         return _ChFiKPart.ChFiKPart_RstMap__kill_pointed(self)
 

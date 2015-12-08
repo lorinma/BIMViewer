@@ -131,7 +131,7 @@ GCPnts_DefComposite = _GCPnts.GCPnts_DefComposite
 class GCPnts_AbscissaPoint(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def Length(*args) -> "Standard_Real" :
+    def Length(*args):
         """
         * Computes the length of the Curve <C>.
 
@@ -311,23 +311,23 @@ class GCPnts_AbscissaPoint(object):
 
         """
         _GCPnts.GCPnts_AbscissaPoint_swiginit(self,_GCPnts.new_GCPnts_AbscissaPoint(*args))
-    def IsDone(self, *args) -> "Standard_Boolean" :
+    def IsDone(self):
         """
         * True if the computation was successful, False otherwise. IsDone is a protection against: - non-convergence of the algorithm - querying the results before computation.
 
         :rtype: bool
 
         """
-        return _GCPnts.GCPnts_AbscissaPoint_IsDone(self, *args)
+        return _GCPnts.GCPnts_AbscissaPoint_IsDone(self)
 
-    def Parameter(self, *args) -> "Standard_Real" :
+    def Parameter(self):
         """
         * Returns the parameter on the curve of the point solution of this algorithm. Exceptions StdFail_NotDone if the computation was not successful, or was not done.
 
         :rtype: float
 
         """
-        return _GCPnts.GCPnts_AbscissaPoint_Parameter(self, *args)
+        return _GCPnts.GCPnts_AbscissaPoint_Parameter(self)
 
     def __del__(self):
     	try:
@@ -343,7 +343,7 @@ GCPnts_AbscissaPoint._kill_pointed = new_instancemethod(_GCPnts.GCPnts_AbscissaP
 GCPnts_AbscissaPoint_swigregister = _GCPnts.GCPnts_AbscissaPoint_swigregister
 GCPnts_AbscissaPoint_swigregister(GCPnts_AbscissaPoint)
 
-def GCPnts_AbscissaPoint_Length(*args) -> "Standard_Real" :
+def GCPnts_AbscissaPoint_Length(*args):
   """
     * Computes the length of the Curve <C>.
 
@@ -434,7 +434,7 @@ class GCPnts_QuasiUniformAbscissa(object):
         :param C:
         :type C: Adaptor3d_Curve &
         :param NbPoints:
-        :type NbPoints: int
+        :type NbPoints: Standard_Integer
         :rtype: None
 
         * Computes a uniform abscissa distribution of points on the part of curve C limited by the two parameter values U1 and U2, where Abscissa is the curvilinear distance between two consecutive points of the distribution. The first point of the distribution is either the origin of curve C or the point of parameter U1. The following points are computed such that the curvilinear distance between two consecutive points is equal to Abscissa. The last point of the distribution is either the end point of curve C or the point of parameter U2. However the curvilinear distance between this last point and the point just preceding it in the distribution is, of course, generally not equal to Abscissa. Use the function IsDone to verify that the computation was successful, the function NbPoints to obtain the number of points of the computed distribution, and the function Parameter to read the parameter of each point. Warning The roles of U1 and U2 are inverted if U1 > U2 . Warning C is an adapted curve, that is, an object which is an interface between: - the services provided by either a 2D curve from the package Geom2d (in the case of an Adaptor2d_Curve2d curve) or a 3D curve from the package Geom (in the case of an Adaptor3d_Curve curve), - and those required on the curve by the computation algorithm.
@@ -442,7 +442,7 @@ class GCPnts_QuasiUniformAbscissa(object):
         :param C:
         :type C: Adaptor3d_Curve &
         :param NbPoints:
-        :type NbPoints: int
+        :type NbPoints: Standard_Integer
         :param U1:
         :type U1: float
         :param U2:
@@ -454,7 +454,7 @@ class GCPnts_QuasiUniformAbscissa(object):
         :param C:
         :type C: Adaptor2d_Curve2d &
         :param NbPoints:
-        :type NbPoints: int
+        :type NbPoints: Standard_Integer
         :rtype: None
 
         * Computes a Uniform abscissa distribution of points on a part of the Curve2d <C>.
@@ -462,7 +462,7 @@ class GCPnts_QuasiUniformAbscissa(object):
         :param C:
         :type C: Adaptor2d_Curve2d &
         :param NbPoints:
-        :type NbPoints: int
+        :type NbPoints: Standard_Integer
         :param U1:
         :type U1: float
         :param U2:
@@ -471,14 +471,14 @@ class GCPnts_QuasiUniformAbscissa(object):
 
         """
         _GCPnts.GCPnts_QuasiUniformAbscissa_swiginit(self,_GCPnts.new_GCPnts_QuasiUniformAbscissa(*args))
-    def Initialize(self, *args) -> "void" :
+    def Initialize(self, *args):
         """
         * Initialize the algoritms with <C>, <NbPoints> and
 
         :param C:
         :type C: Adaptor3d_Curve &
         :param NbPoints:
-        :type NbPoints: int
+        :type NbPoints: Standard_Integer
         :rtype: None
 
         * Initialize the algoritms with <C>, <Abscissa>, <U1>, <U2>.
@@ -486,7 +486,7 @@ class GCPnts_QuasiUniformAbscissa(object):
         :param C:
         :type C: Adaptor3d_Curve &
         :param NbPoints:
-        :type NbPoints: int
+        :type NbPoints: Standard_Integer
         :param U1:
         :type U1: float
         :param U2:
@@ -498,7 +498,7 @@ class GCPnts_QuasiUniformAbscissa(object):
         :param C:
         :type C: Adaptor2d_Curve2d &
         :param NbPoints:
-        :type NbPoints: int
+        :type NbPoints: Standard_Integer
         :rtype: None
 
         * Initialize the algoritms with <C>, <Abscissa>, <U1>, <U2>.
@@ -506,7 +506,7 @@ class GCPnts_QuasiUniformAbscissa(object):
         :param C:
         :type C: Adaptor2d_Curve2d &
         :param NbPoints:
-        :type NbPoints: int
+        :type NbPoints: Standard_Integer
         :param U1:
         :type U1: float
         :param U2:
@@ -516,30 +516,30 @@ class GCPnts_QuasiUniformAbscissa(object):
         """
         return _GCPnts.GCPnts_QuasiUniformAbscissa_Initialize(self, *args)
 
-    def IsDone(self, *args) -> "Standard_Boolean" :
+    def IsDone(self):
         """
         * Returns true if the computation was successful. IsDone is a protection against: - non-convergence of the algorithm - querying the results before computation.
 
         :rtype: bool
 
         """
-        return _GCPnts.GCPnts_QuasiUniformAbscissa_IsDone(self, *args)
+        return _GCPnts.GCPnts_QuasiUniformAbscissa_IsDone(self)
 
-    def NbPoints(self, *args) -> "Standard_Integer" :
+    def NbPoints(self):
         """
         * Returns the number of points of the distribution computed by this algorithm. This value is either: - the one imposed on the algorithm at the time of construction (or initialization), or - the one computed by the algorithm when the curvilinear distance between two consecutive points of the distribution is imposed on the algorithm at the time of construction (or initialization). Exceptions StdFail_NotDone if this algorithm has not been initialized, or if the computation was not successful.
 
         :rtype: int
 
         """
-        return _GCPnts.GCPnts_QuasiUniformAbscissa_NbPoints(self, *args)
+        return _GCPnts.GCPnts_QuasiUniformAbscissa_NbPoints(self)
 
-    def Parameter(self, *args) -> "Standard_Real" :
+    def Parameter(self, *args):
         """
         * Returns the parameter of the point of index Index in the distribution computed by this algorithm. Warning Index must be greater than or equal to 1, and less than or equal to the number of points of the distribution. However, pay particular attention as this condition is not checked by this function. Exceptions StdFail_NotDone if this algorithm has not been initialized, or if the computation was not successful.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: float
 
         """
@@ -583,9 +583,43 @@ class GCPnts_QuasiUniformDeflection(object):
         * Computes a QuasiUniform Deflection distribution of points on the Curve <C>.
 
         :param C:
+        :type C: Adaptor3d_Curve &
+        :param Deflection:
+        :type Deflection: float
+        :param Continuity: default value is GeomAbs_C1
+        :type Continuity: GeomAbs_Shape
+        :rtype: None
+
+        * Computes a QuasiUniform Deflection distribution of points on the Curve <C>.
+
+        :param C:
         :type C: Adaptor2d_Curve2d &
         :param Deflection:
         :type Deflection: float
+        :param Continuity: default value is GeomAbs_C1
+        :type Continuity: GeomAbs_Shape
+        :rtype: None
+
+        * Computes a QuasiUniform Deflection distribution of points on the Curve <C>.
+
+        :param C:
+        :type C: Adaptor2d_Curve2d &
+        :param Deflection:
+        :type Deflection: float
+        :param Continuity: default value is GeomAbs_C1
+        :type Continuity: GeomAbs_Shape
+        :rtype: None
+
+        * Computes a QuasiUniform Deflection distribution of points on a part of the Curve <C>.
+
+        :param C:
+        :type C: Adaptor3d_Curve &
+        :param Deflection:
+        :type Deflection: float
+        :param U1:
+        :type U1: float
+        :param U2:
+        :type U2: float
         :param Continuity: default value is GeomAbs_C1
         :type Continuity: GeomAbs_Shape
         :rtype: None
@@ -618,10 +652,34 @@ class GCPnts_QuasiUniformDeflection(object):
         :type Continuity: GeomAbs_Shape
         :rtype: None
 
+        * Computes a QuasiUniform Deflection distribution of points on a part of the Curve <C>. This and the above algorithms compute a distribution of points: - on the curve C, or - on the part of curve C limited by the two parameter values U1 and U2, where the deflection resulting from the distributed points is not greater than Deflection. The first point of the distribution is either the origin of curve C or the point of parameter U1. The last point of the distribution is either the end point of curve C or the point of parameter U2. Intermediate points of the distribution are built such that the deflection is not greater than Deflection. Using the following evaluation of the deflection: if Pi and Pj are two consecutive points of the distribution, respectively of parameter ui and uj on the curve, the deflection is the distance between: - the mid-point of Pi and Pj (the center of the chord joining these two points) - and the point of mid-parameter of these two points (the point of parameter [(ui+uj) / 2 ] on curve C). Continuity, defaulted to GeomAbs_C1, gives the degree of continuity of the curve C. (Note that C is an Adaptor3d_Curve or an Adaptor2d_Curve2d object, and does not know the degree of continuity of the underlying curve). Use the function IsDone to verify that the computation was successful, the function NbPoints to obtain the number of points of the computed distribution, and the function Parameter to read the parameter of each point. Warning - The roles of U1 and U2 are inverted if U1 > U2. - Derivative functions on the curve are called according to Continuity. An error may occur if Continuity is greater than the real degree of continuity of the curve. Warning C is an adapted curve, i.e. an object which is an interface between: - the services provided by either a 2D curve from the package Geom2d (in the case of an Adaptor2d_Curve2d curve) or a 3D curve from the package Geom (in the case of an Adaptor3d_Curve curve), - and those required on the curve by the computation algorithm.
+
+        :param C:
+        :type C: Adaptor2d_Curve2d &
+        :param Deflection:
+        :type Deflection: float
+        :param U1:
+        :type U1: float
+        :param U2:
+        :type U2: float
+        :param Continuity: default value is GeomAbs_C1
+        :type Continuity: GeomAbs_Shape
+        :rtype: None
+
         """
         _GCPnts.GCPnts_QuasiUniformDeflection_swiginit(self,_GCPnts.new_GCPnts_QuasiUniformDeflection(*args))
-    def Initialize(self, *args) -> "void" :
+    def Initialize(self, *args):
         """
+        * Initialize the algoritms with <C>, <Deflection>
+
+        :param C:
+        :type C: Adaptor3d_Curve &
+        :param Deflection:
+        :type Deflection: float
+        :param Continuity: default value is GeomAbs_C1
+        :type Continuity: GeomAbs_Shape
+        :rtype: None
+
         * Initialize the algoritms with <C>, <Deflection>
 
         :param C:
@@ -638,6 +696,30 @@ class GCPnts_QuasiUniformDeflection(object):
         :type C: Adaptor2d_Curve2d &
         :param Deflection:
         :type Deflection: float
+        :param Continuity: default value is GeomAbs_C1
+        :type Continuity: GeomAbs_Shape
+        :rtype: None
+
+        * Initialize the algoritms with <C>, <Deflection>
+
+        :param C:
+        :type C: Adaptor2d_Curve2d &
+        :param Deflection:
+        :type Deflection: float
+        :param Continuity: default value is GeomAbs_C1
+        :type Continuity: GeomAbs_Shape
+        :rtype: None
+
+        * Initialize the algoritms with <C>, <Deflection>, <U1>,<U2>
+
+        :param C:
+        :type C: Adaptor3d_Curve &
+        :param Deflection:
+        :type Deflection: float
+        :param U1:
+        :type U1: float
+        :param U2:
+        :type U2: float
         :param Continuity: default value is GeomAbs_C1
         :type Continuity: GeomAbs_Shape
         :rtype: None
@@ -670,57 +752,71 @@ class GCPnts_QuasiUniformDeflection(object):
         :type Continuity: GeomAbs_Shape
         :rtype: None
 
+        * Initialize the algoritms with <C>, <Deflection>, -- <U1>,<U2> This and the above algorithms initialize (or reinitialize) this algorithm and compute a distribution of points: - on the curve C, or - on the part of curve C limited by the two parameter values U1 and U2, where the deflection resulting from the distributed points is not greater than Deflection. The first point of the distribution is either the origin of curve C or the point of parameter U1. The last point of the distribution is either the end point of curve C or the point of parameter U2. Intermediate points of the distribution are built in such a way that the deflection is not greater than Deflection. Using the following evaluation of the deflection: if Pi and Pj are two consecutive points of the distribution, respectively of parameter ui and uj on the curve, the deflection is the distance between: - the mid-point of Pi and Pj (the center of the chord joining these two points) - and the point of mid-parameter of these two points (the point of parameter [(ui+uj) / 2 ] on curve C). Continuity, defaulted to GeomAbs_C1, gives the degree of continuity of the curve C. (Note that C is an Adaptor3d_Curve or an Adaptor2d_Curve2d object, and does not know the degree of continuity of the underlying curve). Use the function IsDone to verify that the computation was successful, the function NbPoints to obtain the number of points of the computed distribution, and the function Parameter to read the parameter of each point. Warning - The roles of U1 and U2 are inverted if U1 > U2. - Derivative functions on the curve are called according to Continuity. An error may occur if Continuity is greater than the real degree of continuity of the curve. Warning C is an adapted curve, i.e. an object which is an interface between: - the services provided by either a 2D curve from the package Geom2d (in the case of an Adaptor2d_Curve2d curve) or a 3D curve from the package Geom (in the case of an Adaptor3d_Curve curve), and those required on the curve by the computation algorithm.
+
+        :param C:
+        :type C: Adaptor2d_Curve2d &
+        :param Deflection:
+        :type Deflection: float
+        :param U1:
+        :type U1: float
+        :param U2:
+        :type U2: float
+        :param Continuity: default value is GeomAbs_C1
+        :type Continuity: GeomAbs_Shape
+        :rtype: None
+
         """
         return _GCPnts.GCPnts_QuasiUniformDeflection_Initialize(self, *args)
 
-    def IsDone(self, *args) -> "Standard_Boolean" :
+    def IsDone(self):
         """
         * Returns true if the computation was successful. IsDone is a protection against: - non-convergence of the algorithm - querying the results before computation.
 
         :rtype: bool
 
         """
-        return _GCPnts.GCPnts_QuasiUniformDeflection_IsDone(self, *args)
+        return _GCPnts.GCPnts_QuasiUniformDeflection_IsDone(self)
 
-    def NbPoints(self, *args) -> "Standard_Integer" :
+    def NbPoints(self):
         """
         * Returns the number of points of the distribution computed by this algorithm. Exceptions StdFail_NotDone if this algorithm has not been initialized, or if the computation was not successful.
 
         :rtype: int
 
         """
-        return _GCPnts.GCPnts_QuasiUniformDeflection_NbPoints(self, *args)
+        return _GCPnts.GCPnts_QuasiUniformDeflection_NbPoints(self)
 
-    def Parameter(self, *args) -> "Standard_Real" :
+    def Parameter(self, *args):
         """
         * Returns the parameter of the point of index Index in the distribution computed by this algorithm. Warning Index must be greater than or equal to 1, and less than or equal to the number of points of the distribution. However, pay particular attention as this condition is not checked by this function. Exceptions StdFail_NotDone if this algorithm has not been initialized, or if the computation was not successful.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: float
 
         """
         return _GCPnts.GCPnts_QuasiUniformDeflection_Parameter(self, *args)
 
-    def Value(self, *args) -> "gp_Pnt" :
+    def Value(self, *args):
         """
         * Returns the point of index Index in the distribution computed by this algorithm. Warning Index must be greater than or equal to 1, and less than or equal to the number of points of the distribution. However, pay particular attention as this condition is not checked by this function. Exceptions StdFail_NotDone if this algorithm has not been initialized, or if the computation was not successful.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: gp_Pnt
 
         """
         return _GCPnts.GCPnts_QuasiUniformDeflection_Value(self, *args)
 
-    def Deflection(self, *args) -> "Standard_Real" :
+    def Deflection(self):
         """
         * Returns the deflection between the curve and the polygon resulting from the points of the distribution computed by this algorithm. This is the value given to the algorithm at the time of construction (or initialization). Exceptions StdFail_NotDone if this algorithm has not been initialized, or if the computation was not successful.
 
         :rtype: float
 
         """
-        return _GCPnts.GCPnts_QuasiUniformDeflection_Deflection(self, *args)
+        return _GCPnts.GCPnts_QuasiUniformDeflection_Deflection(self)
 
     def __del__(self):
     	try:
@@ -754,7 +850,31 @@ class GCPnts_TangentialDeflection(object):
         :param CurvatureDeflection:
         :type CurvatureDeflection: float
         :param MinimumOfPoints: default value is 2
-        :type MinimumOfPoints: int
+        :type MinimumOfPoints: Standard_Integer
+        :param UTol: default value is 1.0e-9
+        :type UTol: float
+        :rtype: None
+
+        :param C:
+        :type C: Adaptor3d_Curve &
+        :param AngularDeflection:
+        :type AngularDeflection: float
+        :param CurvatureDeflection:
+        :type CurvatureDeflection: float
+        :param MinimumOfPoints: default value is 2
+        :type MinimumOfPoints: Standard_Integer
+        :param UTol: default value is 1.0e-9
+        :type UTol: float
+        :rtype: None
+
+        :param C:
+        :type C: Adaptor3d_Curve &
+        :param AngularDeflection:
+        :type AngularDeflection: float
+        :param CurvatureDeflection:
+        :type CurvatureDeflection: float
+        :param MinimumOfPoints: default value is 2
+        :type MinimumOfPoints: Standard_Integer
         :param UTol: default value is 1.0e-9
         :type UTol: float
         :rtype: None
@@ -770,7 +890,39 @@ class GCPnts_TangentialDeflection(object):
         :param CurvatureDeflection:
         :type CurvatureDeflection: float
         :param MinimumOfPoints: default value is 2
-        :type MinimumOfPoints: int
+        :type MinimumOfPoints: Standard_Integer
+        :param UTol: default value is 1.0e-9
+        :type UTol: float
+        :rtype: None
+
+        :param C:
+        :type C: Adaptor3d_Curve &
+        :param FirstParameter:
+        :type FirstParameter: float
+        :param LastParameter:
+        :type LastParameter: float
+        :param AngularDeflection:
+        :type AngularDeflection: float
+        :param CurvatureDeflection:
+        :type CurvatureDeflection: float
+        :param MinimumOfPoints: default value is 2
+        :type MinimumOfPoints: Standard_Integer
+        :param UTol: default value is 1.0e-9
+        :type UTol: float
+        :rtype: None
+
+        :param C:
+        :type C: Adaptor3d_Curve &
+        :param FirstParameter:
+        :type FirstParameter: float
+        :param LastParameter:
+        :type LastParameter: float
+        :param AngularDeflection:
+        :type AngularDeflection: float
+        :param CurvatureDeflection:
+        :type CurvatureDeflection: float
+        :param MinimumOfPoints: default value is 2
+        :type MinimumOfPoints: Standard_Integer
         :param UTol: default value is 1.0e-9
         :type UTol: float
         :rtype: None
@@ -782,7 +934,31 @@ class GCPnts_TangentialDeflection(object):
         :param CurvatureDeflection:
         :type CurvatureDeflection: float
         :param MinimumOfPoints: default value is 2
-        :type MinimumOfPoints: int
+        :type MinimumOfPoints: Standard_Integer
+        :param UTol: default value is 1.0e-9
+        :type UTol: float
+        :rtype: None
+
+        :param C:
+        :type C: Adaptor2d_Curve2d &
+        :param AngularDeflection:
+        :type AngularDeflection: float
+        :param CurvatureDeflection:
+        :type CurvatureDeflection: float
+        :param MinimumOfPoints: default value is 2
+        :type MinimumOfPoints: Standard_Integer
+        :param UTol: default value is 1.0e-9
+        :type UTol: float
+        :rtype: None
+
+        :param C:
+        :type C: Adaptor2d_Curve2d &
+        :param AngularDeflection:
+        :type AngularDeflection: float
+        :param CurvatureDeflection:
+        :type CurvatureDeflection: float
+        :param MinimumOfPoints: default value is 2
+        :type MinimumOfPoints: Standard_Integer
         :param UTol: default value is 1.0e-9
         :type UTol: float
         :rtype: None
@@ -798,14 +974,46 @@ class GCPnts_TangentialDeflection(object):
         :param CurvatureDeflection:
         :type CurvatureDeflection: float
         :param MinimumOfPoints: default value is 2
-        :type MinimumOfPoints: int
+        :type MinimumOfPoints: Standard_Integer
+        :param UTol: default value is 1.0e-9
+        :type UTol: float
+        :rtype: None
+
+        :param C:
+        :type C: Adaptor2d_Curve2d &
+        :param FirstParameter:
+        :type FirstParameter: float
+        :param LastParameter:
+        :type LastParameter: float
+        :param AngularDeflection:
+        :type AngularDeflection: float
+        :param CurvatureDeflection:
+        :type CurvatureDeflection: float
+        :param MinimumOfPoints: default value is 2
+        :type MinimumOfPoints: Standard_Integer
+        :param UTol: default value is 1.0e-9
+        :type UTol: float
+        :rtype: None
+
+        :param C:
+        :type C: Adaptor2d_Curve2d &
+        :param FirstParameter:
+        :type FirstParameter: float
+        :param LastParameter:
+        :type LastParameter: float
+        :param AngularDeflection:
+        :type AngularDeflection: float
+        :param CurvatureDeflection:
+        :type CurvatureDeflection: float
+        :param MinimumOfPoints: default value is 2
+        :type MinimumOfPoints: Standard_Integer
         :param UTol: default value is 1.0e-9
         :type UTol: float
         :rtype: None
 
         """
         _GCPnts.GCPnts_TangentialDeflection_swiginit(self,_GCPnts.new_GCPnts_TangentialDeflection(*args))
-    def Initialize(self, *args) -> "void" :
+    def Initialize(self, *args):
         """
         :param C:
         :type C: Adaptor3d_Curve &
@@ -814,7 +1022,31 @@ class GCPnts_TangentialDeflection(object):
         :param CurvatureDeflection:
         :type CurvatureDeflection: float
         :param MinimumOfPoints: default value is 2
-        :type MinimumOfPoints: int
+        :type MinimumOfPoints: Standard_Integer
+        :param UTol: default value is 1.0e-9
+        :type UTol: float
+        :rtype: None
+
+        :param C:
+        :type C: Adaptor3d_Curve &
+        :param AngularDeflection:
+        :type AngularDeflection: float
+        :param CurvatureDeflection:
+        :type CurvatureDeflection: float
+        :param MinimumOfPoints: default value is 2
+        :type MinimumOfPoints: Standard_Integer
+        :param UTol: default value is 1.0e-9
+        :type UTol: float
+        :rtype: None
+
+        :param C:
+        :type C: Adaptor3d_Curve &
+        :param AngularDeflection:
+        :type AngularDeflection: float
+        :param CurvatureDeflection:
+        :type CurvatureDeflection: float
+        :param MinimumOfPoints: default value is 2
+        :type MinimumOfPoints: Standard_Integer
         :param UTol: default value is 1.0e-9
         :type UTol: float
         :rtype: None
@@ -830,7 +1062,39 @@ class GCPnts_TangentialDeflection(object):
         :param CurvatureDeflection:
         :type CurvatureDeflection: float
         :param MinimumOfPoints: default value is 2
-        :type MinimumOfPoints: int
+        :type MinimumOfPoints: Standard_Integer
+        :param UTol: default value is 1.0e-9
+        :type UTol: float
+        :rtype: None
+
+        :param C:
+        :type C: Adaptor3d_Curve &
+        :param FirstParameter:
+        :type FirstParameter: float
+        :param LastParameter:
+        :type LastParameter: float
+        :param AngularDeflection:
+        :type AngularDeflection: float
+        :param CurvatureDeflection:
+        :type CurvatureDeflection: float
+        :param MinimumOfPoints: default value is 2
+        :type MinimumOfPoints: Standard_Integer
+        :param UTol: default value is 1.0e-9
+        :type UTol: float
+        :rtype: None
+
+        :param C:
+        :type C: Adaptor3d_Curve &
+        :param FirstParameter:
+        :type FirstParameter: float
+        :param LastParameter:
+        :type LastParameter: float
+        :param AngularDeflection:
+        :type AngularDeflection: float
+        :param CurvatureDeflection:
+        :type CurvatureDeflection: float
+        :param MinimumOfPoints: default value is 2
+        :type MinimumOfPoints: Standard_Integer
         :param UTol: default value is 1.0e-9
         :type UTol: float
         :rtype: None
@@ -842,7 +1106,31 @@ class GCPnts_TangentialDeflection(object):
         :param CurvatureDeflection:
         :type CurvatureDeflection: float
         :param MinimumOfPoints: default value is 2
-        :type MinimumOfPoints: int
+        :type MinimumOfPoints: Standard_Integer
+        :param UTol: default value is 1.0e-9
+        :type UTol: float
+        :rtype: None
+
+        :param C:
+        :type C: Adaptor2d_Curve2d &
+        :param AngularDeflection:
+        :type AngularDeflection: float
+        :param CurvatureDeflection:
+        :type CurvatureDeflection: float
+        :param MinimumOfPoints: default value is 2
+        :type MinimumOfPoints: Standard_Integer
+        :param UTol: default value is 1.0e-9
+        :type UTol: float
+        :rtype: None
+
+        :param C:
+        :type C: Adaptor2d_Curve2d &
+        :param AngularDeflection:
+        :type AngularDeflection: float
+        :param CurvatureDeflection:
+        :type CurvatureDeflection: float
+        :param MinimumOfPoints: default value is 2
+        :type MinimumOfPoints: Standard_Integer
         :param UTol: default value is 1.0e-9
         :type UTol: float
         :rtype: None
@@ -858,7 +1146,39 @@ class GCPnts_TangentialDeflection(object):
         :param CurvatureDeflection:
         :type CurvatureDeflection: float
         :param MinimumOfPoints: default value is 2
-        :type MinimumOfPoints: int
+        :type MinimumOfPoints: Standard_Integer
+        :param UTol: default value is 1.0e-9
+        :type UTol: float
+        :rtype: None
+
+        :param C:
+        :type C: Adaptor2d_Curve2d &
+        :param FirstParameter:
+        :type FirstParameter: float
+        :param LastParameter:
+        :type LastParameter: float
+        :param AngularDeflection:
+        :type AngularDeflection: float
+        :param CurvatureDeflection:
+        :type CurvatureDeflection: float
+        :param MinimumOfPoints: default value is 2
+        :type MinimumOfPoints: Standard_Integer
+        :param UTol: default value is 1.0e-9
+        :type UTol: float
+        :rtype: None
+
+        :param C:
+        :type C: Adaptor2d_Curve2d &
+        :param FirstParameter:
+        :type FirstParameter: float
+        :param LastParameter:
+        :type LastParameter: float
+        :param AngularDeflection:
+        :type AngularDeflection: float
+        :param CurvatureDeflection:
+        :type CurvatureDeflection: float
+        :param MinimumOfPoints: default value is 2
+        :type MinimumOfPoints: Standard_Integer
         :param UTol: default value is 1.0e-9
         :type UTol: float
         :rtype: None
@@ -866,8 +1186,18 @@ class GCPnts_TangentialDeflection(object):
         """
         return _GCPnts.GCPnts_TangentialDeflection_Initialize(self, *args)
 
-    def AddPoint(self, *args) -> "Standard_Integer" :
+    def AddPoint(self, *args):
         """
+        * Add point to already calculated points (or replace existing) Returns index of new added point or founded with parametric tolerance (replaced if theIsReplace is true)
+
+        :param thePnt:
+        :type thePnt: gp_Pnt
+        :param theParam:
+        :type theParam: float
+        :param theIsReplace: default value is Standard_True
+        :type theIsReplace: bool
+        :rtype: int
+
         * Add point to already calculated points (or replace existing) Returns index of new added point or founded with parametric tolerance (replaced if theIsReplace is true)
 
         :param thePnt:
@@ -881,26 +1211,26 @@ class GCPnts_TangentialDeflection(object):
         """
         return _GCPnts.GCPnts_TangentialDeflection_AddPoint(self, *args)
 
-    def NbPoints(self, *args) -> "Standard_Integer" :
+    def NbPoints(self):
         """
         :rtype: int
 
         """
-        return _GCPnts.GCPnts_TangentialDeflection_NbPoints(self, *args)
+        return _GCPnts.GCPnts_TangentialDeflection_NbPoints(self)
 
-    def Parameter(self, *args) -> "Standard_Real" :
+    def Parameter(self, *args):
         """
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :rtype: float
 
         """
         return _GCPnts.GCPnts_TangentialDeflection_Parameter(self, *args)
 
-    def Value(self, *args) -> "gp_Pnt" :
+    def Value(self, *args):
         """
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :rtype: gp_Pnt
 
         """
@@ -938,7 +1268,17 @@ class GCPnts_UniformAbscissa(object):
         :type C: Adaptor3d_Curve &
         :param Abscissa:
         :type Abscissa: float
-        :param Toler: default value is -1
+        :param Toler: default value is - 1
+        :type Toler: float
+        :rtype: None
+
+        * Computes a uniform abscissa distribution of points on the Curve <C>. Parameter Toler is equal Precision::Confusion by default. It Is used for more precise calculation of curve length
+
+        :param C:
+        :type C: Adaptor3d_Curve &
+        :param Abscissa:
+        :type Abscissa: float
+        :param Toler: default value is - 1
         :type Toler: float
         :rtype: None
 
@@ -952,7 +1292,21 @@ class GCPnts_UniformAbscissa(object):
         :type U1: float
         :param U2:
         :type U2: float
-        :param Toler: default value is -1
+        :param Toler: default value is - 1
+        :type Toler: float
+        :rtype: None
+
+        * Computes a Uniform abscissa distribution of points on a part of the Curve <C>. Parameter Toler is equal Precision::Confusion by default. It Is used for more precise calculation of curve length
+
+        :param C:
+        :type C: Adaptor3d_Curve &
+        :param Abscissa:
+        :type Abscissa: float
+        :param U1:
+        :type U1: float
+        :param U2:
+        :type U2: float
+        :param Toler: default value is - 1
         :type Toler: float
         :rtype: None
 
@@ -961,8 +1315,18 @@ class GCPnts_UniformAbscissa(object):
         :param C:
         :type C: Adaptor3d_Curve &
         :param NbPoints:
-        :type NbPoints: int
-        :param Toler: default value is -1
+        :type NbPoints: Standard_Integer
+        :param Toler: default value is - 1
+        :type Toler: float
+        :rtype: None
+
+        * Computes a uniform abscissa distribution of points on the Curve <C>. <NbPoints> defines the nomber of desired points. Parameter Toler is equal Precision::Confusion by default. It Is used for more precise calculation of curve length
+
+        :param C:
+        :type C: Adaptor3d_Curve &
+        :param NbPoints:
+        :type NbPoints: Standard_Integer
+        :param Toler: default value is - 1
         :type Toler: float
         :rtype: None
 
@@ -971,12 +1335,26 @@ class GCPnts_UniformAbscissa(object):
         :param C:
         :type C: Adaptor3d_Curve &
         :param NbPoints:
-        :type NbPoints: int
+        :type NbPoints: Standard_Integer
         :param U1:
         :type U1: float
         :param U2:
         :type U2: float
-        :param Toler: default value is -1
+        :param Toler: default value is - 1
+        :type Toler: float
+        :rtype: None
+
+        * Computes a Uniform abscissa distribution of points on a part of the Curve <C>. Parameter Toler is equal Precision::Confusion by default. It Is used for more precise calculation of curve length
+
+        :param C:
+        :type C: Adaptor3d_Curve &
+        :param NbPoints:
+        :type NbPoints: Standard_Integer
+        :param U1:
+        :type U1: float
+        :param U2:
+        :type U2: float
+        :param Toler: default value is - 1
         :type Toler: float
         :rtype: None
 
@@ -986,7 +1364,17 @@ class GCPnts_UniformAbscissa(object):
         :type C: Adaptor2d_Curve2d &
         :param Abscissa:
         :type Abscissa: float
-        :param Toler: default value is -1
+        :param Toler: default value is - 1
+        :type Toler: float
+        :rtype: None
+
+        * Computes a uniform abscissa distribution of points on the Curve2d <C>. Parameter Toler is equal Precision::Confusion by default. It Is used for more precise calculation of curve length
+
+        :param C:
+        :type C: Adaptor2d_Curve2d &
+        :param Abscissa:
+        :type Abscissa: float
+        :param Toler: default value is - 1
         :type Toler: float
         :rtype: None
 
@@ -1000,7 +1388,21 @@ class GCPnts_UniformAbscissa(object):
         :type U1: float
         :param U2:
         :type U2: float
-        :param Toler: default value is -1
+        :param Toler: default value is - 1
+        :type Toler: float
+        :rtype: None
+
+        * Computes a Uniform abscissa distribution of points on a part of the Curve2d <C>. Parameter Toler is equal Precision::Confusion by default. It Is used for more precise calculation of curve length
+
+        :param C:
+        :type C: Adaptor2d_Curve2d &
+        :param Abscissa:
+        :type Abscissa: float
+        :param U1:
+        :type U1: float
+        :param U2:
+        :type U2: float
+        :param Toler: default value is - 1
         :type Toler: float
         :rtype: None
 
@@ -1009,8 +1411,18 @@ class GCPnts_UniformAbscissa(object):
         :param C:
         :type C: Adaptor2d_Curve2d &
         :param NbPoints:
-        :type NbPoints: int
-        :param Toler: default value is -1
+        :type NbPoints: Standard_Integer
+        :param Toler: default value is - 1
+        :type Toler: float
+        :rtype: None
+
+        * Computes a uniform abscissa distribution of points on the Curve2d <C>. <NbPoints> defines the nomber of desired points. Parameter Toler is equal Precision::Confusion by default. It Is used for more precise calculation of curve length
+
+        :param C:
+        :type C: Adaptor2d_Curve2d &
+        :param NbPoints:
+        :type NbPoints: Standard_Integer
+        :param Toler: default value is - 1
         :type Toler: float
         :rtype: None
 
@@ -1019,18 +1431,32 @@ class GCPnts_UniformAbscissa(object):
         :param C:
         :type C: Adaptor2d_Curve2d &
         :param NbPoints:
-        :type NbPoints: int
+        :type NbPoints: Standard_Integer
         :param U1:
         :type U1: float
         :param U2:
         :type U2: float
-        :param Toler: default value is -1
+        :param Toler: default value is - 1
+        :type Toler: float
+        :rtype: None
+
+        * Computes a Uniform abscissa distribution of points on a part of the Curve2d <C>. Parameter Toler is equal Precision::Confusion by default. It Is used for more precise calculation of curve length
+
+        :param C:
+        :type C: Adaptor2d_Curve2d &
+        :param NbPoints:
+        :type NbPoints: Standard_Integer
+        :param U1:
+        :type U1: float
+        :param U2:
+        :type U2: float
+        :param Toler: default value is - 1
         :type Toler: float
         :rtype: None
 
         """
         _GCPnts.GCPnts_UniformAbscissa_swiginit(self,_GCPnts.new_GCPnts_UniformAbscissa(*args))
-    def Initialize(self, *args) -> "void" :
+    def Initialize(self, *args):
         """
         * Initialize the algoritms with <C>, <Abscissa>, <Toler>
 
@@ -1038,7 +1464,17 @@ class GCPnts_UniformAbscissa(object):
         :type C: Adaptor3d_Curve &
         :param Abscissa:
         :type Abscissa: float
-        :param Toler: default value is -1
+        :param Toler: default value is - 1
+        :type Toler: float
+        :rtype: None
+
+        * Initialize the algoritms with <C>, <Abscissa>, <Toler>
+
+        :param C:
+        :type C: Adaptor3d_Curve &
+        :param Abscissa:
+        :type Abscissa: float
+        :param Toler: default value is - 1
         :type Toler: float
         :rtype: None
 
@@ -1052,7 +1488,21 @@ class GCPnts_UniformAbscissa(object):
         :type U1: float
         :param U2:
         :type U2: float
-        :param Toler: default value is -1
+        :param Toler: default value is - 1
+        :type Toler: float
+        :rtype: None
+
+        * Initialize the algoritms with <C>, <Abscissa>, <U1>, <U2>, <Toler>
+
+        :param C:
+        :type C: Adaptor3d_Curve &
+        :param Abscissa:
+        :type Abscissa: float
+        :param U1:
+        :type U1: float
+        :param U2:
+        :type U2: float
+        :param Toler: default value is - 1
         :type Toler: float
         :rtype: None
 
@@ -1061,8 +1511,18 @@ class GCPnts_UniformAbscissa(object):
         :param C:
         :type C: Adaptor3d_Curve &
         :param NbPoints:
-        :type NbPoints: int
-        :param Toler: default value is -1
+        :type NbPoints: Standard_Integer
+        :param Toler: default value is - 1
+        :type Toler: float
+        :rtype: None
+
+        * Initialize the algoritms with <C>, <NbPoints>, <Toler> and
+
+        :param C:
+        :type C: Adaptor3d_Curve &
+        :param NbPoints:
+        :type NbPoints: Standard_Integer
+        :param Toler: default value is - 1
         :type Toler: float
         :rtype: None
 
@@ -1071,12 +1531,26 @@ class GCPnts_UniformAbscissa(object):
         :param C:
         :type C: Adaptor3d_Curve &
         :param NbPoints:
-        :type NbPoints: int
+        :type NbPoints: Standard_Integer
         :param U1:
         :type U1: float
         :param U2:
         :type U2: float
-        :param Toler: default value is -1
+        :param Toler: default value is - 1
+        :type Toler: float
+        :rtype: None
+
+        * Initialize the algoritms with <C>, <Abscissa>, <U1>, <U2>, <Toler>.
+
+        :param C:
+        :type C: Adaptor3d_Curve &
+        :param NbPoints:
+        :type NbPoints: Standard_Integer
+        :param U1:
+        :type U1: float
+        :param U2:
+        :type U2: float
+        :param Toler: default value is - 1
         :type Toler: float
         :rtype: None
 
@@ -1086,7 +1560,17 @@ class GCPnts_UniformAbscissa(object):
         :type C: Adaptor2d_Curve2d &
         :param Abscissa:
         :type Abscissa: float
-        :param Toler: default value is -1
+        :param Toler: default value is - 1
+        :type Toler: float
+        :rtype: None
+
+        * Initialize the algoritms with <C>, <Abscissa>, <Toler>
+
+        :param C:
+        :type C: Adaptor2d_Curve2d &
+        :param Abscissa:
+        :type Abscissa: float
+        :param Toler: default value is - 1
         :type Toler: float
         :rtype: None
 
@@ -1100,7 +1584,21 @@ class GCPnts_UniformAbscissa(object):
         :type U1: float
         :param U2:
         :type U2: float
-        :param Toler: default value is -1
+        :param Toler: default value is - 1
+        :type Toler: float
+        :rtype: None
+
+        * Initialize the algoritms with <C>, <Abscissa>, <U1>, <U2>, <Toler>
+
+        :param C:
+        :type C: Adaptor2d_Curve2d &
+        :param Abscissa:
+        :type Abscissa: float
+        :param U1:
+        :type U1: float
+        :param U2:
+        :type U2: float
+        :param Toler: default value is - 1
         :type Toler: float
         :rtype: None
 
@@ -1109,8 +1607,18 @@ class GCPnts_UniformAbscissa(object):
         :param C:
         :type C: Adaptor2d_Curve2d &
         :param NbPoints:
-        :type NbPoints: int
-        :param Toler: default value is -1
+        :type NbPoints: Standard_Integer
+        :param Toler: default value is - 1
+        :type Toler: float
+        :rtype: None
+
+        * Initialize the algoritms with <C>, <NbPoints>, <Toler> and
+
+        :param C:
+        :type C: Adaptor2d_Curve2d &
+        :param NbPoints:
+        :type NbPoints: Standard_Integer
+        :param Toler: default value is - 1
         :type Toler: float
         :rtype: None
 
@@ -1119,51 +1627,65 @@ class GCPnts_UniformAbscissa(object):
         :param C:
         :type C: Adaptor2d_Curve2d &
         :param NbPoints:
-        :type NbPoints: int
+        :type NbPoints: Standard_Integer
         :param U1:
         :type U1: float
         :param U2:
         :type U2: float
-        :param Toler: default value is -1
+        :param Toler: default value is - 1
+        :type Toler: float
+        :rtype: None
+
+        * Initialize the algoritms with <C>, <Abscissa>, <U1>, <U2>, <Toler>.
+
+        :param C:
+        :type C: Adaptor2d_Curve2d &
+        :param NbPoints:
+        :type NbPoints: Standard_Integer
+        :param U1:
+        :type U1: float
+        :param U2:
+        :type U2: float
+        :param Toler: default value is - 1
         :type Toler: float
         :rtype: None
 
         """
         return _GCPnts.GCPnts_UniformAbscissa_Initialize(self, *args)
 
-    def IsDone(self, *args) -> "Standard_Boolean" :
+    def IsDone(self):
         """
         :rtype: bool
 
         """
-        return _GCPnts.GCPnts_UniformAbscissa_IsDone(self, *args)
+        return _GCPnts.GCPnts_UniformAbscissa_IsDone(self)
 
-    def NbPoints(self, *args) -> "Standard_Integer" :
+    def NbPoints(self):
         """
         :rtype: int
 
         """
-        return _GCPnts.GCPnts_UniformAbscissa_NbPoints(self, *args)
+        return _GCPnts.GCPnts_UniformAbscissa_NbPoints(self)
 
-    def Parameter(self, *args) -> "Standard_Real" :
+    def Parameter(self, *args):
         """
         * returns the computed Parameter of index <Index>.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: float
 
         """
         return _GCPnts.GCPnts_UniformAbscissa_Parameter(self, *args)
 
-    def Abscissa(self, *args) -> "Standard_Real" :
+    def Abscissa(self):
         """
         * returne the current abscissa ie the distance between two consecutive points
 
         :rtype: float
 
         """
-        return _GCPnts.GCPnts_UniformAbscissa_Abscissa(self, *args)
+        return _GCPnts.GCPnts_UniformAbscissa_Abscissa(self)
 
     def __del__(self):
     	try:
@@ -1204,6 +1726,26 @@ class GCPnts_UniformDeflection(object):
         * Computes a uniform Deflection distribution of points on the Curve <C>. if <WithControl> is True,the algorithm controls the estimate deflection
 
         :param C:
+        :type C: Adaptor3d_Curve &
+        :param Deflection:
+        :type Deflection: float
+        :param WithControl: default value is Standard_True
+        :type WithControl: bool
+        :rtype: None
+
+        * Computes a uniform Deflection distribution of points on the Curve <C>. if <WithControl> is True,the algorithm controls the estimate deflection
+
+        :param C:
+        :type C: Adaptor2d_Curve2d &
+        :param Deflection:
+        :type Deflection: float
+        :param WithControl: default value is Standard_True
+        :type WithControl: bool
+        :rtype: None
+
+        * Computes a uniform Deflection distribution of points on the Curve <C>. if <WithControl> is True,the algorithm controls the estimate deflection
+
+        :param C:
         :type C: Adaptor2d_Curve2d &
         :param Deflection:
         :type Deflection: float
@@ -1215,6 +1757,34 @@ class GCPnts_UniformDeflection(object):
 
         :param C:
         :type C: Adaptor3d_Curve &
+        :param Deflection:
+        :type Deflection: float
+        :param U1:
+        :type U1: float
+        :param U2:
+        :type U2: float
+        :param WithControl: default value is Standard_True
+        :type WithControl: bool
+        :rtype: None
+
+        * Computes a Uniform Deflection distribution of points on a part of the Curve <C>. if <WithControl> is True,the algorithm controls the estimate deflection
+
+        :param C:
+        :type C: Adaptor3d_Curve &
+        :param Deflection:
+        :type Deflection: float
+        :param U1:
+        :type U1: float
+        :param U2:
+        :type U2: float
+        :param WithControl: default value is Standard_True
+        :type WithControl: bool
+        :rtype: None
+
+        * Computes a Uniform Deflection distribution of points on a part of the Curve <C>. if <WithControl> is True,the algorithm controls the estimate deflection
+
+        :param C:
+        :type C: Adaptor2d_Curve2d &
         :param Deflection:
         :type Deflection: float
         :param U1:
@@ -1241,8 +1811,18 @@ class GCPnts_UniformDeflection(object):
 
         """
         _GCPnts.GCPnts_UniformDeflection_swiginit(self,_GCPnts.new_GCPnts_UniformDeflection(*args))
-    def Initialize(self, *args) -> "void" :
+    def Initialize(self, *args):
         """
+        * Initialize the algoritms with <C>, <Deflection>
+
+        :param C:
+        :type C: Adaptor3d_Curve &
+        :param Deflection:
+        :type Deflection: float
+        :param WithControl: default value is Standard_True
+        :type WithControl: bool
+        :rtype: None
+
         * Initialize the algoritms with <C>, <Deflection>
 
         :param C:
@@ -1259,6 +1839,30 @@ class GCPnts_UniformDeflection(object):
         :type C: Adaptor2d_Curve2d &
         :param Deflection:
         :type Deflection: float
+        :param WithControl: default value is Standard_True
+        :type WithControl: bool
+        :rtype: None
+
+        * Initialize the algoritms with <C>, <Deflection>
+
+        :param C:
+        :type C: Adaptor2d_Curve2d &
+        :param Deflection:
+        :type Deflection: float
+        :param WithControl: default value is Standard_True
+        :type WithControl: bool
+        :rtype: None
+
+        * Initialize the algoritms with <C>, <Deflection>, <U1>,<U2>
+
+        :param C:
+        :type C: Adaptor3d_Curve &
+        :param Deflection:
+        :type Deflection: float
+        :param U1:
+        :type U1: float
+        :param U2:
+        :type U2: float
         :param WithControl: default value is Standard_True
         :type WithControl: bool
         :rtype: None
@@ -1291,57 +1895,71 @@ class GCPnts_UniformDeflection(object):
         :type WithControl: bool
         :rtype: None
 
+        * Initialize the algoritms with <C>, <Deflection>, <U1>,<U2> This and the above methods initialize (or reinitialize) this algorithm and compute a distribution of points: - on the curve C, or - on the part of curve C limited by the two parameter values U1 and U2, where the maximum distance between C and the polygon that results from the points of the distribution is not greater than Deflection. The first point of the distribution is either the origin of curve C or the point of parameter U1. The last point of the distribution is either the end point of curve C or the point of parameter U2. Intermediate points of the distribution are built using interpolations of segments of the curve limited at the 2nd degree. The construction ensures, in a first step, that the chordal deviation for this interpolation of the curve is less than or equal to Deflection. However, it does not ensure that the chordal deviation for the curve itself is less than or equal to Deflection. To do this a check is necessary, which may generate (second step) additional intermediate points. This check is time consuming, and can be avoided by setting WithControl to false. Note that by default WithControl is true and check is performed. Use the function IsDone to verify that the computation was successful, the function NbPoints to obtain the number of points of the computed distribution, and the function Parameter to read the parameter of each point. Warning - C is necessary, 'C2' continuous. This property is not checked at construction time. - The roles of U1 and U2 are inverted if U1 > U2. Warning C is an adapted curve, i.e. an object which is an interface between: - the services provided by either a 2D curve from the package Geom2d (in the case of an Adaptor2d_Curve2d curve) or a 3D curve from the package Geom (in the case of an Adaptor3d_Curve curve), - and those required on the curve by the computation algorithm.
+
+        :param C:
+        :type C: Adaptor2d_Curve2d &
+        :param Deflection:
+        :type Deflection: float
+        :param U1:
+        :type U1: float
+        :param U2:
+        :type U2: float
+        :param WithControl: default value is Standard_True
+        :type WithControl: bool
+        :rtype: None
+
         """
         return _GCPnts.GCPnts_UniformDeflection_Initialize(self, *args)
 
-    def IsDone(self, *args) -> "Standard_Boolean" :
+    def IsDone(self):
         """
         * Returns true if the computation was successful. IsDone is a protection against: - non-convergence of the algorithm - querying the results before computation.
 
         :rtype: bool
 
         """
-        return _GCPnts.GCPnts_UniformDeflection_IsDone(self, *args)
+        return _GCPnts.GCPnts_UniformDeflection_IsDone(self)
 
-    def NbPoints(self, *args) -> "Standard_Integer" :
+    def NbPoints(self):
         """
         * Returns the number of points of the distribution computed by this algorithm. Exceptions StdFail_NotDone if this algorithm has not been initialized, or if the computation was not successful.
 
         :rtype: int
 
         """
-        return _GCPnts.GCPnts_UniformDeflection_NbPoints(self, *args)
+        return _GCPnts.GCPnts_UniformDeflection_NbPoints(self)
 
-    def Parameter(self, *args) -> "Standard_Real" :
+    def Parameter(self, *args):
         """
         * Returns the parameter of the point of index Index in the distribution computed by this algorithm. Warning Index must be greater than or equal to 1, and less than or equal to the number of points of the distribution. However, pay particular attention as this condition is not checked by this function. Exceptions StdFail_NotDone if this algorithm has not been initialized, or if the computation was not successful.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: float
 
         """
         return _GCPnts.GCPnts_UniformDeflection_Parameter(self, *args)
 
-    def Value(self, *args) -> "gp_Pnt" :
+    def Value(self, *args):
         """
         * Returns the point of index Index in the distribution computed by this algorithm. Warning Index must be greater than or equal to 1, and less than or equal to the number of points of the distribution. However, pay particular attention as this condition is not checked by this function. Exceptions StdFAil_NotDone if this algorithm has not been initialized, or if the computation was not successful.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: gp_Pnt
 
         """
         return _GCPnts.GCPnts_UniformDeflection_Value(self, *args)
 
-    def Deflection(self, *args) -> "Standard_Real" :
+    def Deflection(self):
         """
         * Returns the deflection between the curve and the polygon resulting from the points of the distribution computed by this algorithm. This value is the one given to the algorithm at the time of construction (or initialization). Exceptions StdFail_NotDone if this algorithm has not been initialized, or if the computation was not successful.
 
         :rtype: float
 
         """
-        return _GCPnts.GCPnts_UniformDeflection_Deflection(self, *args)
+        return _GCPnts.GCPnts_UniformDeflection_Deflection(self)
 
     def __del__(self):
     	try:

@@ -119,9 +119,30 @@ import OCC.TColStd
 import OCC.Geom2d
 class hermit(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
+    def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def Solution(*args) -> "Handle_Geom2d_BSplineCurve" :
+    def Solution(*args):
         """
+        * //!returns the correct spline a(u) which will  be multiplicated with BS later.
+
+        :param BS:
+        :type BS: Handle_Geom_BSplineCurve &
+        :param TolPoles: default value is 0.000001
+        :type TolPoles: float
+        :param TolKnots: default value is 0.000001
+        :type TolKnots: float
+        :rtype: Handle_Geom2d_BSplineCurve
+
+        * //!returns the correct spline a(u) which will  be multiplicated with BS later.
+
+        :param BS:
+        :type BS: Handle_Geom_BSplineCurve &
+        :param TolPoles: default value is 0.000001
+        :type TolPoles: float
+        :param TolKnots: default value is 0.000001
+        :type TolKnots: float
+        :rtype: Handle_Geom2d_BSplineCurve
+
         * //!returns the correct spline a(u) which will  be multiplicated with BS later.
 
         :param BS:
@@ -142,12 +163,60 @@ class hermit(object):
         :type TolKnots: float
         :rtype: Handle_Geom2d_BSplineCurve
 
+        * //!returns the correct spline a(u) which will  be multiplicated with BS later.
+
+        :param BS:
+        :type BS: Handle_Geom2d_BSplineCurve &
+        :param TolPoles: default value is 0.000001
+        :type TolPoles: float
+        :param TolKnots: default value is 0.000001
+        :type TolKnots: float
+        :rtype: Handle_Geom2d_BSplineCurve
+
+        * //!returns the correct spline a(u) which will  be multiplicated with BS later.
+
+        :param BS:
+        :type BS: Handle_Geom2d_BSplineCurve &
+        :param TolPoles: default value is 0.000001
+        :type TolPoles: float
+        :param TolKnots: default value is 0.000001
+        :type TolKnots: float
+        :rtype: Handle_Geom2d_BSplineCurve
+
         """
         return _Hermit.hermit_Solution(*args)
 
     Solution = staticmethod(Solution)
-    def Solutionbis(*args) -> "Standard_Real &, Standard_Real &" :
+    def Solutionbis(*args):
         """
+        * //!returns the knots to insert to a(u) to  stay with a constant sign and in the  tolerances.
+
+        :param BS:
+        :type BS: Handle_Geom_BSplineCurve &
+        :param Knotmin:
+        :type Knotmin: float &
+        :param Knotmax:
+        :type Knotmax: float &
+        :param TolPoles: default value is 0.000001
+        :type TolPoles: float
+        :param TolKnots: default value is 0.000001
+        :type TolKnots: float
+        :rtype: void
+
+        * //!returns the knots to insert to a(u) to  stay with a constant sign and in the  tolerances.
+
+        :param BS:
+        :type BS: Handle_Geom_BSplineCurve &
+        :param Knotmin:
+        :type Knotmin: float &
+        :param Knotmax:
+        :type Knotmax: float &
+        :param TolPoles: default value is 0.000001
+        :type TolPoles: float
+        :param TolKnots: default value is 0.000001
+        :type TolKnots: float
+        :rtype: void
+
         * //!returns the knots to insert to a(u) to  stay with a constant sign and in the  tolerances.
 
         :param BS:
@@ -166,8 +235,6 @@ class hermit(object):
         return _Hermit.hermit_Solutionbis(*args)
 
     Solutionbis = staticmethod(Solutionbis)
-    def __init__(self): 
-        _Hermit.hermit_swiginit(self,_Hermit.new_hermit())
     def __del__(self):
     	try:
     		self.thisown = False
@@ -180,8 +247,28 @@ hermit._kill_pointed = new_instancemethod(_Hermit.hermit__kill_pointed,None,herm
 hermit_swigregister = _Hermit.hermit_swigregister
 hermit_swigregister(hermit)
 
-def hermit_Solution(*args) -> "Handle_Geom2d_BSplineCurve" :
+def hermit_Solution(*args):
   """
+    * //!returns the correct spline a(u) which will  be multiplicated with BS later.
+
+    :param BS:
+    :type BS: Handle_Geom_BSplineCurve &
+    :param TolPoles: default value is 0.000001
+    :type TolPoles: float
+    :param TolKnots: default value is 0.000001
+    :type TolKnots: float
+    :rtype: Handle_Geom2d_BSplineCurve
+
+    * //!returns the correct spline a(u) which will  be multiplicated with BS later.
+
+    :param BS:
+    :type BS: Handle_Geom_BSplineCurve &
+    :param TolPoles: default value is 0.000001
+    :type TolPoles: float
+    :param TolKnots: default value is 0.000001
+    :type TolKnots: float
+    :rtype: Handle_Geom2d_BSplineCurve
+
     * //!returns the correct spline a(u) which will  be multiplicated with BS later.
 
     :param BS:
@@ -202,11 +289,59 @@ def hermit_Solution(*args) -> "Handle_Geom2d_BSplineCurve" :
     :type TolKnots: float
     :rtype: Handle_Geom2d_BSplineCurve
 
+    * //!returns the correct spline a(u) which will  be multiplicated with BS later.
+
+    :param BS:
+    :type BS: Handle_Geom2d_BSplineCurve &
+    :param TolPoles: default value is 0.000001
+    :type TolPoles: float
+    :param TolKnots: default value is 0.000001
+    :type TolKnots: float
+    :rtype: Handle_Geom2d_BSplineCurve
+
+    * //!returns the correct spline a(u) which will  be multiplicated with BS later.
+
+    :param BS:
+    :type BS: Handle_Geom2d_BSplineCurve &
+    :param TolPoles: default value is 0.000001
+    :type TolPoles: float
+    :param TolKnots: default value is 0.000001
+    :type TolKnots: float
+    :rtype: Handle_Geom2d_BSplineCurve
+
     """
   return _Hermit.hermit_Solution(*args)
 
-def hermit_Solutionbis(*args) -> "Standard_Real &, Standard_Real &" :
+def hermit_Solutionbis(*args):
   """
+    * //!returns the knots to insert to a(u) to  stay with a constant sign and in the  tolerances.
+
+    :param BS:
+    :type BS: Handle_Geom_BSplineCurve &
+    :param Knotmin:
+    :type Knotmin: float &
+    :param Knotmax:
+    :type Knotmax: float &
+    :param TolPoles: default value is 0.000001
+    :type TolPoles: float
+    :param TolKnots: default value is 0.000001
+    :type TolKnots: float
+    :rtype: void
+
+    * //!returns the knots to insert to a(u) to  stay with a constant sign and in the  tolerances.
+
+    :param BS:
+    :type BS: Handle_Geom_BSplineCurve &
+    :param Knotmin:
+    :type Knotmin: float &
+    :param Knotmax:
+    :type Knotmax: float &
+    :param TolPoles: default value is 0.000001
+    :type TolPoles: float
+    :param TolKnots: default value is 0.000001
+    :type TolKnots: float
+    :rtype: void
+
     * //!returns the knots to insert to a(u) to  stay with a constant sign and in the  tolerances.
 
     :param BS:

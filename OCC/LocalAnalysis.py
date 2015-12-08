@@ -125,8 +125,9 @@ LocalAnalysis_NormalNotDefined = _LocalAnalysis.LocalAnalysis_NormalNotDefined
 LocalAnalysis_CurvatureNotDefined = _LocalAnalysis.LocalAnalysis_CurvatureNotDefined
 class localanalysis(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
+    def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def Dump(*args) -> "void" :
+    def Dump(*args):
         """
         * This class compute s and gives tools to check the local continuity between two points situated on 2 curves) This fonction gives informations about a variable CurveContinuity
 
@@ -148,8 +149,6 @@ class localanalysis(object):
         return _LocalAnalysis.localanalysis_Dump(*args)
 
     Dump = staticmethod(Dump)
-    def __init__(self): 
-        _LocalAnalysis.localanalysis_swiginit(self,_LocalAnalysis.new_localanalysis())
     def __del__(self):
     	try:
     		self.thisown = False
@@ -162,7 +161,7 @@ localanalysis._kill_pointed = new_instancemethod(_LocalAnalysis.localanalysis__k
 localanalysis_swigregister = _LocalAnalysis.localanalysis_swigregister
 localanalysis_swigregister(localanalysis)
 
-def localanalysis_Dump(*args) -> "void" :
+def localanalysis_Dump(*args):
   """
     * This class compute s and gives tools to check the local continuity between two points situated on 2 curves) This fonction gives informations about a variable CurveContinuity
 
@@ -218,119 +217,359 @@ class LocalAnalysis_CurveContinuity(object):
         :type Maxlen: float
         :rtype: None
 
+        * -u1 is the parameter of the point on Curv1 -u2 is the parameter of the point on Curv2 -Order is the required continuity:  GeomAbs_C0 GeomAbs_C1 GeomAbs_C2  GeomAbs_G1 GeomAbs_G2 -EpsNul is used to detect a a vector with nul magnitude (in mm) -EpsC0 is used for C0 continuity to confuse two  points (in mm) -EpsC1 is an angular tolerance in radians used  for C1 continuity to compare the angle between  the first derivatives -EpsC2 is an angular tolerance in radians used for C2 continuity to compare the angle between the second derivatives -EpsG1 is an angular tolerance in radians used for G1 continuity to compare the angle between the tangents -EpsG2 is an angular tolerance in radians used for G2 continuity to compare the angle between the normals - percent : percentage of curvature variation (unitless) used for G2 continuity - Maxlen is the maximum length of Curv1 or Curv2 in meters used to detect nul curvature (in mm)  the constructor computes the quantities which are necessary to check the continuity in the following cases: case C0 -------- - the distance between P1 and P2 with P1=Curv1 (u1) and P2=Curv2(u2) case C1 ------- - the angle between the first derivatives dCurv1(u1)  dCurv2(u2) -------- and --------- du  du - the ratio between the magnitudes of the first derivatives the angle value is between 0 and PI/2 case C2 ------- - the angle between the second derivatives 2  2  d Curv1(u1) d Curv2(u2)  ---------- ---------- 2  2  du du the angle value is between 0 and PI/2 - the ratio between the magnitudes of the second derivatives case G1 ------- the angle between the tangents at each point the angle value is between 0 and PI/2 case G2 ------- -the angle between the normals at each point the angle value is between 0 and PI/2 - the relative variation of curvature:  |curvat1-curvat2|  ------------------  1/2  (curvat1*curvat2)  where curvat1 is the curvature at the first point and curvat2 the curvature at the second point
+
+        :param Curv1:
+        :type Curv1: Handle_Geom_Curve &
+        :param u1:
+        :type u1: float
+        :param Curv2:
+        :type Curv2: Handle_Geom_Curve &
+        :param u2:
+        :type u2: float
+        :param Order:
+        :type Order: GeomAbs_Shape
+        :param EpsNul: default value is 0.001
+        :type EpsNul: float
+        :param EpsC0: default value is 0.001
+        :type EpsC0: float
+        :param EpsC1: default value is 0.001
+        :type EpsC1: float
+        :param EpsC2: default value is 0.001
+        :type EpsC2: float
+        :param EpsG1: default value is 0.001
+        :type EpsG1: float
+        :param EpsG2: default value is 0.001
+        :type EpsG2: float
+        :param Percent: default value is 0.01
+        :type Percent: float
+        :param Maxlen: default value is 10000
+        :type Maxlen: float
+        :rtype: None
+
+        * -u1 is the parameter of the point on Curv1 -u2 is the parameter of the point on Curv2 -Order is the required continuity:  GeomAbs_C0 GeomAbs_C1 GeomAbs_C2  GeomAbs_G1 GeomAbs_G2 -EpsNul is used to detect a a vector with nul magnitude (in mm) -EpsC0 is used for C0 continuity to confuse two  points (in mm) -EpsC1 is an angular tolerance in radians used  for C1 continuity to compare the angle between  the first derivatives -EpsC2 is an angular tolerance in radians used for C2 continuity to compare the angle between the second derivatives -EpsG1 is an angular tolerance in radians used for G1 continuity to compare the angle between the tangents -EpsG2 is an angular tolerance in radians used for G2 continuity to compare the angle between the normals - percent : percentage of curvature variation (unitless) used for G2 continuity - Maxlen is the maximum length of Curv1 or Curv2 in meters used to detect nul curvature (in mm)  the constructor computes the quantities which are necessary to check the continuity in the following cases: case C0 -------- - the distance between P1 and P2 with P1=Curv1 (u1) and P2=Curv2(u2) case C1 ------- - the angle between the first derivatives dCurv1(u1)  dCurv2(u2) -------- and --------- du  du - the ratio between the magnitudes of the first derivatives the angle value is between 0 and PI/2 case C2 ------- - the angle between the second derivatives 2  2  d Curv1(u1) d Curv2(u2)  ---------- ---------- 2  2  du du the angle value is between 0 and PI/2 - the ratio between the magnitudes of the second derivatives case G1 ------- the angle between the tangents at each point the angle value is between 0 and PI/2 case G2 ------- -the angle between the normals at each point the angle value is between 0 and PI/2 - the relative variation of curvature:  |curvat1-curvat2|  ------------------  1/2  (curvat1*curvat2)  where curvat1 is the curvature at the first point and curvat2 the curvature at the second point
+
+        :param Curv1:
+        :type Curv1: Handle_Geom_Curve &
+        :param u1:
+        :type u1: float
+        :param Curv2:
+        :type Curv2: Handle_Geom_Curve &
+        :param u2:
+        :type u2: float
+        :param Order:
+        :type Order: GeomAbs_Shape
+        :param EpsNul: default value is 0.001
+        :type EpsNul: float
+        :param EpsC0: default value is 0.001
+        :type EpsC0: float
+        :param EpsC1: default value is 0.001
+        :type EpsC1: float
+        :param EpsC2: default value is 0.001
+        :type EpsC2: float
+        :param EpsG1: default value is 0.001
+        :type EpsG1: float
+        :param EpsG2: default value is 0.001
+        :type EpsG2: float
+        :param Percent: default value is 0.01
+        :type Percent: float
+        :param Maxlen: default value is 10000
+        :type Maxlen: float
+        :rtype: None
+
+        * -u1 is the parameter of the point on Curv1 -u2 is the parameter of the point on Curv2 -Order is the required continuity:  GeomAbs_C0 GeomAbs_C1 GeomAbs_C2  GeomAbs_G1 GeomAbs_G2 -EpsNul is used to detect a a vector with nul magnitude (in mm) -EpsC0 is used for C0 continuity to confuse two  points (in mm) -EpsC1 is an angular tolerance in radians used  for C1 continuity to compare the angle between  the first derivatives -EpsC2 is an angular tolerance in radians used for C2 continuity to compare the angle between the second derivatives -EpsG1 is an angular tolerance in radians used for G1 continuity to compare the angle between the tangents -EpsG2 is an angular tolerance in radians used for G2 continuity to compare the angle between the normals - percent : percentage of curvature variation (unitless) used for G2 continuity - Maxlen is the maximum length of Curv1 or Curv2 in meters used to detect nul curvature (in mm)  the constructor computes the quantities which are necessary to check the continuity in the following cases: case C0 -------- - the distance between P1 and P2 with P1=Curv1 (u1) and P2=Curv2(u2) case C1 ------- - the angle between the first derivatives dCurv1(u1)  dCurv2(u2) -------- and --------- du  du - the ratio between the magnitudes of the first derivatives the angle value is between 0 and PI/2 case C2 ------- - the angle between the second derivatives 2  2  d Curv1(u1) d Curv2(u2)  ---------- ---------- 2  2  du du the angle value is between 0 and PI/2 - the ratio between the magnitudes of the second derivatives case G1 ------- the angle between the tangents at each point the angle value is between 0 and PI/2 case G2 ------- -the angle between the normals at each point the angle value is between 0 and PI/2 - the relative variation of curvature:  |curvat1-curvat2|  ------------------  1/2  (curvat1*curvat2)  where curvat1 is the curvature at the first point and curvat2 the curvature at the second point
+
+        :param Curv1:
+        :type Curv1: Handle_Geom_Curve &
+        :param u1:
+        :type u1: float
+        :param Curv2:
+        :type Curv2: Handle_Geom_Curve &
+        :param u2:
+        :type u2: float
+        :param Order:
+        :type Order: GeomAbs_Shape
+        :param EpsNul: default value is 0.001
+        :type EpsNul: float
+        :param EpsC0: default value is 0.001
+        :type EpsC0: float
+        :param EpsC1: default value is 0.001
+        :type EpsC1: float
+        :param EpsC2: default value is 0.001
+        :type EpsC2: float
+        :param EpsG1: default value is 0.001
+        :type EpsG1: float
+        :param EpsG2: default value is 0.001
+        :type EpsG2: float
+        :param Percent: default value is 0.01
+        :type Percent: float
+        :param Maxlen: default value is 10000
+        :type Maxlen: float
+        :rtype: None
+
+        * -u1 is the parameter of the point on Curv1 -u2 is the parameter of the point on Curv2 -Order is the required continuity:  GeomAbs_C0 GeomAbs_C1 GeomAbs_C2  GeomAbs_G1 GeomAbs_G2 -EpsNul is used to detect a a vector with nul magnitude (in mm) -EpsC0 is used for C0 continuity to confuse two  points (in mm) -EpsC1 is an angular tolerance in radians used  for C1 continuity to compare the angle between  the first derivatives -EpsC2 is an angular tolerance in radians used for C2 continuity to compare the angle between the second derivatives -EpsG1 is an angular tolerance in radians used for G1 continuity to compare the angle between the tangents -EpsG2 is an angular tolerance in radians used for G2 continuity to compare the angle between the normals - percent : percentage of curvature variation (unitless) used for G2 continuity - Maxlen is the maximum length of Curv1 or Curv2 in meters used to detect nul curvature (in mm)  the constructor computes the quantities which are necessary to check the continuity in the following cases: case C0 -------- - the distance between P1 and P2 with P1=Curv1 (u1) and P2=Curv2(u2) case C1 ------- - the angle between the first derivatives dCurv1(u1)  dCurv2(u2) -------- and --------- du  du - the ratio between the magnitudes of the first derivatives the angle value is between 0 and PI/2 case C2 ------- - the angle between the second derivatives 2  2  d Curv1(u1) d Curv2(u2)  ---------- ---------- 2  2  du du the angle value is between 0 and PI/2 - the ratio between the magnitudes of the second derivatives case G1 ------- the angle between the tangents at each point the angle value is between 0 and PI/2 case G2 ------- -the angle between the normals at each point the angle value is between 0 and PI/2 - the relative variation of curvature:  |curvat1-curvat2|  ------------------  1/2  (curvat1*curvat2)  where curvat1 is the curvature at the first point and curvat2 the curvature at the second point
+
+        :param Curv1:
+        :type Curv1: Handle_Geom_Curve &
+        :param u1:
+        :type u1: float
+        :param Curv2:
+        :type Curv2: Handle_Geom_Curve &
+        :param u2:
+        :type u2: float
+        :param Order:
+        :type Order: GeomAbs_Shape
+        :param EpsNul: default value is 0.001
+        :type EpsNul: float
+        :param EpsC0: default value is 0.001
+        :type EpsC0: float
+        :param EpsC1: default value is 0.001
+        :type EpsC1: float
+        :param EpsC2: default value is 0.001
+        :type EpsC2: float
+        :param EpsG1: default value is 0.001
+        :type EpsG1: float
+        :param EpsG2: default value is 0.001
+        :type EpsG2: float
+        :param Percent: default value is 0.01
+        :type Percent: float
+        :param Maxlen: default value is 10000
+        :type Maxlen: float
+        :rtype: None
+
+        * -u1 is the parameter of the point on Curv1 -u2 is the parameter of the point on Curv2 -Order is the required continuity:  GeomAbs_C0 GeomAbs_C1 GeomAbs_C2  GeomAbs_G1 GeomAbs_G2 -EpsNul is used to detect a a vector with nul magnitude (in mm) -EpsC0 is used for C0 continuity to confuse two  points (in mm) -EpsC1 is an angular tolerance in radians used  for C1 continuity to compare the angle between  the first derivatives -EpsC2 is an angular tolerance in radians used for C2 continuity to compare the angle between the second derivatives -EpsG1 is an angular tolerance in radians used for G1 continuity to compare the angle between the tangents -EpsG2 is an angular tolerance in radians used for G2 continuity to compare the angle between the normals - percent : percentage of curvature variation (unitless) used for G2 continuity - Maxlen is the maximum length of Curv1 or Curv2 in meters used to detect nul curvature (in mm)  the constructor computes the quantities which are necessary to check the continuity in the following cases: case C0 -------- - the distance between P1 and P2 with P1=Curv1 (u1) and P2=Curv2(u2) case C1 ------- - the angle between the first derivatives dCurv1(u1)  dCurv2(u2) -------- and --------- du  du - the ratio between the magnitudes of the first derivatives the angle value is between 0 and PI/2 case C2 ------- - the angle between the second derivatives 2  2  d Curv1(u1) d Curv2(u2)  ---------- ---------- 2  2  du du the angle value is between 0 and PI/2 - the ratio between the magnitudes of the second derivatives case G1 ------- the angle between the tangents at each point the angle value is between 0 and PI/2 case G2 ------- -the angle between the normals at each point the angle value is between 0 and PI/2 - the relative variation of curvature:  |curvat1-curvat2|  ------------------  1/2  (curvat1*curvat2)  where curvat1 is the curvature at the first point and curvat2 the curvature at the second point
+
+        :param Curv1:
+        :type Curv1: Handle_Geom_Curve &
+        :param u1:
+        :type u1: float
+        :param Curv2:
+        :type Curv2: Handle_Geom_Curve &
+        :param u2:
+        :type u2: float
+        :param Order:
+        :type Order: GeomAbs_Shape
+        :param EpsNul: default value is 0.001
+        :type EpsNul: float
+        :param EpsC0: default value is 0.001
+        :type EpsC0: float
+        :param EpsC1: default value is 0.001
+        :type EpsC1: float
+        :param EpsC2: default value is 0.001
+        :type EpsC2: float
+        :param EpsG1: default value is 0.001
+        :type EpsG1: float
+        :param EpsG2: default value is 0.001
+        :type EpsG2: float
+        :param Percent: default value is 0.01
+        :type Percent: float
+        :param Maxlen: default value is 10000
+        :type Maxlen: float
+        :rtype: None
+
+        * -u1 is the parameter of the point on Curv1 -u2 is the parameter of the point on Curv2 -Order is the required continuity:  GeomAbs_C0 GeomAbs_C1 GeomAbs_C2  GeomAbs_G1 GeomAbs_G2 -EpsNul is used to detect a a vector with nul magnitude (in mm) -EpsC0 is used for C0 continuity to confuse two  points (in mm) -EpsC1 is an angular tolerance in radians used  for C1 continuity to compare the angle between  the first derivatives -EpsC2 is an angular tolerance in radians used for C2 continuity to compare the angle between the second derivatives -EpsG1 is an angular tolerance in radians used for G1 continuity to compare the angle between the tangents -EpsG2 is an angular tolerance in radians used for G2 continuity to compare the angle between the normals - percent : percentage of curvature variation (unitless) used for G2 continuity - Maxlen is the maximum length of Curv1 or Curv2 in meters used to detect nul curvature (in mm)  the constructor computes the quantities which are necessary to check the continuity in the following cases: case C0 -------- - the distance between P1 and P2 with P1=Curv1 (u1) and P2=Curv2(u2) case C1 ------- - the angle between the first derivatives dCurv1(u1)  dCurv2(u2) -------- and --------- du  du - the ratio between the magnitudes of the first derivatives the angle value is between 0 and PI/2 case C2 ------- - the angle between the second derivatives 2  2  d Curv1(u1) d Curv2(u2)  ---------- ---------- 2  2  du du the angle value is between 0 and PI/2 - the ratio between the magnitudes of the second derivatives case G1 ------- the angle between the tangents at each point the angle value is between 0 and PI/2 case G2 ------- -the angle between the normals at each point the angle value is between 0 and PI/2 - the relative variation of curvature:  |curvat1-curvat2|  ------------------  1/2  (curvat1*curvat2)  where curvat1 is the curvature at the first point and curvat2 the curvature at the second point
+
+        :param Curv1:
+        :type Curv1: Handle_Geom_Curve &
+        :param u1:
+        :type u1: float
+        :param Curv2:
+        :type Curv2: Handle_Geom_Curve &
+        :param u2:
+        :type u2: float
+        :param Order:
+        :type Order: GeomAbs_Shape
+        :param EpsNul: default value is 0.001
+        :type EpsNul: float
+        :param EpsC0: default value is 0.001
+        :type EpsC0: float
+        :param EpsC1: default value is 0.001
+        :type EpsC1: float
+        :param EpsC2: default value is 0.001
+        :type EpsC2: float
+        :param EpsG1: default value is 0.001
+        :type EpsG1: float
+        :param EpsG2: default value is 0.001
+        :type EpsG2: float
+        :param Percent: default value is 0.01
+        :type Percent: float
+        :param Maxlen: default value is 10000
+        :type Maxlen: float
+        :rtype: None
+
+        * -u1 is the parameter of the point on Curv1 -u2 is the parameter of the point on Curv2 -Order is the required continuity:  GeomAbs_C0 GeomAbs_C1 GeomAbs_C2  GeomAbs_G1 GeomAbs_G2 -EpsNul is used to detect a a vector with nul magnitude (in mm) -EpsC0 is used for C0 continuity to confuse two  points (in mm) -EpsC1 is an angular tolerance in radians used  for C1 continuity to compare the angle between  the first derivatives -EpsC2 is an angular tolerance in radians used for C2 continuity to compare the angle between the second derivatives -EpsG1 is an angular tolerance in radians used for G1 continuity to compare the angle between the tangents -EpsG2 is an angular tolerance in radians used for G2 continuity to compare the angle between the normals - percent : percentage of curvature variation (unitless) used for G2 continuity - Maxlen is the maximum length of Curv1 or Curv2 in meters used to detect nul curvature (in mm)  the constructor computes the quantities which are necessary to check the continuity in the following cases: case C0 -------- - the distance between P1 and P2 with P1=Curv1 (u1) and P2=Curv2(u2) case C1 ------- - the angle between the first derivatives dCurv1(u1)  dCurv2(u2) -------- and --------- du  du - the ratio between the magnitudes of the first derivatives the angle value is between 0 and PI/2 case C2 ------- - the angle between the second derivatives 2  2  d Curv1(u1) d Curv2(u2)  ---------- ---------- 2  2  du du the angle value is between 0 and PI/2 - the ratio between the magnitudes of the second derivatives case G1 ------- the angle between the tangents at each point the angle value is between 0 and PI/2 case G2 ------- -the angle between the normals at each point the angle value is between 0 and PI/2 - the relative variation of curvature:  |curvat1-curvat2|  ------------------  1/2  (curvat1*curvat2)  where curvat1 is the curvature at the first point and curvat2 the curvature at the second point
+
+        :param Curv1:
+        :type Curv1: Handle_Geom_Curve &
+        :param u1:
+        :type u1: float
+        :param Curv2:
+        :type Curv2: Handle_Geom_Curve &
+        :param u2:
+        :type u2: float
+        :param Order:
+        :type Order: GeomAbs_Shape
+        :param EpsNul: default value is 0.001
+        :type EpsNul: float
+        :param EpsC0: default value is 0.001
+        :type EpsC0: float
+        :param EpsC1: default value is 0.001
+        :type EpsC1: float
+        :param EpsC2: default value is 0.001
+        :type EpsC2: float
+        :param EpsG1: default value is 0.001
+        :type EpsG1: float
+        :param EpsG2: default value is 0.001
+        :type EpsG2: float
+        :param Percent: default value is 0.01
+        :type Percent: float
+        :param Maxlen: default value is 10000
+        :type Maxlen: float
+        :rtype: None
+
+        * -u1 is the parameter of the point on Curv1 -u2 is the parameter of the point on Curv2 -Order is the required continuity:  GeomAbs_C0 GeomAbs_C1 GeomAbs_C2  GeomAbs_G1 GeomAbs_G2 -EpsNul is used to detect a a vector with nul magnitude (in mm) -EpsC0 is used for C0 continuity to confuse two  points (in mm) -EpsC1 is an angular tolerance in radians used  for C1 continuity to compare the angle between  the first derivatives -EpsC2 is an angular tolerance in radians used for C2 continuity to compare the angle between the second derivatives -EpsG1 is an angular tolerance in radians used for G1 continuity to compare the angle between the tangents -EpsG2 is an angular tolerance in radians used for G2 continuity to compare the angle between the normals - percent : percentage of curvature variation (unitless) used for G2 continuity - Maxlen is the maximum length of Curv1 or Curv2 in meters used to detect nul curvature (in mm)  the constructor computes the quantities which are necessary to check the continuity in the following cases: case C0 -------- - the distance between P1 and P2 with P1=Curv1 (u1) and P2=Curv2(u2) case C1 ------- - the angle between the first derivatives dCurv1(u1)  dCurv2(u2) -------- and --------- du  du - the ratio between the magnitudes of the first derivatives the angle value is between 0 and PI/2 case C2 ------- - the angle between the second derivatives 2  2  d Curv1(u1) d Curv2(u2)  ---------- ---------- 2  2  du du the angle value is between 0 and PI/2 - the ratio between the magnitudes of the second derivatives case G1 ------- the angle between the tangents at each point the angle value is between 0 and PI/2 case G2 ------- -the angle between the normals at each point the angle value is between 0 and PI/2 - the relative variation of curvature:  |curvat1-curvat2|  ------------------  1/2  (curvat1*curvat2)  where curvat1 is the curvature at the first point and curvat2 the curvature at the second point
+
+        :param Curv1:
+        :type Curv1: Handle_Geom_Curve &
+        :param u1:
+        :type u1: float
+        :param Curv2:
+        :type Curv2: Handle_Geom_Curve &
+        :param u2:
+        :type u2: float
+        :param Order:
+        :type Order: GeomAbs_Shape
+        :param EpsNul: default value is 0.001
+        :type EpsNul: float
+        :param EpsC0: default value is 0.001
+        :type EpsC0: float
+        :param EpsC1: default value is 0.001
+        :type EpsC1: float
+        :param EpsC2: default value is 0.001
+        :type EpsC2: float
+        :param EpsG1: default value is 0.001
+        :type EpsG1: float
+        :param EpsG2: default value is 0.001
+        :type EpsG2: float
+        :param Percent: default value is 0.01
+        :type Percent: float
+        :param Maxlen: default value is 10000
+        :type Maxlen: float
+        :rtype: None
+
         """
         _LocalAnalysis.LocalAnalysis_CurveContinuity_swiginit(self,_LocalAnalysis.new_LocalAnalysis_CurveContinuity(*args))
-    def IsDone(self, *args) -> "Standard_Boolean" :
+    def IsDone(self):
         """
         :rtype: bool
 
         """
-        return _LocalAnalysis.LocalAnalysis_CurveContinuity_IsDone(self, *args)
+        return _LocalAnalysis.LocalAnalysis_CurveContinuity_IsDone(self)
 
-    def StatusError(self, *args) -> "LocalAnalysis_StatusErrorType" :
+    def StatusError(self):
         """
         :rtype: LocalAnalysis_StatusErrorType
 
         """
-        return _LocalAnalysis.LocalAnalysis_CurveContinuity_StatusError(self, *args)
+        return _LocalAnalysis.LocalAnalysis_CurveContinuity_StatusError(self)
 
-    def ContinuityStatus(self, *args) -> "GeomAbs_Shape" :
+    def ContinuityStatus(self):
         """
         :rtype: GeomAbs_Shape
 
         """
-        return _LocalAnalysis.LocalAnalysis_CurveContinuity_ContinuityStatus(self, *args)
+        return _LocalAnalysis.LocalAnalysis_CurveContinuity_ContinuityStatus(self)
 
-    def C0Value(self, *args) -> "Standard_Real" :
+    def C0Value(self):
         """
         :rtype: float
 
         """
-        return _LocalAnalysis.LocalAnalysis_CurveContinuity_C0Value(self, *args)
+        return _LocalAnalysis.LocalAnalysis_CurveContinuity_C0Value(self)
 
-    def C1Angle(self, *args) -> "Standard_Real" :
+    def C1Angle(self):
         """
         :rtype: float
 
         """
-        return _LocalAnalysis.LocalAnalysis_CurveContinuity_C1Angle(self, *args)
+        return _LocalAnalysis.LocalAnalysis_CurveContinuity_C1Angle(self)
 
-    def C1Ratio(self, *args) -> "Standard_Real" :
+    def C1Ratio(self):
         """
         :rtype: float
 
         """
-        return _LocalAnalysis.LocalAnalysis_CurveContinuity_C1Ratio(self, *args)
+        return _LocalAnalysis.LocalAnalysis_CurveContinuity_C1Ratio(self)
 
-    def C2Angle(self, *args) -> "Standard_Real" :
+    def C2Angle(self):
         """
         :rtype: float
 
         """
-        return _LocalAnalysis.LocalAnalysis_CurveContinuity_C2Angle(self, *args)
+        return _LocalAnalysis.LocalAnalysis_CurveContinuity_C2Angle(self)
 
-    def C2Ratio(self, *args) -> "Standard_Real" :
+    def C2Ratio(self):
         """
         :rtype: float
 
         """
-        return _LocalAnalysis.LocalAnalysis_CurveContinuity_C2Ratio(self, *args)
+        return _LocalAnalysis.LocalAnalysis_CurveContinuity_C2Ratio(self)
 
-    def G1Angle(self, *args) -> "Standard_Real" :
+    def G1Angle(self):
         """
         :rtype: float
 
         """
-        return _LocalAnalysis.LocalAnalysis_CurveContinuity_G1Angle(self, *args)
+        return _LocalAnalysis.LocalAnalysis_CurveContinuity_G1Angle(self)
 
-    def G2Angle(self, *args) -> "Standard_Real" :
+    def G2Angle(self):
         """
         :rtype: float
 
         """
-        return _LocalAnalysis.LocalAnalysis_CurveContinuity_G2Angle(self, *args)
+        return _LocalAnalysis.LocalAnalysis_CurveContinuity_G2Angle(self)
 
-    def G2CurvatureVariation(self, *args) -> "Standard_Real" :
+    def G2CurvatureVariation(self):
         """
         :rtype: float
 
         """
-        return _LocalAnalysis.LocalAnalysis_CurveContinuity_G2CurvatureVariation(self, *args)
+        return _LocalAnalysis.LocalAnalysis_CurveContinuity_G2CurvatureVariation(self)
 
-    def IsC0(self, *args) -> "Standard_Boolean" :
+    def IsC0(self):
         """
         :rtype: bool
 
         """
-        return _LocalAnalysis.LocalAnalysis_CurveContinuity_IsC0(self, *args)
+        return _LocalAnalysis.LocalAnalysis_CurveContinuity_IsC0(self)
 
-    def IsC1(self, *args) -> "Standard_Boolean" :
+    def IsC1(self):
         """
         :rtype: bool
 
         """
-        return _LocalAnalysis.LocalAnalysis_CurveContinuity_IsC1(self, *args)
+        return _LocalAnalysis.LocalAnalysis_CurveContinuity_IsC1(self)
 
-    def IsC2(self, *args) -> "Standard_Boolean" :
+    def IsC2(self):
         """
         :rtype: bool
 
         """
-        return _LocalAnalysis.LocalAnalysis_CurveContinuity_IsC2(self, *args)
+        return _LocalAnalysis.LocalAnalysis_CurveContinuity_IsC2(self)
 
-    def IsG1(self, *args) -> "Standard_Boolean" :
+    def IsG1(self):
         """
         :rtype: bool
 
         """
-        return _LocalAnalysis.LocalAnalysis_CurveContinuity_IsG1(self, *args)
+        return _LocalAnalysis.LocalAnalysis_CurveContinuity_IsG1(self)
 
-    def IsG2(self, *args) -> "Standard_Boolean" :
+    def IsG2(self):
         """
         :rtype: bool
 
         """
-        return _LocalAnalysis.LocalAnalysis_CurveContinuity_IsG2(self, *args)
+        return _LocalAnalysis.LocalAnalysis_CurveContinuity_IsG2(self)
 
     def __del__(self):
     	try:
@@ -397,6 +636,426 @@ class LocalAnalysis_SurfaceContinuity(object):
         :type Maxlen: float
         :rtype: None
 
+        * -u1,v1 are the parameters of the point on Surf1 -u2,v2 are the parameters of the point on Surf2 -Order is the required continuity:  GeomAbs_C0 GeomAbs_C1 GeomAbs_C2  GeomAbs_G1 GeomAbs_G2 -EpsNul is used to detect a a vector with nul magnitude -EpsC0 is used for C0 continuity to confuse two  points (in mm) -EpsC1 is an angular tolerance in radians used  for C1 continuity to compare the angle between  the first derivatives -EpsC2 is an angular tolerance in radians used for C2 continuity to compare the angle between the second derivatives -EpsG1 is an angular tolerance in radians used for G1 continuity to compare the angle between the normals  -Percent : percentage of curvature variation (unitless) used for G2 continuity - Maxlen is the maximum length of Surf1 or Surf2 in meters used to detect null curvature (in mm)  the constructor computes the quantities which are necessary to check the continuity in the following cases: case C0 -------- - the distance between P1 and P2 with P1=Surf (u1,v1) and P2=Surfv2(u2,v2)  case C1 ------- - the angle between the first derivatives in u :  dSurf1(u1,v1) dSurf2(u2,v2) ----------- and --------- du  du  the angle value is between 0 and PI/2 - the angle between the first derivatives in v :  dSurf1(u1,v1) dSurf2(u2,v2) -------- and --------- dv  dv - the ratio between the magnitudes of the first derivatives in u - the ratio between the magnitudes of the first derivatives in v  the angle value is between 0 and pi/2 case C2 ------- - the angle between the second derivatives in u 2 2  d Surf1(u1,v1) d Surf2(u2,v2)  ---------- ---------- 2 2  d u d u  - the ratio between the magnitudes of the second derivatives in u - the ratio between the magnitudes of the second derivatives in v the angle value is between 0 and PI/2 case G1 ------- -the angle between the normals at each point the angle value is between 0 and PI/2 case G2 ------- - the maximum normal curvature gap between the two points
+
+        :param Surf1:
+        :type Surf1: Handle_Geom_Surface &
+        :param u1:
+        :type u1: float
+        :param v1:
+        :type v1: float
+        :param Surf2:
+        :type Surf2: Handle_Geom_Surface &
+        :param u2:
+        :type u2: float
+        :param v2:
+        :type v2: float
+        :param Order:
+        :type Order: GeomAbs_Shape
+        :param EpsNul: default value is 0.001
+        :type EpsNul: float
+        :param EpsC0: default value is 0.001
+        :type EpsC0: float
+        :param EpsC1: default value is 0.001
+        :type EpsC1: float
+        :param EpsC2: default value is 0.001
+        :type EpsC2: float
+        :param EpsG1: default value is 0.001
+        :type EpsG1: float
+        :param Percent: default value is 0.01
+        :type Percent: float
+        :param Maxlen: default value is 10000
+        :type Maxlen: float
+        :rtype: None
+
+        * -u1,v1 are the parameters of the point on Surf1 -u2,v2 are the parameters of the point on Surf2 -Order is the required continuity:  GeomAbs_C0 GeomAbs_C1 GeomAbs_C2  GeomAbs_G1 GeomAbs_G2 -EpsNul is used to detect a a vector with nul magnitude -EpsC0 is used for C0 continuity to confuse two  points (in mm) -EpsC1 is an angular tolerance in radians used  for C1 continuity to compare the angle between  the first derivatives -EpsC2 is an angular tolerance in radians used for C2 continuity to compare the angle between the second derivatives -EpsG1 is an angular tolerance in radians used for G1 continuity to compare the angle between the normals  -Percent : percentage of curvature variation (unitless) used for G2 continuity - Maxlen is the maximum length of Surf1 or Surf2 in meters used to detect null curvature (in mm)  the constructor computes the quantities which are necessary to check the continuity in the following cases: case C0 -------- - the distance between P1 and P2 with P1=Surf (u1,v1) and P2=Surfv2(u2,v2)  case C1 ------- - the angle between the first derivatives in u :  dSurf1(u1,v1) dSurf2(u2,v2) ----------- and --------- du  du  the angle value is between 0 and PI/2 - the angle between the first derivatives in v :  dSurf1(u1,v1) dSurf2(u2,v2) -------- and --------- dv  dv - the ratio between the magnitudes of the first derivatives in u - the ratio between the magnitudes of the first derivatives in v  the angle value is between 0 and pi/2 case C2 ------- - the angle between the second derivatives in u 2 2  d Surf1(u1,v1) d Surf2(u2,v2)  ---------- ---------- 2 2  d u d u  - the ratio between the magnitudes of the second derivatives in u - the ratio between the magnitudes of the second derivatives in v the angle value is between 0 and PI/2 case G1 ------- -the angle between the normals at each point the angle value is between 0 and PI/2 case G2 ------- - the maximum normal curvature gap between the two points
+
+        :param Surf1:
+        :type Surf1: Handle_Geom_Surface &
+        :param u1:
+        :type u1: float
+        :param v1:
+        :type v1: float
+        :param Surf2:
+        :type Surf2: Handle_Geom_Surface &
+        :param u2:
+        :type u2: float
+        :param v2:
+        :type v2: float
+        :param Order:
+        :type Order: GeomAbs_Shape
+        :param EpsNul: default value is 0.001
+        :type EpsNul: float
+        :param EpsC0: default value is 0.001
+        :type EpsC0: float
+        :param EpsC1: default value is 0.001
+        :type EpsC1: float
+        :param EpsC2: default value is 0.001
+        :type EpsC2: float
+        :param EpsG1: default value is 0.001
+        :type EpsG1: float
+        :param Percent: default value is 0.01
+        :type Percent: float
+        :param Maxlen: default value is 10000
+        :type Maxlen: float
+        :rtype: None
+
+        * -u1,v1 are the parameters of the point on Surf1 -u2,v2 are the parameters of the point on Surf2 -Order is the required continuity:  GeomAbs_C0 GeomAbs_C1 GeomAbs_C2  GeomAbs_G1 GeomAbs_G2 -EpsNul is used to detect a a vector with nul magnitude -EpsC0 is used for C0 continuity to confuse two  points (in mm) -EpsC1 is an angular tolerance in radians used  for C1 continuity to compare the angle between  the first derivatives -EpsC2 is an angular tolerance in radians used for C2 continuity to compare the angle between the second derivatives -EpsG1 is an angular tolerance in radians used for G1 continuity to compare the angle between the normals  -Percent : percentage of curvature variation (unitless) used for G2 continuity - Maxlen is the maximum length of Surf1 or Surf2 in meters used to detect null curvature (in mm)  the constructor computes the quantities which are necessary to check the continuity in the following cases: case C0 -------- - the distance between P1 and P2 with P1=Surf (u1,v1) and P2=Surfv2(u2,v2)  case C1 ------- - the angle between the first derivatives in u :  dSurf1(u1,v1) dSurf2(u2,v2) ----------- and --------- du  du  the angle value is between 0 and PI/2 - the angle between the first derivatives in v :  dSurf1(u1,v1) dSurf2(u2,v2) -------- and --------- dv  dv - the ratio between the magnitudes of the first derivatives in u - the ratio between the magnitudes of the first derivatives in v  the angle value is between 0 and pi/2 case C2 ------- - the angle between the second derivatives in u 2 2  d Surf1(u1,v1) d Surf2(u2,v2)  ---------- ---------- 2 2  d u d u  - the ratio between the magnitudes of the second derivatives in u - the ratio between the magnitudes of the second derivatives in v the angle value is between 0 and PI/2 case G1 ------- -the angle between the normals at each point the angle value is between 0 and PI/2 case G2 ------- - the maximum normal curvature gap between the two points
+
+        :param Surf1:
+        :type Surf1: Handle_Geom_Surface &
+        :param u1:
+        :type u1: float
+        :param v1:
+        :type v1: float
+        :param Surf2:
+        :type Surf2: Handle_Geom_Surface &
+        :param u2:
+        :type u2: float
+        :param v2:
+        :type v2: float
+        :param Order:
+        :type Order: GeomAbs_Shape
+        :param EpsNul: default value is 0.001
+        :type EpsNul: float
+        :param EpsC0: default value is 0.001
+        :type EpsC0: float
+        :param EpsC1: default value is 0.001
+        :type EpsC1: float
+        :param EpsC2: default value is 0.001
+        :type EpsC2: float
+        :param EpsG1: default value is 0.001
+        :type EpsG1: float
+        :param Percent: default value is 0.01
+        :type Percent: float
+        :param Maxlen: default value is 10000
+        :type Maxlen: float
+        :rtype: None
+
+        * -u1,v1 are the parameters of the point on Surf1 -u2,v2 are the parameters of the point on Surf2 -Order is the required continuity:  GeomAbs_C0 GeomAbs_C1 GeomAbs_C2  GeomAbs_G1 GeomAbs_G2 -EpsNul is used to detect a a vector with nul magnitude -EpsC0 is used for C0 continuity to confuse two  points (in mm) -EpsC1 is an angular tolerance in radians used  for C1 continuity to compare the angle between  the first derivatives -EpsC2 is an angular tolerance in radians used for C2 continuity to compare the angle between the second derivatives -EpsG1 is an angular tolerance in radians used for G1 continuity to compare the angle between the normals  -Percent : percentage of curvature variation (unitless) used for G2 continuity - Maxlen is the maximum length of Surf1 or Surf2 in meters used to detect null curvature (in mm)  the constructor computes the quantities which are necessary to check the continuity in the following cases: case C0 -------- - the distance between P1 and P2 with P1=Surf (u1,v1) and P2=Surfv2(u2,v2)  case C1 ------- - the angle between the first derivatives in u :  dSurf1(u1,v1) dSurf2(u2,v2) ----------- and --------- du  du  the angle value is between 0 and PI/2 - the angle between the first derivatives in v :  dSurf1(u1,v1) dSurf2(u2,v2) -------- and --------- dv  dv - the ratio between the magnitudes of the first derivatives in u - the ratio between the magnitudes of the first derivatives in v  the angle value is between 0 and pi/2 case C2 ------- - the angle between the second derivatives in u 2 2  d Surf1(u1,v1) d Surf2(u2,v2)  ---------- ---------- 2 2  d u d u  - the ratio between the magnitudes of the second derivatives in u - the ratio between the magnitudes of the second derivatives in v the angle value is between 0 and PI/2 case G1 ------- -the angle between the normals at each point the angle value is between 0 and PI/2 case G2 ------- - the maximum normal curvature gap between the two points
+
+        :param Surf1:
+        :type Surf1: Handle_Geom_Surface &
+        :param u1:
+        :type u1: float
+        :param v1:
+        :type v1: float
+        :param Surf2:
+        :type Surf2: Handle_Geom_Surface &
+        :param u2:
+        :type u2: float
+        :param v2:
+        :type v2: float
+        :param Order:
+        :type Order: GeomAbs_Shape
+        :param EpsNul: default value is 0.001
+        :type EpsNul: float
+        :param EpsC0: default value is 0.001
+        :type EpsC0: float
+        :param EpsC1: default value is 0.001
+        :type EpsC1: float
+        :param EpsC2: default value is 0.001
+        :type EpsC2: float
+        :param EpsG1: default value is 0.001
+        :type EpsG1: float
+        :param Percent: default value is 0.01
+        :type Percent: float
+        :param Maxlen: default value is 10000
+        :type Maxlen: float
+        :rtype: None
+
+        * -u1,v1 are the parameters of the point on Surf1 -u2,v2 are the parameters of the point on Surf2 -Order is the required continuity:  GeomAbs_C0 GeomAbs_C1 GeomAbs_C2  GeomAbs_G1 GeomAbs_G2 -EpsNul is used to detect a a vector with nul magnitude -EpsC0 is used for C0 continuity to confuse two  points (in mm) -EpsC1 is an angular tolerance in radians used  for C1 continuity to compare the angle between  the first derivatives -EpsC2 is an angular tolerance in radians used for C2 continuity to compare the angle between the second derivatives -EpsG1 is an angular tolerance in radians used for G1 continuity to compare the angle between the normals  -Percent : percentage of curvature variation (unitless) used for G2 continuity - Maxlen is the maximum length of Surf1 or Surf2 in meters used to detect null curvature (in mm)  the constructor computes the quantities which are necessary to check the continuity in the following cases: case C0 -------- - the distance between P1 and P2 with P1=Surf (u1,v1) and P2=Surfv2(u2,v2)  case C1 ------- - the angle between the first derivatives in u :  dSurf1(u1,v1) dSurf2(u2,v2) ----------- and --------- du  du  the angle value is between 0 and PI/2 - the angle between the first derivatives in v :  dSurf1(u1,v1) dSurf2(u2,v2) -------- and --------- dv  dv - the ratio between the magnitudes of the first derivatives in u - the ratio between the magnitudes of the first derivatives in v  the angle value is between 0 and pi/2 case C2 ------- - the angle between the second derivatives in u 2 2  d Surf1(u1,v1) d Surf2(u2,v2)  ---------- ---------- 2 2  d u d u  - the ratio between the magnitudes of the second derivatives in u - the ratio between the magnitudes of the second derivatives in v the angle value is between 0 and PI/2 case G1 ------- -the angle between the normals at each point the angle value is between 0 and PI/2 case G2 ------- - the maximum normal curvature gap between the two points
+
+        :param Surf1:
+        :type Surf1: Handle_Geom_Surface &
+        :param u1:
+        :type u1: float
+        :param v1:
+        :type v1: float
+        :param Surf2:
+        :type Surf2: Handle_Geom_Surface &
+        :param u2:
+        :type u2: float
+        :param v2:
+        :type v2: float
+        :param Order:
+        :type Order: GeomAbs_Shape
+        :param EpsNul: default value is 0.001
+        :type EpsNul: float
+        :param EpsC0: default value is 0.001
+        :type EpsC0: float
+        :param EpsC1: default value is 0.001
+        :type EpsC1: float
+        :param EpsC2: default value is 0.001
+        :type EpsC2: float
+        :param EpsG1: default value is 0.001
+        :type EpsG1: float
+        :param Percent: default value is 0.01
+        :type Percent: float
+        :param Maxlen: default value is 10000
+        :type Maxlen: float
+        :rtype: None
+
+        * -u1,v1 are the parameters of the point on Surf1 -u2,v2 are the parameters of the point on Surf2 -Order is the required continuity:  GeomAbs_C0 GeomAbs_C1 GeomAbs_C2  GeomAbs_G1 GeomAbs_G2 -EpsNul is used to detect a a vector with nul magnitude -EpsC0 is used for C0 continuity to confuse two  points (in mm) -EpsC1 is an angular tolerance in radians used  for C1 continuity to compare the angle between  the first derivatives -EpsC2 is an angular tolerance in radians used for C2 continuity to compare the angle between the second derivatives -EpsG1 is an angular tolerance in radians used for G1 continuity to compare the angle between the normals  -Percent : percentage of curvature variation (unitless) used for G2 continuity - Maxlen is the maximum length of Surf1 or Surf2 in meters used to detect null curvature (in mm)  the constructor computes the quantities which are necessary to check the continuity in the following cases: case C0 -------- - the distance between P1 and P2 with P1=Surf (u1,v1) and P2=Surfv2(u2,v2)  case C1 ------- - the angle between the first derivatives in u :  dSurf1(u1,v1) dSurf2(u2,v2) ----------- and --------- du  du  the angle value is between 0 and PI/2 - the angle between the first derivatives in v :  dSurf1(u1,v1) dSurf2(u2,v2) -------- and --------- dv  dv - the ratio between the magnitudes of the first derivatives in u - the ratio between the magnitudes of the first derivatives in v  the angle value is between 0 and pi/2 case C2 ------- - the angle between the second derivatives in u 2 2  d Surf1(u1,v1) d Surf2(u2,v2)  ---------- ---------- 2 2  d u d u  - the ratio between the magnitudes of the second derivatives in u - the ratio between the magnitudes of the second derivatives in v the angle value is between 0 and PI/2 case G1 ------- -the angle between the normals at each point the angle value is between 0 and PI/2 case G2 ------- - the maximum normal curvature gap between the two points
+
+        :param Surf1:
+        :type Surf1: Handle_Geom_Surface &
+        :param u1:
+        :type u1: float
+        :param v1:
+        :type v1: float
+        :param Surf2:
+        :type Surf2: Handle_Geom_Surface &
+        :param u2:
+        :type u2: float
+        :param v2:
+        :type v2: float
+        :param Order:
+        :type Order: GeomAbs_Shape
+        :param EpsNul: default value is 0.001
+        :type EpsNul: float
+        :param EpsC0: default value is 0.001
+        :type EpsC0: float
+        :param EpsC1: default value is 0.001
+        :type EpsC1: float
+        :param EpsC2: default value is 0.001
+        :type EpsC2: float
+        :param EpsG1: default value is 0.001
+        :type EpsG1: float
+        :param Percent: default value is 0.01
+        :type Percent: float
+        :param Maxlen: default value is 10000
+        :type Maxlen: float
+        :rtype: None
+
+        * -u1,v1 are the parameters of the point on Surf1 -u2,v2 are the parameters of the point on Surf2 -Order is the required continuity:  GeomAbs_C0 GeomAbs_C1 GeomAbs_C2  GeomAbs_G1 GeomAbs_G2 -EpsNul is used to detect a a vector with nul magnitude -EpsC0 is used for C0 continuity to confuse two  points (in mm) -EpsC1 is an angular tolerance in radians used  for C1 continuity to compare the angle between  the first derivatives -EpsC2 is an angular tolerance in radians used for C2 continuity to compare the angle between the second derivatives -EpsG1 is an angular tolerance in radians used for G1 continuity to compare the angle between the normals  -Percent : percentage of curvature variation (unitless) used for G2 continuity - Maxlen is the maximum length of Surf1 or Surf2 in meters used to detect null curvature (in mm)  the constructor computes the quantities which are necessary to check the continuity in the following cases: case C0 -------- - the distance between P1 and P2 with P1=Surf (u1,v1) and P2=Surfv2(u2,v2)  case C1 ------- - the angle between the first derivatives in u :  dSurf1(u1,v1) dSurf2(u2,v2) ----------- and --------- du  du  the angle value is between 0 and PI/2 - the angle between the first derivatives in v :  dSurf1(u1,v1) dSurf2(u2,v2) -------- and --------- dv  dv - the ratio between the magnitudes of the first derivatives in u - the ratio between the magnitudes of the first derivatives in v  the angle value is between 0 and pi/2 case C2 ------- - the angle between the second derivatives in u 2 2  d Surf1(u1,v1) d Surf2(u2,v2)  ---------- ---------- 2 2  d u d u  - the ratio between the magnitudes of the second derivatives in u - the ratio between the magnitudes of the second derivatives in v the angle value is between 0 and PI/2 case G1 ------- -the angle between the normals at each point the angle value is between 0 and PI/2 case G2 ------- - the maximum normal curvature gap between the two points
+
+        :param Surf1:
+        :type Surf1: Handle_Geom_Surface &
+        :param u1:
+        :type u1: float
+        :param v1:
+        :type v1: float
+        :param Surf2:
+        :type Surf2: Handle_Geom_Surface &
+        :param u2:
+        :type u2: float
+        :param v2:
+        :type v2: float
+        :param Order:
+        :type Order: GeomAbs_Shape
+        :param EpsNul: default value is 0.001
+        :type EpsNul: float
+        :param EpsC0: default value is 0.001
+        :type EpsC0: float
+        :param EpsC1: default value is 0.001
+        :type EpsC1: float
+        :param EpsC2: default value is 0.001
+        :type EpsC2: float
+        :param EpsG1: default value is 0.001
+        :type EpsG1: float
+        :param Percent: default value is 0.01
+        :type Percent: float
+        :param Maxlen: default value is 10000
+        :type Maxlen: float
+        :rtype: None
+
+        :param curv1:
+        :type curv1: Handle_Geom2d_Curve &
+        :param curv2:
+        :type curv2: Handle_Geom2d_Curve &
+        :param U:
+        :type U: float
+        :param Surf1:
+        :type Surf1: Handle_Geom_Surface &
+        :param Surf2:
+        :type Surf2: Handle_Geom_Surface &
+        :param Order:
+        :type Order: GeomAbs_Shape
+        :param EpsNul: default value is 0.001
+        :type EpsNul: float
+        :param EpsC0: default value is 0.001
+        :type EpsC0: float
+        :param EpsC1: default value is 0.001
+        :type EpsC1: float
+        :param EpsC2: default value is 0.001
+        :type EpsC2: float
+        :param EpsG1: default value is 0.001
+        :type EpsG1: float
+        :param Percent: default value is 0.01
+        :type Percent: float
+        :param Maxlen: default value is 10000
+        :type Maxlen: float
+        :rtype: None
+
+        :param curv1:
+        :type curv1: Handle_Geom2d_Curve &
+        :param curv2:
+        :type curv2: Handle_Geom2d_Curve &
+        :param U:
+        :type U: float
+        :param Surf1:
+        :type Surf1: Handle_Geom_Surface &
+        :param Surf2:
+        :type Surf2: Handle_Geom_Surface &
+        :param Order:
+        :type Order: GeomAbs_Shape
+        :param EpsNul: default value is 0.001
+        :type EpsNul: float
+        :param EpsC0: default value is 0.001
+        :type EpsC0: float
+        :param EpsC1: default value is 0.001
+        :type EpsC1: float
+        :param EpsC2: default value is 0.001
+        :type EpsC2: float
+        :param EpsG1: default value is 0.001
+        :type EpsG1: float
+        :param Percent: default value is 0.01
+        :type Percent: float
+        :param Maxlen: default value is 10000
+        :type Maxlen: float
+        :rtype: None
+
+        :param curv1:
+        :type curv1: Handle_Geom2d_Curve &
+        :param curv2:
+        :type curv2: Handle_Geom2d_Curve &
+        :param U:
+        :type U: float
+        :param Surf1:
+        :type Surf1: Handle_Geom_Surface &
+        :param Surf2:
+        :type Surf2: Handle_Geom_Surface &
+        :param Order:
+        :type Order: GeomAbs_Shape
+        :param EpsNul: default value is 0.001
+        :type EpsNul: float
+        :param EpsC0: default value is 0.001
+        :type EpsC0: float
+        :param EpsC1: default value is 0.001
+        :type EpsC1: float
+        :param EpsC2: default value is 0.001
+        :type EpsC2: float
+        :param EpsG1: default value is 0.001
+        :type EpsG1: float
+        :param Percent: default value is 0.01
+        :type Percent: float
+        :param Maxlen: default value is 10000
+        :type Maxlen: float
+        :rtype: None
+
+        :param curv1:
+        :type curv1: Handle_Geom2d_Curve &
+        :param curv2:
+        :type curv2: Handle_Geom2d_Curve &
+        :param U:
+        :type U: float
+        :param Surf1:
+        :type Surf1: Handle_Geom_Surface &
+        :param Surf2:
+        :type Surf2: Handle_Geom_Surface &
+        :param Order:
+        :type Order: GeomAbs_Shape
+        :param EpsNul: default value is 0.001
+        :type EpsNul: float
+        :param EpsC0: default value is 0.001
+        :type EpsC0: float
+        :param EpsC1: default value is 0.001
+        :type EpsC1: float
+        :param EpsC2: default value is 0.001
+        :type EpsC2: float
+        :param EpsG1: default value is 0.001
+        :type EpsG1: float
+        :param Percent: default value is 0.01
+        :type Percent: float
+        :param Maxlen: default value is 10000
+        :type Maxlen: float
+        :rtype: None
+
+        :param curv1:
+        :type curv1: Handle_Geom2d_Curve &
+        :param curv2:
+        :type curv2: Handle_Geom2d_Curve &
+        :param U:
+        :type U: float
+        :param Surf1:
+        :type Surf1: Handle_Geom_Surface &
+        :param Surf2:
+        :type Surf2: Handle_Geom_Surface &
+        :param Order:
+        :type Order: GeomAbs_Shape
+        :param EpsNul: default value is 0.001
+        :type EpsNul: float
+        :param EpsC0: default value is 0.001
+        :type EpsC0: float
+        :param EpsC1: default value is 0.001
+        :type EpsC1: float
+        :param EpsC2: default value is 0.001
+        :type EpsC2: float
+        :param EpsG1: default value is 0.001
+        :type EpsG1: float
+        :param Percent: default value is 0.01
+        :type Percent: float
+        :param Maxlen: default value is 10000
+        :type Maxlen: float
+        :rtype: None
+
+        :param curv1:
+        :type curv1: Handle_Geom2d_Curve &
+        :param curv2:
+        :type curv2: Handle_Geom2d_Curve &
+        :param U:
+        :type U: float
+        :param Surf1:
+        :type Surf1: Handle_Geom_Surface &
+        :param Surf2:
+        :type Surf2: Handle_Geom_Surface &
+        :param Order:
+        :type Order: GeomAbs_Shape
+        :param EpsNul: default value is 0.001
+        :type EpsNul: float
+        :param EpsC0: default value is 0.001
+        :type EpsC0: float
+        :param EpsC1: default value is 0.001
+        :type EpsC1: float
+        :param EpsC2: default value is 0.001
+        :type EpsC2: float
+        :param EpsG1: default value is 0.001
+        :type EpsG1: float
+        :param Percent: default value is 0.01
+        :type Percent: float
+        :param Maxlen: default value is 10000
+        :type Maxlen: float
+        :rtype: None
+
+        :param curv1:
+        :type curv1: Handle_Geom2d_Curve &
+        :param curv2:
+        :type curv2: Handle_Geom2d_Curve &
+        :param U:
+        :type U: float
+        :param Surf1:
+        :type Surf1: Handle_Geom_Surface &
+        :param Surf2:
+        :type Surf2: Handle_Geom_Surface &
+        :param Order:
+        :type Order: GeomAbs_Shape
+        :param EpsNul: default value is 0.001
+        :type EpsNul: float
+        :param EpsC0: default value is 0.001
+        :type EpsC0: float
+        :param EpsC1: default value is 0.001
+        :type EpsC1: float
+        :param EpsC2: default value is 0.001
+        :type EpsC2: float
+        :param EpsG1: default value is 0.001
+        :type EpsG1: float
+        :param Percent: default value is 0.01
+        :type Percent: float
+        :param Maxlen: default value is 10000
+        :type Maxlen: float
+        :rtype: None
+
         :param curv1:
         :type curv1: Handle_Geom2d_Curve &
         :param curv2:
@@ -443,9 +1102,135 @@ class LocalAnalysis_SurfaceContinuity(object):
         :type Maxlen: float
         :rtype: None
 
+        * This constructor is used when we want to compute many analysis. After we use the method ComputeAnalysis
+
+        :param EpsNul: default value is 0.001
+        :type EpsNul: float
+        :param EpsC0: default value is 0.001
+        :type EpsC0: float
+        :param EpsC1: default value is 0.001
+        :type EpsC1: float
+        :param EpsC2: default value is 0.001
+        :type EpsC2: float
+        :param EpsG1: default value is 0.001
+        :type EpsG1: float
+        :param Percent: default value is 0.01
+        :type Percent: float
+        :param Maxlen: default value is 10000
+        :type Maxlen: float
+        :rtype: None
+
+        * This constructor is used when we want to compute many analysis. After we use the method ComputeAnalysis
+
+        :param EpsNul: default value is 0.001
+        :type EpsNul: float
+        :param EpsC0: default value is 0.001
+        :type EpsC0: float
+        :param EpsC1: default value is 0.001
+        :type EpsC1: float
+        :param EpsC2: default value is 0.001
+        :type EpsC2: float
+        :param EpsG1: default value is 0.001
+        :type EpsG1: float
+        :param Percent: default value is 0.01
+        :type Percent: float
+        :param Maxlen: default value is 10000
+        :type Maxlen: float
+        :rtype: None
+
+        * This constructor is used when we want to compute many analysis. After we use the method ComputeAnalysis
+
+        :param EpsNul: default value is 0.001
+        :type EpsNul: float
+        :param EpsC0: default value is 0.001
+        :type EpsC0: float
+        :param EpsC1: default value is 0.001
+        :type EpsC1: float
+        :param EpsC2: default value is 0.001
+        :type EpsC2: float
+        :param EpsG1: default value is 0.001
+        :type EpsG1: float
+        :param Percent: default value is 0.01
+        :type Percent: float
+        :param Maxlen: default value is 10000
+        :type Maxlen: float
+        :rtype: None
+
+        * This constructor is used when we want to compute many analysis. After we use the method ComputeAnalysis
+
+        :param EpsNul: default value is 0.001
+        :type EpsNul: float
+        :param EpsC0: default value is 0.001
+        :type EpsC0: float
+        :param EpsC1: default value is 0.001
+        :type EpsC1: float
+        :param EpsC2: default value is 0.001
+        :type EpsC2: float
+        :param EpsG1: default value is 0.001
+        :type EpsG1: float
+        :param Percent: default value is 0.01
+        :type Percent: float
+        :param Maxlen: default value is 10000
+        :type Maxlen: float
+        :rtype: None
+
+        * This constructor is used when we want to compute many analysis. After we use the method ComputeAnalysis
+
+        :param EpsNul: default value is 0.001
+        :type EpsNul: float
+        :param EpsC0: default value is 0.001
+        :type EpsC0: float
+        :param EpsC1: default value is 0.001
+        :type EpsC1: float
+        :param EpsC2: default value is 0.001
+        :type EpsC2: float
+        :param EpsG1: default value is 0.001
+        :type EpsG1: float
+        :param Percent: default value is 0.01
+        :type Percent: float
+        :param Maxlen: default value is 10000
+        :type Maxlen: float
+        :rtype: None
+
+        * This constructor is used when we want to compute many analysis. After we use the method ComputeAnalysis
+
+        :param EpsNul: default value is 0.001
+        :type EpsNul: float
+        :param EpsC0: default value is 0.001
+        :type EpsC0: float
+        :param EpsC1: default value is 0.001
+        :type EpsC1: float
+        :param EpsC2: default value is 0.001
+        :type EpsC2: float
+        :param EpsG1: default value is 0.001
+        :type EpsG1: float
+        :param Percent: default value is 0.01
+        :type Percent: float
+        :param Maxlen: default value is 10000
+        :type Maxlen: float
+        :rtype: None
+
+        * This constructor is used when we want to compute many analysis. After we use the method ComputeAnalysis
+
+        :param EpsNul: default value is 0.001
+        :type EpsNul: float
+        :param EpsC0: default value is 0.001
+        :type EpsC0: float
+        :param EpsC1: default value is 0.001
+        :type EpsC1: float
+        :param EpsC2: default value is 0.001
+        :type EpsC2: float
+        :param EpsG1: default value is 0.001
+        :type EpsG1: float
+        :param Percent: default value is 0.01
+        :type Percent: float
+        :param Maxlen: default value is 10000
+        :type Maxlen: float
+        :rtype: None
+
         """
         _LocalAnalysis.LocalAnalysis_SurfaceContinuity_swiginit(self,_LocalAnalysis.new_LocalAnalysis_SurfaceContinuity(*args))
-    def ComputeAnalysis(self, *args) -> "void" :
+    def ComputeAnalysis(self, *args):
         """
         :param Surf1:
         :type Surf1: GeomLProp_SLProps &
@@ -458,138 +1243,138 @@ class LocalAnalysis_SurfaceContinuity(object):
         """
         return _LocalAnalysis.LocalAnalysis_SurfaceContinuity_ComputeAnalysis(self, *args)
 
-    def IsDone(self, *args) -> "Standard_Boolean" :
+    def IsDone(self):
         """
         :rtype: bool
 
         """
-        return _LocalAnalysis.LocalAnalysis_SurfaceContinuity_IsDone(self, *args)
+        return _LocalAnalysis.LocalAnalysis_SurfaceContinuity_IsDone(self)
 
-    def ContinuityStatus(self, *args) -> "GeomAbs_Shape" :
+    def ContinuityStatus(self):
         """
         :rtype: GeomAbs_Shape
 
         """
-        return _LocalAnalysis.LocalAnalysis_SurfaceContinuity_ContinuityStatus(self, *args)
+        return _LocalAnalysis.LocalAnalysis_SurfaceContinuity_ContinuityStatus(self)
 
-    def StatusError(self, *args) -> "LocalAnalysis_StatusErrorType" :
+    def StatusError(self):
         """
         :rtype: LocalAnalysis_StatusErrorType
 
         """
-        return _LocalAnalysis.LocalAnalysis_SurfaceContinuity_StatusError(self, *args)
+        return _LocalAnalysis.LocalAnalysis_SurfaceContinuity_StatusError(self)
 
-    def C0Value(self, *args) -> "Standard_Real" :
+    def C0Value(self):
         """
         :rtype: float
 
         """
-        return _LocalAnalysis.LocalAnalysis_SurfaceContinuity_C0Value(self, *args)
+        return _LocalAnalysis.LocalAnalysis_SurfaceContinuity_C0Value(self)
 
-    def C1UAngle(self, *args) -> "Standard_Real" :
+    def C1UAngle(self):
         """
         :rtype: float
 
         """
-        return _LocalAnalysis.LocalAnalysis_SurfaceContinuity_C1UAngle(self, *args)
+        return _LocalAnalysis.LocalAnalysis_SurfaceContinuity_C1UAngle(self)
 
-    def C1URatio(self, *args) -> "Standard_Real" :
+    def C1URatio(self):
         """
         :rtype: float
 
         """
-        return _LocalAnalysis.LocalAnalysis_SurfaceContinuity_C1URatio(self, *args)
+        return _LocalAnalysis.LocalAnalysis_SurfaceContinuity_C1URatio(self)
 
-    def C1VAngle(self, *args) -> "Standard_Real" :
+    def C1VAngle(self):
         """
         :rtype: float
 
         """
-        return _LocalAnalysis.LocalAnalysis_SurfaceContinuity_C1VAngle(self, *args)
+        return _LocalAnalysis.LocalAnalysis_SurfaceContinuity_C1VAngle(self)
 
-    def C1VRatio(self, *args) -> "Standard_Real" :
+    def C1VRatio(self):
         """
         :rtype: float
 
         """
-        return _LocalAnalysis.LocalAnalysis_SurfaceContinuity_C1VRatio(self, *args)
+        return _LocalAnalysis.LocalAnalysis_SurfaceContinuity_C1VRatio(self)
 
-    def C2UAngle(self, *args) -> "Standard_Real" :
+    def C2UAngle(self):
         """
         :rtype: float
 
         """
-        return _LocalAnalysis.LocalAnalysis_SurfaceContinuity_C2UAngle(self, *args)
+        return _LocalAnalysis.LocalAnalysis_SurfaceContinuity_C2UAngle(self)
 
-    def C2URatio(self, *args) -> "Standard_Real" :
+    def C2URatio(self):
         """
         :rtype: float
 
         """
-        return _LocalAnalysis.LocalAnalysis_SurfaceContinuity_C2URatio(self, *args)
+        return _LocalAnalysis.LocalAnalysis_SurfaceContinuity_C2URatio(self)
 
-    def C2VAngle(self, *args) -> "Standard_Real" :
+    def C2VAngle(self):
         """
         :rtype: float
 
         """
-        return _LocalAnalysis.LocalAnalysis_SurfaceContinuity_C2VAngle(self, *args)
+        return _LocalAnalysis.LocalAnalysis_SurfaceContinuity_C2VAngle(self)
 
-    def C2VRatio(self, *args) -> "Standard_Real" :
+    def C2VRatio(self):
         """
         :rtype: float
 
         """
-        return _LocalAnalysis.LocalAnalysis_SurfaceContinuity_C2VRatio(self, *args)
+        return _LocalAnalysis.LocalAnalysis_SurfaceContinuity_C2VRatio(self)
 
-    def G1Angle(self, *args) -> "Standard_Real" :
+    def G1Angle(self):
         """
         :rtype: float
 
         """
-        return _LocalAnalysis.LocalAnalysis_SurfaceContinuity_G1Angle(self, *args)
+        return _LocalAnalysis.LocalAnalysis_SurfaceContinuity_G1Angle(self)
 
-    def G2CurvatureGap(self, *args) -> "Standard_Real" :
+    def G2CurvatureGap(self):
         """
         :rtype: float
 
         """
-        return _LocalAnalysis.LocalAnalysis_SurfaceContinuity_G2CurvatureGap(self, *args)
+        return _LocalAnalysis.LocalAnalysis_SurfaceContinuity_G2CurvatureGap(self)
 
-    def IsC0(self, *args) -> "Standard_Boolean" :
+    def IsC0(self):
         """
         :rtype: bool
 
         """
-        return _LocalAnalysis.LocalAnalysis_SurfaceContinuity_IsC0(self, *args)
+        return _LocalAnalysis.LocalAnalysis_SurfaceContinuity_IsC0(self)
 
-    def IsC1(self, *args) -> "Standard_Boolean" :
+    def IsC1(self):
         """
         :rtype: bool
 
         """
-        return _LocalAnalysis.LocalAnalysis_SurfaceContinuity_IsC1(self, *args)
+        return _LocalAnalysis.LocalAnalysis_SurfaceContinuity_IsC1(self)
 
-    def IsC2(self, *args) -> "Standard_Boolean" :
+    def IsC2(self):
         """
         :rtype: bool
 
         """
-        return _LocalAnalysis.LocalAnalysis_SurfaceContinuity_IsC2(self, *args)
+        return _LocalAnalysis.LocalAnalysis_SurfaceContinuity_IsC2(self)
 
-    def IsG1(self, *args) -> "Standard_Boolean" :
+    def IsG1(self):
         """
         :rtype: bool
 
         """
-        return _LocalAnalysis.LocalAnalysis_SurfaceContinuity_IsG1(self, *args)
+        return _LocalAnalysis.LocalAnalysis_SurfaceContinuity_IsG1(self)
 
-    def IsG2(self, *args) -> "Standard_Boolean" :
+    def IsG2(self):
         """
         :rtype: bool
 
         """
-        return _LocalAnalysis.LocalAnalysis_SurfaceContinuity_IsG2(self, *args)
+        return _LocalAnalysis.LocalAnalysis_SurfaceContinuity_IsG2(self)
 
     def __del__(self):
     	try:

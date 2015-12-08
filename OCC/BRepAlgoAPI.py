@@ -132,8 +132,9 @@ import OCC.TShort
 import OCC.Geom2d
 class brepalgoapi(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
+    def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def DumpOper(*args) -> "void" :
+    def DumpOper(*args):
         """
         * Check shapes on validity for boolean operation. Dump arguments and result of boolean operation in the file specified by path.
 
@@ -155,8 +156,6 @@ class brepalgoapi(object):
         return _BRepAlgoAPI.brepalgoapi_DumpOper(*args)
 
     DumpOper = staticmethod(DumpOper)
-    def __init__(self): 
-        _BRepAlgoAPI.brepalgoapi_swiginit(self,_BRepAlgoAPI.new_brepalgoapi())
     def __del__(self):
     	try:
     		self.thisown = False
@@ -169,7 +168,7 @@ brepalgoapi._kill_pointed = new_instancemethod(_BRepAlgoAPI.brepalgoapi__kill_po
 brepalgoapi_swigregister = _BRepAlgoAPI.brepalgoapi_swigregister
 brepalgoapi_swigregister(brepalgoapi)
 
-def brepalgoapi_DumpOper(*args) -> "void" :
+def brepalgoapi_DumpOper(*args):
   """
     * Check shapes on validity for boolean operation. Dump arguments and result of boolean operation in the file specified by path.
 
@@ -194,7 +193,7 @@ class BRepAlgoAPI_BooleanOperation(OCC.BRepBuilderAPI.BRepBuilderAPI_MakeShape):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def SetOperation(self, *args) -> "void" :
+    def SetOperation(self, *args):
         """
         * Sets the type of Boolean operation to perform It can be BOPAlgo_SECTION  BOPAlgo_COMMON  BOPAlgo_FUSE  BOPAlgo_CUT  BOPAlgo_CUT21
 
@@ -205,109 +204,109 @@ class BRepAlgoAPI_BooleanOperation(OCC.BRepBuilderAPI.BRepBuilderAPI_MakeShape):
         """
         return _BRepAlgoAPI.BRepAlgoAPI_BooleanOperation_SetOperation(self, *args)
 
-    def Shape1(self, *args) -> "TopoDS_Shape const" :
+    def Shape1(self):
         """
         * Returns the first shape involved in this Boolean operation.
 
         :rtype: TopoDS_Shape
 
         """
-        return _BRepAlgoAPI.BRepAlgoAPI_BooleanOperation_Shape1(self, *args)
+        return _BRepAlgoAPI.BRepAlgoAPI_BooleanOperation_Shape1(self)
 
-    def Shape2(self, *args) -> "TopoDS_Shape const" :
+    def Shape2(self):
         """
         * Returns the second shape involved in this Boolean operation.
 
         :rtype: TopoDS_Shape
 
         """
-        return _BRepAlgoAPI.BRepAlgoAPI_BooleanOperation_Shape2(self, *args)
+        return _BRepAlgoAPI.BRepAlgoAPI_BooleanOperation_Shape2(self)
 
-    def Operation(self, *args) -> "BOPAlgo_Operation" :
+    def Operation(self):
         """
         * Returns the type of Boolean Operation that has been performed.
 
         :rtype: BOPAlgo_Operation
 
         """
-        return _BRepAlgoAPI.BRepAlgoAPI_BooleanOperation_Operation(self, *args)
+        return _BRepAlgoAPI.BRepAlgoAPI_BooleanOperation_Operation(self)
 
-    def FuseEdges(self, *args) -> "Standard_Boolean" :
+    def FuseEdges(self):
         """
         * Returns the flag of edge refining
 
         :rtype: bool
 
         """
-        return _BRepAlgoAPI.BRepAlgoAPI_BooleanOperation_FuseEdges(self, *args)
+        return _BRepAlgoAPI.BRepAlgoAPI_BooleanOperation_FuseEdges(self)
 
-    def RefineEdges(self, *args) -> "void" :
+    def RefineEdges(self):
         """
         * Fuse C1 edges
 
         :rtype: None
 
         """
-        return _BRepAlgoAPI.BRepAlgoAPI_BooleanOperation_RefineEdges(self, *args)
+        return _BRepAlgoAPI.BRepAlgoAPI_BooleanOperation_RefineEdges(self)
 
-    def BuilderCanWork(self, *args) -> "Standard_Boolean" :
+    def BuilderCanWork(self):
         """
         :rtype: bool
 
         """
-        return _BRepAlgoAPI.BRepAlgoAPI_BooleanOperation_BuilderCanWork(self, *args)
+        return _BRepAlgoAPI.BRepAlgoAPI_BooleanOperation_BuilderCanWork(self)
 
-    def ErrorStatus(self, *args) -> "Standard_Integer" :
+    def ErrorStatus(self):
         """
         * Returns the error status of operation. 0 - Ok 1 - The Object is created but Nothing is Done 2 - Null source shapes is not allowed 3 - Check types of the arguments 4 - Can not allocate memory for the DSFiller 5 - The Builder can not work with such types of arguments 6 - Unknown operation is not allowed 7 - Can not allocate memory for the Builder > 100 - See the Builder's ErrorStatus
 
         :rtype: int
 
         """
-        return _BRepAlgoAPI.BRepAlgoAPI_BooleanOperation_ErrorStatus(self, *args)
+        return _BRepAlgoAPI.BRepAlgoAPI_BooleanOperation_ErrorStatus(self)
 
-    def HasModified(self, *args) -> "Standard_Boolean" :
+    def HasModified(self):
         """
         * Returns true if there is at least one modified shape.  For use in BRepNaming.
 
         :rtype: bool
 
         """
-        return _BRepAlgoAPI.BRepAlgoAPI_BooleanOperation_HasModified(self, *args)
+        return _BRepAlgoAPI.BRepAlgoAPI_BooleanOperation_HasModified(self)
 
-    def HasGenerated(self, *args) -> "Standard_Boolean" :
+    def HasGenerated(self):
         """
         * Returns true if there is at least one generated shape.  For use in BRepNaming.
 
         :rtype: bool
 
         """
-        return _BRepAlgoAPI.BRepAlgoAPI_BooleanOperation_HasGenerated(self, *args)
+        return _BRepAlgoAPI.BRepAlgoAPI_BooleanOperation_HasGenerated(self)
 
-    def HasDeleted(self, *args) -> "Standard_Boolean" :
+    def HasDeleted(self):
         """
         * Returns true if there is at least one deleted shape.  For use in BRepNaming.
 
         :rtype: bool
 
         """
-        return _BRepAlgoAPI.BRepAlgoAPI_BooleanOperation_HasDeleted(self, *args)
+        return _BRepAlgoAPI.BRepAlgoAPI_BooleanOperation_HasDeleted(self)
 
-    def Destroy(self, *args) -> "void" :
+    def Destroy(self):
         """
         :rtype: None
 
         """
-        return _BRepAlgoAPI.BRepAlgoAPI_BooleanOperation_Destroy(self, *args)
+        return _BRepAlgoAPI.BRepAlgoAPI_BooleanOperation_Destroy(self)
 
-    def SectionEdges(self, *args) -> "TopTools_ListOfShape const &" :
+    def SectionEdges(self):
         """
         * Returns a list of section edges. The edges represent the result of intersection between arguments of Boolean Operation. They are computed during operation execution.
 
         :rtype: TopTools_ListOfShape
 
         """
-        return _BRepAlgoAPI.BRepAlgoAPI_BooleanOperation_SectionEdges(self, *args)
+        return _BRepAlgoAPI.BRepAlgoAPI_BooleanOperation_SectionEdges(self)
 
     def __del__(self):
     	try:
@@ -353,6 +352,68 @@ class BRepAlgoAPI_Check(object):
         :type bTestSI: bool
         :rtype: None
 
+        * Constructor for checking single shape. It calls methods Init(theS, TopoDS_Shape(), BOPAlgo_UNKNOWN, bTestSE, bTestSI) and Perform(). Params: theS - the shape that should be checked; bTestSE - flag that specifies whether check on small edges  should be performed; by default it is set to True; bTestSI - flag that specifies whether check on self-interference  should be performed; by default it is set to True;
+
+        :param theS:
+        :type theS: TopoDS_Shape &
+        :param bTestSE: default value is Standard_True
+        :type bTestSE: bool
+        :param bTestSI: default value is Standard_True
+        :type bTestSI: bool
+        :rtype: None
+
+        * Constructor for checking single shape. It calls methods Init(theS, TopoDS_Shape(), BOPAlgo_UNKNOWN, bTestSE, bTestSI) and Perform(). Params: theS - the shape that should be checked; bTestSE - flag that specifies whether check on small edges  should be performed; by default it is set to True; bTestSI - flag that specifies whether check on self-interference  should be performed; by default it is set to True;
+
+        :param theS:
+        :type theS: TopoDS_Shape &
+        :param bTestSE: default value is Standard_True
+        :type bTestSE: bool
+        :param bTestSI: default value is Standard_True
+        :type bTestSI: bool
+        :rtype: None
+
+        * Constructor for couple of shapes. It calls methods Init(theS1, theS2, theOp, bTestSE, bTestSI) and Perform(). Params: theS1, theS2 - the initial shapes. theOp - the type of Boolean Operation; if it is not defined (set to UNKNOWN) for each shape performed check as for single shape. bTestSE - flag that specifies whether check on small edges  should be performed; by default it is set to True; bTestSI - flag that specifies whether check on self-interference  should be performed; by default it is set to True;
+
+        :param theS1:
+        :type theS1: TopoDS_Shape &
+        :param theS2:
+        :type theS2: TopoDS_Shape &
+        :param theOp: default value is BOPAlgo_UNKNOWN
+        :type theOp: BOPAlgo_Operation
+        :param bTestSE: default value is Standard_True
+        :type bTestSE: bool
+        :param bTestSI: default value is Standard_True
+        :type bTestSI: bool
+        :rtype: None
+
+        * Constructor for couple of shapes. It calls methods Init(theS1, theS2, theOp, bTestSE, bTestSI) and Perform(). Params: theS1, theS2 - the initial shapes. theOp - the type of Boolean Operation; if it is not defined (set to UNKNOWN) for each shape performed check as for single shape. bTestSE - flag that specifies whether check on small edges  should be performed; by default it is set to True; bTestSI - flag that specifies whether check on self-interference  should be performed; by default it is set to True;
+
+        :param theS1:
+        :type theS1: TopoDS_Shape &
+        :param theS2:
+        :type theS2: TopoDS_Shape &
+        :param theOp: default value is BOPAlgo_UNKNOWN
+        :type theOp: BOPAlgo_Operation
+        :param bTestSE: default value is Standard_True
+        :type bTestSE: bool
+        :param bTestSI: default value is Standard_True
+        :type bTestSI: bool
+        :rtype: None
+
+        * Constructor for couple of shapes. It calls methods Init(theS1, theS2, theOp, bTestSE, bTestSI) and Perform(). Params: theS1, theS2 - the initial shapes. theOp - the type of Boolean Operation; if it is not defined (set to UNKNOWN) for each shape performed check as for single shape. bTestSE - flag that specifies whether check on small edges  should be performed; by default it is set to True; bTestSI - flag that specifies whether check on self-interference  should be performed; by default it is set to True;
+
+        :param theS1:
+        :type theS1: TopoDS_Shape &
+        :param theS2:
+        :type theS2: TopoDS_Shape &
+        :param theOp: default value is BOPAlgo_UNKNOWN
+        :type theOp: BOPAlgo_Operation
+        :param bTestSE: default value is Standard_True
+        :type bTestSE: bool
+        :param bTestSI: default value is Standard_True
+        :type bTestSI: bool
+        :rtype: None
+
         * Constructor for couple of shapes. It calls methods Init(theS1, theS2, theOp, bTestSE, bTestSI) and Perform(). Params: theS1, theS2 - the initial shapes. theOp - the type of Boolean Operation; if it is not defined (set to UNKNOWN) for each shape performed check as for single shape. bTestSE - flag that specifies whether check on small edges  should be performed; by default it is set to True; bTestSI - flag that specifies whether check on self-interference  should be performed; by default it is set to True;
 
         :param theS1:
@@ -369,8 +430,28 @@ class BRepAlgoAPI_Check(object):
 
         """
         _BRepAlgoAPI.BRepAlgoAPI_Check_swiginit(self,_BRepAlgoAPI.new_BRepAlgoAPI_Check(*args))
-    def SetData(self, *args) -> "void" :
+    def SetData(self, *args):
         """
+        * Sets data for check by Init method. The method provides alternative way for checking single shape.
+
+        :param theS:
+        :type theS: TopoDS_Shape &
+        :param bTestSE: default value is Standard_True
+        :type bTestSE: bool
+        :param bTestSI: default value is Standard_True
+        :type bTestSI: bool
+        :rtype: None
+
+        * Sets data for check by Init method. The method provides alternative way for checking single shape.
+
+        :param theS:
+        :type theS: TopoDS_Shape &
+        :param bTestSE: default value is Standard_True
+        :type bTestSE: bool
+        :param bTestSI: default value is Standard_True
+        :type bTestSI: bool
+        :rtype: None
+
         * Sets data for check by Init method. The method provides alternative way for checking single shape.
 
         :param theS:
@@ -395,35 +476,77 @@ class BRepAlgoAPI_Check(object):
         :type bTestSI: bool
         :rtype: None
 
+        * Sets data for check by Init method. The method provides alternative way for checking couple of shapes.
+
+        :param theS1:
+        :type theS1: TopoDS_Shape &
+        :param theS2:
+        :type theS2: TopoDS_Shape &
+        :param theOp: default value is BOPAlgo_UNKNOWN
+        :type theOp: BOPAlgo_Operation
+        :param bTestSE: default value is Standard_True
+        :type bTestSE: bool
+        :param bTestSI: default value is Standard_True
+        :type bTestSI: bool
+        :rtype: None
+
+        * Sets data for check by Init method. The method provides alternative way for checking couple of shapes.
+
+        :param theS1:
+        :type theS1: TopoDS_Shape &
+        :param theS2:
+        :type theS2: TopoDS_Shape &
+        :param theOp: default value is BOPAlgo_UNKNOWN
+        :type theOp: BOPAlgo_Operation
+        :param bTestSE: default value is Standard_True
+        :type bTestSE: bool
+        :param bTestSI: default value is Standard_True
+        :type bTestSI: bool
+        :rtype: None
+
+        * Sets data for check by Init method. The method provides alternative way for checking couple of shapes.
+
+        :param theS1:
+        :type theS1: TopoDS_Shape &
+        :param theS2:
+        :type theS2: TopoDS_Shape &
+        :param theOp: default value is BOPAlgo_UNKNOWN
+        :type theOp: BOPAlgo_Operation
+        :param bTestSE: default value is Standard_True
+        :type bTestSE: bool
+        :param bTestSI: default value is Standard_True
+        :type bTestSI: bool
+        :rtype: None
+
         """
         return _BRepAlgoAPI.BRepAlgoAPI_Check_SetData(self, *args)
 
-    def Perform(self, *args) -> "void" :
+    def Perform(self):
         """
         * Performs the check.
 
         :rtype: None
 
         """
-        return _BRepAlgoAPI.BRepAlgoAPI_Check_Perform(self, *args)
+        return _BRepAlgoAPI.BRepAlgoAPI_Check_Perform(self)
 
-    def IsValid(self, *args) -> "Standard_Boolean" :
+    def IsValid(self):
         """
         * Shows whether shape(s) valid or not.
 
         :rtype: bool
 
         """
-        return _BRepAlgoAPI.BRepAlgoAPI_Check_IsValid(self, *args)
+        return _BRepAlgoAPI.BRepAlgoAPI_Check_IsValid(self)
 
-    def Result(self, *args) -> "BOPAlgo_ListOfCheckResult const &" :
+    def Result(self):
         """
         * Returns faulty shapes.
 
         :rtype: BOPAlgo_ListOfCheckResult
 
         """
-        return _BRepAlgoAPI.BRepAlgoAPI_Check_Result(self, *args)
+        return _BRepAlgoAPI.BRepAlgoAPI_Check_Result(self)
 
     def __del__(self):
     	try:
@@ -487,6 +610,18 @@ class BRepAlgoAPI_Cut(BRepAlgoAPI_BooleanOperation):
         :type S1: TopoDS_Shape &
         :param S2:
         :type S2: TopoDS_Shape &
+        :rtype: None
+
+        * Constructs a new shape cut from shape aS1 by shape aS2 using aDSFiller (see BRepAlgoAPI_BooleanOperation Constructor).
+
+        :param S1:
+        :type S1: TopoDS_Shape &
+        :param S2:
+        :type S2: TopoDS_Shape &
+        :param aDSF:
+        :type aDSF: BOPAlgo_PaveFiller &
+        :param bFWD: default value is Standard_True
+        :type bFWD: bool
         :rtype: None
 
         * Constructs a new shape cut from shape aS1 by shape aS2 using aDSFiller (see BRepAlgoAPI_BooleanOperation Constructor).
@@ -567,6 +702,26 @@ class BRepAlgoAPI_Section(BRepAlgoAPI_BooleanOperation):
         :type PerformNow: bool
         :rtype: None
 
+        :param S1:
+        :type S1: TopoDS_Shape &
+        :param S2:
+        :type S2: TopoDS_Shape &
+        :param aDSF:
+        :type aDSF: BOPAlgo_PaveFiller &
+        :param PerformNow: default value is Standard_True
+        :type PerformNow: bool
+        :rtype: None
+
+        * see upper
+
+        :param Sh1:
+        :type Sh1: TopoDS_Shape &
+        :param Sh2:
+        :type Sh2: TopoDS_Shape &
+        :param PerformNow: default value is Standard_True
+        :type PerformNow: bool
+        :rtype: None
+
         * see upper
 
         :param Sh1:
@@ -591,8 +746,38 @@ class BRepAlgoAPI_Section(BRepAlgoAPI_BooleanOperation):
 
         :param Sh:
         :type Sh: TopoDS_Shape &
+        :param Pl:
+        :type Pl: gp_Pln
+        :param PerformNow: default value is Standard_True
+        :type PerformNow: bool
+        :rtype: None
+
+        * see upper
+
+        :param Sh:
+        :type Sh: TopoDS_Shape &
         :param Sf:
         :type Sf: Handle_Geom_Surface &
+        :param PerformNow: default value is Standard_True
+        :type PerformNow: bool
+        :rtype: None
+
+        * see upper
+
+        :param Sh:
+        :type Sh: TopoDS_Shape &
+        :param Sf:
+        :type Sf: Handle_Geom_Surface &
+        :param PerformNow: default value is Standard_True
+        :type PerformNow: bool
+        :rtype: None
+
+        * see upper
+
+        :param Sf:
+        :type Sf: Handle_Geom_Surface &
+        :param Sh:
+        :type Sh: TopoDS_Shape &
         :param PerformNow: default value is Standard_True
         :type PerformNow: bool
         :rtype: None
@@ -617,9 +802,19 @@ class BRepAlgoAPI_Section(BRepAlgoAPI_BooleanOperation):
         :type PerformNow: bool
         :rtype: None
 
+        * This and the above classes construct a framework for computing the section lines of: - two shapes Sh1 and Sh2, or - shape Sh and plane Pl, or - shape Sh and surface Sf, or - surface Sf and shape Sh, or - two surfaces Sf1 and Sf2, and builds a result if PerformNow equals true, its default value. If PerformNow equals false, the intersection will be computed later by the function Build. The constructed shape will be returned by the function Shape. This is a compound object composed of edges. These intersection edges may be built: - on new intersection lines, or - on coincident portions of edges in the two intersected shapes. These intersection edges are independent: they are not chained or grouped in wires. If no intersection edge exists, the result is an empty compound object. Note that other objects than TopoDS_Shape shapes involved in these syntaxes are converted into faces or shells before performing the computation of the intersection. A shape resulting from this conversion can be retrieved with the function Shape1 or Shape2. Parametric 2D curves on intersection edges No parametric 2D curve (pcurve) is defined for each elementary edge of the result. To attach such parametric curves to the constructed edges you may use a constructor with the PerformNow flag equal to false; then you use: - the function ComputePCurveOn1 to ask for the additional computation of a pcurve in the parametric space of the first shape, - the function ComputePCurveOn2 to ask for the additional computation of a pcurve in the parametric space of the second shape, in the end, - the function Build to construct the result. Approximation of intersection edges The underlying 3D geometry attached to each elementary edge of the result is: - analytic where possible, provided the corresponding geometry corresponds to a type of analytic curve defined in the Geom package; for example, the intersection of a cylindrical shape with a plane gives an ellipse or a circle; - or elsewhere, given as a succession of points grouped together in a BSpline curve of degree 1. If you prefer to have an attached 3D geometry which is a BSpline approximation of the computed set of points on computed elementary intersection edges whose underlying geometry is not analytic, you may use a constructor with the PerformNow flag equal to false. Then you use: - the function Approximation to ask for this computation option, and - the function Build to construct the result. - Note that as a result, approximations will only be computed on edges built on new intersection lines. - Example You may also combine these computation options. In the following example: - each elementary edge of the computed intersection, built on a new intersection line, which does not correspond to an analytic Geom curve, will be approximated by a BSpline curve whose degree is not greater than 8. - each elementary edge built on a new intersection line, will have: - a pcurve in the parametric space of the intersected face of shape S1, - no pcurve in the parametric space of the intersected face of shape S2. // TopoDS_Shape S1 = ... , S2 = ... ; Standard_Boolean PerformNow = Standard_False; BRepAlgoAPI_Section S ( S1, S2, PerformNow ); S.ComputePCurveOn1 (Standard_True); S.Approximation (Standard_True); S.Build(); TopoDS_Shape R = S.Shape();
+
+        :param Sf1:
+        :type Sf1: Handle_Geom_Surface &
+        :param Sf2:
+        :type Sf2: Handle_Geom_Surface &
+        :param PerformNow: default value is Standard_True
+        :type PerformNow: bool
+        :rtype: None
+
         """
         _BRepAlgoAPI.BRepAlgoAPI_Section_swiginit(self,_BRepAlgoAPI.new_BRepAlgoAPI_Section(*args))
-    def Init1(self, *args) -> "void" :
+    def Init1(self, *args):
         """
         * initialize first part
 
@@ -642,7 +837,7 @@ class BRepAlgoAPI_Section(BRepAlgoAPI_BooleanOperation):
         """
         return _BRepAlgoAPI.BRepAlgoAPI_Section_Init1(self, *args)
 
-    def Init2(self, *args) -> "void" :
+    def Init2(self, *args):
         """
         * initialize second part
 
@@ -665,7 +860,7 @@ class BRepAlgoAPI_Section(BRepAlgoAPI_BooleanOperation):
         """
         return _BRepAlgoAPI.BRepAlgoAPI_Section_Init2(self, *args)
 
-    def Approximation(self, *args) -> "void" :
+    def Approximation(self, *args):
         """
         * Defines an option for computation of further intersections. This computation will be performed by the function Build in this framework. By default, the underlying 3D geometry attached to each elementary edge of the result of a computed intersection is: - analytic where possible, provided the corresponding geometry corresponds to a type of analytic curve defined in the Geom package; for example the intersection of a cylindrical shape with a plane gives an ellipse or a circle; - or elsewhere, given as a succession of points grouped together in a BSpline curve of degree 1. If Approx equals true, when further computations are performed in this framework with the function Build, these edges will have an attached 3D geometry which is a BSpline approximation of the computed set of points. Note that as a result, approximations will be computed on edges built only on new intersection lines.
 
@@ -676,7 +871,7 @@ class BRepAlgoAPI_Section(BRepAlgoAPI_BooleanOperation):
         """
         return _BRepAlgoAPI.BRepAlgoAPI_Section_Approximation(self, *args)
 
-    def ComputePCurveOn1(self, *args) -> "void" :
+    def ComputePCurveOn1(self, *args):
         """
         * Indicates if the Pcurve must be (or not) performed on first part.
 
@@ -687,7 +882,7 @@ class BRepAlgoAPI_Section(BRepAlgoAPI_BooleanOperation):
         """
         return _BRepAlgoAPI.BRepAlgoAPI_Section_ComputePCurveOn1(self, *args)
 
-    def ComputePCurveOn2(self, *args) -> "void" :
+    def ComputePCurveOn2(self, *args):
         """
         * Define options for the computation of further intersections, which will be performed by the function Build in this framework. By default, no parametric 2D curve (pcurve) is defined for the elementary edges of the result. If ComputePCurve1 equals true, further computations performed in this framework with the function Build will attach an additional pcurve in the parametric space of the first shape to the constructed edges. If ComputePCurve2 equals true, the additional pcurve will be attached to the constructed edges in the parametric space of the second shape. These two functions may be used together.
 
@@ -698,7 +893,7 @@ class BRepAlgoAPI_Section(BRepAlgoAPI_BooleanOperation):
         """
         return _BRepAlgoAPI.BRepAlgoAPI_Section_ComputePCurveOn2(self, *args)
 
-    def HasAncestorFaceOn1(self, *args) -> "Standard_Boolean" :
+    def HasAncestorFaceOn1(self, *args):
         """
         * get the face of the first part giving section edge <E>. Returns True on the 3 following conditions : 1/ <E> is an edge returned by the Shape() method. 2/ First part of section performed is a shape. 3/ <E> is built on a intersection curve (i.e <E> 	 is not the result of common edges) When False, F remains untouched.
 
@@ -711,7 +906,7 @@ class BRepAlgoAPI_Section(BRepAlgoAPI_BooleanOperation):
         """
         return _BRepAlgoAPI.BRepAlgoAPI_Section_HasAncestorFaceOn1(self, *args)
 
-    def HasAncestorFaceOn2(self, *args) -> "Standard_Boolean" :
+    def HasAncestorFaceOn2(self, *args):
         """
         * Identifies the ancestor faces of the intersection edge E resulting from the last computation performed in this framework, that is, the faces of the two original shapes on which the edge E lies: - HasAncestorFaceOn1 gives the ancestor face in the first shape, and - HasAncestorFaceOn2 gives the ancestor face in the second shape. These functions return true if an ancestor face F is found, or false if not. An ancestor face is identifiable for the edge E if the following conditions are satisfied: - the first part on which this algorithm performed its last computation is a shape, that is, it was not given as a surface or a plane at the time of construction of this algorithm or at a later time by the Init1 function, - E is one of the elementary edges built by the last computation of this section algorithm. To use these functions properly, you have to test the returned Boolean value before using the ancestor face: F is significant only if the returned Boolean value equals true.
 

@@ -119,8 +119,9 @@ import OCC.TColStd
 import OCC.Geom2d
 class geomprojlib(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
+    def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def Curve2d(*args) -> "Standard_Real &" :
+    def Curve2d(*args):
         """
         * gives the 2d-curve of a 3d-curve lying on a surface ( uses GeomProjLib_ProjectedCurve ) The 3dCurve is taken between the parametrization range [First, Last] <Tolerance> is used as input if the projection needs an approximation. In this case, the reached tolerance is set in <Tolerance> as output. WARNING : if the projection has failed, this method returns a null Handle.
 
@@ -216,7 +217,7 @@ class geomprojlib(object):
         return _GeomProjLib.geomprojlib_Curve2d(*args)
 
     Curve2d = staticmethod(Curve2d)
-    def Project(*args) -> "Handle_Geom_Curve" :
+    def Project(*args):
         """
         * Constructs the 3d-curve from the normal projection of the Curve <C> on the surface <S>. WARNING : if the projection has failes returns a null Handle.
 
@@ -230,7 +231,7 @@ class geomprojlib(object):
         return _GeomProjLib.geomprojlib_Project(*args)
 
     Project = staticmethod(Project)
-    def ProjectOnPlane(*args) -> "Handle_Geom_Curve" :
+    def ProjectOnPlane(*args):
         """
         * Constructs the 3d-curves from the projection of the curve <Curve> on the plane <Plane> along the direction <Dir>. If <KeepParametrization> is true, the parametrization of the Projected Curve <PC> will be the same as the parametrization of the initial curve <C>. It meens: proj(C(u)) = PC(u) for each u. Otherwize, the parametrization may change.
 
@@ -248,8 +249,6 @@ class geomprojlib(object):
         return _GeomProjLib.geomprojlib_ProjectOnPlane(*args)
 
     ProjectOnPlane = staticmethod(ProjectOnPlane)
-    def __init__(self): 
-        _GeomProjLib.geomprojlib_swiginit(self,_GeomProjLib.new_geomprojlib())
     def __del__(self):
     	try:
     		self.thisown = False
@@ -262,7 +261,7 @@ geomprojlib._kill_pointed = new_instancemethod(_GeomProjLib.geomprojlib__kill_po
 geomprojlib_swigregister = _GeomProjLib.geomprojlib_swigregister
 geomprojlib_swigregister(geomprojlib)
 
-def geomprojlib_Curve2d(*args) -> "Standard_Real &" :
+def geomprojlib_Curve2d(*args):
   """
     * gives the 2d-curve of a 3d-curve lying on a surface ( uses GeomProjLib_ProjectedCurve ) The 3dCurve is taken between the parametrization range [First, Last] <Tolerance> is used as input if the projection needs an approximation. In this case, the reached tolerance is set in <Tolerance> as output. WARNING : if the projection has failed, this method returns a null Handle.
 
@@ -357,7 +356,7 @@ def geomprojlib_Curve2d(*args) -> "Standard_Real &" :
     """
   return _GeomProjLib.geomprojlib_Curve2d(*args)
 
-def geomprojlib_Project(*args) -> "Handle_Geom_Curve" :
+def geomprojlib_Project(*args):
   """
     * Constructs the 3d-curve from the normal projection of the Curve <C> on the surface <S>. WARNING : if the projection has failes returns a null Handle.
 
@@ -370,7 +369,7 @@ def geomprojlib_Project(*args) -> "Handle_Geom_Curve" :
     """
   return _GeomProjLib.geomprojlib_Project(*args)
 
-def geomprojlib_ProjectOnPlane(*args) -> "Handle_Geom_Curve" :
+def geomprojlib_ProjectOnPlane(*args):
   """
     * Constructs the 3d-curves from the projection of the curve <Curve> on the plane <Plane> along the direction <Dir>. If <KeepParametrization> is true, the parametrization of the Projected Curve <PC> will be the same as the parametrization of the initial curve <C>. It meens: proj(C(u)) = PC(u) for each u. Otherwize, the parametrization may change.
 

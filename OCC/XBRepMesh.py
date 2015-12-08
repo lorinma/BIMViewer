@@ -135,8 +135,9 @@ import OCC.Poly
 import OCC.TShort
 class xbrepmesh(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
+    def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def Discret(*args) -> "Standard_Integer" :
+    def Discret(*args):
         """
         :param theShape:
         :type theShape: TopoDS_Shape &
@@ -152,8 +153,6 @@ class xbrepmesh(object):
         return _XBRepMesh.xbrepmesh_Discret(*args)
 
     Discret = staticmethod(Discret)
-    def __init__(self): 
-        _XBRepMesh.xbrepmesh_swiginit(self,_XBRepMesh.new_xbrepmesh())
     def __del__(self):
     	try:
     		self.thisown = False
@@ -166,7 +165,7 @@ xbrepmesh._kill_pointed = new_instancemethod(_XBRepMesh.xbrepmesh__kill_pointed,
 xbrepmesh_swigregister = _XBRepMesh.xbrepmesh_swigregister
 xbrepmesh_swigregister(xbrepmesh)
 
-def xbrepmesh_Discret(*args) -> "Standard_Integer" :
+def xbrepmesh_Discret(*args):
   """
     :param theShape:
     :type theShape: TopoDS_Shape &

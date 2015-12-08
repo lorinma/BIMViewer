@@ -123,8 +123,9 @@ BSplCLib_Constant = _BSplCLib.BSplCLib_Constant
 BSplCLib_QuasiConstant = _BSplCLib.BSplCLib_QuasiConstant
 class bsplclib(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
+    def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def Hunt(*args) -> "Standard_Integer &" :
+    def Hunt(*args):
         """
         * This routine searches the position of the real  value X in the ordered set of real values XX. The elements in the table XX are either  monotonically increasing or monotonically  decreasing. The input value Iloc is used to initialize the  algorithm : if Iloc is outside of the bounds  [XX.Lower(), -- XX.Upper()] the bisection algorithm  is used else the routine searches from a previous  known position by increasing steps then converges  by bisection. This routine is used to locate a knot value in a  set of knots.
 
@@ -133,19 +134,19 @@ class bsplclib(object):
         :param X:
         :type X: float
         :param Iloc:
-        :type Iloc: int &
+        :type Iloc: Standard_Integer &
         :rtype: void
 
         """
         return _BSplCLib.bsplclib_Hunt(*args)
 
     Hunt = staticmethod(Hunt)
-    def FirstUKnotIndex(*args) -> "Standard_Integer" :
+    def FirstUKnotIndex(*args):
         """
         * Computes the index of the knots value which gives  the start point of the curve.
 
         :param Degree:
-        :type Degree: int
+        :type Degree: Standard_Integer
         :param Mults:
         :type Mults: TColStd_Array1OfInteger &
         :rtype: int
@@ -154,12 +155,12 @@ class bsplclib(object):
         return _BSplCLib.bsplclib_FirstUKnotIndex(*args)
 
     FirstUKnotIndex = staticmethod(FirstUKnotIndex)
-    def LastUKnotIndex(*args) -> "Standard_Integer" :
+    def LastUKnotIndex(*args):
         """
         * Computes the index of the knots value which gives  the end point of the curve.
 
         :param Degree:
-        :type Degree: int
+        :type Degree: Standard_Integer
         :param Mults:
         :type Mults: TColStd_Array1OfInteger &
         :rtype: int
@@ -168,14 +169,14 @@ class bsplclib(object):
         return _BSplCLib.bsplclib_LastUKnotIndex(*args)
 
     LastUKnotIndex = staticmethod(LastUKnotIndex)
-    def FlatIndex(*args) -> "Standard_Integer" :
+    def FlatIndex(*args):
         """
         * Computes the index of the flats knots sequence corresponding to <Index> in the knots sequence which multiplicities are <Mults>.
 
         :param Degree:
-        :type Degree: int
+        :type Degree: Standard_Integer
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Mults:
         :type Mults: TColStd_Array1OfInteger &
         :param Periodic:
@@ -186,12 +187,12 @@ class bsplclib(object):
         return _BSplCLib.bsplclib_FlatIndex(*args)
 
     FlatIndex = staticmethod(FlatIndex)
-    def LocateParameter(*args) -> "Standard_Integer &, Standard_Real &" :
+    def LocateParameter(*args):
         """
         * Locates the parametric value U in the knots  sequence between the knot K1 and the knot K2.  The value return in Index verifies.  Knots(Index) <= U < Knots(Index + 1) if U <= Knots (K1) then Index = K1 if U >= Knots (K2) then Index = K2 - 1  If Periodic is True U may be modified to fit in the range Knots(K1), Knots(K2). In any case the correct value is returned in NewU. Warnings :Index is used as input data to initialize the searching function. Warning: Knots have to be 'withe repetitions'
 
         :param Degree:
-        :type Degree: int
+        :type Degree: Standard_Integer
         :param Knots:
         :type Knots: TColStd_Array1OfReal &
         :param Mults:
@@ -201,11 +202,11 @@ class bsplclib(object):
         :param IsPeriodic:
         :type IsPeriodic: bool
         :param FromK1:
-        :type FromK1: int
+        :type FromK1: Standard_Integer
         :param ToK2:
-        :type ToK2: int
+        :type ToK2: Standard_Integer
         :param KnotIndex:
-        :type KnotIndex: int &
+        :type KnotIndex: Standard_Integer &
         :param NewU:
         :type NewU: float &
         :rtype: void
@@ -213,7 +214,7 @@ class bsplclib(object):
         * Locates the parametric value U in the knots  sequence between the knot K1 and the knot K2.  The value return in Index verifies.  Knots(Index) <= U < Knots(Index + 1) if U <= Knots (K1) then Index = K1 if U >= Knots (K2) then Index = K2 - 1  If Periodic is True U may be modified to fit in the range Knots(K1), Knots(K2). In any case the correct value is returned in NewU. Warnings :Index is used as input data to initialize the searching function. Warning: Knots have to be 'flat'
 
         :param Degree:
-        :type Degree: int
+        :type Degree: Standard_Integer
         :param Knots:
         :type Knots: TColStd_Array1OfReal &
         :param U:
@@ -221,17 +222,17 @@ class bsplclib(object):
         :param IsPeriodic:
         :type IsPeriodic: bool
         :param FromK1:
-        :type FromK1: int
+        :type FromK1: Standard_Integer
         :param ToK2:
-        :type ToK2: int
+        :type ToK2: Standard_Integer
         :param KnotIndex:
-        :type KnotIndex: int &
+        :type KnotIndex: Standard_Integer &
         :param NewU:
         :type NewU: float &
         :rtype: void
 
         :param Degree:
-        :type Degree: int
+        :type Degree: Standard_Integer
         :param Knots:
         :type Knots: TColStd_Array1OfReal &
         :param Mults:
@@ -241,7 +242,7 @@ class bsplclib(object):
         :param Periodic:
         :type Periodic: bool
         :param Index:
-        :type Index: int &
+        :type Index: Standard_Integer &
         :param NewU:
         :type NewU: float &
         :rtype: void
@@ -250,44 +251,44 @@ class bsplclib(object):
         return _BSplCLib.bsplclib_LocateParameter(*args)
 
     LocateParameter = staticmethod(LocateParameter)
-    def MaxKnotMult(*args) -> "Standard_Integer" :
+    def MaxKnotMult(*args):
         """
         * Finds the greatest multiplicity in a set of knots  between K1 and K2. Mults is the multiplicity  associated with each knot value.
 
         :param Mults:
         :type Mults: TColStd_Array1OfInteger &
         :param K1:
-        :type K1: int
+        :type K1: Standard_Integer
         :param K2:
-        :type K2: int
+        :type K2: Standard_Integer
         :rtype: int
 
         """
         return _BSplCLib.bsplclib_MaxKnotMult(*args)
 
     MaxKnotMult = staticmethod(MaxKnotMult)
-    def MinKnotMult(*args) -> "Standard_Integer" :
+    def MinKnotMult(*args):
         """
         * Finds the lowest multiplicity in a set of knots  between K1 and K2. Mults is the multiplicity  associated with each knot value.
 
         :param Mults:
         :type Mults: TColStd_Array1OfInteger &
         :param K1:
-        :type K1: int
+        :type K1: Standard_Integer
         :param K2:
-        :type K2: int
+        :type K2: Standard_Integer
         :rtype: int
 
         """
         return _BSplCLib.bsplclib_MinKnotMult(*args)
 
     MinKnotMult = staticmethod(MinKnotMult)
-    def NbPoles(*args) -> "Standard_Integer" :
+    def NbPoles(*args):
         """
         * Returns the number of poles of the curve. Returns 0 if one of the multiplicities is incorrect.  * Non positive.  * Greater than Degree, or Degree+1 at the first and last knot of a non periodic curve.  * The last periodicity on a periodic curve is not equal to the first.
 
         :param Degree:
-        :type Degree: int
+        :type Degree: Standard_Integer
         :param Periodic:
         :type Periodic: bool
         :param Mults:
@@ -298,14 +299,14 @@ class bsplclib(object):
         return _BSplCLib.bsplclib_NbPoles(*args)
 
     NbPoles = staticmethod(NbPoles)
-    def KnotSequenceLength(*args) -> "Standard_Integer" :
+    def KnotSequenceLength(*args):
         """
         * Returns the length of the sequence of knots with repetition.  Periodic :  Sum(Mults(i), i = Mults.Lower(); i <= Mults.Upper());  Non Periodic :  Sum(Mults(i); i = Mults.Lower(); i < Mults.Upper()) + 2 * Degree
 
         :param Mults:
         :type Mults: TColStd_Array1OfInteger &
         :param Degree:
-        :type Degree: int
+        :type Degree: Standard_Integer
         :param Periodic:
         :type Periodic: bool
         :rtype: int
@@ -314,7 +315,7 @@ class bsplclib(object):
         return _BSplCLib.bsplclib_KnotSequenceLength(*args)
 
     KnotSequenceLength = staticmethod(KnotSequenceLength)
-    def KnotSequence(*args) -> "void" :
+    def KnotSequence(*args):
         """
         :param Knots:
         :type Knots: TColStd_Array1OfReal &
@@ -331,7 +332,7 @@ class bsplclib(object):
         :param Mults:
         :type Mults: TColStd_Array1OfInteger &
         :param Degree:
-        :type Degree: int
+        :type Degree: Standard_Integer
         :param Periodic:
         :type Periodic: bool
         :param KnotSeq:
@@ -342,8 +343,16 @@ class bsplclib(object):
         return _BSplCLib.bsplclib_KnotSequence(*args)
 
     KnotSequence = staticmethod(KnotSequence)
-    def KnotsLength(*args) -> "Standard_Integer" :
+    def KnotsLength(*args):
         """
+        * Returns the length of the sequence of knots (and Mults) without repetition.
+
+        :param KnotSeq:
+        :type KnotSeq: TColStd_Array1OfReal &
+        :param Periodic: default value is Standard_False
+        :type Periodic: bool
+        :rtype: int
+
         * Returns the length of the sequence of knots (and Mults) without repetition.
 
         :param KnotSeq:
@@ -356,8 +365,20 @@ class bsplclib(object):
         return _BSplCLib.bsplclib_KnotsLength(*args)
 
     KnotsLength = staticmethod(KnotsLength)
-    def Knots(*args) -> "void" :
+    def Knots(*args):
         """
+        * Computes the sequence of knots Knots without  repetition of the knots of multiplicity greater  than 1.  Length of <Knots> and <Mults> must be KnotsLength(KnotSequence,Periodic)
+
+        :param KnotSeq:
+        :type KnotSeq: TColStd_Array1OfReal &
+        :param Knots:
+        :type Knots: TColStd_Array1OfReal &
+        :param Mults:
+        :type Mults: TColStd_Array1OfInteger &
+        :param Periodic: default value is Standard_False
+        :type Periodic: bool
+        :rtype: void
+
         * Computes the sequence of knots Knots without  repetition of the knots of multiplicity greater  than 1.  Length of <Knots> and <Mults> must be KnotsLength(KnotSequence,Periodic)
 
         :param KnotSeq:
@@ -374,44 +395,44 @@ class bsplclib(object):
         return _BSplCLib.bsplclib_Knots(*args)
 
     Knots = staticmethod(Knots)
-    def KnotForm(*args) -> "BSplCLib_KnotDistribution" :
+    def KnotForm(*args):
         """
         * Analyses if the knots distribution is 'Uniform'  or 'NonUniform' between the knot FromK1 and the  knot ToK2. There is no repetition of knot in the  knots'sequence <Knots>.
 
         :param Knots:
         :type Knots: TColStd_Array1OfReal &
         :param FromK1:
-        :type FromK1: int
+        :type FromK1: Standard_Integer
         :param ToK2:
-        :type ToK2: int
+        :type ToK2: Standard_Integer
         :rtype: BSplCLib_KnotDistribution
 
         """
         return _BSplCLib.bsplclib_KnotForm(*args)
 
     KnotForm = staticmethod(KnotForm)
-    def MultForm(*args) -> "BSplCLib_MultDistribution" :
+    def MultForm(*args):
         """
         * Analyses the distribution of multiplicities between the knot FromK1 and the Knot ToK2.
 
         :param Mults:
         :type Mults: TColStd_Array1OfInteger &
         :param FromK1:
-        :type FromK1: int
+        :type FromK1: Standard_Integer
         :param ToK2:
-        :type ToK2: int
+        :type ToK2: Standard_Integer
         :rtype: BSplCLib_MultDistribution
 
         """
         return _BSplCLib.bsplclib_MultForm(*args)
 
     MultForm = staticmethod(MultForm)
-    def KnotAnalysis(*args) -> "Standard_Integer &" :
+    def KnotAnalysis(*args):
         """
         * Analyzes the array of knots. Returns the form and the maximum knot multiplicity.
 
         :param Degree:
-        :type Degree: int
+        :type Degree: Standard_Integer
         :param Periodic:
         :type Periodic: bool
         :param CKnots:
@@ -421,14 +442,14 @@ class bsplclib(object):
         :param KnotForm:
         :type KnotForm: GeomAbs_BSplKnotDistribution &
         :param MaxKnotMult:
-        :type MaxKnotMult: int &
+        :type MaxKnotMult: Standard_Integer &
         :rtype: void
 
         """
         return _BSplCLib.bsplclib_KnotAnalysis(*args)
 
     KnotAnalysis = staticmethod(KnotAnalysis)
-    def Reparametrize(*args) -> "void" :
+    def Reparametrize(*args):
         """
         * Reparametrizes a B-spline curve to [U1, U2]. The knot values are recomputed such that Knots (Lower) = U1 and Knots (Upper) = U2 but the knot form is not modified. Warnings : In the array Knots the values must be in ascending order. U1 must not be equal to U2 to avoid division by zero.
 
@@ -444,7 +465,7 @@ class bsplclib(object):
         return _BSplCLib.bsplclib_Reparametrize(*args)
 
     Reparametrize = staticmethod(Reparametrize)
-    def Reverse(*args) -> "void" :
+    def Reverse(*args):
         """
         * Reverses the array knots to become the knots sequence of the reversed curve.
 
@@ -463,7 +484,7 @@ class bsplclib(object):
         :param Poles:
         :type Poles: TColgp_Array1OfPnt
         :param Last:
-        :type Last: int
+        :type Last: Standard_Integer
         :rtype: void
 
         * Reverses the array of poles.
@@ -471,7 +492,7 @@ class bsplclib(object):
         :param Poles:
         :type Poles: TColgp_Array1OfPnt2d
         :param Last:
-        :type Last: int
+        :type Last: Standard_Integer
         :rtype: void
 
         * Reverses the array of poles.
@@ -479,23 +500,35 @@ class bsplclib(object):
         :param Weights:
         :type Weights: TColStd_Array1OfReal &
         :param Last:
-        :type Last: int
+        :type Last: Standard_Integer
         :rtype: void
 
         """
         return _BSplCLib.bsplclib_Reverse(*args)
 
     Reverse = staticmethod(Reverse)
-    def IsRational(*args) -> "Standard_Boolean" :
+    def IsRational(*args):
         """
         * Returns False if all the weights of the array <Weights> between I1 an I2 are identic. Epsilon is used for comparing weights. If Epsilon is 0. the Epsilon of the first weight is used.
 
         :param Weights:
         :type Weights: TColStd_Array1OfReal &
         :param I1:
-        :type I1: int
+        :type I1: Standard_Integer
         :param I2:
-        :type I2: int
+        :type I2: Standard_Integer
+        :param Epsilon: default value is 0.0
+        :type Epsilon: float
+        :rtype: bool
+
+        * Returns False if all the weights of the array <Weights> between I1 an I2 are identic. Epsilon is used for comparing weights. If Epsilon is 0. the Epsilon of the first weight is used.
+
+        :param Weights:
+        :type Weights: TColStd_Array1OfReal &
+        :param I1:
+        :type I1: Standard_Integer
+        :param I2:
+        :type I2: Standard_Integer
         :param Epsilon: default value is 0.0
         :type Epsilon: float
         :rtype: bool
@@ -504,58 +537,58 @@ class bsplclib(object):
         return _BSplCLib.bsplclib_IsRational(*args)
 
     IsRational = staticmethod(IsRational)
-    def MaxDegree(*args) -> "Standard_Integer" :
+    def MaxDegree():
         """
         * returns the degree maxima for a BSplineCurve.
 
         :rtype: int
 
         """
-        return _BSplCLib.bsplclib_MaxDegree(*args)
+        return _BSplCLib.bsplclib_MaxDegree()
 
     MaxDegree = staticmethod(MaxDegree)
-    def BoorScheme(*args) -> "Standard_Real &, Standard_Real &" :
+    def BoorScheme(*args):
         """
         * Performs the Boor Algorithm at parameter <U> with the given <Degree> and the array of <Knots> on the poles <Poles> of dimension <Dimension>. The schema is computed until level <Depth> on a basis of <Length+1> poles.  * Knots is an array of reals of length : <Length> + <Degree>  * Poles is an array of reals of length : (2 * <Length> + 1) * <Dimension> The poles values must be set in the array at the positions. 0..Dimension, 2 * Dimension ..  3 * Dimension 4 * Dimension ..  5 * Dimension ... The results are found in the array poles depending  on the Depth. (See the method GetPole).
 
         :param U:
         :type U: float
         :param Degree:
-        :type Degree: int
+        :type Degree: Standard_Integer
         :param Knots:
         :type Knots: float &
         :param Dimension:
-        :type Dimension: int
+        :type Dimension: Standard_Integer
         :param Poles:
         :type Poles: float &
         :param Depth:
-        :type Depth: int
+        :type Depth: Standard_Integer
         :param Length:
-        :type Length: int
+        :type Length: Standard_Integer
         :rtype: void
 
         """
         return _BSplCLib.bsplclib_BoorScheme(*args)
 
     BoorScheme = staticmethod(BoorScheme)
-    def AntiBoorScheme(*args) -> "Standard_Real &, Standard_Real &" :
+    def AntiBoorScheme(*args):
         """
         * Compute the content of Pole before the BoorScheme. This method is used to remove poles.  U is the poles to remove, Knots should contains the knots of the curve after knot removal.  The first and last poles do not change, the other poles are computed by averaging two possible values. The distance between the two possible poles is computed, if it is higher than <Tolerance> False is returned.
 
         :param U:
         :type U: float
         :param Degree:
-        :type Degree: int
+        :type Degree: Standard_Integer
         :param Knots:
         :type Knots: float &
         :param Dimension:
-        :type Dimension: int
+        :type Dimension: Standard_Integer
         :param Poles:
         :type Poles: float &
         :param Depth:
-        :type Depth: int
+        :type Depth: Standard_Integer
         :param Length:
-        :type Length: int
+        :type Length: Standard_Integer
         :param Tolerance:
         :type Tolerance: float
         :rtype: bool
@@ -564,20 +597,20 @@ class bsplclib(object):
         return _BSplCLib.bsplclib_AntiBoorScheme(*args)
 
     AntiBoorScheme = staticmethod(AntiBoorScheme)
-    def Derivative(*args) -> "Standard_Real &, Standard_Real &" :
+    def Derivative(*args):
         """
         * Computes the poles of the BSpline giving the derivatives of order <Order>.  The formula for the first order is  Pole(i) = Degree * (Pole(i+1) - Pole(i)) /  (Knots(i+Degree+1) - Knots(i+1))  This formula is repeated (Degree is decremented at each step).
 
         :param Degree:
-        :type Degree: int
+        :type Degree: Standard_Integer
         :param Knots:
         :type Knots: float &
         :param Dimension:
-        :type Dimension: int
+        :type Dimension: Standard_Integer
         :param Length:
-        :type Length: int
+        :type Length: Standard_Integer
         :param Order:
-        :type Order: int
+        :type Order: Standard_Integer
         :param Poles:
         :type Poles: float &
         :rtype: void
@@ -586,20 +619,20 @@ class bsplclib(object):
         return _BSplCLib.bsplclib_Derivative(*args)
 
     Derivative = staticmethod(Derivative)
-    def Bohm(*args) -> "Standard_Real &, Standard_Real &" :
+    def Bohm(*args):
         """
         * Performs the Bohm Algorithm at parameter <U>. This algorithm computes the value and all the derivatives up to order N (N <= Degree).  <Poles> is the original array of poles.  The result in <Poles> is the value and the derivatives. Poles[0] is the value, Poles[Degree] is the last derivative.
 
         :param U:
         :type U: float
         :param Degree:
-        :type Degree: int
+        :type Degree: Standard_Integer
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :param Knots:
         :type Knots: float &
         :param Dimension:
-        :type Dimension: int
+        :type Dimension: Standard_Integer
         :param Poles:
         :type Poles: float &
         :rtype: void
@@ -608,34 +641,34 @@ class bsplclib(object):
         return _BSplCLib.bsplclib_Bohm(*args)
 
     Bohm = staticmethod(Bohm)
-    def NoWeights(*args) -> "TColStd_Array1OfReal &" :
+    def NoWeights():
         """
         * Used as argument for a non rational curve.
 
         :rtype: TColStd_Array1OfReal
 
         """
-        return _BSplCLib.bsplclib_NoWeights(*args)
+        return _BSplCLib.bsplclib_NoWeights()
 
     NoWeights = staticmethod(NoWeights)
-    def NoMults(*args) -> "TColStd_Array1OfInteger &" :
+    def NoMults():
         """
         * Used as argument for a flatknots evaluation.
 
         :rtype: TColStd_Array1OfInteger
 
         """
-        return _BSplCLib.bsplclib_NoMults(*args)
+        return _BSplCLib.bsplclib_NoMults()
 
     NoMults = staticmethod(NoMults)
-    def BuildKnots(*args) -> "Standard_Real &" :
+    def BuildKnots(*args):
         """
         * Stores in LK the usefull knots for the BoorSchem on the span Knots(Index) - Knots(Index+1)
 
         :param Degree:
-        :type Degree: int
+        :type Degree: Standard_Integer
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Periodic:
         :type Periodic: bool
         :param Knots:
@@ -650,14 +683,14 @@ class bsplclib(object):
         return _BSplCLib.bsplclib_BuildKnots(*args)
 
     BuildKnots = staticmethod(BuildKnots)
-    def PoleIndex(*args) -> "Standard_Integer" :
+    def PoleIndex(*args):
         """
         * Return the index of the first Pole to use on the span Mults(Index) - Mults(Index+1). This index must be added to Poles.Lower().
 
         :param Degree:
-        :type Degree: int
+        :type Degree: Standard_Integer
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Periodic:
         :type Periodic: bool
         :param Mults:
@@ -668,12 +701,12 @@ class bsplclib(object):
         return _BSplCLib.bsplclib_PoleIndex(*args)
 
     PoleIndex = staticmethod(PoleIndex)
-    def BuildEval(*args) -> "Standard_Real &" :
+    def BuildEval(*args):
         """
         :param Degree:
-        :type Degree: int
+        :type Degree: Standard_Integer
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Poles:
         :type Poles: TColStd_Array1OfReal &
         :param Weights:
@@ -683,9 +716,9 @@ class bsplclib(object):
         :rtype: void
 
         :param Degree:
-        :type Degree: int
+        :type Degree: Standard_Integer
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Poles:
         :type Poles: TColgp_Array1OfPnt
         :param Weights:
@@ -697,9 +730,9 @@ class bsplclib(object):
         * Copy in <LP> the poles and weights for the Eval scheme. starting from Poles(Poles.Lower()+Index)
 
         :param Degree:
-        :type Degree: int
+        :type Degree: Standard_Integer
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Poles:
         :type Poles: TColgp_Array1OfPnt2d
         :param Weights:
@@ -712,16 +745,16 @@ class bsplclib(object):
         return _BSplCLib.bsplclib_BuildEval(*args)
 
     BuildEval = staticmethod(BuildEval)
-    def BuildBoor(*args) -> "Standard_Real &" :
+    def BuildBoor(*args):
         """
         * Copy in <LP> poles for <Dimension> Boor scheme. Starting from <Index> * <Dimension>, copy <Length+1> poles.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Length:
-        :type Length: int
+        :type Length: Standard_Integer
         :param Dimension:
-        :type Dimension: int
+        :type Dimension: Standard_Integer
         :param Poles:
         :type Poles: TColStd_Array1OfReal &
         :param LP:
@@ -732,38 +765,38 @@ class bsplclib(object):
         return _BSplCLib.bsplclib_BuildBoor(*args)
 
     BuildBoor = staticmethod(BuildBoor)
-    def BoorIndex(*args) -> "Standard_Integer" :
+    def BoorIndex(*args):
         """
         * Returns the index in the Boor result array of the poles <Index>. If the Boor algorithm was perform with <Length> and <Depth>.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Length:
-        :type Length: int
+        :type Length: Standard_Integer
         :param Depth:
-        :type Depth: int
+        :type Depth: Standard_Integer
         :rtype: int
 
         """
         return _BSplCLib.bsplclib_BoorIndex(*args)
 
     BoorIndex = staticmethod(BoorIndex)
-    def GetPole(*args) -> "Standard_Real &, Standard_Integer &" :
+    def GetPole(*args):
         """
         * Copy the pole at position <Index> in the Boor scheme of dimension <Dimension> to <Position> in the array <Pole>. <Position> is updated.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Length:
-        :type Length: int
+        :type Length: Standard_Integer
         :param Depth:
-        :type Depth: int
+        :type Depth: Standard_Integer
         :param Dimension:
-        :type Dimension: int
+        :type Dimension: Standard_Integer
         :param LocPoles:
         :type LocPoles: float &
         :param Position:
-        :type Position: int &
+        :type Position: Standard_Integer &
         :param Pole:
         :type Pole: TColStd_Array1OfReal &
         :rtype: void
@@ -772,12 +805,12 @@ class bsplclib(object):
         return _BSplCLib.bsplclib_GetPole(*args)
 
     GetPole = staticmethod(GetPole)
-    def PrepareInsertKnots(*args) -> "Standard_Integer &, Standard_Integer &" :
+    def PrepareInsertKnots(*args):
         """
         * Returns in <NbPoles, NbKnots> the new number of poles and knots if the sequence of knots <AddKnots, AddMults> is inserted in the sequence <Knots, Mults>.  Epsilon is used to compare knots for equality.  If Add is True the multiplicities on equal knots are added.  If Add is False the max value of the multiplicities is kept.  Return False if :  The knew knots are knot increasing.  The new knots are not in the range.
 
         :param Degree:
-        :type Degree: int
+        :type Degree: Standard_Integer
         :param Periodic:
         :type Periodic: bool
         :param Knots:
@@ -789,9 +822,33 @@ class bsplclib(object):
         :param AddMults:
         :type AddMults: TColStd_Array1OfInteger &
         :param NbPoles:
-        :type NbPoles: int &
+        :type NbPoles: Standard_Integer &
         :param NbKnots:
-        :type NbKnots: int &
+        :type NbKnots: Standard_Integer &
+        :param Epsilon:
+        :type Epsilon: float
+        :param Add: default value is Standard_True
+        :type Add: bool
+        :rtype: bool
+
+        * Returns in <NbPoles, NbKnots> the new number of poles and knots if the sequence of knots <AddKnots, AddMults> is inserted in the sequence <Knots, Mults>.  Epsilon is used to compare knots for equality.  If Add is True the multiplicities on equal knots are added.  If Add is False the max value of the multiplicities is kept.  Return False if :  The knew knots are knot increasing.  The new knots are not in the range.
+
+        :param Degree:
+        :type Degree: Standard_Integer
+        :param Periodic:
+        :type Periodic: bool
+        :param Knots:
+        :type Knots: TColStd_Array1OfReal &
+        :param Mults:
+        :type Mults: TColStd_Array1OfInteger &
+        :param AddKnots:
+        :type AddKnots: TColStd_Array1OfReal &
+        :param AddMults:
+        :type AddMults: TColStd_Array1OfInteger &
+        :param NbPoles:
+        :type NbPoles: Standard_Integer &
+        :param NbKnots:
+        :type NbKnots: Standard_Integer &
         :param Epsilon:
         :type Epsilon: float
         :param Add: default value is Standard_True
@@ -802,14 +859,14 @@ class bsplclib(object):
         return _BSplCLib.bsplclib_PrepareInsertKnots(*args)
 
     PrepareInsertKnots = staticmethod(PrepareInsertKnots)
-    def InsertKnots(*args) -> "void" :
+    def InsertKnots(*args):
         """
         :param Degree:
-        :type Degree: int
+        :type Degree: Standard_Integer
         :param Periodic:
         :type Periodic: bool
         :param Dimension:
-        :type Dimension: int
+        :type Dimension: Standard_Integer
         :param Poles:
         :type Poles: TColStd_Array1OfReal &
         :param Knots:
@@ -833,7 +890,65 @@ class bsplclib(object):
         :rtype: void
 
         :param Degree:
-        :type Degree: int
+        :type Degree: Standard_Integer
+        :param Periodic:
+        :type Periodic: bool
+        :param Dimension:
+        :type Dimension: Standard_Integer
+        :param Poles:
+        :type Poles: TColStd_Array1OfReal &
+        :param Knots:
+        :type Knots: TColStd_Array1OfReal &
+        :param Mults:
+        :type Mults: TColStd_Array1OfInteger &
+        :param AddKnots:
+        :type AddKnots: TColStd_Array1OfReal &
+        :param AddMults:
+        :type AddMults: TColStd_Array1OfInteger &
+        :param NewPoles:
+        :type NewPoles: TColStd_Array1OfReal &
+        :param NewKnots:
+        :type NewKnots: TColStd_Array1OfReal &
+        :param NewMults:
+        :type NewMults: TColStd_Array1OfInteger &
+        :param Epsilon:
+        :type Epsilon: float
+        :param Add: default value is Standard_True
+        :type Add: bool
+        :rtype: void
+
+        :param Degree:
+        :type Degree: Standard_Integer
+        :param Periodic:
+        :type Periodic: bool
+        :param Poles:
+        :type Poles: TColgp_Array1OfPnt
+        :param Weights:
+        :type Weights: TColStd_Array1OfReal &
+        :param Knots:
+        :type Knots: TColStd_Array1OfReal &
+        :param Mults:
+        :type Mults: TColStd_Array1OfInteger &
+        :param AddKnots:
+        :type AddKnots: TColStd_Array1OfReal &
+        :param AddMults:
+        :type AddMults: TColStd_Array1OfInteger &
+        :param NewPoles:
+        :type NewPoles: TColgp_Array1OfPnt
+        :param NewWeights:
+        :type NewWeights: TColStd_Array1OfReal &
+        :param NewKnots:
+        :type NewKnots: TColStd_Array1OfReal &
+        :param NewMults:
+        :type NewMults: TColStd_Array1OfInteger &
+        :param Epsilon:
+        :type Epsilon: float
+        :param Add: default value is Standard_True
+        :type Add: bool
+        :rtype: void
+
+        :param Degree:
+        :type Degree: Standard_Integer
         :param Periodic:
         :type Periodic: bool
         :param Poles:
@@ -865,7 +980,39 @@ class bsplclib(object):
         * Insert a sequence of knots <AddKnots> with multiplicities <AddMults>. <AddKnots> must be a non decreasing sequence and verifies : Knots(Knots.Lower()) <= AddKnots(AddKnots.Lower()) Knots(Knots.Upper()) >= AddKnots(AddKnots.Upper()) The NewPoles and NewWeights arrays must have a length : Poles.Length() + Sum(AddMults()) When a knot to insert is identic to an existing knot the multiplicities are added. Epsilon is used to test knots for equality. When AddMult is negative or null the knot is not inserted. No multiplicity will becomes higher than the degree. The new Knots and Multiplicities are copied in <NewKnots> and <NewMults>. All the New arrays should be correctly dimensioned. When all the new knots are existing knots, i.e. only the multiplicities will change it is safe to use the same arrays as input and output.
 
         :param Degree:
-        :type Degree: int
+        :type Degree: Standard_Integer
+        :param Periodic:
+        :type Periodic: bool
+        :param Poles:
+        :type Poles: TColgp_Array1OfPnt2d
+        :param Weights:
+        :type Weights: TColStd_Array1OfReal &
+        :param Knots:
+        :type Knots: TColStd_Array1OfReal &
+        :param Mults:
+        :type Mults: TColStd_Array1OfInteger &
+        :param AddKnots:
+        :type AddKnots: TColStd_Array1OfReal &
+        :param AddMults:
+        :type AddMults: TColStd_Array1OfInteger &
+        :param NewPoles:
+        :type NewPoles: TColgp_Array1OfPnt2d
+        :param NewWeights:
+        :type NewWeights: TColStd_Array1OfReal &
+        :param NewKnots:
+        :type NewKnots: TColStd_Array1OfReal &
+        :param NewMults:
+        :type NewMults: TColStd_Array1OfInteger &
+        :param Epsilon:
+        :type Epsilon: float
+        :param Add: default value is Standard_True
+        :type Add: bool
+        :rtype: void
+
+        * Insert a sequence of knots <AddKnots> with multiplicities <AddMults>. <AddKnots> must be a non decreasing sequence and verifies : Knots(Knots.Lower()) <= AddKnots(AddKnots.Lower()) Knots(Knots.Upper()) >= AddKnots(AddKnots.Upper()) The NewPoles and NewWeights arrays must have a length : Poles.Length() + Sum(AddMults()) When a knot to insert is identic to an existing knot the multiplicities are added. Epsilon is used to test knots for equality. When AddMult is negative or null the knot is not inserted. No multiplicity will becomes higher than the degree. The new Knots and Multiplicities are copied in <NewKnots> and <NewMults>. All the New arrays should be correctly dimensioned. When all the new knots are existing knots, i.e. only the multiplicities will change it is safe to use the same arrays as input and output.
+
+        :param Degree:
+        :type Degree: Standard_Integer
         :param Periodic:
         :type Periodic: bool
         :param Poles:
@@ -898,16 +1045,16 @@ class bsplclib(object):
         return _BSplCLib.bsplclib_InsertKnots(*args)
 
     InsertKnots = staticmethod(InsertKnots)
-    def InsertKnot(*args) -> "void" :
+    def InsertKnot(*args):
         """
         :param UIndex:
-        :type UIndex: int
+        :type UIndex: Standard_Integer
         :param U:
         :type U: float
         :param UMult:
-        :type UMult: int
+        :type UMult: Standard_Integer
         :param Degree:
-        :type Degree: int
+        :type Degree: Standard_Integer
         :param Periodic:
         :type Periodic: bool
         :param Poles:
@@ -927,13 +1074,13 @@ class bsplclib(object):
         * Insert a new knot U of multiplicity UMult in the knot sequence. The location of the new Knot should be given as an input data. UIndex locates the new knot U in the knot sequence and Knots (UIndex) < U < Knots (UIndex + 1). The new control points corresponding to this insertion are returned. Knots and Mults are not updated.
 
         :param UIndex:
-        :type UIndex: int
+        :type UIndex: Standard_Integer
         :param U:
         :type U: float
         :param UMult:
-        :type UMult: int
+        :type UMult: Standard_Integer
         :param Degree:
-        :type Degree: int
+        :type Degree: Standard_Integer
         :param Periodic:
         :type Periodic: bool
         :param Poles:
@@ -954,14 +1101,14 @@ class bsplclib(object):
         return _BSplCLib.bsplclib_InsertKnot(*args)
 
     InsertKnot = staticmethod(InsertKnot)
-    def RaiseMultiplicity(*args) -> "void" :
+    def RaiseMultiplicity(*args):
         """
         :param KnotIndex:
-        :type KnotIndex: int
+        :type KnotIndex: Standard_Integer
         :param Mult:
-        :type Mult: int
+        :type Mult: Standard_Integer
         :param Degree:
-        :type Degree: int
+        :type Degree: Standard_Integer
         :param Periodic:
         :type Periodic: bool
         :param Poles:
@@ -981,11 +1128,11 @@ class bsplclib(object):
         * Raise the multiplicity of knot to <UMult>. The new control points are returned. Knots and Mults are not updated.
 
         :param KnotIndex:
-        :type KnotIndex: int
+        :type KnotIndex: Standard_Integer
         :param Mult:
-        :type Mult: int
+        :type Mult: Standard_Integer
         :param Degree:
-        :type Degree: int
+        :type Degree: Standard_Integer
         :param Periodic:
         :type Periodic: bool
         :param Poles:
@@ -1006,18 +1153,18 @@ class bsplclib(object):
         return _BSplCLib.bsplclib_RaiseMultiplicity(*args)
 
     RaiseMultiplicity = staticmethod(RaiseMultiplicity)
-    def RemoveKnot(*args) -> "Standard_Boolean" :
+    def RemoveKnot(*args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Mult:
-        :type Mult: int
+        :type Mult: Standard_Integer
         :param Degree:
-        :type Degree: int
+        :type Degree: Standard_Integer
         :param Periodic:
         :type Periodic: bool
         :param Dimension:
-        :type Dimension: int
+        :type Dimension: Standard_Integer
         :param Poles:
         :type Poles: TColStd_Array1OfReal &
         :param Knots:
@@ -1035,11 +1182,11 @@ class bsplclib(object):
         :rtype: bool
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Mult:
-        :type Mult: int
+        :type Mult: Standard_Integer
         :param Degree:
-        :type Degree: int
+        :type Degree: Standard_Integer
         :param Periodic:
         :type Periodic: bool
         :param Poles:
@@ -1065,11 +1212,11 @@ class bsplclib(object):
         * Decrement the multiplicity of <Knots(Index)> to <Mult>. If <Mult> is null the knot is removed.  As there are two ways to compute the new poles the midlle will be used as long as the distance is lower than Tolerance.  If a distance is bigger than tolerance the methods returns False and the new arrays are not modified.  A low tolerance can be used to test if the knot can be removed without modifying the curve.  A high tolerance can be used to 'smooth' the curve.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Mult:
-        :type Mult: int
+        :type Mult: Standard_Integer
         :param Degree:
-        :type Degree: int
+        :type Degree: Standard_Integer
         :param Periodic:
         :type Periodic: bool
         :param Poles:
@@ -1096,14 +1243,14 @@ class bsplclib(object):
         return _BSplCLib.bsplclib_RemoveKnot(*args)
 
     RemoveKnot = staticmethod(RemoveKnot)
-    def IncreaseDegreeCountKnots(*args) -> "Standard_Integer" :
+    def IncreaseDegreeCountKnots(*args):
         """
         * Returns the number of knots of a curve with multiplicities <Mults> after elevating the degree from <Degree> to <NewDegree>. See the IncreaseDegree method for more comments.
 
         :param Degree:
-        :type Degree: int
+        :type Degree: Standard_Integer
         :param NewDegree:
-        :type NewDegree: int
+        :type NewDegree: Standard_Integer
         :param Periodic:
         :type Periodic: bool
         :param Mults:
@@ -1114,16 +1261,16 @@ class bsplclib(object):
         return _BSplCLib.bsplclib_IncreaseDegreeCountKnots(*args)
 
     IncreaseDegreeCountKnots = staticmethod(IncreaseDegreeCountKnots)
-    def IncreaseDegree(*args) -> "void" :
+    def IncreaseDegree(*args):
         """
         :param Degree:
-        :type Degree: int
+        :type Degree: Standard_Integer
         :param NewDegree:
-        :type NewDegree: int
+        :type NewDegree: Standard_Integer
         :param Periodic:
         :type Periodic: bool
         :param Dimension:
-        :type Dimension: int
+        :type Dimension: Standard_Integer
         :param Poles:
         :type Poles: TColStd_Array1OfReal &
         :param Knots:
@@ -1139,9 +1286,9 @@ class bsplclib(object):
         :rtype: void
 
         :param Degree:
-        :type Degree: int
+        :type Degree: Standard_Integer
         :param NewDegree:
-        :type NewDegree: int
+        :type NewDegree: Standard_Integer
         :param Periodic:
         :type Periodic: bool
         :param Poles:
@@ -1163,9 +1310,9 @@ class bsplclib(object):
         :rtype: void
 
         :param Degree:
-        :type Degree: int
+        :type Degree: Standard_Integer
         :param NewDegree:
-        :type NewDegree: int
+        :type NewDegree: Standard_Integer
         :param Periodic:
         :type Periodic: bool
         :param Poles:
@@ -1187,7 +1334,7 @@ class bsplclib(object):
         :rtype: void
 
         :param NewDegree:
-        :type NewDegree: int
+        :type NewDegree: Standard_Integer
         :param Poles:
         :type Poles: TColgp_Array1OfPnt
         :param Weights:
@@ -1201,7 +1348,7 @@ class bsplclib(object):
         * Increase the degree of a bspline (or bezier) curve of dimension <Dimension> form <Degree> to <NewDegree>.  The number of poles in the new curve is : Poles.Length() + (NewDegree - Degree) * Number of spans  Where the number of spans is : LastUKnotIndex(Mults) - FirstUKnotIndex(Mults) + 1 for a non-periodic curve And Knots.Length() - 1 for a periodic curve.  The multiplicities of all knots are increased by the degree elevation.  The new knots are usually the same knots with the exception of a non-periodic curve with the first and last multiplicity not equal to Degree+1 where knots are removed form the start and the bottom untils the sum of the multiplicities is equal to NewDegree+1 at the knots corresponding to the first and last parameters of the curve.  Example : Suppose a curve of degree 3 starting with following knots and multiplicities :  knot : 0. 1. 2. mult : 1 2 1  The FirstUKnot is 2. because the sum of multiplicities is Degree+1 : 1 + 2 + 1 = 4 = 3 + 1  i.e. the first parameter of the curve is 2. and will still be 2. after degree elevation. Let raises this curve to degree 4. The multiplicities are increased by 2.  They become 2 3 2. But we need a sum of multiplicities of 5 at knot 2. So the first knot is removed and the new knots are :  knot : 1. 2. mult : 3 2  The multipicity of the first knot may also be reduced if the sum is still to big.  In the most common situations (periodic curve or curve with first and last multiplicities equals to Degree+1) the knots are knot changes.  The method IncreaseDegreeCountKnots can be used to compute the new number of knots.
 
         :param NewDegree:
-        :type NewDegree: int
+        :type NewDegree: Standard_Integer
         :param Poles:
         :type Poles: TColgp_Array1OfPnt2d
         :param Weights:
@@ -1216,30 +1363,30 @@ class bsplclib(object):
         return _BSplCLib.bsplclib_IncreaseDegree(*args)
 
     IncreaseDegree = staticmethod(IncreaseDegree)
-    def PrepareUnperiodize(*args) -> "Standard_Integer &, Standard_Integer &" :
+    def PrepareUnperiodize(*args):
         """
         * Set in <NbKnots> and <NbPolesToAdd> the number of Knots and Poles of the NotPeriodic Curve identical at the periodic curve with a degree <Degree> , a knots-distribution with Multiplicities <Mults>.
 
         :param Degree:
-        :type Degree: int
+        :type Degree: Standard_Integer
         :param Mults:
         :type Mults: TColStd_Array1OfInteger &
         :param NbKnots:
-        :type NbKnots: int &
+        :type NbKnots: Standard_Integer &
         :param NbPoles:
-        :type NbPoles: int &
+        :type NbPoles: Standard_Integer &
         :rtype: void
 
         """
         return _BSplCLib.bsplclib_PrepareUnperiodize(*args)
 
     PrepareUnperiodize = staticmethod(PrepareUnperiodize)
-    def Unperiodize(*args) -> "void" :
+    def Unperiodize(*args):
         """
         :param Degree:
-        :type Degree: int
+        :type Degree: Standard_Integer
         :param Dimension:
-        :type Dimension: int
+        :type Dimension: Standard_Integer
         :param Mults:
         :type Mults: TColStd_Array1OfInteger &
         :param Knots:
@@ -1255,7 +1402,7 @@ class bsplclib(object):
         :rtype: void
 
         :param Degree:
-        :type Degree: int
+        :type Degree: Standard_Integer
         :param Mults:
         :type Mults: TColStd_Array1OfInteger &
         :param Knots:
@@ -1275,7 +1422,7 @@ class bsplclib(object):
         :rtype: void
 
         :param Degree:
-        :type Degree: int
+        :type Degree: Standard_Integer
         :param Mults:
         :type Mults: TColStd_Array1OfInteger &
         :param Knots:
@@ -1298,12 +1445,12 @@ class bsplclib(object):
         return _BSplCLib.bsplclib_Unperiodize(*args)
 
     Unperiodize = staticmethod(Unperiodize)
-    def PrepareTrimming(*args) -> "Standard_Integer &, Standard_Integer &" :
+    def PrepareTrimming(*args):
         """
         * Set in <NbKnots> and <NbPoles> the number of Knots and Poles of the curve resulting of the trimming of the BSplinecurve definded with <degree>, <knots>, <mults>
 
         :param Degree:
-        :type Degree: int
+        :type Degree: Standard_Integer
         :param Periodic:
         :type Periodic: bool
         :param Knots:
@@ -1315,23 +1462,23 @@ class bsplclib(object):
         :param U2:
         :type U2: float
         :param NbKnots:
-        :type NbKnots: int &
+        :type NbKnots: Standard_Integer &
         :param NbPoles:
-        :type NbPoles: int &
+        :type NbPoles: Standard_Integer &
         :rtype: void
 
         """
         return _BSplCLib.bsplclib_PrepareTrimming(*args)
 
     PrepareTrimming = staticmethod(PrepareTrimming)
-    def Trimming(*args) -> "void" :
+    def Trimming(*args):
         """
         :param Degree:
-        :type Degree: int
+        :type Degree: Standard_Integer
         :param Periodic:
         :type Periodic: bool
         :param Dimension:
-        :type Dimension: int
+        :type Dimension: Standard_Integer
         :param Knots:
         :type Knots: TColStd_Array1OfReal &
         :param Mults:
@@ -1351,7 +1498,7 @@ class bsplclib(object):
         :rtype: void
 
         :param Degree:
-        :type Degree: int
+        :type Degree: Standard_Integer
         :param Periodic:
         :type Periodic: bool
         :param Knots:
@@ -1377,7 +1524,7 @@ class bsplclib(object):
         :rtype: void
 
         :param Degree:
-        :type Degree: int
+        :type Degree: Standard_Integer
         :param Periodic:
         :type Periodic: bool
         :param Knots:
@@ -1406,14 +1553,14 @@ class bsplclib(object):
         return _BSplCLib.bsplclib_Trimming(*args)
 
     Trimming = staticmethod(Trimming)
-    def D0(*args) -> "void" :
+    def D0(*args):
         """
         :param U:
         :type U: float
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Degree:
-        :type Degree: int
+        :type Degree: Standard_Integer
         :param Periodic:
         :type Periodic: bool
         :param Poles:
@@ -1431,9 +1578,9 @@ class bsplclib(object):
         :param U:
         :type U: float
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Degree:
-        :type Degree: int
+        :type Degree: Standard_Integer
         :param Periodic:
         :type Periodic: bool
         :param Poles:
@@ -1451,9 +1598,9 @@ class bsplclib(object):
         :param U:
         :type U: float
         :param UIndex:
-        :type UIndex: int
+        :type UIndex: Standard_Integer
         :param Degree:
-        :type Degree: int
+        :type Degree: Standard_Integer
         :param Periodic:
         :type Periodic: bool
         :param Poles:
@@ -1492,14 +1639,14 @@ class bsplclib(object):
         return _BSplCLib.bsplclib_D0(*args)
 
     D0 = staticmethod(D0)
-    def D1(*args) -> "void" :
+    def D1(*args):
         """
         :param U:
         :type U: float
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Degree:
-        :type Degree: int
+        :type Degree: Standard_Integer
         :param Periodic:
         :type Periodic: bool
         :param Poles:
@@ -1519,9 +1666,9 @@ class bsplclib(object):
         :param U:
         :type U: float
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Degree:
-        :type Degree: int
+        :type Degree: Standard_Integer
         :param Periodic:
         :type Periodic: bool
         :param Poles:
@@ -1541,9 +1688,9 @@ class bsplclib(object):
         :param U:
         :type U: float
         :param UIndex:
-        :type UIndex: int
+        :type UIndex: Standard_Integer
         :param Degree:
-        :type Degree: int
+        :type Degree: Standard_Integer
         :param Periodic:
         :type Periodic: bool
         :param Poles:
@@ -1588,14 +1735,14 @@ class bsplclib(object):
         return _BSplCLib.bsplclib_D1(*args)
 
     D1 = staticmethod(D1)
-    def D2(*args) -> "void" :
+    def D2(*args):
         """
         :param U:
         :type U: float
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Degree:
-        :type Degree: int
+        :type Degree: Standard_Integer
         :param Periodic:
         :type Periodic: bool
         :param Poles:
@@ -1617,9 +1764,9 @@ class bsplclib(object):
         :param U:
         :type U: float
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Degree:
-        :type Degree: int
+        :type Degree: Standard_Integer
         :param Periodic:
         :type Periodic: bool
         :param Poles:
@@ -1641,9 +1788,9 @@ class bsplclib(object):
         :param U:
         :type U: float
         :param UIndex:
-        :type UIndex: int
+        :type UIndex: Standard_Integer
         :param Degree:
-        :type Degree: int
+        :type Degree: Standard_Integer
         :param Periodic:
         :type Periodic: bool
         :param Poles:
@@ -1694,14 +1841,14 @@ class bsplclib(object):
         return _BSplCLib.bsplclib_D2(*args)
 
     D2 = staticmethod(D2)
-    def D3(*args) -> "void" :
+    def D3(*args):
         """
         :param U:
         :type U: float
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Degree:
-        :type Degree: int
+        :type Degree: Standard_Integer
         :param Periodic:
         :type Periodic: bool
         :param Poles:
@@ -1725,9 +1872,9 @@ class bsplclib(object):
         :param U:
         :type U: float
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Degree:
-        :type Degree: int
+        :type Degree: Standard_Integer
         :param Periodic:
         :type Periodic: bool
         :param Poles:
@@ -1751,9 +1898,9 @@ class bsplclib(object):
         :param U:
         :type U: float
         :param UIndex:
-        :type UIndex: int
+        :type UIndex: Standard_Integer
         :param Degree:
-        :type Degree: int
+        :type Degree: Standard_Integer
         :param Periodic:
         :type Periodic: bool
         :param Poles:
@@ -1810,22 +1957,22 @@ class bsplclib(object):
         return _BSplCLib.bsplclib_D3(*args)
 
     D3 = staticmethod(D3)
-    def EvalBsplineBasis(*args) -> "Standard_Integer &" :
+    def EvalBsplineBasis(*args):
         """
         * This evaluates the Bspline Basis at a given parameter Parameter up to the requested DerivativeOrder and store the result in the array BsplineBasis in the following fashion BSplineBasis(1,1) = value of first non vanishing Bspline function which has Index FirstNonZeroBsplineIndex  BsplineBasis(1,2) =  value of second non vanishing Bspline function which has Index FirstNonZeroBsplineIndex + 1 BsplineBasis(1,n) =  value of second non vanishing non vanishing Bspline function which has Index FirstNonZeroBsplineIndex + n (n <= Order) BSplineBasis(2,1) = value of derivative of first non vanishing Bspline function which has Index FirstNonZeroBsplineIndex  BSplineBasis(N,1) = value of Nth derivative of first non vanishing Bspline function which has Index FirstNonZeroBsplineIndex if N <= DerivativeOrder + 1
 
         :param Side:
-        :type Side: int
+        :type Side: Standard_Integer
         :param DerivativeOrder:
-        :type DerivativeOrder: int
+        :type DerivativeOrder: Standard_Integer
         :param Order:
-        :type Order: int
+        :type Order: Standard_Integer
         :param FlatKnots:
         :type FlatKnots: TColStd_Array1OfReal &
         :param Parameter:
         :type Parameter: float
         :param FirstNonZeroBsplineIndex:
-        :type FirstNonZeroBsplineIndex: int &
+        :type FirstNonZeroBsplineIndex: Standard_Integer &
         :param BsplineBasis:
         :type BsplineBasis: math_Matrix &
         :rtype: int
@@ -1834,7 +1981,7 @@ class bsplclib(object):
         return _BSplCLib.bsplclib_EvalBsplineBasis(*args)
 
     EvalBsplineBasis = staticmethod(EvalBsplineBasis)
-    def BuildBSpMatrix(*args) -> "Standard_Integer &, Standard_Integer &" :
+    def BuildBSpMatrix(*args):
         """
         * This Builds a fully blown Matrix of  (ni) Bi (tj)  with i and j within 1..Order + NumPoles The integer ni is the ith slot of the array OrderArray, tj is the jth slot of the array Parameters
 
@@ -1845,49 +1992,49 @@ class bsplclib(object):
         :param FlatKnots:
         :type FlatKnots: TColStd_Array1OfReal &
         :param Degree:
-        :type Degree: int
+        :type Degree: Standard_Integer
         :param Matrix:
         :type Matrix: math_Matrix &
         :param UpperBandWidth:
-        :type UpperBandWidth: int &
+        :type UpperBandWidth: Standard_Integer &
         :param LowerBandWidth:
-        :type LowerBandWidth: int &
+        :type LowerBandWidth: Standard_Integer &
         :rtype: int
 
         """
         return _BSplCLib.bsplclib_BuildBSpMatrix(*args)
 
     BuildBSpMatrix = staticmethod(BuildBSpMatrix)
-    def FactorBandedMatrix(*args) -> "Standard_Integer &" :
+    def FactorBandedMatrix(*args):
         """
         * this factors the Banded Matrix in  the LU form with a Banded storage of  components of the L matrix  WARNING : do not use if the Matrix is  totally positive (It is the case for  Bspline matrices build as above with  parameters being the Schoenberg points
 
         :param Matrix:
         :type Matrix: math_Matrix &
         :param UpperBandWidth:
-        :type UpperBandWidth: int
+        :type UpperBandWidth: Standard_Integer
         :param LowerBandWidth:
-        :type LowerBandWidth: int
+        :type LowerBandWidth: Standard_Integer
         :param PivotIndexProblem:
-        :type PivotIndexProblem: int &
+        :type PivotIndexProblem: Standard_Integer &
         :rtype: int
 
         """
         return _BSplCLib.bsplclib_FactorBandedMatrix(*args)
 
     FactorBandedMatrix = staticmethod(FactorBandedMatrix)
-    def SolveBandedSystem(*args) -> "Standard_Integer" :
+    def SolveBandedSystem(*args):
         """
         * This solves the system Matrix.X = B  with when Matrix is factored in LU form  The Array is an seen as an  Array[1..N][1..ArrayDimension] with N =  the rank of the matrix Matrix. The  result is stored in Array when each  coordinate is solved that is B is the  array whose values are  B[i] = Array[i][p] for each p in 1..ArrayDimension
 
         :param Matrix:
         :type Matrix: math_Matrix &
         :param UpperBandWidth:
-        :type UpperBandWidth: int
+        :type UpperBandWidth: Standard_Integer
         :param LowerBandWidth:
-        :type LowerBandWidth: int
+        :type LowerBandWidth: Standard_Integer
         :param ArrayDimension:
-        :type ArrayDimension: int
+        :type ArrayDimension: Standard_Integer
         :param Array:
         :type Array: float &
         :rtype: int
@@ -1897,9 +2044,9 @@ class bsplclib(object):
         :param Matrix:
         :type Matrix: math_Matrix &
         :param UpperBandWidth:
-        :type UpperBandWidth: int
+        :type UpperBandWidth: Standard_Integer
         :param LowerBandWidth:
-        :type LowerBandWidth: int
+        :type LowerBandWidth: Standard_Integer
         :param Array:
         :type Array: TColgp_Array1OfPnt2d
         :rtype: int
@@ -1909,9 +2056,9 @@ class bsplclib(object):
         :param Matrix:
         :type Matrix: math_Matrix &
         :param UpperBandWidth:
-        :type UpperBandWidth: int
+        :type UpperBandWidth: Standard_Integer
         :param LowerBandWidth:
-        :type LowerBandWidth: int
+        :type LowerBandWidth: Standard_Integer
         :param Array:
         :type Array: TColgp_Array1OfPnt
         :rtype: int
@@ -1919,13 +2066,13 @@ class bsplclib(object):
         :param Matrix:
         :type Matrix: math_Matrix &
         :param UpperBandWidth:
-        :type UpperBandWidth: int
+        :type UpperBandWidth: Standard_Integer
         :param LowerBandWidth:
-        :type LowerBandWidth: int
+        :type LowerBandWidth: Standard_Integer
         :param HomogenousFlag:
         :type HomogenousFlag: bool
         :param ArrayDimension:
-        :type ArrayDimension: int
+        :type ArrayDimension: Standard_Integer
         :param Array:
         :type Array: float &
         :param Weights:
@@ -1937,9 +2084,9 @@ class bsplclib(object):
         :param Matrix:
         :type Matrix: math_Matrix &
         :param UpperBandWidth:
-        :type UpperBandWidth: int
+        :type UpperBandWidth: Standard_Integer
         :param LowerBandWidth:
-        :type LowerBandWidth: int
+        :type LowerBandWidth: Standard_Integer
         :param HomogenousFlag:
         :type HomogenousFlag: bool
         :param Array:
@@ -1953,9 +2100,9 @@ class bsplclib(object):
         :param Matrix:
         :type Matrix: math_Matrix &
         :param UpperBandWidth:
-        :type UpperBandWidth: int
+        :type UpperBandWidth: Standard_Integer
         :param LowerBandWidth:
-        :type LowerBandWidth: int
+        :type LowerBandWidth: Standard_Integer
         :param HomogeneousFlag:
         :type HomogeneousFlag: bool
         :param Array:
@@ -1968,7 +2115,7 @@ class bsplclib(object):
         return _BSplCLib.bsplclib_SolveBandedSystem(*args)
 
     SolveBandedSystem = staticmethod(SolveBandedSystem)
-    def MergeBSplineKnots(*args) -> "Standard_Integer &" :
+    def MergeBSplineKnots(*args):
         """
         * Merges two knot vector by setting the starting and ending values to StartValue and EndValue
 
@@ -1979,19 +2126,19 @@ class bsplclib(object):
         :param EndValue:
         :type EndValue: float
         :param Degree1:
-        :type Degree1: int
+        :type Degree1: Standard_Integer
         :param Knots1:
         :type Knots1: TColStd_Array1OfReal &
         :param Mults1:
         :type Mults1: TColStd_Array1OfInteger &
         :param Degree2:
-        :type Degree2: int
+        :type Degree2: Standard_Integer
         :param Knots2:
         :type Knots2: TColStd_Array1OfReal &
         :param Mults2:
         :type Mults2: TColStd_Array1OfInteger &
         :param NumPoles:
-        :type NumPoles: int &
+        :type NumPoles: Standard_Integer &
         :param NewKnots:
         :type NewKnots: Handle_TColStd_HArray1OfReal &
         :param NewMults:
@@ -2002,28 +2149,28 @@ class bsplclib(object):
         return _BSplCLib.bsplclib_MergeBSplineKnots(*args)
 
     MergeBSplineKnots = staticmethod(MergeBSplineKnots)
-    def FunctionReparameterise(*args) -> "Standard_Integer &" :
+    def FunctionReparameterise(*args):
         """
         * This function will compose a given Vectorial BSpline F(t) defined by its BSplineDegree and BSplineFlatKnotsl, its Poles array which are coded as an array of Real of the form [1..NumPoles][1..PolesDimension] with a function a(t) which is assumed to satisfy the following:  1. F(a(t)) is a polynomial BSpline that can be expressed exactly as a BSpline of degree NewDegree on the knots FlatKnots  2. a(t) defines a differentiable isomorphism between the range of FlatKnots to the range of BSplineFlatKnots which is the same as the range of F(t) Warning: it is the caller's responsability to insure that conditions 1. and 2. above are satisfied : no check whatsoever is made in this method Status will return 0 if OK else it will return the pivot index of the matrix that was inverted to compute the multiplied BSpline : the method used is interpolation at Schoenenberg points of F(a(t))
 
         :param Function:
         :type Function: BSplCLib_EvaluatorFunction &
         :param BSplineDegree:
-        :type BSplineDegree: int
+        :type BSplineDegree: Standard_Integer
         :param BSplineFlatKnots:
         :type BSplineFlatKnots: TColStd_Array1OfReal &
         :param PolesDimension:
-        :type PolesDimension: int
+        :type PolesDimension: Standard_Integer
         :param Poles:
         :type Poles: float &
         :param FlatKnots:
         :type FlatKnots: TColStd_Array1OfReal &
         :param NewDegree:
-        :type NewDegree: int
+        :type NewDegree: Standard_Integer
         :param NewPoles:
         :type NewPoles: float &
         :param Status:
-        :type Status: int &
+        :type Status: Standard_Integer &
         :rtype: void
 
         * This function will compose a given Vectorial BSpline F(t) defined by its BSplineDegree and BSplineFlatKnotsl, its Poles array which are coded as an array of Real of the form [1..NumPoles][1..PolesDimension] with a function a(t) which is assumed to satisfy the following:  1. F(a(t)) is a polynomial BSpline that can be expressed exactly as a BSpline of degree NewDegree on the knots FlatKnots  2. a(t) defines a differentiable isomorphism between the range of FlatKnots to the range of BSplineFlatKnots which is the same as the range of F(t) Warning: it is the caller's responsability to insure that conditions 1. and 2. above are satisfied : no check whatsoever is made in this method Status will return 0 if OK else it will return the pivot index of the matrix that was inverted to compute the multiplied BSpline : the method used is interpolation at Schoenenberg points of F(a(t))
@@ -2031,7 +2178,7 @@ class bsplclib(object):
         :param Function:
         :type Function: BSplCLib_EvaluatorFunction &
         :param BSplineDegree:
-        :type BSplineDegree: int
+        :type BSplineDegree: Standard_Integer
         :param BSplineFlatKnots:
         :type BSplineFlatKnots: TColStd_Array1OfReal &
         :param Poles:
@@ -2039,11 +2186,11 @@ class bsplclib(object):
         :param FlatKnots:
         :type FlatKnots: TColStd_Array1OfReal &
         :param NewDegree:
-        :type NewDegree: int
+        :type NewDegree: Standard_Integer
         :param NewPoles:
         :type NewPoles: TColStd_Array1OfReal &
         :param Status:
-        :type Status: int &
+        :type Status: Standard_Integer &
         :rtype: void
 
         * this will compose a given Vectorial BSpline F(t) defined by its BSplineDegree and BSplineFlatKnotsl, its Poles array which are coded as an array of Real of the form [1..NumPoles][1..PolesDimension] with a function a(t) which is assumed to satisfy the following : 1. F(a(t)) is a polynomial BSpline that can be expressed exactly as a BSpline of degree NewDegree on the knots FlatKnots  2. a(t) defines a differentiable isomorphism between the range of FlatKnots to the range of BSplineFlatKnots which is the same as the range of F(t) Warning: it is the caller's responsability to insure that conditions 1. and 2. above are satisfied : no check whatsoever is made in this method Status will return 0 if OK else it will return the pivot index of the matrix that was inverted to compute the multiplied BSpline : the method used is interpolation at Schoenenberg points of F(a(t))
@@ -2051,7 +2198,7 @@ class bsplclib(object):
         :param Function:
         :type Function: BSplCLib_EvaluatorFunction &
         :param BSplineDegree:
-        :type BSplineDegree: int
+        :type BSplineDegree: Standard_Integer
         :param BSplineFlatKnots:
         :type BSplineFlatKnots: TColStd_Array1OfReal &
         :param Poles:
@@ -2059,11 +2206,11 @@ class bsplclib(object):
         :param FlatKnots:
         :type FlatKnots: TColStd_Array1OfReal &
         :param NewDegree:
-        :type NewDegree: int
+        :type NewDegree: Standard_Integer
         :param NewPoles:
         :type NewPoles: TColgp_Array1OfPnt
         :param Status:
-        :type Status: int &
+        :type Status: Standard_Integer &
         :rtype: void
 
         * this will compose a given Vectorial BSpline F(t) defined by its BSplineDegree and BSplineFlatKnotsl, its Poles array which are coded as an array of Real of the form [1..NumPoles][1..PolesDimension] with a function a(t) which is assumed to satisfy the following : 1. F(a(t)) is a polynomial BSpline that can be expressed exactly as a BSpline of degree NewDegree on the knots FlatKnots  2. a(t) defines a differentiable isomorphism between the range of FlatKnots to the range of BSplineFlatKnots which is the same as the range of F(t) Warning: it is the caller's responsability to insure that conditions 1. and 2. above are satisfied : no check whatsoever is made in this method Status will return 0 if OK else it will return the pivot index of the matrix that was inverted to compute the multiplied BSpline : the method used is interpolation at Schoenenberg points of F(a(t))
@@ -2071,7 +2218,7 @@ class bsplclib(object):
         :param Function:
         :type Function: BSplCLib_EvaluatorFunction &
         :param BSplineDegree:
-        :type BSplineDegree: int
+        :type BSplineDegree: Standard_Integer
         :param BSplineFlatKnots:
         :type BSplineFlatKnots: TColStd_Array1OfReal &
         :param Poles:
@@ -2079,39 +2226,39 @@ class bsplclib(object):
         :param FlatKnots:
         :type FlatKnots: TColStd_Array1OfReal &
         :param NewDegree:
-        :type NewDegree: int
+        :type NewDegree: Standard_Integer
         :param NewPoles:
         :type NewPoles: TColgp_Array1OfPnt2d
         :param Status:
-        :type Status: int &
+        :type Status: Standard_Integer &
         :rtype: void
 
         """
         return _BSplCLib.bsplclib_FunctionReparameterise(*args)
 
     FunctionReparameterise = staticmethod(FunctionReparameterise)
-    def FunctionMultiply(*args) -> "Standard_Integer &" :
+    def FunctionMultiply(*args):
         """
         * this will multiply a given Vectorial BSpline F(t) defined by its BSplineDegree and BSplineFlatKnotsl, its Poles array which are coded as an array of Real of the form [1..NumPoles][1..PolesDimension] by a function a(t) which is assumed to satisfy the following : 1. a(t) * F(t) is a polynomial BSpline that can be expressed exactly as a BSpline of degree NewDegree on the knots FlatKnots 2. the range of a(t) is the same as the range of F(t) Warning: it is the caller's responsability to insure that conditions 1. and 2. above are satisfied : no check whatsoever is made in this method Status will return 0 if OK else it will return the pivot index of the matrix that was inverted to compute the multiplied BSpline : the method used is interpolation at Schoenenberg points of a(t)*F(t)
 
         :param Function:
         :type Function: BSplCLib_EvaluatorFunction &
         :param BSplineDegree:
-        :type BSplineDegree: int
+        :type BSplineDegree: Standard_Integer
         :param BSplineFlatKnots:
         :type BSplineFlatKnots: TColStd_Array1OfReal &
         :param PolesDimension:
-        :type PolesDimension: int
+        :type PolesDimension: Standard_Integer
         :param Poles:
         :type Poles: float &
         :param FlatKnots:
         :type FlatKnots: TColStd_Array1OfReal &
         :param NewDegree:
-        :type NewDegree: int
+        :type NewDegree: Standard_Integer
         :param NewPoles:
         :type NewPoles: float &
         :param Status:
-        :type Status: int &
+        :type Status: Standard_Integer &
         :rtype: void
 
         * this will multiply a given Vectorial BSpline F(t) defined by its BSplineDegree and BSplineFlatKnotsl, its Poles array which are coded as an array of Real of the form [1..NumPoles][1..PolesDimension] by a function a(t) which is assumed to satisfy the following : 1. a(t) * F(t) is a polynomial BSpline that can be expressed exactly as a BSpline of degree NewDegree on the knots FlatKnots 2. the range of a(t) is the same as the range of F(t) Warning: it is the caller's responsability to insure that conditions 1. and 2. above are satisfied : no check whatsoever is made in this method Status will return 0 if OK else it will return the pivot index of the matrix that was inverted to compute the multiplied BSpline : the method used is interpolation at Schoenenberg points of a(t)*F(t)
@@ -2119,7 +2266,7 @@ class bsplclib(object):
         :param Function:
         :type Function: BSplCLib_EvaluatorFunction &
         :param BSplineDegree:
-        :type BSplineDegree: int
+        :type BSplineDegree: Standard_Integer
         :param BSplineFlatKnots:
         :type BSplineFlatKnots: TColStd_Array1OfReal &
         :param Poles:
@@ -2127,11 +2274,11 @@ class bsplclib(object):
         :param FlatKnots:
         :type FlatKnots: TColStd_Array1OfReal &
         :param NewDegree:
-        :type NewDegree: int
+        :type NewDegree: Standard_Integer
         :param NewPoles:
         :type NewPoles: TColStd_Array1OfReal &
         :param Status:
-        :type Status: int &
+        :type Status: Standard_Integer &
         :rtype: void
 
         * this will multiply a given Vectorial BSpline F(t) defined by its BSplineDegree and BSplineFlatKnotsl, its Poles array which are coded as an array of Real of the form [1..NumPoles][1..PolesDimension] by a function a(t) which is assumed to satisfy the following : 1. a(t) * F(t) is a polynomial BSpline that can be expressed exactly as a BSpline of degree NewDegree on the knots FlatKnots 2. the range of a(t) is the same as the range of F(t) Warning: it is the caller's responsability to insure that conditions 1. and 2. above are satisfied : no check whatsoever is made in this method Status will return 0 if OK else it will return the pivot index of the matrix that was inverted to compute the multiplied BSpline : the method used is interpolation at Schoenenberg points of a(t)*F(t)
@@ -2139,7 +2286,7 @@ class bsplclib(object):
         :param Function:
         :type Function: BSplCLib_EvaluatorFunction &
         :param BSplineDegree:
-        :type BSplineDegree: int
+        :type BSplineDegree: Standard_Integer
         :param BSplineFlatKnots:
         :type BSplineFlatKnots: TColStd_Array1OfReal &
         :param Poles:
@@ -2147,11 +2294,11 @@ class bsplclib(object):
         :param FlatKnots:
         :type FlatKnots: TColStd_Array1OfReal &
         :param NewDegree:
-        :type NewDegree: int
+        :type NewDegree: Standard_Integer
         :param NewPoles:
         :type NewPoles: TColgp_Array1OfPnt2d
         :param Status:
-        :type Status: int &
+        :type Status: Standard_Integer &
         :rtype: void
 
         * this will multiply a given Vectorial BSpline F(t) defined by its BSplineDegree and BSplineFlatKnotsl, its Poles array which are coded as an array of Real of the form [1..NumPoles][1..PolesDimension] by a function a(t) which is assumed to satisfy the following : 1. a(t) * F(t) is a polynomial BSpline that can be expressed exactly as a BSpline of degree NewDegree on the knots FlatKnots 2. the range of a(t) is the same as the range of F(t) Warning: it is the caller's responsability to insure that conditions 1. and 2. above are satisfied : no check whatsoever is made in this method Status will return 0 if OK else it will return the pivot index of the matrix that was inverted to compute the multiplied BSpline : the method used is interpolation at Schoenenberg points of a(t)*F(t)
@@ -2159,7 +2306,7 @@ class bsplclib(object):
         :param Function:
         :type Function: BSplCLib_EvaluatorFunction &
         :param BSplineDegree:
-        :type BSplineDegree: int
+        :type BSplineDegree: Standard_Integer
         :param BSplineFlatKnots:
         :type BSplineFlatKnots: TColStd_Array1OfReal &
         :param Poles:
@@ -2167,29 +2314,29 @@ class bsplclib(object):
         :param FlatKnots:
         :type FlatKnots: TColStd_Array1OfReal &
         :param NewDegree:
-        :type NewDegree: int
+        :type NewDegree: Standard_Integer
         :param NewPoles:
         :type NewPoles: TColgp_Array1OfPnt
         :param Status:
-        :type Status: int &
+        :type Status: Standard_Integer &
         :rtype: void
 
         """
         return _BSplCLib.bsplclib_FunctionMultiply(*args)
 
     FunctionMultiply = staticmethod(FunctionMultiply)
-    def Eval(*args) -> "Standard_Integer &, Standard_Real &" :
+    def Eval(*args):
         """
         * Perform the Boor algorithm to evaluate a point at parameter <U>, with <Degree> and <Dimension>.  Poles is an array of Reals of size  <Dimension> * <Degree>+1  Containing the poles. At the end <Poles> contains the current point.
 
         :param U:
         :type U: float
         :param Degree:
-        :type Degree: int
+        :type Degree: Standard_Integer
         :param Knots:
         :type Knots: float &
         :param Dimension:
-        :type Dimension: int
+        :type Dimension: Standard_Integer
         :param Poles:
         :type Poles: float &
         :rtype: void
@@ -2201,15 +2348,15 @@ class bsplclib(object):
         :param PeriodicFlag:
         :type PeriodicFlag: bool
         :param DerivativeRequest:
-        :type DerivativeRequest: int
+        :type DerivativeRequest: Standard_Integer
         :param ExtrapMode:
-        :type ExtrapMode: int &
+        :type ExtrapMode: Standard_Integer &
         :param Degree:
-        :type Degree: int
+        :type Degree: Standard_Integer
         :param FlatKnots:
         :type FlatKnots: TColStd_Array1OfReal &
         :param ArrayDimension:
-        :type ArrayDimension: int
+        :type ArrayDimension: Standard_Integer
         :param Poles:
         :type Poles: float &
         :param Result:
@@ -2223,15 +2370,15 @@ class bsplclib(object):
         :param PeriodicFlag:
         :type PeriodicFlag: bool
         :param DerivativeRequest:
-        :type DerivativeRequest: int
+        :type DerivativeRequest: Standard_Integer
         :param ExtrapMode:
-        :type ExtrapMode: int &
+        :type ExtrapMode: Standard_Integer &
         :param Degree:
-        :type Degree: int
+        :type Degree: Standard_Integer
         :param FlatKnots:
         :type FlatKnots: TColStd_Array1OfReal &
         :param ArrayDimension:
-        :type ArrayDimension: int
+        :type ArrayDimension: Standard_Integer
         :param Poles:
         :type Poles: float &
         :param Weights:
@@ -2251,9 +2398,9 @@ class bsplclib(object):
         :param HomogeneousFlag:
         :type HomogeneousFlag: bool
         :param ExtrapMode:
-        :type ExtrapMode: int &
+        :type ExtrapMode: Standard_Integer &
         :param Degree:
-        :type Degree: int
+        :type Degree: Standard_Integer
         :param FlatKnots:
         :type FlatKnots: TColStd_Array1OfReal &
         :param Poles:
@@ -2275,9 +2422,9 @@ class bsplclib(object):
         :param HomogeneousFlag:
         :type HomogeneousFlag: bool
         :param ExtrapMode:
-        :type ExtrapMode: int &
+        :type ExtrapMode: Standard_Integer &
         :param Degree:
-        :type Degree: int
+        :type Degree: Standard_Integer
         :param FlatKnots:
         :type FlatKnots: TColStd_Array1OfReal &
         :param Poles:
@@ -2294,7 +2441,7 @@ class bsplclib(object):
         return _BSplCLib.bsplclib_Eval(*args)
 
     Eval = staticmethod(Eval)
-    def TangExtendToConstraint(*args) -> "Standard_Real &, Standard_Integer &, Standard_Integer &, Standard_Real &, Standard_Real &" :
+    def TangExtendToConstraint(*args):
         """
         * Extend a BSpline nD using the tangency map <C1Coefficient> is the coefficient of reparametrisation <Continuity> must be equal to 1, 2 or 3. <Degree> must be greater or equal than <Continuity> + 1. Warning: <KnotsResult> and <PolesResult> must be dimensionned properly.
 
@@ -2303,23 +2450,23 @@ class bsplclib(object):
         :param C1Coefficient:
         :type C1Coefficient: float
         :param NumPoles:
-        :type NumPoles: int
+        :type NumPoles: Standard_Integer
         :param Poles:
         :type Poles: float &
         :param Dimension:
-        :type Dimension: int
+        :type Dimension: Standard_Integer
         :param Degree:
-        :type Degree: int
+        :type Degree: Standard_Integer
         :param ConstraintPoint:
         :type ConstraintPoint: TColStd_Array1OfReal &
         :param Continuity:
-        :type Continuity: int
+        :type Continuity: Standard_Integer
         :param After:
         :type After: bool
         :param NbPolesResult:
-        :type NbPolesResult: int &
+        :type NbPolesResult: Standard_Integer &
         :param NbKnotsRsult:
-        :type NbKnotsRsult: int &
+        :type NbKnotsRsult: Standard_Integer &
         :param KnotsResult:
         :type KnotsResult: float &
         :param PolesResult:
@@ -2330,14 +2477,14 @@ class bsplclib(object):
         return _BSplCLib.bsplclib_TangExtendToConstraint(*args)
 
     TangExtendToConstraint = staticmethod(TangExtendToConstraint)
-    def CacheD0(*args) -> "void" :
+    def CacheD0(*args):
         """
         * Perform the evaluation of the of the cache the parameter must be normalized between the 0 and 1 for the span. The Cache must be valid when calling this routine. Geom Package will insure that. and then multiplies by the weights this just evaluates the current point the CacheParameter is where the Cache was constructed the SpanLength is to normalize the polynomial in the cache to avoid bad conditioning effects
 
         :param U:
         :type U: float
         :param Degree:
-        :type Degree: int
+        :type Degree: Standard_Integer
         :param CacheParameter:
         :type CacheParameter: float
         :param SpanLenght:
@@ -2355,7 +2502,7 @@ class bsplclib(object):
         :param U:
         :type U: float
         :param Degree:
-        :type Degree: int
+        :type Degree: Standard_Integer
         :param CacheParameter:
         :type CacheParameter: float
         :param SpanLenght:
@@ -2372,7 +2519,7 @@ class bsplclib(object):
         return _BSplCLib.bsplclib_CacheD0(*args)
 
     CacheD0 = staticmethod(CacheD0)
-    def CoefsD0(*args) -> "void" :
+    def CoefsD0(*args):
         """
         * Calls CacheD0 for Bezier Curves Arrays computed with the method PolesCoefficients. Warning: To be used for Beziercurves ONLY!!!
 
@@ -2402,14 +2549,14 @@ class bsplclib(object):
         return _BSplCLib.bsplclib_CoefsD0(*args)
 
     CoefsD0 = staticmethod(CoefsD0)
-    def CacheD1(*args) -> "void" :
+    def CacheD1(*args):
         """
         * Perform the evaluation of the of the cache the parameter must be normalized between the 0 and 1 for the span. The Cache must be valid when calling this routine. Geom Package will insure that. and then multiplies by the weights this just evaluates the current point the CacheParameter is where the Cache was constructed the SpanLength is to normalize the polynomial in the cache to avoid bad conditioning effects
 
         :param U:
         :type U: float
         :param Degree:
-        :type Degree: int
+        :type Degree: Standard_Integer
         :param CacheParameter:
         :type CacheParameter: float
         :param SpanLenght:
@@ -2429,7 +2576,7 @@ class bsplclib(object):
         :param U:
         :type U: float
         :param Degree:
-        :type Degree: int
+        :type Degree: Standard_Integer
         :param CacheParameter:
         :type CacheParameter: float
         :param SpanLenght:
@@ -2448,7 +2595,7 @@ class bsplclib(object):
         return _BSplCLib.bsplclib_CacheD1(*args)
 
     CacheD1 = staticmethod(CacheD1)
-    def CoefsD1(*args) -> "void" :
+    def CoefsD1(*args):
         """
         * Calls CacheD1 for Bezier Curves Arrays computed with the method PolesCoefficients. Warning: To be used for Beziercurves ONLY!!!
 
@@ -2482,14 +2629,14 @@ class bsplclib(object):
         return _BSplCLib.bsplclib_CoefsD1(*args)
 
     CoefsD1 = staticmethod(CoefsD1)
-    def CacheD2(*args) -> "void" :
+    def CacheD2(*args):
         """
         * Perform the evaluation of the of the cache the parameter must be normalized between the 0 and 1 for the span. The Cache must be valid when calling this routine. Geom Package will insure that. and then multiplies by the weights this just evaluates the current point the CacheParameter is where the Cache was constructed the SpanLength is to normalize the polynomial in the cache to avoid bad conditioning effects
 
         :param U:
         :type U: float
         :param Degree:
-        :type Degree: int
+        :type Degree: Standard_Integer
         :param CacheParameter:
         :type CacheParameter: float
         :param SpanLenght:
@@ -2511,7 +2658,7 @@ class bsplclib(object):
         :param U:
         :type U: float
         :param Degree:
-        :type Degree: int
+        :type Degree: Standard_Integer
         :param CacheParameter:
         :type CacheParameter: float
         :param SpanLenght:
@@ -2532,7 +2679,7 @@ class bsplclib(object):
         return _BSplCLib.bsplclib_CacheD2(*args)
 
     CacheD2 = staticmethod(CacheD2)
-    def CoefsD2(*args) -> "void" :
+    def CoefsD2(*args):
         """
         * Calls CacheD1 for Bezier Curves Arrays computed with the method PolesCoefficients. Warning: To be used for Beziercurves ONLY!!!
 
@@ -2570,14 +2717,14 @@ class bsplclib(object):
         return _BSplCLib.bsplclib_CoefsD2(*args)
 
     CoefsD2 = staticmethod(CoefsD2)
-    def CacheD3(*args) -> "void" :
+    def CacheD3(*args):
         """
         * Perform the evaluation of the of the cache the parameter must be normalized between the 0 and 1 for the span. The Cache must be valid when calling this routine. Geom Package will insure that. and then multiplies by the weights this just evaluates the current point the CacheParameter is where the Cache was constructed the SpanLength is to normalize the polynomial in the cache to avoid bad conditioning effects
 
         :param U:
         :type U: float
         :param Degree:
-        :type Degree: int
+        :type Degree: Standard_Integer
         :param CacheParameter:
         :type CacheParameter: float
         :param SpanLenght:
@@ -2601,7 +2748,7 @@ class bsplclib(object):
         :param U:
         :type U: float
         :param Degree:
-        :type Degree: int
+        :type Degree: Standard_Integer
         :param CacheParameter:
         :type CacheParameter: float
         :param SpanLenght:
@@ -2624,7 +2771,7 @@ class bsplclib(object):
         return _BSplCLib.bsplclib_CacheD3(*args)
 
     CacheD3 = staticmethod(CacheD3)
-    def CoefsD3(*args) -> "void" :
+    def CoefsD3(*args):
         """
         * Calls CacheD1 for Bezier Curves Arrays computed with the method PolesCoefficients. Warning: To be used for Beziercurves ONLY!!!
 
@@ -2666,7 +2813,7 @@ class bsplclib(object):
         return _BSplCLib.bsplclib_CoefsD3(*args)
 
     CoefsD3 = staticmethod(CoefsD3)
-    def BuildCache(*args) -> "void" :
+    def BuildCache(*args):
         """
         * Perform the evaluation of the Taylor expansion of the Bspline normalized between 0 and 1. If rational computes the homogeneous Taylor expension for the numerator and stores it in CachePoles
 
@@ -2677,7 +2824,7 @@ class bsplclib(object):
         :param PeriodicFlag:
         :type PeriodicFlag: bool
         :param Degree:
-        :type Degree: int
+        :type Degree: Standard_Integer
         :param FlatKnots:
         :type FlatKnots: TColStd_Array1OfReal &
         :param Poles:
@@ -2699,7 +2846,7 @@ class bsplclib(object):
         :param PeriodicFlag:
         :type PeriodicFlag: bool
         :param Degree:
-        :type Degree: int
+        :type Degree: Standard_Integer
         :param FlatKnots:
         :type FlatKnots: TColStd_Array1OfReal &
         :param Poles:
@@ -2716,7 +2863,7 @@ class bsplclib(object):
         return _BSplCLib.bsplclib_BuildCache(*args)
 
     BuildCache = staticmethod(BuildCache)
-    def PolesCoefficients(*args) -> "void" :
+    def PolesCoefficients(*args):
         """
         :param Poles:
         :type Poles: TColgp_Array1OfPnt2d
@@ -2756,24 +2903,24 @@ class bsplclib(object):
         return _BSplCLib.bsplclib_PolesCoefficients(*args)
 
     PolesCoefficients = staticmethod(PolesCoefficients)
-    def FlatBezierKnots(*args) -> "Standard_Real const &" :
+    def FlatBezierKnots(*args):
         """
         * Returns pointer to statically allocated array representing flat knots for bezier curve of the specified degree. Raises OutOfRange if Degree > MaxDegree()
 
         :param Degree:
-        :type Degree: int
+        :type Degree: Standard_Integer
         :rtype: float
 
         """
         return _BSplCLib.bsplclib_FlatBezierKnots(*args)
 
     FlatBezierKnots = staticmethod(FlatBezierKnots)
-    def BuildSchoenbergPoints(*args) -> "void" :
+    def BuildSchoenbergPoints(*args):
         """
         * builds the Schoenberg points from the flat knot used to interpolate a BSpline since the BSpline matrix is invertible.
 
         :param Degree:
-        :type Degree: int
+        :type Degree: Standard_Integer
         :param FlatKnots:
         :type FlatKnots: TColStd_Array1OfReal &
         :param Parameters:
@@ -2784,12 +2931,12 @@ class bsplclib(object):
         return _BSplCLib.bsplclib_BuildSchoenbergPoints(*args)
 
     BuildSchoenbergPoints = staticmethod(BuildSchoenbergPoints)
-    def Interpolate(*args) -> "Standard_Real &, Standard_Real &, Standard_Integer &" :
+    def Interpolate(*args):
         """
         * Performs the interpolation of the data given in the Poles array according to the requests in ContactOrderArray that is :  if ContactOrderArray(i) has value d it means that Poles(i) containes the dth derivative of the function to be interpolated. The length L of the following arrays must be the same : Parameters, ContactOrderArray, Poles, The length of FlatKnots is Degree + L + 1 Warning: the method used to do that interpolation is gauss elimination WITHOUT pivoting. Thus if the diagonal is not dominant there is no guarantee that the algorithm will work. Nevertheless for Cubic interpolation or interpolation at Scheonberg points the method will work The InversionProblem will report 0 if there was no problem else it will give the index of the faulty pivot
 
         :param Degree:
-        :type Degree: int
+        :type Degree: Standard_Integer
         :param FlatKnots:
         :type FlatKnots: TColStd_Array1OfReal &
         :param Parameters:
@@ -2799,13 +2946,13 @@ class bsplclib(object):
         :param Poles:
         :type Poles: TColgp_Array1OfPnt
         :param InversionProblem:
-        :type InversionProblem: int &
+        :type InversionProblem: Standard_Integer &
         :rtype: void
 
         * Performs the interpolation of the data given in the Poles array according to the requests in ContactOrderArray that is :  if ContactOrderArray(i) has value d it means that Poles(i) containes the dth derivative of the function to be interpolated. The length L of the following arrays must be the same : Parameters, ContactOrderArray, Poles, The length of FlatKnots is Degree + L + 1 Warning: the method used to do that interpolation is gauss elimination WITHOUT pivoting. Thus if the diagonal is not dominant there is no guarantee that the algorithm will work. Nevertheless for Cubic interpolation at knots or interpolation at Scheonberg points the method will work. The InversionProblem w ll report 0 if there was no problem else it will give the index of the faulty pivot
 
         :param Degree:
-        :type Degree: int
+        :type Degree: Standard_Integer
         :param FlatKnots:
         :type FlatKnots: TColStd_Array1OfReal &
         :param Parameters:
@@ -2815,13 +2962,13 @@ class bsplclib(object):
         :param Poles:
         :type Poles: TColgp_Array1OfPnt2d
         :param InversionProblem:
-        :type InversionProblem: int &
+        :type InversionProblem: Standard_Integer &
         :rtype: void
 
         * Performs the interpolation of the data given in the Poles array according to the requests in ContactOrderArray that is :  if ContactOrderArray(i) has value d it means that Poles(i) containes the dth derivative of the function to be interpolated. The length L of the following arrays must be the same : Parameters, ContactOrderArray, Poles, The length of FlatKnots is Degree + L + 1 Warning: the method used to do that interpolation is gauss elimination WITHOUT pivoting. Thus if the diagonal is not dominant there is no guarantee that the algorithm will work. Nevertheless for Cubic interpolation at knots or interpolation at Scheonberg points the method will work. The InversionProblem will report 0 if there was no problem else it will give the index of the faulty pivot
 
         :param Degree:
-        :type Degree: int
+        :type Degree: Standard_Integer
         :param FlatKnots:
         :type FlatKnots: TColStd_Array1OfReal &
         :param Parameters:
@@ -2833,13 +2980,13 @@ class bsplclib(object):
         :param Weights:
         :type Weights: TColStd_Array1OfReal &
         :param InversionProblem:
-        :type InversionProblem: int &
+        :type InversionProblem: Standard_Integer &
         :rtype: void
 
         * Performs the interpolation of the data given in the Poles array according to the requests in ContactOrderArray that is :  if ContactOrderArray(i) has value d it means that Poles(i) containes the dth derivative of the function to be interpolated. The length L of the following arrays must be the same : Parameters, ContactOrderArray, Poles, The length of FlatKnots is Degree + L + 1 Warning: the method used to do that interpolation is gauss elimination WITHOUT pivoting. Thus if the diagonal is not dominant there is no guarantee that the algorithm will work. Nevertheless for Cubic interpolation at knots or interpolation at Scheonberg points the method will work. The InversionProblem w ll report 0 if there was no problem else it will give the i
 
         :param Degree:
-        :type Degree: int
+        :type Degree: Standard_Integer
         :param FlatKnots:
         :type FlatKnots: TColStd_Array1OfReal &
         :param Parameters:
@@ -2851,13 +2998,13 @@ class bsplclib(object):
         :param Weights:
         :type Weights: TColStd_Array1OfReal &
         :param InversionProblem:
-        :type InversionProblem: int &
+        :type InversionProblem: Standard_Integer &
         :rtype: void
 
         * Performs the interpolation of the data given in the Poles array according to the requests in ContactOrderArray that is :  if ContactOrderArray(i) has value d it means that Poles(i) containes the dth derivative of the function to be interpolated. The length L of the following arrays must be the same : Parameters, ContactOrderArray The length of FlatKnots is Degree + L + 1 The PolesArray is an seen as an Array[1..N][1..ArrayDimension] with N = tge length of the parameters array Warning: the method used to do that interpolation is gauss elimination WITHOUT pivoting. Thus if the diagonal is not dominant there is no guarantee that the algorithm will work. Nevertheless for Cubic interpolation or interpolation at Scheonberg points the method will work The InversionProblem will report 0 if there was no problem else it will give the index of the faulty pivot
 
         :param Degree:
-        :type Degree: int
+        :type Degree: Standard_Integer
         :param FlatKnots:
         :type FlatKnots: TColStd_Array1OfReal &
         :param Parameters:
@@ -2865,15 +3012,15 @@ class bsplclib(object):
         :param ContactOrderArray:
         :type ContactOrderArray: TColStd_Array1OfInteger &
         :param ArrayDimension:
-        :type ArrayDimension: int
+        :type ArrayDimension: Standard_Integer
         :param Poles:
         :type Poles: float &
         :param InversionProblem:
-        :type InversionProblem: int &
+        :type InversionProblem: Standard_Integer &
         :rtype: void
 
         :param Degree:
-        :type Degree: int
+        :type Degree: Standard_Integer
         :param FlatKnots:
         :type FlatKnots: TColStd_Array1OfReal &
         :param Parameters:
@@ -2881,20 +3028,20 @@ class bsplclib(object):
         :param ContactOrderArray:
         :type ContactOrderArray: TColStd_Array1OfInteger &
         :param ArrayDimension:
-        :type ArrayDimension: int
+        :type ArrayDimension: Standard_Integer
         :param Poles:
         :type Poles: float &
         :param Weights:
         :type Weights: float &
         :param InversionProblem:
-        :type InversionProblem: int &
+        :type InversionProblem: Standard_Integer &
         :rtype: void
 
         """
         return _BSplCLib.bsplclib_Interpolate(*args)
 
     Interpolate = staticmethod(Interpolate)
-    def MovePoint(*args) -> "Standard_Integer &, Standard_Integer &" :
+    def MovePoint(*args):
         """
         * Find the new poles which allows an old point (with a given u as parameter) to reach a new position Index1 and Index2 indicate the range of poles we can move (1, NbPoles-1) or (2, NbPoles) -> no constraint for one side  don't enter (1,NbPoles) -> error: rigid move (2, NbPoles-1) -> the ends are enforced (3, NbPoles-2) -> the ends and the tangency are enforced if Problem in BSplineBasis calculation, no change for the curve and FirstIndex, LastIndex = 0
 
@@ -2903,11 +3050,11 @@ class bsplclib(object):
         :param Displ:
         :type Displ: gp_Vec2d
         :param Index1:
-        :type Index1: int
+        :type Index1: Standard_Integer
         :param Index2:
-        :type Index2: int
+        :type Index2: Standard_Integer
         :param Degree:
-        :type Degree: int
+        :type Degree: Standard_Integer
         :param Rational:
         :type Rational: bool
         :param Poles:
@@ -2917,9 +3064,9 @@ class bsplclib(object):
         :param FlatKnots:
         :type FlatKnots: TColStd_Array1OfReal &
         :param FirstIndex:
-        :type FirstIndex: int &
+        :type FirstIndex: Standard_Integer &
         :param LastIndex:
-        :type LastIndex: int &
+        :type LastIndex: Standard_Integer &
         :param NewPoles:
         :type NewPoles: TColgp_Array1OfPnt2d
         :rtype: void
@@ -2931,11 +3078,11 @@ class bsplclib(object):
         :param Displ:
         :type Displ: gp_Vec
         :param Index1:
-        :type Index1: int
+        :type Index1: Standard_Integer
         :param Index2:
-        :type Index2: int
+        :type Index2: Standard_Integer
         :param Degree:
-        :type Degree: int
+        :type Degree: Standard_Integer
         :param Rational:
         :type Rational: bool
         :param Poles:
@@ -2945,9 +3092,9 @@ class bsplclib(object):
         :param FlatKnots:
         :type FlatKnots: TColStd_Array1OfReal &
         :param FirstIndex:
-        :type FirstIndex: int &
+        :type FirstIndex: Standard_Integer &
         :param LastIndex:
-        :type LastIndex: int &
+        :type LastIndex: Standard_Integer &
         :param NewPoles:
         :type NewPoles: TColgp_Array1OfPnt
         :rtype: void
@@ -2956,14 +3103,14 @@ class bsplclib(object):
         return _BSplCLib.bsplclib_MovePoint(*args)
 
     MovePoint = staticmethod(MovePoint)
-    def MovePointAndTangent(*args) -> "Standard_Integer &" :
+    def MovePointAndTangent(*args):
         """
         * This is the dimension free version of the utility U is the parameter must be within the first FlatKnots and the last FlatKnots Delta is the amount the curve has to be moved DeltaDerivative is the amount the derivative has to be moved. Delta and DeltaDerivative must be array of dimension ArrayDimension Degree is the degree of the BSpline and the FlatKnots are the knots of the BSpline Starting Condition if = -1 means the starting point of the curve can move = 0 means the starting point of the cuve cannot move but tangen starting point of the curve cannot move = 1 means the starting point and tangents cannot move = 2 means the starting point tangent and curvature cannot move = ... Same holds for EndingCondition Poles are the poles of the curve Weights are the weights of the curve if Rational = Standard_True NewPoles are the poles of the deformed curve ErrorStatus will be 0 if no error happened  1 if there are not enough knots/poles  the imposed conditions The way to solve this problem is to add knots to the BSpline If StartCondition = 1 and EndCondition = 1 then you need at least 4 + 2 = 6 poles so for example to have a C1 cubic you will need have at least 2 internal knots.
 
         :param U:
         :type U: float
         :param ArrayDimension:
-        :type ArrayDimension: int
+        :type ArrayDimension: Standard_Integer
         :param Delta:
         :type Delta: float &
         :param DeltaDerivative:
@@ -2971,13 +3118,13 @@ class bsplclib(object):
         :param Tolerance:
         :type Tolerance: float
         :param Degree:
-        :type Degree: int
+        :type Degree: Standard_Integer
         :param Rational:
         :type Rational: bool
         :param StartingCondition:
-        :type StartingCondition: int
+        :type StartingCondition: Standard_Integer
         :param EndingCondition:
-        :type EndingCondition: int
+        :type EndingCondition: Standard_Integer
         :param Poles:
         :type Poles: float &
         :param Weights:
@@ -2987,7 +3134,7 @@ class bsplclib(object):
         :param NewPoles:
         :type NewPoles: float &
         :param ErrorStatus:
-        :type ErrorStatus: int &
+        :type ErrorStatus: Standard_Integer &
         :rtype: void
 
         * This is the dimension free version of the utility U is the parameter must be within the first FlatKnots and the last FlatKnots Delta is the amount the curve has to be moved DeltaDerivative is the amount the derivative has to be moved. Delta and DeltaDerivative must be array of dimension ArrayDimension Degree is the degree of the BSpline and the FlatKnots are the knots of the BSpline Starting Condition if = -1 means the starting point of the curve can move = 0 means the starting point of the cuve cannot move but tangen starting point of the curve cannot move = 1 means the starting point and tangents cannot move = 2 means the starting point tangent and curvature cannot move = ... Same holds for EndingCondition Poles are the poles of the curve Weights are the weights of the curve if Rational = Standard_True NewPoles are the poles of the deformed curve ErrorStatus will be 0 if no error happened  1 if there are not enough knots/poles  the imposed conditions The way to solve this problem is to add knots to the BSpline If StartCondition = 1 and EndCondition = 1 then you need at least 4 + 2 = 6 poles so for example to have a C1 cubic you will need have at least 2 internal knots.
@@ -3001,13 +3148,13 @@ class bsplclib(object):
         :param Tolerance:
         :type Tolerance: float
         :param Degree:
-        :type Degree: int
+        :type Degree: Standard_Integer
         :param Rational:
         :type Rational: bool
         :param StartingCondition:
-        :type StartingCondition: int
+        :type StartingCondition: Standard_Integer
         :param EndingCondition:
-        :type EndingCondition: int
+        :type EndingCondition: Standard_Integer
         :param Poles:
         :type Poles: TColgp_Array1OfPnt
         :param Weights:
@@ -3017,7 +3164,7 @@ class bsplclib(object):
         :param NewPoles:
         :type NewPoles: TColgp_Array1OfPnt
         :param ErrorStatus:
-        :type ErrorStatus: int &
+        :type ErrorStatus: Standard_Integer &
         :rtype: void
 
         * This is the dimension free version of the utility U is the parameter must be within the first FlatKnots and the last FlatKnots Delta is the amount the curve has to be moved DeltaDerivative is the amount the derivative has to be moved. Delta and DeltaDerivative must be array of dimension ArrayDimension Degree is the degree of the BSpline and the FlatKnots are the knots of the BSpline Starting Condition if = -1 means the starting point of the curve can move = 0 means the starting point of the cuve cannot move but tangen starting point of the curve cannot move = 1 means the starting point and tangents cannot move = 2 means the starting point tangent and curvature cannot move = ... Same holds for EndingCondition Poles are the poles of the curve Weights are the weights of the curve if Rational = Standard_True NewPoles are the poles of the deformed curve ErrorStatus will be 0 if no error happened  1 if there are not enough knots/poles  the imposed conditions The way to solve this problem is to add knots to the BSpline If StartCondition = 1 and EndCondition = 1 then you need at least 4 + 2 = 6 poles so for example to have a C1 cubic you will need have at least 2 internal knots.
@@ -3031,13 +3178,13 @@ class bsplclib(object):
         :param Tolerance:
         :type Tolerance: float
         :param Degree:
-        :type Degree: int
+        :type Degree: Standard_Integer
         :param Rational:
         :type Rational: bool
         :param StartingCondition:
-        :type StartingCondition: int
+        :type StartingCondition: Standard_Integer
         :param EndingCondition:
-        :type EndingCondition: int
+        :type EndingCondition: Standard_Integer
         :param Poles:
         :type Poles: TColgp_Array1OfPnt2d
         :param Weights:
@@ -3047,29 +3194,29 @@ class bsplclib(object):
         :param NewPoles:
         :type NewPoles: TColgp_Array1OfPnt2d
         :param ErrorStatus:
-        :type ErrorStatus: int &
+        :type ErrorStatus: Standard_Integer &
         :rtype: void
 
         """
         return _BSplCLib.bsplclib_MovePointAndTangent(*args)
 
     MovePointAndTangent = staticmethod(MovePointAndTangent)
-    def Resolution(*args) -> "Standard_Real &" :
+    def Resolution(*args):
         """
         * given a tolerance in 3D space returns a tolerance in U parameter space such that all u1 and u0 in the domain of the curve f(u) | u1 - u0 | < UTolerance and we have |f (u1) - f (u0)| < Tolerance3D
 
         :param PolesArray:
         :type PolesArray: float &
         :param ArrayDimension:
-        :type ArrayDimension: int
+        :type ArrayDimension: Standard_Integer
         :param NumPoles:
-        :type NumPoles: int
+        :type NumPoles: Standard_Integer
         :param Weights:
         :type Weights: TColStd_Array1OfReal &
         :param FlatKnots:
         :type FlatKnots: TColStd_Array1OfReal &
         :param Degree:
-        :type Degree: int
+        :type Degree: Standard_Integer
         :param Tolerance3D:
         :type Tolerance3D: float
         :param UTolerance:
@@ -3083,11 +3230,11 @@ class bsplclib(object):
         :param Weights:
         :type Weights: TColStd_Array1OfReal &
         :param NumPoles:
-        :type NumPoles: int
+        :type NumPoles: Standard_Integer
         :param FlatKnots:
         :type FlatKnots: TColStd_Array1OfReal &
         :param Degree:
-        :type Degree: int
+        :type Degree: Standard_Integer
         :param Tolerance3D:
         :type Tolerance3D: float
         :param UTolerance:
@@ -3101,11 +3248,11 @@ class bsplclib(object):
         :param Weights:
         :type Weights: TColStd_Array1OfReal &
         :param NumPoles:
-        :type NumPoles: int
+        :type NumPoles: Standard_Integer
         :param FlatKnots:
         :type FlatKnots: TColStd_Array1OfReal &
         :param Degree:
-        :type Degree: int
+        :type Degree: Standard_Integer
         :param Tolerance3D:
         :type Tolerance3D: float
         :param UTolerance:
@@ -3116,8 +3263,6 @@ class bsplclib(object):
         return _BSplCLib.bsplclib_Resolution(*args)
 
     Resolution = staticmethod(Resolution)
-    def __init__(self): 
-        _BSplCLib.bsplclib_swiginit(self,_BSplCLib.new_bsplclib())
     def __del__(self):
     	try:
     		self.thisown = False
@@ -3130,7 +3275,7 @@ bsplclib._kill_pointed = new_instancemethod(_BSplCLib.bsplclib__kill_pointed,Non
 bsplclib_swigregister = _BSplCLib.bsplclib_swigregister
 bsplclib_swigregister(bsplclib)
 
-def bsplclib_Hunt(*args) -> "Standard_Integer &" :
+def bsplclib_Hunt(*args):
   """
     * This routine searches the position of the real  value X in the ordered set of real values XX. The elements in the table XX are either  monotonically increasing or monotonically  decreasing. The input value Iloc is used to initialize the  algorithm : if Iloc is outside of the bounds  [XX.Lower(), -- XX.Upper()] the bisection algorithm  is used else the routine searches from a previous  known position by increasing steps then converges  by bisection. This routine is used to locate a knot value in a  set of knots.
 
@@ -3139,18 +3284,18 @@ def bsplclib_Hunt(*args) -> "Standard_Integer &" :
     :param X:
     :type X: float
     :param Iloc:
-    :type Iloc: int &
+    :type Iloc: Standard_Integer &
     :rtype: void
 
     """
   return _BSplCLib.bsplclib_Hunt(*args)
 
-def bsplclib_FirstUKnotIndex(*args) -> "Standard_Integer" :
+def bsplclib_FirstUKnotIndex(*args):
   """
     * Computes the index of the knots value which gives  the start point of the curve.
 
     :param Degree:
-    :type Degree: int
+    :type Degree: Standard_Integer
     :param Mults:
     :type Mults: TColStd_Array1OfInteger &
     :rtype: int
@@ -3158,12 +3303,12 @@ def bsplclib_FirstUKnotIndex(*args) -> "Standard_Integer" :
     """
   return _BSplCLib.bsplclib_FirstUKnotIndex(*args)
 
-def bsplclib_LastUKnotIndex(*args) -> "Standard_Integer" :
+def bsplclib_LastUKnotIndex(*args):
   """
     * Computes the index of the knots value which gives  the end point of the curve.
 
     :param Degree:
-    :type Degree: int
+    :type Degree: Standard_Integer
     :param Mults:
     :type Mults: TColStd_Array1OfInteger &
     :rtype: int
@@ -3171,14 +3316,14 @@ def bsplclib_LastUKnotIndex(*args) -> "Standard_Integer" :
     """
   return _BSplCLib.bsplclib_LastUKnotIndex(*args)
 
-def bsplclib_FlatIndex(*args) -> "Standard_Integer" :
+def bsplclib_FlatIndex(*args):
   """
     * Computes the index of the flats knots sequence corresponding to <Index> in the knots sequence which multiplicities are <Mults>.
 
     :param Degree:
-    :type Degree: int
+    :type Degree: Standard_Integer
     :param Index:
-    :type Index: int
+    :type Index: Standard_Integer
     :param Mults:
     :type Mults: TColStd_Array1OfInteger &
     :param Periodic:
@@ -3188,12 +3333,12 @@ def bsplclib_FlatIndex(*args) -> "Standard_Integer" :
     """
   return _BSplCLib.bsplclib_FlatIndex(*args)
 
-def bsplclib_LocateParameter(*args) -> "Standard_Integer &, Standard_Real &" :
+def bsplclib_LocateParameter(*args):
   """
     * Locates the parametric value U in the knots  sequence between the knot K1 and the knot K2.  The value return in Index verifies.  Knots(Index) <= U < Knots(Index + 1) if U <= Knots (K1) then Index = K1 if U >= Knots (K2) then Index = K2 - 1  If Periodic is True U may be modified to fit in the range Knots(K1), Knots(K2). In any case the correct value is returned in NewU. Warnings :Index is used as input data to initialize the searching function. Warning: Knots have to be 'withe repetitions'
 
     :param Degree:
-    :type Degree: int
+    :type Degree: Standard_Integer
     :param Knots:
     :type Knots: TColStd_Array1OfReal &
     :param Mults:
@@ -3203,11 +3348,11 @@ def bsplclib_LocateParameter(*args) -> "Standard_Integer &, Standard_Real &" :
     :param IsPeriodic:
     :type IsPeriodic: bool
     :param FromK1:
-    :type FromK1: int
+    :type FromK1: Standard_Integer
     :param ToK2:
-    :type ToK2: int
+    :type ToK2: Standard_Integer
     :param KnotIndex:
-    :type KnotIndex: int &
+    :type KnotIndex: Standard_Integer &
     :param NewU:
     :type NewU: float &
     :rtype: void
@@ -3215,7 +3360,7 @@ def bsplclib_LocateParameter(*args) -> "Standard_Integer &, Standard_Real &" :
     * Locates the parametric value U in the knots  sequence between the knot K1 and the knot K2.  The value return in Index verifies.  Knots(Index) <= U < Knots(Index + 1) if U <= Knots (K1) then Index = K1 if U >= Knots (K2) then Index = K2 - 1  If Periodic is True U may be modified to fit in the range Knots(K1), Knots(K2). In any case the correct value is returned in NewU. Warnings :Index is used as input data to initialize the searching function. Warning: Knots have to be 'flat'
 
     :param Degree:
-    :type Degree: int
+    :type Degree: Standard_Integer
     :param Knots:
     :type Knots: TColStd_Array1OfReal &
     :param U:
@@ -3223,17 +3368,17 @@ def bsplclib_LocateParameter(*args) -> "Standard_Integer &, Standard_Real &" :
     :param IsPeriodic:
     :type IsPeriodic: bool
     :param FromK1:
-    :type FromK1: int
+    :type FromK1: Standard_Integer
     :param ToK2:
-    :type ToK2: int
+    :type ToK2: Standard_Integer
     :param KnotIndex:
-    :type KnotIndex: int &
+    :type KnotIndex: Standard_Integer &
     :param NewU:
     :type NewU: float &
     :rtype: void
 
     :param Degree:
-    :type Degree: int
+    :type Degree: Standard_Integer
     :param Knots:
     :type Knots: TColStd_Array1OfReal &
     :param Mults:
@@ -3243,7 +3388,7 @@ def bsplclib_LocateParameter(*args) -> "Standard_Integer &, Standard_Real &" :
     :param Periodic:
     :type Periodic: bool
     :param Index:
-    :type Index: int &
+    :type Index: Standard_Integer &
     :param NewU:
     :type NewU: float &
     :rtype: void
@@ -3251,42 +3396,42 @@ def bsplclib_LocateParameter(*args) -> "Standard_Integer &, Standard_Real &" :
     """
   return _BSplCLib.bsplclib_LocateParameter(*args)
 
-def bsplclib_MaxKnotMult(*args) -> "Standard_Integer" :
+def bsplclib_MaxKnotMult(*args):
   """
     * Finds the greatest multiplicity in a set of knots  between K1 and K2. Mults is the multiplicity  associated with each knot value.
 
     :param Mults:
     :type Mults: TColStd_Array1OfInteger &
     :param K1:
-    :type K1: int
+    :type K1: Standard_Integer
     :param K2:
-    :type K2: int
+    :type K2: Standard_Integer
     :rtype: int
 
     """
   return _BSplCLib.bsplclib_MaxKnotMult(*args)
 
-def bsplclib_MinKnotMult(*args) -> "Standard_Integer" :
+def bsplclib_MinKnotMult(*args):
   """
     * Finds the lowest multiplicity in a set of knots  between K1 and K2. Mults is the multiplicity  associated with each knot value.
 
     :param Mults:
     :type Mults: TColStd_Array1OfInteger &
     :param K1:
-    :type K1: int
+    :type K1: Standard_Integer
     :param K2:
-    :type K2: int
+    :type K2: Standard_Integer
     :rtype: int
 
     """
   return _BSplCLib.bsplclib_MinKnotMult(*args)
 
-def bsplclib_NbPoles(*args) -> "Standard_Integer" :
+def bsplclib_NbPoles(*args):
   """
     * Returns the number of poles of the curve. Returns 0 if one of the multiplicities is incorrect.  * Non positive.  * Greater than Degree, or Degree+1 at the first and last knot of a non periodic curve.  * The last periodicity on a periodic curve is not equal to the first.
 
     :param Degree:
-    :type Degree: int
+    :type Degree: Standard_Integer
     :param Periodic:
     :type Periodic: bool
     :param Mults:
@@ -3296,14 +3441,14 @@ def bsplclib_NbPoles(*args) -> "Standard_Integer" :
     """
   return _BSplCLib.bsplclib_NbPoles(*args)
 
-def bsplclib_KnotSequenceLength(*args) -> "Standard_Integer" :
+def bsplclib_KnotSequenceLength(*args):
   """
     * Returns the length of the sequence of knots with repetition.  Periodic :  Sum(Mults(i), i = Mults.Lower(); i <= Mults.Upper());  Non Periodic :  Sum(Mults(i); i = Mults.Lower(); i < Mults.Upper()) + 2 * Degree
 
     :param Mults:
     :type Mults: TColStd_Array1OfInteger &
     :param Degree:
-    :type Degree: int
+    :type Degree: Standard_Integer
     :param Periodic:
     :type Periodic: bool
     :rtype: int
@@ -3311,7 +3456,7 @@ def bsplclib_KnotSequenceLength(*args) -> "Standard_Integer" :
     """
   return _BSplCLib.bsplclib_KnotSequenceLength(*args)
 
-def bsplclib_KnotSequence(*args) -> "void" :
+def bsplclib_KnotSequence(*args):
   """
     :param Knots:
     :type Knots: TColStd_Array1OfReal &
@@ -3328,7 +3473,7 @@ def bsplclib_KnotSequence(*args) -> "void" :
     :param Mults:
     :type Mults: TColStd_Array1OfInteger &
     :param Degree:
-    :type Degree: int
+    :type Degree: Standard_Integer
     :param Periodic:
     :type Periodic: bool
     :param KnotSeq:
@@ -3338,8 +3483,16 @@ def bsplclib_KnotSequence(*args) -> "void" :
     """
   return _BSplCLib.bsplclib_KnotSequence(*args)
 
-def bsplclib_KnotsLength(*args) -> "Standard_Integer" :
+def bsplclib_KnotsLength(*args):
   """
+    * Returns the length of the sequence of knots (and Mults) without repetition.
+
+    :param KnotSeq:
+    :type KnotSeq: TColStd_Array1OfReal &
+    :param Periodic: default value is Standard_False
+    :type Periodic: bool
+    :rtype: int
+
     * Returns the length of the sequence of knots (and Mults) without repetition.
 
     :param KnotSeq:
@@ -3351,8 +3504,20 @@ def bsplclib_KnotsLength(*args) -> "Standard_Integer" :
     """
   return _BSplCLib.bsplclib_KnotsLength(*args)
 
-def bsplclib_Knots(*args) -> "void" :
+def bsplclib_Knots(*args):
   """
+    * Computes the sequence of knots Knots without  repetition of the knots of multiplicity greater  than 1.  Length of <Knots> and <Mults> must be KnotsLength(KnotSequence,Periodic)
+
+    :param KnotSeq:
+    :type KnotSeq: TColStd_Array1OfReal &
+    :param Knots:
+    :type Knots: TColStd_Array1OfReal &
+    :param Mults:
+    :type Mults: TColStd_Array1OfInteger &
+    :param Periodic: default value is Standard_False
+    :type Periodic: bool
+    :rtype: void
+
     * Computes the sequence of knots Knots without  repetition of the knots of multiplicity greater  than 1.  Length of <Knots> and <Mults> must be KnotsLength(KnotSequence,Periodic)
 
     :param KnotSeq:
@@ -3368,42 +3533,42 @@ def bsplclib_Knots(*args) -> "void" :
     """
   return _BSplCLib.bsplclib_Knots(*args)
 
-def bsplclib_KnotForm(*args) -> "BSplCLib_KnotDistribution" :
+def bsplclib_KnotForm(*args):
   """
     * Analyses if the knots distribution is 'Uniform'  or 'NonUniform' between the knot FromK1 and the  knot ToK2. There is no repetition of knot in the  knots'sequence <Knots>.
 
     :param Knots:
     :type Knots: TColStd_Array1OfReal &
     :param FromK1:
-    :type FromK1: int
+    :type FromK1: Standard_Integer
     :param ToK2:
-    :type ToK2: int
+    :type ToK2: Standard_Integer
     :rtype: BSplCLib_KnotDistribution
 
     """
   return _BSplCLib.bsplclib_KnotForm(*args)
 
-def bsplclib_MultForm(*args) -> "BSplCLib_MultDistribution" :
+def bsplclib_MultForm(*args):
   """
     * Analyses the distribution of multiplicities between the knot FromK1 and the Knot ToK2.
 
     :param Mults:
     :type Mults: TColStd_Array1OfInteger &
     :param FromK1:
-    :type FromK1: int
+    :type FromK1: Standard_Integer
     :param ToK2:
-    :type ToK2: int
+    :type ToK2: Standard_Integer
     :rtype: BSplCLib_MultDistribution
 
     """
   return _BSplCLib.bsplclib_MultForm(*args)
 
-def bsplclib_KnotAnalysis(*args) -> "Standard_Integer &" :
+def bsplclib_KnotAnalysis(*args):
   """
     * Analyzes the array of knots. Returns the form and the maximum knot multiplicity.
 
     :param Degree:
-    :type Degree: int
+    :type Degree: Standard_Integer
     :param Periodic:
     :type Periodic: bool
     :param CKnots:
@@ -3413,13 +3578,13 @@ def bsplclib_KnotAnalysis(*args) -> "Standard_Integer &" :
     :param KnotForm:
     :type KnotForm: GeomAbs_BSplKnotDistribution &
     :param MaxKnotMult:
-    :type MaxKnotMult: int &
+    :type MaxKnotMult: Standard_Integer &
     :rtype: void
 
     """
   return _BSplCLib.bsplclib_KnotAnalysis(*args)
 
-def bsplclib_Reparametrize(*args) -> "void" :
+def bsplclib_Reparametrize(*args):
   """
     * Reparametrizes a B-spline curve to [U1, U2]. The knot values are recomputed such that Knots (Lower) = U1 and Knots (Upper) = U2 but the knot form is not modified. Warnings : In the array Knots the values must be in ascending order. U1 must not be equal to U2 to avoid division by zero.
 
@@ -3434,7 +3599,7 @@ def bsplclib_Reparametrize(*args) -> "void" :
     """
   return _BSplCLib.bsplclib_Reparametrize(*args)
 
-def bsplclib_Reverse(*args) -> "void" :
+def bsplclib_Reverse(*args):
   """
     * Reverses the array knots to become the knots sequence of the reversed curve.
 
@@ -3453,7 +3618,7 @@ def bsplclib_Reverse(*args) -> "void" :
     :param Poles:
     :type Poles: TColgp_Array1OfPnt
     :param Last:
-    :type Last: int
+    :type Last: Standard_Integer
     :rtype: void
 
     * Reverses the array of poles.
@@ -3461,7 +3626,7 @@ def bsplclib_Reverse(*args) -> "void" :
     :param Poles:
     :type Poles: TColgp_Array1OfPnt2d
     :param Last:
-    :type Last: int
+    :type Last: Standard_Integer
     :rtype: void
 
     * Reverses the array of poles.
@@ -3469,22 +3634,34 @@ def bsplclib_Reverse(*args) -> "void" :
     :param Weights:
     :type Weights: TColStd_Array1OfReal &
     :param Last:
-    :type Last: int
+    :type Last: Standard_Integer
     :rtype: void
 
     """
   return _BSplCLib.bsplclib_Reverse(*args)
 
-def bsplclib_IsRational(*args) -> "Standard_Boolean" :
+def bsplclib_IsRational(*args):
   """
     * Returns False if all the weights of the array <Weights> between I1 an I2 are identic. Epsilon is used for comparing weights. If Epsilon is 0. the Epsilon of the first weight is used.
 
     :param Weights:
     :type Weights: TColStd_Array1OfReal &
     :param I1:
-    :type I1: int
+    :type I1: Standard_Integer
     :param I2:
-    :type I2: int
+    :type I2: Standard_Integer
+    :param Epsilon: default value is 0.0
+    :type Epsilon: float
+    :rtype: bool
+
+    * Returns False if all the weights of the array <Weights> between I1 an I2 are identic. Epsilon is used for comparing weights. If Epsilon is 0. the Epsilon of the first weight is used.
+
+    :param Weights:
+    :type Weights: TColStd_Array1OfReal &
+    :param I1:
+    :type I1: Standard_Integer
+    :param I2:
+    :type I2: Standard_Integer
     :param Epsilon: default value is 0.0
     :type Epsilon: float
     :rtype: bool
@@ -3492,56 +3669,56 @@ def bsplclib_IsRational(*args) -> "Standard_Boolean" :
     """
   return _BSplCLib.bsplclib_IsRational(*args)
 
-def bsplclib_MaxDegree(*args) -> "Standard_Integer" :
+def bsplclib_MaxDegree():
   """
     * returns the degree maxima for a BSplineCurve.
 
     :rtype: int
 
     """
-  return _BSplCLib.bsplclib_MaxDegree(*args)
+  return _BSplCLib.bsplclib_MaxDegree()
 
-def bsplclib_BoorScheme(*args) -> "Standard_Real &, Standard_Real &" :
+def bsplclib_BoorScheme(*args):
   """
     * Performs the Boor Algorithm at parameter <U> with the given <Degree> and the array of <Knots> on the poles <Poles> of dimension <Dimension>. The schema is computed until level <Depth> on a basis of <Length+1> poles.  * Knots is an array of reals of length : <Length> + <Degree>  * Poles is an array of reals of length : (2 * <Length> + 1) * <Dimension> The poles values must be set in the array at the positions. 0..Dimension, 2 * Dimension ..  3 * Dimension 4 * Dimension ..  5 * Dimension ... The results are found in the array poles depending  on the Depth. (See the method GetPole).
 
     :param U:
     :type U: float
     :param Degree:
-    :type Degree: int
+    :type Degree: Standard_Integer
     :param Knots:
     :type Knots: float &
     :param Dimension:
-    :type Dimension: int
+    :type Dimension: Standard_Integer
     :param Poles:
     :type Poles: float &
     :param Depth:
-    :type Depth: int
+    :type Depth: Standard_Integer
     :param Length:
-    :type Length: int
+    :type Length: Standard_Integer
     :rtype: void
 
     """
   return _BSplCLib.bsplclib_BoorScheme(*args)
 
-def bsplclib_AntiBoorScheme(*args) -> "Standard_Real &, Standard_Real &" :
+def bsplclib_AntiBoorScheme(*args):
   """
     * Compute the content of Pole before the BoorScheme. This method is used to remove poles.  U is the poles to remove, Knots should contains the knots of the curve after knot removal.  The first and last poles do not change, the other poles are computed by averaging two possible values. The distance between the two possible poles is computed, if it is higher than <Tolerance> False is returned.
 
     :param U:
     :type U: float
     :param Degree:
-    :type Degree: int
+    :type Degree: Standard_Integer
     :param Knots:
     :type Knots: float &
     :param Dimension:
-    :type Dimension: int
+    :type Dimension: Standard_Integer
     :param Poles:
     :type Poles: float &
     :param Depth:
-    :type Depth: int
+    :type Depth: Standard_Integer
     :param Length:
-    :type Length: int
+    :type Length: Standard_Integer
     :param Tolerance:
     :type Tolerance: float
     :rtype: bool
@@ -3549,20 +3726,20 @@ def bsplclib_AntiBoorScheme(*args) -> "Standard_Real &, Standard_Real &" :
     """
   return _BSplCLib.bsplclib_AntiBoorScheme(*args)
 
-def bsplclib_Derivative(*args) -> "Standard_Real &, Standard_Real &" :
+def bsplclib_Derivative(*args):
   """
     * Computes the poles of the BSpline giving the derivatives of order <Order>.  The formula for the first order is  Pole(i) = Degree * (Pole(i+1) - Pole(i)) /  (Knots(i+Degree+1) - Knots(i+1))  This formula is repeated (Degree is decremented at each step).
 
     :param Degree:
-    :type Degree: int
+    :type Degree: Standard_Integer
     :param Knots:
     :type Knots: float &
     :param Dimension:
-    :type Dimension: int
+    :type Dimension: Standard_Integer
     :param Length:
-    :type Length: int
+    :type Length: Standard_Integer
     :param Order:
-    :type Order: int
+    :type Order: Standard_Integer
     :param Poles:
     :type Poles: float &
     :rtype: void
@@ -3570,20 +3747,20 @@ def bsplclib_Derivative(*args) -> "Standard_Real &, Standard_Real &" :
     """
   return _BSplCLib.bsplclib_Derivative(*args)
 
-def bsplclib_Bohm(*args) -> "Standard_Real &, Standard_Real &" :
+def bsplclib_Bohm(*args):
   """
     * Performs the Bohm Algorithm at parameter <U>. This algorithm computes the value and all the derivatives up to order N (N <= Degree).  <Poles> is the original array of poles.  The result in <Poles> is the value and the derivatives. Poles[0] is the value, Poles[Degree] is the last derivative.
 
     :param U:
     :type U: float
     :param Degree:
-    :type Degree: int
+    :type Degree: Standard_Integer
     :param N:
-    :type N: int
+    :type N: Standard_Integer
     :param Knots:
     :type Knots: float &
     :param Dimension:
-    :type Dimension: int
+    :type Dimension: Standard_Integer
     :param Poles:
     :type Poles: float &
     :rtype: void
@@ -3591,32 +3768,32 @@ def bsplclib_Bohm(*args) -> "Standard_Real &, Standard_Real &" :
     """
   return _BSplCLib.bsplclib_Bohm(*args)
 
-def bsplclib_NoWeights(*args) -> "TColStd_Array1OfReal &" :
+def bsplclib_NoWeights():
   """
     * Used as argument for a non rational curve.
 
     :rtype: TColStd_Array1OfReal
 
     """
-  return _BSplCLib.bsplclib_NoWeights(*args)
+  return _BSplCLib.bsplclib_NoWeights()
 
-def bsplclib_NoMults(*args) -> "TColStd_Array1OfInteger &" :
+def bsplclib_NoMults():
   """
     * Used as argument for a flatknots evaluation.
 
     :rtype: TColStd_Array1OfInteger
 
     """
-  return _BSplCLib.bsplclib_NoMults(*args)
+  return _BSplCLib.bsplclib_NoMults()
 
-def bsplclib_BuildKnots(*args) -> "Standard_Real &" :
+def bsplclib_BuildKnots(*args):
   """
     * Stores in LK the usefull knots for the BoorSchem on the span Knots(Index) - Knots(Index+1)
 
     :param Degree:
-    :type Degree: int
+    :type Degree: Standard_Integer
     :param Index:
-    :type Index: int
+    :type Index: Standard_Integer
     :param Periodic:
     :type Periodic: bool
     :param Knots:
@@ -3630,14 +3807,14 @@ def bsplclib_BuildKnots(*args) -> "Standard_Real &" :
     """
   return _BSplCLib.bsplclib_BuildKnots(*args)
 
-def bsplclib_PoleIndex(*args) -> "Standard_Integer" :
+def bsplclib_PoleIndex(*args):
   """
     * Return the index of the first Pole to use on the span Mults(Index) - Mults(Index+1). This index must be added to Poles.Lower().
 
     :param Degree:
-    :type Degree: int
+    :type Degree: Standard_Integer
     :param Index:
-    :type Index: int
+    :type Index: Standard_Integer
     :param Periodic:
     :type Periodic: bool
     :param Mults:
@@ -3647,12 +3824,12 @@ def bsplclib_PoleIndex(*args) -> "Standard_Integer" :
     """
   return _BSplCLib.bsplclib_PoleIndex(*args)
 
-def bsplclib_BuildEval(*args) -> "Standard_Real &" :
+def bsplclib_BuildEval(*args):
   """
     :param Degree:
-    :type Degree: int
+    :type Degree: Standard_Integer
     :param Index:
-    :type Index: int
+    :type Index: Standard_Integer
     :param Poles:
     :type Poles: TColStd_Array1OfReal &
     :param Weights:
@@ -3662,9 +3839,9 @@ def bsplclib_BuildEval(*args) -> "Standard_Real &" :
     :rtype: void
 
     :param Degree:
-    :type Degree: int
+    :type Degree: Standard_Integer
     :param Index:
-    :type Index: int
+    :type Index: Standard_Integer
     :param Poles:
     :type Poles: TColgp_Array1OfPnt
     :param Weights:
@@ -3676,9 +3853,9 @@ def bsplclib_BuildEval(*args) -> "Standard_Real &" :
     * Copy in <LP> the poles and weights for the Eval scheme. starting from Poles(Poles.Lower()+Index)
 
     :param Degree:
-    :type Degree: int
+    :type Degree: Standard_Integer
     :param Index:
-    :type Index: int
+    :type Index: Standard_Integer
     :param Poles:
     :type Poles: TColgp_Array1OfPnt2d
     :param Weights:
@@ -3690,16 +3867,16 @@ def bsplclib_BuildEval(*args) -> "Standard_Real &" :
     """
   return _BSplCLib.bsplclib_BuildEval(*args)
 
-def bsplclib_BuildBoor(*args) -> "Standard_Real &" :
+def bsplclib_BuildBoor(*args):
   """
     * Copy in <LP> poles for <Dimension> Boor scheme. Starting from <Index> * <Dimension>, copy <Length+1> poles.
 
     :param Index:
-    :type Index: int
+    :type Index: Standard_Integer
     :param Length:
-    :type Length: int
+    :type Length: Standard_Integer
     :param Dimension:
-    :type Dimension: int
+    :type Dimension: Standard_Integer
     :param Poles:
     :type Poles: TColStd_Array1OfReal &
     :param LP:
@@ -3709,37 +3886,37 @@ def bsplclib_BuildBoor(*args) -> "Standard_Real &" :
     """
   return _BSplCLib.bsplclib_BuildBoor(*args)
 
-def bsplclib_BoorIndex(*args) -> "Standard_Integer" :
+def bsplclib_BoorIndex(*args):
   """
     * Returns the index in the Boor result array of the poles <Index>. If the Boor algorithm was perform with <Length> and <Depth>.
 
     :param Index:
-    :type Index: int
+    :type Index: Standard_Integer
     :param Length:
-    :type Length: int
+    :type Length: Standard_Integer
     :param Depth:
-    :type Depth: int
+    :type Depth: Standard_Integer
     :rtype: int
 
     """
   return _BSplCLib.bsplclib_BoorIndex(*args)
 
-def bsplclib_GetPole(*args) -> "Standard_Real &, Standard_Integer &" :
+def bsplclib_GetPole(*args):
   """
     * Copy the pole at position <Index> in the Boor scheme of dimension <Dimension> to <Position> in the array <Pole>. <Position> is updated.
 
     :param Index:
-    :type Index: int
+    :type Index: Standard_Integer
     :param Length:
-    :type Length: int
+    :type Length: Standard_Integer
     :param Depth:
-    :type Depth: int
+    :type Depth: Standard_Integer
     :param Dimension:
-    :type Dimension: int
+    :type Dimension: Standard_Integer
     :param LocPoles:
     :type LocPoles: float &
     :param Position:
-    :type Position: int &
+    :type Position: Standard_Integer &
     :param Pole:
     :type Pole: TColStd_Array1OfReal &
     :rtype: void
@@ -3747,12 +3924,12 @@ def bsplclib_GetPole(*args) -> "Standard_Real &, Standard_Integer &" :
     """
   return _BSplCLib.bsplclib_GetPole(*args)
 
-def bsplclib_PrepareInsertKnots(*args) -> "Standard_Integer &, Standard_Integer &" :
+def bsplclib_PrepareInsertKnots(*args):
   """
     * Returns in <NbPoles, NbKnots> the new number of poles and knots if the sequence of knots <AddKnots, AddMults> is inserted in the sequence <Knots, Mults>.  Epsilon is used to compare knots for equality.  If Add is True the multiplicities on equal knots are added.  If Add is False the max value of the multiplicities is kept.  Return False if :  The knew knots are knot increasing.  The new knots are not in the range.
 
     :param Degree:
-    :type Degree: int
+    :type Degree: Standard_Integer
     :param Periodic:
     :type Periodic: bool
     :param Knots:
@@ -3764,9 +3941,33 @@ def bsplclib_PrepareInsertKnots(*args) -> "Standard_Integer &, Standard_Integer 
     :param AddMults:
     :type AddMults: TColStd_Array1OfInteger &
     :param NbPoles:
-    :type NbPoles: int &
+    :type NbPoles: Standard_Integer &
     :param NbKnots:
-    :type NbKnots: int &
+    :type NbKnots: Standard_Integer &
+    :param Epsilon:
+    :type Epsilon: float
+    :param Add: default value is Standard_True
+    :type Add: bool
+    :rtype: bool
+
+    * Returns in <NbPoles, NbKnots> the new number of poles and knots if the sequence of knots <AddKnots, AddMults> is inserted in the sequence <Knots, Mults>.  Epsilon is used to compare knots for equality.  If Add is True the multiplicities on equal knots are added.  If Add is False the max value of the multiplicities is kept.  Return False if :  The knew knots are knot increasing.  The new knots are not in the range.
+
+    :param Degree:
+    :type Degree: Standard_Integer
+    :param Periodic:
+    :type Periodic: bool
+    :param Knots:
+    :type Knots: TColStd_Array1OfReal &
+    :param Mults:
+    :type Mults: TColStd_Array1OfInteger &
+    :param AddKnots:
+    :type AddKnots: TColStd_Array1OfReal &
+    :param AddMults:
+    :type AddMults: TColStd_Array1OfInteger &
+    :param NbPoles:
+    :type NbPoles: Standard_Integer &
+    :param NbKnots:
+    :type NbKnots: Standard_Integer &
     :param Epsilon:
     :type Epsilon: float
     :param Add: default value is Standard_True
@@ -3776,14 +3977,14 @@ def bsplclib_PrepareInsertKnots(*args) -> "Standard_Integer &, Standard_Integer 
     """
   return _BSplCLib.bsplclib_PrepareInsertKnots(*args)
 
-def bsplclib_InsertKnots(*args) -> "void" :
+def bsplclib_InsertKnots(*args):
   """
     :param Degree:
-    :type Degree: int
+    :type Degree: Standard_Integer
     :param Periodic:
     :type Periodic: bool
     :param Dimension:
-    :type Dimension: int
+    :type Dimension: Standard_Integer
     :param Poles:
     :type Poles: TColStd_Array1OfReal &
     :param Knots:
@@ -3807,7 +4008,65 @@ def bsplclib_InsertKnots(*args) -> "void" :
     :rtype: void
 
     :param Degree:
-    :type Degree: int
+    :type Degree: Standard_Integer
+    :param Periodic:
+    :type Periodic: bool
+    :param Dimension:
+    :type Dimension: Standard_Integer
+    :param Poles:
+    :type Poles: TColStd_Array1OfReal &
+    :param Knots:
+    :type Knots: TColStd_Array1OfReal &
+    :param Mults:
+    :type Mults: TColStd_Array1OfInteger &
+    :param AddKnots:
+    :type AddKnots: TColStd_Array1OfReal &
+    :param AddMults:
+    :type AddMults: TColStd_Array1OfInteger &
+    :param NewPoles:
+    :type NewPoles: TColStd_Array1OfReal &
+    :param NewKnots:
+    :type NewKnots: TColStd_Array1OfReal &
+    :param NewMults:
+    :type NewMults: TColStd_Array1OfInteger &
+    :param Epsilon:
+    :type Epsilon: float
+    :param Add: default value is Standard_True
+    :type Add: bool
+    :rtype: void
+
+    :param Degree:
+    :type Degree: Standard_Integer
+    :param Periodic:
+    :type Periodic: bool
+    :param Poles:
+    :type Poles: TColgp_Array1OfPnt
+    :param Weights:
+    :type Weights: TColStd_Array1OfReal &
+    :param Knots:
+    :type Knots: TColStd_Array1OfReal &
+    :param Mults:
+    :type Mults: TColStd_Array1OfInteger &
+    :param AddKnots:
+    :type AddKnots: TColStd_Array1OfReal &
+    :param AddMults:
+    :type AddMults: TColStd_Array1OfInteger &
+    :param NewPoles:
+    :type NewPoles: TColgp_Array1OfPnt
+    :param NewWeights:
+    :type NewWeights: TColStd_Array1OfReal &
+    :param NewKnots:
+    :type NewKnots: TColStd_Array1OfReal &
+    :param NewMults:
+    :type NewMults: TColStd_Array1OfInteger &
+    :param Epsilon:
+    :type Epsilon: float
+    :param Add: default value is Standard_True
+    :type Add: bool
+    :rtype: void
+
+    :param Degree:
+    :type Degree: Standard_Integer
     :param Periodic:
     :type Periodic: bool
     :param Poles:
@@ -3839,7 +4098,39 @@ def bsplclib_InsertKnots(*args) -> "void" :
     * Insert a sequence of knots <AddKnots> with multiplicities <AddMults>. <AddKnots> must be a non decreasing sequence and verifies : Knots(Knots.Lower()) <= AddKnots(AddKnots.Lower()) Knots(Knots.Upper()) >= AddKnots(AddKnots.Upper()) The NewPoles and NewWeights arrays must have a length : Poles.Length() + Sum(AddMults()) When a knot to insert is identic to an existing knot the multiplicities are added. Epsilon is used to test knots for equality. When AddMult is negative or null the knot is not inserted. No multiplicity will becomes higher than the degree. The new Knots and Multiplicities are copied in <NewKnots> and <NewMults>. All the New arrays should be correctly dimensioned. When all the new knots are existing knots, i.e. only the multiplicities will change it is safe to use the same arrays as input and output.
 
     :param Degree:
-    :type Degree: int
+    :type Degree: Standard_Integer
+    :param Periodic:
+    :type Periodic: bool
+    :param Poles:
+    :type Poles: TColgp_Array1OfPnt2d
+    :param Weights:
+    :type Weights: TColStd_Array1OfReal &
+    :param Knots:
+    :type Knots: TColStd_Array1OfReal &
+    :param Mults:
+    :type Mults: TColStd_Array1OfInteger &
+    :param AddKnots:
+    :type AddKnots: TColStd_Array1OfReal &
+    :param AddMults:
+    :type AddMults: TColStd_Array1OfInteger &
+    :param NewPoles:
+    :type NewPoles: TColgp_Array1OfPnt2d
+    :param NewWeights:
+    :type NewWeights: TColStd_Array1OfReal &
+    :param NewKnots:
+    :type NewKnots: TColStd_Array1OfReal &
+    :param NewMults:
+    :type NewMults: TColStd_Array1OfInteger &
+    :param Epsilon:
+    :type Epsilon: float
+    :param Add: default value is Standard_True
+    :type Add: bool
+    :rtype: void
+
+    * Insert a sequence of knots <AddKnots> with multiplicities <AddMults>. <AddKnots> must be a non decreasing sequence and verifies : Knots(Knots.Lower()) <= AddKnots(AddKnots.Lower()) Knots(Knots.Upper()) >= AddKnots(AddKnots.Upper()) The NewPoles and NewWeights arrays must have a length : Poles.Length() + Sum(AddMults()) When a knot to insert is identic to an existing knot the multiplicities are added. Epsilon is used to test knots for equality. When AddMult is negative or null the knot is not inserted. No multiplicity will becomes higher than the degree. The new Knots and Multiplicities are copied in <NewKnots> and <NewMults>. All the New arrays should be correctly dimensioned. When all the new knots are existing knots, i.e. only the multiplicities will change it is safe to use the same arrays as input and output.
+
+    :param Degree:
+    :type Degree: Standard_Integer
     :param Periodic:
     :type Periodic: bool
     :param Poles:
@@ -3871,16 +4162,16 @@ def bsplclib_InsertKnots(*args) -> "void" :
     """
   return _BSplCLib.bsplclib_InsertKnots(*args)
 
-def bsplclib_InsertKnot(*args) -> "void" :
+def bsplclib_InsertKnot(*args):
   """
     :param UIndex:
-    :type UIndex: int
+    :type UIndex: Standard_Integer
     :param U:
     :type U: float
     :param UMult:
-    :type UMult: int
+    :type UMult: Standard_Integer
     :param Degree:
-    :type Degree: int
+    :type Degree: Standard_Integer
     :param Periodic:
     :type Periodic: bool
     :param Poles:
@@ -3900,13 +4191,13 @@ def bsplclib_InsertKnot(*args) -> "void" :
     * Insert a new knot U of multiplicity UMult in the knot sequence. The location of the new Knot should be given as an input data. UIndex locates the new knot U in the knot sequence and Knots (UIndex) < U < Knots (UIndex + 1). The new control points corresponding to this insertion are returned. Knots and Mults are not updated.
 
     :param UIndex:
-    :type UIndex: int
+    :type UIndex: Standard_Integer
     :param U:
     :type U: float
     :param UMult:
-    :type UMult: int
+    :type UMult: Standard_Integer
     :param Degree:
-    :type Degree: int
+    :type Degree: Standard_Integer
     :param Periodic:
     :type Periodic: bool
     :param Poles:
@@ -3926,14 +4217,14 @@ def bsplclib_InsertKnot(*args) -> "void" :
     """
   return _BSplCLib.bsplclib_InsertKnot(*args)
 
-def bsplclib_RaiseMultiplicity(*args) -> "void" :
+def bsplclib_RaiseMultiplicity(*args):
   """
     :param KnotIndex:
-    :type KnotIndex: int
+    :type KnotIndex: Standard_Integer
     :param Mult:
-    :type Mult: int
+    :type Mult: Standard_Integer
     :param Degree:
-    :type Degree: int
+    :type Degree: Standard_Integer
     :param Periodic:
     :type Periodic: bool
     :param Poles:
@@ -3953,11 +4244,11 @@ def bsplclib_RaiseMultiplicity(*args) -> "void" :
     * Raise the multiplicity of knot to <UMult>. The new control points are returned. Knots and Mults are not updated.
 
     :param KnotIndex:
-    :type KnotIndex: int
+    :type KnotIndex: Standard_Integer
     :param Mult:
-    :type Mult: int
+    :type Mult: Standard_Integer
     :param Degree:
-    :type Degree: int
+    :type Degree: Standard_Integer
     :param Periodic:
     :type Periodic: bool
     :param Poles:
@@ -3977,18 +4268,18 @@ def bsplclib_RaiseMultiplicity(*args) -> "void" :
     """
   return _BSplCLib.bsplclib_RaiseMultiplicity(*args)
 
-def bsplclib_RemoveKnot(*args) -> "Standard_Boolean" :
+def bsplclib_RemoveKnot(*args):
   """
     :param Index:
-    :type Index: int
+    :type Index: Standard_Integer
     :param Mult:
-    :type Mult: int
+    :type Mult: Standard_Integer
     :param Degree:
-    :type Degree: int
+    :type Degree: Standard_Integer
     :param Periodic:
     :type Periodic: bool
     :param Dimension:
-    :type Dimension: int
+    :type Dimension: Standard_Integer
     :param Poles:
     :type Poles: TColStd_Array1OfReal &
     :param Knots:
@@ -4006,11 +4297,11 @@ def bsplclib_RemoveKnot(*args) -> "Standard_Boolean" :
     :rtype: bool
 
     :param Index:
-    :type Index: int
+    :type Index: Standard_Integer
     :param Mult:
-    :type Mult: int
+    :type Mult: Standard_Integer
     :param Degree:
-    :type Degree: int
+    :type Degree: Standard_Integer
     :param Periodic:
     :type Periodic: bool
     :param Poles:
@@ -4036,11 +4327,11 @@ def bsplclib_RemoveKnot(*args) -> "Standard_Boolean" :
     * Decrement the multiplicity of <Knots(Index)> to <Mult>. If <Mult> is null the knot is removed.  As there are two ways to compute the new poles the midlle will be used as long as the distance is lower than Tolerance.  If a distance is bigger than tolerance the methods returns False and the new arrays are not modified.  A low tolerance can be used to test if the knot can be removed without modifying the curve.  A high tolerance can be used to 'smooth' the curve.
 
     :param Index:
-    :type Index: int
+    :type Index: Standard_Integer
     :param Mult:
-    :type Mult: int
+    :type Mult: Standard_Integer
     :param Degree:
-    :type Degree: int
+    :type Degree: Standard_Integer
     :param Periodic:
     :type Periodic: bool
     :param Poles:
@@ -4066,14 +4357,14 @@ def bsplclib_RemoveKnot(*args) -> "Standard_Boolean" :
     """
   return _BSplCLib.bsplclib_RemoveKnot(*args)
 
-def bsplclib_IncreaseDegreeCountKnots(*args) -> "Standard_Integer" :
+def bsplclib_IncreaseDegreeCountKnots(*args):
   """
     * Returns the number of knots of a curve with multiplicities <Mults> after elevating the degree from <Degree> to <NewDegree>. See the IncreaseDegree method for more comments.
 
     :param Degree:
-    :type Degree: int
+    :type Degree: Standard_Integer
     :param NewDegree:
-    :type NewDegree: int
+    :type NewDegree: Standard_Integer
     :param Periodic:
     :type Periodic: bool
     :param Mults:
@@ -4083,16 +4374,16 @@ def bsplclib_IncreaseDegreeCountKnots(*args) -> "Standard_Integer" :
     """
   return _BSplCLib.bsplclib_IncreaseDegreeCountKnots(*args)
 
-def bsplclib_IncreaseDegree(*args) -> "void" :
+def bsplclib_IncreaseDegree(*args):
   """
     :param Degree:
-    :type Degree: int
+    :type Degree: Standard_Integer
     :param NewDegree:
-    :type NewDegree: int
+    :type NewDegree: Standard_Integer
     :param Periodic:
     :type Periodic: bool
     :param Dimension:
-    :type Dimension: int
+    :type Dimension: Standard_Integer
     :param Poles:
     :type Poles: TColStd_Array1OfReal &
     :param Knots:
@@ -4108,9 +4399,9 @@ def bsplclib_IncreaseDegree(*args) -> "void" :
     :rtype: void
 
     :param Degree:
-    :type Degree: int
+    :type Degree: Standard_Integer
     :param NewDegree:
-    :type NewDegree: int
+    :type NewDegree: Standard_Integer
     :param Periodic:
     :type Periodic: bool
     :param Poles:
@@ -4132,9 +4423,9 @@ def bsplclib_IncreaseDegree(*args) -> "void" :
     :rtype: void
 
     :param Degree:
-    :type Degree: int
+    :type Degree: Standard_Integer
     :param NewDegree:
-    :type NewDegree: int
+    :type NewDegree: Standard_Integer
     :param Periodic:
     :type Periodic: bool
     :param Poles:
@@ -4156,7 +4447,7 @@ def bsplclib_IncreaseDegree(*args) -> "void" :
     :rtype: void
 
     :param NewDegree:
-    :type NewDegree: int
+    :type NewDegree: Standard_Integer
     :param Poles:
     :type Poles: TColgp_Array1OfPnt
     :param Weights:
@@ -4170,7 +4461,7 @@ def bsplclib_IncreaseDegree(*args) -> "void" :
     * Increase the degree of a bspline (or bezier) curve of dimension <Dimension> form <Degree> to <NewDegree>.  The number of poles in the new curve is : Poles.Length() + (NewDegree - Degree) * Number of spans  Where the number of spans is : LastUKnotIndex(Mults) - FirstUKnotIndex(Mults) + 1 for a non-periodic curve And Knots.Length() - 1 for a periodic curve.  The multiplicities of all knots are increased by the degree elevation.  The new knots are usually the same knots with the exception of a non-periodic curve with the first and last multiplicity not equal to Degree+1 where knots are removed form the start and the bottom untils the sum of the multiplicities is equal to NewDegree+1 at the knots corresponding to the first and last parameters of the curve.  Example : Suppose a curve of degree 3 starting with following knots and multiplicities :  knot : 0. 1. 2. mult : 1 2 1  The FirstUKnot is 2. because the sum of multiplicities is Degree+1 : 1 + 2 + 1 = 4 = 3 + 1  i.e. the first parameter of the curve is 2. and will still be 2. after degree elevation. Let raises this curve to degree 4. The multiplicities are increased by 2.  They become 2 3 2. But we need a sum of multiplicities of 5 at knot 2. So the first knot is removed and the new knots are :  knot : 1. 2. mult : 3 2  The multipicity of the first knot may also be reduced if the sum is still to big.  In the most common situations (periodic curve or curve with first and last multiplicities equals to Degree+1) the knots are knot changes.  The method IncreaseDegreeCountKnots can be used to compute the new number of knots.
 
     :param NewDegree:
-    :type NewDegree: int
+    :type NewDegree: Standard_Integer
     :param Poles:
     :type Poles: TColgp_Array1OfPnt2d
     :param Weights:
@@ -4184,29 +4475,29 @@ def bsplclib_IncreaseDegree(*args) -> "void" :
     """
   return _BSplCLib.bsplclib_IncreaseDegree(*args)
 
-def bsplclib_PrepareUnperiodize(*args) -> "Standard_Integer &, Standard_Integer &" :
+def bsplclib_PrepareUnperiodize(*args):
   """
     * Set in <NbKnots> and <NbPolesToAdd> the number of Knots and Poles of the NotPeriodic Curve identical at the periodic curve with a degree <Degree> , a knots-distribution with Multiplicities <Mults>.
 
     :param Degree:
-    :type Degree: int
+    :type Degree: Standard_Integer
     :param Mults:
     :type Mults: TColStd_Array1OfInteger &
     :param NbKnots:
-    :type NbKnots: int &
+    :type NbKnots: Standard_Integer &
     :param NbPoles:
-    :type NbPoles: int &
+    :type NbPoles: Standard_Integer &
     :rtype: void
 
     """
   return _BSplCLib.bsplclib_PrepareUnperiodize(*args)
 
-def bsplclib_Unperiodize(*args) -> "void" :
+def bsplclib_Unperiodize(*args):
   """
     :param Degree:
-    :type Degree: int
+    :type Degree: Standard_Integer
     :param Dimension:
-    :type Dimension: int
+    :type Dimension: Standard_Integer
     :param Mults:
     :type Mults: TColStd_Array1OfInteger &
     :param Knots:
@@ -4222,7 +4513,7 @@ def bsplclib_Unperiodize(*args) -> "void" :
     :rtype: void
 
     :param Degree:
-    :type Degree: int
+    :type Degree: Standard_Integer
     :param Mults:
     :type Mults: TColStd_Array1OfInteger &
     :param Knots:
@@ -4242,7 +4533,7 @@ def bsplclib_Unperiodize(*args) -> "void" :
     :rtype: void
 
     :param Degree:
-    :type Degree: int
+    :type Degree: Standard_Integer
     :param Mults:
     :type Mults: TColStd_Array1OfInteger &
     :param Knots:
@@ -4264,12 +4555,12 @@ def bsplclib_Unperiodize(*args) -> "void" :
     """
   return _BSplCLib.bsplclib_Unperiodize(*args)
 
-def bsplclib_PrepareTrimming(*args) -> "Standard_Integer &, Standard_Integer &" :
+def bsplclib_PrepareTrimming(*args):
   """
     * Set in <NbKnots> and <NbPoles> the number of Knots and Poles of the curve resulting of the trimming of the BSplinecurve definded with <degree>, <knots>, <mults>
 
     :param Degree:
-    :type Degree: int
+    :type Degree: Standard_Integer
     :param Periodic:
     :type Periodic: bool
     :param Knots:
@@ -4281,22 +4572,22 @@ def bsplclib_PrepareTrimming(*args) -> "Standard_Integer &, Standard_Integer &" 
     :param U2:
     :type U2: float
     :param NbKnots:
-    :type NbKnots: int &
+    :type NbKnots: Standard_Integer &
     :param NbPoles:
-    :type NbPoles: int &
+    :type NbPoles: Standard_Integer &
     :rtype: void
 
     """
   return _BSplCLib.bsplclib_PrepareTrimming(*args)
 
-def bsplclib_Trimming(*args) -> "void" :
+def bsplclib_Trimming(*args):
   """
     :param Degree:
-    :type Degree: int
+    :type Degree: Standard_Integer
     :param Periodic:
     :type Periodic: bool
     :param Dimension:
-    :type Dimension: int
+    :type Dimension: Standard_Integer
     :param Knots:
     :type Knots: TColStd_Array1OfReal &
     :param Mults:
@@ -4316,7 +4607,7 @@ def bsplclib_Trimming(*args) -> "void" :
     :rtype: void
 
     :param Degree:
-    :type Degree: int
+    :type Degree: Standard_Integer
     :param Periodic:
     :type Periodic: bool
     :param Knots:
@@ -4342,7 +4633,7 @@ def bsplclib_Trimming(*args) -> "void" :
     :rtype: void
 
     :param Degree:
-    :type Degree: int
+    :type Degree: Standard_Integer
     :param Periodic:
     :type Periodic: bool
     :param Knots:
@@ -4370,14 +4661,14 @@ def bsplclib_Trimming(*args) -> "void" :
     """
   return _BSplCLib.bsplclib_Trimming(*args)
 
-def bsplclib_D0(*args) -> "void" :
+def bsplclib_D0(*args):
   """
     :param U:
     :type U: float
     :param Index:
-    :type Index: int
+    :type Index: Standard_Integer
     :param Degree:
-    :type Degree: int
+    :type Degree: Standard_Integer
     :param Periodic:
     :type Periodic: bool
     :param Poles:
@@ -4395,9 +4686,9 @@ def bsplclib_D0(*args) -> "void" :
     :param U:
     :type U: float
     :param Index:
-    :type Index: int
+    :type Index: Standard_Integer
     :param Degree:
-    :type Degree: int
+    :type Degree: Standard_Integer
     :param Periodic:
     :type Periodic: bool
     :param Poles:
@@ -4415,9 +4706,9 @@ def bsplclib_D0(*args) -> "void" :
     :param U:
     :type U: float
     :param UIndex:
-    :type UIndex: int
+    :type UIndex: Standard_Integer
     :param Degree:
-    :type Degree: int
+    :type Degree: Standard_Integer
     :param Periodic:
     :type Periodic: bool
     :param Poles:
@@ -4455,14 +4746,14 @@ def bsplclib_D0(*args) -> "void" :
     """
   return _BSplCLib.bsplclib_D0(*args)
 
-def bsplclib_D1(*args) -> "void" :
+def bsplclib_D1(*args):
   """
     :param U:
     :type U: float
     :param Index:
-    :type Index: int
+    :type Index: Standard_Integer
     :param Degree:
-    :type Degree: int
+    :type Degree: Standard_Integer
     :param Periodic:
     :type Periodic: bool
     :param Poles:
@@ -4482,9 +4773,9 @@ def bsplclib_D1(*args) -> "void" :
     :param U:
     :type U: float
     :param Index:
-    :type Index: int
+    :type Index: Standard_Integer
     :param Degree:
-    :type Degree: int
+    :type Degree: Standard_Integer
     :param Periodic:
     :type Periodic: bool
     :param Poles:
@@ -4504,9 +4795,9 @@ def bsplclib_D1(*args) -> "void" :
     :param U:
     :type U: float
     :param UIndex:
-    :type UIndex: int
+    :type UIndex: Standard_Integer
     :param Degree:
-    :type Degree: int
+    :type Degree: Standard_Integer
     :param Periodic:
     :type Periodic: bool
     :param Poles:
@@ -4550,14 +4841,14 @@ def bsplclib_D1(*args) -> "void" :
     """
   return _BSplCLib.bsplclib_D1(*args)
 
-def bsplclib_D2(*args) -> "void" :
+def bsplclib_D2(*args):
   """
     :param U:
     :type U: float
     :param Index:
-    :type Index: int
+    :type Index: Standard_Integer
     :param Degree:
-    :type Degree: int
+    :type Degree: Standard_Integer
     :param Periodic:
     :type Periodic: bool
     :param Poles:
@@ -4579,9 +4870,9 @@ def bsplclib_D2(*args) -> "void" :
     :param U:
     :type U: float
     :param Index:
-    :type Index: int
+    :type Index: Standard_Integer
     :param Degree:
-    :type Degree: int
+    :type Degree: Standard_Integer
     :param Periodic:
     :type Periodic: bool
     :param Poles:
@@ -4603,9 +4894,9 @@ def bsplclib_D2(*args) -> "void" :
     :param U:
     :type U: float
     :param UIndex:
-    :type UIndex: int
+    :type UIndex: Standard_Integer
     :param Degree:
-    :type Degree: int
+    :type Degree: Standard_Integer
     :param Periodic:
     :type Periodic: bool
     :param Poles:
@@ -4655,14 +4946,14 @@ def bsplclib_D2(*args) -> "void" :
     """
   return _BSplCLib.bsplclib_D2(*args)
 
-def bsplclib_D3(*args) -> "void" :
+def bsplclib_D3(*args):
   """
     :param U:
     :type U: float
     :param Index:
-    :type Index: int
+    :type Index: Standard_Integer
     :param Degree:
-    :type Degree: int
+    :type Degree: Standard_Integer
     :param Periodic:
     :type Periodic: bool
     :param Poles:
@@ -4686,9 +4977,9 @@ def bsplclib_D3(*args) -> "void" :
     :param U:
     :type U: float
     :param Index:
-    :type Index: int
+    :type Index: Standard_Integer
     :param Degree:
-    :type Degree: int
+    :type Degree: Standard_Integer
     :param Periodic:
     :type Periodic: bool
     :param Poles:
@@ -4712,9 +5003,9 @@ def bsplclib_D3(*args) -> "void" :
     :param U:
     :type U: float
     :param UIndex:
-    :type UIndex: int
+    :type UIndex: Standard_Integer
     :param Degree:
-    :type Degree: int
+    :type Degree: Standard_Integer
     :param Periodic:
     :type Periodic: bool
     :param Poles:
@@ -4770,22 +5061,22 @@ def bsplclib_D3(*args) -> "void" :
     """
   return _BSplCLib.bsplclib_D3(*args)
 
-def bsplclib_EvalBsplineBasis(*args) -> "Standard_Integer &" :
+def bsplclib_EvalBsplineBasis(*args):
   """
     * This evaluates the Bspline Basis at a given parameter Parameter up to the requested DerivativeOrder and store the result in the array BsplineBasis in the following fashion BSplineBasis(1,1) = value of first non vanishing Bspline function which has Index FirstNonZeroBsplineIndex  BsplineBasis(1,2) =  value of second non vanishing Bspline function which has Index FirstNonZeroBsplineIndex + 1 BsplineBasis(1,n) =  value of second non vanishing non vanishing Bspline function which has Index FirstNonZeroBsplineIndex + n (n <= Order) BSplineBasis(2,1) = value of derivative of first non vanishing Bspline function which has Index FirstNonZeroBsplineIndex  BSplineBasis(N,1) = value of Nth derivative of first non vanishing Bspline function which has Index FirstNonZeroBsplineIndex if N <= DerivativeOrder + 1
 
     :param Side:
-    :type Side: int
+    :type Side: Standard_Integer
     :param DerivativeOrder:
-    :type DerivativeOrder: int
+    :type DerivativeOrder: Standard_Integer
     :param Order:
-    :type Order: int
+    :type Order: Standard_Integer
     :param FlatKnots:
     :type FlatKnots: TColStd_Array1OfReal &
     :param Parameter:
     :type Parameter: float
     :param FirstNonZeroBsplineIndex:
-    :type FirstNonZeroBsplineIndex: int &
+    :type FirstNonZeroBsplineIndex: Standard_Integer &
     :param BsplineBasis:
     :type BsplineBasis: math_Matrix &
     :rtype: int
@@ -4793,7 +5084,7 @@ def bsplclib_EvalBsplineBasis(*args) -> "Standard_Integer &" :
     """
   return _BSplCLib.bsplclib_EvalBsplineBasis(*args)
 
-def bsplclib_BuildBSpMatrix(*args) -> "Standard_Integer &, Standard_Integer &" :
+def bsplclib_BuildBSpMatrix(*args):
   """
     * This Builds a fully blown Matrix of  (ni) Bi (tj)  with i and j within 1..Order + NumPoles The integer ni is the ith slot of the array OrderArray, tj is the jth slot of the array Parameters
 
@@ -4804,47 +5095,47 @@ def bsplclib_BuildBSpMatrix(*args) -> "Standard_Integer &, Standard_Integer &" :
     :param FlatKnots:
     :type FlatKnots: TColStd_Array1OfReal &
     :param Degree:
-    :type Degree: int
+    :type Degree: Standard_Integer
     :param Matrix:
     :type Matrix: math_Matrix &
     :param UpperBandWidth:
-    :type UpperBandWidth: int &
+    :type UpperBandWidth: Standard_Integer &
     :param LowerBandWidth:
-    :type LowerBandWidth: int &
+    :type LowerBandWidth: Standard_Integer &
     :rtype: int
 
     """
   return _BSplCLib.bsplclib_BuildBSpMatrix(*args)
 
-def bsplclib_FactorBandedMatrix(*args) -> "Standard_Integer &" :
+def bsplclib_FactorBandedMatrix(*args):
   """
     * this factors the Banded Matrix in  the LU form with a Banded storage of  components of the L matrix  WARNING : do not use if the Matrix is  totally positive (It is the case for  Bspline matrices build as above with  parameters being the Schoenberg points
 
     :param Matrix:
     :type Matrix: math_Matrix &
     :param UpperBandWidth:
-    :type UpperBandWidth: int
+    :type UpperBandWidth: Standard_Integer
     :param LowerBandWidth:
-    :type LowerBandWidth: int
+    :type LowerBandWidth: Standard_Integer
     :param PivotIndexProblem:
-    :type PivotIndexProblem: int &
+    :type PivotIndexProblem: Standard_Integer &
     :rtype: int
 
     """
   return _BSplCLib.bsplclib_FactorBandedMatrix(*args)
 
-def bsplclib_SolveBandedSystem(*args) -> "Standard_Integer" :
+def bsplclib_SolveBandedSystem(*args):
   """
     * This solves the system Matrix.X = B  with when Matrix is factored in LU form  The Array is an seen as an  Array[1..N][1..ArrayDimension] with N =  the rank of the matrix Matrix. The  result is stored in Array when each  coordinate is solved that is B is the  array whose values are  B[i] = Array[i][p] for each p in 1..ArrayDimension
 
     :param Matrix:
     :type Matrix: math_Matrix &
     :param UpperBandWidth:
-    :type UpperBandWidth: int
+    :type UpperBandWidth: Standard_Integer
     :param LowerBandWidth:
-    :type LowerBandWidth: int
+    :type LowerBandWidth: Standard_Integer
     :param ArrayDimension:
-    :type ArrayDimension: int
+    :type ArrayDimension: Standard_Integer
     :param Array:
     :type Array: float &
     :rtype: int
@@ -4854,9 +5145,9 @@ def bsplclib_SolveBandedSystem(*args) -> "Standard_Integer" :
     :param Matrix:
     :type Matrix: math_Matrix &
     :param UpperBandWidth:
-    :type UpperBandWidth: int
+    :type UpperBandWidth: Standard_Integer
     :param LowerBandWidth:
-    :type LowerBandWidth: int
+    :type LowerBandWidth: Standard_Integer
     :param Array:
     :type Array: TColgp_Array1OfPnt2d
     :rtype: int
@@ -4866,9 +5157,9 @@ def bsplclib_SolveBandedSystem(*args) -> "Standard_Integer" :
     :param Matrix:
     :type Matrix: math_Matrix &
     :param UpperBandWidth:
-    :type UpperBandWidth: int
+    :type UpperBandWidth: Standard_Integer
     :param LowerBandWidth:
-    :type LowerBandWidth: int
+    :type LowerBandWidth: Standard_Integer
     :param Array:
     :type Array: TColgp_Array1OfPnt
     :rtype: int
@@ -4876,13 +5167,13 @@ def bsplclib_SolveBandedSystem(*args) -> "Standard_Integer" :
     :param Matrix:
     :type Matrix: math_Matrix &
     :param UpperBandWidth:
-    :type UpperBandWidth: int
+    :type UpperBandWidth: Standard_Integer
     :param LowerBandWidth:
-    :type LowerBandWidth: int
+    :type LowerBandWidth: Standard_Integer
     :param HomogenousFlag:
     :type HomogenousFlag: bool
     :param ArrayDimension:
-    :type ArrayDimension: int
+    :type ArrayDimension: Standard_Integer
     :param Array:
     :type Array: float &
     :param Weights:
@@ -4894,9 +5185,9 @@ def bsplclib_SolveBandedSystem(*args) -> "Standard_Integer" :
     :param Matrix:
     :type Matrix: math_Matrix &
     :param UpperBandWidth:
-    :type UpperBandWidth: int
+    :type UpperBandWidth: Standard_Integer
     :param LowerBandWidth:
-    :type LowerBandWidth: int
+    :type LowerBandWidth: Standard_Integer
     :param HomogenousFlag:
     :type HomogenousFlag: bool
     :param Array:
@@ -4910,9 +5201,9 @@ def bsplclib_SolveBandedSystem(*args) -> "Standard_Integer" :
     :param Matrix:
     :type Matrix: math_Matrix &
     :param UpperBandWidth:
-    :type UpperBandWidth: int
+    :type UpperBandWidth: Standard_Integer
     :param LowerBandWidth:
-    :type LowerBandWidth: int
+    :type LowerBandWidth: Standard_Integer
     :param HomogeneousFlag:
     :type HomogeneousFlag: bool
     :param Array:
@@ -4924,7 +5215,7 @@ def bsplclib_SolveBandedSystem(*args) -> "Standard_Integer" :
     """
   return _BSplCLib.bsplclib_SolveBandedSystem(*args)
 
-def bsplclib_MergeBSplineKnots(*args) -> "Standard_Integer &" :
+def bsplclib_MergeBSplineKnots(*args):
   """
     * Merges two knot vector by setting the starting and ending values to StartValue and EndValue
 
@@ -4935,19 +5226,19 @@ def bsplclib_MergeBSplineKnots(*args) -> "Standard_Integer &" :
     :param EndValue:
     :type EndValue: float
     :param Degree1:
-    :type Degree1: int
+    :type Degree1: Standard_Integer
     :param Knots1:
     :type Knots1: TColStd_Array1OfReal &
     :param Mults1:
     :type Mults1: TColStd_Array1OfInteger &
     :param Degree2:
-    :type Degree2: int
+    :type Degree2: Standard_Integer
     :param Knots2:
     :type Knots2: TColStd_Array1OfReal &
     :param Mults2:
     :type Mults2: TColStd_Array1OfInteger &
     :param NumPoles:
-    :type NumPoles: int &
+    :type NumPoles: Standard_Integer &
     :param NewKnots:
     :type NewKnots: Handle_TColStd_HArray1OfReal &
     :param NewMults:
@@ -4957,28 +5248,28 @@ def bsplclib_MergeBSplineKnots(*args) -> "Standard_Integer &" :
     """
   return _BSplCLib.bsplclib_MergeBSplineKnots(*args)
 
-def bsplclib_FunctionReparameterise(*args) -> "Standard_Integer &" :
+def bsplclib_FunctionReparameterise(*args):
   """
     * This function will compose a given Vectorial BSpline F(t) defined by its BSplineDegree and BSplineFlatKnotsl, its Poles array which are coded as an array of Real of the form [1..NumPoles][1..PolesDimension] with a function a(t) which is assumed to satisfy the following:  1. F(a(t)) is a polynomial BSpline that can be expressed exactly as a BSpline of degree NewDegree on the knots FlatKnots  2. a(t) defines a differentiable isomorphism between the range of FlatKnots to the range of BSplineFlatKnots which is the same as the range of F(t) Warning: it is the caller's responsability to insure that conditions 1. and 2. above are satisfied : no check whatsoever is made in this method Status will return 0 if OK else it will return the pivot index of the matrix that was inverted to compute the multiplied BSpline : the method used is interpolation at Schoenenberg points of F(a(t))
 
     :param Function:
     :type Function: BSplCLib_EvaluatorFunction &
     :param BSplineDegree:
-    :type BSplineDegree: int
+    :type BSplineDegree: Standard_Integer
     :param BSplineFlatKnots:
     :type BSplineFlatKnots: TColStd_Array1OfReal &
     :param PolesDimension:
-    :type PolesDimension: int
+    :type PolesDimension: Standard_Integer
     :param Poles:
     :type Poles: float &
     :param FlatKnots:
     :type FlatKnots: TColStd_Array1OfReal &
     :param NewDegree:
-    :type NewDegree: int
+    :type NewDegree: Standard_Integer
     :param NewPoles:
     :type NewPoles: float &
     :param Status:
-    :type Status: int &
+    :type Status: Standard_Integer &
     :rtype: void
 
     * This function will compose a given Vectorial BSpline F(t) defined by its BSplineDegree and BSplineFlatKnotsl, its Poles array which are coded as an array of Real of the form [1..NumPoles][1..PolesDimension] with a function a(t) which is assumed to satisfy the following:  1. F(a(t)) is a polynomial BSpline that can be expressed exactly as a BSpline of degree NewDegree on the knots FlatKnots  2. a(t) defines a differentiable isomorphism between the range of FlatKnots to the range of BSplineFlatKnots which is the same as the range of F(t) Warning: it is the caller's responsability to insure that conditions 1. and 2. above are satisfied : no check whatsoever is made in this method Status will return 0 if OK else it will return the pivot index of the matrix that was inverted to compute the multiplied BSpline : the method used is interpolation at Schoenenberg points of F(a(t))
@@ -4986,7 +5277,7 @@ def bsplclib_FunctionReparameterise(*args) -> "Standard_Integer &" :
     :param Function:
     :type Function: BSplCLib_EvaluatorFunction &
     :param BSplineDegree:
-    :type BSplineDegree: int
+    :type BSplineDegree: Standard_Integer
     :param BSplineFlatKnots:
     :type BSplineFlatKnots: TColStd_Array1OfReal &
     :param Poles:
@@ -4994,11 +5285,11 @@ def bsplclib_FunctionReparameterise(*args) -> "Standard_Integer &" :
     :param FlatKnots:
     :type FlatKnots: TColStd_Array1OfReal &
     :param NewDegree:
-    :type NewDegree: int
+    :type NewDegree: Standard_Integer
     :param NewPoles:
     :type NewPoles: TColStd_Array1OfReal &
     :param Status:
-    :type Status: int &
+    :type Status: Standard_Integer &
     :rtype: void
 
     * this will compose a given Vectorial BSpline F(t) defined by its BSplineDegree and BSplineFlatKnotsl, its Poles array which are coded as an array of Real of the form [1..NumPoles][1..PolesDimension] with a function a(t) which is assumed to satisfy the following : 1. F(a(t)) is a polynomial BSpline that can be expressed exactly as a BSpline of degree NewDegree on the knots FlatKnots  2. a(t) defines a differentiable isomorphism between the range of FlatKnots to the range of BSplineFlatKnots which is the same as the range of F(t) Warning: it is the caller's responsability to insure that conditions 1. and 2. above are satisfied : no check whatsoever is made in this method Status will return 0 if OK else it will return the pivot index of the matrix that was inverted to compute the multiplied BSpline : the method used is interpolation at Schoenenberg points of F(a(t))
@@ -5006,7 +5297,7 @@ def bsplclib_FunctionReparameterise(*args) -> "Standard_Integer &" :
     :param Function:
     :type Function: BSplCLib_EvaluatorFunction &
     :param BSplineDegree:
-    :type BSplineDegree: int
+    :type BSplineDegree: Standard_Integer
     :param BSplineFlatKnots:
     :type BSplineFlatKnots: TColStd_Array1OfReal &
     :param Poles:
@@ -5014,11 +5305,11 @@ def bsplclib_FunctionReparameterise(*args) -> "Standard_Integer &" :
     :param FlatKnots:
     :type FlatKnots: TColStd_Array1OfReal &
     :param NewDegree:
-    :type NewDegree: int
+    :type NewDegree: Standard_Integer
     :param NewPoles:
     :type NewPoles: TColgp_Array1OfPnt
     :param Status:
-    :type Status: int &
+    :type Status: Standard_Integer &
     :rtype: void
 
     * this will compose a given Vectorial BSpline F(t) defined by its BSplineDegree and BSplineFlatKnotsl, its Poles array which are coded as an array of Real of the form [1..NumPoles][1..PolesDimension] with a function a(t) which is assumed to satisfy the following : 1. F(a(t)) is a polynomial BSpline that can be expressed exactly as a BSpline of degree NewDegree on the knots FlatKnots  2. a(t) defines a differentiable isomorphism between the range of FlatKnots to the range of BSplineFlatKnots which is the same as the range of F(t) Warning: it is the caller's responsability to insure that conditions 1. and 2. above are satisfied : no check whatsoever is made in this method Status will return 0 if OK else it will return the pivot index of the matrix that was inverted to compute the multiplied BSpline : the method used is interpolation at Schoenenberg points of F(a(t))
@@ -5026,7 +5317,7 @@ def bsplclib_FunctionReparameterise(*args) -> "Standard_Integer &" :
     :param Function:
     :type Function: BSplCLib_EvaluatorFunction &
     :param BSplineDegree:
-    :type BSplineDegree: int
+    :type BSplineDegree: Standard_Integer
     :param BSplineFlatKnots:
     :type BSplineFlatKnots: TColStd_Array1OfReal &
     :param Poles:
@@ -5034,38 +5325,38 @@ def bsplclib_FunctionReparameterise(*args) -> "Standard_Integer &" :
     :param FlatKnots:
     :type FlatKnots: TColStd_Array1OfReal &
     :param NewDegree:
-    :type NewDegree: int
+    :type NewDegree: Standard_Integer
     :param NewPoles:
     :type NewPoles: TColgp_Array1OfPnt2d
     :param Status:
-    :type Status: int &
+    :type Status: Standard_Integer &
     :rtype: void
 
     """
   return _BSplCLib.bsplclib_FunctionReparameterise(*args)
 
-def bsplclib_FunctionMultiply(*args) -> "Standard_Integer &" :
+def bsplclib_FunctionMultiply(*args):
   """
     * this will multiply a given Vectorial BSpline F(t) defined by its BSplineDegree and BSplineFlatKnotsl, its Poles array which are coded as an array of Real of the form [1..NumPoles][1..PolesDimension] by a function a(t) which is assumed to satisfy the following : 1. a(t) * F(t) is a polynomial BSpline that can be expressed exactly as a BSpline of degree NewDegree on the knots FlatKnots 2. the range of a(t) is the same as the range of F(t) Warning: it is the caller's responsability to insure that conditions 1. and 2. above are satisfied : no check whatsoever is made in this method Status will return 0 if OK else it will return the pivot index of the matrix that was inverted to compute the multiplied BSpline : the method used is interpolation at Schoenenberg points of a(t)*F(t)
 
     :param Function:
     :type Function: BSplCLib_EvaluatorFunction &
     :param BSplineDegree:
-    :type BSplineDegree: int
+    :type BSplineDegree: Standard_Integer
     :param BSplineFlatKnots:
     :type BSplineFlatKnots: TColStd_Array1OfReal &
     :param PolesDimension:
-    :type PolesDimension: int
+    :type PolesDimension: Standard_Integer
     :param Poles:
     :type Poles: float &
     :param FlatKnots:
     :type FlatKnots: TColStd_Array1OfReal &
     :param NewDegree:
-    :type NewDegree: int
+    :type NewDegree: Standard_Integer
     :param NewPoles:
     :type NewPoles: float &
     :param Status:
-    :type Status: int &
+    :type Status: Standard_Integer &
     :rtype: void
 
     * this will multiply a given Vectorial BSpline F(t) defined by its BSplineDegree and BSplineFlatKnotsl, its Poles array which are coded as an array of Real of the form [1..NumPoles][1..PolesDimension] by a function a(t) which is assumed to satisfy the following : 1. a(t) * F(t) is a polynomial BSpline that can be expressed exactly as a BSpline of degree NewDegree on the knots FlatKnots 2. the range of a(t) is the same as the range of F(t) Warning: it is the caller's responsability to insure that conditions 1. and 2. above are satisfied : no check whatsoever is made in this method Status will return 0 if OK else it will return the pivot index of the matrix that was inverted to compute the multiplied BSpline : the method used is interpolation at Schoenenberg points of a(t)*F(t)
@@ -5073,7 +5364,7 @@ def bsplclib_FunctionMultiply(*args) -> "Standard_Integer &" :
     :param Function:
     :type Function: BSplCLib_EvaluatorFunction &
     :param BSplineDegree:
-    :type BSplineDegree: int
+    :type BSplineDegree: Standard_Integer
     :param BSplineFlatKnots:
     :type BSplineFlatKnots: TColStd_Array1OfReal &
     :param Poles:
@@ -5081,11 +5372,11 @@ def bsplclib_FunctionMultiply(*args) -> "Standard_Integer &" :
     :param FlatKnots:
     :type FlatKnots: TColStd_Array1OfReal &
     :param NewDegree:
-    :type NewDegree: int
+    :type NewDegree: Standard_Integer
     :param NewPoles:
     :type NewPoles: TColStd_Array1OfReal &
     :param Status:
-    :type Status: int &
+    :type Status: Standard_Integer &
     :rtype: void
 
     * this will multiply a given Vectorial BSpline F(t) defined by its BSplineDegree and BSplineFlatKnotsl, its Poles array which are coded as an array of Real of the form [1..NumPoles][1..PolesDimension] by a function a(t) which is assumed to satisfy the following : 1. a(t) * F(t) is a polynomial BSpline that can be expressed exactly as a BSpline of degree NewDegree on the knots FlatKnots 2. the range of a(t) is the same as the range of F(t) Warning: it is the caller's responsability to insure that conditions 1. and 2. above are satisfied : no check whatsoever is made in this method Status will return 0 if OK else it will return the pivot index of the matrix that was inverted to compute the multiplied BSpline : the method used is interpolation at Schoenenberg points of a(t)*F(t)
@@ -5093,7 +5384,7 @@ def bsplclib_FunctionMultiply(*args) -> "Standard_Integer &" :
     :param Function:
     :type Function: BSplCLib_EvaluatorFunction &
     :param BSplineDegree:
-    :type BSplineDegree: int
+    :type BSplineDegree: Standard_Integer
     :param BSplineFlatKnots:
     :type BSplineFlatKnots: TColStd_Array1OfReal &
     :param Poles:
@@ -5101,11 +5392,11 @@ def bsplclib_FunctionMultiply(*args) -> "Standard_Integer &" :
     :param FlatKnots:
     :type FlatKnots: TColStd_Array1OfReal &
     :param NewDegree:
-    :type NewDegree: int
+    :type NewDegree: Standard_Integer
     :param NewPoles:
     :type NewPoles: TColgp_Array1OfPnt2d
     :param Status:
-    :type Status: int &
+    :type Status: Standard_Integer &
     :rtype: void
 
     * this will multiply a given Vectorial BSpline F(t) defined by its BSplineDegree and BSplineFlatKnotsl, its Poles array which are coded as an array of Real of the form [1..NumPoles][1..PolesDimension] by a function a(t) which is assumed to satisfy the following : 1. a(t) * F(t) is a polynomial BSpline that can be expressed exactly as a BSpline of degree NewDegree on the knots FlatKnots 2. the range of a(t) is the same as the range of F(t) Warning: it is the caller's responsability to insure that conditions 1. and 2. above are satisfied : no check whatsoever is made in this method Status will return 0 if OK else it will return the pivot index of the matrix that was inverted to compute the multiplied BSpline : the method used is interpolation at Schoenenberg points of a(t)*F(t)
@@ -5113,7 +5404,7 @@ def bsplclib_FunctionMultiply(*args) -> "Standard_Integer &" :
     :param Function:
     :type Function: BSplCLib_EvaluatorFunction &
     :param BSplineDegree:
-    :type BSplineDegree: int
+    :type BSplineDegree: Standard_Integer
     :param BSplineFlatKnots:
     :type BSplineFlatKnots: TColStd_Array1OfReal &
     :param Poles:
@@ -5121,28 +5412,28 @@ def bsplclib_FunctionMultiply(*args) -> "Standard_Integer &" :
     :param FlatKnots:
     :type FlatKnots: TColStd_Array1OfReal &
     :param NewDegree:
-    :type NewDegree: int
+    :type NewDegree: Standard_Integer
     :param NewPoles:
     :type NewPoles: TColgp_Array1OfPnt
     :param Status:
-    :type Status: int &
+    :type Status: Standard_Integer &
     :rtype: void
 
     """
   return _BSplCLib.bsplclib_FunctionMultiply(*args)
 
-def bsplclib_Eval(*args) -> "Standard_Integer &, Standard_Real &" :
+def bsplclib_Eval(*args):
   """
     * Perform the Boor algorithm to evaluate a point at parameter <U>, with <Degree> and <Dimension>.  Poles is an array of Reals of size  <Dimension> * <Degree>+1  Containing the poles. At the end <Poles> contains the current point.
 
     :param U:
     :type U: float
     :param Degree:
-    :type Degree: int
+    :type Degree: Standard_Integer
     :param Knots:
     :type Knots: float &
     :param Dimension:
-    :type Dimension: int
+    :type Dimension: Standard_Integer
     :param Poles:
     :type Poles: float &
     :rtype: void
@@ -5154,15 +5445,15 @@ def bsplclib_Eval(*args) -> "Standard_Integer &, Standard_Real &" :
     :param PeriodicFlag:
     :type PeriodicFlag: bool
     :param DerivativeRequest:
-    :type DerivativeRequest: int
+    :type DerivativeRequest: Standard_Integer
     :param ExtrapMode:
-    :type ExtrapMode: int &
+    :type ExtrapMode: Standard_Integer &
     :param Degree:
-    :type Degree: int
+    :type Degree: Standard_Integer
     :param FlatKnots:
     :type FlatKnots: TColStd_Array1OfReal &
     :param ArrayDimension:
-    :type ArrayDimension: int
+    :type ArrayDimension: Standard_Integer
     :param Poles:
     :type Poles: float &
     :param Result:
@@ -5176,15 +5467,15 @@ def bsplclib_Eval(*args) -> "Standard_Integer &, Standard_Real &" :
     :param PeriodicFlag:
     :type PeriodicFlag: bool
     :param DerivativeRequest:
-    :type DerivativeRequest: int
+    :type DerivativeRequest: Standard_Integer
     :param ExtrapMode:
-    :type ExtrapMode: int &
+    :type ExtrapMode: Standard_Integer &
     :param Degree:
-    :type Degree: int
+    :type Degree: Standard_Integer
     :param FlatKnots:
     :type FlatKnots: TColStd_Array1OfReal &
     :param ArrayDimension:
-    :type ArrayDimension: int
+    :type ArrayDimension: Standard_Integer
     :param Poles:
     :type Poles: float &
     :param Weights:
@@ -5204,9 +5495,9 @@ def bsplclib_Eval(*args) -> "Standard_Integer &, Standard_Real &" :
     :param HomogeneousFlag:
     :type HomogeneousFlag: bool
     :param ExtrapMode:
-    :type ExtrapMode: int &
+    :type ExtrapMode: Standard_Integer &
     :param Degree:
-    :type Degree: int
+    :type Degree: Standard_Integer
     :param FlatKnots:
     :type FlatKnots: TColStd_Array1OfReal &
     :param Poles:
@@ -5228,9 +5519,9 @@ def bsplclib_Eval(*args) -> "Standard_Integer &, Standard_Real &" :
     :param HomogeneousFlag:
     :type HomogeneousFlag: bool
     :param ExtrapMode:
-    :type ExtrapMode: int &
+    :type ExtrapMode: Standard_Integer &
     :param Degree:
-    :type Degree: int
+    :type Degree: Standard_Integer
     :param FlatKnots:
     :type FlatKnots: TColStd_Array1OfReal &
     :param Poles:
@@ -5246,7 +5537,7 @@ def bsplclib_Eval(*args) -> "Standard_Integer &, Standard_Real &" :
     """
   return _BSplCLib.bsplclib_Eval(*args)
 
-def bsplclib_TangExtendToConstraint(*args) -> "Standard_Real &, Standard_Integer &, Standard_Integer &, Standard_Real &, Standard_Real &" :
+def bsplclib_TangExtendToConstraint(*args):
   """
     * Extend a BSpline nD using the tangency map <C1Coefficient> is the coefficient of reparametrisation <Continuity> must be equal to 1, 2 or 3. <Degree> must be greater or equal than <Continuity> + 1. Warning: <KnotsResult> and <PolesResult> must be dimensionned properly.
 
@@ -5255,23 +5546,23 @@ def bsplclib_TangExtendToConstraint(*args) -> "Standard_Real &, Standard_Integer
     :param C1Coefficient:
     :type C1Coefficient: float
     :param NumPoles:
-    :type NumPoles: int
+    :type NumPoles: Standard_Integer
     :param Poles:
     :type Poles: float &
     :param Dimension:
-    :type Dimension: int
+    :type Dimension: Standard_Integer
     :param Degree:
-    :type Degree: int
+    :type Degree: Standard_Integer
     :param ConstraintPoint:
     :type ConstraintPoint: TColStd_Array1OfReal &
     :param Continuity:
-    :type Continuity: int
+    :type Continuity: Standard_Integer
     :param After:
     :type After: bool
     :param NbPolesResult:
-    :type NbPolesResult: int &
+    :type NbPolesResult: Standard_Integer &
     :param NbKnotsRsult:
-    :type NbKnotsRsult: int &
+    :type NbKnotsRsult: Standard_Integer &
     :param KnotsResult:
     :type KnotsResult: float &
     :param PolesResult:
@@ -5281,14 +5572,14 @@ def bsplclib_TangExtendToConstraint(*args) -> "Standard_Real &, Standard_Integer
     """
   return _BSplCLib.bsplclib_TangExtendToConstraint(*args)
 
-def bsplclib_CacheD0(*args) -> "void" :
+def bsplclib_CacheD0(*args):
   """
     * Perform the evaluation of the of the cache the parameter must be normalized between the 0 and 1 for the span. The Cache must be valid when calling this routine. Geom Package will insure that. and then multiplies by the weights this just evaluates the current point the CacheParameter is where the Cache was constructed the SpanLength is to normalize the polynomial in the cache to avoid bad conditioning effects
 
     :param U:
     :type U: float
     :param Degree:
-    :type Degree: int
+    :type Degree: Standard_Integer
     :param CacheParameter:
     :type CacheParameter: float
     :param SpanLenght:
@@ -5306,7 +5597,7 @@ def bsplclib_CacheD0(*args) -> "void" :
     :param U:
     :type U: float
     :param Degree:
-    :type Degree: int
+    :type Degree: Standard_Integer
     :param CacheParameter:
     :type CacheParameter: float
     :param SpanLenght:
@@ -5322,7 +5613,7 @@ def bsplclib_CacheD0(*args) -> "void" :
     """
   return _BSplCLib.bsplclib_CacheD0(*args)
 
-def bsplclib_CoefsD0(*args) -> "void" :
+def bsplclib_CoefsD0(*args):
   """
     * Calls CacheD0 for Bezier Curves Arrays computed with the method PolesCoefficients. Warning: To be used for Beziercurves ONLY!!!
 
@@ -5351,14 +5642,14 @@ def bsplclib_CoefsD0(*args) -> "void" :
     """
   return _BSplCLib.bsplclib_CoefsD0(*args)
 
-def bsplclib_CacheD1(*args) -> "void" :
+def bsplclib_CacheD1(*args):
   """
     * Perform the evaluation of the of the cache the parameter must be normalized between the 0 and 1 for the span. The Cache must be valid when calling this routine. Geom Package will insure that. and then multiplies by the weights this just evaluates the current point the CacheParameter is where the Cache was constructed the SpanLength is to normalize the polynomial in the cache to avoid bad conditioning effects
 
     :param U:
     :type U: float
     :param Degree:
-    :type Degree: int
+    :type Degree: Standard_Integer
     :param CacheParameter:
     :type CacheParameter: float
     :param SpanLenght:
@@ -5378,7 +5669,7 @@ def bsplclib_CacheD1(*args) -> "void" :
     :param U:
     :type U: float
     :param Degree:
-    :type Degree: int
+    :type Degree: Standard_Integer
     :param CacheParameter:
     :type CacheParameter: float
     :param SpanLenght:
@@ -5396,7 +5687,7 @@ def bsplclib_CacheD1(*args) -> "void" :
     """
   return _BSplCLib.bsplclib_CacheD1(*args)
 
-def bsplclib_CoefsD1(*args) -> "void" :
+def bsplclib_CoefsD1(*args):
   """
     * Calls CacheD1 for Bezier Curves Arrays computed with the method PolesCoefficients. Warning: To be used for Beziercurves ONLY!!!
 
@@ -5429,14 +5720,14 @@ def bsplclib_CoefsD1(*args) -> "void" :
     """
   return _BSplCLib.bsplclib_CoefsD1(*args)
 
-def bsplclib_CacheD2(*args) -> "void" :
+def bsplclib_CacheD2(*args):
   """
     * Perform the evaluation of the of the cache the parameter must be normalized between the 0 and 1 for the span. The Cache must be valid when calling this routine. Geom Package will insure that. and then multiplies by the weights this just evaluates the current point the CacheParameter is where the Cache was constructed the SpanLength is to normalize the polynomial in the cache to avoid bad conditioning effects
 
     :param U:
     :type U: float
     :param Degree:
-    :type Degree: int
+    :type Degree: Standard_Integer
     :param CacheParameter:
     :type CacheParameter: float
     :param SpanLenght:
@@ -5458,7 +5749,7 @@ def bsplclib_CacheD2(*args) -> "void" :
     :param U:
     :type U: float
     :param Degree:
-    :type Degree: int
+    :type Degree: Standard_Integer
     :param CacheParameter:
     :type CacheParameter: float
     :param SpanLenght:
@@ -5478,7 +5769,7 @@ def bsplclib_CacheD2(*args) -> "void" :
     """
   return _BSplCLib.bsplclib_CacheD2(*args)
 
-def bsplclib_CoefsD2(*args) -> "void" :
+def bsplclib_CoefsD2(*args):
   """
     * Calls CacheD1 for Bezier Curves Arrays computed with the method PolesCoefficients. Warning: To be used for Beziercurves ONLY!!!
 
@@ -5515,14 +5806,14 @@ def bsplclib_CoefsD2(*args) -> "void" :
     """
   return _BSplCLib.bsplclib_CoefsD2(*args)
 
-def bsplclib_CacheD3(*args) -> "void" :
+def bsplclib_CacheD3(*args):
   """
     * Perform the evaluation of the of the cache the parameter must be normalized between the 0 and 1 for the span. The Cache must be valid when calling this routine. Geom Package will insure that. and then multiplies by the weights this just evaluates the current point the CacheParameter is where the Cache was constructed the SpanLength is to normalize the polynomial in the cache to avoid bad conditioning effects
 
     :param U:
     :type U: float
     :param Degree:
-    :type Degree: int
+    :type Degree: Standard_Integer
     :param CacheParameter:
     :type CacheParameter: float
     :param SpanLenght:
@@ -5546,7 +5837,7 @@ def bsplclib_CacheD3(*args) -> "void" :
     :param U:
     :type U: float
     :param Degree:
-    :type Degree: int
+    :type Degree: Standard_Integer
     :param CacheParameter:
     :type CacheParameter: float
     :param SpanLenght:
@@ -5568,7 +5859,7 @@ def bsplclib_CacheD3(*args) -> "void" :
     """
   return _BSplCLib.bsplclib_CacheD3(*args)
 
-def bsplclib_CoefsD3(*args) -> "void" :
+def bsplclib_CoefsD3(*args):
   """
     * Calls CacheD1 for Bezier Curves Arrays computed with the method PolesCoefficients. Warning: To be used for Beziercurves ONLY!!!
 
@@ -5609,7 +5900,7 @@ def bsplclib_CoefsD3(*args) -> "void" :
     """
   return _BSplCLib.bsplclib_CoefsD3(*args)
 
-def bsplclib_BuildCache(*args) -> "void" :
+def bsplclib_BuildCache(*args):
   """
     * Perform the evaluation of the Taylor expansion of the Bspline normalized between 0 and 1. If rational computes the homogeneous Taylor expension for the numerator and stores it in CachePoles
 
@@ -5620,7 +5911,7 @@ def bsplclib_BuildCache(*args) -> "void" :
     :param PeriodicFlag:
     :type PeriodicFlag: bool
     :param Degree:
-    :type Degree: int
+    :type Degree: Standard_Integer
     :param FlatKnots:
     :type FlatKnots: TColStd_Array1OfReal &
     :param Poles:
@@ -5642,7 +5933,7 @@ def bsplclib_BuildCache(*args) -> "void" :
     :param PeriodicFlag:
     :type PeriodicFlag: bool
     :param Degree:
-    :type Degree: int
+    :type Degree: Standard_Integer
     :param FlatKnots:
     :type FlatKnots: TColStd_Array1OfReal &
     :param Poles:
@@ -5658,7 +5949,7 @@ def bsplclib_BuildCache(*args) -> "void" :
     """
   return _BSplCLib.bsplclib_BuildCache(*args)
 
-def bsplclib_PolesCoefficients(*args) -> "void" :
+def bsplclib_PolesCoefficients(*args):
   """
     :param Poles:
     :type Poles: TColgp_Array1OfPnt2d
@@ -5697,23 +5988,23 @@ def bsplclib_PolesCoefficients(*args) -> "void" :
     """
   return _BSplCLib.bsplclib_PolesCoefficients(*args)
 
-def bsplclib_FlatBezierKnots(*args) -> "Standard_Real const &" :
+def bsplclib_FlatBezierKnots(*args):
   """
     * Returns pointer to statically allocated array representing flat knots for bezier curve of the specified degree. Raises OutOfRange if Degree > MaxDegree()
 
     :param Degree:
-    :type Degree: int
+    :type Degree: Standard_Integer
     :rtype: float
 
     """
   return _BSplCLib.bsplclib_FlatBezierKnots(*args)
 
-def bsplclib_BuildSchoenbergPoints(*args) -> "void" :
+def bsplclib_BuildSchoenbergPoints(*args):
   """
     * builds the Schoenberg points from the flat knot used to interpolate a BSpline since the BSpline matrix is invertible.
 
     :param Degree:
-    :type Degree: int
+    :type Degree: Standard_Integer
     :param FlatKnots:
     :type FlatKnots: TColStd_Array1OfReal &
     :param Parameters:
@@ -5723,12 +6014,12 @@ def bsplclib_BuildSchoenbergPoints(*args) -> "void" :
     """
   return _BSplCLib.bsplclib_BuildSchoenbergPoints(*args)
 
-def bsplclib_Interpolate(*args) -> "Standard_Real &, Standard_Real &, Standard_Integer &" :
+def bsplclib_Interpolate(*args):
   """
     * Performs the interpolation of the data given in the Poles array according to the requests in ContactOrderArray that is :  if ContactOrderArray(i) has value d it means that Poles(i) containes the dth derivative of the function to be interpolated. The length L of the following arrays must be the same : Parameters, ContactOrderArray, Poles, The length of FlatKnots is Degree + L + 1 Warning: the method used to do that interpolation is gauss elimination WITHOUT pivoting. Thus if the diagonal is not dominant there is no guarantee that the algorithm will work. Nevertheless for Cubic interpolation or interpolation at Scheonberg points the method will work The InversionProblem will report 0 if there was no problem else it will give the index of the faulty pivot
 
     :param Degree:
-    :type Degree: int
+    :type Degree: Standard_Integer
     :param FlatKnots:
     :type FlatKnots: TColStd_Array1OfReal &
     :param Parameters:
@@ -5738,13 +6029,13 @@ def bsplclib_Interpolate(*args) -> "Standard_Real &, Standard_Real &, Standard_I
     :param Poles:
     :type Poles: TColgp_Array1OfPnt
     :param InversionProblem:
-    :type InversionProblem: int &
+    :type InversionProblem: Standard_Integer &
     :rtype: void
 
     * Performs the interpolation of the data given in the Poles array according to the requests in ContactOrderArray that is :  if ContactOrderArray(i) has value d it means that Poles(i) containes the dth derivative of the function to be interpolated. The length L of the following arrays must be the same : Parameters, ContactOrderArray, Poles, The length of FlatKnots is Degree + L + 1 Warning: the method used to do that interpolation is gauss elimination WITHOUT pivoting. Thus if the diagonal is not dominant there is no guarantee that the algorithm will work. Nevertheless for Cubic interpolation at knots or interpolation at Scheonberg points the method will work. The InversionProblem w ll report 0 if there was no problem else it will give the index of the faulty pivot
 
     :param Degree:
-    :type Degree: int
+    :type Degree: Standard_Integer
     :param FlatKnots:
     :type FlatKnots: TColStd_Array1OfReal &
     :param Parameters:
@@ -5754,13 +6045,13 @@ def bsplclib_Interpolate(*args) -> "Standard_Real &, Standard_Real &, Standard_I
     :param Poles:
     :type Poles: TColgp_Array1OfPnt2d
     :param InversionProblem:
-    :type InversionProblem: int &
+    :type InversionProblem: Standard_Integer &
     :rtype: void
 
     * Performs the interpolation of the data given in the Poles array according to the requests in ContactOrderArray that is :  if ContactOrderArray(i) has value d it means that Poles(i) containes the dth derivative of the function to be interpolated. The length L of the following arrays must be the same : Parameters, ContactOrderArray, Poles, The length of FlatKnots is Degree + L + 1 Warning: the method used to do that interpolation is gauss elimination WITHOUT pivoting. Thus if the diagonal is not dominant there is no guarantee that the algorithm will work. Nevertheless for Cubic interpolation at knots or interpolation at Scheonberg points the method will work. The InversionProblem will report 0 if there was no problem else it will give the index of the faulty pivot
 
     :param Degree:
-    :type Degree: int
+    :type Degree: Standard_Integer
     :param FlatKnots:
     :type FlatKnots: TColStd_Array1OfReal &
     :param Parameters:
@@ -5772,13 +6063,13 @@ def bsplclib_Interpolate(*args) -> "Standard_Real &, Standard_Real &, Standard_I
     :param Weights:
     :type Weights: TColStd_Array1OfReal &
     :param InversionProblem:
-    :type InversionProblem: int &
+    :type InversionProblem: Standard_Integer &
     :rtype: void
 
     * Performs the interpolation of the data given in the Poles array according to the requests in ContactOrderArray that is :  if ContactOrderArray(i) has value d it means that Poles(i) containes the dth derivative of the function to be interpolated. The length L of the following arrays must be the same : Parameters, ContactOrderArray, Poles, The length of FlatKnots is Degree + L + 1 Warning: the method used to do that interpolation is gauss elimination WITHOUT pivoting. Thus if the diagonal is not dominant there is no guarantee that the algorithm will work. Nevertheless for Cubic interpolation at knots or interpolation at Scheonberg points the method will work. The InversionProblem w ll report 0 if there was no problem else it will give the i
 
     :param Degree:
-    :type Degree: int
+    :type Degree: Standard_Integer
     :param FlatKnots:
     :type FlatKnots: TColStd_Array1OfReal &
     :param Parameters:
@@ -5790,13 +6081,13 @@ def bsplclib_Interpolate(*args) -> "Standard_Real &, Standard_Real &, Standard_I
     :param Weights:
     :type Weights: TColStd_Array1OfReal &
     :param InversionProblem:
-    :type InversionProblem: int &
+    :type InversionProblem: Standard_Integer &
     :rtype: void
 
     * Performs the interpolation of the data given in the Poles array according to the requests in ContactOrderArray that is :  if ContactOrderArray(i) has value d it means that Poles(i) containes the dth derivative of the function to be interpolated. The length L of the following arrays must be the same : Parameters, ContactOrderArray The length of FlatKnots is Degree + L + 1 The PolesArray is an seen as an Array[1..N][1..ArrayDimension] with N = tge length of the parameters array Warning: the method used to do that interpolation is gauss elimination WITHOUT pivoting. Thus if the diagonal is not dominant there is no guarantee that the algorithm will work. Nevertheless for Cubic interpolation or interpolation at Scheonberg points the method will work The InversionProblem will report 0 if there was no problem else it will give the index of the faulty pivot
 
     :param Degree:
-    :type Degree: int
+    :type Degree: Standard_Integer
     :param FlatKnots:
     :type FlatKnots: TColStd_Array1OfReal &
     :param Parameters:
@@ -5804,15 +6095,15 @@ def bsplclib_Interpolate(*args) -> "Standard_Real &, Standard_Real &, Standard_I
     :param ContactOrderArray:
     :type ContactOrderArray: TColStd_Array1OfInteger &
     :param ArrayDimension:
-    :type ArrayDimension: int
+    :type ArrayDimension: Standard_Integer
     :param Poles:
     :type Poles: float &
     :param InversionProblem:
-    :type InversionProblem: int &
+    :type InversionProblem: Standard_Integer &
     :rtype: void
 
     :param Degree:
-    :type Degree: int
+    :type Degree: Standard_Integer
     :param FlatKnots:
     :type FlatKnots: TColStd_Array1OfReal &
     :param Parameters:
@@ -5820,19 +6111,19 @@ def bsplclib_Interpolate(*args) -> "Standard_Real &, Standard_Real &, Standard_I
     :param ContactOrderArray:
     :type ContactOrderArray: TColStd_Array1OfInteger &
     :param ArrayDimension:
-    :type ArrayDimension: int
+    :type ArrayDimension: Standard_Integer
     :param Poles:
     :type Poles: float &
     :param Weights:
     :type Weights: float &
     :param InversionProblem:
-    :type InversionProblem: int &
+    :type InversionProblem: Standard_Integer &
     :rtype: void
 
     """
   return _BSplCLib.bsplclib_Interpolate(*args)
 
-def bsplclib_MovePoint(*args) -> "Standard_Integer &, Standard_Integer &" :
+def bsplclib_MovePoint(*args):
   """
     * Find the new poles which allows an old point (with a given u as parameter) to reach a new position Index1 and Index2 indicate the range of poles we can move (1, NbPoles-1) or (2, NbPoles) -> no constraint for one side  don't enter (1,NbPoles) -> error: rigid move (2, NbPoles-1) -> the ends are enforced (3, NbPoles-2) -> the ends and the tangency are enforced if Problem in BSplineBasis calculation, no change for the curve and FirstIndex, LastIndex = 0
 
@@ -5841,11 +6132,11 @@ def bsplclib_MovePoint(*args) -> "Standard_Integer &, Standard_Integer &" :
     :param Displ:
     :type Displ: gp_Vec2d
     :param Index1:
-    :type Index1: int
+    :type Index1: Standard_Integer
     :param Index2:
-    :type Index2: int
+    :type Index2: Standard_Integer
     :param Degree:
-    :type Degree: int
+    :type Degree: Standard_Integer
     :param Rational:
     :type Rational: bool
     :param Poles:
@@ -5855,9 +6146,9 @@ def bsplclib_MovePoint(*args) -> "Standard_Integer &, Standard_Integer &" :
     :param FlatKnots:
     :type FlatKnots: TColStd_Array1OfReal &
     :param FirstIndex:
-    :type FirstIndex: int &
+    :type FirstIndex: Standard_Integer &
     :param LastIndex:
-    :type LastIndex: int &
+    :type LastIndex: Standard_Integer &
     :param NewPoles:
     :type NewPoles: TColgp_Array1OfPnt2d
     :rtype: void
@@ -5869,11 +6160,11 @@ def bsplclib_MovePoint(*args) -> "Standard_Integer &, Standard_Integer &" :
     :param Displ:
     :type Displ: gp_Vec
     :param Index1:
-    :type Index1: int
+    :type Index1: Standard_Integer
     :param Index2:
-    :type Index2: int
+    :type Index2: Standard_Integer
     :param Degree:
-    :type Degree: int
+    :type Degree: Standard_Integer
     :param Rational:
     :type Rational: bool
     :param Poles:
@@ -5883,9 +6174,9 @@ def bsplclib_MovePoint(*args) -> "Standard_Integer &, Standard_Integer &" :
     :param FlatKnots:
     :type FlatKnots: TColStd_Array1OfReal &
     :param FirstIndex:
-    :type FirstIndex: int &
+    :type FirstIndex: Standard_Integer &
     :param LastIndex:
-    :type LastIndex: int &
+    :type LastIndex: Standard_Integer &
     :param NewPoles:
     :type NewPoles: TColgp_Array1OfPnt
     :rtype: void
@@ -5893,14 +6184,14 @@ def bsplclib_MovePoint(*args) -> "Standard_Integer &, Standard_Integer &" :
     """
   return _BSplCLib.bsplclib_MovePoint(*args)
 
-def bsplclib_MovePointAndTangent(*args) -> "Standard_Integer &" :
+def bsplclib_MovePointAndTangent(*args):
   """
     * This is the dimension free version of the utility U is the parameter must be within the first FlatKnots and the last FlatKnots Delta is the amount the curve has to be moved DeltaDerivative is the amount the derivative has to be moved. Delta and DeltaDerivative must be array of dimension ArrayDimension Degree is the degree of the BSpline and the FlatKnots are the knots of the BSpline Starting Condition if = -1 means the starting point of the curve can move = 0 means the starting point of the cuve cannot move but tangen starting point of the curve cannot move = 1 means the starting point and tangents cannot move = 2 means the starting point tangent and curvature cannot move = ... Same holds for EndingCondition Poles are the poles of the curve Weights are the weights of the curve if Rational = Standard_True NewPoles are the poles of the deformed curve ErrorStatus will be 0 if no error happened  1 if there are not enough knots/poles  the imposed conditions The way to solve this problem is to add knots to the BSpline If StartCondition = 1 and EndCondition = 1 then you need at least 4 + 2 = 6 poles so for example to have a C1 cubic you will need have at least 2 internal knots.
 
     :param U:
     :type U: float
     :param ArrayDimension:
-    :type ArrayDimension: int
+    :type ArrayDimension: Standard_Integer
     :param Delta:
     :type Delta: float &
     :param DeltaDerivative:
@@ -5908,13 +6199,13 @@ def bsplclib_MovePointAndTangent(*args) -> "Standard_Integer &" :
     :param Tolerance:
     :type Tolerance: float
     :param Degree:
-    :type Degree: int
+    :type Degree: Standard_Integer
     :param Rational:
     :type Rational: bool
     :param StartingCondition:
-    :type StartingCondition: int
+    :type StartingCondition: Standard_Integer
     :param EndingCondition:
-    :type EndingCondition: int
+    :type EndingCondition: Standard_Integer
     :param Poles:
     :type Poles: float &
     :param Weights:
@@ -5924,7 +6215,7 @@ def bsplclib_MovePointAndTangent(*args) -> "Standard_Integer &" :
     :param NewPoles:
     :type NewPoles: float &
     :param ErrorStatus:
-    :type ErrorStatus: int &
+    :type ErrorStatus: Standard_Integer &
     :rtype: void
 
     * This is the dimension free version of the utility U is the parameter must be within the first FlatKnots and the last FlatKnots Delta is the amount the curve has to be moved DeltaDerivative is the amount the derivative has to be moved. Delta and DeltaDerivative must be array of dimension ArrayDimension Degree is the degree of the BSpline and the FlatKnots are the knots of the BSpline Starting Condition if = -1 means the starting point of the curve can move = 0 means the starting point of the cuve cannot move but tangen starting point of the curve cannot move = 1 means the starting point and tangents cannot move = 2 means the starting point tangent and curvature cannot move = ... Same holds for EndingCondition Poles are the poles of the curve Weights are the weights of the curve if Rational = Standard_True NewPoles are the poles of the deformed curve ErrorStatus will be 0 if no error happened  1 if there are not enough knots/poles  the imposed conditions The way to solve this problem is to add knots to the BSpline If StartCondition = 1 and EndCondition = 1 then you need at least 4 + 2 = 6 poles so for example to have a C1 cubic you will need have at least 2 internal knots.
@@ -5938,13 +6229,13 @@ def bsplclib_MovePointAndTangent(*args) -> "Standard_Integer &" :
     :param Tolerance:
     :type Tolerance: float
     :param Degree:
-    :type Degree: int
+    :type Degree: Standard_Integer
     :param Rational:
     :type Rational: bool
     :param StartingCondition:
-    :type StartingCondition: int
+    :type StartingCondition: Standard_Integer
     :param EndingCondition:
-    :type EndingCondition: int
+    :type EndingCondition: Standard_Integer
     :param Poles:
     :type Poles: TColgp_Array1OfPnt
     :param Weights:
@@ -5954,7 +6245,7 @@ def bsplclib_MovePointAndTangent(*args) -> "Standard_Integer &" :
     :param NewPoles:
     :type NewPoles: TColgp_Array1OfPnt
     :param ErrorStatus:
-    :type ErrorStatus: int &
+    :type ErrorStatus: Standard_Integer &
     :rtype: void
 
     * This is the dimension free version of the utility U is the parameter must be within the first FlatKnots and the last FlatKnots Delta is the amount the curve has to be moved DeltaDerivative is the amount the derivative has to be moved. Delta and DeltaDerivative must be array of dimension ArrayDimension Degree is the degree of the BSpline and the FlatKnots are the knots of the BSpline Starting Condition if = -1 means the starting point of the curve can move = 0 means the starting point of the cuve cannot move but tangen starting point of the curve cannot move = 1 means the starting point and tangents cannot move = 2 means the starting point tangent and curvature cannot move = ... Same holds for EndingCondition Poles are the poles of the curve Weights are the weights of the curve if Rational = Standard_True NewPoles are the poles of the deformed curve ErrorStatus will be 0 if no error happened  1 if there are not enough knots/poles  the imposed conditions The way to solve this problem is to add knots to the BSpline If StartCondition = 1 and EndCondition = 1 then you need at least 4 + 2 = 6 poles so for example to have a C1 cubic you will need have at least 2 internal knots.
@@ -5968,13 +6259,13 @@ def bsplclib_MovePointAndTangent(*args) -> "Standard_Integer &" :
     :param Tolerance:
     :type Tolerance: float
     :param Degree:
-    :type Degree: int
+    :type Degree: Standard_Integer
     :param Rational:
     :type Rational: bool
     :param StartingCondition:
-    :type StartingCondition: int
+    :type StartingCondition: Standard_Integer
     :param EndingCondition:
-    :type EndingCondition: int
+    :type EndingCondition: Standard_Integer
     :param Poles:
     :type Poles: TColgp_Array1OfPnt2d
     :param Weights:
@@ -5984,28 +6275,28 @@ def bsplclib_MovePointAndTangent(*args) -> "Standard_Integer &" :
     :param NewPoles:
     :type NewPoles: TColgp_Array1OfPnt2d
     :param ErrorStatus:
-    :type ErrorStatus: int &
+    :type ErrorStatus: Standard_Integer &
     :rtype: void
 
     """
   return _BSplCLib.bsplclib_MovePointAndTangent(*args)
 
-def bsplclib_Resolution(*args) -> "Standard_Real &" :
+def bsplclib_Resolution(*args):
   """
     * given a tolerance in 3D space returns a tolerance in U parameter space such that all u1 and u0 in the domain of the curve f(u) | u1 - u0 | < UTolerance and we have |f (u1) - f (u0)| < Tolerance3D
 
     :param PolesArray:
     :type PolesArray: float &
     :param ArrayDimension:
-    :type ArrayDimension: int
+    :type ArrayDimension: Standard_Integer
     :param NumPoles:
-    :type NumPoles: int
+    :type NumPoles: Standard_Integer
     :param Weights:
     :type Weights: TColStd_Array1OfReal &
     :param FlatKnots:
     :type FlatKnots: TColStd_Array1OfReal &
     :param Degree:
-    :type Degree: int
+    :type Degree: Standard_Integer
     :param Tolerance3D:
     :type Tolerance3D: float
     :param UTolerance:
@@ -6019,11 +6310,11 @@ def bsplclib_Resolution(*args) -> "Standard_Real &" :
     :param Weights:
     :type Weights: TColStd_Array1OfReal &
     :param NumPoles:
-    :type NumPoles: int
+    :type NumPoles: Standard_Integer
     :param FlatKnots:
     :type FlatKnots: TColStd_Array1OfReal &
     :param Degree:
-    :type Degree: int
+    :type Degree: Standard_Integer
     :param Tolerance3D:
     :type Tolerance3D: float
     :param UTolerance:
@@ -6037,11 +6328,11 @@ def bsplclib_Resolution(*args) -> "Standard_Real &" :
     :param Weights:
     :type Weights: TColStd_Array1OfReal &
     :param NumPoles:
-    :type NumPoles: int
+    :type NumPoles: Standard_Integer
     :param FlatKnots:
     :type FlatKnots: TColStd_Array1OfReal &
     :param Degree:
-    :type Degree: int
+    :type Degree: Standard_Integer
     :param Tolerance3D:
     :type Tolerance3D: float
     :param UTolerance:

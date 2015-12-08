@@ -116,8 +116,9 @@ import OCC.gp
 import OCC.TopAbs
 class topods(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
+    def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def Vertex(*args) -> "TopoDS_Vertex" :
+    def Vertex(*args):
         """
         * Basic tool to access the data structure. Casts shape S to the more specialized return type, Vertex. Exceptions Standard_TypeMismatch if S cannot be cast to this return type.
 
@@ -133,7 +134,7 @@ class topods(object):
         return _TopoDS.topods_Vertex(*args)
 
     Vertex = staticmethod(Vertex)
-    def Edge(*args) -> "TopoDS_Edge" :
+    def Edge(*args):
         """
         * Casts shape S to the more specialized return type, Edge Exceptions Standard_TypeMismatch if S cannot be cast to this return type.
 
@@ -149,7 +150,7 @@ class topods(object):
         return _TopoDS.topods_Edge(*args)
 
     Edge = staticmethod(Edge)
-    def Wire(*args) -> "TopoDS_Wire" :
+    def Wire(*args):
         """
         * Casts shape S to the more specialized return type, Wire. Exceptions Standard_TypeMismatch if S cannot be cast to this return type.
 
@@ -165,7 +166,7 @@ class topods(object):
         return _TopoDS.topods_Wire(*args)
 
     Wire = staticmethod(Wire)
-    def Face(*args) -> "TopoDS_Face" :
+    def Face(*args):
         """
         * Casts shape S to the more specialized return type, Face. Exceptions Standard_TypeMismatch if S cannot be cast to this return type.
 
@@ -181,7 +182,7 @@ class topods(object):
         return _TopoDS.topods_Face(*args)
 
     Face = staticmethod(Face)
-    def Shell(*args) -> "TopoDS_Shell" :
+    def Shell(*args):
         """
         * Casts shape S to the more specialized return type, Shell. Exceptions Standard_TypeMismatch if S cannot be cast to this return type.
 
@@ -197,7 +198,7 @@ class topods(object):
         return _TopoDS.topods_Shell(*args)
 
     Shell = staticmethod(Shell)
-    def Solid(*args) -> "TopoDS_Solid" :
+    def Solid(*args):
         """
         * Casts shape S to the more specialized return type, Solid. Exceptions Standard_TypeMismatch if S cannot be cast to this return type.
 
@@ -213,7 +214,7 @@ class topods(object):
         return _TopoDS.topods_Solid(*args)
 
     Solid = staticmethod(Solid)
-    def CompSolid(*args) -> "TopoDS_CompSolid" :
+    def CompSolid(*args):
         """
         * Casts shape S to the more specialized return type, CompSolid. Exceptions Standard_TypeMismatch if S cannot be cast to this return type.
 
@@ -229,7 +230,7 @@ class topods(object):
         return _TopoDS.topods_CompSolid(*args)
 
     CompSolid = staticmethod(CompSolid)
-    def Compound(*args) -> "TopoDS_Compound" :
+    def Compound(*args):
         """
         * Casts shape S to the more specialized return type, Compound. Exceptions Standard_TypeMismatch if S cannot be cast to this return type.
 
@@ -245,8 +246,6 @@ class topods(object):
         return _TopoDS.topods_Compound(*args)
 
     Compound = staticmethod(Compound)
-    def __init__(self): 
-        _TopoDS.topods_swiginit(self,_TopoDS.new_topods())
     def __del__(self):
     	try:
     		self.thisown = False
@@ -259,7 +258,7 @@ topods._kill_pointed = new_instancemethod(_TopoDS.topods__kill_pointed,None,topo
 topods_swigregister = _TopoDS.topods_swigregister
 topods_swigregister(topods)
 
-def topods_Vertex(*args) -> "TopoDS_Vertex" :
+def topods_Vertex(*args):
   """
     * Basic tool to access the data structure. Casts shape S to the more specialized return type, Vertex. Exceptions Standard_TypeMismatch if S cannot be cast to this return type.
 
@@ -274,7 +273,7 @@ def topods_Vertex(*args) -> "TopoDS_Vertex" :
     """
   return _TopoDS.topods_Vertex(*args)
 
-def topods_Edge(*args) -> "TopoDS_Edge" :
+def topods_Edge(*args):
   """
     * Casts shape S to the more specialized return type, Edge Exceptions Standard_TypeMismatch if S cannot be cast to this return type.
 
@@ -289,7 +288,7 @@ def topods_Edge(*args) -> "TopoDS_Edge" :
     """
   return _TopoDS.topods_Edge(*args)
 
-def topods_Wire(*args) -> "TopoDS_Wire" :
+def topods_Wire(*args):
   """
     * Casts shape S to the more specialized return type, Wire. Exceptions Standard_TypeMismatch if S cannot be cast to this return type.
 
@@ -304,7 +303,7 @@ def topods_Wire(*args) -> "TopoDS_Wire" :
     """
   return _TopoDS.topods_Wire(*args)
 
-def topods_Face(*args) -> "TopoDS_Face" :
+def topods_Face(*args):
   """
     * Casts shape S to the more specialized return type, Face. Exceptions Standard_TypeMismatch if S cannot be cast to this return type.
 
@@ -319,7 +318,7 @@ def topods_Face(*args) -> "TopoDS_Face" :
     """
   return _TopoDS.topods_Face(*args)
 
-def topods_Shell(*args) -> "TopoDS_Shell" :
+def topods_Shell(*args):
   """
     * Casts shape S to the more specialized return type, Shell. Exceptions Standard_TypeMismatch if S cannot be cast to this return type.
 
@@ -334,7 +333,7 @@ def topods_Shell(*args) -> "TopoDS_Shell" :
     """
   return _TopoDS.topods_Shell(*args)
 
-def topods_Solid(*args) -> "TopoDS_Solid" :
+def topods_Solid(*args):
   """
     * Casts shape S to the more specialized return type, Solid. Exceptions Standard_TypeMismatch if S cannot be cast to this return type.
 
@@ -349,7 +348,7 @@ def topods_Solid(*args) -> "TopoDS_Solid" :
     """
   return _TopoDS.topods_Solid(*args)
 
-def topods_CompSolid(*args) -> "TopoDS_CompSolid" :
+def topods_CompSolid(*args):
   """
     * Casts shape S to the more specialized return type, CompSolid. Exceptions Standard_TypeMismatch if S cannot be cast to this return type.
 
@@ -364,7 +363,7 @@ def topods_CompSolid(*args) -> "TopoDS_CompSolid" :
     """
   return _TopoDS.topods_CompSolid(*args)
 
-def topods_Compound(*args) -> "TopoDS_Compound" :
+def topods_Compound(*args):
   """
     * Casts shape S to the more specialized return type, Compound. Exceptions Standard_TypeMismatch if S cannot be cast to this return type.
 
@@ -382,7 +381,7 @@ def topods_Compound(*args) -> "TopoDS_Compound" :
 class TopoDS_Builder(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def MakeWire(self, *args) -> "void" :
+    def MakeWire(self, *args):
         """
         * Make an empty Wire.
 
@@ -393,7 +392,7 @@ class TopoDS_Builder(object):
         """
         return _TopoDS.TopoDS_Builder_MakeWire(self, *args)
 
-    def MakeShell(self, *args) -> "void" :
+    def MakeShell(self, *args):
         """
         * Make an empty Shell.
 
@@ -404,7 +403,7 @@ class TopoDS_Builder(object):
         """
         return _TopoDS.TopoDS_Builder_MakeShell(self, *args)
 
-    def MakeSolid(self, *args) -> "void" :
+    def MakeSolid(self, *args):
         """
         * Make a Solid covering the whole 3D space.
 
@@ -415,7 +414,7 @@ class TopoDS_Builder(object):
         """
         return _TopoDS.TopoDS_Builder_MakeSolid(self, *args)
 
-    def MakeCompSolid(self, *args) -> "void" :
+    def MakeCompSolid(self, *args):
         """
         * Make an empty Composite Solid.
 
@@ -426,7 +425,7 @@ class TopoDS_Builder(object):
         """
         return _TopoDS.TopoDS_Builder_MakeCompSolid(self, *args)
 
-    def MakeCompound(self, *args) -> "void" :
+    def MakeCompound(self, *args):
         """
         * Make an empty Compound.
 
@@ -437,7 +436,7 @@ class TopoDS_Builder(object):
         """
         return _TopoDS.TopoDS_Builder_MakeCompound(self, *args)
 
-    def Add(self, *args) -> "void" :
+    def Add(self, *args):
         """
         * Add the Shape C in the Shape S. Exceptions - TopoDS_FrozenShape if S is not free and cannot be modified. - TopoDS__UnCompatibleShapes if S and C are not compatible.
 
@@ -450,7 +449,7 @@ class TopoDS_Builder(object):
         """
         return _TopoDS.TopoDS_Builder_Add(self, *args)
 
-    def Remove(self, *args) -> "void" :
+    def Remove(self, *args):
         """
         * Remove the Shape C from the Shape S. Exceptions TopoDS_FrozenShape if S is frozen and cannot be modified.
 
@@ -501,7 +500,7 @@ class TopoDS_HShape(OCC.MMgt.MMgt_TShared):
 
         """
         _TopoDS.TopoDS_HShape_swiginit(self,_TopoDS.new_TopoDS_HShape(*args))
-    def Shape(self, *args) -> "TopoDS_Shape const" :
+    def Shape(self, *args):
         """
         * Loads this shape with the shape aShape
 
@@ -516,20 +515,20 @@ class TopoDS_HShape(OCC.MMgt.MMgt_TShared):
         """
         return _TopoDS.TopoDS_HShape_Shape(self, *args)
 
-    def ChangeShape(self, *args) -> "TopoDS_Shape" :
+    def ChangeShape(self):
         """
         * Exchanges the TopoDS_Shape object defining this shape for another one referencing the same underlying shape Accesses the list of shapes within the underlying shape referenced by the TopoDS_Shape object. Returns a reference to a TopoDS_Shape based on this shape. The TopoDS_Shape can be modified.
 
         :rtype: TopoDS_Shape
 
         """
-        return _TopoDS.TopoDS_HShape_ChangeShape(self, *args)
+        return _TopoDS.TopoDS_HShape_ChangeShape(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(TopoDS_HShape self)"""
         return _TopoDS.TopoDS_HShape__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_TopoDS_HShape" :
+    def GetHandle(self):
         """GetHandle(TopoDS_HShape self) -> Handle_TopoDS_HShape"""
         return _TopoDS.TopoDS_HShape_GetHandle(self)
 
@@ -569,7 +568,7 @@ Handle_TopoDS_HShape._kill_pointed = new_instancemethod(_TopoDS.Handle_TopoDS_HS
 Handle_TopoDS_HShape_swigregister = _TopoDS.Handle_TopoDS_HShape_swigregister
 Handle_TopoDS_HShape_swigregister(Handle_TopoDS_HShape)
 
-def Handle_TopoDS_HShape_DownCast(*args) -> "Handle_TopoDS_HShape const" :
+def Handle_TopoDS_HShape_DownCast(*args):
   return _TopoDS.Handle_TopoDS_HShape_DownCast(*args)
 Handle_TopoDS_HShape_DownCast = _TopoDS.Handle_TopoDS_HShape_DownCast
 
@@ -592,10 +591,50 @@ class TopoDS_Iterator(object):
         :type cumLoc: bool
         :rtype: None
 
+        * Creates an Iterator on <S> sub-shapes. Note: - If cumOri is true, the function composes all sub-shapes with the orientation of S. - If cumLoc is true, the function multiplies all sub-shapes by the location of S, i.e. it applies to each sub-shape the transformation that is associated with S.
+
+        :param S:
+        :type S: TopoDS_Shape &
+        :param cumOri: default value is Standard_True
+        :type cumOri: bool
+        :param cumLoc: default value is Standard_True
+        :type cumLoc: bool
+        :rtype: None
+
+        * Creates an Iterator on <S> sub-shapes. Note: - If cumOri is true, the function composes all sub-shapes with the orientation of S. - If cumLoc is true, the function multiplies all sub-shapes by the location of S, i.e. it applies to each sub-shape the transformation that is associated with S.
+
+        :param S:
+        :type S: TopoDS_Shape &
+        :param cumOri: default value is Standard_True
+        :type cumOri: bool
+        :param cumLoc: default value is Standard_True
+        :type cumLoc: bool
+        :rtype: None
+
         """
         _TopoDS.TopoDS_Iterator_swiginit(self,_TopoDS.new_TopoDS_Iterator(*args))
-    def Initialize(self, *args) -> "void" :
+    def Initialize(self, *args):
         """
+        * Initializes this iterator with shape S. Note: - If cumOri is true, the function composes all sub-shapes with the orientation of S. - If cumLoc is true, the function multiplies all sub-shapes by the location of S, i.e. it applies to each sub-shape the transformation that is associated with S.
+
+        :param S:
+        :type S: TopoDS_Shape &
+        :param cumOri: default value is Standard_True
+        :type cumOri: bool
+        :param cumLoc: default value is Standard_True
+        :type cumLoc: bool
+        :rtype: None
+
+        * Initializes this iterator with shape S. Note: - If cumOri is true, the function composes all sub-shapes with the orientation of S. - If cumLoc is true, the function multiplies all sub-shapes by the location of S, i.e. it applies to each sub-shape the transformation that is associated with S.
+
+        :param S:
+        :type S: TopoDS_Shape &
+        :param cumOri: default value is Standard_True
+        :type cumOri: bool
+        :param cumLoc: default value is Standard_True
+        :type cumLoc: bool
+        :rtype: None
+
         * Initializes this iterator with shape S. Note: - If cumOri is true, the function composes all sub-shapes with the orientation of S. - If cumLoc is true, the function multiplies all sub-shapes by the location of S, i.e. it applies to each sub-shape the transformation that is associated with S.
 
         :param S:
@@ -609,32 +648,32 @@ class TopoDS_Iterator(object):
         """
         return _TopoDS.TopoDS_Iterator_Initialize(self, *args)
 
-    def More(self, *args) -> "Standard_Boolean" :
+    def More(self):
         """
         * Returns true if there is another sub-shape in the shape which this iterator is scanning.
 
         :rtype: bool
 
         """
-        return _TopoDS.TopoDS_Iterator_More(self, *args)
+        return _TopoDS.TopoDS_Iterator_More(self)
 
-    def Next(self, *args) -> "void" :
+    def Next(self):
         """
         * Moves on to the next sub-shape in the shape which this iterator is scanning. Exceptions Standard_NoMoreObject if there are no more sub-shapes in the shape.
 
         :rtype: None
 
         """
-        return _TopoDS.TopoDS_Iterator_Next(self, *args)
+        return _TopoDS.TopoDS_Iterator_Next(self)
 
-    def Value(self, *args) -> "TopoDS_Shape const" :
+    def Value(self):
         """
         * Returns the current sub-shape in the shape which this iterator is scanning. Exceptions Standard_NoSuchObject if there is no current sub-shape.
 
         :rtype: TopoDS_Shape
 
         """
-        return _TopoDS.TopoDS_Iterator_Value(self, *args)
+        return _TopoDS.TopoDS_Iterator_Value(self)
 
     def __del__(self):
     	try:
@@ -665,7 +704,7 @@ class TopoDS_ListIteratorOfListOfShape(object):
 
         """
         _TopoDS.TopoDS_ListIteratorOfListOfShape_swiginit(self,_TopoDS.new_TopoDS_ListIteratorOfListOfShape(*args))
-    def Initialize(self, *args) -> "void" :
+    def Initialize(self, *args):
         """
         :param L:
         :type L: TopoDS_ListOfShape &
@@ -674,26 +713,26 @@ class TopoDS_ListIteratorOfListOfShape(object):
         """
         return _TopoDS.TopoDS_ListIteratorOfListOfShape_Initialize(self, *args)
 
-    def More(self, *args) -> "Standard_Boolean" :
+    def More(self):
         """
         :rtype: bool
 
         """
-        return _TopoDS.TopoDS_ListIteratorOfListOfShape_More(self, *args)
+        return _TopoDS.TopoDS_ListIteratorOfListOfShape_More(self)
 
-    def Next(self, *args) -> "void" :
+    def Next(self):
         """
         :rtype: None
 
         """
-        return _TopoDS.TopoDS_ListIteratorOfListOfShape_Next(self, *args)
+        return _TopoDS.TopoDS_ListIteratorOfListOfShape_Next(self)
 
-    def Value(self, *args) -> "TopoDS_Shape" :
+    def Value(self):
         """
         :rtype: TopoDS_Shape
 
         """
-        return _TopoDS.TopoDS_ListIteratorOfListOfShape_Value(self, *args)
+        return _TopoDS.TopoDS_ListIteratorOfListOfShape_Value(self)
 
     def __del__(self):
     	try:
@@ -724,18 +763,18 @@ class TopoDS_ListNodeOfListOfShape(OCC.TCollection.TCollection_MapNode):
 
         """
         _TopoDS.TopoDS_ListNodeOfListOfShape_swiginit(self,_TopoDS.new_TopoDS_ListNodeOfListOfShape(*args))
-    def Value(self, *args) -> "TopoDS_Shape" :
+    def Value(self):
         """
         :rtype: TopoDS_Shape
 
         """
-        return _TopoDS.TopoDS_ListNodeOfListOfShape_Value(self, *args)
+        return _TopoDS.TopoDS_ListNodeOfListOfShape_Value(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(TopoDS_ListNodeOfListOfShape self)"""
         return _TopoDS.TopoDS_ListNodeOfListOfShape__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_TopoDS_ListNodeOfListOfShape" :
+    def GetHandle(self):
         """GetHandle(TopoDS_ListNodeOfListOfShape self) -> Handle_TopoDS_ListNodeOfListOfShape"""
         return _TopoDS.TopoDS_ListNodeOfListOfShape_GetHandle(self)
 
@@ -774,20 +813,20 @@ Handle_TopoDS_ListNodeOfListOfShape._kill_pointed = new_instancemethod(_TopoDS.H
 Handle_TopoDS_ListNodeOfListOfShape_swigregister = _TopoDS.Handle_TopoDS_ListNodeOfListOfShape_swigregister
 Handle_TopoDS_ListNodeOfListOfShape_swigregister(Handle_TopoDS_ListNodeOfListOfShape)
 
-def Handle_TopoDS_ListNodeOfListOfShape_DownCast(*args) -> "Handle_TopoDS_ListNodeOfListOfShape const" :
+def Handle_TopoDS_ListNodeOfListOfShape_DownCast(*args):
   return _TopoDS.Handle_TopoDS_ListNodeOfListOfShape_DownCast(*args)
 Handle_TopoDS_ListNodeOfListOfShape_DownCast = _TopoDS.Handle_TopoDS_ListNodeOfListOfShape_DownCast
 
 class TopoDS_ListOfShape(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _TopoDS.TopoDS_ListOfShape_swiginit(self,_TopoDS.new_TopoDS_ListOfShape(*args))
-    def Assign(self, *args) -> "void" :
+        _TopoDS.TopoDS_ListOfShape_swiginit(self,_TopoDS.new_TopoDS_ListOfShape())
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: TopoDS_ListOfShape &
@@ -796,7 +835,7 @@ class TopoDS_ListOfShape(object):
         """
         return _TopoDS.TopoDS_ListOfShape_Assign(self, *args)
 
-    def Set(self, *args) -> "void" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: TopoDS_ListOfShape &
@@ -805,28 +844,28 @@ class TopoDS_ListOfShape(object):
         """
         return _TopoDS.TopoDS_ListOfShape_Set(self, *args)
 
-    def Extent(self, *args) -> "Standard_Integer" :
+    def Extent(self):
         """
         :rtype: int
 
         """
-        return _TopoDS.TopoDS_ListOfShape_Extent(self, *args)
+        return _TopoDS.TopoDS_ListOfShape_Extent(self)
 
-    def Clear(self, *args) -> "void" :
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _TopoDS.TopoDS_ListOfShape_Clear(self, *args)
+        return _TopoDS.TopoDS_ListOfShape_Clear(self)
 
-    def IsEmpty(self, *args) -> "Standard_Boolean" :
+    def IsEmpty(self):
         """
         :rtype: bool
 
         """
-        return _TopoDS.TopoDS_ListOfShape_IsEmpty(self, *args)
+        return _TopoDS.TopoDS_ListOfShape_IsEmpty(self)
 
-    def Prepend(self, *args) -> "void" :
+    def Prepend(self, *args):
         """
         :param I:
         :type I: TopoDS_Shape &
@@ -845,7 +884,7 @@ class TopoDS_ListOfShape(object):
         """
         return _TopoDS.TopoDS_ListOfShape_Prepend(self, *args)
 
-    def Append(self, *args) -> "void" :
+    def Append(self, *args):
         """
         :param I:
         :type I: TopoDS_Shape &
@@ -864,28 +903,28 @@ class TopoDS_ListOfShape(object):
         """
         return _TopoDS.TopoDS_ListOfShape_Append(self, *args)
 
-    def First(self, *args) -> "TopoDS_Shape" :
+    def First(self):
         """
         :rtype: TopoDS_Shape
 
         """
-        return _TopoDS.TopoDS_ListOfShape_First(self, *args)
+        return _TopoDS.TopoDS_ListOfShape_First(self)
 
-    def Last(self, *args) -> "TopoDS_Shape" :
+    def Last(self):
         """
         :rtype: TopoDS_Shape
 
         """
-        return _TopoDS.TopoDS_ListOfShape_Last(self, *args)
+        return _TopoDS.TopoDS_ListOfShape_Last(self)
 
-    def RemoveFirst(self, *args) -> "void" :
+    def RemoveFirst(self):
         """
         :rtype: None
 
         """
-        return _TopoDS.TopoDS_ListOfShape_RemoveFirst(self, *args)
+        return _TopoDS.TopoDS_ListOfShape_RemoveFirst(self)
 
-    def Remove(self, *args) -> "void" :
+    def Remove(self, *args):
         """
         :param It:
         :type It: TopoDS_ListIteratorOfListOfShape &
@@ -894,7 +933,7 @@ class TopoDS_ListOfShape(object):
         """
         return _TopoDS.TopoDS_ListOfShape_Remove(self, *args)
 
-    def InsertBefore(self, *args) -> "void" :
+    def InsertBefore(self, *args):
         """
         :param I:
         :type I: TopoDS_Shape &
@@ -911,7 +950,7 @@ class TopoDS_ListOfShape(object):
         """
         return _TopoDS.TopoDS_ListOfShape_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args) -> "void" :
+    def InsertAfter(self, *args):
         """
         :param I:
         :type I: TopoDS_Shape &
@@ -965,25 +1004,25 @@ class TopoDS_Shape(object):
 
         """
         _TopoDS.TopoDS_Shape_swiginit(self,_TopoDS.new_TopoDS_Shape(*args))
-    def IsNull(self, *args) -> "Standard_Boolean" :
+    def IsNull(self):
         """
         * Returns true if this shape is null. In other words, it references no underlying shape with the potential to be given a location and an orientation.
 
         :rtype: bool
 
         """
-        return _TopoDS.TopoDS_Shape_IsNull(self, *args)
+        return _TopoDS.TopoDS_Shape_IsNull(self)
 
-    def Nullify(self, *args) -> "void" :
+    def Nullify(self):
         """
         * Destroys the reference to the underlying shape stored in this shape. As a result, this shape becomes null.
 
         :rtype: None
 
         """
-        return _TopoDS.TopoDS_Shape_Nullify(self, *args)
+        return _TopoDS.TopoDS_Shape_Nullify(self)
 
-    def Location(self, *args) -> "void" :
+    def Location(self, *args):
         """
         * Returns the shape local coordinate system.
 
@@ -998,7 +1037,7 @@ class TopoDS_Shape(object):
         """
         return _TopoDS.TopoDS_Shape_Location(self, *args)
 
-    def Located(self, *args) -> "TopoDS_Shape" :
+    def Located(self, *args):
         """
         * Returns a shape similar to <self> with the local coordinate system set to <Loc>.
 
@@ -1009,7 +1048,7 @@ class TopoDS_Shape(object):
         """
         return _TopoDS.TopoDS_Shape_Located(self, *args)
 
-    def Orientation(self, *args) -> "void" :
+    def Orientation(self, *args):
         """
         * Returns the shape orientation.
 
@@ -1024,7 +1063,7 @@ class TopoDS_Shape(object):
         """
         return _TopoDS.TopoDS_Shape_Orientation(self, *args)
 
-    def Oriented(self, *args) -> "TopoDS_Shape" :
+    def Oriented(self, *args):
         """
         * Returns a shape similar to <self> with the orientation set to <Or>.
 
@@ -1035,16 +1074,16 @@ class TopoDS_Shape(object):
         """
         return _TopoDS.TopoDS_Shape_Oriented(self, *args)
 
-    def ShapeType(self, *args) -> "TopAbs_ShapeEnum" :
+    def ShapeType(self):
         """
         * Returns the value of the TopAbs_ShapeEnum enumeration that corresponds to this shape, for example VERTEX, EDGE, and so on. Exceptions Standard_NullObject if this shape is null.
 
         :rtype: TopAbs_ShapeEnum
 
         """
-        return _TopoDS.TopoDS_Shape_ShapeType(self, *args)
+        return _TopoDS.TopoDS_Shape_ShapeType(self)
 
-    def Free(self, *args) -> "void" :
+    def Free(self, *args):
         """
         * Returns the free flag.
 
@@ -1059,7 +1098,7 @@ class TopoDS_Shape(object):
         """
         return _TopoDS.TopoDS_Shape_Free(self, *args)
 
-    def Modified(self, *args) -> "void" :
+    def Modified(self, *args):
         """
         * Returns the modification flag.
 
@@ -1074,7 +1113,7 @@ class TopoDS_Shape(object):
         """
         return _TopoDS.TopoDS_Shape_Modified(self, *args)
 
-    def Checked(self, *args) -> "void" :
+    def Checked(self, *args):
         """
         * Returns the checked flag.
 
@@ -1089,7 +1128,7 @@ class TopoDS_Shape(object):
         """
         return _TopoDS.TopoDS_Shape_Checked(self, *args)
 
-    def Orientable(self, *args) -> "void" :
+    def Orientable(self, *args):
         """
         * Returns the orientability flag.
 
@@ -1104,7 +1143,7 @@ class TopoDS_Shape(object):
         """
         return _TopoDS.TopoDS_Shape_Orientable(self, *args)
 
-    def Closed(self, *args) -> "void" :
+    def Closed(self, *args):
         """
         * Returns the closedness flag.
 
@@ -1119,7 +1158,7 @@ class TopoDS_Shape(object):
         """
         return _TopoDS.TopoDS_Shape_Closed(self, *args)
 
-    def Infinite(self, *args) -> "void" :
+    def Infinite(self, *args):
         """
         * Returns the infinity flag.
 
@@ -1134,7 +1173,7 @@ class TopoDS_Shape(object):
         """
         return _TopoDS.TopoDS_Shape_Infinite(self, *args)
 
-    def Convex(self, *args) -> "void" :
+    def Convex(self, *args):
         """
         * Returns the convexness flag.
 
@@ -1149,7 +1188,7 @@ class TopoDS_Shape(object):
         """
         return _TopoDS.TopoDS_Shape_Convex(self, *args)
 
-    def Move(self, *args) -> "void" :
+    def Move(self, *args):
         """
         * Multiplies the Shape location by <position>.
 
@@ -1160,7 +1199,7 @@ class TopoDS_Shape(object):
         """
         return _TopoDS.TopoDS_Shape_Move(self, *args)
 
-    def Moved(self, *args) -> "TopoDS_Shape" :
+    def Moved(self, *args):
         """
         * Returns a shape similar to <self> with a location multiplied by <position>.
 
@@ -1171,43 +1210,43 @@ class TopoDS_Shape(object):
         """
         return _TopoDS.TopoDS_Shape_Moved(self, *args)
 
-    def Reverse(self, *args) -> "void" :
+    def Reverse(self):
         """
         * Reverses the orientation, using the Reverse method from the TopAbs package.
 
         :rtype: None
 
         """
-        return _TopoDS.TopoDS_Shape_Reverse(self, *args)
+        return _TopoDS.TopoDS_Shape_Reverse(self)
 
-    def Reversed(self, *args) -> "TopoDS_Shape" :
+    def Reversed(self):
         """
         * Returns a shape similar to <self> with the orientation reversed, using the Reverse method from the TopAbs package.
 
         :rtype: TopoDS_Shape
 
         """
-        return _TopoDS.TopoDS_Shape_Reversed(self, *args)
+        return _TopoDS.TopoDS_Shape_Reversed(self)
 
-    def Complement(self, *args) -> "void" :
+    def Complement(self):
         """
         * Complements the orientation, using the Complement method from the TopAbs package.
 
         :rtype: None
 
         """
-        return _TopoDS.TopoDS_Shape_Complement(self, *args)
+        return _TopoDS.TopoDS_Shape_Complement(self)
 
-    def Complemented(self, *args) -> "TopoDS_Shape" :
+    def Complemented(self):
         """
         * Returns a shape similar to <self> with the orientation complemented, using the Complement method from the TopAbs package.
 
         :rtype: TopoDS_Shape
 
         """
-        return _TopoDS.TopoDS_Shape_Complemented(self, *args)
+        return _TopoDS.TopoDS_Shape_Complemented(self)
 
-    def Compose(self, *args) -> "void" :
+    def Compose(self, *args):
         """
         * Updates the Shape Orientation by composition with <Orient>, using the Compose method from the TopAbs package.
 
@@ -1218,7 +1257,7 @@ class TopoDS_Shape(object):
         """
         return _TopoDS.TopoDS_Shape_Compose(self, *args)
 
-    def Composed(self, *args) -> "TopoDS_Shape" :
+    def Composed(self, *args):
         """
         * Returns a shape similar to <self> with the orientation composed with <Orient>, using the Compose method from the TopAbs package.
 
@@ -1229,7 +1268,7 @@ class TopoDS_Shape(object):
         """
         return _TopoDS.TopoDS_Shape_Composed(self, *args)
 
-    def IsPartner(self, *args) -> "Standard_Boolean" :
+    def IsPartner(self, *args):
         """
         * Returns True if two shapes are partners, i.e. if they share the same TShape. Locations and Orientations may differ.
 
@@ -1240,7 +1279,7 @@ class TopoDS_Shape(object):
         """
         return _TopoDS.TopoDS_Shape_IsPartner(self, *args)
 
-    def IsSame(self, *args) -> "Standard_Boolean" :
+    def IsSame(self, *args):
         """
         * Returns True if two shapes are same, i.e. if they share the same TShape with the same Locations. Orientations may differ.
 
@@ -1251,7 +1290,7 @@ class TopoDS_Shape(object):
         """
         return _TopoDS.TopoDS_Shape_IsSame(self, *args)
 
-    def IsEqual(self, *args) -> "Standard_Boolean" :
+    def IsEqual(self, *args):
         """
         * Returns True if two shapes are equal, i.e. if they share the same TShape with the same Locations and Orientations.
 
@@ -1262,7 +1301,7 @@ class TopoDS_Shape(object):
         """
         return _TopoDS.TopoDS_Shape_IsEqual(self, *args)
 
-    def __eq_wrapper__(self, *args) -> "bool" :
+    def __eq_wrapper__(self, *args):
         """__eq_wrapper__(TopoDS_Shape self, TopoDS_Shape other) -> bool"""
         return _TopoDS.TopoDS_Shape___eq_wrapper__(self, *args)
 
@@ -1272,7 +1311,7 @@ class TopoDS_Shape(object):
         except:
             return False
 
-    def IsNotEqual(self, *args) -> "Standard_Boolean" :
+    def IsNotEqual(self, *args):
         """
         * Negation of the IsEqual method.
 
@@ -1283,7 +1322,7 @@ class TopoDS_Shape(object):
         """
         return _TopoDS.TopoDS_Shape_IsNotEqual(self, *args)
 
-    def __ne_wrapper__(self, *args) -> "bool" :
+    def __ne_wrapper__(self, *args):
         """__ne_wrapper__(TopoDS_Shape self, TopoDS_Shape other) -> bool"""
         return _TopoDS.TopoDS_Shape___ne_wrapper__(self, *args)
 
@@ -1293,40 +1332,40 @@ class TopoDS_Shape(object):
         except:
             return True
 
-    def HashCode(self, *args) -> "Standard_Integer" :
+    def HashCode(self, *args):
         """
         * Returns a hashed value denoting <self>. This value is in the range 1..<Upper>. It is computed from the TShape and the Location. The Orientation is not used.
 
         :param Upper:
-        :type Upper: int
+        :type Upper: Standard_Integer
         :rtype: int
 
         """
         return _TopoDS.TopoDS_Shape_HashCode(self, *args)
 
-    def __hash__(self) -> "Standard_Integer" :
+    def __hash__(self):
         """__hash__(TopoDS_Shape self) -> Standard_Integer"""
         return _TopoDS.TopoDS_Shape___hash__(self)
 
-    def EmptyCopy(self, *args) -> "void" :
+    def EmptyCopy(self):
         """
         * Replace <self> by a new Shape with the same Orientation and Location and a new TShape with the same geometry and no sub-shapes.
 
         :rtype: None
 
         """
-        return _TopoDS.TopoDS_Shape_EmptyCopy(self, *args)
+        return _TopoDS.TopoDS_Shape_EmptyCopy(self)
 
-    def EmptyCopied(self, *args) -> "TopoDS_Shape" :
+    def EmptyCopied(self):
         """
         * Returns a new Shape with the same Orientation and Location and a new TShape with the same geometry and no sub-shapes.
 
         :rtype: TopoDS_Shape
 
         """
-        return _TopoDS.TopoDS_Shape_EmptyCopied(self, *args)
+        return _TopoDS.TopoDS_Shape_EmptyCopied(self)
 
-    def TShape(self, *args) -> "void" :
+    def TShape(self, *args):
         """
         :rtype: Handle_TopoDS_TShape
 
@@ -1337,7 +1376,7 @@ class TopoDS_Shape(object):
         """
         return _TopoDS.TopoDS_Shape_TShape(self, *args)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(TopoDS_Shape self)"""
         return _TopoDS.TopoDS_Shape__kill_pointed(self)
 
@@ -1407,7 +1446,7 @@ class TopoDS_TShape(OCC.MMgt.MMgt_TShared):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def Free(self, *args) -> "void" :
+    def Free(self, *args):
         """
         * Returns the free flag.
 
@@ -1422,7 +1461,7 @@ class TopoDS_TShape(OCC.MMgt.MMgt_TShared):
         """
         return _TopoDS.TopoDS_TShape_Free(self, *args)
 
-    def Modified(self, *args) -> "void" :
+    def Modified(self, *args):
         """
         * Returns the modification flag.
 
@@ -1437,7 +1476,7 @@ class TopoDS_TShape(OCC.MMgt.MMgt_TShared):
         """
         return _TopoDS.TopoDS_TShape_Modified(self, *args)
 
-    def Checked(self, *args) -> "void" :
+    def Checked(self, *args):
         """
         * Returns the checked flag.
 
@@ -1452,7 +1491,7 @@ class TopoDS_TShape(OCC.MMgt.MMgt_TShared):
         """
         return _TopoDS.TopoDS_TShape_Checked(self, *args)
 
-    def Orientable(self, *args) -> "void" :
+    def Orientable(self, *args):
         """
         * Returns the orientability flag.
 
@@ -1467,7 +1506,7 @@ class TopoDS_TShape(OCC.MMgt.MMgt_TShared):
         """
         return _TopoDS.TopoDS_TShape_Orientable(self, *args)
 
-    def Closed(self, *args) -> "void" :
+    def Closed(self, *args):
         """
         * Returns the closedness flag.
 
@@ -1482,7 +1521,7 @@ class TopoDS_TShape(OCC.MMgt.MMgt_TShared):
         """
         return _TopoDS.TopoDS_TShape_Closed(self, *args)
 
-    def Infinite(self, *args) -> "void" :
+    def Infinite(self, *args):
         """
         * Returns the infinity flag.
 
@@ -1497,7 +1536,7 @@ class TopoDS_TShape(OCC.MMgt.MMgt_TShared):
         """
         return _TopoDS.TopoDS_TShape_Infinite(self, *args)
 
-    def Convex(self, *args) -> "void" :
+    def Convex(self, *args):
         """
         * Returns the convexness flag.
 
@@ -1512,29 +1551,29 @@ class TopoDS_TShape(OCC.MMgt.MMgt_TShared):
         """
         return _TopoDS.TopoDS_TShape_Convex(self, *args)
 
-    def ShapeType(self, *args) -> "TopAbs_ShapeEnum" :
+    def ShapeType(self):
         """
         * Returns the type as a term of the ShapeEnum enum : VERTEX, EDGE, WIRE, FACE, ....
 
         :rtype: TopAbs_ShapeEnum
 
         """
-        return _TopoDS.TopoDS_TShape_ShapeType(self, *args)
+        return _TopoDS.TopoDS_TShape_ShapeType(self)
 
-    def EmptyCopy(self, *args) -> "Handle_TopoDS_TShape" :
+    def EmptyCopy(self):
         """
         * Returns a copy of the TShape with no sub-shapes.
 
         :rtype: Handle_TopoDS_TShape
 
         """
-        return _TopoDS.TopoDS_TShape_EmptyCopy(self, *args)
+        return _TopoDS.TopoDS_TShape_EmptyCopy(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(TopoDS_TShape self)"""
         return _TopoDS.TopoDS_TShape__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_TopoDS_TShape" :
+    def GetHandle(self):
         """GetHandle(TopoDS_TShape self) -> Handle_TopoDS_TShape"""
         return _TopoDS.TopoDS_TShape_GetHandle(self)
 
@@ -1581,22 +1620,22 @@ Handle_TopoDS_TShape._kill_pointed = new_instancemethod(_TopoDS.Handle_TopoDS_TS
 Handle_TopoDS_TShape_swigregister = _TopoDS.Handle_TopoDS_TShape_swigregister
 Handle_TopoDS_TShape_swigregister(Handle_TopoDS_TShape)
 
-def Handle_TopoDS_TShape_DownCast(*args) -> "Handle_TopoDS_TShape const" :
+def Handle_TopoDS_TShape_DownCast(*args):
   return _TopoDS.Handle_TopoDS_TShape_DownCast(*args)
 Handle_TopoDS_TShape_DownCast = _TopoDS.Handle_TopoDS_TShape_DownCast
 
 class TopoDS_CompSolid(TopoDS_Shape):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         * Constructs an Undefined CompSolid.
 
         :rtype: None
 
         """
-        _TopoDS.TopoDS_CompSolid_swiginit(self,_TopoDS.new_TopoDS_CompSolid(*args))
-    def _kill_pointed(self) -> "void" :
+        _TopoDS.TopoDS_CompSolid_swiginit(self,_TopoDS.new_TopoDS_CompSolid())
+    def _kill_pointed(self):
         """_kill_pointed(TopoDS_CompSolid self)"""
         return _TopoDS.TopoDS_CompSolid__kill_pointed(self)
 
@@ -1615,15 +1654,15 @@ TopoDS_CompSolid_swigregister(TopoDS_CompSolid)
 class TopoDS_Compound(TopoDS_Shape):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         * Constructs an Undefined Compound.
 
         :rtype: None
 
         """
-        _TopoDS.TopoDS_Compound_swiginit(self,_TopoDS.new_TopoDS_Compound(*args))
-    def _kill_pointed(self) -> "void" :
+        _TopoDS.TopoDS_Compound_swiginit(self,_TopoDS.new_TopoDS_Compound())
+    def _kill_pointed(self):
         """_kill_pointed(TopoDS_Compound self)"""
         return _TopoDS.TopoDS_Compound__kill_pointed(self)
 
@@ -1642,15 +1681,15 @@ TopoDS_Compound_swigregister(TopoDS_Compound)
 class TopoDS_Edge(TopoDS_Shape):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         * Undefined Edge.
 
         :rtype: None
 
         """
-        _TopoDS.TopoDS_Edge_swiginit(self,_TopoDS.new_TopoDS_Edge(*args))
-    def _kill_pointed(self) -> "void" :
+        _TopoDS.TopoDS_Edge_swiginit(self,_TopoDS.new_TopoDS_Edge())
+    def _kill_pointed(self):
         """_kill_pointed(TopoDS_Edge self)"""
         return _TopoDS.TopoDS_Edge__kill_pointed(self)
 
@@ -1669,15 +1708,15 @@ TopoDS_Edge_swigregister(TopoDS_Edge)
 class TopoDS_Face(TopoDS_Shape):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         * Undefined Face.
 
         :rtype: None
 
         """
-        _TopoDS.TopoDS_Face_swiginit(self,_TopoDS.new_TopoDS_Face(*args))
-    def _kill_pointed(self) -> "void" :
+        _TopoDS.TopoDS_Face_swiginit(self,_TopoDS.new_TopoDS_Face())
+    def _kill_pointed(self):
         """_kill_pointed(TopoDS_Face self)"""
         return _TopoDS.TopoDS_Face__kill_pointed(self)
 
@@ -1696,15 +1735,15 @@ TopoDS_Face_swigregister(TopoDS_Face)
 class TopoDS_Shell(TopoDS_Shape):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         * Constructs an Undefined Shell.
 
         :rtype: None
 
         """
-        _TopoDS.TopoDS_Shell_swiginit(self,_TopoDS.new_TopoDS_Shell(*args))
-    def _kill_pointed(self) -> "void" :
+        _TopoDS.TopoDS_Shell_swiginit(self,_TopoDS.new_TopoDS_Shell())
+    def _kill_pointed(self):
         """_kill_pointed(TopoDS_Shell self)"""
         return _TopoDS.TopoDS_Shell__kill_pointed(self)
 
@@ -1723,15 +1762,15 @@ TopoDS_Shell_swigregister(TopoDS_Shell)
 class TopoDS_Solid(TopoDS_Shape):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         * Constructs an Undefined Solid.
 
         :rtype: None
 
         """
-        _TopoDS.TopoDS_Solid_swiginit(self,_TopoDS.new_TopoDS_Solid(*args))
-    def _kill_pointed(self) -> "void" :
+        _TopoDS.TopoDS_Solid_swiginit(self,_TopoDS.new_TopoDS_Solid())
+    def _kill_pointed(self):
         """_kill_pointed(TopoDS_Solid self)"""
         return _TopoDS.TopoDS_Solid__kill_pointed(self)
 
@@ -1750,19 +1789,19 @@ TopoDS_Solid_swigregister(TopoDS_Solid)
 class TopoDS_TCompSolid(TopoDS_TShape):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         * Creates an empty TCompSolid.
 
         :rtype: None
 
         """
-        _TopoDS.TopoDS_TCompSolid_swiginit(self,_TopoDS.new_TopoDS_TCompSolid(*args))
-    def _kill_pointed(self) -> "void" :
+        _TopoDS.TopoDS_TCompSolid_swiginit(self,_TopoDS.new_TopoDS_TCompSolid())
+    def _kill_pointed(self):
         """_kill_pointed(TopoDS_TCompSolid self)"""
         return _TopoDS.TopoDS_TCompSolid__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_TopoDS_TCompSolid" :
+    def GetHandle(self):
         """GetHandle(TopoDS_TCompSolid self) -> Handle_TopoDS_TCompSolid"""
         return _TopoDS.TopoDS_TCompSolid_GetHandle(self)
 
@@ -1800,26 +1839,26 @@ Handle_TopoDS_TCompSolid._kill_pointed = new_instancemethod(_TopoDS.Handle_TopoD
 Handle_TopoDS_TCompSolid_swigregister = _TopoDS.Handle_TopoDS_TCompSolid_swigregister
 Handle_TopoDS_TCompSolid_swigregister(Handle_TopoDS_TCompSolid)
 
-def Handle_TopoDS_TCompSolid_DownCast(*args) -> "Handle_TopoDS_TCompSolid const" :
+def Handle_TopoDS_TCompSolid_DownCast(*args):
   return _TopoDS.Handle_TopoDS_TCompSolid_DownCast(*args)
 Handle_TopoDS_TCompSolid_DownCast = _TopoDS.Handle_TopoDS_TCompSolid_DownCast
 
 class TopoDS_TCompound(TopoDS_TShape):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         * Creates an empty TCompound.
 
         :rtype: None
 
         """
-        _TopoDS.TopoDS_TCompound_swiginit(self,_TopoDS.new_TopoDS_TCompound(*args))
-    def _kill_pointed(self) -> "void" :
+        _TopoDS.TopoDS_TCompound_swiginit(self,_TopoDS.new_TopoDS_TCompound())
+    def _kill_pointed(self):
         """_kill_pointed(TopoDS_TCompound self)"""
         return _TopoDS.TopoDS_TCompound__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_TopoDS_TCompound" :
+    def GetHandle(self):
         """GetHandle(TopoDS_TCompound self) -> Handle_TopoDS_TCompound"""
         return _TopoDS.TopoDS_TCompound_GetHandle(self)
 
@@ -1857,7 +1896,7 @@ Handle_TopoDS_TCompound._kill_pointed = new_instancemethod(_TopoDS.Handle_TopoDS
 Handle_TopoDS_TCompound_swigregister = _TopoDS.Handle_TopoDS_TCompound_swigregister
 Handle_TopoDS_TCompound_swigregister(Handle_TopoDS_TCompound)
 
-def Handle_TopoDS_TCompound_DownCast(*args) -> "Handle_TopoDS_TCompound const" :
+def Handle_TopoDS_TCompound_DownCast(*args):
   return _TopoDS.Handle_TopoDS_TCompound_DownCast(*args)
 Handle_TopoDS_TCompound_DownCast = _TopoDS.Handle_TopoDS_TCompound_DownCast
 
@@ -1865,11 +1904,11 @@ class TopoDS_TEdge(TopoDS_TShape):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(TopoDS_TEdge self)"""
         return _TopoDS.TopoDS_TEdge__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_TopoDS_TEdge" :
+    def GetHandle(self):
         """GetHandle(TopoDS_TEdge self) -> Handle_TopoDS_TEdge"""
         return _TopoDS.TopoDS_TEdge_GetHandle(self)
 
@@ -1907,26 +1946,26 @@ Handle_TopoDS_TEdge._kill_pointed = new_instancemethod(_TopoDS.Handle_TopoDS_TEd
 Handle_TopoDS_TEdge_swigregister = _TopoDS.Handle_TopoDS_TEdge_swigregister
 Handle_TopoDS_TEdge_swigregister(Handle_TopoDS_TEdge)
 
-def Handle_TopoDS_TEdge_DownCast(*args) -> "Handle_TopoDS_TEdge const" :
+def Handle_TopoDS_TEdge_DownCast(*args):
   return _TopoDS.Handle_TopoDS_TEdge_DownCast(*args)
 Handle_TopoDS_TEdge_DownCast = _TopoDS.Handle_TopoDS_TEdge_DownCast
 
 class TopoDS_TFace(TopoDS_TShape):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         * Creates an empty TFace.
 
         :rtype: None
 
         """
-        _TopoDS.TopoDS_TFace_swiginit(self,_TopoDS.new_TopoDS_TFace(*args))
-    def _kill_pointed(self) -> "void" :
+        _TopoDS.TopoDS_TFace_swiginit(self,_TopoDS.new_TopoDS_TFace())
+    def _kill_pointed(self):
         """_kill_pointed(TopoDS_TFace self)"""
         return _TopoDS.TopoDS_TFace__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_TopoDS_TFace" :
+    def GetHandle(self):
         """GetHandle(TopoDS_TFace self) -> Handle_TopoDS_TFace"""
         return _TopoDS.TopoDS_TFace_GetHandle(self)
 
@@ -1964,26 +2003,26 @@ Handle_TopoDS_TFace._kill_pointed = new_instancemethod(_TopoDS.Handle_TopoDS_TFa
 Handle_TopoDS_TFace_swigregister = _TopoDS.Handle_TopoDS_TFace_swigregister
 Handle_TopoDS_TFace_swigregister(Handle_TopoDS_TFace)
 
-def Handle_TopoDS_TFace_DownCast(*args) -> "Handle_TopoDS_TFace const" :
+def Handle_TopoDS_TFace_DownCast(*args):
   return _TopoDS.Handle_TopoDS_TFace_DownCast(*args)
 Handle_TopoDS_TFace_DownCast = _TopoDS.Handle_TopoDS_TFace_DownCast
 
 class TopoDS_TShell(TopoDS_TShape):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         * Creates an empty TShell.
 
         :rtype: None
 
         """
-        _TopoDS.TopoDS_TShell_swiginit(self,_TopoDS.new_TopoDS_TShell(*args))
-    def _kill_pointed(self) -> "void" :
+        _TopoDS.TopoDS_TShell_swiginit(self,_TopoDS.new_TopoDS_TShell())
+    def _kill_pointed(self):
         """_kill_pointed(TopoDS_TShell self)"""
         return _TopoDS.TopoDS_TShell__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_TopoDS_TShell" :
+    def GetHandle(self):
         """GetHandle(TopoDS_TShell self) -> Handle_TopoDS_TShell"""
         return _TopoDS.TopoDS_TShell_GetHandle(self)
 
@@ -2021,26 +2060,26 @@ Handle_TopoDS_TShell._kill_pointed = new_instancemethod(_TopoDS.Handle_TopoDS_TS
 Handle_TopoDS_TShell_swigregister = _TopoDS.Handle_TopoDS_TShell_swigregister
 Handle_TopoDS_TShell_swigregister(Handle_TopoDS_TShell)
 
-def Handle_TopoDS_TShell_DownCast(*args) -> "Handle_TopoDS_TShell const" :
+def Handle_TopoDS_TShell_DownCast(*args):
   return _TopoDS.Handle_TopoDS_TShell_DownCast(*args)
 Handle_TopoDS_TShell_DownCast = _TopoDS.Handle_TopoDS_TShell_DownCast
 
 class TopoDS_TSolid(TopoDS_TShape):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         * Creates an empty TSolid.
 
         :rtype: None
 
         """
-        _TopoDS.TopoDS_TSolid_swiginit(self,_TopoDS.new_TopoDS_TSolid(*args))
-    def _kill_pointed(self) -> "void" :
+        _TopoDS.TopoDS_TSolid_swiginit(self,_TopoDS.new_TopoDS_TSolid())
+    def _kill_pointed(self):
         """_kill_pointed(TopoDS_TSolid self)"""
         return _TopoDS.TopoDS_TSolid__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_TopoDS_TSolid" :
+    def GetHandle(self):
         """GetHandle(TopoDS_TSolid self) -> Handle_TopoDS_TSolid"""
         return _TopoDS.TopoDS_TSolid_GetHandle(self)
 
@@ -2078,7 +2117,7 @@ Handle_TopoDS_TSolid._kill_pointed = new_instancemethod(_TopoDS.Handle_TopoDS_TS
 Handle_TopoDS_TSolid_swigregister = _TopoDS.Handle_TopoDS_TSolid_swigregister
 Handle_TopoDS_TSolid_swigregister(Handle_TopoDS_TSolid)
 
-def Handle_TopoDS_TSolid_DownCast(*args) -> "Handle_TopoDS_TSolid const" :
+def Handle_TopoDS_TSolid_DownCast(*args):
   return _TopoDS.Handle_TopoDS_TSolid_DownCast(*args)
 Handle_TopoDS_TSolid_DownCast = _TopoDS.Handle_TopoDS_TSolid_DownCast
 
@@ -2086,11 +2125,11 @@ class TopoDS_TVertex(TopoDS_TShape):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(TopoDS_TVertex self)"""
         return _TopoDS.TopoDS_TVertex__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_TopoDS_TVertex" :
+    def GetHandle(self):
         """GetHandle(TopoDS_TVertex self) -> Handle_TopoDS_TVertex"""
         return _TopoDS.TopoDS_TVertex_GetHandle(self)
 
@@ -2128,26 +2167,26 @@ Handle_TopoDS_TVertex._kill_pointed = new_instancemethod(_TopoDS.Handle_TopoDS_T
 Handle_TopoDS_TVertex_swigregister = _TopoDS.Handle_TopoDS_TVertex_swigregister
 Handle_TopoDS_TVertex_swigregister(Handle_TopoDS_TVertex)
 
-def Handle_TopoDS_TVertex_DownCast(*args) -> "Handle_TopoDS_TVertex const" :
+def Handle_TopoDS_TVertex_DownCast(*args):
   return _TopoDS.Handle_TopoDS_TVertex_DownCast(*args)
 Handle_TopoDS_TVertex_DownCast = _TopoDS.Handle_TopoDS_TVertex_DownCast
 
 class TopoDS_TWire(TopoDS_TShape):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         * Creates an empty TWire.
 
         :rtype: None
 
         """
-        _TopoDS.TopoDS_TWire_swiginit(self,_TopoDS.new_TopoDS_TWire(*args))
-    def _kill_pointed(self) -> "void" :
+        _TopoDS.TopoDS_TWire_swiginit(self,_TopoDS.new_TopoDS_TWire())
+    def _kill_pointed(self):
         """_kill_pointed(TopoDS_TWire self)"""
         return _TopoDS.TopoDS_TWire__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_TopoDS_TWire" :
+    def GetHandle(self):
         """GetHandle(TopoDS_TWire self) -> Handle_TopoDS_TWire"""
         return _TopoDS.TopoDS_TWire_GetHandle(self)
 
@@ -2185,7 +2224,7 @@ Handle_TopoDS_TWire._kill_pointed = new_instancemethod(_TopoDS.Handle_TopoDS_TWi
 Handle_TopoDS_TWire_swigregister = _TopoDS.Handle_TopoDS_TWire_swigregister
 Handle_TopoDS_TWire_swigregister(Handle_TopoDS_TWire)
 
-def Handle_TopoDS_TWire_DownCast(*args) -> "Handle_TopoDS_TWire const" :
+def Handle_TopoDS_TWire_DownCast(*args):
   return _TopoDS.Handle_TopoDS_TWire_DownCast(*args)
 Handle_TopoDS_TWire_DownCast = _TopoDS.Handle_TopoDS_TWire_DownCast
 
@@ -2201,7 +2240,7 @@ class TopoDS_Vertex(TopoDS_Shape):
 
         """
         _TopoDS.TopoDS_Vertex_swiginit(self,_TopoDS.new_TopoDS_Vertex(*args))
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(TopoDS_Vertex self)"""
         return _TopoDS.TopoDS_Vertex__kill_pointed(self)
 
@@ -2220,15 +2259,15 @@ TopoDS_Vertex_swigregister(TopoDS_Vertex)
 class TopoDS_Wire(TopoDS_Shape):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         * Undefined Wire.
 
         :rtype: None
 
         """
-        _TopoDS.TopoDS_Wire_swiginit(self,_TopoDS.new_TopoDS_Wire(*args))
-    def _kill_pointed(self) -> "void" :
+        _TopoDS.TopoDS_Wire_swiginit(self,_TopoDS.new_TopoDS_Wire())
+    def _kill_pointed(self):
         """_kill_pointed(TopoDS_Wire self)"""
         return _TopoDS.TopoDS_Wire__kill_pointed(self)
 

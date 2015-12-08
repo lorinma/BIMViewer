@@ -152,8 +152,9 @@ BRepFill_Contact = _BRepFill.BRepFill_Contact
 BRepFill_ContactOnBorder = _BRepFill.BRepFill_ContactOnBorder
 class brepfill(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
+    def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def Face(*args) -> "TopoDS_Face" :
+    def Face(*args):
         """
         * Computes a ruled surface between two edges.
 
@@ -167,7 +168,7 @@ class brepfill(object):
         return _BRepFill.brepfill_Face(*args)
 
     Face = staticmethod(Face)
-    def Shell(*args) -> "TopoDS_Shell" :
+    def Shell(*args):
         """
         * Computes a ruled surface between two wires. The wires must have the same number of edges.
 
@@ -181,7 +182,7 @@ class brepfill(object):
         return _BRepFill.brepfill_Shell(*args)
 
     Shell = staticmethod(Shell)
-    def Axe(*args) -> "Standard_Boolean &" :
+    def Axe(*args):
         """
         * Computes <AxeProf> as Follow. <Location> is the Position of the nearest vertex V of <Profile> to <Spine>.<XDirection> is confused with the tangent to <Spine> at the projected point of V on the Spine. <Direction> is normal to <Spine>. <Spine> is a plane wire or a plane face.
 
@@ -201,7 +202,7 @@ class brepfill(object):
         return _BRepFill.brepfill_Axe(*args)
 
     Axe = staticmethod(Axe)
-    def ComputeACR(*args) -> "void" :
+    def ComputeACR(*args):
         """
         * Compute ACR on a wire
 
@@ -215,7 +216,7 @@ class brepfill(object):
         return _BRepFill.brepfill_ComputeACR(*args)
 
     ComputeACR = staticmethod(ComputeACR)
-    def InsertACR(*args) -> "TopoDS_Wire" :
+    def InsertACR(*args):
         """
         * Insert ACR on a wire
 
@@ -231,8 +232,6 @@ class brepfill(object):
         return _BRepFill.brepfill_InsertACR(*args)
 
     InsertACR = staticmethod(InsertACR)
-    def __init__(self): 
-        _BRepFill.brepfill_swiginit(self,_BRepFill.new_brepfill())
     def __del__(self):
     	try:
     		self.thisown = False
@@ -245,7 +244,7 @@ brepfill._kill_pointed = new_instancemethod(_BRepFill.brepfill__kill_pointed,Non
 brepfill_swigregister = _BRepFill.brepfill_swigregister
 brepfill_swigregister(brepfill)
 
-def brepfill_Face(*args) -> "TopoDS_Face" :
+def brepfill_Face(*args):
   """
     * Computes a ruled surface between two edges.
 
@@ -258,7 +257,7 @@ def brepfill_Face(*args) -> "TopoDS_Face" :
     """
   return _BRepFill.brepfill_Face(*args)
 
-def brepfill_Shell(*args) -> "TopoDS_Shell" :
+def brepfill_Shell(*args):
   """
     * Computes a ruled surface between two wires. The wires must have the same number of edges.
 
@@ -271,7 +270,7 @@ def brepfill_Shell(*args) -> "TopoDS_Shell" :
     """
   return _BRepFill.brepfill_Shell(*args)
 
-def brepfill_Axe(*args) -> "Standard_Boolean &" :
+def brepfill_Axe(*args):
   """
     * Computes <AxeProf> as Follow. <Location> is the Position of the nearest vertex V of <Profile> to <Spine>.<XDirection> is confused with the tangent to <Spine> at the projected point of V on the Spine. <Direction> is normal to <Spine>. <Spine> is a plane wire or a plane face.
 
@@ -290,7 +289,7 @@ def brepfill_Axe(*args) -> "Standard_Boolean &" :
     """
   return _BRepFill.brepfill_Axe(*args)
 
-def brepfill_ComputeACR(*args) -> "void" :
+def brepfill_ComputeACR(*args):
   """
     * Compute ACR on a wire
 
@@ -303,7 +302,7 @@ def brepfill_ComputeACR(*args) -> "void" :
     """
   return _BRepFill.brepfill_ComputeACR(*args)
 
-def brepfill_InsertACR(*args) -> "TopoDS_Wire" :
+def brepfill_InsertACR(*args):
   """
     * Insert ACR on a wire
 
@@ -331,7 +330,7 @@ class BRepFill_ApproxSeewing(object):
 
         """
         _BRepFill.BRepFill_ApproxSeewing_swiginit(self,_BRepFill.new_BRepFill_ApproxSeewing(*args))
-    def Perform(self, *args) -> "void" :
+    def Perform(self, *args):
         """
         :param ML:
         :type ML: BRepFill_MultiLine &
@@ -340,39 +339,39 @@ class BRepFill_ApproxSeewing(object):
         """
         return _BRepFill.BRepFill_ApproxSeewing_Perform(self, *args)
 
-    def IsDone(self, *args) -> "Standard_Boolean" :
+    def IsDone(self):
         """
         :rtype: bool
 
         """
-        return _BRepFill.BRepFill_ApproxSeewing_IsDone(self, *args)
+        return _BRepFill.BRepFill_ApproxSeewing_IsDone(self)
 
-    def Curve(self, *args) -> "Handle_Geom_Curve const &" :
+    def Curve(self):
         """
         * returns the approximation of the 3d Curve
 
         :rtype: Handle_Geom_Curve
 
         """
-        return _BRepFill.BRepFill_ApproxSeewing_Curve(self, *args)
+        return _BRepFill.BRepFill_ApproxSeewing_Curve(self)
 
-    def CurveOnF1(self, *args) -> "Handle_Geom2d_Curve const &" :
+    def CurveOnF1(self):
         """
         * returns the approximation of the PCurve on the first face of the MultiLine
 
         :rtype: Handle_Geom2d_Curve
 
         """
-        return _BRepFill.BRepFill_ApproxSeewing_CurveOnF1(self, *args)
+        return _BRepFill.BRepFill_ApproxSeewing_CurveOnF1(self)
 
-    def CurveOnF2(self, *args) -> "Handle_Geom2d_Curve const &" :
+    def CurveOnF2(self):
         """
         * returns the approximation of the PCurve on the first face of the MultiLine
 
         :rtype: Handle_Geom2d_Curve
 
         """
-        return _BRepFill.BRepFill_ApproxSeewing_CurveOnF2(self, *args)
+        return _BRepFill.BRepFill_ApproxSeewing_CurveOnF2(self)
 
     def __del__(self):
     	try:
@@ -404,7 +403,7 @@ class BRepFill_CompatibleWires(object):
 
         """
         _BRepFill.BRepFill_CompatibleWires_swiginit(self,_BRepFill.new_BRepFill_CompatibleWires(*args))
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
         :param Sections:
         :type Sections: TopTools_SequenceOfShape &
@@ -413,17 +412,27 @@ class BRepFill_CompatibleWires(object):
         """
         return _BRepFill.BRepFill_CompatibleWires_Init(self, *args)
 
-    def SetPercent(self, *args) -> "void" :
+    def SetPercent(self, percent=0.01):
         """
         :param percent: default value is 0.01
         :type percent: float
         :rtype: None
 
-        """
-        return _BRepFill.BRepFill_CompatibleWires_SetPercent(self, *args)
+        :param percent: default value is 0.01
+        :type percent: float
+        :rtype: None
 
-    def Perform(self, *args) -> "void" :
         """
+        return _BRepFill.BRepFill_CompatibleWires_SetPercent(self, percent)
+
+    def Perform(self, *args):
+        """
+        * Performs CompatibleWires According to the orientation and the origin of each other
+
+        :param WithRotation: default value is Standard_True
+        :type WithRotation: bool
+        :rtype: None
+
         * Performs CompatibleWires According to the orientation and the origin of each other
 
         :param WithRotation: default value is Standard_True
@@ -433,23 +442,23 @@ class BRepFill_CompatibleWires(object):
         """
         return _BRepFill.BRepFill_CompatibleWires_Perform(self, *args)
 
-    def IsDone(self, *args) -> "Standard_Boolean" :
+    def IsDone(self):
         """
         :rtype: bool
 
         """
-        return _BRepFill.BRepFill_CompatibleWires_IsDone(self, *args)
+        return _BRepFill.BRepFill_CompatibleWires_IsDone(self)
 
-    def Shape(self, *args) -> "TopTools_SequenceOfShape const &" :
+    def Shape(self):
         """
         * returns the generated sequence.
 
         :rtype: TopTools_SequenceOfShape
 
         """
-        return _BRepFill.BRepFill_CompatibleWires_Shape(self, *args)
+        return _BRepFill.BRepFill_CompatibleWires_Shape(self)
 
-    def GeneratedShapes(self, *args) -> "TopTools_ListOfShape const &" :
+    def GeneratedShapes(self, *args):
         """
         * Returns the shapes created from a subshape <SubSection> of a section.
 
@@ -460,12 +469,12 @@ class BRepFill_CompatibleWires(object):
         """
         return _BRepFill.BRepFill_CompatibleWires_GeneratedShapes(self, *args)
 
-    def Generated(self, *args) -> "TopTools_DataMapOfShapeListOfShape const &" :
+    def Generated(self):
         """
         :rtype: TopTools_DataMapOfShapeListOfShape
 
         """
-        return _BRepFill.BRepFill_CompatibleWires_Generated(self, *args)
+        return _BRepFill.BRepFill_CompatibleWires_Generated(self)
 
     def __del__(self):
     	try:
@@ -494,9 +503,135 @@ class BRepFill_ComputeCLine(object):
         :param Line:
         :type Line: BRepFill_MultiLine &
         :param degreemin: default value is 3
-        :type degreemin: int
+        :type degreemin: Standard_Integer
         :param degreemax: default value is 8
-        :type degreemax: int
+        :type degreemax: Standard_Integer
+        :param Tolerance3d: default value is 1.0e-5
+        :type Tolerance3d: float
+        :param Tolerance2d: default value is 1.0e-5
+        :type Tolerance2d: float
+        :param cutting: default value is Standard_False
+        :type cutting: bool
+        :param FirstC: default value is AppParCurves_TangencyPoint
+        :type FirstC: AppParCurves_Constraint
+        :param LastC: default value is AppParCurves_TangencyPoint
+        :type LastC: AppParCurves_Constraint
+        :rtype: None
+
+        :param Line:
+        :type Line: BRepFill_MultiLine &
+        :param degreemin: default value is 3
+        :type degreemin: Standard_Integer
+        :param degreemax: default value is 8
+        :type degreemax: Standard_Integer
+        :param Tolerance3d: default value is 1.0e-5
+        :type Tolerance3d: float
+        :param Tolerance2d: default value is 1.0e-5
+        :type Tolerance2d: float
+        :param cutting: default value is Standard_False
+        :type cutting: bool
+        :param FirstC: default value is AppParCurves_TangencyPoint
+        :type FirstC: AppParCurves_Constraint
+        :param LastC: default value is AppParCurves_TangencyPoint
+        :type LastC: AppParCurves_Constraint
+        :rtype: None
+
+        :param Line:
+        :type Line: BRepFill_MultiLine &
+        :param degreemin: default value is 3
+        :type degreemin: Standard_Integer
+        :param degreemax: default value is 8
+        :type degreemax: Standard_Integer
+        :param Tolerance3d: default value is 1.0e-5
+        :type Tolerance3d: float
+        :param Tolerance2d: default value is 1.0e-5
+        :type Tolerance2d: float
+        :param cutting: default value is Standard_False
+        :type cutting: bool
+        :param FirstC: default value is AppParCurves_TangencyPoint
+        :type FirstC: AppParCurves_Constraint
+        :param LastC: default value is AppParCurves_TangencyPoint
+        :type LastC: AppParCurves_Constraint
+        :rtype: None
+
+        :param Line:
+        :type Line: BRepFill_MultiLine &
+        :param degreemin: default value is 3
+        :type degreemin: Standard_Integer
+        :param degreemax: default value is 8
+        :type degreemax: Standard_Integer
+        :param Tolerance3d: default value is 1.0e-5
+        :type Tolerance3d: float
+        :param Tolerance2d: default value is 1.0e-5
+        :type Tolerance2d: float
+        :param cutting: default value is Standard_False
+        :type cutting: bool
+        :param FirstC: default value is AppParCurves_TangencyPoint
+        :type FirstC: AppParCurves_Constraint
+        :param LastC: default value is AppParCurves_TangencyPoint
+        :type LastC: AppParCurves_Constraint
+        :rtype: None
+
+        :param Line:
+        :type Line: BRepFill_MultiLine &
+        :param degreemin: default value is 3
+        :type degreemin: Standard_Integer
+        :param degreemax: default value is 8
+        :type degreemax: Standard_Integer
+        :param Tolerance3d: default value is 1.0e-5
+        :type Tolerance3d: float
+        :param Tolerance2d: default value is 1.0e-5
+        :type Tolerance2d: float
+        :param cutting: default value is Standard_False
+        :type cutting: bool
+        :param FirstC: default value is AppParCurves_TangencyPoint
+        :type FirstC: AppParCurves_Constraint
+        :param LastC: default value is AppParCurves_TangencyPoint
+        :type LastC: AppParCurves_Constraint
+        :rtype: None
+
+        :param Line:
+        :type Line: BRepFill_MultiLine &
+        :param degreemin: default value is 3
+        :type degreemin: Standard_Integer
+        :param degreemax: default value is 8
+        :type degreemax: Standard_Integer
+        :param Tolerance3d: default value is 1.0e-5
+        :type Tolerance3d: float
+        :param Tolerance2d: default value is 1.0e-5
+        :type Tolerance2d: float
+        :param cutting: default value is Standard_False
+        :type cutting: bool
+        :param FirstC: default value is AppParCurves_TangencyPoint
+        :type FirstC: AppParCurves_Constraint
+        :param LastC: default value is AppParCurves_TangencyPoint
+        :type LastC: AppParCurves_Constraint
+        :rtype: None
+
+        :param Line:
+        :type Line: BRepFill_MultiLine &
+        :param degreemin: default value is 3
+        :type degreemin: Standard_Integer
+        :param degreemax: default value is 8
+        :type degreemax: Standard_Integer
+        :param Tolerance3d: default value is 1.0e-5
+        :type Tolerance3d: float
+        :param Tolerance2d: default value is 1.0e-5
+        :type Tolerance2d: float
+        :param cutting: default value is Standard_False
+        :type cutting: bool
+        :param FirstC: default value is AppParCurves_TangencyPoint
+        :type FirstC: AppParCurves_Constraint
+        :param LastC: default value is AppParCurves_TangencyPoint
+        :type LastC: AppParCurves_Constraint
+        :rtype: None
+
+        :param Line:
+        :type Line: BRepFill_MultiLine &
+        :param degreemin: default value is 3
+        :type degreemin: Standard_Integer
+        :param degreemax: default value is 8
+        :type degreemax: Standard_Integer
         :param Tolerance3d: default value is 1.0e-5
         :type Tolerance3d: float
         :param Tolerance2d: default value is 1.0e-5
@@ -510,9 +645,121 @@ class BRepFill_ComputeCLine(object):
         :rtype: None
 
         :param degreemin: default value is 3
-        :type degreemin: int
+        :type degreemin: Standard_Integer
         :param degreemax: default value is 8
-        :type degreemax: int
+        :type degreemax: Standard_Integer
+        :param Tolerance3d: default value is 1.0e-05
+        :type Tolerance3d: float
+        :param Tolerance2d: default value is 1.0e-05
+        :type Tolerance2d: float
+        :param cutting: default value is Standard_False
+        :type cutting: bool
+        :param FirstC: default value is AppParCurves_TangencyPoint
+        :type FirstC: AppParCurves_Constraint
+        :param LastC: default value is AppParCurves_TangencyPoint
+        :type LastC: AppParCurves_Constraint
+        :rtype: None
+
+        :param degreemin: default value is 3
+        :type degreemin: Standard_Integer
+        :param degreemax: default value is 8
+        :type degreemax: Standard_Integer
+        :param Tolerance3d: default value is 1.0e-05
+        :type Tolerance3d: float
+        :param Tolerance2d: default value is 1.0e-05
+        :type Tolerance2d: float
+        :param cutting: default value is Standard_False
+        :type cutting: bool
+        :param FirstC: default value is AppParCurves_TangencyPoint
+        :type FirstC: AppParCurves_Constraint
+        :param LastC: default value is AppParCurves_TangencyPoint
+        :type LastC: AppParCurves_Constraint
+        :rtype: None
+
+        :param degreemin: default value is 3
+        :type degreemin: Standard_Integer
+        :param degreemax: default value is 8
+        :type degreemax: Standard_Integer
+        :param Tolerance3d: default value is 1.0e-05
+        :type Tolerance3d: float
+        :param Tolerance2d: default value is 1.0e-05
+        :type Tolerance2d: float
+        :param cutting: default value is Standard_False
+        :type cutting: bool
+        :param FirstC: default value is AppParCurves_TangencyPoint
+        :type FirstC: AppParCurves_Constraint
+        :param LastC: default value is AppParCurves_TangencyPoint
+        :type LastC: AppParCurves_Constraint
+        :rtype: None
+
+        :param degreemin: default value is 3
+        :type degreemin: Standard_Integer
+        :param degreemax: default value is 8
+        :type degreemax: Standard_Integer
+        :param Tolerance3d: default value is 1.0e-05
+        :type Tolerance3d: float
+        :param Tolerance2d: default value is 1.0e-05
+        :type Tolerance2d: float
+        :param cutting: default value is Standard_False
+        :type cutting: bool
+        :param FirstC: default value is AppParCurves_TangencyPoint
+        :type FirstC: AppParCurves_Constraint
+        :param LastC: default value is AppParCurves_TangencyPoint
+        :type LastC: AppParCurves_Constraint
+        :rtype: None
+
+        :param degreemin: default value is 3
+        :type degreemin: Standard_Integer
+        :param degreemax: default value is 8
+        :type degreemax: Standard_Integer
+        :param Tolerance3d: default value is 1.0e-05
+        :type Tolerance3d: float
+        :param Tolerance2d: default value is 1.0e-05
+        :type Tolerance2d: float
+        :param cutting: default value is Standard_False
+        :type cutting: bool
+        :param FirstC: default value is AppParCurves_TangencyPoint
+        :type FirstC: AppParCurves_Constraint
+        :param LastC: default value is AppParCurves_TangencyPoint
+        :type LastC: AppParCurves_Constraint
+        :rtype: None
+
+        :param degreemin: default value is 3
+        :type degreemin: Standard_Integer
+        :param degreemax: default value is 8
+        :type degreemax: Standard_Integer
+        :param Tolerance3d: default value is 1.0e-05
+        :type Tolerance3d: float
+        :param Tolerance2d: default value is 1.0e-05
+        :type Tolerance2d: float
+        :param cutting: default value is Standard_False
+        :type cutting: bool
+        :param FirstC: default value is AppParCurves_TangencyPoint
+        :type FirstC: AppParCurves_Constraint
+        :param LastC: default value is AppParCurves_TangencyPoint
+        :type LastC: AppParCurves_Constraint
+        :rtype: None
+
+        :param degreemin: default value is 3
+        :type degreemin: Standard_Integer
+        :param degreemax: default value is 8
+        :type degreemax: Standard_Integer
+        :param Tolerance3d: default value is 1.0e-05
+        :type Tolerance3d: float
+        :param Tolerance2d: default value is 1.0e-05
+        :type Tolerance2d: float
+        :param cutting: default value is Standard_False
+        :type cutting: bool
+        :param FirstC: default value is AppParCurves_TangencyPoint
+        :type FirstC: AppParCurves_Constraint
+        :param LastC: default value is AppParCurves_TangencyPoint
+        :type LastC: AppParCurves_Constraint
+        :rtype: None
+
+        :param degreemin: default value is 3
+        :type degreemin: Standard_Integer
+        :param degreemax: default value is 8
+        :type degreemax: Standard_Integer
         :param Tolerance3d: default value is 1.0e-05
         :type Tolerance3d: float
         :param Tolerance2d: default value is 1.0e-05
@@ -527,7 +774,7 @@ class BRepFill_ComputeCLine(object):
 
         """
         _BRepFill.BRepFill_ComputeCLine_swiginit(self,_BRepFill.new_BRepFill_ComputeCLine(*args))
-    def Perform(self, *args) -> "void" :
+    def Perform(self, *args):
         """
         :param Line:
         :type Line: BRepFill_MultiLine &
@@ -536,18 +783,18 @@ class BRepFill_ComputeCLine(object):
         """
         return _BRepFill.BRepFill_ComputeCLine_Perform(self, *args)
 
-    def SetDegrees(self, *args) -> "void" :
+    def SetDegrees(self, *args):
         """
         :param degreemin:
-        :type degreemin: int
+        :type degreemin: Standard_Integer
         :param degreemax:
-        :type degreemax: int
+        :type degreemax: Standard_Integer
         :rtype: None
 
         """
         return _BRepFill.BRepFill_ComputeCLine_SetDegrees(self, *args)
 
-    def SetTolerances(self, *args) -> "void" :
+    def SetTolerances(self, *args):
         """
         :param Tolerance3d:
         :type Tolerance3d: float
@@ -558,7 +805,7 @@ class BRepFill_ComputeCLine(object):
         """
         return _BRepFill.BRepFill_ComputeCLine_SetTolerances(self, *args)
 
-    def SetConstraints(self, *args) -> "void" :
+    def SetConstraints(self, *args):
         """
         :param FirstC:
         :type FirstC: AppParCurves_Constraint
@@ -569,24 +816,24 @@ class BRepFill_ComputeCLine(object):
         """
         return _BRepFill.BRepFill_ComputeCLine_SetConstraints(self, *args)
 
-    def IsAllApproximated(self, *args) -> "Standard_Boolean" :
+    def IsAllApproximated(self):
         """
         :rtype: bool
 
         """
-        return _BRepFill.BRepFill_ComputeCLine_IsAllApproximated(self, *args)
+        return _BRepFill.BRepFill_ComputeCLine_IsAllApproximated(self)
 
-    def IsToleranceReached(self, *args) -> "Standard_Boolean" :
+    def IsToleranceReached(self):
         """
         :rtype: bool
 
         """
-        return _BRepFill.BRepFill_ComputeCLine_IsToleranceReached(self, *args)
+        return _BRepFill.BRepFill_ComputeCLine_IsToleranceReached(self)
 
-    def Error(self, *args) -> "void" :
+    def Error(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param tol3d:
         :type tol3d: float &
         :param tol2d:
@@ -596,26 +843,30 @@ class BRepFill_ComputeCLine(object):
         """
         return _BRepFill.BRepFill_ComputeCLine_Error(self, *args)
 
-    def NbMultiCurves(self, *args) -> "Standard_Integer" :
+    def NbMultiCurves(self):
         """
         :rtype: int
 
         """
-        return _BRepFill.BRepFill_ComputeCLine_NbMultiCurves(self, *args)
+        return _BRepFill.BRepFill_ComputeCLine_NbMultiCurves(self)
 
-    def Value(self, *args) -> "AppParCurves_MultiCurve" :
+    def Value(self, Index=1):
         """
         :param Index: default value is 1
-        :type Index: int
+        :type Index: Standard_Integer
+        :rtype: AppParCurves_MultiCurve
+
+        :param Index: default value is 1
+        :type Index: Standard_Integer
         :rtype: AppParCurves_MultiCurve
 
         """
-        return _BRepFill.BRepFill_ComputeCLine_Value(self, *args)
+        return _BRepFill.BRepFill_ComputeCLine_Value(self, Index)
 
-    def Parameters(self, *args) -> "void" :
+    def Parameters(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param firstp:
         :type firstp: float &
         :param lastp:
@@ -657,9 +908,73 @@ class BRepFill_CurveConstraint(OCC.GeomPlate.GeomPlate_CurveConstraint):
         :param Boundary:
         :type Boundary: Handle_Adaptor3d_HCurveOnSurface &
         :param Order:
-        :type Order: int
+        :type Order: Standard_Integer
         :param NPt: default value is 10
-        :type NPt: int
+        :type NPt: Standard_Integer
+        :param TolDist: default value is 0.0001
+        :type TolDist: float
+        :param TolAng: default value is 0.01
+        :type TolAng: float
+        :param TolCurv: default value is 0.1
+        :type TolCurv: float
+        :rtype: None
+
+        * Create a constraint Order is the order of the constraint. The possible values for order are -1,0,1,2. Order i means constraints Gi Npt is the number of points associated with the constraint. TolDist is the maximum error to satisfy for G0 constraints TolAng is the maximum error to satisfy for G1 constraints TolCurv is the maximum error to satisfy for G2 constraints These errors can be replaced by laws of criterion.
+
+        :param Boundary:
+        :type Boundary: Handle_Adaptor3d_HCurveOnSurface &
+        :param Order:
+        :type Order: Standard_Integer
+        :param NPt: default value is 10
+        :type NPt: Standard_Integer
+        :param TolDist: default value is 0.0001
+        :type TolDist: float
+        :param TolAng: default value is 0.01
+        :type TolAng: float
+        :param TolCurv: default value is 0.1
+        :type TolCurv: float
+        :rtype: None
+
+        * Create a constraint Order is the order of the constraint. The possible values for order are -1,0,1,2. Order i means constraints Gi Npt is the number of points associated with the constraint. TolDist is the maximum error to satisfy for G0 constraints TolAng is the maximum error to satisfy for G1 constraints TolCurv is the maximum error to satisfy for G2 constraints These errors can be replaced by laws of criterion.
+
+        :param Boundary:
+        :type Boundary: Handle_Adaptor3d_HCurveOnSurface &
+        :param Order:
+        :type Order: Standard_Integer
+        :param NPt: default value is 10
+        :type NPt: Standard_Integer
+        :param TolDist: default value is 0.0001
+        :type TolDist: float
+        :param TolAng: default value is 0.01
+        :type TolAng: float
+        :param TolCurv: default value is 0.1
+        :type TolCurv: float
+        :rtype: None
+
+        * Create a constraint Order is the order of the constraint. The possible values for order are -1,0,1,2. Order i means constraints Gi Npt is the number of points associated with the constraint. TolDist is the maximum error to satisfy for G0 constraints TolAng is the maximum error to satisfy for G1 constraints TolCurv is the maximum error to satisfy for G2 constraints These errors can be replaced by laws of criterion.
+
+        :param Boundary:
+        :type Boundary: Handle_Adaptor3d_HCurveOnSurface &
+        :param Order:
+        :type Order: Standard_Integer
+        :param NPt: default value is 10
+        :type NPt: Standard_Integer
+        :param TolDist: default value is 0.0001
+        :type TolDist: float
+        :param TolAng: default value is 0.01
+        :type TolAng: float
+        :param TolCurv: default value is 0.1
+        :type TolCurv: float
+        :rtype: None
+
+        * Create a constraint Order is the order of the constraint. The possible values for order are -1,0,1,2. Order i means constraints Gi Npt is the number of points associated with the constraint. TolDist is the maximum error to satisfy for G0 constraints TolAng is the maximum error to satisfy for G1 constraints TolCurv is the maximum error to satisfy for G2 constraints These errors can be replaced by laws of criterion.
+
+        :param Boundary:
+        :type Boundary: Handle_Adaptor3d_HCurveOnSurface &
+        :param Order:
+        :type Order: Standard_Integer
+        :param NPt: default value is 10
+        :type NPt: Standard_Integer
         :param TolDist: default value is 0.0001
         :type TolDist: float
         :param TolAng: default value is 0.01
@@ -671,20 +986,40 @@ class BRepFill_CurveConstraint(OCC.GeomPlate.GeomPlate_CurveConstraint):
         :param Boundary:
         :type Boundary: Handle_Adaptor3d_HCurve &
         :param Tang:
-        :type Tang: int
+        :type Tang: Standard_Integer
         :param NPt: default value is 10
-        :type NPt: int
+        :type NPt: Standard_Integer
+        :param TolDist: default value is 0.0001
+        :type TolDist: float
+        :rtype: None
+
+        :param Boundary:
+        :type Boundary: Handle_Adaptor3d_HCurve &
+        :param Tang:
+        :type Tang: Standard_Integer
+        :param NPt: default value is 10
+        :type NPt: Standard_Integer
+        :param TolDist: default value is 0.0001
+        :type TolDist: float
+        :rtype: None
+
+        :param Boundary:
+        :type Boundary: Handle_Adaptor3d_HCurve &
+        :param Tang:
+        :type Tang: Standard_Integer
+        :param NPt: default value is 10
+        :type NPt: Standard_Integer
         :param TolDist: default value is 0.0001
         :type TolDist: float
         :rtype: None
 
         """
         _BRepFill.BRepFill_CurveConstraint_swiginit(self,_BRepFill.new_BRepFill_CurveConstraint(*args))
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(BRepFill_CurveConstraint self)"""
         return _BRepFill.BRepFill_CurveConstraint__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_BRepFill_CurveConstraint" :
+    def GetHandle(self):
         """GetHandle(BRepFill_CurveConstraint self) -> Handle_BRepFill_CurveConstraint"""
         return _BRepFill.BRepFill_CurveConstraint_GetHandle(self)
 
@@ -722,7 +1057,7 @@ Handle_BRepFill_CurveConstraint._kill_pointed = new_instancemethod(_BRepFill.Han
 Handle_BRepFill_CurveConstraint_swigregister = _BRepFill.Handle_BRepFill_CurveConstraint_swigregister
 Handle_BRepFill_CurveConstraint_swigregister(Handle_BRepFill_CurveConstraint)
 
-def Handle_BRepFill_CurveConstraint_DownCast(*args) -> "Handle_BRepFill_CurveConstraint const" :
+def Handle_BRepFill_CurveConstraint_DownCast(*args):
   return _BRepFill.Handle_BRepFill_CurveConstraint_DownCast(*args)
 Handle_BRepFill_CurveConstraint_DownCast = _BRepFill.Handle_BRepFill_CurveConstraint_DownCast
 
@@ -739,7 +1074,7 @@ class BRepFill_DataMapIteratorOfDataMapOfNodeDataMapOfShapeShape(OCC.TCollection
 
         """
         _BRepFill.BRepFill_DataMapIteratorOfDataMapOfNodeDataMapOfShapeShape_swiginit(self,_BRepFill.new_BRepFill_DataMapIteratorOfDataMapOfNodeDataMapOfShapeShape(*args))
-    def Initialize(self, *args) -> "void" :
+    def Initialize(self, *args):
         """
         :param aMap:
         :type aMap: BRepFill_DataMapOfNodeDataMapOfShapeShape &
@@ -748,19 +1083,19 @@ class BRepFill_DataMapIteratorOfDataMapOfNodeDataMapOfShapeShape(OCC.TCollection
         """
         return _BRepFill.BRepFill_DataMapIteratorOfDataMapOfNodeDataMapOfShapeShape_Initialize(self, *args)
 
-    def Key(self, *args) -> "Handle_MAT_Node const &" :
+    def Key(self):
         """
         :rtype: Handle_MAT_Node
 
         """
-        return _BRepFill.BRepFill_DataMapIteratorOfDataMapOfNodeDataMapOfShapeShape_Key(self, *args)
+        return _BRepFill.BRepFill_DataMapIteratorOfDataMapOfNodeDataMapOfShapeShape_Key(self)
 
-    def Value(self, *args) -> "TopTools_DataMapOfShapeShape const &" :
+    def Value(self):
         """
         :rtype: TopTools_DataMapOfShapeShape
 
         """
-        return _BRepFill.BRepFill_DataMapIteratorOfDataMapOfNodeDataMapOfShapeShape_Value(self, *args)
+        return _BRepFill.BRepFill_DataMapIteratorOfDataMapOfNodeDataMapOfShapeShape_Value(self)
 
     def __del__(self):
     	try:
@@ -790,7 +1125,7 @@ class BRepFill_DataMapIteratorOfDataMapOfNodeShape(OCC.TCollection.TCollection_B
 
         """
         _BRepFill.BRepFill_DataMapIteratorOfDataMapOfNodeShape_swiginit(self,_BRepFill.new_BRepFill_DataMapIteratorOfDataMapOfNodeShape(*args))
-    def Initialize(self, *args) -> "void" :
+    def Initialize(self, *args):
         """
         :param aMap:
         :type aMap: BRepFill_DataMapOfNodeShape &
@@ -799,19 +1134,19 @@ class BRepFill_DataMapIteratorOfDataMapOfNodeShape(OCC.TCollection.TCollection_B
         """
         return _BRepFill.BRepFill_DataMapIteratorOfDataMapOfNodeShape_Initialize(self, *args)
 
-    def Key(self, *args) -> "Handle_MAT_Node const &" :
+    def Key(self):
         """
         :rtype: Handle_MAT_Node
 
         """
-        return _BRepFill.BRepFill_DataMapIteratorOfDataMapOfNodeShape_Key(self, *args)
+        return _BRepFill.BRepFill_DataMapIteratorOfDataMapOfNodeShape_Key(self)
 
-    def Value(self, *args) -> "TopoDS_Shape const" :
+    def Value(self):
         """
         :rtype: TopoDS_Shape
 
         """
-        return _BRepFill.BRepFill_DataMapIteratorOfDataMapOfNodeShape_Value(self, *args)
+        return _BRepFill.BRepFill_DataMapIteratorOfDataMapOfNodeShape_Value(self)
 
     def __del__(self):
     	try:
@@ -841,7 +1176,7 @@ class BRepFill_DataMapIteratorOfDataMapOfOrientedShapeListOfShape(OCC.TCollectio
 
         """
         _BRepFill.BRepFill_DataMapIteratorOfDataMapOfOrientedShapeListOfShape_swiginit(self,_BRepFill.new_BRepFill_DataMapIteratorOfDataMapOfOrientedShapeListOfShape(*args))
-    def Initialize(self, *args) -> "void" :
+    def Initialize(self, *args):
         """
         :param aMap:
         :type aMap: BRepFill_DataMapOfOrientedShapeListOfShape &
@@ -850,19 +1185,19 @@ class BRepFill_DataMapIteratorOfDataMapOfOrientedShapeListOfShape(OCC.TCollectio
         """
         return _BRepFill.BRepFill_DataMapIteratorOfDataMapOfOrientedShapeListOfShape_Initialize(self, *args)
 
-    def Key(self, *args) -> "TopoDS_Shape const" :
+    def Key(self):
         """
         :rtype: TopoDS_Shape
 
         """
-        return _BRepFill.BRepFill_DataMapIteratorOfDataMapOfOrientedShapeListOfShape_Key(self, *args)
+        return _BRepFill.BRepFill_DataMapIteratorOfDataMapOfOrientedShapeListOfShape_Key(self)
 
-    def Value(self, *args) -> "TopTools_ListOfShape const &" :
+    def Value(self):
         """
         :rtype: TopTools_ListOfShape
 
         """
-        return _BRepFill.BRepFill_DataMapIteratorOfDataMapOfOrientedShapeListOfShape_Value(self, *args)
+        return _BRepFill.BRepFill_DataMapIteratorOfDataMapOfOrientedShapeListOfShape_Value(self)
 
     def __del__(self):
     	try:
@@ -892,7 +1227,7 @@ class BRepFill_DataMapIteratorOfDataMapOfShapeDataMapOfShapeListOfShape(OCC.TCol
 
         """
         _BRepFill.BRepFill_DataMapIteratorOfDataMapOfShapeDataMapOfShapeListOfShape_swiginit(self,_BRepFill.new_BRepFill_DataMapIteratorOfDataMapOfShapeDataMapOfShapeListOfShape(*args))
-    def Initialize(self, *args) -> "void" :
+    def Initialize(self, *args):
         """
         :param aMap:
         :type aMap: BRepFill_DataMapOfShapeDataMapOfShapeListOfShape &
@@ -901,19 +1236,19 @@ class BRepFill_DataMapIteratorOfDataMapOfShapeDataMapOfShapeListOfShape(OCC.TCol
         """
         return _BRepFill.BRepFill_DataMapIteratorOfDataMapOfShapeDataMapOfShapeListOfShape_Initialize(self, *args)
 
-    def Key(self, *args) -> "TopoDS_Shape const" :
+    def Key(self):
         """
         :rtype: TopoDS_Shape
 
         """
-        return _BRepFill.BRepFill_DataMapIteratorOfDataMapOfShapeDataMapOfShapeListOfShape_Key(self, *args)
+        return _BRepFill.BRepFill_DataMapIteratorOfDataMapOfShapeDataMapOfShapeListOfShape_Key(self)
 
-    def Value(self, *args) -> "TopTools_DataMapOfShapeListOfShape const &" :
+    def Value(self):
         """
         :rtype: TopTools_DataMapOfShapeListOfShape
 
         """
-        return _BRepFill.BRepFill_DataMapIteratorOfDataMapOfShapeDataMapOfShapeListOfShape_Value(self, *args)
+        return _BRepFill.BRepFill_DataMapIteratorOfDataMapOfShapeDataMapOfShapeListOfShape_Value(self)
 
     def __del__(self):
     	try:
@@ -943,7 +1278,7 @@ class BRepFill_DataMapIteratorOfDataMapOfShapeHArray2OfShape(OCC.TCollection.TCo
 
         """
         _BRepFill.BRepFill_DataMapIteratorOfDataMapOfShapeHArray2OfShape_swiginit(self,_BRepFill.new_BRepFill_DataMapIteratorOfDataMapOfShapeHArray2OfShape(*args))
-    def Initialize(self, *args) -> "void" :
+    def Initialize(self, *args):
         """
         :param aMap:
         :type aMap: BRepFill_DataMapOfShapeHArray2OfShape &
@@ -952,19 +1287,19 @@ class BRepFill_DataMapIteratorOfDataMapOfShapeHArray2OfShape(OCC.TCollection.TCo
         """
         return _BRepFill.BRepFill_DataMapIteratorOfDataMapOfShapeHArray2OfShape_Initialize(self, *args)
 
-    def Key(self, *args) -> "TopoDS_Shape const" :
+    def Key(self):
         """
         :rtype: TopoDS_Shape
 
         """
-        return _BRepFill.BRepFill_DataMapIteratorOfDataMapOfShapeHArray2OfShape_Key(self, *args)
+        return _BRepFill.BRepFill_DataMapIteratorOfDataMapOfShapeHArray2OfShape_Key(self)
 
-    def Value(self, *args) -> "Handle_TopTools_HArray2OfShape const &" :
+    def Value(self):
         """
         :rtype: Handle_TopTools_HArray2OfShape
 
         """
-        return _BRepFill.BRepFill_DataMapIteratorOfDataMapOfShapeHArray2OfShape_Value(self, *args)
+        return _BRepFill.BRepFill_DataMapIteratorOfDataMapOfShapeHArray2OfShape_Value(self)
 
     def __del__(self):
     	try:
@@ -994,7 +1329,7 @@ class BRepFill_DataMapIteratorOfDataMapOfShapeSequenceOfPnt(OCC.TCollection.TCol
 
         """
         _BRepFill.BRepFill_DataMapIteratorOfDataMapOfShapeSequenceOfPnt_swiginit(self,_BRepFill.new_BRepFill_DataMapIteratorOfDataMapOfShapeSequenceOfPnt(*args))
-    def Initialize(self, *args) -> "void" :
+    def Initialize(self, *args):
         """
         :param aMap:
         :type aMap: BRepFill_DataMapOfShapeSequenceOfPnt &
@@ -1003,19 +1338,19 @@ class BRepFill_DataMapIteratorOfDataMapOfShapeSequenceOfPnt(OCC.TCollection.TCol
         """
         return _BRepFill.BRepFill_DataMapIteratorOfDataMapOfShapeSequenceOfPnt_Initialize(self, *args)
 
-    def Key(self, *args) -> "TopoDS_Shape const" :
+    def Key(self):
         """
         :rtype: TopoDS_Shape
 
         """
-        return _BRepFill.BRepFill_DataMapIteratorOfDataMapOfShapeSequenceOfPnt_Key(self, *args)
+        return _BRepFill.BRepFill_DataMapIteratorOfDataMapOfShapeSequenceOfPnt_Key(self)
 
-    def Value(self, *args) -> "TColgp_SequenceOfPnt const &" :
+    def Value(self):
         """
         :rtype: TColgp_SequenceOfPnt
 
         """
-        return _BRepFill.BRepFill_DataMapIteratorOfDataMapOfShapeSequenceOfPnt_Value(self, *args)
+        return _BRepFill.BRepFill_DataMapIteratorOfDataMapOfShapeSequenceOfPnt_Value(self)
 
     def __del__(self):
     	try:
@@ -1045,7 +1380,7 @@ class BRepFill_DataMapIteratorOfDataMapOfShapeSequenceOfReal(OCC.TCollection.TCo
 
         """
         _BRepFill.BRepFill_DataMapIteratorOfDataMapOfShapeSequenceOfReal_swiginit(self,_BRepFill.new_BRepFill_DataMapIteratorOfDataMapOfShapeSequenceOfReal(*args))
-    def Initialize(self, *args) -> "void" :
+    def Initialize(self, *args):
         """
         :param aMap:
         :type aMap: BRepFill_DataMapOfShapeSequenceOfReal &
@@ -1054,19 +1389,19 @@ class BRepFill_DataMapIteratorOfDataMapOfShapeSequenceOfReal(OCC.TCollection.TCo
         """
         return _BRepFill.BRepFill_DataMapIteratorOfDataMapOfShapeSequenceOfReal_Initialize(self, *args)
 
-    def Key(self, *args) -> "TopoDS_Shape const" :
+    def Key(self):
         """
         :rtype: TopoDS_Shape
 
         """
-        return _BRepFill.BRepFill_DataMapIteratorOfDataMapOfShapeSequenceOfReal_Key(self, *args)
+        return _BRepFill.BRepFill_DataMapIteratorOfDataMapOfShapeSequenceOfReal_Key(self)
 
-    def Value(self, *args) -> "TColStd_SequenceOfReal const &" :
+    def Value(self):
         """
         :rtype: TColStd_SequenceOfReal
 
         """
-        return _BRepFill.BRepFill_DataMapIteratorOfDataMapOfShapeSequenceOfReal_Value(self, *args)
+        return _BRepFill.BRepFill_DataMapIteratorOfDataMapOfShapeSequenceOfReal_Value(self)
 
     def __del__(self):
     	try:
@@ -1098,25 +1433,25 @@ class BRepFill_DataMapNodeOfDataMapOfNodeDataMapOfShapeShape(OCC.TCollection.TCo
 
         """
         _BRepFill.BRepFill_DataMapNodeOfDataMapOfNodeDataMapOfShapeShape_swiginit(self,_BRepFill.new_BRepFill_DataMapNodeOfDataMapOfNodeDataMapOfShapeShape(*args))
-    def Key(self, *args) -> "Handle_MAT_Node &" :
+    def Key(self):
         """
         :rtype: Handle_MAT_Node
 
         """
-        return _BRepFill.BRepFill_DataMapNodeOfDataMapOfNodeDataMapOfShapeShape_Key(self, *args)
+        return _BRepFill.BRepFill_DataMapNodeOfDataMapOfNodeDataMapOfShapeShape_Key(self)
 
-    def Value(self, *args) -> "TopTools_DataMapOfShapeShape &" :
+    def Value(self):
         """
         :rtype: TopTools_DataMapOfShapeShape
 
         """
-        return _BRepFill.BRepFill_DataMapNodeOfDataMapOfNodeDataMapOfShapeShape_Value(self, *args)
+        return _BRepFill.BRepFill_DataMapNodeOfDataMapOfNodeDataMapOfShapeShape_Value(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(BRepFill_DataMapNodeOfDataMapOfNodeDataMapOfShapeShape self)"""
         return _BRepFill.BRepFill_DataMapNodeOfDataMapOfNodeDataMapOfShapeShape__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_BRepFill_DataMapNodeOfDataMapOfNodeDataMapOfShapeShape" :
+    def GetHandle(self):
         """GetHandle(BRepFill_DataMapNodeOfDataMapOfNodeDataMapOfShapeShape self) -> Handle_BRepFill_DataMapNodeOfDataMapOfNodeDataMapOfShapeShape"""
         return _BRepFill.BRepFill_DataMapNodeOfDataMapOfNodeDataMapOfShapeShape_GetHandle(self)
 
@@ -1156,7 +1491,7 @@ Handle_BRepFill_DataMapNodeOfDataMapOfNodeDataMapOfShapeShape._kill_pointed = ne
 Handle_BRepFill_DataMapNodeOfDataMapOfNodeDataMapOfShapeShape_swigregister = _BRepFill.Handle_BRepFill_DataMapNodeOfDataMapOfNodeDataMapOfShapeShape_swigregister
 Handle_BRepFill_DataMapNodeOfDataMapOfNodeDataMapOfShapeShape_swigregister(Handle_BRepFill_DataMapNodeOfDataMapOfNodeDataMapOfShapeShape)
 
-def Handle_BRepFill_DataMapNodeOfDataMapOfNodeDataMapOfShapeShape_DownCast(*args) -> "Handle_BRepFill_DataMapNodeOfDataMapOfNodeDataMapOfShapeShape const" :
+def Handle_BRepFill_DataMapNodeOfDataMapOfNodeDataMapOfShapeShape_DownCast(*args):
   return _BRepFill.Handle_BRepFill_DataMapNodeOfDataMapOfNodeDataMapOfShapeShape_DownCast(*args)
 Handle_BRepFill_DataMapNodeOfDataMapOfNodeDataMapOfShapeShape_DownCast = _BRepFill.Handle_BRepFill_DataMapNodeOfDataMapOfNodeDataMapOfShapeShape_DownCast
 
@@ -1175,25 +1510,25 @@ class BRepFill_DataMapNodeOfDataMapOfNodeShape(OCC.TCollection.TCollection_MapNo
 
         """
         _BRepFill.BRepFill_DataMapNodeOfDataMapOfNodeShape_swiginit(self,_BRepFill.new_BRepFill_DataMapNodeOfDataMapOfNodeShape(*args))
-    def Key(self, *args) -> "Handle_MAT_Node &" :
+    def Key(self):
         """
         :rtype: Handle_MAT_Node
 
         """
-        return _BRepFill.BRepFill_DataMapNodeOfDataMapOfNodeShape_Key(self, *args)
+        return _BRepFill.BRepFill_DataMapNodeOfDataMapOfNodeShape_Key(self)
 
-    def Value(self, *args) -> "TopoDS_Shape" :
+    def Value(self):
         """
         :rtype: TopoDS_Shape
 
         """
-        return _BRepFill.BRepFill_DataMapNodeOfDataMapOfNodeShape_Value(self, *args)
+        return _BRepFill.BRepFill_DataMapNodeOfDataMapOfNodeShape_Value(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(BRepFill_DataMapNodeOfDataMapOfNodeShape self)"""
         return _BRepFill.BRepFill_DataMapNodeOfDataMapOfNodeShape__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_BRepFill_DataMapNodeOfDataMapOfNodeShape" :
+    def GetHandle(self):
         """GetHandle(BRepFill_DataMapNodeOfDataMapOfNodeShape self) -> Handle_BRepFill_DataMapNodeOfDataMapOfNodeShape"""
         return _BRepFill.BRepFill_DataMapNodeOfDataMapOfNodeShape_GetHandle(self)
 
@@ -1233,7 +1568,7 @@ Handle_BRepFill_DataMapNodeOfDataMapOfNodeShape._kill_pointed = new_instancemeth
 Handle_BRepFill_DataMapNodeOfDataMapOfNodeShape_swigregister = _BRepFill.Handle_BRepFill_DataMapNodeOfDataMapOfNodeShape_swigregister
 Handle_BRepFill_DataMapNodeOfDataMapOfNodeShape_swigregister(Handle_BRepFill_DataMapNodeOfDataMapOfNodeShape)
 
-def Handle_BRepFill_DataMapNodeOfDataMapOfNodeShape_DownCast(*args) -> "Handle_BRepFill_DataMapNodeOfDataMapOfNodeShape const" :
+def Handle_BRepFill_DataMapNodeOfDataMapOfNodeShape_DownCast(*args):
   return _BRepFill.Handle_BRepFill_DataMapNodeOfDataMapOfNodeShape_DownCast(*args)
 Handle_BRepFill_DataMapNodeOfDataMapOfNodeShape_DownCast = _BRepFill.Handle_BRepFill_DataMapNodeOfDataMapOfNodeShape_DownCast
 
@@ -1252,25 +1587,25 @@ class BRepFill_DataMapNodeOfDataMapOfOrientedShapeListOfShape(OCC.TCollection.TC
 
         """
         _BRepFill.BRepFill_DataMapNodeOfDataMapOfOrientedShapeListOfShape_swiginit(self,_BRepFill.new_BRepFill_DataMapNodeOfDataMapOfOrientedShapeListOfShape(*args))
-    def Key(self, *args) -> "TopoDS_Shape" :
+    def Key(self):
         """
         :rtype: TopoDS_Shape
 
         """
-        return _BRepFill.BRepFill_DataMapNodeOfDataMapOfOrientedShapeListOfShape_Key(self, *args)
+        return _BRepFill.BRepFill_DataMapNodeOfDataMapOfOrientedShapeListOfShape_Key(self)
 
-    def Value(self, *args) -> "TopTools_ListOfShape &" :
+    def Value(self):
         """
         :rtype: TopTools_ListOfShape
 
         """
-        return _BRepFill.BRepFill_DataMapNodeOfDataMapOfOrientedShapeListOfShape_Value(self, *args)
+        return _BRepFill.BRepFill_DataMapNodeOfDataMapOfOrientedShapeListOfShape_Value(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(BRepFill_DataMapNodeOfDataMapOfOrientedShapeListOfShape self)"""
         return _BRepFill.BRepFill_DataMapNodeOfDataMapOfOrientedShapeListOfShape__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_BRepFill_DataMapNodeOfDataMapOfOrientedShapeListOfShape" :
+    def GetHandle(self):
         """GetHandle(BRepFill_DataMapNodeOfDataMapOfOrientedShapeListOfShape self) -> Handle_BRepFill_DataMapNodeOfDataMapOfOrientedShapeListOfShape"""
         return _BRepFill.BRepFill_DataMapNodeOfDataMapOfOrientedShapeListOfShape_GetHandle(self)
 
@@ -1310,7 +1645,7 @@ Handle_BRepFill_DataMapNodeOfDataMapOfOrientedShapeListOfShape._kill_pointed = n
 Handle_BRepFill_DataMapNodeOfDataMapOfOrientedShapeListOfShape_swigregister = _BRepFill.Handle_BRepFill_DataMapNodeOfDataMapOfOrientedShapeListOfShape_swigregister
 Handle_BRepFill_DataMapNodeOfDataMapOfOrientedShapeListOfShape_swigregister(Handle_BRepFill_DataMapNodeOfDataMapOfOrientedShapeListOfShape)
 
-def Handle_BRepFill_DataMapNodeOfDataMapOfOrientedShapeListOfShape_DownCast(*args) -> "Handle_BRepFill_DataMapNodeOfDataMapOfOrientedShapeListOfShape const" :
+def Handle_BRepFill_DataMapNodeOfDataMapOfOrientedShapeListOfShape_DownCast(*args):
   return _BRepFill.Handle_BRepFill_DataMapNodeOfDataMapOfOrientedShapeListOfShape_DownCast(*args)
 Handle_BRepFill_DataMapNodeOfDataMapOfOrientedShapeListOfShape_DownCast = _BRepFill.Handle_BRepFill_DataMapNodeOfDataMapOfOrientedShapeListOfShape_DownCast
 
@@ -1329,25 +1664,25 @@ class BRepFill_DataMapNodeOfDataMapOfShapeDataMapOfShapeListOfShape(OCC.TCollect
 
         """
         _BRepFill.BRepFill_DataMapNodeOfDataMapOfShapeDataMapOfShapeListOfShape_swiginit(self,_BRepFill.new_BRepFill_DataMapNodeOfDataMapOfShapeDataMapOfShapeListOfShape(*args))
-    def Key(self, *args) -> "TopoDS_Shape" :
+    def Key(self):
         """
         :rtype: TopoDS_Shape
 
         """
-        return _BRepFill.BRepFill_DataMapNodeOfDataMapOfShapeDataMapOfShapeListOfShape_Key(self, *args)
+        return _BRepFill.BRepFill_DataMapNodeOfDataMapOfShapeDataMapOfShapeListOfShape_Key(self)
 
-    def Value(self, *args) -> "TopTools_DataMapOfShapeListOfShape &" :
+    def Value(self):
         """
         :rtype: TopTools_DataMapOfShapeListOfShape
 
         """
-        return _BRepFill.BRepFill_DataMapNodeOfDataMapOfShapeDataMapOfShapeListOfShape_Value(self, *args)
+        return _BRepFill.BRepFill_DataMapNodeOfDataMapOfShapeDataMapOfShapeListOfShape_Value(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(BRepFill_DataMapNodeOfDataMapOfShapeDataMapOfShapeListOfShape self)"""
         return _BRepFill.BRepFill_DataMapNodeOfDataMapOfShapeDataMapOfShapeListOfShape__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_BRepFill_DataMapNodeOfDataMapOfShapeDataMapOfShapeListOfShape" :
+    def GetHandle(self):
         """GetHandle(BRepFill_DataMapNodeOfDataMapOfShapeDataMapOfShapeListOfShape self) -> Handle_BRepFill_DataMapNodeOfDataMapOfShapeDataMapOfShapeListOfShape"""
         return _BRepFill.BRepFill_DataMapNodeOfDataMapOfShapeDataMapOfShapeListOfShape_GetHandle(self)
 
@@ -1387,7 +1722,7 @@ Handle_BRepFill_DataMapNodeOfDataMapOfShapeDataMapOfShapeListOfShape._kill_point
 Handle_BRepFill_DataMapNodeOfDataMapOfShapeDataMapOfShapeListOfShape_swigregister = _BRepFill.Handle_BRepFill_DataMapNodeOfDataMapOfShapeDataMapOfShapeListOfShape_swigregister
 Handle_BRepFill_DataMapNodeOfDataMapOfShapeDataMapOfShapeListOfShape_swigregister(Handle_BRepFill_DataMapNodeOfDataMapOfShapeDataMapOfShapeListOfShape)
 
-def Handle_BRepFill_DataMapNodeOfDataMapOfShapeDataMapOfShapeListOfShape_DownCast(*args) -> "Handle_BRepFill_DataMapNodeOfDataMapOfShapeDataMapOfShapeListOfShape const" :
+def Handle_BRepFill_DataMapNodeOfDataMapOfShapeDataMapOfShapeListOfShape_DownCast(*args):
   return _BRepFill.Handle_BRepFill_DataMapNodeOfDataMapOfShapeDataMapOfShapeListOfShape_DownCast(*args)
 Handle_BRepFill_DataMapNodeOfDataMapOfShapeDataMapOfShapeListOfShape_DownCast = _BRepFill.Handle_BRepFill_DataMapNodeOfDataMapOfShapeDataMapOfShapeListOfShape_DownCast
 
@@ -1406,25 +1741,25 @@ class BRepFill_DataMapNodeOfDataMapOfShapeHArray2OfShape(OCC.TCollection.TCollec
 
         """
         _BRepFill.BRepFill_DataMapNodeOfDataMapOfShapeHArray2OfShape_swiginit(self,_BRepFill.new_BRepFill_DataMapNodeOfDataMapOfShapeHArray2OfShape(*args))
-    def Key(self, *args) -> "TopoDS_Shape" :
+    def Key(self):
         """
         :rtype: TopoDS_Shape
 
         """
-        return _BRepFill.BRepFill_DataMapNodeOfDataMapOfShapeHArray2OfShape_Key(self, *args)
+        return _BRepFill.BRepFill_DataMapNodeOfDataMapOfShapeHArray2OfShape_Key(self)
 
-    def Value(self, *args) -> "Handle_TopTools_HArray2OfShape &" :
+    def Value(self):
         """
         :rtype: Handle_TopTools_HArray2OfShape
 
         """
-        return _BRepFill.BRepFill_DataMapNodeOfDataMapOfShapeHArray2OfShape_Value(self, *args)
+        return _BRepFill.BRepFill_DataMapNodeOfDataMapOfShapeHArray2OfShape_Value(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(BRepFill_DataMapNodeOfDataMapOfShapeHArray2OfShape self)"""
         return _BRepFill.BRepFill_DataMapNodeOfDataMapOfShapeHArray2OfShape__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_BRepFill_DataMapNodeOfDataMapOfShapeHArray2OfShape" :
+    def GetHandle(self):
         """GetHandle(BRepFill_DataMapNodeOfDataMapOfShapeHArray2OfShape self) -> Handle_BRepFill_DataMapNodeOfDataMapOfShapeHArray2OfShape"""
         return _BRepFill.BRepFill_DataMapNodeOfDataMapOfShapeHArray2OfShape_GetHandle(self)
 
@@ -1464,7 +1799,7 @@ Handle_BRepFill_DataMapNodeOfDataMapOfShapeHArray2OfShape._kill_pointed = new_in
 Handle_BRepFill_DataMapNodeOfDataMapOfShapeHArray2OfShape_swigregister = _BRepFill.Handle_BRepFill_DataMapNodeOfDataMapOfShapeHArray2OfShape_swigregister
 Handle_BRepFill_DataMapNodeOfDataMapOfShapeHArray2OfShape_swigregister(Handle_BRepFill_DataMapNodeOfDataMapOfShapeHArray2OfShape)
 
-def Handle_BRepFill_DataMapNodeOfDataMapOfShapeHArray2OfShape_DownCast(*args) -> "Handle_BRepFill_DataMapNodeOfDataMapOfShapeHArray2OfShape const" :
+def Handle_BRepFill_DataMapNodeOfDataMapOfShapeHArray2OfShape_DownCast(*args):
   return _BRepFill.Handle_BRepFill_DataMapNodeOfDataMapOfShapeHArray2OfShape_DownCast(*args)
 Handle_BRepFill_DataMapNodeOfDataMapOfShapeHArray2OfShape_DownCast = _BRepFill.Handle_BRepFill_DataMapNodeOfDataMapOfShapeHArray2OfShape_DownCast
 
@@ -1483,25 +1818,25 @@ class BRepFill_DataMapNodeOfDataMapOfShapeSequenceOfPnt(OCC.TCollection.TCollect
 
         """
         _BRepFill.BRepFill_DataMapNodeOfDataMapOfShapeSequenceOfPnt_swiginit(self,_BRepFill.new_BRepFill_DataMapNodeOfDataMapOfShapeSequenceOfPnt(*args))
-    def Key(self, *args) -> "TopoDS_Shape" :
+    def Key(self):
         """
         :rtype: TopoDS_Shape
 
         """
-        return _BRepFill.BRepFill_DataMapNodeOfDataMapOfShapeSequenceOfPnt_Key(self, *args)
+        return _BRepFill.BRepFill_DataMapNodeOfDataMapOfShapeSequenceOfPnt_Key(self)
 
-    def Value(self, *args) -> "TColgp_SequenceOfPnt &" :
+    def Value(self):
         """
         :rtype: TColgp_SequenceOfPnt
 
         """
-        return _BRepFill.BRepFill_DataMapNodeOfDataMapOfShapeSequenceOfPnt_Value(self, *args)
+        return _BRepFill.BRepFill_DataMapNodeOfDataMapOfShapeSequenceOfPnt_Value(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(BRepFill_DataMapNodeOfDataMapOfShapeSequenceOfPnt self)"""
         return _BRepFill.BRepFill_DataMapNodeOfDataMapOfShapeSequenceOfPnt__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_BRepFill_DataMapNodeOfDataMapOfShapeSequenceOfPnt" :
+    def GetHandle(self):
         """GetHandle(BRepFill_DataMapNodeOfDataMapOfShapeSequenceOfPnt self) -> Handle_BRepFill_DataMapNodeOfDataMapOfShapeSequenceOfPnt"""
         return _BRepFill.BRepFill_DataMapNodeOfDataMapOfShapeSequenceOfPnt_GetHandle(self)
 
@@ -1541,7 +1876,7 @@ Handle_BRepFill_DataMapNodeOfDataMapOfShapeSequenceOfPnt._kill_pointed = new_ins
 Handle_BRepFill_DataMapNodeOfDataMapOfShapeSequenceOfPnt_swigregister = _BRepFill.Handle_BRepFill_DataMapNodeOfDataMapOfShapeSequenceOfPnt_swigregister
 Handle_BRepFill_DataMapNodeOfDataMapOfShapeSequenceOfPnt_swigregister(Handle_BRepFill_DataMapNodeOfDataMapOfShapeSequenceOfPnt)
 
-def Handle_BRepFill_DataMapNodeOfDataMapOfShapeSequenceOfPnt_DownCast(*args) -> "Handle_BRepFill_DataMapNodeOfDataMapOfShapeSequenceOfPnt const" :
+def Handle_BRepFill_DataMapNodeOfDataMapOfShapeSequenceOfPnt_DownCast(*args):
   return _BRepFill.Handle_BRepFill_DataMapNodeOfDataMapOfShapeSequenceOfPnt_DownCast(*args)
 Handle_BRepFill_DataMapNodeOfDataMapOfShapeSequenceOfPnt_DownCast = _BRepFill.Handle_BRepFill_DataMapNodeOfDataMapOfShapeSequenceOfPnt_DownCast
 
@@ -1560,25 +1895,25 @@ class BRepFill_DataMapNodeOfDataMapOfShapeSequenceOfReal(OCC.TCollection.TCollec
 
         """
         _BRepFill.BRepFill_DataMapNodeOfDataMapOfShapeSequenceOfReal_swiginit(self,_BRepFill.new_BRepFill_DataMapNodeOfDataMapOfShapeSequenceOfReal(*args))
-    def Key(self, *args) -> "TopoDS_Shape" :
+    def Key(self):
         """
         :rtype: TopoDS_Shape
 
         """
-        return _BRepFill.BRepFill_DataMapNodeOfDataMapOfShapeSequenceOfReal_Key(self, *args)
+        return _BRepFill.BRepFill_DataMapNodeOfDataMapOfShapeSequenceOfReal_Key(self)
 
-    def Value(self, *args) -> "TColStd_SequenceOfReal &" :
+    def Value(self):
         """
         :rtype: TColStd_SequenceOfReal
 
         """
-        return _BRepFill.BRepFill_DataMapNodeOfDataMapOfShapeSequenceOfReal_Value(self, *args)
+        return _BRepFill.BRepFill_DataMapNodeOfDataMapOfShapeSequenceOfReal_Value(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(BRepFill_DataMapNodeOfDataMapOfShapeSequenceOfReal self)"""
         return _BRepFill.BRepFill_DataMapNodeOfDataMapOfShapeSequenceOfReal__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_BRepFill_DataMapNodeOfDataMapOfShapeSequenceOfReal" :
+    def GetHandle(self):
         """GetHandle(BRepFill_DataMapNodeOfDataMapOfShapeSequenceOfReal self) -> Handle_BRepFill_DataMapNodeOfDataMapOfShapeSequenceOfReal"""
         return _BRepFill.BRepFill_DataMapNodeOfDataMapOfShapeSequenceOfReal_GetHandle(self)
 
@@ -1618,22 +1953,26 @@ Handle_BRepFill_DataMapNodeOfDataMapOfShapeSequenceOfReal._kill_pointed = new_in
 Handle_BRepFill_DataMapNodeOfDataMapOfShapeSequenceOfReal_swigregister = _BRepFill.Handle_BRepFill_DataMapNodeOfDataMapOfShapeSequenceOfReal_swigregister
 Handle_BRepFill_DataMapNodeOfDataMapOfShapeSequenceOfReal_swigregister(Handle_BRepFill_DataMapNodeOfDataMapOfShapeSequenceOfReal)
 
-def Handle_BRepFill_DataMapNodeOfDataMapOfShapeSequenceOfReal_DownCast(*args) -> "Handle_BRepFill_DataMapNodeOfDataMapOfShapeSequenceOfReal const" :
+def Handle_BRepFill_DataMapNodeOfDataMapOfShapeSequenceOfReal_DownCast(*args):
   return _BRepFill.Handle_BRepFill_DataMapNodeOfDataMapOfShapeSequenceOfReal_DownCast(*args)
 Handle_BRepFill_DataMapNodeOfDataMapOfShapeSequenceOfReal_DownCast = _BRepFill.Handle_BRepFill_DataMapNodeOfDataMapOfShapeSequenceOfReal_DownCast
 
 class BRepFill_DataMapOfNodeDataMapOfShapeShape(OCC.TCollection.TCollection_BasicMap):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self, NbBuckets=1): 
         """
         :param NbBuckets: default value is 1
-        :type NbBuckets: int
+        :type NbBuckets: Standard_Integer
+        :rtype: None
+
+        :param NbBuckets: default value is 1
+        :type NbBuckets: Standard_Integer
         :rtype: None
 
         """
-        _BRepFill.BRepFill_DataMapOfNodeDataMapOfShapeShape_swiginit(self,_BRepFill.new_BRepFill_DataMapOfNodeDataMapOfShapeShape(*args))
-    def Assign(self, *args) -> "BRepFill_DataMapOfNodeDataMapOfShapeShape &" :
+        _BRepFill.BRepFill_DataMapOfNodeDataMapOfShapeShape_swiginit(self,_BRepFill.new_BRepFill_DataMapOfNodeDataMapOfShapeShape(NbBuckets))
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: BRepFill_DataMapOfNodeDataMapOfShapeShape &
@@ -1642,7 +1981,7 @@ class BRepFill_DataMapOfNodeDataMapOfShapeShape(OCC.TCollection.TCollection_Basi
         """
         return _BRepFill.BRepFill_DataMapOfNodeDataMapOfShapeShape_Assign(self, *args)
 
-    def Set(self, *args) -> "BRepFill_DataMapOfNodeDataMapOfShapeShape &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: BRepFill_DataMapOfNodeDataMapOfShapeShape &
@@ -1651,23 +1990,23 @@ class BRepFill_DataMapOfNodeDataMapOfShapeShape(OCC.TCollection.TCollection_Basi
         """
         return _BRepFill.BRepFill_DataMapOfNodeDataMapOfShapeShape_Set(self, *args)
 
-    def ReSize(self, *args) -> "void" :
+    def ReSize(self, *args):
         """
         :param NbBuckets:
-        :type NbBuckets: int
+        :type NbBuckets: Standard_Integer
         :rtype: None
 
         """
         return _BRepFill.BRepFill_DataMapOfNodeDataMapOfShapeShape_ReSize(self, *args)
 
-    def Clear(self, *args) -> "void" :
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _BRepFill.BRepFill_DataMapOfNodeDataMapOfShapeShape_Clear(self, *args)
+        return _BRepFill.BRepFill_DataMapOfNodeDataMapOfShapeShape_Clear(self)
 
-    def Bind(self, *args) -> "Standard_Boolean" :
+    def Bind(self, *args):
         """
         :param K:
         :type K: Handle_MAT_Node &
@@ -1678,7 +2017,7 @@ class BRepFill_DataMapOfNodeDataMapOfShapeShape(OCC.TCollection.TCollection_Basi
         """
         return _BRepFill.BRepFill_DataMapOfNodeDataMapOfShapeShape_Bind(self, *args)
 
-    def IsBound(self, *args) -> "Standard_Boolean" :
+    def IsBound(self, *args):
         """
         :param K:
         :type K: Handle_MAT_Node &
@@ -1687,7 +2026,7 @@ class BRepFill_DataMapOfNodeDataMapOfShapeShape(OCC.TCollection.TCollection_Basi
         """
         return _BRepFill.BRepFill_DataMapOfNodeDataMapOfShapeShape_IsBound(self, *args)
 
-    def UnBind(self, *args) -> "Standard_Boolean" :
+    def UnBind(self, *args):
         """
         :param K:
         :type K: Handle_MAT_Node &
@@ -1696,7 +2035,7 @@ class BRepFill_DataMapOfNodeDataMapOfShapeShape(OCC.TCollection.TCollection_Basi
         """
         return _BRepFill.BRepFill_DataMapOfNodeDataMapOfShapeShape_UnBind(self, *args)
 
-    def Find(self, *args) -> "TopTools_DataMapOfShapeShape const &" :
+    def Find(self, *args):
         """
         :param K:
         :type K: Handle_MAT_Node &
@@ -1705,7 +2044,7 @@ class BRepFill_DataMapOfNodeDataMapOfShapeShape(OCC.TCollection.TCollection_Basi
         """
         return _BRepFill.BRepFill_DataMapOfNodeDataMapOfShapeShape_Find(self, *args)
 
-    def ChangeFind(self, *args) -> "TopTools_DataMapOfShapeShape &" :
+    def ChangeFind(self, *args):
         """
         :param K:
         :type K: Handle_MAT_Node &
@@ -1714,7 +2053,7 @@ class BRepFill_DataMapOfNodeDataMapOfShapeShape(OCC.TCollection.TCollection_Basi
         """
         return _BRepFill.BRepFill_DataMapOfNodeDataMapOfShapeShape_ChangeFind(self, *args)
 
-    def Find1(self, *args) -> "Standard_Address" :
+    def Find1(self, *args):
         """
         :param K:
         :type K: Handle_MAT_Node &
@@ -1723,7 +2062,7 @@ class BRepFill_DataMapOfNodeDataMapOfShapeShape(OCC.TCollection.TCollection_Basi
         """
         return _BRepFill.BRepFill_DataMapOfNodeDataMapOfShapeShape_Find1(self, *args)
 
-    def ChangeFind1(self, *args) -> "Standard_Address" :
+    def ChangeFind1(self, *args):
         """
         :param K:
         :type K: Handle_MAT_Node &
@@ -1732,7 +2071,7 @@ class BRepFill_DataMapOfNodeDataMapOfShapeShape(OCC.TCollection.TCollection_Basi
         """
         return _BRepFill.BRepFill_DataMapOfNodeDataMapOfShapeShape_ChangeFind1(self, *args)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(BRepFill_DataMapOfNodeDataMapOfShapeShape self)"""
         return _BRepFill.BRepFill_DataMapOfNodeDataMapOfShapeShape__kill_pointed(self)
 
@@ -1762,15 +2101,19 @@ BRepFill_DataMapOfNodeDataMapOfShapeShape_swigregister(BRepFill_DataMapOfNodeDat
 class BRepFill_DataMapOfNodeShape(OCC.TCollection.TCollection_BasicMap):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self, NbBuckets=1): 
         """
         :param NbBuckets: default value is 1
-        :type NbBuckets: int
+        :type NbBuckets: Standard_Integer
+        :rtype: None
+
+        :param NbBuckets: default value is 1
+        :type NbBuckets: Standard_Integer
         :rtype: None
 
         """
-        _BRepFill.BRepFill_DataMapOfNodeShape_swiginit(self,_BRepFill.new_BRepFill_DataMapOfNodeShape(*args))
-    def Assign(self, *args) -> "BRepFill_DataMapOfNodeShape &" :
+        _BRepFill.BRepFill_DataMapOfNodeShape_swiginit(self,_BRepFill.new_BRepFill_DataMapOfNodeShape(NbBuckets))
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: BRepFill_DataMapOfNodeShape &
@@ -1779,7 +2122,7 @@ class BRepFill_DataMapOfNodeShape(OCC.TCollection.TCollection_BasicMap):
         """
         return _BRepFill.BRepFill_DataMapOfNodeShape_Assign(self, *args)
 
-    def Set(self, *args) -> "BRepFill_DataMapOfNodeShape &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: BRepFill_DataMapOfNodeShape &
@@ -1788,23 +2131,23 @@ class BRepFill_DataMapOfNodeShape(OCC.TCollection.TCollection_BasicMap):
         """
         return _BRepFill.BRepFill_DataMapOfNodeShape_Set(self, *args)
 
-    def ReSize(self, *args) -> "void" :
+    def ReSize(self, *args):
         """
         :param NbBuckets:
-        :type NbBuckets: int
+        :type NbBuckets: Standard_Integer
         :rtype: None
 
         """
         return _BRepFill.BRepFill_DataMapOfNodeShape_ReSize(self, *args)
 
-    def Clear(self, *args) -> "void" :
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _BRepFill.BRepFill_DataMapOfNodeShape_Clear(self, *args)
+        return _BRepFill.BRepFill_DataMapOfNodeShape_Clear(self)
 
-    def Bind(self, *args) -> "Standard_Boolean" :
+    def Bind(self, *args):
         """
         :param K:
         :type K: Handle_MAT_Node &
@@ -1815,7 +2158,7 @@ class BRepFill_DataMapOfNodeShape(OCC.TCollection.TCollection_BasicMap):
         """
         return _BRepFill.BRepFill_DataMapOfNodeShape_Bind(self, *args)
 
-    def IsBound(self, *args) -> "Standard_Boolean" :
+    def IsBound(self, *args):
         """
         :param K:
         :type K: Handle_MAT_Node &
@@ -1824,7 +2167,7 @@ class BRepFill_DataMapOfNodeShape(OCC.TCollection.TCollection_BasicMap):
         """
         return _BRepFill.BRepFill_DataMapOfNodeShape_IsBound(self, *args)
 
-    def UnBind(self, *args) -> "Standard_Boolean" :
+    def UnBind(self, *args):
         """
         :param K:
         :type K: Handle_MAT_Node &
@@ -1833,7 +2176,7 @@ class BRepFill_DataMapOfNodeShape(OCC.TCollection.TCollection_BasicMap):
         """
         return _BRepFill.BRepFill_DataMapOfNodeShape_UnBind(self, *args)
 
-    def Find(self, *args) -> "TopoDS_Shape const" :
+    def Find(self, *args):
         """
         :param K:
         :type K: Handle_MAT_Node &
@@ -1842,7 +2185,7 @@ class BRepFill_DataMapOfNodeShape(OCC.TCollection.TCollection_BasicMap):
         """
         return _BRepFill.BRepFill_DataMapOfNodeShape_Find(self, *args)
 
-    def ChangeFind(self, *args) -> "TopoDS_Shape" :
+    def ChangeFind(self, *args):
         """
         :param K:
         :type K: Handle_MAT_Node &
@@ -1851,7 +2194,7 @@ class BRepFill_DataMapOfNodeShape(OCC.TCollection.TCollection_BasicMap):
         """
         return _BRepFill.BRepFill_DataMapOfNodeShape_ChangeFind(self, *args)
 
-    def Find1(self, *args) -> "Standard_Address" :
+    def Find1(self, *args):
         """
         :param K:
         :type K: Handle_MAT_Node &
@@ -1860,7 +2203,7 @@ class BRepFill_DataMapOfNodeShape(OCC.TCollection.TCollection_BasicMap):
         """
         return _BRepFill.BRepFill_DataMapOfNodeShape_Find1(self, *args)
 
-    def ChangeFind1(self, *args) -> "Standard_Address" :
+    def ChangeFind1(self, *args):
         """
         :param K:
         :type K: Handle_MAT_Node &
@@ -1869,7 +2212,7 @@ class BRepFill_DataMapOfNodeShape(OCC.TCollection.TCollection_BasicMap):
         """
         return _BRepFill.BRepFill_DataMapOfNodeShape_ChangeFind1(self, *args)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(BRepFill_DataMapOfNodeShape self)"""
         return _BRepFill.BRepFill_DataMapOfNodeShape__kill_pointed(self)
 
@@ -1899,15 +2242,19 @@ BRepFill_DataMapOfNodeShape_swigregister(BRepFill_DataMapOfNodeShape)
 class BRepFill_DataMapOfOrientedShapeListOfShape(OCC.TCollection.TCollection_BasicMap):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self, NbBuckets=1): 
         """
         :param NbBuckets: default value is 1
-        :type NbBuckets: int
+        :type NbBuckets: Standard_Integer
+        :rtype: None
+
+        :param NbBuckets: default value is 1
+        :type NbBuckets: Standard_Integer
         :rtype: None
 
         """
-        _BRepFill.BRepFill_DataMapOfOrientedShapeListOfShape_swiginit(self,_BRepFill.new_BRepFill_DataMapOfOrientedShapeListOfShape(*args))
-    def Assign(self, *args) -> "BRepFill_DataMapOfOrientedShapeListOfShape &" :
+        _BRepFill.BRepFill_DataMapOfOrientedShapeListOfShape_swiginit(self,_BRepFill.new_BRepFill_DataMapOfOrientedShapeListOfShape(NbBuckets))
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: BRepFill_DataMapOfOrientedShapeListOfShape &
@@ -1916,7 +2263,7 @@ class BRepFill_DataMapOfOrientedShapeListOfShape(OCC.TCollection.TCollection_Bas
         """
         return _BRepFill.BRepFill_DataMapOfOrientedShapeListOfShape_Assign(self, *args)
 
-    def Set(self, *args) -> "BRepFill_DataMapOfOrientedShapeListOfShape &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: BRepFill_DataMapOfOrientedShapeListOfShape &
@@ -1925,23 +2272,23 @@ class BRepFill_DataMapOfOrientedShapeListOfShape(OCC.TCollection.TCollection_Bas
         """
         return _BRepFill.BRepFill_DataMapOfOrientedShapeListOfShape_Set(self, *args)
 
-    def ReSize(self, *args) -> "void" :
+    def ReSize(self, *args):
         """
         :param NbBuckets:
-        :type NbBuckets: int
+        :type NbBuckets: Standard_Integer
         :rtype: None
 
         """
         return _BRepFill.BRepFill_DataMapOfOrientedShapeListOfShape_ReSize(self, *args)
 
-    def Clear(self, *args) -> "void" :
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _BRepFill.BRepFill_DataMapOfOrientedShapeListOfShape_Clear(self, *args)
+        return _BRepFill.BRepFill_DataMapOfOrientedShapeListOfShape_Clear(self)
 
-    def Bind(self, *args) -> "Standard_Boolean" :
+    def Bind(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -1952,7 +2299,7 @@ class BRepFill_DataMapOfOrientedShapeListOfShape(OCC.TCollection.TCollection_Bas
         """
         return _BRepFill.BRepFill_DataMapOfOrientedShapeListOfShape_Bind(self, *args)
 
-    def IsBound(self, *args) -> "Standard_Boolean" :
+    def IsBound(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -1961,7 +2308,7 @@ class BRepFill_DataMapOfOrientedShapeListOfShape(OCC.TCollection.TCollection_Bas
         """
         return _BRepFill.BRepFill_DataMapOfOrientedShapeListOfShape_IsBound(self, *args)
 
-    def UnBind(self, *args) -> "Standard_Boolean" :
+    def UnBind(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -1970,7 +2317,7 @@ class BRepFill_DataMapOfOrientedShapeListOfShape(OCC.TCollection.TCollection_Bas
         """
         return _BRepFill.BRepFill_DataMapOfOrientedShapeListOfShape_UnBind(self, *args)
 
-    def Find(self, *args) -> "TopTools_ListOfShape const &" :
+    def Find(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -1979,7 +2326,7 @@ class BRepFill_DataMapOfOrientedShapeListOfShape(OCC.TCollection.TCollection_Bas
         """
         return _BRepFill.BRepFill_DataMapOfOrientedShapeListOfShape_Find(self, *args)
 
-    def ChangeFind(self, *args) -> "TopTools_ListOfShape &" :
+    def ChangeFind(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -1988,7 +2335,7 @@ class BRepFill_DataMapOfOrientedShapeListOfShape(OCC.TCollection.TCollection_Bas
         """
         return _BRepFill.BRepFill_DataMapOfOrientedShapeListOfShape_ChangeFind(self, *args)
 
-    def Find1(self, *args) -> "Standard_Address" :
+    def Find1(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -1997,7 +2344,7 @@ class BRepFill_DataMapOfOrientedShapeListOfShape(OCC.TCollection.TCollection_Bas
         """
         return _BRepFill.BRepFill_DataMapOfOrientedShapeListOfShape_Find1(self, *args)
 
-    def ChangeFind1(self, *args) -> "Standard_Address" :
+    def ChangeFind1(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -2006,7 +2353,7 @@ class BRepFill_DataMapOfOrientedShapeListOfShape(OCC.TCollection.TCollection_Bas
         """
         return _BRepFill.BRepFill_DataMapOfOrientedShapeListOfShape_ChangeFind1(self, *args)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(BRepFill_DataMapOfOrientedShapeListOfShape self)"""
         return _BRepFill.BRepFill_DataMapOfOrientedShapeListOfShape__kill_pointed(self)
 
@@ -2036,15 +2383,19 @@ BRepFill_DataMapOfOrientedShapeListOfShape_swigregister(BRepFill_DataMapOfOrient
 class BRepFill_DataMapOfShapeDataMapOfShapeListOfShape(OCC.TCollection.TCollection_BasicMap):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self, NbBuckets=1): 
         """
         :param NbBuckets: default value is 1
-        :type NbBuckets: int
+        :type NbBuckets: Standard_Integer
+        :rtype: None
+
+        :param NbBuckets: default value is 1
+        :type NbBuckets: Standard_Integer
         :rtype: None
 
         """
-        _BRepFill.BRepFill_DataMapOfShapeDataMapOfShapeListOfShape_swiginit(self,_BRepFill.new_BRepFill_DataMapOfShapeDataMapOfShapeListOfShape(*args))
-    def Assign(self, *args) -> "BRepFill_DataMapOfShapeDataMapOfShapeListOfShape &" :
+        _BRepFill.BRepFill_DataMapOfShapeDataMapOfShapeListOfShape_swiginit(self,_BRepFill.new_BRepFill_DataMapOfShapeDataMapOfShapeListOfShape(NbBuckets))
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: BRepFill_DataMapOfShapeDataMapOfShapeListOfShape &
@@ -2053,7 +2404,7 @@ class BRepFill_DataMapOfShapeDataMapOfShapeListOfShape(OCC.TCollection.TCollecti
         """
         return _BRepFill.BRepFill_DataMapOfShapeDataMapOfShapeListOfShape_Assign(self, *args)
 
-    def Set(self, *args) -> "BRepFill_DataMapOfShapeDataMapOfShapeListOfShape &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: BRepFill_DataMapOfShapeDataMapOfShapeListOfShape &
@@ -2062,23 +2413,23 @@ class BRepFill_DataMapOfShapeDataMapOfShapeListOfShape(OCC.TCollection.TCollecti
         """
         return _BRepFill.BRepFill_DataMapOfShapeDataMapOfShapeListOfShape_Set(self, *args)
 
-    def ReSize(self, *args) -> "void" :
+    def ReSize(self, *args):
         """
         :param NbBuckets:
-        :type NbBuckets: int
+        :type NbBuckets: Standard_Integer
         :rtype: None
 
         """
         return _BRepFill.BRepFill_DataMapOfShapeDataMapOfShapeListOfShape_ReSize(self, *args)
 
-    def Clear(self, *args) -> "void" :
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _BRepFill.BRepFill_DataMapOfShapeDataMapOfShapeListOfShape_Clear(self, *args)
+        return _BRepFill.BRepFill_DataMapOfShapeDataMapOfShapeListOfShape_Clear(self)
 
-    def Bind(self, *args) -> "Standard_Boolean" :
+    def Bind(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -2089,7 +2440,7 @@ class BRepFill_DataMapOfShapeDataMapOfShapeListOfShape(OCC.TCollection.TCollecti
         """
         return _BRepFill.BRepFill_DataMapOfShapeDataMapOfShapeListOfShape_Bind(self, *args)
 
-    def IsBound(self, *args) -> "Standard_Boolean" :
+    def IsBound(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -2098,7 +2449,7 @@ class BRepFill_DataMapOfShapeDataMapOfShapeListOfShape(OCC.TCollection.TCollecti
         """
         return _BRepFill.BRepFill_DataMapOfShapeDataMapOfShapeListOfShape_IsBound(self, *args)
 
-    def UnBind(self, *args) -> "Standard_Boolean" :
+    def UnBind(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -2107,7 +2458,7 @@ class BRepFill_DataMapOfShapeDataMapOfShapeListOfShape(OCC.TCollection.TCollecti
         """
         return _BRepFill.BRepFill_DataMapOfShapeDataMapOfShapeListOfShape_UnBind(self, *args)
 
-    def Find(self, *args) -> "TopTools_DataMapOfShapeListOfShape const &" :
+    def Find(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -2116,7 +2467,7 @@ class BRepFill_DataMapOfShapeDataMapOfShapeListOfShape(OCC.TCollection.TCollecti
         """
         return _BRepFill.BRepFill_DataMapOfShapeDataMapOfShapeListOfShape_Find(self, *args)
 
-    def ChangeFind(self, *args) -> "TopTools_DataMapOfShapeListOfShape &" :
+    def ChangeFind(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -2125,7 +2476,7 @@ class BRepFill_DataMapOfShapeDataMapOfShapeListOfShape(OCC.TCollection.TCollecti
         """
         return _BRepFill.BRepFill_DataMapOfShapeDataMapOfShapeListOfShape_ChangeFind(self, *args)
 
-    def Find1(self, *args) -> "Standard_Address" :
+    def Find1(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -2134,7 +2485,7 @@ class BRepFill_DataMapOfShapeDataMapOfShapeListOfShape(OCC.TCollection.TCollecti
         """
         return _BRepFill.BRepFill_DataMapOfShapeDataMapOfShapeListOfShape_Find1(self, *args)
 
-    def ChangeFind1(self, *args) -> "Standard_Address" :
+    def ChangeFind1(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -2143,7 +2494,7 @@ class BRepFill_DataMapOfShapeDataMapOfShapeListOfShape(OCC.TCollection.TCollecti
         """
         return _BRepFill.BRepFill_DataMapOfShapeDataMapOfShapeListOfShape_ChangeFind1(self, *args)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(BRepFill_DataMapOfShapeDataMapOfShapeListOfShape self)"""
         return _BRepFill.BRepFill_DataMapOfShapeDataMapOfShapeListOfShape__kill_pointed(self)
 
@@ -2173,15 +2524,19 @@ BRepFill_DataMapOfShapeDataMapOfShapeListOfShape_swigregister(BRepFill_DataMapOf
 class BRepFill_DataMapOfShapeHArray2OfShape(OCC.TCollection.TCollection_BasicMap):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self, NbBuckets=1): 
         """
         :param NbBuckets: default value is 1
-        :type NbBuckets: int
+        :type NbBuckets: Standard_Integer
+        :rtype: None
+
+        :param NbBuckets: default value is 1
+        :type NbBuckets: Standard_Integer
         :rtype: None
 
         """
-        _BRepFill.BRepFill_DataMapOfShapeHArray2OfShape_swiginit(self,_BRepFill.new_BRepFill_DataMapOfShapeHArray2OfShape(*args))
-    def Assign(self, *args) -> "BRepFill_DataMapOfShapeHArray2OfShape &" :
+        _BRepFill.BRepFill_DataMapOfShapeHArray2OfShape_swiginit(self,_BRepFill.new_BRepFill_DataMapOfShapeHArray2OfShape(NbBuckets))
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: BRepFill_DataMapOfShapeHArray2OfShape &
@@ -2190,7 +2545,7 @@ class BRepFill_DataMapOfShapeHArray2OfShape(OCC.TCollection.TCollection_BasicMap
         """
         return _BRepFill.BRepFill_DataMapOfShapeHArray2OfShape_Assign(self, *args)
 
-    def Set(self, *args) -> "BRepFill_DataMapOfShapeHArray2OfShape &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: BRepFill_DataMapOfShapeHArray2OfShape &
@@ -2199,23 +2554,23 @@ class BRepFill_DataMapOfShapeHArray2OfShape(OCC.TCollection.TCollection_BasicMap
         """
         return _BRepFill.BRepFill_DataMapOfShapeHArray2OfShape_Set(self, *args)
 
-    def ReSize(self, *args) -> "void" :
+    def ReSize(self, *args):
         """
         :param NbBuckets:
-        :type NbBuckets: int
+        :type NbBuckets: Standard_Integer
         :rtype: None
 
         """
         return _BRepFill.BRepFill_DataMapOfShapeHArray2OfShape_ReSize(self, *args)
 
-    def Clear(self, *args) -> "void" :
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _BRepFill.BRepFill_DataMapOfShapeHArray2OfShape_Clear(self, *args)
+        return _BRepFill.BRepFill_DataMapOfShapeHArray2OfShape_Clear(self)
 
-    def Bind(self, *args) -> "Standard_Boolean" :
+    def Bind(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -2226,7 +2581,7 @@ class BRepFill_DataMapOfShapeHArray2OfShape(OCC.TCollection.TCollection_BasicMap
         """
         return _BRepFill.BRepFill_DataMapOfShapeHArray2OfShape_Bind(self, *args)
 
-    def IsBound(self, *args) -> "Standard_Boolean" :
+    def IsBound(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -2235,7 +2590,7 @@ class BRepFill_DataMapOfShapeHArray2OfShape(OCC.TCollection.TCollection_BasicMap
         """
         return _BRepFill.BRepFill_DataMapOfShapeHArray2OfShape_IsBound(self, *args)
 
-    def UnBind(self, *args) -> "Standard_Boolean" :
+    def UnBind(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -2244,7 +2599,7 @@ class BRepFill_DataMapOfShapeHArray2OfShape(OCC.TCollection.TCollection_BasicMap
         """
         return _BRepFill.BRepFill_DataMapOfShapeHArray2OfShape_UnBind(self, *args)
 
-    def Find(self, *args) -> "Handle_TopTools_HArray2OfShape const &" :
+    def Find(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -2253,7 +2608,7 @@ class BRepFill_DataMapOfShapeHArray2OfShape(OCC.TCollection.TCollection_BasicMap
         """
         return _BRepFill.BRepFill_DataMapOfShapeHArray2OfShape_Find(self, *args)
 
-    def ChangeFind(self, *args) -> "Handle_TopTools_HArray2OfShape &" :
+    def ChangeFind(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -2262,7 +2617,7 @@ class BRepFill_DataMapOfShapeHArray2OfShape(OCC.TCollection.TCollection_BasicMap
         """
         return _BRepFill.BRepFill_DataMapOfShapeHArray2OfShape_ChangeFind(self, *args)
 
-    def Find1(self, *args) -> "Standard_Address" :
+    def Find1(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -2271,7 +2626,7 @@ class BRepFill_DataMapOfShapeHArray2OfShape(OCC.TCollection.TCollection_BasicMap
         """
         return _BRepFill.BRepFill_DataMapOfShapeHArray2OfShape_Find1(self, *args)
 
-    def ChangeFind1(self, *args) -> "Standard_Address" :
+    def ChangeFind1(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -2280,7 +2635,7 @@ class BRepFill_DataMapOfShapeHArray2OfShape(OCC.TCollection.TCollection_BasicMap
         """
         return _BRepFill.BRepFill_DataMapOfShapeHArray2OfShape_ChangeFind1(self, *args)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(BRepFill_DataMapOfShapeHArray2OfShape self)"""
         return _BRepFill.BRepFill_DataMapOfShapeHArray2OfShape__kill_pointed(self)
 
@@ -2310,15 +2665,19 @@ BRepFill_DataMapOfShapeHArray2OfShape_swigregister(BRepFill_DataMapOfShapeHArray
 class BRepFill_DataMapOfShapeSequenceOfPnt(OCC.TCollection.TCollection_BasicMap):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self, NbBuckets=1): 
         """
         :param NbBuckets: default value is 1
-        :type NbBuckets: int
+        :type NbBuckets: Standard_Integer
+        :rtype: None
+
+        :param NbBuckets: default value is 1
+        :type NbBuckets: Standard_Integer
         :rtype: None
 
         """
-        _BRepFill.BRepFill_DataMapOfShapeSequenceOfPnt_swiginit(self,_BRepFill.new_BRepFill_DataMapOfShapeSequenceOfPnt(*args))
-    def Assign(self, *args) -> "BRepFill_DataMapOfShapeSequenceOfPnt &" :
+        _BRepFill.BRepFill_DataMapOfShapeSequenceOfPnt_swiginit(self,_BRepFill.new_BRepFill_DataMapOfShapeSequenceOfPnt(NbBuckets))
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: BRepFill_DataMapOfShapeSequenceOfPnt &
@@ -2327,7 +2686,7 @@ class BRepFill_DataMapOfShapeSequenceOfPnt(OCC.TCollection.TCollection_BasicMap)
         """
         return _BRepFill.BRepFill_DataMapOfShapeSequenceOfPnt_Assign(self, *args)
 
-    def Set(self, *args) -> "BRepFill_DataMapOfShapeSequenceOfPnt &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: BRepFill_DataMapOfShapeSequenceOfPnt &
@@ -2336,23 +2695,23 @@ class BRepFill_DataMapOfShapeSequenceOfPnt(OCC.TCollection.TCollection_BasicMap)
         """
         return _BRepFill.BRepFill_DataMapOfShapeSequenceOfPnt_Set(self, *args)
 
-    def ReSize(self, *args) -> "void" :
+    def ReSize(self, *args):
         """
         :param NbBuckets:
-        :type NbBuckets: int
+        :type NbBuckets: Standard_Integer
         :rtype: None
 
         """
         return _BRepFill.BRepFill_DataMapOfShapeSequenceOfPnt_ReSize(self, *args)
 
-    def Clear(self, *args) -> "void" :
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _BRepFill.BRepFill_DataMapOfShapeSequenceOfPnt_Clear(self, *args)
+        return _BRepFill.BRepFill_DataMapOfShapeSequenceOfPnt_Clear(self)
 
-    def Bind(self, *args) -> "Standard_Boolean" :
+    def Bind(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -2363,7 +2722,7 @@ class BRepFill_DataMapOfShapeSequenceOfPnt(OCC.TCollection.TCollection_BasicMap)
         """
         return _BRepFill.BRepFill_DataMapOfShapeSequenceOfPnt_Bind(self, *args)
 
-    def IsBound(self, *args) -> "Standard_Boolean" :
+    def IsBound(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -2372,7 +2731,7 @@ class BRepFill_DataMapOfShapeSequenceOfPnt(OCC.TCollection.TCollection_BasicMap)
         """
         return _BRepFill.BRepFill_DataMapOfShapeSequenceOfPnt_IsBound(self, *args)
 
-    def UnBind(self, *args) -> "Standard_Boolean" :
+    def UnBind(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -2381,7 +2740,7 @@ class BRepFill_DataMapOfShapeSequenceOfPnt(OCC.TCollection.TCollection_BasicMap)
         """
         return _BRepFill.BRepFill_DataMapOfShapeSequenceOfPnt_UnBind(self, *args)
 
-    def Find(self, *args) -> "TColgp_SequenceOfPnt const &" :
+    def Find(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -2390,7 +2749,7 @@ class BRepFill_DataMapOfShapeSequenceOfPnt(OCC.TCollection.TCollection_BasicMap)
         """
         return _BRepFill.BRepFill_DataMapOfShapeSequenceOfPnt_Find(self, *args)
 
-    def ChangeFind(self, *args) -> "TColgp_SequenceOfPnt &" :
+    def ChangeFind(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -2399,7 +2758,7 @@ class BRepFill_DataMapOfShapeSequenceOfPnt(OCC.TCollection.TCollection_BasicMap)
         """
         return _BRepFill.BRepFill_DataMapOfShapeSequenceOfPnt_ChangeFind(self, *args)
 
-    def Find1(self, *args) -> "Standard_Address" :
+    def Find1(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -2408,7 +2767,7 @@ class BRepFill_DataMapOfShapeSequenceOfPnt(OCC.TCollection.TCollection_BasicMap)
         """
         return _BRepFill.BRepFill_DataMapOfShapeSequenceOfPnt_Find1(self, *args)
 
-    def ChangeFind1(self, *args) -> "Standard_Address" :
+    def ChangeFind1(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -2417,7 +2776,7 @@ class BRepFill_DataMapOfShapeSequenceOfPnt(OCC.TCollection.TCollection_BasicMap)
         """
         return _BRepFill.BRepFill_DataMapOfShapeSequenceOfPnt_ChangeFind1(self, *args)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(BRepFill_DataMapOfShapeSequenceOfPnt self)"""
         return _BRepFill.BRepFill_DataMapOfShapeSequenceOfPnt__kill_pointed(self)
 
@@ -2447,15 +2806,19 @@ BRepFill_DataMapOfShapeSequenceOfPnt_swigregister(BRepFill_DataMapOfShapeSequenc
 class BRepFill_DataMapOfShapeSequenceOfReal(OCC.TCollection.TCollection_BasicMap):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self, NbBuckets=1): 
         """
         :param NbBuckets: default value is 1
-        :type NbBuckets: int
+        :type NbBuckets: Standard_Integer
+        :rtype: None
+
+        :param NbBuckets: default value is 1
+        :type NbBuckets: Standard_Integer
         :rtype: None
 
         """
-        _BRepFill.BRepFill_DataMapOfShapeSequenceOfReal_swiginit(self,_BRepFill.new_BRepFill_DataMapOfShapeSequenceOfReal(*args))
-    def Assign(self, *args) -> "BRepFill_DataMapOfShapeSequenceOfReal &" :
+        _BRepFill.BRepFill_DataMapOfShapeSequenceOfReal_swiginit(self,_BRepFill.new_BRepFill_DataMapOfShapeSequenceOfReal(NbBuckets))
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: BRepFill_DataMapOfShapeSequenceOfReal &
@@ -2464,7 +2827,7 @@ class BRepFill_DataMapOfShapeSequenceOfReal(OCC.TCollection.TCollection_BasicMap
         """
         return _BRepFill.BRepFill_DataMapOfShapeSequenceOfReal_Assign(self, *args)
 
-    def Set(self, *args) -> "BRepFill_DataMapOfShapeSequenceOfReal &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: BRepFill_DataMapOfShapeSequenceOfReal &
@@ -2473,23 +2836,23 @@ class BRepFill_DataMapOfShapeSequenceOfReal(OCC.TCollection.TCollection_BasicMap
         """
         return _BRepFill.BRepFill_DataMapOfShapeSequenceOfReal_Set(self, *args)
 
-    def ReSize(self, *args) -> "void" :
+    def ReSize(self, *args):
         """
         :param NbBuckets:
-        :type NbBuckets: int
+        :type NbBuckets: Standard_Integer
         :rtype: None
 
         """
         return _BRepFill.BRepFill_DataMapOfShapeSequenceOfReal_ReSize(self, *args)
 
-    def Clear(self, *args) -> "void" :
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _BRepFill.BRepFill_DataMapOfShapeSequenceOfReal_Clear(self, *args)
+        return _BRepFill.BRepFill_DataMapOfShapeSequenceOfReal_Clear(self)
 
-    def Bind(self, *args) -> "Standard_Boolean" :
+    def Bind(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -2500,7 +2863,7 @@ class BRepFill_DataMapOfShapeSequenceOfReal(OCC.TCollection.TCollection_BasicMap
         """
         return _BRepFill.BRepFill_DataMapOfShapeSequenceOfReal_Bind(self, *args)
 
-    def IsBound(self, *args) -> "Standard_Boolean" :
+    def IsBound(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -2509,7 +2872,7 @@ class BRepFill_DataMapOfShapeSequenceOfReal(OCC.TCollection.TCollection_BasicMap
         """
         return _BRepFill.BRepFill_DataMapOfShapeSequenceOfReal_IsBound(self, *args)
 
-    def UnBind(self, *args) -> "Standard_Boolean" :
+    def UnBind(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -2518,7 +2881,7 @@ class BRepFill_DataMapOfShapeSequenceOfReal(OCC.TCollection.TCollection_BasicMap
         """
         return _BRepFill.BRepFill_DataMapOfShapeSequenceOfReal_UnBind(self, *args)
 
-    def Find(self, *args) -> "TColStd_SequenceOfReal const &" :
+    def Find(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -2527,7 +2890,7 @@ class BRepFill_DataMapOfShapeSequenceOfReal(OCC.TCollection.TCollection_BasicMap
         """
         return _BRepFill.BRepFill_DataMapOfShapeSequenceOfReal_Find(self, *args)
 
-    def ChangeFind(self, *args) -> "TColStd_SequenceOfReal &" :
+    def ChangeFind(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -2536,7 +2899,7 @@ class BRepFill_DataMapOfShapeSequenceOfReal(OCC.TCollection.TCollection_BasicMap
         """
         return _BRepFill.BRepFill_DataMapOfShapeSequenceOfReal_ChangeFind(self, *args)
 
-    def Find1(self, *args) -> "Standard_Address" :
+    def Find1(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -2545,7 +2908,7 @@ class BRepFill_DataMapOfShapeSequenceOfReal(OCC.TCollection.TCollection_BasicMap
         """
         return _BRepFill.BRepFill_DataMapOfShapeSequenceOfReal_Find1(self, *args)
 
-    def ChangeFind1(self, *args) -> "Standard_Address" :
+    def ChangeFind1(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -2554,7 +2917,7 @@ class BRepFill_DataMapOfShapeSequenceOfReal(OCC.TCollection.TCollection_BasicMap
         """
         return _BRepFill.BRepFill_DataMapOfShapeSequenceOfReal_ChangeFind1(self, *args)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(BRepFill_DataMapOfShapeSequenceOfReal self)"""
         return _BRepFill.BRepFill_DataMapOfShapeSequenceOfReal__kill_pointed(self)
 
@@ -2596,8 +2959,32 @@ class BRepFill_Draft(object):
 
         """
         _BRepFill.BRepFill_Draft_swiginit(self,_BRepFill.new_BRepFill_Draft(*args))
-    def SetOptions(self, *args) -> "void" :
+    def SetOptions(self, *args):
         """
+        :param Style: default value is BRepFill_Right
+        :type Style: BRepFill_TransitionStyle
+        :param AngleMin: default value is 0.01
+        :type AngleMin: float
+        :param AngleMax: default value is 3.0
+        :type AngleMax: float
+        :rtype: None
+
+        :param Style: default value is BRepFill_Right
+        :type Style: BRepFill_TransitionStyle
+        :param AngleMin: default value is 0.01
+        :type AngleMin: float
+        :param AngleMax: default value is 3.0
+        :type AngleMax: float
+        :rtype: None
+
+        :param Style: default value is BRepFill_Right
+        :type Style: BRepFill_TransitionStyle
+        :param AngleMin: default value is 0.01
+        :type AngleMin: float
+        :param AngleMax: default value is 3.0
+        :type AngleMax: float
+        :rtype: None
+
         :param Style: default value is BRepFill_Right
         :type Style: BRepFill_TransitionStyle
         :param AngleMin: default value is 0.01
@@ -2609,8 +2996,12 @@ class BRepFill_Draft(object):
         """
         return _BRepFill.BRepFill_Draft_SetOptions(self, *args)
 
-    def SetDraft(self, *args) -> "void" :
+    def SetDraft(self, *args):
         """
+        :param IsInternal: default value is Standard_False
+        :type IsInternal: bool
+        :rtype: None
+
         :param IsInternal: default value is Standard_False
         :type IsInternal: bool
         :rtype: None
@@ -2618,10 +3009,16 @@ class BRepFill_Draft(object):
         """
         return _BRepFill.BRepFill_Draft_SetDraft(self, *args)
 
-    def Perform(self, *args) -> "void" :
+    def Perform(self, *args):
         """
         :param LengthMax:
         :type LengthMax: float
+        :rtype: None
+
+        :param Surface:
+        :type Surface: Handle_Geom_Surface &
+        :param KeepInsideSurface: default value is Standard_True
+        :type KeepInsideSurface: bool
         :rtype: None
 
         :param Surface:
@@ -2636,26 +3033,32 @@ class BRepFill_Draft(object):
         :type KeepOutSide: bool
         :rtype: None
 
+        :param StopShape:
+        :type StopShape: TopoDS_Shape &
+        :param KeepOutSide: default value is Standard_True
+        :type KeepOutSide: bool
+        :rtype: None
+
         """
         return _BRepFill.BRepFill_Draft_Perform(self, *args)
 
-    def IsDone(self, *args) -> "Standard_Boolean" :
+    def IsDone(self):
         """
         :rtype: bool
 
         """
-        return _BRepFill.BRepFill_Draft_IsDone(self, *args)
+        return _BRepFill.BRepFill_Draft_IsDone(self)
 
-    def Shell(self, *args) -> "TopoDS_Shell" :
+    def Shell(self):
         """
         * Returns the draft surface To have the complete shape you have to use the Shape() methode.
 
         :rtype: TopoDS_Shell
 
         """
-        return _BRepFill.BRepFill_Draft_Shell(self, *args)
+        return _BRepFill.BRepFill_Draft_Shell(self)
 
-    def Generated(self, *args) -> "TopTools_ListOfShape const &" :
+    def Generated(self, *args):
         """
         * Returns the list of shapes generated from the shape <S>.
 
@@ -2666,12 +3069,12 @@ class BRepFill_Draft(object):
         """
         return _BRepFill.BRepFill_Draft_Generated(self, *args)
 
-    def Shape(self, *args) -> "TopoDS_Shape" :
+    def Shape(self):
         """
         :rtype: TopoDS_Shape
 
         """
-        return _BRepFill.BRepFill_Draft_Shape(self, *args)
+        return _BRepFill.BRepFill_Draft_Shape(self)
 
     def __del__(self):
     	try:
@@ -2742,6 +3145,62 @@ class BRepFill_Evolved(object):
         :type Solid: bool
         :rtype: None
 
+        * Creates an evolved shape by sweeping the <Profile> along the <Spine>. <AxeProf> is used to set the position of <Profile> along <Spine> as follows: <AxeProf> slides on the profile with direction colinear to the normal to <Spine>, and its <XDirection> mixed with the tangent to <Spine>.
+
+        :param Spine:
+        :type Spine: TopoDS_Wire &
+        :param Profile:
+        :type Profile: TopoDS_Wire &
+        :param AxeProf:
+        :type AxeProf: gp_Ax3
+        :param Join: default value is GeomAbs_Arc
+        :type Join: GeomAbs_JoinType
+        :param Solid: default value is Standard_False
+        :type Solid: bool
+        :rtype: None
+
+        * Creates an evolved shape by sweeping the <Profile> along the <Spine>. <AxeProf> is used to set the position of <Profile> along <Spine> as follows: <AxeProf> slides on the profile with direction colinear to the normal to <Spine>, and its <XDirection> mixed with the tangent to <Spine>.
+
+        :param Spine:
+        :type Spine: TopoDS_Wire &
+        :param Profile:
+        :type Profile: TopoDS_Wire &
+        :param AxeProf:
+        :type AxeProf: gp_Ax3
+        :param Join: default value is GeomAbs_Arc
+        :type Join: GeomAbs_JoinType
+        :param Solid: default value is Standard_False
+        :type Solid: bool
+        :rtype: None
+
+        * Creates an evolved shape by sweeping the <Profile> along the <Spine>
+
+        :param Spine:
+        :type Spine: TopoDS_Face &
+        :param Profile:
+        :type Profile: TopoDS_Wire &
+        :param AxeProf:
+        :type AxeProf: gp_Ax3
+        :param Join: default value is GeomAbs_Arc
+        :type Join: GeomAbs_JoinType
+        :param Solid: default value is Standard_False
+        :type Solid: bool
+        :rtype: None
+
+        * Creates an evolved shape by sweeping the <Profile> along the <Spine>
+
+        :param Spine:
+        :type Spine: TopoDS_Face &
+        :param Profile:
+        :type Profile: TopoDS_Wire &
+        :param AxeProf:
+        :type AxeProf: gp_Ax3
+        :param Join: default value is GeomAbs_Arc
+        :type Join: GeomAbs_JoinType
+        :param Solid: default value is Standard_False
+        :type Solid: bool
+        :rtype: None
+
         * Creates an evolved shape by sweeping the <Profile> along the <Spine>
 
         :param Spine:
@@ -2758,8 +3217,36 @@ class BRepFill_Evolved(object):
 
         """
         _BRepFill.BRepFill_Evolved_swiginit(self,_BRepFill.new_BRepFill_Evolved(*args))
-    def Perform(self, *args) -> "void" :
+    def Perform(self, *args):
         """
+        * Performs an evolved shape by sweeping the <Profile> along the <Spine>
+
+        :param Spine:
+        :type Spine: TopoDS_Wire &
+        :param Profile:
+        :type Profile: TopoDS_Wire &
+        :param AxeProf:
+        :type AxeProf: gp_Ax3
+        :param Join: default value is GeomAbs_Arc
+        :type Join: GeomAbs_JoinType
+        :param Solid: default value is Standard_False
+        :type Solid: bool
+        :rtype: None
+
+        * Performs an evolved shape by sweeping the <Profile> along the <Spine>
+
+        :param Spine:
+        :type Spine: TopoDS_Wire &
+        :param Profile:
+        :type Profile: TopoDS_Wire &
+        :param AxeProf:
+        :type AxeProf: gp_Ax3
+        :param Join: default value is GeomAbs_Arc
+        :type Join: GeomAbs_JoinType
+        :param Solid: default value is Standard_False
+        :type Solid: bool
+        :rtype: None
+
         * Performs an evolved shape by sweeping the <Profile> along the <Spine>
 
         :param Spine:
@@ -2788,26 +3275,54 @@ class BRepFill_Evolved(object):
         :type Solid: bool
         :rtype: None
 
+        * Performs an evolved shape by sweeping the <Profile> along the <Spine>
+
+        :param Spine:
+        :type Spine: TopoDS_Face &
+        :param Profile:
+        :type Profile: TopoDS_Wire &
+        :param AxeProf:
+        :type AxeProf: gp_Ax3
+        :param Join: default value is GeomAbs_Arc
+        :type Join: GeomAbs_JoinType
+        :param Solid: default value is Standard_False
+        :type Solid: bool
+        :rtype: None
+
+        * Performs an evolved shape by sweeping the <Profile> along the <Spine>
+
+        :param Spine:
+        :type Spine: TopoDS_Face &
+        :param Profile:
+        :type Profile: TopoDS_Wire &
+        :param AxeProf:
+        :type AxeProf: gp_Ax3
+        :param Join: default value is GeomAbs_Arc
+        :type Join: GeomAbs_JoinType
+        :param Solid: default value is Standard_False
+        :type Solid: bool
+        :rtype: None
+
         """
         return _BRepFill.BRepFill_Evolved_Perform(self, *args)
 
-    def IsDone(self, *args) -> "Standard_Boolean" :
+    def IsDone(self):
         """
         :rtype: bool
 
         """
-        return _BRepFill.BRepFill_Evolved_IsDone(self, *args)
+        return _BRepFill.BRepFill_Evolved_IsDone(self)
 
-    def Shape(self, *args) -> "TopoDS_Shape const" :
+    def Shape(self):
         """
         * returns the generated shape.
 
         :rtype: TopoDS_Shape
 
         """
-        return _BRepFill.BRepFill_Evolved_Shape(self, *args)
+        return _BRepFill.BRepFill_Evolved_Shape(self)
 
-    def GeneratedShapes(self, *args) -> "TopTools_ListOfShape const &" :
+    def GeneratedShapes(self, *args):
         """
         * Returns the shapes created from a subshape <SpineShape> of the spine and a subshape <ProfShape> on the profile.
 
@@ -2820,30 +3335,30 @@ class BRepFill_Evolved(object):
         """
         return _BRepFill.BRepFill_Evolved_GeneratedShapes(self, *args)
 
-    def JoinType(self, *args) -> "GeomAbs_JoinType" :
+    def JoinType(self):
         """
         :rtype: GeomAbs_JoinType
 
         """
-        return _BRepFill.BRepFill_Evolved_JoinType(self, *args)
+        return _BRepFill.BRepFill_Evolved_JoinType(self)
 
-    def Top(self, *args) -> "TopoDS_Shape const" :
+    def Top(self):
         """
         * Return the face Top if <Solid> is True in the constructor.
 
         :rtype: TopoDS_Shape
 
         """
-        return _BRepFill.BRepFill_Evolved_Top(self, *args)
+        return _BRepFill.BRepFill_Evolved_Top(self)
 
-    def Bottom(self, *args) -> "TopoDS_Shape const" :
+    def Bottom(self):
         """
         * Return the face Bottom if <Solid> is True in the constructor.
 
         :rtype: TopoDS_Shape
 
         """
-        return _BRepFill.BRepFill_Evolved_Bottom(self, *args)
+        return _BRepFill.BRepFill_Evolved_Bottom(self)
 
     def __del__(self):
     	try:
@@ -2899,11 +3414,11 @@ class BRepFill_Filling(object):
         * Constructor
 
         :param Degree: default value is 3
-        :type Degree: int
+        :type Degree: Standard_Integer
         :param NbPtsOnCur: default value is 15
-        :type NbPtsOnCur: int
+        :type NbPtsOnCur: Standard_Integer
         :param NbIter: default value is 2
-        :type NbIter: int
+        :type NbIter: Standard_Integer
         :param Anisotropie: default value is Standard_False
         :type Anisotropie: bool
         :param Tol2d: default value is 0.00001
@@ -2915,14 +3430,254 @@ class BRepFill_Filling(object):
         :param TolCurv: default value is 0.1
         :type TolCurv: float
         :param MaxDeg: default value is 8
-        :type MaxDeg: int
+        :type MaxDeg: Standard_Integer
         :param MaxSegments: default value is 9
-        :type MaxSegments: int
+        :type MaxSegments: Standard_Integer
+        :rtype: None
+
+        * Constructor
+
+        :param Degree: default value is 3
+        :type Degree: Standard_Integer
+        :param NbPtsOnCur: default value is 15
+        :type NbPtsOnCur: Standard_Integer
+        :param NbIter: default value is 2
+        :type NbIter: Standard_Integer
+        :param Anisotropie: default value is Standard_False
+        :type Anisotropie: bool
+        :param Tol2d: default value is 0.00001
+        :type Tol2d: float
+        :param Tol3d: default value is 0.0001
+        :type Tol3d: float
+        :param TolAng: default value is 0.01
+        :type TolAng: float
+        :param TolCurv: default value is 0.1
+        :type TolCurv: float
+        :param MaxDeg: default value is 8
+        :type MaxDeg: Standard_Integer
+        :param MaxSegments: default value is 9
+        :type MaxSegments: Standard_Integer
+        :rtype: None
+
+        * Constructor
+
+        :param Degree: default value is 3
+        :type Degree: Standard_Integer
+        :param NbPtsOnCur: default value is 15
+        :type NbPtsOnCur: Standard_Integer
+        :param NbIter: default value is 2
+        :type NbIter: Standard_Integer
+        :param Anisotropie: default value is Standard_False
+        :type Anisotropie: bool
+        :param Tol2d: default value is 0.00001
+        :type Tol2d: float
+        :param Tol3d: default value is 0.0001
+        :type Tol3d: float
+        :param TolAng: default value is 0.01
+        :type TolAng: float
+        :param TolCurv: default value is 0.1
+        :type TolCurv: float
+        :param MaxDeg: default value is 8
+        :type MaxDeg: Standard_Integer
+        :param MaxSegments: default value is 9
+        :type MaxSegments: Standard_Integer
+        :rtype: None
+
+        * Constructor
+
+        :param Degree: default value is 3
+        :type Degree: Standard_Integer
+        :param NbPtsOnCur: default value is 15
+        :type NbPtsOnCur: Standard_Integer
+        :param NbIter: default value is 2
+        :type NbIter: Standard_Integer
+        :param Anisotropie: default value is Standard_False
+        :type Anisotropie: bool
+        :param Tol2d: default value is 0.00001
+        :type Tol2d: float
+        :param Tol3d: default value is 0.0001
+        :type Tol3d: float
+        :param TolAng: default value is 0.01
+        :type TolAng: float
+        :param TolCurv: default value is 0.1
+        :type TolCurv: float
+        :param MaxDeg: default value is 8
+        :type MaxDeg: Standard_Integer
+        :param MaxSegments: default value is 9
+        :type MaxSegments: Standard_Integer
+        :rtype: None
+
+        * Constructor
+
+        :param Degree: default value is 3
+        :type Degree: Standard_Integer
+        :param NbPtsOnCur: default value is 15
+        :type NbPtsOnCur: Standard_Integer
+        :param NbIter: default value is 2
+        :type NbIter: Standard_Integer
+        :param Anisotropie: default value is Standard_False
+        :type Anisotropie: bool
+        :param Tol2d: default value is 0.00001
+        :type Tol2d: float
+        :param Tol3d: default value is 0.0001
+        :type Tol3d: float
+        :param TolAng: default value is 0.01
+        :type TolAng: float
+        :param TolCurv: default value is 0.1
+        :type TolCurv: float
+        :param MaxDeg: default value is 8
+        :type MaxDeg: Standard_Integer
+        :param MaxSegments: default value is 9
+        :type MaxSegments: Standard_Integer
+        :rtype: None
+
+        * Constructor
+
+        :param Degree: default value is 3
+        :type Degree: Standard_Integer
+        :param NbPtsOnCur: default value is 15
+        :type NbPtsOnCur: Standard_Integer
+        :param NbIter: default value is 2
+        :type NbIter: Standard_Integer
+        :param Anisotropie: default value is Standard_False
+        :type Anisotropie: bool
+        :param Tol2d: default value is 0.00001
+        :type Tol2d: float
+        :param Tol3d: default value is 0.0001
+        :type Tol3d: float
+        :param TolAng: default value is 0.01
+        :type TolAng: float
+        :param TolCurv: default value is 0.1
+        :type TolCurv: float
+        :param MaxDeg: default value is 8
+        :type MaxDeg: Standard_Integer
+        :param MaxSegments: default value is 9
+        :type MaxSegments: Standard_Integer
+        :rtype: None
+
+        * Constructor
+
+        :param Degree: default value is 3
+        :type Degree: Standard_Integer
+        :param NbPtsOnCur: default value is 15
+        :type NbPtsOnCur: Standard_Integer
+        :param NbIter: default value is 2
+        :type NbIter: Standard_Integer
+        :param Anisotropie: default value is Standard_False
+        :type Anisotropie: bool
+        :param Tol2d: default value is 0.00001
+        :type Tol2d: float
+        :param Tol3d: default value is 0.0001
+        :type Tol3d: float
+        :param TolAng: default value is 0.01
+        :type TolAng: float
+        :param TolCurv: default value is 0.1
+        :type TolCurv: float
+        :param MaxDeg: default value is 8
+        :type MaxDeg: Standard_Integer
+        :param MaxSegments: default value is 9
+        :type MaxSegments: Standard_Integer
+        :rtype: None
+
+        * Constructor
+
+        :param Degree: default value is 3
+        :type Degree: Standard_Integer
+        :param NbPtsOnCur: default value is 15
+        :type NbPtsOnCur: Standard_Integer
+        :param NbIter: default value is 2
+        :type NbIter: Standard_Integer
+        :param Anisotropie: default value is Standard_False
+        :type Anisotropie: bool
+        :param Tol2d: default value is 0.00001
+        :type Tol2d: float
+        :param Tol3d: default value is 0.0001
+        :type Tol3d: float
+        :param TolAng: default value is 0.01
+        :type TolAng: float
+        :param TolCurv: default value is 0.1
+        :type TolCurv: float
+        :param MaxDeg: default value is 8
+        :type MaxDeg: Standard_Integer
+        :param MaxSegments: default value is 9
+        :type MaxSegments: Standard_Integer
+        :rtype: None
+
+        * Constructor
+
+        :param Degree: default value is 3
+        :type Degree: Standard_Integer
+        :param NbPtsOnCur: default value is 15
+        :type NbPtsOnCur: Standard_Integer
+        :param NbIter: default value is 2
+        :type NbIter: Standard_Integer
+        :param Anisotropie: default value is Standard_False
+        :type Anisotropie: bool
+        :param Tol2d: default value is 0.00001
+        :type Tol2d: float
+        :param Tol3d: default value is 0.0001
+        :type Tol3d: float
+        :param TolAng: default value is 0.01
+        :type TolAng: float
+        :param TolCurv: default value is 0.1
+        :type TolCurv: float
+        :param MaxDeg: default value is 8
+        :type MaxDeg: Standard_Integer
+        :param MaxSegments: default value is 9
+        :type MaxSegments: Standard_Integer
+        :rtype: None
+
+        * Constructor
+
+        :param Degree: default value is 3
+        :type Degree: Standard_Integer
+        :param NbPtsOnCur: default value is 15
+        :type NbPtsOnCur: Standard_Integer
+        :param NbIter: default value is 2
+        :type NbIter: Standard_Integer
+        :param Anisotropie: default value is Standard_False
+        :type Anisotropie: bool
+        :param Tol2d: default value is 0.00001
+        :type Tol2d: float
+        :param Tol3d: default value is 0.0001
+        :type Tol3d: float
+        :param TolAng: default value is 0.01
+        :type TolAng: float
+        :param TolCurv: default value is 0.1
+        :type TolCurv: float
+        :param MaxDeg: default value is 8
+        :type MaxDeg: Standard_Integer
+        :param MaxSegments: default value is 9
+        :type MaxSegments: Standard_Integer
+        :rtype: None
+
+        * Constructor
+
+        :param Degree: default value is 3
+        :type Degree: Standard_Integer
+        :param NbPtsOnCur: default value is 15
+        :type NbPtsOnCur: Standard_Integer
+        :param NbIter: default value is 2
+        :type NbIter: Standard_Integer
+        :param Anisotropie: default value is Standard_False
+        :type Anisotropie: bool
+        :param Tol2d: default value is 0.00001
+        :type Tol2d: float
+        :param Tol3d: default value is 0.0001
+        :type Tol3d: float
+        :param TolAng: default value is 0.01
+        :type TolAng: float
+        :param TolCurv: default value is 0.1
+        :type TolCurv: float
+        :param MaxDeg: default value is 8
+        :type MaxDeg: Standard_Integer
+        :param MaxSegments: default value is 9
+        :type MaxSegments: Standard_Integer
         :rtype: None
 
         """
         _BRepFill.BRepFill_Filling_swiginit(self,_BRepFill.new_BRepFill_Filling(*args))
-    def SetConstrParam(self, *args) -> "void" :
+    def SetConstrParam(self, Tol2d=0.00001, Tol3d=0.0001, TolAng=0.01, TolCurv=0.1):
         """
         * Sets the values of Tolerances used to control the constraint. //!	Tol2d: //!	Tol3d: it is the maximum distance allowed between the support surface //!	 and the constraints //!	TolAng: it is the maximum angle allowed between the normal of the surface //!	 and the constraints //!	TolCurv: it is the maximum difference of curvature allowed between //!	 the surface and the constraint
 
@@ -2936,19 +3691,115 @@ class BRepFill_Filling(object):
         :type TolCurv: float
         :rtype: None
 
-        """
-        return _BRepFill.BRepFill_Filling_SetConstrParam(self, *args)
+        * Sets the values of Tolerances used to control the constraint. //!	Tol2d: //!	Tol3d: it is the maximum distance allowed between the support surface //!	 and the constraints //!	TolAng: it is the maximum angle allowed between the normal of the surface //!	 and the constraints //!	TolCurv: it is the maximum difference of curvature allowed between //!	 the surface and the constraint
 
-    def SetResolParam(self, *args) -> "void" :
+        :param Tol2d: default value is 0.00001
+        :type Tol2d: float
+        :param Tol3d: default value is 0.0001
+        :type Tol3d: float
+        :param TolAng: default value is 0.01
+        :type TolAng: float
+        :param TolCurv: default value is 0.1
+        :type TolCurv: float
+        :rtype: None
+
+        * Sets the values of Tolerances used to control the constraint. //!	Tol2d: //!	Tol3d: it is the maximum distance allowed between the support surface //!	 and the constraints //!	TolAng: it is the maximum angle allowed between the normal of the surface //!	 and the constraints //!	TolCurv: it is the maximum difference of curvature allowed between //!	 the surface and the constraint
+
+        :param Tol2d: default value is 0.00001
+        :type Tol2d: float
+        :param Tol3d: default value is 0.0001
+        :type Tol3d: float
+        :param TolAng: default value is 0.01
+        :type TolAng: float
+        :param TolCurv: default value is 0.1
+        :type TolCurv: float
+        :rtype: None
+
+        * Sets the values of Tolerances used to control the constraint. //!	Tol2d: //!	Tol3d: it is the maximum distance allowed between the support surface //!	 and the constraints //!	TolAng: it is the maximum angle allowed between the normal of the surface //!	 and the constraints //!	TolCurv: it is the maximum difference of curvature allowed between //!	 the surface and the constraint
+
+        :param Tol2d: default value is 0.00001
+        :type Tol2d: float
+        :param Tol3d: default value is 0.0001
+        :type Tol3d: float
+        :param TolAng: default value is 0.01
+        :type TolAng: float
+        :param TolCurv: default value is 0.1
+        :type TolCurv: float
+        :rtype: None
+
+        * Sets the values of Tolerances used to control the constraint. //!	Tol2d: //!	Tol3d: it is the maximum distance allowed between the support surface //!	 and the constraints //!	TolAng: it is the maximum angle allowed between the normal of the surface //!	 and the constraints //!	TolCurv: it is the maximum difference of curvature allowed between //!	 the surface and the constraint
+
+        :param Tol2d: default value is 0.00001
+        :type Tol2d: float
+        :param Tol3d: default value is 0.0001
+        :type Tol3d: float
+        :param TolAng: default value is 0.01
+        :type TolAng: float
+        :param TolCurv: default value is 0.1
+        :type TolCurv: float
+        :rtype: None
+
+        """
+        return _BRepFill.BRepFill_Filling_SetConstrParam(self, Tol2d, Tol3d, TolAng, TolCurv)
+
+    def SetResolParam(self, *args):
         """
         * Sets the parameters used for resolution. //!	The default values of these parameters have been chosen for a good //!	ratio quality/performance. //!	Degree: it is the order of energy criterion to minimize for computing //!	 the deformation of the surface. //!	 The default value is 3 //!	 The recommanded value is i+2 where i is the maximum order of the //!	 constraints. //!	NbPtsOnCur: it is the average number of points for discretisation //!	 of the edges. //!	NbIter: it is the maximum number of iterations of the process. //!	 For each iteration the number of discretisation points is //!	 increased. //!	Anisotropie:
 
         :param Degree: default value is 3
-        :type Degree: int
+        :type Degree: Standard_Integer
         :param NbPtsOnCur: default value is 15
-        :type NbPtsOnCur: int
+        :type NbPtsOnCur: Standard_Integer
         :param NbIter: default value is 2
-        :type NbIter: int
+        :type NbIter: Standard_Integer
+        :param Anisotropie: default value is Standard_False
+        :type Anisotropie: bool
+        :rtype: None
+
+        * Sets the parameters used for resolution. //!	The default values of these parameters have been chosen for a good //!	ratio quality/performance. //!	Degree: it is the order of energy criterion to minimize for computing //!	 the deformation of the surface. //!	 The default value is 3 //!	 The recommanded value is i+2 where i is the maximum order of the //!	 constraints. //!	NbPtsOnCur: it is the average number of points for discretisation //!	 of the edges. //!	NbIter: it is the maximum number of iterations of the process. //!	 For each iteration the number of discretisation points is //!	 increased. //!	Anisotropie:
+
+        :param Degree: default value is 3
+        :type Degree: Standard_Integer
+        :param NbPtsOnCur: default value is 15
+        :type NbPtsOnCur: Standard_Integer
+        :param NbIter: default value is 2
+        :type NbIter: Standard_Integer
+        :param Anisotropie: default value is Standard_False
+        :type Anisotropie: bool
+        :rtype: None
+
+        * Sets the parameters used for resolution. //!	The default values of these parameters have been chosen for a good //!	ratio quality/performance. //!	Degree: it is the order of energy criterion to minimize for computing //!	 the deformation of the surface. //!	 The default value is 3 //!	 The recommanded value is i+2 where i is the maximum order of the //!	 constraints. //!	NbPtsOnCur: it is the average number of points for discretisation //!	 of the edges. //!	NbIter: it is the maximum number of iterations of the process. //!	 For each iteration the number of discretisation points is //!	 increased. //!	Anisotropie:
+
+        :param Degree: default value is 3
+        :type Degree: Standard_Integer
+        :param NbPtsOnCur: default value is 15
+        :type NbPtsOnCur: Standard_Integer
+        :param NbIter: default value is 2
+        :type NbIter: Standard_Integer
+        :param Anisotropie: default value is Standard_False
+        :type Anisotropie: bool
+        :rtype: None
+
+        * Sets the parameters used for resolution. //!	The default values of these parameters have been chosen for a good //!	ratio quality/performance. //!	Degree: it is the order of energy criterion to minimize for computing //!	 the deformation of the surface. //!	 The default value is 3 //!	 The recommanded value is i+2 where i is the maximum order of the //!	 constraints. //!	NbPtsOnCur: it is the average number of points for discretisation //!	 of the edges. //!	NbIter: it is the maximum number of iterations of the process. //!	 For each iteration the number of discretisation points is //!	 increased. //!	Anisotropie:
+
+        :param Degree: default value is 3
+        :type Degree: Standard_Integer
+        :param NbPtsOnCur: default value is 15
+        :type NbPtsOnCur: Standard_Integer
+        :param NbIter: default value is 2
+        :type NbIter: Standard_Integer
+        :param Anisotropie: default value is Standard_False
+        :type Anisotropie: bool
+        :rtype: None
+
+        * Sets the parameters used for resolution. //!	The default values of these parameters have been chosen for a good //!	ratio quality/performance. //!	Degree: it is the order of energy criterion to minimize for computing //!	 the deformation of the surface. //!	 The default value is 3 //!	 The recommanded value is i+2 where i is the maximum order of the //!	 constraints. //!	NbPtsOnCur: it is the average number of points for discretisation //!	 of the edges. //!	NbIter: it is the maximum number of iterations of the process. //!	 For each iteration the number of discretisation points is //!	 increased. //!	Anisotropie:
+
+        :param Degree: default value is 3
+        :type Degree: Standard_Integer
+        :param NbPtsOnCur: default value is 15
+        :type NbPtsOnCur: Standard_Integer
+        :param NbIter: default value is 2
+        :type NbIter: Standard_Integer
         :param Anisotropie: default value is Standard_False
         :type Anisotropie: bool
         :rtype: None
@@ -2956,20 +3807,36 @@ class BRepFill_Filling(object):
         """
         return _BRepFill.BRepFill_Filling_SetResolParam(self, *args)
 
-    def SetApproxParam(self, *args) -> "void" :
+    def SetApproxParam(self, MaxDeg=8, MaxSegments=9):
         """
         * Sets the parameters used for approximation of the surface
 
         :param MaxDeg: default value is 8
-        :type MaxDeg: int
+        :type MaxDeg: Standard_Integer
         :param MaxSegments: default value is 9
-        :type MaxSegments: int
+        :type MaxSegments: Standard_Integer
+        :rtype: None
+
+        * Sets the parameters used for approximation of the surface
+
+        :param MaxDeg: default value is 8
+        :type MaxDeg: Standard_Integer
+        :param MaxSegments: default value is 9
+        :type MaxSegments: Standard_Integer
+        :rtype: None
+
+        * Sets the parameters used for approximation of the surface
+
+        :param MaxDeg: default value is 8
+        :type MaxDeg: Standard_Integer
+        :param MaxSegments: default value is 9
+        :type MaxSegments: Standard_Integer
         :rtype: None
 
         """
-        return _BRepFill.BRepFill_Filling_SetApproxParam(self, *args)
+        return _BRepFill.BRepFill_Filling_SetApproxParam(self, MaxDeg, MaxSegments)
 
-    def LoadInitSurface(self, *args) -> "void" :
+    def LoadInitSurface(self, *args):
         """
         * Loads the initial Surface
 
@@ -2980,12 +3847,34 @@ class BRepFill_Filling(object):
         """
         return _BRepFill.BRepFill_Filling_LoadInitSurface(self, *args)
 
-    def Add(self, *args) -> "Standard_Integer" :
+    def Add(self, *args):
         """
         * Adds a new constraint which also defines an edge of the wire //!	 of the face //!	Order: Order of the constraint: //!	 GeomAbs_C0 : the surface has to pass by 3D representation //!	  of the edge //!	 GeomAbs_G1 : the surface has to pass by 3D representation //!	  of the edge and to respect tangency with the first //!	  face of the edge //!	 GeomAbs_G2 : the surface has to pass by 3D representation //!	  of the edge and to respect tangency and curvature //!	  with the first face of the edge.
 
         :param anEdge:
         :type anEdge: TopoDS_Edge &
+        :param Order:
+        :type Order: GeomAbs_Shape
+        :param IsBound: default value is Standard_True
+        :type IsBound: bool
+        :rtype: int
+
+        * Adds a new constraint which also defines an edge of the wire //!	 of the face //!	Order: Order of the constraint: //!	 GeomAbs_C0 : the surface has to pass by 3D representation //!	  of the edge //!	 GeomAbs_G1 : the surface has to pass by 3D representation //!	  of the edge and to respect tangency with the first //!	  face of the edge //!	 GeomAbs_G2 : the surface has to pass by 3D representation //!	  of the edge and to respect tangency and curvature //!	  with the first face of the edge.
+
+        :param anEdge:
+        :type anEdge: TopoDS_Edge &
+        :param Order:
+        :type Order: GeomAbs_Shape
+        :param IsBound: default value is Standard_True
+        :type IsBound: bool
+        :rtype: int
+
+        * Adds a new constraint which also defines an edge of the wire //!	 of the face //!	Order: Order of the constraint: //!	 GeomAbs_C0 : the surface has to pass by 3D representation //!	  of the edge //!	 GeomAbs_G1 : the surface has to pass by 3D representation //!	  of the edge and to respect tangency with the //!	  given face //!	 GeomAbs_G2 : the surface has to pass by 3D representation //!	  of the edge and to respect tangency and curvature //!	  with the given face.
+
+        :param anEdge:
+        :type anEdge: TopoDS_Edge &
+        :param Support:
+        :type Support: TopoDS_Face &
         :param Order:
         :type Order: GeomAbs_Shape
         :param IsBound: default value is Standard_True
@@ -3033,30 +3922,30 @@ class BRepFill_Filling(object):
         """
         return _BRepFill.BRepFill_Filling_Add(self, *args)
 
-    def Build(self, *args) -> "void" :
+    def Build(self):
         """
         * Builds the resulting faces
 
         :rtype: None
 
         """
-        return _BRepFill.BRepFill_Filling_Build(self, *args)
+        return _BRepFill.BRepFill_Filling_Build(self)
 
-    def IsDone(self, *args) -> "Standard_Boolean" :
+    def IsDone(self):
         """
         :rtype: bool
 
         """
-        return _BRepFill.BRepFill_Filling_IsDone(self, *args)
+        return _BRepFill.BRepFill_Filling_IsDone(self)
 
-    def Face(self, *args) -> "TopoDS_Face" :
+    def Face(self):
         """
         :rtype: TopoDS_Face
 
         """
-        return _BRepFill.BRepFill_Filling_Face(self, *args)
+        return _BRepFill.BRepFill_Filling_Face(self)
 
-    def Generated(self, *args) -> "TopTools_ListOfShape const &" :
+    def Generated(self, *args):
         """
         * Returns the list of shapes generated from the shape <S>.
 
@@ -3067,34 +3956,34 @@ class BRepFill_Filling(object):
         """
         return _BRepFill.BRepFill_Filling_Generated(self, *args)
 
-    def G0Error(self, *args) -> "Standard_Real" :
+    def G0Error(self, *args):
         """
         :rtype: float
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: float
 
         """
         return _BRepFill.BRepFill_Filling_G0Error(self, *args)
 
-    def G1Error(self, *args) -> "Standard_Real" :
+    def G1Error(self, *args):
         """
         :rtype: float
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: float
 
         """
         return _BRepFill.BRepFill_Filling_G1Error(self, *args)
 
-    def G2Error(self, *args) -> "Standard_Real" :
+    def G2Error(self, *args):
         """
         :rtype: float
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: float
 
         """
@@ -3127,13 +4016,13 @@ BRepFill_Filling_swigregister(BRepFill_Filling)
 class BRepFill_Generator(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _BRepFill.BRepFill_Generator_swiginit(self,_BRepFill.new_BRepFill_Generator(*args))
-    def AddWire(self, *args) -> "void" :
+        _BRepFill.BRepFill_Generator_swiginit(self,_BRepFill.new_BRepFill_Generator())
+    def AddWire(self, *args):
         """
         :param Wire:
         :type Wire: TopoDS_Wire &
@@ -3142,32 +4031,32 @@ class BRepFill_Generator(object):
         """
         return _BRepFill.BRepFill_Generator_AddWire(self, *args)
 
-    def Perform(self, *args) -> "void" :
+    def Perform(self):
         """
         * Compute the shell.
 
         :rtype: None
 
         """
-        return _BRepFill.BRepFill_Generator_Perform(self, *args)
+        return _BRepFill.BRepFill_Generator_Perform(self)
 
-    def Shell(self, *args) -> "TopoDS_Shell const" :
+    def Shell(self):
         """
         :rtype: TopoDS_Shell
 
         """
-        return _BRepFill.BRepFill_Generator_Shell(self, *args)
+        return _BRepFill.BRepFill_Generator_Shell(self)
 
-    def Generated(self, *args) -> "TopTools_DataMapOfShapeListOfShape const &" :
+    def Generated(self):
         """
         * Returns all the shapes created
 
         :rtype: TopTools_DataMapOfShapeListOfShape
 
         """
-        return _BRepFill.BRepFill_Generator_Generated(self, *args)
+        return _BRepFill.BRepFill_Generator_Generated(self)
 
-    def GeneratedShapes(self, *args) -> "TopTools_ListOfShape const &" :
+    def GeneratedShapes(self, *args):
         """
         * Returns the shapes created from a subshape <SSection> of a section.
 
@@ -3203,7 +4092,7 @@ class BRepFill_IndexedDataMapNodeOfIndexedDataMapOfOrientedShapeListOfShape(OCC.
         :param K1:
         :type K1: TopoDS_Shape &
         :param K2:
-        :type K2: int
+        :type K2: Standard_Integer
         :param I:
         :type I: TopTools_ListOfShape &
         :param n1:
@@ -3214,40 +4103,40 @@ class BRepFill_IndexedDataMapNodeOfIndexedDataMapOfOrientedShapeListOfShape(OCC.
 
         """
         _BRepFill.BRepFill_IndexedDataMapNodeOfIndexedDataMapOfOrientedShapeListOfShape_swiginit(self,_BRepFill.new_BRepFill_IndexedDataMapNodeOfIndexedDataMapOfOrientedShapeListOfShape(*args))
-    def Key1(self, *args) -> "TopoDS_Shape" :
+    def Key1(self):
         """
         :rtype: TopoDS_Shape
 
         """
-        return _BRepFill.BRepFill_IndexedDataMapNodeOfIndexedDataMapOfOrientedShapeListOfShape_Key1(self, *args)
+        return _BRepFill.BRepFill_IndexedDataMapNodeOfIndexedDataMapOfOrientedShapeListOfShape_Key1(self)
 
-    def GetKey2(self) -> "Standard_Integer" :
+    def GetKey2(self):
         """GetKey2(BRepFill_IndexedDataMapNodeOfIndexedDataMapOfOrientedShapeListOfShape self) -> Standard_Integer"""
         return _BRepFill.BRepFill_IndexedDataMapNodeOfIndexedDataMapOfOrientedShapeListOfShape_GetKey2(self)
 
-    def SetKey2(self, *args) -> "void" :
+    def SetKey2(self, *args):
         """SetKey2(BRepFill_IndexedDataMapNodeOfIndexedDataMapOfOrientedShapeListOfShape self, Standard_Integer value)"""
         return _BRepFill.BRepFill_IndexedDataMapNodeOfIndexedDataMapOfOrientedShapeListOfShape_SetKey2(self, *args)
 
-    def Next2(self, *args) -> "TCollection_MapNodePtr &" :
+    def Next2(self):
         """
         :rtype: TCollection_MapNodePtr
 
         """
-        return _BRepFill.BRepFill_IndexedDataMapNodeOfIndexedDataMapOfOrientedShapeListOfShape_Next2(self, *args)
+        return _BRepFill.BRepFill_IndexedDataMapNodeOfIndexedDataMapOfOrientedShapeListOfShape_Next2(self)
 
-    def Value(self, *args) -> "TopTools_ListOfShape &" :
+    def Value(self):
         """
         :rtype: TopTools_ListOfShape
 
         """
-        return _BRepFill.BRepFill_IndexedDataMapNodeOfIndexedDataMapOfOrientedShapeListOfShape_Value(self, *args)
+        return _BRepFill.BRepFill_IndexedDataMapNodeOfIndexedDataMapOfOrientedShapeListOfShape_Value(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(BRepFill_IndexedDataMapNodeOfIndexedDataMapOfOrientedShapeListOfShape self)"""
         return _BRepFill.BRepFill_IndexedDataMapNodeOfIndexedDataMapOfOrientedShapeListOfShape__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_BRepFill_IndexedDataMapNodeOfIndexedDataMapOfOrientedShapeListOfShape" :
+    def GetHandle(self):
         """GetHandle(BRepFill_IndexedDataMapNodeOfIndexedDataMapOfOrientedShapeListOfShape self) -> Handle_BRepFill_IndexedDataMapNodeOfIndexedDataMapOfOrientedShapeListOfShape"""
         return _BRepFill.BRepFill_IndexedDataMapNodeOfIndexedDataMapOfOrientedShapeListOfShape_GetHandle(self)
 
@@ -3290,22 +4179,26 @@ Handle_BRepFill_IndexedDataMapNodeOfIndexedDataMapOfOrientedShapeListOfShape._ki
 Handle_BRepFill_IndexedDataMapNodeOfIndexedDataMapOfOrientedShapeListOfShape_swigregister = _BRepFill.Handle_BRepFill_IndexedDataMapNodeOfIndexedDataMapOfOrientedShapeListOfShape_swigregister
 Handle_BRepFill_IndexedDataMapNodeOfIndexedDataMapOfOrientedShapeListOfShape_swigregister(Handle_BRepFill_IndexedDataMapNodeOfIndexedDataMapOfOrientedShapeListOfShape)
 
-def Handle_BRepFill_IndexedDataMapNodeOfIndexedDataMapOfOrientedShapeListOfShape_DownCast(*args) -> "Handle_BRepFill_IndexedDataMapNodeOfIndexedDataMapOfOrientedShapeListOfShape const" :
+def Handle_BRepFill_IndexedDataMapNodeOfIndexedDataMapOfOrientedShapeListOfShape_DownCast(*args):
   return _BRepFill.Handle_BRepFill_IndexedDataMapNodeOfIndexedDataMapOfOrientedShapeListOfShape_DownCast(*args)
 Handle_BRepFill_IndexedDataMapNodeOfIndexedDataMapOfOrientedShapeListOfShape_DownCast = _BRepFill.Handle_BRepFill_IndexedDataMapNodeOfIndexedDataMapOfOrientedShapeListOfShape_DownCast
 
 class BRepFill_IndexedDataMapOfOrientedShapeListOfShape(OCC.TCollection.TCollection_BasicMap):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self, NbBuckets=1): 
         """
         :param NbBuckets: default value is 1
-        :type NbBuckets: int
+        :type NbBuckets: Standard_Integer
+        :rtype: None
+
+        :param NbBuckets: default value is 1
+        :type NbBuckets: Standard_Integer
         :rtype: None
 
         """
-        _BRepFill.BRepFill_IndexedDataMapOfOrientedShapeListOfShape_swiginit(self,_BRepFill.new_BRepFill_IndexedDataMapOfOrientedShapeListOfShape(*args))
-    def Assign(self, *args) -> "BRepFill_IndexedDataMapOfOrientedShapeListOfShape &" :
+        _BRepFill.BRepFill_IndexedDataMapOfOrientedShapeListOfShape_swiginit(self,_BRepFill.new_BRepFill_IndexedDataMapOfOrientedShapeListOfShape(NbBuckets))
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: BRepFill_IndexedDataMapOfOrientedShapeListOfShape &
@@ -3314,7 +4207,7 @@ class BRepFill_IndexedDataMapOfOrientedShapeListOfShape(OCC.TCollection.TCollect
         """
         return _BRepFill.BRepFill_IndexedDataMapOfOrientedShapeListOfShape_Assign(self, *args)
 
-    def Set(self, *args) -> "BRepFill_IndexedDataMapOfOrientedShapeListOfShape &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: BRepFill_IndexedDataMapOfOrientedShapeListOfShape &
@@ -3323,23 +4216,23 @@ class BRepFill_IndexedDataMapOfOrientedShapeListOfShape(OCC.TCollection.TCollect
         """
         return _BRepFill.BRepFill_IndexedDataMapOfOrientedShapeListOfShape_Set(self, *args)
 
-    def ReSize(self, *args) -> "void" :
+    def ReSize(self, *args):
         """
         :param NbBuckets:
-        :type NbBuckets: int
+        :type NbBuckets: Standard_Integer
         :rtype: None
 
         """
         return _BRepFill.BRepFill_IndexedDataMapOfOrientedShapeListOfShape_ReSize(self, *args)
 
-    def Clear(self, *args) -> "void" :
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _BRepFill.BRepFill_IndexedDataMapOfOrientedShapeListOfShape_Clear(self, *args)
+        return _BRepFill.BRepFill_IndexedDataMapOfOrientedShapeListOfShape_Clear(self)
 
-    def Add(self, *args) -> "Standard_Integer" :
+    def Add(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -3350,10 +4243,10 @@ class BRepFill_IndexedDataMapOfOrientedShapeListOfShape(OCC.TCollection.TCollect
         """
         return _BRepFill.BRepFill_IndexedDataMapOfOrientedShapeListOfShape_Add(self, *args)
 
-    def Substitute(self, *args) -> "void" :
+    def Substitute(self, *args):
         """
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :param K:
         :type K: TopoDS_Shape &
         :param T:
@@ -3363,14 +4256,14 @@ class BRepFill_IndexedDataMapOfOrientedShapeListOfShape(OCC.TCollection.TCollect
         """
         return _BRepFill.BRepFill_IndexedDataMapOfOrientedShapeListOfShape_Substitute(self, *args)
 
-    def RemoveLast(self, *args) -> "void" :
+    def RemoveLast(self):
         """
         :rtype: None
 
         """
-        return _BRepFill.BRepFill_IndexedDataMapOfOrientedShapeListOfShape_RemoveLast(self, *args)
+        return _BRepFill.BRepFill_IndexedDataMapOfOrientedShapeListOfShape_RemoveLast(self)
 
-    def Contains(self, *args) -> "Standard_Boolean" :
+    def Contains(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -3379,34 +4272,34 @@ class BRepFill_IndexedDataMapOfOrientedShapeListOfShape(OCC.TCollection.TCollect
         """
         return _BRepFill.BRepFill_IndexedDataMapOfOrientedShapeListOfShape_Contains(self, *args)
 
-    def FindKey(self, *args) -> "TopoDS_Shape const" :
+    def FindKey(self, *args):
         """
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :rtype: TopoDS_Shape
 
         """
         return _BRepFill.BRepFill_IndexedDataMapOfOrientedShapeListOfShape_FindKey(self, *args)
 
-    def FindFromIndex(self, *args) -> "TopTools_ListOfShape const &" :
+    def FindFromIndex(self, *args):
         """
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :rtype: TopTools_ListOfShape
 
         """
         return _BRepFill.BRepFill_IndexedDataMapOfOrientedShapeListOfShape_FindFromIndex(self, *args)
 
-    def ChangeFromIndex(self, *args) -> "TopTools_ListOfShape &" :
+    def ChangeFromIndex(self, *args):
         """
         :param I:
-        :type I: int
+        :type I: Standard_Integer
         :rtype: TopTools_ListOfShape
 
         """
         return _BRepFill.BRepFill_IndexedDataMapOfOrientedShapeListOfShape_ChangeFromIndex(self, *args)
 
-    def FindIndex(self, *args) -> "Standard_Integer" :
+    def FindIndex(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -3415,7 +4308,7 @@ class BRepFill_IndexedDataMapOfOrientedShapeListOfShape(OCC.TCollection.TCollect
         """
         return _BRepFill.BRepFill_IndexedDataMapOfOrientedShapeListOfShape_FindIndex(self, *args)
 
-    def FindFromKey(self, *args) -> "TopTools_ListOfShape const &" :
+    def FindFromKey(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -3424,7 +4317,7 @@ class BRepFill_IndexedDataMapOfOrientedShapeListOfShape(OCC.TCollection.TCollect
         """
         return _BRepFill.BRepFill_IndexedDataMapOfOrientedShapeListOfShape_FindFromKey(self, *args)
 
-    def ChangeFromKey(self, *args) -> "TopTools_ListOfShape &" :
+    def ChangeFromKey(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -3433,7 +4326,7 @@ class BRepFill_IndexedDataMapOfOrientedShapeListOfShape(OCC.TCollection.TCollect
         """
         return _BRepFill.BRepFill_IndexedDataMapOfOrientedShapeListOfShape_ChangeFromKey(self, *args)
 
-    def FindFromKey1(self, *args) -> "Standard_Address" :
+    def FindFromKey1(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -3442,7 +4335,7 @@ class BRepFill_IndexedDataMapOfOrientedShapeListOfShape(OCC.TCollection.TCollect
         """
         return _BRepFill.BRepFill_IndexedDataMapOfOrientedShapeListOfShape_FindFromKey1(self, *args)
 
-    def ChangeFromKey1(self, *args) -> "Standard_Address" :
+    def ChangeFromKey1(self, *args):
         """
         :param K:
         :type K: TopoDS_Shape &
@@ -3451,7 +4344,7 @@ class BRepFill_IndexedDataMapOfOrientedShapeListOfShape(OCC.TCollection.TCollect
         """
         return _BRepFill.BRepFill_IndexedDataMapOfOrientedShapeListOfShape_ChangeFromKey1(self, *args)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(BRepFill_IndexedDataMapOfOrientedShapeListOfShape self)"""
         return _BRepFill.BRepFill_IndexedDataMapOfOrientedShapeListOfShape__kill_pointed(self)
 
@@ -3496,7 +4389,7 @@ class BRepFill_ListIteratorOfListOfOffsetWire(object):
 
         """
         _BRepFill.BRepFill_ListIteratorOfListOfOffsetWire_swiginit(self,_BRepFill.new_BRepFill_ListIteratorOfListOfOffsetWire(*args))
-    def Initialize(self, *args) -> "void" :
+    def Initialize(self, *args):
         """
         :param L:
         :type L: BRepFill_ListOfOffsetWire &
@@ -3505,26 +4398,26 @@ class BRepFill_ListIteratorOfListOfOffsetWire(object):
         """
         return _BRepFill.BRepFill_ListIteratorOfListOfOffsetWire_Initialize(self, *args)
 
-    def More(self, *args) -> "Standard_Boolean" :
+    def More(self):
         """
         :rtype: bool
 
         """
-        return _BRepFill.BRepFill_ListIteratorOfListOfOffsetWire_More(self, *args)
+        return _BRepFill.BRepFill_ListIteratorOfListOfOffsetWire_More(self)
 
-    def Next(self, *args) -> "void" :
+    def Next(self):
         """
         :rtype: None
 
         """
-        return _BRepFill.BRepFill_ListIteratorOfListOfOffsetWire_Next(self, *args)
+        return _BRepFill.BRepFill_ListIteratorOfListOfOffsetWire_Next(self)
 
-    def Value(self, *args) -> "BRepFill_OffsetWire &" :
+    def Value(self):
         """
         :rtype: BRepFill_OffsetWire
 
         """
-        return _BRepFill.BRepFill_ListIteratorOfListOfOffsetWire_Value(self, *args)
+        return _BRepFill.BRepFill_ListIteratorOfListOfOffsetWire_Value(self)
 
     def __del__(self):
     	try:
@@ -3555,18 +4448,18 @@ class BRepFill_ListNodeOfListOfOffsetWire(OCC.TCollection.TCollection_MapNode):
 
         """
         _BRepFill.BRepFill_ListNodeOfListOfOffsetWire_swiginit(self,_BRepFill.new_BRepFill_ListNodeOfListOfOffsetWire(*args))
-    def Value(self, *args) -> "BRepFill_OffsetWire &" :
+    def Value(self):
         """
         :rtype: BRepFill_OffsetWire
 
         """
-        return _BRepFill.BRepFill_ListNodeOfListOfOffsetWire_Value(self, *args)
+        return _BRepFill.BRepFill_ListNodeOfListOfOffsetWire_Value(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(BRepFill_ListNodeOfListOfOffsetWire self)"""
         return _BRepFill.BRepFill_ListNodeOfListOfOffsetWire__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_BRepFill_ListNodeOfListOfOffsetWire" :
+    def GetHandle(self):
         """GetHandle(BRepFill_ListNodeOfListOfOffsetWire self) -> Handle_BRepFill_ListNodeOfListOfOffsetWire"""
         return _BRepFill.BRepFill_ListNodeOfListOfOffsetWire_GetHandle(self)
 
@@ -3605,20 +4498,20 @@ Handle_BRepFill_ListNodeOfListOfOffsetWire._kill_pointed = new_instancemethod(_B
 Handle_BRepFill_ListNodeOfListOfOffsetWire_swigregister = _BRepFill.Handle_BRepFill_ListNodeOfListOfOffsetWire_swigregister
 Handle_BRepFill_ListNodeOfListOfOffsetWire_swigregister(Handle_BRepFill_ListNodeOfListOfOffsetWire)
 
-def Handle_BRepFill_ListNodeOfListOfOffsetWire_DownCast(*args) -> "Handle_BRepFill_ListNodeOfListOfOffsetWire const" :
+def Handle_BRepFill_ListNodeOfListOfOffsetWire_DownCast(*args):
   return _BRepFill.Handle_BRepFill_ListNodeOfListOfOffsetWire_DownCast(*args)
 Handle_BRepFill_ListNodeOfListOfOffsetWire_DownCast = _BRepFill.Handle_BRepFill_ListNodeOfListOfOffsetWire_DownCast
 
 class BRepFill_ListOfOffsetWire(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _BRepFill.BRepFill_ListOfOffsetWire_swiginit(self,_BRepFill.new_BRepFill_ListOfOffsetWire(*args))
-    def Assign(self, *args) -> "void" :
+        _BRepFill.BRepFill_ListOfOffsetWire_swiginit(self,_BRepFill.new_BRepFill_ListOfOffsetWire())
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: BRepFill_ListOfOffsetWire &
@@ -3627,7 +4520,7 @@ class BRepFill_ListOfOffsetWire(object):
         """
         return _BRepFill.BRepFill_ListOfOffsetWire_Assign(self, *args)
 
-    def Set(self, *args) -> "void" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: BRepFill_ListOfOffsetWire &
@@ -3636,28 +4529,28 @@ class BRepFill_ListOfOffsetWire(object):
         """
         return _BRepFill.BRepFill_ListOfOffsetWire_Set(self, *args)
 
-    def Extent(self, *args) -> "Standard_Integer" :
+    def Extent(self):
         """
         :rtype: int
 
         """
-        return _BRepFill.BRepFill_ListOfOffsetWire_Extent(self, *args)
+        return _BRepFill.BRepFill_ListOfOffsetWire_Extent(self)
 
-    def Clear(self, *args) -> "void" :
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _BRepFill.BRepFill_ListOfOffsetWire_Clear(self, *args)
+        return _BRepFill.BRepFill_ListOfOffsetWire_Clear(self)
 
-    def IsEmpty(self, *args) -> "Standard_Boolean" :
+    def IsEmpty(self):
         """
         :rtype: bool
 
         """
-        return _BRepFill.BRepFill_ListOfOffsetWire_IsEmpty(self, *args)
+        return _BRepFill.BRepFill_ListOfOffsetWire_IsEmpty(self)
 
-    def Prepend(self, *args) -> "void" :
+    def Prepend(self, *args):
         """
         :param I:
         :type I: BRepFill_OffsetWire &
@@ -3676,7 +4569,7 @@ class BRepFill_ListOfOffsetWire(object):
         """
         return _BRepFill.BRepFill_ListOfOffsetWire_Prepend(self, *args)
 
-    def Append(self, *args) -> "void" :
+    def Append(self, *args):
         """
         :param I:
         :type I: BRepFill_OffsetWire &
@@ -3695,28 +4588,28 @@ class BRepFill_ListOfOffsetWire(object):
         """
         return _BRepFill.BRepFill_ListOfOffsetWire_Append(self, *args)
 
-    def First(self, *args) -> "BRepFill_OffsetWire &" :
+    def First(self):
         """
         :rtype: BRepFill_OffsetWire
 
         """
-        return _BRepFill.BRepFill_ListOfOffsetWire_First(self, *args)
+        return _BRepFill.BRepFill_ListOfOffsetWire_First(self)
 
-    def Last(self, *args) -> "BRepFill_OffsetWire &" :
+    def Last(self):
         """
         :rtype: BRepFill_OffsetWire
 
         """
-        return _BRepFill.BRepFill_ListOfOffsetWire_Last(self, *args)
+        return _BRepFill.BRepFill_ListOfOffsetWire_Last(self)
 
-    def RemoveFirst(self, *args) -> "void" :
+    def RemoveFirst(self):
         """
         :rtype: None
 
         """
-        return _BRepFill.BRepFill_ListOfOffsetWire_RemoveFirst(self, *args)
+        return _BRepFill.BRepFill_ListOfOffsetWire_RemoveFirst(self)
 
-    def Remove(self, *args) -> "void" :
+    def Remove(self, *args):
         """
         :param It:
         :type It: BRepFill_ListIteratorOfListOfOffsetWire &
@@ -3725,7 +4618,7 @@ class BRepFill_ListOfOffsetWire(object):
         """
         return _BRepFill.BRepFill_ListOfOffsetWire_Remove(self, *args)
 
-    def InsertBefore(self, *args) -> "void" :
+    def InsertBefore(self, *args):
         """
         :param I:
         :type I: BRepFill_OffsetWire &
@@ -3742,7 +4635,7 @@ class BRepFill_ListOfOffsetWire(object):
         """
         return _BRepFill.BRepFill_ListOfOffsetWire_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args) -> "void" :
+    def InsertAfter(self, *args):
         """
         :param I:
         :type I: BRepFill_OffsetWire &
@@ -3788,25 +4681,25 @@ class BRepFill_LocationLaw(OCC.MMgt.MMgt_TShared):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def GetStatus(self, *args) -> "GeomFill_PipeError" :
+    def GetStatus(self):
         """
         * Return a error status, if the status is not PipeOk then it exist a parameter tlike the law is not valuable for t.
 
         :rtype: GeomFill_PipeError
 
         """
-        return _BRepFill.BRepFill_LocationLaw_GetStatus(self, *args)
+        return _BRepFill.BRepFill_LocationLaw_GetStatus(self)
 
-    def TransformInG0Law(self, *args) -> "void" :
+    def TransformInG0Law(self):
         """
         * Apply a linear transformation on each law, to have continuity of the global law beetween the edges.
 
         :rtype: void
 
         """
-        return _BRepFill.BRepFill_LocationLaw_TransformInG0Law(self, *args)
+        return _BRepFill.BRepFill_LocationLaw_TransformInG0Law(self)
 
-    def TransformInCompatibleLaw(self, *args) -> "void" :
+    def TransformInCompatibleLaw(self, *args):
         """
         * Apply a linear transformation on each law, to reduce the dicontinuities of law at one rotation.
 
@@ -3817,23 +4710,27 @@ class BRepFill_LocationLaw(OCC.MMgt.MMgt_TShared):
         """
         return _BRepFill.BRepFill_LocationLaw_TransformInCompatibleLaw(self, *args)
 
-    def DeleteTransform(self, *args) -> "void" :
+    def DeleteTransform(self):
         """
         :rtype: None
 
         """
-        return _BRepFill.BRepFill_LocationLaw_DeleteTransform(self, *args)
+        return _BRepFill.BRepFill_LocationLaw_DeleteTransform(self)
 
-    def NbHoles(self, *args) -> "Standard_Integer" :
+    def NbHoles(self, Tol=1.0e-7):
         """
         :param Tol: default value is 1.0e-7
         :type Tol: float
         :rtype: int
 
-        """
-        return _BRepFill.BRepFill_LocationLaw_NbHoles(self, *args)
+        :param Tol: default value is 1.0e-7
+        :type Tol: float
+        :rtype: int
 
-    def Holes(self, *args) -> "void" :
+        """
+        return _BRepFill.BRepFill_LocationLaw_NbHoles(self, Tol)
+
+    def Holes(self, *args):
         """
         :param Interval:
         :type Interval: TColStd_Array1OfInteger &
@@ -3842,63 +4739,63 @@ class BRepFill_LocationLaw(OCC.MMgt.MMgt_TShared):
         """
         return _BRepFill.BRepFill_LocationLaw_Holes(self, *args)
 
-    def NbLaw(self, *args) -> "Standard_Integer" :
+    def NbLaw(self):
         """
         * Return the number of elementary Law
 
         :rtype: int
 
         """
-        return _BRepFill.BRepFill_LocationLaw_NbLaw(self, *args)
+        return _BRepFill.BRepFill_LocationLaw_NbLaw(self)
 
-    def law(self, *args) -> "Handle_GeomFill_LocationLaw const &" :
+    def law(self, *args):
         """
         * Return the elementary Law of rank <Index> <Index> have to be in [1, NbLaw()]
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Handle_GeomFill_LocationLaw
 
         """
         return _BRepFill.BRepFill_LocationLaw_law(self, *args)
 
-    def Wire(self, *args) -> "TopoDS_Wire const" :
+    def Wire(self):
         """
         * return the path
 
         :rtype: TopoDS_Wire
 
         """
-        return _BRepFill.BRepFill_LocationLaw_Wire(self, *args)
+        return _BRepFill.BRepFill_LocationLaw_Wire(self)
 
-    def Edge(self, *args) -> "TopoDS_Edge const" :
+    def Edge(self, *args):
         """
         * Return the Edge of rank <Index> in the path <Index> have to be in [1, NbLaw()]
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: TopoDS_Edge
 
         """
         return _BRepFill.BRepFill_LocationLaw_Edge(self, *args)
 
-    def Vertex(self, *args) -> "TopoDS_Vertex" :
+    def Vertex(self, *args):
         """
         * Return the vertex of rank <Index> in the path <Index> have to be in [0, NbLaw()]
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: TopoDS_Vertex
 
         """
         return _BRepFill.BRepFill_LocationLaw_Vertex(self, *args)
 
-    def PerformVertex(self, *args) -> "void" :
+    def PerformVertex(self, *args):
         """
         * Compute <OutputVertex> like a transformation of <InputVertex> the transformation is given by evaluation of the location law in the vertex of rank <Index>. <Location> is used to manage discontinuities : - -1 : The law before the vertex is used. - 1 : The law after the vertex is used. - 0 : Average of the both laws is used.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param InputVertex:
         :type InputVertex: TopoDS_Vertex &
         :param TolMin:
@@ -3906,18 +4803,32 @@ class BRepFill_LocationLaw(OCC.MMgt.MMgt_TShared):
         :param OutputVertex:
         :type OutputVertex: TopoDS_Vertex &
         :param Location: default value is 0
-        :type Location: int
+        :type Location: Standard_Integer
+        :rtype: None
+
+        * Compute <OutputVertex> like a transformation of <InputVertex> the transformation is given by evaluation of the location law in the vertex of rank <Index>. <Location> is used to manage discontinuities : - -1 : The law before the vertex is used. - 1 : The law after the vertex is used. - 0 : Average of the both laws is used.
+
+        :param Index:
+        :type Index: Standard_Integer
+        :param InputVertex:
+        :type InputVertex: TopoDS_Vertex &
+        :param TolMin:
+        :type TolMin: float
+        :param OutputVertex:
+        :type OutputVertex: TopoDS_Vertex &
+        :param Location: default value is 0
+        :type Location: Standard_Integer
         :rtype: None
 
         """
         return _BRepFill.BRepFill_LocationLaw_PerformVertex(self, *args)
 
-    def CurvilinearBounds(self, *args) -> "void" :
+    def CurvilinearBounds(self, *args):
         """
         * //!Return the Curvilinear Bounds of the <Index> Law
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param First:
         :type First: float &
         :param Last:
@@ -3927,19 +4838,39 @@ class BRepFill_LocationLaw(OCC.MMgt.MMgt_TShared):
         """
         return _BRepFill.BRepFill_LocationLaw_CurvilinearBounds(self, *args)
 
-    def IsClosed(self, *args) -> "Standard_Boolean" :
+    def IsClosed(self):
         """
         :rtype: bool
 
         """
-        return _BRepFill.BRepFill_LocationLaw_IsClosed(self, *args)
+        return _BRepFill.BRepFill_LocationLaw_IsClosed(self)
 
-    def IsG1(self, *args) -> "Standard_Integer" :
+    def IsG1(self, *args):
         """
         * Compute the Law's continuity beetween 2 edges of the path The result can be : -1 : Case Not connex 0 : It is connex (G0) 1 : It is tangent (G1)
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
+        :param SpatialTolerance: default value is 1.0e-7
+        :type SpatialTolerance: float
+        :param AngularTolerance: default value is 1.0e-4
+        :type AngularTolerance: float
+        :rtype: int
+
+        * Compute the Law's continuity beetween 2 edges of the path The result can be : -1 : Case Not connex 0 : It is connex (G0) 1 : It is tangent (G1)
+
+        :param Index:
+        :type Index: Standard_Integer
+        :param SpatialTolerance: default value is 1.0e-7
+        :type SpatialTolerance: float
+        :param AngularTolerance: default value is 1.0e-4
+        :type AngularTolerance: float
+        :rtype: int
+
+        * Compute the Law's continuity beetween 2 edges of the path The result can be : -1 : Case Not connex 0 : It is connex (G0) 1 : It is tangent (G1)
+
+        :param Index:
+        :type Index: Standard_Integer
         :param SpatialTolerance: default value is 1.0e-7
         :type SpatialTolerance: float
         :param AngularTolerance: default value is 1.0e-4
@@ -3949,7 +4880,7 @@ class BRepFill_LocationLaw(OCC.MMgt.MMgt_TShared):
         """
         return _BRepFill.BRepFill_LocationLaw_IsG1(self, *args)
 
-    def D0(self, *args) -> "void" :
+    def D0(self, *args):
         """
         * Apply the Law to a shape, for a given Curnilinear abscissa
 
@@ -3962,14 +4893,14 @@ class BRepFill_LocationLaw(OCC.MMgt.MMgt_TShared):
         """
         return _BRepFill.BRepFill_LocationLaw_D0(self, *args)
 
-    def Parameter(self, *args) -> "void" :
+    def Parameter(self, *args):
         """
         * Find the index Law and the parmaeter, for a given Curnilinear abscissa
 
         :param Abscissa:
         :type Abscissa: float
         :param Index:
-        :type Index: int &
+        :type Index: Standard_Integer &
         :param Param:
         :type Param: float &
         :rtype: None
@@ -3977,12 +4908,12 @@ class BRepFill_LocationLaw(OCC.MMgt.MMgt_TShared):
         """
         return _BRepFill.BRepFill_LocationLaw_Parameter(self, *args)
 
-    def Abscissa(self, *args) -> "Standard_Real" :
+    def Abscissa(self, *args):
         """
         * //!Return the curvilinear abscissa corresponding to a point  of the path, defined by <Index> of Edge and a parameter on the edge.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Param:
         :type Param: float
         :rtype: float
@@ -3990,11 +4921,11 @@ class BRepFill_LocationLaw(OCC.MMgt.MMgt_TShared):
         """
         return _BRepFill.BRepFill_LocationLaw_Abscissa(self, *args)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(BRepFill_LocationLaw self)"""
         return _BRepFill.BRepFill_LocationLaw__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_BRepFill_LocationLaw" :
+    def GetHandle(self):
         """GetHandle(BRepFill_LocationLaw self) -> Handle_BRepFill_LocationLaw"""
         return _BRepFill.BRepFill_LocationLaw_GetHandle(self)
 
@@ -4050,7 +4981,7 @@ Handle_BRepFill_LocationLaw._kill_pointed = new_instancemethod(_BRepFill.Handle_
 Handle_BRepFill_LocationLaw_swigregister = _BRepFill.Handle_BRepFill_LocationLaw_swigregister
 Handle_BRepFill_LocationLaw_swigregister(Handle_BRepFill_LocationLaw)
 
-def Handle_BRepFill_LocationLaw_DownCast(*args) -> "Handle_BRepFill_LocationLaw const" :
+def Handle_BRepFill_LocationLaw_DownCast(*args):
   return _BRepFill.Handle_BRepFill_LocationLaw_DownCast(*args)
 Handle_BRepFill_LocationLaw_DownCast = _BRepFill.Handle_BRepFill_LocationLaw_DownCast
 
@@ -4079,25 +5010,25 @@ class BRepFill_MultiLine(object):
 
         """
         _BRepFill.BRepFill_MultiLine_swiginit(self,_BRepFill.new_BRepFill_MultiLine(*args))
-    def IsParticularCase(self, *args) -> "Standard_Boolean" :
+    def IsParticularCase(self):
         """
         * Search if the Projection of the Bissectrice on the faces needs an approximation or not. Returns true if the approximation is not needed.
 
         :rtype: bool
 
         """
-        return _BRepFill.BRepFill_MultiLine_IsParticularCase(self, *args)
+        return _BRepFill.BRepFill_MultiLine_IsParticularCase(self)
 
-    def Continuity(self, *args) -> "GeomAbs_Shape" :
+    def Continuity(self):
         """
         * Returns the continuity betwwen the two faces seShape from GeomAbsparated by myBis.
 
         :rtype: GeomAbs_Shape
 
         """
-        return _BRepFill.BRepFill_MultiLine_Continuity(self, *args)
+        return _BRepFill.BRepFill_MultiLine_Continuity(self)
 
-    def Curves(self, *args) -> "void" :
+    def Curves(self, *args):
         """
         * raises if IsParticularCase is <False>.
 
@@ -4112,25 +5043,25 @@ class BRepFill_MultiLine(object):
         """
         return _BRepFill.BRepFill_MultiLine_Curves(self, *args)
 
-    def FirstParameter(self, *args) -> "Standard_Real" :
+    def FirstParameter(self):
         """
         * returns the first parameter of the Bissectrice.
 
         :rtype: float
 
         """
-        return _BRepFill.BRepFill_MultiLine_FirstParameter(self, *args)
+        return _BRepFill.BRepFill_MultiLine_FirstParameter(self)
 
-    def LastParameter(self, *args) -> "Standard_Real" :
+    def LastParameter(self):
         """
         * returns the last parameter of the Bissectrice.
 
         :rtype: float
 
         """
-        return _BRepFill.BRepFill_MultiLine_LastParameter(self, *args)
+        return _BRepFill.BRepFill_MultiLine_LastParameter(self)
 
-    def Value(self, *args) -> "gp_Pnt" :
+    def Value(self, *args):
         """
         * Returns the current point on the 3d curve
 
@@ -4141,7 +5072,7 @@ class BRepFill_MultiLine(object):
         """
         return _BRepFill.BRepFill_MultiLine_Value(self, *args)
 
-    def ValueOnF1(self, *args) -> "gp_Pnt2d" :
+    def ValueOnF1(self, *args):
         """
         * returns the current point on the PCurve of the first face
 
@@ -4152,7 +5083,7 @@ class BRepFill_MultiLine(object):
         """
         return _BRepFill.BRepFill_MultiLine_ValueOnF1(self, *args)
 
-    def ValueOnF2(self, *args) -> "gp_Pnt2d" :
+    def ValueOnF2(self, *args):
         """
         * returns the current point on the PCurve of the first face
 
@@ -4163,7 +5094,7 @@ class BRepFill_MultiLine(object):
         """
         return _BRepFill.BRepFill_MultiLine_ValueOnF2(self, *args)
 
-    def Value3dOnF1OnF2(self, *args) -> "void" :
+    def Value3dOnF1OnF2(self, *args):
         """
         :param U:
         :type U: float
@@ -4201,8 +5132,9 @@ BRepFill_MultiLine_swigregister(BRepFill_MultiLine)
 
 class BRepFill_MultiLineTool(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
+    def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def FirstParameter(*args) -> "Standard_Real" :
+    def FirstParameter(*args):
         """
         * returns the first parameter of the Line.
 
@@ -4214,7 +5146,7 @@ class BRepFill_MultiLineTool(object):
         return _BRepFill.BRepFill_MultiLineTool_FirstParameter(*args)
 
     FirstParameter = staticmethod(FirstParameter)
-    def LastParameter(*args) -> "Standard_Real" :
+    def LastParameter(*args):
         """
         * returns the last parameter of the Line.
 
@@ -4226,7 +5158,7 @@ class BRepFill_MultiLineTool(object):
         return _BRepFill.BRepFill_MultiLineTool_LastParameter(*args)
 
     LastParameter = staticmethod(LastParameter)
-    def NbP2d(*args) -> "Standard_Integer" :
+    def NbP2d(*args):
         """
         * Returns the number of 2d points of a MLine
 
@@ -4238,7 +5170,7 @@ class BRepFill_MultiLineTool(object):
         return _BRepFill.BRepFill_MultiLineTool_NbP2d(*args)
 
     NbP2d = staticmethod(NbP2d)
-    def NbP3d(*args) -> "Standard_Integer" :
+    def NbP3d(*args):
         """
         * Returns the number of 3d points of a MLine.
 
@@ -4250,7 +5182,7 @@ class BRepFill_MultiLineTool(object):
         return _BRepFill.BRepFill_MultiLineTool_NbP3d(*args)
 
     NbP3d = staticmethod(NbP3d)
-    def Value(*args) -> "void" :
+    def Value(*args):
         """
         * returns the 3d points of the multipoint <MPointIndex> when only 3d points exist.
 
@@ -4288,7 +5220,7 @@ class BRepFill_MultiLineTool(object):
         return _BRepFill.BRepFill_MultiLineTool_Value(*args)
 
     Value = staticmethod(Value)
-    def D1(*args) -> "Standard_Boolean" :
+    def D1(*args):
         """
         * returns the 3d derivative values of the multipoint <MPointIndex> when only 3d points exist. returns False if the derivative cannot be computed.
 
@@ -4326,8 +5258,6 @@ class BRepFill_MultiLineTool(object):
         return _BRepFill.BRepFill_MultiLineTool_D1(*args)
 
     D1 = staticmethod(D1)
-    def __init__(self): 
-        _BRepFill.BRepFill_MultiLineTool_swiginit(self,_BRepFill.new_BRepFill_MultiLineTool())
     def __del__(self):
     	try:
     		self.thisown = False
@@ -4340,7 +5270,7 @@ BRepFill_MultiLineTool._kill_pointed = new_instancemethod(_BRepFill.BRepFill_Mul
 BRepFill_MultiLineTool_swigregister = _BRepFill.BRepFill_MultiLineTool_swigregister
 BRepFill_MultiLineTool_swigregister(BRepFill_MultiLineTool)
 
-def BRepFill_MultiLineTool_FirstParameter(*args) -> "Standard_Real" :
+def BRepFill_MultiLineTool_FirstParameter(*args):
   """
     * returns the first parameter of the Line.
 
@@ -4351,7 +5281,7 @@ def BRepFill_MultiLineTool_FirstParameter(*args) -> "Standard_Real" :
     """
   return _BRepFill.BRepFill_MultiLineTool_FirstParameter(*args)
 
-def BRepFill_MultiLineTool_LastParameter(*args) -> "Standard_Real" :
+def BRepFill_MultiLineTool_LastParameter(*args):
   """
     * returns the last parameter of the Line.
 
@@ -4362,7 +5292,7 @@ def BRepFill_MultiLineTool_LastParameter(*args) -> "Standard_Real" :
     """
   return _BRepFill.BRepFill_MultiLineTool_LastParameter(*args)
 
-def BRepFill_MultiLineTool_NbP2d(*args) -> "Standard_Integer" :
+def BRepFill_MultiLineTool_NbP2d(*args):
   """
     * Returns the number of 2d points of a MLine
 
@@ -4373,7 +5303,7 @@ def BRepFill_MultiLineTool_NbP2d(*args) -> "Standard_Integer" :
     """
   return _BRepFill.BRepFill_MultiLineTool_NbP2d(*args)
 
-def BRepFill_MultiLineTool_NbP3d(*args) -> "Standard_Integer" :
+def BRepFill_MultiLineTool_NbP3d(*args):
   """
     * Returns the number of 3d points of a MLine.
 
@@ -4384,7 +5314,7 @@ def BRepFill_MultiLineTool_NbP3d(*args) -> "Standard_Integer" :
     """
   return _BRepFill.BRepFill_MultiLineTool_NbP3d(*args)
 
-def BRepFill_MultiLineTool_Value(*args) -> "void" :
+def BRepFill_MultiLineTool_Value(*args):
   """
     * returns the 3d points of the multipoint <MPointIndex> when only 3d points exist.
 
@@ -4421,7 +5351,7 @@ def BRepFill_MultiLineTool_Value(*args) -> "void" :
     """
   return _BRepFill.BRepFill_MultiLineTool_Value(*args)
 
-def BRepFill_MultiLineTool_D1(*args) -> "Standard_Boolean" :
+def BRepFill_MultiLineTool_D1(*args):
   """
     * returns the 3d derivative values of the multipoint <MPointIndex> when only 3d points exist. returns False if the derivative cannot be computed.
 
@@ -4474,28 +5404,44 @@ class BRepFill_MyLeastSquareOfComputeCLine(object):
         :param LastCons:
         :type LastCons: AppParCurves_Constraint
         :param Deg:
-        :type Deg: int
+        :type Deg: Standard_Integer
         :param NbPoints: default value is 24
-        :type NbPoints: int
+        :type NbPoints: Standard_Integer
+        :rtype: None
+
+        :param SSP:
+        :type SSP: BRepFill_MultiLine &
+        :param U0:
+        :type U0: float
+        :param U1:
+        :type U1: float
+        :param FirstCons:
+        :type FirstCons: AppParCurves_Constraint
+        :param LastCons:
+        :type LastCons: AppParCurves_Constraint
+        :param Deg:
+        :type Deg: Standard_Integer
+        :param NbPoints: default value is 24
+        :type NbPoints: Standard_Integer
         :rtype: None
 
         """
         _BRepFill.BRepFill_MyLeastSquareOfComputeCLine_swiginit(self,_BRepFill.new_BRepFill_MyLeastSquareOfComputeCLine(*args))
-    def IsDone(self, *args) -> "Standard_Boolean" :
+    def IsDone(self):
         """
         :rtype: bool
 
         """
-        return _BRepFill.BRepFill_MyLeastSquareOfComputeCLine_IsDone(self, *args)
+        return _BRepFill.BRepFill_MyLeastSquareOfComputeCLine_IsDone(self)
 
-    def Value(self, *args) -> "AppParCurves_MultiCurve const &" :
+    def Value(self):
         """
         :rtype: AppParCurves_MultiCurve
 
         """
-        return _BRepFill.BRepFill_MyLeastSquareOfComputeCLine_Value(self, *args)
+        return _BRepFill.BRepFill_MyLeastSquareOfComputeCLine_Value(self)
 
-    def Error(self, *args) -> "void" :
+    def Error(self):
         """
         :param F:
         :type F: float &
@@ -4506,7 +5452,7 @@ class BRepFill_MyLeastSquareOfComputeCLine(object):
         :rtype: None
 
         """
-        return _BRepFill.BRepFill_MyLeastSquareOfComputeCLine_Error(self, *args)
+        return _BRepFill.BRepFill_MyLeastSquareOfComputeCLine_Error(self)
 
     def __del__(self):
     	try:
@@ -4536,7 +5482,7 @@ class BRepFill_OffsetAncestors(object):
 
         """
         _BRepFill.BRepFill_OffsetAncestors_swiginit(self,_BRepFill.new_BRepFill_OffsetAncestors(*args))
-    def Perform(self, *args) -> "void" :
+    def Perform(self, *args):
         """
         :param Paral:
         :type Paral: BRepFill_OffsetWire &
@@ -4545,14 +5491,14 @@ class BRepFill_OffsetAncestors(object):
         """
         return _BRepFill.BRepFill_OffsetAncestors_Perform(self, *args)
 
-    def IsDone(self, *args) -> "Standard_Boolean" :
+    def IsDone(self):
         """
         :rtype: bool
 
         """
-        return _BRepFill.BRepFill_OffsetAncestors_IsDone(self, *args)
+        return _BRepFill.BRepFill_OffsetAncestors_IsDone(self)
 
-    def HasAncestor(self, *args) -> "Standard_Boolean" :
+    def HasAncestor(self, *args):
         """
         :param S1:
         :type S1: TopoDS_Edge &
@@ -4561,7 +5507,7 @@ class BRepFill_OffsetAncestors(object):
         """
         return _BRepFill.BRepFill_OffsetAncestors_HasAncestor(self, *args)
 
-    def Ancestor(self, *args) -> "TopoDS_Shape const" :
+    def Ancestor(self, *args):
         """
         * may return a Null Shape if S1 is not a subShape of <Paral>; if Perform is not done.
 
@@ -4601,10 +5547,24 @@ class BRepFill_OffsetWire(object):
         :type Join: GeomAbs_JoinType
         :rtype: None
 
+        :param Spine:
+        :type Spine: TopoDS_Face &
+        :param Join: default value is GeomAbs_Arc
+        :type Join: GeomAbs_JoinType
+        :rtype: None
+
         """
         _BRepFill.BRepFill_OffsetWire_swiginit(self,_BRepFill.new_BRepFill_OffsetWire(*args))
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
+        * Initialize the evaluation of Offseting.
+
+        :param Spine:
+        :type Spine: TopoDS_Face &
+        :param Join: default value is GeomAbs_Arc
+        :type Join: GeomAbs_JoinType
+        :rtype: None
+
         * Initialize the evaluation of Offseting.
 
         :param Spine:
@@ -4616,8 +5576,16 @@ class BRepFill_OffsetWire(object):
         """
         return _BRepFill.BRepFill_OffsetWire_Init(self, *args)
 
-    def Perform(self, *args) -> "void" :
+    def Perform(self, *args):
         """
+        * Performs an OffsetWire at an altitude <Alt> from the face ( According to the orientation of the face)
+
+        :param Offset:
+        :type Offset: float
+        :param Alt: default value is 0.0
+        :type Alt: float
+        :rtype: None
+
         * Performs an OffsetWire at an altitude <Alt> from the face ( According to the orientation of the face)
 
         :param Offset:
@@ -4629,8 +5597,40 @@ class BRepFill_OffsetWire(object):
         """
         return _BRepFill.BRepFill_OffsetWire_Perform(self, *args)
 
-    def PerformWithBiLo(self, *args) -> "void" :
+    def PerformWithBiLo(self, *args):
         """
+        * Performs an OffsetWire
+
+        :param WSP:
+        :type WSP: TopoDS_Face &
+        :param Offset:
+        :type Offset: float
+        :param Locus:
+        :type Locus: BRepMAT2d_BisectingLocus &
+        :param Link:
+        :type Link: BRepMAT2d_LinkTopoBilo &
+        :param Join: default value is GeomAbs_Arc
+        :type Join: GeomAbs_JoinType
+        :param Alt: default value is 0.0
+        :type Alt: float
+        :rtype: None
+
+        * Performs an OffsetWire
+
+        :param WSP:
+        :type WSP: TopoDS_Face &
+        :param Offset:
+        :type Offset: float
+        :param Locus:
+        :type Locus: BRepMAT2d_BisectingLocus &
+        :param Link:
+        :type Link: BRepMAT2d_LinkTopoBilo &
+        :param Join: default value is GeomAbs_Arc
+        :type Join: GeomAbs_JoinType
+        :param Alt: default value is 0.0
+        :type Alt: float
+        :rtype: None
+
         * Performs an OffsetWire
 
         :param WSP:
@@ -4650,30 +5650,30 @@ class BRepFill_OffsetWire(object):
         """
         return _BRepFill.BRepFill_OffsetWire_PerformWithBiLo(self, *args)
 
-    def IsDone(self, *args) -> "Standard_Boolean" :
+    def IsDone(self):
         """
         :rtype: bool
 
         """
-        return _BRepFill.BRepFill_OffsetWire_IsDone(self, *args)
+        return _BRepFill.BRepFill_OffsetWire_IsDone(self)
 
-    def Spine(self, *args) -> "TopoDS_Face const" :
+    def Spine(self):
         """
         :rtype: TopoDS_Face
 
         """
-        return _BRepFill.BRepFill_OffsetWire_Spine(self, *args)
+        return _BRepFill.BRepFill_OffsetWire_Spine(self)
 
-    def Shape(self, *args) -> "TopoDS_Shape const" :
+    def Shape(self):
         """
         * returns the generated shape.
 
         :rtype: TopoDS_Shape
 
         """
-        return _BRepFill.BRepFill_OffsetWire_Shape(self, *args)
+        return _BRepFill.BRepFill_OffsetWire_Shape(self)
 
-    def GeneratedShapes(self, *args) -> "TopTools_ListOfShape const &" :
+    def GeneratedShapes(self, *args):
         """
         * Returns the shapes created from a subshape <SpineShape> of the spine. Returns the last computed Offset.
 
@@ -4684,12 +5684,12 @@ class BRepFill_OffsetWire(object):
         """
         return _BRepFill.BRepFill_OffsetWire_GeneratedShapes(self, *args)
 
-    def JoinType(self, *args) -> "GeomAbs_JoinType" :
+    def JoinType(self):
         """
         :rtype: GeomAbs_JoinType
 
         """
-        return _BRepFill.BRepFill_OffsetWire_JoinType(self, *args)
+        return _BRepFill.BRepFill_OffsetWire_JoinType(self)
 
     def __del__(self):
     	try:
@@ -4730,10 +5730,54 @@ class BRepFill_Pipe(object):
         :type GeneratePartCase: bool
         :rtype: None
 
+        :param Spine:
+        :type Spine: TopoDS_Wire &
+        :param Profile:
+        :type Profile: TopoDS_Shape &
+        :param aMode: default value is GeomFill_IsCorrectedFrenet
+        :type aMode: GeomFill_Trihedron
+        :param ForceApproxC1: default value is Standard_False
+        :type ForceApproxC1: bool
+        :param GeneratePartCase: default value is Standard_False
+        :type GeneratePartCase: bool
+        :rtype: None
+
+        :param Spine:
+        :type Spine: TopoDS_Wire &
+        :param Profile:
+        :type Profile: TopoDS_Shape &
+        :param aMode: default value is GeomFill_IsCorrectedFrenet
+        :type aMode: GeomFill_Trihedron
+        :param ForceApproxC1: default value is Standard_False
+        :type ForceApproxC1: bool
+        :param GeneratePartCase: default value is Standard_False
+        :type GeneratePartCase: bool
+        :rtype: None
+
+        :param Spine:
+        :type Spine: TopoDS_Wire &
+        :param Profile:
+        :type Profile: TopoDS_Shape &
+        :param aMode: default value is GeomFill_IsCorrectedFrenet
+        :type aMode: GeomFill_Trihedron
+        :param ForceApproxC1: default value is Standard_False
+        :type ForceApproxC1: bool
+        :param GeneratePartCase: default value is Standard_False
+        :type GeneratePartCase: bool
+        :rtype: None
+
         """
         _BRepFill.BRepFill_Pipe_swiginit(self,_BRepFill.new_BRepFill_Pipe(*args))
-    def Perform(self, *args) -> "void" :
+    def Perform(self, *args):
         """
+        :param Spine:
+        :type Spine: TopoDS_Wire &
+        :param Profile:
+        :type Profile: TopoDS_Shape &
+        :param GeneratePartCase: default value is Standard_False
+        :type GeneratePartCase: bool
+        :rtype: None
+
         :param Spine:
         :type Spine: TopoDS_Wire &
         :param Profile:
@@ -4745,42 +5789,42 @@ class BRepFill_Pipe(object):
         """
         return _BRepFill.BRepFill_Pipe_Perform(self, *args)
 
-    def Spine(self, *args) -> "TopoDS_Shape const" :
+    def Spine(self):
         """
         :rtype: TopoDS_Shape
 
         """
-        return _BRepFill.BRepFill_Pipe_Spine(self, *args)
+        return _BRepFill.BRepFill_Pipe_Spine(self)
 
-    def Profile(self, *args) -> "TopoDS_Shape const" :
+    def Profile(self):
         """
         :rtype: TopoDS_Shape
 
         """
-        return _BRepFill.BRepFill_Pipe_Profile(self, *args)
+        return _BRepFill.BRepFill_Pipe_Profile(self)
 
-    def Shape(self, *args) -> "TopoDS_Shape const" :
+    def Shape(self):
         """
         :rtype: TopoDS_Shape
 
         """
-        return _BRepFill.BRepFill_Pipe_Shape(self, *args)
+        return _BRepFill.BRepFill_Pipe_Shape(self)
 
-    def FirstShape(self, *args) -> "TopoDS_Shape const" :
+    def FirstShape(self):
         """
         :rtype: TopoDS_Shape
 
         """
-        return _BRepFill.BRepFill_Pipe_FirstShape(self, *args)
+        return _BRepFill.BRepFill_Pipe_FirstShape(self)
 
-    def LastShape(self, *args) -> "TopoDS_Shape const" :
+    def LastShape(self):
         """
         :rtype: TopoDS_Shape
 
         """
-        return _BRepFill.BRepFill_Pipe_LastShape(self, *args)
+        return _BRepFill.BRepFill_Pipe_LastShape(self)
 
-    def Face(self, *args) -> "TopoDS_Face" :
+    def Face(self, *args):
         """
         * Returns the face created from an edge of the spine and an edge of the profile. if the edges are not in the spine or the profile
 
@@ -4793,7 +5837,7 @@ class BRepFill_Pipe(object):
         """
         return _BRepFill.BRepFill_Pipe_Face(self, *args)
 
-    def Edge(self, *args) -> "TopoDS_Edge" :
+    def Edge(self, *args):
         """
         * Returns the edge created from an edge of the spine and a vertex of the profile. if the edge or the vertex are not in the spine or the profile.
 
@@ -4806,7 +5850,7 @@ class BRepFill_Pipe(object):
         """
         return _BRepFill.BRepFill_Pipe_Edge(self, *args)
 
-    def Section(self, *args) -> "TopoDS_Shape" :
+    def Section(self, *args):
         """
         * Returns the shape created from the profile at the position of the vertex VSpine. if the vertex is not in the Spine
 
@@ -4817,7 +5861,7 @@ class BRepFill_Pipe(object):
         """
         return _BRepFill.BRepFill_Pipe_Section(self, *args)
 
-    def PipeLine(self, *args) -> "TopoDS_Wire" :
+    def PipeLine(self, *args):
         """
         * Create a Wire by sweeping the Point along the <spine> if the <Spine> is undefined
 
@@ -4863,17 +5907,23 @@ class BRepFill_PipeShell(OCC.MMgt.MMgt_TShared):
 
         """
         _BRepFill.BRepFill_PipeShell_swiginit(self,_BRepFill.new_BRepFill_PipeShell(*args))
-    def SetDiscrete(self, *args) -> "void" :
+    def SetDiscrete(self):
         """
         * Set a Discrete trihedron to perform the sweeping
 
         :rtype: None
 
         """
-        return _BRepFill.BRepFill_PipeShell_SetDiscrete(self, *args)
+        return _BRepFill.BRepFill_PipeShell_SetDiscrete(self)
 
-    def Set(self, *args) -> "void" :
+    def Set(self, *args):
         """
+        * Set an Frenet or an CorrectedFrenet trihedron to perform the sweeping
+
+        :param Frenet: default value is Standard_False
+        :type Frenet: bool
+        :rtype: None
+
         * Set an Frenet or an CorrectedFrenet trihedron to perform the sweeping
 
         :param Frenet: default value is Standard_False
@@ -4908,10 +5958,30 @@ class BRepFill_PipeShell(OCC.MMgt.MMgt_TShared):
         :type KeepContact: BRepFill_TypeOfContact
         :rtype: None
 
+        * Set an auxiliary spine to define the Normal For each Point of the Spine P, an Point Q is evalued on <AuxiliarySpine> If <CurvilinearEquivalence> Q split <AuxiliarySpine> with the same length ratio than P split <Spline>. Else the plan define by P and the tangent to the <Spine> intersect <AuxiliarySpine> in Q. If <KeepContact> equals BRepFill_NoContact: The Normal is defined by the vector PQ. If <KeepContact> equals BRepFill_Contact: The Normal is defined to achieve that the sweeped section is in contact to the auxiliarySpine. The width of section is constant all along the path. In other words, the auxiliary spine lies on the swept surface, but not necessarily is a boundary of this surface. However, the auxiliary spine has to be close enough to the main spine to provide intersection with any section all along the path. If <KeepContact> equals BRepFill_ContactOnBorder: The auxiliary spine becomes a boundary of the swept surface and the width of section varies along the path.
+
+        :param AuxiliarySpine:
+        :type AuxiliarySpine: TopoDS_Wire &
+        :param CurvilinearEquivalence: default value is Standard_True
+        :type CurvilinearEquivalence: bool
+        :param KeepContact: default value is BRepFill_NoContact
+        :type KeepContact: BRepFill_TypeOfContact
+        :rtype: None
+
+        * Set an auxiliary spine to define the Normal For each Point of the Spine P, an Point Q is evalued on <AuxiliarySpine> If <CurvilinearEquivalence> Q split <AuxiliarySpine> with the same length ratio than P split <Spline>. Else the plan define by P and the tangent to the <Spine> intersect <AuxiliarySpine> in Q. If <KeepContact> equals BRepFill_NoContact: The Normal is defined by the vector PQ. If <KeepContact> equals BRepFill_Contact: The Normal is defined to achieve that the sweeped section is in contact to the auxiliarySpine. The width of section is constant all along the path. In other words, the auxiliary spine lies on the swept surface, but not necessarily is a boundary of this surface. However, the auxiliary spine has to be close enough to the main spine to provide intersection with any section all along the path. If <KeepContact> equals BRepFill_ContactOnBorder: The auxiliary spine becomes a boundary of the swept surface and the width of section varies along the path.
+
+        :param AuxiliarySpine:
+        :type AuxiliarySpine: TopoDS_Wire &
+        :param CurvilinearEquivalence: default value is Standard_True
+        :type CurvilinearEquivalence: bool
+        :param KeepContact: default value is BRepFill_NoContact
+        :type KeepContact: BRepFill_TypeOfContact
+        :rtype: None
+
         """
         return _BRepFill.BRepFill_PipeShell_Set(self, *args)
 
-    def SetForceApproxC1(self, *args) -> "void" :
+    def SetForceApproxC1(self, *args):
         """
         * Set the flag that indicates attempt to approximate a C1-continuous surface if a swept surface proved to be C0. Give section to sweep. Possibilities are : //!	- Give one or sevral profile - Give one profile and an homotetic law. - Automatic compute of correspondance beetween profile, and section  on the sweeped shape - correspondance beetween profile, and section on the sweeped shape defined by a vertex of the spine
 
@@ -4922,8 +5992,28 @@ class BRepFill_PipeShell(OCC.MMgt.MMgt_TShared):
         """
         return _BRepFill.BRepFill_PipeShell_SetForceApproxC1(self, *args)
 
-    def Add(self, *args) -> "void" :
+    def Add(self, *args):
         """
+        * Set an section. The corespondance with the spine, will be automaticaly performed.
+
+        :param Profile:
+        :type Profile: TopoDS_Shape &
+        :param WithContact: default value is Standard_False
+        :type WithContact: bool
+        :param WithCorrection: default value is Standard_False
+        :type WithCorrection: bool
+        :rtype: None
+
+        * Set an section. The corespondance with the spine, will be automaticaly performed.
+
+        :param Profile:
+        :type Profile: TopoDS_Shape &
+        :param WithContact: default value is Standard_False
+        :type WithContact: bool
+        :param WithCorrection: default value is Standard_False
+        :type WithCorrection: bool
+        :rtype: None
+
         * Set an section. The corespondance with the spine, will be automaticaly performed.
 
         :param Profile:
@@ -4946,11 +6036,59 @@ class BRepFill_PipeShell(OCC.MMgt.MMgt_TShared):
         :type WithCorrection: bool
         :rtype: None
 
+        * Set an section. The corespondance with the spine, is given by <Location>
+
+        :param Profile:
+        :type Profile: TopoDS_Shape &
+        :param Location:
+        :type Location: TopoDS_Vertex &
+        :param WithContact: default value is Standard_False
+        :type WithContact: bool
+        :param WithCorrection: default value is Standard_False
+        :type WithCorrection: bool
+        :rtype: None
+
+        * Set an section. The corespondance with the spine, is given by <Location>
+
+        :param Profile:
+        :type Profile: TopoDS_Shape &
+        :param Location:
+        :type Location: TopoDS_Vertex &
+        :param WithContact: default value is Standard_False
+        :type WithContact: bool
+        :param WithCorrection: default value is Standard_False
+        :type WithCorrection: bool
+        :rtype: None
+
         """
         return _BRepFill.BRepFill_PipeShell_Add(self, *args)
 
-    def SetLaw(self, *args) -> "void" :
+    def SetLaw(self, *args):
         """
+        * Set an section and an homotetic law. The homotetie's centers is given by point on the <Spine>.
+
+        :param Profile:
+        :type Profile: TopoDS_Shape &
+        :param L:
+        :type L: Handle_Law_Function &
+        :param WithContact: default value is Standard_False
+        :type WithContact: bool
+        :param WithCorrection: default value is Standard_False
+        :type WithCorrection: bool
+        :rtype: None
+
+        * Set an section and an homotetic law. The homotetie's centers is given by point on the <Spine>.
+
+        :param Profile:
+        :type Profile: TopoDS_Shape &
+        :param L:
+        :type L: Handle_Law_Function &
+        :param WithContact: default value is Standard_False
+        :type WithContact: bool
+        :param WithCorrection: default value is Standard_False
+        :type WithCorrection: bool
+        :rtype: None
+
         * Set an section and an homotetic law. The homotetie's centers is given by point on the <Spine>.
 
         :param Profile:
@@ -4977,10 +6115,38 @@ class BRepFill_PipeShell(OCC.MMgt.MMgt_TShared):
         :type WithCorrection: bool
         :rtype: None
 
+        * Set an section and an homotetic law. The homotetie center is given by point on the <Spine>
+
+        :param Profile:
+        :type Profile: TopoDS_Shape &
+        :param L:
+        :type L: Handle_Law_Function &
+        :param Location:
+        :type Location: TopoDS_Vertex &
+        :param WithContact: default value is Standard_False
+        :type WithContact: bool
+        :param WithCorrection: default value is Standard_False
+        :type WithCorrection: bool
+        :rtype: None
+
+        * Set an section and an homotetic law. The homotetie center is given by point on the <Spine>
+
+        :param Profile:
+        :type Profile: TopoDS_Shape &
+        :param L:
+        :type L: Handle_Law_Function &
+        :param Location:
+        :type Location: TopoDS_Vertex &
+        :param WithContact: default value is Standard_False
+        :type WithContact: bool
+        :param WithCorrection: default value is Standard_False
+        :type WithCorrection: bool
+        :rtype: None
+
         """
         return _BRepFill.BRepFill_PipeShell_SetLaw(self, *args)
 
-    def Delete(self, *args) -> "void" :
+    def Delete(self, *args):
         """
         * Delete an section.
 
@@ -4991,25 +6157,25 @@ class BRepFill_PipeShell(OCC.MMgt.MMgt_TShared):
         """
         return _BRepFill.BRepFill_PipeShell_Delete(self, *args)
 
-    def IsReady(self, *args) -> "Standard_Boolean" :
+    def IsReady(self):
         """
         * Say if <self> is ready to build the shape return False if <self> do not have section definition
 
         :rtype: bool
 
         """
-        return _BRepFill.BRepFill_PipeShell_IsReady(self, *args)
+        return _BRepFill.BRepFill_PipeShell_IsReady(self)
 
-    def GetStatus(self, *args) -> "GeomFill_PipeError" :
+    def GetStatus(self):
         """
         * Get a status, when Simulate or Build failed.
 
         :rtype: GeomFill_PipeError
 
         """
-        return _BRepFill.BRepFill_PipeShell_GetStatus(self, *args)
+        return _BRepFill.BRepFill_PipeShell_GetStatus(self)
 
-    def SetTolerance(self, *args) -> "void" :
+    def SetTolerance(self, Tol3d=1.0e-4, BoundTol=1.0e-4, TolAngular=1.0e-2):
         """
         :param Tol3d: default value is 1.0e-4
         :type Tol3d: float
@@ -5019,11 +6185,65 @@ class BRepFill_PipeShell(OCC.MMgt.MMgt_TShared):
         :type TolAngular: float
         :rtype: None
 
-        """
-        return _BRepFill.BRepFill_PipeShell_SetTolerance(self, *args)
+        :param Tol3d: default value is 1.0e-4
+        :type Tol3d: float
+        :param BoundTol: default value is 1.0e-4
+        :type BoundTol: float
+        :param TolAngular: default value is 1.0e-2
+        :type TolAngular: float
+        :rtype: None
 
-    def SetTransition(self, *args) -> "void" :
+        :param Tol3d: default value is 1.0e-4
+        :type Tol3d: float
+        :param BoundTol: default value is 1.0e-4
+        :type BoundTol: float
+        :param TolAngular: default value is 1.0e-2
+        :type TolAngular: float
+        :rtype: None
+
+        :param Tol3d: default value is 1.0e-4
+        :type Tol3d: float
+        :param BoundTol: default value is 1.0e-4
+        :type BoundTol: float
+        :param TolAngular: default value is 1.0e-2
+        :type TolAngular: float
+        :rtype: None
+
         """
+        return _BRepFill.BRepFill_PipeShell_SetTolerance(self, Tol3d, BoundTol, TolAngular)
+
+    def SetTransition(self, *args):
+        """
+        * Set the Transition Mode to manage discontinuities on the sweep.
+
+        :param Mode: default value is BRepFill_Modified
+        :type Mode: BRepFill_TransitionStyle
+        :param Angmin: default value is 1.0e-2
+        :type Angmin: float
+        :param Angmax: default value is 6.0
+        :type Angmax: float
+        :rtype: None
+
+        * Set the Transition Mode to manage discontinuities on the sweep.
+
+        :param Mode: default value is BRepFill_Modified
+        :type Mode: BRepFill_TransitionStyle
+        :param Angmin: default value is 1.0e-2
+        :type Angmin: float
+        :param Angmax: default value is 6.0
+        :type Angmax: float
+        :rtype: None
+
+        * Set the Transition Mode to manage discontinuities on the sweep.
+
+        :param Mode: default value is BRepFill_Modified
+        :type Mode: BRepFill_TransitionStyle
+        :param Angmin: default value is 1.0e-2
+        :type Angmin: float
+        :param Angmax: default value is 6.0
+        :type Angmax: float
+        :rtype: None
+
         * Set the Transition Mode to manage discontinuities on the sweep.
 
         :param Mode: default value is BRepFill_Modified
@@ -5037,12 +6257,12 @@ class BRepFill_PipeShell(OCC.MMgt.MMgt_TShared):
         """
         return _BRepFill.BRepFill_PipeShell_SetTransition(self, *args)
 
-    def Simulate(self, *args) -> "void" :
+    def Simulate(self, *args):
         """
         * Perform simulation of the sweep :  Somes Section are returned.
 
         :param NumberOfSection:
-        :type NumberOfSection: int
+        :type NumberOfSection: Standard_Integer
         :param Sections:
         :type Sections: TopTools_ListOfShape &
         :rtype: None
@@ -5050,52 +6270,52 @@ class BRepFill_PipeShell(OCC.MMgt.MMgt_TShared):
         """
         return _BRepFill.BRepFill_PipeShell_Simulate(self, *args)
 
-    def Build(self, *args) -> "Standard_Boolean" :
+    def Build(self):
         """
         * Builds the resulting shape (redefined from MakeShape).
 
         :rtype: bool
 
         """
-        return _BRepFill.BRepFill_PipeShell_Build(self, *args)
+        return _BRepFill.BRepFill_PipeShell_Build(self)
 
-    def MakeSolid(self, *args) -> "Standard_Boolean" :
+    def MakeSolid(self):
         """
         * Transform the sweeping Shell in Solid. If the section are not closed returns False
 
         :rtype: bool
 
         """
-        return _BRepFill.BRepFill_PipeShell_MakeSolid(self, *args)
+        return _BRepFill.BRepFill_PipeShell_MakeSolid(self)
 
-    def Shape(self, *args) -> "TopoDS_Shape const" :
+    def Shape(self):
         """
         * Returns the result Shape.
 
         :rtype: TopoDS_Shape
 
         """
-        return _BRepFill.BRepFill_PipeShell_Shape(self, *args)
+        return _BRepFill.BRepFill_PipeShell_Shape(self)
 
-    def FirstShape(self, *args) -> "TopoDS_Shape const" :
+    def FirstShape(self):
         """
         * Returns the TopoDS Shape of the bottom of the sweep.
 
         :rtype: TopoDS_Shape
 
         """
-        return _BRepFill.BRepFill_PipeShell_FirstShape(self, *args)
+        return _BRepFill.BRepFill_PipeShell_FirstShape(self)
 
-    def LastShape(self, *args) -> "TopoDS_Shape const" :
+    def LastShape(self):
         """
         * Returns the TopoDS Shape of the top of the sweep.
 
         :rtype: TopoDS_Shape
 
         """
-        return _BRepFill.BRepFill_PipeShell_LastShape(self, *args)
+        return _BRepFill.BRepFill_PipeShell_LastShape(self)
 
-    def Generated(self, *args) -> "void" :
+    def Generated(self, *args):
         """
         * Returns the list of shapes generated from the shape <S>.
 
@@ -5108,11 +6328,11 @@ class BRepFill_PipeShell(OCC.MMgt.MMgt_TShared):
         """
         return _BRepFill.BRepFill_PipeShell_Generated(self, *args)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(BRepFill_PipeShell self)"""
         return _BRepFill.BRepFill_PipeShell__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_BRepFill_PipeShell" :
+    def GetHandle(self):
         """GetHandle(BRepFill_PipeShell self) -> Handle_BRepFill_PipeShell"""
         return _BRepFill.BRepFill_PipeShell_GetHandle(self)
 
@@ -5167,7 +6387,7 @@ Handle_BRepFill_PipeShell._kill_pointed = new_instancemethod(_BRepFill.Handle_BR
 Handle_BRepFill_PipeShell_swigregister = _BRepFill.Handle_BRepFill_PipeShell_swigregister
 Handle_BRepFill_PipeShell_swigregister(Handle_BRepFill_PipeShell)
 
-def Handle_BRepFill_PipeShell_DownCast(*args) -> "Handle_BRepFill_PipeShell const" :
+def Handle_BRepFill_PipeShell_DownCast(*args):
   return _BRepFill.Handle_BRepFill_PipeShell_DownCast(*args)
 Handle_BRepFill_PipeShell_DownCast = _BRepFill.Handle_BRepFill_PipeShell_DownCast
 
@@ -5190,7 +6410,7 @@ class BRepFill_Section(object):
 
         """
         _BRepFill.BRepFill_Section_swiginit(self,_BRepFill.new_BRepFill_Section(*args))
-    def Set(self, *args) -> "void" :
+    def Set(self, *args):
         """
         :param IsLaw:
         :type IsLaw: bool
@@ -5199,40 +6419,40 @@ class BRepFill_Section(object):
         """
         return _BRepFill.BRepFill_Section_Set(self, *args)
 
-    def Wire(self, *args) -> "TopoDS_Wire const" :
+    def Wire(self):
         """
         :rtype: TopoDS_Wire
 
         """
-        return _BRepFill.BRepFill_Section_Wire(self, *args)
+        return _BRepFill.BRepFill_Section_Wire(self)
 
-    def Vertex(self, *args) -> "TopoDS_Vertex const" :
+    def Vertex(self):
         """
         :rtype: TopoDS_Vertex
 
         """
-        return _BRepFill.BRepFill_Section_Vertex(self, *args)
+        return _BRepFill.BRepFill_Section_Vertex(self)
 
-    def IsLaw(self, *args) -> "Standard_Boolean" :
+    def IsLaw(self):
         """
         :rtype: bool
 
         """
-        return _BRepFill.BRepFill_Section_IsLaw(self, *args)
+        return _BRepFill.BRepFill_Section_IsLaw(self)
 
-    def WithContact(self, *args) -> "Standard_Boolean" :
+    def WithContact(self):
         """
         :rtype: bool
 
         """
-        return _BRepFill.BRepFill_Section_WithContact(self, *args)
+        return _BRepFill.BRepFill_Section_WithContact(self)
 
-    def WithCorrection(self, *args) -> "Standard_Boolean" :
+    def WithCorrection(self):
         """
         :rtype: bool
 
         """
-        return _BRepFill.BRepFill_Section_WithCorrection(self, *args)
+        return _BRepFill.BRepFill_Section_WithCorrection(self)
 
     def __del__(self):
     	try:
@@ -5256,63 +6476,63 @@ class BRepFill_SectionLaw(OCC.MMgt.MMgt_TShared):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def NbLaw(self, *args) -> "Standard_Integer" :
+    def NbLaw(self):
         """
         :rtype: int
 
         """
-        return _BRepFill.BRepFill_SectionLaw_NbLaw(self, *args)
+        return _BRepFill.BRepFill_SectionLaw_NbLaw(self)
 
-    def law(self, *args) -> "Handle_GeomFill_SectionLaw const &" :
+    def law(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Handle_GeomFill_SectionLaw
 
         """
         return _BRepFill.BRepFill_SectionLaw_law(self, *args)
 
-    def IsConstant(self, *args) -> "Standard_Boolean" :
+    def IsConstant(self):
         """
         :rtype: bool
 
         """
-        return _BRepFill.BRepFill_SectionLaw_IsConstant(self, *args)
+        return _BRepFill.BRepFill_SectionLaw_IsConstant(self)
 
-    def IsUClosed(self, *args) -> "Standard_Boolean" :
+    def IsUClosed(self):
         """
         :rtype: bool
 
         """
-        return _BRepFill.BRepFill_SectionLaw_IsUClosed(self, *args)
+        return _BRepFill.BRepFill_SectionLaw_IsUClosed(self)
 
-    def IsVClosed(self, *args) -> "Standard_Boolean" :
+    def IsVClosed(self):
         """
         :rtype: bool
 
         """
-        return _BRepFill.BRepFill_SectionLaw_IsVClosed(self, *args)
+        return _BRepFill.BRepFill_SectionLaw_IsVClosed(self)
 
-    def IsVertex(self, *args) -> "Standard_Boolean" :
+    def IsVertex(self):
         """
         * Say if the input sahpe is a vertex.
 
         :rtype: bool
 
         """
-        return _BRepFill.BRepFill_SectionLaw_IsVertex(self, *args)
+        return _BRepFill.BRepFill_SectionLaw_IsVertex(self)
 
-    def ConcatenedLaw(self, *args) -> "Handle_GeomFill_SectionLaw" :
+    def ConcatenedLaw(self):
         """
         :rtype: Handle_GeomFill_SectionLaw
 
         """
-        return _BRepFill.BRepFill_SectionLaw_ConcatenedLaw(self, *args)
+        return _BRepFill.BRepFill_SectionLaw_ConcatenedLaw(self)
 
-    def Continuity(self, *args) -> "GeomAbs_Shape" :
+    def Continuity(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param TolAngular:
         :type TolAngular: float
         :rtype: GeomAbs_Shape
@@ -5320,10 +6540,10 @@ class BRepFill_SectionLaw(OCC.MMgt.MMgt_TShared):
         """
         return _BRepFill.BRepFill_SectionLaw_Continuity(self, *args)
 
-    def VertexTol(self, *args) -> "Standard_Real" :
+    def VertexTol(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Param:
         :type Param: float
         :rtype: float
@@ -5331,10 +6551,10 @@ class BRepFill_SectionLaw(OCC.MMgt.MMgt_TShared):
         """
         return _BRepFill.BRepFill_SectionLaw_VertexTol(self, *args)
 
-    def Vertex(self, *args) -> "TopoDS_Vertex" :
+    def Vertex(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Param:
         :type Param: float
         :rtype: TopoDS_Vertex
@@ -5342,7 +6562,7 @@ class BRepFill_SectionLaw(OCC.MMgt.MMgt_TShared):
         """
         return _BRepFill.BRepFill_SectionLaw_Vertex(self, *args)
 
-    def D0(self, *args) -> "void" :
+    def D0(self, *args):
         """
         :param U:
         :type U: float
@@ -5353,7 +6573,7 @@ class BRepFill_SectionLaw(OCC.MMgt.MMgt_TShared):
         """
         return _BRepFill.BRepFill_SectionLaw_D0(self, *args)
 
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
         :param W:
         :type W: TopoDS_Wire &
@@ -5362,18 +6582,18 @@ class BRepFill_SectionLaw(OCC.MMgt.MMgt_TShared):
         """
         return _BRepFill.BRepFill_SectionLaw_Init(self, *args)
 
-    def CurrentEdge(self, *args) -> "TopoDS_Edge" :
+    def CurrentEdge(self):
         """
         :rtype: TopoDS_Edge
 
         """
-        return _BRepFill.BRepFill_SectionLaw_CurrentEdge(self, *args)
+        return _BRepFill.BRepFill_SectionLaw_CurrentEdge(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(BRepFill_SectionLaw self)"""
         return _BRepFill.BRepFill_SectionLaw__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_BRepFill_SectionLaw" :
+    def GetHandle(self):
         """GetHandle(BRepFill_SectionLaw self) -> Handle_BRepFill_SectionLaw"""
         return _BRepFill.BRepFill_SectionLaw_GetHandle(self)
 
@@ -5424,7 +6644,7 @@ Handle_BRepFill_SectionLaw._kill_pointed = new_instancemethod(_BRepFill.Handle_B
 Handle_BRepFill_SectionLaw_swigregister = _BRepFill.Handle_BRepFill_SectionLaw_swigregister
 Handle_BRepFill_SectionLaw_swigregister(Handle_BRepFill_SectionLaw)
 
-def Handle_BRepFill_SectionLaw_DownCast(*args) -> "Handle_BRepFill_SectionLaw const" :
+def Handle_BRepFill_SectionLaw_DownCast(*args):
   return _BRepFill.Handle_BRepFill_SectionLaw_DownCast(*args)
 Handle_BRepFill_SectionLaw_DownCast = _BRepFill.Handle_BRepFill_SectionLaw_DownCast
 
@@ -5433,6 +6653,30 @@ class BRepFill_SectionPlacement(object):
     __repr__ = _swig_repr
     def __init__(self, *args): 
         """
+        * Automatic placement
+
+        :param Law:
+        :type Law: Handle_BRepFill_LocationLaw &
+        :param Section:
+        :type Section: TopoDS_Shape &
+        :param WithContact: default value is Standard_False
+        :type WithContact: bool
+        :param WithCorrection: default value is Standard_False
+        :type WithCorrection: bool
+        :rtype: None
+
+        * Automatic placement
+
+        :param Law:
+        :type Law: Handle_BRepFill_LocationLaw &
+        :param Section:
+        :type Section: TopoDS_Shape &
+        :param WithContact: default value is Standard_False
+        :type WithContact: bool
+        :param WithCorrection: default value is Standard_False
+        :type WithCorrection: bool
+        :rtype: None
+
         * Automatic placement
 
         :param Law:
@@ -5459,21 +6703,49 @@ class BRepFill_SectionPlacement(object):
         :type WithCorrection: bool
         :rtype: None
 
+        * Placement on vertex
+
+        :param Law:
+        :type Law: Handle_BRepFill_LocationLaw &
+        :param Section:
+        :type Section: TopoDS_Shape &
+        :param Vertex:
+        :type Vertex: TopoDS_Shape &
+        :param WithContact: default value is Standard_False
+        :type WithContact: bool
+        :param WithCorrection: default value is Standard_False
+        :type WithCorrection: bool
+        :rtype: None
+
+        * Placement on vertex
+
+        :param Law:
+        :type Law: Handle_BRepFill_LocationLaw &
+        :param Section:
+        :type Section: TopoDS_Shape &
+        :param Vertex:
+        :type Vertex: TopoDS_Shape &
+        :param WithContact: default value is Standard_False
+        :type WithContact: bool
+        :param WithCorrection: default value is Standard_False
+        :type WithCorrection: bool
+        :rtype: None
+
         """
         _BRepFill.BRepFill_SectionPlacement_swiginit(self,_BRepFill.new_BRepFill_SectionPlacement(*args))
-    def Transformation(self, *args) -> "gp_Trsf const" :
+    def Transformation(self):
         """
         :rtype: gp_Trsf
 
         """
-        return _BRepFill.BRepFill_SectionPlacement_Transformation(self, *args)
+        return _BRepFill.BRepFill_SectionPlacement_Transformation(self)
 
-    def AbscissaOnPath(self, *args) -> "Standard_Real" :
+    def AbscissaOnPath(self):
         """
         :rtype: float
 
         """
-        return _BRepFill.BRepFill_SectionPlacement_AbscissaOnPath(self, *args)
+        return _BRepFill.BRepFill_SectionPlacement_AbscissaOnPath(self)
 
     def __del__(self):
     	try:
@@ -5504,18 +6776,18 @@ class BRepFill_SequenceNodeOfSequenceOfEdgeFaceAndOrder(OCC.TCollection.TCollect
 
         """
         _BRepFill.BRepFill_SequenceNodeOfSequenceOfEdgeFaceAndOrder_swiginit(self,_BRepFill.new_BRepFill_SequenceNodeOfSequenceOfEdgeFaceAndOrder(*args))
-    def Value(self, *args) -> "BRepFill_EdgeFaceAndOrder &" :
+    def Value(self):
         """
         :rtype: BRepFill_EdgeFaceAndOrder
 
         """
-        return _BRepFill.BRepFill_SequenceNodeOfSequenceOfEdgeFaceAndOrder_Value(self, *args)
+        return _BRepFill.BRepFill_SequenceNodeOfSequenceOfEdgeFaceAndOrder_Value(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(BRepFill_SequenceNodeOfSequenceOfEdgeFaceAndOrder self)"""
         return _BRepFill.BRepFill_SequenceNodeOfSequenceOfEdgeFaceAndOrder__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_BRepFill_SequenceNodeOfSequenceOfEdgeFaceAndOrder" :
+    def GetHandle(self):
         """GetHandle(BRepFill_SequenceNodeOfSequenceOfEdgeFaceAndOrder self) -> Handle_BRepFill_SequenceNodeOfSequenceOfEdgeFaceAndOrder"""
         return _BRepFill.BRepFill_SequenceNodeOfSequenceOfEdgeFaceAndOrder_GetHandle(self)
 
@@ -5554,7 +6826,7 @@ Handle_BRepFill_SequenceNodeOfSequenceOfEdgeFaceAndOrder._kill_pointed = new_ins
 Handle_BRepFill_SequenceNodeOfSequenceOfEdgeFaceAndOrder_swigregister = _BRepFill.Handle_BRepFill_SequenceNodeOfSequenceOfEdgeFaceAndOrder_swigregister
 Handle_BRepFill_SequenceNodeOfSequenceOfEdgeFaceAndOrder_swigregister(Handle_BRepFill_SequenceNodeOfSequenceOfEdgeFaceAndOrder)
 
-def Handle_BRepFill_SequenceNodeOfSequenceOfEdgeFaceAndOrder_DownCast(*args) -> "Handle_BRepFill_SequenceNodeOfSequenceOfEdgeFaceAndOrder const" :
+def Handle_BRepFill_SequenceNodeOfSequenceOfEdgeFaceAndOrder_DownCast(*args):
   return _BRepFill.Handle_BRepFill_SequenceNodeOfSequenceOfEdgeFaceAndOrder_DownCast(*args)
 Handle_BRepFill_SequenceNodeOfSequenceOfEdgeFaceAndOrder_DownCast = _BRepFill.Handle_BRepFill_SequenceNodeOfSequenceOfEdgeFaceAndOrder_DownCast
 
@@ -5573,18 +6845,18 @@ class BRepFill_SequenceNodeOfSequenceOfFaceAndOrder(OCC.TCollection.TCollection_
 
         """
         _BRepFill.BRepFill_SequenceNodeOfSequenceOfFaceAndOrder_swiginit(self,_BRepFill.new_BRepFill_SequenceNodeOfSequenceOfFaceAndOrder(*args))
-    def Value(self, *args) -> "BRepFill_FaceAndOrder &" :
+    def Value(self):
         """
         :rtype: BRepFill_FaceAndOrder
 
         """
-        return _BRepFill.BRepFill_SequenceNodeOfSequenceOfFaceAndOrder_Value(self, *args)
+        return _BRepFill.BRepFill_SequenceNodeOfSequenceOfFaceAndOrder_Value(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(BRepFill_SequenceNodeOfSequenceOfFaceAndOrder self)"""
         return _BRepFill.BRepFill_SequenceNodeOfSequenceOfFaceAndOrder__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_BRepFill_SequenceNodeOfSequenceOfFaceAndOrder" :
+    def GetHandle(self):
         """GetHandle(BRepFill_SequenceNodeOfSequenceOfFaceAndOrder self) -> Handle_BRepFill_SequenceNodeOfSequenceOfFaceAndOrder"""
         return _BRepFill.BRepFill_SequenceNodeOfSequenceOfFaceAndOrder_GetHandle(self)
 
@@ -5623,7 +6895,7 @@ Handle_BRepFill_SequenceNodeOfSequenceOfFaceAndOrder._kill_pointed = new_instanc
 Handle_BRepFill_SequenceNodeOfSequenceOfFaceAndOrder_swigregister = _BRepFill.Handle_BRepFill_SequenceNodeOfSequenceOfFaceAndOrder_swigregister
 Handle_BRepFill_SequenceNodeOfSequenceOfFaceAndOrder_swigregister(Handle_BRepFill_SequenceNodeOfSequenceOfFaceAndOrder)
 
-def Handle_BRepFill_SequenceNodeOfSequenceOfFaceAndOrder_DownCast(*args) -> "Handle_BRepFill_SequenceNodeOfSequenceOfFaceAndOrder const" :
+def Handle_BRepFill_SequenceNodeOfSequenceOfFaceAndOrder_DownCast(*args):
   return _BRepFill.Handle_BRepFill_SequenceNodeOfSequenceOfFaceAndOrder_DownCast(*args)
 Handle_BRepFill_SequenceNodeOfSequenceOfFaceAndOrder_DownCast = _BRepFill.Handle_BRepFill_SequenceNodeOfSequenceOfFaceAndOrder_DownCast
 
@@ -5642,18 +6914,18 @@ class BRepFill_SequenceNodeOfSequenceOfSection(OCC.TCollection.TCollection_SeqNo
 
         """
         _BRepFill.BRepFill_SequenceNodeOfSequenceOfSection_swiginit(self,_BRepFill.new_BRepFill_SequenceNodeOfSequenceOfSection(*args))
-    def Value(self, *args) -> "BRepFill_Section &" :
+    def Value(self):
         """
         :rtype: BRepFill_Section
 
         """
-        return _BRepFill.BRepFill_SequenceNodeOfSequenceOfSection_Value(self, *args)
+        return _BRepFill.BRepFill_SequenceNodeOfSequenceOfSection_Value(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(BRepFill_SequenceNodeOfSequenceOfSection self)"""
         return _BRepFill.BRepFill_SequenceNodeOfSequenceOfSection__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_BRepFill_SequenceNodeOfSequenceOfSection" :
+    def GetHandle(self):
         """GetHandle(BRepFill_SequenceNodeOfSequenceOfSection self) -> Handle_BRepFill_SequenceNodeOfSequenceOfSection"""
         return _BRepFill.BRepFill_SequenceNodeOfSequenceOfSection_GetHandle(self)
 
@@ -5692,27 +6964,27 @@ Handle_BRepFill_SequenceNodeOfSequenceOfSection._kill_pointed = new_instancemeth
 Handle_BRepFill_SequenceNodeOfSequenceOfSection_swigregister = _BRepFill.Handle_BRepFill_SequenceNodeOfSequenceOfSection_swigregister
 Handle_BRepFill_SequenceNodeOfSequenceOfSection_swigregister(Handle_BRepFill_SequenceNodeOfSequenceOfSection)
 
-def Handle_BRepFill_SequenceNodeOfSequenceOfSection_DownCast(*args) -> "Handle_BRepFill_SequenceNodeOfSequenceOfSection const" :
+def Handle_BRepFill_SequenceNodeOfSequenceOfSection_DownCast(*args):
   return _BRepFill.Handle_BRepFill_SequenceNodeOfSequenceOfSection_DownCast(*args)
 Handle_BRepFill_SequenceNodeOfSequenceOfSection_DownCast = _BRepFill.Handle_BRepFill_SequenceNodeOfSequenceOfSection_DownCast
 
 class BRepFill_SequenceOfEdgeFaceAndOrder(OCC.TCollection.TCollection_BaseSequence):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _BRepFill.BRepFill_SequenceOfEdgeFaceAndOrder_swiginit(self,_BRepFill.new_BRepFill_SequenceOfEdgeFaceAndOrder(*args))
-    def Clear(self, *args) -> "void" :
+        _BRepFill.BRepFill_SequenceOfEdgeFaceAndOrder_swiginit(self,_BRepFill.new_BRepFill_SequenceOfEdgeFaceAndOrder())
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _BRepFill.BRepFill_SequenceOfEdgeFaceAndOrder_Clear(self, *args)
+        return _BRepFill.BRepFill_SequenceOfEdgeFaceAndOrder_Clear(self)
 
-    def Assign(self, *args) -> "BRepFill_SequenceOfEdgeFaceAndOrder const &" :
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: BRepFill_SequenceOfEdgeFaceAndOrder &
@@ -5721,7 +6993,7 @@ class BRepFill_SequenceOfEdgeFaceAndOrder(OCC.TCollection.TCollection_BaseSequen
         """
         return _BRepFill.BRepFill_SequenceOfEdgeFaceAndOrder_Assign(self, *args)
 
-    def Set(self, *args) -> "BRepFill_SequenceOfEdgeFaceAndOrder const &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: BRepFill_SequenceOfEdgeFaceAndOrder &
@@ -5730,7 +7002,7 @@ class BRepFill_SequenceOfEdgeFaceAndOrder(OCC.TCollection.TCollection_BaseSequen
         """
         return _BRepFill.BRepFill_SequenceOfEdgeFaceAndOrder_Set(self, *args)
 
-    def Append(self, *args) -> "void" :
+    def Append(self, *args):
         """
         :param T:
         :type T: BRepFill_EdgeFaceAndOrder &
@@ -5743,7 +7015,7 @@ class BRepFill_SequenceOfEdgeFaceAndOrder(OCC.TCollection.TCollection_BaseSequen
         """
         return _BRepFill.BRepFill_SequenceOfEdgeFaceAndOrder_Append(self, *args)
 
-    def Prepend(self, *args) -> "void" :
+    def Prepend(self, *args):
         """
         :param T:
         :type T: BRepFill_EdgeFaceAndOrder &
@@ -5756,16 +7028,16 @@ class BRepFill_SequenceOfEdgeFaceAndOrder(OCC.TCollection.TCollection_BaseSequen
         """
         return _BRepFill.BRepFill_SequenceOfEdgeFaceAndOrder_Prepend(self, *args)
 
-    def InsertBefore(self, *args) -> "void" :
+    def InsertBefore(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param T:
         :type T: BRepFill_EdgeFaceAndOrder &
         :rtype: None
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param S:
         :type S: BRepFill_SequenceOfEdgeFaceAndOrder &
         :rtype: None
@@ -5773,16 +7045,16 @@ class BRepFill_SequenceOfEdgeFaceAndOrder(OCC.TCollection.TCollection_BaseSequen
         """
         return _BRepFill.BRepFill_SequenceOfEdgeFaceAndOrder_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args) -> "void" :
+    def InsertAfter(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param T:
         :type T: BRepFill_EdgeFaceAndOrder &
         :rtype: None
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param S:
         :type S: BRepFill_SequenceOfEdgeFaceAndOrder &
         :rtype: None
@@ -5790,24 +7062,24 @@ class BRepFill_SequenceOfEdgeFaceAndOrder(OCC.TCollection.TCollection_BaseSequen
         """
         return _BRepFill.BRepFill_SequenceOfEdgeFaceAndOrder_InsertAfter(self, *args)
 
-    def First(self, *args) -> "BRepFill_EdgeFaceAndOrder const &" :
+    def First(self):
         """
         :rtype: BRepFill_EdgeFaceAndOrder
 
         """
-        return _BRepFill.BRepFill_SequenceOfEdgeFaceAndOrder_First(self, *args)
+        return _BRepFill.BRepFill_SequenceOfEdgeFaceAndOrder_First(self)
 
-    def Last(self, *args) -> "BRepFill_EdgeFaceAndOrder const &" :
+    def Last(self):
         """
         :rtype: BRepFill_EdgeFaceAndOrder
 
         """
-        return _BRepFill.BRepFill_SequenceOfEdgeFaceAndOrder_Last(self, *args)
+        return _BRepFill.BRepFill_SequenceOfEdgeFaceAndOrder_Last(self)
 
-    def Split(self, *args) -> "void" :
+    def Split(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Sub:
         :type Sub: BRepFill_SequenceOfEdgeFaceAndOrder &
         :rtype: None
@@ -5815,19 +7087,19 @@ class BRepFill_SequenceOfEdgeFaceAndOrder(OCC.TCollection.TCollection_BaseSequen
         """
         return _BRepFill.BRepFill_SequenceOfEdgeFaceAndOrder_Split(self, *args)
 
-    def Value(self, *args) -> "BRepFill_EdgeFaceAndOrder const &" :
+    def Value(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: BRepFill_EdgeFaceAndOrder
 
         """
         return _BRepFill.BRepFill_SequenceOfEdgeFaceAndOrder_Value(self, *args)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param I:
         :type I: BRepFill_EdgeFaceAndOrder &
         :rtype: None
@@ -5835,25 +7107,25 @@ class BRepFill_SequenceOfEdgeFaceAndOrder(OCC.TCollection.TCollection_BaseSequen
         """
         return _BRepFill.BRepFill_SequenceOfEdgeFaceAndOrder_SetValue(self, *args)
 
-    def ChangeValue(self, *args) -> "BRepFill_EdgeFaceAndOrder &" :
+    def ChangeValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: BRepFill_EdgeFaceAndOrder
 
         """
         return _BRepFill.BRepFill_SequenceOfEdgeFaceAndOrder_ChangeValue(self, *args)
 
-    def Remove(self, *args) -> "void" :
+    def Remove(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: None
 
         :param FromIndex:
-        :type FromIndex: int
+        :type FromIndex: Standard_Integer
         :param ToIndex:
-        :type ToIndex: int
+        :type ToIndex: Standard_Integer
         :rtype: None
 
         """
@@ -5888,20 +7160,20 @@ BRepFill_SequenceOfEdgeFaceAndOrder_swigregister(BRepFill_SequenceOfEdgeFaceAndO
 class BRepFill_SequenceOfFaceAndOrder(OCC.TCollection.TCollection_BaseSequence):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _BRepFill.BRepFill_SequenceOfFaceAndOrder_swiginit(self,_BRepFill.new_BRepFill_SequenceOfFaceAndOrder(*args))
-    def Clear(self, *args) -> "void" :
+        _BRepFill.BRepFill_SequenceOfFaceAndOrder_swiginit(self,_BRepFill.new_BRepFill_SequenceOfFaceAndOrder())
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _BRepFill.BRepFill_SequenceOfFaceAndOrder_Clear(self, *args)
+        return _BRepFill.BRepFill_SequenceOfFaceAndOrder_Clear(self)
 
-    def Assign(self, *args) -> "BRepFill_SequenceOfFaceAndOrder const &" :
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: BRepFill_SequenceOfFaceAndOrder &
@@ -5910,7 +7182,7 @@ class BRepFill_SequenceOfFaceAndOrder(OCC.TCollection.TCollection_BaseSequence):
         """
         return _BRepFill.BRepFill_SequenceOfFaceAndOrder_Assign(self, *args)
 
-    def Set(self, *args) -> "BRepFill_SequenceOfFaceAndOrder const &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: BRepFill_SequenceOfFaceAndOrder &
@@ -5919,7 +7191,7 @@ class BRepFill_SequenceOfFaceAndOrder(OCC.TCollection.TCollection_BaseSequence):
         """
         return _BRepFill.BRepFill_SequenceOfFaceAndOrder_Set(self, *args)
 
-    def Append(self, *args) -> "void" :
+    def Append(self, *args):
         """
         :param T:
         :type T: BRepFill_FaceAndOrder &
@@ -5932,7 +7204,7 @@ class BRepFill_SequenceOfFaceAndOrder(OCC.TCollection.TCollection_BaseSequence):
         """
         return _BRepFill.BRepFill_SequenceOfFaceAndOrder_Append(self, *args)
 
-    def Prepend(self, *args) -> "void" :
+    def Prepend(self, *args):
         """
         :param T:
         :type T: BRepFill_FaceAndOrder &
@@ -5945,16 +7217,16 @@ class BRepFill_SequenceOfFaceAndOrder(OCC.TCollection.TCollection_BaseSequence):
         """
         return _BRepFill.BRepFill_SequenceOfFaceAndOrder_Prepend(self, *args)
 
-    def InsertBefore(self, *args) -> "void" :
+    def InsertBefore(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param T:
         :type T: BRepFill_FaceAndOrder &
         :rtype: None
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param S:
         :type S: BRepFill_SequenceOfFaceAndOrder &
         :rtype: None
@@ -5962,16 +7234,16 @@ class BRepFill_SequenceOfFaceAndOrder(OCC.TCollection.TCollection_BaseSequence):
         """
         return _BRepFill.BRepFill_SequenceOfFaceAndOrder_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args) -> "void" :
+    def InsertAfter(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param T:
         :type T: BRepFill_FaceAndOrder &
         :rtype: None
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param S:
         :type S: BRepFill_SequenceOfFaceAndOrder &
         :rtype: None
@@ -5979,24 +7251,24 @@ class BRepFill_SequenceOfFaceAndOrder(OCC.TCollection.TCollection_BaseSequence):
         """
         return _BRepFill.BRepFill_SequenceOfFaceAndOrder_InsertAfter(self, *args)
 
-    def First(self, *args) -> "BRepFill_FaceAndOrder const &" :
+    def First(self):
         """
         :rtype: BRepFill_FaceAndOrder
 
         """
-        return _BRepFill.BRepFill_SequenceOfFaceAndOrder_First(self, *args)
+        return _BRepFill.BRepFill_SequenceOfFaceAndOrder_First(self)
 
-    def Last(self, *args) -> "BRepFill_FaceAndOrder const &" :
+    def Last(self):
         """
         :rtype: BRepFill_FaceAndOrder
 
         """
-        return _BRepFill.BRepFill_SequenceOfFaceAndOrder_Last(self, *args)
+        return _BRepFill.BRepFill_SequenceOfFaceAndOrder_Last(self)
 
-    def Split(self, *args) -> "void" :
+    def Split(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Sub:
         :type Sub: BRepFill_SequenceOfFaceAndOrder &
         :rtype: None
@@ -6004,19 +7276,19 @@ class BRepFill_SequenceOfFaceAndOrder(OCC.TCollection.TCollection_BaseSequence):
         """
         return _BRepFill.BRepFill_SequenceOfFaceAndOrder_Split(self, *args)
 
-    def Value(self, *args) -> "BRepFill_FaceAndOrder const &" :
+    def Value(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: BRepFill_FaceAndOrder
 
         """
         return _BRepFill.BRepFill_SequenceOfFaceAndOrder_Value(self, *args)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param I:
         :type I: BRepFill_FaceAndOrder &
         :rtype: None
@@ -6024,25 +7296,25 @@ class BRepFill_SequenceOfFaceAndOrder(OCC.TCollection.TCollection_BaseSequence):
         """
         return _BRepFill.BRepFill_SequenceOfFaceAndOrder_SetValue(self, *args)
 
-    def ChangeValue(self, *args) -> "BRepFill_FaceAndOrder &" :
+    def ChangeValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: BRepFill_FaceAndOrder
 
         """
         return _BRepFill.BRepFill_SequenceOfFaceAndOrder_ChangeValue(self, *args)
 
-    def Remove(self, *args) -> "void" :
+    def Remove(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: None
 
         :param FromIndex:
-        :type FromIndex: int
+        :type FromIndex: Standard_Integer
         :param ToIndex:
-        :type ToIndex: int
+        :type ToIndex: Standard_Integer
         :rtype: None
 
         """
@@ -6077,20 +7349,20 @@ BRepFill_SequenceOfFaceAndOrder_swigregister(BRepFill_SequenceOfFaceAndOrder)
 class BRepFill_SequenceOfSection(OCC.TCollection.TCollection_BaseSequence):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _BRepFill.BRepFill_SequenceOfSection_swiginit(self,_BRepFill.new_BRepFill_SequenceOfSection(*args))
-    def Clear(self, *args) -> "void" :
+        _BRepFill.BRepFill_SequenceOfSection_swiginit(self,_BRepFill.new_BRepFill_SequenceOfSection())
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _BRepFill.BRepFill_SequenceOfSection_Clear(self, *args)
+        return _BRepFill.BRepFill_SequenceOfSection_Clear(self)
 
-    def Assign(self, *args) -> "BRepFill_SequenceOfSection const &" :
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: BRepFill_SequenceOfSection &
@@ -6099,7 +7371,7 @@ class BRepFill_SequenceOfSection(OCC.TCollection.TCollection_BaseSequence):
         """
         return _BRepFill.BRepFill_SequenceOfSection_Assign(self, *args)
 
-    def Set(self, *args) -> "BRepFill_SequenceOfSection const &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: BRepFill_SequenceOfSection &
@@ -6108,7 +7380,7 @@ class BRepFill_SequenceOfSection(OCC.TCollection.TCollection_BaseSequence):
         """
         return _BRepFill.BRepFill_SequenceOfSection_Set(self, *args)
 
-    def Append(self, *args) -> "void" :
+    def Append(self, *args):
         """
         :param T:
         :type T: BRepFill_Section &
@@ -6121,7 +7393,7 @@ class BRepFill_SequenceOfSection(OCC.TCollection.TCollection_BaseSequence):
         """
         return _BRepFill.BRepFill_SequenceOfSection_Append(self, *args)
 
-    def Prepend(self, *args) -> "void" :
+    def Prepend(self, *args):
         """
         :param T:
         :type T: BRepFill_Section &
@@ -6134,16 +7406,16 @@ class BRepFill_SequenceOfSection(OCC.TCollection.TCollection_BaseSequence):
         """
         return _BRepFill.BRepFill_SequenceOfSection_Prepend(self, *args)
 
-    def InsertBefore(self, *args) -> "void" :
+    def InsertBefore(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param T:
         :type T: BRepFill_Section &
         :rtype: None
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param S:
         :type S: BRepFill_SequenceOfSection &
         :rtype: None
@@ -6151,16 +7423,16 @@ class BRepFill_SequenceOfSection(OCC.TCollection.TCollection_BaseSequence):
         """
         return _BRepFill.BRepFill_SequenceOfSection_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args) -> "void" :
+    def InsertAfter(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param T:
         :type T: BRepFill_Section &
         :rtype: None
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param S:
         :type S: BRepFill_SequenceOfSection &
         :rtype: None
@@ -6168,24 +7440,24 @@ class BRepFill_SequenceOfSection(OCC.TCollection.TCollection_BaseSequence):
         """
         return _BRepFill.BRepFill_SequenceOfSection_InsertAfter(self, *args)
 
-    def First(self, *args) -> "BRepFill_Section const &" :
+    def First(self):
         """
         :rtype: BRepFill_Section
 
         """
-        return _BRepFill.BRepFill_SequenceOfSection_First(self, *args)
+        return _BRepFill.BRepFill_SequenceOfSection_First(self)
 
-    def Last(self, *args) -> "BRepFill_Section const &" :
+    def Last(self):
         """
         :rtype: BRepFill_Section
 
         """
-        return _BRepFill.BRepFill_SequenceOfSection_Last(self, *args)
+        return _BRepFill.BRepFill_SequenceOfSection_Last(self)
 
-    def Split(self, *args) -> "void" :
+    def Split(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Sub:
         :type Sub: BRepFill_SequenceOfSection &
         :rtype: None
@@ -6193,19 +7465,19 @@ class BRepFill_SequenceOfSection(OCC.TCollection.TCollection_BaseSequence):
         """
         return _BRepFill.BRepFill_SequenceOfSection_Split(self, *args)
 
-    def Value(self, *args) -> "BRepFill_Section const &" :
+    def Value(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: BRepFill_Section
 
         """
         return _BRepFill.BRepFill_SequenceOfSection_Value(self, *args)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param I:
         :type I: BRepFill_Section &
         :rtype: None
@@ -6213,25 +7485,25 @@ class BRepFill_SequenceOfSection(OCC.TCollection.TCollection_BaseSequence):
         """
         return _BRepFill.BRepFill_SequenceOfSection_SetValue(self, *args)
 
-    def ChangeValue(self, *args) -> "BRepFill_Section &" :
+    def ChangeValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: BRepFill_Section
 
         """
         return _BRepFill.BRepFill_SequenceOfSection_ChangeValue(self, *args)
 
-    def Remove(self, *args) -> "void" :
+    def Remove(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: None
 
         :param FromIndex:
-        :type FromIndex: int
+        :type FromIndex: Standard_Integer
         :param ToIndex:
-        :type ToIndex: int
+        :type ToIndex: Standard_Integer
         :rtype: None
 
         """
@@ -6278,7 +7550,7 @@ class BRepFill_Sweep(object):
 
         """
         _BRepFill.BRepFill_Sweep_swiginit(self,_BRepFill.new_BRepFill_Sweep(*args))
-    def SetBounds(self, *args) -> "void" :
+    def SetBounds(self, *args):
         """
         :param FirstShape:
         :type FirstShape: TopoDS_Wire &
@@ -6289,8 +7561,44 @@ class BRepFill_Sweep(object):
         """
         return _BRepFill.BRepFill_Sweep_SetBounds(self, *args)
 
-    def SetTolerance(self, *args) -> "void" :
+    def SetTolerance(self, *args):
         """
+        * Set Approximation Tolerance Tol3d : Tolerance to surface approximation Tol2d : Tolerance used to perform curve approximation  Normaly the 2d curve are approximated with a  tolerance given by the resolution on support surfaces,  but if this tolerance is too large Tol2d is used. TolAngular : Tolerance (in radian) to control the angle  beetween tangents on the section law and  tangent of iso-v on approximed surface
+
+        :param Tol3d:
+        :type Tol3d: float
+        :param BoundTol: default value is 1.0
+        :type BoundTol: float
+        :param Tol2d: default value is 1.0e-5
+        :type Tol2d: float
+        :param TolAngular: default value is 1.0e-2
+        :type TolAngular: float
+        :rtype: None
+
+        * Set Approximation Tolerance Tol3d : Tolerance to surface approximation Tol2d : Tolerance used to perform curve approximation  Normaly the 2d curve are approximated with a  tolerance given by the resolution on support surfaces,  but if this tolerance is too large Tol2d is used. TolAngular : Tolerance (in radian) to control the angle  beetween tangents on the section law and  tangent of iso-v on approximed surface
+
+        :param Tol3d:
+        :type Tol3d: float
+        :param BoundTol: default value is 1.0
+        :type BoundTol: float
+        :param Tol2d: default value is 1.0e-5
+        :type Tol2d: float
+        :param TolAngular: default value is 1.0e-2
+        :type TolAngular: float
+        :rtype: None
+
+        * Set Approximation Tolerance Tol3d : Tolerance to surface approximation Tol2d : Tolerance used to perform curve approximation  Normaly the 2d curve are approximated with a  tolerance given by the resolution on support surfaces,  but if this tolerance is too large Tol2d is used. TolAngular : Tolerance (in radian) to control the angle  beetween tangents on the section law and  tangent of iso-v on approximed surface
+
+        :param Tol3d:
+        :type Tol3d: float
+        :param BoundTol: default value is 1.0
+        :type BoundTol: float
+        :param Tol2d: default value is 1.0e-5
+        :type Tol2d: float
+        :param TolAngular: default value is 1.0e-2
+        :type TolAngular: float
+        :rtype: None
+
         * Set Approximation Tolerance Tol3d : Tolerance to surface approximation Tol2d : Tolerance used to perform curve approximation  Normaly the 2d curve are approximated with a  tolerance given by the resolution on support surfaces,  but if this tolerance is too large Tol2d is used. TolAngular : Tolerance (in radian) to control the angle  beetween tangents on the section law and  tangent of iso-v on approximed surface
 
         :param Tol3d:
@@ -6306,7 +7614,7 @@ class BRepFill_Sweep(object):
         """
         return _BRepFill.BRepFill_Sweep_SetTolerance(self, *args)
 
-    def SetAngularControl(self, *args) -> "void" :
+    def SetAngularControl(self, AngleMin=0.01, AngleMax=6.0):
         """
         * Tolerance To controle Corner management. If the discontinuity is lesser than <AngleMin> in radian The Transition Performed will be alway 'Modified'
 
@@ -6316,10 +7624,26 @@ class BRepFill_Sweep(object):
         :type AngleMax: float
         :rtype: None
 
-        """
-        return _BRepFill.BRepFill_Sweep_SetAngularControl(self, *args)
+        * Tolerance To controle Corner management. If the discontinuity is lesser than <AngleMin> in radian The Transition Performed will be alway 'Modified'
 
-    def SetForceApproxC1(self, *args) -> "void" :
+        :param AngleMin: default value is 0.01
+        :type AngleMin: float
+        :param AngleMax: default value is 6.0
+        :type AngleMax: float
+        :rtype: None
+
+        * Tolerance To controle Corner management. If the discontinuity is lesser than <AngleMin> in radian The Transition Performed will be alway 'Modified'
+
+        :param AngleMin: default value is 0.01
+        :type AngleMin: float
+        :param AngleMax: default value is 6.0
+        :type AngleMax: float
+        :rtype: None
+
+        """
+        return _BRepFill.BRepFill_Sweep_SetAngularControl(self, AngleMin, AngleMax)
+
+    def SetForceApproxC1(self, *args):
         """
         * Set the flag that indicates attempt to approximate a C1-continuous surface if a swept surface proved to be C0.
 
@@ -6330,7 +7654,7 @@ class BRepFill_Sweep(object):
         """
         return _BRepFill.BRepFill_Sweep_SetForceApproxC1(self, *args)
 
-    def Build(self, *args) -> "void" :
+    def Build(self, *args):
         """
         * Build the Sweeep Surface Transition define Transition strategy Approx define Approximation Strategy - GeomFill_Section : The composed Function Location X Section  is directly approximed. - GeomFill_Location : The location law is approximed, and the  SweepSurface is bulid algebric composition  of approximed location law and section law  This option is Ok, if Section.Surface() methode  is effective. Continuity : The continuity in v waiting on the surface Degmax : The maximum degree in v requiered on the surface Segmax : The maximum number of span in v requiered on  the surface.
 
@@ -6345,61 +7669,151 @@ class BRepFill_Sweep(object):
         :param Approx: default value is GeomFill_Location
         :type Approx: GeomFill_ApproxStyle
         :param Degmax: default value is 11
-        :type Degmax: int
+        :type Degmax: Standard_Integer
         :param Segmax: default value is 30
-        :type Segmax: int
+        :type Segmax: Standard_Integer
+        :rtype: None
+
+        * Build the Sweeep Surface Transition define Transition strategy Approx define Approximation Strategy - GeomFill_Section : The composed Function Location X Section  is directly approximed. - GeomFill_Location : The location law is approximed, and the  SweepSurface is bulid algebric composition  of approximed location law and section law  This option is Ok, if Section.Surface() methode  is effective. Continuity : The continuity in v waiting on the surface Degmax : The maximum degree in v requiered on the surface Segmax : The maximum number of span in v requiered on  the surface.
+
+        :param ReversedEdges:
+        :type ReversedEdges: TopTools_MapOfShape &
+        :param Tapes:
+        :type Tapes: BRepFill_DataMapOfShapeHArray2OfShape &
+        :param Transition: default value is BRepFill_Modified
+        :type Transition: BRepFill_TransitionStyle
+        :param Continuity: default value is GeomAbs_C2
+        :type Continuity: GeomAbs_Shape
+        :param Approx: default value is GeomFill_Location
+        :type Approx: GeomFill_ApproxStyle
+        :param Degmax: default value is 11
+        :type Degmax: Standard_Integer
+        :param Segmax: default value is 30
+        :type Segmax: Standard_Integer
+        :rtype: None
+
+        * Build the Sweeep Surface Transition define Transition strategy Approx define Approximation Strategy - GeomFill_Section : The composed Function Location X Section  is directly approximed. - GeomFill_Location : The location law is approximed, and the  SweepSurface is bulid algebric composition  of approximed location law and section law  This option is Ok, if Section.Surface() methode  is effective. Continuity : The continuity in v waiting on the surface Degmax : The maximum degree in v requiered on the surface Segmax : The maximum number of span in v requiered on  the surface.
+
+        :param ReversedEdges:
+        :type ReversedEdges: TopTools_MapOfShape &
+        :param Tapes:
+        :type Tapes: BRepFill_DataMapOfShapeHArray2OfShape &
+        :param Transition: default value is BRepFill_Modified
+        :type Transition: BRepFill_TransitionStyle
+        :param Continuity: default value is GeomAbs_C2
+        :type Continuity: GeomAbs_Shape
+        :param Approx: default value is GeomFill_Location
+        :type Approx: GeomFill_ApproxStyle
+        :param Degmax: default value is 11
+        :type Degmax: Standard_Integer
+        :param Segmax: default value is 30
+        :type Segmax: Standard_Integer
+        :rtype: None
+
+        * Build the Sweeep Surface Transition define Transition strategy Approx define Approximation Strategy - GeomFill_Section : The composed Function Location X Section  is directly approximed. - GeomFill_Location : The location law is approximed, and the  SweepSurface is bulid algebric composition  of approximed location law and section law  This option is Ok, if Section.Surface() methode  is effective. Continuity : The continuity in v waiting on the surface Degmax : The maximum degree in v requiered on the surface Segmax : The maximum number of span in v requiered on  the surface.
+
+        :param ReversedEdges:
+        :type ReversedEdges: TopTools_MapOfShape &
+        :param Tapes:
+        :type Tapes: BRepFill_DataMapOfShapeHArray2OfShape &
+        :param Transition: default value is BRepFill_Modified
+        :type Transition: BRepFill_TransitionStyle
+        :param Continuity: default value is GeomAbs_C2
+        :type Continuity: GeomAbs_Shape
+        :param Approx: default value is GeomFill_Location
+        :type Approx: GeomFill_ApproxStyle
+        :param Degmax: default value is 11
+        :type Degmax: Standard_Integer
+        :param Segmax: default value is 30
+        :type Segmax: Standard_Integer
+        :rtype: None
+
+        * Build the Sweeep Surface Transition define Transition strategy Approx define Approximation Strategy - GeomFill_Section : The composed Function Location X Section  is directly approximed. - GeomFill_Location : The location law is approximed, and the  SweepSurface is bulid algebric composition  of approximed location law and section law  This option is Ok, if Section.Surface() methode  is effective. Continuity : The continuity in v waiting on the surface Degmax : The maximum degree in v requiered on the surface Segmax : The maximum number of span in v requiered on  the surface.
+
+        :param ReversedEdges:
+        :type ReversedEdges: TopTools_MapOfShape &
+        :param Tapes:
+        :type Tapes: BRepFill_DataMapOfShapeHArray2OfShape &
+        :param Transition: default value is BRepFill_Modified
+        :type Transition: BRepFill_TransitionStyle
+        :param Continuity: default value is GeomAbs_C2
+        :type Continuity: GeomAbs_Shape
+        :param Approx: default value is GeomFill_Location
+        :type Approx: GeomFill_ApproxStyle
+        :param Degmax: default value is 11
+        :type Degmax: Standard_Integer
+        :param Segmax: default value is 30
+        :type Segmax: Standard_Integer
+        :rtype: None
+
+        * Build the Sweeep Surface Transition define Transition strategy Approx define Approximation Strategy - GeomFill_Section : The composed Function Location X Section  is directly approximed. - GeomFill_Location : The location law is approximed, and the  SweepSurface is bulid algebric composition  of approximed location law and section law  This option is Ok, if Section.Surface() methode  is effective. Continuity : The continuity in v waiting on the surface Degmax : The maximum degree in v requiered on the surface Segmax : The maximum number of span in v requiered on  the surface.
+
+        :param ReversedEdges:
+        :type ReversedEdges: TopTools_MapOfShape &
+        :param Tapes:
+        :type Tapes: BRepFill_DataMapOfShapeHArray2OfShape &
+        :param Transition: default value is BRepFill_Modified
+        :type Transition: BRepFill_TransitionStyle
+        :param Continuity: default value is GeomAbs_C2
+        :type Continuity: GeomAbs_Shape
+        :param Approx: default value is GeomFill_Location
+        :type Approx: GeomFill_ApproxStyle
+        :param Degmax: default value is 11
+        :type Degmax: Standard_Integer
+        :param Segmax: default value is 30
+        :type Segmax: Standard_Integer
         :rtype: None
 
         """
         return _BRepFill.BRepFill_Sweep_Build(self, *args)
 
-    def IsDone(self, *args) -> "Standard_Boolean" :
+    def IsDone(self):
         """
         * Say if the Shape is Build.
 
         :rtype: bool
 
         """
-        return _BRepFill.BRepFill_Sweep_IsDone(self, *args)
+        return _BRepFill.BRepFill_Sweep_IsDone(self)
 
-    def Shape(self, *args) -> "TopoDS_Shape" :
+    def Shape(self):
         """
         * returns the Sweeping Shape
 
         :rtype: TopoDS_Shape
 
         """
-        return _BRepFill.BRepFill_Sweep_Shape(self, *args)
+        return _BRepFill.BRepFill_Sweep_Shape(self)
 
-    def ErrorOnSurface(self, *args) -> "Standard_Real" :
+    def ErrorOnSurface(self):
         """
         * Get the Approximation error.
 
         :rtype: float
 
         """
-        return _BRepFill.BRepFill_Sweep_ErrorOnSurface(self, *args)
+        return _BRepFill.BRepFill_Sweep_ErrorOnSurface(self)
 
-    def SubShape(self, *args) -> "Handle_TopTools_HArray2OfShape" :
+    def SubShape(self):
         """
         :rtype: Handle_TopTools_HArray2OfShape
 
         """
-        return _BRepFill.BRepFill_Sweep_SubShape(self, *args)
+        return _BRepFill.BRepFill_Sweep_SubShape(self)
 
-    def InterFaces(self, *args) -> "Handle_TopTools_HArray2OfShape" :
+    def InterFaces(self):
         """
         :rtype: Handle_TopTools_HArray2OfShape
 
         """
-        return _BRepFill.BRepFill_Sweep_InterFaces(self, *args)
+        return _BRepFill.BRepFill_Sweep_InterFaces(self)
 
-    def Sections(self, *args) -> "Handle_TopTools_HArray2OfShape" :
+    def Sections(self):
         """
         :rtype: Handle_TopTools_HArray2OfShape
 
         """
-        return _BRepFill.BRepFill_Sweep_Sections(self, *args)
+        return _BRepFill.BRepFill_Sweep_Sections(self)
 
     def __del__(self):
     	try:
@@ -6443,7 +7857,7 @@ class BRepFill_TrimEdgeTool(object):
 
         """
         _BRepFill.BRepFill_TrimEdgeTool_swiginit(self,_BRepFill.new_BRepFill_TrimEdgeTool(*args))
-    def IntersectWith(self, *args) -> "void" :
+    def IntersectWith(self, *args):
         """
         :param Edge1:
         :type Edge1: TopoDS_Edge &
@@ -6456,7 +7870,7 @@ class BRepFill_TrimEdgeTool(object):
         """
         return _BRepFill.BRepFill_TrimEdgeTool_IntersectWith(self, *args)
 
-    def AddOrConfuse(self, *args) -> "void" :
+    def AddOrConfuse(self, *args):
         """
         :param Start:
         :type Start: bool
@@ -6471,7 +7885,7 @@ class BRepFill_TrimEdgeTool(object):
         """
         return _BRepFill.BRepFill_TrimEdgeTool_AddOrConfuse(self, *args)
 
-    def IsInside(self, *args) -> "Standard_Boolean" :
+    def IsInside(self, *args):
         """
         :param P:
         :type P: gp_Pnt2d
@@ -6520,7 +7934,7 @@ class BRepFill_TrimShellCorner(object):
 
         """
         _BRepFill.BRepFill_TrimShellCorner_swiginit(self,_BRepFill.new_BRepFill_TrimShellCorner(*args))
-    def SetSpine(self, *args) -> "void" :
+    def SetSpine(self, *args):
         """
         :param theSpine:
         :type theSpine: TopoDS_Wire &
@@ -6529,7 +7943,7 @@ class BRepFill_TrimShellCorner(object):
         """
         return _BRepFill.BRepFill_TrimShellCorner_SetSpine(self, *args)
 
-    def AddBounds(self, *args) -> "void" :
+    def AddBounds(self, *args):
         """
         :param Bounds:
         :type Bounds: Handle_TopTools_HArray2OfShape &
@@ -6538,7 +7952,7 @@ class BRepFill_TrimShellCorner(object):
         """
         return _BRepFill.BRepFill_TrimShellCorner_AddBounds(self, *args)
 
-    def AddUEdges(self, *args) -> "void" :
+    def AddUEdges(self, *args):
         """
         :param theUEdges:
         :type theUEdges: Handle_TopTools_HArray2OfShape &
@@ -6547,28 +7961,28 @@ class BRepFill_TrimShellCorner(object):
         """
         return _BRepFill.BRepFill_TrimShellCorner_AddUEdges(self, *args)
 
-    def Perform(self, *args) -> "void" :
+    def Perform(self):
         """
         :rtype: None
 
         """
-        return _BRepFill.BRepFill_TrimShellCorner_Perform(self, *args)
+        return _BRepFill.BRepFill_TrimShellCorner_Perform(self)
 
-    def IsDone(self, *args) -> "Standard_Boolean" :
+    def IsDone(self):
         """
         :rtype: bool
 
         """
-        return _BRepFill.BRepFill_TrimShellCorner_IsDone(self, *args)
+        return _BRepFill.BRepFill_TrimShellCorner_IsDone(self)
 
-    def HasSection(self, *args) -> "Standard_Boolean" :
+    def HasSection(self):
         """
         :rtype: bool
 
         """
-        return _BRepFill.BRepFill_TrimShellCorner_HasSection(self, *args)
+        return _BRepFill.BRepFill_TrimShellCorner_HasSection(self)
 
-    def Modified(self, *args) -> "void" :
+    def Modified(self, *args):
         """
         :param S:
         :type S: TopoDS_Shape &
@@ -6621,7 +8035,7 @@ class BRepFill_TrimSurfaceTool(object):
 
         """
         _BRepFill.BRepFill_TrimSurfaceTool_swiginit(self,_BRepFill.new_BRepFill_TrimSurfaceTool(*args))
-    def IntersectWith(self, *args) -> "void" :
+    def IntersectWith(self, *args):
         """
         * Intersect <Bis> with the projection of the edges <EdgeOnFi> and returns the intersecting parameters on Bis and on the edges P.X() : Parameter on Bis P.Y() : Parameter on EdgeOnF1 P.Z() : Parameter on EdgeOnF2 raises if <Edge> is not a edge of Face1 or Face2.
 
@@ -6636,7 +8050,7 @@ class BRepFill_TrimSurfaceTool(object):
         """
         return _BRepFill.BRepFill_TrimSurfaceTool_IntersectWith(self, *args)
 
-    def IsOnFace(self, *args) -> "Standard_Boolean" :
+    def IsOnFace(self, *args):
         """
         * returns True if the Line (P, DZ) intersect the Faces
 
@@ -6647,7 +8061,7 @@ class BRepFill_TrimSurfaceTool(object):
         """
         return _BRepFill.BRepFill_TrimSurfaceTool_IsOnFace(self, *args)
 
-    def ProjOn(self, *args) -> "Standard_Real" :
+    def ProjOn(self, *args):
         """
         * returns the parameter of the point <Point> on the Edge <Edge>, assuming that the point is on the edge.
 
@@ -6660,7 +8074,7 @@ class BRepFill_TrimSurfaceTool(object):
         """
         return _BRepFill.BRepFill_TrimSurfaceTool_ProjOn(self, *args)
 
-    def Project(self, *args) -> "void" :
+    def Project(self, *args):
         """
         :param U1:
         :type U1: float
@@ -6708,11 +8122,11 @@ class BRepFill_ACRLaw(BRepFill_LocationLaw):
 
         """
         _BRepFill.BRepFill_ACRLaw_swiginit(self,_BRepFill.new_BRepFill_ACRLaw(*args))
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(BRepFill_ACRLaw self)"""
         return _BRepFill.BRepFill_ACRLaw__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_BRepFill_ACRLaw" :
+    def GetHandle(self):
         """GetHandle(BRepFill_ACRLaw self) -> Handle_BRepFill_ACRLaw"""
         return _BRepFill.BRepFill_ACRLaw_GetHandle(self)
 
@@ -6750,7 +8164,7 @@ Handle_BRepFill_ACRLaw._kill_pointed = new_instancemethod(_BRepFill.Handle_BRepF
 Handle_BRepFill_ACRLaw_swigregister = _BRepFill.Handle_BRepFill_ACRLaw_swigregister
 Handle_BRepFill_ACRLaw_swigregister(Handle_BRepFill_ACRLaw)
 
-def Handle_BRepFill_ACRLaw_DownCast(*args) -> "Handle_BRepFill_ACRLaw const" :
+def Handle_BRepFill_ACRLaw_DownCast(*args):
   return _BRepFill.Handle_BRepFill_ACRLaw_DownCast(*args)
 Handle_BRepFill_ACRLaw_DownCast = _BRepFill.Handle_BRepFill_ACRLaw_DownCast
 
@@ -6767,11 +8181,11 @@ class BRepFill_Edge3DLaw(BRepFill_LocationLaw):
 
         """
         _BRepFill.BRepFill_Edge3DLaw_swiginit(self,_BRepFill.new_BRepFill_Edge3DLaw(*args))
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(BRepFill_Edge3DLaw self)"""
         return _BRepFill.BRepFill_Edge3DLaw__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_BRepFill_Edge3DLaw" :
+    def GetHandle(self):
         """GetHandle(BRepFill_Edge3DLaw self) -> Handle_BRepFill_Edge3DLaw"""
         return _BRepFill.BRepFill_Edge3DLaw_GetHandle(self)
 
@@ -6809,7 +8223,7 @@ Handle_BRepFill_Edge3DLaw._kill_pointed = new_instancemethod(_BRepFill.Handle_BR
 Handle_BRepFill_Edge3DLaw_swigregister = _BRepFill.Handle_BRepFill_Edge3DLaw_swigregister
 Handle_BRepFill_Edge3DLaw_swigregister(Handle_BRepFill_Edge3DLaw)
 
-def Handle_BRepFill_Edge3DLaw_DownCast(*args) -> "Handle_BRepFill_Edge3DLaw const" :
+def Handle_BRepFill_Edge3DLaw_DownCast(*args):
   return _BRepFill.Handle_BRepFill_Edge3DLaw_DownCast(*args)
 Handle_BRepFill_Edge3DLaw_DownCast = _BRepFill.Handle_BRepFill_Edge3DLaw_DownCast
 
@@ -6826,20 +8240,20 @@ class BRepFill_EdgeOnSurfLaw(BRepFill_LocationLaw):
 
         """
         _BRepFill.BRepFill_EdgeOnSurfLaw_swiginit(self,_BRepFill.new_BRepFill_EdgeOnSurfLaw(*args))
-    def HasResult(self, *args) -> "Standard_Boolean" :
+    def HasResult(self):
         """
         * returns <False> if one Edge of <Path> do not have representation on <Surf>. In this case it is impossible to use this object.
 
         :rtype: bool
 
         """
-        return _BRepFill.BRepFill_EdgeOnSurfLaw_HasResult(self, *args)
+        return _BRepFill.BRepFill_EdgeOnSurfLaw_HasResult(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(BRepFill_EdgeOnSurfLaw self)"""
         return _BRepFill.BRepFill_EdgeOnSurfLaw__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_BRepFill_EdgeOnSurfLaw" :
+    def GetHandle(self):
         """GetHandle(BRepFill_EdgeOnSurfLaw self) -> Handle_BRepFill_EdgeOnSurfLaw"""
         return _BRepFill.BRepFill_EdgeOnSurfLaw_GetHandle(self)
 
@@ -6878,7 +8292,7 @@ Handle_BRepFill_EdgeOnSurfLaw._kill_pointed = new_instancemethod(_BRepFill.Handl
 Handle_BRepFill_EdgeOnSurfLaw_swigregister = _BRepFill.Handle_BRepFill_EdgeOnSurfLaw_swigregister
 Handle_BRepFill_EdgeOnSurfLaw_swigregister(Handle_BRepFill_EdgeOnSurfLaw)
 
-def Handle_BRepFill_EdgeOnSurfLaw_DownCast(*args) -> "Handle_BRepFill_EdgeOnSurfLaw const" :
+def Handle_BRepFill_EdgeOnSurfLaw_DownCast(*args):
   return _BRepFill.Handle_BRepFill_EdgeOnSurfLaw_DownCast(*args)
 Handle_BRepFill_EdgeOnSurfLaw_DownCast = _BRepFill.Handle_BRepFill_EdgeOnSurfLaw_DownCast
 
@@ -6887,6 +8301,14 @@ class BRepFill_NSections(BRepFill_SectionLaw):
     __repr__ = _swig_repr
     def __init__(self, *args): 
         """
+        * Construct
+
+        :param S:
+        :type S: TopTools_SequenceOfShape &
+        :param Build: default value is Standard_True
+        :type Build: bool
+        :rtype: None
+
         * Construct
 
         :param S:
@@ -6911,13 +8333,29 @@ class BRepFill_NSections(BRepFill_SectionLaw):
         :type Build: bool
         :rtype: None
 
+        * Construct
+
+        :param S:
+        :type S: TopTools_SequenceOfShape &
+        :param Trsfs:
+        :type Trsfs: GeomFill_SequenceOfTrsf &
+        :param P:
+        :type P: TColStd_SequenceOfReal &
+        :param VF:
+        :type VF: float
+        :param VL:
+        :type VL: float
+        :param Build: default value is Standard_True
+        :type Build: bool
+        :rtype: None
+
         """
         _BRepFill.BRepFill_NSections_swiginit(self,_BRepFill.new_BRepFill_NSections(*args))
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(BRepFill_NSections self)"""
         return _BRepFill.BRepFill_NSections__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_BRepFill_NSections" :
+    def GetHandle(self):
         """GetHandle(BRepFill_NSections self) -> Handle_BRepFill_NSections"""
         return _BRepFill.BRepFill_NSections_GetHandle(self)
 
@@ -6955,7 +8393,7 @@ Handle_BRepFill_NSections._kill_pointed = new_instancemethod(_BRepFill.Handle_BR
 Handle_BRepFill_NSections_swigregister = _BRepFill.Handle_BRepFill_NSections_swigregister
 Handle_BRepFill_NSections_swigregister(Handle_BRepFill_NSections)
 
-def Handle_BRepFill_NSections_DownCast(*args) -> "Handle_BRepFill_NSections const" :
+def Handle_BRepFill_NSections_DownCast(*args):
   return _BRepFill.Handle_BRepFill_NSections_DownCast(*args)
 Handle_BRepFill_NSections_DownCast = _BRepFill.Handle_BRepFill_NSections_DownCast
 
@@ -6968,6 +8406,22 @@ class BRepFill_ShapeLaw(BRepFill_SectionLaw):
 
         :param V:
         :type V: TopoDS_Vertex &
+        :param Build: default value is Standard_True
+        :type Build: bool
+        :rtype: None
+
+        * Construct an constant Law
+
+        :param V:
+        :type V: TopoDS_Vertex &
+        :param Build: default value is Standard_True
+        :type Build: bool
+        :rtype: None
+
+        * Construct an constant Law
+
+        :param W:
+        :type W: TopoDS_Wire &
         :param Build: default value is Standard_True
         :type Build: bool
         :rtype: None
@@ -6990,22 +8444,32 @@ class BRepFill_ShapeLaw(BRepFill_SectionLaw):
         :type Build: bool
         :rtype: None
 
+        * Construct an evolutive Law
+
+        :param W:
+        :type W: TopoDS_Wire &
+        :param L:
+        :type L: Handle_Law_Function &
+        :param Build: default value is Standard_True
+        :type Build: bool
+        :rtype: None
+
         """
         _BRepFill.BRepFill_ShapeLaw_swiginit(self,_BRepFill.new_BRepFill_ShapeLaw(*args))
-    def Edge(self, *args) -> "TopoDS_Edge const" :
+    def Edge(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: TopoDS_Edge
 
         """
         return _BRepFill.BRepFill_ShapeLaw_Edge(self, *args)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(BRepFill_ShapeLaw self)"""
         return _BRepFill.BRepFill_ShapeLaw__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_BRepFill_ShapeLaw" :
+    def GetHandle(self):
         """GetHandle(BRepFill_ShapeLaw self) -> Handle_BRepFill_ShapeLaw"""
         return _BRepFill.BRepFill_ShapeLaw_GetHandle(self)
 
@@ -7044,7 +8508,7 @@ Handle_BRepFill_ShapeLaw._kill_pointed = new_instancemethod(_BRepFill.Handle_BRe
 Handle_BRepFill_ShapeLaw_swigregister = _BRepFill.Handle_BRepFill_ShapeLaw_swigregister
 Handle_BRepFill_ShapeLaw_swigregister(Handle_BRepFill_ShapeLaw)
 
-def Handle_BRepFill_ShapeLaw_DownCast(*args) -> "Handle_BRepFill_ShapeLaw const" :
+def Handle_BRepFill_ShapeLaw_DownCast(*args):
   return _BRepFill.Handle_BRepFill_ShapeLaw_DownCast(*args)
 Handle_BRepFill_ShapeLaw_DownCast = _BRepFill.Handle_BRepFill_ShapeLaw_DownCast
 
@@ -7061,7 +8525,7 @@ class BRepFill_DraftLaw(BRepFill_Edge3DLaw):
 
         """
         _BRepFill.BRepFill_DraftLaw_swiginit(self,_BRepFill.new_BRepFill_DraftLaw(*args))
-    def CleanLaw(self, *args) -> "void" :
+    def CleanLaw(self, *args):
         """
         * To clean the little discontinuities.
 
@@ -7072,11 +8536,11 @@ class BRepFill_DraftLaw(BRepFill_Edge3DLaw):
         """
         return _BRepFill.BRepFill_DraftLaw_CleanLaw(self, *args)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(BRepFill_DraftLaw self)"""
         return _BRepFill.BRepFill_DraftLaw__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_BRepFill_DraftLaw" :
+    def GetHandle(self):
         """GetHandle(BRepFill_DraftLaw self) -> Handle_BRepFill_DraftLaw"""
         return _BRepFill.BRepFill_DraftLaw_GetHandle(self)
 
@@ -7115,7 +8579,7 @@ Handle_BRepFill_DraftLaw._kill_pointed = new_instancemethod(_BRepFill.Handle_BRe
 Handle_BRepFill_DraftLaw_swigregister = _BRepFill.Handle_BRepFill_DraftLaw_swigregister
 Handle_BRepFill_DraftLaw_swigregister(Handle_BRepFill_DraftLaw)
 
-def Handle_BRepFill_DraftLaw_DownCast(*args) -> "Handle_BRepFill_DraftLaw const" :
+def Handle_BRepFill_DraftLaw_DownCast(*args):
   return _BRepFill.Handle_BRepFill_DraftLaw_DownCast(*args)
 Handle_BRepFill_DraftLaw_DownCast = _BRepFill.Handle_BRepFill_DraftLaw_DownCast
 

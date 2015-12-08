@@ -122,13 +122,13 @@ LProp_Computed = _LProp.LProp_Computed
 class LProp_AnalyticCurInf(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _LProp.LProp_AnalyticCurInf_swiginit(self,_LProp.new_LProp_AnalyticCurInf(*args))
-    def Perform(self, *args) -> "void" :
+        _LProp.LProp_AnalyticCurInf_swiginit(self,_LProp.new_LProp_AnalyticCurInf())
+    def Perform(self, *args):
         """
         :param T:
         :type T: GeomAbs_CurveType
@@ -159,13 +159,13 @@ LProp_AnalyticCurInf_swigregister(LProp_AnalyticCurInf)
 class LProp_CurAndInf(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _LProp.LProp_CurAndInf_swiginit(self,_LProp.new_LProp_CurAndInf(*args))
-    def AddInflection(self, *args) -> "void" :
+        _LProp.LProp_CurAndInf_swiginit(self,_LProp.new_LProp_CurAndInf())
+    def AddInflection(self, *args):
         """
         :param Param:
         :type Param: float
@@ -174,7 +174,7 @@ class LProp_CurAndInf(object):
         """
         return _LProp.LProp_CurAndInf_AddInflection(self, *args)
 
-    def AddExtCur(self, *args) -> "void" :
+    def AddExtCur(self, *args):
         """
         :param Param:
         :type Param: float
@@ -185,46 +185,46 @@ class LProp_CurAndInf(object):
         """
         return _LProp.LProp_CurAndInf_AddExtCur(self, *args)
 
-    def Clear(self, *args) -> "void" :
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _LProp.LProp_CurAndInf_Clear(self, *args)
+        return _LProp.LProp_CurAndInf_Clear(self)
 
-    def IsEmpty(self, *args) -> "Standard_Boolean" :
+    def IsEmpty(self):
         """
         :rtype: bool
 
         """
-        return _LProp.LProp_CurAndInf_IsEmpty(self, *args)
+        return _LProp.LProp_CurAndInf_IsEmpty(self)
 
-    def NbPoints(self, *args) -> "Standard_Integer" :
+    def NbPoints(self):
         """
         * Returns the number of points. The Points are stored to increasing parameter.
 
         :rtype: int
 
         """
-        return _LProp.LProp_CurAndInf_NbPoints(self, *args)
+        return _LProp.LProp_CurAndInf_NbPoints(self)
 
-    def Parameter(self, *args) -> "Standard_Real" :
+    def Parameter(self, *args):
         """
         * Returns the parameter of the Nth point. raises if N not in the range [1,NbPoints()]
 
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :rtype: float
 
         """
         return _LProp.LProp_CurAndInf_Parameter(self, *args)
 
-    def Type(self, *args) -> "LProp_CIType" :
+    def Type(self, *args):
         """
         * Returns - MinCur if the Nth parameter corresponds to a minimum of the radius of curvature. - MaxCur if the Nth parameter corresponds to a maximum of the radius of curvature. - Inflection if the parameter corresponds to a point of inflection. raises if N not in the range [1,NbPoints()]
 
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :rtype: LProp_CIType
 
         """
@@ -264,18 +264,18 @@ class LProp_SequenceNodeOfSequenceOfCIType(OCC.TCollection.TCollection_SeqNode):
 
         """
         _LProp.LProp_SequenceNodeOfSequenceOfCIType_swiginit(self,_LProp.new_LProp_SequenceNodeOfSequenceOfCIType(*args))
-    def Value(self, *args) -> "LProp_CIType &" :
+    def Value(self):
         """
         :rtype: LProp_CIType
 
         """
-        return _LProp.LProp_SequenceNodeOfSequenceOfCIType_Value(self, *args)
+        return _LProp.LProp_SequenceNodeOfSequenceOfCIType_Value(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(LProp_SequenceNodeOfSequenceOfCIType self)"""
         return _LProp.LProp_SequenceNodeOfSequenceOfCIType__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_LProp_SequenceNodeOfSequenceOfCIType" :
+    def GetHandle(self):
         """GetHandle(LProp_SequenceNodeOfSequenceOfCIType self) -> Handle_LProp_SequenceNodeOfSequenceOfCIType"""
         return _LProp.LProp_SequenceNodeOfSequenceOfCIType_GetHandle(self)
 
@@ -314,27 +314,27 @@ Handle_LProp_SequenceNodeOfSequenceOfCIType._kill_pointed = new_instancemethod(_
 Handle_LProp_SequenceNodeOfSequenceOfCIType_swigregister = _LProp.Handle_LProp_SequenceNodeOfSequenceOfCIType_swigregister
 Handle_LProp_SequenceNodeOfSequenceOfCIType_swigregister(Handle_LProp_SequenceNodeOfSequenceOfCIType)
 
-def Handle_LProp_SequenceNodeOfSequenceOfCIType_DownCast(*args) -> "Handle_LProp_SequenceNodeOfSequenceOfCIType const" :
+def Handle_LProp_SequenceNodeOfSequenceOfCIType_DownCast(*args):
   return _LProp.Handle_LProp_SequenceNodeOfSequenceOfCIType_DownCast(*args)
 Handle_LProp_SequenceNodeOfSequenceOfCIType_DownCast = _LProp.Handle_LProp_SequenceNodeOfSequenceOfCIType_DownCast
 
 class LProp_SequenceOfCIType(OCC.TCollection.TCollection_BaseSequence):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _LProp.LProp_SequenceOfCIType_swiginit(self,_LProp.new_LProp_SequenceOfCIType(*args))
-    def Clear(self, *args) -> "void" :
+        _LProp.LProp_SequenceOfCIType_swiginit(self,_LProp.new_LProp_SequenceOfCIType())
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _LProp.LProp_SequenceOfCIType_Clear(self, *args)
+        return _LProp.LProp_SequenceOfCIType_Clear(self)
 
-    def Assign(self, *args) -> "LProp_SequenceOfCIType const &" :
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: LProp_SequenceOfCIType &
@@ -343,7 +343,7 @@ class LProp_SequenceOfCIType(OCC.TCollection.TCollection_BaseSequence):
         """
         return _LProp.LProp_SequenceOfCIType_Assign(self, *args)
 
-    def Set(self, *args) -> "LProp_SequenceOfCIType const &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: LProp_SequenceOfCIType &
@@ -352,7 +352,7 @@ class LProp_SequenceOfCIType(OCC.TCollection.TCollection_BaseSequence):
         """
         return _LProp.LProp_SequenceOfCIType_Set(self, *args)
 
-    def Append(self, *args) -> "void" :
+    def Append(self, *args):
         """
         :param T:
         :type T: LProp_CIType &
@@ -365,7 +365,7 @@ class LProp_SequenceOfCIType(OCC.TCollection.TCollection_BaseSequence):
         """
         return _LProp.LProp_SequenceOfCIType_Append(self, *args)
 
-    def Prepend(self, *args) -> "void" :
+    def Prepend(self, *args):
         """
         :param T:
         :type T: LProp_CIType &
@@ -378,16 +378,16 @@ class LProp_SequenceOfCIType(OCC.TCollection.TCollection_BaseSequence):
         """
         return _LProp.LProp_SequenceOfCIType_Prepend(self, *args)
 
-    def InsertBefore(self, *args) -> "void" :
+    def InsertBefore(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param T:
         :type T: LProp_CIType &
         :rtype: None
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param S:
         :type S: LProp_SequenceOfCIType &
         :rtype: None
@@ -395,16 +395,16 @@ class LProp_SequenceOfCIType(OCC.TCollection.TCollection_BaseSequence):
         """
         return _LProp.LProp_SequenceOfCIType_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args) -> "void" :
+    def InsertAfter(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param T:
         :type T: LProp_CIType &
         :rtype: None
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param S:
         :type S: LProp_SequenceOfCIType &
         :rtype: None
@@ -412,24 +412,24 @@ class LProp_SequenceOfCIType(OCC.TCollection.TCollection_BaseSequence):
         """
         return _LProp.LProp_SequenceOfCIType_InsertAfter(self, *args)
 
-    def First(self, *args) -> "LProp_CIType const &" :
+    def First(self):
         """
         :rtype: LProp_CIType
 
         """
-        return _LProp.LProp_SequenceOfCIType_First(self, *args)
+        return _LProp.LProp_SequenceOfCIType_First(self)
 
-    def Last(self, *args) -> "LProp_CIType const &" :
+    def Last(self):
         """
         :rtype: LProp_CIType
 
         """
-        return _LProp.LProp_SequenceOfCIType_Last(self, *args)
+        return _LProp.LProp_SequenceOfCIType_Last(self)
 
-    def Split(self, *args) -> "void" :
+    def Split(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Sub:
         :type Sub: LProp_SequenceOfCIType &
         :rtype: None
@@ -437,19 +437,19 @@ class LProp_SequenceOfCIType(OCC.TCollection.TCollection_BaseSequence):
         """
         return _LProp.LProp_SequenceOfCIType_Split(self, *args)
 
-    def Value(self, *args) -> "LProp_CIType const &" :
+    def Value(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: LProp_CIType
 
         """
         return _LProp.LProp_SequenceOfCIType_Value(self, *args)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param I:
         :type I: LProp_CIType &
         :rtype: None
@@ -457,25 +457,25 @@ class LProp_SequenceOfCIType(OCC.TCollection.TCollection_BaseSequence):
         """
         return _LProp.LProp_SequenceOfCIType_SetValue(self, *args)
 
-    def ChangeValue(self, *args) -> "LProp_CIType &" :
+    def ChangeValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: LProp_CIType
 
         """
         return _LProp.LProp_SequenceOfCIType_ChangeValue(self, *args)
 
-    def Remove(self, *args) -> "void" :
+    def Remove(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: None
 
         :param FromIndex:
-        :type FromIndex: int
+        :type FromIndex: Standard_Integer
         :param ToIndex:
-        :type ToIndex: int
+        :type ToIndex: Standard_Integer
         :rtype: None
 
         """

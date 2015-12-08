@@ -184,208 +184,256 @@ class FilletSurf_Builder(object):
         :type Tapp2d: float
         :rtype: None
 
+        * initialize of the informations necessary for the computation of the fillet on the Shape S from a list of edges E and a radius R. Ta is the angular tolerance //!		 Tapp3d is the 3d approximation tolerance //!		 Tapp2d is the 2d approximation tolerance
+
+        :param S:
+        :type S: TopoDS_Shape &
+        :param E:
+        :type E: TopTools_ListOfShape &
+        :param R:
+        :type R: float
+        :param Ta: default value is 1.0e-2
+        :type Ta: float
+        :param Tapp3d: default value is 1.0e-4
+        :type Tapp3d: float
+        :param Tapp2d: default value is 1.0e-5
+        :type Tapp2d: float
+        :rtype: None
+
+        * initialize of the informations necessary for the computation of the fillet on the Shape S from a list of edges E and a radius R. Ta is the angular tolerance //!		 Tapp3d is the 3d approximation tolerance //!		 Tapp2d is the 2d approximation tolerance
+
+        :param S:
+        :type S: TopoDS_Shape &
+        :param E:
+        :type E: TopTools_ListOfShape &
+        :param R:
+        :type R: float
+        :param Ta: default value is 1.0e-2
+        :type Ta: float
+        :param Tapp3d: default value is 1.0e-4
+        :type Tapp3d: float
+        :param Tapp2d: default value is 1.0e-5
+        :type Tapp2d: float
+        :rtype: None
+
+        * initialize of the informations necessary for the computation of the fillet on the Shape S from a list of edges E and a radius R. Ta is the angular tolerance //!		 Tapp3d is the 3d approximation tolerance //!		 Tapp2d is the 2d approximation tolerance
+
+        :param S:
+        :type S: TopoDS_Shape &
+        :param E:
+        :type E: TopTools_ListOfShape &
+        :param R:
+        :type R: float
+        :param Ta: default value is 1.0e-2
+        :type Ta: float
+        :param Tapp3d: default value is 1.0e-4
+        :type Tapp3d: float
+        :param Tapp2d: default value is 1.0e-5
+        :type Tapp2d: float
+        :rtype: None
+
         """
         _FilletSurf.FilletSurf_Builder_swiginit(self,_FilletSurf.new_FilletSurf_Builder(*args))
-    def Perform(self, *args) -> "void" :
+    def Perform(self):
         """
         * //!---Purpose computation of the fillet (list of NUBS)
 
         :rtype: None
 
         """
-        return _FilletSurf.FilletSurf_Builder_Perform(self, *args)
+        return _FilletSurf.FilletSurf_Builder_Perform(self)
 
-    def Simulate(self, *args) -> "void" :
+    def Simulate(self):
         """
         :rtype: None
 
         """
-        return _FilletSurf.FilletSurf_Builder_Simulate(self, *args)
+        return _FilletSurf.FilletSurf_Builder_Simulate(self)
 
-    def IsDone(self, *args) -> "FilletSurf_StatusDone" :
+    def IsDone(self):
         """
         * gives the status about the computation of the fillet returns: IsOK :no problem during the computation IsNotOk: no result is produced IsPartial: the result is partial
 
         :rtype: FilletSurf_StatusDone
 
         """
-        return _FilletSurf.FilletSurf_Builder_IsDone(self, *args)
+        return _FilletSurf.FilletSurf_Builder_IsDone(self)
 
-    def StatusError(self, *args) -> "FilletSurf_ErrorTypeStatus" :
+    def StatusError(self):
         """
         * gives informations about error status if IsDone=IsNotOk returns EdgeNotG1: the edges are not G1 FacesNotG1 : two connected faces on a same support are not G1 EdgeNotOnShape: the edge is not on shape NotSharpEdge: the edge is not sharp PbFilletCompute: problem during the computation of the fillet
 
         :rtype: FilletSurf_ErrorTypeStatus
 
         """
-        return _FilletSurf.FilletSurf_Builder_StatusError(self, *args)
+        return _FilletSurf.FilletSurf_Builder_StatusError(self)
 
-    def NbSurface(self, *args) -> "Standard_Integer" :
+    def NbSurface(self):
         """
         * gives the number of NUBS surfaces of the Fillet.
 
         :rtype: int
 
         """
-        return _FilletSurf.FilletSurf_Builder_NbSurface(self, *args)
+        return _FilletSurf.FilletSurf_Builder_NbSurface(self)
 
-    def SurfaceFillet(self, *args) -> "Handle_Geom_Surface const &" :
+    def SurfaceFillet(self, *args):
         """
         * gives the NUBS surface of index Index.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Handle_Geom_Surface
 
         """
         return _FilletSurf.FilletSurf_Builder_SurfaceFillet(self, *args)
 
-    def TolApp3d(self, *args) -> "Standard_Real" :
+    def TolApp3d(self, *args):
         """
         * gives the 3d tolerance reached during approximation of surface of index Index
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: float
 
         """
         return _FilletSurf.FilletSurf_Builder_TolApp3d(self, *args)
 
-    def SupportFace1(self, *args) -> "TopoDS_Face const" :
+    def SupportFace1(self, *args):
         """
         * //!gives the first support face relative to SurfaceFillet(Index);
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: TopoDS_Face
 
         """
         return _FilletSurf.FilletSurf_Builder_SupportFace1(self, *args)
 
-    def SupportFace2(self, *args) -> "TopoDS_Face const" :
+    def SupportFace2(self, *args):
         """
         * //!gives the second support face relative to SurfaceFillet(Index);
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: TopoDS_Face
 
         """
         return _FilletSurf.FilletSurf_Builder_SupportFace2(self, *args)
 
-    def CurveOnFace1(self, *args) -> "Handle_Geom_Curve const &" :
+    def CurveOnFace1(self, *args):
         """
         * gives the 3d curve of SurfaceFillet(Index) on SupportFace1(Index)
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Handle_Geom_Curve
 
         """
         return _FilletSurf.FilletSurf_Builder_CurveOnFace1(self, *args)
 
-    def CurveOnFace2(self, *args) -> "Handle_Geom_Curve const &" :
+    def CurveOnFace2(self, *args):
         """
         * gives the 3d curve of SurfaceFillet(Index) on SupportFace2(Index)
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Handle_Geom_Curve
 
         """
         return _FilletSurf.FilletSurf_Builder_CurveOnFace2(self, *args)
 
-    def PCurveOnFace1(self, *args) -> "Handle_Geom2d_Curve const &" :
+    def PCurveOnFace1(self, *args):
         """
         * //!gives the PCurve associated to CurvOnSup1(Index) on the support face
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Handle_Geom2d_Curve
 
         """
         return _FilletSurf.FilletSurf_Builder_PCurveOnFace1(self, *args)
 
-    def PCurve1OnFillet(self, *args) -> "Handle_Geom2d_Curve const &" :
+    def PCurve1OnFillet(self, *args):
         """
         * gives the PCurve associated to CurveOnFace1(Index) on the Fillet
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Handle_Geom2d_Curve
 
         """
         return _FilletSurf.FilletSurf_Builder_PCurve1OnFillet(self, *args)
 
-    def PCurveOnFace2(self, *args) -> "Handle_Geom2d_Curve const &" :
+    def PCurveOnFace2(self, *args):
         """
         * gives the PCurve associated to CurveOnSup2(Index) on the support face
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Handle_Geom2d_Curve
 
         """
         return _FilletSurf.FilletSurf_Builder_PCurveOnFace2(self, *args)
 
-    def PCurve2OnFillet(self, *args) -> "Handle_Geom2d_Curve const &" :
+    def PCurve2OnFillet(self, *args):
         """
         * gives the PCurve associated to CurveOnSup2(Index) on the fillet
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Handle_Geom2d_Curve
 
         """
         return _FilletSurf.FilletSurf_Builder_PCurve2OnFillet(self, *args)
 
-    def FirstParameter(self, *args) -> "Standard_Real" :
+    def FirstParameter(self):
         """
         * //!gives the parameter of the fillet on the first edge.
 
         :rtype: float
 
         """
-        return _FilletSurf.FilletSurf_Builder_FirstParameter(self, *args)
+        return _FilletSurf.FilletSurf_Builder_FirstParameter(self)
 
-    def LastParameter(self, *args) -> "Standard_Real" :
+    def LastParameter(self):
         """
         * gives the parameter of the fillet on the last edge
 
         :rtype: float
 
         """
-        return _FilletSurf.FilletSurf_Builder_LastParameter(self, *args)
+        return _FilletSurf.FilletSurf_Builder_LastParameter(self)
 
-    def StartSectionStatus(self, *args) -> "FilletSurf_StatusType" :
+    def StartSectionStatus(self):
         """
         :rtype: FilletSurf_StatusType
 
         """
-        return _FilletSurf.FilletSurf_Builder_StartSectionStatus(self, *args)
+        return _FilletSurf.FilletSurf_Builder_StartSectionStatus(self)
 
-    def EndSectionStatus(self, *args) -> "FilletSurf_StatusType" :
+    def EndSectionStatus(self):
         """
         :rtype: FilletSurf_StatusType
 
         """
-        return _FilletSurf.FilletSurf_Builder_EndSectionStatus(self, *args)
+        return _FilletSurf.FilletSurf_Builder_EndSectionStatus(self)
 
-    def NbSection(self, *args) -> "Standard_Integer" :
+    def NbSection(self, *args):
         """
         :param IndexSurf:
-        :type IndexSurf: int
+        :type IndexSurf: Standard_Integer
         :rtype: int
 
         """
         return _FilletSurf.FilletSurf_Builder_NbSection(self, *args)
 
-    def Section(self, *args) -> "void" :
+    def Section(self, *args):
         """
         :param IndexSurf:
-        :type IndexSurf: int
+        :type IndexSurf: Standard_Integer
         :param IndexSec:
-        :type IndexSec: int
+        :type IndexSec: Standard_Integer
         :param Circ:
         :type Circ: Handle_Geom_TrimmedCurve &
         :rtype: None
@@ -443,9 +491,57 @@ class FilletSurf_InternalBuilder(OCC.ChFi3d.ChFi3d_FilBuilder):
         :type Tapp2d: float
         :rtype: None
 
+        :param S:
+        :type S: TopoDS_Shape &
+        :param FShape: default value is ChFi3d_Polynomial
+        :type FShape: ChFi3d_FilletShape
+        :param Ta: default value is 1.0e-2
+        :type Ta: float
+        :param Tapp3d: default value is 1.0e-4
+        :type Tapp3d: float
+        :param Tapp2d: default value is 1.0e-5
+        :type Tapp2d: float
+        :rtype: None
+
+        :param S:
+        :type S: TopoDS_Shape &
+        :param FShape: default value is ChFi3d_Polynomial
+        :type FShape: ChFi3d_FilletShape
+        :param Ta: default value is 1.0e-2
+        :type Ta: float
+        :param Tapp3d: default value is 1.0e-4
+        :type Tapp3d: float
+        :param Tapp2d: default value is 1.0e-5
+        :type Tapp2d: float
+        :rtype: None
+
+        :param S:
+        :type S: TopoDS_Shape &
+        :param FShape: default value is ChFi3d_Polynomial
+        :type FShape: ChFi3d_FilletShape
+        :param Ta: default value is 1.0e-2
+        :type Ta: float
+        :param Tapp3d: default value is 1.0e-4
+        :type Tapp3d: float
+        :param Tapp2d: default value is 1.0e-5
+        :type Tapp2d: float
+        :rtype: None
+
+        :param S:
+        :type S: TopoDS_Shape &
+        :param FShape: default value is ChFi3d_Polynomial
+        :type FShape: ChFi3d_FilletShape
+        :param Ta: default value is 1.0e-2
+        :type Ta: float
+        :param Tapp3d: default value is 1.0e-4
+        :type Tapp3d: float
+        :param Tapp2d: default value is 1.0e-5
+        :type Tapp2d: float
+        :rtype: None
+
         """
         _FilletSurf.FilletSurf_InternalBuilder_swiginit(self,_FilletSurf.new_FilletSurf_InternalBuilder(*args))
-    def Add(self, *args) -> "Standard_Integer" :
+    def Add(self, *args):
         """
         * Initializes the contour with a list of Edges 0 : no problem 1 : empty list 2 : the edges are not G1 3 : two connected faces on a same support are not G1 4 : the edge is not on shape 5 : NotSharpEdge: the edge is not sharp
 
@@ -458,193 +554,193 @@ class FilletSurf_InternalBuilder(OCC.ChFi3d.ChFi3d_FilBuilder):
         """
         return _FilletSurf.FilletSurf_InternalBuilder_Add(self, *args)
 
-    def Perform(self, *args) -> "void" :
+    def Perform(self):
         """
         :rtype: None
 
         """
-        return _FilletSurf.FilletSurf_InternalBuilder_Perform(self, *args)
+        return _FilletSurf.FilletSurf_InternalBuilder_Perform(self)
 
-    def Done(self, *args) -> "Standard_Boolean" :
+    def Done(self):
         """
         :rtype: bool
 
         """
-        return _FilletSurf.FilletSurf_InternalBuilder_Done(self, *args)
+        return _FilletSurf.FilletSurf_InternalBuilder_Done(self)
 
-    def NbSurface(self, *args) -> "Standard_Integer" :
+    def NbSurface(self):
         """
         * gives the number of NUBS surfaces of the Fillet.
 
         :rtype: int
 
         """
-        return _FilletSurf.FilletSurf_InternalBuilder_NbSurface(self, *args)
+        return _FilletSurf.FilletSurf_InternalBuilder_NbSurface(self)
 
-    def SurfaceFillet(self, *args) -> "Handle_Geom_Surface const &" :
+    def SurfaceFillet(self, *args):
         """
         * gives the NUBS surface of index Index.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Handle_Geom_Surface
 
         """
         return _FilletSurf.FilletSurf_InternalBuilder_SurfaceFillet(self, *args)
 
-    def TolApp3d(self, *args) -> "Standard_Real" :
+    def TolApp3d(self, *args):
         """
         * gives the 3d tolerance reached during approximation of the surface of index Index
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: float
 
         """
         return _FilletSurf.FilletSurf_InternalBuilder_TolApp3d(self, *args)
 
-    def SupportFace1(self, *args) -> "TopoDS_Face const" :
+    def SupportFace1(self, *args):
         """
         * //!gives the first support face relative to SurfaceFillet(Index);
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: TopoDS_Face
 
         """
         return _FilletSurf.FilletSurf_InternalBuilder_SupportFace1(self, *args)
 
-    def SupportFace2(self, *args) -> "TopoDS_Face const" :
+    def SupportFace2(self, *args):
         """
         * //!gives the second support face relative to SurfaceFillet(Index);
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: TopoDS_Face
 
         """
         return _FilletSurf.FilletSurf_InternalBuilder_SupportFace2(self, *args)
 
-    def CurveOnFace1(self, *args) -> "Handle_Geom_Curve const &" :
+    def CurveOnFace1(self, *args):
         """
         * gives the 3d curve of SurfaceFillet(Index) on SupportFace1(Index)
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Handle_Geom_Curve
 
         """
         return _FilletSurf.FilletSurf_InternalBuilder_CurveOnFace1(self, *args)
 
-    def CurveOnFace2(self, *args) -> "Handle_Geom_Curve const &" :
+    def CurveOnFace2(self, *args):
         """
         * gives the 3d curve of SurfaceFillet(Index) on SupportFace2(Index)
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Handle_Geom_Curve
 
         """
         return _FilletSurf.FilletSurf_InternalBuilder_CurveOnFace2(self, *args)
 
-    def PCurveOnFace1(self, *args) -> "Handle_Geom2d_Curve const &" :
+    def PCurveOnFace1(self, *args):
         """
         * //!gives the PCurve associated to CurvOnSup1(Index) on the support face
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Handle_Geom2d_Curve
 
         """
         return _FilletSurf.FilletSurf_InternalBuilder_PCurveOnFace1(self, *args)
 
-    def PCurve1OnFillet(self, *args) -> "Handle_Geom2d_Curve const &" :
+    def PCurve1OnFillet(self, *args):
         """
         * gives the PCurve associated to CurveOnFace1(Index) on the Fillet
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Handle_Geom2d_Curve
 
         """
         return _FilletSurf.FilletSurf_InternalBuilder_PCurve1OnFillet(self, *args)
 
-    def PCurveOnFace2(self, *args) -> "Handle_Geom2d_Curve const &" :
+    def PCurveOnFace2(self, *args):
         """
         * gives the PCurve associated to CurveOnSup2(Index) on the support face
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Handle_Geom2d_Curve
 
         """
         return _FilletSurf.FilletSurf_InternalBuilder_PCurveOnFace2(self, *args)
 
-    def PCurve2OnFillet(self, *args) -> "Handle_Geom2d_Curve const &" :
+    def PCurve2OnFillet(self, *args):
         """
         * gives the PCurve associated to CurveOnSup2(Index) on the fillet
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Handle_Geom2d_Curve
 
         """
         return _FilletSurf.FilletSurf_InternalBuilder_PCurve2OnFillet(self, *args)
 
-    def FirstParameter(self, *args) -> "Standard_Real" :
+    def FirstParameter(self):
         """
         * //!gives the parameter of the fillet on the first edge.
 
         :rtype: float
 
         """
-        return _FilletSurf.FilletSurf_InternalBuilder_FirstParameter(self, *args)
+        return _FilletSurf.FilletSurf_InternalBuilder_FirstParameter(self)
 
-    def LastParameter(self, *args) -> "Standard_Real" :
+    def LastParameter(self):
         """
         * gives the parameter of the fillet on the last edge
 
         :rtype: float
 
         """
-        return _FilletSurf.FilletSurf_InternalBuilder_LastParameter(self, *args)
+        return _FilletSurf.FilletSurf_InternalBuilder_LastParameter(self)
 
-    def StartSectionStatus(self, *args) -> "FilletSurf_StatusType" :
+    def StartSectionStatus(self):
         """
         :rtype: FilletSurf_StatusType
 
         """
-        return _FilletSurf.FilletSurf_InternalBuilder_StartSectionStatus(self, *args)
+        return _FilletSurf.FilletSurf_InternalBuilder_StartSectionStatus(self)
 
-    def EndSectionStatus(self, *args) -> "FilletSurf_StatusType" :
+    def EndSectionStatus(self):
         """
         :rtype: FilletSurf_StatusType
 
         """
-        return _FilletSurf.FilletSurf_InternalBuilder_EndSectionStatus(self, *args)
+        return _FilletSurf.FilletSurf_InternalBuilder_EndSectionStatus(self)
 
-    def Simulate(self, *args) -> "void" :
+    def Simulate(self):
         """
         :rtype: None
 
         """
-        return _FilletSurf.FilletSurf_InternalBuilder_Simulate(self, *args)
+        return _FilletSurf.FilletSurf_InternalBuilder_Simulate(self)
 
-    def NbSection(self, *args) -> "Standard_Integer" :
+    def NbSection(self, *args):
         """
         :param IndexSurf:
-        :type IndexSurf: int
+        :type IndexSurf: Standard_Integer
         :rtype: int
 
         """
         return _FilletSurf.FilletSurf_InternalBuilder_NbSection(self, *args)
 
-    def Section(self, *args) -> "void" :
+    def Section(self, *args):
         """
         :param IndexSurf:
-        :type IndexSurf: int
+        :type IndexSurf: Standard_Integer
         :param IndexSec:
-        :type IndexSec: int
+        :type IndexSec: Standard_Integer
         :param Circ:
         :type Circ: Handle_Geom_TrimmedCurve &
         :rtype: None

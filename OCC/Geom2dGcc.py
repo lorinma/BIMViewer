@@ -127,8 +127,9 @@ import OCC.Geom
 import OCC.TopAbs
 class geom2dgcc(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
+    def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def Unqualified(*args) -> "Geom2dGcc_QualifiedCurve" :
+    def Unqualified(*args):
         """
         * Constructs such a qualified curve that the relative position of the solution computed by a construction algorithm using the qualified curve to the circle or line is not qualified, i.e. all solutions apply. Warning Obj is an adapted curve, i.e. an object which is an interface between: - the services provided by a 2D curve from the package Geom2d, - and those required on the curve by a computation algorithm. The adapted curve is created in the following way: Handle_Geom2d_Curve mycurve = ... ; Geom2dAdaptor_Curve Obj ( mycurve ) ; The qualified curve is then constructed with this object: Geom2dGcc_QualifiedCurve myQCurve = Geom2dGcc::Unqualified(Obj);
 
@@ -140,7 +141,7 @@ class geom2dgcc(object):
         return _Geom2dGcc.geom2dgcc_Unqualified(*args)
 
     Unqualified = staticmethod(Unqualified)
-    def Enclosing(*args) -> "Geom2dGcc_QualifiedCurve" :
+    def Enclosing(*args):
         """
         * Constructs such a qualified curve that the solution computed by a construction algorithm using the qualified curve encloses the curve. Warning Obj is an adapted curve, i.e. an object which is an interface between: - the services provided by a 2D curve from the package Geom2d, - and those required on the curve by a computation algorithm. The adapted curve is created in the following way: Handle_Geom2d_Curve mycurve = ... ; Geom2dAdaptor_Curve Obj ( mycurve ) ; The qualified curve is then constructed with this object: Geom2dGcc_QualifiedCurve myQCurve = Geom2dGcc::Enclosing(Obj);
 
@@ -152,7 +153,7 @@ class geom2dgcc(object):
         return _Geom2dGcc.geom2dgcc_Enclosing(*args)
 
     Enclosing = staticmethod(Enclosing)
-    def Enclosed(*args) -> "Geom2dGcc_QualifiedCurve" :
+    def Enclosed(*args):
         """
         * Constructs such a qualified curve that the solution computed by a construction algorithm using the qualified curve is enclosed by the curve. Warning Obj is an adapted curve, i.e. an object which is an interface between: - the services provided by a 2D curve from the package Geom2d, - and those required on the curve by a computation algorithm. The adapted curve is created in the following way: Handle_Geom2d_Curve mycurve = ... ; Geom2dAdaptor_Curve Obj ( mycurve ) ; The qualified curve is then constructed with this object: Geom2dGcc_QualifiedCurve myQCurve = Geom2dGcc::Enclosed(Obj);
 
@@ -164,7 +165,7 @@ class geom2dgcc(object):
         return _Geom2dGcc.geom2dgcc_Enclosed(*args)
 
     Enclosed = staticmethod(Enclosed)
-    def Outside(*args) -> "Geom2dGcc_QualifiedCurve" :
+    def Outside(*args):
         """
         * Constructs such a qualified curve that the solution computed by a construction algorithm using the qualified curve and the curve are external to one another. Warning Obj is an adapted curve, i.e. an object which is an interface between: - the services provided by a 2D curve from the package Geom2d, - and those required on the curve by a computation algorithm. The adapted curve is created in the following way: Handle_Geom2d_Curve mycurve = ... ; Geom2dAdaptor_Curve Obj ( mycurve ) ; The qualified curve is then constructed with this object: Geom2dGcc_QualifiedCurve myQCurve = Geom2dGcc::Outside(Obj);
 
@@ -176,8 +177,6 @@ class geom2dgcc(object):
         return _Geom2dGcc.geom2dgcc_Outside(*args)
 
     Outside = staticmethod(Outside)
-    def __init__(self): 
-        _Geom2dGcc.geom2dgcc_swiginit(self,_Geom2dGcc.new_geom2dgcc())
     def __del__(self):
     	try:
     		self.thisown = False
@@ -190,7 +189,7 @@ geom2dgcc._kill_pointed = new_instancemethod(_Geom2dGcc.geom2dgcc__kill_pointed,
 geom2dgcc_swigregister = _Geom2dGcc.geom2dgcc_swigregister
 geom2dgcc_swigregister(geom2dgcc)
 
-def geom2dgcc_Unqualified(*args) -> "Geom2dGcc_QualifiedCurve" :
+def geom2dgcc_Unqualified(*args):
   """
     * Constructs such a qualified curve that the relative position of the solution computed by a construction algorithm using the qualified curve to the circle or line is not qualified, i.e. all solutions apply. Warning Obj is an adapted curve, i.e. an object which is an interface between: - the services provided by a 2D curve from the package Geom2d, - and those required on the curve by a computation algorithm. The adapted curve is created in the following way: Handle_Geom2d_Curve mycurve = ... ; Geom2dAdaptor_Curve Obj ( mycurve ) ; The qualified curve is then constructed with this object: Geom2dGcc_QualifiedCurve myQCurve = Geom2dGcc::Unqualified(Obj);
 
@@ -201,7 +200,7 @@ def geom2dgcc_Unqualified(*args) -> "Geom2dGcc_QualifiedCurve" :
     """
   return _Geom2dGcc.geom2dgcc_Unqualified(*args)
 
-def geom2dgcc_Enclosing(*args) -> "Geom2dGcc_QualifiedCurve" :
+def geom2dgcc_Enclosing(*args):
   """
     * Constructs such a qualified curve that the solution computed by a construction algorithm using the qualified curve encloses the curve. Warning Obj is an adapted curve, i.e. an object which is an interface between: - the services provided by a 2D curve from the package Geom2d, - and those required on the curve by a computation algorithm. The adapted curve is created in the following way: Handle_Geom2d_Curve mycurve = ... ; Geom2dAdaptor_Curve Obj ( mycurve ) ; The qualified curve is then constructed with this object: Geom2dGcc_QualifiedCurve myQCurve = Geom2dGcc::Enclosing(Obj);
 
@@ -212,7 +211,7 @@ def geom2dgcc_Enclosing(*args) -> "Geom2dGcc_QualifiedCurve" :
     """
   return _Geom2dGcc.geom2dgcc_Enclosing(*args)
 
-def geom2dgcc_Enclosed(*args) -> "Geom2dGcc_QualifiedCurve" :
+def geom2dgcc_Enclosed(*args):
   """
     * Constructs such a qualified curve that the solution computed by a construction algorithm using the qualified curve is enclosed by the curve. Warning Obj is an adapted curve, i.e. an object which is an interface between: - the services provided by a 2D curve from the package Geom2d, - and those required on the curve by a computation algorithm. The adapted curve is created in the following way: Handle_Geom2d_Curve mycurve = ... ; Geom2dAdaptor_Curve Obj ( mycurve ) ; The qualified curve is then constructed with this object: Geom2dGcc_QualifiedCurve myQCurve = Geom2dGcc::Enclosed(Obj);
 
@@ -223,7 +222,7 @@ def geom2dgcc_Enclosed(*args) -> "Geom2dGcc_QualifiedCurve" :
     """
   return _Geom2dGcc.geom2dgcc_Enclosed(*args)
 
-def geom2dgcc_Outside(*args) -> "Geom2dGcc_QualifiedCurve" :
+def geom2dgcc_Outside(*args):
   """
     * Constructs such a qualified curve that the solution computed by a construction algorithm using the qualified curve and the curve are external to one another. Warning Obj is an adapted curve, i.e. an object which is an interface between: - the services provided by a 2D curve from the package Geom2d, - and those required on the curve by a computation algorithm. The adapted curve is created in the following way: Handle_Geom2d_Curve mycurve = ... ; Geom2dAdaptor_Curve Obj ( mycurve ) ; The qualified curve is then constructed with this object: Geom2dGcc_QualifiedCurve myQCurve = Geom2dGcc::Outside(Obj);
 
@@ -287,7 +286,7 @@ class Geom2dGcc_Circ2d2TanOn(object):
 
         """
         _Geom2dGcc.Geom2dGcc_Circ2d2TanOn_swiginit(self,_Geom2dGcc.new_Geom2dGcc_Circ2d2TanOn(*args))
-    def Results(self, *args) -> "void" :
+    def Results(self, *args):
         """
         :param Circ:
         :type Circ: GccAna_Circ2d2TanOn &
@@ -300,41 +299,41 @@ class Geom2dGcc_Circ2d2TanOn(object):
         """
         return _Geom2dGcc.Geom2dGcc_Circ2d2TanOn_Results(self, *args)
 
-    def IsDone(self, *args) -> "Standard_Boolean" :
+    def IsDone(self):
         """
         * Returns true if the construction algorithm does not fail (even if it finds no solution). Note: IsDone protects against a failure arising from a more internal intersection algorithm, which has reached its numeric limits.
 
         :rtype: bool
 
         """
-        return _Geom2dGcc.Geom2dGcc_Circ2d2TanOn_IsDone(self, *args)
+        return _Geom2dGcc.Geom2dGcc_Circ2d2TanOn_IsDone(self)
 
-    def NbSolutions(self, *args) -> "Standard_Integer" :
+    def NbSolutions(self):
         """
         * This method returns the number of solutions. NotDone is raised if the algorithm failed.
 
         :rtype: int
 
         """
-        return _Geom2dGcc.Geom2dGcc_Circ2d2TanOn_NbSolutions(self, *args)
+        return _Geom2dGcc.Geom2dGcc_Circ2d2TanOn_NbSolutions(self)
 
-    def ThisSolution(self, *args) -> "gp_Circ2d" :
+    def ThisSolution(self, *args):
         """
         * Returns the solution number Index and raises OutOfRange exception if Index is greater than the number of solutions. Be carefull: the Index is only a way to get all the solutions, but is not associated to theses outside the context of the algorithm-object. Exceptions Standard_OutOfRange if Index is less than or equal to zero or greater than the number of solutions computed by this algorithm. StdFail_NotDone if the construction fails.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: gp_Circ2d
 
         """
         return _Geom2dGcc.Geom2dGcc_Circ2d2TanOn_ThisSolution(self, *args)
 
-    def WhichQualifier(self, *args) -> "void" :
+    def WhichQualifier(self, *args):
         """
         * It returns the informations about the qualifiers of the tangency arguments concerning the solution number Index. It returns the real qualifiers (the qualifiers given to the constructor method in case of enclosed, enclosing and outside and the qualifiers computedin case of unqualified). Exceptions Standard_OutOfRange if Index is less than zero or greater than the number of solutions computed by this algorithm. StdFail_NotDone if the construction fails.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Qualif1:
         :type Qualif1: GccEnt_Position &
         :param Qualif2:
@@ -344,12 +343,12 @@ class Geom2dGcc_Circ2d2TanOn(object):
         """
         return _Geom2dGcc.Geom2dGcc_Circ2d2TanOn_WhichQualifier(self, *args)
 
-    def Tangency1(self, *args) -> "void" :
+    def Tangency1(self, *args):
         """
         * Returns informations about the tangency point between the result and the first argument. ParSol is the intrinsic parameter of the point PntSol on the solution curv. ParArg is the intrinsic parameter of the point PntSol on the argument curv.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param ParSol:
         :type ParSol: float &
         :param ParArg:
@@ -361,12 +360,12 @@ class Geom2dGcc_Circ2d2TanOn(object):
         """
         return _Geom2dGcc.Geom2dGcc_Circ2d2TanOn_Tangency1(self, *args)
 
-    def Tangency2(self, *args) -> "void" :
+    def Tangency2(self, *args):
         """
         * Returns informations about the tangency point between the result and the second argument. ParSol is the intrinsic parameter of the point PntSol on the solution curv. ParArg is the intrinsic parameter of the point PntSol on the argument curv.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param ParSol:
         :type ParSol: float &
         :param ParArg:
@@ -378,12 +377,12 @@ class Geom2dGcc_Circ2d2TanOn(object):
         """
         return _Geom2dGcc.Geom2dGcc_Circ2d2TanOn_Tangency2(self, *args)
 
-    def CenterOn3(self, *args) -> "void" :
+    def CenterOn3(self, *args):
         """
         * Returns the center PntSol of the solution of index Index computed by this algorithm. ParArg is the parameter of the point PntSol on the third argument. Exceptions Standard_OutOfRange if Index is less than zero or greater than the number of solutions computed by this algorithm. StdFail_NotDone if the construction fails.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param ParArg:
         :type ParArg: float &
         :param PntSol:
@@ -393,23 +392,23 @@ class Geom2dGcc_Circ2d2TanOn(object):
         """
         return _Geom2dGcc.Geom2dGcc_Circ2d2TanOn_CenterOn3(self, *args)
 
-    def IsTheSame1(self, *args) -> "Standard_Boolean" :
+    def IsTheSame1(self, *args):
         """
         * Returns true if the solution of index Index and, respectively, the first or second argument of this algorithm are the same (i.e. there are 2 identical circles). If Rarg is the radius of the first or second argument, Rsol is the radius of the solution and dist is the distance between the two centers, we consider the two circles to be identical if |Rarg - Rsol| and dist are less than or equal to the tolerance criterion given at the time of construction of this algorithm. Exceptions Standard_OutOfRange if Index is less than zero or greater than the number of solutions computed by this algorithm. StdFail_NotDone if the construction fails.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: bool
 
         """
         return _Geom2dGcc.Geom2dGcc_Circ2d2TanOn_IsTheSame1(self, *args)
 
-    def IsTheSame2(self, *args) -> "Standard_Boolean" :
+    def IsTheSame2(self, *args):
         """
         * Returns true if the solution of index Index and, respectively, the first or second argument of this algorithm are the same (i.e. there are 2 identical circles). If Rarg is the radius of the first or second argument, Rsol is the radius of the solution and dist is the distance between the two centers, we consider the two circles to be identical if |Rarg - Rsol| and dist are less than or equal to the tolerance criterion given at the time of construction of this algorithm. Exceptions Standard_OutOfRange if Index is less than zero or greater than the number of solutions computed by this algorithm. StdFail_NotDone if the construction fails.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: bool
 
         """
@@ -476,7 +475,7 @@ class Geom2dGcc_Circ2d2TanRad(object):
 
         """
         _Geom2dGcc.Geom2dGcc_Circ2d2TanRad_swiginit(self,_Geom2dGcc.new_Geom2dGcc_Circ2d2TanRad(*args))
-    def Results(self, *args) -> "void" :
+    def Results(self, *args):
         """
         :param Circ:
         :type Circ: GccAna_Circ2d2TanRad &
@@ -489,41 +488,41 @@ class Geom2dGcc_Circ2d2TanRad(object):
         """
         return _Geom2dGcc.Geom2dGcc_Circ2d2TanRad_Results(self, *args)
 
-    def IsDone(self, *args) -> "Standard_Boolean" :
+    def IsDone(self):
         """
         * This method returns True if the algorithm succeeded. Note: IsDone protects against a failure arising from a more internal intersection algorithm, which has reached its numeric limits.
 
         :rtype: bool
 
         """
-        return _Geom2dGcc.Geom2dGcc_Circ2d2TanRad_IsDone(self, *args)
+        return _Geom2dGcc.Geom2dGcc_Circ2d2TanRad_IsDone(self)
 
-    def NbSolutions(self, *args) -> "Standard_Integer" :
+    def NbSolutions(self):
         """
         * This method returns the number of solutions. NotDone is raised if the algorithm failed. Exceptions StdFail_NotDone if the construction fails.
 
         :rtype: int
 
         """
-        return _Geom2dGcc.Geom2dGcc_Circ2d2TanRad_NbSolutions(self, *args)
+        return _Geom2dGcc.Geom2dGcc_Circ2d2TanRad_NbSolutions(self)
 
-    def ThisSolution(self, *args) -> "gp_Circ2d" :
+    def ThisSolution(self, *args):
         """
         * Returns the solution number Index and raises OutOfRange exception if Index is greater than the number of solutions. Be carefull: the Index is only a way to get all the solutions, but is not associated to theses outside the context of the algorithm-object. Warning This indexing simply provides a means of consulting the solutions. The index values are not associated with these solutions outside the context of the algorithm object. Exceptions Standard_OutOfRange if Index is less than zero or greater than the number of solutions computed by this algorithm. StdFail_NotDone if the construction fails.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: gp_Circ2d
 
         """
         return _Geom2dGcc.Geom2dGcc_Circ2d2TanRad_ThisSolution(self, *args)
 
-    def WhichQualifier(self, *args) -> "void" :
+    def WhichQualifier(self, *args):
         """
         * Returns the qualifiers Qualif1 and Qualif2 of the tangency arguments for the solution of index Index computed by this algorithm. The returned qualifiers are: - those specified at the start of construction when the solutions are defined as enclosed, enclosing or outside with respect to the arguments, or - those computed during construction (i.e. enclosed, enclosing or outside) when the solutions are defined as unqualified with respect to the arguments, or - GccEnt_noqualifier if the tangency argument is a point, or - GccEnt_unqualified in certain limit cases where it is impossible to qualify the solution as enclosed, enclosing or outside. Exceptions Standard_OutOfRange if Index is less than zero or greater than the number of solutions computed by this algorithm. StdFail_NotDone if the construction fails.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Qualif1:
         :type Qualif1: GccEnt_Position &
         :param Qualif2:
@@ -533,12 +532,12 @@ class Geom2dGcc_Circ2d2TanRad(object):
         """
         return _Geom2dGcc.Geom2dGcc_Circ2d2TanRad_WhichQualifier(self, *args)
 
-    def Tangency1(self, *args) -> "void" :
+    def Tangency1(self, *args):
         """
         * Returns informations about the tangency point between the result number Index and the first argument. ParSol is the intrinsic parameter of the point PntSol on the solution curv. ParArg is the intrinsic parameter of the point PntSol on the argument curv. OutOfRange is raised if Index is greater than the number of solutions. notDone is raised if the construction algorithm did not succeed.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param ParSol:
         :type ParSol: float &
         :param ParArg:
@@ -550,12 +549,12 @@ class Geom2dGcc_Circ2d2TanRad(object):
         """
         return _Geom2dGcc.Geom2dGcc_Circ2d2TanRad_Tangency1(self, *args)
 
-    def Tangency2(self, *args) -> "void" :
+    def Tangency2(self, *args):
         """
         * Returns informations about the tangency point between the result number Index and the second argument. ParSol is the intrinsic parameter of the point PntSol on the solution curv. ParArg is the intrinsic parameter of the point PntSol on the argument curv. OutOfRange is raised if Index is greater than the number of solutions. notDone is raised if the construction algorithm did not succeed.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param ParSol:
         :type ParSol: float &
         :param ParArg:
@@ -567,23 +566,23 @@ class Geom2dGcc_Circ2d2TanRad(object):
         """
         return _Geom2dGcc.Geom2dGcc_Circ2d2TanRad_Tangency2(self, *args)
 
-    def IsTheSame1(self, *args) -> "Standard_Boolean" :
+    def IsTheSame1(self, *args):
         """
         * Returns true if the solution of index Index and, respectively, the first or second argument of this algorithm are the same (i.e. there are 2 identical circles). If Rarg is the radius of the first or second argument, Rsol is the radius of the solution and dist is the distance between the two centers, we consider the two circles to be identical if |Rarg - Rsol| and dist are less than or equal to the tolerance criterion given at the time of construction of this algorithm. OutOfRange is raised if Index is greater than the number of solutions. notDone is raised if the construction algorithm did not succeed.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: bool
 
         """
         return _Geom2dGcc.Geom2dGcc_Circ2d2TanRad_IsTheSame1(self, *args)
 
-    def IsTheSame2(self, *args) -> "Standard_Boolean" :
+    def IsTheSame2(self, *args):
         """
         * Returns true if the solution of index Index and, respectively, the first or second argument of this algorithm are the same (i.e. there are 2 identical circles). If Rarg is the radius of the first or second argument, Rsol is the radius of the solution and dist is the distance between the two centers, we consider the two circles to be identical if |Rarg - Rsol| and dist are less than or equal to the tolerance criterion given at the time of construction of this algorithm. OutOfRange is raised if Index is greater than the number of solutions. notDone is raised if the construction algorithm did not succeed.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: bool
 
         """
@@ -677,56 +676,56 @@ class Geom2dGcc_Circ2d3Tan(object):
 
         """
         _Geom2dGcc.Geom2dGcc_Circ2d3Tan_swiginit(self,_Geom2dGcc.new_Geom2dGcc_Circ2d3Tan(*args))
-    def Results(self, *args) -> "void" :
+    def Results(self, *args):
         """
         :param Circ:
         :type Circ: GccAna_Circ2d3Tan &
         :param Rank1:
-        :type Rank1: int
+        :type Rank1: Standard_Integer
         :param Rank2:
-        :type Rank2: int
+        :type Rank2: Standard_Integer
         :param Rank3:
-        :type Rank3: int
+        :type Rank3: Standard_Integer
         :rtype: None
 
         """
         return _Geom2dGcc.Geom2dGcc_Circ2d3Tan_Results(self, *args)
 
-    def IsDone(self, *args) -> "Standard_Boolean" :
+    def IsDone(self):
         """
         * Returns true if the construction algorithm does not fail (even if it finds no solution). Note: IsDone protects against a failure arising from a more internal intersection algorithm, which has reached its numeric limits.
 
         :rtype: bool
 
         """
-        return _Geom2dGcc.Geom2dGcc_Circ2d3Tan_IsDone(self, *args)
+        return _Geom2dGcc.Geom2dGcc_Circ2d3Tan_IsDone(self)
 
-    def NbSolutions(self, *args) -> "Standard_Integer" :
+    def NbSolutions(self):
         """
         * This method returns the number of solutions. NotDone is raised if the algorithm failed.
 
         :rtype: int
 
         """
-        return _Geom2dGcc.Geom2dGcc_Circ2d3Tan_NbSolutions(self, *args)
+        return _Geom2dGcc.Geom2dGcc_Circ2d3Tan_NbSolutions(self)
 
-    def ThisSolution(self, *args) -> "gp_Circ2d" :
+    def ThisSolution(self, *args):
         """
         * Returns the solution number Index and raises OutOfRange exception if Index is greater than the number of solutions. Be carefull: the Index is only a way to get all the solutions, but is not associated to theses outside the context of the algorithm-object.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: gp_Circ2d
 
         """
         return _Geom2dGcc.Geom2dGcc_Circ2d3Tan_ThisSolution(self, *args)
 
-    def WhichQualifier(self, *args) -> "void" :
+    def WhichQualifier(self, *args):
         """
         * It returns the informations about the qualifiers of the tangency arguments concerning the solution number Index. It returns the real qualifiers (the qualifiers given to the constructor method in case of enclosed, enclosing and outside and the qualifiers computedin case of unqualified).
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Qualif1:
         :type Qualif1: GccEnt_Position &
         :param Qualif2:
@@ -738,12 +737,12 @@ class Geom2dGcc_Circ2d3Tan(object):
         """
         return _Geom2dGcc.Geom2dGcc_Circ2d3Tan_WhichQualifier(self, *args)
 
-    def Tangency1(self, *args) -> "void" :
+    def Tangency1(self, *args):
         """
         * Returns informations about the tangency point between the result and the first argument. ParSol is the intrinsic parameter of the point PntSol on the solution curv. ParArg is the intrinsic parameter of the point PntSol on the argument curv.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param ParSol:
         :type ParSol: float &
         :param ParArg:
@@ -755,12 +754,12 @@ class Geom2dGcc_Circ2d3Tan(object):
         """
         return _Geom2dGcc.Geom2dGcc_Circ2d3Tan_Tangency1(self, *args)
 
-    def Tangency2(self, *args) -> "void" :
+    def Tangency2(self, *args):
         """
         * Returns informations about the tangency point between the result and the second argument. ParSol is the intrinsic parameter of the point PntSol on the solution curv. ParArg is the intrinsic parameter of the point PntSol on the argument curv.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param ParSol:
         :type ParSol: float &
         :param ParArg:
@@ -772,12 +771,12 @@ class Geom2dGcc_Circ2d3Tan(object):
         """
         return _Geom2dGcc.Geom2dGcc_Circ2d3Tan_Tangency2(self, *args)
 
-    def Tangency3(self, *args) -> "void" :
+    def Tangency3(self, *args):
         """
         * Returns informations about the tangency point between the result and the third argument. ParSol is the intrinsic parameter of the point PntSol on the solution curv. ParArg is the intrinsic parameter of the point PntSol on the argument curv.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param ParSol:
         :type ParSol: float &
         :param ParArg:
@@ -789,34 +788,34 @@ class Geom2dGcc_Circ2d3Tan(object):
         """
         return _Geom2dGcc.Geom2dGcc_Circ2d3Tan_Tangency3(self, *args)
 
-    def IsTheSame1(self, *args) -> "Standard_Boolean" :
+    def IsTheSame1(self, *args):
         """
         * Returns True if the solution is equal to the first argument.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: bool
 
         """
         return _Geom2dGcc.Geom2dGcc_Circ2d3Tan_IsTheSame1(self, *args)
 
-    def IsTheSame2(self, *args) -> "Standard_Boolean" :
+    def IsTheSame2(self, *args):
         """
         * Returns True if the solution is equal to the second argument.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: bool
 
         """
         return _Geom2dGcc.Geom2dGcc_Circ2d3Tan_IsTheSame2(self, *args)
 
-    def IsTheSame3(self, *args) -> "Standard_Boolean" :
+    def IsTheSame3(self, *args):
         """
         * Returns True if the solution is equal to the third argument. If Rarg is the radius of the first, second or third argument, Rsol is the radius of the solution and dist is the distance between the two centers, we consider the two circles to be identical if |Rarg - Rsol| and dist are less than or equal to the tolerance criterion given at the time of construction of this algorithm. Exceptions Standard_OutOfRange if Index is less than zero or greater than the number of solutions computed by this algorithm. StdFail_NotDone if the construction fails.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: bool
 
         """
@@ -862,41 +861,41 @@ class Geom2dGcc_Circ2dTanCen(object):
 
         """
         _Geom2dGcc.Geom2dGcc_Circ2dTanCen_swiginit(self,_Geom2dGcc.new_Geom2dGcc_Circ2dTanCen(*args))
-    def IsDone(self, *args) -> "Standard_Boolean" :
+    def IsDone(self):
         """
         * Returns true if the construction algorithm does not fail (even if it finds no solution). Note: IsDone protects against a failure arising from a more internal intersection algorithm, which has reached its numeric limits.
 
         :rtype: bool
 
         """
-        return _Geom2dGcc.Geom2dGcc_Circ2dTanCen_IsDone(self, *args)
+        return _Geom2dGcc.Geom2dGcc_Circ2dTanCen_IsDone(self)
 
-    def NbSolutions(self, *args) -> "Standard_Integer" :
+    def NbSolutions(self):
         """
         * Returns the number of circles, representing solutions computed by this algorithm. Exceptions StdFail_NotDone if the construction fails.
 
         :rtype: int
 
         """
-        return _Geom2dGcc.Geom2dGcc_Circ2dTanCen_NbSolutions(self, *args)
+        return _Geom2dGcc.Geom2dGcc_Circ2dTanCen_NbSolutions(self)
 
-    def ThisSolution(self, *args) -> "gp_Circ2d" :
+    def ThisSolution(self, *args):
         """
         * Returns a circle, representing the solution of index Index computed by this algorithm. Warning This indexing simply provides a means of consulting the solutions. The index values are not associated with these solutions outside the context of the algorithm object. Exceptions Standard_OutOfRange if Index is less than zero or greater than the number of solutions computed by this algorithm. StdFail_NotDone if the construction fails
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: gp_Circ2d
 
         """
         return _Geom2dGcc.Geom2dGcc_Circ2dTanCen_ThisSolution(self, *args)
 
-    def WhichQualifier(self, *args) -> "void" :
+    def WhichQualifier(self, *args):
         """
         * Returns the qualifier Qualif1 of the tangency argument for the solution of index Index computed by this algorithm. The returned qualifier is: - that specified at the start of construction when the solutions are defined as enclosed, enclosing or outside with respect to the argument, or - that computed during construction (i.e. enclosed, enclosing or outside) when the solutions are defined as unqualified with respect to the argument. Exceptions Standard_OutOfRange if Index is less than zero or greater than the number of solutions computed by this algorithm. StdFail_NotDone if the construction fails.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Qualif1:
         :type Qualif1: GccEnt_Position &
         :rtype: None
@@ -904,12 +903,12 @@ class Geom2dGcc_Circ2dTanCen(object):
         """
         return _Geom2dGcc.Geom2dGcc_Circ2dTanCen_WhichQualifier(self, *args)
 
-    def Tangency1(self, *args) -> "void" :
+    def Tangency1(self, *args):
         """
         * Returns informations about the tangency point between the result number Index and the first argument. ParSol is the intrinsic parameter of the point PntSol on the solution curv. ParArg is the intrinsic parameter of the point PntSol on the argument curv. Exceptions Standard_OutOfRange if Index is less than zero or greater than the number of solutions computed by this algorithm. StdFail_NotDone if the construction fails.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param ParSol:
         :type ParSol: float &
         :param ParArg:
@@ -921,12 +920,12 @@ class Geom2dGcc_Circ2dTanCen(object):
         """
         return _Geom2dGcc.Geom2dGcc_Circ2dTanCen_Tangency1(self, *args)
 
-    def IsTheSame1(self, *args) -> "Standard_Boolean" :
+    def IsTheSame1(self, *args):
         """
         * Returns true if the solution of index Index and the first argument of this algorithm are the same (i.e. there are 2 identical circles). If Rarg is the radius of the first argument, Rsol is the radius of the solution and dist is the distance between the two centers, we consider the two circles to be identical if |Rarg - Rsol| and dist are less than or equal to the tolerance criterion given at the time of construction of this algorithm. NotDone is raised if the construction algorithm didn't succeed. OutOfRange is raised if Index is greater than the number of solutions.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: bool
 
         """
@@ -981,7 +980,7 @@ class Geom2dGcc_Circ2dTanOnRad(object):
 
         """
         _Geom2dGcc.Geom2dGcc_Circ2dTanOnRad_swiginit(self,_Geom2dGcc.new_Geom2dGcc_Circ2dTanOnRad(*args))
-    def Results(self, *args) -> "void" :
+    def Results(self, *args):
         """
         :param Circ:
         :type Circ: GccAna_Circ2dTanOnRad &
@@ -994,41 +993,41 @@ class Geom2dGcc_Circ2dTanOnRad(object):
         """
         return _Geom2dGcc.Geom2dGcc_Circ2dTanOnRad_Results(self, *args)
 
-    def IsDone(self, *args) -> "Standard_Boolean" :
+    def IsDone(self):
         """
         * Returns true if the construction algorithm does not fail (even if it finds no solution). Note: IsDone protects against a failure arising from a more internal intersection algorithm which has reached its numeric limits.
 
         :rtype: bool
 
         """
-        return _Geom2dGcc.Geom2dGcc_Circ2dTanOnRad_IsDone(self, *args)
+        return _Geom2dGcc.Geom2dGcc_Circ2dTanOnRad_IsDone(self)
 
-    def NbSolutions(self, *args) -> "Standard_Integer" :
+    def NbSolutions(self):
         """
         * Returns the number of circles, representing solutions computed by this algorithm. Exceptions: StdFail_NotDone if the construction fails.
 
         :rtype: int
 
         """
-        return _Geom2dGcc.Geom2dGcc_Circ2dTanOnRad_NbSolutions(self, *args)
+        return _Geom2dGcc.Geom2dGcc_Circ2dTanOnRad_NbSolutions(self)
 
-    def ThisSolution(self, *args) -> "gp_Circ2d" :
+    def ThisSolution(self, *args):
         """
         * Returns the solution number Index and raises OutOfRange exception if Index is greater than the number of solutions. Be carefull: the Index is only a way to get all the solutions, but is not associated to theses outside the context of the algorithm-object. Exceptions Standard_OutOfRange if Index is less than zero or greater than the number of solutions computed by this algorithm. StdFail_NotDone if the construction fails.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: gp_Circ2d
 
         """
         return _Geom2dGcc.Geom2dGcc_Circ2dTanOnRad_ThisSolution(self, *args)
 
-    def WhichQualifier(self, *args) -> "void" :
+    def WhichQualifier(self, *args):
         """
         * Returns the qualifier Qualif1 of the tangency argument for the solution of index Index computed by this algorithm. The returned qualifier is: - that specified at the start of construction when the solutions are defined as enclosed, enclosing or outside with respect to the arguments, or - that computed during construction (i.e. enclosed, enclosing or outside) when the solutions are defined as unqualified with respect to the arguments, or - GccEnt_noqualifier if the tangency argument is a point. Exceptions Standard_OutOfRange if Index is less than zero or greater than the number of solutions computed by this algorithm. StdFail_NotDone if the construction fails.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Qualif1:
         :type Qualif1: GccEnt_Position &
         :rtype: None
@@ -1036,12 +1035,12 @@ class Geom2dGcc_Circ2dTanOnRad(object):
         """
         return _Geom2dGcc.Geom2dGcc_Circ2dTanOnRad_WhichQualifier(self, *args)
 
-    def Tangency1(self, *args) -> "void" :
+    def Tangency1(self, *args):
         """
         * Returns informations about the tangency point between the result number Index and the first argument. ParSol is the intrinsic parameter of the point on the solution curv. ParArg is the intrinsic parameter of the point on the argument curv. PntSol is the tangency point on the solution curv. PntArg is the tangency point on the argument curv. Exceptions Standard_OutOfRange if Index is less than zero or greater than the number of solutions computed by this algorithm. StdFail_NotDone if the construction fails.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param ParSol:
         :type ParSol: float &
         :param ParArg:
@@ -1053,12 +1052,12 @@ class Geom2dGcc_Circ2dTanOnRad(object):
         """
         return _Geom2dGcc.Geom2dGcc_Circ2dTanOnRad_Tangency1(self, *args)
 
-    def CenterOn3(self, *args) -> "void" :
+    def CenterOn3(self, *args):
         """
         * Returns the center PntSol on the second argument (i.e. line or circle) of the solution of index Index computed by this algorithm. ParArg is the intrinsic parameter of the point on the argument curv. PntSol is the center point of the solution curv. PntArg is the projection of PntSol on the argument curv. Exceptions: Standard_OutOfRange if Index is less than zero or greater than the number of solutions computed by this algorithm. StdFail_NotDone if the construction fails.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param ParArg:
         :type ParArg: float &
         :param PntSol:
@@ -1068,12 +1067,12 @@ class Geom2dGcc_Circ2dTanOnRad(object):
         """
         return _Geom2dGcc.Geom2dGcc_Circ2dTanOnRad_CenterOn3(self, *args)
 
-    def IsTheSame1(self, *args) -> "Standard_Boolean" :
+    def IsTheSame1(self, *args):
         """
         * Returns true if the solution of index Index and the first argument of this algorithm are the same (i.e. there are 2 identical circles). If Rarg is the radius of the first argument, Rsol is the radius of the solution and dist is the distance between the two centers, we consider the two circles to be identical if |Rarg - Rsol| and dist are less than or equal to the tolerance criterion given at the time of construction of this algorithm. OutOfRange is raised if Index is greater than the number of solutions. notDone is raised if the construction algorithm did not succeed.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: bool
 
         """
@@ -1101,8 +1100,9 @@ Geom2dGcc_Circ2dTanOnRad_swigregister(Geom2dGcc_Circ2dTanOnRad)
 
 class Geom2dGcc_CurveTool(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
+    def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def FirstParameter(*args) -> "Standard_Real" :
+    def FirstParameter(*args):
         """
         :param C:
         :type C: Geom2dAdaptor_Curve &
@@ -1112,7 +1112,7 @@ class Geom2dGcc_CurveTool(object):
         return _Geom2dGcc.Geom2dGcc_CurveTool_FirstParameter(*args)
 
     FirstParameter = staticmethod(FirstParameter)
-    def LastParameter(*args) -> "Standard_Real" :
+    def LastParameter(*args):
         """
         :param C:
         :type C: Geom2dAdaptor_Curve &
@@ -1122,7 +1122,7 @@ class Geom2dGcc_CurveTool(object):
         return _Geom2dGcc.Geom2dGcc_CurveTool_LastParameter(*args)
 
     LastParameter = staticmethod(LastParameter)
-    def EpsX(*args) -> "Standard_Real" :
+    def EpsX(*args):
         """
         :param C:
         :type C: Geom2dAdaptor_Curve &
@@ -1134,7 +1134,7 @@ class Geom2dGcc_CurveTool(object):
         return _Geom2dGcc.Geom2dGcc_CurveTool_EpsX(*args)
 
     EpsX = staticmethod(EpsX)
-    def NbSamples(*args) -> "Standard_Integer" :
+    def NbSamples(*args):
         """
         :param C:
         :type C: Geom2dAdaptor_Curve &
@@ -1144,7 +1144,7 @@ class Geom2dGcc_CurveTool(object):
         return _Geom2dGcc.Geom2dGcc_CurveTool_NbSamples(*args)
 
     NbSamples = staticmethod(NbSamples)
-    def Value(*args) -> "gp_Pnt2d" :
+    def Value(*args):
         """
         :param C:
         :type C: Geom2dAdaptor_Curve &
@@ -1156,7 +1156,7 @@ class Geom2dGcc_CurveTool(object):
         return _Geom2dGcc.Geom2dGcc_CurveTool_Value(*args)
 
     Value = staticmethod(Value)
-    def D1(*args) -> "void" :
+    def D1(*args):
         """
         :param C:
         :type C: Geom2dAdaptor_Curve &
@@ -1172,7 +1172,7 @@ class Geom2dGcc_CurveTool(object):
         return _Geom2dGcc.Geom2dGcc_CurveTool_D1(*args)
 
     D1 = staticmethod(D1)
-    def D2(*args) -> "void" :
+    def D2(*args):
         """
         :param C:
         :type C: Geom2dAdaptor_Curve &
@@ -1190,7 +1190,7 @@ class Geom2dGcc_CurveTool(object):
         return _Geom2dGcc.Geom2dGcc_CurveTool_D2(*args)
 
     D2 = staticmethod(D2)
-    def D3(*args) -> "void" :
+    def D3(*args):
         """
         :param C:
         :type C: Geom2dAdaptor_Curve &
@@ -1210,8 +1210,6 @@ class Geom2dGcc_CurveTool(object):
         return _Geom2dGcc.Geom2dGcc_CurveTool_D3(*args)
 
     D3 = staticmethod(D3)
-    def __init__(self): 
-        _Geom2dGcc.Geom2dGcc_CurveTool_swiginit(self,_Geom2dGcc.new_Geom2dGcc_CurveTool())
     def __del__(self):
     	try:
     		self.thisown = False
@@ -1224,7 +1222,7 @@ Geom2dGcc_CurveTool._kill_pointed = new_instancemethod(_Geom2dGcc.Geom2dGcc_Curv
 Geom2dGcc_CurveTool_swigregister = _Geom2dGcc.Geom2dGcc_CurveTool_swigregister
 Geom2dGcc_CurveTool_swigregister(Geom2dGcc_CurveTool)
 
-def Geom2dGcc_CurveTool_FirstParameter(*args) -> "Standard_Real" :
+def Geom2dGcc_CurveTool_FirstParameter(*args):
   """
     :param C:
     :type C: Geom2dAdaptor_Curve &
@@ -1233,7 +1231,7 @@ def Geom2dGcc_CurveTool_FirstParameter(*args) -> "Standard_Real" :
     """
   return _Geom2dGcc.Geom2dGcc_CurveTool_FirstParameter(*args)
 
-def Geom2dGcc_CurveTool_LastParameter(*args) -> "Standard_Real" :
+def Geom2dGcc_CurveTool_LastParameter(*args):
   """
     :param C:
     :type C: Geom2dAdaptor_Curve &
@@ -1242,7 +1240,7 @@ def Geom2dGcc_CurveTool_LastParameter(*args) -> "Standard_Real" :
     """
   return _Geom2dGcc.Geom2dGcc_CurveTool_LastParameter(*args)
 
-def Geom2dGcc_CurveTool_EpsX(*args) -> "Standard_Real" :
+def Geom2dGcc_CurveTool_EpsX(*args):
   """
     :param C:
     :type C: Geom2dAdaptor_Curve &
@@ -1253,7 +1251,7 @@ def Geom2dGcc_CurveTool_EpsX(*args) -> "Standard_Real" :
     """
   return _Geom2dGcc.Geom2dGcc_CurveTool_EpsX(*args)
 
-def Geom2dGcc_CurveTool_NbSamples(*args) -> "Standard_Integer" :
+def Geom2dGcc_CurveTool_NbSamples(*args):
   """
     :param C:
     :type C: Geom2dAdaptor_Curve &
@@ -1262,7 +1260,7 @@ def Geom2dGcc_CurveTool_NbSamples(*args) -> "Standard_Integer" :
     """
   return _Geom2dGcc.Geom2dGcc_CurveTool_NbSamples(*args)
 
-def Geom2dGcc_CurveTool_Value(*args) -> "gp_Pnt2d" :
+def Geom2dGcc_CurveTool_Value(*args):
   """
     :param C:
     :type C: Geom2dAdaptor_Curve &
@@ -1273,7 +1271,7 @@ def Geom2dGcc_CurveTool_Value(*args) -> "gp_Pnt2d" :
     """
   return _Geom2dGcc.Geom2dGcc_CurveTool_Value(*args)
 
-def Geom2dGcc_CurveTool_D1(*args) -> "void" :
+def Geom2dGcc_CurveTool_D1(*args):
   """
     :param C:
     :type C: Geom2dAdaptor_Curve &
@@ -1288,7 +1286,7 @@ def Geom2dGcc_CurveTool_D1(*args) -> "void" :
     """
   return _Geom2dGcc.Geom2dGcc_CurveTool_D1(*args)
 
-def Geom2dGcc_CurveTool_D2(*args) -> "void" :
+def Geom2dGcc_CurveTool_D2(*args):
   """
     :param C:
     :type C: Geom2dAdaptor_Curve &
@@ -1305,7 +1303,7 @@ def Geom2dGcc_CurveTool_D2(*args) -> "void" :
     """
   return _Geom2dGcc.Geom2dGcc_CurveTool_D2(*args)
 
-def Geom2dGcc_CurveTool_D3(*args) -> "void" :
+def Geom2dGcc_CurveTool_D3(*args):
   """
     :param C:
     :type C: Geom2dAdaptor_Curve &
@@ -1337,7 +1335,7 @@ class Geom2dGcc_FuncTCirCuOfMyL2d2Tan(object):
 
         """
         _Geom2dGcc.Geom2dGcc_FuncTCirCuOfMyL2d2Tan_swiginit(self,_Geom2dGcc.new_Geom2dGcc_FuncTCirCuOfMyL2d2Tan(*args))
-    def Value(self, *args) -> "Standard_Boolean" :
+    def Value(self, *args):
         """
         :param X:
         :type X: float
@@ -1348,7 +1346,7 @@ class Geom2dGcc_FuncTCirCuOfMyL2d2Tan(object):
         """
         return _Geom2dGcc.Geom2dGcc_FuncTCirCuOfMyL2d2Tan_Value(self, *args)
 
-    def Derivative(self, *args) -> "Standard_Boolean" :
+    def Derivative(self, *args):
         """
         :param X:
         :type X: float
@@ -1359,7 +1357,7 @@ class Geom2dGcc_FuncTCirCuOfMyL2d2Tan(object):
         """
         return _Geom2dGcc.Geom2dGcc_FuncTCirCuOfMyL2d2Tan_Derivative(self, *args)
 
-    def Values(self, *args) -> "Standard_Boolean" :
+    def Values(self, *args):
         """
         :param X:
         :type X: float
@@ -1406,7 +1404,7 @@ class Geom2dGcc_FuncTCuCuOfMyL2d2Tan(object):
 
         """
         _Geom2dGcc.Geom2dGcc_FuncTCuCuOfMyL2d2Tan_swiginit(self,_Geom2dGcc.new_Geom2dGcc_FuncTCuCuOfMyL2d2Tan(*args))
-    def InitDerivative(self, *args) -> "void" :
+    def InitDerivative(self, *args):
         """
         :param X:
         :type X: math_Vector &
@@ -1427,21 +1425,21 @@ class Geom2dGcc_FuncTCuCuOfMyL2d2Tan(object):
         """
         return _Geom2dGcc.Geom2dGcc_FuncTCuCuOfMyL2d2Tan_InitDerivative(self, *args)
 
-    def NbVariables(self, *args) -> "Standard_Integer" :
+    def NbVariables(self):
         """
         :rtype: int
 
         """
-        return _Geom2dGcc.Geom2dGcc_FuncTCuCuOfMyL2d2Tan_NbVariables(self, *args)
+        return _Geom2dGcc.Geom2dGcc_FuncTCuCuOfMyL2d2Tan_NbVariables(self)
 
-    def NbEquations(self, *args) -> "Standard_Integer" :
+    def NbEquations(self):
         """
         :rtype: int
 
         """
-        return _Geom2dGcc.Geom2dGcc_FuncTCuCuOfMyL2d2Tan_NbEquations(self, *args)
+        return _Geom2dGcc.Geom2dGcc_FuncTCuCuOfMyL2d2Tan_NbEquations(self)
 
-    def Value(self, *args) -> "Standard_Boolean" :
+    def Value(self, *args):
         """
         :param X:
         :type X: math_Vector &
@@ -1452,7 +1450,7 @@ class Geom2dGcc_FuncTCuCuOfMyL2d2Tan(object):
         """
         return _Geom2dGcc.Geom2dGcc_FuncTCuCuOfMyL2d2Tan_Value(self, *args)
 
-    def Derivatives(self, *args) -> "Standard_Boolean" :
+    def Derivatives(self, *args):
         """
         :param X:
         :type X: math_Vector &
@@ -1463,7 +1461,7 @@ class Geom2dGcc_FuncTCuCuOfMyL2d2Tan(object):
         """
         return _Geom2dGcc.Geom2dGcc_FuncTCuCuOfMyL2d2Tan_Derivatives(self, *args)
 
-    def Values(self, *args) -> "Standard_Boolean" :
+    def Values(self, *args):
         """
         :param X:
         :type X: math_Vector &
@@ -1621,7 +1619,7 @@ class Geom2dGcc_FuncTCuCuOnCuOfMyC2d2TanOn(object):
 
         """
         _Geom2dGcc.Geom2dGcc_FuncTCuCuOnCuOfMyC2d2TanOn_swiginit(self,_Geom2dGcc.new_Geom2dGcc_FuncTCuCuOnCuOfMyC2d2TanOn(*args))
-    def InitDerivative(self, *args) -> "void" :
+    def InitDerivative(self, *args):
         """
         :param X:
         :type X: math_Vector &
@@ -1648,21 +1646,21 @@ class Geom2dGcc_FuncTCuCuOnCuOfMyC2d2TanOn(object):
         """
         return _Geom2dGcc.Geom2dGcc_FuncTCuCuOnCuOfMyC2d2TanOn_InitDerivative(self, *args)
 
-    def NbVariables(self, *args) -> "Standard_Integer" :
+    def NbVariables(self):
         """
         :rtype: int
 
         """
-        return _Geom2dGcc.Geom2dGcc_FuncTCuCuOnCuOfMyC2d2TanOn_NbVariables(self, *args)
+        return _Geom2dGcc.Geom2dGcc_FuncTCuCuOnCuOfMyC2d2TanOn_NbVariables(self)
 
-    def NbEquations(self, *args) -> "Standard_Integer" :
+    def NbEquations(self):
         """
         :rtype: int
 
         """
-        return _Geom2dGcc.Geom2dGcc_FuncTCuCuOnCuOfMyC2d2TanOn_NbEquations(self, *args)
+        return _Geom2dGcc.Geom2dGcc_FuncTCuCuOnCuOfMyC2d2TanOn_NbEquations(self)
 
-    def Value(self, *args) -> "Standard_Boolean" :
+    def Value(self, *args):
         """
         :param X:
         :type X: math_Vector &
@@ -1673,7 +1671,7 @@ class Geom2dGcc_FuncTCuCuOnCuOfMyC2d2TanOn(object):
         """
         return _Geom2dGcc.Geom2dGcc_FuncTCuCuOnCuOfMyC2d2TanOn_Value(self, *args)
 
-    def Derivatives(self, *args) -> "Standard_Boolean" :
+    def Derivatives(self, *args):
         """
         :param X:
         :type X: math_Vector &
@@ -1684,7 +1682,7 @@ class Geom2dGcc_FuncTCuCuOnCuOfMyC2d2TanOn(object):
         """
         return _Geom2dGcc.Geom2dGcc_FuncTCuCuOnCuOfMyC2d2TanOn_Derivatives(self, *args)
 
-    def Values(self, *args) -> "Standard_Boolean" :
+    def Values(self, *args):
         """
         :param X:
         :type X: math_Vector &
@@ -1728,7 +1726,7 @@ class Geom2dGcc_FuncTCuPtOfMyL2d2Tan(object):
 
         """
         _Geom2dGcc.Geom2dGcc_FuncTCuPtOfMyL2d2Tan_swiginit(self,_Geom2dGcc.new_Geom2dGcc_FuncTCuPtOfMyL2d2Tan(*args))
-    def Value(self, *args) -> "Standard_Boolean" :
+    def Value(self, *args):
         """
         :param X:
         :type X: float
@@ -1739,7 +1737,7 @@ class Geom2dGcc_FuncTCuPtOfMyL2d2Tan(object):
         """
         return _Geom2dGcc.Geom2dGcc_FuncTCuPtOfMyL2d2Tan_Value(self, *args)
 
-    def Derivative(self, *args) -> "Standard_Boolean" :
+    def Derivative(self, *args):
         """
         :param X:
         :type X: float
@@ -1750,7 +1748,7 @@ class Geom2dGcc_FuncTCuPtOfMyL2d2Tan(object):
         """
         return _Geom2dGcc.Geom2dGcc_FuncTCuPtOfMyL2d2Tan_Derivative(self, *args)
 
-    def Values(self, *args) -> "Standard_Boolean" :
+    def Values(self, *args):
         """
         :param X:
         :type X: float
@@ -1791,7 +1789,7 @@ class Geom2dGcc_FuncTOblOfMyL2dTanObl(object):
 
         """
         _Geom2dGcc.Geom2dGcc_FuncTOblOfMyL2dTanObl_swiginit(self,_Geom2dGcc.new_Geom2dGcc_FuncTOblOfMyL2dTanObl(*args))
-    def Value(self, *args) -> "Standard_Boolean" :
+    def Value(self, *args):
         """
         :param X:
         :type X: float
@@ -1802,7 +1800,7 @@ class Geom2dGcc_FuncTOblOfMyL2dTanObl(object):
         """
         return _Geom2dGcc.Geom2dGcc_FuncTOblOfMyL2dTanObl_Value(self, *args)
 
-    def Derivative(self, *args) -> "Standard_Boolean" :
+    def Derivative(self, *args):
         """
         :param X:
         :type X: float
@@ -1813,7 +1811,7 @@ class Geom2dGcc_FuncTOblOfMyL2dTanObl(object):
         """
         return _Geom2dGcc.Geom2dGcc_FuncTOblOfMyL2dTanObl_Derivative(self, *args)
 
-    def Values(self, *args) -> "Standard_Boolean" :
+    def Values(self, *args):
         """
         :param X:
         :type X: float
@@ -1894,41 +1892,41 @@ class Geom2dGcc_Lin2d2Tan(object):
 
         """
         _Geom2dGcc.Geom2dGcc_Lin2d2Tan_swiginit(self,_Geom2dGcc.new_Geom2dGcc_Lin2d2Tan(*args))
-    def IsDone(self, *args) -> "Standard_Boolean" :
+    def IsDone(self):
         """
         * Returns true if the construction algorithm does not fail (even if it finds no solution). Note: IsDone protects against a failure arising from a more internal intersection algorithm, which has reached its numeric limits.
 
         :rtype: bool
 
         """
-        return _Geom2dGcc.Geom2dGcc_Lin2d2Tan_IsDone(self, *args)
+        return _Geom2dGcc.Geom2dGcc_Lin2d2Tan_IsDone(self)
 
-    def NbSolutions(self, *args) -> "Standard_Integer" :
+    def NbSolutions(self):
         """
         * Returns the number of lines, representing solutions computed by this algorithm. Exceptions StdFail_NotDone if the construction fails.R
 
         :rtype: int
 
         """
-        return _Geom2dGcc.Geom2dGcc_Lin2d2Tan_NbSolutions(self, *args)
+        return _Geom2dGcc.Geom2dGcc_Lin2d2Tan_NbSolutions(self)
 
-    def ThisSolution(self, *args) -> "gp_Lin2d" :
+    def ThisSolution(self, *args):
         """
         * Returns a line, representing the solution of index Index computed by this algorithm. Warning This indexing simply provides a means of consulting the solutions. The index values are not associated with these solutions outside the context of the algorithm object. Exceptions Standard_OutOfRange if Index is less than zero or greater than the number of solutions computed by this algorithm. StdFail_NotDone if the construction fails.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: gp_Lin2d
 
         """
         return _Geom2dGcc.Geom2dGcc_Lin2d2Tan_ThisSolution(self, *args)
 
-    def WhichQualifier(self, *args) -> "void" :
+    def WhichQualifier(self, *args):
         """
         * Returns the qualifiers Qualif1 and Qualif2 of the tangency arguments for the solution of index Index computed by this algorithm. The returned qualifiers are: - those specified at the start of construction when the solutions are defined as enclosing or outside with respect to the arguments, or - those computed during construction (i.e. enclosing or outside) when the solutions are defined as unqualified with respect to the arguments, or - GccEnt_noqualifier if the tangency argument is a point. Exceptions Standard_OutOfRange if Index is less than zero or greater than the number of solutions computed by this algorithm. StdFail_NotDone if the construction fails.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Qualif1:
         :type Qualif1: GccEnt_Position &
         :param Qualif2:
@@ -1938,12 +1936,12 @@ class Geom2dGcc_Lin2d2Tan(object):
         """
         return _Geom2dGcc.Geom2dGcc_Lin2d2Tan_WhichQualifier(self, *args)
 
-    def Tangency1(self, *args) -> "void" :
+    def Tangency1(self, *args):
         """
         * Returns informations about the tangency point between the result and the first argument. ParSol is the intrinsic parameter of the point PntSol on the solution curv. ParArg is the intrinsic parameter of the point PntSol on the argument curv. Exceptions Standard_OutOfRange if Index is less than zero or greater than the number of solutions computed by this algorithm. StdFail_NotDone if the construction fails.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param ParSol:
         :type ParSol: float &
         :param ParArg:
@@ -1955,12 +1953,12 @@ class Geom2dGcc_Lin2d2Tan(object):
         """
         return _Geom2dGcc.Geom2dGcc_Lin2d2Tan_Tangency1(self, *args)
 
-    def Tangency2(self, *args) -> "void" :
+    def Tangency2(self, *args):
         """
         * Returns informations about the tangency point between the result and the first argument. ParSol is the intrinsic parameter of the point PntSol on the solution curv. ParArg is the intrinsic parameter of the point PntSol on the argument curv. Exceptions Standard_OutOfRange if Index is less than zero or greater than the number of solutions computed by this algorithm. StdFail_NotDone if the construction fails.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param ParSol:
         :type ParSol: float &
         :param ParArg:
@@ -2023,41 +2021,41 @@ class Geom2dGcc_Lin2dTanObl(object):
 
         """
         _Geom2dGcc.Geom2dGcc_Lin2dTanObl_swiginit(self,_Geom2dGcc.new_Geom2dGcc_Lin2dTanObl(*args))
-    def IsDone(self, *args) -> "Standard_Boolean" :
+    def IsDone(self):
         """
         * Returns true if the construction algorithm does not fail (even if it finds no solution). Note: IsDone protects against a failure arising from a more internal intersection algorithm, which has reached its numeric limits.
 
         :rtype: bool
 
         """
-        return _Geom2dGcc.Geom2dGcc_Lin2dTanObl_IsDone(self, *args)
+        return _Geom2dGcc.Geom2dGcc_Lin2dTanObl_IsDone(self)
 
-    def NbSolutions(self, *args) -> "Standard_Integer" :
+    def NbSolutions(self):
         """
         * Returns the number of lines, representing solutions computed by this algorithm. Exceptions StdFail_NotDone if the construction fails.
 
         :rtype: int
 
         """
-        return _Geom2dGcc.Geom2dGcc_Lin2dTanObl_NbSolutions(self, *args)
+        return _Geom2dGcc.Geom2dGcc_Lin2dTanObl_NbSolutions(self)
 
-    def ThisSolution(self, *args) -> "gp_Lin2d" :
+    def ThisSolution(self, *args):
         """
         * Returns a line, representing the solution of index Index computed by this algorithm. Exceptions Standard_OutOfRange if Index is less than zero or greater than the number of solutions computed by this algorithm. StdFail_NotDone if the construction fails.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: gp_Lin2d
 
         """
         return _Geom2dGcc.Geom2dGcc_Lin2dTanObl_ThisSolution(self, *args)
 
-    def WhichQualifier(self, *args) -> "void" :
+    def WhichQualifier(self, *args):
         """
         * Returns the qualifier Qualif1 of the tangency argument for the solution of index Index computed by this algorithm. The returned qualifier is: - that specified at the start of construction when the solutions are defined as enclosing or outside with respect to the argument, or - that computed during construction (i.e. enclosing or outside) when the solutions are defined as unqualified with respect to the argument, or - GccEnt_noqualifier if the tangency argument is a point. Exceptions Standard_OutOfRange if Index is less than zero or greater than the number of solutions computed by this algorithm. StdFail_NotDone if the construction fails.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Qualif1:
         :type Qualif1: GccEnt_Position &
         :rtype: None
@@ -2065,12 +2063,12 @@ class Geom2dGcc_Lin2dTanObl(object):
         """
         return _Geom2dGcc.Geom2dGcc_Lin2dTanObl_WhichQualifier(self, *args)
 
-    def Tangency1(self, *args) -> "void" :
+    def Tangency1(self, *args):
         """
         * Returns informations about the tangency point between the result and the first argument. ParSol is the intrinsic parameter of the point PntSol on the solution curv. ParArg is the intrinsic parameter of the point PntSol on the argument curv.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param ParSol:
         :type ParSol: float &
         :param ParArg:
@@ -2082,12 +2080,12 @@ class Geom2dGcc_Lin2dTanObl(object):
         """
         return _Geom2dGcc.Geom2dGcc_Lin2dTanObl_Tangency1(self, *args)
 
-    def Intersection2(self, *args) -> "void" :
+    def Intersection2(self, *args):
         """
         * Returns the point of intersection PntSol between the solution of index Index and the second argument (the line) of this algorithm. ParSol is the parameter of the point PntSol on the solution. ParArg is the parameter of the point PntSol on the second argument (the line). Exceptions StdFail_NotDone if the construction fails. GccIter_IsParallel if the solution and the second argument (the line) are parallel. Standard_OutOfRange if Index is less than zero or greater than the number of solutions computed by this algorithm.
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param ParSol:
         :type ParSol: float &
         :param ParArg:
@@ -2310,21 +2308,21 @@ class Geom2dGcc_MyC2d2TanOn(object):
 
         """
         _Geom2dGcc.Geom2dGcc_MyC2d2TanOn_swiginit(self,_Geom2dGcc.new_Geom2dGcc_MyC2d2TanOn(*args))
-    def IsDone(self, *args) -> "Standard_Boolean" :
+    def IsDone(self):
         """
         :rtype: bool
 
         """
-        return _Geom2dGcc.Geom2dGcc_MyC2d2TanOn_IsDone(self, *args)
+        return _Geom2dGcc.Geom2dGcc_MyC2d2TanOn_IsDone(self)
 
-    def ThisSolution(self, *args) -> "gp_Circ2d" :
+    def ThisSolution(self):
         """
         :rtype: gp_Circ2d
 
         """
-        return _Geom2dGcc.Geom2dGcc_MyC2d2TanOn_ThisSolution(self, *args)
+        return _Geom2dGcc.Geom2dGcc_MyC2d2TanOn_ThisSolution(self)
 
-    def WhichQualifier(self, *args) -> "void" :
+    def WhichQualifier(self, *args):
         """
         :param Qualif1:
         :type Qualif1: GccEnt_Position &
@@ -2335,7 +2333,7 @@ class Geom2dGcc_MyC2d2TanOn(object):
         """
         return _Geom2dGcc.Geom2dGcc_MyC2d2TanOn_WhichQualifier(self, *args)
 
-    def Tangency1(self, *args) -> "void" :
+    def Tangency1(self, *args):
         """
         :param ParSol:
         :type ParSol: float &
@@ -2348,7 +2346,7 @@ class Geom2dGcc_MyC2d2TanOn(object):
         """
         return _Geom2dGcc.Geom2dGcc_MyC2d2TanOn_Tangency1(self, *args)
 
-    def Tangency2(self, *args) -> "void" :
+    def Tangency2(self, *args):
         """
         :param ParSol:
         :type ParSol: float &
@@ -2361,7 +2359,7 @@ class Geom2dGcc_MyC2d2TanOn(object):
         """
         return _Geom2dGcc.Geom2dGcc_MyC2d2TanOn_Tangency2(self, *args)
 
-    def CenterOn3(self, *args) -> "void" :
+    def CenterOn3(self, *args):
         """
         :param ParArg:
         :type ParArg: float &
@@ -2372,19 +2370,19 @@ class Geom2dGcc_MyC2d2TanOn(object):
         """
         return _Geom2dGcc.Geom2dGcc_MyC2d2TanOn_CenterOn3(self, *args)
 
-    def IsTheSame1(self, *args) -> "Standard_Boolean" :
+    def IsTheSame1(self):
         """
         :rtype: bool
 
         """
-        return _Geom2dGcc.Geom2dGcc_MyC2d2TanOn_IsTheSame1(self, *args)
+        return _Geom2dGcc.Geom2dGcc_MyC2d2TanOn_IsTheSame1(self)
 
-    def IsTheSame2(self, *args) -> "Standard_Boolean" :
+    def IsTheSame2(self):
         """
         :rtype: bool
 
         """
-        return _Geom2dGcc.Geom2dGcc_MyC2d2TanOn_IsTheSame2(self, *args)
+        return _Geom2dGcc.Geom2dGcc_MyC2d2TanOn_IsTheSame2(self)
 
     def __del__(self):
     	try:
@@ -2563,21 +2561,21 @@ class Geom2dGcc_MyC2d3Tan(object):
 
         """
         _Geom2dGcc.Geom2dGcc_MyC2d3Tan_swiginit(self,_Geom2dGcc.new_Geom2dGcc_MyC2d3Tan(*args))
-    def IsDone(self, *args) -> "Standard_Boolean" :
+    def IsDone(self):
         """
         :rtype: bool
 
         """
-        return _Geom2dGcc.Geom2dGcc_MyC2d3Tan_IsDone(self, *args)
+        return _Geom2dGcc.Geom2dGcc_MyC2d3Tan_IsDone(self)
 
-    def ThisSolution(self, *args) -> "gp_Circ2d" :
+    def ThisSolution(self):
         """
         :rtype: gp_Circ2d
 
         """
-        return _Geom2dGcc.Geom2dGcc_MyC2d3Tan_ThisSolution(self, *args)
+        return _Geom2dGcc.Geom2dGcc_MyC2d3Tan_ThisSolution(self)
 
-    def WhichQualifier(self, *args) -> "void" :
+    def WhichQualifier(self, *args):
         """
         :param Qualif1:
         :type Qualif1: GccEnt_Position &
@@ -2590,7 +2588,7 @@ class Geom2dGcc_MyC2d3Tan(object):
         """
         return _Geom2dGcc.Geom2dGcc_MyC2d3Tan_WhichQualifier(self, *args)
 
-    def Tangency1(self, *args) -> "void" :
+    def Tangency1(self, *args):
         """
         :param ParSol:
         :type ParSol: float &
@@ -2603,7 +2601,7 @@ class Geom2dGcc_MyC2d3Tan(object):
         """
         return _Geom2dGcc.Geom2dGcc_MyC2d3Tan_Tangency1(self, *args)
 
-    def Tangency2(self, *args) -> "void" :
+    def Tangency2(self, *args):
         """
         :param ParSol:
         :type ParSol: float &
@@ -2616,7 +2614,7 @@ class Geom2dGcc_MyC2d3Tan(object):
         """
         return _Geom2dGcc.Geom2dGcc_MyC2d3Tan_Tangency2(self, *args)
 
-    def Tangency3(self, *args) -> "void" :
+    def Tangency3(self, *args):
         """
         :param ParSol:
         :type ParSol: float &
@@ -2629,26 +2627,26 @@ class Geom2dGcc_MyC2d3Tan(object):
         """
         return _Geom2dGcc.Geom2dGcc_MyC2d3Tan_Tangency3(self, *args)
 
-    def IsTheSame1(self, *args) -> "Standard_Boolean" :
+    def IsTheSame1(self):
         """
         :rtype: bool
 
         """
-        return _Geom2dGcc.Geom2dGcc_MyC2d3Tan_IsTheSame1(self, *args)
+        return _Geom2dGcc.Geom2dGcc_MyC2d3Tan_IsTheSame1(self)
 
-    def IsTheSame2(self, *args) -> "Standard_Boolean" :
+    def IsTheSame2(self):
         """
         :rtype: bool
 
         """
-        return _Geom2dGcc.Geom2dGcc_MyC2d3Tan_IsTheSame2(self, *args)
+        return _Geom2dGcc.Geom2dGcc_MyC2d3Tan_IsTheSame2(self)
 
-    def IsTheSame3(self, *args) -> "Standard_Boolean" :
+    def IsTheSame3(self):
         """
         :rtype: bool
 
         """
-        return _Geom2dGcc.Geom2dGcc_MyC2d3Tan_IsTheSame3(self, *args)
+        return _Geom2dGcc.Geom2dGcc_MyC2d3Tan_IsTheSame3(self)
 
     def __del__(self):
     	try:
@@ -2738,33 +2736,33 @@ class Geom2dGcc_MyCirc2d2TanOn(object):
 
         """
         _Geom2dGcc.Geom2dGcc_MyCirc2d2TanOn_swiginit(self,_Geom2dGcc.new_Geom2dGcc_MyCirc2d2TanOn(*args))
-    def IsDone(self, *args) -> "Standard_Boolean" :
+    def IsDone(self):
         """
         :rtype: bool
 
         """
-        return _Geom2dGcc.Geom2dGcc_MyCirc2d2TanOn_IsDone(self, *args)
+        return _Geom2dGcc.Geom2dGcc_MyCirc2d2TanOn_IsDone(self)
 
-    def NbSolutions(self, *args) -> "Standard_Integer" :
+    def NbSolutions(self):
         """
         :rtype: int
 
         """
-        return _Geom2dGcc.Geom2dGcc_MyCirc2d2TanOn_NbSolutions(self, *args)
+        return _Geom2dGcc.Geom2dGcc_MyCirc2d2TanOn_NbSolutions(self)
 
-    def ThisSolution(self, *args) -> "gp_Circ2d" :
+    def ThisSolution(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: gp_Circ2d
 
         """
         return _Geom2dGcc.Geom2dGcc_MyCirc2d2TanOn_ThisSolution(self, *args)
 
-    def WhichQualifier(self, *args) -> "void" :
+    def WhichQualifier(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Qualif1:
         :type Qualif1: GccEnt_Position &
         :param Qualif2:
@@ -2774,10 +2772,10 @@ class Geom2dGcc_MyCirc2d2TanOn(object):
         """
         return _Geom2dGcc.Geom2dGcc_MyCirc2d2TanOn_WhichQualifier(self, *args)
 
-    def Tangency1(self, *args) -> "void" :
+    def Tangency1(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param ParSol:
         :type ParSol: float &
         :param ParArg:
@@ -2789,10 +2787,10 @@ class Geom2dGcc_MyCirc2d2TanOn(object):
         """
         return _Geom2dGcc.Geom2dGcc_MyCirc2d2TanOn_Tangency1(self, *args)
 
-    def Tangency2(self, *args) -> "void" :
+    def Tangency2(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param ParSol:
         :type ParSol: float &
         :param ParArg:
@@ -2804,10 +2802,10 @@ class Geom2dGcc_MyCirc2d2TanOn(object):
         """
         return _Geom2dGcc.Geom2dGcc_MyCirc2d2TanOn_Tangency2(self, *args)
 
-    def CenterOn3(self, *args) -> "void" :
+    def CenterOn3(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param ParArg:
         :type ParArg: float &
         :param PntSol:
@@ -2817,19 +2815,19 @@ class Geom2dGcc_MyCirc2d2TanOn(object):
         """
         return _Geom2dGcc.Geom2dGcc_MyCirc2d2TanOn_CenterOn3(self, *args)
 
-    def IsTheSame1(self, *args) -> "Standard_Boolean" :
+    def IsTheSame1(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: bool
 
         """
         return _Geom2dGcc.Geom2dGcc_MyCirc2d2TanOn_IsTheSame1(self, *args)
 
-    def IsTheSame2(self, *args) -> "Standard_Boolean" :
+    def IsTheSame2(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: bool
 
         """
@@ -2903,33 +2901,33 @@ class Geom2dGcc_MyCirc2d2TanRad(object):
 
         """
         _Geom2dGcc.Geom2dGcc_MyCirc2d2TanRad_swiginit(self,_Geom2dGcc.new_Geom2dGcc_MyCirc2d2TanRad(*args))
-    def IsDone(self, *args) -> "Standard_Boolean" :
+    def IsDone(self):
         """
         :rtype: bool
 
         """
-        return _Geom2dGcc.Geom2dGcc_MyCirc2d2TanRad_IsDone(self, *args)
+        return _Geom2dGcc.Geom2dGcc_MyCirc2d2TanRad_IsDone(self)
 
-    def NbSolutions(self, *args) -> "Standard_Integer" :
+    def NbSolutions(self):
         """
         :rtype: int
 
         """
-        return _Geom2dGcc.Geom2dGcc_MyCirc2d2TanRad_NbSolutions(self, *args)
+        return _Geom2dGcc.Geom2dGcc_MyCirc2d2TanRad_NbSolutions(self)
 
-    def ThisSolution(self, *args) -> "gp_Circ2d" :
+    def ThisSolution(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: gp_Circ2d
 
         """
         return _Geom2dGcc.Geom2dGcc_MyCirc2d2TanRad_ThisSolution(self, *args)
 
-    def WhichQualifier(self, *args) -> "void" :
+    def WhichQualifier(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Qualif1:
         :type Qualif1: GccEnt_Position &
         :param Qualif2:
@@ -2939,10 +2937,10 @@ class Geom2dGcc_MyCirc2d2TanRad(object):
         """
         return _Geom2dGcc.Geom2dGcc_MyCirc2d2TanRad_WhichQualifier(self, *args)
 
-    def Tangency1(self, *args) -> "void" :
+    def Tangency1(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param ParSol:
         :type ParSol: float &
         :param ParArg:
@@ -2954,10 +2952,10 @@ class Geom2dGcc_MyCirc2d2TanRad(object):
         """
         return _Geom2dGcc.Geom2dGcc_MyCirc2d2TanRad_Tangency1(self, *args)
 
-    def Tangency2(self, *args) -> "void" :
+    def Tangency2(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param ParSol:
         :type ParSol: float &
         :param ParArg:
@@ -2969,19 +2967,19 @@ class Geom2dGcc_MyCirc2d2TanRad(object):
         """
         return _Geom2dGcc.Geom2dGcc_MyCirc2d2TanRad_Tangency2(self, *args)
 
-    def IsTheSame1(self, *args) -> "Standard_Boolean" :
+    def IsTheSame1(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: bool
 
         """
         return _Geom2dGcc.Geom2dGcc_MyCirc2d2TanRad_IsTheSame1(self, *args)
 
-    def IsTheSame2(self, *args) -> "Standard_Boolean" :
+    def IsTheSame2(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: bool
 
         """
@@ -3022,33 +3020,33 @@ class Geom2dGcc_MyCirc2dTanCen(object):
 
         """
         _Geom2dGcc.Geom2dGcc_MyCirc2dTanCen_swiginit(self,_Geom2dGcc.new_Geom2dGcc_MyCirc2dTanCen(*args))
-    def IsDone(self, *args) -> "Standard_Boolean" :
+    def IsDone(self):
         """
         :rtype: bool
 
         """
-        return _Geom2dGcc.Geom2dGcc_MyCirc2dTanCen_IsDone(self, *args)
+        return _Geom2dGcc.Geom2dGcc_MyCirc2dTanCen_IsDone(self)
 
-    def NbSolutions(self, *args) -> "Standard_Integer" :
+    def NbSolutions(self):
         """
         :rtype: int
 
         """
-        return _Geom2dGcc.Geom2dGcc_MyCirc2dTanCen_NbSolutions(self, *args)
+        return _Geom2dGcc.Geom2dGcc_MyCirc2dTanCen_NbSolutions(self)
 
-    def ThisSolution(self, *args) -> "gp_Circ2d" :
+    def ThisSolution(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: gp_Circ2d
 
         """
         return _Geom2dGcc.Geom2dGcc_MyCirc2dTanCen_ThisSolution(self, *args)
 
-    def WhichQualifier(self, *args) -> "void" :
+    def WhichQualifier(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Qualif1:
         :type Qualif1: GccEnt_Position &
         :rtype: None
@@ -3056,10 +3054,10 @@ class Geom2dGcc_MyCirc2dTanCen(object):
         """
         return _Geom2dGcc.Geom2dGcc_MyCirc2dTanCen_WhichQualifier(self, *args)
 
-    def Tangency1(self, *args) -> "void" :
+    def Tangency1(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param ParSol:
         :type ParSol: float &
         :param ParArg:
@@ -3155,33 +3153,33 @@ class Geom2dGcc_MyCirc2dTanOnRad(object):
 
         """
         _Geom2dGcc.Geom2dGcc_MyCirc2dTanOnRad_swiginit(self,_Geom2dGcc.new_Geom2dGcc_MyCirc2dTanOnRad(*args))
-    def IsDone(self, *args) -> "Standard_Boolean" :
+    def IsDone(self):
         """
         :rtype: bool
 
         """
-        return _Geom2dGcc.Geom2dGcc_MyCirc2dTanOnRad_IsDone(self, *args)
+        return _Geom2dGcc.Geom2dGcc_MyCirc2dTanOnRad_IsDone(self)
 
-    def NbSolutions(self, *args) -> "Standard_Integer" :
+    def NbSolutions(self):
         """
         :rtype: int
 
         """
-        return _Geom2dGcc.Geom2dGcc_MyCirc2dTanOnRad_NbSolutions(self, *args)
+        return _Geom2dGcc.Geom2dGcc_MyCirc2dTanOnRad_NbSolutions(self)
 
-    def ThisSolution(self, *args) -> "gp_Circ2d" :
+    def ThisSolution(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: gp_Circ2d
 
         """
         return _Geom2dGcc.Geom2dGcc_MyCirc2dTanOnRad_ThisSolution(self, *args)
 
-    def WhichQualifier(self, *args) -> "void" :
+    def WhichQualifier(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Qualif1:
         :type Qualif1: GccEnt_Position &
         :rtype: None
@@ -3189,10 +3187,10 @@ class Geom2dGcc_MyCirc2dTanOnRad(object):
         """
         return _Geom2dGcc.Geom2dGcc_MyCirc2dTanOnRad_WhichQualifier(self, *args)
 
-    def Tangency1(self, *args) -> "void" :
+    def Tangency1(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param ParSol:
         :type ParSol: float &
         :param ParArg:
@@ -3204,10 +3202,10 @@ class Geom2dGcc_MyCirc2dTanOnRad(object):
         """
         return _Geom2dGcc.Geom2dGcc_MyCirc2dTanOnRad_Tangency1(self, *args)
 
-    def CenterOn3(self, *args) -> "void" :
+    def CenterOn3(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param ParArg:
         :type ParArg: float &
         :param PntSol:
@@ -3217,10 +3215,10 @@ class Geom2dGcc_MyCirc2dTanOnRad(object):
         """
         return _Geom2dGcc.Geom2dGcc_MyCirc2dTanOnRad_CenterOn3(self, *args)
 
-    def IsTheSame1(self, *args) -> "Standard_Boolean" :
+    def IsTheSame1(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: bool
 
         """
@@ -3247,8 +3245,9 @@ Geom2dGcc_MyCirc2dTanOnRad_swigregister(Geom2dGcc_MyCirc2dTanOnRad)
 
 class Geom2dGcc_MyCurveTool(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
+    def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def TheType(*args) -> "GeomAbs_CurveType" :
+    def TheType(*args):
         """
         :param C:
         :type C: Adaptor3d_OffsetCurve &
@@ -3258,7 +3257,7 @@ class Geom2dGcc_MyCurveTool(object):
         return _Geom2dGcc.Geom2dGcc_MyCurveTool_TheType(*args)
 
     TheType = staticmethod(TheType)
-    def Line(*args) -> "gp_Lin2d" :
+    def Line(*args):
         """
         :param C:
         :type C: Adaptor3d_OffsetCurve &
@@ -3268,7 +3267,7 @@ class Geom2dGcc_MyCurveTool(object):
         return _Geom2dGcc.Geom2dGcc_MyCurveTool_Line(*args)
 
     Line = staticmethod(Line)
-    def Circle(*args) -> "gp_Circ2d" :
+    def Circle(*args):
         """
         :param C:
         :type C: Adaptor3d_OffsetCurve &
@@ -3278,7 +3277,7 @@ class Geom2dGcc_MyCurveTool(object):
         return _Geom2dGcc.Geom2dGcc_MyCurveTool_Circle(*args)
 
     Circle = staticmethod(Circle)
-    def Ellipse(*args) -> "gp_Elips2d" :
+    def Ellipse(*args):
         """
         :param C:
         :type C: Adaptor3d_OffsetCurve &
@@ -3288,7 +3287,7 @@ class Geom2dGcc_MyCurveTool(object):
         return _Geom2dGcc.Geom2dGcc_MyCurveTool_Ellipse(*args)
 
     Ellipse = staticmethod(Ellipse)
-    def Parabola(*args) -> "gp_Parab2d" :
+    def Parabola(*args):
         """
         :param C:
         :type C: Adaptor3d_OffsetCurve &
@@ -3298,7 +3297,7 @@ class Geom2dGcc_MyCurveTool(object):
         return _Geom2dGcc.Geom2dGcc_MyCurveTool_Parabola(*args)
 
     Parabola = staticmethod(Parabola)
-    def Hyperbola(*args) -> "gp_Hypr2d" :
+    def Hyperbola(*args):
         """
         :param C:
         :type C: Adaptor3d_OffsetCurve &
@@ -3308,7 +3307,7 @@ class Geom2dGcc_MyCurveTool(object):
         return _Geom2dGcc.Geom2dGcc_MyCurveTool_Hyperbola(*args)
 
     Hyperbola = staticmethod(Hyperbola)
-    def FirstParameter(*args) -> "Standard_Real" :
+    def FirstParameter(*args):
         """
         :param C:
         :type C: Adaptor3d_OffsetCurve &
@@ -3318,7 +3317,7 @@ class Geom2dGcc_MyCurveTool(object):
         return _Geom2dGcc.Geom2dGcc_MyCurveTool_FirstParameter(*args)
 
     FirstParameter = staticmethod(FirstParameter)
-    def LastParameter(*args) -> "Standard_Real" :
+    def LastParameter(*args):
         """
         :param C:
         :type C: Adaptor3d_OffsetCurve &
@@ -3328,7 +3327,7 @@ class Geom2dGcc_MyCurveTool(object):
         return _Geom2dGcc.Geom2dGcc_MyCurveTool_LastParameter(*args)
 
     LastParameter = staticmethod(LastParameter)
-    def EpsX(*args) -> "Standard_Real" :
+    def EpsX(*args):
         """
         :param C:
         :type C: Adaptor3d_OffsetCurve &
@@ -3340,7 +3339,7 @@ class Geom2dGcc_MyCurveTool(object):
         return _Geom2dGcc.Geom2dGcc_MyCurveTool_EpsX(*args)
 
     EpsX = staticmethod(EpsX)
-    def NbSamples(*args) -> "Standard_Integer" :
+    def NbSamples(*args):
         """
         :param C:
         :type C: Adaptor3d_OffsetCurve &
@@ -3350,7 +3349,7 @@ class Geom2dGcc_MyCurveTool(object):
         return _Geom2dGcc.Geom2dGcc_MyCurveTool_NbSamples(*args)
 
     NbSamples = staticmethod(NbSamples)
-    def Value(*args) -> "gp_Pnt2d" :
+    def Value(*args):
         """
         :param C:
         :type C: Adaptor3d_OffsetCurve &
@@ -3362,7 +3361,7 @@ class Geom2dGcc_MyCurveTool(object):
         return _Geom2dGcc.Geom2dGcc_MyCurveTool_Value(*args)
 
     Value = staticmethod(Value)
-    def D1(*args) -> "void" :
+    def D1(*args):
         """
         :param C:
         :type C: Adaptor3d_OffsetCurve &
@@ -3378,7 +3377,7 @@ class Geom2dGcc_MyCurveTool(object):
         return _Geom2dGcc.Geom2dGcc_MyCurveTool_D1(*args)
 
     D1 = staticmethod(D1)
-    def D2(*args) -> "void" :
+    def D2(*args):
         """
         :param C:
         :type C: Adaptor3d_OffsetCurve &
@@ -3396,7 +3395,7 @@ class Geom2dGcc_MyCurveTool(object):
         return _Geom2dGcc.Geom2dGcc_MyCurveTool_D2(*args)
 
     D2 = staticmethod(D2)
-    def IsComposite(*args) -> "Standard_Boolean" :
+    def IsComposite(*args):
         """
         :param C:
         :type C: Adaptor3d_OffsetCurve &
@@ -3406,7 +3405,7 @@ class Geom2dGcc_MyCurveTool(object):
         return _Geom2dGcc.Geom2dGcc_MyCurveTool_IsComposite(*args)
 
     IsComposite = staticmethod(IsComposite)
-    def GetIntervals(*args) -> "Standard_Integer" :
+    def GetIntervals(*args):
         """
         :param C:
         :type C: Adaptor3d_OffsetCurve &
@@ -3416,12 +3415,12 @@ class Geom2dGcc_MyCurveTool(object):
         return _Geom2dGcc.Geom2dGcc_MyCurveTool_GetIntervals(*args)
 
     GetIntervals = staticmethod(GetIntervals)
-    def GetInterval(*args) -> "Standard_Real &, Standard_Real &" :
+    def GetInterval(*args):
         """
         :param C:
         :type C: Adaptor3d_OffsetCurve &
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param U1:
         :type U1: float &
         :param U2:
@@ -3432,20 +3431,18 @@ class Geom2dGcc_MyCurveTool(object):
         return _Geom2dGcc.Geom2dGcc_MyCurveTool_GetInterval(*args)
 
     GetInterval = staticmethod(GetInterval)
-    def SetCurrentInterval(*args) -> "void" :
+    def SetCurrentInterval(*args):
         """
         :param C:
         :type C: Adaptor3d_OffsetCurve &
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: void
 
         """
         return _Geom2dGcc.Geom2dGcc_MyCurveTool_SetCurrentInterval(*args)
 
     SetCurrentInterval = staticmethod(SetCurrentInterval)
-    def __init__(self): 
-        _Geom2dGcc.Geom2dGcc_MyCurveTool_swiginit(self,_Geom2dGcc.new_Geom2dGcc_MyCurveTool())
     def __del__(self):
     	try:
     		self.thisown = False
@@ -3458,7 +3455,7 @@ Geom2dGcc_MyCurveTool._kill_pointed = new_instancemethod(_Geom2dGcc.Geom2dGcc_My
 Geom2dGcc_MyCurveTool_swigregister = _Geom2dGcc.Geom2dGcc_MyCurveTool_swigregister
 Geom2dGcc_MyCurveTool_swigregister(Geom2dGcc_MyCurveTool)
 
-def Geom2dGcc_MyCurveTool_TheType(*args) -> "GeomAbs_CurveType" :
+def Geom2dGcc_MyCurveTool_TheType(*args):
   """
     :param C:
     :type C: Adaptor3d_OffsetCurve &
@@ -3467,7 +3464,7 @@ def Geom2dGcc_MyCurveTool_TheType(*args) -> "GeomAbs_CurveType" :
     """
   return _Geom2dGcc.Geom2dGcc_MyCurveTool_TheType(*args)
 
-def Geom2dGcc_MyCurveTool_Line(*args) -> "gp_Lin2d" :
+def Geom2dGcc_MyCurveTool_Line(*args):
   """
     :param C:
     :type C: Adaptor3d_OffsetCurve &
@@ -3476,7 +3473,7 @@ def Geom2dGcc_MyCurveTool_Line(*args) -> "gp_Lin2d" :
     """
   return _Geom2dGcc.Geom2dGcc_MyCurveTool_Line(*args)
 
-def Geom2dGcc_MyCurveTool_Circle(*args) -> "gp_Circ2d" :
+def Geom2dGcc_MyCurveTool_Circle(*args):
   """
     :param C:
     :type C: Adaptor3d_OffsetCurve &
@@ -3485,7 +3482,7 @@ def Geom2dGcc_MyCurveTool_Circle(*args) -> "gp_Circ2d" :
     """
   return _Geom2dGcc.Geom2dGcc_MyCurveTool_Circle(*args)
 
-def Geom2dGcc_MyCurveTool_Ellipse(*args) -> "gp_Elips2d" :
+def Geom2dGcc_MyCurveTool_Ellipse(*args):
   """
     :param C:
     :type C: Adaptor3d_OffsetCurve &
@@ -3494,7 +3491,7 @@ def Geom2dGcc_MyCurveTool_Ellipse(*args) -> "gp_Elips2d" :
     """
   return _Geom2dGcc.Geom2dGcc_MyCurveTool_Ellipse(*args)
 
-def Geom2dGcc_MyCurveTool_Parabola(*args) -> "gp_Parab2d" :
+def Geom2dGcc_MyCurveTool_Parabola(*args):
   """
     :param C:
     :type C: Adaptor3d_OffsetCurve &
@@ -3503,7 +3500,7 @@ def Geom2dGcc_MyCurveTool_Parabola(*args) -> "gp_Parab2d" :
     """
   return _Geom2dGcc.Geom2dGcc_MyCurveTool_Parabola(*args)
 
-def Geom2dGcc_MyCurveTool_Hyperbola(*args) -> "gp_Hypr2d" :
+def Geom2dGcc_MyCurveTool_Hyperbola(*args):
   """
     :param C:
     :type C: Adaptor3d_OffsetCurve &
@@ -3512,7 +3509,7 @@ def Geom2dGcc_MyCurveTool_Hyperbola(*args) -> "gp_Hypr2d" :
     """
   return _Geom2dGcc.Geom2dGcc_MyCurveTool_Hyperbola(*args)
 
-def Geom2dGcc_MyCurveTool_FirstParameter(*args) -> "Standard_Real" :
+def Geom2dGcc_MyCurveTool_FirstParameter(*args):
   """
     :param C:
     :type C: Adaptor3d_OffsetCurve &
@@ -3521,7 +3518,7 @@ def Geom2dGcc_MyCurveTool_FirstParameter(*args) -> "Standard_Real" :
     """
   return _Geom2dGcc.Geom2dGcc_MyCurveTool_FirstParameter(*args)
 
-def Geom2dGcc_MyCurveTool_LastParameter(*args) -> "Standard_Real" :
+def Geom2dGcc_MyCurveTool_LastParameter(*args):
   """
     :param C:
     :type C: Adaptor3d_OffsetCurve &
@@ -3530,7 +3527,7 @@ def Geom2dGcc_MyCurveTool_LastParameter(*args) -> "Standard_Real" :
     """
   return _Geom2dGcc.Geom2dGcc_MyCurveTool_LastParameter(*args)
 
-def Geom2dGcc_MyCurveTool_EpsX(*args) -> "Standard_Real" :
+def Geom2dGcc_MyCurveTool_EpsX(*args):
   """
     :param C:
     :type C: Adaptor3d_OffsetCurve &
@@ -3541,7 +3538,7 @@ def Geom2dGcc_MyCurveTool_EpsX(*args) -> "Standard_Real" :
     """
   return _Geom2dGcc.Geom2dGcc_MyCurveTool_EpsX(*args)
 
-def Geom2dGcc_MyCurveTool_NbSamples(*args) -> "Standard_Integer" :
+def Geom2dGcc_MyCurveTool_NbSamples(*args):
   """
     :param C:
     :type C: Adaptor3d_OffsetCurve &
@@ -3550,7 +3547,7 @@ def Geom2dGcc_MyCurveTool_NbSamples(*args) -> "Standard_Integer" :
     """
   return _Geom2dGcc.Geom2dGcc_MyCurveTool_NbSamples(*args)
 
-def Geom2dGcc_MyCurveTool_Value(*args) -> "gp_Pnt2d" :
+def Geom2dGcc_MyCurveTool_Value(*args):
   """
     :param C:
     :type C: Adaptor3d_OffsetCurve &
@@ -3561,7 +3558,7 @@ def Geom2dGcc_MyCurveTool_Value(*args) -> "gp_Pnt2d" :
     """
   return _Geom2dGcc.Geom2dGcc_MyCurveTool_Value(*args)
 
-def Geom2dGcc_MyCurveTool_D1(*args) -> "void" :
+def Geom2dGcc_MyCurveTool_D1(*args):
   """
     :param C:
     :type C: Adaptor3d_OffsetCurve &
@@ -3576,7 +3573,7 @@ def Geom2dGcc_MyCurveTool_D1(*args) -> "void" :
     """
   return _Geom2dGcc.Geom2dGcc_MyCurveTool_D1(*args)
 
-def Geom2dGcc_MyCurveTool_D2(*args) -> "void" :
+def Geom2dGcc_MyCurveTool_D2(*args):
   """
     :param C:
     :type C: Adaptor3d_OffsetCurve &
@@ -3593,7 +3590,7 @@ def Geom2dGcc_MyCurveTool_D2(*args) -> "void" :
     """
   return _Geom2dGcc.Geom2dGcc_MyCurveTool_D2(*args)
 
-def Geom2dGcc_MyCurveTool_IsComposite(*args) -> "Standard_Boolean" :
+def Geom2dGcc_MyCurveTool_IsComposite(*args):
   """
     :param C:
     :type C: Adaptor3d_OffsetCurve &
@@ -3602,7 +3599,7 @@ def Geom2dGcc_MyCurveTool_IsComposite(*args) -> "Standard_Boolean" :
     """
   return _Geom2dGcc.Geom2dGcc_MyCurveTool_IsComposite(*args)
 
-def Geom2dGcc_MyCurveTool_GetIntervals(*args) -> "Standard_Integer" :
+def Geom2dGcc_MyCurveTool_GetIntervals(*args):
   """
     :param C:
     :type C: Adaptor3d_OffsetCurve &
@@ -3611,12 +3608,12 @@ def Geom2dGcc_MyCurveTool_GetIntervals(*args) -> "Standard_Integer" :
     """
   return _Geom2dGcc.Geom2dGcc_MyCurveTool_GetIntervals(*args)
 
-def Geom2dGcc_MyCurveTool_GetInterval(*args) -> "Standard_Real &, Standard_Real &" :
+def Geom2dGcc_MyCurveTool_GetInterval(*args):
   """
     :param C:
     :type C: Adaptor3d_OffsetCurve &
     :param Index:
-    :type Index: int
+    :type Index: Standard_Integer
     :param U1:
     :type U1: float &
     :param U2:
@@ -3626,12 +3623,12 @@ def Geom2dGcc_MyCurveTool_GetInterval(*args) -> "Standard_Real &, Standard_Real 
     """
   return _Geom2dGcc.Geom2dGcc_MyCurveTool_GetInterval(*args)
 
-def Geom2dGcc_MyCurveTool_SetCurrentInterval(*args) -> "void" :
+def Geom2dGcc_MyCurveTool_SetCurrentInterval(*args):
   """
     :param C:
     :type C: Adaptor3d_OffsetCurve &
     :param Index:
-    :type Index: int
+    :type Index: Standard_Integer
     :rtype: void
 
     """
@@ -3676,21 +3673,21 @@ class Geom2dGcc_MyL2d2Tan(object):
 
         """
         _Geom2dGcc.Geom2dGcc_MyL2d2Tan_swiginit(self,_Geom2dGcc.new_Geom2dGcc_MyL2d2Tan(*args))
-    def IsDone(self, *args) -> "Standard_Boolean" :
+    def IsDone(self):
         """
         :rtype: bool
 
         """
-        return _Geom2dGcc.Geom2dGcc_MyL2d2Tan_IsDone(self, *args)
+        return _Geom2dGcc.Geom2dGcc_MyL2d2Tan_IsDone(self)
 
-    def ThisSolution(self, *args) -> "gp_Lin2d" :
+    def ThisSolution(self):
         """
         :rtype: gp_Lin2d
 
         """
-        return _Geom2dGcc.Geom2dGcc_MyL2d2Tan_ThisSolution(self, *args)
+        return _Geom2dGcc.Geom2dGcc_MyL2d2Tan_ThisSolution(self)
 
-    def WhichQualifier(self, *args) -> "void" :
+    def WhichQualifier(self, *args):
         """
         :param Qualif1:
         :type Qualif1: GccEnt_Position &
@@ -3701,7 +3698,7 @@ class Geom2dGcc_MyL2d2Tan(object):
         """
         return _Geom2dGcc.Geom2dGcc_MyL2d2Tan_WhichQualifier(self, *args)
 
-    def Tangency1(self, *args) -> "void" :
+    def Tangency1(self, *args):
         """
         :param ParSol:
         :type ParSol: float &
@@ -3714,7 +3711,7 @@ class Geom2dGcc_MyL2d2Tan(object):
         """
         return _Geom2dGcc.Geom2dGcc_MyL2d2Tan_Tangency1(self, *args)
 
-    def Tangency2(self, *args) -> "void" :
+    def Tangency2(self, *args):
         """
         :param ParSol:
         :type ParSol: float &
@@ -3761,23 +3758,35 @@ class Geom2dGcc_MyL2dTanObl(object):
         :type Angle: float
         :rtype: None
 
+        :param Qualified1:
+        :type Qualified1: Geom2dGcc_MyQCurve &
+        :param TheLin:
+        :type TheLin: gp_Lin2d
+        :param Param1:
+        :type Param1: float
+        :param TolAng:
+        :type TolAng: float
+        :param Angle: default value is 0
+        :type Angle: float
+        :rtype: None
+
         """
         _Geom2dGcc.Geom2dGcc_MyL2dTanObl_swiginit(self,_Geom2dGcc.new_Geom2dGcc_MyL2dTanObl(*args))
-    def IsDone(self, *args) -> "Standard_Boolean" :
+    def IsDone(self):
         """
         :rtype: bool
 
         """
-        return _Geom2dGcc.Geom2dGcc_MyL2dTanObl_IsDone(self, *args)
+        return _Geom2dGcc.Geom2dGcc_MyL2dTanObl_IsDone(self)
 
-    def ThisSolution(self, *args) -> "gp_Lin2d" :
+    def ThisSolution(self):
         """
         :rtype: gp_Lin2d
 
         """
-        return _Geom2dGcc.Geom2dGcc_MyL2dTanObl_ThisSolution(self, *args)
+        return _Geom2dGcc.Geom2dGcc_MyL2dTanObl_ThisSolution(self)
 
-    def WhichQualifier(self, *args) -> "void" :
+    def WhichQualifier(self, *args):
         """
         :param Qualif1:
         :type Qualif1: GccEnt_Position &
@@ -3786,7 +3795,7 @@ class Geom2dGcc_MyL2dTanObl(object):
         """
         return _Geom2dGcc.Geom2dGcc_MyL2dTanObl_WhichQualifier(self, *args)
 
-    def Tangency1(self, *args) -> "void" :
+    def Tangency1(self, *args):
         """
         :param ParSol:
         :type ParSol: float &
@@ -3799,7 +3808,7 @@ class Geom2dGcc_MyL2dTanObl(object):
         """
         return _Geom2dGcc.Geom2dGcc_MyL2dTanObl_Tangency1(self, *args)
 
-    def Intersection2(self, *args) -> "void" :
+    def Intersection2(self, *args):
         """
         :param ParSol:
         :type ParSol: float &
@@ -3812,12 +3821,12 @@ class Geom2dGcc_MyL2dTanObl(object):
         """
         return _Geom2dGcc.Geom2dGcc_MyL2dTanObl_Intersection2(self, *args)
 
-    def IsParallel2(self, *args) -> "Standard_Boolean" :
+    def IsParallel2(self):
         """
         :rtype: bool
 
         """
-        return _Geom2dGcc.Geom2dGcc_MyL2dTanObl_IsParallel2(self, *args)
+        return _Geom2dGcc.Geom2dGcc_MyL2dTanObl_IsParallel2(self)
 
     def __del__(self):
     	try:
@@ -3850,47 +3859,47 @@ class Geom2dGcc_MyQCurve(object):
 
         """
         _Geom2dGcc.Geom2dGcc_MyQCurve_swiginit(self,_Geom2dGcc.new_Geom2dGcc_MyQCurve(*args))
-    def Qualified(self, *args) -> "Geom2dAdaptor_Curve" :
+    def Qualified(self):
         """
         :rtype: Geom2dAdaptor_Curve
 
         """
-        return _Geom2dGcc.Geom2dGcc_MyQCurve_Qualified(self, *args)
+        return _Geom2dGcc.Geom2dGcc_MyQCurve_Qualified(self)
 
-    def Qualifier(self, *args) -> "GccEnt_Position" :
+    def Qualifier(self):
         """
         :rtype: GccEnt_Position
 
         """
-        return _Geom2dGcc.Geom2dGcc_MyQCurve_Qualifier(self, *args)
+        return _Geom2dGcc.Geom2dGcc_MyQCurve_Qualifier(self)
 
-    def IsUnqualified(self, *args) -> "Standard_Boolean" :
+    def IsUnqualified(self):
         """
         :rtype: bool
 
         """
-        return _Geom2dGcc.Geom2dGcc_MyQCurve_IsUnqualified(self, *args)
+        return _Geom2dGcc.Geom2dGcc_MyQCurve_IsUnqualified(self)
 
-    def IsEnclosing(self, *args) -> "Standard_Boolean" :
+    def IsEnclosing(self):
         """
         :rtype: bool
 
         """
-        return _Geom2dGcc.Geom2dGcc_MyQCurve_IsEnclosing(self, *args)
+        return _Geom2dGcc.Geom2dGcc_MyQCurve_IsEnclosing(self)
 
-    def IsEnclosed(self, *args) -> "Standard_Boolean" :
+    def IsEnclosed(self):
         """
         :rtype: bool
 
         """
-        return _Geom2dGcc.Geom2dGcc_MyQCurve_IsEnclosed(self, *args)
+        return _Geom2dGcc.Geom2dGcc_MyQCurve_IsEnclosed(self)
 
-    def IsOutside(self, *args) -> "Standard_Boolean" :
+    def IsOutside(self):
         """
         :rtype: bool
 
         """
-        return _Geom2dGcc.Geom2dGcc_MyQCurve_IsOutside(self, *args)
+        return _Geom2dGcc.Geom2dGcc_MyQCurve_IsOutside(self)
 
     def __del__(self):
     	try:
@@ -3925,59 +3934,59 @@ class Geom2dGcc_QualifiedCurve(object):
 
         """
         _Geom2dGcc.Geom2dGcc_QualifiedCurve_swiginit(self,_Geom2dGcc.new_Geom2dGcc_QualifiedCurve(*args))
-    def Qualified(self, *args) -> "Geom2dAdaptor_Curve" :
+    def Qualified(self):
         """
         * Returns a 2D curve to which the qualifier is assigned. Warning The returned curve is an adapted curve, i.e. an object which is an interface between: - the services provided by a 2D curve from the package Geom2d, - and those required on the curve by a computation algorithm. The Geom2d curve on which the adapted curve is based can be obtained in the following way: myQualifiedCurve = ... ; Geom2dAdaptor_Curve myAdaptedCurve = myQualifiedCurve.Qualified(); Handle_Geom2d_Curve = myAdaptedCurve.Curve();
 
         :rtype: Geom2dAdaptor_Curve
 
         """
-        return _Geom2dGcc.Geom2dGcc_QualifiedCurve_Qualified(self, *args)
+        return _Geom2dGcc.Geom2dGcc_QualifiedCurve_Qualified(self)
 
-    def Qualifier(self, *args) -> "GccEnt_Position" :
+    def Qualifier(self):
         """
         * Returns - the qualifier of this qualified curve if it is enclosing, enclosed or outside, or - GccEnt_noqualifier if it is unqualified.
 
         :rtype: GccEnt_Position
 
         """
-        return _Geom2dGcc.Geom2dGcc_QualifiedCurve_Qualifier(self, *args)
+        return _Geom2dGcc.Geom2dGcc_QualifiedCurve_Qualifier(self)
 
-    def IsUnqualified(self, *args) -> "Standard_Boolean" :
+    def IsUnqualified(self):
         """
         * Returns true if the solution is unqualified and false in the other cases.
 
         :rtype: bool
 
         """
-        return _Geom2dGcc.Geom2dGcc_QualifiedCurve_IsUnqualified(self, *args)
+        return _Geom2dGcc.Geom2dGcc_QualifiedCurve_IsUnqualified(self)
 
-    def IsEnclosing(self, *args) -> "Standard_Boolean" :
+    def IsEnclosing(self):
         """
         * It returns true if the solution is Enclosing the Curv and false in the other cases.
 
         :rtype: bool
 
         """
-        return _Geom2dGcc.Geom2dGcc_QualifiedCurve_IsEnclosing(self, *args)
+        return _Geom2dGcc.Geom2dGcc_QualifiedCurve_IsEnclosing(self)
 
-    def IsEnclosed(self, *args) -> "Standard_Boolean" :
+    def IsEnclosed(self):
         """
         * It returns true if the solution is Enclosed in the Curv and false in the other cases.
 
         :rtype: bool
 
         """
-        return _Geom2dGcc.Geom2dGcc_QualifiedCurve_IsEnclosed(self, *args)
+        return _Geom2dGcc.Geom2dGcc_QualifiedCurve_IsEnclosed(self)
 
-    def IsOutside(self, *args) -> "Standard_Boolean" :
+    def IsOutside(self):
         """
         * It returns true if the solution is Outside the Curv and false in the other cases.
 
         :rtype: bool
 
         """
-        return _Geom2dGcc.Geom2dGcc_QualifiedCurve_IsOutside(self, *args)
+        return _Geom2dGcc.Geom2dGcc_QualifiedCurve_IsOutside(self)
 
     def __del__(self):
     	try:

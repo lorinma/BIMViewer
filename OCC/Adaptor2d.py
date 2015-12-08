@@ -118,36 +118,37 @@ import OCC.Geom2d
 import OCC.TColgp
 class Adaptor2d_Curve2d(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
+    def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def Delete(self, *args) -> "void" :
+    def Delete(self):
         """
         :rtype: void
 
         """
-        return _Adaptor2d.Adaptor2d_Curve2d_Delete(self, *args)
+        return _Adaptor2d.Adaptor2d_Curve2d_Delete(self)
 
-    def FirstParameter(self, *args) -> "Standard_Real" :
+    def FirstParameter(self):
         """
         :rtype: float
 
         """
-        return _Adaptor2d.Adaptor2d_Curve2d_FirstParameter(self, *args)
+        return _Adaptor2d.Adaptor2d_Curve2d_FirstParameter(self)
 
-    def LastParameter(self, *args) -> "Standard_Real" :
+    def LastParameter(self):
         """
         :rtype: float
 
         """
-        return _Adaptor2d.Adaptor2d_Curve2d_LastParameter(self, *args)
+        return _Adaptor2d.Adaptor2d_Curve2d_LastParameter(self)
 
-    def Continuity(self, *args) -> "GeomAbs_Shape" :
+    def Continuity(self):
         """
         :rtype: GeomAbs_Shape
 
         """
-        return _Adaptor2d.Adaptor2d_Curve2d_Continuity(self, *args)
+        return _Adaptor2d.Adaptor2d_Curve2d_Continuity(self)
 
-    def NbIntervals(self, *args) -> "Standard_Integer" :
+    def NbIntervals(self, *args):
         """
         * If necessary, breaks the curve in intervals of continuity <S>. And returns the number of intervals.
 
@@ -158,7 +159,7 @@ class Adaptor2d_Curve2d(object):
         """
         return _Adaptor2d.Adaptor2d_Curve2d_NbIntervals(self, *args)
 
-    def Intervals(self, *args) -> "void" :
+    def Intervals(self, *args):
         """
         * Stores in <T> the parameters bounding the intervals of continuity <S>.  The array must provide enough room to accomodate for the parameters. i.e. T.Length() > NbIntervals()
 
@@ -171,7 +172,7 @@ class Adaptor2d_Curve2d(object):
         """
         return _Adaptor2d.Adaptor2d_Curve2d_Intervals(self, *args)
 
-    def Trim(self, *args) -> "Handle_Adaptor2d_HCurve2d" :
+    def Trim(self, *args):
         """
         * Returns a curve equivalent of <self> between parameters <First> and <Last>. <Tol> is used to test for 3d points confusion. If <First> >= <Last>
 
@@ -186,28 +187,28 @@ class Adaptor2d_Curve2d(object):
         """
         return _Adaptor2d.Adaptor2d_Curve2d_Trim(self, *args)
 
-    def IsClosed(self, *args) -> "Standard_Boolean" :
+    def IsClosed(self):
         """
         :rtype: bool
 
         """
-        return _Adaptor2d.Adaptor2d_Curve2d_IsClosed(self, *args)
+        return _Adaptor2d.Adaptor2d_Curve2d_IsClosed(self)
 
-    def IsPeriodic(self, *args) -> "Standard_Boolean" :
+    def IsPeriodic(self):
         """
         :rtype: bool
 
         """
-        return _Adaptor2d.Adaptor2d_Curve2d_IsPeriodic(self, *args)
+        return _Adaptor2d.Adaptor2d_Curve2d_IsPeriodic(self)
 
-    def Period(self, *args) -> "Standard_Real" :
+    def Period(self):
         """
         :rtype: float
 
         """
-        return _Adaptor2d.Adaptor2d_Curve2d_Period(self, *args)
+        return _Adaptor2d.Adaptor2d_Curve2d_Period(self)
 
-    def Value(self, *args) -> "gp_Pnt2d" :
+    def Value(self, *args):
         """
         * Computes the point of parameter U on the curve.
 
@@ -218,7 +219,7 @@ class Adaptor2d_Curve2d(object):
         """
         return _Adaptor2d.Adaptor2d_Curve2d_Value(self, *args)
 
-    def D0(self, *args) -> "void" :
+    def D0(self, *args):
         """
         * Computes the point of parameter U on the curve.
 
@@ -231,7 +232,7 @@ class Adaptor2d_Curve2d(object):
         """
         return _Adaptor2d.Adaptor2d_Curve2d_D0(self, *args)
 
-    def D1(self, *args) -> "void" :
+    def D1(self, *args):
         """
         * Computes the point of parameter U on the curve with its first derivative. Raised if the continuity of the current interval is not C1.
 
@@ -246,7 +247,7 @@ class Adaptor2d_Curve2d(object):
         """
         return _Adaptor2d.Adaptor2d_Curve2d_D1(self, *args)
 
-    def D2(self, *args) -> "void" :
+    def D2(self, *args):
         """
         * Returns the point P of parameter U, the first and second derivatives V1 and V2. Raised if the continuity of the current interval is not C2.
 
@@ -263,7 +264,7 @@ class Adaptor2d_Curve2d(object):
         """
         return _Adaptor2d.Adaptor2d_Curve2d_D2(self, *args)
 
-    def D3(self, *args) -> "void" :
+    def D3(self, *args):
         """
         * Returns the point P of parameter U, the first, the second and the third derivative. Raised if the continuity of the current interval is not C3.
 
@@ -282,20 +283,20 @@ class Adaptor2d_Curve2d(object):
         """
         return _Adaptor2d.Adaptor2d_Curve2d_D3(self, *args)
 
-    def DN(self, *args) -> "gp_Vec2d" :
+    def DN(self, *args):
         """
         * The returned vector gives the value of the derivative for the order of derivation N. Raised if the continuity of the current interval is not CN. Raised if N < 1.
 
         :param U:
         :type U: float
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :rtype: gp_Vec2d
 
         """
         return _Adaptor2d.Adaptor2d_Curve2d_DN(self, *args)
 
-    def Resolution(self, *args) -> "Standard_Real" :
+    def Resolution(self, *args):
         """
         * Returns the parametric resolution corresponding  to the real space resolution <R3d>.
 
@@ -306,101 +307,99 @@ class Adaptor2d_Curve2d(object):
         """
         return _Adaptor2d.Adaptor2d_Curve2d_Resolution(self, *args)
 
-    def GetType(self, *args) -> "GeomAbs_CurveType" :
+    def GetType(self):
         """
         * Returns the type of the curve in the current interval : Line, Circle, Ellipse, Hyperbola, Parabola, BezierCurve, BSplineCurve, OtherCurve.
 
         :rtype: GeomAbs_CurveType
 
         """
-        return _Adaptor2d.Adaptor2d_Curve2d_GetType(self, *args)
+        return _Adaptor2d.Adaptor2d_Curve2d_GetType(self)
 
-    def Line(self, *args) -> "gp_Lin2d" :
+    def Line(self):
         """
         :rtype: gp_Lin2d
 
         """
-        return _Adaptor2d.Adaptor2d_Curve2d_Line(self, *args)
+        return _Adaptor2d.Adaptor2d_Curve2d_Line(self)
 
-    def Circle(self, *args) -> "gp_Circ2d" :
+    def Circle(self):
         """
         :rtype: gp_Circ2d
 
         """
-        return _Adaptor2d.Adaptor2d_Curve2d_Circle(self, *args)
+        return _Adaptor2d.Adaptor2d_Curve2d_Circle(self)
 
-    def Ellipse(self, *args) -> "gp_Elips2d" :
+    def Ellipse(self):
         """
         :rtype: gp_Elips2d
 
         """
-        return _Adaptor2d.Adaptor2d_Curve2d_Ellipse(self, *args)
+        return _Adaptor2d.Adaptor2d_Curve2d_Ellipse(self)
 
-    def Hyperbola(self, *args) -> "gp_Hypr2d" :
+    def Hyperbola(self):
         """
         :rtype: gp_Hypr2d
 
         """
-        return _Adaptor2d.Adaptor2d_Curve2d_Hyperbola(self, *args)
+        return _Adaptor2d.Adaptor2d_Curve2d_Hyperbola(self)
 
-    def Parabola(self, *args) -> "gp_Parab2d" :
+    def Parabola(self):
         """
         :rtype: gp_Parab2d
 
         """
-        return _Adaptor2d.Adaptor2d_Curve2d_Parabola(self, *args)
+        return _Adaptor2d.Adaptor2d_Curve2d_Parabola(self)
 
-    def Degree(self, *args) -> "Standard_Integer" :
+    def Degree(self):
         """
         :rtype: int
 
         """
-        return _Adaptor2d.Adaptor2d_Curve2d_Degree(self, *args)
+        return _Adaptor2d.Adaptor2d_Curve2d_Degree(self)
 
-    def IsRational(self, *args) -> "Standard_Boolean" :
+    def IsRational(self):
         """
         :rtype: bool
 
         """
-        return _Adaptor2d.Adaptor2d_Curve2d_IsRational(self, *args)
+        return _Adaptor2d.Adaptor2d_Curve2d_IsRational(self)
 
-    def NbPoles(self, *args) -> "Standard_Integer" :
+    def NbPoles(self):
         """
         :rtype: int
 
         """
-        return _Adaptor2d.Adaptor2d_Curve2d_NbPoles(self, *args)
+        return _Adaptor2d.Adaptor2d_Curve2d_NbPoles(self)
 
-    def NbKnots(self, *args) -> "Standard_Integer" :
+    def NbKnots(self):
         """
         :rtype: int
 
         """
-        return _Adaptor2d.Adaptor2d_Curve2d_NbKnots(self, *args)
+        return _Adaptor2d.Adaptor2d_Curve2d_NbKnots(self)
 
-    def NbSamples(self, *args) -> "Standard_Integer" :
+    def NbSamples(self):
         """
         :rtype: int
 
         """
-        return _Adaptor2d.Adaptor2d_Curve2d_NbSamples(self, *args)
+        return _Adaptor2d.Adaptor2d_Curve2d_NbSamples(self)
 
-    def Bezier(self, *args) -> "Handle_Geom2d_BezierCurve" :
+    def Bezier(self):
         """
         :rtype: Handle_Geom2d_BezierCurve
 
         """
-        return _Adaptor2d.Adaptor2d_Curve2d_Bezier(self, *args)
+        return _Adaptor2d.Adaptor2d_Curve2d_Bezier(self)
 
-    def BSpline(self, *args) -> "Handle_Geom2d_BSplineCurve" :
+    def BSpline(self):
         """
         :rtype: Handle_Geom2d_BSplineCurve
 
         """
-        return _Adaptor2d.Adaptor2d_Curve2d_BSpline(self, *args)
+        return _Adaptor2d.Adaptor2d_Curve2d_BSpline(self)
 
-    def __init__(self): 
-        _Adaptor2d.Adaptor2d_Curve2d_swiginit(self,_Adaptor2d.new_Adaptor2d_Curve2d())
     def __del__(self):
     	try:
     		self.thisown = False
@@ -447,37 +446,37 @@ class Adaptor2d_HCurve2d(OCC.MMgt.MMgt_TShared):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
-    def Curve2d(self, *args) -> "Adaptor2d_Curve2d const &" :
+    def Curve2d(self):
         """
         * Returns a reference to the Curve2d inside the HCurve2d.
 
         :rtype: Adaptor2d_Curve2d
 
         """
-        return _Adaptor2d.Adaptor2d_HCurve2d_Curve2d(self, *args)
+        return _Adaptor2d.Adaptor2d_HCurve2d_Curve2d(self)
 
-    def FirstParameter(self, *args) -> "Standard_Real" :
+    def FirstParameter(self):
         """
         :rtype: float
 
         """
-        return _Adaptor2d.Adaptor2d_HCurve2d_FirstParameter(self, *args)
+        return _Adaptor2d.Adaptor2d_HCurve2d_FirstParameter(self)
 
-    def LastParameter(self, *args) -> "Standard_Real" :
+    def LastParameter(self):
         """
         :rtype: float
 
         """
-        return _Adaptor2d.Adaptor2d_HCurve2d_LastParameter(self, *args)
+        return _Adaptor2d.Adaptor2d_HCurve2d_LastParameter(self)
 
-    def Continuity(self, *args) -> "GeomAbs_Shape" :
+    def Continuity(self):
         """
         :rtype: GeomAbs_Shape
 
         """
-        return _Adaptor2d.Adaptor2d_HCurve2d_Continuity(self, *args)
+        return _Adaptor2d.Adaptor2d_HCurve2d_Continuity(self)
 
-    def NbIntervals(self, *args) -> "Standard_Integer" :
+    def NbIntervals(self, *args):
         """
         :param S:
         :type S: GeomAbs_Shape
@@ -486,7 +485,7 @@ class Adaptor2d_HCurve2d(OCC.MMgt.MMgt_TShared):
         """
         return _Adaptor2d.Adaptor2d_HCurve2d_NbIntervals(self, *args)
 
-    def Intervals(self, *args) -> "void" :
+    def Intervals(self, *args):
         """
         :param T:
         :type T: TColStd_Array1OfReal &
@@ -497,7 +496,7 @@ class Adaptor2d_HCurve2d(OCC.MMgt.MMgt_TShared):
         """
         return _Adaptor2d.Adaptor2d_HCurve2d_Intervals(self, *args)
 
-    def Trim(self, *args) -> "Handle_Adaptor2d_HCurve2d" :
+    def Trim(self, *args):
         """
         * If <First> >= <Last>
 
@@ -512,28 +511,28 @@ class Adaptor2d_HCurve2d(OCC.MMgt.MMgt_TShared):
         """
         return _Adaptor2d.Adaptor2d_HCurve2d_Trim(self, *args)
 
-    def IsClosed(self, *args) -> "Standard_Boolean" :
+    def IsClosed(self):
         """
         :rtype: bool
 
         """
-        return _Adaptor2d.Adaptor2d_HCurve2d_IsClosed(self, *args)
+        return _Adaptor2d.Adaptor2d_HCurve2d_IsClosed(self)
 
-    def IsPeriodic(self, *args) -> "Standard_Boolean" :
+    def IsPeriodic(self):
         """
         :rtype: bool
 
         """
-        return _Adaptor2d.Adaptor2d_HCurve2d_IsPeriodic(self, *args)
+        return _Adaptor2d.Adaptor2d_HCurve2d_IsPeriodic(self)
 
-    def Period(self, *args) -> "Standard_Real" :
+    def Period(self):
         """
         :rtype: float
 
         """
-        return _Adaptor2d.Adaptor2d_HCurve2d_Period(self, *args)
+        return _Adaptor2d.Adaptor2d_HCurve2d_Period(self)
 
-    def Value(self, *args) -> "gp_Pnt2d" :
+    def Value(self, *args):
         """
         :param U:
         :type U: float
@@ -542,7 +541,7 @@ class Adaptor2d_HCurve2d(OCC.MMgt.MMgt_TShared):
         """
         return _Adaptor2d.Adaptor2d_HCurve2d_Value(self, *args)
 
-    def D0(self, *args) -> "void" :
+    def D0(self, *args):
         """
         :param U:
         :type U: float
@@ -553,7 +552,7 @@ class Adaptor2d_HCurve2d(OCC.MMgt.MMgt_TShared):
         """
         return _Adaptor2d.Adaptor2d_HCurve2d_D0(self, *args)
 
-    def D1(self, *args) -> "void" :
+    def D1(self, *args):
         """
         :param U:
         :type U: float
@@ -566,7 +565,7 @@ class Adaptor2d_HCurve2d(OCC.MMgt.MMgt_TShared):
         """
         return _Adaptor2d.Adaptor2d_HCurve2d_D1(self, *args)
 
-    def D2(self, *args) -> "void" :
+    def D2(self, *args):
         """
         :param U:
         :type U: float
@@ -581,7 +580,7 @@ class Adaptor2d_HCurve2d(OCC.MMgt.MMgt_TShared):
         """
         return _Adaptor2d.Adaptor2d_HCurve2d_D2(self, *args)
 
-    def D3(self, *args) -> "void" :
+    def D3(self, *args):
         """
         :param U:
         :type U: float
@@ -598,18 +597,18 @@ class Adaptor2d_HCurve2d(OCC.MMgt.MMgt_TShared):
         """
         return _Adaptor2d.Adaptor2d_HCurve2d_D3(self, *args)
 
-    def DN(self, *args) -> "gp_Vec2d" :
+    def DN(self, *args):
         """
         :param U:
         :type U: float
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :rtype: gp_Vec2d
 
         """
         return _Adaptor2d.Adaptor2d_HCurve2d_DN(self, *args)
 
-    def Resolution(self, *args) -> "Standard_Real" :
+    def Resolution(self, *args):
         """
         :param R3d:
         :type R3d: float
@@ -618,95 +617,95 @@ class Adaptor2d_HCurve2d(OCC.MMgt.MMgt_TShared):
         """
         return _Adaptor2d.Adaptor2d_HCurve2d_Resolution(self, *args)
 
-    def GetType(self, *args) -> "GeomAbs_CurveType" :
+    def GetType(self):
         """
         :rtype: GeomAbs_CurveType
 
         """
-        return _Adaptor2d.Adaptor2d_HCurve2d_GetType(self, *args)
+        return _Adaptor2d.Adaptor2d_HCurve2d_GetType(self)
 
-    def Line(self, *args) -> "gp_Lin2d" :
+    def Line(self):
         """
         :rtype: gp_Lin2d
 
         """
-        return _Adaptor2d.Adaptor2d_HCurve2d_Line(self, *args)
+        return _Adaptor2d.Adaptor2d_HCurve2d_Line(self)
 
-    def Circle(self, *args) -> "gp_Circ2d" :
+    def Circle(self):
         """
         :rtype: gp_Circ2d
 
         """
-        return _Adaptor2d.Adaptor2d_HCurve2d_Circle(self, *args)
+        return _Adaptor2d.Adaptor2d_HCurve2d_Circle(self)
 
-    def Ellipse(self, *args) -> "gp_Elips2d" :
+    def Ellipse(self):
         """
         :rtype: gp_Elips2d
 
         """
-        return _Adaptor2d.Adaptor2d_HCurve2d_Ellipse(self, *args)
+        return _Adaptor2d.Adaptor2d_HCurve2d_Ellipse(self)
 
-    def Hyperbola(self, *args) -> "gp_Hypr2d" :
+    def Hyperbola(self):
         """
         :rtype: gp_Hypr2d
 
         """
-        return _Adaptor2d.Adaptor2d_HCurve2d_Hyperbola(self, *args)
+        return _Adaptor2d.Adaptor2d_HCurve2d_Hyperbola(self)
 
-    def Parabola(self, *args) -> "gp_Parab2d" :
+    def Parabola(self):
         """
         :rtype: gp_Parab2d
 
         """
-        return _Adaptor2d.Adaptor2d_HCurve2d_Parabola(self, *args)
+        return _Adaptor2d.Adaptor2d_HCurve2d_Parabola(self)
 
-    def Degree(self, *args) -> "Standard_Integer" :
+    def Degree(self):
         """
         :rtype: int
 
         """
-        return _Adaptor2d.Adaptor2d_HCurve2d_Degree(self, *args)
+        return _Adaptor2d.Adaptor2d_HCurve2d_Degree(self)
 
-    def IsRational(self, *args) -> "Standard_Boolean" :
+    def IsRational(self):
         """
         :rtype: bool
 
         """
-        return _Adaptor2d.Adaptor2d_HCurve2d_IsRational(self, *args)
+        return _Adaptor2d.Adaptor2d_HCurve2d_IsRational(self)
 
-    def NbPoles(self, *args) -> "Standard_Integer" :
+    def NbPoles(self):
         """
         :rtype: int
 
         """
-        return _Adaptor2d.Adaptor2d_HCurve2d_NbPoles(self, *args)
+        return _Adaptor2d.Adaptor2d_HCurve2d_NbPoles(self)
 
-    def NbKnots(self, *args) -> "Standard_Integer" :
+    def NbKnots(self):
         """
         :rtype: int
 
         """
-        return _Adaptor2d.Adaptor2d_HCurve2d_NbKnots(self, *args)
+        return _Adaptor2d.Adaptor2d_HCurve2d_NbKnots(self)
 
-    def Bezier(self, *args) -> "Handle_Geom2d_BezierCurve" :
+    def Bezier(self):
         """
         :rtype: Handle_Geom2d_BezierCurve
 
         """
-        return _Adaptor2d.Adaptor2d_HCurve2d_Bezier(self, *args)
+        return _Adaptor2d.Adaptor2d_HCurve2d_Bezier(self)
 
-    def BSpline(self, *args) -> "Handle_Geom2d_BSplineCurve" :
+    def BSpline(self):
         """
         :rtype: Handle_Geom2d_BSplineCurve
 
         """
-        return _Adaptor2d.Adaptor2d_HCurve2d_BSpline(self, *args)
+        return _Adaptor2d.Adaptor2d_HCurve2d_BSpline(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Adaptor2d_HCurve2d self)"""
         return _Adaptor2d.Adaptor2d_HCurve2d__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Adaptor2d_HCurve2d" :
+    def GetHandle(self):
         """GetHandle(Adaptor2d_HCurve2d self) -> Handle_Adaptor2d_HCurve2d"""
         return _Adaptor2d.Adaptor2d_HCurve2d_GetHandle(self)
 
@@ -773,7 +772,7 @@ Handle_Adaptor2d_HCurve2d._kill_pointed = new_instancemethod(_Adaptor2d.Handle_A
 Handle_Adaptor2d_HCurve2d_swigregister = _Adaptor2d.Handle_Adaptor2d_HCurve2d_swigregister
 Handle_Adaptor2d_HCurve2d_swigregister(Handle_Adaptor2d_HCurve2d)
 
-def Handle_Adaptor2d_HCurve2d_DownCast(*args) -> "Handle_Adaptor2d_HCurve2d const" :
+def Handle_Adaptor2d_HCurve2d_DownCast(*args):
   return _Adaptor2d.Handle_Adaptor2d_HCurve2d_DownCast(*args)
 Handle_Adaptor2d_HCurve2d_DownCast = _Adaptor2d.Handle_Adaptor2d_HCurve2d_DownCast
 
@@ -790,7 +789,7 @@ class Adaptor2d_HLine2d(Adaptor2d_HCurve2d):
 
         """
         _Adaptor2d.Adaptor2d_HLine2d_swiginit(self,_Adaptor2d.new_Adaptor2d_HLine2d(*args))
-    def Set(self, *args) -> "void" :
+    def Set(self, *args):
         """
         :param C:
         :type C: Adaptor2d_Line2d &
@@ -799,18 +798,18 @@ class Adaptor2d_HLine2d(Adaptor2d_HCurve2d):
         """
         return _Adaptor2d.Adaptor2d_HLine2d_Set(self, *args)
 
-    def ChangeCurve2d(self, *args) -> "Adaptor2d_Line2d &" :
+    def ChangeCurve2d(self):
         """
         :rtype: Adaptor2d_Line2d
 
         """
-        return _Adaptor2d.Adaptor2d_HLine2d_ChangeCurve2d(self, *args)
+        return _Adaptor2d.Adaptor2d_HLine2d_ChangeCurve2d(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Adaptor2d_HLine2d self)"""
         return _Adaptor2d.Adaptor2d_HLine2d__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Adaptor2d_HLine2d" :
+    def GetHandle(self):
         """GetHandle(Adaptor2d_HLine2d self) -> Handle_Adaptor2d_HLine2d"""
         return _Adaptor2d.Adaptor2d_HLine2d_GetHandle(self)
 
@@ -850,7 +849,7 @@ Handle_Adaptor2d_HLine2d._kill_pointed = new_instancemethod(_Adaptor2d.Handle_Ad
 Handle_Adaptor2d_HLine2d_swigregister = _Adaptor2d.Handle_Adaptor2d_HLine2d_swigregister
 Handle_Adaptor2d_HLine2d_swigregister(Handle_Adaptor2d_HLine2d)
 
-def Handle_Adaptor2d_HLine2d_DownCast(*args) -> "Handle_Adaptor2d_HLine2d const" :
+def Handle_Adaptor2d_HLine2d_DownCast(*args):
   return _Adaptor2d.Handle_Adaptor2d_HLine2d_DownCast(*args)
 Handle_Adaptor2d_HLine2d_DownCast = _Adaptor2d.Handle_Adaptor2d_HLine2d_DownCast
 
@@ -873,7 +872,7 @@ class Adaptor2d_Line2d(Adaptor2d_Curve2d):
 
         """
         _Adaptor2d.Adaptor2d_Line2d_swiginit(self,_Adaptor2d.new_Adaptor2d_Line2d(*args))
-    def Load(self, *args) -> "void" :
+    def Load(self, *args):
         """
         :param L:
         :type L: gp_Lin2d

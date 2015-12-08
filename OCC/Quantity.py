@@ -704,22 +704,22 @@ class Quantity_Array1OfCoefficient(object):
     def __init__(self, *args): 
         """
         :param Low:
-        :type Low: int
+        :type Low: Standard_Integer
         :param Up:
-        :type Up: int
+        :type Up: Standard_Integer
         :rtype: None
 
         :param Item:
         :type Item: Quantity_Coefficient &
         :param Low:
-        :type Low: int
+        :type Low: Standard_Integer
         :param Up:
-        :type Up: int
+        :type Up: Standard_Integer
         :rtype: None
 
         """
         _Quantity.Quantity_Array1OfCoefficient_swiginit(self,_Quantity.new_Quantity_Array1OfCoefficient(*args))
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
         :param V:
         :type V: Quantity_Coefficient &
@@ -728,21 +728,21 @@ class Quantity_Array1OfCoefficient(object):
         """
         return _Quantity.Quantity_Array1OfCoefficient_Init(self, *args)
 
-    def Destroy(self, *args) -> "void" :
+    def Destroy(self):
         """
         :rtype: None
 
         """
-        return _Quantity.Quantity_Array1OfCoefficient_Destroy(self, *args)
+        return _Quantity.Quantity_Array1OfCoefficient_Destroy(self)
 
-    def IsAllocated(self, *args) -> "Standard_Boolean" :
+    def IsAllocated(self):
         """
         :rtype: bool
 
         """
-        return _Quantity.Quantity_Array1OfCoefficient_IsAllocated(self, *args)
+        return _Quantity.Quantity_Array1OfCoefficient_IsAllocated(self)
 
-    def Assign(self, *args) -> "Quantity_Array1OfCoefficient const &" :
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: Quantity_Array1OfCoefficient &
@@ -751,7 +751,7 @@ class Quantity_Array1OfCoefficient(object):
         """
         return _Quantity.Quantity_Array1OfCoefficient_Assign(self, *args)
 
-    def Set(self, *args) -> "Quantity_Array1OfCoefficient const &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: Quantity_Array1OfCoefficient &
@@ -760,31 +760,31 @@ class Quantity_Array1OfCoefficient(object):
         """
         return _Quantity.Quantity_Array1OfCoefficient_Set(self, *args)
 
-    def Length(self, *args) -> "Standard_Integer" :
+    def Length(self):
         """
         :rtype: int
 
         """
-        return _Quantity.Quantity_Array1OfCoefficient_Length(self, *args)
+        return _Quantity.Quantity_Array1OfCoefficient_Length(self)
 
-    def Lower(self, *args) -> "Standard_Integer" :
+    def Lower(self):
         """
         :rtype: int
 
         """
-        return _Quantity.Quantity_Array1OfCoefficient_Lower(self, *args)
+        return _Quantity.Quantity_Array1OfCoefficient_Lower(self)
 
-    def Upper(self, *args) -> "Standard_Integer" :
+    def Upper(self):
         """
         :rtype: int
 
         """
-        return _Quantity.Quantity_Array1OfCoefficient_Upper(self, *args)
+        return _Quantity.Quantity_Array1OfCoefficient_Upper(self)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Value:
         :type Value: Quantity_Coefficient &
         :rtype: None
@@ -792,19 +792,19 @@ class Quantity_Array1OfCoefficient(object):
         """
         return _Quantity.Quantity_Array1OfCoefficient_SetValue(self, *args)
 
-    def Value(self, *args) -> "Quantity_Coefficient const &" :
+    def Value(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Quantity_Coefficient
 
         """
         return _Quantity.Quantity_Array1OfCoefficient_Value(self, *args)
 
-    def ChangeValue(self, *args) -> "Quantity_Coefficient &" :
+    def ChangeValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Quantity_Coefficient
 
         """
@@ -839,22 +839,22 @@ class Quantity_Array1OfColor(object):
     def __init__(self, *args): 
         """
         :param Low:
-        :type Low: int
+        :type Low: Standard_Integer
         :param Up:
-        :type Up: int
+        :type Up: Standard_Integer
         :rtype: None
 
         :param Item:
         :type Item: Quantity_Color &
         :param Low:
-        :type Low: int
+        :type Low: Standard_Integer
         :param Up:
-        :type Up: int
+        :type Up: Standard_Integer
         :rtype: None
 
         """
         _Quantity.Quantity_Array1OfColor_swiginit(self,_Quantity.new_Quantity_Array1OfColor(*args))
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
         :param V:
         :type V: Quantity_Color &
@@ -863,21 +863,21 @@ class Quantity_Array1OfColor(object):
         """
         return _Quantity.Quantity_Array1OfColor_Init(self, *args)
 
-    def Destroy(self, *args) -> "void" :
+    def Destroy(self):
         """
         :rtype: None
 
         """
-        return _Quantity.Quantity_Array1OfColor_Destroy(self, *args)
+        return _Quantity.Quantity_Array1OfColor_Destroy(self)
 
-    def IsAllocated(self, *args) -> "Standard_Boolean" :
+    def IsAllocated(self):
         """
         :rtype: bool
 
         """
-        return _Quantity.Quantity_Array1OfColor_IsAllocated(self, *args)
+        return _Quantity.Quantity_Array1OfColor_IsAllocated(self)
 
-    def Assign(self, *args) -> "Quantity_Array1OfColor const &" :
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: Quantity_Array1OfColor &
@@ -886,7 +886,7 @@ class Quantity_Array1OfColor(object):
         """
         return _Quantity.Quantity_Array1OfColor_Assign(self, *args)
 
-    def Set(self, *args) -> "Quantity_Array1OfColor const &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: Quantity_Array1OfColor &
@@ -895,31 +895,31 @@ class Quantity_Array1OfColor(object):
         """
         return _Quantity.Quantity_Array1OfColor_Set(self, *args)
 
-    def Length(self, *args) -> "Standard_Integer" :
+    def Length(self):
         """
         :rtype: int
 
         """
-        return _Quantity.Quantity_Array1OfColor_Length(self, *args)
+        return _Quantity.Quantity_Array1OfColor_Length(self)
 
-    def Lower(self, *args) -> "Standard_Integer" :
+    def Lower(self):
         """
         :rtype: int
 
         """
-        return _Quantity.Quantity_Array1OfColor_Lower(self, *args)
+        return _Quantity.Quantity_Array1OfColor_Lower(self)
 
-    def Upper(self, *args) -> "Standard_Integer" :
+    def Upper(self):
         """
         :rtype: int
 
         """
-        return _Quantity.Quantity_Array1OfColor_Upper(self, *args)
+        return _Quantity.Quantity_Array1OfColor_Upper(self)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Value:
         :type Value: Quantity_Color &
         :rtype: None
@@ -927,19 +927,19 @@ class Quantity_Array1OfColor(object):
         """
         return _Quantity.Quantity_Array1OfColor_SetValue(self, *args)
 
-    def Value(self, *args) -> "Quantity_Color const &" :
+    def Value(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Quantity_Color
 
         """
         return _Quantity.Quantity_Array1OfColor_Value(self, *args)
 
-    def ChangeValue(self, *args) -> "Quantity_Color &" :
+    def ChangeValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Quantity_Color
 
         """
@@ -974,30 +974,30 @@ class Quantity_Array2OfColor(object):
     def __init__(self, *args): 
         """
         :param R1:
-        :type R1: int
+        :type R1: Standard_Integer
         :param R2:
-        :type R2: int
+        :type R2: Standard_Integer
         :param C1:
-        :type C1: int
+        :type C1: Standard_Integer
         :param C2:
-        :type C2: int
+        :type C2: Standard_Integer
         :rtype: None
 
         :param Item:
         :type Item: Quantity_Color &
         :param R1:
-        :type R1: int
+        :type R1: Standard_Integer
         :param R2:
-        :type R2: int
+        :type R2: Standard_Integer
         :param C1:
-        :type C1: int
+        :type C1: Standard_Integer
         :param C2:
-        :type C2: int
+        :type C2: Standard_Integer
         :rtype: None
 
         """
         _Quantity.Quantity_Array2OfColor_swiginit(self,_Quantity.new_Quantity_Array2OfColor(*args))
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
         :param V:
         :type V: Quantity_Color &
@@ -1006,14 +1006,14 @@ class Quantity_Array2OfColor(object):
         """
         return _Quantity.Quantity_Array2OfColor_Init(self, *args)
 
-    def Destroy(self, *args) -> "void" :
+    def Destroy(self):
         """
         :rtype: None
 
         """
-        return _Quantity.Quantity_Array2OfColor_Destroy(self, *args)
+        return _Quantity.Quantity_Array2OfColor_Destroy(self)
 
-    def Assign(self, *args) -> "Quantity_Array2OfColor const &" :
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: Quantity_Array2OfColor &
@@ -1022,7 +1022,7 @@ class Quantity_Array2OfColor(object):
         """
         return _Quantity.Quantity_Array2OfColor_Assign(self, *args)
 
-    def Set(self, *args) -> "Quantity_Array2OfColor const &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: Quantity_Array2OfColor &
@@ -1031,54 +1031,54 @@ class Quantity_Array2OfColor(object):
         """
         return _Quantity.Quantity_Array2OfColor_Set(self, *args)
 
-    def ColLength(self, *args) -> "Standard_Integer" :
+    def ColLength(self):
         """
         :rtype: int
 
         """
-        return _Quantity.Quantity_Array2OfColor_ColLength(self, *args)
+        return _Quantity.Quantity_Array2OfColor_ColLength(self)
 
-    def RowLength(self, *args) -> "Standard_Integer" :
+    def RowLength(self):
         """
         :rtype: int
 
         """
-        return _Quantity.Quantity_Array2OfColor_RowLength(self, *args)
+        return _Quantity.Quantity_Array2OfColor_RowLength(self)
 
-    def LowerCol(self, *args) -> "Standard_Integer" :
+    def LowerCol(self):
         """
         :rtype: int
 
         """
-        return _Quantity.Quantity_Array2OfColor_LowerCol(self, *args)
+        return _Quantity.Quantity_Array2OfColor_LowerCol(self)
 
-    def LowerRow(self, *args) -> "Standard_Integer" :
+    def LowerRow(self):
         """
         :rtype: int
 
         """
-        return _Quantity.Quantity_Array2OfColor_LowerRow(self, *args)
+        return _Quantity.Quantity_Array2OfColor_LowerRow(self)
 
-    def UpperCol(self, *args) -> "Standard_Integer" :
+    def UpperCol(self):
         """
         :rtype: int
 
         """
-        return _Quantity.Quantity_Array2OfColor_UpperCol(self, *args)
+        return _Quantity.Quantity_Array2OfColor_UpperCol(self)
 
-    def UpperRow(self, *args) -> "Standard_Integer" :
+    def UpperRow(self):
         """
         :rtype: int
 
         """
-        return _Quantity.Quantity_Array2OfColor_UpperRow(self, *args)
+        return _Quantity.Quantity_Array2OfColor_UpperRow(self)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Row:
-        :type Row: int
+        :type Row: Standard_Integer
         :param Col:
-        :type Col: int
+        :type Col: Standard_Integer
         :param Value:
         :type Value: Quantity_Color &
         :rtype: None
@@ -1086,23 +1086,23 @@ class Quantity_Array2OfColor(object):
         """
         return _Quantity.Quantity_Array2OfColor_SetValue(self, *args)
 
-    def Value(self, *args) -> "Quantity_Color const &" :
+    def Value(self, *args):
         """
         :param Row:
-        :type Row: int
+        :type Row: Standard_Integer
         :param Col:
-        :type Col: int
+        :type Col: Standard_Integer
         :rtype: Quantity_Color
 
         """
         return _Quantity.Quantity_Array2OfColor_Value(self, *args)
 
-    def ChangeValue(self, *args) -> "Quantity_Color &" :
+    def ChangeValue(self, *args):
         """
         :param Row:
-        :type Row: int
+        :type Row: Standard_Integer
         :param Col:
-        :type Col: int
+        :type Col: Standard_Integer
         :rtype: Quantity_Color
 
         """
@@ -1162,7 +1162,7 @@ class Quantity_Color(object):
 
         """
         _Quantity.Quantity_Color_swiginit(self,_Quantity.new_Quantity_Color(*args))
-    def Assign(self, *args) -> "Quantity_Color &" :
+    def Assign(self, *args):
         """
         * Updates the colour <self> from the definition of the //!	 colour <Other>.
 
@@ -1173,7 +1173,7 @@ class Quantity_Color(object):
         """
         return _Quantity.Quantity_Color_Assign(self, *args)
 
-    def Set(self, *args) -> "Quantity_Color &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: Quantity_Color &
@@ -1182,7 +1182,7 @@ class Quantity_Color(object):
         """
         return _Quantity.Quantity_Color_Set(self, *args)
 
-    def ChangeContrast(self, *args) -> "void" :
+    def ChangeContrast(self, *args):
         """
         * Increases or decreases the contrast by <ADelta>. //!	 <ADelta> is a percentage. Any value greater than zero //!	 will increase the contrast. //!	 The variation is expressed as a percentage of the //!	 current value. //!	 It is a variation of the saturation.
 
@@ -1193,7 +1193,7 @@ class Quantity_Color(object):
         """
         return _Quantity.Quantity_Color_ChangeContrast(self, *args)
 
-    def ChangeIntensity(self, *args) -> "void" :
+    def ChangeIntensity(self, *args):
         """
         * Increases or decreases the intensity by <ADelta>. //!	 <ADelta> is a percentage. Any value greater than zero //!	 will increase the intensity. //!	 The variation is expressed as a percentage of the //!	 current value. //!	 It is a variation of the lightness.
 
@@ -1204,7 +1204,7 @@ class Quantity_Color(object):
         """
         return _Quantity.Quantity_Color_ChangeIntensity(self, *args)
 
-    def SetValues(self, *args) -> "void" :
+    def SetValues(self, *args):
         """
         * Updates the colour <self> from the definition of the //!	 colour <AName>.
 
@@ -1227,7 +1227,7 @@ class Quantity_Color(object):
         """
         return _Quantity.Quantity_Color_SetValues(self, *args)
 
-    def Delta(self, *args) -> "void" :
+    def Delta(self, *args):
         """
         * Returns the percentage change of contrast and intensity //!	 between <self> and <AColor>. //!	 <DC> and <DI> are percentages, either positive or negative. //!	 The calculation is with respect to the current value of <self> //!	 If <DC> is positive then <self> is more contrasty. //!	 If <DI> is positive then <self> is more intense.
 
@@ -1242,7 +1242,7 @@ class Quantity_Color(object):
         """
         return _Quantity.Quantity_Color_Delta(self, *args)
 
-    def Distance(self, *args) -> "Standard_Real" :
+    def Distance(self, *args):
         """
         * Returns the distance between two colours. It's a //!	 value between 0 and the square root of 3 //!	 (the black/white distance)
 
@@ -1253,7 +1253,7 @@ class Quantity_Color(object):
         """
         return _Quantity.Quantity_Color_Distance(self, *args)
 
-    def SquareDistance(self, *args) -> "Standard_Real" :
+    def SquareDistance(self, *args):
         """
         * Returns the square of distance between two colours.
 
@@ -1264,34 +1264,34 @@ class Quantity_Color(object):
         """
         return _Quantity.Quantity_Color_SquareDistance(self, *args)
 
-    def Blue(self, *args) -> "Quantity_Parameter" :
+    def Blue(self):
         """
         * Returns the Blue component (quantity of blue) of the //!	 color <self>.
 
         :rtype: Quantity_Parameter
 
         """
-        return _Quantity.Quantity_Color_Blue(self, *args)
+        return _Quantity.Quantity_Color_Blue(self)
 
-    def Green(self, *args) -> "Quantity_Parameter" :
+    def Green(self):
         """
         * Returns the Green component (quantity of green) of the //!	 color <self>.
 
         :rtype: Quantity_Parameter
 
         """
-        return _Quantity.Quantity_Color_Green(self, *args)
+        return _Quantity.Quantity_Color_Green(self)
 
-    def Hue(self, *args) -> "Quantity_Parameter" :
+    def Hue(self):
         """
         * Returns the Hue component (hue angle) of the //!	 color <self>.
 
         :rtype: Quantity_Parameter
 
         """
-        return _Quantity.Quantity_Color_Hue(self, *args)
+        return _Quantity.Quantity_Color_Hue(self)
 
-    def IsDifferent(self, *args) -> "Standard_Boolean" :
+    def IsDifferent(self, *args):
         """
         * Returns Standard_True if the distance between <self> and //!	 <Other> is greater than Epsilon ().
 
@@ -1308,7 +1308,7 @@ class Quantity_Color(object):
         except:
             return True
 
-    def IsEqual(self, *args) -> "Standard_Boolean" :
+    def IsEqual(self, *args):
         """
         * Returns true if the Other color is - different from, or - equal to this color. Two colors are considered to be equal if their distance is no greater than Epsilon(). These methods are aliases of operator != and operator ==.
 
@@ -1325,34 +1325,34 @@ class Quantity_Color(object):
         except:
             return False
 
-    def Light(self, *args) -> "Quantity_Parameter" :
+    def Light(self):
         """
         * Returns the Light component (value of the lightness) of the //!	 color <self>.
 
         :rtype: Quantity_Parameter
 
         """
-        return _Quantity.Quantity_Color_Light(self, *args)
+        return _Quantity.Quantity_Color_Light(self)
 
-    def Red(self, *args) -> "Quantity_Parameter" :
+    def Red(self):
         """
         * Returns the Red component (quantity of red) of the //!	 color <self>.
 
         :rtype: Quantity_Parameter
 
         """
-        return _Quantity.Quantity_Color_Red(self, *args)
+        return _Quantity.Quantity_Color_Red(self)
 
-    def Saturation(self, *args) -> "Quantity_Parameter" :
+    def Saturation(self):
         """
         * Returns the Saturation component (value of the saturation) //!	 of the color <self>.
 
         :rtype: Quantity_Parameter
 
         """
-        return _Quantity.Quantity_Color_Saturation(self, *args)
+        return _Quantity.Quantity_Color_Saturation(self)
 
-    def Values(self, *args) -> "void" :
+    def Values(self, *args):
         """
         * Returns in R1, R2 and R3 the components of this color according to the color system definition AType. - if AType is Quantity_TOC_RGB R1 is the quantity of red, R2 is the quantity of green and R3 is the quantity of blue in this color. - if AType is Quantity_TOC_HLS R1 is the hue angle in degrees (0 being red), R2 is the lightness and R3 is the saturation of this color.
 
@@ -1369,7 +1369,7 @@ class Quantity_Color(object):
         """
         return _Quantity.Quantity_Color_Values(self, *args)
 
-    def SetEpsilon(*args) -> "void" :
+    def SetEpsilon(*args):
         """
         * Sets the specified value used to compare <self> and //!	 an other color in IsDifferent and in IsEqual methods. Warning: The default value is 0.0001
 
@@ -1381,17 +1381,17 @@ class Quantity_Color(object):
         return _Quantity.Quantity_Color_SetEpsilon(*args)
 
     SetEpsilon = staticmethod(SetEpsilon)
-    def Epsilon(*args) -> "Quantity_Parameter" :
+    def Epsilon():
         """
         * Returns the specified value used to compare <self> and //!	 an other color in IsDifferent and in IsEqual methods.
 
         :rtype: Quantity_Parameter
 
         """
-        return _Quantity.Quantity_Color_Epsilon(*args)
+        return _Quantity.Quantity_Color_Epsilon()
 
     Epsilon = staticmethod(Epsilon)
-    def Name(*args) -> "Quantity_NameOfColor" :
+    def Name(*args):
         """
         * Returns the name of the color defined by its quantities of red R, green G and blue B; more precisely this is the nearest color from the Quantity_NameOfColor enumeration. Exceptions Standard_OutOfRange if R, G or B is less than 0. or greater than 1.
 
@@ -1411,7 +1411,7 @@ class Quantity_Color(object):
         return _Quantity.Quantity_Color_Name(*args)
 
     Name = staticmethod(Name)
-    def StringName(*args) -> "char *" :
+    def StringName(*args):
         """
         * Returns the name of the color identified by AName in the Quantity_NameOfColor enumeration. For example, the name of the color which corresponds to Quantity_NOC_BLACK is 'BLACK'. Exceptions Standard_OutOfRange if AName in not known in the Quantity_NameOfColor enumeration.
 
@@ -1423,7 +1423,7 @@ class Quantity_Color(object):
         return _Quantity.Quantity_Color_StringName(*args)
 
     StringName = staticmethod(StringName)
-    def HlsRgb(*args) -> "Standard_Real &, Standard_Real &, Standard_Real &" :
+    def HlsRgb(*args):
         """
         * Converts HLS components into RGB ones.
 
@@ -1445,7 +1445,7 @@ class Quantity_Color(object):
         return _Quantity.Quantity_Color_HlsRgb(*args)
 
     HlsRgb = staticmethod(HlsRgb)
-    def RgbHls(*args) -> "Standard_Real &, Standard_Real &, Standard_Real &" :
+    def RgbHls(*args):
         """
         * Converts RGB components into HLS ones.
 
@@ -1467,26 +1467,26 @@ class Quantity_Color(object):
         return _Quantity.Quantity_Color_RgbHls(*args)
 
     RgbHls = staticmethod(RgbHls)
-    def Color2argb(*args) -> "Standard_Integer &" :
+    def Color2argb(*args):
         """
         * Convert the Color value to ARGB integer value. theARGB has Alpha equal to zero, so the output is formatted as 0x00RRGGBB
 
         :param theColor:
         :type theColor: Quantity_Color &
         :param theARGB:
-        :type theARGB: int &
+        :type theARGB: Standard_Integer &
         :rtype: void
 
         """
         return _Quantity.Quantity_Color_Color2argb(*args)
 
     Color2argb = staticmethod(Color2argb)
-    def Argb2color(*args) -> "void" :
+    def Argb2color(*args):
         """
         * Convert integer ARGB value to Color. Alpha bits are ignored
 
         :param theARGB:
-        :type theARGB: int
+        :type theARGB: Standard_Integer
         :param theColor:
         :type theColor: Quantity_Color &
         :rtype: void
@@ -1495,24 +1495,24 @@ class Quantity_Color(object):
         return _Quantity.Quantity_Color_Argb2color(*args)
 
     Argb2color = staticmethod(Argb2color)
-    def Test(*args) -> "void" :
+    def Test():
         """
         * Internal test
 
         :rtype: void
 
         """
-        return _Quantity.Quantity_Color_Test(*args)
+        return _Quantity.Quantity_Color_Test()
 
     Test = staticmethod(Test)
-    def _CSFDB_GetQuantity_ColorMyRed(self, *args) -> "Standard_ShortReal" :
+    def _CSFDB_GetQuantity_ColorMyRed(self):
         """
         :rtype: Standard_ShortReal
 
         """
-        return _Quantity.Quantity_Color__CSFDB_GetQuantity_ColorMyRed(self, *args)
+        return _Quantity.Quantity_Color__CSFDB_GetQuantity_ColorMyRed(self)
 
-    def _CSFDB_SetQuantity_ColorMyRed(self, *args) -> "void" :
+    def _CSFDB_SetQuantity_ColorMyRed(self, *args):
         """
         :param p:
         :type p: Standard_ShortReal
@@ -1521,14 +1521,14 @@ class Quantity_Color(object):
         """
         return _Quantity.Quantity_Color__CSFDB_SetQuantity_ColorMyRed(self, *args)
 
-    def _CSFDB_GetQuantity_ColorMyGreen(self, *args) -> "Standard_ShortReal" :
+    def _CSFDB_GetQuantity_ColorMyGreen(self):
         """
         :rtype: Standard_ShortReal
 
         """
-        return _Quantity.Quantity_Color__CSFDB_GetQuantity_ColorMyGreen(self, *args)
+        return _Quantity.Quantity_Color__CSFDB_GetQuantity_ColorMyGreen(self)
 
-    def _CSFDB_SetQuantity_ColorMyGreen(self, *args) -> "void" :
+    def _CSFDB_SetQuantity_ColorMyGreen(self, *args):
         """
         :param p:
         :type p: Standard_ShortReal
@@ -1537,14 +1537,14 @@ class Quantity_Color(object):
         """
         return _Quantity.Quantity_Color__CSFDB_SetQuantity_ColorMyGreen(self, *args)
 
-    def _CSFDB_GetQuantity_ColorMyBlue(self, *args) -> "Standard_ShortReal" :
+    def _CSFDB_GetQuantity_ColorMyBlue(self):
         """
         :rtype: Standard_ShortReal
 
         """
-        return _Quantity.Quantity_Color__CSFDB_GetQuantity_ColorMyBlue(self, *args)
+        return _Quantity.Quantity_Color__CSFDB_GetQuantity_ColorMyBlue(self)
 
-    def _CSFDB_SetQuantity_ColorMyBlue(self, *args) -> "void" :
+    def _CSFDB_SetQuantity_ColorMyBlue(self, *args):
         """
         :param p:
         :type p: Standard_ShortReal
@@ -1590,7 +1590,7 @@ Quantity_Color._kill_pointed = new_instancemethod(_Quantity.Quantity_Color__kill
 Quantity_Color_swigregister = _Quantity.Quantity_Color_swigregister
 Quantity_Color_swigregister(Quantity_Color)
 
-def Quantity_Color_SetEpsilon(*args) -> "void" :
+def Quantity_Color_SetEpsilon(*args):
   """
     * Sets the specified value used to compare <self> and //!	 an other color in IsDifferent and in IsEqual methods. Warning: The default value is 0.0001
 
@@ -1601,16 +1601,16 @@ def Quantity_Color_SetEpsilon(*args) -> "void" :
     """
   return _Quantity.Quantity_Color_SetEpsilon(*args)
 
-def Quantity_Color_Epsilon(*args) -> "Quantity_Parameter" :
+def Quantity_Color_Epsilon():
   """
     * Returns the specified value used to compare <self> and //!	 an other color in IsDifferent and in IsEqual methods.
 
     :rtype: Quantity_Parameter
 
     """
-  return _Quantity.Quantity_Color_Epsilon(*args)
+  return _Quantity.Quantity_Color_Epsilon()
 
-def Quantity_Color_Name(*args) -> "Quantity_NameOfColor" :
+def Quantity_Color_Name(*args):
   """
     * Returns the name of the color defined by its quantities of red R, green G and blue B; more precisely this is the nearest color from the Quantity_NameOfColor enumeration. Exceptions Standard_OutOfRange if R, G or B is less than 0. or greater than 1.
 
@@ -1629,7 +1629,7 @@ def Quantity_Color_Name(*args) -> "Quantity_NameOfColor" :
     """
   return _Quantity.Quantity_Color_Name(*args)
 
-def Quantity_Color_StringName(*args) -> "char *" :
+def Quantity_Color_StringName(*args):
   """
     * Returns the name of the color identified by AName in the Quantity_NameOfColor enumeration. For example, the name of the color which corresponds to Quantity_NOC_BLACK is 'BLACK'. Exceptions Standard_OutOfRange if AName in not known in the Quantity_NameOfColor enumeration.
 
@@ -1640,7 +1640,7 @@ def Quantity_Color_StringName(*args) -> "char *" :
     """
   return _Quantity.Quantity_Color_StringName(*args)
 
-def Quantity_Color_HlsRgb(*args) -> "Standard_Real &, Standard_Real &, Standard_Real &" :
+def Quantity_Color_HlsRgb(*args):
   """
     * Converts HLS components into RGB ones.
 
@@ -1661,7 +1661,7 @@ def Quantity_Color_HlsRgb(*args) -> "Standard_Real &, Standard_Real &, Standard_
     """
   return _Quantity.Quantity_Color_HlsRgb(*args)
 
-def Quantity_Color_RgbHls(*args) -> "Standard_Real &, Standard_Real &, Standard_Real &" :
+def Quantity_Color_RgbHls(*args):
   """
     * Converts RGB components into HLS ones.
 
@@ -1682,25 +1682,25 @@ def Quantity_Color_RgbHls(*args) -> "Standard_Real &, Standard_Real &, Standard_
     """
   return _Quantity.Quantity_Color_RgbHls(*args)
 
-def Quantity_Color_Color2argb(*args) -> "Standard_Integer &" :
+def Quantity_Color_Color2argb(*args):
   """
     * Convert the Color value to ARGB integer value. theARGB has Alpha equal to zero, so the output is formatted as 0x00RRGGBB
 
     :param theColor:
     :type theColor: Quantity_Color &
     :param theARGB:
-    :type theARGB: int &
+    :type theARGB: Standard_Integer &
     :rtype: void
 
     """
   return _Quantity.Quantity_Color_Color2argb(*args)
 
-def Quantity_Color_Argb2color(*args) -> "void" :
+def Quantity_Color_Argb2color(*args):
   """
     * Convert integer ARGB value to Color. Alpha bits are ignored
 
     :param theARGB:
-    :type theARGB: int
+    :type theARGB: Standard_Integer
     :param theColor:
     :type theColor: Quantity_Color &
     :rtype: void
@@ -1708,27 +1708,27 @@ def Quantity_Color_Argb2color(*args) -> "void" :
     """
   return _Quantity.Quantity_Color_Argb2color(*args)
 
-def Quantity_Color_Test(*args) -> "void" :
+def Quantity_Color_Test():
   """
     * Internal test
 
     :rtype: void
 
     """
-  return _Quantity.Quantity_Color_Test(*args)
+  return _Quantity.Quantity_Color_Test()
 
 class Quantity_Convert(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         * Creates an object;
 
         :rtype: None
 
         """
-        _Quantity.Quantity_Convert_swiginit(self,_Quantity.new_Quantity_Convert(*args))
-    def SetQuantity(*args) -> "void" :
+        _Quantity.Quantity_Convert_swiginit(self,_Quantity.new_Quantity_Convert())
+    def SetQuantity(*args):
         """
         * Updates the conversion table (correspondances between Quantities and conversion coefficients).
 
@@ -1742,7 +1742,7 @@ class Quantity_Convert(object):
         return _Quantity.Quantity_Convert_SetQuantity(*args)
 
     SetQuantity = staticmethod(SetQuantity)
-    def ConvertUserToSI(*args) -> "Standard_Real" :
+    def ConvertUserToSI(*args):
         """
         * Converts, from the conversion table, the value <aVal> from the user system to the SI system.
 
@@ -1756,7 +1756,7 @@ class Quantity_Convert(object):
         return _Quantity.Quantity_Convert_ConvertUserToSI(*args)
 
     ConvertUserToSI = staticmethod(ConvertUserToSI)
-    def ConvertSIToUser(*args) -> "Standard_Real" :
+    def ConvertSIToUser(*args):
         """
         * Converts, from the conversion table, the value <aVal> from the SI system to the user system.
 
@@ -1770,7 +1770,7 @@ class Quantity_Convert(object):
         return _Quantity.Quantity_Convert_ConvertSIToUser(*args)
 
     ConvertSIToUser = staticmethod(ConvertSIToUser)
-    def IsPhysicalQuantity(*args) -> "Standard_Boolean" :
+    def IsPhysicalQuantity(*args):
         """
         * if (aType is a physical quantity) returns True and the name of the associated PhysicalQuantity . else returns False.
 
@@ -1796,7 +1796,7 @@ Quantity_Convert._kill_pointed = new_instancemethod(_Quantity.Quantity_Convert__
 Quantity_Convert_swigregister = _Quantity.Quantity_Convert_swigregister
 Quantity_Convert_swigregister(Quantity_Convert)
 
-def Quantity_Convert_SetQuantity(*args) -> "void" :
+def Quantity_Convert_SetQuantity(*args):
   """
     * Updates the conversion table (correspondances between Quantities and conversion coefficients).
 
@@ -1809,7 +1809,7 @@ def Quantity_Convert_SetQuantity(*args) -> "void" :
     """
   return _Quantity.Quantity_Convert_SetQuantity(*args)
 
-def Quantity_Convert_ConvertUserToSI(*args) -> "Standard_Real" :
+def Quantity_Convert_ConvertUserToSI(*args):
   """
     * Converts, from the conversion table, the value <aVal> from the user system to the SI system.
 
@@ -1822,7 +1822,7 @@ def Quantity_Convert_ConvertUserToSI(*args) -> "Standard_Real" :
     """
   return _Quantity.Quantity_Convert_ConvertUserToSI(*args)
 
-def Quantity_Convert_ConvertSIToUser(*args) -> "Standard_Real" :
+def Quantity_Convert_ConvertSIToUser(*args):
   """
     * Converts, from the conversion table, the value <aVal> from the SI system to the user system.
 
@@ -1835,7 +1835,7 @@ def Quantity_Convert_ConvertSIToUser(*args) -> "Standard_Real" :
     """
   return _Quantity.Quantity_Convert_ConvertSIToUser(*args)
 
-def Quantity_Convert_IsPhysicalQuantity(*args) -> "Standard_Boolean" :
+def Quantity_Convert_IsPhysicalQuantity(*args):
   """
     * if (aType is a physical quantity) returns True and the name of the associated PhysicalQuantity . else returns False.
 
@@ -1860,76 +1860,156 @@ class Quantity_Date(object):
         * Constructs a date from the year yyyy, the month mm, the day dd, the hour hh, the minute mn, the second ss, the millisecond mis (defaulted to 0) and the microsecond mics (defaulted to 0).. With: 1 <= mm <= 12  1 <= dd <= max number of days of <mm>  1979 <= yyyy  0 <= hh <= 23  0 <= mn <= 59  0 <= ss <= 59  0 <= mis <= 999  0 <= mics <= 999 Exceptions Quantity_DateDefinitionError if mm, dd, hh, mn, ss, mis and mics are not the components of the valid date.
 
         :param mm:
-        :type mm: int
+        :type mm: Standard_Integer
         :param dd:
-        :type dd: int
+        :type dd: Standard_Integer
         :param yyyy:
-        :type yyyy: int
+        :type yyyy: Standard_Integer
         :param hh:
-        :type hh: int
+        :type hh: Standard_Integer
         :param mn:
-        :type mn: int
+        :type mn: Standard_Integer
         :param ss:
-        :type ss: int
+        :type ss: Standard_Integer
         :param mis: default value is 0
-        :type mis: int
+        :type mis: Standard_Integer
         :param mics: default value is 0
-        :type mics: int
+        :type mics: Standard_Integer
+        :rtype: None
+
+        * Constructs a date from the year yyyy, the month mm, the day dd, the hour hh, the minute mn, the second ss, the millisecond mis (defaulted to 0) and the microsecond mics (defaulted to 0).. With: 1 <= mm <= 12  1 <= dd <= max number of days of <mm>  1979 <= yyyy  0 <= hh <= 23  0 <= mn <= 59  0 <= ss <= 59  0 <= mis <= 999  0 <= mics <= 999 Exceptions Quantity_DateDefinitionError if mm, dd, hh, mn, ss, mis and mics are not the components of the valid date.
+
+        :param mm:
+        :type mm: Standard_Integer
+        :param dd:
+        :type dd: Standard_Integer
+        :param yyyy:
+        :type yyyy: Standard_Integer
+        :param hh:
+        :type hh: Standard_Integer
+        :param mn:
+        :type mn: Standard_Integer
+        :param ss:
+        :type ss: Standard_Integer
+        :param mis: default value is 0
+        :type mis: Standard_Integer
+        :param mics: default value is 0
+        :type mics: Standard_Integer
+        :rtype: None
+
+        * Constructs a date from the year yyyy, the month mm, the day dd, the hour hh, the minute mn, the second ss, the millisecond mis (defaulted to 0) and the microsecond mics (defaulted to 0).. With: 1 <= mm <= 12  1 <= dd <= max number of days of <mm>  1979 <= yyyy  0 <= hh <= 23  0 <= mn <= 59  0 <= ss <= 59  0 <= mis <= 999  0 <= mics <= 999 Exceptions Quantity_DateDefinitionError if mm, dd, hh, mn, ss, mis and mics are not the components of the valid date.
+
+        :param mm:
+        :type mm: Standard_Integer
+        :param dd:
+        :type dd: Standard_Integer
+        :param yyyy:
+        :type yyyy: Standard_Integer
+        :param hh:
+        :type hh: Standard_Integer
+        :param mn:
+        :type mn: Standard_Integer
+        :param ss:
+        :type ss: Standard_Integer
+        :param mis: default value is 0
+        :type mis: Standard_Integer
+        :param mics: default value is 0
+        :type mics: Standard_Integer
         :rtype: None
 
         """
         _Quantity.Quantity_Date_swiginit(self,_Quantity.new_Quantity_Date(*args))
-    def Values(self, *args) -> "void" :
+    def Values(self):
         """
         * Gets a complete Date. - in mm - the month, - in dd - the day, - in yyyy - the year, - in hh - the hour, - in mn - the minute, - in ss - the second, - in mis - the millisecond, and - in mics - the microsecond
 
         :param mm:
-        :type mm: int &
+        :type mm: Standard_Integer &
         :param dd:
-        :type dd: int &
+        :type dd: Standard_Integer &
         :param yy:
-        :type yy: int &
+        :type yy: Standard_Integer &
         :param hh:
-        :type hh: int &
+        :type hh: Standard_Integer &
         :param mn:
-        :type mn: int &
+        :type mn: Standard_Integer &
         :param ss:
-        :type ss: int &
+        :type ss: Standard_Integer &
         :param mis:
-        :type mis: int &
+        :type mis: Standard_Integer &
         :param mics:
-        :type mics: int &
+        :type mics: Standard_Integer &
         :rtype: None
 
         """
-        return _Quantity.Quantity_Date_Values(self, *args)
+        return _Quantity.Quantity_Date_Values(self)
 
-    def SetValues(self, *args) -> "void" :
+    def SetValues(self, *args):
         """
         * Assigns to this date the year yyyy, the month mm, the day dd, the hour hh, the minute mn, the second ss, the millisecond mis (defaulted to 0) and the microsecond mics (defaulted to 0). Exceptions Quantity_DateDefinitionError if mm, dd, hh, mn, ss, mis and mics are not components of a valid date.
 
         :param mm:
-        :type mm: int
+        :type mm: Standard_Integer
         :param dd:
-        :type dd: int
+        :type dd: Standard_Integer
         :param yy:
-        :type yy: int
+        :type yy: Standard_Integer
         :param hh:
-        :type hh: int
+        :type hh: Standard_Integer
         :param mn:
-        :type mn: int
+        :type mn: Standard_Integer
         :param ss:
-        :type ss: int
+        :type ss: Standard_Integer
         :param mis: default value is 0
-        :type mis: int
+        :type mis: Standard_Integer
         :param mics: default value is 0
-        :type mics: int
+        :type mics: Standard_Integer
+        :rtype: None
+
+        * Assigns to this date the year yyyy, the month mm, the day dd, the hour hh, the minute mn, the second ss, the millisecond mis (defaulted to 0) and the microsecond mics (defaulted to 0). Exceptions Quantity_DateDefinitionError if mm, dd, hh, mn, ss, mis and mics are not components of a valid date.
+
+        :param mm:
+        :type mm: Standard_Integer
+        :param dd:
+        :type dd: Standard_Integer
+        :param yy:
+        :type yy: Standard_Integer
+        :param hh:
+        :type hh: Standard_Integer
+        :param mn:
+        :type mn: Standard_Integer
+        :param ss:
+        :type ss: Standard_Integer
+        :param mis: default value is 0
+        :type mis: Standard_Integer
+        :param mics: default value is 0
+        :type mics: Standard_Integer
+        :rtype: None
+
+        * Assigns to this date the year yyyy, the month mm, the day dd, the hour hh, the minute mn, the second ss, the millisecond mis (defaulted to 0) and the microsecond mics (defaulted to 0). Exceptions Quantity_DateDefinitionError if mm, dd, hh, mn, ss, mis and mics are not components of a valid date.
+
+        :param mm:
+        :type mm: Standard_Integer
+        :param dd:
+        :type dd: Standard_Integer
+        :param yy:
+        :type yy: Standard_Integer
+        :param hh:
+        :type hh: Standard_Integer
+        :param mn:
+        :type mn: Standard_Integer
+        :param ss:
+        :type ss: Standard_Integer
+        :param mis: default value is 0
+        :type mis: Standard_Integer
+        :param mics: default value is 0
+        :type mics: Standard_Integer
         :rtype: None
 
         """
         return _Quantity.Quantity_Date_SetValues(self, *args)
 
-    def Difference(self, *args) -> "Quantity_Period" :
+    def Difference(self, *args):
         """
         * Subtracts one Date from another one to find the period between and returns the value. The result is the absolute value between the difference of two dates.
 
@@ -1940,7 +2020,7 @@ class Quantity_Date(object):
         """
         return _Quantity.Quantity_Date_Difference(self, *args)
 
-    def Subtract(self, *args) -> "Quantity_Date" :
+    def Subtract(self, *args):
         """
         * Subtracts a period from a Date and returns the new Date. Raises an exception if the result date is anterior to Jan 1, 1979.
 
@@ -1951,7 +2031,7 @@ class Quantity_Date(object):
         """
         return _Quantity.Quantity_Date_Subtract(self, *args)
 
-    def __sub__(self, *args) -> "Quantity_Date" :
+    def __sub__(self, *args):
         """
         :param aPeriod:
         :type aPeriod: Quantity_Period &
@@ -1960,7 +2040,7 @@ class Quantity_Date(object):
         """
         return _Quantity.Quantity_Date___sub__(self, *args)
 
-    def Add(self, *args) -> "Quantity_Date" :
+    def Add(self, *args):
         """
         * Adds a Period to a Date and returns the new Date.
 
@@ -1971,7 +2051,7 @@ class Quantity_Date(object):
         """
         return _Quantity.Quantity_Date_Add(self, *args)
 
-    def __add__(self, *args) -> "Quantity_Date" :
+    def __add__(self, *args):
         """
         :param aPeriod:
         :type aPeriod: Quantity_Period &
@@ -1980,79 +2060,79 @@ class Quantity_Date(object):
         """
         return _Quantity.Quantity_Date___add__(self, *args)
 
-    def Year(self, *args) -> "Standard_Integer" :
+    def Year(self):
         """
         * Returns year of a Date.
 
         :rtype: int
 
         """
-        return _Quantity.Quantity_Date_Year(self, *args)
+        return _Quantity.Quantity_Date_Year(self)
 
-    def Month(self, *args) -> "Standard_Integer" :
+    def Month(self):
         """
         * Returns month of a Date.
 
         :rtype: int
 
         """
-        return _Quantity.Quantity_Date_Month(self, *args)
+        return _Quantity.Quantity_Date_Month(self)
 
-    def Day(self, *args) -> "Standard_Integer" :
+    def Day(self):
         """
         * Returns Day of a Date.
 
         :rtype: int
 
         """
-        return _Quantity.Quantity_Date_Day(self, *args)
+        return _Quantity.Quantity_Date_Day(self)
 
-    def Hour(self, *args) -> "Standard_Integer" :
+    def Hour(self):
         """
         * Returns Hour of a Date.
 
         :rtype: int
 
         """
-        return _Quantity.Quantity_Date_Hour(self, *args)
+        return _Quantity.Quantity_Date_Hour(self)
 
-    def Minute(self, *args) -> "Standard_Integer" :
+    def Minute(self):
         """
         * Returns minute of a Date.
 
         :rtype: int
 
         """
-        return _Quantity.Quantity_Date_Minute(self, *args)
+        return _Quantity.Quantity_Date_Minute(self)
 
-    def Second(self, *args) -> "Standard_Integer" :
+    def Second(self):
         """
         * Returns seconde of a Date.
 
         :rtype: int
 
         """
-        return _Quantity.Quantity_Date_Second(self, *args)
+        return _Quantity.Quantity_Date_Second(self)
 
-    def MilliSecond(self, *args) -> "Standard_Integer" :
+    def MilliSecond(self):
         """
         * Returns millisecond of a Date.
 
         :rtype: int
 
         """
-        return _Quantity.Quantity_Date_MilliSecond(self, *args)
+        return _Quantity.Quantity_Date_MilliSecond(self)
 
-    def MicroSecond(self, *args) -> "Standard_Integer" :
+    def MicroSecond(self):
         """
         * Returns microsecond of a Date.
 
         :rtype: int
 
         """
-        return _Quantity.Quantity_Date_MicroSecond(self, *args)
+        return _Quantity.Quantity_Date_MicroSecond(self)
 
-    def IsEqual(self, *args) -> "Standard_Boolean" :
+    def IsEqual(self, *args):
         """
         * Returns True if both <self> and <other> are equal. This method is an alias of operator ==.
 
@@ -2069,7 +2149,7 @@ class Quantity_Date(object):
         except:
             return False
 
-    def IsEarlier(self, *args) -> "Standard_Boolean" :
+    def IsEarlier(self, *args):
         """
         * Returns True if <self> is earlier than <other>.
 
@@ -2080,7 +2160,7 @@ class Quantity_Date(object):
         """
         return _Quantity.Quantity_Date_IsEarlier(self, *args)
 
-    def __lt__(self, *args) -> "Standard_Boolean" :
+    def __lt__(self, *args):
         """
         :param anOther:
         :type anOther: Quantity_Date &
@@ -2089,7 +2169,7 @@ class Quantity_Date(object):
         """
         return _Quantity.Quantity_Date___lt__(self, *args)
 
-    def IsLater(self, *args) -> "Standard_Boolean" :
+    def IsLater(self, *args):
         """
         * Returns True if <self> is later then <other>.
 
@@ -2100,7 +2180,7 @@ class Quantity_Date(object):
         """
         return _Quantity.Quantity_Date_IsLater(self, *args)
 
-    def __gt__(self, *args) -> "Standard_Boolean" :
+    def __gt__(self, *args):
         """
         :param anOther:
         :type anOther: Quantity_Date &
@@ -2109,71 +2189,111 @@ class Quantity_Date(object):
         """
         return _Quantity.Quantity_Date___gt__(self, *args)
 
-    def IsValid(*args) -> "Standard_Boolean" :
+    def IsValid(*args):
         """
         * Checks the validity of a date - returns true if a date defined from the year yyyy, the month mm, the day dd, the hour hh, the minute mn, the second ss, the millisecond mis (defaulted to 0) and the microsecond mics (defaulted to 0) is valid. A date must satisfy the conditions above: - yyyy is greater than or equal to 1979, - mm lies within the range [1, 12] (with 1 corresponding to January and 12 to December), - dd lies within a valid range for the month mm (from 1 to 28, 29, 30 or 31 depending on mm and whether yyyy is a leap year or not), - hh lies within the range [0, 23], - mn lies within the range [0, 59], - ss lies within the range [0, 59], - mis lies within the range [0, 999], - mics lies within the range [0, 999].C
 
         :param mm:
-        :type mm: int
+        :type mm: Standard_Integer
         :param dd:
-        :type dd: int
+        :type dd: Standard_Integer
         :param yy:
-        :type yy: int
+        :type yy: Standard_Integer
         :param hh:
-        :type hh: int
+        :type hh: Standard_Integer
         :param mn:
-        :type mn: int
+        :type mn: Standard_Integer
         :param ss:
-        :type ss: int
+        :type ss: Standard_Integer
         :param mis: default value is 0
-        :type mis: int
+        :type mis: Standard_Integer
         :param mics: default value is 0
-        :type mics: int
+        :type mics: Standard_Integer
+        :rtype: bool
+
+        * Checks the validity of a date - returns true if a date defined from the year yyyy, the month mm, the day dd, the hour hh, the minute mn, the second ss, the millisecond mis (defaulted to 0) and the microsecond mics (defaulted to 0) is valid. A date must satisfy the conditions above: - yyyy is greater than or equal to 1979, - mm lies within the range [1, 12] (with 1 corresponding to January and 12 to December), - dd lies within a valid range for the month mm (from 1 to 28, 29, 30 or 31 depending on mm and whether yyyy is a leap year or not), - hh lies within the range [0, 23], - mn lies within the range [0, 59], - ss lies within the range [0, 59], - mis lies within the range [0, 999], - mics lies within the range [0, 999].C
+
+        :param mm:
+        :type mm: Standard_Integer
+        :param dd:
+        :type dd: Standard_Integer
+        :param yy:
+        :type yy: Standard_Integer
+        :param hh:
+        :type hh: Standard_Integer
+        :param mn:
+        :type mn: Standard_Integer
+        :param ss:
+        :type ss: Standard_Integer
+        :param mis: default value is 0
+        :type mis: Standard_Integer
+        :param mics: default value is 0
+        :type mics: Standard_Integer
+        :rtype: bool
+
+        * Checks the validity of a date - returns true if a date defined from the year yyyy, the month mm, the day dd, the hour hh, the minute mn, the second ss, the millisecond mis (defaulted to 0) and the microsecond mics (defaulted to 0) is valid. A date must satisfy the conditions above: - yyyy is greater than or equal to 1979, - mm lies within the range [1, 12] (with 1 corresponding to January and 12 to December), - dd lies within a valid range for the month mm (from 1 to 28, 29, 30 or 31 depending on mm and whether yyyy is a leap year or not), - hh lies within the range [0, 23], - mn lies within the range [0, 59], - ss lies within the range [0, 59], - mis lies within the range [0, 999], - mics lies within the range [0, 999].C
+
+        :param mm:
+        :type mm: Standard_Integer
+        :param dd:
+        :type dd: Standard_Integer
+        :param yy:
+        :type yy: Standard_Integer
+        :param hh:
+        :type hh: Standard_Integer
+        :param mn:
+        :type mn: Standard_Integer
+        :param ss:
+        :type ss: Standard_Integer
+        :param mis: default value is 0
+        :type mis: Standard_Integer
+        :param mics: default value is 0
+        :type mics: Standard_Integer
         :rtype: bool
 
         """
         return _Quantity.Quantity_Date_IsValid(*args)
 
     IsValid = staticmethod(IsValid)
-    def IsLeap(*args) -> "Standard_Boolean" :
+    def IsLeap(*args):
         """
         * Returns true if a year is a leap year. The leap years are divisable by 4 and not by 100 except the years divisable by 400.
 
         :param yy:
-        :type yy: int
+        :type yy: Standard_Integer
         :rtype: bool
 
         """
         return _Quantity.Quantity_Date_IsLeap(*args)
 
     IsLeap = staticmethod(IsLeap)
-    def _CSFDB_GetQuantity_DatemySec(self, *args) -> "Standard_Integer" :
+    def _CSFDB_GetQuantity_DatemySec(self):
         """
         :rtype: int
 
         """
-        return _Quantity.Quantity_Date__CSFDB_GetQuantity_DatemySec(self, *args)
+        return _Quantity.Quantity_Date__CSFDB_GetQuantity_DatemySec(self)
 
-    def _CSFDB_SetQuantity_DatemySec(self, *args) -> "void" :
+    def _CSFDB_SetQuantity_DatemySec(self, *args):
         """
         :param p:
-        :type p: int
+        :type p: Standard_Integer
         :rtype: None
 
         """
         return _Quantity.Quantity_Date__CSFDB_SetQuantity_DatemySec(self, *args)
 
-    def _CSFDB_GetQuantity_DatemyUSec(self, *args) -> "Standard_Integer" :
+    def _CSFDB_GetQuantity_DatemyUSec(self):
         """
         :rtype: int
 
         """
-        return _Quantity.Quantity_Date__CSFDB_GetQuantity_DatemyUSec(self, *args)
+        return _Quantity.Quantity_Date__CSFDB_GetQuantity_DatemyUSec(self)
 
-    def _CSFDB_SetQuantity_DatemyUSec(self, *args) -> "void" :
+    def _CSFDB_SetQuantity_DatemyUSec(self, *args):
         """
         :param p:
-        :type p: int
+        :type p: Standard_Integer
         :rtype: None
 
         """
@@ -2216,37 +2336,77 @@ Quantity_Date._kill_pointed = new_instancemethod(_Quantity.Quantity_Date__kill_p
 Quantity_Date_swigregister = _Quantity.Quantity_Date_swigregister
 Quantity_Date_swigregister(Quantity_Date)
 
-def Quantity_Date_IsValid(*args) -> "Standard_Boolean" :
+def Quantity_Date_IsValid(*args):
   """
     * Checks the validity of a date - returns true if a date defined from the year yyyy, the month mm, the day dd, the hour hh, the minute mn, the second ss, the millisecond mis (defaulted to 0) and the microsecond mics (defaulted to 0) is valid. A date must satisfy the conditions above: - yyyy is greater than or equal to 1979, - mm lies within the range [1, 12] (with 1 corresponding to January and 12 to December), - dd lies within a valid range for the month mm (from 1 to 28, 29, 30 or 31 depending on mm and whether yyyy is a leap year or not), - hh lies within the range [0, 23], - mn lies within the range [0, 59], - ss lies within the range [0, 59], - mis lies within the range [0, 999], - mics lies within the range [0, 999].C
 
     :param mm:
-    :type mm: int
+    :type mm: Standard_Integer
     :param dd:
-    :type dd: int
+    :type dd: Standard_Integer
     :param yy:
-    :type yy: int
+    :type yy: Standard_Integer
     :param hh:
-    :type hh: int
+    :type hh: Standard_Integer
     :param mn:
-    :type mn: int
+    :type mn: Standard_Integer
     :param ss:
-    :type ss: int
+    :type ss: Standard_Integer
     :param mis: default value is 0
-    :type mis: int
+    :type mis: Standard_Integer
     :param mics: default value is 0
-    :type mics: int
+    :type mics: Standard_Integer
+    :rtype: bool
+
+    * Checks the validity of a date - returns true if a date defined from the year yyyy, the month mm, the day dd, the hour hh, the minute mn, the second ss, the millisecond mis (defaulted to 0) and the microsecond mics (defaulted to 0) is valid. A date must satisfy the conditions above: - yyyy is greater than or equal to 1979, - mm lies within the range [1, 12] (with 1 corresponding to January and 12 to December), - dd lies within a valid range for the month mm (from 1 to 28, 29, 30 or 31 depending on mm and whether yyyy is a leap year or not), - hh lies within the range [0, 23], - mn lies within the range [0, 59], - ss lies within the range [0, 59], - mis lies within the range [0, 999], - mics lies within the range [0, 999].C
+
+    :param mm:
+    :type mm: Standard_Integer
+    :param dd:
+    :type dd: Standard_Integer
+    :param yy:
+    :type yy: Standard_Integer
+    :param hh:
+    :type hh: Standard_Integer
+    :param mn:
+    :type mn: Standard_Integer
+    :param ss:
+    :type ss: Standard_Integer
+    :param mis: default value is 0
+    :type mis: Standard_Integer
+    :param mics: default value is 0
+    :type mics: Standard_Integer
+    :rtype: bool
+
+    * Checks the validity of a date - returns true if a date defined from the year yyyy, the month mm, the day dd, the hour hh, the minute mn, the second ss, the millisecond mis (defaulted to 0) and the microsecond mics (defaulted to 0) is valid. A date must satisfy the conditions above: - yyyy is greater than or equal to 1979, - mm lies within the range [1, 12] (with 1 corresponding to January and 12 to December), - dd lies within a valid range for the month mm (from 1 to 28, 29, 30 or 31 depending on mm and whether yyyy is a leap year or not), - hh lies within the range [0, 23], - mn lies within the range [0, 59], - ss lies within the range [0, 59], - mis lies within the range [0, 999], - mics lies within the range [0, 999].C
+
+    :param mm:
+    :type mm: Standard_Integer
+    :param dd:
+    :type dd: Standard_Integer
+    :param yy:
+    :type yy: Standard_Integer
+    :param hh:
+    :type hh: Standard_Integer
+    :param mn:
+    :type mn: Standard_Integer
+    :param ss:
+    :type ss: Standard_Integer
+    :param mis: default value is 0
+    :type mis: Standard_Integer
+    :param mics: default value is 0
+    :type mics: Standard_Integer
     :rtype: bool
 
     """
   return _Quantity.Quantity_Date_IsValid(*args)
 
-def Quantity_Date_IsLeap(*args) -> "Standard_Boolean" :
+def Quantity_Date_IsLeap(*args):
   """
     * Returns true if a year is a leap year. The leap years are divisable by 4 and not by 100 except the years divisable by 400.
 
     :param yy:
-    :type yy: int
+    :type yy: Standard_Integer
     :rtype: bool
 
     """
@@ -2258,22 +2418,22 @@ class Quantity_HArray1OfColor(OCC.MMgt.MMgt_TShared):
     def __init__(self, *args): 
         """
         :param Low:
-        :type Low: int
+        :type Low: Standard_Integer
         :param Up:
-        :type Up: int
+        :type Up: Standard_Integer
         :rtype: None
 
         :param Low:
-        :type Low: int
+        :type Low: Standard_Integer
         :param Up:
-        :type Up: int
+        :type Up: Standard_Integer
         :param V:
         :type V: Quantity_Color &
         :rtype: None
 
         """
         _Quantity.Quantity_HArray1OfColor_swiginit(self,_Quantity.new_Quantity_HArray1OfColor(*args))
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
         :param V:
         :type V: Quantity_Color &
@@ -2282,31 +2442,31 @@ class Quantity_HArray1OfColor(OCC.MMgt.MMgt_TShared):
         """
         return _Quantity.Quantity_HArray1OfColor_Init(self, *args)
 
-    def Length(self, *args) -> "Standard_Integer" :
+    def Length(self):
         """
         :rtype: int
 
         """
-        return _Quantity.Quantity_HArray1OfColor_Length(self, *args)
+        return _Quantity.Quantity_HArray1OfColor_Length(self)
 
-    def Lower(self, *args) -> "Standard_Integer" :
+    def Lower(self):
         """
         :rtype: int
 
         """
-        return _Quantity.Quantity_HArray1OfColor_Lower(self, *args)
+        return _Quantity.Quantity_HArray1OfColor_Lower(self)
 
-    def Upper(self, *args) -> "Standard_Integer" :
+    def Upper(self):
         """
         :rtype: int
 
         """
-        return _Quantity.Quantity_HArray1OfColor_Upper(self, *args)
+        return _Quantity.Quantity_HArray1OfColor_Upper(self)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Value:
         :type Value: Quantity_Color &
         :rtype: None
@@ -2314,43 +2474,43 @@ class Quantity_HArray1OfColor(OCC.MMgt.MMgt_TShared):
         """
         return _Quantity.Quantity_HArray1OfColor_SetValue(self, *args)
 
-    def Value(self, *args) -> "Quantity_Color const &" :
+    def Value(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Quantity_Color
 
         """
         return _Quantity.Quantity_HArray1OfColor_Value(self, *args)
 
-    def ChangeValue(self, *args) -> "Quantity_Color &" :
+    def ChangeValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Quantity_Color
 
         """
         return _Quantity.Quantity_HArray1OfColor_ChangeValue(self, *args)
 
-    def Array1(self, *args) -> "Quantity_Array1OfColor const &" :
+    def Array1(self):
         """
         :rtype: Quantity_Array1OfColor
 
         """
-        return _Quantity.Quantity_HArray1OfColor_Array1(self, *args)
+        return _Quantity.Quantity_HArray1OfColor_Array1(self)
 
-    def ChangeArray1(self, *args) -> "Quantity_Array1OfColor &" :
+    def ChangeArray1(self):
         """
         :rtype: Quantity_Array1OfColor
 
         """
-        return _Quantity.Quantity_HArray1OfColor_ChangeArray1(self, *args)
+        return _Quantity.Quantity_HArray1OfColor_ChangeArray1(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(Quantity_HArray1OfColor self)"""
         return _Quantity.Quantity_HArray1OfColor__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_Quantity_HArray1OfColor" :
+    def GetHandle(self):
         """GetHandle(Quantity_HArray1OfColor self) -> Handle_Quantity_HArray1OfColor"""
         return _Quantity.Quantity_HArray1OfColor_GetHandle(self)
 
@@ -2397,72 +2557,112 @@ Handle_Quantity_HArray1OfColor._kill_pointed = new_instancemethod(_Quantity.Hand
 Handle_Quantity_HArray1OfColor_swigregister = _Quantity.Handle_Quantity_HArray1OfColor_swigregister
 Handle_Quantity_HArray1OfColor_swigregister(Handle_Quantity_HArray1OfColor)
 
-def Handle_Quantity_HArray1OfColor_DownCast(*args) -> "Handle_Quantity_HArray1OfColor const" :
+def Handle_Quantity_HArray1OfColor_DownCast(*args):
   return _Quantity.Handle_Quantity_HArray1OfColor_DownCast(*args)
 Handle_Quantity_HArray1OfColor_DownCast = _Quantity.Handle_Quantity_HArray1OfColor_DownCast
 
 class Quantity_Period(object):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def Values(self, *args) -> "void" :
+    def Values(self, *args):
         """
         * Decomposes this period into a number of days,hours, minutes,seconds,milliseconds and microseconds Example of return values: 2 days, 15 hours, 0 minute , 0 second 0 millisecond and 0 microsecond
 
         :param dd:
-        :type dd: int &
+        :type dd: Standard_Integer &
         :param hh:
-        :type hh: int &
+        :type hh: Standard_Integer &
         :param mn:
-        :type mn: int &
+        :type mn: Standard_Integer &
         :param ss:
-        :type ss: int &
+        :type ss: Standard_Integer &
         :param mis:
-        :type mis: int &
+        :type mis: Standard_Integer &
         :param mics:
-        :type mics: int &
+        :type mics: Standard_Integer &
         :rtype: None
 
         * Returns the number of seconds in Ss and the number of remainding microseconds in Mics of this period. Example of return values: 3600 seconds and 0 microseconds
 
         :param ss:
-        :type ss: int &
+        :type ss: Standard_Integer &
         :param mics:
-        :type mics: int &
+        :type mics: Standard_Integer &
         :rtype: None
 
         """
         return _Quantity.Quantity_Period_Values(self, *args)
 
-    def SetValues(self, *args) -> "void" :
+    def SetValues(self, *args):
         """
         * Assigns to this period the time interval defined - with dd days, hh hours, mn minutes, ss seconds, mis (defaulted to 0) milliseconds and mics (defaulted to 0) microseconds; or
 
         :param dd:
-        :type dd: int
+        :type dd: Standard_Integer
         :param hh:
-        :type hh: int
+        :type hh: Standard_Integer
         :param mn:
-        :type mn: int
+        :type mn: Standard_Integer
         :param ss:
-        :type ss: int
+        :type ss: Standard_Integer
         :param mis: default value is 0
-        :type mis: int
+        :type mis: Standard_Integer
         :param mics: default value is 0
-        :type mics: int
+        :type mics: Standard_Integer
+        :rtype: None
+
+        * Assigns to this period the time interval defined - with dd days, hh hours, mn minutes, ss seconds, mis (defaulted to 0) milliseconds and mics (defaulted to 0) microseconds; or
+
+        :param dd:
+        :type dd: Standard_Integer
+        :param hh:
+        :type hh: Standard_Integer
+        :param mn:
+        :type mn: Standard_Integer
+        :param ss:
+        :type ss: Standard_Integer
+        :param mis: default value is 0
+        :type mis: Standard_Integer
+        :param mics: default value is 0
+        :type mics: Standard_Integer
+        :rtype: None
+
+        * Assigns to this period the time interval defined - with dd days, hh hours, mn minutes, ss seconds, mis (defaulted to 0) milliseconds and mics (defaulted to 0) microseconds; or
+
+        :param dd:
+        :type dd: Standard_Integer
+        :param hh:
+        :type hh: Standard_Integer
+        :param mn:
+        :type mn: Standard_Integer
+        :param ss:
+        :type ss: Standard_Integer
+        :param mis: default value is 0
+        :type mis: Standard_Integer
+        :param mics: default value is 0
+        :type mics: Standard_Integer
         :rtype: None
 
         * Assigns to this period the time interval defined - with Ss seconds and Mics (defaulted to 0) microseconds. Exceptions Quantity_PeriodDefinitionError: - if the number of seconds expressed either by: - dd days, hh hours, mn minutes and ss seconds, or - Ss is less than 0. - if the number of microseconds expressed either by: - mis milliseconds and mics microseconds, or - Mics is less than 0.
 
         :param ss:
-        :type ss: int
+        :type ss: Standard_Integer
         :param mics: default value is 0
-        :type mics: int
+        :type mics: Standard_Integer
+        :rtype: None
+
+        * Assigns to this period the time interval defined - with Ss seconds and Mics (defaulted to 0) microseconds. Exceptions Quantity_PeriodDefinitionError: - if the number of seconds expressed either by: - dd days, hh hours, mn minutes and ss seconds, or - Ss is less than 0. - if the number of microseconds expressed either by: - mis milliseconds and mics microseconds, or - Mics is less than 0.
+
+        :param ss:
+        :type ss: Standard_Integer
+        :param mics: default value is 0
+        :type mics: Standard_Integer
         :rtype: None
 
         """
         return _Quantity.Quantity_Period_SetValues(self, *args)
 
-    def Subtract(self, *args) -> "Quantity_Period" :
+    def Subtract(self, *args):
         """
         * Subtracts one Period from another and returns the difference.
 
@@ -2473,7 +2673,7 @@ class Quantity_Period(object):
         """
         return _Quantity.Quantity_Period_Subtract(self, *args)
 
-    def __sub__(self, *args) -> "Quantity_Period" :
+    def __sub__(self, *args):
         """
         :param anOther:
         :type anOther: Quantity_Period &
@@ -2482,7 +2682,7 @@ class Quantity_Period(object):
         """
         return _Quantity.Quantity_Period___sub__(self, *args)
 
-    def Add(self, *args) -> "Quantity_Period" :
+    def Add(self, *args):
         """
         * Adds one Period to another one.
 
@@ -2493,7 +2693,7 @@ class Quantity_Period(object):
         """
         return _Quantity.Quantity_Period_Add(self, *args)
 
-    def __add__(self, *args) -> "Quantity_Period" :
+    def __add__(self, *args):
         """
         :param anOther:
         :type anOther: Quantity_Period &
@@ -2502,7 +2702,7 @@ class Quantity_Period(object):
         """
         return _Quantity.Quantity_Period___add__(self, *args)
 
-    def IsEqual(self, *args) -> "Standard_Boolean" :
+    def IsEqual(self, *args):
         """
         * Returns True if both <self> and <other> are equal.
 
@@ -2519,7 +2719,7 @@ class Quantity_Period(object):
         except:
             return False
 
-    def IsShorter(self, *args) -> "Standard_Boolean" :
+    def IsShorter(self, *args):
         """
         * Returns True if <self> is shorter than <other>.
 
@@ -2530,7 +2730,7 @@ class Quantity_Period(object):
         """
         return _Quantity.Quantity_Period_IsShorter(self, *args)
 
-    def __lt__(self, *args) -> "Standard_Boolean" :
+    def __lt__(self, *args):
         """
         :param anOther:
         :type anOther: Quantity_Period &
@@ -2539,7 +2739,7 @@ class Quantity_Period(object):
         """
         return _Quantity.Quantity_Period___lt__(self, *args)
 
-    def IsLonger(self, *args) -> "Standard_Boolean" :
+    def IsLonger(self, *args):
         """
         * Returns True if <self> is longer then <other>.
 
@@ -2550,7 +2750,7 @@ class Quantity_Period(object):
         """
         return _Quantity.Quantity_Period_IsLonger(self, *args)
 
-    def __gt__(self, *args) -> "Standard_Boolean" :
+    def __gt__(self, *args):
         """
         :param anOther:
         :type anOther: Quantity_Period &
@@ -2559,30 +2759,70 @@ class Quantity_Period(object):
         """
         return _Quantity.Quantity_Period___gt__(self, *args)
 
-    def IsValid(*args) -> "Standard_Boolean" :
+    def IsValid(*args):
         """
         * Checks the validity of a Period in form (dd,hh,mn,ss,mil,mic) With: 0 <= dd  0 <= hh  0 <= mn  0 <= ss  0 <= mis  0 <= mics
 
         :param dd:
-        :type dd: int
+        :type dd: Standard_Integer
         :param hh:
-        :type hh: int
+        :type hh: Standard_Integer
         :param mn:
-        :type mn: int
+        :type mn: Standard_Integer
         :param ss:
-        :type ss: int
+        :type ss: Standard_Integer
         :param mis: default value is 0
-        :type mis: int
+        :type mis: Standard_Integer
         :param mics: default value is 0
-        :type mics: int
+        :type mics: Standard_Integer
+        :rtype: bool
+
+        * Checks the validity of a Period in form (dd,hh,mn,ss,mil,mic) With: 0 <= dd  0 <= hh  0 <= mn  0 <= ss  0 <= mis  0 <= mics
+
+        :param dd:
+        :type dd: Standard_Integer
+        :param hh:
+        :type hh: Standard_Integer
+        :param mn:
+        :type mn: Standard_Integer
+        :param ss:
+        :type ss: Standard_Integer
+        :param mis: default value is 0
+        :type mis: Standard_Integer
+        :param mics: default value is 0
+        :type mics: Standard_Integer
+        :rtype: bool
+
+        * Checks the validity of a Period in form (dd,hh,mn,ss,mil,mic) With: 0 <= dd  0 <= hh  0 <= mn  0 <= ss  0 <= mis  0 <= mics
+
+        :param dd:
+        :type dd: Standard_Integer
+        :param hh:
+        :type hh: Standard_Integer
+        :param mn:
+        :type mn: Standard_Integer
+        :param ss:
+        :type ss: Standard_Integer
+        :param mis: default value is 0
+        :type mis: Standard_Integer
+        :param mics: default value is 0
+        :type mics: Standard_Integer
         :rtype: bool
 
         * Checks the validity of a Period in form (ss,mic) With: 0 <= ss  0 <= mics
 
         :param ss:
-        :type ss: int
+        :type ss: Standard_Integer
         :param mics: default value is 0
-        :type mics: int
+        :type mics: Standard_Integer
+        :rtype: bool
+
+        * Checks the validity of a Period in form (ss,mic) With: 0 <= ss  0 <= mics
+
+        :param ss:
+        :type ss: Standard_Integer
+        :param mics: default value is 0
+        :type mics: Standard_Integer
         :rtype: bool
 
         """
@@ -2594,58 +2834,98 @@ class Quantity_Period(object):
         * Creates a Period With: 0 <= dd  0 <= hh  0 <= mn  0 <= ss  0 <= mis  0 <= mics
 
         :param dd:
-        :type dd: int
+        :type dd: Standard_Integer
         :param hh:
-        :type hh: int
+        :type hh: Standard_Integer
         :param mn:
-        :type mn: int
+        :type mn: Standard_Integer
         :param ss:
-        :type ss: int
+        :type ss: Standard_Integer
         :param mis: default value is 0
-        :type mis: int
+        :type mis: Standard_Integer
         :param mics: default value is 0
-        :type mics: int
+        :type mics: Standard_Integer
+        :rtype: None
+
+        * Creates a Period With: 0 <= dd  0 <= hh  0 <= mn  0 <= ss  0 <= mis  0 <= mics
+
+        :param dd:
+        :type dd: Standard_Integer
+        :param hh:
+        :type hh: Standard_Integer
+        :param mn:
+        :type mn: Standard_Integer
+        :param ss:
+        :type ss: Standard_Integer
+        :param mis: default value is 0
+        :type mis: Standard_Integer
+        :param mics: default value is 0
+        :type mics: Standard_Integer
+        :rtype: None
+
+        * Creates a Period With: 0 <= dd  0 <= hh  0 <= mn  0 <= ss  0 <= mis  0 <= mics
+
+        :param dd:
+        :type dd: Standard_Integer
+        :param hh:
+        :type hh: Standard_Integer
+        :param mn:
+        :type mn: Standard_Integer
+        :param ss:
+        :type ss: Standard_Integer
+        :param mis: default value is 0
+        :type mis: Standard_Integer
+        :param mics: default value is 0
+        :type mics: Standard_Integer
         :rtype: None
 
         * Creates a Period with a number of seconds and microseconds. Exceptions Quantity_PeriodDefinitionError: - if the number of seconds expressed either by: - dd days, hh hours, mn minutes and ss seconds, or - Ss is less than 0. - if the number of microseconds expressed either by: - mis milliseconds and mics microseconds, or - Mics is less than 0.
 
         :param ss:
-        :type ss: int
+        :type ss: Standard_Integer
         :param mics: default value is 0
-        :type mics: int
+        :type mics: Standard_Integer
+        :rtype: None
+
+        * Creates a Period with a number of seconds and microseconds. Exceptions Quantity_PeriodDefinitionError: - if the number of seconds expressed either by: - dd days, hh hours, mn minutes and ss seconds, or - Ss is less than 0. - if the number of microseconds expressed either by: - mis milliseconds and mics microseconds, or - Mics is less than 0.
+
+        :param ss:
+        :type ss: Standard_Integer
+        :param mics: default value is 0
+        :type mics: Standard_Integer
         :rtype: None
 
         :rtype: None
 
         """
         _Quantity.Quantity_Period_swiginit(self,_Quantity.new_Quantity_Period(*args))
-    def _CSFDB_GetQuantity_PeriodmySec(self, *args) -> "Standard_Integer" :
+    def _CSFDB_GetQuantity_PeriodmySec(self):
         """
         :rtype: int
 
         """
-        return _Quantity.Quantity_Period__CSFDB_GetQuantity_PeriodmySec(self, *args)
+        return _Quantity.Quantity_Period__CSFDB_GetQuantity_PeriodmySec(self)
 
-    def _CSFDB_SetQuantity_PeriodmySec(self, *args) -> "void" :
+    def _CSFDB_SetQuantity_PeriodmySec(self, *args):
         """
         :param p:
-        :type p: int
+        :type p: Standard_Integer
         :rtype: None
 
         """
         return _Quantity.Quantity_Period__CSFDB_SetQuantity_PeriodmySec(self, *args)
 
-    def _CSFDB_GetQuantity_PeriodmyUSec(self, *args) -> "Standard_Integer" :
+    def _CSFDB_GetQuantity_PeriodmyUSec(self):
         """
         :rtype: int
 
         """
-        return _Quantity.Quantity_Period__CSFDB_GetQuantity_PeriodmyUSec(self, *args)
+        return _Quantity.Quantity_Period__CSFDB_GetQuantity_PeriodmyUSec(self)
 
-    def _CSFDB_SetQuantity_PeriodmyUSec(self, *args) -> "void" :
+    def _CSFDB_SetQuantity_PeriodmyUSec(self, *args):
         """
         :param p:
-        :type p: int
+        :type p: Standard_Integer
         :rtype: None
 
         """
@@ -2679,30 +2959,70 @@ Quantity_Period._kill_pointed = new_instancemethod(_Quantity.Quantity_Period__ki
 Quantity_Period_swigregister = _Quantity.Quantity_Period_swigregister
 Quantity_Period_swigregister(Quantity_Period)
 
-def Quantity_Period_IsValid(*args) -> "Standard_Boolean" :
+def Quantity_Period_IsValid(*args):
   """
     * Checks the validity of a Period in form (dd,hh,mn,ss,mil,mic) With: 0 <= dd  0 <= hh  0 <= mn  0 <= ss  0 <= mis  0 <= mics
 
     :param dd:
-    :type dd: int
+    :type dd: Standard_Integer
     :param hh:
-    :type hh: int
+    :type hh: Standard_Integer
     :param mn:
-    :type mn: int
+    :type mn: Standard_Integer
     :param ss:
-    :type ss: int
+    :type ss: Standard_Integer
     :param mis: default value is 0
-    :type mis: int
+    :type mis: Standard_Integer
     :param mics: default value is 0
-    :type mics: int
+    :type mics: Standard_Integer
+    :rtype: bool
+
+    * Checks the validity of a Period in form (dd,hh,mn,ss,mil,mic) With: 0 <= dd  0 <= hh  0 <= mn  0 <= ss  0 <= mis  0 <= mics
+
+    :param dd:
+    :type dd: Standard_Integer
+    :param hh:
+    :type hh: Standard_Integer
+    :param mn:
+    :type mn: Standard_Integer
+    :param ss:
+    :type ss: Standard_Integer
+    :param mis: default value is 0
+    :type mis: Standard_Integer
+    :param mics: default value is 0
+    :type mics: Standard_Integer
+    :rtype: bool
+
+    * Checks the validity of a Period in form (dd,hh,mn,ss,mil,mic) With: 0 <= dd  0 <= hh  0 <= mn  0 <= ss  0 <= mis  0 <= mics
+
+    :param dd:
+    :type dd: Standard_Integer
+    :param hh:
+    :type hh: Standard_Integer
+    :param mn:
+    :type mn: Standard_Integer
+    :param ss:
+    :type ss: Standard_Integer
+    :param mis: default value is 0
+    :type mis: Standard_Integer
+    :param mics: default value is 0
+    :type mics: Standard_Integer
     :rtype: bool
 
     * Checks the validity of a Period in form (ss,mic) With: 0 <= ss  0 <= mics
 
     :param ss:
-    :type ss: int
+    :type ss: Standard_Integer
     :param mics: default value is 0
-    :type mics: int
+    :type mics: Standard_Integer
+    :rtype: bool
+
+    * Checks the validity of a Period in form (ss,mic) With: 0 <= ss  0 <= mics
+
+    :param ss:
+    :type ss: Standard_Integer
+    :param mics: default value is 0
+    :type mics: Standard_Integer
     :rtype: bool
 
     """

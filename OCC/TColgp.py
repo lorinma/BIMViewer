@@ -118,22 +118,22 @@ class TColgp_Array1OfCirc2d(object):
     def __init__(self, *args): 
         """
         :param Low:
-        :type Low: int
+        :type Low: Standard_Integer
         :param Up:
-        :type Up: int
+        :type Up: Standard_Integer
         :rtype: None
 
         :param Item:
         :type Item: gp_Circ2d
         :param Low:
-        :type Low: int
+        :type Low: Standard_Integer
         :param Up:
-        :type Up: int
+        :type Up: Standard_Integer
         :rtype: None
 
         """
         _TColgp.TColgp_Array1OfCirc2d_swiginit(self,_TColgp.new_TColgp_Array1OfCirc2d(*args))
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
         :param V:
         :type V: gp_Circ2d
@@ -142,21 +142,21 @@ class TColgp_Array1OfCirc2d(object):
         """
         return _TColgp.TColgp_Array1OfCirc2d_Init(self, *args)
 
-    def Destroy(self, *args) -> "void" :
+    def Destroy(self):
         """
         :rtype: None
 
         """
-        return _TColgp.TColgp_Array1OfCirc2d_Destroy(self, *args)
+        return _TColgp.TColgp_Array1OfCirc2d_Destroy(self)
 
-    def IsAllocated(self, *args) -> "Standard_Boolean" :
+    def IsAllocated(self):
         """
         :rtype: bool
 
         """
-        return _TColgp.TColgp_Array1OfCirc2d_IsAllocated(self, *args)
+        return _TColgp.TColgp_Array1OfCirc2d_IsAllocated(self)
 
-    def Assign(self, *args) -> "TColgp_Array1OfCirc2d const &" :
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: TColgp_Array1OfCirc2d
@@ -165,7 +165,7 @@ class TColgp_Array1OfCirc2d(object):
         """
         return _TColgp.TColgp_Array1OfCirc2d_Assign(self, *args)
 
-    def Set(self, *args) -> "TColgp_Array1OfCirc2d const &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: TColgp_Array1OfCirc2d
@@ -174,31 +174,31 @@ class TColgp_Array1OfCirc2d(object):
         """
         return _TColgp.TColgp_Array1OfCirc2d_Set(self, *args)
 
-    def Length(self, *args) -> "Standard_Integer" :
+    def Length(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_Array1OfCirc2d_Length(self, *args)
+        return _TColgp.TColgp_Array1OfCirc2d_Length(self)
 
-    def Lower(self, *args) -> "Standard_Integer" :
+    def Lower(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_Array1OfCirc2d_Lower(self, *args)
+        return _TColgp.TColgp_Array1OfCirc2d_Lower(self)
 
-    def Upper(self, *args) -> "Standard_Integer" :
+    def Upper(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_Array1OfCirc2d_Upper(self, *args)
+        return _TColgp.TColgp_Array1OfCirc2d_Upper(self)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Value:
         :type Value: gp_Circ2d
         :rtype: None
@@ -206,19 +206,19 @@ class TColgp_Array1OfCirc2d(object):
         """
         return _TColgp.TColgp_Array1OfCirc2d_SetValue(self, *args)
 
-    def Value(self, *args) -> "gp_Circ2d const" :
+    def Value(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: gp_Circ2d
 
         """
         return _TColgp.TColgp_Array1OfCirc2d_Value(self, *args)
 
-    def ChangeValue(self, *args) -> "gp_Circ2d" :
+    def ChangeValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: gp_Circ2d
 
         """
@@ -253,22 +253,22 @@ class TColgp_Array1OfDir(object):
     def __init__(self, *args): 
         """
         :param Low:
-        :type Low: int
+        :type Low: Standard_Integer
         :param Up:
-        :type Up: int
+        :type Up: Standard_Integer
         :rtype: None
 
         :param Item:
         :type Item: gp_Dir
         :param Low:
-        :type Low: int
+        :type Low: Standard_Integer
         :param Up:
-        :type Up: int
+        :type Up: Standard_Integer
         :rtype: None
 
         """
         _TColgp.TColgp_Array1OfDir_swiginit(self,_TColgp.new_TColgp_Array1OfDir(*args))
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
         :param V:
         :type V: gp_Dir
@@ -277,21 +277,21 @@ class TColgp_Array1OfDir(object):
         """
         return _TColgp.TColgp_Array1OfDir_Init(self, *args)
 
-    def Destroy(self, *args) -> "void" :
+    def Destroy(self):
         """
         :rtype: None
 
         """
-        return _TColgp.TColgp_Array1OfDir_Destroy(self, *args)
+        return _TColgp.TColgp_Array1OfDir_Destroy(self)
 
-    def IsAllocated(self, *args) -> "Standard_Boolean" :
+    def IsAllocated(self):
         """
         :rtype: bool
 
         """
-        return _TColgp.TColgp_Array1OfDir_IsAllocated(self, *args)
+        return _TColgp.TColgp_Array1OfDir_IsAllocated(self)
 
-    def Assign(self, *args) -> "TColgp_Array1OfDir const &" :
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: TColgp_Array1OfDir
@@ -300,7 +300,7 @@ class TColgp_Array1OfDir(object):
         """
         return _TColgp.TColgp_Array1OfDir_Assign(self, *args)
 
-    def Set(self, *args) -> "TColgp_Array1OfDir const &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: TColgp_Array1OfDir
@@ -309,31 +309,31 @@ class TColgp_Array1OfDir(object):
         """
         return _TColgp.TColgp_Array1OfDir_Set(self, *args)
 
-    def Length(self, *args) -> "Standard_Integer" :
+    def Length(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_Array1OfDir_Length(self, *args)
+        return _TColgp.TColgp_Array1OfDir_Length(self)
 
-    def Lower(self, *args) -> "Standard_Integer" :
+    def Lower(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_Array1OfDir_Lower(self, *args)
+        return _TColgp.TColgp_Array1OfDir_Lower(self)
 
-    def Upper(self, *args) -> "Standard_Integer" :
+    def Upper(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_Array1OfDir_Upper(self, *args)
+        return _TColgp.TColgp_Array1OfDir_Upper(self)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Value:
         :type Value: gp_Dir
         :rtype: None
@@ -341,19 +341,19 @@ class TColgp_Array1OfDir(object):
         """
         return _TColgp.TColgp_Array1OfDir_SetValue(self, *args)
 
-    def Value(self, *args) -> "gp_Dir const" :
+    def Value(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: gp_Dir
 
         """
         return _TColgp.TColgp_Array1OfDir_Value(self, *args)
 
-    def ChangeValue(self, *args) -> "gp_Dir" :
+    def ChangeValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: gp_Dir
 
         """
@@ -388,22 +388,22 @@ class TColgp_Array1OfDir2d(object):
     def __init__(self, *args): 
         """
         :param Low:
-        :type Low: int
+        :type Low: Standard_Integer
         :param Up:
-        :type Up: int
+        :type Up: Standard_Integer
         :rtype: None
 
         :param Item:
         :type Item: gp_Dir2d
         :param Low:
-        :type Low: int
+        :type Low: Standard_Integer
         :param Up:
-        :type Up: int
+        :type Up: Standard_Integer
         :rtype: None
 
         """
         _TColgp.TColgp_Array1OfDir2d_swiginit(self,_TColgp.new_TColgp_Array1OfDir2d(*args))
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
         :param V:
         :type V: gp_Dir2d
@@ -412,21 +412,21 @@ class TColgp_Array1OfDir2d(object):
         """
         return _TColgp.TColgp_Array1OfDir2d_Init(self, *args)
 
-    def Destroy(self, *args) -> "void" :
+    def Destroy(self):
         """
         :rtype: None
 
         """
-        return _TColgp.TColgp_Array1OfDir2d_Destroy(self, *args)
+        return _TColgp.TColgp_Array1OfDir2d_Destroy(self)
 
-    def IsAllocated(self, *args) -> "Standard_Boolean" :
+    def IsAllocated(self):
         """
         :rtype: bool
 
         """
-        return _TColgp.TColgp_Array1OfDir2d_IsAllocated(self, *args)
+        return _TColgp.TColgp_Array1OfDir2d_IsAllocated(self)
 
-    def Assign(self, *args) -> "TColgp_Array1OfDir2d const &" :
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: TColgp_Array1OfDir2d
@@ -435,7 +435,7 @@ class TColgp_Array1OfDir2d(object):
         """
         return _TColgp.TColgp_Array1OfDir2d_Assign(self, *args)
 
-    def Set(self, *args) -> "TColgp_Array1OfDir2d const &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: TColgp_Array1OfDir2d
@@ -444,31 +444,31 @@ class TColgp_Array1OfDir2d(object):
         """
         return _TColgp.TColgp_Array1OfDir2d_Set(self, *args)
 
-    def Length(self, *args) -> "Standard_Integer" :
+    def Length(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_Array1OfDir2d_Length(self, *args)
+        return _TColgp.TColgp_Array1OfDir2d_Length(self)
 
-    def Lower(self, *args) -> "Standard_Integer" :
+    def Lower(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_Array1OfDir2d_Lower(self, *args)
+        return _TColgp.TColgp_Array1OfDir2d_Lower(self)
 
-    def Upper(self, *args) -> "Standard_Integer" :
+    def Upper(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_Array1OfDir2d_Upper(self, *args)
+        return _TColgp.TColgp_Array1OfDir2d_Upper(self)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Value:
         :type Value: gp_Dir2d
         :rtype: None
@@ -476,19 +476,19 @@ class TColgp_Array1OfDir2d(object):
         """
         return _TColgp.TColgp_Array1OfDir2d_SetValue(self, *args)
 
-    def Value(self, *args) -> "gp_Dir2d const" :
+    def Value(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: gp_Dir2d
 
         """
         return _TColgp.TColgp_Array1OfDir2d_Value(self, *args)
 
-    def ChangeValue(self, *args) -> "gp_Dir2d" :
+    def ChangeValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: gp_Dir2d
 
         """
@@ -523,22 +523,22 @@ class TColgp_Array1OfLin2d(object):
     def __init__(self, *args): 
         """
         :param Low:
-        :type Low: int
+        :type Low: Standard_Integer
         :param Up:
-        :type Up: int
+        :type Up: Standard_Integer
         :rtype: None
 
         :param Item:
         :type Item: gp_Lin2d
         :param Low:
-        :type Low: int
+        :type Low: Standard_Integer
         :param Up:
-        :type Up: int
+        :type Up: Standard_Integer
         :rtype: None
 
         """
         _TColgp.TColgp_Array1OfLin2d_swiginit(self,_TColgp.new_TColgp_Array1OfLin2d(*args))
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
         :param V:
         :type V: gp_Lin2d
@@ -547,21 +547,21 @@ class TColgp_Array1OfLin2d(object):
         """
         return _TColgp.TColgp_Array1OfLin2d_Init(self, *args)
 
-    def Destroy(self, *args) -> "void" :
+    def Destroy(self):
         """
         :rtype: None
 
         """
-        return _TColgp.TColgp_Array1OfLin2d_Destroy(self, *args)
+        return _TColgp.TColgp_Array1OfLin2d_Destroy(self)
 
-    def IsAllocated(self, *args) -> "Standard_Boolean" :
+    def IsAllocated(self):
         """
         :rtype: bool
 
         """
-        return _TColgp.TColgp_Array1OfLin2d_IsAllocated(self, *args)
+        return _TColgp.TColgp_Array1OfLin2d_IsAllocated(self)
 
-    def Assign(self, *args) -> "TColgp_Array1OfLin2d const &" :
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: TColgp_Array1OfLin2d
@@ -570,7 +570,7 @@ class TColgp_Array1OfLin2d(object):
         """
         return _TColgp.TColgp_Array1OfLin2d_Assign(self, *args)
 
-    def Set(self, *args) -> "TColgp_Array1OfLin2d const &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: TColgp_Array1OfLin2d
@@ -579,31 +579,31 @@ class TColgp_Array1OfLin2d(object):
         """
         return _TColgp.TColgp_Array1OfLin2d_Set(self, *args)
 
-    def Length(self, *args) -> "Standard_Integer" :
+    def Length(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_Array1OfLin2d_Length(self, *args)
+        return _TColgp.TColgp_Array1OfLin2d_Length(self)
 
-    def Lower(self, *args) -> "Standard_Integer" :
+    def Lower(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_Array1OfLin2d_Lower(self, *args)
+        return _TColgp.TColgp_Array1OfLin2d_Lower(self)
 
-    def Upper(self, *args) -> "Standard_Integer" :
+    def Upper(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_Array1OfLin2d_Upper(self, *args)
+        return _TColgp.TColgp_Array1OfLin2d_Upper(self)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Value:
         :type Value: gp_Lin2d
         :rtype: None
@@ -611,19 +611,19 @@ class TColgp_Array1OfLin2d(object):
         """
         return _TColgp.TColgp_Array1OfLin2d_SetValue(self, *args)
 
-    def Value(self, *args) -> "gp_Lin2d const" :
+    def Value(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: gp_Lin2d
 
         """
         return _TColgp.TColgp_Array1OfLin2d_Value(self, *args)
 
-    def ChangeValue(self, *args) -> "gp_Lin2d" :
+    def ChangeValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: gp_Lin2d
 
         """
@@ -658,22 +658,22 @@ class TColgp_Array1OfPnt(object):
     def __init__(self, *args): 
         """
         :param Low:
-        :type Low: int
+        :type Low: Standard_Integer
         :param Up:
-        :type Up: int
+        :type Up: Standard_Integer
         :rtype: None
 
         :param Item:
         :type Item: gp_Pnt
         :param Low:
-        :type Low: int
+        :type Low: Standard_Integer
         :param Up:
-        :type Up: int
+        :type Up: Standard_Integer
         :rtype: None
 
         """
         _TColgp.TColgp_Array1OfPnt_swiginit(self,_TColgp.new_TColgp_Array1OfPnt(*args))
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
         :param V:
         :type V: gp_Pnt
@@ -682,21 +682,21 @@ class TColgp_Array1OfPnt(object):
         """
         return _TColgp.TColgp_Array1OfPnt_Init(self, *args)
 
-    def Destroy(self, *args) -> "void" :
+    def Destroy(self):
         """
         :rtype: None
 
         """
-        return _TColgp.TColgp_Array1OfPnt_Destroy(self, *args)
+        return _TColgp.TColgp_Array1OfPnt_Destroy(self)
 
-    def IsAllocated(self, *args) -> "Standard_Boolean" :
+    def IsAllocated(self):
         """
         :rtype: bool
 
         """
-        return _TColgp.TColgp_Array1OfPnt_IsAllocated(self, *args)
+        return _TColgp.TColgp_Array1OfPnt_IsAllocated(self)
 
-    def Assign(self, *args) -> "TColgp_Array1OfPnt const &" :
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: TColgp_Array1OfPnt
@@ -705,7 +705,7 @@ class TColgp_Array1OfPnt(object):
         """
         return _TColgp.TColgp_Array1OfPnt_Assign(self, *args)
 
-    def Set(self, *args) -> "TColgp_Array1OfPnt const &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: TColgp_Array1OfPnt
@@ -714,31 +714,31 @@ class TColgp_Array1OfPnt(object):
         """
         return _TColgp.TColgp_Array1OfPnt_Set(self, *args)
 
-    def Length(self, *args) -> "Standard_Integer" :
+    def Length(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_Array1OfPnt_Length(self, *args)
+        return _TColgp.TColgp_Array1OfPnt_Length(self)
 
-    def Lower(self, *args) -> "Standard_Integer" :
+    def Lower(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_Array1OfPnt_Lower(self, *args)
+        return _TColgp.TColgp_Array1OfPnt_Lower(self)
 
-    def Upper(self, *args) -> "Standard_Integer" :
+    def Upper(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_Array1OfPnt_Upper(self, *args)
+        return _TColgp.TColgp_Array1OfPnt_Upper(self)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Value:
         :type Value: gp_Pnt
         :rtype: None
@@ -746,19 +746,19 @@ class TColgp_Array1OfPnt(object):
         """
         return _TColgp.TColgp_Array1OfPnt_SetValue(self, *args)
 
-    def Value(self, *args) -> "gp_Pnt const" :
+    def Value(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: gp_Pnt
 
         """
         return _TColgp.TColgp_Array1OfPnt_Value(self, *args)
 
-    def ChangeValue(self, *args) -> "gp_Pnt" :
+    def ChangeValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: gp_Pnt
 
         """
@@ -793,22 +793,22 @@ class TColgp_Array1OfPnt2d(object):
     def __init__(self, *args): 
         """
         :param Low:
-        :type Low: int
+        :type Low: Standard_Integer
         :param Up:
-        :type Up: int
+        :type Up: Standard_Integer
         :rtype: None
 
         :param Item:
         :type Item: gp_Pnt2d
         :param Low:
-        :type Low: int
+        :type Low: Standard_Integer
         :param Up:
-        :type Up: int
+        :type Up: Standard_Integer
         :rtype: None
 
         """
         _TColgp.TColgp_Array1OfPnt2d_swiginit(self,_TColgp.new_TColgp_Array1OfPnt2d(*args))
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
         :param V:
         :type V: gp_Pnt2d
@@ -817,21 +817,21 @@ class TColgp_Array1OfPnt2d(object):
         """
         return _TColgp.TColgp_Array1OfPnt2d_Init(self, *args)
 
-    def Destroy(self, *args) -> "void" :
+    def Destroy(self):
         """
         :rtype: None
 
         """
-        return _TColgp.TColgp_Array1OfPnt2d_Destroy(self, *args)
+        return _TColgp.TColgp_Array1OfPnt2d_Destroy(self)
 
-    def IsAllocated(self, *args) -> "Standard_Boolean" :
+    def IsAllocated(self):
         """
         :rtype: bool
 
         """
-        return _TColgp.TColgp_Array1OfPnt2d_IsAllocated(self, *args)
+        return _TColgp.TColgp_Array1OfPnt2d_IsAllocated(self)
 
-    def Assign(self, *args) -> "TColgp_Array1OfPnt2d const &" :
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: TColgp_Array1OfPnt2d
@@ -840,7 +840,7 @@ class TColgp_Array1OfPnt2d(object):
         """
         return _TColgp.TColgp_Array1OfPnt2d_Assign(self, *args)
 
-    def Set(self, *args) -> "TColgp_Array1OfPnt2d const &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: TColgp_Array1OfPnt2d
@@ -849,31 +849,31 @@ class TColgp_Array1OfPnt2d(object):
         """
         return _TColgp.TColgp_Array1OfPnt2d_Set(self, *args)
 
-    def Length(self, *args) -> "Standard_Integer" :
+    def Length(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_Array1OfPnt2d_Length(self, *args)
+        return _TColgp.TColgp_Array1OfPnt2d_Length(self)
 
-    def Lower(self, *args) -> "Standard_Integer" :
+    def Lower(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_Array1OfPnt2d_Lower(self, *args)
+        return _TColgp.TColgp_Array1OfPnt2d_Lower(self)
 
-    def Upper(self, *args) -> "Standard_Integer" :
+    def Upper(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_Array1OfPnt2d_Upper(self, *args)
+        return _TColgp.TColgp_Array1OfPnt2d_Upper(self)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Value:
         :type Value: gp_Pnt2d
         :rtype: None
@@ -881,19 +881,19 @@ class TColgp_Array1OfPnt2d(object):
         """
         return _TColgp.TColgp_Array1OfPnt2d_SetValue(self, *args)
 
-    def Value(self, *args) -> "gp_Pnt2d const" :
+    def Value(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: gp_Pnt2d
 
         """
         return _TColgp.TColgp_Array1OfPnt2d_Value(self, *args)
 
-    def ChangeValue(self, *args) -> "gp_Pnt2d" :
+    def ChangeValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: gp_Pnt2d
 
         """
@@ -928,22 +928,22 @@ class TColgp_Array1OfVec(object):
     def __init__(self, *args): 
         """
         :param Low:
-        :type Low: int
+        :type Low: Standard_Integer
         :param Up:
-        :type Up: int
+        :type Up: Standard_Integer
         :rtype: None
 
         :param Item:
         :type Item: gp_Vec
         :param Low:
-        :type Low: int
+        :type Low: Standard_Integer
         :param Up:
-        :type Up: int
+        :type Up: Standard_Integer
         :rtype: None
 
         """
         _TColgp.TColgp_Array1OfVec_swiginit(self,_TColgp.new_TColgp_Array1OfVec(*args))
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
         :param V:
         :type V: gp_Vec
@@ -952,21 +952,21 @@ class TColgp_Array1OfVec(object):
         """
         return _TColgp.TColgp_Array1OfVec_Init(self, *args)
 
-    def Destroy(self, *args) -> "void" :
+    def Destroy(self):
         """
         :rtype: None
 
         """
-        return _TColgp.TColgp_Array1OfVec_Destroy(self, *args)
+        return _TColgp.TColgp_Array1OfVec_Destroy(self)
 
-    def IsAllocated(self, *args) -> "Standard_Boolean" :
+    def IsAllocated(self):
         """
         :rtype: bool
 
         """
-        return _TColgp.TColgp_Array1OfVec_IsAllocated(self, *args)
+        return _TColgp.TColgp_Array1OfVec_IsAllocated(self)
 
-    def Assign(self, *args) -> "TColgp_Array1OfVec const &" :
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: TColgp_Array1OfVec
@@ -975,7 +975,7 @@ class TColgp_Array1OfVec(object):
         """
         return _TColgp.TColgp_Array1OfVec_Assign(self, *args)
 
-    def Set(self, *args) -> "TColgp_Array1OfVec const &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: TColgp_Array1OfVec
@@ -984,31 +984,31 @@ class TColgp_Array1OfVec(object):
         """
         return _TColgp.TColgp_Array1OfVec_Set(self, *args)
 
-    def Length(self, *args) -> "Standard_Integer" :
+    def Length(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_Array1OfVec_Length(self, *args)
+        return _TColgp.TColgp_Array1OfVec_Length(self)
 
-    def Lower(self, *args) -> "Standard_Integer" :
+    def Lower(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_Array1OfVec_Lower(self, *args)
+        return _TColgp.TColgp_Array1OfVec_Lower(self)
 
-    def Upper(self, *args) -> "Standard_Integer" :
+    def Upper(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_Array1OfVec_Upper(self, *args)
+        return _TColgp.TColgp_Array1OfVec_Upper(self)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Value:
         :type Value: gp_Vec
         :rtype: None
@@ -1016,19 +1016,19 @@ class TColgp_Array1OfVec(object):
         """
         return _TColgp.TColgp_Array1OfVec_SetValue(self, *args)
 
-    def Value(self, *args) -> "gp_Vec const" :
+    def Value(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: gp_Vec
 
         """
         return _TColgp.TColgp_Array1OfVec_Value(self, *args)
 
-    def ChangeValue(self, *args) -> "gp_Vec" :
+    def ChangeValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: gp_Vec
 
         """
@@ -1063,22 +1063,22 @@ class TColgp_Array1OfVec2d(object):
     def __init__(self, *args): 
         """
         :param Low:
-        :type Low: int
+        :type Low: Standard_Integer
         :param Up:
-        :type Up: int
+        :type Up: Standard_Integer
         :rtype: None
 
         :param Item:
         :type Item: gp_Vec2d
         :param Low:
-        :type Low: int
+        :type Low: Standard_Integer
         :param Up:
-        :type Up: int
+        :type Up: Standard_Integer
         :rtype: None
 
         """
         _TColgp.TColgp_Array1OfVec2d_swiginit(self,_TColgp.new_TColgp_Array1OfVec2d(*args))
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
         :param V:
         :type V: gp_Vec2d
@@ -1087,21 +1087,21 @@ class TColgp_Array1OfVec2d(object):
         """
         return _TColgp.TColgp_Array1OfVec2d_Init(self, *args)
 
-    def Destroy(self, *args) -> "void" :
+    def Destroy(self):
         """
         :rtype: None
 
         """
-        return _TColgp.TColgp_Array1OfVec2d_Destroy(self, *args)
+        return _TColgp.TColgp_Array1OfVec2d_Destroy(self)
 
-    def IsAllocated(self, *args) -> "Standard_Boolean" :
+    def IsAllocated(self):
         """
         :rtype: bool
 
         """
-        return _TColgp.TColgp_Array1OfVec2d_IsAllocated(self, *args)
+        return _TColgp.TColgp_Array1OfVec2d_IsAllocated(self)
 
-    def Assign(self, *args) -> "TColgp_Array1OfVec2d const &" :
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: TColgp_Array1OfVec2d
@@ -1110,7 +1110,7 @@ class TColgp_Array1OfVec2d(object):
         """
         return _TColgp.TColgp_Array1OfVec2d_Assign(self, *args)
 
-    def Set(self, *args) -> "TColgp_Array1OfVec2d const &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: TColgp_Array1OfVec2d
@@ -1119,31 +1119,31 @@ class TColgp_Array1OfVec2d(object):
         """
         return _TColgp.TColgp_Array1OfVec2d_Set(self, *args)
 
-    def Length(self, *args) -> "Standard_Integer" :
+    def Length(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_Array1OfVec2d_Length(self, *args)
+        return _TColgp.TColgp_Array1OfVec2d_Length(self)
 
-    def Lower(self, *args) -> "Standard_Integer" :
+    def Lower(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_Array1OfVec2d_Lower(self, *args)
+        return _TColgp.TColgp_Array1OfVec2d_Lower(self)
 
-    def Upper(self, *args) -> "Standard_Integer" :
+    def Upper(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_Array1OfVec2d_Upper(self, *args)
+        return _TColgp.TColgp_Array1OfVec2d_Upper(self)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Value:
         :type Value: gp_Vec2d
         :rtype: None
@@ -1151,19 +1151,19 @@ class TColgp_Array1OfVec2d(object):
         """
         return _TColgp.TColgp_Array1OfVec2d_SetValue(self, *args)
 
-    def Value(self, *args) -> "gp_Vec2d const" :
+    def Value(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: gp_Vec2d
 
         """
         return _TColgp.TColgp_Array1OfVec2d_Value(self, *args)
 
-    def ChangeValue(self, *args) -> "gp_Vec2d" :
+    def ChangeValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: gp_Vec2d
 
         """
@@ -1198,22 +1198,22 @@ class TColgp_Array1OfXY(object):
     def __init__(self, *args): 
         """
         :param Low:
-        :type Low: int
+        :type Low: Standard_Integer
         :param Up:
-        :type Up: int
+        :type Up: Standard_Integer
         :rtype: None
 
         :param Item:
         :type Item: gp_XY
         :param Low:
-        :type Low: int
+        :type Low: Standard_Integer
         :param Up:
-        :type Up: int
+        :type Up: Standard_Integer
         :rtype: None
 
         """
         _TColgp.TColgp_Array1OfXY_swiginit(self,_TColgp.new_TColgp_Array1OfXY(*args))
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
         :param V:
         :type V: gp_XY
@@ -1222,21 +1222,21 @@ class TColgp_Array1OfXY(object):
         """
         return _TColgp.TColgp_Array1OfXY_Init(self, *args)
 
-    def Destroy(self, *args) -> "void" :
+    def Destroy(self):
         """
         :rtype: None
 
         """
-        return _TColgp.TColgp_Array1OfXY_Destroy(self, *args)
+        return _TColgp.TColgp_Array1OfXY_Destroy(self)
 
-    def IsAllocated(self, *args) -> "Standard_Boolean" :
+    def IsAllocated(self):
         """
         :rtype: bool
 
         """
-        return _TColgp.TColgp_Array1OfXY_IsAllocated(self, *args)
+        return _TColgp.TColgp_Array1OfXY_IsAllocated(self)
 
-    def Assign(self, *args) -> "TColgp_Array1OfXY const &" :
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: TColgp_Array1OfXY
@@ -1245,7 +1245,7 @@ class TColgp_Array1OfXY(object):
         """
         return _TColgp.TColgp_Array1OfXY_Assign(self, *args)
 
-    def Set(self, *args) -> "TColgp_Array1OfXY const &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: TColgp_Array1OfXY
@@ -1254,31 +1254,31 @@ class TColgp_Array1OfXY(object):
         """
         return _TColgp.TColgp_Array1OfXY_Set(self, *args)
 
-    def Length(self, *args) -> "Standard_Integer" :
+    def Length(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_Array1OfXY_Length(self, *args)
+        return _TColgp.TColgp_Array1OfXY_Length(self)
 
-    def Lower(self, *args) -> "Standard_Integer" :
+    def Lower(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_Array1OfXY_Lower(self, *args)
+        return _TColgp.TColgp_Array1OfXY_Lower(self)
 
-    def Upper(self, *args) -> "Standard_Integer" :
+    def Upper(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_Array1OfXY_Upper(self, *args)
+        return _TColgp.TColgp_Array1OfXY_Upper(self)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Value:
         :type Value: gp_XY
         :rtype: None
@@ -1286,19 +1286,19 @@ class TColgp_Array1OfXY(object):
         """
         return _TColgp.TColgp_Array1OfXY_SetValue(self, *args)
 
-    def Value(self, *args) -> "gp_XY const" :
+    def Value(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: gp_XY
 
         """
         return _TColgp.TColgp_Array1OfXY_Value(self, *args)
 
-    def ChangeValue(self, *args) -> "gp_XY" :
+    def ChangeValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: gp_XY
 
         """
@@ -1333,22 +1333,22 @@ class TColgp_Array1OfXYZ(object):
     def __init__(self, *args): 
         """
         :param Low:
-        :type Low: int
+        :type Low: Standard_Integer
         :param Up:
-        :type Up: int
+        :type Up: Standard_Integer
         :rtype: None
 
         :param Item:
         :type Item: gp_XYZ
         :param Low:
-        :type Low: int
+        :type Low: Standard_Integer
         :param Up:
-        :type Up: int
+        :type Up: Standard_Integer
         :rtype: None
 
         """
         _TColgp.TColgp_Array1OfXYZ_swiginit(self,_TColgp.new_TColgp_Array1OfXYZ(*args))
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
         :param V:
         :type V: gp_XYZ
@@ -1357,21 +1357,21 @@ class TColgp_Array1OfXYZ(object):
         """
         return _TColgp.TColgp_Array1OfXYZ_Init(self, *args)
 
-    def Destroy(self, *args) -> "void" :
+    def Destroy(self):
         """
         :rtype: None
 
         """
-        return _TColgp.TColgp_Array1OfXYZ_Destroy(self, *args)
+        return _TColgp.TColgp_Array1OfXYZ_Destroy(self)
 
-    def IsAllocated(self, *args) -> "Standard_Boolean" :
+    def IsAllocated(self):
         """
         :rtype: bool
 
         """
-        return _TColgp.TColgp_Array1OfXYZ_IsAllocated(self, *args)
+        return _TColgp.TColgp_Array1OfXYZ_IsAllocated(self)
 
-    def Assign(self, *args) -> "TColgp_Array1OfXYZ const &" :
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: TColgp_Array1OfXYZ
@@ -1380,7 +1380,7 @@ class TColgp_Array1OfXYZ(object):
         """
         return _TColgp.TColgp_Array1OfXYZ_Assign(self, *args)
 
-    def Set(self, *args) -> "TColgp_Array1OfXYZ const &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: TColgp_Array1OfXYZ
@@ -1389,31 +1389,31 @@ class TColgp_Array1OfXYZ(object):
         """
         return _TColgp.TColgp_Array1OfXYZ_Set(self, *args)
 
-    def Length(self, *args) -> "Standard_Integer" :
+    def Length(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_Array1OfXYZ_Length(self, *args)
+        return _TColgp.TColgp_Array1OfXYZ_Length(self)
 
-    def Lower(self, *args) -> "Standard_Integer" :
+    def Lower(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_Array1OfXYZ_Lower(self, *args)
+        return _TColgp.TColgp_Array1OfXYZ_Lower(self)
 
-    def Upper(self, *args) -> "Standard_Integer" :
+    def Upper(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_Array1OfXYZ_Upper(self, *args)
+        return _TColgp.TColgp_Array1OfXYZ_Upper(self)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Value:
         :type Value: gp_XYZ
         :rtype: None
@@ -1421,19 +1421,19 @@ class TColgp_Array1OfXYZ(object):
         """
         return _TColgp.TColgp_Array1OfXYZ_SetValue(self, *args)
 
-    def Value(self, *args) -> "gp_XYZ const" :
+    def Value(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: gp_XYZ
 
         """
         return _TColgp.TColgp_Array1OfXYZ_Value(self, *args)
 
-    def ChangeValue(self, *args) -> "gp_XYZ" :
+    def ChangeValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: gp_XYZ
 
         """
@@ -1468,30 +1468,30 @@ class TColgp_Array2OfCirc2d(object):
     def __init__(self, *args): 
         """
         :param R1:
-        :type R1: int
+        :type R1: Standard_Integer
         :param R2:
-        :type R2: int
+        :type R2: Standard_Integer
         :param C1:
-        :type C1: int
+        :type C1: Standard_Integer
         :param C2:
-        :type C2: int
+        :type C2: Standard_Integer
         :rtype: None
 
         :param Item:
         :type Item: gp_Circ2d
         :param R1:
-        :type R1: int
+        :type R1: Standard_Integer
         :param R2:
-        :type R2: int
+        :type R2: Standard_Integer
         :param C1:
-        :type C1: int
+        :type C1: Standard_Integer
         :param C2:
-        :type C2: int
+        :type C2: Standard_Integer
         :rtype: None
 
         """
         _TColgp.TColgp_Array2OfCirc2d_swiginit(self,_TColgp.new_TColgp_Array2OfCirc2d(*args))
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
         :param V:
         :type V: gp_Circ2d
@@ -1500,14 +1500,14 @@ class TColgp_Array2OfCirc2d(object):
         """
         return _TColgp.TColgp_Array2OfCirc2d_Init(self, *args)
 
-    def Destroy(self, *args) -> "void" :
+    def Destroy(self):
         """
         :rtype: None
 
         """
-        return _TColgp.TColgp_Array2OfCirc2d_Destroy(self, *args)
+        return _TColgp.TColgp_Array2OfCirc2d_Destroy(self)
 
-    def Assign(self, *args) -> "TColgp_Array2OfCirc2d const &" :
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: TColgp_Array2OfCirc2d
@@ -1516,7 +1516,7 @@ class TColgp_Array2OfCirc2d(object):
         """
         return _TColgp.TColgp_Array2OfCirc2d_Assign(self, *args)
 
-    def Set(self, *args) -> "TColgp_Array2OfCirc2d const &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: TColgp_Array2OfCirc2d
@@ -1525,54 +1525,54 @@ class TColgp_Array2OfCirc2d(object):
         """
         return _TColgp.TColgp_Array2OfCirc2d_Set(self, *args)
 
-    def ColLength(self, *args) -> "Standard_Integer" :
+    def ColLength(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_Array2OfCirc2d_ColLength(self, *args)
+        return _TColgp.TColgp_Array2OfCirc2d_ColLength(self)
 
-    def RowLength(self, *args) -> "Standard_Integer" :
+    def RowLength(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_Array2OfCirc2d_RowLength(self, *args)
+        return _TColgp.TColgp_Array2OfCirc2d_RowLength(self)
 
-    def LowerCol(self, *args) -> "Standard_Integer" :
+    def LowerCol(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_Array2OfCirc2d_LowerCol(self, *args)
+        return _TColgp.TColgp_Array2OfCirc2d_LowerCol(self)
 
-    def LowerRow(self, *args) -> "Standard_Integer" :
+    def LowerRow(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_Array2OfCirc2d_LowerRow(self, *args)
+        return _TColgp.TColgp_Array2OfCirc2d_LowerRow(self)
 
-    def UpperCol(self, *args) -> "Standard_Integer" :
+    def UpperCol(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_Array2OfCirc2d_UpperCol(self, *args)
+        return _TColgp.TColgp_Array2OfCirc2d_UpperCol(self)
 
-    def UpperRow(self, *args) -> "Standard_Integer" :
+    def UpperRow(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_Array2OfCirc2d_UpperRow(self, *args)
+        return _TColgp.TColgp_Array2OfCirc2d_UpperRow(self)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Row:
-        :type Row: int
+        :type Row: Standard_Integer
         :param Col:
-        :type Col: int
+        :type Col: Standard_Integer
         :param Value:
         :type Value: gp_Circ2d
         :rtype: None
@@ -1580,23 +1580,23 @@ class TColgp_Array2OfCirc2d(object):
         """
         return _TColgp.TColgp_Array2OfCirc2d_SetValue(self, *args)
 
-    def Value(self, *args) -> "gp_Circ2d const" :
+    def Value(self, *args):
         """
         :param Row:
-        :type Row: int
+        :type Row: Standard_Integer
         :param Col:
-        :type Col: int
+        :type Col: Standard_Integer
         :rtype: gp_Circ2d
 
         """
         return _TColgp.TColgp_Array2OfCirc2d_Value(self, *args)
 
-    def ChangeValue(self, *args) -> "gp_Circ2d" :
+    def ChangeValue(self, *args):
         """
         :param Row:
-        :type Row: int
+        :type Row: Standard_Integer
         :param Col:
-        :type Col: int
+        :type Col: Standard_Integer
         :rtype: gp_Circ2d
 
         """
@@ -1633,30 +1633,30 @@ class TColgp_Array2OfDir(object):
     def __init__(self, *args): 
         """
         :param R1:
-        :type R1: int
+        :type R1: Standard_Integer
         :param R2:
-        :type R2: int
+        :type R2: Standard_Integer
         :param C1:
-        :type C1: int
+        :type C1: Standard_Integer
         :param C2:
-        :type C2: int
+        :type C2: Standard_Integer
         :rtype: None
 
         :param Item:
         :type Item: gp_Dir
         :param R1:
-        :type R1: int
+        :type R1: Standard_Integer
         :param R2:
-        :type R2: int
+        :type R2: Standard_Integer
         :param C1:
-        :type C1: int
+        :type C1: Standard_Integer
         :param C2:
-        :type C2: int
+        :type C2: Standard_Integer
         :rtype: None
 
         """
         _TColgp.TColgp_Array2OfDir_swiginit(self,_TColgp.new_TColgp_Array2OfDir(*args))
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
         :param V:
         :type V: gp_Dir
@@ -1665,14 +1665,14 @@ class TColgp_Array2OfDir(object):
         """
         return _TColgp.TColgp_Array2OfDir_Init(self, *args)
 
-    def Destroy(self, *args) -> "void" :
+    def Destroy(self):
         """
         :rtype: None
 
         """
-        return _TColgp.TColgp_Array2OfDir_Destroy(self, *args)
+        return _TColgp.TColgp_Array2OfDir_Destroy(self)
 
-    def Assign(self, *args) -> "TColgp_Array2OfDir const &" :
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: TColgp_Array2OfDir
@@ -1681,7 +1681,7 @@ class TColgp_Array2OfDir(object):
         """
         return _TColgp.TColgp_Array2OfDir_Assign(self, *args)
 
-    def Set(self, *args) -> "TColgp_Array2OfDir const &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: TColgp_Array2OfDir
@@ -1690,54 +1690,54 @@ class TColgp_Array2OfDir(object):
         """
         return _TColgp.TColgp_Array2OfDir_Set(self, *args)
 
-    def ColLength(self, *args) -> "Standard_Integer" :
+    def ColLength(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_Array2OfDir_ColLength(self, *args)
+        return _TColgp.TColgp_Array2OfDir_ColLength(self)
 
-    def RowLength(self, *args) -> "Standard_Integer" :
+    def RowLength(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_Array2OfDir_RowLength(self, *args)
+        return _TColgp.TColgp_Array2OfDir_RowLength(self)
 
-    def LowerCol(self, *args) -> "Standard_Integer" :
+    def LowerCol(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_Array2OfDir_LowerCol(self, *args)
+        return _TColgp.TColgp_Array2OfDir_LowerCol(self)
 
-    def LowerRow(self, *args) -> "Standard_Integer" :
+    def LowerRow(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_Array2OfDir_LowerRow(self, *args)
+        return _TColgp.TColgp_Array2OfDir_LowerRow(self)
 
-    def UpperCol(self, *args) -> "Standard_Integer" :
+    def UpperCol(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_Array2OfDir_UpperCol(self, *args)
+        return _TColgp.TColgp_Array2OfDir_UpperCol(self)
 
-    def UpperRow(self, *args) -> "Standard_Integer" :
+    def UpperRow(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_Array2OfDir_UpperRow(self, *args)
+        return _TColgp.TColgp_Array2OfDir_UpperRow(self)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Row:
-        :type Row: int
+        :type Row: Standard_Integer
         :param Col:
-        :type Col: int
+        :type Col: Standard_Integer
         :param Value:
         :type Value: gp_Dir
         :rtype: None
@@ -1745,23 +1745,23 @@ class TColgp_Array2OfDir(object):
         """
         return _TColgp.TColgp_Array2OfDir_SetValue(self, *args)
 
-    def Value(self, *args) -> "gp_Dir const" :
+    def Value(self, *args):
         """
         :param Row:
-        :type Row: int
+        :type Row: Standard_Integer
         :param Col:
-        :type Col: int
+        :type Col: Standard_Integer
         :rtype: gp_Dir
 
         """
         return _TColgp.TColgp_Array2OfDir_Value(self, *args)
 
-    def ChangeValue(self, *args) -> "gp_Dir" :
+    def ChangeValue(self, *args):
         """
         :param Row:
-        :type Row: int
+        :type Row: Standard_Integer
         :param Col:
-        :type Col: int
+        :type Col: Standard_Integer
         :rtype: gp_Dir
 
         """
@@ -1798,30 +1798,30 @@ class TColgp_Array2OfDir2d(object):
     def __init__(self, *args): 
         """
         :param R1:
-        :type R1: int
+        :type R1: Standard_Integer
         :param R2:
-        :type R2: int
+        :type R2: Standard_Integer
         :param C1:
-        :type C1: int
+        :type C1: Standard_Integer
         :param C2:
-        :type C2: int
+        :type C2: Standard_Integer
         :rtype: None
 
         :param Item:
         :type Item: gp_Dir2d
         :param R1:
-        :type R1: int
+        :type R1: Standard_Integer
         :param R2:
-        :type R2: int
+        :type R2: Standard_Integer
         :param C1:
-        :type C1: int
+        :type C1: Standard_Integer
         :param C2:
-        :type C2: int
+        :type C2: Standard_Integer
         :rtype: None
 
         """
         _TColgp.TColgp_Array2OfDir2d_swiginit(self,_TColgp.new_TColgp_Array2OfDir2d(*args))
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
         :param V:
         :type V: gp_Dir2d
@@ -1830,14 +1830,14 @@ class TColgp_Array2OfDir2d(object):
         """
         return _TColgp.TColgp_Array2OfDir2d_Init(self, *args)
 
-    def Destroy(self, *args) -> "void" :
+    def Destroy(self):
         """
         :rtype: None
 
         """
-        return _TColgp.TColgp_Array2OfDir2d_Destroy(self, *args)
+        return _TColgp.TColgp_Array2OfDir2d_Destroy(self)
 
-    def Assign(self, *args) -> "TColgp_Array2OfDir2d const &" :
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: TColgp_Array2OfDir2d
@@ -1846,7 +1846,7 @@ class TColgp_Array2OfDir2d(object):
         """
         return _TColgp.TColgp_Array2OfDir2d_Assign(self, *args)
 
-    def Set(self, *args) -> "TColgp_Array2OfDir2d const &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: TColgp_Array2OfDir2d
@@ -1855,54 +1855,54 @@ class TColgp_Array2OfDir2d(object):
         """
         return _TColgp.TColgp_Array2OfDir2d_Set(self, *args)
 
-    def ColLength(self, *args) -> "Standard_Integer" :
+    def ColLength(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_Array2OfDir2d_ColLength(self, *args)
+        return _TColgp.TColgp_Array2OfDir2d_ColLength(self)
 
-    def RowLength(self, *args) -> "Standard_Integer" :
+    def RowLength(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_Array2OfDir2d_RowLength(self, *args)
+        return _TColgp.TColgp_Array2OfDir2d_RowLength(self)
 
-    def LowerCol(self, *args) -> "Standard_Integer" :
+    def LowerCol(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_Array2OfDir2d_LowerCol(self, *args)
+        return _TColgp.TColgp_Array2OfDir2d_LowerCol(self)
 
-    def LowerRow(self, *args) -> "Standard_Integer" :
+    def LowerRow(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_Array2OfDir2d_LowerRow(self, *args)
+        return _TColgp.TColgp_Array2OfDir2d_LowerRow(self)
 
-    def UpperCol(self, *args) -> "Standard_Integer" :
+    def UpperCol(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_Array2OfDir2d_UpperCol(self, *args)
+        return _TColgp.TColgp_Array2OfDir2d_UpperCol(self)
 
-    def UpperRow(self, *args) -> "Standard_Integer" :
+    def UpperRow(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_Array2OfDir2d_UpperRow(self, *args)
+        return _TColgp.TColgp_Array2OfDir2d_UpperRow(self)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Row:
-        :type Row: int
+        :type Row: Standard_Integer
         :param Col:
-        :type Col: int
+        :type Col: Standard_Integer
         :param Value:
         :type Value: gp_Dir2d
         :rtype: None
@@ -1910,23 +1910,23 @@ class TColgp_Array2OfDir2d(object):
         """
         return _TColgp.TColgp_Array2OfDir2d_SetValue(self, *args)
 
-    def Value(self, *args) -> "gp_Dir2d const" :
+    def Value(self, *args):
         """
         :param Row:
-        :type Row: int
+        :type Row: Standard_Integer
         :param Col:
-        :type Col: int
+        :type Col: Standard_Integer
         :rtype: gp_Dir2d
 
         """
         return _TColgp.TColgp_Array2OfDir2d_Value(self, *args)
 
-    def ChangeValue(self, *args) -> "gp_Dir2d" :
+    def ChangeValue(self, *args):
         """
         :param Row:
-        :type Row: int
+        :type Row: Standard_Integer
         :param Col:
-        :type Col: int
+        :type Col: Standard_Integer
         :rtype: gp_Dir2d
 
         """
@@ -1963,30 +1963,30 @@ class TColgp_Array2OfLin2d(object):
     def __init__(self, *args): 
         """
         :param R1:
-        :type R1: int
+        :type R1: Standard_Integer
         :param R2:
-        :type R2: int
+        :type R2: Standard_Integer
         :param C1:
-        :type C1: int
+        :type C1: Standard_Integer
         :param C2:
-        :type C2: int
+        :type C2: Standard_Integer
         :rtype: None
 
         :param Item:
         :type Item: gp_Lin2d
         :param R1:
-        :type R1: int
+        :type R1: Standard_Integer
         :param R2:
-        :type R2: int
+        :type R2: Standard_Integer
         :param C1:
-        :type C1: int
+        :type C1: Standard_Integer
         :param C2:
-        :type C2: int
+        :type C2: Standard_Integer
         :rtype: None
 
         """
         _TColgp.TColgp_Array2OfLin2d_swiginit(self,_TColgp.new_TColgp_Array2OfLin2d(*args))
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
         :param V:
         :type V: gp_Lin2d
@@ -1995,14 +1995,14 @@ class TColgp_Array2OfLin2d(object):
         """
         return _TColgp.TColgp_Array2OfLin2d_Init(self, *args)
 
-    def Destroy(self, *args) -> "void" :
+    def Destroy(self):
         """
         :rtype: None
 
         """
-        return _TColgp.TColgp_Array2OfLin2d_Destroy(self, *args)
+        return _TColgp.TColgp_Array2OfLin2d_Destroy(self)
 
-    def Assign(self, *args) -> "TColgp_Array2OfLin2d const &" :
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: TColgp_Array2OfLin2d
@@ -2011,7 +2011,7 @@ class TColgp_Array2OfLin2d(object):
         """
         return _TColgp.TColgp_Array2OfLin2d_Assign(self, *args)
 
-    def Set(self, *args) -> "TColgp_Array2OfLin2d const &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: TColgp_Array2OfLin2d
@@ -2020,54 +2020,54 @@ class TColgp_Array2OfLin2d(object):
         """
         return _TColgp.TColgp_Array2OfLin2d_Set(self, *args)
 
-    def ColLength(self, *args) -> "Standard_Integer" :
+    def ColLength(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_Array2OfLin2d_ColLength(self, *args)
+        return _TColgp.TColgp_Array2OfLin2d_ColLength(self)
 
-    def RowLength(self, *args) -> "Standard_Integer" :
+    def RowLength(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_Array2OfLin2d_RowLength(self, *args)
+        return _TColgp.TColgp_Array2OfLin2d_RowLength(self)
 
-    def LowerCol(self, *args) -> "Standard_Integer" :
+    def LowerCol(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_Array2OfLin2d_LowerCol(self, *args)
+        return _TColgp.TColgp_Array2OfLin2d_LowerCol(self)
 
-    def LowerRow(self, *args) -> "Standard_Integer" :
+    def LowerRow(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_Array2OfLin2d_LowerRow(self, *args)
+        return _TColgp.TColgp_Array2OfLin2d_LowerRow(self)
 
-    def UpperCol(self, *args) -> "Standard_Integer" :
+    def UpperCol(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_Array2OfLin2d_UpperCol(self, *args)
+        return _TColgp.TColgp_Array2OfLin2d_UpperCol(self)
 
-    def UpperRow(self, *args) -> "Standard_Integer" :
+    def UpperRow(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_Array2OfLin2d_UpperRow(self, *args)
+        return _TColgp.TColgp_Array2OfLin2d_UpperRow(self)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Row:
-        :type Row: int
+        :type Row: Standard_Integer
         :param Col:
-        :type Col: int
+        :type Col: Standard_Integer
         :param Value:
         :type Value: gp_Lin2d
         :rtype: None
@@ -2075,23 +2075,23 @@ class TColgp_Array2OfLin2d(object):
         """
         return _TColgp.TColgp_Array2OfLin2d_SetValue(self, *args)
 
-    def Value(self, *args) -> "gp_Lin2d const" :
+    def Value(self, *args):
         """
         :param Row:
-        :type Row: int
+        :type Row: Standard_Integer
         :param Col:
-        :type Col: int
+        :type Col: Standard_Integer
         :rtype: gp_Lin2d
 
         """
         return _TColgp.TColgp_Array2OfLin2d_Value(self, *args)
 
-    def ChangeValue(self, *args) -> "gp_Lin2d" :
+    def ChangeValue(self, *args):
         """
         :param Row:
-        :type Row: int
+        :type Row: Standard_Integer
         :param Col:
-        :type Col: int
+        :type Col: Standard_Integer
         :rtype: gp_Lin2d
 
         """
@@ -2128,30 +2128,30 @@ class TColgp_Array2OfPnt(object):
     def __init__(self, *args): 
         """
         :param R1:
-        :type R1: int
+        :type R1: Standard_Integer
         :param R2:
-        :type R2: int
+        :type R2: Standard_Integer
         :param C1:
-        :type C1: int
+        :type C1: Standard_Integer
         :param C2:
-        :type C2: int
+        :type C2: Standard_Integer
         :rtype: None
 
         :param Item:
         :type Item: gp_Pnt
         :param R1:
-        :type R1: int
+        :type R1: Standard_Integer
         :param R2:
-        :type R2: int
+        :type R2: Standard_Integer
         :param C1:
-        :type C1: int
+        :type C1: Standard_Integer
         :param C2:
-        :type C2: int
+        :type C2: Standard_Integer
         :rtype: None
 
         """
         _TColgp.TColgp_Array2OfPnt_swiginit(self,_TColgp.new_TColgp_Array2OfPnt(*args))
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
         :param V:
         :type V: gp_Pnt
@@ -2160,14 +2160,14 @@ class TColgp_Array2OfPnt(object):
         """
         return _TColgp.TColgp_Array2OfPnt_Init(self, *args)
 
-    def Destroy(self, *args) -> "void" :
+    def Destroy(self):
         """
         :rtype: None
 
         """
-        return _TColgp.TColgp_Array2OfPnt_Destroy(self, *args)
+        return _TColgp.TColgp_Array2OfPnt_Destroy(self)
 
-    def Assign(self, *args) -> "TColgp_Array2OfPnt const &" :
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: TColgp_Array2OfPnt
@@ -2176,7 +2176,7 @@ class TColgp_Array2OfPnt(object):
         """
         return _TColgp.TColgp_Array2OfPnt_Assign(self, *args)
 
-    def Set(self, *args) -> "TColgp_Array2OfPnt const &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: TColgp_Array2OfPnt
@@ -2185,54 +2185,54 @@ class TColgp_Array2OfPnt(object):
         """
         return _TColgp.TColgp_Array2OfPnt_Set(self, *args)
 
-    def ColLength(self, *args) -> "Standard_Integer" :
+    def ColLength(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_Array2OfPnt_ColLength(self, *args)
+        return _TColgp.TColgp_Array2OfPnt_ColLength(self)
 
-    def RowLength(self, *args) -> "Standard_Integer" :
+    def RowLength(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_Array2OfPnt_RowLength(self, *args)
+        return _TColgp.TColgp_Array2OfPnt_RowLength(self)
 
-    def LowerCol(self, *args) -> "Standard_Integer" :
+    def LowerCol(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_Array2OfPnt_LowerCol(self, *args)
+        return _TColgp.TColgp_Array2OfPnt_LowerCol(self)
 
-    def LowerRow(self, *args) -> "Standard_Integer" :
+    def LowerRow(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_Array2OfPnt_LowerRow(self, *args)
+        return _TColgp.TColgp_Array2OfPnt_LowerRow(self)
 
-    def UpperCol(self, *args) -> "Standard_Integer" :
+    def UpperCol(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_Array2OfPnt_UpperCol(self, *args)
+        return _TColgp.TColgp_Array2OfPnt_UpperCol(self)
 
-    def UpperRow(self, *args) -> "Standard_Integer" :
+    def UpperRow(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_Array2OfPnt_UpperRow(self, *args)
+        return _TColgp.TColgp_Array2OfPnt_UpperRow(self)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Row:
-        :type Row: int
+        :type Row: Standard_Integer
         :param Col:
-        :type Col: int
+        :type Col: Standard_Integer
         :param Value:
         :type Value: gp_Pnt
         :rtype: None
@@ -2240,23 +2240,23 @@ class TColgp_Array2OfPnt(object):
         """
         return _TColgp.TColgp_Array2OfPnt_SetValue(self, *args)
 
-    def Value(self, *args) -> "gp_Pnt const" :
+    def Value(self, *args):
         """
         :param Row:
-        :type Row: int
+        :type Row: Standard_Integer
         :param Col:
-        :type Col: int
+        :type Col: Standard_Integer
         :rtype: gp_Pnt
 
         """
         return _TColgp.TColgp_Array2OfPnt_Value(self, *args)
 
-    def ChangeValue(self, *args) -> "gp_Pnt" :
+    def ChangeValue(self, *args):
         """
         :param Row:
-        :type Row: int
+        :type Row: Standard_Integer
         :param Col:
-        :type Col: int
+        :type Col: Standard_Integer
         :rtype: gp_Pnt
 
         """
@@ -2293,30 +2293,30 @@ class TColgp_Array2OfPnt2d(object):
     def __init__(self, *args): 
         """
         :param R1:
-        :type R1: int
+        :type R1: Standard_Integer
         :param R2:
-        :type R2: int
+        :type R2: Standard_Integer
         :param C1:
-        :type C1: int
+        :type C1: Standard_Integer
         :param C2:
-        :type C2: int
+        :type C2: Standard_Integer
         :rtype: None
 
         :param Item:
         :type Item: gp_Pnt2d
         :param R1:
-        :type R1: int
+        :type R1: Standard_Integer
         :param R2:
-        :type R2: int
+        :type R2: Standard_Integer
         :param C1:
-        :type C1: int
+        :type C1: Standard_Integer
         :param C2:
-        :type C2: int
+        :type C2: Standard_Integer
         :rtype: None
 
         """
         _TColgp.TColgp_Array2OfPnt2d_swiginit(self,_TColgp.new_TColgp_Array2OfPnt2d(*args))
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
         :param V:
         :type V: gp_Pnt2d
@@ -2325,14 +2325,14 @@ class TColgp_Array2OfPnt2d(object):
         """
         return _TColgp.TColgp_Array2OfPnt2d_Init(self, *args)
 
-    def Destroy(self, *args) -> "void" :
+    def Destroy(self):
         """
         :rtype: None
 
         """
-        return _TColgp.TColgp_Array2OfPnt2d_Destroy(self, *args)
+        return _TColgp.TColgp_Array2OfPnt2d_Destroy(self)
 
-    def Assign(self, *args) -> "TColgp_Array2OfPnt2d const &" :
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: TColgp_Array2OfPnt2d
@@ -2341,7 +2341,7 @@ class TColgp_Array2OfPnt2d(object):
         """
         return _TColgp.TColgp_Array2OfPnt2d_Assign(self, *args)
 
-    def Set(self, *args) -> "TColgp_Array2OfPnt2d const &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: TColgp_Array2OfPnt2d
@@ -2350,54 +2350,54 @@ class TColgp_Array2OfPnt2d(object):
         """
         return _TColgp.TColgp_Array2OfPnt2d_Set(self, *args)
 
-    def ColLength(self, *args) -> "Standard_Integer" :
+    def ColLength(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_Array2OfPnt2d_ColLength(self, *args)
+        return _TColgp.TColgp_Array2OfPnt2d_ColLength(self)
 
-    def RowLength(self, *args) -> "Standard_Integer" :
+    def RowLength(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_Array2OfPnt2d_RowLength(self, *args)
+        return _TColgp.TColgp_Array2OfPnt2d_RowLength(self)
 
-    def LowerCol(self, *args) -> "Standard_Integer" :
+    def LowerCol(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_Array2OfPnt2d_LowerCol(self, *args)
+        return _TColgp.TColgp_Array2OfPnt2d_LowerCol(self)
 
-    def LowerRow(self, *args) -> "Standard_Integer" :
+    def LowerRow(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_Array2OfPnt2d_LowerRow(self, *args)
+        return _TColgp.TColgp_Array2OfPnt2d_LowerRow(self)
 
-    def UpperCol(self, *args) -> "Standard_Integer" :
+    def UpperCol(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_Array2OfPnt2d_UpperCol(self, *args)
+        return _TColgp.TColgp_Array2OfPnt2d_UpperCol(self)
 
-    def UpperRow(self, *args) -> "Standard_Integer" :
+    def UpperRow(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_Array2OfPnt2d_UpperRow(self, *args)
+        return _TColgp.TColgp_Array2OfPnt2d_UpperRow(self)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Row:
-        :type Row: int
+        :type Row: Standard_Integer
         :param Col:
-        :type Col: int
+        :type Col: Standard_Integer
         :param Value:
         :type Value: gp_Pnt2d
         :rtype: None
@@ -2405,23 +2405,23 @@ class TColgp_Array2OfPnt2d(object):
         """
         return _TColgp.TColgp_Array2OfPnt2d_SetValue(self, *args)
 
-    def Value(self, *args) -> "gp_Pnt2d const" :
+    def Value(self, *args):
         """
         :param Row:
-        :type Row: int
+        :type Row: Standard_Integer
         :param Col:
-        :type Col: int
+        :type Col: Standard_Integer
         :rtype: gp_Pnt2d
 
         """
         return _TColgp.TColgp_Array2OfPnt2d_Value(self, *args)
 
-    def ChangeValue(self, *args) -> "gp_Pnt2d" :
+    def ChangeValue(self, *args):
         """
         :param Row:
-        :type Row: int
+        :type Row: Standard_Integer
         :param Col:
-        :type Col: int
+        :type Col: Standard_Integer
         :rtype: gp_Pnt2d
 
         """
@@ -2458,30 +2458,30 @@ class TColgp_Array2OfVec(object):
     def __init__(self, *args): 
         """
         :param R1:
-        :type R1: int
+        :type R1: Standard_Integer
         :param R2:
-        :type R2: int
+        :type R2: Standard_Integer
         :param C1:
-        :type C1: int
+        :type C1: Standard_Integer
         :param C2:
-        :type C2: int
+        :type C2: Standard_Integer
         :rtype: None
 
         :param Item:
         :type Item: gp_Vec
         :param R1:
-        :type R1: int
+        :type R1: Standard_Integer
         :param R2:
-        :type R2: int
+        :type R2: Standard_Integer
         :param C1:
-        :type C1: int
+        :type C1: Standard_Integer
         :param C2:
-        :type C2: int
+        :type C2: Standard_Integer
         :rtype: None
 
         """
         _TColgp.TColgp_Array2OfVec_swiginit(self,_TColgp.new_TColgp_Array2OfVec(*args))
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
         :param V:
         :type V: gp_Vec
@@ -2490,14 +2490,14 @@ class TColgp_Array2OfVec(object):
         """
         return _TColgp.TColgp_Array2OfVec_Init(self, *args)
 
-    def Destroy(self, *args) -> "void" :
+    def Destroy(self):
         """
         :rtype: None
 
         """
-        return _TColgp.TColgp_Array2OfVec_Destroy(self, *args)
+        return _TColgp.TColgp_Array2OfVec_Destroy(self)
 
-    def Assign(self, *args) -> "TColgp_Array2OfVec const &" :
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: TColgp_Array2OfVec
@@ -2506,7 +2506,7 @@ class TColgp_Array2OfVec(object):
         """
         return _TColgp.TColgp_Array2OfVec_Assign(self, *args)
 
-    def Set(self, *args) -> "TColgp_Array2OfVec const &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: TColgp_Array2OfVec
@@ -2515,54 +2515,54 @@ class TColgp_Array2OfVec(object):
         """
         return _TColgp.TColgp_Array2OfVec_Set(self, *args)
 
-    def ColLength(self, *args) -> "Standard_Integer" :
+    def ColLength(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_Array2OfVec_ColLength(self, *args)
+        return _TColgp.TColgp_Array2OfVec_ColLength(self)
 
-    def RowLength(self, *args) -> "Standard_Integer" :
+    def RowLength(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_Array2OfVec_RowLength(self, *args)
+        return _TColgp.TColgp_Array2OfVec_RowLength(self)
 
-    def LowerCol(self, *args) -> "Standard_Integer" :
+    def LowerCol(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_Array2OfVec_LowerCol(self, *args)
+        return _TColgp.TColgp_Array2OfVec_LowerCol(self)
 
-    def LowerRow(self, *args) -> "Standard_Integer" :
+    def LowerRow(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_Array2OfVec_LowerRow(self, *args)
+        return _TColgp.TColgp_Array2OfVec_LowerRow(self)
 
-    def UpperCol(self, *args) -> "Standard_Integer" :
+    def UpperCol(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_Array2OfVec_UpperCol(self, *args)
+        return _TColgp.TColgp_Array2OfVec_UpperCol(self)
 
-    def UpperRow(self, *args) -> "Standard_Integer" :
+    def UpperRow(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_Array2OfVec_UpperRow(self, *args)
+        return _TColgp.TColgp_Array2OfVec_UpperRow(self)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Row:
-        :type Row: int
+        :type Row: Standard_Integer
         :param Col:
-        :type Col: int
+        :type Col: Standard_Integer
         :param Value:
         :type Value: gp_Vec
         :rtype: None
@@ -2570,23 +2570,23 @@ class TColgp_Array2OfVec(object):
         """
         return _TColgp.TColgp_Array2OfVec_SetValue(self, *args)
 
-    def Value(self, *args) -> "gp_Vec const" :
+    def Value(self, *args):
         """
         :param Row:
-        :type Row: int
+        :type Row: Standard_Integer
         :param Col:
-        :type Col: int
+        :type Col: Standard_Integer
         :rtype: gp_Vec
 
         """
         return _TColgp.TColgp_Array2OfVec_Value(self, *args)
 
-    def ChangeValue(self, *args) -> "gp_Vec" :
+    def ChangeValue(self, *args):
         """
         :param Row:
-        :type Row: int
+        :type Row: Standard_Integer
         :param Col:
-        :type Col: int
+        :type Col: Standard_Integer
         :rtype: gp_Vec
 
         """
@@ -2623,30 +2623,30 @@ class TColgp_Array2OfVec2d(object):
     def __init__(self, *args): 
         """
         :param R1:
-        :type R1: int
+        :type R1: Standard_Integer
         :param R2:
-        :type R2: int
+        :type R2: Standard_Integer
         :param C1:
-        :type C1: int
+        :type C1: Standard_Integer
         :param C2:
-        :type C2: int
+        :type C2: Standard_Integer
         :rtype: None
 
         :param Item:
         :type Item: gp_Vec2d
         :param R1:
-        :type R1: int
+        :type R1: Standard_Integer
         :param R2:
-        :type R2: int
+        :type R2: Standard_Integer
         :param C1:
-        :type C1: int
+        :type C1: Standard_Integer
         :param C2:
-        :type C2: int
+        :type C2: Standard_Integer
         :rtype: None
 
         """
         _TColgp.TColgp_Array2OfVec2d_swiginit(self,_TColgp.new_TColgp_Array2OfVec2d(*args))
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
         :param V:
         :type V: gp_Vec2d
@@ -2655,14 +2655,14 @@ class TColgp_Array2OfVec2d(object):
         """
         return _TColgp.TColgp_Array2OfVec2d_Init(self, *args)
 
-    def Destroy(self, *args) -> "void" :
+    def Destroy(self):
         """
         :rtype: None
 
         """
-        return _TColgp.TColgp_Array2OfVec2d_Destroy(self, *args)
+        return _TColgp.TColgp_Array2OfVec2d_Destroy(self)
 
-    def Assign(self, *args) -> "TColgp_Array2OfVec2d const &" :
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: TColgp_Array2OfVec2d
@@ -2671,7 +2671,7 @@ class TColgp_Array2OfVec2d(object):
         """
         return _TColgp.TColgp_Array2OfVec2d_Assign(self, *args)
 
-    def Set(self, *args) -> "TColgp_Array2OfVec2d const &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: TColgp_Array2OfVec2d
@@ -2680,54 +2680,54 @@ class TColgp_Array2OfVec2d(object):
         """
         return _TColgp.TColgp_Array2OfVec2d_Set(self, *args)
 
-    def ColLength(self, *args) -> "Standard_Integer" :
+    def ColLength(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_Array2OfVec2d_ColLength(self, *args)
+        return _TColgp.TColgp_Array2OfVec2d_ColLength(self)
 
-    def RowLength(self, *args) -> "Standard_Integer" :
+    def RowLength(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_Array2OfVec2d_RowLength(self, *args)
+        return _TColgp.TColgp_Array2OfVec2d_RowLength(self)
 
-    def LowerCol(self, *args) -> "Standard_Integer" :
+    def LowerCol(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_Array2OfVec2d_LowerCol(self, *args)
+        return _TColgp.TColgp_Array2OfVec2d_LowerCol(self)
 
-    def LowerRow(self, *args) -> "Standard_Integer" :
+    def LowerRow(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_Array2OfVec2d_LowerRow(self, *args)
+        return _TColgp.TColgp_Array2OfVec2d_LowerRow(self)
 
-    def UpperCol(self, *args) -> "Standard_Integer" :
+    def UpperCol(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_Array2OfVec2d_UpperCol(self, *args)
+        return _TColgp.TColgp_Array2OfVec2d_UpperCol(self)
 
-    def UpperRow(self, *args) -> "Standard_Integer" :
+    def UpperRow(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_Array2OfVec2d_UpperRow(self, *args)
+        return _TColgp.TColgp_Array2OfVec2d_UpperRow(self)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Row:
-        :type Row: int
+        :type Row: Standard_Integer
         :param Col:
-        :type Col: int
+        :type Col: Standard_Integer
         :param Value:
         :type Value: gp_Vec2d
         :rtype: None
@@ -2735,23 +2735,23 @@ class TColgp_Array2OfVec2d(object):
         """
         return _TColgp.TColgp_Array2OfVec2d_SetValue(self, *args)
 
-    def Value(self, *args) -> "gp_Vec2d const" :
+    def Value(self, *args):
         """
         :param Row:
-        :type Row: int
+        :type Row: Standard_Integer
         :param Col:
-        :type Col: int
+        :type Col: Standard_Integer
         :rtype: gp_Vec2d
 
         """
         return _TColgp.TColgp_Array2OfVec2d_Value(self, *args)
 
-    def ChangeValue(self, *args) -> "gp_Vec2d" :
+    def ChangeValue(self, *args):
         """
         :param Row:
-        :type Row: int
+        :type Row: Standard_Integer
         :param Col:
-        :type Col: int
+        :type Col: Standard_Integer
         :rtype: gp_Vec2d
 
         """
@@ -2788,30 +2788,30 @@ class TColgp_Array2OfXY(object):
     def __init__(self, *args): 
         """
         :param R1:
-        :type R1: int
+        :type R1: Standard_Integer
         :param R2:
-        :type R2: int
+        :type R2: Standard_Integer
         :param C1:
-        :type C1: int
+        :type C1: Standard_Integer
         :param C2:
-        :type C2: int
+        :type C2: Standard_Integer
         :rtype: None
 
         :param Item:
         :type Item: gp_XY
         :param R1:
-        :type R1: int
+        :type R1: Standard_Integer
         :param R2:
-        :type R2: int
+        :type R2: Standard_Integer
         :param C1:
-        :type C1: int
+        :type C1: Standard_Integer
         :param C2:
-        :type C2: int
+        :type C2: Standard_Integer
         :rtype: None
 
         """
         _TColgp.TColgp_Array2OfXY_swiginit(self,_TColgp.new_TColgp_Array2OfXY(*args))
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
         :param V:
         :type V: gp_XY
@@ -2820,14 +2820,14 @@ class TColgp_Array2OfXY(object):
         """
         return _TColgp.TColgp_Array2OfXY_Init(self, *args)
 
-    def Destroy(self, *args) -> "void" :
+    def Destroy(self):
         """
         :rtype: None
 
         """
-        return _TColgp.TColgp_Array2OfXY_Destroy(self, *args)
+        return _TColgp.TColgp_Array2OfXY_Destroy(self)
 
-    def Assign(self, *args) -> "TColgp_Array2OfXY const &" :
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: TColgp_Array2OfXY
@@ -2836,7 +2836,7 @@ class TColgp_Array2OfXY(object):
         """
         return _TColgp.TColgp_Array2OfXY_Assign(self, *args)
 
-    def Set(self, *args) -> "TColgp_Array2OfXY const &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: TColgp_Array2OfXY
@@ -2845,54 +2845,54 @@ class TColgp_Array2OfXY(object):
         """
         return _TColgp.TColgp_Array2OfXY_Set(self, *args)
 
-    def ColLength(self, *args) -> "Standard_Integer" :
+    def ColLength(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_Array2OfXY_ColLength(self, *args)
+        return _TColgp.TColgp_Array2OfXY_ColLength(self)
 
-    def RowLength(self, *args) -> "Standard_Integer" :
+    def RowLength(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_Array2OfXY_RowLength(self, *args)
+        return _TColgp.TColgp_Array2OfXY_RowLength(self)
 
-    def LowerCol(self, *args) -> "Standard_Integer" :
+    def LowerCol(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_Array2OfXY_LowerCol(self, *args)
+        return _TColgp.TColgp_Array2OfXY_LowerCol(self)
 
-    def LowerRow(self, *args) -> "Standard_Integer" :
+    def LowerRow(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_Array2OfXY_LowerRow(self, *args)
+        return _TColgp.TColgp_Array2OfXY_LowerRow(self)
 
-    def UpperCol(self, *args) -> "Standard_Integer" :
+    def UpperCol(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_Array2OfXY_UpperCol(self, *args)
+        return _TColgp.TColgp_Array2OfXY_UpperCol(self)
 
-    def UpperRow(self, *args) -> "Standard_Integer" :
+    def UpperRow(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_Array2OfXY_UpperRow(self, *args)
+        return _TColgp.TColgp_Array2OfXY_UpperRow(self)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Row:
-        :type Row: int
+        :type Row: Standard_Integer
         :param Col:
-        :type Col: int
+        :type Col: Standard_Integer
         :param Value:
         :type Value: gp_XY
         :rtype: None
@@ -2900,23 +2900,23 @@ class TColgp_Array2OfXY(object):
         """
         return _TColgp.TColgp_Array2OfXY_SetValue(self, *args)
 
-    def Value(self, *args) -> "gp_XY const" :
+    def Value(self, *args):
         """
         :param Row:
-        :type Row: int
+        :type Row: Standard_Integer
         :param Col:
-        :type Col: int
+        :type Col: Standard_Integer
         :rtype: gp_XY
 
         """
         return _TColgp.TColgp_Array2OfXY_Value(self, *args)
 
-    def ChangeValue(self, *args) -> "gp_XY" :
+    def ChangeValue(self, *args):
         """
         :param Row:
-        :type Row: int
+        :type Row: Standard_Integer
         :param Col:
-        :type Col: int
+        :type Col: Standard_Integer
         :rtype: gp_XY
 
         """
@@ -2953,30 +2953,30 @@ class TColgp_Array2OfXYZ(object):
     def __init__(self, *args): 
         """
         :param R1:
-        :type R1: int
+        :type R1: Standard_Integer
         :param R2:
-        :type R2: int
+        :type R2: Standard_Integer
         :param C1:
-        :type C1: int
+        :type C1: Standard_Integer
         :param C2:
-        :type C2: int
+        :type C2: Standard_Integer
         :rtype: None
 
         :param Item:
         :type Item: gp_XYZ
         :param R1:
-        :type R1: int
+        :type R1: Standard_Integer
         :param R2:
-        :type R2: int
+        :type R2: Standard_Integer
         :param C1:
-        :type C1: int
+        :type C1: Standard_Integer
         :param C2:
-        :type C2: int
+        :type C2: Standard_Integer
         :rtype: None
 
         """
         _TColgp.TColgp_Array2OfXYZ_swiginit(self,_TColgp.new_TColgp_Array2OfXYZ(*args))
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
         :param V:
         :type V: gp_XYZ
@@ -2985,14 +2985,14 @@ class TColgp_Array2OfXYZ(object):
         """
         return _TColgp.TColgp_Array2OfXYZ_Init(self, *args)
 
-    def Destroy(self, *args) -> "void" :
+    def Destroy(self):
         """
         :rtype: None
 
         """
-        return _TColgp.TColgp_Array2OfXYZ_Destroy(self, *args)
+        return _TColgp.TColgp_Array2OfXYZ_Destroy(self)
 
-    def Assign(self, *args) -> "TColgp_Array2OfXYZ const &" :
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: TColgp_Array2OfXYZ
@@ -3001,7 +3001,7 @@ class TColgp_Array2OfXYZ(object):
         """
         return _TColgp.TColgp_Array2OfXYZ_Assign(self, *args)
 
-    def Set(self, *args) -> "TColgp_Array2OfXYZ const &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: TColgp_Array2OfXYZ
@@ -3010,54 +3010,54 @@ class TColgp_Array2OfXYZ(object):
         """
         return _TColgp.TColgp_Array2OfXYZ_Set(self, *args)
 
-    def ColLength(self, *args) -> "Standard_Integer" :
+    def ColLength(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_Array2OfXYZ_ColLength(self, *args)
+        return _TColgp.TColgp_Array2OfXYZ_ColLength(self)
 
-    def RowLength(self, *args) -> "Standard_Integer" :
+    def RowLength(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_Array2OfXYZ_RowLength(self, *args)
+        return _TColgp.TColgp_Array2OfXYZ_RowLength(self)
 
-    def LowerCol(self, *args) -> "Standard_Integer" :
+    def LowerCol(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_Array2OfXYZ_LowerCol(self, *args)
+        return _TColgp.TColgp_Array2OfXYZ_LowerCol(self)
 
-    def LowerRow(self, *args) -> "Standard_Integer" :
+    def LowerRow(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_Array2OfXYZ_LowerRow(self, *args)
+        return _TColgp.TColgp_Array2OfXYZ_LowerRow(self)
 
-    def UpperCol(self, *args) -> "Standard_Integer" :
+    def UpperCol(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_Array2OfXYZ_UpperCol(self, *args)
+        return _TColgp.TColgp_Array2OfXYZ_UpperCol(self)
 
-    def UpperRow(self, *args) -> "Standard_Integer" :
+    def UpperRow(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_Array2OfXYZ_UpperRow(self, *args)
+        return _TColgp.TColgp_Array2OfXYZ_UpperRow(self)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Row:
-        :type Row: int
+        :type Row: Standard_Integer
         :param Col:
-        :type Col: int
+        :type Col: Standard_Integer
         :param Value:
         :type Value: gp_XYZ
         :rtype: None
@@ -3065,23 +3065,23 @@ class TColgp_Array2OfXYZ(object):
         """
         return _TColgp.TColgp_Array2OfXYZ_SetValue(self, *args)
 
-    def Value(self, *args) -> "gp_XYZ const" :
+    def Value(self, *args):
         """
         :param Row:
-        :type Row: int
+        :type Row: Standard_Integer
         :param Col:
-        :type Col: int
+        :type Col: Standard_Integer
         :rtype: gp_XYZ
 
         """
         return _TColgp.TColgp_Array2OfXYZ_Value(self, *args)
 
-    def ChangeValue(self, *args) -> "gp_XYZ" :
+    def ChangeValue(self, *args):
         """
         :param Row:
-        :type Row: int
+        :type Row: Standard_Integer
         :param Col:
-        :type Col: int
+        :type Col: Standard_Integer
         :rtype: gp_XYZ
 
         """
@@ -3125,7 +3125,7 @@ class TColgp_DataMapIteratorOfDataMapOfIntegerCirc2d(OCC.TCollection.TCollection
 
         """
         _TColgp.TColgp_DataMapIteratorOfDataMapOfIntegerCirc2d_swiginit(self,_TColgp.new_TColgp_DataMapIteratorOfDataMapOfIntegerCirc2d(*args))
-    def Initialize(self, *args) -> "void" :
+    def Initialize(self, *args):
         """
         :param aMap:
         :type aMap: TColgp_DataMapOfIntegerCirc2d
@@ -3134,19 +3134,19 @@ class TColgp_DataMapIteratorOfDataMapOfIntegerCirc2d(OCC.TCollection.TCollection
         """
         return _TColgp.TColgp_DataMapIteratorOfDataMapOfIntegerCirc2d_Initialize(self, *args)
 
-    def Key(self, *args) -> "Standard_Integer const &" :
+    def Key(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_DataMapIteratorOfDataMapOfIntegerCirc2d_Key(self, *args)
+        return _TColgp.TColgp_DataMapIteratorOfDataMapOfIntegerCirc2d_Key(self)
 
-    def Value(self, *args) -> "gp_Circ2d const" :
+    def Value(self):
         """
         :rtype: gp_Circ2d
 
         """
-        return _TColgp.TColgp_DataMapIteratorOfDataMapOfIntegerCirc2d_Value(self, *args)
+        return _TColgp.TColgp_DataMapIteratorOfDataMapOfIntegerCirc2d_Value(self)
 
     def __del__(self):
     	try:
@@ -3169,7 +3169,7 @@ class TColgp_DataMapNodeOfDataMapOfIntegerCirc2d(OCC.TCollection.TCollection_Map
     def __init__(self, *args): 
         """
         :param K:
-        :type K: int &
+        :type K: Standard_Integer &
         :param I:
         :type I: gp_Circ2d
         :param n:
@@ -3178,26 +3178,26 @@ class TColgp_DataMapNodeOfDataMapOfIntegerCirc2d(OCC.TCollection.TCollection_Map
 
         """
         _TColgp.TColgp_DataMapNodeOfDataMapOfIntegerCirc2d_swiginit(self,_TColgp.new_TColgp_DataMapNodeOfDataMapOfIntegerCirc2d(*args))
-    def GetKey(self) -> "Standard_Integer" :
+    def GetKey(self):
         """GetKey(TColgp_DataMapNodeOfDataMapOfIntegerCirc2d self) -> Standard_Integer"""
         return _TColgp.TColgp_DataMapNodeOfDataMapOfIntegerCirc2d_GetKey(self)
 
-    def SetKey(self, *args) -> "void" :
+    def SetKey(self, *args):
         """SetKey(TColgp_DataMapNodeOfDataMapOfIntegerCirc2d self, Standard_Integer value)"""
         return _TColgp.TColgp_DataMapNodeOfDataMapOfIntegerCirc2d_SetKey(self, *args)
 
-    def Value(self, *args) -> "gp_Circ2d" :
+    def Value(self):
         """
         :rtype: gp_Circ2d
 
         """
-        return _TColgp.TColgp_DataMapNodeOfDataMapOfIntegerCirc2d_Value(self, *args)
+        return _TColgp.TColgp_DataMapNodeOfDataMapOfIntegerCirc2d_Value(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(TColgp_DataMapNodeOfDataMapOfIntegerCirc2d self)"""
         return _TColgp.TColgp_DataMapNodeOfDataMapOfIntegerCirc2d__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_TColgp_DataMapNodeOfDataMapOfIntegerCirc2d" :
+    def GetHandle(self):
         """GetHandle(TColgp_DataMapNodeOfDataMapOfIntegerCirc2d self) -> Handle_TColgp_DataMapNodeOfDataMapOfIntegerCirc2d"""
         return _TColgp.TColgp_DataMapNodeOfDataMapOfIntegerCirc2d_GetHandle(self)
 
@@ -3238,22 +3238,26 @@ Handle_TColgp_DataMapNodeOfDataMapOfIntegerCirc2d._kill_pointed = new_instanceme
 Handle_TColgp_DataMapNodeOfDataMapOfIntegerCirc2d_swigregister = _TColgp.Handle_TColgp_DataMapNodeOfDataMapOfIntegerCirc2d_swigregister
 Handle_TColgp_DataMapNodeOfDataMapOfIntegerCirc2d_swigregister(Handle_TColgp_DataMapNodeOfDataMapOfIntegerCirc2d)
 
-def Handle_TColgp_DataMapNodeOfDataMapOfIntegerCirc2d_DownCast(*args) -> "Handle_TColgp_DataMapNodeOfDataMapOfIntegerCirc2d const" :
+def Handle_TColgp_DataMapNodeOfDataMapOfIntegerCirc2d_DownCast(*args):
   return _TColgp.Handle_TColgp_DataMapNodeOfDataMapOfIntegerCirc2d_DownCast(*args)
 Handle_TColgp_DataMapNodeOfDataMapOfIntegerCirc2d_DownCast = _TColgp.Handle_TColgp_DataMapNodeOfDataMapOfIntegerCirc2d_DownCast
 
 class TColgp_DataMapOfIntegerCirc2d(OCC.TCollection.TCollection_BasicMap):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self, NbBuckets=1): 
         """
         :param NbBuckets: default value is 1
-        :type NbBuckets: int
+        :type NbBuckets: Standard_Integer
+        :rtype: None
+
+        :param NbBuckets: default value is 1
+        :type NbBuckets: Standard_Integer
         :rtype: None
 
         """
-        _TColgp.TColgp_DataMapOfIntegerCirc2d_swiginit(self,_TColgp.new_TColgp_DataMapOfIntegerCirc2d(*args))
-    def Assign(self, *args) -> "TColgp_DataMapOfIntegerCirc2d &" :
+        _TColgp.TColgp_DataMapOfIntegerCirc2d_swiginit(self,_TColgp.new_TColgp_DataMapOfIntegerCirc2d(NbBuckets))
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: TColgp_DataMapOfIntegerCirc2d
@@ -3262,7 +3266,7 @@ class TColgp_DataMapOfIntegerCirc2d(OCC.TCollection.TCollection_BasicMap):
         """
         return _TColgp.TColgp_DataMapOfIntegerCirc2d_Assign(self, *args)
 
-    def Set(self, *args) -> "TColgp_DataMapOfIntegerCirc2d &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: TColgp_DataMapOfIntegerCirc2d
@@ -3271,26 +3275,26 @@ class TColgp_DataMapOfIntegerCirc2d(OCC.TCollection.TCollection_BasicMap):
         """
         return _TColgp.TColgp_DataMapOfIntegerCirc2d_Set(self, *args)
 
-    def ReSize(self, *args) -> "void" :
+    def ReSize(self, *args):
         """
         :param NbBuckets:
-        :type NbBuckets: int
+        :type NbBuckets: Standard_Integer
         :rtype: None
 
         """
         return _TColgp.TColgp_DataMapOfIntegerCirc2d_ReSize(self, *args)
 
-    def Clear(self, *args) -> "void" :
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _TColgp.TColgp_DataMapOfIntegerCirc2d_Clear(self, *args)
+        return _TColgp.TColgp_DataMapOfIntegerCirc2d_Clear(self)
 
-    def Bind(self, *args) -> "Standard_Boolean" :
+    def Bind(self, *args):
         """
         :param K:
-        :type K: int &
+        :type K: Standard_Integer &
         :param I:
         :type I: gp_Circ2d
         :rtype: bool
@@ -3298,61 +3302,61 @@ class TColgp_DataMapOfIntegerCirc2d(OCC.TCollection.TCollection_BasicMap):
         """
         return _TColgp.TColgp_DataMapOfIntegerCirc2d_Bind(self, *args)
 
-    def IsBound(self, *args) -> "Standard_Boolean" :
+    def IsBound(self):
         """
         :param K:
-        :type K: int &
+        :type K: Standard_Integer &
         :rtype: bool
 
         """
-        return _TColgp.TColgp_DataMapOfIntegerCirc2d_IsBound(self, *args)
+        return _TColgp.TColgp_DataMapOfIntegerCirc2d_IsBound(self)
 
-    def UnBind(self, *args) -> "Standard_Boolean" :
+    def UnBind(self):
         """
         :param K:
-        :type K: int &
+        :type K: Standard_Integer &
         :rtype: bool
 
         """
-        return _TColgp.TColgp_DataMapOfIntegerCirc2d_UnBind(self, *args)
+        return _TColgp.TColgp_DataMapOfIntegerCirc2d_UnBind(self)
 
-    def Find(self, *args) -> "gp_Circ2d const" :
+    def Find(self):
         """
         :param K:
-        :type K: int &
+        :type K: Standard_Integer &
         :rtype: gp_Circ2d
 
         """
-        return _TColgp.TColgp_DataMapOfIntegerCirc2d_Find(self, *args)
+        return _TColgp.TColgp_DataMapOfIntegerCirc2d_Find(self)
 
-    def ChangeFind(self, *args) -> "gp_Circ2d" :
+    def ChangeFind(self):
         """
         :param K:
-        :type K: int &
+        :type K: Standard_Integer &
         :rtype: gp_Circ2d
 
         """
-        return _TColgp.TColgp_DataMapOfIntegerCirc2d_ChangeFind(self, *args)
+        return _TColgp.TColgp_DataMapOfIntegerCirc2d_ChangeFind(self)
 
-    def Find1(self, *args) -> "Standard_Address" :
+    def Find1(self):
         """
         :param K:
-        :type K: int &
+        :type K: Standard_Integer &
         :rtype: Standard_Address
 
         """
-        return _TColgp.TColgp_DataMapOfIntegerCirc2d_Find1(self, *args)
+        return _TColgp.TColgp_DataMapOfIntegerCirc2d_Find1(self)
 
-    def ChangeFind1(self, *args) -> "Standard_Address" :
+    def ChangeFind1(self):
         """
         :param K:
-        :type K: int &
+        :type K: Standard_Integer &
         :rtype: Standard_Address
 
         """
-        return _TColgp.TColgp_DataMapOfIntegerCirc2d_ChangeFind1(self, *args)
+        return _TColgp.TColgp_DataMapOfIntegerCirc2d_ChangeFind1(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(TColgp_DataMapOfIntegerCirc2d self)"""
         return _TColgp.TColgp_DataMapOfIntegerCirc2d__kill_pointed(self)
 
@@ -3385,22 +3389,22 @@ class TColgp_HArray1OfCirc2d(OCC.MMgt.MMgt_TShared):
     def __init__(self, *args): 
         """
         :param Low:
-        :type Low: int
+        :type Low: Standard_Integer
         :param Up:
-        :type Up: int
+        :type Up: Standard_Integer
         :rtype: None
 
         :param Low:
-        :type Low: int
+        :type Low: Standard_Integer
         :param Up:
-        :type Up: int
+        :type Up: Standard_Integer
         :param V:
         :type V: gp_Circ2d
         :rtype: None
 
         """
         _TColgp.TColgp_HArray1OfCirc2d_swiginit(self,_TColgp.new_TColgp_HArray1OfCirc2d(*args))
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
         :param V:
         :type V: gp_Circ2d
@@ -3409,31 +3413,31 @@ class TColgp_HArray1OfCirc2d(OCC.MMgt.MMgt_TShared):
         """
         return _TColgp.TColgp_HArray1OfCirc2d_Init(self, *args)
 
-    def Length(self, *args) -> "Standard_Integer" :
+    def Length(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_HArray1OfCirc2d_Length(self, *args)
+        return _TColgp.TColgp_HArray1OfCirc2d_Length(self)
 
-    def Lower(self, *args) -> "Standard_Integer" :
+    def Lower(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_HArray1OfCirc2d_Lower(self, *args)
+        return _TColgp.TColgp_HArray1OfCirc2d_Lower(self)
 
-    def Upper(self, *args) -> "Standard_Integer" :
+    def Upper(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_HArray1OfCirc2d_Upper(self, *args)
+        return _TColgp.TColgp_HArray1OfCirc2d_Upper(self)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Value:
         :type Value: gp_Circ2d
         :rtype: None
@@ -3441,43 +3445,43 @@ class TColgp_HArray1OfCirc2d(OCC.MMgt.MMgt_TShared):
         """
         return _TColgp.TColgp_HArray1OfCirc2d_SetValue(self, *args)
 
-    def Value(self, *args) -> "gp_Circ2d const" :
+    def Value(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: gp_Circ2d
 
         """
         return _TColgp.TColgp_HArray1OfCirc2d_Value(self, *args)
 
-    def ChangeValue(self, *args) -> "gp_Circ2d" :
+    def ChangeValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: gp_Circ2d
 
         """
         return _TColgp.TColgp_HArray1OfCirc2d_ChangeValue(self, *args)
 
-    def Array1(self, *args) -> "TColgp_Array1OfCirc2d const &" :
+    def Array1(self):
         """
         :rtype: TColgp_Array1OfCirc2d
 
         """
-        return _TColgp.TColgp_HArray1OfCirc2d_Array1(self, *args)
+        return _TColgp.TColgp_HArray1OfCirc2d_Array1(self)
 
-    def ChangeArray1(self, *args) -> "TColgp_Array1OfCirc2d &" :
+    def ChangeArray1(self):
         """
         :rtype: TColgp_Array1OfCirc2d
 
         """
-        return _TColgp.TColgp_HArray1OfCirc2d_ChangeArray1(self, *args)
+        return _TColgp.TColgp_HArray1OfCirc2d_ChangeArray1(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(TColgp_HArray1OfCirc2d self)"""
         return _TColgp.TColgp_HArray1OfCirc2d__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_TColgp_HArray1OfCirc2d" :
+    def GetHandle(self):
         """GetHandle(TColgp_HArray1OfCirc2d self) -> Handle_TColgp_HArray1OfCirc2d"""
         return _TColgp.TColgp_HArray1OfCirc2d_GetHandle(self)
 
@@ -3524,7 +3528,7 @@ Handle_TColgp_HArray1OfCirc2d._kill_pointed = new_instancemethod(_TColgp.Handle_
 Handle_TColgp_HArray1OfCirc2d_swigregister = _TColgp.Handle_TColgp_HArray1OfCirc2d_swigregister
 Handle_TColgp_HArray1OfCirc2d_swigregister(Handle_TColgp_HArray1OfCirc2d)
 
-def Handle_TColgp_HArray1OfCirc2d_DownCast(*args) -> "Handle_TColgp_HArray1OfCirc2d const" :
+def Handle_TColgp_HArray1OfCirc2d_DownCast(*args):
   return _TColgp.Handle_TColgp_HArray1OfCirc2d_DownCast(*args)
 Handle_TColgp_HArray1OfCirc2d_DownCast = _TColgp.Handle_TColgp_HArray1OfCirc2d_DownCast
 
@@ -3534,22 +3538,22 @@ class TColgp_HArray1OfDir(OCC.MMgt.MMgt_TShared):
     def __init__(self, *args): 
         """
         :param Low:
-        :type Low: int
+        :type Low: Standard_Integer
         :param Up:
-        :type Up: int
+        :type Up: Standard_Integer
         :rtype: None
 
         :param Low:
-        :type Low: int
+        :type Low: Standard_Integer
         :param Up:
-        :type Up: int
+        :type Up: Standard_Integer
         :param V:
         :type V: gp_Dir
         :rtype: None
 
         """
         _TColgp.TColgp_HArray1OfDir_swiginit(self,_TColgp.new_TColgp_HArray1OfDir(*args))
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
         :param V:
         :type V: gp_Dir
@@ -3558,31 +3562,31 @@ class TColgp_HArray1OfDir(OCC.MMgt.MMgt_TShared):
         """
         return _TColgp.TColgp_HArray1OfDir_Init(self, *args)
 
-    def Length(self, *args) -> "Standard_Integer" :
+    def Length(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_HArray1OfDir_Length(self, *args)
+        return _TColgp.TColgp_HArray1OfDir_Length(self)
 
-    def Lower(self, *args) -> "Standard_Integer" :
+    def Lower(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_HArray1OfDir_Lower(self, *args)
+        return _TColgp.TColgp_HArray1OfDir_Lower(self)
 
-    def Upper(self, *args) -> "Standard_Integer" :
+    def Upper(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_HArray1OfDir_Upper(self, *args)
+        return _TColgp.TColgp_HArray1OfDir_Upper(self)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Value:
         :type Value: gp_Dir
         :rtype: None
@@ -3590,43 +3594,43 @@ class TColgp_HArray1OfDir(OCC.MMgt.MMgt_TShared):
         """
         return _TColgp.TColgp_HArray1OfDir_SetValue(self, *args)
 
-    def Value(self, *args) -> "gp_Dir const" :
+    def Value(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: gp_Dir
 
         """
         return _TColgp.TColgp_HArray1OfDir_Value(self, *args)
 
-    def ChangeValue(self, *args) -> "gp_Dir" :
+    def ChangeValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: gp_Dir
 
         """
         return _TColgp.TColgp_HArray1OfDir_ChangeValue(self, *args)
 
-    def Array1(self, *args) -> "TColgp_Array1OfDir const &" :
+    def Array1(self):
         """
         :rtype: TColgp_Array1OfDir
 
         """
-        return _TColgp.TColgp_HArray1OfDir_Array1(self, *args)
+        return _TColgp.TColgp_HArray1OfDir_Array1(self)
 
-    def ChangeArray1(self, *args) -> "TColgp_Array1OfDir &" :
+    def ChangeArray1(self):
         """
         :rtype: TColgp_Array1OfDir
 
         """
-        return _TColgp.TColgp_HArray1OfDir_ChangeArray1(self, *args)
+        return _TColgp.TColgp_HArray1OfDir_ChangeArray1(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(TColgp_HArray1OfDir self)"""
         return _TColgp.TColgp_HArray1OfDir__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_TColgp_HArray1OfDir" :
+    def GetHandle(self):
         """GetHandle(TColgp_HArray1OfDir self) -> Handle_TColgp_HArray1OfDir"""
         return _TColgp.TColgp_HArray1OfDir_GetHandle(self)
 
@@ -3673,7 +3677,7 @@ Handle_TColgp_HArray1OfDir._kill_pointed = new_instancemethod(_TColgp.Handle_TCo
 Handle_TColgp_HArray1OfDir_swigregister = _TColgp.Handle_TColgp_HArray1OfDir_swigregister
 Handle_TColgp_HArray1OfDir_swigregister(Handle_TColgp_HArray1OfDir)
 
-def Handle_TColgp_HArray1OfDir_DownCast(*args) -> "Handle_TColgp_HArray1OfDir const" :
+def Handle_TColgp_HArray1OfDir_DownCast(*args):
   return _TColgp.Handle_TColgp_HArray1OfDir_DownCast(*args)
 Handle_TColgp_HArray1OfDir_DownCast = _TColgp.Handle_TColgp_HArray1OfDir_DownCast
 
@@ -3683,22 +3687,22 @@ class TColgp_HArray1OfDir2d(OCC.MMgt.MMgt_TShared):
     def __init__(self, *args): 
         """
         :param Low:
-        :type Low: int
+        :type Low: Standard_Integer
         :param Up:
-        :type Up: int
+        :type Up: Standard_Integer
         :rtype: None
 
         :param Low:
-        :type Low: int
+        :type Low: Standard_Integer
         :param Up:
-        :type Up: int
+        :type Up: Standard_Integer
         :param V:
         :type V: gp_Dir2d
         :rtype: None
 
         """
         _TColgp.TColgp_HArray1OfDir2d_swiginit(self,_TColgp.new_TColgp_HArray1OfDir2d(*args))
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
         :param V:
         :type V: gp_Dir2d
@@ -3707,31 +3711,31 @@ class TColgp_HArray1OfDir2d(OCC.MMgt.MMgt_TShared):
         """
         return _TColgp.TColgp_HArray1OfDir2d_Init(self, *args)
 
-    def Length(self, *args) -> "Standard_Integer" :
+    def Length(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_HArray1OfDir2d_Length(self, *args)
+        return _TColgp.TColgp_HArray1OfDir2d_Length(self)
 
-    def Lower(self, *args) -> "Standard_Integer" :
+    def Lower(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_HArray1OfDir2d_Lower(self, *args)
+        return _TColgp.TColgp_HArray1OfDir2d_Lower(self)
 
-    def Upper(self, *args) -> "Standard_Integer" :
+    def Upper(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_HArray1OfDir2d_Upper(self, *args)
+        return _TColgp.TColgp_HArray1OfDir2d_Upper(self)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Value:
         :type Value: gp_Dir2d
         :rtype: None
@@ -3739,43 +3743,43 @@ class TColgp_HArray1OfDir2d(OCC.MMgt.MMgt_TShared):
         """
         return _TColgp.TColgp_HArray1OfDir2d_SetValue(self, *args)
 
-    def Value(self, *args) -> "gp_Dir2d const" :
+    def Value(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: gp_Dir2d
 
         """
         return _TColgp.TColgp_HArray1OfDir2d_Value(self, *args)
 
-    def ChangeValue(self, *args) -> "gp_Dir2d" :
+    def ChangeValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: gp_Dir2d
 
         """
         return _TColgp.TColgp_HArray1OfDir2d_ChangeValue(self, *args)
 
-    def Array1(self, *args) -> "TColgp_Array1OfDir2d const &" :
+    def Array1(self):
         """
         :rtype: TColgp_Array1OfDir2d
 
         """
-        return _TColgp.TColgp_HArray1OfDir2d_Array1(self, *args)
+        return _TColgp.TColgp_HArray1OfDir2d_Array1(self)
 
-    def ChangeArray1(self, *args) -> "TColgp_Array1OfDir2d &" :
+    def ChangeArray1(self):
         """
         :rtype: TColgp_Array1OfDir2d
 
         """
-        return _TColgp.TColgp_HArray1OfDir2d_ChangeArray1(self, *args)
+        return _TColgp.TColgp_HArray1OfDir2d_ChangeArray1(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(TColgp_HArray1OfDir2d self)"""
         return _TColgp.TColgp_HArray1OfDir2d__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_TColgp_HArray1OfDir2d" :
+    def GetHandle(self):
         """GetHandle(TColgp_HArray1OfDir2d self) -> Handle_TColgp_HArray1OfDir2d"""
         return _TColgp.TColgp_HArray1OfDir2d_GetHandle(self)
 
@@ -3822,7 +3826,7 @@ Handle_TColgp_HArray1OfDir2d._kill_pointed = new_instancemethod(_TColgp.Handle_T
 Handle_TColgp_HArray1OfDir2d_swigregister = _TColgp.Handle_TColgp_HArray1OfDir2d_swigregister
 Handle_TColgp_HArray1OfDir2d_swigregister(Handle_TColgp_HArray1OfDir2d)
 
-def Handle_TColgp_HArray1OfDir2d_DownCast(*args) -> "Handle_TColgp_HArray1OfDir2d const" :
+def Handle_TColgp_HArray1OfDir2d_DownCast(*args):
   return _TColgp.Handle_TColgp_HArray1OfDir2d_DownCast(*args)
 Handle_TColgp_HArray1OfDir2d_DownCast = _TColgp.Handle_TColgp_HArray1OfDir2d_DownCast
 
@@ -3832,22 +3836,22 @@ class TColgp_HArray1OfLin2d(OCC.MMgt.MMgt_TShared):
     def __init__(self, *args): 
         """
         :param Low:
-        :type Low: int
+        :type Low: Standard_Integer
         :param Up:
-        :type Up: int
+        :type Up: Standard_Integer
         :rtype: None
 
         :param Low:
-        :type Low: int
+        :type Low: Standard_Integer
         :param Up:
-        :type Up: int
+        :type Up: Standard_Integer
         :param V:
         :type V: gp_Lin2d
         :rtype: None
 
         """
         _TColgp.TColgp_HArray1OfLin2d_swiginit(self,_TColgp.new_TColgp_HArray1OfLin2d(*args))
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
         :param V:
         :type V: gp_Lin2d
@@ -3856,31 +3860,31 @@ class TColgp_HArray1OfLin2d(OCC.MMgt.MMgt_TShared):
         """
         return _TColgp.TColgp_HArray1OfLin2d_Init(self, *args)
 
-    def Length(self, *args) -> "Standard_Integer" :
+    def Length(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_HArray1OfLin2d_Length(self, *args)
+        return _TColgp.TColgp_HArray1OfLin2d_Length(self)
 
-    def Lower(self, *args) -> "Standard_Integer" :
+    def Lower(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_HArray1OfLin2d_Lower(self, *args)
+        return _TColgp.TColgp_HArray1OfLin2d_Lower(self)
 
-    def Upper(self, *args) -> "Standard_Integer" :
+    def Upper(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_HArray1OfLin2d_Upper(self, *args)
+        return _TColgp.TColgp_HArray1OfLin2d_Upper(self)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Value:
         :type Value: gp_Lin2d
         :rtype: None
@@ -3888,43 +3892,43 @@ class TColgp_HArray1OfLin2d(OCC.MMgt.MMgt_TShared):
         """
         return _TColgp.TColgp_HArray1OfLin2d_SetValue(self, *args)
 
-    def Value(self, *args) -> "gp_Lin2d const" :
+    def Value(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: gp_Lin2d
 
         """
         return _TColgp.TColgp_HArray1OfLin2d_Value(self, *args)
 
-    def ChangeValue(self, *args) -> "gp_Lin2d" :
+    def ChangeValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: gp_Lin2d
 
         """
         return _TColgp.TColgp_HArray1OfLin2d_ChangeValue(self, *args)
 
-    def Array1(self, *args) -> "TColgp_Array1OfLin2d const &" :
+    def Array1(self):
         """
         :rtype: TColgp_Array1OfLin2d
 
         """
-        return _TColgp.TColgp_HArray1OfLin2d_Array1(self, *args)
+        return _TColgp.TColgp_HArray1OfLin2d_Array1(self)
 
-    def ChangeArray1(self, *args) -> "TColgp_Array1OfLin2d &" :
+    def ChangeArray1(self):
         """
         :rtype: TColgp_Array1OfLin2d
 
         """
-        return _TColgp.TColgp_HArray1OfLin2d_ChangeArray1(self, *args)
+        return _TColgp.TColgp_HArray1OfLin2d_ChangeArray1(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(TColgp_HArray1OfLin2d self)"""
         return _TColgp.TColgp_HArray1OfLin2d__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_TColgp_HArray1OfLin2d" :
+    def GetHandle(self):
         """GetHandle(TColgp_HArray1OfLin2d self) -> Handle_TColgp_HArray1OfLin2d"""
         return _TColgp.TColgp_HArray1OfLin2d_GetHandle(self)
 
@@ -3971,7 +3975,7 @@ Handle_TColgp_HArray1OfLin2d._kill_pointed = new_instancemethod(_TColgp.Handle_T
 Handle_TColgp_HArray1OfLin2d_swigregister = _TColgp.Handle_TColgp_HArray1OfLin2d_swigregister
 Handle_TColgp_HArray1OfLin2d_swigregister(Handle_TColgp_HArray1OfLin2d)
 
-def Handle_TColgp_HArray1OfLin2d_DownCast(*args) -> "Handle_TColgp_HArray1OfLin2d const" :
+def Handle_TColgp_HArray1OfLin2d_DownCast(*args):
   return _TColgp.Handle_TColgp_HArray1OfLin2d_DownCast(*args)
 Handle_TColgp_HArray1OfLin2d_DownCast = _TColgp.Handle_TColgp_HArray1OfLin2d_DownCast
 
@@ -3981,22 +3985,22 @@ class TColgp_HArray1OfPnt(OCC.MMgt.MMgt_TShared):
     def __init__(self, *args): 
         """
         :param Low:
-        :type Low: int
+        :type Low: Standard_Integer
         :param Up:
-        :type Up: int
+        :type Up: Standard_Integer
         :rtype: None
 
         :param Low:
-        :type Low: int
+        :type Low: Standard_Integer
         :param Up:
-        :type Up: int
+        :type Up: Standard_Integer
         :param V:
         :type V: gp_Pnt
         :rtype: None
 
         """
         _TColgp.TColgp_HArray1OfPnt_swiginit(self,_TColgp.new_TColgp_HArray1OfPnt(*args))
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
         :param V:
         :type V: gp_Pnt
@@ -4005,31 +4009,31 @@ class TColgp_HArray1OfPnt(OCC.MMgt.MMgt_TShared):
         """
         return _TColgp.TColgp_HArray1OfPnt_Init(self, *args)
 
-    def Length(self, *args) -> "Standard_Integer" :
+    def Length(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_HArray1OfPnt_Length(self, *args)
+        return _TColgp.TColgp_HArray1OfPnt_Length(self)
 
-    def Lower(self, *args) -> "Standard_Integer" :
+    def Lower(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_HArray1OfPnt_Lower(self, *args)
+        return _TColgp.TColgp_HArray1OfPnt_Lower(self)
 
-    def Upper(self, *args) -> "Standard_Integer" :
+    def Upper(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_HArray1OfPnt_Upper(self, *args)
+        return _TColgp.TColgp_HArray1OfPnt_Upper(self)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Value:
         :type Value: gp_Pnt
         :rtype: None
@@ -4037,43 +4041,43 @@ class TColgp_HArray1OfPnt(OCC.MMgt.MMgt_TShared):
         """
         return _TColgp.TColgp_HArray1OfPnt_SetValue(self, *args)
 
-    def Value(self, *args) -> "gp_Pnt const" :
+    def Value(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: gp_Pnt
 
         """
         return _TColgp.TColgp_HArray1OfPnt_Value(self, *args)
 
-    def ChangeValue(self, *args) -> "gp_Pnt" :
+    def ChangeValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: gp_Pnt
 
         """
         return _TColgp.TColgp_HArray1OfPnt_ChangeValue(self, *args)
 
-    def Array1(self, *args) -> "TColgp_Array1OfPnt const &" :
+    def Array1(self):
         """
         :rtype: TColgp_Array1OfPnt
 
         """
-        return _TColgp.TColgp_HArray1OfPnt_Array1(self, *args)
+        return _TColgp.TColgp_HArray1OfPnt_Array1(self)
 
-    def ChangeArray1(self, *args) -> "TColgp_Array1OfPnt &" :
+    def ChangeArray1(self):
         """
         :rtype: TColgp_Array1OfPnt
 
         """
-        return _TColgp.TColgp_HArray1OfPnt_ChangeArray1(self, *args)
+        return _TColgp.TColgp_HArray1OfPnt_ChangeArray1(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(TColgp_HArray1OfPnt self)"""
         return _TColgp.TColgp_HArray1OfPnt__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_TColgp_HArray1OfPnt" :
+    def GetHandle(self):
         """GetHandle(TColgp_HArray1OfPnt self) -> Handle_TColgp_HArray1OfPnt"""
         return _TColgp.TColgp_HArray1OfPnt_GetHandle(self)
 
@@ -4120,7 +4124,7 @@ Handle_TColgp_HArray1OfPnt._kill_pointed = new_instancemethod(_TColgp.Handle_TCo
 Handle_TColgp_HArray1OfPnt_swigregister = _TColgp.Handle_TColgp_HArray1OfPnt_swigregister
 Handle_TColgp_HArray1OfPnt_swigregister(Handle_TColgp_HArray1OfPnt)
 
-def Handle_TColgp_HArray1OfPnt_DownCast(*args) -> "Handle_TColgp_HArray1OfPnt const" :
+def Handle_TColgp_HArray1OfPnt_DownCast(*args):
   return _TColgp.Handle_TColgp_HArray1OfPnt_DownCast(*args)
 Handle_TColgp_HArray1OfPnt_DownCast = _TColgp.Handle_TColgp_HArray1OfPnt_DownCast
 
@@ -4130,22 +4134,22 @@ class TColgp_HArray1OfPnt2d(OCC.MMgt.MMgt_TShared):
     def __init__(self, *args): 
         """
         :param Low:
-        :type Low: int
+        :type Low: Standard_Integer
         :param Up:
-        :type Up: int
+        :type Up: Standard_Integer
         :rtype: None
 
         :param Low:
-        :type Low: int
+        :type Low: Standard_Integer
         :param Up:
-        :type Up: int
+        :type Up: Standard_Integer
         :param V:
         :type V: gp_Pnt2d
         :rtype: None
 
         """
         _TColgp.TColgp_HArray1OfPnt2d_swiginit(self,_TColgp.new_TColgp_HArray1OfPnt2d(*args))
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
         :param V:
         :type V: gp_Pnt2d
@@ -4154,31 +4158,31 @@ class TColgp_HArray1OfPnt2d(OCC.MMgt.MMgt_TShared):
         """
         return _TColgp.TColgp_HArray1OfPnt2d_Init(self, *args)
 
-    def Length(self, *args) -> "Standard_Integer" :
+    def Length(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_HArray1OfPnt2d_Length(self, *args)
+        return _TColgp.TColgp_HArray1OfPnt2d_Length(self)
 
-    def Lower(self, *args) -> "Standard_Integer" :
+    def Lower(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_HArray1OfPnt2d_Lower(self, *args)
+        return _TColgp.TColgp_HArray1OfPnt2d_Lower(self)
 
-    def Upper(self, *args) -> "Standard_Integer" :
+    def Upper(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_HArray1OfPnt2d_Upper(self, *args)
+        return _TColgp.TColgp_HArray1OfPnt2d_Upper(self)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Value:
         :type Value: gp_Pnt2d
         :rtype: None
@@ -4186,43 +4190,43 @@ class TColgp_HArray1OfPnt2d(OCC.MMgt.MMgt_TShared):
         """
         return _TColgp.TColgp_HArray1OfPnt2d_SetValue(self, *args)
 
-    def Value(self, *args) -> "gp_Pnt2d const" :
+    def Value(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: gp_Pnt2d
 
         """
         return _TColgp.TColgp_HArray1OfPnt2d_Value(self, *args)
 
-    def ChangeValue(self, *args) -> "gp_Pnt2d" :
+    def ChangeValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: gp_Pnt2d
 
         """
         return _TColgp.TColgp_HArray1OfPnt2d_ChangeValue(self, *args)
 
-    def Array1(self, *args) -> "TColgp_Array1OfPnt2d const &" :
+    def Array1(self):
         """
         :rtype: TColgp_Array1OfPnt2d
 
         """
-        return _TColgp.TColgp_HArray1OfPnt2d_Array1(self, *args)
+        return _TColgp.TColgp_HArray1OfPnt2d_Array1(self)
 
-    def ChangeArray1(self, *args) -> "TColgp_Array1OfPnt2d &" :
+    def ChangeArray1(self):
         """
         :rtype: TColgp_Array1OfPnt2d
 
         """
-        return _TColgp.TColgp_HArray1OfPnt2d_ChangeArray1(self, *args)
+        return _TColgp.TColgp_HArray1OfPnt2d_ChangeArray1(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(TColgp_HArray1OfPnt2d self)"""
         return _TColgp.TColgp_HArray1OfPnt2d__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_TColgp_HArray1OfPnt2d" :
+    def GetHandle(self):
         """GetHandle(TColgp_HArray1OfPnt2d self) -> Handle_TColgp_HArray1OfPnt2d"""
         return _TColgp.TColgp_HArray1OfPnt2d_GetHandle(self)
 
@@ -4269,7 +4273,7 @@ Handle_TColgp_HArray1OfPnt2d._kill_pointed = new_instancemethod(_TColgp.Handle_T
 Handle_TColgp_HArray1OfPnt2d_swigregister = _TColgp.Handle_TColgp_HArray1OfPnt2d_swigregister
 Handle_TColgp_HArray1OfPnt2d_swigregister(Handle_TColgp_HArray1OfPnt2d)
 
-def Handle_TColgp_HArray1OfPnt2d_DownCast(*args) -> "Handle_TColgp_HArray1OfPnt2d const" :
+def Handle_TColgp_HArray1OfPnt2d_DownCast(*args):
   return _TColgp.Handle_TColgp_HArray1OfPnt2d_DownCast(*args)
 Handle_TColgp_HArray1OfPnt2d_DownCast = _TColgp.Handle_TColgp_HArray1OfPnt2d_DownCast
 
@@ -4279,22 +4283,22 @@ class TColgp_HArray1OfVec(OCC.MMgt.MMgt_TShared):
     def __init__(self, *args): 
         """
         :param Low:
-        :type Low: int
+        :type Low: Standard_Integer
         :param Up:
-        :type Up: int
+        :type Up: Standard_Integer
         :rtype: None
 
         :param Low:
-        :type Low: int
+        :type Low: Standard_Integer
         :param Up:
-        :type Up: int
+        :type Up: Standard_Integer
         :param V:
         :type V: gp_Vec
         :rtype: None
 
         """
         _TColgp.TColgp_HArray1OfVec_swiginit(self,_TColgp.new_TColgp_HArray1OfVec(*args))
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
         :param V:
         :type V: gp_Vec
@@ -4303,31 +4307,31 @@ class TColgp_HArray1OfVec(OCC.MMgt.MMgt_TShared):
         """
         return _TColgp.TColgp_HArray1OfVec_Init(self, *args)
 
-    def Length(self, *args) -> "Standard_Integer" :
+    def Length(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_HArray1OfVec_Length(self, *args)
+        return _TColgp.TColgp_HArray1OfVec_Length(self)
 
-    def Lower(self, *args) -> "Standard_Integer" :
+    def Lower(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_HArray1OfVec_Lower(self, *args)
+        return _TColgp.TColgp_HArray1OfVec_Lower(self)
 
-    def Upper(self, *args) -> "Standard_Integer" :
+    def Upper(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_HArray1OfVec_Upper(self, *args)
+        return _TColgp.TColgp_HArray1OfVec_Upper(self)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Value:
         :type Value: gp_Vec
         :rtype: None
@@ -4335,43 +4339,43 @@ class TColgp_HArray1OfVec(OCC.MMgt.MMgt_TShared):
         """
         return _TColgp.TColgp_HArray1OfVec_SetValue(self, *args)
 
-    def Value(self, *args) -> "gp_Vec const" :
+    def Value(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: gp_Vec
 
         """
         return _TColgp.TColgp_HArray1OfVec_Value(self, *args)
 
-    def ChangeValue(self, *args) -> "gp_Vec" :
+    def ChangeValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: gp_Vec
 
         """
         return _TColgp.TColgp_HArray1OfVec_ChangeValue(self, *args)
 
-    def Array1(self, *args) -> "TColgp_Array1OfVec const &" :
+    def Array1(self):
         """
         :rtype: TColgp_Array1OfVec
 
         """
-        return _TColgp.TColgp_HArray1OfVec_Array1(self, *args)
+        return _TColgp.TColgp_HArray1OfVec_Array1(self)
 
-    def ChangeArray1(self, *args) -> "TColgp_Array1OfVec &" :
+    def ChangeArray1(self):
         """
         :rtype: TColgp_Array1OfVec
 
         """
-        return _TColgp.TColgp_HArray1OfVec_ChangeArray1(self, *args)
+        return _TColgp.TColgp_HArray1OfVec_ChangeArray1(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(TColgp_HArray1OfVec self)"""
         return _TColgp.TColgp_HArray1OfVec__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_TColgp_HArray1OfVec" :
+    def GetHandle(self):
         """GetHandle(TColgp_HArray1OfVec self) -> Handle_TColgp_HArray1OfVec"""
         return _TColgp.TColgp_HArray1OfVec_GetHandle(self)
 
@@ -4418,7 +4422,7 @@ Handle_TColgp_HArray1OfVec._kill_pointed = new_instancemethod(_TColgp.Handle_TCo
 Handle_TColgp_HArray1OfVec_swigregister = _TColgp.Handle_TColgp_HArray1OfVec_swigregister
 Handle_TColgp_HArray1OfVec_swigregister(Handle_TColgp_HArray1OfVec)
 
-def Handle_TColgp_HArray1OfVec_DownCast(*args) -> "Handle_TColgp_HArray1OfVec const" :
+def Handle_TColgp_HArray1OfVec_DownCast(*args):
   return _TColgp.Handle_TColgp_HArray1OfVec_DownCast(*args)
 Handle_TColgp_HArray1OfVec_DownCast = _TColgp.Handle_TColgp_HArray1OfVec_DownCast
 
@@ -4428,22 +4432,22 @@ class TColgp_HArray1OfVec2d(OCC.MMgt.MMgt_TShared):
     def __init__(self, *args): 
         """
         :param Low:
-        :type Low: int
+        :type Low: Standard_Integer
         :param Up:
-        :type Up: int
+        :type Up: Standard_Integer
         :rtype: None
 
         :param Low:
-        :type Low: int
+        :type Low: Standard_Integer
         :param Up:
-        :type Up: int
+        :type Up: Standard_Integer
         :param V:
         :type V: gp_Vec2d
         :rtype: None
 
         """
         _TColgp.TColgp_HArray1OfVec2d_swiginit(self,_TColgp.new_TColgp_HArray1OfVec2d(*args))
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
         :param V:
         :type V: gp_Vec2d
@@ -4452,31 +4456,31 @@ class TColgp_HArray1OfVec2d(OCC.MMgt.MMgt_TShared):
         """
         return _TColgp.TColgp_HArray1OfVec2d_Init(self, *args)
 
-    def Length(self, *args) -> "Standard_Integer" :
+    def Length(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_HArray1OfVec2d_Length(self, *args)
+        return _TColgp.TColgp_HArray1OfVec2d_Length(self)
 
-    def Lower(self, *args) -> "Standard_Integer" :
+    def Lower(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_HArray1OfVec2d_Lower(self, *args)
+        return _TColgp.TColgp_HArray1OfVec2d_Lower(self)
 
-    def Upper(self, *args) -> "Standard_Integer" :
+    def Upper(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_HArray1OfVec2d_Upper(self, *args)
+        return _TColgp.TColgp_HArray1OfVec2d_Upper(self)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Value:
         :type Value: gp_Vec2d
         :rtype: None
@@ -4484,43 +4488,43 @@ class TColgp_HArray1OfVec2d(OCC.MMgt.MMgt_TShared):
         """
         return _TColgp.TColgp_HArray1OfVec2d_SetValue(self, *args)
 
-    def Value(self, *args) -> "gp_Vec2d const" :
+    def Value(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: gp_Vec2d
 
         """
         return _TColgp.TColgp_HArray1OfVec2d_Value(self, *args)
 
-    def ChangeValue(self, *args) -> "gp_Vec2d" :
+    def ChangeValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: gp_Vec2d
 
         """
         return _TColgp.TColgp_HArray1OfVec2d_ChangeValue(self, *args)
 
-    def Array1(self, *args) -> "TColgp_Array1OfVec2d const &" :
+    def Array1(self):
         """
         :rtype: TColgp_Array1OfVec2d
 
         """
-        return _TColgp.TColgp_HArray1OfVec2d_Array1(self, *args)
+        return _TColgp.TColgp_HArray1OfVec2d_Array1(self)
 
-    def ChangeArray1(self, *args) -> "TColgp_Array1OfVec2d &" :
+    def ChangeArray1(self):
         """
         :rtype: TColgp_Array1OfVec2d
 
         """
-        return _TColgp.TColgp_HArray1OfVec2d_ChangeArray1(self, *args)
+        return _TColgp.TColgp_HArray1OfVec2d_ChangeArray1(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(TColgp_HArray1OfVec2d self)"""
         return _TColgp.TColgp_HArray1OfVec2d__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_TColgp_HArray1OfVec2d" :
+    def GetHandle(self):
         """GetHandle(TColgp_HArray1OfVec2d self) -> Handle_TColgp_HArray1OfVec2d"""
         return _TColgp.TColgp_HArray1OfVec2d_GetHandle(self)
 
@@ -4567,7 +4571,7 @@ Handle_TColgp_HArray1OfVec2d._kill_pointed = new_instancemethod(_TColgp.Handle_T
 Handle_TColgp_HArray1OfVec2d_swigregister = _TColgp.Handle_TColgp_HArray1OfVec2d_swigregister
 Handle_TColgp_HArray1OfVec2d_swigregister(Handle_TColgp_HArray1OfVec2d)
 
-def Handle_TColgp_HArray1OfVec2d_DownCast(*args) -> "Handle_TColgp_HArray1OfVec2d const" :
+def Handle_TColgp_HArray1OfVec2d_DownCast(*args):
   return _TColgp.Handle_TColgp_HArray1OfVec2d_DownCast(*args)
 Handle_TColgp_HArray1OfVec2d_DownCast = _TColgp.Handle_TColgp_HArray1OfVec2d_DownCast
 
@@ -4577,22 +4581,22 @@ class TColgp_HArray1OfXY(OCC.MMgt.MMgt_TShared):
     def __init__(self, *args): 
         """
         :param Low:
-        :type Low: int
+        :type Low: Standard_Integer
         :param Up:
-        :type Up: int
+        :type Up: Standard_Integer
         :rtype: None
 
         :param Low:
-        :type Low: int
+        :type Low: Standard_Integer
         :param Up:
-        :type Up: int
+        :type Up: Standard_Integer
         :param V:
         :type V: gp_XY
         :rtype: None
 
         """
         _TColgp.TColgp_HArray1OfXY_swiginit(self,_TColgp.new_TColgp_HArray1OfXY(*args))
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
         :param V:
         :type V: gp_XY
@@ -4601,31 +4605,31 @@ class TColgp_HArray1OfXY(OCC.MMgt.MMgt_TShared):
         """
         return _TColgp.TColgp_HArray1OfXY_Init(self, *args)
 
-    def Length(self, *args) -> "Standard_Integer" :
+    def Length(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_HArray1OfXY_Length(self, *args)
+        return _TColgp.TColgp_HArray1OfXY_Length(self)
 
-    def Lower(self, *args) -> "Standard_Integer" :
+    def Lower(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_HArray1OfXY_Lower(self, *args)
+        return _TColgp.TColgp_HArray1OfXY_Lower(self)
 
-    def Upper(self, *args) -> "Standard_Integer" :
+    def Upper(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_HArray1OfXY_Upper(self, *args)
+        return _TColgp.TColgp_HArray1OfXY_Upper(self)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Value:
         :type Value: gp_XY
         :rtype: None
@@ -4633,43 +4637,43 @@ class TColgp_HArray1OfXY(OCC.MMgt.MMgt_TShared):
         """
         return _TColgp.TColgp_HArray1OfXY_SetValue(self, *args)
 
-    def Value(self, *args) -> "gp_XY const" :
+    def Value(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: gp_XY
 
         """
         return _TColgp.TColgp_HArray1OfXY_Value(self, *args)
 
-    def ChangeValue(self, *args) -> "gp_XY" :
+    def ChangeValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: gp_XY
 
         """
         return _TColgp.TColgp_HArray1OfXY_ChangeValue(self, *args)
 
-    def Array1(self, *args) -> "TColgp_Array1OfXY const &" :
+    def Array1(self):
         """
         :rtype: TColgp_Array1OfXY
 
         """
-        return _TColgp.TColgp_HArray1OfXY_Array1(self, *args)
+        return _TColgp.TColgp_HArray1OfXY_Array1(self)
 
-    def ChangeArray1(self, *args) -> "TColgp_Array1OfXY &" :
+    def ChangeArray1(self):
         """
         :rtype: TColgp_Array1OfXY
 
         """
-        return _TColgp.TColgp_HArray1OfXY_ChangeArray1(self, *args)
+        return _TColgp.TColgp_HArray1OfXY_ChangeArray1(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(TColgp_HArray1OfXY self)"""
         return _TColgp.TColgp_HArray1OfXY__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_TColgp_HArray1OfXY" :
+    def GetHandle(self):
         """GetHandle(TColgp_HArray1OfXY self) -> Handle_TColgp_HArray1OfXY"""
         return _TColgp.TColgp_HArray1OfXY_GetHandle(self)
 
@@ -4716,7 +4720,7 @@ Handle_TColgp_HArray1OfXY._kill_pointed = new_instancemethod(_TColgp.Handle_TCol
 Handle_TColgp_HArray1OfXY_swigregister = _TColgp.Handle_TColgp_HArray1OfXY_swigregister
 Handle_TColgp_HArray1OfXY_swigregister(Handle_TColgp_HArray1OfXY)
 
-def Handle_TColgp_HArray1OfXY_DownCast(*args) -> "Handle_TColgp_HArray1OfXY const" :
+def Handle_TColgp_HArray1OfXY_DownCast(*args):
   return _TColgp.Handle_TColgp_HArray1OfXY_DownCast(*args)
 Handle_TColgp_HArray1OfXY_DownCast = _TColgp.Handle_TColgp_HArray1OfXY_DownCast
 
@@ -4726,22 +4730,22 @@ class TColgp_HArray1OfXYZ(OCC.MMgt.MMgt_TShared):
     def __init__(self, *args): 
         """
         :param Low:
-        :type Low: int
+        :type Low: Standard_Integer
         :param Up:
-        :type Up: int
+        :type Up: Standard_Integer
         :rtype: None
 
         :param Low:
-        :type Low: int
+        :type Low: Standard_Integer
         :param Up:
-        :type Up: int
+        :type Up: Standard_Integer
         :param V:
         :type V: gp_XYZ
         :rtype: None
 
         """
         _TColgp.TColgp_HArray1OfXYZ_swiginit(self,_TColgp.new_TColgp_HArray1OfXYZ(*args))
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
         :param V:
         :type V: gp_XYZ
@@ -4750,31 +4754,31 @@ class TColgp_HArray1OfXYZ(OCC.MMgt.MMgt_TShared):
         """
         return _TColgp.TColgp_HArray1OfXYZ_Init(self, *args)
 
-    def Length(self, *args) -> "Standard_Integer" :
+    def Length(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_HArray1OfXYZ_Length(self, *args)
+        return _TColgp.TColgp_HArray1OfXYZ_Length(self)
 
-    def Lower(self, *args) -> "Standard_Integer" :
+    def Lower(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_HArray1OfXYZ_Lower(self, *args)
+        return _TColgp.TColgp_HArray1OfXYZ_Lower(self)
 
-    def Upper(self, *args) -> "Standard_Integer" :
+    def Upper(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_HArray1OfXYZ_Upper(self, *args)
+        return _TColgp.TColgp_HArray1OfXYZ_Upper(self)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Value:
         :type Value: gp_XYZ
         :rtype: None
@@ -4782,43 +4786,43 @@ class TColgp_HArray1OfXYZ(OCC.MMgt.MMgt_TShared):
         """
         return _TColgp.TColgp_HArray1OfXYZ_SetValue(self, *args)
 
-    def Value(self, *args) -> "gp_XYZ const" :
+    def Value(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: gp_XYZ
 
         """
         return _TColgp.TColgp_HArray1OfXYZ_Value(self, *args)
 
-    def ChangeValue(self, *args) -> "gp_XYZ" :
+    def ChangeValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: gp_XYZ
 
         """
         return _TColgp.TColgp_HArray1OfXYZ_ChangeValue(self, *args)
 
-    def Array1(self, *args) -> "TColgp_Array1OfXYZ const &" :
+    def Array1(self):
         """
         :rtype: TColgp_Array1OfXYZ
 
         """
-        return _TColgp.TColgp_HArray1OfXYZ_Array1(self, *args)
+        return _TColgp.TColgp_HArray1OfXYZ_Array1(self)
 
-    def ChangeArray1(self, *args) -> "TColgp_Array1OfXYZ &" :
+    def ChangeArray1(self):
         """
         :rtype: TColgp_Array1OfXYZ
 
         """
-        return _TColgp.TColgp_HArray1OfXYZ_ChangeArray1(self, *args)
+        return _TColgp.TColgp_HArray1OfXYZ_ChangeArray1(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(TColgp_HArray1OfXYZ self)"""
         return _TColgp.TColgp_HArray1OfXYZ__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_TColgp_HArray1OfXYZ" :
+    def GetHandle(self):
         """GetHandle(TColgp_HArray1OfXYZ self) -> Handle_TColgp_HArray1OfXYZ"""
         return _TColgp.TColgp_HArray1OfXYZ_GetHandle(self)
 
@@ -4865,7 +4869,7 @@ Handle_TColgp_HArray1OfXYZ._kill_pointed = new_instancemethod(_TColgp.Handle_TCo
 Handle_TColgp_HArray1OfXYZ_swigregister = _TColgp.Handle_TColgp_HArray1OfXYZ_swigregister
 Handle_TColgp_HArray1OfXYZ_swigregister(Handle_TColgp_HArray1OfXYZ)
 
-def Handle_TColgp_HArray1OfXYZ_DownCast(*args) -> "Handle_TColgp_HArray1OfXYZ const" :
+def Handle_TColgp_HArray1OfXYZ_DownCast(*args):
   return _TColgp.Handle_TColgp_HArray1OfXYZ_DownCast(*args)
 Handle_TColgp_HArray1OfXYZ_DownCast = _TColgp.Handle_TColgp_HArray1OfXYZ_DownCast
 
@@ -4875,30 +4879,30 @@ class TColgp_HArray2OfCirc2d(OCC.MMgt.MMgt_TShared):
     def __init__(self, *args): 
         """
         :param R1:
-        :type R1: int
+        :type R1: Standard_Integer
         :param R2:
-        :type R2: int
+        :type R2: Standard_Integer
         :param C1:
-        :type C1: int
+        :type C1: Standard_Integer
         :param C2:
-        :type C2: int
+        :type C2: Standard_Integer
         :rtype: None
 
         :param R1:
-        :type R1: int
+        :type R1: Standard_Integer
         :param R2:
-        :type R2: int
+        :type R2: Standard_Integer
         :param C1:
-        :type C1: int
+        :type C1: Standard_Integer
         :param C2:
-        :type C2: int
+        :type C2: Standard_Integer
         :param V:
         :type V: gp_Circ2d
         :rtype: None
 
         """
         _TColgp.TColgp_HArray2OfCirc2d_swiginit(self,_TColgp.new_TColgp_HArray2OfCirc2d(*args))
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
         :param V:
         :type V: gp_Circ2d
@@ -4907,54 +4911,54 @@ class TColgp_HArray2OfCirc2d(OCC.MMgt.MMgt_TShared):
         """
         return _TColgp.TColgp_HArray2OfCirc2d_Init(self, *args)
 
-    def ColLength(self, *args) -> "Standard_Integer" :
+    def ColLength(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_HArray2OfCirc2d_ColLength(self, *args)
+        return _TColgp.TColgp_HArray2OfCirc2d_ColLength(self)
 
-    def RowLength(self, *args) -> "Standard_Integer" :
+    def RowLength(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_HArray2OfCirc2d_RowLength(self, *args)
+        return _TColgp.TColgp_HArray2OfCirc2d_RowLength(self)
 
-    def LowerCol(self, *args) -> "Standard_Integer" :
+    def LowerCol(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_HArray2OfCirc2d_LowerCol(self, *args)
+        return _TColgp.TColgp_HArray2OfCirc2d_LowerCol(self)
 
-    def LowerRow(self, *args) -> "Standard_Integer" :
+    def LowerRow(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_HArray2OfCirc2d_LowerRow(self, *args)
+        return _TColgp.TColgp_HArray2OfCirc2d_LowerRow(self)
 
-    def UpperCol(self, *args) -> "Standard_Integer" :
+    def UpperCol(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_HArray2OfCirc2d_UpperCol(self, *args)
+        return _TColgp.TColgp_HArray2OfCirc2d_UpperCol(self)
 
-    def UpperRow(self, *args) -> "Standard_Integer" :
+    def UpperRow(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_HArray2OfCirc2d_UpperRow(self, *args)
+        return _TColgp.TColgp_HArray2OfCirc2d_UpperRow(self)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Row:
-        :type Row: int
+        :type Row: Standard_Integer
         :param Col:
-        :type Col: int
+        :type Col: Standard_Integer
         :param Value:
         :type Value: gp_Circ2d
         :rtype: None
@@ -4962,47 +4966,47 @@ class TColgp_HArray2OfCirc2d(OCC.MMgt.MMgt_TShared):
         """
         return _TColgp.TColgp_HArray2OfCirc2d_SetValue(self, *args)
 
-    def Value(self, *args) -> "gp_Circ2d const" :
+    def Value(self, *args):
         """
         :param Row:
-        :type Row: int
+        :type Row: Standard_Integer
         :param Col:
-        :type Col: int
+        :type Col: Standard_Integer
         :rtype: gp_Circ2d
 
         """
         return _TColgp.TColgp_HArray2OfCirc2d_Value(self, *args)
 
-    def ChangeValue(self, *args) -> "gp_Circ2d" :
+    def ChangeValue(self, *args):
         """
         :param Row:
-        :type Row: int
+        :type Row: Standard_Integer
         :param Col:
-        :type Col: int
+        :type Col: Standard_Integer
         :rtype: gp_Circ2d
 
         """
         return _TColgp.TColgp_HArray2OfCirc2d_ChangeValue(self, *args)
 
-    def Array2(self, *args) -> "TColgp_Array2OfCirc2d const &" :
+    def Array2(self):
         """
         :rtype: TColgp_Array2OfCirc2d
 
         """
-        return _TColgp.TColgp_HArray2OfCirc2d_Array2(self, *args)
+        return _TColgp.TColgp_HArray2OfCirc2d_Array2(self)
 
-    def ChangeArray2(self, *args) -> "TColgp_Array2OfCirc2d &" :
+    def ChangeArray2(self):
         """
         :rtype: TColgp_Array2OfCirc2d
 
         """
-        return _TColgp.TColgp_HArray2OfCirc2d_ChangeArray2(self, *args)
+        return _TColgp.TColgp_HArray2OfCirc2d_ChangeArray2(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(TColgp_HArray2OfCirc2d self)"""
         return _TColgp.TColgp_HArray2OfCirc2d__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_TColgp_HArray2OfCirc2d" :
+    def GetHandle(self):
         """GetHandle(TColgp_HArray2OfCirc2d self) -> Handle_TColgp_HArray2OfCirc2d"""
         return _TColgp.TColgp_HArray2OfCirc2d_GetHandle(self)
 
@@ -5052,7 +5056,7 @@ Handle_TColgp_HArray2OfCirc2d._kill_pointed = new_instancemethod(_TColgp.Handle_
 Handle_TColgp_HArray2OfCirc2d_swigregister = _TColgp.Handle_TColgp_HArray2OfCirc2d_swigregister
 Handle_TColgp_HArray2OfCirc2d_swigregister(Handle_TColgp_HArray2OfCirc2d)
 
-def Handle_TColgp_HArray2OfCirc2d_DownCast(*args) -> "Handle_TColgp_HArray2OfCirc2d const" :
+def Handle_TColgp_HArray2OfCirc2d_DownCast(*args):
   return _TColgp.Handle_TColgp_HArray2OfCirc2d_DownCast(*args)
 Handle_TColgp_HArray2OfCirc2d_DownCast = _TColgp.Handle_TColgp_HArray2OfCirc2d_DownCast
 
@@ -5062,30 +5066,30 @@ class TColgp_HArray2OfDir(OCC.MMgt.MMgt_TShared):
     def __init__(self, *args): 
         """
         :param R1:
-        :type R1: int
+        :type R1: Standard_Integer
         :param R2:
-        :type R2: int
+        :type R2: Standard_Integer
         :param C1:
-        :type C1: int
+        :type C1: Standard_Integer
         :param C2:
-        :type C2: int
+        :type C2: Standard_Integer
         :rtype: None
 
         :param R1:
-        :type R1: int
+        :type R1: Standard_Integer
         :param R2:
-        :type R2: int
+        :type R2: Standard_Integer
         :param C1:
-        :type C1: int
+        :type C1: Standard_Integer
         :param C2:
-        :type C2: int
+        :type C2: Standard_Integer
         :param V:
         :type V: gp_Dir
         :rtype: None
 
         """
         _TColgp.TColgp_HArray2OfDir_swiginit(self,_TColgp.new_TColgp_HArray2OfDir(*args))
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
         :param V:
         :type V: gp_Dir
@@ -5094,54 +5098,54 @@ class TColgp_HArray2OfDir(OCC.MMgt.MMgt_TShared):
         """
         return _TColgp.TColgp_HArray2OfDir_Init(self, *args)
 
-    def ColLength(self, *args) -> "Standard_Integer" :
+    def ColLength(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_HArray2OfDir_ColLength(self, *args)
+        return _TColgp.TColgp_HArray2OfDir_ColLength(self)
 
-    def RowLength(self, *args) -> "Standard_Integer" :
+    def RowLength(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_HArray2OfDir_RowLength(self, *args)
+        return _TColgp.TColgp_HArray2OfDir_RowLength(self)
 
-    def LowerCol(self, *args) -> "Standard_Integer" :
+    def LowerCol(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_HArray2OfDir_LowerCol(self, *args)
+        return _TColgp.TColgp_HArray2OfDir_LowerCol(self)
 
-    def LowerRow(self, *args) -> "Standard_Integer" :
+    def LowerRow(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_HArray2OfDir_LowerRow(self, *args)
+        return _TColgp.TColgp_HArray2OfDir_LowerRow(self)
 
-    def UpperCol(self, *args) -> "Standard_Integer" :
+    def UpperCol(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_HArray2OfDir_UpperCol(self, *args)
+        return _TColgp.TColgp_HArray2OfDir_UpperCol(self)
 
-    def UpperRow(self, *args) -> "Standard_Integer" :
+    def UpperRow(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_HArray2OfDir_UpperRow(self, *args)
+        return _TColgp.TColgp_HArray2OfDir_UpperRow(self)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Row:
-        :type Row: int
+        :type Row: Standard_Integer
         :param Col:
-        :type Col: int
+        :type Col: Standard_Integer
         :param Value:
         :type Value: gp_Dir
         :rtype: None
@@ -5149,47 +5153,47 @@ class TColgp_HArray2OfDir(OCC.MMgt.MMgt_TShared):
         """
         return _TColgp.TColgp_HArray2OfDir_SetValue(self, *args)
 
-    def Value(self, *args) -> "gp_Dir const" :
+    def Value(self, *args):
         """
         :param Row:
-        :type Row: int
+        :type Row: Standard_Integer
         :param Col:
-        :type Col: int
+        :type Col: Standard_Integer
         :rtype: gp_Dir
 
         """
         return _TColgp.TColgp_HArray2OfDir_Value(self, *args)
 
-    def ChangeValue(self, *args) -> "gp_Dir" :
+    def ChangeValue(self, *args):
         """
         :param Row:
-        :type Row: int
+        :type Row: Standard_Integer
         :param Col:
-        :type Col: int
+        :type Col: Standard_Integer
         :rtype: gp_Dir
 
         """
         return _TColgp.TColgp_HArray2OfDir_ChangeValue(self, *args)
 
-    def Array2(self, *args) -> "TColgp_Array2OfDir const &" :
+    def Array2(self):
         """
         :rtype: TColgp_Array2OfDir
 
         """
-        return _TColgp.TColgp_HArray2OfDir_Array2(self, *args)
+        return _TColgp.TColgp_HArray2OfDir_Array2(self)
 
-    def ChangeArray2(self, *args) -> "TColgp_Array2OfDir &" :
+    def ChangeArray2(self):
         """
         :rtype: TColgp_Array2OfDir
 
         """
-        return _TColgp.TColgp_HArray2OfDir_ChangeArray2(self, *args)
+        return _TColgp.TColgp_HArray2OfDir_ChangeArray2(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(TColgp_HArray2OfDir self)"""
         return _TColgp.TColgp_HArray2OfDir__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_TColgp_HArray2OfDir" :
+    def GetHandle(self):
         """GetHandle(TColgp_HArray2OfDir self) -> Handle_TColgp_HArray2OfDir"""
         return _TColgp.TColgp_HArray2OfDir_GetHandle(self)
 
@@ -5239,7 +5243,7 @@ Handle_TColgp_HArray2OfDir._kill_pointed = new_instancemethod(_TColgp.Handle_TCo
 Handle_TColgp_HArray2OfDir_swigregister = _TColgp.Handle_TColgp_HArray2OfDir_swigregister
 Handle_TColgp_HArray2OfDir_swigregister(Handle_TColgp_HArray2OfDir)
 
-def Handle_TColgp_HArray2OfDir_DownCast(*args) -> "Handle_TColgp_HArray2OfDir const" :
+def Handle_TColgp_HArray2OfDir_DownCast(*args):
   return _TColgp.Handle_TColgp_HArray2OfDir_DownCast(*args)
 Handle_TColgp_HArray2OfDir_DownCast = _TColgp.Handle_TColgp_HArray2OfDir_DownCast
 
@@ -5249,30 +5253,30 @@ class TColgp_HArray2OfDir2d(OCC.MMgt.MMgt_TShared):
     def __init__(self, *args): 
         """
         :param R1:
-        :type R1: int
+        :type R1: Standard_Integer
         :param R2:
-        :type R2: int
+        :type R2: Standard_Integer
         :param C1:
-        :type C1: int
+        :type C1: Standard_Integer
         :param C2:
-        :type C2: int
+        :type C2: Standard_Integer
         :rtype: None
 
         :param R1:
-        :type R1: int
+        :type R1: Standard_Integer
         :param R2:
-        :type R2: int
+        :type R2: Standard_Integer
         :param C1:
-        :type C1: int
+        :type C1: Standard_Integer
         :param C2:
-        :type C2: int
+        :type C2: Standard_Integer
         :param V:
         :type V: gp_Dir2d
         :rtype: None
 
         """
         _TColgp.TColgp_HArray2OfDir2d_swiginit(self,_TColgp.new_TColgp_HArray2OfDir2d(*args))
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
         :param V:
         :type V: gp_Dir2d
@@ -5281,54 +5285,54 @@ class TColgp_HArray2OfDir2d(OCC.MMgt.MMgt_TShared):
         """
         return _TColgp.TColgp_HArray2OfDir2d_Init(self, *args)
 
-    def ColLength(self, *args) -> "Standard_Integer" :
+    def ColLength(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_HArray2OfDir2d_ColLength(self, *args)
+        return _TColgp.TColgp_HArray2OfDir2d_ColLength(self)
 
-    def RowLength(self, *args) -> "Standard_Integer" :
+    def RowLength(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_HArray2OfDir2d_RowLength(self, *args)
+        return _TColgp.TColgp_HArray2OfDir2d_RowLength(self)
 
-    def LowerCol(self, *args) -> "Standard_Integer" :
+    def LowerCol(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_HArray2OfDir2d_LowerCol(self, *args)
+        return _TColgp.TColgp_HArray2OfDir2d_LowerCol(self)
 
-    def LowerRow(self, *args) -> "Standard_Integer" :
+    def LowerRow(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_HArray2OfDir2d_LowerRow(self, *args)
+        return _TColgp.TColgp_HArray2OfDir2d_LowerRow(self)
 
-    def UpperCol(self, *args) -> "Standard_Integer" :
+    def UpperCol(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_HArray2OfDir2d_UpperCol(self, *args)
+        return _TColgp.TColgp_HArray2OfDir2d_UpperCol(self)
 
-    def UpperRow(self, *args) -> "Standard_Integer" :
+    def UpperRow(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_HArray2OfDir2d_UpperRow(self, *args)
+        return _TColgp.TColgp_HArray2OfDir2d_UpperRow(self)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Row:
-        :type Row: int
+        :type Row: Standard_Integer
         :param Col:
-        :type Col: int
+        :type Col: Standard_Integer
         :param Value:
         :type Value: gp_Dir2d
         :rtype: None
@@ -5336,47 +5340,47 @@ class TColgp_HArray2OfDir2d(OCC.MMgt.MMgt_TShared):
         """
         return _TColgp.TColgp_HArray2OfDir2d_SetValue(self, *args)
 
-    def Value(self, *args) -> "gp_Dir2d const" :
+    def Value(self, *args):
         """
         :param Row:
-        :type Row: int
+        :type Row: Standard_Integer
         :param Col:
-        :type Col: int
+        :type Col: Standard_Integer
         :rtype: gp_Dir2d
 
         """
         return _TColgp.TColgp_HArray2OfDir2d_Value(self, *args)
 
-    def ChangeValue(self, *args) -> "gp_Dir2d" :
+    def ChangeValue(self, *args):
         """
         :param Row:
-        :type Row: int
+        :type Row: Standard_Integer
         :param Col:
-        :type Col: int
+        :type Col: Standard_Integer
         :rtype: gp_Dir2d
 
         """
         return _TColgp.TColgp_HArray2OfDir2d_ChangeValue(self, *args)
 
-    def Array2(self, *args) -> "TColgp_Array2OfDir2d const &" :
+    def Array2(self):
         """
         :rtype: TColgp_Array2OfDir2d
 
         """
-        return _TColgp.TColgp_HArray2OfDir2d_Array2(self, *args)
+        return _TColgp.TColgp_HArray2OfDir2d_Array2(self)
 
-    def ChangeArray2(self, *args) -> "TColgp_Array2OfDir2d &" :
+    def ChangeArray2(self):
         """
         :rtype: TColgp_Array2OfDir2d
 
         """
-        return _TColgp.TColgp_HArray2OfDir2d_ChangeArray2(self, *args)
+        return _TColgp.TColgp_HArray2OfDir2d_ChangeArray2(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(TColgp_HArray2OfDir2d self)"""
         return _TColgp.TColgp_HArray2OfDir2d__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_TColgp_HArray2OfDir2d" :
+    def GetHandle(self):
         """GetHandle(TColgp_HArray2OfDir2d self) -> Handle_TColgp_HArray2OfDir2d"""
         return _TColgp.TColgp_HArray2OfDir2d_GetHandle(self)
 
@@ -5426,7 +5430,7 @@ Handle_TColgp_HArray2OfDir2d._kill_pointed = new_instancemethod(_TColgp.Handle_T
 Handle_TColgp_HArray2OfDir2d_swigregister = _TColgp.Handle_TColgp_HArray2OfDir2d_swigregister
 Handle_TColgp_HArray2OfDir2d_swigregister(Handle_TColgp_HArray2OfDir2d)
 
-def Handle_TColgp_HArray2OfDir2d_DownCast(*args) -> "Handle_TColgp_HArray2OfDir2d const" :
+def Handle_TColgp_HArray2OfDir2d_DownCast(*args):
   return _TColgp.Handle_TColgp_HArray2OfDir2d_DownCast(*args)
 Handle_TColgp_HArray2OfDir2d_DownCast = _TColgp.Handle_TColgp_HArray2OfDir2d_DownCast
 
@@ -5436,30 +5440,30 @@ class TColgp_HArray2OfLin2d(OCC.MMgt.MMgt_TShared):
     def __init__(self, *args): 
         """
         :param R1:
-        :type R1: int
+        :type R1: Standard_Integer
         :param R2:
-        :type R2: int
+        :type R2: Standard_Integer
         :param C1:
-        :type C1: int
+        :type C1: Standard_Integer
         :param C2:
-        :type C2: int
+        :type C2: Standard_Integer
         :rtype: None
 
         :param R1:
-        :type R1: int
+        :type R1: Standard_Integer
         :param R2:
-        :type R2: int
+        :type R2: Standard_Integer
         :param C1:
-        :type C1: int
+        :type C1: Standard_Integer
         :param C2:
-        :type C2: int
+        :type C2: Standard_Integer
         :param V:
         :type V: gp_Lin2d
         :rtype: None
 
         """
         _TColgp.TColgp_HArray2OfLin2d_swiginit(self,_TColgp.new_TColgp_HArray2OfLin2d(*args))
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
         :param V:
         :type V: gp_Lin2d
@@ -5468,54 +5472,54 @@ class TColgp_HArray2OfLin2d(OCC.MMgt.MMgt_TShared):
         """
         return _TColgp.TColgp_HArray2OfLin2d_Init(self, *args)
 
-    def ColLength(self, *args) -> "Standard_Integer" :
+    def ColLength(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_HArray2OfLin2d_ColLength(self, *args)
+        return _TColgp.TColgp_HArray2OfLin2d_ColLength(self)
 
-    def RowLength(self, *args) -> "Standard_Integer" :
+    def RowLength(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_HArray2OfLin2d_RowLength(self, *args)
+        return _TColgp.TColgp_HArray2OfLin2d_RowLength(self)
 
-    def LowerCol(self, *args) -> "Standard_Integer" :
+    def LowerCol(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_HArray2OfLin2d_LowerCol(self, *args)
+        return _TColgp.TColgp_HArray2OfLin2d_LowerCol(self)
 
-    def LowerRow(self, *args) -> "Standard_Integer" :
+    def LowerRow(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_HArray2OfLin2d_LowerRow(self, *args)
+        return _TColgp.TColgp_HArray2OfLin2d_LowerRow(self)
 
-    def UpperCol(self, *args) -> "Standard_Integer" :
+    def UpperCol(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_HArray2OfLin2d_UpperCol(self, *args)
+        return _TColgp.TColgp_HArray2OfLin2d_UpperCol(self)
 
-    def UpperRow(self, *args) -> "Standard_Integer" :
+    def UpperRow(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_HArray2OfLin2d_UpperRow(self, *args)
+        return _TColgp.TColgp_HArray2OfLin2d_UpperRow(self)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Row:
-        :type Row: int
+        :type Row: Standard_Integer
         :param Col:
-        :type Col: int
+        :type Col: Standard_Integer
         :param Value:
         :type Value: gp_Lin2d
         :rtype: None
@@ -5523,47 +5527,47 @@ class TColgp_HArray2OfLin2d(OCC.MMgt.MMgt_TShared):
         """
         return _TColgp.TColgp_HArray2OfLin2d_SetValue(self, *args)
 
-    def Value(self, *args) -> "gp_Lin2d const" :
+    def Value(self, *args):
         """
         :param Row:
-        :type Row: int
+        :type Row: Standard_Integer
         :param Col:
-        :type Col: int
+        :type Col: Standard_Integer
         :rtype: gp_Lin2d
 
         """
         return _TColgp.TColgp_HArray2OfLin2d_Value(self, *args)
 
-    def ChangeValue(self, *args) -> "gp_Lin2d" :
+    def ChangeValue(self, *args):
         """
         :param Row:
-        :type Row: int
+        :type Row: Standard_Integer
         :param Col:
-        :type Col: int
+        :type Col: Standard_Integer
         :rtype: gp_Lin2d
 
         """
         return _TColgp.TColgp_HArray2OfLin2d_ChangeValue(self, *args)
 
-    def Array2(self, *args) -> "TColgp_Array2OfLin2d const &" :
+    def Array2(self):
         """
         :rtype: TColgp_Array2OfLin2d
 
         """
-        return _TColgp.TColgp_HArray2OfLin2d_Array2(self, *args)
+        return _TColgp.TColgp_HArray2OfLin2d_Array2(self)
 
-    def ChangeArray2(self, *args) -> "TColgp_Array2OfLin2d &" :
+    def ChangeArray2(self):
         """
         :rtype: TColgp_Array2OfLin2d
 
         """
-        return _TColgp.TColgp_HArray2OfLin2d_ChangeArray2(self, *args)
+        return _TColgp.TColgp_HArray2OfLin2d_ChangeArray2(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(TColgp_HArray2OfLin2d self)"""
         return _TColgp.TColgp_HArray2OfLin2d__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_TColgp_HArray2OfLin2d" :
+    def GetHandle(self):
         """GetHandle(TColgp_HArray2OfLin2d self) -> Handle_TColgp_HArray2OfLin2d"""
         return _TColgp.TColgp_HArray2OfLin2d_GetHandle(self)
 
@@ -5613,7 +5617,7 @@ Handle_TColgp_HArray2OfLin2d._kill_pointed = new_instancemethod(_TColgp.Handle_T
 Handle_TColgp_HArray2OfLin2d_swigregister = _TColgp.Handle_TColgp_HArray2OfLin2d_swigregister
 Handle_TColgp_HArray2OfLin2d_swigregister(Handle_TColgp_HArray2OfLin2d)
 
-def Handle_TColgp_HArray2OfLin2d_DownCast(*args) -> "Handle_TColgp_HArray2OfLin2d const" :
+def Handle_TColgp_HArray2OfLin2d_DownCast(*args):
   return _TColgp.Handle_TColgp_HArray2OfLin2d_DownCast(*args)
 Handle_TColgp_HArray2OfLin2d_DownCast = _TColgp.Handle_TColgp_HArray2OfLin2d_DownCast
 
@@ -5623,30 +5627,30 @@ class TColgp_HArray2OfPnt(OCC.MMgt.MMgt_TShared):
     def __init__(self, *args): 
         """
         :param R1:
-        :type R1: int
+        :type R1: Standard_Integer
         :param R2:
-        :type R2: int
+        :type R2: Standard_Integer
         :param C1:
-        :type C1: int
+        :type C1: Standard_Integer
         :param C2:
-        :type C2: int
+        :type C2: Standard_Integer
         :rtype: None
 
         :param R1:
-        :type R1: int
+        :type R1: Standard_Integer
         :param R2:
-        :type R2: int
+        :type R2: Standard_Integer
         :param C1:
-        :type C1: int
+        :type C1: Standard_Integer
         :param C2:
-        :type C2: int
+        :type C2: Standard_Integer
         :param V:
         :type V: gp_Pnt
         :rtype: None
 
         """
         _TColgp.TColgp_HArray2OfPnt_swiginit(self,_TColgp.new_TColgp_HArray2OfPnt(*args))
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
         :param V:
         :type V: gp_Pnt
@@ -5655,54 +5659,54 @@ class TColgp_HArray2OfPnt(OCC.MMgt.MMgt_TShared):
         """
         return _TColgp.TColgp_HArray2OfPnt_Init(self, *args)
 
-    def ColLength(self, *args) -> "Standard_Integer" :
+    def ColLength(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_HArray2OfPnt_ColLength(self, *args)
+        return _TColgp.TColgp_HArray2OfPnt_ColLength(self)
 
-    def RowLength(self, *args) -> "Standard_Integer" :
+    def RowLength(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_HArray2OfPnt_RowLength(self, *args)
+        return _TColgp.TColgp_HArray2OfPnt_RowLength(self)
 
-    def LowerCol(self, *args) -> "Standard_Integer" :
+    def LowerCol(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_HArray2OfPnt_LowerCol(self, *args)
+        return _TColgp.TColgp_HArray2OfPnt_LowerCol(self)
 
-    def LowerRow(self, *args) -> "Standard_Integer" :
+    def LowerRow(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_HArray2OfPnt_LowerRow(self, *args)
+        return _TColgp.TColgp_HArray2OfPnt_LowerRow(self)
 
-    def UpperCol(self, *args) -> "Standard_Integer" :
+    def UpperCol(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_HArray2OfPnt_UpperCol(self, *args)
+        return _TColgp.TColgp_HArray2OfPnt_UpperCol(self)
 
-    def UpperRow(self, *args) -> "Standard_Integer" :
+    def UpperRow(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_HArray2OfPnt_UpperRow(self, *args)
+        return _TColgp.TColgp_HArray2OfPnt_UpperRow(self)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Row:
-        :type Row: int
+        :type Row: Standard_Integer
         :param Col:
-        :type Col: int
+        :type Col: Standard_Integer
         :param Value:
         :type Value: gp_Pnt
         :rtype: None
@@ -5710,47 +5714,47 @@ class TColgp_HArray2OfPnt(OCC.MMgt.MMgt_TShared):
         """
         return _TColgp.TColgp_HArray2OfPnt_SetValue(self, *args)
 
-    def Value(self, *args) -> "gp_Pnt const" :
+    def Value(self, *args):
         """
         :param Row:
-        :type Row: int
+        :type Row: Standard_Integer
         :param Col:
-        :type Col: int
+        :type Col: Standard_Integer
         :rtype: gp_Pnt
 
         """
         return _TColgp.TColgp_HArray2OfPnt_Value(self, *args)
 
-    def ChangeValue(self, *args) -> "gp_Pnt" :
+    def ChangeValue(self, *args):
         """
         :param Row:
-        :type Row: int
+        :type Row: Standard_Integer
         :param Col:
-        :type Col: int
+        :type Col: Standard_Integer
         :rtype: gp_Pnt
 
         """
         return _TColgp.TColgp_HArray2OfPnt_ChangeValue(self, *args)
 
-    def Array2(self, *args) -> "TColgp_Array2OfPnt const &" :
+    def Array2(self):
         """
         :rtype: TColgp_Array2OfPnt
 
         """
-        return _TColgp.TColgp_HArray2OfPnt_Array2(self, *args)
+        return _TColgp.TColgp_HArray2OfPnt_Array2(self)
 
-    def ChangeArray2(self, *args) -> "TColgp_Array2OfPnt &" :
+    def ChangeArray2(self):
         """
         :rtype: TColgp_Array2OfPnt
 
         """
-        return _TColgp.TColgp_HArray2OfPnt_ChangeArray2(self, *args)
+        return _TColgp.TColgp_HArray2OfPnt_ChangeArray2(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(TColgp_HArray2OfPnt self)"""
         return _TColgp.TColgp_HArray2OfPnt__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_TColgp_HArray2OfPnt" :
+    def GetHandle(self):
         """GetHandle(TColgp_HArray2OfPnt self) -> Handle_TColgp_HArray2OfPnt"""
         return _TColgp.TColgp_HArray2OfPnt_GetHandle(self)
 
@@ -5800,7 +5804,7 @@ Handle_TColgp_HArray2OfPnt._kill_pointed = new_instancemethod(_TColgp.Handle_TCo
 Handle_TColgp_HArray2OfPnt_swigregister = _TColgp.Handle_TColgp_HArray2OfPnt_swigregister
 Handle_TColgp_HArray2OfPnt_swigregister(Handle_TColgp_HArray2OfPnt)
 
-def Handle_TColgp_HArray2OfPnt_DownCast(*args) -> "Handle_TColgp_HArray2OfPnt const" :
+def Handle_TColgp_HArray2OfPnt_DownCast(*args):
   return _TColgp.Handle_TColgp_HArray2OfPnt_DownCast(*args)
 Handle_TColgp_HArray2OfPnt_DownCast = _TColgp.Handle_TColgp_HArray2OfPnt_DownCast
 
@@ -5810,30 +5814,30 @@ class TColgp_HArray2OfPnt2d(OCC.MMgt.MMgt_TShared):
     def __init__(self, *args): 
         """
         :param R1:
-        :type R1: int
+        :type R1: Standard_Integer
         :param R2:
-        :type R2: int
+        :type R2: Standard_Integer
         :param C1:
-        :type C1: int
+        :type C1: Standard_Integer
         :param C2:
-        :type C2: int
+        :type C2: Standard_Integer
         :rtype: None
 
         :param R1:
-        :type R1: int
+        :type R1: Standard_Integer
         :param R2:
-        :type R2: int
+        :type R2: Standard_Integer
         :param C1:
-        :type C1: int
+        :type C1: Standard_Integer
         :param C2:
-        :type C2: int
+        :type C2: Standard_Integer
         :param V:
         :type V: gp_Pnt2d
         :rtype: None
 
         """
         _TColgp.TColgp_HArray2OfPnt2d_swiginit(self,_TColgp.new_TColgp_HArray2OfPnt2d(*args))
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
         :param V:
         :type V: gp_Pnt2d
@@ -5842,54 +5846,54 @@ class TColgp_HArray2OfPnt2d(OCC.MMgt.MMgt_TShared):
         """
         return _TColgp.TColgp_HArray2OfPnt2d_Init(self, *args)
 
-    def ColLength(self, *args) -> "Standard_Integer" :
+    def ColLength(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_HArray2OfPnt2d_ColLength(self, *args)
+        return _TColgp.TColgp_HArray2OfPnt2d_ColLength(self)
 
-    def RowLength(self, *args) -> "Standard_Integer" :
+    def RowLength(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_HArray2OfPnt2d_RowLength(self, *args)
+        return _TColgp.TColgp_HArray2OfPnt2d_RowLength(self)
 
-    def LowerCol(self, *args) -> "Standard_Integer" :
+    def LowerCol(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_HArray2OfPnt2d_LowerCol(self, *args)
+        return _TColgp.TColgp_HArray2OfPnt2d_LowerCol(self)
 
-    def LowerRow(self, *args) -> "Standard_Integer" :
+    def LowerRow(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_HArray2OfPnt2d_LowerRow(self, *args)
+        return _TColgp.TColgp_HArray2OfPnt2d_LowerRow(self)
 
-    def UpperCol(self, *args) -> "Standard_Integer" :
+    def UpperCol(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_HArray2OfPnt2d_UpperCol(self, *args)
+        return _TColgp.TColgp_HArray2OfPnt2d_UpperCol(self)
 
-    def UpperRow(self, *args) -> "Standard_Integer" :
+    def UpperRow(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_HArray2OfPnt2d_UpperRow(self, *args)
+        return _TColgp.TColgp_HArray2OfPnt2d_UpperRow(self)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Row:
-        :type Row: int
+        :type Row: Standard_Integer
         :param Col:
-        :type Col: int
+        :type Col: Standard_Integer
         :param Value:
         :type Value: gp_Pnt2d
         :rtype: None
@@ -5897,47 +5901,47 @@ class TColgp_HArray2OfPnt2d(OCC.MMgt.MMgt_TShared):
         """
         return _TColgp.TColgp_HArray2OfPnt2d_SetValue(self, *args)
 
-    def Value(self, *args) -> "gp_Pnt2d const" :
+    def Value(self, *args):
         """
         :param Row:
-        :type Row: int
+        :type Row: Standard_Integer
         :param Col:
-        :type Col: int
+        :type Col: Standard_Integer
         :rtype: gp_Pnt2d
 
         """
         return _TColgp.TColgp_HArray2OfPnt2d_Value(self, *args)
 
-    def ChangeValue(self, *args) -> "gp_Pnt2d" :
+    def ChangeValue(self, *args):
         """
         :param Row:
-        :type Row: int
+        :type Row: Standard_Integer
         :param Col:
-        :type Col: int
+        :type Col: Standard_Integer
         :rtype: gp_Pnt2d
 
         """
         return _TColgp.TColgp_HArray2OfPnt2d_ChangeValue(self, *args)
 
-    def Array2(self, *args) -> "TColgp_Array2OfPnt2d const &" :
+    def Array2(self):
         """
         :rtype: TColgp_Array2OfPnt2d
 
         """
-        return _TColgp.TColgp_HArray2OfPnt2d_Array2(self, *args)
+        return _TColgp.TColgp_HArray2OfPnt2d_Array2(self)
 
-    def ChangeArray2(self, *args) -> "TColgp_Array2OfPnt2d &" :
+    def ChangeArray2(self):
         """
         :rtype: TColgp_Array2OfPnt2d
 
         """
-        return _TColgp.TColgp_HArray2OfPnt2d_ChangeArray2(self, *args)
+        return _TColgp.TColgp_HArray2OfPnt2d_ChangeArray2(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(TColgp_HArray2OfPnt2d self)"""
         return _TColgp.TColgp_HArray2OfPnt2d__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_TColgp_HArray2OfPnt2d" :
+    def GetHandle(self):
         """GetHandle(TColgp_HArray2OfPnt2d self) -> Handle_TColgp_HArray2OfPnt2d"""
         return _TColgp.TColgp_HArray2OfPnt2d_GetHandle(self)
 
@@ -5987,7 +5991,7 @@ Handle_TColgp_HArray2OfPnt2d._kill_pointed = new_instancemethod(_TColgp.Handle_T
 Handle_TColgp_HArray2OfPnt2d_swigregister = _TColgp.Handle_TColgp_HArray2OfPnt2d_swigregister
 Handle_TColgp_HArray2OfPnt2d_swigregister(Handle_TColgp_HArray2OfPnt2d)
 
-def Handle_TColgp_HArray2OfPnt2d_DownCast(*args) -> "Handle_TColgp_HArray2OfPnt2d const" :
+def Handle_TColgp_HArray2OfPnt2d_DownCast(*args):
   return _TColgp.Handle_TColgp_HArray2OfPnt2d_DownCast(*args)
 Handle_TColgp_HArray2OfPnt2d_DownCast = _TColgp.Handle_TColgp_HArray2OfPnt2d_DownCast
 
@@ -5997,30 +6001,30 @@ class TColgp_HArray2OfVec(OCC.MMgt.MMgt_TShared):
     def __init__(self, *args): 
         """
         :param R1:
-        :type R1: int
+        :type R1: Standard_Integer
         :param R2:
-        :type R2: int
+        :type R2: Standard_Integer
         :param C1:
-        :type C1: int
+        :type C1: Standard_Integer
         :param C2:
-        :type C2: int
+        :type C2: Standard_Integer
         :rtype: None
 
         :param R1:
-        :type R1: int
+        :type R1: Standard_Integer
         :param R2:
-        :type R2: int
+        :type R2: Standard_Integer
         :param C1:
-        :type C1: int
+        :type C1: Standard_Integer
         :param C2:
-        :type C2: int
+        :type C2: Standard_Integer
         :param V:
         :type V: gp_Vec
         :rtype: None
 
         """
         _TColgp.TColgp_HArray2OfVec_swiginit(self,_TColgp.new_TColgp_HArray2OfVec(*args))
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
         :param V:
         :type V: gp_Vec
@@ -6029,54 +6033,54 @@ class TColgp_HArray2OfVec(OCC.MMgt.MMgt_TShared):
         """
         return _TColgp.TColgp_HArray2OfVec_Init(self, *args)
 
-    def ColLength(self, *args) -> "Standard_Integer" :
+    def ColLength(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_HArray2OfVec_ColLength(self, *args)
+        return _TColgp.TColgp_HArray2OfVec_ColLength(self)
 
-    def RowLength(self, *args) -> "Standard_Integer" :
+    def RowLength(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_HArray2OfVec_RowLength(self, *args)
+        return _TColgp.TColgp_HArray2OfVec_RowLength(self)
 
-    def LowerCol(self, *args) -> "Standard_Integer" :
+    def LowerCol(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_HArray2OfVec_LowerCol(self, *args)
+        return _TColgp.TColgp_HArray2OfVec_LowerCol(self)
 
-    def LowerRow(self, *args) -> "Standard_Integer" :
+    def LowerRow(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_HArray2OfVec_LowerRow(self, *args)
+        return _TColgp.TColgp_HArray2OfVec_LowerRow(self)
 
-    def UpperCol(self, *args) -> "Standard_Integer" :
+    def UpperCol(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_HArray2OfVec_UpperCol(self, *args)
+        return _TColgp.TColgp_HArray2OfVec_UpperCol(self)
 
-    def UpperRow(self, *args) -> "Standard_Integer" :
+    def UpperRow(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_HArray2OfVec_UpperRow(self, *args)
+        return _TColgp.TColgp_HArray2OfVec_UpperRow(self)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Row:
-        :type Row: int
+        :type Row: Standard_Integer
         :param Col:
-        :type Col: int
+        :type Col: Standard_Integer
         :param Value:
         :type Value: gp_Vec
         :rtype: None
@@ -6084,47 +6088,47 @@ class TColgp_HArray2OfVec(OCC.MMgt.MMgt_TShared):
         """
         return _TColgp.TColgp_HArray2OfVec_SetValue(self, *args)
 
-    def Value(self, *args) -> "gp_Vec const" :
+    def Value(self, *args):
         """
         :param Row:
-        :type Row: int
+        :type Row: Standard_Integer
         :param Col:
-        :type Col: int
+        :type Col: Standard_Integer
         :rtype: gp_Vec
 
         """
         return _TColgp.TColgp_HArray2OfVec_Value(self, *args)
 
-    def ChangeValue(self, *args) -> "gp_Vec" :
+    def ChangeValue(self, *args):
         """
         :param Row:
-        :type Row: int
+        :type Row: Standard_Integer
         :param Col:
-        :type Col: int
+        :type Col: Standard_Integer
         :rtype: gp_Vec
 
         """
         return _TColgp.TColgp_HArray2OfVec_ChangeValue(self, *args)
 
-    def Array2(self, *args) -> "TColgp_Array2OfVec const &" :
+    def Array2(self):
         """
         :rtype: TColgp_Array2OfVec
 
         """
-        return _TColgp.TColgp_HArray2OfVec_Array2(self, *args)
+        return _TColgp.TColgp_HArray2OfVec_Array2(self)
 
-    def ChangeArray2(self, *args) -> "TColgp_Array2OfVec &" :
+    def ChangeArray2(self):
         """
         :rtype: TColgp_Array2OfVec
 
         """
-        return _TColgp.TColgp_HArray2OfVec_ChangeArray2(self, *args)
+        return _TColgp.TColgp_HArray2OfVec_ChangeArray2(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(TColgp_HArray2OfVec self)"""
         return _TColgp.TColgp_HArray2OfVec__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_TColgp_HArray2OfVec" :
+    def GetHandle(self):
         """GetHandle(TColgp_HArray2OfVec self) -> Handle_TColgp_HArray2OfVec"""
         return _TColgp.TColgp_HArray2OfVec_GetHandle(self)
 
@@ -6174,7 +6178,7 @@ Handle_TColgp_HArray2OfVec._kill_pointed = new_instancemethod(_TColgp.Handle_TCo
 Handle_TColgp_HArray2OfVec_swigregister = _TColgp.Handle_TColgp_HArray2OfVec_swigregister
 Handle_TColgp_HArray2OfVec_swigregister(Handle_TColgp_HArray2OfVec)
 
-def Handle_TColgp_HArray2OfVec_DownCast(*args) -> "Handle_TColgp_HArray2OfVec const" :
+def Handle_TColgp_HArray2OfVec_DownCast(*args):
   return _TColgp.Handle_TColgp_HArray2OfVec_DownCast(*args)
 Handle_TColgp_HArray2OfVec_DownCast = _TColgp.Handle_TColgp_HArray2OfVec_DownCast
 
@@ -6184,30 +6188,30 @@ class TColgp_HArray2OfVec2d(OCC.MMgt.MMgt_TShared):
     def __init__(self, *args): 
         """
         :param R1:
-        :type R1: int
+        :type R1: Standard_Integer
         :param R2:
-        :type R2: int
+        :type R2: Standard_Integer
         :param C1:
-        :type C1: int
+        :type C1: Standard_Integer
         :param C2:
-        :type C2: int
+        :type C2: Standard_Integer
         :rtype: None
 
         :param R1:
-        :type R1: int
+        :type R1: Standard_Integer
         :param R2:
-        :type R2: int
+        :type R2: Standard_Integer
         :param C1:
-        :type C1: int
+        :type C1: Standard_Integer
         :param C2:
-        :type C2: int
+        :type C2: Standard_Integer
         :param V:
         :type V: gp_Vec2d
         :rtype: None
 
         """
         _TColgp.TColgp_HArray2OfVec2d_swiginit(self,_TColgp.new_TColgp_HArray2OfVec2d(*args))
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
         :param V:
         :type V: gp_Vec2d
@@ -6216,54 +6220,54 @@ class TColgp_HArray2OfVec2d(OCC.MMgt.MMgt_TShared):
         """
         return _TColgp.TColgp_HArray2OfVec2d_Init(self, *args)
 
-    def ColLength(self, *args) -> "Standard_Integer" :
+    def ColLength(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_HArray2OfVec2d_ColLength(self, *args)
+        return _TColgp.TColgp_HArray2OfVec2d_ColLength(self)
 
-    def RowLength(self, *args) -> "Standard_Integer" :
+    def RowLength(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_HArray2OfVec2d_RowLength(self, *args)
+        return _TColgp.TColgp_HArray2OfVec2d_RowLength(self)
 
-    def LowerCol(self, *args) -> "Standard_Integer" :
+    def LowerCol(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_HArray2OfVec2d_LowerCol(self, *args)
+        return _TColgp.TColgp_HArray2OfVec2d_LowerCol(self)
 
-    def LowerRow(self, *args) -> "Standard_Integer" :
+    def LowerRow(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_HArray2OfVec2d_LowerRow(self, *args)
+        return _TColgp.TColgp_HArray2OfVec2d_LowerRow(self)
 
-    def UpperCol(self, *args) -> "Standard_Integer" :
+    def UpperCol(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_HArray2OfVec2d_UpperCol(self, *args)
+        return _TColgp.TColgp_HArray2OfVec2d_UpperCol(self)
 
-    def UpperRow(self, *args) -> "Standard_Integer" :
+    def UpperRow(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_HArray2OfVec2d_UpperRow(self, *args)
+        return _TColgp.TColgp_HArray2OfVec2d_UpperRow(self)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Row:
-        :type Row: int
+        :type Row: Standard_Integer
         :param Col:
-        :type Col: int
+        :type Col: Standard_Integer
         :param Value:
         :type Value: gp_Vec2d
         :rtype: None
@@ -6271,47 +6275,47 @@ class TColgp_HArray2OfVec2d(OCC.MMgt.MMgt_TShared):
         """
         return _TColgp.TColgp_HArray2OfVec2d_SetValue(self, *args)
 
-    def Value(self, *args) -> "gp_Vec2d const" :
+    def Value(self, *args):
         """
         :param Row:
-        :type Row: int
+        :type Row: Standard_Integer
         :param Col:
-        :type Col: int
+        :type Col: Standard_Integer
         :rtype: gp_Vec2d
 
         """
         return _TColgp.TColgp_HArray2OfVec2d_Value(self, *args)
 
-    def ChangeValue(self, *args) -> "gp_Vec2d" :
+    def ChangeValue(self, *args):
         """
         :param Row:
-        :type Row: int
+        :type Row: Standard_Integer
         :param Col:
-        :type Col: int
+        :type Col: Standard_Integer
         :rtype: gp_Vec2d
 
         """
         return _TColgp.TColgp_HArray2OfVec2d_ChangeValue(self, *args)
 
-    def Array2(self, *args) -> "TColgp_Array2OfVec2d const &" :
+    def Array2(self):
         """
         :rtype: TColgp_Array2OfVec2d
 
         """
-        return _TColgp.TColgp_HArray2OfVec2d_Array2(self, *args)
+        return _TColgp.TColgp_HArray2OfVec2d_Array2(self)
 
-    def ChangeArray2(self, *args) -> "TColgp_Array2OfVec2d &" :
+    def ChangeArray2(self):
         """
         :rtype: TColgp_Array2OfVec2d
 
         """
-        return _TColgp.TColgp_HArray2OfVec2d_ChangeArray2(self, *args)
+        return _TColgp.TColgp_HArray2OfVec2d_ChangeArray2(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(TColgp_HArray2OfVec2d self)"""
         return _TColgp.TColgp_HArray2OfVec2d__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_TColgp_HArray2OfVec2d" :
+    def GetHandle(self):
         """GetHandle(TColgp_HArray2OfVec2d self) -> Handle_TColgp_HArray2OfVec2d"""
         return _TColgp.TColgp_HArray2OfVec2d_GetHandle(self)
 
@@ -6361,7 +6365,7 @@ Handle_TColgp_HArray2OfVec2d._kill_pointed = new_instancemethod(_TColgp.Handle_T
 Handle_TColgp_HArray2OfVec2d_swigregister = _TColgp.Handle_TColgp_HArray2OfVec2d_swigregister
 Handle_TColgp_HArray2OfVec2d_swigregister(Handle_TColgp_HArray2OfVec2d)
 
-def Handle_TColgp_HArray2OfVec2d_DownCast(*args) -> "Handle_TColgp_HArray2OfVec2d const" :
+def Handle_TColgp_HArray2OfVec2d_DownCast(*args):
   return _TColgp.Handle_TColgp_HArray2OfVec2d_DownCast(*args)
 Handle_TColgp_HArray2OfVec2d_DownCast = _TColgp.Handle_TColgp_HArray2OfVec2d_DownCast
 
@@ -6371,30 +6375,30 @@ class TColgp_HArray2OfXY(OCC.MMgt.MMgt_TShared):
     def __init__(self, *args): 
         """
         :param R1:
-        :type R1: int
+        :type R1: Standard_Integer
         :param R2:
-        :type R2: int
+        :type R2: Standard_Integer
         :param C1:
-        :type C1: int
+        :type C1: Standard_Integer
         :param C2:
-        :type C2: int
+        :type C2: Standard_Integer
         :rtype: None
 
         :param R1:
-        :type R1: int
+        :type R1: Standard_Integer
         :param R2:
-        :type R2: int
+        :type R2: Standard_Integer
         :param C1:
-        :type C1: int
+        :type C1: Standard_Integer
         :param C2:
-        :type C2: int
+        :type C2: Standard_Integer
         :param V:
         :type V: gp_XY
         :rtype: None
 
         """
         _TColgp.TColgp_HArray2OfXY_swiginit(self,_TColgp.new_TColgp_HArray2OfXY(*args))
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
         :param V:
         :type V: gp_XY
@@ -6403,54 +6407,54 @@ class TColgp_HArray2OfXY(OCC.MMgt.MMgt_TShared):
         """
         return _TColgp.TColgp_HArray2OfXY_Init(self, *args)
 
-    def ColLength(self, *args) -> "Standard_Integer" :
+    def ColLength(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_HArray2OfXY_ColLength(self, *args)
+        return _TColgp.TColgp_HArray2OfXY_ColLength(self)
 
-    def RowLength(self, *args) -> "Standard_Integer" :
+    def RowLength(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_HArray2OfXY_RowLength(self, *args)
+        return _TColgp.TColgp_HArray2OfXY_RowLength(self)
 
-    def LowerCol(self, *args) -> "Standard_Integer" :
+    def LowerCol(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_HArray2OfXY_LowerCol(self, *args)
+        return _TColgp.TColgp_HArray2OfXY_LowerCol(self)
 
-    def LowerRow(self, *args) -> "Standard_Integer" :
+    def LowerRow(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_HArray2OfXY_LowerRow(self, *args)
+        return _TColgp.TColgp_HArray2OfXY_LowerRow(self)
 
-    def UpperCol(self, *args) -> "Standard_Integer" :
+    def UpperCol(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_HArray2OfXY_UpperCol(self, *args)
+        return _TColgp.TColgp_HArray2OfXY_UpperCol(self)
 
-    def UpperRow(self, *args) -> "Standard_Integer" :
+    def UpperRow(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_HArray2OfXY_UpperRow(self, *args)
+        return _TColgp.TColgp_HArray2OfXY_UpperRow(self)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Row:
-        :type Row: int
+        :type Row: Standard_Integer
         :param Col:
-        :type Col: int
+        :type Col: Standard_Integer
         :param Value:
         :type Value: gp_XY
         :rtype: None
@@ -6458,47 +6462,47 @@ class TColgp_HArray2OfXY(OCC.MMgt.MMgt_TShared):
         """
         return _TColgp.TColgp_HArray2OfXY_SetValue(self, *args)
 
-    def Value(self, *args) -> "gp_XY const" :
+    def Value(self, *args):
         """
         :param Row:
-        :type Row: int
+        :type Row: Standard_Integer
         :param Col:
-        :type Col: int
+        :type Col: Standard_Integer
         :rtype: gp_XY
 
         """
         return _TColgp.TColgp_HArray2OfXY_Value(self, *args)
 
-    def ChangeValue(self, *args) -> "gp_XY" :
+    def ChangeValue(self, *args):
         """
         :param Row:
-        :type Row: int
+        :type Row: Standard_Integer
         :param Col:
-        :type Col: int
+        :type Col: Standard_Integer
         :rtype: gp_XY
 
         """
         return _TColgp.TColgp_HArray2OfXY_ChangeValue(self, *args)
 
-    def Array2(self, *args) -> "TColgp_Array2OfXY const &" :
+    def Array2(self):
         """
         :rtype: TColgp_Array2OfXY
 
         """
-        return _TColgp.TColgp_HArray2OfXY_Array2(self, *args)
+        return _TColgp.TColgp_HArray2OfXY_Array2(self)
 
-    def ChangeArray2(self, *args) -> "TColgp_Array2OfXY &" :
+    def ChangeArray2(self):
         """
         :rtype: TColgp_Array2OfXY
 
         """
-        return _TColgp.TColgp_HArray2OfXY_ChangeArray2(self, *args)
+        return _TColgp.TColgp_HArray2OfXY_ChangeArray2(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(TColgp_HArray2OfXY self)"""
         return _TColgp.TColgp_HArray2OfXY__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_TColgp_HArray2OfXY" :
+    def GetHandle(self):
         """GetHandle(TColgp_HArray2OfXY self) -> Handle_TColgp_HArray2OfXY"""
         return _TColgp.TColgp_HArray2OfXY_GetHandle(self)
 
@@ -6548,7 +6552,7 @@ Handle_TColgp_HArray2OfXY._kill_pointed = new_instancemethod(_TColgp.Handle_TCol
 Handle_TColgp_HArray2OfXY_swigregister = _TColgp.Handle_TColgp_HArray2OfXY_swigregister
 Handle_TColgp_HArray2OfXY_swigregister(Handle_TColgp_HArray2OfXY)
 
-def Handle_TColgp_HArray2OfXY_DownCast(*args) -> "Handle_TColgp_HArray2OfXY const" :
+def Handle_TColgp_HArray2OfXY_DownCast(*args):
   return _TColgp.Handle_TColgp_HArray2OfXY_DownCast(*args)
 Handle_TColgp_HArray2OfXY_DownCast = _TColgp.Handle_TColgp_HArray2OfXY_DownCast
 
@@ -6558,30 +6562,30 @@ class TColgp_HArray2OfXYZ(OCC.MMgt.MMgt_TShared):
     def __init__(self, *args): 
         """
         :param R1:
-        :type R1: int
+        :type R1: Standard_Integer
         :param R2:
-        :type R2: int
+        :type R2: Standard_Integer
         :param C1:
-        :type C1: int
+        :type C1: Standard_Integer
         :param C2:
-        :type C2: int
+        :type C2: Standard_Integer
         :rtype: None
 
         :param R1:
-        :type R1: int
+        :type R1: Standard_Integer
         :param R2:
-        :type R2: int
+        :type R2: Standard_Integer
         :param C1:
-        :type C1: int
+        :type C1: Standard_Integer
         :param C2:
-        :type C2: int
+        :type C2: Standard_Integer
         :param V:
         :type V: gp_XYZ
         :rtype: None
 
         """
         _TColgp.TColgp_HArray2OfXYZ_swiginit(self,_TColgp.new_TColgp_HArray2OfXYZ(*args))
-    def Init(self, *args) -> "void" :
+    def Init(self, *args):
         """
         :param V:
         :type V: gp_XYZ
@@ -6590,54 +6594,54 @@ class TColgp_HArray2OfXYZ(OCC.MMgt.MMgt_TShared):
         """
         return _TColgp.TColgp_HArray2OfXYZ_Init(self, *args)
 
-    def ColLength(self, *args) -> "Standard_Integer" :
+    def ColLength(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_HArray2OfXYZ_ColLength(self, *args)
+        return _TColgp.TColgp_HArray2OfXYZ_ColLength(self)
 
-    def RowLength(self, *args) -> "Standard_Integer" :
+    def RowLength(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_HArray2OfXYZ_RowLength(self, *args)
+        return _TColgp.TColgp_HArray2OfXYZ_RowLength(self)
 
-    def LowerCol(self, *args) -> "Standard_Integer" :
+    def LowerCol(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_HArray2OfXYZ_LowerCol(self, *args)
+        return _TColgp.TColgp_HArray2OfXYZ_LowerCol(self)
 
-    def LowerRow(self, *args) -> "Standard_Integer" :
+    def LowerRow(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_HArray2OfXYZ_LowerRow(self, *args)
+        return _TColgp.TColgp_HArray2OfXYZ_LowerRow(self)
 
-    def UpperCol(self, *args) -> "Standard_Integer" :
+    def UpperCol(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_HArray2OfXYZ_UpperCol(self, *args)
+        return _TColgp.TColgp_HArray2OfXYZ_UpperCol(self)
 
-    def UpperRow(self, *args) -> "Standard_Integer" :
+    def UpperRow(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_HArray2OfXYZ_UpperRow(self, *args)
+        return _TColgp.TColgp_HArray2OfXYZ_UpperRow(self)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Row:
-        :type Row: int
+        :type Row: Standard_Integer
         :param Col:
-        :type Col: int
+        :type Col: Standard_Integer
         :param Value:
         :type Value: gp_XYZ
         :rtype: None
@@ -6645,47 +6649,47 @@ class TColgp_HArray2OfXYZ(OCC.MMgt.MMgt_TShared):
         """
         return _TColgp.TColgp_HArray2OfXYZ_SetValue(self, *args)
 
-    def Value(self, *args) -> "gp_XYZ const" :
+    def Value(self, *args):
         """
         :param Row:
-        :type Row: int
+        :type Row: Standard_Integer
         :param Col:
-        :type Col: int
+        :type Col: Standard_Integer
         :rtype: gp_XYZ
 
         """
         return _TColgp.TColgp_HArray2OfXYZ_Value(self, *args)
 
-    def ChangeValue(self, *args) -> "gp_XYZ" :
+    def ChangeValue(self, *args):
         """
         :param Row:
-        :type Row: int
+        :type Row: Standard_Integer
         :param Col:
-        :type Col: int
+        :type Col: Standard_Integer
         :rtype: gp_XYZ
 
         """
         return _TColgp.TColgp_HArray2OfXYZ_ChangeValue(self, *args)
 
-    def Array2(self, *args) -> "TColgp_Array2OfXYZ const &" :
+    def Array2(self):
         """
         :rtype: TColgp_Array2OfXYZ
 
         """
-        return _TColgp.TColgp_HArray2OfXYZ_Array2(self, *args)
+        return _TColgp.TColgp_HArray2OfXYZ_Array2(self)
 
-    def ChangeArray2(self, *args) -> "TColgp_Array2OfXYZ &" :
+    def ChangeArray2(self):
         """
         :rtype: TColgp_Array2OfXYZ
 
         """
-        return _TColgp.TColgp_HArray2OfXYZ_ChangeArray2(self, *args)
+        return _TColgp.TColgp_HArray2OfXYZ_ChangeArray2(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(TColgp_HArray2OfXYZ self)"""
         return _TColgp.TColgp_HArray2OfXYZ__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_TColgp_HArray2OfXYZ" :
+    def GetHandle(self):
         """GetHandle(TColgp_HArray2OfXYZ self) -> Handle_TColgp_HArray2OfXYZ"""
         return _TColgp.TColgp_HArray2OfXYZ_GetHandle(self)
 
@@ -6735,41 +6739,41 @@ Handle_TColgp_HArray2OfXYZ._kill_pointed = new_instancemethod(_TColgp.Handle_TCo
 Handle_TColgp_HArray2OfXYZ_swigregister = _TColgp.Handle_TColgp_HArray2OfXYZ_swigregister
 Handle_TColgp_HArray2OfXYZ_swigregister(Handle_TColgp_HArray2OfXYZ)
 
-def Handle_TColgp_HArray2OfXYZ_DownCast(*args) -> "Handle_TColgp_HArray2OfXYZ const" :
+def Handle_TColgp_HArray2OfXYZ_DownCast(*args):
   return _TColgp.Handle_TColgp_HArray2OfXYZ_DownCast(*args)
 Handle_TColgp_HArray2OfXYZ_DownCast = _TColgp.Handle_TColgp_HArray2OfXYZ_DownCast
 
 class TColgp_HSequenceOfDir(OCC.MMgt.MMgt_TShared):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _TColgp.TColgp_HSequenceOfDir_swiginit(self,_TColgp.new_TColgp_HSequenceOfDir(*args))
-    def IsEmpty(self, *args) -> "Standard_Boolean" :
+        _TColgp.TColgp_HSequenceOfDir_swiginit(self,_TColgp.new_TColgp_HSequenceOfDir())
+    def IsEmpty(self):
         """
         :rtype: bool
 
         """
-        return _TColgp.TColgp_HSequenceOfDir_IsEmpty(self, *args)
+        return _TColgp.TColgp_HSequenceOfDir_IsEmpty(self)
 
-    def Length(self, *args) -> "Standard_Integer" :
+    def Length(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_HSequenceOfDir_Length(self, *args)
+        return _TColgp.TColgp_HSequenceOfDir_Length(self)
 
-    def Clear(self, *args) -> "void" :
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _TColgp.TColgp_HSequenceOfDir_Clear(self, *args)
+        return _TColgp.TColgp_HSequenceOfDir_Clear(self)
 
-    def Append(self, *args) -> "void" :
+    def Append(self, *args):
         """
         :param anItem:
         :type anItem: gp_Dir
@@ -6782,7 +6786,7 @@ class TColgp_HSequenceOfDir(OCC.MMgt.MMgt_TShared):
         """
         return _TColgp.TColgp_HSequenceOfDir_Append(self, *args)
 
-    def Prepend(self, *args) -> "void" :
+    def Prepend(self, *args):
         """
         :param anItem:
         :type anItem: gp_Dir
@@ -6795,23 +6799,23 @@ class TColgp_HSequenceOfDir(OCC.MMgt.MMgt_TShared):
         """
         return _TColgp.TColgp_HSequenceOfDir_Prepend(self, *args)
 
-    def Reverse(self, *args) -> "void" :
+    def Reverse(self):
         """
         :rtype: None
 
         """
-        return _TColgp.TColgp_HSequenceOfDir_Reverse(self, *args)
+        return _TColgp.TColgp_HSequenceOfDir_Reverse(self)
 
-    def InsertBefore(self, *args) -> "void" :
+    def InsertBefore(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :param anItem:
         :type anItem: gp_Dir
         :rtype: None
 
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :param aSequence:
         :type aSequence: Handle_TColgp_HSequenceOfDir
         :rtype: None
@@ -6819,16 +6823,16 @@ class TColgp_HSequenceOfDir(OCC.MMgt.MMgt_TShared):
         """
         return _TColgp.TColgp_HSequenceOfDir_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args) -> "void" :
+    def InsertAfter(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :param anItem:
         :type anItem: gp_Dir
         :rtype: None
 
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :param aSequence:
         :type aSequence: Handle_TColgp_HSequenceOfDir
         :rtype: None
@@ -6836,30 +6840,30 @@ class TColgp_HSequenceOfDir(OCC.MMgt.MMgt_TShared):
         """
         return _TColgp.TColgp_HSequenceOfDir_InsertAfter(self, *args)
 
-    def Exchange(self, *args) -> "void" :
+    def Exchange(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :param anOtherIndex:
-        :type anOtherIndex: int
+        :type anOtherIndex: Standard_Integer
         :rtype: None
 
         """
         return _TColgp.TColgp_HSequenceOfDir_Exchange(self, *args)
 
-    def Split(self, *args) -> "Handle_TColgp_HSequenceOfDir" :
+    def Split(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :rtype: Handle_TColgp_HSequenceOfDir
 
         """
         return _TColgp.TColgp_HSequenceOfDir_Split(self, *args)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :param anItem:
         :type anItem: gp_Dir
         :rtype: None
@@ -6867,65 +6871,65 @@ class TColgp_HSequenceOfDir(OCC.MMgt.MMgt_TShared):
         """
         return _TColgp.TColgp_HSequenceOfDir_SetValue(self, *args)
 
-    def Value(self, *args) -> "gp_Dir const" :
+    def Value(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :rtype: gp_Dir
 
         """
         return _TColgp.TColgp_HSequenceOfDir_Value(self, *args)
 
-    def ChangeValue(self, *args) -> "gp_Dir" :
+    def ChangeValue(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :rtype: gp_Dir
 
         """
         return _TColgp.TColgp_HSequenceOfDir_ChangeValue(self, *args)
 
-    def Remove(self, *args) -> "void" :
+    def Remove(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :rtype: None
 
         :param fromIndex:
-        :type fromIndex: int
+        :type fromIndex: Standard_Integer
         :param toIndex:
-        :type toIndex: int
+        :type toIndex: Standard_Integer
         :rtype: None
 
         """
         return _TColgp.TColgp_HSequenceOfDir_Remove(self, *args)
 
-    def Sequence(self, *args) -> "TColgp_SequenceOfDir const &" :
+    def Sequence(self):
         """
         :rtype: TColgp_SequenceOfDir
 
         """
-        return _TColgp.TColgp_HSequenceOfDir_Sequence(self, *args)
+        return _TColgp.TColgp_HSequenceOfDir_Sequence(self)
 
-    def ChangeSequence(self, *args) -> "TColgp_SequenceOfDir &" :
+    def ChangeSequence(self):
         """
         :rtype: TColgp_SequenceOfDir
 
         """
-        return _TColgp.TColgp_HSequenceOfDir_ChangeSequence(self, *args)
+        return _TColgp.TColgp_HSequenceOfDir_ChangeSequence(self)
 
-    def ShallowCopy(self, *args) -> "Handle_TColgp_HSequenceOfDir" :
+    def ShallowCopy(self):
         """
         :rtype: Handle_TColgp_HSequenceOfDir
 
         """
-        return _TColgp.TColgp_HSequenceOfDir_ShallowCopy(self, *args)
+        return _TColgp.TColgp_HSequenceOfDir_ShallowCopy(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(TColgp_HSequenceOfDir self)"""
         return _TColgp.TColgp_HSequenceOfDir__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_TColgp_HSequenceOfDir" :
+    def GetHandle(self):
         """GetHandle(TColgp_HSequenceOfDir self) -> Handle_TColgp_HSequenceOfDir"""
         return _TColgp.TColgp_HSequenceOfDir_GetHandle(self)
 
@@ -6980,41 +6984,41 @@ Handle_TColgp_HSequenceOfDir._kill_pointed = new_instancemethod(_TColgp.Handle_T
 Handle_TColgp_HSequenceOfDir_swigregister = _TColgp.Handle_TColgp_HSequenceOfDir_swigregister
 Handle_TColgp_HSequenceOfDir_swigregister(Handle_TColgp_HSequenceOfDir)
 
-def Handle_TColgp_HSequenceOfDir_DownCast(*args) -> "Handle_TColgp_HSequenceOfDir const" :
+def Handle_TColgp_HSequenceOfDir_DownCast(*args):
   return _TColgp.Handle_TColgp_HSequenceOfDir_DownCast(*args)
 Handle_TColgp_HSequenceOfDir_DownCast = _TColgp.Handle_TColgp_HSequenceOfDir_DownCast
 
 class TColgp_HSequenceOfDir2d(OCC.MMgt.MMgt_TShared):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _TColgp.TColgp_HSequenceOfDir2d_swiginit(self,_TColgp.new_TColgp_HSequenceOfDir2d(*args))
-    def IsEmpty(self, *args) -> "Standard_Boolean" :
+        _TColgp.TColgp_HSequenceOfDir2d_swiginit(self,_TColgp.new_TColgp_HSequenceOfDir2d())
+    def IsEmpty(self):
         """
         :rtype: bool
 
         """
-        return _TColgp.TColgp_HSequenceOfDir2d_IsEmpty(self, *args)
+        return _TColgp.TColgp_HSequenceOfDir2d_IsEmpty(self)
 
-    def Length(self, *args) -> "Standard_Integer" :
+    def Length(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_HSequenceOfDir2d_Length(self, *args)
+        return _TColgp.TColgp_HSequenceOfDir2d_Length(self)
 
-    def Clear(self, *args) -> "void" :
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _TColgp.TColgp_HSequenceOfDir2d_Clear(self, *args)
+        return _TColgp.TColgp_HSequenceOfDir2d_Clear(self)
 
-    def Append(self, *args) -> "void" :
+    def Append(self, *args):
         """
         :param anItem:
         :type anItem: gp_Dir2d
@@ -7027,7 +7031,7 @@ class TColgp_HSequenceOfDir2d(OCC.MMgt.MMgt_TShared):
         """
         return _TColgp.TColgp_HSequenceOfDir2d_Append(self, *args)
 
-    def Prepend(self, *args) -> "void" :
+    def Prepend(self, *args):
         """
         :param anItem:
         :type anItem: gp_Dir2d
@@ -7040,23 +7044,23 @@ class TColgp_HSequenceOfDir2d(OCC.MMgt.MMgt_TShared):
         """
         return _TColgp.TColgp_HSequenceOfDir2d_Prepend(self, *args)
 
-    def Reverse(self, *args) -> "void" :
+    def Reverse(self):
         """
         :rtype: None
 
         """
-        return _TColgp.TColgp_HSequenceOfDir2d_Reverse(self, *args)
+        return _TColgp.TColgp_HSequenceOfDir2d_Reverse(self)
 
-    def InsertBefore(self, *args) -> "void" :
+    def InsertBefore(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :param anItem:
         :type anItem: gp_Dir2d
         :rtype: None
 
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :param aSequence:
         :type aSequence: Handle_TColgp_HSequenceOfDir2d
         :rtype: None
@@ -7064,16 +7068,16 @@ class TColgp_HSequenceOfDir2d(OCC.MMgt.MMgt_TShared):
         """
         return _TColgp.TColgp_HSequenceOfDir2d_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args) -> "void" :
+    def InsertAfter(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :param anItem:
         :type anItem: gp_Dir2d
         :rtype: None
 
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :param aSequence:
         :type aSequence: Handle_TColgp_HSequenceOfDir2d
         :rtype: None
@@ -7081,30 +7085,30 @@ class TColgp_HSequenceOfDir2d(OCC.MMgt.MMgt_TShared):
         """
         return _TColgp.TColgp_HSequenceOfDir2d_InsertAfter(self, *args)
 
-    def Exchange(self, *args) -> "void" :
+    def Exchange(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :param anOtherIndex:
-        :type anOtherIndex: int
+        :type anOtherIndex: Standard_Integer
         :rtype: None
 
         """
         return _TColgp.TColgp_HSequenceOfDir2d_Exchange(self, *args)
 
-    def Split(self, *args) -> "Handle_TColgp_HSequenceOfDir2d" :
+    def Split(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :rtype: Handle_TColgp_HSequenceOfDir2d
 
         """
         return _TColgp.TColgp_HSequenceOfDir2d_Split(self, *args)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :param anItem:
         :type anItem: gp_Dir2d
         :rtype: None
@@ -7112,65 +7116,65 @@ class TColgp_HSequenceOfDir2d(OCC.MMgt.MMgt_TShared):
         """
         return _TColgp.TColgp_HSequenceOfDir2d_SetValue(self, *args)
 
-    def Value(self, *args) -> "gp_Dir2d const" :
+    def Value(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :rtype: gp_Dir2d
 
         """
         return _TColgp.TColgp_HSequenceOfDir2d_Value(self, *args)
 
-    def ChangeValue(self, *args) -> "gp_Dir2d" :
+    def ChangeValue(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :rtype: gp_Dir2d
 
         """
         return _TColgp.TColgp_HSequenceOfDir2d_ChangeValue(self, *args)
 
-    def Remove(self, *args) -> "void" :
+    def Remove(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :rtype: None
 
         :param fromIndex:
-        :type fromIndex: int
+        :type fromIndex: Standard_Integer
         :param toIndex:
-        :type toIndex: int
+        :type toIndex: Standard_Integer
         :rtype: None
 
         """
         return _TColgp.TColgp_HSequenceOfDir2d_Remove(self, *args)
 
-    def Sequence(self, *args) -> "TColgp_SequenceOfDir2d const &" :
+    def Sequence(self):
         """
         :rtype: TColgp_SequenceOfDir2d
 
         """
-        return _TColgp.TColgp_HSequenceOfDir2d_Sequence(self, *args)
+        return _TColgp.TColgp_HSequenceOfDir2d_Sequence(self)
 
-    def ChangeSequence(self, *args) -> "TColgp_SequenceOfDir2d &" :
+    def ChangeSequence(self):
         """
         :rtype: TColgp_SequenceOfDir2d
 
         """
-        return _TColgp.TColgp_HSequenceOfDir2d_ChangeSequence(self, *args)
+        return _TColgp.TColgp_HSequenceOfDir2d_ChangeSequence(self)
 
-    def ShallowCopy(self, *args) -> "Handle_TColgp_HSequenceOfDir2d" :
+    def ShallowCopy(self):
         """
         :rtype: Handle_TColgp_HSequenceOfDir2d
 
         """
-        return _TColgp.TColgp_HSequenceOfDir2d_ShallowCopy(self, *args)
+        return _TColgp.TColgp_HSequenceOfDir2d_ShallowCopy(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(TColgp_HSequenceOfDir2d self)"""
         return _TColgp.TColgp_HSequenceOfDir2d__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_TColgp_HSequenceOfDir2d" :
+    def GetHandle(self):
         """GetHandle(TColgp_HSequenceOfDir2d self) -> Handle_TColgp_HSequenceOfDir2d"""
         return _TColgp.TColgp_HSequenceOfDir2d_GetHandle(self)
 
@@ -7225,41 +7229,41 @@ Handle_TColgp_HSequenceOfDir2d._kill_pointed = new_instancemethod(_TColgp.Handle
 Handle_TColgp_HSequenceOfDir2d_swigregister = _TColgp.Handle_TColgp_HSequenceOfDir2d_swigregister
 Handle_TColgp_HSequenceOfDir2d_swigregister(Handle_TColgp_HSequenceOfDir2d)
 
-def Handle_TColgp_HSequenceOfDir2d_DownCast(*args) -> "Handle_TColgp_HSequenceOfDir2d const" :
+def Handle_TColgp_HSequenceOfDir2d_DownCast(*args):
   return _TColgp.Handle_TColgp_HSequenceOfDir2d_DownCast(*args)
 Handle_TColgp_HSequenceOfDir2d_DownCast = _TColgp.Handle_TColgp_HSequenceOfDir2d_DownCast
 
 class TColgp_HSequenceOfPnt(OCC.MMgt.MMgt_TShared):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _TColgp.TColgp_HSequenceOfPnt_swiginit(self,_TColgp.new_TColgp_HSequenceOfPnt(*args))
-    def IsEmpty(self, *args) -> "Standard_Boolean" :
+        _TColgp.TColgp_HSequenceOfPnt_swiginit(self,_TColgp.new_TColgp_HSequenceOfPnt())
+    def IsEmpty(self):
         """
         :rtype: bool
 
         """
-        return _TColgp.TColgp_HSequenceOfPnt_IsEmpty(self, *args)
+        return _TColgp.TColgp_HSequenceOfPnt_IsEmpty(self)
 
-    def Length(self, *args) -> "Standard_Integer" :
+    def Length(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_HSequenceOfPnt_Length(self, *args)
+        return _TColgp.TColgp_HSequenceOfPnt_Length(self)
 
-    def Clear(self, *args) -> "void" :
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _TColgp.TColgp_HSequenceOfPnt_Clear(self, *args)
+        return _TColgp.TColgp_HSequenceOfPnt_Clear(self)
 
-    def Append(self, *args) -> "void" :
+    def Append(self, *args):
         """
         :param anItem:
         :type anItem: gp_Pnt
@@ -7272,7 +7276,7 @@ class TColgp_HSequenceOfPnt(OCC.MMgt.MMgt_TShared):
         """
         return _TColgp.TColgp_HSequenceOfPnt_Append(self, *args)
 
-    def Prepend(self, *args) -> "void" :
+    def Prepend(self, *args):
         """
         :param anItem:
         :type anItem: gp_Pnt
@@ -7285,23 +7289,23 @@ class TColgp_HSequenceOfPnt(OCC.MMgt.MMgt_TShared):
         """
         return _TColgp.TColgp_HSequenceOfPnt_Prepend(self, *args)
 
-    def Reverse(self, *args) -> "void" :
+    def Reverse(self):
         """
         :rtype: None
 
         """
-        return _TColgp.TColgp_HSequenceOfPnt_Reverse(self, *args)
+        return _TColgp.TColgp_HSequenceOfPnt_Reverse(self)
 
-    def InsertBefore(self, *args) -> "void" :
+    def InsertBefore(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :param anItem:
         :type anItem: gp_Pnt
         :rtype: None
 
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :param aSequence:
         :type aSequence: Handle_TColgp_HSequenceOfPnt
         :rtype: None
@@ -7309,16 +7313,16 @@ class TColgp_HSequenceOfPnt(OCC.MMgt.MMgt_TShared):
         """
         return _TColgp.TColgp_HSequenceOfPnt_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args) -> "void" :
+    def InsertAfter(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :param anItem:
         :type anItem: gp_Pnt
         :rtype: None
 
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :param aSequence:
         :type aSequence: Handle_TColgp_HSequenceOfPnt
         :rtype: None
@@ -7326,30 +7330,30 @@ class TColgp_HSequenceOfPnt(OCC.MMgt.MMgt_TShared):
         """
         return _TColgp.TColgp_HSequenceOfPnt_InsertAfter(self, *args)
 
-    def Exchange(self, *args) -> "void" :
+    def Exchange(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :param anOtherIndex:
-        :type anOtherIndex: int
+        :type anOtherIndex: Standard_Integer
         :rtype: None
 
         """
         return _TColgp.TColgp_HSequenceOfPnt_Exchange(self, *args)
 
-    def Split(self, *args) -> "Handle_TColgp_HSequenceOfPnt" :
+    def Split(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :rtype: Handle_TColgp_HSequenceOfPnt
 
         """
         return _TColgp.TColgp_HSequenceOfPnt_Split(self, *args)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :param anItem:
         :type anItem: gp_Pnt
         :rtype: None
@@ -7357,65 +7361,65 @@ class TColgp_HSequenceOfPnt(OCC.MMgt.MMgt_TShared):
         """
         return _TColgp.TColgp_HSequenceOfPnt_SetValue(self, *args)
 
-    def Value(self, *args) -> "gp_Pnt const" :
+    def Value(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :rtype: gp_Pnt
 
         """
         return _TColgp.TColgp_HSequenceOfPnt_Value(self, *args)
 
-    def ChangeValue(self, *args) -> "gp_Pnt" :
+    def ChangeValue(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :rtype: gp_Pnt
 
         """
         return _TColgp.TColgp_HSequenceOfPnt_ChangeValue(self, *args)
 
-    def Remove(self, *args) -> "void" :
+    def Remove(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :rtype: None
 
         :param fromIndex:
-        :type fromIndex: int
+        :type fromIndex: Standard_Integer
         :param toIndex:
-        :type toIndex: int
+        :type toIndex: Standard_Integer
         :rtype: None
 
         """
         return _TColgp.TColgp_HSequenceOfPnt_Remove(self, *args)
 
-    def Sequence(self, *args) -> "TColgp_SequenceOfPnt const &" :
+    def Sequence(self):
         """
         :rtype: TColgp_SequenceOfPnt
 
         """
-        return _TColgp.TColgp_HSequenceOfPnt_Sequence(self, *args)
+        return _TColgp.TColgp_HSequenceOfPnt_Sequence(self)
 
-    def ChangeSequence(self, *args) -> "TColgp_SequenceOfPnt &" :
+    def ChangeSequence(self):
         """
         :rtype: TColgp_SequenceOfPnt
 
         """
-        return _TColgp.TColgp_HSequenceOfPnt_ChangeSequence(self, *args)
+        return _TColgp.TColgp_HSequenceOfPnt_ChangeSequence(self)
 
-    def ShallowCopy(self, *args) -> "Handle_TColgp_HSequenceOfPnt" :
+    def ShallowCopy(self):
         """
         :rtype: Handle_TColgp_HSequenceOfPnt
 
         """
-        return _TColgp.TColgp_HSequenceOfPnt_ShallowCopy(self, *args)
+        return _TColgp.TColgp_HSequenceOfPnt_ShallowCopy(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(TColgp_HSequenceOfPnt self)"""
         return _TColgp.TColgp_HSequenceOfPnt__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_TColgp_HSequenceOfPnt" :
+    def GetHandle(self):
         """GetHandle(TColgp_HSequenceOfPnt self) -> Handle_TColgp_HSequenceOfPnt"""
         return _TColgp.TColgp_HSequenceOfPnt_GetHandle(self)
 
@@ -7470,41 +7474,41 @@ Handle_TColgp_HSequenceOfPnt._kill_pointed = new_instancemethod(_TColgp.Handle_T
 Handle_TColgp_HSequenceOfPnt_swigregister = _TColgp.Handle_TColgp_HSequenceOfPnt_swigregister
 Handle_TColgp_HSequenceOfPnt_swigregister(Handle_TColgp_HSequenceOfPnt)
 
-def Handle_TColgp_HSequenceOfPnt_DownCast(*args) -> "Handle_TColgp_HSequenceOfPnt const" :
+def Handle_TColgp_HSequenceOfPnt_DownCast(*args):
   return _TColgp.Handle_TColgp_HSequenceOfPnt_DownCast(*args)
 Handle_TColgp_HSequenceOfPnt_DownCast = _TColgp.Handle_TColgp_HSequenceOfPnt_DownCast
 
 class TColgp_HSequenceOfPnt2d(OCC.MMgt.MMgt_TShared):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _TColgp.TColgp_HSequenceOfPnt2d_swiginit(self,_TColgp.new_TColgp_HSequenceOfPnt2d(*args))
-    def IsEmpty(self, *args) -> "Standard_Boolean" :
+        _TColgp.TColgp_HSequenceOfPnt2d_swiginit(self,_TColgp.new_TColgp_HSequenceOfPnt2d())
+    def IsEmpty(self):
         """
         :rtype: bool
 
         """
-        return _TColgp.TColgp_HSequenceOfPnt2d_IsEmpty(self, *args)
+        return _TColgp.TColgp_HSequenceOfPnt2d_IsEmpty(self)
 
-    def Length(self, *args) -> "Standard_Integer" :
+    def Length(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_HSequenceOfPnt2d_Length(self, *args)
+        return _TColgp.TColgp_HSequenceOfPnt2d_Length(self)
 
-    def Clear(self, *args) -> "void" :
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _TColgp.TColgp_HSequenceOfPnt2d_Clear(self, *args)
+        return _TColgp.TColgp_HSequenceOfPnt2d_Clear(self)
 
-    def Append(self, *args) -> "void" :
+    def Append(self, *args):
         """
         :param anItem:
         :type anItem: gp_Pnt2d
@@ -7517,7 +7521,7 @@ class TColgp_HSequenceOfPnt2d(OCC.MMgt.MMgt_TShared):
         """
         return _TColgp.TColgp_HSequenceOfPnt2d_Append(self, *args)
 
-    def Prepend(self, *args) -> "void" :
+    def Prepend(self, *args):
         """
         :param anItem:
         :type anItem: gp_Pnt2d
@@ -7530,23 +7534,23 @@ class TColgp_HSequenceOfPnt2d(OCC.MMgt.MMgt_TShared):
         """
         return _TColgp.TColgp_HSequenceOfPnt2d_Prepend(self, *args)
 
-    def Reverse(self, *args) -> "void" :
+    def Reverse(self):
         """
         :rtype: None
 
         """
-        return _TColgp.TColgp_HSequenceOfPnt2d_Reverse(self, *args)
+        return _TColgp.TColgp_HSequenceOfPnt2d_Reverse(self)
 
-    def InsertBefore(self, *args) -> "void" :
+    def InsertBefore(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :param anItem:
         :type anItem: gp_Pnt2d
         :rtype: None
 
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :param aSequence:
         :type aSequence: Handle_TColgp_HSequenceOfPnt2d
         :rtype: None
@@ -7554,16 +7558,16 @@ class TColgp_HSequenceOfPnt2d(OCC.MMgt.MMgt_TShared):
         """
         return _TColgp.TColgp_HSequenceOfPnt2d_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args) -> "void" :
+    def InsertAfter(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :param anItem:
         :type anItem: gp_Pnt2d
         :rtype: None
 
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :param aSequence:
         :type aSequence: Handle_TColgp_HSequenceOfPnt2d
         :rtype: None
@@ -7571,30 +7575,30 @@ class TColgp_HSequenceOfPnt2d(OCC.MMgt.MMgt_TShared):
         """
         return _TColgp.TColgp_HSequenceOfPnt2d_InsertAfter(self, *args)
 
-    def Exchange(self, *args) -> "void" :
+    def Exchange(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :param anOtherIndex:
-        :type anOtherIndex: int
+        :type anOtherIndex: Standard_Integer
         :rtype: None
 
         """
         return _TColgp.TColgp_HSequenceOfPnt2d_Exchange(self, *args)
 
-    def Split(self, *args) -> "Handle_TColgp_HSequenceOfPnt2d" :
+    def Split(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :rtype: Handle_TColgp_HSequenceOfPnt2d
 
         """
         return _TColgp.TColgp_HSequenceOfPnt2d_Split(self, *args)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :param anItem:
         :type anItem: gp_Pnt2d
         :rtype: None
@@ -7602,65 +7606,65 @@ class TColgp_HSequenceOfPnt2d(OCC.MMgt.MMgt_TShared):
         """
         return _TColgp.TColgp_HSequenceOfPnt2d_SetValue(self, *args)
 
-    def Value(self, *args) -> "gp_Pnt2d const" :
+    def Value(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :rtype: gp_Pnt2d
 
         """
         return _TColgp.TColgp_HSequenceOfPnt2d_Value(self, *args)
 
-    def ChangeValue(self, *args) -> "gp_Pnt2d" :
+    def ChangeValue(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :rtype: gp_Pnt2d
 
         """
         return _TColgp.TColgp_HSequenceOfPnt2d_ChangeValue(self, *args)
 
-    def Remove(self, *args) -> "void" :
+    def Remove(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :rtype: None
 
         :param fromIndex:
-        :type fromIndex: int
+        :type fromIndex: Standard_Integer
         :param toIndex:
-        :type toIndex: int
+        :type toIndex: Standard_Integer
         :rtype: None
 
         """
         return _TColgp.TColgp_HSequenceOfPnt2d_Remove(self, *args)
 
-    def Sequence(self, *args) -> "TColgp_SequenceOfPnt2d const &" :
+    def Sequence(self):
         """
         :rtype: TColgp_SequenceOfPnt2d
 
         """
-        return _TColgp.TColgp_HSequenceOfPnt2d_Sequence(self, *args)
+        return _TColgp.TColgp_HSequenceOfPnt2d_Sequence(self)
 
-    def ChangeSequence(self, *args) -> "TColgp_SequenceOfPnt2d &" :
+    def ChangeSequence(self):
         """
         :rtype: TColgp_SequenceOfPnt2d
 
         """
-        return _TColgp.TColgp_HSequenceOfPnt2d_ChangeSequence(self, *args)
+        return _TColgp.TColgp_HSequenceOfPnt2d_ChangeSequence(self)
 
-    def ShallowCopy(self, *args) -> "Handle_TColgp_HSequenceOfPnt2d" :
+    def ShallowCopy(self):
         """
         :rtype: Handle_TColgp_HSequenceOfPnt2d
 
         """
-        return _TColgp.TColgp_HSequenceOfPnt2d_ShallowCopy(self, *args)
+        return _TColgp.TColgp_HSequenceOfPnt2d_ShallowCopy(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(TColgp_HSequenceOfPnt2d self)"""
         return _TColgp.TColgp_HSequenceOfPnt2d__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_TColgp_HSequenceOfPnt2d" :
+    def GetHandle(self):
         """GetHandle(TColgp_HSequenceOfPnt2d self) -> Handle_TColgp_HSequenceOfPnt2d"""
         return _TColgp.TColgp_HSequenceOfPnt2d_GetHandle(self)
 
@@ -7715,41 +7719,41 @@ Handle_TColgp_HSequenceOfPnt2d._kill_pointed = new_instancemethod(_TColgp.Handle
 Handle_TColgp_HSequenceOfPnt2d_swigregister = _TColgp.Handle_TColgp_HSequenceOfPnt2d_swigregister
 Handle_TColgp_HSequenceOfPnt2d_swigregister(Handle_TColgp_HSequenceOfPnt2d)
 
-def Handle_TColgp_HSequenceOfPnt2d_DownCast(*args) -> "Handle_TColgp_HSequenceOfPnt2d const" :
+def Handle_TColgp_HSequenceOfPnt2d_DownCast(*args):
   return _TColgp.Handle_TColgp_HSequenceOfPnt2d_DownCast(*args)
 Handle_TColgp_HSequenceOfPnt2d_DownCast = _TColgp.Handle_TColgp_HSequenceOfPnt2d_DownCast
 
 class TColgp_HSequenceOfVec(OCC.MMgt.MMgt_TShared):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _TColgp.TColgp_HSequenceOfVec_swiginit(self,_TColgp.new_TColgp_HSequenceOfVec(*args))
-    def IsEmpty(self, *args) -> "Standard_Boolean" :
+        _TColgp.TColgp_HSequenceOfVec_swiginit(self,_TColgp.new_TColgp_HSequenceOfVec())
+    def IsEmpty(self):
         """
         :rtype: bool
 
         """
-        return _TColgp.TColgp_HSequenceOfVec_IsEmpty(self, *args)
+        return _TColgp.TColgp_HSequenceOfVec_IsEmpty(self)
 
-    def Length(self, *args) -> "Standard_Integer" :
+    def Length(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_HSequenceOfVec_Length(self, *args)
+        return _TColgp.TColgp_HSequenceOfVec_Length(self)
 
-    def Clear(self, *args) -> "void" :
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _TColgp.TColgp_HSequenceOfVec_Clear(self, *args)
+        return _TColgp.TColgp_HSequenceOfVec_Clear(self)
 
-    def Append(self, *args) -> "void" :
+    def Append(self, *args):
         """
         :param anItem:
         :type anItem: gp_Vec
@@ -7762,7 +7766,7 @@ class TColgp_HSequenceOfVec(OCC.MMgt.MMgt_TShared):
         """
         return _TColgp.TColgp_HSequenceOfVec_Append(self, *args)
 
-    def Prepend(self, *args) -> "void" :
+    def Prepend(self, *args):
         """
         :param anItem:
         :type anItem: gp_Vec
@@ -7775,23 +7779,23 @@ class TColgp_HSequenceOfVec(OCC.MMgt.MMgt_TShared):
         """
         return _TColgp.TColgp_HSequenceOfVec_Prepend(self, *args)
 
-    def Reverse(self, *args) -> "void" :
+    def Reverse(self):
         """
         :rtype: None
 
         """
-        return _TColgp.TColgp_HSequenceOfVec_Reverse(self, *args)
+        return _TColgp.TColgp_HSequenceOfVec_Reverse(self)
 
-    def InsertBefore(self, *args) -> "void" :
+    def InsertBefore(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :param anItem:
         :type anItem: gp_Vec
         :rtype: None
 
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :param aSequence:
         :type aSequence: Handle_TColgp_HSequenceOfVec
         :rtype: None
@@ -7799,16 +7803,16 @@ class TColgp_HSequenceOfVec(OCC.MMgt.MMgt_TShared):
         """
         return _TColgp.TColgp_HSequenceOfVec_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args) -> "void" :
+    def InsertAfter(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :param anItem:
         :type anItem: gp_Vec
         :rtype: None
 
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :param aSequence:
         :type aSequence: Handle_TColgp_HSequenceOfVec
         :rtype: None
@@ -7816,30 +7820,30 @@ class TColgp_HSequenceOfVec(OCC.MMgt.MMgt_TShared):
         """
         return _TColgp.TColgp_HSequenceOfVec_InsertAfter(self, *args)
 
-    def Exchange(self, *args) -> "void" :
+    def Exchange(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :param anOtherIndex:
-        :type anOtherIndex: int
+        :type anOtherIndex: Standard_Integer
         :rtype: None
 
         """
         return _TColgp.TColgp_HSequenceOfVec_Exchange(self, *args)
 
-    def Split(self, *args) -> "Handle_TColgp_HSequenceOfVec" :
+    def Split(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :rtype: Handle_TColgp_HSequenceOfVec
 
         """
         return _TColgp.TColgp_HSequenceOfVec_Split(self, *args)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :param anItem:
         :type anItem: gp_Vec
         :rtype: None
@@ -7847,65 +7851,65 @@ class TColgp_HSequenceOfVec(OCC.MMgt.MMgt_TShared):
         """
         return _TColgp.TColgp_HSequenceOfVec_SetValue(self, *args)
 
-    def Value(self, *args) -> "gp_Vec const" :
+    def Value(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :rtype: gp_Vec
 
         """
         return _TColgp.TColgp_HSequenceOfVec_Value(self, *args)
 
-    def ChangeValue(self, *args) -> "gp_Vec" :
+    def ChangeValue(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :rtype: gp_Vec
 
         """
         return _TColgp.TColgp_HSequenceOfVec_ChangeValue(self, *args)
 
-    def Remove(self, *args) -> "void" :
+    def Remove(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :rtype: None
 
         :param fromIndex:
-        :type fromIndex: int
+        :type fromIndex: Standard_Integer
         :param toIndex:
-        :type toIndex: int
+        :type toIndex: Standard_Integer
         :rtype: None
 
         """
         return _TColgp.TColgp_HSequenceOfVec_Remove(self, *args)
 
-    def Sequence(self, *args) -> "TColgp_SequenceOfVec const &" :
+    def Sequence(self):
         """
         :rtype: TColgp_SequenceOfVec
 
         """
-        return _TColgp.TColgp_HSequenceOfVec_Sequence(self, *args)
+        return _TColgp.TColgp_HSequenceOfVec_Sequence(self)
 
-    def ChangeSequence(self, *args) -> "TColgp_SequenceOfVec &" :
+    def ChangeSequence(self):
         """
         :rtype: TColgp_SequenceOfVec
 
         """
-        return _TColgp.TColgp_HSequenceOfVec_ChangeSequence(self, *args)
+        return _TColgp.TColgp_HSequenceOfVec_ChangeSequence(self)
 
-    def ShallowCopy(self, *args) -> "Handle_TColgp_HSequenceOfVec" :
+    def ShallowCopy(self):
         """
         :rtype: Handle_TColgp_HSequenceOfVec
 
         """
-        return _TColgp.TColgp_HSequenceOfVec_ShallowCopy(self, *args)
+        return _TColgp.TColgp_HSequenceOfVec_ShallowCopy(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(TColgp_HSequenceOfVec self)"""
         return _TColgp.TColgp_HSequenceOfVec__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_TColgp_HSequenceOfVec" :
+    def GetHandle(self):
         """GetHandle(TColgp_HSequenceOfVec self) -> Handle_TColgp_HSequenceOfVec"""
         return _TColgp.TColgp_HSequenceOfVec_GetHandle(self)
 
@@ -7960,41 +7964,41 @@ Handle_TColgp_HSequenceOfVec._kill_pointed = new_instancemethod(_TColgp.Handle_T
 Handle_TColgp_HSequenceOfVec_swigregister = _TColgp.Handle_TColgp_HSequenceOfVec_swigregister
 Handle_TColgp_HSequenceOfVec_swigregister(Handle_TColgp_HSequenceOfVec)
 
-def Handle_TColgp_HSequenceOfVec_DownCast(*args) -> "Handle_TColgp_HSequenceOfVec const" :
+def Handle_TColgp_HSequenceOfVec_DownCast(*args):
   return _TColgp.Handle_TColgp_HSequenceOfVec_DownCast(*args)
 Handle_TColgp_HSequenceOfVec_DownCast = _TColgp.Handle_TColgp_HSequenceOfVec_DownCast
 
 class TColgp_HSequenceOfVec2d(OCC.MMgt.MMgt_TShared):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _TColgp.TColgp_HSequenceOfVec2d_swiginit(self,_TColgp.new_TColgp_HSequenceOfVec2d(*args))
-    def IsEmpty(self, *args) -> "Standard_Boolean" :
+        _TColgp.TColgp_HSequenceOfVec2d_swiginit(self,_TColgp.new_TColgp_HSequenceOfVec2d())
+    def IsEmpty(self):
         """
         :rtype: bool
 
         """
-        return _TColgp.TColgp_HSequenceOfVec2d_IsEmpty(self, *args)
+        return _TColgp.TColgp_HSequenceOfVec2d_IsEmpty(self)
 
-    def Length(self, *args) -> "Standard_Integer" :
+    def Length(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_HSequenceOfVec2d_Length(self, *args)
+        return _TColgp.TColgp_HSequenceOfVec2d_Length(self)
 
-    def Clear(self, *args) -> "void" :
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _TColgp.TColgp_HSequenceOfVec2d_Clear(self, *args)
+        return _TColgp.TColgp_HSequenceOfVec2d_Clear(self)
 
-    def Append(self, *args) -> "void" :
+    def Append(self, *args):
         """
         :param anItem:
         :type anItem: gp_Vec2d
@@ -8007,7 +8011,7 @@ class TColgp_HSequenceOfVec2d(OCC.MMgt.MMgt_TShared):
         """
         return _TColgp.TColgp_HSequenceOfVec2d_Append(self, *args)
 
-    def Prepend(self, *args) -> "void" :
+    def Prepend(self, *args):
         """
         :param anItem:
         :type anItem: gp_Vec2d
@@ -8020,23 +8024,23 @@ class TColgp_HSequenceOfVec2d(OCC.MMgt.MMgt_TShared):
         """
         return _TColgp.TColgp_HSequenceOfVec2d_Prepend(self, *args)
 
-    def Reverse(self, *args) -> "void" :
+    def Reverse(self):
         """
         :rtype: None
 
         """
-        return _TColgp.TColgp_HSequenceOfVec2d_Reverse(self, *args)
+        return _TColgp.TColgp_HSequenceOfVec2d_Reverse(self)
 
-    def InsertBefore(self, *args) -> "void" :
+    def InsertBefore(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :param anItem:
         :type anItem: gp_Vec2d
         :rtype: None
 
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :param aSequence:
         :type aSequence: Handle_TColgp_HSequenceOfVec2d
         :rtype: None
@@ -8044,16 +8048,16 @@ class TColgp_HSequenceOfVec2d(OCC.MMgt.MMgt_TShared):
         """
         return _TColgp.TColgp_HSequenceOfVec2d_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args) -> "void" :
+    def InsertAfter(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :param anItem:
         :type anItem: gp_Vec2d
         :rtype: None
 
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :param aSequence:
         :type aSequence: Handle_TColgp_HSequenceOfVec2d
         :rtype: None
@@ -8061,30 +8065,30 @@ class TColgp_HSequenceOfVec2d(OCC.MMgt.MMgt_TShared):
         """
         return _TColgp.TColgp_HSequenceOfVec2d_InsertAfter(self, *args)
 
-    def Exchange(self, *args) -> "void" :
+    def Exchange(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :param anOtherIndex:
-        :type anOtherIndex: int
+        :type anOtherIndex: Standard_Integer
         :rtype: None
 
         """
         return _TColgp.TColgp_HSequenceOfVec2d_Exchange(self, *args)
 
-    def Split(self, *args) -> "Handle_TColgp_HSequenceOfVec2d" :
+    def Split(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :rtype: Handle_TColgp_HSequenceOfVec2d
 
         """
         return _TColgp.TColgp_HSequenceOfVec2d_Split(self, *args)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :param anItem:
         :type anItem: gp_Vec2d
         :rtype: None
@@ -8092,65 +8096,65 @@ class TColgp_HSequenceOfVec2d(OCC.MMgt.MMgt_TShared):
         """
         return _TColgp.TColgp_HSequenceOfVec2d_SetValue(self, *args)
 
-    def Value(self, *args) -> "gp_Vec2d const" :
+    def Value(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :rtype: gp_Vec2d
 
         """
         return _TColgp.TColgp_HSequenceOfVec2d_Value(self, *args)
 
-    def ChangeValue(self, *args) -> "gp_Vec2d" :
+    def ChangeValue(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :rtype: gp_Vec2d
 
         """
         return _TColgp.TColgp_HSequenceOfVec2d_ChangeValue(self, *args)
 
-    def Remove(self, *args) -> "void" :
+    def Remove(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :rtype: None
 
         :param fromIndex:
-        :type fromIndex: int
+        :type fromIndex: Standard_Integer
         :param toIndex:
-        :type toIndex: int
+        :type toIndex: Standard_Integer
         :rtype: None
 
         """
         return _TColgp.TColgp_HSequenceOfVec2d_Remove(self, *args)
 
-    def Sequence(self, *args) -> "TColgp_SequenceOfVec2d const &" :
+    def Sequence(self):
         """
         :rtype: TColgp_SequenceOfVec2d
 
         """
-        return _TColgp.TColgp_HSequenceOfVec2d_Sequence(self, *args)
+        return _TColgp.TColgp_HSequenceOfVec2d_Sequence(self)
 
-    def ChangeSequence(self, *args) -> "TColgp_SequenceOfVec2d &" :
+    def ChangeSequence(self):
         """
         :rtype: TColgp_SequenceOfVec2d
 
         """
-        return _TColgp.TColgp_HSequenceOfVec2d_ChangeSequence(self, *args)
+        return _TColgp.TColgp_HSequenceOfVec2d_ChangeSequence(self)
 
-    def ShallowCopy(self, *args) -> "Handle_TColgp_HSequenceOfVec2d" :
+    def ShallowCopy(self):
         """
         :rtype: Handle_TColgp_HSequenceOfVec2d
 
         """
-        return _TColgp.TColgp_HSequenceOfVec2d_ShallowCopy(self, *args)
+        return _TColgp.TColgp_HSequenceOfVec2d_ShallowCopy(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(TColgp_HSequenceOfVec2d self)"""
         return _TColgp.TColgp_HSequenceOfVec2d__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_TColgp_HSequenceOfVec2d" :
+    def GetHandle(self):
         """GetHandle(TColgp_HSequenceOfVec2d self) -> Handle_TColgp_HSequenceOfVec2d"""
         return _TColgp.TColgp_HSequenceOfVec2d_GetHandle(self)
 
@@ -8205,41 +8209,41 @@ Handle_TColgp_HSequenceOfVec2d._kill_pointed = new_instancemethod(_TColgp.Handle
 Handle_TColgp_HSequenceOfVec2d_swigregister = _TColgp.Handle_TColgp_HSequenceOfVec2d_swigregister
 Handle_TColgp_HSequenceOfVec2d_swigregister(Handle_TColgp_HSequenceOfVec2d)
 
-def Handle_TColgp_HSequenceOfVec2d_DownCast(*args) -> "Handle_TColgp_HSequenceOfVec2d const" :
+def Handle_TColgp_HSequenceOfVec2d_DownCast(*args):
   return _TColgp.Handle_TColgp_HSequenceOfVec2d_DownCast(*args)
 Handle_TColgp_HSequenceOfVec2d_DownCast = _TColgp.Handle_TColgp_HSequenceOfVec2d_DownCast
 
 class TColgp_HSequenceOfXY(OCC.MMgt.MMgt_TShared):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _TColgp.TColgp_HSequenceOfXY_swiginit(self,_TColgp.new_TColgp_HSequenceOfXY(*args))
-    def IsEmpty(self, *args) -> "Standard_Boolean" :
+        _TColgp.TColgp_HSequenceOfXY_swiginit(self,_TColgp.new_TColgp_HSequenceOfXY())
+    def IsEmpty(self):
         """
         :rtype: bool
 
         """
-        return _TColgp.TColgp_HSequenceOfXY_IsEmpty(self, *args)
+        return _TColgp.TColgp_HSequenceOfXY_IsEmpty(self)
 
-    def Length(self, *args) -> "Standard_Integer" :
+    def Length(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_HSequenceOfXY_Length(self, *args)
+        return _TColgp.TColgp_HSequenceOfXY_Length(self)
 
-    def Clear(self, *args) -> "void" :
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _TColgp.TColgp_HSequenceOfXY_Clear(self, *args)
+        return _TColgp.TColgp_HSequenceOfXY_Clear(self)
 
-    def Append(self, *args) -> "void" :
+    def Append(self, *args):
         """
         :param anItem:
         :type anItem: gp_XY
@@ -8252,7 +8256,7 @@ class TColgp_HSequenceOfXY(OCC.MMgt.MMgt_TShared):
         """
         return _TColgp.TColgp_HSequenceOfXY_Append(self, *args)
 
-    def Prepend(self, *args) -> "void" :
+    def Prepend(self, *args):
         """
         :param anItem:
         :type anItem: gp_XY
@@ -8265,23 +8269,23 @@ class TColgp_HSequenceOfXY(OCC.MMgt.MMgt_TShared):
         """
         return _TColgp.TColgp_HSequenceOfXY_Prepend(self, *args)
 
-    def Reverse(self, *args) -> "void" :
+    def Reverse(self):
         """
         :rtype: None
 
         """
-        return _TColgp.TColgp_HSequenceOfXY_Reverse(self, *args)
+        return _TColgp.TColgp_HSequenceOfXY_Reverse(self)
 
-    def InsertBefore(self, *args) -> "void" :
+    def InsertBefore(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :param anItem:
         :type anItem: gp_XY
         :rtype: None
 
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :param aSequence:
         :type aSequence: Handle_TColgp_HSequenceOfXY
         :rtype: None
@@ -8289,16 +8293,16 @@ class TColgp_HSequenceOfXY(OCC.MMgt.MMgt_TShared):
         """
         return _TColgp.TColgp_HSequenceOfXY_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args) -> "void" :
+    def InsertAfter(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :param anItem:
         :type anItem: gp_XY
         :rtype: None
 
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :param aSequence:
         :type aSequence: Handle_TColgp_HSequenceOfXY
         :rtype: None
@@ -8306,30 +8310,30 @@ class TColgp_HSequenceOfXY(OCC.MMgt.MMgt_TShared):
         """
         return _TColgp.TColgp_HSequenceOfXY_InsertAfter(self, *args)
 
-    def Exchange(self, *args) -> "void" :
+    def Exchange(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :param anOtherIndex:
-        :type anOtherIndex: int
+        :type anOtherIndex: Standard_Integer
         :rtype: None
 
         """
         return _TColgp.TColgp_HSequenceOfXY_Exchange(self, *args)
 
-    def Split(self, *args) -> "Handle_TColgp_HSequenceOfXY" :
+    def Split(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :rtype: Handle_TColgp_HSequenceOfXY
 
         """
         return _TColgp.TColgp_HSequenceOfXY_Split(self, *args)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :param anItem:
         :type anItem: gp_XY
         :rtype: None
@@ -8337,65 +8341,65 @@ class TColgp_HSequenceOfXY(OCC.MMgt.MMgt_TShared):
         """
         return _TColgp.TColgp_HSequenceOfXY_SetValue(self, *args)
 
-    def Value(self, *args) -> "gp_XY const" :
+    def Value(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :rtype: gp_XY
 
         """
         return _TColgp.TColgp_HSequenceOfXY_Value(self, *args)
 
-    def ChangeValue(self, *args) -> "gp_XY" :
+    def ChangeValue(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :rtype: gp_XY
 
         """
         return _TColgp.TColgp_HSequenceOfXY_ChangeValue(self, *args)
 
-    def Remove(self, *args) -> "void" :
+    def Remove(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :rtype: None
 
         :param fromIndex:
-        :type fromIndex: int
+        :type fromIndex: Standard_Integer
         :param toIndex:
-        :type toIndex: int
+        :type toIndex: Standard_Integer
         :rtype: None
 
         """
         return _TColgp.TColgp_HSequenceOfXY_Remove(self, *args)
 
-    def Sequence(self, *args) -> "TColgp_SequenceOfXY const &" :
+    def Sequence(self):
         """
         :rtype: TColgp_SequenceOfXY
 
         """
-        return _TColgp.TColgp_HSequenceOfXY_Sequence(self, *args)
+        return _TColgp.TColgp_HSequenceOfXY_Sequence(self)
 
-    def ChangeSequence(self, *args) -> "TColgp_SequenceOfXY &" :
+    def ChangeSequence(self):
         """
         :rtype: TColgp_SequenceOfXY
 
         """
-        return _TColgp.TColgp_HSequenceOfXY_ChangeSequence(self, *args)
+        return _TColgp.TColgp_HSequenceOfXY_ChangeSequence(self)
 
-    def ShallowCopy(self, *args) -> "Handle_TColgp_HSequenceOfXY" :
+    def ShallowCopy(self):
         """
         :rtype: Handle_TColgp_HSequenceOfXY
 
         """
-        return _TColgp.TColgp_HSequenceOfXY_ShallowCopy(self, *args)
+        return _TColgp.TColgp_HSequenceOfXY_ShallowCopy(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(TColgp_HSequenceOfXY self)"""
         return _TColgp.TColgp_HSequenceOfXY__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_TColgp_HSequenceOfXY" :
+    def GetHandle(self):
         """GetHandle(TColgp_HSequenceOfXY self) -> Handle_TColgp_HSequenceOfXY"""
         return _TColgp.TColgp_HSequenceOfXY_GetHandle(self)
 
@@ -8450,41 +8454,41 @@ Handle_TColgp_HSequenceOfXY._kill_pointed = new_instancemethod(_TColgp.Handle_TC
 Handle_TColgp_HSequenceOfXY_swigregister = _TColgp.Handle_TColgp_HSequenceOfXY_swigregister
 Handle_TColgp_HSequenceOfXY_swigregister(Handle_TColgp_HSequenceOfXY)
 
-def Handle_TColgp_HSequenceOfXY_DownCast(*args) -> "Handle_TColgp_HSequenceOfXY const" :
+def Handle_TColgp_HSequenceOfXY_DownCast(*args):
   return _TColgp.Handle_TColgp_HSequenceOfXY_DownCast(*args)
 Handle_TColgp_HSequenceOfXY_DownCast = _TColgp.Handle_TColgp_HSequenceOfXY_DownCast
 
 class TColgp_HSequenceOfXYZ(OCC.MMgt.MMgt_TShared):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _TColgp.TColgp_HSequenceOfXYZ_swiginit(self,_TColgp.new_TColgp_HSequenceOfXYZ(*args))
-    def IsEmpty(self, *args) -> "Standard_Boolean" :
+        _TColgp.TColgp_HSequenceOfXYZ_swiginit(self,_TColgp.new_TColgp_HSequenceOfXYZ())
+    def IsEmpty(self):
         """
         :rtype: bool
 
         """
-        return _TColgp.TColgp_HSequenceOfXYZ_IsEmpty(self, *args)
+        return _TColgp.TColgp_HSequenceOfXYZ_IsEmpty(self)
 
-    def Length(self, *args) -> "Standard_Integer" :
+    def Length(self):
         """
         :rtype: int
 
         """
-        return _TColgp.TColgp_HSequenceOfXYZ_Length(self, *args)
+        return _TColgp.TColgp_HSequenceOfXYZ_Length(self)
 
-    def Clear(self, *args) -> "void" :
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _TColgp.TColgp_HSequenceOfXYZ_Clear(self, *args)
+        return _TColgp.TColgp_HSequenceOfXYZ_Clear(self)
 
-    def Append(self, *args) -> "void" :
+    def Append(self, *args):
         """
         :param anItem:
         :type anItem: gp_XYZ
@@ -8497,7 +8501,7 @@ class TColgp_HSequenceOfXYZ(OCC.MMgt.MMgt_TShared):
         """
         return _TColgp.TColgp_HSequenceOfXYZ_Append(self, *args)
 
-    def Prepend(self, *args) -> "void" :
+    def Prepend(self, *args):
         """
         :param anItem:
         :type anItem: gp_XYZ
@@ -8510,23 +8514,23 @@ class TColgp_HSequenceOfXYZ(OCC.MMgt.MMgt_TShared):
         """
         return _TColgp.TColgp_HSequenceOfXYZ_Prepend(self, *args)
 
-    def Reverse(self, *args) -> "void" :
+    def Reverse(self):
         """
         :rtype: None
 
         """
-        return _TColgp.TColgp_HSequenceOfXYZ_Reverse(self, *args)
+        return _TColgp.TColgp_HSequenceOfXYZ_Reverse(self)
 
-    def InsertBefore(self, *args) -> "void" :
+    def InsertBefore(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :param anItem:
         :type anItem: gp_XYZ
         :rtype: None
 
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :param aSequence:
         :type aSequence: Handle_TColgp_HSequenceOfXYZ
         :rtype: None
@@ -8534,16 +8538,16 @@ class TColgp_HSequenceOfXYZ(OCC.MMgt.MMgt_TShared):
         """
         return _TColgp.TColgp_HSequenceOfXYZ_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args) -> "void" :
+    def InsertAfter(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :param anItem:
         :type anItem: gp_XYZ
         :rtype: None
 
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :param aSequence:
         :type aSequence: Handle_TColgp_HSequenceOfXYZ
         :rtype: None
@@ -8551,30 +8555,30 @@ class TColgp_HSequenceOfXYZ(OCC.MMgt.MMgt_TShared):
         """
         return _TColgp.TColgp_HSequenceOfXYZ_InsertAfter(self, *args)
 
-    def Exchange(self, *args) -> "void" :
+    def Exchange(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :param anOtherIndex:
-        :type anOtherIndex: int
+        :type anOtherIndex: Standard_Integer
         :rtype: None
 
         """
         return _TColgp.TColgp_HSequenceOfXYZ_Exchange(self, *args)
 
-    def Split(self, *args) -> "Handle_TColgp_HSequenceOfXYZ" :
+    def Split(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :rtype: Handle_TColgp_HSequenceOfXYZ
 
         """
         return _TColgp.TColgp_HSequenceOfXYZ_Split(self, *args)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :param anItem:
         :type anItem: gp_XYZ
         :rtype: None
@@ -8582,65 +8586,65 @@ class TColgp_HSequenceOfXYZ(OCC.MMgt.MMgt_TShared):
         """
         return _TColgp.TColgp_HSequenceOfXYZ_SetValue(self, *args)
 
-    def Value(self, *args) -> "gp_XYZ const" :
+    def Value(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :rtype: gp_XYZ
 
         """
         return _TColgp.TColgp_HSequenceOfXYZ_Value(self, *args)
 
-    def ChangeValue(self, *args) -> "gp_XYZ" :
+    def ChangeValue(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :rtype: gp_XYZ
 
         """
         return _TColgp.TColgp_HSequenceOfXYZ_ChangeValue(self, *args)
 
-    def Remove(self, *args) -> "void" :
+    def Remove(self, *args):
         """
         :param anIndex:
-        :type anIndex: int
+        :type anIndex: Standard_Integer
         :rtype: None
 
         :param fromIndex:
-        :type fromIndex: int
+        :type fromIndex: Standard_Integer
         :param toIndex:
-        :type toIndex: int
+        :type toIndex: Standard_Integer
         :rtype: None
 
         """
         return _TColgp.TColgp_HSequenceOfXYZ_Remove(self, *args)
 
-    def Sequence(self, *args) -> "TColgp_SequenceOfXYZ const &" :
+    def Sequence(self):
         """
         :rtype: TColgp_SequenceOfXYZ
 
         """
-        return _TColgp.TColgp_HSequenceOfXYZ_Sequence(self, *args)
+        return _TColgp.TColgp_HSequenceOfXYZ_Sequence(self)
 
-    def ChangeSequence(self, *args) -> "TColgp_SequenceOfXYZ &" :
+    def ChangeSequence(self):
         """
         :rtype: TColgp_SequenceOfXYZ
 
         """
-        return _TColgp.TColgp_HSequenceOfXYZ_ChangeSequence(self, *args)
+        return _TColgp.TColgp_HSequenceOfXYZ_ChangeSequence(self)
 
-    def ShallowCopy(self, *args) -> "Handle_TColgp_HSequenceOfXYZ" :
+    def ShallowCopy(self):
         """
         :rtype: Handle_TColgp_HSequenceOfXYZ
 
         """
-        return _TColgp.TColgp_HSequenceOfXYZ_ShallowCopy(self, *args)
+        return _TColgp.TColgp_HSequenceOfXYZ_ShallowCopy(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(TColgp_HSequenceOfXYZ self)"""
         return _TColgp.TColgp_HSequenceOfXYZ__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_TColgp_HSequenceOfXYZ" :
+    def GetHandle(self):
         """GetHandle(TColgp_HSequenceOfXYZ self) -> Handle_TColgp_HSequenceOfXYZ"""
         return _TColgp.TColgp_HSequenceOfXYZ_GetHandle(self)
 
@@ -8695,7 +8699,7 @@ Handle_TColgp_HSequenceOfXYZ._kill_pointed = new_instancemethod(_TColgp.Handle_T
 Handle_TColgp_HSequenceOfXYZ_swigregister = _TColgp.Handle_TColgp_HSequenceOfXYZ_swigregister
 Handle_TColgp_HSequenceOfXYZ_swigregister(Handle_TColgp_HSequenceOfXYZ)
 
-def Handle_TColgp_HSequenceOfXYZ_DownCast(*args) -> "Handle_TColgp_HSequenceOfXYZ const" :
+def Handle_TColgp_HSequenceOfXYZ_DownCast(*args):
   return _TColgp.Handle_TColgp_HSequenceOfXYZ_DownCast(*args)
 Handle_TColgp_HSequenceOfXYZ_DownCast = _TColgp.Handle_TColgp_HSequenceOfXYZ_DownCast
 
@@ -8714,18 +8718,18 @@ class TColgp_SequenceNodeOfSequenceOfArray1OfPnt2d(OCC.TCollection.TCollection_S
 
         """
         _TColgp.TColgp_SequenceNodeOfSequenceOfArray1OfPnt2d_swiginit(self,_TColgp.new_TColgp_SequenceNodeOfSequenceOfArray1OfPnt2d(*args))
-    def Value(self, *args) -> "Handle_TColgp_HArray1OfPnt2d &" :
+    def Value(self):
         """
         :rtype: Handle_TColgp_HArray1OfPnt2d
 
         """
-        return _TColgp.TColgp_SequenceNodeOfSequenceOfArray1OfPnt2d_Value(self, *args)
+        return _TColgp.TColgp_SequenceNodeOfSequenceOfArray1OfPnt2d_Value(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(TColgp_SequenceNodeOfSequenceOfArray1OfPnt2d self)"""
         return _TColgp.TColgp_SequenceNodeOfSequenceOfArray1OfPnt2d__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_TColgp_SequenceNodeOfSequenceOfArray1OfPnt2d" :
+    def GetHandle(self):
         """GetHandle(TColgp_SequenceNodeOfSequenceOfArray1OfPnt2d self) -> Handle_TColgp_SequenceNodeOfSequenceOfArray1OfPnt2d"""
         return _TColgp.TColgp_SequenceNodeOfSequenceOfArray1OfPnt2d_GetHandle(self)
 
@@ -8764,7 +8768,7 @@ Handle_TColgp_SequenceNodeOfSequenceOfArray1OfPnt2d._kill_pointed = new_instance
 Handle_TColgp_SequenceNodeOfSequenceOfArray1OfPnt2d_swigregister = _TColgp.Handle_TColgp_SequenceNodeOfSequenceOfArray1OfPnt2d_swigregister
 Handle_TColgp_SequenceNodeOfSequenceOfArray1OfPnt2d_swigregister(Handle_TColgp_SequenceNodeOfSequenceOfArray1OfPnt2d)
 
-def Handle_TColgp_SequenceNodeOfSequenceOfArray1OfPnt2d_DownCast(*args) -> "Handle_TColgp_SequenceNodeOfSequenceOfArray1OfPnt2d const" :
+def Handle_TColgp_SequenceNodeOfSequenceOfArray1OfPnt2d_DownCast(*args):
   return _TColgp.Handle_TColgp_SequenceNodeOfSequenceOfArray1OfPnt2d_DownCast(*args)
 Handle_TColgp_SequenceNodeOfSequenceOfArray1OfPnt2d_DownCast = _TColgp.Handle_TColgp_SequenceNodeOfSequenceOfArray1OfPnt2d_DownCast
 
@@ -8783,18 +8787,18 @@ class TColgp_SequenceNodeOfSequenceOfDir(OCC.TCollection.TCollection_SeqNode):
 
         """
         _TColgp.TColgp_SequenceNodeOfSequenceOfDir_swiginit(self,_TColgp.new_TColgp_SequenceNodeOfSequenceOfDir(*args))
-    def Value(self, *args) -> "gp_Dir" :
+    def Value(self):
         """
         :rtype: gp_Dir
 
         """
-        return _TColgp.TColgp_SequenceNodeOfSequenceOfDir_Value(self, *args)
+        return _TColgp.TColgp_SequenceNodeOfSequenceOfDir_Value(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(TColgp_SequenceNodeOfSequenceOfDir self)"""
         return _TColgp.TColgp_SequenceNodeOfSequenceOfDir__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_TColgp_SequenceNodeOfSequenceOfDir" :
+    def GetHandle(self):
         """GetHandle(TColgp_SequenceNodeOfSequenceOfDir self) -> Handle_TColgp_SequenceNodeOfSequenceOfDir"""
         return _TColgp.TColgp_SequenceNodeOfSequenceOfDir_GetHandle(self)
 
@@ -8833,7 +8837,7 @@ Handle_TColgp_SequenceNodeOfSequenceOfDir._kill_pointed = new_instancemethod(_TC
 Handle_TColgp_SequenceNodeOfSequenceOfDir_swigregister = _TColgp.Handle_TColgp_SequenceNodeOfSequenceOfDir_swigregister
 Handle_TColgp_SequenceNodeOfSequenceOfDir_swigregister(Handle_TColgp_SequenceNodeOfSequenceOfDir)
 
-def Handle_TColgp_SequenceNodeOfSequenceOfDir_DownCast(*args) -> "Handle_TColgp_SequenceNodeOfSequenceOfDir const" :
+def Handle_TColgp_SequenceNodeOfSequenceOfDir_DownCast(*args):
   return _TColgp.Handle_TColgp_SequenceNodeOfSequenceOfDir_DownCast(*args)
 Handle_TColgp_SequenceNodeOfSequenceOfDir_DownCast = _TColgp.Handle_TColgp_SequenceNodeOfSequenceOfDir_DownCast
 
@@ -8852,18 +8856,18 @@ class TColgp_SequenceNodeOfSequenceOfDir2d(OCC.TCollection.TCollection_SeqNode):
 
         """
         _TColgp.TColgp_SequenceNodeOfSequenceOfDir2d_swiginit(self,_TColgp.new_TColgp_SequenceNodeOfSequenceOfDir2d(*args))
-    def Value(self, *args) -> "gp_Dir2d" :
+    def Value(self):
         """
         :rtype: gp_Dir2d
 
         """
-        return _TColgp.TColgp_SequenceNodeOfSequenceOfDir2d_Value(self, *args)
+        return _TColgp.TColgp_SequenceNodeOfSequenceOfDir2d_Value(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(TColgp_SequenceNodeOfSequenceOfDir2d self)"""
         return _TColgp.TColgp_SequenceNodeOfSequenceOfDir2d__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_TColgp_SequenceNodeOfSequenceOfDir2d" :
+    def GetHandle(self):
         """GetHandle(TColgp_SequenceNodeOfSequenceOfDir2d self) -> Handle_TColgp_SequenceNodeOfSequenceOfDir2d"""
         return _TColgp.TColgp_SequenceNodeOfSequenceOfDir2d_GetHandle(self)
 
@@ -8902,7 +8906,7 @@ Handle_TColgp_SequenceNodeOfSequenceOfDir2d._kill_pointed = new_instancemethod(_
 Handle_TColgp_SequenceNodeOfSequenceOfDir2d_swigregister = _TColgp.Handle_TColgp_SequenceNodeOfSequenceOfDir2d_swigregister
 Handle_TColgp_SequenceNodeOfSequenceOfDir2d_swigregister(Handle_TColgp_SequenceNodeOfSequenceOfDir2d)
 
-def Handle_TColgp_SequenceNodeOfSequenceOfDir2d_DownCast(*args) -> "Handle_TColgp_SequenceNodeOfSequenceOfDir2d const" :
+def Handle_TColgp_SequenceNodeOfSequenceOfDir2d_DownCast(*args):
   return _TColgp.Handle_TColgp_SequenceNodeOfSequenceOfDir2d_DownCast(*args)
 Handle_TColgp_SequenceNodeOfSequenceOfDir2d_DownCast = _TColgp.Handle_TColgp_SequenceNodeOfSequenceOfDir2d_DownCast
 
@@ -8921,18 +8925,18 @@ class TColgp_SequenceNodeOfSequenceOfPnt(OCC.TCollection.TCollection_SeqNode):
 
         """
         _TColgp.TColgp_SequenceNodeOfSequenceOfPnt_swiginit(self,_TColgp.new_TColgp_SequenceNodeOfSequenceOfPnt(*args))
-    def Value(self, *args) -> "gp_Pnt" :
+    def Value(self):
         """
         :rtype: gp_Pnt
 
         """
-        return _TColgp.TColgp_SequenceNodeOfSequenceOfPnt_Value(self, *args)
+        return _TColgp.TColgp_SequenceNodeOfSequenceOfPnt_Value(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(TColgp_SequenceNodeOfSequenceOfPnt self)"""
         return _TColgp.TColgp_SequenceNodeOfSequenceOfPnt__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_TColgp_SequenceNodeOfSequenceOfPnt" :
+    def GetHandle(self):
         """GetHandle(TColgp_SequenceNodeOfSequenceOfPnt self) -> Handle_TColgp_SequenceNodeOfSequenceOfPnt"""
         return _TColgp.TColgp_SequenceNodeOfSequenceOfPnt_GetHandle(self)
 
@@ -8971,7 +8975,7 @@ Handle_TColgp_SequenceNodeOfSequenceOfPnt._kill_pointed = new_instancemethod(_TC
 Handle_TColgp_SequenceNodeOfSequenceOfPnt_swigregister = _TColgp.Handle_TColgp_SequenceNodeOfSequenceOfPnt_swigregister
 Handle_TColgp_SequenceNodeOfSequenceOfPnt_swigregister(Handle_TColgp_SequenceNodeOfSequenceOfPnt)
 
-def Handle_TColgp_SequenceNodeOfSequenceOfPnt_DownCast(*args) -> "Handle_TColgp_SequenceNodeOfSequenceOfPnt const" :
+def Handle_TColgp_SequenceNodeOfSequenceOfPnt_DownCast(*args):
   return _TColgp.Handle_TColgp_SequenceNodeOfSequenceOfPnt_DownCast(*args)
 Handle_TColgp_SequenceNodeOfSequenceOfPnt_DownCast = _TColgp.Handle_TColgp_SequenceNodeOfSequenceOfPnt_DownCast
 
@@ -8990,18 +8994,18 @@ class TColgp_SequenceNodeOfSequenceOfPnt2d(OCC.TCollection.TCollection_SeqNode):
 
         """
         _TColgp.TColgp_SequenceNodeOfSequenceOfPnt2d_swiginit(self,_TColgp.new_TColgp_SequenceNodeOfSequenceOfPnt2d(*args))
-    def Value(self, *args) -> "gp_Pnt2d" :
+    def Value(self):
         """
         :rtype: gp_Pnt2d
 
         """
-        return _TColgp.TColgp_SequenceNodeOfSequenceOfPnt2d_Value(self, *args)
+        return _TColgp.TColgp_SequenceNodeOfSequenceOfPnt2d_Value(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(TColgp_SequenceNodeOfSequenceOfPnt2d self)"""
         return _TColgp.TColgp_SequenceNodeOfSequenceOfPnt2d__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_TColgp_SequenceNodeOfSequenceOfPnt2d" :
+    def GetHandle(self):
         """GetHandle(TColgp_SequenceNodeOfSequenceOfPnt2d self) -> Handle_TColgp_SequenceNodeOfSequenceOfPnt2d"""
         return _TColgp.TColgp_SequenceNodeOfSequenceOfPnt2d_GetHandle(self)
 
@@ -9040,7 +9044,7 @@ Handle_TColgp_SequenceNodeOfSequenceOfPnt2d._kill_pointed = new_instancemethod(_
 Handle_TColgp_SequenceNodeOfSequenceOfPnt2d_swigregister = _TColgp.Handle_TColgp_SequenceNodeOfSequenceOfPnt2d_swigregister
 Handle_TColgp_SequenceNodeOfSequenceOfPnt2d_swigregister(Handle_TColgp_SequenceNodeOfSequenceOfPnt2d)
 
-def Handle_TColgp_SequenceNodeOfSequenceOfPnt2d_DownCast(*args) -> "Handle_TColgp_SequenceNodeOfSequenceOfPnt2d const" :
+def Handle_TColgp_SequenceNodeOfSequenceOfPnt2d_DownCast(*args):
   return _TColgp.Handle_TColgp_SequenceNodeOfSequenceOfPnt2d_DownCast(*args)
 Handle_TColgp_SequenceNodeOfSequenceOfPnt2d_DownCast = _TColgp.Handle_TColgp_SequenceNodeOfSequenceOfPnt2d_DownCast
 
@@ -9059,18 +9063,18 @@ class TColgp_SequenceNodeOfSequenceOfVec(OCC.TCollection.TCollection_SeqNode):
 
         """
         _TColgp.TColgp_SequenceNodeOfSequenceOfVec_swiginit(self,_TColgp.new_TColgp_SequenceNodeOfSequenceOfVec(*args))
-    def Value(self, *args) -> "gp_Vec" :
+    def Value(self):
         """
         :rtype: gp_Vec
 
         """
-        return _TColgp.TColgp_SequenceNodeOfSequenceOfVec_Value(self, *args)
+        return _TColgp.TColgp_SequenceNodeOfSequenceOfVec_Value(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(TColgp_SequenceNodeOfSequenceOfVec self)"""
         return _TColgp.TColgp_SequenceNodeOfSequenceOfVec__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_TColgp_SequenceNodeOfSequenceOfVec" :
+    def GetHandle(self):
         """GetHandle(TColgp_SequenceNodeOfSequenceOfVec self) -> Handle_TColgp_SequenceNodeOfSequenceOfVec"""
         return _TColgp.TColgp_SequenceNodeOfSequenceOfVec_GetHandle(self)
 
@@ -9109,7 +9113,7 @@ Handle_TColgp_SequenceNodeOfSequenceOfVec._kill_pointed = new_instancemethod(_TC
 Handle_TColgp_SequenceNodeOfSequenceOfVec_swigregister = _TColgp.Handle_TColgp_SequenceNodeOfSequenceOfVec_swigregister
 Handle_TColgp_SequenceNodeOfSequenceOfVec_swigregister(Handle_TColgp_SequenceNodeOfSequenceOfVec)
 
-def Handle_TColgp_SequenceNodeOfSequenceOfVec_DownCast(*args) -> "Handle_TColgp_SequenceNodeOfSequenceOfVec const" :
+def Handle_TColgp_SequenceNodeOfSequenceOfVec_DownCast(*args):
   return _TColgp.Handle_TColgp_SequenceNodeOfSequenceOfVec_DownCast(*args)
 Handle_TColgp_SequenceNodeOfSequenceOfVec_DownCast = _TColgp.Handle_TColgp_SequenceNodeOfSequenceOfVec_DownCast
 
@@ -9128,18 +9132,18 @@ class TColgp_SequenceNodeOfSequenceOfVec2d(OCC.TCollection.TCollection_SeqNode):
 
         """
         _TColgp.TColgp_SequenceNodeOfSequenceOfVec2d_swiginit(self,_TColgp.new_TColgp_SequenceNodeOfSequenceOfVec2d(*args))
-    def Value(self, *args) -> "gp_Vec2d" :
+    def Value(self):
         """
         :rtype: gp_Vec2d
 
         """
-        return _TColgp.TColgp_SequenceNodeOfSequenceOfVec2d_Value(self, *args)
+        return _TColgp.TColgp_SequenceNodeOfSequenceOfVec2d_Value(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(TColgp_SequenceNodeOfSequenceOfVec2d self)"""
         return _TColgp.TColgp_SequenceNodeOfSequenceOfVec2d__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_TColgp_SequenceNodeOfSequenceOfVec2d" :
+    def GetHandle(self):
         """GetHandle(TColgp_SequenceNodeOfSequenceOfVec2d self) -> Handle_TColgp_SequenceNodeOfSequenceOfVec2d"""
         return _TColgp.TColgp_SequenceNodeOfSequenceOfVec2d_GetHandle(self)
 
@@ -9178,7 +9182,7 @@ Handle_TColgp_SequenceNodeOfSequenceOfVec2d._kill_pointed = new_instancemethod(_
 Handle_TColgp_SequenceNodeOfSequenceOfVec2d_swigregister = _TColgp.Handle_TColgp_SequenceNodeOfSequenceOfVec2d_swigregister
 Handle_TColgp_SequenceNodeOfSequenceOfVec2d_swigregister(Handle_TColgp_SequenceNodeOfSequenceOfVec2d)
 
-def Handle_TColgp_SequenceNodeOfSequenceOfVec2d_DownCast(*args) -> "Handle_TColgp_SequenceNodeOfSequenceOfVec2d const" :
+def Handle_TColgp_SequenceNodeOfSequenceOfVec2d_DownCast(*args):
   return _TColgp.Handle_TColgp_SequenceNodeOfSequenceOfVec2d_DownCast(*args)
 Handle_TColgp_SequenceNodeOfSequenceOfVec2d_DownCast = _TColgp.Handle_TColgp_SequenceNodeOfSequenceOfVec2d_DownCast
 
@@ -9197,18 +9201,18 @@ class TColgp_SequenceNodeOfSequenceOfXY(OCC.TCollection.TCollection_SeqNode):
 
         """
         _TColgp.TColgp_SequenceNodeOfSequenceOfXY_swiginit(self,_TColgp.new_TColgp_SequenceNodeOfSequenceOfXY(*args))
-    def Value(self, *args) -> "gp_XY" :
+    def Value(self):
         """
         :rtype: gp_XY
 
         """
-        return _TColgp.TColgp_SequenceNodeOfSequenceOfXY_Value(self, *args)
+        return _TColgp.TColgp_SequenceNodeOfSequenceOfXY_Value(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(TColgp_SequenceNodeOfSequenceOfXY self)"""
         return _TColgp.TColgp_SequenceNodeOfSequenceOfXY__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_TColgp_SequenceNodeOfSequenceOfXY" :
+    def GetHandle(self):
         """GetHandle(TColgp_SequenceNodeOfSequenceOfXY self) -> Handle_TColgp_SequenceNodeOfSequenceOfXY"""
         return _TColgp.TColgp_SequenceNodeOfSequenceOfXY_GetHandle(self)
 
@@ -9247,7 +9251,7 @@ Handle_TColgp_SequenceNodeOfSequenceOfXY._kill_pointed = new_instancemethod(_TCo
 Handle_TColgp_SequenceNodeOfSequenceOfXY_swigregister = _TColgp.Handle_TColgp_SequenceNodeOfSequenceOfXY_swigregister
 Handle_TColgp_SequenceNodeOfSequenceOfXY_swigregister(Handle_TColgp_SequenceNodeOfSequenceOfXY)
 
-def Handle_TColgp_SequenceNodeOfSequenceOfXY_DownCast(*args) -> "Handle_TColgp_SequenceNodeOfSequenceOfXY const" :
+def Handle_TColgp_SequenceNodeOfSequenceOfXY_DownCast(*args):
   return _TColgp.Handle_TColgp_SequenceNodeOfSequenceOfXY_DownCast(*args)
 Handle_TColgp_SequenceNodeOfSequenceOfXY_DownCast = _TColgp.Handle_TColgp_SequenceNodeOfSequenceOfXY_DownCast
 
@@ -9266,18 +9270,18 @@ class TColgp_SequenceNodeOfSequenceOfXYZ(OCC.TCollection.TCollection_SeqNode):
 
         """
         _TColgp.TColgp_SequenceNodeOfSequenceOfXYZ_swiginit(self,_TColgp.new_TColgp_SequenceNodeOfSequenceOfXYZ(*args))
-    def Value(self, *args) -> "gp_XYZ" :
+    def Value(self):
         """
         :rtype: gp_XYZ
 
         """
-        return _TColgp.TColgp_SequenceNodeOfSequenceOfXYZ_Value(self, *args)
+        return _TColgp.TColgp_SequenceNodeOfSequenceOfXYZ_Value(self)
 
-    def _kill_pointed(self) -> "void" :
+    def _kill_pointed(self):
         """_kill_pointed(TColgp_SequenceNodeOfSequenceOfXYZ self)"""
         return _TColgp.TColgp_SequenceNodeOfSequenceOfXYZ__kill_pointed(self)
 
-    def GetHandle(self) -> "Handle_TColgp_SequenceNodeOfSequenceOfXYZ" :
+    def GetHandle(self):
         """GetHandle(TColgp_SequenceNodeOfSequenceOfXYZ self) -> Handle_TColgp_SequenceNodeOfSequenceOfXYZ"""
         return _TColgp.TColgp_SequenceNodeOfSequenceOfXYZ_GetHandle(self)
 
@@ -9316,27 +9320,27 @@ Handle_TColgp_SequenceNodeOfSequenceOfXYZ._kill_pointed = new_instancemethod(_TC
 Handle_TColgp_SequenceNodeOfSequenceOfXYZ_swigregister = _TColgp.Handle_TColgp_SequenceNodeOfSequenceOfXYZ_swigregister
 Handle_TColgp_SequenceNodeOfSequenceOfXYZ_swigregister(Handle_TColgp_SequenceNodeOfSequenceOfXYZ)
 
-def Handle_TColgp_SequenceNodeOfSequenceOfXYZ_DownCast(*args) -> "Handle_TColgp_SequenceNodeOfSequenceOfXYZ const" :
+def Handle_TColgp_SequenceNodeOfSequenceOfXYZ_DownCast(*args):
   return _TColgp.Handle_TColgp_SequenceNodeOfSequenceOfXYZ_DownCast(*args)
 Handle_TColgp_SequenceNodeOfSequenceOfXYZ_DownCast = _TColgp.Handle_TColgp_SequenceNodeOfSequenceOfXYZ_DownCast
 
 class TColgp_SequenceOfArray1OfPnt2d(OCC.TCollection.TCollection_BaseSequence):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _TColgp.TColgp_SequenceOfArray1OfPnt2d_swiginit(self,_TColgp.new_TColgp_SequenceOfArray1OfPnt2d(*args))
-    def Clear(self, *args) -> "void" :
+        _TColgp.TColgp_SequenceOfArray1OfPnt2d_swiginit(self,_TColgp.new_TColgp_SequenceOfArray1OfPnt2d())
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _TColgp.TColgp_SequenceOfArray1OfPnt2d_Clear(self, *args)
+        return _TColgp.TColgp_SequenceOfArray1OfPnt2d_Clear(self)
 
-    def Assign(self, *args) -> "TColgp_SequenceOfArray1OfPnt2d const &" :
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: TColgp_SequenceOfArray1OfPnt2d
@@ -9345,7 +9349,7 @@ class TColgp_SequenceOfArray1OfPnt2d(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TColgp.TColgp_SequenceOfArray1OfPnt2d_Assign(self, *args)
 
-    def Set(self, *args) -> "TColgp_SequenceOfArray1OfPnt2d const &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: TColgp_SequenceOfArray1OfPnt2d
@@ -9354,7 +9358,7 @@ class TColgp_SequenceOfArray1OfPnt2d(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TColgp.TColgp_SequenceOfArray1OfPnt2d_Set(self, *args)
 
-    def Append(self, *args) -> "void" :
+    def Append(self, *args):
         """
         :param T:
         :type T: Handle_TColgp_HArray1OfPnt2d
@@ -9367,7 +9371,7 @@ class TColgp_SequenceOfArray1OfPnt2d(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TColgp.TColgp_SequenceOfArray1OfPnt2d_Append(self, *args)
 
-    def Prepend(self, *args) -> "void" :
+    def Prepend(self, *args):
         """
         :param T:
         :type T: Handle_TColgp_HArray1OfPnt2d
@@ -9380,16 +9384,16 @@ class TColgp_SequenceOfArray1OfPnt2d(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TColgp.TColgp_SequenceOfArray1OfPnt2d_Prepend(self, *args)
 
-    def InsertBefore(self, *args) -> "void" :
+    def InsertBefore(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param T:
         :type T: Handle_TColgp_HArray1OfPnt2d
         :rtype: None
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param S:
         :type S: TColgp_SequenceOfArray1OfPnt2d
         :rtype: None
@@ -9397,16 +9401,16 @@ class TColgp_SequenceOfArray1OfPnt2d(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TColgp.TColgp_SequenceOfArray1OfPnt2d_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args) -> "void" :
+    def InsertAfter(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param T:
         :type T: Handle_TColgp_HArray1OfPnt2d
         :rtype: None
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param S:
         :type S: TColgp_SequenceOfArray1OfPnt2d
         :rtype: None
@@ -9414,24 +9418,24 @@ class TColgp_SequenceOfArray1OfPnt2d(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TColgp.TColgp_SequenceOfArray1OfPnt2d_InsertAfter(self, *args)
 
-    def First(self, *args) -> "Handle_TColgp_HArray1OfPnt2d const &" :
+    def First(self):
         """
         :rtype: Handle_TColgp_HArray1OfPnt2d
 
         """
-        return _TColgp.TColgp_SequenceOfArray1OfPnt2d_First(self, *args)
+        return _TColgp.TColgp_SequenceOfArray1OfPnt2d_First(self)
 
-    def Last(self, *args) -> "Handle_TColgp_HArray1OfPnt2d const &" :
+    def Last(self):
         """
         :rtype: Handle_TColgp_HArray1OfPnt2d
 
         """
-        return _TColgp.TColgp_SequenceOfArray1OfPnt2d_Last(self, *args)
+        return _TColgp.TColgp_SequenceOfArray1OfPnt2d_Last(self)
 
-    def Split(self, *args) -> "void" :
+    def Split(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Sub:
         :type Sub: TColgp_SequenceOfArray1OfPnt2d
         :rtype: None
@@ -9439,19 +9443,19 @@ class TColgp_SequenceOfArray1OfPnt2d(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TColgp.TColgp_SequenceOfArray1OfPnt2d_Split(self, *args)
 
-    def Value(self, *args) -> "Handle_TColgp_HArray1OfPnt2d const &" :
+    def Value(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Handle_TColgp_HArray1OfPnt2d
 
         """
         return _TColgp.TColgp_SequenceOfArray1OfPnt2d_Value(self, *args)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param I:
         :type I: Handle_TColgp_HArray1OfPnt2d
         :rtype: None
@@ -9459,25 +9463,25 @@ class TColgp_SequenceOfArray1OfPnt2d(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TColgp.TColgp_SequenceOfArray1OfPnt2d_SetValue(self, *args)
 
-    def ChangeValue(self, *args) -> "Handle_TColgp_HArray1OfPnt2d &" :
+    def ChangeValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: Handle_TColgp_HArray1OfPnt2d
 
         """
         return _TColgp.TColgp_SequenceOfArray1OfPnt2d_ChangeValue(self, *args)
 
-    def Remove(self, *args) -> "void" :
+    def Remove(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: None
 
         :param FromIndex:
-        :type FromIndex: int
+        :type FromIndex: Standard_Integer
         :param ToIndex:
-        :type ToIndex: int
+        :type ToIndex: Standard_Integer
         :rtype: None
 
         """
@@ -9512,20 +9516,20 @@ TColgp_SequenceOfArray1OfPnt2d_swigregister(TColgp_SequenceOfArray1OfPnt2d)
 class TColgp_SequenceOfDir(OCC.TCollection.TCollection_BaseSequence):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _TColgp.TColgp_SequenceOfDir_swiginit(self,_TColgp.new_TColgp_SequenceOfDir(*args))
-    def Clear(self, *args) -> "void" :
+        _TColgp.TColgp_SequenceOfDir_swiginit(self,_TColgp.new_TColgp_SequenceOfDir())
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _TColgp.TColgp_SequenceOfDir_Clear(self, *args)
+        return _TColgp.TColgp_SequenceOfDir_Clear(self)
 
-    def Assign(self, *args) -> "TColgp_SequenceOfDir const &" :
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: TColgp_SequenceOfDir
@@ -9534,7 +9538,7 @@ class TColgp_SequenceOfDir(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TColgp.TColgp_SequenceOfDir_Assign(self, *args)
 
-    def Set(self, *args) -> "TColgp_SequenceOfDir const &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: TColgp_SequenceOfDir
@@ -9543,7 +9547,7 @@ class TColgp_SequenceOfDir(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TColgp.TColgp_SequenceOfDir_Set(self, *args)
 
-    def Append(self, *args) -> "void" :
+    def Append(self, *args):
         """
         :param T:
         :type T: gp_Dir
@@ -9556,7 +9560,7 @@ class TColgp_SequenceOfDir(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TColgp.TColgp_SequenceOfDir_Append(self, *args)
 
-    def Prepend(self, *args) -> "void" :
+    def Prepend(self, *args):
         """
         :param T:
         :type T: gp_Dir
@@ -9569,16 +9573,16 @@ class TColgp_SequenceOfDir(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TColgp.TColgp_SequenceOfDir_Prepend(self, *args)
 
-    def InsertBefore(self, *args) -> "void" :
+    def InsertBefore(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param T:
         :type T: gp_Dir
         :rtype: None
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param S:
         :type S: TColgp_SequenceOfDir
         :rtype: None
@@ -9586,16 +9590,16 @@ class TColgp_SequenceOfDir(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TColgp.TColgp_SequenceOfDir_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args) -> "void" :
+    def InsertAfter(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param T:
         :type T: gp_Dir
         :rtype: None
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param S:
         :type S: TColgp_SequenceOfDir
         :rtype: None
@@ -9603,24 +9607,24 @@ class TColgp_SequenceOfDir(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TColgp.TColgp_SequenceOfDir_InsertAfter(self, *args)
 
-    def First(self, *args) -> "gp_Dir const" :
+    def First(self):
         """
         :rtype: gp_Dir
 
         """
-        return _TColgp.TColgp_SequenceOfDir_First(self, *args)
+        return _TColgp.TColgp_SequenceOfDir_First(self)
 
-    def Last(self, *args) -> "gp_Dir const" :
+    def Last(self):
         """
         :rtype: gp_Dir
 
         """
-        return _TColgp.TColgp_SequenceOfDir_Last(self, *args)
+        return _TColgp.TColgp_SequenceOfDir_Last(self)
 
-    def Split(self, *args) -> "void" :
+    def Split(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Sub:
         :type Sub: TColgp_SequenceOfDir
         :rtype: None
@@ -9628,19 +9632,19 @@ class TColgp_SequenceOfDir(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TColgp.TColgp_SequenceOfDir_Split(self, *args)
 
-    def Value(self, *args) -> "gp_Dir const" :
+    def Value(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: gp_Dir
 
         """
         return _TColgp.TColgp_SequenceOfDir_Value(self, *args)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param I:
         :type I: gp_Dir
         :rtype: None
@@ -9648,25 +9652,25 @@ class TColgp_SequenceOfDir(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TColgp.TColgp_SequenceOfDir_SetValue(self, *args)
 
-    def ChangeValue(self, *args) -> "gp_Dir" :
+    def ChangeValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: gp_Dir
 
         """
         return _TColgp.TColgp_SequenceOfDir_ChangeValue(self, *args)
 
-    def Remove(self, *args) -> "void" :
+    def Remove(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: None
 
         :param FromIndex:
-        :type FromIndex: int
+        :type FromIndex: Standard_Integer
         :param ToIndex:
-        :type ToIndex: int
+        :type ToIndex: Standard_Integer
         :rtype: None
 
         """
@@ -9701,20 +9705,20 @@ TColgp_SequenceOfDir_swigregister(TColgp_SequenceOfDir)
 class TColgp_SequenceOfDir2d(OCC.TCollection.TCollection_BaseSequence):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _TColgp.TColgp_SequenceOfDir2d_swiginit(self,_TColgp.new_TColgp_SequenceOfDir2d(*args))
-    def Clear(self, *args) -> "void" :
+        _TColgp.TColgp_SequenceOfDir2d_swiginit(self,_TColgp.new_TColgp_SequenceOfDir2d())
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _TColgp.TColgp_SequenceOfDir2d_Clear(self, *args)
+        return _TColgp.TColgp_SequenceOfDir2d_Clear(self)
 
-    def Assign(self, *args) -> "TColgp_SequenceOfDir2d const &" :
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: TColgp_SequenceOfDir2d
@@ -9723,7 +9727,7 @@ class TColgp_SequenceOfDir2d(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TColgp.TColgp_SequenceOfDir2d_Assign(self, *args)
 
-    def Set(self, *args) -> "TColgp_SequenceOfDir2d const &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: TColgp_SequenceOfDir2d
@@ -9732,7 +9736,7 @@ class TColgp_SequenceOfDir2d(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TColgp.TColgp_SequenceOfDir2d_Set(self, *args)
 
-    def Append(self, *args) -> "void" :
+    def Append(self, *args):
         """
         :param T:
         :type T: gp_Dir2d
@@ -9745,7 +9749,7 @@ class TColgp_SequenceOfDir2d(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TColgp.TColgp_SequenceOfDir2d_Append(self, *args)
 
-    def Prepend(self, *args) -> "void" :
+    def Prepend(self, *args):
         """
         :param T:
         :type T: gp_Dir2d
@@ -9758,16 +9762,16 @@ class TColgp_SequenceOfDir2d(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TColgp.TColgp_SequenceOfDir2d_Prepend(self, *args)
 
-    def InsertBefore(self, *args) -> "void" :
+    def InsertBefore(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param T:
         :type T: gp_Dir2d
         :rtype: None
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param S:
         :type S: TColgp_SequenceOfDir2d
         :rtype: None
@@ -9775,16 +9779,16 @@ class TColgp_SequenceOfDir2d(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TColgp.TColgp_SequenceOfDir2d_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args) -> "void" :
+    def InsertAfter(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param T:
         :type T: gp_Dir2d
         :rtype: None
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param S:
         :type S: TColgp_SequenceOfDir2d
         :rtype: None
@@ -9792,24 +9796,24 @@ class TColgp_SequenceOfDir2d(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TColgp.TColgp_SequenceOfDir2d_InsertAfter(self, *args)
 
-    def First(self, *args) -> "gp_Dir2d const" :
+    def First(self):
         """
         :rtype: gp_Dir2d
 
         """
-        return _TColgp.TColgp_SequenceOfDir2d_First(self, *args)
+        return _TColgp.TColgp_SequenceOfDir2d_First(self)
 
-    def Last(self, *args) -> "gp_Dir2d const" :
+    def Last(self):
         """
         :rtype: gp_Dir2d
 
         """
-        return _TColgp.TColgp_SequenceOfDir2d_Last(self, *args)
+        return _TColgp.TColgp_SequenceOfDir2d_Last(self)
 
-    def Split(self, *args) -> "void" :
+    def Split(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Sub:
         :type Sub: TColgp_SequenceOfDir2d
         :rtype: None
@@ -9817,19 +9821,19 @@ class TColgp_SequenceOfDir2d(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TColgp.TColgp_SequenceOfDir2d_Split(self, *args)
 
-    def Value(self, *args) -> "gp_Dir2d const" :
+    def Value(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: gp_Dir2d
 
         """
         return _TColgp.TColgp_SequenceOfDir2d_Value(self, *args)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param I:
         :type I: gp_Dir2d
         :rtype: None
@@ -9837,25 +9841,25 @@ class TColgp_SequenceOfDir2d(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TColgp.TColgp_SequenceOfDir2d_SetValue(self, *args)
 
-    def ChangeValue(self, *args) -> "gp_Dir2d" :
+    def ChangeValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: gp_Dir2d
 
         """
         return _TColgp.TColgp_SequenceOfDir2d_ChangeValue(self, *args)
 
-    def Remove(self, *args) -> "void" :
+    def Remove(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: None
 
         :param FromIndex:
-        :type FromIndex: int
+        :type FromIndex: Standard_Integer
         :param ToIndex:
-        :type ToIndex: int
+        :type ToIndex: Standard_Integer
         :rtype: None
 
         """
@@ -9890,20 +9894,20 @@ TColgp_SequenceOfDir2d_swigregister(TColgp_SequenceOfDir2d)
 class TColgp_SequenceOfPnt(OCC.TCollection.TCollection_BaseSequence):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _TColgp.TColgp_SequenceOfPnt_swiginit(self,_TColgp.new_TColgp_SequenceOfPnt(*args))
-    def Clear(self, *args) -> "void" :
+        _TColgp.TColgp_SequenceOfPnt_swiginit(self,_TColgp.new_TColgp_SequenceOfPnt())
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _TColgp.TColgp_SequenceOfPnt_Clear(self, *args)
+        return _TColgp.TColgp_SequenceOfPnt_Clear(self)
 
-    def Assign(self, *args) -> "TColgp_SequenceOfPnt const &" :
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: TColgp_SequenceOfPnt
@@ -9912,7 +9916,7 @@ class TColgp_SequenceOfPnt(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TColgp.TColgp_SequenceOfPnt_Assign(self, *args)
 
-    def Set(self, *args) -> "TColgp_SequenceOfPnt const &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: TColgp_SequenceOfPnt
@@ -9921,7 +9925,7 @@ class TColgp_SequenceOfPnt(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TColgp.TColgp_SequenceOfPnt_Set(self, *args)
 
-    def Append(self, *args) -> "void" :
+    def Append(self, *args):
         """
         :param T:
         :type T: gp_Pnt
@@ -9934,7 +9938,7 @@ class TColgp_SequenceOfPnt(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TColgp.TColgp_SequenceOfPnt_Append(self, *args)
 
-    def Prepend(self, *args) -> "void" :
+    def Prepend(self, *args):
         """
         :param T:
         :type T: gp_Pnt
@@ -9947,16 +9951,16 @@ class TColgp_SequenceOfPnt(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TColgp.TColgp_SequenceOfPnt_Prepend(self, *args)
 
-    def InsertBefore(self, *args) -> "void" :
+    def InsertBefore(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param T:
         :type T: gp_Pnt
         :rtype: None
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param S:
         :type S: TColgp_SequenceOfPnt
         :rtype: None
@@ -9964,16 +9968,16 @@ class TColgp_SequenceOfPnt(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TColgp.TColgp_SequenceOfPnt_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args) -> "void" :
+    def InsertAfter(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param T:
         :type T: gp_Pnt
         :rtype: None
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param S:
         :type S: TColgp_SequenceOfPnt
         :rtype: None
@@ -9981,24 +9985,24 @@ class TColgp_SequenceOfPnt(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TColgp.TColgp_SequenceOfPnt_InsertAfter(self, *args)
 
-    def First(self, *args) -> "gp_Pnt const" :
+    def First(self):
         """
         :rtype: gp_Pnt
 
         """
-        return _TColgp.TColgp_SequenceOfPnt_First(self, *args)
+        return _TColgp.TColgp_SequenceOfPnt_First(self)
 
-    def Last(self, *args) -> "gp_Pnt const" :
+    def Last(self):
         """
         :rtype: gp_Pnt
 
         """
-        return _TColgp.TColgp_SequenceOfPnt_Last(self, *args)
+        return _TColgp.TColgp_SequenceOfPnt_Last(self)
 
-    def Split(self, *args) -> "void" :
+    def Split(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Sub:
         :type Sub: TColgp_SequenceOfPnt
         :rtype: None
@@ -10006,19 +10010,19 @@ class TColgp_SequenceOfPnt(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TColgp.TColgp_SequenceOfPnt_Split(self, *args)
 
-    def Value(self, *args) -> "gp_Pnt const" :
+    def Value(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: gp_Pnt
 
         """
         return _TColgp.TColgp_SequenceOfPnt_Value(self, *args)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param I:
         :type I: gp_Pnt
         :rtype: None
@@ -10026,25 +10030,25 @@ class TColgp_SequenceOfPnt(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TColgp.TColgp_SequenceOfPnt_SetValue(self, *args)
 
-    def ChangeValue(self, *args) -> "gp_Pnt" :
+    def ChangeValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: gp_Pnt
 
         """
         return _TColgp.TColgp_SequenceOfPnt_ChangeValue(self, *args)
 
-    def Remove(self, *args) -> "void" :
+    def Remove(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: None
 
         :param FromIndex:
-        :type FromIndex: int
+        :type FromIndex: Standard_Integer
         :param ToIndex:
-        :type ToIndex: int
+        :type ToIndex: Standard_Integer
         :rtype: None
 
         """
@@ -10079,20 +10083,20 @@ TColgp_SequenceOfPnt_swigregister(TColgp_SequenceOfPnt)
 class TColgp_SequenceOfPnt2d(OCC.TCollection.TCollection_BaseSequence):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _TColgp.TColgp_SequenceOfPnt2d_swiginit(self,_TColgp.new_TColgp_SequenceOfPnt2d(*args))
-    def Clear(self, *args) -> "void" :
+        _TColgp.TColgp_SequenceOfPnt2d_swiginit(self,_TColgp.new_TColgp_SequenceOfPnt2d())
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _TColgp.TColgp_SequenceOfPnt2d_Clear(self, *args)
+        return _TColgp.TColgp_SequenceOfPnt2d_Clear(self)
 
-    def Assign(self, *args) -> "TColgp_SequenceOfPnt2d const &" :
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: TColgp_SequenceOfPnt2d
@@ -10101,7 +10105,7 @@ class TColgp_SequenceOfPnt2d(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TColgp.TColgp_SequenceOfPnt2d_Assign(self, *args)
 
-    def Set(self, *args) -> "TColgp_SequenceOfPnt2d const &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: TColgp_SequenceOfPnt2d
@@ -10110,7 +10114,7 @@ class TColgp_SequenceOfPnt2d(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TColgp.TColgp_SequenceOfPnt2d_Set(self, *args)
 
-    def Append(self, *args) -> "void" :
+    def Append(self, *args):
         """
         :param T:
         :type T: gp_Pnt2d
@@ -10123,7 +10127,7 @@ class TColgp_SequenceOfPnt2d(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TColgp.TColgp_SequenceOfPnt2d_Append(self, *args)
 
-    def Prepend(self, *args) -> "void" :
+    def Prepend(self, *args):
         """
         :param T:
         :type T: gp_Pnt2d
@@ -10136,16 +10140,16 @@ class TColgp_SequenceOfPnt2d(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TColgp.TColgp_SequenceOfPnt2d_Prepend(self, *args)
 
-    def InsertBefore(self, *args) -> "void" :
+    def InsertBefore(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param T:
         :type T: gp_Pnt2d
         :rtype: None
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param S:
         :type S: TColgp_SequenceOfPnt2d
         :rtype: None
@@ -10153,16 +10157,16 @@ class TColgp_SequenceOfPnt2d(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TColgp.TColgp_SequenceOfPnt2d_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args) -> "void" :
+    def InsertAfter(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param T:
         :type T: gp_Pnt2d
         :rtype: None
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param S:
         :type S: TColgp_SequenceOfPnt2d
         :rtype: None
@@ -10170,24 +10174,24 @@ class TColgp_SequenceOfPnt2d(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TColgp.TColgp_SequenceOfPnt2d_InsertAfter(self, *args)
 
-    def First(self, *args) -> "gp_Pnt2d const" :
+    def First(self):
         """
         :rtype: gp_Pnt2d
 
         """
-        return _TColgp.TColgp_SequenceOfPnt2d_First(self, *args)
+        return _TColgp.TColgp_SequenceOfPnt2d_First(self)
 
-    def Last(self, *args) -> "gp_Pnt2d const" :
+    def Last(self):
         """
         :rtype: gp_Pnt2d
 
         """
-        return _TColgp.TColgp_SequenceOfPnt2d_Last(self, *args)
+        return _TColgp.TColgp_SequenceOfPnt2d_Last(self)
 
-    def Split(self, *args) -> "void" :
+    def Split(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Sub:
         :type Sub: TColgp_SequenceOfPnt2d
         :rtype: None
@@ -10195,19 +10199,19 @@ class TColgp_SequenceOfPnt2d(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TColgp.TColgp_SequenceOfPnt2d_Split(self, *args)
 
-    def Value(self, *args) -> "gp_Pnt2d const" :
+    def Value(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: gp_Pnt2d
 
         """
         return _TColgp.TColgp_SequenceOfPnt2d_Value(self, *args)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param I:
         :type I: gp_Pnt2d
         :rtype: None
@@ -10215,25 +10219,25 @@ class TColgp_SequenceOfPnt2d(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TColgp.TColgp_SequenceOfPnt2d_SetValue(self, *args)
 
-    def ChangeValue(self, *args) -> "gp_Pnt2d" :
+    def ChangeValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: gp_Pnt2d
 
         """
         return _TColgp.TColgp_SequenceOfPnt2d_ChangeValue(self, *args)
 
-    def Remove(self, *args) -> "void" :
+    def Remove(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: None
 
         :param FromIndex:
-        :type FromIndex: int
+        :type FromIndex: Standard_Integer
         :param ToIndex:
-        :type ToIndex: int
+        :type ToIndex: Standard_Integer
         :rtype: None
 
         """
@@ -10268,20 +10272,20 @@ TColgp_SequenceOfPnt2d_swigregister(TColgp_SequenceOfPnt2d)
 class TColgp_SequenceOfVec(OCC.TCollection.TCollection_BaseSequence):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _TColgp.TColgp_SequenceOfVec_swiginit(self,_TColgp.new_TColgp_SequenceOfVec(*args))
-    def Clear(self, *args) -> "void" :
+        _TColgp.TColgp_SequenceOfVec_swiginit(self,_TColgp.new_TColgp_SequenceOfVec())
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _TColgp.TColgp_SequenceOfVec_Clear(self, *args)
+        return _TColgp.TColgp_SequenceOfVec_Clear(self)
 
-    def Assign(self, *args) -> "TColgp_SequenceOfVec const &" :
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: TColgp_SequenceOfVec
@@ -10290,7 +10294,7 @@ class TColgp_SequenceOfVec(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TColgp.TColgp_SequenceOfVec_Assign(self, *args)
 
-    def Set(self, *args) -> "TColgp_SequenceOfVec const &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: TColgp_SequenceOfVec
@@ -10299,7 +10303,7 @@ class TColgp_SequenceOfVec(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TColgp.TColgp_SequenceOfVec_Set(self, *args)
 
-    def Append(self, *args) -> "void" :
+    def Append(self, *args):
         """
         :param T:
         :type T: gp_Vec
@@ -10312,7 +10316,7 @@ class TColgp_SequenceOfVec(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TColgp.TColgp_SequenceOfVec_Append(self, *args)
 
-    def Prepend(self, *args) -> "void" :
+    def Prepend(self, *args):
         """
         :param T:
         :type T: gp_Vec
@@ -10325,16 +10329,16 @@ class TColgp_SequenceOfVec(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TColgp.TColgp_SequenceOfVec_Prepend(self, *args)
 
-    def InsertBefore(self, *args) -> "void" :
+    def InsertBefore(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param T:
         :type T: gp_Vec
         :rtype: None
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param S:
         :type S: TColgp_SequenceOfVec
         :rtype: None
@@ -10342,16 +10346,16 @@ class TColgp_SequenceOfVec(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TColgp.TColgp_SequenceOfVec_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args) -> "void" :
+    def InsertAfter(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param T:
         :type T: gp_Vec
         :rtype: None
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param S:
         :type S: TColgp_SequenceOfVec
         :rtype: None
@@ -10359,24 +10363,24 @@ class TColgp_SequenceOfVec(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TColgp.TColgp_SequenceOfVec_InsertAfter(self, *args)
 
-    def First(self, *args) -> "gp_Vec const" :
+    def First(self):
         """
         :rtype: gp_Vec
 
         """
-        return _TColgp.TColgp_SequenceOfVec_First(self, *args)
+        return _TColgp.TColgp_SequenceOfVec_First(self)
 
-    def Last(self, *args) -> "gp_Vec const" :
+    def Last(self):
         """
         :rtype: gp_Vec
 
         """
-        return _TColgp.TColgp_SequenceOfVec_Last(self, *args)
+        return _TColgp.TColgp_SequenceOfVec_Last(self)
 
-    def Split(self, *args) -> "void" :
+    def Split(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Sub:
         :type Sub: TColgp_SequenceOfVec
         :rtype: None
@@ -10384,19 +10388,19 @@ class TColgp_SequenceOfVec(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TColgp.TColgp_SequenceOfVec_Split(self, *args)
 
-    def Value(self, *args) -> "gp_Vec const" :
+    def Value(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: gp_Vec
 
         """
         return _TColgp.TColgp_SequenceOfVec_Value(self, *args)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param I:
         :type I: gp_Vec
         :rtype: None
@@ -10404,25 +10408,25 @@ class TColgp_SequenceOfVec(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TColgp.TColgp_SequenceOfVec_SetValue(self, *args)
 
-    def ChangeValue(self, *args) -> "gp_Vec" :
+    def ChangeValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: gp_Vec
 
         """
         return _TColgp.TColgp_SequenceOfVec_ChangeValue(self, *args)
 
-    def Remove(self, *args) -> "void" :
+    def Remove(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: None
 
         :param FromIndex:
-        :type FromIndex: int
+        :type FromIndex: Standard_Integer
         :param ToIndex:
-        :type ToIndex: int
+        :type ToIndex: Standard_Integer
         :rtype: None
 
         """
@@ -10457,20 +10461,20 @@ TColgp_SequenceOfVec_swigregister(TColgp_SequenceOfVec)
 class TColgp_SequenceOfVec2d(OCC.TCollection.TCollection_BaseSequence):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _TColgp.TColgp_SequenceOfVec2d_swiginit(self,_TColgp.new_TColgp_SequenceOfVec2d(*args))
-    def Clear(self, *args) -> "void" :
+        _TColgp.TColgp_SequenceOfVec2d_swiginit(self,_TColgp.new_TColgp_SequenceOfVec2d())
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _TColgp.TColgp_SequenceOfVec2d_Clear(self, *args)
+        return _TColgp.TColgp_SequenceOfVec2d_Clear(self)
 
-    def Assign(self, *args) -> "TColgp_SequenceOfVec2d const &" :
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: TColgp_SequenceOfVec2d
@@ -10479,7 +10483,7 @@ class TColgp_SequenceOfVec2d(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TColgp.TColgp_SequenceOfVec2d_Assign(self, *args)
 
-    def Set(self, *args) -> "TColgp_SequenceOfVec2d const &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: TColgp_SequenceOfVec2d
@@ -10488,7 +10492,7 @@ class TColgp_SequenceOfVec2d(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TColgp.TColgp_SequenceOfVec2d_Set(self, *args)
 
-    def Append(self, *args) -> "void" :
+    def Append(self, *args):
         """
         :param T:
         :type T: gp_Vec2d
@@ -10501,7 +10505,7 @@ class TColgp_SequenceOfVec2d(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TColgp.TColgp_SequenceOfVec2d_Append(self, *args)
 
-    def Prepend(self, *args) -> "void" :
+    def Prepend(self, *args):
         """
         :param T:
         :type T: gp_Vec2d
@@ -10514,16 +10518,16 @@ class TColgp_SequenceOfVec2d(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TColgp.TColgp_SequenceOfVec2d_Prepend(self, *args)
 
-    def InsertBefore(self, *args) -> "void" :
+    def InsertBefore(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param T:
         :type T: gp_Vec2d
         :rtype: None
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param S:
         :type S: TColgp_SequenceOfVec2d
         :rtype: None
@@ -10531,16 +10535,16 @@ class TColgp_SequenceOfVec2d(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TColgp.TColgp_SequenceOfVec2d_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args) -> "void" :
+    def InsertAfter(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param T:
         :type T: gp_Vec2d
         :rtype: None
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param S:
         :type S: TColgp_SequenceOfVec2d
         :rtype: None
@@ -10548,24 +10552,24 @@ class TColgp_SequenceOfVec2d(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TColgp.TColgp_SequenceOfVec2d_InsertAfter(self, *args)
 
-    def First(self, *args) -> "gp_Vec2d const" :
+    def First(self):
         """
         :rtype: gp_Vec2d
 
         """
-        return _TColgp.TColgp_SequenceOfVec2d_First(self, *args)
+        return _TColgp.TColgp_SequenceOfVec2d_First(self)
 
-    def Last(self, *args) -> "gp_Vec2d const" :
+    def Last(self):
         """
         :rtype: gp_Vec2d
 
         """
-        return _TColgp.TColgp_SequenceOfVec2d_Last(self, *args)
+        return _TColgp.TColgp_SequenceOfVec2d_Last(self)
 
-    def Split(self, *args) -> "void" :
+    def Split(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Sub:
         :type Sub: TColgp_SequenceOfVec2d
         :rtype: None
@@ -10573,19 +10577,19 @@ class TColgp_SequenceOfVec2d(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TColgp.TColgp_SequenceOfVec2d_Split(self, *args)
 
-    def Value(self, *args) -> "gp_Vec2d const" :
+    def Value(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: gp_Vec2d
 
         """
         return _TColgp.TColgp_SequenceOfVec2d_Value(self, *args)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param I:
         :type I: gp_Vec2d
         :rtype: None
@@ -10593,25 +10597,25 @@ class TColgp_SequenceOfVec2d(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TColgp.TColgp_SequenceOfVec2d_SetValue(self, *args)
 
-    def ChangeValue(self, *args) -> "gp_Vec2d" :
+    def ChangeValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: gp_Vec2d
 
         """
         return _TColgp.TColgp_SequenceOfVec2d_ChangeValue(self, *args)
 
-    def Remove(self, *args) -> "void" :
+    def Remove(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: None
 
         :param FromIndex:
-        :type FromIndex: int
+        :type FromIndex: Standard_Integer
         :param ToIndex:
-        :type ToIndex: int
+        :type ToIndex: Standard_Integer
         :rtype: None
 
         """
@@ -10646,20 +10650,20 @@ TColgp_SequenceOfVec2d_swigregister(TColgp_SequenceOfVec2d)
 class TColgp_SequenceOfXY(OCC.TCollection.TCollection_BaseSequence):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _TColgp.TColgp_SequenceOfXY_swiginit(self,_TColgp.new_TColgp_SequenceOfXY(*args))
-    def Clear(self, *args) -> "void" :
+        _TColgp.TColgp_SequenceOfXY_swiginit(self,_TColgp.new_TColgp_SequenceOfXY())
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _TColgp.TColgp_SequenceOfXY_Clear(self, *args)
+        return _TColgp.TColgp_SequenceOfXY_Clear(self)
 
-    def Assign(self, *args) -> "TColgp_SequenceOfXY const &" :
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: TColgp_SequenceOfXY
@@ -10668,7 +10672,7 @@ class TColgp_SequenceOfXY(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TColgp.TColgp_SequenceOfXY_Assign(self, *args)
 
-    def Set(self, *args) -> "TColgp_SequenceOfXY const &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: TColgp_SequenceOfXY
@@ -10677,7 +10681,7 @@ class TColgp_SequenceOfXY(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TColgp.TColgp_SequenceOfXY_Set(self, *args)
 
-    def Append(self, *args) -> "void" :
+    def Append(self, *args):
         """
         :param T:
         :type T: gp_XY
@@ -10690,7 +10694,7 @@ class TColgp_SequenceOfXY(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TColgp.TColgp_SequenceOfXY_Append(self, *args)
 
-    def Prepend(self, *args) -> "void" :
+    def Prepend(self, *args):
         """
         :param T:
         :type T: gp_XY
@@ -10703,16 +10707,16 @@ class TColgp_SequenceOfXY(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TColgp.TColgp_SequenceOfXY_Prepend(self, *args)
 
-    def InsertBefore(self, *args) -> "void" :
+    def InsertBefore(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param T:
         :type T: gp_XY
         :rtype: None
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param S:
         :type S: TColgp_SequenceOfXY
         :rtype: None
@@ -10720,16 +10724,16 @@ class TColgp_SequenceOfXY(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TColgp.TColgp_SequenceOfXY_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args) -> "void" :
+    def InsertAfter(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param T:
         :type T: gp_XY
         :rtype: None
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param S:
         :type S: TColgp_SequenceOfXY
         :rtype: None
@@ -10737,24 +10741,24 @@ class TColgp_SequenceOfXY(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TColgp.TColgp_SequenceOfXY_InsertAfter(self, *args)
 
-    def First(self, *args) -> "gp_XY const" :
+    def First(self):
         """
         :rtype: gp_XY
 
         """
-        return _TColgp.TColgp_SequenceOfXY_First(self, *args)
+        return _TColgp.TColgp_SequenceOfXY_First(self)
 
-    def Last(self, *args) -> "gp_XY const" :
+    def Last(self):
         """
         :rtype: gp_XY
 
         """
-        return _TColgp.TColgp_SequenceOfXY_Last(self, *args)
+        return _TColgp.TColgp_SequenceOfXY_Last(self)
 
-    def Split(self, *args) -> "void" :
+    def Split(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Sub:
         :type Sub: TColgp_SequenceOfXY
         :rtype: None
@@ -10762,19 +10766,19 @@ class TColgp_SequenceOfXY(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TColgp.TColgp_SequenceOfXY_Split(self, *args)
 
-    def Value(self, *args) -> "gp_XY const" :
+    def Value(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: gp_XY
 
         """
         return _TColgp.TColgp_SequenceOfXY_Value(self, *args)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param I:
         :type I: gp_XY
         :rtype: None
@@ -10782,25 +10786,25 @@ class TColgp_SequenceOfXY(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TColgp.TColgp_SequenceOfXY_SetValue(self, *args)
 
-    def ChangeValue(self, *args) -> "gp_XY" :
+    def ChangeValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: gp_XY
 
         """
         return _TColgp.TColgp_SequenceOfXY_ChangeValue(self, *args)
 
-    def Remove(self, *args) -> "void" :
+    def Remove(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: None
 
         :param FromIndex:
-        :type FromIndex: int
+        :type FromIndex: Standard_Integer
         :param ToIndex:
-        :type ToIndex: int
+        :type ToIndex: Standard_Integer
         :rtype: None
 
         """
@@ -10835,20 +10839,20 @@ TColgp_SequenceOfXY_swigregister(TColgp_SequenceOfXY)
 class TColgp_SequenceOfXYZ(OCC.TCollection.TCollection_BaseSequence):
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
-    def __init__(self, *args): 
+    def __init__(self): 
         """
         :rtype: None
 
         """
-        _TColgp.TColgp_SequenceOfXYZ_swiginit(self,_TColgp.new_TColgp_SequenceOfXYZ(*args))
-    def Clear(self, *args) -> "void" :
+        _TColgp.TColgp_SequenceOfXYZ_swiginit(self,_TColgp.new_TColgp_SequenceOfXYZ())
+    def Clear(self):
         """
         :rtype: None
 
         """
-        return _TColgp.TColgp_SequenceOfXYZ_Clear(self, *args)
+        return _TColgp.TColgp_SequenceOfXYZ_Clear(self)
 
-    def Assign(self, *args) -> "TColgp_SequenceOfXYZ const &" :
+    def Assign(self, *args):
         """
         :param Other:
         :type Other: TColgp_SequenceOfXYZ
@@ -10857,7 +10861,7 @@ class TColgp_SequenceOfXYZ(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TColgp.TColgp_SequenceOfXYZ_Assign(self, *args)
 
-    def Set(self, *args) -> "TColgp_SequenceOfXYZ const &" :
+    def Set(self, *args):
         """
         :param Other:
         :type Other: TColgp_SequenceOfXYZ
@@ -10866,7 +10870,7 @@ class TColgp_SequenceOfXYZ(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TColgp.TColgp_SequenceOfXYZ_Set(self, *args)
 
-    def Append(self, *args) -> "void" :
+    def Append(self, *args):
         """
         :param T:
         :type T: gp_XYZ
@@ -10879,7 +10883,7 @@ class TColgp_SequenceOfXYZ(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TColgp.TColgp_SequenceOfXYZ_Append(self, *args)
 
-    def Prepend(self, *args) -> "void" :
+    def Prepend(self, *args):
         """
         :param T:
         :type T: gp_XYZ
@@ -10892,16 +10896,16 @@ class TColgp_SequenceOfXYZ(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TColgp.TColgp_SequenceOfXYZ_Prepend(self, *args)
 
-    def InsertBefore(self, *args) -> "void" :
+    def InsertBefore(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param T:
         :type T: gp_XYZ
         :rtype: None
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param S:
         :type S: TColgp_SequenceOfXYZ
         :rtype: None
@@ -10909,16 +10913,16 @@ class TColgp_SequenceOfXYZ(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TColgp.TColgp_SequenceOfXYZ_InsertBefore(self, *args)
 
-    def InsertAfter(self, *args) -> "void" :
+    def InsertAfter(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param T:
         :type T: gp_XYZ
         :rtype: None
 
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param S:
         :type S: TColgp_SequenceOfXYZ
         :rtype: None
@@ -10926,24 +10930,24 @@ class TColgp_SequenceOfXYZ(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TColgp.TColgp_SequenceOfXYZ_InsertAfter(self, *args)
 
-    def First(self, *args) -> "gp_XYZ const" :
+    def First(self):
         """
         :rtype: gp_XYZ
 
         """
-        return _TColgp.TColgp_SequenceOfXYZ_First(self, *args)
+        return _TColgp.TColgp_SequenceOfXYZ_First(self)
 
-    def Last(self, *args) -> "gp_XYZ const" :
+    def Last(self):
         """
         :rtype: gp_XYZ
 
         """
-        return _TColgp.TColgp_SequenceOfXYZ_Last(self, *args)
+        return _TColgp.TColgp_SequenceOfXYZ_Last(self)
 
-    def Split(self, *args) -> "void" :
+    def Split(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param Sub:
         :type Sub: TColgp_SequenceOfXYZ
         :rtype: None
@@ -10951,19 +10955,19 @@ class TColgp_SequenceOfXYZ(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TColgp.TColgp_SequenceOfXYZ_Split(self, *args)
 
-    def Value(self, *args) -> "gp_XYZ const" :
+    def Value(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: gp_XYZ
 
         """
         return _TColgp.TColgp_SequenceOfXYZ_Value(self, *args)
 
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :param I:
         :type I: gp_XYZ
         :rtype: None
@@ -10971,25 +10975,25 @@ class TColgp_SequenceOfXYZ(OCC.TCollection.TCollection_BaseSequence):
         """
         return _TColgp.TColgp_SequenceOfXYZ_SetValue(self, *args)
 
-    def ChangeValue(self, *args) -> "gp_XYZ" :
+    def ChangeValue(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: gp_XYZ
 
         """
         return _TColgp.TColgp_SequenceOfXYZ_ChangeValue(self, *args)
 
-    def Remove(self, *args) -> "void" :
+    def Remove(self, *args):
         """
         :param Index:
-        :type Index: int
+        :type Index: Standard_Integer
         :rtype: None
 
         :param FromIndex:
-        :type FromIndex: int
+        :type FromIndex: Standard_Integer
         :param ToIndex:
-        :type ToIndex: int
+        :type ToIndex: Standard_Integer
         :rtype: None
 
         """

@@ -185,7 +185,7 @@ class IntAna2d_AnaIntersection(object):
 
         """
         _IntAna2d.IntAna2d_AnaIntersection_swiginit(self,_IntAna2d.new_IntAna2d_AnaIntersection(*args))
-    def Perform(self, *args) -> "void" :
+    def Perform(self, *args):
         """
         * Intersection between two lines.
 
@@ -254,57 +254,57 @@ class IntAna2d_AnaIntersection(object):
         """
         return _IntAna2d.IntAna2d_AnaIntersection_Perform(self, *args)
 
-    def IsDone(self, *args) -> "Standard_Boolean" :
+    def IsDone(self):
         """
         * Returns True if the computation was succesfull.
 
         :rtype: bool
 
         """
-        return _IntAna2d.IntAna2d_AnaIntersection_IsDone(self, *args)
+        return _IntAna2d.IntAna2d_AnaIntersection_IsDone(self)
 
-    def IsEmpty(self, *args) -> "Standard_Boolean" :
+    def IsEmpty(self):
         """
         * Returns True when there is no intersection, i-e - no intersection point - the elements are not identical. The element may be parallel in this case.
 
         :rtype: bool
 
         """
-        return _IntAna2d.IntAna2d_AnaIntersection_IsEmpty(self, *args)
+        return _IntAna2d.IntAna2d_AnaIntersection_IsEmpty(self)
 
-    def IdenticalElements(self, *args) -> "Standard_Boolean" :
+    def IdenticalElements(self):
         """
         * For the intersection between an element of gp and a conic known by an implicit equation, the result will be True if the element of gp verifies the implicit equation. For the intersection between two Lin2d or two Circ2d, the result will be True if the elements are identical. The function returns False in all the other cases.
 
         :rtype: bool
 
         """
-        return _IntAna2d.IntAna2d_AnaIntersection_IdenticalElements(self, *args)
+        return _IntAna2d.IntAna2d_AnaIntersection_IdenticalElements(self)
 
-    def ParallelElements(self, *args) -> "Standard_Boolean" :
+    def ParallelElements(self):
         """
         * For the intersection between two Lin2d or two Circ2d, the function returns True if the elements are parallel. The function returns False in all the other cases.
 
         :rtype: bool
 
         """
-        return _IntAna2d.IntAna2d_AnaIntersection_ParallelElements(self, *args)
+        return _IntAna2d.IntAna2d_AnaIntersection_ParallelElements(self)
 
-    def NbPoints(self, *args) -> "Standard_Integer" :
+    def NbPoints(self):
         """
         * returns the number of IntPoint between the 2 curves.
 
         :rtype: int
 
         """
-        return _IntAna2d.IntAna2d_AnaIntersection_NbPoints(self, *args)
+        return _IntAna2d.IntAna2d_AnaIntersection_NbPoints(self)
 
-    def Point(self, *args) -> "IntAna2d_IntPoint const &" :
+    def Point(self, *args):
         """
         * returns the intersection point of range N; If (N<=0) or (N>NbPoints), an exception is raised.
 
         :param N:
-        :type N: int
+        :type N: Standard_Integer
         :rtype: IntAna2d_IntPoint
 
         """
@@ -356,7 +356,7 @@ class IntAna2d_Conic(object):
 
         """
         _IntAna2d.IntAna2d_Conic_swiginit(self,_IntAna2d.new_IntAna2d_Conic(*args))
-    def Value(self, *args) -> "Standard_Real" :
+    def Value(self, *args):
         """
         * value of the function F at the point X,Y.
 
@@ -369,7 +369,7 @@ class IntAna2d_Conic(object):
         """
         return _IntAna2d.IntAna2d_Conic_Value(self, *args)
 
-    def Grad(self, *args) -> "gp_XY" :
+    def Grad(self, *args):
         """
         * returns the value of the gradient of F at the point X,Y.
 
@@ -382,7 +382,7 @@ class IntAna2d_Conic(object):
         """
         return _IntAna2d.IntAna2d_Conic_Grad(self, *args)
 
-    def ValAndGrad(self, *args) -> "void" :
+    def ValAndGrad(self, *args):
         """
         * Returns the value of the function and its gradient at the point X,Y.
 
@@ -399,7 +399,7 @@ class IntAna2d_Conic(object):
         """
         return _IntAna2d.IntAna2d_Conic_ValAndGrad(self, *args)
 
-    def Coefficients(self, *args) -> "void" :
+    def Coefficients(self):
         """
         * returns the coefficients of the polynomial equation wich defines the conic: A.X**2 + B.Y**2 + 2.C.X*Y + 2.D.X + 2.E.Y + F = 0.
 
@@ -418,9 +418,9 @@ class IntAna2d_Conic(object):
         :rtype: None
 
         """
-        return _IntAna2d.IntAna2d_Conic_Coefficients(self, *args)
+        return _IntAna2d.IntAna2d_Conic_Coefficients(self)
 
-    def NewCoefficients(self, *args) -> "void" :
+    def NewCoefficients(self, *args):
         """
         * Returns the coefficients of the polynomial equation ( written in the natural coordinates system ) A x x + B y y + 2 C x y + 2 D x + 2 E y + F in the local coordinates system defined by Axis
 
@@ -491,7 +491,7 @@ class IntAna2d_IntPoint(object):
 
         """
         _IntAna2d.IntAna2d_IntPoint_swiginit(self,_IntAna2d.new_IntAna2d_IntPoint(*args))
-    def SetValue(self, *args) -> "void" :
+    def SetValue(self, *args):
         """
         * Set the values for a 'non-implicit' point.
 
@@ -518,50 +518,50 @@ class IntAna2d_IntPoint(object):
         """
         return _IntAna2d.IntAna2d_IntPoint_SetValue(self, *args)
 
-    def Value(self, *args) -> "gp_Pnt2d const" :
+    def Value(self):
         """
         * Returns the geometric point.
 
         :rtype: gp_Pnt2d
 
         """
-        return _IntAna2d.IntAna2d_IntPoint_Value(self, *args)
+        return _IntAna2d.IntAna2d_IntPoint_Value(self)
 
-    def SecondIsImplicit(self, *args) -> "Standard_Boolean" :
+    def SecondIsImplicit(self):
         """
         * Returns True if the second curve is implicit.
 
         :rtype: bool
 
         """
-        return _IntAna2d.IntAna2d_IntPoint_SecondIsImplicit(self, *args)
+        return _IntAna2d.IntAna2d_IntPoint_SecondIsImplicit(self)
 
-    def ParamOnFirst(self, *args) -> "Standard_Real" :
+    def ParamOnFirst(self):
         """
         * Returns the parameter on the first element.
 
         :rtype: float
 
         """
-        return _IntAna2d.IntAna2d_IntPoint_ParamOnFirst(self, *args)
+        return _IntAna2d.IntAna2d_IntPoint_ParamOnFirst(self)
 
-    def ParamOnSecond(self, *args) -> "Standard_Real" :
+    def ParamOnSecond(self):
         """
         * Returns the parameter on the second element. If the second element is an implicit curve, an exception is raised.
 
         :rtype: float
 
         """
-        return _IntAna2d.IntAna2d_IntPoint_ParamOnSecond(self, *args)
+        return _IntAna2d.IntAna2d_IntPoint_ParamOnSecond(self)
 
-    def _CSFDB_GetIntAna2d_IntPointmyu1(self, *args) -> "Standard_Real" :
+    def _CSFDB_GetIntAna2d_IntPointmyu1(self):
         """
         :rtype: float
 
         """
-        return _IntAna2d.IntAna2d_IntPoint__CSFDB_GetIntAna2d_IntPointmyu1(self, *args)
+        return _IntAna2d.IntAna2d_IntPoint__CSFDB_GetIntAna2d_IntPointmyu1(self)
 
-    def _CSFDB_SetIntAna2d_IntPointmyu1(self, *args) -> "void" :
+    def _CSFDB_SetIntAna2d_IntPointmyu1(self, *args):
         """
         :param p:
         :type p: float
@@ -570,14 +570,14 @@ class IntAna2d_IntPoint(object):
         """
         return _IntAna2d.IntAna2d_IntPoint__CSFDB_SetIntAna2d_IntPointmyu1(self, *args)
 
-    def _CSFDB_GetIntAna2d_IntPointmyu2(self, *args) -> "Standard_Real" :
+    def _CSFDB_GetIntAna2d_IntPointmyu2(self):
         """
         :rtype: float
 
         """
-        return _IntAna2d.IntAna2d_IntPoint__CSFDB_GetIntAna2d_IntPointmyu2(self, *args)
+        return _IntAna2d.IntAna2d_IntPoint__CSFDB_GetIntAna2d_IntPointmyu2(self)
 
-    def _CSFDB_SetIntAna2d_IntPointmyu2(self, *args) -> "void" :
+    def _CSFDB_SetIntAna2d_IntPointmyu2(self, *args):
         """
         :param p:
         :type p: float
@@ -586,21 +586,21 @@ class IntAna2d_IntPoint(object):
         """
         return _IntAna2d.IntAna2d_IntPoint__CSFDB_SetIntAna2d_IntPointmyu2(self, *args)
 
-    def _CSFDB_GetIntAna2d_IntPointmyp(self, *args) -> "gp_Pnt2d const" :
+    def _CSFDB_GetIntAna2d_IntPointmyp(self):
         """
         :rtype: gp_Pnt2d
 
         """
-        return _IntAna2d.IntAna2d_IntPoint__CSFDB_GetIntAna2d_IntPointmyp(self, *args)
+        return _IntAna2d.IntAna2d_IntPoint__CSFDB_GetIntAna2d_IntPointmyp(self)
 
-    def _CSFDB_GetIntAna2d_IntPointmyimplicit(self, *args) -> "Standard_Boolean" :
+    def _CSFDB_GetIntAna2d_IntPointmyimplicit(self):
         """
         :rtype: bool
 
         """
-        return _IntAna2d.IntAna2d_IntPoint__CSFDB_GetIntAna2d_IntPointmyimplicit(self, *args)
+        return _IntAna2d.IntAna2d_IntPoint__CSFDB_GetIntAna2d_IntPointmyimplicit(self)
 
-    def _CSFDB_SetIntAna2d_IntPointmyimplicit(self, *args) -> "void" :
+    def _CSFDB_SetIntAna2d_IntPointmyimplicit(self, *args):
         """
         :param p:
         :type p: bool
