@@ -3,7 +3,6 @@
 <head>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script type="text/javascript" src="{{ url_for('static', filename='three.min.js') }}"></script>
-<!--<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r71/three.js"></script>-->
 <script type="text/javascript" src="{{ url_for('static', filename='TrackballControls.js') }}"></script>
 <style>
 body {
@@ -16,13 +15,11 @@ body {
     <script type="text/javascript" src="{{ url_for('static', filename='') }}{{js_filename}}"></script>
     <script>
     $(document).ready(function() {
+        
         // 'use strict';
         // 'To actually be able to display anything with Three.js, we need three things:
         // A scene, a camera, and a renderer so we can render the scene with the camera.'
         // - http://threejs.org/docs/#Manual/Introduction/Creating_a_scene
-        // var url = "5588bca7192d2a000a0c02e1.pcd";
-        // var url = "https://preview.c9users.io/lorinma/python/5588bca7192d2a000a0c02e1.pcd"
-        
         
         var scene, camera, renderer;
         var controls, container;
@@ -32,7 +29,6 @@ body {
             container, mouseX = 0, mouseY = 0;
         
         init();
-        // addAllPoints();
         var material = new THREE.MeshBasicMaterial( {color: 0x4D464E,opacity:0.8} );
         var model = new Shape();
         model.center();
@@ -41,7 +37,6 @@ body {
         scene.add( object );
         animate();
         
-            
         function init() {
             HEIGHT = window.innerHeight;
             WIDTH = window.innerWidth;
@@ -122,19 +117,6 @@ body {
 
 </head>
 <body>
-
-<div id="data"></div>
 <div id="container"></div>
-<input id="text_entity_id" type="text"></input>
-<br/>
-<input type="button" id="btnGetValues" value="Type the entity_id of building component and Click Me to show it" />
-
-<script>
-$('#btnGetValues').click(function () {
-    var allValues = "";
-    var en_id = $('#text_entity_id').val();
-    window.location = "http://python-lorinma.c9users.io:8081/viewer/"+en_id;
-});
-</script>
 </body>
 </html>
