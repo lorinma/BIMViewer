@@ -1,5 +1,7 @@
 # BIMViewer
 
+[![Docker Repository on Quay](https://quay.io/repository/lorinma/bimviewer/status "Docker Repository on Quay")](https://quay.io/repository/lorinma/bimviewer)
+
 conda config --add channels DLR-SC
 
 conda config --add channels lorinma
